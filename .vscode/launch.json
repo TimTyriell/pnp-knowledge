@@ -1,0 +1,73 @@
+{
+  "version": "0.2.0",
+  "inputs": [
+    {
+      "id": "sessionId",
+      "type": "promptString",
+      "description": "session_id (date), e.g. 2025-03-26",
+      "default": "2025-03-26"
+    },
+    {
+      "id": "aikgInputFile",
+      "type": "promptString",
+      "description": "transcript .txt filename in transcripts/ for ai-kg (needs a real file path, not a date)",
+      "default": "2025-03-26_RF_ROCKGeeRUFw.txt"
+    }
+  ],
+  "configurations": [
+    {
+      "name": "Debug: Custom pipeline (single session)",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "module": "pnp_graph.cli",
+      "args": ["ingest", "--only", "${input:sessionId}"],
+      "cwd": "${workspaceFolder}",
+      "env": { "PYTHONPATH": "${workspaceFolder}/src" },
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "Debug: ai-kg pipeline (single session)",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "program": "${workspaceFolder}/../ai-knowledge-graph/generate-graph.py",
+      "args": [
+        "--input", "${workspaceFolder}/transcripts/${input:aikgInputFile}",
+        "--output", "${workspaceFolder}/compare/out/debug.html",
+        "--config", "${workspaceFolder}/compare/aikg_qwen.toml",
+        "--debug"
+      ],
+      "cwd": "${workspaceFolder}/../ai-knowledge-graph",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      // subprocess.run() spawns the two pipelines as separate processes, so this
+      // config only steps into run_both.py's own code (session discovery, the
+      // ai-kg Neo4j sink) — not into pnp_graph or ai-kg internals. Use the two
+      // configs above for that.
+      "name": "Debug: Compare BOTH (single session)",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "program": "${workspaceFolder}/compare/run_both.py",
+      "args": ["--only", "${input:sessionId}"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "Debug: Compare BOTH (all sessions)",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "program": "${workspaceFolder}/compare/run_both.py",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    }
+  ]
+}

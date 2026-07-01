@@ -1,0 +1,8 @@
+DM: You enter the ruined keep of Castle Blackwood. Torchlight flickers off the walls.
+Aria: I draw my elven longsword and check the room for traps.
+DM: You notice a hidden lever near the fireplace, guarded by an old dwarf statue.
+Borin: I'm a dwarf, I know this place. The lever opens the vault beneath Castle Blackwood.
+Aria: I pull the lever carefully.
+DM: The statue's eyes glow red. A skeleton warrior, once a guard of Castle Blackwood, rises from the rubble.
+Borin: I attack the skeleton warrior with my warhammer.
+DM: Roll for it. Meanwhile, Aria, you spot a locked chest behind the statue. It bears the crest of House Blackwood.
