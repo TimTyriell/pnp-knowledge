@@ -5,27 +5,19 @@ Versioning (valid_from/valid_to) and per-session summaries land in later phases.
 """
 
 import logging
-import os
 import re
 
 from neo4j import GraphDatabase
 
-from .config import NEO4J_URL, NEO4J_USER
+from .config import NEO4J_URL
 from .schema import GraphExtraction
 
 log = logging.getLogger("pnp_graph.store")
 
 
-def get_password() -> str:
-    password = os.environ.get("NEO4J_PASSWORD")
-    if not password:
-        password = input("Neo4j password: ").strip()
-    return password
-
-
 def connect():
-    driver = GraphDatabase.driver(NEO4J_URL, auth=(NEO4J_USER, get_password()))
-    driver.verify_connectivity()  # fail fast if Desktop DBMS isn't started
+    driver = GraphDatabase.driver(NEO4J_URL, auth=None)  # container runs NEO4J_AUTH=none
+    driver.verify_connectivity()  # fail fast if the container isn't up
     return driver
 
 

@@ -24,6 +24,7 @@
       "args": ["ingest", "--only", "${input:sessionId}"],
       "cwd": "${workspaceFolder}",
       "env": { "PYTHONPATH": "${workspaceFolder}/src" },
+      "envFile": "${workspaceFolder}/.env",
       "console": "integratedTerminal",
       "justMyCode": false
     },
@@ -55,6 +56,7 @@
       "program": "${workspaceFolder}/compare/run_both.py",
       "args": ["--only", "${input:sessionId}"],
       "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
       "console": "integratedTerminal",
       "justMyCode": false
     },
@@ -66,6 +68,7 @@
       "program": "${workspaceFolder}/compare/run_both.py",
       "args": [],
       "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
       "console": "integratedTerminal",
       "justMyCode": false
     }

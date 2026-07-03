@@ -20,6 +20,15 @@ per-session summaries, retry/repair safety nets) are designed in `PLAN.md` but n
 yet implemented — `ingest.py`/`store.py` currently do plain overwrite `MERGE`, no
 versioning, no resume skip beyond append-only `ingest_log.jsonl`.
 
+`docs/evolution/` is a newer, larger spec that rides on top of `PLAN.md` (doesn't
+replace it) — read `docs/evolution/README.md` first, then only the one doc for the
+work package at hand. Its core thesis: this pipeline's `store.py` currently `MERGE`s
+on `name` (duplicate-prone), while `reports/load_report_graph.py` (a **separate,
+non-LLM** loader for the hand-authored `Session_Report_*.md` graphs) uses canonical
+`:Entity{id}`. `docs/evolution/08_roadmap.md` lists WP0–WP10 in order; **WP1
+(canonical IDs + `resolve.py`) is the gate** — it's also a hard prerequisite for
+`PLAN.md`'s phase-3 `:Fact` versioning, so do WP1 before that phase.
+
 ## Commands
 
 ```bash
@@ -36,12 +45,17 @@ python compare/run_both.py --only 2025-03-26           # A/B run vs ai-knowledge
 
 Prereqs that are NOT scriptable and must be up first:
 - **Ollama** running with `qwen3:14b` pulled (`LLM_MODEL` in `config.py`; fall back
-  to `qwen3:8b` on VRAM trouble).
-- **Neo4j Desktop** local DBMS started manually on `bolt://localhost:7687` — it is
-  not a background service, so connections refuse until you start it in the GUI.
-  `store.connect()` calls `verify_connectivity()` so this fails fast with a clear
-  error instead of hanging in extraction first.
-- Password from `NEO4J_PASSWORD` env var, else interactive `input()` prompt. Never hardcode.
+  to `qwen3:8b` on VRAM trouble). `extract.py` pins `num_ctx` (`NUM_CTX` in
+  `config.py`, 8192) explicitly — Ollama's silent VRAM-based auto-default (4096)
+  previously caused runaway generation loops that never converged.
+- **Neo4j** via `docker compose up -d` (see `docker-compose.yml`) — three containers,
+  all `NEO4J_AUTH=none` (no password, `auth=None` in every driver call): `neo4j-main`
+  on `bolt://localhost:7687` (this pipeline, "Graph 2"), `neo4j-aikg` on `:7688` (the
+  `compare/` A/B harness sink, "Graph 1"), `neo4j-report` on `:7689` (the
+  hand-authored report graph, loaded separately by `reports/load_report_graph.py`,
+  "Graph 3" — see `docs/evolution/README.md`). `store.connect()` calls
+  `verify_connectivity()` so this fails fast with a clear error instead of hanging
+  in extraction first.
 
 Only test coverage is `tests/test_chunking.py` (pure invariants on `pack_segments`,
 no LLM/DB needed). Everything past chunking is unverified except by running it —
@@ -118,6 +132,18 @@ project on identical input:
   comparison, not concurrent execution.
 - `compare/test_sink.py` is a standalone self-check (no pytest, no Neo4j) for
   `_write_triples`'s malformed-triple filtering and predicate sanitization.
+
+## `reports/` — Graph 3, the hand-authored gold cross-check
+
+`reports/load_report_graph.py` is a **third, separate loader** — no LLM, no
+chunking. It pulls the trailing fenced ` ```json ` appendix out of a
+`Session_Report_*.md` (already a curated graph written by Claude, not qwen) and
+`MERGE`s it into `:7689` as generic `:Entity{id}` nodes (closed canonical ID, not
+`name`-keyed like `store.py`). It reuses `pnp_graph.chunking.session_id_from_path`
+and `pnp_graph.store.sanitize_predicate` from the main package but is otherwise
+independent. This is Graph 3 in `docs/evolution/`'s three-graph comparison — kept
+as a quality reference, not something the main pipeline writes to or reads from at
+runtime. `reports/test_load_report_graph.py` covers it.
 
 ## Not the pipeline
 

@@ -4,7 +4,7 @@ import logging
 
 from langchain_ollama import ChatOllama
 
-from .config import LLM_MODEL, SUGGESTED_PREDICATES
+from .config import LLM_MODEL, NUM_CTX, SUGGESTED_PREDICATES
 from .schema import GraphExtraction
 
 log = logging.getLogger("pnp_graph.extract")
@@ -24,7 +24,7 @@ _PROMPT = (
 
 
 def build_extractor():
-    llm = ChatOllama(model=LLM_MODEL, temperature=0)
+    llm = ChatOllama(model=LLM_MODEL, temperature=0, num_ctx=NUM_CTX, reasoning=False)
     return llm.with_structured_output(GraphExtraction, method="json_schema")
 
 

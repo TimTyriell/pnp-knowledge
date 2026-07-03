@@ -1,0 +1,2951 @@
+[
+  {
+    "p": {
+      "start": {
+        "identity": 1,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+            "Dwarf Masters Host",
+            "GM"
+          ],
+          "attributes_json": "{\"is_pc\": false, \"role\": \"GM\", \"status\": \"aktiv\"}",
+          "name": "Deniz",
+          "session_id": "2025-03-26",
+          "id": "CHAR_Deniz_GM",
+          "evidence_scenes": [
+            "S01",
+            "S02",
+            "S03",
+            "S04",
+            "S05",
+            "S06",
+            "S07"
+          ],
+          "type": "Character"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:1"
+      },
+      "end": {
+        "identity": 0,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+
+          ],
+          "attributes_json": "{\"subtype\": \"System\", \"source\": \"daggerheart-srd\", \"srd_ref\": \"core\"}",
+          "name": "Daggerheart",
+          "session_id": "2025-03-26",
+          "id": "RULE_SYSTEM_Daggerheart",
+          "evidence_scenes": [
+            "S01"
+          ],
+          "type": "RuleEntity"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:0"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+                "Dwarf Masters Host",
+                "GM"
+              ],
+              "attributes_json": "{\"is_pc\": false, \"role\": \"GM\", \"status\": \"aktiv\"}",
+              "name": "Deniz",
+              "session_id": "2025-03-26",
+              "id": "CHAR_Deniz_GM",
+              "evidence_scenes": [
+                "S01",
+                "S02",
+                "S03",
+                "S04",
+                "S05",
+                "S06",
+                "S07"
+              ],
+              "type": "Character"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:1"
+          },
+          "relationship": {
+            "identity": 0,
+            "start": 1,
+            "end": 0,
+            "type": "RUNS",
+            "properties": {
+              "confidence": "hoch",
+              "session_id": "2025-03-26",
+              "evidence_scenes": [
+                "S01"
+              ]
+            },
+            "elementId": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:0",
+            "startNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:1",
+            "endNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:0"
+          },
+          "end": {
+            "identity": 0,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+
+              ],
+              "attributes_json": "{\"subtype\": \"System\", \"source\": \"daggerheart-srd\", \"srd_ref\": \"core\"}",
+              "name": "Daggerheart",
+              "session_id": "2025-03-26",
+              "id": "RULE_SYSTEM_Daggerheart",
+              "evidence_scenes": [
+                "S01"
+              ],
+              "type": "RuleEntity"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:0"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+            "Tim (Spieler)"
+          ],
+          "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\", \"hp_max\": 6}",
+          "name": "Lindo Laut",
+          "session_id": "2025-03-26",
+          "id": "CHAR_LindoLaut",
+          "evidence_scenes": [
+            "S02",
+            "S05",
+            "S06"
+          ],
+          "type": "Character"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:2"
+      },
+      "end": {
+        "identity": 7,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+
+          ],
+          "attributes_json": "{\"subtype\": \"Class\", \"source\": \"daggerheart-srd\"}",
+          "name": "Bard",
+          "session_id": "2025-03-26",
+          "id": "RULE_CLASS_Bard",
+          "evidence_scenes": [
+            "S02"
+          ],
+          "type": "RuleEntity"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:7"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+                "Tim (Spieler)"
+              ],
+              "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\", \"hp_max\": 6}",
+              "name": "Lindo Laut",
+              "session_id": "2025-03-26",
+              "id": "CHAR_LindoLaut",
+              "evidence_scenes": [
+                "S02",
+                "S05",
+                "S06"
+              ],
+              "type": "Character"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:2"
+          },
+          "relationship": {
+            "identity": 1,
+            "start": 2,
+            "end": 7,
+            "type": "HAS_CLASS",
+            "properties": {
+              "confidence": "hoch",
+              "session_id": "2025-03-26",
+              "evidence_scenes": [
+                "S02"
+              ]
+            },
+            "elementId": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:1",
+            "startNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:2",
+            "endNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:7"
+          },
+          "end": {
+            "identity": 7,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+
+              ],
+              "attributes_json": "{\"subtype\": \"Class\", \"source\": \"daggerheart-srd\"}",
+              "name": "Bard",
+              "session_id": "2025-03-26",
+              "id": "RULE_CLASS_Bard",
+              "evidence_scenes": [
+                "S02"
+              ],
+              "type": "RuleEntity"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:7"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+            "Tim (Spieler)"
+          ],
+          "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\", \"hp_max\": 6}",
+          "name": "Lindo Laut",
+          "session_id": "2025-03-26",
+          "id": "CHAR_LindoLaut",
+          "evidence_scenes": [
+            "S02",
+            "S05",
+            "S06"
+          ],
+          "type": "Character"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:2"
+      },
+      "end": {
+        "identity": 8,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+
+          ],
+          "attributes_json": "{\"subtype\": \"Subclass\", \"source\": \"daggerheart-srd\"}",
+          "name": "Troubadour",
+          "session_id": "2025-03-26",
+          "id": "RULE_SUBCLASS_Troubadour",
+          "evidence_scenes": [
+            "S02"
+          ],
+          "type": "RuleEntity"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:8"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+                "Tim (Spieler)"
+              ],
+              "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\", \"hp_max\": 6}",
+              "name": "Lindo Laut",
+              "session_id": "2025-03-26",
+              "id": "CHAR_LindoLaut",
+              "evidence_scenes": [
+                "S02",
+                "S05",
+                "S06"
+              ],
+              "type": "Character"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:2"
+          },
+          "relationship": {
+            "identity": 2,
+            "start": 2,
+            "end": 8,
+            "type": "HAS_SUBCLASS",
+            "properties": {
+              "confidence": "hoch",
+              "session_id": "2025-03-26",
+              "evidence_scenes": [
+                "S02"
+              ]
+            },
+            "elementId": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:2",
+            "startNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:2",
+            "endNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:8"
+          },
+          "end": {
+            "identity": 8,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+
+              ],
+              "attributes_json": "{\"subtype\": \"Subclass\", \"source\": \"daggerheart-srd\"}",
+              "name": "Troubadour",
+              "session_id": "2025-03-26",
+              "id": "RULE_SUBCLASS_Troubadour",
+              "evidence_scenes": [
+                "S02"
+              ],
+              "type": "RuleEntity"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:8"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+            "Tim (Spieler)"
+          ],
+          "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\", \"hp_max\": 6}",
+          "name": "Lindo Laut",
+          "session_id": "2025-03-26",
+          "id": "CHAR_LindoLaut",
+          "evidence_scenes": [
+            "S02",
+            "S05",
+            "S06"
+          ],
+          "type": "Character"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:2"
+      },
+      "end": {
+        "identity": 12,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+            "Fairy"
+          ],
+          "attributes_json": "{\"subtype\": \"Ancestry\", \"source\": \"daggerheart-srd\"}",
+          "name": "Faerie",
+          "session_id": "2025-03-26",
+          "id": "RULE_ANCESTRY_Faerie",
+          "evidence_scenes": [
+            "S02"
+          ],
+          "type": "RuleEntity"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:12"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+                "Tim (Spieler)"
+              ],
+              "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\", \"hp_max\": 6}",
+              "name": "Lindo Laut",
+              "session_id": "2025-03-26",
+              "id": "CHAR_LindoLaut",
+              "evidence_scenes": [
+                "S02",
+                "S05",
+                "S06"
+              ],
+              "type": "Character"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:2"
+          },
+          "relationship": {
+            "identity": 3,
+            "start": 2,
+            "end": 12,
+            "type": "HAS_ANCESTRY",
+            "properties": {
+              "confidence": "hoch",
+              "session_id": "2025-03-26",
+              "evidence_scenes": [
+                "S02"
+              ]
+            },
+            "elementId": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:3",
+            "startNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:2",
+            "endNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:12"
+          },
+          "end": {
+            "identity": 12,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+                "Fairy"
+              ],
+              "attributes_json": "{\"subtype\": \"Ancestry\", \"source\": \"daggerheart-srd\"}",
+              "name": "Faerie",
+              "session_id": "2025-03-26",
+              "id": "RULE_ANCESTRY_Faerie",
+              "evidence_scenes": [
+                "S02"
+              ],
+              "type": "RuleEntity"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:12"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+            "Tim (Spieler)"
+          ],
+          "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\", \"hp_max\": 6}",
+          "name": "Lindo Laut",
+          "session_id": "2025-03-26",
+          "id": "CHAR_LindoLaut",
+          "evidence_scenes": [
+            "S02",
+            "S05",
+            "S06"
+          ],
+          "type": "Character"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:2"
+      },
+      "end": {
+        "identity": 14,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+
+          ],
+          "attributes_json": "{\"subtype\": \"Community\", \"source\": \"daggerheart-srd\"}",
+          "name": "Highborne",
+          "session_id": "2025-03-26",
+          "id": "RULE_COMMUNITY_Highborne",
+          "evidence_scenes": [
+            "S02"
+          ],
+          "type": "RuleEntity"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:14"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+                "Tim (Spieler)"
+              ],
+              "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\", \"hp_max\": 6}",
+              "name": "Lindo Laut",
+              "session_id": "2025-03-26",
+              "id": "CHAR_LindoLaut",
+              "evidence_scenes": [
+                "S02",
+                "S05",
+                "S06"
+              ],
+              "type": "Character"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:2"
+          },
+          "relationship": {
+            "identity": 4,
+            "start": 2,
+            "end": 14,
+            "type": "HAS_COMMUNITY",
+            "properties": {
+              "confidence": "hoch",
+              "session_id": "2025-03-26",
+              "evidence_scenes": [
+                "S02"
+              ]
+            },
+            "elementId": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:4",
+            "startNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:2",
+            "endNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:14"
+          },
+          "end": {
+            "identity": 14,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+
+              ],
+              "attributes_json": "{\"subtype\": \"Community\", \"source\": \"daggerheart-srd\"}",
+              "name": "Highborne",
+              "session_id": "2025-03-26",
+              "id": "RULE_COMMUNITY_Highborne",
+              "evidence_scenes": [
+                "S02"
+              ],
+              "type": "RuleEntity"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:14"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+            "Tim (Spieler)"
+          ],
+          "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\", \"hp_max\": 6}",
+          "name": "Lindo Laut",
+          "session_id": "2025-03-26",
+          "id": "CHAR_LindoLaut",
+          "evidence_scenes": [
+            "S02",
+            "S05",
+            "S06"
+          ],
+          "type": "Character"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:2"
+      },
+      "end": {
+        "identity": 17,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+
+          ],
+          "attributes_json": "{\"subtype\": \"DomainCard\", \"domain\": \"Grace\", \"source\": \"daggerheart-srd\"}",
+          "name": "Inspiring Words",
+          "session_id": "2025-03-26",
+          "id": "RULE_CARD_InspiringWords",
+          "evidence_scenes": [
+            "S02",
+            "S06"
+          ],
+          "type": "RuleEntity"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:17"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+                "Tim (Spieler)"
+              ],
+              "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\", \"hp_max\": 6}",
+              "name": "Lindo Laut",
+              "session_id": "2025-03-26",
+              "id": "CHAR_LindoLaut",
+              "evidence_scenes": [
+                "S02",
+                "S05",
+                "S06"
+              ],
+              "type": "Character"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:2"
+          },
+          "relationship": {
+            "identity": 5,
+            "start": 2,
+            "end": 17,
+            "type": "USES_CARD",
+            "properties": {
+              "confidence": "hoch",
+              "session_id": "2025-03-26",
+              "evidence_scenes": [
+                "S02",
+                "S06"
+              ]
+            },
+            "elementId": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:5",
+            "startNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:2",
+            "endNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:17"
+          },
+          "end": {
+            "identity": 17,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+
+              ],
+              "attributes_json": "{\"subtype\": \"DomainCard\", \"domain\": \"Grace\", \"source\": \"daggerheart-srd\"}",
+              "name": "Inspiring Words",
+              "session_id": "2025-03-26",
+              "id": "RULE_CARD_InspiringWords",
+              "evidence_scenes": [
+                "S02",
+                "S06"
+              ],
+              "type": "RuleEntity"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:17"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+            "Tim (Spieler)"
+          ],
+          "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\", \"hp_max\": 6}",
+          "name": "Lindo Laut",
+          "session_id": "2025-03-26",
+          "id": "CHAR_LindoLaut",
+          "evidence_scenes": [
+            "S02",
+            "S05",
+            "S06"
+          ],
+          "type": "Character"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:2"
+      },
+      "end": {
+        "identity": 18,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+
+          ],
+          "attributes_json": "{\"subtype\": \"ClassFeature\", \"source\": \"daggerheart-srd\"}",
+          "name": "Rally",
+          "session_id": "2025-03-26",
+          "id": "RULE_FEATURE_Rally",
+          "evidence_scenes": [
+            "S06"
+          ],
+          "type": "RuleEntity"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:18"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+                "Tim (Spieler)"
+              ],
+              "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\", \"hp_max\": 6}",
+              "name": "Lindo Laut",
+              "session_id": "2025-03-26",
+              "id": "CHAR_LindoLaut",
+              "evidence_scenes": [
+                "S02",
+                "S05",
+                "S06"
+              ],
+              "type": "Character"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:2"
+          },
+          "relationship": {
+            "identity": 6,
+            "start": 2,
+            "end": 18,
+            "type": "USES_CARD",
+            "properties": {
+              "confidence": "hoch",
+              "session_id": "2025-03-26",
+              "evidence_scenes": [
+                "S06"
+              ]
+            },
+            "elementId": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:6",
+            "startNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:2",
+            "endNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:18"
+          },
+          "end": {
+            "identity": 18,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+
+              ],
+              "attributes_json": "{\"subtype\": \"ClassFeature\", \"source\": \"daggerheart-srd\"}",
+              "name": "Rally",
+              "session_id": "2025-03-26",
+              "id": "RULE_FEATURE_Rally",
+              "evidence_scenes": [
+                "S06"
+              ],
+              "type": "RuleEntity"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:18"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 3,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+            "Goblin-Dragonborn",
+            "Marco (Spieler)"
+          ],
+          "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\", \"damage_threshold_severe\": 12}",
+          "name": "Dodo",
+          "session_id": "2025-03-26",
+          "id": "CHAR_Marco_Dodo",
+          "evidence_scenes": [
+            "S02",
+            "S06"
+          ],
+          "type": "Character"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:3"
+      },
+      "end": {
+        "identity": 9,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+
+          ],
+          "attributes_json": "{\"subtype\": \"Class\", \"source\": \"daggerheart-srd\", \"domains\": [\"Valor\", \"Blade\"]}",
+          "name": "Guardian",
+          "session_id": "2025-03-26",
+          "id": "RULE_CLASS_Guardian",
+          "evidence_scenes": [
+            "S02"
+          ],
+          "type": "RuleEntity"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:9"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 3,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+                "Goblin-Dragonborn",
+                "Marco (Spieler)"
+              ],
+              "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\", \"damage_threshold_severe\": 12}",
+              "name": "Dodo",
+              "session_id": "2025-03-26",
+              "id": "CHAR_Marco_Dodo",
+              "evidence_scenes": [
+                "S02",
+                "S06"
+              ],
+              "type": "Character"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:3"
+          },
+          "relationship": {
+            "identity": 7,
+            "start": 3,
+            "end": 9,
+            "type": "HAS_CLASS",
+            "properties": {
+              "confidence": "hoch",
+              "session_id": "2025-03-26",
+              "evidence_scenes": [
+                "S02"
+              ]
+            },
+            "elementId": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:7",
+            "startNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:3",
+            "endNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:9"
+          },
+          "end": {
+            "identity": 9,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+
+              ],
+              "attributes_json": "{\"subtype\": \"Class\", \"source\": \"daggerheart-srd\", \"domains\": [\"Valor\", \"Blade\"]}",
+              "name": "Guardian",
+              "session_id": "2025-03-26",
+              "id": "RULE_CLASS_Guardian",
+              "evidence_scenes": [
+                "S02"
+              ],
+              "type": "RuleEntity"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:9"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 3,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+            "Goblin-Dragonborn",
+            "Marco (Spieler)"
+          ],
+          "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\", \"damage_threshold_severe\": 12}",
+          "name": "Dodo",
+          "session_id": "2025-03-26",
+          "id": "CHAR_Marco_Dodo",
+          "evidence_scenes": [
+            "S02",
+            "S06"
+          ],
+          "type": "Character"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:3"
+      },
+      "end": {
+        "identity": 15,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+
+          ],
+          "attributes_json": "{\"subtype\": \"Community\", \"source\": \"daggerheart-srd\"}",
+          "name": "Ridgeborne",
+          "session_id": "2025-03-26",
+          "id": "RULE_COMMUNITY_Ridgeborne",
+          "evidence_scenes": [
+            "S02"
+          ],
+          "type": "RuleEntity"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:15"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 3,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+                "Goblin-Dragonborn",
+                "Marco (Spieler)"
+              ],
+              "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\", \"damage_threshold_severe\": 12}",
+              "name": "Dodo",
+              "session_id": "2025-03-26",
+              "id": "CHAR_Marco_Dodo",
+              "evidence_scenes": [
+                "S02",
+                "S06"
+              ],
+              "type": "Character"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:3"
+          },
+          "relationship": {
+            "identity": 8,
+            "start": 3,
+            "end": 15,
+            "type": "HAS_COMMUNITY",
+            "properties": {
+              "confidence": "mittel",
+              "session_id": "2025-03-26",
+              "evidence_scenes": [
+                "S02"
+              ]
+            },
+            "elementId": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:8",
+            "startNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:3",
+            "endNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:15"
+          },
+          "end": {
+            "identity": 15,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+
+              ],
+              "attributes_json": "{\"subtype\": \"Community\", \"source\": \"daggerheart-srd\"}",
+              "name": "Ridgeborne",
+              "session_id": "2025-03-26",
+              "id": "RULE_COMMUNITY_Ridgeborne",
+              "evidence_scenes": [
+                "S02"
+              ],
+              "type": "RuleEntity"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:15"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 3,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+            "Goblin-Dragonborn",
+            "Marco (Spieler)"
+          ],
+          "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\", \"damage_threshold_severe\": 12}",
+          "name": "Dodo",
+          "session_id": "2025-03-26",
+          "id": "CHAR_Marco_Dodo",
+          "evidence_scenes": [
+            "S02",
+            "S06"
+          ],
+          "type": "Character"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:3"
+      },
+      "end": {
+        "identity": 16,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+
+          ],
+          "attributes_json": "{\"subtype\": \"DomainCard\", \"domain\": \"Valor\", \"source\": \"daggerheart-srd\"}",
+          "name": "I Am Your Shield",
+          "session_id": "2025-03-26",
+          "id": "RULE_CARD_IAmYourShield",
+          "evidence_scenes": [
+            "S06"
+          ],
+          "type": "RuleEntity"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:16"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 3,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+                "Goblin-Dragonborn",
+                "Marco (Spieler)"
+              ],
+              "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\", \"damage_threshold_severe\": 12}",
+              "name": "Dodo",
+              "session_id": "2025-03-26",
+              "id": "CHAR_Marco_Dodo",
+              "evidence_scenes": [
+                "S02",
+                "S06"
+              ],
+              "type": "Character"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:3"
+          },
+          "relationship": {
+            "identity": 9,
+            "start": 3,
+            "end": 16,
+            "type": "USES_CARD",
+            "properties": {
+              "confidence": "mittel",
+              "session_id": "2025-03-26",
+              "evidence_scenes": [
+                "S06"
+              ]
+            },
+            "elementId": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:9",
+            "startNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:3",
+            "endNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:16"
+          },
+          "end": {
+            "identity": 16,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+
+              ],
+              "attributes_json": "{\"subtype\": \"DomainCard\", \"domain\": \"Valor\", \"source\": \"daggerheart-srd\"}",
+              "name": "I Am Your Shield",
+              "session_id": "2025-03-26",
+              "id": "RULE_CARD_IAmYourShield",
+              "evidence_scenes": [
+                "S06"
+              ],
+              "type": "RuleEntity"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:16"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 4,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+            "Celin (Spieler)"
+          ],
+          "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\"}",
+          "name": "Cookie",
+          "session_id": "2025-03-26",
+          "id": "CHAR_Celin_Cookie",
+          "evidence_scenes": [
+            "S02",
+            "S06",
+            "S07"
+          ],
+          "type": "Character"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:4"
+      },
+      "end": {
+        "identity": 10,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+
+          ],
+          "attributes_json": "{\"subtype\": \"Class\", \"source\": \"daggerheart-srd\"}",
+          "name": "Ranger",
+          "session_id": "2025-03-26",
+          "id": "RULE_CLASS_Ranger",
+          "evidence_scenes": [
+            "S02"
+          ],
+          "type": "RuleEntity"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:10"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 4,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+                "Celin (Spieler)"
+              ],
+              "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\"}",
+              "name": "Cookie",
+              "session_id": "2025-03-26",
+              "id": "CHAR_Celin_Cookie",
+              "evidence_scenes": [
+                "S02",
+                "S06",
+                "S07"
+              ],
+              "type": "Character"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:4"
+          },
+          "relationship": {
+            "identity": 10,
+            "start": 4,
+            "end": 10,
+            "type": "HAS_CLASS",
+            "properties": {
+              "confidence": "hoch",
+              "session_id": "2025-03-26",
+              "evidence_scenes": [
+                "S02"
+              ]
+            },
+            "elementId": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:10",
+            "startNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:4",
+            "endNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:10"
+          },
+          "end": {
+            "identity": 10,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+
+              ],
+              "attributes_json": "{\"subtype\": \"Class\", \"source\": \"daggerheart-srd\"}",
+              "name": "Ranger",
+              "session_id": "2025-03-26",
+              "id": "RULE_CLASS_Ranger",
+              "evidence_scenes": [
+                "S02"
+              ],
+              "type": "RuleEntity"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:10"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 4,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+            "Celin (Spieler)"
+          ],
+          "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\"}",
+          "name": "Cookie",
+          "session_id": "2025-03-26",
+          "id": "CHAR_Celin_Cookie",
+          "evidence_scenes": [
+            "S02",
+            "S06",
+            "S07"
+          ],
+          "type": "Character"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:4"
+      },
+      "end": {
+        "identity": 11,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+
+          ],
+          "attributes_json": "{\"subtype\": \"Subclass\", \"source\": \"daggerheart-srd\"}",
+          "name": "Beastbound",
+          "session_id": "2025-03-26",
+          "id": "RULE_SUBCLASS_Beastbound",
+          "evidence_scenes": [
+            "S02"
+          ],
+          "type": "RuleEntity"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:11"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 4,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+                "Celin (Spieler)"
+              ],
+              "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\"}",
+              "name": "Cookie",
+              "session_id": "2025-03-26",
+              "id": "CHAR_Celin_Cookie",
+              "evidence_scenes": [
+                "S02",
+                "S06",
+                "S07"
+              ],
+              "type": "Character"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:4"
+          },
+          "relationship": {
+            "identity": 11,
+            "start": 4,
+            "end": 11,
+            "type": "HAS_SUBCLASS",
+            "properties": {
+              "confidence": "mittel",
+              "session_id": "2025-03-26",
+              "evidence_scenes": [
+                "S02"
+              ]
+            },
+            "elementId": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:11",
+            "startNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:4",
+            "endNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:11"
+          },
+          "end": {
+            "identity": 11,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+
+              ],
+              "attributes_json": "{\"subtype\": \"Subclass\", \"source\": \"daggerheart-srd\"}",
+              "name": "Beastbound",
+              "session_id": "2025-03-26",
+              "id": "RULE_SUBCLASS_Beastbound",
+              "evidence_scenes": [
+                "S02"
+              ],
+              "type": "RuleEntity"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:11"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 4,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+            "Celin (Spieler)"
+          ],
+          "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\"}",
+          "name": "Cookie",
+          "session_id": "2025-03-26",
+          "id": "CHAR_Celin_Cookie",
+          "evidence_scenes": [
+            "S02",
+            "S06",
+            "S07"
+          ],
+          "type": "Character"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:4"
+      },
+      "end": {
+        "identity": 13,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+            "Frosch"
+          ],
+          "attributes_json": "{\"subtype\": \"Ancestry\", \"source\": \"daggerheart-srd\"}",
+          "name": "Ribbet",
+          "session_id": "2025-03-26",
+          "id": "RULE_ANCESTRY_Ribbet",
+          "evidence_scenes": [
+            "S02"
+          ],
+          "type": "RuleEntity"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:13"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 4,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+                "Celin (Spieler)"
+              ],
+              "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\"}",
+              "name": "Cookie",
+              "session_id": "2025-03-26",
+              "id": "CHAR_Celin_Cookie",
+              "evidence_scenes": [
+                "S02",
+                "S06",
+                "S07"
+              ],
+              "type": "Character"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:4"
+          },
+          "relationship": {
+            "identity": 12,
+            "start": 4,
+            "end": 13,
+            "type": "HAS_ANCESTRY",
+            "properties": {
+              "confidence": "hoch",
+              "session_id": "2025-03-26",
+              "evidence_scenes": [
+                "S02"
+              ]
+            },
+            "elementId": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:12",
+            "startNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:4",
+            "endNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:13"
+          },
+          "end": {
+            "identity": 13,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+                "Frosch"
+              ],
+              "attributes_json": "{\"subtype\": \"Ancestry\", \"source\": \"daggerheart-srd\"}",
+              "name": "Ribbet",
+              "session_id": "2025-03-26",
+              "id": "RULE_ANCESTRY_Ribbet",
+              "evidence_scenes": [
+                "S02"
+              ],
+              "type": "RuleEntity"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:13"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 4,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+            "Celin (Spieler)"
+          ],
+          "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\"}",
+          "name": "Cookie",
+          "session_id": "2025-03-26",
+          "id": "CHAR_Celin_Cookie",
+          "evidence_scenes": [
+            "S02",
+            "S06",
+            "S07"
+          ],
+          "type": "Character"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:4"
+      },
+      "end": {
+        "identity": 5,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+
+          ],
+          "attributes_json": "{\"is_pc\": false, \"subtype\": \"Companion\", \"status\": \"aktiv\"}",
+          "name": "Parry das Schnabeltier",
+          "session_id": "2025-03-26",
+          "id": "COMP_Parry",
+          "evidence_scenes": [
+            "S02"
+          ],
+          "type": "Character"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:5"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 4,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+                "Celin (Spieler)"
+              ],
+              "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\"}",
+              "name": "Cookie",
+              "session_id": "2025-03-26",
+              "id": "CHAR_Celin_Cookie",
+              "evidence_scenes": [
+                "S02",
+                "S06",
+                "S07"
+              ],
+              "type": "Character"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:4"
+          },
+          "relationship": {
+            "identity": 13,
+            "start": 4,
+            "end": 5,
+            "type": "OWNS",
+            "properties": {
+              "confidence": "hoch",
+              "session_id": "2025-03-26",
+              "evidence_scenes": [
+                "S02"
+              ]
+            },
+            "elementId": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:13",
+            "startNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:4",
+            "endNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:5"
+          },
+          "end": {
+            "identity": 5,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+
+              ],
+              "attributes_json": "{\"is_pc\": false, \"subtype\": \"Companion\", \"status\": \"aktiv\"}",
+              "name": "Parry das Schnabeltier",
+              "session_id": "2025-03-26",
+              "id": "COMP_Parry",
+              "evidence_scenes": [
+                "S02"
+              ],
+              "type": "Character"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:5"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+            "Tim (Spieler)"
+          ],
+          "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\", \"hp_max\": 6}",
+          "name": "Lindo Laut",
+          "session_id": "2025-03-26",
+          "id": "CHAR_LindoLaut",
+          "evidence_scenes": [
+            "S02",
+            "S05",
+            "S06"
+          ],
+          "type": "Character"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:2"
+      },
+      "end": {
+        "identity": 31,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+
+          ],
+          "attributes_json": "{\"stance\": \"self\"}",
+          "name": "Die Abenteurergruppe",
+          "session_id": "2025-03-26",
+          "id": "FACTION_Abenteurergruppe",
+          "evidence_scenes": [
+            "S04"
+          ],
+          "type": "Faction"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:31"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+                "Tim (Spieler)"
+              ],
+              "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\", \"hp_max\": 6}",
+              "name": "Lindo Laut",
+              "session_id": "2025-03-26",
+              "id": "CHAR_LindoLaut",
+              "evidence_scenes": [
+                "S02",
+                "S05",
+                "S06"
+              ],
+              "type": "Character"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:2"
+          },
+          "relationship": {
+            "identity": 14,
+            "start": 2,
+            "end": 31,
+            "type": "MEMBER_OF",
+            "properties": {
+              "confidence": "hoch",
+              "session_id": "2025-03-26",
+              "evidence_scenes": [
+                "S04"
+              ]
+            },
+            "elementId": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:14",
+            "startNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:2",
+            "endNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:31"
+          },
+          "end": {
+            "identity": 31,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+
+              ],
+              "attributes_json": "{\"stance\": \"self\"}",
+              "name": "Die Abenteurergruppe",
+              "session_id": "2025-03-26",
+              "id": "FACTION_Abenteurergruppe",
+              "evidence_scenes": [
+                "S04"
+              ],
+              "type": "Faction"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:31"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 3,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+            "Goblin-Dragonborn",
+            "Marco (Spieler)"
+          ],
+          "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\", \"damage_threshold_severe\": 12}",
+          "name": "Dodo",
+          "session_id": "2025-03-26",
+          "id": "CHAR_Marco_Dodo",
+          "evidence_scenes": [
+            "S02",
+            "S06"
+          ],
+          "type": "Character"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:3"
+      },
+      "end": {
+        "identity": 31,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+
+          ],
+          "attributes_json": "{\"stance\": \"self\"}",
+          "name": "Die Abenteurergruppe",
+          "session_id": "2025-03-26",
+          "id": "FACTION_Abenteurergruppe",
+          "evidence_scenes": [
+            "S04"
+          ],
+          "type": "Faction"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:31"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 3,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+                "Goblin-Dragonborn",
+                "Marco (Spieler)"
+              ],
+              "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\", \"damage_threshold_severe\": 12}",
+              "name": "Dodo",
+              "session_id": "2025-03-26",
+              "id": "CHAR_Marco_Dodo",
+              "evidence_scenes": [
+                "S02",
+                "S06"
+              ],
+              "type": "Character"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:3"
+          },
+          "relationship": {
+            "identity": 15,
+            "start": 3,
+            "end": 31,
+            "type": "MEMBER_OF",
+            "properties": {
+              "confidence": "hoch",
+              "session_id": "2025-03-26",
+              "evidence_scenes": [
+                "S04"
+              ]
+            },
+            "elementId": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:15",
+            "startNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:3",
+            "endNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:31"
+          },
+          "end": {
+            "identity": 31,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+
+              ],
+              "attributes_json": "{\"stance\": \"self\"}",
+              "name": "Die Abenteurergruppe",
+              "session_id": "2025-03-26",
+              "id": "FACTION_Abenteurergruppe",
+              "evidence_scenes": [
+                "S04"
+              ],
+              "type": "Faction"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:31"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 4,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+            "Celin (Spieler)"
+          ],
+          "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\"}",
+          "name": "Cookie",
+          "session_id": "2025-03-26",
+          "id": "CHAR_Celin_Cookie",
+          "evidence_scenes": [
+            "S02",
+            "S06",
+            "S07"
+          ],
+          "type": "Character"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:4"
+      },
+      "end": {
+        "identity": 31,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+
+          ],
+          "attributes_json": "{\"stance\": \"self\"}",
+          "name": "Die Abenteurergruppe",
+          "session_id": "2025-03-26",
+          "id": "FACTION_Abenteurergruppe",
+          "evidence_scenes": [
+            "S04"
+          ],
+          "type": "Faction"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:31"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 4,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+                "Celin (Spieler)"
+              ],
+              "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\"}",
+              "name": "Cookie",
+              "session_id": "2025-03-26",
+              "id": "CHAR_Celin_Cookie",
+              "evidence_scenes": [
+                "S02",
+                "S06",
+                "S07"
+              ],
+              "type": "Character"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:4"
+          },
+          "relationship": {
+            "identity": 16,
+            "start": 4,
+            "end": 31,
+            "type": "MEMBER_OF",
+            "properties": {
+              "confidence": "hoch",
+              "session_id": "2025-03-26",
+              "evidence_scenes": [
+                "S04"
+              ]
+            },
+            "elementId": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:16",
+            "startNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:4",
+            "endNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:31"
+          },
+          "end": {
+            "identity": 31,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+
+              ],
+              "attributes_json": "{\"stance\": \"self\"}",
+              "name": "Die Abenteurergruppe",
+              "session_id": "2025-03-26",
+              "id": "FACTION_Abenteurergruppe",
+              "evidence_scenes": [
+                "S04"
+              ],
+              "type": "Faction"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:31"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 6,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+
+          ],
+          "attributes_json": "{\"is_pc\": false, \"status\": \"erwaehnt\"}",
+          "name": "Auftraggeber",
+          "session_id": "2025-03-26",
+          "id": "CHAR_Auftraggeber",
+          "evidence_scenes": [
+            "S04",
+            "S07"
+          ],
+          "type": "Character"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:6"
+      },
+      "end": {
+        "identity": 28,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+
+          ],
+          "attributes_json": "{\"status\": \"abgeschlossen\"}",
+          "name": "Monster aufspüren & Beweis bringen",
+          "session_id": "2025-03-26",
+          "id": "QUEST_MonsterJagd",
+          "evidence_scenes": [
+            "S04",
+            "S05",
+            "S06",
+            "S07"
+          ],
+          "type": "Quest"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:28"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 6,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+
+              ],
+              "attributes_json": "{\"is_pc\": false, \"status\": \"erwaehnt\"}",
+              "name": "Auftraggeber",
+              "session_id": "2025-03-26",
+              "id": "CHAR_Auftraggeber",
+              "evidence_scenes": [
+                "S04",
+                "S07"
+              ],
+              "type": "Character"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:6"
+          },
+          "relationship": {
+            "identity": 17,
+            "start": 6,
+            "end": 28,
+            "type": "TRIGGERED",
+            "properties": {
+              "confidence": "mittel",
+              "session_id": "2025-03-26",
+              "evidence_scenes": [
+                "S04"
+              ]
+            },
+            "elementId": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:17",
+            "startNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:6",
+            "endNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:28"
+          },
+          "end": {
+            "identity": 28,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+
+              ],
+              "attributes_json": "{\"status\": \"abgeschlossen\"}",
+              "name": "Monster aufspüren & Beweis bringen",
+              "session_id": "2025-03-26",
+              "id": "QUEST_MonsterJagd",
+              "evidence_scenes": [
+                "S04",
+                "S05",
+                "S06",
+                "S07"
+              ],
+              "type": "Quest"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:28"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 31,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+
+          ],
+          "attributes_json": "{\"stance\": \"self\"}",
+          "name": "Die Abenteurergruppe",
+          "session_id": "2025-03-26",
+          "id": "FACTION_Abenteurergruppe",
+          "evidence_scenes": [
+            "S04"
+          ],
+          "type": "Faction"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:31"
+      },
+      "end": {
+        "identity": 32,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+            "das Monster"
+          ],
+          "attributes_json": "{\"subtype\": \"Adversary\", \"source\": \"homebrew\", \"status\": \"besiegt\", \"damage_threshold_demo\": 12}",
+          "name": "Tentakel-Monster",
+          "session_id": "2025-03-26",
+          "id": "ADV_TentakelMonster",
+          "evidence_scenes": [
+            "S06",
+            "S07"
+          ],
+          "type": "RuleEntity"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:32"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 31,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+
+              ],
+              "attributes_json": "{\"stance\": \"self\"}",
+              "name": "Die Abenteurergruppe",
+              "session_id": "2025-03-26",
+              "id": "FACTION_Abenteurergruppe",
+              "evidence_scenes": [
+                "S04"
+              ],
+              "type": "Faction"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:31"
+          },
+          "relationship": {
+            "identity": 18,
+            "start": 31,
+            "end": 32,
+            "type": "HOSTILE_TO",
+            "properties": {
+              "confidence": "hoch",
+              "session_id": "2025-03-26",
+              "evidence_scenes": [
+                "S06"
+              ]
+            },
+            "elementId": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:18",
+            "startNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:31",
+            "endNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:32"
+          },
+          "end": {
+            "identity": 32,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+                "das Monster"
+              ],
+              "attributes_json": "{\"subtype\": \"Adversary\", \"source\": \"homebrew\", \"status\": \"besiegt\", \"damage_threshold_demo\": 12}",
+              "name": "Tentakel-Monster",
+              "session_id": "2025-03-26",
+              "id": "ADV_TentakelMonster",
+              "evidence_scenes": [
+                "S06",
+                "S07"
+              ],
+              "type": "RuleEntity"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:32"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 33,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+
+          ],
+          "attributes_json": "{\"decided_by_ref\": \"CHAR_LindoLaut\", \"quote\": \"Ritual halb richtig vorlesen + Explosions-Show, damit das Monster denkt, es werde beschworen\", \"consequence\": \"Monster wird angelockt\", \"scene_ref\": \"S05\"}",
+          "name": "Ritual bewusst falsch durchführen",
+          "session_id": "2025-03-26",
+          "id": "EVENT_RitualPlan",
+          "evidence_scenes": [
+            "S05"
+          ],
+          "type": "Decision"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:33"
+      },
+      "end": {
+        "identity": 32,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+            "das Monster"
+          ],
+          "attributes_json": "{\"subtype\": \"Adversary\", \"source\": \"homebrew\", \"status\": \"besiegt\", \"damage_threshold_demo\": 12}",
+          "name": "Tentakel-Monster",
+          "session_id": "2025-03-26",
+          "id": "ADV_TentakelMonster",
+          "evidence_scenes": [
+            "S06",
+            "S07"
+          ],
+          "type": "RuleEntity"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:32"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 33,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+
+              ],
+              "attributes_json": "{\"decided_by_ref\": \"CHAR_LindoLaut\", \"quote\": \"Ritual halb richtig vorlesen + Explosions-Show, damit das Monster denkt, es werde beschworen\", \"consequence\": \"Monster wird angelockt\", \"scene_ref\": \"S05\"}",
+              "name": "Ritual bewusst falsch durchführen",
+              "session_id": "2025-03-26",
+              "id": "EVENT_RitualPlan",
+              "evidence_scenes": [
+                "S05"
+              ],
+              "type": "Decision"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:33"
+          },
+          "relationship": {
+            "identity": 19,
+            "start": 33,
+            "end": 32,
+            "type": "TRIGGERED",
+            "properties": {
+              "confidence": "mittel",
+              "session_id": "2025-03-26",
+              "evidence_scenes": [
+                "S05",
+                "S06"
+              ]
+            },
+            "elementId": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:19",
+            "startNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:33",
+            "endNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:32"
+          },
+          "end": {
+            "identity": 32,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+                "das Monster"
+              ],
+              "attributes_json": "{\"subtype\": \"Adversary\", \"source\": \"homebrew\", \"status\": \"besiegt\", \"damage_threshold_demo\": 12}",
+              "name": "Tentakel-Monster",
+              "session_id": "2025-03-26",
+              "id": "ADV_TentakelMonster",
+              "evidence_scenes": [
+                "S06",
+                "S07"
+              ],
+              "type": "RuleEntity"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:32"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 4,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+            "Celin (Spieler)"
+          ],
+          "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\"}",
+          "name": "Cookie",
+          "session_id": "2025-03-26",
+          "id": "CHAR_Celin_Cookie",
+          "evidence_scenes": [
+            "S02",
+            "S06",
+            "S07"
+          ],
+          "type": "Character"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:4"
+      },
+      "end": {
+        "identity": 37,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+
+          ],
+          "attributes_json": "{\"roller_ref\": \"CHAR_Celin_Cookie\", \"trait_or_action\": \"Agility/Shortbow+Vorteil\", \"outcome\": \"success\", \"consequence\": \"Monster besiegt\"}",
+          "name": "Shortbow-Finisher (Vorteil)",
+          "session_id": "2025-03-26",
+          "id": "ROLL_S06_Ranger_Finish",
+          "evidence_scenes": [
+            "S06"
+          ],
+          "type": "RollEvent"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:37"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 4,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+                "Celin (Spieler)"
+              ],
+              "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\"}",
+              "name": "Cookie",
+              "session_id": "2025-03-26",
+              "id": "CHAR_Celin_Cookie",
+              "evidence_scenes": [
+                "S02",
+                "S06",
+                "S07"
+              ],
+              "type": "Character"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:4"
+          },
+          "relationship": {
+            "identity": 20,
+            "start": 4,
+            "end": 37,
+            "type": "ROLLED",
+            "properties": {
+              "confidence": "mittel",
+              "session_id": "2025-03-26",
+              "evidence_scenes": [
+                "S06"
+              ]
+            },
+            "elementId": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:20",
+            "startNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:4",
+            "endNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:37"
+          },
+          "end": {
+            "identity": 37,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+
+              ],
+              "attributes_json": "{\"roller_ref\": \"CHAR_Celin_Cookie\", \"trait_or_action\": \"Agility/Shortbow+Vorteil\", \"outcome\": \"success\", \"consequence\": \"Monster besiegt\"}",
+              "name": "Shortbow-Finisher (Vorteil)",
+              "session_id": "2025-03-26",
+              "id": "ROLL_S06_Ranger_Finish",
+              "evidence_scenes": [
+                "S06"
+              ],
+              "type": "RollEvent"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:37"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 37,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+
+          ],
+          "attributes_json": "{\"roller_ref\": \"CHAR_Celin_Cookie\", \"trait_or_action\": \"Agility/Shortbow+Vorteil\", \"outcome\": \"success\", \"consequence\": \"Monster besiegt\"}",
+          "name": "Shortbow-Finisher (Vorteil)",
+          "session_id": "2025-03-26",
+          "id": "ROLL_S06_Ranger_Finish",
+          "evidence_scenes": [
+            "S06"
+          ],
+          "type": "RollEvent"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:37"
+      },
+      "end": {
+        "identity": 32,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+            "das Monster"
+          ],
+          "attributes_json": "{\"subtype\": \"Adversary\", \"source\": \"homebrew\", \"status\": \"besiegt\", \"damage_threshold_demo\": 12}",
+          "name": "Tentakel-Monster",
+          "session_id": "2025-03-26",
+          "id": "ADV_TentakelMonster",
+          "evidence_scenes": [
+            "S06",
+            "S07"
+          ],
+          "type": "RuleEntity"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:32"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 37,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+
+              ],
+              "attributes_json": "{\"roller_ref\": \"CHAR_Celin_Cookie\", \"trait_or_action\": \"Agility/Shortbow+Vorteil\", \"outcome\": \"success\", \"consequence\": \"Monster besiegt\"}",
+              "name": "Shortbow-Finisher (Vorteil)",
+              "session_id": "2025-03-26",
+              "id": "ROLL_S06_Ranger_Finish",
+              "evidence_scenes": [
+                "S06"
+              ],
+              "type": "RollEvent"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:37"
+          },
+          "relationship": {
+            "identity": 21,
+            "start": 37,
+            "end": 32,
+            "type": "TARGETS",
+            "properties": {
+              "confidence": "mittel",
+              "session_id": "2025-03-26",
+              "evidence_scenes": [
+                "S06"
+              ]
+            },
+            "elementId": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:21",
+            "startNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:37",
+            "endNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:32"
+          },
+          "end": {
+            "identity": 32,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+                "das Monster"
+              ],
+              "attributes_json": "{\"subtype\": \"Adversary\", \"source\": \"homebrew\", \"status\": \"besiegt\", \"damage_threshold_demo\": 12}",
+              "name": "Tentakel-Monster",
+              "session_id": "2025-03-26",
+              "id": "ADV_TentakelMonster",
+              "evidence_scenes": [
+                "S06",
+                "S07"
+              ],
+              "type": "RuleEntity"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:32"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 37,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+
+          ],
+          "attributes_json": "{\"roller_ref\": \"CHAR_Celin_Cookie\", \"trait_or_action\": \"Agility/Shortbow+Vorteil\", \"outcome\": \"success\", \"consequence\": \"Monster besiegt\"}",
+          "name": "Shortbow-Finisher (Vorteil)",
+          "session_id": "2025-03-26",
+          "id": "ROLL_S06_Ranger_Finish",
+          "evidence_scenes": [
+            "S06"
+          ],
+          "type": "RollEvent"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:37"
+      },
+      "end": {
+        "identity": 34,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+
+          ],
+          "attributes_json": "{\"description\": \"Finishing Blow durch Ranger ins Auge\", \"scene_ref\": \"S06\", \"consequence\": \"Ort normalisiert sich, Halsband+Botschaft gefunden\"}",
+          "name": "Tentakel-Monster besiegt",
+          "session_id": "2025-03-26",
+          "id": "EVENT_MonsterBesiegt",
+          "evidence_scenes": [
+            "S06",
+            "S07"
+          ],
+          "type": "Event"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:34"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 37,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+
+              ],
+              "attributes_json": "{\"roller_ref\": \"CHAR_Celin_Cookie\", \"trait_or_action\": \"Agility/Shortbow+Vorteil\", \"outcome\": \"success\", \"consequence\": \"Monster besiegt\"}",
+              "name": "Shortbow-Finisher (Vorteil)",
+              "session_id": "2025-03-26",
+              "id": "ROLL_S06_Ranger_Finish",
+              "evidence_scenes": [
+                "S06"
+              ],
+              "type": "RollEvent"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:37"
+          },
+          "relationship": {
+            "identity": 22,
+            "start": 37,
+            "end": 34,
+            "type": "RESULTED_IN",
+            "properties": {
+              "confidence": "mittel",
+              "session_id": "2025-03-26",
+              "evidence_scenes": [
+                "S06"
+              ]
+            },
+            "elementId": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:22",
+            "startNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:37",
+            "endNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:34"
+          },
+          "end": {
+            "identity": 34,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+
+              ],
+              "attributes_json": "{\"description\": \"Finishing Blow durch Ranger ins Auge\", \"scene_ref\": \"S06\", \"consequence\": \"Ort normalisiert sich, Halsband+Botschaft gefunden\"}",
+              "name": "Tentakel-Monster besiegt",
+              "session_id": "2025-03-26",
+              "id": "EVENT_MonsterBesiegt",
+              "evidence_scenes": [
+                "S06",
+                "S07"
+              ],
+              "type": "Event"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:34"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 34,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+
+          ],
+          "attributes_json": "{\"description\": \"Finishing Blow durch Ranger ins Auge\", \"scene_ref\": \"S06\", \"consequence\": \"Ort normalisiert sich, Halsband+Botschaft gefunden\"}",
+          "name": "Tentakel-Monster besiegt",
+          "session_id": "2025-03-26",
+          "id": "EVENT_MonsterBesiegt",
+          "evidence_scenes": [
+            "S06",
+            "S07"
+          ],
+          "type": "Event"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:34"
+      },
+      "end": {
+        "identity": 25,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+
+          ],
+          "attributes_json": "{\"origin_scene_ref\": \"S07\"}",
+          "name": "Halsband am Tentakel",
+          "session_id": "2025-03-26",
+          "id": "ITEM_Halsband",
+          "evidence_scenes": [
+            "S07"
+          ],
+          "type": "Item"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:25"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 34,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+
+              ],
+              "attributes_json": "{\"description\": \"Finishing Blow durch Ranger ins Auge\", \"scene_ref\": \"S06\", \"consequence\": \"Ort normalisiert sich, Halsband+Botschaft gefunden\"}",
+              "name": "Tentakel-Monster besiegt",
+              "session_id": "2025-03-26",
+              "id": "EVENT_MonsterBesiegt",
+              "evidence_scenes": [
+                "S06",
+                "S07"
+              ],
+              "type": "Event"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:34"
+          },
+          "relationship": {
+            "identity": 23,
+            "start": 34,
+            "end": 25,
+            "type": "RESULTED_IN",
+            "properties": {
+              "confidence": "hoch",
+              "session_id": "2025-03-26",
+              "evidence_scenes": [
+                "S07"
+              ]
+            },
+            "elementId": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:23",
+            "startNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:34",
+            "endNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:25"
+          },
+          "end": {
+            "identity": 25,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+
+              ],
+              "attributes_json": "{\"origin_scene_ref\": \"S07\"}",
+              "name": "Halsband am Tentakel",
+              "session_id": "2025-03-26",
+              "id": "ITEM_Halsband",
+              "evidence_scenes": [
+                "S07"
+              ],
+              "type": "Item"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:25"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 26,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+
+          ],
+          "attributes_json": "{\"current_owner_ref\": \"FACTION_Abenteurergruppe\", \"origin_scene_ref\": \"S07\"}",
+          "name": "Botschaft am Monster",
+          "session_id": "2025-03-26",
+          "id": "ITEM_Botschaft",
+          "evidence_scenes": [
+            "S07"
+          ],
+          "type": "Item"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:26"
+      },
+      "end": {
+        "identity": 22,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+
+          ],
+          "attributes_json": "{}",
+          "name": "Nahe Ortschaft (aus Botschaft)",
+          "session_id": "2025-03-26",
+          "id": "LOC_Ortschaft_unbekannt",
+          "evidence_scenes": [
+            "S07"
+          ],
+          "type": "Location"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:22"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 26,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+
+              ],
+              "attributes_json": "{\"current_owner_ref\": \"FACTION_Abenteurergruppe\", \"origin_scene_ref\": \"S07\"}",
+              "name": "Botschaft am Monster",
+              "session_id": "2025-03-26",
+              "id": "ITEM_Botschaft",
+              "evidence_scenes": [
+                "S07"
+              ],
+              "type": "Item"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:26"
+          },
+          "relationship": {
+            "identity": 24,
+            "start": 26,
+            "end": 22,
+            "type": "MENTIONED_IN",
+            "properties": {
+              "confidence": "mittel",
+              "session_id": "2025-03-26",
+              "evidence_scenes": [
+                "S07"
+              ]
+            },
+            "elementId": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:24",
+            "startNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:26",
+            "endNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:22"
+          },
+          "end": {
+            "identity": 22,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+
+              ],
+              "attributes_json": "{}",
+              "name": "Nahe Ortschaft (aus Botschaft)",
+              "session_id": "2025-03-26",
+              "id": "LOC_Ortschaft_unbekannt",
+              "evidence_scenes": [
+                "S07"
+              ],
+              "type": "Location"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:22"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 26,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+
+          ],
+          "attributes_json": "{\"current_owner_ref\": \"FACTION_Abenteurergruppe\", \"origin_scene_ref\": \"S07\"}",
+          "name": "Botschaft am Monster",
+          "session_id": "2025-03-26",
+          "id": "ITEM_Botschaft",
+          "evidence_scenes": [
+            "S07"
+          ],
+          "type": "Item"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:26"
+      },
+      "end": {
+        "identity": 30,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+
+          ],
+          "attributes_json": "{\"status\": \"offen\"}",
+          "name": "Spur der Botschaft zur Ortschaft folgen",
+          "session_id": "2025-03-26",
+          "id": "QUEST_Botschaft_verfolgen",
+          "evidence_scenes": [
+            "S07"
+          ],
+          "type": "Quest"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:30"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 26,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+
+              ],
+              "attributes_json": "{\"current_owner_ref\": \"FACTION_Abenteurergruppe\", \"origin_scene_ref\": \"S07\"}",
+              "name": "Botschaft am Monster",
+              "session_id": "2025-03-26",
+              "id": "ITEM_Botschaft",
+              "evidence_scenes": [
+                "S07"
+              ],
+              "type": "Item"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:26"
+          },
+          "relationship": {
+            "identity": 25,
+            "start": 26,
+            "end": 30,
+            "type": "TRIGGERED",
+            "properties": {
+              "confidence": "hoch",
+              "session_id": "2025-03-26",
+              "evidence_scenes": [
+                "S07"
+              ]
+            },
+            "elementId": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:25",
+            "startNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:26",
+            "endNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:30"
+          },
+          "end": {
+            "identity": 30,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+
+              ],
+              "attributes_json": "{\"status\": \"offen\"}",
+              "name": "Spur der Botschaft zur Ortschaft folgen",
+              "session_id": "2025-03-26",
+              "id": "QUEST_Botschaft_verfolgen",
+              "evidence_scenes": [
+                "S07"
+              ],
+              "type": "Quest"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:30"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 20,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+
+          ],
+          "attributes_json": "{\"parent_location_ref\": \"LOC_Nebelwald\"}",
+          "name": "Verlassener Lagerplatz mit Kessel",
+          "session_id": "2025-03-26",
+          "id": "LOC_Lagerplatz_Kessel",
+          "evidence_scenes": [
+            "S04",
+            "S05",
+            "S06"
+          ],
+          "type": "Location"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:20"
+      },
+      "end": {
+        "identity": 19,
+        "labels": [
+          "Entity"
+        ],
+        "properties": {
+          "aliases": [
+
+          ],
+          "attributes_json": "{}",
+          "name": "Nebliger Wald",
+          "session_id": "2025-03-26",
+          "id": "LOC_Nebelwald",
+          "evidence_scenes": [
+            "S04",
+            "S05",
+            "S06",
+            "S07"
+          ],
+          "type": "Location"
+        },
+        "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:19"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 20,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+
+              ],
+              "attributes_json": "{\"parent_location_ref\": \"LOC_Nebelwald\"}",
+              "name": "Verlassener Lagerplatz mit Kessel",
+              "session_id": "2025-03-26",
+              "id": "LOC_Lagerplatz_Kessel",
+              "evidence_scenes": [
+                "S04",
+                "S05",
+                "S06"
+              ],
+              "type": "Location"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:20"
+          },
+          "relationship": {
+            "identity": 26,
+            "start": 20,
+            "end": 19,
+            "type": "LOCATED_IN",
+            "properties": {
+              "confidence": "hoch",
+              "session_id": "2025-03-26",
+              "evidence_scenes": [
+                "S04"
+              ]
+            },
+            "elementId": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:26",
+            "startNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:20",
+            "endNodeElementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:19"
+          },
+          "end": {
+            "identity": 19,
+            "labels": [
+              "Entity"
+            ],
+            "properties": {
+              "aliases": [
+
+              ],
+              "attributes_json": "{}",
+              "name": "Nebliger Wald",
+              "session_id": "2025-03-26",
+              "id": "LOC_Nebelwald",
+              "evidence_scenes": [
+                "S04",
+                "S05",
+                "S06",
+                "S07"
+              ],
+              "type": "Location"
+            },
+            "elementId": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:19"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  }
+]
