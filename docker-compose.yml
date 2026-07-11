@@ -1,6 +1,6 @@
 services:
   neo4j-main:
-    image: neo4j:5-community
+    image: neo4j:5.26-community  # pinned >=5.13 for the vector index (docs/evolution/11, WP11)
     container_name: pnp-neo4j-main
     ports:
       - "7474:7474"   # http (browser UI)
@@ -17,7 +17,7 @@ services:
       retries: 10
 
   neo4j-aikg:
-    image: neo4j:5-community
+    image: neo4j:5.26-community  # pinned >=5.13 for the vector index (docs/evolution/11, WP11)
     container_name: pnp-neo4j-aikg
     ports:
       - "7475:7474"   # http
@@ -34,7 +34,7 @@ services:
       retries: 10
 
   neo4j-report:
-    image: neo4j:5-community
+    image: neo4j:5.26-community  # pinned >=5.13 for the vector index (docs/evolution/11, WP11)
     container_name: pnp-neo4j-report
     ports:
       - "7476:7474"   # http

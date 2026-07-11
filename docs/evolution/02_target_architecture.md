@@ -11,7 +11,7 @@ Single Neo4j label `:Entity` on all nodes; the semantic class lives in a require
 | `type` | Meaning | Required props | Key optional props |
 |---|---|---|---|
 | `Player` | Real person at the table (permanent identity anchor) | `id, name, type` | `aliases[], role` (`GM` for the GM) |
-| `Character` | PC / NPC / GM-narrator / companion / adversary-as-actor. **Receives all in-fiction edges** (see `09`) | `id, name, type, is_pc, role, session_id, confidence, evidence_scenes` | `aliases[], hp_max, damage_threshold_*` |
+| `Character` | PC / NPC / GM-narrator / companion / adversary-as-actor. **Receives all in-fiction edges** (see `09`) | `id, name, type, is_pc, role, status ∈ {alive, deceased, unknown, erwaehnt}, session_id, confidence, evidence_scenes` | `aliases[], hp_max, damage_threshold_*, first_seen_session (int), last_updated_session (int), died_in_session (int)` — lifecycle semantics in `11` |
 | `RuleEntity` | SRD object (Class/Subclass/Ancestry/Community/DomainCard/ClassFeature/Adversary/System) | `id, name, subtype, source, session_id, confidence, evidence_scenes` | `srd_ref, domains[]` |
 | `Location` | a place | `id, name, session_id, confidence, evidence_scenes` | `description, parent_location_id` |
 | `Item` | in-world object / loot | `id, name, status, session_id, confidence, evidence_scenes` | `owner_id, origin_scene, description` |
@@ -20,6 +20,7 @@ Single Neo4j label `:Entity` on all nodes; the semantic class lives in a require
 | `Event` | story beat | `id, name, summary, session_id, confidence, evidence_scenes` | `outcome` |
 | `RollEvent` | a dice roll + result | `id, name, session_id, confidence, evidence_scenes` | `roller_id, trait_or_action, outcome, target_id` |
 | `Decision` | deliberate weighty choice | `id, name, session_id, confidence, evidence_scenes` | `decided_by_id, quote, consequence` |
+| `Trait` | recurring characterization/habit, not a discrete happening (`10`) | `id, name, type` | — (recurrence lives on the `KNOWN_FOR` edge: `count, sessions[], first_seen, last_seen`) |
 | `Scene` | temporal unit (see `04`) | `id, seq, session_id, summary` | `title` |
 | `Session` | a play session | `id, seq, date` | `title` |
 
@@ -31,16 +32,23 @@ Rules: model an adversary as a `Character{is_pc:false, role:"adversary"}` that `
 
 ```
 src/pnp_graph/
-  config.py    # + ALLOWED_PREDICATES, PREDICATE_SYNONYMS, SRD/registry paths, REPORT_NEO4J_URL
-  schema.py    # + RuleEntity, RollEvent, Decision; provenance on all; is_pc/role
-  chunking.py  # unchanged; feeds scenes
-  scenes.py    # NEW: chunk→scene segmentation, Scene/Session builders
-  srd.py       # NEW: load data/daggerheart_srd.json, preload RuleEntity, SRD alias map
-  resolve.py   # NEW: canonical id minting, alias registry, endpoint + vocab validation
-  extract.py   # two-pass prompts, retry/repair, evidence as scene ids
-  store.py     # MERGE on id, native props, provenance on nodes + edges
-  ingest.py    # chunks→scenes→extract→resolve→srd-link→store; file-hash resume
-  cli.py       # + status, --dry-run, reconcile-report
+  config.py    # ALLOWED_PREDICATES, PREDICATE_SYNONYMS, STATE/EVENT/IDENTITY_PREDICATES,
+               # SRD/registry paths, EMBED_MODEL/EMBED_DIM
+  schema.py    # RuleEntity, RollEvent, Decision, Trait; EntityExtraction/EventExtraction
+               # (two-pass split, WP7); provenance + description on relationships
+  chunking.py  # feeds scenes; format_turn emits character, not composite label (09)
+  scenes.py    # chunk→scene segmentation, Scene/Session builders
+  srd.py       # load data/daggerheart_srd.json, preload RuleEntity, SRD alias map
+  resolve.py   # canonical id minting, alias registry, endpoint + vocab validation,
+               # Trait aggregation (10), death detection (11)
+  extract.py   # two-pass prompts (entity+rules / event), retry/repair
+  store.py     # MERGE on id, native props, provenance, state-edge valid_from/valid_to
+               # lifecycle + death workflow (11), KNOWN_FOR count-increment (10)
+  embed.py     # NEW: nomic-embed-text entity embeddings, Neo4j vector index (11, WP11)
+  retrieve.py  # NEW: vector search + 1-hop as-of expansion + local-LLM answer (11, WP11)
+  reconcile.py # reconcile-report gold cross-check (07, WP8)
+  ingest.py    # chunks→scenes→extract→resolve→srd-link→store→embed
+  cli.py       # ingest, reconcile-report, ask — status/--dry-run not yet built
 data/
   alias_registry.json   daggerheart_srd.json
 ```
