@@ -5,7 +5,9 @@ import logging
 
 from langchain_ollama import ChatOllama
 
-from .config import LLM_MODEL, NUM_CTX, SUGGESTED_PREDICATES
+from .config import (
+    LLM_MODEL, LLM_TIMEOUT_S, NUM_CTX, NUM_PREDICT, REPEAT_PENALTY, SUGGESTED_PREDICATES,
+)
 from .schema import EntityExtraction, Event, EventConsolidation, EventExtraction, GraphExtraction
 
 log = logging.getLogger("pnp_graph.extract")
@@ -65,7 +67,11 @@ def build_extractor():
     # One ChatOllama instance -> one model resident in VRAM even though we
     # issue two structured-output calls per chunk (docs/evolution/06), plus one
     # session-level consolidation call (N3, KG_Qualitaetsanalyse_S01).
-    llm = ChatOllama(model=LLM_MODEL, temperature=0, num_ctx=NUM_CTX, reasoning=False)
+    llm = ChatOllama(
+        model=LLM_MODEL, temperature=0, num_ctx=NUM_CTX, reasoning=False,
+        repeat_penalty=REPEAT_PENALTY, num_predict=NUM_PREDICT,
+        client_kwargs={"timeout": LLM_TIMEOUT_S},
+    )
     return (
         llm.with_structured_output(EntityExtraction, method="json_schema"),
         llm.with_structured_output(EventExtraction, method="json_schema"),

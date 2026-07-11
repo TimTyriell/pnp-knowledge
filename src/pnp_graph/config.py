@@ -26,6 +26,20 @@ CHUNK_OVERLAP = 600
 # runaway generation loops (repeated context-shift/discard, never converging).
 NUM_CTX = 8192
 
+# hard cap per LLM call so a runaway generation (see below) fails fast into
+# _invoke_with_retry's retry/failure-dump path instead of hanging forever.
+LLM_TIMEOUT_S = 300
+
+# root cause of the runaway loops (confirmed via Ollama's server.log: n_decoded
+# climbing past 19k tokens over 7m44s, repeated "slot context shift" instead of
+# ever stopping): temperature=0 (argmax) + repeat_penalty=1.0 (disabled) lets
+# json_schema-constrained decoding repeat the same array entry forever once it
+# starts, since the grammar never forces the array to end. repeat_penalty
+# discourages the repeat; num_predict is a hard token-count backstop so a loop
+# that starts anyway still terminates well before another 7-minute stall.
+REPEAT_PENALTY = 1.1
+NUM_PREDICT = 4096
+
 NEO4J_URL = "bolt://localhost:7687"  # container runs NEO4J_AUTH=none, no user/password
 
 # Seeded vocabulary observed in a prior Claude-authored session report for this
