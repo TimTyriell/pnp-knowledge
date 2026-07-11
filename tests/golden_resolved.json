@@ -42,8 +42,8 @@
         "name": "Lindo Laut",
         "is_pc": true,
         "role": "PC",
-        "evidence_scenes": [
-          "SCENE_2025-03-26_S01"
+        "evidence_chunks": [
+          1
         ]
       }
     },
@@ -57,9 +57,9 @@
         "aliases": [],
         "is_pc": false,
         "role": "NPC",
-        "evidence_scenes": [
-          "SCENE_2025-03-26_S01",
-          "SCENE_2025-03-26_S02"
+        "evidence_chunks": [
+          1,
+          2
         ]
       }
     },
@@ -72,8 +72,8 @@
         "name": "Monster provozieren",
         "quote": "ich singe",
         "consequence": "Monster greift an",
-        "evidence_scenes": [
-          "SCENE_2025-03-26_S01"
+        "evidence_chunks": [
+          1
         ]
       }
     },
@@ -85,8 +85,8 @@
         "confidence": "medium",
         "name": "Monster greift an",
         "summary": "",
-        "evidence_scenes": [
-          "SCENE_2025-03-26_S02"
+        "evidence_chunks": [
+          2
         ]
       }
     },
@@ -98,8 +98,8 @@
         "confidence": "medium",
         "name": "Bogen",
         "status": "used",
-        "evidence_scenes": [
-          "SCENE_2025-03-26_S02"
+        "evidence_chunks": [
+          2
         ]
       }
     },
@@ -151,8 +151,8 @@
         "confidence": "medium",
         "name": "Monsterjagd",
         "status": "open",
-        "evidence_scenes": [
-          "SCENE_2025-03-26_S01"
+        "evidence_chunks": [
+          1
         ]
       }
     },
@@ -165,29 +165,9 @@
         "name": "Dodo Angriffswurf",
         "trait_or_action": "attack",
         "outcome": "success_with_fear",
-        "evidence_scenes": [
-          "SCENE_2025-03-26_S02"
+        "evidence_chunks": [
+          2
         ]
-      }
-    },
-    {
-      "id": "SCENE_2025-03-26_S01",
-      "type": "Scene",
-      "props": {
-        "name": "SCENE_2025-03-26_S01",
-        "seq": 1,
-        "session_id": "2025-03-26",
-        "confidence": "high"
-      }
-    },
-    {
-      "id": "SCENE_2025-03-26_S02",
-      "type": "Scene",
-      "props": {
-        "name": "SCENE_2025-03-26_S02",
-        "seq": 2,
-        "session_id": "2025-03-26",
-        "confidence": "high"
       }
     },
     {
@@ -245,8 +225,8 @@
       "props": {
         "session_id": "2025-03-26",
         "confidence": "low",
-        "evidence_scenes": [
-          "SCENE_2025-03-26_S02"
+        "evidence_chunks": [
+          2
         ],
         "original_predicate": "BEST_BUDDY"
       }
@@ -280,22 +260,13 @@
     },
     {
       "start_id": "CHAR_LindoLaut",
-      "end_id": "SCENE_2025-03-26_S01",
-      "type": "EVIDENCED_IN",
-      "props": {
-        "session_id": "2025-03-26",
-        "confidence": "high"
-      }
-    },
-    {
-      "start_id": "CHAR_LindoLaut",
       "end_id": "RULE_CLASS_Bard",
       "type": "HAS_CLASS",
       "props": {
         "session_id": "2025-03-26",
         "confidence": "high",
-        "evidence_scenes": [
-          "SCENE_2025-03-26_S01"
+        "evidence_chunks": [
+          1
         ]
       }
     },
@@ -318,33 +289,6 @@
       }
     },
     {
-      "start_id": "CHAR_Schleichfurz",
-      "end_id": "SCENE_2025-03-26_S01",
-      "type": "EVIDENCED_IN",
-      "props": {
-        "session_id": "2025-03-26",
-        "confidence": "high"
-      }
-    },
-    {
-      "start_id": "CHAR_Schleichfurz",
-      "end_id": "SCENE_2025-03-26_S02",
-      "type": "EVIDENCED_IN",
-      "props": {
-        "session_id": "2025-03-26",
-        "confidence": "high"
-      }
-    },
-    {
-      "start_id": "DEC_2025-03-26_MonsterProvozieren",
-      "end_id": "SCENE_2025-03-26_S01",
-      "type": "EVIDENCED_IN",
-      "props": {
-        "session_id": "2025-03-26",
-        "confidence": "high"
-      }
-    },
-    {
       "start_id": "DEC_2025-03-26_MonsterProvozieren",
       "end_id": "SESS_2025-03-26",
       "type": "IN_SESSION",
@@ -360,33 +304,15 @@
       "props": {
         "session_id": "2025-03-26",
         "confidence": "high",
-        "evidence_scenes": [
-          "SCENE_2025-03-26_S02"
+        "evidence_chunks": [
+          2
         ]
-      }
-    },
-    {
-      "start_id": "EVT_MonsterGreiftAn",
-      "end_id": "SCENE_2025-03-26_S02",
-      "type": "EVIDENCED_IN",
-      "props": {
-        "session_id": "2025-03-26",
-        "confidence": "high"
       }
     },
     {
       "start_id": "EVT_MonsterGreiftAn",
       "end_id": "SESS_2025-03-26",
       "type": "IN_SESSION",
-      "props": {
-        "session_id": "2025-03-26",
-        "confidence": "high"
-      }
-    },
-    {
-      "start_id": "ITEM_Bogen",
-      "end_id": "SCENE_2025-03-26_S02",
-      "type": "EVIDENCED_IN",
       "props": {
         "session_id": "2025-03-26",
         "confidence": "high"
@@ -442,24 +368,6 @@
       }
     },
     {
-      "start_id": "QUEST_Monsterjagd",
-      "end_id": "SCENE_2025-03-26_S01",
-      "type": "EVIDENCED_IN",
-      "props": {
-        "session_id": "2025-03-26",
-        "confidence": "high"
-      }
-    },
-    {
-      "start_id": "ROLL_2025-03-26_DodoAngriffswurf",
-      "end_id": "SCENE_2025-03-26_S02",
-      "type": "EVIDENCED_IN",
-      "props": {
-        "session_id": "2025-03-26",
-        "confidence": "high"
-      }
-    },
-    {
       "start_id": "ROLL_2025-03-26_DodoAngriffswurf",
       "end_id": "SESS_2025-03-26",
       "type": "IN_SESSION",
@@ -472,33 +380,6 @@
       "start_id": "ROLL_2025-03-26_DodoAngriffswurf",
       "end_id": "CHAR_Schleichfurz",
       "type": "TARGETS",
-      "props": {
-        "session_id": "2025-03-26",
-        "confidence": "high"
-      }
-    },
-    {
-      "start_id": "RULE_CLASS_Bard",
-      "end_id": "SCENE_2025-03-26_S01",
-      "type": "EVIDENCED_IN",
-      "props": {
-        "session_id": "2025-03-26",
-        "confidence": "high"
-      }
-    },
-    {
-      "start_id": "SCENE_2025-03-26_S01",
-      "end_id": "SESS_2025-03-26",
-      "type": "IN_SESSION",
-      "props": {
-        "session_id": "2025-03-26",
-        "confidence": "high"
-      }
-    },
-    {
-      "start_id": "SCENE_2025-03-26_S02",
-      "end_id": "SESS_2025-03-26",
-      "type": "IN_SESSION",
       "props": {
         "session_id": "2025-03-26",
         "confidence": "high"

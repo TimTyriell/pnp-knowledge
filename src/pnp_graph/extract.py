@@ -6,36 +6,63 @@ import logging
 from langchain_ollama import ChatOllama
 
 from .config import LLM_MODEL, NUM_CTX, SUGGESTED_PREDICATES
-from .schema import GraphExtraction
+from .schema import EntityExtraction, EventExtraction, GraphExtraction
 
 log = logging.getLogger("pnp_graph.extract")
 
-_PROMPT = (
-    "Extract characters, NPCs, locations, items, quests, events, and factions from this "
-    "TTRPG (Daggerheart) session transcript chunk. Use consistent names across mentions.\n\n"
+# Two-role extraction (docs/evolution/06, WP7): a 14B stays reliable on two
+# smaller schemas better than one mega-schema, and it raises recall without
+# the model having to hold causal reasoning + entity spotting in one pass.
+_ENTITY_PROMPT = (
+    "Extract characters, NPCs, locations, items, quests, and factions from this "
+    "TTRPG (Daggerheart) session transcript chunk. Use consistent names across mentions. "
+    "For characters, set type to \"adversary\" for a hostile monster/enemy the party fights, "
+    "\"NPC\" for other non-player characters, \"PC\" for player characters.\n\n"
     "Also extract:\n"
     "- rule_entities: game-rules objects referenced at the table (classes, subclasses, "
     "ancestries, communities, domain cards, class features, adversary stat blocks, system "
-    "resources like Hope/Fear/Stress). Game resources are rule entities, NOT items.\n"
+    "resources like Hope/Fear/Stress). Game resources are rule entities, NOT items.\n\n"
+)
+
+_EVENT_PROMPT = (
+    "Extract events, dice rolls, decisions, recurring traits, and relationships from this "
+    "TTRPG (Daggerheart) session transcript chunk.\n\n"
+    "- events: only create a new event for an occurrence if at least one is true: (a) a roll "
+    "happened, (b) it changed a tracked state (HP, quest status, item ownership, relationship), "
+    "(c) it caused or resulted from another event/decision, or (d) it's referenced again later "
+    "in the session. If it's ambient/flavor color with none of these — including a repeat of "
+    "something a character does regularly — do NOT create an event; instead extract it as a "
+    "trait.\n"
+    "- traits: a recurring characterization or habit of one character (e.g. 'plays music often', "
+    "'always distrusts strangers'), not a one-off happening. If the same ambient behavior comes "
+    "up again for a character already noted for it, extract it again as the same trait name "
+    "rather than as a new event.\n"
     "- roll_events: every dice roll — who rolled, what trait/action, the outcome "
     "(success_with_hope, success_with_fear, failure, crit...), and the target if any.\n"
     "- decisions: deliberate, weighty player/GM choices, with a short verbatim quote and "
-    "the consequence.\n\n"
-    "Also extract relationships: arbitrary lore/social/causal connections between entities "
-    "already extracted above (e.g. a character is hostile to a faction, a character HAS_CLASS "
-    "a class, a decision TRIGGERED an event, an event RESULTED_IN another event). Each "
-    "relationship's subject and object must be a name from the lists above, not a new "
+    "the consequence.\n"
+    "- relationships: arbitrary lore/social/causal connections between entities already named "
+    "below (e.g. a character is hostile to a faction, a character HAS_CLASS a class, a decision "
+    "TRIGGERED an event, an event RESULTED_IN another event, an adversary USES its stat block). "
+    "Each relationship's subject and object must be one of the names listed below, never a new "
     "entity. Prefer reusing one of these relation types when it fits: "
     f"{', '.join(SUGGESTED_PREDICATES)}, HAS_CLASS, HAS_SUBCLASS, HAS_ANCESTRY, USES_CARD, "
     "HAS_FEATURE, USES, DECIDED, ROLLED — but use a different short UPPER_SNAKE_CASE predicate "
     "if none of these fit. Rate each relationship's confidence based on how directly the text "
-    "supports it.\n\n"
+    "supports it. If the relationship carries nuance the predicate alone can't express (e.g. "
+    "'trusts him only reluctantly, since the incident in the forest'), add a short description; "
+    "leave it empty otherwise.\n\n"
 )
 
 
 def build_extractor():
+    # One ChatOllama instance -> one model resident in VRAM even though we
+    # issue two structured-output calls per chunk (docs/evolution/06).
     llm = ChatOllama(model=LLM_MODEL, temperature=0, num_ctx=NUM_CTX, reasoning=False)
-    return llm.with_structured_output(GraphExtraction, method="json_schema")
+    return (
+        llm.with_structured_output(EntityExtraction, method="json_schema"),
+        llm.with_structured_output(EventExtraction, method="json_schema"),
+    )
 
 
 def _cast_line(cast_names: list[str] | None) -> str:
@@ -57,23 +84,61 @@ def _gazetteer_line(rule_names: list[str] | None) -> str:
     )
 
 
-def extract_chunk(extractor, chunk: str, chunk_index: int,
-                  cast_names: list[str] | None = None,
-                  rule_names: list[str] | None = None) -> GraphExtraction:
-    prompt = _PROMPT + _cast_line(cast_names) + _gazetteer_line(rule_names)
+def _known_entities_line(names: list[str]) -> str:
+    return (
+        "Entities already extracted from this chunk (use only these as subject/object, "
+        f"plus 'GM'): {', '.join(names)}.\n\n" if names else ""
+    )
+
+
+def _invoke_with_retry(extractor, prompt: str, chunk: str, chunk_index: int, label: str):
     try:
-        result: GraphExtraction | None = extractor.invoke(prompt + chunk)
+        result = extractor.invoke(prompt + chunk)
         if result is None:
             raise ValueError("structured output returned None")
     except Exception as exc:  # one retry with a JSON reminder (PLAN.md phase 5)
-        log.warning("chunk %d extraction failed (%s) — retrying once", chunk_index, exc)
+        log.warning("chunk %d %s-pass extraction failed (%s) — retrying once",
+                    chunk_index, label, exc)
         result = extractor.invoke(
             prompt + chunk + "\n\nReturn ONLY valid JSON matching the schema. No prose.")
         if result is None:
             raise ValueError("structured output returned None on retry")
-    for r in result.relationships:
-        r.evidence = chunk_index  # set programmatically; the model can't know its chunk
     return result
+
+
+def extract_chunk(extractors, chunk: str, chunk_index: int,
+                  cast_names: list[str] | None = None,
+                  rule_names: list[str] | None = None) -> GraphExtraction:
+    """Two structured-output calls per chunk (docs/evolution/06, WP7): entity+rules
+    pass, then an event pass restricted to the names the entity pass just found."""
+    entity_extractor, event_extractor = extractors
+    entity_prompt = _ENTITY_PROMPT + _cast_line(cast_names) + _gazetteer_line(rule_names)
+    entities: EntityExtraction = _invoke_with_retry(
+        entity_extractor, entity_prompt, chunk, chunk_index, "entity")
+
+    known_names = sorted({
+        *(cast_names or []),
+        *(c.name for c in entities.characters),
+        *(l.name for l in entities.locations),
+        *(i.name for i in entities.items),
+        *(q.name for q in entities.quests),
+        *(f.name for f in entities.factions),
+        *(r.name for r in entities.rule_entities),
+    })
+    event_prompt = _EVENT_PROMPT + _known_entities_line(known_names)
+    events: EventExtraction = _invoke_with_retry(
+        event_extractor, event_prompt, chunk, chunk_index, "event")
+    for r in events.relationships:
+        r.evidence = chunk_index  # set programmatically; the model can't know its chunk
+
+    return GraphExtraction(
+        characters=entities.characters, locations=entities.locations,
+        items=entities.items, quests=entities.quests, factions=entities.factions,
+        rule_entities=entities.rule_entities,
+        events=events.events, roll_events=events.roll_events,
+        decisions=events.decisions, traits=events.traits,
+        relationships=events.relationships,
+    )
 
 
 def merge_graphs(target: GraphExtraction, extra: GraphExtraction) -> None:
@@ -88,6 +153,7 @@ def merge_graphs(target: GraphExtraction, extra: GraphExtraction) -> None:
         ("rule_entities", "name"),
         ("roll_events", "name"),
         ("decisions", "name"),
+        ("traits", "name"),
     ):
         existing = {getattr(item, key) for item in getattr(target, field)}
         for item in getattr(extra, field):
@@ -111,6 +177,7 @@ def _record_evidence(evidence: dict, result: GraphExtraction, chunk_index: int) 
         ("characters", "name"), ("locations", "name"), ("items", "name"),
         ("quests", "name"), ("events", "title"), ("factions", "name"),
         ("rule_entities", "name"), ("roll_events", "name"), ("decisions", "name"),
+        ("traits", "name"),
     ):
         for item in getattr(result, field):
             evidence.setdefault((field, getattr(item, key)), []).append(chunk_index)
@@ -144,10 +211,11 @@ def extract_session(extractor, chunks: list[str],
         _record_evidence(evidence, result, i)
         merge_graphs(merged, result)
         log.info(
-            "[%d/%d] +%d chars, +%d locs, +%d items, +%d quests, +%d events, +%d factions, +%d rels",
+            "[%d/%d] +%d chars, +%d locs, +%d items, +%d quests, +%d events, +%d factions, "
+            "+%d traits, +%d rels",
             i, len(chunks),
             len(result.characters), len(result.locations), len(result.items),
             len(result.quests), len(result.events), len(result.factions),
-            len(result.relationships),
+            len(result.traits), len(result.relationships),
         )
     return merged, evidence

@@ -85,7 +85,7 @@ def _run_pipeline() -> dict:
     resolver = Resolver(tmp)
     cast_info = resolver.bootstrap_cast(session_cast(_SEGMENTS))
     resolved = resolve_graph(resolver, _EXTRACTION, "2025-03-26", cast_info, seq=1,
-                             evidence=_EVIDENCE, n_chunks=2, srd_index=SrdIndex())
+                             evidence=_EVIDENCE, srd_index=SrdIndex())
     # stable ordering for comparison; drop volatile bits (none currently)
     return {
         "entities": sorted(resolved["entities"], key=lambda e: e["id"]),

@@ -68,6 +68,15 @@ class Decision(BaseModel):
     confidence: Literal["high", "medium", "low"] = "medium"
 
 
+class Trait(BaseModel):
+    """A recurring characterization/habit (docs/evolution/10) — NOT a discrete
+    happening. Use this instead of a new Event when the same ambient behavior
+    (e.g. 'plays music often') repeats; the count is aggregated downstream."""
+
+    name: str = Field(description="Short label for the recurring habit, e.g. 'Spielt oft Musik'")
+    character: str | None = Field(default=None, description="Character this trait belongs to")
+
+
 class Relationship(BaseModel):
     """Arbitrary lore/social/causal connection between two already-extracted entities."""
 
@@ -78,7 +87,35 @@ class Relationship(BaseModel):
         description="How directly the transcript supports this relationship: high = stated outright, "
         "medium = reasonably inferred, low = speculative/ambiguous"
     )
+    description: str = Field(
+        default="", description="Free-text nuance the predicate alone can't carry, e.g. "
+        "'trusts him only reluctantly, since the incident in the forest'"
+    )
     evidence: int = 0  # chunk index this relationship was extracted from; set programmatically, not by the model
+
+
+class EntityExtraction(BaseModel):
+    """Pass (a) — docs/evolution/06 WP7: entities + rules references only,
+    no causal/event content. Kept small so a 14B stays reliable."""
+
+    characters: list[Character] = []
+    locations: list[Location] = []
+    items: list[Item] = []
+    quests: list[Quest] = []
+    factions: list[Faction] = []
+    rule_entities: list[RuleEntity] = []
+
+
+class EventExtraction(BaseModel):
+    """Pass (b) — docs/evolution/06 WP7: events/rolls/decisions/traits and
+    the relationships between them, referencing only entities named in
+    pass (a) (fed into the prompt, not re-derived by the model)."""
+
+    events: list[Event] = []
+    roll_events: list[RollEvent] = []
+    decisions: list[Decision] = []
+    traits: list[Trait] = []
+    relationships: list[Relationship] = []
 
 
 class GraphExtraction(BaseModel):
@@ -91,4 +128,5 @@ class GraphExtraction(BaseModel):
     rule_entities: list[RuleEntity] = []
     roll_events: list[RollEvent] = []
     decisions: list[Decision] = []
+    traits: list[Trait] = []
     relationships: list[Relationship] = []

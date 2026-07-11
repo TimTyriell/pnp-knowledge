@@ -7,6 +7,7 @@ from pathlib import Path
 
 from .chunking import load_session, ordered_sessions, session_id_from_path
 from .config import STATE_DIR, TRANSCRIPT_DIR
+from .embed import embed_entities
 from .extract import build_extractor, extract_session
 from .resolve import Resolver, resolve_graph
 from .srd import SrdIndex, preload
@@ -49,16 +50,16 @@ def ingest(transcript_dir: Path = TRANSCRIPT_DIR, only: str | None = None) -> No
                                                   fail_dir=STATE_DIR / "failures" / sid)
                 log.info(
                     "Session %s merged total: %d characters, %d locations, %d items, "
-                    "%d quests, %d events, %d factions, %d relationships",
+                    "%d quests, %d events, %d factions, %d traits, %d relationships",
                     sid,
                     len(graph.characters), len(graph.locations), len(graph.items),
                     len(graph.quests), len(graph.events), len(graph.factions),
-                    len(graph.relationships),
+                    len(graph.traits), len(graph.relationships),
                 )
                 resolved = resolve_graph(resolver, graph, sid, cast_info, seq,
-                                         evidence=evidence, n_chunks=len(chunks),
-                                         srd_index=srd_index)
+                                         evidence=evidence, srd_index=srd_index)
                 write_session(driver, resolved)
+                embed_entities(driver, [e["id"] for e in resolved["entities"]])
                 qa = run_qa(driver)
                 _log_result({
                     "session_id": sid, "seq": seq, "status": "ok",

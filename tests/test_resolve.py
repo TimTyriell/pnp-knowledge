@@ -14,7 +14,7 @@ import pnp_graph.resolve as resolve_mod
 from pnp_graph.chunking import parse_speaker, session_cast
 from pnp_graph.resolve import Resolver, map_predicate, normalize, normalize_confidence, resolve_graph, slug
 from pnp_graph.schema import (Character, Decision, GraphExtraction, Item,
-                              Relationship, RollEvent, RuleEntity)
+                              Relationship, RollEvent, RuleEntity, Trait)
 from pnp_graph.srd import SrdIndex
 
 CAST_LABELS = ["Tim (Lindo Laut)", "Marco (Dodo)", "Celin (Cookie)", "Deniz (GM)"]
@@ -145,7 +145,7 @@ def test_resolve_graph_end_to_end(tmp_state=None):
         assert e["props"]["session_id"] and e["props"]["confidence"]
 
 
-def test_scenes_and_evidence():
+def test_evidence_chunks():
     resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
     r = _tmp_resolver()
     info = _cast_info(r)
@@ -160,22 +160,14 @@ def test_scenes_and_evidence():
         ("characters", "Lindo Laut"): [1, 2],
         ("relationships", ("Lindo Laut", "KNOWS", "Cookie")): [2],
     }
-    resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1,
-                             evidence=evidence, n_chunks=3)
+    resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1, evidence=evidence)
     by_id = {e["id"]: e for e in resolved["entities"]}
-    # one Scene per chunk, seq set, linked to the session
-    scenes = [e for e in resolved["entities"] if e["type"] == "Scene"]
-    assert [s["props"]["seq"] for s in sorted(scenes, key=lambda s: s["id"])] == [1, 2, 3]
+    # extracted fact stamped with the chunks it was seen in
+    assert by_id["CHAR_LindoLaut"]["props"]["evidence_chunks"] == [1, 2]
     edges = {(e["start_id"], e["type"], e["end_id"]): e for e in resolved["edges"]}
-    assert ("SCENE_2025-03-26_S01", "IN_SESSION", "SESS_2025-03-26") in edges
-    # extracted fact stamped with its scenes + EVIDENCED_IN edges
-    assert by_id["CHAR_LindoLaut"]["props"]["evidence_scenes"] == [
-        "SCENE_2025-03-26_S01", "SCENE_2025-03-26_S02"]
-    assert ("CHAR_LindoLaut", "EVIDENCED_IN", "SCENE_2025-03-26_S01") in edges
-    assert ("CHAR_LindoLaut", "EVIDENCED_IN", "SCENE_2025-03-26_S02") in edges
-    # relationship carries evidence_scenes (from the sidecar)
+    # relationship carries evidence_chunks (from the sidecar)
     rel = edges[("CHAR_LindoLaut", "KNOWS", "CHAR_Cookie")]
-    assert rel["props"]["evidence_scenes"] == ["SCENE_2025-03-26_S02"]
+    assert rel["props"]["evidence_chunks"] == [2]
 
 
 def test_record_evidence_sidecar():
@@ -220,7 +212,7 @@ def test_srd_rules_rolls_decisions():
         ],
     )
     resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1,
-                             evidence={}, n_chunks=1, srd_index=srd)
+                             evidence={}, srd_index=srd)
     ids = {e["id"] for e in resolved["entities"]}
     # SRD hit links to the shared id — no per-session copy entity emitted
     assert "RULE_CLASS_Bard" not in ids
@@ -236,6 +228,36 @@ def test_srd_rules_rolls_decisions():
     # causal chain: decision TRIGGERED monster; PC HAS_CLASS shared SRD node
     assert ("DEC_2025-03-26_RitualBewusstFalsch", "TRIGGERED", "CHAR_Monster") in edges
     assert ("CHAR_LindoLaut", "HAS_CLASS", "RULE_CLASS_Bard") in edges
+
+
+def test_traits_aggregate_not_fork():
+    # docs/evolution/10 (WP6b): repeated mentions of the same recurring habit
+    # collapse to one Trait id + one KNOWN_FOR edge, never N Event-like nodes.
+    resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
+    r = _tmp_resolver()
+    info = _cast_info(r)
+    extraction = GraphExtraction(
+        traits=[
+            Trait(name="Spielt oft Musik", character="Lindo Laut"),
+            Trait(name="Spielt oft Musik", character="Lindo"),  # alias, same trait
+        ],
+        relationships=[],
+    )
+    resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1)
+    traits = [e for e in resolved["entities"] if e["type"] == "Trait"]
+    assert [t["id"] for t in traits] == ["TRAIT_LindoLaut_SpieltOftMusik"]
+    edges = {(e["start_id"], e["type"], e["end_id"]) for e in resolved["edges"]}
+    assert ("CHAR_LindoLaut", "KNOWN_FOR", "TRAIT_LindoLaut_SpieltOftMusik") in edges
+
+
+def test_trait_unresolved_character_dropped():
+    resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
+    r = _tmp_resolver()
+    info = _cast_info(r)
+    extraction = GraphExtraction(traits=[Trait(name="Singt", character="Niemand")])
+    resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1)
+    assert not any(e["type"] == "Trait" for e in resolved["entities"])
+    assert resolved["dropped"][0]["object"] == "Singt"
 
 
 def test_registry_write_back():

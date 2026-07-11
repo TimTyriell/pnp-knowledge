@@ -22,7 +22,7 @@ from .resolve import _TYPE_MAP, map_predicate, normalize
 log = logging.getLogger("pnp_graph.reconcile")
 
 _JSON_FENCE_RE = re.compile(r"```json\s*(\{.*?\})\s*```", re.DOTALL)
-_SKIP_TYPES = {"Scene", "Session"}  # structural, ids are scheme-specific by design
+_SKIP_TYPES = {"Session"}  # structural, ids are scheme-specific by design
 
 
 def _find_report(session_id: str) -> Path:

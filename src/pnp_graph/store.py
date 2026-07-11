@@ -51,6 +51,23 @@ def _write_graph(db, resolved: dict) -> None:
         rtype = sanitize_predicate(r["type"])
         # rtype passed sanitize + the ALLOWED_PREDICATES gate in resolve.py;
         # safe to interpolate (relationship types can't be parameterized).
+        if rtype == "KNOWN_FOR":
+            # docs/evolution/10 (WP6b): one edge accumulates count/sessions
+            # across the whole campaign, never keyed per-session like other
+            # edges — re-ingesting the same session must not double-count.
+            db.run(
+                "MATCH (a:Entity {id: $start}), (b:Entity {id: $end}) "
+                "MERGE (a)-[rel:KNOWN_FOR]->(b) "
+                "ON CREATE SET rel.count = 1, rel.sessions = [$sid], "
+                "              rel.first_seen = $sid, rel.last_seen = $sid, "
+                "              rel.confidence = 'high', rel.session_id = $sid "
+                "ON MATCH SET "
+                "  rel.count = CASE WHEN $sid IN rel.sessions THEN rel.count ELSE rel.count + 1 END, "
+                "  rel.sessions = CASE WHEN $sid IN rel.sessions THEN rel.sessions ELSE rel.sessions + $sid END, "
+                "  rel.last_seen = $sid, rel.session_id = $sid",
+                start=r["start_id"], end=r["end_id"], sid=r["props"]["session_id"],
+            )
+            continue
         # session_id in the MERGE pattern -> one edge per session (PLAYS history etc.).
         db.run(
             f"MATCH (a:Entity {{id: $start}}), (b:Entity {{id: $end}}) "
@@ -91,6 +108,11 @@ _QA_QUERIES = {
     "orphans": (  # 6. nodes with no relationships (SRD library excluded)
         "MATCH (n:Entity) WHERE NOT (n)--() AND n.session_id <> 'SRD' "
         "RETURN count(n) AS c"),
+    "possible_mis_modeled_recurrence": (  # 7. flag-only (docs/evolution/10) — review, don't auto-fix
+        "MATCH (c:Entity{type:'Character'})-[:PARTICIPATED_IN]->(e:Entity{type:'Event'}) "
+        "WHERE NOT (e)-[:TRIGGERED|RESULTED_IN]-() "
+        "WITH c, e.name AS ename, count(DISTINCT e) AS occurrences "
+        "WHERE occurrences >= 3 RETURN count(*) AS c"),
 }
 _QA_BLOCKERS = ("dup_names", "cross_type_names", "missing_provenance", "timeline_unlinked")
 

@@ -29,7 +29,6 @@ from .config import (
     PREDICATE_SYNONYMS,
     STATE_DIR,
 )
-from .scenes import scene_entities, scene_id
 from .schema import GraphExtraction
 from .store import sanitize_predicate
 
@@ -232,16 +231,14 @@ def resolve_graph(
     cast_info: dict,
     seq: int = 0,
     evidence: dict | None = None,
-    n_chunks: int = 0,
     srd_index=None,
 ) -> dict:
     """GraphExtraction + cast -> {'entities': [...], 'edges': [...]} keyed on ids.
 
     Entities: {id, type, props}. Edges: {start_id, end_id, type, props}.
     Everything carries session_id + confidence (provenance, docs/evolution/04).
-    With `evidence` (extract.py sidecar) + `n_chunks`, Scene nodes are emitted
-    (1 scene = 1 chunk, scenes.py) and every extracted fact gets
-    `evidence_scenes[]` + an EVIDENCED_IN edge per scene.
+    With `evidence` (extract.py sidecar), every extracted fact gets an
+    `evidence_chunks[]` property (chunk indices) — no separate Scene nodes/edges.
     Unresolvable endpoints drop the edge into state/failures/<sid>/dropped_edges.jsonl.
     """
     evidence = evidence or {}
@@ -259,9 +256,9 @@ def resolve_graph(
             aliases = sorted(set(old.get("aliases", [])) | set(props.get("aliases", [])))
             if aliases:
                 old["aliases"] = aliases
-            scenes = sorted(set(old.get("evidence_scenes", [])) | set(props.get("evidence_scenes", [])))
-            if scenes:
-                old["evidence_scenes"] = scenes
+            chunks = sorted(set(old.get("evidence_chunks", [])) | set(props.get("evidence_chunks", [])))
+            if chunks:
+                old["evidence_chunks"] = chunks
         else:
             entities[eid] = {"id": eid, "type": type_,
                              "props": {"session_id": session_id, "confidence": "medium", **props}}
@@ -288,29 +285,19 @@ def resolve_graph(
     # in-fiction edges landing on a Player re-route to their character (09)
     reroute = dict(cast_info["plays"])
 
-    # --- scenes: 1 scene = 1 chunk (WP4) ---------------------------------
-    scene_ents, scene_edges = scene_entities(session_id, n_chunks)
-    for s in scene_ents:
-        entities[s["id"]] = s
-    for s in scene_edges:
-        edge_keys.add((s["start_id"], s["type"], s["end_id"]))
-        edges.append(s)
+    def chunks_of(field: str, key) -> list[int]:
+        return sorted(set(evidence.get((field, key), [])))
 
-    def scenes_of(field: str, key) -> list[str]:
-        return sorted({scene_id(session_id, c) for c in evidence.get((field, key), [])})
-
-    def register(surface: str, type_: str, props: dict, scenes: list[str]) -> str:
+    def register(surface: str, type_: str, props: dict, chunks: list[int]) -> str:
         eid = resolver.resolve(surface, type_)
         if eid.startswith("PLAYER_"):  # model coined a player's name as an entity
             eid = reroute.get(eid, eid)
             surface_to_id.setdefault(normalize(surface), eid)
             return eid
         props["name"] = resolver.canonical(eid) or surface  # stable across surface variants
-        if scenes:
-            props["evidence_scenes"] = scenes
+        if chunks:
+            props["evidence_chunks"] = chunks
         add_entity(eid, type_, props)
-        for sc in scenes:
-            add_edge(eid, sc, "EVIDENCED_IN")
         surface_to_id.setdefault(normalize(surface), eid)
         return eid
 
@@ -330,27 +317,27 @@ def resolve_graph(
         cid = register(c.name, "Character", {
             "name": c.name, "aliases": c.aliases,
             "is_pc": c.type.upper() == "PC", "role": c.type or "NPC",
-        }, scenes_of("characters", c.name))
+        }, chunks_of("characters", c.name))
         add_edge(cid, session_node_id, "APPEARS_IN")
     for loc in extraction.locations:
         register(loc.name, "Location", {"name": loc.name, "description": loc.description},
-                 scenes_of("locations", loc.name))
+                 chunks_of("locations", loc.name))
     for item in extraction.items:
         iid = register(item.name, "Item", {"name": item.name, "status": item.status},
-                       scenes_of("items", item.name))
+                       chunks_of("items", item.name))
         if item.owner:
             owner_id = endpoint(item.owner)
             if owner_id:
                 add_edge(iid, owner_id, "OWNED_BY")
     for q in extraction.quests:
         register(q.name, "Quest", {"name": q.name, "status": q.status},
-                 scenes_of("quests", q.name))
+                 chunks_of("quests", q.name))
     for f in extraction.factions:
         register(f.name, "Faction", {"name": f.name, "description": f.description},
-                 scenes_of("factions", f.name))
+                 chunks_of("factions", f.name))
     for e in extraction.events:
         eid = register(e.title, "Event", {"name": e.title, "summary": e.summary},
-                       scenes_of("events", e.title))
+                       chunks_of("events", e.title))
         add_edge(eid, session_node_id, "IN_SESSION")
         if e.location:
             loc_id = endpoint(e.location)
@@ -363,37 +350,31 @@ def resolve_graph(
 
     # --- rules, rolls, decisions (docs/evolution/05, WP5-6) ---------------
     for ru in extraction.rule_entities:
-        scenes = scenes_of("rule_entities", ru.name)
+        chunks = chunks_of("rule_entities", ru.name)
         rid = srd_index.lookup(ru.name) if srd_index else None
         if rid:
             # shared, preloaded SRD node — link to it, never a per-session copy
             surface_to_id.setdefault(normalize(ru.name), rid)
-            for sc in scenes:
-                add_edge(rid, sc, "EVIDENCED_IN")
         else:
             subtype = re.sub(r"[^A-Za-z0-9]", "", ru.subtype) or "System"
             rid = resolver._lookup("rules", ru.name) or resolver._mint(
                 "rules", f"RULE_{subtype.upper()}", ru.name)
             props = {"name": resolver.canonical(rid) or ru.name, "subtype": ru.subtype,
                      "source": "session"}
-            if scenes:
-                props["evidence_scenes"] = scenes
+            if chunks:
+                props["evidence_chunks"] = chunks
             add_entity(rid, "RuleEntity", props)
-            for sc in scenes:
-                add_edge(rid, sc, "EVIDENCED_IN")
             surface_to_id.setdefault(normalize(ru.name), rid)
 
     for roll in extraction.roll_events:
         rid = f"ROLL_{session_id}_{slug(roll.name)}"  # session-scoped: rolls never recur
-        scenes = scenes_of("roll_events", roll.name)
+        chunks = chunks_of("roll_events", roll.name)
         props = {"name": roll.name, "trait_or_action": roll.trait_or_action,
                  "outcome": roll.outcome, "confidence": normalize_confidence(roll.confidence)}
-        if scenes:
-            props["evidence_scenes"] = scenes
+        if chunks:
+            props["evidence_chunks"] = chunks
         add_entity(rid, "RollEvent", props)
         add_edge(rid, session_node_id, "IN_SESSION")
-        for sc in scenes:
-            add_edge(rid, sc, "EVIDENCED_IN")
         surface_to_id.setdefault(normalize(roll.name), rid)
         if roll.roller:
             who = endpoint(roll.roller)
@@ -406,20 +387,33 @@ def resolve_graph(
 
     for dec in extraction.decisions:
         did = f"DEC_{session_id}_{slug(dec.name)}"  # session-scoped, like rolls
-        scenes = scenes_of("decisions", dec.name)
+        chunks = chunks_of("decisions", dec.name)
         props = {"name": dec.name, "quote": dec.quote, "consequence": dec.consequence,
                  "confidence": normalize_confidence(dec.confidence)}
-        if scenes:
-            props["evidence_scenes"] = scenes
+        if chunks:
+            props["evidence_chunks"] = chunks
         add_entity(did, "Decision", props)
         add_edge(did, session_node_id, "IN_SESSION")
-        for sc in scenes:
-            add_edge(did, sc, "EVIDENCED_IN")
         surface_to_id.setdefault(normalize(dec.name), did)
         if dec.decided_by:
             who = endpoint(dec.decided_by)
             if who:
                 add_edge(who, did, "DECIDED")
+
+    # --- traits (docs/evolution/10, WP6b): recurring behavior aggregates
+    # into one counted Trait node per character (store.py increments
+    # KNOWN_FOR.count on re-occurrence), never N repeated Event nodes -------
+    for tr in extraction.traits:
+        char_id = endpoint(tr.character) if tr.character else None
+        if not char_id:
+            dropped.append({"subject": tr.character, "predicate": "KNOWN_FOR",
+                            "object": tr.name, "reason": "unresolved character"})
+            continue
+        char_slug = char_id[len("CHAR_"):] if char_id.startswith("CHAR_") else slug(char_id)
+        tid = f"TRAIT_{char_slug}_{slug(tr.name)}"
+        add_entity(tid, "Trait", {"name": tr.name})
+        add_edge(char_id, tid, "KNOWN_FOR")
+        surface_to_id.setdefault(normalize(tr.name), tid)
 
     # --- relationships (endpoint validation, docs/evolution/03) ----------
     for r in extraction.relationships:
@@ -432,11 +426,11 @@ def resolve_graph(
             dropped.append({"subject": r.subject, "predicate": r.predicate,
                             "object": r.object, "reason": "unresolved endpoint" if not (start and end) else "self-loop"})
             continue
-        rel_scenes = scenes_of("relationships", (r.subject, r.predicate, r.object)) \
-            or ([scene_id(session_id, r.evidence)] if r.evidence else [])
+        rel_chunks = chunks_of("relationships", (r.subject, r.predicate, r.object)) \
+            or ([r.evidence] if r.evidence else [])
         add_edge(start, end, rtype, {
             "confidence": normalize_confidence(r.confidence),
-            "evidence_scenes": rel_scenes,
+            "evidence_chunks": rel_chunks,
             **({"original_predicate": sanitize_predicate(r.predicate)} if not on_vocab else {}),
         })
 
