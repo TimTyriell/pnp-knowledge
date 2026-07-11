@@ -10,13 +10,13 @@ From `state/ingest_log.jsonl`, run of 2026-07-01 on `2025-03-26_RF_ROCKGeeRUFw.j
 | 32 | **15** | 7 | 12 | 5 | 40 | 4 | 167 |
 
 15 Character nodes for ~5 real people — the duplicate-identity defect
-`docs/evolution/01_current_state.md` describes. This is the number WP1 must
+`../archive/01_current_state.md` describes. This is the number WP1 must
 collapse to ~6 (Lindo Laut, Dodo, Cookie, Deniz-GM, + genuine NPCs).
 
 Speaker labels confirmed in the transcript:
 `Tim (Lindo Laut)`, `Marco (Dodo)`, `Celin (Cookie)`, `Deniz (GM)`.
 
-## Assumption calls (docs/evolution/08_roadmap.md §Assumptions)
+## Assumption calls (../evolution/08_roadmap.md §Assumptions)
 
 Proceeding with the spec's own defaults; flag if any is wrong:
 
@@ -79,7 +79,7 @@ already on `evidence_scenes[]` — pure structural noise, not a timeline
 feature (v2 LLM scene-merging, the thing that would've made Scenes a real
 narrative spine, was never built). `Scene` nodes and `EVIDENCED_IN` removed;
 provenance is now a plain `evidence_chunks: [int]` property on the fact
-itself, no separate node or edge. See `docs/evolution/04_scenes_provenance_vocab.md`.
+itself, no separate node or edge. See `../evolution/04_scenes_provenance_vocab.md`.
 
 ## Breaking changes at M1
 

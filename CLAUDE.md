@@ -5,154 +5,188 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## What this is
 
 A local LLM-to-knowledge-graph pipeline for one TTRPG (Daggerheart) campaign.
-`src/pnp_graph/` reads Whisper transcripts, has a local Ollama model fill a
-**fixed Pydantic schema** via structured output (NOT free-form SPO triples / NOT
-LangChain's `LLMGraphTransformer`), merges entities by name in-memory per session,
-then writes to a local Neo4j with idempotent `MERGE` so repeated runs and multiple
-sessions accumulate into one graph instead of duplicating nodes.
+`src/pnp_graph/` reads Whisper transcripts, has a local Ollama model
+(`qwen3:14b`) fill a **fixed Pydantic schema** via structured output (NOT
+free-form SPO triples), then **resolves** every extracted surface form to a
+canonical `:Entity{id}` (alias registry + fuzzy match + SRD gazetteer) before
+writing to a local Neo4j with idempotent `MERGE`. Repeated runs and multiple
+sessions accumulate into one graph instead of duplicating nodes. A retrieval
+layer (entity embeddings + Neo4j vector index) makes the graph queryable via
+`cli ask`.
 
-Standalone — not part of the `c:\dev\pnp` multi-repo workspace, not a git repo.
-Built for Windows 11, RTX 4070 Ti (12GB VRAM), 32GB RAM.
+Built for Windows 11, RTX 4070 Ti (12GB VRAM), 32GB RAM. One 14B model in
+VRAM at a time — extraction and embedding run serially.
 
-Per `PLAN.md`, this is mid-refactor: phase 1 (split into `src/pnp_graph/` modules,
-behavior-preserving) is done. Phases 2-5 (resume/state, `:Fact` versioning,
-per-session summaries, retry/repair safety nets) are designed in `PLAN.md` but not
-yet implemented — `ingest.py`/`store.py` currently do plain overwrite `MERGE`, no
-versioning, no resume skip beyond append-only `ingest_log.jsonl`.
-
-`docs/evolution/` is a newer, larger spec that rides on top of `PLAN.md` (doesn't
-replace it) — read `docs/evolution/README.md` first, then only the one doc for the
-work package at hand. Its core thesis: this pipeline's `store.py` currently `MERGE`s
-on `name` (duplicate-prone), while `reports/load_report_graph.py` (a **separate,
-non-LLM** loader for the hand-authored `Session_Report_*.md` graphs) uses canonical
-`:Entity{id}`. `docs/evolution/08_roadmap.md` lists WP0–WP10 in order; **WP1
-(canonical IDs + `resolve.py`) is the gate** — it's also a hard prerequisite for
-`PLAN.md`'s phase-3 `:Fact` versioning, so do WP1 before that phase.
+The design spec lives in `docs/evolution/` (WP0–WP11); **it is largely
+implemented** — WP0–WP8, WP10, WP11 landed; WP4 Scene nodes were shipped then
+reverted. **Open: WP9** (multi-session proof + bitemporal `valid_from`/
+`valid_to` stamping in `store.py`; `STATE_PREDICATES` in `config.py` and the
+as-of read path in `retrieve.py` already exist). Measured results and the
+Scene-revert rationale: `docs/learnings/MIGRATION_NOTES.md`. The pre-spec plan
+is archived at `docs/archive/PLAN.md`. Doc map: `docs/README.md`.
 
 ## Commands
 
 ```bash
 .venv\Scripts\activate
-# deps installed ad hoc — no pyproject.toml/requirements.txt at repo root
-uv pip install langchain-ollama neo4j pydantic
-python -m pnp_graph.cli ingest                       # all sessions in transcripts/, oldest->newest
-python -m pnp_graph.cli ingest --only 2025-04-01      # one session by date
+# deps installed ad hoc via uv — no pyproject.toml/requirements.txt at repo root
+uv pip install langchain-ollama neo4j pydantic pytest
+
+python -m pnp_graph.cli ingest                        # all sessions in transcripts/, oldest->newest
+python -m pnp_graph.cli ingest --only 2025-03-26      # one session by date
 python -m pnp_graph.cli ingest --dir path\to\dir      # any dir of *.json transcripts
-python -m pytest tests/                               # or: python tests/test_chunking.py
-python compare/test_sink.py                           # self-check for run_both._write_triples, no Neo4j needed
-python compare/run_both.py --only 2025-03-26           # A/B run vs ai-knowledge-graph, see compare/ below
+python -m pnp_graph.cli reconcile-report 2025-03-26   # diff local graph vs hand-authored report graph
+python -m pnp_graph.cli ask "Wem gehört der Pott?"    # retrieval + local LLM answer; --as-of N for history
+python -m pytest tests/                               # all offline, no LLM/DB needed
+python compare/test_sink.py                           # self-check for run_both._write_triples, no Neo4j
+python compare/run_both.py --only 2025-03-26          # A/B run vs ai-knowledge-graph (historical harness)
+python reports/load_report_graph.py                   # load a report's JSON appendix into :7689
 ```
 
 Prereqs that are NOT scriptable and must be up first:
-- **Ollama** running with `qwen3:14b` pulled (`LLM_MODEL` in `config.py`; fall back
-  to `qwen3:8b` on VRAM trouble). `extract.py` pins `num_ctx` (`NUM_CTX` in
-  `config.py`, 8192) explicitly — Ollama's silent VRAM-based auto-default (4096)
+- **Ollama** running with `qwen3:14b` and `nomic-embed-text` pulled
+  (`LLM_MODEL`/`EMBED_MODEL` in `config.py`). `extract.py` pins `num_ctx`
+  (`NUM_CTX`, 8192) explicitly — Ollama's silent VRAM-based auto-default (4096)
   previously caused runaway generation loops that never converged.
-- **Neo4j** via `docker compose up -d` (see `docker-compose.yml`) — three containers,
-  all `NEO4J_AUTH=none` (no password, `auth=None` in every driver call): `neo4j-main`
-  on `bolt://localhost:7687` (this pipeline, "Graph 2"), `neo4j-aikg` on `:7688` (the
-  `compare/` A/B harness sink, "Graph 1"), `neo4j-report` on `:7689` (the
-  hand-authored report graph, loaded separately by `reports/load_report_graph.py`,
-  "Graph 3" — see `docs/evolution/README.md`). `store.connect()` calls
-  `verify_connectivity()` so this fails fast with a clear error instead of hanging
-  in extraction first.
-
-Only test coverage is `tests/test_chunking.py` (pure invariants on `pack_segments`,
-no LLM/DB needed). Everything past chunking is unverified except by running it —
-the "is it working" check is the per-chunk entity counts logged during a run, the
-`state/ingest_log.jsonl` record, and the starter Cypher query printed at the end.
-
-## Architecture (`src/pnp_graph/`, package, see `PLAN.md` for full design)
-
-Pipeline is `ordered_sessions → load_session_chunks → extract_session (per-chunk
-LLM + merge) → write_session`, orchestrated per-session by `ingest()` in `ingest.py`.
-
-- **`config.py`** — every tunable (model name, chunk size/overlap, Neo4j URL,
-  `SUGGESTED_PREDICATES`, paths). No tunables live elsewhere.
-- **`chunking.py`** — input is JSON, not `.txt`. Each transcript JSON has a
-  `segments` list of `{start, end, speaker, text}` (Whisper output); `.txt`
-  siblings in `transcripts/` are ignored/reference only. `session_id_from_path`
-  extracts the date from the filename (e.g. `2025-03-26`) — this is the
-  `session_id` used everywhere downstream, matching pnp-report's
-  `Session_Report_S<NN>_<date>` convention. `pack_segments` is segment-aware, not
-  char-aware: packs whole speaker turns up to `CHUNK_SIZE`, preferring to cut at
-  the **largest silence gap** (`segments[end+1].start - segments[end].end`) within
-  budget over a raw char boundary — overlap is also turn-based. Empty/whitespace
-  segments are filtered before chunking.
-- **`schema.py`** — `GraphExtraction` (characters / locations / items / quests /
-  events / factions / relationships) is the contract.
-  `with_structured_output(..., method="json_schema")` in `extract.py` forces the
-  model to fill it. To change what's extracted, edit these Pydantic models —
-  there's no separate prompt-only knob.
-- **`extract.py`** — one LLM call per chunk (`extract_chunk`), `evidence` (chunk
-  index) is set in code, never by the model. Relationships are open-vocabulary but
-  seeded: `SUGGESTED_PREDICATES` (in `config.py`, sourced from a prior
-  Claude-authored S02 session report) biases the model toward reusing relation
-  types; it's a hint, not an enum. `merge_graphs` dedups by name/title in-memory
-  before any DB write — first occurrence wins per session, later duplicate-named
-  entities within that session are dropped (not merged field-by-field).
-  Relationships dedup on `(subject, predicate, object)`. `extract_session` runs
-  this across every chunk of one session.
-- **`ingest.py`** — orchestrator. Iterates `ordered_sessions` (oldest → newest by
-  date, so the graph builds in story order), one `try/except` per session so one
-  failed session doesn't block the rest; failures are logged to
-  `state/ingest_log.jsonl` with `status: "failed"` and continue, not yet to
-  `state/failures/<id>/` with raw LLM output (planned, phase 5). No file-hash
-  resume-skip yet despite the log existing — every `ingest` run currently
-  reprocesses every session.
-- **`store.py`** — Neo4j write is idempotent: uniqueness constraints on
-  Character/Location/Faction name, everything is `MERGE`. Events store
-  `name = title` so the generic relationship writer can `MATCH (a {name:...})`
-  across every node type. `sanitize_predicate` strips a predicate to `[A-Z0-9_]`
-  so it's safe to interpolate as a Cypher relationship type — relationship types
-  can't be parameterized, so this is the injection guard; keep it if you touch
-  that code. `write_session` runs `ensure_constraints` + `_write_graph` via
-  `execute_write` (managed transactions) in one driver session — `_write_graph` is
-  the per-session atomic write `PLAN.md` calls for. No versioning yet — repeated
-  runs overwrite scalar properties (`SET`) rather than appending `:Fact` history.
+- **Neo4j** via `docker compose up -d` — three containers, all
+  `NEO4J_AUTH=none` (no password, `auth=None` in every driver call):
+  `neo4j-main` on `bolt://localhost:7687` (this pipeline, "Graph 2"),
+  `neo4j-aikg` on `:7688` (the `compare/` harness sink, "Graph 1"),
+  `neo4j-report` on `:7689` (the hand-authored report graph, loaded by
+  `reports/load_report_graph.py`, "Graph 3"). `store.connect()` calls
+  `verify_connectivity()` so this fails fast instead of hanging in extraction.
+  The WP11 vector index needs Neo4j ≥ 5.13 (see `docker-compose.yml`).
 
 Inspect a run in Neo4j Browser (http://localhost:7474):
 `MATCH (n)-[r]->(m) RETURN n, r, m LIMIT 100`
 
-## `compare/` — A/B harness against `ai-knowledge-graph`
+## Architecture (`src/pnp_graph/`)
 
-`compare/run_both.py` runs each session through **both** extraction approaches
-side by side, into two separate local Neo4j DBMS, to compare this repo's typed-
-schema approach against the vendored free-form-triple `ai-knowledge-graph`
-project on identical input:
+Pipeline per session, orchestrated by `ingest()` in `ingest.py`:
+`ordered_sessions → load_session (chunks + cast) → extract_session (per-chunk
+LLM + in-mem merge, two-pass event consolidation) → resolve_graph (canonical
+IDs) → write_session (Neo4j MERGE) → embed_entities (vector index)`.
 
-- this repo's pipeline (`pnp_graph.cli ingest --only <session>`) → `:7687`, unchanged.
-- `ai-knowledge-graph/generate-graph.py` (sibling repo, config at
-  `compare/aikg_qwen.toml`, same `qwen3:14b` model and matched chunk size so the
-  comparison isolates approach, not model) → triples JSON → `_write_triples`
-  MERGEs those into a second DBMS on `:7688` (generic `:Entity` nodes, reusing
-  this repo's `sanitize_predicate` as the injection guard).
-- Runs **serially**, never both LLM jobs at once — single 12GB-VRAM GPU can't
-  host two `qwen3:14b` concurrently. "A/B" here means side-by-side output
-  comparison, not concurrent execution.
-- `compare/test_sink.py` is a standalone self-check (no pytest, no Neo4j) for
-  `_write_triples`'s malformed-triple filtering and predicate sanitization.
+- **`config.py`** — every tunable: models, chunk size (4000 chars / 600
+  overlap — raised from 2000 after the S01 quality analysis traced micro-event
+  inflation to small chunks), Neo4j URL, and the **closed vocabularies**:
+  `ALLOWED_PREDICATES` + `PREDICATE_SYNONYMS` (off-vocab → `RELATES_TO`,
+  logged), `PREDICATE_DOMAINS` (domain/range per predicate),
+  `STATE_/EVENT_/IDENTITY_PREDICATES` (bitemporal classes, WP9),
+  `META_EVENT_TERMS` (event gate), `RULE_SUBTYPES`, `OOC_DENYLIST`
+  (out-of-fiction noise like Twitch raids). No tunables live elsewhere.
+- **`chunking.py`** — input is Whisper JSON (`segments` of
+  `{start, end, speaker, text}`); `.txt` siblings in `transcripts/` are
+  reference only. `session_id_from_path` extracts the date (`2025-03-26`)
+  used as `session_id` everywhere downstream, matching pnp-report's
+  `Session_Report_S<NN>_<date>` convention. `pack_segments` packs whole
+  speaker turns up to `CHUNK_SIZE`, preferring to cut at the **largest silence
+  gap** within budget; overlap is turn-based; empty segments filtered.
+  `parse_speaker`/`session_cast` split the transcript's `Player (Character)`
+  labels — the cast drives player/character mapping and GM handling downstream.
+- **`schema.py`** — the extraction contract, forced via
+  `with_structured_output(..., method="json_schema")`: Character / Location /
+  Item / Quest / Event / Faction / RuleEntity / RollEvent / Decision / Trait /
+  Relationship, split into `EntityExtraction` + `EventExtraction` (two-pass)
+  plus `EventConsolidation` (post-pass event grouping). To change what's
+  extracted, edit these models — there's no separate prompt-only knob.
+- **`extract.py`** — LLM calls per chunk with retry (`_invoke_with_retry`;
+  persistent parse failures dump to `state/failures/<sid>/`). Cast, SRD
+  gazetteer, and known-entity lines are injected into the prompt; `evidence`
+  (chunk index) is set in code, never by the model. `merge_graphs` dedups by
+  name/title in-memory (first occurrence wins per session);
+  `propose_event_groups`/`apply_event_consolidation` is a second LLM pass
+  collapsing near-duplicate events. `SUGGESTED_PREDICATES` (sourced from the
+  Claude-authored S02 report) biases relation naming; the hard vocab
+  enforcement happens later in `resolve.py`.
+- **`resolve.py`** — **the identity layer** (WP1/WP1b, the spec's gate).
+  `Resolver` maps surface forms → canonical ids via `data/alias_registry.json`
+  + normalization + `difflib` fuzzy match (ratio ≥ 0.9; stdlib, no
+  rapidfuzz/APOC). `resolve_graph` builds the final `{entities, edges}` dict:
+  player/character split with per-session `PLAYS` (GM gets only `DIRECTS`),
+  out-of-world filter (`OOC_DENYLIST`), event gate (`META_EVENT_TERMS` +
+  roll-shaped titles), trait aggregation (counted `KNOWN_FOR`), predicate
+  mapping + domain checks, endpoint validation — unresolvable edges are
+  **dropped and logged** (`state/failures/<sid>/dropped_edges.jsonl`), never
+  MERGE-created.
+- **`store.py`** — idempotent Neo4j writes on `:Entity {id}` (uniqueness
+  constraint `entity_id`; `type`/`session_id` indexes). `sanitize_predicate`
+  strips predicates to `[A-Z0-9_]` — relationship types can't be
+  parameterized, this is the injection guard; keep it if you touch that code.
+  `write_session` = constraints + `_write_graph` via `execute_write` in one
+  driver session (per-session atomic write). `run_qa` = the QA queries from
+  `docs/evolution/07` (dup names, cross-type collisions, missing provenance).
+  No `valid_from`/`valid_to` stamping yet — that's WP9.
+- **`srd.py`** — loads `data/daggerheart_srd.json` into an `SrdIndex`
+  (prompt gazetteer + shared `RuleEntity` library); `preload` MERGEs the
+  shared SRD nodes once, sessions link to them, never per-session copies.
+- **`embed.py`** — `nomic-embed-text` entity embeddings into a Neo4j vector
+  index (768 dims); backbone types (Session) excluded from search hits.
+- **`retrieve.py`** — GraphRAG-style **local** search without adopting the
+  framework (verdict in `docs/evolution/11`): vector top-k seeds → graph
+  neighborhood expansion (optionally as-of a session seq) → formatted context
+  → local LLM answer with session citations. `cli ask` wraps it.
+- **`reconcile.py`** — `cli reconcile-report` (WP8): diffs the local graph
+  against the hand-authored report graph for one session; proposes alias
+  additions. Finds reports in `reports/` (or repo root).
+- **`ingest.py`** — per-session orchestration, one `try/except` per session so
+  one failure doesn't block the rest; append-only `state/ingest_log.jsonl`.
+  **No file-hash resume-skip yet** — every run reprocesses every session
+  (open item from archived PLAN phase 2, as are per-session `:Summary` nodes).
+
+## Tests
+
+`python -m pytest tests/` — all offline, no LLM/DB:
+- `test_chunking.py` — `pack_segments` invariants.
+- `test_extract.py` — prompt assembly, merge, event-consolidation logic (LLM stubbed).
+- `test_resolve.py` — the resolver: aliasing, GM handling, out-of-world filter,
+  event gate, predicate mapping.
+- `test_golden.py` — golden-file regression (WP10): fixed extraction fixture
+  through resolve, compared against `tests/golden_resolved.json`.
+- `test_retrieve.py` — embedding text + context formatting.
+
+`tests/manual_test_files/` holds manual Neo4j inspection snapshots, not pytest
+fixtures. End-to-end verification is still: run an ingest, check the logged
+per-chunk counts, `state/ingest_log.jsonl`, and the `run_qa` output.
+
+## `compare/` — historical A/B harness
+
+`compare/run_both.py` ran each session through this pipeline AND the vendored
+free-form-triple `ai-knowledge-graph` project (sibling repo at
+`c:\dev\pnp\ai-knowledge-graph`, override with `AIKG_DIR`; config
+`compare/aikg_qwen.toml`, same model + matched chunk size) into `:7687` /
+`:7688` for side-by-side comparison on identical input. That comparison
+**decided the architecture** (three-graph table in `docs/evolution/README.md`);
+the harness stays runnable for spot-checks but is not part of ingest. Runs
+serially — one 14B fits in VRAM. `compare/out/` is generated and gitignored.
 
 ## `reports/` — Graph 3, the hand-authored gold cross-check
 
-`reports/load_report_graph.py` is a **third, separate loader** — no LLM, no
-chunking. It pulls the trailing fenced ` ```json ` appendix out of a
-`Session_Report_*.md` (already a curated graph written by Claude, not qwen) and
-`MERGE`s it into `:7689` as generic `:Entity{id}` nodes (closed canonical ID, not
-`name`-keyed like `store.py`). It reuses `pnp_graph.chunking.session_id_from_path`
-and `pnp_graph.store.sanitize_predicate` from the main package but is otherwise
-independent. This is Graph 3 in `docs/evolution/`'s three-graph comparison — kept
-as a quality reference, not something the main pipeline writes to or reads from at
-runtime. `reports/test_load_report_graph.py` covers it.
+`reports/` holds the curated `Session_Report_*.md` files (German, each ending
+in a fenced ` ```json ` graph appendix authored by Claude, not qwen) and
+`load_report_graph.py`, which MERGEs that appendix into `:7689` as generic
+`:Entity{id}` nodes — no LLM, no chunking. Used as the gold reference by
+`cli reconcile-report`; the main pipeline never touches `:7689` during ingest.
+`Session_Report_S02_2025-04-01.md` is also the source of
+`SUGGESTED_PREDICATES` in `config.py`. `reports/test_load_report_graph.py`
+covers the loader.
 
-## Not the pipeline
+## Data & state
 
-- The pre-refactor monolith `extract_to_graph.py` is **deleted** — `src/pnp_graph/`
-  fully replaces it. If you see references to it, they're stale.
-- `ai-knowledge-graph/` moved out to its own top-level sibling folder
-  (`c:\dev\pnp\ai-knowledge-graph`) — third-party reference project (its own
-  `pyproject.toml`, `generate-graph.py`, free-form-triple approach). Don't edit it
-  or confuse its design for this repo's. `compare/run_both.py` locates it via
-  `REPO_ROOT.parent / "ai-knowledge-graph"` (override with `AIKG_DIR` env var).
-- `quick_test/` and `Session_Report_S02_2025-04-01.md` are reference/scratch, not
-  part of the pipeline.
+- `data/alias_registry.json` — persistent surface→canonical-id map; grows via
+  resolver runs and `reconcile-report` proposals. Checked in.
+- `data/daggerheart_srd.json` — seed SRD subset (licensing for full content
+  unconfirmed; candidate bulk source: `c:\dev\pnp\daggerheart-data`).
+- `state/` — gitignored: `ingest_log.jsonl` (append-only run log),
+  `failures/<sid>/` (LLM parse failures, dropped edges).
+
+## Conventions
+
+- Content (names, descriptions) stays **German**; predicates, types, and
+  confidence tokens are English (`CONFIDENCE_MAP` converges `hoch`→`high`).
+- Canonical `id` is the merge key — never `name`. Resolution happens before
+  the write; endpoints are MATCHed by id, dropped if unresolved.
+- Extract generously, resolve deterministically — recall is a prompt dial,
+  correctness lives in `resolve.py`.
+- `ai-knowledge-graph/` (sibling folder) is third-party reference — don't edit
+  it or confuse its free-form-triple design for this repo's.

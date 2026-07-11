@@ -2,6 +2,15 @@
 
 **Read this file first, then open only the doc for the work package you're on.** This set is deliberately split so you don't load 2,000 lines of context to do one focused change.
 
+> **Status (2026-07-11): largely implemented.** WP0–WP8, WP10 and WP11 have
+> landed in `src/pnp_graph/` (WP4 Scenes shipped then reverted — see `04`).
+> Results and learnings per milestone: `../learnings/MIGRATION_NOTES.md`.
+> **Open: WP9** — second-session multi-session proof + the bitemporal
+> write-side (`store.py` does not stamp `valid_from`/`valid_to` yet;
+> `STATE_PREDICATES` in `config.py` and the as-of read path in `retrieve.py`
+> are already in place). References to `PLAN.md` throughout these docs point
+> to the superseded original plan, archived at `../archive/PLAN.md`.
+
 ## Goal (one line)
 
 Keep the local, private, high-recall `qwen3:14b` pipeline in `src/pnp_graph/`, but make its **output schema and guarantees match the Claude-authored report graph (Graph 3)** — canonical IDs, real entity resolution, scenes, rules/SRD grounding, and TTRPG-native `Decision`/`RollEvent` semantics — **without** the report loader's `attributes_json` opacity. "More knowledge" = Graph 3's structure at Graph 2's (or higher) recall.
@@ -28,7 +37,7 @@ Keep the local, private, high-recall `qwen3:14b` pipeline in `src/pnp_graph/`, b
 
 ## Document map
 
-- `01_current_state.md` — as-is architecture file-by-file + the exact defects (start here to understand *why*).
+- `../archive/01_current_state.md` — the pre-WP1 as-is + defects this spec was written against (historical; the defects are fixed).
 - `02_target_architecture.md` — the canonical `:Entity{id}` model, module layout, `schema.py`/`store.py` sketches.
 - `03_entity_resolution.md` — **the #1 fix.** `resolve.py`, ID scheme, alias registry. Do this before anything else.
 - `09_player_character_mapping.md` — player↔character separation, **session-bound** `PLAYS` control parsed from the transcript's `Player (Character)` speaker labels, and action attribution. Read right after `03` (it corrects `03`'s player/character handling).

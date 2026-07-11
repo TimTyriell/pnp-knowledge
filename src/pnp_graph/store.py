@@ -3,7 +3,8 @@
 Input is the resolved dict from resolve.py — entities {id, type, props} and
 edges {start_id, end_id, type, props}. Endpoints are MATCHed by id, never
 MERGE-created: unresolvable endpoints were already dropped in resolve.py.
-Versioning (valid_from/valid_to) lands in a later phase (PLAN.md phase 3).
+Versioning (valid_from/valid_to on state edges) is WP9 — designed in
+docs/evolution/11_bitemporal_and_retrieval.md, not implemented here yet.
 """
 
 import logging

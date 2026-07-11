@@ -1,5 +1,10 @@
 # 08 — Roadmap, PLAN.md Alignment, Assumptions & Anti-patterns
 
+> **Status (2026-07-11):** WP0–WP8, WP10, WP11 done (WP4 reverted — see `04`).
+> **WP9 is the open work package.** Results per milestone:
+> `../learnings/MIGRATION_NOTES.md`. `PLAN.md` is archived at
+> `../archive/PLAN.md`; doc `01` at `../archive/01_current_state.md`.
+
 ## Work packages (do in order)
 
 Each is independently shippable and verified by re-ingesting `2025-03-26`.
@@ -56,7 +61,7 @@ PLAN.md already commits to append/version (`:Fact` with `valid_from`/`valid_to`)
 
 ## Expected edges per session (sizing reference)
 
-Measured against the real transcript (`transcripts/2025-03-26_RF_ROCKGeeRUFw.json`, **33.1 real minutes**, 157 segments): running the actual `chunking.load_session_chunks` produces **32 raw chunks** at `CHUNK_SIZE=2000`. Projected edge count once WP1–WP8 land, by category:
+Measured against the real transcript (`transcripts/2025-03-26_RF_ROCKGeeRUFw.json`, **33.1 real minutes**, 157 segments): running the actual `chunking.load_session` produces **32 raw chunks** at `CHUNK_SIZE=2000`. Projected edge count once WP1–WP8 land, by category:
 
 | Category | Basis | Est. edges/session |
 |---|---|---|
