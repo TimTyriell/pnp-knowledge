@@ -52,10 +52,11 @@ def test_bootstrap_cast_splits_players_and_characters():
     r = _tmp_resolver()
     info = _cast_info(r)
     assert set(info["players"]) == {"PLAYER_Tim", "PLAYER_Marco", "PLAYER_Celin", "PLAYER_Deniz"}
-    assert set(info["characters"]) == {"CHAR_LindoLaut", "CHAR_Dodo", "CHAR_Cookie", "CHAR_Deniz_GM"}
+    # GM-is-world: the GM gets NO character node and no PLAYS entry
+    assert set(info["characters"]) == {"CHAR_LindoLaut", "CHAR_Dodo", "CHAR_Cookie"}
     assert info["plays"]["PLAYER_Tim"] == "CHAR_LindoLaut"
-    assert info["plays"]["PLAYER_Deniz"] == "CHAR_Deniz_GM"
-    assert info["characters"]["CHAR_Deniz_GM"]["is_pc"] is False
+    assert "PLAYER_Deniz" not in info["plays"]
+    assert info["players"]["PLAYER_Deniz"]["role"] == "GM"
 
 
 def test_resolve_variants_collapse_to_one_id():
@@ -76,7 +77,8 @@ def test_resolve_never_crosses_type():
 def test_alias_hit_beats_minting():
     r = _tmp_resolver()
     assert r.resolve("Lindo", "Character") == "CHAR_LindoLaut"  # seeded alias
-    assert r.resolve("GM", "Character") == "CHAR_Deniz_GM"
+    # 'GM' is a player alias now (gm-is-world) — resolves to the player, never a char
+    assert r.resolve("GM", "Character") == "PLAYER_Deniz"
 
 
 def test_player_name_never_becomes_character():
@@ -135,9 +137,9 @@ def test_resolve_graph_end_to_end(tmp_state=None):
     # unresolved endpoint dropped, not written
     assert len(resolved["dropped"]) == 1
     assert resolved["dropped"][0]["subject"] == "Niemand"
-    # in-fiction edges never land on a Player (only PLAYS may touch PLAYER_*)
+    # in-fiction edges never land on a Player (only PLAYS/DIRECTS may touch PLAYER_*)
     for (s, t, o) in edges:
-        if t != "PLAYS":
+        if t not in ("PLAYS", "DIRECTS"):
             assert not s.startswith("PLAYER_") and not o.startswith("PLAYER_")
     # every node and edge carries provenance
     for e in resolved["entities"]:
@@ -261,24 +263,32 @@ def test_trait_unresolved_character_dropped():
     assert resolved["dropped"][0]["object"] == "Singt"
 
 
-def test_gm_never_subject_of_participated_rolled_decided():
-    # docs/evolution/KG_Qualitaetsanalyse_S01 fix D: the GM narrates every scene
-    # by definition, so PARTICIPATED_IN/ROLLED/DECIDED from GM is pure noise.
+def test_gm_is_world():
+    # GM-is-world: no GM Character node exists; the GM player's ONLY edge is
+    # DIRECTS -> Session; every extracted edge aimed at a GM surface is dropped.
     resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
     r = _tmp_resolver()
     info = _cast_info(r)
     extraction = GraphExtraction(
+        characters=[Character(name="GM", type="NPC")],  # model minting the GM
         events=[Event(title="Kampfbeginn", participants=["Deniz", "Dodo"])],
-        roll_events=[RollEvent(name="GM roll", roller="Deniz", confidence="high")],
-        decisions=[Decision(name="GM calls it", decided_by="Deniz", confidence="high")],
+        roll_events=[RollEvent(name="Monster attack roll", roller="GM", confidence="high")],
+        decisions=[Decision(name="Monster flieht", decided_by="Deniz", confidence="high")],
+        relationships=[Relationship(subject="Deniz", predicate="KNOWS", object="Dodo",
+                                    confidence="high")],
     )
     resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1)
-    for e in resolved["edges"]:
-        if e["type"] in ("PARTICIPATED_IN", "ROLLED", "DECIDED"):
-            assert e["start_id"] != "CHAR_Deniz_GM"
-    # the PC still gets its own PARTICIPATED_IN edge — suppression is GM-only
+    ids = {e["id"] for e in resolved["entities"]}
+    assert "CHAR_Deniz_GM" not in ids and not any("GM" in i for i in ids if i.startswith("CHAR_"))
     edges = {(e["start_id"], e["type"], e["end_id"]) for e in resolved["edges"]}
+    assert ("PLAYER_Deniz", "DIRECTS", "SESS_2025-03-26") in edges
+    # DIRECTS is the GM player's only edge
+    gm_edges = [(s, t, o) for s, t, o in edges if s == "PLAYER_Deniz" or o == "PLAYER_Deniz"]
+    assert gm_edges == [("PLAYER_Deniz", "DIRECTS", "SESS_2025-03-26")]
+    # the PC keeps its PARTICIPATED_IN; GM roll/decision edges are gone
     assert any(t == "PARTICIPATED_IN" and s == "CHAR_Dodo" for s, t, _ in edges)
+    assert not any(t in ("ROLLED", "DECIDED", "KNOWS") and "Deniz" in s for s, t, _ in edges)
+    assert any(d["reason"] == "gm-is-world" for d in resolved["dropped"])
 
 
 def test_ooc_denylist():
@@ -298,14 +308,27 @@ def test_ooc_character_dropped_not_minted():
     assert any("out-of-world" in d["reason"] for d in resolved["dropped"])
 
 
+def test_gm_fuzzy_match_catches_asr_noise():
+    # 'Dennis' for 'Deniz' — the same ASR mangling pattern that produced
+    # CHAR_Kieler in the diagnostic run; is_gm_surface must fuzzy-match it.
+    resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
+    r = _tmp_resolver()
+    info = _cast_info(r)
+    extraction = GraphExtraction(characters=[Character(name="Dennis", type="NPC")])
+    resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1)
+    ids = {e["id"] for e in resolved["entities"]}
+    assert not any("Dennis" in i for i in ids)
+    assert any(d["reason"] == "gm-is-world" for d in resolved["dropped"])
+
+
 def test_domain_range_violation_dropped():
-    # headline finding: 'GM ROLLED Cookie' (Character->Character) — ROLLED's
+    # analysis headline class: 'X ROLLED Y' (Character->Character) — ROLLED's
     # range is RollEvent, not Character, so this must never become an edge.
     resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
     r = _tmp_resolver()
     info = _cast_info(r)
     extraction = GraphExtraction(
-        relationships=[Relationship(subject="Deniz", predicate="ROLLED", object="Cookie",
+        relationships=[Relationship(subject="Cookie", predicate="ROLLED", object="Dodo",
                                     confidence="high")],
     )
     resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1)
@@ -354,6 +377,51 @@ def test_trait_two_sightings_gets_medium_confidence():
 
 def test_mentioned_in_off_vocab():
     assert map_predicate("MENTIONED_IN") == ("RELATES_TO", False)
+
+
+def test_event_gate_drops_meta_and_roll_events():
+    from pnp_graph.resolve import event_gate
+    players = ["Tim", "Marco", "Celin", "Deniz"]
+    # meta/rules talk
+    assert event_gate("Clarification of Hope Point Rule", set(), players)
+    assert event_gate("Explanation of Support Mechanics", set(), players)
+    assert event_gate("Mention of Bardic Inspiration", set(), players)
+    assert event_gate("Lindo Laut considers healing or using armor", set(), players)
+    assert event_gate("Hope-Punkt-Regel erläutert", set(), players)
+    # roll-shaped (RollEvent covers these)
+    assert event_gate("Cookie rolls on Presence", set(), players)
+    assert event_gate("Presence roll initiated by Celin", set(), players)
+    # player name as actor
+    assert event_gate("Marco takes the hit instead of Dodo", set(), players)
+    # duplicates a quest
+    from pnp_graph.resolve import normalize
+    assert event_gate("Defeating the Monster", {normalize("Defeating the Monster")}, players)
+    # real state-change events pass — and 'Schriftrolle' is NOT roll-shaped
+    assert event_gate("Monster Tentacle Severed", set(), players) is None
+    assert event_gate("Schriftrolle gefunden", set(), players) is None
+    assert event_gate("Dodo moves the Pott", set(), players) is None
+
+
+def test_rule_subtype_clamp():
+    # off-enum subtypes ('diceroll', 'weapon trait', ...) never mint; enum +
+    # 'game'-prefixed variants do; SRD hits bypass the clamp entirely.
+    resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
+    r = _tmp_resolver()
+    info = _cast_info(r)
+    srd = SrdIndex()
+    extraction = GraphExtraction(rule_entities=[
+        RuleEntity(name="2w12", subtype="diceroll"),          # off-enum -> dropped
+        RuleEntity(name="reliable", subtype="weapon trait"),  # off-enum -> dropped
+        RuleEntity(name="Hausregel Xyz", subtype="game-mechanic"),  # game+enum -> minted
+        RuleEntity(name="Tend to All Wounds", subtype="game-rule"),  # SRD alias -> shared node
+    ])
+    resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1, srd_index=srd)
+    ids = {e["id"] for e in resolved["entities"]}
+    assert not any("2w12" in i.lower() or "reliable" in i.lower() for i in ids)
+    assert any(i.startswith("RULE_GAMEMECHANIC_") for i in ids)
+    assert sum(1 for d in resolved["dropped"] if d["reason"] == "off-enum rule subtype") == 2
+    # SRD alias resolved to the shared Long Rest node, no per-session mint
+    assert not any("tendtoallwounds" in i.lower() for i in ids)
 
 
 def test_registry_write_back():

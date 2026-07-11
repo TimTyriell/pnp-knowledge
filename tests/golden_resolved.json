@@ -12,17 +12,6 @@
       }
     },
     {
-      "id": "CHAR_Deniz_GM",
-      "type": "Character",
-      "props": {
-        "session_id": "2025-03-26",
-        "confidence": "high",
-        "name": "Deniz (GM)",
-        "is_pc": false,
-        "role": "GM"
-      }
-    },
-    {
       "id": "CHAR_Dodo",
       "type": "Character",
       "props": {
@@ -192,15 +181,6 @@
       }
     },
     {
-      "start_id": "CHAR_Deniz_GM",
-      "end_id": "SESS_2025-03-26",
-      "type": "APPEARS_IN",
-      "props": {
-        "session_id": "2025-03-26",
-        "confidence": "high"
-      }
-    },
-    {
       "start_id": "CHAR_Dodo",
       "end_id": "SESS_2025-03-26",
       "type": "APPEARS_IN",
@@ -339,12 +319,11 @@
     },
     {
       "start_id": "PLAYER_Deniz",
-      "end_id": "CHAR_Deniz_GM",
-      "type": "PLAYS",
+      "end_id": "SESS_2025-03-26",
+      "type": "DIRECTS",
       "props": {
         "session_id": "2025-03-26",
-        "confidence": "high",
-        "seq": 1
+        "confidence": "high"
       }
     },
     {

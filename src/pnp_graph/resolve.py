@@ -39,6 +39,11 @@ from .store import sanitize_predicate
 log = logging.getLogger("pnp_graph.resolve")
 
 FUZZY_THRESHOLD = 0.9
+# Looser than FUZZY_THRESHOLD deliberately: GM-surface false positives just
+# drop one edge (cheap), while false negatives leak ASR noise into the graph
+# as a phantom Character (the CHAR_Kieler/CHAR_Dennis pattern). 'Deniz'
+# vs 'Dennis' scores 0.73 — real cast names in this campaign score <=0.6.
+GM_FUZZY_THRESHOLD = 0.7
 
 # extraction type -> (id prefix, registry section)
 _TYPE_MAP = {
@@ -327,7 +332,14 @@ def resolve_graph(
         gm_norms |= {normalize(s) for s in (entry.get("canonical", ""), *entry.get("aliases", [])) if s}
 
     def is_gm_surface(surface: str | None) -> bool:
-        return bool(surface) and normalize(surface) in gm_norms
+        """Exact/normalized hit, or a fuzzy one (ASR mangles 'Deniz' -> 'Dennis'
+        the same way it mangles PC names — reuse the resolver's own threshold)."""
+        if not surface:
+            return False
+        n = normalize(surface)
+        if n in gm_norms:
+            return True
+        return any(difflib.SequenceMatcher(None, n, g).ratio() >= GM_FUZZY_THRESHOLD for g in gm_norms)
 
     # in-fiction edges landing on a Player re-route to their character (09)
     reroute = dict(cast_info["plays"])
