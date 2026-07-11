@@ -9,9 +9,9 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from pnp_graph.extract import extract_chunk
-from pnp_graph.schema import (Character, EntityExtraction, EventExtraction, Location,
-                              Relationship, RuleEntity)
+from pnp_graph.extract import apply_event_consolidation, extract_chunk, propose_event_groups
+from pnp_graph.schema import (Character, EntityExtraction, Event, EventConsolidation, EventExtraction,
+                              EventGroup, GraphExtraction, Location, Relationship, RuleEntity)
 
 
 class _FakeExtractor:
@@ -45,7 +45,7 @@ def test_extract_chunk_combines_both_passes():
     entity_extractor = _FakeExtractor([entities])
     event_extractor = _FakeExtractor([events])
 
-    result = extract_chunk((entity_extractor, event_extractor), "chunk text", 3,
+    result = extract_chunk((entity_extractor, event_extractor, None), "chunk text", 3,
                            cast_names=["Lindo Laut"], rule_names=["Barde"])
 
     assert result.characters == entities.characters
@@ -67,11 +67,80 @@ def test_extract_chunk_retries_once_per_pass():
     entity_extractor = _FakeExtractor([entities], fail_first=True)
     event_extractor = _FakeExtractor([events], fail_first=True)
 
-    result = extract_chunk((entity_extractor, event_extractor), "chunk text", 1)
+    result = extract_chunk((entity_extractor, event_extractor, None), "chunk text", 1)
 
     assert result.characters == entities.characters
     assert len(entity_extractor.prompts) == 2  # first raised, retry succeeded
     assert len(event_extractor.prompts) == 2
+
+
+def test_propose_event_groups_skips_llm_under_two_events():
+    extractor = _FakeExtractor([EventConsolidation(groups=[])])
+    graph = GraphExtraction(events=[Event(title="Only One")])
+    result = propose_event_groups(extractor, graph)
+    assert result.groups == []
+    assert extractor.prompts == []  # never called — nothing to consolidate
+
+
+def test_apply_event_consolidation_merges_near_duplicates():
+    graph = GraphExtraction(
+        events=[
+            Event(title="Monster's Last Breath", summary="a", participants=["Dodo"]),
+            Event(title="Monster's Final Breath", summary="b", participants=["Cookie"], location="Wald"),
+            Event(title="Dodo moves the Pott", summary="unrelated", participants=["Dodo"]),
+        ],
+        relationships=[
+            Relationship(subject="Dodo", predicate="PARTICIPATED_IN",
+                        object="Monster's Last Breath", confidence="high"),
+            Relationship(subject="Cookie", predicate="PARTICIPATED_IN",
+                        object="Monster's Final Breath", confidence="high"),
+        ],
+    )
+    evidence = {
+        ("events", "Monster's Last Breath"): [3],
+        ("events", "Monster's Final Breath"): [4],
+        ("relationships", ("Dodo", "PARTICIPATED_IN", "Monster's Last Breath")): [3],
+        ("relationships", ("Cookie", "PARTICIPATED_IN", "Monster's Final Breath")): [4],
+    }
+    consolidation = EventConsolidation(groups=[
+        EventGroup(canonical_title="Monster Dies", summary="the monster dies",
+                  member_titles=["Monster's Last Breath", "Monster's Final Breath"]),
+        EventGroup(canonical_title="Dodo moves the Pott", summary="unrelated",
+                  member_titles=["Dodo moves the Pott"]),
+    ])
+    apply_event_consolidation(graph, evidence, consolidation)
+
+    titles = {e.title for e in graph.events}
+    assert titles == {"Monster Dies", "Dodo moves the Pott"}
+    merged = next(e for e in graph.events if e.title == "Monster Dies")
+    assert set(merged.participants) == {"Dodo", "Cookie"}
+    assert merged.location == "Wald"  # pulled from a member that had one
+
+    rel_objects = {r.object for r in graph.relationships}
+    assert rel_objects == {"Monster Dies"}  # both rewritten, no duplicate
+
+    assert evidence[("events", "Monster Dies")] == [3, 4]
+    assert ("relationships", ("Dodo", "PARTICIPATED_IN", "Monster Dies")) in evidence
+    assert ("relationships", ("Cookie", "PARTICIPATED_IN", "Monster Dies")) in evidence
+
+
+def test_apply_event_consolidation_safety_net_keeps_uncovered_titles():
+    # if the model drops a title from every group (schema drift), it survives
+    # as its own singleton rather than vanishing from the graph.
+    graph = GraphExtraction(events=[
+        Event(title="A", summary=""), Event(title="B", summary=""), Event(title="C", summary=""),
+    ])
+    consolidation = EventConsolidation(groups=[
+        EventGroup(canonical_title="A", summary="", member_titles=["A"]),
+    ])
+    apply_event_consolidation(graph, {}, consolidation)
+    assert {e.title for e in graph.events} == {"A", "B", "C"}
+
+
+def test_apply_event_consolidation_noop_on_empty_groups():
+    graph = GraphExtraction(events=[Event(title="A"), Event(title="B")])
+    apply_event_consolidation(graph, {}, EventConsolidation(groups=[]))
+    assert {e.title for e in graph.events} == {"A", "B"}
 
 
 if __name__ == "__main__":

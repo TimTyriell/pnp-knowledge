@@ -77,6 +77,27 @@ class Trait(BaseModel):
     character: str | None = Field(default=None, description="Character this trait belongs to")
 
 
+class EventGroup(BaseModel):
+    """One real narrative moment, possibly extracted as several near-duplicate
+    Event entries across chunks (docs/evolution/KG_Qualitaetsanalyse_S01 fix N3,
+    e.g. 'Monster's Last Breath' + 'Monster's Final Breath' + 'Monster's Death
+    and Environment Normalization' are one moment)."""
+
+    canonical_title: str = Field(description="The single clearest title for this group")
+    summary: str = Field(default="", description="One merged summary covering every member event")
+    member_titles: list[str] = Field(
+        description="Exact titles from the input list belonging to this moment, "
+        "spelled exactly as given, including canonical_title itself if unchanged")
+
+
+class EventConsolidation(BaseModel):
+    """Session-level map-reduce pass (docs/evolution/06 §4): groups the events
+    merge_graphs already deduped by exact title into moments, collapsing
+    near-duplicate titles the per-chunk model couldn't see were the same fact."""
+
+    groups: list[EventGroup] = []
+
+
 class Relationship(BaseModel):
     """Arbitrary lore/social/causal connection between two already-extracted entities."""
 

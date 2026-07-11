@@ -106,11 +106,6 @@ def load_session(path: Path) -> tuple[list[str], list[tuple[str, str | None, boo
     return pack_segments(segments), session_cast(segments)
 
 
-def load_session_chunks(path: Path) -> list[str]:
-    """Chunks for a single transcript file."""
-    return load_session(path)[0]
-
-
 def ordered_sessions(transcript_dir: Path) -> list[Path]:
     """Transcript files sorted oldest -> newest by session_id (date)."""
     return sorted(transcript_dir.glob("*.json"), key=session_id_from_path)

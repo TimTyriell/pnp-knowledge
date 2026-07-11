@@ -8,7 +8,7 @@ from pathlib import Path
 from .chunking import load_session, ordered_sessions, session_id_from_path
 from .config import STATE_DIR, TRANSCRIPT_DIR
 from .embed import embed_entities
-from .extract import build_extractor, extract_session
+from .extract import apply_event_consolidation, build_extractor, extract_session, propose_event_groups
 from .resolve import Resolver, resolve_graph
 from .srd import SrdIndex, preload
 from .store import connect, run_qa, write_session
@@ -48,6 +48,12 @@ def ingest(transcript_dir: Path = TRANSCRIPT_DIR, only: str | None = None) -> No
                 graph, evidence = extract_session(extractor, chunks, cast_names,
                                                   srd_index.gazetteer(),
                                                   fail_dir=STATE_DIR / "failures" / sid)
+                n_events_before = len(graph.events)
+                consolidation = propose_event_groups(extractor[2], graph)
+                apply_event_consolidation(graph, evidence, consolidation)
+                if len(graph.events) != n_events_before:
+                    log.info("Session %s: consolidated %d events -> %d",
+                             sid, n_events_before, len(graph.events))
                 log.info(
                     "Session %s merged total: %d characters, %d locations, %d items, "
                     "%d quests, %d events, %d factions, %d traits, %d relationships",

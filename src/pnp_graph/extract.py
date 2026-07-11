@@ -6,7 +6,7 @@ import logging
 from langchain_ollama import ChatOllama
 
 from .config import LLM_MODEL, NUM_CTX, SUGGESTED_PREDICATES
-from .schema import EntityExtraction, EventExtraction, GraphExtraction
+from .schema import EntityExtraction, Event, EventConsolidation, EventExtraction, GraphExtraction
 
 log = logging.getLogger("pnp_graph.extract")
 
@@ -63,11 +63,13 @@ _EVENT_PROMPT = (
 
 def build_extractor():
     # One ChatOllama instance -> one model resident in VRAM even though we
-    # issue two structured-output calls per chunk (docs/evolution/06).
+    # issue two structured-output calls per chunk (docs/evolution/06), plus one
+    # session-level consolidation call (N3, KG_Qualitaetsanalyse_S01).
     llm = ChatOllama(model=LLM_MODEL, temperature=0, num_ctx=NUM_CTX, reasoning=False)
     return (
         llm.with_structured_output(EntityExtraction, method="json_schema"),
         llm.with_structured_output(EventExtraction, method="json_schema"),
+        llm.with_structured_output(EventConsolidation, method="json_schema"),
     )
 
 
@@ -117,7 +119,7 @@ def extract_chunk(extractors, chunk: str, chunk_index: int,
                   rule_names: list[str] | None = None) -> GraphExtraction:
     """Two structured-output calls per chunk (docs/evolution/06, WP7): entity+rules
     pass, then an event pass restricted to the names the entity pass just found."""
-    entity_extractor, event_extractor = extractors
+    entity_extractor, event_extractor, _ = extractors
     entity_prompt = _ENTITY_PROMPT + _cast_line(cast_names) + _gazetteer_line(rule_names)
     entities: EntityExtraction = _invoke_with_retry(
         entity_extractor, entity_prompt, chunk, chunk_index, "entity")
@@ -225,3 +227,112 @@ def extract_session(extractor, chunks: list[str],
             len(result.traits), len(result.relationships),
         )
     return merged, evidence
+
+
+# --- N3: session-level event consolidation (docs/evolution/KG_Qualitaetsanalyse_S01) ---
+# merge_graphs already dedups events by exact title; a small chunk still mints
+# near-duplicate titles for the same moment ('Monster's Last Breath' / 'Monster's
+# Final Breath' / 'Monster's Death and Environment Normalization') because no
+# single chunk sees the whole session. One extra call after all chunks are
+# merged groups those into moments; apply_event_consolidation() then rewrites
+# the graph deterministically — the LLM only proposes groupings, never touches data.
+
+_CONSOLIDATION_PROMPT = (
+    "Below is every event extracted from one TTRPG (Daggerheart) session, each as "
+    "'N. <title> — <summary>'. Group entries that describe the SAME narrative moment or "
+    "state change into one group, even if phrased differently (e.g. \"Monster's Last "
+    "Breath\", \"Monster's Final Breath\", and \"Monster's Death and Environment "
+    "Normalization\" are one moment: the monster dying). Keep genuinely distinct events in "
+    "separate, single-member groups — do not over-merge. Every listed title must appear in "
+    "exactly one group's member_titles, spelled EXACTLY as given. For each group, pick the "
+    "clearest canonical_title and write one merged summary.\n\n"
+)
+
+
+def propose_event_groups(consolidation_extractor, graph: GraphExtraction) -> EventConsolidation:
+    if len(graph.events) < 2:
+        return EventConsolidation(groups=[])
+    listing = "\n".join(f"{i}. {e.title} — {e.summary}" for i, e in enumerate(graph.events, start=1))
+    try:
+        result = consolidation_extractor.invoke(_CONSOLIDATION_PROMPT + listing)
+    except Exception as exc:
+        log.warning("event consolidation call failed (%s) — keeping events as-is", exc)
+        return EventConsolidation(groups=[])
+    return result or EventConsolidation(groups=[])
+
+
+def _remap_evidence(evidence: dict, title_map: dict[str, str]) -> dict:
+    remapped: dict = {}
+    for (field, key), chunks in evidence.items():
+        if field == "events" and key in title_map:
+            new_key = ("events", title_map[key])
+        elif field == "relationships":
+            subj, pred, obj = key
+            new_key = ("relationships", (title_map.get(subj, subj), pred, title_map.get(obj, obj)))
+        else:
+            new_key = (field, key)
+        remapped[new_key] = sorted(set(remapped.get(new_key, [])) | set(chunks))
+    return remapped
+
+
+def apply_event_consolidation(graph: GraphExtraction, evidence: dict,
+                              consolidation: EventConsolidation) -> None:
+    """Deterministically apply a proposed grouping: rewrite graph.events to one
+    entry per group, rewrite every relationship subject/object referencing an
+    old title, and remap the evidence sidecar — all in place. A title the model
+    didn't cover (schema drift) stays its own singleton (safety net, PLAN.md
+    phase-5 pattern) rather than being silently dropped.
+    """
+    if not consolidation.groups:
+        return
+    known_titles = {e.title for e in graph.events}
+    events_by_title = {e.title: e for e in graph.events}
+    title_map: dict[str, str] = {}
+    new_events: dict[str, Event] = {}
+
+    for group in consolidation.groups:
+        members = [m for m in group.member_titles if m in known_titles]
+        if not members:
+            continue
+        canonical = group.canonical_title.strip() or members[0]
+        member_events = [events_by_title[m] for m in members]
+        participants = sorted({p for e in member_events for p in e.participants})
+        location = next((e.location for e in member_events if e.location), None)
+        summary = group.summary.strip() or "; ".join(
+            e.summary for e in member_events if e.summary)
+        for m in members:
+            title_map[m] = canonical
+        if canonical in new_events:
+            prev = new_events[canonical]
+            prev.participants = sorted(set(prev.participants) | set(participants))
+            prev.location = prev.location or location
+            if summary and summary not in prev.summary:
+                prev.summary = (prev.summary + "; " + summary).strip("; ")
+        else:
+            new_events[canonical] = Event(
+                title=canonical, summary=summary, participants=participants, location=location)
+
+    for title, event in events_by_title.items():  # safety net for model-dropped titles
+        if title not in title_map:
+            title_map[title] = title
+            new_events.setdefault(title, event)
+
+    graph.events = list(new_events.values())
+
+    for r in graph.relationships:
+        r.subject = title_map.get(r.subject, r.subject)
+        r.object = title_map.get(r.object, r.object)
+    seen_rels: set = set()
+    deduped_rels = []
+    for r in graph.relationships:
+        key = (r.subject, r.predicate, r.object)
+        if key in seen_rels:
+            continue
+        seen_rels.add(key)
+        deduped_rels.append(r)
+    graph.relationships = deduped_rels
+
+    if evidence:
+        remapped = _remap_evidence(evidence, title_map)
+        evidence.clear()
+        evidence.update(remapped)
