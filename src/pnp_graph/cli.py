@@ -21,10 +21,17 @@ def main() -> None:
     p_ingest.add_argument("--dir", default=str(TRANSCRIPT_DIR), help="transcript directory")
     p_ingest.add_argument("--only", help="ingest only this session_id (date), e.g. 2025-04-01")
 
+    p_rec = sub.add_parser("reconcile-report",
+                           help="diff the hand-authored report graph vs the local graph")
+    p_rec.add_argument("session", help="session_id (date), e.g. 2025-03-26")
+
     args = parser.parse_args()
     if args.cmd == "ingest":
         from pathlib import Path
         ingest(Path(args.dir), only=args.only)
+    elif args.cmd == "reconcile-report":
+        from .reconcile import print_reconciliation
+        print_reconciliation(args.session)
 
 
 if __name__ == "__main__":

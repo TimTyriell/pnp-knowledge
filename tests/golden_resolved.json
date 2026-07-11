@@ -1,0 +1,516 @@
+{
+  "entities": [
+    {
+      "id": "CHAR_Cookie",
+      "type": "Character",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high",
+        "name": "Cookie",
+        "is_pc": true,
+        "role": "PC"
+      }
+    },
+    {
+      "id": "CHAR_Deniz_GM",
+      "type": "Character",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high",
+        "name": "Deniz (GM)",
+        "is_pc": false,
+        "role": "GM"
+      }
+    },
+    {
+      "id": "CHAR_Dodo",
+      "type": "Character",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high",
+        "name": "Dodo",
+        "is_pc": true,
+        "role": "PC"
+      }
+    },
+    {
+      "id": "CHAR_LindoLaut",
+      "type": "Character",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high",
+        "name": "Lindo Laut",
+        "is_pc": true,
+        "role": "PC",
+        "evidence_scenes": [
+          "SCENE_2025-03-26_S01"
+        ]
+      }
+    },
+    {
+      "id": "CHAR_Schleichfurz",
+      "type": "Character",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "medium",
+        "name": "der Schleichfurz",
+        "aliases": [],
+        "is_pc": false,
+        "role": "NPC",
+        "evidence_scenes": [
+          "SCENE_2025-03-26_S01",
+          "SCENE_2025-03-26_S02"
+        ]
+      }
+    },
+    {
+      "id": "DEC_2025-03-26_MonsterProvozieren",
+      "type": "Decision",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "medium",
+        "name": "Monster provozieren",
+        "quote": "ich singe",
+        "consequence": "Monster greift an",
+        "evidence_scenes": [
+          "SCENE_2025-03-26_S01"
+        ]
+      }
+    },
+    {
+      "id": "EVT_MonsterGreiftAn",
+      "type": "Event",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "medium",
+        "name": "Monster greift an",
+        "summary": "",
+        "evidence_scenes": [
+          "SCENE_2025-03-26_S02"
+        ]
+      }
+    },
+    {
+      "id": "ITEM_Bogen",
+      "type": "Item",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "medium",
+        "name": "Bogen",
+        "status": "used",
+        "evidence_scenes": [
+          "SCENE_2025-03-26_S02"
+        ]
+      }
+    },
+    {
+      "id": "PLAYER_Celin",
+      "type": "Player",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high",
+        "name": "Celin",
+        "role": "player"
+      }
+    },
+    {
+      "id": "PLAYER_Deniz",
+      "type": "Player",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high",
+        "name": "Deniz",
+        "role": "GM"
+      }
+    },
+    {
+      "id": "PLAYER_Marco",
+      "type": "Player",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high",
+        "name": "Marco",
+        "role": "player"
+      }
+    },
+    {
+      "id": "PLAYER_Tim",
+      "type": "Player",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high",
+        "name": "Tim",
+        "role": "player"
+      }
+    },
+    {
+      "id": "QUEST_Monsterjagd",
+      "type": "Quest",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "medium",
+        "name": "Monsterjagd",
+        "status": "open",
+        "evidence_scenes": [
+          "SCENE_2025-03-26_S01"
+        ]
+      }
+    },
+    {
+      "id": "ROLL_2025-03-26_DodoAngriffswurf",
+      "type": "RollEvent",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high",
+        "name": "Dodo Angriffswurf",
+        "trait_or_action": "attack",
+        "outcome": "success_with_fear",
+        "evidence_scenes": [
+          "SCENE_2025-03-26_S02"
+        ]
+      }
+    },
+    {
+      "id": "SCENE_2025-03-26_S01",
+      "type": "Scene",
+      "props": {
+        "name": "SCENE_2025-03-26_S01",
+        "seq": 1,
+        "session_id": "2025-03-26",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "SCENE_2025-03-26_S02",
+      "type": "Scene",
+      "props": {
+        "name": "SCENE_2025-03-26_S02",
+        "seq": 2,
+        "session_id": "2025-03-26",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "SESS_2025-03-26",
+      "type": "Session",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high",
+        "name": "2025-03-26",
+        "date": "2025-03-26"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "start_id": "CHAR_Cookie",
+      "end_id": "SESS_2025-03-26",
+      "type": "APPEARS_IN",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high"
+      }
+    },
+    {
+      "start_id": "CHAR_Deniz_GM",
+      "end_id": "SESS_2025-03-26",
+      "type": "APPEARS_IN",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high"
+      }
+    },
+    {
+      "start_id": "CHAR_Dodo",
+      "end_id": "SESS_2025-03-26",
+      "type": "APPEARS_IN",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high"
+      }
+    },
+    {
+      "start_id": "CHAR_Dodo",
+      "end_id": "EVT_MonsterGreiftAn",
+      "type": "PARTICIPATED_IN",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high"
+      }
+    },
+    {
+      "start_id": "CHAR_Dodo",
+      "end_id": "CHAR_Cookie",
+      "type": "RELATES_TO",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "low",
+        "evidence_scenes": [
+          "SCENE_2025-03-26_S02"
+        ],
+        "original_predicate": "BEST_BUDDY"
+      }
+    },
+    {
+      "start_id": "CHAR_Dodo",
+      "end_id": "ROLL_2025-03-26_DodoAngriffswurf",
+      "type": "ROLLED",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high"
+      }
+    },
+    {
+      "start_id": "CHAR_LindoLaut",
+      "end_id": "SESS_2025-03-26",
+      "type": "APPEARS_IN",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high"
+      }
+    },
+    {
+      "start_id": "CHAR_LindoLaut",
+      "end_id": "DEC_2025-03-26_MonsterProvozieren",
+      "type": "DECIDED",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high"
+      }
+    },
+    {
+      "start_id": "CHAR_LindoLaut",
+      "end_id": "SCENE_2025-03-26_S01",
+      "type": "EVIDENCED_IN",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high"
+      }
+    },
+    {
+      "start_id": "CHAR_LindoLaut",
+      "end_id": "RULE_CLASS_Bard",
+      "type": "HAS_CLASS",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high",
+        "evidence_scenes": [
+          "SCENE_2025-03-26_S01"
+        ]
+      }
+    },
+    {
+      "start_id": "CHAR_LindoLaut",
+      "end_id": "EVT_MonsterGreiftAn",
+      "type": "PARTICIPATED_IN",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high"
+      }
+    },
+    {
+      "start_id": "CHAR_Schleichfurz",
+      "end_id": "SESS_2025-03-26",
+      "type": "APPEARS_IN",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high"
+      }
+    },
+    {
+      "start_id": "CHAR_Schleichfurz",
+      "end_id": "SCENE_2025-03-26_S01",
+      "type": "EVIDENCED_IN",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high"
+      }
+    },
+    {
+      "start_id": "CHAR_Schleichfurz",
+      "end_id": "SCENE_2025-03-26_S02",
+      "type": "EVIDENCED_IN",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high"
+      }
+    },
+    {
+      "start_id": "DEC_2025-03-26_MonsterProvozieren",
+      "end_id": "SCENE_2025-03-26_S01",
+      "type": "EVIDENCED_IN",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high"
+      }
+    },
+    {
+      "start_id": "DEC_2025-03-26_MonsterProvozieren",
+      "end_id": "SESS_2025-03-26",
+      "type": "IN_SESSION",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high"
+      }
+    },
+    {
+      "start_id": "DEC_2025-03-26_MonsterProvozieren",
+      "end_id": "EVT_MonsterGreiftAn",
+      "type": "TRIGGERED",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high",
+        "evidence_scenes": [
+          "SCENE_2025-03-26_S02"
+        ]
+      }
+    },
+    {
+      "start_id": "EVT_MonsterGreiftAn",
+      "end_id": "SCENE_2025-03-26_S02",
+      "type": "EVIDENCED_IN",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high"
+      }
+    },
+    {
+      "start_id": "EVT_MonsterGreiftAn",
+      "end_id": "SESS_2025-03-26",
+      "type": "IN_SESSION",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high"
+      }
+    },
+    {
+      "start_id": "ITEM_Bogen",
+      "end_id": "SCENE_2025-03-26_S02",
+      "type": "EVIDENCED_IN",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high"
+      }
+    },
+    {
+      "start_id": "ITEM_Bogen",
+      "end_id": "CHAR_Cookie",
+      "type": "OWNED_BY",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high"
+      }
+    },
+    {
+      "start_id": "PLAYER_Celin",
+      "end_id": "CHAR_Cookie",
+      "type": "PLAYS",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high",
+        "seq": 1
+      }
+    },
+    {
+      "start_id": "PLAYER_Deniz",
+      "end_id": "CHAR_Deniz_GM",
+      "type": "PLAYS",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high",
+        "seq": 1
+      }
+    },
+    {
+      "start_id": "PLAYER_Marco",
+      "end_id": "CHAR_Dodo",
+      "type": "PLAYS",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high",
+        "seq": 1
+      }
+    },
+    {
+      "start_id": "PLAYER_Tim",
+      "end_id": "CHAR_LindoLaut",
+      "type": "PLAYS",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high",
+        "seq": 1
+      }
+    },
+    {
+      "start_id": "QUEST_Monsterjagd",
+      "end_id": "SCENE_2025-03-26_S01",
+      "type": "EVIDENCED_IN",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high"
+      }
+    },
+    {
+      "start_id": "ROLL_2025-03-26_DodoAngriffswurf",
+      "end_id": "SCENE_2025-03-26_S02",
+      "type": "EVIDENCED_IN",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high"
+      }
+    },
+    {
+      "start_id": "ROLL_2025-03-26_DodoAngriffswurf",
+      "end_id": "SESS_2025-03-26",
+      "type": "IN_SESSION",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high"
+      }
+    },
+    {
+      "start_id": "ROLL_2025-03-26_DodoAngriffswurf",
+      "end_id": "CHAR_Schleichfurz",
+      "type": "TARGETS",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high"
+      }
+    },
+    {
+      "start_id": "RULE_CLASS_Bard",
+      "end_id": "SCENE_2025-03-26_S01",
+      "type": "EVIDENCED_IN",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high"
+      }
+    },
+    {
+      "start_id": "SCENE_2025-03-26_S01",
+      "end_id": "SESS_2025-03-26",
+      "type": "IN_SESSION",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high"
+      }
+    },
+    {
+      "start_id": "SCENE_2025-03-26_S02",
+      "end_id": "SESS_2025-03-26",
+      "type": "IN_SESSION",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high"
+      }
+    }
+  ],
+  "dropped": [
+    {
+      "subject": "Unbekannt",
+      "predicate": "KNOWS",
+      "object": "Dodo",
+      "reason": "unresolved endpoint"
+    }
+  ]
+}

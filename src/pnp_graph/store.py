@@ -1,7 +1,9 @@
-"""Neo4j writes. Idempotent MERGE so repeated/multi-session runs accumulate.
+"""Neo4j writes. Idempotent MERGE on canonical :Entity{id} (docs/evolution/02).
 
-Phase 1: same write behavior as the original script, parameterized by session_id.
-Versioning (valid_from/valid_to) and per-session summaries land in later phases.
+Input is the resolved dict from resolve.py — entities {id, type, props} and
+edges {start_id, end_id, type, props}. Endpoints are MATCHed by id, never
+MERGE-created: unresolvable endpoints were already dropped in resolve.py.
+Versioning (valid_from/valid_to) lands in a later phase (PLAN.md phase 3).
 """
 
 import logging
@@ -10,7 +12,6 @@ import re
 from neo4j import GraphDatabase
 
 from .config import NEO4J_URL
-from .schema import GraphExtraction
 
 log = logging.getLogger("pnp_graph.store")
 
@@ -29,66 +30,78 @@ def sanitize_predicate(predicate: str) -> str:
 
 
 def ensure_constraints(db) -> None:
-    db.run("CREATE CONSTRAINT character_name IF NOT EXISTS FOR (c:Character) REQUIRE c.name IS UNIQUE")
-    db.run("CREATE CONSTRAINT location_name IF NOT EXISTS FOR (l:Location) REQUIRE l.name IS UNIQUE")
-    db.run("CREATE CONSTRAINT faction_name IF NOT EXISTS FOR (f:Faction) REQUIRE f.name IS UNIQUE")
+    # Retire the name-keyed constraints — they enforce the wrong key (docs/evolution/07).
+    for old in ("character_name", "location_name", "faction_name"):
+        db.run(f"DROP CONSTRAINT {old} IF EXISTS")
+    db.run("CREATE CONSTRAINT entity_id IF NOT EXISTS FOR (n:Entity) REQUIRE n.id IS UNIQUE")
+    db.run("CREATE INDEX entity_type IF NOT EXISTS FOR (n:Entity) ON (n.type)")
+    db.run("CREATE INDEX entity_session IF NOT EXISTS FOR (n:Entity) ON (n.session_id)")
 
 
-def _write_graph(db, graph: GraphExtraction, session_id: str, seq: int) -> None:
-    db.run("MERGE (s:Session {id: $id}) SET s.seq = $seq", id=session_id, seq=seq)
-
-    for c in graph.characters:
+def _write_graph(db, resolved: dict) -> None:
+    for e in resolved["entities"]:
         db.run(
-            "MERGE (c:Character {name: $name}) "
-            "SET c.player = $player, c.type = $type, c.aliases = $aliases "
-            "WITH c MATCH (s:Session {id: $sid}) MERGE (c)-[:APPEARS_IN]->(s)",
-            name=c.name, player=c.player, type=c.type, aliases=c.aliases, sid=session_id,
+            "MERGE (n:Entity {id: $id}) "
+            "ON CREATE SET n += $props, n.type = $type, n.created_at = timestamp() "
+            "ON MATCH  SET n += $props, n.type = $type, n.updated_at = timestamp()",
+            id=e["id"], type=e["type"],
+            props={k: v for k, v in e["props"].items() if v is not None},
         )
-    for l in graph.locations:
+    for r in resolved["edges"]:
+        rtype = sanitize_predicate(r["type"])
+        # rtype passed sanitize + the ALLOWED_PREDICATES gate in resolve.py;
+        # safe to interpolate (relationship types can't be parameterized).
+        # session_id in the MERGE pattern -> one edge per session (PLAYS history etc.).
         db.run(
-            "MERGE (l:Location {name: $name}) SET l.description = $description",
-            name=l.name, description=l.description,
-        )
-    for i in graph.items:
-        db.run(
-            "MERGE (i:Item {name: $name}) SET i.status = $status "
-            "WITH i MATCH (c:Character {name: $owner}) MERGE (i)-[:OWNED_BY]->(c)",
-            name=i.name, status=i.status, owner=i.owner,
-        )
-    for q in graph.quests:
-        db.run("MERGE (q:Quest {name: $name}) SET q.status = $status", name=q.name, status=q.status)
-    for e in graph.events:
-        db.run(
-            # `name` mirrors `title` so relationship edges can MATCH any node type by `name` alone.
-            "MERGE (ev:Event {title: $title}) SET ev.summary = $summary, ev.name = $title "
-            "WITH ev MATCH (s:Session {id: $sid}) MERGE (ev)-[:IN_SESSION]->(s) "
-            "WITH ev MATCH (l:Location {name: $location}) MERGE (ev)-[:AT_LOCATION]->(l)",
-            title=e.title, summary=e.summary, sid=session_id, location=e.location,
-        )
-        for participant in e.participants:
-            db.run(
-                "MATCH (c:Character {name: $name}), (ev:Event {title: $title}) "
-                "MERGE (c)-[:PARTICIPATED_IN]->(ev)",
-                name=participant, title=e.title,
-            )
-    for f in graph.factions:
-        db.run("MERGE (f:Faction {name: $name}) SET f.description = $description",
-               name=f.name, description=f.description)
-
-    for r in graph.relationships:
-        rel_type = sanitize_predicate(r.predicate)
-        # rel_type is sanitized to [A-Z0-9_] only, safe to interpolate as a Cypher relationship type.
-        db.run(
-            f"MATCH (a {{name: $subject}}), (b {{name: $object}}) "
-            f"MERGE (a)-[rel:{rel_type}]->(b) "
-            f"SET rel.confidence = $confidence, rel.evidence_chunk = $evidence, rel.session_id = $sid",
-            subject=r.subject, object=r.object,
-            confidence=r.confidence, evidence=r.evidence, sid=session_id,
+            f"MATCH (a:Entity {{id: $start}}), (b:Entity {{id: $end}}) "
+            f"MERGE (a)-[rel:{rtype} {{session_id: $sid}}]->(b) "
+            f"SET rel += $props",
+            start=r["start_id"], end=r["end_id"],
+            sid=r["props"]["session_id"], props=r["props"],
         )
 
 
-def write_session(driver, graph: GraphExtraction, session_id: str, seq: int) -> None:
-    """Write one session's merged graph in a single atomic transaction."""
+def write_session(driver, resolved: dict) -> None:
+    """Write one session's resolved graph in a single atomic transaction."""
     with driver.session() as db:
         db.execute_write(ensure_constraints)
-        db.execute_write(_write_graph, graph, session_id, seq)
+        db.execute_write(_write_graph, resolved)
+
+
+# QA queries from docs/evolution/07 — run after every write_session, results
+# recorded in ingest_log.jsonl. Non-zero "must_be_zero" entries are blockers.
+_QA_QUERIES = {
+    "dup_names": (  # 1. duplicates after resolution
+        "MATCH (a:Entity),(b:Entity) WHERE a.id < b.id "
+        "AND toLower(a.name) = toLower(b.name) RETURN count(*) AS c"),
+    "cross_type_names": (  # 2. same name across two types
+        "MATCH (a:Entity),(b:Entity) WHERE a.id < b.id AND a.name = b.name "
+        "AND a.type <> b.type RETURN count(*) AS c"),
+    "missing_provenance": (  # 3. facts without provenance
+        "MATCH ()-[r]->() WHERE r.confidence IS NULL OR r.session_id IS NULL "
+        "RETURN count(r) AS c"),
+    "rules_inconsistent": (  # 4. used domain card outside the PC's class domains
+        "MATCH (pc:Entity{type:'Character'})-[:USES_CARD]->(c:Entity{subtype:'DomainCard'}) "
+        "MATCH (pc)-[:HAS_CLASS]->(cl:Entity{subtype:'Class'}) "
+        "WHERE c.domain IS NOT NULL AND cl.domains IS NOT NULL "
+        "AND NOT c.domain IN cl.domains RETURN count(*) AS c"),
+    "timeline_unlinked": (  # 5. Event/Roll/Decision without a Scene
+        "MATCH (n:Entity) WHERE n.type IN ['Event','RollEvent','Decision'] "
+        "AND NOT (n)-[:EVIDENCED_IN]->(:Entity{type:'Scene'}) RETURN count(n) AS c"),
+    "orphans": (  # 6. nodes with no relationships (SRD library excluded)
+        "MATCH (n:Entity) WHERE NOT (n)--() AND n.session_id <> 'SRD' "
+        "RETURN count(n) AS c"),
+}
+_QA_BLOCKERS = ("dup_names", "cross_type_names", "missing_provenance", "timeline_unlinked")
+
+
+def run_qa(driver) -> dict:
+    """{check: count} for every QA query; log blockers loudly."""
+    results = {}
+    with driver.session() as db:
+        for name, query in _QA_QUERIES.items():
+            results[name] = db.run(query).single()["c"]
+    for name in _QA_BLOCKERS:
+        if results[name]:
+            log.error("QA BLOCKER: %s = %d (must be 0)", name, results[name])
+    return results

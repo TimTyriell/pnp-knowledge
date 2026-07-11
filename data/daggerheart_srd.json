@@ -1,0 +1,23 @@
+{
+  "_comment": "Seed subset from entities seen in the three sample graphs. TODO: complete from full SRD once licensing/source is confirmed (candidate: c:/dev/pnp/daggerheart-data core/*.json).",
+  "entries": [
+    {"id": "RULE_CLASS_Bard", "name": "Bard", "subtype": "Class", "source": "daggerheart-srd", "srd_ref": "core", "domains": ["Grace", "Codex"], "aliases": ["Barde"]},
+    {"id": "RULE_CLASS_Guardian", "name": "Guardian", "subtype": "Class", "source": "daggerheart-srd", "srd_ref": "core", "domains": ["Valor", "Blade"], "aliases": ["Wächter", "Waechter"]},
+    {"id": "RULE_CLASS_Ranger", "name": "Ranger", "subtype": "Class", "source": "daggerheart-srd", "srd_ref": "core", "domains": ["Bone", "Sage"], "aliases": ["Waldläufer", "Waldlaeufer"]},
+    {"id": "RULE_SUBCLASS_Troubadour", "name": "Troubadour", "subtype": "Subclass", "source": "daggerheart-srd", "srd_ref": "core", "aliases": ["Troubadour (Bard)"]},
+    {"id": "RULE_SUBCLASS_Beastbound", "name": "Beastbound", "subtype": "Subclass", "source": "daggerheart-srd", "srd_ref": "core", "aliases": ["Beastbound (Ranger)"]},
+    {"id": "RULE_ANCESTRY_Faerie", "name": "Faerie", "subtype": "Ancestry", "source": "daggerheart-srd", "srd_ref": "core", "aliases": ["Fairy", "Fee"]},
+    {"id": "RULE_ANCESTRY_Ribbet", "name": "Ribbet", "subtype": "Ancestry", "source": "daggerheart-srd", "srd_ref": "core", "aliases": ["Frosch", "Froschmensch"]},
+    {"id": "RULE_ANCESTRY_Goblin", "name": "Goblin", "subtype": "Ancestry", "source": "daggerheart-srd", "srd_ref": "core", "aliases": []},
+    {"id": "RULE_ANCESTRY_Dragonborn", "name": "Dragonborn", "subtype": "Ancestry", "source": "daggerheart-srd", "srd_ref": "core", "aliases": ["Drachenblut"]},
+    {"id": "RULE_COMMUNITY_Highborne", "name": "Highborne", "subtype": "Community", "source": "daggerheart-srd", "srd_ref": "core", "aliases": []},
+    {"id": "RULE_COMMUNITY_Ridgeborne", "name": "Ridgeborne", "subtype": "Community", "source": "daggerheart-srd", "srd_ref": "core", "aliases": []},
+    {"id": "RULE_FEATURE_InspiringWords", "name": "Inspiring Words", "subtype": "ClassFeature", "source": "daggerheart-srd", "srd_ref": "core", "aliases": []},
+    {"id": "RULE_FEATURE_Rally", "name": "Rally", "subtype": "ClassFeature", "source": "daggerheart-srd", "srd_ref": "core", "aliases": ["Rally Die", "Rally-Würfel"]},
+    {"id": "RULE_FEATURE_IAmYourShield", "name": "I Am Your Shield", "subtype": "ClassFeature", "source": "daggerheart-srd", "srd_ref": "core", "aliases": ["I am your Shield"]},
+    {"id": "RULE_SYSTEM_Hope", "name": "Hope", "subtype": "System", "source": "daggerheart-srd", "srd_ref": "core", "aliases": ["Hoffnung"]},
+    {"id": "RULE_SYSTEM_Fear", "name": "Fear", "subtype": "System", "source": "daggerheart-srd", "srd_ref": "core", "aliases": ["Furcht"]},
+    {"id": "RULE_SYSTEM_Stress", "name": "Stress", "subtype": "System", "source": "daggerheart-srd", "srd_ref": "core", "aliases": []},
+    {"id": "RULE_SYSTEM_DualityDice", "name": "Duality Dice", "subtype": "System", "source": "daggerheart-srd", "srd_ref": "core", "aliases": ["Dualitätswürfel", "Hope Die", "Fear Die"]}
+  ]
+}

@@ -37,7 +37,8 @@ Keep the local, private, high-recall `qwen3:14b` pipeline in `src/pnp_graph/`, b
 - `06_llm_recall_strategy.md` — how to get "more knowledge" out of a local 14B.
 - `07_neo4j_and_qa.md` — constraints, QA queries, and the `reconcile-report` gold cross-check.
 - `08_roadmap.md` — WP0–WP10 in order, each with an acceptance criterion; `PLAN.md` alignment; assumptions; anti-patterns.
+- `10_significance_and_recurrence.md` — **guardrail on recall.** Prevents recurring routine behavior (e.g. "plays music often") from inflating into hundreds of near-duplicate nodes, and separates narrative significance from raw frequency. Read before finishing WP6/WP7 — without it, the recall lift causes exactly the problem it describes.
 
 ## Execution order
 
-Follow `08_roadmap.md`. Short version: **WP1 (entity resolution) is the gate** — most other gains depend on canonical IDs existing first.
+Follow `08_roadmap.md`. Short version: **WP1 (entity resolution) is the gate** — most other gains depend on canonical IDs existing first. **WP6b (`10`) must land before WP7** — raising recall without the recurrence guardrail amplifies node/edge inflation rather than adding real information.

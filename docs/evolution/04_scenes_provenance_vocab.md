@@ -35,8 +35,13 @@ Graph 3 references scenes `S01–S07`; Graph 2 has only chunk indices. Bridge th
 
 - **Segmentation** — new `src/pnp_graph/scenes.py`. v1 (deterministic, ship first): **1 scene ≈ 1 chunk**, `Snn = chunk_index`. v2 (optional, matches report granularity): one cheap `qwen` pass over chunk summaries to merge chunks into ~5–10 labeled scenes.
 - **Nodes/edges:** emit `Scene{id:SCENE_{sid}_{Snn}, seq, session_id, summary}` and `(:Scene)-[:IN_SESSION]->(:Session)`.
-- **Evidence migration:** replace `evidence_chunk:int` with `evidence_scenes:[str]` on nodes and edges, and materialize `(:fact)-[:EVIDENCED_IN]->(:Scene)`. Keep **both** the array (fast filter) and the edge (traversal). Wire the scene ids into `resolve.py`/`store.py` so every extracted fact gets stamped with the scene(s) its chunk belongs to.
+- **Evidence migration — node-facts vs. relationship-facts are NOT symmetric:**
+  Neo4j relationships cannot originate another relationship — an edge can only run between two **nodes**, so `(:fact)-[:EVIDENCED_IN]->(:Scene)` is only buildable when the fact itself is a node.
+  - **Node-type facts** (`Event`, `RollEvent`, `Decision`, and newly-minted `Item`/`Location`/`Quest`/`Character` instances) → replace `evidence_chunk:int` with `evidence_scenes:[str]` **and** materialize the real `(:fact)-[:EVIDENCED_IN]->(:Scene)` edge. Keep both: the array for fast filtering, the edge for traversal.
+  - **Relationship-type facts** (`OWNED_BY`, `TARGETS`, `MEMBER_OF`, …) → evidence stays as the `evidence_scenes:[str]` **property on the relationship only**. There is no separate `EVIDENCED_IN` edge for these — don't attempt to reify every relationship into a node just to attach one; that's a much bigger schema change nobody has asked for. If per-relationship scene traversal is ever needed, that's a deliberate future decision (reified `:Fact` nodes per PLAN.md's `:Fact` versioning idea), not a default here.
+  - Wire the scene ids into `resolve.py`/`store.py` so every extracted fact (node or edge) gets stamped with the scene(s) its chunk belongs to.
 - **Payoff:** timeline queries none of the three graphs support well — "replay session in order", "what did Cookie do in S06".
+- **Edge-count consequence:** because `EVIDENCED_IN` only fires for node-facts, it adds roughly one edge per node-fact per session (tens, not hundreds) — it does not double the ~200 relationship-facts a session already has. See `08_roadmap.md` for a worked per-session edge-count projection.
 
 **Acceptance:** `Scene` nodes exist with `seq`; every `Event`/`RollEvent`/`Decision` links to a `Scene` (timeline QA query in `07` returns empty); a "replay in order" query works.
 

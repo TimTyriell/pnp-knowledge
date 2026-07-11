@@ -5,10 +5,12 @@ import logging
 from datetime import datetime, timezone
 from pathlib import Path
 
-from .chunking import load_session_chunks, ordered_sessions, session_id_from_path
+from .chunking import load_session, ordered_sessions, session_id_from_path
 from .config import STATE_DIR, TRANSCRIPT_DIR
 from .extract import build_extractor, extract_session
-from .store import connect, write_session
+from .resolve import Resolver, resolve_graph
+from .srd import SrdIndex, preload
+from .store import connect, run_qa, write_session
 
 log = logging.getLogger("pnp_graph.ingest")
 
@@ -30,14 +32,21 @@ def ingest(transcript_dir: Path = TRANSCRIPT_DIR, only: str | None = None) -> No
         return
 
     extractor = build_extractor()
+    resolver = Resolver()
+    srd_index = SrdIndex()
     driver = connect()
+    preload(driver, srd_index)  # shared RuleEntity library, session-independent
     try:
         for seq, path in enumerate(sessions, start=1):
             sid = session_id_from_path(path)
             log.info("=== Session %s (seq %d) ===", sid, seq)
             try:
-                chunks = load_session_chunks(path)
-                graph = extract_session(extractor, chunks)
+                chunks, cast = load_session(path)
+                cast_info = resolver.bootstrap_cast(cast)
+                cast_names = [p["name"] for p in cast_info["characters"].values()]
+                graph, evidence = extract_session(extractor, chunks, cast_names,
+                                                  srd_index.gazetteer(),
+                                                  fail_dir=STATE_DIR / "failures" / sid)
                 log.info(
                     "Session %s merged total: %d characters, %d locations, %d items, "
                     "%d quests, %d events, %d factions, %d relationships",
@@ -46,17 +55,21 @@ def ingest(transcript_dir: Path = TRANSCRIPT_DIR, only: str | None = None) -> No
                     len(graph.quests), len(graph.events), len(graph.factions),
                     len(graph.relationships),
                 )
-                write_session(driver, graph, sid, seq)
+                resolved = resolve_graph(resolver, graph, sid, cast_info, seq,
+                                         evidence=evidence, n_chunks=len(chunks),
+                                         srd_index=srd_index)
+                write_session(driver, resolved)
+                qa = run_qa(driver)
                 _log_result({
                     "session_id": sid, "seq": seq, "status": "ok",
                     "file": path.name, "chunks": len(chunks),
-                    "characters": len(graph.characters), "locations": len(graph.locations),
-                    "items": len(graph.items), "quests": len(graph.quests),
-                    "events": len(graph.events), "factions": len(graph.factions),
-                    "relationships": len(graph.relationships),
+                    "entities": len(resolved["entities"]), "edges": len(resolved["edges"]),
+                    "dropped_edges": len(resolved["dropped"]), "qa": qa,
                     "ts": datetime.now(timezone.utc).isoformat(),
                 })
-                log.info("Session %s written.", sid)
+                log.info("Session %s written: %d entities, %d edges (%d dropped).",
+                         sid, len(resolved["entities"]), len(resolved["edges"]),
+                         len(resolved["dropped"]))
             except Exception as exc:  # one bad session must not block the rest
                 log.exception("Session %s FAILED", sid)
                 _log_result({

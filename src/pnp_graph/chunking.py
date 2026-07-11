@@ -12,6 +12,7 @@ from pathlib import Path
 from .config import CHUNK_OVERLAP, CHUNK_SIZE
 
 _DATE_RE = re.compile(r"(\d{4}-\d{2}-\d{2})")
+_SPEAKER_RE = re.compile(r"^\s*(?P<player>[^()]+?)\s*\(\s*(?P<character>[^()]+?)\s*\)\s*$")
 
 
 def session_id_from_path(path: Path) -> str:
@@ -20,9 +21,39 @@ def session_id_from_path(path: Path) -> str:
     return m.group(1) if m else path.stem
 
 
+def parse_speaker(label: str) -> tuple[str, str | None, bool]:
+    """Split a transcript speaker label 'Player (Character)' -> (player, character, is_gm).
+
+    'Deniz (GM)' is a role, not a PC: -> ('Deniz', None, True).
+    A label without parentheses is returned as (label, None, False).
+    """
+    m = _SPEAKER_RE.match(label)
+    if not m:
+        return label.strip(), None, False
+    player, character = m.group("player"), m.group("character")
+    if character.upper() == "GM":
+        return player, None, True
+    return player, character, False
+
+
+def session_cast(segments: list[dict]) -> list[tuple[str, str | None, bool]]:
+    """Distinct (player, character, is_gm) triples for one session, in first-seen order."""
+    seen: dict[str, tuple[str, str | None, bool]] = {}
+    for seg in segments:
+        label = seg["speaker"]
+        if label not in seen:
+            seen[label] = parse_speaker(label)
+    return list(seen.values())
+
+
 def format_turn(seg: dict) -> str:
+    # Emit the acting character (or 'GM') as the speaker, never the composite
+    # 'Player (Character)' label — the composite string is what made the model
+    # coin Tim / Lindo Laut / 'Tim (Lindo Laut)' as three separate entities.
+    player, character, is_gm = parse_speaker(seg["speaker"])
+    who = "GM" if is_gm else (character or player)
     mins, secs = divmod(int(seg["start"]), 60)
-    return f"[{mins:02d}:{secs:02d}] {seg['speaker']}:\n  {seg['text'].strip()}\n\n"
+    return f"[{mins:02d}:{secs:02d}] {who}:\n  {seg['text'].strip()}\n\n"
 
 
 def pack_segments(segments: list[dict]) -> list[str]:
@@ -68,11 +99,16 @@ def pack_segments(segments: list[dict]) -> list[str]:
     return chunks
 
 
-def load_session_chunks(path: Path) -> list[str]:
-    """Chunks for a single transcript file."""
+def load_session(path: Path) -> tuple[list[str], list[tuple[str, str | None, bool]]]:
+    """(chunks, cast) for a single transcript file."""
     data = json.loads(path.read_text(encoding="utf-8"))
     segments = [s for s in data["segments"] if s["text"].strip()]
-    return pack_segments(segments)
+    return pack_segments(segments), session_cast(segments)
+
+
+def load_session_chunks(path: Path) -> list[str]:
+    """Chunks for a single transcript file."""
+    return load_session(path)[0]
 
 
 def ordered_sessions(transcript_dir: Path) -> list[Path]:

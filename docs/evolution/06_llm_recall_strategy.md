@@ -23,9 +23,13 @@ Correctness is **not** the LLM's job — it's enforced downstream by `resolve.py
 
 6. **Language split:** content stays **German** (PLAN.md decision); relationship **types** and **confidence** values are English tokens. Enforce that split so the vocabulary doesn't fork by language (`hoch` vs `high` was a real Graph 2/3 mismatch).
 
+## Guardrail: recall must not become repetition (do `10` first)
+
+Pushing recall up on a recurring routine action (e.g. a Character who habitually plays music) will, without a guardrail, mint a new near-identical `Event` every time it recurs — inflating that Character's degree/connectivity from pure repetition rather than new information. **`10_significance_and_recurrence.md` must be implemented (WP6b) before this recall lift ships.** Its two rules apply directly here: (1) recurring behavior aggregates into a counted `Trait` edge, not a fresh node per instance; (2) a new `Event`/`RollEvent` is only minted when an occurrence has actual consequence (a roll, a state change, a causal link) — not merely because it happened again. "More knowledge" means more *distinct* facts, not more instances of the same fact.
+
 ## Acceptance (WP7)
 
-Per-session fact count materially exceeds Graph 3's 27 (target: richer than the hand-authored report, leaner than Graph 1's 670) **while all QA checks in `07` stay green** — i.e. more knowledge, still clean.
+Per-session fact count materially exceeds Graph 3's 27 (target: richer than the hand-authored report, leaner than Graph 1's 670) **while all QA checks in `07` stay green, including the recurrence-vs-significance check from `10`** — i.e. more knowledge, still clean, not just louder.
 
 ## Cost note
 

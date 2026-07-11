@@ -14,7 +14,8 @@ Each is independently shippable and verified by re-ingesting `2025-03-26`.
 | **WP4** | Scenes as nodes; evidence → scenes | `04` | `Scene` nodes with `seq`; timeline QA empty; "replay in order" works |
 | **WP5** | SRD / `RuleEntity` grounding | `05` | PCs link to shared SRD ids; rules-consistency query runs |
 | **WP6** | `Decision` + `RollEvent` extraction | `05` | traceable `Decision → … → Quest` causal chain |
-| **WP7** | Recall lift (two-pass prompts / optional aikg feed) | `06` | fact count > Graph 3's 27, all QA green |
+| **WP6b** | `Trait` aggregation + Event-minting filter (do **before** WP7) | `10` | recurring behavior (e.g. music) → one `Trait` with incrementing `count`, not N `Event` nodes; recurrence-vs-significance QA query empty |
+| **WP7** | Recall lift (two-pass prompts / optional aikg feed) | `06` | fact count > Graph 3's 27, all QA green, **and** WP6b's recurrence guardrail holds under the higher recall |
 | **WP8** | `reconcile-report` gold cross-check | `07` | diffs local vs report; proposes alias additions |
 | **WP9** | Multi-session proof + versioning hook | below | 2nd session; recurring entities MERGE to one id spanning both |
 | **WP10** | Regression harness | below | golden-file test; CI fails on dup/off-vocab/missing-provenance |
@@ -49,6 +50,21 @@ PLAN.md already commits to append/version (`:Fact` with `valid_from`/`valid_to`)
 - Game resources as Items (`Hope`) → **Graph 2**. Fixed by type rules (`02`/`05`).
 - Queryable data hidden in `attributes_json` / relationships hidden as `*_ref` strings → **Graph 3 report loader**. **Do not port to the main pipeline** (invariant 3 in `README.md`).
 - Over-pruning away the session's texture → **Graph 3**. Countered by the recall strategy (`06`).
+
+## Expected edges per session (sizing reference)
+
+Measured against the real transcript (`transcripts/2025-03-26_RF_ROCKGeeRUFw.json`, 45 min): running the actual `chunking.load_session_chunks` produces **32 raw chunks** at `CHUNK_SIZE=2000`; merged to report-matching granularity that's **~7–10 Scenes**. Projected edge count once WP1–WP8 land, by category:
+
+| Category | Basis | Est. edges/session |
+|---|---|---|
+| Core content (`MEMBER_OF`,`OWNED_BY`,`LOCATED_IN`,`PARTICIPATED_IN`,…) | Graph 2 today = 232, minus dedup collapse from entity resolution | 180–220 |
+| `RollEvent` + edges (`ROLLED`,`TARGETS`,`RESULTED_IN`) | Graph 3 captured 1 roll for 45 min — under-recall; a real session has more like 10–20 | 30–50 |
+| `Decision` + edges (`DECIDED`,`TRIGGERED`) | Graph 3 had 1; realistic recall is a handful per session | 10–15 |
+| SRD linking (`HAS_CLASS`,`HAS_ANCESTRY`,`USES_CARD`,`RUNS`,…) | One-time-ish character-sheet facts; heavier in intro sessions, lighter in pure-combat ones | 5–20 (variable) |
+| `PLAYS` (player→character, WP1b) | Deterministic: one per player + GM | 4–5 |
+| Scene infra (`IN_SESSION` + `EVIDENCED_IN` on **node-facts only**, see `04`) | ~7–10 Scenes × `IN_SESSION`, plus `EVIDENCED_IN` from Events/Items/Quests/RollEvents/Decisions — **not** from relationship-facts | 50–70 |
+
+**Total: ~280–370 edges per 45-min session** — well above Graph 3's 27, below Graph 2's current 232-with-duplicates, and nowhere near Graph 1's 199-predicate sprawl (vocabulary stays closed throughout). Scaled to the full 100+ hour campaign (~133 sessions this length): **~37,000–49,000 edges** total — clean and well within comfortable Neo4j range. Treat this as a sizing sanity check, not a hard target: WP7's actual acceptance criterion is "exceeds Graph 3's 27 while all QA in `07` stays green," not a specific number.
 
 ## Target end-state
 
