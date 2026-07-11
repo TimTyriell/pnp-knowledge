@@ -22,6 +22,10 @@ _ENTITY_PROMPT = (
     "- rule_entities: game-rules objects referenced at the table (classes, subclasses, "
     "ancestries, communities, domain cards, class features, adversary stat blocks, system "
     "resources like Hope/Fear/Stress). Game resources are rule entities, NOT items.\n\n"
+    "Ignore stream/chat meta entirely: Twitch chat messages, raid announcements, viewer "
+    "shout-outs, and VTT/tool operation talk (turn trackers, camera/cinema modes, dice-roller "
+    "UI) are not part of the game fiction. Never extract a chat viewer, a raiding community, "
+    "or a tool/UI element as a character or NPC.\n\n"
 )
 
 _EVENT_PROMPT = (
@@ -36,7 +40,9 @@ _EVENT_PROMPT = (
     "- traits: a recurring characterization or habit of one character (e.g. 'plays music often', "
     "'always distrusts strangers'), not a one-off happening. If the same ambient behavior comes "
     "up again for a character already noted for it, extract it again as the same trait name "
-    "rather than as a new event.\n"
+    "rather than as a new event. Never extract a player's out-of-character/meta commentary "
+    "about the game (asking rules questions, giving feedback about how the session went) as a "
+    "trait of their character — that describes the player, not the character.\n"
     "- roll_events: every dice roll — who rolled, what trait/action, the outcome "
     "(success_with_hope, success_with_fear, failure, crit...), and the target if any.\n"
     "- decisions: deliberate, weighty player/GM choices, with a short verbatim quote and "

@@ -73,6 +73,14 @@ Re-ingest: 118 entities, 438 edges. 32 `Scene` nodes (`seq` 1–32, 1 scene =
 `EVIDENCED_IN`→Scene) **empty**. `evidence_scenes[]` on nodes and on 135 edges;
 "replay session in order" query works (scene-seq → events).
 
+**M2 reverted (2026-07-11):** live-graph inspection showed `Scene`/`EVIDENCED_IN`/
+`IN_SESSION`-to-Scene made up ~50% of all edges for zero information not
+already on `evidence_scenes[]` — pure structural noise, not a timeline
+feature (v2 LLM scene-merging, the thing that would've made Scenes a real
+narrative spine, was never built). `Scene` nodes and `EVIDENCED_IN` removed;
+provenance is now a plain `evidence_chunks: [int]` property on the fact
+itself, no separate node or edge. See `docs/evolution/04_scenes_provenance_vocab.md`.
+
 ## Breaking changes at M1
 
 - `:7687` is **wiped** before the first M1 ingest (old graph is name-keyed and

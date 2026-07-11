@@ -6,7 +6,7 @@ Three tightly-related concerns. Provenance and vocab (WP2/WP3) are quick; scenes
 
 Currently only relationships carry `confidence`/`evidence_chunk`/`session_id`; nodes carry nothing. Change:
 
-- Add `confidence ∈ {high,medium,low}`, `session_id`, `evidence_scenes[]` to **all** node writes in `store.py`. No node or edge enters without provenance.
+- Add `confidence ∈ {high,medium,low}`, `session_id`, `evidence_chunks[]` to **all** node writes in `store.py`. No node or edge enters without provenance.
 - **Normalize confidence to English** at the boundary. The report uses German (`hoch/mittel`); the local prompt should emit English. Add a map `{"hoch":"high","mittel":"medium","niedrig":"low"}` so mixed inputs converge — this was a real Graph 2-vs-3 discrepancy.
 
 **Acceptance:** QA query for edges/nodes missing `confidence` or `session_id` returns 0; no German confidence tokens in the graph.
@@ -17,7 +17,7 @@ Promote `SUGGESTED_PREDICATES` from a hint to an enforced allow-list in `config.
 
 ```python
 ALLOWED_PREDICATES = {
-  "IN_SESSION","EVIDENCED_IN","APPEARS_IN","MEMBER_OF","OWNS","OWNED_BY","LOCATED_IN","AT_LOCATION",
+  "IN_SESSION","APPEARS_IN","MEMBER_OF","OWNS","OWNED_BY","LOCATED_IN","AT_LOCATION",
   "HAS_CLASS","HAS_SUBCLASS","HAS_ANCESTRY","HAS_COMMUNITY","USES_CARD","HAS_FEATURE","RUNS","USES",
   "PARTICIPATED_IN","DECIDED","ROLLED","TARGETS","TRIGGERED","RESULTED_IN","INVOLVES","MENTIONED_IN",
   "KNOWS","FEARS","HOSTILE_TO","ALLIED_WITH",
@@ -33,7 +33,20 @@ Enforcement in `resolve.py`/`store.py`: map through `PREDICATE_SYNONYMS`; anythi
 
 > **Edge property contract:** the full per-edge contract (incl. `description` free-text and the `valid_from`/`valid_to` lifecycle for *state* edges) now lives in `11_bitemporal_and_retrieval.md` — it supersedes this doc where they differ. Every predicate is classified once (state / event / identity) in `config.py` next to `ALLOWED_PREDICATES`.
 
-## Scenes as first-class nodes (WP4)
+## Scenes as first-class nodes (WP4) — shipped, then reverted
+
+**Superseded (2026-07-11):** v1 (1 scene = 1 chunk) shipped and ran for real
+sessions; measured result matched the "node-type imbalance" risk flagged below
+almost exactly — ~50% of all edges in the live graph were `Scene` plumbing
+(`EVIDENCED_IN` + `IN_SESSION`), while the property array below already
+carried the same provenance. Verdict: v1 scenes were pure redundancy with zero
+unique signal, and v2 (LLM scene-merging) was never built. Removed entirely —
+`scenes.py` deleted, `Scene`/`EVIDENCED_IN` no longer written. Provenance now
+lives only as a plain `evidence_chunks: [int]` property on the fact itself (no
+node, no edge). If a real narrative timeline is wanted later, that's the v2
+LLM-merge design below, done properly — not v1 revived.
+
+The rest of this section is kept as the original design rationale.
 
 Graph 3 references scenes `S01–S07`; Graph 2 has only chunk indices. Bridge them.
 

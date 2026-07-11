@@ -12,8 +12,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 import pnp_graph.resolve as resolve_mod
 from pnp_graph.chunking import parse_speaker, session_cast
-from pnp_graph.resolve import Resolver, map_predicate, normalize, normalize_confidence, resolve_graph, slug
-from pnp_graph.schema import (Character, Decision, GraphExtraction, Item,
+from pnp_graph.resolve import (Resolver, is_out_of_world, map_predicate, normalize,
+                               normalize_confidence, resolve_graph, slug)
+from pnp_graph.schema import (Character, Decision, Event, Faction, GraphExtraction, Item,
                               Relationship, RollEvent, RuleEntity, Trait)
 from pnp_graph.srd import SrdIndex
 
@@ -258,6 +259,101 @@ def test_trait_unresolved_character_dropped():
     resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1)
     assert not any(e["type"] == "Trait" for e in resolved["entities"])
     assert resolved["dropped"][0]["object"] == "Singt"
+
+
+def test_gm_never_subject_of_participated_rolled_decided():
+    # docs/evolution/KG_Qualitaetsanalyse_S01 fix D: the GM narrates every scene
+    # by definition, so PARTICIPATED_IN/ROLLED/DECIDED from GM is pure noise.
+    resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
+    r = _tmp_resolver()
+    info = _cast_info(r)
+    extraction = GraphExtraction(
+        events=[Event(title="Kampfbeginn", participants=["Deniz", "Dodo"])],
+        roll_events=[RollEvent(name="GM roll", roller="Deniz", confidence="high")],
+        decisions=[Decision(name="GM calls it", decided_by="Deniz", confidence="high")],
+    )
+    resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1)
+    for e in resolved["edges"]:
+        if e["type"] in ("PARTICIPATED_IN", "ROLLED", "DECIDED"):
+            assert e["start_id"] != "CHAR_Deniz_GM"
+    # the PC still gets its own PARTICIPATED_IN edge — suppression is GM-only
+    edges = {(e["start_id"], e["type"], e["end_id"]) for e in resolved["edges"]}
+    assert any(t == "PARTICIPATED_IN" and s == "CHAR_Dodo" for s, t, _ in edges)
+
+
+def test_ooc_denylist():
+    assert is_out_of_world("Twitch-Raid")
+    assert is_out_of_world("Würfelwächter (Twitch chat)")
+    assert not is_out_of_world("Lindo Laut")
+
+
+def test_ooc_character_dropped_not_minted():
+    resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
+    r = _tmp_resolver()
+    info = _cast_info(r)
+    extraction = GraphExtraction(characters=[Character(name="Twitch Raid Bot", type="NPC")])
+    resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1)
+    assert not any(e["type"] == "Character" and "Twitch" in e["props"]["name"]
+                   for e in resolved["entities"])
+    assert any("out-of-world" in d["reason"] for d in resolved["dropped"])
+
+
+def test_domain_range_violation_dropped():
+    # headline finding: 'GM ROLLED Cookie' (Character->Character) — ROLLED's
+    # range is RollEvent, not Character, so this must never become an edge.
+    resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
+    r = _tmp_resolver()
+    info = _cast_info(r)
+    extraction = GraphExtraction(
+        relationships=[Relationship(subject="Deniz", predicate="ROLLED", object="Cookie",
+                                    confidence="high")],
+    )
+    resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1)
+    assert not any(e["type"] == "ROLLED" for e in resolved["edges"])
+    assert any("domain/range" in d["reason"] for d in resolved["dropped"])
+
+
+def test_domain_range_valid_edge_passes():
+    resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
+    r = _tmp_resolver()
+    info = _cast_info(r)
+    extraction = GraphExtraction(
+        factions=[Faction(name="Wuerfelwaechter-Gilde")],
+        relationships=[Relationship(subject="Cookie", predicate="MEMBER_OF",
+                                    object="Wuerfelwaechter-Gilde", confidence="high")],
+    )
+    resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1)
+    assert any(e["type"] == "MEMBER_OF" and e["start_id"] == "CHAR_Cookie"
+               for e in resolved["edges"])
+
+
+def test_trait_single_sighting_gets_low_confidence():
+    # docs/evolution/KG_Qualitaetsanalyse_S01 fix E: an unconfirmed (1-chunk)
+    # trait sighting is written but flagged low-confidence rather than dropped
+    # or silently treated the same as a confirmed recurrence.
+    resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
+    r = _tmp_resolver()
+    info = _cast_info(r)
+    extraction = GraphExtraction(traits=[Trait(name="Spielt oft Musik", character="Lindo Laut")])
+    evidence = {("traits", "Spielt oft Musik"): [5]}
+    resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1, evidence=evidence)
+    trait = next(e for e in resolved["entities"] if e["type"] == "Trait")
+    assert trait["props"]["confidence"] == "low"
+
+
+def test_trait_two_sightings_gets_medium_confidence():
+    resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
+    r = _tmp_resolver()
+    info = _cast_info(r)
+    extraction = GraphExtraction(traits=[Trait(name="Spielt oft Musik", character="Lindo Laut")])
+    evidence = {("traits", "Spielt oft Musik"): [3, 9]}
+    resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1, evidence=evidence)
+    trait = next(e for e in resolved["entities"] if e["type"] == "Trait")
+    assert trait["props"]["confidence"] == "medium"
+
+
+def test_mentioned_in_off_vocab():
+    assert map_predicate("MENTIONED_IN") == ("RELATES_TO", False)
 
 
 def test_registry_write_back():

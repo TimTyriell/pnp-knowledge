@@ -11,18 +11,19 @@ Single Neo4j label `:Entity` on all nodes; the semantic class lives in a require
 | `type` | Meaning | Required props | Key optional props |
 |---|---|---|---|
 | `Player` | Real person at the table (permanent identity anchor) | `id, name, type` | `aliases[], role` (`GM` for the GM) |
-| `Character` | PC / NPC / GM-narrator / companion / adversary-as-actor. **Receives all in-fiction edges** (see `09`) | `id, name, type, is_pc, role, status ∈ {alive, deceased, unknown, erwaehnt}, session_id, confidence, evidence_scenes` | `aliases[], hp_max, damage_threshold_*, first_seen_session (int), last_updated_session (int), died_in_session (int)` — lifecycle semantics in `11` |
-| `RuleEntity` | SRD object (Class/Subclass/Ancestry/Community/DomainCard/ClassFeature/Adversary/System) | `id, name, subtype, source, session_id, confidence, evidence_scenes` | `srd_ref, domains[]` |
-| `Location` | a place | `id, name, session_id, confidence, evidence_scenes` | `description, parent_location_id` |
-| `Item` | in-world object / loot | `id, name, status, session_id, confidence, evidence_scenes` | `owner_id, origin_scene, description` |
-| `Quest` | objective/mission | `id, name, status, session_id, confidence, evidence_scenes` | `giver_id, description` |
-| `Faction` | group (incl. the party) | `id, name, session_id, confidence, evidence_scenes` | `stance, description` |
-| `Event` | story beat | `id, name, summary, session_id, confidence, evidence_scenes` | `outcome` |
-| `RollEvent` | a dice roll + result | `id, name, session_id, confidence, evidence_scenes` | `roller_id, trait_or_action, outcome, target_id` |
-| `Decision` | deliberate weighty choice | `id, name, session_id, confidence, evidence_scenes` | `decided_by_id, quote, consequence` |
+| `Character` | PC / NPC / GM-narrator / companion / adversary-as-actor. **Receives all in-fiction edges** (see `09`) | `id, name, type, is_pc, role, status ∈ {alive, deceased, unknown, erwaehnt}, session_id, confidence, evidence_chunks` | `aliases[], hp_max, damage_threshold_*, first_seen_session (int), last_updated_session (int), died_in_session (int)` — lifecycle semantics in `11` |
+| `RuleEntity` | SRD object (Class/Subclass/Ancestry/Community/DomainCard/ClassFeature/Adversary/System) | `id, name, subtype, source, session_id, confidence, evidence_chunks` | `srd_ref, domains[]` |
+| `Location` | a place | `id, name, session_id, confidence, evidence_chunks` | `description, parent_location_id` |
+| `Item` | in-world object / loot | `id, name, status, session_id, confidence, evidence_chunks` | `owner_id, description` |
+| `Quest` | objective/mission | `id, name, status, session_id, confidence, evidence_chunks` | `giver_id, description` |
+| `Faction` | group (incl. the party) | `id, name, session_id, confidence, evidence_chunks` | `stance, description` |
+| `Event` | story beat | `id, name, summary, session_id, confidence, evidence_chunks` | `outcome` |
+| `RollEvent` | a dice roll + result | `id, name, session_id, confidence, evidence_chunks` | `roller_id, trait_or_action, outcome, target_id` |
+| `Decision` | deliberate weighty choice | `id, name, session_id, confidence, evidence_chunks` | `decided_by_id, quote, consequence` |
 | `Trait` | recurring characterization/habit, not a discrete happening (`10`) | `id, name, type` | — (recurrence lives on the `KNOWN_FOR` edge: `count, sessions[], first_seen, last_seen`) |
-| `Scene` | temporal unit (see `04`) | `id, seq, session_id, summary` | `title` |
 | `Session` | a play session | `id, seq, date` | `title` |
+
+> `Scene` (1 scene = 1 chunk, `IN_SESSION` + `EVIDENCED_IN` edges) shipped under WP4 and was **reverted** (docs/evolution/04) — ~50% of live edges were pure Scene plumbing with zero unique signal over the `evidence_chunks[]` property below. Provenance is chunk indices only now; no Scene node/edge.
 
 The **`PLAYS`** relationship (`Player`→`Character`, **one per session**, parsed from the transcript's `Player (Character)` speaker labels) is central and specified in `09_player_character_mapping.md`.
 
@@ -36,8 +37,7 @@ src/pnp_graph/
                # SRD/registry paths, EMBED_MODEL/EMBED_DIM
   schema.py    # RuleEntity, RollEvent, Decision, Trait; EntityExtraction/EventExtraction
                # (two-pass split, WP7); provenance + description on relationships
-  chunking.py  # feeds scenes; format_turn emits character, not composite label (09)
-  scenes.py    # chunk→scene segmentation, Scene/Session builders
+  chunking.py  # segment-aware packing; format_turn emits character, not composite label (09)
   srd.py       # load data/daggerheart_srd.json, preload RuleEntity, SRD alias map
   resolve.py   # canonical id minting, alias registry, endpoint + vocab validation,
                # Trait aggregation (10), death detection (11)
@@ -47,7 +47,7 @@ src/pnp_graph/
   embed.py     # NEW: nomic-embed-text entity embeddings, Neo4j vector index (11, WP11)
   retrieve.py  # NEW: vector search + 1-hop as-of expansion + local-LLM answer (11, WP11)
   reconcile.py # reconcile-report gold cross-check (07, WP8)
-  ingest.py    # chunks→scenes→extract→resolve→srd-link→store→embed
+  ingest.py    # chunks→extract→resolve→srd-link→store→embed
   cli.py       # ingest, reconcile-report, ask — status/--dry-run not yet built
 data/
   alias_registry.json   daggerheart_srd.json
@@ -55,7 +55,7 @@ data/
 
 ## `schema.py` sketch
 
-`id` is **not** model-filled — it's minted in `resolve.py`. The model fills names/aliases; the resolver assigns ids and fills `evidence_scenes`.
+`id` is **not** model-filled — it's minted in `resolve.py`. The model fills names/aliases; the resolver assigns ids and fills `evidence_chunks`.
 ```python
 class Character(BaseModel):
     name: str; player: str | None = None
@@ -78,22 +78,20 @@ class Decision(BaseModel):
 ## `store.py` sketch (MERGE on id, native props, provenance)
 
 ```python
-def _write_entity(db, e):    # e = resolved dict: id/type/props/evidence_scenes
+def _write_entity(db, e):    # e = resolved dict: id/type/props (props includes evidence_chunks)
     db.run("""
       MERGE (n:Entity {id:$id})
         ON CREATE SET n += $props, n.type=$type, n.created_at=timestamp()
         ON MATCH  SET n += $props, n.type=$type, n.updated_at=timestamp()
-      WITH n UNWIND $scenes AS sc
-        MATCH (s:Entity{type:'Scene', id:sc}) MERGE (n)-[:EVIDENCED_IN]->(s)
-    """, id=e["id"], type=e["type"], props=e["props"], scenes=e["evidence_scenes"])
+    """, id=e["id"], type=e["type"], props=e["props"])
 
 def _write_edge(db, r, allowed):
     rtype = r["type"] if r["type"] in allowed else "RELATES_TO"
     db.run(f"""
       MATCH (a:Entity{{id:$s}}),(b:Entity{{id:$o}})
       MERGE (a)-[rel:`{rtype}`{{session_id:$sid}}]->(b)
-        ON CREATE SET rel.confidence=$conf, rel.evidence_scenes=$scenes
-        ON MATCH  SET rel.evidence_scenes=apoc.coll.toSet(coalesce(rel.evidence_scenes,[])+$scenes)
-    """, s=r["start_id"], o=r["end_id"], sid=r["session_id"], conf=r["confidence"], scenes=r["evidence_scenes"])
+        ON CREATE SET rel.confidence=$conf, rel.evidence_chunks=$chunks
+        ON MATCH  SET rel.evidence_chunks=apoc.coll.toSet(coalesce(rel.evidence_chunks,[])+$chunks)
+    """, s=r["start_id"], o=r["end_id"], sid=r["session_id"], conf=r["confidence"], chunks=r["evidence_chunks"])
 ```
 Endpoints that don't resolve to an existing `id` are **not written** — log them (see `03`). Keep `sanitize_predicate` as the injection guard on the interpolated type.

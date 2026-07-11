@@ -26,7 +26,11 @@ from .config import (
     ALIAS_REGISTRY_PATH,
     ALLOWED_PREDICATES,
     CONFIDENCE_MAP,
+    META_EVENT_TERMS,
+    OOC_DENYLIST,
+    PREDICATE_DOMAINS,
     PREDICATE_SYNONYMS,
+    RULE_SUBTYPES,
     STATE_DIR,
 )
 from .schema import GraphExtraction
@@ -65,6 +69,39 @@ def normalize(surface: str) -> str:
     s = _ARTICLE_RE.sub("", s.strip())
     s = _fold(s).casefold()
     return re.sub(r"[^a-z0-9]+", " ", s).strip()
+
+
+# \broll\b-style boundary so 'Schriftrolle' never matches; catches
+# 'Cookie rolls on Presence', 'Presence roll initiated by Celin', 'würfelt'.
+_ROLL_TITLE_RE = re.compile(r"\broll(s|ed|ing)?\b|\bw(ü|ue)rfel", re.IGNORECASE)
+
+
+def event_gate(title: str, quest_norms: set[str], player_names: list[str]) -> str | None:
+    """Deterministic Event filter (KG_Qualitaetsanalyse_S01 fix C backstop).
+
+    Returns a drop reason, or None if the event may be minted. Prompt already
+    asks for state-change events only; this catches what the model ignores:
+    meta/rules talk, roll-shaped events (RollEvent covers rolls), player names
+    as actors, and events duplicating a quest of the same name.
+    """
+    t = title.casefold()
+    if any(term in t for term in META_EVENT_TERMS):
+        return "meta-event (rules/deliberation talk)"
+    if _ROLL_TITLE_RE.search(title):
+        return "roll-shaped event (RollEvent covers rolls)"
+    if any(re.search(rf"\b{re.escape(p)}\b", title, re.IGNORECASE) for p in player_names):
+        return "player name as actor"
+    if normalize(title) in quest_norms:
+        return "duplicates quest of same name"
+    return None
+
+
+def is_out_of_world(surface: str) -> bool:
+    """Deterministic backstop for stream/chat/VTT-tool noise the prompt asks the
+    model to skip but a small chunk can still blend into the fiction (docs/evolution/
+    KG_Qualitaetsanalyse_S01, e.g. a Twitch raid minted as an NPC)."""
+    s = surface.casefold()
+    return any(term in s for term in OOC_DENYLIST)
 
 
 def slug(surface: str) -> str:
@@ -182,8 +219,10 @@ class Resolver:
         """Register players/characters from the transcript's speaker labels.
 
         Returns {'players': {player_id: props}, 'characters': {char_id: props},
-        'plays': {player_id: char_id}} for this session. GM gets a narrator
-        Character (is_pc False, role GM) so in-fiction narration has a target.
+        'plays': {player_id: char_id}} for this session. The GM gets NO
+        Character node (GM-is-world, KG_Qualitaetsanalyse_S01): narratively the
+        GM does not exist — resolve_graph gives the GM player one DIRECTS edge
+        to the Session and drops every other GM-touching edge.
         """
         players: dict[str, dict] = {}
         characters: dict[str, dict] = {}
@@ -195,17 +234,12 @@ class Resolver:
             players[pid] = {"name": self.registry["players"][pid]["canonical"],
                            "role": "GM" if is_gm else "player"}
             if is_gm:
-                cname = f"{player} (GM)"
-                cid = self._lookup_exact_or_norm("characters", cname) or self._mint(
-                    "characters", "CHAR", cname, is_pc=False, role="GM"
-                )
-                characters[cid] = {"name": cname, "is_pc": False, "role": "GM"}
-            else:
-                cid = self._lookup_exact_or_norm("characters", character) or self._mint(
-                    "characters", "CHAR", character
-                )
-                characters[cid] = {"name": self.registry["characters"][cid]["canonical"],
-                                   "is_pc": True, "role": "PC"}
+                continue  # no GM character, no PLAYS — DIRECTS is added in resolve_graph
+            cid = self._lookup_exact_or_norm("characters", character) or self._mint(
+                "characters", "CHAR", character
+            )
+            characters[cid] = {"name": self.registry["characters"][cid]["canonical"],
+                               "is_pc": True, "role": "PC"}
             plays[pid] = cid
         return {"players": players, "characters": characters, "plays": plays}
 
@@ -282,6 +316,19 @@ def resolve_graph(
         add_edge(cid, session_node_id, "APPEARS_IN")
     for pid, cid in cast_info["plays"].items():
         add_edge(pid, cid, "PLAYS", {"seq": seq})
+    # GM-is-world (KG_Qualitaetsanalyse_S01): the GM player's ONLY edge is
+    # DIRECTS -> Session. Every extracted edge that touches a GM surface is
+    # dropped — GM narration is world state, not an actor's deed.
+    gm_pids = {pid for pid, p in cast_info["players"].items() if p.get("role") == "GM"}
+    gm_norms = {normalize(s) for s in ("GM", "DM", "Spielleiter", "Dungeon Master", "Game Master")}
+    for pid in gm_pids:
+        add_edge(pid, session_node_id, "DIRECTS")
+        entry = resolver.registry["players"].get(pid, {})
+        gm_norms |= {normalize(s) for s in (entry.get("canonical", ""), *entry.get("aliases", [])) if s}
+
+    def is_gm_surface(surface: str | None) -> bool:
+        return bool(surface) and normalize(surface) in gm_norms
+
     # in-fiction edges landing on a Player re-route to their character (09)
     reroute = dict(cast_info["plays"])
 
@@ -302,7 +349,12 @@ def resolve_graph(
         return eid
 
     def endpoint(surface: str) -> str | None:
-        """Endpoint -> id of an entity produced this session, or None (never mints)."""
+        """Endpoint -> id of an entity produced this session, or None (never mints).
+
+        GM surfaces resolve to None: the GM has no in-fiction node (GM-is-world),
+        so any edge the model aims at the GM dies here."""
+        if is_gm_surface(surface):
+            return None
         eid = surface_to_id.get(normalize(surface))
         if not eid:  # alias-registry hit (e.g. 'Lindo' for CHAR_LindoLaut), no minting
             for _, section in _TYPE_MAP.values():
@@ -310,14 +362,25 @@ def resolve_graph(
                 if hit and (hit in entities or hit in reroute):
                     eid = hit
                     break
-        return reroute.get(eid, eid)
+        eid = reroute.get(eid, eid)
+        return None if eid in gm_pids else eid
 
     # --- extracted entities ----------------------------------------------
     for c in extraction.characters:
+        if is_out_of_world(c.name):
+            dropped.append({"subject": c.name, "predicate": "APPEARS_IN",
+                            "object": session_node_id, "reason": "out-of-world (stream/chat/VTT)"})
+            continue
+        if is_gm_surface(c.name):  # GM-is-world: never a Character node
+            dropped.append({"subject": c.name, "predicate": "APPEARS_IN",
+                            "object": session_node_id, "reason": "gm-is-world"})
+            continue
         cid = register(c.name, "Character", {
             "name": c.name, "aliases": c.aliases,
             "is_pc": c.type.upper() == "PC", "role": c.type or "NPC",
         }, chunks_of("characters", c.name))
+        if cid in gm_pids:  # registry resolved a GM alias to the GM player
+            continue
         add_edge(cid, session_node_id, "APPEARS_IN")
     for loc in extraction.locations:
         register(loc.name, "Location", {"name": loc.name, "description": loc.description},
@@ -329,13 +392,21 @@ def resolve_graph(
             owner_id = endpoint(item.owner)
             if owner_id:
                 add_edge(iid, owner_id, "OWNED_BY")
+    quest_norms = set()
     for q in extraction.quests:
         register(q.name, "Quest", {"name": q.name, "status": q.status},
                  chunks_of("quests", q.name))
+        quest_norms.add(normalize(q.name))
     for f in extraction.factions:
         register(f.name, "Faction", {"name": f.name, "description": f.description},
                  chunks_of("factions", f.name))
+    player_names = [p["name"] for p in cast_info["players"].values()]
     for e in extraction.events:
+        reason = event_gate(e.title, quest_norms, player_names)
+        if reason:
+            dropped.append({"subject": e.title, "predicate": "IN_SESSION",
+                            "object": session_node_id, "reason": reason})
+            continue
         eid = register(e.title, "Event", {"name": e.title, "summary": e.summary},
                        chunks_of("events", e.title))
         add_edge(eid, session_node_id, "IN_SESSION")
@@ -357,6 +428,13 @@ def resolve_graph(
             surface_to_id.setdefault(normalize(ru.name), rid)
         else:
             subtype = re.sub(r"[^A-Za-z0-9]", "", ru.subtype) or "System"
+            # closed subtype enum (KG_Qualitaetsanalyse_S01 §1): off-enum mints
+            # ('diceroll', 'weapon trait', 'attribute', 'game-rule', ...) are
+            # dropped — real rules belong in data/daggerheart_srd.json instead.
+            if subtype.casefold().removeprefix("game") not in RULE_SUBTYPES:
+                dropped.append({"subject": ru.name, "predicate": "RULE_ENTITY",
+                                "object": ru.subtype, "reason": "off-enum rule subtype"})
+                continue
             rid = resolver._lookup("rules", ru.name) or resolver._mint(
                 "rules", f"RULE_{subtype.upper()}", ru.name)
             props = {"name": resolver.canonical(rid) or ru.name, "subtype": ru.subtype,
@@ -377,7 +455,7 @@ def resolve_graph(
         add_edge(rid, session_node_id, "IN_SESSION")
         surface_to_id.setdefault(normalize(roll.name), rid)
         if roll.roller:
-            who = endpoint(roll.roller)
+            who = endpoint(roll.roller)  # GM rolls resolve to None (gm-is-world)
             if who:
                 add_edge(who, rid, "ROLLED")
         if roll.target:
@@ -396,7 +474,7 @@ def resolve_graph(
         add_edge(did, session_node_id, "IN_SESSION")
         surface_to_id.setdefault(normalize(dec.name), did)
         if dec.decided_by:
-            who = endpoint(dec.decided_by)
+            who = endpoint(dec.decided_by)  # GM decisions resolve to None (gm-is-world)
             if who:
                 add_edge(who, did, "DECIDED")
 
@@ -407,11 +485,26 @@ def resolve_graph(
         char_id = endpoint(tr.character) if tr.character else None
         if not char_id:
             dropped.append({"subject": tr.character, "predicate": "KNOWN_FOR",
-                            "object": tr.name, "reason": "unresolved character"})
+                            "object": tr.name,
+                            "reason": "gm-is-world" if is_gm_surface(tr.character)
+                            else "unresolved character"})
             continue
         char_slug = char_id[len("CHAR_"):] if char_id.startswith("CHAR_") else slug(char_id)
         tid = f"TRAIT_{char_slug}_{slug(tr.name)}"
-        add_entity(tid, "Trait", {"name": tr.name})
+        # Promotion gate (docs/evolution/KG_Qualitaetsanalyse_S01, fix E): a trait
+        # seen in only one chunk this session is unconfirmed — write it as 'low'
+        # confidence rather than dropping it, since store.py's KNOWN_FOR.count
+        # already promotes it to a confirmed recurrence on the next real
+        # re-occurrence (this session or a later one).
+        # ponytail: cross-session staging (never write until a 2nd session
+        # confirms it) needs persistent candidate state resolve.py doesn't keep
+        # today; add if single-sighting trait noise turns out to still matter
+        # after this confidence downgrade.
+        trait_chunks = chunks_of("traits", tr.name)
+        add_entity(tid, "Trait", {
+            "name": tr.name,
+            "confidence": "medium" if len(trait_chunks) >= 2 else "low",
+        })
         add_edge(char_id, tid, "KNOWN_FOR")
         surface_to_id.setdefault(normalize(tr.name), tid)
 
@@ -423,9 +516,26 @@ def resolve_graph(
         if not on_vocab:
             off_vocab.append(r.predicate)
         if not start or not end or start == end:
+            if not (start and end):
+                reason = ("gm-is-world" if is_gm_surface(r.subject) or is_gm_surface(r.object)
+                          else "unresolved endpoint")
+            else:
+                reason = "self-loop"
             dropped.append({"subject": r.subject, "predicate": r.predicate,
-                            "object": r.object, "reason": "unresolved endpoint" if not (start and end) else "self-loop"})
+                            "object": r.object, "reason": reason})
             continue
+        domains = PREDICATE_DOMAINS.get(rtype)
+        if domains:
+            src_types, dst_types = domains
+            # SRD-linked RuleEntity endpoints are shared/preloaded, not written
+            # into `entities` this session (see rule_entities loop above) — skip
+            # the check rather than crash or false-positive on their type.
+            start_type = entities.get(start, {}).get("type")
+            end_type = entities.get(end, {}).get("type")
+            if start_type and end_type and (start_type not in src_types or end_type not in dst_types):
+                dropped.append({"subject": r.subject, "predicate": r.predicate, "object": r.object,
+                                "reason": f"domain/range violation ({start_type} -{rtype}-> {end_type})"})
+                continue
         rel_chunks = chunks_of("relationships", (r.subject, r.predicate, r.object)) \
             or ([r.evidence] if r.evidence else [])
         add_edge(start, end, rtype, {

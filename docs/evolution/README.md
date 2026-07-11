@@ -21,7 +21,7 @@ Keep the local, private, high-recall `qwen3:14b` pipeline in `src/pnp_graph/`, b
 1. Canonical `id` is the merge key — **never `name`**. Resolution happens before the write.
 2. Closed vocabularies for node `type` and relationship type — validate, don't free-form.
 3. Native, queryable properties only — **no `attributes_json`**.
-4. Every node and edge carries `confidence ∈ {high,medium,low}`, `session_id`, `evidence_scenes[]`; **state** edges additionally carry `valid_from`/`valid_to` and are closed-and-appended, never overwritten (`11`).
+4. Every node and edge carries `confidence ∈ {high,medium,low}`, `session_id`, `evidence_chunks[]`; **state** edges additionally carry `valid_from`/`valid_to` and are closed-and-appended, never overwritten (`11`).
 5. Extract generously, resolve deterministically — recall is a prompt dial, correctness is a downstream layer.
 6. Idempotent + versionable — aligns with `PLAN.md` append/version policy.
 7. Local-first, one 14B in VRAM at a time (RTX 4070 Ti, 12 GB).
@@ -32,7 +32,7 @@ Keep the local, private, high-recall `qwen3:14b` pipeline in `src/pnp_graph/`, b
 - `02_target_architecture.md` — the canonical `:Entity{id}` model, module layout, `schema.py`/`store.py` sketches.
 - `03_entity_resolution.md` — **the #1 fix.** `resolve.py`, ID scheme, alias registry. Do this before anything else.
 - `09_player_character_mapping.md` — player↔character separation, **session-bound** `PLAYS` control parsed from the transcript's `Player (Character)` speaker labels, and action attribution. Read right after `03` (it corrects `03`'s player/character handling).
-- `04_scenes_provenance_vocab.md` — scenes as nodes, provenance on all facts, closed relationship vocab.
+- `04_scenes_provenance_vocab.md` — provenance on all facts (`evidence_chunks[]`, no Scene nodes — reverted, see file), closed relationship vocab.
 - `05_srd_and_semantics.md` — SRD/`RuleEntity` grounding + `Decision`/`RollEvent` extraction.
 - `06_llm_recall_strategy.md` — how to get "more knowledge" out of a local 14B.
 - `07_neo4j_and_qa.md` — constraints, QA queries, and the `reconcile-report` gold cross-check.

@@ -18,6 +18,17 @@
     {"id": "RULE_SYSTEM_Hope", "name": "Hope", "subtype": "System", "source": "daggerheart-srd", "srd_ref": "core", "aliases": ["Hoffnung"]},
     {"id": "RULE_SYSTEM_Fear", "name": "Fear", "subtype": "System", "source": "daggerheart-srd", "srd_ref": "core", "aliases": ["Furcht"]},
     {"id": "RULE_SYSTEM_Stress", "name": "Stress", "subtype": "System", "source": "daggerheart-srd", "srd_ref": "core", "aliases": []},
-    {"id": "RULE_SYSTEM_DualityDice", "name": "Duality Dice", "subtype": "System", "source": "daggerheart-srd", "srd_ref": "core", "aliases": ["Dualitätswürfel", "Hope Die", "Fear Die"]}
+    {"id": "RULE_SYSTEM_DualityDice", "name": "Duality Dice", "subtype": "System", "source": "daggerheart-srd", "srd_ref": "core", "aliases": ["Dualitätswürfel", "Hope Die", "Fear Die"]},
+    {"id": "RULE_MECHANIC_LongRest", "name": "Long Rest", "subtype": "Mechanic", "source": "daggerheart-srd", "srd_ref": "core", "aliases": ["Lange Rast", "Tend to All Wounds", "Clear All Stress", "Repair All Armor", "Prepare", "Prepare Hope", "Work on a Project"]},
+    {"id": "RULE_MECHANIC_ShortRest", "name": "Short Rest", "subtype": "Mechanic", "source": "daggerheart-srd", "srd_ref": "core", "aliases": ["Kurze Rast"]},
+    {"id": "RULE_MECHANIC_ArmorScore", "name": "Armor Score", "subtype": "Mechanic", "source": "daggerheart-srd", "srd_ref": "core", "aliases": ["Armor score", "Rüstungswert", "Armor"]},
+    {"id": "RULE_MECHANIC_Evasion", "name": "Evasion", "subtype": "Mechanic", "source": "daggerheart-srd", "srd_ref": "core", "aliases": ["Ausweichen"]},
+    {"id": "RULE_MECHANIC_HitPoints", "name": "Hit Points", "subtype": "Mechanic", "source": "daggerheart-srd", "srd_ref": "core", "aliases": ["HP", "Lebenspunkte"]},
+    {"id": "RULE_TRAIT_Agility", "name": "Agility", "subtype": "Trait", "source": "daggerheart-srd", "srd_ref": "core", "aliases": ["Gewandtheit"]},
+    {"id": "RULE_TRAIT_Strength", "name": "Strength", "subtype": "Trait", "source": "daggerheart-srd", "srd_ref": "core", "aliases": ["Stärke", "Staerke"]},
+    {"id": "RULE_TRAIT_Finesse", "name": "Finesse", "subtype": "Trait", "source": "daggerheart-srd", "srd_ref": "core", "aliases": []},
+    {"id": "RULE_TRAIT_Instinct", "name": "Instinct", "subtype": "Trait", "source": "daggerheart-srd", "srd_ref": "core", "aliases": ["Instinkt"]},
+    {"id": "RULE_TRAIT_Presence", "name": "Presence", "subtype": "Trait", "source": "daggerheart-srd", "srd_ref": "core", "aliases": ["Präsenz", "Praesenz"]},
+    {"id": "RULE_TRAIT_Knowledge", "name": "Knowledge", "subtype": "Trait", "source": "daggerheart-srd", "srd_ref": "core", "aliases": ["Wissen"]}
   ]
 }

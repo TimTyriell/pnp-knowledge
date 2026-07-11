@@ -11,7 +11,7 @@ Each is independently shippable and verified by re-ingesting `2025-03-26`.
 | **WP1b** | Player/Character split + per-session `PLAYS` parsed from `Player (Character)` labels + attribution (`format_turn` emits the character) | `09` | `Player` and `Character` are distinct nodes joined by a `PLAYS {session_id}` edge; the composite `Tim (Lindo Laut)` string never becomes a node; every in-fiction edge on `2025-03-26` points to a `Character`, none to a `Player` |
 | **WP2** | Provenance on all nodes + confidence normalization | `04` | 0 facts missing `confidence`/`session_id`; no German confidence tokens |
 | **WP3** | Closed relationship vocab enforcement | `04` | every rel type ∈ `ALLOWED_PREDICATES` (or logged `RELATES_TO`) |
-| **WP4** | Scenes as nodes; evidence → scenes | `04` | `Scene` nodes with `seq`; timeline QA empty; "replay in order" works |
+| **WP4** | ~~Scenes as nodes~~ — shipped then reverted; evidence is a plain `evidence_chunks[]` property, no Scene node/edge | `04` | timeline QA (facts have `evidence_chunks`) empty |
 | **WP5** | SRD / `RuleEntity` grounding | `05` | PCs link to shared SRD ids; rules-consistency query runs |
 | **WP6** | `Decision` + `RollEvent` extraction | `05` | traceable `Decision → … → Quest` causal chain |
 | **WP6b** | `Trait` aggregation + Event-minting filter (do **before** WP7) | `10` | recurring behavior (e.g. music) → one `Trait` with incrementing `count`, not N `Event` nodes; recurrence-vs-significance QA query empty |
@@ -37,7 +37,7 @@ PLAN.md already commits to append/version (`:Fact` with `valid_from`/`valid_to`)
 ## Assumptions to confirm before coding (WP0)
 
 1. **Convergence target.** Migrate the main pipeline to `:Entity{id}` on the existing `:7687`; keep the `:7689` report DB and use it via `reconcile-report`. This spec assumes the team wants convergence — confirm.
-2. **Scene granularity.** v2 (merged, report-matching density) is the recommended default per `04`'s backbone-sizing note; `1 scene = 1 chunk` only as a quick internal check on one session.
+2. ~~**Scene granularity.**~~ Moot — Scene nodes were reverted (`04`); evidence is chunk-index properties only.
 3. **SRD source & licensing.** No SRD data ships today. WP5 introduces `data/daggerheart_srd.json`; confirm the source/licensing for full content (a seed subset is fine to start).
 4. **Language policy.** Content stays German; vocab/confidence tokens English (per PLAN.md).
 5. **Predicate tightening.** Keep the validate-and-map layer (recommended) vs hard-`Literal` on `schema.py:Relationship.predicate` — decide once the vocab is stable.
@@ -56,7 +56,7 @@ PLAN.md already commits to append/version (`:Fact` with `valid_from`/`valid_to`)
 
 ## Expected edges per session (sizing reference)
 
-Measured against the real transcript (`transcripts/2025-03-26_RF_ROCKGeeRUFw.json`, **33.1 real minutes**, 157 segments): running the actual `chunking.load_session_chunks` produces **32 raw chunks** at `CHUNK_SIZE=2000`; merged to report-matching granularity that's **~7–10 Scenes**. Projected edge count once WP1–WP8 land, by category:
+Measured against the real transcript (`transcripts/2025-03-26_RF_ROCKGeeRUFw.json`, **33.1 real minutes**, 157 segments): running the actual `chunking.load_session_chunks` produces **32 raw chunks** at `CHUNK_SIZE=2000`. Projected edge count once WP1–WP8 land, by category:
 
 | Category | Basis | Est. edges/session |
 |---|---|---|
@@ -65,12 +65,12 @@ Measured against the real transcript (`transcripts/2025-03-26_RF_ROCKGeeRUFw.jso
 | `Decision` + edges (`DECIDED`,`TRIGGERED`) | Graph 3 had 1; realistic recall is a handful per session | 10–15 |
 | SRD linking (`HAS_CLASS`,`HAS_ANCESTRY`,`USES_CARD`,`RUNS`,…) | One-time-ish character-sheet facts; heavier in intro sessions, lighter in pure-combat ones | 5–20 (variable) |
 | `PLAYS` (player→character, WP1b) | Deterministic: one per player + GM | 4–5 |
-| Scene infra (`IN_SESSION` + `EVIDENCED_IN` on **node-facts only**, see `04`) | ~7–10 Scenes × `IN_SESSION`, plus `EVIDENCED_IN` from Events/Items/Quests/RollEvents/Decisions — **not** from relationship-facts | 50–70 |
+| `IN_SESSION` (Event/RollEvent/Decision → Session, no Scene backbone — see `04`) | One per node-fact, direct to Session | 30–40 |
 
-**Total: ~280–370 edges per ~33-min session** — well above Graph 3's 27, below Graph 2's current 232-with-duplicates, and nowhere near Graph 1's 199-predicate sprawl (vocabulary stays closed throughout). Scaled to a 100-hour campaign (~182 sessions this length): **~51,000–67,000 edges** total — clean and well within comfortable Neo4j range. Treat this as a sizing sanity check, not a hard target: WP7's actual acceptance criterion is "exceeds Graph 3's 27 while all QA in `07` stays green," not a specific number.
+**Total: ~230–300 edges per ~33-min session** — well above Graph 3's 27, below Graph 2's current 232-with-duplicates, and nowhere near Graph 1's 199-predicate sprawl (vocabulary stays closed throughout). Scaled to a 100-hour campaign (~182 sessions this length): **~42,000–55,000 edges** total — clean and well within comfortable Neo4j range. Treat this as a sizing sanity check, not a hard target: WP7's actual acceptance criterion is "exceeds Graph 3's 27 while all QA in `07` stays green," not a specific number.
 
-**Node-side sizing (the backbone question):** most node types (Character, Item, Quest, Trait, …) grow with *narrative activity*, but `Scene`/`Session` nodes grow with *elapsed campaign time* regardless of activity — a fundamentally different curve. At v1 segmentation (1 scene = 1 chunk) that's **~5,800 `Scene` nodes** over 100h; at the recommended v2 (merged, report-matching density) it's **~1,450**. See `04`'s "Backbone sizing" note for the full derivation and why v2 is the default, and `10`'s "backbone nodes are a third source of false signal" for why `Scene`/`Session` must be excluded from any degree-based significance query regardless of which segmentation you pick.
+**Node-side sizing (the backbone question):** most node types (Character, Item, Quest, Trait, …) grow with *narrative activity*; `Session` nodes grow with *elapsed campaign time* regardless of activity, but there's only one per session so this never matters at scale. `Scene` nodes (1 per chunk) were tried and reverted (`04`) precisely because they *did* scale with elapsed time independent of content — projected to ~5,800 nodes over a 100h campaign, a dominant fraction of all nodes for zero unique signal over the `evidence_chunks[]` property. See `10`'s "backbone nodes are a third source of false signal" for why `Session` must still be excluded from any degree-based significance query.
 
 ## Target end-state
 
-The local `qwen3` pipeline emits `:Entity{id}` canonical, rules-grounded, scene-anchored, fully-provenanced graphs at **higher recall than the hand-authored report** — with the report retained as a gold cross-check, and everything idempotent and versionable per PLAN.md.
+The local `qwen3` pipeline emits `:Entity{id}` canonical, rules-grounded, fully-provenanced graphs at **higher recall than the hand-authored report** — with the report retained as a gold cross-check, and everything idempotent and versionable per PLAN.md.

@@ -102,9 +102,9 @@ _QA_QUERIES = {
         "MATCH (pc)-[:HAS_CLASS]->(cl:Entity{subtype:'Class'}) "
         "WHERE c.domain IS NOT NULL AND cl.domains IS NOT NULL "
         "AND NOT c.domain IN cl.domains RETURN count(*) AS c"),
-    "timeline_unlinked": (  # 5. Event/Roll/Decision without a Scene
+    "timeline_unlinked": (  # 5. Event/Roll/Decision without chunk provenance
         "MATCH (n:Entity) WHERE n.type IN ['Event','RollEvent','Decision'] "
-        "AND NOT (n)-[:EVIDENCED_IN]->(:Entity{type:'Scene'}) RETURN count(n) AS c"),
+        "AND n.evidence_chunks IS NULL RETURN count(n) AS c"),
     "orphans": (  # 6. nodes with no relationships (SRD library excluded)
         "MATCH (n:Entity) WHERE NOT (n)--() AND n.session_id <> 'SRD' "
         "RETURN count(n) AS c"),

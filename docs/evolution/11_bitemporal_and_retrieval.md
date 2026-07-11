@@ -11,7 +11,7 @@ Transcripts are speaker-labeled and **numbered**; newer transcripts are more cur
 | Axis | Property | Meaning |
 |---|---|---|
 | **Valid time** (in-world) | `valid_from` / `valid_to` (Session `seq`, integer) | When the fact was true in the story. `valid_to IS NULL` = currently true. |
-| **Knowledge time** (source) | `session_id` (+ `evidence_scenes[]`) | Which transcript we learned it from. Already mandatory per `04`. |
+| **Knowledge time** (source) | `session_id` (+ `evidence_chunks[]`) | Which transcript we learned it from. Already mandatory per `04`. |
 
 Keeping both axes separate is what lets a **later transcript correct earlier story-time**: "he was actually dead since session 3" becomes `valid_from: 3` with `session_id: "2025-06-11"` — the graph remembers both when it was true *and* when you found out. `seq` is the ordering integer (`ingest.py` already enumerates sessions oldest→newest); `session_id` (the date) stays the stable identifier. If transcripts get explicit numbers in filenames later, `seq` simply adopts them.
 
@@ -22,7 +22,7 @@ The original proposal said "on change/death, close the edge with `valid_to`" for
 - **State edges** (a condition that holds until it changes) → full `valid_from`/`valid_to` lifecycle:
   `ALLIED_WITH, HOSTILE_TO, TRUSTS, MEMBER_OF, LOCATED_IN, AT_LOCATION, OWNS, OWNED_BY, KNOWS, FEARS, HAS_CLASS, HAS_SUBCLASS, USES_CARD, PLAYS` *(PLAYS is already per-session per `09` — its "lifecycle" is the per-session edge itself)*
 - **Event edges** (a happening, timestamped, immutable — `valid_to` is meaningless) →
-  `KILLED, BETRAYED, PARTICIPATED_IN, TRIGGERED, RESULTED_IN, ROLLED, TARGETS, DECIDED, MENTIONED_IN, APPEARS_IN, IN_SESSION, EVIDENCED_IN`
+  `KILLED, BETRAYED, PARTICIPATED_IN, TRIGGERED, RESULTED_IN, ROLLED, TARGETS, DECIDED, MENTIONED_IN, APPEARS_IN, IN_SESSION`
 - **Identity edges** (facts about who someone is — survive death) →
   `FAMILY_OF, HAS_ANCESTRY, HAS_COMMUNITY`
 
@@ -30,7 +30,7 @@ New predicates from this plan merged into `ALLOWED_PREDICATES` (`04`): `TRUSTS`,
 
 ## The edge contract (final, supersedes the property list in `04` where they differ)
 
-Every edge carries: `session_id` (source transcript), `evidence_scenes[]`, `confidence ∈ {high, medium, low}` — where **explicit ≈ high, inferred ≈ medium/low**; the explicit/inferred distinction is already encoded in this scale (see `schema.py`'s field description), don't introduce a second axis — plus `description` (**new**: free-text nuance the predicate can't carry, e.g. *"vertraut ihm nur widerwillig, seit dem Vorfall im Wald"*), and, **for state edges only**: `valid_from` (int `seq`), `valid_to` (int `seq` or `NULL`).
+Every edge carries: `session_id` (source transcript), `evidence_chunks[]`, `confidence ∈ {high, medium, low}` — where **explicit ≈ high, inferred ≈ medium/low**; the explicit/inferred distinction is already encoded in this scale (see `schema.py`'s field description), don't introduce a second axis — plus `description` (**new**: free-text nuance the predicate can't carry, e.g. *"vertraut ihm nur widerwillig, seit dem Vorfall im Wald"*), and, **for state edges only**: `valid_from` (int `seq`), `valid_to` (int `seq` or `NULL`).
 
 **Change workflow (append-only, never delete):**
 ```cypher
@@ -57,7 +57,7 @@ Character node property additions (extends the `02` ontology table): `status ∈
 Goal: make the graph **LLM-readable** for Q&A ("Wer vertraut wem gerade? Was ist mit X passiert?"). This is ~a small module over Neo4j + Ollama embeddings, not a framework:
 
 1. **Embed entities** with `nomic-embed-text` (Ollama, ~0.3 GB — co-resides with the LLM, no VRAM issue). Text per entity: `name + aliases + type + latest description/summary + Trait names`. Store the vector on the node; index with Neo4j's native vector index (**requires Neo4j ≥ 5.13 — check/pin the image version in `docker-compose.yml`**). Re-embed only entities touched by the current ingest.
-2. **Query flow** (`retrieve.py` + `cli ask "..."`): embed the question → top-k entities via vector index → expand 1–2 hops, **filtered to `valid_to IS NULL`** (or "as of session N" for historical questions) and excluding `Scene`/`Session` backbone (`10`) → assemble a compact context block (entities with status, current state edges with `description`, recent Events, `Trait` counts) → answer with the local LLM, citing `session_id`s.
+2. **Query flow** (`retrieve.py` + `cli ask "..."`): embed the question → top-k entities via vector index → expand 1–2 hops, **filtered to `valid_to IS NULL`** (or "as of session N" for historical questions) and excluding the `Session` backbone (`10`) → assemble a compact context block (entities with status, current state edges with `description`, recent Events, `Trait` counts) → answer with the local LLM, citing `session_id`s.
 3. **Temporal questions come free**: "Wie war das Verhältnis in Session 5?" is just the as-of filter — this is the payoff of the bitemporal contract, and it's a query GraphRAG's local search cannot do.
 4. **No community detection / global search** — correct call on 12 GB (thousands of extra LLM calls). The cheap substitute for "global" questions is PLAN.md phase 4's **per-session summaries**: retrieve summaries instead of graph neighborhoods when the question is broad.
 

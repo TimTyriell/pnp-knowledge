@@ -33,9 +33,9 @@ MATCH (pc)-[:HAS_CLASS]->(cl:Entity{subtype:'Class'})
 WHERE NOT c.domain IN cl.domains
 RETURN pc.name, c.name, c.domain, cl.domains;
 
--- 5. Timeline: every Event/Roll/Decision links to a Scene — MUST be empty
+-- 5. Timeline: every Event/Roll/Decision has chunk provenance — MUST be empty
 MATCH (n:Entity) WHERE n.type IN ['Event','RollEvent','Decision']
-  AND NOT (n)-[:EVIDENCED_IN]->(:Entity{type:'Scene'})
+  AND n.evidence_chunks IS NULL
 RETURN n.id;
 
 -- 6. Orphan nodes (0 relationships) — should be ~0 except the SRD library
