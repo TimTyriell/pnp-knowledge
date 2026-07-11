@@ -21,7 +21,7 @@ Keep the local, private, high-recall `qwen3:14b` pipeline in `src/pnp_graph/`, b
 1. Canonical `id` is the merge key — **never `name`**. Resolution happens before the write.
 2. Closed vocabularies for node `type` and relationship type — validate, don't free-form.
 3. Native, queryable properties only — **no `attributes_json`**.
-4. Every node and edge carries `confidence ∈ {high,medium,low}`, `session_id`, `evidence_scenes[]`.
+4. Every node and edge carries `confidence ∈ {high,medium,low}`, `session_id`, `evidence_scenes[]`; **state** edges additionally carry `valid_from`/`valid_to` and are closed-and-appended, never overwritten (`11`).
 5. Extract generously, resolve deterministically — recall is a prompt dial, correctness is a downstream layer.
 6. Idempotent + versionable — aligns with `PLAN.md` append/version policy.
 7. Local-first, one 14B in VRAM at a time (RTX 4070 Ti, 12 GB).
@@ -38,6 +38,7 @@ Keep the local, private, high-recall `qwen3:14b` pipeline in `src/pnp_graph/`, b
 - `07_neo4j_and_qa.md` — constraints, QA queries, and the `reconcile-report` gold cross-check.
 - `08_roadmap.md` — WP0–WP10 in order, each with an acceptance criterion; `PLAN.md` alignment; assumptions; anti-patterns.
 - `10_significance_and_recurrence.md` — **guardrail on recall.** Prevents recurring routine behavior (e.g. "plays music often") from inflating into hundreds of near-duplicate nodes, and separates narrative significance from raw frequency. Read before finishing WP6/WP7 — without it, the recall lift causes exactly the problem it describes.
+- `11_bitemporal_and_retrieval.md` — the **bitemporal edge contract** (state/event/identity classes, `valid_from`/`valid_to`, death workflow, append-only contradictions) and the **retrieval layer** (`nomic-embed-text` + Neo4j vector index, GraphRAG-style local search *without* adopting the GraphRAG framework — verdict inside). Supersedes `04`'s edge-property list where they differ.
 
 ## Execution order
 

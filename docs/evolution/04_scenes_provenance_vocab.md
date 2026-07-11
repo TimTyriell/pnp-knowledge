@@ -21,19 +21,28 @@ ALLOWED_PREDICATES = {
   "HAS_CLASS","HAS_SUBCLASS","HAS_ANCESTRY","HAS_COMMUNITY","USES_CARD","HAS_FEATURE","RUNS","USES",
   "PARTICIPATED_IN","DECIDED","ROLLED","TARGETS","TRIGGERED","RESULTED_IN","INVOLVES","MENTIONED_IN",
   "KNOWS","FEARS","HOSTILE_TO","ALLIED_WITH",
+  "TRUSTS","BETRAYED","KILLED","FAMILY_OF",   # narrative-arc verbs (see 11); FAMILY_OF replaces a vague RELATED_TO
 }
-PREDICATE_SYNONYMS = {"ALLY_OF":"ALLIED_WITH","HOSTILE":"HOSTILE_TO","OWNED":"OWNED_BY"}
+PREDICATE_SYNONYMS = {"ALLY_OF":"ALLIED_WITH","HOSTILE":"HOSTILE_TO","OWNED":"OWNED_BY",
+                      "RELATED_TO":"FAMILY_OF"}  # RELATES_TO stays the generic fallback — don't confuse the two
 ```
 
 Enforcement in `resolve.py`/`store.py`: map through `PREDICATE_SYNONYMS`; anything still off-list → coerce to `RELATES_TO` **and log** for vocab review (drift stays visible, never sprawls to Graph 1's 199 types). Optionally tighten `schema.py:Relationship.predicate` to a `Literal[...]` once the vocab is stable.
 
 **Acceptance:** every relationship type in the graph ∈ `ALLOWED_PREDICATES` (or a logged `RELATES_TO`); no predicate sprawl.
 
+> **Edge property contract:** the full per-edge contract (incl. `description` free-text and the `valid_from`/`valid_to` lifecycle for *state* edges) now lives in `11_bitemporal_and_retrieval.md` — it supersedes this doc where they differ. Every predicate is classified once (state / event / identity) in `config.py` next to `ALLOWED_PREDICATES`.
+
 ## Scenes as first-class nodes (WP4)
 
 Graph 3 references scenes `S01–S07`; Graph 2 has only chunk indices. Bridge them.
 
-- **Segmentation** — new `src/pnp_graph/scenes.py`. v1 (deterministic, ship first): **1 scene ≈ 1 chunk**, `Snn = chunk_index`. v2 (optional, matches report granularity): one cheap `qwen` pass over chunk summaries to merge chunks into ~5–10 labeled scenes.
+- **Segmentation** — new `src/pnp_graph/scenes.py`. v1 (deterministic, quick to ship): **1 scene ≈ 1 chunk**, `Snn = chunk_index`. v2 (**recommended default — see backbone sizing below**): one cheap `qwen` pass over chunk summaries to merge chunks into ~5–10 labeled scenes, matching report granularity.
+
+  **Backbone sizing — why v2, not v1, is the real default.** Measured against the actual sample transcript (33.1 real minutes, 157 segments): `chunking.load_session_chunks` produces **32 raw chunks**. Projected across a 100-hour campaign at that density:
+  - **v1 (1 scene = 1 chunk):** ~0.97 chunks/min × 6000 min → **~5,800 `Scene` nodes** campaign-wide. That's the same order of magnitude as the *entire* projected edge count (§`08`'s ~37–49k edges), meaning `Scene` would become a dominant fraction of all nodes in the graph — mostly structural backbone, not content.
+  - **v2 (merged, ~8 scenes per 33 min, report-matching):** ~0.24 scenes/min × 6000 min → **~1,450 `Scene` nodes** campaign-wide. Proportionate, and the growth is *linear in campaign duration*, not in how much happened — fundamentally different from the `Trait`/`Event` reinforcement problem in `10`, where growth was proportional to how often something recurred. Scene growth is bounded and predictable; that's fine on its own. The problem v1 creates is **node-type imbalance and query/visualization clutter** (see the two fixes below), not runtime scale — Neo4j handles either count trivially.
+  - **Recommendation:** ship v1 only as a quick internal check on one session; **implement v2 before this lands in the main pipeline.** Make the target scene density a `config.py` tunable (e.g. `TARGET_SCENE_MINUTES ≈ 4–5`) rather than hard-deriving 1:1 from `CHUNK_SIZE`, so backbone density can be dialed independently of extraction chunk size.
 - **Nodes/edges:** emit `Scene{id:SCENE_{sid}_{Snn}, seq, session_id, summary}` and `(:Scene)-[:IN_SESSION]->(:Session)`.
 - **Evidence migration — node-facts vs. relationship-facts are NOT symmetric:**
   Neo4j relationships cannot originate another relationship — an edge can only run between two **nodes**, so `(:fact)-[:EVIDENCED_IN]->(:Scene)` is only buildable when the fact itself is a node.

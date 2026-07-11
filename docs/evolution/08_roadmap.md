@@ -17,10 +17,11 @@ Each is independently shippable and verified by re-ingesting `2025-03-26`.
 | **WP6b** | `Trait` aggregation + Event-minting filter (do **before** WP7) | `10` | recurring behavior (e.g. music) → one `Trait` with incrementing `count`, not N `Event` nodes; recurrence-vs-significance QA query empty |
 | **WP7** | Recall lift (two-pass prompts / optional aikg feed) | `06` | fact count > Graph 3's 27, all QA green, **and** WP6b's recurrence guardrail holds under the higher recall |
 | **WP8** | `reconcile-report` gold cross-check | `07` | diffs local vs report; proposes alias additions |
-| **WP9** | Multi-session proof + versioning hook | below | 2nd session; recurring entities MERGE to one id spanning both |
+| **WP9** | Multi-session proof + **bitemporal edge lifecycle** (state/event/identity classes, `valid_from`/`valid_to`, death workflow) | `11` | 2nd session: recurring entities MERGE to one id; a contradicting fact closes the old state edge and opens a new one; "as of session N" returns the historical truth; a death closes exactly the state edges, nothing else |
 | **WP10** | Regression harness | below | golden-file test; CI fails on dup/off-vocab/missing-provenance |
+| **WP11** | Retrieval layer (`retrieve.py` + `cli ask`): entity embeddings via `nomic-embed-text`, Neo4j vector index, as-of graph-neighborhood context for the local LLM | `11` | ownership/history/relationship questions answer correctly with session citations on the two-session corpus; **no** GraphRAG framework adoption (verdict in `11`) |
 
-- **WP9 detail:** ingest a second session and confirm recurring entities `MERGE` to a single id spanning both sessions, cross-session timeline ordering works, and no duplicates appear. Leaves the graph ready for PLAN.md phase-3 `:Fact` stamping.
+- **WP9 detail:** ingest a second session and confirm recurring entities `MERGE` to a single id spanning both sessions, cross-session timeline ordering works, and no duplicates appear. Then implement the `11` edge contract: predicate classification (state/event/identity) in `config.py`, close-and-append change workflow, death workflow. This *is* PLAN.md phase 3 for edges; node-property history (`:Fact`) can still follow later.
 - **WP10 detail:** fixed transcript → expected node/edge set as a golden file; CI blocks schema drift, duplicate creation, off-vocab types, and missing provenance. Extends the existing `tests/` (currently only `test_chunking.py`).
 
 ## How this rides on top of PLAN.md (don't fight it)
@@ -36,10 +37,12 @@ PLAN.md already commits to append/version (`:Fact` with `valid_from`/`valid_to`)
 ## Assumptions to confirm before coding (WP0)
 
 1. **Convergence target.** Migrate the main pipeline to `:Entity{id}` on the existing `:7687`; keep the `:7689` report DB and use it via `reconcile-report`. This spec assumes the team wants convergence — confirm.
-2. **Scene granularity.** Start `1 scene = 1 chunk`; upgrade to LLM scene-merging only if you want 1:1 alignment with the report's `S01–S07` (ties into PLAN.md's `seq`-from-`S<NN>` open question).
+2. **Scene granularity.** v2 (merged, report-matching density) is the recommended default per `04`'s backbone-sizing note; `1 scene = 1 chunk` only as a quick internal check on one session.
 3. **SRD source & licensing.** No SRD data ships today. WP5 introduces `data/daggerheart_srd.json`; confirm the source/licensing for full content (a seed subset is fine to start).
 4. **Language policy.** Content stays German; vocab/confidence tokens English (per PLAN.md).
 5. **Predicate tightening.** Keep the validate-and-map layer (recommended) vs hard-`Literal` on `schema.py:Relationship.predicate` — decide once the vocab is stable.
+6. **Neo4j version.** WP11's vector index needs **Neo4j ≥ 5.13** — check/pin the image in `docker-compose.yml`.
+7. **LLM size.** Default stays `qwen3:14b` (fits 12 GB alongside `nomic-embed-text`; extraction and embedding run serially anyway). Downshift to Qwen 7–9B only if latency actually hurts, and only after the retry/repair net (`06`) exists — structured-output reliability drops at that size. See `11`.
 
 ## Anti-patterns to actively prevent (each seen in one of the three graphs)
 
@@ -53,18 +56,20 @@ PLAN.md already commits to append/version (`:Fact` with `valid_from`/`valid_to`)
 
 ## Expected edges per session (sizing reference)
 
-Measured against the real transcript (`transcripts/2025-03-26_RF_ROCKGeeRUFw.json`, 45 min): running the actual `chunking.load_session_chunks` produces **32 raw chunks** at `CHUNK_SIZE=2000`; merged to report-matching granularity that's **~7–10 Scenes**. Projected edge count once WP1–WP8 land, by category:
+Measured against the real transcript (`transcripts/2025-03-26_RF_ROCKGeeRUFw.json`, **33.1 real minutes**, 157 segments): running the actual `chunking.load_session_chunks` produces **32 raw chunks** at `CHUNK_SIZE=2000`; merged to report-matching granularity that's **~7–10 Scenes**. Projected edge count once WP1–WP8 land, by category:
 
 | Category | Basis | Est. edges/session |
 |---|---|---|
 | Core content (`MEMBER_OF`,`OWNED_BY`,`LOCATED_IN`,`PARTICIPATED_IN`,…) | Graph 2 today = 232, minus dedup collapse from entity resolution | 180–220 |
-| `RollEvent` + edges (`ROLLED`,`TARGETS`,`RESULTED_IN`) | Graph 3 captured 1 roll for 45 min — under-recall; a real session has more like 10–20 | 30–50 |
+| `RollEvent` + edges (`ROLLED`,`TARGETS`,`RESULTED_IN`) | Graph 3 captured 1 roll for the session — under-recall; a real session has more like 10–20 | 30–50 |
 | `Decision` + edges (`DECIDED`,`TRIGGERED`) | Graph 3 had 1; realistic recall is a handful per session | 10–15 |
 | SRD linking (`HAS_CLASS`,`HAS_ANCESTRY`,`USES_CARD`,`RUNS`,…) | One-time-ish character-sheet facts; heavier in intro sessions, lighter in pure-combat ones | 5–20 (variable) |
 | `PLAYS` (player→character, WP1b) | Deterministic: one per player + GM | 4–5 |
 | Scene infra (`IN_SESSION` + `EVIDENCED_IN` on **node-facts only**, see `04`) | ~7–10 Scenes × `IN_SESSION`, plus `EVIDENCED_IN` from Events/Items/Quests/RollEvents/Decisions — **not** from relationship-facts | 50–70 |
 
-**Total: ~280–370 edges per 45-min session** — well above Graph 3's 27, below Graph 2's current 232-with-duplicates, and nowhere near Graph 1's 199-predicate sprawl (vocabulary stays closed throughout). Scaled to the full 100+ hour campaign (~133 sessions this length): **~37,000–49,000 edges** total — clean and well within comfortable Neo4j range. Treat this as a sizing sanity check, not a hard target: WP7's actual acceptance criterion is "exceeds Graph 3's 27 while all QA in `07` stays green," not a specific number.
+**Total: ~280–370 edges per ~33-min session** — well above Graph 3's 27, below Graph 2's current 232-with-duplicates, and nowhere near Graph 1's 199-predicate sprawl (vocabulary stays closed throughout). Scaled to a 100-hour campaign (~182 sessions this length): **~51,000–67,000 edges** total — clean and well within comfortable Neo4j range. Treat this as a sizing sanity check, not a hard target: WP7's actual acceptance criterion is "exceeds Graph 3's 27 while all QA in `07` stays green," not a specific number.
+
+**Node-side sizing (the backbone question):** most node types (Character, Item, Quest, Trait, …) grow with *narrative activity*, but `Scene`/`Session` nodes grow with *elapsed campaign time* regardless of activity — a fundamentally different curve. At v1 segmentation (1 scene = 1 chunk) that's **~5,800 `Scene` nodes** over 100h; at the recommended v2 (merged, report-matching density) it's **~1,450**. See `04`'s "Backbone sizing" note for the full derivation and why v2 is the default, and `10`'s "backbone nodes are a third source of false signal" for why `Scene`/`Session` must be excluded from any degree-based significance query regardless of which segmentation you pick.
 
 ## Target end-state
 
