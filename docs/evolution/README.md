@@ -2,9 +2,13 @@
 
 **Read this file first, then open only the doc for the work package you're on.** This set is deliberately split so you don't load 2,000 lines of context to do one focused change.
 
-> **Status (2026-07-11): largely implemented.** WP0–WP8, WP10 and WP11 have
+> **Status (2026-07-12): largely implemented.** WP0–WP8, WP10 and WP11 have
 > landed in `src/pnp_graph/` (WP4 Scenes shipped then reverted — see `04`).
 > Results and learnings per milestone: `../learnings/MIGRATION_NOTES.md`.
+> **Open (Priority 1): WP12** — extraction-quality overhaul (`12`). Measured
+> 2-session bloat (`../learnings/KG_Bloat_2Session_20250401-09.md`) shows the
+> recall-first stance of `06`/`10` produced ~2/3 noise; WP12 moves parsimony
+> into the extraction schema and supersedes `06`/`10` where they conflict.
 > **Open: WP9** — second-session multi-session proof + the bitemporal
 > write-side (`store.py` does not stamp `valid_from`/`valid_to` yet;
 > `STATE_PREDICATES` in `config.py` and the as-of read path in `retrieve.py`
@@ -48,7 +52,10 @@ Keep the local, private, high-recall `qwen3:14b` pipeline in `src/pnp_graph/`, b
 - `08_roadmap.md` — WP0–WP10 in order, each with an acceptance criterion; `PLAN.md` alignment; assumptions; anti-patterns.
 - `10_significance_and_recurrence.md` — **guardrail on recall.** Prevents recurring routine behavior (e.g. "plays music often") from inflating into hundreds of near-duplicate nodes, and separates narrative significance from raw frequency. Read before finishing WP6/WP7 — without it, the recall lift causes exactly the problem it describes.
 - `11_bitemporal_and_retrieval.md` — the **bitemporal edge contract** (state/event/identity classes, `valid_from`/`valid_to`, death workflow, append-only contradictions) and the **retrieval layer** (`nomic-embed-text` + Neo4j vector index, GraphRAG-style local search *without* adopting the GraphRAG framework — verdict inside). Supersedes `04`'s edge-property list where they differ.
+- `12_extraction_quality_overhaul.md` — **Priority 1.** Native parsimony in the extraction layer: scene-level chunking, schema-forced significance (`Event.state_change_justification` + required `consequence`), `Trait`-node removal (folded to a `Character.behavior_note` property), few-shot anti-patterns. Downstream pruning is an anti-pattern here. Supersedes the recall-first tone of `06` and the WP6b aggregation of `10`.
 
 ## Execution order
 
 Follow `08_roadmap.md`. Short version: **WP1 (entity resolution) is the gate** — most other gains depend on canonical IDs existing first. **WP6b (`10`) must land before WP7** — raising recall without the recurrence guardrail amplifies node/edge inflation rather than adding real information.
+
+**Now (2026-07-12): WP12 (`12`) is Priority 1** — the 2-session data proved WP6b's aggregation guardrail insufficient (374 single-use traits, 0 % of events consequence-linked). Do WP12 before resuming WP9; a bitemporal write-side on a 2/3-noise graph just versions the noise.

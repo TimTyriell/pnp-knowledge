@@ -46,7 +46,7 @@ NEO4J_URL = "bolt://localhost:7687"  # container runs NEO4J_AUTH=none, no user/p
 # campaign (Session_Report_S02) — biases the local model toward reusing the same
 # relation types instead of inventing new phrasing per chunk. Not a hard enum.
 SUGGESTED_PREDICATES = [
-    "MEMBER_OF", "OWNS", "HOSTILE_TO", "ALLY_OF", "LOCATED_IN", "TRIGGERED",
+    "MEMBER_OF", "OWNED_BY", "HOSTILE_TO", "ALLY_OF", "LOCATED_IN", "TRIGGERED",
     "PARTICIPATED_IN", "RESULTED_IN", "TARGETS", "KNOWS", "FEARS",
 ]
 
@@ -54,7 +54,7 @@ SUGGESTED_PREDICATES = [
 # model output maps through PREDICATE_SYNONYMS, then anything off-list is
 # coerced to RELATES_TO and logged — never written as a new type.
 ALLOWED_PREDICATES = {
-    "IN_SESSION", "APPEARS_IN", "DIRECTS", "MEMBER_OF", "OWNS", "OWNED_BY",
+    "IN_SESSION", "APPEARS_IN", "DIRECTS", "MEMBER_OF", "OWNED_BY",
     "LOCATED_IN", "AT_LOCATION",
     "HAS_CLASS", "HAS_SUBCLASS", "HAS_ANCESTRY", "HAS_COMMUNITY", "USES_CARD",
     "HAS_FEATURE", "RUNS", "USES",
@@ -79,10 +79,13 @@ PREDICATE_SYNONYMS = {
 # any off-vocab predicate) gets no valid_from/valid_to lifecycle: see
 # resolve.predicate_class(). PLAYS is a state predicate conceptually but is
 # EXEMPT from the generic lifecycle mechanics — its own per-session edge
-# (docs/evolution/09) already is its history.
+# (docs/evolution/09) already is its history. OWNS was folded into OWNED_BY
+# (the only ownership direction written now — resolve.py swaps endpoints for
+# any model output still using OWNS) so the two didn't need independent
+# supersede handling for the same fact.
 STATE_PREDICATES = {
     "ALLIED_WITH", "HOSTILE_TO", "TRUSTS", "MEMBER_OF", "LOCATED_IN", "AT_LOCATION",
-    "OWNS", "OWNED_BY", "KNOWS", "FEARS", "HAS_CLASS", "HAS_SUBCLASS", "USES_CARD", "PLAYS",
+    "OWNED_BY", "KNOWS", "FEARS", "HAS_CLASS", "HAS_SUBCLASS", "USES_CARD", "PLAYS",
 }
 EVENT_PREDICATES = {
     "KILLED", "BETRAYED", "PARTICIPATED_IN", "TRIGGERED", "RESULTED_IN", "ROLLED",
@@ -90,6 +93,19 @@ EVENT_PREDICATES = {
 }
 IDENTITY_PREDICATES = {"FAMILY_OF", "HAS_ANCESTRY", "HAS_COMMUNITY"}
 STATE_PREDICATES_WITH_LIFECYCLE = STATE_PREDICATES - {"PLAYS"}
+
+# Cardinality-one side per state predicate, used to auto-supersede (WP9): the
+# endpoint that can only hold one *current* value at a time. Fact superseded
+# when a new edge of the same type appears from/to that endpoint with a
+# different value on the other side — the old edge's valid_to closes.
+# None = many-to-many, never auto-superseded (e.g. MEMBER_OF: a character can
+# belong to several factions at once, per campaign design).
+STATE_PREDICATE_KEY = {
+    "LOCATED_IN": "start", "AT_LOCATION": "start",
+    "OWNED_BY": "start", "HAS_CLASS": "start", "HAS_SUBCLASS": "start",
+    "ALLIED_WITH": None, "HOSTILE_TO": None, "TRUSTS": None,
+    "MEMBER_OF": None, "KNOWS": None, "FEARS": None, "USES_CARD": None,
+}
 
 # Domain/range per predicate (docs/evolution/KG_Qualitaetsanalyse_S01, fix B):
 # {predicate: (allowed source :Entity.type set, allowed target set)}. Enforced
@@ -103,7 +119,6 @@ PREDICATE_DOMAINS = {
     "APPEARS_IN": ({"Character"}, {"Session"}),
     "DIRECTS": ({"Player"}, {"Session"}),  # GM-is-world: the GM's ONLY edge
     "MEMBER_OF": ({"Character"}, {"Faction"}),
-    "OWNS": ({"Character"}, {"Item"}),
     "OWNED_BY": ({"Item"}, {"Character"}),
     "LOCATED_IN": ({"Location", "Character", "Item", "Faction"}, {"Location"}),
     "AT_LOCATION": ({"Event"}, {"Location"}),

@@ -1,0 +1,1082 @@
+{
+  "nodes": [
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:0",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{\"subtype\": \"System\", \"source\": \"daggerheart-srd\", \"srd_ref\": \"core\"}",
+        "name": "Daggerheart",
+        "session_id": "2025-03-26",
+        "id": "RULE_SYSTEM_Daggerheart",
+        "evidence_scenes": [
+          "S01"
+        ],
+        "type": "RuleEntity"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:1",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [
+          "Dwarf Masters Host",
+          "GM"
+        ],
+        "attributes_json": "{\"is_pc\": false, \"role\": \"GM\", \"status\": \"aktiv\"}",
+        "name": "Deniz",
+        "session_id": "2025-03-26",
+        "id": "CHAR_Deniz_GM",
+        "evidence_scenes": [
+          "S01",
+          "S02",
+          "S03",
+          "S04",
+          "S05",
+          "S06",
+          "S07"
+        ],
+        "type": "Character"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:2",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [
+          "Tim (Spieler)"
+        ],
+        "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\", \"hp_max\": 6}",
+        "name": "Lindo Laut",
+        "session_id": "2025-03-26",
+        "id": "CHAR_LindoLaut",
+        "evidence_scenes": [
+          "S02",
+          "S05",
+          "S06"
+        ],
+        "type": "Character"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:3",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [
+          "Goblin-Dragonborn",
+          "Marco (Spieler)"
+        ],
+        "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\", \"damage_threshold_severe\": 12}",
+        "name": "Dodo",
+        "session_id": "2025-03-26",
+        "id": "CHAR_Marco_Dodo",
+        "evidence_scenes": [
+          "S02",
+          "S06"
+        ],
+        "type": "Character"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:4",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [
+          "Celin (Spieler)"
+        ],
+        "attributes_json": "{\"is_pc\": true, \"status\": \"aktiv\"}",
+        "name": "Cookie",
+        "session_id": "2025-03-26",
+        "id": "CHAR_Celin_Cookie",
+        "evidence_scenes": [
+          "S02",
+          "S06",
+          "S07"
+        ],
+        "type": "Character"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:5",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{\"is_pc\": false, \"subtype\": \"Companion\", \"status\": \"aktiv\"}",
+        "name": "Parry das Schnabeltier",
+        "session_id": "2025-03-26",
+        "id": "COMP_Parry",
+        "evidence_scenes": [
+          "S02"
+        ],
+        "type": "Character"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:6",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{\"is_pc\": false, \"status\": \"erwaehnt\"}",
+        "name": "Auftraggeber",
+        "session_id": "2025-03-26",
+        "id": "CHAR_Auftraggeber",
+        "evidence_scenes": [
+          "S04",
+          "S07"
+        ],
+        "type": "Character"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:7",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{\"subtype\": \"Class\", \"source\": \"daggerheart-srd\"}",
+        "name": "Bard",
+        "session_id": "2025-03-26",
+        "id": "RULE_CLASS_Bard",
+        "evidence_scenes": [
+          "S02"
+        ],
+        "type": "RuleEntity"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:8",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{\"subtype\": \"Subclass\", \"source\": \"daggerheart-srd\"}",
+        "name": "Troubadour",
+        "session_id": "2025-03-26",
+        "id": "RULE_SUBCLASS_Troubadour",
+        "evidence_scenes": [
+          "S02"
+        ],
+        "type": "RuleEntity"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:9",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{\"subtype\": \"Class\", \"source\": \"daggerheart-srd\", \"domains\": [\"Valor\", \"Blade\"]}",
+        "name": "Guardian",
+        "session_id": "2025-03-26",
+        "id": "RULE_CLASS_Guardian",
+        "evidence_scenes": [
+          "S02"
+        ],
+        "type": "RuleEntity"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:10",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{\"subtype\": \"Class\", \"source\": \"daggerheart-srd\"}",
+        "name": "Ranger",
+        "session_id": "2025-03-26",
+        "id": "RULE_CLASS_Ranger",
+        "evidence_scenes": [
+          "S02"
+        ],
+        "type": "RuleEntity"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:11",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{\"subtype\": \"Subclass\", \"source\": \"daggerheart-srd\"}",
+        "name": "Beastbound",
+        "session_id": "2025-03-26",
+        "id": "RULE_SUBCLASS_Beastbound",
+        "evidence_scenes": [
+          "S02"
+        ],
+        "type": "RuleEntity"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:12",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [
+          "Fairy"
+        ],
+        "attributes_json": "{\"subtype\": \"Ancestry\", \"source\": \"daggerheart-srd\"}",
+        "name": "Faerie",
+        "session_id": "2025-03-26",
+        "id": "RULE_ANCESTRY_Faerie",
+        "evidence_scenes": [
+          "S02"
+        ],
+        "type": "RuleEntity"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:13",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [
+          "Frosch"
+        ],
+        "attributes_json": "{\"subtype\": \"Ancestry\", \"source\": \"daggerheart-srd\"}",
+        "name": "Ribbet",
+        "session_id": "2025-03-26",
+        "id": "RULE_ANCESTRY_Ribbet",
+        "evidence_scenes": [
+          "S02"
+        ],
+        "type": "RuleEntity"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:14",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{\"subtype\": \"Community\", \"source\": \"daggerheart-srd\"}",
+        "name": "Highborne",
+        "session_id": "2025-03-26",
+        "id": "RULE_COMMUNITY_Highborne",
+        "evidence_scenes": [
+          "S02"
+        ],
+        "type": "RuleEntity"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:15",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{\"subtype\": \"Community\", \"source\": \"daggerheart-srd\"}",
+        "name": "Ridgeborne",
+        "session_id": "2025-03-26",
+        "id": "RULE_COMMUNITY_Ridgeborne",
+        "evidence_scenes": [
+          "S02"
+        ],
+        "type": "RuleEntity"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:16",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{\"subtype\": \"DomainCard\", \"domain\": \"Valor\", \"source\": \"daggerheart-srd\"}",
+        "name": "I Am Your Shield",
+        "session_id": "2025-03-26",
+        "id": "RULE_CARD_IAmYourShield",
+        "evidence_scenes": [
+          "S06"
+        ],
+        "type": "RuleEntity"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:17",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{\"subtype\": \"DomainCard\", \"domain\": \"Grace\", \"source\": \"daggerheart-srd\"}",
+        "name": "Inspiring Words",
+        "session_id": "2025-03-26",
+        "id": "RULE_CARD_InspiringWords",
+        "evidence_scenes": [
+          "S02",
+          "S06"
+        ],
+        "type": "RuleEntity"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:18",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{\"subtype\": \"ClassFeature\", \"source\": \"daggerheart-srd\"}",
+        "name": "Rally",
+        "session_id": "2025-03-26",
+        "id": "RULE_FEATURE_Rally",
+        "evidence_scenes": [
+          "S06"
+        ],
+        "type": "RuleEntity"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:19",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{}",
+        "name": "Nebliger Wald",
+        "session_id": "2025-03-26",
+        "id": "LOC_Nebelwald",
+        "evidence_scenes": [
+          "S04",
+          "S05",
+          "S06",
+          "S07"
+        ],
+        "type": "Location"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:20",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{\"parent_location_ref\": \"LOC_Nebelwald\"}",
+        "name": "Verlassener Lagerplatz mit Kessel",
+        "session_id": "2025-03-26",
+        "id": "LOC_Lagerplatz_Kessel",
+        "evidence_scenes": [
+          "S04",
+          "S05",
+          "S06"
+        ],
+        "type": "Location"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:21",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{\"parent_location_ref\": \"LOC_Nebelwald\"}",
+        "name": "Camp der Gruppe",
+        "session_id": "2025-03-26",
+        "id": "LOC_Camp",
+        "evidence_scenes": [
+          "S04",
+          "S07"
+        ],
+        "type": "Location"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:22",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{}",
+        "name": "Nahe Ortschaft (aus Botschaft)",
+        "session_id": "2025-03-26",
+        "id": "LOC_Ortschaft_unbekannt",
+        "evidence_scenes": [
+          "S07"
+        ],
+        "type": "Location"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:23",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{\"current_owner_ref\": \"FACTION_Abenteurergruppe\", \"origin_scene_ref\": \"S04\"}",
+        "name": "Brodelnder Kessel",
+        "session_id": "2025-03-26",
+        "id": "ITEM_Kessel",
+        "evidence_scenes": [
+          "S04",
+          "S05",
+          "S06",
+          "S07"
+        ],
+        "type": "Item"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:24",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{\"origin_scene_ref\": \"S05\"}",
+        "name": "Beschwörungs-Schriftrolle",
+        "session_id": "2025-03-26",
+        "id": "ITEM_Schriftrolle",
+        "evidence_scenes": [
+          "S05"
+        ],
+        "type": "Item"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:25",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{\"origin_scene_ref\": \"S07\"}",
+        "name": "Halsband am Tentakel",
+        "session_id": "2025-03-26",
+        "id": "ITEM_Halsband",
+        "evidence_scenes": [
+          "S07"
+        ],
+        "type": "Item"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:26",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{\"current_owner_ref\": \"FACTION_Abenteurergruppe\", \"origin_scene_ref\": \"S07\"}",
+        "name": "Botschaft am Monster",
+        "session_id": "2025-03-26",
+        "id": "ITEM_Botschaft",
+        "evidence_scenes": [
+          "S07"
+        ],
+        "type": "Item"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:27",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{\"current_owner_ref\": \"FACTION_Abenteurergruppe\", \"origin_scene_ref\": \"S07\"}",
+        "name": "Beweisstück vom Monster",
+        "session_id": "2025-03-26",
+        "id": "ITEM_Monsterteil",
+        "evidence_scenes": [
+          "S07"
+        ],
+        "type": "Item"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:28",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{\"status\": \"abgeschlossen\"}",
+        "name": "Monster aufspüren & Beweis bringen",
+        "session_id": "2025-03-26",
+        "id": "QUEST_MonsterJagd",
+        "evidence_scenes": [
+          "S04",
+          "S05",
+          "S06",
+          "S07"
+        ],
+        "type": "Quest"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:29",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{\"status\": \"offen\"}",
+        "name": "Belohnung beim Auftraggeber abholen",
+        "session_id": "2025-03-26",
+        "id": "QUEST_Belohnung",
+        "evidence_scenes": [
+          "S07"
+        ],
+        "type": "Quest"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:30",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{\"status\": \"offen\"}",
+        "name": "Spur der Botschaft zur Ortschaft folgen",
+        "session_id": "2025-03-26",
+        "id": "QUEST_Botschaft_verfolgen",
+        "evidence_scenes": [
+          "S07"
+        ],
+        "type": "Quest"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:31",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{\"stance\": \"self\"}",
+        "name": "Die Abenteurergruppe",
+        "session_id": "2025-03-26",
+        "id": "FACTION_Abenteurergruppe",
+        "evidence_scenes": [
+          "S04"
+        ],
+        "type": "Faction"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:32",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [
+          "das Monster"
+        ],
+        "attributes_json": "{\"subtype\": \"Adversary\", \"source\": \"homebrew\", \"status\": \"besiegt\", \"damage_threshold_demo\": 12}",
+        "name": "Tentakel-Monster",
+        "session_id": "2025-03-26",
+        "id": "ADV_TentakelMonster",
+        "evidence_scenes": [
+          "S06",
+          "S07"
+        ],
+        "type": "RuleEntity"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:33",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{\"decided_by_ref\": \"CHAR_LindoLaut\", \"quote\": \"Ritual halb richtig vorlesen + Explosions-Show, damit das Monster denkt, es werde beschworen\", \"consequence\": \"Monster wird angelockt\", \"scene_ref\": \"S05\"}",
+        "name": "Ritual bewusst falsch durchführen",
+        "session_id": "2025-03-26",
+        "id": "EVENT_RitualPlan",
+        "evidence_scenes": [
+          "S05"
+        ],
+        "type": "Decision"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:34",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{\"description\": \"Finishing Blow durch Ranger ins Auge\", \"scene_ref\": \"S06\", \"consequence\": \"Ort normalisiert sich, Halsband+Botschaft gefunden\"}",
+        "name": "Tentakel-Monster besiegt",
+        "session_id": "2025-03-26",
+        "id": "EVENT_MonsterBesiegt",
+        "evidence_scenes": [
+          "S06",
+          "S07"
+        ],
+        "type": "Event"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:35",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{\"roller_ref\": \"CHAR_Celin_Cookie\", \"trait_or_action\": \"Knowledge\", \"outcome\": \"success_hope\", \"consequence\": \"Formel entziffert; +1 Hope\"}",
+        "name": "Knowledge-Probe Schriftrolle",
+        "session_id": "2025-03-26",
+        "id": "ROLL_S05_Knowledge",
+        "evidence_scenes": [
+          "S05"
+        ],
+        "type": "RollEvent"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:36",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{\"roller_ref\": \"CHAR_Marco_Dodo\", \"trait_or_action\": \"Agility/Breitschwert\", \"outcome\": \"success_fear\", \"consequence\": \"Tentakel abgeschlagen\"}",
+        "name": "Breitschwert-Angriff",
+        "session_id": "2025-03-26",
+        "id": "ROLL_S06_Guardian_Atk",
+        "evidence_scenes": [
+          "S06"
+        ],
+        "type": "RollEvent"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:37",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{\"roller_ref\": \"CHAR_Celin_Cookie\", \"trait_or_action\": \"Agility/Shortbow+Vorteil\", \"outcome\": \"success\", \"consequence\": \"Monster besiegt\"}",
+        "name": "Shortbow-Finisher (Vorteil)",
+        "session_id": "2025-03-26",
+        "id": "ROLL_S06_Ranger_Finish",
+        "evidence_scenes": [
+          "S06"
+        ],
+        "type": "RollEvent"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:38",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{\"subtype\": \"DamageMitigation\", \"target_ref\": \"CHAR_Marco_Dodo\", \"value\": \"1 Stress; 3HP->1HP\", \"scene_ref\": \"S06\"}",
+        "name": "I Am Your Shield",
+        "session_id": "2025-03-26",
+        "id": "MECH_S06_Shield",
+        "evidence_scenes": [
+          "S06"
+        ],
+        "type": "MechanicEvent"
+      }
+    },
+    {
+      "id": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:39",
+      "labels": [
+        "Entity"
+      ],
+      "props": {
+        "aliases": [],
+        "attributes_json": "{\"subtype\": \"ConditionApplied\", \"target_ref\": \"ADV_TentakelMonster\", \"value\": \"Vulnerable\", \"scene_ref\": \"S06\"}",
+        "name": "Monster Vulnerable (Song)",
+        "session_id": "2025-03-26",
+        "id": "MECH_S06_Vulnerable",
+        "evidence_scenes": [
+          "S06"
+        ],
+        "type": "MechanicEvent"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:0",
+      "type": "RUNS",
+      "start": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:1",
+      "end": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:0",
+      "props": {
+        "confidence": "hoch",
+        "session_id": "2025-03-26",
+        "evidence_scenes": [
+          "S01"
+        ]
+      }
+    },
+    {
+      "id": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:1",
+      "type": "HAS_CLASS",
+      "start": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:2",
+      "end": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:7",
+      "props": {
+        "confidence": "hoch",
+        "session_id": "2025-03-26",
+        "evidence_scenes": [
+          "S02"
+        ]
+      }
+    },
+    {
+      "id": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:2",
+      "type": "HAS_SUBCLASS",
+      "start": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:2",
+      "end": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:8",
+      "props": {
+        "confidence": "hoch",
+        "session_id": "2025-03-26",
+        "evidence_scenes": [
+          "S02"
+        ]
+      }
+    },
+    {
+      "id": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:3",
+      "type": "HAS_ANCESTRY",
+      "start": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:2",
+      "end": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:12",
+      "props": {
+        "confidence": "hoch",
+        "session_id": "2025-03-26",
+        "evidence_scenes": [
+          "S02"
+        ]
+      }
+    },
+    {
+      "id": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:4",
+      "type": "HAS_COMMUNITY",
+      "start": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:2",
+      "end": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:14",
+      "props": {
+        "confidence": "hoch",
+        "session_id": "2025-03-26",
+        "evidence_scenes": [
+          "S02"
+        ]
+      }
+    },
+    {
+      "id": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:5",
+      "type": "USES_CARD",
+      "start": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:2",
+      "end": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:17",
+      "props": {
+        "confidence": "hoch",
+        "session_id": "2025-03-26",
+        "evidence_scenes": [
+          "S02",
+          "S06"
+        ]
+      }
+    },
+    {
+      "id": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:6",
+      "type": "USES_CARD",
+      "start": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:2",
+      "end": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:18",
+      "props": {
+        "confidence": "hoch",
+        "session_id": "2025-03-26",
+        "evidence_scenes": [
+          "S06"
+        ]
+      }
+    },
+    {
+      "id": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:7",
+      "type": "HAS_CLASS",
+      "start": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:3",
+      "end": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:9",
+      "props": {
+        "confidence": "hoch",
+        "session_id": "2025-03-26",
+        "evidence_scenes": [
+          "S02"
+        ]
+      }
+    },
+    {
+      "id": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:8",
+      "type": "HAS_COMMUNITY",
+      "start": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:3",
+      "end": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:15",
+      "props": {
+        "confidence": "mittel",
+        "session_id": "2025-03-26",
+        "evidence_scenes": [
+          "S02"
+        ]
+      }
+    },
+    {
+      "id": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:9",
+      "type": "USES_CARD",
+      "start": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:3",
+      "end": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:16",
+      "props": {
+        "confidence": "mittel",
+        "session_id": "2025-03-26",
+        "evidence_scenes": [
+          "S06"
+        ]
+      }
+    },
+    {
+      "id": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:10",
+      "type": "HAS_CLASS",
+      "start": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:4",
+      "end": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:10",
+      "props": {
+        "confidence": "hoch",
+        "session_id": "2025-03-26",
+        "evidence_scenes": [
+          "S02"
+        ]
+      }
+    },
+    {
+      "id": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:11",
+      "type": "HAS_SUBCLASS",
+      "start": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:4",
+      "end": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:11",
+      "props": {
+        "confidence": "mittel",
+        "session_id": "2025-03-26",
+        "evidence_scenes": [
+          "S02"
+        ]
+      }
+    },
+    {
+      "id": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:12",
+      "type": "HAS_ANCESTRY",
+      "start": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:4",
+      "end": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:13",
+      "props": {
+        "confidence": "hoch",
+        "session_id": "2025-03-26",
+        "evidence_scenes": [
+          "S02"
+        ]
+      }
+    },
+    {
+      "id": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:13",
+      "type": "OWNS",
+      "start": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:4",
+      "end": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:5",
+      "props": {
+        "confidence": "hoch",
+        "session_id": "2025-03-26",
+        "evidence_scenes": [
+          "S02"
+        ]
+      }
+    },
+    {
+      "id": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:14",
+      "type": "MEMBER_OF",
+      "start": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:2",
+      "end": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:31",
+      "props": {
+        "confidence": "hoch",
+        "session_id": "2025-03-26",
+        "evidence_scenes": [
+          "S04"
+        ]
+      }
+    },
+    {
+      "id": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:15",
+      "type": "MEMBER_OF",
+      "start": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:3",
+      "end": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:31",
+      "props": {
+        "confidence": "hoch",
+        "session_id": "2025-03-26",
+        "evidence_scenes": [
+          "S04"
+        ]
+      }
+    },
+    {
+      "id": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:16",
+      "type": "MEMBER_OF",
+      "start": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:4",
+      "end": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:31",
+      "props": {
+        "confidence": "hoch",
+        "session_id": "2025-03-26",
+        "evidence_scenes": [
+          "S04"
+        ]
+      }
+    },
+    {
+      "id": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:17",
+      "type": "TRIGGERED",
+      "start": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:6",
+      "end": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:28",
+      "props": {
+        "confidence": "mittel",
+        "session_id": "2025-03-26",
+        "evidence_scenes": [
+          "S04"
+        ]
+      }
+    },
+    {
+      "id": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:18",
+      "type": "HOSTILE_TO",
+      "start": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:31",
+      "end": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:32",
+      "props": {
+        "confidence": "hoch",
+        "session_id": "2025-03-26",
+        "evidence_scenes": [
+          "S06"
+        ]
+      }
+    },
+    {
+      "id": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:19",
+      "type": "TRIGGERED",
+      "start": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:33",
+      "end": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:32",
+      "props": {
+        "confidence": "mittel",
+        "session_id": "2025-03-26",
+        "evidence_scenes": [
+          "S05",
+          "S06"
+        ]
+      }
+    },
+    {
+      "id": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:20",
+      "type": "ROLLED",
+      "start": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:4",
+      "end": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:37",
+      "props": {
+        "confidence": "mittel",
+        "session_id": "2025-03-26",
+        "evidence_scenes": [
+          "S06"
+        ]
+      }
+    },
+    {
+      "id": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:21",
+      "type": "TARGETS",
+      "start": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:37",
+      "end": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:32",
+      "props": {
+        "confidence": "mittel",
+        "session_id": "2025-03-26",
+        "evidence_scenes": [
+          "S06"
+        ]
+      }
+    },
+    {
+      "id": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:22",
+      "type": "RESULTED_IN",
+      "start": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:37",
+      "end": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:34",
+      "props": {
+        "confidence": "mittel",
+        "session_id": "2025-03-26",
+        "evidence_scenes": [
+          "S06"
+        ]
+      }
+    },
+    {
+      "id": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:23",
+      "type": "RESULTED_IN",
+      "start": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:34",
+      "end": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:25",
+      "props": {
+        "confidence": "hoch",
+        "session_id": "2025-03-26",
+        "evidence_scenes": [
+          "S07"
+        ]
+      }
+    },
+    {
+      "id": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:24",
+      "type": "MENTIONED_IN",
+      "start": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:26",
+      "end": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:22",
+      "props": {
+        "confidence": "mittel",
+        "session_id": "2025-03-26",
+        "evidence_scenes": [
+          "S07"
+        ]
+      }
+    },
+    {
+      "id": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:25",
+      "type": "TRIGGERED",
+      "start": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:26",
+      "end": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:30",
+      "props": {
+        "confidence": "hoch",
+        "session_id": "2025-03-26",
+        "evidence_scenes": [
+          "S07"
+        ]
+      }
+    },
+    {
+      "id": "5:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:26",
+      "type": "LOCATED_IN",
+      "start": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:20",
+      "end": "4:b899ecf8-9d0a-4114-b7f1-e9eb3730ca4a:19",
+      "props": {
+        "confidence": "hoch",
+        "session_id": "2025-03-26",
+        "evidence_scenes": [
+          "S04"
+        ]
+      }
+    }
+  ]
+}

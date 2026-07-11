@@ -8,7 +8,7 @@ and archived history.
 
 | Folder | What | Read when |
 |---|---|---|
-| [evolution/](evolution/) | The active design spec (WP0–WP11). **Largely implemented** — see the status note in its README. Still the reference for *why* the code is shaped the way it is, and the spec for the one open work package (WP9 bitemporal write-side). | Changing schema, resolution, vocab, retrieval. |
+| [evolution/](evolution/) | The active design spec (WP0–WP12). **Largely implemented** — see the status note in its README. Still the reference for *why* the code is shaped the way it is, and the spec for the open work packages (WP12 extraction-quality overhaul = Priority 1; WP9 bitemporal write-side). | Changing schema, resolution, vocab, retrieval, chunking. |
 | [learnings/](learnings/) | Verified results and analysis — what was measured, what worked, what was reverted and why. | Before re-attempting anything that looks "missing" (e.g. Scene nodes — tried, reverted). |
 | [archive/](archive/) | Superseded docs and old data exports. Historical context only — nothing in here describes the current system. | Almost never. |
 
@@ -20,6 +20,12 @@ and archived history.
 - Canonical IDs, player/character split, closed predicate vocab, provenance on
   every fact, SRD grounding, Decision/RollEvent, Trait aggregation, golden-file
   regression tests, retrieval layer — all landed (WP0–WP8, WP10, WP11).
+- **Open (Priority 1): WP12** — extraction-quality overhaul. 2-session exports
+  show ~2/3 of the graph is bloat (374 single-use `Trait`s, 33 % orphan
+  `Event`s, 0 % of events carry a consequence edge). Fix is native parsimony in
+  the extraction layer (schema-forced significance, trait removal, scene-level
+  chunks) — **not** downstream pruning. Spec:
+  [evolution/12_extraction_quality_overhaul.md](evolution/12_extraction_quality_overhaul.md).
 - **Open: WP9** — multi-session ingest proof + bitemporal edge lifecycle on the
   write side (`valid_from`/`valid_to` stamping in `store.py`). Spec:
   [evolution/11_bitemporal_and_retrieval.md](evolution/11_bitemporal_and_retrieval.md).
@@ -32,6 +38,10 @@ and archived history.
 - [learnings/MIGRATION_NOTES.md](learnings/MIGRATION_NOTES.md) — WP0 baseline,
   M1/M2 measured results, the **M2 Scene-node revert** (structural noise,
   ~50% of edges for zero signal), breaking changes.
+- [learnings/KG_Bloat_2Session_20250401-09.md](learnings/KG_Bloat_2Session_20250401-09.md)
+  — **2-session bloat analysis** (German): the measured numbers behind WP12
+  (374 single-use traits, 33 % orphan events, 0 % consequence edges) and the
+  code-level root cause. Read before touching extraction.
 - [learnings/KG_Qualitaetsanalyse_S01_20250326.md](learnings/KG_Qualitaetsanalyse_S01_20250326.md)
   — quality analysis of the S01 graph (German).
 

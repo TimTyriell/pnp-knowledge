@@ -26,12 +26,15 @@ from .config import (
     ALIAS_REGISTRY_PATH,
     ALLOWED_PREDICATES,
     CONFIDENCE_MAP,
+    EVENT_PREDICATES,
+    IDENTITY_PREDICATES,
     META_EVENT_TERMS,
     OOC_DENYLIST,
     PREDICATE_DOMAINS,
     PREDICATE_SYNONYMS,
     RULE_SUBTYPES,
     STATE_DIR,
+    STATE_PREDICATES_WITH_LIFECYCLE,
 )
 from .schema import GraphExtraction
 from .store import sanitize_predicate
@@ -258,6 +261,20 @@ def map_predicate(predicate: str) -> tuple[str, bool]:
     return "RELATES_TO", False
 
 
+def predicate_class(predicate: str) -> str | None:
+    """WP9 bitemporal classification: 'state' / 'event' / 'identity' / None.
+
+    None (incl. RELATES_TO, KNOWN_FOR, off-vocab) gets no valid_from/valid_to.
+    """
+    if predicate in STATE_PREDICATES_WITH_LIFECYCLE:
+        return "state"
+    if predicate in EVENT_PREDICATES:
+        return "event"
+    if predicate in IDENTITY_PREDICATES:
+        return "identity"
+    return None
+
+
 def normalize_confidence(value: str) -> str:
     v = (value or "").strip().lower()
     return CONFIDENCE_MAP.get(v, v if v in ("high", "medium", "low") else "medium")
@@ -307,8 +324,11 @@ def resolve_graph(
         if key in edge_keys:
             return
         edge_keys.add(key)
+        props = dict(props or {})
+        if predicate_class(rtype) == "state" and "valid_from" not in props:
+            props["valid_from"] = seq
         edges.append({"start_id": start, "end_id": end, "type": rtype,
-                      "props": {"session_id": session_id, "confidence": "high", **(props or {})}})
+                      "props": {"session_id": session_id, "confidence": "high", **props}})
 
     # --- session + cast (deterministic, LLM-independent) ----------------
     add_entity(session_node_id, "Session", {"name": session_id, "date": session_id, "confidence": "high"})
@@ -535,9 +555,18 @@ def resolve_graph(
 
     # --- relationships (endpoint validation, docs/evolution/03) ----------
     for r in extraction.relationships:
-        start = endpoint(r.subject)
-        end = endpoint(r.object)
-        rtype, on_vocab = map_predicate(r.predicate)
+        raw = sanitize_predicate(r.predicate)
+        raw = PREDICATE_SYNONYMS.get(raw, raw)
+        if raw == "OWNS":
+            # Character -[OWNS]-> Item folds into the one ownership direction
+            # this pipeline keeps, Item -[OWNED_BY]-> Character — WP9 needs a
+            # single direction per fact so supersede has one edge to close.
+            subject, obj, rtype, on_vocab = r.object, r.subject, "OWNED_BY", True
+        else:
+            subject, obj = r.subject, r.object
+            rtype, on_vocab = map_predicate(r.predicate)
+        start = endpoint(subject)
+        end = endpoint(obj)
         if not on_vocab:
             off_vocab.append(r.predicate)
         if not start or not end or start == end:

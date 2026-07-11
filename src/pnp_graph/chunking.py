@@ -73,10 +73,13 @@ def pack_segments(segments: list[dict]) -> list[str]:
         best_break = None  # (gap, index) candidate end-of-chunk within budget
         while end < n and size + len(turns[end]) <= CHUNK_SIZE:
             size += len(turns[end])
-            # Only consider a gap a break candidate once we're past the halfway
-            # point of the window — otherwise the global-largest gap can sit near
-            # the window start, making `cut` barely advance and the loop stall.
-            if end + 1 < n and (end + 1 - start) > (end - start + 1) // 2:
+            # Only consider a gap a break candidate once the chunk has reached
+            # half of CHUNK_SIZE — anchored to absolute size, not window
+            # position: a window-relative halfway (previous version) lets the
+            # same small early gap re-qualify as "past halfway" once overlap
+            # has shrunk the window, cutting there again and again in a
+            # cascade of ever-smaller chunks instead of accumulating toward budget.
+            if end + 1 < n and size > CHUNK_SIZE // 2:
                 gap = segments[end + 1]["start"] - segments[end]["end"]
                 if best_break is None or gap > best_break[0]:
                     best_break = (gap, end + 1)
