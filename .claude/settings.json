@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.venv/Scripts/python.exe \"C:\\\\Users\\\\noahs\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--dev-pnp-pnp-graph-service\\\\5c668e07-0172-45ed-b154-e0771123a85f\\\\scratchpad\\\\clone_main_to_report.py\")",
+      "Bash(docker start *)",
+      "Bash(find /c/Users/noahs/AppData/Local/Temp/claude -iname \"*ingest_full*\" 2>/dev/null; echo ---; ls -la state/failures 2>&1; echo ---; git log --oneline -5 -- state/ 2>&1)",
+      "Read(//c/Users/noahs/AppData/Local/Temp/claude/**)"
+    ]
+  }
+}

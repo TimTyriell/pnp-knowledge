@@ -62,6 +62,23 @@ def test_single_segment():
     assert segs[0]["text"] in chunks[0]
 
 
+def test_no_cascading_small_chunks_around_early_gap():
+    # regression: a lone bigger-than-neighbors gap early in a long, fast-back-
+    # and-forth run of short turns must not get re-selected as the break point
+    # chunk after chunk (window-relative halfway let this cascade to a dozen
+    # sub-500-char chunks before the fix; size-relative halfway must not).
+    segs = []
+    t = 0.0
+    for i in range(80):
+        dur = 1.0
+        segs.append({"start": t, "end": t + dur, "speaker": f"S{i%3}", "text": "x" * 40})
+        gap = 5.0 if i == 10 else 0.2  # one standout gap early, otherwise near-continuous
+        t += dur + gap
+    chunks = pack_segments(segs)
+    small = [c for c in chunks if len(c) < config.CHUNK_SIZE // 2]
+    assert len(small) <= 1  # at most the unavoidable final leftover chunk
+
+
 def test_session_id_from_path():
     assert session_id_from_path(Path("2025-04-01_RF_LZIuUzc3F18.json")) == "2025-04-01"
     assert session_id_from_path(Path("nodatehere.json")) == "nodatehere"

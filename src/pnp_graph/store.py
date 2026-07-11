@@ -3,8 +3,10 @@
 Input is the resolved dict from resolve.py — entities {id, type, props} and
 edges {start_id, end_id, type, props}. Endpoints are MATCHed by id, never
 MERGE-created: unresolvable endpoints were already dropped in resolve.py.
-Versioning (valid_from/valid_to on state edges) is WP9 — designed in
-docs/evolution/11_bitemporal_and_retrieval.md, not implemented here yet.
+Versioning (valid_from/valid_to on state edges, WP9, docs/evolution/11):
+resolve.py stamps valid_from = seq on state-predicate edges; _write_graph
+here closes out the prior value (valid_to) on supersede, keyed per
+config.STATE_PREDICATE_KEY.
 """
 
 import logging
@@ -12,7 +14,7 @@ import re
 
 from neo4j import GraphDatabase
 
-from .config import NEO4J_URL
+from .config import NEO4J_URL, STATE_PREDICATE_KEY
 
 log = logging.getLogger("pnp_graph.store")
 
@@ -69,6 +71,21 @@ def _write_graph(db, resolved: dict) -> None:
                 start=r["start_id"], end=r["end_id"], sid=r["props"]["session_id"],
             )
             continue
+        key_side = STATE_PREDICATE_KEY.get(rtype)
+        if key_side and "valid_from" in r["props"]:
+            # Supersede: close the prior open value on the cardinality-one
+            # side before writing the new one, so a plain (non as-of) read
+            # sees only the current fact (retrieve.py's default edge filter).
+            key_id = r["start_id"] if key_side == "start" else r["end_id"]
+            other_id = r["end_id"] if key_side == "start" else r["start_id"]
+            pattern = (f"(k:Entity {{id: $key_id}})-[old:{rtype}]->(o:Entity)" if key_side == "start"
+                       else f"(o:Entity)-[old:{rtype}]->(k:Entity {{id: $key_id}})")
+            db.run(
+                f"MATCH {pattern} "
+                "WHERE o.id <> $other_id AND old.valid_to IS NULL "
+                "SET old.valid_to = $valid_from",
+                key_id=key_id, other_id=other_id, valid_from=r["props"]["valid_from"],
+            )
         # session_id in the MERGE pattern -> one edge per session (PLAYS history etc.).
         db.run(
             f"MATCH (a:Entity {{id: $start}}), (b:Entity {{id: $end}}) "

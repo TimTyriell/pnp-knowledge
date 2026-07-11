@@ -13,7 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 import pnp_graph.resolve as resolve_mod
 from pnp_graph.chunking import parse_speaker, session_cast
 from pnp_graph.resolve import (Resolver, is_out_of_world, map_predicate, normalize,
-                               normalize_confidence, resolve_graph, slug)
+                               normalize_confidence, predicate_class, resolve_graph, slug)
 from pnp_graph.schema import (Character, Decision, Event, Faction, GraphExtraction, Item,
                               Location, Relationship, RollEvent, RuleEntity, Trait)
 from pnp_graph.srd import SrdIndex
@@ -464,6 +464,35 @@ def test_registry_write_back():
     r.save()
     saved = json.loads(r.path.read_text(encoding="utf-8"))
     assert any(e["canonical"] == "Knurrender Bär" for e in saved["characters"].values())
+
+
+def test_owns_swapped_to_owned_by():
+    # WP9: OWNS (Character->Item) folds into the one ownership direction the
+    # pipeline keeps, OWNED_BY (Item->Character) — one edge per fact to supersede.
+    r = _tmp_resolver()
+    info = _cast_info(r)
+    extraction = GraphExtraction(
+        items=[Item(name="Bogen")],
+        relationships=[Relationship(subject="Cookie", predicate="OWNS", object="Bogen",
+                                     confidence="high")],
+    )
+    resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=3)
+    assert not any(e["type"] == "OWNS" for e in resolved["edges"])
+    owned = [e for e in resolved["edges"] if e["type"] == "OWNED_BY"]
+    assert len(owned) == 1
+    assert owned[0]["start_id"] == "ITEM_Bogen"
+    assert owned[0]["end_id"] == "CHAR_Cookie"
+    assert owned[0]["props"]["valid_from"] == 3  # state predicate stamped with seq
+
+
+def test_predicate_class():
+    assert predicate_class("LOCATED_IN") == "state"
+    assert predicate_class("OWNED_BY") == "state"
+    assert predicate_class("MEMBER_OF") == "state"
+    assert predicate_class("KILLED") == "event"
+    assert predicate_class("FAMILY_OF") == "identity"
+    assert predicate_class("RELATES_TO") is None
+    assert predicate_class("PLAYS") is None  # exempt: own per-session history already
 
 
 if __name__ == "__main__":

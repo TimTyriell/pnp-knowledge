@@ -28,6 +28,18 @@
         "GM-Narrator",
         "Spielleiter"
       ]
+    },
+    "PLAYER_Basti": {
+      "canonical": "Basti",
+      "aliases": []
+    },
+    "PLAYER_Benjamin": {
+      "canonical": "Benjamin",
+      "aliases": []
+    },
+    "PLAYER_Micha": {
+      "canonical": "Micha",
+      "aliases": []
     }
   },
   "characters": {
@@ -71,6 +83,236 @@
     },
     "CHAR_Kieler": {
       "canonical": "Kieler",
+      "aliases": []
+    },
+    "CHAR_Esterossa": {
+      "canonical": "Esterossa",
+      "aliases": []
+    },
+    "CHAR_Benjamin": {
+      "canonical": "Benjamin",
+      "aliases": []
+    },
+    "CHAR_RIBBIT": {
+      "canonical": "R.I.B.B.I.T.",
+      "aliases": [
+        "R.I.B.B.E.T."
+      ]
+    },
+    "CHAR_Ribbet": {
+      "canonical": "Ribbet",
+      "aliases": []
+    },
+    "CHAR_Sanji": {
+      "canonical": "Sanji",
+      "aliases": []
+    },
+    "CHAR_Frettchen": {
+      "canonical": "Frettchen",
+      "aliases": []
+    },
+    "CHAR_Ingrid": {
+      "canonical": "Ingrid",
+      "aliases": []
+    },
+    "CHAR_Mikasa": {
+      "canonical": "Mikasa",
+      "aliases": []
+    },
+    "CHAR_Ribbit": {
+      "canonical": "Ribbit",
+      "aliases": []
+    },
+    "CHAR_Spinni": {
+      "canonical": "Spinni",
+      "aliases": []
+    },
+    "CHAR_Valerie": {
+      "canonical": "Valerie",
+      "aliases": []
+    },
+    "CHAR_Rotunas": {
+      "canonical": "Rotunas",
+      "aliases": []
+    },
+    "CHAR_Leandras": {
+      "canonical": "Leandras",
+      "aliases": []
+    },
+    "CHAR_Berthold": {
+      "canonical": "Berthold",
+      "aliases": []
+    },
+    "CHAR_Kerl": {
+      "canonical": "Kerl",
+      "aliases": []
+    },
+    "CHAR_Brock": {
+      "canonical": "Brock",
+      "aliases": []
+    },
+    "CHAR_Tindrail": {
+      "canonical": "Tindrail",
+      "aliases": []
+    },
+    "CHAR_Tindrael": {
+      "canonical": "Tindrael",
+      "aliases": []
+    },
+    "CHAR_Tendai": {
+      "canonical": "Tendai",
+      "aliases": []
+    },
+    "CHAR_Valeria": {
+      "canonical": "Valeria",
+      "aliases": []
+    },
+    "CHAR_Tindrell": {
+      "canonical": "Tindrell",
+      "aliases": []
+    },
+    "CHAR_Hubert": {
+      "canonical": "Hubert",
+      "aliases": []
+    },
+    "CHAR_Elisa": {
+      "canonical": "Elisa",
+      "aliases": []
+    },
+    "CHAR_Schmied": {
+      "canonical": "Der Schmied",
+      "aliases": []
+    },
+    "CHAR_Lisa": {
+      "canonical": "Lisa",
+      "aliases": []
+    },
+    "CHAR_Findus": {
+      "canonical": "Findus",
+      "aliases": []
+    },
+    "CHAR_Nip": {
+      "canonical": "Nip",
+      "aliases": []
+    },
+    "CHAR_HerrHubert": {
+      "canonical": "Herr Hubert",
+      "aliases": []
+    },
+    "CHAR_HerrTenrell": {
+      "canonical": "Herr Tenrell",
+      "aliases": []
+    },
+    "CHAR_FamilieSchmidt": {
+      "canonical": "Familie Schmidt",
+      "aliases": []
+    },
+    "CHAR_BuergermeisterHerrBerthold": {
+      "canonical": "Bürgermeister Herr Berthold",
+      "aliases": [
+        "Bürgermeister Berthold"
+      ]
+    },
+    "CHAR_Kind": {
+      "canonical": "Kind (junge Frau)",
+      "aliases": []
+    },
+    "CHAR_Timrell": {
+      "canonical": "Timrell",
+      "aliases": [
+        "Tirell"
+      ]
+    },
+    "CHAR_Tendril": {
+      "canonical": "Tendril",
+      "aliases": []
+    },
+    "CHAR_Gnome": {
+      "canonical": "Gnome",
+      "aliases": []
+    },
+    "CHAR_Phipps": {
+      "canonical": "Phipps",
+      "aliases": []
+    },
+    "CHAR_Fips": {
+      "canonical": "Fips",
+      "aliases": []
+    },
+    "CHAR_Mike": {
+      "canonical": "Mike",
+      "aliases": []
+    },
+    "CHAR_GrimmerBaerBackbaer": {
+      "canonical": "Grimmer Bär / Backbär",
+      "aliases": []
+    },
+    "CHAR_Tyrell": {
+      "canonical": "Tyrell",
+      "aliases": []
+    },
+    "CHAR_Skelett": {
+      "canonical": "Skelett",
+      "aliases": []
+    },
+    "CHAR_Lanra": {
+      "canonical": "Lanra",
+      "aliases": []
+    },
+    "CHAR_Lara": {
+      "canonical": "Lara",
+      "aliases": []
+    },
+    "CHAR_Kuki": {
+      "canonical": "Kuki",
+      "aliases": []
+    },
+    "CHAR_Perry": {
+      "canonical": "Perry (Frettchen)",
+      "aliases": []
+    },
+    "CHAR_MonsieurFredchen": {
+      "canonical": "Monsieur Fredchen",
+      "aliases": []
+    },
+    "CHAR_GoblinKind": {
+      "canonical": "Goblin-Kind",
+      "aliases": []
+    },
+    "CHAR_Schleichfurz": {
+      "canonical": "Schleichfurz",
+      "aliases": []
+    },
+    "CHAR_Havli": {
+      "canonical": "Havli",
+      "aliases": []
+    },
+    "CHAR_Mert": {
+      "canonical": "Mert",
+      "aliases": []
+    },
+    "CHAR_Buergermeister": {
+      "canonical": "Bürgermeister",
+      "aliases": []
+    },
+    "CHAR_AlteMann": {
+      "canonical": "Der alte Mann",
+      "aliases": []
+    },
+    "CHAR_Rudi": {
+      "canonical": "Rudi",
+      "aliases": []
+    },
+    "CHAR_Child": {
+      "canonical": "The Child (Young Woman)",
+      "aliases": []
+    },
+    "CHAR_Farmer": {
+      "canonical": "The Farmer",
+      "aliases": []
+    },
+    "CHAR_FarmerSWife": {
+      "canonical": "The Farmer's Wife",
       "aliases": []
     }
   },
@@ -118,6 +360,634 @@
     "LOC_Camp": {
       "canonical": "Camp",
       "aliases": []
+    },
+    "LOC_Goblindorf": {
+      "canonical": "Goblindorf",
+      "aliases": [
+        "Goblin-Dorf"
+      ]
+    },
+    "LOC_Sumpfgebiet": {
+      "canonical": "Sumpfgebiet",
+      "aliases": []
+    },
+    "LOC_Lager": {
+      "canonical": "Lager",
+      "aliases": []
+    },
+    "LOC_Zelt": {
+      "canonical": "Zelt (right tent)",
+      "aliases": []
+    },
+    "LOC_GoblinLager": {
+      "canonical": "Goblin Lager",
+      "aliases": [
+        "Goblinlager"
+      ]
+    },
+    "LOC_Sumpf": {
+      "canonical": "Sumpf (swamp)",
+      "aliases": []
+    },
+    "LOC_Swamp": {
+      "canonical": "Swamp",
+      "aliases": []
+    },
+    "LOC_Tree": {
+      "canonical": "Tree",
+      "aliases": []
+    },
+    "LOC_NebeligerWaldgebiet": {
+      "canonical": "Nebeliger Waldgebiet",
+      "aliases": []
+    },
+    "LOC_NebeligerWald": {
+      "canonical": "Nebeliger Wald",
+      "aliases": []
+    },
+    "LOC_Nebel": {
+      "canonical": "Nebel",
+      "aliases": []
+    },
+    "LOC_Holzkonstrukt": {
+      "canonical": "Holzkonstrukt",
+      "aliases": []
+    },
+    "LOC_Bruecke": {
+      "canonical": "Brücke",
+      "aliases": []
+    },
+    "LOC_Huegel": {
+      "canonical": "Hügel",
+      "aliases": []
+    },
+    "LOC_Nature": {
+      "canonical": "Nature (the environment)",
+      "aliases": [
+        "Natur (Nature)"
+      ]
+    },
+    "LOC_Stein": {
+      "canonical": "Stein",
+      "aliases": [
+        "Steine"
+      ]
+    },
+    "LOC_Steingebilde": {
+      "canonical": "Steingebilde (verfallener Aussichtsturm)",
+      "aliases": []
+    },
+    "LOC_Norden": {
+      "canonical": "Norden",
+      "aliases": []
+    },
+    "LOC_EingestuerzterOrt": {
+      "canonical": "Eingestürzter Ort (collapsed structure)",
+      "aliases": []
+    },
+    "LOC_BetweenTheTrees": {
+      "canonical": "Between the Trees (area where characters are standing)",
+      "aliases": []
+    },
+    "LOC_Palisade": {
+      "canonical": "Palisade",
+      "aliases": [
+        "Palisaden"
+      ]
+    },
+    "LOC_Dickicht": {
+      "canonical": "Dickicht",
+      "aliases": []
+    },
+    "LOC_Berg": {
+      "canonical": "Berg",
+      "aliases": []
+    },
+    "LOC_VorsprungAufDemBerg": {
+      "canonical": "Vorsprung auf dem Berg",
+      "aliases": []
+    },
+    "LOC_Dorf": {
+      "canonical": "Dorf",
+      "aliases": []
+    },
+    "LOC_GroesseresGebaeude": {
+      "canonical": "größeres Gebäude",
+      "aliases": []
+    },
+    "LOC_Haupteingang": {
+      "canonical": "Haupteingang",
+      "aliases": []
+    },
+    "LOC_Hauptgebaeude": {
+      "canonical": "Hauptgebäude",
+      "aliases": []
+    },
+    "LOC_Gebaeude": {
+      "canonical": "Gebäude",
+      "aliases": []
+    },
+    "LOC_Blume": {
+      "canonical": "Blume",
+      "aliases": []
+    },
+    "LOC_Kisten": {
+      "canonical": "Kisten",
+      "aliases": []
+    },
+    "LOC_Dach": {
+      "canonical": "Dach (roof)",
+      "aliases": []
+    },
+    "LOC_Haupthoeher": {
+      "canonical": "Haupthöher",
+      "aliases": []
+    },
+    "LOC_Obermacker": {
+      "canonical": "Obermacker",
+      "aliases": []
+    },
+    "LOC_Treppenstufe": {
+      "canonical": "Treppenstufe",
+      "aliases": []
+    },
+    "LOC_Treppen": {
+      "canonical": "Treppen (Stairs)",
+      "aliases": [
+        "Treppe (Staircase)"
+      ]
+    },
+    "LOC_Raum": {
+      "canonical": "Raum (Room)",
+      "aliases": []
+    },
+    "LOC_Haus": {
+      "canonical": "Haus",
+      "aliases": []
+    },
+    "LOC_DorfBrechka": {
+      "canonical": "Dorf Brechka",
+      "aliases": [
+        "Dorf Breshka"
+      ]
+    },
+    "LOC_Gildenhalle": {
+      "canonical": "Gildenhalle",
+      "aliases": []
+    },
+    "LOC_Markierung": {
+      "canonical": "Markierung",
+      "aliases": []
+    },
+    "LOC_Bauernhof": {
+      "canonical": "Bauernhof",
+      "aliases": []
+    },
+    "LOC_HausMitWeggegangenemDach": {
+      "canonical": "Haus mit weggegangenem Dach",
+      "aliases": []
+    },
+    "LOC_HausMitFenster": {
+      "canonical": "Haus mit Fenster (Magier's Residence)",
+      "aliases": []
+    },
+    "LOC_Goblinangriff": {
+      "canonical": "Goblinangriff (location)",
+      "aliases": []
+    },
+    "LOC_BuergermeisteramtRathaus": {
+      "canonical": "Bürgermeisteramt / Rathaus",
+      "aliases": []
+    },
+    "LOC_Brunnen": {
+      "canonical": "Brunnen",
+      "aliases": []
+    },
+    "LOC_Friedhof": {
+      "canonical": "Friedhof",
+      "aliases": []
+    },
+    "LOC_Lundbrock": {
+      "canonical": "Lundbrock",
+      "aliases": []
+    },
+    "LOC_HausMitVergittertenFenstern": {
+      "canonical": "Haus mit vergitterten Fenstern",
+      "aliases": []
+    },
+    "LOC_BertieSStone": {
+      "canonical": "Bertie's Stone",
+      "aliases": []
+    },
+    "LOC_Village": {
+      "canonical": "The Village (implied)",
+      "aliases": []
+    },
+    "LOC_Scheune": {
+      "canonical": "Scheune",
+      "aliases": []
+    },
+    "LOC_Waechter": {
+      "canonical": "Wächter",
+      "aliases": []
+    },
+    "LOC_KurzBerti": {
+      "canonical": "Kurz Berti",
+      "aliases": []
+    },
+    "LOC_Tuer": {
+      "canonical": "Tür (door)",
+      "aliases": []
+    },
+    "LOC_BueroVonBerthold": {
+      "canonical": "Büro von Berthold (Berthold's Office)",
+      "aliases": []
+    },
+    "LOC_Feierort": {
+      "canonical": "Feierort (Party location)",
+      "aliases": []
+    },
+    "LOC_Stadt": {
+      "canonical": "die Stadt",
+      "aliases": []
+    },
+    "LOC_Wirtshaus": {
+      "canonical": "Wirtshaus (Taverne)",
+      "aliases": []
+    },
+    "LOC_FamilieSchmid": {
+      "canonical": "Familie Schmid",
+      "aliases": []
+    },
+    "LOC_FamilieKraemer": {
+      "canonical": "Familie Krämer",
+      "aliases": []
+    },
+    "LOC_MagiersHaeuschen": {
+      "canonical": "Magier’s Häuschen",
+      "aliases": []
+    },
+    "LOC_HaendlersHaus": {
+      "canonical": "Händler’s Haus (abandoned)",
+      "aliases": []
+    },
+    "LOC_Bar": {
+      "canonical": "Die Bar (the tavern/bar)",
+      "aliases": []
+    },
+    "LOC_Schenke": {
+      "canonical": "Schenke (Tavern)",
+      "aliases": []
+    },
+    "LOC_Daggerheart": {
+      "canonical": "Daggerheart",
+      "aliases": []
+    },
+    "LOC_Building": {
+      "canonical": "Building (where Rotunas is leaving)",
+      "aliases": []
+    },
+    "LOC_Roof": {
+      "canonical": "Roof",
+      "aliases": []
+    },
+    "LOC_Schmiede": {
+      "canonical": "Schmiede (Smithy)",
+      "aliases": []
+    },
+    "LOC_Bauern": {
+      "canonical": "Bauern (Farmers)",
+      "aliases": []
+    },
+    "LOC_FeldMitZaunPalisade": {
+      "canonical": "Feld mit Zaun/Palisade",
+      "aliases": []
+    },
+    "LOC_Schmiedestube": {
+      "canonical": "Schmiedestube",
+      "aliases": []
+    },
+    "LOC_Hof": {
+      "canonical": "Hof",
+      "aliases": []
+    },
+    "LOC_Forest": {
+      "canonical": "Forest",
+      "aliases": []
+    },
+    "LOC_BehindTheSpeaker": {
+      "canonical": "Behind the speaker (GM's location)",
+      "aliases": []
+    },
+    "LOC_GreatStaff": {
+      "canonical": "Great Staff",
+      "aliases": []
+    },
+    "LOC_Kuehe": {
+      "canonical": "Kühe (Cows)",
+      "aliases": []
+    },
+    "LOC_Barrikade": {
+      "canonical": "Barrikade",
+      "aliases": []
+    },
+    "LOC_Baerenfallen": {
+      "canonical": "Bärenfallen (Bear Traps)",
+      "aliases": []
+    },
+    "LOC_Minenfeld": {
+      "canonical": "Minenfeld (Minefield)",
+      "aliases": []
+    },
+    "LOC_Schlachtfeld": {
+      "canonical": "Schlachtfeld",
+      "aliases": []
+    },
+    "LOC_DeathZone": {
+      "canonical": "Death Zone",
+      "aliases": []
+    },
+    "LOC_HausDesAltenHaendlers": {
+      "canonical": "Haus des alten Händlers",
+      "aliases": []
+    },
+    "LOC_Gilde": {
+      "canonical": "Gilde",
+      "aliases": []
+    },
+    "LOC_Krypta": {
+      "canonical": "Krypta",
+      "aliases": []
+    },
+    "LOC_GoblinCamp": {
+      "canonical": "Goblin Camp",
+      "aliases": []
+    },
+    "LOC_Krypte": {
+      "canonical": "Krypte",
+      "aliases": []
+    },
+    "LOC_DarkForest": {
+      "canonical": "Dark Forest (implied by context of night and torches)",
+      "aliases": []
+    },
+    "LOC_KryptoVerlassen": {
+      "canonical": "Krypto Verlassen",
+      "aliases": []
+    },
+    "LOC_Ruine": {
+      "canonical": "Ruine",
+      "aliases": [
+        "Ruinen"
+      ]
+    },
+    "LOC_Turm": {
+      "canonical": "Turm",
+      "aliases": []
+    },
+    "LOC_AlteBurg": {
+      "canonical": "Alte Burg (Old Castle)",
+      "aliases": []
+    },
+    "LOC_Grotte": {
+      "canonical": "Grotte (Cave)",
+      "aliases": []
+    },
+    "LOC_Burg": {
+      "canonical": "Burg",
+      "aliases": []
+    },
+    "LOC_LocationPhippsIsIn": {
+      "canonical": "the location Phipps is in (implied by context)",
+      "aliases": []
+    },
+    "LOC_Kathedra": {
+      "canonical": "Kathedra",
+      "aliases": []
+    },
+    "LOC_Festung": {
+      "canonical": "Festung",
+      "aliases": []
+    },
+    "LOC_Interior": {
+      "canonical": "The interior (dreckig, dirty place)",
+      "aliases": []
+    },
+    "LOC_Gruenflaeche": {
+      "canonical": "Grünfläche",
+      "aliases": []
+    },
+    "LOC_Mauer": {
+      "canonical": "Mauer (Wall)",
+      "aliases": [
+        "Mauern (Walls)"
+      ]
+    },
+    "LOC_Waelder": {
+      "canonical": "Wälder (Forests)",
+      "aliases": []
+    },
+    "LOC_GoblinGoetterBereich": {
+      "canonical": "Goblin-Götter Bereich",
+      "aliases": []
+    },
+    "LOC_BodenloseMappe": {
+      "canonical": "bodenlose Mappe (neue Map)",
+      "aliases": []
+    },
+    "LOC_Wache": {
+      "canonical": "Wache (guard post)",
+      "aliases": [
+        "die Wachen"
+      ]
+    },
+    "LOC_Map": {
+      "canonical": "Map (area with enemies)",
+      "aliases": []
+    },
+    "LOC_Aussenbereich": {
+      "canonical": "Außenbereich (Outside Area)",
+      "aliases": []
+    },
+    "LOC_AreaWhereTheFightTakesPlace": {
+      "canonical": "The area where the fight takes place (implied by context)",
+      "aliases": []
+    },
+    "LOC_LocationInside": {
+      "canonical": "The location inside (implied by 'jetzt rein hier')",
+      "aliases": []
+    },
+    "LOC_LocationInsideTheBuilding": {
+      "canonical": "The location inside the building (implied by 'jetzt rein hier')",
+      "aliases": []
+    },
+    "LOC_Dungeon": {
+      "canonical": "Dungeon",
+      "aliases": []
+    },
+    "LOC_StatueLocation": {
+      "canonical": "Statue Location",
+      "aliases": []
+    },
+    "LOC_Statue": {
+      "canonical": "Statue (with fire below)",
+      "aliases": []
+    },
+    "LOC_USBStick": {
+      "canonical": "USB-Stick",
+      "aliases": []
+    },
+    "LOC_Buch": {
+      "canonical": "Buch",
+      "aliases": []
+    },
+    "LOC_Pillar": {
+      "canonical": "Pillar (Stein)",
+      "aliases": []
+    },
+    "LOC_Eingang": {
+      "canonical": "Eingang (Entrance)",
+      "aliases": []
+    },
+    "LOC_Pinienbaeume": {
+      "canonical": "Pinienbäume (Pine Trees)",
+      "aliases": []
+    },
+    "LOC_SteinAmEingang": {
+      "canonical": "Stein am Eingang (Stone at the Entrance)",
+      "aliases": []
+    },
+    "LOC_Nordeststadt": {
+      "canonical": "Nordeststadt",
+      "aliases": []
+    },
+    "LOC_Grabstein": {
+      "canonical": "Grabstein (Gravestone)",
+      "aliases": []
+    },
+    "LOC_Monolithen": {
+      "canonical": "Monolithen (monoliths)",
+      "aliases": []
+    },
+    "LOC_MonolithenFlaeche": {
+      "canonical": "Monolithen-Fläche",
+      "aliases": []
+    },
+    "LOC_Zuhause": {
+      "canonical": "Zuhause (of Lindo Laut)",
+      "aliases": []
+    },
+    "LOC_LindoLautSHome": {
+      "canonical": "Lindo Laut's Home",
+      "aliases": []
+    },
+    "LOC_Room": {
+      "canonical": "The Room (with multiple doors opening)",
+      "aliases": []
+    },
+    "LOC_Breschka": {
+      "canonical": "Breschka",
+      "aliases": []
+    },
+    "LOC_Ort": {
+      "canonical": "der Ort (unbekannter Name gesucht)",
+      "aliases": []
+    },
+    "LOC_Wand": {
+      "canonical": "die Wand",
+      "aliases": []
+    },
+    "LOC_RaumMitDerSchatztruhe": {
+      "canonical": "der Raum mit der Schatztruhe",
+      "aliases": []
+    },
+    "LOC_Ritterstatue": {
+      "canonical": "Ritterstatue",
+      "aliases": []
+    },
+    "LOC_StatuenraumMitMagiewelle": {
+      "canonical": "Statuenraum mit Magiewelle",
+      "aliases": []
+    },
+    "LOC_Schatzraum": {
+      "canonical": "Schatzraum",
+      "aliases": []
+    },
+    "LOC_Bossraum": {
+      "canonical": "Bossraum",
+      "aliases": []
+    },
+    "LOC_GoblinKoenigsSchloss": {
+      "canonical": "Goblin-Königs Schloss (implied)",
+      "aliases": []
+    },
+    "LOC_Altar": {
+      "canonical": "Altar",
+      "aliases": []
+    },
+    "LOC_Bresca": {
+      "canonical": "Bresca",
+      "aliases": []
+    },
+    "LOC_Wasser": {
+      "canonical": "Wasser (water)",
+      "aliases": []
+    },
+    "LOC_Nebelgebiet": {
+      "canonical": "Nebelgebiet (Fog Area)",
+      "aliases": []
+    },
+    "LOC_Baumstumpf": {
+      "canonical": "Baumstumpf (Tree Stump)",
+      "aliases": []
+    },
+    "LOC_Bodenlos": {
+      "canonical": "Bodenlos",
+      "aliases": []
+    },
+    "LOC_Aussichtsturm": {
+      "canonical": "Aussichtsturm (einst)",
+      "aliases": []
+    },
+    "LOC_WaldgebietMitPalisade": {
+      "canonical": "Waldgebiet mit Palisade",
+      "aliases": []
+    },
+    "LOC_Vorsprung": {
+      "canonical": "Vorsprung",
+      "aliases": []
+    },
+    "LOC_BertiSLocation": {
+      "canonical": "Berti's Location (Building/Structure)",
+      "aliases": []
+    },
+    "LOC_StadtHier": {
+      "canonical": "die Stadt hier",
+      "aliases": []
+    },
+    "LOC_Smithy": {
+      "canonical": "The Smithy (Schmiede)",
+      "aliases": []
+    },
+    "LOC_FarmyardHof": {
+      "canonical": "The Farmyard / Hof",
+      "aliases": []
+    },
+    "LOC_BeiDenKuehen": {
+      "canonical": "bei den Kühen",
+      "aliases": []
+    },
+    "LOC_Palisadenstellung": {
+      "canonical": "Palisadenstellung",
+      "aliases": []
+    },
+    "LOC_Falle": {
+      "canonical": "die Falle",
+      "aliases": []
+    },
+    "LOC_Mieter": {
+      "canonical": "der Mieter",
+      "aliases": []
     }
   },
   "items": {
@@ -159,7 +1029,9 @@
     },
     "ITEM_Schriftrolle": {
       "canonical": "Schriftrolle",
-      "aliases": []
+      "aliases": [
+        "Schriftrollen"
+      ]
     },
     "ITEM_Kessel": {
       "canonical": "Kessel",
@@ -167,6 +1039,650 @@
     },
     "ITEM_Beschwoerungsfluessigkeit": {
       "canonical": "Beschwörungsflüssigkeit",
+      "aliases": []
+    },
+    "ITEM_Axt": {
+      "canonical": "Axt",
+      "aliases": []
+    },
+    "ITEM_Kurzschwert": {
+      "canonical": "Kurzschwert",
+      "aliases": []
+    },
+    "ITEM_Schwert": {
+      "canonical": "Schwert",
+      "aliases": []
+    },
+    "ITEM_Schnabeltier": {
+      "canonical": "Schnabeltier (Frettchen, Perry)",
+      "aliases": []
+    },
+    "ITEM_Giftstache": {
+      "canonical": "Giftstache",
+      "aliases": [
+        "Giftstachel"
+      ]
+    },
+    "ITEM_HolzenerDolch": {
+      "canonical": "Holzener Dolch",
+      "aliases": []
+    },
+    "ITEM_Heiltrank": {
+      "canonical": "Heiltrank",
+      "aliases": []
+    },
+    "ITEM_Hopf": {
+      "canonical": "Hopf",
+      "aliases": []
+    },
+    "ITEM_DualityDice": {
+      "canonical": "Duality Dice",
+      "aliases": []
+    },
+    "ITEM_Hope": {
+      "canonical": "Hope",
+      "aliases": []
+    },
+    "ITEM_Fear": {
+      "canonical": "Fear",
+      "aliases": []
+    },
+    "ITEM_Stress": {
+      "canonical": "Stress",
+      "aliases": []
+    },
+    "ITEM_LongRest": {
+      "canonical": "Long Rest",
+      "aliases": []
+    },
+    "ITEM_ShortRest": {
+      "canonical": "Short Rest",
+      "aliases": []
+    },
+    "ITEM_ArmorScore": {
+      "canonical": "Armor Score",
+      "aliases": []
+    },
+    "ITEM_Evasion": {
+      "canonical": "Evasion",
+      "aliases": []
+    },
+    "ITEM_HitPoints": {
+      "canonical": "Hit Points",
+      "aliases": []
+    },
+    "ITEM_Agility": {
+      "canonical": "Agility",
+      "aliases": []
+    },
+    "ITEM_Strength": {
+      "canonical": "Strength",
+      "aliases": []
+    },
+    "ITEM_Finesse": {
+      "canonical": "Finesse",
+      "aliases": []
+    },
+    "ITEM_Instinct": {
+      "canonical": "Instinct",
+      "aliases": []
+    },
+    "ITEM_Presence": {
+      "canonical": "Presence",
+      "aliases": []
+    },
+    "ITEM_Knowledge": {
+      "canonical": "Knowledge",
+      "aliases": []
+    },
+    "ITEM_InspiringWords": {
+      "canonical": "Inspiring Words",
+      "aliases": []
+    },
+    "ITEM_Rally": {
+      "canonical": "Rally",
+      "aliases": []
+    },
+    "ITEM_IAmYourShield": {
+      "canonical": "I Am Your Shield",
+      "aliases": []
+    },
+    "ITEM_Leiche": {
+      "canonical": "Leiche (corpse)",
+      "aliases": []
+    },
+    "ITEM_Trunk": {
+      "canonical": "Trunk (Chest)",
+      "aliases": []
+    },
+    "ITEM_KisteTruhe": {
+      "canonical": "Kiste / Truhe",
+      "aliases": []
+    },
+    "ITEM_Huehnerkeule": {
+      "canonical": "Hühnerkeule",
+      "aliases": [
+        "Hühnerkeulen"
+      ]
+    },
+    "ITEM_Kolben": {
+      "canonical": "Kolben",
+      "aliases": []
+    },
+    "ITEM_Fackel": {
+      "canonical": "Fackel",
+      "aliases": []
+    },
+    "ITEM_Sigille": {
+      "canonical": "Sigille",
+      "aliases": []
+    },
+    "ITEM_Wuerfel": {
+      "canonical": "Würfel",
+      "aliases": []
+    },
+    "ITEM_5FussSeil": {
+      "canonical": "5-Fuß-Seil",
+      "aliases": []
+    },
+    "ITEM_Leuchtringe": {
+      "canonical": "Leuchtringe",
+      "aliases": []
+    },
+    "ITEM_Nomadenbeutel": {
+      "canonical": "Nomadenbeutel",
+      "aliases": []
+    },
+    "ITEM_Krug": {
+      "canonical": "Krug",
+      "aliases": []
+    },
+    "ITEM_Huelschen": {
+      "canonical": "Hülschen",
+      "aliases": []
+    },
+    "ITEM_KinderGoblinKopf": {
+      "canonical": "Kinder-Goblin-Kopf",
+      "aliases": []
+    },
+    "ITEM_FantaFlasche": {
+      "canonical": "Fanta-Flasche",
+      "aliases": []
+    },
+    "ITEM_Pokeball": {
+      "canonical": "Pokéball",
+      "aliases": []
+    },
+    "ITEM_Ruestungen": {
+      "canonical": "Rüstungen (armor)",
+      "aliases": []
+    },
+    "ITEM_Waffe": {
+      "canonical": "Waffe (weapon)",
+      "aliases": []
+    },
+    "ITEM_Faesser": {
+      "canonical": "Fässer (barrels)",
+      "aliases": []
+    },
+    "ITEM_Trank": {
+      "canonical": "Trank (potion)",
+      "aliases": []
+    },
+    "ITEM_Kurzdeutsch": {
+      "canonical": "Kurzdeutsch",
+      "aliases": []
+    },
+    "ITEM_Starre": {
+      "canonical": "Starre",
+      "aliases": []
+    },
+    "ITEM_Stachel": {
+      "canonical": "Stachel",
+      "aliases": []
+    },
+    "ITEM_StaminaPotion": {
+      "canonical": "Stamina-Potion",
+      "aliases": []
+    },
+    "ITEM_Shortbow": {
+      "canonical": "Shortbow",
+      "aliases": []
+    },
+    "ITEM_Glas": {
+      "canonical": "Glas",
+      "aliases": []
+    },
+    "ITEM_BoltBeacon": {
+      "canonical": "Bolt Beacon",
+      "aliases": []
+    },
+    "ITEM_Keule": {
+      "canonical": "Keule",
+      "aliases": []
+    },
+    "ITEM_Engelhalter": {
+      "canonical": "Engelhalter",
+      "aliases": []
+    },
+    "ITEM_GlowRinge": {
+      "canonical": "Glow-Ringe",
+      "aliases": []
+    },
+    "ITEM_KillerSchlagringe": {
+      "canonical": "Killer-Schlagringe",
+      "aliases": []
+    },
+    "ITEM_Axe": {
+      "canonical": "Axe",
+      "aliases": []
+    },
+    "ITEM_Rings": {
+      "canonical": "Rings",
+      "aliases": []
+    },
+    "ITEM_Ringe": {
+      "canonical": "Ringe",
+      "aliases": []
+    },
+    "ITEM_Doelche": {
+      "canonical": "Dölche",
+      "aliases": [
+        "Dolche"
+      ]
+    },
+    "ITEM_MendingTouch": {
+      "canonical": "Mending Touch",
+      "aliases": []
+    },
+    "ITEM_GoldSaecke": {
+      "canonical": "Gold-Säcke",
+      "aliases": []
+    },
+    "ITEM_KarteVonEinemAngriffsplan": {
+      "canonical": "Karte von einem Angriffsplan",
+      "aliases": []
+    },
+    "ITEM_Utensilien": {
+      "canonical": "Utensilien",
+      "aliases": []
+    },
+    "ITEM_Kiste": {
+      "canonical": "Kiste (box)",
+      "aliases": []
+    },
+    "ITEM_Rune": {
+      "canonical": "Rune",
+      "aliases": []
+    },
+    "ITEM_Tuere": {
+      "canonical": "Türe",
+      "aliases": []
+    },
+    "ITEM_Gloeckchen": {
+      "canonical": "Glöckchen (an der Ziege)",
+      "aliases": []
+    },
+    "ITEM_Sonnenbrille": {
+      "canonical": "Sonnenbrille",
+      "aliases": []
+    },
+    "ITEM_Pilotenbrille": {
+      "canonical": "Pilotenbrille",
+      "aliases": []
+    },
+    "ITEM_BunterSchluessel": {
+      "canonical": "Bunter Schlüssel",
+      "aliases": [
+        "bunten Schlüssel"
+      ]
+    },
+    "ITEM_Armbrust": {
+      "canonical": "Armbrust (Crossbow)",
+      "aliases": []
+    },
+    "ITEM_SiegelDerGilde": {
+      "canonical": "Siegel der Gilde (Guild Seal)",
+      "aliases": []
+    },
+    "ITEM_Schal": {
+      "canonical": "Schal",
+      "aliases": []
+    },
+    "ITEM_Heugabel": {
+      "canonical": "Heugabel",
+      "aliases": []
+    },
+    "ITEM_LegendaryCrossbowOfDemolition": {
+      "canonical": "Legendary Crossbow of Demolition",
+      "aliases": []
+    },
+    "ITEM_Crossbow": {
+      "canonical": "Crossbow (Normal)",
+      "aliases": []
+    },
+    "ITEM_Goldmuenze": {
+      "canonical": "Goldmünze (gold coin)",
+      "aliases": [
+        "Goldmünzen"
+      ]
+    },
+    "ITEM_Bier": {
+      "canonical": "Bier (beer)",
+      "aliases": []
+    },
+    "ITEM_BecherWein": {
+      "canonical": "Becher Wein (glass of wine)",
+      "aliases": []
+    },
+    "ITEM_RoterSechserwuerfel": {
+      "canonical": "roter Sechserwürfel",
+      "aliases": []
+    },
+    "ITEM_Apfel": {
+      "canonical": "Apfel",
+      "aliases": []
+    },
+    "ITEM_SpatenGrosser": {
+      "canonical": "Spaten, großer",
+      "aliases": []
+    },
+    "ITEM_GrosserSpaten": {
+      "canonical": "großer Spaten",
+      "aliases": []
+    },
+    "ITEM_Barrikaden": {
+      "canonical": "Barrikaden",
+      "aliases": [
+        "Barrikade"
+      ]
+    },
+    "ITEM_HolzFuerPalisade": {
+      "canonical": "Holz für Palisade",
+      "aliases": []
+    },
+    "ITEM_MageHand": {
+      "canonical": "Mage Hand",
+      "aliases": []
+    },
+    "ITEM_RangeStaff": {
+      "canonical": "Range Staff",
+      "aliases": []
+    },
+    "ITEM_IceSpikes": {
+      "canonical": "Ice Spikes",
+      "aliases": [
+        "Ice Spike"
+      ]
+    },
+    "ITEM_BoltOfMagic": {
+      "canonical": "Bolt of Magic",
+      "aliases": []
+    },
+    "ITEM_MagischeArmringe": {
+      "canonical": "magische Armringe (magic bracers)",
+      "aliases": [
+        "Magische Ringe"
+      ]
+    },
+    "ITEM_Boxring": {
+      "canonical": "Boxring (boxing ring)",
+      "aliases": []
+    },
+    "ITEM_GlowingRing": {
+      "canonical": "Glowing Ring",
+      "aliases": []
+    },
+    "ITEM_Wasserbehaelter": {
+      "canonical": "Wasserbehälter (water container)",
+      "aliases": []
+    },
+    "ITEM_Notizen": {
+      "canonical": "Notizen",
+      "aliases": []
+    },
+    "ITEM_Flammentier": {
+      "canonical": "Flammentier",
+      "aliases": []
+    },
+    "ITEM_Notiz": {
+      "canonical": "Notiz",
+      "aliases": []
+    },
+    "ITEM_Hose": {
+      "canonical": "Hose",
+      "aliases": []
+    },
+    "ITEM_Schuh": {
+      "canonical": "Schuh",
+      "aliases": []
+    },
+    "ITEM_Stiefel": {
+      "canonical": "Stiefel",
+      "aliases": []
+    },
+    "ITEM_GoblinsSpeer": {
+      "canonical": "Goblins-Speer",
+      "aliases": []
+    },
+    "ITEM_Tierfallen": {
+      "canonical": "Tierfallen",
+      "aliases": []
+    },
+    "ITEM_Beerenfallen": {
+      "canonical": "Beerenfallen",
+      "aliases": []
+    },
+    "ITEM_Traps": {
+      "canonical": "Traps",
+      "aliases": []
+    },
+    "ITEM_Palisade": {
+      "canonical": "Palisade",
+      "aliases": [
+        "Palisaden"
+      ]
+    },
+    "ITEM_Tische": {
+      "canonical": "Tische",
+      "aliases": [
+        "Tisch"
+      ]
+    },
+    "ITEM_Spitzdingern": {
+      "canonical": "Spitzdingern",
+      "aliases": []
+    },
+    "ITEM_Baerenfalle": {
+      "canonical": "Bärenfalle",
+      "aliases": [
+        "Bärenfallen"
+      ]
+    },
+    "ITEM_Fette": {
+      "canonical": "Fette",
+      "aliases": []
+    },
+    "ITEM_AsteroidSchild": {
+      "canonical": "Asteroid-Schild",
+      "aliases": []
+    },
+    "ITEM_Frettchen": {
+      "canonical": "Frettchen",
+      "aliases": []
+    },
+    "ITEM_Amulett": {
+      "canonical": "Amulett (Warforge)",
+      "aliases": []
+    },
+    "ITEM_TorchFackel": {
+      "canonical": "Torch/Fackel",
+      "aliases": []
+    },
+    "ITEM_Seerose": {
+      "canonical": "Seerose",
+      "aliases": []
+    },
+    "ITEM_Brettchen": {
+      "canonical": "Brettchen",
+      "aliases": []
+    },
+    "ITEM_SchluesselZurKrypta": {
+      "canonical": "Schlüssel zur Krypta",
+      "aliases": []
+    },
+    "ITEM_Karte": {
+      "canonical": "Karte",
+      "aliases": []
+    },
+    "ITEM_Holzstueck": {
+      "canonical": "Holzstück (wood piece)",
+      "aliases": []
+    },
+    "ITEM_VoodooPuppe": {
+      "canonical": "Voodoo-Puppe (kleine hölzerne Skulptur)",
+      "aliases": []
+    },
+    "ITEM_Puppe": {
+      "canonical": "Puppe (Strichmännchen aus Holz)",
+      "aliases": []
+    },
+    "ITEM_TabasArmour": {
+      "canonical": "Tabas Armour",
+      "aliases": [
+        "Tabas Armor"
+      ]
+    },
+    "ITEM_TavaSArmor": {
+      "canonical": "Tava's Armor",
+      "aliases": []
+    },
+    "ITEM_Ruestungsslot": {
+      "canonical": "Rüstungsslot (Armor Slot)",
+      "aliases": []
+    },
+    "ITEM_Stab": {
+      "canonical": "Stab (Staff)",
+      "aliases": []
+    },
+    "ITEM_RunenAmArm": {
+      "canonical": "Runen am Arm (Arm Runes)",
+      "aliases": []
+    },
+    "ITEM_Lackbaender": {
+      "canonical": "Lackbänder",
+      "aliases": []
+    },
+    "ITEM_ArmorSlot": {
+      "canonical": "Armor Slot",
+      "aliases": []
+    },
+    "ITEM_Shield": {
+      "canonical": "Shield",
+      "aliases": []
+    },
+    "ITEM_Buchhaus": {
+      "canonical": "Buchhaus (USB-Stick)",
+      "aliases": []
+    },
+    "ITEM_SchuesselMitGetrocknetemBlut": {
+      "canonical": "Schüssel mit getrocknetem Blut",
+      "aliases": []
+    },
+    "ITEM_Runen": {
+      "canonical": "Runen (Runic Inscriptions)",
+      "aliases": []
+    },
+    "ITEM_BuchMitNamensliste": {
+      "canonical": "Buch mit Namensliste",
+      "aliases": []
+    },
+    "ITEM_MagischeSteine": {
+      "canonical": "Magische Steine",
+      "aliases": []
+    },
+    "ITEM_Books": {
+      "canonical": "Books",
+      "aliases": []
+    },
+    "ITEM_Monoliths": {
+      "canonical": "Monoliths",
+      "aliases": []
+    },
+    "ITEM_SchatztruheMitGold": {
+      "canonical": "Schatztruhe mit Gold",
+      "aliases": []
+    },
+    "ITEM_Gold": {
+      "canonical": "Gold",
+      "aliases": []
+    },
+    "ITEM_WingedSentinel": {
+      "canonical": "Winged Sentinel",
+      "aliases": []
+    },
+    "ITEM_Eisspikes": {
+      "canonical": "Eisspikes",
+      "aliases": []
+    },
+    "ITEM_Nahkampfwaffe": {
+      "canonical": "Nahkampfwaffe (Skelett)",
+      "aliases": []
+    },
+    "ITEM_Kampfringe": {
+      "canonical": "Kampfringe",
+      "aliases": []
+    },
+    "ITEM_PfeilUndBogen": {
+      "canonical": "Pfeil und Bogen",
+      "aliases": []
+    },
+    "ITEM_Plaettchen": {
+      "canonical": "Plättchen",
+      "aliases": []
+    },
+    "ITEM_Parry": {
+      "canonical": "Parry (Schnabeltier)",
+      "aliases": []
+    },
+    "ITEM_Stein": {
+      "canonical": "Stein",
+      "aliases": []
+    },
+    "ITEM_TuereMitMagischerRune": {
+      "canonical": "Türe mit magischer Rune",
+      "aliases": []
+    },
+    "ITEM_GreatStaff": {
+      "canonical": "Great Staff",
+      "aliases": []
+    },
+    "ITEM_Feuerbaelle": {
+      "canonical": "Feuerbälle (metaphorisch)",
+      "aliases": []
+    },
+    "ITEM_Spaten": {
+      "canonical": "Spaten",
+      "aliases": []
+    },
+    "ITEM_PalisadePalm": {
+      "canonical": "Palisade Palm",
+      "aliases": []
+    },
+    "ITEM_Speer": {
+      "canonical": "Speer",
+      "aliases": []
+    },
+    "ITEM_MagicalArmRings": {
+      "canonical": "Magical Arm Rings",
+      "aliases": []
+    },
+    "ITEM_Feuerkugel": {
+      "canonical": "Feuerkugel",
+      "aliases": []
+    },
+    "ITEM_Spitzding": {
+      "canonical": "Spitzding",
       "aliases": []
     }
   },
@@ -193,6 +1709,341 @@
     },
     "QUEST_BelohnungAbholen": {
       "canonical": "Belohnung abholen",
+      "aliases": []
+    },
+    "QUEST_MissionGoblinArmeePlattMachen": {
+      "canonical": "Mission: Goblin-Armee platt machen",
+      "aliases": []
+    },
+    "QUEST_PreviousMissionStrangeCreatureInTheForest": {
+      "canonical": "Previous Mission: Strange Creature in the Forest",
+      "aliases": []
+    },
+    "QUEST_GoblinGoetter": {
+      "canonical": "Goblin-Götter (Loot-Entscheidung)",
+      "aliases": []
+    },
+    "QUEST_Auftrag": {
+      "canonical": "Auftrag (unspecified)",
+      "aliases": []
+    },
+    "QUEST_EroberungDesGoblinLagers": {
+      "canonical": "Eroberung des Goblin Lagers",
+      "aliases": []
+    },
+    "QUEST_KampfGegenGoblinGruppe": {
+      "canonical": "Kampf gegen Goblin-Gruppe",
+      "aliases": []
+    },
+    "QUEST_GoblinLagerBefreien": {
+      "canonical": "Goblin-Lager befreien",
+      "aliases": []
+    },
+    "QUEST_BefreiungDesGoblinLagers": {
+      "canonical": "Befreiung des Goblin-Lagers",
+      "aliases": []
+    },
+    "QUEST_VorbereitungAufDenAngriff": {
+      "canonical": "Vorbereitung auf den Angriff",
+      "aliases": []
+    },
+    "QUEST_VorbereitungDesDorfesAufEinenMoeglichenAngriff": {
+      "canonical": "Vorbereitung des Dorfes auf einen möglichen Angriff",
+      "aliases": []
+    },
+    "QUEST_HinterhaltAufMicha": {
+      "canonical": "Hinterhalt auf Micha",
+      "aliases": []
+    },
+    "QUEST_VorbereitungAufGoblinangriff": {
+      "canonical": "Vorbereitung auf Goblinangriff",
+      "aliases": [
+        "Vorbereitung auf Goblin-Angriff",
+        "Vorbereitung auf den Goblin-Angriff"
+      ]
+    },
+    "QUEST_BuergermeisterBefragen": {
+      "canonical": "Bürgermeister befragen",
+      "aliases": []
+    },
+    "QUEST_EntdeckungDerTuere": {
+      "canonical": "Entdeckung der Türe",
+      "aliases": []
+    },
+    "QUEST_SucheNachBerthold": {
+      "canonical": "Suche nach Berthold",
+      "aliases": []
+    },
+    "QUEST_DeliverImportantInformationToTheBuergermeister": {
+      "canonical": "Deliver important information to the Bürgermeister",
+      "aliases": []
+    },
+    "QUEST_ErlaubnisVomBuergermeisterEinholen": {
+      "canonical": "Erlaubnis vom Bürgermeister einholen",
+      "aliases": []
+    },
+    "QUEST_ZiegeZurueckbringen": {
+      "canonical": "Ziege zurückbringen",
+      "aliases": []
+    },
+    "QUEST_GoblinAngriffVorbeugung": {
+      "canonical": "Goblin-Angriff Vorbeugung",
+      "aliases": []
+    },
+    "QUEST_AufbrechenUndZuDenWaechternGehen": {
+      "canonical": "Aufbrechen und zu den Wächtern gehen",
+      "aliases": []
+    },
+    "QUEST_WarnungVorGoblinAngriff": {
+      "canonical": "Warnung vor Goblin-Angriff (Warning of Goblin Attack)",
+      "aliases": []
+    },
+    "QUEST_ProtectingDorfBreshkaFromGoblins": {
+      "canonical": "Protecting Dorf Breshka from Goblins",
+      "aliases": []
+    },
+    "QUEST_VorbereitungDerVerteidigungFeierIdee": {
+      "canonical": "Vorbereitung der Verteidigung / Feier-Idee",
+      "aliases": []
+    },
+    "QUEST_VerteidigungDerStadt": {
+      "canonical": "Verteidigung der Stadt",
+      "aliases": []
+    },
+    "QUEST_InvestigateTheVillageAndItsInhabitants": {
+      "canonical": "Investigate the village and its inhabitants",
+      "aliases": []
+    },
+    "QUEST_FindLodgingInTheAbandonedTradersHouse": {
+      "canonical": "Find lodging in the abandoned trader’s house",
+      "aliases": []
+    },
+    "QUEST_UnbekannteBedrohung": {
+      "canonical": "Unbekannte Bedrohung (unknown threat)",
+      "aliases": []
+    },
+    "QUEST_BefestigungDesDorfes": {
+      "canonical": "Befestigung des Dorfes (Fortify the Village)",
+      "aliases": []
+    },
+    "QUEST_VerteidigungDesDorfes": {
+      "canonical": "Verteidigung des Dorfes",
+      "aliases": []
+    },
+    "QUEST_PlanungDerVerteidigungMitDorfbewohnern": {
+      "canonical": "Planung der Verteidigung mit Dorfbewohnern",
+      "aliases": []
+    },
+    "QUEST_SucheNachRessourcenFuerBarrikadenUndFallen": {
+      "canonical": "Suche nach Ressourcen für Barrikaden und Fallen",
+      "aliases": []
+    },
+    "QUEST_MitFamilieKraemerUndDemMagierKurzschliessen": {
+      "canonical": "Mit Familie Krämer und dem Magier kurzschließen",
+      "aliases": []
+    },
+    "QUEST_FindingTheChild": {
+      "canonical": "Finding the Child (Timrell)",
+      "aliases": []
+    },
+    "QUEST_CalmingTheCows": {
+      "canonical": "Calming the Cows",
+      "aliases": []
+    },
+    "QUEST_ZurueckholenDesKindes": {
+      "canonical": "Zurückholen des Kindes (Timrell)",
+      "aliases": []
+    },
+    "QUEST_UntersuchenDesGoblinsFuerBefehle": {
+      "canonical": "Untersuchen des Goblins für Befehle (searching the Goblin for orders)",
+      "aliases": []
+    },
+    "QUEST_SucheNachAnderenFeinden": {
+      "canonical": "Suche nach anderen Feinden (looking for other enemies)",
+      "aliases": []
+    },
+    "QUEST_ErmittlungDerGoblinPlaene": {
+      "canonical": "Ermittlung der Goblin-Pläne",
+      "aliases": []
+    },
+    "QUEST_VorbereitungDerFalleUndBarrikade": {
+      "canonical": "Vorbereitung der Falle und Barrikade",
+      "aliases": []
+    },
+    "QUEST_DorfverteidigungOrganisieren": {
+      "canonical": "Dorfverteidigung organisieren",
+      "aliases": []
+    },
+    "QUEST_GoblinAngriffAbwehren": {
+      "canonical": "Goblin-Angriff abwehren",
+      "aliases": []
+    },
+    "QUEST_Mission": {
+      "canonical": "Mission",
+      "aliases": []
+    },
+    "QUEST_QuestzielFuerHeute": {
+      "canonical": "Questziel für heute",
+      "aliases": []
+    },
+    "QUEST_SucheNachUnterstuetzungVonDerGilde": {
+      "canonical": "Suche nach Unterstützung von der Gilde",
+      "aliases": []
+    },
+    "QUEST_Parallelmission": {
+      "canonical": "Parallelmission",
+      "aliases": []
+    },
+    "QUEST_ReinigungDerKrypta": {
+      "canonical": "Reinigung der Krypta",
+      "aliases": []
+    },
+    "QUEST_ErkundungDerKrypte": {
+      "canonical": "Erkundung der Krypte",
+      "aliases": []
+    },
+    "QUEST_InvestigateTheRuinAndTower": {
+      "canonical": "Investigate the Ruin and Tower",
+      "aliases": []
+    },
+    "QUEST_InfiltrateTheTower": {
+      "canonical": "Infiltrate the Tower",
+      "aliases": []
+    },
+    "QUEST_DealWithPotentialPlunderersInTheCrypt": {
+      "canonical": "Deal with Potential Plunderers in the Crypt",
+      "aliases": []
+    },
+    "QUEST_SucheNachDerKrypta": {
+      "canonical": "Suche nach der Krypta",
+      "aliases": []
+    },
+    "QUEST_GainingTrustWithPhipps": {
+      "canonical": "gaining trust with Phipps",
+      "aliases": []
+    },
+    "QUEST_SearchingForValuableItemsHiddenByPhipps": {
+      "canonical": "searching for valuable items hidden by Phipps",
+      "aliases": []
+    },
+    "QUEST_TippsVonPhilips": {
+      "canonical": "Tipps von Philips",
+      "aliases": []
+    },
+    "QUEST_MissionUmFellbiesterZuBekaempfen": {
+      "canonical": "Mission um Fellbiester zu bekämpfen",
+      "aliases": []
+    },
+    "QUEST_MissionFortzusetzenOhneUnterbrechungen": {
+      "canonical": "Mission fortzusetzen ohne Unterbrechungen",
+      "aliases": []
+    },
+    "QUEST_InvestigationOfTheStatue": {
+      "canonical": "Investigation of the Statue",
+      "aliases": []
+    },
+    "QUEST_BloodOfferingRitual": {
+      "canonical": "Blood Offering Ritual",
+      "aliases": []
+    },
+    "QUEST_EntschluesselnDerTuer": {
+      "canonical": "Entschlüsseln der Tür",
+      "aliases": []
+    },
+    "QUEST_ResearchingTheMonolithsAndStatue": {
+      "canonical": "Researching the Monoliths and Statue",
+      "aliases": []
+    },
+    "QUEST_NachJemandemSuchen": {
+      "canonical": "Nach jemandem suchen (unbekannter Name)",
+      "aliases": []
+    },
+    "QUEST_ErkundungDesSchatzraumsUndBossraums": {
+      "canonical": "Erkundung des Schatzraums und Bossraums",
+      "aliases": []
+    },
+    "QUEST_MissionErfassenDesDungeons": {
+      "canonical": "Mission: Erfassen des Dungeons",
+      "aliases": []
+    },
+    "QUEST_VerteidigungVonBresca": {
+      "canonical": "Verteidigung von Bresca",
+      "aliases": []
+    },
+    "QUEST_GoblinGoetterAmbush": {
+      "canonical": "Goblin-Götter Ambush",
+      "aliases": []
+    },
+    "QUEST_ThroughsearchOfGoblinCamp": {
+      "canonical": "Throughsearch of Goblin Camp",
+      "aliases": []
+    },
+    "QUEST_ZerstoerungDesGoblinDorfs": {
+      "canonical": "Zerstörung des Goblin-Dorfs",
+      "aliases": []
+    },
+    "QUEST_BevorstehenderGoblinangriff": {
+      "canonical": "Bevorstehender Goblinangriff",
+      "aliases": []
+    },
+    "QUEST_ZugangZurTuerMitMagischerRune": {
+      "canonical": "Zugang zur Tür mit magischer Rune",
+      "aliases": []
+    },
+    "QUEST_BringingBertiBack": {
+      "canonical": "Bringing Berti Back",
+      "aliases": []
+    },
+    "QUEST_GoblinAngriffVorbeugenVorwarnungAnDasDorfGeben": {
+      "canonical": "Goblin-Angriff vorbeugen / Vorwarnung an das Dorf geben",
+      "aliases": []
+    },
+    "QUEST_ZugangZumBuergermeisterBertholdErhalten": {
+      "canonical": "Zugang zum Bürgermeister Berthold erhalten",
+      "aliases": []
+    },
+    "QUEST_VerteidigungDesDorfesBreshkaGegenGoblins": {
+      "canonical": "Verteidigung des Dorfes Breshka gegen Goblins",
+      "aliases": []
+    },
+    "QUEST_ErmutigungDerDorfbewohner": {
+      "canonical": "Ermutigung der Dorfbewohner",
+      "aliases": []
+    },
+    "QUEST_VorbereitungAufVerteidigungDesDorfes": {
+      "canonical": "Vorbereitung auf Verteidigung des Dorfes",
+      "aliases": []
+    },
+    "QUEST_PlanungFuerDenAbend": {
+      "canonical": "Planung für den Abend",
+      "aliases": []
+    },
+    "QUEST_VorbereitungDerVerteidigung": {
+      "canonical": "Vorbereitung der Verteidigung (preparing the defense)",
+      "aliases": []
+    },
+    "QUEST_KontaktMitFamilieKraemerUndDemMagier": {
+      "canonical": "Kontakt mit Familie Krämer und dem Magier",
+      "aliases": []
+    },
+    "QUEST_CalmingTheCowsRescuingTheChild": {
+      "canonical": "Calming the Cows / Rescuing the Child",
+      "aliases": []
+    },
+    "QUEST_RueckholungDesKindes": {
+      "canonical": "Rückholung des Kindes",
+      "aliases": []
+    },
+    "QUEST_HilfeFuerDasMaedchen": {
+      "canonical": "Hilfe für das Mädchen",
+      "aliases": []
+    },
+    "QUEST_DorfverteidigungVorbereiten": {
+      "canonical": "Dorfverteidigung vorbereiten",
+      "aliases": []
+    },
+    "QUEST_GoblinAngriff": {
+      "canonical": "Goblin-Angriff",
       "aliases": []
     }
   },
@@ -287,7 +2138,9 @@
     },
     "EVT_MonsterIsDefeated": {
       "canonical": "Monster is defeated",
-      "aliases": []
+      "aliases": [
+        "Monster defeated"
+      ]
     },
     "EVT_MonsterSFinalBreath": {
       "canonical": "Monster's Final Breath",
@@ -320,11 +2173,2790 @@
     "EVT_EndOfFirstSession": {
       "canonical": "End of First Session",
       "aliases": []
+    },
+    "EVT_FirstEncounterWithTheEnvironment": {
+      "canonical": "First encounter with the environment",
+      "aliases": []
+    },
+    "EVT_FirstEncounterWithTheSwampAndDistantCamp": {
+      "canonical": "First encounter with the swamp and distant camp",
+      "aliases": []
+    },
+    "EVT_DecisionToMoveForwardCautiously": {
+      "canonical": "Decision to move forward cautiously",
+      "aliases": []
+    },
+    "EVT_GroupReadinessAndMovement": {
+      "canonical": "Group Readiness and Movement",
+      "aliases": []
+    },
+    "EVT_CookieVolunteersToMoveForward": {
+      "canonical": "Cookie volunteers to move forward",
+      "aliases": []
+    },
+    "EVT_EsterossaSDecisionToMoveForward": {
+      "canonical": "Esterossa's decision to move forward",
+      "aliases": []
+    },
+    "EVT_CookieSDecisionToStayNearTheGroup": {
+      "canonical": "Cookie's decision to stay near the group",
+      "aliases": []
+    },
+    "EVT_CookieRespondsToEsterossaSRequest": {
+      "canonical": "Cookie responds to Esterossa's request",
+      "aliases": []
+    },
+    "EVT_CookieChoosesToStayNearbyDueToEvasionSkill": {
+      "canonical": "Cookie chooses to stay nearby due to Evasion skill",
+      "aliases": []
+    },
+    "EVT_GoblinAppearsFromTheRightTent": {
+      "canonical": "Goblin appears from the right tent",
+      "aliases": []
+    },
+    "EVT_DodoSFirstAttackOnTheGoblin": {
+      "canonical": "Dodo's first attack on the Goblin",
+      "aliases": []
+    },
+    "EVT_GoblinAttacksDodo": {
+      "canonical": "Goblin attacks Dodo",
+      "aliases": []
+    },
+    "EVT_GoblinSAttackBouncedOffDodoSArmor": {
+      "canonical": "Goblin's Attack Bounced Off Dodo's Armor",
+      "aliases": []
+    },
+    "EVT_EsterossaSAerialStrikeAttempt": {
+      "canonical": "Esterossa's Aerial Strike Attempt",
+      "aliases": []
+    },
+    "EVT_EsterossaTakesAHighPositionAndAttacksFromAbove": {
+      "canonical": "Esterossa takes a high position and attacks from above",
+      "aliases": []
+    },
+    "EVT_EsterossaLandsASuccessfulHitOnTheGoblin": {
+      "canonical": "Esterossa lands a successful hit on the Goblin",
+      "aliases": []
+    },
+    "EVT_CookieSSchnabeltierDefeatsTheGoblin": {
+      "canonical": "Cookie's Schnabeltier (Perry) defeats the Goblin",
+      "aliases": []
+    },
+    "EVT_CookieDefeatsGoblinWithPreciseAttack": {
+      "canonical": "Cookie defeats Goblin with precise attack",
+      "aliases": []
+    },
+    "EVT_DiscoveryOfGoblinLoot": {
+      "canonical": "Discovery of Goblin loot",
+      "aliases": []
+    },
+    "EVT_SearchingTheTentForHealingPotion": {
+      "canonical": "Searching the Tent for Healing Potion",
+      "aliases": []
+    },
+    "EVT_SearchingTheTentForHopf": {
+      "canonical": "Searching the Tent for Hopf",
+      "aliases": []
+    },
+    "EVT_CheckingForHeiltrank": {
+      "canonical": "Checking for Heiltrank",
+      "aliases": []
+    },
+    "EVT_DiscoveryOfSchriftrolle": {
+      "canonical": "Discovery of Schriftrolle (scroll)",
+      "aliases": []
+    },
+    "EVT_DiscoveryOfLeiche": {
+      "canonical": "Discovery of Leiche (corpse)",
+      "aliases": []
+    },
+    "EVT_SearchingTheCamp": {
+      "canonical": "Searching the Camp",
+      "aliases": []
+    },
+    "EVT_DiscoveringACorpseAtTheTree": {
+      "canonical": "Discovering a Corpse at the Tree",
+      "aliases": []
+    },
+    "EVT_FindingAChest": {
+      "canonical": "Finding a Chest",
+      "aliases": []
+    },
+    "EVT_GoblinEncounterInTheChest": {
+      "canonical": "Goblin Encounter in the Chest",
+      "aliases": []
+    },
+    "EVT_FrettchenAttackGoblin": {
+      "canonical": "Frettchen attack Goblin",
+      "aliases": [
+        "Frettchen attacks Goblin"
+      ]
+    },
+    "EVT_DodoUsesKolbenToKillGoblin": {
+      "canonical": "Dodo uses Kolben to kill Goblin",
+      "aliases": []
+    },
+    "EVT_DiscoveringKisteTruheContents": {
+      "canonical": "Discovering Kiste / Truhe contents",
+      "aliases": []
+    },
+    "EVT_GoblinSLastBreath": {
+      "canonical": "Goblin's last breath",
+      "aliases": []
+    },
+    "EVT_DodoSuggestsTakingANap": {
+      "canonical": "Dodo suggests taking a nap",
+      "aliases": []
+    },
+    "EVT_EsterossaPreparesForRest": {
+      "canonical": "Esterossa prepares for rest",
+      "aliases": []
+    },
+    "EVT_EsterossaCastsASpellUsingTheDualityDice": {
+      "canonical": "Esterossa casts a spell using the Duality Dice",
+      "aliases": []
+    },
+    "EVT_WakingShiftArrangementDiscussed": {
+      "canonical": "Waking shift arrangement discussed",
+      "aliases": []
+    },
+    "EVT_CheckForLostArmorOrDamage": {
+      "canonical": "Check for lost armor or damage",
+      "aliases": []
+    },
+    "EVT_ShiftInWatchDutyAssignment": {
+      "canonical": "Shift in Watch Duty Assignment",
+      "aliases": []
+    },
+    "EVT_ShortRestAndPreparation": {
+      "canonical": "Short Rest and Preparation",
+      "aliases": []
+    },
+    "EVT_FirstWatchAssignment": {
+      "canonical": "First Watch Assignment",
+      "aliases": []
+    },
+    "EVT_EsterossaPositionsHerselfInTheFog": {
+      "canonical": "Esterossa positions herself in the fog",
+      "aliases": []
+    },
+    "EVT_FirstNightPassesWithoutIncident": {
+      "canonical": "First night passes without incident",
+      "aliases": []
+    },
+    "EVT_CookieWakesUpAndTakesPositionOnATreeStump": {
+      "canonical": "Cookie wakes up and takes position on a tree stump",
+      "aliases": []
+    },
+    "EVT_CriticalSuccessInHiding": {
+      "canonical": "Critical success in hiding",
+      "aliases": []
+    },
+    "EVT_ACreatureIsSpottedMovingThroughTheFog": {
+      "canonical": "A creature is spotted moving through the fog",
+      "aliases": []
+    },
+    "EVT_SchnabeltierWecktDieAnderen": {
+      "canonical": "Schnabeltier weckt die anderen",
+      "aliases": []
+    },
+    "EVT_WahrnehmungswurfVonEsterossaUndDodo": {
+      "canonical": "Wahrnehmungswurf von Esterossa und Dodo",
+      "aliases": []
+    },
+    "EVT_DodoFailsToGainHope": {
+      "canonical": "Dodo fails to gain Hope",
+      "aliases": []
+    },
+    "EVT_CookieGivesDodoAStoneAsAGiftOfFriendship": {
+      "canonical": "Cookie gives Dodo a stone as a gift of friendship",
+      "aliases": []
+    },
+    "EVT_FrettchenCommunicatesInformationAboutAHornedCreatureInTheFog": {
+      "canonical": "Frettchen communicates information about a horned creature in the fog",
+      "aliases": []
+    },
+    "EVT_EsterossaNoticesTheHornedCreatureAndReactsWithConfusion": {
+      "canonical": "Esterossa notices the horned creature and reacts with confusion",
+      "aliases": []
+    },
+    "EVT_HornedCreatureFleesWhenEsterossaApproaches": {
+      "canonical": "The horned creature flees when Esterossa approaches",
+      "aliases": []
+    },
+    "EVT_EsterossaReportsSeeingSomeoneInTheCamp": {
+      "canonical": "Esterossa reports seeing someone in the camp",
+      "aliases": []
+    },
+    "EVT_GroupReturnsToSleepAfterTheEncounter": {
+      "canonical": "The group returns to sleep after the encounter",
+      "aliases": []
+    },
+    "EVT_MorningComesAndFogClearsSignificantly": {
+      "canonical": "Morning comes and fog clears significantly",
+      "aliases": []
+    },
+    "EVT_EsterossaSpotsABridgeOrWoodenStructureInTheDistance": {
+      "canonical": "Esterossa spots a bridge or wooden structure in the distance",
+      "aliases": []
+    },
+    "EVT_DodoVolunteersToLeadTheGroupForward": {
+      "canonical": "Dodo volunteers to lead the group forward",
+      "aliases": []
+    },
+    "EVT_EsterossaRefusesToWalkThroughDirtDueToHonor": {
+      "canonical": "Esterossa refuses to walk through dirt due to honor",
+      "aliases": []
+    },
+    "EVT_EsterossaIdentifiesTheCreatureAsAWaldschrat": {
+      "canonical": "Esterossa identifies the creature as a Waldschrat",
+      "aliases": []
+    },
+    "EVT_CookieAsksTheNatureForInformationAboutTheCreature": {
+      "canonical": "Cookie asks the Nature for information about the creature",
+      "aliases": [
+        "Cookie asks the Nature for information about the Waldschrat"
+      ]
+    },
+    "EVT_GoblinGoetterActAgain": {
+      "canonical": "Goblin-Götter act again",
+      "aliases": []
+    },
+    "EVT_CookieAsksAboutACharacterSAlignment": {
+      "canonical": "Cookie asks about a character's alignment",
+      "aliases": []
+    },
+    "EVT_GMClarifiesThatNatureIsBeingReferenced": {
+      "canonical": "GM clarifies that Nature is being referenced",
+      "aliases": []
+    },
+    "EVT_AskingTheNatureAboutAStranger": {
+      "canonical": "Asking the Nature about a stranger",
+      "aliases": []
+    },
+    "EVT_ExplorationOfSteingebilde": {
+      "canonical": "Exploration of Steingebilde (verfallener Aussichtsturm)",
+      "aliases": []
+    },
+    "EVT_KnowledgeCheckOnSteingebilde": {
+      "canonical": "Knowledge Check on Steingebilde",
+      "aliases": []
+    },
+    "EVT_InstinctCheckToExploreSteingebilde": {
+      "canonical": "Instinct Check to Explore Steingebilde",
+      "aliases": []
+    },
+    "EVT_ExplorationOfTheCollapsedStructure": {
+      "canonical": "Exploration of the collapsed structure",
+      "aliases": []
+    },
+    "EVT_GMSInterruptionAndDescription": {
+      "canonical": "GM's Interruption and Description",
+      "aliases": []
+    },
+    "EVT_EsterossaSObservationAndMistake": {
+      "canonical": "Esterossa's Observation and Mistake",
+      "aliases": []
+    },
+    "EVT_CookiePointsOutTheDie": {
+      "canonical": "Cookie Points Out the Die",
+      "aliases": []
+    },
+    "EVT_EsterossaSRetreatToTank": {
+      "canonical": "Esterossa's Retreat to Tank",
+      "aliases": []
+    },
+    "EVT_EsterossaNoticesSomething": {
+      "canonical": "Esterossa notices something",
+      "aliases": []
+    },
+    "EVT_CookieRetrievesTheirDie": {
+      "canonical": "Cookie retrieves their die",
+      "aliases": []
+    },
+    "EVT_CookieLocatesTheirDice": {
+      "canonical": "Cookie locates their dice",
+      "aliases": []
+    },
+    "EVT_EsterossaNoticesAConstruct": {
+      "canonical": "Esterossa notices a construct",
+      "aliases": []
+    },
+    "EVT_EsterossaMovesTowardTheTank": {
+      "canonical": "Esterossa moves toward the tank",
+      "aliases": []
+    },
+    "EVT_EsterossaAccidentallyInteractsWithAConstruct": {
+      "canonical": "Esterossa accidentally interacts with a construct",
+      "aliases": []
+    },
+    "EVT_EsterossaLosesFocusAndAccidentallyAddressesAConstruct": {
+      "canonical": "Esterossa loses focus and accidentally addresses a construct",
+      "aliases": []
+    },
+    "EVT_EsterossaReturnsToTheGroupSTank": {
+      "canonical": "Esterossa returns to the group's Tank",
+      "aliases": []
+    },
+    "EVT_AgilityCheckByCookie": {
+      "canonical": "Agility Check by Cookie",
+      "aliases": []
+    },
+    "EVT_GoblinGottSStoneAttempt": {
+      "canonical": "Goblin-Gott's Stone Attempt",
+      "aliases": []
+    },
+    "EVT_KnowledgeCheckForGoblinGodIdentity": {
+      "canonical": "Knowledge Check for Goblin-God Identity",
+      "aliases": []
+    },
+    "EVT_BetweenTheTreesAppears": {
+      "canonical": "Between the Trees Appears",
+      "aliases": []
+    },
+    "EVT_WildschweinErscheintUndRenntAnDieGruppeVorbei": {
+      "canonical": "Wildschwein erscheint und rennt an die Gruppe vorbei",
+      "aliases": []
+    },
+    "EVT_InstinktwurfZurWahrnehmungDesWildschweins": {
+      "canonical": "Instinktwurf zur Wahrnehmung des Wildschweins",
+      "aliases": []
+    },
+    "EVT_EsterossaSuggestsTalkingToNatureForANewMount": {
+      "canonical": "Esterossa suggests talking to nature for a new mount",
+      "aliases": []
+    },
+    "EVT_CookieAttemptsToCalmTheWildBoarUsingHope": {
+      "canonical": "Cookie attempts to calm the wild boar using Hope",
+      "aliases": []
+    },
+    "EVT_WildBoarIsUnimpressedAndFleesIntoTheDickicht": {
+      "canonical": "Wild boar is unimpressed and flees into the Dickicht",
+      "aliases": []
+    },
+    "EVT_EsterossaAttemptsToOfferFoodToTheWildBoar": {
+      "canonical": "Esterossa attempts to offer food to the wild boar",
+      "aliases": []
+    },
+    "EVT_TimeConstraintForCompletingAuftrag": {
+      "canonical": "Time constraint for completing Auftrag (unspecified)",
+      "aliases": []
+    },
+    "EVT_NomadenbeutelContentsRevealed": {
+      "canonical": "Nomadenbeutel Contents Revealed",
+      "aliases": []
+    },
+    "EVT_TimeConstraintGiven": {
+      "canonical": "Time Constraint Given",
+      "aliases": []
+    },
+    "EVT_EsterossaApproachesTheMountainAndObservesSurroundings": {
+      "canonical": "Esterossa approaches the mountain and observes surroundings",
+      "aliases": []
+    },
+    "EVT_GoblinLagerCelebration": {
+      "canonical": "Goblin Lager celebration",
+      "aliases": []
+    },
+    "EVT_EsterossaAndCookieAttemptStealthOnTheMountain": {
+      "canonical": "Esterossa and Cookie attempt stealth on the mountain",
+      "aliases": []
+    },
+    "EVT_UnexpectedInterruptionByDrunkenFigure": {
+      "canonical": "Unexpected Interruption by Drunken Figure",
+      "aliases": []
+    },
+    "EVT_GoblinKopfEntfernung": {
+      "canonical": "Goblin-Kopf-Entfernung",
+      "aliases": []
+    },
+    "EVT_GoblinVersammlung": {
+      "canonical": "Goblin-Versammlung",
+      "aliases": []
+    },
+    "EVT_SchleichfurzAnsprache": {
+      "canonical": "Schleichfurz' Ansprache",
+      "aliases": []
+    },
+    "EVT_GoblinsRetreatAndTakeCover": {
+      "canonical": "Goblins retreat and take cover",
+      "aliases": []
+    },
+    "EVT_DecisionToUseStealthAndAvoidConfrontation": {
+      "canonical": "Decision to use Stealth and avoid confrontation",
+      "aliases": []
+    },
+    "EVT_DiscoveryOfAbandonedCampsite": {
+      "canonical": "Discovery of abandoned campsite",
+      "aliases": []
+    },
+    "EVT_FrettchenSDeathAndContainmentInPokeball": {
+      "canonical": "Frettchen's death and containment in Pokéball",
+      "aliases": []
+    },
+    "EVT_PlanningToLureGoblinsWithFrettchen": {
+      "canonical": "Planning to lure Goblins with Frettchen",
+      "aliases": []
+    },
+    "EVT_StealthAndFinesseChecksConducted": {
+      "canonical": "Stealth and Finesse checks conducted",
+      "aliases": []
+    },
+    "EVT_EsterossaCallsForAFinesseCheck": {
+      "canonical": "Esterossa calls for a Finesse check",
+      "aliases": []
+    },
+    "EVT_EsterossaUsesFinesseCheck": {
+      "canonical": "Esterossa uses Finesse check",
+      "aliases": []
+    },
+    "EVT_EsterossaSpendsHauptpunkteToGainAVorteil": {
+      "canonical": "Esterossa spends Hauptpunkte to gain a Vorteil",
+      "aliases": []
+    },
+    "EVT_GoblinSpottedNearBlume": {
+      "canonical": "Goblin spotted near Blume",
+      "aliases": []
+    },
+    "EVT_GoblinPursuitBegins": {
+      "canonical": "Goblin pursuit begins",
+      "aliases": []
+    },
+    "EVT_GoblinsAttackMikasa": {
+      "canonical": "Goblins attack Mikasa",
+      "aliases": []
+    },
+    "EVT_DodoTakesDamageToProtectOthers": {
+      "canonical": "Dodo takes damage to protect others",
+      "aliases": []
+    },
+    "EVT_SecondGoblinAttackOnDodo": {
+      "canonical": "Second Goblin Attack on Dodo",
+      "aliases": []
+    },
+    "EVT_EsterossaAttemptsToAttackAGoblin": {
+      "canonical": "Esterossa attempts to attack a Goblin",
+      "aliases": []
+    },
+    "EVT_EsterossaSAxeStrike": {
+      "canonical": "Esterossa's Axe Strike",
+      "aliases": []
+    },
+    "EVT_EsterossaAttemptsToSplitTheHeadOfAnEnemyWithHerAxe": {
+      "canonical": "Esterossa attempts to split the head of an enemy with her axe",
+      "aliases": []
+    },
+    "EVT_EsterossaSSuccessfulAttack": {
+      "canonical": "Esterossa's successful attack",
+      "aliases": []
+    },
+    "EVT_SuccessfulAttackWithDualityDice": {
+      "canonical": "Successful Attack with Duality Dice",
+      "aliases": []
+    },
+    "EVT_EsterossaDealsDamageToNeumarkscherSchaden": {
+      "canonical": "Esterossa deals damage to Neumarkscher Schaden",
+      "aliases": []
+    },
+    "EVT_DodoSAttackOnTheNeumarkscherSchaden": {
+      "canonical": "Dodo's attack on the Neumarkscher Schaden",
+      "aliases": []
+    },
+    "EVT_CombatEngagement": {
+      "canonical": "Combat Engagement",
+      "aliases": []
+    },
+    "EVT_DodoLandsASuccessfulHitOnTheEnemy": {
+      "canonical": "Dodo lands a successful hit on the enemy",
+      "aliases": []
+    },
+    "EVT_SuccessfulAttackWithDamageCry": {
+      "canonical": "Successful Attack with Damage Cry",
+      "aliases": []
+    },
+    "EVT_FaesserRollenAufDieGruppeZu": {
+      "canonical": "Fässer rollen auf die Gruppe zu",
+      "aliases": []
+    },
+    "EVT_DodoSchlaegtAufDenGoblin": {
+      "canonical": "Dodo schlägt auf den Goblin",
+      "aliases": []
+    },
+    "EVT_GoblinTrinktTrankUndWaechst": {
+      "canonical": "Goblin trinkt Trank und wächst",
+      "aliases": []
+    },
+    "EVT_GoblinAttackiertDodo": {
+      "canonical": "Goblin attackiert Dodo",
+      "aliases": []
+    },
+    "EVT_BogenSArmLostAndKurzdeutschDrawn": {
+      "canonical": "Bogen's Arm Lost and Kurzdeutsch Drawn",
+      "aliases": []
+    },
+    "EVT_DodoSReactionToTheCreature": {
+      "canonical": "Dodo's Reaction to the Creature",
+      "aliases": []
+    },
+    "EVT_AttackAttemptAndDamageCalculation": {
+      "canonical": "Attack Attempt and Damage Calculation",
+      "aliases": []
+    },
+    "EVT_BogenGebruiktEnArmVerloren": {
+      "canonical": "Bogen gebruikt en arm verloren",
+      "aliases": []
+    },
+    "EVT_SchadenBerechnenNa15Tal": {
+      "canonical": "Schaden berechnen na 15-tal",
+      "aliases": []
+    },
+    "EVT_FrettchenInterruptsGoblin": {
+      "canonical": "Frettchen interrupts Goblin",
+      "aliases": []
+    },
+    "EVT_EsterossaTargetsGoblinSArm": {
+      "canonical": "Esterossa targets Goblin's arm",
+      "aliases": []
+    },
+    "EVT_EsterossaAttemptsToDisarmGoblin": {
+      "canonical": "Esterossa attempts to disarm Goblin",
+      "aliases": []
+    },
+    "EVT_EsterossaCorrectsTheNumberOfAttacks": {
+      "canonical": "Esterossa Corrects the Number of Attacks",
+      "aliases": []
+    },
+    "EVT_DodoAttemptsToFreeThemselvesFromTheBarrels": {
+      "canonical": "Dodo attempts to free themselves from the barrels",
+      "aliases": []
+    },
+    "EVT_EsterossaTakesDamage": {
+      "canonical": "Esterossa takes damage",
+      "aliases": []
+    },
+    "EVT_DodoUsesAStaminaPotionToRemoveStress": {
+      "canonical": "Dodo uses a Stamina-Potion to remove Stress",
+      "aliases": [
+        "Dodo uses Stamina-Potion to remove Stress",
+        "Dodo consumes Stamina-Potion to remove Stress"
+      ]
+    },
+    "EVT_EsterossaDefeatsTheHaupthoeher": {
+      "canonical": "Esterossa defeats the Haupthöher",
+      "aliases": []
+    },
+    "EVT_DodoUsesStaminaPotion": {
+      "canonical": "Dodo uses Stamina-Potion",
+      "aliases": []
+    },
+    "EVT_CookieUsesBogenWithToedlichesZielToTargetTheInjuredGoblin": {
+      "canonical": "Cookie uses Bogen with Tödliches Ziel to target the injured goblin",
+      "aliases": []
+    },
+    "EVT_MikasaUsesAxtToFinishOffTheGoblin": {
+      "canonical": "Mikasa uses Axt to finish off the goblin",
+      "aliases": []
+    },
+    "EVT_CookieSSuccessfulHeadshotOnGoblin": {
+      "canonical": "Cookie's successful headshot on Goblin",
+      "aliases": []
+    },
+    "EVT_EsterossaSAxtStrikeOnGoblin": {
+      "canonical": "Esterossa's Axt strike on Goblin",
+      "aliases": []
+    },
+    "EVT_GoblinFallsIntoSumpf": {
+      "canonical": "Goblin falls into Sumpf",
+      "aliases": []
+    },
+    "EVT_GoblinAttemptsToDrinkTrank": {
+      "canonical": "Goblin attempts to drink Trank (Vergrößerungs-Trank)",
+      "aliases": [
+        "Goblin Attempts to Drink a Trank"
+      ]
+    },
+    "EVT_CookiePreventsGoblinFromDrinkingTrank": {
+      "canonical": "Cookie prevents Goblin from drinking Trank",
+      "aliases": []
+    },
+    "EVT_DodoAndMikasaAttackGoblinAfterBeingBlinded": {
+      "canonical": "Dodo and Mikasa attack Goblin after being blinded",
+      "aliases": []
+    },
+    "EVT_StressPointActivation": {
+      "canonical": "Stress Point Activation",
+      "aliases": []
+    },
+    "EVT_DecisionToGoDirectlyToObermacker": {
+      "canonical": "Decision to go directly to Obermacker",
+      "aliases": []
+    },
+    "EVT_DecisionToGoAroundTheBuilding": {
+      "canonical": "Decision to go around the building",
+      "aliases": []
+    },
+    "EVT_PreparationForAnUpcomingAttack": {
+      "canonical": "Preparation for an upcoming attack",
+      "aliases": []
+    },
+    "EVT_ApproachingTheObermakarops": {
+      "canonical": "Approaching the Obermakarops",
+      "aliases": []
+    },
+    "EVT_StealthWurfToAvoidDetection": {
+      "canonical": "Stealth-Wurf to avoid detection",
+      "aliases": []
+    },
+    "EVT_DodoReceivesPermissionToUseAW6": {
+      "canonical": "Dodo receives permission to use a W6",
+      "aliases": []
+    },
+    "EVT_CharactersApproachTheStaircaseAndDiscussPositioning": {
+      "canonical": "Characters approach the staircase and discuss positioning",
+      "aliases": []
+    },
+    "EVT_EsterossaUsesBoltBeacon": {
+      "canonical": "Esterossa uses Bolt Beacon",
+      "aliases": [
+        "Esterossa casts Bolt Beacon"
+      ]
+    },
+    "EVT_DodoAttemptsBackstabWithKeule": {
+      "canonical": "Dodo attempts backstab with Keule",
+      "aliases": []
+    },
+    "EVT_GoblinAttacksCookieWith18Damage": {
+      "canonical": "Goblin attacks Cookie with 18 damage",
+      "aliases": []
+    },
+    "EVT_MagierCastsFireballsOnCookie": {
+      "canonical": "Magier casts fireballs on Cookie",
+      "aliases": [
+        "Magier casts fireballs at Cookie"
+      ]
+    },
+    "EVT_EsterossaUsesPrayerDiceToMitigateDamage": {
+      "canonical": "Esterossa uses Prayer Dice to mitigate damage",
+      "aliases": []
+    },
+    "EVT_EsterossaFliesUpToEngageMagier": {
+      "canonical": "Esterossa flies up to engage Magier",
+      "aliases": [
+        "Esterossa flies upward to engage Magier"
+      ]
+    },
+    "EVT_StrengthCheckAgainstEsterossaSFlight": {
+      "canonical": "Strength Check against Esterossa's flight",
+      "aliases": []
+    },
+    "EVT_EsterossaAttemptsToPushLuchidactylusDown": {
+      "canonical": "Esterossa attempts to push Luchidactylus down",
+      "aliases": []
+    },
+    "EVT_StrengthCheckFailsForEsterossa": {
+      "canonical": "Strength Check fails for Esterossa",
+      "aliases": []
+    },
+    "EVT_ChetIntervenesAndBothCharactersAreKnockedDown": {
+      "canonical": "Chet intervenes and both characters are knocked down",
+      "aliases": []
+    },
+    "EVT_CookieActivatesGlowRinge": {
+      "canonical": "Cookie activates Glow-Ringe",
+      "aliases": []
+    },
+    "EVT_CookieAttacksDodoWithKillerSchlagringe": {
+      "canonical": "Cookie attacks Dodo with Killer-Schlagringe",
+      "aliases": [
+        "Cookie attacks with Killer-Schlagringe"
+      ]
+    },
+    "EVT_AngriffswurfGegenDodo": {
+      "canonical": "Angriffswurf gegen Dodo",
+      "aliases": []
+    },
+    "EVT_EsterossaAttemptsToStandAndAttack": {
+      "canonical": "Esterossa attempts to stand and attack",
+      "aliases": []
+    },
+    "EVT_EnemyUsesAPressureWaveAttack": {
+      "canonical": "Enemy uses a pressure wave attack",
+      "aliases": []
+    },
+    "EVT_DodoDecidesToAttackWithRingsAndHope": {
+      "canonical": "Dodo decides to attack with rings and Hope",
+      "aliases": []
+    },
+    "EVT_GoblinsAppear": {
+      "canonical": "Goblins appear",
+      "aliases": []
+    },
+    "EVT_DodoUsesRingsAndHope": {
+      "canonical": "Dodo uses rings and Hope",
+      "aliases": []
+    },
+    "EVT_CookieUsesHopeToEnhanceAttackWithRings": {
+      "canonical": "Cookie uses Hope to enhance attack with rings",
+      "aliases": []
+    },
+    "EVT_CookieAttemptsToUseHopeWithRings": {
+      "canonical": "Cookie attempts to use Hope with rings",
+      "aliases": []
+    },
+    "EVT_CookieUsesRingsAndHope": {
+      "canonical": "Cookie uses rings and Hope",
+      "aliases": []
+    },
+    "EVT_CookieUsesHopeInConjunctionWithRings": {
+      "canonical": "Cookie uses Hope in conjunction with rings",
+      "aliases": []
+    },
+    "EVT_MageCastsFireball": {
+      "canonical": "Mage casts fireball",
+      "aliases": []
+    },
+    "EVT_EsterossaUsesLastPointForDamageMitigation": {
+      "canonical": "Esterossa uses last point for damage mitigation",
+      "aliases": []
+    },
+    "EVT_EsterossaUsesLastPointToTakeDamage": {
+      "canonical": "Esterossa uses last point to take damage",
+      "aliases": [
+        "Esterossa spends last point to take damage"
+      ]
+    },
+    "EVT_MageSFireballHitsEsterossa": {
+      "canonical": "Mage's Fireball Hits Esterossa",
+      "aliases": []
+    },
+    "EVT_FireballSpellHitsEsterossa": {
+      "canonical": "Fireball Spell Hits Esterossa",
+      "aliases": []
+    },
+    "EVT_EsterossaUsesLastPointForDamage": {
+      "canonical": "Esterossa Uses Last Point for Damage",
+      "aliases": []
+    },
+    "EVT_DodoActivatesUnstoppable": {
+      "canonical": "Dodo activates Unstoppable",
+      "aliases": []
+    },
+    "EVT_BerserkerOpponentAttacksDodo": {
+      "canonical": "Berserker opponent attacks Dodo",
+      "aliases": []
+    },
+    "EVT_UnstoppableAbilityReducesDamageTaken": {
+      "canonical": "Unstoppable ability reduces damage taken",
+      "aliases": []
+    },
+    "EVT_SuccessfulBlockAgainstAttack": {
+      "canonical": "Successful Block Against Attack",
+      "aliases": []
+    },
+    "EVT_EsterossaUsesMendingTouch": {
+      "canonical": "Esterossa uses Mending Touch",
+      "aliases": []
+    },
+    "EVT_MagierSDeath": {
+      "canonical": "Magier's death",
+      "aliases": []
+    },
+    "EVT_EnemySEnragedRetaliation": {
+      "canonical": "Enemy's enraged retaliation",
+      "aliases": []
+    },
+    "EVT_CookieShootsWithBow": {
+      "canonical": "Cookie shoots with bow",
+      "aliases": []
+    },
+    "EVT_GoblinLagerIsFreed": {
+      "canonical": "Goblin-Lager is freed",
+      "aliases": []
+    },
+    "EVT_LootungDesGoblinLagers": {
+      "canonical": "Lootung des Goblin-Lagers",
+      "aliases": []
+    },
+    "EVT_GoblinCampDiscoveryAndNotification": {
+      "canonical": "Goblin Camp Discovery and Notification",
+      "aliases": []
+    },
+    "EVT_PreparationForPotentialAttack": {
+      "canonical": "Preparation for Potential Attack",
+      "aliases": []
+    },
+    "EVT_ArrivalAtTheVillage": {
+      "canonical": "Arrival at the Village",
+      "aliases": []
+    },
+    "EVT_InitialReconnaissance": {
+      "canonical": "Initial Reconnaissance",
+      "aliases": []
+    },
+    "EVT_ValerieSuggestsGoingToTheCowsForFood": {
+      "canonical": "Valerie suggests going to the cows for food",
+      "aliases": []
+    },
+    "EVT_GroupMovesTowardTheCowsAndObservesAHouse": {
+      "canonical": "Group moves toward the cows and observes a house",
+      "aliases": []
+    },
+    "EVT_ObservationOfHouseWithCows": {
+      "canonical": "Observation of House with Cows",
+      "aliases": []
+    },
+    "EVT_ValerieCommitsToRetrievingTheChild": {
+      "canonical": "Valerie commits to retrieving the child",
+      "aliases": []
+    },
+    "EVT_RotunasInstructsTimrellToWait": {
+      "canonical": "Rotunas instructs Timrell to wait",
+      "aliases": []
+    },
+    "EVT_GMClarifiesThatTheChildIsStillRunningAway": {
+      "canonical": "GM clarifies that the child is still running away",
+      "aliases": []
+    },
+    "EVT_ValerieSuggestsRotunasTryToFindTheChild": {
+      "canonical": "Valerie suggests Rotunas try to find the child",
+      "aliases": []
+    },
+    "EVT_RotunasAttemptsToUseHisEveryoneSFriendAbility": {
+      "canonical": "Rotunas attempts to use his 'Everyone's Friend' ability",
+      "aliases": []
+    },
+    "EVT_RotunasCallsOutToTheChild": {
+      "canonical": "Rotunas calls out to the child",
+      "aliases": []
+    },
+    "EVT_ChildScreamsForHelp": {
+      "canonical": "The child screams for help",
+      "aliases": []
+    },
+    "EVT_ValerieRushesToHelp": {
+      "canonical": "Valerie rushes to help",
+      "aliases": []
+    },
+    "EVT_RotunasRestrainsValerie": {
+      "canonical": "Rotunas restrains Valerie",
+      "aliases": []
+    },
+    "EVT_RotunasSuggestsInvolvingTendril": {
+      "canonical": "Rotunas suggests involving Tendril",
+      "aliases": []
+    },
+    "EVT_GMDirectsTheGroupBackToTheHof": {
+      "canonical": "GM directs the group back to the Hof",
+      "aliases": []
+    },
+    "EVT_ValerieRealizesTheChildIsScaredOfThem": {
+      "canonical": "Valerie realizes the child is scared of them",
+      "aliases": []
+    },
+    "EVT_GMMovesNPCsTowardTheScream": {
+      "canonical": "GM moves NPCs toward the scream",
+      "aliases": []
+    },
+    "EVT_CharactersMoveTowardTheScream": {
+      "canonical": "Characters move toward the scream",
+      "aliases": []
+    },
+    "EVT_ValerieNotesTheBenefitOfPalisades": {
+      "canonical": "Valerie notes the benefit of palisades",
+      "aliases": []
+    },
+    "EVT_GMDescribesMovementTowardTheSourceOfAScream": {
+      "canonical": "GM describes movement toward the source of a scream",
+      "aliases": []
+    },
+    "EVT_ValerieAndRotunasPrepareToAttackTheGoblin": {
+      "canonical": "Valerie and Rotunas prepare to attack the Goblin",
+      "aliases": []
+    },
+    "EVT_RotunasCastsIceSpikesOnTheGoblin": {
+      "canonical": "Rotunas casts Ice Spikes on the Goblin",
+      "aliases": []
+    },
+    "EVT_CriticalHitWithIceSpikes": {
+      "canonical": "Critical hit with Ice Spikes",
+      "aliases": []
+    },
+    "EVT_CritDamageResolution": {
+      "canonical": "Crit Damage Resolution",
+      "aliases": []
+    },
+    "EVT_ValerieSGreatStaffAttack": {
+      "canonical": "Valerie's Great Staff Attack",
+      "aliases": []
+    },
+    "EVT_ValerieSShotWithADisadvantage": {
+      "canonical": "Valerie's Shot with a Disadvantage",
+      "aliases": []
+    },
+    "EVT_ValerieClarifiesARuleAboutNachteil": {
+      "canonical": "Valerie clarifies a rule about Nachteil",
+      "aliases": []
+    },
+    "EVT_FireCreatedFromAShotInTheForest": {
+      "canonical": "Fire created from a shot in the forest",
+      "aliases": []
+    },
+    "EVT_ZivierAttacksRotunas": {
+      "canonical": "Zivier attacks Rotunas",
+      "aliases": []
+    },
+    "EVT_RotunasUsesArmorScoreToMitigateDamage": {
+      "canonical": "Rotunas uses Armor Score to mitigate damage",
+      "aliases": []
+    },
+    "EVT_ThresholdIsSetTo10": {
+      "canonical": "Threshold is set to 10",
+      "aliases": []
+    },
+    "EVT_ZivierDamageActivation": {
+      "canonical": "Zivier Damage Activation",
+      "aliases": []
+    },
+    "EVT_MajorDamageTriggered": {
+      "canonical": "Major-Damage Triggered",
+      "aliases": []
+    },
+    "EVT_ArmorSlotUsageForDamageMitigation": {
+      "canonical": "Armor Slot Usage for Damage Mitigation",
+      "aliases": []
+    },
+    "EVT_StressPointApplied": {
+      "canonical": "Stress Point Applied",
+      "aliases": []
+    },
+    "EVT_GoblinSFearOfRotunas": {
+      "canonical": "Goblin's Fear of Rotunas",
+      "aliases": []
+    },
+    "EVT_RotunasUsesMagicalBracersToAttackGoblinWithGlowingRing": {
+      "canonical": "Rotunas uses magical bracers to attack Goblin with Glowing Ring",
+      "aliases": []
+    },
+    "EVT_GoblinCounterattacksRotunas": {
+      "canonical": "Goblin counterattacks Rotunas",
+      "aliases": []
+    },
+    "EVT_ValerieUsesGreatStaffToAttackGoblin": {
+      "canonical": "Valerie uses Great Staff to attack Goblin",
+      "aliases": []
+    },
+    "EVT_GoblinDiesValerieSearchesForOrders": {
+      "canonical": "Goblin dies; Valerie searches for orders",
+      "aliases": []
+    },
+    "EVT_InstinctCheckByBothPlayers": {
+      "canonical": "Instinct check by both players",
+      "aliases": []
+    },
+    "EVT_ValerieAndHopeTravelTogether": {
+      "canonical": "Valerie and Hope travel together",
+      "aliases": []
+    },
+    "EVT_FindingGoblinFootprintsAndNotes": {
+      "canonical": "Finding Goblin Footprints and Notes",
+      "aliases": []
+    },
+    "EVT_DecidingToAlterOrUseGoblinNotes": {
+      "canonical": "Deciding to Alter or Use Goblin Notes",
+      "aliases": []
+    },
+    "EVT_EnemyEliminationAndInformationGathering": {
+      "canonical": "Enemy elimination and information gathering",
+      "aliases": []
+    },
+    "EVT_FinesseCheckRequested": {
+      "canonical": "Finesse-Check requested",
+      "aliases": []
+    },
+    "EVT_SuccessfulImitationOfAScript": {
+      "canonical": "Successful Imitation of a Script",
+      "aliases": []
+    },
+    "EVT_DecisionToReturnHome": {
+      "canonical": "Decision to Return Home",
+      "aliases": []
+    },
+    "EVT_PreparationOfTrapAndBarricade": {
+      "canonical": "Preparation of Trap and Barricade",
+      "aliases": []
+    },
+    "EVT_DiscoveryOfGirlByParents": {
+      "canonical": "Discovery of Girl by Parents",
+      "aliases": []
+    },
+    "EVT_DecisionToPrepareTheBarrikade": {
+      "canonical": "Decision to prepare the Barrikade",
+      "aliases": []
+    },
+    "EVT_GoblinSpeerGetoetet": {
+      "canonical": "Goblin-Speer getötet",
+      "aliases": []
+    },
+    "EVT_PlanningPalisadePlacement": {
+      "canonical": "Planning Palisade Placement",
+      "aliases": []
+    },
+    "EVT_ObservationOfTheHouseWithMissingRoof": {
+      "canonical": "Observation of the house with missing roof",
+      "aliases": []
+    },
+    "EVT_DachIsMissing": {
+      "canonical": "Das Dach is missing",
+      "aliases": []
+    },
+    "EVT_ObservationOfSomeoneInTheHouse": {
+      "canonical": "Observation of someone in the house",
+      "aliases": []
+    },
+    "EVT_ValerieClimbsThroughTheWindow": {
+      "canonical": "Valerie climbs through the window",
+      "aliases": []
+    },
+    "EVT_RotunasAttemptsToEnterButIsTooLarge": {
+      "canonical": "Rotunas attempts to enter but is too large",
+      "aliases": []
+    },
+    "EVT_ValerieAsksForFood": {
+      "canonical": "Valerie asks for food",
+      "aliases": []
+    },
+    "EVT_MagicalLockAttemptAtBuergermeisteramt": {
+      "canonical": "Magical lock attempt at Bürgermeisteramt",
+      "aliases": []
+    },
+    "EVT_SpellcastingAttempt": {
+      "canonical": "Spellcasting Attempt",
+      "aliases": []
+    },
+    "EVT_ValerieSSpellcastingDecision": {
+      "canonical": "Valerie's Spellcasting Decision",
+      "aliases": []
+    },
+    "EVT_SpellcastViaClassFeature": {
+      "canonical": "Spellcast via Class-Feature",
+      "aliases": []
+    },
+    "EVT_UseOfClassFeature": {
+      "canonical": "Use of Class-Feature",
+      "aliases": []
+    },
+    "EVT_HopeAdded": {
+      "canonical": "Hope Added",
+      "aliases": []
+    },
+    "EVT_SearchForBertholdBegins": {
+      "canonical": "Search for Berthold Begins",
+      "aliases": []
+    },
+    "EVT_ApproachToBrunnenAndFriedhof": {
+      "canonical": "Approach to Brunnen and Friedhof",
+      "aliases": []
+    },
+    "EVT_ValerieAndRotunasArriveAtTheBuergermeisterSLocation": {
+      "canonical": "Valerie and Rotunas arrive at the Bürgermeister's location",
+      "aliases": []
+    },
+    "EVT_ValerieAttemptsToIntimidateKerl": {
+      "canonical": "Valerie attempts to intimidate Kerl",
+      "aliases": []
+    },
+    "EVT_KerlAllowsThemToSpeakWithTindrail": {
+      "canonical": "Kerl allows them to speak with Tindrail",
+      "aliases": []
+    },
+    "EVT_MeetingTindrael": {
+      "canonical": "Meeting Tindrael",
+      "aliases": []
+    },
+    "EVT_EncounterWithTheGoat": {
+      "canonical": "Encounter with the Goat",
+      "aliases": []
+    },
+    "EVT_AttemptingToRideTheGoat": {
+      "canonical": "Attempting to Ride the Goat",
+      "aliases": []
+    },
+    "EVT_ValerieAttemptsToRideTheGoatBack": {
+      "canonical": "Valerie attempts to ride the goat back",
+      "aliases": []
+    },
+    "EVT_ValerieSuccessfullyRidesTheGoat": {
+      "canonical": "Valerie successfully rides the goat",
+      "aliases": []
+    },
+    "EVT_ValerieUsesFinesseToRideBertieSStone": {
+      "canonical": "Valerie uses Finesse to ride Bertie's Stone",
+      "aliases": []
+    },
+    "EVT_BertieSStoneIsTamedByValerie": {
+      "canonical": "Bertie's Stone is tamed by Valerie",
+      "aliases": []
+    },
+    "EVT_MeetingTindraelAndDiscussingTheGoblinAngriffVorbeugung": {
+      "canonical": "Meeting Tindrael and discussing the Goblin-Angriff Vorbeugung",
+      "aliases": []
+    },
+    "EVT_TindraelLeadsThemToTheWaechter": {
+      "canonical": "Tindrael leads them to the Wächter",
+      "aliases": []
+    },
+    "EVT_ValerieSKnowledgeCheck": {
+      "canonical": "Valerie's Knowledge Check",
+      "aliases": []
+    },
+    "EVT_MovingTowardTheWatchers": {
+      "canonical": "Moving Toward the Watchers",
+      "aliases": []
+    },
+    "EVT_KurzBertiLeadsTheGroupToScheune": {
+      "canonical": "Kurz Berti leads the group to Scheune",
+      "aliases": []
+    },
+    "EVT_ValerieCommentsOnTheEaseOfTheSituation": {
+      "canonical": "Valerie comments on the ease of the situation",
+      "aliases": []
+    },
+    "EVT_WaechterOeffnenTuerMitBunterSchluessel": {
+      "canonical": "Wächter öffnen Tür mit Bunter Schlüssel",
+      "aliases": [
+        "Wächter öffnen Türen mit buntem Schlüssel"
+      ]
+    },
+    "EVT_ValerieBetrittDenRaumVorsichtig": {
+      "canonical": "Valerie betritt den Raum vorsichtig",
+      "aliases": []
+    },
+    "EVT_ArrivalAtBertholdSOffice": {
+      "canonical": "Arrival at Berthold's Office",
+      "aliases": []
+    },
+    "EVT_GoblinAttackWarning": {
+      "canonical": "Goblin Attack Warning",
+      "aliases": []
+    },
+    "EVT_ValeriaGrabsArmbrust": {
+      "canonical": "Valeria Grabs Armbrust",
+      "aliases": []
+    },
+    "EVT_GMProposesLeavingTheVillageOrSettingATrap": {
+      "canonical": "GM proposes leaving the village or setting a trap",
+      "aliases": []
+    },
+    "EVT_ValerieSuggestsSettingATrap": {
+      "canonical": "Valerie suggests setting a trap",
+      "aliases": []
+    },
+    "EVT_GMSReminderAboutPreparations": {
+      "canonical": "GM's Reminder About Preparations",
+      "aliases": []
+    },
+    "EVT_RequestToTakeArmbrust": {
+      "canonical": "Request to Take Armbrust",
+      "aliases": []
+    },
+    "EVT_ValerieAttemptsToConvinceTheGMToLetHerTakeTheCrossbow": {
+      "canonical": "Valerie attempts to convince the GM to let her take the crossbow",
+      "aliases": []
+    },
+    "EVT_GoldDistributionAndAcquisition": {
+      "canonical": "Gold distribution and acquisition",
+      "aliases": []
+    },
+    "EVT_CrossbowAcquisitionAndOwnershipTransfer": {
+      "canonical": "Crossbow acquisition and ownership transfer",
+      "aliases": []
+    },
+    "EVT_TindrellEntersTheTavernWithRotunasAndValerie": {
+      "canonical": "Tindrell enters the tavern with Rotunas and Valerie",
+      "aliases": []
+    },
+    "EVT_ValerieSIdentityConfusion": {
+      "canonical": "Valerie's identity confusion",
+      "aliases": []
+    },
+    "EVT_OrderingDrinksAtTheTavern": {
+      "canonical": "Ordering drinks at the tavern",
+      "aliases": []
+    },
+    "EVT_ValerieSDrinkingAbilityTestedWithHopeAndExperience": {
+      "canonical": "Valerie's drinking ability tested with Hope and Experience",
+      "aliases": []
+    },
+    "EVT_RotunasInteractionWithTheBarkeeper": {
+      "canonical": "Rotunas' interaction with the barkeeper (Hubert)",
+      "aliases": []
+    },
+    "EVT_VillagerOffersHelpToFortifyTheVillage": {
+      "canonical": "Villager Offers Help to Fortify the Village",
+      "aliases": []
+    },
+    "EVT_GoblinAttackImminent": {
+      "canonical": "Goblin attack imminent",
+      "aliases": []
+    },
+    "EVT_RotunasSuggestsSettingATrapOrRelyingOnTheGuards": {
+      "canonical": "Rotunas suggests setting a trap or relying on the guards",
+      "aliases": []
+    },
+    "EVT_RotunasEncouragesCollectiveDefense": {
+      "canonical": "Rotunas encourages collective defense",
+      "aliases": []
+    },
+    "EVT_GMDescribesCombatReadinessOfVillageInhabitants": {
+      "canonical": "GM Describes Combat Readiness of Village Inhabitants",
+      "aliases": []
+    },
+    "EVT_RotunasAsksAboutIdentityOfTravelers": {
+      "canonical": "Rotunas Asks About Identity of Travelers",
+      "aliases": []
+    },
+    "EVT_GMDescribesElisaSCombatRoleAndMoraleConcerns": {
+      "canonical": "GM Describes Elisa's Combat Role and Morale Concerns",
+      "aliases": []
+    },
+    "EVT_ValerieSharesPastMagicianGameWithRotunas": {
+      "canonical": "Valerie Shares Past Magician Game with Rotunas",
+      "aliases": []
+    },
+    "EVT_ValerieAndRotunasFireballJuggling": {
+      "canonical": "Valerie and Rotunas' Fireball Juggling",
+      "aliases": []
+    },
+    "EVT_NipSDrunkenCollapse": {
+      "canonical": "Nip's Drunken Collapse",
+      "aliases": []
+    },
+    "EVT_ValerieAttemptsToCheckOnRotunasWithoutUsingHope": {
+      "canonical": "Valerie attempts to check on Rotunas without using Hope",
+      "aliases": []
+    },
+    "EVT_RotunasLeavesTheBuilding": {
+      "canonical": "Rotunas leaves the building",
+      "aliases": []
+    },
+    "EVT_TimeCheck": {
+      "canonical": "Time check",
+      "aliases": []
+    },
+    "EVT_RudiLeavesTheBuilding": {
+      "canonical": "Rudi leaves the building",
+      "aliases": []
+    },
+    "EVT_CharacterLeavesTheBuilding": {
+      "canonical": "Character leaves the building",
+      "aliases": []
+    },
+    "EVT_TimeCheckAndRealizationOfOverexertion": {
+      "canonical": "Time check and realization of overexertion",
+      "aliases": []
+    },
+    "EVT_BauernOfferierenBarrikaden": {
+      "canonical": "Bauern offerieren Barrikaden",
+      "aliases": [
+        "Bauern offer Barrikaden"
+      ]
+    },
+    "EVT_VorschlagFuerEineFalle": {
+      "canonical": "Vorschlag für eine Falle",
+      "aliases": []
+    },
+    "EVT_BarrikadenAngebotVonBauern": {
+      "canonical": "Barrikaden Angebot von Bauern",
+      "aliases": []
+    },
+    "EVT_EntscheidungUeberBarrikaden": {
+      "canonical": "Entscheidung über Barrikaden",
+      "aliases": []
+    },
+    "EVT_OfferOfBarrikadenByFarmers": {
+      "canonical": "Offer of Barrikaden by Farmers",
+      "aliases": []
+    },
+    "EVT_DecisionToConsiderPlacementOfBarrikaden": {
+      "canonical": "Decision to Consider Placement of Barrikaden",
+      "aliases": []
+    },
+    "EVT_BauernOfferToBuildBarricades": {
+      "canonical": "Bauern offer to build barricades",
+      "aliases": []
+    },
+    "EVT_FeldMitZaunPalisadeBeschaffen": {
+      "canonical": "Feld mit Zaun/Palisade beschaffen",
+      "aliases": []
+    },
+    "EVT_ValerieStiehltHolzAusDemFeld": {
+      "canonical": "Valerie stiehlt Holz aus dem Feld",
+      "aliases": []
+    },
+    "EVT_ReactionsToValerieSAction": {
+      "canonical": "Reactions to Valerie's Action",
+      "aliases": []
+    },
+    "EVT_ValerieEntersTheForge": {
+      "canonical": "Valerie enters the forge",
+      "aliases": []
+    },
+    "EVT_ValerieLeavesTheScene": {
+      "canonical": "Valerie leaves the scene",
+      "aliases": []
+    },
+    "EVT_GMDescribesSchmiedSReactionToValerie": {
+      "canonical": "GM describes Schmied's reaction to Valerie",
+      "aliases": []
+    },
+    "EVT_ArrivalAtTheSmithy": {
+      "canonical": "Arrival at the Smithy",
+      "aliases": []
+    },
+    "EVT_EncounterWithTheYoungWomanAtHof": {
+      "canonical": "Encounter with the young woman at Hof",
+      "aliases": []
+    },
+    "EVT_FireInTheForest": {
+      "canonical": "Fire in the Forest",
+      "aliases": []
+    },
+    "EVT_PlanningADefensiveStrategy": {
+      "canonical": "Planning a defensive strategy",
+      "aliases": []
+    },
+    "EVT_DecisionToUseTischeAsAdditionalDefense": {
+      "canonical": "Decision to Use Tische as Additional Defense",
+      "aliases": []
+    },
+    "EVT_FinalPlacementOfPalisades": {
+      "canonical": "Final Placement of Palisades",
+      "aliases": []
+    },
+    "EVT_SettingUpSpitzdingernForDefense": {
+      "canonical": "Setting up Spitzdingern for defense",
+      "aliases": []
+    },
+    "EVT_DeploymentOfTraps": {
+      "canonical": "Deployment of Traps",
+      "aliases": []
+    },
+    "EVT_NPCCombatRolesAssigned": {
+      "canonical": "NPC Combat Roles Assigned",
+      "aliases": []
+    },
+    "EVT_MissionCompletion": {
+      "canonical": "Mission Completion",
+      "aliases": []
+    },
+    "EVT_DeploymentOfFigures": {
+      "canonical": "Deployment of Figures",
+      "aliases": []
+    },
+    "EVT_PlanToLureEnemyWithFarmer": {
+      "canonical": "Plan to Lure Enemy with Farmer",
+      "aliases": []
+    },
+    "EVT_EndOfDayAndPreparationForNextMission": {
+      "canonical": "End of Day and Preparation for Next Mission",
+      "aliases": []
+    },
+    "EVT_EndOfTheDay": {
+      "canonical": "End of the Day",
+      "aliases": []
+    },
+    "EVT_AttemptedHouseRobbery": {
+      "canonical": "Attempted House Robbery",
+      "aliases": []
+    },
+    "EVT_AttemptToLootTheOldMerchantSHouse": {
+      "canonical": "Attempt to loot the old merchant's house",
+      "aliases": []
+    },
+    "EVT_SetupForFutureAttack": {
+      "canonical": "Setup for future attack",
+      "aliases": []
+    },
+    "EVT_ParallelmissionAnnounced": {
+      "canonical": "Parallelmission announced",
+      "aliases": []
+    },
+    "EVT_GMIntroducesTheSessionAndContext": {
+      "canonical": "GM Introduces the Session and Context",
+      "aliases": []
+    },
+    "EVT_GMEncouragesPlayerCreativity": {
+      "canonical": "GM Encourages Player Creativity",
+      "aliases": []
+    },
+    "EVT_CampArrivalAndRest": {
+      "canonical": "Camp Arrival and Rest",
+      "aliases": []
+    },
+    "EVT_DecisionToExploreTheCrypt": {
+      "canonical": "Decision to Explore the Crypt",
+      "aliases": []
+    },
+    "EVT_DecisionToExploreTheCryptImmediately": {
+      "canonical": "Decision to Explore the Crypt Immediately",
+      "aliases": []
+    },
+    "EVT_EsterossaPerformsABlessingRitual": {
+      "canonical": "Esterossa Performs a Blessing Ritual",
+      "aliases": []
+    },
+    "EVT_DecisionToProceedInTheDarkForest": {
+      "canonical": "Decision to Proceed in the Dark Forest",
+      "aliases": []
+    },
+    "EVT_DecisionOnMovementDirection": {
+      "canonical": "Decision on Movement Direction",
+      "aliases": []
+    },
+    "EVT_CookieEatsSeerose": {
+      "canonical": "Cookie eats Seerose",
+      "aliases": []
+    },
+    "EVT_GMStatesOwnershipOfSomething": {
+      "canonical": "GM states ownership of something",
+      "aliases": []
+    },
+    "EVT_LindoLautSpotsAGnomeInTheTower": {
+      "canonical": "Lindo Laut spots a Gnome in the Tower",
+      "aliases": []
+    },
+    "EVT_LindoLautApproachesPhipps": {
+      "canonical": "Lindo Laut approaches Phipps",
+      "aliases": []
+    },
+    "EVT_IntroductionOfLindoLautSQuest": {
+      "canonical": "Introduction of Lindo Laut's quest",
+      "aliases": []
+    },
+    "EVT_PhippsRevealsLocationDetails": {
+      "canonical": "Phipps reveals location details",
+      "aliases": []
+    },
+    "EVT_EsterossaEntersThroughWindow": {
+      "canonical": "Esterossa enters through window",
+      "aliases": []
+    },
+    "EVT_DodoSFrustrationWithDoubleDoors": {
+      "canonical": "Dodo's frustration with double doors",
+      "aliases": []
+    },
+    "EVT_RotunasRecognizesPhipps": {
+      "canonical": "Rotunas recognizes Phipps",
+      "aliases": []
+    },
+    "EVT_PhippsDescribesAlteBurgAndKrypta": {
+      "canonical": "Phipps describes Alte Burg and Krypta",
+      "aliases": []
+    },
+    "EVT_CookieSCommentOnBodyShaming": {
+      "canonical": "Cookie's comment on body shaming",
+      "aliases": []
+    },
+    "EVT_DescriptionOfAlteBurgAndItsInhabitants": {
+      "canonical": "Description of Alte Burg and its inhabitants",
+      "aliases": []
+    },
+    "EVT_GMDescribesFellbiesterGrottenschrate": {
+      "canonical": "GM describes Fellbiester/Grottenschrate",
+      "aliases": []
+    },
+    "EVT_CookieInterruptsWithACommentAboutBodyShaming": {
+      "canonical": "Cookie interrupts with a comment about body shaming",
+      "aliases": []
+    },
+    "EVT_LindoLautBeginsADeceptiveStatement": {
+      "canonical": "Lindo Laut begins a deceptive statement",
+      "aliases": []
+    },
+    "EVT_LindoLautSAttemptedDeception": {
+      "canonical": "Lindo Laut's attempted deception",
+      "aliases": []
+    },
+    "EVT_LindoLautSDeceptionAttempt": {
+      "canonical": "Lindo Laut's deception attempt",
+      "aliases": []
+    },
+    "EVT_GroupHeadsToBurg": {
+      "canonical": "Group Heads to Burg",
+      "aliases": []
+    },
+    "EVT_PhippsTowerInDisrepair": {
+      "canonical": "Phipps' Tower in Disrepair",
+      "aliases": []
+    },
+    "EVT_PhippsCharacterizationAndBehavior": {
+      "canonical": "Phipps' Characterization and Behavior",
+      "aliases": []
+    },
+    "EVT_LindoLautSDecisionToGainTrustWithPhipps": {
+      "canonical": "Lindo Laut's decision to gain trust with Phipps",
+      "aliases": []
+    },
+    "EVT_RequestForTipsFromPhilips": {
+      "canonical": "Request for Tips from Philips",
+      "aliases": []
+    },
+    "EVT_CharacterSuspicionAndHiddenInformation": {
+      "canonical": "Character suspicion and hidden information",
+      "aliases": []
+    },
+    "EVT_LindoLautSSuspicionAndHesitation": {
+      "canonical": "Lindo Laut's suspicion and hesitation",
+      "aliases": []
+    },
+    "EVT_LindoLautAttemptsToPersuadeFipsToGoToTheKathedra": {
+      "canonical": "Lindo Laut attempts to persuade Fips to go to the Kathedra",
+      "aliases": []
+    },
+    "EVT_FipsRefusesToGoToTheKrypta": {
+      "canonical": "Fips refuses to go to the Krypta",
+      "aliases": []
+    },
+    "EVT_GroupDecidesNotToForceFipsToAccompanyThem": {
+      "canonical": "Group decides not to force Fips to accompany them",
+      "aliases": []
+    },
+    "EVT_FipsGivesInformationAboutTheKrypta": {
+      "canonical": "Fips gives information about the Krypta",
+      "aliases": []
+    },
+    "EVT_BenjaminIsIntroducedAndBecomesAFriendToLindoLaut": {
+      "canonical": "Benjamin is introduced and becomes a friend to Lindo Laut",
+      "aliases": []
+    },
+    "EVT_OldBuildingCollapse": {
+      "canonical": "Old Building Collapse",
+      "aliases": []
+    },
+    "EVT_BuildingStructureInstability": {
+      "canonical": "Building Structure Instability",
+      "aliases": []
+    },
+    "EVT_BuildingSWoodenStructurePartiallyCollapses": {
+      "canonical": "Building's wooden structure partially collapses",
+      "aliases": []
+    },
+    "EVT_CookieFindsASmallWoodenSculptureInTheRuins": {
+      "canonical": "Cookie finds a small wooden sculpture in the ruins",
+      "aliases": []
+    },
+    "EVT_ASparkFromCookieSTorchCausesASmallFire": {
+      "canonical": "A spark from Cookie's torch causes a small fire",
+      "aliases": []
+    },
+    "EVT_CookiePicksUpTheVoodooPuppe": {
+      "canonical": "Cookie picks up the Voodoo-Puppe",
+      "aliases": []
+    },
+    "EVT_CookieReceivesAWoodenPuppet": {
+      "canonical": "Cookie receives a wooden puppet",
+      "aliases": []
+    },
+    "EVT_LindoLautPlaysAHeartwarmingSong": {
+      "canonical": "Lindo Laut plays a heartwarming song",
+      "aliases": []
+    },
+    "EVT_DodoIsTargetedByAFairySBolt": {
+      "canonical": "Dodo is targeted by a fairy's bolt",
+      "aliases": []
+    },
+    "EVT_DodoDeclaresInnovationValue": {
+      "canonical": "Dodo declares Innovation value",
+      "aliases": []
+    },
+    "EVT_DodoSSchildBlocksAnAttack": {
+      "canonical": "Dodo's Schild Blocks an Attack",
+      "aliases": []
+    },
+    "EVT_RotunasTakes3PhysicalDamageFromABolt": {
+      "canonical": "Rotunas Takes 3 Physical Damage from a Bolt",
+      "aliases": []
+    },
+    "EVT_DodoTakes6PhysicalDamageFromABolt": {
+      "canonical": "Dodo Takes 6 Physical Damage from a Bolt",
+      "aliases": []
+    },
+    "EVT_RotunasUsesTabasArmourOnPirell": {
+      "canonical": "Rotunas Uses Tabas Armour on Pirell",
+      "aliases": []
+    },
+    "EVT_CookieSuggestsGoingAroundTheSteine": {
+      "canonical": "Cookie Suggests Going Around the Steine",
+      "aliases": []
+    },
+    "EVT_ArmorScoreIncreaseViaArmorSlotMarking": {
+      "canonical": "Armor Score Increase via Armor Slot Marking",
+      "aliases": []
+    },
+    "EVT_GoblinGoetterObservation": {
+      "canonical": "Goblin-Götter Observation",
+      "aliases": []
+    },
+    "EVT_DecisionToSpyOnTheRightSide": {
+      "canonical": "Decision to Spy on the Right Side",
+      "aliases": []
+    },
+    "EVT_FinesseCheckForStealth": {
+      "canonical": "Finesse Check for Stealth",
+      "aliases": []
+    },
+    "EVT_FailedStealthAttemptByRotunas": {
+      "canonical": "Failed Stealth Attempt by Rotunas",
+      "aliases": []
+    },
+    "EVT_MapChangeToBodenloseMappe": {
+      "canonical": "Map Change to bodenlose Mappe (neue Map)",
+      "aliases": []
+    },
+    "EVT_DiscoveryOfAdditionalGuardByTheGroup": {
+      "canonical": "Discovery of additional guard by the group",
+      "aliases": []
+    },
+    "EVT_SpottingAdditionalGuard": {
+      "canonical": "Spotting Additional Guard",
+      "aliases": []
+    },
+    "EVT_SpottedAdditionalGuard": {
+      "canonical": "Spotted Additional Guard",
+      "aliases": []
+    },
+    "EVT_EsterossaMovesAlongTheWall": {
+      "canonical": "Esterossa moves along the wall",
+      "aliases": []
+    },
+    "EVT_AdditionalWacheSpotted": {
+      "canonical": "Additional Wache spotted",
+      "aliases": []
+    },
+    "EVT_WardenSpottedByEsterossa": {
+      "canonical": "Warden spotted by Esterossa",
+      "aliases": []
+    },
+    "EVT_DodoSStealthCheck": {
+      "canonical": "Dodo's Stealth Check",
+      "aliases": []
+    },
+    "EVT_LindoLautSMagicalPowerPushAttempt": {
+      "canonical": "Lindo Laut's Magical Power Push Attempt",
+      "aliases": []
+    },
+    "EVT_RotunasJumpOverWallAndMagicalAttack": {
+      "canonical": "Rotunas' Jump Over Wall and Magical Attack",
+      "aliases": []
+    },
+    "EVT_RunenAmArmActivateAndUnleashALightningStrike": {
+      "canonical": "Runen am Arm activate and unleash a lightning strike",
+      "aliases": []
+    },
+    "EVT_RotunasUnleashesAMagicalAttackWithRunes": {
+      "canonical": "Rotunas unleashes a magical attack with runes",
+      "aliases": []
+    },
+    "EVT_RotunasChoosesToUseTheSixSidedDie": {
+      "canonical": "Rotunas chooses to use the Six-Sided Die",
+      "aliases": []
+    },
+    "EVT_LindoLautSPowerpushWithLackbaender": {
+      "canonical": "Lindo Laut's Powerpush with Lackbänder",
+      "aliases": []
+    },
+    "EVT_EnemyTurnActivation": {
+      "canonical": "Enemy Turn Activation",
+      "aliases": []
+    },
+    "EVT_LindoLautUsesLackbaenderAndManifestsMagic": {
+      "canonical": "Lindo Laut uses Lackbänder and manifests magic",
+      "aliases": []
+    },
+    "EVT_RotunasEvadesAnAttack": {
+      "canonical": "Rotunas evades an attack",
+      "aliases": []
+    },
+    "EVT_CookieAttemptsToTargetAnEnemySKnee": {
+      "canonical": "Cookie attempts to target an enemy's knee",
+      "aliases": []
+    },
+    "EVT_CookieDealsDamageToAnEnemy": {
+      "canonical": "Cookie deals damage to an enemy",
+      "aliases": []
+    },
+    "EVT_EnemyAttacksTheFlyingPaladin": {
+      "canonical": "Enemy attacks the flying paladin",
+      "aliases": [
+        "Enemy attacks flying Paladin"
+      ]
+    },
+    "EVT_EsterossaTakesDamageFromRotunas": {
+      "canonical": "Esterossa takes damage from Rotunas",
+      "aliases": []
+    },
+    "EVT_CookieIsAttackedByAnEnemy": {
+      "canonical": "Cookie is attacked by an enemy",
+      "aliases": []
+    },
+    "EVT_DodoBlocksTheAttackWithShield": {
+      "canonical": "Dodo blocks the attack with shield",
+      "aliases": []
+    },
+    "EVT_DodoUsesShieldToBlockAttack": {
+      "canonical": "Dodo uses shield to block attack",
+      "aliases": []
+    },
+    "EVT_DodoUsesShieldToBlockAttackOnCookie": {
+      "canonical": "Dodo uses shield to block attack on Cookie",
+      "aliases": []
+    },
+    "EVT_DodoUsesShieldToBlockDamageForCookie": {
+      "canonical": "Dodo uses shield to block damage for Cookie",
+      "aliases": []
+    },
+    "EVT_DodoAttemptsToPushGoblinKoenigsBodyguardWithShield": {
+      "canonical": "Dodo attempts to push Goblin-Königs Bodyguard with shield",
+      "aliases": []
+    },
+    "EVT_EsterossaCastsAShimmeringLight": {
+      "canonical": "Esterossa casts a Shimmering Light",
+      "aliases": []
+    },
+    "EVT_BugbearNosesAndFalls": {
+      "canonical": "Bugbear Noses and Falls",
+      "aliases": []
+    },
+    "EVT_DodoUsesArmorSlot": {
+      "canonical": "Dodo Uses Armor Slot",
+      "aliases": []
+    },
+    "EVT_CookieAttemptsToFocusOnEnemy": {
+      "canonical": "Cookie Attempts to Focus on Enemy",
+      "aliases": []
+    },
+    "EVT_RangerFokusActivationAttempt": {
+      "canonical": "Ranger-Fokus Activation Attempt",
+      "aliases": []
+    },
+    "EVT_LindoLautDealsDamageWithWeaponProficiency": {
+      "canonical": "Lindo Laut deals damage with weapon proficiency",
+      "aliases": []
+    },
+    "EVT_DodoUsesAnArmorSlotToMitigateDamage": {
+      "canonical": "Dodo uses an Armor Slot to mitigate damage",
+      "aliases": []
+    },
+    "EVT_MonsterGrowsInSizeAndAttacksAgain": {
+      "canonical": "Monster grows in size and attacks again",
+      "aliases": []
+    },
+    "EVT_DodoTauntsTheMonster": {
+      "canonical": "Dodo taunts the monster",
+      "aliases": []
+    },
+    "EVT_CookieCastsASpellWithW8PhysicalDamage": {
+      "canonical": "Cookie casts a spell with W8 + Physical Damage",
+      "aliases": []
+    },
+    "EVT_EnemyKilledInCombat": {
+      "canonical": "Enemy Killed in Combat",
+      "aliases": []
+    },
+    "EVT_DecisionToEnterTheLocation": {
+      "canonical": "Decision to enter the location",
+      "aliases": []
+    },
+    "EVT_GMSCommentOnBeingMurderers": {
+      "canonical": "GM's comment on being murderers",
+      "aliases": []
+    },
+    "EVT_DecisionToNotSpareTheEnemy": {
+      "canonical": "Decision to not spare the enemy",
+      "aliases": []
+    },
+    "EVT_EnteringTheBuilding": {
+      "canonical": "Entering the building",
+      "aliases": []
+    },
+    "EVT_DecisionToNotSpareACapturedEnemy": {
+      "canonical": "Decision to not spare a captured enemy",
+      "aliases": []
+    },
+    "EVT_EnteringANewLocation": {
+      "canonical": "Entering a new location",
+      "aliases": []
+    },
+    "EVT_RotunasDismissesTheIdeaOfSparingCaptives": {
+      "canonical": "Rotunas dismisses the idea of sparing captives",
+      "aliases": []
+    },
+    "EVT_LindoLautHesitatesBeforeEnteringALocation": {
+      "canonical": "Lindo Laut hesitates before entering a location",
+      "aliases": []
+    },
+    "EVT_GMAcknowledgesTheGroupSMurderousActionsWithApproval": {
+      "canonical": "GM acknowledges the group's murderous actions with approval",
+      "aliases": []
+    },
+    "EVT_GroupSReadinessForAction": {
+      "canonical": "Group's readiness for action",
+      "aliases": []
+    },
+    "EVT_DecisionToEnterTheBuilding": {
+      "canonical": "Decision to Enter the Building",
+      "aliases": []
+    },
+    "EVT_GroupIdentityDeclaration": {
+      "canonical": "Group Identity Declaration",
+      "aliases": []
+    },
+    "EVT_RallyDieDistribution": {
+      "canonical": "Rally Die Distribution",
+      "aliases": []
+    },
+    "EVT_EsterossaUsesKnowledgeToIdentifyLocation": {
+      "canonical": "Esterossa Uses Knowledge to Identify Location",
+      "aliases": []
+    },
+    "EVT_BloodOfferingRitualAttempt": {
+      "canonical": "Blood Offering Ritual Attempt",
+      "aliases": []
+    },
+    "EVT_StatueSFlameAwakens": {
+      "canonical": "Statue's Flame Awakens",
+      "aliases": []
+    },
+    "EVT_FlameStichAttack": {
+      "canonical": "Flame Stich Attack",
+      "aliases": []
+    },
+    "EVT_DamageAssignmentDuringCombat": {
+      "canonical": "Damage Assignment During Combat",
+      "aliases": []
+    },
+    "EVT_SearchingForLindaSName": {
+      "canonical": "Searching for Linda's Name",
+      "aliases": []
+    },
+    "EVT_DiscoveringFreshNamesInTheBook": {
+      "canonical": "Discovering Fresh Names in the Book",
+      "aliases": []
+    },
+    "EVT_InvestigatingThePillar": {
+      "canonical": "Investigating the Pillar (Stein)",
+      "aliases": []
+    },
+    "EVT_ExaminingThePillar": {
+      "canonical": "Examining the Pillar",
+      "aliases": []
+    },
+    "EVT_InspectingTheStone": {
+      "canonical": "Inspecting the Stone",
+      "aliases": []
+    },
+    "EVT_KnowledgeCheckByDodo": {
+      "canonical": "Knowledge Check by Dodo",
+      "aliases": []
+    },
+    "EVT_DestroyingTheMagicalArmor": {
+      "canonical": "Destroying the Magical Armor",
+      "aliases": []
+    },
+    "EVT_RotunasExaminesTheStoneAtEingang": {
+      "canonical": "Rotunas Examines the Stone at Eingang",
+      "aliases": []
+    },
+    "EVT_RotunasExaminesTheStoneAtTheEntrance": {
+      "canonical": "Rotunas examines the stone at the entrance",
+      "aliases": []
+    },
+    "EVT_SpellmodifikatorUsedInNordeststadt": {
+      "canonical": "Spellmodifikator used in Nordeststadt",
+      "aliases": []
+    },
+    "EVT_AttemptToUseMagicOnTheGravestone": {
+      "canonical": "Attempt to Use Magic on the Gravestone",
+      "aliases": []
+    },
+    "EVT_ExaminationOfTheGravestone": {
+      "canonical": "Examination of the Gravestone",
+      "aliases": []
+    },
+    "EVT_AttemptToOpenDoorWithForce": {
+      "canonical": "Attempt to Open Door with Force",
+      "aliases": []
+    },
+    "EVT_TreeCommunicationAttemptFails": {
+      "canonical": "Tree Communication Attempt Fails",
+      "aliases": []
+    },
+    "EVT_BookAndGravestoneTaken": {
+      "canonical": "Book and Gravestone Taken",
+      "aliases": []
+    },
+    "EVT_BuchMitNamenslisteWirdGenommen": {
+      "canonical": "Buch mit Namensliste wird genommen",
+      "aliases": []
+    },
+    "EVT_InstinktwurfZurSucheNachFallen": {
+      "canonical": "Instinktwurf zur Suche nach Fallen",
+      "aliases": []
+    },
+    "EVT_MonolithenFlaecheFalleWarnung": {
+      "canonical": "Monolithen-Fläche Falle Warnung",
+      "aliases": []
+    },
+    "EVT_MonolithenFlaecheWarning": {
+      "canonical": "Monolithen-Fläche Warning",
+      "aliases": []
+    },
+    "EVT_MonolithenWarnung": {
+      "canonical": "Monolithen warnung",
+      "aliases": []
+    },
+    "EVT_DodoWarnsAboutTheGroundAndMonolithen": {
+      "canonical": "Dodo warns about the ground and Monolithen",
+      "aliases": []
+    },
+    "EVT_RotunasRepeatsMagischeSteine": {
+      "canonical": "Rotunas repeats 'Magische Steine'",
+      "aliases": []
+    },
+    "EVT_LindoLautSWelcomeAndChallenge": {
+      "canonical": "Lindo Laut's Welcome and Challenge",
+      "aliases": []
+    },
+    "EVT_LindoLautConfrontsIntruders": {
+      "canonical": "Lindo Laut confronts intruders",
+      "aliases": []
+    },
+    "EVT_EsterossaIdentifiesLindoLaut": {
+      "canonical": "Esterossa identifies Lindo Laut",
+      "aliases": []
+    },
+    "EVT_EsterossaAsksAboutIdentity": {
+      "canonical": "Esterossa asks about identity",
+      "aliases": []
+    },
+    "EVT_ADoorOpensAsTheGroupEntersTheRoom": {
+      "canonical": "A door opens as the group enters The Room",
+      "aliases": []
+    },
+    "EVT_GMDisablesAndReEnablesCameras": {
+      "canonical": "GM disables and re-enables cameras",
+      "aliases": []
+    },
+    "EVT_DennisDisappearsIntoTheWall": {
+      "canonical": "Dennis disappears into the wall",
+      "aliases": []
+    },
+    "EVT_CookieLosesVision": {
+      "canonical": "Cookie loses vision",
+      "aliases": []
+    },
+    "EVT_DiscoveringTheSearchablePerson": {
+      "canonical": "Discovering the searchable person",
+      "aliases": []
+    },
+    "EVT_WallOpensToRevealTreasureRoom": {
+      "canonical": "Wall opens to reveal treasure room",
+      "aliases": []
+    },
+    "EVT_LindoLautSVoiceSpeaksFromTheTreasureRoom": {
+      "canonical": "Lindo Laut's voice speaks from the treasure room",
+      "aliases": []
+    },
+    "EVT_EsterossaJumpsIntoTheGoldAndTakesDamage": {
+      "canonical": "Esterossa jumps into the gold and takes damage",
+      "aliases": []
+    },
+    "EVT_DodoCollectsGoldAfterSeeingOthersDoSo": {
+      "canonical": "Dodo collects gold after seeing others do so",
+      "aliases": []
+    },
+    "EVT_LindoLautMocksTheGroupSPredictability": {
+      "canonical": "Lindo Laut mocks the group's predictability",
+      "aliases": []
+    },
+    "EVT_GoldAcquisitionAndBenjaminSReaction": {
+      "canonical": "Gold acquisition and Benjamin's reaction",
+      "aliases": []
+    },
+    "EVT_SkeletalAmbush": {
+      "canonical": "Skeletal ambush",
+      "aliases": []
+    },
+    "EVT_CombatDamageDealt": {
+      "canonical": "Combat damage dealt",
+      "aliases": []
+    },
+    "EVT_DodoSIntervention": {
+      "canonical": "Dodo's intervention",
+      "aliases": []
+    },
+    "EVT_ArmorRedistribution": {
+      "canonical": "Armor redistribution",
+      "aliases": []
+    },
+    "EVT_DodoAbsorbsAllAttacks": {
+      "canonical": "Dodo absorbs all attacks",
+      "aliases": []
+    },
+    "EVT_EsterossaUsesWingedSentinelToAttack": {
+      "canonical": "Esterossa uses Winged Sentinel to attack",
+      "aliases": []
+    },
+    "EVT_PaladinDestroysEsterossaSAxe": {
+      "canonical": "Paladin destroys Esterossa's axe",
+      "aliases": []
+    },
+    "EVT_CookieUsesRankenAbilityOnEnemy": {
+      "canonical": "Cookie uses ranken ability on enemy",
+      "aliases": []
+    },
+    "EVT_BogenschuetzenRetaliateAfterCookieSSpell": {
+      "canonical": "Bogenschützen retaliate after Cookie's spell",
+      "aliases": []
+    },
+    "EVT_SkeletonsAreDestroyedByRoots": {
+      "canonical": "Skeletons are destroyed by roots",
+      "aliases": []
+    },
+    "EVT_ArchersTargetCookie": {
+      "canonical": "Archers target Cookie",
+      "aliases": []
+    },
+    "EVT_EsterossaUsesPreyDiceToReduceDamage": {
+      "canonical": "Esterossa uses Prey Dice to reduce damage",
+      "aliases": []
+    },
+    "EVT_LindoLautCastsIceSpikesOnTheRightArcher": {
+      "canonical": "Lindo Laut casts Ice Spikes on the right archer",
+      "aliases": []
+    },
+    "EVT_LindoLautAttacksWithEisspikes": {
+      "canonical": "Lindo Laut attacks with Eisspikes",
+      "aliases": []
+    },
+    "EVT_EsterossaSIceAttackOnSkeleton": {
+      "canonical": "Esterossa's Ice Attack on Skeleton",
+      "aliases": []
+    },
+    "EVT_SkelettAktiviertUndGreiftDodoAn": {
+      "canonical": "Skelett aktiviert und greift Dodo an",
+      "aliases": []
+    },
+    "EVT_DodoGreiftMitEvasion4Zurueck": {
+      "canonical": "Dodo greift mit Evasion 4 zurück",
+      "aliases": []
+    },
+    "EVT_RotunasGreiftSkelettAn": {
+      "canonical": "Rotunas greift Skelett an",
+      "aliases": []
+    },
+    "EVT_EsterossaHeiltSichMitMendingTouch": {
+      "canonical": "Esterossa heilt sich mit Mending Touch",
+      "aliases": []
+    },
+    "EVT_UntersuchungDerStatue": {
+      "canonical": "Untersuchung der Statue",
+      "aliases": []
+    },
+    "EVT_InvestigationOfTheRitterstatue": {
+      "canonical": "Investigation of the Ritterstatue",
+      "aliases": []
+    },
+    "EVT_InvestigationOfTrapsOrStones": {
+      "canonical": "Investigation of traps or stones",
+      "aliases": []
+    },
+    "EVT_LindoLautExaminesTheTrapOrStoneAgain": {
+      "canonical": "Lindo Laut examines the trap or stone again",
+      "aliases": []
+    },
+    "EVT_CritOnInstinctCheck": {
+      "canonical": "Crit on Instinct Check",
+      "aliases": []
+    },
+    "EVT_StatuenraumMitMagiewelleDiscovery": {
+      "canonical": "Statuenraum mit Magiewelle discovery",
+      "aliases": []
+    },
+    "EVT_TuerenOpeningAndClosing": {
+      "canonical": "Türen opening and closing",
+      "aliases": []
+    },
+    "EVT_GoblinKoenigSIntroductionAndRequestForDance": {
+      "canonical": "Goblin-König's Introduction and Request for Dance",
+      "aliases": []
+    },
+    "EVT_AttemptToIntimidateTheGoblinKoenig": {
+      "canonical": "Attempt to Intimidate the Goblin-König",
+      "aliases": []
+    },
+    "EVT_IntroductionOfRotunasAndLindoLaut": {
+      "canonical": "Introduction of Rotunas and Lindo Laut",
+      "aliases": []
+    },
+    "EVT_LindoLautSPerformanceRequest": {
+      "canonical": "Lindo Laut's Performance Request",
+      "aliases": []
+    },
+    "EVT_LindoLautPerformsAnEpicSong": {
+      "canonical": "Lindo Laut performs an epic song",
+      "aliases": []
+    },
+    "EVT_AltarBeginsToGlow": {
+      "canonical": "Altar begins to glow",
+      "aliases": []
+    },
+    "EVT_CookieAttemptsToUseVoodooPuppe": {
+      "canonical": "Cookie attempts to use Voodoo-Puppe",
+      "aliases": []
+    },
+    "EVT_MissionErfassenDesDungeonsCompletedSuccessfully": {
+      "canonical": "Mission: Erfassen des Dungeons completed successfully",
+      "aliases": []
+    },
+    "EVT_DodoInitiatesCombatWithGoblin": {
+      "canonical": "Dodo initiates combat with Goblin",
+      "aliases": []
+    },
+    "EVT_EndOfDayTransition": {
+      "canonical": "End of day transition",
+      "aliases": []
+    },
+    "EVT_IdentificationOfSteingebilde": {
+      "canonical": "Identification of Steingebilde",
+      "aliases": []
+    },
+    "EVT_WildschweinErscheintPloetzlich": {
+      "canonical": "Wildschwein erscheint plötzlich",
+      "aliases": []
+    },
+    "EVT_TimeConstraintForCompletingTheQuest": {
+      "canonical": "Time constraint for completing the quest",
+      "aliases": []
+    },
+    "EVT_EsterossaSuggestsSpying": {
+      "canonical": "Esterossa suggests spying",
+      "aliases": []
+    },
+    "EVT_InconvenientEncounterWithAnInebriatedFigure": {
+      "canonical": "Inconvenient encounter with an inebriated figure",
+      "aliases": []
+    },
+    "EVT_GoblinKindSHeadRemoved": {
+      "canonical": "Goblin-Kind's Head Removed",
+      "aliases": []
+    },
+    "EVT_GoblinsGatherAtHauptgebaeude": {
+      "canonical": "Goblins Gather at Hauptgebäude",
+      "aliases": []
+    },
+    "EVT_SearchingKisteTruheForLoot": {
+      "canonical": "Searching Kiste / Truhe for loot",
+      "aliases": []
+    },
+    "EVT_GoblinEncounterTwoGoblinsAppearAndAttackTheParty": {
+      "canonical": "Goblin Encounter — Two goblins appear and attack the party",
+      "aliases": []
+    },
+    "EVT_WachePlanung": {
+      "canonical": "Wache-Planung",
+      "aliases": []
+    },
+    "EVT_NebelUndUmgebung": {
+      "canonical": "Nebel und Umgebung",
+      "aliases": []
+    },
+    "EVT_NatureIsQuestionedAboutACharacterSMorality": {
+      "canonical": "Nature is questioned about a character's morality",
+      "aliases": []
+    },
+    "EVT_FrettchenSDeathAndPlacementInPokeball": {
+      "canonical": "Frettchen's death and placement in Pokéball",
+      "aliases": []
+    },
+    "EVT_EsterossaPerformsAFinesseCheck": {
+      "canonical": "Esterossa performs a Finesse check",
+      "aliases": []
+    },
+    "EVT_GoblinsNoticeCookieSFrettchenAndPursueIt": {
+      "canonical": "Goblins notice Cookie's Frettchen and pursue it",
+      "aliases": []
+    },
+    "EVT_StressFromConsecutiveAttacks": {
+      "canonical": "Stress from consecutive attacks",
+      "aliases": []
+    },
+    "EVT_EsterossaSAttackOnGoblin": {
+      "canonical": "Esterossa's attack on goblin",
+      "aliases": []
+    },
+    "EVT_EsterossaSAttackOnTheAxt": {
+      "canonical": "Esterossa's Attack on the Axt",
+      "aliases": []
+    },
+    "EVT_DodoSAttackOnTheAxt": {
+      "canonical": "Dodo's Attack on the Axt",
+      "aliases": []
+    },
+    "EVT_FaesserFallOnCombatants": {
+      "canonical": "Fässer Fall on Combatants",
+      "aliases": []
+    },
+    "EVT_DodoFailsAgilityCheck": {
+      "canonical": "Dodo Fails Agility Check",
+      "aliases": []
+    },
+    "EVT_GoblinConsumesTrank": {
+      "canonical": "Goblin Consumes Trank",
+      "aliases": []
+    },
+    "EVT_GoblinLosesArmAndDropsBow": {
+      "canonical": "Goblin loses arm and drops bow",
+      "aliases": []
+    },
+    "EVT_FrettchenIntervenesOnKisten": {
+      "canonical": "Frettchen intervenes on Kisten",
+      "aliases": []
+    },
+    "EVT_EsterossaTargetsGoblinSRemainingArm": {
+      "canonical": "Esterossa targets Goblin's remaining arm",
+      "aliases": []
+    },
+    "EVT_EsterossaSSuccessfulAttackOnTheFrettchen": {
+      "canonical": "Esterossa's successful attack on the Frettchen",
+      "aliases": []
+    },
+    "EVT_DodoFreesHimselfFromTheBarrels": {
+      "canonical": "Dodo frees himself from the barrels",
+      "aliases": []
+    },
+    "EVT_CookieTargetsTheInjuredGoblinWithABow": {
+      "canonical": "Cookie targets the injured Goblin with a bow",
+      "aliases": []
+    },
+    "EVT_CookieSPerfectShotOnGoblin": {
+      "canonical": "Cookie's Perfect Shot on Goblin",
+      "aliases": []
+    },
+    "EVT_EsterossaSAxeStrikeOnLastGoblin": {
+      "canonical": "Esterossa's Axe Strike on Last Goblin",
+      "aliases": []
+    },
+    "EVT_GoblinKilledByDodoAndMikasa": {
+      "canonical": "Goblin Killed by Dodo and Mikasa",
+      "aliases": []
+    },
+    "EVT_PartyRushesToObermacker": {
+      "canonical": "Party Rushes to Obermacker",
+      "aliases": []
+    },
+    "EVT_StealthCheckToAvoidDetection": {
+      "canonical": "Stealth check to avoid detection",
+      "aliases": []
+    },
+    "EVT_TreppeLeadsUpward": {
+      "canonical": "Treppe leads upward",
+      "aliases": []
+    },
+    "EVT_BoltBeaconSpellCastByEsterossa": {
+      "canonical": "Bolt Beacon spell cast by Esterossa",
+      "aliases": []
+    },
+    "EVT_EsterossaAttemptsToDecapitateTheOpponent": {
+      "canonical": "Esterossa attempts to decapitate the opponent",
+      "aliases": []
+    },
+    "EVT_CookieEvadesAnAttack": {
+      "canonical": "Cookie evades an attack",
+      "aliases": []
+    },
+    "EVT_GoblinEncounter": {
+      "canonical": "Goblin Encounter",
+      "aliases": []
+    },
+    "EVT_InitialReconnaissanceOfTheVillage": {
+      "canonical": "Initial Reconnaissance of the Village",
+      "aliases": []
+    },
+    "EVT_ObservationOfWatchers": {
+      "canonical": "Observation of Watchers",
+      "aliases": []
+    },
+    "EVT_WaechterAmBauernhof": {
+      "canonical": "Wächter am Bauernhof",
+      "aliases": []
+    },
+    "EVT_ApproachToTheCows": {
+      "canonical": "Approach to the Cows",
+      "aliases": []
+    },
+    "EVT_ValerieEntersThroughTheWindow": {
+      "canonical": "Valerie enters through the window",
+      "aliases": []
+    },
+    "EVT_LeandrasIntroducesHimselfAsTheMagier": {
+      "canonical": "Leandras introduces himself as the Magier",
+      "aliases": []
+    },
+    "EVT_RotunasAttemptsToEnterThroughTheDoorButIsTooLarge": {
+      "canonical": "Rotunas attempts to enter through the door but is too large",
+      "aliases": []
+    },
+    "EVT_ValerieExpressesHungerAndAsksAboutFoodSources": {
+      "canonical": "Valerie expresses hunger and asks about food sources",
+      "aliases": []
+    },
+    "EVT_LeandrasDirectsThemToBauernhofOrSchenkeForFood": {
+      "canonical": "Leandras directs them to Bauernhof or Schenke for food",
+      "aliases": []
+    },
+    "EVT_GoblinangriffInformationReceived": {
+      "canonical": "Goblinangriff (quest) information received",
+      "aliases": []
+    },
+    "EVT_BuergermeisterBefragenDecision": {
+      "canonical": "Bürgermeister befragen decision",
+      "aliases": []
+    },
+    "EVT_AttemptToLockDoorMagically": {
+      "canonical": "Attempt to lock door magically",
+      "aliases": []
+    },
+    "EVT_MagicalLockAttemptOnRuneEnchantedDoor": {
+      "canonical": "Magical Lock Attempt on Rune-Enchanted Door",
+      "aliases": []
+    },
+    "EVT_HopeWrittenDown": {
+      "canonical": "Hope Written Down",
+      "aliases": []
+    },
+    "EVT_DecisionToVisitBerthold": {
+      "canonical": "Decision to Visit Berthold",
+      "aliases": []
+    },
+    "EVT_ApproachToTheVillage": {
+      "canonical": "Approach to the Village",
+      "aliases": []
+    },
+    "EVT_AttemptingToCalmTheGoat": {
+      "canonical": "Attempting to Calm the Goat",
+      "aliases": []
+    },
+    "EVT_DecidingToReturnTheGoat": {
+      "canonical": "Deciding to Return the Goat",
+      "aliases": []
+    },
+    "EVT_ValerieAttemptsToRideBerti": {
+      "canonical": "Valerie attempts to ride Berti",
+      "aliases": []
+    },
+    "EVT_BertiSReturnAndRecognition": {
+      "canonical": "Berti's return and recognition",
+      "aliases": []
+    },
+    "EVT_GildeInformationenUeberGoblinAngriff": {
+      "canonical": "Gilde-Informationen über Goblin-Angriff",
+      "aliases": []
+    },
+    "EVT_BuergermeisterBertholdWirdKontaktiert": {
+      "canonical": "Bürgermeister Berthold wird kontaktiert",
+      "aliases": []
+    },
+    "EVT_KnowledgeWurfFuerGlaubwuerdigkeit": {
+      "canonical": "Knowledge-Wurf für Glaubwürdigkeit",
+      "aliases": []
+    },
+    "EVT_GoblinAttackWarningDelivered": {
+      "canonical": "Goblin Attack Warning Delivered",
+      "aliases": []
+    },
+    "EVT_ValeriaAttemptsToUseArmbrust": {
+      "canonical": "Valeria Attempts to Use Armbrust",
+      "aliases": []
+    },
+    "EVT_ValerieProposesATrapUsingAFeastAsBait": {
+      "canonical": "Valerie proposes a trap using a feast as bait",
+      "aliases": []
+    },
+    "EVT_GMPromptsGroupOnDefendingTheVillage": {
+      "canonical": "GM prompts group on defending the village",
+      "aliases": []
+    },
+    "EVT_ValerieRequestsPermissionToTakeTheCrossbow": {
+      "canonical": "Valerie requests permission to take the crossbow",
+      "aliases": []
+    },
+    "EVT_ValerieAttemptsToConvinceBuergermeisterToSellTheArmbrust": {
+      "canonical": "Valerie attempts to convince Bürgermeister to sell the Armbrust",
+      "aliases": []
+    },
+    "EVT_ArmbrustOwnershipTransferred": {
+      "canonical": "Armbrust ownership transferred",
+      "aliases": []
+    },
+    "EVT_ArmbrustAddedToEquipment": {
+      "canonical": "Armbrust added to equipment",
+      "aliases": []
+    },
+    "EVT_TindrellEntersTheTavernWithGuests": {
+      "canonical": "Tindrell Enters the Tavern with Guests",
+      "aliases": []
+    },
+    "EVT_ValerieSIdentityMisunderstood": {
+      "canonical": "Valerie's Identity Misunderstood",
+      "aliases": []
+    },
+    "EVT_BierOrderedAndReceived": {
+      "canonical": "Bier Ordered and Received",
+      "aliases": []
+    },
+    "EVT_HopeAndExperienceUsedForDrinking": {
+      "canonical": "Hope and Experience Used for Drinking",
+      "aliases": []
+    },
+    "EVT_RotunasOrdersBecherWein": {
+      "canonical": "Rotunas Orders Becher Wein",
+      "aliases": []
+    },
+    "EVT_HubertIntroducesHimselfAndInteractsWithRotunas": {
+      "canonical": "Hubert Introduces Himself and Interacts with Rotunas",
+      "aliases": []
+    },
+    "EVT_ValerieAsksAboutHubertSExperience": {
+      "canonical": "Valerie Asks About Hubert's Experience",
+      "aliases": []
+    },
+    "EVT_HubertSharesInformationAboutTheVillage": {
+      "canonical": "Hubert Shares Information About the Village",
+      "aliases": []
+    },
+    "EVT_HypotheticalQuestionAboutAPotentialAttack": {
+      "canonical": "Hypothetical question about a potential attack",
+      "aliases": []
+    },
+    "EVT_OldManSReactionToHypotheticalAttack": {
+      "canonical": "Old Man's Reaction to Hypothetical Attack",
+      "aliases": []
+    },
+    "EVT_RotunasOfferOfHelpInPreparingTheVillage": {
+      "canonical": "Rotunas' Offer of Help in Preparing the Village",
+      "aliases": []
+    },
+    "EVT_RotunasQuestionAboutPlayerMotives": {
+      "canonical": "Rotunas' Question About Player Motives",
+      "aliases": []
+    },
+    "EVT_GMSSelfIdentificationAsAHunterWithABow": {
+      "canonical": "GM's Self-Identification as a Hunter with a Bow",
+      "aliases": []
+    },
+    "EVT_ValerieAttemptsToCareForRudi": {
+      "canonical": "Valerie attempts to care for Rudi",
+      "aliases": []
+    },
+    "EVT_RotunasSuggestsPlanningForTheEvening": {
+      "canonical": "Rotunas suggests planning for the evening",
+      "aliases": []
+    },
+    "EVT_HerrHubertProvidesFood": {
+      "canonical": "Herr Hubert provides food",
+      "aliases": []
+    },
+    "EVT_RequestForFoodFromHerrHubert": {
+      "canonical": "Request for Food from Herr Hubert",
+      "aliases": []
+    },
+    "EVT_ProposalForDefensiveMeasures": {
+      "canonical": "Proposal for Defensive Measures",
+      "aliases": []
+    },
+    "EVT_OfferOfBarriersByBauern": {
+      "canonical": "Offer of Barriers by Bauern",
+      "aliases": []
+    },
+    "EVT_ValerieSFinesseWurfBeimDiebstahl": {
+      "canonical": "Valerie's Finesse-Wurf beim Diebstahl",
+      "aliases": []
+    },
+    "EVT_ValeriaAttemptsToCalmTheCowsUsingMageHand": {
+      "canonical": "Valeria Attempts to Calm the Cows Using Mage Hand",
+      "aliases": []
+    },
+    "EVT_ChildRunsTowardTheForest": {
+      "canonical": "Child Runs Toward the Forest",
+      "aliases": []
+    },
+    "EVT_FarmerAndWifeAttemptToControlChaos": {
+      "canonical": "Farmer and Wife Attempt to Control Chaos",
+      "aliases": []
+    },
+    "EVT_ChildIsScaredAwayByTheParty": {
+      "canonical": "Child is scared away by the party",
+      "aliases": []
+    },
+    "EVT_AttemptToCallTheChildBackUsingPresenceAndExperience": {
+      "canonical": "Attempt to call the child back using Presence and Experience",
+      "aliases": []
+    },
+    "EVT_ValerieOffersAssistanceAfterHearingTheChildSCryForHelp": {
+      "canonical": "Valerie offers assistance after hearing the child's cry for help",
+      "aliases": []
+    },
+    "EVT_MaedchenBruelltNachHilfe": {
+      "canonical": "Mädchen brüllt nach Hilfe",
+      "aliases": []
+    },
+    "EVT_GoblinVerfolgtDasMaedchen": {
+      "canonical": "Goblin verfolgt das Mädchen",
+      "aliases": []
+    },
+    "EVT_AngriffAufGoblin": {
+      "canonical": "Angriff auf Goblin",
+      "aliases": []
+    },
+    "EVT_CritOnIceSpikeSpell": {
+      "canonical": "Crit on Ice Spike Spell",
+      "aliases": []
+    },
+    "EVT_ValerieCastsAFireBasedMagicBolt": {
+      "canonical": "Valerie casts a fire-based magic bolt",
+      "aliases": []
+    },
+    "EVT_RotunasMovesCloserUnderStress": {
+      "canonical": "Rotunas moves closer under stress",
+      "aliases": []
+    },
+    "EVT_EnemyAmbushesRotunasDuringMovement": {
+      "canonical": "Enemy ambushes Rotunas during movement",
+      "aliases": []
+    },
+    "EVT_RotunasUsesBoxingWithGlowingRing": {
+      "canonical": "Rotunas uses Boxing with Glowing Ring",
+      "aliases": []
+    },
+    "EVT_ValerieUsesGreatStaffWithFire": {
+      "canonical": "Valerie uses Great Staff with Fire",
+      "aliases": []
+    },
+    "EVT_FeuerkugelTrifftUndToetetGoblin": {
+      "canonical": "Feuerkugel trifft und tötet Goblin",
+      "aliases": []
+    },
+    "EVT_WasserbehaelterWirdUeberTotenGoblinGegossen": {
+      "canonical": "Wasserbehälter wird über toten Goblin gegossen",
+      "aliases": []
+    },
+    "EVT_DoubleTapWirdDurchgefuehrt": {
+      "canonical": "Double Tap wird durchgeführt",
+      "aliases": []
+    },
+    "EVT_InstinctWurfZurUntersuchungDerUmgebung": {
+      "canonical": "Instinct-Wurf zur Untersuchung der Umgebung",
+      "aliases": []
+    },
+    "EVT_GoblinNotizenEntdeckt": {
+      "canonical": "Goblin-Notizen entdeckt",
+      "aliases": []
+    },
+    "EVT_StrategieZurVerfaelschungDerNotizenBesprochen": {
+      "canonical": "Strategie zur Verfälschung der Notizen besprochen",
+      "aliases": []
+    },
+    "EVT_PlanningToAlterTheNotes": {
+      "canonical": "Planning to alter the notes",
+      "aliases": []
+    },
+    "EVT_DecidingWhereToPlaceTheAlteredNotes": {
+      "canonical": "Deciding where to place the altered notes",
+      "aliases": []
+    },
+    "EVT_FinesseCheckRequestedByGM": {
+      "canonical": "Finesse-Check requested by GM",
+      "aliases": []
+    },
+    "EVT_ValerieAndRotunasPlanToHideTheNote": {
+      "canonical": "Valerie and Rotunas plan to hide the note",
+      "aliases": []
+    },
+    "EVT_FinesseCheckToMimicKriseleienScript": {
+      "canonical": "Finesse Check to mimic Kriseleien script",
+      "aliases": []
+    },
+    "EVT_SuccessfulMimicryOfKriseleienScript": {
+      "canonical": "Successful mimicry of Kriseleien script",
+      "aliases": []
+    },
+    "EVT_DecidingToHideTheGoblin": {
+      "canonical": "Deciding to hide the Goblin",
+      "aliases": []
+    },
+    "EVT_RetreatingAfterHidingTheGoblin": {
+      "canonical": "Retreating after hiding the Goblin",
+      "aliases": []
+    },
+    "EVT_GoblinSpaeherBeseitigt": {
+      "canonical": "Goblin Späher Beseitigt",
+      "aliases": []
+    },
+    "EVT_TrapPreparationAndBarrikadePlanning": {
+      "canonical": "Trap Preparation and Barrikade Planning",
+      "aliases": []
+    },
+    "EVT_GirlFoundSafeWithParents": {
+      "canonical": "Girl Found Safe with Parents",
+      "aliases": []
+    },
+    "EVT_ReturningToTheVillage": {
+      "canonical": "Returning to the Village",
+      "aliases": []
+    },
+    "EVT_GoblinAttackConfirmation": {
+      "canonical": "Goblin Attack Confirmation",
+      "aliases": []
+    },
+    "EVT_PreparationOfVillageDefense": {
+      "canonical": "Preparation of Village Defense",
+      "aliases": []
+    },
+    "EVT_DecisionToUseTrapsAndBaerenfallen": {
+      "canonical": "Decision to Use Traps and Bärenfallen",
+      "aliases": []
+    },
+    "EVT_PlanningTheDefenseOfTheVillage": {
+      "canonical": "Planning the defense of the village",
+      "aliases": []
+    },
+    "EVT_DecidingOnThePlacementOfPalisaden": {
+      "canonical": "Deciding on the placement of Palisaden",
+      "aliases": []
+    },
+    "EVT_ConsideringAlternativeStructuresForDefense": {
+      "canonical": "Considering alternative structures for defense",
+      "aliases": []
+    },
+    "EVT_FinalizingDefensiveSetup": {
+      "canonical": "Finalizing defensive setup",
+      "aliases": []
+    },
+    "EVT_DeploymentOfSpitzdingernAndBaerenfallen": {
+      "canonical": "Deployment of Spitzdingern and Bärenfallen",
+      "aliases": []
+    },
+    "EVT_NPCsConfirmingCombatParticipation": {
+      "canonical": "NPCs Confirming Combat Participation",
+      "aliases": []
+    },
+    "EVT_DeploymentOfTheArmbrust": {
+      "canonical": "Deployment of the Armbrust",
+      "aliases": []
+    },
+    "EVT_BaitStrategyForTheFarmer": {
+      "canonical": "Bait Strategy for the Farmer",
+      "aliases": []
+    },
+    "EVT_MissionCompletionAndTransition": {
+      "canonical": "Mission Completion and Transition",
+      "aliases": []
+    },
+    "EVT_PlanToLureTheTrapAndEscape": {
+      "canonical": "Plan to lure the trap and escape",
+      "aliases": []
+    },
+    "EVT_AttemptedRaidOnDasHausDesAltenHaendlers": {
+      "canonical": "Attempted raid on das Haus des alten Händlers",
+      "aliases": []
+    },
+    "EVT_SetupForFutureGoblinAngriff": {
+      "canonical": "Setup for future Goblin-Angriff",
+      "aliases": []
+    },
+    "EVT_IntroductionOfParallelmission": {
+      "canonical": "Introduction of Parallelmission",
+      "aliases": []
     }
   },
   "factions": {
     "FACTION_Auftraggeber": {
       "canonical": "Auftraggeber",
+      "aliases": []
+    },
+    "FACTION_Goblins": {
+      "canonical": "Goblins",
+      "aliases": []
+    },
+    "FACTION_GoblinGott": {
+      "canonical": "Goblin-Gott (Lugasch)",
+      "aliases": []
+    },
+    "FACTION_EsterossaSGod": {
+      "canonical": "Esterossa's God",
+      "aliases": []
+    },
+    "FACTION_Goblingoetter": {
+      "canonical": "Goblingötter",
+      "aliases": [
+        "Goblin-Götter"
+      ]
+    },
+    "FACTION_UnbekannteAndereVertragspartei": {
+      "canonical": "Unbekannte andere Vertragspartei",
+      "aliases": []
+    },
+    "FACTION_Magier": {
+      "canonical": "Magier",
+      "aliases": []
+    },
+    "FACTION_Gelde": {
+      "canonical": "Gelde",
+      "aliases": []
+    },
+    "FACTION_Buergermeister": {
+      "canonical": "Bürgermeister",
+      "aliases": []
+    },
+    "FACTION_BewohnerDesDorfes": {
+      "canonical": "Bewohner des Dorfes (Villagers)",
+      "aliases": []
+    },
+    "FACTION_Dorfbewohner": {
+      "canonical": "Dorfbewohner",
+      "aliases": []
+    },
+    "FACTION_Gilde": {
+      "canonical": "Gilde",
+      "aliases": []
+    },
+    "FACTION_Pluenderer": {
+      "canonical": "Plünderer (Plunderers)",
+      "aliases": []
+    },
+    "FACTION_GoblinKoenigsBodyguard": {
+      "canonical": "Goblin-Königs Bodyguard",
+      "aliases": []
+    },
+    "FACTION_GoblinKoenig": {
+      "canonical": "Goblin-König",
+      "aliases": []
+    },
+    "FACTION_Backbaeren": {
+      "canonical": "Backbären",
+      "aliases": []
+    },
+    "FACTION_Hack": {
+      "canonical": "Hack",
+      "aliases": []
+    },
+    "FACTION_GoblinGottLugasch": {
+      "canonical": "Goblin-Gott Lugasch",
+      "aliases": []
+    },
+    "FACTION_Bauern": {
+      "canonical": "Bauern (farmers)",
       "aliases": []
     }
   },
@@ -335,6 +4967,106 @@
     },
     "RULE_CLASSFEATURE_TemporaryVulnerable": {
       "canonical": "Temporary Vulnerable",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_SpracheDerVerborgenenNatur": {
+      "canonical": "Sprache der verborgenen Natur",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_ToedlichesZiel": {
+      "canonical": "Tödliches Ziel (Deadly Target)",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_Unstoppable": {
+      "canonical": "Unstoppable",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_ResistanceToPhysicalDamage": {
+      "canonical": "Resistance to Physical Damage",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_UnstoppableWuerfel": {
+      "canonical": "Unstoppable-Würfel",
+      "aliases": []
+    },
+    "RULE_CLASS_Magier": {
+      "canonical": "Magier",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_SpellcasterRole": {
+      "canonical": "Spellcaster Role",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_DomainEffects": {
+      "canonical": "Domain Effects",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_MendingTouch": {
+      "canonical": "Mending Touch",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_FinesseWurf": {
+      "canonical": "Finesse-Wurf",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_MageHand": {
+      "canonical": "Mage Hand",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_FinesseCheck": {
+      "canonical": "Finesse-Check",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_Dunkelsicht": {
+      "canonical": "Dunkelsicht",
+      "aliases": []
+    },
+    "RULE_ADVERSARY_Fellbiester": {
+      "canonical": "Fellbiester",
+      "aliases": []
+    },
+    "RULE_ADVERSARY_Grottenschrate": {
+      "canonical": "Grottenschrate",
+      "aliases": []
+    },
+    "RULE_GAMEMECHANIC_Rettungswurf": {
+      "canonical": "Rettungswurf (Saving Throw)",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_RangerFokus": {
+      "canonical": "Ranger-Fokus",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_GuardianSHope": {
+      "canonical": "Guardian's Hope",
+      "aliases": []
+    },
+    "RULE_GAMEMECHANIC_Damage": {
+      "canonical": "Damage",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_Magiewurf": {
+      "canonical": "Magiewurf",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_Spellmodifikator": {
+      "canonical": "Spellmodifikator",
+      "aliases": []
+    },
+    "RULE_GAMEMECHANIC_Crit": {
+      "canonical": "Crit",
+      "aliases": []
+    },
+    "RULE_ADVERSARY_Waldschrat": {
+      "canonical": "Waldschrat",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_Stealth": {
+      "canonical": "Stealth",
+      "aliases": []
+    },
+    "RULE_GAMEMECHANIC_DoppelteWuerfe": {
+      "canonical": "Doppelte Würfe (Double Tap)",
       "aliases": []
     }
   }

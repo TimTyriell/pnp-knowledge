@@ -85,7 +85,7 @@
       "props": {
         "session_id": "2025-03-26",
         "confidence": "medium",
-        "name": "Bogen",
+        "name": "Bogen (Bow)",
         "status": "used",
         "evidence_chunks": [
           2
@@ -247,7 +247,8 @@
         "confidence": "high",
         "evidence_chunks": [
           1
-        ]
+        ],
+        "valid_from": 1
       }
     },
     {
@@ -304,7 +305,8 @@
       "type": "OWNED_BY",
       "props": {
         "session_id": "2025-03-26",
-        "confidence": "high"
+        "confidence": "high",
+        "valid_from": 1
       }
     },
     {
