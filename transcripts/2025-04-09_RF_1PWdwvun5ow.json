@@ -1,0 +1,4624 @@
+{
+  "video_file": "2025-04-09_RF_1PWdwvun5ow.mp3",
+  "video_date": "2025-04-09",
+  "video_url": "https://www.youtube.com/watch?v=1PWdwvun5ow",
+  "video_title": "Daggerheart & Tale Spire | #daggerheart #talespire #ttrpg #vtt",
+  "whisper_model": "large-v3",
+  "language": "de",
+  "segments": [
+    {
+      "start": 6.91,
+      "end": 8.31,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ich"
+    },
+    {
+      "start": 8.31,
+      "end": 13.97,
+      "speaker": "Deniz (GM)",
+      "text": "bin's! Ich bin's! Ich bin's! Ich bin's! Ich bin's! Ich bin's!"
+    },
+    {
+      "start": 15.19,
+      "end": 16.59,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ich"
+    },
+    {
+      "start": 17.81,
+      "end": 20.97,
+      "speaker": "Deniz (GM)",
+      "text": "bin's!"
+    },
+    {
+      "start": 36.64,
+      "end": 66.19,
+      "speaker": "Deniz (GM)",
+      "text": "Wir sind ein bisschen weniger als sonst. Zwei fehlen, aber das macht uns keinen ab. Wir haben zwei neue, alte Gäste. Und zwar einmal den Benjamin, den kennt ihr ja bestimmt schon. Hallo zusammen. Und einmal den Micha, den kennt der ein oder andere wahrscheinlich auch schon. Hallo Sanji, grüße dich. Du darfst heute wieder zwei Streams gleichzeitig zuschauen. Oh damn. Der liebe Havli und der Mert sind auch gerade am Stream, hab ich gesehen."
+    },
+    {
+      "start": 66.73,
+      "end": 67.63,
+      "speaker": "Micha (Rotunas)",
+      "text": "Warte mal, heute?"
+    },
+    {
+      "start": 68.01,
+      "end": 71.07,
+      "speaker": "Deniz (GM)",
+      "text": "Nee, eigentlich normalerweise Montag, aber scheinbar ist da was passiert."
+    },
+    {
+      "start": 72.41,
+      "end": 79.07,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ach, war da nicht irgendwie Geburtstag von Havlis Oma? Irgendwie sowas."
+    },
+    {
+      "start": 79.49,
+      "end": 142.19,
+      "speaker": "Deniz (GM)",
+      "text": "So, und ansonsten, wir jumpen auch direkt rein ins Abenteuer. Letztes Mal haben unsere lieben Gildenmitglieder herausgefunden, dass die Goblins Ein Camp hatten, das haben sie auch graded und das Camp ausgeräuchert, sprichwörtlich. Und die haben eine Notiz gefunden, die dann halt der Gilde übergeben worden ist und in der Notiz stand, es soll ein Angriff auf das Dorf Brechka stattfinden, in dem wir uns jetzt hier gerade befinden. Und deswegen hat die Gilde zwei Magier. Das sieht jetzt aus wie eine Maus, aber es soll eigentlich ein Affe sein, ein kleiner Affe. Ein kleines Äffchen. Ein Sima. Ein Sima, genau. Oder Simia. Simia. Stimmt, Simia heißen die Dinger. Und einen Mage, Riesen, Giant. Wie heißt die Rasse bei dir nochmal? Bei mir? Ja, genau. Ist das Giant? Heißt die Giant? Okay."
+    },
+    {
+      "start": 142.35,
+      "end": 145.15,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ja. Das sind wirklich einfach nur Riesen. Ich"
+    },
+    {
+      "start": 145.15,
+      "end": 176.09,
+      "speaker": "Deniz (GM)",
+      "text": "war mal nicht mehr genau sicher, ob die nicht auch eine eigene Bezeichnung hatten bei Daggerheart. Aber okay. Ähm, dann würde ich einfach sagen, wir jumpen rein, denn eure Aufgabe wird es heute sein. Wie gesagt, ob ihr das schafft, ist mal ne andere Frage, aber die Aufgabe des Tages ist es, das Dorf darauf vorzubereiten, dass eventuell ein Angriff von Goblins schrägstrich noch irgendwas anderem eventuell bevorsteht. Denn es ist nur bekannt, dass es eine Partei Goblins gab und noch eine andere Vertragspartei."
+    },
+    {
+      "start": 179.02,
+      "end": 237.4,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, so dann würde ich sagen, ich push euch mal, wenn das nicht eh schon bei euch läuft, die Musik rüber und wir legen los. Wie gesagt, ihr kennt euch einfach nur durch die Gildenhalle und dementsprechend könnt ihr ohne irgendwelche großen Bedenken zusammen als Team agieren. Und ja, ihr habt eure lange, lange Reise, was heißt, ihr habt ein paar Tage, wie gesagt, getravelled. Habt den Auftrag angenommen, den die andere Gruppe kurz zuvor erledigt hatte. Praktisch die Fortsetzung davon übernommen und seid endlich am Dorf angekommen. Ihr seht, das Dorf ist recht naturbelastend und ein paar kleine Häuser ragen auf dieser kleinen Lichtung auf. Ein kleiner Berg. Ein paar Bäumchen und ansonsten zwei große Bauernhöfe."
+    },
+    {
+      "start": 240.03,
+      "end": 241.73,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ja, ihr seid frei"
+    },
+    {
+      "start": 241.73,
+      "end": 246.81,
+      "speaker": "Deniz (GM)",
+      "text": "dazu, euch zu bewegen und zu machen, was ihr wollt gerade."
+    },
+    {
+      "start": 248.28,
+      "end": 257.28,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ja, ich würde sagen, wir gehen jetzt einfach in die Richtung des Dorfes, damit wir erstmal einen besseren Überblick über das Dorf haben, weil ich sehe das so von hier nicht wirklich aus. Ich zoome sehr weit raus."
+    },
+    {
+      "start": 257.9,
+      "end": 261.16,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ich würde sagen, du nimmst mich auf die Schulter und wir gehen los. Ich habe"
+    },
+    {
+      "start": 261.16,
+      "end": 266.61,
+      "speaker": "Micha (Rotunas)",
+      "text": "genau das Gleiche gesagt vorhin, als ich das erstellt habe. Ich kann dich einfach auf die Schulter nehmen."
+    },
+    {
+      "start": 266.71,
+      "end": 268.67,
+      "speaker": "Deniz (GM)",
+      "text": "Dieser Größenunterschied ist aber auch einfach nur frech, ne?"
+    },
+    {
+      "start": 269.63,
+      "end": 274.61,
+      "speaker": "Micha (Rotunas)",
+      "text": "Kann ich dich auf die Schulter... Kannst du dich irgendwie auf mich... Ah, schade. Ich bin in dir drin, leider. Okay."
+    },
+    {
+      "start": 275.19,
+      "end": 277.39,
+      "speaker": "Deniz (GM)",
+      "text": "Oh, doch, das bewegt sich. Ah, nee, dann nicht. Nee,"
+    },
+    {
+      "start": 277.41,
+      "end": 286.95,
+      "speaker": "Micha (Rotunas)",
+      "text": "wir bewegen uns selber. Okay. Hallo, lieber Philipp. Wir stellen uns einfach mal vor, er sitzt auf meiner Schulter."
+    },
+    {
+      "start": 287.21,
+      "end": 292.85,
+      "speaker": "Deniz (GM)",
+      "text": "Ja. Okay. Ja, ihr lauft mal bis zur Kreuzung. Schöne Grüße von Philipp an euch beide, by the way."
+    },
+    {
+      "start": 293.58,
+      "end": 296.44,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Hi! Danke, liebe Grüße zurück! Chat,"
+    },
+    {
+      "start": 296.76,
+      "end": 338.3,
+      "speaker": "Deniz (GM)",
+      "text": "ganz kurz, ihr dürft natürlich wieder die bösen Goblin-Götter spielen oder die lieben Goblin-Götter, das ist euch überlassen. Das heißt, wenn ihr Einfluss nehmen wollt auf die Story und es passt gerade, dann würde ich, also dann schreibt einfach was rein und dann kann ich das eventuell übernehmen. Genau, als ihr an die Kreuzung ankommt, seht ihr schon rechts die beiden Gebäude, die sind so ein bisschen abseits, beziehungsweise der Bauernhof sowieso, aber der scheint noch ganz zentral eine wichtige Rolle hier zu spielen. Auf jeden Fall das Gemur von Kühen und aus der Ferne hört ihr auch einen Schmied irgendwas am Arbeiten. Als ihr so ein bisschen von hier aus nach links in die Stadt guckt, könnt ihr zwischen den Bäumen, warte ich markiere das mal,"
+    },
+    {
+      "start": 340.57,
+      "end": 357.55,
+      "speaker": "Deniz (GM)",
+      "text": "Ein paar Wächter sehen wir zur Markierung. Fallen euch zwei Wächter auf, die ein Haus bewachen. Ansonsten seht ihr erstmal nichts, was irgendwie von Interesse wäre. Hinterhalt auf Micha."
+    },
+    {
+      "start": 370.23,
+      "end": 373.49,
+      "speaker": "Micha (Rotunas)",
+      "text": "Richtig, warte mal, ich schreib ihn dir... Wo schreib ich... Ich schreib ihn dir hier."
+    },
+    {
+      "start": 374.11,
+      "end": 376.33,
+      "speaker": "Deniz (GM)",
+      "text": "Sag einfach wie du heißt. Rotunas."
+    },
+    {
+      "start": 378.1,
+      "end": 384.2,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Achso, weil hier steht... Also wahrscheinlich von dem... Jetzt"
+    },
+    {
+      "start": 384.2,
+      "end": 386.96,
+      "speaker": "Deniz (GM)",
+      "text": "ist der Name richtig. Jetzt ist der Name richtig. Ah,"
+    },
+    {
+      "start": 387.0,
+      "end": 389.46,
+      "speaker": "Micha (Rotunas)",
+      "text": "da. Da, ja. Okay. Hallo, Lefa."
+    },
+    {
+      "start": 391.08,
+      "end": 395.66,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Rotu, wollen wir zu den Kühen gehen? Da gibt's bestimmt was zu essen. Ich hab Hunger."
+    },
+    {
+      "start": 396.48,
+      "end": 397.52,
+      "speaker": "Micha (Rotunas)",
+      "text": "Wohin sollen wir gehen?"
+    },
+    {
+      "start": 398.08,
+      "end": 402.45,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Zu den Kühen. Da gibt's Essen. oder zumindest Milch. Ich"
+    },
+    {
+      "start": 402.45,
+      "end": 403.39,
+      "speaker": "Deniz (GM)",
+      "text": "glaube hier ist gemeint."
+    },
+    {
+      "start": 404.84,
+      "end": 408.6,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Der hier drüben, da waren Kühe. Ich hab sie gehört."
+    },
+    {
+      "start": 410.23,
+      "end": 412.37,
+      "speaker": "Micha (Rotunas)",
+      "text": "Okay, dann lass uns da hingehen."
+    },
+    {
+      "start": 414.42,
+      "end": 444.39,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, als ihr euch den Weg folgt, ungefähr auf Ribbit. Ja gut, okay, mach jetzt einfach mal. Kann ich nicht zwei Markierungen machen? Lieber das so, achso, ja, so. Ah, muss erstmal wieder wegklicken, okay. Ungefähr, ähm... Auf der Höhe hier, warte, als ihr hier so Richtung Bauernhof lauft, da seht ihr in dem Fenster rechts, ich zeige euch das kurz, warte, da"
+    },
+    {
+      "start": 444.39,
+      "end": 446.39,
+      "speaker": "Micha (Rotunas)",
+      "text": "scheint"
+    },
+    {
+      "start": 446.39,
+      "end": 450.98,
+      "speaker": "Deniz (GM)",
+      "text": "wer im Haus zu sein. In welchem Fenster?"
+    },
+    {
+      "start": 451.97,
+      "end": 455.73,
+      "speaker": "Micha (Rotunas)",
+      "text": "Also ich nehme an, das Haus, wo ihr jetzt guckt, so rechts von dir."
+    },
+    {
+      "start": 456.01,
+      "end": 459.35,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, das ist nicht das andere Haus."
+    },
+    {
+      "start": 459.93,
+      "end": 463.01,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ah, das ist das andere, okay. Könnt ihr..."
+    },
+    {
+      "start": 464.13,
+      "end": 480.93,
+      "speaker": "Deniz (GM)",
+      "text": "Das Dach, das ist gerade weg. Seht ihr das Dach, dass es weg ist? Äh, nö. Okay, dann müsst ihr mal den grünen Balken bei euch, das ist so ein grünes, ähm, ja, wie sagt man das? Oder ihr könnt einfach auf N drücken. Genau. Wenn ihr auf N drückt, könnt ihr auch einfach durchgucken."
+    },
+    {
+      "start": 481.35,
+      "end": 482.55,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ja, hab ich. Ich"
+    },
+    {
+      "start": 482.55,
+      "end": 492.25,
+      "speaker": "Deniz (GM)",
+      "text": "hab jetzt mal bei N gedrückt. Da seht ihr jemanden, der schwer beschäftigt irgendwas im Haus tut. Aber ansonsten... Meinst du, das ist der Koch?"
+    },
+    {
+      "start": 493.9,
+      "end": 497.04,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ich glaube nicht, es könnten ja auch nur Bewohner sein."
+    },
+    {
+      "start": 501.82,
+      "end": 507.77,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Wollt ihr klopfen? Jetzt ist alles weg. Heb mich mal ins Fenster rein."
+    },
+    {
+      "start": 508.09,
+      "end": 513.05,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ja, ich hebe Valerie so mit meiner Hand an."
+    },
+    {
+      "start": 514.05,
+      "end": 526.95,
+      "speaker": "Deniz (GM)",
+      "text": "Du passt sogar ins Fenster rein! Okay, ja, also du kletterst einfach ins Fenster und diese Person in dem Raum, die erschreckt sich total und schreit einfach nur, was macht ihr?"
+    },
+    {
+      "start": 527.74,
+      "end": 529.94,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Guten Morgen! Bist du der Koch?"
+    },
+    {
+      "start": 531.27,
+      "end": 539.47,
+      "speaker": "Deniz (GM)",
+      "text": "Nein, mein Name ist Leandras. Ich bin hier der Magier und hatte eigentlich gehofft, meine Ruhe zu haben."
+    },
+    {
+      "start": 539.83,
+      "end": 543.33,
+      "speaker": "Micha (Rotunas)",
+      "text": "Oh, ein Magier! Ich klopf an die Tür."
+    },
+    {
+      "start": 543.94,
+      "end": 545.7,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, die Tür wird aufgemacht für euch."
+    },
+    {
+      "start": 545.98,
+      "end": 549.78,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Okay. Warte, ich mach's eben. Lass dich rein."
+    },
+    {
+      "start": 550.14,
+      "end": 551.66,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ich komm nicht rein."
+    },
+    {
+      "start": 552.78,
+      "end": 559.41,
+      "speaker": "Deniz (GM)",
+      "text": "Du zieh deine Figur einfach rüber. Okay, warte. Soll das eigentlich funktionieren?"
+    },
+    {
+      "start": 559.65,
+      "end": 561.45,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ne. Nice."
+    },
+    {
+      "start": 561.45,
+      "end": 563.65,
+      "speaker": "Deniz (GM)",
+      "text": "Du bist zu groß für den Raum."
+    },
+    {
+      "start": 563.77,
+      "end": 566.43,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ich stell mich vor das Fenster. Du guckst so durch"
+    },
+    {
+      "start": 566.43,
+      "end": 573.62,
+      "speaker": "Deniz (GM)",
+      "text": "diese Luke von dem Fenster und... Warte, ich kann dich mal kurz rüberziehen. Nein, das geht nicht. Ne, ich stand da schon"
+    },
+    {
+      "start": 573.62,
+      "end": 578.82,
+      "speaker": "Micha (Rotunas)",
+      "text": "am Fenster. Passt doch schon. So, genau. Ich bin vor dem Fenster jetzt."
+    },
+    {
+      "start": 579.97,
+      "end": 596.15,
+      "speaker": "Deniz (GM)",
+      "text": "Ja. Okay, ja. Du guckst durch die Fenstertüre und der liebe, die liebe Valeria Äh, geht zum Mage direkt rein. Nun, ähm, was wollt ihr? Wie kann ich euch behilflich sein?"
+    },
+    {
+      "start": 597.07,
+      "end": 599.91,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ich hab Hunger. Nun, wenn ihr"
+    },
+    {
+      "start": 599.91,
+      "end": 606.55,
+      "speaker": "Deniz (GM)",
+      "text": "Hunger habt, dann geht zu einem der Bauernhöfe. Oder zur Schenke, da wird es etwas zu trinken und zu essen geben."
+    },
+    {
+      "start": 607.07,
+      "end": 614.11,
+      "speaker": "Micha (Rotunas)",
+      "text": "Mein Begleiter hier hat anscheinend sehr Hunger, doch wie kam er mit einer Aufgabe in diese Gegend?"
+    },
+    {
+      "start": 614.35,
+      "end": 616.17,
+      "speaker": "Deniz (GM)",
+      "text": "Was wäre das für eine Aufgabe?"
+    },
+    {
+      "start": 616.65,
+      "end": 619.15,
+      "speaker": "Micha (Rotunas)",
+      "text": "Die Gilde hat er von einem..."
+    },
+    {
+      "start": 621.18,
+      "end": 622.42,
+      "speaker": "Micha (Rotunas)",
+      "text": "Bevorstehenden Goblinangriff erfahren."
+    },
+    {
+      "start": 623.39,
+      "end": 646.93,
+      "speaker": "Deniz (GM)",
+      "text": "Einen Goblinangriff. Okay. Mach mal einen Wurf auf, ich würde sagen, Präsenz. Präsenz? Ja. Also du nimmst jetzt zwei W12, also Leertaste drückst du und dann drückst du zweimal die 12 und dann schmeißt du die einfach durch die Gegend. Dann reicht es an deinem Pluswert von Präsenz drauf."
+    },
+    {
+      "start": 649.28,
+      "end": 651.56,
+      "speaker": "Deniz (GM)",
+      "text": "Nicht Preference, Präsenz. Ach,"
+    },
+    {
+      "start": 652.61,
+      "end": 654.89,
+      "speaker": "Micha (Rotunas)",
+      "text": "Präsenz. Ach so, der"
+    },
+    {
+      "start": 654.89,
+      "end": 665.49,
+      "speaker": "Deniz (GM)",
+      "text": "Oberkampf. Es gibt nur die Hauptwerte. So, was haben wir da? Da haben wir schon an den ersten vier Punkten des Tages, die ich mir aufschreibe. Sehr gut. Eine 12."
+    },
+    {
+      "start": 666.76,
+      "end": 668.46,
+      "speaker": "Micha (Rotunas)",
+      "text": "Und ich habe Plus 1, also 13."
+    },
+    {
+      "start": 669.18,
+      "end": 701.21,
+      "speaker": "Deniz (GM)",
+      "text": "Also du versuchst es dem irgendwie klar zu machen, dass es schon irgendwo bedrohlich ist und durch deine Statur würde ich dir nochmal Plus 2 oben drauf geben. Tatsächlich, der Magier scheint euch das... Abzukaufen. Er sieht immer noch nicht so ganz überzeugt aus, aber hm, na gut. Dann solltet ihr vielleicht mit dem Bürgermeister sprechen. Berthold ist sein Name. Fragt die Wachen, wo er sich befindet. Er ist hier für alles verantwortlich. Berthold. Diese Maus ist so gruselig."
+    },
+    {
+      "start": 702.97,
+      "end": 705.19,
+      "speaker": "Micha (Rotunas)",
+      "text": "Im Feuer, im Feuerlicht. Das sieht so"
+    },
+    {
+      "start": 705.19,
+      "end": 712.6,
+      "speaker": "Deniz (GM)",
+      "text": "cool aus, tatsächlich. Du bist Magier, oder? Ja, ich bin ein Magier-Maus, äh, Affe."
+    },
+    {
+      "start": 713.02,
+      "end": 716.48,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ich bin auch Magier. Was kannst du mir"
+    },
+    {
+      "start": 716.84,
+      "end": 720.34,
+      "speaker": "Micha (Rotunas)",
+      "text": "bringen? Seid ihr nicht beide Affen dann?"
+    },
+    {
+      "start": 720.84,
+      "end": 726.46,
+      "speaker": "Deniz (GM)",
+      "text": "Nein, nur weil du ein Affe bist, heißt das nicht, dass du die Klasse Magier nur als Einziger hast."
+    },
+    {
+      "start": 727.0,
+      "end": 730.0,
+      "speaker": "Micha (Rotunas)",
+      "text": "Nein, aber ihr seid beide Magier-Affen, das mein ich damit."
+    },
+    {
+      "start": 730.5,
+      "end": 739.74,
+      "speaker": "Deniz (GM)",
+      "text": "Nein, der, ähm... Die liebe Valeria ist ein Affenmagier. Das ist nur eine Maus als Figur leider. Und das ist ein Menschenmagier, der vor euch steht. Ach, das ist ein"
+    },
+    {
+      "start": 739.74,
+      "end": 741.44,
+      "speaker": "Micha (Rotunas)",
+      "text": "Menschenmagier. Ich habe auch Affe verstanden."
+    },
+    {
+      "start": 741.62,
+      "end": 742.16,
+      "speaker": "Deniz (GM)",
+      "text": "Nein, nein, nein."
+    },
+    {
+      "start": 742.26,
+      "end": 744.44,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Mensch ist auch nur ein weiterentwickelter Affe. Magiermaus, genau."
+    },
+    {
+      "start": 745.24,
+      "end": 748.94,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, was war deine Frage, Benjamin bzw. Valeria? Du bist doch auch"
+    },
+    {
+      "start": 748.94,
+      "end": 754.36,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Magier. Hast du ein paar coole Zaubersprüche, die du mir beibringen kannst? Wenn ich"
+    },
+    {
+      "start": 754.36,
+      "end": 761.5,
+      "speaker": "Deniz (GM)",
+      "text": "Zeit habe, dann vielleicht. Aktuell bin ich wichtigeren Dingen, die ich mich widmen muss. Tut mir leid."
+    },
+    {
+      "start": 762.3,
+      "end": 767.46,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Kein Problem. Darf ich in deine Kiste gucken, ob da was zu essen drin ist? Nein. Okay."
+    },
+    {
+      "start": 767.66,
+      "end": 772.53,
+      "speaker": "Deniz (GM)",
+      "text": "Wagt es euch. Bitte? Wagt es euch."
+    },
+    {
+      "start": 773.15,
+      "end": 781.21,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Nein, nein, alles gut. Wenn sie Nein sagen, ist schon okay. Wir gehen zum Bauernhof. Ich meine zum Bürgermeister. Tschüss. Ja,"
+    },
+    {
+      "start": 781.21,
+      "end": 784.11,
+      "speaker": "Micha (Rotunas)",
+      "text": "wir gehen zuerst zum Bürgermeister. Danke für die Auskunft."
+    },
+    {
+      "start": 784.29,
+      "end": 789.28,
+      "speaker": "Deniz (GM)",
+      "text": "Und der macht mit so einer magischen Bewegung, schließt sich die Türe in den Teich. Okay."
+    },
+    {
+      "start": 790.35,
+      "end": 794.65,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ich mache auch eine magische Bewegung und drehe den Schlüssel um, damit sie verschlossen ist."
+    },
+    {
+      "start": 794.87,
+      "end": 800.41,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, du willst also den magischen Wurf machen, um das zu verschließen? Ich brauche keinen magischen"
+    },
+    {
+      "start": 800.41,
+      "end": 805.23,
+      "speaker": "Micha (Rotunas)",
+      "text": "Wurf. Als Blizzard kannst du so Kleinigkeiten machen. Jaja,"
+    },
+    {
+      "start": 805.23,
+      "end": 806.17,
+      "speaker": "Deniz (GM)",
+      "text": "dann würfel mal bitte drauf."
+    },
+    {
+      "start": 806.85,
+      "end": 810.69,
+      "speaker": "Micha (Rotunas)",
+      "text": "Es ist kein Wurf. Bitte würfel"
+    },
+    {
+      "start": 810.69,
+      "end": 821.46,
+      "speaker": "Deniz (GM)",
+      "text": "einmal einen Zauberwurf. Auf was? Also du würfelst entweder, da steht irgendwo bei deinen Spells, da steht Spellcast Role, steht da bei dir."
+    },
+    {
+      "start": 822.02,
+      "end": 831.36,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Mhm, das ist plus 2, also wahrscheinlich plus Knowledge wirst du wahrscheinlich haben. Genau. Okay."
+    },
+    {
+      "start": 838.58,
+      "end": 862.61,
+      "speaker": "Deniz (GM)",
+      "text": "Also 2w12 würfelst du wieder und dann addierst du deinen Spellcaster Role mit oben drauf. Also bei deinen Effects und Features auf deinem Charakterbogen steht links Domain Effects. und da wird zum Beispiel, da sind Zauberspells und da steht zum Beispiel Spellcast. Ansonsten ist es auch einfach nur Knowledge. Es ist theoretisch dasselbe."
+    },
+    {
+      "start": 862.95,
+      "end": 866.75,
+      "speaker": "Micha (Rotunas)",
+      "text": "Es ist halt einfach nur ein Class-Feature, das ich gerade ausnutzen wollte, so ein bisschen."
+    },
+    {
+      "start": 866.97,
+      "end": 872.14,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, aber bitte, mach einen Wurf. So, ich nehme zwei."
+    },
+    {
+      "start": 874.85,
+      "end": 877.05,
+      "speaker": "Micha (Rotunas)",
+      "text": "Okay, ich hab keine Ahnung, wo die gelandet sind. Oh, sehr stark."
+    },
+    {
+      "start": 877.15,
+      "end": 904.47,
+      "speaker": "Deniz (GM)",
+      "text": "Ein sehr hoher Wurf. Du versuchst, das abzuschließen, du merkst aber, dass diese Türe magisch mit einer Rune ausgestattet ist. Warum? Okay, okay. Also was auch immer der Magier da gemacht hat, es ist ihm die Möglichkeit, die Türe magisch zu verschließen. Was auch immer der macht, es scheint, ja, nicht unbedingt starker Magier, aber auf jeden Fall jemand, der etwas zu verbergen hat vielleicht, oder zumindest nicht will, dass jemand unwissentlich sein Stuff berührt."
+    },
+    {
+      "start": 904.99,
+      "end": 906.63,
+      "speaker": "Micha (Rotunas)",
+      "text": "Das heißt,"
+    },
+    {
+      "start": 906.67,
+      "end": 909.93,
+      "speaker": "Deniz (GM)",
+      "text": "diese Türe könnte man nicht einfach nur mit proer Gewalt einreißen."
+    },
+    {
+      "start": 910.58,
+      "end": 911.92,
+      "speaker": "Micha (Rotunas)",
+      "text": "Mhm, gut"
+    },
+    {
+      "start": 911.92,
+      "end": 916.89,
+      "speaker": "Benjamin (Valerie)",
+      "text": "zu wissen. Kein Problem, ich komme durchs Fenster. Du darfst dir aber jetzt einen Hope aufschreiben, richtig?"
+    },
+    {
+      "start": 917.73,
+      "end": 922.71,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, genau. Guter Punkt. Du darfst dir einen Hope draufschreiben. Das heißt, wir dürfen es jetzt drei Stück haben."
+    },
+    {
+      "start": 923.62,
+      "end": 925.46,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ja, okay, cool. Das soll ich tragen."
+    },
+    {
+      "start": 926.72,
+      "end": 931.4,
+      "speaker": "Deniz (GM)",
+      "text": "Sanji, also solche Götter-Moves können wir leider noch nicht aktivieren. Noch nicht."
+    },
+    {
+      "start": 932.42,
+      "end": 933.6,
+      "speaker": "Micha (Rotunas)",
+      "text": "Was für Götter-Moves?"
+    },
+    {
+      "start": 933.92,
+      "end": 959.43,
+      "speaker": "Deniz (GM)",
+      "text": "Die Zuschauer dürfen die Goblin-Götter spielen und euch ein bisschen Glück oder Pech geben. Aber Sanji wollte ein bisschen direkt übertreiben, aber noch ist zu früh im Abend. Ihr habt gemerkt, der Magier scheint gerade irgendwie beschäftigt zu sein und sich nicht wirklich um Gäste zu kümmern."
+    },
+    {
+      "start": 960.39,
+      "end": 964.67,
+      "speaker": "Micha (Rotunas)",
+      "text": "Valeria, lass uns doch zuerst zu diesem Berthold gehen."
+    },
+    {
+      "start": 966.25,
+      "end": 970.83,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Wer hat gesagt, wir sollen die Wachen fragen, gell? Ja. Hast du die Wachen eben hinten gesehen?"
+    },
+    {
+      "start": 972.54,
+      "end": 973.38,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ich glaube schon."
+    },
+    {
+      "start": 973.7,
+      "end": 977.82,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Da drüben. Alles klar, komm, wir gehen los. Huckepacke."
+    },
+    {
+      "start": 978.98,
+      "end": 1040.0,
+      "speaker": "Deniz (GM)",
+      "text": "Du krabbelst wie hübsch. Ich würde mir auch vorstellen, wie du halt wirklich da so hoch krabbelst, wie so ein Affe, der so über Bäumchen krabbelt. Ja. Ja, ihr lauft praktisch bis zu dem Brunnen, würde ich einfach mal sagen. Genau. und an der Kreuzung seht ihr jetzt das erste Mal rechts geht zu einem Friedhof. Also das Dorf ist tatsächlich schon ein bisschen elevateter, also es ist kein Gammel Village, kann ich jetzt mal sagen. Ein etwas größeres Haus daneben, aber ansonsten erstmal nichts auffälliges. Hier aus der Entfernung könnt ihr auch weiter links, ich markiere es nochmal, einen weiteren Bauernhof sehen. Hier erscheinen die Schweine und Schöner zu haben. Zumindest hört ihr ab und zu ein bisschen Gegrunze und eventuell mal so ein kleines Kikeriki. Als ihr ein bisschen näher kommt noch bei den Wachen, dreht sich die eine Wache zu euch um. Wer seid ihr denn?"
+    },
+    {
+      "start": 1042.2,
+      "end": 1044.7,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Moin! Bist du der Bürgermeister?"
+    },
+    {
+      "start": 1045.06,
+      "end": 1048.82,
+      "speaker": "Deniz (GM)",
+      "text": "Nein, mein Name ist Kerl und das ist mein Freund Brock."
+    },
+    {
+      "start": 1049.93,
+      "end": 1056.13,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ja, Lundbrock, wir suchen den Bürgermeister. Wir haben wichtige, wichtige Informationen für den Bürgermeister."
+    },
+    {
+      "start": 1056.43,
+      "end": 1064.11,
+      "speaker": "Deniz (GM)",
+      "text": "Ach, ist das so? Ja. Was könnte so wichtiges sein, dass ein kleiner... Was seid ihr?"
+    },
+    {
+      "start": 1065.44,
+      "end": 1068.2,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ich bin ein Simja."
+    },
+    {
+      "start": 1068.52,
+      "end": 1069.66,
+      "speaker": "Deniz (GM)",
+      "text": "Noch nie gesehen."
+    },
+    {
+      "start": 1070.32,
+      "end": 1072.1,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Simja. Und ihr"
+    },
+    {
+      "start": 1072.1,
+      "end": 1078.4,
+      "speaker": "Deniz (GM)",
+      "text": "seid sehr groß. Ich kann mir kaum vorstellen, dass ihr Boten für den Bürgermeister seid."
+    },
+    {
+      "start": 1079.56,
+      "end": 1082.68,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Hey, wir sind von der Gilde. Wir sind von der Gilde geschickt worden."
+    },
+    {
+      "start": 1083.18,
+      "end": 1086.36,
+      "speaker": "Micha (Rotunas)",
+      "text": "Mein Volk nennt man auch die Riesen. Die"
+    },
+    {
+      "start": 1086.36,
+      "end": 1102.64,
+      "speaker": "Deniz (GM)",
+      "text": "Riesen. Okay, gut. Das kann natürlich jeder behaupten. Der Bürgermeister ist gerade sehr schwer beschäftigt. Gerne mal versuchen, mit Knowledge oder mit Presence die beiden zu überreden, euch reinzulassen."
+    },
+    {
+      "start": 1103.21,
+      "end": 1117.59,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ich will die ein bisschen einschüchtern mit... Bist du dir sicher, dass du uns hier aufhalten willst? Glaubst du, du kannst sagen, was wichtige Information ist für den Bürgermeister? Wenn der Bürgermeister die Information nicht kriegt, dann bist du es schuld!"
+    },
+    {
+      "start": 1117.81,
+      "end": 1123.73,
+      "speaker": "Deniz (GM)",
+      "text": "Ich würde dich darauf würfeln lassen, aber mit einem Nachteil. Also du würfelst einen W6 und ziehst den von deinem Wurf ab."
+    },
+    {
+      "start": 1124.27,
+      "end": 1131.55,
+      "speaker": "Micha (Rotunas)",
+      "text": "Kann ich was machen, also so Law-mäßig was machen, was das supportet? Ja, du kannst"
+    },
+    {
+      "start": 1131.55,
+      "end": 1139.39,
+      "speaker": "Deniz (GM)",
+      "text": "einen Hope ausgeben, um ihm zu helfen, dann wäre er im Vorteil, also Nachteil, Vorteil gleicht sich aus, also er hätte keinen Nachteil mehr."
+    },
+    {
+      "start": 1139.61,
+      "end": 1142.37,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ja, ich nehme ihn auf meine Hand und"
+    },
+    {
+      "start": 1142.37,
+      "end": 1143.79,
+      "speaker": "Deniz (GM)",
+      "text": "halte"
+    },
+    {
+      "start": 1143.79,
+      "end": 1153.57,
+      "speaker": "Micha (Rotunas)",
+      "text": "ihn vor das Gesicht, vor diesem Kern, damit so sein Anschreien und seine Spucke nochmal in sein Gesicht landet, wirklich so auf Augenhöhe, damit es auf Augenhöhe ist."
+    },
+    {
+      "start": 1153.63,
+      "end": 1163.88,
+      "speaker": "Deniz (GM)",
+      "text": "Und du siehst so wirklich die beiden Fäuste, so den Hüften, so mein Herr! Hör mir mal zu, du Pleb! Ich erzähl dir jetzt mal was! Okay, würfel mal bitte."
+    },
+    {
+      "start": 1164.61,
+      "end": 1168.51,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Jetzt hab ich drei ausgewählt. Wie mach ich jetzt wieder weg? Einfach"
+    },
+    {
+      "start": 1168.51,
+      "end": 1174.5,
+      "speaker": "Deniz (GM)",
+      "text": "einen Rechtsklick drücken. Rechtsklick drücken. Also auf die Sechse. Genau."
+    },
+    {
+      "start": 1175.96,
+      "end": 1178.28,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Und jetzt go for it."
+    },
+    {
+      "start": 1180.6,
+      "end": 1213.2,
+      "speaker": "Deniz (GM)",
+      "text": "Das ist ein Hope für dich und eine 13. Die Wache ist so ein bisschen kurz verunsichert, sagt dann aber so, hm, naja. Vielleicht seid ihr ja wirklich Leute von der, von der, von der Gilde. Ich sag mal so. Ich kann euch eventuell reinlassen, aber nur, wenn ihr... Ja, ich sag mal so. Fragt doch einfach mal Tindrail. Der müsste sich irgendwo am Friedhof auftreiben. Wenn der sein Okay gibt, dann lass ich euch zum Bürgermeister vor."
+    },
+    {
+      "start": 1214.46,
+      "end": 1218.82,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Na, immerhin. Ein bisschen Verstand ist noch in deiner Birne drin."
+    },
+    {
+      "start": 1219.36,
+      "end": 1220.96,
+      "speaker": "Deniz (GM)",
+      "text": "Ey, pass auf, Kleiner."
+    },
+    {
+      "start": 1221.55,
+      "end": 1223.25,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Wer hat nicht frech?"
+    },
+    {
+      "start": 1223.69,
+      "end": 1225.27,
+      "speaker": "Micha (Rotunas)",
+      "text": "Wer ist dieser Tindrael?"
+    },
+    {
+      "start": 1226.11,
+      "end": 1228.01,
+      "speaker": "Deniz (GM)",
+      "text": "Tindrael ist der Grabwächter."
+    },
+    {
+      "start": 1229.64,
+      "end": 1233.96,
+      "speaker": "Micha (Rotunas)",
+      "text": "Wir sollen den Grabwächter nach der Erlaubnis zu dem Bürgermeister fragen. Er ist"
+    },
+    {
+      "start": 1233.96,
+      "end": 1236.08,
+      "speaker": "Deniz (GM)",
+      "text": "ein Geistlicher, er hat hier einiges zu sagen."
+    },
+    {
+      "start": 1237.98,
+      "end": 1239.12,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Bruder Tindrael."
+    },
+    {
+      "start": 1239.56,
+      "end": 1243.89,
+      "speaker": "Deniz (GM)",
+      "text": "So könnte man ihn auch benennen. Okay,"
+    },
+    {
+      "start": 1244.87,
+      "end": 1246.89,
+      "speaker": "Benjamin (Valerie)",
+      "text": "vielen Dank. Bis später."
+    },
+    {
+      "start": 1247.91,
+      "end": 1251.69,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ich mache so einen kleinen Kopfnicken vor ihm. Dann gibst du dabei"
+    },
+    {
+      "start": 1251.69,
+      "end": 1252.43,
+      "speaker": "Deniz (GM)",
+      "text": "eine Kopfnuss. Bam!"
+    },
+    {
+      "start": 1254.8,
+      "end": 1257.74,
+      "speaker": "Micha (Rotunas)",
+      "text": "Genau, Kofnus, der kommt nicht mal dran, der ist bei mir so in Gürtelhöhe."
+    },
+    {
+      "start": 1258.4,
+      "end": 1261.1,
+      "speaker": "Deniz (GM)",
+      "text": "Tindra e Tinda, genau, der Macher von Tinda."
+    },
+    {
+      "start": 1261.5,
+      "end": 1264.5,
+      "speaker": "Micha (Rotunas)",
+      "text": "So, dann lass uns zum Friedhof wandern."
+    },
+    {
+      "start": 1266.28,
+      "end": 1272.79,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Hast du gesehen, das Haus hier? Die Fenster sind alle vergittert, da kann ich nicht rein. So ein Mist."
+    },
+    {
+      "start": 1274.46,
+      "end": 1278.22,
+      "speaker": "Micha (Rotunas)",
+      "text": "Häuser haben so vergitterte Fenster. Zumindest hier in der Stadt."
+    },
+    {
+      "start": 1279.5,
+      "end": 1281.12,
+      "speaker": "Deniz (GM)",
+      "text": "Zumindest die drei. Bei den Magier."
+    },
+    {
+      "start": 1281.47,
+      "end": 1282.33,
+      "speaker": "Micha (Rotunas)",
+      "text": "Wenn ich mich allein"
+    },
+    {
+      "start": 1282.33,
+      "end": 1285.33,
+      "speaker": "Benjamin (Valerie)",
+      "text": "mache, komme ich vielleicht trotzdem durch die Gitter, aber ich glaube eher nicht."
+    },
+    {
+      "start": 1285.75,
+      "end": 1287.91,
+      "speaker": "Micha (Rotunas)",
+      "text": "Der Magier hat wahrscheinlich mehr Gitter auf dem Fenster."
+    },
+    {
+      "start": 1290.12,
+      "end": 1313.0,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, ihr lauft zum Friedhof und als ihr ungefähr so wie an dieser Weggabelung nach links und rechts ankommt, da hört ihr von oben einfach nur ein lautes und in der Ferne auf einem der Hügel bzw. auf dem Steinplateau seht ihr einen großen Ziegenbock, was heißt groß, aber einen recht großen Ziegenbock auf euch herunter blicken."
+    },
+    {
+      "start": 1313.54,
+      "end": 1316.56,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Oh, ich hätte richtig Lust auf Hamilkeule."
+    },
+    {
+      "start": 1320.29,
+      "end": 1322.17,
+      "speaker": "Micha (Rotunas)",
+      "text": "Denkst du, das ist eine wilde Ziege?"
+    },
+    {
+      "start": 1323.74,
+      "end": 1334.88,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ich weiß nicht. Vielleicht hat sie ja ein Namensschild an, aber ich glaube, eine wilde Ziege läuft ja nicht einfach hier im Dorf rum. Ja. Mäh zurück."
+    },
+    {
+      "start": 1335.22,
+      "end": 1341.57,
+      "speaker": "Deniz (GM)",
+      "text": "Mäh. Und mach mal einen Performance-Check. Also einen Presence."
+    },
+    {
+      "start": 1343.72,
+      "end": 1347.1,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Presence, Presence, Presence, hab ich plus 0. Oh ja."
+    },
+    {
+      "start": 1349.39,
+      "end": 1370.74,
+      "speaker": "Deniz (GM)",
+      "text": "Oh, ein Kritt. Und du machst ein Geräusch, was wahrscheinlich sogar krasser gerade als das von dem, also das davor von der Ziege gehörige Krächz und die einfach nur so und scheint so ein bisschen verwirrt zu sein und kommt tatsächlich so ein paar Schrittchen von ihrem Hügel runter."
+    },
+    {
+      "start": 1371.74,
+      "end": 1377.92,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Wenn sie in Reichweite ist, greift sie. Wir machen heute Abend Hamelbraten. Alles klar."
+    },
+    {
+      "start": 1380.78,
+      "end": 1383.08,
+      "speaker": "Micha (Rotunas)",
+      "text": "Die gehen zu der Ziege langsam vorsichtig."
+    },
+    {
+      "start": 1383.3,
+      "end": 1386.16,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, die kommt tatsächlich neugierig auf euch zu."
+    },
+    {
+      "start": 1389.05,
+      "end": 1391.59,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Jetzt finde ich sie doch süß. Jetzt will ich sie erst streicheln."
+    },
+    {
+      "start": 1391.77,
+      "end": 1399.25,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ich gehe an Ziege und langsam mit meiner Hand so streicheln. Ich will sie nicht greifen, nur streicheln."
+    },
+    {
+      "start": 1399.41,
+      "end": 1405.63,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, die scheint recht zahm zu sein, überraschenderweise. Das ist keine wilde Ziege, glaube ich. Ja, okay."
+    },
+    {
+      "start": 1406.68,
+      "end": 1410.7,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Hat die so ein Halsband um? Die hat so ein kleines Glöckchen an, tatsächlich, ja."
+    },
+    {
+      "start": 1412.77,
+      "end": 1419.39,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ich will ungern das Dorf gegen uns aufwiegeln und das scheint mir eine Haustiege zu sein."
+    },
+    {
+      "start": 1419.83,
+      "end": 1423.49,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ah, du willst sie also beraten und allen anbieten. Nein, nein,"
+    },
+    {
+      "start": 1423.53,
+      "end": 1434.11,
+      "speaker": "Micha (Rotunas)",
+      "text": "nein, nein, nein. Verstehe ich nicht. Wir lassen sie in Ruhe. Ihren täglichen Aufgaben. Ich weiß nicht, was Ziegen machen. Ich bin kein Hirte. Dann ist sie"
+    },
+    {
+      "start": 1434.11,
+      "end": 1439.81,
+      "speaker": "Benjamin (Valerie)",
+      "text": "ausgebrochen und wir müssen sie zurückbringen. Das ist möglich. Ich reite sie zurück."
+    },
+    {
+      "start": 1440.18,
+      "end": 1442.42,
+      "speaker": "Deniz (GM)",
+      "text": "Kein Problem. Ich versuche"
+    },
+    {
+      "start": 1442.42,
+      "end": 1443.38,
+      "speaker": "Benjamin (Valerie)",
+      "text": "drauf zu steigen."
+    },
+    {
+      "start": 1443.54,
+      "end": 1450.62,
+      "speaker": "Deniz (GM)",
+      "text": "Mach mal einen Finesse-Wurf. Auch im Vorteil, weil du das Viech gerade schon gebändigt hast, mehr oder weniger."
+    },
+    {
+      "start": 1450.9,
+      "end": 1454.26,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Im Vorteil, großartig. Ja, weil ich betätig bei Finesse minus eins."
+    },
+    {
+      "start": 1458.23,
+      "end": 1478.63,
+      "speaker": "Deniz (GM)",
+      "text": "Das ist auch ein Hauptwurf und eine Sechzehn. Ja, du schaffst es tatsächlich, dich easy da wirklich wie auf so einer Harley, setzt du dich da drauf auf so einem Chopper und hast die Hörner so ein bisschen mehr oder weniger in der Hand und sitzt da so, also wirklich cool und du schnäppst halt so eine Sonnenbrille aus dem Inventar, setzt sie dir auf. Ich"
+    },
+    {
+      "start": 1478.63,
+      "end": 1484.49,
+      "speaker": "Benjamin (Valerie)",
+      "text": "trage immer so eine Pilotenbrille, also es ist schon Standardausrüstung, so eine Pilotenbrille. Ja, safe, safe."
+    },
+    {
+      "start": 1488.53,
+      "end": 1489.03,
+      "speaker": "Micha (Rotunas)",
+      "text": "Oh, die ist"
+    },
+    {
+      "start": 1489.03,
+      "end": 1496.53,
+      "speaker": "Benjamin (Valerie)",
+      "text": "aber freundlich. Rum, rum, aus dem Weg. Und ich versuch die ein bisschen anzutreiben. Ich weiß nur noch nicht wohin."
+    },
+    {
+      "start": 1497.01,
+      "end": 1528.21,
+      "speaker": "Deniz (GM)",
+      "text": "Ja in dem Augenblick also so ein bisschen die antreibst, sprintet die Geht kurz los und rennt einmal so eine straight line bis zum Gebäude und bremst da auch sehr abrupt und macht einfach nur BÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ"
+    },
+    {
+      "start": 1531.41,
+      "end": 1533.05,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Also scheinbar ist es die Berti."
+    },
+    {
+      "start": 1533.45,
+      "end": 1540.16,
+      "speaker": "Micha (Rotunas)",
+      "text": "Du sitzt ja noch auf der Ziege. Ich bin runtergefallen, als sie"
+    },
+    {
+      "start": 1540.16,
+      "end": 1547.84,
+      "speaker": "Deniz (GM)",
+      "text": "gebremst hat. Und an dem Blick kommt auch einer raus und läuft praktisch so abgestiegen extra."
+    },
+    {
+      "start": 1548.56,
+      "end": 1551.34,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Nee, als sie gebremst hat, bin ich oben drüber geflogen."
+    },
+    {
+      "start": 1552.28,
+      "end": 1568.87,
+      "speaker": "Deniz (GM)",
+      "text": "Nee, ich würde sagen, du hast dich ganz gut festgehalten. Und als der dich und den Ziegenbox sieht, ist er... Heilenz begeistert. Ach, was seid ihr denn so putzig? Ihr habt Bertie gefunden. Wie wundervoll."
+    },
+    {
+      "start": 1569.69,
+      "end": 1574.19,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ja, die war oben auf dem Stein und hat uns angemäht."
+    },
+    {
+      "start": 1574.55,
+      "end": 1580.65,
+      "speaker": "Deniz (GM)",
+      "text": "Ihr müsst etwas einzigartiges an euch haben. Normalerweise ist Bertie nicht so leicht zu zähmen."
+    },
+    {
+      "start": 1582.09,
+      "end": 1585.63,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ach ja, weißt du, von Tier zu Tier. Verstehe."
+    },
+    {
+      "start": 1586.62,
+      "end": 1599.39,
+      "speaker": "Deniz (GM)",
+      "text": "Ähm, nun, mein Name ist Tindrael. Wie kann ich Ihnen helfen und danken für eure großzügige Tat? Grüß Gott, Kai. Hm,"
+    },
+    {
+      "start": 1599.91,
+      "end": 1611.93,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Tindrael, hm, Tindrael, hm, Bruder Tindrael. Ja? Wir haben nach Ihnen gesucht. Ach, ist das so? Ja, ja, durchaus, durchaus. Wir haben mit dem Kerl gesprochen eben. Wie hieß der Kerl?"
+    },
+    {
+      "start": 1612.37,
+      "end": 1614.19,
+      "speaker": "Micha (Rotunas)",
+      "text": "Kerl, Kerl, Kerl."
+    },
+    {
+      "start": 1614.27,
+      "end": 1619.83,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, das ist einer der Wächter. Kerl und der andere war Brock, genau."
+    },
+    {
+      "start": 1622.03,
+      "end": 1636.31,
+      "speaker": "Micha (Rotunas)",
+      "text": "Die Wächter sagten uns, um den Bürgermeister zu sprechen. Berthold, ja. Ja, genau. Müssen wir Erlaubnis von euch einholen."
+    },
+    {
+      "start": 1636.51,
+      "end": 1645.8600000000001,
+      "speaker": "Deniz (GM)",
+      "text": "Nun, ich bin tatsächlich hier nach dem Bürgermeister wahrscheinlich die nächste Autoritätsperson. Weshalb wollt ihr denn zum Bürgermeister?"
+    },
+    {
+      "start": 1648.0,
+      "end": 1666.82,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Wir haben geheime Informationen von... Also wir sind von der Gilde erstmal. Das wollte ich mal festhalten. Und eine andere Gruppe von der Gilde hat vor kurzem Informationen sammeln können, dass ein Goblin-Angriff bevorsteht und es soll dieses Dorf treffen."
+    },
+    {
+      "start": 1667.12,
+      "end": 1681.58,
+      "speaker": "Deniz (GM)",
+      "text": "Mach mal nochmal einen... einen Presence-Wurf oder einen Knowledge-Wurf, was dir besser liegt, wahrscheinlich Knowledge. Gerne auch ein Vorteil, weil der sehr gut auf euch zu sprechen ist gerade. Oh ja, das sieht gut aus. Aber da ist ein 4 da höher."
+    },
+    {
+      "start": 1682.63,
+      "end": 1687.03,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Aber immerhin... Immerhin ein 14. Ja, plus 2 wegen Knowledge."
+    },
+    {
+      "start": 1687.35,
+      "end": 1705.8,
+      "speaker": "Deniz (GM)",
+      "text": "Ah, steht 16. Ja, der lächelt euch direkt sehr freudig an nach dem Motto, okay, ja, er glaubt euch. Gut, bei solch wichtigen Neuigkeiten sollten wir nicht lange warten. Sekunde. Und du siehst halt nur, wie der Kurz Berti in die Scheune führt,"
+    },
+    {
+      "start": 1706.04,
+      "end": 1707.98,
+      "speaker": "Benjamin (Valerie)",
+      "text": "die"
+    },
+    {
+      "start": 1708.53,
+      "end": 1721.07,
+      "speaker": "Deniz (GM)",
+      "text": "Türe hinter sich schließt, lasst uns aufbrechen und sich auf dem Weg zu den Wächtern macht."
+    },
+    {
+      "start": 1721.51,
+      "end": 1722.53,
+      "speaker": "Benjamin (Valerie)",
+      "text": "War ja einfach."
+    },
+    {
+      "start": 1729.07,
+      "end": 1763.84,
+      "speaker": "Deniz (GM)",
+      "text": "Ähm, als ihr bei den Wächtern ankommt, seht ihr nur, wie die beiden Wächter ihn so angucken. Äh, gehören die beiden zu euch? Gewiss, sie sind wichtige Gesandte der Gelde. Also wäre es von Vorteil, wenn ihr sie zu Berthold durchlassen würdet. Nun gut, Tendai, wenn ihr das sagt. Und die Wache nimmt so einen bunten Schlüssel, geht zur Tür und... öffnet diese. Ah, die Türen gehen in beide Seiten auch, sehr gut."
+    },
+    {
+      "start": 1765.42,
+      "end": 1770.58,
+      "speaker": "Micha (Rotunas)",
+      "text": "Also die Wachen haben jetzt die Türen von außen mit Schlüssel geöffnet."
+    },
+    {
+      "start": 1770.7,
+      "end": 1778.32,
+      "speaker": "Deniz (GM)",
+      "text": "Wahrscheinlich wird der Bürgermeister auch welche haben, aber die Türen waren wieder verschlossen. Okay. Okay. Ich"
+    },
+    {
+      "start": 1778.32,
+      "end": 1782.94,
+      "speaker": "Benjamin (Valerie)",
+      "text": "gehe ganz langsam rein, gucke die ganze Zeit den Kerl dabei an und mach so."
+    },
+    {
+      "start": 1786.52,
+      "end": 1798.28,
+      "speaker": "Deniz (GM)",
+      "text": "Der, dieser, dieser, dieser, dieser Wächter, der verdreht uns ein bisschen die Augen so nach dem Motto, mein Gott, die regen sich aber auf. Und Tindrael geht mit euch zu Berthold hinein."
+    },
+    {
+      "start": 1798.68,
+      "end": 1806.62,
+      "speaker": "Micha (Rotunas)",
+      "text": "Oh, ich kann sogar reingehen. Ja, die Tür ist größer. Die Tür ist größer, genau. Ich bin irgendwie drinnen."
+    },
+    {
+      "start": 1807.52,
+      "end": 1815.02,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, ihr kommt, oh, ich mach mal den Magier ein bisschen, wenn ihr N drückt, by the way, ne, dann könnt ihr so ein bisschen besseren Überblick über alles haben."
+    },
+    {
+      "start": 1819.23,
+      "end": 1865.05,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, ihr kommt in den Raum rein und seht einen recht, wie sagt man das, zufrieden aussehenden Herren, der sich gerade mit irgendwelchen Papieren beschäftigt und als er euch sieht und Tindrael vor allem reinkommt. Oh, Tindrael, was gibt es so wichtiges, dass ihr mich gerade stören müsst? Mein Herr, wir haben hier zwei... Boten der Gilde. Sie haben eine sehr wichtige Nachricht für euch. Warte, bevor ihr was sagt. Zwischen ganz kurz die Musik. So, Sekunde, Sekunde. Ripp, ripp, ripp. Ab sofort."
+    },
+    {
+      "start": 1865.29,
+      "end": 1867.31,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Jetzt mal Bossmusik, ey. Nee, nein."
+    },
+    {
+      "start": 1868.03,
+      "end": 1883.97,
+      "speaker": "Deniz (GM)",
+      "text": "Es sind so viele Songs, aber ich muss... Ich hab genau einen im Kopf. Wo ist er denn? Mido ist da. Ja. Dann tragt mal vor, was ihr zu sagen habt, die Herrschaften. Willst du?"
+    },
+    {
+      "start": 1884.48,
+      "end": 1897.62,
+      "speaker": "Micha (Rotunas)",
+      "text": "Mach du. Wir grüßen euch Bürgermeister Berthold. Ihr seid? Mein Name ist Rotunas von den Riesen. Den"
+    },
+    {
+      "start": 1897.62,
+      "end": 1898.92,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Riesen? Ja, ich bin Valeria."
+    },
+    {
+      "start": 1899.18,
+      "end": 1936.45,
+      "speaker": "Micha (Rotunas)",
+      "text": "Und das ist mein Begleiter Valeria. Ihr seid wahrhaftig einzigartig. Und ich hab hier an meinem Armgedöns hier, hab ich einfach so ein Siegel von der Gilde. Okay, ja. So, und dann zeige ich ihm so, wir kommen von der Gilde. Ja, wie ihr sehen könnt, sind wir Gesandte der Gilde. Wir haben von einer Gruppe unserer Gilde erfahren, dass es einen Angriff stattfinden soll auf dieses Dorf. Ein Angriff? Ja, ein Goblin-Angriff, um genau zu sein."
+    },
+    {
+      "start": 1936.83,
+      "end": 1960.84,
+      "speaker": "Deniz (GM)",
+      "text": "Und ihr seht so ein bisschen, dass die Mimik von Berthold sich tatsächlich so ein bisschen verzieht. Er aber auch im nächsten Augenblick so ein bisschen... Nun... Goblins sind nur nicht wirklich gefährliche Kreaturen. Von welcher Anzahl reden wir denn? Alle. Alle. Alle Goblins. Ich weiß"
+    },
+    {
+      "start": 1960.84,
+      "end": 1965.16,
+      "speaker": "Micha (Rotunas)",
+      "text": "nicht, was die da als Info bekommen haben. In der Info stand"
+    },
+    {
+      "start": 1965.16,
+      "end": 1968.8,
+      "speaker": "Deniz (GM)",
+      "text": "weder drin, was die Anzahl ist, noch wer sie anführt."
+    },
+    {
+      "start": 1969.5,
+      "end": 1978.77,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Genug Goblins, dass die Gilde glaubt, dass ihr gewarnt werden müsst. Genau das, eine... Aber ich seh ja die fette Armbrüste hier. Ich benutze die Armbrüste, die auf dem Tisch liegt."
+    },
+    {
+      "start": 1978.99,
+      "end": 1981.79,
+      "speaker": "Deniz (GM)",
+      "text": "Du grabbelst sie dir einfach, okay. Oh, shit. Ja."
+    },
+    {
+      "start": 1981.91,
+      "end": 1985.25,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ich will den Hebel dran und einfach dran ziehen. Will gucken, was passiert."
+    },
+    {
+      "start": 1985.25,
+      "end": 1992.95,
+      "speaker": "Micha (Rotunas)",
+      "text": "Bevor er zieht, bevor er zieht, greife ich nach ihm und halte ihn hinten an seinem... Schwänzle? Was?"
+    },
+    {
+      "start": 1994.09,
+      "end": 1996.07,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ihrem. Das ist ein Mädel, was ich spiele. Ach,"
+    },
+    {
+      "start": 1996.07,
+      "end": 2002.53,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ihrem Schwänzle, okay. Nee, nicht Schwänzle. Wie heißt das hinten am Nacken? Rute? Ach so, eine Kleidung. Kleidung. Also ich"
+    },
+    {
+      "start": 2002.53,
+      "end": 2003.35,
+      "speaker": "Benjamin (Valerie)",
+      "text": "hab so einen Schal an."
+    },
+    {
+      "start": 2003.7,
+      "end": 2030.9099999999999,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ah, Schal! Ja, ich halte dich so am Schal fest. Lass mich runter! Nee, ich halte dich am Boden. Du bist am Boden. Du bist am Boden. Ich halte dich nur fest, damit du nichts angreppelst gerade. So hätte es sich um eine Gruppe, kleine Gruppe oder eine Gruppe handeln mit der... die Gilde... Ich sag jetzt einfach mal mit ein paar unserer..."
+    },
+    {
+      "start": 2045.98,
+      "end": 2047.26,
+      "speaker": "Micha (Rotunas)",
+      "text": "Das"
+    },
+    {
+      "start": 2047.29,
+      "end": 2064.67,
+      "speaker": "Deniz (GM)",
+      "text": "klingt wahrhaftig bedauerlich. Nun, aber was sollen wir das Dorf Breshka dagegen ausrichten? Habt ihr eine Idee, was wir tun sollen? Sollen wir das Dorf verlassen?"
+    },
+    {
+      "start": 2065.99,
+      "end": 2067.41,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Oder eine Falle stellen."
+    },
+    {
+      "start": 2069.26,
+      "end": 2093.3,
+      "speaker": "Deniz (GM)",
+      "text": "Eine Falle? Wie stellt ihr euch das vor? Nun, wir können die... Die Dorfbewohner mit Waffen ausrüsten, aber abgesehen von den beiden Wächtern und vielleicht dem Schankwirt gibt es hier niemanden, der wirklich mit einer Waffe umgehen kann. Vielleicht noch der Gast, der Magier, aber er lebt aktuell sehr zurückgezogen in seinem Häuschen."
+    },
+    {
+      "start": 2093.84,
+      "end": 2114.5299999999997,
+      "speaker": "Micha (Rotunas)",
+      "text": "Naja, den Magier können wir später überzeugen, aber wie ihr wisst, sind Goblins kleine, schwächere Kreaturen. Man könnte sagen, sie haben eine Stärke von einem Kind. Das heißt, ein Mensch, ein Erwachsener, ist mit einer Heugabel, ist stärker als ein kleiner Goblin."
+    },
+    {
+      "start": 2115.51,
+      "end": 2119.63,
+      "speaker": "Deniz (GM)",
+      "text": "Verzeihen Sie und der... Tim3 meldet sich wieder zu Wort."
+    },
+    {
+      "start": 2159.29,
+      "end": 2187.98,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Wir könnten wirklich eine Falle stellen. Wir machen, wir tun so als würden wir hier drin eine große Feier machen und ganz viel Lärm und Musik und in Wirklichkeit sitzen wir aber draußen und wenn die Goblins kommen und sich das Sachen holen wollen hier Wer weiter weiß ich noch nicht mit dem Plan. Vielleicht greifen wir sie dann an. Wenn sie hier drin sind. Oder wir sperren sie ein hier drin. Oder wir buddeln ein großes Loch. Und dann fallen sie da rein."
+    },
+    {
+      "start": 2188.26,
+      "end": 2219.74,
+      "speaker": "Deniz (GM)",
+      "text": "Nun, ich werde noch ein paar wichtige Dinge vorher erledigen müssen, die definitiv meine... Wie sagt man das? Meine... Wie sagt man das denn? Seine Aufmerksamkeit, danke. Meine Aufmerksamkeit bedarf. Bitte... Kümmert euch um eine entsprechende Verteidigung, beziehungsweise wenn ihr sagt, diese Feier-Idee, dann solltet ihr vielleicht mit dem Wirt vorher reden. Das wäre das richtige Ambiente dafür."
+    },
+    {
+      "start": 2220.64,
+      "end": 2224.8,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Darf ich die Armbrust mitnehmen? Nein. Bitte?"
+    },
+    {
+      "start": 2225.8,
+      "end": 2230.94,
+      "speaker": "Deniz (GM)",
+      "text": "Mach mal einen Überzeugenwurf, gerne, auf Presence. Ich"
+    },
+    {
+      "start": 2230.94,
+      "end": 2232.2799999999997,
+      "speaker": "Benjamin (Valerie)",
+      "text": "brauch die, zu der Verteidigung."
+    },
+    {
+      "start": 2238.42,
+      "end": 2254.05,
+      "speaker": "Deniz (GM)",
+      "text": "Ihr dürft euch übrigens beide in eurem Bogen ganz unten bei Equipment dürft ihr euch mal zweimal eine Handvoll Gold aufschreiben. Also einfach bei dem Plus einmal auf zwei drücken. Ihr habt zwei Hände voll Gold."
+    },
+    {
+      "start": 2255.25,
+      "end": 2256.49,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Okay, also insgesamt"
+    },
+    {
+      "start": 2256.49,
+      "end": 2259.85,
+      "speaker": "Micha (Rotunas)",
+      "text": "oder jetzt, ich wollte gerade sagen, habe ich jetzt drei oder habe ich jetzt insgesamt zwei?"
+    },
+    {
+      "start": 2261.83,
+      "end": 2292.88,
+      "speaker": "Deniz (GM)",
+      "text": "Ihr habt insgesamt zwei, jeweils. Also jeder von euch hat zwei Stück. Also vier Stück insgesamt. Sehr stark. Tatsächlich... Ja, ich schreib ein 4 auf. Tatsächlich ist der Bürgermeister ganz kurz abgeneigt und war dann... Nun, ich würde sie euch für eine Handvoll Gold verkaufen, wenn ihr das möchtet."
+    },
+    {
+      "start": 2295.56,
+      "end": 2298.2200000000003,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Es ist für die Verteidigung dieser Stadt hier."
+    },
+    {
+      "start": 2298.71,
+      "end": 2319.04,
+      "speaker": "Deniz (GM)",
+      "text": "Nun, ich bin ein Handelsmann und würde natürlich nur ungern diese Sachen aus der Hand geben. Selbstverständlich, sollte es zum Verteidigungsfall kommen, dürftet ihr euch sie ausleihen. Aber da ihr so lieb gefragt habt, würde ich sie euch tatsächlich verkaufen. Na gut."
+    },
+    {
+      "start": 2320.84,
+      "end": 2326.86,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Hast du mein Gold? Ah ne, warte, ich hab's gefunden. Hier."
+    },
+    {
+      "start": 2329.44,
+      "end": 2336.0,
+      "speaker": "Deniz (GM)",
+      "text": "Du gibst ihm eine Hand voll Gold und er übergibt dir die Armbrust. Kannst du die"
+    },
+    {
+      "start": 2336.0,
+      "end": 2339.44,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Armbrust für mich tragen bitte? Die ist genauso groß wie ich."
+    },
+    {
+      "start": 2340.1,
+      "end": 2341.76,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ja, ich nehm die Armbrust einfach mal."
+    },
+    {
+      "start": 2342.0,
+      "end": 2348.16,
+      "speaker": "Deniz (GM)",
+      "text": "Ihr dürft euch die Armbrust gerne einer von euch aufschreiben. Du"
+    },
+    {
+      "start": 2348.16,
+      "end": 2350.04,
+      "speaker": "Micha (Rotunas)",
+      "text": "kannst sie nicht tragen."
+    },
+    {
+      "start": 2350.5,
+      "end": 2352.26,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ja okay, ich schreib sie mir auf. Die"
+    },
+    {
+      "start": 2352.26,
+      "end": 2355.54,
+      "speaker": "Micha (Rotunas)",
+      "text": "schreibst du dir, weil du benutzt sie ja. Ich geb sie dir einfach dann in dem Moment."
+    },
+    {
+      "start": 2358.0,
+      "end": 2361.36,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ähm, wie kriege ich die jetzt in mein Equipment rein? Äh,"
+    },
+    {
+      "start": 2361.36,
+      "end": 2371.88,
+      "speaker": "Deniz (GM)",
+      "text": "wenn ihr auf Equipment geht, dann Manage Equipment und dann könnt ihr, äh, die heißt Crossbow und dann darfst du dir mal, wo ist sie?"
+    },
+    {
+      "start": 2373.49,
+      "end": 2376.29,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Bei mir Crossbow, Primary Weapon, One-Handed."
+    },
+    {
+      "start": 2376.57,
+      "end": 2379.75,
+      "speaker": "Deniz (GM)",
+      "text": "Genau, Crossbow. Advanced, Improved,"
+    },
+    {
+      "start": 2379.83,
+      "end": 2380.69,
+      "speaker": "Benjamin (Valerie)",
+      "text": "wie gut ist die?"
+    },
+    {
+      "start": 2381.4700000000003,
+      "end": 2382.63,
+      "speaker": "Deniz (GM)",
+      "text": "Wie gut ist die?"
+    },
+    {
+      "start": 2383.33,
+      "end": 2387.39,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ja, ich meine, es gibt da drunter noch den Advanced Crossbow, der ist ein bisschen besser als der normalen Crossbow. Dann"
+    },
+    {
+      "start": 2387.39,
+      "end": 2390.45,
+      "speaker": "Deniz (GM)",
+      "text": "nimmst du den normalen Crossbow, ja, ja. Nicht direkt den fetten Loot."
+    },
+    {
+      "start": 2392.57,
+      "end": 2396.07,
+      "speaker": "Micha (Rotunas)",
+      "text": "Legendary Crossbow of Demolition."
+    },
+    {
+      "start": 2399.74,
+      "end": 2410.51,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ja, jetzt hab ich da draufgeklickt und jetzt hab ich den hier drin. Jetzt musst du den nur wieder equippen, genau. Ja, ich equip den. Ich hab meinen Great Staff. Ich behalte erstmal den Great Staff, aber ich nehm die Crossbow mit."
+    },
+    {
+      "start": 2410.85,
+      "end": 2416.05,
+      "speaker": "Deniz (GM)",
+      "text": "Okay. Okay. Nun behalte euch. Kümmert euch um die Verteidigung."
+    },
+    {
+      "start": 2416.69,
+      "end": 2430.4,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ja. Okay. Bevor wir gehen, habt ihr vielleicht eine, ja, nun ja, es ist ein Dorf, das verstehe ich schon, aber vielleicht eine Karte von den, wie die Höfe hier stehen?"
+    },
+    {
+      "start": 2432.06,
+      "end": 2438.06,
+      "speaker": "Deniz (GM)",
+      "text": "Ähm, wir haben keine Karte, aber ich kann euch sagen, wo was Wichtiges zu finden ist, wenn ihr das wollt."
+    },
+    {
+      "start": 2438.74,
+      "end": 2447.4700000000003,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ja, gut. Könnt ihr uns sagen, wo zum Beispiel der wird und ein Miet müsst ihr ja haben, denke ich."
+    },
+    {
+      "start": 2448.82,
+      "end": 2486.45,
+      "speaker": "Deniz (GM)",
+      "text": "Äh, sucht mal kurz raus. Ähm, ihr meint mal ganz kurz so ein bisschen die Übersicht. Also, der erklärt euch, dass hier ist das Wirtshaus. Okay. Äh, dann haben wir hier, das ist so eine Art Schlafgebäude für alle. Also, die schlafen sehr, sehr zentriert teilweise. Manche schlafen auch bei den Bauernhöfen. Ähm, ups, dann haben wir hier, warte, das ist Familie. Schmid, Familie Schmid, die haben überwiegend Tiere und Holz. Und dann haben wir noch... Doch, warte, ruhiger werden."
+    },
+    {
+      "start": 2487.13,
+      "end": 2490.49,
+      "speaker": "Micha (Rotunas)",
+      "text": "Familie Schmid. Achso, nee, Familie Schmid,"
+    },
+    {
+      "start": 2490.49,
+      "end": 2504.51,
+      "speaker": "Deniz (GM)",
+      "text": "sorry. Und Familie Krämer, die haben Kühe und einen Schmied. Ansonsten, der Magier, der lebt ja, wie ihr schon wisst, in dem kleinen Häuschen. Weiter hinten."
+    },
+    {
+      "start": 2504.57,
+      "end": 2506.89,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Das kleine Häuschen neben dem Magier? Genau."
+    },
+    {
+      "start": 2507.71,
+      "end": 2526.87,
+      "speaker": "Deniz (GM)",
+      "text": "Nun, ähm, wir hatten vor kurzem einen Händler hier, doch er wurde überfallen von einigen Goblins oder von irgendwas anderem. Und er hat es nicht geschafft. Es steht aktuell frei, also wenn ihr eine Nacht übernachten oder eine Unterkunft benötigt, dürft ihr euch gerne dort einfinden. Ja"
+    },
+    {
+      "start": 2526.87,
+      "end": 2527.4700000000003,
+      "speaker": "Benjamin (Valerie)",
+      "text": "super, machen wir."
+    },
+    {
+      "start": 2527.5699999999997,
+      "end": 2541.9,
+      "speaker": "Micha (Rotunas)",
+      "text": "Danke. Danke. Dann gehen wir zuerst zu dem Wirtshaus, würd ich sagen. Oh, oder Tim, Henrail. Möchtet ihr uns begleiten?"
+    },
+    {
+      "start": 2543.05,
+      "end": 2600.01,
+      "speaker": "Deniz (GM)",
+      "text": "Selbstverständlich, ich zeige euch den Weg. Obwohl ihr jetzt gerade die Erklärung bekommen habt, bringt ihr euch rüber zum Wirtshaus. Und, warte, wir wechseln wieder ganz kurz die Mucke. Und, nämlich als ihr den, warte, muss ich, follow this village. Nein, das ist ein bisschen zu düster. Das hier ist das Richtige. Zack. Dann gehen die beiden Töne immer in die falsche Richtung auf. Und ihr betritt eine kleine, recht putzige Taverne, in der tatsächlich ein paar mehr Leute drin sind. Ihr seid in der Ecke, da scheinen gerade zwei was zu trinken und was zu spielen. An der Theke steht jemand und ansonsten habt ihr noch einen Barkeeper auf der anderen Seite."
+    },
+    {
+      "start": 2603.41,
+      "end": 2605.09,
+      "speaker": "Micha (Rotunas)",
+      "text": "Tindrell, kommt mit uns rein?"
+    },
+    {
+      "start": 2605.33,
+      "end": 2618.98,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, Tindrell kommt mit euch rein. Tindrell, ihr habt Gäste, sehe ich. Ja, das hier sind unsere Gäste. Wir haben hier einmal Rotunas und der andere war Valeria."
+    },
+    {
+      "start": 2619.48,
+      "end": 2622.7799999999997,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Die andere? Ja, Ballot. Warum denkt jeder, ich bin ein Mann?"
+    },
+    {
+      "start": 2623.04,
+      "end": 2638.08,
+      "speaker": "Deniz (GM)",
+      "text": "Man kann euch nicht so gut auseinanderhalten. Tut mir leid. Auf jeden Fall... Der spielt auch eine Frau und ich krieg das nicht gebacken."
+    },
+    {
+      "start": 2642.1099999999997,
+      "end": 2644.01,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, ihr wisst, was ich meine. Ich"
+    },
+    {
+      "start": 2644.01,
+      "end": 2650.13,
+      "speaker": "Benjamin (Valerie)",
+      "text": "gehe zu Tinder und sage, alles gut, macht nichts. Ich bin dir nicht böse. Wir Frauen müssen ja zusammenhalten."
+    },
+    {
+      "start": 2652.81,
+      "end": 2666.2,
+      "speaker": "Deniz (GM)",
+      "text": "Der ist ein bisschen verblüfft und sagt einfach gar nichts dazu. Auf jeden Fall, der Barkeeper, der guckt so zu euch. Na, was darf's sein? So was Großes, so was Kleines. So groß wie ich, bitte."
+    },
+    {
+      "start": 2668.95,
+      "end": 2676.4700000000003,
+      "speaker": "Deniz (GM)",
+      "text": "Der nimmt dir eine Goldmünze ab und schiebt dir so ein Bier rüber."
+    },
+    {
+      "start": 2681.1800000000003,
+      "end": 2688.8599999999997,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ja, ich fang langsam an dran zu nippen. Ich schaff das auch nicht das zu heben, das ist einfach zu groß und trinke so erst den Schaum ein bisschen ab."
+    },
+    {
+      "start": 2690.48,
+      "end": 2695.2200000000003,
+      "speaker": "Deniz (GM)",
+      "text": "Würdest du sagen, du bist ein Zecher? Du kannst gut zechen?"
+    },
+    {
+      "start": 2695.8900000000003,
+      "end": 2707.09,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ich bin, also alles was Essen und Trinken angeht, bin ich relativ gut. Das ist so ziemlich der Hauptdeal von dem Charakter. Deswegen habe ich auch als Experience, Essen ist großartig, ich muss alles mal probieren. Dann würfel doch, dann"
+    },
+    {
+      "start": 2707.09,
+      "end": 2715.9700000000003,
+      "speaker": "Deniz (GM)",
+      "text": "aktiviere mal ein Hope und bitte benutze diesen Experience Point und würfel mal drauf, ob dir das gut schmeckt."
+    },
+    {
+      "start": 2717.95,
+      "end": 2719.95,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ja, ein Hope."
+    },
+    {
+      "start": 2720.55,
+      "end": 2721.63,
+      "speaker": "Deniz (GM)",
+      "text": "Genau, du musst einfach einen Haupt packen."
+    },
+    {
+      "start": 2722.88,
+      "end": 2725.46,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Jo, habe ich aktiviert und dann gibt es einfach noch plus zwei drauf."
+    },
+    {
+      "start": 2727.04,
+      "end": 2740.98,
+      "speaker": "Deniz (GM)",
+      "text": "Also das Bier ist ja nicht das Feinste vom Feinsten, danke für den 4-Point, aber du verträgst es. Für Sie, werte Herr, kann ich Ihnen auch etwas geben?"
+    },
+    {
+      "start": 2741.7200000000003,
+      "end": 2745.09,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ja, habt ihr Wein?"
+    },
+    {
+      "start": 2745.99,
+      "end": 2748.1099999999997,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, wir haben auch Wein hier, tatsächlich, ja."
+    },
+    {
+      "start": 2748.6099999999997,
+      "end": 2752.85,
+      "speaker": "Micha (Rotunas)",
+      "text": "Dann hätte ich gern ein Glas Wein."
+    },
+    {
+      "start": 2753.3,
+      "end": 2758.7200000000003,
+      "speaker": "Deniz (GM)",
+      "text": "Ihr habt hier einen Becher Wein. Und der schenkt dir einen Becher Wein ein."
+    },
+    {
+      "start": 2759.58,
+      "end": 2764.24,
+      "speaker": "Micha (Rotunas)",
+      "text": "Okay. Ich nehme den Becher Wein. Ja. Und esse ihn."
+    },
+    {
+      "start": 2764.26,
+      "end": 2765.5,
+      "speaker": "Deniz (GM)",
+      "text": "Und esse ihn. Kling!"
+    },
+    {
+      "start": 2765.5,
+      "end": 2773.21,
+      "speaker": "Micha (Rotunas)",
+      "text": "Wirt! Ja? Wie ist ihr Name? Sie mit Wörtern zu sprechen ist irgendwie meiner Meinung nach unnötig."
+    },
+    {
+      "start": 2773.21,
+      "end": 2807.05,
+      "speaker": "Deniz (GM)",
+      "text": "Mein Name ist Hubert. Hubert. Hubert! Und ich bin Nip. Und der Typ, der... Wer ist das hier? Ein bisschen besoffen wirkt. Prostet euch so ein bisschen zu! Prost! Ich kenne euch zwar nicht, aber Prost! Du siehst so witzig aus! Du bist so groß! Prost, großer Mann! Prost! Und er hält dir so seinen Krug hin."
+    },
+    {
+      "start": 2807.8900000000003,
+      "end": 2816.13,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ja, ich halte mir ein Glas und dann... Vorsichtig oder Becher mit dem Wein und dann stoße ich vorsichtig an."
+    },
+    {
+      "start": 2816.31,
+      "end": 2821.0699999999997,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, gut, dass du gesagt hast, vorsichtig, weil sonst hätte ich jetzt drauf Stärke würfeln lassen."
+    },
+    {
+      "start": 2821.5299999999997,
+      "end": 2826.21,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ja, was"
+    },
+    {
+      "start": 2826.21,
+      "end": 2829.49,
+      "speaker": "Deniz (GM)",
+      "text": "kann ich für dich tun, liebe Dame?"
+    },
+    {
+      "start": 2830.99,
+      "end": 2834.98,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Dankeschön. Wie lange bist du schon Wirt hier in dem Dorf?"
+    },
+    {
+      "start": 2835.3199999999997,
+      "end": 2837.5,
+      "speaker": "Deniz (GM)",
+      "text": "Ich bin hier eigentlich schon mein ganzes Leben Wirt."
+    },
+    {
+      "start": 2838.4,
+      "end": 2842.8599999999997,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Großartig, das wollte ich hören. Ist das Dorf schon mal angegriffen worden?"
+    },
+    {
+      "start": 2843.2200000000003,
+      "end": 2862.08,
+      "speaker": "Deniz (GM)",
+      "text": "Schon viele Male, aber immer nur Kleinigkeiten. Manchmal waren es zwei, drei Söldner, die sich einfach nur ein bisschen den Bauch vollschlagen wollten oder die Taschen eher gesagt und manchmal hat es irgendeinen dummen Gobbeln hier vertrieben. Aber noch nie etwas Gefährliches. Deswegen sind auch vor den meisten Gebäuden Gitter, falls ihr das schon bemerkt habt."
+    },
+    {
+      "start": 2862.9300000000003,
+      "end": 2868.04,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ja, doch stimmt, haben wir gesehen. Aber was wäre denn, wenn auf einmal was..."
+    },
+    {
+      "start": 2882.42,
+      "end": 2883.8199999999997,
+      "speaker": "Deniz (GM)",
+      "text": "Charakternamen."
+    },
+    {
+      "start": 2895.7200000000003,
+      "end": 2897.08,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Das war eine"
+    },
+    {
+      "start": 2897.08,
+      "end": 2899.62,
+      "speaker": "Deniz (GM)",
+      "text": "rein hypothetische Frage, richtig? Rein hypothetisch."
+    },
+    {
+      "start": 2900.1,
+      "end": 2905.1800000000003,
+      "speaker": "Micha (Rotunas)",
+      "text": "Rein, rein, rein nicht hypothetisch gefragt. Und in dem"
+    },
+    {
+      "start": 2905.1800000000003,
+      "end": 2914.52,
+      "speaker": "Deniz (GM)",
+      "text": "Augenblick, als ihr das so ein bisschen so anteasert, dass hier was passieren könnte, merkt ihr auch, wie die anderen Leute in der Schenke so ein bisschen, ja wie sagt man,"
+    },
+    {
+      "start": 2915.25,
+      "end": 2917.09,
+      "speaker": "Micha (Rotunas)",
+      "text": "hellhörig"
+    },
+    {
+      "start": 2917.09,
+      "end": 2947.74,
+      "speaker": "Deniz (GM)",
+      "text": "werden und mit zu euch an den Tisch kommen. Und der alte Mann spricht euch an. Was habt ihr gesagt? Ein Angriff steht uns bevor? Und die Dame direkt daneben. Ein Angriff? Was soll das denn heißen? Wir wurden noch nie wirklich von irgendwas großem angegriffen. Und ihr hört nur Nips. Ein Angriff."
+    },
+    {
+      "start": 2949.67,
+      "end": 2965.24,
+      "speaker": "Micha (Rotunas)",
+      "text": "Eine Erklärung in kurz. Es steht ein Angriff der Goblins bevor. Jetzt hört mal zu. Wir sind früh genug hier. Deshalb gibt es hier keine Sorgen. Wir werden euch helfen, das Dorf zu befestigen."
+    },
+    {
+      "start": 2966.04,
+      "end": 2967.92,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Und wie? Oder eine Falle zu stellen."
+    },
+    {
+      "start": 2968.1800000000003,
+      "end": 2972.38,
+      "speaker": "Micha (Rotunas)",
+      "text": "Oder eine Falle zu stellen. Entweder oder. Wir"
+    },
+    {
+      "start": 2972.38,
+      "end": 2976.7200000000003,
+      "speaker": "Deniz (GM)",
+      "text": "sind keine Krieger. Wir können uns nicht wirklich verteidigen. Können denn die Wächter was ausrichten?"
+    },
+    {
+      "start": 2978.24,
+      "end": 2985.71,
+      "speaker": "Micha (Rotunas)",
+      "text": "Natürlich, sie werden auch was ausrichten. Aber... Jeder Bewohner dieses Dorfes muss mit anpacken."
+    },
+    {
+      "start": 3008.01,
+      "end": 3017.12,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Charakternamen & Paper Session"
+    },
+    {
+      "start": 3025.02,
+      "end": 3042.5,
+      "speaker": "Deniz (GM)",
+      "text": "Aber ansonsten haben wir nur die beiden Wächter, Kerl und Brock. Berthold ist kein wirklich guter Kämpfer. Es gibt dann noch den Schmied, der hat auch was drauf. Aber sonst hat eigentlich niemand wirklich Talent, was das Kämpfen angeht."
+    },
+    {
+      "start": 3043.53,
+      "end": 3052.11,
+      "speaker": "Micha (Rotunas)",
+      "text": "Und die beiden Herrschaften, was macht ihr hier? Seid ihr auf Durchreise? Seid ihr Bewohner dieses Dorfes?"
+    },
+    {
+      "start": 3052.51,
+      "end": 3064.47,
+      "speaker": "Deniz (GM)",
+      "text": "Na, also, ähm, ich, also der, der, der, die Frau, ähm, ich, ich kann mit dem Bogen ganz gut umgehen, ich bin Jägerin, aber gegen Horde Goblins, äh, wäre, wäre das mir dann doch ein bisschen zu viel."
+    },
+    {
+      "start": 3065.03,
+      "end": 3073.99,
+      "speaker": "Micha (Rotunas)",
+      "text": "Naja, ist es dann nicht theoretisch leichter, weil eine Horde gibt eine größere Masse, das heißt weniger zielen und öfter schießen."
+    },
+    {
+      "start": 3074.35,
+      "end": 3100.08,
+      "speaker": "Deniz (GM)",
+      "text": "Elisa, ihr seid doch bestimmt, äh, auf einer guten hohen Position in der Lage, euch ein bisschen zu verteidigen, richtig? Ja, das stimmt Hubert. Ich werde auf jeden Fall, wenn es hart auf hart kommt, selbstverständlich kämpfen. Und ihr merkt so ein bisschen, die Moral ist nicht so hoch bei den beiden. Vielleicht haltet ihr irgendwie eine Ansprache oder zumindest ermutigt die vielleicht ein bisschen da zu bleiben."
+    },
+    {
+      "start": 3100.46,
+      "end": 3132.63,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ich will gerade, ich wollte gerade... Ich erfinde jetzt einfach was, da Rotunas und ich uns ja schon lange kennen, haben wir so ein kleines Spiel früher gemacht, weil wir beide Magier sind, dass wir uns immer so ab und zu so Feuerbälle hin und her schmeißen und fangen wie so Jongleure. Ja, heiße Kartoffeln. Ja, so ähnlich wie heiße Kartoffeln. Genau, sowas. Und ich sage so, ja, aber ihr seid ja auch nicht alleine hier, ne? Ihr habt die mächtigsten Magier aus der Gilde."
+    },
+    {
+      "start": 3136.14,
+      "end": 3152.12,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Esterossa aka Valeria aka Esterossa aka"
+    },
+    {
+      "start": 3152.12,
+      "end": 3168.42,
+      "speaker": "Micha (Rotunas)",
+      "text": "Valeria 1, 2... Darf ich noch kurz was fragen? Ich hab manchmal gesehen, du hast so einen roten Sechserwürfel drauf. Ja. Wofür war der?"
+    },
+    {
+      "start": 3168.76,
+      "end": 3171.42,
+      "speaker": "Deniz (GM)",
+      "text": "Das ist ein Vorteil zu werfen. Ah,"
+    },
+    {
+      "start": 3171.58,
+      "end": 3177.26,
+      "speaker": "Micha (Rotunas)",
+      "text": "okay. Habe ich jetzt einen Vorteil oder einfach nur... Nee. Okay, dann ganz normal. Genau. Kann"
+    },
+    {
+      "start": 3177.26,
+      "end": 3187.95,
+      "speaker": "Benjamin (Valerie)",
+      "text": "ich ihm irgendwie einen Vorteil geben? Weil ich will, dass wir das gut performen hier. Das heißt, ich werde nicht gefährlich werfen und sonst irgendwas. Kann ich mir einen Hope abstreichen und ihm einen Vorteil geben?"
+    },
+    {
+      "start": 3188.13,
+      "end": 3191.39,
+      "speaker": "Deniz (GM)",
+      "text": "Das kannst du machen, ja. Äh, ich hab die Würfel"
+    },
+    {
+      "start": 3191.39,
+      "end": 3191.91,
+      "speaker": "Micha (Rotunas)",
+      "text": "schon in der Hand."
+    },
+    {
+      "start": 3192.05,
+      "end": 3202.02,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, dann lass sie kurz fallen und hol den 6er dazu. Okay, schmeißt mir gleich einen. Ähm, nimm dir einfach den 6er dazu, würfel nochmal und... Was wollt ich sagen? Geht"
+    },
+    {
+      "start": 3202.02,
+      "end": 3202.6,
+      "speaker": "Benjamin (Valerie)",
+      "text": "schon wieder mit 4?"
+    },
+    {
+      "start": 3203.2,
+      "end": 3204.76,
+      "speaker": "Deniz (GM)",
+      "text": "Ne, das zählt jetzt nicht, der Wurf."
+    },
+    {
+      "start": 3205.96,
+      "end": 3215.32,
+      "speaker": "Micha (Rotunas)",
+      "text": "Würfel nochmal bitte. Ja, natürlich, du hast ja gesagt, mit dem W6er jetzt. Genau. Ah, okay. Weil davor hat sich nur die 2 Würfel gewürfelt."
+    },
+    {
+      "start": 3216.1,
+      "end": 3218.86,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ich dachte, du sollst nur den 6er nachwerfen. Ne, ne. Nein. So."
+    },
+    {
+      "start": 3219.4,
+      "end": 3255.88,
+      "speaker": "Deniz (GM)",
+      "text": "Das ist trotzdem ein 4. Plus 2. 18. Also tatsächlich, ihr schafft es, die 4, also den lieben Tindrael, die Lisa, den Findus und den Hubert ganz gut zu beeindrucken. Aber ihr seht einfach nur, wie der besoffene Nip... Komplett losgeschreit, also du hörst so einen Frauenschrei von ihm losgehen und der panisch irgendwo hinrennt und sich komplett gegen die Wand legt und einmal ohnmächtig umfällt. Also"
+    },
+    {
+      "start": 3256.81,
+      "end": 3259.49,
+      "speaker": "Benjamin (Valerie)",
+      "text": "wenn wir einen Lockvogel brauchen, dann wissen wir, wen wir nehmen. Warte ganz kurz."
+    },
+    {
+      "start": 3259.85,
+      "end": 3270.59,
+      "speaker": "Deniz (GM)",
+      "text": "Das war doch jetzt nicht notwendig. Ach der Arme. Ich helfe ihm ganz gefix. Macht euch keine Sorgen. Der ist einfach nur sturzbesoffen."
+    },
+    {
+      "start": 3273.56,
+      "end": 3288.3,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ich will mal was versuchen. Ich will hingehen. Ich habe ein Feature. Mending Touch. Ich kann theoretisch heilen. Kann ich auch? Warte mal, lass ich mal kurz lesen. Okay, Wunden würde ich wahrscheinlich nicht haben."
+    },
+    {
+      "start": 3290.2799999999997,
+      "end": 3292.64,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, okay. Dann beschreib mal, was du tun würdest."
+    },
+    {
+      "start": 3295.02,
+      "end": 3316.63,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Okay, ist natürlich teuer. Es kostet zwei Hope eigentlich, um einen Hitpoint zu generieren. Nee, lass es sein. Ist vielleicht ein bisschen viel. Ich gehe einfach hin und versuche ihn ohne viel Aufwand, weil ich sehe, er hat keine Wunden. Ich versuche einfach nur zu gucken, dass es ihm gut geht, dass er jetzt nicht gegen die Wand gelaufen ist und eine Platzwunde hat, sondern ich gucke, dass er in stabilen Seiten nahe liegt."
+    },
+    {
+      "start": 3321.13,
+      "end": 3347.42,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, du versuchst ihn halt irgendwie so ein bisschen zu behandeln und da bist du auch ganz gut geübt drin. Du machst ein paar Hände, kleine Moves und zauberst vielleicht ein bisschen da, ein bisschen hier und tatsächlich wacht er sogar auf und er wirkt sogar einen Ticken weniger betrunken. Entschuldigt. Ich bin sehr leicht schreckhaft."
+    },
+    {
+      "start": 3349.6,
+      "end": 3359.1,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Vielleicht gehst du mal nach Hause, Rudi. und ruß dich was auf. Und morgen, wenn du wieder fit bist, hilfst du uns bei der Vorbereitung. Wir müssen Barrikaden bauen. Ja, ja."
+    },
+    {
+      "start": 3359.94,
+      "end": 3365.86,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, ja. Und ohne dir wirklich zuzuhören, verlässt er das Gebäude."
+    },
+    {
+      "start": 3366.68,
+      "end": 3368.69,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Mach ich halt. Einfach"
+    },
+    {
+      "start": 3368.69,
+      "end": 3373.04,
+      "speaker": "Deniz (GM)",
+      "text": "gegangen. Ah, nein. Muss ich wie, wohin? Auf dem Dach. Okay."
+    },
+    {
+      "start": 3373.82,
+      "end": 3374.88,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Wie spät haben wir eigentlich?"
+    },
+    {
+      "start": 3375.94,
+      "end": 3381.32,
+      "speaker": "Deniz (GM)",
+      "text": "Äh, es ist mittlerweile so 17 Uhr. Guter Punkt. Oh, das war ein bisschen zu viel."
+    },
+    {
+      "start": 3384.7200000000003,
+      "end": 3386.69,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Also, wir"
+    },
+    {
+      "start": 3386.69,
+      "end": 3409.9700000000003,
+      "speaker": "Micha (Rotunas)",
+      "text": "werden mit den anderen Dorfbewohnern reden und heute Abend einen Plan ausarbeiten, wie euer Dorf ohne große Verluste, und wir reden hier nicht über Menschen, ich glaube nicht, dass irgendwelche Menschen sterben werden, aber wir wollen ja auch nicht, dass die Goblins eure Häuser kaputt machen oder sonstiges."
+    },
+    {
+      "start": 3410.52,
+      "end": 3427.7,
+      "speaker": "Deniz (GM)",
+      "text": "Nun, der Wirt wieder. Nun, wenn ihr eine Idee habt, wie wir uns verteidigen können, dann sagt Bescheid. Wir werden auf jeden Fall alles Notwendige, was möglich ist, in unserer Macht stehende, zumindest möglich, tun, ohne das Dorf natürlich zu verteidigen."
+    },
+    {
+      "start": 3428.75,
+      "end": 3439.89,
+      "speaker": "Micha (Rotunas)",
+      "text": "Herr Hubert, hätten Sie vielleicht etwas, eine kleine Mahlzeit oder so, die wir heute mitnehmen könnten, um später beim Ausarbeiten des Plans diese zu..."
+    },
+    {
+      "start": 3441.06,
+      "end": 3460.58,
+      "speaker": "Deniz (GM)",
+      "text": "Äh... Essen. Selbstverständlich. Und der kramt so ein bisschen und holt so zwei, wie sagt man das, Hühnerkeulen aus. Also für dich ist es gut, was zu essen. Für dich, Rotunas, ist es vielleicht so ein bisschen wie so ein Apfel oder sowas. Das"
+    },
+    {
+      "start": 3460.58,
+      "end": 3461.7200000000003,
+      "speaker": "Benjamin (Valerie)",
+      "text": "ist"
+    },
+    {
+      "start": 3461.7200000000003,
+      "end": 3465.32,
+      "speaker": "Deniz (GM)",
+      "text": "jetzt nicht, wo man sagen müsste, das ist jetzt dein Bestes."
+    },
+    {
+      "start": 3466.92,
+      "end": 3475.16,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ich beiß direkt rein. Ich muss das direkt probieren. Schmeckt auch sehr gut tatsächlich. Aber ich mess nur einmal ab. Lecker. Gutes Gewürz. Lecker. Ja, ja, ja."
+    },
+    {
+      "start": 3475.8,
+      "end": 3491.31,
+      "speaker": "Micha (Rotunas)",
+      "text": "Dankeschön. Vielen Dank. Herr Tenrell, können wir dann mit der Familie Schmidt, die ja hier direkt um die Ecke wohnt, sprechen?"
+    },
+    {
+      "start": 3492.67,
+      "end": 3504.7,
+      "speaker": "Deniz (GM)",
+      "text": "Selbstverständlich. Redet einfach mit ihnen. Es sollte... von Vorteil sein, wenn ihr euch mit ihnen austauscht, was sie dazu beitragen können, um die Verteidigung zu verbessern."
+    },
+    {
+      "start": 3505.54,
+      "end": 3512.65,
+      "speaker": "Micha (Rotunas)",
+      "text": "Würdet ihr uns begleiten, denn ein Mann aus... der in diesem Dorf wohnt... Selbstverständlich. Okay."
+    },
+    {
+      "start": 3513.21,
+      "end": 3520.87,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ich wollt grad vorschlagen, du gehst zu Schmidt und ich geh zu... den Schmieden. Mit der Kuh. Der Kuh? Ja. Mit der"
+    },
+    {
+      "start": 3520.87,
+      "end": 3524.63,
+      "speaker": "Micha (Rotunas)",
+      "text": "Kuh. Ach ne, wir denken der Kuh. Will reinbeißen."
+    },
+    {
+      "start": 3524.84,
+      "end": 3527.7799999999997,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ich komm mit euch mit, ich krieg mir schon beides hin. Wir haben ja 17 Uhr."
+    },
+    {
+      "start": 3528.44,
+      "end": 3586.04,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, ihr wolltet so einen Schmitz, wolltet ihr, ne? Ja. Schmitz, Schmitz, keine Ahnung. Als ihr, ja warte mal, bis hier ungefähr, als ihr an den Eingang des Gebäudes kommt, seht ihr nur so eine kleine Katze, die euch so ein bisschen anfaucht. Aber als da Tinrail so ein bisschen dahin geht und die Hand so hält, dann der sich wieder, oder sie sich ein bisschen wieder beruhigt. Als Tinrail... Zu den Bauern kommt, kommen die beiden auf euch zu und gucken fragend. Tindrael, was können wir für dich tun? Wir haben hier zwei Gäste. Die beiden berichten davon, dass es eventuell zu einem Kampf kommen könnte mit Goblins und wir könnten eure Hilfe gebrauchen. Aber hört ihnen einfach ganz kurz zu. Und Tindrael geht ein Stück zur Seite."
+    },
+    {
+      "start": 3588.3,
+      "end": 3601.2,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ja, also, ne? Goblins, ne? Wie oft haben wir das heute schon erzählt? Goblins? Wir sind von der Gilde, Goblins wurden angegriffen von uns. Wir haben herausgefunden, dass dieses Dorf Ziel eines Goblin-Angriffs wird."
+    },
+    {
+      "start": 3602.21,
+      "end": 3603.69,
+      "speaker": "Deniz (GM)",
+      "text": "Was können wir dagegen tun?"
+    },
+    {
+      "start": 3604.6,
+      "end": 3615.48,
+      "speaker": "Micha (Rotunas)",
+      "text": "Was sollen wir tun? Euer Bürgermeister, Herr Berthold, teilte uns mit, dass ihr mit Holz arbeitet. Wir dachten... Wir"
+    },
+    {
+      "start": 3615.48,
+      "end": 3620.13,
+      "speaker": "Deniz (GM)",
+      "text": "haben einiges an... Materialien, die wir euch zur Verfügung stellen könnten. Ja, durchaus."
+    },
+    {
+      "start": 3620.9700000000003,
+      "end": 3624.99,
+      "speaker": "Micha (Rotunas)",
+      "text": "Könnt ihr denn mit dem Holz auch arbeiten? Selber was herstellen?"
+    },
+    {
+      "start": 3625.71,
+      "end": 3634.75,
+      "speaker": "Deniz (GM)",
+      "text": "Wir könnten euch eventuell, wie soll ich sagen, ein bisschen Ressourcen unterstützen. Eine Barrikade oder etwas ähnliches."
+    },
+    {
+      "start": 3635.61,
+      "end": 3643.26,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Oder eine Falle. Wir buddeln ein Loch und machen spitze Holzdinger unten hin und lassen nur anspitzen von den Schmieden."
+    },
+    {
+      "start": 3647.65,
+      "end": 3648.87,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ich hab das nicht im"
+    },
+    {
+      "start": 3648.87,
+      "end": 3655.57,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Loch zu buddeln, aber du hast ja mehr als genug Muckis für uns alle zusammen. Du kriegst einen großen Spaten und dann bist du ja in zwei Stunden fertig."
+    },
+    {
+      "start": 3655.9700000000003,
+      "end": 3661.43,
+      "speaker": "Micha (Rotunas)",
+      "text": "Wir fragen den Schmied, ob er mir einen großen Spaten bieten kann."
+    },
+    {
+      "start": 3662.67,
+      "end": 3675.49,
+      "speaker": "Deniz (GM)",
+      "text": "Ehm, da steht er vor mir. Die Bauern bieten euch auf jeden Fall an, dass die euch vier große Barrikaden auf die Schnelle machen. Die könnt ihr entscheiden, wo ihr die hinstellt."
+    },
+    {
+      "start": 3677.65,
+      "end": 3683.54,
+      "speaker": "Micha (Rotunas)",
+      "text": "Das werden wir noch überlegen, aber ihr könnt mit der Herstellung schon beginnen."
+    },
+    {
+      "start": 3710.57,
+      "end": 3718.4700000000003,
+      "speaker": "Deniz (GM)",
+      "text": "So was in die Richtung. Warte, ich stell's direkt neben euch. Also so ein Zaun-mäßiges Ding. Davon könnt ihr euch"
+    },
+    {
+      "start": 3718.4700000000003,
+      "end": 3721.38,
+      "speaker": "Benjamin (Valerie)",
+      "text": "vier Stück"
+    },
+    {
+      "start": 3721.38,
+      "end": 3723.08,
+      "speaker": "Deniz (GM)",
+      "text": "zur Verfügung stellen. Das"
+    },
+    {
+      "start": 3723.08,
+      "end": 3723.9,
+      "speaker": "Micha (Rotunas)",
+      "text": "ist einfach nur Zaun."
+    },
+    {
+      "start": 3724.2200000000003,
+      "end": 3725.96,
+      "speaker": "Deniz (GM)",
+      "text": "Beziehungsweise acht Stück könnt ihr euch zur Verfügung stellen."
+    },
+    {
+      "start": 3727.55,
+      "end": 3729.73,
+      "speaker": "Micha (Rotunas)",
+      "text": "Also das wäre wirklich einfach nur Zaun dann? Also stell dir"
+    },
+    {
+      "start": 3729.73,
+      "end": 3733.0299999999997,
+      "speaker": "Deniz (GM)",
+      "text": "einfach, stell dir, warte, ich stell's dir ein bisschen stachliger vor. Hab ich was besseres?"
+    },
+    {
+      "start": 3734.0299999999997,
+      "end": 3740.83,
+      "speaker": "Micha (Rotunas)",
+      "text": "Oder meinst du sowas wie eine Palisade, wo halt so spitze Holzflöcke rausgucken in die Richtung?"
+    },
+    {
+      "start": 3744.85,
+      "end": 3760.59,
+      "speaker": "Deniz (GM)",
+      "text": "Palisade, Palisade Palm. Äh, warte. Woa. Guck mal hier, so was in die Richtung, nur halt nicht so hoch. Irgendwie etwas in die Richtung. Davon könnt ihr euch 8 Stück zur Verfügung stellen."
+    },
+    {
+      "start": 3760.95,
+      "end": 3764.26,
+      "speaker": "Micha (Rotunas)",
+      "text": "Okay, das ist gut. Dann müsst"
+    },
+    {
+      "start": 3764.26,
+      "end": 3765.86,
+      "speaker": "Deniz (GM)",
+      "text": "ihr nur entscheiden, wohin die gestellt werden."
+    },
+    {
+      "start": 3766.52,
+      "end": 3796.4700000000003,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ja. Ja, ich würd das halt sagen... Genau, ihr könnt ja schon mit dem Anspitzen des Holzes beginnen und wir werden uns genau die Position dafür überlegen. Okay. Wir müssen uns noch mit der Familie Krämer? Die heißen Krämer, ja korrekt. Krämer, okay. Mit der Familie Krämer und dem Magier kurzschließen."
+    },
+    {
+      "start": 3797.11,
+      "end": 3822.66,
+      "speaker": "Deniz (GM)",
+      "text": "Tut das, tut das. Wir machen uns direkt an die Arbeit. Und die beiden Bauern machen sich ans Arbeit, das Holz passend zu präparieren. Das könnte uns durchaus helfen. Sehr gut, meine Herren. Ich bringe euch nun zur Familie Krämer. Du zupfst die einfach aus der Erde raus?"
+    },
+    {
+      "start": 3822.98,
+      "end": 3826.62,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ja, und beiß rein. Die gucken ja grad nicht. Ich"
+    },
+    {
+      "start": 3826.62,
+      "end": 3831.94,
+      "speaker": "Deniz (GM)",
+      "text": "würde trotzdem einen Finesse-Wurf von dir verlangen. Ob den anderen das auffällt?"
+    },
+    {
+      "start": 3832.74,
+      "end": 3838.9,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Zurück! Ich versuche auch nicht das heimlich zu machen, ich nehme das einfach so als wäre es halt ne... Okay,"
+    },
+    {
+      "start": 3839.06,
+      "end": 3847.48,
+      "speaker": "Deniz (GM)",
+      "text": "das heißt die sehen das zwar, die sind nicht so ganz begeistert und der eine guckt so ein bisschen abgefuckt, aber er sagt nix, weil du so klein und traurig aussiehst."
+    },
+    {
+      "start": 3851.06,
+      "end": 3852.18,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Okay, und jetzt ab."
+    },
+    {
+      "start": 3854.44,
+      "end": 3858.88,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, hier hört ihr auch das Schmiedegeräusch, denn hier ist der liebe Schmied."
+    },
+    {
+      "start": 3867.12,
+      "end": 3881.37,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, als ihr den Hof betretet, kommt euch ein junges Kind entgegen. Ja, was heißt jung? Das sieht nicht so jung aus, ich mach's ein bisschen kleiner, warte. Size?"
+    },
+    {
+      "start": 3882.23,
+      "end": 3885.0299999999997,
+      "speaker": "Micha (Rotunas)",
+      "text": "Hallo kleines Kind, ach nee, es ist eine junge Frau, tut mir leid."
+    },
+    {
+      "start": 3885.61,
+      "end": 3915.5299999999997,
+      "speaker": "Deniz (GM)",
+      "text": "So in etwa. Der ist ein bisschen, ja, ist jetzt ein bisschen sehr klein geraten, aber es gibt leider keine Zwischengröße dazwischen. Danke fürs Follow. Ähm, ja. Was wollt ich sagen? Äh, genau, das Kind kommt auf mich zugekrannt. Oh, was seid ihr denn? Ich hab noch nie sowas gesehen und ich war schon mein ganzes Leben auf diesem Hof und in dieser Stadt. Hallo,"
+    },
+    {
+      "start": 3915.95,
+      "end": 3921.39,
+      "speaker": "Benjamin (Valerie)",
+      "text": "ich bin Valeria, ich bin eine Magierin. Okay,"
+    },
+    {
+      "start": 3921.81,
+      "end": 3924.79,
+      "speaker": "Deniz (GM)",
+      "text": "mach mal nen Presence Check im Vorteil."
+    },
+    {
+      "start": 3928.15,
+      "end": 3930.15,
+      "speaker": "Micha (Rotunas)",
+      "text": "Das Uuuu hat geholfen."
+    },
+    {
+      "start": 3930.54,
+      "end": 3935.5,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, bodenlos, bodenlos. Also das Kind, das kreischt und"
+    },
+    {
+      "start": 3937.81,
+      "end": 3939.07,
+      "speaker": "Micha (Rotunas)",
+      "text": "ich"
+    },
+    {
+      "start": 3939.07,
+      "end": 3941.17,
+      "speaker": "Deniz (GM)",
+      "text": "nutze einen meiner 4 Points"
+    },
+    {
+      "start": 3941.17,
+      "end": 3943.89,
+      "speaker": "Micha (Rotunas)",
+      "text": "und ihr"
+    },
+    {
+      "start": 3943.89,
+      "end": 3950.73,
+      "speaker": "Deniz (GM)",
+      "text": "seht nur, wie das die ganzen Kühe aufschreckt und die Kühe teilweise in alle Richtungen rennen. Oh"
+    },
+    {
+      "start": 3950.73,
+      "end": 3954.49,
+      "speaker": "Benjamin (Valerie)",
+      "text": "nein. Oh Mist. Aber ich darf ja trotzdem im Haube aufschreiben, ne? Ja, klar."
+    },
+    {
+      "start": 3956.48,
+      "end": 3996.2,
+      "speaker": "Deniz (GM)",
+      "text": "Aber ja, die Kühe rennen panisch durch die Gegend und ihr seht nur, wie der Bauer fluchend hinter der einen Kuh hinterher rennt und einfach noch ganz kurz brüllt, zu seiner Frau brüllt, dass sie ihm doch helfen soll. Und aus der Haustüre, die springt auf und eine Dame versucht die Türe zumindest zu verlassen, so. Und was ist passiert? und rennt auch direkt den Kühen hinterher. Das Kind seht ihr nur, wie das panisch irgendwo in Richtung Wald rennt."
+    },
+    {
+      "start": 3996.5,
+      "end": 4012.06,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Oh nein. Ich mach Cast a Mage Hand und versuche die Kühe auch einzufangen. Also die werden wahrscheinlich irgendwas um den Hals haben, wahrscheinlich auch so eine Glocke oder so und ich gehe davon aus, wenn man da dran zieht, dass die dann irgendwann gehorchen. Ich hoffe, dass die jetzt nicht komplett panisch weg rennen. Ne, die"
+    },
+    {
+      "start": 4012.06,
+      "end": 4016.2,
+      "speaker": "Deniz (GM)",
+      "text": "rennen nicht so weit weg. Die haben nur aufgescheucht und sind dann so ein paar Felder weiter weg gerannt."
+    },
+    {
+      "start": 4017.06,
+      "end": 4017.88,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ach so, ja gut."
+    },
+    {
+      "start": 4019.2200000000003,
+      "end": 4027.55,
+      "speaker": "Deniz (GM)",
+      "text": "Warte mal, hier ist ein bisschen ein Pling die ganze Zeit. Aber wieso sehe ich das nicht? Ich"
+    },
+    {
+      "start": 4027.55,
+      "end": 4031.31,
+      "speaker": "Benjamin (Valerie)",
+      "text": "glaube, das Kind mag mich. Das ist voll lauter Freude weggelaufen."
+    },
+    {
+      "start": 4032.13,
+      "end": 4033.21,
+      "speaker": "Deniz (GM)",
+      "text": "Das glaube ich nicht."
+    },
+    {
+      "start": 4034.79,
+      "end": 4036.45,
+      "speaker": "Micha (Rotunas)",
+      "text": "Das glaube ich nicht. Also"
+    },
+    {
+      "start": 4036.45,
+      "end": 4049.4300000000003,
+      "speaker": "Deniz (GM)",
+      "text": "du schaffst mit deiner Mage Hand tatsächlich die Q, oder hör mal, gibt es eine Mage Hand vielleicht sogar? Mage. Gibt es eine Hand? Es gibt Mage Hand. Achso, du meinst als Objekt."
+    },
+    {
+      "start": 4051.75,
+      "end": 4093.26,
+      "speaker": "Deniz (GM)",
+      "text": "Hand. Nicht Hände. Hand. Hand oder Hände. Okay, gibt's nicht. Ja, egal. Okay, auf jeden Fall, du beschwörst es und du schaffst es damit, die dritte Kuh auf jeden Fall irgendwie festzuhalten. Du siehst, wie die Frau fluchend die andere festhält und der Mann die eine Frau schon, äh, die eine Frau, die eine Kuh schon, äh, das war jetzt nicht intended, die eine Kuh wieder Richtung Hof geleitet. Ihr da! Wenn ihr schon dieses Chaos anrichtet, dann bringt wenigstens meinen Sohn zurück! Einmal Lautsprecher an und Dennis schreit aus der Hölle. Sorry, wenn ich so laut bin, mache ich mich gern leiser. Warte, warte, test, test. So, jetzt bin ich ein bisschen leiser."
+    },
+    {
+      "start": 4094.4,
+      "end": 4096.68,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Deine Tochter hat die Kühe verscheucht. Ja,"
+    },
+    {
+      "start": 4096.7,
+      "end": 4108.14,
+      "speaker": "Deniz (GM)",
+      "text": "meine ich doch, meine Tochter. Nicht wir! Achso, nein, der hat mitbekommen, wie ihr halt das Kind erschreckt habt."
+    },
+    {
+      "start": 4108.4,
+      "end": 4110.8,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ja, wir holen es zurück."
+    },
+    {
+      "start": 4113.68,
+      "end": 4116.48,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Meine Freundin! Ich komme hinter dir her!"
+    },
+    {
+      "start": 4117.54,
+      "end": 4119.8,
+      "speaker": "Micha (Rotunas)",
+      "text": "Timrell, warte da, wir sind gleich wieder da."
+    },
+    {
+      "start": 4119.92,
+      "end": 4127.47,
+      "speaker": "Deniz (GM)",
+      "text": "Sagst du das auch so? Okay, du sagst es auch so und das Kind rennt noch weiter weg."
+    },
+    {
+      "start": 4127.99,
+      "end": 4133.15,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ich sehe es und ich habe extra das Feld klein gemacht, damit ich nicht direkt sehe, wo das Kind hingelaufen ist."
+    },
+    {
+      "start": 4134.41,
+      "end": 4138.65,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Vielleicht versuchst du es mal zu finden. Ich glaube, sie mag mich doch nicht so sehr."
+    },
+    {
+      "start": 4142.64,
+      "end": 4167.97,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ich würde gern mein Dings benutzen. Ist das Details? Ja, ich muss gerade überlegen, wo dieses Experience benutzen. Everyone's Friend habe ich das benannt. Wo ich halt mit jedem Clou gut klarkomme und einen Hauptpunkt benutze für den Vorteil."
+    },
+    {
+      "start": 4168.13,
+      "end": 4170.23,
+      "speaker": "Deniz (GM)",
+      "text": "Was willst du machen? Beschreib mir erst, was du machen möchtest. Ich"
+    },
+    {
+      "start": 4170.23,
+      "end": 4171.59,
+      "speaker": "Micha (Rotunas)",
+      "text": "will nach dem Kind rufen."
+    },
+    {
+      "start": 4171.91,
+      "end": 4173.49,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, dann rufen wir an deinem Kind gerne, ja?"
+    },
+    {
+      "start": 4174.6,
+      "end": 4175.76,
+      "speaker": "Micha (Rotunas)",
+      "text": "Hallo Kleines!"
+    },
+    {
+      "start": 4176.68,
+      "end": 4177.8,
+      "speaker": "Deniz (GM)",
+      "text": "Hallo Kleines! Wir sind hier,"
+    },
+    {
+      "start": 4177.86,
+      "end": 4183.5,
+      "speaker": "Micha (Rotunas)",
+      "text": "um mit deinen... mit deinen Eltern zu sprechen, doch dein Vater möchte, dass du zuerst nach Hause kommst."
+    },
+    {
+      "start": 4183.96,
+      "end": 4189.68,
+      "speaker": "Deniz (GM)",
+      "text": "Dann würfel mal gerne, auch im Vorteil. Plus deinen extra plus zwei."
+    },
+    {
+      "start": 4190.4,
+      "end": 4194.63,
+      "speaker": "Micha (Rotunas)",
+      "text": "Mhm. Auf welchen Wert ist das wieder? Knowledge oder Presence? Ne, das"
+    },
+    {
+      "start": 4194.63,
+      "end": 4225.78,
+      "speaker": "Deniz (GM)",
+      "text": "ist einfach nur... Presence von mir aus, ja. Presence plus dein Experience. Okay, Presence plus, jaja, okay. Plus den W6, genau. Ne, also du gibst dir übel Mühe, aber du schaffst es nicht, das Kind anzulocken. Also das war tatsächlich ein sehr großer Misserfolg. Du hörst nur ein Kreischen und das Mädchen brüllt nach Hilfe. Wer"
+    },
+    {
+      "start": 4225.78,
+      "end": 4227.12,
+      "speaker": "Benjamin (Valerie)",
+      "text": "braucht Hilfe? Ich komme!"
+    },
+    {
+      "start": 4227.36,
+      "end": 4229.34,
+      "speaker": "Micha (Rotunas)",
+      "text": "Nein, nein, ich halte dich fest."
+    },
+    {
+      "start": 4232.54,
+      "end": 4241.47,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ich glaub, wir fragen Tendril, dass er sich darum kümmert, während wir uns mit den Bewohnern besprechen. Gute Idee."
+    },
+    {
+      "start": 4242.38,
+      "end": 4249.46,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, wir gehen zurück. Also das Mädchen hat gerade um Hilfe gebrüllt. Und ihr geht zurück erstmal zum Hof."
+    },
+    {
+      "start": 4249.92,
+      "end": 4251.68,
+      "speaker": "Micha (Rotunas)",
+      "text": "Zum Tendril, zu Tendril, ja."
+    },
+    {
+      "start": 4252.42,
+      "end": 4264.72,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Warte mal, ich will mal kurz... Merke ich, dass sie jetzt Angst vor uns hat? Oh, scheiße. Okay, dann wäre ich nicht zurückgerannt, dann wäre ich voll in die Richtung gelaufen, wo der Schrei herkommt."
+    },
+    {
+      "start": 4264.86,
+      "end": 4266.98,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, Sekunde, ich bewege mal ganz kurz die Leute hier."
+    },
+    {
+      "start": 4268.04,
+      "end": 4270.54,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Die bewegen"
+    },
+    {
+      "start": 4270.54,
+      "end": 4274.14,
+      "speaker": "Deniz (GM)",
+      "text": "sich nämlich auch direkt in die Richtung, wo der Schrei herkam."
+    },
+    {
+      "start": 4276.37,
+      "end": 4278.97,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Gut, dass wir hier Palisaden gecraftet haben."
+    },
+    {
+      "start": 4279.29,
+      "end": 4313.51,
+      "speaker": "Deniz (GM)",
+      "text": "Und als ihr... Steht mal eure Figur ruhig noch ein bisschen tiefer in den Wald rein. So? Ja, das reicht, das reicht, das reicht, genau. Und als ihr... Das Kind wieder seht, seht ihr zwischen den Sträuchern und zwischen den Büschen tatsächlich folgendes."
+    },
+    {
+      "start": 4319.98,
+      "end": 4321.68,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ich hab auch gekauft, dass wir einen Tag haben."
+    },
+    {
+      "start": 4322.04,
+      "end": 4330.1900000000005,
+      "speaker": "Deniz (GM)",
+      "text": "Scheinbar eine Art Speer, der sich bereits in der Nähe des Dorfes aufgehalten hat. Ja,"
+    },
+    {
+      "start": 4331.68,
+      "end": 4333.74,
+      "speaker": "Benjamin (Valerie)",
+      "text": "direkt voll drauf losballern."
+    },
+    {
+      "start": 4334.45,
+      "end": 4350.12,
+      "speaker": "Deniz (GM)",
+      "text": "Dann dürft ihr theoretisch auch anfangen. Ihr habt noch ein gutes Stück zu laufen, also wenn ihr... Ihr schafft es auf jeden Fall nicht, bis zum Goblin-Dreck zu kommen. Das Mädchen ist gerade auch wieder auf dem Weg zu euch und der Goblin sprintet ihr hinterher."
+    },
+    {
+      "start": 4350.96,
+      "end": 4357.95,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Was hab ich für eine Entfernung? Ich hab Range Staff mit Very Far Range. Dann"
+    },
+    {
+      "start": 4357.95,
+      "end": 4359.1900000000005,
+      "speaker": "Deniz (GM)",
+      "text": "treffst du es auf jeden Fall."
+    },
+    {
+      "start": 4359.79,
+      "end": 4362.87,
+      "speaker": "Micha (Rotunas)",
+      "text": "Okay. Willst du zuerst machen oder soll ich zuerst machen?"
+    },
+    {
+      "start": 4363.25,
+      "end": 4370.89,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Gleichzeitig. Double Papa. Extra Magic. Gleichzeitig können wir glaube ich nicht. Doch tatsächlich, es gibt eine"
+    },
+    {
+      "start": 4370.89,
+      "end": 4376.57,
+      "speaker": "Deniz (GM)",
+      "text": "Tandem-Action, aber die kenne ich tatsächlich noch nicht so gut. Das müssen wir beim nächsten Mal angucken."
+    },
+    {
+      "start": 4377.23,
+      "end": 4379.89,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Dann mach du als erstes, ich hab so viel mit 4 gewürfelt im Moment."
+    },
+    {
+      "start": 4380.3,
+      "end": 4392.39,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ich würde einen Zauber benutzen, wenn ich das auch kennenlerne mit den Zaubern. Und zwar Ice Spikes. Die haben auch Very Far Range. Wow."
+    },
+    {
+      "start": 4394.1,
+      "end": 4396.14,
+      "speaker": "Deniz (GM)",
+      "text": "Dann mach mal..."
+    },
+    {
+      "start": 4396.8099999999995,
+      "end": 4402.23,
+      "speaker": "Micha (Rotunas)",
+      "text": "Okay, was passiert? Mach mal"
+    },
+    {
+      "start": 4402.23,
+      "end": 4403.39,
+      "speaker": "Deniz (GM)",
+      "text": "dann gerne deinen Angriffswurf."
+    },
+    {
+      "start": 4403.83,
+      "end": 4409.3,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ja, das ist ein... Also wieder zwei Zwölfer, richtig?"
+    },
+    {
+      "start": 4409.64,
+      "end": 4414.22,
+      "speaker": "Deniz (GM)",
+      "text": "Genau. Und plus bei deinem Spell müsstest du wahrscheinlich ein Spell... Genau, da steht"
+    },
+    {
+      "start": 4414.22,
+      "end": 4420.36,
+      "speaker": "Micha (Rotunas)",
+      "text": "ein Damage-Roll, nehme ich an. Oder ist das der Spell-Cast-Roll?"
+    },
+    {
+      "start": 4420.52,
+      "end": 4428.54,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Nee, Spell-Cast-Roll, die macht deine 2 12er plus den Spell-Cast-Roll und damit guckst du, ob du über die Schwierigkeiten... Plus 2 ist das."
+    },
+    {
+      "start": 4428.98,
+      "end": 4431.02,
+      "speaker": "Micha (Rotunas)",
+      "text": "Steht da einfach nur Spell-Cast-Roll plus 2. Genau, du"
+    },
+    {
+      "start": 4431.02,
+      "end": 4433.68,
+      "speaker": "Deniz (GM)",
+      "text": "würfelst jetzt die beiden W12 plus 2."
+    },
+    {
+      "start": 4435.85,
+      "end": 4439.73,
+      "speaker": "Micha (Rotunas)",
+      "text": "Achso, okay, jetzt verstehe ich. Hat ein bisschen länger gedauert. Ja, ist gut."
+    },
+    {
+      "start": 4442.13,
+      "end": 4447.05,
+      "speaker": "Deniz (GM)",
+      "text": "Das ist ein Kritz! Oh, stark! Was wolltest du jetzt zaubern? Schreib's mir!"
+    },
+    {
+      "start": 4447.61,
+      "end": 4477.37,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ice Spike. Also da kommt so aus... Oh ja. Auf meinen Händen habe ich halt diese ganzen Zauber tätowiert. Ja. Und dann leuchtet auf meiner rechten Hand an meinem Gelenk so eine Reihe, sag ich jetzt mal. So runenmäßig. Okay. Und in meiner Hand erscheint so ein... Großer, langer Eisperr oder so eine Spitze und schießt dann los sozusagen in die Richtung des Goblins."
+    },
+    {
+      "start": 4477.55,
+      "end": 4479.55,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, du hast einen Crit gewürfelt, ne?"
+    },
+    {
+      "start": 4480.49,
+      "end": 4484.53,
+      "speaker": "Micha (Rotunas)",
+      "text": "Genau, 10 mit 2 Fünften. Krieg ich da auch einen Haupt?"
+    },
+    {
+      "start": 4486.15,
+      "end": 4486.95,
+      "speaker": "Deniz (GM)",
+      "text": "Du kriegst auch"
+    },
+    {
+      "start": 4486.95,
+      "end": 4489.11,
+      "speaker": "Benjamin (Valerie)",
+      "text": "einen Haupt und du kannst sogar die Stripes wegstreichen."
+    },
+    {
+      "start": 4489.33,
+      "end": 4491.73,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ah, okay. Ja gut, Stripes hab ich noch nicht, aber ja."
+    },
+    {
+      "start": 4492.55,
+      "end": 4515.16,
+      "speaker": "Deniz (GM)",
+      "text": "Tatsächlich, du merkst, wieso die Goblin-Götter versuchen einzugreifen, aber durch deinen Crit Schaffst du es, dass ich Während der Goblin mich stolpert und dann fast unter dem Eisblock hindurchtaucht, triffst du ihn trotzdem so perfekt, dass er praktisch wieder zurückgeschleudert wird. Würfel mal den Schadenswurf."
+    },
+    {
+      "start": 4515.72,
+      "end": 4518.08,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ja, okay und das ist wie das?"
+    },
+    {
+      "start": 4518.44,
+      "end": 4521.94,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Wie ist das beim Crit mit dem Schaden? Beim Crit war es"
+    },
+    {
+      "start": 4521.94,
+      "end": 4534.03,
+      "speaker": "Deniz (GM)",
+      "text": "glaube ich, dass du den vollen Schaden kriegst und dann einmal würfelst. Genau. Also einmal vollen Damage, den du noch machen kannst, plus einmal gewürfelt."
+    },
+    {
+      "start": 4538.56,
+      "end": 4542.1,
+      "speaker": "Micha (Rotunas)",
+      "text": "Also wieder zwei 12er? Oder einfach nur?"
+    },
+    {
+      "start": 4542.24,
+      "end": 4577.09,
+      "speaker": "Deniz (GM)",
+      "text": "Was macht das für Schaden? Einen D6. Dann machst du einen D6. Also du machst jetzt sechs Schaden flat schon mal und jetzt würfelst du nochmal einen W6 obendrauf. Okay. Uh, stark. Ja, also da du ihn so perfekt triffst... Das zertrümmert ihm halt wirklich schon Teile des Schädels und der wird halt wirklich zurückgeworfen um mehrere Felder. Und du siehst halt, der ist direkt schwer am Bluten. Ja. Dann seid ihr wieder dran."
+    },
+    {
+      "start": 4577.64,
+      "end": 4584.42,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Dann mach ich jetzt einfach meinen Great Staff. Versuch den anzugreifen."
+    },
+    {
+      "start": 4585.14,
+      "end": 4588.64,
+      "speaker": "Deniz (GM)",
+      "text": "Mit deinem Great Staff? Du willst also einen Zauber beschwören oder was hast du vor?"
+    },
+    {
+      "start": 4589.18,
+      "end": 4595.14,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ja, der Great Staff ist ja einfach, du kannst ja, das ist ja meine Waffe, mit der kann ich ja einfach dann so einen Zauberangriff machen. Ja,"
+    },
+    {
+      "start": 4595.4,
+      "end": 4598.14,
+      "speaker": "Deniz (GM)",
+      "text": "aber ich frage mich halt, was du machst. Du musst mich schon beschreiben, was du tust."
+    },
+    {
+      "start": 4598.8,
+      "end": 4604.12,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Achso, das ist einfach nur so ein Bolt of Magic. Also du machst so ein"
+    },
+    {
+      "start": 4604.12,
+      "end": 4605.42,
+      "speaker": "Deniz (GM)",
+      "text": "Magic Missile-like."
+    },
+    {
+      "start": 4606.16,
+      "end": 4607.86,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ja, genau, so in der Art."
+    },
+    {
+      "start": 4615.55,
+      "end": 4622.31,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Charakternamen & Paper Session."
+    },
+    {
+      "start": 4637.39,
+      "end": 4641.47,
+      "speaker": "Deniz (GM)",
+      "text": "Das sieht aber doch ganz okay aus. Du schaffst es auf jeden Fall ihn zu treffen. Das ist ein"
+    },
+    {
+      "start": 4641.47,
+      "end": 4644.43,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Nachteil, das ist ein Nachteil. Der hat jetzt Plus gerechnet."
+    },
+    {
+      "start": 4645.07,
+      "end": 4646.21,
+      "speaker": "Deniz (GM)",
+      "text": "Ach ja stimmt, Nachteil,"
+    },
+    {
+      "start": 4646.25,
+      "end": 4651.23,
+      "speaker": "Benjamin (Valerie)",
+      "text": "ja korrekt. Nachteil, nicht Vorteil. Also es wären nur vier gewesen, aber es ist ein Hauptpunkt. Dann"
+    },
+    {
+      "start": 4651.23,
+      "end": 4658.45,
+      "speaker": "Deniz (GM)",
+      "text": "siehst du halt wie der Schuss durch den Wald pfeffert und du hast gesagt du wolltest Feuer daraus machen, ne?"
+    },
+    {
+      "start": 4659.11,
+      "end": 4661.35,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ja, ist ein bisschen Feuer bei, ja. Okay, Sekunde."
+    },
+    {
+      "start": 4674.69,
+      "end": 4677.73,
+      "speaker": "Deniz (GM)",
+      "text": "Und du triffst hinten ein bisschen vom Baum."
+    },
+    {
+      "start": 4678.97,
+      "end": 4681.57,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Lauf weg von der Flamme! Lauf weg vom Licht!"
+    },
+    {
+      "start": 4681.79,
+      "end": 4690.35,
+      "speaker": "Deniz (GM)",
+      "text": "Dann würde ich auch tatsächlich das Kind spielen lassen und das bewegt sich so die halbe Reichweite weiter. Und ihr seid wieder dran."
+    },
+    {
+      "start": 4691.0,
+      "end": 4695.62,
+      "speaker": "Micha (Rotunas)",
+      "text": "Wie mache ich Laufen? Also wie Reichweite-mäßig?"
+    },
+    {
+      "start": 4696.02,
+      "end": 4701.5,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Alle Reichweiten machen außer Far und Very Far, da musst du einen Actionpoint für ausgeben, sonst kannst du immer laufen, wie du willst."
+    },
+    {
+      "start": 4701.93,
+      "end": 4705.69,
+      "speaker": "Micha (Rotunas)",
+      "text": "Aber wie, wo ist denn Pharaon? Also wohin müsste ich mich stellen? Du kannst Stress heute nutzen."
+    },
+    {
+      "start": 4705.81,
+      "end": 4717.72,
+      "speaker": "Deniz (GM)",
+      "text": "Dann kommst du ein bisschen näher dran. Was? Du kannst jetzt Stress, also du kannst jetzt, Beispiel, du könntest bis hier hinlaufen ungefähr. Ja, okay. Wenn du bis da hinlaufen möchtest, dann müsstest du jetzt einen Stress markieren."
+    },
+    {
+      "start": 4718.24,
+      "end": 4722.08,
+      "speaker": "Micha (Rotunas)",
+      "text": "Aber ich könnte immer noch Aktionen benutzen dann. Oder nicht mehr."
+    },
+    {
+      "start": 4722.62,
+      "end": 4727.4,
+      "speaker": "Deniz (GM)",
+      "text": "Unendlich Aktionen benutzen, bis wir lustig sind. Genau, dann könntest du immer noch eine Aktion benutzen, theoretisch."
+    },
+    {
+      "start": 4727.56,
+      "end": 4734.14,
+      "speaker": "Micha (Rotunas)",
+      "text": "Dann lass mich bis da hinlaufen. Okay. Also ich, warte, ich mach das selber. Ich lauf bis dahin, ich schreib mir gleich nen Stresspoint."
+    },
+    {
+      "start": 4734.4,
+      "end": 4778.45,
+      "speaker": "Deniz (GM)",
+      "text": "In dem Augenblick, als du so weit läufst, springt dich, ich aktiviere und nutze mein 4, zwei 4 Points und unterbreche die Initiative, der springt nach oben und während du auf den Los sprintest, springt der so auf den Baum hoch und will dir halt seine beiden Dolche direkt in die Futterloge rammen. Okay. So, ich würfel mal. Einen wie 20. Let's go. Trifft dich eine 17 wahrscheinlich. Ja,"
+    },
+    {
+      "start": 4778.51,
+      "end": 4779.49,
+      "speaker": "Micha (Rotunas)",
+      "text": "ja, ja. Was"
+    },
+    {
+      "start": 4779.49,
+      "end": 4793.46,
+      "speaker": "Deniz (GM)",
+      "text": "wäre das? Achso, du hast ja Evasion wahrscheinlich. Evasion 11. Genau. Dann mach ich mal einen Damage Roll. Und der macht, uh, das war ein starker Damage. 10 Schaden macht der theoretisch."
+    },
+    {
+      "start": 4795.24,
+      "end": 4801.86,
+      "speaker": "Micha (Rotunas)",
+      "text": "Das ist noch nicht über den Severe Damage, oder ist das schon Severe Damage?"
+    },
+    {
+      "start": 4802.47,
+      "end": 4803.51,
+      "speaker": "Deniz (GM)",
+      "text": "Was steht bei dir bei 10?"
+    },
+    {
+      "start": 4804.41,
+      "end": 4806.49,
+      "speaker": "Micha (Rotunas)",
+      "text": "Also der Threshold ist bei 10."
+    },
+    {
+      "start": 4806.79,
+      "end": 4808.01,
+      "speaker": "Deniz (GM)",
+      "text": "Dann ist das Zivier."
+    },
+    {
+      "start": 4809.79,
+      "end": 4812.63,
+      "speaker": "Micha (Rotunas)",
+      "text": "Okay, es ist also 10 oder plus. Nee, da drüber musst du"
+    },
+    {
+      "start": 4812.63,
+      "end": 4814.47,
+      "speaker": "Deniz (GM)",
+      "text": "kommen. Also erst bei 11 ist das Zivier-Damage."
+    },
+    {
+      "start": 4814.79,
+      "end": 4818.13,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ja, ja, okay, dann ist er bei Major-Damage, okay. Genau. Jetzt könntest du deine"
+    },
+    {
+      "start": 4818.13,
+      "end": 4819.71,
+      "speaker": "Deniz (GM)",
+      "text": "Rüstung noch nutzen, wenn du da... Nee, mach"
+    },
+    {
+      "start": 4819.71,
+      "end": 4835.42,
+      "speaker": "Micha (Rotunas)",
+      "text": "ich nicht. Ich würde damit sehr viel Rüstung verschwenden. Für ein... Wobei... Doch, mach ich. Weil... Doch, ich mach... Ich nehm 5 Rüstungspunkte weg. Damit er mir nur ein Damage macht."
+    },
+    {
+      "start": 4837.6,
+      "end": 4838.7,
+      "speaker": "Deniz (GM)",
+      "text": "Speichern und Trinken nicht vergessen."
+    },
+    {
+      "start": 4839.78,
+      "end": 4843.04,
+      "speaker": "Micha (Rotunas)",
+      "text": "Warte mal kurz, was war nochmal mein Amor-Wert? Was hat das nochmal gemacht?"
+    },
+    {
+      "start": 4843.32,
+      "end": 4854.02,
+      "speaker": "Deniz (GM)",
+      "text": "Also du kannst jetzt theoretisch, wenn du einen Amor-Slot aktivierst, kannst du den Schaden, also du kriegst dir aktuell 10 Schaden, minus deinen Amor-Wert."
+    },
+    {
+      "start": 4855.22,
+      "end": 4861.74,
+      "speaker": "Micha (Rotunas)",
+      "text": "Achso, okay, das heißt, das wären dann 2 Amor-Slots, weil ich würde dann 6 wegballern, weil mein Amor ist bei 3."
+    },
+    {
+      "start": 4863.02,
+      "end": 4866.54,
+      "speaker": "Deniz (GM)",
+      "text": "Ballast du zwei Armor-Slots weg, um... Genau. Genau, ja."
+    },
+    {
+      "start": 4867.1,
+      "end": 4869.28,
+      "speaker": "Micha (Rotunas)",
+      "text": "Und dann würde ich einen Schaden bekommen."
+    },
+    {
+      "start": 4869.56,
+      "end": 4872.94,
+      "speaker": "Deniz (GM)",
+      "text": "Genau, und dann darfst du dir trotzdem mal einen Stresspunkt aufschreiben noch zusätzlich. Ja, ich"
+    },
+    {
+      "start": 4872.94,
+      "end": 4875.14,
+      "speaker": "Micha (Rotunas)",
+      "text": "such das gerade. Den finde ich gerade nicht. Weil der"
+    },
+    {
+      "start": 4875.14,
+      "end": 4880.68,
+      "speaker": "Deniz (GM)",
+      "text": "Goblin dich ziemlich penetriert mit seinen Messern."
+    },
+    {
+      "start": 4881.33,
+      "end": 4894.0,
+      "speaker": "Micha (Rotunas)",
+      "text": "Also zwei Stresspunkte insgesamt dann jetzt, weil ich bin ja auch gelaufen. Genau, genau, genau. Okay. Okay. Ja. Okay. Du bist dran. Ich bin der Strand."
+    },
+    {
+      "start": 4894.84,
+      "end": 4901.72,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ja, er hat den jetzt aktiviert für 2-4 und ich glaube, wir waren ja noch nicht, wir haben noch nicht mit 4 gewürfelt, also müssten wir noch dran sein, richtig? Genau,"
+    },
+    {
+      "start": 4901.72,
+      "end": 4902.44,
+      "speaker": "Deniz (GM)",
+      "text": "jetzt seid ihr wieder dran."
+    },
+    {
+      "start": 4903.14,
+      "end": 4904.3,
+      "speaker": "Micha (Rotunas)",
+      "text": "Okay, ähm..."
+    },
+    {
+      "start": 4904.3,
+      "end": 4916.84,
+      "speaker": "Deniz (GM)",
+      "text": "Beziehungsweise, ja, ihr dürft auch sprechen. Ich würde das Kind nochmal ein bisschen weiter bewegen. Wo ist das überhaupt? Ach, das ist es da. Das ist bei mir hinten. Das versteckt sich hinter dir. Obwohl es vor dir noch Angst hatte, hat es auf jeden Fall mehr Angst vor dem Goblin."
+    },
+    {
+      "start": 4923.66,
+      "end": 4924.62,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Möchtest du was machen?"
+    },
+    {
+      "start": 4925.22,
+      "end": 4949.2,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ja, ja, ich benutze einen Hauptpunkt. Um eins meiner Experience zu benutzen. Boxing. Oh ja, okay. So, ich habe meine Armringe an, gerade. Also meine magischen Armringe an. Das heißt, ich benutze einen Boxring und schlage ihn mit diesem Glowing Ring einfach auf den drauf."
+    },
+    {
+      "start": 4949.46,
+      "end": 4955.1,
+      "speaker": "Deniz (GM)",
+      "text": "Volles Pfund aufs Maul, okay? Ja. Genau. Dann mach einen Angriffswurf plus deine Experience. Ja."
+    },
+    {
+      "start": 4956.3,
+      "end": 4964.78,
+      "speaker": "Micha (Rotunas)",
+      "text": "2... und dann... haben wir gesagt... Ne, ein W6 kommt nicht drauf. Das ist nur die 2x12er."
+    },
+    {
+      "start": 4964.78,
+      "end": 4968.44,
+      "speaker": "Deniz (GM)",
+      "text": "Genau. Plus dein Plus 2 und..."
+    },
+    {
+      "start": 4968.44,
+      "end": 4969.32,
+      "speaker": "Micha (Rotunas)",
+      "text": "Jaja, die Werte."
+    },
+    {
+      "start": 4969.84,
+      "end": 4975.1,
+      "speaker": "Deniz (GM)",
+      "text": "Oh mein Gott! Das sind 6. Plus... wie viel hast du bei der Waffe? Auch nochmal Plus 2, ne?"
+    },
+    {
+      "start": 4975.9,
+      "end": 4980.47,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ne, tatsächlich nicht. Minus 1. Bei"
+    },
+    {
+      "start": 4980.47,
+      "end": 4983.81,
+      "speaker": "Deniz (GM)",
+      "text": "der Waffe hast du Minus 1? Okay, dann hast du es tatsächlich gerade nicht geschafft."
+    },
+    {
+      "start": 4985.46,
+      "end": 4993.82,
+      "speaker": "Micha (Rotunas)",
+      "text": "Weil die Agility ist, die Glowing Rings, die gehen nicht auf irgendwie Smash oder so, warum auch immer, so auf Stärke, die gehen auf Schnelligkeit."
+    },
+    {
+      "start": 4994.36,
+      "end": 5033.4400000000005,
+      "speaker": "Deniz (GM)",
+      "text": "Dann, ähm, du schlägst halt praktisch nach dem Goblin, das war auch in 4, hab ich gesehen, und in dem Augenblick, als du an dem vorbeischlägst, äh, greift dich, äh, der Goblin wieder an und versucht dir halt in seine, wie heißt das, in deine, ähm, fleischigen Bereiche, ach du je. Eine 7 trifft dich wahrscheinlich nicht. Nein. Nein. Okay. Ähm... Ja, aber tatsächlich, du bist so groß, in dem Augenblick, wo er seine Dolche halt auf dich in deinen Arm rammen möchte, schubst du den einfach zur Seite. Mhm. Dann, ja, theoretisch seid ihr wieder dran."
+    },
+    {
+      "start": 5035.05,
+      "end": 5057.09,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ja. Ich bin hier hinten, ich bleib bei dem Mädchen, ich werd jetzt nicht von dem weglaufen, deswegen... Ich werd nochmal dasselbe machen wie im Great Staff, ich kann ihn jetzt besser sehen, ich bin nicht mehr im... Das ist ein Nachteil. Ich kann da schön an dir vorbeigucken bzw. geh sogar noch ein Stückchen hier rechts rüber. Und jetzt hinten brennt schön der Baum weiter. Großartig. Das heißt, ich habe schönen Kontrast und feuer nochmal meinen Grad Staff ab."
+    },
+    {
+      "start": 5057.39,
+      "end": 5079.28,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, dann machen wir einen Angriffswurf. Das ist ein 4-Punkt für Papa. Das ist 13. Aber das trifft und also du schaffst es jetzt mit dieser kleinen Feuerkugel ihn so präzise zu treffen, dass der direkt anfängt zu brennen und zu Boden fällt."
+    },
+    {
+      "start": 5084.4,
+      "end": 5086.12,
+      "speaker": "Micha (Rotunas)",
+      "text": "Lebt er noch oder? Nee, der"
+    },
+    {
+      "start": 5086.12,
+      "end": 5095.73,
+      "speaker": "Benjamin (Valerie)",
+      "text": "ist tot. Ich suche ihn schnell, ob er irgendwelche Befehle hat und lass uns gucken, ob wir noch andere hier finden. Kind, lauf zurück zu deinem Vati. Wir sind bei den Kühen."
+    },
+    {
+      "start": 5096.98,
+      "end": 5099.34,
+      "speaker": "Micha (Rotunas)",
+      "text": "Wie stark ist da die Flamme? Also der brennt ja."
+    },
+    {
+      "start": 5099.34,
+      "end": 5100.48,
+      "speaker": "Deniz (GM)",
+      "text": "Nicht schlimm, nicht schlimm."
+    },
+    {
+      "start": 5101.1,
+      "end": 5111.02,
+      "speaker": "Micha (Rotunas)",
+      "text": "Okay, ich nehme meinen Wasserbehälter und kipp das über ihm drauf, wenn er schon tot ist. Okay. Damit ich jetzt nicht gleich irgendwie Feuerschaden kriege oder so, keine Ahnung."
+    },
+    {
+      "start": 5111.16,
+      "end": 5115.04,
+      "speaker": "Deniz (GM)",
+      "text": "Yes. Du schaffst es, den ohne Probleme zu löschen, weil er noch nicht viel gebrannt hat."
+    },
+    {
+      "start": 5115.74,
+      "end": 5122.54,
+      "speaker": "Micha (Rotunas)",
+      "text": "Okay. Sicherheitshalber nehme ich seinen Kopf und drehe einmal so."
+    },
+    {
+      "start": 5123.3,
+      "end": 5124.26,
+      "speaker": "Deniz (GM)",
+      "text": "Sicher, sicher, okay."
+    },
+    {
+      "start": 5125.26,
+      "end": 5130.84,
+      "speaker": "Micha (Rotunas)",
+      "text": "Sicher ist sicher. Das ist Double Tap. Du weißt es nie. Ja, voll fein. Ich möchte"
+    },
+    {
+      "start": 5130.84,
+      "end": 5136.36,
+      "speaker": "Benjamin (Valerie)",
+      "text": "mal kurz den Boden untersuchen, ob ich hier noch was erkennen kann, weil ich habe ja noch Licht hinten, was hier noch brennt."
+    },
+    {
+      "start": 5136.36,
+      "end": 5140.26,
+      "speaker": "Deniz (GM)",
+      "text": "Ihr dürft beide einmal einen Instinct-Wurf machen."
+    },
+    {
+      "start": 5143.36,
+      "end": 5146.26,
+      "speaker": "Micha (Rotunas)",
+      "text": "Instinct? Wie viel ist das? Also, okay."
+    },
+    {
+      "start": 5149.13,
+      "end": 5151.22,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Neun. Aber mit Hope."
+    },
+    {
+      "start": 5153.51,
+      "end": 5154.57,
+      "speaker": "Deniz (GM)",
+      "text": "Mit Hope."
+    },
+    {
+      "start": 5160.01,
+      "end": 5163.97,
+      "speaker": "Deniz (GM)",
+      "text": "Was war das bei dir für ein Wert, Benjamin?"
+    },
+    {
+      "start": 5166.75,
+      "end": 5171.25,
+      "speaker": "Benjamin (Valerie)",
+      "text": "9. Ich habe 8 gewürfelt plus 1 bei Instinct."
+    },
+    {
+      "start": 5172.11,
+      "end": 5178.29,
+      "speaker": "Deniz (GM)",
+      "text": "So, und wenn das Gesamtergebnis war? My bad. 9. 9. Okay, du guckst dich so ein bisschen um. Was wolltest du genau investigieren?"
+    },
+    {
+      "start": 5179.1900000000005,
+      "end": 5182.39,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ob ich mehr als die Fußspuren von einem Goblin finden kann."
+    },
+    {
+      "start": 5182.45,
+      "end": 5212.5599999999995,
+      "speaker": "Deniz (GM)",
+      "text": "Du findest nur ein paar Fußspuren. Okay, ich hatte 11. Du hast eine 11. Du guckst zwischen den Sachen und du findest tatsächlich so eine Art Notizen, die der Goblin gemacht hat. Die sind nicht so leicht leserlich, aber du schaffst es ungefähr zu verstehen, was da gemeint ist. Der Goblin hat so ein bisschen das Dorf eingezeichnet und so gezeigt, wo man angreifen könnte. Oh. Oh. Aber, ja, diese Notizen werden ihren Herren nie wieder erreichen. Ja."
+    },
+    {
+      "start": 5214.0599999999995,
+      "end": 5217.82,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Aber wir könnten eventuell die Notizen ein bisschen verfälschen."
+    },
+    {
+      "start": 5219.08,
+      "end": 5232.98,
+      "speaker": "Micha (Rotunas)",
+      "text": "Oder wir lassen die Notizen in seiner Leiche und benutzen diese Punkte, wo sie angreifen könnten, als die Verteidigungspunkte."
+    },
+    {
+      "start": 5232.98,
+      "end": 5238.34,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Wir müssen die Informationen noch zu den Gegnern kriegen. Wir haben ihn umgebracht."
+    },
+    {
+      "start": 5241.92,
+      "end": 5256.37,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Notizen nehmen wir, wenn die anpassen, wo da rein schreiben wir nur hier kann man angreifen, alles anderes Mist, da verteidigen wir dann und dann verstecken wir die Notiz sehr doll irgendwo bei ihm, sodass die sich denken, wir haben das nicht gefunden."
+    },
+    {
+      "start": 5257.07,
+      "end": 5263.89,
+      "speaker": "Micha (Rotunas)",
+      "text": "Das klingt logisch, ja. Wo legen"
+    },
+    {
+      "start": 5263.89,
+      "end": 5268.46,
+      "speaker": "Benjamin (Valerie)",
+      "text": "wir den hin? Auf dem Weg? Können wir so tun, als hätte der Geistbock den vielleicht umgebracht?"
+    },
+    {
+      "start": 5268.64,
+      "end": 5273.92,
+      "speaker": "Deniz (GM)",
+      "text": "Der sieht halt schon echt verkohlt aus am Gesicht. Halb verbrannt. Halb"
+    },
+    {
+      "start": 5273.92,
+      "end": 5281.4,
+      "speaker": "Micha (Rotunas)",
+      "text": "verbrannt. Halb verbrannt. Halb verbrannt. Halb verbrannt. Halb verbrannt. Halb verbrannt. Halb verbrannt. Halb verbrannt. Halb verbrannt. Halb verbrannt. Halb verbrannt. Halb verbrannt. Halb verbrannt. Halb verbrannt. Halb verbrannt. Halb verbrannt. Halb verbrannt. Halb verbrannt. Halb verbrannt. Halb verbrannt. Halb verbrannt. Halb verbrannt. Halb verbrannt. Halb verbrannt. Halb verbrannt."
+    },
+    {
+      "start": 5281.4,
+      "end": 5286.22,
+      "speaker": "Deniz (GM)",
+      "text": "Halb verbrannt. Halb verbrannt. Halb"
+    },
+    {
+      "start": 5286.22,
+      "end": 5287.24,
+      "speaker": "Micha (Rotunas)",
+      "text": "verbrannt. Halb"
+    },
+    {
+      "start": 5287.24,
+      "end": 5292.68,
+      "speaker": "Deniz (GM)",
+      "text": "verbrannt. Halb verbrannt. Halb verbrannt. Hal"
+    },
+    {
+      "start": 5292.67,
+      "end": 5305.99,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ich habe ein kleines Tier bei mir, ein Flammentier, so ein harmloses kleines Tierchen, was eine Flamme ist. Das läuft jetzt auf meine Schulter, also das ist so wirklich, das gibt es hier, das kann man sich so auswählen. Wie"
+    },
+    {
+      "start": 5305.99,
+      "end": 5308.29,
+      "speaker": "Micha (Rotunas)",
+      "text": "mache ich den Fackel an?"
+    },
+    {
+      "start": 5310.27,
+      "end": 5319.85,
+      "speaker": "Deniz (GM)",
+      "text": "Rechtsklick auf den Charakter und dann Torch. Ah, cool. Torch. Torch. So, was war der Plan?"
+    },
+    {
+      "start": 5320.68,
+      "end": 5333.88,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Der Plan ist, Notiz nehmen, alle möglichen Angriffsstellen wegstreichen, überall schreiben, gut verteidigt, zu stark, blablabla, außer an eine Stelle, und zwar die, die wir dann verteidigen wollen. Welche Stelle wollen wir verteidigen?"
+    },
+    {
+      "start": 5333.96,
+      "end": 5345.74,
+      "speaker": "Micha (Rotunas)",
+      "text": "Klar, aber versuchen, das so hinzukriegen, wie er geschrieben hat. Also jetzt nicht in unserer Schrift auf einmal auftauchen, sondern so mit Kriseleien. Dann würde ich mal"
+    },
+    {
+      "start": 5345.74,
+      "end": 5348.36,
+      "speaker": "Deniz (GM)",
+      "text": "einen Finesse-Check von einem von euch verlangen."
+    },
+    {
+      "start": 5351.22,
+      "end": 5357.21,
+      "speaker": "Deniz (GM)",
+      "text": "Ähm... Finesse! Auch wenn das eine Sauklaue ist, die Sauklaue nachzumachen, ist auch nicht so leicht. Ja..."
+    },
+    {
+      "start": 5357.21,
+      "end": 5363.37,
+      "speaker": "Micha (Rotunas)",
+      "text": "Finesse nicht, knowledge. Ja, okay. Äh, dann mach ich Finesse."
+    },
+    {
+      "start": 5363.53,
+      "end": 5371.13,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Kann ich ihm einen Vorteil geben mit meinem Hope? Gerne. Ah, ist der Strich da? Und hier schreibt er komisch und... Okay,"
+    },
+    {
+      "start": 5371.13,
+      "end": 5371.93,
+      "speaker": "Micha (Rotunas)",
+      "text": "warte mal. Und die Partys nicht"
+    },
+    {
+      "start": 5371.93,
+      "end": 5373.05,
+      "speaker": "Benjamin (Valerie)",
+      "text": "richtig machen. Dann"
+    },
+    {
+      "start": 5373.05,
+      "end": 5377.86,
+      "speaker": "Micha (Rotunas)",
+      "text": "dürfen wir NW6 und Top? Ja. Und ein 4-9?"
+    },
+    {
+      "start": 5379.58,
+      "end": 5383.7,
+      "speaker": "Deniz (GM)",
+      "text": "Ne, der zählt jetzt schon, der Wurf. Du kriegst einfach nur noch W6 obendrauf."
+    },
+    {
+      "start": 5384.12,
+      "end": 5385.96,
+      "speaker": "Micha (Rotunas)",
+      "text": "Achso. Ja gut. Das"
+    },
+    {
+      "start": 5385.96,
+      "end": 5406.97,
+      "speaker": "Deniz (GM)",
+      "text": "wäre eine Plus 1 nochmal. Okay, das heißt 7, das sind 14 hast du gewürfelt. Plus Finesse ist? 0. Nice. Das heißt 14. Du schaffst, glaube ich, eine ganz gute Krickelschrift so ein bisschen nachzuahmen. Und ja, die Notiz ist jetzt in euren Händen. Was macht ihr damit? Okay."
+    },
+    {
+      "start": 5407.6900000000005,
+      "end": 5408.71,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ähm... Wann gehen wir nach"
+    },
+    {
+      "start": 5408.71,
+      "end": 5425.21,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Hause? Ich bin nicht nach Hause, es ist spät. Du bist ja immer noch hier. Ich hab doch gesagt, du sollst nach Hause rennen. Aber es ist so dunkel. Ah, pardon. Okay, ähm, ja, wir bringen dich gleich heim. Ja. Komisch, dass dein Vater dich nicht sucht. Egal. Wir verstecken jetzt die... Wir verstecken jetzt... Was hat er an?"
+    },
+    {
+      "start": 5425.3099999999995,
+      "end": 5426.01,
+      "speaker": "Micha (Rotunas)",
+      "text": "Was hat er an?"
+    },
+    {
+      "start": 5428.05,
+      "end": 5430.91,
+      "speaker": "Deniz (GM)",
+      "text": "Äh, der Goblin? Ja. Der hat einfach nur so eine Hose an."
+    },
+    {
+      "start": 5432.23,
+      "end": 5434.93,
+      "speaker": "Micha (Rotunas)",
+      "text": "Also, keine Schuhe, kein Geil, das ist nur eine Hose. Ja, der"
+    },
+    {
+      "start": 5434.93,
+      "end": 5439.39,
+      "speaker": "Deniz (GM)",
+      "text": "hat auch Schuhe an, tatsächlich. Okay. Nehmen wir den Schuh. Ja."
+    },
+    {
+      "start": 5439.83,
+      "end": 5451.26,
+      "speaker": "Micha (Rotunas)",
+      "text": "In den Stiefel dann. Ja. So aber, dass man trotzdem noch sieht, dass da was versteckt ist. Okay. Ich glaub nicht, dass die Goblin so smart ist. Ihr repariert"
+    },
+    {
+      "start": 5451.26,
+      "end": 5456.74,
+      "speaker": "Deniz (GM)",
+      "text": "den Goblin auf jeden Fall so, dass, wenn man ihn findet, man seine Notiz so nach dem zweiten Blick findet."
+    },
+    {
+      "start": 5457.24,
+      "end": 5458.36,
+      "speaker": "Micha (Rotunas)",
+      "text": "Genau, genau, genau."
+    },
+    {
+      "start": 5458.62,
+      "end": 5461.4400000000005,
+      "speaker": "Deniz (GM)",
+      "text": "Okay. Dann zieht ihr euch zurück?"
+    },
+    {
+      "start": 5462.0,
+      "end": 5466.68,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ja, wir lassen den hier liegen. Ich denke, wenn er hier sperren sollte, finden die den hier. Yes."
+    },
+    {
+      "start": 5468.38,
+      "end": 5469.08,
+      "speaker": "Micha (Rotunas)",
+      "text": "Und, äh, ja."
+    },
+    {
+      "start": 5469.18,
+      "end": 5470.96,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Wo haben wir jetzt geschrieben, wo sie angreifen sollen?"
+    },
+    {
+      "start": 5472.45,
+      "end": 5480.63,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ähm, ja das wollte ich eigentlich vor ihrem Haus machen, aber ich hätte jetzt gesagt, dass sie zwischen dem Stein"
+    },
+    {
+      "start": 5480.63,
+      "end": 5489.87,
+      "speaker": "Benjamin (Valerie)",
+      "text": "hoch müssen. Da wo die Ziege war und wir verbarrikadieren uns mit den Leuten dann bei dem Stein, obwohl dann laufen die einfach weg am Ende, ist auch nicht so gut."
+    },
+    {
+      "start": 5489.87,
+      "end": 5493.47,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ja, jetzt müssen wir den Plan ausarbeiten. Ihr hört auch"
+    },
+    {
+      "start": 5493.47,
+      "end": 5498.25,
+      "speaker": "Deniz (GM)",
+      "text": "mittlerweile so die Rufe von Leuten von hinten, die mit Fackeln so in eure Richtung kommen."
+    },
+    {
+      "start": 5498.87,
+      "end": 5504.15,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ja, ja, ja, ja. Ich guck mir grad das Dorf an, deswegen. Ich"
+    },
+    {
+      "start": 5504.15,
+      "end": 5513.43,
+      "speaker": "Benjamin (Valerie)",
+      "text": "guck mir auch grad das Dorf an, schnell überlegen. Ich würd sagen, man kann nur sinnvoll zwischen Friedhof und Stein angreifen, da können wir ganz gute Barrikade hinbacken."
+    },
+    {
+      "start": 5513.53,
+      "end": 5536.64,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ja, wenn die zwischen Friedhof und den Steinen uns angreifen, könnte man Leute aufs Dach auch stellen, dass die von da Bogen schießen oder halt eben auf den Stein selber sogar. Ja, genau. Okay, genau, da markieren wir das. Also wenn du noch mal fragst, sagen wir dir, wo wir das markiert haben. Wir haben das"
+    },
+    {
+      "start": 5536.64,
+      "end": 5539.74,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Mädchen gefunden! Es geht ihr gut!"
+    },
+    {
+      "start": 5540.48,
+      "end": 5556.37,
+      "speaker": "Deniz (GM)",
+      "text": "Als die ihre Eltern sieht, sprintet sie auch auf ihren Dad zu und der nimmt sie in die Arme und ihr seht nur wie Tindra ein bisschen besorgt guckt und euch einfach nur fragt, ist alles in Ordnung?"
+    },
+    {
+      "start": 5558.0,
+      "end": 5583.58,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Wir haben die Falle vorbereitet. Tatsächlich waren schon die ersten Goblin-Späher hier. Es war nur ein einzelner, Gott sei Dank. Aber mit den vereinten Kräften der Magier-Power haben wir ihn beseitigen können und wir haben eine Falle hinterlassen. Sie werden wahrscheinlich zum Morgengrauen oder zumindest morgen angreifen und zwar zwischen Stein und Friedhof. Und da"
+    },
+    {
+      "start": 5583.58,
+      "end": 5594.54,
+      "speaker": "Deniz (GM)",
+      "text": "werden wir unsere Barrikade aufstellen. Dann sollten wir das vielleicht alles morgen früh so vorbereiten. Oder heute Nacht am besten noch. Allerdings sollten wir jetzt erstmal wieder zurück zum Dorf gehen."
+    },
+    {
+      "start": 5595.42,
+      "end": 5598.8,
+      "speaker": "Micha (Rotunas)",
+      "text": "Wir müssen mit dem Schmied dabei reden."
+    },
+    {
+      "start": 5608.73,
+      "end": 5621.09,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, ihr seid wieder zurück zum Dorf. Ihr seht, der Papa ist nicht so begeistert und auch der Schmied wirkt so ein bisschen angefressen, vor allem die Mutter, aber zieht einfach ihr Kind jetzt mit ins Gebäude rein."
+    },
+    {
+      "start": 5622.3,
+      "end": 5626.76,
+      "speaker": "Micha (Rotunas)",
+      "text": "Also, Kurzfassung. Wir haben das schon zu oft heute erzählt."
+    },
+    {
+      "start": 5627.5599999999995,
+      "end": 5638.02,
+      "speaker": "Deniz (GM)",
+      "text": "Wenn ihr das nochmal macht, dann gibt's aber Ärger, Leute. Ihr könnt euch einfach das Kind erschrecken und dann hier alles einfach so stehen lassen, wie es ist."
+    },
+    {
+      "start": 5638.91,
+      "end": 5643.39,
+      "speaker": "Micha (Rotunas)",
+      "text": "Alles stehen lassen? Ihr meint Goblins bekämpfen? Da"
+    },
+    {
+      "start": 5643.39,
+      "end": 5644.15,
+      "speaker": "Deniz (GM)",
+      "text": "waren Goblins? Meint ihr das?"
+    },
+    {
+      "start": 5644.77,
+      "end": 5655.57,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ja, wir haben einen Goblins-Speer getötet. Kurze Fassung, euer Dorf wird wahrscheinlich in den Morgen grauen oder in den nächsten zwei Tagen von Goblins angegriffen."
+    },
+    {
+      "start": 5656.16,
+      "end": 5662.3099999999995,
+      "speaker": "Deniz (GM)",
+      "text": "Das hatte ich euch ja auch schon erzählt, die Herrschaften. Na gut, dann äh... Wenn ihr"
+    },
+    {
+      "start": 5662.3099999999995,
+      "end": 5668.37,
+      "speaker": "Micha (Rotunas)",
+      "text": "uns nicht glaubt, könnt ihr gerne tiefer in den Wald gehen und da seht ihr einen... Eine Goblin-Leiche."
+    },
+    {
+      "start": 5668.41,
+      "end": 5686.67,
+      "speaker": "Deniz (GM)",
+      "text": "Um die Uhrzeit ist es vielleicht nicht ratsam, noch in den Wald zu gehen. Aber ihr habt Recht, wir sollten uns nun um die wichtigen Aspekte der Dorfverteidigung kümmern. Vielleicht zeigt ihr uns einfach, wo jeweils die Barrikaden aufgestellt werden sollen."
+    },
+    {
+      "start": 5687.05,
+      "end": 5696.08,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ja, Schmied, was könntet ihr auf die Schnelle für eine Verteidigung aus der Höhe oder Ferne herstellen?"
+    },
+    {
+      "start": 5696.45,
+      "end": 5702.33,
+      "speaker": "Deniz (GM)",
+      "text": "Was, um die Uhrzeit? Gar nichts mehr. Ich könnte euch maximal irgendwas umreißen oder sonstiges."
+    },
+    {
+      "start": 5702.73,
+      "end": 5707.64,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ihr müsst die ganze Nacht arbeiten, genau wie wir. Es ist euer Dorf, nicht unser."
+    },
+    {
+      "start": 5707.9,
+      "end": 5731.3099999999995,
+      "speaker": "Deniz (GM)",
+      "text": "Wie gesagt, ich könnte irgendwas, weiß ich nicht, Möbelstücke irgendwo umwerfen, aber das wird vielleicht auffällig sein. Hast du Beerenfallen? Wir haben sicherlich noch ein paar Tierfallen da, das stimmt. Ja, großartig. Mach alle bereit! Ich kann euch drei zur Verfügung stellen."
+    },
+    {
+      "start": 5732.32,
+      "end": 5734.0,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ich nehm sechs."
+    },
+    {
+      "start": 5735.12,
+      "end": 5738.58,
+      "speaker": "Deniz (GM)",
+      "text": "Beziehungsweise der könnte euch auch davon hier drei zur Verfügung stellen."
+    },
+    {
+      "start": 5739.29,
+      "end": 5744.8099999999995,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ja genau das meinte ich ehrlich vorhin mit Palisaden. Genau diese Dinger hab ich gesucht bei den Holz-Typen."
+    },
+    {
+      "start": 5744.99,
+      "end": 5757.36,
+      "speaker": "Deniz (GM)",
+      "text": "Okay. Dann machen wir mal ganz kurz OT-Modus. Ja. Und zwar RIP, RIP IT. Warte. Ist ja weg. Wir machen wieder Tageslicht. Nein!"
+    },
+    {
+      "start": 5761.8099999999995,
+      "end": 5779.64,
+      "speaker": "Deniz (GM)",
+      "text": "Ihr müsst mir jetzt mal ganz kurz zeigen, wo die Barrikaden hinkommen sollen. So, wir gehen nochmal auf den Tag. Dann zeigt mir einmal ganz kurz, wo die Fallen hin sollen, beziehungsweise erstmal die Barrikaden, die acht Stück. Also"
+    },
+    {
+      "start": 5779.64,
+      "end": 5795.26,
+      "speaker": "Benjamin (Valerie)",
+      "text": "ich würde sagen, wir machen hier erstmal sollen die ja ankommen, die sind klein, deswegen können die nicht an dem Stein, können die nicht drüber gucken, aber auch über den Stein vom Friedhof können sie nicht drüber gucken. Heißt, wenn wir Hier die Barrikaden hier lang platzieren ein bisschen."
+    },
+    {
+      "start": 5795.72,
+      "end": 5822.02,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, warte, ich geh mal kurz in den passenden Modus dafür. Okay, wo sind meine Palisaden? Da. Okay, das heißt, wir könnten da insgesamt 1, 2, 3, 4, 5, 6, 7, wir könnten da genau 8 Stück hinballern. Wenn ihr das wollt."
+    },
+    {
+      "start": 5822.52,
+      "end": 5837.84,
+      "speaker": "Micha (Rotunas)",
+      "text": "Überleg mal, wir können hier die Häuser nicht einreißen, die Häuser sind ja stabil. Was ist, wenn wir zwischen den Häusern die Palisaden aufbauen? Also... Warte... Die Wände und ich meine dann hier."
+    },
+    {
+      "start": 5839.5599999999995,
+      "end": 5842.0,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ja, also bis nach ganz hinten müssen wir gar nicht gehen."
+    },
+    {
+      "start": 5843.38,
+      "end": 5845.84,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ah, du willst die jetzt auf deren Zellen aufbauen? Nee, das war"
+    },
+    {
+      "start": 5845.84,
+      "end": 5850.29,
+      "speaker": "Deniz (GM)",
+      "text": "jetzt nur die Idee, die ich jetzt eventuell hier von euch gehört hatte. Ja."
+    },
+    {
+      "start": 5851.3,
+      "end": 5880.7,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Also ich hätte versucht, da wo du jetzt gerade drin stehst, das so gesehen als Fallenzone zu machen, dass die hier ankommen, sich denken, ah cool, hier kann man ja super durchrennen irgendwie und dann sind wir im Dorf drin und das wir dann so gesehen hier, wenn sie hier drin stehen, hier auf dem Dächern haben wir Bogenschützen, Armbrustschützen und so weiter. Vielleicht hier. Vielleicht packen wir da auch eine Palisade oben drauf. Gleich hier oben. Genau. Die, die auch versteckte sind, die da so gesehen vier sind."
+    },
+    {
+      "start": 5880.7,
+      "end": 5883.38,
+      "speaker": "Deniz (GM)",
+      "text": "Hier sehe ich da schon sechs Stück, by the way. Ja,"
+    },
+    {
+      "start": 5883.42,
+      "end": 5886.96,
+      "speaker": "Benjamin (Valerie)",
+      "text": "unten da, da müssen wir ein paar wegräumen da unten, da können wir nicht so viele hinpacken. Okay,"
+    },
+    {
+      "start": 5887.0,
+      "end": 5888.58,
+      "speaker": "Deniz (GM)",
+      "text": "wie viele wollt ihr da unten stehen haben?"
+    },
+    {
+      "start": 5889.61,
+      "end": 5904.03,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ich würde sagen, wir brauchen eine, mindestens eine oben auf dem Dach. Wir brauchen zwei hier auf dem Stein und die restlichen packen wir da unten hin, sodass wir da nicht so überrascht werden können. Damit die auch denken, okay, da ist Verteidigung und man kann dran vorbeilaufen. Das"
+    },
+    {
+      "start": 5904.03,
+      "end": 5905.95,
+      "speaker": "Deniz (GM)",
+      "text": "heißt, die Palisaden wollt ihr sowieso haben, oder?"
+    },
+    {
+      "start": 5907.1,
+      "end": 5913.76,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ja, aber so, dass die, wenn die angelaufen kommen, dass sie die nicht sehen. Also eher hier, wo ich hinten stehe."
+    },
+    {
+      "start": 5914.12,
+      "end": 5920.6,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, also praktisch so. Ja. Und dann irgendwie, weiß ich nicht, so."
+    },
+    {
+      "start": 5922.57,
+      "end": 5923.73,
+      "speaker": "Micha (Rotunas)",
+      "text": "Aber ist das nicht zu weit?"
+    },
+    {
+      "start": 5925.36,
+      "end": 5938.4,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ja, aber dann sieht man es wenigstens nicht. Dann haben wir den Vorteil, die glauben wirklich, die können da langlaufen. Weil wenn du von hinten jetzt mal guckst, da sehen die gar nichts von. Und da können wir schön Dorfbewohner hinstellen mit Pfeil und Bogen und allem Pipapo."
+    },
+    {
+      "start": 5940.58,
+      "end": 5944.18,
+      "speaker": "Micha (Rotunas)",
+      "text": "Achso, du willst die jetzt wirklich dann hier hin stellen oder was?"
+    },
+    {
+      "start": 5944.4,
+      "end": 5949.82,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Genau. Und sobald die Goblins dann mit ihrer Armee hier reinlaufen..."
+    },
+    {
+      "start": 5949.82,
+      "end": 5951.12,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ja,"
+    },
+    {
+      "start": 5951.21,
+      "end": 5955.23,
+      "speaker": "Benjamin (Valerie)",
+      "text": "okay, ich hab's versteht. Hier machen"
+    },
+    {
+      "start": 5955.23,
+      "end": 5958.41,
+      "speaker": "Micha (Rotunas)",
+      "text": "wir ein Minenfeld aus Bärenfallen. Bärenfallen,"
+    },
+    {
+      "start": 5958.59,
+      "end": 5965.29,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Traps und allem, ja genau. Und kannst du eine Palisade, kannst du auch hier oben drauf feststellen."
+    },
+    {
+      "start": 5973.07,
+      "end": 5974.47,
+      "speaker": "Deniz (GM)",
+      "text": "Charakternamen"
+    },
+    {
+      "start": 5974.72,
+      "end": 5976.18,
+      "speaker": "Micha (Rotunas)",
+      "text": "& Paper Session."
+    },
+    {
+      "start": 6000.0,
+      "end": 6001.18,
+      "speaker": "Deniz (GM)",
+      "text": "6, 2 Palisaden habt ihr noch."
+    },
+    {
+      "start": 6002.65,
+      "end": 6019.71,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ja, also die 6, die hier unten stehen, die machen für mich, so wie sie da stehen, gar keinen Sinn. Die müssten wir entweder in einem Kreis stellen, damit die da eine Abwehr haben. Kannst du oben, wo mein Ding ist auf dem Baum, kannst du da einen hinstellen? Kannst du da eine Palisade oben drauf machen?"
+    },
+    {
+      "start": 6019.95,
+      "end": 6023.87,
+      "speaker": "Deniz (GM)",
+      "text": "Wo bist du? Ah, da. Da macht keinen Sinn, einen zu bauen."
+    },
+    {
+      "start": 6024.68,
+      "end": 6030.56,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Aber dann können wir die Leute aufs Dach stellen, dann können die von da aus runterschießen und sind aber geschützt vor Fallen von den Goblins. Wir"
+    },
+    {
+      "start": 6030.56,
+      "end": 6033.76,
+      "speaker": "Deniz (GM)",
+      "text": "könnten hier sowas machen, Sekunde... Also"
+    },
+    {
+      "start": 6034.08,
+      "end": 6036.92,
+      "speaker": "Micha (Rotunas)",
+      "text": "eine Halbwand wahrscheinlich drüber. Warte, ist"
+    },
+    {
+      "start": 6039.74,
+      "end": 6043.28,
+      "speaker": "Deniz (GM)",
+      "text": "es möglich sowas aufs Dach zu stellen? Jaja, okay, perfekt."
+    },
+    {
+      "start": 6043.9,
+      "end": 6046.0,
+      "speaker": "Micha (Rotunas)",
+      "text": "Perfekt, dann brauchen wir nicht mal eine Palisade zu verschwenden."
+    },
+    {
+      "start": 6046.46,
+      "end": 6055.96,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Genau, dann kommen einfach zwei Tische hin oder... Ich hab jetzt noch sechs Palisaden. Wollen wir so einen Bunker hier hinten hin bauen, so gesehen, so einfach hier so..."
+    },
+    {
+      "start": 6058.12,
+      "end": 6068.82,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Warte mal, wie viel brauchen wir? 1, 2, 3, 4, 5. Und dann kann man hier reingehen und dann gibt es nur eine Öffnung. Ich weiß nicht, ob das sinnvoll ist."
+    },
+    {
+      "start": 6069.3,
+      "end": 6079.14,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ich glaube, das Problem ist halt, wenn du hier irgendeinen Kreis machst aus Palisaden, dann können die hier einfach dran vorbeilaufen."
+    },
+    {
+      "start": 6079.42,
+      "end": 6080.22,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ja, stimmt auch wieder."
+    },
+    {
+      "start": 6080.7,
+      "end": 6086.3,
+      "speaker": "Micha (Rotunas)",
+      "text": "So, dann brauchen die auch hier gar nicht mehr dran. Du musst diese Öffnung, also ab hier musst du eigentlich alles schließen."
+    },
+    {
+      "start": 6087.47,
+      "end": 6092.79,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ja, okay, dann machen wir da die sechs Palisaden, machen wir doch die sechs Palisaden hin. Also reden wir von..."
+    },
+    {
+      "start": 6092.79,
+      "end": 6094.65,
+      "speaker": "Deniz (GM)",
+      "text": "in"
+    },
+    {
+      "start": 6095.19,
+      "end": 6107.44,
+      "speaker": "Micha (Rotunas)",
+      "text": "die Richtung? Ja, warte. Ich würde aber vielleicht noch zwischen der Friedhof und Dings hier noch eine Palisade... Eine würde nicht reichen. Eine würde nicht reichen? Nein."
+    },
+    {
+      "start": 6110.35,
+      "end": 6111.25,
+      "speaker": "Deniz (GM)",
+      "text": "Können die sich auch irgendwann"
+    },
+    {
+      "start": 6111.25,
+      "end": 6113.54,
+      "speaker": "Benjamin (Valerie)",
+      "text": "durchbrechen? Man"
+    },
+    {
+      "start": 6113.54,
+      "end": 6115.96,
+      "speaker": "Deniz (GM)",
+      "text": "könnte eine Palisade nochmal an einen Tisch hinschieben."
+    },
+    {
+      "start": 6118.69,
+      "end": 6125.78,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ja, sonst nehmen wir einen Tisch oder so dahin noch. Okay. Jeder muss dem Dorf helfen. Da ist so wenig"
+    },
+    {
+      "start": 6125.78,
+      "end": 6140.01,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Platz da, da würde der Tisch vielleicht sogar reichen. Geh ich mal von aus. Ja. Also dann haben wir, wie viele 8 Palisaden hatten wir? 1, 2, 3, 4, 5, 6 haben wir jetzt verbraucht, dann würde ich hier noch 2 hinmachen."
+    },
+    {
+      "start": 6141.54,
+      "end": 6144.24,
+      "speaker": "Micha (Rotunas)",
+      "text": "Wohin? Hier noch 2 hinmachen. Ja, ja, ja, genau, genau, genau."
+    },
+    {
+      "start": 6144.34,
+      "end": 6146.04,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Vielleicht um die beiden Bäume noch zu verbinden."
+    },
+    {
+      "start": 6146.3,
+      "end": 6148.32,
+      "speaker": "Deniz (GM)",
+      "text": "4, 5, 6, ja 2 Stück haben wir noch."
+    },
+    {
+      "start": 6149.18,
+      "end": 6153.82,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Genau, die beiden Bäume verbinden, falls das nicht reicht, wir haben ja noch vom Schmied eine von diesen Spitzdingern."
+    },
+    {
+      "start": 6154.19,
+      "end": 6166.79,
+      "speaker": "Micha (Rotunas)",
+      "text": "Die können wir auch dahin als letztes aufbauen. Oder wir können die nochmal sicherheitshalber hierhin stellen. Also hier irgendwo diese Spitzdinger. Damit die wirklich dann nur hier durchlaufen. So, hier"
+    },
+    {
+      "start": 6166.79,
+      "end": 6176.36,
+      "speaker": "Deniz (GM)",
+      "text": "wolltet ihr... Was macht ihr da? Hab ich falsch gedrückt? So, also ihr meintet, ihr wollt... Äh... Hier"
+    },
+    {
+      "start": 6177.86,
+      "end": 6181.98,
+      "speaker": "Benjamin (Valerie)",
+      "text": "fallen sie an? Ja. Und dann noch eine daneben und dann... So."
+    },
+    {
+      "start": 6189.04,
+      "end": 6191.27,
+      "speaker": "Deniz (GM)",
+      "text": "Okay. Oh, und wohl..."
+    },
+    {
+      "start": 6191.79,
+      "end": 6197.96,
+      "speaker": "Micha (Rotunas)",
+      "text": "Wo ich stehe, halt dieser... Davon hab ich noch zwei Stück. Nein. Wir haben noch drei bekommen."
+    },
+    {
+      "start": 6198.28,
+      "end": 6199.3,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, einer steht ja schon da."
+    },
+    {
+      "start": 6200.34,
+      "end": 6202.3,
+      "speaker": "Micha (Rotunas)",
+      "text": "Jaja, und eins hier hin, wo ich stehe jetzt."
+    },
+    {
+      "start": 6202.48,
+      "end": 6204.64,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Und die andere... Hier."
+    },
+    {
+      "start": 6207.41,
+      "end": 6208.81,
+      "speaker": "Micha (Rotunas)",
+      "text": "Wie die andere? Wir haben drei."
+    },
+    {
+      "start": 6209.57,
+      "end": 6214.38,
+      "speaker": "Deniz (GM)",
+      "text": "Da noch eine hin, und die andere wohin? Da wo du stehst? Okay. Ja."
+    },
+    {
+      "start": 6215.76,
+      "end": 6217.9,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Sind vier geworden. Achso, okay."
+    },
+    {
+      "start": 6219.99,
+      "end": 6226.65,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Okay, um fair zu sein, hinten steht noch eine, aber ich finde die auch nicht so sinnvoll tatsächlich. Die kann"
+    },
+    {
+      "start": 6226.65,
+      "end": 6230.89,
+      "speaker": "Micha (Rotunas)",
+      "text": "man rausnehmen, die kann man wegmachen, jaja. So wie das jetzt aufgebaut ist."
+    },
+    {
+      "start": 6231.79,
+      "end": 6234.41,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Freche Dachse. Dann würde ich"
+    },
+    {
+      "start": 6234.41,
+      "end": 6237.11,
+      "speaker": "Micha (Rotunas)",
+      "text": "eine"
+    },
+    {
+      "start": 6237.11,
+      "end": 6254.81,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Falle hier hinsetzen, dass die, wenn die hier reinlaufen, ne? Eine von den Bärenfallen kommt auf jeden Fall hier hin. Eine würde ich hier in der Mitte lassen und eine hier zwischen, dass wenn die in die Lücken durchrennen, dass sie Angst haben, durch die Lücken zu rennen."
+    },
+    {
+      "start": 6255.37,
+      "end": 6287.65,
+      "speaker": "Deniz (GM)",
+      "text": "Also hier noch eine hin und dann die Ende weg hier vorne? So? Ja. Okay. Kann man die Fall noch irgendwie aktivieren? Die sind erst offen. Die müssen wir doch safe irgendwie aktivieren können. Jetzt ist die offen und dann schnappt die zu. Wir wissen, was gemeint ist."
+    },
+    {
+      "start": 6290.03,
+      "end": 6351.06,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, dann könnt ihr mir ja schon mal sagen, wo ihr die NPCs haben wollt. Die, die sich zum Kampf zur Verfügung stellen. Das ist einmal der Bogenschütze. Wieso krieg ich dich nicht aus dem Dreckshaus raus? Die wird kämpfen. Dann wird der Schmied kämpfen. Der hat eine Axt, eine Fette und ein Asteroid-Schild. Mein Gott, wieso? Das ist doch echt, echt die Türe aufmachen, wie nervig. So, den Schmied haben wir noch. Und natürlich die beiden Wachen. Ja, das wäre eure... und der Schmied hat gesagt, er kämpft auch mit."
+    },
+    {
+      "start": 6351.52,
+      "end": 6352.74,
+      "speaker": "Micha (Rotunas)",
+      "text": "Das wär's? Die"
+    },
+    {
+      "start": 6352.74,
+      "end": 6356.02,
+      "speaker": "Deniz (GM)",
+      "text": "Bauern würden auch mitkämpfen, aber die werden ihren Hof natürlich verteidigen."
+    },
+    {
+      "start": 6357.2,
+      "end": 6359.04,
+      "speaker": "Micha (Rotunas)",
+      "text": "Nee, nee, nee, nee, nee, nee."
+    },
+    {
+      "start": 6359.04,
+      "end": 6359.78,
+      "speaker": "Deniz (GM)",
+      "text": "Nee, nee, nee,"
+    },
+    {
+      "start": 6359.82,
+      "end": 6362.38,
+      "speaker": "Micha (Rotunas)",
+      "text": "die kommen nur hier hin. Alle kommen hier hin."
+    },
+    {
+      "start": 6364.16,
+      "end": 6371.48,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Wir bräuchten vielleicht noch, ich habe eine fette Armbrust, wenn jemand will, ich würde die abgeben. Also,"
+    },
+    {
+      "start": 6372.78,
+      "end": 6389.4,
+      "speaker": "Deniz (GM)",
+      "text": "auf jeden Fall nicht kämpfen werden die Frauen und Kinder. Ja, okay. Wer nicht kämpfen wird, ist, also die werden von mir aus, die Bauern stelle ich auch noch hier hin. Der besoffene Nip wird auch nicht kämpfen."
+    },
+    {
+      "start": 6390.1,
+      "end": 6391.26,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ja, was?"
+    },
+    {
+      "start": 6392.66,
+      "end": 6402.81,
+      "speaker": "Deniz (GM)",
+      "text": "Das ist kein Kämpfer. Auf einmal ist er so ein Großmeister. Der kommt am Ende so, wenn der Kampf in den letzten Zügen ist."
+    },
+    {
+      "start": 6403.35,
+      "end": 6408.59,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ja, wenn wir am verlieren sind, kommt er dann so besoffen. Drunken Monk ist das. Ja, Drunken Monk ist das."
+    },
+    {
+      "start": 6409.03,
+      "end": 6410.95,
+      "speaker": "Deniz (GM)",
+      "text": "So, das ist eure Armee."
+    },
+    {
+      "start": 6412.06,
+      "end": 6418.85,
+      "speaker": "Micha (Rotunas)",
+      "text": "Okay. Super, und jetzt müssen wir noch den Magier hinkriegen. Den"
+    },
+    {
+      "start": 6418.85,
+      "end": 6420.29,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Magier noch akquirieren. Der"
+    },
+    {
+      "start": 6420.29,
+      "end": 6435.85,
+      "speaker": "Deniz (GM)",
+      "text": "Magier ist leider nicht mehr zu akquirieren gerade. Denn eure Mission neigt sich dem Ende und dementsprechend ist das Questziel für heute erreicht. Wer"
+    },
+    {
+      "start": 6435.85,
+      "end": 6445.87,
+      "speaker": "Benjamin (Valerie)",
+      "text": "kann von denen allen noch, also ich will, die Bogenschützin kommt aufs Dach würde ich sagen, kann einer von den Wachen noch mit dem Bogen umgehen, Armbrust umgehen, ich hole meine Armbrust raus. Die beiden"
+    },
+    {
+      "start": 6445.87,
+      "end": 6452.63,
+      "speaker": "Deniz (GM)",
+      "text": "Wächter sollten auf jeden, hello Marco, also die beiden Wächter sollten auf jeden Fall Nahkampf machen, die sind die stärksten Nahkämpfer hier."
+    },
+    {
+      "start": 6455.13,
+      "end": 6457.71,
+      "speaker": "Deniz (GM)",
+      "text": "Der Wirt könnte noch schießen oder der Schmied?"
+    },
+    {
+      "start": 6459.06,
+      "end": 6467.65,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Der Wirt kriegt die Armbrust. Ich"
+    },
+    {
+      "start": 6467.65,
+      "end": 6473.18,
+      "speaker": "Deniz (GM)",
+      "text": "gebe euch die Figuren mal ganz kurz. Könnt ihr die bewegen? Ich"
+    },
+    {
+      "start": 6473.18,
+      "end": 6476.16,
+      "speaker": "Benjamin (Valerie)",
+      "text": "kann sie greifen, aber ich kann sie nicht bewegen."
+    },
+    {
+      "start": 6476.48,
+      "end": 6524.22,
+      "speaker": "Deniz (GM)",
+      "text": "Dann gebe ich die mal ganz kurz euch beiden. Dann dürft ihr die Figuren selber einmal ein bisschen bewegen. Wie ihr die haben wollt. Und die Dame. Wo ist die Dame hin? Da. Die Bogenschützin. Die kriegt... So, und den könnt ihr den Bogenschütz auch noch bewegen. Die Soldaten kann ich einfach da stehen lassen. Gib mal nochmal die Bogenschützen aus der Hand, äh die Bauern aus der Hand, wenn ihr die noch umstellen wollt. Ja. Ja, ist ein bisschen mühsam. Sagt mir einfach, wo die Bauern hin sollen. Ist ein bisschen mühsam, grad die an der Hand irgendwie umzustellen."
+    },
+    {
+      "start": 6524.98,
+      "end": 6531.89,
+      "speaker": "Micha (Rotunas)",
+      "text": "Stell mal einen Soldaten an den Baum. Auf der rechten Seite, genau da. Ja, genau da müssen"
+    },
+    {
+      "start": 6531.89,
+      "end": 6532.49,
+      "speaker": "Benjamin (Valerie)",
+      "text": "noch welche hin."
+    },
+    {
+      "start": 6532.87,
+      "end": 6543.9,
+      "speaker": "Micha (Rotunas)",
+      "text": "So, am besten an den Baum, damit man ihn nicht direkt sieht. Okay. Und den anderen Soldaten und den Schmied, die kannst du so lassen, meiner Meinung nach. Mhm."
+    },
+    {
+      "start": 6546.02,
+      "end": 6556.77,
+      "speaker": "Deniz (GM)",
+      "text": "Die drei Bauern? Ja. Direkt im Schlachtfeld. Nee, das ist die Death Zone."
+    },
+    {
+      "start": 6558.71,
+      "end": 6560.23,
+      "speaker": "Micha (Rotunas)",
+      "text": "Einen Bauern kannst du da lassen."
+    },
+    {
+      "start": 6560.9400000000005,
+      "end": 6563.38,
+      "speaker": "Deniz (GM)",
+      "text": "Nee, das macht er nicht. Da doch."
+    },
+    {
+      "start": 6563.91,
+      "end": 6566.8099999999995,
+      "speaker": "Micha (Rotunas)",
+      "text": "Der soll die Ablenkung sein. Das macht er nicht,"
+    },
+    {
+      "start": 6566.8099999999995,
+      "end": 6568.73,
+      "speaker": "Deniz (GM)",
+      "text": "Abi. Das macht er nicht. Sag ich dir jetzt schon."
+    },
+    {
+      "start": 6568.91,
+      "end": 6577.13,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Außer wir sagen ihm, sobald der Gegner sieht, soll er sich zurückziehen und die Gegner sollen denken, boah, leichte Beute hinterher. Das ist der"
+    },
+    {
+      "start": 6577.13,
+      "end": 6600.84,
+      "speaker": "Micha (Rotunas)",
+      "text": "Plan. Das ist der Plan, dass er halt läuft an der Falle vorbei, sozusagen, und die durch die Falle führt, aber selber an der Falle vorbei. So, der soll halt dieses... Ja, dann rennt er zurück. Genau. Okay. So. Ja, sonst passt das. Sonst passt, ja. Und der läuft dann einfach zu den Mieter und Dings zu einer der Wachen hier."
+    },
+    {
+      "start": 6601.53,
+      "end": 6620.35,
+      "speaker": "Deniz (GM)",
+      "text": "Okay. Dann würde ich sagen, habt ihr die Vorbereitung für die nächste Mission gesetzt. Und jetzt, ja, müssen wir nur noch hoffen, dass euer Plan aufgeht und die Falle zuschnappt. Oh shit, wenn die von hinten kommen, sind wir so am Arsch."
+    },
+    {
+      "start": 6623.85,
+      "end": 6638.79,
+      "speaker": "Deniz (GM)",
+      "text": "Aber damit endet der Tag auch. Ihr legt euch zu Bett und schickt vielleicht noch eine Nachricht zur Gilde, dass ihr Support braucht fürs nächste Mal. Und ja, damit sind wir für den heutigen Tag auch durch."
+    },
+    {
+      "start": 6639.25,
+      "end": 6642.85,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ach schade, ich dachte, wir können schnell noch das Haus plündern von dem alten Händler."
+    },
+    {
+      "start": 6643.11,
+      "end": 6651.85,
+      "speaker": "Deniz (GM)",
+      "text": "Nein, der Tag ist vorüber. Es ist ja auch noch eigentlich Nacht. Deswegen habe ich das nur schon mal aufgebaut fürs nächste Mal. Ich kann schon mal hier ein bisschen noch..."
+    },
+    {
+      "start": 6654.59,
+      "end": 6663.4,
+      "speaker": "Deniz (GM)",
+      "text": "Das wird praktisch so sein, wenn der Angriff kommt."
+    },
+    {
+      "start": 6680.0599999999995,
+      "end": 6700.51,
+      "speaker": "Deniz (GM)",
+      "text": "Ich danke aber dafür."
+    },
+    {
+      "start": 6707.25,
+      "end": 6823.15,
+      "speaker": "Deniz (GM)",
+      "text": "Bin beim nächsten Mal besser dran. Ja, Sanji, beim nächsten Mal darfst du gerne, wenn der Goblin-Angriff passiert, gerne ein bisschen mehr Goblin-God spielen und das geht natürlich auch für alle anderen. Aber ansonsten haben sich unsere beiden Magier sehr gut geschlagen. Der Einzige, den sie jetzt nicht akquirieren konnten, ist der Magier per se, der Menschenmagier, aber vielleicht gebe ich ja nochmal ein paar Minuten vorher, bevor es beim nächsten Mal anfängt. Aber ja, es gibt demnächst mal wieder zwei Missionen tatsächlich. Das heißt, es wird eine Parallelmission stattfinden. Also das heißt, wenn die Wahl auf die andere Mission fällt, wird etwas Parallel vorhin noch passieren. Ansonsten werden wir nicht die Schlacht, aber den Kampf auf jeden Fall, wie sagt man das, spielen. Ausspielen. Okay, ich habe hier gerade, Sanji sagt gerade, raiden mal... JustMerlet. Okay, ich habe noch nie geradet, ich habe keine Ahnung wie das geht, aber gerne. Warte, wir können ja mal kurz schauen. Ja, wie rade ich denn irgendwen? Tja, Profi und so, wie ist das? Ich gehe wahrscheinlich erstmal auf, ja, auf, auf. Okay, okay, okay, okay, okay. Leute, ich kriege das hin, ich kriege das hin. Home? Schaust aus. Okay, so, und jetzt suche ich mir meine Streaming-Leute. Wo sehe ich denn überhaupt, wo sehe ich Stream-Manager, Community, Content? Wo sehe ich denn, wem ich folge? Boah, hier, Sansi, du gibst mir eine Aufgabe. Ah, ich habe mal was mehr gefunden. Okay, da steht jetzt Knock. Knock to ask Merlet to collaborate? Das ist es ja wahrscheinlich nicht. Wie rate ich die denn?"
+    },
+    {
+      "start": 6823.76,
+      "end": 6828.54,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Du kannst eingeben slash raid, gefolgt von dem Namen des zu raidenden Kanals."
+    },
+    {
+      "start": 6830.5599999999995,
+      "end": 6843.66,
+      "speaker": "Deniz (GM)",
+      "text": "Raid incoming? Was? Ich bin froh, dass Sabo und Koala angekommen sind. Wen kennenlernen? Raid incoming? Okay, warte, was hast du gesagt, Benjamin? Was muss ich machen?"
+    },
+    {
+      "start": 6844.61,
+      "end": 6852.51,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Also ich habe gerade gegoogelt, da steht jetzt drin, du gibst slash raid, also R-A-I-D und dann gefolgt von dem Namen des Kanals, den du raiden willst."
+    },
+    {
+      "start": 6858.66,
+      "end": 6875.57,
+      "speaker": "Deniz (GM)",
+      "text": "Ich bin so ein Bot. Könnte sein. Oh Mann, Leute, was macht ihr hier mit mir? Let's just, just. Aber jetzt wird mir der Name nicht angezeigt. Muss ich hier ein Hashtag oder sowas angeben?"
+    },
+    {
+      "start": 6876.95,
+      "end": 6878.75,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Weiß ich nicht. Hier steht nicht dabei."
+    },
+    {
+      "start": 6880.08,
+      "end": 6921.4,
+      "speaker": "Deniz (GM)",
+      "text": "Es gibt auch keinen Raid-Befehl tatsächlich. Es gibt Unblock, Block. Nee. Vielleicht muss man auch dafür schon erst 50 Abonnenten haben. Also vielleicht brauche ich einfach noch... Einabonnieren. nochmal hier rein abonnieren, genau. Aber ansonsten könnt ihr einfach mal rüber zu JustMerlet schauen. Ich versuch's nochmal, Just... Just-Merlet. Okay, der Befehl ging raus, aber es ist ein X passiert? Also, wir sind nicht geswitcht, geh ich mal von aus, also... Aber"
+    },
+    {
+      "start": 6922.2,
+      "end": 6925.74,
+      "speaker": "Micha (Rotunas)",
+      "text": "hat dein... Was benutzt du, OBS oder so? Ja, ich benutze OBS,"
+    },
+    {
+      "start": 6925.78,
+      "end": 6975.1,
+      "speaker": "Deniz (GM)",
+      "text": "aber ich hab auch den Twitch-Set offen nebenbei, also... Eigentlich kann ich mal ganz kurz zeigen, was hier abgeht. So, hier sind wir bei JustMerlet am Start. Und ich mach mal ein bisschen größer, es ist noch sehr klein vom Stream selber. Schade, dass ich leider nicht. Aber, kann ich jetzt irgendwie hier raiden? Report, report, wir können die reporten, Leute, let's go. Massenreports. Und es gibt hier noch, oder haben die vielleicht verboten zu raiden? Nee, wahrscheinlich nicht, ne? Ask to join stream anytime gibt's, was ist das denn, Sanji? Twitter. Ask. Hier gibt's Ask to join the stream anytime. Ist das das vielleicht? Nee, ich kann mir nicht vorstellen. Ich wurde noch nie gefragt, ob ich irgendwo, ob man mich raiden darf."
+    },
+    {
+      "start": 6975.68,
+      "end": 6978.3,
+      "speaker": "Micha (Rotunas)",
+      "text": "So, ja, true. Warte,"
+    },
+    {
+      "start": 6978.4,
+      "end": 6997.5599999999995,
+      "speaker": "Deniz (GM)",
+      "text": "warte. Nicht das machen. Nicht das machen. Okay, okay, ja. Hallo Dennis. Wieso, hallo Dennis. Wieso klappt das denn nicht? Wie schade ist das denn?"
+    },
+    {
+      "start": 6999.01,
+      "end": 7003.43,
+      "speaker": "Benjamin (Valerie)",
+      "text": "Ich hab's auch gerade eingegeben, einfach mal unten in den Chat, aber... Dann"
+    },
+    {
+      "start": 7003.53,
+      "end": 7026.23,
+      "speaker": "Deniz (GM)",
+      "text": "streamst mit denen. Ah, okay, verstehe. Ja gut, Leute, dann, wenn ihr noch Bock habt, hier rein zu joinen, da sind auf jeden Fall zwei sehr süße Dudes, kann man sich geben. Ich glaub, da waren ne zwei bei. Es wird auf jeden Fall Pokémon gesuchtet. Sehr sympathisch, gönnt euch einfach. Vielleicht können wir ja bei 50 Abonnenten dann nochmal den Try versuchen."
+    },
+    {
+      "start": 7026.7,
+      "end": 7038.16,
+      "speaker": "Micha (Rotunas)",
+      "text": "Warte mal kurz, ich versuch noch mal was, bevor du es beendest, okay? Okay, ja. Moment, wenn man das so macht..."
+    },
+    {
+      "start": 7038.16,
+      "end": 7047.1,
+      "speaker": "Deniz (GM)",
+      "text": "Oder muss ich vielleicht auf meinen Stream Manager gehen? Und dann was anderes? Hello Cookie!"
+    },
+    {
+      "start": 7047.6,
+      "end": 7049.7,
+      "speaker": "Micha (Rotunas)",
+      "text": "Kannst du das..."
+    },
+    {
+      "start": 7049.79,
+      "end": 7059.41,
+      "speaker": "Deniz (GM)",
+      "text": "Wahrscheinlich vielleicht Dashboard? Stream Manager? Und dann... Invite Guests? Ich habe keinen"
+    },
+    {
+      "start": 7059.41,
+      "end": 7068.24,
+      "speaker": "Micha (Rotunas)",
+      "text": "Plan. Kannst du das genau so eingeben? Oder hast du das genau so eingeben? Was denn? In deinem Twitch Chat. In"
+    },
+    {
+      "start": 7068.24,
+      "end": 7083.05,
+      "speaker": "Deniz (GM)",
+      "text": "meinem Twitch Chat? Ja, in deinem Chat. Ich sehe nicht, was du mir... Ich habe das in die Discord eingeschrieben. Raid? Ja, das habe ich genau so eingegeben. Ich kopiere das gerne nochmal. Und dann mache ich Raid Just Mallet. Und dann..."
+    },
+    {
+      "start": 7084.55,
+      "end": 7086.71,
+      "speaker": "Micha (Rotunas)",
+      "text": "Da ist es! Doch, da ist es auch."
+    },
+    {
+      "start": 7087.37,
+      "end": 7089.27,
+      "speaker": "Deniz (GM)",
+      "text": "Leute, jetzt hat es noch funktioniert. Nevermind."
+    },
+    {
+      "start": 7090.71,
+      "end": 7095.91,
+      "speaker": "Micha (Rotunas)",
+      "text": "Ja, vielleicht ein paar Tipps oder sowas. Aber du musst halt wirklich alle Sonderzeichen, alle Groß-Klein-Busch haben."
+    },
+    {
+      "start": 7096.47,
+      "end": 7101.39,
+      "speaker": "Deniz (GM)",
+      "text": "Das wusste ich nicht. Okay, okay, okay, okay. Schnell, ich will sehen, wie die reagieren. Ich hab keine Ahnung."
+    },
+    {
+      "start": 7102.42,
+      "end": 7104.22,
+      "speaker": "Micha (Rotunas)",
+      "text": "Du musst sowieso dann den Stream beenden."
+    },
+    {
+      "start": 7105.6900000000005,
+      "end": 7116.64,
+      "speaker": "Deniz (GM)",
+      "text": "Ah, ja, ich seh's. Okay. Dann, äh, tschau tschau, Leute. Boah, da bin ich ja richtig Bott hier drin."
+    }
+  ]
+}

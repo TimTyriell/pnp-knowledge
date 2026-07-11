@@ -15,7 +15,7 @@ from pnp_graph.chunking import parse_speaker, session_cast
 from pnp_graph.resolve import (Resolver, is_out_of_world, map_predicate, normalize,
                                normalize_confidence, resolve_graph, slug)
 from pnp_graph.schema import (Character, Decision, Event, Faction, GraphExtraction, Item,
-                              Relationship, RollEvent, RuleEntity, Trait)
+                              Location, Relationship, RollEvent, RuleEntity, Trait)
 from pnp_graph.srd import SrdIndex
 
 CAST_LABELS = ["Tim (Lindo Laut)", "Marco (Dodo)", "Celin (Cookie)", "Deniz (GM)"]
@@ -422,6 +422,40 @@ def test_rule_subtype_clamp():
     assert sum(1 for d in resolved["dropped"] if d["reason"] == "off-enum rule subtype") == 2
     # SRD alias resolved to the shared Long Rest node, no per-session mint
     assert not any("tendtoallwounds" in i.lower() for i in ids)
+
+
+def test_cross_type_collision_first_seen_wins():
+    # run-2/3 QA blocker: 'Auftraggeber' extracted as Location in one chunk and
+    # Faction in another must become ONE node (first-seen type, unioned
+    # evidence), with no second registry mint. Registry-level same-name across
+    # types (test_resolve_never_crosses_type) stays legal — this guard is
+    # session-scoped only.
+    resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
+    r = _tmp_resolver()
+    info = _cast_info(r)
+    extraction = GraphExtraction(
+        locations=[Location(name="Auftraggeber")],   # processed before factions
+        factions=[Faction(name="Auftraggeber")],
+    )
+    evidence = {("locations", "Auftraggeber"): [2], ("factions", "Auftraggeber"): [7]}
+    resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1, evidence=evidence)
+    hits = [e for e in resolved["entities"]
+            if normalize(e["props"].get("name", "")) == "auftraggeber"]
+    assert len(hits) == 1
+    assert hits[0]["type"] == "Location"  # first-seen wins
+    assert hits[0]["props"]["evidence_chunks"] == [2, 7]  # evidence unioned
+    assert "FACTION_Auftraggeber" not in r.registry["factions"]  # no second mint
+
+
+def test_pc_never_duplicated_as_location():
+    # baseline run 1 had CHAR_Esterossa AND LOC_Esterossa — same guard covers it:
+    # a Location whose surface matches a cast character reuses the character id.
+    resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
+    r = _tmp_resolver()
+    info = _cast_info(r)
+    extraction = GraphExtraction(locations=[Location(name="Cookie")])
+    resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1)
+    assert not any(e["id"].startswith("LOC_Cookie") for e in resolved["entities"])
 
 
 def test_registry_write_back():

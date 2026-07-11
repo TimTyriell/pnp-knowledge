@@ -56,12 +56,286 @@
         "Frosch",
         "der Ranger"
       ]
+    },
+    "CHAR_Monster": {
+      "canonical": "Monster",
+      "aliases": []
+    },
+    "CHAR_Chicken": {
+      "canonical": "Chicken",
+      "aliases": []
+    },
+    "CHAR_Ausrufezeichen": {
+      "canonical": "Ausrufezeichen",
+      "aliases": []
+    },
+    "CHAR_Kieler": {
+      "canonical": "Kieler",
+      "aliases": []
     }
   },
-  "locations": {},
-  "items": {},
-  "quests": {},
-  "events": {},
-  "factions": {},
-  "rules": {}
+  "locations": {
+    "LOC_LocationWithTheCauldron": {
+      "canonical": "The location with the cauldron (implied by context)",
+      "aliases": []
+    },
+    "LOC_Wald": {
+      "canonical": "Wald",
+      "aliases": []
+    },
+    "LOC_Baeume": {
+      "canonical": "Bäume",
+      "aliases": []
+    },
+    "LOC_Baum": {
+      "canonical": "Baum",
+      "aliases": []
+    },
+    "LOC_Scene": {
+      "canonical": "The Scene (Ambient Location)",
+      "aliases": []
+    },
+    "LOC_MonsterSLair": {
+      "canonical": "The Monster's Lair (implied by context)",
+      "aliases": []
+    },
+    "LOC_MonsterSLocation": {
+      "canonical": "The Monster's Location (implied by context)",
+      "aliases": []
+    },
+    "LOC_LocationWhereTheMonsterWasDefeated": {
+      "canonical": "The location where the monster was defeated",
+      "aliases": []
+    },
+    "LOC_BattlefieldWhereTheMonsterWasDefeated": {
+      "canonical": "The battlefield where the monster was defeated",
+      "aliases": []
+    },
+    "LOC_Ortschaft": {
+      "canonical": "Ortschaft",
+      "aliases": []
+    },
+    "LOC_Camp": {
+      "canonical": "Camp",
+      "aliases": []
+    }
+  },
+  "items": {
+    "ITEM_Cauldron": {
+      "canonical": "Cauldron (Pott)",
+      "aliases": []
+    },
+    "ITEM_Scroll": {
+      "canonical": "Scroll (Schriftrolle)",
+      "aliases": []
+    },
+    "ITEM_Breitschwert": {
+      "canonical": "Breitschwert",
+      "aliases": []
+    },
+    "ITEM_Ruestung": {
+      "canonical": "Rüstung",
+      "aliases": []
+    },
+    "ITEM_Schild": {
+      "canonical": "Schild",
+      "aliases": []
+    },
+    "ITEM_Rapier": {
+      "canonical": "Rapier",
+      "aliases": []
+    },
+    "ITEM_BardSMelody": {
+      "canonical": "Bard's Melody",
+      "aliases": []
+    },
+    "ITEM_Bogen": {
+      "canonical": "Bogen (Bow)",
+      "aliases": []
+    },
+    "ITEM_Brieftasche": {
+      "canonical": "Brieftasche",
+      "aliases": []
+    },
+    "ITEM_Schriftrolle": {
+      "canonical": "Schriftrolle",
+      "aliases": []
+    },
+    "ITEM_Kessel": {
+      "canonical": "Kessel",
+      "aliases": []
+    },
+    "ITEM_Beschwoerungsfluessigkeit": {
+      "canonical": "Beschwörungsflüssigkeit",
+      "aliases": []
+    }
+  },
+  "quests": {
+    "QUEST_PerformingARitual": {
+      "canonical": "Performing a ritual (Explosions-Magie-Ding)",
+      "aliases": []
+    },
+    "QUEST_SavingTheWorld": {
+      "canonical": "Saving the World",
+      "aliases": []
+    },
+    "QUEST_DefeatingTheMonster": {
+      "canonical": "Defeating the Monster",
+      "aliases": []
+    },
+    "QUEST_Monsterjagd": {
+      "canonical": "Monsterjagd",
+      "aliases": []
+    },
+    "QUEST_SpurDerNachrichtFolgen": {
+      "canonical": "Spur der Nachricht folgen",
+      "aliases": []
+    },
+    "QUEST_BelohnungAbholen": {
+      "canonical": "Belohnung abholen",
+      "aliases": []
+    }
+  },
+  "events": {
+    "EVT_DodoMovesTheCauldron": {
+      "canonical": "Dodo moves the cauldron",
+      "aliases": []
+    },
+    "EVT_LindoLautPreparesToPerformARitual": {
+      "canonical": "Lindo Laut prepares to perform a ritual",
+      "aliases": []
+    },
+    "EVT_LindoLautUsesRallyFeature": {
+      "canonical": "Lindo Laut uses Rally feature",
+      "aliases": []
+    },
+    "EVT_RitualPerformanceBegins": {
+      "canonical": "Ritual performance begins",
+      "aliases": []
+    },
+    "EVT_LindoLautAttemptsToReciteTheScrollIncorrectly": {
+      "canonical": "Lindo Laut attempts to recite the scroll incorrectly",
+      "aliases": []
+    },
+    "EVT_ChickenEmergesFromTheBushes": {
+      "canonical": "Chicken Emerges from the Bushes",
+      "aliases": []
+    },
+    "EVT_DragonbornChargesAtChicken": {
+      "canonical": "Dragonborn Charges at Chicken",
+      "aliases": []
+    },
+    "EVT_DragonbornLandsAHitOnChicken": {
+      "canonical": "Dragonborn Lands a Hit on Chicken",
+      "aliases": []
+    },
+    "EVT_DodoAttacksTheMonsterAndSeversATentacle": {
+      "canonical": "Dodo attacks the monster and severs a tentacle",
+      "aliases": []
+    },
+    "EVT_AusrufezeichenSuccessfullyDamagesTheMonsterAndSeversATentacle": {
+      "canonical": "Ausrufezeichen successfully damages the monster and severs a tentacle",
+      "aliases": []
+    },
+    "EVT_LindoLautPlaysAProvokingSong": {
+      "canonical": "Lindo Laut plays a provoking song",
+      "aliases": []
+    },
+    "EVT_MonsterAttacksLindoLaut": {
+      "canonical": "Monster attacks Lindo Laut",
+      "aliases": []
+    },
+    "EVT_DodoUsesIAmYourShield": {
+      "canonical": "Dodo uses I Am Your Shield",
+      "aliases": []
+    },
+    "EVT_DodoTakes3HPDamageFromAnAttack": {
+      "canonical": "Dodo takes 3 HP damage from an attack",
+      "aliases": []
+    },
+    "EVT_CookieObservesAndWaitsForTheirTurn": {
+      "canonical": "Cookie observes and waits for their turn",
+      "aliases": []
+    },
+    "EVT_DodoTakes3Damage": {
+      "canonical": "Dodo takes 3 damage",
+      "aliases": []
+    },
+    "EVT_CookieAttacksTheMonsterFromTheTree": {
+      "canonical": "Cookie attacks the monster from the tree",
+      "aliases": []
+    },
+    "EVT_CookieChoosesToStayHiddenInTheTree": {
+      "canonical": "Cookie chooses to stay hidden in the tree",
+      "aliases": []
+    },
+    "EVT_GoblinDragonbornHealsDodo": {
+      "canonical": "Goblin-Dragonborn heals Dodo",
+      "aliases": []
+    },
+    "EVT_DodoDecidesToFinishTheMonster": {
+      "canonical": "Dodo decides to finish the monster",
+      "aliases": []
+    },
+    "EVT_LindoLautUsesInspiringWords": {
+      "canonical": "Lindo Laut uses Inspiring Words",
+      "aliases": []
+    },
+    "EVT_CookieUsesBogenToAttackTheMonster": {
+      "canonical": "Cookie uses Bogen to attack the monster",
+      "aliases": []
+    },
+    "EVT_MonsterIsDefeated": {
+      "canonical": "Monster is defeated",
+      "aliases": []
+    },
+    "EVT_MonsterSFinalBreath": {
+      "canonical": "Monster's Final Breath",
+      "aliases": []
+    },
+    "EVT_MonsterSLastBreath": {
+      "canonical": "Monster's Last Breath",
+      "aliases": []
+    },
+    "EVT_MonsterSDeathAndBattlefieldNormalization": {
+      "canonical": "Monster's Death and Battlefield Normalization",
+      "aliases": []
+    },
+    "EVT_MonsterWithABrieftascheLikeItemFound": {
+      "canonical": "Monster with a Brieftasche-like Item Found",
+      "aliases": []
+    },
+    "EVT_DecisionToRetrieveRewardBeforeFollowingTheSpurDerNachricht": {
+      "canonical": "Decision to Retrieve Reward Before Following the Spur der Nachricht",
+      "aliases": []
+    },
+    "EVT_EndOfFirstAdventure": {
+      "canonical": "End of First Adventure",
+      "aliases": []
+    },
+    "EVT_LongRestCompletion": {
+      "canonical": "Long Rest Completion",
+      "aliases": []
+    },
+    "EVT_EndOfFirstSession": {
+      "canonical": "End of First Session",
+      "aliases": []
+    }
+  },
+  "factions": {
+    "FACTION_Auftraggeber": {
+      "canonical": "Auftraggeber",
+      "aliases": []
+    }
+  },
+  "rules": {
+    "RULE_CLASSFEATURE_MegaCloseTarget": {
+      "canonical": "Mega Close Target",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_TemporaryVulnerable": {
+      "canonical": "Temporary Vulnerable",
+      "aliases": []
+    }
+  }
 }

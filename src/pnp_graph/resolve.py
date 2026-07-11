@@ -348,6 +348,19 @@ def resolve_graph(
         return sorted(set(evidence.get((field, key), [])))
 
     def register(surface: str, type_: str, props: dict, chunks: list[int]) -> str:
+        # Cross-type collision guard (run-2/3 QA blocker): the model naming the
+        # same thing as Faction in one chunk and Location in another is ONE
+        # entity (FACTION_/LOC_Auftraggeber, CHAR_/LOC_Esterossa). If this
+        # surface already resolved to an entity THIS SESSION — any type —
+        # reuse it: first-seen type wins, evidence unions, no second mint.
+        # Session-scoped on purpose: registry-wide same-name-across-types
+        # stays legal (Daggerheart the Location vs. Daggerheart the Faction).
+        prior = surface_to_id.get(normalize(surface))
+        prior = reroute.get(prior, prior)  # player surfaces land on their character
+        if prior and prior in entities:
+            if chunks:
+                add_entity(prior, entities[prior]["type"], {"evidence_chunks": chunks})
+            return prior
         eid = resolver.resolve(surface, type_)
         if eid.startswith("PLAYER_"):  # model coined a player's name as an entity
             eid = reroute.get(eid, eid)

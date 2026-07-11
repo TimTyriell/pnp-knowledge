@@ -1,0 +1,4258 @@
+{
+  "video_file": "2025-04-01_RF_LZIuUzc3F18.mp3",
+  "video_date": "2025-04-01",
+  "video_url": "https://www.youtube.com/watch?v=LZIuUzc3F18",
+  "video_title": "Daggerheart & Tale Spire | #daggerheart #talespire #ttrpg #vtt",
+  "whisper_model": "large-v3",
+  "language": "de",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 205.36,
+      "speaker": "Deniz (GM)",
+      "text": "Ich habe den kompletten Stream neu angepasst. Vielleicht geht es um einen Qualitätsunterschied? Who knows? Wir wissen das nicht. Schauen wir mal. Beides. Lass uns doch mal schauen. Guck mal, es ist live auf jeden Fall. Und die Qualität sieht besser aus als sonst. Könnte man das behaupten? Sieht ganz gut aus. Seht ihr, ich habe ganz süß die Logos hingepackt. Basti hat einen Anime-Charakter. Ich dachte mir, das ist ganz süß. Ja, ich habe heute was anderes gemacht. Vielleicht liegt es daran. Hallo Sanji, schön dich zu sehen. Wie geht's dir? Ja, willkommen zurück zu Dwarf Masters. Heute mit am Team wieder die liebe Cookie, der Marco und der Basti. Benjamin schafft es heute leider nicht. aus zeitlichen Gründen, aber das soll uns keinen abtun. Wir haben letzte Woche ja auch zu dritt gespielt, beziehungsweise drei Spieler. Mission des Tages ist, also die Spieler durften sich an der Auswahl treffen. Es gab die Möglichkeit zwischen einem Dungeon mit einem Mad Mage oder unser kleines Goblindorf ausräuchern und die Gruppe hat sich für den sadistischen Weg entschieden und wollen jetzt die Goblin-Armee platt machen. Wobei man dann muss man dazu sagen, Celin hat sich kurz am Anfang dagegen entschieden. Okay, warte, man hört euch alle nicht. Ja, scheiße, ich mach das kurz. Ja, ja, ja, ja, ist ja gleich. So, jetzt sag mal was. Hallo. Hallo. Supi, supi, supi, das freut mich. Jetzt funktioniert's. Ich bin dem Con-Blues erlegen, aber sonst gut uns selbst. Ah ja, stimmt, die FBM war jetzt gerade der letzte oder LBM. Also man hat was cooles entdeckt. Aber okay, storytechnisch easy. Ich würde sagen, wenn keine Fragen mehr sind, fangen wir einfach an und ich mache die kleine Einleitung. Ja. Okay. Ihr müsst euch vorstellen, ihr habt beim ersten Mal eure Mission erledigt. Ihr habt... eine komische Kreatur im Wald getroffen und habt diese ohne wirkliche Probleme besiegt und seid zurück in die Stadt, habt eure Belohnung entgegengenommen und seid jetzt auf dem Weg einen neuen Auftrag entgegenzunehmen. Ihr dachtet euch, ein paar Goblins sollte kein Problem sein, also gehen wir einfach hin und fetzen ein ganzes Dorf. Ihr habt Zwei Stunden Zeit, das Dorf zu finden und eure Mission zu erfüllen, ansonsten gilt diese Mission als Misserfolg. Hallo Benjamin. Also, ihr dürft euch erstmal gerne frei bewegen, bitte aber nicht direkt quer über die Map, einfach Schritt für Schritt fortbewegen. Dieses Mal..."
+    },
+    {
+      "start": 205.36,
+      "end": 212.73,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ja, erzähl. Dann würde ich mal sagen, der Tank geht vor, ne? Ich folge dir auf Schritt und Tritt oder fliege dir auf Schritt und Tritt."
+    },
+    {
+      "start": 214.23,
+      "end": 217.95,
+      "speaker": "Celin (Cookie)",
+      "text": "Du kannst fliegen, also du fliegst eigentlich. Ja, du siehst,"
+    },
+    {
+      "start": 218.01,
+      "end": 219.91,
+      "speaker": "Deniz (GM)",
+      "text": "er hat ja auch ziemlich große Flügel."
+    },
+    {
+      "start": 220.57,
+      "end": 225.27,
+      "speaker": "Celin (Cookie)",
+      "text": "Flügel, ja. Er hat auch Beine, also er kann auch laufen. Fair, fair,"
+    },
+    {
+      "start": 225.35,
+      "end": 226.29,
+      "speaker": "Deniz (GM)",
+      "text": "guter Punkt, guter Punkt."
+    },
+    {
+      "start": 227.05,
+      "end": 230.31,
+      "speaker": "Celin (Cookie)",
+      "text": "Leute, seid mal nicht so schnell wieder, ich bin ja ein kleiner Frosch."
+    },
+    {
+      "start": 231.95,
+      "end": 268.01,
+      "speaker": "Deniz (GM)",
+      "text": "Also ihr habt euch einen langen Weg aufgetan und als ihr um die Ecke kommt, bleibt mal da vorne an der Ecke stehen. Habt ihr das erste Mal den Blick und merkt halt so, es wird immer sumpfiger. Das erste kleine Wasserabschnitte und die Bäume werden ermodrig und das ganze Gebiet ist sehr feucht und nass und es ist undurchsichtig. Man sieht zwar recht, recht weit, es ist nicht sehr nebelig, aber man muss aufpassen, wohin man tritt."
+    },
+    {
+      "start": 270.64,
+      "end": 274.76,
+      "speaker": "Deniz (GM)",
+      "text": "Benjamin ist heute absolut Team Goblin, okay. Ey."
+    },
+    {
+      "start": 275.46,
+      "end": 283.33,
+      "speaker": "Celin (Cookie)",
+      "text": "Ich kann tatsächlich ganz gut sehen. Wollen wir mal stehen bleiben? Leute, wo seid ihr denn jetzt schon wieder? Ich seh euch nicht."
+    },
+    {
+      "start": 283.71,
+      "end": 284.53,
+      "speaker": "Deniz (GM)",
+      "text": "Wo seid ihr"
+    },
+    {
+      "start": 284.53,
+      "end": 287.01,
+      "speaker": "Celin (Cookie)",
+      "text": "denn jetzt schon wieder hin, Leute? Ribbit,"
+    },
+    {
+      "start": 287.17,
+      "end": 303.92,
+      "speaker": "Deniz (GM)",
+      "text": "Ribbit. Stimmt, die Frösche heißen Ribbits. So, jetzt dürft ihr mal alle drei einen Wahrnehmungswurf machen. Das ist bei euch Instinkt. Also einmal Leertaste drücken, zwei W12 nehmen und einmal würfeln. Wir fangen mal mit dir an, Basti. Ich hab schon."
+    },
+    {
+      "start": 304.86,
+      "end": 305.86,
+      "speaker": "Basti (Esterossa)",
+      "text": "11 und 4."
+    },
+    {
+      "start": 306.42,
+      "end": 349.38,
+      "speaker": "Deniz (GM)",
+      "text": "Wichtig! Ne, es wird zusammengerechnet, das sind die 14, aber du hast deinen Hope die war niedriger, also der 4 da. Ich kriege einen 4-Punkt, das mache ich mir hier heute mit ein paar kleinen Plättchen. Aber du guckst dir mal so ein bisschen die Umgebung an und du siehst jetzt schon, weil du so ein bisschen vielleicht über den anderen schwebst, vor euch ist ein kleines Lager und Du bist hier nicht ganz sicher, aber das Feuer brennt und du nimmst so einen ekelhaften Geruch wahr. Machen wir weiter mit dir, Dodo. Sind die gerade abgesoffen, die beiden Würfel? Ah, gleich auf oben, schön. Schön, ich komme"
+    },
+    {
+      "start": 349.38,
+      "end": 350.06,
+      "speaker": "Basti (Esterossa)",
+      "text": "dann hier wieder."
+    },
+    {
+      "start": 351.52,
+      "end": 380.4,
+      "speaker": "Deniz (GM)",
+      "text": "Du bist tatsächlich ein bisschen niedriger und hast vielleicht ein bisschen bessere Augen gerade, aber auch du nimmst einfach nur dieses Feuer in der Ferne wahr. Den leichten beißenden Geruch und vielleicht siehst du sogar, dass da vielleicht einige Leute sitzen. Kann das sein? Cookie, würfel du mal bitte einen Instinktwurf. Also Leertaste. Genau, zwei mal draufdrücken und dann einfach ins Bild schmeißen."
+    },
+    {
+      "start": 381.12,
+      "end": 383.14,
+      "speaker": "Celin (Cookie)",
+      "text": "Ich hab auch noch Instinkt plus eins. Guck mal,"
+    },
+    {
+      "start": 383.14,
+      "end": 415.53,
+      "speaker": "Deniz (GM)",
+      "text": "jetzt hast du, der Hope-Dial ist bei uns der linke Dial, also hast du einen höher, deswegen darfst du dir jetzt einen Hope mehr aufschreiben. Alright. Also ich hab jetzt 17. 17, ja warte. Wir müssen ganz kurz hier was switchen. Du guckst ein bisschen weiter. Deine Augen sind tatsächlich ziemlich gut. Und du erkennst sofort, da hinten sind Leichen. Und das scheint erst vor kurzem passiert zu sein. Gut,"
+    },
+    {
+      "start": 417.42,
+      "end": 418.14,
+      "speaker": "Celin (Cookie)",
+      "text": "das ist ein bisschen gruselig."
+    },
+    {
+      "start": 419.36,
+      "end": 424.42,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ja, dann würde ich mal sagen, machen wir uns bereit. Ja, let's"
+    },
+    {
+      "start": 424.42,
+      "end": 426.42,
+      "speaker": "Celin (Cookie)",
+      "text": "go, oder? Marco, gehst du vor?"
+    },
+    {
+      "start": 428.4,
+      "end": 429.14,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ich will jetzt"
+    },
+    {
+      "start": 429.14,
+      "end": 430.6,
+      "speaker": "Celin (Cookie)",
+      "text": "eigentlich nicht vor."
+    },
+    {
+      "start": 430.94,
+      "end": 432.84,
+      "speaker": "Basti (Esterossa)",
+      "text": "Celin, willst du ein bisschen auf Range bleiben?"
+    },
+    {
+      "start": 433.94,
+      "end": 437.12,
+      "speaker": "Celin (Cookie)",
+      "text": "Ich kann gut ausweichen, also ich bleibe in der Nähe."
+    },
+    {
+      "start": 440.44,
+      "end": 445.76,
+      "speaker": "Deniz (GM)",
+      "text": "Warte mal, genau. Als ihr näher geht, hört ihr plötzlich Geräusche aus dem rechten Zelt."
+    },
+    {
+      "start": 447.64,
+      "end": 453.58,
+      "speaker": "Celin (Cookie)",
+      "text": "Ich finde es ein bisschen gemein, wenn ihr immer so mit..."
+    },
+    {
+      "start": 454.19,
+      "end": 456.23,
+      "speaker": "Basti (Esterossa)",
+      "text": "Was denn? ... für da eine Höhe gewinnt."
+    },
+    {
+      "start": 456.31,
+      "end": 457.63,
+      "speaker": "Celin (Cookie)",
+      "text": "Rechtes Zelt, okay, ja."
+    },
+    {
+      "start": 459.17,
+      "end": 460.75,
+      "speaker": "Basti (Esterossa)",
+      "text": "Okay. Als"
+    },
+    {
+      "start": 460.75,
+      "end": 468.32,
+      "speaker": "Deniz (GM)",
+      "text": "ihr euch nähert... Raschelt es kurz und warte... Hallo?"
+    },
+    {
+      "start": 468.73,
+      "end": 472.09,
+      "speaker": "Celin (Cookie)",
+      "text": "Oh, da liegt ja direkt eine... Ein"
+    },
+    {
+      "start": 472.29,
+      "end": 484.18,
+      "speaker": "Deniz (GM)",
+      "text": "Goblin springt raus und rennt auf euch zu. Okay, Frage an euch. Wollen wir Initiative machen oder wollt ihr euch absprechen, so wie es bei Daggerhart vorgesehen ist, wer was macht?"
+    },
+    {
+      "start": 487.06,
+      "end": 490.7,
+      "speaker": "Basti (Esterossa)",
+      "text": "Von mir aus können wir uns da absprechen, wie es vorgesehen ist. Ja, ich würde auch absprechen."
+    },
+    {
+      "start": 491.04,
+      "end": 502.66,
+      "speaker": "Deniz (GM)",
+      "text": "Also ihr seht, wie dieser Goblin aus dem Zelt kommt, der ist blutverschmiert und hat irgendwie so die Taschen gefüllt mit irgendwelchen Krempels und der hat, ohne dass er irgendwie mit sich reden lässt, rennt der auf euch zu."
+    },
+    {
+      "start": 505.23,
+      "end": 509.67,
+      "speaker": "Basti (Esterossa)",
+      "text": "Das heißt ihr habt beide Fernkampf, oder? Nee, ich bin auch Melee, ich hab ne Axt."
+    },
+    {
+      "start": 510.25,
+      "end": 512.05,
+      "speaker": "Celin (Cookie)",
+      "text": "Ich hab Fernkampf."
+    },
+    {
+      "start": 513.23,
+      "end": 530.84,
+      "speaker": "Basti (Esterossa)",
+      "text": "Aber ansonsten hätte ich gesagt, du lenkst den ab, also der geht erstmal auf dich drauf, du gehst ihm entgegen, ich guck, ob ich hinter ihn komme, dass wir ihn sandwichen und dann... Pac-Tec ticst, während Celin von hinten dann ihre Pfeilchen schießt. Also ich"
+    },
+    {
+      "start": 530.84,
+      "end": 537.0,
+      "speaker": "Celin (Cookie)",
+      "text": "kann hier hochjumpen, da bin ich auf jeden Fall in guter Position. Bist du auf Augenhöhe?"
+    },
+    {
+      "start": 537.82,
+      "end": 538.96,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ich wollt grad sagen."
+    },
+    {
+      "start": 539.78,
+      "end": 545.94,
+      "speaker": "Celin (Cookie)",
+      "text": "Ey, der ist doch noch ein bisschen kleiner, ne? Aber da kann ich gut nochmal einen Bogen drauf schielen, während ihr da den ablenkt."
+    },
+    {
+      "start": 547.17,
+      "end": 548.87,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, wer möchte den ersten Ruf machen?"
+    },
+    {
+      "start": 550.05,
+      "end": 562.23,
+      "speaker": "Marco (Dodo)",
+      "text": "Bleibt in der Nähe von mir und dann kann ich mich vor euch werfen, falls ich angegriffen werde. Dann da mal vor. Dann gib dir mal volles Wund aus dem Auge. Genau, ich stell mich mal vor den. Okay, du rennst nach vorne."
+    },
+    {
+      "start": 562.89,
+      "end": 598.86,
+      "speaker": "Deniz (GM)",
+      "text": "Genau, du rennst nach vorne. Dann mach auch direkt einen Angriffswurf, also bei 2w12. Mal gucken, ob du triffst. Ui, das sieht gut aus. Ja, du triffst den auch und jetzt ganz kurz wichtig, Daggerherd-Regeln, du hast jetzt den 4 die Höhe gehabt, wir handeln dich jetzt noch ab, danach wäre das Monster-Dreck wieder dran. Weil immer wenn ihr 4 höher als Hope würfelt, dann wechselt die Initiative von euch zum DM, beziehungsweise zu den Monstern. Du darfst jetzt einen Angriffswurf machen, beziehungsweise den Schaden auswürfeln. Du hast ihn auf jeden Fall getroffen, genau."
+    },
+    {
+      "start": 599.69,
+      "end": 605.18,
+      "speaker": "Marco (Dodo)",
+      "text": "Genau, das ist bei mir 1w8 plus 1. Also 5."
+    },
+    {
+      "start": 606.1,
+      "end": 657.72,
+      "speaker": "Deniz (GM)",
+      "text": "5 Schaden. Du versuchst ihn zu treffen, du triffst ihn auch, aber du siehst halt, der ist so flink, der duckt sich so teilweise noch unter deinem Schwert durch und du triffst ihn nur so ein bisschen an der Schulter und der rennt weiter auf dich zu. Der hat so ein kleines Kurzschwert in der Hand. So, ich würfel mit dem W20. und der greift dich an und hat plus 2. Der hat dich mit einer 7 getroffen. Was hast du für eine Evasion? 4. Dann tatsächlich, du bist ein bisschen schwerfälliger und dementsprechend, du hältst zwar dein Schild vor dich, aber der rutscht so ein bisschen unter dem Schild hindurch und will dir mit seinem Kurzschwert einen kleinen Hieb geben. Warte."
+    },
+    {
+      "start": 661.01,
+      "end": 665.07,
+      "speaker": "Deniz (GM)",
+      "text": "Komme ich über dein erstes Threshold, also über deinen Miner Damage?"
+    },
+    {
+      "start": 666.46,
+      "end": 689.77,
+      "speaker": "Marco (Dodo)",
+      "text": "Dennis, pass mal auf. Ich habe nämlich, da ich ein Stalwart bin, werden von meinem physischen Schaden erstmal 9 abgezogen. Also quasi von meiner Rüstungsstärke, wie man auch sagt, das ist bei mir 9. Das wird von jedem physischen Schaden erstmal abgezogen. Das heißt, wenn der jetzt eine 6 hat, dann trifft er gar nicht erst. Wäre das quasi null Schaden."
+    },
+    {
+      "start": 689.87,
+      "end": 692.87,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, ja, ihr seht halt, wie der Goblin zwar... Die Rüstung"
+    },
+    {
+      "start": 692.87,
+      "end": 693.71,
+      "speaker": "Marco (Dodo)",
+      "text": "ist einfach zu gut."
+    },
+    {
+      "start": 693.97,
+      "end": 714.63,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, genau, ihr seht zwar, wie der Goblin unter der Rüstung oder unter dem Schild von ihm durchrutscht und so an der Seite ihm versucht halt irgendwie so eine Lücke zu treffen, aber er schafft's einfach nicht. Ich stell dir mal nach. So, jetzt seid ihr wieder dran, beziehungsweise ihr dürft absprechen, wer als nächstes machen möchte."
+    },
+    {
+      "start": 715.41,
+      "end": 750.18,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ich würd dir mal ne Runde smiten, oder? Gerne. Okay. Weil ich würde dann, ich stehe ja aktuell hinter meinem Tank, meine Flügel ausbreiten, in die Luft emporsteigen, wenn ich das hier mal könnte. Ich fliege einmal über die zwei drüber. Okay. Weil ich irgendwo sehr auf der Höhe bin. Und dann mit einem... Für mich. Mit Alt kannst du dich drehen. Ah ja. Ja. Ja, muss das... Würde ich ganz gerne im leichten Fall mit meinem Schwert einmal von oben nach unten. Beziehungsweise mit der Axt."
+    },
+    {
+      "start": 757.84,
+      "end": 759.94,
+      "speaker": "Deniz (GM)",
+      "text": "Charakternamen & Paper"
+    },
+    {
+      "start": 760.74,
+      "end": 773.35,
+      "speaker": "Basti (Esterossa)",
+      "text": "Session. Charakternamen & Paper"
+    },
+    {
+      "start": 777.92,
+      "end": 778.68,
+      "speaker": "Deniz (GM)",
+      "text": "und... 2 also"
+    },
+    {
+      "start": 778.68,
+      "end": 780.62,
+      "speaker": "Basti (Esterossa)",
+      "text": "16, plus 2, 18. 18."
+    },
+    {
+      "start": 780.72,
+      "end": 784.4,
+      "speaker": "Deniz (GM)",
+      "text": "Du triffst ihn ziemlich gut. Würfel mal den Schaden aus. Ja,"
+    },
+    {
+      "start": 784.94,
+      "end": 788.4,
+      "speaker": "Basti (Esterossa)",
+      "text": "ne Sekunde, ich schmeiß mal hier erstmal die Würfel weg. Wobei, kann ich auch gleich..."
+    },
+    {
+      "start": 788.4,
+      "end": 789.18,
+      "speaker": "Deniz (GM)",
+      "text": "Äh, das ist"
+    },
+    {
+      "start": 789.18,
+      "end": 790.5,
+      "speaker": "Basti (Esterossa)",
+      "text": "1w10 plus 1."
+    },
+    {
+      "start": 791.38,
+      "end": 792.92,
+      "speaker": "Deniz (GM)",
+      "text": "1w10 plus 1, okay."
+    },
+    {
+      "start": 794.72,
+      "end": 799.04,
+      "speaker": "Basti (Esterossa)",
+      "text": "Let's go, Gabby! Hello, Lugas! Das sind drei Damage."
+    },
+    {
+      "start": 799.08,
+      "end": 831.02,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, ähm, auch du, du bist zwar im Vorteil und hast die bessere Position, aber dadurch, dass du fliegst, ist es auch deutlich schwieriger, diesen kleinen Goblin zu treffen, während er sich bewegt und auch du triffst ihn nur um Haaresbreite und eine kleine Wunde entsteht zwar, aber es gelingt ihm auszurutschen, äh, durchzurutschen und ignoriert euch beide und sprintet in dem Augenblick auf den kleinen, äh... R.I.B.B.I.T. zu und versucht... Keiner"
+    },
+    {
+      "start": 831.02,
+      "end": 833.12,
+      "speaker": "Celin (Cookie)",
+      "text": "R.I.B.B.I.T. kann? Greift der nicht an?"
+    },
+    {
+      "start": 833.3,
+      "end": 843.33,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, der greift dich an. Und trifft wahrscheinlich mit einer 7 nicht. Was hast du bei Evasion oben links?"
+    },
+    {
+      "start": 845.13,
+      "end": 848.77,
+      "speaker": "Celin (Cookie)",
+      "text": "Äh, warte. Ich hab alles auf Deutsch. Was ist Evasion? Ich hab 10."
+    },
+    {
+      "start": 849.39,
+      "end": 858.84,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, 10. Er trifft dich nicht und rennt komplett gegen den Stamm und fällt dabei um. Geil. Jetzt werdet ihr wieder dran."
+    },
+    {
+      "start": 860.3,
+      "end": 864.76,
+      "speaker": "Marco (Dodo)",
+      "text": "Ja, will ich jetzt dran? Ja, Stich. Ja, Celin, hau du mal drauf."
+    },
+    {
+      "start": 865.7,
+      "end": 875.44,
+      "speaker": "Celin (Cookie)",
+      "text": "Ich überleg grad, also ich hab ja eigentlich nur Fernkampfwaffe und Parry das Schnabeltier, der mit seinem Giftstache auf ihn draufballern kann."
+    },
+    {
+      "start": 876.51,
+      "end": 878.17,
+      "speaker": "Deniz (GM)",
+      "text": "Möchtest du denn dein Schnabeltier rufen?"
+    },
+    {
+      "start": 878.85,
+      "end": 887.33,
+      "speaker": "Celin (Cookie)",
+      "text": "Ich will mein Schnabeltier rufen. Er hat einen Giftstache, den kann er easy benutzen."
+    },
+    {
+      "start": 887.82,
+      "end": 895.3,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, wir haben leider keinen Schnabeltier, aber wir haben was ähnliches, wir haben ein Frettchen. Das ist okay. Guck mal. Wir nehmen das Frettchen, das ist Perry."
+    },
+    {
+      "start": 895.64,
+      "end": 896.44,
+      "speaker": "Celin (Cookie)",
+      "text": "Der ist nicht cute."
+    },
+    {
+      "start": 896.7,
+      "end": 899.0,
+      "speaker": "Deniz (GM)",
+      "text": "Der ist es, den da. Warte, ich weise den noch eben zu."
+    },
+    {
+      "start": 901.36,
+      "end": 906.32,
+      "speaker": "Celin (Cookie)",
+      "text": "Ich habe jetzt nicht so Bock, mit meinem Pfeil da drauf zu schießen, wenn der direkt neben mir steht. Nee, das ist okay."
+    },
+    {
+      "start": 908.63,
+      "end": 926.43,
+      "speaker": "Deniz (GM)",
+      "text": "Dann hast du dein Schnabeltier, das schmeißt du praktisch von deiner Schulter, ich weiß nicht, wo du den versteckt hast, und schmeißt ihn dem praktisch... In die Futterluke. Was hat er für Fähigkeiten? Also er"
+    },
+    {
+      "start": 926.43,
+      "end": 939.95,
+      "speaker": "Celin (Cookie)",
+      "text": "kann sich gut anpassen und tarnen und er hat halt seinen giftigen Stachel. Da kann er Leute für, je nachdem wie stark der Gegner ist, für eine gewisse Zeit lähmen."
+    },
+    {
+      "start": 940.27,
+      "end": 950.93,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, dann machen wir auch für ihn einen W12er Wurf, also zwei W12. Gerne plus dann Experience für diese Angriffsattacke. Uh, sehr stark."
+    },
+    {
+      "start": 951.37,
+      "end": 955.37,
+      "speaker": "Celin (Cookie)",
+      "text": "Der schmeckt"
+    },
+    {
+      "start": 955.37,
+      "end": 959.47,
+      "speaker": "Deniz (GM)",
+      "text": "richtig. By the way, kritische Treffer sind, wenn ihr den Pasch würfelt, also zweimal dasselbe."
+    },
+    {
+      "start": 960.27,
+      "end": 962.31,
+      "speaker": "Celin (Cookie)",
+      "text": "Hä, wo ist mein Experience, wo steht das?"
+    },
+    {
+      "start": 963.03,
+      "end": 972.78,
+      "speaker": "Deniz (GM)",
+      "text": "Für deinen Begleiter müssten irgendwo auch Karten sein, beziehungsweise vielleicht bei Details. Ah, hier, warte mal. Wahrscheinlich hast du da plus zwei."
+    },
+    {
+      "start": 973.14,
+      "end": 974.12,
+      "speaker": "Celin (Cookie)",
+      "text": "Plus zwei, ja."
+    },
+    {
+      "start": 974.18,
+      "end": 976.86,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, da hast du gottlos gut getroffen, also gar kein Thema."
+    },
+    {
+      "start": 977.58,
+      "end": 979.42,
+      "speaker": "Celin (Cookie)",
+      "text": "Gar nicht gesehen, was ich gewürfelt habe."
+    },
+    {
+      "start": 979.86,
+      "end": 988.99,
+      "speaker": "Deniz (GM)",
+      "text": "Dann würfel einfach mal den Schaden aus. Ich weiß nicht, ob der dabei steht. Ansonsten würfelst du einfach mal 2w6. Plus 2 in dem Fall hier. Wie,"
+    },
+    {
+      "start": 990.22,
+      "end": 997.21,
+      "speaker": "Celin (Cookie)",
+      "text": "plus 2? Also ich würfel 2w6, plus 2. Genau."
+    },
+    {
+      "start": 997.86,
+      "end": 1031.21,
+      "speaker": "Deniz (GM)",
+      "text": "Oh, stark. Ja, plus 2 sind 9. Ihr seht einfach nur, wie... Cookie halt wirklich wie bei Pokémon ihr kleines Schnabeltier aus seinem Pokéball holt und der halt wirklich viel gruseliger aussieht, als man sich das vorstellen könnte. Und der springt halt mit seinem Angriffsstache zuerst dem kleinen Goblin ins Gesicht und der tatsächlich wird so unglücklich am Auge verletzt, dass der nicht mehr aufsteht. Also"
+    },
+    {
+      "start": 1033.48,
+      "end": 1036.92,
+      "speaker": "Celin (Cookie)",
+      "text": "by the way, der ist jetzt glaube ich nicht tot, also der ist jetzt halt ein bisschen..."
+    },
+    {
+      "start": 1040.1,
+      "end": 1048.82,
+      "speaker": "Deniz (GM)",
+      "text": "Der Angriffsstaffel, der Angriff war sehr, sehr gut und du hast ihn leider sehr, sehr präzise getroffen. Der ist tatsächlich, also der wacht nicht mehr auf, glaube ich."
+    },
+    {
+      "start": 1049.18,
+      "end": 1055.6,
+      "speaker": "Celin (Cookie)",
+      "text": "Okay, ja gut. Das hat er dann nicht gepackt. Okay, auch gut. Geil, Parry. Finde ich gut. Ich"
+    },
+    {
+      "start": 1055.6,
+      "end": 1057.64,
+      "speaker": "Deniz (GM)",
+      "text": "stelle den mal ganz kurz im Ticken zur Seite."
+    },
+    {
+      "start": 1058.53,
+      "end": 1059.25,
+      "speaker": "Celin (Cookie)",
+      "text": "Ich komme mal runter."
+    },
+    {
+      "start": 1060.56,
+      "end": 1069.91,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ist das Essen? Loot gehört dir. Ja, du musst erst mal gucken, was der Goblin dabei hat, hör mal. Während ich mich hier an den"
+    },
+    {
+      "start": 1069.91,
+      "end": 1149.01,
+      "speaker": "Deniz (GM)",
+      "text": "Taschen vergnüge. Ganz kurz Chat-Info für euch. Ihr seid ab sofort die Goblin-Götter. Das heißt, ihr habt die Möglichkeit, den Goblins eventuell mal ein Leben mehr zu geben, ohne einen Würfel mehr zu geben als Schaden oder sowas. Da seid ihr... Es ist völlig euch überlassen. Schreibt einfach in den Chat, wenn ihr das nächste Mal einen Goblin seht, dann dürft ihr das gerne beeinflussen. Bitte 10w6. 10 wie 6. Bitte nicht übertreiben. Ihr guckt euch so ein bisschen um und seht halt, dass hier war ein Ambush. Also das war wahrscheinlich der letzte Goblin, der noch irgendwie Bock hatte, hier so ein bisschen zu looten. Aber ihr seht halt drei Leichen. Hier war erst noch vor kurzem ein Lager und die wurden bodenlos gefetzt. Cookie... Ihr Badu und Dodo, ihr guckt euch mal die Leiche ein bisschen genauer an und tatsächlich findet ihr bei dem Goblin nicht mehr viel Wertvolles. Ihr habt das Kurzschwert, was ihr nicht so besonders toll findet, weil das schon ziemlich eingerostet ist. Vielleicht noch so einen kleinen holzernen Dolch und ihr findet noch einen Heiltrank, den ja einer von euch sich gerne aufschreiben darf. Mikasa, würfel mal bitte auf Instinct."
+    },
+    {
+      "start": 1152.77,
+      "end": 1163.16,
+      "speaker": "Basti (Esterossa)",
+      "text": "Instinkt, alles klar. Rolltreppen, Rolltreppen, Rolltreppen. Rolltreppen, nein, es sind, ja, es sind Rolltreppen. Ja, 19, 19, plus 1 auf Instinkt. Okay, du"
+    },
+    {
+      "start": 1163.16,
+      "end": 1165.06,
+      "speaker": "Marco (Dodo)",
+      "text": "durchsuchst das Zelt. Hopf aufschreiben nicht vergessen."
+    },
+    {
+      "start": 1167.21,
+      "end": 1171.69,
+      "speaker": "Basti (Esterossa)",
+      "text": "Was? Stimmt, du darfst dir den Hopf aufschreiben. Ja, ja, es ist drinnen, es ist drinnen."
+    },
+    {
+      "start": 1172.17,
+      "end": 1175.61,
+      "speaker": "Marco (Dodo)",
+      "text": "Du schaust... Celin, hast du den Heiltrank aufgeschrieben bei dir oder soll ich den aufschreiben?"
+    },
+    {
+      "start": 1180.07,
+      "end": 1182.45,
+      "speaker": "Celin (Cookie)",
+      "text": "Brauchst du einen? Ich bin ja"
+    },
+    {
+      "start": 1182.45,
+      "end": 1184.85,
+      "speaker": "Marco (Dodo)",
+      "text": "Tank, vielleicht brauch ich's. Ja."
+    },
+    {
+      "start": 1188.05,
+      "end": 1221.09,
+      "speaker": "Deniz (GM)",
+      "text": "Du guckst dir das Zelt ein bisschen genauer an und tatsächlich findest du etwas, was tatsächlich doch dann doch etwas interessanter ist. Wahrscheinlich haben das die Goblins einfach nicht gesehen oder haben es vielleicht nicht erkannt, was es ist, aber es scheint eine Schriftrolle zu sein und zwar mit der Natur reden. Also ihr könnt mit Bäumen oder mit Pflanzen interagieren. Die werden euch zwar nicht antworten, aber die können euch Durch Bewegung oder so, ich sag jetzt mal, Windgeflüster können die euch auf eure Fragen antworten."
+    },
+    {
+      "start": 1221.98,
+      "end": 1227.78,
+      "speaker": "Celin (Cookie)",
+      "text": "Das ist eigentlich gar nicht nötig, weil ich hab die Fähigkeit einfach so, also ihr könnt das also... Du"
+    },
+    {
+      "start": 1227.78,
+      "end": 1235.21,
+      "speaker": "Deniz (GM)",
+      "text": "kannst mit der Natur reden? Ach krass, nevermind. Dann... Aber jetzt können es zwei von uns."
+    },
+    {
+      "start": 1236.31,
+      "end": 1237.93,
+      "speaker": "Celin (Cookie)",
+      "text": "Ja, jetzt können es zwei von uns."
+    },
+    {
+      "start": 1238.19,
+      "end": 1240.81,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ich hab die"
+    },
+    {
+      "start": 1240.81,
+      "end": 1253.73,
+      "speaker": "Celin (Cookie)",
+      "text": "Sprache der verborgenen Natur. Ich kann mit Tieren und Pflanzen in meiner Umgebung sprechen und bei Erfolg geben sie mir sogar auch Wissen, wenn ich zum Beispiel Angst habe oder so."
+    },
+    {
+      "start": 1256.38,
+      "end": 1281.5,
+      "speaker": "Deniz (GM)",
+      "text": "Okay. So, ihr habt euch so ein bisschen eingefunden und das restliche Camp auch mal durchsucht, aber tatsächlich wirklich noch was von Wert zu finden war hier eigentlich nicht mehr möglich. Die Goblins haben jegliche Truhen gelootet, alles was Gold und sonstiges da war ist weg. Und der Sumpf macht auch das Spurensuchen relativ schwierig. Wie wollt ihr weiter vorgehen?"
+    },
+    {
+      "start": 1282.9,
+      "end": 1285.54,
+      "speaker": "Celin (Cookie)",
+      "text": "Was ist das hier am Baum? Das ist auch eine Leiche."
+    },
+    {
+      "start": 1289.78,
+      "end": 1293.02,
+      "speaker": "Marco (Dodo)",
+      "text": "Also ich sehe hier hinten noch eine Kiste, die wir vielleicht looten können."
+    },
+    {
+      "start": 1293.74,
+      "end": 1294.76,
+      "speaker": "Celin (Cookie)",
+      "text": "Ah, das ist auch eine Leiche."
+    },
+    {
+      "start": 1297.13,
+      "end": 1302.91,
+      "speaker": "Basti (Esterossa)",
+      "text": "Äh, waren wir hier hinten auch schon gucken, DM? Ihr"
+    },
+    {
+      "start": 1302.91,
+      "end": 1304.05,
+      "speaker": "Deniz (GM)",
+      "text": "wart auch da schon gucken, ja, ja."
+    },
+    {
+      "start": 1304.62,
+      "end": 1313.7,
+      "speaker": "Basti (Esterossa)",
+      "text": "Okay. Sollen wir uns dann durchkämpfen? Wenn ich mich jetzt so auf Bodenhöhe mal so umschaue... Ihr"
+    },
+    {
+      "start": 1313.83,
+      "end": 1327.67,
+      "speaker": "Deniz (GM)",
+      "text": "könnt, also ihr merkt, Walk hat dafür gesorgt, dass es mittlerweile recht spät geworden ist, ihr könnt entweder die Nacht hier warten, oder ihr kämpft euch bei Nacht durch das Dickicht. Wollen wir longresten?"
+    },
+    {
+      "start": 1330.01,
+      "end": 1333.09,
+      "speaker": "Marco (Dodo)",
+      "text": "Können wir auch machen. Wollen wir vorher noch zu der Truhe hier rechts gehen?"
+    },
+    {
+      "start": 1333.73,
+      "end": 1338.17,
+      "speaker": "Deniz (GM)",
+      "text": "Die Truhe ist schon gelootet, da ist ja, das Schloss ist schon offen."
+    },
+    {
+      "start": 1339.04,
+      "end": 1341.9,
+      "speaker": "Celin (Cookie)",
+      "text": "Also mich stört Dunkelheit nicht, ich kann auch im Dunkeln ganz gut stehen."
+    },
+    {
+      "start": 1343.58,
+      "end": 1366.03,
+      "speaker": "Deniz (GM)",
+      "text": "Aber wenn ihr fressen wollt, dann... Marco, tatsächlich, als du die Truhe ein bisschen durchsuchst, hörst du ein Geräusch aus der Truhe kommen. Was war das? Hast du das auch gehört? Ja, ganz leise. Die Truhe ist tatsächlich offen, da ist das Schloss aufgebrochen."
+    },
+    {
+      "start": 1368.99,
+      "end": 1372.95,
+      "speaker": "Marco (Dodo)",
+      "text": "Ich würde mal ganz vorsichtig reinschauen, aber mein Schild vor mich halten."
+    },
+    {
+      "start": 1373.44,
+      "end": 1422.33,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, in dem Augenblick, als du die Truhe öffnest, siehst du, da hat sich irgendein Goblin komplett vollgefressen und der springt dir mit seinem kleinen dicken Bäuchlein entgegen. Warte, ich drehe den mal kurz. Und der greift dich ebenfalls an. So, ich mache mal die erste Initiative. Du darfst sie gerne... Gleich einmal plus 2 auf deine Evasion kurz schreiben für den Angriff, weil du das mit dem Schild geblockt hast direkt von Anfang an. Ach du Scheiße. Der kommt, du brauchst gar nichts machen, der kommt aus der Kiste gesprungen und haut mit seinen beiden Däckern dir direkt aufs Schild. Keine Chance für ihn. Ihr seid dran. Lock ihn."
+    },
+    {
+      "start": 1424.82,
+      "end": 1427.42,
+      "speaker": "Marco (Dodo)",
+      "text": "Ja, ich... Basti, du machst mehr Schaden. Willst du draufhauen?"
+    },
+    {
+      "start": 1427.9,
+      "end": 1439.26,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ich kann ihm auch jetzt direkt mal von der Seite so einen schönen Heave geben, wenn er eh gerade die Dagger in deinem Schild stecken hat. Ja, komm mal drauf. Volltreppen, Volltreppen."
+    },
+    {
+      "start": 1440.42,
+      "end": 1443.02,
+      "speaker": "Deniz (GM)",
+      "text": "Benjamin schreibt, pack ihn wieder in die Truhe und"
+    },
+    {
+      "start": 1443.02,
+      "end": 1448.82,
+      "speaker": "Basti (Esterossa)",
+      "text": "abschließen. 17 mit einem Hopepunkt. Sehr gut, das"
+    },
+    {
+      "start": 1448.82,
+      "end": 1457.06,
+      "speaker": "Deniz (GM)",
+      "text": "trifft. Würfel einmal bitte den Schaden aus. 10 plus 1. Ach, gottlos."
+    },
+    {
+      "start": 1457.76,
+      "end": 1460.76,
+      "speaker": "Basti (Esterossa)",
+      "text": "13 magischer Schaden. Äh, 11, tschuldige."
+    },
+    {
+      "start": 1461.12,
+      "end": 1468.9,
+      "speaker": "Deniz (GM)",
+      "text": "Also du slicest ihn einmal komplett quer über die Brust und der ist super schwer am Bluten direkt, aber er steht noch. Ihr seid immer noch dran."
+    },
+    {
+      "start": 1471.52,
+      "end": 1479.5,
+      "speaker": "Basti (Esterossa)",
+      "text": "Celin, willst du drauf? Komm, schmeiß doch mal dein Frettchen. Schmeiß dein Frettchen. Schmeiß mein Frettchen. Los, Pikachu. Er kann auch kratzen und beißen, ich sag's euch."
+    },
+    {
+      "start": 1480.5,
+      "end": 1494.75,
+      "speaker": "Deniz (GM)",
+      "text": "Ach du Scheiße. Ne, der 20er hier, der ist nicht von dir. Das ist nicht meiner. Ne, den 20er, den würfel nur ich. Hier hinten noch ein paar Würfel rum. Das schützt die Umwelt."
+    },
+    {
+      "start": 1495.6,
+      "end": 1497.98,
+      "speaker": "Celin (Cookie)",
+      "text": "Kann ich würfeln? Darf ich mein Frettchen werfen?"
+    },
+    {
+      "start": 1498.06,
+      "end": 1504.8,
+      "speaker": "Deniz (GM)",
+      "text": "Du darfst gerne dein Frettchen wieder würfeln. Charakternamen & Paper Session."
+    },
+    {
+      "start": 1533.0,
+      "end": 1534.5,
+      "speaker": "Deniz (GM)",
+      "text": "Einer? Zwei wie sechs hast du."
+    },
+    {
+      "start": 1535.32,
+      "end": 1540.72,
+      "speaker": "Celin (Cookie)",
+      "text": "Zwei, okay. Jetzt hab ich drei, warte. Ah, ich blick's nicht so ganz, aber shit."
+    },
+    {
+      "start": 1541.98,
+      "end": 1555.03,
+      "speaker": "Deniz (GM)",
+      "text": "Du schaffst es ihm, diesmal wirfst du das Frettchen, das trifft ihn auch, das beißt ihn so halt so in den Fuß, aber immer noch steht dieser kleine Goblin aufrecht. Was"
+    },
+    {
+      "start": 1555.03,
+      "end": 1555.69,
+      "speaker": "Celin (Cookie)",
+      "text": "ist das für einer, hey?"
+    },
+    {
+      "start": 1557.9,
+      "end": 1558.46,
+      "speaker": "Basti (Esterossa)",
+      "text": "Aber ich mein,"
+    },
+    {
+      "start": 1558.52,
+      "end": 1561.62,
+      "speaker": "Celin (Cookie)",
+      "text": "Parry nervt ihn jetzt schon ziemlich am Fuß, also, oder? Also..."
+    },
+    {
+      "start": 1561.62,
+      "end": 1563.5,
+      "speaker": "Basti (Esterossa)",
+      "text": "Wir wissen alle, was..."
+    },
+    {
+      "start": 1568.52,
+      "end": 1580.58,
+      "speaker": "Deniz (GM)",
+      "text": "Der Hauptverhör, ne? Ja. Dann seid ihr immer noch dran. Der Goblin wollte halt irgendwas machen, aber dadurch, dass das Frätchen jetzt an seinem Fuß hängt..."
+    },
+    {
+      "start": 1580.58,
+      "end": 1585.32,
+      "speaker": "Marco (Dodo)",
+      "text": "Geh weg, du dummes Viech! Peri leib!"
+    },
+    {
+      "start": 1588.07,
+      "end": 1591.73,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ui. Stabil! Würfel den Schaden."
+    },
+    {
+      "start": 1594.19,
+      "end": 1598.31,
+      "speaker": "Deniz (GM)",
+      "text": "Beschreib mir gerne, wie du den jetzt platt machen möchtest. Einfach..."
+    },
+    {
+      "start": 1601.71,
+      "end": 1614.27,
+      "speaker": "Marco (Dodo)",
+      "text": "Ähm, der steckt ja noch so ein bisschen in meinem Schild drin. Ich ziehe auf einmal mein Schild weg und rabe ihm dann mein Schwert, beziehungsweise ich habe kein Schwert, ich habe einen Kolben. Einen Kolben hast du? Du steckst ihm deinen Kolben?"
+    },
+    {
+      "start": 1614.67,
+      "end": 1617.17,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, ich verstehe, ich verstehe, wo das hier hinläuft."
+    },
+    {
+      "start": 1619.34,
+      "end": 1640.3,
+      "speaker": "Deniz (GM)",
+      "text": "Tatsächlich, der ist so ein bisschen am Stolpern, weil das Frettchen oder Perry ihm am Fuß rumspielt und in dem Augenblick ziehst du das Schild zurück, der fällt nach vorne und du klonkst dem halt wirklich die Birne weg und auch der fällt einfach hintenüber und hat seinen letzten Atemzug getan."
+    },
+    {
+      "start": 1644.84,
+      "end": 1646.37,
+      "speaker": "Basti (Esterossa)",
+      "text": "Jetzt guck"
+    },
+    {
+      "start": 1646.37,
+      "end": 1653.48,
+      "speaker": "Celin (Cookie)",
+      "text": "mal, was in der Kiste noch drin ist. Da muss ja jetzt cooles Zeugs drin sein. Und wenn Essen drin ist, bitte Perry geben als Belohnung."
+    },
+    {
+      "start": 1654.3600000000001,
+      "end": 1657.69,
+      "speaker": "Marco (Dodo)",
+      "text": "Da steht ein Leckerli in der Truhe."
+    },
+    {
+      "start": 1657.99,
+      "end": 1660.55,
+      "speaker": "Celin (Cookie)",
+      "text": "Ja, so ein Keks oder so. Fänd ich geil. Ich"
+    },
+    {
+      "start": 1660.55,
+      "end": 1668.09,
+      "speaker": "Deniz (GM)",
+      "text": "schau mal rein. Du guckst in die Kiste rein und vielleicht findest du tatsächlich noch so ein Stückchen Hühnerkeule, aber sonst hat er sich echt vollgefressen."
+    },
+    {
+      "start": 1669.24,
+      "end": 1671.28,
+      "speaker": "Marco (Dodo)",
+      "text": "Okay, die letzte Hühnerkeule ist für Perry."
+    },
+    {
+      "start": 1671.98,
+      "end": 1677.93,
+      "speaker": "Deniz (GM)",
+      "text": "Mach mal nochmal einen Wahrnehmungswurf, Marco. Also einen Instinktwurf."
+    },
+    {
+      "start": 1678.75,
+      "end": 1681.83,
+      "speaker": "Marco (Dodo)",
+      "text": "Auch 2w12."
+    },
+    {
+      "start": 1682.13,
+      "end": 1715.53,
+      "speaker": "Deniz (GM)",
+      "text": "Genau, 2w12. Du durchsuchst die Tour, aber da ist tatsächlich nichts mehr zu finden. Denkt dran, ihr dürft nicht mehr als 6 Hope haben. Ja, der Tag schreitet voran und es wird ein bisschen düsterer. und es wird ein bisschen neblig und kühler. Dann..."
+    },
+    {
+      "start": 1715.53,
+      "end": 1716.99,
+      "speaker": "Marco (Dodo)",
+      "text": "Erstmal Nickerchen, oder?"
+    },
+    {
+      "start": 1717.81,
+      "end": 1744.3899999999999,
+      "speaker": "Basti (Esterossa)",
+      "text": "Nickerchen? Okay. Bevor wir Nickerchen machen, mache ich natürlich erstmal hier auch mal meine Fackel aus, weil wir sind ja hell genug. Und ich würde gerne meine Sigille von meinem Gott rausholen und ein Gebet sprechen und gerne meinen Skill Charakternamen &"
+    },
+    {
+      "start": 1744.3899999999999,
+      "end": 1746.05,
+      "speaker": "Deniz (GM)",
+      "text": "Paper Session."
+    },
+    {
+      "start": 1781.81,
+      "end": 1801.3,
+      "speaker": "Basti (Esterossa)",
+      "text": "Charakternamen & Paper Session."
+    },
+    {
+      "start": 1802.0,
+      "end": 1820.24,
+      "speaker": "Deniz (GM)",
+      "text": "Okay. Du merkst halt wie, auch wahrscheinlich einfach durch eure Taten gerade, durch diese Wohltat sagen wir jetzt mal, wie du diese Kraft auch direkt erhältst und dieses Siegel aussprechen kannst. Ein kleines Licht erhält ganz kurz den Sumpf und verblasst in einer Siegille."
+    },
+    {
+      "start": 1821.43,
+      "end": 1839.92,
+      "speaker": "Basti (Esterossa)",
+      "text": "Oh. Okay, dann würfel ich mal jetzt zwei wie vier, wa? Nein, da war ne vier! Okay. Zumindest drei. Ja. Eins, zwei, drei. Okay."
+    },
+    {
+      "start": 1844.94,
+      "end": 1846.54,
+      "speaker": "Basti (Esterossa)",
+      "text": "Die Musik wechselt sich"
+    },
+    {
+      "start": 1846.54,
+      "end": 1847.22,
+      "speaker": "Deniz (GM)",
+      "text": "auch bei euch, richtig?"
+    },
+    {
+      "start": 1847.88,
+      "end": 1850.66,
+      "speaker": "Celin (Cookie)",
+      "text": "Ja, ich habe gerade auch gedacht, warum wird die gruselig?"
+    },
+    {
+      "start": 1850.8600000000001,
+      "end": 1855.79,
+      "speaker": "Deniz (GM)",
+      "text": "Ich wollte es nur wissen, weil auch das Tool ist noch nicht so ganz tief drin bei mir. Okay?"
+    },
+    {
+      "start": 1857.47,
+      "end": 1866.82,
+      "speaker": "Basti (Esterossa)",
+      "text": "So, das bedeutet, dadurch dass ich ein Clank bin, was man jetzt nicht so beziehen kann... Stimmt, das haben wir gleich erklärt."
+    },
+    {
+      "start": 1867.4,
+      "end": 1870.6,
+      "speaker": "Deniz (GM)",
+      "text": "Beschreib dich mal ganz kurz, damit vielleicht die anderen ein bisschen ein Bild davon haben."
+    },
+    {
+      "start": 1871.3,
+      "end": 1874.62,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ja, also ich bin halt einfach ein Roboter."
+    },
+    {
+      "start": 1877.3899999999999,
+      "end": 1906.45,
+      "speaker": "Basti (Esterossa)",
+      "text": "Steampunk Setting halt kennen würde. Dementsprechend, ich hab halt vielleicht Metallflügel, ne? Ja, fair, fair. Und ein paar kleine Düsen. Auf jeden Fall zählen meine Short Rests als Long Rests, kennst du ja, ne? Vier Stunden. Wenn wir das so spielen würden, deswegen könnte ich zum Beispiel, wenn wir jetzt Wache halten sollten, zwei Wachen übernehmen. Also vier Stunden und jeweils von euch jemand zwei."
+    },
+    {
+      "start": 1908.01,
+      "end": 1909.21,
+      "speaker": "Celin (Cookie)",
+      "text": "Ich kann auch eine Wache nehmen."
+    },
+    {
+      "start": 1910.75,
+      "end": 1924.03,
+      "speaker": "Basti (Esterossa)",
+      "text": "Solltest du, ja. Das heißt, Marco darf durchschlafen? Nee, nee, also ich mach zwei und jeweils von den beiden... Die anderen jeweils eine? Ah, okay. Das ist ja auf 8, also wenn wir 8 Stunden schlafen."
+    },
+    {
+      "start": 1924.05,
+      "end": 1925.01,
+      "speaker": "Marco (Dodo)",
+      "text": "Dann würde ich anfangen mit Wache."
+    },
+    {
+      "start": 1925.97,
+      "end": 1929.57,
+      "speaker": "Deniz (GM)",
+      "text": "Hat jemand Rüstung verloren oder Schaden genommen?"
+    },
+    {
+      "start": 1933.94,
+      "end": 1958.09,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, bei der Short Rest, das nennt man bei der Gaha Downtime, kann man nämlich dann diese Zeit nutzen, um eure Rüstung zum Beispiel zu reparieren, euer Leben zu regnen oder sich zu preparen. Wenn ihr euch preparet, dann kriegt ihr zwei Hope-Punkte geschenkt. Ja,"
+    },
+    {
+      "start": 1958.19,
+      "end": 1959.25,
+      "speaker": "Marco (Dodo)",
+      "text": "preparen hört sich gut an."
+    },
+    {
+      "start": 1960.99,
+      "end": 2008.59,
+      "speaker": "Deniz (GM)",
+      "text": "Ganz kurz, das ist bei einer kurzen Rast möglich. Also das heißt für Mikasa und Cookie, ihr dürft eigentlich eins von diesen drei Dingen auswählen. Bei der langen Rast könntet ihr theoretisch alle Wunden heilen, Stress reduzieren, also habt ihr aber noch nicht, eure komplette Armor reparieren und beim Prepare gibt ihr auch zwei Hauptpunkte. und an einem Projekt arbeiten, das dann zum Beispiel wie Zauberer lernen oder sonstiges. Ja, aber gut, das heißt, ihr werdet euch wahrscheinlich einfach nur alle preparen, richtig? Ja. Denn wenn ihr noch nicht, ja, voll seid, könnt ihr euch zwei Hauptpunkte aufschreiben. Mhm. Okay. Wer macht die erste Wache?"
+    },
+    {
+      "start": 2009.97,
+      "end": 2019.97,
+      "speaker": "Marco (Dodo)",
+      "text": "Ich mach als erstes. Achso, du machst jetzt die, okay. Wobei, macht Sinn, wenn Basti als erstes macht, dann schläft er zum Schluss nochmal. Wie ist Marco als zweites?"
+    },
+    {
+      "start": 2021.46,
+      "end": 2030.3600000000001,
+      "speaker": "Celin (Cookie)",
+      "text": "Ich kann auch machen, also ich würde am liebsten auch im Dunkeln machen, weil ich wie gesagt unterirdisch aufgewachsen bin und im Dunkeln Licht"
+    },
+    {
+      "start": 2030.3600000000001,
+      "end": 2032.24,
+      "speaker": "Marco (Dodo)",
+      "text": "sehr gut sehen kann."
+    },
+    {
+      "start": 2032.6599999999999,
+      "end": 2033.9,
+      "speaker": "Basti (Esterossa)",
+      "text": "Dann mach du als zweites."
+    },
+    {
+      "start": 2034.3600000000001,
+      "end": 2036.29,
+      "speaker": "Celin (Cookie)",
+      "text": "Also wie ihr wollt."
+    },
+    {
+      "start": 2036.87,
+      "end": 2043.33,
+      "speaker": "Basti (Esterossa)",
+      "text": "Mach als zweites, Marco du machst dann als letztes. Du darfst dann sechs Stunden ausschlafen. Ich geh"
+    },
+    {
+      "start": 2043.33,
+      "end": 2048.59,
+      "speaker": "Celin (Cookie)",
+      "text": "da jetzt ins Zelt, also ich versuch da, ich komm nicht rein. Okay."
+    },
+    {
+      "start": 2049.64,
+      "end": 2081.34,
+      "speaker": "Deniz (GM)",
+      "text": "Ganz kurz, einmal für den, für den, ihr seht noch nichts, hat sich gerade noch nichts verändert, richtig? Nebel. Doch, es ist unglaublich nebelig. Nicht? Das seht ihr aktiv? Okay, gut. Schade, ich hätte gedacht, das kommt erst, wenn ich, wieso sieht man das Wasser trotzdem noch? Das ist ja doof. Naja, egal. Oh, und da waren kurz alle unter Wasser. Okay, ja, ähm, warte, wer war jetzt die erste Wache? Das war... Wie war ich?"
+    },
+    {
+      "start": 2081.75,
+      "end": 2097.29,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ich hab mich jetzt positioniert, also ich würd mich über etwas des Nebels bewegen. Okay, sehr gut. Um von oben halt, so ein bisschen zwischen den Bäumen halt, ein größeres Blickfeld zu haben. Okay, ja. Ob so schwarze Silhouetten sich durch den Nebel bewegen oder so."
+    },
+    {
+      "start": 2099.2200000000003,
+      "end": 2140.9,
+      "speaker": "Deniz (GM)",
+      "text": "Dann legen wir mal die beiden kurz hier hin. Okay, während die Nacht so ein bisschen voranschreitet, wird es tatsächlich immer nebeliger und es wird deutlich, also es kühlt sehr stark ab. und man kann mittlerweile nicht mehr wirklich weit sehen. Hello Philipp! Und die erste Nacht und die erste Wache vergeht aber trotz allem ohne Probleme. Du siehst nichts, hörst nichts und nichts kriegt deine oder deine Aufmerksamkeit richtet sich auf nichts, was irgendwo durch die Gegend schleichen könnte."
+    },
+    {
+      "start": 2142.19,
+      "end": 2147.11,
+      "speaker": "Basti (Esterossa)",
+      "text": "Okay, dann würde ich Celin und Monsieur Fredchen aufwecken,"
+    },
+    {
+      "start": 2147.13,
+      "end": 2148.63,
+      "speaker": "Deniz (GM)",
+      "text": "um"
+    },
+    {
+      "start": 2148.86,
+      "end": 2150.8,
+      "speaker": "Basti (Esterossa)",
+      "text": "mich dann selbst einmal schlafen zu legen."
+    },
+    {
+      "start": 2151.62,
+      "end": 2154.7,
+      "speaker": "Celin (Cookie)",
+      "text": "Okay. Willst du mich wieder aufstellen? Das"
+    },
+    {
+      "start": 2154.7,
+      "end": 2171.06,
+      "speaker": "Deniz (GM)",
+      "text": "habe ich vor. Warte. Okay. Du bist auch wieder gerade. Hast du beide geweckt oder nur Cookie? Ich habe nur Cookie geweckt. Okay. Es wird witzig, dass du immer noch schwebst dabei. Zack."
+    },
+    {
+      "start": 2171.55,
+      "end": 2178.37,
+      "speaker": "Celin (Cookie)",
+      "text": "Ich hauke mich auf diesen Baumstumpf da. Also ich kann da auch nicht höher, weil da so auf so einen Baum. Ist jetzt nicht so mein Favorite."
+    },
+    {
+      "start": 2179.3,
+      "end": 2193.17,
+      "speaker": "Deniz (GM)",
+      "text": "Mach mal bitte einen Presence-Wurf. Oder ist das eher... Warte, nee, das ist eher was Charmes. Nee, mach mal bitte Finesse, bitte. Finesse. Das ist Verstecken. Ich wollte Verstecken."
+    },
+    {
+      "start": 2193.25,
+      "end": 2197.91,
+      "speaker": "Celin (Cookie)",
+      "text": "Okay, auf wieder zwei W12. Oh!"
+    },
+    {
+      "start": 2198.11,
+      "end": 2231.24,
+      "speaker": "Deniz (GM)",
+      "text": "Oh! Gritz! Oh ja, Gritz. Also du... Das ist ein Krit, das ist das Beste. Selbst wenn du nur zwei Einsen würfelst, das ist immer ein kritischer Erfolg. Du stellst dich halt wieder auf diesen Baumstumpf und du hast irgendwie das Talent, dich halt wirklich so ruhig zu bewegen, dass man das halt einfach nicht wahrnimmt. Also wenn man jetzt an dir vorbeilaufen würde, würde das niemand mitbekommen. Und so ist es auch. Du bemerkst plötzlich, warte..."
+    },
+    {
+      "start": 2233.3,
+      "end": 2236.7799999999997,
+      "speaker": "Deniz (GM)",
+      "text": "Wie eine Kreatur vorbeischleicht. Das"
+    },
+    {
+      "start": 2236.7799999999997,
+      "end": 2251.54,
+      "speaker": "Celin (Cookie)",
+      "text": "wollte ich nicht. Das wollte ich nicht. Ich senke mich nicht mehr hoch. Nichts passiert. Ah, ja, den sehe ich. Ich"
+    },
+    {
+      "start": 2251.54,
+      "end": 2253.56,
+      "speaker": "Deniz (GM)",
+      "text": "bewege dich jetzt immer und du sagst einfach, was du machen möchtest."
+    },
+    {
+      "start": 2255.04,
+      "end": 2263.38,
+      "speaker": "Celin (Cookie)",
+      "text": "Okay, ja, ich sehe den. Haben wir einen Code? Haben wir irgendwie was ausgemacht? Nein. Haben wir nicht?"
+    },
+    {
+      "start": 2265.7,
+      "end": 2269.86,
+      "speaker": "Celin (Cookie)",
+      "text": "Okay, wie lange ist denn Basti schlafen schon?"
+    },
+    {
+      "start": 2269.88,
+      "end": 2271.08,
+      "speaker": "Deniz (GM)",
+      "text": "So ungefähr eine Stunde."
+    },
+    {
+      "start": 2272.46,
+      "end": 2277.79,
+      "speaker": "Celin (Cookie)",
+      "text": "Kann ich irgendwas rüberwerfen oder irgendwie signalisieren?"
+    },
+    {
+      "start": 2278.05,
+      "end": 2280.55,
+      "speaker": "Deniz (GM)",
+      "text": "Der hat dich nicht gesehen, der denkt ihr alle schlaft."
+    },
+    {
+      "start": 2281.46,
+      "end": 2300.23,
+      "speaker": "Celin (Cookie)",
+      "text": "Ich ruf mein Schnabeltier, weil ich kann gut mit dem reden und ich sag, der soll die anderen zwei aufwecken. Die zweite Fähigkeit, die mein Schnabeltier hat, ist halt sich gut tarnen. Deswegen glaube ich auch, dass der das unauffällig schafft."
+    },
+    {
+      "start": 2300.41,
+      "end": 2351.55,
+      "speaker": "Deniz (GM)",
+      "text": "Dann nutz mal, also mach mal bei Hope einen Minuspunkt und dann würfel mal bitte 2w12 und guck mal, ob dein Frettchen das hinkriegt, sich gut zu verstecken oder vielleicht stößt der irgendwas um dabei. Ach Gott, los. Ja, easy. Du kriegst deinen Hope-Punkt-Dreckwert zurück. Und tatsächlich, dein Frettchen ist so leise und schafft es halt wirklich... Beide ohne Probleme aufzuwecken, ohne dass der unliebsame Gast das davon mitbekommt. Okay, die Goblin-Götter, die haben gerade ein paar Sachen in den Chat geworfen, ist vermerkt. Benjamin schreibt, wenn jemand an dir vorbeilaufen würde, würde er denken, dass du ein Frosch bist. Ah,"
+    },
+    {
+      "start": 2351.63,
+      "end": 2355.7200000000003,
+      "speaker": "Celin (Cookie)",
+      "text": "sehr akkurat! So,"
+    },
+    {
+      "start": 2356.14,
+      "end": 2360.26,
+      "speaker": "Basti (Esterossa)",
+      "text": "wenn der doch dann da so rumsneakt, ne? Macht"
+    },
+    {
+      "start": 2360.26,
+      "end": 2363.32,
+      "speaker": "Deniz (GM)",
+      "text": "mal bitte beide einen Wahrnehmungswurf, ob ihr ihn schon seht."
+    },
+    {
+      "start": 2364.08,
+      "end": 2369.14,
+      "speaker": "Basti (Esterossa)",
+      "text": "Äh, ich würde gerne mein Talent, ich kann gute Wahrnehmlichen benutzen. Dann bitte einmal einen"
+    },
+    {
+      "start": 2369.14,
+      "end": 2378.85,
+      "speaker": "Deniz (GM)",
+      "text": "Hauptpunkt dafür aufwenden. Ich glaube es kostet, by the way, einen Experience Point zu nutzen, kostet zwei Hauptpunkte, my bad. Zwei? Ja, es kostet zwei."
+    },
+    {
+      "start": 2379.89,
+      "end": 2383.93,
+      "speaker": "Basti (Esterossa)",
+      "text": "Junge, okay. Äh, habe ich jetzt dadurch einen Vorteil?"
+    },
+    {
+      "start": 2384.15,
+      "end": 2391.19,
+      "speaker": "Deniz (GM)",
+      "text": "Nee, du wirfst einfach nur jetzt deinen, also du kriegst den da, steht da rechts ein plus zwei oder plus drei drauf, den rechts nur oben drauf."
+    },
+    {
+      "start": 2391.67,
+      "end": 2393.79,
+      "speaker": "Basti (Esterossa)",
+      "text": "Okay, plus Instinct, ja?"
+    },
+    {
+      "start": 2393.99,
+      "end": 2401.09,
+      "speaker": "Deniz (GM)",
+      "text": "Yes. Nee, nee, nee. Einfach nur der Experience kommt oben drauf. Okay, dann 13. Das sind 13."
+    },
+    {
+      "start": 2401.4700000000003,
+      "end": 2402.55,
+      "speaker": "Basti (Esterossa)",
+      "text": "Aber ich hab noch einen Hauptpunkt bekommen."
+    },
+    {
+      "start": 2403.81,
+      "end": 2421.69,
+      "speaker": "Deniz (GM)",
+      "text": "Äh, 13. Du speist so ein bisschen, aber du kannst tatsächlich nicht wirklich erkennen, was das Frettchen euch so irgendwie mitteilen möchte. Mach du mal bitte auch einmal Dodo. Yes. Das kostet taub, wusste ich gar nicht. Yes, das kostet taub. Ich bin mir nicht sicher, ob es 2 oder 1 war, aber ich glaube, es waren 2."
+    },
+    {
+      "start": 2422.41,
+      "end": 2426.01,
+      "speaker": "Marco (Dodo)",
+      "text": "Ich nehme wahrscheinlich nichts wahr, aber ich bekomme keinen Hope. Auch"
+    },
+    {
+      "start": 2426.01,
+      "end": 2436.67,
+      "speaker": "Deniz (GM)",
+      "text": "du guckst halt in die Gegend und siehst tatsächlich nicht, was das Frettchen meinen könnte. Darf ich dazu"
+    },
+    {
+      "start": 2436.67,
+      "end": 2450.87,
+      "speaker": "Celin (Cookie)",
+      "text": "was einwerfen? Ich weiß nicht, ob das funktioniert, aber wir konnten uns doch gegenseitig Fragen beantworten. Klar. Und ich habe Dodo als Zeichen unserer Freundschaft mal einen Stein geschenkt. Stark."
+    },
+    {
+      "start": 2456.0,
+      "end": 2468.46,
+      "speaker": "Celin (Cookie)",
+      "text": "Der Dodo die Fähigkeit überleitet, mit meinem Frettchen zu reden, weil ich bin ja eigentlich der Einzige, der mit dem reden kann. Aber wenn er den Stein bei sich tragen sollte, dann"
+    },
+    {
+      "start": 2468.75,
+      "end": 2470.99,
+      "speaker": "Deniz (GM)",
+      "text": "ist es"
+    },
+    {
+      "start": 2470.99,
+      "end": 2472.69,
+      "speaker": "Celin (Cookie)",
+      "text": "eventuell möglich, dass die sogar"
+    },
+    {
+      "start": 2474.05,
+      "end": 2494.17,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, das Frettchen hat dir was ins Ohr gesabbert und du hast jetzt tatsächlich mitbekommen, dass sich da eine Art gehörntes Wesen irgendwo im Nebel links von dir auf, also aus deiner Sicht links hinter einem der Bäume versteckt und euch ausspioniert. So der Anschein. Ich"
+    },
+    {
+      "start": 2495.87,
+      "end": 2502.35,
+      "speaker": "Basti (Esterossa)",
+      "text": "komm rüber zu dir, weil ich bin verwirrt. Okay. Ich komme nicht durch. Als du"
+    },
+    {
+      "start": 2502.35,
+      "end": 2509.91,
+      "speaker": "Deniz (GM)",
+      "text": "das Licht anmachst, seht ihr oder bekommt ihr mit, wie das Wesen im Nebel verschwindet."
+    },
+    {
+      "start": 2511.94,
+      "end": 2516.18,
+      "speaker": "Marco (Dodo)",
+      "text": "Mikasa, da war was. Irgendwas Gehörntes. Links."
+    },
+    {
+      "start": 2517.81,
+      "end": 2519.5299999999997,
+      "speaker": "Celin (Cookie)",
+      "text": "Wissen die eigentlich, dass ich da auch noch stehe?"
+    },
+    {
+      "start": 2519.83,
+      "end": 2522.93,
+      "speaker": "Deniz (GM)",
+      "text": "Die sehen dich nicht. Die haben dich nicht wahrgenommen. Die"
+    },
+    {
+      "start": 2522.93,
+      "end": 2524.4300000000003,
+      "speaker": "Celin (Cookie)",
+      "text": "haben"
+    },
+    {
+      "start": 2524.4300000000003,
+      "end": 2531.9700000000003,
+      "speaker": "Deniz (GM)",
+      "text": "auch dich nicht wahrgenommen. Die wissen nicht, wo du bist gerade. Vielleicht quakst du mal so ganz sympathisch. Ich geh mal gucken."
+    },
+    {
+      "start": 2532.35,
+      "end": 2533.37,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ich seh schon was."
+    },
+    {
+      "start": 2533.6099999999997,
+      "end": 2537.99,
+      "speaker": "Deniz (GM)",
+      "text": "Ja. Auch als du gucken gehst, scheinbar hat das Licht die Kreatur vertrieben."
+    },
+    {
+      "start": 2539.3599999999997,
+      "end": 2546.41,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ey, der hat sich verdrückt. Der hat sich verdrückt. Oh Gott. Oh Gott. Lass mich runter."
+    },
+    {
+      "start": 2547.65,
+      "end": 2548.67,
+      "speaker": "Marco (Dodo)",
+      "text": "Scheint froh zu sein."
+    },
+    {
+      "start": 2549.15,
+      "end": 2554.88,
+      "speaker": "Basti (Esterossa)",
+      "text": "Oh. Schön. Deswegen hat man mich wach gemacht. Danke. Jungs, da war jemand. Der ist in unserem Lager"
+    },
+    {
+      "start": 2554.88,
+      "end": 2556.2200000000003,
+      "speaker": "Celin (Cookie)",
+      "text": "rumgelaufen. Ich bin"
+    },
+    {
+      "start": 2556.2200000000003,
+      "end": 2557.2200000000003,
+      "speaker": "Basti (Esterossa)",
+      "text": "wach. Ich hab"
+    },
+    {
+      "start": 2557.2200000000003,
+      "end": 2560.4,
+      "speaker": "Celin (Cookie)",
+      "text": "versucht euch zu wecken, aber es hat nicht funktioniert. Okay."
+    },
+    {
+      "start": 2561.0,
+      "end": 2620.58,
+      "speaker": "Deniz (GM)",
+      "text": "Ihr geht wieder schlafen und einer hält wahrscheinlich die Wache. Solange wir kein Kampf sind, seid ihr immer alle gleichzeitig theoretisch dran. Ihr müsst euch nur absprechen, wer gerade was sagt. Okay, ja, ihr erhaltet weiter Wache und tatsächlich, die Nacht geht vorbei und es wird wieder, warte, morgen, ja, der nächste Tag ist angebrochen. Der Nebel ist jetzt wieder sehr, sehr stark verschwunden. Man kann mittlerweile wieder ziemlich weit sehen. Nur noch ein bisschen Morgentau liegt am Boden, aber ansonsten habt ihr eine gute Sicht. Das mach ich da. Ich weiß nicht. Wenn ich mal so durch die... Achso, auf M drücken."
+    },
+    {
+      "start": 2621.65,
+      "end": 2629.19,
+      "speaker": "Basti (Esterossa)",
+      "text": "Wenn ich mal so durch die Bäume mir hier schaue auf Bodenhöhe, könnte ich da hinten eine Brücke erahnen oder ein Holzkonstrukt."
+    },
+    {
+      "start": 2629.83,
+      "end": 2635.94,
+      "speaker": "Deniz (GM)",
+      "text": "Ähm, markier das mal bitte. Markieren wir auf... In"
+    },
+    {
+      "start": 2635.94,
+      "end": 2636.92,
+      "speaker": "Basti (Esterossa)",
+      "text": "die Richtung, da."
+    },
+    {
+      "start": 2637.24,
+      "end": 2642.44,
+      "speaker": "Deniz (GM)",
+      "text": "Ähm, ja, also diese Richtung Blick siehst du auf jeden Fall, da ist irgendwas, genau. Also,"
+    },
+    {
+      "start": 2642.52,
+      "end": 2648.88,
+      "speaker": "Basti (Esterossa)",
+      "text": "okay. Sollen wir mal dann in die Richtung gehen, die Leute? Weil ansonsten sehe ich nur Dreck."
+    },
+    {
+      "start": 2650.2200000000003,
+      "end": 2654.1800000000003,
+      "speaker": "Marco (Dodo)",
+      "text": "Dirt. Ja. Ich gehe voraus. Welche Richtung? Diese Richtung."
+    },
+    {
+      "start": 2654.7799999999997,
+      "end": 2664.77,
+      "speaker": "Basti (Esterossa)",
+      "text": "Okay, warte, ich fliege aber einen Ticken, weil ich habe keinen Bock, meine Schuhe schmutzig zu machen. Ich meine, ich habe ja auch immerhin ein bisschen Ehre und so. Ein"
+    },
+    {
+      "start": 2665.12,
+      "end": 2671.52,
+      "speaker": "Deniz (GM)",
+      "text": "bisschen Ehre? Und der Frosch hat wahrscheinlich eh keine Schuhe an, aber... Ich"
+    },
+    {
+      "start": 2671.94,
+      "end": 2687.24,
+      "speaker": "Celin (Cookie)",
+      "text": "glaube Zoom. Ihr habt beide keine Schuhe an. Also dem Frosch ist ein Zoom auch voll egal, oder? Der kann sich da ja prima fortbewegen. Das Problem ist, ich sehe meinen blöden Frosch nie. Der hat genau die gleiche Farbe wie der Boden."
+    },
+    {
+      "start": 2724.09,
+      "end": 2728.5699999999997,
+      "speaker": "Deniz (GM)",
+      "text": "Ach ja, bodenlos, bodenlos. Ich hab 23. Aber ein 4-Point wieder."
+    },
+    {
+      "start": 2728.73,
+      "end": 2729.65,
+      "speaker": "Basti (Esterossa)",
+      "text": "Wieder ein 4-Point."
+    },
+    {
+      "start": 2730.4,
+      "end": 2737.12,
+      "speaker": "Deniz (GM)",
+      "text": "Yes, dankeschön. Was ihr seht, alle drei seht es, oben auf dem kleinen Hügel rennt diese Kreatur rum."
+    },
+    {
+      "start": 2738.13,
+      "end": 2739.05,
+      "speaker": "Celin (Cookie)",
+      "text": "Wo ist dein Hügel?"
+    },
+    {
+      "start": 2739.31,
+      "end": 2759.5299999999997,
+      "speaker": "Basti (Esterossa)",
+      "text": "Boah, kann ich von hier aus erkennen, was das ist? Das ist ja voll hässlich. Mach mal einen Knowledge-Wurf. Ich habe als Hintergrund ja den Geschichtenweber. und bin im Vorteil auf History, Culture, Checks und... Dann"
+    },
+    {
+      "start": 2759.5299999999997,
+      "end": 2766.38,
+      "speaker": "Deniz (GM)",
+      "text": "darfst du einen plus... Wenn du das machst, musst du zwei Hope ausgeben. Alter, nee, das war dein Hintergrund, was war das?"
+    },
+    {
+      "start": 2766.7,
+      "end": 2769.76,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ja, ja, das ist Loreborn. Ah,"
+    },
+    {
+      "start": 2769.8599999999997,
+      "end": 2774.98,
+      "speaker": "Deniz (GM)",
+      "text": "ja, okay. Dann darfst du einfach plus sechs auf deinen nächsten Wurf. Also 22 und einen W6er drauf."
+    },
+    {
+      "start": 2775.92,
+      "end": 2781.65,
+      "speaker": "Basti (Esterossa)",
+      "text": "Okay, dann nehme ich wieder... Die zwei Zwölfer, die ich ja hier schon eher habe. Warte."
+    },
+    {
+      "start": 2784.08,
+      "end": 2787.38,
+      "speaker": "Celin (Cookie)",
+      "text": "Ich musste ein bisschen auf den Felsen springen, weil... Boah, ist das"
+    },
+    {
+      "start": 2787.38,
+      "end": 2788.9,
+      "speaker": "Basti (Esterossa)",
+      "text": "scheiße. Und Resekt, naja."
+    },
+    {
+      "start": 2791.04,
+      "end": 2800.56,
+      "speaker": "Deniz (GM)",
+      "text": "Das ist ne gediegene 9. Du versuchst dich so ein bisschen daran zu erinnern, was das sein könnte, aber tatsächlich... Hast du nochmal gewürfelt?"
+    },
+    {
+      "start": 2801.04,
+      "end": 2803.56,
+      "speaker": "Basti (Esterossa)",
+      "text": "Naja, ich hab was versehen. Ich wollte wegwischen."
+    },
+    {
+      "start": 2805.05,
+      "end": 2818.2,
+      "speaker": "Deniz (GM)",
+      "text": "Du versuchst wirklich so ein bisschen Erinnerung, was das sein könnte. Das könnte so ein Waldschrab sein. Die sind nicht zwingend gefährlich, soweit so gut."
+    },
+    {
+      "start": 2820.58,
+      "end": 2831.3199999999997,
+      "speaker": "Basti (Esterossa)",
+      "text": "Okay, Leute, das ist vielleicht, also ich in meiner Bibliothek habe mal etwas über diese Wesen gelesen. Es scheint ein Waldschrat zu sein. Darf"
+    },
+    {
+      "start": 2831.3199999999997,
+      "end": 2838.16,
+      "speaker": "Celin (Cookie)",
+      "text": "ich auch mal einen Instinktwurf machen? Gerne. Weil ich durch Sprache der verborgenen Natur spreche."
+    },
+    {
+      "start": 2838.46,
+      "end": 2843.69,
+      "speaker": "Deniz (GM)",
+      "text": "Oh ja, gerne. Was willst du fragen oder was willst du sagen?"
+    },
+    {
+      "start": 2845.02,
+      "end": 2848.38,
+      "speaker": "Celin (Cookie)",
+      "text": "Ich würd einfach gern wissen, ich muss ganz kurz... Die"
+    },
+    {
+      "start": 2849.73,
+      "end": 2851.3900000000003,
+      "speaker": "Deniz (GM)",
+      "text": "Goblin-Götter tun wieder Dinge."
+    },
+    {
+      "start": 2853.48,
+      "end": 2861.92,
+      "speaker": "Celin (Cookie)",
+      "text": "...geben sie dir Informationen, die sie kennen. Ah ja, da frag ich einfach mal, ob der Kerl da drüben gut oder böse ist."
+    },
+    {
+      "start": 2862.2,
+      "end": 2863.24,
+      "speaker": "Deniz (GM)",
+      "text": "Wen fragst du, die Natur?"
+    },
+    {
+      "start": 2864.17,
+      "end": 2865.81,
+      "speaker": "Celin (Cookie)",
+      "text": "Ja, die Natur kann ich fragen, hier."
+    },
+    {
+      "start": 2865.8900000000003,
+      "end": 2874.33,
+      "speaker": "Deniz (GM)",
+      "text": "Das ist die Natur, das ist gut. Ihr seht, wie dieser Frosch auf diesen Stein steigt, sich so eine Plauze raushängen lässt und einfach irgendeinen..."
+    },
+    {
+      "start": 2887.1800000000003,
+      "end": 2890.6800000000003,
+      "speaker": "Deniz (GM)",
+      "text": "Charakternamen & Paper Session."
+    },
+    {
+      "start": 2905.1099999999997,
+      "end": 2906.91,
+      "speaker": "Celin (Cookie)",
+      "text": "Du bist bestimmt nicht Basti, aber... Du bist"
+    },
+    {
+      "start": 2906.91,
+      "end": 2908.87,
+      "speaker": "Deniz (GM)",
+      "text": "bestimmt nicht Basti. Das"
+    },
+    {
+      "start": 2908.87,
+      "end": 2916.8199999999997,
+      "speaker": "Basti (Esterossa)",
+      "text": "einzige, was ich kenne, ist Kohle. Kohle, Kohle, Kohle, Kohle. Wollen wir den dann ignorieren und einen Bogen drumrum gehen?"
+    },
+    {
+      "start": 2917.52,
+      "end": 2918.9,
+      "speaker": "Celin (Cookie)",
+      "text": "Ja, ich würde den jetzt auch"
+    },
+    {
+      "start": 2918.9,
+      "end": 2925.91,
+      "speaker": "Basti (Esterossa)",
+      "text": "mal... Ich meine, links von uns ist noch irgendwie so ein hässliches Steingebilde."
+    },
+    {
+      "start": 2928.01,
+      "end": 2929.5299999999997,
+      "speaker": "Celin (Cookie)",
+      "text": "Wo siehst du...?"
+    },
+    {
+      "start": 2930.08,
+      "end": 2935.06,
+      "speaker": "Basti (Esterossa)",
+      "text": "Im Norden, wenn ich das... ich weiß nicht... Gut, links ist der Kompass."
+    },
+    {
+      "start": 2935.7,
+      "end": 2941.98,
+      "speaker": "Celin (Cookie)",
+      "text": "Ja, das sehen wir nicht, wegen... Bildchen. Den Bildern. Stein, Stein, Stein, Stein. Unten links? Habt ihr"
+    },
+    {
+      "start": 2941.98,
+      "end": 2948.19,
+      "speaker": "Basti (Esterossa)",
+      "text": "keine Bilder? Doch, da sind äh, da sind unsere Kameras. Ja, wir sehen halt unsere Kameras, deswegen sehen wir die Kameras. Die Facecam ist im"
+    },
+    {
+      "start": 2948.19,
+      "end": 2954.1400000000003,
+      "speaker": "Deniz (GM)",
+      "text": "Weg. Achso, ja, das Overlay müsst ihr in Discord beim nächsten Mal dann ausschalten. Hab ich ausgemacht."
+    },
+    {
+      "start": 2954.26,
+      "end": 2959.5,
+      "speaker": "Basti (Esterossa)",
+      "text": "Äh, ja, aber ich würde jetzt mal behaupten, dass das Norden ist. Ich will halt nicht rauscrawlen, ich bin halt immer in so einer Ego-Perspektive."
+    },
+    {
+      "start": 2959.7,
+      "end": 2961.98,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, Norden ist praktisch aus der Richtung, in die ihr gekommen seid."
+    },
+    {
+      "start": 2962.84,
+      "end": 2969.04,
+      "speaker": "Basti (Esterossa)",
+      "text": "Achso, daan ist das... das Norden? Ja. Dann ist das Süd... Süden."
+    },
+    {
+      "start": 2971.04,
+      "end": 2972.54,
+      "speaker": "Deniz (GM)",
+      "text": "Markier einfach, dann sieht das vielleicht jeder."
+    },
+    {
+      "start": 2973.3,
+      "end": 2979.1099999999997,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ah, tu, ich kann ja markieren. Ich würde gerne gucken, ob wir in diese Richtung."
+    },
+    {
+      "start": 2979.6099999999997,
+      "end": 2980.99,
+      "speaker": "Deniz (GM)",
+      "text": "Mahlzeit, Slaughter Sloth."
+    },
+    {
+      "start": 2984.37,
+      "end": 2986.3900000000003,
+      "speaker": "Celin (Cookie)",
+      "text": "Wo siehst du denn ein Steinkonstrukt?"
+    },
+    {
+      "start": 2986.45,
+      "end": 3000.99,
+      "speaker": "Deniz (GM)",
+      "text": "Denkt dran, Chat, ihr dürft die Goblin-Götter spielen. Das heißt, ihr habt Einfluss auf die Natur, wenn ihr das möchtet. Oh, ja, das sieht cool aus. Okay. Da liegt auch noch ein Würfel. Ich mach die mal weg."
+    },
+    {
+      "start": 3002.28,
+      "end": 3005.04,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ja, das hier meine ich. Oh Gott, das ist groß."
+    },
+    {
+      "start": 3005.68,
+      "end": 3006.48,
+      "speaker": "Celin (Cookie)",
+      "text": "Ah ja, okay."
+    },
+    {
+      "start": 3007.4,
+      "end": 3008.24,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, dann laufen"
+    },
+    {
+      "start": 3008.24,
+      "end": 3008.84,
+      "speaker": "Celin (Cookie)",
+      "text": "wir doch da mal hin."
+    },
+    {
+      "start": 3009.76,
+      "end": 3031.27,
+      "speaker": "Deniz (GM)",
+      "text": "Ich würde vorgehen. Nein, der kleine Frosch geht vor. Ja, der ist doch so unsichtbar hier. Ihr kommt an so eine Art, vielleicht war das mal irgendwas, vielleicht macht mal einer einen Knowledge-Wurf, der denkt, er ist ganz gut in Knowledge. Wenn ihr dann 0 habt, seid ihr nicht gut in Knowledge. Ich hab minus 1."
+    },
+    {
+      "start": 3032.01,
+      "end": 3032.83,
+      "speaker": "Celin (Cookie)",
+      "text": "Ich hab 0. Ich bin"
+    },
+    {
+      "start": 3032.83,
+      "end": 3033.49,
+      "speaker": "Basti (Esterossa)",
+      "text": "dumm wie scheiße."
+    },
+    {
+      "start": 3035.33,
+      "end": 3056.22,
+      "speaker": "Deniz (GM)",
+      "text": "Nice. Dann würfel einfach mal 2x12. Slaughter, wenn du mir erklärst, warum das passieren soll, dann vielleicht... Es muss aber Sinn ergeben. Der fällt jetzt nicht einfach so. Braucht irgendjemand Hope-Punkte? Der kann ja würfeln. Hä, was? Ich bin voll bei Hope. Hat jemand schon Hope-Pull?"
+    },
+    {
+      "start": 3056.24,
+      "end": 3056.9,
+      "speaker": "Celin (Cookie)",
+      "text": "Ich bin voll bei Hope."
+    },
+    {
+      "start": 3057.71,
+      "end": 3070.97,
+      "speaker": "Basti (Esterossa)",
+      "text": "Achso, gib die doch mal aus. Ich hab nur 3. Aber ich bin auch komplett bescheuert. Aber gut, dann mach ich das mal. Vielleicht... Haben mich meine bibliothekarischen Fähigkeiten doch nicht verlassen. Dann lass doch"
+    },
+    {
+      "start": 3070.97,
+      "end": 3072.39,
+      "speaker": "Celin (Cookie)",
+      "text": "irgendjemand würfeln, der voll ist."
+    },
+    {
+      "start": 3072.85,
+      "end": 3095.03,
+      "speaker": "Deniz (GM)",
+      "text": "Du guckst dir das Gebilde ein bisschen an und tatsächlich erkennst du, dass das hier mal irgendwie eine Art Aussichtsturm war. Also scheinbar nicht weit von hier wird es wahrscheinlich mal ein Dorf gegeben haben, vielleicht eine Burg oder vielleicht auch einfach ein Lager oder sowas in die Richtung."
+    },
+    {
+      "start": 3105.06,
+      "end": 3107.44,
+      "speaker": "Celin (Cookie)",
+      "text": "Wie gucken wir das jetzt genauer an? Ist das ein Loch hier?"
+    },
+    {
+      "start": 3108.64,
+      "end": 3120.36,
+      "speaker": "Deniz (GM)",
+      "text": "Ne, ist tatsächlich kein Loch. Also da ist kein Eingang zu finden oder sowas. Was auch immer das mal war, ist tatsächlich eingestürzt und nicht mehr begehbar. Auch für dich tatsächlich nicht mehr. Ich"
+    },
+    {
+      "start": 3120.36,
+      "end": 3121.58,
+      "speaker": "Celin (Cookie)",
+      "text": "spring da mal hoch. Ich"
+    },
+    {
+      "start": 3121.58,
+      "end": 3133.83,
+      "speaker": "Deniz (GM)",
+      "text": "flieg mal nen Ticken hoch. Als du da oben drauf geht nämlich, dann mach doch mal bitte beide einen Wurf auf Instinct und zwar Mikasa und Cookie."
+    },
+    {
+      "start": 3136.99,
+      "end": 3137.81,
+      "speaker": "Celin (Cookie)",
+      "text": "Machst du zuerst?"
+    },
+    {
+      "start": 3138.33,
+      "end": 3146.58,
+      "speaker": "Basti (Esterossa)",
+      "text": "1, 2, 3, 4, 5, 6, 7, 8, 9,"
+    },
+    {
+      "start": 3148.64,
+      "end": 3156.34,
+      "speaker": "Deniz (GM)",
+      "text": "10, 11,"
+    },
+    {
+      "start": 3171.47,
+      "end": 3176.1,
+      "speaker": "Deniz (GM)",
+      "text": "Ich markiere das auch einmal ganz kurz. Zum Ticken raus, wenn"
+    },
+    {
+      "start": 3176.1,
+      "end": 3176.78,
+      "speaker": "Basti (Esterossa)",
+      "text": "das okay ist."
+    },
+    {
+      "start": 3178.43,
+      "end": 3183.03,
+      "speaker": "Deniz (GM)",
+      "text": "Ungefähr hier seht ihr etwas. Bzw. siehst du etwas."
+    },
+    {
+      "start": 3183.81,
+      "end": 3189.41,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ich seh nichts. Ach da, da, da! Oh, sorry, ich hab auf das Konstrukt hier."
+    },
+    {
+      "start": 3189.95,
+      "end": 3191.09,
+      "speaker": "Celin (Cookie)",
+      "text": "Da liegt mein Würfel."
+    },
+    {
+      "start": 3191.45,
+      "end": 3199.08,
+      "speaker": "Basti (Esterossa)",
+      "text": "Okay, Sekunde. Ich würde erstmal wieder natürlich hier runter. Hier, zu unserem Tank."
+    },
+    {
+      "start": 3214.31,
+      "end": 3216.29,
+      "speaker": "Basti (Esterossa)",
+      "text": "Der Figur ist nicht zu sehen, Celin."
+    },
+    {
+      "start": 3229.49,
+      "end": 3238.7,
+      "speaker": "Deniz (GM)",
+      "text": "Warte, ganz kurz stehen bleiben. Cookie... Als du von den Steinen wieder runterläufst, mach mal bitte einen Geschicklichkeitswert, also einen Agility-Check."
+    },
+    {
+      "start": 3243.2,
+      "end": 3247.78,
+      "speaker": "Celin (Cookie)",
+      "text": "Genau, 2w12 plus deinen Agility-Wert."
+    },
+    {
+      "start": 3250.92,
+      "end": 3273.49,
+      "speaker": "Deniz (GM)",
+      "text": "Also tatsächlich merkst du plötzlich wie eine merkwürdige Kraft irgendwo aus dem Himmel versucht die Steine umzuwerfen, damit die auf Dodo fallen. Aber du schaffst es tatsächlich ein Rückwärtssalto rechtzeitig wegzumachen, landest ganz elegant auf dem Boden und die kleine Steinlawine erwischt nicht Dodo am Boden. Glück gehabt."
+    },
+    {
+      "start": 3273.79,
+      "end": 3277.49,
+      "speaker": "Celin (Cookie)",
+      "text": "Ja sorry, ich war ein bisschen ungeschickt hier gerade. Mach mal einen Knowledge"
+    },
+    {
+      "start": 3277.49,
+      "end": 3279.51,
+      "speaker": "Deniz (GM)",
+      "text": "Check. Einer der das kann bitte."
+    },
+    {
+      "start": 3283.09,
+      "end": 3290.0299999999997,
+      "speaker": "Deniz (GM)",
+      "text": "Dann kann ich euch nämlich sagen, welcher Goblin-Gott das gerade war. Wie gesagt, keiner von uns hat Knowledge. Ich will Knowledge"
+    },
+    {
+      "start": 3290.0299999999997,
+      "end": 3291.13,
+      "speaker": "Celin (Cookie)",
+      "text": "würfeln. Dann würfel du bitte,"
+    },
+    {
+      "start": 3291.27,
+      "end": 3313.52,
+      "speaker": "Deniz (GM)",
+      "text": "genau Cookie. Sieht gut aus. Und zwar hat dir das der Goblin-Gott, du versuchst dich zu erinnern, aber du erinnerst dich an einen Namen und das ist so ein Trickster-Gott und das ist, glaube ich, Lugasch, der Goblin-Gott. Der hat dir gerade versucht, deinem Freund den Stein auf den Kopf zu hauen. Ah ja."
+    },
+    {
+      "start": 3314.86,
+      "end": 3317.76,
+      "speaker": "Celin (Cookie)",
+      "text": "Kennt man, macht er immer mal wieder."
+    },
+    {
+      "start": 3318.54,
+      "end": 3326.12,
+      "speaker": "Basti (Esterossa)",
+      "text": "Okay, ihr dürft weiter bewegen. Ich werde die Nacht dafür beten, dass mein Gott seinen Gott aufs Maul haut."
+    },
+    {
+      "start": 3329.32,
+      "end": 3341.89,
+      "speaker": "Deniz (GM)",
+      "text": "Alles gut, Sanji. Als ihr tatsächlich an diese Stelle tretet, seht ihr plötzlich etwas zwischen den Bäumen aufragen."
+    },
+    {
+      "start": 3345.95,
+      "end": 3350.59,
+      "speaker": "Celin (Cookie)",
+      "text": "Oh. Oh, hello. Wo denn?"
+    },
+    {
+      "start": 3352.06,
+      "end": 3355.6,
+      "speaker": "Deniz (GM)",
+      "text": "Zwischen den Bäumen seht ihr plötzlich... Ja, auf der rechten Seite."
+    },
+    {
+      "start": 3356.36,
+      "end": 3359.96,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ja, ich bin in Ego-Perspektive. Ich sehe nur Bäume. Nice, Ehrenmann."
+    },
+    {
+      "start": 3360.1,
+      "end": 3365.85,
+      "speaker": "Deniz (GM)",
+      "text": "Sorry. Aber auch in der Ego-Perspektive dürftest du jetzt etwas sehen."
+    },
+    {
+      "start": 3366.33,
+      "end": 3374.16,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ja, hier sehe ich so eine Palisade. Genau geradeaus. Ansonsten, ja. Tschüss. Ich"
+    },
+    {
+      "start": 3374.67,
+      "end": 3376.99,
+      "speaker": "Celin (Cookie)",
+      "text": "sehe mit der Ego-Perspektive einfach gar nichts."
+    },
+    {
+      "start": 3377.68,
+      "end": 3381.44,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ja, ich bin halt komplett reingezoomt. Näher ran zoomen kann man nicht. Mach"
+    },
+    {
+      "start": 3381.44,
+      "end": 3384.44,
+      "speaker": "Deniz (GM)",
+      "text": "dann mit allen drei einen Instinktwurf."
+    },
+    {
+      "start": 3387.36,
+      "end": 3388.46,
+      "speaker": "Basti (Esterossa)",
+      "text": "Marco, darfst du anfangen?"
+    },
+    {
+      "start": 3389.11,
+      "end": 3400.39,
+      "speaker": "Deniz (GM)",
+      "text": "Yes, ich fang an. 16 plus 0, 16. Okay. Die anderen beiden?"
+    },
+    {
+      "start": 3401.36,
+      "end": 3406.12,
+      "speaker": "Celin (Cookie)",
+      "text": "Ich würfel mal. Auch 16."
+    },
+    {
+      "start": 3406.38,
+      "end": 3409.44,
+      "speaker": "Deniz (GM)",
+      "text": "Okay. Und der letzte?"
+    },
+    {
+      "start": 3409.88,
+      "end": 3413.42,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ich würde ganz gerne... Wie hoch fliegst"
+    },
+    {
+      "start": 3413.42,
+      "end": 3414.0,
+      "speaker": "Deniz (GM)",
+      "text": "du, würdest du sagen?"
+    },
+    {
+      "start": 3414.7200000000003,
+      "end": 3419.98,
+      "speaker": "Basti (Esterossa)",
+      "text": "Jetzt gerade Bodenhöhe. Ich würde aber jetzt gerne..."
+    },
+    {
+      "start": 3419.98,
+      "end": 3422.64,
+      "speaker": "Deniz (GM)",
+      "text": "Hast du schon auf Wahrnehmung gewürfelt?"
+    },
+    {
+      "start": 3423.2,
+      "end": 3427.8,
+      "speaker": "Basti (Esterossa)",
+      "text": "Nee, ich hätte jetzt ansonsten wieder zwei Hochpunkte ausgegeben für ein cooles Roleplay mit Ich bin wahrnehmlich."
+    },
+    {
+      "start": 3428.87,
+      "end": 3431.37,
+      "speaker": "Deniz (GM)",
+      "text": "Ähm, nee, ist gerade eher wie so ein Rettungswurf. Mach mal ganz kurz, bitte."
+    },
+    {
+      "start": 3431.57,
+      "end": 3432.57,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ach so, okay, okay."
+    },
+    {
+      "start": 3434.12,
+      "end": 3472.73,
+      "speaker": "Deniz (GM)",
+      "text": "Das ist... Ich hab kein Ergebnis gesehen. Ah, da. Ihr schafft es tatsächlich alle, wie aus dem Nichts. Stürmt auf euch ein Wildschwein aus dem Nichts auf euch zu. Aber tatsächlich habt ihr es alle geschafft auszuweichen. Das rennt praktisch an euch vorbei. Und ihr seht, das kann nicht bremsen. Scheppert mit voller Gewalt gegen den Baum und ihr seht nur ein paar Sterne auftreten, denn das Ding ist ohnmächtig."
+    },
+    {
+      "start": 3473.15,
+      "end": 3476.63,
+      "speaker": "Celin (Cookie)",
+      "text": "Was ist mit dem los? Oh, ich sehe meine Figur schon wieder nicht."
+    },
+    {
+      "start": 3477.13,
+      "end": 3492.2200000000003,
+      "speaker": "Deniz (GM)",
+      "text": "Deine Figur ist echt... Die müssen die echt... Ja, das Viech hat sich... Macht mal einer entweder einen Wurf auf Knowledge, ja doch, Knowledge oder Instinct."
+    },
+    {
+      "start": 3494.7,
+      "end": 3495.98,
+      "speaker": "Celin (Cookie)",
+      "text": "Instinct habe ich plus 1."
+    },
+    {
+      "start": 3497.02,
+      "end": 3524.54,
+      "speaker": "Deniz (GM)",
+      "text": "Dann würfel einfach mal. Du darfst, weil du mit Naturwesen bewandt bist, darfst du gerne plus 6, also einen 6er Würfel dazunehmen auf deine beiden 12er Würfel. Oh ja, oh, oh, der Kritz! Du bist dir sehr sicher, das Tier wollte euch nicht verletzen, das ist einfach aus Panik oder ist aufgeschreckt, ist losgerannt und weil das so groß ist, hat es nicht geschafft, die Kurve zu kriegen und dementsprechend geht von der Kreatur keine Gefahr aus."
+    },
+    {
+      "start": 3525.48,
+      "end": 3531.58,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ich hätte jetzt eine Idee, Celin, du bist doch so naturbewandert, ne? Schlitz, Schlitz, Schlitz! Du kannst doch mit der Natur sprechen."
+    },
+    {
+      "start": 3532.26,
+      "end": 3533.34,
+      "speaker": "Celin (Cookie)",
+      "text": "Jo, gar nicht."
+    },
+    {
+      "start": 3533.74,
+      "end": 3535.08,
+      "speaker": "Basti (Esterossa)",
+      "text": "Willst du nicht ein neues Reittier haben?"
+    },
+    {
+      "start": 3539.07,
+      "end": 3542.5299999999997,
+      "speaker": "Celin (Cookie)",
+      "text": "Alter... Ja... Aber ich stelle mich hier hin. K.O., oder?"
+    },
+    {
+      "start": 3543.39,
+      "end": 3548.95,
+      "speaker": "Deniz (GM)",
+      "text": "Also du könntest es auf jeden Fall irgendwie aufwecken, sicherlich. Ja? Ja, mach"
+    },
+    {
+      "start": 3548.95,
+      "end": 3550.79,
+      "speaker": "Celin (Cookie)",
+      "text": "mal. Der ist doch nett, auch."
+    },
+    {
+      "start": 3551.9,
+      "end": 3563.08,
+      "speaker": "Deniz (GM)",
+      "text": "Vielleicht können ja die Goblin-Götter mal kurz beschreiben, also Chat, was passiert denn oder wie wird das Viech auf die Liebe Cookie reagieren?"
+    },
+    {
+      "start": 3563.86,
+      "end": 3567.34,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ja, negativ. Die wollen uns doch bumsen. Ja, aber er hat"
+    },
+    {
+      "start": 3567.34,
+      "end": 3577.88,
+      "speaker": "Celin (Cookie)",
+      "text": "doch gerade gesagt, dass das ein netter Kerl ist. Der hat einfach nur Angst. Richtig. Ich glaube, ich will ihm gut zureden und sagen, hey, wir sind nett, wir sind Beschützer, wir sind cool."
+    },
+    {
+      "start": 3578.4,
+      "end": 3592.7799999999997,
+      "speaker": "Deniz (GM)",
+      "text": "Du hast doch, hattest du nicht Spells oder sowas? Ich? Ja. Ne, du hast keine Spells, ne? Ne, du warst gar nicht so spellisch unterwegs. Ich"
+    },
+    {
+      "start": 3592.7799999999997,
+      "end": 3606.27,
+      "speaker": "Celin (Cookie)",
+      "text": "kann mit Hoffnung, kann ich einen Zauberwurf machen, einen natürlichen Zauberwurf machen auf meine Umgebung. Ach nee, warte mal. Vor dem Wurf eine Hoffnung ausgeben, um Ergebnis plus 1 zu zielen."
+    },
+    {
+      "start": 3606.79,
+      "end": 3651.0,
+      "speaker": "Deniz (GM)",
+      "text": "Oh ja, dann würfel mal bitte, also nimm mal einen Hauptpunkt weg und würfel mal bitte 2 plus 12. Mach mal so ein Naturcheck-mäßiges Ding auf Knowledge. Das sind 13. Du schaffst es tatsächlich, das Viech wieder aufzuwecken und das guckt, also du redest halt mehr oder weniger in der Natursprache mit dem Viech. Und das guckt dich halt so ein bisschen verwundert an. Warum redet ein Frosch mit mir? Na? Geht's? Na, es geht. Ist klar. Ich habe"
+    },
+    {
+      "start": 3651.0,
+      "end": 3656.2200000000003,
+      "speaker": "Celin (Cookie)",
+      "text": "einfach eine coole Aura. Ich beruhige die Tiere wieder, wenn ich da bin."
+    },
+    {
+      "start": 3656.46,
+      "end": 3660.6,
+      "speaker": "Deniz (GM)",
+      "text": "Okay. Dann willst du doch was machen, weil das sieht sehr verdutzt aus und hat keinen Plan, was hier gerade abgeht."
+    },
+    {
+      "start": 3662.61,
+      "end": 3671.27,
+      "speaker": "Celin (Cookie)",
+      "text": "Ja, ich versuche ihn ja gerade zu überzeugen, Mitglied in unserem Team bzw. mein, was hast du gesagt, Reittier?"
+    },
+    {
+      "start": 3671.45,
+      "end": 3679.56,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, also du holst jetzt praktisch einen Vertrag raus und hältst ihn unter den Huf hin, dass er einfach so unterschreiben soll."
+    },
+    {
+      "start": 3680.29,
+      "end": 3692.36,
+      "speaker": "Celin (Cookie)",
+      "text": "Ja, Vertrag hätte ich jetzt nicht gesagt, aber ich müsste ja ihm was anbieten. Ich meine, der wäre ja mehr oder weniger mein Handlanger, wenn der da..."
+    },
+    {
+      "start": 3692.98,
+      "end": 3698.52,
+      "speaker": "Deniz (GM)",
+      "text": "Deswegen hast du was anzubieten, ansonsten glaubst du nicht, dass du ihn überzeugen kannst. Er"
+    },
+    {
+      "start": 3698.52,
+      "end": 3715.26,
+      "speaker": "Celin (Cookie)",
+      "text": "ist ja vor Panik grad weggelaufen, also da würde ich einfach gut auf ihn zureden und sagen, hey, was auch immer du da jetzt gerade erlebt hast, wir sind für ihn da, wir beschützen ihn und... Ganz"
+    },
+    {
+      "start": 3715.42,
+      "end": 3727.61,
+      "speaker": "Deniz (GM)",
+      "text": "kurz, also tatsächlich... Wildschwein guckt euch jetzt eine Minute an und scheinbar versteht nicht, was ihr irgendwie sagt und der dreht sich weg und verschwindet wieder im Dickicht."
+    },
+    {
+      "start": 3728.41,
+      "end": 3731.07,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ich würde in meine Tasche kramen, würde etwas... Kann die Pferde"
+    },
+    {
+      "start": 3731.07,
+      "end": 3733.0299999999997,
+      "speaker": "Celin (Cookie)",
+      "text": "in dem Chat erzählen, oder? Also..."
+    },
+    {
+      "start": 3733.0299999999997,
+      "end": 3741.01,
+      "speaker": "Basti (Esterossa)",
+      "text": "Naturelles zu essen rausholen, was ich ja wahrscheinlich dabei habe als Proviant, würde zu dem Frosch gehen und sagen, hier, bitte, das nächste Mal fütter das Ding."
+    },
+    {
+      "start": 3741.41,
+      "end": 3746.11,
+      "speaker": "Deniz (GM)",
+      "text": "Ich würde sagen, du hast keine Lebensmittel dabei. Ich bin ein verdammt..."
+    },
+    {
+      "start": 3746.11,
+      "end": 3747.85,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ja. Vergessen."
+    },
+    {
+      "start": 3749.34,
+      "end": 3750.48,
+      "speaker": "Celin (Cookie)",
+      "text": "Aber Celin hat doch so"
+    },
+    {
+      "start": 3750.48,
+      "end": 3764.13,
+      "speaker": "Deniz (GM)",
+      "text": "einen Nomadenbeutel vielleicht, ist da was drin? Einen Nomadenbeutel? Da bewahrt ihr ihr Dings auf, ihr Frettchen. Okay."
+    },
+    {
+      "start": 3764.8,
+      "end": 3771.5,
+      "speaker": "Celin (Cookie)",
+      "text": "Also ich hab ne Grundversorgung dabei, ich hab ein 5-Fuß-Seil dabei und ne Fackel."
+    },
+    {
+      "start": 3772.34,
+      "end": 3779.58,
+      "speaker": "Deniz (GM)",
+      "text": "Okay. Also ihr habt ungefähr noch eine Stunde Zeit, um euren Auftrag zu erfüllen."
+    },
+    {
+      "start": 3780.81,
+      "end": 3781.79,
+      "speaker": "Celin (Cookie)",
+      "text": "Ich hab Leuchtringe!"
+    },
+    {
+      "start": 3783.07,
+      "end": 3786.87,
+      "speaker": "Basti (Esterossa)",
+      "text": "So, und dann würde ich mal sagen, gehen wir mal eine Runde spying, oder?"
+    },
+    {
+      "start": 3788.64,
+      "end": 3789.88,
+      "speaker": "Celin (Cookie)",
+      "text": "Wie lange haben wir noch Zeit?"
+    },
+    {
+      "start": 3790.1,
+      "end": 3790.82,
+      "speaker": "Deniz (GM)",
+      "text": "Eine Stunde ungefähr."
+    },
+    {
+      "start": 3793.19,
+      "end": 3795.73,
+      "speaker": "Basti (Esterossa)",
+      "text": "Also hier sehen wir... In den Wald."
+    },
+    {
+      "start": 3796.17,
+      "end": 3813.77,
+      "speaker": "Deniz (GM)",
+      "text": "Als ihr so ein bisschen den Wald betretet, seht ihr diese beiden relativ weit vorne stehen. Mehr seht ihr erstmal gar nicht. Kann ich. Marco,"
+    },
+    {
+      "start": 3815.42,
+      "end": 3818.48,
+      "speaker": "Basti (Esterossa)",
+      "text": "warte mal ganz kurz. Ich würde hier hochgehen."
+    },
+    {
+      "start": 3818.76,
+      "end": 3819.94,
+      "speaker": "Deniz (GM)",
+      "text": "Keine Essenswürfel mehr."
+    },
+    {
+      "start": 3821.68,
+      "end": 3826.92,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ich würde versuchen, wenn ich dürfte... Denkt"
+    },
+    {
+      "start": 3826.92,
+      "end": 3830.66,
+      "speaker": "Deniz (GM)",
+      "text": "daran, wenn ihr auf N drückt, dann könnt ihr die umgebende Umgebung ein bisschen deaktivieren."
+    },
+    {
+      "start": 3830.82,
+      "end": 3832.1,
+      "speaker": "Basti (Esterossa)",
+      "text": "Die umgebende Umgebung?"
+    },
+    {
+      "start": 3832.14,
+      "end": 3834.88,
+      "speaker": "Deniz (GM)",
+      "text": "Die umgebende Umgebung, genau. Geh mal so"
+    },
+    {
+      "start": 3834.88,
+      "end": 3840.33,
+      "speaker": "Basti (Esterossa)",
+      "text": "hoch. Auf die Szene. Du siehst mich? Siehst du, wo"
+    },
+    {
+      "start": 3840.33,
+      "end": 3852.32,
+      "speaker": "Deniz (GM)",
+      "text": "ich rumfliege? Oh ja. Warte mal, ruhiger werden. Also du kannst ja fliegen, nevermind. Aber wenn ein anderer da hochgehen möchte, müsste er auf Klettern bzw. Agilität würfeln. Agility. Agility."
+    },
+    {
+      "start": 3853.04,
+      "end": 3857.88,
+      "speaker": "Basti (Esterossa)",
+      "text": "Charakternamen & Paper Session. Charakternamen & Paper Session."
+    },
+    {
+      "start": 3858.8,
+      "end": 3867.94,
+      "speaker": "Celin (Cookie)",
+      "text": "Charakternamen & Paper Session. Charakternamen & Paper Session."
+    },
+    {
+      "start": 3870.36,
+      "end": 3875.2799999999997,
+      "speaker": "Deniz (GM)",
+      "text": "Charakternamen & Paper Session."
+    },
+    {
+      "start": 3879.36,
+      "end": 3888.9,
+      "speaker": "Deniz (GM)",
+      "text": "Also das ist selbst, also von hinten mit einem bloßen Auge könnte man spielen, wo ist Cookie, also wo ist Waldo oder sowas. Man erkennt sich halt wirklich nichts."
+    },
+    {
+      "start": 3889.91,
+      "end": 3897.66,
+      "speaker": "Celin (Cookie)",
+      "text": "Nee, ich bewege mich jetzt auch einfach, ich warte jetzt einfach mal, was Mikasa da macht."
+    },
+    {
+      "start": 3897.98,
+      "end": 3903.42,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, als du oben auf den Berg steigst, kannst du noch ein bisschen mehr entdecken."
+    },
+    {
+      "start": 3904.24,
+      "end": 3912.0,
+      "speaker": "Basti (Esterossa)",
+      "text": "Also ich gehe, warte, ich bleibe jetzt mal hier hinten. Aber ich will ja nicht, dass mich jeder sehr gesehen kann, weil ich nicht weiß, wo die Gegner gerade stehen. Ja,"
+    },
+    {
+      "start": 3912.06,
+      "end": 3927.95,
+      "speaker": "Deniz (GM)",
+      "text": "aber du siehst, die, die ich revealed habe, die kannst du erkennen. Die sind alle in deiner Line of Sight. Die beiden unteren. Ja, du siehst, warte, ich markiere dir die. Hier siehst du einen. Ah, da hinten ist noch einer, ja. Und"
+    },
+    {
+      "start": 3927.95,
+      "end": 3933.7,
+      "speaker": "Basti (Esterossa)",
+      "text": "hier siehst du zwei. Aha, aber oben auf dem Gebäude keiner, ja? Sonst siehst du oben auf dem"
+    },
+    {
+      "start": 3933.7,
+      "end": 3934.4,
+      "speaker": "Deniz (GM)",
+      "text": "Gebäude keinen, nein."
+    },
+    {
+      "start": 3934.82,
+      "end": 3941.7799999999997,
+      "speaker": "Basti (Esterossa)",
+      "text": "Okay, das heißt, ich kann noch einen Ticken näher gehen. Hier."
+    },
+    {
+      "start": 3942.14,
+      "end": 3958.79,
+      "speaker": "Deniz (GM)",
+      "text": "An die Goblingötter, ihr dürft gerne schon mal ein bisschen überlegen, was hier im Dorf passieren könnte. Ihr müsst nichts machen, aber ihr dürft gerne die Goblin ein bisschen bearbeiten. Aber"
+    },
+    {
+      "start": 3958.79,
+      "end": 3961.5299999999997,
+      "speaker": "Celin (Cookie)",
+      "text": "bitte jetzt nicht mit ner heftigen Diamantrüstung, ja?"
+    },
+    {
+      "start": 3962.41,
+      "end": 4002.14,
+      "speaker": "Deniz (GM)",
+      "text": "Diamantrüstung. Evasion Score 20. Also ihr wisst, aus euren Studien wisst ihr alle drei, Goblins alleine sind nicht so gefährlich, aber wenn ihr die aufmischt, alle auf einmal, dann könnte es schon gefährlich werden. Als du aber ein bisschen über den Berg näher kommst, merkst du halt, die sind so ein bisschen in Feierlaune, denn du glaubst, dass sie dieses Lager halt komplett eingenommen haben und deswegen scheinen die so eine Art Party zu schmeißen. Die sind ein bisschen vielleicht angetrunken teilweise und zelebrieren einfach ihren Sieg über die ganzen anderen Kreaturen, die sie besiegt haben."
+    },
+    {
+      "start": 4003.36,
+      "end": 4016.02,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ich flieg hier mal so runter auf den Vorsprung hier. Seh ich unter mir irgendwo? Ah, da unten. Da seh ich doch jemanden. Da. Ähm, ich würde so, ähm, Marco... Warte, das"
+    },
+    {
+      "start": 4016.02,
+      "end": 4017.42,
+      "speaker": "Celin (Cookie)",
+      "text": "bin ich hier."
+    },
+    {
+      "start": 4018.56,
+      "end": 4021.16,
+      "speaker": "Basti (Esterossa)",
+      "text": "Lukas? Wir sind beide da. Achso."
+    },
+    {
+      "start": 4021.34,
+      "end": 4022.64,
+      "speaker": "Celin (Cookie)",
+      "text": "Ja, wir sind beide da, ja. Ja,"
+    },
+    {
+      "start": 4023.2200000000003,
+      "end": 4035.3,
+      "speaker": "Basti (Esterossa)",
+      "text": "gut, die sieht man nicht. Ich würde einmal rüber zeigen und zwar einmal von hier nach da rüber zeigen. Also auf dem Berg."
+    },
+    {
+      "start": 4035.52,
+      "end": 4036.24,
+      "speaker": "Deniz (GM)",
+      "text": "Sollen wir da rüber gehen?"
+    },
+    {
+      "start": 4036.74,
+      "end": 4052.46,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ja, und dann so von wegen hoch. Oder, ne, ich mach's noch besser, warte. Ich winke, also so von wegen so, nein, halt, stopp. Und sage erstmal dahin. Also zeige dahin. Ich"
+    },
+    {
+      "start": 4052.46,
+      "end": 4055.88,
+      "speaker": "Celin (Cookie)",
+      "text": "geh hier wieder durch die Wiese. Ich"
+    },
+    {
+      "start": 4055.88,
+      "end": 4056.7799999999997,
+      "speaker": "Basti (Esterossa)",
+      "text": "seh, wie sie sich bewegen."
+    },
+    {
+      "start": 4057.8199999999997,
+      "end": 4091.02,
+      "speaker": "Deniz (GM)",
+      "text": "Könnt ihr beide mal, also da unten, gerne im Vorder... Ein W6 dürft ihr dazunehmen. Beide mal einen Agility, ne was war das? Finesse-Wurf bitte machen. Äh, ich fang an. Hit! Okay. Das, also du bist so heimlich wie nur irgendwie möglich. Aha. Okay Jonas. Hit! Das"
+    },
+    {
+      "start": 4091.02,
+      "end": 4093.2799999999997,
+      "speaker": "Celin (Cookie)",
+      "text": "würde"
+    },
+    {
+      "start": 4095.1,
+      "end": 4097.5,
+      "speaker": "Basti (Esterossa)",
+      "text": "mich aber jetzt auch lang sneaken. Muss ich auch einen machen?"
+    },
+    {
+      "start": 4098.89,
+      "end": 4110.26,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, würde ich auch sagen. Wird dir aber keinen Vorteil geben, weil du sehr... Doch ein bisschen auffälliger bist als die anderen."
+    },
+    {
+      "start": 4111.68,
+      "end": 4121.58,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ein Crit, oder? Nee. Äh, 15. 15, okay. Und ein 4-Point für dich. Alright, alright. Na?"
+    },
+    {
+      "start": 4126.02,
+      "end": 4129.78,
+      "speaker": "Celin (Cookie)",
+      "text": "Jo, was wolltest du jetzt? Was sollen wir jetzt hier machen?"
+    },
+    {
+      "start": 4130.1,
+      "end": 4168.8099999999995,
+      "speaker": "Basti (Esterossa)",
+      "text": "Erstmal will ich die Würfel alle weghaben, danke. Äh, so, ähm. Also, Leute. Äh. So. Also wir können jetzt hier über diesen Hügel hoch. und würden direkt bei den Palisaden rauskommen und einem größeren Gebäude. Da habe ich noch keine Wache gesehen, nur von da oben. Wenn wir weiter links an der Palisade entlang gehen, wäre der Haupteingang. Wenn wir hier über den Berg klettern, kommen wir direkt bei denen ins Camp, ohne über den Haupteingang gehen zu müssen. Wir können natürlich beides machen, sonst war rundherum, konntest du nicht drüber kommen."
+    },
+    {
+      "start": 4170.45,
+      "end": 4226.79,
+      "speaker": "Deniz (GM)",
+      "text": "Während ihr am quatschen seid, kommt plötzlich etwas von oben und torkelt so bis zur Kante des Hügels und ist bis am Pfeifen. In der linken Hand hat er noch so einen Krug, so einen kleinen und dann zieht er sein Hülschen aus und pinkelt den Berg runter. Direkt über euch. Seht ihr den nicht? Block ich mit meinem Schild. Ne, ich wollt grad sagen, als der halt den Berg runterpinkelt, mach mal bitte einen Agilitätswurf, ob du es rechtzeitig davon wegschaffst oder ob du halt einfach die Dusche entgegennimmst. Okay, jaja, das reicht, das reicht. Tatsächlich für dich ist das kein easy, der braucht echt lange, der ist richtig torkelig und du gehst einfach ein paar Schritte daneben."
+    },
+    {
+      "start": 4227.43,
+      "end": 4231.2,
+      "speaker": "Basti (Esterossa)",
+      "text": "Okay, dann würde ich mal sagen, langsam hoch zusammen."
+    },
+    {
+      "start": 4251.0599999999995,
+      "end": 4255.62,
+      "speaker": "Basti (Esterossa)",
+      "text": "Charakternamen & Paper Session."
+    },
+    {
+      "start": 4275.34,
+      "end": 4306.86,
+      "speaker": "Deniz (GM)",
+      "text": "Okay? Also du packst dir dieses kleine Goblin-Kind und was willst du machen? Genick umzwirbeln. Nein, du machst direkt den Flaschenöffner und drehst die Fanta-Flasche auf. Mach mal einen Stärkewurf, wie schlimm du das anrichtest. Kann ich da jetzt theoretisch noch Hope dazu packen? Also du glaubst, dass du es auch so hinkriegst, aber du darfst gerne mit einem Hope noch einen Bonus geben, wenn du möchtest."
+    },
+    {
+      "start": 4307.34,
+      "end": 4310.6,
+      "speaker": "Celin (Cookie)",
+      "text": "Der Typ ist besoffen und gerade richtig glücklich in seinem Leben. Goblins leer."
+    },
+    {
+      "start": 4312.05,
+      "end": 4337.5,
+      "speaker": "Deniz (GM)",
+      "text": "Ich glaub der Goblin, der, der Würfel backt. Oh Gottlos. Also du... Also du hast nicht damit gerechnet, wie leicht der Kopf des kleinen Kindergoblins nachgibt. Du drehst den halt zweimal um seine eigene Achse, mehr oder weniger. Und der Körper rutscht dir halt schon direkt vom Hubi runter. Und du hast halt immer noch diesen grinsenden Goblin-Kopf in der Hand, der halt immer noch so... Und irgendwann die Klappe hält."
+    },
+    {
+      "start": 4340.73,
+      "end": 4349.63,
+      "speaker": "Deniz (GM)",
+      "text": "Den Goblin-Kopf, den packe ich ein, der kommt in meinen Beugen. Nein, dein Inventar. Schreib dir gerne Kinder-Goblin-Kopf auf. Ich"
+    },
+    {
+      "start": 4349.63,
+      "end": 4350.87,
+      "speaker": "Basti (Esterossa)",
+      "text": "gehe zu Marco und"
+    },
+    {
+      "start": 4350.87,
+      "end": 4353.23,
+      "speaker": "Celin (Cookie)",
+      "text": "halte"
+    },
+    {
+      "start": 4353.23,
+      "end": 4358.99,
+      "speaker": "Basti (Esterossa)",
+      "text": "ihm meine Hand hin, so brüderlich mäßig. Von wegen geiler Job, hast du geil gemacht."
+    },
+    {
+      "start": 4358.99,
+      "end": 4365.37,
+      "speaker": "Deniz (GM)",
+      "text": "Geiler Job, das schmiert so das Blut an dir. Es passiert aber etwas, während ihr beschäftigt seid."
+    },
+    {
+      "start": 4367.91,
+      "end": 4377.49,
+      "speaker": "Deniz (GM)",
+      "text": "Warte, aus der Perspektive seht ihr nämlich, wie einer der Goblins aus dem Haus rauskommt und praktisch nach vorne tritt."
+    },
+    {
+      "start": 4377.83,
+      "end": 4379.13,
+      "speaker": "Marco (Dodo)",
+      "text": "Meine Freude!"
+    },
+    {
+      "start": 4384.73,
+      "end": 4393.01,
+      "speaker": "Deniz (GM)",
+      "text": "Und ihr seht halt, wie alle Goblins, teilweise angetrunken, teilweise auch nicht, sich halt mehr oder weniger vor dem Hauptgebäude versammeln."
+    },
+    {
+      "start": 4395.91,
+      "end": 4399.3099999999995,
+      "speaker": "Celin (Cookie)",
+      "text": "Das ist ja schlecht für uns, wenn die sich jetzt hier so versammeln."
+    },
+    {
+      "start": 4400.33,
+      "end": 4406.17,
+      "speaker": "Deniz (GM)",
+      "text": "Tendenz ist ja erstmal schlecht für euch, aber auch in manchen Punkten vielleicht ein Vorteil. Aber wir wissen jetzt wie viele das sind."
+    },
+    {
+      "start": 4406.79,
+      "end": 4410.99,
+      "speaker": "Marco (Dodo)",
+      "text": "Lasst unseren Meister sprechen, er hat ein paar Worte an euch zu richten."
+    },
+    {
+      "start": 4411.77,
+      "end": 4417.1900000000005,
+      "speaker": "Deniz (GM)",
+      "text": "Und ganz oben... Das war zu flott."
+    },
+    {
+      "start": 4417.85,
+      "end": 4420.03,
+      "speaker": "Celin (Cookie)",
+      "text": "Tritt... Dem fällt jetzt bestimmt auf, dass so ein Kind fehlt."
+    },
+    {
+      "start": 4421.3099999999995,
+      "end": 4446.02,
+      "speaker": "Deniz (GM)",
+      "text": "Tritt ein... Großer... Oder was heißt das? Ein bisschen größerer... Warte, wo ist meine Größe? Set Size... Der ist ein bisschen zu groß. Wollte grad sagen, Digga. Wo ist denn das? Ich glaub, der ist... Kann man gar nicht so viel größer machen, ne? Okay, nevermind. Er ist einen Ticken größer optisch als die anderen Goblins. Und der spricht jetzt zu seinen Goblins. Meine"
+    },
+    {
+      "start": 4446.02,
+      "end": 4450.08,
+      "speaker": "Marco (Dodo)",
+      "text": "Freunde! Mein Name ist..."
+    },
+    {
+      "start": 4451.01,
+      "end": 4463.16,
+      "speaker": "Deniz (GM)",
+      "text": "Warte... Mein Name ist... Ich seh ihn grad nicht. Irgendwas mit Schlabberschlurz. Ich... Schleichfurz, dankeschön."
+    },
+    {
+      "start": 4463.32,
+      "end": 4486.0,
+      "speaker": "Marco (Dodo)",
+      "text": "Mein Name ist Schleichfurz und ich... Ich bin der Herrscher über dieses Dorf. Wir haben alle Menschlinge ausgelöscht. Und jetzt, jetzt ist es Zeit, bald weiterzuziehen. Dieser Tag soll uns noch als Belohnung da sein. Feiert, meine Freunde. Ich werde alles weitere vorbereiten."
+    },
+    {
+      "start": 4486.62,
+      "end": 4507.58,
+      "speaker": "Deniz (GM)",
+      "text": "Und ihr seht halt, wie die Goblins am Jubeln sind und sich langsam wieder davon machen. und der Goblin-Mage, so sieht er zumindest aus, sich wieder im Gebäude verschanzt."
+    },
+    {
+      "start": 4511.77,
+      "end": 4522.8,
+      "speaker": "Basti (Esterossa)",
+      "text": "Okay, dann lass mal Stealth-mäßig, ihr seid ja absolut hardcore Stealth, lass da mal hier ein paar Mäuchle-Mode begehen. Es"
+    },
+    {
+      "start": 4522.8,
+      "end": 4524.22,
+      "speaker": "Celin (Cookie)",
+      "text": "gibt sieben Zelte?"
+    },
+    {
+      "start": 4525.05,
+      "end": 4528.27,
+      "speaker": "Deniz (GM)",
+      "text": "Es ist nicht von den Goblins gewesen hier das Dorf wahrscheinlich."
+    },
+    {
+      "start": 4529.55,
+      "end": 4531.17,
+      "speaker": "Celin (Cookie)",
+      "text": "Das haben"
+    },
+    {
+      "start": 4531.17,
+      "end": 4532.27,
+      "speaker": "Deniz (GM)",
+      "text": "die wahrscheinlich auseinander genommen."
+    },
+    {
+      "start": 4539.3,
+      "end": 4543.32,
+      "speaker": "Celin (Cookie)",
+      "text": "Ja, das ist gar nicht auffällig, wie wir hier rumlaufen. Gar nicht. Ich"
+    },
+    {
+      "start": 4543.32,
+      "end": 4545.1,
+      "speaker": "Basti (Esterossa)",
+      "text": "seh ja noch keinen. Ich seh ja niemanden."
+    },
+    {
+      "start": 4546.69,
+      "end": 4548.01,
+      "speaker": "Celin (Cookie)",
+      "text": "Ja, zu. Stimmt, hier ist niemand."
+    },
+    {
+      "start": 4549.24,
+      "end": 4567.6,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, tatsächlich. Die ersten, die ihr seht, die sind nicht weit weg von euch und die sehen beide nicht ganz so sehr besoffen aus. Aus der Ferne hört ihr auch ein bisschen quatschen. Das war aber eine kurze Ansprache vom Herrn. Ja, der Schleichfurz, der ist nicht so ganz gesprächig, aber immerhin ist er netter, Chef. Ja, ja."
+    },
+    {
+      "start": 4569.52,
+      "end": 4570.22,
+      "speaker": "Celin (Cookie)",
+      "text": "Nett auch schon."
+    },
+    {
+      "start": 4571.94,
+      "end": 4578.61,
+      "speaker": "Basti (Esterossa)",
+      "text": "Das hier unten, das ist so ein Asset, oder?"
+    },
+    {
+      "start": 4580.33,
+      "end": 4598.59,
+      "speaker": "Deniz (GM)",
+      "text": "Das sieht eher aus wie einfach noch Sumpf. Also nicht säurehaltig, aber wahrscheinlich nicht so leicht zu durchqueren. Deine Schuhe sind schmutzig. Ganz kurz, können wir mal kurz anmerken, wo ist eigentlich dein Frettchen? Ja, das ist tot."
+    },
+    {
+      "start": 4598.91,
+      "end": 4599.99,
+      "speaker": "Celin (Cookie)",
+      "text": "Der ist in meinem Pokéball."
+    },
+    {
+      "start": 4600.15,
+      "end": 4603.45,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, das ist in deinem Pokéball. Guck mal eben, ob ich es finde."
+    },
+    {
+      "start": 4605.28,
+      "end": 4608.76,
+      "speaker": "Celin (Cookie)",
+      "text": "Warte, wo hab ich den das nächste Mal? Der war bei der Nachtwache dabei."
+    },
+    {
+      "start": 4609.94,
+      "end": 4628.09,
+      "speaker": "Basti (Esterossa)",
+      "text": "Kurze Krisensitzung. Wollen wir hier, wo wollen wir jetzt lang? Wollen wir hier lang? Mit der Gefahr hinaus, dass sie uns sehen können? Weil sie bewachen ja anscheinend den Eingang, also die schauen ja von... Hallo?"
+    },
+    {
+      "start": 4628.91,
+      "end": 4637.75,
+      "speaker": "Marco (Dodo)",
+      "text": "Können wir die vielleicht auch irgendwie zu uns locken? Wir können ja auch das Frettchen vorschicken. Das Frettchen soll die zu uns locken."
+    },
+    {
+      "start": 4638.6,
+      "end": 4650.76,
+      "speaker": "Basti (Esterossa)",
+      "text": "Wir könnten natürlich aber auch hier lang gehen. Oh, hier lang gehen. Habt ihr gesehen? Nee, da würde ich"
+    },
+    {
+      "start": 4650.76,
+      "end": 4662.68,
+      "speaker": "Celin (Cookie)",
+      "text": "nicht lang gehen, da ist ja dieser Oper-Dings, der ist ja in dem Gebäude da drin. Ich find's da, darunter zu den zwei Bäumen, find ich eigentlich gar nicht so... Wir"
+    },
+    {
+      "start": 4662.68,
+      "end": 4681.12,
+      "speaker": "Basti (Esterossa)",
+      "text": "könnten uns auch hier oben drauf verstecken. Und wenn du lockst sie mit dem Frettchen, wenn die da Bock drauf haben, bis nach hier vorne. Funktioniert. So. Bis nach hier unter uns und dann... Hada Kiddy werden die weggemacht. Machst du"
+    },
+    {
+      "start": 4681.12,
+      "end": 4684.36,
+      "speaker": "Deniz (GM)",
+      "text": "Aids hier, Auditore tut. Ja. Ist"
+    },
+    {
+      "start": 4685.8,
+      "end": 4686.36,
+      "speaker": "Basti (Esterossa)",
+      "text": "das ein Plan?"
+    },
+    {
+      "start": 4687.14,
+      "end": 4695.42,
+      "speaker": "Celin (Cookie)",
+      "text": "Ja. Ich mein, ich kann ja auch mal auf dem Dach bleiben, weil ich hab ja noch meinen Bogen. Ich kann da ja zur Not dann auch... Also Gegenvorschläge gerne"
+    },
+    {
+      "start": 4695.42,
+      "end": 4723.78,
+      "speaker": "Basti (Esterossa)",
+      "text": "immer, ne? Oder noch besser, das Frettchen soll die in das Gebäude unter uns reinlocken. Weil dann kann sich einer... Also du bleibst oben einfach sozusagen. Und einer steht hier. Ne? und einen auf der anderen Seite. Und wenn die dann reingehen sollten in das Gebäude, dann kommen wir von hinten und dann ist es noch schwerer für die anderen, das zu sehen."
+    },
+    {
+      "start": 4726.04,
+      "end": 4730.12,
+      "speaker": "Celin (Cookie)",
+      "text": "Ja, das ist gut. Klingt gut. Und"
+    },
+    {
+      "start": 4731.5,
+      "end": 4733.52,
+      "speaker": "Deniz (GM)",
+      "text": "ich bleib mal zur"
+    },
+    {
+      "start": 4733.52,
+      "end": 4734.12,
+      "speaker": "Celin (Cookie)",
+      "text": "Not hier oben."
+    },
+    {
+      "start": 4734.48,
+      "end": 4742.86,
+      "speaker": "Deniz (GM)",
+      "text": "Dann würfen wir nochmal auf Stealth bitte bzw. auf Finesse. Also der Dodo bitte. Yes."
+    },
+    {
+      "start": 4745.69,
+      "end": 4747.31,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, okay, du bist sehr gut versteckt."
+    },
+    {
+      "start": 4751.15,
+      "end": 4752.61,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ich steh mal an, ich hier hinten auch."
+    },
+    {
+      "start": 4754.16,
+      "end": 4757.14,
+      "speaker": "Deniz (GM)",
+      "text": "Mach auch mal einen Finesse-Check."
+    },
+    {
+      "start": 4762.08,
+      "end": 4766.92,
+      "speaker": "Basti (Esterossa)",
+      "text": "Darf ich zwei Hauptpunkte ausgeben? Zwei sind das immer. Nee, einer. Du darfst dir gerne zwei"
+    },
+    {
+      "start": 4766.92,
+      "end": 4771.84,
+      "speaker": "Deniz (GM)",
+      "text": "Hauptpunkte ausgeben, um dir einen Vorteil zu verschaffen. Dann trägst du zwei W6, glaube ich, sogar dazu."
+    },
+    {
+      "start": 4773.98,
+      "end": 4777.11,
+      "speaker": "Basti (Esterossa)",
+      "text": "Erstmal das und dann... Ich hab's gecallt."
+    },
+    {
+      "start": 4785.3,
+      "end": 4787.24,
+      "speaker": "Deniz (GM)",
+      "text": "Charakternamen & Paper Session."
+    },
+    {
+      "start": 4791.75,
+      "end": 4792.73,
+      "speaker": "Basti (Esterossa)",
+      "text": "Charakternamen & Paper Session."
+    },
+    {
+      "start": 4796.39,
+      "end": 4797.77,
+      "speaker": "Celin (Cookie)",
+      "text": "Charakternamen & Paper Session."
+    },
+    {
+      "start": 4814.11,
+      "end": 4817.19,
+      "speaker": "Celin (Cookie)",
+      "text": "Der fliegt ja wirklich. Oh mein Gott, kann ich den auch wieder runter holen?"
+    },
+    {
+      "start": 4817.49,
+      "end": 4820.43,
+      "speaker": "Deniz (GM)",
+      "text": "Naja, Basti ist einfach gut geölt, der ist auch gut."
+    },
+    {
+      "start": 4822.47,
+      "end": 4824.75,
+      "speaker": "Celin (Cookie)",
+      "text": "Hä, wie kommt der da jetzt wieder runter? Ich seh's nicht."
+    },
+    {
+      "start": 4825.84,
+      "end": 4827.2,
+      "speaker": "Basti (Esterossa)",
+      "text": "Steuerung, Linksklick, runterziehen."
+    },
+    {
+      "start": 4827.38,
+      "end": 4831.97,
+      "speaker": "Deniz (GM)",
+      "text": "Ja. Ah,"
+    },
+    {
+      "start": 4832.61,
+      "end": 4834.51,
+      "speaker": "Celin (Cookie)",
+      "text": "Hilfe? Ah jetzt, okay."
+    },
+    {
+      "start": 4835.37,
+      "end": 4875.24,
+      "speaker": "Deniz (GM)",
+      "text": "Als du mit dem Freddchen ein bisschen näher kommst, bemerken die Goblins den. Ah, guck mal, was ist das denn für eine hässliche Ratte? Die ist viel größer als das alles, was wir bis jetzt gesehen haben. Ah, ich hab noch ein bisschen Hunger. Ein bisschen Fleisch wär nicht schlecht. Ja, ein bisschen Fleisch wär nicht schlecht, oder? Und tatsächlich die beiden Goblins scheinen dem zu folgen. Aber der eine, ey, der rennt aber schnell. Warte kurz, warte kurz, lass den mal kurz da stehen bei der Blume. Der nimmt seine beiden, ja, nimmt seine beiden, einen Pfeil und der eine wirft seine Waffe, seinen Pfeil, ach, ei, ei, ei, ei, und schießt den erstmal daneben."
+    },
+    {
+      "start": 4875.9,
+      "end": 4878.8,
+      "speaker": "Celin (Cookie)",
+      "text": "Ah, du hast nicht getroffen, ja, äh."
+    },
+    {
+      "start": 4880.52,
+      "end": 4890.93,
+      "speaker": "Deniz (GM)",
+      "text": "und die kommen weiter auf dein Frettchen zu. Jetzt haben wir dich! Dummes Frettchen!"
+    },
+    {
+      "start": 4893.46,
+      "end": 4896.58,
+      "speaker": "Basti (Esterossa)",
+      "text": "Sobald die aus meinem Sichtfeld raus sind, also side of line."
+    },
+    {
+      "start": 4897.52,
+      "end": 4906.1,
+      "speaker": "Celin (Cookie)",
+      "text": "Der jumpt jetzt da oben. Ach, ich seh den Kisten. Der ist da oben auf den Kisten da. Ja, okay. Ah, ich hab's verloren! Wir machen mal ein bisschen"
+    },
+    {
+      "start": 4906.1,
+      "end": 4908.24,
+      "speaker": "Deniz (GM)",
+      "text": "kurz hier... So."
+    },
+    {
+      "start": 4909.52,
+      "end": 4914.24,
+      "speaker": "Celin (Cookie)",
+      "text": "Komm schon! Ah, ja gut, dann ist das halt in den Kisten. Hier zwischen den Kisten, das ist auch gut."
+    },
+    {
+      "start": 4914.91,
+      "end": 4921.81,
+      "speaker": "Deniz (GM)",
+      "text": "Seht ihr jetzt übrigens auch, dass das Dach weg ist? Ne, das Dach ist noch da bei mir. Ganz rechts"
+    },
+    {
+      "start": 4921.81,
+      "end": 4925.85,
+      "speaker": "Celin (Cookie)",
+      "text": "habt ihr"
+    },
+    {
+      "start": 4925.85,
+      "end": 4934.15,
+      "speaker": "Deniz (GM)",
+      "text": "so ein grünes Ding zum Verschieben und dann könnt ihr das Dach wegmachen, wenn ihr das möchtet. Ah, okay."
+    },
+    {
+      "start": 4935.57,
+      "end": 4946.29,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ja gut, aber es geht ja auch mit N, also wenn du N hast."
+    },
+    {
+      "start": 4952.22,
+      "end": 4955.22,
+      "speaker": "Basti (Esterossa)",
+      "text": "So, gehen die noch ein Stück rein oder bleiben die jetzt stehen?"
+    },
+    {
+      "start": 4956.06,
+      "end": 4964.28,
+      "speaker": "Deniz (GM)",
+      "text": "Ne, die gucken jetzt, machen so ein bisschen Blicke. Wo ist die kleine Ratte hin? Ah, scheiß drauf. Wir finden auch noch irgendwas anderes zu fressen."
+    },
+    {
+      "start": 4965.84,
+      "end": 4966.8,
+      "speaker": "Basti (Esterossa)",
+      "text": "Jetzt aufs Maul."
+    },
+    {
+      "start": 4967.26,
+      "end": 5006.19,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, in dem Augenblick, als du näher trittst und ihr den Move machen wollt, springen die, ich benutze meine zwei Vierpunkte, Springen die nach vorne, ohne dass ihr das wirklich mitbekommt. Die drehen sich um und beide zielen direkt auf dich, Mikasa. Und der erste Angriff ist eine 17. Trifft dich wahrscheinlich. Nein. Dann öffnen wir mal den Schaden. Das ist eine 10. 10 Schaden."
+    },
+    {
+      "start": 5008.87,
+      "end": 5011.67,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, der zweite schießt ebenfalls. Ich könnte mich"
+    },
+    {
+      "start": 5011.67,
+      "end": 5034.97,
+      "speaker": "Marco (Dodo)",
+      "text": "da auch noch dazwischen werfen. Kannst du machen, wenn du möchtest. Ja, ich markiere mir einen Stress, werfe mich dazwischen, nehme den Schaden quasi auf mich und dann wird Schaden abgezogen in Höhe von meiner Stärke plus zusätzlich die neuen Rüstungen, die ich habe, das heißt minus 11, das heißt kein Schaden. Kein"
+    },
+    {
+      "start": 5034.97,
+      "end": 5036.83,
+      "speaker": "Deniz (GM)",
+      "text": "Schaden. Dann geht der zweite Schuss aber trotzdem auf dich."
+    },
+    {
+      "start": 5039.34,
+      "end": 5043.74,
+      "speaker": "Deniz (GM)",
+      "text": "Und das wären ein 21. Trifft wahrscheinlich."
+    },
+    {
+      "start": 5046.0599999999995,
+      "end": 5049.8,
+      "speaker": "Marco (Dodo)",
+      "text": "Äh, wen hast du jetzt gemeint? Dich nochmal. Die Kassa oder diesmal mich?"
+    },
+    {
+      "start": 5050.04,
+      "end": 5054.12,
+      "speaker": "Deniz (GM)",
+      "text": "Ne, wieder dich. Und es wären 5 Schaden, die auf dich zukommen würden."
+    },
+    {
+      "start": 5055.1900000000005,
+      "end": 5057.3099999999995,
+      "speaker": "Marco (Dodo)",
+      "text": "Ja gut, minus die 9 Rüstungen wäre... Aber"
+    },
+    {
+      "start": 5057.3099999999995,
+      "end": 5059.11,
+      "speaker": "Deniz (GM)",
+      "text": "du ziehst dir immer einen Armorslot ab, ne?"
+    },
+    {
+      "start": 5060.01,
+      "end": 5069.54,
+      "speaker": "Marco (Dodo)",
+      "text": "Ne ne, das ist ja doch meine Klasse. Wird erstmal 9 abgezogen und dann kann ich immer noch zusätzlich Rüstungen. Okay, ja das"
+    },
+    {
+      "start": 5069.54,
+      "end": 5073.62,
+      "speaker": "Deniz (GM)",
+      "text": "müssen wir bei Gelegenheit nochmal genauer untersuchen. Das klingt nämlich schon... Du hast schon mit einer"
+    },
+    {
+      "start": 5073.62,
+      "end": 5078.66,
+      "speaker": "Basti (Esterossa)",
+      "text": "19 getroffen. Die 5 sind ja jetzt wie eine Minor Damage, Major Damage oder Servage Damage."
+    },
+    {
+      "start": 5080.34,
+      "end": 5097.1900000000005,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, getroffen hab ich, aber er zieht ja praktisch den Standard. Dann kriegst du aber einen Stress, weil du jetzt direkt 2 Schüsse hintereinander abbekommen hast. Okay. Okay, dann gebe ich die Initiative zurück an euch. Ja, dann."
+    },
+    {
+      "start": 5097.87,
+      "end": 5113.41,
+      "speaker": "Celin (Cookie)",
+      "text": "Also ich bleibe jetzt erstmal draußen. Ich beobachte mal so ein bisschen von außen, falls da nicht noch irgendwie was kommen sollte, falls sie den Krach mitbekommen. Also der Krach hält sich sehr in Grenzen tatsächlich. Okay, aber ich überlasse das jetzt mal mit dem Nahkampf euch, okay?"
+    },
+    {
+      "start": 5115.64,
+      "end": 5117.9400000000005,
+      "speaker": "Basti (Esterossa)",
+      "text": "Dann einer links, einer rechts, würde ich sagen, ne?"
+    },
+    {
+      "start": 5118.08,
+      "end": 5128.83,
+      "speaker": "Deniz (GM)",
+      "text": "Nochmal Chat. Ihr seid die Goblingötter. Wenn ihr irgendwas hier beeinflussen wollt, sagt das gerne. Okay, ja. Irgendwas, was in dem Kontext gerade Sinn macht."
+    },
+    {
+      "start": 5131.33,
+      "end": 5132.3099999999995,
+      "speaker": "Deniz (GM)",
+      "text": "Was möchtest du tun?"
+    },
+    {
+      "start": 5133.37,
+      "end": 5141.36,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ich würde dem mit meiner Axt schön von oben den Schädel spalten wollen."
+    },
+    {
+      "start": 5141.4400000000005,
+      "end": 5145.88,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, du holst aus und willst der Axt komplett zuhauen. Mach mal mit Angriffswurf."
+    },
+    {
+      "start": 5150.12,
+      "end": 5151.76,
+      "speaker": "Basti (Esterossa)",
+      "text": "Oh shit!"
+    },
+    {
+      "start": 5153.08,
+      "end": 5160.0599999999995,
+      "speaker": "Deniz (GM)",
+      "text": "Nein! Verdammt! Das war eine 9 und eine 6. Aber egal, es ist 17 trotzdem. Du triffst auf jeden Fall. Wie viel Schaden?"
+    },
+    {
+      "start": 5167.83,
+      "end": 5169.59,
+      "speaker": "Basti (Esterossa)",
+      "text": "Sind 9 magischer."
+    },
+    {
+      "start": 5170.26,
+      "end": 5180.28,
+      "speaker": "Deniz (GM)",
+      "text": "Neumarkscher Schaden. Du haust dem Ding ziemlich hart auf die Fresse und du siehst halt direkt, wie einer der Arme von ihm schlaff wird. Also der rechte Arm. Und der nur aufschreit, du"
+    },
+    {
+      "start": 5180.5,
+      "end": 5182.9,
+      "speaker": "Marco (Dodo)",
+      "text": "behindertes, komisches Ding."
+    },
+    {
+      "start": 5187.41,
+      "end": 5203.24,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, dann seid ihr noch dran, richtig? Marco? Ja, dann hau ich auf den anderen drauf. Wie viel ist das insgesamt bei dir?"
+    },
+    {
+      "start": 5206.5,
+      "end": 5208.48,
+      "speaker": "Marco (Dodo)",
+      "text": "Da kommt noch Stärke dazu, oder?"
+    },
+    {
+      "start": 5210.55,
+      "end": 5221.93,
+      "speaker": "Deniz (GM)",
+      "text": "Das steht bei deiner Waffe schon daneben. Tatsächlich triffst du den sogar gerade eben noch so und auch du darfst einen Schadensruf machen."
+    },
+    {
+      "start": 5226.3099999999995,
+      "end": 5232.53,
+      "speaker": "Marco (Dodo)",
+      "text": "Plus eins sind sieben, aber war ja jetzt mit vier."
+    },
+    {
+      "start": 5235.23,
+      "end": 5276.8,
+      "speaker": "Deniz (GM)",
+      "text": "Wie viel war das Damage, sorry? Sieben insgesamt. Du triffst ihn, aber tatsächlich ist davon nichts. Das ist allzu sehr beeindruckt. In dem Augenblick aber, als du was triffst, rollen die Fässer plötzlich auf euch zu und fallen praktisch auf euch drauf. Alle mal bitte, alle vier, auch die Goblins müssen einen machen, einen Agilitätscheck tun. Oh scheiße. Ich fang an. Einmal für die Goblins hier vorne. Das ist eine 9, das ist eine 19. Und die anderen Goblins... Okay, ähm... Ich müsste noch. Du musst noch, genau."
+    },
+    {
+      "start": 5277.7,
+      "end": 5290.24,
+      "speaker": "Basti (Esterossa)",
+      "text": "Dürfte ich wieder zwei Hop-Points ausgeben, weil ich gerne, wenn ich das sehe, mit meinen Flügeln einmal so einen Schlag nach vorne mache, um einmal genau so einen Satz nach hinten zu machen."
+    },
+    {
+      "start": 5290.38,
+      "end": 5293.9,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, ja, gerne. Dann kriegst du plus 6 auf deinen Wurf, also 1w6."
+    },
+    {
+      "start": 5295.42,
+      "end": 5297.76,
+      "speaker": "Basti (Esterossa)",
+      "text": "Diesmal mit drin im Wurf."
+    },
+    {
+      "start": 5300.86,
+      "end": 5330.5599999999995,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, alle haben es geschafft. Beweg deine Figur gerne nach hinten. Alle haben es geschafft, außer Dodo. Du hast es leider nicht geschafft. Du kriegst einen Schadenspunkt und bei dir hängen gerade so ein paar Platten über dir. Du bist so in die Knie gegangen und so eine der Fässer oder zwei Fässer liegen ziemlich ungünstig auf dir drauf. Markiere dir gerne mal einen Stresspunkt bitte, Dodo. Der letzte war aber einen 4 höher, richtig?"
+    },
+    {
+      "start": 5331.91,
+      "end": 5333.35,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ja, da war ein 4 bei mir."
+    },
+    {
+      "start": 5334.49,
+      "end": 5354.5599999999995,
+      "speaker": "Deniz (GM)",
+      "text": "In dem Augenblick seht ihr, wie der bereits angehittete Goblin einfach so einen Trank aufmacht, runterschluckt und ihr seht einfach nur wie, oh nicht fliegt, sondern wie die Kreatur eine ganze Größenkategorie wächst. Kommt her ihr Kleinen!"
+    },
+    {
+      "start": 5356.61,
+      "end": 5362.24,
+      "speaker": "Basti (Esterossa)",
+      "text": "Der war angehittet, das war der, der aber schon fett gefressen hat. Der hat schon"
+    },
+    {
+      "start": 5362.24,
+      "end": 5377.7,
+      "speaker": "Deniz (GM)",
+      "text": "fett gefressen, richtig. Der holt aber, der hat seinen Arm verloren, der lässt den Bogen fallen, zieht so eine Art Kurzdeutsch, der aber auch deutlich größer geworden ist und rennt auf dich zu. Du"
+    },
+    {
+      "start": 5377.7,
+      "end": 5378.7,
+      "speaker": "Marco (Dodo)",
+      "text": "Schwein!"
+    },
+    {
+      "start": 5378.74,
+      "end": 5396.36,
+      "speaker": "Deniz (GM)",
+      "text": "Und will dir wirklich direkt auf den Kopf treffen. Ups, das war der falsche. Nein. Eine 15 trifft wahrscheinlich. Ja. Okay, dann dürfen wir mal den schaden."
+    },
+    {
+      "start": 5399.5,
+      "end": 5404.9400000000005,
+      "speaker": "Deniz (GM)",
+      "text": "und es wären insgesamt neun Damage."
+    },
+    {
+      "start": 5405.04,
+      "end": 5414.18,
+      "speaker": "Basti (Esterossa)",
+      "text": "Da würde ich gerne einen Armor-Slot benutzen, um auf acht zu kommen, weil dann wäre ich noch bei meiner Damage. Okay. So macht man das ja, ne? Yes,"
+    },
+    {
+      "start": 5414.18,
+      "end": 5434.48,
+      "speaker": "Deniz (GM)",
+      "text": "richtig. So. Der andere Goblin springt oben auf die Kisten. Da versteckt sich aber dein Frettchen dazwischen. Möchtest du irgendwas tun in dem Augenblick? Mein Frettchen? Ja. Äh, ja."
+    },
+    {
+      "start": 5435.1,
+      "end": 5442.0599999999995,
+      "speaker": "Celin (Cookie)",
+      "text": "Ja, will ich. Okay. Ich mein, mein Frettchen ist ja noch da. Ja. Der hat ja noch seinen coolen Starre. Der"
+    },
+    {
+      "start": 5442.0599999999995,
+      "end": 5451.92,
+      "speaker": "Deniz (GM)",
+      "text": "hat dich grad nicht wahrgenommen, der wollte, der klettert gerade so praktisch von Kiste zu Kiste und will hier oben hinkommen. Der ist jetzt praktisch gerade auf dem Weg nach oben. Möchtest du irgendwie intervenieren?"
+    },
+    {
+      "start": 5452.72,
+      "end": 5469.22,
+      "speaker": "Celin (Cookie)",
+      "text": "Ja. Ja, das Frettchen... Also ich meine, ich kann ja mit dem kommunizieren, das geht auch so. Ich sage dem Frettchen, dass er dem hinterher soll, dazu nutze ich auch einen Hauptpunkt und der soll dem mal so richtig irgendwo fett einen Stachel reinhauen, dass der erstmal..."
+    },
+    {
+      "start": 5469.22,
+      "end": 5498.03,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, dann würfel mal zwei W12 plus sechs, also einen W6 dazu. Das ist eine 19, die trifft sehr solide und der wird von seinem... Das ist ein Frettchen, unterbricht den Goblin praktisch in seiner Aktion und ihr seht einfach nur, wie der aufschreit. Und die Initiative geht zurück zu euch."
+    },
+    {
+      "start": 5500.16,
+      "end": 5515.57,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ich meine, der ist ja jetzt viel größer und viel einfacher zu treffen, finde ich. Und ja, er hat ja noch einen Arm, also nehme ich mir den auch vor und versuche mir den abzuhaken, damit der wie so ein kleiner Klumpen da steht."
+    },
+    {
+      "start": 5518.4,
+      "end": 5519.42,
+      "speaker": "Deniz (GM)",
+      "text": "Dann machen wir einen Angriff."
+    },
+    {
+      "start": 5520.28,
+      "end": 5522.68,
+      "speaker": "Basti (Esterossa)",
+      "text": "Das ist einer. Entschuldigung. Ne, das sind zwei."
+    },
+    {
+      "start": 5525.29,
+      "end": 5525.97,
+      "speaker": "Deniz (GM)",
+      "text": "Ah ja, du"
+    },
+    {
+      "start": 5525.97,
+      "end": 5536.63,
+      "speaker": "Basti (Esterossa)",
+      "text": "triffst. Stark. In dem Hope. In dem Hope. Jupp. Und dann kommt der Damage. Na. Uuuuh. Vier."
+    },
+    {
+      "start": 5538.22,
+      "end": 5549.2,
+      "speaker": "Deniz (GM)",
+      "text": "Das juckt ihn nicht so allzu sehr, aber er hat trotzdem ein bisschen Schaden gefressen. Er hat aber immer noch Fokus auf dich. Der nächste von euch ist dran."
+    },
+    {
+      "start": 5550.93,
+      "end": 5554.13,
+      "speaker": "Marco (Dodo)",
+      "text": "Ich würde mich hier befreien. Von den Fässern."
+    },
+    {
+      "start": 5554.46,
+      "end": 5561.6,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, mach mal einen Stärke-Check erstmal vorher, beziehungsweise ja, Strength. Ob du das einfach ohne so weiteres hinbekommst."
+    },
+    {
+      "start": 5563.87,
+      "end": 5565.89,
+      "speaker": "Basti (Esterossa)",
+      "text": "Da ist"
+    },
+    {
+      "start": 5565.89,
+      "end": 5579.89,
+      "speaker": "Deniz (GM)",
+      "text": "immer noch der Haupthöher, Jesus. 19 insgesamt. Jaja, also du schaffst es easy mit einer Hand, mit dem Schild in der Hand, schlägst du die Fässer einfach weg und stehst wieder. Du darfst noch einen Angriffs-Move machen, wenn du möchtest. Ich"
+    },
+    {
+      "start": 5579.89,
+      "end": 5589.22,
+      "speaker": "Marco (Dodo)",
+      "text": "würd gern meinen Stamina-Potion trinken, um den Stress zu entfernen. Das war glaube ich ein W4. So viele Stresspunkte darf ich gar nicht nennen. Das kann man, ich glaube schon, ja."
+    },
+    {
+      "start": 5590.1,
+      "end": 5595.34,
+      "speaker": "Deniz (GM)",
+      "text": "Wir dürfen einfach mal gerne. Einen! Solide. Stark, sehr stark."
+    },
+    {
+      "start": 5597.86,
+      "end": 5612.0,
+      "speaker": "Marco (Dodo)",
+      "text": "Egal, nehme ich. Ja, und dann, reicht das? Das reicht als Zug, oder? Also wenn ich den Drang trinke, brauche ich nicht mehr angreifen. Hau drauf, hau drauf! Nee, nee, das war, das wäre dein Zug gewesen dann, ja. Ja, aber wir haben ja Hope, also wäre er theoretisch eh das Team. Du könntest ja,"
+    },
+    {
+      "start": 5612.0599999999995,
+      "end": 5619.04,
+      "speaker": "Deniz (GM)",
+      "text": "theoretisch, wenn jetzt niemand anderes was machen möchte, könntest du nochmal den nächsten Zug machen, ja. Ja, die anderen sollen draufhauen. Das Frettchen"
+    },
+    {
+      "start": 5619.04,
+      "end": 5620.16,
+      "speaker": "Marco (Dodo)",
+      "text": "oder das Ding mit dem Bogen."
+    },
+    {
+      "start": 5620.5599999999995,
+      "end": 5622.28,
+      "speaker": "Basti (Esterossa)",
+      "text": "Das Ding willst du auch? Hier, Piu-Piu?"
+    },
+    {
+      "start": 5623.18,
+      "end": 5643.0599999999995,
+      "speaker": "Celin (Cookie)",
+      "text": "Ja, ich kann ja auch mal mit meinem Bogen schießen, das habe ich ja auch noch nicht gemacht. Ich habe hier auch noch tödliches Ziel, plus 2. Und da ich ja gesehen habe, dass... Was macht denn jetzt mehr Sinn? Du nimmst den Großen vor und ich nehme den Knocked-Out-Goblin vor? Also der Große ist schon deutlich"
+    },
+    {
+      "start": 5643.0599999999995,
+      "end": 5646.18,
+      "speaker": "Deniz (GM)",
+      "text": "verletzter, mal so gesagt. Töte den, töte den."
+    },
+    {
+      "start": 5646.55,
+      "end": 5663.0,
+      "speaker": "Celin (Cookie)",
+      "text": "Soll ich den, dann nehm ich den erst, dann nehm ich den erst vor. Weil das Rettchen lenkt ihn auch gerade den, genau. Okay, alles klar, dann nehm ich den Großen vor. Okay. Ähm, und baller da einfach mal mit meinem W12, oder? Okay, ja. Und meinem plus 2 tödliches Ziel, dann hab ich das jetzt so richtig verstanden."
+    },
+    {
+      "start": 5663.18,
+      "end": 5673.86,
+      "speaker": "Deniz (GM)",
+      "text": "Ich glaube schon, ja. Okay. Aber da musst du doch irgendwas, äh, marken, oder? Musst du Hope aktivieren oder Stress setzen, richtig? Ah, ja, okay."
+    },
+    {
+      "start": 5674.63,
+      "end": 5677.65,
+      "speaker": "Celin (Cookie)",
+      "text": "Da steht Experience. Das ist bei Experience dabei. Dann musst du"
+    },
+    {
+      "start": 5677.65,
+      "end": 5679.29,
+      "speaker": "Deniz (GM)",
+      "text": "zwei Hauptpunkte verwenden tatsächlich."
+    },
+    {
+      "start": 5679.77,
+      "end": 5681.97,
+      "speaker": "Celin (Cookie)",
+      "text": "Okay, dann mach ich das. Aber ich habe ja Ingrid."
+    },
+    {
+      "start": 5682.09,
+      "end": 5715.52,
+      "speaker": "Deniz (GM)",
+      "text": "Genau, du musst kein Damage würfeln, weil du zielst wirklich auf den, du richtest deinen Bogen auf den und der ist doch gerade, du siehst gerade, wie der in dem Augenblick so stolpert und du triffst ihn halt wirklich perfekt im Kopf und während sie halt auf den Bogen zufliegt, nimmt Mikasa, was hast du, so eine Axt hast du, ne? und Sliced, während der auf den Boden fällt, dem den Kopf ab. Habt du. Ähm, ja. Du seid immer noch dran."
+    },
+    {
+      "start": 5717.43,
+      "end": 5742.16,
+      "speaker": "Basti (Esterossa)",
+      "text": "Dann, wenn wir ja so eine interne Reihenfolge einhalten sollten, nehm ich meine Axt, zeig auf den letzten Goblin und jetzt bist du dann der kleine... Und während wieder hier das Frettchen neben meinem Bein rumknabbert, Klapp, Klapp, kriegt der wieder ne Axt ins Gesicht."
+    },
+    {
+      "start": 5742.36,
+      "end": 5748.7,
+      "speaker": "Deniz (GM)",
+      "text": "Alright. Dann machen Angus Surf gerne im Vorteil, also plus 6. Weil du, ähm... Oh,"
+    },
+    {
+      "start": 5749.08,
+      "end": 5750.5599999999995,
+      "speaker": "Basti (Esterossa)",
+      "text": "mit Escape kann man das abbrechen. Okay."
+    },
+    {
+      "start": 5752.43,
+      "end": 5760.27,
+      "speaker": "Deniz (GM)",
+      "text": "Weil du das Frettchen da noch ein bisschen hilfst. Uiuiui, das sieht gut aus. Ah, geht auch nicht so gut. Aber du triffst trotzdem gerade so eben. Das heißt verdammt, du triffst ganz gut."
+    },
+    {
+      "start": 5761.85,
+      "end": 5763.85,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ich würfel mal ein bisschen weiter hinten, weil..."
+    },
+    {
+      "start": 5763.85,
+      "end": 5766.11,
+      "speaker": "Deniz (GM)",
+      "text": "Der ist im Sumpf gelandet."
+    },
+    {
+      "start": 5766.3099999999995,
+      "end": 5767.39,
+      "speaker": "Basti (Esterossa)",
+      "text": "Direkt wieder 6."
+    },
+    {
+      "start": 5767.75,
+      "end": 5819.72,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, auch du triffst ihn. Aber er steht immer noch. Äh, es war trotzdem immer noch ein Hope, ne? Hab ich jetzt gerade gar nicht drauf geachtet. Dann egal, ich würde jetzt einfach 2-4 aktivieren. Und der springt ein, fällt jetzt nach oben. Der hat dein Frettchen mehr oder weniger abgewimmelt, also praktisch ist dann die andere Seite runtergefallen. Dreht sich um und ist im Begriff einen weiteren Trank zu trinken. Das könntest jetzt nur noch du, Cookie, aufhalten. Der will irgendwas trinken, vielleicht auch einen Vergrößerungs-Trank oder irgendwas ähnliches. Machen wir bitte einen Angriffswurf, ob du es schaffst, sein Glas zu zerschießen, bevor er es trinken kann. Geht. Da hast du plus 1, oder plus 2?"
+    },
+    {
+      "start": 5821.08,
+      "end": 5824.1,
+      "speaker": "Celin (Cookie)",
+      "text": "Plus 2, aber du hast ja gesagt, ich müsste einen Hope verwenden, oder?"
+    },
+    {
+      "start": 5824.36,
+      "end": 5833.88,
+      "speaker": "Deniz (GM)",
+      "text": "Nein, nein, nein, es geht nur darum, dass du gerade triffst. Du kriegst plus 2er auf deinen Bogenschuss drauf wahrscheinlich. Mhm, mhm. Bei deinem Shortbow müsste ja plus 2 stehen, schätze ich mal."
+    },
+    {
+      "start": 5834.74,
+      "end": 5836.32,
+      "speaker": "Celin (Cookie)",
+      "text": "Ja. Ja, dann reicht das."
+    },
+    {
+      "start": 5836.73,
+      "end": 5863.48,
+      "speaker": "Deniz (GM)",
+      "text": "Dann ist es über 10. Du zielst in dem Augenblick, wo du den Trank trinken willst, schießt du den Pfeil ab, das Glas zersplittert und in dem Augenblick ist er kurz geblendet. Dodo und Mikasa preschen vor, würfelt beide einen W12, also zwei W12, ob ihr den jetzt direkt wegfetzt. Ich fange an. Okay, der trifft, würfelt den Schaden aus. Nur Mikasa, du darfst auch schon mal direkt dich bereithalten."
+    },
+    {
+      "start": 5865.59,
+      "end": 5867.07,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, das sind wieviel Schaden?"
+    },
+    {
+      "start": 5867.35,
+      "end": 5868.41,
+      "speaker": "Marco (Dodo)",
+      "text": "Dodo & Drei Schaden von mir."
+    },
+    {
+      "start": 5868.53,
+      "end": 5908.46,
+      "speaker": "Deniz (GM)",
+      "text": "Drei Schaden, okay. Das heißt, er ist immer noch nicht down. Ah, plus zwei, ne? Ja. Okay, dann triffst du auch so gerade eben. Würfel den Schaden. Aber ja, du schaffst es. Und auch der wird von euch beiden, ich weiß nicht, Dodo kommt halt von links und du kommst von rechts und der wird einmal komplett an die Wand gesmeckt. Und ist ebenfalls im Land der Träume. Okay. Ihr müsst euch alle mal einen Stresspunkt setzen, denn ihr wisst, die Zeit läuft bald ab. Ihr habt nur noch knapp 20 Minuten."
+    },
+    {
+      "start": 5910.07,
+      "end": 5915.08,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ja, wir müssen direkt zum Obermacker. Ja, rein da."
+    },
+    {
+      "start": 5916.45,
+      "end": 5918.47,
+      "speaker": "Celin (Cookie)",
+      "text": "Wo kann ich mir den Stresspunkt setzen?"
+    },
+    {
+      "start": 5919.09,
+      "end": 5922.75,
+      "speaker": "Deniz (GM)",
+      "text": "Ähm, unter deinem HP ist ein Stresspunkt. Ah, ich seh's,"
+    },
+    {
+      "start": 5922.75,
+      "end": 5924.03,
+      "speaker": "Celin (Cookie)",
+      "text": "ich seh's, okay, ja."
+    },
+    {
+      "start": 5926.17,
+      "end": 5928.91,
+      "speaker": "Deniz (GM)",
+      "text": "Alles klar, Benjamin, schönen Abend noch. Wollen wir"
+    },
+    {
+      "start": 5928.91,
+      "end": 5929.47,
+      "speaker": "Marco (Dodo)",
+      "text": "außen rum gehen?"
+    },
+    {
+      "start": 5930.05,
+      "end": 5940.28,
+      "speaker": "Basti (Esterossa)",
+      "text": "Nur nach. Äh, ich könnte, wir könnten auch, also... Es gibt nur die eine Treppenstufe. Es gibt nur den einen Aufgang da."
+    },
+    {
+      "start": 5943.58,
+      "end": 5949.18,
+      "speaker": "Celin (Cookie)",
+      "text": "Also das waren die einzigen, die noch so ansatzweise irgendwie, die anderen sind alle besoffen, oder? Die anderen sind"
+    },
+    {
+      "start": 5949.18,
+      "end": 5973.79,
+      "speaker": "Deniz (GM)",
+      "text": "sehr besoffen, die sind hier wahrscheinlich, die hinten sind kein Problem wahrscheinlich. Deswegen nehmen wir jetzt direkt den Obermakarops. Okay, als ihr einen Schritt weiter nach oben lauft und langsam die Treppen hochlauft, hört ihr plötzlich so ein Geflüster. Okay, wir müssen den Angriff bald vorbereiten. Vielleicht sollten wir mit dem Magier zusammenarbeiten. Es ist sicherlich nur noch eine Frage der Zeit, bis wir bereit sind."
+    },
+    {
+      "start": 6002.64,
+      "end": 6019.23,
+      "speaker": "Deniz (GM)",
+      "text": "Die beiden scheinen hier wohl mehr oder weniger die Köpfe zu sein und ihr seid ja beide alle drei oben. Aber trotzdem macht mal bitte alle einen Stealth-Wurf, ob ihr das leise hinbekommt. Also wir reden wieder hier von Finesse. Ich fange wieder an."
+    },
+    {
+      "start": 6019.99,
+      "end": 6025.73,
+      "speaker": "Marco (Dodo)",
+      "text": "Okay. Und ich packe einen Hop-Hop dazu, wenn ich"
+    },
+    {
+      "start": 6025.73,
+      "end": 6033.33,
+      "speaker": "Deniz (GM)",
+      "text": "darf. Gerne. Dann darfst du dir einen W6 mit dazu packen. Du hast es geschafft."
+    },
+    {
+      "start": 6036.67,
+      "end": 6042.14,
+      "speaker": "Celin (Cookie)",
+      "text": "Soll ich würfeln? Ja, bitte. Wohin?"
+    },
+    {
+      "start": 6044.51,
+      "end": 6047.35,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ich würde auch einen Hauptpunkt gerne verwenden."
+    },
+    {
+      "start": 6049.94,
+      "end": 6059.84,
+      "speaker": "Deniz (GM)",
+      "text": "Das sieht auch sehr gut aus. Ihr habt es alle drei geschafft, ohne Probleme. Jetzt oben, leise. Die beiden sind noch in ihr Gespräch vertieft."
+    },
+    {
+      "start": 6062.26,
+      "end": 6067.66,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ihr geht von vorne und ich komme von oben. Wir sandwichen die jetzt."
+    },
+    {
+      "start": 6068.3,
+      "end": 6072.4,
+      "speaker": "Marco (Dodo)",
+      "text": "Das heißt von vorne, du meinst von hier, wo ich jetzt stehe? Ja genau."
+    },
+    {
+      "start": 6074.24,
+      "end": 6091.22,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ich komm von oben, also ich backstep die sozusagen, weil ihr kommt hier glaube ich nicht hoch, oder? Ist das eine... Warte mal, hä? Ne, was... Was ist das denn für eine Treppe? Die geht eine Etage nach oben. Ah, von außen? Wie? Hä?"
+    },
+    {
+      "start": 6092.08,
+      "end": 6095.46,
+      "speaker": "Celin (Cookie)",
+      "text": "Also man könnte von außen einfach die Treppe hoch, ja. Aber... Die"
+    },
+    {
+      "start": 6095.46,
+      "end": 6097.61,
+      "speaker": "Basti (Esterossa)",
+      "text": "Treppe geht von da hier so rein."
+    },
+    {
+      "start": 6099.44,
+      "end": 6102.57,
+      "speaker": "Deniz (GM)",
+      "text": "Warte, ich muss kurz gucken, ob das so ist. Ich"
+    },
+    {
+      "start": 6102.57,
+      "end": 6103.71,
+      "speaker": "Basti (Esterossa)",
+      "text": "dachte, die wird von innen..."
+    },
+    {
+      "start": 6103.71,
+      "end": 6106.97,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, aber die führt dann nach oben. Eine Etage nach oben führt die."
+    },
+    {
+      "start": 6107.55,
+      "end": 6112.53,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ja, aber kann ich jetzt von hier aus auch eine Etage tiefer zu denen in den Raum, oder?"
+    },
+    {
+      "start": 6112.79,
+      "end": 6114.15,
+      "speaker": "Deniz (GM)",
+      "text": "Äh, ne. Das geht nicht."
+    },
+    {
+      "start": 6115.35,
+      "end": 6118.23,
+      "speaker": "Basti (Esterossa)",
+      "text": "Aha. Okay, also, Bullshit. Du könnt aber zwischen"
+    },
+    {
+      "start": 6118.23,
+      "end": 6123.39,
+      "speaker": "Deniz (GM)",
+      "text": "den Treppenstufen durchschießen, wenn du möchtest."
+    },
+    {
+      "start": 6126.7,
+      "end": 6128.36,
+      "speaker": "Celin (Cookie)",
+      "text": "Das könnt ich ja machen von hier aus."
+    },
+    {
+      "start": 6128.5,
+      "end": 6129.46,
+      "speaker": "Marco (Dodo)",
+      "text": "Das könntest du denen machen, ja."
+    },
+    {
+      "start": 6129.72,
+      "end": 6138.94,
+      "speaker": "Basti (Esterossa)",
+      "text": "Das ist wichtig. Ich stell mich trotzdem mal hin, denn ich hab noch ein Spell. Ein Bolt Beacon. Damit kann ich ein bisschen Magic Damage machen."
+    },
+    {
+      "start": 6142.03,
+      "end": 6153.08,
+      "speaker": "Marco (Dodo)",
+      "text": "Dann, let's go! Soll ich dann vielleicht erstmal, solange die noch nichts bemerkt haben, einmal von hinten draufhauen? Also direkt, wenn ich reinkomme, einmal hinten auf den Hinterkopf mit der Keule?"
+    },
+    {
+      "start": 6153.32,
+      "end": 6155.76,
+      "speaker": "Celin (Cookie)",
+      "text": "Ja, aber lass ihn doch erstmal seinen Spell durchführen vielleicht."
+    },
+    {
+      "start": 6156.16,
+      "end": 6175.93,
+      "speaker": "Marco (Dodo)",
+      "text": "Oh nö, der kann doch gar nicht hoppen. Er soll draufhauen. Ja komm, hopp dazu. Den Würfel vielleicht auch noch dazu. Du schlägst... Mit 4 und dann natürlich noch ein 3 dazu. Aber"
+    },
+    {
+      "start": 6175.93,
+      "end": 6201.41,
+      "speaker": "Deniz (GM)",
+      "text": "4 war höher auf jeden Fall, nur anzumerken. Also du schlägst einfach auch wirklich hinterrücks von hinten. In dem Augenblick sieht das der andere Goblin und er lässt da so einen quiekenden Schrei von sich. Und in dem Augenblick, als du ihn treffen möchtest, siehst du einfach nur, wie sich der Magier einmal einen Blick nach oben macht und eine Etage nach oben bewegt. Dein Angriff geht ins Leere."
+    },
+    {
+      "start": 6202.38,
+      "end": 6204.7,
+      "speaker": "Celin (Cookie)",
+      "text": "Ich dachte, der kann von innen nicht nach oben."
+    },
+    {
+      "start": 6205.64,
+      "end": 6261.3,
+      "speaker": "Deniz (GM)",
+      "text": "Du siehst nur, wie sich so ein dunkler Nebel aufgelöst hat und der Nebel einmal eine Etage nach oben gegangen ist. Schweine! Der erste Goblin stürmt direkt auf dich zu. Warte. Nein. Trifft dich eine 18 wahrscheinlich. Ja. Ah, ich bin dumm. My bad. Was mache ich denn hier? My bad. Ich würfel falsch. Das ist so. So, das ist auch trotzdem gut genug. Das trifft. Und der Angriff trifft dich mit 18. Wäre der Schaden."
+    },
+    {
+      "start": 6262.17,
+      "end": 6267.8,
+      "speaker": "Marco (Dodo)",
+      "text": "Okay, wenn ich die 9 abziehe, dann wäre das nur ein Hitpoint."
+    },
+    {
+      "start": 6268.62,
+      "end": 6293.8,
+      "speaker": "Deniz (GM)",
+      "text": "Also der springt halt in dich rein, du schaffst zwar noch rechtzeitig dein Schild nach vorne zu ziehen, aber der andere Dolch, der macht so wirklich eine Bewegung zur Seite und trifft dich dann doch irgendwo in der Lücke an der Panzerung. Der Magier kommt an den Rand und sieht den Engelhalter fliegen und du siehst halt wieder so eine kleine Feuerkugel beschwört und so drei kleine Feuerflammen auf dich zuschießen. Schauen wir mal."
+    },
+    {
+      "start": 6295.93,
+      "end": 6310.88,
+      "speaker": "Deniz (GM)",
+      "text": "und trifft dich ebenfalls mit einem 18. Trifft wahrscheinlich. Ja. Okay. Dann macht das... Uh. Das sind 14 Schaden. So,"
+    },
+    {
+      "start": 6311.61,
+      "end": 6334.27,
+      "speaker": "Basti (Esterossa)",
+      "text": "das wären... Das wären Major Damage. Ich würde dann gerne meine... ...Prayer Dice benutzen, um den Schaden... Okay. Ich hab jetzt ja 3 Punkte. 2 Punkte ausgeben, um eben 2 Schaden zu negieren. Okay. Da hab ich nur noch einen. Dann seid ihr dran. Soll ich erstmal?"
+    },
+    {
+      "start": 6335.61,
+      "end": 6336.27,
+      "speaker": "Celin (Cookie)",
+      "text": "Ja, mach du."
+    },
+    {
+      "start": 6336.43,
+      "end": 6348.74,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ich will nämlich da oben den kleinen Luchidactylus. Ich flieg hoch. Weil was wir alle wissen ist, Magier haben keinen Bock auf Nahkampf. Und ich schubs den da runter."
+    },
+    {
+      "start": 6350.45,
+      "end": 6360.2,
+      "speaker": "Deniz (GM)",
+      "text": "Du Schwein. Mach mal nen Stärke-Check. Ich würfel mal dagegen. Ach du Scheiße. Der hat nur ne 5."
+    },
+    {
+      "start": 6364.01,
+      "end": 6390.84,
+      "speaker": "Deniz (GM)",
+      "text": "Ich auch! Also ihr seht nur von unten nach oben, wie halt dieser riesige metallende Engel mit diesem kleinen Goblin ringt. Ihr seht halt diese kleinen Opa-Hände, die aus diesem Mantel ragen. Aber ihr seht halt, es passiert nichts. Also ihr versucht euch nicht so sehr davon ablecken zu lassen, weil der Anblick ist schon sehr funny. War"
+    },
+    {
+      "start": 6390.84,
+      "end": 6395.52,
+      "speaker": "Basti (Esterossa)",
+      "text": "der Hope da? Ja, müsste 2-1 gewesen sein."
+    },
+    {
+      "start": 6395.92,
+      "end": 6405.86,
+      "speaker": "Deniz (GM)",
+      "text": "Okay, dann seid ihr noch dran. Beide stolpern. Okay, ja, Chet, einer der Gobling-Götter, hat entschieden. Beide legen sich dadurch aufs Maul."
+    },
+    {
+      "start": 6412.5,
+      "end": 6418.13,
+      "speaker": "Marco (Dodo)",
+      "text": "Also Celin, ich und Basti haben schon. Willst du irgendwo draufhauen? Wir können ja den Tinnus innen"
+    },
+    {
+      "start": 6418.13,
+      "end": 6428.05,
+      "speaker": "Celin (Cookie)",
+      "text": "wegschießen. Ich überlege gerade, ob ich was mit meinen Glow-Ringen machen kann. Ich habe immer noch keine Ahnung, was wir funktionieren. Du könntest deine"
+    },
+    {
+      "start": 6428.05,
+      "end": 6431.19,
+      "speaker": "Deniz (GM)",
+      "text": "Glow-Ringe aktivieren. Du hast die ja irgendwo im Inventar, richtig?"
+    },
+    {
+      "start": 6432.26,
+      "end": 6434.48,
+      "speaker": "Celin (Cookie)",
+      "text": "Jaja, die hab ich an. Also... Beide Hände. Dann"
+    },
+    {
+      "start": 6434.48,
+      "end": 6436.9,
+      "speaker": "Deniz (GM)",
+      "text": "hau einfach mal auf. Dann bewegt deine Figur mal. Ja, mach mal."
+    },
+    {
+      "start": 6437.58,
+      "end": 6441.26,
+      "speaker": "Celin (Cookie)",
+      "text": "Ich probier das einfach mal aus. Keine Ahnung von hinter... Wo ist meine Figur hin?"
+    },
+    {
+      "start": 6441.44,
+      "end": 6442.36,
+      "speaker": "Deniz (GM)",
+      "text": "Du hast sie grad bewegt."
+    },
+    {
+      "start": 6446.03,
+      "end": 6452.03,
+      "speaker": "Celin (Cookie)",
+      "text": "Direkt nebenher. Ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne,"
+    },
+    {
+      "start": 6452.23,
+      "end": 6454.15,
+      "speaker": "Deniz (GM)",
+      "text": "ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne, ne,"
+    },
+    {
+      "start": 6454.19,
+      "end": 6457.53,
+      "speaker": "Celin (Cookie)",
+      "text": "ne, ne, ne,"
+    },
+    {
+      "start": 6457.83,
+      "end": 6499.17,
+      "speaker": "Deniz (GM)",
+      "text": "ne, ne, ne Ja, ist grad nicht so leicht, dich da ins Haus zu kriegen. Sagen wir mal einfach, du bist grad im Haus drin, fertig. Ja. Oder neben Dodo. Okay. Dann mach einen Angriffswurf. Du holst deine Killer-Schlagringe raus. Mhm. Mach einen Angriffswurf. Uh, stark. Sehr stark. Du gibst ihm halt wirklich volles Pfund aufs Maul und darf einen Schaden würfeln. Sechs, ne? Einer. Da steht daneben, was du für einen Schaden machst. Neben der Waffe, also steht links..."
+    },
+    {
+      "start": 6501.72,
+      "end": 6505.91,
+      "speaker": "Celin (Cookie)",
+      "text": "Charakternamen & Paper Session"
+    },
+    {
+      "start": 6535.57,
+      "end": 6537.71,
+      "speaker": "Celin (Cookie)",
+      "text": "Hab ich den gewürfelt? Ja. Ne. 7. Ah"
+    },
+    {
+      "start": 6537.71,
+      "end": 6549.13,
+      "speaker": "Deniz (GM)",
+      "text": "doch, den hast du. 7, oh ja, du triffst ihn auf jeden Fall ganz gut und der faucht ein wenig wütend auf, aber ihr seid weiter dran."
+    },
+    {
+      "start": 6552.15,
+      "end": 6553.3099999999995,
+      "speaker": "Basti (Esterossa)",
+      "text": "Soll ich oben nochmal versuchen?"
+    },
+    {
+      "start": 6554.15,
+      "end": 6555.87,
+      "speaker": "Marco (Dodo)",
+      "text": "Ja, steh erstmal auf."
+    },
+    {
+      "start": 6556.01,
+      "end": 6574.28,
+      "speaker": "Basti (Esterossa)",
+      "text": "Dann würde ich mich gerne mal aufrichten, bisschen gucken, was gerade passiert ist. Ich kann das nicht nachvollziehen, ich bin etwas entrüstet. Aber dadurch, dass er immer noch auf dem Boden liegt, Ähm, würde ich, weil ich mich selbst sehr entblößt habe, ihn einfach versuchen zu köpfen."
+    },
+    {
+      "start": 6574.36,
+      "end": 6575.98,
+      "speaker": "Deniz (GM)",
+      "text": "Du bist auch ein Vorteil, nimm einen Sechser dazu."
+    },
+    {
+      "start": 6577.1900000000005,
+      "end": 6591.14,
+      "speaker": "Basti (Esterossa)",
+      "text": "Nicht, äh, nicht runterwerfen, ne, das trau ich mich grad nicht. 12, äh, ist ein 4. 4 trifft,"
+    },
+    {
+      "start": 6591.16,
+      "end": 6632.29,
+      "speaker": "Deniz (GM)",
+      "text": "auf jeden Fall. 11. Ja, du machst ihm direkt dick Schaden. Und der sieht jetzt schon sehr, sehr angehetet aus. Bitch. Aber dadurch, dass du vier gewürfelt hast, sind die wieder dran. Der steht auch wieder auf und du siehst halt nur wieder so ein bisschen wie so bei Naruto, die Hände so macht, so einen Move macht und so eine Druckwelle nach vorne beschwört. Müssen wir mal gucken. Mach mal einen Wurf auf Agilität, ob du ausweichen kannst, ansonsten kriegst du Schaden. Ich"
+    },
+    {
+      "start": 6632.29,
+      "end": 6635.33,
+      "speaker": "Basti (Esterossa)",
+      "text": "würde gerne einen Hauptpunkt benutzen, wenn das okay ist."
+    },
+    {
+      "start": 6640.64,
+      "end": 6668.58,
+      "speaker": "Deniz (GM)",
+      "text": "Ah, bodenlos, bodenlos. Also wirklich, du springst zwar, also der macht so eine Druckwelle nach vorne, aber du springst zur Seite und bei dem guten Wurf darfst du direkt mal einen Angriffswurf machen. Wenn du gut triffst, dann darfst du einen Schaden austeilen. Also die Druckwelle, du weichst da zwar aus und willst dann wie möglich mit dem Axt direkt den Kopf abtrennen, aber du triffst einfach nicht die kleine Birne."
+    },
+    {
+      "start": 6672.07,
+      "end": 6704.23,
+      "speaker": "Deniz (GM)",
+      "text": "Der andere ist noch unten dran. Der zweite war unten? Ne, ne, das war jetzt nur der Try. Ihr seid, die Gegner sind noch dran, genau. Der kleine unten ist ein bisschen pissed jetzt, dass der kleine, so ein dreckiger kleiner Frosch ihm jetzt grad vors Knie getreten hat, mehr oder weniger. Und der stürmt mit seinen beiden Däuchen auf dich zu. Oh Gott. Trifft dich eine 7, Ribbit. Du hast Evasion oben links. Was hast du da, was steht da bei dir?"
+    },
+    {
+      "start": 6706.05,
+      "end": 6709.4,
+      "speaker": "Celin (Cookie)",
+      "text": "Ähm, warte. Evasion?"
+    },
+    {
+      "start": 6709.58,
+      "end": 6711.62,
+      "speaker": "Deniz (GM)",
+      "text": "Ganz oben links. Links? Ganz oben."
+    },
+    {
+      "start": 6712.74,
+      "end": 6714.18,
+      "speaker": "Celin (Cookie)",
+      "text": "Ah, falsches links. Zehn."
+    },
+    {
+      "start": 6714.66,
+      "end": 6723.12,
+      "speaker": "Deniz (GM)",
+      "text": "Ah ja, easy. Also auch du tänzt jetzt so wirklich ein bisschen respektlos vor diesem Goblin und weichst ihm halt wirklich easy aus. Ihr seid wieder dran."
+    },
+    {
+      "start": 6726.34,
+      "end": 6727.36,
+      "speaker": "Celin (Cookie)",
+      "text": "Marco, willst du was machen?"
+    },
+    {
+      "start": 6728.71,
+      "end": 6734.65,
+      "speaker": "Marco (Dodo)",
+      "text": "Ich würd sagen, greif du an, weil du machst mehr Schaden. Ich mach mehr Schaden? Okay. Ja."
+    },
+    {
+      "start": 6735.49,
+      "end": 6738.51,
+      "speaker": "Celin (Cookie)",
+      "text": "Äh, da kommen zwei Goblins da drüben. Seh ich die?"
+    },
+    {
+      "start": 6739.57,
+      "end": 6740.93,
+      "speaker": "Deniz (GM)",
+      "text": "Du bekommst das grad nicht mit, nee."
+    },
+    {
+      "start": 6742.66,
+      "end": 6748.47,
+      "speaker": "Celin (Cookie)",
+      "text": "Ähm, gut, mit meinem Bogen kann ich jetzt schlecht zielen."
+    },
+    {
+      "start": 6749.23,
+      "end": 6751.73,
+      "speaker": "Marco (Dodo)",
+      "text": "Gut, du hast ja die Ringe noch an, die machen ja auch ziemlich viel Schaden. Ich probier's mal"
+    },
+    {
+      "start": 6751.73,
+      "end": 6764.25,
+      "speaker": "Celin (Cookie)",
+      "text": "mit den Ringen nochmal und benutze einfach mal noch ein Hope dazu. Ey, was war das denn? Ist da grad was passiert?"
+    },
+    {
+      "start": 6765.37,
+      "end": 6766.09,
+      "speaker": "Basti (Esterossa)",
+      "text": "Ja, hau mal drauf."
+    },
+    {
+      "start": 6768.55,
+      "end": 6771.23,
+      "speaker": "Celin (Cookie)",
+      "text": "Okay, ja, ich hau raus. Warte, so."
+    },
+    {
+      "start": 6777.21,
+      "end": 6780.49,
+      "speaker": "Deniz (GM)",
+      "text": "Äh, das trifft grade eben. Würfel den Schaden aus."
+    },
+    {
+      "start": 6782.63,
+      "end": 6795.26,
+      "speaker": "Celin (Cookie)",
+      "text": "Das war 10, gell? Plus... Na toll. Plus 2. Also 4 waren es, ne?"
+    },
+    {
+      "start": 6797.45,
+      "end": 6806.45,
+      "speaker": "Deniz (GM)",
+      "text": "Du machst ihm auf jeden Fall Schaden, aber der steht immer noch auf seinen Beinchen. War der 4 höher oder der Hope?"
+    },
+    {
+      "start": 6806.8099999999995,
+      "end": 6808.17,
+      "speaker": "Basti (Esterossa)",
+      "text": "4. Du hast 4. Du bist dran."
+    },
+    {
+      "start": 6808.35,
+      "end": 6836.2,
+      "speaker": "Deniz (GM)",
+      "text": "Okay. Der Mage zielt wieder auf dich, beschwört diese kleine Feuerkugel, die aus 3 Dingern besteht und...schauen wir...aber trifft... Trifft dich eine 8? Gerade so, ja. Okay, dann trifft dich das. Das macht insgesamt 12 Schaden."
+    },
+    {
+      "start": 6839.39,
+      "end": 6844.1900000000005,
+      "speaker": "Basti (Esterossa)",
+      "text": "Dann gebe ich meinen letzten Punkt aus, um einen Schaden zu bekommen. Okay."
+    },
+    {
+      "start": 6849.53,
+      "end": 6867.99,
+      "speaker": "Deniz (GM)",
+      "text": "Der untere greift Dodo wieder an und geht in so eine Art Berserker-Modus, zieht wieder beide Dölche und will dir halt direkt irgendwo in der Brust treffen, über dein Schild hinweg. Trifft dich, was war das, eine 14, ne? Trifft dich eine 17?"
+    },
+    {
+      "start": 6869.64,
+      "end": 6919.2,
+      "speaker": "Marco (Dodo)",
+      "text": "Ja, trifft mich. Kann ich jetzt, ich hab ne Fähigkeit Unstoppable zu werden. Das würd ich gern tun. Okay. Musst du dafür nen Hauptpunkt ausgeben. Sonst kannst du das jetzt grad nicht aktivieren. Einmal per Long Rest kann ich das machen. Also da steht nichts mit anderen Kosten dran. Sonst, ja okay, was macht das? Ich bekomme Resistance zu Physical Damage nochmal zusätzlich. Mein Armor Score wird um 1 erhöht und ich bekomme einen W4, der fängt bei 1 an und geht jedes Mal, wenn ich einen Angriff mache, 1 hoch. Ah, okay crazy. Genau und wenn ich dann halt theoretisch bei 5 wäre, dann bin ich nicht mehr unstoppable."
+    },
+    {
+      "start": 6921.26,
+      "end": 6947.4,
+      "speaker": "Marco (Dodo)",
+      "text": "Ich kann strained werden, ich kann nicht vulnerable werden und ich bekomme den Wert von meinem Unstoppable-Würfel auf meinen Angriff obendrauf. Auf meinen Angriffsschaden. Dann würdest 12 Schaden getroffen werden? Ja, der Schaden wird halbiert. Das heißt, du hast nur 6? Weil ich Resistance habe, nur 6 und dann halt noch die 10-Rüstung abgezogen. Das heißt,"
+    },
+    {
+      "start": 6947.84,
+      "end": 6953.74,
+      "speaker": "Deniz (GM)",
+      "text": "obwohl er auf deinen Halsschlag zielt, Heldst das Schild nach oben und der blockt einfach wieder ab. Ihr seid wieder dran."
+    },
+    {
+      "start": 6957.8,
+      "end": 6986.22,
+      "speaker": "Basti (Esterossa)",
+      "text": "Soll ich da oben nochmal wieder? Oder wollt ihr da unten hin töten? Ich würde vorher meinen Mending Touch, also mein Handauflegen benutzen. Ich spiele zwei Hauptpunkte aus und heile mich um zwei. Kann ich einmal per Long Rest machen. Also ist jetzt aufgebraucht. Und dann klopp ich den. Jetzt aber wirklich. Aber wirklich, einmal schön von unten einmal, dass ich ihn so slide, dass die Bitch... Wenn sie fällt, nach hinten schön, einmal schön in den Sumpf rein."
+    },
+    {
+      "start": 6986.4400000000005,
+      "end": 6987.88,
+      "speaker": "Deniz (GM)",
+      "text": "Sparta, Alter. Okay. Guck mal,"
+    },
+    {
+      "start": 6987.92,
+      "end": 6988.76,
+      "speaker": "Celin (Cookie)",
+      "text": "ob die zacken da."
+    },
+    {
+      "start": 6989.66,
+      "end": 7027.11,
+      "speaker": "Deniz (GM)",
+      "text": "Uh, ja, wie bei Saruman bei dem Film. Ui. Neun. Ähm, tatsächlich trifft das aber und du musst auch den Schaden nicht mehr würfeln, weil der hat nur ein Leben. Du trittst ihn da wirklich runter und der fällt in seinen Tod, wie Cookie es schon gesagt hatte, auf die Spikes. Aber der 4 war wieder höher. Enraged von dieser Aktion greift der untere nochmal Dodo an. Ich bin bereit. Ich schreibe runter,"
+    },
+    {
+      "start": 7027.37,
+      "end": 7028.61,
+      "speaker": "Basti (Esterossa)",
+      "text": "der Magier ist tot!"
+    },
+    {
+      "start": 7029.54,
+      "end": 7041.87,
+      "speaker": "Deniz (GM)",
+      "text": "15, 16, 17, das sind 18, trifft wahrscheinlich. Und der Schaden, das wären insgesamt 21."
+    },
+    {
+      "start": 7044.15,
+      "end": 7052.84,
+      "speaker": "Marco (Dodo)",
+      "text": "Okay, pass auf. Die Hälfte aufgerundet wären elf Schaden. Quasi... Minus zehn, ein Schaden. Die zehn wären quasi noch ein Schaden. Boah, crazy."
+    },
+    {
+      "start": 7053.12,
+      "end": 7062.92,
+      "speaker": "Deniz (GM)",
+      "text": "Du blockst halt, obwohl der wirklich wie verrückt auf dein Schild einprasselt und die Dolche, die treffen einfach Boden. Aber du blockst wirklich fast jeden Angriff ab."
+    },
+    {
+      "start": 7063.04,
+      "end": 7066.58,
+      "speaker": "Marco (Dodo)",
+      "text": "Ich würde noch ein Armor-Slot zusätzlich verwenden, dass es kein Schaden ist."
+    },
+    {
+      "start": 7066.8,
+      "end": 7085.28,
+      "speaker": "Deniz (GM)",
+      "text": "Okay. Als du geschrien hast, der Magier ist tot, siehst du, wie die... Besoffene Goblins teilweise panisch davonlaufen und aus Versehen einer, weil er es nicht checkt, im Feuer landet und verbrennt. Ihr seid wieder dran."
+    },
+    {
+      "start": 7088.66,
+      "end": 7094.07,
+      "speaker": "Celin (Cookie)",
+      "text": "Ja, ich würde da jetzt einfach... Hat der noch viel? Ich würde da jetzt einfach noch mit dem Bogen drauf... Er ist schon sehr, sehr schwer"
+    },
+    {
+      "start": 7094.07,
+      "end": 7100.84,
+      "speaker": "Marco (Dodo)",
+      "text": "verletzt, ja, ja. Bleib einfach hin zu mir und schieß von hinten auf den... Ja, ich bin ein paar Schritte"
+    },
+    {
+      "start": 7100.84,
+      "end": 7109.0599999999995,
+      "speaker": "Celin (Cookie)",
+      "text": "zurückgegangen, weil ich brauche so ein bisschen Distanz. Ich schieße da jetzt mit dem Bogen nochmal drauf, weil ich habe da ja auch mein Ziel. Mach den"
+    },
+    {
+      "start": 7109.0599999999995,
+      "end": 7117.1,
+      "speaker": "Deniz (GM)",
+      "text": "Angriffsdurf, genau. Yes, easy, trifft."
+    },
+    {
+      "start": 7117.7,
+      "end": 7118.82,
+      "speaker": "Celin (Cookie)",
+      "text": "Plus 2, 15."
+    },
+    {
+      "start": 7119.58,
+      "end": 7158.5,
+      "speaker": "Deniz (GM)",
+      "text": "Und du schießt den Bogen, du triffst ihn perfekt und er fällt einfach regungslos nach hinten um. Und? Ihr habt es geschafft, ihr konntet das Goblin-Lager befreien. Ihr seht auch noch, wie der Roboter-Angel noch eben von A nach B fliegt und die letzten beiden Goblins wegkloppt. Die versuchen zu fliehen, aber mit ihrem hohen Besoffenkeitsstatus das leider nicht hinbekommen."
+    },
+    {
+      "start": 7162.46,
+      "end": 7217.34,
+      "speaker": "Deniz (GM)",
+      "text": "Ihr habt es geschafft, ihr habt das Goblenlager, wir sagen das mal ganz nett, befreit. Und es wurde auch nur ein Goblenkind etwas schwerer verletzt, sagen wir mal so. Aber ja, ihr lootet das ganze Dorf, zumindest das, was ihr noch finden könnt. Ihr findet einige Säcke voll Gold und... Auch einige interessante Utensilien, unter anderem auch eine Karte von einem Angriffsplan auf ein Dorf, was nicht weit von hier ist, beziehungsweise von wo ihr aus kommt. Und mit diesen Sachen zieht ihr zurück zu eurem Dorf. Und damit ist der Auftrag erfolgreich beendet für heute. Vielen Dank. Ich auch."
+    },
+    {
+      "start": 7220.98,
+      "end": 7225.26,
+      "speaker": "Deniz (GM)",
+      "text": "Wo ist der Frosch hin? Ah, da. Ribbit. Ah, Spinni."
+    },
+    {
+      "start": 7225.76,
+      "end": 7227.32,
+      "speaker": "Celin (Cookie)",
+      "text": "Und dann die Kameraansicht. Ah,"
+    },
+    {
+      "start": 7227.6,
+      "end": 7228.24,
+      "speaker": "Deniz (GM)",
+      "text": "Leute, da könnt ihr"
+    },
+    {
+      "start": 7228.24,
+      "end": 7233.39,
+      "speaker": "Basti (Esterossa)",
+      "text": "nicht so machen, wie ihr meint. Kätzchen-Mode. Ich habe gerade gesehen, hier hinten sind noch Hyänen."
+    },
+    {
+      "start": 7233.79,
+      "end": 7242.0,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, ja, die hättet ihr noch befreien können, aber die wurden nicht befreit. Da"
+    },
+    {
+      "start": 7242.0,
+      "end": 7244.36,
+      "speaker": "Celin (Cookie)",
+      "text": "hätte man noch ein bisschen das Dorf aufwühlen können, oder wie?"
+    },
+    {
+      "start": 7244.5599999999995,
+      "end": 7275.7,
+      "speaker": "Deniz (GM)",
+      "text": "Ja, exakt. Okay. Ja, Chat, auch vielen Dank fürs Mitspielen. Ihr wart ja teilweise nett und böse, also das war irgendwie ganz cool. Wenn's ausgeglichen ist, ist das immer ganz nice. Und auch hier danke für euch Mitspieler, hat mir sehr viel Spaß gemacht. Dieses Mal haben wir's auch ein bisschen besser hingekriegt mit Daggerheart. Nee, das war noch wieder ein bisschen besser. Ich hoffe, es hat euch gefallen, wenn ja, bitte lasst ein Like und ein Follow da, das würde uns auf jeden Fall helfen. Und nächste Woche geht's weiter, dann vielleicht wieder mit einer anderen Kombination an Spielern."
+    },
+    {
+      "start": 7278.04,
+      "end": 7289.91,
+      "speaker": "Deniz (GM)",
+      "text": "und ja, wir werden sehen. Ich wünsche euch auch allen noch einen schönen Abend, schlaft gut und trönt was schönes und wir sehen uns bis zum nächsten Mal. Macht's gut! Ciao, ciao!"
+    }
+  ]
+}
