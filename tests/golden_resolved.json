@@ -69,7 +69,7 @@
       "props": {
         "session_id": "2025-03-26",
         "confidence": "medium",
-        "name": "der Schleichfurz",
+        "name": "Schleichfurz",
         "aliases": [],
         "pending_notes": [],
         "is_pc": false,
@@ -144,7 +144,7 @@
     {
       "start_id": "CHAR_Cookie",
       "end_id": "SESS_2025-03-26",
-      "type": "APPEARS_IN",
+      "type": "IN_SESSION",
       "props": {
         "session_id": "2025-03-26",
         "confidence": "high"
@@ -153,7 +153,7 @@
     {
       "start_id": "CHAR_Dodo",
       "end_id": "SESS_2025-03-26",
-      "type": "APPEARS_IN",
+      "type": "IN_SESSION",
       "props": {
         "session_id": "2025-03-26",
         "confidence": "high"
@@ -183,15 +183,6 @@
     },
     {
       "start_id": "CHAR_LindoLaut",
-      "end_id": "SESS_2025-03-26",
-      "type": "APPEARS_IN",
-      "props": {
-        "session_id": "2025-03-26",
-        "confidence": "high"
-      }
-    },
-    {
-      "start_id": "CHAR_LindoLaut",
       "end_id": "RULE_CLASS_Bard",
       "type": "HAS_CLASS",
       "props": {
@@ -200,7 +191,17 @@
         "evidence_chunks": [
           1
         ],
-        "valid_from": 1
+        "valid_from": 1,
+        "last_observed_session": 1
+      }
+    },
+    {
+      "start_id": "CHAR_LindoLaut",
+      "end_id": "SESS_2025-03-26",
+      "type": "IN_SESSION",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high"
       }
     },
     {
@@ -228,13 +229,14 @@
       "props": {
         "session_id": "2025-03-26",
         "confidence": "high",
-        "valid_from": 1
+        "valid_from": 1,
+        "last_observed_session": 1
       }
     },
     {
       "start_id": "NPC_Schleichfurz",
       "end_id": "SESS_2025-03-26",
-      "type": "APPEARS_IN",
+      "type": "IN_SESSION",
       "props": {
         "session_id": "2025-03-26",
         "confidence": "high"

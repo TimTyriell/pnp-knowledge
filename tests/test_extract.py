@@ -76,10 +76,11 @@ def test_extract_chunk_retries_once():
     assert len(extractor.prompts) == 2  # first raised, retry succeeded
 
 
-def test_known_world_injected_and_accumulates_within_session():
-    # audit v6 engine fix: campaign gazetteer lands in every chunk prompt, and
-    # names extracted in earlier scenes of the same session are appended so
-    # later scenes reuse them (no Goblin-Dorf/Goblinlager splits).
+def test_known_world_windowed_within_window():
+    # audit_v7pro §8 #1: the known-world block refreshes only every
+    # KNOWN_WORLD_REFRESH_EVERY chunks so the DeepSeek prefix stays cacheable.
+    # Campaign canon is in every prompt, but a name from scene 1 is NOT visible
+    # to scene 2 while both sit inside the same window (default window = 10).
     from pnp_graph.extract import extract_session
     scene1 = SceneExtraction(
         locations=[Location(name="Goblinlager", is_named_location=True)],
@@ -93,7 +94,23 @@ def test_known_world_injected_and_accumulates_within_session():
     # campaign canon in every prompt
     assert all("Breska" in p and "Berthold (aka der Schmied)" in p for p in extractor.prompts)
     assert all("EXACT name" in p for p in extractor.prompts)
-    # scene 1's new location visible to scene 2, not to scene 1 itself
+    # same window -> scene 1's new location not injected into scene 2's prompt
+    assert "Goblinlager" not in extractor.prompts[0]
+    assert "Goblinlager" not in extractor.prompts[1]
+
+
+def test_known_world_refreshes_across_window_boundary(monkeypatch):
+    # With the window shrunk to 1, every chunk refreshes -> scene 1's name is
+    # visible to scene 2 again (the pre-§8 accumulating behavior).
+    import pnp_graph.extract as extract_mod
+    monkeypatch.setattr(extract_mod, "KNOWN_WORLD_REFRESH_EVERY", 1)
+    scene1 = SceneExtraction(
+        locations=[Location(name="Goblinlager", is_named_location=True)],
+        macro_scene_event=_event("Lager entdeckt"))
+    scene2 = SceneExtraction(macro_scene_event=_event("Rückkehr"))
+    extractor = _FakeExtractor([scene1, scene2])
+
+    extract_mod.extract_session(extractor, ["chunk one", "chunk two"])
     assert "Goblinlager" not in extractor.prompts[0]
     assert "Goblinlager" in extractor.prompts[1]
 

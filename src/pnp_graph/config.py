@@ -67,6 +67,19 @@ SUMMARIZER_MODEL = "qwen3:14b"
 PASSAGE_SIZE = 1500
 PASSAGE_OVERLAP = 200
 
+# audit_v7pro §8 #1 — DeepSeek prefix-cache: the per-chunk known-world gazetteer
+# grows every scene, breaking the cacheable prompt prefix on every call. Refresh
+# it only every N chunks (extract.py extract_session) so the prefix stays
+# byte-identical across a window; the resolver's fuzzy+alias pass catches any
+# spelling drift inside a window. Flagship-relevant; harmless on local.
+KNOWN_WORLD_REFRESH_EVERY = 10
+
+# audit_v7pro §8 #2 — model cascade: segment scenes with a deterministic
+# silence-gap heuristic (chunking.heuristic_segment) instead of a second
+# whole-transcript DeepSeek pass. Flip to True to restore the LLM segmenter
+# (build_segmenter) as a fallback if heuristic boundaries prove too coarse.
+USE_LLM_SEGMENTER = False
+
 # Q4_K_M 14B long-range recall degrades well before Ollama's trained 40960 max;
 # structured multi-entity extraction needs full recall per chunk, not gist, so
 # stay conservative. num_ctx must cover prompt + CHUNK_SIZE + JSON output —
@@ -106,14 +119,14 @@ NEO4J_URL = "bolt://localhost:7687"  # container runs NEO4J_AUTH=none, no user/p
 # relation types instead of inventing new phrasing per chunk. Not a hard enum.
 SUGGESTED_PREDICATES = [
     "MEMBER_OF", "OWNED_BY", "HOSTILE_TO", "ALLY_OF", "LOCATED_IN", "TRIGGERED",
-    "PARTICIPATED_IN", "RESULTED_IN", "TARGETS", "KNOWS", "FEARS",
+    "PARTICIPATED_IN", "RESULTED_IN", "TARGETS", "KNOWS", "FEARS", "SUBQUEST_OF",
 ]
 
 # Closed relationship vocabulary (docs/evolution/04). Enforced in resolve.py:
 # model output maps through PREDICATE_SYNONYMS, then anything off-list is
 # coerced to RELATES_TO and logged — never written as a new type.
 ALLOWED_PREDICATES = {
-    "IN_SESSION", "APPEARS_IN", "DIRECTS", "MEMBER_OF", "OWNED_BY",
+    "IN_SESSION", "DIRECTS", "MEMBER_OF", "OWNED_BY",  # APPEARS_IN folded into IN_SESSION (P-5)
     "LOCATED_IN", "AT_LOCATION",
     "HAS_CLASS", "HAS_SUBCLASS", "HAS_ANCESTRY", "HAS_COMMUNITY", "USES_CARD",
     "HAS_FEATURE", "RUNS", "USES",
@@ -121,6 +134,7 @@ ALLOWED_PREDICATES = {
     "INVOLVES",
     "KNOWS", "FEARS", "HOSTILE_TO", "ALLIED_WITH",
     "PLAYS", "RELATES_TO",
+    "SUBQUEST_OF",  # Quest -> parent arc Quest (P-6/§6 sub-quest hierarchy)
     "TRUSTS", "BETRAYED", "KILLED", "FAMILY_OF",  # narrative-arc verbs (docs/evolution/11, WP9)
     "MENTIONS",  # Chunk -> any entity named in that passage (docs/evolution/13, WP13.5)
 }
@@ -148,7 +162,7 @@ STATE_PREDICATES = {
 }
 EVENT_PREDICATES = {
     "KILLED", "BETRAYED", "PARTICIPATED_IN", "TRIGGERED", "RESULTED_IN",
-    "TARGETS", "APPEARS_IN", "IN_SESSION",
+    "TARGETS", "IN_SESSION",
 }
 IDENTITY_PREDICATES = {"FAMILY_OF", "HAS_ANCESTRY", "HAS_COMMUNITY"}
 STATE_PREDICATES_WITH_LIFECYCLE = STATE_PREDICATES - {"PLAYS"}
@@ -157,25 +171,33 @@ STATE_PREDICATES_WITH_LIFECYCLE = STATE_PREDICATES - {"PLAYS"}
 # endpoint that can only hold one *current* value at a time. Fact superseded
 # when a new edge of the same type appears from/to that endpoint with a
 # different value on the other side — the old edge's valid_to closes.
-# None = many-to-many, never auto-superseded (e.g. MEMBER_OF: a character can
-# belong to several factions at once, per campaign design).
+# Only genuinely EXCLUSIVE facts belong here (audit_v7pro §7.2 — position and
+# ownership). Everything else is many-to-many and stays open: a plain read
+# gates on `valid_to IS NULL`, and staleness on those is carried by
+# `last_observed_session` (resolve.py) rather than a forced close.
+# `source_types` (optional) restricts the supersede to those start-node types:
+# LOCATED_IN is exclusive only for Character/Item POSITIONS — Location->Location
+# (geography) and Faction->Location are stable and must never close.
+# Deliberately NOT keyed (audit): AT_LOCATION / HAS_CLASS / HAS_SUBCLASS are
+# STABLE (an event's place and a character's class don't move) — valid_from
+# only; MEMBER_OF / ALLIED_WITH / HOSTILE_TO / TRUSTS / KNOWS / FEARS /
+# USES_CARD are many-to-many.
 STATE_PREDICATE_KEY = {
-    "LOCATED_IN": "start", "AT_LOCATION": "start",
-    "OWNED_BY": "start", "HAS_CLASS": "start", "HAS_SUBCLASS": "start",
-    "ALLIED_WITH": None, "HOSTILE_TO": None, "TRUSTS": None,
-    "MEMBER_OF": None, "KNOWS": None, "FEARS": None, "USES_CARD": None,
+    "LOCATED_IN": {"side": "start", "source_types": {"Character", "Item"}},
+    "OWNED_BY": {"side": "start"},
 }
 
 # Domain/range per predicate (docs/evolution/KG_Qualitaetsanalyse_S01, fix B):
 # {predicate: (allowed source :Entity.type set, allowed target set)}. Enforced
 # in resolve.py against the LLM's free-form `relationships` list only — the
-# deterministic edges resolve_graph() writes itself (APPEARS_IN, PLAYS,
+# deterministic edges resolve_graph() writes itself (IN_SESSION, PLAYS,
 # PARTICIPATED_IN, ...) are correct by construction and
 # never run through this table. RELATES_TO is intentionally absent: it is the
 # unconstrained catch-all fallback for off-vocab predicates.
 PREDICATE_DOMAINS = {
-    "IN_SESSION": ({"Event", "Quest"}, {"Session"}),
-    "APPEARS_IN": ({"Character"}, {"Session"}),
+    # IN_SESSION is the single provenance predicate for all types now (P-5,
+    # APPEARS_IN folded in) — Character joins Event/Quest as a valid source.
+    "IN_SESSION": ({"Event", "Quest", "Character"}, {"Session"}),
     "DIRECTS": ({"Player"}, {"Session"}),  # GM-is-world: the GM's ONLY edge
     "MEMBER_OF": ({"Character"}, {"Faction"}),
     "OWNED_BY": ({"Item"}, {"Character"}),
@@ -193,6 +215,7 @@ PREDICATE_DOMAINS = {
     "TARGETS": ({"Event"}, {"Character", "Item", "Location"}),
     "TRIGGERED": ({"Character", "Event"}, {"Event", "Character"}),
     "RESULTED_IN": ({"Event"}, {"Event", "Item", "Quest"}),
+    "SUBQUEST_OF": ({"Quest"}, {"Quest"}),  # sub-quest -> parent campaign arc (§6)
     "INVOLVES": ({"Event", "Quest"}, {"Character", "Item", "Location", "Faction"}),
     "KNOWS": ({"Character"}, {"Character"}),
     "FEARS": ({"Character"}, {"Character", "Faction"}),

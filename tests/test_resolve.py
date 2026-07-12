@@ -116,10 +116,12 @@ def test_resolve_graph_end_to_end(tmp_state=None):
             Character(name="Lindo Laut", role="PC", is_named_character=True),
             Character(name="Tim (Lindo Laut)", role="PC", is_named_character=True),   # composite must not fork
             Character(name="Marco", role="PC", is_named_character=True),               # player name must not fork
+            Character(name="Bertha", role="NPC", is_named_character=True),             # NPC ally target
         ],
         items=[Item(name="Zauberstab", owner="Lindo", is_named_artifact=True)],
         relationships=[
-            Relationship(subject="Lindo", predicate="ALLY_OF", object="Dodo", confidence="high"),
+            Relationship(subject="Lindo", predicate="ALLY_OF", object="Bertha", confidence="high"),  # PC->NPC, synonym-mapped, survives
+            Relationship(subject="Lindo", predicate="ALLY_OF", object="Dodo", confidence="high"),    # PC->PC, dropped (P-6)
             Relationship(subject="Lindo Laut", predicate="FLIRTS_WITH", object="Cookie", confidence="low"),
             Relationship(subject="Niemand", predicate="KNOWS", object="Lindo", confidence="high"),
         ],
@@ -134,17 +136,21 @@ def test_resolve_graph_end_to_end(tmp_state=None):
     edges = {(e["start_id"], e["type"], e["end_id"]): e for e in resolved["edges"]}
     # PLAYS parsed from labels, one per player, stamped with seq
     assert edges[("PLAYER_Tim", "PLAYS", "CHAR_LindoLaut")]["props"]["seq"] == 1
-    # synonym mapped
-    ally = edges[("CHAR_LindoLaut", "ALLIED_WITH", "CHAR_Dodo")]
-    assert ally["props"]["confidence"] == "high"
+    # synonym mapped (ALLY_OF -> ALLIED_WITH); PC->NPC survives, PC->PC dropped (P-6)
+    ally_edges = [e for e in resolved["edges"]
+                  if e["start_id"] == "CHAR_LindoLaut" and e["type"] == "ALLIED_WITH"]
+    assert len(ally_edges) == 1
+    assert ally_edges[0]["end_id"].startswith("NPC_")
+    assert ally_edges[0]["props"]["confidence"] == "high"
     # off-vocab coerced to RELATES_TO, original kept
     rel = edges[("CHAR_LindoLaut", "RELATES_TO", "CHAR_Cookie")]
     assert rel["props"]["original_predicate"] == "FLIRTS_WITH"
     # owner via alias -> OWNED_BY edge
     assert any(k[1] == "OWNED_BY" and k[2] == "CHAR_LindoLaut" for k in edges)
-    # unresolved endpoint dropped, not written
-    assert len(resolved["dropped"]) == 1
-    assert resolved["dropped"][0]["subject"] == "Niemand"
+    # unresolved endpoint dropped, and the PC<->PC ALLIED_WITH dropped (P-6)
+    reasons = [d["reason"] for d in resolved["dropped"]]
+    assert any(d["subject"] == "Niemand" for d in resolved["dropped"])
+    assert any(r.startswith("PC<->PC") for r in reasons)
     # in-fiction edges never land on a Player (only PLAYS/DIRECTS may touch PLAYER_*)
     for (s, t, o) in edges:
         if t not in ("PLAYS", "DIRECTS"):

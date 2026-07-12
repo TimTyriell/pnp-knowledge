@@ -47,9 +47,14 @@ implemented** — WP0–WP8, WP10, WP11 landed; WP4 Scene nodes were shipped the
 reverted; WP12 trait removal + the DeepSeek flagship shift, WP13 single-pass
 `SceneExtraction` + semantic scene chunking + chunk-level vector index, and
 WP14 (Item = named artifacts only, `RollEvent` removed, the `:Entity`/`:Chunk`
-label split) all landed. **Open: WP9** (multi-session proof + bitemporal
-`valid_from`/`valid_to` stamping in `store.py`; `STATE_PREDICATES` in
-`config.py` and the as-of read path in `retrieve.py` already exist). Measured
+label split) all landed. **WP9 (bitemporal) is largely shipped** (audit_v7pro §7):
+`resolve.py` stamps `valid_from` + `last_observed_session` on every state-lifecycle
+edge; `store.py` closes `valid_to` by supersession for the *exclusive* facts only —
+`STATE_PREDICATE_KEY` keys `LOCATED_IN` (Character/Item positions; geography stays
+open via a `source_types` guard) and `OWNED_BY`. Many-to-many state edges
+(`MEMBER_OF`, `ALLIED_WITH`, `HOSTILE_TO`, …) never force-close — staleness is
+carried by `last_observed_session` instead. The as-of read path in `retrieve.py`
+uses it. Still open: the multi-session proof run. Measured
 results and the Scene-revert rationale: `docs/learnings/MIGRATION_NOTES.md`. The
 pre-spec plan is archived at `docs/archive/PLAN.md`. Doc map: `docs/README.md`.
 
@@ -188,9 +193,11 @@ raw-text embeddings)`.
   props into `create_props` (all values) vs `match_props` (drops empty
   string/list) so a cross-session re-mention with nothing new never blanks
   out a value a prior session set (e.g. `Character.description`). `run_qa` =
-  the QA queries from `docs/evolution/07` (dup names, cross-type collisions,
-  missing provenance, orphan events). No `valid_from`/`valid_to` stamping
-  yet — that's WP9.
+  the QA queries from `docs/evolution/07` + the audit_v7pro §9 acceptance
+  checks (dup names, cross-type collisions, missing provenance, orphan events,
+  empty-significance events, SRD-layer edge purity, temporal closure).
+  Bitemporal `valid_from`/`valid_to` supersession + node-`status` versioning
+  live here (WP9, audit_v7pro §7).
 - **`srd.py`** — loads `data/daggerheart_srd.json` into an `SrdIndex`
   (prompt gazetteer + shared `RuleEntity` library); `preload` MERGEs the
   shared SRD nodes once, sessions link to them, never per-session copies.

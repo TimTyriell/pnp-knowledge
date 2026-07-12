@@ -50,10 +50,13 @@ def format_turn(seg: dict) -> str:
     # Emit the acting character (or 'GM') as the speaker, never the composite
     # 'Player (Character)' label — the composite string is what made the model
     # coin Tim / Lindo Laut / 'Tim (Lindo Laut)' as three separate entities.
+    # audit_v7pro §8 #3: no inline [MM:SS] timestamp — it carries no extractable
+    # world fact and costs ~8-12% of transcript tokens. Evidence is tracked by
+    # chunk index, never by timestamp; start/end stay in the segment dicts for
+    # pack_segments' silence-gap math.
     player, character, is_gm = parse_speaker(seg["speaker"])
     who = "GM" if is_gm else (character or player)
-    mins, secs = divmod(int(seg["start"]), 60)
-    return f"[{mins:02d}:{secs:02d}] {who}:\n  {seg['text'].strip()}\n\n"
+    return f"{who}:\n  {seg['text'].strip()}\n\n"
 
 
 def pack_segments(segments: list[dict]) -> list[str]:
@@ -100,6 +103,43 @@ def pack_segments(segments: list[dict]) -> list[str]:
             overlap_len += len(turns[overlap_start])
         start = overlap_start if overlap_start < cut else cut
     return chunks
+
+
+def heuristic_segment(segments: list[dict], target_size: int | None = None) -> list:
+    """Deterministic scene segmentation (audit_v7pro §8 #2): cut at the largest
+    silence gap within a char budget, no LLM pass. Replaces the flagship's
+    second full-transcript pass to DeepSeek just for scene boundaries — the same
+    gap heuristic pack_segments uses, but returns contiguous SceneBoundary index
+    ranges (each segment covered exactly once, no overlap — scene_chunks slices
+    them) instead of joined text. Coarse boundaries are acceptable here."""
+    from .schema import SceneBoundary
+    if not segments:
+        return []
+    target = target_size or CHUNK_SIZE
+    turns = [format_turn(s) for s in segments]
+    n = len(segments)
+    boundaries: list = []
+    start = 0
+    while start < n:
+        end = start
+        size = 0
+        best_break = None  # (gap, last-segment-index-of-scene) within budget
+        while end < n and size + len(turns[end]) <= target:
+            size += len(turns[end])
+            if end + 1 < n and size > target // 2:
+                gap = segments[end + 1]["start"] - segments[end]["end"]
+                if best_break is None or gap > best_break[0]:
+                    best_break = (gap, end)
+            end += 1
+        if end >= n:
+            boundaries.append(SceneBoundary(
+                start_segment=start, end_segment=n - 1, label=f"scene {len(boundaries) + 1}"))
+            break
+        cut = best_break[1] if best_break else end - 1
+        boundaries.append(SceneBoundary(
+            start_segment=start, end_segment=cut, label=f"scene {len(boundaries) + 1}"))
+        start = cut + 1
+    return boundaries
 
 
 def scene_chunks(segments: list[dict], boundaries: list) -> list[str]:

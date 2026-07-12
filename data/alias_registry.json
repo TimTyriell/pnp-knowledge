@@ -175,6 +175,10 @@
       "adjudicated_distinct": [
         "NPC_Leandras"
       ]
+    },
+    "NPC_Bertie": {
+      "canonical": "Bertie",
+      "aliases": []
     }
   },
   "locations": {
@@ -246,6 +250,10 @@
     },
     "ITEM_Schriftrollen": {
       "canonical": "Schriftrollen",
+      "aliases": []
+    },
+    "ITEM_GlowRinge": {
+      "canonical": "Glow-Ringe",
       "aliases": []
     }
   },

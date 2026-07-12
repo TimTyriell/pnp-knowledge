@@ -50,9 +50,11 @@ def _expand(driver, entity_ids: list[str], as_of_session: int | None) -> dict:
         edge_filter = "(r.valid_from IS NULL OR r.valid_to IS NULL)"
         params: dict = {}
     else:
+        # Outer parens: this filter is interpolated between surrounding ANDs;
+        # without them the top-level OR would bind against those ANDs.
         edge_filter = (
-            "(r.valid_from IS NULL) OR "
-            "(r.valid_from <= $asof AND (r.valid_to IS NULL OR r.valid_to > $asof))"
+            "((r.valid_from IS NULL) OR "
+            "(r.valid_from <= $asof AND (r.valid_to IS NULL OR r.valid_to > $asof)))"
         )
         params = {"asof": as_of_session}
     with driver.session() as db:

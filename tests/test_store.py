@@ -37,7 +37,23 @@ def test_supersede_fires_for_keyed_state_predicate():
     assert len(supersede_calls) == 1
     query, params = supersede_calls[0]
     assert "(k:Entity {id: $key_id})-[old:LOCATED_IN]->(o:Entity)" in query
-    assert params == {"key_id": "CHAR_Cookie", "other_id": "LOC_Wald", "valid_from": 2}
+    # LOCATED_IN is exclusive only for Character/Item positions (audit_v7pro §7):
+    # a source-type guard keeps Location->Location geography open.
+    assert "k.type IN $src_types" in query
+    assert params["key_id"] == "CHAR_Cookie"
+    assert params["other_id"] == "LOC_Wald"
+    assert params["valid_from"] == 2
+    assert sorted(params["src_types"]) == ["Character", "Item"]
+
+
+def test_supersede_skipped_for_stable_predicate():
+    # AT_LOCATION / HAS_CLASS are STABLE (audit_v7pro §7) — no longer keyed,
+    # so they must not emit a supersede query even though they carry valid_from.
+    db = _FakeDB()
+    edge = {"start_id": "EVT_Kampf", "end_id": "LOC_Wald", "type": "AT_LOCATION",
+            "props": {"session_id": "2025-04-01", "confidence": "high", "valid_from": 2}}
+    _write_graph(db, _resolved([edge]))
+    assert not any("old.valid_to" in c[0] for c in db.calls)
 
 
 def test_supersede_skipped_for_non_exclusive_predicate():

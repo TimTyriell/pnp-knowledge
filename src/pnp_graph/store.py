@@ -65,6 +65,19 @@ def _write_graph(db, resolved: dict) -> None:
         # Chunk passages carry the :Chunk label, never :Entity (see ensure_constraints).
         # Literal, not user input — safe to interpolate.
         label = "Chunk" if e["type"] == "Chunk" else "Entity"
+        # Node status versioning (audit_v7pro §7): before a new session overwrites
+        # an Item/Quest status, archive the prior value so status history isn't
+        # silently lost. Runs BEFORE the MERGE below (which sets the new status);
+        # no-op on first create (MATCH finds nothing) or an unchanged status.
+        new_status = create_props.get("status")
+        if new_status:
+            db.run(
+                f"MATCH (n:{label} {{id: $id}}) "
+                "WHERE n.status IS NOT NULL AND n.status <> $status "
+                "SET n.status_history = coalesce(n.status_history, []) + [n.status], "
+                "    n.status_valid_from = $sid",
+                id=e["id"], status=new_status, sid=props.get("session_id", ""),
+            )
         db.run(
             f"MERGE (n:{label} {{id: $id}}) "
             "ON CREATE SET n += $create_props, n.type = $type, n.created_at = timestamp() "
@@ -82,20 +95,28 @@ def _write_graph(db, resolved: dict) -> None:
         rtype = sanitize_predicate(r["type"])
         # rtype passed sanitize + the ALLOWED_PREDICATES gate in resolve.py;
         # safe to interpolate (relationship types can't be parameterized).
-        key_side = STATE_PREDICATE_KEY.get(rtype)
-        if key_side and "valid_from" in r["props"]:
+        spec = STATE_PREDICATE_KEY.get(rtype)
+        if spec and "valid_from" in r["props"]:
             # Supersede: close the prior open value on the cardinality-one
             # side before writing the new one, so a plain (non as-of) read
             # sees only the current fact (retrieve.py's default edge filter).
+            key_side = spec["side"]
+            src_types = spec.get("source_types")
             key_id = r["start_id"] if key_side == "start" else r["end_id"]
             other_id = r["end_id"] if key_side == "start" else r["start_id"]
             pattern = (f"(k:Entity {{id: $key_id}})-[old:{rtype}]->(o:Entity)" if key_side == "start"
                        else f"(o:Entity)-[old:{rtype}]->(k:Entity {{id: $key_id}})")
+            # source_types guard keeps geography (Location->Location) open.
+            type_guard = " AND k.type IN $src_types" if src_types else ""
+            kwargs = dict(key_id=key_id, other_id=other_id,
+                          valid_from=r["props"]["valid_from"])
+            if src_types:
+                kwargs["src_types"] = list(src_types)
             db.run(
                 f"MATCH {pattern} "
-                "WHERE o.id <> $other_id AND old.valid_to IS NULL "
+                f"WHERE o.id <> $other_id AND old.valid_to IS NULL{type_guard} "
                 "SET old.valid_to = $valid_from",
-                key_id=key_id, other_id=other_id, valid_from=r["props"]["valid_from"],
+                **kwargs,
             )
         # session_id in the MERGE pattern -> one edge per session (PLAYS history etc.).
         # Label-less endpoint MATCH: a MENTIONS/IN_SESSION edge has a :Chunk start
@@ -159,10 +180,31 @@ _QA_QUERIES = {
         "MATCH (a:Entity)-[r]->(b:Entity) MATCH (b)-[r2]->(a) "
         "WHERE type(r) = type(r2) AND type(r) IN ['ALLIED_WITH','HOSTILE_TO','KNOWS'] "
         "AND a.id < b.id RETURN count(*) AS c"),
+    # audit_v7pro §9 acceptance checks ---------------------------------------
+    "empty_significance_events": (  # 12. significance gate: no "no permanent change" events
+        "MATCH (e:Entity{type:'Event'}) WHERE e.significance =~ "
+        "'(?i).*(keine? permanente|no permanent|noch keine? spielrelevante).*' "
+        "RETURN count(e) AS c"),
+    "srd_world_edges": (  # 13. rules layer must carry no world/combat edges
+        "MATCH (n:Entity{session_id:'SRD'})-[r]-() WHERE type(r) IN "
+        "['KILLED','TARGETS','HOSTILE_TO','MEMBER_OF','OWNED_BY','LOCATED_IN'] "
+        "RETURN count(r) AS c"),
+    "double_current_location": (  # 14a. no Character/Item at two open positions (temporal closure)
+        # count DISTINCT locations: a same-location re-mention across sessions
+        # legitimately leaves two open edges to the SAME place — not a conflict.
+        "MATCH (c:Entity)-[r:LOCATED_IN]->(loc:Entity) "
+        "WHERE r.valid_to IS NULL AND c.type IN ['Character','Item'] "
+        "WITH c, count(DISTINCT loc) AS locs WHERE locs > 1 RETURN count(c) AS c"),
+    "volatile_edge_without_valid_from": (  # 14b. every volatile edge is stamped valid_from
+        "MATCH ()-[r]->() WHERE type(r) IN "
+        "['LOCATED_IN','OWNED_BY','MEMBER_OF','ALLIED_WITH','HOSTILE_TO'] "
+        "AND r.valid_from IS NULL RETURN count(r) AS c"),
 }
 _QA_BLOCKERS = ("dup_names", "cross_type_names", "missing_provenance", "timeline_unlinked",
                 "orphan_events", "forbidden_decision_nodes", "provenance_gap",
-                "bidirectional_dup_edges")
+                "bidirectional_dup_edges",
+                "empty_significance_events", "srd_world_edges",
+                "double_current_location", "volatile_edge_without_valid_from")
 
 # identity-critical types for the near-duplicate review gate (audit v6 test 3);
 # Events legitimately repeat similar titles across sessions, Sessions/Players

@@ -7,9 +7,10 @@ from pathlib import Path
 
 from .adjudicate import adjudicate_session
 from .chunking import (
-    ordered_sessions, pack_segments, read_segments, scene_chunks, session_id_from_path,
+    heuristic_segment, ordered_sessions, pack_segments, read_segments, scene_chunks,
+    session_id_from_path,
 )
-from .config import PROVIDER, STATE_DIR, TRANSCRIPT_DIR
+from .config import PROVIDER, STATE_DIR, TRANSCRIPT_DIR, USE_LLM_SEGMENTER
 from .embed import embed_entities
 from .extract import build_extractor, build_segmenter, extract_session, segment_session
 from .resolve import Resolver, resolve_graph
@@ -36,7 +37,9 @@ def ingest(transcript_dir: Path = TRANSCRIPT_DIR, only: str | None = None) -> No
         return
 
     extractor = build_extractor()
-    segmenter = build_segmenter() if PROVIDER == "deepseek" else None  # WP13.1, flagship-only
+    # Flagship scene segmentation: deterministic heuristic by default (§8 #2),
+    # LLM segmenter only when USE_LLM_SEGMENTER is set.
+    segmenter = build_segmenter() if (PROVIDER == "deepseek" and USE_LLM_SEGMENTER) else None
     resolver = Resolver()
     srd_index = SrdIndex()
     driver = connect()
@@ -47,10 +50,12 @@ def ingest(transcript_dir: Path = TRANSCRIPT_DIR, only: str | None = None) -> No
             log.info("=== Session %s (seq %d) ===", sid, seq)
             try:
                 segments, cast = read_segments(path)
-                if segmenter is not None:  # flagship: one chunk per semantic scene
-                    boundaries = segment_session(segmenter, segments)
+                if PROVIDER == "deepseek":  # flagship: one chunk per semantic scene
+                    boundaries = (segment_session(segmenter, segments) if segmenter is not None
+                                  else heuristic_segment(segments))
                     chunks = scene_chunks(segments, boundaries)
-                    log.info("Session %s: segmented into %d scenes", sid, len(chunks))
+                    log.info("Session %s: segmented into %d scenes (%s)", sid, len(chunks),
+                             "LLM" if segmenter is not None else "heuristic")
                 else:                       # local dev: char-budget chunks
                     chunks = pack_segments(segments)
                 cast_info = resolver.bootstrap_cast(cast)

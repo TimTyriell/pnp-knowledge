@@ -463,6 +463,10 @@ def resolve_graph(
         props = dict(props or {})
         if predicate_class(rtype) == "state" and "valid_from" not in props:
             props["valid_from"] = seq
+            # "last seen" stamp (audit_v7pro §7.4): lets a read tell "stale,
+            # not refuted" from "actively re-confirmed" on the many-to-many
+            # state edges that never force-close (ALLIED_WITH, MEMBER_OF, ...).
+            props["last_observed_session"] = seq
         edges.append({"start_id": start, "end_id": end, "type": rtype,
                       "props": {"session_id": session_id, "confidence": "high", **props}})
 
@@ -474,7 +478,7 @@ def resolve_graph(
     for cid, props in cast_info["characters"].items():
         add_entity(cid, "Character", {**props, "confidence": "high"})
         surface_to_id[normalize(props["name"])] = cid
-        add_edge(cid, session_node_id, "APPEARS_IN")
+        add_edge(cid, session_node_id, "IN_SESSION")
     for pid, cid in cast_info["plays"].items():
         add_edge(pid, cid, "PLAYS", {"seq": seq})
     # GM-is-world (KG_Qualitaetsanalyse_S01): the GM player's ONLY edge is
@@ -559,11 +563,11 @@ def resolve_graph(
     # --- extracted entities ----------------------------------------------
     for c in extraction.characters:
         if is_out_of_world(c.name):
-            dropped.append({"subject": c.name, "predicate": "APPEARS_IN",
+            dropped.append({"subject": c.name, "predicate": "IN_SESSION",
                             "object": session_node_id, "reason": "out-of-world (stream/chat/VTT)"})
             continue
         if is_gm_surface(c.name):  # GM-is-world: never a Character node
-            dropped.append({"subject": c.name, "predicate": "APPEARS_IN",
+            dropped.append({"subject": c.name, "predicate": "IN_SESSION",
                             "object": session_node_id, "reason": "gm-is-world"})
             continue
         # Generic-mob gate (pay-to-mint, like is_named_artifact for Items): a
@@ -574,7 +578,7 @@ def resolve_graph(
         # already), so the gate only ever fires on LLM-extracted surfaces.
         is_cast_pc = surface_to_id.get(normalize(c.name)) in entities
         if not is_cast_pc and (not c.is_named_character or is_generic_mob(c.name)):
-            dropped.append({"subject": c.name, "predicate": "APPEARS_IN",
+            dropped.append({"subject": c.name, "predicate": "IN_SESSION",
                             "object": session_node_id, "reason": "generic mob (not a named individual)"})
             continue
         cid = register(c.name, "Character", {
@@ -602,7 +606,7 @@ def resolve_graph(
                 resolver.pending_candidates.append({
                     "section": "characters", "new_id": cid, "surface": alias,
                     "existing_id": hit, "ratio": None, "source": "alias-conflict"})
-        add_edge(cid, session_node_id, "APPEARS_IN")
+        add_edge(cid, session_node_id, "IN_SESSION")
     for loc in extraction.locations:
         # named-place gate (pay-to-mint, like is_named_artifact): generic
         # stage-dressing ('der Wald', 'die Tür') is where a beat happens, not a
@@ -701,6 +705,15 @@ def resolve_graph(
             if start_type and end_type and (start_type not in src_types or end_type not in dst_types):
                 dropped.append({"subject": r.subject, "predicate": r.predicate, "object": r.object,
                                 "reason": f"domain/range violation ({start_type} -{rtype}-> {end_type})"})
+                continue
+        # P-6: party cohesion is implicit, not topology. The model sometimes
+        # emits ALLIED_WITH between two PCs — drop it deterministically. (KNOWS
+        # is left alone: PC<->NPC social edges are valuable, per the audit.)
+        if rtype == "ALLIED_WITH":
+            if (entities.get(start, {}).get("props", {}).get("is_pc")
+                    and entities.get(end, {}).get("props", {}).get("is_pc")):
+                dropped.append({"subject": r.subject, "predicate": r.predicate,
+                                "object": r.object, "reason": "PC<->PC party cohesion (implicit)"})
                 continue
         rel_chunks = chunks_of("relationships", (r.subject, r.predicate, r.object)) \
             or ([r.evidence] if r.evidence else [])

@@ -6,8 +6,9 @@ import logging
 from langchain_ollama import ChatOllama
 
 from .config import (
-    DEEPSEEK_API_KEY, DEEPSEEK_BASE_URL, FLAGSHIP_MAX_TOKENS, LLM_MODEL, LLM_TIMEOUT_S,
-    NUM_CTX, NUM_PREDICT, PROVIDER, REPEAT_PENALTY, SUGGESTED_PREDICATES,
+    DEEPSEEK_API_KEY, DEEPSEEK_BASE_URL, FLAGSHIP_MAX_TOKENS, KNOWN_WORLD_REFRESH_EVERY,
+    LLM_MODEL, LLM_TIMEOUT_S, NUM_CTX, NUM_PREDICT, PROVIDER, REPEAT_PENALTY,
+    SUGGESTED_PREDICATES,
 )
 from .schema import GraphExtraction, SceneExtraction, SceneSegmentation
 
@@ -26,12 +27,19 @@ _SCENE_PROMPT = (
     "(is_named_artifact=true): 'Schwert des Veritas', 'die verlorene Schriftrolle der Blume'.\n"
     "- characters, locations, quests, factions: use consistent names across mentions. "
     "For characters, set role to \"adversary\" for a hostile monster/enemy the party fights, "
-    "\"NPC\" for other non-player characters, \"PC\" for player characters. If a character "
+    "\"NPC\" for other non-player characters, \"PC\" for player characters. An unnamed NPC "
+    "that is a quest objective or otherwise plot-critical (the rescued child, a quest-giver, "
+    "the smith who supplies the party) still counts as named: set is_named_character=true and "
+    "give it a stable descriptive name (e.g. 'Das gerettete Kind'); ordinary background extras "
+    "and generic monsters stay is_named_character=false. If a character "
     "shows a recurring personality trait, habit, or quirk (e.g. 'plays music often', 'always "
     "distrusts strangers'), fold it into that character's description as prose — never as a "
     "separate happening. Never put a player's out-of-character/meta commentary (rules "
     "questions, feedback about the session) into a character's description — that describes "
-    "the player, not the character.\n"
+    "the player, not the character. For quests, if a scene's objective is a sub-task of a "
+    "larger campaign arc (e.g. clearing the crypt inside the overall rescue mission), extract "
+    "it as its own quest and add a SUBQUEST_OF relationship from the sub-quest to the arc "
+    "quest.\n"
     "- rule_entities: game-rules objects referenced at the table (classes, subclasses, "
     "ancestries, communities, domain cards, class features, adversary stat blocks, system "
     "resources like Hope/Fear/Stress). Game resources are rule entities, NOT items. "
@@ -57,7 +65,9 @@ _SCENE_PROMPT = (
     "supports it. If the relationship carries nuance the predicate alone can't express (e.g. "
     "'trusts him only reluctantly, since the incident in the forest'), add a short description; "
     "leave it empty otherwise. Do not extract ALLIED_WITH or KNOWS between player characters — "
-    "party membership is implicit and not a relationship.\n\n"
+    "party membership is implicit and not a relationship. Assert ALLIED_WITH only for explicit, "
+    "sustained cooperation; a deity or force that intervenes chaotically or violently is "
+    "HOSTILE_TO or nothing — never an ally.\n\n"
     "Extract ONLY what exists inside the game fiction (diegetic). Ignore stream/chat meta "
     "entirely: Twitch chat messages, raid announcements, viewer shout-outs, and VTT/tool "
     "operation talk (turn trackers, camera/cinema modes, dice-roller UI) are not part of the "
@@ -70,7 +80,10 @@ _SCENE_PROMPT = (
     "The transcript is auto-transcribed (Whisper) — names appear in inconsistent spellings. "
     "Never create separate entities for spelling variants of one name (pick one spelling and "
     "keep it), and never merge two people just because their names sound similar when the "
-    "context shows they are different figures (e.g. a tomb guardian vs. a fleeing child).\n\n"
+    "context shows they are different figures (e.g. a tomb guardian vs. a fleeing child). Names "
+    "read aloud from an in-fiction list, book, or scroll (a Namensliste) are not aliases of the "
+    "reader or of each other; extract such a name only if it clearly denotes a character present "
+    "in the scene.\n\n"
 )
 
 
@@ -262,10 +275,19 @@ def extract_session(extractor, chunks: list[str],
     """
     merged = GraphExtraction()
     evidence: dict = {}
+    # Windowed known-world (audit_v7pro §8 #1): rebuilding the gazetteer every
+    # scene grows the prompt prefix each call and breaks DeepSeek's prefix
+    # cache. Refresh it only every KNOWN_WORLD_REFRESH_EVERY chunks so the
+    # prefix stays byte-identical across a window of calls (cache hits); the
+    # resolver's fuzzy+alias pass still catches any spelling drift within a
+    # window ("extract generously, resolve deterministically").
+    # ponytail: window fixed; make adaptive only if a session exceeds ~2 windows and drift shows.
+    window_known: dict | None = None
     for i, chunk in enumerate(chunks, start=1):
+        if window_known is None or (i - 1) % KNOWN_WORLD_REFRESH_EVERY == 0:
+            window_known = _combined_known(known_world, merged)
         try:
-            result = extract_chunk(extractor, chunk, i, cast_names, rule_names,
-                                   _combined_known(known_world, merged))
+            result = extract_chunk(extractor, chunk, i, cast_names, rule_names, window_known)
         except Exception as exc:
             if fail_dir is None:
                 raise
