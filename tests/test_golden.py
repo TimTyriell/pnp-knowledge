@@ -19,7 +19,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 import pnp_graph.resolve as resolve_mod
 from pnp_graph.chunking import session_cast
 from pnp_graph.resolve import Resolver, resolve_graph
-from pnp_graph.schema import (Character, Decision, Event, GraphExtraction, Item,
+from pnp_graph.schema import (Character, Event, GraphExtraction, Item,
                               Quest, Relationship, RuleEntity)
 from pnp_graph.srd import SrdIndex
 
@@ -43,14 +43,9 @@ _EXTRACTION = GraphExtraction(
     events=[Event(label="Monster greift an", summary="", participants=["Dodo", "Lindo"],
                   location=None, narrative_significance_reasoning="Kampf beginnt")],
     rule_entities=[RuleEntity(name="Barde", subtype="Class")],
-    decisions=[Decision(name="Monster provozieren", decided_by="Lindo Laut",
-                        quote="ich singe", consequence="Monster greift an",
-                        confidence="medium")],
     relationships=[
         Relationship(subject="Lindo Laut", predicate="HAS_CLASS", object="Barde",
                      confidence="high"),
-        Relationship(subject="Monster provozieren", predicate="TRIGGERED",
-                     object="Monster greift an", confidence="high"),
         Relationship(subject="Dodo", predicate="BEST_BUDDY", object="Cookie",  # off-vocab
                      confidence="low"),
         Relationship(subject="Unbekannt", predicate="KNOWS", object="Dodo",  # dropped
@@ -66,9 +61,7 @@ _EVIDENCE = {
     ("quests", "Monsterjagd"): [1],
     ("events", "Monster greift an"): [2],
     ("rule_entities", "Barde"): [1],
-    ("decisions", "Monster provozieren"): [1],
     ("relationships", ("Lindo Laut", "HAS_CLASS", "Barde")): [1],
-    ("relationships", ("Monster provozieren", "TRIGGERED", "Monster greift an")): [2],
     ("relationships", ("Dodo", "BEST_BUDDY", "Cookie")): [2],
 }
 

@@ -28,7 +28,10 @@ def test_flagship_profile_resolves(monkeypatch):
     try:
         _reload(monkeypatch, "flagship")
         assert cfg.PROVIDER == "deepseek"
-        assert cfg.LLM_MODEL == "deepseek-chat"
+        # default flagship model (env-overridable via DEEPSEEK_MODEL)
+        monkeypatch.delenv("DEEPSEEK_MODEL", raising=False)
+        importlib.reload(cfg)
+        assert cfg.LLM_MODEL == "deepseek-v4-flash"
         assert cfg.CHUNK_SIZE == 44000
     finally:
         _reload(monkeypatch, None)  # restore default so other tests see 'local'

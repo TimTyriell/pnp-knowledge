@@ -5,6 +5,7 @@ import logging
 from datetime import datetime, timezone
 from pathlib import Path
 
+from .adjudicate import adjudicate_session
 from .chunking import (
     ordered_sessions, pack_segments, read_segments, scene_chunks, session_id_from_path,
 )
@@ -56,6 +57,7 @@ def ingest(transcript_dir: Path = TRANSCRIPT_DIR, only: str | None = None) -> No
                 cast_names = [p["name"] for p in cast_info["characters"].values()]
                 graph, evidence = extract_session(extractor, chunks, cast_names,
                                                   srd_index.gazetteer(),
+                                                  known_world=resolver.known_world(),
                                                   fail_dir=STATE_DIR / "failures" / sid)
                 log.info(
                     "Session %s merged total: %d characters, %d locations, %d items, "
@@ -67,6 +69,10 @@ def ingest(transcript_dir: Path = TRANSCRIPT_DIR, only: str | None = None) -> No
                 )
                 resolved = resolve_graph(resolver, graph, sid, cast_info, seq,
                                          evidence=evidence, srd_index=srd_index, chunk_texts=chunks)
+                # LLM identity adjudication (audit v6): settle gray-band /
+                # alias-conflict candidates BEFORE the write, so a merged pair
+                # never reaches Neo4j as two nodes.
+                adjudicate_session(resolver, resolved, sid)
                 write_session(driver, resolved)
                 embed_entities(driver, [e["id"] for e in resolved["entities"]])
                 qa = run_qa(driver)

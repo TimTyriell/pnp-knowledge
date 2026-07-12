@@ -34,31 +34,43 @@ _SCENE_PROMPT = (
     "the player, not the character.\n"
     "- rule_entities: game-rules objects referenced at the table (classes, subclasses, "
     "ancestries, communities, domain cards, class features, adversary stat blocks, system "
-    "resources like Hope/Fear/Stress). Game resources are rule entities, NOT items.\n"
+    "resources like Hope/Fear/Stress). Game resources are rule entities, NOT items. "
+    "Extract ONLY rules that match the known-rules list further below — anything rule-like "
+    "that is not on that list (in-character banter about made-up abilities, descriptions of "
+    "miniatures/tokens) is NOT a rule entity; skip it.\n"
     "- macro_scene_event: the SINGLE most consequential thing this whole scene accomplishes — "
     "its summary as one macro unit, or the one permanent, world-altering state change (a death, "
     "a quest completed, an alliance formed, ownership changing hands). A whole 20-minute combat "
     "is ONE event (e.g. 'Kampf gegen die Goblins'), never one per attack or roll. Fill "
     "narrative_significance_reasoning with why this scene alters world state — if the scene is "
-    "pure filler, still name its most consequential moment; do not invent multiple events.\n"
-    "- decisions: deliberate, weighty player/GM choices, with a short verbatim quote and "
-    "the consequence.\n"
+    "pure filler, still name its most consequential moment; do not invent multiple events. "
+    "Session-opening recaps and character introductions are NOT macro-events.\n"
     "- relationships: arbitrary lore/social/causal connections between entities you extracted "
-    "above (e.g. a character is hostile to a faction, a character HAS_CLASS a class, a decision "
-    "TRIGGERED an event, an event RESULTED_IN another event, an adversary USES its stat block). "
+    "above (e.g. a character is hostile to a faction, a character HAS_CLASS a class, an event "
+    "RESULTED_IN another event, an adversary USES its stat block). "
     "Each relationship's subject and object — and the macro_scene_event's participants — must be "
     "one of the names you extracted above or from the cast list below, never an entity you "
     "haven't listed anywhere else. Prefer reusing one of these relation types when it fits: "
     f"{', '.join(SUGGESTED_PREDICATES)}, HAS_CLASS, HAS_SUBCLASS, HAS_ANCESTRY, USES_CARD, "
-    "HAS_FEATURE, USES, DECIDED — but use a different short UPPER_SNAKE_CASE predicate "
+    "HAS_FEATURE, USES — but use a different short UPPER_SNAKE_CASE predicate "
     "if none of these fit. Rate each relationship's confidence based on how directly the text "
     "supports it. If the relationship carries nuance the predicate alone can't express (e.g. "
     "'trusts him only reluctantly, since the incident in the forest'), add a short description; "
-    "leave it empty otherwise.\n\n"
-    "Ignore stream/chat meta entirely: Twitch chat messages, raid announcements, viewer "
-    "shout-outs, and VTT/tool operation talk (turn trackers, camera/cinema modes, dice-roller "
-    "UI) are not part of the game fiction. Never extract a chat viewer, a raiding community, "
-    "or a tool/UI element as a character or NPC.\n\n"
+    "leave it empty otherwise. Do not extract ALLIED_WITH or KNOWS between player characters — "
+    "party membership is implicit and not a relationship.\n\n"
+    "Extract ONLY what exists inside the game fiction (diegetic). Ignore stream/chat meta "
+    "entirely: Twitch chat messages, raid announcements, viewer shout-outs, and VTT/tool "
+    "operation talk (turn trackers, camera/cinema modes, dice-roller UI) are not part of the "
+    "game fiction. Never extract a chat viewer, a raiding community, or a tool/UI element as a "
+    "character or NPC. The same goes for GM remarks about the real world (scheduling, someone "
+    "making the session run late, technical issues), descriptions of the physical "
+    "miniatures/tokens on the table ('das ist nur eine Maus als Figur' describes the miniature, "
+    "not the character), and in-character jokes about abilities or classes that do not exist — "
+    "none of these are entities.\n\n"
+    "The transcript is auto-transcribed (Whisper) — names appear in inconsistent spellings. "
+    "Never create separate entities for spelling variants of one name (pick one spelling and "
+    "keep it), and never merge two people just because their names sound similar when the "
+    "context shows they are different figures (e.g. a tomb guardian vs. a fleeing child).\n\n"
 )
 
 
@@ -68,6 +80,11 @@ def _make_chat_llm():
         return ChatOpenAI(
             model=LLM_MODEL, temperature=0, base_url=DEEPSEEK_BASE_URL,
             api_key=DEEPSEEK_API_KEY, timeout=LLM_TIMEOUT_S, max_tokens=FLAGSHIP_MAX_TOKENS,
+            # deepseek-v4-flash defaults to thinking mode, which rejects the forced
+            # tool_choice with_structured_output(function_calling) sets — dense chunks
+            # that trigger thinking then 400/return None. Disable thinking for
+            # structured extraction (the two are mutually exclusive on this endpoint).
+            extra_body={"thinking": {"type": "disabled"}},
         )
     # One ChatOllama instance -> one model resident in VRAM even though we
     # issue two structured-output calls per chunk (docs/evolution/06).
@@ -122,6 +139,24 @@ def _gazetteer_line(rule_names: list[str] | None) -> str:
     )
 
 
+def _known_world_line(known: dict[str, list[str]] | None) -> str:
+    """Audit v6 engine fix: the campaign's known canon, injected per chunk so the
+    model resolves mentions to existing entities at extraction time instead of
+    minting ASR spelling variants / quest paraphrases the resolver then can't merge."""
+    if not known or not any(known.values()):
+        return ""
+    lines = "\n".join(f"{label}: {'; '.join(names)}" for label, names in known.items() if names)
+    return (
+        "Known campaign entities from previous sessions and earlier scenes of this one. "
+        "When a mention refers to — or is an ASR spelling variant of — one of these, use the "
+        "EXACT name as listed, never a new spelling. Only introduce a new entity when it is "
+        "clearly distinct from all of these.\n"
+        f"{lines}\n"
+        "If this scene advances one of the known quests, reuse its exact quest name and set "
+        "its current status; only create a new quest for a genuinely new storyline.\n\n"
+    )
+
+
 def _invoke_with_retry(extractor, prompt: str, chunk: str, chunk_index: int, label: str):
     try:
         result = extractor.invoke(prompt + chunk)
@@ -139,10 +174,12 @@ def _invoke_with_retry(extractor, prompt: str, chunk: str, chunk_index: int, lab
 
 def extract_chunk(extractor, chunk: str, chunk_index: int,
                   cast_names: list[str] | None = None,
-                  rule_names: list[str] | None = None) -> GraphExtraction:
+                  rule_names: list[str] | None = None,
+                  known_world: dict[str, list[str]] | None = None) -> GraphExtraction:
     """One structured-output call per chunk (docs/evolution/13, WP13.6): entities,
-    rules, the one capsule macro event (WP13.2), rolls, decisions, relationships."""
-    prompt = _SCENE_PROMPT + _cast_line(cast_names) + _gazetteer_line(rule_names)
+    rules, the one capsule macro event (WP13.2), relationships."""
+    prompt = (_SCENE_PROMPT + _cast_line(cast_names) + _gazetteer_line(rule_names)
+              + _known_world_line(known_world))
     scene: SceneExtraction = _invoke_with_retry(extractor, prompt, chunk, chunk_index, "scene")
     for r in scene.relationships:
         r.evidence = chunk_index  # set programmatically; the model can't know its chunk
@@ -152,7 +189,6 @@ def extract_chunk(extractor, chunk: str, chunk_index: int,
         items=scene.items, quests=scene.quests, factions=scene.factions,
         rule_entities=scene.rule_entities,
         events=[scene.macro_scene_event],
-        decisions=scene.decisions,
         relationships=scene.relationships,
     )
 
@@ -167,7 +203,6 @@ def merge_graphs(target: GraphExtraction, extra: GraphExtraction) -> None:
         ("events", "label"),
         ("factions", "name"),
         ("rule_entities", "name"),
-        ("decisions", "name"),
     ):
         existing = {getattr(item, key) for item in getattr(target, field)}
         for item in getattr(extra, field):
@@ -190,7 +225,7 @@ def _record_evidence(evidence: dict, result: GraphExtraction, chunk_index: int) 
     for field, key in (
         ("characters", "name"), ("locations", "name"), ("items", "name"),
         ("quests", "name"), ("events", "label"), ("factions", "name"),
-        ("rule_entities", "name"), ("decisions", "name"),
+        ("rule_entities", "name"),
     ):
         for item in getattr(result, field):
             evidence.setdefault((field, getattr(item, key)), []).append(chunk_index)
@@ -198,9 +233,27 @@ def _record_evidence(evidence: dict, result: GraphExtraction, chunk_index: int) 
         evidence.setdefault(("relationships", (r.subject, r.predicate, r.object)), []).append(chunk_index)
 
 
+def _combined_known(known_world: dict[str, list[str]] | None,
+                    merged: GraphExtraction) -> dict[str, list[str]]:
+    """Campaign gazetteer + names already extracted in earlier scenes of THIS
+    session, so scene 7 reuses the exact names scene 2 introduced (catches
+    Goblin-Dorf/Goblinlager splits before the registry ever sees them)."""
+    combined = {k: list(v) for k, v in (known_world or {}).items()}
+    for label, items in (("Characters", merged.characters), ("Locations", merged.locations),
+                         ("Factions", merged.factions), ("Quests", merged.quests),
+                         ("Items", merged.items)):
+        lines = combined.setdefault(label, [])
+        for item in items:
+            name = item.name
+            if not any(line.casefold().startswith(name.casefold()) for line in lines):
+                lines.append(name)
+    return combined
+
+
 def extract_session(extractor, chunks: list[str],
                     cast_names: list[str] | None = None,
                     rule_names: list[str] | None = None,
+                    known_world: dict[str, list[str]] | None = None,
                     fail_dir=None) -> tuple[GraphExtraction, dict]:
     """Run every chunk of one session; returns (merged graph, evidence sidecar).
 
@@ -211,7 +264,8 @@ def extract_session(extractor, chunks: list[str],
     evidence: dict = {}
     for i, chunk in enumerate(chunks, start=1):
         try:
-            result = extract_chunk(extractor, chunk, i, cast_names, rule_names)
+            result = extract_chunk(extractor, chunk, i, cast_names, rule_names,
+                                   _combined_known(known_world, merged))
         except Exception as exc:
             if fail_dir is None:
                 raise

@@ -79,16 +79,6 @@ class RuleEntity(BaseModel):
     subtype: str = Field(description="Class, Subclass, Ancestry, Community, DomainCard, ClassFeature, Adversary, or System")
 
 
-class Decision(BaseModel):
-    """A deliberate, weighty player or GM choice."""
-
-    name: str = Field(description="Short label for the decision")
-    decided_by: str | None = Field(default=None, description="Character who decided")
-    quote: str = Field(default="", description="Short verbatim quote if available")
-    consequence: str = Field(default="", description="What the decision led to")
-    confidence: Literal["high", "medium", "low"] = "medium"
-
-
 class SceneBoundary(BaseModel):
     """One logical scene in a session (docs/evolution/13, WP13.1): a contiguous
     span of transcript segments the semantic-chunking pre-pass groups together
@@ -126,7 +116,7 @@ class Relationship(BaseModel):
 class SceneExtraction(BaseModel):
     """Everything extracted from one scene chunk in a single structured-output
     call (docs/evolution/13, WP13.6): entities, rules, the one capsule macro
-    event (WP13.2), rolls, decisions and relationships. Supersedes the WP7
+    event (WP13.2) and relationships. Supersedes the WP7
     two-pass entity/event split — that split existed to keep a 14B reliable
     on a smaller schema; on the flagship profile (and with scenes now
     pre-segmented, so each call is already scoped to one coherent unit) one
@@ -139,7 +129,6 @@ class SceneExtraction(BaseModel):
     factions: list[Faction] = []
     rule_entities: list[RuleEntity] = []
     macro_scene_event: Event
-    decisions: list[Decision] = []
     relationships: list[Relationship] = []
 
 
@@ -151,5 +140,4 @@ class GraphExtraction(BaseModel):
     events: list[Event] = []
     factions: list[Faction] = []
     rule_entities: list[RuleEntity] = []
-    decisions: list[Decision] = []
     relationships: list[Relationship] = []

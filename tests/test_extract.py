@@ -76,6 +76,35 @@ def test_extract_chunk_retries_once():
     assert len(extractor.prompts) == 2  # first raised, retry succeeded
 
 
+def test_known_world_injected_and_accumulates_within_session():
+    # audit v6 engine fix: campaign gazetteer lands in every chunk prompt, and
+    # names extracted in earlier scenes of the same session are appended so
+    # later scenes reuse them (no Goblin-Dorf/Goblinlager splits).
+    from pnp_graph.extract import extract_session
+    scene1 = SceneExtraction(
+        locations=[Location(name="Goblinlager", is_named_location=True)],
+        macro_scene_event=_event("Lager entdeckt"))
+    scene2 = SceneExtraction(macro_scene_event=_event("Rückkehr"))
+    extractor = _FakeExtractor([scene1, scene2])
+
+    known = {"Characters": ["Berthold (aka der Schmied)"], "Locations": ["Breska"]}
+    extract_session(extractor, ["chunk one", "chunk two"], known_world=known)
+
+    # campaign canon in every prompt
+    assert all("Breska" in p and "Berthold (aka der Schmied)" in p for p in extractor.prompts)
+    assert all("EXACT name" in p for p in extractor.prompts)
+    # scene 1's new location visible to scene 2, not to scene 1 itself
+    assert "Goblinlager" not in extractor.prompts[0]
+    assert "Goblinlager" in extractor.prompts[1]
+
+
+def test_no_known_world_line_when_empty():
+    scene = SceneExtraction(macro_scene_event=_event("Szene"))
+    extractor = _FakeExtractor([scene])
+    extract_chunk(extractor, "chunk text", 1)
+    assert "Known campaign entities" not in extractor.prompts[0]
+
+
 def test_segment_session_returns_llm_boundaries():
     segments = [{"speaker": "GM", "text": f"line {i}"} for i in range(6)]
     seg = SceneSegmentation(scenes=[

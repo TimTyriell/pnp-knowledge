@@ -14,7 +14,7 @@ import pnp_graph.resolve as resolve_mod
 from pnp_graph.chunking import parse_speaker, session_cast
 from pnp_graph.resolve import (Resolver, is_out_of_world, map_predicate, normalize,
                                normalize_confidence, predicate_class, resolve_graph, slug)
-from pnp_graph.schema import (Character, Decision, Event, Faction, GraphExtraction, Item,
+from pnp_graph.schema import (Character, Event, Faction, GraphExtraction, Item,
                               Location, Relationship, RuleEntity)
 from pnp_graph.srd import SrdIndex
 
@@ -149,9 +149,14 @@ def test_resolve_graph_end_to_end(tmp_state=None):
     for (s, t, o) in edges:
         if t not in ("PLAYS", "DIRECTS"):
             assert not s.startswith("PLAYER_") and not o.startswith("PLAYER_")
-    # every node and edge carries provenance
+    # every node and edge carries provenance — except Player nodes, which are
+    # campaign-wide (audit v6 F29): no session_id, history lives on PLAYS{seq}
     for e in resolved["entities"]:
-        assert e["props"]["session_id"] and e["props"]["confidence"]
+        assert e["props"]["confidence"]
+        if e["type"] == "Player":
+            assert "session_id" not in e["props"]
+        else:
+            assert e["props"]["session_id"]
     for e in resolved["edges"]:
         assert e["props"]["session_id"] and e["props"]["confidence"]
 
@@ -195,7 +200,7 @@ def test_record_evidence_sidecar():
     assert ev[("relationships", ("Dodo", "KNOWS", "Cookie"))] == [1, 3]
 
 
-def test_srd_rules_decisions():
+def test_srd_rules():
     resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
     r = _tmp_resolver()
     info = _cast_info(r)
@@ -203,19 +208,12 @@ def test_srd_rules_decisions():
     extraction = GraphExtraction(
         rule_entities=[
             RuleEntity(name="Barde", subtype="Class"),          # German alias -> SRD id
-            RuleEntity(name="Hausregel Xyz", subtype="System"), # not in SRD -> minted
-        ],
-        decisions=[
-            Decision(name="Ritual bewusst falsch", decided_by="Lindo Laut",
-                     quote="wir machen es falsch", consequence="Monster erscheint",
-                     confidence="high"),
+            RuleEntity(name="Hausregel Xyz", subtype="System"), # not in SRD -> dropped
         ],
         characters=[Character(name="Monster", role="NPC", is_named_character=True)],
         relationships=[
             Relationship(subject="Lindo Laut", predicate="HAS_CLASS", object="Barde",
                          confidence="high"),
-            Relationship(subject="Ritual bewusst falsch", predicate="TRIGGERED",
-                         object="Monster", confidence="high"),
         ],
     )
     resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1,
@@ -223,14 +221,11 @@ def test_srd_rules_decisions():
     ids = {e["id"] for e in resolved["entities"]}
     # SRD hit links to the shared id — no per-session copy entity emitted
     assert "RULE_CLASS_Bard" not in ids
-    # non-SRD rule minted with subtype prefix
-    assert any(i.startswith("RULE_SYSTEM_") for i in ids)
-    # session-scoped decision id
-    assert "DEC_2025-03-26_RitualBewusstFalsch" in ids
+    # SRD-link-only (audit v6): non-SRD rules are never minted
+    assert not any(i.startswith("RULE_") for i in ids)
+    assert any(d["reason"] == "no SRD match" for d in resolved["dropped"])
     edges = {(e["start_id"], e["type"], e["end_id"]) for e in resolved["edges"]}
-    assert ("CHAR_LindoLaut", "DECIDED", "DEC_2025-03-26_RitualBewusstFalsch") in edges
-    # causal chain: decision TRIGGERED monster; PC HAS_CLASS shared SRD node
-    assert ("DEC_2025-03-26_RitualBewusstFalsch", "TRIGGERED", "NPC_Monster") in edges
+    # PC HAS_CLASS shared SRD node
     assert ("CHAR_LindoLaut", "HAS_CLASS", "RULE_CLASS_Bard") in edges
 
 
@@ -319,7 +314,6 @@ def test_gm_is_world():
         characters=[Character(name="GM", role="NPC", is_named_character=True)],  # model minting the GM
         events=[Event(label="Kampfbeginn", participants=["Deniz", "Dodo"],
                       narrative_significance_reasoning="Kampf beginnt")],
-        decisions=[Decision(name="Monster flieht", decided_by="Deniz", confidence="high")],
         relationships=[Relationship(subject="Deniz", predicate="KNOWS", object="Dodo",
                                     confidence="high")],
     )
@@ -331,9 +325,9 @@ def test_gm_is_world():
     # DIRECTS is the GM player's only edge
     gm_edges = [(s, t, o) for s, t, o in edges if s == "PLAYER_Deniz" or o == "PLAYER_Deniz"]
     assert gm_edges == [("PLAYER_Deniz", "DIRECTS", "SESS_2025-03-26")]
-    # the PC keeps its PARTICIPATED_IN; GM roll/decision edges are gone
+    # the PC keeps its PARTICIPATED_IN; GM edges are gone
     assert any(t == "PARTICIPATED_IN" and s == "CHAR_Dodo" for s, t, _ in edges)
-    assert not any(t in ("ROLLED", "DECIDED", "KNOWS") and "Deniz" in s for s, t, _ in edges)
+    assert not any(t in ("ROLLED", "KNOWS") and "Deniz" in s for s, t, _ in edges)
     assert any(d["reason"] == "gm-is-world" for d in resolved["dropped"])
 
 
@@ -382,11 +376,11 @@ def test_generic_place_never_minted():
     extraction = GraphExtraction(locations=[
         Location(name="der Wald", is_named_location=True),    # backstop (generic term)
         Location(name="ein Raum", is_named_location=False),   # schema gate
-        Location(name="Breschka", is_named_location=True),    # real place survives
+        Location(name="Breska", is_named_location=True),    # real place survives
     ])
     resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1)
     names = {e["props"]["name"] for e in resolved["entities"] if e["type"] == "Location"}
-    assert "Breschka" in names
+    assert "Breska" in names
     assert not any("Wald" in n or "Raum" in n for n in names)
     assert sum(d["reason"].startswith("generic place") for d in resolved["dropped"]) == 2
 
@@ -473,25 +467,24 @@ def test_event_gate_drops_meta_and_roll_events():
     assert event_gate("Dodo moves the Pott", set(), players) is None
 
 
-def test_rule_subtype_clamp():
-    # off-enum subtypes ('diceroll', 'weapon trait', ...) never mint; enum +
-    # 'game'-prefixed variants do; SRD hits bypass the clamp entirely.
+def test_non_srd_rules_never_minted():
+    # SRD-link-only (audit v6, rule 5): a rule the SRD index doesn't know is
+    # never minted, whatever its subtype claims; SRD hits link to shared nodes.
     resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
     r = _tmp_resolver()
     info = _cast_info(r)
     srd = SrdIndex()
     extraction = GraphExtraction(rule_entities=[
-        RuleEntity(name="2w12", subtype="diceroll"),          # off-enum -> dropped
-        RuleEntity(name="reliable", subtype="weapon trait"),  # off-enum -> dropped
-        RuleEntity(name="Hausregel Xyz", subtype="game-mechanic"),  # game+enum -> minted
+        RuleEntity(name="2w12", subtype="diceroll"),               # noise -> dropped
+        RuleEntity(name="Blizzard", subtype="Class"),              # banter -> dropped
+        RuleEntity(name="Hausregel Xyz", subtype="game-mechanic"), # homebrew -> dropped
         RuleEntity(name="Tend to All Wounds", subtype="game-rule"),  # SRD alias -> shared node
     ])
     resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1, srd_index=srd)
     ids = {e["id"] for e in resolved["entities"]}
-    assert not any("2w12" in i.lower() or "reliable" in i.lower() for i in ids)
-    assert any(i.startswith("RULE_GAMEMECHANIC_") for i in ids)
-    assert sum(1 for d in resolved["dropped"] if d["reason"] == "off-enum rule subtype") == 2
-    # SRD alias resolved to the shared Long Rest node, no per-session mint
+    assert not any(i.startswith("RULE_") for i in ids)
+    assert sum(1 for d in resolved["dropped"] if d["reason"] == "no SRD match") == 3
+    # SRD alias resolved to the shared node, no per-session mint
     assert not any("tendtoallwounds" in i.lower() for i in ids)
 
 

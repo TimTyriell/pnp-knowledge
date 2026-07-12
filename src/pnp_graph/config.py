@@ -31,7 +31,9 @@ _PROFILES = {
     },
     "flagship": {
         "PROVIDER": "deepseek",
-        "LLM_MODEL": "deepseek-chat",  # TODO: confirm exact DeepSeek model id
+        # flash (cheap) for testing, pro (better) for prod. Override via
+        # DEEPSEEK_MODEL env. Old deepseek-chat/-reasoner ids retire 2026-07-24.
+        "LLM_MODEL": os.getenv("DEEPSEEK_MODEL", "deepseek-v4-flash"),
         # ~44000 chars ≈ 11k tokens: a whole 20-30 min scene in one chunk, so
         # the model over-summarizes into 1-2 macro-Events instead of a
         # blow-by-blow. Deliberately large — recall is traded for parsimony.
@@ -115,7 +117,7 @@ ALLOWED_PREDICATES = {
     "LOCATED_IN", "AT_LOCATION",
     "HAS_CLASS", "HAS_SUBCLASS", "HAS_ANCESTRY", "HAS_COMMUNITY", "USES_CARD",
     "HAS_FEATURE", "RUNS", "USES",
-    "PARTICIPATED_IN", "DECIDED", "TARGETS", "TRIGGERED", "RESULTED_IN",
+    "PARTICIPATED_IN", "TARGETS", "TRIGGERED", "RESULTED_IN",
     "INVOLVES",
     "KNOWS", "FEARS", "HOSTILE_TO", "ALLIED_WITH",
     "PLAYS", "RELATES_TO",
@@ -146,7 +148,7 @@ STATE_PREDICATES = {
 }
 EVENT_PREDICATES = {
     "KILLED", "BETRAYED", "PARTICIPATED_IN", "TRIGGERED", "RESULTED_IN",
-    "TARGETS", "DECIDED", "APPEARS_IN", "IN_SESSION",
+    "TARGETS", "APPEARS_IN", "IN_SESSION",
 }
 IDENTITY_PREDICATES = {"FAMILY_OF", "HAS_ANCESTRY", "HAS_COMMUNITY"}
 STATE_PREDICATES_WITH_LIFECYCLE = STATE_PREDICATES - {"PLAYS"}
@@ -168,11 +170,11 @@ STATE_PREDICATE_KEY = {
 # {predicate: (allowed source :Entity.type set, allowed target set)}. Enforced
 # in resolve.py against the LLM's free-form `relationships` list only — the
 # deterministic edges resolve_graph() writes itself (APPEARS_IN, PLAYS,
-# DECIDED, PARTICIPATED_IN, ...) are correct by construction and
+# PARTICIPATED_IN, ...) are correct by construction and
 # never run through this table. RELATES_TO is intentionally absent: it is the
 # unconstrained catch-all fallback for off-vocab predicates.
 PREDICATE_DOMAINS = {
-    "IN_SESSION": ({"Event", "Decision", "Quest"}, {"Session"}),
+    "IN_SESSION": ({"Event", "Quest"}, {"Session"}),
     "APPEARS_IN": ({"Character"}, {"Session"}),
     "DIRECTS": ({"Player"}, {"Session"}),  # GM-is-world: the GM's ONLY edge
     "MEMBER_OF": ({"Character"}, {"Faction"}),
@@ -188,10 +190,9 @@ PREDICATE_DOMAINS = {
     "RUNS": ({"Character"}, {"RuleEntity"}),
     "USES": ({"Character"}, {"Item", "RuleEntity"}),
     "PARTICIPATED_IN": ({"Character"}, {"Event"}),
-    "DECIDED": ({"Character"}, {"Decision"}),
     "TARGETS": ({"Event"}, {"Character", "Item", "Location"}),
-    "TRIGGERED": ({"Character", "Decision", "Event"}, {"Event", "Character"}),
-    "RESULTED_IN": ({"Event", "Decision"}, {"Event", "Item", "Quest"}),
+    "TRIGGERED": ({"Character", "Event"}, {"Event", "Character"}),
+    "RESULTED_IN": ({"Event"}, {"Event", "Item", "Quest"}),
     "INVOLVES": ({"Event", "Quest"}, {"Character", "Item", "Location", "Faction"}),
     "KNOWS": ({"Character"}, {"Character"}),
     "FEARS": ({"Character"}, {"Character", "Faction"}),
@@ -203,8 +204,16 @@ PREDICATE_DOMAINS = {
     "KILLED": ({"Character"}, {"Character"}),
     "FAMILY_OF": ({"Character"}, {"Character"}),
     "MENTIONS": ({"Chunk"}, {"Character", "Location", "Item", "Quest", "Event", "Faction",
-                             "RuleEntity", "Decision"}),
+                             "RuleEntity"}),
 }
+
+# LLM identity adjudication (audit v6): a new mint whose best fuzzy ratio
+# against an existing same-type entry lands in this band is too close to
+# ignore but too far to auto-merge (FUZZY_THRESHOLD) — the pair goes to the
+# adjudicator LLM, which judges by role/description context (Breska/Breschka
+# merges; Tindrael/Timrell stays split). Verdicts land in the alias registry
+# and state/review/<sid>/adjudications.jsonl.
+ADJUDICATE_GRAY_BAND = (0.7, 0.9)
 
 # Report used German confidence tokens; local prompt emits English. Converge both.
 CONFIDENCE_MAP = {"hoch": "high", "mittel": "medium", "niedrig": "low"}
@@ -219,16 +228,9 @@ META_EVENT_TERMS = (
     "clarification", "explanation", "explain", "mention", "considers",
     "questions", "discussion", "klarstellung", "erklärt", "erlaeutert",
     "erläutert", "regel",
+    # session-opening recaps/introductions change no world state (audit v6 F15)
+    "introduction", "vorstellung",
 )
-
-# Closed RuleEntity subtype enum (KG_Qualitaetsanalyse_S01 §1 "subtype-Wildwuchs").
-# Compared casefolded with an optional 'game' prefix stripped, so 'game-mechanic'
-# and 'GameSystem' pass as Mechanic/System while 'diceroll', 'weapon trait',
-# 'attribute', 'game-rule' etc. are dropped (real rules belong in the SRD file).
-RULE_SUBTYPES = {
-    "class", "subclass", "ancestry", "community", "domaincard",
-    "classfeature", "feature", "adversary", "system", "mechanic", "trait",
-}
 
 # Out-of-fiction noise (docs/evolution/KG_Qualitaetsanalyse_S01): stream/chat/VTT-tool
 # talk that a small-context chunk can blend into the scene (e.g. a Twitch raid

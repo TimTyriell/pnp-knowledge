@@ -88,12 +88,9 @@
       "canonical": "Tindrail",
       "aliases": [
         "Tendril",
-        "Timrell",
         "Tindrael",
         "Tindrell",
-        "Tinrail",
-        "Tirell",
-        "Tyrell"
+        "Tinrail"
       ]
     },
     "NPC_Leandra": {
@@ -102,7 +99,8 @@
         "Hag",
         "Hexe",
         "die Hag",
-        "die Hexe"
+        "die Hexe",
+        "Leandras"
       ]
     },
     "NPC_Berthold": {
@@ -120,13 +118,74 @@
         "Fips",
         "Phipps"
       ]
+    },
+    "NPC_Perry": {
+      "canonical": "Perry",
+      "aliases": []
+    },
+    "NPC_Walk": {
+      "canonical": "Walk",
+      "aliases": []
+    },
+    "NPC_Kerl": {
+      "canonical": "Kerl",
+      "aliases": []
+    },
+    "NPC_Brock": {
+      "canonical": "Brock",
+      "aliases": []
+    },
+    "NPC_Magier": {
+      "canonical": "Magier",
+      "aliases": []
+    },
+    "NPC_Hubert": {
+      "canonical": "Hubert",
+      "aliases": []
+    },
+    "NPC_Nip": {
+      "canonical": "Nip",
+      "aliases": []
+    },
+    "NPC_Elisa": {
+      "canonical": "Elisa",
+      "aliases": []
+    },
+    "NPC_Findus": {
+      "canonical": "Findus",
+      "aliases": []
+    },
+    "NPC_Schmied": {
+      "canonical": "Schmied",
+      "aliases": []
+    },
+    "NPC_FamilieKraemer": {
+      "canonical": "Familie Krämer",
+      "aliases": []
+    },
+    "NPC_Tindra": {
+      "canonical": "Tindra",
+      "aliases": []
+    },
+    "NPC_BesoffeneNip": {
+      "canonical": "der besoffene Nip",
+      "aliases": []
+    },
+    "NPC_Lara": {
+      "canonical": "Lara",
+      "aliases": []
+    },
+    "NPC_Lanra": {
+      "canonical": "Lanra",
+      "aliases": []
     }
   },
   "locations": {
-    "LOC_Breschka": {
-      "canonical": "Breschka",
+    "LOC_Breska": {
+      "canonical": "Breska",
       "aliases": [
         "Brechka",
+        "Breschka",
         "Bresca",
         "Breshka",
         "Breska",
@@ -134,11 +193,286 @@
         "Dorf Breschka",
         "Dorf Breshka"
       ]
+    },
+    "LOC_GoblinDorf": {
+      "canonical": "Goblin-Dorf",
+      "aliases": []
+    },
+    "LOC_Sumpf": {
+      "canonical": "Sumpf",
+      "aliases": []
+    },
+    "LOC_Goblinlager": {
+      "canonical": "Goblinlager",
+      "aliases": []
+    },
+    "LOC_Dorf": {
+      "canonical": "Dorf (namenloses Dorf)",
+      "aliases": []
+    },
+    "LOC_LeandrasHaus": {
+      "canonical": "Leandras' Haus",
+      "aliases": []
+    },
+    "LOC_Friedhof": {
+      "canonical": "Friedhof",
+      "aliases": []
+    },
+    "LOC_HausDesMagiers": {
+      "canonical": "Haus des Magiers",
+      "aliases": []
+    },
+    "LOC_Dorfschenke": {
+      "canonical": "Dorfschenke",
+      "aliases": []
+    },
+    "LOC_Bauernhof": {
+      "canonical": "Bauernhof (Familie Krämer)",
+      "aliases": []
+    },
+    "LOC_Krypta": {
+      "canonical": "Krypta",
+      "aliases": []
+    },
+    "LOC_Goblendorf": {
+      "canonical": "Goblendorf",
+      "aliases": []
+    },
+    "LOC_PhippsTurm": {
+      "canonical": "Phipps' Turm",
+      "aliases": []
+    },
+    "LOC_AlteBurgRuine": {
+      "canonical": "die alte Burg / Ruine",
+      "aliases": []
+    },
+    "LOC_BurgFestung": {
+      "canonical": "Burg/Festung",
+      "aliases": []
+    },
+    "LOC_Dungeon": {
+      "canonical": "der Dungeon",
+      "aliases": []
+    },
+    "LOC_Bossraum": {
+      "canonical": "Bossraum",
+      "aliases": []
     }
   },
-  "items": {},
-  "quests": {},
-  "events": {},
-  "factions": {},
-  "rules": {}
+  "items": {
+    "ITEM_Sigille": {
+      "canonical": "Sigille (von Esterossas Gott)",
+      "aliases": []
+    },
+    "ITEM_Notiz": {
+      "canonical": "Notiz",
+      "aliases": []
+    },
+    "ITEM_GlowingRings": {
+      "canonical": "Glowing Rings",
+      "aliases": []
+    },
+    "ITEM_GoblinNotizen": {
+      "canonical": "Goblin-Notizen",
+      "aliases": []
+    },
+    "ITEM_HoelzerneVoodooPuppe": {
+      "canonical": "hölzerne Voodoo-Puppe",
+      "aliases": []
+    },
+    "ITEM_Kampfringe": {
+      "canonical": "Kampfringe",
+      "aliases": []
+    },
+    "ITEM_WingedSentinel": {
+      "canonical": "Winged Sentinel",
+      "aliases": []
+    },
+    "ITEM_Schriftrollen": {
+      "canonical": "Schriftrollen",
+      "aliases": []
+    },
+    "ITEM_VoodooPuppe": {
+      "canonical": "Voodoo-Puppe",
+      "aliases": []
+    }
+  },
+  "quests": {
+    "QUEST_GoblinDorfAusraeuchern": {
+      "canonical": "Goblin-Dorf ausräuchern",
+      "aliases": []
+    },
+    "QUEST_BreschkaAufGoblinAngriffVorbereiten": {
+      "canonical": "Breschka auf Goblin-Angriff vorbereiten",
+      "aliases": []
+    },
+    "QUEST_FortsetzungDesAuftragsDerAnderenGruppe": {
+      "canonical": "Fortsetzung des Auftrags der anderen Gruppe",
+      "aliases": []
+    },
+    "QUEST_GoblinangriffAbwenden": {
+      "canonical": "Goblinangriff abwenden",
+      "aliases": []
+    },
+    "QUEST_ZumBuergermeisterVordringen": {
+      "canonical": "Zum Bürgermeister vordringen",
+      "aliases": []
+    },
+    "QUEST_DorfGegenGoblinsVerteidigen": {
+      "canonical": "Dorf gegen Goblins verteidigen",
+      "aliases": []
+    },
+    "QUEST_VerteidigungBreschkaGegenGoblins": {
+      "canonical": "Verteidigung Breschka gegen Goblins",
+      "aliases": []
+    },
+    "QUEST_KindZurueckbringen": {
+      "canonical": "Kind zurückbringen",
+      "aliases": []
+    },
+    "QUEST_DorfGegenGoblinAngriffVerteidigen": {
+      "canonical": "Dorf gegen Goblin-Angriff verteidigen",
+      "aliases": []
+    },
+    "QUEST_KryptaCleanen": {
+      "canonical": "Die Krypta cleanen",
+      "aliases": []
+    },
+    "QUEST_VerteidigungDesDorfes": {
+      "canonical": "Verteidigung des Dorfes",
+      "aliases": []
+    },
+    "QUEST_KryptaFindenUndSaeubern": {
+      "canonical": "Die Krypta finden und säubern",
+      "aliases": []
+    },
+    "QUEST_KryptaErkunden": {
+      "canonical": "Die Krypta erkunden",
+      "aliases": []
+    },
+    "QUEST_MissionZurBurg": {
+      "canonical": "Mission zur Burg",
+      "aliases": []
+    },
+    "QUEST_DungeonSaeubern": {
+      "canonical": "Dungeon säubern",
+      "aliases": []
+    },
+    "QUEST_VerteidigungVonBreska": {
+      "canonical": "Verteidigung von Breska",
+      "aliases": []
+    }
+  },
+  "factions": {
+    "FACTION_Goblins": {
+      "canonical": "Goblins",
+      "aliases": []
+    },
+    "FACTION_Gilde": {
+      "canonical": "Die Gilde",
+      "aliases": []
+    },
+    "FACTION_Gildenhalle": {
+      "canonical": "Gildenhalle",
+      "aliases": []
+    },
+    "FACTION_ZweitePartei": {
+      "canonical": "Zweite Partei",
+      "aliases": []
+    },
+    "FACTION_PhippsKoboldFreunde": {
+      "canonical": "Phipps' Kobold-Freunde",
+      "aliases": []
+    },
+    "FACTION_GoblinGoetter": {
+      "canonical": "Goblin-Götter",
+      "aliases": []
+    },
+    "FACTION_Backbaeren": {
+      "canonical": "Backbären (Bugbears)",
+      "aliases": []
+    }
+  },
+  "rules": {
+    "RULE_ANCESTRY_Giant": {
+      "canonical": "Giant",
+      "aliases": []
+    },
+    "RULE_ANCESTRY_Simia": {
+      "canonical": "Simia",
+      "aliases": []
+    },
+    "RULE_CLASS_Magier": {
+      "canonical": "Magier",
+      "aliases": []
+    },
+    "RULE_CLASS_Blizzard": {
+      "canonical": "Blizzard",
+      "aliases": []
+    },
+    "RULE_ANCESTRY_Affe": {
+      "canonical": "Affe",
+      "aliases": []
+    },
+    "RULE_ANCESTRY_Maus": {
+      "canonical": "Maus",
+      "aliases": []
+    },
+    "RULE_ANCESTRY_Mensch": {
+      "canonical": "Mensch",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_Spellcast": {
+      "canonical": "Spellcast",
+      "aliases": []
+    },
+    "RULE_SYSTEM_Experience": {
+      "canonical": "Experience",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_MendingTouch": {
+      "canonical": "Mending Touch",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_MageHand": {
+      "canonical": "Mage Hand",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_GreatStaff": {
+      "canonical": "Great Staff",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_IceSpikes": {
+      "canonical": "Ice Spikes",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_EveryoneSFriend": {
+      "canonical": "Everyone's Friend",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_DrunkenMonk": {
+      "canonical": "Drunken Monk",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_Seraph": {
+      "canonical": "Seraph",
+      "aliases": []
+    },
+    "RULE_SYSTEM_PreyDice": {
+      "canonical": "Prey Dice",
+      "aliases": []
+    },
+    "RULE_SYSTEM_Dunkelsicht": {
+      "canonical": "Dunkelsicht",
+      "aliases": []
+    },
+    "RULE_CLASS_Paladin": {
+      "canonical": "Paladin",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_HeilendeHand": {
+      "canonical": "Heilende Hand",
+      "aliases": []
+    }
+  }
 }

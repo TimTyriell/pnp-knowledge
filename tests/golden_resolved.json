@@ -37,20 +37,6 @@
       }
     },
     {
-      "id": "DEC_2025-03-26_MonsterProvozieren",
-      "type": "Decision",
-      "props": {
-        "session_id": "2025-03-26",
-        "confidence": "medium",
-        "name": "Monster provozieren",
-        "quote": "ich singe",
-        "consequence": "Monster greift an",
-        "evidence_chunks": [
-          1
-        ]
-      }
-    },
-    {
       "id": "EVT_MonsterGreiftAn",
       "type": "Event",
       "props": {
@@ -98,7 +84,6 @@
       "id": "PLAYER_Celin",
       "type": "Player",
       "props": {
-        "session_id": "2025-03-26",
         "confidence": "high",
         "name": "Celin",
         "role": "player"
@@ -108,7 +93,6 @@
       "id": "PLAYER_Deniz",
       "type": "Player",
       "props": {
-        "session_id": "2025-03-26",
         "confidence": "high",
         "name": "Deniz",
         "role": "GM"
@@ -118,7 +102,6 @@
       "id": "PLAYER_Marco",
       "type": "Player",
       "props": {
-        "session_id": "2025-03-26",
         "confidence": "high",
         "name": "Marco",
         "role": "player"
@@ -128,7 +111,6 @@
       "id": "PLAYER_Tim",
       "type": "Player",
       "props": {
-        "session_id": "2025-03-26",
         "confidence": "high",
         "name": "Tim",
         "role": "player"
@@ -210,15 +192,6 @@
     },
     {
       "start_id": "CHAR_LindoLaut",
-      "end_id": "DEC_2025-03-26_MonsterProvozieren",
-      "type": "DECIDED",
-      "props": {
-        "session_id": "2025-03-26",
-        "confidence": "high"
-      }
-    },
-    {
-      "start_id": "CHAR_LindoLaut",
       "end_id": "RULE_CLASS_Bard",
       "type": "HAS_CLASS",
       "props": {
@@ -237,27 +210,6 @@
       "props": {
         "session_id": "2025-03-26",
         "confidence": "high"
-      }
-    },
-    {
-      "start_id": "DEC_2025-03-26_MonsterProvozieren",
-      "end_id": "SESS_2025-03-26",
-      "type": "IN_SESSION",
-      "props": {
-        "session_id": "2025-03-26",
-        "confidence": "high"
-      }
-    },
-    {
-      "start_id": "DEC_2025-03-26_MonsterProvozieren",
-      "end_id": "EVT_MonsterGreiftAn",
-      "type": "TRIGGERED",
-      "props": {
-        "session_id": "2025-03-26",
-        "confidence": "high",
-        "evidence_chunks": [
-          2
-        ]
       }
     },
     {

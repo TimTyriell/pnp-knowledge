@@ -23,6 +23,7 @@ import re
 import unicodedata
 
 from .config import (
+    ADJUDICATE_GRAY_BAND,
     ALIAS_REGISTRY_PATH,
     ALLOWED_PREDICATES,
     CONFIDENCE_MAP,
@@ -34,7 +35,6 @@ from .config import (
     OOC_DENYLIST,
     PREDICATE_DOMAINS,
     PREDICATE_SYNONYMS,
-    RULE_SUBTYPES,
     STATE_DIR,
     STATE_PREDICATES_WITH_LIFECYCLE,
 )
@@ -62,6 +62,11 @@ _TYPE_MAP = {
     "Faction": ("FACTION", "factions"),
     "RuleEntity": ("RULE", "rules"),  # only for non-SRD mints; SRD hits use the shared id
 }
+
+# Sections whose new mints get a gray-band scan for the LLM adjudicator
+# (audit v6). Events are ephemeral, players deterministic from the cast,
+# rules SRD-link-only — none of them adjudicate.
+_ADJUDICATED_SECTIONS = frozenset({"characters", "locations", "quests", "factions", "items"})
 
 # Sections that resolve in-memory within a run but are NEVER loaded from or
 # written to disk. An Event is a specific one-off happening — it never recurs
@@ -163,6 +168,9 @@ class Resolver:
         for section in _EPHEMERAL_SECTIONS:  # never carry events across runs
             self.registry[section] = {}
         self._dirty = False
+        # gray-band identity candidates queued for the LLM adjudicator
+        # (audit v6); drained once per session by adjudicate.adjudicate_session
+        self.pending_candidates: list[dict] = []
 
     def save(self) -> None:
         if not self._dirty:
@@ -219,7 +227,59 @@ class Resolver:
         self.registry[section][eid] = {"canonical": surface.strip(), "aliases": [], **extra}
         self._dirty = True
         log.info("new entity — review: %s (%r)", eid, surface)
+        if section in _ADJUDICATED_SECTIONS:
+            self.pending_candidates.extend(self._gray_candidates(section, eid, surface))
         return eid
+
+    def _gray_candidates(self, section: str, eid: str, surface: str) -> list[dict]:
+        """Same-section entries whose best fuzzy ratio against the new mint lands
+        in ADJUDICATE_GRAY_BAND: too close to ignore, too far to auto-merge —
+        the LLM adjudicator decides (audit v6). Pairs already judged distinct
+        (`adjudicated_distinct` memo) are never re-asked."""
+        lo, hi = ADJUDICATE_GRAY_BAND
+        norm = normalize(surface)
+        distinct = set(self.registry[section][eid].get("adjudicated_distinct", []))
+        out = []
+        for oid, entry in self.registry[section].items():
+            if oid == eid or oid in distinct or eid in entry.get("adjudicated_distinct", []):
+                continue
+            best = max((difflib.SequenceMatcher(None, norm, normalize(s)).ratio()
+                        for s in self._surfaces(entry)), default=0.0)
+            if lo <= best < hi:
+                out.append({"section": section, "new_id": eid, "surface": surface,
+                            "existing_id": oid, "ratio": round(best, 2)})
+        return out
+
+    def drain_candidates(self) -> list[dict]:
+        """Hand the queued identity candidates to the adjudicator, deduplicated
+        per pair; an alias-conflict entry wins over a plain gray-band one for
+        the same pair (it carries the surface to strip on a distinct verdict)."""
+        by_key: dict[tuple, dict] = {}
+        for c in self.pending_candidates:
+            key = (c["section"], c["new_id"], c["existing_id"])
+            if key not in by_key or c.get("source"):
+                by_key[key] = c
+        self.pending_candidates = []
+        return list(by_key.values())
+
+    def merge_entries(self, section: str, keep_id: str, drop_id: str) -> None:
+        """Adjudicator-approved merge: drop_id's surfaces become keep_id aliases."""
+        drop = self.registry[section].pop(drop_id, None)
+        if not drop:
+            return
+        keep = self.registry[section][keep_id]
+        for s in [drop["canonical"], *drop.get("aliases", [])]:
+            if s not in self._surfaces(keep):
+                keep.setdefault("aliases", []).append(s)
+        self._dirty = True
+
+    def mark_distinct(self, section: str, a: str, b: str) -> None:
+        """Adjudicator said different entities — memo both ways, never re-ask."""
+        for x, y in ((a, b), (b, a)):
+            entry = self.registry[section].get(x)
+            if entry is not None and y not in entry.get("adjudicated_distinct", []):
+                entry.setdefault("adjudicated_distinct", []).append(y)
+                self._dirty = True
 
     # --- public API -----------------------------------------------------
 
@@ -256,6 +316,24 @@ class Resolver:
             ):
                 return eid
         return None
+
+    def known_world(self) -> dict[str, list[str]]:
+        """Campaign gazetteer for the extraction prompt (audit v6 engine fix):
+        canonical names + aliases per section, so the model resolves mentions to
+        known canon at extraction time instead of re-minting ASR spelling
+        variants (Breska/Breschka/Brechka) for the resolver to guess at later.
+        """
+        sections = {"Characters": "characters", "Locations": "locations",
+                    "Factions": "factions", "Quests": "quests", "Items": "items"}
+        out: dict[str, list[str]] = {}
+        for label, section in sections.items():
+            lines = []
+            for entry in self.registry[section].values():
+                aliases = [a for a in entry.get("aliases", []) if a][:4]
+                lines.append(entry["canonical"]
+                             + (f" (aka {', '.join(aliases)})" if aliases else ""))
+            out[label] = lines
+        return out
 
     def canonical(self, eid: str) -> str | None:
         for _, section in _TYPE_MAP.values():
@@ -372,8 +450,10 @@ def resolve_graph(
             if notes:
                 old["pending_notes"] = notes
         else:
-            entities[eid] = {"id": eid, "type": type_,
-                             "props": {"session_id": session_id, "confidence": "medium", **props}}
+            base = {"session_id": session_id, "confidence": "medium"}
+            if type_ == "Player":  # campaign-wide, not session-scoped (audit v6 F29);
+                del base["session_id"]  # per-session history lives on PLAYS{seq}
+            entities[eid] = {"id": eid, "type": type_, "props": {**base, **props}}
 
     def add_edge(start: str, end: str, rtype: str, props: dict | None = None) -> None:
         key = (start, rtype, end)
@@ -511,6 +591,17 @@ def resolve_graph(
         }, chunks_of("characters", c.name))
         if cid in gm_pids:  # registry resolved a GM alias to the GM player
             continue
+        # alias-conflict adjudication (audit v6 F1): a model-supplied alias that
+        # is already a DIFFERENT known character (Tindrail carrying 'Timrell')
+        # smells like a wrong merge — the adjudicator decides; a 'distinct'
+        # verdict strips the alias from this node's props again.
+        for alias in c.aliases:
+            hit = resolver._lookup_exact_or_norm("characters", alias)
+            memo = resolver.registry["characters"].get(cid, {}).get("adjudicated_distinct", [])
+            if hit and hit != cid and hit not in memo:
+                resolver.pending_candidates.append({
+                    "section": "characters", "new_id": cid, "surface": alias,
+                    "existing_id": hit, "ratio": None, "source": "alias-conflict"})
         add_edge(cid, session_node_id, "APPEARS_IN")
     for loc in extraction.locations:
         # named-place gate (pay-to-mint, like is_named_artifact): generic
@@ -560,45 +651,19 @@ def resolve_graph(
             if part_id:
                 add_edge(part_id, eid, "PARTICIPATED_IN")
 
-    # --- rules, decisions (docs/evolution/05, WP5-6) ---------------------
+    # --- rules (docs/evolution/05, WP5-6) --------------------------------
     for ru in extraction.rule_entities:
-        chunks = chunks_of("rule_entities", ru.name)
         rid = srd_index.lookup(ru.name) if srd_index else None
         if rid:
             # shared, preloaded SRD node — link to it, never a per-session copy
             surface_to_id.setdefault(normalize(ru.name), rid)
         else:
-            subtype = re.sub(r"[^A-Za-z0-9]", "", ru.subtype) or "System"
-            # closed subtype enum (KG_Qualitaetsanalyse_S01 §1): off-enum mints
-            # ('diceroll', 'weapon trait', 'attribute', 'game-rule', ...) are
-            # dropped — real rules belong in data/daggerheart_srd.json instead.
-            if subtype.casefold().removeprefix("game") not in RULE_SUBTYPES:
-                dropped.append({"subject": ru.name, "predicate": "RULE_ENTITY",
-                                "object": ru.subtype, "reason": "off-enum rule subtype"})
-                continue
-            rid = resolver._lookup("rules", ru.name) or resolver._mint(
-                "rules", f"RULE_{subtype.upper()}", ru.name)
-            props = {"name": resolver.canonical(rid) or ru.name, "subtype": ru.subtype,
-                     "source": "session"}
-            if chunks:
-                props["evidence_chunks"] = chunks
-            add_entity(rid, "RuleEntity", props)
-            surface_to_id.setdefault(normalize(ru.name), rid)
-
-    for dec in extraction.decisions:
-        did = f"DEC_{session_id}_{slug(dec.name)}"  # session-scoped, like rolls
-        chunks = chunks_of("decisions", dec.name)
-        props = {"name": dec.name, "quote": dec.quote, "consequence": dec.consequence,
-                 "confidence": normalize_confidence(dec.confidence)}
-        if chunks:
-            props["evidence_chunks"] = chunks
-        add_entity(did, "Decision", props)
-        add_edge(did, session_node_id, "IN_SESSION")
-        surface_to_id.setdefault(normalize(dec.name), did)
-        if dec.decided_by:
-            who = endpoint(dec.decided_by)  # GM decisions resolve to None (gm-is-world)
-            if who:
-                add_edge(who, did, "DECIDED")
+            # SRD-link-only (audit v6, rule 5): a rule the SRD index doesn't
+            # know is table paraphrase, in-character banter ('Blizzard'), or
+            # ASR noise ('Maus') — never minted. The drop log doubles as the
+            # backlog for extending data/daggerheart_srd.json.
+            dropped.append({"subject": ru.name, "predicate": "RULE_ENTITY",
+                            "object": ru.subtype, "reason": "no SRD match"})
 
     # --- relationships (endpoint validation, docs/evolution/03) ----------
     for r in extraction.relationships:
