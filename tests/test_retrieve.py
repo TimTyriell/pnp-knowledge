@@ -27,6 +27,14 @@ def test_entity_text_skips_empty_fields():
     assert _entity_text(row) == "Location | Wald"
 
 
+def test_entity_text_embeds_chunk_raw_text_verbatim():
+    # WP13.5: Chunk nodes skip the composed type|name|... format entirely —
+    # the raw passage is what gets embedded ("vector = das Buch").
+    row = {"type": "Chunk", "name": "2025-03-26 scene 1.1", "aliases": [],
+           "description": None, "summary": None, "text": "[00:00] GM:\n  Ein Monster.\n\n"}
+    assert _entity_text(row) == "[00:00] GM:\n  Ein Monster.\n\n"
+
+
 def test_format_context_renders_status_and_fact_bits():
     ctx = {
         "nodes": [{"id": "CHAR_Dodo", "type": "Character", "name": "Dodo", "status": "deceased"}],

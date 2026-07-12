@@ -36,6 +36,7 @@ from .config import (
     STATE_DIR,
     STATE_PREDICATES_WITH_LIFECYCLE,
 )
+from .chunking import split_passages
 from .schema import GraphExtraction
 from .store import sanitize_predicate
 
@@ -288,6 +289,7 @@ def resolve_graph(
     seq: int = 0,
     evidence: dict | None = None,
     srd_index=None,
+    chunks: list[str] | None = None,
 ) -> dict:
     """GraphExtraction + cast -> {'entities': [...], 'edges': [...]} keyed on ids.
 
@@ -296,6 +298,11 @@ def resolve_graph(
     With `evidence` (extract.py sidecar), every extracted fact gets an
     `evidence_chunks[]` property (chunk indices) — no separate Scene nodes/edges.
     Unresolvable endpoints drop the edge into state/failures/<sid>/dropped_edges.jsonl.
+    With `chunks` (the raw extraction chunk texts, 1:1 with evidence_chunks
+    indices), every chunk is split into small `Chunk` passages and embedded
+    (WP13.5, docs/evolution/13) — the "vector = das Buch" half: MENTIONS edges
+    link each passage to every entity whose evidence_chunks include that scene,
+    so graph expansion from an entity can pull the verbatim source text.
     """
     evidence = evidence or {}
     session_node_id = f"SESS_{session_id}"
@@ -447,15 +454,15 @@ def resolve_graph(
                  chunks_of("factions", f.name))
     player_names = [p["name"] for p in cast_info["players"].values()]
     for e in extraction.events:
-        reason = event_gate(e.title, quest_norms, player_names)
+        reason = event_gate(e.label, quest_norms, player_names)
         if reason:
-            dropped.append({"subject": e.title, "predicate": "IN_SESSION",
+            dropped.append({"subject": e.label, "predicate": "IN_SESSION",
                             "object": session_node_id, "reason": reason})
             continue
-        eid = register(e.title, "Event",
-                       {"name": e.title, "summary": e.summary,
+        eid = register(e.label, "Event",
+                       {"name": e.label, "summary": e.summary,
                         "significance": e.narrative_significance_reasoning},
-                       chunks_of("events", e.title))
+                       chunks_of("events", e.label))
         add_edge(eid, session_node_id, "IN_SESSION")
         if e.location:
             loc_id = endpoint(e.location)
@@ -580,6 +587,26 @@ def resolve_graph(
     if off_vocab:
         log.warning("%d off-vocab predicates coerced to RELATES_TO: %s",
                     len(off_vocab), sorted(set(off_vocab)))
+
+    # --- WP13.5: chunk-level passages for the vector store ("vector = das
+    # Buch") — split AFTER every other entity is registered, so MENTIONS can
+    # link a passage to everything whose evidence_chunks name that scene. -----
+    if chunks:
+        mentionable = [(eid, rec) for eid, rec in entities.items()
+                       if rec["props"].get("evidence_chunks")]
+        n_passages = 0
+        for i, chunk_text in enumerate(chunks, start=1):
+            for j, passage in enumerate(split_passages(chunk_text), start=1):
+                cid = f"CHUNK_{session_id}_{i:03d}_{j:02d}"
+                add_entity(cid, "Chunk", {
+                    "name": f"{session_id} scene {i}.{j}", "text": passage, "scene_index": i,
+                })
+                add_edge(cid, session_node_id, "IN_SESSION")
+                for eid, rec in mentionable:
+                    if i in rec["props"]["evidence_chunks"]:
+                        add_edge(cid, eid, "MENTIONS")
+                n_passages += 1
+        log.info("Session %s: %d chunk passages minted for vector retrieval", session_id, n_passages)
 
     resolver.save()
     return {"entities": list(entities.values()), "edges": edges, "dropped": dropped}

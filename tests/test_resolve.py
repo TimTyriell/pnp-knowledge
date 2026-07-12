@@ -233,6 +233,37 @@ def test_srd_rules_rolls_decisions():
     assert ("CHAR_LindoLaut", "HAS_CLASS", "RULE_CLASS_Bard") in edges
 
 
+def test_chunk_passages_minted_and_linked_via_mentions():
+    # WP13.5: passing raw chunk texts mints searchable Chunk passages and
+    # links every entity seen in that scene to its passage(s) via MENTIONS.
+    resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
+    r = _tmp_resolver()
+    info = _cast_info(r)
+    extraction = GraphExtraction(
+        characters=[Character(name="Monster", role="NPC")],
+    )
+    evidence = {("characters", "Monster"): [1]}
+    chunks = ["[00:00] GM:\n  Ein Monster taucht auf.\n\n"]
+    resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1,
+                             evidence=evidence, chunks=chunks)
+    chunk_entities = [e for e in resolved["entities"] if e["type"] == "Chunk"]
+    assert len(chunk_entities) == 1
+    assert chunk_entities[0]["id"] == "CHUNK_2025-03-26_001_01"
+    assert "Monster taucht auf" in chunk_entities[0]["props"]["text"]
+    edges = {(e["start_id"], e["type"], e["end_id"]) for e in resolved["edges"]}
+    assert ("CHUNK_2025-03-26_001_01", "IN_SESSION", "SESS_2025-03-26") in edges
+    assert ("CHUNK_2025-03-26_001_01", "MENTIONS", "CHAR_Monster") in edges
+
+
+def test_no_chunk_passages_without_chunks_arg():
+    # backward compatible: omitting `chunks` (existing callers/tests) mints nothing.
+    resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
+    r = _tmp_resolver()
+    info = _cast_info(r)
+    resolved = resolve_graph(r, GraphExtraction(), "2025-03-26", info, seq=1)
+    assert not any(e["type"] == "Chunk" for e in resolved["entities"])
+
+
 def test_gm_is_world():
     # GM-is-world: no GM Character node exists; the GM player's ONLY edge is
     # DIRECTS -> Session; every extracted edge aimed at a GM surface is dropped.
@@ -241,7 +272,7 @@ def test_gm_is_world():
     info = _cast_info(r)
     extraction = GraphExtraction(
         characters=[Character(name="GM", role="NPC")],  # model minting the GM
-        events=[Event(title="Kampfbeginn", participants=["Deniz", "Dodo"],
+        events=[Event(label="Kampfbeginn", participants=["Deniz", "Dodo"],
                       narrative_significance_reasoning="Kampf beginnt")],
         roll_events=[RollEvent(name="Monster attack roll", roller="GM", confidence="high")],
         decisions=[Decision(name="Monster flieht", decided_by="Deniz", confidence="high")],

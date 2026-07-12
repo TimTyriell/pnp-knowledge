@@ -4,7 +4,9 @@ Re-embeds only the entities touched by the current ingest — the whole point
 of keying on session writes rather than a periodic full re-embed. Text per
 entity: type + name + aliases + latest description/summary — a Character's
 recurring personality/quirks live in their description (macro-graph
-philosophy: no separate Trait nodes, see docs/evolution).
+philosophy: no separate Trait nodes, see docs/evolution). `Chunk` nodes
+(WP13.5, docs/evolution/13) are the exception — their raw passage text is
+embedded verbatim, the "vector = das Buch" half of the macro-graph split.
 """
 
 import logging
@@ -32,6 +34,8 @@ def ensure_vector_index(driver) -> None:
 
 
 def _entity_text(row: dict) -> str:
+    if row.get("type") == "Chunk":  # WP13.5: embed the raw passage verbatim, no composing
+        return row.get("text") or ""
     parts = [row.get("type") or "", row.get("name") or "", *(row.get("aliases") or [])]
     if row.get("description"):
         parts.append(row["description"])
@@ -51,7 +55,7 @@ def embed_entities(driver, entity_ids: list[str]) -> int:
             "MATCH (n:Entity) WHERE n.id IN $ids AND NOT n.type IN $backbone "
             "RETURN n.id AS id, n.type AS type, n.name AS name, "
             "       coalesce(n.aliases, []) AS aliases, n.description AS description, "
-            "       n.summary AS summary",
+            "       n.summary AS summary, n.text AS text",
             ids=entity_ids, backbone=list(BACKBONE_TYPES),
         ).data()
         n = 0
