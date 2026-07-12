@@ -17,8 +17,13 @@ embeddings + Neo4j vector index) makes the graph queryable via `cli ask`.
 (state, locations, ownership, quest status, scene-level Events) — micro
 narrative beats are deliberately NOT captured as topology; the vector store
 retrieves that detail from raw transcript text on demand ("graph = table of
-contents, vector = the book"). There is no `Trait` node type; recurring
-character quirks live in `Character.description`, which is embedded.
+contents, vector = the book"). There is no `Trait` node type (quirks live in
+`Character.description`, embedded); no `RollEvent` node type (rolls are not
+narrative topology — WP14); `Item` nodes are minted **only for named/unique
+artifacts** (`is_named_artifact`), generic loot is dropped. The skeleton is the
+`:Entity` label; the vector "book" is a **separate `:Chunk` label** with its own
+vector index (WP14, the 2026 GraphRAG-standard split) so `MATCH (n:Entity)`
+returns a clean skeleton.
 
 **Two extraction profiles**, selected via `PNP_PROFILE` env var
 (`config.py`): `local` (default) runs a local Ollama model (`qwen3:14b`),
@@ -31,13 +36,16 @@ Embeddings and `cli ask` always run locally regardless of profile.
 Built for Windows 11, RTX 4070 Ti (12GB VRAM), 32GB RAM. One 14B model in
 VRAM at a time on the local profile — extraction and embedding run serially.
 
-The design spec lives in `docs/evolution/` (WP0–WP11); **it is largely
+The design spec lives in `docs/evolution/` (WP0–WP14); **it is largely
 implemented** — WP0–WP8, WP10, WP11 landed; WP4 Scene nodes were shipped then
-reverted. **Open: WP9** (multi-session proof + bitemporal `valid_from`/
-`valid_to` stamping in `store.py`; `STATE_PREDICATES` in `config.py` and the
-as-of read path in `retrieve.py` already exist). Measured results and the
-Scene-revert rationale: `docs/learnings/MIGRATION_NOTES.md`. The pre-spec plan
-is archived at `docs/archive/PLAN.md`. Doc map: `docs/README.md`.
+reverted; WP12 trait removal + the DeepSeek flagship shift, WP13 single-pass
+`SceneExtraction` + semantic scene chunking + chunk-level vector index, and
+WP14 (Item = named artifacts only, `RollEvent` removed, the `:Entity`/`:Chunk`
+label split) all landed. **Open: WP9** (multi-session proof + bitemporal
+`valid_from`/`valid_to` stamping in `store.py`; `STATE_PREDICATES` in
+`config.py` and the as-of read path in `retrieve.py` already exist). Measured
+results and the Scene-revert rationale: `docs/learnings/MIGRATION_NOTES.md`. The
+pre-spec plan is archived at `docs/archive/PLAN.md`. Doc map: `docs/README.md`.
 
 ## Commands
 
@@ -121,9 +129,11 @@ raw-text embeddings)`.
   latter's OpenAI-compatible endpoint doesn't support strict json_schema
   reliably): `SceneExtraction` (docs/evolution/13, WP13.6) is ONE combined
   schema covering Character / Location / Item / Quest / Faction / RuleEntity
-  / RollEvent / Decision / Relationship plus the single capsule
+  / Decision / Relationship plus the single capsule
   `macro_scene_event: Event` (WP13.2 — one macro event per scene chunk, with
-  a required `narrative_significance_reasoning`, "pay to mint"). Supersedes
+  a required `narrative_significance_reasoning`, "pay to mint"). `Item` carries
+  a required `is_named_artifact` — same "pay to mint" gate, generic loot is
+  dropped in resolve.py; there is no `RollEvent` type (WP14). Supersedes
   the old two-pass `EntityExtraction`+`EventExtraction` split (that split
   existed to keep a 14B reliable on a smaller schema per call) and the N3
   `EventConsolidation` pass (impossible to need once it's one event/scene).
@@ -151,14 +161,18 @@ raw-text embeddings)`.
   **dropped and logged** (`state/failures/<sid>/dropped_edges.jsonl`), never
   MERGE-created. With `chunk_texts` (WP13.5, docs/evolution/13), also splits
   each chunk into passages (`chunking.split_passages`) and mints them as
-  `Chunk` entities linked `IN_SESSION` + `MENTIONS` to every entity whose
-  `evidence_chunks` name that scene — the "vector = das Buch" half.
-- **`store.py`** — idempotent Neo4j writes on `:Entity {id}` (uniqueness
-  constraint `entity_id`; `type`/`session_id` indexes). `sanitize_predicate`
-  strips predicates to `[A-Z0-9_]` — relationship types can't be
-  parameterized, this is the injection guard; keep it if you touch that code.
-  `write_session` = constraints + `_write_graph` via `execute_write` in one
-  driver session (per-session atomic write). `_write_graph` splits entity
+  `Chunk` nodes (the `:Chunk` label, WP14) linked `IN_SESSION` + `MENTIONS` to
+  every entity whose `evidence_chunks` name that scene — the "vector = das Buch"
+  half.
+- **`store.py`** — idempotent Neo4j writes: skeleton nodes MERGE on
+  `:Entity {id}` (constraint `entity_id`; `type`/`session_id` indexes), `Chunk`
+  passages MERGE on a separate `:Chunk {id}` label (constraint `chunk_id`,
+  WP14). Edge endpoints MATCH label-less (`(a {id})`) so a `MENTIONS`/
+  `IN_SESSION` edge joins a `:Chunk` start to an `:Entity` end.
+  `sanitize_predicate` strips predicates to `[A-Z0-9_]` — relationship types
+  can't be parameterized, this is the injection guard; keep it if you touch that
+  code. `write_session` = constraints + `_write_graph` via `execute_write` in
+  one driver session (per-session atomic write). `_write_graph` splits entity
   props into `create_props` (all values) vs `match_props` (drops empty
   string/list) so a cross-session re-mention with nothing new never blanks
   out a value a prior session set (e.g. `Character.description`). `run_qa` =
@@ -168,16 +182,19 @@ raw-text embeddings)`.
 - **`srd.py`** — loads `data/daggerheart_srd.json` into an `SrdIndex`
   (prompt gazetteer + shared `RuleEntity` library); `preload` MERGEs the
   shared SRD nodes once, sessions link to them, never per-session copies.
-- **`embed.py`** — `nomic-embed-text` entity embeddings into a Neo4j vector
-  index (768 dims), always local regardless of `PNP_PROFILE`; backbone types
-  (Session) excluded from search hits. `Chunk` nodes (WP13.5) are the one
-  exception to the composed `type|name|aliases|description|summary` text —
-  their raw passage `text` is embedded verbatim.
+- **`embed.py`** — `nomic-embed-text` embeddings (768 dims), always local
+  regardless of `PNP_PROFILE`. **Two vector indexes** (WP14): `entity_embedding`
+  `FOR (:Entity)` and `chunk_embedding` `FOR (:Chunk)`; the embed pass matches
+  `(n:Entity OR n:Chunk)`. Backbone types (Session) excluded from search hits.
+  `Chunk` nodes (WP13.5) are the one exception to the composed
+  `type|name|aliases|description|summary` text — their raw passage `text` is
+  embedded verbatim.
 - **`retrieve.py`** — GraphRAG-style **local** search without adopting the
-  framework (verdict in `docs/evolution/11`): vector top-k seeds → graph
-  neighborhood expansion (optionally as-of a session seq) → formatted context
-  → local LLM answer with session citations. `cli ask` wraps it. A `Chunk`
-  seed renders as its raw source passage instead of the usual name/status line.
+  framework (verdict in `docs/evolution/11`): vector top-k seeds merged from
+  **both** indexes by cosine score (WP14) → graph neighborhood expansion over
+  both labels (optionally as-of a session seq) → formatted context → local LLM
+  answer with session citations. `cli ask` wraps it. A `Chunk` seed renders as
+  its raw source passage instead of the usual name/status line.
 - **`reconcile.py`** — `cli reconcile-report` (WP8): diffs the local graph
   against the hand-authored report graph for one session; proposes alias
   additions. Finds reports in `reports/` (or repo root).

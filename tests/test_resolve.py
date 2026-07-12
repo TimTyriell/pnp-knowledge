@@ -15,7 +15,7 @@ from pnp_graph.chunking import parse_speaker, session_cast
 from pnp_graph.resolve import (Resolver, is_out_of_world, map_predicate, normalize,
                                normalize_confidence, predicate_class, resolve_graph, slug)
 from pnp_graph.schema import (Character, Decision, Event, Faction, GraphExtraction, Item,
-                              Location, Relationship, RollEvent, RuleEntity)
+                              Location, Relationship, RuleEntity)
 from pnp_graph.srd import SrdIndex
 
 CAST_LABELS = ["Tim (Lindo Laut)", "Marco (Dodo)", "Celin (Cookie)", "Deniz (GM)"]
@@ -109,7 +109,7 @@ def test_resolve_graph_end_to_end(tmp_state=None):
             Character(name="Tim (Lindo Laut)", role="PC"),   # composite must not fork
             Character(name="Marco", role="PC"),               # player name must not fork
         ],
-        items=[Item(name="Zauberstab", owner="Lindo")],
+        items=[Item(name="Zauberstab", owner="Lindo", is_named_artifact=True)],
         relationships=[
             Relationship(subject="Lindo", predicate="ALLY_OF", object="Dodo", confidence="high"),
             Relationship(subject="Lindo Laut", predicate="FLIRTS_WITH", object="Cookie", confidence="low"),
@@ -187,7 +187,7 @@ def test_record_evidence_sidecar():
     assert ev[("relationships", ("Dodo", "KNOWS", "Cookie"))] == [1, 3]
 
 
-def test_srd_rules_rolls_decisions():
+def test_srd_rules_decisions():
     resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
     r = _tmp_resolver()
     info = _cast_info(r)
@@ -196,10 +196,6 @@ def test_srd_rules_rolls_decisions():
         rule_entities=[
             RuleEntity(name="Barde", subtype="Class"),          # German alias -> SRD id
             RuleEntity(name="Hausregel Xyz", subtype="System"), # not in SRD -> minted
-        ],
-        roll_events=[
-            RollEvent(name="Dodo attack roll", roller="Dodo", trait_or_action="attack",
-                      outcome="success_with_fear", target="Monster", confidence="high"),
         ],
         decisions=[
             Decision(name="Ritual bewusst falsch", decided_by="Lindo Laut",
@@ -221,12 +217,9 @@ def test_srd_rules_rolls_decisions():
     assert "RULE_CLASS_Bard" not in ids
     # non-SRD rule minted with subtype prefix
     assert any(i.startswith("RULE_SYSTEM_") for i in ids)
-    # session-scoped roll/decision ids
-    assert "ROLL_2025-03-26_DodoAttackRoll" in ids
+    # session-scoped decision id
     assert "DEC_2025-03-26_RitualBewusstFalsch" in ids
     edges = {(e["start_id"], e["type"], e["end_id"]) for e in resolved["edges"]}
-    assert ("CHAR_Dodo", "ROLLED", "ROLL_2025-03-26_DodoAttackRoll") in edges
-    assert ("ROLL_2025-03-26_DodoAttackRoll", "TARGETS", "CHAR_Monster") in edges
     assert ("CHAR_LindoLaut", "DECIDED", "DEC_2025-03-26_RitualBewusstFalsch") in edges
     # causal chain: decision TRIGGERED monster; PC HAS_CLASS shared SRD node
     assert ("DEC_2025-03-26_RitualBewusstFalsch", "TRIGGERED", "CHAR_Monster") in edges
@@ -318,7 +311,6 @@ def test_gm_is_world():
         characters=[Character(name="GM", role="NPC")],  # model minting the GM
         events=[Event(label="Kampfbeginn", participants=["Deniz", "Dodo"],
                       narrative_significance_reasoning="Kampf beginnt")],
-        roll_events=[RollEvent(name="Monster attack roll", roller="GM", confidence="high")],
         decisions=[Decision(name="Monster flieht", decided_by="Deniz", confidence="high")],
         relationships=[Relationship(subject="Deniz", predicate="KNOWS", object="Dodo",
                                     confidence="high")],
@@ -368,17 +360,17 @@ def test_gm_fuzzy_match_catches_asr_noise():
 
 
 def test_domain_range_violation_dropped():
-    # analysis headline class: 'X ROLLED Y' (Character->Character) — ROLLED's
-    # range is RollEvent, not Character, so this must never become an edge.
+    # 'X MEMBER_OF Y' (Character->Character) — MEMBER_OF's range is Faction,
+    # not Character, so this must never become an edge.
     resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
     r = _tmp_resolver()
     info = _cast_info(r)
     extraction = GraphExtraction(
-        relationships=[Relationship(subject="Cookie", predicate="ROLLED", object="Dodo",
+        relationships=[Relationship(subject="Cookie", predicate="MEMBER_OF", object="Dodo",
                                     confidence="high")],
     )
     resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1)
-    assert not any(e["type"] == "ROLLED" for e in resolved["edges"])
+    assert not any(e["type"] == "MEMBER_OF" for e in resolved["edges"])
     assert any("domain/range" in d["reason"] for d in resolved["dropped"])
 
 
@@ -493,7 +485,7 @@ def test_owns_swapped_to_owned_by():
     r = _tmp_resolver()
     info = _cast_info(r)
     extraction = GraphExtraction(
-        items=[Item(name="Bogen")],
+        items=[Item(name="Bogen", is_named_artifact=True)],
         relationships=[Relationship(subject="Cookie", predicate="OWNS", object="Bogen",
                                      confidence="high")],
     )
@@ -504,6 +496,22 @@ def test_owns_swapped_to_owned_by():
     assert owned[0]["start_id"] == "ITEM_Bogen"
     assert owned[0]["end_id"] == "CHAR_Cookie"
     assert owned[0]["props"]["valid_from"] == 3  # state predicate stamped with seq
+
+
+def test_generic_item_not_minted():
+    # Option A: only named/unique artifacts become nodes; generic loot is dropped
+    # entirely (it lives in the vector store), a named artifact still mints.
+    resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
+    r = _tmp_resolver()
+    info = _cast_info(r)
+    extraction = GraphExtraction(items=[
+        Item(name="Fackel", is_named_artifact=False),
+        Item(name="Schwert des Veritas", is_named_artifact=True),
+    ])
+    resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1)
+    ids = {e["id"] for e in resolved["entities"]}
+    assert not any(i.startswith("ITEM_Fackel") for i in ids)
+    assert any(i.startswith("ITEM_SchwertDesVeritas") for i in ids)
 
 
 def test_predicate_class():

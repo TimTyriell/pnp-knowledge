@@ -115,7 +115,7 @@ ALLOWED_PREDICATES = {
     "LOCATED_IN", "AT_LOCATION",
     "HAS_CLASS", "HAS_SUBCLASS", "HAS_ANCESTRY", "HAS_COMMUNITY", "USES_CARD",
     "HAS_FEATURE", "RUNS", "USES",
-    "PARTICIPATED_IN", "DECIDED", "ROLLED", "TARGETS", "TRIGGERED", "RESULTED_IN",
+    "PARTICIPATED_IN", "DECIDED", "TARGETS", "TRIGGERED", "RESULTED_IN",
     "INVOLVES",
     "KNOWS", "FEARS", "HOSTILE_TO", "ALLIED_WITH",
     "PLAYS", "RELATES_TO",
@@ -145,7 +145,7 @@ STATE_PREDICATES = {
     "OWNED_BY", "KNOWS", "FEARS", "HAS_CLASS", "HAS_SUBCLASS", "USES_CARD", "PLAYS",
 }
 EVENT_PREDICATES = {
-    "KILLED", "BETRAYED", "PARTICIPATED_IN", "TRIGGERED", "RESULTED_IN", "ROLLED",
+    "KILLED", "BETRAYED", "PARTICIPATED_IN", "TRIGGERED", "RESULTED_IN",
     "TARGETS", "DECIDED", "APPEARS_IN", "IN_SESSION",
 }
 IDENTITY_PREDICATES = {"FAMILY_OF", "HAS_ANCESTRY", "HAS_COMMUNITY"}
@@ -167,12 +167,12 @@ STATE_PREDICATE_KEY = {
 # Domain/range per predicate (docs/evolution/KG_Qualitaetsanalyse_S01, fix B):
 # {predicate: (allowed source :Entity.type set, allowed target set)}. Enforced
 # in resolve.py against the LLM's free-form `relationships` list only — the
-# deterministic edges resolve_graph() writes itself (APPEARS_IN, PLAYS, ROLLED,
+# deterministic edges resolve_graph() writes itself (APPEARS_IN, PLAYS,
 # DECIDED, PARTICIPATED_IN, ...) are correct by construction and
 # never run through this table. RELATES_TO is intentionally absent: it is the
 # unconstrained catch-all fallback for off-vocab predicates.
 PREDICATE_DOMAINS = {
-    "IN_SESSION": ({"Event", "RollEvent", "Decision", "Quest"}, {"Session"}),
+    "IN_SESSION": ({"Event", "Decision", "Quest"}, {"Session"}),
     "APPEARS_IN": ({"Character"}, {"Session"}),
     "DIRECTS": ({"Player"}, {"Session"}),  # GM-is-world: the GM's ONLY edge
     "MEMBER_OF": ({"Character"}, {"Faction"}),
@@ -189,10 +189,9 @@ PREDICATE_DOMAINS = {
     "USES": ({"Character"}, {"Item", "RuleEntity"}),
     "PARTICIPATED_IN": ({"Character"}, {"Event"}),
     "DECIDED": ({"Character"}, {"Decision"}),
-    "ROLLED": ({"Character"}, {"RollEvent"}),
-    "TARGETS": ({"Event", "RollEvent"}, {"Character", "Item", "Location"}),
+    "TARGETS": ({"Event"}, {"Character", "Item", "Location"}),
     "TRIGGERED": ({"Character", "Decision", "Event"}, {"Event", "Character"}),
-    "RESULTED_IN": ({"Event", "Decision", "RollEvent"}, {"Event", "Item", "Quest"}),
+    "RESULTED_IN": ({"Event", "Decision"}, {"Event", "Item", "Quest"}),
     "INVOLVES": ({"Event", "Quest"}, {"Character", "Item", "Location", "Faction"}),
     "KNOWS": ({"Character"}, {"Character"}),
     "FEARS": ({"Character"}, {"Character", "Faction"}),
@@ -204,7 +203,7 @@ PREDICATE_DOMAINS = {
     "KILLED": ({"Character"}, {"Character"}),
     "FAMILY_OF": ({"Character"}, {"Character"}),
     "MENTIONS": ({"Chunk"}, {"Character", "Location", "Item", "Quest", "Event", "Faction",
-                             "RuleEntity", "RollEvent", "Decision"}),
+                             "RuleEntity", "Decision"}),
 }
 
 # Report used German confidence tokens; local prompt emits English. Converge both.
@@ -213,8 +212,9 @@ CONFIDENCE_MAP = {"hoch": "high", "mittel": "medium", "niedrig": "low"}
 # Deterministic event gate (KG_Qualitaetsanalyse_S01 §1 "Event-Begriff zu weit"):
 # an Event needs a state change. Titles matching these casefolded substrings are
 # meta/deliberation/rules-talk, not events — dropped in resolve.py. Roll-shaped
-# titles are dropped too (RollEvent already covers them); the \broll\b regex
-# lives in resolve.py so 'Schriftrolle' never matches.
+# titles are dropped too (a bare dice roll isn't a macro-Event; the detail lives
+# in the vector store); the \broll\b regex lives in resolve.py so 'Schriftrolle'
+# never matches.
 META_EVENT_TERMS = (
     "clarification", "explanation", "explain", "mention", "considers",
     "questions", "discussion", "klarstellung", "erklärt", "erlaeutert",

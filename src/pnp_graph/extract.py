@@ -20,7 +20,11 @@ log = logging.getLogger("pnp_graph.extract")
 # per session at no measured quality cost.
 _SCENE_PROMPT = (
     "This transcript chunk is ONE scene. Extract everything from it in one pass.\n\n"
-    "- characters, locations, items, quests, factions: use consistent names across mentions. "
+    "- items: create an Item ONLY for a unique, named, plot-significant artifact and set "
+    "is_named_artifact=true. WRONG (is_named_artifact=false, generic — do NOT treat as "
+    "significant): 'Fackel', '3 Goldstücke', 'Heiltrank', 'Kurzschwert'. CORRECT "
+    "(is_named_artifact=true): 'Schwert des Veritas', 'die verlorene Schriftrolle der Blume'.\n"
+    "- characters, locations, quests, factions: use consistent names across mentions. "
     "For characters, set role to \"adversary\" for a hostile monster/enemy the party fights, "
     "\"NPC\" for other non-player characters, \"PC\" for player characters. If a character "
     "shows a recurring personality trait, habit, or quirk (e.g. 'plays music often', 'always "
@@ -37,8 +41,6 @@ _SCENE_PROMPT = (
     "is ONE event (e.g. 'Kampf gegen die Goblins'), never one per attack or roll. Fill "
     "narrative_significance_reasoning with why this scene alters world state — if the scene is "
     "pure filler, still name its most consequential moment; do not invent multiple events.\n"
-    "- roll_events: every dice roll — who rolled, what trait/action, the outcome "
-    "(success_with_hope, success_with_fear, failure, crit...), and the target if any.\n"
     "- decisions: deliberate, weighty player/GM choices, with a short verbatim quote and "
     "the consequence.\n"
     "- relationships: arbitrary lore/social/causal connections between entities you extracted "
@@ -48,7 +50,7 @@ _SCENE_PROMPT = (
     "one of the names you extracted above or from the cast list below, never an entity you "
     "haven't listed anywhere else. Prefer reusing one of these relation types when it fits: "
     f"{', '.join(SUGGESTED_PREDICATES)}, HAS_CLASS, HAS_SUBCLASS, HAS_ANCESTRY, USES_CARD, "
-    "HAS_FEATURE, USES, DECIDED, ROLLED — but use a different short UPPER_SNAKE_CASE predicate "
+    "HAS_FEATURE, USES, DECIDED — but use a different short UPPER_SNAKE_CASE predicate "
     "if none of these fit. Rate each relationship's confidence based on how directly the text "
     "supports it. If the relationship carries nuance the predicate alone can't express (e.g. "
     "'trusts him only reluctantly, since the incident in the forest'), add a short description; "
@@ -149,7 +151,7 @@ def extract_chunk(extractor, chunk: str, chunk_index: int,
         characters=scene.characters, locations=scene.locations,
         items=scene.items, quests=scene.quests, factions=scene.factions,
         rule_entities=scene.rule_entities,
-        events=[scene.macro_scene_event], roll_events=scene.roll_events,
+        events=[scene.macro_scene_event],
         decisions=scene.decisions,
         relationships=scene.relationships,
     )
@@ -165,7 +167,6 @@ def merge_graphs(target: GraphExtraction, extra: GraphExtraction) -> None:
         ("events", "label"),
         ("factions", "name"),
         ("rule_entities", "name"),
-        ("roll_events", "name"),
         ("decisions", "name"),
     ):
         existing = {getattr(item, key) for item in getattr(target, field)}
@@ -189,7 +190,7 @@ def _record_evidence(evidence: dict, result: GraphExtraction, chunk_index: int) 
     for field, key in (
         ("characters", "name"), ("locations", "name"), ("items", "name"),
         ("quests", "name"), ("events", "label"), ("factions", "name"),
-        ("rule_entities", "name"), ("roll_events", "name"), ("decisions", "name"),
+        ("rule_entities", "name"), ("decisions", "name"),
     ):
         for item in getattr(result, field):
             evidence.setdefault((field, getattr(item, key)), []).append(chunk_index)

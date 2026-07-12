@@ -57,8 +57,9 @@
         "Goblin-Dragonborn",
         "Dragonborn",
         "halb Goblin, halb Drache",
-        "der Guardian",
-        "Goblin"
+        "der Guardian"
+  
+    
       ]
     },
     "CHAR_Cookie": {
@@ -66,7 +67,9 @@
       "aliases": [
         "der Frosch",
         "Frosch",
-        "der Ranger"
+        "der Ranger",
+        "Ribbit",
+        "der Ribbit"
       ]
     },
     "CHAR_Monster": {
@@ -93,22 +96,8 @@
       "canonical": "Benjamin",
       "aliases": []
     },
-    "CHAR_RIBBIT": {
-      "canonical": "R.I.B.B.I.T.",
-      "aliases": [
-        "R.I.B.B.E.T."
-      ]
-    },
-    "CHAR_Ribbet": {
-      "canonical": "Ribbet",
-      "aliases": []
-    },
     "CHAR_Sanji": {
       "canonical": "Sanji",
-      "aliases": []
-    },
-    "CHAR_Frettchen": {
-      "canonical": "Frettchen",
       "aliases": []
     },
     "CHAR_Ingrid": {
@@ -117,10 +106,6 @@
     },
     "CHAR_Mikasa": {
       "canonical": "Mikasa",
-      "aliases": []
-    },
-    "CHAR_Ribbit": {
-      "canonical": "Ribbit",
       "aliases": []
     },
     "CHAR_Spinni": {
@@ -153,7 +138,9 @@
     },
     "CHAR_Tindrail": {
       "canonical": "Tindrail",
-      "aliases": []
+      "aliases": [
+        "Tinrail"
+      ]
     },
     "CHAR_Tindrael": {
       "canonical": "Tindrael",
@@ -322,6 +309,162 @@
     "CHAR_Surveying": {
       "canonical": "Surveying",
       "aliases": []
+    },
+    "CHAR_Parry": {
+      "canonical": "Parry",
+      "aliases": []
+    },
+    "CHAR_Walk": {
+      "canonical": "Walk",
+      "aliases": []
+    },
+    "CHAR_GehoerntesWesen": {
+      "canonical": "Gehörntes Wesen",
+      "aliases": []
+    },
+    "CHAR_Waldschrat": {
+      "canonical": "Waldschrat",
+      "aliases": []
+    },
+    "CHAR_Wildschwein": {
+      "canonical": "Wildschwein",
+      "aliases": []
+    },
+    "CHAR_Lugasch": {
+      "canonical": "Lugasch",
+      "aliases": []
+    },
+    "CHAR_GoblinWachen": {
+      "canonical": "Goblin-Wachen",
+      "aliases": []
+    },
+    "CHAR_BetrunkenerGoblin": {
+      "canonical": "Betrunkener Goblin",
+      "aliases": []
+    },
+    "CHAR_GoblinSchuetze1": {
+      "canonical": "Goblin-Schütze 1",
+      "aliases": [
+        "Goblin-Schütze 2"
+      ]
+    },
+    "CHAR_GoblinMagier": {
+      "canonical": "Goblin-Magier",
+      "aliases": []
+    },
+    "CHAR_GoblinKaempfer": {
+      "canonical": "Goblin-Kämpfer (Dolch)",
+      "aliases": []
+    },
+    "CHAR_GoblinAnfuehrer": {
+      "canonical": "Goblin-Anführer (erster Goblin)",
+      "aliases": []
+    },
+    "CHAR_BesoffeneGoblins": {
+      "canonical": "Besoffene Goblins",
+      "aliases": []
+    },
+    "CHAR_Wache1": {
+      "canonical": "Wache 1",
+      "aliases": []
+    },
+    "CHAR_Wache2": {
+      "canonical": "Wache 2",
+      "aliases": []
+    },
+    "CHAR_Bauern": {
+      "canonical": "Bauern (Dorfbewohner)",
+      "aliases": [
+        "Bauer (Holzhelfer)"
+      ]
+    },
+    "CHAR_FamilieKraemer": {
+      "canonical": "Familie Krämer",
+      "aliases": []
+    },
+    "CHAR_Magier": {
+      "canonical": "Magier",
+      "aliases": []
+    },
+    "CHAR_BauerKraemer": {
+      "canonical": "Bauer Krämer",
+      "aliases": []
+    },
+    "CHAR_BaeuerinKraemer": {
+      "canonical": "Bäuerin Krämer",
+      "aliases": []
+    },
+    "CHAR_KindDerKraemers": {
+      "canonical": "Kind der Krämers",
+      "aliases": []
+    },
+    "CHAR_ZweiterBauer": {
+      "canonical": "zweiter Bauer (Holzhelfer)",
+      "aliases": []
+    },
+    "CHAR_Tindra": {
+      "canonical": "Tindra",
+      "aliases": []
+    },
+    "CHAR_Maedchen": {
+      "canonical": "Mädchen (vermisst)",
+      "aliases": []
+    },
+    "CHAR_Papa": {
+      "canonical": "Papa (Vater des Mädchens)",
+      "aliases": []
+    },
+    "CHAR_MutterDesMaedchens": {
+      "canonical": "Mutter des Mädchens",
+      "aliases": []
+    },
+    "CHAR_Bogenschuetzin": {
+      "canonical": "Bogenschützin",
+      "aliases": []
+    },
+    "CHAR_Wachen": {
+      "canonical": "Wachen (2)",
+      "aliases": []
+    },
+    "CHAR_Wirt": {
+      "canonical": "Wirt",
+      "aliases": []
+    },
+    "CHAR_GoblinSpaeher": {
+      "canonical": "Goblin-Späher",
+      "aliases": []
+    },
+    "CHAR_BugbearWachen": {
+      "canonical": "Bugbear-Wachen",
+      "aliases": []
+    },
+    "CHAR_BugbearAnfuehrer": {
+      "canonical": "Bugbear-Anführer",
+      "aliases": []
+    },
+    "CHAR_LetzterBugbear": {
+      "canonical": "Letzter Bugbear",
+      "aliases": []
+    },
+    "CHAR_Statue": {
+      "canonical": "Die Statue",
+      "aliases": []
+    },
+    "CHAR_Feuerkreatur": {
+      "canonical": "Die Feuerkreatur",
+      "aliases": []
+    },
+    "CHAR_FluesterndeStimme": {
+      "canonical": "Die flüsternde Stimme",
+      "aliases": []
+    },
+    "CHAR_SkelettNahkaempfer": {
+      "canonical": "Skelett-Nahkämpfer",
+      "aliases": []
+    },
+    "CHAR_SkelettBogenschuetze": {
+      "canonical": "Skelett-Bogenschütze",
+      "aliases": []
     }
   },
   "locations": {
@@ -372,7 +515,8 @@
     "LOC_Goblindorf": {
       "canonical": "Goblindorf",
       "aliases": [
-        "Goblin-Dorf"
+        "Goblin-Dorf",
+        "Goblendorf"
       ]
     },
     "LOC_Sumpfgebiet": {
@@ -390,7 +534,8 @@
     "LOC_GoblinLager": {
       "canonical": "Goblin Lager",
       "aliases": [
-        "Goblinlager"
+        "Goblinlager",
+        "Goblenlager"
       ]
     },
     "LOC_Sumpf": {
@@ -536,7 +681,8 @@
     "LOC_DorfBrechka": {
       "canonical": "Dorf Brechka",
       "aliases": [
-        "Dorf Breshka"
+        "Dorf Breshka",
+        "Dorf Breschka"
       ]
     },
     "LOC_Gildenhalle": {
@@ -729,7 +875,9 @@
     },
     "LOC_GoblinCamp": {
       "canonical": "Goblin Camp",
-      "aliases": []
+      "aliases": [
+        "Goblincamp"
+      ]
     },
     "LOC_Krypte": {
       "canonical": "Krypte",
@@ -897,7 +1045,9 @@
     },
     "LOC_Breschka": {
       "canonical": "Breschka",
-      "aliases": []
+      "aliases": [
+        "Brechka"
+      ]
     },
     "LOC_Ort": {
       "canonical": "der Ort (unbekannter Name gesucht)",
@@ -1014,6 +1164,130 @@
     "LOC_MagiewelleRaum": {
       "canonical": "Magiewelle Raum",
       "aliases": []
+    },
+    "LOC_LagerMitFeuer": {
+      "canonical": "Lager mit Feuer",
+      "aliases": []
+    },
+    "LOC_SteinkonstruktAussichtsturm": {
+      "canonical": "Steinkonstrukt / Aussichtsturm",
+      "aliases": []
+    },
+    "LOC_GoblinLagerErobertesDorf": {
+      "canonical": "Goblin-Lager / erobertes Dorf",
+      "aliases": []
+    },
+    "LOC_HuegelMitVorsprung": {
+      "canonical": "Hügel mit Vorsprung",
+      "aliases": []
+    },
+    "LOC_GebaeudeUnterDemHuegel": {
+      "canonical": "Gebäude unter dem Hügel",
+      "aliases": []
+    },
+    "LOC_LagerhalleMitFaessernUndKisten": {
+      "canonical": "Lagerhalle mit Fässern und Kisten",
+      "aliases": []
+    },
+    "LOC_SumpfDickicht": {
+      "canonical": "Sumpf/Dickicht",
+      "aliases": []
+    },
+    "LOC_TruheImSumpf": {
+      "canonical": "Truhe im Sumpf",
+      "aliases": []
+    },
+    "LOC_Nebellager": {
+      "canonical": "Nebellager",
+      "aliases": []
+    },
+    "LOC_WaldlichtungMitHuegel": {
+      "canonical": "Waldlichtung mit Hügel",
+      "aliases": []
+    },
+    "LOC_EingestuerzterAussichtsturm": {
+      "canonical": "Eingestürzter Aussichtsturm",
+      "aliases": []
+    },
+    "LOC_GoblinLagerDorf": {
+      "canonical": "Goblin-Lager/Dorf",
+      "aliases": []
+    },
+    "LOC_HuegelBerg": {
+      "canonical": "Hügel/Berg",
+      "aliases": []
+    },
+    "LOC_DorfDerHelden": {
+      "canonical": "das Dorf der Helden",
+      "aliases": []
+    },
+    "LOC_Kreuzung": {
+      "canonical": "Kreuzung",
+      "aliases": []
+    },
+    "LOC_LeandrasHaus": {
+      "canonical": "Leandras' Haus",
+      "aliases": []
+    },
+    "LOC_Siedlung": {
+      "canonical": "Siedlung (Eingang)",
+      "aliases": []
+    },
+    "LOC_SchenkeZumDorf": {
+      "canonical": "Schenke zum Dorf",
+      "aliases": []
+    },
+    "LOC_EingangDesGebaeudes": {
+      "canonical": "Eingang des Gebäudes (Bauernhof)",
+      "aliases": []
+    },
+    "LOC_HofDerFamilieKraemer": {
+      "canonical": "Hof der Familie Krämer",
+      "aliases": []
+    },
+    "LOC_CampVorDerKrypta": {
+      "canonical": "Camp vor der Krypta",
+      "aliases": []
+    },
+    "LOC_PhippsTurm": {
+      "canonical": "Phipps' Turm",
+      "aliases": []
+    },
+    "LOC_Dschungelgebiet": {
+      "canonical": "Dschungelgebiet",
+      "aliases": []
+    },
+    "LOC_FestungBurg": {
+      "canonical": "Festung/Burg",
+      "aliases": []
+    },
+    "LOC_AltesGebaeudeBauernhaus": {
+      "canonical": "altes Gebäude/Bauernhaus",
+      "aliases": []
+    },
+    "LOC_BurgDerBugbears": {
+      "canonical": "Burg der Bugbears",
+      "aliases": []
+    },
+    "LOC_WaldLinksDerBurg": {
+      "canonical": "Wald links der Burg",
+      "aliases": []
+    },
+    "LOC_GruenflaecheVorDerBurg": {
+      "canonical": "Grünfläche vor der Burg",
+      "aliases": []
+    },
+    "LOC_BurgDerBoesenGottheit": {
+      "canonical": "Burg der bösen Gottheit",
+      "aliases": []
+    },
+    "LOC_RaumMitDerStatue": {
+      "canonical": "Raum mit der Statue",
+      "aliases": []
+    },
+    "LOC_RaumMitDenMonolithen": {
+      "canonical": "Raum mit den Monolithen",
+      "aliases": []
     }
   },
   "items": {
@@ -1091,7 +1365,9 @@
     },
     "ITEM_HolzenerDolch": {
       "canonical": "Holzener Dolch",
-      "aliases": []
+      "aliases": [
+        "hölzerner Dolch"
+      ]
     },
     "ITEM_Heiltrank": {
       "canonical": "Heiltrank",
@@ -1742,6 +2018,50 @@
     "ITEM_Armor": {
       "canonical": "Armor",
       "aliases": []
+    },
+    "ITEM_SchriftrolleMitDerNaturReden": {
+      "canonical": "Schriftrolle: Mit der Natur reden",
+      "aliases": []
+    },
+    "ITEM_Truhe": {
+      "canonical": "Truhe",
+      "aliases": []
+    },
+    "ITEM_Vergroesserungstrank": {
+      "canonical": "Vergrößerungstrank",
+      "aliases": []
+    },
+    "ITEM_SaeckeVollGold": {
+      "canonical": "Säcke voll Gold",
+      "aliases": []
+    },
+    "ITEM_KarteEinesAngriffsplans": {
+      "canonical": "Karte eines Angriffsplans",
+      "aliases": []
+    },
+    "ITEM_SchriftrolleDerNatur": {
+      "canonical": "Schriftrolle der Natur",
+      "aliases": []
+    },
+    "ITEM_SteinDerFreundschaft": {
+      "canonical": "Stein der Freundschaft",
+      "aliases": []
+    },
+    "ITEM_KarteEinesAngriffsplansAufEinDorf": {
+      "canonical": "Karte eines Angriffsplans auf ein Dorf",
+      "aliases": []
+    },
+    "ITEM_EsterossasAmulett": {
+      "canonical": "Esterossas Amulett",
+      "aliases": []
+    },
+    "ITEM_HoelzerneVoodooPuppe": {
+      "canonical": "hölzerne Voodoo-Puppe",
+      "aliases": []
+    },
+    "ITEM_SchriftrollenVomAltar": {
+      "canonical": "Schriftrollen vom Altar",
+      "aliases": []
     }
   },
   "quests": {
@@ -1795,7 +2115,10 @@
     },
     "QUEST_GoblinLagerBefreien": {
       "canonical": "Goblin-Lager befreien",
-      "aliases": []
+      "aliases": [
+        "Goblenlager befreien",
+        "Goblinlager befreien"
+      ]
     },
     "QUEST_BefreiungDesGoblinLagers": {
       "canonical": "Befreiung des Goblin-Lagers",
@@ -2062,7 +2385,9 @@
     },
     "QUEST_VerteidigungDesDorfesBreshkaGegenGoblins": {
       "canonical": "Verteidigung des Dorfes Breshka gegen Goblins",
-      "aliases": []
+      "aliases": [
+        "Verteidigung des Dorfes gegen Goblins"
+      ]
     },
     "QUEST_ErmutigungDerDorfbewohner": {
       "canonical": "Ermutigung der Dorfbewohner",
@@ -2126,6 +2451,102 @@
     },
     "QUEST_SucheNachEinerZielpersonImOrt": {
       "canonical": "Suche nach einer Zielperson im Ort",
+      "aliases": []
+    },
+    "QUEST_GoblinArmeePlattMachen": {
+      "canonical": "Goblin-Armee platt machen",
+      "aliases": []
+    },
+    "QUEST_AuftragErfuellen": {
+      "canonical": "Auftrag erfüllen",
+      "aliases": []
+    },
+    "QUEST_GoblinLagerInfiltrieren": {
+      "canonical": "Goblin-Lager infiltrieren",
+      "aliases": []
+    },
+    "QUEST_ZeitLaeuftAb20MinutenVerbleibend": {
+      "canonical": "Zeit läuft ab – 20 Minuten verbleibend",
+      "aliases": []
+    },
+    "QUEST_GoblindorfAusraeuchern": {
+      "canonical": "Goblindorf ausräuchern",
+      "aliases": []
+    },
+    "QUEST_GoblinLagerSaeubern": {
+      "canonical": "Goblin-Lager säubern",
+      "aliases": []
+    },
+    "QUEST_DorfBrechkaAufGoblinAngriffVorbereiten": {
+      "canonical": "Dorf Brechka auf Goblin-Angriff vorbereiten",
+      "aliases": []
+    },
+    "QUEST_GoblinCampAusraeuchern": {
+      "canonical": "Goblin-Camp ausräuchern",
+      "aliases": []
+    },
+    "QUEST_FortsetzungsauftragDerAnderenGruppe": {
+      "canonical": "Fortsetzungsauftrag der anderen Gruppe",
+      "aliases": []
+    },
+    "QUEST_GoblinangriffAbwenden": {
+      "canonical": "Goblinangriff abwenden",
+      "aliases": []
+    },
+    "QUEST_ZumBuergermeisterVordringen": {
+      "canonical": "Zum Bürgermeister vordringen",
+      "aliases": []
+    },
+    "QUEST_DorfGegenGoblinangriffVerteidigen": {
+      "canonical": "Dorf gegen Goblinangriff verteidigen",
+      "aliases": []
+    },
+    "QUEST_KindDerKraemersZurueckbringen": {
+      "canonical": "Kind der Krämers zurückbringen",
+      "aliases": []
+    },
+    "QUEST_DorfGegenGoblinsVerteidigen": {
+      "canonical": "Dorf gegen Goblins verteidigen",
+      "aliases": []
+    },
+    "QUEST_VermisstesMaedchenFinden": {
+      "canonical": "Vermisstes Mädchen finden",
+      "aliases": []
+    },
+    "QUEST_KryptaSaeubern": {
+      "canonical": "Die Krypta säubern",
+      "aliases": []
+    },
+    "QUEST_MachenschaftenErgruenden": {
+      "canonical": "Die Machenschaften ergründen",
+      "aliases": []
+    },
+    "QUEST_KryptaErkunden": {
+      "canonical": "Die Krypta erkunden",
+      "aliases": []
+    },
+    "QUEST_FellbiesterInDerBurgBeseitigen": {
+      "canonical": "Die Fellbiester in der Burg beseitigen",
+      "aliases": []
+    },
+    "QUEST_MissionZurBurg": {
+      "canonical": "Mission zur Burg",
+      "aliases": []
+    },
+    "QUEST_BurgDerBugbearsInfiltrieren": {
+      "canonical": "Die Burg der Bugbears infiltrieren",
+      "aliases": []
+    },
+    "QUEST_ErkundungDerBurg": {
+      "canonical": "Erkundung der Burg",
+      "aliases": []
+    },
+    "QUEST_HerausfindenWerLenraIst": {
+      "canonical": "Herausfinden, wer Lenra ist",
+      "aliases": []
+    },
+    "QUEST_DungeonSaeubern": {
+      "canonical": "Dungeon säubern",
       "aliases": []
     }
   },
@@ -5356,6 +5777,146 @@
     "EVT_DiscoveryOfSchriftrollenAndMissionClue": {
       "canonical": "Discovery of Schriftrollen and Mission Clue",
       "aliases": []
+    },
+    "EVT_AuftragAngenommenGoblinArmeePlattMachen": {
+      "canonical": "Auftrag angenommen: Goblin-Armee platt machen",
+      "aliases": []
+    },
+    "EVT_GruppeBereitetSichAufDenVormarschVor": {
+      "canonical": "Gruppe bereitet sich auf den Vormarsch vor",
+      "aliases": []
+    },
+    "EVT_GoblinKampfUndEntdeckungDesUeberfallenenLagers": {
+      "canonical": "Goblin-Kampf und Entdeckung des überfallenen Lagers",
+      "aliases": []
+    },
+    "EVT_DurchsuchungDesGoblinlagersUndFundDerSchriftrolle": {
+      "canonical": "Durchsuchung des Goblinlagers und Fund der Schriftrolle",
+      "aliases": []
+    },
+    "EVT_GoblinAusDerTruheBesiegt": {
+      "canonical": "Goblin aus der Truhe besiegt",
+      "aliases": []
+    },
+    "EVT_NaechtlicheRastMitSpaeherKonfrontation": {
+      "canonical": "Nächtliche Rast mit Späher-Konfrontation",
+      "aliases": []
+    },
+    "EVT_ErkundungDesWaldesUndBegegnungMitEinemWildschwein": {
+      "canonical": "Erkundung des Waldes und Begegnung mit einem Wildschwein",
+      "aliases": []
+    },
+    "EVT_GoblinKindGetoetetUndSchleichfurzAnspracheBelauscht": {
+      "canonical": "Goblin-Kind getötet und Schleichfurz' Ansprache belauscht",
+      "aliases": []
+    },
+    "EVT_KampfGegenDieGoblinsInDerLagerhalle": {
+      "canonical": "Kampf gegen die Goblins in der Lagerhalle",
+      "aliases": []
+    },
+    "EVT_GoblenlagerBefreitUndAuftragAbgeschlossen": {
+      "canonical": "Goblenlager befreit und Auftrag abgeschlossen",
+      "aliases": []
+    },
+    "EVT_AuftaktZurGoblinMission": {
+      "canonical": "Auftakt zur Goblin-Mission",
+      "aliases": []
+    },
+    "EVT_KampfGegenDenPluenderndenGoblinUndErkundungDesLagers": {
+      "canonical": "Kampf gegen den plündernden Goblin und Erkundung des Lagers",
+      "aliases": []
+    },
+    "EVT_KampfGegenDenGoblinInDerTruhe": {
+      "canonical": "Kampf gegen den Goblin in der Truhe",
+      "aliases": []
+    },
+    "EVT_NaechtlicheSpionageEinGehoerntesWesenBeobachtetDasLager": {
+      "canonical": "Nächtliche Spionage: Ein gehörntes Wesen beobachtet das Lager",
+      "aliases": []
+    },
+    "EVT_SchleichzugInsGoblinLager": {
+      "canonical": "Schleichzug ins Goblin-Lager",
+      "aliases": []
+    },
+    "EVT_RueckkehrNachErfolgreicherBefreiungDesGoblinlagers": {
+      "canonical": "Rückkehr nach erfolgreicher Befreiung des Goblinlagers",
+      "aliases": []
+    },
+    "EVT_ValerieUndRotunasSpielenEineRundeIchBinS": {
+      "canonical": "Valerie und Rotunas spielen eine Runde 'Ich bin's!'",
+      "aliases": []
+    },
+    "EVT_AuftragDorfBrechkaAufGoblinAngriffVorbereiten": {
+      "canonical": "Auftrag: Dorf Brechka auf Goblin-Angriff vorbereiten",
+      "aliases": []
+    },
+    "EVT_AnkunftImDorf": {
+      "canonical": "Ankunft im Dorf",
+      "aliases": []
+    },
+    "EVT_BegegnungMitDemMagierLeandras": {
+      "canonical": "Begegnung mit dem Magier Leandras",
+      "aliases": []
+    },
+    "EVT_AnkunftImDorfUndErsteBegegnungMitDenWachen": {
+      "canonical": "Ankunft im Dorf und erste Begegnung mit den Wachen",
+      "aliases": []
+    },
+    "EVT_EinschuechterungDerWachenUndVerweisAnTindrail": {
+      "canonical": "Einschüchterung der Wachen und Verweis an Tindrail",
+      "aliases": []
+    },
+    "EVT_AnkunftInDerSchenkeUndWarnungVorDemGoblinangriff": {
+      "canonical": "Ankunft in der Schenke und Warnung vor dem Goblinangriff",
+      "aliases": []
+    },
+    "EVT_VerhandlungenMitDenBauernUeberVerteidigungsmassnahmen": {
+      "canonical": "Verhandlungen mit den Bauern über Verteidigungsmaßnahmen",
+      "aliases": []
+    },
+    "EVT_ChaosAufDemHofDerFamilieKraemer": {
+      "canonical": "Chaos auf dem Hof der Familie Krämer",
+      "aliases": []
+    },
+    "EVT_VorbereitungDerDorfverteidigungGegenDenGoblinAngriff": {
+      "canonical": "Vorbereitung der Dorfverteidigung gegen den Goblin-Angriff",
+      "aliases": []
+    },
+    "EVT_SessionEndeUndVorbereitungAufDenGoblinAngriff": {
+      "canonical": "Session-Ende und Vorbereitung auf den Goblin-Angriff",
+      "aliases": []
+    },
+    "EVT_AufbruchZurKrypta": {
+      "canonical": "Aufbruch zur Krypta",
+      "aliases": []
+    },
+    "EVT_AnkunftAmCampVorDerKrypta": {
+      "canonical": "Ankunft am Camp vor der Krypta",
+      "aliases": []
+    },
+    "EVT_BegegnungMitPhippsImTurm": {
+      "canonical": "Begegnung mit Phipps im Turm",
+      "aliases": []
+    },
+    "EVT_ErkundungDesAltenBauernhausesUndFundDerVoodooPuppe": {
+      "canonical": "Erkundung des alten Bauernhauses und Fund der Voodoo-Puppe",
+      "aliases": []
+    },
+    "EVT_KampfGegenDieBugbearWachenVorDerBurg": {
+      "canonical": "Kampf gegen die Bugbear-Wachen vor der Burg",
+      "aliases": []
+    },
+    "EVT_BlutopferAnDerStatueBeschwoertEineFeuerkreatur": {
+      "canonical": "Blutopfer an der Statue beschwört eine Feuerkreatur",
+      "aliases": []
+    },
+    "EVT_KampfGegenDieSkeletteImDungeon": {
+      "canonical": "Kampf gegen die Skelette im Dungeon",
+      "aliases": []
+    },
+    "EVT_KonfrontationMitLaraDerHackUndFluchtDurchDenAltar": {
+      "canonical": "Konfrontation mit Lara der Hack und Flucht durch den Altar",
+      "aliases": []
     }
   },
   "factions": {
@@ -5438,6 +5999,34 @@
     "FACTION_Bauern": {
       "canonical": "Bauern (farmers)",
       "aliases": []
+    },
+    "FACTION_Goblen": {
+      "canonical": "Goblen",
+      "aliases": []
+    },
+    "FACTION_GoblinArmee": {
+      "canonical": "Goblin-Armee",
+      "aliases": []
+    },
+    "FACTION_Dorfwachen": {
+      "canonical": "Dorfwachen",
+      "aliases": []
+    },
+    "FACTION_Magiergilde": {
+      "canonical": "Magiergilde",
+      "aliases": []
+    },
+    "FACTION_ZweitePartei": {
+      "canonical": "Zweite Partei",
+      "aliases": []
+    },
+    "FACTION_PhippsKoboldFreunde": {
+      "canonical": "Phipps' Kobold-Freunde",
+      "aliases": []
+    },
+    "FACTION_Bugbears": {
+      "canonical": "Bugbears",
+      "aliases": []
     }
   },
   "rules": {
@@ -5515,7 +6104,9 @@
     },
     "RULE_CLASSFEATURE_RangerFokus": {
       "canonical": "Ranger-Fokus",
-      "aliases": []
+      "aliases": [
+        "Ranger Focus"
+      ]
     },
     "RULE_CLASSFEATURE_GuardianSHope": {
       "canonical": "Guardian's Hope",
@@ -5555,6 +6146,130 @@
     },
     "RULE_CLASSFEATURE_Instinktwurf": {
       "canonical": "Instinktwurf",
+      "aliases": []
+    },
+    "RULE_SYSTEM_Wahrnehmungswurf": {
+      "canonical": "Wahrnehmungswurf",
+      "aliases": []
+    },
+    "RULE_SYSTEM_Ruestungsstaerke": {
+      "canonical": "Rüstungsstärke",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_Stalwart": {
+      "canonical": "Stalwart",
+      "aliases": []
+    },
+    "RULE_SYSTEM_Initiative": {
+      "canonical": "Initiative",
+      "aliases": []
+    },
+    "RULE_SYSTEM_Hopf": {
+      "canonical": "Hopf",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_MitDerNaturReden": {
+      "canonical": "Mit der Natur reden",
+      "aliases": []
+    },
+    "RULE_SYSTEM_Schild": {
+      "canonical": "Schild",
+      "aliases": []
+    },
+    "RULE_SYSTEM_Experience": {
+      "canonical": "Experience",
+      "aliases": []
+    },
+    "RULE_ANCESTRY_Clank": {
+      "canonical": "Clank",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_Loreborn": {
+      "canonical": "Loreborn",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_Geschichtenweber": {
+      "canonical": "Geschichtenweber",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_BoltBeacon": {
+      "canonical": "Bolt Beacon",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_PrayerDice": {
+      "canonical": "Prayer Dice",
+      "aliases": []
+    },
+    "RULE_SYSTEM_Daggerheart": {
+      "canonical": "Daggerheart",
+      "aliases": []
+    },
+    "RULE_ANCESTRY_Giant": {
+      "canonical": "Giant",
+      "aliases": []
+    },
+    "RULE_ANCESTRY_Simia": {
+      "canonical": "Simia",
+      "aliases": []
+    },
+    "RULE_CLASS_Mage": {
+      "canonical": "Mage",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_Spellcast": {
+      "canonical": "Spellcast",
+      "aliases": []
+    },
+    "RULE_ADVERSARY_GoblinSpaeher": {
+      "canonical": "Goblin-Späher",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_Seraph": {
+      "canonical": "Seraph",
+      "aliases": []
+    },
+    "RULE_SYSTEM_PreyDice": {
+      "canonical": "Prey Dice",
+      "aliases": []
+    },
+    "RULE_ANCESTRY_Warforge": {
+      "canonical": "Warforge",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_TavaSArmor": {
+      "canonical": "Tava's Armor",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_Powerpush": {
+      "canonical": "Powerpush",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_IceSpikes": {
+      "canonical": "Ice Spikes",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_BodyguardDesGoblinKoenigs": {
+      "canonical": "Bodyguard des Goblin-Königs",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_BedrohlicheUndEinschuechterndeAura": {
+      "canonical": "Bedrohliche und einschüchternde Aura",
+      "aliases": []
+    },
+    "RULE_ANCESTRY_Norborn": {
+      "canonical": "Norborn",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_WingedSentinel": {
+      "canonical": "Winged Sentinel",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_HeilendeHand": {
+      "canonical": "Heilende Hand",
+      "aliases": []
+    },
+    "RULE_CLASS_Paladin": {
+      "canonical": "Paladin",
       "aliases": []
     }
   }

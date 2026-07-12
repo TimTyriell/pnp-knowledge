@@ -26,6 +26,10 @@ class Location(BaseModel):
 
 class Item(BaseModel):
     name: str
+    is_named_artifact: bool = Field(  # REQUIRED (no default) = pay-to-mint, like Event
+        description="True ONLY for a unique, named, plot-significant artifact "
+        "(e.g. 'Schwert des Veritas', 'Sigille'). False for generic/consumable "
+        "loot: torches, gold, arrows, potions, standard weapons — those are NOT nodes.")
     owner: str | None = None
     status: str = Field(default="", description="e.g. looted, used")
 
@@ -61,17 +65,6 @@ class RuleEntity(BaseModel):
 
     name: str
     subtype: str = Field(description="Class, Subclass, Ancestry, Community, DomainCard, ClassFeature, Adversary, or System")
-
-
-class RollEvent(BaseModel):
-    """A dice roll and its result."""
-
-    name: str = Field(description="Short label for the roll, e.g. 'Dodo attack roll vs monster'")
-    roller: str | None = Field(default=None, description="Character who rolled")
-    trait_or_action: str = Field(default="", description="Trait or action rolled, e.g. Agility, attack")
-    outcome: str = Field(default="", description="e.g. success_with_hope, success_with_fear, failure, crit")
-    target: str | None = Field(default=None, description="What the roll targeted, if anything")
-    confidence: Literal["high", "medium", "low"] = "medium"
 
 
 class Decision(BaseModel):
@@ -134,7 +127,6 @@ class SceneExtraction(BaseModel):
     factions: list[Faction] = []
     rule_entities: list[RuleEntity] = []
     macro_scene_event: Event
-    roll_events: list[RollEvent] = []
     decisions: list[Decision] = []
     relationships: list[Relationship] = []
 
@@ -147,6 +139,5 @@ class GraphExtraction(BaseModel):
     events: list[Event] = []
     factions: list[Faction] = []
     rule_entities: list[RuleEntity] = []
-    roll_events: list[RollEvent] = []
     decisions: list[Decision] = []
     relationships: list[Relationship] = []

@@ -5,14 +5,17 @@
 > **Status (2026-07-12): largely implemented.** WP0–WP8, WP10 and WP11 have
 > landed in `src/pnp_graph/` (WP4 Scenes shipped then reverted — see `04`).
 > Results and learnings per milestone: `../learnings/MIGRATION_NOTES.md`.
-> **Open (Priority 1): WP13** — Agentic Hybrid-RAG ingestion (`13`): semantic
-> scene chunking + one-event-per-scene "capsule" schema + GraphRAG entity
-> summaries + optional critic, on the DeepSeek flagship profile. Successor to
+> **WP13** — Agentic Hybrid-RAG ingestion (`13`): semantic scene chunking +
+> one-event-per-scene "capsule" schema + GraphRAG entity summaries + chunk-level
+> vector index, on the DeepSeek flagship profile — **landed**. Successor to
 > **WP12** (`12`, extraction-quality overhaul) — WP12's trait removal and the
-> two-profile DeepSeek shift already landed (WP-A/WP-B); WP13 replaces WP12's
-> bigger-fixed-chunk + `List[Event]` design with semantic scenes and capsule
-> events. Both supersede the recall-first stance of `06`/`10`. Measured
-> 3-session bloat: `../learnings/KG_Bloat_2Session_20250401-09.md`.
+> two-profile DeepSeek shift also landed; WP13 replaced WP12's bigger-fixed-chunk
+> + `List[Event]` design with semantic scenes and capsule events. Both supersede
+> the recall-first stance of `06`/`10`.
+> **WP14 (`14`, 2026-07-12) — landed**: `Item` = named artifacts only,
+> `RollEvent` removed from the graph, and the vector "book" split onto its own
+> `:Chunk` label + index (skeleton is now cleanly `:Entity`). Measured
+> 2-session bloat behind WP12–14: `../learnings/KG_Bloat_2Session_20250401-09.md`.
 > **Open: WP9** — second-session multi-session proof + the bitemporal
 > write-side (`store.py` does not stamp `valid_from`/`valid_to` yet;
 > `STATE_PREDICATES` in `config.py` and the as-of read path in `retrieve.py`
@@ -56,10 +59,12 @@ Keep the local, private, high-recall `qwen3:14b` pipeline in `src/pnp_graph/`, b
 - `08_roadmap.md` — WP0–WP10 in order, each with an acceptance criterion; `PLAN.md` alignment; assumptions; anti-patterns.
 - `10_significance_and_recurrence.md` — **guardrail on recall.** Prevents recurring routine behavior (e.g. "plays music often") from inflating into hundreds of near-duplicate nodes, and separates narrative significance from raw frequency. Read before finishing WP6/WP7 — without it, the recall lift causes exactly the problem it describes.
 - `11_bitemporal_and_retrieval.md` — the **bitemporal edge contract** (state/event/identity classes, `valid_from`/`valid_to`, death workflow, append-only contradictions) and the **retrieval layer** (`nomic-embed-text` + Neo4j vector index, GraphRAG-style local search *without* adopting the GraphRAG framework — verdict inside). Supersedes `04`'s edge-property list where they differ.
-- `12_extraction_quality_overhaul.md` — **Priority 1.** Native parsimony in the extraction layer: scene-level chunking, schema-forced significance (`Event.state_change_justification` + required `consequence`), `Trait`-node removal (folded to a `Character.behavior_note` property), few-shot anti-patterns. Downstream pruning is an anti-pattern here. Supersedes the recall-first tone of `06` and the WP6b aggregation of `10`.
+- `12_extraction_quality_overhaul.md` — **landed.** Native parsimony in the extraction layer: scene-level chunking, schema-forced significance, `Trait`-node removal, few-shot anti-patterns. Downstream pruning is an anti-pattern here. Superseded in part by `13`'s capsule schema and `14`'s Item/Roll gates. Supersedes the recall-first tone of `06` and the WP6b aggregation of `10`.
+- `13_agentic_hybrid_rag.md` — **landed.** Semantic scene chunking, one combined `SceneExtraction` call/scene, capsule macro-event, GraphRAG entity summaries, chunk-level vector index.
+- `14_item_roll_parsimony_and_chunk_split.md` — **landed (2026-07-12).** `Item` = named artifacts only (`is_named_artifact`), `RollEvent` removed from the graph, and the vector "book" split onto its own `:Chunk` label + `chunk_embedding` index (skeleton is cleanly `:Entity`). Schema-breaking — wipe + re-ingest.
 
 ## Execution order
 
 Follow `08_roadmap.md`. Short version: **WP1 (entity resolution) is the gate** — most other gains depend on canonical IDs existing first. **WP6b (`10`) must land before WP7** — raising recall without the recurrence guardrail amplifies node/edge inflation rather than adding real information.
 
-**Now (2026-07-12): WP12 (`12`) is Priority 1** — the 2-session data proved WP6b's aggregation guardrail insufficient (374 single-use traits, 0 % of events consequence-linked). Do WP12 before resuming WP9; a bitemporal write-side on a 2/3-noise graph just versions the noise.
+**Now (2026-07-12): WP12–WP14 have landed** — the parsimony overhaul (trait removal, capsule events, Item/Roll gates) and the `:Chunk` split are in. The graph is now a clean `:Entity` skeleton + a `:Chunk` vector book. **Next: WP9** (bitemporal write-side) — now worth doing on a low-noise graph instead of versioning the noise.

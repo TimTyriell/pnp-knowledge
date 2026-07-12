@@ -39,6 +39,11 @@ def ensure_constraints(db) -> None:
     db.run("CREATE CONSTRAINT entity_id IF NOT EXISTS FOR (n:Entity) REQUIRE n.id IS UNIQUE")
     db.run("CREATE INDEX entity_type IF NOT EXISTS FOR (n:Entity) ON (n.type)")
     db.run("CREATE INDEX entity_session IF NOT EXISTS FOR (n:Entity) ON (n.session_id)")
+    # Chunk passages (WP13.5) are the vector "book", a SEPARATE label from the
+    # :Entity skeleton (the 2026 GraphRAG-standard split) so every skeleton
+    # query/algorithm scopes cleanly to :Entity. Its own id constraint keeps
+    # MERGE idempotent and backs the label-less endpoint MATCH in _write_graph.
+    db.run("CREATE CONSTRAINT chunk_id IF NOT EXISTS FOR (n:Chunk) REQUIRE n.id IS UNIQUE")
 
 
 def _write_graph(db, resolved: dict) -> None:
@@ -57,8 +62,11 @@ def _write_graph(db, resolved: dict) -> None:
         # MATCH must never let an empty/falsy value blank out a value a prior
         # session set; only ON CREATE may write "" or [] (nothing to preserve yet).
         match_props = {k: v for k, v in create_props.items() if v != "" and v != []}
+        # Chunk passages carry the :Chunk label, never :Entity (see ensure_constraints).
+        # Literal, not user input — safe to interpolate.
+        label = "Chunk" if e["type"] == "Chunk" else "Entity"
         db.run(
-            "MERGE (n:Entity {id: $id}) "
+            f"MERGE (n:{label} {{id: $id}}) "
             "ON CREATE SET n += $create_props, n.type = $type, n.created_at = timestamp() "
             "ON MATCH  SET n += $match_props, n.type = $type, n.updated_at = timestamp()",
             id=e["id"], type=e["type"],
@@ -90,8 +98,10 @@ def _write_graph(db, resolved: dict) -> None:
                 key_id=key_id, other_id=other_id, valid_from=r["props"]["valid_from"],
             )
         # session_id in the MERGE pattern -> one edge per session (PLAYS history etc.).
+        # Label-less endpoint MATCH: a MENTIONS/IN_SESSION edge has a :Chunk start
+        # and an :Entity end; both labels carry a unique id constraint.
         db.run(
-            f"MATCH (a:Entity {{id: $start}}), (b:Entity {{id: $end}}) "
+            f"MATCH (a {{id: $start}}), (b {{id: $end}}) "
             f"MERGE (a)-[rel:{rtype} {{session_id: $sid}}]->(b) "
             f"SET rel += $props",
             start=r["start_id"], end=r["end_id"],
@@ -123,8 +133,8 @@ _QA_QUERIES = {
         "MATCH (pc)-[:HAS_CLASS]->(cl:Entity{subtype:'Class'}) "
         "WHERE c.domain IS NOT NULL AND cl.domains IS NOT NULL "
         "AND NOT c.domain IN cl.domains RETURN count(*) AS c"),
-    "timeline_unlinked": (  # 5. Event/Roll/Decision without chunk provenance
-        "MATCH (n:Entity) WHERE n.type IN ['Event','RollEvent','Decision'] "
+    "timeline_unlinked": (  # 5. Event/Decision without chunk provenance
+        "MATCH (n:Entity) WHERE n.type IN ['Event','Decision'] "
         "AND n.evidence_chunks IS NULL RETURN count(n) AS c"),
     "orphans": (  # 6. nodes with no relationships (SRD library excluded)
         "MATCH (n:Entity) WHERE NOT (n)--() AND n.session_id <> 'SRD' "

@@ -26,13 +26,16 @@ BACKBONE_TYPES = {"Session"}
 
 def ensure_vector_index(driver) -> None:
     with driver.session() as db:
-        db.run(
-            "CREATE VECTOR INDEX entity_embedding IF NOT EXISTS "
-            "FOR (n:Entity) ON (n.embedding) "
-            "OPTIONS {indexConfig: {`vector.dimensions`: $dim, "
-            "`vector.similarity_function`: 'cosine'}}",
-            dim=EMBED_DIM,
-        )
+        # Two indexes, one per label: the :Entity skeleton and the :Chunk vector
+        # "book" (WP13.5) are separate node classes (2026 GraphRAG-standard split).
+        for name, label in (("entity_embedding", "Entity"), ("chunk_embedding", "Chunk")):
+            db.run(
+                f"CREATE VECTOR INDEX {name} IF NOT EXISTS "
+                f"FOR (n:{label}) ON (n.embedding) "
+                "OPTIONS {indexConfig: {`vector.dimensions`: $dim, "
+                "`vector.similarity_function`: 'cosine'}}",
+                dim=EMBED_DIM,
+            )
 
 
 def _entity_text(row: dict) -> str:
@@ -57,7 +60,7 @@ def embed_entities(driver, entity_ids: list[str]) -> int:
     embedder = OllamaEmbeddings(model=EMBED_MODEL)
     with driver.session() as db:
         rows = db.run(
-            "MATCH (n:Entity) WHERE n.id IN $ids AND NOT n.type IN $backbone "
+            "MATCH (n) WHERE (n:Entity OR n:Chunk) AND n.id IN $ids AND NOT n.type IN $backbone "
             "RETURN n.id AS id, n.type AS type, n.name AS name, "
             "       coalesce(n.aliases, []) AS aliases, n.description AS description, "
             "       n.summary AS summary, n.text AS text, n.character_summary AS character_summary",
@@ -69,7 +72,7 @@ def embed_entities(driver, entity_ids: list[str]) -> int:
             if not text:
                 continue
             vector = embedder.embed_query(text)
-            db.run("MATCH (n:Entity{id:$id}) SET n.embedding = $v", id=row["id"], v=vector)
+            db.run("MATCH (n{id:$id}) SET n.embedding = $v", id=row["id"], v=vector)
             n += 1
     log.info("embedded %d/%d touched entities", n, len(entity_ids))
     return n

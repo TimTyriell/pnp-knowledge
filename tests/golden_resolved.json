@@ -148,20 +148,6 @@
       }
     },
     {
-      "id": "ROLL_2025-03-26_DodoAngriffswurf",
-      "type": "RollEvent",
-      "props": {
-        "session_id": "2025-03-26",
-        "confidence": "high",
-        "name": "Dodo Angriffswurf",
-        "trait_or_action": "attack",
-        "outcome": "success_with_fear",
-        "evidence_chunks": [
-          2
-        ]
-      }
-    },
-    {
       "id": "SESS_2025-03-26",
       "type": "Session",
       "props": {
@@ -211,15 +197,6 @@
           2
         ],
         "original_predicate": "BEST_BUDDY"
-      }
-    },
-    {
-      "start_id": "CHAR_Dodo",
-      "end_id": "ROLL_2025-03-26_DodoAngriffswurf",
-      "type": "ROLLED",
-      "props": {
-        "session_id": "2025-03-26",
-        "confidence": "high"
       }
     },
     {
@@ -348,24 +325,6 @@
         "session_id": "2025-03-26",
         "confidence": "high",
         "seq": 1
-      }
-    },
-    {
-      "start_id": "ROLL_2025-03-26_DodoAngriffswurf",
-      "end_id": "SESS_2025-03-26",
-      "type": "IN_SESSION",
-      "props": {
-        "session_id": "2025-03-26",
-        "confidence": "high"
-      }
-    },
-    {
-      "start_id": "ROLL_2025-03-26_DodoAngriffswurf",
-      "end_id": "CHAR_Schleichfurz",
-      "type": "TARGETS",
-      "props": {
-        "session_id": "2025-03-26",
-        "confidence": "high"
       }
     }
   ],

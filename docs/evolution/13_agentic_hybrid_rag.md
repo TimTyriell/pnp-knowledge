@@ -51,6 +51,9 @@ output per call, not one giant graph dump.
   Chunk's raw `text` verbatim (not the composed `type|name|...` format);
   `retrieve.py` renders a Chunk seed as its source passage. This is the
   "vector = das Buch" half — previously a paper promise, not implemented.
+  **Superseded by WP14 (docs/evolution/14):** these passages were minted on the
+  `:Entity` label (45 % of live nodes, burying skeleton queries); WP14 moves
+  them to a separate `:Chunk` label + `chunk_embedding` index.
 
 WP13 turns the megachunk (a blunt char budget) into a *scene* (semantic), and
 the "one macro event per scene" from a prompt hope into a schema guarantee.
@@ -125,10 +128,11 @@ class Event(BaseModel):
 
 class EventExtraction(BaseModel):
     macro_scene_event: Event                 # was: events: list[Event]
-    roll_events: list[RollEvent] = []        # a scene may still have several rolls
+    roll_events: list[RollEvent] = []        # REMOVED in WP14 — RollEvent dropped from the graph
     decisions: list[Decision] = []
     relationships: list[Relationship] = []
 ```
+(`roll_events`/`RollEvent` were removed entirely in WP14 — see docs/evolution/14.)
 `narrative_significance_reasoning` has no default → `function_calling`/
 `json_schema` marks it required → the model must reason before it can emit the
 event ("pay to mint", WP12 mechanism, now per-scene).

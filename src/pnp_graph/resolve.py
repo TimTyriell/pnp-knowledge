@@ -90,14 +90,14 @@ def event_gate(title: str, quest_norms: set[str], player_names: list[str]) -> st
 
     Returns a drop reason, or None if the event may be minted. Prompt already
     asks for state-change events only; this catches what the model ignores:
-    meta/rules talk, roll-shaped events (RollEvent covers rolls), player names
+    meta/rules talk, roll-shaped events (a bare roll is not a macro-Event), player names
     as actors, and events duplicating a quest of the same name.
     """
     t = title.casefold()
     if any(term in t for term in META_EVENT_TERMS):
         return "meta-event (rules/deliberation talk)"
     if _ROLL_TITLE_RE.search(title):
-        return "roll-shaped event (RollEvent covers rolls)"
+        return "roll-shaped event (a bare roll is not a macro-Event)"
     if any(re.search(rf"\b{re.escape(p)}\b", title, re.IGNORECASE) for p in player_names):
         return "player name as actor"
     if normalize(title) in quest_norms:
@@ -465,6 +465,8 @@ def resolve_graph(
         register(loc.name, "Location", {"name": loc.name, "description": loc.description},
                  chunks_of("locations", loc.name))
     for item in extraction.items:
+        if not item.is_named_artifact:
+            continue  # generic loot lives in the vector store, never a node
         iid = register(item.name, "Item", {"name": item.name, "status": item.status},
                        chunks_of("items", item.name))
         if item.owner:
@@ -500,7 +502,7 @@ def resolve_graph(
             if part_id:
                 add_edge(part_id, eid, "PARTICIPATED_IN")
 
-    # --- rules, rolls, decisions (docs/evolution/05, WP5-6) ---------------
+    # --- rules, decisions (docs/evolution/05, WP5-6) ---------------------
     for ru in extraction.rule_entities:
         chunks = chunks_of("rule_entities", ru.name)
         rid = srd_index.lookup(ru.name) if srd_index else None
@@ -524,25 +526,6 @@ def resolve_graph(
                 props["evidence_chunks"] = chunks
             add_entity(rid, "RuleEntity", props)
             surface_to_id.setdefault(normalize(ru.name), rid)
-
-    for roll in extraction.roll_events:
-        rid = f"ROLL_{session_id}_{slug(roll.name)}"  # session-scoped: rolls never recur
-        chunks = chunks_of("roll_events", roll.name)
-        props = {"name": roll.name, "trait_or_action": roll.trait_or_action,
-                 "outcome": roll.outcome, "confidence": normalize_confidence(roll.confidence)}
-        if chunks:
-            props["evidence_chunks"] = chunks
-        add_entity(rid, "RollEvent", props)
-        add_edge(rid, session_node_id, "IN_SESSION")
-        surface_to_id.setdefault(normalize(roll.name), rid)
-        if roll.roller:
-            who = endpoint(roll.roller)  # GM rolls resolve to None (gm-is-world)
-            if who:
-                add_edge(who, rid, "ROLLED")
-        if roll.target:
-            tgt = endpoint(roll.target)
-            if tgt and tgt != rid:
-                add_edge(rid, tgt, "TARGETS")
 
     for dec in extraction.decisions:
         did = f"DEC_{session_id}_{slug(dec.name)}"  # session-scoped, like rolls

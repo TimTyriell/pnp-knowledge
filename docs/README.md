@@ -1,6 +1,6 @@
 # docs/ — map
 
-State of the pipeline as of 2026-07-11. For file-by-file architecture see the
+State of the pipeline as of 2026-07-12. For file-by-file architecture see the
 repo-root `CLAUDE.md` (kept current); this folder holds design docs, learnings,
 and archived history.
 
@@ -8,24 +8,27 @@ and archived history.
 
 | Folder | What | Read when |
 |---|---|---|
-| [evolution/](evolution/) | The active design spec (WP0–WP12). **Largely implemented** — see the status note in its README. Still the reference for *why* the code is shaped the way it is, and the spec for the open work packages (WP12 extraction-quality overhaul = Priority 1; WP9 bitemporal write-side). | Changing schema, resolution, vocab, retrieval, chunking. |
+| [evolution/](evolution/) | The active design spec (WP0–WP14). **Largely implemented** — see the status note in its README. Still the reference for *why* the code is shaped the way it is, and the spec for the open work packages (WP9 bitemporal write-side). Latest: WP14 (Item/Roll parsimony + `:Chunk` split). | Changing schema, resolution, vocab, retrieval, chunking. |
 | [learnings/](learnings/) | Verified results and analysis — what was measured, what worked, what was reverted and why. | Before re-attempting anything that looks "missing" (e.g. Scene nodes — tried, reverted). |
 | [archive/](archive/) | Superseded docs and old data exports. Historical context only — nothing in here describes the current system. | Almost never. |
 
 ## Current state (as-is, short)
 
-- Pipeline: `transcripts/*.json → chunking → extract (qwen3:14b, two-pass) →
-  resolve (canonical :Entity{id}) → store (Neo4j :7687) → embed (vector index)`.
-  CLI: `ingest`, `reconcile-report`, `ask`.
+- Pipeline (flagship): `transcripts/*.json → semantic scene segmentation →
+  megachunk → extract (DeepSeek, one `SceneExtraction` call/scene) → resolve
+  (canonical :Entity{id} + :Chunk passages) → store (Neo4j :7687) → embed (two
+  vector indexes)`. CLI: `ingest`, `reconcile-report`, `ask`, `summarize-entities`.
 - Canonical IDs, player/character split, closed predicate vocab, provenance on
-  every fact, SRD grounding, Decision/RollEvent, Trait aggregation, golden-file
-  regression tests, retrieval layer — all landed (WP0–WP8, WP10, WP11).
-- **Open (Priority 1): WP12** — extraction-quality overhaul. 2-session exports
-  show ~2/3 of the graph is bloat (374 single-use `Trait`s, 33 % orphan
-  `Event`s, 0 % of events carry a consequence edge). Fix is native parsimony in
-  the extraction layer (schema-forced significance, trait removal, scene-level
-  chunks) — **not** downstream pruning. Spec:
-  [evolution/12_extraction_quality_overhaul.md](evolution/12_extraction_quality_overhaul.md).
+  every fact, SRD grounding, `Decision`, golden-file regression tests, retrieval
+  layer — all landed (WP0–WP8, WP10, WP11).
+- **Landed since (WP12–WP14):** `Trait` node removed (quirks → `Character.
+  description`/`character_summary`); DeepSeek flagship profile + megachunks;
+  single-pass `SceneExtraction` with schema-forced significance ("pay to mint");
+  chunk-level vector index. **WP14 (2026-07-12):** `Item` minted only for named
+  artifacts, `RollEvent` removed entirely, and the vector "book" split onto its
+  own `:Chunk` label + index so `MATCH (n:Entity)` is a clean skeleton. Spec:
+  [evolution/14_item_roll_parsimony_and_chunk_split.md](evolution/14_item_roll_parsimony_and_chunk_split.md).
+  Schema-breaking — wipe `:7687` + re-ingest.
 - **Open: WP9** — multi-session ingest proof + bitemporal edge lifecycle on the
   write side (`valid_from`/`valid_to` stamping in `store.py`). Spec:
   [evolution/11_bitemporal_and_retrieval.md](evolution/11_bitemporal_and_retrieval.md).
