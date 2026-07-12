@@ -105,43 +105,58 @@ Inspect a run in Neo4j Browser (http://localhost:7474):
 ## Architecture (`src/pnp_graph/`)
 
 Pipeline per session, orchestrated by `ingest()` in `ingest.py`:
-`ordered_sessions → read_segments (raw) → scene_chunks (flagship: semantic
-scenes via segment_session) or pack_segments (local: char-budget chunks) →
-extract_session (one structured-output call per chunk + in-mem merge) →
-resolve_graph (canonical IDs + Chunk passages for the vector store) →
-write_session (Neo4j MERGE) → embed_entities (vector index, incl. Chunk
-raw-text embeddings)`.
+`ordered_sessions → read_segments (raw) → scene_chunks over boundaries from
+heuristic_segment (flagship default: deterministic silence-gap scenes) or
+segment_session (opt-in LLM segmenter, USE_LLM_SEGMENTER) — or pack_segments
+(local: char-budget chunks) → extract_session (one structured-output call per
+chunk + in-mem merge) → resolve_graph (canonical IDs + Chunk passages for the
+vector store) → write_session (Neo4j MERGE) → embed_entities (vector index,
+incl. Chunk raw-text embeddings)`.
 
 - **`config.py`** — every tunable: models, chunk size, Neo4j URL, and the
   **closed vocabularies**. Two extraction profiles selected by `PNP_PROFILE`
   (`local`/`flagship`, default `local`) resolve `PROVIDER`, `LLM_MODEL`,
   `CHUNK_SIZE`, `CHUNK_OVERLAP` — `local` keeps the original 4000 chars / 600
   overlap (raised from 2000 after the S01 quality analysis traced micro-event
-  inflation to small chunks); `flagship` (DeepSeek) uses ~44000 chars / 3000
-  overlap (megachunks, one whole scene per chunk). `NUM_CTX`/`REPEAT_PENALTY`/
+  inflation to small chunks); `flagship` (DeepSeek) `CHUNK_SIZE` is a 44000-char
+  **ceiling**, but scene segmentation targets the smaller `SCENE_TARGET_CHARS`
+  (~11000, ~1 chunk per scene/event) via `heuristic_segment` — packing to the
+  44k ceiling collapsed a 2h/95k-char session into ~3 giant chunks, hence ~3
+  macro-Events instead of ~9, and also tripped DeepSeek missed-tool_call Nones
+  (audit_v7pro §8 #2). `USE_LLM_SEGMENTER` (default False) swaps the heuristic
+  for the LLM segmenter. `KNOWN_WORLD_REFRESH_EVERY` (§8 #1) windows the
+  gazetteer so the DeepSeek prefix stays cacheable. `NUM_CTX`/`REPEAT_PENALTY`/
   `NUM_PREDICT` are Ollama-only; `DEEPSEEK_BASE_URL`/`DEEPSEEK_API_KEY`/
   `FLAGSHIP_MAX_TOKENS` are DeepSeek-only. Also the
   `ALLOWED_PREDICATES` + `PREDICATE_SYNONYMS` (off-vocab → `RELATES_TO`,
-  logged), `PREDICATE_DOMAINS` (domain/range per predicate),
-  `STATE_/EVENT_/IDENTITY_PREDICATES` (bitemporal classes, WP9),
-  `META_EVENT_TERMS` (event gate), `GENERIC_MOB_TERMS` (generic-mob gate),
-  `RULE_SUBTYPES`, `OOC_DENYLIST` (out-of-fiction noise like Twitch raids).
-  No tunables live elsewhere.
+  logged; `SUBQUEST_OF` = Quest→parent-arc Quest; no `APPEARS_IN` — folded into
+  `IN_SESSION`, the single provenance predicate), `PREDICATE_DOMAINS`
+  (domain/range per predicate), `STATE_/EVENT_/IDENTITY_PREDICATES` (bitemporal
+  classes, WP9), `STATE_PREDICATE_KEY` (supersede spec: only the exclusive
+  `LOCATED_IN`/`OWNED_BY` close `valid_to`; `LOCATED_IN` carries a `source_types`
+  guard so geography stays open), `META_EVENT_TERMS` (event gate),
+  `GENERIC_MOB_TERMS` (generic-mob gate), `RULE_SUBTYPES`, `OOC_DENYLIST`
+  (out-of-fiction noise like Twitch raids). No tunables live elsewhere.
 - **`chunking.py`** — input is Whisper JSON (`segments` of
   `{start, end, speaker, text}`); `.txt` siblings in `transcripts/` are
   reference only. `session_id_from_path` extracts the date (`2025-03-26`)
   used as `session_id` everywhere downstream, matching pnp-report's
-  `Session_Report_S<NN>_<date>` convention. `pack_segments` packs whole
+  `Session_Report_S<NN>_<date>` convention. `pack_segments` (local) packs whole
   speaker turns up to `CHUNK_SIZE`, preferring to cut at the **largest silence
   gap** within budget; overlap is turn-based; empty segments filtered.
-  `parse_speaker`/`session_cast` split the transcript's `Player (Character)`
-  labels — the cast drives player/character mapping and GM handling downstream.
+  `heuristic_segment` (flagship default) uses the same gap heuristic but targets
+  `SCENE_TARGET_CHARS` and returns contiguous `SceneBoundary` index ranges (no
+  overlap — `scene_chunks` slices them) so each chunk is ~one scene. `format_turn`
+  serializes a turn as `Speaker:\n  text` with **no inline timestamp** (§8 #3 —
+  removed; evidence is chunk-index, not time). `parse_speaker`/`session_cast`
+  split the transcript's `Player (Character)` labels — the cast drives
+  player/character mapping and GM handling downstream.
 - **`schema.py`** — the extraction contract, forced via structured output
   (`method="json_schema"` on Ollama, `"function_calling"` on DeepSeek — the
   latter's OpenAI-compatible endpoint doesn't support strict json_schema
   reliably): `SceneExtraction` (docs/evolution/13, WP13.6) is ONE combined
   schema covering Character / Location / Item / Quest / Faction / RuleEntity
-  / Decision / Relationship plus the single capsule
+  / Relationship (no `Decision` type — removed) plus the single capsule
   `macro_scene_event: Event` (WP13.2 — one macro event per scene chunk, with
   a required `narrative_significance_reasoning`, "pay to mint"). `Item` carries
   a required `is_named_artifact` and `Character` a required `is_named_character`
@@ -156,27 +171,35 @@ raw-text embeddings)`.
   live in `Character.description`). To change what's extracted, edit these
   models — there's no separate prompt-only knob.
 - **`extract.py`** — one structured-output call per chunk (`extract_chunk`,
-  WP13.6) with retry (`_invoke_with_retry`; persistent parse failures dump to
+  WP13.6) with retry (`_invoke_with_retry`, up to 3 attempts — DeepSeek's
+  function_calling intermittently returns None from a missed tool_call, transient
+  and retry-recoverable; only a chunk that fails every attempt dumps to
   `state/failures/<sid>/`). Cast + SRD gazetteer lines are injected into the
-  prompt. `evidence` (chunk index) is set in code, never by the model.
+  prompt; the campaign `known_world` gazetteer is refreshed only every
+  `KNOWN_WORLD_REFRESH_EVERY` chunks (`extract_session`) to keep the DeepSeek
+  prefix cacheable. `evidence` (chunk index) is set in code, never by the model.
   `merge_graphs` dedups by name/label in-memory (first occurrence wins per
-  session). `segment_session`/`build_segmenter` (WP13.1) is the separate
-  scene-boundary pre-pass, flagship-only. `SUGGESTED_PREDICATES` (sourced
-  from the Claude-authored S02 report) biases relation naming; the hard
-  vocab enforcement happens later in `resolve.py`.
+  session). `segment_session`/`build_segmenter` (WP13.1) is the LLM
+  scene-boundary pre-pass — now **opt-in** (`USE_LLM_SEGMENTER`); the default
+  flagship segmenter is deterministic `chunking.heuristic_segment`.
+  `SUGGESTED_PREDICATES` (sourced from the Claude-authored S02 report) biases
+  relation naming; the hard vocab enforcement happens later in `resolve.py`.
 - **`resolve.py`** — **the identity layer** (WP1/WP1b, the spec's gate).
   `Resolver` maps surface forms → canonical ids via `data/alias_registry.json`
   + normalization + `difflib` fuzzy match (ratio ≥ 0.9; stdlib, no
   rapidfuzz/APOC). `resolve_graph` builds the final `{entities, edges}` dict:
   player/character split with per-session `PLAYS` (GM gets only `DIRECTS`),
   PC (`CHAR_`) vs NPC (`NPC_`) id split (deterministic from the cast; `type`
-  stays `Character` for both), out-of-world filter (`OOC_DENYLIST`),
-  generic-mob gate (`is_named_character` + `is_generic_mob`/`GENERIC_MOB_TERMS`),
-  event gate (`META_EVENT_TERMS` +
-  roll-shaped titles), predicate mapping + domain checks, endpoint
-  validation — unresolvable edges are
-  **dropped and logged** (`state/failures/<sid>/dropped_edges.jsonl`), never
-  MERGE-created. With `chunk_texts` (WP13.5, docs/evolution/13), also splits
+  stays `Character` for both), single `IN_SESSION` provenance edge per entity
+  (was `APPEARS_IN` for Characters — unified, P-5), out-of-world filter
+  (`OOC_DENYLIST`), generic-mob gate (`is_named_character` +
+  `is_generic_mob`/`GENERIC_MOB_TERMS`; quest-critical unnamed NPCs opt back in
+  by setting `is_named_character`, P-3), event gate (`META_EVENT_TERMS` +
+  roll-shaped titles), PC↔PC `ALLIED_WITH` drop (party cohesion is implicit,
+  P-6), predicate mapping + domain checks, endpoint validation — unresolvable
+  edges are **dropped and logged**
+  (`state/failures/<sid>/dropped_edges.jsonl`), never MERGE-created. State edges
+  are stamped `valid_from` + `last_observed_session` (WP9). With `chunk_texts` (WP13.5, docs/evolution/13), also splits
   each chunk into passages (`chunking.split_passages`) and mints them as
   `Chunk` nodes (the `:Chunk` label, WP14) linked `IN_SESSION` + `MENTIONS` to
   every entity whose `evidence_chunks` name that scene — the "vector = das Buch"
@@ -192,7 +215,14 @@ raw-text embeddings)`.
   one driver session (per-session atomic write). `_write_graph` splits entity
   props into `create_props` (all values) vs `match_props` (drops empty
   string/list) so a cross-session re-mention with nothing new never blanks
-  out a value a prior session set (e.g. `Character.description`). `run_qa` =
+  out a value a prior session set (e.g. `Character.description`). Edges MERGE on
+  `(start, type, end)` only (**not** keyed on `session_id`) so a re-mention
+  updates the same edge instead of minting one per session; the ON CREATE / ON
+  MATCH split keeps the first `valid_from`/`evidence_chunks` while refreshing
+  `last_observed_session`. Supersede closes the prior `valid_to` per
+  `STATE_PREDICATE_KEY` (with the `source_types` geography guard); `PLAYS`
+  supersedes keyed on its `end` (Character) so a recast closes the old player.
+  `run_qa` =
   the QA queries from `docs/evolution/07` + the audit_v7pro §9 acceptance
   checks (dup names, cross-type collisions, missing provenance, orphan events,
   empty-significance events, SRD-layer edge purity, temporal closure).
@@ -225,10 +255,13 @@ raw-text embeddings)`.
 ## Tests
 
 `python -m pytest tests/` — all offline, no LLM/DB:
-- `test_chunking.py` — `pack_segments` invariants.
-- `test_extract.py` — prompt assembly, merge, event-consolidation logic (LLM stubbed).
+- `test_chunking.py` — `pack_segments` + `heuristic_segment` invariants,
+  `format_turn` has no inline timestamp.
+- `test_extract.py` — prompt assembly, merge, windowed known-world (LLM stubbed).
 - `test_resolve.py` — the resolver: aliasing, GM handling, out-of-world filter,
-  event gate, predicate mapping.
+  event gate, predicate mapping, PC↔PC `ALLIED_WITH` drop.
+- `test_store.py` — supersede keying (exclusive vs stable vs many-to-many),
+  `source_types` guard, edge MERGE without `session_id`, `PLAYS` supersede.
 - `test_golden.py` — golden-file regression (WP10): fixed extraction fixture
   through resolve, compared against `tests/golden_resolved.json`.
 - `test_retrieve.py` — embedding text + context formatting.
