@@ -6,3 +6,4 @@ state/
 .pytest_cache/
 compare/out/
 docs/data_export/**
+transcripts/**

@@ -32,6 +32,12 @@ def sanitize_predicate(predicate: str) -> str:
     return cleaned or "RELATES_TO"
 
 
+def sanitize_label(node_type: str) -> str | None:
+    """Normalize entity `type` into a safe secondary Cypher label (labels can't be parameterized)."""
+    cleaned = re.sub(r"[^A-Za-z0-9_]", "", node_type.strip())
+    return cleaned or None
+
+
 def ensure_constraints(db) -> None:
     # Retire the name-keyed constraints — they enforce the wrong key (docs/evolution/07).
     for old in ("character_name", "location_name", "faction_name"):
@@ -78,10 +84,15 @@ def _write_graph(db, resolved: dict) -> None:
                 "    n.status_valid_from = $sid",
                 id=e["id"], status=new_status, sid=props.get("session_id", ""),
             )
+        # Secondary label = type (e.g. :Entity:Character) alongside the existing
+        # `type` property — additive, lets `MATCH (n:Character)` work directly
+        # without dropping the type-agnostic `MATCH (n:Entity)` skeleton queries.
+        type_label = sanitize_label(e["type"]) if label == "Entity" else None
+        set_label = f", n:{type_label}" if type_label else ""
         db.run(
             f"MERGE (n:{label} {{id: $id}}) "
-            "ON CREATE SET n += $create_props, n.type = $type, n.created_at = timestamp() "
-            "ON MATCH  SET n += $match_props, n.type = $type, n.updated_at = timestamp()",
+            f"ON CREATE SET n += $create_props, n.type = $type, n.created_at = timestamp(){set_label} "
+            f"ON MATCH  SET n += $match_props, n.type = $type, n.updated_at = timestamp(){set_label}",
             id=e["id"], type=e["type"],
             create_props=create_props, match_props=match_props,
         )

@@ -25,12 +25,12 @@ def export_graph(uri: str, out_path: Path) -> None:
             {"id": r["id"], "labels": r["labels"],
              "props": {k: v for k, v in r["props"].items() if k != "embedding"}}
             for r in db.run(
-                "MATCH (n) RETURN elementId(n) AS id, labels(n) AS labels, properties(n) AS props")
+                "MATCH (n:Entity) RETURN elementId(n) AS id, labels(n) AS labels, properties(n) AS props")
         ]
         rels = [
             {"id": r["id"], "type": r["type"], "start": r["start"], "end": r["end"], "props": r["props"]}
             for r in db.run(
-                "MATCH (a)-[rel]->(b) RETURN elementId(rel) AS id, type(rel) AS type, "
+                "MATCH (a:Entity)-[rel]->(b:Entity) RETURN elementId(rel) AS id, type(rel) AS type, "
                 "elementId(a) AS start, elementId(b) AS end, properties(rel) AS props")
         ]
     driver.close()

@@ -74,10 +74,13 @@
       "canonical": "Esterossa",
       "aliases": []
     },
-    "CHAR_Valerie": {
-      "canonical": "Valerie",
+    "CHAR_Valeria": {
+      "canonical": "Valeria",
       "aliases": [
         "Valeria"
+      ],
+      "adjudicated_distinct": [
+        "CHAR_Valerie"
       ]
     },
     "CHAR_Rotunas": {
@@ -92,15 +95,13 @@
       "canonical": "Schleichfurz",
       "aliases": []
     },
-    "NPC_Perry": {
-      "canonical": "Perry",
-      "aliases": []
-    },
     "NPC_Leandras": {
       "canonical": "Leandras",
       "aliases": [],
       "adjudicated_distinct": [
-        "NPC_Lanra"
+        "NPC_Lanra",
+        "NPC_Lenra",
+        "NPC_Magier"
       ]
     },
     "NPC_Berthold": {
@@ -117,7 +118,11 @@
     },
     "NPC_Tindrael": {
       "canonical": "Tindrael",
-      "aliases": []
+      "aliases": [],
+      "adjudicated_distinct": [
+        "NPC_Tindra",
+        "NPC_Tendril"
+      ]
     },
     "NPC_Hubert": {
       "canonical": "Hubert",
@@ -129,7 +134,10 @@
     },
     "NPC_Elisa": {
       "canonical": "Elisa",
-      "aliases": []
+      "aliases": [],
+      "adjudicated_distinct": [
+        "NPC_Bogenschuetzin"
+      ]
     },
     "NPC_Findus": {
       "canonical": "Findus",
@@ -137,24 +145,29 @@
     },
     "NPC_Tendril": {
       "canonical": "Tendril",
-      "aliases": []
-    },
-    "NPC_Maedchen": {
-      "canonical": "Mädchen",
-      "aliases": []
+      "aliases": [],
+      "adjudicated_distinct": [
+        "NPC_Tindrael"
+      ]
     },
     "NPC_Bauer": {
       "canonical": "Bauer",
-      "aliases": [],
+      "aliases": [
+        "Die Bauern"
+      ],
       "adjudicated_distinct": [
-        "NPC_Baeuerin"
+        "NPC_Baeuerin",
+        "NPC_FamilieSchmid",
+        "NPC_Baran"
       ]
     },
     "NPC_Baeuerin": {
       "canonical": "Bäuerin",
       "aliases": [],
       "adjudicated_distinct": [
-        "NPC_Bauer"
+        "NPC_Bauer",
+        "NPC_Dame",
+        "NPC_Jaegerin"
       ]
     },
     "NPC_Schmied": {
@@ -167,13 +180,17 @@
     },
     "NPC_Phipps": {
       "canonical": "Phipps",
-      "aliases": []
+      "aliases": [],
+      "adjudicated_distinct": [
+        "NPC_Magier"
+      ]
     },
     "NPC_Lanra": {
       "canonical": "Lanra",
       "aliases": [],
       "adjudicated_distinct": [
-        "NPC_Leandras"
+        "NPC_Leandras",
+        "NPC_Lenra"
       ]
     },
     "NPC_Bertie": {
@@ -182,14 +199,306 @@
     },
     "NPC_Kind": {
       "canonical": "Das Kind",
-      "aliases": []
+      "aliases": [
+        "Mädchen"
+      ],
+      "adjudicated_distinct": [
+        "NPC_GeretteteMaedchen"
+      ]
     },
     "NPC_FamilieSchmid": {
       "canonical": "Familie Schmid",
-      "aliases": []
+      "aliases": [],
+      "adjudicated_distinct": [
+        "NPC_Bauer"
+      ]
     },
     "NPC_GeretteteMaedchen": {
       "canonical": "Das gerettete Mädchen",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "NPC_Maedchen",
+        "NPC_Kind"
+      ]
+    },
+    "NPC_Buergermeister": {
+      "canonical": "Bürgermeister",
+      "aliases": []
+    },
+    "NPC_AlterMann": {
+      "canonical": "Alter Mann",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "NPC_Hermann"
+      ]
+    },
+    "NPC_Dame": {
+      "canonical": "Dame",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "NPC_Baeuerin",
+        "NPC_Auranil"
+      ]
+    },
+    "NPC_Tindra": {
+      "canonical": "Tindra",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "NPC_Tindrael"
+      ]
+    },
+    "NPC_CookiesFrettchen": {
+      "canonical": "Cookies Frettchen",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "NPC_PerryDasSchnabeltier"
+      ]
+    },
+    "CHAR_Valerie": {
+      "canonical": "Valerie",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "CHAR_Valeria"
+      ]
+    },
+    "NPC_Lenra": {
+      "canonical": "Lenra",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "NPC_Leandras",
+        "NPC_Lanra"
+      ]
+    },
+    "NPC_Jaegerin": {
+      "canonical": "Die Jägerin",
+      "aliases": [
+        "Die Bogenschützin"
+      ],
+      "adjudicated_distinct": [
+        "NPC_Baeuerin"
+      ]
+    },
+    "NPC_AmeliaDieHeilige": {
+      "canonical": "Amelia die Heilige",
+      "aliases": []
+    },
+    "NPC_VorasDerHeilige": {
+      "canonical": "Voras der Heilige",
+      "aliases": [
+        "Voras der Schrecken"
+      ]
+    },
+    "NPC_Miaomani": {
+      "canonical": "Miaomani",
+      "aliases": [
+        "Miaumani"
+      ]
+    },
+    "NPC_Captain": {
+      "canonical": "Captain",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "NPC_KahnfuehrerLobrecht"
+      ]
+    },
+    "NPC_KahnfuehrerLobrecht": {
+      "canonical": "Kahnführer Lobrecht",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "NPC_Captain"
+      ]
+    },
+    "NPC_JeanVanour": {
+      "canonical": "Jean Vanour",
+      "aliases": [
+        "Joar Vanur"
+      ]
+    },
+    "NPC_HauptmannGorman": {
+      "canonical": "Hauptmann Gorman",
+      "aliases": []
+    },
+    "NPC_Giuseppa": {
+      "canonical": "Giuseppa",
+      "aliases": []
+    },
+    "NPC_Venezia": {
+      "canonical": "Venezia",
+      "aliases": []
+    },
+    "NPC_Adjani": {
+      "canonical": "Adjani",
+      "aliases": [
+        "Ajani"
+      ],
+      "adjudicated_distinct": [
+        "NPC_Guenther"
+      ]
+    },
+    "NPC_Hermann": {
+      "canonical": "Hermann",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "NPC_AlterMann"
+      ]
+    },
+    "NPC_AntonGrosswurz": {
+      "canonical": "Anton Großwurz",
+      "aliases": [
+        "Magier"
+      ]
+    },
+    "NPC_Baran": {
+      "canonical": "Baran",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "NPC_Bauer"
+      ]
+    },
+    "NPC_Guenther": {
+      "canonical": "Günther",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "NPC_Adjani"
+      ]
+    },
+    "NPC_Kenku": {
+      "canonical": "Der Kenku",
+      "aliases": []
+    },
+    "NPC_Gulrak": {
+      "canonical": "Gulrak",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "NPC_Gaurak"
+      ]
+    },
+    "NPC_Thoran": {
+      "canonical": "Thoran",
+      "aliases": [
+        "Toran"
+      ]
+    },
+    "NPC_Lars": {
+      "canonical": "Lars",
+      "aliases": []
+    },
+    "NPC_Jorah": {
+      "canonical": "Jorah",
+      "aliases": []
+    },
+    "NPC_Gefangene": {
+      "canonical": "Der Gefangene",
+      "aliases": []
+    },
+    "NPC_VolarisVanur": {
+      "canonical": "Volaris Vanur",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "NPC_JoarVanur"
+      ]
+    },
+    "NPC_PerryDasSchnabeltier": {
+      "canonical": "Perry das Schnabeltier",
+      "aliases": [
+        "Perry"
+      ],
+      "adjudicated_distinct": [
+        "NPC_CookiesFrettchen"
+      ]
+    },
+    "NPC_Guenda": {
+      "canonical": "Günda",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "NPC_GrueneDame"
+      ]
+    },
+    "NPC_Gaurak": {
+      "canonical": "Gaurak",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "NPC_Gulrak"
+      ]
+    },
+    "NPC_HeiligerDuran": {
+      "canonical": "Heiliger Duran",
+      "aliases": []
+    },
+    "NPC_Auranil": {
+      "canonical": "Auranil",
+      "aliases": [
+        "Die Priesterin"
+      ],
+      "adjudicated_distinct": [
+        "NPC_Dame"
+      ]
+    },
+    "NPC_Brandon": {
+      "canonical": "Brandon",
+      "aliases": []
+    },
+    "NPC_KoenigZebros": {
+      "canonical": "König Zebros",
+      "aliases": []
+    },
+    "NPC_BelorusDerStille": {
+      "canonical": "Belorus der Stille",
+      "aliases": []
+    },
+    "NPC_UntoteAnfuehrer": {
+      "canonical": "Der Untote Anführer",
+      "aliases": []
+    },
+    "NPC_Belorus": {
+      "canonical": "Belorus",
+      "aliases": []
+    },
+    "NPC_Zebros": {
+      "canonical": "Zebros",
+      "aliases": []
+    },
+    "NPC_Nox": {
+      "canonical": "Nox",
+      "aliases": [
+        "Gildenmeister"
+      ]
+    },
+    "NPC_Rodek": {
+      "canonical": "Rodek",
+      "aliases": [
+        "Rodeck"
+      ]
+    },
+    "NPC_Fischer": {
+      "canonical": "Der Fischer (Cornivum)",
+      "aliases": []
+    },
+    "NPC_Brass": {
+      "canonical": "Brass",
+      "aliases": []
+    },
+    "NPC_SchlangengottAvatar": {
+      "canonical": "Schlangengott-Avatar",
+      "aliases": []
+    },
+    "NPC_Luli": {
+      "canonical": "Luli",
+      "aliases": []
+    },
+    "NPC_GrueneDame": {
+      "canonical": "Die grüne Dame",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "NPC_Guenda"
+      ]
+    },
+    "NPC_Hexe": {
+      "canonical": "Die Hexe",
+      "aliases": []
+    },
+    "NPC_Pilz": {
+      "canonical": "Der Pilz",
       "aliases": []
     }
   },
@@ -216,18 +525,246 @@
     },
     "LOC_PhippsTurm": {
       "canonical": "Phipps' Turm",
-      "aliases": []
+      "aliases": [],
+      "adjudicated_distinct": [
+        "LOC_EisTurm"
+      ]
     },
     "LOC_AlteBurg": {
       "canonical": "die alte Burg",
-      "aliases": []
+      "aliases": [],
+      "adjudicated_distinct": [
+        "LOC_IntakteBurg",
+        "LOC_AlteTurm"
+      ]
     },
     "LOC_Wirtshaus": {
       "canonical": "Wirtshaus",
-      "aliases": []
+      "aliases": [],
+      "adjudicated_distinct": [
+        "LOC_Rathaus"
+      ]
     },
     "LOC_FamilieKraemer": {
       "canonical": "Familie Krämer",
+      "aliases": []
+    },
+    "LOC_Monsterversteck": {
+      "canonical": "Monsterversteck",
+      "aliases": []
+    },
+    "LOC_Sumpf": {
+      "canonical": "Sumpf",
+      "aliases": []
+    },
+    "LOC_Aussichtsturm": {
+      "canonical": "Aussichtsturm",
+      "aliases": []
+    },
+    "LOC_Bauernhof": {
+      "canonical": "Bauernhof",
+      "aliases": []
+    },
+    "LOC_Gildenhalle": {
+      "canonical": "Gildenhalle",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "LOC_Gildenhof"
+      ]
+    },
+    "LOC_Rathaus": {
+      "canonical": "Rathaus",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "LOC_Wirtshaus"
+      ]
+    },
+    "LOC_Gildenschiff": {
+      "canonical": "Gildenschiff",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "LOC_Gildenhof"
+      ]
+    },
+    "LOC_Sanddorninseln": {
+      "canonical": "Sanddorninseln",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "LOC_Sanddorn"
+      ]
+    },
+    "LOC_Sanddawn": {
+      "canonical": "Sanddawn",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "LOC_Sanddorn"
+      ]
+    },
+    "LOC_BuchtDerInseln": {
+      "canonical": "Bucht der Inseln",
+      "aliases": []
+    },
+    "LOC_Schiffswrack": {
+      "canonical": "Schiffswrack",
+      "aliases": []
+    },
+    "LOC_Inselruine": {
+      "canonical": "Inselruine",
+      "aliases": []
+    },
+    "LOC_Affeninsel": {
+      "canonical": "Affeninsel",
+      "aliases": []
+    },
+    "LOC_HauptinselSanddawn": {
+      "canonical": "Hauptinsel Sanddawn",
+      "aliases": []
+    },
+    "LOC_Sanddorn": {
+      "canonical": "Sanddorn",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "LOC_Sanddorninseln",
+        "LOC_Sanddawn"
+      ]
+    },
+    "LOC_Taverne": {
+      "canonical": "Taverne",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "LOC_TaverneKyla"
+      ]
+    },
+    "LOC_TaverneKyla": {
+      "canonical": "Taverne Kyla",
+      "aliases": [
+        "Taverne Keiler"
+      ],
+      "adjudicated_distinct": [
+        "LOC_Taverne"
+      ]
+    },
+    "LOC_Gefaengnis": {
+      "canonical": "Gefängnis",
+      "aliases": []
+    },
+    "LOC_SchreinDesHeiligenDuran": {
+      "canonical": "Schrein des Heiligen Duran",
+      "aliases": []
+    },
+    "LOC_Warcamp": {
+      "canonical": "Warcamp",
+      "aliases": []
+    },
+    "LOC_Kapelle": {
+      "canonical": "Kapelle",
+      "aliases": []
+    },
+    "LOC_BergeVonZebros": {
+      "canonical": "Berge von Zebros",
+      "aliases": [
+        "Tal von Zebros"
+      ]
+    },
+    "LOC_KalterJohann": {
+      "canonical": "Kalter Johann",
+      "aliases": []
+    },
+    "LOC_SchmugglerUnterschlupf": {
+      "canonical": "Schmuggler-Unterschlupf",
+      "aliases": []
+    },
+    "LOC_Ruine": {
+      "canonical": "Ruine",
+      "aliases": []
+    },
+    "LOC_EisTurm": {
+      "canonical": "Eis-Turm",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "LOC_PhippsTurm",
+        "LOC_AlteTurm"
+      ]
+    },
+    "LOC_IntakteBurg": {
+      "canonical": "Intakte Burg",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "LOC_AlteBurg"
+      ]
+    },
+    "LOC_BurgVonBelorus": {
+      "canonical": "Burg von Belorus",
+      "aliases": []
+    },
+    "LOC_Schloss": {
+      "canonical": "Das Schloss",
+      "aliases": []
+    },
+    "LOC_Gilde": {
+      "canonical": "Gilde",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "LOC_Gildenhof"
+      ]
+    },
+    "LOC_Gildenhof": {
+      "canonical": "Gildenhof",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "LOC_Gildenhalle",
+        "LOC_Gildenschiff",
+        "LOC_Gilde"
+      ]
+    },
+    "LOC_Aussenposten": {
+      "canonical": "Außenposten",
+      "aliases": []
+    },
+    "LOC_Rift": {
+      "canonical": "Rift",
+      "aliases": []
+    },
+    "LOC_Portal": {
+      "canonical": "Das Portal",
+      "aliases": []
+    },
+    "LOC_Einsiedlerdorf": {
+      "canonical": "Einsiedlerdorf",
+      "aliases": []
+    },
+    "LOC_Cornivum": {
+      "canonical": "Cornivum",
+      "aliases": []
+    },
+    "LOC_TurmImNordosten": {
+      "canonical": "Turm im Nordosten",
+      "aliases": []
+    },
+    "LOC_AlteTurm": {
+      "canonical": "Der alte Turm",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "LOC_AlteBurg",
+        "LOC_EisTurm"
+      ]
+    },
+    "LOC_AltarDerSchlangengoetter": {
+      "canonical": "Altar der Schlangengötter",
+      "aliases": [
+        "Schrein des Schlangengottes"
+      ]
+    },
+    "LOC_Turm": {
+      "canonical": "Turm",
+      "aliases": []
+    },
+    "LOC_AlteVersunkeneStadt": {
+      "canonical": "Alte versunkene Stadt",
+      "aliases": []
+    },
+    "LOC_SeelenWebsHoehle": {
+      "canonical": "Seelen-Webs-Höhle",
       "aliases": []
     }
   },
@@ -270,10 +807,152 @@
     },
     "ITEM_Schriftrollen": {
       "canonical": "Schriftrollen",
-      "aliases": []
+      "aliases": [
+        "Schriftrolle"
+      ]
     },
     "ITEM_GlowRinge": {
       "canonical": "Glow-Ringe",
+      "aliases": [
+        "Glow Rings"
+      ]
+    },
+    "ITEM_SchriftrolleBeschwoerungsformel": {
+      "canonical": "Schriftrolle: Beschwörungsformel",
+      "aliases": []
+    },
+    "ITEM_MagischerSchluessel": {
+      "canonical": "Magischer Schlüssel",
+      "aliases": []
+    },
+    "ITEM_Buch": {
+      "canonical": "Buch",
+      "aliases": []
+    },
+    "ITEM_Buechlein": {
+      "canonical": "Büchlein",
+      "aliases": []
+    },
+    "ITEM_KraehenschaedelAmulett": {
+      "canonical": "Krähenschädel-Amulett",
+      "aliases": []
+    },
+    "ITEM_MagischesAmulett": {
+      "canonical": "Magisches Amulett",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "ITEM_MagischeHalskette"
+      ]
+    },
+    "ITEM_AmulettDesHeiligenDuran": {
+      "canonical": "Amulett des Heiligen Duran",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "ITEM_MorgensternDesHeiligenDuran"
+      ]
+    },
+    "ITEM_MorgensternDesHeiligenDuran": {
+      "canonical": "Morgenstern des Heiligen Duran",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "ITEM_AmulettDesHeiligenDuran"
+      ]
+    },
+    "ITEM_WeisseKlaue": {
+      "canonical": "Weiße Klaue",
+      "aliases": []
+    },
+    "ITEM_SchattenfingerKlaue": {
+      "canonical": "Schattenfinger-Klaue",
+      "aliases": []
+    },
+    "ITEM_GoldenesAmulettMitKreuz": {
+      "canonical": "Goldenes Amulett mit Kreuz",
+      "aliases": []
+    },
+    "ITEM_AlteBibel": {
+      "canonical": "Alte Bibel",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "ITEM_AlteTafel"
+      ]
+    },
+    "ITEM_SchutzzauberKristall": {
+      "canonical": "Schutzzauber-Kristall",
+      "aliases": []
+    },
+    "ITEM_AlteTafel": {
+      "canonical": "Alte Tafel",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "ITEM_AlteBibel"
+      ]
+    },
+    "ITEM_Notizbuch": {
+      "canonical": "Notizbuch",
+      "aliases": []
+    },
+    "ITEM_HeiligePfeile": {
+      "canonical": "Heilige Pfeile",
+      "aliases": []
+    },
+    "ITEM_BuchDesBelorus": {
+      "canonical": "Buch des Belorus",
+      "aliases": []
+    },
+    "ITEM_DevouringDagger": {
+      "canonical": "Devouring Dagger",
+      "aliases": []
+    },
+    "ITEM_Vulkanpflanze": {
+      "canonical": "Vulkanpflanze",
+      "aliases": []
+    },
+    "ITEM_Glamourstone": {
+      "canonical": "Glamourstone",
+      "aliases": []
+    },
+    "ITEM_ArcanePrisma": {
+      "canonical": "Arcane Prisma",
+      "aliases": []
+    },
+    "ITEM_ArcaneCloak": {
+      "canonical": "Arcane Cloak",
+      "aliases": []
+    },
+    "ITEM_EnderChest": {
+      "canonical": "Ender-Chest",
+      "aliases": []
+    },
+    "ITEM_MagischeHalskette": {
+      "canonical": "Magische Halskette",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "ITEM_MagischesAmulett"
+      ]
+    },
+    "ITEM_ImprovedArcaneGauntlets": {
+      "canonical": "Improved Arcane Gauntlets",
+      "aliases": []
+    },
+    "ITEM_FangzahnAmulett": {
+      "canonical": "Fangzahn-Amulett",
+      "aliases": []
+    },
+    "ITEM_Grauenwurz": {
+      "canonical": "Grauenwurz",
+      "aliases": []
+    },
+    "ITEM_AltesDokumentMitSiegel": {
+      "canonical": "Altes Dokument mit Siegel",
+      "aliases": []
+    },
+    "ITEM_Seelenstein": {
+      "canonical": "Seelenstein",
+      "aliases": []
+    },
+    "ITEM_SchwarzerPalantir": {
+      "canonical": "Schwarzer Palantir",
       "aliases": []
     }
   },
@@ -287,6 +966,94 @@
       "aliases": [
         "Dorf Breschka verteidigen"
       ]
+    },
+    "QUEST_Monsterjagd": {
+      "canonical": "Monsterjagd",
+      "aliases": []
+    },
+    "QUEST_BuergermeisterBertholdFinden": {
+      "canonical": "Bürgermeister Berthold finden",
+      "aliases": []
+    },
+    "QUEST_BarrikadenBauen": {
+      "canonical": "Barrikaden bauen",
+      "aliases": []
+    },
+    "QUEST_FalleFuerDieGoblinsVorbereiten": {
+      "canonical": "Falle für die Goblins vorbereiten",
+      "aliases": []
+    },
+    "QUEST_KryptaReinigen": {
+      "canonical": "Krypta reinigen",
+      "aliases": []
+    },
+    "QUEST_PhippsRetten": {
+      "canonical": "Phipps retten",
+      "aliases": []
+    },
+    "QUEST_SanddorninselnErkunden": {
+      "canonical": "Sanddorninseln erkunden",
+      "aliases": []
+    },
+    "QUEST_JeanVanourFinden": {
+      "canonical": "Jean Vanour finden",
+      "aliases": [
+        "Joar Vanur finden"
+      ]
+    },
+    "QUEST_InformationenUeberDenDiebstahlSammeln": {
+      "canonical": "Informationen über den Diebstahl sammeln",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "QUEST_InformationenFuerDieGildeSammeln"
+      ]
+    },
+    "QUEST_KenkuVerhoeren": {
+      "canonical": "Kenku verhören",
+      "aliases": []
+    },
+    "QUEST_BaranBefragen": {
+      "canonical": "Baran befragen",
+      "aliases": []
+    },
+    "QUEST_GeheimnisDerKircheErgruenden": {
+      "canonical": "Das Geheimnis der Kirche ergründen",
+      "aliases": []
+    },
+    "QUEST_GoblinGoetter": {
+      "canonical": "Goblin-Götter",
+      "aliases": []
+    },
+    "QUEST_WarcampAuskundschaften": {
+      "canonical": "Warcamp auskundschaften",
+      "aliases": []
+    },
+    "QUEST_UntoteInDenBergenVonZebrosUntersuchen": {
+      "canonical": "Untote in den Bergen von Zebros untersuchen",
+      "aliases": []
+    },
+    "QUEST_UntoteBeseitigen": {
+      "canonical": "Untote beseitigen",
+      "aliases": []
+    },
+    "QUEST_TalVonZebrosUeberleben": {
+      "canonical": "Tal von Zebros überleben",
+      "aliases": []
+    },
+    "QUEST_InformationenFuerDieGildeSammeln": {
+      "canonical": "Informationen für die Gilde sammeln",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "QUEST_InformationenUeberDenDiebstahlSammeln"
+      ]
+    },
+    "QUEST_MagischeKonstrukteImSumpfUntersuchen": {
+      "canonical": "Magische Konstrukte im Sumpf untersuchen",
+      "aliases": []
+    },
+    "QUEST_HerausfindenWasDieHexeWill": {
+      "canonical": "Herausfinden, was die Hexe will",
+      "aliases": []
     }
   },
   "factions": {
@@ -296,11 +1063,53 @@
     },
     "FACTION_GoblinGoetter": {
       "canonical": "Goblin-Götter",
-      "aliases": []
+      "aliases": [],
+      "adjudicated_distinct": [
+        "FACTION_AltenGoetter"
+      ]
     },
     "FACTION_Gilde": {
       "canonical": "die Gilde",
       "aliases": []
+    },
+    "FACTION_MagischesKollektiv": {
+      "canonical": "Magisches Kollektiv",
+      "aliases": []
+    },
+    "FACTION_Schattenfinger": {
+      "canonical": "Schattenfinger",
+      "aliases": []
+    },
+    "FACTION_WarcampSoldaten": {
+      "canonical": "Warcamp-Soldaten",
+      "aliases": []
+    },
+    "FACTION_Heck": {
+      "canonical": "Heck",
+      "aliases": []
+    },
+    "FACTION_Stress": {
+      "canonical": "Stress",
+      "aliases": []
+    },
+    "FACTION_Hope": {
+      "canonical": "Hope",
+      "aliases": []
+    },
+    "FACTION_Evasion": {
+      "canonical": "Evasion",
+      "aliases": []
+    },
+    "FACTION_Strength": {
+      "canonical": "Strength",
+      "aliases": []
+    },
+    "FACTION_AltenGoetter": {
+      "canonical": "Die alten Götter",
+      "aliases": [],
+      "adjudicated_distinct": [
+        "FACTION_GoblinGoetter"
+      ]
     }
   },
   "rules": {}
