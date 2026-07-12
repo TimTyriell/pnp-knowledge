@@ -9,7 +9,7 @@ import json
 import re
 from pathlib import Path
 
-from .config import CHUNK_OVERLAP, CHUNK_SIZE, PASSAGE_OVERLAP, PASSAGE_SIZE
+from .config import CHUNK_OVERLAP, CHUNK_SIZE, PASSAGE_OVERLAP, PASSAGE_SIZE, SCENE_TARGET_CHARS
 
 _DATE_RE = re.compile(r"(\d{4}-\d{2}-\d{2})")
 _SPEAKER_RE = re.compile(r"^\s*(?P<player>[^()]+?)\s*\(\s*(?P<character>[^()]+?)\s*\)\s*$")
@@ -111,11 +111,15 @@ def heuristic_segment(segments: list[dict], target_size: int | None = None) -> l
     second full-transcript pass to DeepSeek just for scene boundaries — the same
     gap heuristic pack_segments uses, but returns contiguous SceneBoundary index
     ranges (each segment covered exactly once, no overlap — scene_chunks slices
-    them) instead of joined text. Coarse boundaries are acceptable here."""
+    them) instead of joined text. Coarse boundaries are acceptable here.
+
+    Targets SCENE_TARGET_CHARS (~1 chunk per scene/event), NOT the CHUNK_SIZE
+    megachunk ceiling — packing to 44000 collapses a 2h session into ~3 giant
+    chunks and, since each chunk yields one macro Event, into ~3 events."""
     from .schema import SceneBoundary
     if not segments:
         return []
-    target = target_size or CHUNK_SIZE
+    target = target_size or SCENE_TARGET_CHARS
     turns = [format_turn(s) for s in segments]
     n = len(segments)
     boundaries: list = []

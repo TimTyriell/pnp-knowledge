@@ -49,6 +49,17 @@ LLM_MODEL = _profile["LLM_MODEL"]
 CHUNK_SIZE = _profile["CHUNK_SIZE"]
 CHUNK_OVERLAP = _profile["CHUNK_OVERLAP"]
 
+# Target scene size for the deterministic segmenter (chunking.heuristic_segment,
+# §8 #2). NOT the CHUNK_SIZE megachunk ceiling (44000) — that greedy budget
+# packs a whole ~2h/95k-char session into ~3 giant chunks, and since each chunk
+# yields exactly ONE macro Event that collapses the session to ~3 events (far
+# too coarse; audit wants ~9/session, matching what the old LLM segmenter cut).
+# Sized so a session splits into ~1 chunk per scene/event (~95k chars / ~11k ≈
+# 9 scenes), cutting at the largest silence gaps. Smaller chunks also keep the
+# DeepSeek function-calling tool-call reliable (the 44k chunk deterministically
+# returned None — a missed tool_call on the big compound schema, not a timeout).
+SCENE_TARGET_CHARS = 11000
+
 EMBED_MODEL = "nomic-embed-text"  # docs/evolution/11, WP11 — always local regardless of PROFILE
 EMBED_DIM = 768
 
@@ -150,9 +161,10 @@ PREDICATE_SYNONYMS = {
 # Bitemporal edge classification (docs/evolution/11, WP9) — every predicate is
 # exactly one of these three. Unclassified (incl. RELATES_TO and any
 # off-vocab predicate) gets no valid_from/valid_to lifecycle: see
-# resolve.predicate_class(). PLAYS is a state predicate conceptually but is
-# EXEMPT from the generic lifecycle mechanics — its own per-session edge
-# (docs/evolution/09) already is its history. OWNS was folded into OWNED_BY
+# resolve.predicate_class(). PLAYS gets the same lifecycle stamping as any
+# other state predicate — edges now collapse to one per (start, type, end)
+# pair (store.py), so "which session" lives on `last_observed_session`/`seq`
+# rather than on a separate edge per session. OWNS was folded into OWNED_BY
 # (the only ownership direction written now — resolve.py swaps endpoints for
 # any model output still using OWNS) so the two didn't need independent
 # supersede handling for the same fact.
@@ -165,7 +177,6 @@ EVENT_PREDICATES = {
     "TARGETS", "IN_SESSION",
 }
 IDENTITY_PREDICATES = {"FAMILY_OF", "HAS_ANCESTRY", "HAS_COMMUNITY"}
-STATE_PREDICATES_WITH_LIFECYCLE = STATE_PREDICATES - {"PLAYS"}
 
 # Cardinality-one side per state predicate, used to auto-supersede (WP9): the
 # endpoint that can only hold one *current* value at a time. Fact superseded
@@ -178,6 +189,9 @@ STATE_PREDICATES_WITH_LIFECYCLE = STATE_PREDICATES - {"PLAYS"}
 # `source_types` (optional) restricts the supersede to those start-node types:
 # LOCATED_IN is exclusive only for Character/Item POSITIONS — Location->Location
 # (geography) and Faction->Location are stable and must never close.
+# PLAYS keys on "end" (the Character): a Character has exactly one current
+# player, though a player may play several Characters over the campaign — a
+# recast closes the prior PLAYS edge instead of leaving two open.
 # Deliberately NOT keyed (audit): AT_LOCATION / HAS_CLASS / HAS_SUBCLASS are
 # STABLE (an event's place and a character's class don't move) — valid_from
 # only; MEMBER_OF / ALLIED_WITH / HOSTILE_TO / TRUSTS / KNOWS / FEARS /
@@ -185,6 +199,7 @@ STATE_PREDICATES_WITH_LIFECYCLE = STATE_PREDICATES - {"PLAYS"}
 STATE_PREDICATE_KEY = {
     "LOCATED_IN": {"side": "start", "source_types": {"Character", "Item"}},
     "OWNED_BY": {"side": "start"},
+    "PLAYS": {"side": "end"},
 }
 
 # Domain/range per predicate (docs/evolution/KG_Qualitaetsanalyse_S01, fix B):

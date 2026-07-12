@@ -119,10 +119,10 @@ def test_heuristic_segment_covers_all_contiguously():
     assert bounds[-1].end_segment == len(segs) - 1
     for prev, nxt in zip(bounds, bounds[1:]):
         assert nxt.start_segment == prev.end_segment + 1  # contiguous, no gap/overlap
-    # each scene fits the char budget
+    # each scene fits the scene-target budget (not the CHUNK_SIZE ceiling)
     for b in bounds:
         size = sum(len(format_turn(s)) for s in segs[b.start_segment:b.end_segment + 1])
-        assert size <= config.CHUNK_SIZE or b.start_segment == b.end_segment
+        assert size <= config.SCENE_TARGET_CHARS or b.start_segment == b.end_segment
 
 
 def test_scene_chunks_clamps_out_of_range_and_falls_back():

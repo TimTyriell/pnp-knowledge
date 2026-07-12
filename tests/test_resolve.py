@@ -578,7 +578,7 @@ def test_predicate_class():
     assert predicate_class("KILLED") == "event"
     assert predicate_class("FAMILY_OF") == "identity"
     assert predicate_class("RELATES_TO") is None
-    assert predicate_class("PLAYS") is None  # exempt: own per-session history already
+    assert predicate_class("PLAYS") == "state"  # collapses like any other state edge now
 
 
 if __name__ == "__main__":

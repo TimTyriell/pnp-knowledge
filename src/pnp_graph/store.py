@@ -118,15 +118,23 @@ def _write_graph(db, resolved: dict) -> None:
                 "SET old.valid_to = $valid_from",
                 **kwargs,
             )
-        # session_id in the MERGE pattern -> one edge per session (PLAYS history etc.).
+        # Merge on (start, type, end) only -> a re-mention in a later session
+        # updates the SAME edge instead of minting a duplicate. ON MATCH must
+        # not clobber the first session's valid_from, nor its evidence_chunks
+        # (chunk indices aren't comparable across sessions, so no union is
+        # attempted here — Chunk-level MENTIONS edges carry full provenance).
         # Label-less endpoint MATCH: a MENTIONS/IN_SESSION edge has a :Chunk start
         # and an :Entity end; both labels carry a unique id constraint.
+        create_props = r["props"]
+        match_props = {k: v for k, v in create_props.items()
+                       if k not in ("valid_from", "evidence_chunks")}
         db.run(
             f"MATCH (a {{id: $start}}), (b {{id: $end}}) "
-            f"MERGE (a)-[rel:{rtype} {{session_id: $sid}}]->(b) "
-            f"SET rel += $props",
+            f"MERGE (a)-[rel:{rtype}]->(b) "
+            "ON CREATE SET rel += $create_props "
+            "ON MATCH  SET rel += $match_props",
             start=r["start_id"], end=r["end_id"],
-            sid=r["props"]["session_id"], props=r["props"],
+            create_props=create_props, match_props=match_props,
         )
 
 

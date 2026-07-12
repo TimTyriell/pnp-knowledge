@@ -249,7 +249,9 @@
       "props": {
         "session_id": "2025-03-26",
         "confidence": "high",
-        "seq": 1
+        "seq": 1,
+        "valid_from": 1,
+        "last_observed_session": 1
       }
     },
     {
@@ -268,7 +270,9 @@
       "props": {
         "session_id": "2025-03-26",
         "confidence": "high",
-        "seq": 1
+        "seq": 1,
+        "valid_from": 1,
+        "last_observed_session": 1
       }
     },
     {
@@ -278,7 +282,9 @@
       "props": {
         "session_id": "2025-03-26",
         "confidence": "high",
-        "seq": 1
+        "seq": 1,
+        "valid_from": 1,
+        "last_observed_session": 1
       }
     }
   ],

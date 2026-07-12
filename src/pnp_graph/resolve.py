@@ -36,7 +36,7 @@ from .config import (
     PREDICATE_DOMAINS,
     PREDICATE_SYNONYMS,
     STATE_DIR,
-    STATE_PREDICATES_WITH_LIFECYCLE,
+    STATE_PREDICATES,
 )
 from .chunking import split_passages
 from .schema import GraphExtraction
@@ -385,7 +385,7 @@ def predicate_class(predicate: str) -> str | None:
 
     None (incl. RELATES_TO, off-vocab) gets no valid_from/valid_to.
     """
-    if predicate in STATE_PREDICATES_WITH_LIFECYCLE:
+    if predicate in STATE_PREDICATES:
         return "state"
     if predicate in EVENT_PREDICATES:
         return "event"

@@ -179,6 +179,18 @@
     "NPC_Bertie": {
       "canonical": "Bertie",
       "aliases": []
+    },
+    "NPC_Kind": {
+      "canonical": "Das Kind",
+      "aliases": []
+    },
+    "NPC_FamilieSchmid": {
+      "canonical": "Familie Schmid",
+      "aliases": []
+    },
+    "NPC_GeretteteMaedchen": {
+      "canonical": "Das gerettete Mädchen",
+      "aliases": []
     }
   },
   "locations": {
@@ -208,6 +220,14 @@
     },
     "LOC_AlteBurg": {
       "canonical": "die alte Burg",
+      "aliases": []
+    },
+    "LOC_Wirtshaus": {
+      "canonical": "Wirtshaus",
+      "aliases": []
+    },
+    "LOC_FamilieKraemer": {
+      "canonical": "Familie Krämer",
       "aliases": []
     }
   },
@@ -261,6 +281,12 @@
     "QUEST_GoblinArmeePlattMachen": {
       "canonical": "Goblin-Armee platt machen",
       "aliases": []
+    },
+    "QUEST_BreschkaVerteidigen": {
+      "canonical": "Breschka verteidigen",
+      "aliases": [
+        "Dorf Breschka verteidigen"
+      ]
     }
   },
   "factions": {

@@ -118,6 +118,43 @@ def test_pending_notes_appended_via_coalesce_not_overwritten():
     assert notes_params == {"id": "CHAR_Monster", "notes": ["misstraut Fremden"]}
 
 
+def test_edge_write_merges_without_session_id_and_splits_props():
+    # A re-mention across sessions must update the SAME edge, not mint a new
+    # one -> session_id must not be part of the MERGE pattern. valid_from and
+    # evidence_chunks belong only in create_props (first observation); a later
+    # ON MATCH must not overwrite them.
+    db = _FakeDB()
+    edge = {"start_id": "CHAR_Cookie", "end_id": "RULE_Ranger", "type": "HAS_CLASS",
+            "props": {"session_id": "2025-04-01", "confidence": "high",
+                      "valid_from": 2, "last_observed_session": 2,
+                      "evidence_chunks": [1]}}
+    _write_graph(db, _resolved([edge]))
+    (query, params), = [c for c in db.calls if "MERGE (a" in c[0]]
+    assert "session_id" not in query
+    assert "MERGE (a)-[rel:HAS_CLASS]->(b)" in query
+    assert params["create_props"] == edge["props"]
+    assert "valid_from" not in params["match_props"]
+    assert "evidence_chunks" not in params["match_props"]
+    assert params["match_props"]["last_observed_session"] == 2
+    assert params["match_props"]["session_id"] == "2025-04-01"
+
+
+def test_supersede_fires_for_plays():
+    # PLAYS keys on 'end' (the Character): a recast closes the prior player's
+    # edge instead of leaving two open "current player" edges.
+    db = _FakeDB()
+    edge = {"start_id": "PLAYER_Marco", "end_id": "CHAR_Dodo", "type": "PLAYS",
+            "props": {"session_id": "2025-04-01", "confidence": "high",
+                      "valid_from": 2, "last_observed_session": 2, "seq": 2}}
+    _write_graph(db, _resolved([edge]))
+    supersede_calls = [c for c in db.calls if "old.valid_to" in c[0]]
+    assert len(supersede_calls) == 1
+    query, params = supersede_calls[0]
+    assert "(o:Entity)-[old:PLAYS]->(k:Entity {id: $key_id})" in query
+    assert params["key_id"] == "CHAR_Dodo"
+    assert params["other_id"] == "PLAYER_Marco"
+
+
 def test_no_pending_notes_query_when_notes_empty():
     db = _FakeDB()
     entity = {"id": "CHAR_Monster", "type": "Character",
