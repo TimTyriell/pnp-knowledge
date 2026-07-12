@@ -50,6 +50,13 @@ CHUNK_OVERLAP = _profile["CHUNK_OVERLAP"]
 EMBED_MODEL = "nomic-embed-text"  # docs/evolution/11, WP11 — always local regardless of PROFILE
 EMBED_DIM = 768
 
+# WP13.4 — GraphRAG-style entity summarization: rewriting a short bio from a
+# few notes is a prose task, not structured extraction, so it doesn't need
+# the flagship model — always local Ollama regardless of PROFILE (same
+# reasoning as EMBED_MODEL), run as a separate step after ingest, not the
+# per-scene hot path.
+SUMMARIZER_MODEL = "qwen3:14b"
+
 # WP13.5 — chunk-level vector index ("vector = das Buch"): extraction chunks
 # (up to CHUNK_SIZE=44000 chars on flagship) are far too coarse a unit to
 # embed directly — one vector over an entire scene is nearly useless for

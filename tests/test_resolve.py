@@ -255,13 +255,57 @@ def test_chunk_passages_minted_and_linked_via_mentions():
     assert ("CHUNK_2025-03-26_001_01", "MENTIONS", "CHAR_Monster") in edges
 
 
-def test_no_chunk_passages_without_chunks_arg():
-    # backward compatible: omitting `chunks` (existing callers/tests) mints nothing.
+def test_no_chunk_passages_without_chunk_texts_arg():
+    # backward compatible: omitting `chunk_texts` (existing callers/tests) mints nothing.
     resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
     r = _tmp_resolver()
     info = _cast_info(r)
     resolved = resolve_graph(r, GraphExtraction(), "2025-03-26", info, seq=1)
     assert not any(e["type"] == "Chunk" for e in resolved["entities"])
+
+
+def test_character_description_becomes_pending_notes_not_description():
+    # WP13.4: raw per-scene notes never land straight on `description` — they
+    # accumulate in `pending_notes` until cli summarize-entities folds them.
+    resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
+    r = _tmp_resolver()
+    info = _cast_info(r)
+    extraction = GraphExtraction(
+        characters=[Character(name="Lindo Laut", role="PC", description="spielt oft Musik")],
+    )
+    resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1)
+    char = next(e for e in resolved["entities"] if e["id"] == "CHAR_LindoLaut")
+    assert char["props"]["pending_notes"] == ["spielt oft Musik"]
+    assert "description" not in char["props"]
+
+
+def test_pending_notes_accumulate_within_session_for_aliased_mentions():
+    # 'Lindo Laut' and 'Lindo' (a seeded alias) resolve to the same character —
+    # a note attached to either surface form must not shadow the other's.
+    resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
+    r = _tmp_resolver()
+    info = _cast_info(r)
+    extraction = GraphExtraction(
+        characters=[
+            Character(name="Lindo Laut", role="PC", description="spielt oft Musik"),
+            Character(name="Lindo", role="PC", description="misstraut Fremden"),
+        ],
+    )
+    resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1)
+    char = next(e for e in resolved["entities"] if e["id"] == "CHAR_LindoLaut")
+    assert char["props"]["pending_notes"] == ["spielt oft Musik", "misstraut Fremden"]
+
+
+def test_no_pending_notes_when_no_description():
+    # matches the aliases/evidence_chunks precedent: an empty list is never
+    # written as a key at all, not stored as `[]`.
+    resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
+    r = _tmp_resolver()
+    info = _cast_info(r)
+    extraction = GraphExtraction(characters=[Character(name="Lindo Laut", role="PC")])
+    resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1)
+    char = next(e for e in resolved["entities"] if e["id"] == "CHAR_LindoLaut")
+    assert char["props"].get("pending_notes", []) == []
 
 
 def test_gm_is_world():

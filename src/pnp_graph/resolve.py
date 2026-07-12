@@ -316,7 +316,7 @@ def resolve_graph(
     off_vocab: list[str] = []
 
     def add_entity(eid: str, type_: str, props: dict) -> None:
-        if eid in entities:  # first occurrence wins; aliases + evidence union
+        if eid in entities:  # first occurrence wins; aliases/evidence/notes union
             old = entities[eid]["props"]
             aliases = sorted(set(old.get("aliases", [])) | set(props.get("aliases", [])))
             if aliases:
@@ -324,6 +324,13 @@ def resolve_graph(
             chunks = sorted(set(old.get("evidence_chunks", [])) | set(props.get("evidence_chunks", [])))
             if chunks:
                 old["evidence_chunks"] = chunks
+            # pending_notes (WP13.4): a Character re-mentioned in a later chunk
+            # THIS session must not lose an earlier chunk's note — order-preserving
+            # dedup, not a set (the summarizer reads these as prose, order matters).
+            notes = old.get("pending_notes", []) + [
+                n for n in props.get("pending_notes", []) if n not in old.get("pending_notes", [])]
+            if notes:
+                old["pending_notes"] = notes
         else:
             entities[eid] = {"id": eid, "type": type_,
                              "props": {"session_id": session_id, "confidence": "medium", **props}}
@@ -387,8 +394,18 @@ def resolve_graph(
         prior = surface_to_id.get(normalize(surface))
         prior = reroute.get(prior, prior)  # player surfaces land on their character
         if prior and prior in entities:
+            # Pass the FULL props through (not just evidence_chunks): a cast
+            # member (pre-registered in resolve_graph's cast bootstrap, bare
+            # name/role/is_pc only) always hits this branch on every mention,
+            # so this is the only path a PC's aliases/pending_notes ever reach
+            # add_entity's merge — narrowing to evidence_chunks silently
+            # dropped them for every PC, every session (caught via WP13.4's
+            # pending_notes KeyError; likely dropped `description` the same
+            # way before that).
+            extra = dict(props)
             if chunks:
-                add_entity(prior, entities[prior]["type"], {"evidence_chunks": chunks})
+                extra["evidence_chunks"] = chunks
+            add_entity(prior, entities[prior]["type"], extra)
             return prior
         eid = resolver.resolve(surface, type_)
         if eid.startswith("PLAYER_"):  # model coined a player's name as an entity
@@ -430,7 +447,15 @@ def resolve_graph(
                             "object": session_node_id, "reason": "gm-is-world"})
             continue
         cid = register(c.name, "Character", {
-            "name": c.name, "aliases": c.aliases, "description": c.description,
+            "name": c.name, "aliases": c.aliases,
+            # WP13.4: a raw per-scene note, never written straight to
+            # `description` — pending_notes accumulates across sessions
+            # (store.py) until `cli summarize-entities` folds it into one
+            # cohesive `character_summary` and clears it. Prevents a later
+            # session's note from silently replacing an earlier one (Item 1
+            # only stopped an EMPTY note from blanking the summary, not a
+            # non-empty one from overwriting it).
+            "pending_notes": [c.description] if c.description else [],
             "is_pc": c.role.upper() == "PC", "role": c.role or "NPC",
         }, chunks_of("characters", c.name))
         if cid in gm_pids:  # registry resolved a GM alias to the GM player

@@ -2,11 +2,13 @@
 
 Re-embeds only the entities touched by the current ingest — the whole point
 of keying on session writes rather than a periodic full re-embed. Text per
-entity: type + name + aliases + latest description/summary — a Character's
-recurring personality/quirks live in their description (macro-graph
-philosophy: no separate Trait nodes, see docs/evolution). `Chunk` nodes
-(WP13.5, docs/evolution/13) are the exception — their raw passage text is
-embedded verbatim, the "vector = das Buch" half of the macro-graph split.
+entity: type + name + aliases + latest description/summary. Two exceptions:
+a Character's recurring personality/quirks live in `character_summary`
+(WP13.4, docs/evolution/13 — an LLM-rewritten bio, not raw per-session text;
+`cli summarize-entities` maintains it, never ingest directly) rather than
+`description` (macro-graph philosophy: no separate Trait nodes). `Chunk`
+nodes (WP13.5) embed their raw passage `text` verbatim — the "vector = das
+Buch" half of the macro-graph split.
 """
 
 import logging
@@ -37,7 +39,10 @@ def _entity_text(row: dict) -> str:
     if row.get("type") == "Chunk":  # WP13.5: embed the raw passage verbatim, no composing
         return row.get("text") or ""
     parts = [row.get("type") or "", row.get("name") or "", *(row.get("aliases") or [])]
-    if row.get("description"):
+    if row.get("type") == "Character":
+        if row.get("character_summary"):  # WP13.4: LLM-maintained bio, not raw description
+            parts.append(row["character_summary"])
+    elif row.get("description"):
         parts.append(row["description"])
     if row.get("summary"):
         parts.append(row["summary"])
@@ -55,7 +60,7 @@ def embed_entities(driver, entity_ids: list[str]) -> int:
             "MATCH (n:Entity) WHERE n.id IN $ids AND NOT n.type IN $backbone "
             "RETURN n.id AS id, n.type AS type, n.name AS name, "
             "       coalesce(n.aliases, []) AS aliases, n.description AS description, "
-            "       n.summary AS summary, n.text AS text",
+            "       n.summary AS summary, n.text AS text, n.character_summary AS character_summary",
             ids=entity_ids, backbone=list(BACKBONE_TYPES),
         ).data()
         n = 0

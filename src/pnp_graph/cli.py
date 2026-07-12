@@ -31,6 +31,9 @@ def main() -> None:
     p_ask.add_argument("--as-of", type=int, default=None,
                        help="answer as of this session seq instead of the current state")
 
+    sub.add_parser("summarize-entities",
+                   help="fold accumulated Character notes into character_summary + re-embed (WP13.4)")
+
     args = parser.parse_args()
     if args.cmd == "ingest":
         from pathlib import Path
@@ -44,6 +47,15 @@ def main() -> None:
         driver = connect()
         try:
             print(ask(driver, args.question, k=args.k, as_of_session=args.as_of))
+        finally:
+            driver.close()
+    elif args.cmd == "summarize-entities":
+        from .store import connect
+        from .summarize import summarize_entities
+        driver = connect()
+        try:
+            n = summarize_entities(driver)
+            print(f"Summarized {n} character(s).")
         finally:
             driver.close()
 

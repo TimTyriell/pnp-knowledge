@@ -16,15 +16,32 @@ from pnp_graph.retrieve import _format_context
 
 
 def test_entity_text_includes_description():
-    row = {"type": "Character", "name": "Lindo Laut", "aliases": ["Lindo"],
-           "description": "Spielt oft Musik", "summary": None}
+    row = {"type": "Location", "name": "Wald", "aliases": [],
+           "description": "Dunkler Wald", "summary": None}
     text = _entity_text(row)
-    assert text == "Character | Lindo Laut | Lindo | Spielt oft Musik"
+    assert text == "Location | Wald | Dunkler Wald"
 
 
 def test_entity_text_skips_empty_fields():
     row = {"type": "Location", "name": "Wald", "aliases": [], "description": "", "summary": None}
     assert _entity_text(row) == "Location | Wald"
+
+
+def test_entity_text_character_uses_character_summary_not_description():
+    # WP13.4: a Character's raw `description` (never written by ingest anymore,
+    # see resolve.py's pending_notes) is ignored; only the LLM-maintained
+    # character_summary (cli summarize-entities) is embedded.
+    row = {"type": "Character", "name": "Lindo Laut", "aliases": ["Lindo"],
+           "description": "sollte nie hier ankommen", "summary": None,
+           "character_summary": "Spielt oft Musik und misstraut Fremden."}
+    text = _entity_text(row)
+    assert text == "Character | Lindo Laut | Lindo | Spielt oft Musik und misstraut Fremden."
+
+
+def test_entity_text_character_without_summary_yet():
+    row = {"type": "Character", "name": "Lindo Laut", "aliases": [],
+           "description": "", "summary": None, "character_summary": None}
+    assert _entity_text(row) == "Character | Lindo Laut"
 
 
 def test_entity_text_embeds_chunk_raw_text_verbatim():

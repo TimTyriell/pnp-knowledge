@@ -86,6 +86,30 @@ def test_entity_write_keeps_non_empty_values_in_match_props():
     assert params["match_props"]["aliases"] == ["Monsterchen"]
 
 
+def test_pending_notes_appended_via_coalesce_not_overwritten():
+    # WP13.4: pending_notes must accumulate across sessions (coalesce + concat),
+    # never go through the blind n += props path like other properties.
+    db = _FakeDB()
+    entity = {"id": "CHAR_Monster", "type": "Character",
+              "props": {"session_id": "2025-04-01", "confidence": "medium",
+                        "pending_notes": ["misstraut Fremden"]}}
+    _write_graph(db, _resolved(entities=[entity]))
+    (merge_query, merge_params), = [c for c in db.calls if "MERGE (n:Entity" in c[0]]
+    assert "pending_notes" not in merge_params["create_props"]
+    assert "pending_notes" not in merge_params["match_props"]
+    (notes_query, notes_params), = [c for c in db.calls if "pending_notes" in c[0]]
+    assert "coalesce(n.pending_notes, [])" in notes_query
+    assert notes_params == {"id": "CHAR_Monster", "notes": ["misstraut Fremden"]}
+
+
+def test_no_pending_notes_query_when_notes_empty():
+    db = _FakeDB()
+    entity = {"id": "CHAR_Monster", "type": "Character",
+              "props": {"session_id": "2025-04-01", "confidence": "medium", "pending_notes": []}}
+    _write_graph(db, _resolved(entities=[entity]))
+    assert not any("pending_notes" in c[0] for c in db.calls)
+
+
 if __name__ == "__main__":
     for name, fn in sorted(globals().items()):
         if name.startswith("test_") and callable(fn):

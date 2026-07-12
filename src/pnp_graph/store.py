@@ -43,12 +43,19 @@ def ensure_constraints(db) -> None:
 
 def _write_graph(db, resolved: dict) -> None:
     for e in resolved["entities"]:
-        create_props = {k: v for k, v in e["props"].items() if v is not None}
-        # A re-mention across sessions (e.g. Character.description, .aliases)
-        # sends whatever THIS session's extraction saw — often nothing, since
-        # a recurring trait isn't repeated every session. ON MATCH must never
-        # let an empty/falsy value blank out a value a prior session set; only
-        # ON CREATE may write "" or [] (there's nothing yet to preserve).
+        props = dict(e["props"])
+        # pending_notes (WP13.4): raw per-scene Character notes accumulate
+        # ACROSS sessions until cli summarize-entities folds + clears them —
+        # a blind `n += props` would replace, not append, the list, losing
+        # every earlier session's unconsumed notes. Written via its own
+        # coalesce-append SET, never through create_props/match_props below.
+        pending_notes = props.pop("pending_notes", None)
+        create_props = {k: v for k, v in props.items() if v is not None}
+        # A re-mention across sessions (e.g. Location/Faction.description,
+        # .aliases) sends whatever THIS session's extraction saw — often
+        # nothing, since a recurring trait isn't repeated every session. ON
+        # MATCH must never let an empty/falsy value blank out a value a prior
+        # session set; only ON CREATE may write "" or [] (nothing to preserve yet).
         match_props = {k: v for k, v in create_props.items() if v != "" and v != []}
         db.run(
             "MERGE (n:Entity {id: $id}) "
@@ -57,6 +64,12 @@ def _write_graph(db, resolved: dict) -> None:
             id=e["id"], type=e["type"],
             create_props=create_props, match_props=match_props,
         )
+        if pending_notes:
+            db.run(
+                "MATCH (n:Entity {id: $id}) "
+                "SET n.pending_notes = coalesce(n.pending_notes, []) + $notes",
+                id=e["id"], notes=pending_notes,
+            )
     for r in resolved["edges"]:
         rtype = sanitize_predicate(r["type"])
         # rtype passed sanitize + the ALLOWED_PREDICATES gate in resolve.py;
