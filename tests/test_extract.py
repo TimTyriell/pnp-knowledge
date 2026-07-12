@@ -1,6 +1,6 @@
-"""Invariants for the two-pass extraction wiring (docs/evolution/06, WP7;
-capsule + scene segmentation, WP13). No LLM, no Neo4j — extractors are fakes
-that record what prompt they saw.
+"""Invariants for the single-call scene extraction wiring (docs/evolution/13,
+WP13.6; capsule + scene segmentation, WP13.1/13.2). No LLM, no Neo4j —
+extractors are fakes that record what prompt they saw.
 
 Run: python -m pytest tests/  (or python tests/test_extract.py for the asserts).
 """
@@ -11,15 +11,14 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from pnp_graph.extract import extract_chunk, segment_session
-from pnp_graph.schema import (Character, EntityExtraction, Event, EventExtraction,
-                              GraphExtraction, Location, Relationship, RuleEntity,
-                              SceneBoundary, SceneSegmentation)
+from pnp_graph.schema import (Character, Event, Location, Relationship, RuleEntity,
+                              SceneBoundary, SceneExtraction, SceneSegmentation)
 
 
-def _event(title, **kw):
+def _event(label, **kw):
     # narrative_significance_reasoning is required (pay-to-mint, WP13.2)
     kw.setdefault("narrative_significance_reasoning", "state changed")
-    return Event(title=title, **kw)
+    return Event(label=label, **kw)
 
 
 class _FakeExtractor:
@@ -40,54 +39,48 @@ class _FakeExtractor:
         return self._results.pop(0)
 
 
-def test_extract_chunk_combines_both_passes_and_capsule_event():
-    entities = EntityExtraction(
+def test_extract_chunk_one_call_combines_entities_and_capsule_event():
+    scene = SceneExtraction(
         characters=[Character(name="Lindo Laut", role="PC")],
         locations=[Location(name="Wald")],
         rule_entities=[RuleEntity(name="Barde", subtype="Class")],
-    )
-    events = EventExtraction(
         macro_scene_event=_event("Kampf gegen die Goblins", participants=["Lindo Laut"]),
         relationships=[Relationship(subject="Lindo Laut", predicate="HAS_CLASS",
                                     object="Barde", confidence="high")],
     )
-    entity_extractor = _FakeExtractor([entities])
-    event_extractor = _FakeExtractor([events])
+    extractor = _FakeExtractor([scene])
 
-    result = extract_chunk((entity_extractor, event_extractor), "chunk text", 3,
+    result = extract_chunk(extractor, "chunk text", 3,
                            cast_names=["Lindo Laut"], rule_names=["Barde"])
 
-    assert result.characters == entities.characters
-    assert result.locations == entities.locations
+    assert result.characters == scene.characters
+    assert result.locations == scene.locations
     # capsule: exactly one macro event per scene chunk
-    assert [e.title for e in result.events] == ["Kampf gegen die Goblins"]
-    assert result.relationships == events.relationships
+    assert [e.label for e in result.events] == ["Kampf gegen die Goblins"]
+    assert result.relationships == scene.relationships
     assert result.relationships[0].evidence == 3  # stamped, not model-supplied
 
-    assert "Lindo Laut" in entity_extractor.prompts[0]
-    assert "Barde" in entity_extractor.prompts[0]
-    event_prompt = event_extractor.prompts[0]
-    assert "Lindo Laut" in event_prompt and "Wald" in event_prompt and "Barde" in event_prompt
+    # one call for everything — cast + gazetteer both land in the same prompt
+    assert len(extractor.prompts) == 1
+    assert "Lindo Laut" in extractor.prompts[0] and "Barde" in extractor.prompts[0]
 
 
-def test_extract_chunk_retries_once_per_pass():
-    entities = EntityExtraction(characters=[Character(name="Dodo", role="PC")])
-    events = EventExtraction(macro_scene_event=_event("Szene"))
-    entity_extractor = _FakeExtractor([entities], fail_first=True)
-    event_extractor = _FakeExtractor([events], fail_first=True)
+def test_extract_chunk_retries_once():
+    scene = SceneExtraction(characters=[Character(name="Dodo", role="PC")],
+                            macro_scene_event=_event("Szene"))
+    extractor = _FakeExtractor([scene], fail_first=True)
 
-    result = extract_chunk((entity_extractor, event_extractor), "chunk text", 1)
+    result = extract_chunk(extractor, "chunk text", 1)
 
-    assert result.characters == entities.characters
-    assert len(entity_extractor.prompts) == 2  # first raised, retry succeeded
-    assert len(event_extractor.prompts) == 2
+    assert result.characters == scene.characters
+    assert len(extractor.prompts) == 2  # first raised, retry succeeded
 
 
 def test_segment_session_returns_llm_boundaries():
     segments = [{"speaker": "GM", "text": f"line {i}"} for i in range(6)]
     seg = SceneSegmentation(scenes=[
-        SceneBoundary(start_segment=0, end_segment=2, title="A"),
-        SceneBoundary(start_segment=3, end_segment=5, title="B"),
+        SceneBoundary(start_segment=0, end_segment=2, label="A"),
+        SceneBoundary(start_segment=3, end_segment=5, label="B"),
     ])
     fake = _FakeExtractor([seg])
     scenes = segment_session(fake, segments)

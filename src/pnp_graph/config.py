@@ -83,9 +83,9 @@ REPEAT_PENALTY = 1.1
 NUM_PREDICT = 4096
 
 # Plain endpoint, not /beta: /beta's strict function-calling mode ignores our
-# compound EventExtraction schema on large payloads (hallucinates a different
-# one entirely — see extract.py's _structured_method) so it's not worth the
-# tradeoff versus plain function-calling's occasional missed tool-call.
+# compound schema on large payloads (hallucinates a different one entirely —
+# see extract.py's _structured_method) so it's not worth the tradeoff versus
+# plain function-calling's occasional missed tool-call.
 DEEPSEEK_BASE_URL = "https://api.deepseek.com"
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
 FLAGSHIP_MAX_TOKENS = 8192  # DeepSeek output cap; megachunks -> larger JSON output

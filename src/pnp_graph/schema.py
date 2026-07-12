@@ -36,7 +36,11 @@ class Quest(BaseModel):
 
 
 class Event(BaseModel):
-    title: str
+    # "label" not "title": pydantic auto-adds a JSON-Schema "title" annotation to
+    # every property (e.g. properties.title.title == "Title") — a field literally
+    # named "title" hits the same DeepSeek strict-mode key-collision bug as
+    # Character.role above (was silently renamed to "event_name" in tool calls).
+    label: str
     summary: str = ""
     participants: list[str] = []
     location: str | None = None
@@ -87,7 +91,7 @@ class SceneBoundary(BaseModel):
 
     start_segment: int = Field(description="Inclusive index of the first segment in this scene")
     end_segment: int = Field(description="Inclusive index of the last segment in this scene")
-    title: str = Field(default="", description="Short scene label, for logging")
+    label: str = Field(default="", description="Short scene label, for logging")  # not "title", see Event.label
 
 
 class SceneSegmentation(BaseModel):
@@ -114,9 +118,14 @@ class Relationship(BaseModel):
     evidence: int = 0  # chunk index this relationship was extracted from; set programmatically, not by the model
 
 
-class EntityExtraction(BaseModel):
-    """Pass (a) — docs/evolution/06 WP7: entities + rules references only,
-    no causal/event content. Kept small so a 14B stays reliable."""
+class SceneExtraction(BaseModel):
+    """Everything extracted from one scene chunk in a single structured-output
+    call (docs/evolution/13, WP13.6): entities, rules, the one capsule macro
+    event (WP13.2), rolls, decisions and relationships. Supersedes the WP7
+    two-pass entity/event split — that split existed to keep a 14B reliable
+    on a smaller schema; on the flagship profile (and with scenes now
+    pre-segmented, so each call is already scoped to one coherent unit) one
+    combined call halves the API calls per session at no quality cost."""
 
     characters: list[Character] = []
     locations: list[Location] = []
@@ -124,14 +133,6 @@ class EntityExtraction(BaseModel):
     quests: list[Quest] = []
     factions: list[Faction] = []
     rule_entities: list[RuleEntity] = []
-
-
-class EventExtraction(BaseModel):
-    """Pass (b) — docs/evolution/06 WP7 + WP13.2 capsule: exactly ONE macro
-    Event per scene chunk (1 chunk = 1 scene), plus that scene's rolls,
-    decisions and relationships, referencing only entities named in pass (a)
-    (fed into the prompt, not re-derived by the model)."""
-
     macro_scene_event: Event
     roll_events: list[RollEvent] = []
     decisions: list[Decision] = []

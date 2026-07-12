@@ -86,9 +86,12 @@ Inspect a run in Neo4j Browser (http://localhost:7474):
 ## Architecture (`src/pnp_graph/`)
 
 Pipeline per session, orchestrated by `ingest()` in `ingest.py`:
-`ordered_sessions → load_session (chunks + cast) → extract_session (per-chunk
-LLM + in-mem merge, two-pass event consolidation) → resolve_graph (canonical
-IDs) → write_session (Neo4j MERGE) → embed_entities (vector index)`.
+`ordered_sessions → read_segments (raw) → scene_chunks (flagship: semantic
+scenes via segment_session) or pack_segments (local: char-budget chunks) →
+extract_session (one structured-output call per chunk + in-mem merge) →
+resolve_graph (canonical IDs + Chunk passages for the vector store) →
+write_session (Neo4j MERGE) → embed_entities (vector index, incl. Chunk
+raw-text embeddings)`.
 
 - **`config.py`** — every tunable: models, chunk size, Neo4j URL, and the
   **closed vocabularies**. Two extraction profiles selected by `PNP_PROFILE`
@@ -116,21 +119,27 @@ IDs) → write_session (Neo4j MERGE) → embed_entities (vector index)`.
 - **`schema.py`** — the extraction contract, forced via structured output
   (`method="json_schema"` on Ollama, `"function_calling"` on DeepSeek — the
   latter's OpenAI-compatible endpoint doesn't support strict json_schema
-  reliably): Character / Location / Item / Quest / Event / Faction /
-  RuleEntity / RollEvent / Decision / Relationship, split into
-  `EntityExtraction` + `EventExtraction` (two-pass) plus `EventConsolidation`
-  (post-pass event grouping). No `Trait` node type (macro-graph philosophy —
-  quirks live in `Character.description`). To change what's extracted, edit
-  these models — there's no separate prompt-only knob.
-- **`extract.py`** — LLM calls per chunk with retry (`_invoke_with_retry`;
-  persistent parse failures dump to `state/failures/<sid>/`). Cast, SRD
-  gazetteer, and known-entity lines are injected into the prompt; `evidence`
-  (chunk index) is set in code, never by the model. `merge_graphs` dedups by
-  name/title in-memory (first occurrence wins per session);
-  `propose_event_groups`/`apply_event_consolidation` is a second LLM pass
-  collapsing near-duplicate events. `SUGGESTED_PREDICATES` (sourced from the
-  Claude-authored S02 report) biases relation naming; the hard vocab
-  enforcement happens later in `resolve.py`.
+  reliably): `SceneExtraction` (docs/evolution/13, WP13.6) is ONE combined
+  schema covering Character / Location / Item / Quest / Faction / RuleEntity
+  / RollEvent / Decision / Relationship plus the single capsule
+  `macro_scene_event: Event` (WP13.2 — one macro event per scene chunk, with
+  a required `narrative_significance_reasoning`, "pay to mint"). Supersedes
+  the old two-pass `EntityExtraction`+`EventExtraction` split (that split
+  existed to keep a 14B reliable on a smaller schema per call) and the N3
+  `EventConsolidation` pass (impossible to need once it's one event/scene).
+  Also `SceneBoundary`/`SceneSegmentation` (WP13.1, the scene-segmentation
+  pre-pass output). No `Trait` node type (macro-graph philosophy — quirks
+  live in `Character.description`). To change what's extracted, edit these
+  models — there's no separate prompt-only knob.
+- **`extract.py`** — one structured-output call per chunk (`extract_chunk`,
+  WP13.6) with retry (`_invoke_with_retry`; persistent parse failures dump to
+  `state/failures/<sid>/`). Cast + SRD gazetteer lines are injected into the
+  prompt. `evidence` (chunk index) is set in code, never by the model.
+  `merge_graphs` dedups by name/label in-memory (first occurrence wins per
+  session). `segment_session`/`build_segmenter` (WP13.1) is the separate
+  scene-boundary pre-pass, flagship-only. `SUGGESTED_PREDICATES` (sourced
+  from the Claude-authored S02 report) biases relation naming; the hard
+  vocab enforcement happens later in `resolve.py`.
 - **`resolve.py`** — **the identity layer** (WP1/WP1b, the spec's gate).
   `Resolver` maps surface forms → canonical ids via `data/alias_registry.json`
   + normalization + `difflib` fuzzy match (ratio ≥ 0.9; stdlib, no
@@ -140,24 +149,35 @@ IDs) → write_session (Neo4j MERGE) → embed_entities (vector index)`.
   roll-shaped titles), predicate mapping + domain checks, endpoint
   validation — unresolvable edges are
   **dropped and logged** (`state/failures/<sid>/dropped_edges.jsonl`), never
-  MERGE-created.
+  MERGE-created. With `chunk_texts` (WP13.5, docs/evolution/13), also splits
+  each chunk into passages (`chunking.split_passages`) and mints them as
+  `Chunk` entities linked `IN_SESSION` + `MENTIONS` to every entity whose
+  `evidence_chunks` name that scene — the "vector = das Buch" half.
 - **`store.py`** — idempotent Neo4j writes on `:Entity {id}` (uniqueness
   constraint `entity_id`; `type`/`session_id` indexes). `sanitize_predicate`
   strips predicates to `[A-Z0-9_]` — relationship types can't be
   parameterized, this is the injection guard; keep it if you touch that code.
   `write_session` = constraints + `_write_graph` via `execute_write` in one
-  driver session (per-session atomic write). `run_qa` = the QA queries from
-  `docs/evolution/07` (dup names, cross-type collisions, missing provenance).
-  No `valid_from`/`valid_to` stamping yet — that's WP9.
+  driver session (per-session atomic write). `_write_graph` splits entity
+  props into `create_props` (all values) vs `match_props` (drops empty
+  string/list) so a cross-session re-mention with nothing new never blanks
+  out a value a prior session set (e.g. `Character.description`). `run_qa` =
+  the QA queries from `docs/evolution/07` (dup names, cross-type collisions,
+  missing provenance, orphan events). No `valid_from`/`valid_to` stamping
+  yet — that's WP9.
 - **`srd.py`** — loads `data/daggerheart_srd.json` into an `SrdIndex`
   (prompt gazetteer + shared `RuleEntity` library); `preload` MERGEs the
   shared SRD nodes once, sessions link to them, never per-session copies.
 - **`embed.py`** — `nomic-embed-text` entity embeddings into a Neo4j vector
-  index (768 dims); backbone types (Session) excluded from search hits.
+  index (768 dims), always local regardless of `PNP_PROFILE`; backbone types
+  (Session) excluded from search hits. `Chunk` nodes (WP13.5) are the one
+  exception to the composed `type|name|aliases|description|summary` text —
+  their raw passage `text` is embedded verbatim.
 - **`retrieve.py`** — GraphRAG-style **local** search without adopting the
   framework (verdict in `docs/evolution/11`): vector top-k seeds → graph
   neighborhood expansion (optionally as-of a session seq) → formatted context
-  → local LLM answer with session citations. `cli ask` wraps it.
+  → local LLM answer with session citations. `cli ask` wraps it. A `Chunk`
+  seed renders as its raw source passage instead of the usual name/status line.
 - **`reconcile.py`** — `cli reconcile-report` (WP8): diffs the local graph
   against the hand-authored report graph for one session; proposes alias
   additions. Finds reports in `reports/` (or repo root).
