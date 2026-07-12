@@ -9,7 +9,9 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from pnp_graph import config
-from pnp_graph.chunking import format_turn, pack_segments, scene_chunks, session_id_from_path
+from pnp_graph.chunking import (
+    format_turn, pack_segments, scene_chunks, session_id_from_path, split_passages,
+)
 from pnp_graph.schema import SceneBoundary
 
 
@@ -88,8 +90,8 @@ def _distinct_segments(n: int):
 def test_scene_chunks_one_per_boundary():
     segs = _distinct_segments(9)
     boundaries = [
-        SceneBoundary(start_segment=0, end_segment=2, title="A"),
-        SceneBoundary(start_segment=3, end_segment=8, title="B"),
+        SceneBoundary(start_segment=0, end_segment=2, label="A"),
+        SceneBoundary(start_segment=3, end_segment=8, label="B"),
     ]
     chunks = scene_chunks(segs, boundaries)
     assert len(chunks) == 2
@@ -105,6 +107,30 @@ def test_scene_chunks_clamps_out_of_range_and_falls_back():
     assert len(chunks) == 1 and "seg3" in chunks[0] and "seg0" not in chunks[0]
     # no usable boundary -> one chunk of everything
     assert len(scene_chunks(segs, [])) == 1
+
+
+def test_split_passages_covers_all_turns_within_budget():
+    segs = _segments(30, text_len=100)
+    scene_text = "".join(format_turn(s) for s in segs)
+    passages = split_passages(scene_text, size=500, overlap=100)
+    assert len(passages) > 1  # a 30-turn scene must not collapse to one giant passage
+    joined = "".join(passages)
+    for s in segs:
+        assert s["text"] in joined
+    for p in passages[:-1]:  # allow slack for a lone oversized turn, like pack_segments
+        assert len(p) <= 500 + 400
+
+
+def test_split_passages_empty_and_single_turn():
+    assert split_passages("") == []
+    one_turn = format_turn(_segments(1)[0])
+    assert split_passages(one_turn, size=500, overlap=100) == [one_turn]
+
+
+def test_split_passages_oversized_single_turn_kept_whole():
+    huge = "[00:00] GM:\n  " + ("x" * 5000) + "\n\n"
+    passages = split_passages(huge, size=500, overlap=100)
+    assert len(passages) == 1 and passages[0] == huge
 
 
 def test_session_id_from_path():

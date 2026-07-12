@@ -9,7 +9,7 @@ import json
 import re
 from pathlib import Path
 
-from .config import CHUNK_OVERLAP, CHUNK_SIZE
+from .config import CHUNK_OVERLAP, CHUNK_SIZE, PASSAGE_OVERLAP, PASSAGE_SIZE
 
 _DATE_RE = re.compile(r"(\d{4}-\d{2}-\d{2})")
 _SPEAKER_RE = re.compile(r"^\s*(?P<player>[^()]+?)\s*\(\s*(?P<character>[^()]+?)\s*\)\s*$")
@@ -117,6 +117,39 @@ def scene_chunks(segments: list[dict], boundaries: list) -> list[str]:
         if text.strip():
             chunks.append(text)
     return chunks or ["".join(turns)]  # fall back to one chunk if nothing usable
+
+
+def split_passages(text: str, size: int = PASSAGE_SIZE, overlap: int = PASSAGE_OVERLAP) -> list[str]:
+    """WP13.5: split one already-formatted chunk's text into small overlapping
+    passages for embedding granularity. Operates on format_turn's output, not
+    raw segments — turns are delimited by the blank line format_turn appends,
+    so splitting on it never cuts a turn's header from its body. Same
+    greedy-pack idea as pack_segments, simplified (no gap-aware breaking —
+    passage boundaries matter far less than top-level chunk boundaries)."""
+    turns = [t + "\n\n" for t in text.split("\n\n") if t.strip()]
+    if not turns:
+        return [text] if text.strip() else []
+    passages: list[str] = []
+    start = 0
+    n = len(turns)
+    while start < n:
+        end = start
+        cur = 0
+        while end < n and cur + len(turns[end]) <= size:
+            cur += len(turns[end])
+            end += 1
+        if end == start:  # single turn already exceeds size — take it alone
+            end = start + 1
+        passages.append("".join(turns[start:end]))
+        if end >= n:
+            break
+        back = end
+        back_len = 0
+        while back > start + 1 and back_len + len(turns[back - 1]) <= overlap:
+            back -= 1
+            back_len += len(turns[back])
+        start = back if back < end else end
+    return passages
 
 
 def read_segments(path: Path) -> tuple[list[dict], list[tuple[str, str | None, bool]]]:

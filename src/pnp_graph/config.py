@@ -50,6 +50,14 @@ CHUNK_OVERLAP = _profile["CHUNK_OVERLAP"]
 EMBED_MODEL = "nomic-embed-text"  # docs/evolution/11, WP11 — always local regardless of PROFILE
 EMBED_DIM = 768
 
+# WP13.5 — chunk-level vector index ("vector = das Buch"): extraction chunks
+# (up to CHUNK_SIZE=44000 chars on flagship) are far too coarse a unit to
+# embed directly — one vector over an entire scene is nearly useless for
+# pinpoint semantic search. Split each chunk into small overlapping passages
+# at this granularity for embedding, independent of the extraction profile.
+PASSAGE_SIZE = 1500
+PASSAGE_OVERLAP = 200
+
 # Q4_K_M 14B long-range recall degrades well before Ollama's trained 40960 max;
 # structured multi-entity extraction needs full recall per chunk, not gist, so
 # stay conservative. num_ctx must cover prompt + CHUNK_SIZE + JSON output —
@@ -74,11 +82,11 @@ LLM_TIMEOUT_S = 300
 REPEAT_PENALTY = 1.1
 NUM_PREDICT = 4096
 
-# /beta unlocks DeepSeek's strict function-calling mode (required + additionalProperties:false
-# enforced server-side) — without it, tool-call adherence on our multi-entity schema is
-# unreliable and chunks intermittently come back with "structured output returned None"
-# on both the first try and the retry (seen repeatedly in the 2026-07-12 flagship ingest).
-DEEPSEEK_BASE_URL = "https://api.deepseek.com/beta"
+# Plain endpoint, not /beta: /beta's strict function-calling mode ignores our
+# compound EventExtraction schema on large payloads (hallucinates a different
+# one entirely — see extract.py's _structured_method) so it's not worth the
+# tradeoff versus plain function-calling's occasional missed tool-call.
+DEEPSEEK_BASE_URL = "https://api.deepseek.com"
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
 FLAGSHIP_MAX_TOKENS = 8192  # DeepSeek output cap; megachunks -> larger JSON output
 
@@ -105,6 +113,7 @@ ALLOWED_PREDICATES = {
     "KNOWS", "FEARS", "HOSTILE_TO", "ALLIED_WITH",
     "PLAYS", "RELATES_TO",
     "TRUSTS", "BETRAYED", "KILLED", "FAMILY_OF",  # narrative-arc verbs (docs/evolution/11, WP9)
+    "MENTIONS",  # Chunk -> any entity named in that passage (docs/evolution/13, WP13.5)
 }
 PREDICATE_SYNONYMS = {
     "ALLY_OF": "ALLIED_WITH",
@@ -187,6 +196,8 @@ PREDICATE_DOMAINS = {
     "BETRAYED": ({"Character"}, {"Character"}),
     "KILLED": ({"Character"}, {"Character"}),
     "FAMILY_OF": ({"Character"}, {"Character"}),
+    "MENTIONS": ({"Chunk"}, {"Character", "Location", "Item", "Quest", "Event", "Faction",
+                             "RuleEntity", "RollEvent", "Decision"}),
 }
 
 # Report used German confidence tokens; local prompt emits English. Converge both.
