@@ -20,7 +20,13 @@ retrieves that detail from raw transcript text on demand ("graph = table of
 contents, vector = the book"). There is no `Trait` node type (quirks live in
 `Character.description`, embedded); no `RollEvent` node type (rolls are not
 narrative topology — WP14); `Item` nodes are minted **only for named/unique
-artifacts** (`is_named_artifact`), generic loot is dropped. The skeleton is the
+artifacts** (`is_named_artifact`), generic loot is dropped; `Character` nodes
+likewise only for **named individuals** (`is_named_character`) — generic mobs
+(a goblin, die Wachen, Skelett-Nahkämpfer) are identity-unstable (each is a
+different one) so they earn no node: the horde is a `Faction`, the fight an
+`Event`, the detail a `Chunk`. Player-characters carry a `CHAR_` id, all other
+NPCs `NPC_` (the pnp-report vocab split), but both keep `type:"Character"` — the
+predicate domains and person-logic key on that. The skeleton is the
 `:Entity` label; the vector "book" is a **separate `:Chunk` label** with its own
 vector index (WP14, the 2026 GraphRAG-standard split) so `MATCH (n:Entity)`
 returns a clean skeleton.
@@ -113,8 +119,9 @@ raw-text embeddings)`.
   `ALLOWED_PREDICATES` + `PREDICATE_SYNONYMS` (off-vocab → `RELATES_TO`,
   logged), `PREDICATE_DOMAINS` (domain/range per predicate),
   `STATE_/EVENT_/IDENTITY_PREDICATES` (bitemporal classes, WP9),
-  `META_EVENT_TERMS` (event gate), `RULE_SUBTYPES`, `OOC_DENYLIST`
-  (out-of-fiction noise like Twitch raids). No tunables live elsewhere.
+  `META_EVENT_TERMS` (event gate), `GENERIC_MOB_TERMS` (generic-mob gate),
+  `RULE_SUBTYPES`, `OOC_DENYLIST` (out-of-fiction noise like Twitch raids).
+  No tunables live elsewhere.
 - **`chunking.py`** — input is Whisper JSON (`segments` of
   `{start, end, speaker, text}`); `.txt` siblings in `transcripts/` are
   reference only. `session_id_from_path` extracts the date (`2025-03-26`)
@@ -132,8 +139,10 @@ raw-text embeddings)`.
   / Decision / Relationship plus the single capsule
   `macro_scene_event: Event` (WP13.2 — one macro event per scene chunk, with
   a required `narrative_significance_reasoning`, "pay to mint"). `Item` carries
-  a required `is_named_artifact` — same "pay to mint" gate, generic loot is
-  dropped in resolve.py; there is no `RollEvent` type (WP14). Supersedes
+  a required `is_named_artifact` and `Character` a required `is_named_character`
+  — same "pay to mint" gate, generic loot / generic mobs are dropped in
+  resolve.py (the latter also caught by a deterministic `GENERIC_MOB_TERMS`
+  backstop); there is no `RollEvent` type (WP14). Supersedes
   the old two-pass `EntityExtraction`+`EventExtraction` split (that split
   existed to keep a 14B reliable on a smaller schema per call) and the N3
   `EventConsolidation` pass (impossible to need once it's one event/scene).
@@ -155,7 +164,10 @@ raw-text embeddings)`.
   + normalization + `difflib` fuzzy match (ratio ≥ 0.9; stdlib, no
   rapidfuzz/APOC). `resolve_graph` builds the final `{entities, edges}` dict:
   player/character split with per-session `PLAYS` (GM gets only `DIRECTS`),
-  out-of-world filter (`OOC_DENYLIST`), event gate (`META_EVENT_TERMS` +
+  PC (`CHAR_`) vs NPC (`NPC_`) id split (deterministic from the cast; `type`
+  stays `Character` for both), out-of-world filter (`OOC_DENYLIST`),
+  generic-mob gate (`is_named_character` + `is_generic_mob`/`GENERIC_MOB_TERMS`),
+  event gate (`META_EVENT_TERMS` +
   roll-shaped titles), predicate mapping + domain checks, endpoint
   validation — unresolvable edges are
   **dropped and logged** (`state/failures/<sid>/dropped_edges.jsonl`), never

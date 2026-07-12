@@ -67,6 +67,14 @@ def test_resolve_variants_collapse_to_one_id():
     assert a == r.resolve("Schleichfurz", "Character")
 
 
+def test_pc_keeps_char_prefix_npc_mints_npc_prefix():
+    # PC vs NPC is deterministic from the cast: a seeded player-character keeps
+    # CHAR_; any other character mints NPC_ (both stay type Character downstream).
+    r = _tmp_resolver()
+    assert r.resolve("Lindo Laut", "Character") == "CHAR_LindoLaut"   # cast PC
+    assert r.resolve("Ganz Neuer Wicht", "Character").startswith("NPC_")  # fresh NPC
+
+
 def test_resolve_never_crosses_type():
     r = _tmp_resolver()
     loc = r.resolve("Daggerheart", "Location")
@@ -105,9 +113,9 @@ def test_resolve_graph_end_to_end(tmp_state=None):
     info = _cast_info(r)
     extraction = GraphExtraction(
         characters=[
-            Character(name="Lindo Laut", role="PC"),
-            Character(name="Tim (Lindo Laut)", role="PC"),   # composite must not fork
-            Character(name="Marco", role="PC"),               # player name must not fork
+            Character(name="Lindo Laut", role="PC", is_named_character=True),
+            Character(name="Tim (Lindo Laut)", role="PC", is_named_character=True),   # composite must not fork
+            Character(name="Marco", role="PC", is_named_character=True),               # player name must not fork
         ],
         items=[Item(name="Zauberstab", owner="Lindo", is_named_artifact=True)],
         relationships=[
@@ -153,7 +161,7 @@ def test_evidence_chunks():
     r = _tmp_resolver()
     info = _cast_info(r)
     extraction = GraphExtraction(
-        characters=[Character(name="Lindo Laut", role="PC")],
+        characters=[Character(name="Lindo Laut", role="PC", is_named_character=True)],
         relationships=[
             Relationship(subject="Lindo Laut", predicate="KNOWS", object="Cookie",
                          confidence="high", evidence=2),
@@ -177,7 +185,7 @@ def test_record_evidence_sidecar():
     from pnp_graph.extract import _record_evidence
     ev: dict = {}
     g = GraphExtraction(
-        characters=[Character(name="Dodo", role="PC")],
+        characters=[Character(name="Dodo", role="PC", is_named_character=True)],
         relationships=[Relationship(subject="Dodo", predicate="KNOWS", object="Cookie",
                                     confidence="high")],
     )
@@ -202,7 +210,7 @@ def test_srd_rules_decisions():
                      quote="wir machen es falsch", consequence="Monster erscheint",
                      confidence="high"),
         ],
-        characters=[Character(name="Monster", role="NPC")],
+        characters=[Character(name="Monster", role="NPC", is_named_character=True)],
         relationships=[
             Relationship(subject="Lindo Laut", predicate="HAS_CLASS", object="Barde",
                          confidence="high"),
@@ -222,7 +230,7 @@ def test_srd_rules_decisions():
     edges = {(e["start_id"], e["type"], e["end_id"]) for e in resolved["edges"]}
     assert ("CHAR_LindoLaut", "DECIDED", "DEC_2025-03-26_RitualBewusstFalsch") in edges
     # causal chain: decision TRIGGERED monster; PC HAS_CLASS shared SRD node
-    assert ("DEC_2025-03-26_RitualBewusstFalsch", "TRIGGERED", "CHAR_Monster") in edges
+    assert ("DEC_2025-03-26_RitualBewusstFalsch", "TRIGGERED", "NPC_Monster") in edges
     assert ("CHAR_LindoLaut", "HAS_CLASS", "RULE_CLASS_Bard") in edges
 
 
@@ -233,7 +241,7 @@ def test_chunk_passages_minted_and_linked_via_mentions():
     r = _tmp_resolver()
     info = _cast_info(r)
     extraction = GraphExtraction(
-        characters=[Character(name="Monster", role="NPC")],
+        characters=[Character(name="Monster", role="NPC", is_named_character=True)],
     )
     evidence = {("characters", "Monster"): [1]}
     chunk_texts = ["[00:00] GM:\n  Ein Monster taucht auf.\n\n"]
@@ -245,7 +253,7 @@ def test_chunk_passages_minted_and_linked_via_mentions():
     assert "Monster taucht auf" in chunk_entities[0]["props"]["text"]
     edges = {(e["start_id"], e["type"], e["end_id"]) for e in resolved["edges"]}
     assert ("CHUNK_2025-03-26_001_01", "IN_SESSION", "SESS_2025-03-26") in edges
-    assert ("CHUNK_2025-03-26_001_01", "MENTIONS", "CHAR_Monster") in edges
+    assert ("CHUNK_2025-03-26_001_01", "MENTIONS", "NPC_Monster") in edges
 
 
 def test_no_chunk_passages_without_chunk_texts_arg():
@@ -264,7 +272,7 @@ def test_character_description_becomes_pending_notes_not_description():
     r = _tmp_resolver()
     info = _cast_info(r)
     extraction = GraphExtraction(
-        characters=[Character(name="Lindo Laut", role="PC", description="spielt oft Musik")],
+        characters=[Character(name="Lindo Laut", role="PC", is_named_character=True, description="spielt oft Musik")],
     )
     resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1)
     char = next(e for e in resolved["entities"] if e["id"] == "CHAR_LindoLaut")
@@ -280,8 +288,8 @@ def test_pending_notes_accumulate_within_session_for_aliased_mentions():
     info = _cast_info(r)
     extraction = GraphExtraction(
         characters=[
-            Character(name="Lindo Laut", role="PC", description="spielt oft Musik"),
-            Character(name="Lindo", role="PC", description="misstraut Fremden"),
+            Character(name="Lindo Laut", role="PC", is_named_character=True, description="spielt oft Musik"),
+            Character(name="Lindo", role="PC", is_named_character=True, description="misstraut Fremden"),
         ],
     )
     resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1)
@@ -295,7 +303,7 @@ def test_no_pending_notes_when_no_description():
     resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
     r = _tmp_resolver()
     info = _cast_info(r)
-    extraction = GraphExtraction(characters=[Character(name="Lindo Laut", role="PC")])
+    extraction = GraphExtraction(characters=[Character(name="Lindo Laut", role="PC", is_named_character=True)])
     resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1)
     char = next(e for e in resolved["entities"] if e["id"] == "CHAR_LindoLaut")
     assert char["props"].get("pending_notes", []) == []
@@ -308,7 +316,7 @@ def test_gm_is_world():
     r = _tmp_resolver()
     info = _cast_info(r)
     extraction = GraphExtraction(
-        characters=[Character(name="GM", role="NPC")],  # model minting the GM
+        characters=[Character(name="GM", role="NPC", is_named_character=True)],  # model minting the GM
         events=[Event(label="Kampfbeginn", participants=["Deniz", "Dodo"],
                       narrative_significance_reasoning="Kampf beginnt")],
         decisions=[Decision(name="Monster flieht", decided_by="Deniz", confidence="high")],
@@ -339,11 +347,30 @@ def test_ooc_character_dropped_not_minted():
     resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
     r = _tmp_resolver()
     info = _cast_info(r)
-    extraction = GraphExtraction(characters=[Character(name="Twitch Raid Bot", role="NPC")])
+    extraction = GraphExtraction(characters=[Character(name="Twitch Raid Bot", role="NPC", is_named_character=True)])
     resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1)
     assert not any(e["type"] == "Character" and "Twitch" in e["props"]["name"]
                    for e in resolved["entities"])
     assert any("out-of-world" in d["reason"] for d in resolved["dropped"])
+
+
+def test_generic_mob_never_minted():
+    # macro-graph gate (like is_named_artifact): generic combat fodder is
+    # identity-unstable and earns no node — dropped whether the model flags it
+    # (is_named_character=False) or the deterministic backstop catches it.
+    resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
+    r = _tmp_resolver()
+    info = _cast_info(r)
+    extraction = GraphExtraction(characters=[
+        Character(name="Goblin-Wache", role="NPC", is_named_character=True),   # backstop (term)
+        Character(name="ein Bauer", role="NPC", is_named_character=False),      # schema gate
+        Character(name="Berthold", role="NPC", is_named_character=True),        # named NPC survives
+    ])
+    resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1)
+    names = {e["props"]["name"] for e in resolved["entities"] if e["type"] == "Character"}
+    assert "Berthold" in names
+    assert not any("Goblin" in n or "Bauer" in n for n in names)
+    assert sum(d["reason"].startswith("generic mob") for d in resolved["dropped"]) == 2
 
 
 def test_gm_fuzzy_match_catches_asr_noise():
@@ -352,7 +379,7 @@ def test_gm_fuzzy_match_catches_asr_noise():
     resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
     r = _tmp_resolver()
     info = _cast_info(r)
-    extraction = GraphExtraction(characters=[Character(name="Dennis", role="NPC")])
+    extraction = GraphExtraction(characters=[Character(name="Dennis", role="NPC", is_named_character=True)])
     resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1)
     ids = {e["id"] for e in resolved["entities"]}
     assert not any("Dennis" in i for i in ids)

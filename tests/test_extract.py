@@ -41,7 +41,7 @@ class _FakeExtractor:
 
 def test_extract_chunk_one_call_combines_entities_and_capsule_event():
     scene = SceneExtraction(
-        characters=[Character(name="Lindo Laut", role="PC")],
+        characters=[Character(name="Lindo Laut", role="PC", is_named_character=True)],
         locations=[Location(name="Wald")],
         rule_entities=[RuleEntity(name="Barde", subtype="Class")],
         macro_scene_event=_event("Kampf gegen die Goblins", participants=["Lindo Laut"]),
@@ -66,7 +66,7 @@ def test_extract_chunk_one_call_combines_entities_and_capsule_event():
 
 
 def test_extract_chunk_retries_once():
-    scene = SceneExtraction(characters=[Character(name="Dodo", role="PC")],
+    scene = SceneExtraction(characters=[Character(name="Dodo", role="PC", is_named_character=True)],
                             macro_scene_event=_event("Szene"))
     extractor = _FakeExtractor([scene], fail_first=True)
 

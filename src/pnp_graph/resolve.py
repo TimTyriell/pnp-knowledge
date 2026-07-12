@@ -27,6 +27,7 @@ from .config import (
     ALLOWED_PREDICATES,
     CONFIDENCE_MAP,
     EVENT_PREDICATES,
+    GENERIC_MOB_TERMS,
     IDENTITY_PREDICATES,
     META_EVENT_TERMS,
     OOC_DENYLIST,
@@ -111,6 +112,18 @@ def is_out_of_world(surface: str) -> bool:
     KG_Qualitaetsanalyse_S01, e.g. a Twitch raid minted as an NPC)."""
     s = surface.casefold()
     return any(term in s for term in OOC_DENYLIST)
+
+
+def is_generic_mob(surface: str) -> bool:
+    """Deterministic backstop for combat-fodder adversaries the is_named_character
+    schema gate misses (macro-graph, mirrors is_out_of_world). A numbered instance
+    ('Wache 1') or any GENERIC_MOB_TERM appearing as a token substring ('goblin' in
+    'Goblins'/'Goblin-Schütze') is a generic mob — no node. Conservative by design;
+    a named boss survives by the model marking is_named_character=True upstream."""
+    tokens = normalize(surface).split()
+    if tokens and tokens[-1].isdigit():
+        return True
+    return any(term in tok for tok in tokens for term in GENERIC_MOB_TERMS)
 
 
 def slug(surface: str) -> str:
@@ -204,6 +217,15 @@ class Resolver:
             player_hit = self._lookup_exact_or_norm("players", surface)
             if player_hit:
                 return player_hit
+            # PC vs NPC is deterministic from the cast, not the LLM's `role`
+            # guess: bootstrap_cast pre-seeds every player-character as CHAR_
+            # before extraction, so a lookup miss here is by definition a
+            # non-cast character = an NPC. Both live in the `characters`
+            # section (one id space); only the prefix distinguishes them, and
+            # `type` stays "Character" for both (the predicate domains, QA, and
+            # summarize/embed all key on type=='Character' as "is a person").
+            hit = self._lookup(section, surface)
+            return hit or self._mint(section, "NPC", surface)
         hit = self._lookup(section, surface)
         return hit or self._mint(section, prefix, surface)
 
@@ -445,6 +467,17 @@ def resolve_graph(
         if is_gm_surface(c.name):  # GM-is-world: never a Character node
             dropped.append({"subject": c.name, "predicate": "APPEARS_IN",
                             "object": session_node_id, "reason": "gm-is-world"})
+            continue
+        # Generic-mob gate (pay-to-mint, like is_named_artifact for Items): a
+        # generic/unnamed adversary is identity-unstable — each goblin is a
+        # different goblin, so minting one fabricates a recurring entity. Drop;
+        # the horde is a Faction, the fight an Event, the detail a Chunk. Cast
+        # PCs bypass — they are pre-registered from the transcript (in `entities`
+        # already), so the gate only ever fires on LLM-extracted surfaces.
+        is_cast_pc = surface_to_id.get(normalize(c.name)) in entities
+        if not is_cast_pc and (not c.is_named_character or is_generic_mob(c.name)):
+            dropped.append({"subject": c.name, "predicate": "APPEARS_IN",
+                            "object": session_node_id, "reason": "generic mob (not a named individual)"})
             continue
         cid = register(c.name, "Character", {
             "name": c.name, "aliases": c.aliases,

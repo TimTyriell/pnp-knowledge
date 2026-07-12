@@ -58,8 +58,6 @@
         "Dragonborn",
         "halb Goblin, halb Drache",
         "der Guardian"
-  
-    
       ]
     },
     "CHAR_Cookie": {
@@ -72,399 +70,292 @@
         "der Ribbit"
       ]
     },
-    "CHAR_Monster": {
+    "NPC_Monster": {
       "canonical": "Monster",
       "aliases": []
     },
-    "CHAR_Chicken": {
+    "NPC_Chicken": {
       "canonical": "Chicken",
       "aliases": []
     },
-    "CHAR_Ausrufezeichen": {
+    "NPC_Ausrufezeichen": {
       "canonical": "Ausrufezeichen",
-      "aliases": []
-    },
-    "CHAR_Kieler": {
-      "canonical": "Kieler",
       "aliases": []
     },
     "CHAR_Esterossa": {
       "canonical": "Esterossa",
       "aliases": []
     },
-    "CHAR_Benjamin": {
-      "canonical": "Benjamin",
-      "aliases": []
-    },
-    "CHAR_Sanji": {
+    "NPC_Sanji": {
       "canonical": "Sanji",
       "aliases": []
     },
-    "CHAR_Ingrid": {
+    "NPC_Ingrid": {
       "canonical": "Ingrid",
       "aliases": []
     },
-    "CHAR_Mikasa": {
+    "NPC_Mikasa": {
       "canonical": "Mikasa",
       "aliases": []
     },
-    "CHAR_Spinni": {
+    "NPC_Spinni": {
       "canonical": "Spinni",
       "aliases": []
     },
     "CHAR_Valerie": {
       "canonical": "Valerie",
-      "aliases": []
+      "aliases": [
+        "Valeria"
+      ]
     },
     "CHAR_Rotunas": {
       "canonical": "Rotunas",
       "aliases": []
     },
-    "CHAR_Leandras": {
+    "NPC_Leandras": {
       "canonical": "Leandras",
       "aliases": []
     },
-    "CHAR_Berthold": {
+    "NPC_Berthold": {
       "canonical": "Berthold",
       "aliases": []
     },
-    "CHAR_Kerl": {
+    "NPC_Kerl": {
       "canonical": "Kerl",
       "aliases": []
     },
-    "CHAR_Brock": {
+    "NPC_Brock": {
       "canonical": "Brock",
       "aliases": []
     },
-    "CHAR_Tindrail": {
+    "NPC_Tindrail": {
       "canonical": "Tindrail",
       "aliases": [
         "Tinrail"
       ]
     },
-    "CHAR_Tindrael": {
+    "NPC_Tindrael": {
       "canonical": "Tindrael",
       "aliases": []
     },
-    "CHAR_Tendai": {
+    "NPC_Tendai": {
       "canonical": "Tendai",
       "aliases": []
     },
-    "CHAR_Valeria": {
-      "canonical": "Valeria",
-      "aliases": []
-    },
-    "CHAR_Tindrell": {
+    "NPC_Tindrell": {
       "canonical": "Tindrell",
       "aliases": []
     },
-    "CHAR_Hubert": {
+    "NPC_Hubert": {
       "canonical": "Hubert",
       "aliases": []
     },
-    "CHAR_Elisa": {
+    "NPC_Elisa": {
       "canonical": "Elisa",
       "aliases": []
     },
-    "CHAR_Schmied": {
+    "NPC_Schmied": {
       "canonical": "Der Schmied",
       "aliases": []
     },
-    "CHAR_Lisa": {
+    "NPC_Lisa": {
       "canonical": "Lisa",
       "aliases": []
     },
-    "CHAR_Findus": {
+    "NPC_Findus": {
       "canonical": "Findus",
       "aliases": []
     },
-    "CHAR_Nip": {
+    "NPC_Nip": {
       "canonical": "Nip",
       "aliases": []
     },
-    "CHAR_HerrHubert": {
+    "NPC_HerrHubert": {
       "canonical": "Herr Hubert",
       "aliases": []
     },
-    "CHAR_HerrTenrell": {
+    "NPC_HerrTenrell": {
       "canonical": "Herr Tenrell",
       "aliases": []
     },
-    "CHAR_FamilieSchmidt": {
+    "NPC_FamilieSchmidt": {
       "canonical": "Familie Schmidt",
       "aliases": []
     },
-    "CHAR_BuergermeisterHerrBerthold": {
+    "NPC_BuergermeisterHerrBerthold": {
       "canonical": "Bürgermeister Herr Berthold",
       "aliases": [
         "Bürgermeister Berthold"
       ]
     },
-    "CHAR_Kind": {
+    "NPC_Kind": {
       "canonical": "Kind (junge Frau)",
       "aliases": []
     },
-    "CHAR_Timrell": {
+    "NPC_Timrell": {
       "canonical": "Timrell",
       "aliases": [
         "Tirell"
       ]
     },
-    "CHAR_Tendril": {
+    "NPC_Tendril": {
       "canonical": "Tendril",
       "aliases": []
     },
-    "CHAR_Gnome": {
+    "NPC_Gnome": {
       "canonical": "Gnome",
       "aliases": []
     },
-    "CHAR_Phipps": {
+    "NPC_Phipps": {
       "canonical": "Phipps",
       "aliases": []
     },
-    "CHAR_Fips": {
+    "NPC_Fips": {
       "canonical": "Fips",
       "aliases": []
     },
-    "CHAR_Mike": {
+    "NPC_Mike": {
       "canonical": "Mike",
       "aliases": []
     },
-    "CHAR_GrimmerBaerBackbaer": {
+    "NPC_GrimmerBaerBackbaer": {
       "canonical": "Grimmer Bär / Backbär",
       "aliases": []
     },
-    "CHAR_Tyrell": {
+    "NPC_Tyrell": {
       "canonical": "Tyrell",
       "aliases": []
     },
-    "CHAR_Skelett": {
-      "canonical": "Skelett",
-      "aliases": []
-    },
-    "CHAR_Lanra": {
+    "NPC_Lanra": {
       "canonical": "Lanra",
       "aliases": []
     },
-    "CHAR_Lara": {
+    "NPC_Lara": {
       "canonical": "Lara",
       "aliases": []
     },
-    "CHAR_Kuki": {
+    "NPC_Kuki": {
       "canonical": "Kuki",
       "aliases": []
     },
-    "CHAR_Perry": {
+    "NPC_Perry": {
       "canonical": "Perry (Frettchen)",
       "aliases": []
     },
-    "CHAR_MonsieurFredchen": {
+    "NPC_MonsieurFredchen": {
       "canonical": "Monsieur Fredchen",
       "aliases": []
     },
-    "CHAR_GoblinKind": {
-      "canonical": "Goblin-Kind",
-      "aliases": []
-    },
-    "CHAR_Schleichfurz": {
+    "NPC_Schleichfurz": {
       "canonical": "Schleichfurz",
       "aliases": []
     },
-    "CHAR_Havli": {
+    "NPC_Havli": {
       "canonical": "Havli",
       "aliases": []
     },
-    "CHAR_Mert": {
+    "NPC_Mert": {
       "canonical": "Mert",
       "aliases": []
     },
-    "CHAR_Buergermeister": {
+    "NPC_Buergermeister": {
       "canonical": "Bürgermeister",
       "aliases": []
     },
-    "CHAR_AlteMann": {
+    "NPC_AlteMann": {
       "canonical": "Der alte Mann",
       "aliases": []
     },
-    "CHAR_Rudi": {
+    "NPC_Rudi": {
       "canonical": "Rudi",
       "aliases": []
     },
-    "CHAR_Child": {
-      "canonical": "The Child (Young Woman)",
-      "aliases": []
-    },
-    "CHAR_Farmer": {
-      "canonical": "The Farmer",
-      "aliases": []
-    },
-    "CHAR_FarmerSWife": {
-      "canonical": "The Farmer's Wife",
-      "aliases": []
-    },
-    "CHAR_Philips": {
+    "NPC_Philips": {
       "canonical": "Philips",
       "aliases": []
     },
-    "CHAR_Surveying": {
-      "canonical": "Surveying",
-      "aliases": []
-    },
-    "CHAR_Parry": {
-      "canonical": "Parry",
-      "aliases": []
-    },
-    "CHAR_Walk": {
-      "canonical": "Walk",
-      "aliases": []
-    },
-    "CHAR_GehoerntesWesen": {
+    "NPC_GehoerntesWesen": {
       "canonical": "Gehörntes Wesen",
       "aliases": []
     },
-    "CHAR_Waldschrat": {
+    "NPC_Waldschrat": {
       "canonical": "Waldschrat",
       "aliases": []
     },
-    "CHAR_Wildschwein": {
-      "canonical": "Wildschwein",
-      "aliases": []
-    },
-    "CHAR_Lugasch": {
+    "NPC_Lugasch": {
       "canonical": "Lugasch",
       "aliases": []
     },
-    "CHAR_GoblinWachen": {
-      "canonical": "Goblin-Wachen",
-      "aliases": []
-    },
-    "CHAR_BetrunkenerGoblin": {
-      "canonical": "Betrunkener Goblin",
-      "aliases": []
-    },
-    "CHAR_GoblinSchuetze1": {
-      "canonical": "Goblin-Schütze 1",
-      "aliases": [
-        "Goblin-Schütze 2"
-      ]
-    },
-    "CHAR_GoblinMagier": {
-      "canonical": "Goblin-Magier",
-      "aliases": []
-    },
-    "CHAR_GoblinKaempfer": {
-      "canonical": "Goblin-Kämpfer (Dolch)",
-      "aliases": []
-    },
-    "CHAR_GoblinAnfuehrer": {
-      "canonical": "Goblin-Anführer (erster Goblin)",
-      "aliases": []
-    },
-    "CHAR_BesoffeneGoblins": {
-      "canonical": "Besoffene Goblins",
-      "aliases": []
-    },
-    "CHAR_Wache1": {
-      "canonical": "Wache 1",
-      "aliases": []
-    },
-    "CHAR_Wache2": {
-      "canonical": "Wache 2",
-      "aliases": []
-    },
-    "CHAR_Bauern": {
+    "NPC_Bauern": {
       "canonical": "Bauern (Dorfbewohner)",
       "aliases": [
         "Bauer (Holzhelfer)"
       ]
     },
-    "CHAR_FamilieKraemer": {
+    "NPC_FamilieKraemer": {
       "canonical": "Familie Krämer",
       "aliases": []
     },
-    "CHAR_Magier": {
+    "NPC_Magier": {
       "canonical": "Magier",
       "aliases": []
     },
-    "CHAR_BauerKraemer": {
+    "NPC_BauerKraemer": {
       "canonical": "Bauer Krämer",
       "aliases": []
     },
-    "CHAR_BaeuerinKraemer": {
+    "NPC_BaeuerinKraemer": {
       "canonical": "Bäuerin Krämer",
       "aliases": []
     },
-    "CHAR_KindDerKraemers": {
+    "NPC_KindDerKraemers": {
       "canonical": "Kind der Krämers",
       "aliases": []
     },
-    "CHAR_ZweiterBauer": {
+    "NPC_ZweiterBauer": {
       "canonical": "zweiter Bauer (Holzhelfer)",
       "aliases": []
     },
-    "CHAR_Tindra": {
+    "NPC_Tindra": {
       "canonical": "Tindra",
       "aliases": []
     },
-    "CHAR_Maedchen": {
+    "NPC_Maedchen": {
       "canonical": "Mädchen (vermisst)",
       "aliases": []
     },
-    "CHAR_Papa": {
+    "NPC_Papa": {
       "canonical": "Papa (Vater des Mädchens)",
       "aliases": []
     },
-    "CHAR_MutterDesMaedchens": {
+    "NPC_MutterDesMaedchens": {
       "canonical": "Mutter des Mädchens",
       "aliases": []
     },
-    "CHAR_Bogenschuetzin": {
+    "NPC_Bogenschuetzin": {
       "canonical": "Bogenschützin",
       "aliases": []
     },
-    "CHAR_Wachen": {
-      "canonical": "Wachen (2)",
-      "aliases": []
-    },
-    "CHAR_Wirt": {
+    "NPC_Wirt": {
       "canonical": "Wirt",
       "aliases": []
     },
-    "CHAR_GoblinSpaeher": {
-      "canonical": "Goblin-Späher",
-      "aliases": []
-    },
-    "CHAR_BugbearWachen": {
-      "canonical": "Bugbear-Wachen",
-      "aliases": []
-    },
-    "CHAR_BugbearAnfuehrer": {
-      "canonical": "Bugbear-Anführer",
-      "aliases": []
-    },
-    "CHAR_LetzterBugbear": {
-      "canonical": "Letzter Bugbear",
-      "aliases": []
-    },
-    "CHAR_Statue": {
+    "NPC_Statue": {
       "canonical": "Die Statue",
       "aliases": []
     },
-    "CHAR_Feuerkreatur": {
-      "canonical": "Die Feuerkreatur",
-      "aliases": []
-    },
-    "CHAR_FluesterndeStimme": {
+    "NPC_FluesterndeStimme": {
       "canonical": "Die flüsternde Stimme",
       "aliases": []
     },
-    "CHAR_SkelettNahkaempfer": {
-      "canonical": "Skelett-Nahkämpfer",
-      "aliases": []
-    },
-    "CHAR_SkelettBogenschuetze": {
-      "canonical": "Skelett-Bogenschütze",
-      "aliases": []
+    "NPC_Leandra": {
+      "canonical": "Leandra",
+      "aliases": [
+        "Hag",
+        "Hexe",
+        "die Hag",
+        "die Hexe"
+      ]
     }
   },
   "locations": {
@@ -677,13 +568,6 @@
     "LOC_Haus": {
       "canonical": "Haus",
       "aliases": []
-    },
-    "LOC_DorfBrechka": {
-      "canonical": "Dorf Brechka",
-      "aliases": [
-        "Dorf Breshka",
-        "Dorf Breschka"
-      ]
     },
     "LOC_Gildenhalle": {
       "canonical": "Gildenhalle",
@@ -1046,7 +930,12 @@
     "LOC_Breschka": {
       "canonical": "Breschka",
       "aliases": [
-        "Brechka"
+        "Brechka",
+        "Bresca",
+        "Breska",
+        "Dorf Brechka",
+        "Dorf Breschka",
+        "Dorf Breshka"
       ]
     },
     "LOC_Ort": {
@@ -1083,10 +972,6 @@
     },
     "LOC_Altar": {
       "canonical": "Altar",
-      "aliases": []
-    },
-    "LOC_Bresca": {
-      "canonical": "Bresca",
       "aliases": []
     },
     "LOC_Wasser": {
@@ -5920,10 +5805,6 @@
     }
   },
   "factions": {
-    "FACTION_Auftraggeber": {
-      "canonical": "Auftraggeber",
-      "aliases": []
-    },
     "FACTION_Goblins": {
       "canonical": "Goblins",
       "aliases": []

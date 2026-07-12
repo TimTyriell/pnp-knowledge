@@ -34,9 +34,9 @@ _SEGMENTS = [
 
 _EXTRACTION = GraphExtraction(
     characters=[
-        Character(name="Lindo Laut", role="PC"),
-        Character(name="der Schleichfurz", role="NPC"),
-        Character(name="Schleichfurz ", role="NPC"),  # variant — must collapse
+        Character(name="Lindo Laut", role="PC", is_named_character=True),
+        Character(name="der Schleichfurz", role="NPC", is_named_character=True),
+        Character(name="Schleichfurz ", role="NPC", is_named_character=True),  # variant — must collapse
     ],
     items=[Item(name="Bogen", owner="Cookie", status="used", is_named_artifact=True)],
     quests=[Quest(name="Monsterjagd", status="open")],

@@ -37,23 +37,6 @@
       }
     },
     {
-      "id": "CHAR_Schleichfurz",
-      "type": "Character",
-      "props": {
-        "session_id": "2025-03-26",
-        "confidence": "medium",
-        "name": "Schleichfurz",
-        "aliases": [],
-        "pending_notes": [],
-        "is_pc": false,
-        "role": "NPC",
-        "evidence_chunks": [
-          1,
-          2
-        ]
-      }
-    },
-    {
       "id": "DEC_2025-03-26_MonsterProvozieren",
       "type": "Decision",
       "props": {
@@ -90,6 +73,23 @@
         "name": "Bogen (Bow)",
         "status": "used",
         "evidence_chunks": [
+          2
+        ]
+      }
+    },
+    {
+      "id": "NPC_Schleichfurz",
+      "type": "Character",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "medium",
+        "name": "Schleichfurz",
+        "aliases": [],
+        "pending_notes": [],
+        "is_pc": false,
+        "role": "NPC",
+        "evidence_chunks": [
+          1,
           2
         ]
       }
@@ -240,15 +240,6 @@
       }
     },
     {
-      "start_id": "CHAR_Schleichfurz",
-      "end_id": "SESS_2025-03-26",
-      "type": "APPEARS_IN",
-      "props": {
-        "session_id": "2025-03-26",
-        "confidence": "high"
-      }
-    },
-    {
       "start_id": "DEC_2025-03-26_MonsterProvozieren",
       "end_id": "SESS_2025-03-26",
       "type": "IN_SESSION",
@@ -286,6 +277,15 @@
         "session_id": "2025-03-26",
         "confidence": "high",
         "valid_from": 1
+      }
+    },
+    {
+      "start_id": "NPC_Schleichfurz",
+      "end_id": "SESS_2025-03-26",
+      "type": "APPEARS_IN",
+      "props": {
+        "session_id": "2025-03-26",
+        "confidence": "high"
       }
     },
     {

@@ -13,6 +13,12 @@ class Character(BaseModel):
     # grammar — it silently renamed the key to "entity_type" in every tool
     # call, so extraction always failed Pydantic validation (Field required: type).
     role: str = Field(description="PC or NPC")
+    is_named_character: bool = Field(  # REQUIRED (no default) = pay-to-mint, like Item/Event
+        description="True ONLY for a named, plot-relevant individual (a specific "
+        "recurring NPC with a name, e.g. 'Berthold', 'Leandra'). False for generic "
+        "adversaries/extras: 'ein Goblin', 'die Wachen', 'Skelett-Nahkämpfer', "
+        "'Bugbear-Anführer' — each is a different instance, NOT a stable entity, so "
+        "they are NOT nodes (the horde is a Faction, the fight an Event).")
     aliases: list[str] = []
     description: str = Field(
         default="", description="Recurring personality, habits, or quirks — "

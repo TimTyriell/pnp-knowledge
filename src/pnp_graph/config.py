@@ -238,3 +238,16 @@ OOC_DENYLIST = (
     "twitch", "discord", "raid", "stream", "vtt", "talespire",
     "kinomodus", "turn-based-mode", "kampfmodus", "chat",
 )
+
+# Generic-mob backstop (macro-graph, mirrors is_named_artifact for Items): a
+# combat-fodder adversary is identity-unstable (each goblin is a different
+# goblin) so it never earns a node — the horde is a Faction, the fight an Event.
+# The schema's is_named_character gate is the primary dial; this deterministic
+# net catches the unmistakable combat types the model still mints. Kept
+# CONSERVATIVE on purpose (no 'bauer'/'magier' — those are often named NPCs);
+# folded/normalized tokens (resolve.is_generic_mob), so 'goblin' also hits
+# 'Goblins'/'Goblin-Schütze'. Named bosses survive via is_named_character=True.
+GENERIC_MOB_TERMS = (
+    "goblin", "bugbear", "skelett", "wildschwein", "kreatur",
+    "zombie", "ork", "bandit", "wache",
+)
