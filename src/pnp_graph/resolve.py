@@ -28,6 +28,7 @@ from .config import (
     CONFIDENCE_MAP,
     EVENT_PREDICATES,
     GENERIC_MOB_TERMS,
+    GENERIC_PLACE_TERMS,
     IDENTITY_PREDICATES,
     META_EVENT_TERMS,
     OOC_DENYLIST,
@@ -61,6 +62,13 @@ _TYPE_MAP = {
     "Faction": ("FACTION", "factions"),
     "RuleEntity": ("RULE", "rules"),  # only for non-SRD mints; SRD hits use the shared id
 }
+
+# Sections that resolve in-memory within a run but are NEVER loaded from or
+# written to disk. An Event is a specific one-off happening — it never recurs
+# across sessions, so persisting it only bloats the registry (was 831 entries)
+# and risks falsely merging two different scenes with the same title in
+# different sessions. Cleared on load, excluded on save.
+_EPHEMERAL_SECTIONS = frozenset({"events"})
 
 _UMLAUTS = str.maketrans({"ä": "ae", "ö": "oe", "ü": "ue", "ß": "ss", "Ä": "Ae", "Ö": "Oe", "Ü": "Ue"})
 _ARTICLE_RE = re.compile(r"^(der|die|das|ein|eine|the)\s+", re.IGNORECASE)
@@ -126,6 +134,13 @@ def is_generic_mob(surface: str) -> bool:
     return any(term in tok for tok in tokens for term in GENERIC_MOB_TERMS)
 
 
+def is_generic_place(surface: str) -> bool:
+    """Deterministic backstop for the is_named_location gate: a bare stage-dressing
+    common noun ('der Wald' -> 'wald') is not a macro-place. Whole-name match only
+    (NOT substring) so a real compound name ('Nebeliger Wald') survives."""
+    return normalize(surface) in GENERIC_PLACE_TERMS
+
+
 def slug(surface: str) -> str:
     """Human-readable id part: 'der Lindo Laut (Tim)' -> 'LindoLaut'."""
     s = _PAREN_RE.sub("", surface)
@@ -145,14 +160,17 @@ class Resolver:
             self.registry = {}
         for _, section in _TYPE_MAP.values():
             self.registry.setdefault(section, {})
+        for section in _EPHEMERAL_SECTIONS:  # never carry events across runs
+            self.registry[section] = {}
         self._dirty = False
 
     def save(self) -> None:
         if not self._dirty:
             return
         self.path.parent.mkdir(parents=True, exist_ok=True)
+        out = {k: v for k, v in self.registry.items() if k not in _EPHEMERAL_SECTIONS}
         self.path.write_text(
-            json.dumps(self.registry, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+            json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
         )
         self._dirty = False
 
@@ -495,6 +513,13 @@ def resolve_graph(
             continue
         add_edge(cid, session_node_id, "APPEARS_IN")
     for loc in extraction.locations:
+        # named-place gate (pay-to-mint, like is_named_artifact): generic
+        # stage-dressing ('der Wald', 'die Tür') is where a beat happens, not a
+        # macro-place — no node. The beat lives in the scene Event/Chunk.
+        if not loc.is_named_location or is_generic_place(loc.name):
+            dropped.append({"subject": loc.name, "predicate": "LOCATED_IN",
+                            "object": session_node_id, "reason": "generic place (not a named location)"})
+            continue
         register(loc.name, "Location", {"name": loc.name, "description": loc.description},
                  chunks_of("locations", loc.name))
     for item in extraction.items:

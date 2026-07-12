@@ -70,7 +70,7 @@
       "props": {
         "session_id": "2025-03-26",
         "confidence": "medium",
-        "name": "Bogen (Bow)",
+        "name": "Bogen",
         "status": "used",
         "evidence_chunks": [
           2
@@ -83,7 +83,7 @@
       "props": {
         "session_id": "2025-03-26",
         "confidence": "medium",
-        "name": "Schleichfurz",
+        "name": "der Schleichfurz",
         "aliases": [],
         "pending_notes": [],
         "is_pc": false,

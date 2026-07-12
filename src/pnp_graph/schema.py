@@ -27,6 +27,12 @@ class Character(BaseModel):
 
 class Location(BaseModel):
     name: str
+    is_named_location: bool = Field(  # REQUIRED (no default) = pay-to-mint, like Item/Character
+        description="True ONLY for a named, macro-structural place — a town, "
+        "dungeon, landmark, or region with its own identity (e.g. 'Breschka', "
+        "'Goblinlager', 'die Krypta'). False for generic stage-dressing that is "
+        "just where a beat happens: 'der Wald', 'ein Baum', 'die Tür', 'der "
+        "Raum', 'die Mauer' — those are NOT nodes.")
     description: str = ""
 
 

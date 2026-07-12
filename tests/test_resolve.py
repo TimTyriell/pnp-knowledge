@@ -373,6 +373,37 @@ def test_generic_mob_never_minted():
     assert sum(d["reason"].startswith("generic mob") for d in resolved["dropped"]) == 2
 
 
+def test_generic_place_never_minted():
+    # named-place gate (like is_named_character): generic stage-dressing earns no
+    # node — dropped by the model flag (is_named_location=False) or the backstop.
+    resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
+    r = _tmp_resolver()
+    info = _cast_info(r)
+    extraction = GraphExtraction(locations=[
+        Location(name="der Wald", is_named_location=True),    # backstop (generic term)
+        Location(name="ein Raum", is_named_location=False),   # schema gate
+        Location(name="Breschka", is_named_location=True),    # real place survives
+    ])
+    resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1)
+    names = {e["props"]["name"] for e in resolved["entities"] if e["type"] == "Location"}
+    assert "Breschka" in names
+    assert not any("Wald" in n or "Raum" in n for n in names)
+    assert sum(d["reason"].startswith("generic place") for d in resolved["dropped"]) == 2
+
+
+def test_events_never_persisted_to_registry():
+    # An event is a one-off happening: it resolves in-memory but is never written
+    # to the registry (kills bloat + cross-session false-merges of same-title scenes).
+    tmp = Path(tempfile.mkdtemp()) / "reg.json"
+    tmp.write_text("{}", encoding="utf-8")
+    r = Resolver(tmp)
+    r.resolve("Monster is defeated", "Event")
+    assert r.registry["events"]           # minted in-memory
+    r._dirty = True
+    r.save()
+    assert json.loads(tmp.read_text(encoding="utf-8")).get("events", {}) == {}  # not on disk
+
+
 def test_gm_fuzzy_match_catches_asr_noise():
     # 'Dennis' for 'Deniz' — the same ASR mangling pattern that produced
     # CHAR_Kieler in the diagnostic run; is_gm_surface must fuzzy-match it.
@@ -474,7 +505,7 @@ def test_cross_type_collision_first_seen_wins():
     r = _tmp_resolver()
     info = _cast_info(r)
     extraction = GraphExtraction(
-        locations=[Location(name="Auftraggeber")],   # processed before factions
+        locations=[Location(name="Auftraggeber", is_named_location=True)],   # processed before factions
         factions=[Faction(name="Auftraggeber")],
     )
     evidence = {("locations", "Auftraggeber"): [2], ("factions", "Auftraggeber"): [7]}
@@ -493,7 +524,7 @@ def test_pc_never_duplicated_as_location():
     resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
     r = _tmp_resolver()
     info = _cast_info(r)
-    extraction = GraphExtraction(locations=[Location(name="Cookie")])
+    extraction = GraphExtraction(locations=[Location(name="Cookie", is_named_location=True)])
     resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1)
     assert not any(e["id"].startswith("LOC_Cookie") for e in resolved["entities"])
 

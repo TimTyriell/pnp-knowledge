@@ -251,3 +251,15 @@ GENERIC_MOB_TERMS = (
     "goblin", "bugbear", "skelett", "wildschwein", "kreatur",
     "zombie", "ork", "bandit", "wache",
 )
+
+# Generic-place backstop for the is_named_location gate. Matched against the
+# WHOLE normalized name (resolve.is_generic_place), NOT substrings — so bare
+# stage-dressing ('der Wald' -> 'wald') drops while a real compound place
+# ('Nebeliger Wald', 'Haus des Händlers') is left to the schema gate. Kept
+# short and unmistakable; ambiguous heads (Berg/Haus/Dorf/Raum) are NOT here —
+# those get judged by is_named_location upstream.
+GENERIC_PLACE_TERMS = frozenset({
+    "wald", "baum", "baeume", "stein", "steine", "mauer", "mauern", "wand",
+    "tuer", "dach", "treppe", "treppen", "nebel", "blume", "blumen", "kisten",
+    "kiste", "boden", "natur", "nature", "bruecke", "wasser", "statue",
+})
