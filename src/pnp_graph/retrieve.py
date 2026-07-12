@@ -51,7 +51,7 @@ def _expand(driver, entity_ids: list[str], as_of_session: int | None) -> dict:
     with driver.session() as db:
         nodes = db.run(
             "MATCH (n:Entity) WHERE n.id IN $ids RETURN n.id AS id, n.type AS type, "
-            "n.name AS name, n.status AS status", ids=entity_ids,
+            "n.name AS name, n.status AS status, n.text AS text", ids=entity_ids,
         ).data()
         edges = db.run(
             # directed pattern (never -[r]-) so an edge between two seed
@@ -70,6 +70,9 @@ def _expand(driver, entity_ids: list[str], as_of_session: int | None) -> dict:
 def _format_context(ctx: dict) -> str:
     lines = ["Entities:"]
     for n in ctx["nodes"]:
+        if n.get("type") == "Chunk":  # WP13.5: verbatim source text, not the usual name line
+            lines.append(f"  - {n['id']} (source passage): {n.get('text', '').strip()}")
+            continue
         status = f", status={n['status']}" if n.get("status") else ""
         lines.append(f"  - {n['id']} ({n['type']}): {n['name']}{status}")
     lines.append("Facts:")

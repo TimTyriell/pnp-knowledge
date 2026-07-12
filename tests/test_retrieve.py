@@ -47,6 +47,16 @@ def test_format_context_renders_status_and_fact_bits():
     assert "Lindo Laut -TRUSTS-> Dodo [session=2025-03-26, confidence=high, \"beste Freunde\"]" in text
 
 
+def test_format_context_renders_chunk_as_source_passage():
+    # WP13.5: a Chunk seed shows its raw text, not the usual name/status line.
+    ctx = {"nodes": [{"id": "CHUNK_2025-03-26_001_01", "type": "Chunk",
+                      "text": "[00:00] GM:\n  Ein Monster taucht auf.\n\n"}],
+           "edges": []}
+    text = _format_context(ctx)
+    assert "CHUNK_2025-03-26_001_01 (source passage):" in text
+    assert "Ein Monster taucht auf." in text
+
+
 if __name__ == "__main__":
     for name, fn in sorted(globals().items()):
         if name.startswith("test_") and callable(fn):

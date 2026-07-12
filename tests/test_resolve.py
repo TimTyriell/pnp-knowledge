@@ -243,9 +243,9 @@ def test_chunk_passages_minted_and_linked_via_mentions():
         characters=[Character(name="Monster", role="NPC")],
     )
     evidence = {("characters", "Monster"): [1]}
-    chunks = ["[00:00] GM:\n  Ein Monster taucht auf.\n\n"]
+    chunk_texts = ["[00:00] GM:\n  Ein Monster taucht auf.\n\n"]
     resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1,
-                             evidence=evidence, chunks=chunks)
+                             evidence=evidence, chunk_texts=chunk_texts)
     chunk_entities = [e for e in resolved["entities"] if e["type"] == "Chunk"]
     assert len(chunk_entities) == 1
     assert chunk_entities[0]["id"] == "CHUNK_2025-03-26_001_01"

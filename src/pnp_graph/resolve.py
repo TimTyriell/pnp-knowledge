@@ -289,7 +289,7 @@ def resolve_graph(
     seq: int = 0,
     evidence: dict | None = None,
     srd_index=None,
-    chunks: list[str] | None = None,
+    chunk_texts: list[str] | None = None,
 ) -> dict:
     """GraphExtraction + cast -> {'entities': [...], 'edges': [...]} keyed on ids.
 
@@ -298,11 +298,13 @@ def resolve_graph(
     With `evidence` (extract.py sidecar), every extracted fact gets an
     `evidence_chunks[]` property (chunk indices) — no separate Scene nodes/edges.
     Unresolvable endpoints drop the edge into state/failures/<sid>/dropped_edges.jsonl.
-    With `chunks` (the raw extraction chunk texts, 1:1 with evidence_chunks
-    indices), every chunk is split into small `Chunk` passages and embedded
-    (WP13.5, docs/evolution/13) — the "vector = das Buch" half: MENTIONS edges
-    link each passage to every entity whose evidence_chunks include that scene,
-    so graph expansion from an entity can pull the verbatim source text.
+    With `chunk_texts` (the raw extraction chunk texts, 1:1 with evidence_chunks
+    indices — named distinctly from the `chunks` local used elsewhere in this
+    function for a per-item evidence_chunks list, never the same thing), every
+    chunk is split into small `Chunk` passages and embedded (WP13.5,
+    docs/evolution/13) — the "vector = das Buch" half: MENTIONS edges link
+    each passage to every entity whose evidence_chunks include that scene, so
+    graph expansion from an entity can pull the verbatim source text.
     """
     evidence = evidence or {}
     session_node_id = f"SESS_{session_id}"
@@ -591,11 +593,11 @@ def resolve_graph(
     # --- WP13.5: chunk-level passages for the vector store ("vector = das
     # Buch") — split AFTER every other entity is registered, so MENTIONS can
     # link a passage to everything whose evidence_chunks name that scene. -----
-    if chunks:
+    if chunk_texts:
         mentionable = [(eid, rec) for eid, rec in entities.items()
                        if rec["props"].get("evidence_chunks")]
         n_passages = 0
-        for i, chunk_text in enumerate(chunks, start=1):
+        for i, chunk_text in enumerate(chunk_texts, start=1):
             for j, passage in enumerate(split_passages(chunk_text), start=1):
                 cid = f"CHUNK_{session_id}_{i:03d}_{j:02d}"
                 add_entity(cid, "Chunk", {

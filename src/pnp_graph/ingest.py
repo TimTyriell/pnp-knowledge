@@ -66,7 +66,7 @@ def ingest(transcript_dir: Path = TRANSCRIPT_DIR, only: str | None = None) -> No
                     len(graph.relationships),
                 )
                 resolved = resolve_graph(resolver, graph, sid, cast_info, seq,
-                                         evidence=evidence, srd_index=srd_index)
+                                         evidence=evidence, srd_index=srd_index, chunk_texts=chunks)
                 write_session(driver, resolved)
                 embed_entities(driver, [e["id"] for e in resolved["entities"]])
                 qa = run_qa(driver)
