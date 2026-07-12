@@ -314,6 +314,14 @@
     "CHAR_FarmerSWife": {
       "canonical": "The Farmer's Wife",
       "aliases": []
+    },
+    "CHAR_Philips": {
+      "canonical": "Philips",
+      "aliases": []
+    },
+    "CHAR_Surveying": {
+      "canonical": "Surveying",
+      "aliases": []
     }
   },
   "locations": {
@@ -827,7 +835,9 @@
     },
     "LOC_StatueLocation": {
       "canonical": "Statue Location",
-      "aliases": []
+      "aliases": [
+        "Statue's Location (within the Burg)"
+      ]
     },
     "LOC_Statue": {
       "canonical": "Statue (with fire below)",
@@ -987,6 +997,22 @@
     },
     "LOC_Mieter": {
       "canonical": "der Mieter",
+      "aliases": []
+    },
+    "LOC_Tirell": {
+      "canonical": "Tirell (or similar location)",
+      "aliases": []
+    },
+    "LOC_MapLocationWithGuards": {
+      "canonical": "Map location with guards",
+      "aliases": []
+    },
+    "LOC_MonolithenRaum": {
+      "canonical": "Monolithen Raum",
+      "aliases": []
+    },
+    "LOC_MagiewelleRaum": {
+      "canonical": "Magiewelle Raum",
       "aliases": []
     }
   },
@@ -1684,6 +1710,38 @@
     "ITEM_Spitzding": {
       "canonical": "Spitzding",
       "aliases": []
+    },
+    "ITEM_Schluessel": {
+      "canonical": "Schlüssel",
+      "aliases": []
+    },
+    "ITEM_KleineHoelzerneSkulptur": {
+      "canonical": "kleine hölzerne Skulptur",
+      "aliases": []
+    },
+    "ITEM_Buch": {
+      "canonical": "Buch",
+      "aliases": []
+    },
+    "ITEM_USBStick": {
+      "canonical": "USB-Stick",
+      "aliases": []
+    },
+    "ITEM_OSBStick": {
+      "canonical": "OSB-Stick",
+      "aliases": []
+    },
+    "ITEM_Frosch": {
+      "canonical": "Frosch (Ribbet)",
+      "aliases": []
+    },
+    "ITEM_Buecher": {
+      "canonical": "Bücher",
+      "aliases": []
+    },
+    "ITEM_Armor": {
+      "canonical": "Armor",
+      "aliases": []
     }
   },
   "quests": {
@@ -2044,6 +2102,30 @@
     },
     "QUEST_GoblinAngriff": {
       "canonical": "Goblin-Angriff",
+      "aliases": []
+    },
+    "QUEST_UntersuchungDerAltenBurgUndKrypta": {
+      "canonical": "Untersuchung der Alten Burg und Krypta",
+      "aliases": []
+    },
+    "QUEST_MissionGegenFellbiester": {
+      "canonical": "Mission gegen Fellbiester",
+      "aliases": []
+    },
+    "QUEST_UntersuchenDerStatueUndDesOrtes": {
+      "canonical": "Untersuchen der Statue und des Ortes",
+      "aliases": []
+    },
+    "QUEST_BlutopferAnDerStatue": {
+      "canonical": "Blutopfer an der Statue",
+      "aliases": []
+    },
+    "QUEST_NachforschungenUeberDieMonolithenUndIhreVerbindungZuBreschka": {
+      "canonical": "Nachforschungen über die Monolithen und ihre Verbindung zu Breschka",
+      "aliases": []
+    },
+    "QUEST_SucheNachEinerZielpersonImOrt": {
+      "canonical": "Suche nach einer Zielperson im Ort",
       "aliases": []
     }
   },
@@ -3623,7 +3705,9 @@
     },
     "EVT_LindoLautSpotsAGnomeInTheTower": {
       "canonical": "Lindo Laut spots a Gnome in the Tower",
-      "aliases": []
+      "aliases": [
+        "Lindo Laut spots a Gnome in the Turm"
+      ]
     },
     "EVT_LindoLautApproachesPhipps": {
       "canonical": "Lindo Laut approaches Phipps",
@@ -3639,7 +3723,9 @@
     },
     "EVT_EsterossaEntersThroughWindow": {
       "canonical": "Esterossa enters through window",
-      "aliases": []
+      "aliases": [
+        "Esterossa enters through a window"
+      ]
     },
     "EVT_DodoSFrustrationWithDoubleDoors": {
       "canonical": "Dodo's frustration with double doors",
@@ -3699,7 +3785,9 @@
     },
     "EVT_RequestForTipsFromPhilips": {
       "canonical": "Request for Tips from Philips",
-      "aliases": []
+      "aliases": [
+        "Request for Tips from Phipps"
+      ]
     },
     "EVT_CharacterSuspicionAndHiddenInformation": {
       "canonical": "Character suspicion and hidden information",
@@ -3763,7 +3851,9 @@
     },
     "EVT_DodoIsTargetedByAFairySBolt": {
       "canonical": "Dodo is targeted by a fairy's bolt",
-      "aliases": []
+      "aliases": [
+        "Dodo is targeted by a fairy bolt"
+      ]
     },
     "EVT_DodoDeclaresInnovationValue": {
       "canonical": "Dodo declares Innovation value",
@@ -3879,11 +3969,15 @@
     },
     "EVT_CookieAttemptsToTargetAnEnemySKnee": {
       "canonical": "Cookie attempts to target an enemy's knee",
-      "aliases": []
+      "aliases": [
+        "Cookie attempts to target enemy's knee"
+      ]
     },
     "EVT_CookieDealsDamageToAnEnemy": {
       "canonical": "Cookie deals damage to an enemy",
-      "aliases": []
+      "aliases": [
+        "Cookie deals damage to enemy"
+      ]
     },
     "EVT_EnemyAttacksTheFlyingPaladin": {
       "canonical": "Enemy attacks the flying paladin",
@@ -3901,7 +3995,9 @@
     },
     "EVT_DodoBlocksTheAttackWithShield": {
       "canonical": "Dodo blocks the attack with shield",
-      "aliases": []
+      "aliases": [
+        "Dodo blocks the attack with his shield"
+      ]
     },
     "EVT_DodoUsesShieldToBlockAttack": {
       "canonical": "Dodo uses shield to block attack",
@@ -4041,7 +4137,9 @@
     },
     "EVT_DiscoveringFreshNamesInTheBook": {
       "canonical": "Discovering Fresh Names in the Book",
-      "aliases": []
+      "aliases": [
+        "Discovery of Fresh Names in the Book"
+      ]
     },
     "EVT_InvestigatingThePillar": {
       "canonical": "Investigating the Pillar (Stein)",
@@ -4878,6 +4976,386 @@
     "EVT_IntroductionOfParallelmission": {
       "canonical": "Introduction of Parallelmission",
       "aliases": []
+    },
+    "EVT_CampArrival": {
+      "canonical": "Camp Arrival",
+      "aliases": []
+    },
+    "EVT_DecisionToExploreKrypte": {
+      "canonical": "Decision to Explore Krypte",
+      "aliases": []
+    },
+    "EVT_EsterossaSPrayerAndBlessing": {
+      "canonical": "Esterossa's Prayer and Blessing",
+      "aliases": []
+    },
+    "EVT_DecisionToApproachKryptoVerlassen": {
+      "canonical": "Decision to approach Krypto Verlassen",
+      "aliases": []
+    },
+    "EVT_DiscoveryOfFireInTheTurm": {
+      "canonical": "Discovery of fire in the Turm",
+      "aliases": []
+    },
+    "EVT_LindoLautAttemptsToCommunicateWithTheGnome": {
+      "canonical": "Lindo Laut attempts to communicate with the Gnome",
+      "aliases": []
+    },
+    "EVT_PhippsIntroducesHimselfAndOffersHelp": {
+      "canonical": "Phipps introduces himself and offers help",
+      "aliases": []
+    },
+    "EVT_PhippsAllowsLindoSGroupToEnter": {
+      "canonical": "Phipps allows Lindo's group to enter",
+      "aliases": []
+    },
+    "EVT_DodoAndCookieReactToDoubleDoors": {
+      "canonical": "Dodo and Cookie react to double doors",
+      "aliases": []
+    },
+    "EVT_PhippsReactsToRotunasArrival": {
+      "canonical": "Phipps reacts to Rotunas' arrival",
+      "aliases": []
+    },
+    "EVT_RotunasAndCookieRecognizePhipps": {
+      "canonical": "Rotunas and Cookie recognize Phipps",
+      "aliases": []
+    },
+    "EVT_LindoLautAsksAboutPhippsSolitude": {
+      "canonical": "Lindo Laut asks about Phipps' solitude",
+      "aliases": []
+    },
+    "EVT_PhippsRevealsHisCompanions": {
+      "canonical": "Phipps reveals his companions",
+      "aliases": []
+    },
+    "EVT_RotunasAsksAboutTheCityAndKryptaLocation": {
+      "canonical": "Rotunas asks about the city and Krypta location",
+      "aliases": []
+    },
+    "EVT_PhippsDescribesTheNearbyAlteBurgAndKrypta": {
+      "canonical": "Phipps describes the nearby Alte Burg and Krypta",
+      "aliases": []
+    },
+    "EVT_PhippsDescribesTheInhabitantsOfTheKrypta": {
+      "canonical": "Phipps describes the inhabitants of the Krypta",
+      "aliases": []
+    },
+    "EVT_CookieCommentsOnPhippsDescriptionOfOthers": {
+      "canonical": "Cookie comments on Phipps' description of others",
+      "aliases": []
+    },
+    "EVT_FellbiesterInDerAltenBurg": {
+      "canonical": "Fellbiester in der Alten Burg",
+      "aliases": []
+    },
+    "EVT_PhippsPastInTheCastle": {
+      "canonical": "Phipps' Past in the Castle",
+      "aliases": []
+    },
+    "EVT_PhippsPotentialHiddenTreasure": {
+      "canonical": "Phipps' Potential Hidden Treasure",
+      "aliases": []
+    },
+    "EVT_FipsReluctanceToGoToKrypta": {
+      "canonical": "Fips' reluctance to go to Krypta",
+      "aliases": []
+    },
+    "EVT_DecisionToLeaveRotunasBehind": {
+      "canonical": "Decision to leave Rotunas behind",
+      "aliases": []
+    },
+    "EVT_RotunasFarewellMessage": {
+      "canonical": "Rotunas' farewell message",
+      "aliases": []
+    },
+    "EVT_BurgGruessScene": {
+      "canonical": "Burg-Grüß-Scene",
+      "aliases": []
+    },
+    "EVT_ScheuneExploration": {
+      "canonical": "Scheune-Exploration",
+      "aliases": []
+    },
+    "EVT_CeilingFallEvent": {
+      "canonical": "Ceiling-Fall-Event",
+      "aliases": []
+    },
+    "EVT_InstinctiveActionToSaveFallingWood": {
+      "canonical": "Instinctive Action to Save Falling Wood",
+      "aliases": []
+    },
+    "EVT_DiscoveryOfVoodooPuppe": {
+      "canonical": "Discovery of Voodoo-Puppe",
+      "aliases": []
+    },
+    "EVT_VoodooPuppeSEffectOnEnvironment": {
+      "canonical": "Voodoo-Puppe's Effect on Environment",
+      "aliases": []
+    },
+    "EVT_DecisionToTakeVoodooPuppe": {
+      "canonical": "Decision to Take Voodoo-Puppe",
+      "aliases": []
+    },
+    "EVT_CookieTakesTheWoodenPuppet": {
+      "canonical": "Cookie takes the wooden puppet",
+      "aliases": []
+    },
+    "EVT_DodoSSuccessfulDefenseAgainstPhysicalDamage": {
+      "canonical": "Dodo's successful defense against physical damage",
+      "aliases": []
+    },
+    "EVT_RotunasBlocking3PointsOfDamageWithArmor": {
+      "canonical": "Rotunas blocking 3 points of damage with armor",
+      "aliases": []
+    },
+    "EVT_CookieAndRotunasTransferringTabasArmour": {
+      "canonical": "Cookie and Rotunas transferring Tabas Armour",
+      "aliases": []
+    },
+    "EVT_LindoLautCallingForATacticalRetreat": {
+      "canonical": "Lindo Laut calling for a tactical retreat",
+      "aliases": []
+    },
+    "EVT_DodoSuggestsScoutingOverTheWall": {
+      "canonical": "Dodo suggests scouting over the wall",
+      "aliases": []
+    },
+    "EVT_GMRevealsAdditionalGuardsInTheArea": {
+      "canonical": "GM reveals additional guards in the area",
+      "aliases": []
+    },
+    "EVT_CookieClaimsToBeSneaky": {
+      "canonical": "Cookie claims to be sneaky",
+      "aliases": []
+    },
+    "EVT_LindoLautPlansASurpriseAttackUsingMagic": {
+      "canonical": "Lindo Laut plans a surprise attack using magic",
+      "aliases": []
+    },
+    "EVT_LindoLautSSpellAttemptFailsDramatically": {
+      "canonical": "Lindo Laut's spell attempt fails dramatically",
+      "aliases": []
+    },
+    "EVT_RotunasJumpsOverTheWallAndAttacksWithALightningStrike": {
+      "canonical": "Rotunas jumps over the wall and attacks with a lightning strike",
+      "aliases": []
+    },
+    "EVT_LindoLautUsesLackbaenderToCreateAPressureWave": {
+      "canonical": "Lindo Laut uses Lackbänder to create a pressure wave",
+      "aliases": []
+    },
+    "EVT_RotunasEvadesTwoAttacks": {
+      "canonical": "Rotunas evades two attacks",
+      "aliases": []
+    },
+    "EVT_EsterossaTakes1HPDamageFromAttack": {
+      "canonical": "Esterossa takes 1 HP damage from attack",
+      "aliases": []
+    },
+    "EVT_EnemyAttacksCookieDirectly": {
+      "canonical": "Enemy attacks Cookie directly",
+      "aliases": []
+    },
+    "EVT_DodoIntervenesToBlockAttackOnCookie": {
+      "canonical": "Dodo intervenes to block attack on Cookie",
+      "aliases": []
+    },
+    "EVT_DodoAttemptsToUseExperienceAsBodyguardOfTheGoblinKoenigs": {
+      "canonical": "Dodo attempts to use Experience as 'Bodyguard of the Goblin-Königs'",
+      "aliases": []
+    },
+    "EVT_BlitzKillsAnEnemy": {
+      "canonical": "Blitz kills an enemy",
+      "aliases": []
+    },
+    "EVT_BugbearSneezesAndFalls": {
+      "canonical": "Bugbear sneezes and falls",
+      "aliases": []
+    },
+    "EVT_DodoActivatesArmorSlotWithBonus": {
+      "canonical": "Dodo activates armor slot with bonus",
+      "aliases": []
+    },
+    "EVT_RemainingEnemyAtTheEndOfTheBurg": {
+      "canonical": "Remaining enemy at the end of the Burg",
+      "aliases": []
+    },
+    "EVT_CookieActivatesRangerFokus": {
+      "canonical": "Cookie activates Ranger-Fokus",
+      "aliases": []
+    },
+    "EVT_LindoLautUsesIceSpikes": {
+      "canonical": "Lindo Laut uses Ice Spikes",
+      "aliases": []
+    },
+    "EVT_MonsterGrowsInSize": {
+      "canonical": "Monster grows in size",
+      "aliases": []
+    },
+    "EVT_MonsterAttacksDodo": {
+      "canonical": "Monster attacks Dodo",
+      "aliases": []
+    },
+    "EVT_CookieCastsRankenFromTheGround": {
+      "canonical": "Cookie casts Ranken from the ground",
+      "aliases": []
+    },
+    "EVT_RallyDieVerteilt": {
+      "canonical": "Rally Die verteilt",
+      "aliases": []
+    },
+    "EVT_StatueUntersuchtUndIdentifiziert": {
+      "canonical": "Statue untersucht und identifiziert",
+      "aliases": []
+    },
+    "EVT_FeuerkreaturAngriff": {
+      "canonical": "Feuerkreatur Angriff",
+      "aliases": []
+    },
+    "EVT_SearchingForLindaSNameOnUSBStick": {
+      "canonical": "Searching for Linda's Name on USB-Stick",
+      "aliases": []
+    },
+    "EVT_InvestigationOfThePillarStone": {
+      "canonical": "Investigation of the Pillar/Stone",
+      "aliases": []
+    },
+    "EVT_RotunasAttemptsToSenseMagicInTheStone": {
+      "canonical": "Rotunas attempts to sense magic in the stone",
+      "aliases": []
+    },
+    "EVT_MagiewurfFailsToDetectMagic": {
+      "canonical": "Magiewurf fails to detect magic",
+      "aliases": []
+    },
+    "EVT_EsterossaExaminesTheGravestone": {
+      "canonical": "Esterossa examines the gravestone",
+      "aliases": []
+    },
+    "EVT_EsterossaAttemptsToOpenTheDoorByLeaningAgainstIt": {
+      "canonical": "Esterossa attempts to open the door by leaning against it",
+      "aliases": []
+    },
+    "EVT_CookieTriesToCommunicateWithTheTree": {
+      "canonical": "Cookie tries to communicate with the tree",
+      "aliases": []
+    },
+    "EVT_CookieAttemptsAnInstinktwurfToConfirmTheTreeSStatus": {
+      "canonical": "Cookie attempts an Instinktwurf to confirm the tree's status",
+      "aliases": []
+    },
+    "EVT_EsterossaPicksUpBuchMitNamensliste": {
+      "canonical": "Esterossa picks up Buch mit Namensliste",
+      "aliases": []
+    },
+    "EVT_RotunasAsksIfTheStoneCanBeMoved": {
+      "canonical": "Rotunas asks if the stone can be moved",
+      "aliases": []
+    },
+    "EVT_GroupMovesForwardAfterFailedAttemptsToOpenTheDoor": {
+      "canonical": "Group moves forward after failed attempts to open the door",
+      "aliases": []
+    },
+    "EVT_EntdeckungDerTuerUndVorbereitungZumOeffnen": {
+      "canonical": "Entdeckung der Tür und Vorbereitung zum Öffnen",
+      "aliases": []
+    },
+    "EVT_MonolithenFalleWarnung": {
+      "canonical": "Monolithen Falle Warnung",
+      "aliases": []
+    },
+    "EVT_LindoLautSIntroduction": {
+      "canonical": "Lindo Laut's Introduction",
+      "aliases": []
+    },
+    "EVT_EsterossaAsksAboutLindoLaut": {
+      "canonical": "Esterossa Asks About Lindo Laut",
+      "aliases": []
+    },
+    "EVT_BuecherExplorationAndDiscoveryOfResearch": {
+      "canonical": "Bücher Exploration and Discovery of Research",
+      "aliases": []
+    },
+    "EVT_SearchForATargetInTheLocation": {
+      "canonical": "Search for a Target in the Location",
+      "aliases": []
+    },
+    "EVT_DiscoveryOfTheTreasureRoom": {
+      "canonical": "Discovery of the Treasure Room",
+      "aliases": []
+    },
+    "EVT_LindoLautSVoiceAnnouncesTheTreasure": {
+      "canonical": "Lindo Laut's Voice Announces the Treasure",
+      "aliases": []
+    },
+    "EVT_EsterossaEntersTheTreasureRoom": {
+      "canonical": "Esterossa Enters the Treasure Room",
+      "aliases": []
+    },
+    "EVT_LindoLautMocksTheGroupForBeingPredictable": {
+      "canonical": "Lindo Laut Mocks the Group for Being Predictable",
+      "aliases": []
+    },
+    "EVT_DodoBlocksAnAttack": {
+      "canonical": "Dodo blocks an attack",
+      "aliases": []
+    },
+    "EVT_CookieCastsASpellOnASkeleton": {
+      "canonical": "Cookie casts a spell on a skeleton",
+      "aliases": []
+    },
+    "EVT_DodoEvadesAndDealsDamage": {
+      "canonical": "Dodo evades and deals damage",
+      "aliases": []
+    },
+    "EVT_RotunasDefeatsTheSkeletonWithStrength": {
+      "canonical": "Rotunas defeats the skeleton with strength",
+      "aliases": []
+    },
+    "EVT_EsterossaHealsHerselfWithMendingTouch": {
+      "canonical": "Esterossa heals herself with Mending Touch",
+      "aliases": []
+    },
+    "EVT_StatueNamedSurveying": {
+      "canonical": "Statue Named Surveying",
+      "aliases": []
+    },
+    "EVT_DecisionToAvoidTriggeringMechanism": {
+      "canonical": "Decision to Avoid Triggering Mechanism",
+      "aliases": []
+    },
+    "EVT_DoorOpeningAndHackEncounter": {
+      "canonical": "Door Opening and Hack Encounter",
+      "aliases": []
+    },
+    "EVT_DoorsClosingOnRotunas": {
+      "canonical": "Doors Closing on Rotunas",
+      "aliases": []
+    },
+    "EVT_IntroductionOfDodoAndLanra": {
+      "canonical": "Introduction of Dodo and Lanra",
+      "aliases": []
+    },
+    "EVT_IntroductionOfKukiAndEsterossa": {
+      "canonical": "Introduction of Kuki and Esterossa",
+      "aliases": []
+    },
+    "EVT_LindoLautSPerformance": {
+      "canonical": "Lindo Laut's Performance",
+      "aliases": []
+    },
+    "EVT_LindoLautSShowFilmMentality": {
+      "canonical": "Lindo Laut's Show-Film Mentality",
+      "aliases": []
+    },
+    "EVT_CookieSVoodooPuppeAttempt": {
+      "canonical": "Cookie's Voodoo-Puppe Attempt",
+      "aliases": []
+    },
+    "EVT_DiscoveryOfSchriftrollenAndMissionClue": {
+      "canonical": "Discovery of Schriftrollen and Mission Clue",
+      "aliases": []
     }
   },
   "factions": {
@@ -4941,7 +5419,9 @@
     },
     "FACTION_GoblinKoenig": {
       "canonical": "Goblin-König",
-      "aliases": []
+      "aliases": [
+        "Goblin-Königs"
+      ]
     },
     "FACTION_Backbaeren": {
       "canonical": "Backbären",
@@ -5067,6 +5547,14 @@
     },
     "RULE_GAMEMECHANIC_DoppelteWuerfe": {
       "canonical": "Doppelte Würfe (Double Tap)",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_D6RallyDie": {
+      "canonical": "D6 Rally Die",
+      "aliases": []
+    },
+    "RULE_CLASSFEATURE_Instinktwurf": {
+      "canonical": "Instinktwurf",
       "aliases": []
     }
   }
