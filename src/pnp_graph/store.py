@@ -148,17 +148,53 @@ _QA_QUERIES = {
         "MATCH (e:Entity{type:'Event'}) "
         "WHERE NOT (e)-[:PARTICIPATED_IN|TARGETS|RESULTED_IN|TRIGGERED|AT_LOCATION]-() "
         "RETURN count(e) AS c"),
+    # audit v6 acceptance checks (docs/audit_neo4j_exportv6.md §8) ------------
+    "forbidden_decision_nodes": (  # 9. Decision is a banned node type
+        "MATCH (n:Entity {type:'Decision'}) RETURN count(n) AS c"),
+    "provenance_gap": (  # 10. every non-SRD entity needs session provenance
+        "MATCH (n:Entity) WHERE (n.session_id IS NULL OR n.session_id <> 'SRD') "
+        "AND NOT n.type IN ['Session','Player'] AND n.evidence_chunks IS NULL "
+        "AND NOT (n)-[:IN_SESSION|APPEARS_IN]-() RETURN count(n) AS c"),
+    "bidirectional_dup_edges": (  # 11. symmetric predicates written both ways
+        "MATCH (a:Entity)-[r]->(b:Entity) MATCH (b)-[r2]->(a) "
+        "WHERE type(r) = type(r2) AND type(r) IN ['ALLIED_WITH','HOSTILE_TO','KNOWS'] "
+        "AND a.id < b.id RETURN count(*) AS c"),
 }
 _QA_BLOCKERS = ("dup_names", "cross_type_names", "missing_provenance", "timeline_unlinked",
-                "orphan_events")
+                "orphan_events", "forbidden_decision_nodes", "provenance_gap",
+                "bidirectional_dup_edges")
+
+# identity-critical types for the near-duplicate review gate (audit v6 test 3);
+# Events legitimately repeat similar titles across sessions, Sessions/Players
+# are backbone.
+_SIMILAR_NAME_TYPES = ("Character", "Location", "Quest", "Item", "Faction")
 
 
 def run_qa(driver) -> dict:
     """{check: count} for every QA query; log blockers loudly."""
+    import difflib
+    from itertools import combinations
+
     results = {}
     with driver.session() as db:
         for name, query in _QA_QUERIES.items():
             results[name] = db.run(query).single()["c"]
+        rows = db.run(
+            "MATCH (n:Entity) WHERE (n.session_id IS NULL OR n.session_id <> 'SRD') "
+            "AND n.type IN $types RETURN n.type AS type, toLower(n.name) AS name",
+            types=list(_SIMILAR_NAME_TYPES)).data()
+    # audit v6 test 3, flag-only (review, not auto-fix): same-type pairs with
+    # name similarity >= 0.9 that survived resolution + adjudication.
+    pairs = 0
+    by_type: dict[str, list[str]] = {}
+    for row in rows:
+        if row["name"]:
+            by_type.setdefault(row["type"], []).append(row["name"])
+    for names in by_type.values():
+        for x, y in combinations(names, 2):
+            if difflib.SequenceMatcher(None, x, y).ratio() >= 0.9:
+                pairs += 1
+    results["similar_name_pairs_review"] = pairs
     for name in _QA_BLOCKERS:
         if results[name]:
             log.error("QA BLOCKER: %s = %d (must be 0)", name, results[name])

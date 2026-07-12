@@ -97,7 +97,7 @@ NUM_PREDICT = 4096
 # plain function-calling's occasional missed tool-call.
 DEEPSEEK_BASE_URL = "https://api.deepseek.com"
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
-FLAGSHIP_MAX_TOKENS = 8192  # DeepSeek output cap; megachunks -> larger JSON output
+FLAGSHIP_MAX_TOKENS = 32768  # was 8192: too low for dense combat chunks, truncated JSON -> None
 
 NEO4J_URL = "bolt://localhost:7687"  # container runs NEO4J_AUTH=none, no user/password
 
