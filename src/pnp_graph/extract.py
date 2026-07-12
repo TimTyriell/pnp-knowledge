@@ -170,19 +170,26 @@ def _known_world_line(known: dict[str, list[str]] | None) -> str:
     )
 
 
-def _invoke_with_retry(extractor, prompt: str, chunk: str, chunk_index: int, label: str):
-    try:
-        result = extractor.invoke(prompt + chunk)
-        if result is None:
-            raise ValueError("structured output returned None")
-    except Exception as exc:  # one retry with a JSON reminder (PLAN.md phase 5)
-        log.warning("chunk %d %s-pass extraction failed (%s) — retrying once",
-                    chunk_index, label, exc)
-        result = extractor.invoke(
-            prompt + chunk + "\n\nReturn ONLY valid JSON matching the schema. No prose.")
-        if result is None:
-            raise ValueError("structured output returned None on retry")
-    return result
+def _invoke_with_retry(extractor, prompt: str, chunk: str, chunk_index: int, label: str,
+                       attempts: int = 3):
+    """DeepSeek's function_calling occasionally misses the tool_call and returns
+    None — a transient, retry-recoverable failure (verified: most flaky chunks
+    succeed on a second try). Retry up to `attempts` times with a JSON reminder
+    before giving up to the failure-dump path."""
+    reminder = "\n\nReturn ONLY valid JSON matching the schema. No prose."
+    last_exc: Exception | None = None
+    for i in range(attempts):
+        try:
+            result = extractor.invoke(prompt + chunk + (reminder if i else ""))
+            if result is None:
+                raise ValueError("structured output returned None")
+            return result
+        except Exception as exc:
+            last_exc = exc
+            if i + 1 < attempts:
+                log.warning("chunk %d %s-pass extraction failed (%s) — retry %d/%d",
+                            chunk_index, label, exc, i + 1, attempts - 1)
+    raise ValueError(f"structured output failed after {attempts} attempts: {last_exc}")
 
 
 def extract_chunk(extractor, chunk: str, chunk_index: int,
