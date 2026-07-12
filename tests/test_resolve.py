@@ -15,7 +15,7 @@ from pnp_graph.chunking import parse_speaker, session_cast
 from pnp_graph.resolve import (Resolver, is_out_of_world, map_predicate, normalize,
                                normalize_confidence, predicate_class, resolve_graph, slug)
 from pnp_graph.schema import (Character, Decision, Event, Faction, GraphExtraction, Item,
-                              Location, Relationship, RollEvent, RuleEntity, Trait)
+                              Location, Relationship, RollEvent, RuleEntity)
 from pnp_graph.srd import SrdIndex
 
 CAST_LABELS = ["Tim (Lindo Laut)", "Marco (Dodo)", "Celin (Cookie)", "Deniz (GM)"]
@@ -105,9 +105,9 @@ def test_resolve_graph_end_to_end(tmp_state=None):
     info = _cast_info(r)
     extraction = GraphExtraction(
         characters=[
-            Character(name="Lindo Laut", type="PC"),
-            Character(name="Tim (Lindo Laut)", type="PC"),   # composite must not fork
-            Character(name="Marco", type="PC"),               # player name must not fork
+            Character(name="Lindo Laut", role="PC"),
+            Character(name="Tim (Lindo Laut)", role="PC"),   # composite must not fork
+            Character(name="Marco", role="PC"),               # player name must not fork
         ],
         items=[Item(name="Zauberstab", owner="Lindo")],
         relationships=[
@@ -153,7 +153,7 @@ def test_evidence_chunks():
     r = _tmp_resolver()
     info = _cast_info(r)
     extraction = GraphExtraction(
-        characters=[Character(name="Lindo Laut", type="PC")],
+        characters=[Character(name="Lindo Laut", role="PC")],
         relationships=[
             Relationship(subject="Lindo Laut", predicate="KNOWS", object="Cookie",
                          confidence="high", evidence=2),
@@ -177,7 +177,7 @@ def test_record_evidence_sidecar():
     from pnp_graph.extract import _record_evidence
     ev: dict = {}
     g = GraphExtraction(
-        characters=[Character(name="Dodo", type="PC")],
+        characters=[Character(name="Dodo", role="PC")],
         relationships=[Relationship(subject="Dodo", predicate="KNOWS", object="Cookie",
                                     confidence="high")],
     )
@@ -206,7 +206,7 @@ def test_srd_rules_rolls_decisions():
                      quote="wir machen es falsch", consequence="Monster erscheint",
                      confidence="high"),
         ],
-        characters=[Character(name="Monster", type="NPC")],
+        characters=[Character(name="Monster", role="NPC")],
         relationships=[
             Relationship(subject="Lindo Laut", predicate="HAS_CLASS", object="Barde",
                          confidence="high"),
@@ -233,36 +233,6 @@ def test_srd_rules_rolls_decisions():
     assert ("CHAR_LindoLaut", "HAS_CLASS", "RULE_CLASS_Bard") in edges
 
 
-def test_traits_aggregate_not_fork():
-    # docs/evolution/10 (WP6b): repeated mentions of the same recurring habit
-    # collapse to one Trait id + one KNOWN_FOR edge, never N Event-like nodes.
-    resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
-    r = _tmp_resolver()
-    info = _cast_info(r)
-    extraction = GraphExtraction(
-        traits=[
-            Trait(name="Spielt oft Musik", character="Lindo Laut"),
-            Trait(name="Spielt oft Musik", character="Lindo"),  # alias, same trait
-        ],
-        relationships=[],
-    )
-    resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1)
-    traits = [e for e in resolved["entities"] if e["type"] == "Trait"]
-    assert [t["id"] for t in traits] == ["TRAIT_LindoLaut_SpieltOftMusik"]
-    edges = {(e["start_id"], e["type"], e["end_id"]) for e in resolved["edges"]}
-    assert ("CHAR_LindoLaut", "KNOWN_FOR", "TRAIT_LindoLaut_SpieltOftMusik") in edges
-
-
-def test_trait_unresolved_character_dropped():
-    resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
-    r = _tmp_resolver()
-    info = _cast_info(r)
-    extraction = GraphExtraction(traits=[Trait(name="Singt", character="Niemand")])
-    resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1)
-    assert not any(e["type"] == "Trait" for e in resolved["entities"])
-    assert resolved["dropped"][0]["object"] == "Singt"
-
-
 def test_gm_is_world():
     # GM-is-world: no GM Character node exists; the GM player's ONLY edge is
     # DIRECTS -> Session; every extracted edge aimed at a GM surface is dropped.
@@ -270,8 +240,9 @@ def test_gm_is_world():
     r = _tmp_resolver()
     info = _cast_info(r)
     extraction = GraphExtraction(
-        characters=[Character(name="GM", type="NPC")],  # model minting the GM
-        events=[Event(title="Kampfbeginn", participants=["Deniz", "Dodo"])],
+        characters=[Character(name="GM", role="NPC")],  # model minting the GM
+        events=[Event(title="Kampfbeginn", participants=["Deniz", "Dodo"],
+                      narrative_significance_reasoning="Kampf beginnt")],
         roll_events=[RollEvent(name="Monster attack roll", roller="GM", confidence="high")],
         decisions=[Decision(name="Monster flieht", decided_by="Deniz", confidence="high")],
         relationships=[Relationship(subject="Deniz", predicate="KNOWS", object="Dodo",
@@ -301,7 +272,7 @@ def test_ooc_character_dropped_not_minted():
     resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
     r = _tmp_resolver()
     info = _cast_info(r)
-    extraction = GraphExtraction(characters=[Character(name="Twitch Raid Bot", type="NPC")])
+    extraction = GraphExtraction(characters=[Character(name="Twitch Raid Bot", role="NPC")])
     resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1)
     assert not any(e["type"] == "Character" and "Twitch" in e["props"]["name"]
                    for e in resolved["entities"])
@@ -314,7 +285,7 @@ def test_gm_fuzzy_match_catches_asr_noise():
     resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
     r = _tmp_resolver()
     info = _cast_info(r)
-    extraction = GraphExtraction(characters=[Character(name="Dennis", type="NPC")])
+    extraction = GraphExtraction(characters=[Character(name="Dennis", role="NPC")])
     resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1)
     ids = {e["id"] for e in resolved["entities"]}
     assert not any("Dennis" in i for i in ids)
@@ -348,31 +319,6 @@ def test_domain_range_valid_edge_passes():
     resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1)
     assert any(e["type"] == "MEMBER_OF" and e["start_id"] == "CHAR_Cookie"
                for e in resolved["edges"])
-
-
-def test_trait_single_sighting_gets_low_confidence():
-    # docs/evolution/KG_Qualitaetsanalyse_S01 fix E: an unconfirmed (1-chunk)
-    # trait sighting is written but flagged low-confidence rather than dropped
-    # or silently treated the same as a confirmed recurrence.
-    resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
-    r = _tmp_resolver()
-    info = _cast_info(r)
-    extraction = GraphExtraction(traits=[Trait(name="Spielt oft Musik", character="Lindo Laut")])
-    evidence = {("traits", "Spielt oft Musik"): [5]}
-    resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1, evidence=evidence)
-    trait = next(e for e in resolved["entities"] if e["type"] == "Trait")
-    assert trait["props"]["confidence"] == "low"
-
-
-def test_trait_two_sightings_gets_medium_confidence():
-    resolve_mod.STATE_DIR = Path(tempfile.mkdtemp())
-    r = _tmp_resolver()
-    info = _cast_info(r)
-    extraction = GraphExtraction(traits=[Trait(name="Spielt oft Musik", character="Lindo Laut")])
-    evidence = {("traits", "Spielt oft Musik"): [3, 9]}
-    resolved = resolve_graph(r, extraction, "2025-03-26", info, seq=1, evidence=evidence)
-    trait = next(e for e in resolved["entities"] if e["type"] == "Trait")
-    assert trait["props"]["confidence"] == "medium"
 
 
 def test_mentioned_in_off_vocab():

@@ -2,8 +2,9 @@
 
 Re-embeds only the entities touched by the current ingest — the whole point
 of keying on session writes rather than a periodic full re-embed. Text per
-entity: type + name + aliases + latest description/summary + (for
-Characters) their aggregated Trait names (docs/evolution/10).
+entity: type + name + aliases + latest description/summary — a Character's
+recurring personality/quirks live in their description (macro-graph
+philosophy: no separate Trait nodes, see docs/evolution).
 """
 
 import logging
@@ -30,13 +31,12 @@ def ensure_vector_index(driver) -> None:
         )
 
 
-def _entity_text(row: dict, trait_names: list[str]) -> str:
+def _entity_text(row: dict) -> str:
     parts = [row.get("type") or "", row.get("name") or "", *(row.get("aliases") or [])]
     if row.get("description"):
         parts.append(row["description"])
     if row.get("summary"):
         parts.append(row["summary"])
-    parts += trait_names
     return " | ".join(p for p in parts if p)
 
 
@@ -54,17 +54,9 @@ def embed_entities(driver, entity_ids: list[str]) -> int:
             "       n.summary AS summary",
             ids=entity_ids, backbone=list(BACKBONE_TYPES),
         ).data()
-        char_ids = [r["id"] for r in rows if r["type"] == "Character"]
-        traits_by_char: dict[str, list[str]] = {}
-        if char_ids:
-            for r in db.run(
-                "MATCH (c:Entity)-[:KNOWN_FOR]->(t:Entity) WHERE c.id IN $ids "
-                "RETURN c.id AS id, collect(t.name) AS names", ids=char_ids,
-            ):
-                traits_by_char[r["id"]] = r["names"]
         n = 0
         for row in rows:
-            text = _entity_text(row, traits_by_char.get(row["id"], []))
+            text = _entity_text(row)
             if not text:
                 continue
             vector = embedder.embed_query(text)

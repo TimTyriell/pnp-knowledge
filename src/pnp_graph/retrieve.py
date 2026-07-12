@@ -37,7 +37,7 @@ def _top_k_entities(driver, question: str, k: int) -> list[dict]:
 def _expand(driver, entity_ids: list[str], as_of_session: int | None) -> dict:
     """1-hop neighborhood of the seed entities: currently-true facts by
     default, or every fact valid as of `as_of_session` (docs/evolution/11).
-    Non-lifecycle edges (events, identity, KNOWN_FOR) are always included —
+    Non-lifecycle edges (events, identity) are always included —
     only state edges are time-filtered."""
     if as_of_session is None:
         edge_filter = "(r.valid_from IS NULL OR r.valid_to IS NULL)"

@@ -42,6 +42,19 @@
       "justMyCode": false
     },
     {
+      "name": "Debug: Custom pipeline (flagship, single session)",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "module": "pnp_graph.cli",
+      "args": ["ingest", "--only", "${input:sessionId}"],
+      "cwd": "${workspaceFolder}",
+      "env": { "PYTHONPATH": "${workspaceFolder}/src", "PNP_PROFILE": "flagship" },
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
       "name": "Debug: ai-kg pipeline (single session)",
       "type": "debugpy",
       "request": "launch",

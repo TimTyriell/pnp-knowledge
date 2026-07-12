@@ -5,10 +5,14 @@
 > **Status (2026-07-12): largely implemented.** WP0–WP8, WP10 and WP11 have
 > landed in `src/pnp_graph/` (WP4 Scenes shipped then reverted — see `04`).
 > Results and learnings per milestone: `../learnings/MIGRATION_NOTES.md`.
-> **Open (Priority 1): WP12** — extraction-quality overhaul (`12`). Measured
-> 2-session bloat (`../learnings/KG_Bloat_2Session_20250401-09.md`) shows the
-> recall-first stance of `06`/`10` produced ~2/3 noise; WP12 moves parsimony
-> into the extraction schema and supersedes `06`/`10` where they conflict.
+> **Open (Priority 1): WP13** — Agentic Hybrid-RAG ingestion (`13`): semantic
+> scene chunking + one-event-per-scene "capsule" schema + GraphRAG entity
+> summaries + optional critic, on the DeepSeek flagship profile. Successor to
+> **WP12** (`12`, extraction-quality overhaul) — WP12's trait removal and the
+> two-profile DeepSeek shift already landed (WP-A/WP-B); WP13 replaces WP12's
+> bigger-fixed-chunk + `List[Event]` design with semantic scenes and capsule
+> events. Both supersede the recall-first stance of `06`/`10`. Measured
+> 3-session bloat: `../learnings/KG_Bloat_2Session_20250401-09.md`.
 > **Open: WP9** — second-session multi-session proof + the bitemporal
 > write-side (`store.py` does not stamp `valid_from`/`valid_to` yet;
 > `STATE_PREDICATES` in `config.py` and the as-of read path in `retrieve.py`

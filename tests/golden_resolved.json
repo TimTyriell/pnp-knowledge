@@ -42,8 +42,9 @@
       "props": {
         "session_id": "2025-03-26",
         "confidence": "medium",
-        "name": "der Schleichfurz",
+        "name": "Schleichfurz",
         "aliases": [],
+        "description": "",
         "is_pc": false,
         "role": "NPC",
         "evidence_chunks": [
@@ -74,6 +75,7 @@
         "confidence": "medium",
         "name": "Monster greift an",
         "summary": "",
+        "significance": "Kampf beginnt",
         "evidence_chunks": [
           2
         ]

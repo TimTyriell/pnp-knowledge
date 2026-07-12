@@ -15,16 +15,16 @@ from pnp_graph.embed import _entity_text
 from pnp_graph.retrieve import _format_context
 
 
-def test_entity_text_includes_traits_and_description():
+def test_entity_text_includes_description():
     row = {"type": "Character", "name": "Lindo Laut", "aliases": ["Lindo"],
-           "description": None, "summary": None}
-    text = _entity_text(row, trait_names=["Spielt oft Musik"])
+           "description": "Spielt oft Musik", "summary": None}
+    text = _entity_text(row)
     assert text == "Character | Lindo Laut | Lindo | Spielt oft Musik"
 
 
 def test_entity_text_skips_empty_fields():
     row = {"type": "Location", "name": "Wald", "aliases": [], "description": "", "summary": None}
-    assert _entity_text(row, trait_names=[]) == "Location | Wald"
+    assert _entity_text(row) == "Location | Wald"
 
 
 def test_format_context_renders_status_and_fact_bits():

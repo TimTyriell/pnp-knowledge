@@ -4,18 +4,32 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-A local LLM-to-knowledge-graph pipeline for one TTRPG (Daggerheart) campaign.
-`src/pnp_graph/` reads Whisper transcripts, has a local Ollama model
-(`qwen3:14b`) fill a **fixed Pydantic schema** via structured output (NOT
-free-form SPO triples), then **resolves** every extracted surface form to a
-canonical `:Entity{id}` (alias registry + fuzzy match + SRD gazetteer) before
-writing to a local Neo4j with idempotent `MERGE`. Repeated runs and multiple
-sessions accumulate into one graph instead of duplicating nodes. A retrieval
-layer (entity embeddings + Neo4j vector index) makes the graph queryable via
-`cli ask`.
+An LLM-to-knowledge-graph pipeline for one TTRPG (Daggerheart) campaign.
+`src/pnp_graph/` reads Whisper transcripts, has an LLM fill a **fixed
+Pydantic schema** via structured output (NOT free-form SPO triples), then
+**resolves** every extracted surface form to a canonical `:Entity{id}`
+(alias registry + fuzzy match + SRD gazetteer) before writing to a local
+Neo4j with idempotent `MERGE`. Repeated runs and multiple sessions accumulate
+into one graph instead of duplicating nodes. A retrieval layer (entity
+embeddings + Neo4j vector index) makes the graph queryable via `cli ask`.
+
+**Macro-graph philosophy**: the KG is a macro-structural backbone only
+(state, locations, ownership, quest status, scene-level Events) — micro
+narrative beats are deliberately NOT captured as topology; the vector store
+retrieves that detail from raw transcript text on demand ("graph = table of
+contents, vector = the book"). There is no `Trait` node type; recurring
+character quirks live in `Character.description`, which is embedded.
+
+**Two extraction profiles**, selected via `PNP_PROFILE` env var
+(`config.py`): `local` (default) runs a local Ollama model (`qwen3:14b`),
+kept for offline/dev smoke tests — its context window can't hold a
+megachunk. `flagship` runs the DeepSeek API with much larger chunks (~11k
+tokens, a whole scene per chunk) so the model over-summarizes into 1-2
+macro-Events instead of a blow-by-blow; this is the real ingest path.
+Embeddings and `cli ask` always run locally regardless of profile.
 
 Built for Windows 11, RTX 4070 Ti (12GB VRAM), 32GB RAM. One 14B model in
-VRAM at a time — extraction and embedding run serially.
+VRAM at a time on the local profile — extraction and embedding run serially.
 
 The design spec lives in `docs/evolution/` (WP0–WP11); **it is largely
 implemented** — WP0–WP8, WP10, WP11 landed; WP4 Scene nodes were shipped then
@@ -30,7 +44,7 @@ is archived at `docs/archive/PLAN.md`. Doc map: `docs/README.md`.
 ```bash
 .venv\Scripts\activate
 # deps installed ad hoc via uv — no pyproject.toml/requirements.txt at repo root
-uv pip install langchain-ollama neo4j pydantic pytest
+uv pip install langchain-ollama langchain-openai neo4j pydantic pytest
 
 python -m pnp_graph.cli ingest                        # all sessions in transcripts/, oldest->newest
 python -m pnp_graph.cli ingest --only 2025-03-26      # one session by date
@@ -41,13 +55,22 @@ python -m pytest tests/                               # all offline, no LLM/DB n
 python compare/test_sink.py                           # self-check for run_both._write_triples, no Neo4j
 python compare/run_both.py --only 2025-03-26          # A/B run vs ai-knowledge-graph (historical harness)
 python reports/load_report_graph.py                   # load a report's JSON appendix into :7689
+
+# real ingests use the flagship (DeepSeek) profile — needs DEEPSEEK_API_KEY in .env
+PNP_PROFILE=flagship python -m pnp_graph.cli ingest --only 2025-03-26
 ```
 
 Prereqs that are NOT scriptable and must be up first:
-- **Ollama** running with `qwen3:14b` and `nomic-embed-text` pulled
-  (`LLM_MODEL`/`EMBED_MODEL` in `config.py`). `extract.py` pins `num_ctx`
-  (`NUM_CTX`, 8192) explicitly — Ollama's silent VRAM-based auto-default (4096)
-  previously caused runaway generation loops that never converged.
+- **`local` profile (default, dev/offline only)**: Ollama running with
+  `qwen3:14b` and `nomic-embed-text` pulled (`LLM_MODEL`/`EMBED_MODEL` in
+  `config.py`). `extract.py` pins `num_ctx` (`NUM_CTX`, 8192) explicitly —
+  Ollama's silent VRAM-based auto-default (4096) previously caused runaway
+  generation loops that never converged. `nomic-embed-text` is needed
+  regardless of profile — embeddings always run locally.
+- **`flagship` profile (real ingests)**: `DEEPSEEK_API_KEY` set in `.env`
+  (gitignored, loaded via the VS Code launch configs' `envFile`, or export it
+  yourself). No local model load for extraction, but Ollama + `nomic-embed-text`
+  are still needed for the embedding step.
 - **Neo4j** via `docker compose up -d` — three containers, all
   `NEO4J_AUTH=none` (no password, `auth=None` in every driver call):
   `neo4j-main` on `bolt://localhost:7687` (this pipeline, "Graph 2"),
@@ -67,9 +90,15 @@ Pipeline per session, orchestrated by `ingest()` in `ingest.py`:
 LLM + in-mem merge, two-pass event consolidation) → resolve_graph (canonical
 IDs) → write_session (Neo4j MERGE) → embed_entities (vector index)`.
 
-- **`config.py`** — every tunable: models, chunk size (4000 chars / 600
-  overlap — raised from 2000 after the S01 quality analysis traced micro-event
-  inflation to small chunks), Neo4j URL, and the **closed vocabularies**:
+- **`config.py`** — every tunable: models, chunk size, Neo4j URL, and the
+  **closed vocabularies**. Two extraction profiles selected by `PNP_PROFILE`
+  (`local`/`flagship`, default `local`) resolve `PROVIDER`, `LLM_MODEL`,
+  `CHUNK_SIZE`, `CHUNK_OVERLAP` — `local` keeps the original 4000 chars / 600
+  overlap (raised from 2000 after the S01 quality analysis traced micro-event
+  inflation to small chunks); `flagship` (DeepSeek) uses ~44000 chars / 3000
+  overlap (megachunks, one whole scene per chunk). `NUM_CTX`/`REPEAT_PENALTY`/
+  `NUM_PREDICT` are Ollama-only; `DEEPSEEK_BASE_URL`/`DEEPSEEK_API_KEY`/
+  `FLAGSHIP_MAX_TOKENS` are DeepSeek-only. Also the
   `ALLOWED_PREDICATES` + `PREDICATE_SYNONYMS` (off-vocab → `RELATES_TO`,
   logged), `PREDICATE_DOMAINS` (domain/range per predicate),
   `STATE_/EVENT_/IDENTITY_PREDICATES` (bitemporal classes, WP9),
@@ -84,12 +113,15 @@ IDs) → write_session (Neo4j MERGE) → embed_entities (vector index)`.
   gap** within budget; overlap is turn-based; empty segments filtered.
   `parse_speaker`/`session_cast` split the transcript's `Player (Character)`
   labels — the cast drives player/character mapping and GM handling downstream.
-- **`schema.py`** — the extraction contract, forced via
-  `with_structured_output(..., method="json_schema")`: Character / Location /
-  Item / Quest / Event / Faction / RuleEntity / RollEvent / Decision / Trait /
-  Relationship, split into `EntityExtraction` + `EventExtraction` (two-pass)
-  plus `EventConsolidation` (post-pass event grouping). To change what's
-  extracted, edit these models — there's no separate prompt-only knob.
+- **`schema.py`** — the extraction contract, forced via structured output
+  (`method="json_schema"` on Ollama, `"function_calling"` on DeepSeek — the
+  latter's OpenAI-compatible endpoint doesn't support strict json_schema
+  reliably): Character / Location / Item / Quest / Event / Faction /
+  RuleEntity / RollEvent / Decision / Relationship, split into
+  `EntityExtraction` + `EventExtraction` (two-pass) plus `EventConsolidation`
+  (post-pass event grouping). No `Trait` node type (macro-graph philosophy —
+  quirks live in `Character.description`). To change what's extracted, edit
+  these models — there's no separate prompt-only knob.
 - **`extract.py`** — LLM calls per chunk with retry (`_invoke_with_retry`;
   persistent parse failures dump to `state/failures/<sid>/`). Cast, SRD
   gazetteer, and known-entity lines are injected into the prompt; `evidence`
@@ -105,8 +137,8 @@ IDs) → write_session (Neo4j MERGE) → embed_entities (vector index)`.
   rapidfuzz/APOC). `resolve_graph` builds the final `{entities, edges}` dict:
   player/character split with per-session `PLAYS` (GM gets only `DIRECTS`),
   out-of-world filter (`OOC_DENYLIST`), event gate (`META_EVENT_TERMS` +
-  roll-shaped titles), trait aggregation (counted `KNOWN_FOR`), predicate
-  mapping + domain checks, endpoint validation — unresolvable edges are
+  roll-shaped titles), predicate mapping + domain checks, endpoint
+  validation — unresolvable edges are
   **dropped and logged** (`state/failures/<sid>/dropped_edges.jsonl`), never
   MERGE-created.
 - **`store.py`** — idempotent Neo4j writes on `:Entity {id}` (uniqueness

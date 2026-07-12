@@ -8,8 +8,15 @@ from pydantic import BaseModel, Field
 class Character(BaseModel):
     name: str
     player: str | None = None
-    type: str = Field(description="PC or NPC")
+    # named "role" not "type": a property literally named "type" collides with
+    # the JSON-Schema keyword of the same name under DeepSeek's strict-mode
+    # grammar — it silently renamed the key to "entity_type" in every tool
+    # call, so extraction always failed Pydantic validation (Field required: type).
+    role: str = Field(description="PC or NPC")
     aliases: list[str] = []
+    description: str = Field(
+        default="", description="Recurring personality, habits, or quirks — "
+        "not one-off happenings, e.g. 'spielt oft Musik, misstraut Fremden'")
 
 
 class Location(BaseModel):
@@ -33,6 +40,11 @@ class Event(BaseModel):
     summary: str = ""
     participants: list[str] = []
     location: str | None = None
+    narrative_significance_reasoning: str = Field(  # REQUIRED (no default) = pay-to-mint
+        description="Justify why this scene alters world state (a death, quest "
+        "change, ownership change, alliance/betrayal, a major roll outcome). "
+        "Name the single most consequential change of the scene — an event that "
+        "changes nothing is not a macro-event.")
 
 
 class Faction(BaseModel):
@@ -68,34 +80,21 @@ class Decision(BaseModel):
     confidence: Literal["high", "medium", "low"] = "medium"
 
 
-class Trait(BaseModel):
-    """A recurring characterization/habit (docs/evolution/10) — NOT a discrete
-    happening. Use this instead of a new Event when the same ambient behavior
-    (e.g. 'plays music often') repeats; the count is aggregated downstream."""
+class SceneBoundary(BaseModel):
+    """One logical scene in a session (docs/evolution/13, WP13.1): a contiguous
+    span of transcript segments the semantic-chunking pre-pass groups together
+    so extraction sees a whole narrative arc, never a battle split in half."""
 
-    name: str = Field(description="Short label for the recurring habit, e.g. 'Spielt oft Musik'")
-    character: str | None = Field(default=None, description="Character this trait belongs to")
-
-
-class EventGroup(BaseModel):
-    """One real narrative moment, possibly extracted as several near-duplicate
-    Event entries across chunks (docs/evolution/KG_Qualitaetsanalyse_S01 fix N3,
-    e.g. 'Monster's Last Breath' + 'Monster's Final Breath' + 'Monster's Death
-    and Environment Normalization' are one moment)."""
-
-    canonical_title: str = Field(description="The single clearest title for this group")
-    summary: str = Field(default="", description="One merged summary covering every member event")
-    member_titles: list[str] = Field(
-        description="Exact titles from the input list belonging to this moment, "
-        "spelled exactly as given, including canonical_title itself if unchanged")
+    start_segment: int = Field(description="Inclusive index of the first segment in this scene")
+    end_segment: int = Field(description="Inclusive index of the last segment in this scene")
+    title: str = Field(default="", description="Short scene label, for logging")
 
 
-class EventConsolidation(BaseModel):
-    """Session-level map-reduce pass (docs/evolution/06 §4): groups the events
-    merge_graphs already deduped by exact title into moments, collapsing
-    near-duplicate titles the per-chunk model couldn't see were the same fact."""
+class SceneSegmentation(BaseModel):
+    """The pre-pass output (WP13.1): the whole session partitioned into scenes,
+    in order, covering every segment exactly once."""
 
-    groups: list[EventGroup] = []
+    scenes: list[SceneBoundary] = []
 
 
 class Relationship(BaseModel):
@@ -128,14 +127,14 @@ class EntityExtraction(BaseModel):
 
 
 class EventExtraction(BaseModel):
-    """Pass (b) — docs/evolution/06 WP7: events/rolls/decisions/traits and
-    the relationships between them, referencing only entities named in
-    pass (a) (fed into the prompt, not re-derived by the model)."""
+    """Pass (b) — docs/evolution/06 WP7 + WP13.2 capsule: exactly ONE macro
+    Event per scene chunk (1 chunk = 1 scene), plus that scene's rolls,
+    decisions and relationships, referencing only entities named in pass (a)
+    (fed into the prompt, not re-derived by the model)."""
 
-    events: list[Event] = []
+    macro_scene_event: Event
     roll_events: list[RollEvent] = []
     decisions: list[Decision] = []
-    traits: list[Trait] = []
     relationships: list[Relationship] = []
 
 
@@ -149,5 +148,4 @@ class GraphExtraction(BaseModel):
     rule_entities: list[RuleEntity] = []
     roll_events: list[RollEvent] = []
     decisions: list[Decision] = []
-    traits: list[Trait] = []
     relationships: list[Relationship] = []

@@ -264,7 +264,7 @@ def map_predicate(predicate: str) -> tuple[str, bool]:
 def predicate_class(predicate: str) -> str | None:
     """WP9 bitemporal classification: 'state' / 'event' / 'identity' / None.
 
-    None (incl. RELATES_TO, KNOWN_FOR, off-vocab) gets no valid_from/valid_to.
+    None (incl. RELATES_TO, off-vocab) gets no valid_from/valid_to.
     """
     if predicate in STATE_PREDICATES_WITH_LIFECYCLE:
         return "state"
@@ -421,8 +421,8 @@ def resolve_graph(
                             "object": session_node_id, "reason": "gm-is-world"})
             continue
         cid = register(c.name, "Character", {
-            "name": c.name, "aliases": c.aliases,
-            "is_pc": c.type.upper() == "PC", "role": c.type or "NPC",
+            "name": c.name, "aliases": c.aliases, "description": c.description,
+            "is_pc": c.role.upper() == "PC", "role": c.role or "NPC",
         }, chunks_of("characters", c.name))
         if cid in gm_pids:  # registry resolved a GM alias to the GM player
             continue
@@ -452,7 +452,9 @@ def resolve_graph(
             dropped.append({"subject": e.title, "predicate": "IN_SESSION",
                             "object": session_node_id, "reason": reason})
             continue
-        eid = register(e.title, "Event", {"name": e.title, "summary": e.summary},
+        eid = register(e.title, "Event",
+                       {"name": e.title, "summary": e.summary,
+                        "significance": e.narrative_significance_reasoning},
                        chunks_of("events", e.title))
         add_edge(eid, session_node_id, "IN_SESSION")
         if e.location:
@@ -522,36 +524,6 @@ def resolve_graph(
             who = endpoint(dec.decided_by)  # GM decisions resolve to None (gm-is-world)
             if who:
                 add_edge(who, did, "DECIDED")
-
-    # --- traits (docs/evolution/10, WP6b): recurring behavior aggregates
-    # into one counted Trait node per character (store.py increments
-    # KNOWN_FOR.count on re-occurrence), never N repeated Event nodes -------
-    for tr in extraction.traits:
-        char_id = endpoint(tr.character) if tr.character else None
-        if not char_id:
-            dropped.append({"subject": tr.character, "predicate": "KNOWN_FOR",
-                            "object": tr.name,
-                            "reason": "gm-is-world" if is_gm_surface(tr.character)
-                            else "unresolved character"})
-            continue
-        char_slug = char_id[len("CHAR_"):] if char_id.startswith("CHAR_") else slug(char_id)
-        tid = f"TRAIT_{char_slug}_{slug(tr.name)}"
-        # Promotion gate (docs/evolution/KG_Qualitaetsanalyse_S01, fix E): a trait
-        # seen in only one chunk this session is unconfirmed — write it as 'low'
-        # confidence rather than dropping it, since store.py's KNOWN_FOR.count
-        # already promotes it to a confirmed recurrence on the next real
-        # re-occurrence (this session or a later one).
-        # ponytail: cross-session staging (never write until a 2nd session
-        # confirms it) needs persistent candidate state resolve.py doesn't keep
-        # today; add if single-sighting trait noise turns out to still matter
-        # after this confidence downgrade.
-        trait_chunks = chunks_of("traits", tr.name)
-        add_entity(tid, "Trait", {
-            "name": tr.name,
-            "confidence": "medium" if len(trait_chunks) >= 2 else "low",
-        })
-        add_edge(char_id, tid, "KNOWN_FOR")
-        surface_to_id.setdefault(normalize(tr.name), tid)
 
     # --- relationships (endpoint validation, docs/evolution/03) ----------
     for r in extraction.relationships:

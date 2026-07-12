@@ -34,14 +34,14 @@ _SEGMENTS = [
 
 _EXTRACTION = GraphExtraction(
     characters=[
-        Character(name="Lindo Laut", type="PC"),
-        Character(name="der Schleichfurz", type="NPC"),
-        Character(name="Schleichfurz ", type="NPC"),  # variant — must collapse
+        Character(name="Lindo Laut", role="PC"),
+        Character(name="der Schleichfurz", role="NPC"),
+        Character(name="Schleichfurz ", role="NPC"),  # variant — must collapse
     ],
     items=[Item(name="Bogen", owner="Cookie", status="used")],
     quests=[Quest(name="Monsterjagd", status="open")],
     events=[Event(title="Monster greift an", summary="", participants=["Dodo", "Lindo"],
-                  location=None)],
+                  location=None, narrative_significance_reasoning="Kampf beginnt")],
     rule_entities=[RuleEntity(name="Barde", subtype="Class")],
     roll_events=[RollEvent(name="Dodo Angriffswurf", roller="Dodo", trait_or_action="attack",
                            outcome="success_with_fear", target="der Schleichfurz",

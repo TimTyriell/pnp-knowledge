@@ -9,7 +9,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from pnp_graph import config
-from pnp_graph.chunking import format_turn, pack_segments, session_id_from_path
+from pnp_graph.chunking import format_turn, pack_segments, scene_chunks, session_id_from_path
+from pnp_graph.schema import SceneBoundary
 
 
 def _segments(n: int, text_len: int = 200, gap_every: int = 5):
@@ -77,6 +78,33 @@ def test_no_cascading_small_chunks_around_early_gap():
     chunks = pack_segments(segs)
     small = [c for c in chunks if len(c) < config.CHUNK_SIZE // 2]
     assert len(small) <= 1  # at most the unavoidable final leftover chunk
+
+
+def _distinct_segments(n: int):
+    return [{"start": float(i), "end": i + 0.5, "speaker": "GM", "text": f"seg{i}"}
+            for i in range(n)]
+
+
+def test_scene_chunks_one_per_boundary():
+    segs = _distinct_segments(9)
+    boundaries = [
+        SceneBoundary(start_segment=0, end_segment=2, title="A"),
+        SceneBoundary(start_segment=3, end_segment=8, title="B"),
+    ]
+    chunks = scene_chunks(segs, boundaries)
+    assert len(chunks) == 2
+    assert "seg0" in chunks[0] and "seg2" in chunks[0]
+    assert "seg3" in chunks[1] and "seg8" in chunks[1]
+    assert "seg8" not in chunks[0] and "seg3" not in chunks[0]  # no leak across scenes
+
+
+def test_scene_chunks_clamps_out_of_range_and_falls_back():
+    segs = _distinct_segments(4)
+    # garbage boundary indices are clamped, not crashed -> last segment only
+    chunks = scene_chunks(segs, [SceneBoundary(start_segment=99, end_segment=200)])
+    assert len(chunks) == 1 and "seg3" in chunks[0] and "seg0" not in chunks[0]
+    # no usable boundary -> one chunk of everything
+    assert len(scene_chunks(segs, [])) == 1
 
 
 def test_session_id_from_path():

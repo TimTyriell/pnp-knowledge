@@ -1,5 +1,6 @@
 """All tunables for the pnp-graph pipeline."""
 
+import os
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -10,24 +11,56 @@ DATA_DIR = REPO_ROOT / "data"
 ALIAS_REGISTRY_PATH = DATA_DIR / "alias_registry.json"
 SRD_PATH = DATA_DIR / "daggerheart_srd.json"
 
-LLM_MODEL = "qwen3:14b"
-EMBED_MODEL = "nomic-embed-text"  # docs/evolution/11, WP11 — ~0.3 GB, co-resides with LLM_MODEL
+# Two extraction profiles (macro-graph migration): 'local' is the free/offline
+# Ollama path, kept for dev smoke tests only — its NUM_CTX can't hold a
+# megachunk. Real ingests run 'flagship' (DeepSeek API): a frontier model
+# reading a whole scene at once, asked to over-summarize into macro-Events
+# instead of a blow-by-blow (see docs/evolution). Select via env var, e.g. a
+# VS Code launch config's "env": {"PNP_PROFILE": "flagship"}.
+PROFILE = os.getenv("PNP_PROFILE", "local")
+_PROFILES = {
+    "local": {
+        "PROVIDER": "ollama",
+        "LLM_MODEL": "qwen3:14b",
+        # 4000 chars ≈ 1k tokens/chunk (was 2000): the S01 quality analysis
+        # traced micro-event inflation + context-blind entity duplicates to
+        # ~250-token chunks ("every chunk must deliver something"). Still
+        # well inside NUM_CTX.
+        "CHUNK_SIZE": 4000,
+        "CHUNK_OVERLAP": 600,
+    },
+    "flagship": {
+        "PROVIDER": "deepseek",
+        "LLM_MODEL": "deepseek-chat",  # TODO: confirm exact DeepSeek model id
+        # ~44000 chars ≈ 11k tokens: a whole 20-30 min scene in one chunk, so
+        # the model over-summarizes into 1-2 macro-Events instead of a
+        # blow-by-blow. Deliberately large — recall is traded for parsimony.
+        "CHUNK_SIZE": 44000,
+        "CHUNK_OVERLAP": 3000,
+    },
+}
+if PROFILE not in _PROFILES:
+    raise ValueError(f"Unknown PNP_PROFILE {PROFILE!r} — expected one of {sorted(_PROFILES)}")
+_profile = _PROFILES[PROFILE]
+PROVIDER = _profile["PROVIDER"]
+LLM_MODEL = _profile["LLM_MODEL"]
+CHUNK_SIZE = _profile["CHUNK_SIZE"]
+CHUNK_OVERLAP = _profile["CHUNK_OVERLAP"]
+
+EMBED_MODEL = "nomic-embed-text"  # docs/evolution/11, WP11 — always local regardless of PROFILE
 EMBED_DIM = 768
-# 4000 chars ≈ 1k tokens/chunk (was 2000): the S01 quality analysis traced
-# micro-event inflation + context-blind entity duplicates to ~250-token chunks
-# ("every chunk must deliver something"). Still well inside NUM_CTX.
-CHUNK_SIZE = 4000
-CHUNK_OVERLAP = 600
 
 # Q4_K_M 14B long-range recall degrades well before Ollama's trained 40960 max;
 # structured multi-entity extraction needs full recall per chunk, not gist, so
 # stay conservative. num_ctx must cover prompt + CHUNK_SIZE + JSON output —
 # pinned explicitly since Ollama's silent VRAM-based auto-default (4096) caused
 # runaway generation loops (repeated context-shift/discard, never converging).
+# Ollama-only; irrelevant when PROVIDER == "deepseek".
 NUM_CTX = 8192
 
-# hard cap per LLM call so a runaway generation (see below) fails fast into
-# _invoke_with_retry's retry/failure-dump path instead of hanging forever.
+# hard cap per LLM call (both providers) so a runaway generation (see below)
+# fails fast into _invoke_with_retry's retry/failure-dump path instead of
+# hanging forever.
 LLM_TIMEOUT_S = 300
 
 # root cause of the runaway loops (confirmed via Ollama's server.log: n_decoded
@@ -37,8 +70,17 @@ LLM_TIMEOUT_S = 300
 # starts, since the grammar never forces the array to end. repeat_penalty
 # discourages the repeat; num_predict is a hard token-count backstop so a loop
 # that starts anyway still terminates well before another 7-minute stall.
+# Ollama-only; irrelevant when PROVIDER == "deepseek".
 REPEAT_PENALTY = 1.1
 NUM_PREDICT = 4096
+
+# /beta unlocks DeepSeek's strict function-calling mode (required + additionalProperties:false
+# enforced server-side) — without it, tool-call adherence on our multi-entity schema is
+# unreliable and chunks intermittently come back with "structured output returned None"
+# on both the first try and the retry (seen repeatedly in the 2026-07-12 flagship ingest).
+DEEPSEEK_BASE_URL = "https://api.deepseek.com/beta"
+DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
+FLAGSHIP_MAX_TOKENS = 8192  # DeepSeek output cap; megachunks -> larger JSON output
 
 NEO4J_URL = "bolt://localhost:7687"  # container runs NEO4J_AUTH=none, no user/password
 
@@ -62,7 +104,6 @@ ALLOWED_PREDICATES = {
     "INVOLVES",
     "KNOWS", "FEARS", "HOSTILE_TO", "ALLIED_WITH",
     "PLAYS", "RELATES_TO",
-    "KNOWN_FOR",  # Character -> Trait, count-incrementing (docs/evolution/10, WP6b)
     "TRUSTS", "BETRAYED", "KILLED", "FAMILY_OF",  # narrative-arc verbs (docs/evolution/11, WP9)
 }
 PREDICATE_SYNONYMS = {
@@ -75,8 +116,8 @@ PREDICATE_SYNONYMS = {
 }
 
 # Bitemporal edge classification (docs/evolution/11, WP9) — every predicate is
-# exactly one of these three. Unclassified (incl. RELATES_TO, KNOWN_FOR, and
-# any off-vocab predicate) gets no valid_from/valid_to lifecycle: see
+# exactly one of these three. Unclassified (incl. RELATES_TO and any
+# off-vocab predicate) gets no valid_from/valid_to lifecycle: see
 # resolve.predicate_class(). PLAYS is a state predicate conceptually but is
 # EXEMPT from the generic lifecycle mechanics — its own per-session edge
 # (docs/evolution/09) already is its history. OWNS was folded into OWNED_BY
@@ -111,7 +152,7 @@ STATE_PREDICATE_KEY = {
 # {predicate: (allowed source :Entity.type set, allowed target set)}. Enforced
 # in resolve.py against the LLM's free-form `relationships` list only — the
 # deterministic edges resolve_graph() writes itself (APPEARS_IN, PLAYS, ROLLED,
-# DECIDED, PARTICIPATED_IN, KNOWN_FOR, ...) are correct by construction and
+# DECIDED, PARTICIPATED_IN, ...) are correct by construction and
 # never run through this table. RELATES_TO is intentionally absent: it is the
 # unconstrained catch-all fallback for off-vocab predicates.
 PREDICATE_DOMAINS = {
@@ -142,7 +183,6 @@ PREDICATE_DOMAINS = {
     "HOSTILE_TO": ({"Character", "Faction"}, {"Character", "Faction"}),
     "ALLIED_WITH": ({"Character", "Faction"}, {"Character", "Faction"}),
     "PLAYS": ({"Player"}, {"Character"}),
-    "KNOWN_FOR": ({"Character"}, {"Trait"}),
     "TRUSTS": ({"Character"}, {"Character"}),
     "BETRAYED": ({"Character"}, {"Character"}),
     "KILLED": ({"Character"}, {"Character"}),

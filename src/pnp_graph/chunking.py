@@ -102,11 +102,36 @@ def pack_segments(segments: list[dict]) -> list[str]:
     return chunks
 
 
-def load_session(path: Path) -> tuple[list[str], list[tuple[str, str | None, bool]]]:
-    """(chunks, cast) for a single transcript file."""
+def scene_chunks(segments: list[dict], boundaries: list) -> list[str]:
+    """WP13.1: one chunk per scene boundary (docs/evolution/13). Each chunk is
+    the joined turns of that scene's segment span — no size budget, no overlap
+    (a scene is self-contained). Indices are clamped and out-of-order/empty
+    spans skipped, so a sloppy segmentation still yields valid chunks."""
+    turns = [format_turn(s) for s in segments]
+    n = len(turns)
+    chunks: list[str] = []
+    for b in boundaries:
+        lo = max(0, min(b.start_segment, n - 1))
+        hi = max(lo, min(b.end_segment, n - 1))
+        text = "".join(turns[lo:hi + 1])
+        if text.strip():
+            chunks.append(text)
+    return chunks or ["".join(turns)]  # fall back to one chunk if nothing usable
+
+
+def read_segments(path: Path) -> tuple[list[dict], list[tuple[str, str | None, bool]]]:
+    """(segments, cast) for a single transcript file — no chunking. Used by the
+    scene-chunking path (WP13.1); the segmenter needs raw segments."""
     data = json.loads(path.read_text(encoding="utf-8"))
     segments = [s for s in data["segments"] if s["text"].strip()]
-    return pack_segments(segments), session_cast(segments)
+    return segments, session_cast(segments)
+
+
+def load_session(path: Path) -> tuple[list[str], list[tuple[str, str | None, bool]]]:
+    """(char-budget chunks, cast) for a single transcript file — the local
+    profile path. Flagship uses read_segments + scene_chunks instead."""
+    segments, cast = read_segments(path)
+    return pack_segments(segments), cast
 
 
 def ordered_sessions(transcript_dir: Path) -> list[Path]:
