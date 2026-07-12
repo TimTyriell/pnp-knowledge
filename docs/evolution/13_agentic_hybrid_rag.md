@@ -37,6 +37,20 @@ output per call, not one giant graph dump.
   `flagship` = DeepSeek API (`langchain-openai` `ChatOpenAI`,
   `method="function_calling"`), megachunks (`CHUNK_SIZE=44000` chars). Local
   Ollama kept for dev smoke only. Embeddings + `ask` stay local.
+- **Semantic scene chunking + capsule events (WP13.1/13.2)** — `SceneBoundary`/
+  `SceneSegmentation` + `segment_session`/`build_segmenter`; `Event.label`
+  (was `title`) + required `narrative_significance_reasoning`;
+  `EventExtraction.macro_scene_event` (was `list[Event]`); N3 consolidation
+  deleted (impossible once it's one event/scene); orphan-event QA blocker.
+- **Chunk-level vector index (WP13.5, 2026-07-12)** — closes the gap where
+  only `:Entity` summaries were embedded and `cli ask` had no path to
+  verbatim narrative detail. `chunking.split_passages()` splits each
+  extraction chunk into ~1500-char passages; `resolve_graph(..., chunk_texts=)`
+  mints them as `Chunk` entities linked `IN_SESSION` + `MENTIONS` to every
+  entity whose `evidence_chunks` name that scene; `embed.py` embeds a
+  Chunk's raw `text` verbatim (not the composed `type|name|...` format);
+  `retrieve.py` renders a Chunk seed as its source passage. This is the
+  "vector = das Buch" half — previously a paper promise, not implemented.
 
 WP13 turns the megachunk (a blunt char budget) into a *scene* (semantic), and
 the "one macro event per scene" from a prompt hope into a schema guarantee.
