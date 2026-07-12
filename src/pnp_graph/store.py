@@ -43,12 +43,19 @@ def ensure_constraints(db) -> None:
 
 def _write_graph(db, resolved: dict) -> None:
     for e in resolved["entities"]:
+        create_props = {k: v for k, v in e["props"].items() if v is not None}
+        # A re-mention across sessions (e.g. Character.description, .aliases)
+        # sends whatever THIS session's extraction saw — often nothing, since
+        # a recurring trait isn't repeated every session. ON MATCH must never
+        # let an empty/falsy value blank out a value a prior session set; only
+        # ON CREATE may write "" or [] (there's nothing yet to preserve).
+        match_props = {k: v for k, v in create_props.items() if v != "" and v != []}
         db.run(
             "MERGE (n:Entity {id: $id}) "
-            "ON CREATE SET n += $props, n.type = $type, n.created_at = timestamp() "
-            "ON MATCH  SET n += $props, n.type = $type, n.updated_at = timestamp()",
+            "ON CREATE SET n += $create_props, n.type = $type, n.created_at = timestamp() "
+            "ON MATCH  SET n += $match_props, n.type = $type, n.updated_at = timestamp()",
             id=e["id"], type=e["type"],
-            props={k: v for k, v in e["props"].items() if v is not None},
+            create_props=create_props, match_props=match_props,
         )
     for r in resolved["edges"]:
         rtype = sanitize_predicate(r["type"])
