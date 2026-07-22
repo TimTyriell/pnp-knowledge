@@ -6,7 +6,7 @@ invalidated automatically.
 
 from __future__ import annotations
 
-PROMPT_VERSION = "2"
+PROMPT_VERSION = "3"
 
 EXTRACT_SYSTEM = """\
 Du bist ein sorgfältiger Archivar für eine Pen-&-Paper-Rollenspielkampagne
@@ -36,6 +36,11 @@ EXTRACT_USER_TEMPLATE = """\
 Session-ID: {session_id}
 Datum: {date}
 Titel: {title}
+Transkriptqualität: {quality} (unsichere Sprecherzuordnung: {unsicher_pct})
+
+Hinweis: Sprecher mit dem Label "SPEAKER_XX" konnten keiner realen Person
+zugeordnet werden. Schreibe Aussagen solcher Segmente keiner bestimmten
+Figur zu — nutze sie nur als unpersönliche Belege.
 
 Transkript:
 {dialogue}
@@ -56,8 +61,19 @@ Regeln:
   characters/dodo.md mit [Dodo](dodo.md), auf npcs/lenra.md mit
   [Lenra](../npcs/lenra.md). Beginne Pfade NIEMALS mit /.
 - Beginne NICHT mit dem YAML-Frontmatter; schreibe nur den Fließtext-Body.
-- Schließe mit einer Überschrift "# Belege" ab, in der du die Quellen
-  nummeriert auflistest (Session-Datum + Zeitstempel + URL).
+- Belege, die mit [Transkriptqualität: niedrig] oder [Transkriptqualität:
+  mittel] markiert sind, stammen aus schlechter transkribierten Sessions —
+  formuliere daraus abgeleitete Aussagen vorsichtiger und stütze zentrale
+  Fakten bevorzugt auf unmarkierte Belege.
+- Wenn sich zwei Belege WIDERSPRECHEN und der Widerspruch nicht durch die
+  Chronologie erklärbar ist (z. B. "tot" in einer früheren, "lebendig" in
+  einer späteren Quelle ohne Wiederbelebung), wähle NICHT selbst einen
+  Gewinner. Ergänze stattdessen ganz am Ende (nach "# Belege") eine
+  Überschrift "# Offene Konflikte" und liste dort jeden Widerspruch als
+  Aufzählungspunkt: beide Aussagen mit ihren Beleg-Nummern.
+  Gibt es keine Widersprüche, lasse den Abschnitt komplett weg.
+- Schließe den regulären Teil mit einer Überschrift "# Belege" ab, in der du
+  die Quellen nummeriert auflistest (Session-Datum + Zeitstempel + URL).
 """
 
 SYNTH_USER_TEMPLATE = """\

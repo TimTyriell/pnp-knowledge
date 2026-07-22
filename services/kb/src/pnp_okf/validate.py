@@ -11,6 +11,7 @@ from __future__ import annotations
 import logging
 from collections import defaultdict
 from dataclasses import dataclass, field
+from difflib import SequenceMatcher
 from pathlib import Path
 
 import yaml
@@ -53,6 +54,8 @@ class ValidationReport:
     duplicate_titles: dict[str, list[str]] = field(default_factory=dict)
     cross_type_slugs: dict[str, list[str]] = field(default_factory=dict)
     missing_type: list[str] = field(default_factory=list)
+    duplicate_ids: dict[str, list[str]] = field(default_factory=dict)
+    suspected_person_dups: list[tuple[str, str]] = field(default_factory=list)
 
     @property
     def ok(self) -> bool:
@@ -61,6 +64,8 @@ class ValidationReport:
             or self.duplicate_titles
             or self.cross_type_slugs
             or self.missing_type
+            or self.duplicate_ids
+            or self.suspected_person_dups
         )
 
     def summary(self) -> str:
@@ -94,6 +99,17 @@ class ValidationReport:
             lines.append(f"\nMissing 'type' ({len(self.missing_type)}):")
             for cid in self.missing_type:
                 lines.append(f"  {cid}")
+        if self.duplicate_ids:
+            lines.append(f"\nDuplicate 'id' ({len(self.duplicate_ids)}):")
+            for eid, ids in self.duplicate_ids.items():
+                lines.append(f"  {eid}: {', '.join(ids)}")
+        if self.suspected_person_dups:
+            lines.append(
+                f"\nSuspected duplicate persons ({len(self.suspected_person_dups)})"
+                " — merge via entity_registry.yaml if same person:"
+            )
+            for a, b in self.suspected_person_dups:
+                lines.append(f"  {a} <-> {b}")
         if self.ok:
             lines.append("\nOK — no data-quality issues found.")
         return "\n".join(lines)
@@ -112,6 +128,8 @@ def validate_bundle(bundle_dir: Path) -> ValidationReport:
 
     titles: dict[str, list[str]] = defaultdict(list)
     basenames: dict[str, list[str]] = defaultdict(list)
+    entity_ids: dict[str, list[str]] = defaultdict(list)
+    person_slugs: list[str] = []
 
     for path, cid in zip(files, concept_ids):
         text = path.read_text(encoding="utf-8")
@@ -129,6 +147,11 @@ def validate_bundle(bundle_dir: Path) -> ValidationReport:
         if title and ctype != "Session":
             titles[f"{ctype}::{title.lower()}"].append(cid)
         basenames[cid.rsplit("/", 1)[-1]].append(cid)
+        eid = str(fm.get("id") or "").strip()
+        if eid:
+            entity_ids[eid].append(cid)
+        if cid.split("/", 1)[0] in ("characters", "npcs"):
+            person_slugs.append(cid)
 
     report.duplicate_titles = {
         key.split("::", 1)[1]: sorted(ids)
@@ -140,7 +163,38 @@ def validate_bundle(bundle_dir: Path) -> ValidationReport:
         for slug, ids in sorted(basenames.items())
         if len({i.split("/", 1)[0] for i in ids}) > 1
     }
+    report.duplicate_ids = {
+        eid: sorted(ids)
+        for eid, ids in sorted(entity_ids.items())
+        if len(ids) > 1
+    }
+    report.suspected_person_dups = _suspect_person_dups(person_slugs)
     return report
+
+
+def _suspect_person_dups(person_cids: list[str]) -> list[tuple[str, str]]:
+    """Flag character/NPC concept pairs that look like the same person.
+
+    Mirrors the resolve-stage auto-merge rules (difflib ratio >= 0.9 or a
+    token-subset name) so a bundle written by an older pipeline — or edited
+    by hand — still surfaces suspected duplicates in ``pnp validate``.
+    """
+
+    # ponytail: O(n^2) over persons only; fine for a one-campaign bundle.
+    suspects: list[tuple[str, str]] = []
+    for i, a in enumerate(person_cids):
+        slug_a = a.rsplit("/", 1)[-1]
+        tokens_a = set(slug_a.split("_"))
+        for b in person_cids[i + 1:]:
+            slug_b = b.rsplit("/", 1)[-1]
+            tokens_b = set(slug_b.split("_"))
+            if (
+                SequenceMatcher(None, slug_a, slug_b).ratio() >= 0.9
+                or tokens_a < tokens_b
+                or tokens_b < tokens_a
+            ):
+                suspects.append((a, b))
+    return suspects
 
 
 def fix_bundle(bundle_dir: Path) -> tuple[int, int]:

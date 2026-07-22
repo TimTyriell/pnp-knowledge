@@ -132,6 +132,8 @@ def _call_llm(client, cfg: DeepSeekConfig, transcript: SessionTranscript) -> Ses
                 session_id=transcript.session_id,
                 date=transcript.date,
                 title=transcript.title,
+                quality=transcript.quality,
+                unsicher_pct=f"{transcript.unsicher_ratio:.0%}",
                 dialogue=transcript.render_dialogue(),
             ),
         },

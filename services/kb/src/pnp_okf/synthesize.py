@@ -23,8 +23,9 @@ log = logging.getLogger(__name__)
 def _render_mentions(entity: CanonicalEntity) -> str:
     lines = []
     for i, m in enumerate(entity.mentions, start=1):
+        marker = "" if m.quality == "hoch" else f" [Transkriptqualität: {m.quality}]"
         lines.append(
-            f"[{i}] Session {m.date} @ {m.citation_ts} ({m.url})\n    {m.note}"
+            f"[{i}] Session {m.date} @ {m.citation_ts} ({m.url}){marker}\n    {m.note}"
         )
     return "\n".join(lines)
 

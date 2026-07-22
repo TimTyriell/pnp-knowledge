@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import logging
+from difflib import SequenceMatcher
 from pathlib import Path
 
 import yaml
@@ -12,14 +13,119 @@ from pnp_okf.models import (
     SessionExtraction,
     SessionTranscript,
 )
-from pnp_okf.models import DIR_TO_TYPE, TYPE_DIR
+from pnp_okf.models import DIR_TO_TYPE, PERSON_TYPES, TYPE_DIR
 from pnp_okf.okf import slugify
 
 log = logging.getLogger(__name__)
 
+# Same bar as pnp_graph.resolve: stdlib difflib, no extra dependency.
+FUZZY_RATIO = 0.9
+
 
 def _default_concept_id(entity_type: EntityType, name: str) -> str:
     return f"{TYPE_DIR[entity_type]}/{slugify(name)}"
+
+
+def _same_space(a: CanonicalEntity, b: CanonicalEntity) -> bool:
+    if a.type in PERSON_TYPES and b.type in PERSON_TYPES:
+        return True
+    return a.type == b.type
+
+
+def _tokens(entity: CanonicalEntity) -> set[str]:
+    return set(slugify(entity.canonical_name).split("_"))
+
+
+def _fuzzy_match(a: CanonicalEntity, b: CanonicalEntity) -> bool:
+    slug_a = a.concept_id.rsplit("/", 1)[-1]
+    slug_b = b.concept_id.rsplit("/", 1)[-1]
+    return SequenceMatcher(None, slug_a, slug_b).ratio() >= FUZZY_RATIO
+
+
+def merge_near_duplicates(
+    entities: list[CanonicalEntity],
+) -> list[CanonicalEntity]:
+    """Second resolution pass: fold near-duplicate entities together.
+
+    Two rules, both within the same identity space (Character+NPC form one
+    person space, other types match only their own kind):
+
+    1. **Fuzzy**: concept slugs with a difflib ratio >= ``FUZZY_RATIO``
+       (Whisper spelling drift: "Esterosa" vs "Esterossa").
+    2. **Token subset** (person space only): all name tokens of one entity
+       appear in the other's, and that superset is *unique* among the
+       candidates ("Esterossa" -> "Esterossa Torbhalm"). A name with several
+       supersets stays unmerged — ambiguity is for the registry/human.
+
+    The entity with more mentions survives; the other's name and aliases
+    become aliases. Every auto-merge is logged so review can catch misfolds;
+    hand-maintained registry merges always run first and win.
+    """
+
+    survivors: list[CanonicalEntity] = list(entities)
+    merged_away: dict[str, str] = {}
+
+    def _merge(loser: CanonicalEntity, winner: CanonicalEntity, rule: str) -> None:
+        for name in [loser.canonical_name, *loser.aliases]:
+            if (
+                name.lower() != winner.canonical_name.lower()
+                and name not in winner.aliases
+            ):
+                winner.aliases.append(name)
+        winner.mentions.extend(loser.mentions)
+        winner.mentions.sort(key=lambda m: (m.date, m.citation_ts))
+        survivors.remove(loser)
+        merged_away[loser.concept_id] = winner.concept_id
+        log.info(
+            "[resolve] auto-merged %s -> %s (%s)",
+            loser.concept_id,
+            winner.concept_id,
+            rule,
+        )
+
+    # Fuzzy pass.
+    changed = True
+    while changed:
+        changed = False
+        for a in list(survivors):
+            for b in list(survivors):
+                if a is b or not _same_space(a, b):
+                    continue
+                if _fuzzy_match(a, b):
+                    loser, winner = sorted(
+                        (a, b), key=lambda e: (len(e.mentions), e.concept_id)
+                    )
+                    _merge(loser, winner, "fuzzy")
+                    changed = True
+                    break
+            if changed:
+                break
+
+    # Token-subset pass (person space only, unique superset required).
+    for a in list(survivors):
+        if a.type not in PERSON_TYPES or a not in survivors:
+            continue
+        supersets = [
+            b
+            for b in survivors
+            if b is not a
+            and b.type in PERSON_TYPES
+            and _tokens(a) < _tokens(b)
+        ]
+        if len(supersets) == 1:
+            _merge(a, supersets[0], "token-subset")
+        elif len(supersets) > 1:
+            log.warning(
+                "[resolve] %s has %d possible supersets (%s) — left unmerged, "
+                "add a registry merge to resolve",
+                a.concept_id,
+                len(supersets),
+                ", ".join(s.concept_id for s in supersets),
+            )
+
+    if merged_away:
+        log.info("[resolve] merge pass folded %d entities", len(merged_away))
+    return sorted(survivors, key=lambda e: e.concept_id)
 
 
 def _load_alias_overrides(registry_path: Path) -> dict[str, str]:
@@ -63,6 +169,9 @@ def resolve_entities(
     """
 
     overrides = _load_alias_overrides(registry_path)
+    # Also match registry keys after slugification, so "Lindo  Laut" folds
+    # into a registry entry written as "lindo laut".
+    slug_overrides = {slugify(k): v for k, v in overrides.items()}
     entities: dict[str, CanonicalEntity] = {}
 
     for session_id in sorted(extractions):
@@ -70,8 +179,10 @@ def resolve_entities(
         transcript = transcripts[session_id]
         for mention in extraction.entities:
             name_key = mention.name.strip().lower()
-            concept_id = overrides.get(name_key) or _default_concept_id(
-                mention.type, mention.name
+            concept_id = (
+                overrides.get(name_key)
+                or slug_overrides.get(slugify(mention.name))
+                or _default_concept_id(mention.type, mention.name)
             )
             # Keep type consistent with the concept-id directory: a merge may
             # fold this mention into a concept of a different type.
@@ -100,10 +211,11 @@ def resolve_entities(
                     url=transcript.url,
                     citation_ts=mention.citation_ts,
                     note=mention.note,
+                    quality=transcript.quality,
                 )
             )
 
-    resolved = sorted(entities.values(), key=lambda e: e.concept_id)
+    resolved = merge_near_duplicates(list(entities.values()))
     log.info(
         "[resolve] %d mentions -> %d canonical entities",
         sum(len(e.entities) for e in extractions.values()),

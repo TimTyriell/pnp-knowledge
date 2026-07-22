@@ -43,6 +43,19 @@ class Paths:
     bundle_dir: Path
     cache_dir: Path
 
+    @property
+    def conflicts_dir(self) -> Path:
+        """Open-conflict queue, sibling of the bundle tree.
+
+        For the monorepo layout ``knowledge/bundle/<name>`` this resolves to
+        ``knowledge/conflicts`` (per ARCHITECTURE §3.0); for a free-standing
+        bundle it sits next to the bundle directory.
+        """
+
+        if self.bundle_dir.parent.name == "bundle":
+            return self.bundle_dir.parent.parent / "conflicts"
+        return self.bundle_dir.parent / "conflicts"
+
     @classmethod
     def resolve(
         cls,

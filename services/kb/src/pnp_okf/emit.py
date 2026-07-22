@@ -12,7 +12,7 @@ from pnp_okf.models import (
     SessionExtraction,
     SessionTranscript,
 )
-from pnp_okf.okf import slugify, write_concept, write_index
+from pnp_okf.okf import render_document, slugify, write_concept, write_index
 
 log = logging.getLogger(__name__)
 
@@ -115,6 +115,8 @@ def emit_sessions(
             "resource": transcript.url,
             "tags": ["session", date],
             "timestamp": f"{date}T00:00:00Z" if date else _now_iso(),
+            "quality": transcript.quality,
+            "unsicher_ratio": round(transcript.unsicher_ratio, 3),
         }
         write_concept(bundle_dir, concept_id, frontmatter, body)
         entries.append(
@@ -126,28 +128,50 @@ def emit_sessions(
 # --- entity concepts --------------------------------------------------------
 
 
+_CONFLICT_HEADING = "# Offene Konflikte"
+
+
+def split_conflicts(body: str) -> tuple[str, str | None]:
+    """Return ``(body, conflict_section)``.
+
+    The synthesis prompt appends unresolvable contradictions under a trailing
+    ``# Offene Konflikte`` heading. The section stays in the concept body
+    (readers should see a fact is disputed) and is *also* returned so the
+    caller can queue it under ``conflicts/`` for human resolution.
+    """
+
+    idx = body.find(_CONFLICT_HEADING)
+    if idx < 0:
+        return body, None
+    section = body[idx + len(_CONFLICT_HEADING):].strip()
+    return body, section or None
+
+
 def emit_entity(
     bundle_dir: Path,
     entity: CanonicalEntity,
     body: str,
     index: ConceptIndex | None = None,
-) -> list[str]:
+) -> tuple[list[str], str | None]:
     """Write a single canonical-entity concept document.
 
     When ``index`` is given, cross-links in ``body`` are normalized against
-    the concept set. Returns the list of link targets that could not be
-    resolved (and were therefore rendered as plain text).
+    the concept set. Returns ``(unresolved_link_targets, conflict_section)``
+    — the latter is the ``# Offene Konflikte`` content when the synthesis
+    flagged an unresolvable contradiction, else ``None``.
     """
 
     unresolved: list[str] = []
     if index is not None:
         body, unresolved = normalize_body(body, index)
+    body, conflicts = split_conflicts(body)
 
     first = entity.mentions[0] if entity.mentions else None
     last = entity.mentions[-1] if entity.mentions else None
     description = _short_desc(first.note) if first else entity.canonical_name
     frontmatter = {
         "type": entity.type.value,
+        "id": entity.entity_id,
         "title": entity.canonical_name,
         "description": description,
         "tags": [TYPE_DIR[entity.type]],
@@ -155,8 +179,40 @@ def emit_entity(
     }
     if entity.aliases:
         frontmatter["aliases"] = entity.aliases
+    if conflicts:
+        frontmatter["status"] = "disputed"
     write_concept(bundle_dir, entity.concept_id, frontmatter, body)
-    return unresolved
+    return unresolved, conflicts
+
+
+def emit_conflict(
+    conflicts_dir: Path, entity: CanonicalEntity, section: str
+) -> Path:
+    """Write one open-conflict file for human resolution.
+
+    Lives outside the bundle (``knowledge/conflicts/``) so the queue is
+    reviewable and resolvable independently of concept content. Resolution =
+    fix the concept (or a registry/alias error), then delete this file.
+    """
+
+    conflicts_dir.mkdir(parents=True, exist_ok=True)
+    slug = entity.concept_id.replace("/", "__")
+    path = conflicts_dir / f"{slug}.md"
+    doc = render_document(
+        {
+            "type": "Conflict",
+            "id": f"CONFLICT_{entity.entity_id}",
+            "title": f"Offener Konflikt: {entity.canonical_name}",
+            "description": "Widersprüchliche Belege — menschliche Entscheidung nötig.",
+            "status": "open",
+            "concept": entity.concept_id,
+            "timestamp": _now_iso(),
+        },
+        f"Betrifft: `{entity.concept_id}` ({entity.entity_id})\n\n"
+        f"{_CONFLICT_HEADING}\n\n{section}\n",
+    )
+    path.write_text(doc, encoding="utf-8")
+    return path
 
 
 # --- indexes and log --------------------------------------------------------

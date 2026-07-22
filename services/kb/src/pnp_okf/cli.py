@@ -10,6 +10,7 @@ from pathlib import Path
 from pnp_okf.config import DeepSeekConfig, ConfigError, Paths
 from pnp_okf.emit import (
     build_concept_index,
+    emit_conflict,
     emit_entity,
     emit_indexes,
     emit_log,
@@ -80,17 +81,34 @@ def cmd_run(args: argparse.Namespace) -> int:
     index = build_concept_index(entities, tmap)
     session_entries = emit_sessions(paths.bundle_dir, tmap, extractions, index)
     unresolved_total = 0
+    conflict_count = 0
     for entity in entities:
         body = synthesize_entity_body(
             entity, cfg, paths.cache_dir, force=args.force
         )
-        unresolved_total += len(emit_entity(paths.bundle_dir, entity, body, index))
+        unresolved, conflicts = emit_entity(paths.bundle_dir, entity, body, index)
+        unresolved_total += len(unresolved)
+        if conflicts:
+            conflict_path = emit_conflict(paths.conflicts_dir, entity, conflicts)
+            conflict_count += 1
+            log.warning(
+                "[conflict] %s has contradicting evidence -> %s",
+                entity.concept_id,
+                conflict_path,
+            )
     emit_indexes(paths.bundle_dir, entities, session_entries)
     emit_log(paths.bundle_dir, tmap)
 
     if unresolved_total:
         log.info(
             "Dropped %d unresolved cross-link(s) during emit.", unresolved_total
+        )
+    if conflict_count:
+        log.warning(
+            "%d open conflict(s) queued in %s — resolve before merging the "
+            "ingest branch.",
+            conflict_count,
+            paths.conflicts_dir,
         )
 
     log.info("Bundle written to %s", paths.bundle_dir)

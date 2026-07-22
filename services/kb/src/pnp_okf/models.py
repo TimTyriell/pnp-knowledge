@@ -46,6 +46,25 @@ TYPE_DIR: dict[EntityType, str] = {
 DIR_TO_TYPE: dict[str, EntityType] = {d: t for t, d in TYPE_DIR.items()}
 
 
+# Typed-ID prefix per entity type — the pnp-report vocabulary (CHAR_/NPC_/
+# LOC_/FACTION_/EVENT_) shared across the campaign toolchain. The frontmatter
+# ``id`` built from these is the canonical merge key across re-runs.
+ID_PREFIX: dict[EntityType, str] = {
+    EntityType.CHARACTER: "CHAR",
+    EntityType.NPC: "NPC",
+    EntityType.LOCATION: "LOC",
+    EntityType.FACTION: "FACTION",
+    EntityType.ITEM: "ITEM",
+    EntityType.EVENT: "EVENT",
+}
+
+
+# Character and NPC are one identity space: the same person is routinely
+# extracted as PC in one session and NPC in another, and the observed bundle
+# dupes (esterossa vs esterossa_torbhalm) live across these two directories.
+PERSON_TYPES = {EntityType.CHARACTER, EntityType.NPC}
+
+
 # --- Raw transcript ---------------------------------------------------------
 
 
@@ -75,6 +94,42 @@ class SessionTranscript(BaseModel):
     @property
     def word_count(self) -> int:
         return sum(len(s.text.split()) for s in self.segments)
+
+    @property
+    def unsicher_ratio(self) -> float:
+        """Fraction of words spoken by an unmapped ``SPEAKER_XX`` label.
+
+        pnp-crawl leaves below-threshold diarization matches as literal
+        ``SPEAKER_XX`` placeholders instead of guessing — that is the
+        machine-readable "unsicher" signal.
+        """
+
+        total = self.word_count
+        if not total:
+            return 0.0
+        unsure = sum(
+            len(s.text.split())
+            for s in self.segments
+            if s.speaker.startswith("SPEAKER_")
+        )
+        return unsure / total
+
+    @property
+    def quality(self) -> str:
+        """Session data-quality score: hoch / mittel / niedrig.
+
+        Derived from the unmapped-speaker ratio at ingest time rather than
+        emitted by pnp-crawl — same signal, no cross-repo change needed.
+        """
+
+        # ponytail: thresholds are a first guess; tune against the QA audit
+        # scripts in pnp-crawl if they disagree.
+        ratio = self.unsicher_ratio
+        if ratio < 0.05:
+            return "hoch"
+        if ratio < 0.20:
+            return "mittel"
+        return "niedrig"
 
     def render_dialogue(self) -> str:
         """Render segments as ``[HH:MM:SS] Speaker: text`` lines for the LLM."""
@@ -125,6 +180,7 @@ class MentionRef(BaseModel):
     url: str
     citation_ts: str
     note: str
+    quality: str = "hoch"  # source session's transcript quality
 
 
 class CanonicalEntity(BaseModel):
@@ -135,3 +191,10 @@ class CanonicalEntity(BaseModel):
     canonical_name: str
     aliases: list[str] = Field(default_factory=list)
     mentions: list[MentionRef] = Field(default_factory=list)
+
+    @property
+    def entity_id(self) -> str:
+        """Typed canonical ID in the pnp-report vocabulary, e.g. ``NPC_HEXE``."""
+
+        slug = self.concept_id.rsplit("/", 1)[-1]
+        return f"{ID_PREFIX[self.type]}_{slug.upper()}"
