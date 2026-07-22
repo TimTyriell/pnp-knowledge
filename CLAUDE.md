@@ -2,35 +2,81 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Monorepo (since 2026-07-22)
+
+This repo is now the monorepo for the whole knowledge system (everything except `pnp-crawl`). Beyond the original GraphRAG pipeline described below, it hosts:
+
+- **`services/kb/`** — the Knowledge-Base service: the `pnp_okf` OKF-distillation pipeline (Azure OpenAI structured outputs; own `pyproject.toml`, own venv) absorbed from `okf-experiments-main`. Per [ADR-001](docs/architecture/ADR-001-knowledge-layer.md), this — not the Neo4j graph — is the path to the system of record.
+- The Fandom/MediaWiki wiki agent moved out to the **`pnp-export-data`** repo (the "output" repo of the input/memory/output three-repo split) — it is a pure client of this repo's KB API.
+- **`services/summary/`** — pre-session recap + ephemeral outlook CLI, grounded in the KB API.
+- **`knowledge/`** — **the system of record**: the OKF campaign bundle (`bundle/splitter_des_ewigen/`), `entity_registry.yaml`, campaign book sources. Knowledge edits arrive via `ingest/s<NN>` branches that touch only `knowledge/`, reviewed as PRs, tagged `s<NN>` per session on merge. Knowledge diffs are path-scoped: `git diff <ref>.. -- knowledge/`.
+- **`reports/`** — now holds *all* session reports (S01–S26+) plus `rolls/` CSVs, absorbed from `pnp-report`.
+- **`docs/architecture/`** — [ADR-001](docs/architecture/ADR-001-knowledge-layer.md) (OKF-in-git over GraphRAG as system of record) and [ARCHITECTURE.md](docs/architecture/ARCHITECTURE.md) (target services, APIs, HITL gates, roadmap). Read these before working on `services/*` or `knowledge/`.
+
+The `src/pnp_graph/` GraphRAG pipeline below remains as reference and the future *derived index* (rebuildable from the bundle, per ADR-001's revisit triggers) — no further feature work planned there. Each service keeps its own venv; the root `.venv` belongs to `src/pnp_graph`.
+
 ## What this is
 
-A local LLM-to-knowledge-graph pipeline for one TTRPG (Daggerheart) campaign.
-`src/pnp_graph/` reads Whisper transcripts, has a local Ollama model
-(`qwen3:14b`) fill a **fixed Pydantic schema** via structured output (NOT
-free-form SPO triples), then **resolves** every extracted surface form to a
-canonical `:Entity{id}` (alias registry + fuzzy match + SRD gazetteer) before
-writing to a local Neo4j with idempotent `MERGE`. Repeated runs and multiple
-sessions accumulate into one graph instead of duplicating nodes. A retrieval
-layer (entity embeddings + Neo4j vector index) makes the graph queryable via
-`cli ask`.
+An LLM-to-knowledge-graph pipeline for one TTRPG (Daggerheart) campaign.
+`src/pnp_graph/` reads Whisper transcripts, has an LLM fill a **fixed
+Pydantic schema** via structured output (NOT free-form SPO triples), then
+**resolves** every extracted surface form to a canonical `:Entity{id}`
+(alias registry + fuzzy match + SRD gazetteer) before writing to a local
+Neo4j with idempotent `MERGE`. Repeated runs and multiple sessions accumulate
+into one graph instead of duplicating nodes. A retrieval layer (entity
+embeddings + Neo4j vector index) makes the graph queryable via `cli ask`.
+
+**Macro-graph philosophy**: the KG is a macro-structural backbone only
+(state, locations, ownership, quest status, scene-level Events) — micro
+narrative beats are deliberately NOT captured as topology; the vector store
+retrieves that detail from raw transcript text on demand ("graph = table of
+contents, vector = the book"). There is no `Trait` node type (quirks live in
+`Character.description`, embedded); no `RollEvent` node type (rolls are not
+narrative topology — WP14); `Item` nodes are minted **only for named/unique
+artifacts** (`is_named_artifact`), generic loot is dropped; `Character` nodes
+likewise only for **named individuals** (`is_named_character`) — generic mobs
+(a goblin, die Wachen, Skelett-Nahkämpfer) are identity-unstable (each is a
+different one) so they earn no node: the horde is a `Faction`, the fight an
+`Event`, the detail a `Chunk`. Player-characters carry a `CHAR_` id, all other
+NPCs `NPC_` (the pnp-report vocab split), but both keep `type:"Character"` — the
+predicate domains and person-logic key on that. The skeleton is the
+`:Entity` label; the vector "book" is a **separate `:Chunk` label** with its own
+vector index (WP14, the 2026 GraphRAG-standard split) so `MATCH (n:Entity)`
+returns a clean skeleton.
+
+**Two extraction profiles**, selected via `PNP_PROFILE` env var
+(`config.py`): `local` (default) runs a local Ollama model (`qwen3:14b`),
+kept for offline/dev smoke tests — its context window can't hold a
+megachunk. `flagship` runs the DeepSeek API with much larger chunks (~11k
+tokens, a whole scene per chunk) so the model over-summarizes into 1-2
+macro-Events instead of a blow-by-blow; this is the real ingest path.
+Embeddings and `cli ask` always run locally regardless of profile.
 
 Built for Windows 11, RTX 4070 Ti (12GB VRAM), 32GB RAM. One 14B model in
-VRAM at a time — extraction and embedding run serially.
+VRAM at a time on the local profile — extraction and embedding run serially.
 
-The design spec lives in `docs/evolution/` (WP0–WP11); **it is largely
+The design spec lives in `docs/evolution/` (WP0–WP14); **it is largely
 implemented** — WP0–WP8, WP10, WP11 landed; WP4 Scene nodes were shipped then
-reverted. **Open: WP9** (multi-session proof + bitemporal `valid_from`/
-`valid_to` stamping in `store.py`; `STATE_PREDICATES` in `config.py` and the
-as-of read path in `retrieve.py` already exist). Measured results and the
-Scene-revert rationale: `docs/learnings/MIGRATION_NOTES.md`. The pre-spec plan
-is archived at `docs/archive/PLAN.md`. Doc map: `docs/README.md`.
+reverted; WP12 trait removal + the DeepSeek flagship shift, WP13 single-pass
+`SceneExtraction` + semantic scene chunking + chunk-level vector index, and
+WP14 (Item = named artifacts only, `RollEvent` removed, the `:Entity`/`:Chunk`
+label split) all landed. **WP9 (bitemporal) is largely shipped** (audit_v7pro §7):
+`resolve.py` stamps `valid_from` + `last_observed_session` on every state-lifecycle
+edge; `store.py` closes `valid_to` by supersession for the *exclusive* facts only —
+`STATE_PREDICATE_KEY` keys `LOCATED_IN` (Character/Item positions; geography stays
+open via a `source_types` guard) and `OWNED_BY`. Many-to-many state edges
+(`MEMBER_OF`, `ALLIED_WITH`, `HOSTILE_TO`, …) never force-close — staleness is
+carried by `last_observed_session` instead. The as-of read path in `retrieve.py`
+uses it. Still open: the multi-session proof run. Measured
+results and the Scene-revert rationale: `docs/learnings/MIGRATION_NOTES.md`. The
+pre-spec plan is archived at `docs/archive/PLAN.md`. Doc map: `docs/README.md`.
 
 ## Commands
 
 ```bash
 .venv\Scripts\activate
 # deps installed ad hoc via uv — no pyproject.toml/requirements.txt at repo root
-uv pip install langchain-ollama neo4j pydantic pytest
+uv pip install langchain-ollama langchain-openai neo4j pydantic pytest
 
 python -m pnp_graph.cli ingest                        # all sessions in transcripts/, oldest->newest
 python -m pnp_graph.cli ingest --only 2025-03-26      # one session by date
@@ -41,13 +87,22 @@ python -m pytest tests/                               # all offline, no LLM/DB n
 python compare/test_sink.py                           # self-check for run_both._write_triples, no Neo4j
 python compare/run_both.py --only 2025-03-26          # A/B run vs ai-knowledge-graph (historical harness)
 python reports/load_report_graph.py                   # load a report's JSON appendix into :7689
+
+# real ingests use the flagship (DeepSeek) profile — needs DEEPSEEK_API_KEY in .env
+PNP_PROFILE=flagship python -m pnp_graph.cli ingest --only 2025-03-26
 ```
 
 Prereqs that are NOT scriptable and must be up first:
-- **Ollama** running with `qwen3:14b` and `nomic-embed-text` pulled
-  (`LLM_MODEL`/`EMBED_MODEL` in `config.py`). `extract.py` pins `num_ctx`
-  (`NUM_CTX`, 8192) explicitly — Ollama's silent VRAM-based auto-default (4096)
-  previously caused runaway generation loops that never converged.
+- **`local` profile (default, dev/offline only)**: Ollama running with
+  `qwen3:14b` and `nomic-embed-text` pulled (`LLM_MODEL`/`EMBED_MODEL` in
+  `config.py`). `extract.py` pins `num_ctx` (`NUM_CTX`, 8192) explicitly —
+  Ollama's silent VRAM-based auto-default (4096) previously caused runaway
+  generation loops that never converged. `nomic-embed-text` is needed
+  regardless of profile — embeddings always run locally.
+- **`flagship` profile (real ingests)**: `DEEPSEEK_API_KEY` set in `.env`
+  (gitignored, loaded via the VS Code launch configs' `envFile`, or export it
+  yourself). No local model load for extraction, but Ollama + `nomic-embed-text`
+  are still needed for the embedding step.
 - **Neo4j** via `docker compose up -d` — three containers, all
   `NEO4J_AUTH=none` (no password, `auth=None` in every driver call):
   `neo4j-main` on `bolt://localhost:7687` (this pipeline, "Graph 2"),
@@ -63,69 +118,145 @@ Inspect a run in Neo4j Browser (http://localhost:7474):
 ## Architecture (`src/pnp_graph/`)
 
 Pipeline per session, orchestrated by `ingest()` in `ingest.py`:
-`ordered_sessions → load_session (chunks + cast) → extract_session (per-chunk
-LLM + in-mem merge, two-pass event consolidation) → resolve_graph (canonical
-IDs) → write_session (Neo4j MERGE) → embed_entities (vector index)`.
+`ordered_sessions → read_segments (raw) → scene_chunks over boundaries from
+heuristic_segment (flagship default: deterministic silence-gap scenes) or
+segment_session (opt-in LLM segmenter, USE_LLM_SEGMENTER) — or pack_segments
+(local: char-budget chunks) → extract_session (one structured-output call per
+chunk + in-mem merge) → resolve_graph (canonical IDs + Chunk passages for the
+vector store) → write_session (Neo4j MERGE) → embed_entities (vector index,
+incl. Chunk raw-text embeddings)`.
 
-- **`config.py`** — every tunable: models, chunk size (4000 chars / 600
-  overlap — raised from 2000 after the S01 quality analysis traced micro-event
-  inflation to small chunks), Neo4j URL, and the **closed vocabularies**:
+- **`config.py`** — every tunable: models, chunk size, Neo4j URL, and the
+  **closed vocabularies**. Two extraction profiles selected by `PNP_PROFILE`
+  (`local`/`flagship`, default `local`) resolve `PROVIDER`, `LLM_MODEL`,
+  `CHUNK_SIZE`, `CHUNK_OVERLAP` — `local` keeps the original 4000 chars / 600
+  overlap (raised from 2000 after the S01 quality analysis traced micro-event
+  inflation to small chunks); `flagship` (DeepSeek) `CHUNK_SIZE` is a 44000-char
+  **ceiling**, but scene segmentation targets the smaller `SCENE_TARGET_CHARS`
+  (~11000, ~1 chunk per scene/event) via `heuristic_segment` — packing to the
+  44k ceiling collapsed a 2h/95k-char session into ~3 giant chunks, hence ~3
+  macro-Events instead of ~9, and also tripped DeepSeek missed-tool_call Nones
+  (audit_v7pro §8 #2). `USE_LLM_SEGMENTER` (default False) swaps the heuristic
+  for the LLM segmenter. `KNOWN_WORLD_REFRESH_EVERY` (§8 #1) windows the
+  gazetteer so the DeepSeek prefix stays cacheable. `NUM_CTX`/`REPEAT_PENALTY`/
+  `NUM_PREDICT` are Ollama-only; `DEEPSEEK_BASE_URL`/`DEEPSEEK_API_KEY`/
+  `FLAGSHIP_MAX_TOKENS` are DeepSeek-only. Also the
   `ALLOWED_PREDICATES` + `PREDICATE_SYNONYMS` (off-vocab → `RELATES_TO`,
-  logged), `PREDICATE_DOMAINS` (domain/range per predicate),
-  `STATE_/EVENT_/IDENTITY_PREDICATES` (bitemporal classes, WP9),
-  `META_EVENT_TERMS` (event gate), `RULE_SUBTYPES`, `OOC_DENYLIST`
+  logged; `SUBQUEST_OF` = Quest→parent-arc Quest; no `APPEARS_IN` — folded into
+  `IN_SESSION`, the single provenance predicate), `PREDICATE_DOMAINS`
+  (domain/range per predicate), `STATE_/EVENT_/IDENTITY_PREDICATES` (bitemporal
+  classes, WP9), `STATE_PREDICATE_KEY` (supersede spec: only the exclusive
+  `LOCATED_IN`/`OWNED_BY` close `valid_to`; `LOCATED_IN` carries a `source_types`
+  guard so geography stays open), `META_EVENT_TERMS` (event gate),
+  `GENERIC_MOB_TERMS` (generic-mob gate), `RULE_SUBTYPES`, `OOC_DENYLIST`
   (out-of-fiction noise like Twitch raids). No tunables live elsewhere.
 - **`chunking.py`** — input is Whisper JSON (`segments` of
   `{start, end, speaker, text}`); `.txt` siblings in `transcripts/` are
   reference only. `session_id_from_path` extracts the date (`2025-03-26`)
   used as `session_id` everywhere downstream, matching pnp-report's
-  `Session_Report_S<NN>_<date>` convention. `pack_segments` packs whole
+  `Session_Report_S<NN>_<date>` convention. `pack_segments` (local) packs whole
   speaker turns up to `CHUNK_SIZE`, preferring to cut at the **largest silence
   gap** within budget; overlap is turn-based; empty segments filtered.
-  `parse_speaker`/`session_cast` split the transcript's `Player (Character)`
-  labels — the cast drives player/character mapping and GM handling downstream.
-- **`schema.py`** — the extraction contract, forced via
-  `with_structured_output(..., method="json_schema")`: Character / Location /
-  Item / Quest / Event / Faction / RuleEntity / RollEvent / Decision / Trait /
-  Relationship, split into `EntityExtraction` + `EventExtraction` (two-pass)
-  plus `EventConsolidation` (post-pass event grouping). To change what's
-  extracted, edit these models — there's no separate prompt-only knob.
-- **`extract.py`** — LLM calls per chunk with retry (`_invoke_with_retry`;
-  persistent parse failures dump to `state/failures/<sid>/`). Cast, SRD
-  gazetteer, and known-entity lines are injected into the prompt; `evidence`
-  (chunk index) is set in code, never by the model. `merge_graphs` dedups by
-  name/title in-memory (first occurrence wins per session);
-  `propose_event_groups`/`apply_event_consolidation` is a second LLM pass
-  collapsing near-duplicate events. `SUGGESTED_PREDICATES` (sourced from the
-  Claude-authored S02 report) biases relation naming; the hard vocab
-  enforcement happens later in `resolve.py`.
+  `heuristic_segment` (flagship default) uses the same gap heuristic but targets
+  `SCENE_TARGET_CHARS` and returns contiguous `SceneBoundary` index ranges (no
+  overlap — `scene_chunks` slices them) so each chunk is ~one scene. `format_turn`
+  serializes a turn as `Speaker:\n  text` with **no inline timestamp** (§8 #3 —
+  removed; evidence is chunk-index, not time). `parse_speaker`/`session_cast`
+  split the transcript's `Player (Character)` labels — the cast drives
+  player/character mapping and GM handling downstream.
+- **`schema.py`** — the extraction contract, forced via structured output
+  (`method="json_schema"` on Ollama, `"function_calling"` on DeepSeek — the
+  latter's OpenAI-compatible endpoint doesn't support strict json_schema
+  reliably): `SceneExtraction` (docs/evolution/13, WP13.6) is ONE combined
+  schema covering Character / Location / Item / Quest / Faction / RuleEntity
+  / Relationship (no `Decision` type — removed) plus the single capsule
+  `macro_scene_event: Event` (WP13.2 — one macro event per scene chunk, with
+  a required `narrative_significance_reasoning`, "pay to mint"). `Item` carries
+  a required `is_named_artifact` and `Character` a required `is_named_character`
+  — same "pay to mint" gate, generic loot / generic mobs are dropped in
+  resolve.py (the latter also caught by a deterministic `GENERIC_MOB_TERMS`
+  backstop); there is no `RollEvent` type (WP14). Supersedes
+  the old two-pass `EntityExtraction`+`EventExtraction` split (that split
+  existed to keep a 14B reliable on a smaller schema per call) and the N3
+  `EventConsolidation` pass (impossible to need once it's one event/scene).
+  Also `SceneBoundary`/`SceneSegmentation` (WP13.1, the scene-segmentation
+  pre-pass output). No `Trait` node type (macro-graph philosophy — quirks
+  live in `Character.description`). To change what's extracted, edit these
+  models — there's no separate prompt-only knob.
+- **`extract.py`** — one structured-output call per chunk (`extract_chunk`,
+  WP13.6) with retry (`_invoke_with_retry`, up to 3 attempts — DeepSeek's
+  function_calling intermittently returns None from a missed tool_call, transient
+  and retry-recoverable; only a chunk that fails every attempt dumps to
+  `state/failures/<sid>/`). Cast + SRD gazetteer lines are injected into the
+  prompt; the campaign `known_world` gazetteer is refreshed only every
+  `KNOWN_WORLD_REFRESH_EVERY` chunks (`extract_session`) to keep the DeepSeek
+  prefix cacheable. `evidence` (chunk index) is set in code, never by the model.
+  `merge_graphs` dedups by name/label in-memory (first occurrence wins per
+  session). `segment_session`/`build_segmenter` (WP13.1) is the LLM
+  scene-boundary pre-pass — now **opt-in** (`USE_LLM_SEGMENTER`); the default
+  flagship segmenter is deterministic `chunking.heuristic_segment`.
+  `SUGGESTED_PREDICATES` (sourced from the Claude-authored S02 report) biases
+  relation naming; the hard vocab enforcement happens later in `resolve.py`.
 - **`resolve.py`** — **the identity layer** (WP1/WP1b, the spec's gate).
   `Resolver` maps surface forms → canonical ids via `data/alias_registry.json`
   + normalization + `difflib` fuzzy match (ratio ≥ 0.9; stdlib, no
   rapidfuzz/APOC). `resolve_graph` builds the final `{entities, edges}` dict:
   player/character split with per-session `PLAYS` (GM gets only `DIRECTS`),
-  out-of-world filter (`OOC_DENYLIST`), event gate (`META_EVENT_TERMS` +
-  roll-shaped titles), trait aggregation (counted `KNOWN_FOR`), predicate
-  mapping + domain checks, endpoint validation — unresolvable edges are
-  **dropped and logged** (`state/failures/<sid>/dropped_edges.jsonl`), never
-  MERGE-created.
-- **`store.py`** — idempotent Neo4j writes on `:Entity {id}` (uniqueness
-  constraint `entity_id`; `type`/`session_id` indexes). `sanitize_predicate`
-  strips predicates to `[A-Z0-9_]` — relationship types can't be
-  parameterized, this is the injection guard; keep it if you touch that code.
-  `write_session` = constraints + `_write_graph` via `execute_write` in one
-  driver session (per-session atomic write). `run_qa` = the QA queries from
-  `docs/evolution/07` (dup names, cross-type collisions, missing provenance).
-  No `valid_from`/`valid_to` stamping yet — that's WP9.
+  PC (`CHAR_`) vs NPC (`NPC_`) id split (deterministic from the cast; `type`
+  stays `Character` for both), single `IN_SESSION` provenance edge per entity
+  (was `APPEARS_IN` for Characters — unified, P-5), out-of-world filter
+  (`OOC_DENYLIST`), generic-mob gate (`is_named_character` +
+  `is_generic_mob`/`GENERIC_MOB_TERMS`; quest-critical unnamed NPCs opt back in
+  by setting `is_named_character`, P-3), event gate (`META_EVENT_TERMS` +
+  roll-shaped titles), PC↔PC `ALLIED_WITH` drop (party cohesion is implicit,
+  P-6), predicate mapping + domain checks, endpoint validation — unresolvable
+  edges are **dropped and logged**
+  (`state/failures/<sid>/dropped_edges.jsonl`), never MERGE-created. State edges
+  are stamped `valid_from` + `last_observed_session` (WP9). With `chunk_texts` (WP13.5, docs/evolution/13), also splits
+  each chunk into passages (`chunking.split_passages`) and mints them as
+  `Chunk` nodes (the `:Chunk` label, WP14) linked `IN_SESSION` + `MENTIONS` to
+  every entity whose `evidence_chunks` name that scene — the "vector = das Buch"
+  half.
+- **`store.py`** — idempotent Neo4j writes: skeleton nodes MERGE on
+  `:Entity {id}` (constraint `entity_id`; `type`/`session_id` indexes), `Chunk`
+  passages MERGE on a separate `:Chunk {id}` label (constraint `chunk_id`,
+  WP14). Edge endpoints MATCH label-less (`(a {id})`) so a `MENTIONS`/
+  `IN_SESSION` edge joins a `:Chunk` start to an `:Entity` end.
+  `sanitize_predicate` strips predicates to `[A-Z0-9_]` — relationship types
+  can't be parameterized, this is the injection guard; keep it if you touch that
+  code. `write_session` = constraints + `_write_graph` via `execute_write` in
+  one driver session (per-session atomic write). `_write_graph` splits entity
+  props into `create_props` (all values) vs `match_props` (drops empty
+  string/list) so a cross-session re-mention with nothing new never blanks
+  out a value a prior session set (e.g. `Character.description`). Edges MERGE on
+  `(start, type, end)` only (**not** keyed on `session_id`) so a re-mention
+  updates the same edge instead of minting one per session; the ON CREATE / ON
+  MATCH split keeps the first `valid_from`/`evidence_chunks` while refreshing
+  `last_observed_session`. Supersede closes the prior `valid_to` per
+  `STATE_PREDICATE_KEY` (with the `source_types` geography guard); `PLAYS`
+  supersedes keyed on its `end` (Character) so a recast closes the old player.
+  `run_qa` =
+  the QA queries from `docs/evolution/07` + the audit_v7pro §9 acceptance
+  checks (dup names, cross-type collisions, missing provenance, orphan events,
+  empty-significance events, SRD-layer edge purity, temporal closure).
+  Bitemporal `valid_from`/`valid_to` supersession + node-`status` versioning
+  live here (WP9, audit_v7pro §7).
 - **`srd.py`** — loads `data/daggerheart_srd.json` into an `SrdIndex`
   (prompt gazetteer + shared `RuleEntity` library); `preload` MERGEs the
   shared SRD nodes once, sessions link to them, never per-session copies.
-- **`embed.py`** — `nomic-embed-text` entity embeddings into a Neo4j vector
-  index (768 dims); backbone types (Session) excluded from search hits.
+- **`embed.py`** — `nomic-embed-text` embeddings (768 dims), always local
+  regardless of `PNP_PROFILE`. **Two vector indexes** (WP14): `entity_embedding`
+  `FOR (:Entity)` and `chunk_embedding` `FOR (:Chunk)`; the embed pass matches
+  `(n:Entity OR n:Chunk)`. Backbone types (Session) excluded from search hits.
+  `Chunk` nodes (WP13.5) are the one exception to the composed
+  `type|name|aliases|description|summary` text — their raw passage `text` is
+  embedded verbatim.
 - **`retrieve.py`** — GraphRAG-style **local** search without adopting the
-  framework (verdict in `docs/evolution/11`): vector top-k seeds → graph
-  neighborhood expansion (optionally as-of a session seq) → formatted context
-  → local LLM answer with session citations. `cli ask` wraps it.
+  framework (verdict in `docs/evolution/11`): vector top-k seeds merged from
+  **both** indexes by cosine score (WP14) → graph neighborhood expansion over
+  both labels (optionally as-of a session seq) → formatted context → local LLM
+  answer with session citations. `cli ask` wraps it. A `Chunk` seed renders as
+  its raw source passage instead of the usual name/status line.
 - **`reconcile.py`** — `cli reconcile-report` (WP8): diffs the local graph
   against the hand-authored report graph for one session; proposes alias
   additions. Finds reports in `reports/` (or repo root).
@@ -137,10 +268,13 @@ IDs) → write_session (Neo4j MERGE) → embed_entities (vector index)`.
 ## Tests
 
 `python -m pytest tests/` — all offline, no LLM/DB:
-- `test_chunking.py` — `pack_segments` invariants.
-- `test_extract.py` — prompt assembly, merge, event-consolidation logic (LLM stubbed).
+- `test_chunking.py` — `pack_segments` + `heuristic_segment` invariants,
+  `format_turn` has no inline timestamp.
+- `test_extract.py` — prompt assembly, merge, windowed known-world (LLM stubbed).
 - `test_resolve.py` — the resolver: aliasing, GM handling, out-of-world filter,
-  event gate, predicate mapping.
+  event gate, predicate mapping, PC↔PC `ALLIED_WITH` drop.
+- `test_store.py` — supersede keying (exclusive vs stable vs many-to-many),
+  `source_types` guard, edge MERGE without `session_id`, `PLAYS` supersede.
 - `test_golden.py` — golden-file regression (WP10): fixed extraction fixture
   through resolve, compared against `tests/golden_resolved.json`.
 - `test_retrieve.py` — embedding text + context formatting.

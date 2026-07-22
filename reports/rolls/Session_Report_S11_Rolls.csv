@@ -1,0 +1,28 @@
+scene,event_type,actor,trait_or_action,outcome,success,result,confidence,node_ref
+S11-3,project_choice,CHAR_Micha_Rotunas,Projekt-Wahl (Buchuebersetzung),Timer 1 von 4 gestartet,true,Timer 1/4,hoch,ITEM_Buch_Antikes_Turm
+S11-4,rest_choice,CHAR_LindoLaut,Armor-Reparatur und Meditation,1 Armor-Slot repariert,true,1 Armor-Slot,hoch,
+S11-6,skill_roll,CHAR_Celin_Cookie,W12 (vergiftete Pfeile),unleserlich,,,niedrig,ROLL_Cookie_Pfeilvergiftung_W12
+S11-7,loot_roll,CHAR_Micha_Rotunas,W20 Loot-Tabelle,Glamourstone erhalten,true,11,hoch,ITEM_Glamourstone
+S11-8,loot_roll,CHAR_LindoLaut,W20 Loot-Tabelle,Arcane Prisma erhalten,true,17,hoch,ITEM_ArcanePrisma
+S11-9,loot_roll,CHAR_Marco_Dodo,W20 Loot-Tabelle,Arcane Cloak erhalten,true,7,hoch,ITEM_ArcaneCloak
+S11-10,loot_roll,CHAR_Celin_Cookie,W20 Loot-Tabelle,Ender Chest erhalten,true,12,hoch,ITEM_EnderChest
+S11-15,mechanic_event,CHAR_Micha_Rotunas,Kristallberuehrung am Schrein,violette Kreatur faellt ins Wasser,true,,niedrig,LOC_SchlangenSchrein_Sumpf
+S11-18,trap_roll,CHAR_Micha_Rotunas,Falle/Schockrune beruehrt,18 Schaden reduziert durch Armor,false,18 Schaden,hoch,ROLL_Rotunas_Schockfalle
+S11-20,feature_activation,CHAR_Celin_Cookie,Kaeferpanzer aktiviert (1 Stress),Schadensreduktion bereit,true,,hoch,MECH_Kaeferpanzer_S11_Aktivierung
+S11-23,attack_roll,CHAR_Marco_Dodo,Nahkampfangriff (Keule) gegen Geisterkreatur,Fehlschlag,false,,hoch,ROLL_Dodo_Fehlschlag_Geist
+S11-24,attack_roll,CHAR_Micha_Rotunas,Power Push (Spellcast) gegen Geisterkreatur,Geisterkreatur aufgeloest,true,13 Schaden,hoch,ROLL_Rotunas_PowerPush_Geist
+S11-25,spellcast,CHAR_Micha_Rotunas,Runic Lock (erste Tuer),Tuer versiegelt,true,,hoch,
+S11-29,damage_mitigation,CHAR_Celin_Cookie,Kaeferpanzer retroaktiv anerkannt,1 HP gespart,true,1 HP gespart,mittel,MECH_Kaeferpanzer_S11_Aktivierung
+S11-29,rally_die,Gruppe,Rally-Wuerfel Reroll im Mimik-Kampf,Reroll genutzt,true,,mittel,
+S11-29,combined_attack,Gruppe (Doppel-Hope),Mimik auseinandergerissen,Mimik besiegt,true,,hoch,CHAR_Mimik_Muschel
+S11-31,item_use,CHAR_Celin_Cookie,Minor Stamina Potion konsumiert,anomaler Blitzeinschlag,true,,niedrig,ITEM_MinorStaminaPotion
+S11-32,spellcast,CHAR_Micha_Rotunas,Runic Lock (zweite Tuer),Tuer versiegelt,true,,hoch,
+S11-33,reveal,CHAR_Deniz_GM,Enthuellung: erste Versiegelung durchbrochen,Verfolger durchgebrochen,true,,mittel,
+S11-34,spellcast,CHAR_Marco_Dodo,Reveal-Zauber auf Fangzahn-Amulett,keine verborgenen Eigenschaften,false,,hoch,ITEM_FangzahnAmulett
+S11-36,social_check,CHAR_Micha_Rotunas,Moralrede,Rally-Wuerfel erhalten,true,,hoch,
+S11-38,combat,Gruppe,Kampf gegen vier Wasserelementale,3 von 4 besiegt; 1 entkommen,true,3 von 4 besiegt,hoch,CHAR_Wasserelementare_Kollektiv
+S11-40,rally_die,CHAR_Marco_Dodo,Rally-Wuerfel genutzt,Reroll,true,,hoch,
+S11-40,rally_die,CHAR_LindoLaut,Rally-Wuerfel genutzt,Reroll,true,,hoch,
+S11-40,rally_die,CHAR_Celin_Cookie,Rally-Wuerfel genutzt,Reroll,true,,hoch,
+S11-41,resource_spend,CHAR_Marco_Dodo,Guardian-Faehigkeit (3 Hope zu 2 Armor-Slots),2 Armor-Slots repariert,true,2 Armor-Slots,hoch,
+S11-42,item_use,CHAR_LindoLaut,Minor Health Potion konsumiert,Heilung erhalten,true,,hoch,ITEM_MinorHealthPotion

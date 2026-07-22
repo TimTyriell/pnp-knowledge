@@ -1,0 +1,25 @@
+scene,event_type,actor,trait_or_action,outcome,success,result,confidence,node_ref
+S10-15,RollEvent,CHAR_Micha_Rotunas,Spellcast/Melee (Great Staff),success,true,6 Schaden,hoch,ROLL_S10-15_01
+S10-16,RollEvent,CHAR_Micha_Rotunas,Agility Reaction,crit,true,Ausweich auf Baumstumpf,hoch,ROLL_S10-16_01
+S10-17,RollEvent,CHAR_Celin_Cookie,Spellcast (Entangle),fail,false,Monster nicht verstrickt,hoch,ROLL_S10-17_01
+S10-18,RollEvent,CHAR_LindoLaut,Spellcast (Mystic Tether) Versuch 1,fail,false,Fesselung gescheitert,hoch,ROLL_S10-18_01
+S10-19,RollEvent,CHAR_LindoLaut,Spellcast (Mystic Tether) Versuch 2,success_hope,true,Gesamtwurf 22; Monster restrained,hoch,ROLL_S10-19_01
+S10-20,RollEvent,CHAR_Basti_Esterossa,Spellcast (Bolt Beacon als Frost),success,true,Gesamtwurf 13; wenig Wirkung,hoch,ROLL_S10-20_01
+S10-21,RollEvent,CHAR_Sumpfmonster_Tentakel,Melee (Biss),hit,true,17 zum Treffen; 11 Schaden,hoch,ROLL_S10-21_01
+S10-22,RollEvent,CHAR_Brass,Melee (Finishing-Versuch),fail,false,Wurf 10; Faceplant ins Wasser,mittel,ROLL_S10-22_01
+S10-23,RollEvent,CHAR_Celin_Cookie,Agility (Paralyse-Pfeil mit Vorteil),success_hope,true,9 Schaden,hoch,ROLL_S10-23_01
+S10-24,RollEvent,CHAR_Marco_Dodo,Elemental Breath (Augen-Tentakel),unklar,true,Blend-Wirkung unklar,mittel,ROLL_S10-24_01
+S10-25,RollEvent,CHAR_Sumpfmonster_Tentakel,Melee (3 Tentakel),hit,true,2 von 3 treffen: 10 und 8 Schaden,hoch,ROLL_S10-25_01
+S10-26,RollEvent,CHAR_Micha_Rotunas,Spellcast (Wild Flame mit Battlemage-Bonus),success_hope,true,14 zum Treffen; trifft alle 3 Tentakel,hoch,ROLL_S10-26_01
+S10-27,RollEvent,CHAR_Marco_Dodo,Strength (Interception),success,true,16 gegen 14,hoch,ROLL_S10-27_01
+S10-28,RollEvent,CHAR_Sumpfmonster_Tentakel,Melee (Biss umgeleitet),hit,true,29 Schaden; dritte Schwelle ueberschritten,hoch,ROLL_S10-28_01
+S10-29,RollEvent,CHAR_Basti_Esterossa,Spellcast (Frost Finish),success_hope,true,14 zum Treffen; 13 Eisschaden,hoch,ROLL_S10-29_01
+S10-29,RollEvent,CHAR_Marco_Dodo,Melee (Club; Vorteil + Hoehenbonus),success,true,15 Schaden; Monster zerschmettert,hoch,ROLL_S10-29_02
+S10-30,RollEvent,CHAR_Basti_Esterossa,Spellcast (Handauflegen; 2 Hope),success,true,Brass stabilisiert,hoch,ROLL_S10-30_01
+S10-30,RollEvent,CHAR_Celin_Cookie,Finesse (Verband mit Experience),success,true,Wurf 7,hoch,ROLL_S10-30_02
+S10-32,RollEvent,CHAR_Celin_Cookie,Instinct/Nature (mit Hope),success_hope,true,spuert Brummton aus Nordosten,hoch,ROLL_S10-32_01
+S10-34,RollEvent,CHAR_Basti_Esterossa,Instinct,success,true,erinnert an Schlangengoetter,hoch,ROLL_S10-34_01
+S10-34,RollEvent,CHAR_Basti_Esterossa,Knowledge/History (mit Vorteil),success_hope,true,Gesamtwurf 21,hoch,ROLL_S10-34_02
+S10-35,RollEvent,CHAR_LindoLaut,Instinct Reaction,success,true,entgeht Ambush,hoch,ROLL_S10-35_01
+S10-36,RollEvent,CHAR_Micha_Rotunas,Spellcast (Reveal),success,true,Gesamtwurf 13,hoch,ROLL_S10-36_01
+S10-38,RollEvent,CHAR_Schlangengott_Avatar,Melee (6 simultane Bisse),hit,true,Gesamtwert 20; alle 6 treffen,hoch,ROLL_S10-38_01

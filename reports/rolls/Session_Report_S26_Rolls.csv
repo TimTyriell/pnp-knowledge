@@ -1,0 +1,20 @@
+Szene,Zeitstempel,Spieler,Charakter,Wurf-Typ,Modifikator,Ergebnis_Gesamt,DC_oder_Kontext,Erfolg,Notiz
+1,S26-01,Micha,Rotunas,Reaktion,+0,—,Kristallberührung,Nein,Finger kristallisieren; Arus interveniert; +1 Stress
+2,S26-02,Tim,Lindo Laut,Instinct,+0,14,Grüne Kristallmasse entdecken,Ja,Spürt Verbindung zur Hexe
+2,S26-03,Celin,Cookie,Knowledge,+0,19,Grüne Kristalle analysieren (Nature's Tongue + Alchemie),Ja,Erkennt Kontrollschicht; feuerempfindlich
+2,S26-04,Marco,Dodo,Angriff,+0,19,Grünes Kristallgestrüpp verbrennen,Ja,Feuerpillar; gesamte Masse vernichtet
+2,S26-05,Marco,Dodo,Knowledge,+0,19,Kontrollrune identifizieren (Runeleser + Hope),Ja,Bestätigt als Steuerungsrune
+3,S26-06,Basti,Esterossa,Finesse,+0,—,Treibsand-Falle (Shape Material),Ja,Falle erfolgreich gelegt
+3,S26-07,Celin,Cookie,Finesse,+0,—,Know Your Enemy (Feindkenntnis),Ja,Torso-Info erlangt; +1 Stress; -1 GM-4-Punkt
+3,S26-08,Basti,Esterossa,Presence,+0,—,Golem befehligen,Nein,Golem ignoriert Befehl
+3,S26-09,Basti,Esterossa,Finesse,+0,—,Bolt Beacon (linker Arm),Teilerfolg,Trifft; keine sichtbare Wirkung
+3,S26-10,Micha,Rotunas,Finesse,+0,14,Eissplitter (Kniegelenk),Teilerfolg,6 Gesamtschaden; Stein angebrochen
+3,S26-11,Micha,Rotunas,Finesse,+0,16,Feuerball (rechtes Bein),Ja,42 Schaden; rechtes Bein zerstört
+3,S26-12,Micha,Rotunas,Finesse,+0,15,Feuerball (Kopf),Teilerfolg,Trifft; keine Wirkung
+3,S26-13,Tim,Lindo Laut,Agility,+0,—,Arkanablenkung (Greifangriff),Ja,Fluchtring aktiviert; Rotunas geschützt
+3,S26-14,Basti,Esterossa,Agility,+0,—,Handangriff ausweichen,Nein,47 Schaden; Rüstungsslot + 2 Stress
+3,S26-15,Marco,Dodo,Strength,+0,19,Feueratem Torso (Unbezwingbar + Hope),Ja,17 Schaden; Golem greift Dodo zurück
+3,S26-16,Micha,Rotunas,Finesse,+0,23,Feuerball + Bonus-W20 (rechter Arm),Ja,+2 Stress; rechter Arm explodiert
+3,S26-17,Micha,Rotunas,Finesse,+0,15,Feuerball (Torso),Nein,Verfehlt
+3,S26-18,Basti,Esterossa,Finesse,+0,—,Angriff (Torso),Nein,Verfehlt
+3,S26-19,Tim,Lindo Laut,Finesse,+0,15,Feuerwolke,Nein,Verfehlt

@@ -1,0 +1,29 @@
+scene,event_type,actor,trait_or_action,outcome,success,result,confidence,node_ref
+S13-7,check,CHAR_LindoLaut,Performance/Presence-Probe (Kerl),Zugang zur Gruft,true,,hoch,CHAR_Kerl
+S13-9,check,CHAR_Micha_Rotunas,Wissens-Probe an magischer Barriere,Gesamtwurf 10,true,Barriere passiert,hoch,LOC_Graf_Gruft
+S13-13,check,Gruppe,Wissens-Probe: voller Name des Grafen,"Voras der Heilige",true,,hoch,CHAR_Voras
+S13-22,check,CHAR_Marco_Dodo,Instinkt-Probe (Palantir-Info),Wurf 8,false,Fehlschlag,hoch,ITEM_SchwarzerStein_Palantirartig
+S13-24,check,CHAR_Marco_Dodo,Finesse-Probe (Transkription),"leicht, DC 12 ueberschritten",true,Zwei Schriftrollen kopiert,hoch,ITEM_Schriftrolle_Waffenschaden
+S13-25,check,CHAR_LindoLaut,Magiewert-Probe (+3),Buch lokalisiert,true,,hoch,ITEM_Buch_CircleBelow
+S13-28,check,Gruppe,Wissens-Probe: Herkunft der Buchmagie,"Circle Below",true,,hoch,ITEM_Buch_CircleBelow
+S13-30,mechanic,Gruppe,Stress durch Fluester,1 Stress je PC,true,,hoch,ITEM_Buch_CircleBelow
+S13-32,check,CHAR_LindoLaut,Wissens-Probe (Seelen-Transport),Wurf 21,true,Bestaetigt: Seelen in Lava-Arena,hoch,LOC_AstralArena_Lava
+S13-34,attack,CHAR_LindoLaut,Feuerball (ambient kanalisiert),Wurf 22,true,Vollstrecker-Celestial besiegt,hoch,CHAR_Celestial_Vollstrecker
+S13-35,save,CHAR_Marco_Dodo,Agility-Rettungswurf (Lava-Spritzer),Wurf 12 (exakt DC),true,6 von 20 Schaden nach Threshold,hoch,CHAR_Marco_Dodo
+S13-36,attack,CHAR_Micha_Rotunas,Mystic Tether (Angriffswurf),Wurf 14,true,Speertraeger-Celestial gebunden,hoch,CHAR_Celestial_Speertraegerin
+S13-36,attack,CHAR_Marco_Dodo,Sprung-Nahkampfangriff,Wurf 15,true,Speertraeger-Celestial besiegt,hoch,CHAR_Celestial_Speertraegerin
+S13-37,attack,CHAR_Marco_Dodo,Feuerbreath (2W8 Maximalwert),1 Stress,true,Dritte Celestial praeventiv vernichtet,hoch,CHAR_Celestial_Praeventiv
+S13-38,attack,CHAR_Celestial_Schwarzgefluegelt,Zwei Angriffe auf Lindo Laut,Treffer 18 und 17,true,16 Schaden (zweiter Treffer),hoch,CHAR_LindoLaut
+S13-40,spellcast,CHAR_LindoLaut,Magic Hands Grapple-Versuch,dispelliert von Celestial,false,Counterspell-aehnlicher Effekt,hoch,CHAR_Celestial_Schwarzgefluegelt
+S13-41,attack,CHAR_Celestial_Schwarzgefluegelt,Kritischer Energiestrahl,Automatischer Maximalschaden,true,31 magischer Schaden geteilt (Dodo/Lindo Laut),hoch,CHAR_LindoLaut
+S13-42,attack,CHAR_Celestial_Schwarzgefluegelt,Zweiter Energiestrahl,Fear-Punkt-Einsatz,true,25 Schaden auf Lindo Laut,hoch,CHAR_LindoLaut
+S13-42,mechanic,CHAR_LindoLaut,Wizard's Hope aktiviert,3 Hope geopfert,true,letzter Lebenspunkt bewahrt,mittel,CHAR_LindoLaut
+S13-43,attack,CHAR_Celestial_Schwarzgefluegelt,Fear-Punkt-Angriff auf Rotunas,16 Schaden,true,kritisch niedrig,hoch,CHAR_Micha_Rotunas
+S13-43,mechanic,CHAR_Micha_Rotunas,Seelenstein als Schutzschild geopfert,Treffer absorbiert,true,Seelenstein zerstoert,hoch,ITEM_Seelenstein
+S13-45,mechanic,CHAR_Micha_Rotunas,Heroischer Lava-Pillar-Angriff (Nahtod-Option),unklare Ausloesung,true,"Permanenter Hope-Verlust (1), umgestupst",niedrig,CHAR_Micha_Rotunas
+S13-46,spellcast,CHAR_LindoLaut,Unsichtbarkeit auf sich selbst,Stress (korrigiert von Hope),true,Ueberlebt inkapazitiert,hoch,CHAR_LindoLaut
+S13-47,attack,CHAR_Celestial_Schwarzgefluegelt,Kritischer Doppeltreffer,Automatischer Maximalschaden,true,31 magischer Schaden geteilt (Dodo/Lindo Laut),hoch,CHAR_LindoLaut
+S13-48,attack,CHAR_LindoLaut,Eisenketten-Bindung (W20),Erfolg ausser bei natuerlicher 1,true,Schwarzgefluegelte Celestial gebunden,hoch,CHAR_Celestial_Schwarzgefluegelt
+S13-49,attack,CHAR_Marco_Dodo,Finaler Sprung-Schild-Speer-Stoss,Treffer,true,Schwarzgefluegelte Celestial besiegt,hoch,CHAR_Celestial_Schwarzgefluegelt
+S13-55,check,Gruppe,Gemeinsame Wissens-Probe (Orchestrierung),Mindestwert 12 erreicht,true,Hack als Orchestratorin vermutet,mittel,CHAR_Hack_Hexe
+S13-61,check,CHAR_JeronimoRoeder_OrlaniusSchwarzhorn,Dokumenten-Durchsicht,Schluessel identifiziert,true,Portalöffner zu unbekanntem Ziel,hoch,ITEM_Schluessel_Magisch

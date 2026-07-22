@@ -1,0 +1,20 @@
+Szene,Zeitstempel,Spieler,Charakter,Wurf-Typ,Modifikator,Ergebnis_Gesamt,DC_oder_Kontext,Erfolg,Notiz
+S20-1,00:07,Tim,Lindo Laut,Mystic Tether (Spell),Hope,Krit,Kultist Reaction Roll (scheitert),ja,Kultist walzt unfreiwillig; mit Hope-Würfel
+S20-2,00:09,Katha,Nyrella,Angriff (Handcrossbow),–,18,Kultist tanzend,ja,8 Schaden; Mystic Tether durch Treffer gebrochen
+S20-2,00:11,Katha,Nyrella,Angriff (Ranger's Hope Mehrfach),–,14,Kultist 1,ja,10 Schaden erste/ 4 Schaden zweite (Streifschuss)
+S20-4,00:17,Tim,Lindo Laut,Reaction Agility,–,Fail (DC 16),Ghul-Sprung,nein,Dritter Ghul hängt sich an Lindo/ reißt ihn mit
+S20-5,00:21,Tim,Lindo Laut,W12 Herzschlag,–,1,Brunnensubstanz-Trigger,nein/ja,W12 = 1 aber Substanz aktiviert; Ghul in Binnensekunde zerfetzt
+S20-6,00:22,Marco,Dodo,Stärke (Versteinerung),–,Fail,Versteinerung brechen,nein,Risse aber kein Durchbruch
+S20-7,00:24,Celin,Cookie,Vicious Entangle (Spell Eis),1 Hope,Treffer,Beide Front-Kultisten,ja,5 Schaden beide; beide restrained
+S20-8,00:27,Katha,Nyrella,Angriff (Pfeil),–,16,Kultist-Magier,ja,9 Schaden + Ranger's Focus (markiert)
+S20-8,00:27,Katha,Nyrella,Reaction Agility,–,–,Roter-Sand-Angriff des Magiers (11),ja,Verfehlt; Bäume glühen stattdessen
+S20-9,00:33,Marco,Dodo,Stärke (Versteinerung),–,Krit,Versteinerung brechen,ja,Vollständig frei; darf Angriff machen
+S20-9,00:34,Marco,Dodo,Stärke (Reaction Grip),–,Fail,Ghul-Grip (18),nein,Wird festgehalten; Aktion endet
+S20-9,00:34,Marco,Dodo,Instinkt (Reaction),–,Bestanden,Ghul-Crit 28+9 Schaden,ja,Kein zusätzlicher Effekt; Unstoppable aktiv
+S20-10,00:38,Tim,Lindo Laut,Angriff (Dolch Nahkampf),Auto-Krit (restrained Ziel),16,Kultist,ja,2d8+6 Schaden; Kultist schwer verwundet
+S20-10,00:39,Basti,Esterossa,Angriff (Axt Rücken),Vorteil (unsichtbar),16,Kultist-Magier,ja,KO (nicht-lethal); letzter unsichtbarer Zug
+S20-11,00:40,–,Ghule,Angriff,grüne Blitze (doppelt stark),7 + 16,Lindo Laut,7=Nein / 16=Ja,19 Schaden bei Treffer 16
+S20-11,00:41,Tim,Lindo Laut,Instinkt,–,18,Ghul-Angriff 16,ja,Kein Zusatzeffekt
+S20-12,00:49,Celin,Cookie,Angriff (Pfeil/ Kopfziel),Vorteil + 1 Hope (tödl. Zielen),16,Ghul-Kopf (DC erhöht),ja,Auto-Krit (Ablenkung + Vorbereitung); 18 Schaden; Ghul tot
+S20-13,00:51,Marco,Dodo,Angriff,–,15,Ghul,ja,Zweiten Ghul getötet
+S20-14,01:01,Tim,Lindo Laut,Knowledge,–,nicht genannt,Beschwörungsbuch,teilweise,T-Rex kommentiert: Nur ein Beschwören; nichts Besonderes

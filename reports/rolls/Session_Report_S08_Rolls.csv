@@ -1,0 +1,17 @@
+scene,event_type,actor,trait_or_action,outcome,success,result,confidence,node_ref
+S08-1,Mechanic,Gruppe,Missionswahl (Zebros statt Wueste),n/a,ja,Zebros-Mission angenommen,hoch,MECH_S08-1_01
+S08-6,Roll,Dodo,Strength (Bergung Deckenkristall),fail,nein,Handschuhe frieren am Kristall fest,hoch,ROLL_S08-6_01
+S08-8,Roll,Cookie,Spellcast (Wurzel/Ranken),success_hope,ja,Baer wird verankert,hoch,ROLL_S08-8_01
+S08-9,Mechanic,GM,Gruener Blitz/Goblin-Goetter-Effekt,n/a,ja,Baer zusaetzlich eingefroren,mittel,MECH_S08-9_01
+S08-11,Roll,Dodo,Knowledge (Religion/History),success_hope,ja,Statue als Bodrak identifiziert,hoch,ROLL_S08-11_01
+S08-12,Mechanic,Dodo,Spekulation zur zweiten Statue/Hack-Verbindung,n/a,ja,Offener Verdacht geaeussert,niedrig,MECH_S08-12_01
+S08-13,Roll,Cookie,Finesse (Schlossknacken),success_hope,ja,Tuer geoeffnet,hoch,ROLL_S08-13_01
+S08-15,Mechanic,GM,Mysterioeses Oeffnen der Tuer 'Ruhe den Toten',n/a,ja,Tuer oeffnet sich trotz funktionslosem Mechanismus,hoch,MECH_S08-15_01
+S08-16,Mechanic,Dodo,Stress durch Leichenkammer,n/a,ja,1 Stress erlitten,hoch,MECH_S08-16_01
+S08-17,Mechanic,Gruppe,Tagebuch-Fund,n/a,ja,Belorus' Hintergrund enthuellt,hoch,MECH_S08-17_01
+S08-18,Roll,Cookie,Spellcast (Schutzkristall-Cleanse),success_hope,ja,Nahe Untote vernichtet; Belorus empoert,hoch,ROLL_S08-18_01
+S08-24,Mechanic,Belorus,Unsichtbarkeit und Verschwinden,n/a,ja,Belorus entkommt; Mechanismus ausgeloest,hoch,MECH_S08-24_01
+S08-25,Mechanic,Dodo,Unstoppable-Aktivierung,n/a,ja,Long-Rest-Feature aktiviert,hoch,MECH_S08-25_01
+S08-25,Roll,Cookie,Spellcast (Gluehwuermchen/Feuer),crit,ja,Gegner sofort getoetet,hoch,ROLL_S08-25_01
+S08-26,Mechanic,GM,Acht blaue Lichttroepfchen,n/a,ja,Unerklaertes Phaenomen gesichtet,mittel,MECH_S08-26_01
+S08-27,Roll,Gruppe,Agility (Flucht vor Eisbaeren),success_hope,ja,2 Stress fuer beide; sicheres Entkommen,hoch,ROLL_S08-27_01

@@ -19,8 +19,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 import pnp_graph.resolve as resolve_mod
 from pnp_graph.chunking import session_cast
 from pnp_graph.resolve import Resolver, resolve_graph
-from pnp_graph.schema import (Character, Decision, Event, GraphExtraction, Item,
-                              Quest, Relationship, RollEvent, RuleEntity)
+from pnp_graph.schema import (Character, Event, GraphExtraction, Item,
+                              Quest, Relationship, RuleEntity)
 from pnp_graph.srd import SrdIndex
 
 GOLDEN = Path(__file__).parent / "golden_resolved.json"
@@ -34,26 +34,18 @@ _SEGMENTS = [
 
 _EXTRACTION = GraphExtraction(
     characters=[
-        Character(name="Lindo Laut", type="PC"),
-        Character(name="der Schleichfurz", type="NPC"),
-        Character(name="Schleichfurz ", type="NPC"),  # variant — must collapse
+        Character(name="Lindo Laut", role="PC", is_named_character=True),
+        Character(name="der Schleichfurz", role="NPC", is_named_character=True),
+        Character(name="Schleichfurz ", role="NPC", is_named_character=True),  # variant — must collapse
     ],
-    items=[Item(name="Bogen", owner="Cookie", status="used")],
+    items=[Item(name="Bogen", owner="Cookie", status="used", is_named_artifact=True)],
     quests=[Quest(name="Monsterjagd", status="open")],
-    events=[Event(title="Monster greift an", summary="", participants=["Dodo", "Lindo"],
-                  location=None)],
+    events=[Event(label="Monster greift an", summary="", participants=["Dodo", "Lindo"],
+                  location=None, narrative_significance_reasoning="Kampf beginnt")],
     rule_entities=[RuleEntity(name="Barde", subtype="Class")],
-    roll_events=[RollEvent(name="Dodo Angriffswurf", roller="Dodo", trait_or_action="attack",
-                           outcome="success_with_fear", target="der Schleichfurz",
-                           confidence="high")],
-    decisions=[Decision(name="Monster provozieren", decided_by="Lindo Laut",
-                        quote="ich singe", consequence="Monster greift an",
-                        confidence="medium")],
     relationships=[
         Relationship(subject="Lindo Laut", predicate="HAS_CLASS", object="Barde",
                      confidence="high"),
-        Relationship(subject="Monster provozieren", predicate="TRIGGERED",
-                     object="Monster greift an", confidence="high"),
         Relationship(subject="Dodo", predicate="BEST_BUDDY", object="Cookie",  # off-vocab
                      confidence="low"),
         Relationship(subject="Unbekannt", predicate="KNOWS", object="Dodo",  # dropped
@@ -69,10 +61,7 @@ _EVIDENCE = {
     ("quests", "Monsterjagd"): [1],
     ("events", "Monster greift an"): [2],
     ("rule_entities", "Barde"): [1],
-    ("roll_events", "Dodo Angriffswurf"): [2],
-    ("decisions", "Monster provozieren"): [1],
     ("relationships", ("Lindo Laut", "HAS_CLASS", "Barde")): [1],
-    ("relationships", ("Monster provozieren", "TRIGGERED", "Monster greift an")): [2],
     ("relationships", ("Dodo", "BEST_BUDDY", "Cookie")): [2],
 }
 

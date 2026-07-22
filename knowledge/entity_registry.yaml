@@ -1,0 +1,2533 @@
+# Entity registry.
+#
+# Maintain aliases by hand: add a name under a concept's 'aliases:'
+# in the 'entities:' list below. Each alias both de-duplicates
+# matching mentions and is shown as a display alias. Your aliases are
+# never overwritten - the tool only appends newly discovered variants.
+#
+# 'merge:' is optional: map a name (lowercased) to a concept_id to
+# fold it in without listing it under a concept, e.g.:
+#   merge:
+#     "heck": factions/hag
+merge:
+  cookie (ribbit): characters/cookie
+  cookie: characters/cookie
+  valerie: characters/valeria
+  valeria: characters/valeria
+  lindo laut: characters/lindo_laut
+  nyrella: characters/nyrella
+  perry das schnabeltier: npcs/perry_das_schnabeltier
+  parry das schnabeltier: npcs/perry_das_schnabeltier
+  parry: npcs/perry_das_schnabeltier
+  perry: npcs/perry_das_schnabeltier
+  leandras: npcs/lendras
+  goblin-götter: factions/goblin_goetter
+  goblin götter: factions/goblin_goetter
+  brechka: locations/breska
+  bresca: locations/breska
+  dorf (bresca?): locations/breska
+entities:
+- concept_id: characters/brim
+  type: Character
+  canonical_name: Brim
+  aliases: []
+  mention_count: 2
+- concept_id: characters/cookie
+  type: Character
+  canonical_name: Cookie
+  aliases:
+  - Cookie (Ribbit)
+  mention_count: 23
+- concept_id: characters/dodo
+  type: Character
+  canonical_name: Dodo
+  aliases: []
+  mention_count: 38
+- concept_id: characters/esterossa
+  type: Character
+  canonical_name: Esterossa
+  aliases: []
+  mention_count: 29
+- concept_id: characters/esterossa_torbhalm
+  type: Character
+  canonical_name: Esterossa Torbhalm
+  aliases: []
+  mention_count: 1
+- concept_id: characters/lindo_laut
+  type: Character
+  canonical_name: Lindo Laut
+  aliases: []
+  mention_count: 31
+- concept_id: characters/lindo_laut_pedro
+  type: Character
+  canonical_name: Lindo Laut (Pedro)
+  aliases: []
+  mention_count: 1
+- concept_id: characters/lunara_velora
+  type: Character
+  canonical_name: Lunara Velora
+  aliases: []
+  mention_count: 10
+- concept_id: characters/nyrella
+  type: Character
+  canonical_name: Nyrella
+  aliases: []
+  mention_count: 15
+- concept_id: characters/nyruk
+  type: Character
+  canonical_name: Nyruk
+  aliases: []
+  mention_count: 1
+- concept_id: characters/pedro_die_katze
+  type: Character
+  canonical_name: Pedro die Katze
+  aliases: []
+  mention_count: 1
+- concept_id: characters/rotunas
+  type: Character
+  canonical_name: Rotunas
+  aliases: []
+  mention_count: 25
+- concept_id: characters/valeria
+  type: Character
+  canonical_name: Valeria
+  aliases:
+  - Valerie
+  mention_count: 4
+- concept_id: events/absturz_in_die_tiefe
+  type: Event
+  canonical_name: Absturz in die Tiefe
+  aliases: []
+  mention_count: 1
+- concept_id: events/angriff_der_ghule
+  type: Event
+  canonical_name: Angriff der Ghule
+  aliases: []
+  mention_count: 1
+- concept_id: events/angriff_der_schleimkreaturen
+  type: Event
+  canonical_name: Angriff der Schleimkreaturen
+  aliases: []
+  mention_count: 1
+- concept_id: events/angriff_der_untoten_auf_die_karawane
+  type: Event
+  canonical_name: Angriff der Untoten auf die Karawane
+  aliases: []
+  mention_count: 1
+- concept_id: events/angriff_des_untoten_eisbaeren
+  type: Event
+  canonical_name: Angriff des untoten Eisbären
+  aliases: []
+  mention_count: 1
+- concept_id: events/arena_kampf
+  type: Event
+  canonical_name: Arena-Kampf
+  aliases: []
+  mention_count: 1
+- concept_id: events/befreiung_und_tod_von_luli
+  type: Event
+  canonical_name: Befreiung und Tod von Luli
+  aliases: []
+  mention_count: 1
+- concept_id: events/befreiung_von_nerash
+  type: Event
+  canonical_name: Befreiung von Nerash
+  aliases: []
+  mention_count: 1
+- concept_id: events/begegnung_am_schlangenschrein
+  type: Event
+  canonical_name: Begegnung am Schlangenschrein
+  aliases: []
+  mention_count: 1
+- concept_id: events/bergung_des_dokuments
+  type: Event
+  canonical_name: Bergung des Dokuments
+  aliases: []
+  mention_count: 1
+- concept_id: events/bergung_von_zebrus_zorn
+  type: Event
+  canonical_name: Bergung von Zebrus Zorn
+  aliases: []
+  mention_count: 1
+- concept_id: events/beschwoerung_durch_lindo_laut
+  type: Event
+  canonical_name: Beschwörung durch Lindo Laut
+  aliases: []
+  mention_count: 1
+- concept_id: events/blutopfer_an_der_statue
+  type: Event
+  canonical_name: Blutopfer an der Statue
+  aliases: []
+  mention_count: 1
+- concept_id: events/bruecke_der_hoffnungslosigkeit
+  type: Event
+  canonical_name: Brücke der Hoffnungslosigkeit
+  aliases: []
+  mention_count: 1
+- concept_id: events/cookies_pilzvision
+  type: Event
+  canonical_name: Cookies Pilzvision
+  aliases: []
+  mention_count: 1
+- concept_id: events/der_anschlag_in_der_taverne
+  type: Event
+  canonical_name: Der Anschlag in der Taverne
+  aliases: []
+  mention_count: 1
+- concept_id: events/der_kampf_gegen_die_schattenkreatur
+  type: Event
+  canonical_name: Der Kampf gegen die Schattenkreatur
+  aliases: []
+  mention_count: 1
+- concept_id: events/der_vertrag
+  type: Event
+  canonical_name: Der Vertrag
+  aliases: []
+  mention_count: 1
+- concept_id: events/die_erweckung_von_voras
+  type: Event
+  canonical_name: Die Erweckung von Voras
+  aliases: []
+  mention_count: 1
+- concept_id: events/die_fehlenden_erinnerungen
+  type: Event
+  canonical_name: Die fehlenden Erinnerungen
+  aliases: []
+  mention_count: 1
+- concept_id: events/die_flut
+  type: Event
+  canonical_name: Die Flut
+  aliases: []
+  mention_count: 1
+- concept_id: events/die_jagd_nach_der_hexe_hack
+  type: Event
+  canonical_name: Die Jagd nach der Hexe 'Hack'
+  aliases: []
+  mention_count: 1
+- concept_id: events/die_schlacht_um_das_dorf
+  type: Event
+  canonical_name: Die Schlacht um das Dorf
+  aliases: []
+  mention_count: 1
+- concept_id: events/diskussion_ueber_das_schicksal_der_goetter
+  type: Event
+  canonical_name: Diskussion über das Schicksal der Götter
+  aliases: []
+  mention_count: 1
+- concept_id: events/entdeckung_der_statue
+  type: Event
+  canonical_name: Entdeckung der Statue
+  aliases: []
+  mention_count: 1
+- concept_id: events/enthuellung_des_fuenften_teils
+  type: Event
+  canonical_name: Enthüllung des fünften Teils
+  aliases: []
+  mention_count: 1
+- concept_id: events/erscheinen_von_belorus_und_beginn_der_belagerung
+  type: Event
+  canonical_name: Erscheinen von Belorus und Beginn der Belagerung
+  aliases: []
+  mention_count: 1
+- concept_id: events/erster_arena_kampf
+  type: Event
+  canonical_name: Erster Arena-Kampf
+  aliases: []
+  mention_count: 1
+- concept_id: events/flucht_aus_steinbachtal
+  type: Event
+  canonical_name: Flucht aus Steinbachtal
+  aliases: []
+  mention_count: 1
+- concept_id: events/flucht_aus_zebros
+  type: Event
+  canonical_name: Flucht aus Zebros
+  aliases: []
+  mention_count: 1
+- concept_id: events/flucht_durch_das_portal
+  type: Event
+  canonical_name: Flucht durch das Portal
+  aliases: []
+  mention_count: 1
+- concept_id: events/friedensschluss_zwischen_zwergen_und_goblins
+  type: Event
+  canonical_name: Friedensschluss zwischen Zwergen und Goblins
+  aliases: []
+  mention_count: 1
+- concept_id: events/hinrichtung_am_stadttor
+  type: Event
+  canonical_name: Hinrichtung am Stadttor
+  aliases: []
+  mention_count: 1
+- concept_id: events/kampf_gegen_das_monster
+  type: Event
+  canonical_name: Kampf gegen das Monster
+  aliases: []
+  mention_count: 1
+- concept_id: events/kampf_gegen_das_seelenkalb
+  type: Event
+  canonical_name: Kampf gegen das Seelenkalb
+  aliases: []
+  mention_count: 1
+- concept_id: events/kampf_gegen_den_golem
+  type: Event
+  canonical_name: Kampf gegen den Golem
+  aliases: []
+  mention_count: 1
+- concept_id: events/kampf_gegen_den_miner_demon
+  type: Event
+  canonical_name: Kampf gegen den Miner Demon
+  aliases: []
+  mention_count: 1
+- concept_id: events/kampf_gegen_den_rachsuechtigen_geist
+  type: Event
+  canonical_name: Kampf gegen den rachsüchtigen Geist
+  aliases: []
+  mention_count: 1
+- concept_id: events/kampf_gegen_den_todesritter
+  type: Event
+  canonical_name: Kampf gegen den Todesritter
+  aliases: []
+  mention_count: 1
+- concept_id: events/kampf_gegen_die_bugbears
+  type: Event
+  canonical_name: Kampf gegen die Bugbears
+  aliases: []
+  mention_count: 1
+- concept_id: events/kampf_gegen_die_mimic
+  type: Event
+  canonical_name: Kampf gegen die Mimic
+  aliases: []
+  mention_count: 1
+- concept_id: events/kampf_gegen_die_pilz_goblins
+  type: Event
+  canonical_name: Kampf gegen die Pilz-Goblins
+  aliases: []
+  mention_count: 1
+- concept_id: events/kampf_gegen_die_splitterwelt_kreatur
+  type: Event
+  canonical_name: Kampf gegen die Splitterwelt-Kreatur
+  aliases: []
+  mention_count: 1
+- concept_id: events/kampf_gegen_die_sumpfamphibie
+  type: Event
+  canonical_name: Kampf gegen die Sumpfamphibie
+  aliases: []
+  mention_count: 1
+- concept_id: events/kampf_gegen_die_untotenhorde
+  type: Event
+  canonical_name: Kampf gegen die Untotenhorde
+  aliases: []
+  mention_count: 1
+- concept_id: events/kampf_gegen_kultisten_und_ghule
+  type: Event
+  canonical_name: Kampf gegen Kultisten und Ghule
+  aliases: []
+  mention_count: 1
+- concept_id: events/kampf_gegen_slix_in_crowfin_manor
+  type: Event
+  canonical_name: Kampf gegen Slix in Crowfin Manor
+  aliases: []
+  mention_count: 1
+- concept_id: events/kampf_in_der_seelenebene
+  type: Event
+  canonical_name: Kampf in der Seelenebene
+  aliases: []
+  mention_count: 1
+- concept_id: events/konfrontation_mit_belorus
+  type: Event
+  canonical_name: Konfrontation mit Belorus
+  aliases: []
+  mention_count: 1
+- concept_id: events/konfrontation_mit_den_kultisten
+  type: Event
+  canonical_name: Konfrontation mit den Kultisten
+  aliases: []
+  mention_count: 1
+- concept_id: events/konfrontation_mit_der_brutstaette
+  type: Event
+  canonical_name: Konfrontation mit der Brutstätte
+  aliases: []
+  mention_count: 1
+- concept_id: events/konfrontation_mit_dormak_und_finale_entscheidung
+  type: Event
+  canonical_name: Konfrontation mit Dormak und finale Entscheidung
+  aliases: []
+  mention_count: 1
+- concept_id: events/konfrontation_mit_halborks
+  type: Event
+  canonical_name: Konfrontation mit Halborks
+  aliases: []
+  mention_count: 1
+- concept_id: events/konfrontation_mit_lenra
+  type: Event
+  canonical_name: Konfrontation mit Lenra
+  aliases: []
+  mention_count: 1
+- concept_id: events/konfrontation_mit_slix
+  type: Event
+  canonical_name: Konfrontation mit Slix
+  aliases: []
+  mention_count: 1
+- concept_id: events/kopfgeld_fuer_kronos
+  type: Event
+  canonical_name: Kopfgeld für Kronos
+  aliases: []
+  mention_count: 1
+- concept_id: events/lindo_lauts_wunsch
+  type: Event
+  canonical_name: Lindo Lauts Wunsch
+  aliases: []
+  mention_count: 1
+- concept_id: events/mysterioeses_klopfen
+  type: Event
+  canonical_name: Mysteriöses Klopfen
+  aliases: []
+  mention_count: 1
+- concept_id: events/naechtliche_begegnung
+  type: Event
+  canonical_name: Nächtliche Begegnung
+  aliases: []
+  mention_count: 1
+- concept_id: events/portal_unter_der_kapelle
+  type: Event
+  canonical_name: Portal unter der Kapelle
+  aliases: []
+  mention_count: 1
+- concept_id: events/pruefung_des_brunnens
+  type: Event
+  canonical_name: Prüfung des Brunnens
+  aliases: []
+  mention_count: 1
+- concept_id: events/rettung_des_soldaten
+  type: Event
+  canonical_name: Rettung des Soldaten
+  aliases: []
+  mention_count: 1
+- concept_id: events/rueckzug_aus_dem_dungeon
+  type: Event
+  canonical_name: Rückzug aus dem Dungeon
+  aliases: []
+  mention_count: 1
+- concept_id: events/schlacht_am_bergpass
+  type: Event
+  canonical_name: Schlacht am Bergpass
+  aliases: []
+  mention_count: 1
+- concept_id: events/schlacht_am_pass
+  type: Event
+  canonical_name: Schlacht am Pass
+  aliases: []
+  mention_count: 1
+- concept_id: events/schlacht_um_das_banditenversteck
+  type: Event
+  canonical_name: Schlacht um das Banditenversteck
+  aliases: []
+  mention_count: 1
+- concept_id: events/schlacht_um_steinbachtal
+  type: Event
+  canonical_name: Schlacht um Steinbachtal
+  aliases: []
+  mention_count: 1
+- concept_id: events/schlaegerei_in_haralds_taverne
+  type: Event
+  canonical_name: Schlägerei in Haralds Taverne
+  aliases: []
+  mention_count: 1
+- concept_id: events/sprengung_der_kristallwand
+  type: Event
+  canonical_name: Sprengung der Kristallwand
+  aliases: []
+  mention_count: 1
+- concept_id: events/teleportation_aus_dem_dungeon
+  type: Event
+  canonical_name: Teleportation aus dem Dungeon
+  aliases: []
+  mention_count: 1
+- concept_id: events/tod_von_cookie
+  type: Event
+  canonical_name: Tod von Cookie
+  aliases: []
+  mention_count: 1
+- concept_id: events/toetung_des_goblin_spaehers
+  type: Event
+  canonical_name: Tötung des Goblin-Spähers
+  aliases: []
+  mention_count: 1
+- concept_id: events/turnier_von_willau
+  type: Event
+  canonical_name: Turnier von Willau
+  aliases: []
+  mention_count: 1
+- concept_id: events/valerias_brief
+  type: Event
+  canonical_name: Valerias Brief
+  aliases: []
+  mention_count: 1
+- concept_id: events/vereitelung_der_flucht
+  type: Event
+  canonical_name: Vereitelung der Flucht
+  aliases: []
+  mention_count: 1
+- concept_id: events/vergiftung_von_rotunas
+  type: Event
+  canonical_name: Vergiftung von Rotunas
+  aliases: []
+  mention_count: 1
+- concept_id: events/verhandlung_mit_hal
+  type: Event
+  canonical_name: Verhandlung mit Hal
+  aliases: []
+  mention_count: 1
+- concept_id: events/verhoer_und_tod_des_kultistenanfuehrers
+  type: Event
+  canonical_name: Verhör und Tod des Kultistenanführers
+  aliases: []
+  mention_count: 1
+- concept_id: events/verhoer_von_gulrak
+  type: Event
+  canonical_name: Verhör von Gulrak
+  aliases: []
+  mention_count: 1
+- concept_id: events/vernichtung_des_goblindorfs
+  type: Event
+  canonical_name: Vernichtung des Goblindorfs
+  aliases: []
+  mention_count: 1
+- concept_id: events/verrat_der_dorfsoldaten
+  type: Event
+  canonical_name: Verrat der Dorfsoldaten
+  aliases: []
+  mention_count: 1
+- concept_id: events/verteidigung_der_kapelle
+  type: Event
+  canonical_name: Verteidigung der Kapelle
+  aliases: []
+  mention_count: 1
+- concept_id: events/vorbereitung_der_verteidigung
+  type: Event
+  canonical_name: Vorbereitung der Verteidigung
+  aliases: []
+  mention_count: 1
+- concept_id: events/wiederbelebung_des_soldaten
+  type: Event
+  canonical_name: Wiederbelebung des Soldaten
+  aliases: []
+  mention_count: 1
+- concept_id: events/zerstoerung_der_statue_und_vision
+  type: Event
+  canonical_name: Zerstörung der Statue und Vision
+  aliases: []
+  mention_count: 1
+- concept_id: events/zerstoerung_des_gruenen_kristallgewaechses
+  type: Event
+  canonical_name: Zerstörung des grünen Kristallgewächses
+  aliases: []
+  mention_count: 1
+- concept_id: events/zirkusvorfuehrung
+  type: Event
+  canonical_name: Zirkusvorführung
+  aliases: []
+  mention_count: 1
+- concept_id: events/zweiter_arena_kampf
+  type: Event
+  canonical_name: Zweiter Arena-Kampf
+  aliases: []
+  mention_count: 1
+- concept_id: factions/alte_goetter_old_gods
+  type: Faction
+  canonical_name: Alte Götter (Old Gods)
+  aliases: []
+  mention_count: 1
+- concept_id: factions/banditen_fraktion
+  type: Faction
+  canonical_name: Banditen (Fraktion)
+  aliases: []
+  mention_count: 1
+- concept_id: factions/brabarand_gilde
+  type: Faction
+  canonical_name: Brabarand-Gilde
+  aliases: []
+  mention_count: 1
+- concept_id: factions/der_alte_schlangengott
+  type: Faction
+  canonical_name: Der alte Schlangengott
+  aliases: []
+  mention_count: 1
+- concept_id: factions/der_einfluss_der_hack
+  type: Faction
+  canonical_name: Der Einfluss der Hack
+  aliases: []
+  mention_count: 2
+- concept_id: factions/die_alten_goetter
+  type: Faction
+  canonical_name: Die Alten Götter
+  aliases: []
+  mention_count: 1
+- concept_id: factions/die_gilde
+  type: Faction
+  canonical_name: Die Gilde
+  aliases: []
+  mention_count: 2
+- concept_id: factions/dwarfmaster_gilde
+  type: Faction
+  canonical_name: Dwarfmaster Gilde
+  aliases:
+  - Dwarfmaster-Gilde
+  mention_count: 3
+- concept_id: factions/dwarfmasters_gilde
+  type: Faction
+  canonical_name: Dwarfmasters-Gilde
+  aliases: []
+  mention_count: 1
+- concept_id: factions/fluechtlinge_aus_breska
+  type: Faction
+  canonical_name: Flüchtlinge aus Breska
+  aliases: []
+  mention_count: 1
+- concept_id: factions/gilde
+  type: Faction
+  canonical_name: Gilde
+  aliases: []
+  mention_count: 2
+- concept_id: factions/gilde_der_schilder
+  type: Faction
+  canonical_name: Gilde der Schilder
+  aliases: []
+  mention_count: 1
+- concept_id: factions/gilde_ehrenfels
+  type: Faction
+  canonical_name: Gilde (Ehrenfels)
+  aliases: []
+  mention_count: 1
+- concept_id: factions/gnolle
+  type: Faction
+  canonical_name: Gnolle
+  aliases: []
+  mention_count: 1
+- concept_id: factions/goblin_goetter
+  type: Faction
+  canonical_name: Goblin-Götter
+  aliases: []
+  mention_count: 3
+- concept_id: factions/goblins
+  type: Faction
+  canonical_name: Goblins
+  aliases: []
+  mention_count: 2
+- concept_id: factions/kuatau_fischmenschen
+  type: Faction
+  canonical_name: Kuatau (Fischmenschen)
+  aliases: []
+  mention_count: 1
+- concept_id: factions/kultisten
+  type: Faction
+  canonical_name: Kultisten
+  aliases: []
+  mention_count: 1
+- concept_id: factions/neue_gilde_in_breska
+  type: Faction
+  canonical_name: Neue Gilde in Breska
+  aliases: []
+  mention_count: 1
+- concept_id: factions/schattenfinger
+  type: Faction
+  canonical_name: Schattenfinger
+  aliases: []
+  mention_count: 1
+- concept_id: factions/silberkerne
+  type: Faction
+  canonical_name: Silberkerne
+  aliases: []
+  mention_count: 1
+- concept_id: factions/silberkornbande
+  type: Faction
+  canonical_name: Silberkornbande
+  aliases: []
+  mention_count: 1
+- concept_id: factions/tarvok
+  type: Faction
+  canonical_name: Tarvok
+  aliases: []
+  mention_count: 1
+- concept_id: factions/uhoriaks
+  type: Faction
+  canonical_name: Uhoriaks
+  aliases: []
+  mention_count: 1
+- concept_id: factions/untote_armee
+  type: Faction
+  canonical_name: Untote Armee
+  aliases: []
+  mention_count: 1
+- concept_id: factions/untote_horde_zebras
+  type: Faction
+  canonical_name: Untote Horde (Zebras)
+  aliases: []
+  mention_count: 1
+- concept_id: factions/varsul_warzul
+  type: Faction
+  canonical_name: Varsul / Warzul
+  aliases: []
+  mention_count: 1
+- concept_id: factions/vorgulta
+  type: Faction
+  canonical_name: Vorgulta
+  aliases: []
+  mention_count: 1
+- concept_id: factions/zwerge
+  type: Faction
+  canonical_name: Zwerge
+  aliases: []
+  mention_count: 1
+- concept_id: items/amulett
+  type: Item
+  canonical_name: Amulett
+  aliases: []
+  mention_count: 1
+- concept_id: items/amulett_des_heiligen_duran
+  type: Item
+  canonical_name: Amulett des Heiligen Duran
+  aliases: []
+  mention_count: 1
+- concept_id: items/amulett_des_lindo_laut
+  type: Item
+  canonical_name: Amulett des Lindo Laut
+  aliases: []
+  mention_count: 1
+- concept_id: items/amulett_von_duran
+  type: Item
+  canonical_name: Amulett von Duran
+  aliases: []
+  mention_count: 1
+- concept_id: items/amulett_von_lindo_laut
+  type: Item
+  canonical_name: Amulett von Lindo Laut
+  aliases: []
+  mention_count: 1
+- concept_id: items/angriffsplan
+  type: Item
+  canonical_name: Angriffsplan
+  aliases: []
+  mention_count: 1
+- concept_id: items/arkaner_umhang
+  type: Item
+  canonical_name: Arkaner Umhang
+  aliases: []
+  mention_count: 1
+- concept_id: items/arkanes_prisma
+  type: Item
+  canonical_name: Arkanes Prisma
+  aliases: []
+  mention_count: 1
+- concept_id: items/armbrust_von_berthold
+  type: Item
+  canonical_name: Armbrust von Berthold
+  aliases: []
+  mention_count: 1
+- concept_id: items/artefakt_kugel
+  type: Item
+  canonical_name: Artefakt-Kugel
+  aliases: []
+  mention_count: 1
+- concept_id: items/auftragsschriftrolle
+  type: Item
+  canonical_name: Auftragsschriftrolle
+  aliases: []
+  mention_count: 1
+- concept_id: items/beschwoerungsbuch
+  type: Item
+  canonical_name: Beschwörungsbuch
+  aliases: []
+  mention_count: 1
+- concept_id: items/beschwoerungsfluessigkeit
+  type: Item
+  canonical_name: Beschwörungsflüssigkeit
+  aliases: []
+  mention_count: 1
+- concept_id: items/beschwoerungsstab
+  type: Item
+  canonical_name: Beschwörungsstab
+  aliases: []
+  mention_count: 1
+- concept_id: items/buch_der_namen
+  type: Item
+  canonical_name: Buch der Namen
+  aliases: []
+  mention_count: 1
+- concept_id: items/buch_flueche_und_das_schweigen
+  type: Item
+  canonical_name: Buch 'Flüche und das Schweigen'
+  aliases: []
+  mention_count: 1
+- concept_id: items/buch_mit_namensliste
+  type: Item
+  canonical_name: Buch mit Namensliste
+  aliases: []
+  mention_count: 1
+- concept_id: items/buch_von_vasul
+  type: Item
+  canonical_name: Buch von Vasul
+  aliases: []
+  mention_count: 1
+- concept_id: items/cookies_roter_trank
+  type: Item
+  canonical_name: Cookies roter Trank
+  aliases: []
+  mention_count: 1
+- concept_id: items/daemon_in_lindo_laut
+  type: Item
+  canonical_name: Dämon in Lindo Laut
+  aliases: []
+  mention_count: 1
+- concept_id: items/das_amulett
+  type: Item
+  canonical_name: Das Amulett
+  aliases: []
+  mention_count: 2
+- concept_id: items/das_buch
+  type: Item
+  canonical_name: Das Buch
+  aliases: []
+  mention_count: 1
+- concept_id: items/das_buch_des_belorus
+  type: Item
+  canonical_name: Das Buch des Belorus
+  aliases: []
+  mention_count: 1
+- concept_id: items/das_tagebuch
+  type: Item
+  canonical_name: Das Tagebuch
+  aliases: []
+  mention_count: 1
+- concept_id: items/der_altar
+  type: Item
+  canonical_name: Der Altar
+  aliases: []
+  mention_count: 1
+- concept_id: items/der_altar_des_uhoriaks
+  type: Item
+  canonical_name: Der Altar des Uhoriaks
+  aliases: []
+  mention_count: 1
+- concept_id: items/der_brennende_speer
+  type: Item
+  canonical_name: Der brennende Speer
+  aliases: []
+  mention_count: 1
+- concept_id: items/der_heilige_dolch
+  type: Item
+  canonical_name: Der heilige Dolch
+  aliases: []
+  mention_count: 1
+- concept_id: items/der_teleportationsring
+  type: Item
+  canonical_name: Der Teleportationsring
+  aliases: []
+  mention_count: 1
+- concept_id: items/der_thron
+  type: Item
+  canonical_name: Der Thron
+  aliases: []
+  mention_count: 1
+- concept_id: items/die_blaue_flamme
+  type: Item
+  canonical_name: Die blaue Flamme
+  aliases: []
+  mention_count: 1
+- concept_id: items/die_drachenstatue
+  type: Item
+  canonical_name: Die Drachenstatue
+  aliases: []
+  mention_count: 1
+- concept_id: items/die_ringe
+  type: Item
+  canonical_name: Die Ringe
+  aliases: []
+  mention_count: 1
+- concept_id: items/drei_saecke_gold
+  type: Item
+  canonical_name: Drei Säcke Gold
+  aliases: []
+  mention_count: 1
+- concept_id: items/ekliges_fleischstueck
+  type: Item
+  canonical_name: Ekliges Fleischstück
+  aliases: []
+  mention_count: 1
+- concept_id: items/ender_truhe
+  type: Item
+  canonical_name: Ender-Truhe
+  aliases: []
+  mention_count: 1
+- concept_id: items/fahndungsplakat
+  type: Item
+  canonical_name: Fahndungsplakat
+  aliases: []
+  mention_count: 1
+- concept_id: items/fangzahn_amulett
+  type: Item
+  canonical_name: Fangzahn-Amulett
+  aliases: []
+  mention_count: 1
+- concept_id: items/gegengift
+  type: Item
+  canonical_name: Gegengift
+  aliases: []
+  mention_count: 1
+- concept_id: items/glamourstein
+  type: Item
+  canonical_name: Glamourstein
+  aliases: []
+  mention_count: 1
+- concept_id: items/gluecksbringer
+  type: Item
+  canonical_name: Glücksbringer
+  aliases: []
+  mention_count: 1
+- concept_id: items/glueckstag_trank
+  type: Item
+  canonical_name: Glückstag-Trank
+  aliases: []
+  mention_count: 1
+- concept_id: items/goblin_buch
+  type: Item
+  canonical_name: Goblin-Buch
+  aliases: []
+  mention_count: 1
+- concept_id: items/goblin_notizen
+  type: Item
+  canonical_name: Goblin-Notizen
+  aliases: []
+  mention_count: 1
+- concept_id: items/goldene_perlen_goldbrocken
+  type: Item
+  canonical_name: Goldene Perlen/Goldbrocken
+  aliases: []
+  mention_count: 1
+- concept_id: items/goldenes_amulett
+  type: Item
+  canonical_name: Goldenes Amulett
+  aliases: []
+  mention_count: 1
+- concept_id: items/grauenwurz_trank
+  type: Item
+  canonical_name: Grauenwurz-Trank
+  aliases: []
+  mention_count: 1
+- concept_id: items/gruene_kristalle
+  type: Item
+  canonical_name: Grüne Kristalle
+  aliases: []
+  mention_count: 1
+- concept_id: items/gruener_kristall
+  type: Item
+  canonical_name: Grüner Kristall
+  aliases: []
+  mention_count: 1
+- concept_id: items/gruener_kristall_seelenstein
+  type: Item
+  canonical_name: Grüner Kristall / Seelenstein
+  aliases: []
+  mention_count: 1
+- concept_id: items/halsband_und_nachricht
+  type: Item
+  canonical_name: Halsband und Nachricht
+  aliases: []
+  mention_count: 1
+- concept_id: items/heilige_pfeile
+  type: Item
+  canonical_name: Heilige Pfeile
+  aliases: []
+  mention_count: 1
+- concept_id: items/heiliger_streitkolben_aus_zebras
+  type: Item
+  canonical_name: Heiliger Streitkolben aus Zebras
+  aliases: []
+  mention_count: 1
+- concept_id: items/heiliges_oel
+  type: Item
+  canonical_name: Heiliges Öl
+  aliases: []
+  mention_count: 1
+- concept_id: items/heiltinktur_des_gnolls
+  type: Item
+  canonical_name: Heiltinktur des Gnolls
+  aliases: []
+  mention_count: 1
+- concept_id: items/heiltrank
+  type: Item
+  canonical_name: Heiltrank
+  aliases: []
+  mention_count: 1
+- concept_id: items/kontrollrune
+  type: Item
+  canonical_name: Kontrollrune
+  aliases: []
+  mention_count: 1
+- concept_id: items/kornklatscher
+  type: Item
+  canonical_name: Kornklatscher
+  aliases: []
+  mention_count: 1
+- concept_id: items/kristall
+  type: Item
+  canonical_name: Kristall
+  aliases: []
+  mention_count: 1
+- concept_id: items/lebende_kristalle
+  type: Item
+  canonical_name: Lebende Kristalle
+  aliases: []
+  mention_count: 1
+- concept_id: items/lila_kristalle
+  type: Item
+  canonical_name: Lila Kristalle
+  aliases: []
+  mention_count: 1
+- concept_id: items/lindo_lauts_amulett
+  type: Item
+  canonical_name: Lindo Lauts Amulett
+  aliases: []
+  mention_count: 1
+- concept_id: items/logbuch_der_expedition
+  type: Item
+  canonical_name: Logbuch der Expedition
+  aliases: []
+  mention_count: 1
+- concept_id: items/magische_handschellen
+  type: Item
+  canonical_name: Magische Handschellen
+  aliases: []
+  mention_count: 1
+- concept_id: items/magischer_schluessel
+  type: Item
+  canonical_name: Magischer Schlüssel
+  aliases: []
+  mention_count: 3
+- concept_id: items/magischer_stab
+  type: Item
+  canonical_name: Magischer Stab
+  aliases: []
+  mention_count: 1
+- concept_id: items/magisches_erz
+  type: Item
+  canonical_name: Magisches Erz
+  aliases: []
+  mention_count: 1
+- concept_id: items/metallarm_von_rotunas
+  type: Item
+  canonical_name: Metallarm von Rotunas
+  aliases: []
+  mention_count: 1
+- concept_id: items/morgenstern_des_heiligen_duran
+  type: Item
+  canonical_name: Morgenstern des Heiligen Duran
+  aliases: []
+  mention_count: 1
+- concept_id: items/mysterioese_statue
+  type: Item
+  canonical_name: Mysteriöse Statue
+  aliases: []
+  mention_count: 1
+- concept_id: items/mysterioese_statuen
+  type: Item
+  canonical_name: Mysteriöse Statuen
+  aliases: []
+  mention_count: 1
+- concept_id: items/nachricht_von_hal
+  type: Item
+  canonical_name: Nachricht von HAL
+  aliases: []
+  mention_count: 1
+- concept_id: items/notiz_von_vora
+  type: Item
+  canonical_name: Notiz von Vora
+  aliases: []
+  mention_count: 1
+- concept_id: items/pergament_ueber_rote_magie
+  type: Item
+  canonical_name: Pergament über Rote Magie
+  aliases: []
+  mention_count: 1
+- concept_id: items/pochendes_herz
+  type: Item
+  canonical_name: Pochendes Herz
+  aliases: []
+  mention_count: 1
+- concept_id: items/schattenfinger_klaue
+  type: Item
+  canonical_name: Schattenfinger-Klaue
+  aliases: []
+  mention_count: 1
+- concept_id: items/schattenfinger_relikt
+  type: Item
+  canonical_name: Schattenfinger-Relikt
+  aliases: []
+  mention_count: 1
+- concept_id: items/schleimbaelle
+  type: Item
+  canonical_name: Schleimbälle
+  aliases: []
+  mention_count: 1
+- concept_id: items/schluessel_stab_von_lindo_laut
+  type: Item
+  canonical_name: Schlüssel (Stab von Lindo Laut)
+  aliases: []
+  mention_count: 1
+- concept_id: items/schluessel_zum_labor
+  type: Item
+  canonical_name: Schlüssel zum Labor
+  aliases: []
+  mention_count: 1
+- concept_id: items/schriftrolle
+  type: Item
+  canonical_name: Schriftrolle
+  aliases: []
+  mention_count: 1
+- concept_id: items/schriftrolle_mit_der_natur_reden
+  type: Item
+  canonical_name: Schriftrolle 'Mit der Natur reden'
+  aliases: []
+  mention_count: 1
+- concept_id: items/schriftrolle_mit_totensprechen
+  type: Item
+  canonical_name: Schriftrolle mit Totensprechen
+  aliases: []
+  mention_count: 1
+- concept_id: items/schriftrolle_von_belorus
+  type: Item
+  canonical_name: Schriftrolle von Belorus
+  aliases: []
+  mention_count: 1
+- concept_id: items/schriftrolle_von_nerash
+  type: Item
+  canonical_name: Schriftrolle von Nerash
+  aliases: []
+  mention_count: 1
+- concept_id: items/schriftrollen_aus_der_krypta
+  type: Item
+  canonical_name: Schriftrollen aus der Krypta
+  aliases: []
+  mention_count: 1
+- concept_id: items/schutzzauber_kristall
+  type: Item
+  canonical_name: Schutzzauber-Kristall
+  aliases: []
+  mention_count: 1
+- concept_id: items/schwarzer_palantir
+  type: Item
+  canonical_name: Schwarzer Palantir
+  aliases: []
+  mention_count: 2
+- concept_id: items/seelenknechtschaftsvertrag
+  type: Item
+  canonical_name: Seelenknechtschaftsvertrag
+  aliases: []
+  mention_count: 1
+- concept_id: items/seelenstein
+  type: Item
+  canonical_name: Seelenstein
+  aliases: []
+  mention_count: 2
+- concept_id: items/silbernes_artefakt_ei
+  type: Item
+  canonical_name: Silbernes Artefakt (Ei)
+  aliases: []
+  mention_count: 1
+- concept_id: items/spinnenei
+  type: Item
+  canonical_name: Spinnenei
+  aliases: []
+  mention_count: 1
+- concept_id: items/splitterkalb_von_kronos
+  type: Item
+  canonical_name: Splitterkalb von Kronos
+  aliases: []
+  mention_count: 1
+- concept_id: items/sprengfalle
+  type: Item
+  canonical_name: Sprengfalle
+  aliases: []
+  mention_count: 1
+- concept_id: items/stab_von_vasul
+  type: Item
+  canonical_name: Stab von Vasul
+  aliases: []
+  mention_count: 1
+- concept_id: items/sternfoermige_brosche_amulett
+  type: Item
+  canonical_name: Sternförmige Brosche/Amulett
+  aliases: []
+  mention_count: 1
+- concept_id: items/stinkende_pflanzen_schwaemme
+  type: Item
+  canonical_name: Stinkende Pflanzen/Schwämme
+  aliases: []
+  mention_count: 1
+- concept_id: items/sumpfhai_giftpfeile
+  type: Item
+  canonical_name: Sumpfhai-Giftpfeile
+  aliases: []
+  mention_count: 1
+- concept_id: items/tarvok_umhang
+  type: Item
+  canonical_name: Tarvok-Umhang
+  aliases: []
+  mention_count: 1
+- concept_id: items/totem_von_nerash
+  type: Item
+  canonical_name: Totem von Nerash
+  aliases: []
+  mention_count: 1
+- concept_id: items/trank
+  type: Item
+  canonical_name: Trank
+  aliases: []
+  mention_count: 1
+- concept_id: items/verbesserte_arkane_handschuhe
+  type: Item
+  canonical_name: Verbesserte Arkane Handschuhe
+  aliases: []
+  mention_count: 1
+- concept_id: items/verschlingender_dolch_devouring_dagger
+  type: Item
+  canonical_name: Verschlingender Dolch (Devouring Dagger)
+  aliases: []
+  mention_count: 1
+- concept_id: items/versiegeltes_buch
+  type: Item
+  canonical_name: Versiegeltes Buch
+  aliases: []
+  mention_count: 1
+- concept_id: items/versiegeltes_dokument
+  type: Item
+  canonical_name: Versiegeltes Dokument
+  aliases: []
+  mention_count: 1
+- concept_id: items/verwandlungstrank
+  type: Item
+  canonical_name: Verwandlungstrank
+  aliases: []
+  mention_count: 1
+- concept_id: items/voodoo_puppe
+  type: Item
+  canonical_name: Voodoo-Puppe
+  aliases: []
+  mention_count: 1
+- concept_id: items/vulkanpflanze
+  type: Item
+  canonical_name: Vulkanpflanze
+  aliases: []
+  mention_count: 1
+- concept_id: items/vulkanpflanzen_gift
+  type: Item
+  canonical_name: Vulkanpflanzen-Gift
+  aliases: []
+  mention_count: 1
+- concept_id: items/zebrosia_schwert_des_koenigs
+  type: Item
+  canonical_name: Zebrosia (Schwert des Königs)
+  aliases: []
+  mention_count: 1
+- concept_id: items/zebrus_zorn
+  type: Item
+  canonical_name: Zebrus Zorn
+  aliases: []
+  mention_count: 1
+- concept_id: items/zeremonieller_dolch
+  type: Item
+  canonical_name: Zeremonieller Dolch
+  aliases: []
+  mention_count: 1
+- concept_id: locations/abyssalis
+  type: Location
+  canonical_name: Abyssalis
+  aliases: []
+  mention_count: 2
+- concept_id: locations/alter_turm
+  type: Location
+  canonical_name: Alter Turm
+  aliases: []
+  mention_count: 1
+- concept_id: locations/altes_heiligtum_kapelle
+  type: Location
+  canonical_name: Altes Heiligtum / Kapelle
+  aliases: []
+  mention_count: 1
+- concept_id: locations/arena_von_willau
+  type: Location
+  canonical_name: Arena von Willau
+  aliases: []
+  mention_count: 1
+- concept_id: locations/arena_von_willoch
+  type: Location
+  canonical_name: Arena von Willoch
+  aliases: []
+  mention_count: 1
+- concept_id: locations/banditenfestung
+  type: Location
+  canonical_name: Banditenfestung
+  aliases: []
+  mention_count: 1
+- concept_id: locations/banditenlager
+  type: Location
+  canonical_name: Banditenlager
+  aliases: []
+  mention_count: 1
+- concept_id: locations/banditenlager_festung
+  type: Location
+  canonical_name: Banditenlager / Festung
+  aliases: []
+  mention_count: 1
+- concept_id: locations/banditenversteck
+  type: Location
+  canonical_name: Banditenversteck
+  aliases: []
+  mention_count: 1
+- concept_id: locations/berg_zebros
+  type: Location
+  canonical_name: Berg Zebros
+  aliases: []
+  mention_count: 2
+- concept_id: locations/bergpass
+  type: Location
+  canonical_name: Bergpass
+  aliases: []
+  mention_count: 1
+- concept_id: locations/bibliothek_von_willauch
+  type: Location
+  canonical_name: Bibliothek von Willauch
+  aliases: []
+  mention_count: 1
+- concept_id: locations/breska
+  type: Location
+  canonical_name: Breska
+  aliases:
+  - Bresca
+  mention_count: 8
+- concept_id: locations/brunnen_mit_statue
+  type: Location
+  canonical_name: Brunnen mit Statue
+  aliases: []
+  mention_count: 1
+- concept_id: locations/burgruine_krypta
+  type: Location
+  canonical_name: Burgruine / Krypta
+  aliases: []
+  mention_count: 1
+- concept_id: locations/burgruine_von_zebros
+  type: Location
+  canonical_name: Burgruine von Zebros
+  aliases: []
+  mention_count: 1
+- concept_id: locations/casa_de_cookie
+  type: Location
+  canonical_name: Casa de Cookie
+  aliases: []
+  mention_count: 1
+- concept_id: locations/casa_de_la_cookie
+  type: Location
+  canonical_name: Casa de la Cookie
+  aliases: []
+  mention_count: 2
+- concept_id: locations/cornivum
+  type: Location
+  canonical_name: Cornivum
+  aliases: []
+  mention_count: 2
+- concept_id: locations/crowfin_manor
+  type: Location
+  canonical_name: Crowfin Manor
+  aliases: []
+  mention_count: 1
+- concept_id: locations/das_alte_heiligtum
+  type: Location
+  canonical_name: Das alte Heiligtum
+  aliases: []
+  mention_count: 1
+- concept_id: locations/das_dorf_bresca
+  type: Location
+  canonical_name: Das Dorf (Bresca)
+  aliases: []
+  mention_count: 1
+- concept_id: locations/das_portal_rift
+  type: Location
+  canonical_name: Das Portal (Rift)
+  aliases: []
+  mention_count: 1
+- concept_id: locations/der_dungeon
+  type: Location
+  canonical_name: Der Dungeon
+  aliases: []
+  mention_count: 1
+- concept_id: locations/der_magierturm
+  type: Location
+  canonical_name: Der Magierturm
+  aliases: []
+  mention_count: 1
+- concept_id: locations/der_turm
+  type: Location
+  canonical_name: Der Turm
+  aliases: []
+  mention_count: 1
+- concept_id: locations/der_uralte_dungeon
+  type: Location
+  canonical_name: Der uralte Dungeon
+  aliases: []
+  mention_count: 1
+- concept_id: locations/die_alte_bruecke
+  type: Location
+  canonical_name: Die alte Brücke
+  aliases: []
+  mention_count: 1
+- concept_id: locations/die_bruecke
+  type: Location
+  canonical_name: Die Brücke
+  aliases: []
+  mention_count: 1
+- concept_id: locations/die_festung_im_abgrund
+  type: Location
+  canonical_name: Die Festung im Abgrund
+  aliases: []
+  mention_count: 1
+- concept_id: locations/die_katakombe
+  type: Location
+  canonical_name: Die Katakombe
+  aliases: []
+  mention_count: 1
+- concept_id: locations/die_minen
+  type: Location
+  canonical_name: Die Minen
+  aliases: []
+  mention_count: 1
+- concept_id: locations/die_nahe_ortschaft
+  type: Location
+  canonical_name: Die nahe Ortschaft
+  aliases: []
+  mention_count: 1
+- concept_id: locations/die_versunkene_stadt
+  type: Location
+  canonical_name: Die versunkene Stadt
+  aliases: []
+  mention_count: 1
+- concept_id: locations/die_zwergenfestung
+  type: Location
+  canonical_name: Die Zwergenfestung
+  aliases: []
+  mention_count: 1
+- concept_id: locations/dungeon_unter_der_casa_de_la_cookie
+  type: Location
+  canonical_name: Dungeon unter der Casa de la Cookie
+  aliases: []
+  mention_count: 1
+- concept_id: locations/ehrenfels
+  type: Location
+  canonical_name: Ehrenfels
+  aliases: []
+  mention_count: 7
+- concept_id: locations/ende
+  type: Location
+  canonical_name: Ende
+  aliases: []
+  mention_count: 1
+- concept_id: locations/faehre_faehrmann
+  type: Location
+  canonical_name: Fähre / Fährmann
+  aliases: []
+  mention_count: 1
+- concept_id: locations/fluechtlingslager
+  type: Location
+  canonical_name: Flüchtlingslager
+  aliases: []
+  mention_count: 2
+- concept_id: locations/gebirgspass
+  type: Location
+  canonical_name: Gebirgspass
+  aliases: []
+  mention_count: 1
+- concept_id: locations/gewoelbe_der_hexe
+  type: Location
+  canonical_name: Gewölbe der Hexe
+  aliases: []
+  mention_count: 1
+- concept_id: locations/gilden_aussenposten
+  type: Location
+  canonical_name: Gilden-Außenposten
+  aliases: []
+  mention_count: 1
+- concept_id: locations/gildenhauptsitz_ehrenfels
+  type: Location
+  canonical_name: Gildenhauptsitz (Ehrenfels)
+  aliases: []
+  mention_count: 1
+- concept_id: locations/goblindorf
+  type: Location
+  canonical_name: Goblindorf
+  aliases: []
+  mention_count: 1
+- concept_id: locations/grenzland
+  type: Location
+  canonical_name: Grenzland
+  aliases: []
+  mention_count: 1
+- concept_id: locations/haus_des_loewen
+  type: Location
+  canonical_name: Haus des Löwen
+  aliases: []
+  mention_count: 1
+- concept_id: locations/heilige_treppen_portal
+  type: Location
+  canonical_name: Heilige Treppen / Portal
+  aliases: []
+  mention_count: 1
+- concept_id: locations/hoehle
+  type: Location
+  canonical_name: Höhle
+  aliases: []
+  mention_count: 1
+- concept_id: locations/huette_am_berghang
+  type: Location
+  canonical_name: Hütte am Berghang
+  aliases: []
+  mention_count: 1
+- concept_id: locations/insel_der_kapelle
+  type: Location
+  canonical_name: Insel der Kapelle
+  aliases: []
+  mention_count: 1
+- concept_id: locations/kapelle
+  type: Location
+  canonical_name: Kapelle
+  aliases: []
+  mention_count: 1
+- concept_id: locations/kapelle_von_windung
+  type: Location
+  canonical_name: Kapelle von Windung
+  aliases: []
+  mention_count: 1
+- concept_id: locations/kristallmine
+  type: Location
+  canonical_name: Kristallmine
+  aliases: []
+  mention_count: 1
+- concept_id: locations/krypta
+  type: Location
+  canonical_name: Krypta
+  aliases: []
+  mention_count: 1
+- concept_id: locations/magischer_wald
+  type: Location
+  canonical_name: Magischer Wald
+  aliases: []
+  mention_count: 1
+- concept_id: locations/nomadenlager
+  type: Location
+  canonical_name: Nomadenlager
+  aliases: []
+  mention_count: 1
+- concept_id: locations/okkultes_lager_mit_opferaltar
+  type: Location
+  canonical_name: Okkultes Lager mit Opferaltar
+  aliases: []
+  mention_count: 1
+- concept_id: locations/orkgebiet_nahe_hartwacht_und_das_ende
+  type: Location
+  canonical_name: Orkgebiet (nahe Hartwacht und 'das Ende')
+  aliases: []
+  mention_count: 1
+- concept_id: locations/phipps_turm
+  type: Location
+  canonical_name: Phipps' Turm
+  aliases: []
+  mention_count: 1
+- concept_id: locations/raum_der_toten_seraphen
+  type: Location
+  canonical_name: Raum der toten Seraphen
+  aliases: []
+  mention_count: 1
+- concept_id: locations/ritualplatz
+  type: Location
+  canonical_name: Ritualplatz
+  aliases: []
+  mention_count: 1
+- concept_id: locations/ruine_aussenposten_fort
+  type: Location
+  canonical_name: Ruine (Außenposten/Fort)
+  aliases: []
+  mention_count: 1
+- concept_id: locations/sanddorninseln
+  type: Location
+  canonical_name: Sanddorninseln
+  aliases: []
+  mention_count: 1
+- concept_id: locations/schiffswrack
+  type: Location
+  canonical_name: Schiffswrack
+  aliases: []
+  mention_count: 1
+- concept_id: locations/schneeberge
+  type: Location
+  canonical_name: Schneeberge
+  aliases: []
+  mention_count: 1
+- concept_id: locations/schneegebiet
+  type: Location
+  canonical_name: Schneegebiet
+  aliases: []
+  mention_count: 1
+- concept_id: locations/schrein_des_schlangengottes
+  type: Location
+  canonical_name: Schrein des Schlangengottes
+  aliases: []
+  mention_count: 1
+- concept_id: locations/schrein_des_tarvok
+  type: Location
+  canonical_name: Schrein des Tarvok
+  aliases: []
+  mention_count: 1
+- concept_id: locations/schutzhuette
+  type: Location
+  canonical_name: Schutzhütte
+  aliases: []
+  mention_count: 1
+- concept_id: locations/seelen_netze
+  type: Location
+  canonical_name: Seelen-Netze
+  aliases: []
+  mention_count: 1
+- concept_id: locations/silbergruft
+  type: Location
+  canonical_name: Silbergruft
+  aliases: []
+  mention_count: 1
+- concept_id: locations/spinnennest_arena
+  type: Location
+  canonical_name: Spinnennest-Arena
+  aliases: []
+  mention_count: 1
+- concept_id: locations/splitterwelt
+  type: Location
+  canonical_name: Splitterwelt
+  aliases: []
+  mention_count: 3
+- concept_id: locations/steinbachtal
+  type: Location
+  canonical_name: Steinbachtal
+  aliases: []
+  mention_count: 1
+- concept_id: locations/taschen_dimension_pocket_domain
+  type: Location
+  canonical_name: Taschen-Dimension (Pocket Domain)
+  aliases: []
+  mention_count: 1
+- concept_id: locations/taverne
+  type: Location
+  canonical_name: Taverne
+  aliases: []
+  mention_count: 1
+- concept_id: locations/taverne_in_willau
+  type: Location
+  canonical_name: Taverne in Willau
+  aliases: []
+  mention_count: 1
+- concept_id: locations/taverne_kyla
+  type: Location
+  canonical_name: Taverne Kyla
+  aliases: []
+  mention_count: 1
+- concept_id: locations/tiefwasser
+  type: Location
+  canonical_name: Tiefwasser
+  aliases: []
+  mention_count: 1
+- concept_id: locations/ueberfallenes_lager
+  type: Location
+  canonical_name: Überfallenes Lager
+  aliases: []
+  mention_count: 1
+- concept_id: locations/wald
+  type: Location
+  canonical_name: Wald
+  aliases: []
+  mention_count: 1
+- concept_id: locations/wald_nahe_der_huette
+  type: Location
+  canonical_name: Wald nahe der Hütte
+  aliases: []
+  mention_count: 1
+- concept_id: locations/willau
+  type: Location
+  canonical_name: Willau
+  aliases: []
+  mention_count: 2
+- concept_id: locations/willauch
+  type: Location
+  canonical_name: Willauch
+  aliases: []
+  mention_count: 2
+- concept_id: locations/windung
+  type: Location
+  canonical_name: Windung
+  aliases: []
+  mention_count: 1
+- concept_id: locations/winterlager
+  type: Location
+  canonical_name: Winterlager
+  aliases: []
+  mention_count: 1
+- concept_id: locations/zebros
+  type: Location
+  canonical_name: Zebros
+  aliases: []
+  mention_count: 1
+- concept_id: locations/zum_gruenen_sichelmond
+  type: Location
+  canonical_name: Zum grünen Sichelmond
+  aliases: []
+  mention_count: 1
+- concept_id: locations/zwischenebene_vorebene_des_circle_below
+  type: Location
+  canonical_name: Zwischenebene (Vorebene des Circle Below)
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/adjani
+  type: NPC
+  canonical_name: Adjani
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/anton_grosswurz
+  type: NPC
+  canonical_name: Anton Großwurz
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/arik
+  type: NPC
+  canonical_name: Arik
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/arus
+  type: NPC
+  canonical_name: Arus
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/auranie
+  type: NPC
+  canonical_name: Auranie
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/auranil
+  type: NPC
+  canonical_name: Auranil
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/balor
+  type: NPC
+  canonical_name: Balor
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/baran
+  type: NPC
+  canonical_name: Baran
+  aliases: []
+  mention_count: 2
+- concept_id: npcs/belorus
+  type: NPC
+  canonical_name: Belorus
+  aliases: []
+  mention_count: 2
+- concept_id: npcs/belorus_der_stille
+  type: NPC
+  canonical_name: Belorus der Stille
+  aliases: []
+  mention_count: 3
+- concept_id: npcs/berthold
+  type: NPC
+  canonical_name: Berthold
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/bertie
+  type: NPC
+  canonical_name: Bertie
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/bosar
+  type: NPC
+  canonical_name: Bosar
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/brandon
+  type: NPC
+  canonical_name: Brandon
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/brandoran
+  type: NPC
+  canonical_name: Brandoran
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/brass
+  type: NPC
+  canonical_name: Brass
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/brock
+  type: NPC
+  canonical_name: Brock
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/buergermeister_bertolt
+  type: NPC
+  canonical_name: Bürgermeister Bertolt
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/bugbears_grottenschrate
+  type: NPC
+  canonical_name: Bugbears (Grottenschrate)
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/bullrin
+  type: NPC
+  canonical_name: Bullrin
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/daemonische_stimme
+  type: NPC
+  canonical_name: Dämonische Stimme
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/das_monster
+  type: NPC
+  canonical_name: Das Monster
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/der_auftraggeber
+  type: NPC
+  canonical_name: Der Auftraggeber
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/der_buergermeister
+  type: NPC
+  canonical_name: Der Bürgermeister
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/der_gildenmeister
+  type: NPC
+  canonical_name: Der Gildenmeister
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/der_graf
+  type: NPC
+  canonical_name: Der Graf
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/der_haarige_werwolf
+  type: NPC
+  canonical_name: Der Haarige / Werwolf
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/der_schamane
+  type: NPC
+  canonical_name: Der Schamane
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/der_schmied
+  type: NPC
+  canonical_name: Der Schmied
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/der_wirt_barkeeper
+  type: NPC
+  canonical_name: Der Wirt / Barkeeper
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/die_hack
+  type: NPC
+  canonical_name: Die Hack
+  aliases: []
+  mention_count: 2
+- concept_id: npcs/die_hack_hexe
+  type: NPC
+  canonical_name: Die Hack (Hexe)
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/die_herrin_von_hal
+  type: NPC
+  canonical_name: Die Herrin von Hal
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/die_schwarze_kreatur_nebengegner
+  type: NPC
+  canonical_name: Die schwarze Kreatur (Nebengegner)
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/die_untote_kreatur_hauptgegner
+  type: NPC
+  canonical_name: Die untote Kreatur (Hauptgegner)
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/die_zwei_froschwesen_ribbits
+  type: NPC
+  canonical_name: Die zwei Froschwesen (Ribbits)
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/dormak
+  type: NPC
+  canonical_name: Dormak
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/dranara_asleina_aslania
+  type: NPC
+  canonical_name: Dranara (Asleina/Aslania)
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/elisa
+  type: NPC
+  canonical_name: Elisa
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/esua
+  type: NPC
+  canonical_name: Esua
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/familie_kraemer
+  type: NPC
+  canonical_name: Familie Krämer
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/familie_schmid
+  type: NPC
+  canonical_name: Familie Schmid
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/fluffy
+  type: NPC
+  canonical_name: Fluffy
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/garlin_der_weise
+  type: NPC
+  canonical_name: Garlin der Weise
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/gefangene_seelen
+  type: NPC
+  canonical_name: Gefangene Seelen
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/geisterhafte_waechtergestalt
+  type: NPC
+  canonical_name: Geisterhafte Wächtergestalt
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/geisterhafter_doppelgaenger_von_rotunas
+  type: NPC
+  canonical_name: Geisterhafter Doppelgänger von Rotunas
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/gildenmeister
+  type: NPC
+  canonical_name: Gildenmeister
+  aliases: []
+  mention_count: 3
+- concept_id: npcs/gnoll_heiler
+  type: NPC
+  canonical_name: Gnoll (Heiler)
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/goblin_magier
+  type: NPC
+  canonical_name: Goblin-Magier
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/goblin_spaeher
+  type: NPC
+  canonical_name: Goblin-Späher
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/gorak
+  type: NPC
+  canonical_name: Gorak
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/graf_voras_der_heilige
+  type: NPC
+  canonical_name: Graf Voras der Heilige
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/guenther_ajani
+  type: NPC
+  canonical_name: Günther (Ajani)
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/guenther_ehem_adjani
+  type: NPC
+  canonical_name: Günther (ehem. Adjani)
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/gulrak
+  type: NPC
+  canonical_name: Gulrak
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/hal
+  type: NPC
+  canonical_name: Hal
+  aliases: []
+  mention_count: 3
+- concept_id: npcs/haloras
+  type: NPC
+  canonical_name: Haloras
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/hans
+  type: NPC
+  canonical_name: Hans
+  aliases: []
+  mention_count: 2
+- concept_id: npcs/harald
+  type: NPC
+  canonical_name: Harald
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/harl
+  type: NPC
+  canonical_name: Harl
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/hass_spirit_geisterhaftes_kind
+  type: NPC
+  canonical_name: Hass-Spirit (geisterhaftes Kind)
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/heiliger_duran
+  type: NPC
+  canonical_name: Heiliger Duran
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/hendrik
+  type: NPC
+  canonical_name: Hendrik
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/hexenmeister_goblin
+  type: NPC
+  canonical_name: Hexenmeister-Goblin
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/horatio
+  type: NPC
+  canonical_name: Horatio
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/hubert
+  type: NPC
+  canonical_name: Hubert
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/joar_vanur
+  type: NPC
+  canonical_name: Joar Vanur
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/kaept_n_lobrecht
+  type: NPC
+  canonical_name: Käpt'n Lobrecht
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/kahnfuehrer_lobrecht
+  type: NPC
+  canonical_name: Kahnführer Lobrecht
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/kapitaen_lobrecht
+  type: NPC
+  canonical_name: Kapitän Lobrecht
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/kenku_hexenmeister
+  type: NPC
+  canonical_name: Kenku-Hexenmeister
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/kerl
+  type: NPC
+  canonical_name: Kerl
+  aliases: []
+  mention_count: 2
+- concept_id: npcs/koenig_zebros
+  type: NPC
+  canonical_name: König Zebros
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/kol_meref
+  type: NPC
+  canonical_name: Kol Meref
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/krevis
+  type: NPC
+  canonical_name: Krevis
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/kronos
+  type: NPC
+  canonical_name: Kronos
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/kuatau_priester_anfuehrer
+  type: NPC
+  canonical_name: Kuatau-Priester (Anführer)
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/kultisten_des_varsul
+  type: NPC
+  canonical_name: Kultisten des Varsul
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/kultistenanfuehrer_mage
+  type: NPC
+  canonical_name: Kultistenanführer (Mage)
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/lady_lyra_von_willoch
+  type: NPC
+  canonical_name: Lady Lyra von Willoch
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/lara
+  type: NPC
+  canonical_name: Lara
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/lendras
+  type: NPC
+  canonical_name: Leandras
+  aliases:
+  - Lendras
+  mention_count: 2
+- concept_id: npcs/lendras_joseph
+  type: NPC
+  canonical_name: Lendras (Joseph)
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/lenra
+  type: NPC
+  canonical_name: Lenra
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/lia
+  type: NPC
+  canonical_name: Lia
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/lilly
+  type: NPC
+  canonical_name: Lilly
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/link
+  type: NPC
+  canonical_name: Link
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/lionel_magno
+  type: NPC
+  canonical_name: Lionel Magno
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/lisa
+  type: NPC
+  canonical_name: Lisa
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/loran_silberbart
+  type: NPC
+  canonical_name: Loran Silberbart
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/lord_belorus
+  type: NPC
+  canonical_name: Lord Belorus
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/lord_harik
+  type: NPC
+  canonical_name: Lord Harik
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/lord_kaledan_und_lady_lyra_von_willau
+  type: NPC
+  canonical_name: Lord Kaledan und Lady Lyra von Willau
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/lord_kalidarn_von_willoch
+  type: NPC
+  canonical_name: Lord Kalidarn von Willoch
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/lukas
+  type: NPC
+  canonical_name: Lukas
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/luli
+  type: NPC
+  canonical_name: Luli
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/lurk
+  type: NPC
+  canonical_name: Lurk
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/marktschreier
+  type: NPC
+  canonical_name: Marktschreier
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/marus
+  type: NPC
+  canonical_name: Marus
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/meister_grimm
+  type: NPC
+  canonical_name: Meister Grimm
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/meister_pyrandras
+  type: NPC
+  canonical_name: Meister Pyrandras
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/miaomani
+  type: NPC
+  canonical_name: Miaomani
+  aliases: []
+  mention_count: 2
+- concept_id: npcs/mil
+  type: NPC
+  canonical_name: Mil
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/mimic
+  type: NPC
+  canonical_name: Mimic
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/miner_demon
+  type: NPC
+  canonical_name: Miner Demon
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/nai_ruk
+  type: NPC
+  canonical_name: Nai Ruk
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/nairog
+  type: NPC
+  canonical_name: Nairog
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/nairog_nyruk
+  type: NPC
+  canonical_name: Nairog/Nyruk
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/nairuk
+  type: NPC
+  canonical_name: Nairuk
+  aliases: []
+  mention_count: 5
+- concept_id: npcs/nayruk
+  type: NPC
+  canonical_name: Nayruk
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/nerash
+  type: NPC
+  canonical_name: Nerash
+  aliases: []
+  mention_count: 4
+- concept_id: npcs/nip
+  type: NPC
+  canonical_name: Nip
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/nox
+  type: NPC
+  canonical_name: Nox
+  aliases: []
+  mention_count: 3
+- concept_id: npcs/orlanius_schwarzhorn
+  type: NPC
+  canonical_name: Orlanius Schwarzhorn
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/perry_das_schnabeltier
+  type: NPC
+  canonical_name: Parry das Schnabeltier
+  aliases:
+  - perry
+  - Perry
+  - Perry das Schnabeltier
+  - Parry
+  mention_count: 12
+- concept_id: npcs/phasenspinne
+  type: NPC
+  canonical_name: Phasenspinne
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/phipps
+  type: NPC
+  canonical_name: Phipps
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/pilz_goblins
+  type: NPC
+  canonical_name: Pilz-Goblins
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/priesterin_auraniell
+  type: NPC
+  canonical_name: Priesterin Auraniell
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/prinz_bran
+  type: NPC
+  canonical_name: Prinz Bran
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/rachsuechtiger_daemon_ratte
+  type: NPC
+  canonical_name: Rachsüchtiger Dämon (Ratte)
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/rachsuechtiger_geist
+  type: NPC
+  canonical_name: Rachsüchtiger Geist
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/rodek
+  type: NPC
+  canonical_name: Rodek
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/roland
+  type: NPC
+  canonical_name: Roland
+  aliases: []
+  mention_count: 4
+- concept_id: npcs/rolanes
+  type: NPC
+  canonical_name: Rolanes
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/safin_al_barak
+  type: NPC
+  canonical_name: Safin Al Barak
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/sandro
+  type: NPC
+  canonical_name: Sandro
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/schleichfurz
+  type: NPC
+  canonical_name: Schleichfurz
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/schleimkreaturen
+  type: NPC
+  canonical_name: Schleimkreaturen
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/schwarzer_ritter
+  type: NPC
+  canonical_name: Schwarzer Ritter
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/seelenkalb
+  type: NPC
+  canonical_name: Seelenkalb
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/ser_eulenweiss
+  type: NPC
+  canonical_name: Ser Eulenweiss
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/seras
+  type: NPC
+  canonical_name: Seras
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/silberbestien
+  type: NPC
+  canonical_name: Silberbestien
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/sintra
+  type: NPC
+  canonical_name: Sintra
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/skelett_bogenschuetzen
+  type: NPC
+  canonical_name: Skelett-Bogenschützen
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/slicks
+  type: NPC
+  canonical_name: Slicks
+  aliases: []
+  mention_count: 2
+- concept_id: npcs/slix
+  type: NPC
+  canonical_name: Slix
+  aliases: []
+  mention_count: 3
+- concept_id: npcs/splitterwelt_kreatur
+  type: NPC
+  canonical_name: Splitterwelt-Kreatur
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/starville
+  type: NPC
+  canonical_name: Starville
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/stavre
+  type: NPC
+  canonical_name: Stavre
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/steingolem_koloss
+  type: NPC
+  canonical_name: Steingolem (Koloss)
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/sterbender_mann
+  type: NPC
+  canonical_name: Sterbender Mann
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/sumpfhexe_die_hack
+  type: NPC
+  canonical_name: Sumpfhexe (die Hack)
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/sys_fizik
+  type: NPC
+  canonical_name: Sys Fizik
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/t_rex_stimme_im_amulett
+  type: NPC
+  canonical_name: T-Rex (Stimme im Amulett)
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/tarvok_der_erdrichter
+  type: NPC
+  canonical_name: Tarvok (Der Erdrichter)
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/tindra
+  type: NPC
+  canonical_name: Tindra
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/tindrael
+  type: NPC
+  canonical_name: Tindrael
+  aliases: []
+  mention_count: 2
+- concept_id: npcs/todesritter_general_der_untoten
+  type: NPC
+  canonical_name: Todesritter (General der Untoten)
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/trickler
+  type: NPC
+  canonical_name: Trickler
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/tyrael
+  type: NPC
+  canonical_name: Tyrael
+  aliases: []
+  mention_count: 2
+- concept_id: npcs/tyrex
+  type: NPC
+  canonical_name: Tyrex
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/untoter_general
+  type: NPC
+  canonical_name: Untoter General
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/untoter_magier
+  type: NPC
+  canonical_name: Untoter Magier
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/valdemar_der_goldene_ritter
+  type: NPC
+  canonical_name: Valdemar der Goldene Ritter
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/varsul
+  type: NPC
+  canonical_name: Varsul
+  aliases: []
+  mention_count: 2
+- concept_id: npcs/vasul
+  type: NPC
+  canonical_name: Vasul
+  aliases: []
+  mention_count: 4
+- concept_id: npcs/verwundeter_soldat_aus_breska
+  type: NPC
+  canonical_name: Verwundeter Soldat aus Breska
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/voras
+  type: NPC
+  canonical_name: Voras
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/voras_der_heilige_der_schrecken
+  type: NPC
+  canonical_name: Voras (der Heilige / der Schrecken)
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/waechter_des_berges
+  type: NPC
+  canonical_name: Wächter des Berges
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/wasserelementare
+  type: NPC
+  canonical_name: Wasserelementare
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/withermind
+  type: NPC
+  canonical_name: Withermind
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/zwei_zwerge
+  type: NPC
+  canonical_name: Zwei Zwerge
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/zweikoepfiger_riese
+  type: NPC
+  canonical_name: Zweiköpfiger Riese
+  aliases: []
+  mention_count: 1

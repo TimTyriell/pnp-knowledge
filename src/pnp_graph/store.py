@@ -32,6 +32,12 @@ def sanitize_predicate(predicate: str) -> str:
     return cleaned or "RELATES_TO"
 
 
+def sanitize_label(node_type: str) -> str | None:
+    """Normalize entity `type` into a safe secondary Cypher label (labels can't be parameterized)."""
+    cleaned = re.sub(r"[^A-Za-z0-9_]", "", node_type.strip())
+    return cleaned or None
+
+
 def ensure_constraints(db) -> None:
     # Retire the name-keyed constraints — they enforce the wrong key (docs/evolution/07).
     for old in ("character_name", "location_name", "faction_name"):
@@ -39,60 +45,120 @@ def ensure_constraints(db) -> None:
     db.run("CREATE CONSTRAINT entity_id IF NOT EXISTS FOR (n:Entity) REQUIRE n.id IS UNIQUE")
     db.run("CREATE INDEX entity_type IF NOT EXISTS FOR (n:Entity) ON (n.type)")
     db.run("CREATE INDEX entity_session IF NOT EXISTS FOR (n:Entity) ON (n.session_id)")
+    # Chunk passages (WP13.5) are the vector "book", a SEPARATE label from the
+    # :Entity skeleton (the 2026 GraphRAG-standard split) so every skeleton
+    # query/algorithm scopes cleanly to :Entity. Its own id constraint keeps
+    # MERGE idempotent and backs the label-less endpoint MATCH in _write_graph.
+    db.run("CREATE CONSTRAINT chunk_id IF NOT EXISTS FOR (n:Chunk) REQUIRE n.id IS UNIQUE")
 
 
 def _write_graph(db, resolved: dict) -> None:
     for e in resolved["entities"]:
+        props = dict(e["props"])
+        # pending_notes (WP13.4): raw per-scene Character notes accumulate
+        # ACROSS sessions until cli summarize-entities folds + clears them —
+        # a blind `n += props` would replace, not append, the list, losing
+        # every earlier session's unconsumed notes. Written via its own
+        # coalesce-append SET, never through create_props/match_props below.
+        pending_notes = props.pop("pending_notes", None)
+        create_props = {k: v for k, v in props.items() if v is not None}
+        # A re-mention across sessions (e.g. Location/Faction.description,
+        # .aliases) sends whatever THIS session's extraction saw — often
+        # nothing, since a recurring trait isn't repeated every session. ON
+        # MATCH must never let an empty/falsy value blank out a value a prior
+        # session set; only ON CREATE may write "" or [] (nothing to preserve yet).
+        match_props = {k: v for k, v in create_props.items() if v != "" and v != []}
+        # Chunk passages carry the :Chunk label, never :Entity (see ensure_constraints).
+        # Literal, not user input — safe to interpolate.
+        label = "Chunk" if e["type"] == "Chunk" else "Entity"
+        # Node status versioning (audit_v7pro §7): before a new session overwrites
+        # an Item/Quest status, archive the prior value so status history isn't
+        # silently lost. Runs BEFORE the MERGE below (which sets the new status);
+        # no-op on first create (MATCH finds nothing) or an unchanged status.
+        new_status = create_props.get("status")
+        if new_status:
+            db.run(
+                f"MATCH (n:{label} {{id: $id}}) "
+                "WHERE n.status IS NOT NULL AND n.status <> $status "
+                "SET n.status_history = coalesce(n.status_history, []) + [n.status], "
+                "    n.status_valid_from = $sid",
+                id=e["id"], status=new_status, sid=props.get("session_id", ""),
+            )
+        # Secondary label = type (e.g. :Entity:Character) alongside the existing
+        # `type` property — additive, lets `MATCH (n:Character)` work directly
+        # without dropping the type-agnostic `MATCH (n:Entity)` skeleton queries.
+        type_label = sanitize_label(e["type"]) if label == "Entity" else None
+        set_label = f", n:{type_label}" if type_label else ""
         db.run(
-            "MERGE (n:Entity {id: $id}) "
-            "ON CREATE SET n += $props, n.type = $type, n.created_at = timestamp() "
-            "ON MATCH  SET n += $props, n.type = $type, n.updated_at = timestamp()",
+            f"MERGE (n:{label} {{id: $id}}) "
+            f"ON CREATE SET n += $create_props, n.type = $type, n.created_at = timestamp(){set_label} "
+            f"ON MATCH  SET n += $match_props, n.type = $type, n.updated_at = timestamp(){set_label}",
             id=e["id"], type=e["type"],
-            props={k: v for k, v in e["props"].items() if v is not None},
+            create_props=create_props, match_props=match_props,
         )
+        if pending_notes:
+            db.run(
+                "MATCH (n:Entity {id: $id}) "
+                "SET n.pending_notes = coalesce(n.pending_notes, []) + $notes",
+                id=e["id"], notes=pending_notes,
+            )
     for r in resolved["edges"]:
         rtype = sanitize_predicate(r["type"])
         # rtype passed sanitize + the ALLOWED_PREDICATES gate in resolve.py;
         # safe to interpolate (relationship types can't be parameterized).
-        if rtype == "KNOWN_FOR":
-            # docs/evolution/10 (WP6b): one edge accumulates count/sessions
-            # across the whole campaign, never keyed per-session like other
-            # edges — re-ingesting the same session must not double-count.
-            db.run(
-                "MATCH (a:Entity {id: $start}), (b:Entity {id: $end}) "
-                "MERGE (a)-[rel:KNOWN_FOR]->(b) "
-                "ON CREATE SET rel.count = 1, rel.sessions = [$sid], "
-                "              rel.first_seen = $sid, rel.last_seen = $sid, "
-                "              rel.confidence = 'high', rel.session_id = $sid "
-                "ON MATCH SET "
-                "  rel.count = CASE WHEN $sid IN rel.sessions THEN rel.count ELSE rel.count + 1 END, "
-                "  rel.sessions = CASE WHEN $sid IN rel.sessions THEN rel.sessions ELSE rel.sessions + $sid END, "
-                "  rel.last_seen = $sid, rel.session_id = $sid",
-                start=r["start_id"], end=r["end_id"], sid=r["props"]["session_id"],
-            )
-            continue
-        key_side = STATE_PREDICATE_KEY.get(rtype)
-        if key_side and "valid_from" in r["props"]:
+        spec = STATE_PREDICATE_KEY.get(rtype)
+        if spec and "valid_from" in r["props"]:
             # Supersede: close the prior open value on the cardinality-one
             # side before writing the new one, so a plain (non as-of) read
             # sees only the current fact (retrieve.py's default edge filter).
+            key_side = spec["side"]
+            src_types = spec.get("source_types")
             key_id = r["start_id"] if key_side == "start" else r["end_id"]
             other_id = r["end_id"] if key_side == "start" else r["start_id"]
             pattern = (f"(k:Entity {{id: $key_id}})-[old:{rtype}]->(o:Entity)" if key_side == "start"
                        else f"(o:Entity)-[old:{rtype}]->(k:Entity {{id: $key_id}})")
+            # source_types guard keeps geography (Location->Location) open.
+            type_guard = " AND k.type IN $src_types" if src_types else ""
+            kwargs = dict(key_id=key_id, other_id=other_id,
+                          valid_from=r["props"]["valid_from"])
+            if src_types:
+                kwargs["src_types"] = list(src_types)
             db.run(
                 f"MATCH {pattern} "
-                "WHERE o.id <> $other_id AND old.valid_to IS NULL "
+                f"WHERE o.id <> $other_id AND old.valid_to IS NULL{type_guard} "
                 "SET old.valid_to = $valid_from",
-                key_id=key_id, other_id=other_id, valid_from=r["props"]["valid_from"],
+                **kwargs,
             )
-        # session_id in the MERGE pattern -> one edge per session (PLAYS history etc.).
+        # Merge on (start, type, end) only -> a re-mention in a later session
+        # updates the SAME edge instead of minting a duplicate. ON MATCH must
+        # not clobber the first session's valid_from, nor its evidence_chunks
+        # (chunk indices aren't comparable across sessions, so no union is
+        # attempted here — Chunk-level MENTIONS edges carry full provenance).
+        # Label-less endpoint MATCH: a MENTIONS/IN_SESSION edge has a :Chunk start
+        # and an :Entity end; both labels carry a unique id constraint.
+        create_props = r["props"]
+        match_props = {k: v for k, v in create_props.items()
+                       if k not in ("valid_from", "evidence_chunks")}
         db.run(
-            f"MATCH (a:Entity {{id: $start}}), (b:Entity {{id: $end}}) "
-            f"MERGE (a)-[rel:{rtype} {{session_id: $sid}}]->(b) "
-            f"SET rel += $props",
+            f"MATCH (a {{id: $start}}), (b {{id: $end}}) "
+            f"MERGE (a)-[rel:{rtype}]->(b) "
+            "ON CREATE SET rel += $create_props "
+            "ON MATCH  SET rel += $match_props",
             start=r["start_id"], end=r["end_id"],
-            sid=r["props"]["session_id"], props=r["props"],
+            create_props=create_props, match_props=match_props,
+        )
+
+    # is_pc derived deterministically from PLAYS (audit_v8pro D10): a Character is
+    # a PC iff a Player plays it. Runs AFTER edges so PLAYS exists; order- and
+    # session-independent, so a later session that mentions a PC as a plain NPC
+    # can no longer downgrade is_pc. Scoped to this session's characters so the
+    # per-session write stays bounded.
+    char_ids = [e["id"] for e in resolved["entities"] if e["type"] == "Character"]
+    if char_ids:
+        db.run(
+            "MATCH (c:Entity) WHERE c.id IN $ids "
+            "SET c.is_pc = exists((:Entity {type:'Player'})-[:PLAYS]->(c))",
+            ids=char_ids,
         )
 
 
@@ -120,8 +186,8 @@ _QA_QUERIES = {
         "MATCH (pc)-[:HAS_CLASS]->(cl:Entity{subtype:'Class'}) "
         "WHERE c.domain IS NOT NULL AND cl.domains IS NOT NULL "
         "AND NOT c.domain IN cl.domains RETURN count(*) AS c"),
-    "timeline_unlinked": (  # 5. Event/Roll/Decision without chunk provenance
-        "MATCH (n:Entity) WHERE n.type IN ['Event','RollEvent','Decision'] "
+    "timeline_unlinked": (  # 5. Event without chunk provenance
+        "MATCH (n:Entity) WHERE n.type = 'Event' "
         "AND n.evidence_chunks IS NULL RETURN count(n) AS c"),
     "orphans": (  # 6. nodes with no relationships (SRD library excluded)
         "MATCH (n:Entity) WHERE NOT (n)--() AND n.session_id <> 'SRD' "
@@ -131,16 +197,96 @@ _QA_QUERIES = {
         "WHERE NOT (e)-[:TRIGGERED|RESULTED_IN]-() "
         "WITH c, e.name AS ename, count(DISTINCT e) AS occurrences "
         "WHERE occurrences >= 3 RETURN count(*) AS c"),
+    "orphan_events": (  # 8. WP13.2 capsule contract: every Event must connect to the fiction
+        "MATCH (e:Entity{type:'Event'}) "
+        "WHERE NOT (e)-[:PARTICIPATED_IN|TARGETS|RESULTED_IN|TRIGGERED|AT_LOCATION]-() "
+        "RETURN count(e) AS c"),
+    # audit v6 acceptance checks (docs/audit_neo4j_exportv6.md §8) ------------
+    "forbidden_decision_nodes": (  # 9. Decision is a banned node type
+        "MATCH (n:Entity {type:'Decision'}) RETURN count(n) AS c"),
+    "provenance_gap": (  # 10. every non-SRD entity needs session provenance
+        "MATCH (n:Entity) WHERE (n.session_id IS NULL OR n.session_id <> 'SRD') "
+        "AND NOT n.type IN ['Session','Player'] AND n.evidence_chunks IS NULL "
+        "AND NOT (n)-[:IN_SESSION|APPEARS_IN]-() RETURN count(n) AS c"),
+    "bidirectional_dup_edges": (  # 11. symmetric predicates written both ways
+        "MATCH (a:Entity)-[r]->(b:Entity) MATCH (b)-[r2]->(a) "
+        "WHERE type(r) = type(r2) AND type(r) IN ['ALLIED_WITH','HOSTILE_TO','KNOWS'] "
+        "AND a.id < b.id RETURN count(*) AS c"),
+    # audit_v7pro §9 acceptance checks ---------------------------------------
+    "empty_significance_events": (  # 12. significance gate: no "no permanent change" events
+        "MATCH (e:Entity{type:'Event'}) WHERE e.significance =~ "
+        "'(?i).*(keine? permanente|no permanent|noch keine? spielrelevante).*' "
+        "RETURN count(e) AS c"),
+    "srd_world_edges": (  # 13. rules layer must carry no world/combat edges
+        "MATCH (n:Entity{session_id:'SRD'})-[r]-() WHERE type(r) IN "
+        "['KILLED','TARGETS','HOSTILE_TO','MEMBER_OF','OWNED_BY','LOCATED_IN'] "
+        "RETURN count(r) AS c"),
+    "double_current_location": (  # 14a. no Character/Item at two open positions (temporal closure)
+        # count DISTINCT locations: a same-location re-mention across sessions
+        # legitimately leaves two open edges to the SAME place — not a conflict.
+        "MATCH (c:Entity)-[r:LOCATED_IN]->(loc:Entity) "
+        "WHERE r.valid_to IS NULL AND c.type IN ['Character','Item'] "
+        "WITH c, count(DISTINCT loc) AS locs WHERE locs > 1 RETURN count(c) AS c"),
+    "volatile_edge_without_valid_from": (  # 14b. every volatile edge is stamped valid_from
+        "MATCH ()-[r]->() WHERE type(r) IN "
+        "['LOCATED_IN','OWNED_BY','MEMBER_OF','ALLIED_WITH','HOSTILE_TO'] "
+        "AND r.valid_from IS NULL RETURN count(r) AS c"),
+    # audit_v8pro §8 acceptance checks ---------------------------------------
+    "alias_collisions": (  # 15. no name/alias string may point at >1 entity (D9)
+        "MATCH (n:Entity) WHERE (n.session_id IS NULL OR n.session_id <> 'SRD') "
+        "AND NOT n.type IN ['Session','Player'] "
+        "UNWIND ([toLower(n.name)] + [a IN coalesce(n.aliases, []) | toLower(a)]) AS s "
+        "WITH s, count(DISTINCT n.id) AS ids WHERE s IS NOT NULL AND ids > 1 "
+        "RETURN count(*) AS c"),
+    "plays_target_not_pc": (  # 16. every PLAYS target must be is_pc=true (D10)
+        "MATCH (:Entity {type:'Player'})-[:PLAYS]->(c:Entity) "
+        "WHERE c.is_pc <> true RETURN count(c) AS c"),
+    "event_session_mismatch": (  # 17. Event IN_SESSION must match its own session_id (R2)
+        "MATCH (e:Entity {type:'Event'})-[:IN_SESSION]->(s:Entity) "
+        "WHERE e.session_id <> s.session_id RETURN count(*) AS c"),
+    "item_status_vocab": (  # 18. Item.status is a controlled enum (O4)
+        "MATCH (i:Entity {type:'Item'}) WHERE i.status IS NOT NULL AND NOT i.status IN "
+        "['found','owned','used','lost','destroyed','unknown'] RETURN count(i) AS c"),
 }
-_QA_BLOCKERS = ("dup_names", "cross_type_names", "missing_provenance", "timeline_unlinked")
+_QA_BLOCKERS = ("dup_names", "cross_type_names", "missing_provenance", "timeline_unlinked",
+                "orphan_events", "forbidden_decision_nodes", "provenance_gap",
+                "bidirectional_dup_edges",
+                "empty_significance_events", "srd_world_edges",
+                "double_current_location", "volatile_edge_without_valid_from",
+                "alias_collisions", "plays_target_not_pc", "event_session_mismatch",
+                "item_status_vocab")
+
+# identity-critical types for the near-duplicate review gate (audit v6 test 3);
+# Events legitimately repeat similar titles across sessions, Sessions/Players
+# are backbone.
+_SIMILAR_NAME_TYPES = ("Character", "Location", "Quest", "Item", "Faction")
 
 
 def run_qa(driver) -> dict:
     """{check: count} for every QA query; log blockers loudly."""
+    import difflib
+    from itertools import combinations
+
     results = {}
     with driver.session() as db:
         for name, query in _QA_QUERIES.items():
             results[name] = db.run(query).single()["c"]
+        rows = db.run(
+            "MATCH (n:Entity) WHERE (n.session_id IS NULL OR n.session_id <> 'SRD') "
+            "AND n.type IN $types RETURN n.type AS type, toLower(n.name) AS name",
+            types=list(_SIMILAR_NAME_TYPES)).data()
+    # audit v6 test 3, flag-only (review, not auto-fix): same-type pairs with
+    # name similarity >= 0.9 that survived resolution + adjudication.
+    pairs = 0
+    by_type: dict[str, list[str]] = {}
+    for row in rows:
+        if row["name"]:
+            by_type.setdefault(row["type"], []).append(row["name"])
+    for names in by_type.values():
+        for x, y in combinations(names, 2):
+            if difflib.SequenceMatcher(None, x, y).ratio() >= 0.9:
+                pairs += 1
+    results["similar_name_pairs_review"] = pairs
     for name in _QA_BLOCKERS:
         if results[name]:
             log.error("QA BLOCKER: %s = %d (must be 0)", name, results[name])

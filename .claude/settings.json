@@ -4,7 +4,18 @@
       "Bash(.venv/Scripts/python.exe \"C:\\\\Users\\\\noahs\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--dev-pnp-pnp-graph-service\\\\5c668e07-0172-45ed-b154-e0771123a85f\\\\scratchpad\\\\clone_main_to_report.py\")",
       "Bash(docker start *)",
       "Bash(find /c/Users/noahs/AppData/Local/Temp/claude -iname \"*ingest_full*\" 2>/dev/null; echo ---; ls -la state/failures 2>&1; echo ---; git log --oneline -5 -- state/ 2>&1)",
-      "Read(//c/Users/noahs/AppData/Local/Temp/claude/**)"
+      "Read(//c/Users/noahs/AppData/Local/Temp/claude/**)",
+      "Bash(.venv/Scripts/python -c ' *)",
+      "Bash(docker compose *)",
+      "Bash(.venv/Scripts/python export_graph.py docs/data_export/neo4j_export_no_embeddings.json)",
+      "Bash(python -m pytest tests/ -q)",
+      "Bash(python -m pytest tests/test_resolve.py::test_cross_type_collision_first_seen_wins -q)",
+      "Bash(python -c ' *)",
+      "Bash(.venv/Scripts/python -c \"import json; json.load\\(open\\('.vscode/launch.json'\\)\\)\")",
+      "Bash(python -c \"import sys; sys.path.insert\\(0,'src'\\); import pnp_graph.store, pnp_graph.embed, pnp_graph.retrieve; print\\('imports OK'\\)\")",
+      "Bash(cd \"c:/dev/pnp/pnp-graph-service\" && grep -rln \"RollEvent\\\\|roll_events\\\\|RollEvent\\\\|:Entity\\\\|is_named\\\\|Chunk\" CLAUDE.md docs/README.md docs/evolution/13_agentic_hybrid_rag.md ../CLAUDE.md 2>/dev/null; echo \"=== roll/item mentions in CLAUDE.md ===\"; grep -n \"RollEvent\\\\|Item\\\\|:Entity\\\\|Chunk\\\\|roll\" CLAUDE.md)",
+      "Read(//c/dev/pnp/**)",
+      "Bash(cd \"c:/dev/pnp/pnp-graph-service\" && echo \"=== ../CLAUDE.md pnp-graph row ===\"; grep -n \"RollEvent\\\\|RuleEntity\\\\|Chunk\\\\|Item\" ../CLAUDE.md; echo \"=== evolution/13 chunk/Entity/RollEvent ===\"; grep -n \":Entity\\\\|Chunk\\\\|RollEvent\\\\|is_named\\\\|Item\\\\b\\\\|WP13.5\\\\|split_passages\\\\|MENTIONS\" docs/evolution/13_agentic_hybrid_rag.md; echo \"=== evolution/README status ===\"; grep -n \"WP12\\\\|WP13\\\\|Priority\\\\|RollEvent\\\\|Item\\\\|Trait\" docs/evolution/README.md | head -30)"
     ]
   }
 }

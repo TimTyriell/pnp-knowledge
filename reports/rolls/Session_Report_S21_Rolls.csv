@@ -1,0 +1,12 @@
+Szene,Zeitstempel,Spieler,Charakter,Wurf-Typ,Modifikator,Ergebnis_Gesamt,DC_oder_Kontext,Erfolg,Notiz
+S21-2,00:07:34,Basti,Esterossa,Wissen (Nachteil),+2,17,?,Ja,Fährmann-Theorie erkannt; Buch über Unteren Zirkel
+S21-5,00:18:44,Tim,Lindo Laut,W12 (Vasul-Kraft),—,—,—,—,Ergebnis: +6 flat auf nächsten Angriff + Schaden verdoppelt
+S21-5,00:20:00,Tim,Lindo Laut,Presence (Verbannung),—,Krit,18,Ja,Dämonische Ratte verbannt; löst sich auf
+S21-7,00:22:55,Basti,Esterossa,Stärke (Reaction),—,19,?,Ja,Widersteht Ebeneneinflüssen
+S21-8,00:23:28,Celin,Cookie,Stärke (Reaction),—,Krit,?,Ja (Krit),1h Immunität gegen Ebeneneinflüsse ohne Lindo-Nähe
+S21-10,00:29:10,Tim,Lindo Laut,Musik des Grauens,—,—,—,Ja (teilweise),Dämon kurz betäubt; Noten um Kopf; temporär wirksam
+S21-12,00:33:21,Celin,Cookie,Instinkt,—,—,—,Ja,2 Imps östlich wahrgenommen
+S21-14,00:34:52,Basti,Esterossa,Instinkt,—,—,—,Ja,Imps gehört und lokalisiert
+S21-15a,00:35:45,Basti,Esterossa,Angriff (Solo Charge),—,—,—,Ja,Imp-1 Sofortiger Tod; Kopf seitlich verdreht
+S21-15b,00:36:13,Tim,Lindo Laut,Angriff (Feuerball + Vasul-Kraft),—,Krit,—,Ja (Krit),Imp-2 mit blauem Feuer vernichtet; verdoppelter Schaden
+S21-18,00:44:43,Tim,Lindo Laut,Presence (Granitstein),—,Krit,—,Ja (Krit),Weißer Strahl; Ratte aufgelöst; Balor geschwächt

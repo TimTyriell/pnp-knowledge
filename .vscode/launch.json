@@ -8,10 +8,21 @@
       "default": "2025-03-26"
     },
     {
-      "id": "aikgInputFile",
+      "id": "exportOutput",
       "type": "promptString",
-      "description": "transcript .txt filename in transcripts/ for ai-kg (needs a real file path, not a date)",
-      "default": "2025-03-26_RF_ROCKGeeRUFw.txt"
+      "description": "export output path (nodes+relationships JSON, no embeddings)",
+      "default": "docs/data_export/neo4j_export.json"
+    },
+    {
+      "id": "exportUri",
+      "type": "pickString",
+      "description": "which Neo4j to export",
+      "options": [
+        "bolt://localhost:7687",
+        "bolt://localhost:7688",
+        "bolt://localhost:7689"
+      ],
+      "default": "bolt://localhost:7687"
     }
   ],
   "configurations": [
@@ -42,46 +53,65 @@
       "justMyCode": false
     },
     {
-      "name": "Debug: ai-kg pipeline (single session)",
+      "name": "Debug: Custom pipeline (flagship-flash, single session)",
       "type": "debugpy",
       "request": "launch",
       "python": "${workspaceFolder}/.venv/Scripts/python.exe",
-      "program": "${workspaceFolder}/../ai-knowledge-graph/generate-graph.py",
-      "args": [
-        "--input", "${workspaceFolder}/transcripts/${input:aikgInputFile}",
-        "--output", "${workspaceFolder}/compare/out/debug.html",
-        "--config", "${workspaceFolder}/compare/aikg_qwen.toml",
-        "--debug"
-      ],
-      "cwd": "${workspaceFolder}/../ai-knowledge-graph",
-      "console": "integratedTerminal",
-      "justMyCode": false
-    },
-    {
-      // subprocess.run() spawns the two pipelines as separate processes, so this
-      // config only steps into run_both.py's own code (session discovery, the
-      // ai-kg Neo4j sink) — not into pnp_graph or ai-kg internals. Use the two
-      // configs above for that.
-      "name": "Debug: Compare BOTH (single session)",
-      "type": "debugpy",
-      "request": "launch",
-      "python": "${workspaceFolder}/.venv/Scripts/python.exe",
-      "program": "${workspaceFolder}/compare/run_both.py",
-      "args": ["--only", "${input:sessionId}"],
+      "module": "pnp_graph.cli",
+      "args": ["ingest", "--only", "${input:sessionId}"],
       "cwd": "${workspaceFolder}",
+      "env": { "PYTHONPATH": "${workspaceFolder}/src", "PNP_PROFILE": "flagship", "DEEPSEEK_MODEL": "deepseek-v4-flash" },
       "envFile": "${workspaceFolder}/.env",
       "console": "integratedTerminal",
       "justMyCode": false
     },
     {
-      "name": "Debug: Compare BOTH (all sessions)",
+      "name": "Debug: Custom pipeline (flagship-flash, all sessions)",
       "type": "debugpy",
       "request": "launch",
       "python": "${workspaceFolder}/.venv/Scripts/python.exe",
-      "program": "${workspaceFolder}/compare/run_both.py",
-      "args": [],
+      "module": "pnp_graph.cli",
+      "args": ["ingest"],
       "cwd": "${workspaceFolder}",
+      "env": { "PYTHONPATH": "${workspaceFolder}/src", "PNP_PROFILE": "flagship", "DEEPSEEK_MODEL": "deepseek-v4-flash" },
       "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "Debug: Custom pipeline (flagship-pro, single session)",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "module": "pnp_graph.cli",
+      "args": ["ingest", "--only", "${input:sessionId}"],
+      "cwd": "${workspaceFolder}",
+      "env": { "PYTHONPATH": "${workspaceFolder}/src", "PNP_PROFILE": "flagship", "DEEPSEEK_MODEL": "deepseek-v4-pro" },
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "Debug: Custom pipeline (flagship-pro, all sessions)",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "module": "pnp_graph.cli",
+      "args": ["ingest"],
+      "cwd": "${workspaceFolder}",
+      "env": { "PYTHONPATH": "${workspaceFolder}/src", "PNP_PROFILE": "flagship", "DEEPSEEK_MODEL": "deepseek-v4-pro" },
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "Run: Export Neo4j graph (no embeddings)",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "program": "${workspaceFolder}/export_graph.py",
+      "args": ["${input:exportOutput}", "--uri", "${input:exportUri}"],
+      "cwd": "${workspaceFolder}",
       "console": "integratedTerminal",
       "justMyCode": false
     }

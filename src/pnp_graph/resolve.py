@@ -23,19 +23,23 @@ import re
 import unicodedata
 
 from .config import (
+    ADJUDICATE_GRAY_BAND,
     ALIAS_REGISTRY_PATH,
     ALLOWED_PREDICATES,
     CONFIDENCE_MAP,
     EVENT_PREDICATES,
+    GENERIC_MOB_TERMS,
+    GENERIC_PLACE_TERMS,
+    GENERIC_ROLE_TERMS,
     IDENTITY_PREDICATES,
     META_EVENT_TERMS,
     OOC_DENYLIST,
     PREDICATE_DOMAINS,
     PREDICATE_SYNONYMS,
-    RULE_SUBTYPES,
     STATE_DIR,
-    STATE_PREDICATES_WITH_LIFECYCLE,
+    STATE_PREDICATES,
 )
+from .chunking import split_passages
 from .schema import GraphExtraction
 from .store import sanitize_predicate
 
@@ -59,6 +63,18 @@ _TYPE_MAP = {
     "Faction": ("FACTION", "factions"),
     "RuleEntity": ("RULE", "rules"),  # only for non-SRD mints; SRD hits use the shared id
 }
+
+# Sections whose new mints get a gray-band scan for the LLM adjudicator
+# (audit v6). Events are ephemeral, players deterministic from the cast,
+# rules SRD-link-only — none of them adjudicate.
+_ADJUDICATED_SECTIONS = frozenset({"characters", "locations", "quests", "factions", "items"})
+
+# Sections that resolve in-memory within a run but are NEVER loaded from or
+# written to disk. An Event is a specific one-off happening — it never recurs
+# across sessions, so persisting it only bloats the registry (was 831 entries)
+# and risks falsely merging two different scenes with the same title in
+# different sessions. Cleared on load, excluded on save.
+_EPHEMERAL_SECTIONS = frozenset({"events"})
 
 _UMLAUTS = str.maketrans({"ä": "ae", "ö": "oe", "ü": "ue", "ß": "ss", "Ä": "Ae", "Ö": "Oe", "Ü": "Ue"})
 _ARTICLE_RE = re.compile(r"^(der|die|das|ein|eine|the)\s+", re.IGNORECASE)
@@ -89,14 +105,14 @@ def event_gate(title: str, quest_norms: set[str], player_names: list[str]) -> st
 
     Returns a drop reason, or None if the event may be minted. Prompt already
     asks for state-change events only; this catches what the model ignores:
-    meta/rules talk, roll-shaped events (RollEvent covers rolls), player names
+    meta/rules talk, roll-shaped events (a bare roll is not a macro-Event), player names
     as actors, and events duplicating a quest of the same name.
     """
     t = title.casefold()
     if any(term in t for term in META_EVENT_TERMS):
         return "meta-event (rules/deliberation talk)"
     if _ROLL_TITLE_RE.search(title):
-        return "roll-shaped event (RollEvent covers rolls)"
+        return "roll-shaped event (a bare roll is not a macro-Event)"
     if any(re.search(rf"\b{re.escape(p)}\b", title, re.IGNORECASE) for p in player_names):
         return "player name as actor"
     if normalize(title) in quest_norms:
@@ -110,6 +126,45 @@ def is_out_of_world(surface: str) -> bool:
     KG_Qualitaetsanalyse_S01, e.g. a Twitch raid minted as an NPC)."""
     s = surface.casefold()
     return any(term in s for term in OOC_DENYLIST)
+
+
+def is_generic_mob(surface: str) -> bool:
+    """Deterministic backstop for combat-fodder adversaries the is_named_character
+    schema gate misses (macro-graph, mirrors is_out_of_world). A numbered instance
+    ('Wache 1') or any GENERIC_MOB_TERM appearing as a token substring ('goblin' in
+    'Goblins'/'Goblin-Schütze') is a generic mob — no node. Conservative by design;
+    a named boss survives by the model marking is_named_character=True upstream."""
+    tokens = normalize(surface).split()
+    if tokens and tokens[-1].isdigit():
+        return True
+    return any(term in tok for tok in tokens for term in GENERIC_MOB_TERMS)
+
+
+def is_generic_place(surface: str) -> bool:
+    """Deterministic backstop for the is_named_location gate: a bare stage-dressing
+    common noun ('der Wald' -> 'wald') is not a macro-place. Whole-name match only
+    (NOT substring) so a real compound name ('Nebeliger Wald') survives."""
+    return normalize(surface) in GENERIC_PLACE_TERMS
+
+
+def is_generic_role(surface: str) -> bool:
+    """Deterministic backstop for the is_named_character gate (audit_v8pro D11): a
+    bare role common noun ('der Bauer' -> 'bauer') is stage-dressing, not a stable
+    individual. Whole-name match only (mirrors is_generic_place, NOT the substring
+    is_generic_mob) so a named NPC that merely contains a role word ('König Zebros')
+    survives."""
+    return normalize(surface) in GENERIC_ROLE_TERMS
+
+
+_GENERIC_ALIAS_TERMS = frozenset(GENERIC_MOB_TERMS) | GENERIC_PLACE_TERMS | GENERIC_ROLE_TERMS
+
+
+def is_generic_alias(surface: str) -> bool:
+    """A bare generic common-noun ('die Katze', 'der Wald', 'der Bauer') is too
+    ambiguous to be a persisted alias (audit_v8pro D9): it collides across
+    entities. Whole normalized name match against the union of the mob/place/role
+    vocabularies."""
+    return normalize(surface) in _GENERIC_ALIAS_TERMS
 
 
 def slug(surface: str) -> str:
@@ -131,14 +186,62 @@ class Resolver:
             self.registry = {}
         for _, section in _TYPE_MAP.values():
             self.registry.setdefault(section, {})
+        for section in _EPHEMERAL_SECTIONS:  # never carry events across runs
+            self.registry[section] = {}
         self._dirty = False
+        # gray-band identity candidates queued for the LLM adjudicator
+        # (audit v6); drained once per session by adjudicate.adjudicate_session
+        self.pending_candidates: list[dict] = []
+        self._dedupe_aliases()
+
+    def _dedupe_aliases(self) -> None:
+        """Enforce alias uniqueness per section on load (audit_v8pro D9): a
+        normalized surface may belong to at most one entry, and a bare generic
+        common-noun is never a persisted alias. Canonicals are never touched
+        (a canonical collision is a duplicate-entity problem, resolved by merge,
+        not here); the first entry to claim a normalized surface keeps it, later
+        claimants have it stripped. Self-healing: cleans collisions already in
+        the checked-in registry, so a stale double-owned alias can't survive a
+        reload."""
+        for section, entries in self.registry.items():
+            if not isinstance(entries, dict):
+                continue
+            claimed: dict[str, str] = {}
+            for eid, entry in entries.items():
+                if isinstance(entry, dict) and entry.get("canonical"):
+                    claimed.setdefault(normalize(entry["canonical"]), eid)
+            for eid, entry in entries.items():
+                if not isinstance(entry, dict):
+                    continue
+                kept, seen = [], set()
+                for a in entry.get("aliases", []):
+                    n = normalize(a)
+                    if not n or n in seen:
+                        self._dirty = True
+                        continue
+                    if is_generic_alias(a):
+                        log.info("alias %r dropped from %s (generic common noun)", a, eid)
+                        self._dirty = True
+                        continue
+                    owner = claimed.get(n)
+                    if owner is not None and owner != eid:
+                        log.info("alias %r dropped from %s (already owned by %s)", a, eid, owner)
+                        self._dirty = True
+                        continue
+                    claimed.setdefault(n, eid)
+                    seen.add(n)
+                    kept.append(a)
+                if kept != entry.get("aliases", []):
+                    entry["aliases"] = kept
+                    self._dirty = True
 
     def save(self) -> None:
         if not self._dirty:
             return
         self.path.parent.mkdir(parents=True, exist_ok=True)
+        out = {k: v for k, v in self.registry.items() if k not in _EPHEMERAL_SECTIONS}
         self.path.write_text(
-            json.dumps(self.registry, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+            json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
         )
         self._dirty = False
 
@@ -173,9 +276,21 @@ class Resolver:
 
     def _add_alias(self, section: str, eid: str, surface: str) -> None:
         entry = self.registry[section][eid]
-        if surface not in self._surfaces(entry):
-            entry.setdefault("aliases", []).append(surface)
-            self._dirty = True
+        if surface in self._surfaces(entry):
+            return
+        # Alias-uniqueness guard (audit_v8pro D9): never attach a generic common
+        # noun, and never attach a surface a DIFFERENT entry already owns — that
+        # is the collision the load-time _dedupe_aliases cleans, prevented at the
+        # source so a fuzzy auto-add can't reintroduce it.
+        if is_generic_alias(surface):
+            log.info("alias %r not added to %s (generic common noun)", surface, eid)
+            return
+        owner = self._lookup_exact_or_norm(section, surface)
+        if owner and owner != eid:
+            log.info("alias %r not added to %s (already owned by %s)", surface, eid, owner)
+            return
+        entry.setdefault("aliases", []).append(surface)
+        self._dirty = True
 
     def _mint(self, section: str, prefix: str, surface: str, **extra) -> str:
         base = f"{prefix}_{slug(surface)}"
@@ -187,7 +302,59 @@ class Resolver:
         self.registry[section][eid] = {"canonical": surface.strip(), "aliases": [], **extra}
         self._dirty = True
         log.info("new entity — review: %s (%r)", eid, surface)
+        if section in _ADJUDICATED_SECTIONS:
+            self.pending_candidates.extend(self._gray_candidates(section, eid, surface))
         return eid
+
+    def _gray_candidates(self, section: str, eid: str, surface: str) -> list[dict]:
+        """Same-section entries whose best fuzzy ratio against the new mint lands
+        in ADJUDICATE_GRAY_BAND: too close to ignore, too far to auto-merge —
+        the LLM adjudicator decides (audit v6). Pairs already judged distinct
+        (`adjudicated_distinct` memo) are never re-asked."""
+        lo, hi = ADJUDICATE_GRAY_BAND
+        norm = normalize(surface)
+        distinct = set(self.registry[section][eid].get("adjudicated_distinct", []))
+        out = []
+        for oid, entry in self.registry[section].items():
+            if oid == eid or oid in distinct or eid in entry.get("adjudicated_distinct", []):
+                continue
+            best = max((difflib.SequenceMatcher(None, norm, normalize(s)).ratio()
+                        for s in self._surfaces(entry)), default=0.0)
+            if lo <= best < hi:
+                out.append({"section": section, "new_id": eid, "surface": surface,
+                            "existing_id": oid, "ratio": round(best, 2)})
+        return out
+
+    def drain_candidates(self) -> list[dict]:
+        """Hand the queued identity candidates to the adjudicator, deduplicated
+        per pair; an alias-conflict entry wins over a plain gray-band one for
+        the same pair (it carries the surface to strip on a distinct verdict)."""
+        by_key: dict[tuple, dict] = {}
+        for c in self.pending_candidates:
+            key = (c["section"], c["new_id"], c["existing_id"])
+            if key not in by_key or c.get("source"):
+                by_key[key] = c
+        self.pending_candidates = []
+        return list(by_key.values())
+
+    def merge_entries(self, section: str, keep_id: str, drop_id: str) -> None:
+        """Adjudicator-approved merge: drop_id's surfaces become keep_id aliases."""
+        drop = self.registry[section].pop(drop_id, None)
+        if not drop:
+            return
+        keep = self.registry[section][keep_id]
+        for s in [drop["canonical"], *drop.get("aliases", [])]:
+            if s not in self._surfaces(keep):
+                keep.setdefault("aliases", []).append(s)
+        self._dirty = True
+
+    def mark_distinct(self, section: str, a: str, b: str) -> None:
+        """Adjudicator said different entities — memo both ways, never re-ask."""
+        for x, y in ((a, b), (b, a)):
+            entry = self.registry[section].get(x)
+            if entry is not None and y not in entry.get("adjudicated_distinct", []):
+                entry.setdefault("adjudicated_distinct", []).append(y)
+                self._dirty = True
 
     # --- public API -----------------------------------------------------
 
@@ -203,6 +370,15 @@ class Resolver:
             player_hit = self._lookup_exact_or_norm("players", surface)
             if player_hit:
                 return player_hit
+            # PC vs NPC is deterministic from the cast, not the LLM's `role`
+            # guess: bootstrap_cast pre-seeds every player-character as CHAR_
+            # before extraction, so a lookup miss here is by definition a
+            # non-cast character = an NPC. Both live in the `characters`
+            # section (one id space); only the prefix distinguishes them, and
+            # `type` stays "Character" for both (the predicate domains, QA, and
+            # summarize/embed all key on type=='Character' as "is a person").
+            hit = self._lookup(section, surface)
+            return hit or self._mint(section, "NPC", surface)
         hit = self._lookup(section, surface)
         return hit or self._mint(section, prefix, surface)
 
@@ -215,6 +391,24 @@ class Resolver:
             ):
                 return eid
         return None
+
+    def known_world(self) -> dict[str, list[str]]:
+        """Campaign gazetteer for the extraction prompt (audit v6 engine fix):
+        canonical names + aliases per section, so the model resolves mentions to
+        known canon at extraction time instead of re-minting ASR spelling
+        variants (Breska/Breschka/Brechka) for the resolver to guess at later.
+        """
+        sections = {"Characters": "characters", "Locations": "locations",
+                    "Factions": "factions", "Quests": "quests", "Items": "items"}
+        out: dict[str, list[str]] = {}
+        for label, section in sections.items():
+            lines = []
+            for entry in self.registry[section].values():
+                aliases = [a for a in entry.get("aliases", []) if a][:4]
+                lines.append(entry["canonical"]
+                             + (f" (aka {', '.join(aliases)})" if aliases else ""))
+            out[label] = lines
+        return out
 
     def canonical(self, eid: str) -> str | None:
         for _, section in _TYPE_MAP.values():
@@ -264,9 +458,9 @@ def map_predicate(predicate: str) -> tuple[str, bool]:
 def predicate_class(predicate: str) -> str | None:
     """WP9 bitemporal classification: 'state' / 'event' / 'identity' / None.
 
-    None (incl. RELATES_TO, KNOWN_FOR, off-vocab) gets no valid_from/valid_to.
+    None (incl. RELATES_TO, off-vocab) gets no valid_from/valid_to.
     """
-    if predicate in STATE_PREDICATES_WITH_LIFECYCLE:
+    if predicate in STATE_PREDICATES:
         return "state"
     if predicate in EVENT_PREDICATES:
         return "event"
@@ -288,6 +482,7 @@ def resolve_graph(
     seq: int = 0,
     evidence: dict | None = None,
     srd_index=None,
+    chunk_texts: list[str] | None = None,
 ) -> dict:
     """GraphExtraction + cast -> {'entities': [...], 'edges': [...]} keyed on ids.
 
@@ -296,6 +491,13 @@ def resolve_graph(
     With `evidence` (extract.py sidecar), every extracted fact gets an
     `evidence_chunks[]` property (chunk indices) — no separate Scene nodes/edges.
     Unresolvable endpoints drop the edge into state/failures/<sid>/dropped_edges.jsonl.
+    With `chunk_texts` (the raw extraction chunk texts, 1:1 with evidence_chunks
+    indices — named distinctly from the `chunks` local used elsewhere in this
+    function for a per-item evidence_chunks list, never the same thing), every
+    chunk is split into small `Chunk` passages and embedded (WP13.5,
+    docs/evolution/13) — the "vector = das Buch" half: MENTIONS edges link
+    each passage to every entity whose evidence_chunks include that scene, so
+    graph expansion from an entity can pull the verbatim source text.
     """
     evidence = evidence or {}
     session_node_id = f"SESS_{session_id}"
@@ -307,7 +509,7 @@ def resolve_graph(
     off_vocab: list[str] = []
 
     def add_entity(eid: str, type_: str, props: dict) -> None:
-        if eid in entities:  # first occurrence wins; aliases + evidence union
+        if eid in entities:  # first occurrence wins; aliases/evidence/notes union
             old = entities[eid]["props"]
             aliases = sorted(set(old.get("aliases", [])) | set(props.get("aliases", [])))
             if aliases:
@@ -315,9 +517,18 @@ def resolve_graph(
             chunks = sorted(set(old.get("evidence_chunks", [])) | set(props.get("evidence_chunks", [])))
             if chunks:
                 old["evidence_chunks"] = chunks
+            # pending_notes (WP13.4): a Character re-mentioned in a later chunk
+            # THIS session must not lose an earlier chunk's note — order-preserving
+            # dedup, not a set (the summarizer reads these as prose, order matters).
+            notes = old.get("pending_notes", []) + [
+                n for n in props.get("pending_notes", []) if n not in old.get("pending_notes", [])]
+            if notes:
+                old["pending_notes"] = notes
         else:
-            entities[eid] = {"id": eid, "type": type_,
-                             "props": {"session_id": session_id, "confidence": "medium", **props}}
+            base = {"session_id": session_id, "confidence": "medium"}
+            if type_ == "Player":  # campaign-wide, not session-scoped (audit v6 F29);
+                del base["session_id"]  # per-session history lives on PLAYS{seq}
+            entities[eid] = {"id": eid, "type": type_, "props": {**base, **props}}
 
     def add_edge(start: str, end: str, rtype: str, props: dict | None = None) -> None:
         key = (start, rtype, end)
@@ -327,6 +538,10 @@ def resolve_graph(
         props = dict(props or {})
         if predicate_class(rtype) == "state" and "valid_from" not in props:
             props["valid_from"] = seq
+            # "last seen" stamp (audit_v7pro §7.4): lets a read tell "stale,
+            # not refuted" from "actively re-confirmed" on the many-to-many
+            # state edges that never force-close (ALLIED_WITH, MEMBER_OF, ...).
+            props["last_observed_session"] = seq
         edges.append({"start_id": start, "end_id": end, "type": rtype,
                       "props": {"session_id": session_id, "confidence": "high", **props}})
 
@@ -338,7 +553,7 @@ def resolve_graph(
     for cid, props in cast_info["characters"].items():
         add_entity(cid, "Character", {**props, "confidence": "high"})
         surface_to_id[normalize(props["name"])] = cid
-        add_edge(cid, session_node_id, "APPEARS_IN")
+        add_edge(cid, session_node_id, "IN_SESSION")
     for pid, cid in cast_info["plays"].items():
         add_edge(pid, cid, "PLAYS", {"seq": seq})
     # GM-is-world (KG_Qualitaetsanalyse_S01): the GM player's ONLY edge is
@@ -378,8 +593,18 @@ def resolve_graph(
         prior = surface_to_id.get(normalize(surface))
         prior = reroute.get(prior, prior)  # player surfaces land on their character
         if prior and prior in entities:
+            # Pass the FULL props through (not just evidence_chunks): a cast
+            # member (pre-registered in resolve_graph's cast bootstrap, bare
+            # name/role/is_pc only) always hits this branch on every mention,
+            # so this is the only path a PC's aliases/pending_notes ever reach
+            # add_entity's merge — narrowing to evidence_chunks silently
+            # dropped them for every PC, every session (caught via WP13.4's
+            # pending_notes KeyError; likely dropped `description` the same
+            # way before that).
+            extra = dict(props)
             if chunks:
-                add_entity(prior, entities[prior]["type"], {"evidence_chunks": chunks})
+                extra["evidence_chunks"] = chunks
+            add_entity(prior, entities[prior]["type"], extra)
             return prior
         eid = resolver.resolve(surface, type_)
         if eid.startswith("PLAYER_"):  # model coined a player's name as an entity
@@ -413,25 +638,71 @@ def resolve_graph(
     # --- extracted entities ----------------------------------------------
     for c in extraction.characters:
         if is_out_of_world(c.name):
-            dropped.append({"subject": c.name, "predicate": "APPEARS_IN",
+            dropped.append({"subject": c.name, "predicate": "IN_SESSION",
                             "object": session_node_id, "reason": "out-of-world (stream/chat/VTT)"})
             continue
         if is_gm_surface(c.name):  # GM-is-world: never a Character node
-            dropped.append({"subject": c.name, "predicate": "APPEARS_IN",
+            dropped.append({"subject": c.name, "predicate": "IN_SESSION",
                             "object": session_node_id, "reason": "gm-is-world"})
+            continue
+        # Generic-mob gate (pay-to-mint, like is_named_artifact for Items): a
+        # generic/unnamed adversary is identity-unstable — each goblin is a
+        # different goblin, so minting one fabricates a recurring entity. Drop;
+        # the horde is a Faction, the fight an Event, the detail a Chunk. Cast
+        # PCs bypass — they are pre-registered from the transcript (in `entities`
+        # already), so the gate only ever fires on LLM-extracted surfaces.
+        is_cast_pc = surface_to_id.get(normalize(c.name)) in entities
+        if not is_cast_pc and (not c.is_named_character or is_generic_mob(c.name)
+                               or is_generic_role(c.name)):
+            dropped.append({"subject": c.name, "predicate": "IN_SESSION",
+                            "object": session_node_id, "reason": "generic mob/role (not a named individual)"})
             continue
         cid = register(c.name, "Character", {
             "name": c.name, "aliases": c.aliases,
-            "is_pc": c.type.upper() == "PC", "role": c.type or "NPC",
+            # WP13.4: a raw per-scene note, never written straight to
+            # `description` — pending_notes accumulates across sessions
+            # (store.py) until `cli summarize-entities` folds it into one
+            # cohesive `character_summary` and clears it. Prevents a later
+            # session's note from silently replacing an earlier one (Item 1
+            # only stopped an EMPTY note from blanking the summary, not a
+            # non-empty one from overwriting it).
+            "pending_notes": [c.description] if c.description else [],
+            # is_pc is NOT taken from the model's role guess (audit_v8pro D10): a
+            # later session mentioning a PC as a plain NPC would write is_pc=false
+            # and store's ON MATCH would overwrite the cast's true. is_pc is set
+            # ONLY by bootstrap_cast (=true) and repaired deterministically from
+            # PLAYS in store.write_session; extracted NPCs simply carry no is_pc.
+            "role": c.role or "NPC",
         }, chunks_of("characters", c.name))
         if cid in gm_pids:  # registry resolved a GM alias to the GM player
             continue
-        add_edge(cid, session_node_id, "APPEARS_IN")
+        # alias-conflict adjudication (audit v6 F1): a model-supplied alias that
+        # is already a DIFFERENT known character (Tindrail carrying 'Timrell')
+        # smells like a wrong merge — the adjudicator decides; a 'distinct'
+        # verdict strips the alias from this node's props again.
+        for alias in c.aliases:
+            hit = resolver._lookup_exact_or_norm("characters", alias)
+            memo = resolver.registry["characters"].get(cid, {}).get("adjudicated_distinct", [])
+            if hit and hit != cid and hit not in memo:
+                resolver.pending_candidates.append({
+                    "section": "characters", "new_id": cid, "surface": alias,
+                    "existing_id": hit, "ratio": None, "source": "alias-conflict"})
+        add_edge(cid, session_node_id, "IN_SESSION")
     for loc in extraction.locations:
+        # named-place gate (pay-to-mint, like is_named_artifact): generic
+        # stage-dressing ('der Wald', 'die Tür') is where a beat happens, not a
+        # macro-place — no node. The beat lives in the scene Event/Chunk.
+        if not loc.is_named_location or is_generic_place(loc.name):
+            dropped.append({"subject": loc.name, "predicate": "LOCATED_IN",
+                            "object": session_node_id, "reason": "generic place (not a named location)"})
+            continue
         register(loc.name, "Location", {"name": loc.name, "description": loc.description},
                  chunks_of("locations", loc.name))
     for item in extraction.items:
-        iid = register(item.name, "Item", {"name": item.name, "status": item.status},
+        if not item.is_named_artifact:
+            continue  # generic loot lives in the vector store, never a node
+        iid = register(item.name, "Item",
+                       {"name": item.name, "status": item.status, "status_note": item.status_note},
                        chunks_of("items", item.name))
         if item.owner:
             owner_id = endpoint(item.owner)
@@ -447,13 +718,27 @@ def resolve_graph(
                  chunks_of("factions", f.name))
     player_names = [p["name"] for p in cast_info["players"].values()]
     for e in extraction.events:
-        reason = event_gate(e.title, quest_norms, player_names)
+        reason = event_gate(e.label, quest_norms, player_names)
         if reason:
-            dropped.append({"subject": e.title, "predicate": "IN_SESSION",
+            dropped.append({"subject": e.label, "predicate": "IN_SESSION",
                             "object": session_node_id, "reason": reason})
             continue
-        eid = register(e.title, "Event", {"name": e.title, "summary": e.summary},
-                       chunks_of("events", e.title))
+        # Session-scoped event id (audit_v8pro R2): an Event is a one-off, never
+        # recurring across sessions, so its id MUST carry the session — otherwise
+        # two sessions with the same scene title ('Kampf gegen den Geist') mint
+        # the same EVT_<slug> and Neo4j MERGEs them into one node that then
+        # collects IN_SESSION edges from both sessions (the Tentakel-Monster ->
+        # SESS_2025-03-26 mislink). Minted inline, bypassing the ephemeral
+        # resolver `events` section (never persisted); same-session re-mention
+        # dedups on the deterministic id via add_entity.
+        eid = f"EVT_{session_id}_{slug(e.label)}"
+        ev_props = {"name": e.label, "summary": e.summary,
+                    "significance": e.narrative_significance_reasoning}
+        ev_chunks = chunks_of("events", e.label)
+        if ev_chunks:
+            ev_props["evidence_chunks"] = ev_chunks
+        add_entity(eid, "Event", ev_props)
+        surface_to_id.setdefault(normalize(e.label), eid)
         add_edge(eid, session_node_id, "IN_SESSION")
         if e.location:
             loc_id = endpoint(e.location)
@@ -464,94 +749,19 @@ def resolve_graph(
             if part_id:
                 add_edge(part_id, eid, "PARTICIPATED_IN")
 
-    # --- rules, rolls, decisions (docs/evolution/05, WP5-6) ---------------
+    # --- rules (docs/evolution/05, WP5-6) --------------------------------
     for ru in extraction.rule_entities:
-        chunks = chunks_of("rule_entities", ru.name)
         rid = srd_index.lookup(ru.name) if srd_index else None
         if rid:
             # shared, preloaded SRD node — link to it, never a per-session copy
             surface_to_id.setdefault(normalize(ru.name), rid)
         else:
-            subtype = re.sub(r"[^A-Za-z0-9]", "", ru.subtype) or "System"
-            # closed subtype enum (KG_Qualitaetsanalyse_S01 §1): off-enum mints
-            # ('diceroll', 'weapon trait', 'attribute', 'game-rule', ...) are
-            # dropped — real rules belong in data/daggerheart_srd.json instead.
-            if subtype.casefold().removeprefix("game") not in RULE_SUBTYPES:
-                dropped.append({"subject": ru.name, "predicate": "RULE_ENTITY",
-                                "object": ru.subtype, "reason": "off-enum rule subtype"})
-                continue
-            rid = resolver._lookup("rules", ru.name) or resolver._mint(
-                "rules", f"RULE_{subtype.upper()}", ru.name)
-            props = {"name": resolver.canonical(rid) or ru.name, "subtype": ru.subtype,
-                     "source": "session"}
-            if chunks:
-                props["evidence_chunks"] = chunks
-            add_entity(rid, "RuleEntity", props)
-            surface_to_id.setdefault(normalize(ru.name), rid)
-
-    for roll in extraction.roll_events:
-        rid = f"ROLL_{session_id}_{slug(roll.name)}"  # session-scoped: rolls never recur
-        chunks = chunks_of("roll_events", roll.name)
-        props = {"name": roll.name, "trait_or_action": roll.trait_or_action,
-                 "outcome": roll.outcome, "confidence": normalize_confidence(roll.confidence)}
-        if chunks:
-            props["evidence_chunks"] = chunks
-        add_entity(rid, "RollEvent", props)
-        add_edge(rid, session_node_id, "IN_SESSION")
-        surface_to_id.setdefault(normalize(roll.name), rid)
-        if roll.roller:
-            who = endpoint(roll.roller)  # GM rolls resolve to None (gm-is-world)
-            if who:
-                add_edge(who, rid, "ROLLED")
-        if roll.target:
-            tgt = endpoint(roll.target)
-            if tgt and tgt != rid:
-                add_edge(rid, tgt, "TARGETS")
-
-    for dec in extraction.decisions:
-        did = f"DEC_{session_id}_{slug(dec.name)}"  # session-scoped, like rolls
-        chunks = chunks_of("decisions", dec.name)
-        props = {"name": dec.name, "quote": dec.quote, "consequence": dec.consequence,
-                 "confidence": normalize_confidence(dec.confidence)}
-        if chunks:
-            props["evidence_chunks"] = chunks
-        add_entity(did, "Decision", props)
-        add_edge(did, session_node_id, "IN_SESSION")
-        surface_to_id.setdefault(normalize(dec.name), did)
-        if dec.decided_by:
-            who = endpoint(dec.decided_by)  # GM decisions resolve to None (gm-is-world)
-            if who:
-                add_edge(who, did, "DECIDED")
-
-    # --- traits (docs/evolution/10, WP6b): recurring behavior aggregates
-    # into one counted Trait node per character (store.py increments
-    # KNOWN_FOR.count on re-occurrence), never N repeated Event nodes -------
-    for tr in extraction.traits:
-        char_id = endpoint(tr.character) if tr.character else None
-        if not char_id:
-            dropped.append({"subject": tr.character, "predicate": "KNOWN_FOR",
-                            "object": tr.name,
-                            "reason": "gm-is-world" if is_gm_surface(tr.character)
-                            else "unresolved character"})
-            continue
-        char_slug = char_id[len("CHAR_"):] if char_id.startswith("CHAR_") else slug(char_id)
-        tid = f"TRAIT_{char_slug}_{slug(tr.name)}"
-        # Promotion gate (docs/evolution/KG_Qualitaetsanalyse_S01, fix E): a trait
-        # seen in only one chunk this session is unconfirmed — write it as 'low'
-        # confidence rather than dropping it, since store.py's KNOWN_FOR.count
-        # already promotes it to a confirmed recurrence on the next real
-        # re-occurrence (this session or a later one).
-        # ponytail: cross-session staging (never write until a 2nd session
-        # confirms it) needs persistent candidate state resolve.py doesn't keep
-        # today; add if single-sighting trait noise turns out to still matter
-        # after this confidence downgrade.
-        trait_chunks = chunks_of("traits", tr.name)
-        add_entity(tid, "Trait", {
-            "name": tr.name,
-            "confidence": "medium" if len(trait_chunks) >= 2 else "low",
-        })
-        add_edge(char_id, tid, "KNOWN_FOR")
-        surface_to_id.setdefault(normalize(tr.name), tid)
+            # SRD-link-only (audit v6, rule 5): a rule the SRD index doesn't
+            # know is table paraphrase, in-character banter ('Blizzard'), or
+            # ASR noise ('Maus') — never minted. The drop log doubles as the
+            # backlog for extending data/daggerheart_srd.json.
+            dropped.append({"subject": ru.name, "predicate": "RULE_ENTITY",
+                            "object": ru.subtype, "reason": "no SRD match"})
 
     # --- relationships (endpoint validation, docs/evolution/03) ----------
     for r in extraction.relationships:
@@ -590,6 +800,15 @@ def resolve_graph(
                 dropped.append({"subject": r.subject, "predicate": r.predicate, "object": r.object,
                                 "reason": f"domain/range violation ({start_type} -{rtype}-> {end_type})"})
                 continue
+        # P-6: party cohesion is implicit, not topology. The model sometimes
+        # emits ALLIED_WITH between two PCs — drop it deterministically. (KNOWS
+        # is left alone: PC<->NPC social edges are valuable, per the audit.)
+        if rtype == "ALLIED_WITH":
+            if (entities.get(start, {}).get("props", {}).get("is_pc")
+                    and entities.get(end, {}).get("props", {}).get("is_pc")):
+                dropped.append({"subject": r.subject, "predicate": r.predicate,
+                                "object": r.object, "reason": "PC<->PC party cohesion (implicit)"})
+                continue
         rel_chunks = chunks_of("relationships", (r.subject, r.predicate, r.object)) \
             or ([r.evidence] if r.evidence else [])
         add_edge(start, end, rtype, {
@@ -608,6 +827,26 @@ def resolve_graph(
     if off_vocab:
         log.warning("%d off-vocab predicates coerced to RELATES_TO: %s",
                     len(off_vocab), sorted(set(off_vocab)))
+
+    # --- WP13.5: chunk-level passages for the vector store ("vector = das
+    # Buch") — split AFTER every other entity is registered, so MENTIONS can
+    # link a passage to everything whose evidence_chunks name that scene. -----
+    if chunk_texts:
+        mentionable = [(eid, rec) for eid, rec in entities.items()
+                       if rec["props"].get("evidence_chunks")]
+        n_passages = 0
+        for i, chunk_text in enumerate(chunk_texts, start=1):
+            for j, passage in enumerate(split_passages(chunk_text), start=1):
+                cid = f"CHUNK_{session_id}_{i:03d}_{j:02d}"
+                add_entity(cid, "Chunk", {
+                    "name": f"{session_id} scene {i}.{j}", "text": passage, "scene_index": i,
+                })
+                add_edge(cid, session_node_id, "IN_SESSION")
+                for eid, rec in mentionable:
+                    if i in rec["props"]["evidence_chunks"]:
+                        add_edge(cid, eid, "MENTIONS")
+                n_passages += 1
+        log.info("Session %s: %d chunk passages minted for vector retrieval", session_id, n_passages)
 
     resolver.save()
     return {"entities": list(entities.values()), "edges": edges, "dropped": dropped}

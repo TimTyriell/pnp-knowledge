@@ -1,5 +1,6 @@
-"""Invariants for the two-pass extraction wiring (docs/evolution/06, WP7).
-No LLM, no Neo4j — extractors are fakes that record what prompt they saw.
+"""Invariants for the single-call scene extraction wiring (docs/evolution/13,
+WP13.6; capsule + scene segmentation, WP13.1/13.2). No LLM, no Neo4j —
+extractors are fakes that record what prompt they saw.
 
 Run: python -m pytest tests/  (or python tests/test_extract.py for the asserts).
 """
@@ -9,9 +10,15 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from pnp_graph.extract import apply_event_consolidation, extract_chunk, propose_event_groups
-from pnp_graph.schema import (Character, EntityExtraction, Event, EventConsolidation, EventExtraction,
-                              EventGroup, GraphExtraction, Location, Relationship, RuleEntity)
+from pnp_graph.extract import extract_chunk, segment_session
+from pnp_graph.schema import (Character, Event, Location, Relationship, RuleEntity,
+                              SceneBoundary, SceneExtraction, SceneSegmentation)
+
+
+def _event(label, **kw):
+    # narrative_significance_reasoning is required (pay-to-mint, WP13.2)
+    kw.setdefault("narrative_significance_reasoning", "state changed")
+    return Event(label=label, **kw)
 
 
 class _FakeExtractor:
@@ -32,115 +39,107 @@ class _FakeExtractor:
         return self._results.pop(0)
 
 
-def test_extract_chunk_combines_both_passes():
-    entities = EntityExtraction(
-        characters=[Character(name="Lindo Laut", type="PC")],
-        locations=[Location(name="Wald")],
+def test_extract_chunk_one_call_combines_entities_and_capsule_event():
+    scene = SceneExtraction(
+        characters=[Character(name="Lindo Laut", role="PC", is_named_character=True)],
+        locations=[Location(name="Wald", is_named_location=True)],
         rule_entities=[RuleEntity(name="Barde", subtype="Class")],
-    )
-    events = EventExtraction(
+        macro_scene_event=_event("Kampf gegen die Goblins", participants=["Lindo Laut"]),
         relationships=[Relationship(subject="Lindo Laut", predicate="HAS_CLASS",
                                     object="Barde", confidence="high")],
     )
-    entity_extractor = _FakeExtractor([entities])
-    event_extractor = _FakeExtractor([events])
+    extractor = _FakeExtractor([scene])
 
-    result = extract_chunk((entity_extractor, event_extractor, None), "chunk text", 3,
+    result = extract_chunk(extractor, "chunk text", 3,
                            cast_names=["Lindo Laut"], rule_names=["Barde"])
 
-    assert result.characters == entities.characters
-    assert result.locations == entities.locations
-    assert result.relationships == events.relationships
+    assert result.characters == scene.characters
+    assert result.locations == scene.locations
+    # capsule: exactly one macro event per scene chunk
+    assert [e.label for e in result.events] == ["Kampf gegen die Goblins"]
+    assert result.relationships == scene.relationships
     assert result.relationships[0].evidence == 3  # stamped, not model-supplied
 
-    # entity pass got the cast/gazetteer lines; event pass got the entity
-    # pass's own extracted names, not a free-form invitation to invent new ones
-    assert "Lindo Laut" in entity_extractor.prompts[0]
-    assert "Barde" in entity_extractor.prompts[0]
-    event_prompt = event_extractor.prompts[0]
-    assert "Lindo Laut" in event_prompt and "Wald" in event_prompt and "Barde" in event_prompt
+    # one call for everything — cast + gazetteer both land in the same prompt
+    assert len(extractor.prompts) == 1
+    assert "Lindo Laut" in extractor.prompts[0] and "Barde" in extractor.prompts[0]
 
 
-def test_extract_chunk_retries_once_per_pass():
-    entities = EntityExtraction(characters=[Character(name="Dodo", type="PC")])
-    events = EventExtraction()
-    entity_extractor = _FakeExtractor([entities], fail_first=True)
-    event_extractor = _FakeExtractor([events], fail_first=True)
+def test_extract_chunk_retries_once():
+    scene = SceneExtraction(characters=[Character(name="Dodo", role="PC", is_named_character=True)],
+                            macro_scene_event=_event("Szene"))
+    extractor = _FakeExtractor([scene], fail_first=True)
 
-    result = extract_chunk((entity_extractor, event_extractor, None), "chunk text", 1)
+    result = extract_chunk(extractor, "chunk text", 1)
 
-    assert result.characters == entities.characters
-    assert len(entity_extractor.prompts) == 2  # first raised, retry succeeded
-    assert len(event_extractor.prompts) == 2
+    assert result.characters == scene.characters
+    assert len(extractor.prompts) == 2  # first raised, retry succeeded
 
 
-def test_propose_event_groups_skips_llm_under_two_events():
-    extractor = _FakeExtractor([EventConsolidation(groups=[])])
-    graph = GraphExtraction(events=[Event(title="Only One")])
-    result = propose_event_groups(extractor, graph)
-    assert result.groups == []
-    assert extractor.prompts == []  # never called — nothing to consolidate
+def test_known_world_windowed_within_window():
+    # audit_v7pro §8 #1: the known-world block refreshes only every
+    # KNOWN_WORLD_REFRESH_EVERY chunks so the DeepSeek prefix stays cacheable.
+    # Campaign canon is in every prompt, but a name from scene 1 is NOT visible
+    # to scene 2 while both sit inside the same window (default window = 10).
+    from pnp_graph.extract import extract_session
+    scene1 = SceneExtraction(
+        locations=[Location(name="Goblinlager", is_named_location=True)],
+        macro_scene_event=_event("Lager entdeckt"))
+    scene2 = SceneExtraction(macro_scene_event=_event("Rückkehr"))
+    extractor = _FakeExtractor([scene1, scene2])
+
+    known = {"Characters": ["Berthold (aka der Schmied)"], "Locations": ["Breska"]}
+    extract_session(extractor, ["chunk one", "chunk two"], known_world=known)
+
+    # campaign canon in every prompt
+    assert all("Breska" in p and "Berthold (aka der Schmied)" in p for p in extractor.prompts)
+    assert all("EXACT name" in p for p in extractor.prompts)
+    # same window -> scene 1's new location not injected into scene 2's prompt
+    assert "Goblinlager" not in extractor.prompts[0]
+    assert "Goblinlager" not in extractor.prompts[1]
 
 
-def test_apply_event_consolidation_merges_near_duplicates():
-    graph = GraphExtraction(
-        events=[
-            Event(title="Monster's Last Breath", summary="a", participants=["Dodo"]),
-            Event(title="Monster's Final Breath", summary="b", participants=["Cookie"], location="Wald"),
-            Event(title="Dodo moves the Pott", summary="unrelated", participants=["Dodo"]),
-        ],
-        relationships=[
-            Relationship(subject="Dodo", predicate="PARTICIPATED_IN",
-                        object="Monster's Last Breath", confidence="high"),
-            Relationship(subject="Cookie", predicate="PARTICIPATED_IN",
-                        object="Monster's Final Breath", confidence="high"),
-        ],
-    )
-    evidence = {
-        ("events", "Monster's Last Breath"): [3],
-        ("events", "Monster's Final Breath"): [4],
-        ("relationships", ("Dodo", "PARTICIPATED_IN", "Monster's Last Breath")): [3],
-        ("relationships", ("Cookie", "PARTICIPATED_IN", "Monster's Final Breath")): [4],
-    }
-    consolidation = EventConsolidation(groups=[
-        EventGroup(canonical_title="Monster Dies", summary="the monster dies",
-                  member_titles=["Monster's Last Breath", "Monster's Final Breath"]),
-        EventGroup(canonical_title="Dodo moves the Pott", summary="unrelated",
-                  member_titles=["Dodo moves the Pott"]),
+def test_known_world_refreshes_across_window_boundary(monkeypatch):
+    # With the window shrunk to 1, every chunk refreshes -> scene 1's name is
+    # visible to scene 2 again (the pre-§8 accumulating behavior).
+    import pnp_graph.extract as extract_mod
+    monkeypatch.setattr(extract_mod, "KNOWN_WORLD_REFRESH_EVERY", 1)
+    scene1 = SceneExtraction(
+        locations=[Location(name="Goblinlager", is_named_location=True)],
+        macro_scene_event=_event("Lager entdeckt"))
+    scene2 = SceneExtraction(macro_scene_event=_event("Rückkehr"))
+    extractor = _FakeExtractor([scene1, scene2])
+
+    extract_mod.extract_session(extractor, ["chunk one", "chunk two"])
+    assert "Goblinlager" not in extractor.prompts[0]
+    assert "Goblinlager" in extractor.prompts[1]
+
+
+def test_no_known_world_line_when_empty():
+    scene = SceneExtraction(macro_scene_event=_event("Szene"))
+    extractor = _FakeExtractor([scene])
+    extract_chunk(extractor, "chunk text", 1)
+    assert "Known campaign entities" not in extractor.prompts[0]
+
+
+def test_segment_session_returns_llm_boundaries():
+    segments = [{"speaker": "GM", "text": f"line {i}"} for i in range(6)]
+    seg = SceneSegmentation(scenes=[
+        SceneBoundary(start_segment=0, end_segment=2, label="A"),
+        SceneBoundary(start_segment=3, end_segment=5, label="B"),
     ])
-    apply_event_consolidation(graph, evidence, consolidation)
-
-    titles = {e.title for e in graph.events}
-    assert titles == {"Monster Dies", "Dodo moves the Pott"}
-    merged = next(e for e in graph.events if e.title == "Monster Dies")
-    assert set(merged.participants) == {"Dodo", "Cookie"}
-    assert merged.location == "Wald"  # pulled from a member that had one
-
-    rel_objects = {r.object for r in graph.relationships}
-    assert rel_objects == {"Monster Dies"}  # both rewritten, no duplicate
-
-    assert evidence[("events", "Monster Dies")] == [3, 4]
-    assert ("relationships", ("Dodo", "PARTICIPATED_IN", "Monster Dies")) in evidence
-    assert ("relationships", ("Cookie", "PARTICIPATED_IN", "Monster Dies")) in evidence
+    fake = _FakeExtractor([seg])
+    scenes = segment_session(fake, segments)
+    assert [(s.start_segment, s.end_segment) for s in scenes] == [(0, 2), (3, 5)]
+    assert "0: GM: line 0" in fake.prompts[0]  # line-numbered listing fed to the model
 
 
-def test_apply_event_consolidation_safety_net_keeps_uncovered_titles():
-    # if the model drops a title from every group (schema drift), it survives
-    # as its own singleton rather than vanishing from the graph.
-    graph = GraphExtraction(events=[
-        Event(title="A", summary=""), Event(title="B", summary=""), Event(title="C", summary=""),
-    ])
-    consolidation = EventConsolidation(groups=[
-        EventGroup(canonical_title="A", summary="", member_titles=["A"]),
-    ])
-    apply_event_consolidation(graph, {}, consolidation)
-    assert {e.title for e in graph.events} == {"A", "B", "C"}
-
-
-def test_apply_event_consolidation_noop_on_empty_groups():
-    graph = GraphExtraction(events=[Event(title="A"), Event(title="B")])
-    apply_event_consolidation(graph, {}, EventConsolidation(groups=[]))
-    assert {e.title for e in graph.events} == {"A", "B"}
+def test_segment_session_falls_back_to_one_scene_on_failure():
+    segments = [{"speaker": "GM", "text": "x"}, {"speaker": "GM", "text": "y"}]
+    fake = _FakeExtractor([], fail_first=True)  # raises, no canned result
+    scenes = segment_session(fake, segments)
+    assert len(scenes) == 1
+    assert scenes[0].start_segment == 0 and scenes[0].end_segment == 1
 
 
 if __name__ == "__main__":

@@ -6,77 +6,133 @@ import logging
 from langchain_ollama import ChatOllama
 
 from .config import (
-    LLM_MODEL, LLM_TIMEOUT_S, NUM_CTX, NUM_PREDICT, REPEAT_PENALTY, SUGGESTED_PREDICATES,
+    DEEPSEEK_API_KEY, DEEPSEEK_BASE_URL, FLAGSHIP_MAX_TOKENS, KNOWN_WORLD_REFRESH_EVERY,
+    LLM_MODEL, LLM_TIMEOUT_S, NUM_CTX, NUM_PREDICT, PROVIDER, REPEAT_PENALTY,
+    SUGGESTED_PREDICATES,
 )
-from .schema import EntityExtraction, Event, EventConsolidation, EventExtraction, GraphExtraction
+from .schema import GraphExtraction, SceneExtraction, SceneSegmentation
 
 log = logging.getLogger("pnp_graph.extract")
 
-# Two-role extraction (docs/evolution/06, WP7): a 14B stays reliable on two
-# smaller schemas better than one mega-schema, and it raises recall without
-# the model having to hold causal reasoning + entity spotting in one pass.
-_ENTITY_PROMPT = (
-    "Extract characters, NPCs, locations, items, quests, and factions from this "
-    "TTRPG (Daggerheart) session transcript chunk. Use consistent names across mentions. "
-    "For characters, set type to \"adversary\" for a hostile monster/enemy the party fights, "
-    "\"NPC\" for other non-player characters, \"PC\" for player characters.\n\n"
-    "Also extract:\n"
+# Single-call scene extraction (docs/evolution/13, WP13.6): supersedes the WP7
+# two-pass entity/event split (kept a 14B reliable on a smaller schema per
+# call). On the flagship profile, with scenes already pre-segmented so each
+# call is scoped to one coherent unit, one combined call halves the API calls
+# per session at no measured quality cost.
+_SCENE_PROMPT = (
+    "This transcript chunk is ONE scene. Extract everything from it in one pass.\n\n"
+    "- items: create an Item ONLY for a unique, named, plot-significant artifact and set "
+    "is_named_artifact=true. WRONG (is_named_artifact=false, generic — do NOT treat as "
+    "significant): 'Fackel', '3 Goldstücke', 'Heiltrank', 'Kurzschwert'. CORRECT "
+    "(is_named_artifact=true): 'Schwert des Veritas', 'die verlorene Schriftrolle der Blume'.\n"
+    "- characters, locations, quests, factions: use consistent names across mentions. "
+    "For characters, set role to \"adversary\" for a hostile monster/enemy the party fights, "
+    "\"NPC\" for other non-player characters, \"PC\" for player characters. An unnamed NPC "
+    "that is a quest objective or otherwise plot-critical (the rescued child, a quest-giver, "
+    "the smith who supplies the party) still counts as named: set is_named_character=true and "
+    "give it a stable descriptive name (e.g. 'Das gerettete Kind'); ordinary background extras "
+    "and generic monsters stay is_named_character=false. If a character "
+    "shows a recurring personality trait, habit, or quirk (e.g. 'plays music often', 'always "
+    "distrusts strangers'), fold it into that character's description as prose — never as a "
+    "separate happening. Never put a player's out-of-character/meta commentary (rules "
+    "questions, feedback about the session) into a character's description — that describes "
+    "the player, not the character. For quests, if a scene's objective is a sub-task of a "
+    "larger campaign arc (e.g. clearing the crypt inside the overall rescue mission), extract "
+    "it as its own quest and add a SUBQUEST_OF relationship from the sub-quest to the arc "
+    "quest.\n"
     "- rule_entities: game-rules objects referenced at the table (classes, subclasses, "
     "ancestries, communities, domain cards, class features, adversary stat blocks, system "
-    "resources like Hope/Fear/Stress). Game resources are rule entities, NOT items.\n\n"
-    "Ignore stream/chat meta entirely: Twitch chat messages, raid announcements, viewer "
-    "shout-outs, and VTT/tool operation talk (turn trackers, camera/cinema modes, dice-roller "
-    "UI) are not part of the game fiction. Never extract a chat viewer, a raiding community, "
-    "or a tool/UI element as a character or NPC.\n\n"
-)
-
-_EVENT_PROMPT = (
-    "Extract events, dice rolls, decisions, recurring traits, and relationships from this "
-    "TTRPG (Daggerheart) session transcript chunk.\n\n"
-    "- events: only create a new event for an occurrence if at least one is true: (a) a roll "
-    "happened, (b) it changed a tracked state (HP, quest status, item ownership, relationship), "
-    "(c) it caused or resulted from another event/decision, or (d) it's referenced again later "
-    "in the session. If it's ambient/flavor color with none of these — including a repeat of "
-    "something a character does regularly — do NOT create an event; instead extract it as a "
-    "trait.\n"
-    "- traits: a recurring characterization or habit of one character (e.g. 'plays music often', "
-    "'always distrusts strangers'), not a one-off happening. If the same ambient behavior comes "
-    "up again for a character already noted for it, extract it again as the same trait name "
-    "rather than as a new event. Never extract a player's out-of-character/meta commentary "
-    "about the game (asking rules questions, giving feedback about how the session went) as a "
-    "trait of their character — that describes the player, not the character.\n"
-    "- roll_events: every dice roll — who rolled, what trait/action, the outcome "
-    "(success_with_hope, success_with_fear, failure, crit...), and the target if any.\n"
-    "- decisions: deliberate, weighty player/GM choices, with a short verbatim quote and "
-    "the consequence.\n"
-    "- relationships: arbitrary lore/social/causal connections between entities already named "
-    "below (e.g. a character is hostile to a faction, a character HAS_CLASS a class, a decision "
-    "TRIGGERED an event, an event RESULTED_IN another event, an adversary USES its stat block). "
-    "Each relationship's subject and object must be one of the names listed below, never a new "
-    "entity. Prefer reusing one of these relation types when it fits: "
+    "resources like Hope/Fear/Stress). Game resources are rule entities, NOT items. "
+    "Extract ONLY rules that match the known-rules list further below — anything rule-like "
+    "that is not on that list (in-character banter about made-up abilities, descriptions of "
+    "miniatures/tokens) is NOT a rule entity; skip it.\n"
+    "- macro_scene_event: the SINGLE most consequential thing this whole scene accomplishes — "
+    "its summary as one macro unit, or the one permanent, world-altering state change (a death, "
+    "a quest completed, an alliance formed, ownership changing hands). A whole 20-minute combat "
+    "is ONE event (e.g. 'Kampf gegen die Goblins'), never one per attack or roll. Fill "
+    "narrative_significance_reasoning with why this scene alters world state — if the scene is "
+    "pure filler, still name its most consequential moment; do not invent multiple events. "
+    "Session-opening recaps and character introductions are NOT macro-events.\n"
+    "- relationships: arbitrary lore/social/causal connections between entities you extracted "
+    "above (e.g. a character is hostile to a faction, a character HAS_CLASS a class, an event "
+    "RESULTED_IN another event, an adversary USES its stat block). "
+    "Each relationship's subject and object — and the macro_scene_event's participants — must be "
+    "one of the names you extracted above or from the cast list below, never an entity you "
+    "haven't listed anywhere else. Prefer reusing one of these relation types when it fits: "
     f"{', '.join(SUGGESTED_PREDICATES)}, HAS_CLASS, HAS_SUBCLASS, HAS_ANCESTRY, USES_CARD, "
-    "HAS_FEATURE, USES, DECIDED, ROLLED — but use a different short UPPER_SNAKE_CASE predicate "
+    "HAS_FEATURE, USES — but use a different short UPPER_SNAKE_CASE predicate "
     "if none of these fit. Rate each relationship's confidence based on how directly the text "
     "supports it. If the relationship carries nuance the predicate alone can't express (e.g. "
     "'trusts him only reluctantly, since the incident in the forest'), add a short description; "
-    "leave it empty otherwise.\n\n"
+    "leave it empty otherwise. Do not extract ALLIED_WITH or KNOWS between player characters — "
+    "party membership is implicit and not a relationship. Assert ALLIED_WITH only for explicit, "
+    "sustained cooperation; a deity or force that intervenes chaotically or violently is "
+    "HOSTILE_TO or nothing — never an ally.\n\n"
+    "Extract ONLY what exists inside the game fiction (diegetic). Ignore stream/chat meta "
+    "entirely: Twitch chat messages, raid announcements, viewer shout-outs, and VTT/tool "
+    "operation talk (turn trackers, camera/cinema modes, dice-roller UI) are not part of the "
+    "game fiction. Never extract a chat viewer, a raiding community, or a tool/UI element as a "
+    "character or NPC. The same goes for GM remarks about the real world (scheduling, someone "
+    "making the session run late, technical issues), descriptions of the physical "
+    "miniatures/tokens on the table ('das ist nur eine Maus als Figur' describes the miniature, "
+    "not the character), and in-character jokes about abilities or classes that do not exist — "
+    "none of these are entities.\n\n"
+    "The transcript is auto-transcribed (Whisper) — names appear in inconsistent spellings. "
+    "Never create separate entities for spelling variants of one name (pick one spelling and "
+    "keep it), and never merge two people just because their names sound similar when the "
+    "context shows they are different figures (e.g. a tomb guardian vs. a fleeing child). Names "
+    "read aloud from an in-fiction list, book, or scroll (a Namensliste) are not aliases of the "
+    "reader or of each other; extract such a name only if it clearly denotes a character present "
+    "in the scene. An interjection or exclamation is NEVER a character name: 'Brass', 'Mist', "
+    "'verdammt', 'Halt', 'Achtung' express emotion or a command, not a person — never extract "
+    "one as a character or as an alias of one.\n\n"
 )
 
 
-def build_extractor():
+def _make_chat_llm():
+    if PROVIDER == "deepseek":
+        from langchain_openai import ChatOpenAI  # lazy: not a dep of the local profile
+        return ChatOpenAI(
+            model=LLM_MODEL, temperature=0, base_url=DEEPSEEK_BASE_URL,
+            api_key=DEEPSEEK_API_KEY, timeout=LLM_TIMEOUT_S, max_tokens=FLAGSHIP_MAX_TOKENS,
+            # deepseek-v4-flash defaults to thinking mode, which rejects the forced
+            # tool_choice with_structured_output(function_calling) sets — dense chunks
+            # that trigger thinking then 400/return None. Disable thinking for
+            # structured extraction (the two are mutually exclusive on this endpoint).
+            extra_body={"thinking": {"type": "disabled"}},
+        )
     # One ChatOllama instance -> one model resident in VRAM even though we
-    # issue two structured-output calls per chunk (docs/evolution/06), plus one
-    # session-level consolidation call (N3, KG_Qualitaetsanalyse_S01).
-    llm = ChatOllama(
+    # issue two structured-output calls per chunk (docs/evolution/06).
+    return ChatOllama(
         model=LLM_MODEL, temperature=0, num_ctx=NUM_CTX, reasoning=False,
         repeat_penalty=REPEAT_PENALTY, num_predict=NUM_PREDICT,
         client_kwargs={"timeout": LLM_TIMEOUT_S},
     )
-    return (
-        llm.with_structured_output(EntityExtraction, method="json_schema"),
-        llm.with_structured_output(EventExtraction, method="json_schema"),
-        llm.with_structured_output(EventConsolidation, method="json_schema"),
-    )
+
+
+def _structured_method() -> str:
+    # DeepSeek's OpenAI-compatible endpoint doesn't support strict json_schema
+    # response_format at all (confirmed live: 400 "response_format type is
+    # unavailable"). Its strict function-calling mode (strict=True) DOES get
+    # accepted, but on a compound schema with several $defs (Event/RollEvent/
+    # Decision/Relationship/...) it silently ignores our schema and
+    # hallucinates a different one instead (invented keys like "event_type",
+    # "source_entity", "relationship_type" — none of them ours). Plain
+    # non-strict function-calling reliably returns the exact schema we asked
+    # for, so use that despite the occasional missed tool-call _invoke_with_retry
+    # already covers. SceneExtraction (WP13.6) is the largest compound schema
+    # yet — re-verify this holds if DeepSeek's tool-call adherence regresses.
+    return "function_calling" if PROVIDER == "deepseek" else "json_schema"
+
+
+def build_extractor():
+    return _make_chat_llm().with_structured_output(SceneExtraction, method=_structured_method())
+
+
+def build_segmenter():
+    """WP13.1 semantic scene chunking: a structured-output client that partitions
+    a whole session into scenes (used on the flagship profile only)."""
+    return _make_chat_llm().with_structured_output(SceneSegmentation, method=_structured_method())
 
 
 def _cast_line(cast_names: list[str] | None) -> str:
@@ -98,60 +154,64 @@ def _gazetteer_line(rule_names: list[str] | None) -> str:
     )
 
 
-def _known_entities_line(names: list[str]) -> str:
+def _known_world_line(known: dict[str, list[str]] | None) -> str:
+    """Audit v6 engine fix: the campaign's known canon, injected per chunk so the
+    model resolves mentions to existing entities at extraction time instead of
+    minting ASR spelling variants / quest paraphrases the resolver then can't merge."""
+    if not known or not any(known.values()):
+        return ""
+    lines = "\n".join(f"{label}: {'; '.join(names)}" for label, names in known.items() if names)
     return (
-        "Entities already extracted from this chunk (use only these as subject/object, "
-        f"plus 'GM'): {', '.join(names)}.\n\n" if names else ""
+        "Known campaign entities from previous sessions and earlier scenes of this one. "
+        "When a mention refers to — or is an ASR spelling variant of — one of these, use the "
+        "EXACT name as listed, never a new spelling. Only introduce a new entity when it is "
+        "clearly distinct from all of these.\n"
+        f"{lines}\n"
+        "If this scene advances one of the known quests, reuse its exact quest name and set "
+        "its current status; only create a new quest for a genuinely new storyline.\n\n"
     )
 
 
-def _invoke_with_retry(extractor, prompt: str, chunk: str, chunk_index: int, label: str):
-    try:
-        result = extractor.invoke(prompt + chunk)
-        if result is None:
-            raise ValueError("structured output returned None")
-    except Exception as exc:  # one retry with a JSON reminder (PLAN.md phase 5)
-        log.warning("chunk %d %s-pass extraction failed (%s) — retrying once",
-                    chunk_index, label, exc)
-        result = extractor.invoke(
-            prompt + chunk + "\n\nReturn ONLY valid JSON matching the schema. No prose.")
-        if result is None:
-            raise ValueError("structured output returned None on retry")
-    return result
+def _invoke_with_retry(extractor, prompt: str, chunk: str, chunk_index: int, label: str,
+                       attempts: int = 3):
+    """DeepSeek's function_calling occasionally misses the tool_call and returns
+    None — a transient, retry-recoverable failure (verified: most flaky chunks
+    succeed on a second try). Retry up to `attempts` times with a JSON reminder
+    before giving up to the failure-dump path."""
+    reminder = "\n\nReturn ONLY valid JSON matching the schema. No prose."
+    last_exc: Exception | None = None
+    for i in range(attempts):
+        try:
+            result = extractor.invoke(prompt + chunk + (reminder if i else ""))
+            if result is None:
+                raise ValueError("structured output returned None")
+            return result
+        except Exception as exc:
+            last_exc = exc
+            if i + 1 < attempts:
+                log.warning("chunk %d %s-pass extraction failed (%s) — retry %d/%d",
+                            chunk_index, label, exc, i + 1, attempts - 1)
+    raise ValueError(f"structured output failed after {attempts} attempts: {last_exc}")
 
 
-def extract_chunk(extractors, chunk: str, chunk_index: int,
+def extract_chunk(extractor, chunk: str, chunk_index: int,
                   cast_names: list[str] | None = None,
-                  rule_names: list[str] | None = None) -> GraphExtraction:
-    """Two structured-output calls per chunk (docs/evolution/06, WP7): entity+rules
-    pass, then an event pass restricted to the names the entity pass just found."""
-    entity_extractor, event_extractor, _ = extractors
-    entity_prompt = _ENTITY_PROMPT + _cast_line(cast_names) + _gazetteer_line(rule_names)
-    entities: EntityExtraction = _invoke_with_retry(
-        entity_extractor, entity_prompt, chunk, chunk_index, "entity")
-
-    known_names = sorted({
-        *(cast_names or []),
-        *(c.name for c in entities.characters),
-        *(l.name for l in entities.locations),
-        *(i.name for i in entities.items),
-        *(q.name for q in entities.quests),
-        *(f.name for f in entities.factions),
-        *(r.name for r in entities.rule_entities),
-    })
-    event_prompt = _EVENT_PROMPT + _known_entities_line(known_names)
-    events: EventExtraction = _invoke_with_retry(
-        event_extractor, event_prompt, chunk, chunk_index, "event")
-    for r in events.relationships:
+                  rule_names: list[str] | None = None,
+                  known_world: dict[str, list[str]] | None = None) -> GraphExtraction:
+    """One structured-output call per chunk (docs/evolution/13, WP13.6): entities,
+    rules, the one capsule macro event (WP13.2), relationships."""
+    prompt = (_SCENE_PROMPT + _cast_line(cast_names) + _gazetteer_line(rule_names)
+              + _known_world_line(known_world))
+    scene: SceneExtraction = _invoke_with_retry(extractor, prompt, chunk, chunk_index, "scene")
+    for r in scene.relationships:
         r.evidence = chunk_index  # set programmatically; the model can't know its chunk
 
     return GraphExtraction(
-        characters=entities.characters, locations=entities.locations,
-        items=entities.items, quests=entities.quests, factions=entities.factions,
-        rule_entities=entities.rule_entities,
-        events=events.events, roll_events=events.roll_events,
-        decisions=events.decisions, traits=events.traits,
-        relationships=events.relationships,
+        characters=scene.characters, locations=scene.locations,
+        items=scene.items, quests=scene.quests, factions=scene.factions,
+        rule_entities=scene.rule_entities,
+        events=[scene.macro_scene_event],
+        relationships=scene.relationships,
     )
 
 
@@ -162,12 +222,9 @@ def merge_graphs(target: GraphExtraction, extra: GraphExtraction) -> None:
         ("locations", "name"),
         ("items", "name"),
         ("quests", "name"),
-        ("events", "title"),
+        ("events", "label"),
         ("factions", "name"),
         ("rule_entities", "name"),
-        ("roll_events", "name"),
-        ("decisions", "name"),
-        ("traits", "name"),
     ):
         existing = {getattr(item, key) for item in getattr(target, field)}
         for item in getattr(extra, field):
@@ -189,9 +246,8 @@ def _record_evidence(evidence: dict, result: GraphExtraction, chunk_index: int) 
     Pydantic models so the LLM's JSON schema stays unchanged)."""
     for field, key in (
         ("characters", "name"), ("locations", "name"), ("items", "name"),
-        ("quests", "name"), ("events", "title"), ("factions", "name"),
-        ("rule_entities", "name"), ("roll_events", "name"), ("decisions", "name"),
-        ("traits", "name"),
+        ("quests", "name"), ("events", "label"), ("factions", "name"),
+        ("rule_entities", "name"),
     ):
         for item in getattr(result, field):
             evidence.setdefault((field, getattr(item, key)), []).append(chunk_index)
@@ -199,9 +255,27 @@ def _record_evidence(evidence: dict, result: GraphExtraction, chunk_index: int) 
         evidence.setdefault(("relationships", (r.subject, r.predicate, r.object)), []).append(chunk_index)
 
 
+def _combined_known(known_world: dict[str, list[str]] | None,
+                    merged: GraphExtraction) -> dict[str, list[str]]:
+    """Campaign gazetteer + names already extracted in earlier scenes of THIS
+    session, so scene 7 reuses the exact names scene 2 introduced (catches
+    Goblin-Dorf/Goblinlager splits before the registry ever sees them)."""
+    combined = {k: list(v) for k, v in (known_world or {}).items()}
+    for label, items in (("Characters", merged.characters), ("Locations", merged.locations),
+                         ("Factions", merged.factions), ("Quests", merged.quests),
+                         ("Items", merged.items)):
+        lines = combined.setdefault(label, [])
+        for item in items:
+            name = item.name
+            if not any(line.casefold().startswith(name.casefold()) for line in lines):
+                lines.append(name)
+    return combined
+
+
 def extract_session(extractor, chunks: list[str],
                     cast_names: list[str] | None = None,
                     rule_names: list[str] | None = None,
+                    known_world: dict[str, list[str]] | None = None,
                     fail_dir=None) -> tuple[GraphExtraction, dict]:
     """Run every chunk of one session; returns (merged graph, evidence sidecar).
 
@@ -210,9 +284,19 @@ def extract_session(extractor, chunks: list[str],
     """
     merged = GraphExtraction()
     evidence: dict = {}
+    # Windowed known-world (audit_v7pro §8 #1): rebuilding the gazetteer every
+    # scene grows the prompt prefix each call and breaks DeepSeek's prefix
+    # cache. Refresh it only every KNOWN_WORLD_REFRESH_EVERY chunks so the
+    # prefix stays byte-identical across a window of calls (cache hits); the
+    # resolver's fuzzy+alias pass still catches any spelling drift within a
+    # window ("extract generously, resolve deterministically").
+    # ponytail: window fixed; make adaptive only if a session exceeds ~2 windows and drift shows.
+    window_known: dict | None = None
     for i, chunk in enumerate(chunks, start=1):
+        if window_known is None or (i - 1) % KNOWN_WORLD_REFRESH_EVERY == 0:
+            window_known = _combined_known(known_world, merged)
         try:
-            result = extract_chunk(extractor, chunk, i, cast_names, rule_names)
+            result = extract_chunk(extractor, chunk, i, cast_names, rule_names, window_known)
         except Exception as exc:
             if fail_dir is None:
                 raise
@@ -226,119 +310,50 @@ def extract_session(extractor, chunks: list[str],
         merge_graphs(merged, result)
         log.info(
             "[%d/%d] +%d chars, +%d locs, +%d items, +%d quests, +%d events, +%d factions, "
-            "+%d traits, +%d rels",
+            "+%d rels",
             i, len(chunks),
             len(result.characters), len(result.locations), len(result.items),
             len(result.quests), len(result.events), len(result.factions),
-            len(result.traits), len(result.relationships),
+            len(result.relationships),
         )
     return merged, evidence
 
 
-# --- N3: session-level event consolidation (docs/evolution/KG_Qualitaetsanalyse_S01) ---
-# merge_graphs already dedups events by exact title; a small chunk still mints
-# near-duplicate titles for the same moment ('Monster's Last Breath' / 'Monster's
-# Final Breath' / 'Monster's Death and Environment Normalization') because no
-# single chunk sees the whole session. One extra call after all chunks are
-# merged groups those into moments; apply_event_consolidation() then rewrites
-# the graph deterministically — the LLM only proposes groupings, never touches data.
+# --- WP13.1: semantic scene segmentation (docs/evolution/13) ---
+# A fast pre-pass over the whole session's segments returns scene boundaries;
+# chunking.scene_chunks then slices ONLY at those boundaries so each chunk is
+# one logical scene. Flagship-only (needs a big context window); the local
+# profile keeps chunking.pack_segments' char budget.
 
-_CONSOLIDATION_PROMPT = (
-    "Below is every event extracted from one TTRPG (Daggerheart) session, each as "
-    "'N. <title> — <summary>'. Group entries that describe the SAME narrative moment or "
-    "state change into one group, even if phrased differently (e.g. \"Monster's Last "
-    "Breath\", \"Monster's Final Breath\", and \"Monster's Death and Environment "
-    "Normalization\" are one moment: the monster dying). Keep genuinely distinct events in "
-    "separate, single-member groups — do not over-merge. Every listed title must appear in "
-    "exactly one group's member_titles, spelled EXACTLY as given. For each group, pick the "
-    "clearest canonical_title and write one merged summary.\n\n"
+_SEGMENT_PROMPT = (
+    "Below is one TTRPG (Daggerheart) session transcript, one line per segment as "
+    "'<index>: <speaker>: <text>'. Partition it into consecutive SCENES — a scene is "
+    "one coherent narrative unit (an encounter, a negotiation, a journey leg, a shopping "
+    "stop). Return scenes in order as start_segment/end_segment index ranges that together "
+    "cover EVERY segment exactly once, with no gaps or overlaps: the first scene starts at "
+    "index 0 and each scene's start_segment is the previous end_segment + 1. Prefer fewer, "
+    "larger scenes over many tiny ones — never split a single fight or conversation across "
+    "two scenes. Give each a short title.\n\n"
 )
 
 
-def propose_event_groups(consolidation_extractor, graph: GraphExtraction) -> EventConsolidation:
-    if len(graph.events) < 2:
-        return EventConsolidation(groups=[])
-    listing = "\n".join(f"{i}. {e.title} — {e.summary}" for i, e in enumerate(graph.events, start=1))
+def _segment_listing(segments: list[dict]) -> str:
+    return "\n".join(
+        f"{i}: {s.get('speaker', '')}: {s.get('text', '')}" for i, s in enumerate(segments))
+
+
+def segment_session(segmenter, segments: list[dict]) -> "list":
+    """WP13.1: return ordered SceneBoundary list for the whole session. Falls
+    back to a single all-covering scene if the pre-pass fails or returns nothing
+    (chunking then packs it by budget) — a degraded chunking beats no session."""
+    from .schema import SceneBoundary
+    if not segments:
+        return []
     try:
-        result = consolidation_extractor.invoke(_CONSOLIDATION_PROMPT + listing)
+        result: SceneSegmentation = segmenter.invoke(_SEGMENT_PROMPT + _segment_listing(segments))
     except Exception as exc:
-        log.warning("event consolidation call failed (%s) — keeping events as-is", exc)
-        return EventConsolidation(groups=[])
-    return result or EventConsolidation(groups=[])
-
-
-def _remap_evidence(evidence: dict, title_map: dict[str, str]) -> dict:
-    remapped: dict = {}
-    for (field, key), chunks in evidence.items():
-        if field == "events" and key in title_map:
-            new_key = ("events", title_map[key])
-        elif field == "relationships":
-            subj, pred, obj = key
-            new_key = ("relationships", (title_map.get(subj, subj), pred, title_map.get(obj, obj)))
-        else:
-            new_key = (field, key)
-        remapped[new_key] = sorted(set(remapped.get(new_key, [])) | set(chunks))
-    return remapped
-
-
-def apply_event_consolidation(graph: GraphExtraction, evidence: dict,
-                              consolidation: EventConsolidation) -> None:
-    """Deterministically apply a proposed grouping: rewrite graph.events to one
-    entry per group, rewrite every relationship subject/object referencing an
-    old title, and remap the evidence sidecar — all in place. A title the model
-    didn't cover (schema drift) stays its own singleton (safety net, PLAN.md
-    phase-5 pattern) rather than being silently dropped.
-    """
-    if not consolidation.groups:
-        return
-    known_titles = {e.title for e in graph.events}
-    events_by_title = {e.title: e for e in graph.events}
-    title_map: dict[str, str] = {}
-    new_events: dict[str, Event] = {}
-
-    for group in consolidation.groups:
-        members = [m for m in group.member_titles if m in known_titles]
-        if not members:
-            continue
-        canonical = group.canonical_title.strip() or members[0]
-        member_events = [events_by_title[m] for m in members]
-        participants = sorted({p for e in member_events for p in e.participants})
-        location = next((e.location for e in member_events if e.location), None)
-        summary = group.summary.strip() or "; ".join(
-            e.summary for e in member_events if e.summary)
-        for m in members:
-            title_map[m] = canonical
-        if canonical in new_events:
-            prev = new_events[canonical]
-            prev.participants = sorted(set(prev.participants) | set(participants))
-            prev.location = prev.location or location
-            if summary and summary not in prev.summary:
-                prev.summary = (prev.summary + "; " + summary).strip("; ")
-        else:
-            new_events[canonical] = Event(
-                title=canonical, summary=summary, participants=participants, location=location)
-
-    for title, event in events_by_title.items():  # safety net for model-dropped titles
-        if title not in title_map:
-            title_map[title] = title
-            new_events.setdefault(title, event)
-
-    graph.events = list(new_events.values())
-
-    for r in graph.relationships:
-        r.subject = title_map.get(r.subject, r.subject)
-        r.object = title_map.get(r.object, r.object)
-    seen_rels: set = set()
-    deduped_rels = []
-    for r in graph.relationships:
-        key = (r.subject, r.predicate, r.object)
-        if key in seen_rels:
-            continue
-        seen_rels.add(key)
-        deduped_rels.append(r)
-    graph.relationships = deduped_rels
-
-    if evidence:
-        remapped = _remap_evidence(evidence, title_map)
-        evidence.clear()
-        evidence.update(remapped)
+        log.warning("scene segmentation failed (%s) — falling back to one scene", exc)
+        result = None
+    scenes = (result.scenes if result else None) or [
+        SceneBoundary(start_segment=0, end_segment=len(segments) - 1, label="full session")]
+    return scenes

@@ -9,7 +9,7 @@ import json
 import re
 from pathlib import Path
 
-from .config import CHUNK_OVERLAP, CHUNK_SIZE
+from .config import CHUNK_OVERLAP, CHUNK_SIZE, PASSAGE_OVERLAP, PASSAGE_SIZE, SCENE_TARGET_CHARS
 
 _DATE_RE = re.compile(r"(\d{4}-\d{2}-\d{2})")
 _SPEAKER_RE = re.compile(r"^\s*(?P<player>[^()]+?)\s*\(\s*(?P<character>[^()]+?)\s*\)\s*$")
@@ -50,10 +50,13 @@ def format_turn(seg: dict) -> str:
     # Emit the acting character (or 'GM') as the speaker, never the composite
     # 'Player (Character)' label — the composite string is what made the model
     # coin Tim / Lindo Laut / 'Tim (Lindo Laut)' as three separate entities.
+    # audit_v7pro §8 #3: no inline [MM:SS] timestamp — it carries no extractable
+    # world fact and costs ~8-12% of transcript tokens. Evidence is tracked by
+    # chunk index, never by timestamp; start/end stay in the segment dicts for
+    # pack_segments' silence-gap math.
     player, character, is_gm = parse_speaker(seg["speaker"])
     who = "GM" if is_gm else (character or player)
-    mins, secs = divmod(int(seg["start"]), 60)
-    return f"[{mins:02d}:{secs:02d}] {who}:\n  {seg['text'].strip()}\n\n"
+    return f"{who}:\n  {seg['text'].strip()}\n\n"
 
 
 def pack_segments(segments: list[dict]) -> list[str]:
@@ -102,11 +105,110 @@ def pack_segments(segments: list[dict]) -> list[str]:
     return chunks
 
 
-def load_session(path: Path) -> tuple[list[str], list[tuple[str, str | None, bool]]]:
-    """(chunks, cast) for a single transcript file."""
+def heuristic_segment(segments: list[dict], target_size: int | None = None) -> list:
+    """Deterministic scene segmentation (audit_v7pro §8 #2): cut at the largest
+    silence gap within a char budget, no LLM pass. Replaces the flagship's
+    second full-transcript pass to DeepSeek just for scene boundaries — the same
+    gap heuristic pack_segments uses, but returns contiguous SceneBoundary index
+    ranges (each segment covered exactly once, no overlap — scene_chunks slices
+    them) instead of joined text. Coarse boundaries are acceptable here.
+
+    Targets SCENE_TARGET_CHARS (~1 chunk per scene/event), NOT the CHUNK_SIZE
+    megachunk ceiling — packing to 44000 collapses a 2h session into ~3 giant
+    chunks and, since each chunk yields one macro Event, into ~3 events."""
+    from .schema import SceneBoundary
+    if not segments:
+        return []
+    target = target_size or SCENE_TARGET_CHARS
+    turns = [format_turn(s) for s in segments]
+    n = len(segments)
+    boundaries: list = []
+    start = 0
+    while start < n:
+        end = start
+        size = 0
+        best_break = None  # (gap, last-segment-index-of-scene) within budget
+        while end < n and size + len(turns[end]) <= target:
+            size += len(turns[end])
+            if end + 1 < n and size > target // 2:
+                gap = segments[end + 1]["start"] - segments[end]["end"]
+                if best_break is None or gap > best_break[0]:
+                    best_break = (gap, end)
+            end += 1
+        if end >= n:
+            boundaries.append(SceneBoundary(
+                start_segment=start, end_segment=n - 1, label=f"scene {len(boundaries) + 1}"))
+            break
+        cut = best_break[1] if best_break else end - 1
+        boundaries.append(SceneBoundary(
+            start_segment=start, end_segment=cut, label=f"scene {len(boundaries) + 1}"))
+        start = cut + 1
+    return boundaries
+
+
+def scene_chunks(segments: list[dict], boundaries: list) -> list[str]:
+    """WP13.1: one chunk per scene boundary (docs/evolution/13). Each chunk is
+    the joined turns of that scene's segment span — no size budget, no overlap
+    (a scene is self-contained). Indices are clamped and out-of-order/empty
+    spans skipped, so a sloppy segmentation still yields valid chunks."""
+    turns = [format_turn(s) for s in segments]
+    n = len(turns)
+    chunks: list[str] = []
+    for b in boundaries:
+        lo = max(0, min(b.start_segment, n - 1))
+        hi = max(lo, min(b.end_segment, n - 1))
+        text = "".join(turns[lo:hi + 1])
+        if text.strip():
+            chunks.append(text)
+    return chunks or ["".join(turns)]  # fall back to one chunk if nothing usable
+
+
+def split_passages(text: str, size: int = PASSAGE_SIZE, overlap: int = PASSAGE_OVERLAP) -> list[str]:
+    """WP13.5: split one already-formatted chunk's text into small overlapping
+    passages for embedding granularity. Operates on format_turn's output, not
+    raw segments — turns are delimited by the blank line format_turn appends,
+    so splitting on it never cuts a turn's header from its body. Same
+    greedy-pack idea as pack_segments, simplified (no gap-aware breaking —
+    passage boundaries matter far less than top-level chunk boundaries)."""
+    turns = [t + "\n\n" for t in text.split("\n\n") if t.strip()]
+    if not turns:
+        return [text] if text.strip() else []
+    passages: list[str] = []
+    start = 0
+    n = len(turns)
+    while start < n:
+        end = start
+        cur = 0
+        while end < n and cur + len(turns[end]) <= size:
+            cur += len(turns[end])
+            end += 1
+        if end == start:  # single turn already exceeds size — take it alone
+            end = start + 1
+        passages.append("".join(turns[start:end]))
+        if end >= n:
+            break
+        back = end
+        back_len = 0
+        while back > start + 1 and back_len + len(turns[back - 1]) <= overlap:
+            back -= 1
+            back_len += len(turns[back])
+        start = back if back < end else end
+    return passages
+
+
+def read_segments(path: Path) -> tuple[list[dict], list[tuple[str, str | None, bool]]]:
+    """(segments, cast) for a single transcript file — no chunking. Used by the
+    scene-chunking path (WP13.1); the segmenter needs raw segments."""
     data = json.loads(path.read_text(encoding="utf-8"))
     segments = [s for s in data["segments"] if s["text"].strip()]
-    return pack_segments(segments), session_cast(segments)
+    return segments, session_cast(segments)
+
+
+def load_session(path: Path) -> tuple[list[str], list[tuple[str, str | None, bool]]]:
+    """(char-budget chunks, cast) for a single transcript file — the local
+    profile path. Flagship uses read_segments + scene_chunks instead."""
+    segments, cast = read_segments(path)
+    return pack_segments(segments), cast
 
 
 def ordered_sessions(transcript_dir: Path) -> list[Path]:

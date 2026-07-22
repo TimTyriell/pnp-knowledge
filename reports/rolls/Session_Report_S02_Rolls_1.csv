@@ -1,0 +1,36 @@
+scene,event_type,actor,trait_or_action,outcome,success,result,confidence,node_ref
+S02,Roll,Cookie,Instinct,success_hope,ja,Spuren des Lagers gefunden,mittel,ROLL_S02_01
+S02,Roll,Dodo,Instinct,success_fear,ja,"Gefahr bemerkt, aber Wachsamkeit erhöht",mittel,ROLL_S02_02
+S03,Mechanic,Dodo,Stalwart-Rüstungsstärke,n/a,ja,9 Schaden durch Stalwart blockiert,hoch,MECH_S03_01
+S03,Roll,Esterossa,Angriff (Axt),success_hope,ja,Treffer am Goblin,hoch,ROLL_S03_01
+S03,Roll,Parry,Angriff,crit,ja,Goblin durch kritischen Treffer getötet,hoch,ROLL_S03_02
+S04,Roll,Esterossa,Knowledge,success_hope,ja,Schriftrolle als Naturspraeche-Zauber identifiziert,hoch,ROLL_S04_01
+S05,Mechanic,Dodo,Preparen (+2 Evasion),n/a,ja,Evasion erhöht vor Goblin-Überraschung,hoch,MECH_S05_01
+S05,Roll,Esterossa,Angriff,success_hope,ja,Goblin verwundet,hoch,ROLL_S05_01
+S05,Roll,Parry,Biss-Angriff,success_hope,ja,Goblin am Bein getroffen,hoch,ROLL_S05_02
+S05,Roll,Dodo,Angriff (Kolben),success_hope,ja,Goblin getötet,hoch,ROLL_S05_03
+S06,Mechanic,Esterossa,Clank Kurze Rast = Lange Rast,n/a,ja,volle Erholung trotz Kurzer Rast,hoch,MECH_S06_01
+S06,Mechanic,Gruppe,Preparen (2 Hope),n/a,ja,Gruppe vorbereitet für kommende Szenen,mittel,MECH_S06_02
+S06,Roll,Dodo,Instinct,success_fear,ja,"Gehörnte Gestalt gesichtet, flieht vor Licht",mittel,ROLL_S06_01
+S07,Roll,Lugasch,Sabotage (Steine),success_fear,ja,Steine stürzen auf Dodo,mittel,ROLL_S07_01
+S07,Roll,Cookie,Agility,success_hope,ja,"Dodo gerettet, Cookie erschöpft (Stress markiert)",hoch,ROLL_S07_02
+S07,Roll,Esterossa,Knowledge (+Loreborn),success_hope,ja,Lugasch als Trickster-Gott identifiziert,hoch,ROLL_S07_03
+S08,Roll,Wildschwein,Angriff,fail_fear,nein,Wildschwein verfehlt und betäubt sich selbst am Baum,hoch,ROLL_S08_01
+S08,Roll,Cookie,Naturspraeche,success_hope,ja,Wildschwein beruhigt (nicht gezähmt),hoch,ROLL_S08_02
+S09,Roll,Cookie,Finesse (Stealth),success_hope,ja,unentdeckte Annäherung ans Dorf,mittel,ROLL_S09_01
+S09,Roll,Dodo,Finesse (Stealth),success_hope,ja,Schleichfurz' Siegesrede belauscht,mittel,ROLL_S09_02
+S10,Roll,Dodo,Finesse,success_hope,ja,Goblin-Kind lautlos getötet,hoch,ROLL_S10_01
+S11,Roll,Parry,Ablenkung,success_hope,ja,beide Wächter ins Fass gelockt,hoch,ROLL_S11_01
+S11,Mechanic,Goblin-Wächter,Vergrößerungstrank,n/a,n/a,Goblin vergrößert sich und verliert später einen Arm,hoch,MECH_S11_01
+S11,Roll,Cookie,"tödliches Ziel (+2 Experience)",crit,ja,Goblin-Wächter per Bogenschuss getötet,hoch,ROLL_S11_02
+S11,Roll,Esterossa,Angriff,success_hope,ja,zweiter Wächter in den Sumpf geprügelt und getötet,hoch,ROLL_S11_03
+S12,Mechanic,Dodo,Backstab-Versuch,n/a,nein,"Schleichfurz entkommt knapp per Nebel-Teleport (Ausgang unklar)",niedrig,MECH_S12_01
+S12,Mechanic,Schleichfurz,Teleport (dunkler Nebel),n/a,ja,Schleichfurz entkommt dem Hinterhalt,hoch,MECH_S12_02
+S12,Roll,Schleichfurz,Feuerball,success_fear,ja,schwerer Schaden an Esterossa,hoch,ROLL_S12_01
+S12,Mechanic,Esterossa,Gebetswürfel,n/a,ja,eingehender Schaden negiert,hoch,MECH_S12_03
+S12,Mechanic,Esterossa,Handauflegen,n/a,ja,Selbstheilung um 2,hoch,MECH_S12_04
+S12,Mechanic,Dodo,Unstoppable,n/a,ja,"Resistance, +1 Armor Score, Schadensbonus aktiviert",hoch,MECH_S12_05
+S12,Roll,Leibwache,Angriff (Dolch),fail_fear,nein,von Dodos Resistance abgefangen,hoch,ROLL_S12_02
+S12,Roll,Leibwache,Angriff (Dolch),fail_fear,nein,von Dodos Resistance abgefangen,hoch,ROLL_S12_03
+S12,Roll,Esterossa,Angriff (Tritt),crit,ja,Schleichfurz vom Turm in Sumpfdornen getötet,hoch,ROLL_S12_04
+S12,Roll,Cookie,Angriff (Bogen),success_hope,ja,letzte Leibwache getötet,hoch,ROLL_S12_05

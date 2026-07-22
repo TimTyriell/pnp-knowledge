@@ -1,0 +1,27 @@
+scene,event_type,actor,trait_or_action,outcome,success,result,confidence,node_ref
+S15-1,check,Gruppe,Instinkt-Checks (Nachtwache),durchgefuehrt,true,erste Sichtung vermummter Gestalten,hoch,CHAR_BrabarandGilde_Attentaeter_S15
+S15-3,attack,CHAR_LindoLaut,Backstab,erfolgreich,true,erster Angreifer getoetet,hoch,CHAR_BrabarandGilde_Attentaeter_S15
+S15-5,meta,Goblin-Gott (Chat),gruener Blitz,Buff,true,nicht als In-Fiction-Entitaet modelliert,niedrig,CHAR_Deniz_GM
+S15-5,meta,CHAR_Deniz_GM,blauer Blitz (Dungeon-Master-Blitz),Konter,true,nicht als In-Fiction-Entitaet modelliert,niedrig,CHAR_Deniz_GM
+S15-7,spellcast,CHAR_LindoLaut,Slumber,gewirkt,true,zwei Angreifer eingeschlaefert,hoch,CHAR_BrabarandGilde_Attentaeter_S15
+S15-8,interrogation,CHAR_Celin_Cookie,Verhoer der gefangenen Attentaeter,durchgefuehrt,true,Phiolen mit Gift/Laehmungsmittel/Blendgranate gefunden,hoch,CHAR_BrabarandGilde_Attentaeter_S15
+S15-11,attack,CHAR_Basti_Esterossa,Angriff,erfolgreich,true,zweiter Angreifer getoetet,hoch,CHAR_BrabarandGilde_Attentaeter_S15
+S15-12,spellcast,CHAR_Marco_Dodo,Feueratem,gewirkt,true,zwei Angreifer Richtung Fluss getrieben,hoch,CHAR_BrabarandGilde_Attentaeter_S15
+S15-13,check,CHAR_LindoLaut,Instinkt-Check (kritisch),kritischer Erfolg,true,Brabarand-Gilde-Identifikation und Phiolen-Inhalte bestaetigt,hoch,CHAR_BrabarandGilde_Attentaeter_S15
+S15-15,attack,CHAR_Kenku_Hexenmeister_S15,lila Magie-Bolzen,21 Magieschaden,true,Cookie getroffen,hoch,CHAR_Celin_Cookie
+S15-16,attack,CHAR_Kenku_Hexenmeister_S15,zweiter Bolzen plus Tentakelangriff,0 Stress erreicht,true,Last-Stand-Entscheidung erforderlich,hoch,CHAR_Celin_Cookie
+S15-17,laststand,CHAR_Celin_Cookie,Narbe (Scar) gewaehlt,ueberlebt,true,1 maximal regenerierbarer Hope-Punkt permanent reduziert,hoch,CHAR_Celin_Cookie
+S15-19,event,CHAR_LindoLaut,Amulett beruehrt (widerwillig),Heilkanal aktiviert,true,Cookie stabilisiert,hoch,ITEM_Amulett_HeiligerDuran
+S15-20,event,CHAR_Basti_Esterossa,explodierende Feuerphiole,Angreifer verbrannt,true,,hoch,CHAR_BrabarandGilde_Attentaeter_S15
+S15-26,event,CHAR_Kenku_Hexenmeister_S15,extradimensionale Tasche,Dodo gefangen,true,,hoch,CHAR_Marco_Dodo
+S15-27,spellcast,CHAR_LindoLaut,Reveal,gewirkt,true,Tasche/Blase kurz sichtbar gemacht,hoch,CHAR_Kenku_Hexenmeister_S15
+S15-29,spellcast,CHAR_DragonbornVerstaerkung_S15,Barriere-Bruch (Magierin),erfolgreich,true,Kenku-Barriere durchbrochen,hoch,CHAR_Kenku_Hexenmeister_S15
+S15-30,event,CHAR_Marco_Dodo,unstoppable Wutzustand,zwei Attentaeter in Flammen getoetet / ein dritter schwer verbrannt,true,,hoch,CHAR_BrabarandGilde_Attentaeter_S15
+S15-31,spellcast,CHAR_LindoLaut,musikalischer Zwangstanz (Geige),erfolgreich,true,Kenku bewegungsunfaehig gemacht,hoch,CHAR_Kenku_Hexenmeister_S15
+S15-32,tandem_attack,CHAR_Basti_Esterossa+CHAR_Marco_Dodo,Tandem-Move (Schwert plus Dolch),erfolgreich,true,Kenku-Hexenmeister getoetet,hoch,CHAR_Kenku_Hexenmeister_S15
+S15-34,check,CHAR_Nox,Magische Inventursuche,durchgefuehrt,true,Dolch / Kopfgeldbrief und Ring gefunden,hoch,CHAR_Kenku_Hexenmeister_S15
+S15-37,check,Gruppe,Knowledge-Check (Ring-Identifikation),erfolgreich,true,Teleportation 1x/Kurzrast sehr grosse Reichweite bestaetigt,hoch,ITEM_TeleportRing_S15
+S15-38,event,CHAR_Pyrandras,Goldverteilung,1/5 fuer Stadt einbehalten,true,Rest bleibt bei der Gruppe,hoch,CHAR_Pyrandras
+S15-40,event,CHAR_Nox,Disintegrations-Machtprobe (gezwungen),Macht verliehen,true,Lindo Laut lehnt Anwendung ab,hoch,CHAR_LindoLaut
+S15-45,xp,Gruppe (inkl. fruehzeitig ausgeschiedener Cookie),Sitzungsabschluss,3 XP je aktivem PC,true,keine Level-ups,hoch,CHAR_Deniz_GM
+S15-45,xp,CHAR_Micha_Rotunas,Sitzungsabschluss (abwesend),0 XP,true,,hoch,CHAR_Micha_Rotunas

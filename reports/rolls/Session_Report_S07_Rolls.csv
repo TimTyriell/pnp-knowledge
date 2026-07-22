@@ -1,0 +1,13 @@
+scene,event_type,actor,trait_or_action,outcome,success,result,confidence,node_ref
+S07-1,Mechanic,Lindo Laut,Neue Erfahrung (Schauspielerei),n/a,ja,Charakterentwicklung zwischen den Sitzungen,mittel,MECH_S07-1_01
+S07-3,Roll,Esterossa,Knowledge (History),success_hope,ja,Legende des Heiligen Duran erfahren,hoch,ROLL_S07-3_01
+S07-4,Mechanic,Rotunas,Entdeckung befallener Baum,n/a,ja,Pilzbefall an Baum entdeckt (Anschluss S06),mittel,MECH_S07-4_01
+S07-5,Roll,Rotunas,Agility Save (DC 12),fail,nein,Laehmendes Gift durch Schattenfinger-Klaue erlitten,hoch,ROLL_S07-5_01
+S07-6,Roll,Lindo Laut,Knowledge (Giftidentifikation),success_hope,ja,Gift als hitzeempfindlich identifiziert und geheilt,hoch,ROLL_S07-6_01
+S07-9,Roll,Esterossa,Instinct,success_hope,ja,Entfernter Kampf und Heckenschuetze entdeckt,hoch,ROLL_S07-9_01
+S07-10,Mechanic,Lindo Laut,Adjust Appearance (Eulen-Verwandlung),n/a,ja,Scouting der Kapelle ermoeglicht,hoch,MECH_S07-10_01
+S07-10,Mechanic,GM,Gruener Blitz/Goblin-Goetter-Effekt,n/a,ja,Erneutes unerklaertes Phaenomen,mittel,MECH_S07-10_02
+S07-11,Roll,Gruppe,Agility (Seilbruecken-Balance),success_hope,ja,Gruppe erreicht die Kapelleninsel,hoch,ROLL_S07-11_01
+S07-23,Mechanic,Baran,Gestaltwandler-Enthuellung,n/a,ja,Baran zeigt vogelartige Transformation,hoch,MECH_S07-23_01
+S07-24,Mechanic,Gruppe,Rettung von Ritter und Priesterin,n/a,ja,Ritter und Auranil gerettet,hoch,MECH_S07-24_01
+S07-27,Mechanic,Lindo Laut,Grosses Arcane-Door-Portal (Duran-Amulett),n/a,ja,Gesamte Gruppe entkommt zum Schiff,hoch,MECH_S07-27_01

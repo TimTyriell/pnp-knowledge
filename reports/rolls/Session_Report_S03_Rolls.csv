@@ -1,0 +1,5 @@
+scene,event_type,actor,trait_or_action,outcome,success,result,confidence,node_ref
+S03-8,Roll,Rotunas,Spellcast (Ice Spike),crit,ja,Goblin-Späher schwer getroffen,hoch,ROLL_S03-8_01
+S03-8,Roll,Valerie,Spellcast (Bolt of Magic),success_hope,ja,Goblin-Späher getötet,hoch,ROLL_S03-8_02
+S03-8,Mechanic,Rotunas,Armor Slot (2 verwendet),n/a,ja,"Eingehender Schaden von ~10 auf ~1 reduziert, Stress markiert",hoch,MECH_S03-8_01
+S03-10,Mechanic,Gruppe,Verteidigungsaufbau,n/a,ja,"8 Palisaden, 6 Bärenfallen, Postenverteilung organisiert",mittel,MECH_S03-10_01

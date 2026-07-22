@@ -23,40 +23,53 @@ _SYSTEM = (
 
 
 def _top_k_entities(driver, question: str, k: int) -> list[dict]:
+    """Top-k seeds across BOTH vector indexes — the :Entity skeleton and the
+    :Chunk passage "book" (WP13.5) — merged by cosine score. A Chunk seed pulls
+    its verbatim passage into context; an Entity seed pulls its neighborhood."""
     embedder = OllamaEmbeddings(model=EMBED_MODEL)
     qvec = embedder.embed_query(question)
+    rows: list[dict] = []
     with driver.session() as db:
-        return db.run(
-            "CALL db.index.vector.queryNodes('entity_embedding', $k, $qvec) "
-            "YIELD node, score "
-            "RETURN node.id AS id, node.type AS type, node.name AS name, score",
-            k=k, qvec=qvec,
-        ).data()
+        for index in ("entity_embedding", "chunk_embedding"):
+            rows += db.run(
+                "CALL db.index.vector.queryNodes($index, $k, $qvec) "
+                "YIELD node, score "
+                "RETURN node.id AS id, node.type AS type, node.name AS name, score",
+                index=index, k=k, qvec=qvec,
+            ).data()
+    rows.sort(key=lambda r: r["score"], reverse=True)
+    return rows[:k]
 
 
 def _expand(driver, entity_ids: list[str], as_of_session: int | None) -> dict:
     """1-hop neighborhood of the seed entities: currently-true facts by
     default, or every fact valid as of `as_of_session` (docs/evolution/11).
-    Non-lifecycle edges (events, identity, KNOWN_FOR) are always included —
+    Non-lifecycle edges (events, identity) are always included —
     only state edges are time-filtered."""
     if as_of_session is None:
         edge_filter = "(r.valid_from IS NULL OR r.valid_to IS NULL)"
         params: dict = {}
     else:
+        # Outer parens: this filter is interpolated between surrounding ANDs;
+        # without them the top-level OR would bind against those ANDs.
         edge_filter = (
-            "(r.valid_from IS NULL) OR "
-            "(r.valid_from <= $asof AND (r.valid_to IS NULL OR r.valid_to > $asof))"
+            "((r.valid_from IS NULL) OR "
+            "(r.valid_from <= $asof AND (r.valid_to IS NULL OR r.valid_to > $asof)))"
         )
         params = {"asof": as_of_session}
     with driver.session() as db:
         nodes = db.run(
-            "MATCH (n:Entity) WHERE n.id IN $ids RETURN n.id AS id, n.type AS type, "
-            "n.name AS name, n.status AS status", ids=entity_ids,
+            "MATCH (n) WHERE (n:Entity OR n:Chunk) AND n.id IN $ids "
+            "RETURN n.id AS id, n.type AS type, "
+            "n.name AS name, n.status AS status, n.text AS text", ids=entity_ids,
         ).data()
         edges = db.run(
             # directed pattern (never -[r]-) so an edge between two seed
-            # entities is returned once, not once per traversal direction
-            f"MATCH (a:Entity)-[r]->(b:Entity) WHERE (a.id IN $ids OR b.id IN $ids) "
+            # entities is returned once, not once per traversal direction.
+            # Label-agnostic endpoints so Chunk-[:MENTIONS]->Entity edges (the
+            # passage<->skeleton join, WP13.5) expand alongside skeleton edges.
+            f"MATCH (a)-[r]->(b) WHERE (a:Entity OR a:Chunk) AND (b:Entity OR b:Chunk) "
+            f"AND (a.id IN $ids OR b.id IN $ids) "
             f"AND {edge_filter} AND NOT a.type IN $backbone AND NOT b.type IN $backbone "
             f"RETURN a.id AS a, a.name AS a_name, type(r) AS rel, b.id AS b, "
             f"       b.name AS b_name, r.description AS description, "
@@ -70,6 +83,9 @@ def _expand(driver, entity_ids: list[str], as_of_session: int | None) -> dict:
 def _format_context(ctx: dict) -> str:
     lines = ["Entities:"]
     for n in ctx["nodes"]:
+        if n.get("type") == "Chunk":  # WP13.5: verbatim source text, not the usual name line
+            lines.append(f"  - {n['id']} (source passage): {n.get('text', '').strip()}")
+            continue
         status = f", status={n['status']}" if n.get("status") else ""
         lines.append(f"  - {n['id']} ({n['type']}): {n['name']}{status}")
     lines.append("Facts:")

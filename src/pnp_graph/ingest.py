@@ -5,10 +5,14 @@ import logging
 from datetime import datetime, timezone
 from pathlib import Path
 
-from .chunking import load_session, ordered_sessions, session_id_from_path
-from .config import STATE_DIR, TRANSCRIPT_DIR
+from .adjudicate import adjudicate_session
+from .chunking import (
+    heuristic_segment, ordered_sessions, pack_segments, read_segments, scene_chunks,
+    session_id_from_path,
+)
+from .config import PROVIDER, STATE_DIR, TRANSCRIPT_DIR, USE_LLM_SEGMENTER
 from .embed import embed_entities
-from .extract import apply_event_consolidation, build_extractor, extract_session, propose_event_groups
+from .extract import build_extractor, build_segmenter, extract_session, segment_session
 from .resolve import Resolver, resolve_graph
 from .srd import SrdIndex, preload
 from .store import connect, run_qa, write_session
@@ -33,6 +37,9 @@ def ingest(transcript_dir: Path = TRANSCRIPT_DIR, only: str | None = None) -> No
         return
 
     extractor = build_extractor()
+    # Flagship scene segmentation: deterministic heuristic by default (§8 #2),
+    # LLM segmenter only when USE_LLM_SEGMENTER is set.
+    segmenter = build_segmenter() if (PROVIDER == "deepseek" and USE_LLM_SEGMENTER) else None
     resolver = Resolver()
     srd_index = SrdIndex()
     driver = connect()
@@ -42,28 +49,35 @@ def ingest(transcript_dir: Path = TRANSCRIPT_DIR, only: str | None = None) -> No
             sid = session_id_from_path(path)
             log.info("=== Session %s (seq %d) ===", sid, seq)
             try:
-                chunks, cast = load_session(path)
+                segments, cast = read_segments(path)
+                if PROVIDER == "deepseek":  # flagship: one chunk per semantic scene
+                    boundaries = (segment_session(segmenter, segments) if segmenter is not None
+                                  else heuristic_segment(segments))
+                    chunks = scene_chunks(segments, boundaries)
+                    log.info("Session %s: segmented into %d scenes (%s)", sid, len(chunks),
+                             "LLM" if segmenter is not None else "heuristic")
+                else:                       # local dev: char-budget chunks
+                    chunks = pack_segments(segments)
                 cast_info = resolver.bootstrap_cast(cast)
                 cast_names = [p["name"] for p in cast_info["characters"].values()]
                 graph, evidence = extract_session(extractor, chunks, cast_names,
                                                   srd_index.gazetteer(),
+                                                  known_world=resolver.known_world(),
                                                   fail_dir=STATE_DIR / "failures" / sid)
-                n_events_before = len(graph.events)
-                consolidation = propose_event_groups(extractor[2], graph)
-                apply_event_consolidation(graph, evidence, consolidation)
-                if len(graph.events) != n_events_before:
-                    log.info("Session %s: consolidated %d events -> %d",
-                             sid, n_events_before, len(graph.events))
                 log.info(
                     "Session %s merged total: %d characters, %d locations, %d items, "
-                    "%d quests, %d events, %d factions, %d traits, %d relationships",
+                    "%d quests, %d events, %d factions, %d relationships",
                     sid,
                     len(graph.characters), len(graph.locations), len(graph.items),
                     len(graph.quests), len(graph.events), len(graph.factions),
-                    len(graph.traits), len(graph.relationships),
+                    len(graph.relationships),
                 )
                 resolved = resolve_graph(resolver, graph, sid, cast_info, seq,
-                                         evidence=evidence, srd_index=srd_index)
+                                         evidence=evidence, srd_index=srd_index, chunk_texts=chunks)
+                # LLM identity adjudication (audit v6): settle gray-band /
+                # alias-conflict candidates BEFORE the write, so a merged pair
+                # never reaches Neo4j as two nodes.
+                adjudicate_session(resolver, resolved, sid)
                 write_session(driver, resolved)
                 embed_entities(driver, [e["id"] for e in resolved["entities"]])
                 qa = run_qa(driver)
