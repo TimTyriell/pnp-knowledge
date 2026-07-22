@@ -46,26 +46,17 @@ flowchart LR
 
 All services run on the existing local Windows box. Python + FastAPI throughout; each service keeps its own venv.
 
-### 3.0 Repo layout (decided 2026-07-22)
+### 3.0 Repo layout (revised 2026-07-22, second cut: input / memory / output)
 
-Two repos total. `pnp-crawl` stays standalone. Everything else is maintained and tracked in the **`pnp-graph-service` monorepo** (private, `TimTyriell/pnp-graph-service`):
+Three repos, split by role in the data flow:
 
-```
-pnp-graph-service/
-├── src/pnp_graph/        # existing GraphRAG pipeline (frozen; future derived index)
-├── services/
-│   ├── kb/               # KB service: pnp_okf pipeline + (P2) FastAPI  ← from okf-experiments
-│   ├── fandom/           # wiki agent                                   ← from pnp-fandom-service
-│   └── summary/          # (P2) summary/outlook service
-├── knowledge/            # SYSTEM OF RECORD: OKF bundle + entity_registry.yaml
-│   ├── bundle/splitter_des_ewigen/
-│   ├── conflicts/        # (P1) open cross-source contradictions
-│   └── sources/          # campaign book + (P1) ingested custom docs
-├── reports/              # all 26 session reports + rolls/ CSVs (absorbed from pnp-report)
-└── docs/architecture/    # ADR-001, this document
-```
+| Repo | Role | Contents |
+|---|---|---|
+| `TimTyriell/pnp-crawl` | **input** | transcription/diarization pipeline (unchanged) |
+| `TimTyriell/pnp-graph-service` | **memory** | everything knowledge: `services/kb/` (pnp_okf pipeline + read API), `services/summary/`, `knowledge/` (OKF bundle = system of record + conflicts + sources), `reports/`, `docs/architecture/`, frozen `src/pnp_graph/` |
+| `TimTyriell/pnp-export-data` | **output** | the wiki agent (stages 01–04 + `md2wiki.py`), a pure client of the KB API — holds no knowledge of its own |
 
-Consequences of the single-repo choice: session tags (`s27`) share the repo with code tags — keep code untagged or prefixed (`rel-*`); the `/changes` API and knowledge review diffs are always path-scoped (`-- knowledge/`); knowledge-ingest branches (`ingest/s27`) must touch only `knowledge/`. The standalone folders `pnp-fandom-service/`, `okf-experiments-main/`, `pnp-report/` on disk are now legacy working copies — the monorepo is canonical.
+Memory-repo consequences stay as before: session tags (`s27`) share the repo with code — keep code untagged or prefixed (`rel-*`); the `/changes` API and knowledge review diffs are path-scoped (`-- knowledge/`); knowledge-ingest branches (`ingest/s27`) touch only `knowledge/`. Legacy on-disk folders (`okf-experiments-main/`, `pnp-report/`) are working copies — the repos are canonical.
 
 ### 3.1 KB service — `services/kb/` (absorbs `pnp_okf` pipeline)
 
@@ -73,7 +64,7 @@ Consequences of the single-repo choice: session tags (`s27`) share the repo with
 - **Write model:** every ingest runs on a branch (`ingest/s27`), commits proposed concept edits + `conflicts/` entries, and stops. A human reviews the diff and merges; merge to `main` + session tag = knowledge accepted. **No path writes to `main` directly.** This is the KB's human-in-the-loop gate.
 - **Reads are always from `main`** (or a tag, for as-of).
 
-### 3.2 Wiki agent — `services/fandom/` (extended)
+### 3.2 Wiki agent — repo `pnp-export-data` (the output repo)
 
 One service, **two modules** — not two services. The risk isolation the read/write split is meant to buy comes from the already-built gate (DRY_RUN default-on, `--apply` + env flag, draft namespace) and from credential scope (read needs no bot login), not from a process boundary; two deployables on one box is pure overhead. Revisit only if the read side ever becomes a public/always-on endpoint.
 

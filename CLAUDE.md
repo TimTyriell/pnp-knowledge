@@ -7,7 +7,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 This repo is now the monorepo for the whole knowledge system (everything except `pnp-crawl`). Beyond the original GraphRAG pipeline described below, it hosts:
 
 - **`services/kb/`** — the Knowledge-Base service: the `pnp_okf` OKF-distillation pipeline (Azure OpenAI structured outputs; own `pyproject.toml`, own venv) absorbed from `okf-experiments-main`. Per [ADR-001](docs/architecture/ADR-001-knowledge-layer.md), this — not the Neo4j graph — is the path to the system of record.
-- **`services/fandom/`** — the Fandom/MediaWiki wiki agent (own `requirements.txt` + CLAUDE.md), absorbed from `pnp-fandom-service`.
+- The Fandom/MediaWiki wiki agent moved out to the **`pnp-export-data`** repo (the "output" repo of the input/memory/output three-repo split) — it is a pure client of this repo's KB API.
+- **`services/summary/`** — pre-session recap + ephemeral outlook CLI, grounded in the KB API.
 - **`knowledge/`** — **the system of record**: the OKF campaign bundle (`bundle/splitter_des_ewigen/`), `entity_registry.yaml`, campaign book sources. Knowledge edits arrive via `ingest/s<NN>` branches that touch only `knowledge/`, reviewed as PRs, tagged `s<NN>` per session on merge. Knowledge diffs are path-scoped: `git diff <ref>.. -- knowledge/`.
 - **`reports/`** — now holds *all* session reports (S01–S26+) plus `rolls/` CSVs, absorbed from `pnp-report`.
 - **`docs/architecture/`** — [ADR-001](docs/architecture/ADR-001-knowledge-layer.md) (OKF-in-git over GraphRAG as system of record) and [ARCHITECTURE.md](docs/architecture/ARCHITECTURE.md) (target services, APIs, HITL gates, roadmap). Read these before working on `services/*` or `knowledge/`.
