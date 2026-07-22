@@ -1,0 +1,28 @@
+Szene,Zeitstempel,Spieler,Charakter,Wurf-Typ,Modifikator,Ergebnis_Gesamt,DC_oder_Kontext,Erfolg,Notiz
+S18-2,00:10:48,Marco,Dodo,Knowledge (mit Hope),+?,hoch (impliziert),Atmosphären-Wahrnehmung,Ja,Spürt Stille und Beobachtet-werden-Gefühl nach Holzpfahl-Grenze
+S18-3,00:11:54,Tim,Lindo Laut,Knowledge,+?,10,Atmosphären-Wahrnehmung,Teilerfolg,Verspürt Bedrückung; vergleicht mit Hexen-Dungeon
+S18-3,00:12:19,Katha,Nyrella,Instinct (Vorteil + Hope + Altes Zirkuspferd),+?,20,Umgebungswahrnehmung,Ja,Glimpst etwas hinter Gestrüpp das sofort verschwindet
+S18-5,00:16:38,Basti,Esterossa,Knowledge Reaction vs. Astralgestalt,+?,13,offen,Nein,Fühlt sich krank; stürzt ab (6 Wunden)
+S18-5,00:18:57,Celin,Cookie,Heilwurf (Erste Hilfe + Hope),+?,Krit,Esterossa 2 HP,Krit,Esterossa wieder auf 3 HP; kein Bruch (Schnee gefedert)
+S18-7,00:13:59,Tim,Lindo Laut,Spellcast (Unsichtbarkeit) Versuch 1,+?,9,Magie-Verzehr-Umgebung,Nein,Fehlschlag + 1 Stress; Magie kostet mehr als normal
+S18-7,00:15:03,Tim,Lindo Laut,Spellcast (Unsichtbarkeit) via Lack-Bänder Reroll,+?,12,offen,Ja,Erfolg; 3 Hope Kosten; Esterossa unsichtbar
+S18-8,00:16:38,Basti,Esterossa,Knowledge (Astralfigur-Typ),+?,13,offen,Teilerfolg,Erkennt astrale Projektion; weiß dass Geister Unsichtbare sehen können
+S18-9,00:39:52,Tim,Lindo Laut,Instinct (Whisper belauschen),+?,15,DC impliziert ~12,Ja,Hört Camp-Flüstern 'Lass gut sein / versuchen wir'
+S18-10,00:40:52,Katha,Nyrella,Instinct (Mimik) im Nachteil + Hope,+?,15,DC 14,Ja,Sieht Hendriks kurzes Lächeln; erkennt echte Emotionen hinter Maske
+S18-11,01:03:26,Marco,Dodo,Presence (Crescence Roll vs. Hendrik),+?,16,offen,Ja,Zieht Hendriks Fokus auf sich; Ghul-Angriffe müssen gegen Dodo im Nachteil erfolgen
+S18-12,01:03:09,Marco,Dodo,Instinct (Geräusche),+?,17,offen,Ja,Hört Geräusche in unmittelbarer Nähe; warnt die Gruppe
+S18-13,01:04:26,Basti,Esterossa,Agility Reaction Roll (Ghul-Hinterhalt),+?,13,Ghul-Angriff,Ja,Weicht aus; beide Ghule springen (Nachteil) daneben
+S18-14,01:05:54,Marco,Dodo,Agility Reaction Roll (Ghul-Hinterhalt),+?,Erfolg,Ghul-Angriff,Ja,Sure-Footed Goblin; weicht aus
+S18-15,00:00:00,Tim,Lindo Laut,Agility Reaction Roll (Ghul-Hinterhalt),+?,Erfolg,Ghul-Angriff,Ja,Weicht aus
+S18-16,01:06:51,Celin,Cookie,Agility Reaction Roll (Ghul-Hinterhalt),+?,11,Ghul-Angriff DC impliziert ~12,Nein,Getroffen; Perry wirft sich dazwischen
+S18-16,01:08:00,Celin,Perry (Begleiter),Angriff (Giftstachel) Krit-Reaktion,+?,Krit,Ghul vor Cookie,Krit,10 Schaden an Ghul; Perry rettet Cookie
+S18-17,01:10:27,Tim,Lindo Laut,Spellcast (Firewall) Versuch 1,+?,Fehlschlag,offen,Nein,Fehlschlag; Lack-Bänder genutzt
+S18-17,01:11:17,Tim,Lindo Laut,Spellcast (Firewall) Lack-Bänder Reroll,+?,Erfolg,offen,Ja,Feuerwand am Höhlenausgang; 3 Hope Kosten
+S18-18,01:13:02,Katha,Nyrella,Stärke (Ghul-Wurf ins Feuer),+?,21,Ghul-Verteidigung,Ja,Ghul sofort im Feuer verbrannt; Feuer tötet Bergghule effektiv
+S18-19,01:14:38,Celin,Cookie,Eisranken (Zauber-Angriff),+?,10,Ghule,Nein,Eisranken zu langsam; Ghule weichen aus
+S18-19,01:15:41,Katha,Nyrella,Eisranken Reroll (Frostkind +2),+?,hoch,alle 4 Ghule,Ja,Alle 4 Ghule fixiert + 5 physischer Schaden (1d8+1)
+S18-22,01:39:46,Basti,Esterossa,Presence (imposantes Auftreten + Experience + Hope),+?,17,Nomaden-Camp,Teilerfolg,Wirkt imposant aber stolpert; Hendriks Frau enthüllt 'Wir sind hier für Seirat'
+S18-24,01:28:50,Tim,Lindo Laut,Knowledge (Alten Gott einschätzen),+?,13,offen,Teilerfolg,Glaubt nicht an physisch präsenten alten Gott; eher Hendrik mit starker Verbindung
+S18-25,01:52:43,Marco,Dodo,Knowledge Reaction (Brücken-Seelenraub),+?,12,DC impliziert ~15,Nein,4 Stress-Punkte; Hoffnungslosigkeit; geheilt durch Esterossa + Lindo Laut 2x Inspirational Words
+S18-25,01:54:50,Celin,Cookie,Knowledge Reaction (Brücken-Seelenraub),+?,mittel,DC impliziert ~15,Teilerfolg,Spürt etwas / schüttelt es ab; kein Stress
+S18-26,01:55:31,Katha,Nyrella,Knowledge Reaction im Vorteil (Nyruk),+?,mittel,DC impliziert ~15,Teilerfolg,Spürt Sog; hält stand dank Nyruk-Verbindung

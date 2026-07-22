@@ -1,0 +1,13 @@
+scene,event_type,actor,trait_or_action,outcome,success,result,confidence,node_ref
+S06-1,Mechanic,Gilde,Missionsauswahl (Voras-Briefing),n/a,ja,Diplomatie- und Attentatsoption vorgestellt,hoch,MECH_S06-1_01
+S06-5,Mechanic,GM,Gruener Blitz prallt vom Schiff ab,n/a,ja,Komoedische Erzaehl-Einlage (3. Auftreten),mittel,MECH_S06-5_01
+S06-8,Roll,Rotunas,Knowledge (Gegenstaende reparieren),success_hope,ja,Buch getrocknet und lesbar gemacht,hoch,ROLL_S06-8_01
+S06-11,Roll,Esterossa,Presence (Bestechung/Einschuechterung),success_hope,ja,Einlass gewaehrt,hoch,ROLL_S06-11_01
+S06-13,Roll,Cookie,Finesse (Schleichen),success_hope,ja,Unbemerkt Essen stibitzt,hoch,ROLL_S06-13_01
+S06-16,Mechanic,Anton Großwurz,Einschlafzauber (Handgeste),n/a,ja,Aggressor eingeschlaefert,mittel,MECH_S06-16_01
+S06-17,Roll,Esterossa,Presence (Bezahlung fuer Infos),success_hope,ja,Infos zu Gulrak und Baran erhalten,hoch,ROLL_S06-17_01
+S06-19,Roll,Rotunas,Knowledge (Stadt-Ruinen-Hypothese),fail,nein,Hypothese widerlegt: keine Ruinen unter der Stadt,hoch,ROLL_S06-19_01
+S06-23,Roll,Esterossa,Strength (Tritt),fail,nein,Tritt verfehlt Gulrak flieht,hoch,ROLL_S06-23_01
+S06-24,Roll,Cookie,Froschzunge-Grapple (Stress),success_hope,ja,Gulrak zurueckgeholt und beschaedigt,hoch,ROLL_S06-24_01
+S06-25,Roll,Rotunas,Finesse/Spellcast (Runic Lock Stealth),success_hope,ja,Zelle erneut magisch versiegelt,hoch,ROLL_S06-25_01
+S06-29,Roll,Cookie,Naturverbindung (W12),crit,ja,Unerklaerte Vision einer Pilzlichtung mit Holztor,hoch,ROLL_S06-29_01

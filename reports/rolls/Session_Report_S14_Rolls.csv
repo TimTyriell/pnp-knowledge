@@ -1,0 +1,27 @@
+scene,event_type,actor,trait_or_action,outcome,success,result,confidence,node_ref
+S14-6,check,CHAR_LindoLaut,Knowledge-Check (Naehe-Theorie),9+4,true,Theorie plausibel bestaetigt,hoch,CHAR_LindoLaut
+S14-10,check,CHAR_Marco_Dodo,Instinct-Wurf (Speer untersuchen),misslungen,false,keine zusaetzliche Info,hoch,ITEM_Lanze_Nerash
+S14-10,spellcast,CHAR_Marco_Dodo,Reveal,gewirkt,true,enthuellt rote Geisterketten,hoch,ITEM_Lanze_Nerash
+S14-13,spellcast,CHAR_Benjamin_Valeria,Magie bannen (Feuervariante) im Nachteil,Endwurf 17,true,Ketten zerschmelzen,hoch,ITEM_Lanze_Nerash
+S14-14,event,CHAR_Celin_Cookie,Speer beruehrt,geisterhafte Erscheinung ausgeloest,true,,hoch,ITEM_Lanze_Nerash
+S14-14,stress,CHAR_Celin_Cookie,Erschrecken,1 Stresspunkt,true,,hoch,CHAR_Celin_Cookie
+S14-17,check,CHAR_LindoLaut,Instinct-Check (Sog-Kontrolle),bestanden,true,Hope-Punkte aller PCs zurueckerhalten,hoch,CHAR_LindoLaut
+S14-19,roleplay,CHAR_LindoLaut+CHAR_Celin_Cookie,emotionaler Moment,GM-Belohnung,true,je 1 Hope-Punkt,hoch,CHAR_LindoLaut
+S14-19,stress,CHAR_Celin_Cookie,Unwohlsein-Aeusserung,1 Stresspunkt,true,,hoch,CHAR_Celin_Cookie
+S14-24,check,CHAR_Basti_Esterossa,Knowledge-Check Nerash (Doppelvorteil),Endwurf 20 (+1 Knowledge),true,Nerash als Pantheon-Gottheit erkannt,hoch,CHAR_Nerash
+S14-26,event,CHAR_Basti_Esterossa,Kerze ausgepustet,Barriere geloest,true,Kreatur erscheint,hoch,CHAR_KolMeref
+S14-29,check,CHAR_LindoLaut,Instinkt-Wurf (untere Statue),durchgefuehrt,true,Kaeltegefuehl bestaetigt,mittel,CHAR_KolMeref
+S14-29,check,CHAR_Basti_Esterossa,Instinkt-Wurf (untere Statue),11,true,Kaeltegefuehl bestaetigt,mittel,CHAR_KolMeref
+S14-29,tandem_check,CHAR_Basti_Esterossa+CHAR_Benjamin_Valeria,Tandem-Knowledge-Check (3 Hope von Lindo Laut gespendet),durchgefuehrt,true,Opferaltar-Hintergrund enthuellt,hoch,CHAR_KolMeref
+S14-31,stress,CHAR_LindoLaut,Begegnung mit gefesselter Kreatur,2 Stresspunkte,true,,hoch,CHAR_Nerash
+S14-31,stress,Gruppe,Begegnung mit gefesselter Kreatur,je 1 Stresspunkt,true,,hoch,CHAR_Nerash
+S14-32,spellcast,CHAR_LindoLaut,Reveal (Mundkette),gewirkt,true,Mundkette identifiziert,hoch,CHAR_Nerash
+S14-35,check,CHAR_LindoLaut,Instinkt-Check (Blick deuten) plus1,16,true,kein Ergebnis durch Maske verdeckt,mittel,CHAR_Nerash
+S14-35,event,CHAR_Basti_Esterossa,Mundkette durchtrennt,erfolgreich,true,Nerash teilweise befreit; roter Strahl aus Lindo Lauts Brust,hoch,CHAR_Nerash
+S14-38,event,CHAR_Basti_Esterossa,weitere Ketten durchtrennt,erfolgreich,true,rote Blitze in untere Statue,hoch,CHAR_Nerash
+S14-40,event,CHAR_Basti_Esterossa,letzte Kette durchtrennt,erfolgreich,true,Nerash vollstaendig befreit,hoch,CHAR_Nerash
+S14-40,event,CHAR_Nerash,Schutzaktion,erfolgreich,true,Gruppe vor dunkler Energie geschuetzt,hoch,CHAR_Nerash
+S14-42,event,CHAR_Nerash,finaler Schwerthieb gegen Kol Meref,erfolgreich,true,Explosion, Statue vernichtet,hoch,CHAR_KolMeref
+S14-43,stress,CHAR_LindoLaut,emotionale Zerrissenheit,1 Stresspunkt,true,,hoch,CHAR_LindoLaut
+S14-47,xp,Gruppe (ausser Rotunas),Sitzungsabschluss,3 XP je PC,true,Tim 17/Marco 20/Benjamin 8/Celin 16/Basti 15,hoch,CHAR_Deniz_GM
+S14-47,xp,CHAR_Micha_Rotunas,Sitzungsabschluss (abwesend),0 XP,true,,hoch,CHAR_Micha_Rotunas

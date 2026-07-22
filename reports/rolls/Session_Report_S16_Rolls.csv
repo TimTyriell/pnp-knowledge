@@ -1,0 +1,21 @@
+Szene,Zeitstempel,Spieler,Charakter,Wurf-Typ,Modifikator,Ergebnis_Gesamt,DC_oder_Kontext,Erfolg,Notiz
+S16-6,00:20:47,Katha,Nyrella,Knowledge (Instinct),+?,17,offen,Ja,Kuatau werden von Okkultem angezogen; Wissen aus Studium
+S16-7,00:16:08,Tim,Lindo Laut,Instinct,+?,niedrig (Fehlschlag),offen,Nein,Prüft ob Aslaina weiß warum Kuatau angreifen — sie weiß es wirklich nicht
+S16-12,00:37:04,Micha,Rotunas,Angriff (Ice Spike Javelin) im Vorteil,+?,15,Kuatau am Dock,Ja,Sofort erledigt; im Vorteil weil Kuatau nichts mitbekam
+S16-12,00:39:00,Micha,Rotunas,Angriff (Ice Spike Regen),+?,Erfolg,Kuatau am Dock,Ja,Zweiter Kuatau eliminiert; im Vorteil
+S16-13,00:40:14,Katha,Nyruk,Angriff (mit Hope) auf fliehenden Kuatau,+?,Fehlschlag,fliehender Kuatau,Nein,Kuatau springt zurück und flieht; Hope ausgegeben aber kein Treffer
+S16-13,00:41:38,Basti,Esterossa,Angriff (Blitz) auf fliehenden Kuatau,+?,12,fliehender Kuatau,Ja,Kuatau qualmend getötet
+S16-15,00:45:49,Tim,Lindo Laut,Presence (Rallye-Ansprache),+?,sehr hoch (Erfolg),DC offen,Ja,Dorfbewohner formieren sich mit Gebrüll; Performance-Ansprache
+S16-16,00:46:48,Celin,Cookie,Angriff (Bogen),+3 Proficiency,12 / Schaden 11,Kuatau Angreifer,Ja,Treffer; Pfeil bleibt stecken; Kuatau blutet lila
+S16-17,00:50:04,Katha,Nyruk,Angriff auf Kuatau,Nyrellas Werte,7,Kuatau im Gebüsch,Nein,Kuatau zu wendig; Nyruk wird im Gegenzug gestochen (10 Schaden)
+S16-18,00:52:06,Basti,Esterossa,Angriff (Herabstürzen auf Kuatau),+4,8 gesamt,Kuatau bei Cookie,Ja,Kuatau in zwei Teile geteilt; danach von Kuatau-Magier getroffen (15 Magieschaden)
+S16-19,00:54:14,Tim,Lindo Laut,Agility Reaction Roll (Netz),+?,Erfolg (>16),DC 16,Ja,Weicht Kuatau-Netz aus
+S16-19,00:54:27,Celin,Cookie,Agility Reaction Roll (Netz),+?,17,DC 16,Ja,Springt zur Seite; Netz trifft den Boden
+S16-20,00:55:58,Tim,Lindo Laut,Performance (Heartbreaking Song Violine) im Vorteil,+?,Erfolg,alle Allies in Range,Ja,Alle Allies erhalten einen Hope-Punkt
+S16-21,00:57:00,Katha,Nyrella,Vicious Entangle (Zauber-Wurf) + Hope,+?,Erfolg,Kuatau-Magier + zweites Ziel,Ja,D8+1 = 4 Schaden; beide Ziele gefangen; Hope für zweites Ziel ausgegeben
+S16-22,01:00:20,Micha,Rotunas,Stärke/Angriff (Hulk-Smash) im Vorteil,+?,sehr hoch (Erfolg),Kuatau-Magier (entangled),Ja,Kuatau-Magier in den Boden gematscht; restliche Einheiten demoralisiert
+S16-24,01:09:33,alle,alle PCs,Instinct (Gruppen-Check),+?,Basti:21/Tim:16/Celin:18/Micha:12,offen,Teilerfolg,Nur Esterossa (21) hört Kuatau-Horn aus dem Nebel
+S16-25,01:11:40,Micha,Rotunas,Stärke+Agility (Verhör / Greifen),+?,Krit,Gefangener Kuatau,Krit,Versehentlich Genick gebrochen; Krit-Erfolg führt zu ungewolltem Ausgang
+S16-26,01:14:13,Celin,Cookie,Instinct/Natur (Kuatau-Sprache) im Vorteil,+?,Erfolg,Kuatau-Kommunikation,Ja,Versteht: Kuatau wollen einfach nach Hause; wollten nie böse sein
+S16-27,01:18:45,Tim,Lindo Laut,Presence (Einschüchterung Aslaina),+?,16 gesamt,Aslaina,Ja,Aslaina eingeschüchtert; Nyrella gibt 1 Hope für +W6 (Unterstützung)
+S16-37,01:50:35,Micha,Rotunas,Knowledge (Kuatau von Hack-Verrat überzeugen),+?,20,Kuatau-Anfuehrer,Ja,Anführer versteht: Hack/Hexe ist Feind; "Hex/ nichts gut"

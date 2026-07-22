@@ -1,0 +1,30 @@
+Szene,Zeitstempel,Spieler,Charakter,Wurf-Typ,Modifikator,Ergebnis_Gesamt,DC_oder_Kontext,Erfolg,Notiz
+S22-2,00:14:30,Micha,Rotunas,Angriff (Ice Bike),—,10,—,Ja,Fuesse des Skeletts; Skelett faellt; gruener Blitz beschwört neues
+S22-2,00:17:00,Basti,Esterossa,Angriff,—,19 to hit / 17 Schaden,—,Ja,Solider Treffer auf Torwächter-Skelett
+S22-2,00:18:00,Marco,Dodo,Angriff,—,16 Schaden,—,Ja,Skelette stecken es weg (zaeh)
+S22-2,00:19:00,Katha,Nyrella,Angriff (Pfeil),—,11 Schaden,—,Teilweise,Skelett steht noch
+S22-2,00:20:30,Basti,Esterossa,Reaction (Armor Slot),—,—,—,—,4 Schaden absorbiert durch Armor Slot
+S22-2,00:21:00,Marco,Dodo,Reaction-Stärke (Schild-Freeze),—,8,—,Nein,Fehlschlag; Stresspunkt ausgegeben
+S22-2,00:22:00,Micha,Rotunas,Angriff (Wild Flame modifiziert),Nachteil+Vorteil,20,—,Ja (Krit-Treffer),Feuerringe; Skelett schreit und zerfaellt zu Asche; +1 Stress fuer Rotunas
+S22-2,00:24:00,Marco,Dodo,Angriff (Feueratem),—,10,—,Ja (niedrig),Zwei Skelette zu Asche; dritte Reihe noch aktiv
+S22-2,00:25:00,Micha,Rotunas,Angriff (Feuerball),—,22 to hit / 31 Feuerschaden,—,Ja,Zwei Skelette sofort; zwei weitere brennen
+S22-2,00:27:00,Marco,Dodo,Angriff (Streitkolben mit Hope),—,21 to hit / 38 Schaden,—,Ja,Letztes Skelett zersplittert; Kampf beendet
+S22-4,00:52:00,Marco,Dodo,Agility (Initiative),—,—,—,Ja,Dodo handelt vor gepanzertem Ritter
+S22-4,00:53:00,Marco,Dodo,Angriff (Doppelschlag),—,35 / 13 Schaden,—,Ja,Erster Schlag massiv; zweiter trifft anderen Ruestungsabschnitt
+S22-4,00:55:00,Basti,Esterossa,Angriff (Dodo auf Dach),—,36 Schaden (20+12+4),—,Ja,Ritter vernichtet (Minecraft Bone Meal)
+S22-5,01:06:00,Marco,Dodo,Reaction-Agility (Speer 1),—,11,—,Nein,20 physischer Schaden (Armor Slot)
+S22-5,01:07:00,Micha,Rotunas,Reaction-Stärke (Speer-Deflect),—,—,Hohe DC,Nein,20 physischer Schaden (3 HP markiert)
+S22-5,01:09:00,Katha,Nyrella,Reaction-Agility (Speer 3 / Nachteil),—,16,—,Teilweise,Streifschuss; nur 10 Schaden an Rotunas
+S22-5,01:12:00,Micha,Rotunas,Arcane Door,—,3,—,Nein,Misserfolg; Tuer schliesst sich
+S22-5,01:13:00,Marco,Dodo,Angriff (Minotaurus / Hope),—,36 Schaden,—,Ja,Minotaurus zu Asche
+S22-8,01:48:00,Micha/Basti,Rotunas+Esterossa,Wissen (gemeinsam),—,20,—,Ja,Steinbachtal: ~100-200 Einwohner; Prinz Bran; Belorus der Stille
+S22-8,01:55:00,Basti,Esterossa,Performance (Beten fuer Prinz Bran),—,—,—,Ja,Brandoran tief beruehrt; klopft Schulter
+S22-9,02:18:00,Micha,Rotunas,Wissen (Siegel lesen),—,13,—,Nein,Erkennt Zwergenschrift; kann sie nicht lesen
+S22-9,02:22:00,Basti,Esterossa,History (Passwort-Recherche),—,22,—,Ja,Mit Luck-Band Re-Roll von Nyrella; Zwergenwort fuer Ehre+Staerke
+S22-11,02:51:00,Micha,Rotunas,Angriff (Eis auf Pentagramm),—,17 Schaden,Magische Barriere,Nein (Rückfeuer),17 magischer Schaden an Rotunas als Rückfeuer
+S22-11,02:53:00,Marco,Dodo,Angriff (Feuer auf Pentagramm),—,16 to hit,Magische Barriere,Nein (Rückfeuer),19 magischer Schaden an Dodo als Rückfeuer
+S22-12,03:02:00,Katha,Nyrella,Fähigkeit (Vicious Entangle),—,—,—,Ja,Nachhut abgesichert; +2 Joker vom GM (gesamt 3)
+S22-12,03:04:00,Micha,Rotunas,Agility (Flucht),—,—,Leicht,Ja,Problemlos entkommen
+S22-12,03:05:00,Marco,Dodo,Angriff (Feuerwelle vs. General),—,23 to hit,+4 Verteidigung,Ja,General zurueckgedraengt; +1 Joker gewonnen
+S22-12,03:07:00,Marco,Dodo,Agility (Flucht),—,—,DC 14,Nein,Dodo bleibt stecken
+S22-12,03:08:00,Micha,Rotunas,Stärke (Magische Hand / Dodo retten),—,—,DC 10,Ja,Dodo aus Engstelle befreit; alle entkommen

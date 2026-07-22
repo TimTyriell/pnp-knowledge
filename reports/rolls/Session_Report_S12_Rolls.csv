@@ -1,0 +1,25 @@
+scene,event_type,actor,trait_or_action,outcome,success,result,confidence,node_ref
+S12-2,combat,Gruppe,Kampf gegen letzten Wasserling,Wasserling besiegt,true,,hoch,CHAR_Wasserling_Rest
+S12-7,spellcast,CHAR_Micha_Rotunas,Tavos Armor (W6),Cookie erhaelt temporaeren Armor-Bonus,true,,hoch,MECH_TavosArmor_Cast
+S12-12,attack_roll,CHAR_Marco_Dodo,Power Push gegen Goblin,natuerliche 4 im Nahkampfbereich; Goblin-Sonderfaehigkeit ausgeloest,true,nat. 4,hoch,MECH_Goblin4Trigger_Dodo_1
+S12-13,knowledge_check,Gruppe,Wissens-Check zu Goblin-Regeneration,Regenerationsfaehigkeit enthuellt,true,,hoch,
+S12-14,spellcast,CHAR_LindoLaut,Feuerball gegen beide Goblins,beide Goblins besiegt,true,,hoch,CHAR_Goblins_Pilzbefall_Kollektiv
+S12-15,skill_roll,CHAR_Marco_Dodo,Feuerbreath-Probe,natuerliche 4 im Nahkampfbereich; Goblin-Sonderfaehigkeit erneut ausgeloest,true,nat. 4,hoch,MECH_Goblin4Trigger_Dodo_2
+S12-16,feature_activation,CHAR_Celin_Cookie,Verstaerkte Unsichtbarkeit (max. 3 Aktionen),Scouting durchgefuehrt,true,,hoch,
+S12-22,ritual_roll,CHAR_LindoLaut,Teleportationsritual (Hope + W12),Feuerfalle umgangen,true,Erfolg,hoch,ROLL_LindoLaut_Teleport_Feuerfalle
+S12-24,proximity_damage,CHAR_Micha_Rotunas,HP-Verlust durch Naehe (Seelen-Webs),HP verloren,true,,hoch,MECH_Naeheverlust_SeelenWebs_1
+S12-25,proximity_damage,Gruppe,HP-Verlust durch Naehe (Seelen-Webs, 1. gruppenweit),HP verloren,true,,hoch,MECH_Naeheverlust_SeelenWebs_Gruppenweit
+S12-26,proximity_damage,Gruppe,HP-Verlust durch Naehe (Seelen-Webs, 2. gruppenweit),HP verloren,true,,hoch,MECH_Naeheverlust_SeelenWebs_Gruppenweit
+S12-27,proximity_damage,Gruppe,HP-Verlust durch Naehe (Seelen-Webs, 3. gruppenweit),HP verloren,true,,hoch,MECH_Naeheverlust_SeelenWebs_Gruppenweit
+S12-28,social_check,CHAR_LindoLaut,Performance/Presence-Check,zieht Aufmerksamkeit der Schaedel-Geister,true,18,hoch,ROLL_Lindo_Performance_SchaedelGeister
+S12-30,prayer,CHAR_Marco_Dodo,Gebet zu CHAR_Schlangengott_Avatar,persoenliche spirituelle Verbindung bekraeftigt,true,,mittel,
+S12-32,rescue,Gruppe,Befreiung des gebundenen Geistes Luli,Luli gerettet,true,,hoch,CHAR_Luli
+S12-34,companion_loss,CHAR_Celin_Cookie,Pilz-Begleiter entwischt,von Raubtier gefressen,false,,hoch,CHAR_Pilz_Begleiter
+S12-36,treasure_roll,Gruppe (zwei Spieler),W20 Schatzsuche (doppelt),Seelenstein gefunden,true,14 / 14,hoch,ITEM_Seelenstein
+S12-37,discovery,CHAR_Marco_Dodo,Fund des schwarzen Steins,Stein gefunden, Warnung erhalten,true,,hoch,ITEM_SchwarzerStein_Palantirartig
+S12-39,eavesdrop,Gruppe,Belauschtes Gespraech der Hack,Erwaehnung von "dem Grafen",true,,hoch,CHAR_Graf_Erwaehnung
+S12-40,mystery_event,CHAR_Unbekannte_Figur_Brunnen,Betreten des Brunnenkonstrukts,spontane Verbrennung/Zerfall,true,,niedrig,CHAR_Unbekannte_Figur_Brunnen
+S12-42,enemy_action,CHAR_Hack_Hexe,Aufloesung der Eiswand,Rotunas' Verteidigung aufgehoben,true,,hoch,
+S12-43,enemy_action,CHAR_Hack_Hexe,Violetter Todesstrahl,Gruppe getroffen,true,,hoch,
+S12-44,ritual_roll,CHAR_LindoLaut,Klimaktische Notfall-Teleportation (Hope + W12),Gruppe entkommt zum Dungeon-Eingang,true,Erfolg,hoch,ROLL_LindoLaut_Teleport_Notfall
+S12-45,quest_resolution,CHAR_Hack_Hexe,Entkommen nach Konfrontation,Mission Teil 3/3 nicht erfolgreich abgeschlossen,false,,hoch,QUEST_Hack_Lager_Suche

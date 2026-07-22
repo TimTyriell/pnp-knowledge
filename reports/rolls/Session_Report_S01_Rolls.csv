@@ -1,0 +1,13 @@
+scene,event_type,actor,trait_or_action,outcome,success,result,confidence,node_ref
+S04,Roll,Cookie (Celin),Instinct,success,ja,Lagerplatz fluchtartig verlassen erkannt,mittel,
+S04,Roll,Lindo Laut (Tim),Instinct,success,ja,Beobachtende Praesenz im Sueden erkannt,mittel,
+S05,Roll,Cookie (Celin),Knowledge,success_hope,ja,Formel entziffert; +1 Hope,mittel,ROLL_S05_Knowledge
+S05,Roll,Dodo (Marco),Strength,success,ja,Kessel auf freie Flaeche platziert,mittel,
+S06,Feature,Lindo Laut (Tim),Rally,n/a,n/a,Je 1 d6 Rally-Wuerfel an alle Verbuendeten,hoch,
+S06,Roll,Dodo (Marco),Agility/Breitschwert (Atk),success_fear,ja,1 Tentakel abgeschlagen,mittel,ROLL_S06_Guardian_Atk
+S06,Mechanic,Lindo Laut (Tim),Song (Condition),n/a,n/a,Monster erhaelt Vulnerable,mittel,MECH_S06_Vulnerable
+S06,Reaction,Dodo (Marco),I Am Your Shield,n/a,n/a,1 Stress markiert; Schaden 3 HP -> 1 HP (Strength+Armor),mittel,MECH_S06_Shield
+S06,Roll,Cookie (Celin),Agility/Shortbow+Vorteil (Atk),success,ja,Crit-harte Treffer (~26/20),mittel,
+S06,Feature,Lindo Laut (Tim),Inspiring Words,n/a,n/a,Dodo +1 HP geheilt,hoch,
+S06,Roll,Cookie (Celin),Agility/Shortbow+Vorteil (Atk),success,ja,Finishing Blow - Monster besiegt,mittel,ROLL_S06_Ranger_Finish
+S07,Roll,Cookie (Celin),Presence,success,ja,Erkenntnis "Haustier"; Botschaft am Tentakel gefunden,mittel,

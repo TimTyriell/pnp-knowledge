@@ -1,0 +1,18 @@
+scene,event_type,actor,trait_or_action,outcome,success,result,confidence,node_ref
+S04-5,Roll,Lindo Laut,Spellcast (Power Push) + Reroll,success_hope,ja,Bugbear getötet,hoch,ROLL_S04-5_01
+S04-5,Roll,Esterossa,Spellcast (Bolt Beacon),crit,ja,Bugbear sofort getötet,hoch,ROLL_S04-5_02
+S04-5,Roll,Cookie,Fernkampfangriff,success_hope,ja,Vergrößerter Bugbear getötet,mittel,ROLL_S04-5_03
+S04-6,Roll,Esterossa,Knowledge (History),success_hope,ja,Statue mit böser Gottheit verbunden,hoch,ROLL_S04-6_01
+S04-7,Roll,Dodo,Agility Save (DC 12),fail,nein,Feuerschaden erlitten,hoch,ROLL_S04-7_01
+S04-8,Roll,Dodo,Knowledge,fail,nein,Beschwörungsmagie an Rüstung erkannt,mittel,ROLL_S04-8_01
+S04-9,Mechanic,Rotunas,Wahrnehmung (Geheimtür),n/a,ja,Schatzraum entdeckt,hoch,MECH_S04-9_01
+S04-10,Roll,Esterossa,Winged Sentinel (1 Stress),success_hope,ja,Skelett getötet,hoch,ROLL_S04-10_01
+S04-10,Roll,Cookie,Spellcast (Wurzel/Ranken),success_hope,ja,Skelett-Bogenschütze getötet,hoch,ROLL_S04-10_02
+S04-10,Roll,Lindo Laut,Spellcast (Ice Spikes),success_hope,ja,Skelett getötet,hoch,ROLL_S04-10_03
+S04-10,Roll,Rotunas,Strength (Nahkampf),success_hope,ja,Skelett per Kopftreffer getötet,hoch,ROLL_S04-10_04
+S04-10,Roll,Esterossa,Nahkampfangriff,success_hope,ja,Letztes Skelett vernichtet,hoch,ROLL_S04-10_05
+S04-11,Mechanic,Esterossa,Mending Touch (Selbstheilung 2),n/a,ja,2 HP geheilt,hoch,MECH_S04-11_01
+S04-11,Roll,Lindo Laut,Instinct,crit,ja,Magiewellen-Trap erkannt,hoch,ROLL_S04-11_01
+S04-12,Roll,Dodo,Presence (Einschüchtern),fail,nein,Schrumpf-Fluch durch Hexe,hoch,ROLL_S04-12_01
+S04-13,Roll,Lindo Laut,Presence (Lied, mit Vorteil),success_hope,ja,Altar glüht/Ziel vulnerable,hoch,ROLL_S04-13_01
+S04-13,Roll,Cookie,Voodoopuppe + Pfeil,fail,nein,Backfire: 4 Schaden an Cookie,hoch,ROLL_S04-13_02

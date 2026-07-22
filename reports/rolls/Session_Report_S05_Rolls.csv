@@ -1,0 +1,18 @@
+scene,event_type,actor,trait_or_action,outcome,success,result,confidence,node_ref
+S05-2,Roll,Lindo Laut,Instinct,success_hope,ja,Bedrohung frueh erkannt,hoch,ROLL_S05-2_01
+S05-3,Mechanic,Lindo Laut,Rally-Lied (Once-per-Session),n/a,ja,Rally-Die fuer Gruppe,hoch,MECH_S05-3_01
+S05-4,Roll,Goblin-Welle,Fernkampfangriff (Pfeile),success,ja,"Esterossa erleidet 3/10/9 Schaden (Wuerfe 13/20/21)",hoch,ROLL_S05-4_01
+S05-5,Roll,Goblin-Welle,Fernkampfangriff (Felsbrocken),success,ja,Lindo Laut erleidet 10 Schaden (Wurf 14 vs Evasion 13),hoch,ROLL_S05-5_01
+S05-6,Roll,Lindo Laut,Spellcast/Presence (Illusionslied),success_hope,ja,Ziel wird vulnerable,hoch,ROLL_S05-6_01
+S05-7,Mechanic,Valerie,Nomadenbeutel-Trick (Once-per-Session),n/a,ja,Item aus Beutel gezogen,hoch,MECH_S05-7_01
+S05-8,Roll,Esterossa,Winged Sentinel (Haupt+Bonus),success_hope,ja,Zwei Gegner getoetet,hoch,ROLL_S05-8_01
+S05-9,Mechanic,Gruppe,Dorf-vs-Monster Massenschlacht,n/a,ja,Mehrrundiger abstrahierter Kampf,hoch,MECH_S05-9_01
+S05-10,Mechanic,Blitz-Goblin,Baerenfalle (S03-Vorbereitung),n/a,ja,Blitz-gebuffter Goblin stirbt,hoch,MECH_S05-10_01
+S05-11,Roll,Valerie,Spellcast (Wild Flame),success_hope,ja,Mehrere Goblins in Reihe getoetet,hoch,ROLL_S05-11_01
+S05-12,Roll,Rotunas,Spellcast (Power Push),fail,nein,Angriff gegen Oger schlaegt fehl,hoch,ROLL_S05-12_01
+S05-13,Roll,Rotunas,Strength (Experience: Boxing),success_hope,ja,Oger restrained,hoch,ROLL_S05-13_01
+S05-14,Roll,Valerie,Angriff (Ziel vulnerable),success_hope,ja,Oger getoetet,hoch,ROLL_S05-14_01
+S05-16,Mechanic,Esterossa,Mending Touch (Heilung 2),n/a,ja,Zweiter Bauer gerettet,hoch,MECH_S05-16_01
+S05-17,Roll,Dodo,Nahkampfangriff + Compliment-Feature,success_hope,ja,Weitere Goblins getoetet,hoch,ROLL_S05-17_01
+S05-26,Roll,Leandras,Knowledge (Namensbuch),success_hope,ja,Identitaet der Sarkophage bestaetigt,hoch,ROLL_S05-26_01
+S05-27,Mechanic,Gruppe,Team-Staerke-Check (inneres Tor),n/a,ja,Inneres Tor aufgebrochen,hoch,MECH_S05-27_01

@@ -1,0 +1,18 @@
+Szene,Zeitstempel,Spieler,Charakter,Wurf-Typ,Modifikator,Ergebnis_Gesamt,DC_oder_Kontext,Erfolg,Notiz
+2,00:18,Basti,Esterossa,Stärke (Überzeugen),Hope + Imposantes Auftreten,14,Lilly/Sukkubus beeindrucken,Ja,Volle Hoffnung; Lilly beeindruckt und neugierig
+2,00:46,Basti,Esterossa,Instinkt (Beobachten),–,k.A.,Tiefling-Dame einschätzen,Teilweise,Prüfender Blick erkannt; Dame schätzt Gruppe ein; Misstrauen gegenüber Nyrella
+3,01:05,Micha,Rotunas,Überzeugen,–,10,Roland zum Aufbruch überreden (1. Versuch),Nein,Roland überzeugt nicht; verlangt Sicherheitsgarantien
+3,01:23,Micha,Rotunas,Überzeugen,–,14,Roland über persönliche Gefahr informieren (2. Versuch),Ja,Roland willigt ein; bricht zum Banditenlager auf
+4,01:29,Micha,Rotunas,Zaubern (Mage Hand),–,18,Halborg-Kopf an Boden schlagen,Ja,Kritisch; Halborg verliert HG; beide Begleiter ziehen Waffen
+4,01:31,Micha,Rotunas,Überzeugen,Nachteil,18,Sich als Wache Breskvas ausgeben,Teilweise,Hoher Wurf trotz Nachteil; Argument nicht geglaubt / Halbork bleibt aggressiv
+4,01:32,Basti,Esterossa,Überzeugen,Vorteil + Imposantes Auftreten,k.A.,Halborks beruhigen und Aufmerksamkeit lenken,Ja,Waffen werden kurz weggesteckt; Gruppen-Deeskalation
+4,01:35,Micha,Rotunas,Stärke (Nahkampf),–,k.A.,Halbork schlagen (Experience Boxen),Nein,Schlägt daneben; Halbork kontert mit Schwerthieb; Rotunas zu Boden
+5,01:46,Marco,Dodo,Instinkt,–,9,Hinterhalt wahrnehmen,Teilweise,Kein Alarm; Hinterhalt teilweise erfolgreich
+5,01:46,Micha,Rotunas,Instinkt,–,11,Hinterhalt wahrnehmen,Teilweise,Kein Alarm rechtzeitig
+5,01:46,Basti,Esterossa,Instinkt,–,14,Hinterhalt wahrnehmen,Ja,Beste Wahrnehmung der Runde; zu spät für Prävention
+5,01:46,Katha,Nyrella,Instinkt,Hope statt Fear,8,Hinterhalt wahrnehmen,Teilweise,Feature eingesetzt (Hope); trotzdem kein Alarm
+5,01:48,Dunkelelf,(NSC),Angriff,–,14,Rotunas von hinten anstechen,Ja,Treffer; vergiftete Klinge
+5,01:49,Micha,Rotunas,Zaubern (Power Push),Nachteil,k.A.,Dunkelelf im Rauch treffen,Nein,Schlägt ins Leere; Rauch zu dicht
+5,01:49,Katha,Nairuk (Begleiter),Angriff,–,k.A.,Dunkelelf greifen,Nein,Greift ins Leere
+5,01:50,Marco,Dodo,Instinkt,Nachteil,k.A.,Im Rauch Geräusche orten,Teilweise,Hört entfernende Schritte; keine genaue Richtung
+5,01:51,Basti,Esterossa,Zaubern (Thunderbolt),–,Krit20 (Doppel-12),Dunkelelf außer Gefecht setzen,Kritisch,Dramatischer Krit; beide Beine des Dunkelelf kauterisiert

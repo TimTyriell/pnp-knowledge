@@ -1,0 +1,14 @@
+Szene,Zeitstempel,Spieler,Charakter,Wurf-Typ,Modifikator,Ergebnis_Gesamt,DC_oder_Kontext,Erfolg,Notiz
+S19-3,00:16,Tim,Lindo Laut,Reaction Agility,Vorteil (kleiner Körper),nicht genannt,Greifversuch Riese (14),ja,Flutscht aus Riesenhand; kein Druck möglich
+S19-3,00:20,Basti,Esterossa,Reaction Agility,–,nicht genannt,Greifversuch Riese (14),ja,Keule schwingt knapp vorbei; rechtzeitiger Rückzug
+S19-4,00:22,Katha,Nyrella,Vicious Entangle (Spell),Nachteil + Experience Frostkind (Hope),12,Zweiköpfiger Riese (groß),teilweise,Riese festgehalten aber verdutzt/ nicht außer Gefecht
+S19-5,00:26,Tim,Lindo Laut,Performance,Vorteil (rechter Kopf dumm),14,Einschüchterung Riese,ja,Beide Köpfe erschreckt; rechter sehr verängstigt; Eis reißt auf
+S19-10,00:47,Tim,Lindo Laut,Instinct,–,nicht genannt,Konsistenz der Brunnenflüssigkeit,ja,Extrem dickflüssig/ nicht Blut; kein Blutbewegungsmuster
+S19-12,00:55,Katha,Nyrella,Agility,–,17,Herz aus Lindos Rachen ziehen,nein,Nichts Greifbares im Mundbereich; nur Film/Belag
+S19-13,00:57,Basti,Esterossa,Knowledge,–,24,Wissen über Herzprüfung/Ritual,nein,Keine einschlägigen Kenntnisse
+S19-15,01:06,alle,alle,Stärke,–,verschieden,Vereiste Treppe,entfällt,Lindo Laut wirkt Arcane Door; Checks unnötig
+S19-16,01:07,Celin,Cookie,Stärke,Nachteil (Froschgestalt),unzureichend,Spiritueller Sog im Steintor,nein,1 Stress; spirituelles Ziehgefühl nach oben
+S19-16,01:07,Katha,Nyrella,Stärke,–,21,Spiritueller Sog im Steintor,ja,Kein Stress; unbeeindruckt
+S19-16,01:13,Basti,Esterossa,Stärke,–,16,Spiritueller Sog im Steintor,ja,Kein Stress
+S19-18,01:12,Celin,Cookie,Stärke,–,unzureichend,Tunnel-Aufstieg (DC 25),nein,2. Stressverlust; spirituell geschwächt
+S19-19,01:19,Marco,Dodo,Instinct,–,nicht genannt,Codewort-Einschätzung Kultisten,ja,Erkennt: kennt Codewort nicht; antwortet nicht

@@ -1,0 +1,26 @@
+Szene,Zeitstempel,Spieler,Charakter,Wurf-Typ,Modifikator,Ergebnis_Gesamt,DC_oder_Kontext,Erfolg,Notiz
+1,00:04,Katha,Nyrella,Instinkt,–,11,Gnolls Tinktur einschätzen,Teilweise,Einige Kräuter erkannt; kein sicheres Bild; keine Alarmzeichen
+1,00:04,Marco,Dodo,Instinkt,–,k.A.,Gnolls Hütte inspizieren,Nein,Hütte völlig fremd; kein Erkenntnisgewinn
+1,00:05,Basti,Esterossa,Wissen (History),Hauptpunkt eingesetzt,k.A.,Dokumente in Gnolls Hütte lesen,Ja,Steckbrief auf den Gnoll entdeckt; 4 Hände Kopfgeld
+2,00:27,Katha,Nyrella,Finesse,Vorteil (Nacht),16,Banditenlager lautlos auskundschaften,Ja,Gut versteckt; Festung vollständig überblickt
+2,00:27,Celin,Cookie,Finesse,Vorteil (Nacht),14,Banditenlager lautlos auskundschaften,Ja,Festung überblickt; Schwachstellen ausgemacht
+3,00:37,Micha,Rotunas,Stärke,Vorteil (Bergkenntnis),13,Bergpfad über der Festung traversieren,Ja,Graziöses Klettern; gelegentlich bröckelt Stein
+3,00:39,Katha,Nyrella,Agility,Vorteil (fliegt),Krit,Stein bröckelt – schnell verbergen,Kritisch,Kritisch! Nyrella unsichtbar hinter Felswand
+3,00:39,Micha,Rotunas,Finesse,–,k.A.,Stein bröckelt – schnell verbergen,Ja,Beide unentdeckt; Wachen wenden Blick schnell ab
+4,01:13,Tim,Lindo Laut,Wissen (Knowledge),–,12,Harl einschätzen / Preisverhandlung,Teilweise,Nicht ganz sicher; kann Maximalbetrag (8 Säcke) schätzen
+4,01:26,Tim,Lindo Laut,Performance,Nachteil,k.A.,Karawane mit Musik beruhigen,Teilweise,Leichte Beruhigung trotz Nachteil; Nyrella unterstützt (Freeborn-Fähigkeit)
+5,01:29,Katha,Nyrella,Agility,–,24,Skelett vom dritten Wagen schießen (DC 12),Kritisch,Wagen gerettet! Präziser Bogenschuss eliminiert Skelett
+5,01:32,Marco,Dodo,Angriff (Feueratem),Vorteil (Untote ignorieren Dodo),k.A.,3 Untote verbrennen,Ja,3 Untote versengt; Chat-Boost: Stärke verdoppelt
+5,01:34,Katha,Nyrella,Vicious Entangle,–,26,2 Untote im Nahkampf vernichten,Kritisch,Eisranken zerreißen 2 Untote in Stücke
+5,01:40,Celin,Cookie,Vicious Entangle,–,k.A.,2 Untote vernichten,Ja,2 Untote durch Wurzelranken zerrissen
+5,01:41,Celin,Cookie,Angriff (Heilige Pfeile),Chat-Boost einmalig,20-25,2 weitere Untote vernichten,Ja,Magischer Pfeil teilt sich; 2 Untote durchlöchert
+5,01:46,Micha,Rotunas,Zaubern (Feuerball),Vorteil (großes Zielfeld),22,Gesamte erste Horde vernichten,Ja,Aufgeladener Großfeuerball; atompilzartige Explosion; gesamte Horde vernichtet
+5,01:36,Basti,Esterossa,Reaction-Agility,–,14,Pfeilhagel der Skelett-Bogenschützen,Ja,Schild vorgehalten; Pfeile abgewehrt
+5,01:36,Katha,Nairuk,Reaction-Agility,–,17,Pfeilhagel der Skelett-Bogenschützen,Ja,Nairuk dodgt trotz massivem Körper
+5,01:57,Micha,Rotunas,Reaction-Agility,–,k.A.,Pfeilhagel auf Bergpfad,Nein,Stolpert auf Fels; Hagel trifft → 2 HP Schaden
+5,01:44,Celin,Cookie,Agility (Akrobatik),Hope + Hauptpunkt,25,Pfeilhagel ausweichen,Kritisch,Episches Flick-Flack hinter Baum; alle Pfeile verfehlen
+5,01:54,Katha,Nyrella,Zaubern (Spellcasting),–,16,Withermind angreifen (1. Versuch),Nein,Schwert des Withermind blockt; kein Schaden
+5,01:55,Katha,Nyrella,Zaubern (Spellcasting),Lackbänder (Tim / 3 Hope),21,Withermind angreifen (2. Versuch),Ja,Treffer! 9 magischer Schaden; Withermind unbeeindruckt
+5,01:51,Basti,Esterossa,Reaction-Knowledge,–,12,Wissens-Welle des Withermind (DC ca. 20),Nein,Kraft versagt; 1 HP Schaden
+5,01:51,Celin,Cookie,Reaction-Knowledge,–,14,Wissens-Welle des Withermind,Nein,Knapp; leichter Schaden (absorbiert/kein HP verloren)
+5,01:51,Marco,Dodo,Reaction-Knowledge,–,21,Wissens-Welle des Withermind,Ja,Widersteht; kein HP-Verlust

@@ -1,0 +1,23 @@
+scene,event_type,actor,trait_or_action,outcome,success,result,confidence,node_ref
+S09-14,RollEvent,CHAR_Celin_Cookie,Agility (Shortbow),success_low_impact,true,kaum Schaden,hoch,ROLL_S09-14_01
+S09-15,RollEvent,CHAR_Basti_Esterossa,Spellcast (Blitz),success_hope,true,2d8+2 (10) Magieschaden; 2 Skelette getoetet,hoch,ROLL_S09-15_01
+S09-16,RollEvent,CHAR_Daemon_Rift,Hellfire (AoE Feuer),hit,true,14 Schaden -> 9 nach Prey Dice,hoch,ROLL_S09-16_01
+S09-16,RollEvent,CHAR_Basti_Esterossa,Agility Reaction,fail,false,13 gewuerfelt,hoch,ROLL_S09-16_01
+S09-19,RollEvent,CHAR_Celin_Cookie,Spellcast (Glowing Rings/Entangle),success_hope,true,Daemon verstrickt,hoch,ROLL_S09-19_01
+S09-20,RollEvent,CHAR_Daemon_Rift,Hellfire (AoE Feuer),hit,true,23 Feuerschaden,hoch,ROLL_S09-20_01
+S09-21,RollEvent,CHAR_Celin_Cookie,Spellcast (Glowing Rings/Windsturm),success_hope,true,Skelett dekapitiert,hoch,ROLL_S09-21_01
+S09-22,RollEvent,CHAR_Daemon_Rift,Ranged Rueckangriff,fail,false,Angriff verfehlt,mittel,ROLL_S09-23_01
+S09-23,RollEvent,CHAR_LindoLaut,Presence (Rap-Diss-Song),success_hope,true,Daemon wuetend/sichtbar,hoch,ROLL_S09-23_01
+S09-24,RollEvent,CHAR_Basti_Esterossa,Melee (Magieaxt + Fearless + Winged Sentinel),success,true,Skelett vollstaendig zerfallen,hoch,ROLL_S09-24_01
+S09-25,RollEvent,CHAR_Daemon_Rift,Melee (Axt) Angriff 1,hit,true,17 zum Treffen; 11 Schaden auf Esterossa,hoch,ROLL_S09-25_01
+S09-25,RollEvent,CHAR_Daemon_Rift,Melee (Axt) Angriff 2,hit,true,11 Schaden abgefangen von Dodo,hoch,ROLL_S09-25_01
+S09-26,RollEvent,GROUP_Skelette_Rift,Ranged (Bogen),crit,true,15 zum Treffen; 15 physischer Schaden,hoch,ROLL_S09-26_01
+S09-27,RollEvent,CHAR_Daemon_Rift,Bewegung via Fear-Punkt + Angriff,hit,true,7 physischer Schaden auf Dodo,hoch,MECH_S09-27_01
+S09-28,RollEvent,CHAR_LindoLaut,Spellcast (Arcane Barrage),success,true,8d6 = 29 Magieschaden,hoch,ROLL_S09-28_01
+S09-30,RollEvent,CHAR_Marco_Dodo,Strength Reaction,success,true,Position gehalten,hoch,ROLL_S09-30_01
+S09-30,RollEvent,CHAR_Daemon_Rift,Melee (Axt) mit Reaper Reaction,hit,true,16 physischer Schaden auf Dodo,hoch,ROLL_S09-30_01
+S09-30,RollEvent,CHAR_Daemon_Rift,Melee Angriff auf Lindo Laut,fail,false,16 zum Treffen verfehlt; von Dodo abgefangen,hoch,ROLL_S09-30_01
+S09-30,RollEvent,GROUP_Skelette_Rift,Ranged (Bogen),hit,true,8 physischer Schaden auf Dodo,hoch,ROLL_S09-30_01
+S09-31,RollEvent,CHAR_LindoLaut,Inspiring Words,success,true,1 HP Heilung auf Dodo,hoch,
+S09-32,RollEvent,CHAR_Celin_Cookie,Agility (Shortbow),success_hope,true,5+3=8 Schaden; Daemon getoetet,hoch,ROLL_S09-32_01
+S09-34,RollEvent,CHAR_LindoLaut,Knowledge (mit Hope),fail_crit,false,keine zusaetzlichen Informationen,hoch,ROLL_S09-34_01
