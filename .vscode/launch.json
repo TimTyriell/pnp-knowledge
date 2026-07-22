@@ -33,8 +33,8 @@
       "python": "${workspaceFolder}/.venv/Scripts/python.exe",
       "module": "pnp_graph.cli",
       "args": ["ingest", "--only", "${input:sessionId}"],
-      "cwd": "${workspaceFolder}",
-      "env": { "PYTHONPATH": "${workspaceFolder}/src" },
+      "cwd": "${workspaceFolder}/graph",
+      "env": { "PYTHONPATH": "${workspaceFolder}/graph/src" },
       "envFile": "${workspaceFolder}/.env",
       "console": "integratedTerminal",
       "justMyCode": false
@@ -46,8 +46,8 @@
       "python": "${workspaceFolder}/.venv/Scripts/python.exe",
       "module": "pnp_graph.cli",
       "args": ["ingest"],
-      "cwd": "${workspaceFolder}",
-      "env": { "PYTHONPATH": "${workspaceFolder}/src" },
+      "cwd": "${workspaceFolder}/graph",
+      "env": { "PYTHONPATH": "${workspaceFolder}/graph/src" },
       "envFile": "${workspaceFolder}/.env",
       "console": "integratedTerminal",
       "justMyCode": false
@@ -59,8 +59,8 @@
       "python": "${workspaceFolder}/.venv/Scripts/python.exe",
       "module": "pnp_graph.cli",
       "args": ["ingest", "--only", "${input:sessionId}"],
-      "cwd": "${workspaceFolder}",
-      "env": { "PYTHONPATH": "${workspaceFolder}/src", "PNP_PROFILE": "flagship", "DEEPSEEK_MODEL": "deepseek-v4-flash" },
+      "cwd": "${workspaceFolder}/graph",
+      "env": { "PYTHONPATH": "${workspaceFolder}/graph/src", "PNP_PROFILE": "flagship", "DEEPSEEK_MODEL": "deepseek-v4-flash" },
       "envFile": "${workspaceFolder}/.env",
       "console": "integratedTerminal",
       "justMyCode": false
@@ -72,8 +72,8 @@
       "python": "${workspaceFolder}/.venv/Scripts/python.exe",
       "module": "pnp_graph.cli",
       "args": ["ingest"],
-      "cwd": "${workspaceFolder}",
-      "env": { "PYTHONPATH": "${workspaceFolder}/src", "PNP_PROFILE": "flagship", "DEEPSEEK_MODEL": "deepseek-v4-flash" },
+      "cwd": "${workspaceFolder}/graph",
+      "env": { "PYTHONPATH": "${workspaceFolder}/graph/src", "PNP_PROFILE": "flagship", "DEEPSEEK_MODEL": "deepseek-v4-flash" },
       "envFile": "${workspaceFolder}/.env",
       "console": "integratedTerminal",
       "justMyCode": false
@@ -85,8 +85,8 @@
       "python": "${workspaceFolder}/.venv/Scripts/python.exe",
       "module": "pnp_graph.cli",
       "args": ["ingest", "--only", "${input:sessionId}"],
-      "cwd": "${workspaceFolder}",
-      "env": { "PYTHONPATH": "${workspaceFolder}/src", "PNP_PROFILE": "flagship", "DEEPSEEK_MODEL": "deepseek-v4-pro" },
+      "cwd": "${workspaceFolder}/graph",
+      "env": { "PYTHONPATH": "${workspaceFolder}/graph/src", "PNP_PROFILE": "flagship", "DEEPSEEK_MODEL": "deepseek-v4-pro" },
       "envFile": "${workspaceFolder}/.env",
       "console": "integratedTerminal",
       "justMyCode": false
@@ -98,8 +98,8 @@
       "python": "${workspaceFolder}/.venv/Scripts/python.exe",
       "module": "pnp_graph.cli",
       "args": ["ingest"],
-      "cwd": "${workspaceFolder}",
-      "env": { "PYTHONPATH": "${workspaceFolder}/src", "PNP_PROFILE": "flagship", "DEEPSEEK_MODEL": "deepseek-v4-pro" },
+      "cwd": "${workspaceFolder}/graph",
+      "env": { "PYTHONPATH": "${workspaceFolder}/graph/src", "PNP_PROFILE": "flagship", "DEEPSEEK_MODEL": "deepseek-v4-pro" },
       "envFile": "${workspaceFolder}/.env",
       "console": "integratedTerminal",
       "justMyCode": false
@@ -109,9 +109,9 @@
       "type": "debugpy",
       "request": "launch",
       "python": "${workspaceFolder}/.venv/Scripts/python.exe",
-      "program": "${workspaceFolder}/export_graph.py",
+      "program": "${workspaceFolder}/graph/export_graph.py",
       "args": ["${input:exportOutput}", "--uri", "${input:exportUri}"],
-      "cwd": "${workspaceFolder}",
+      "cwd": "${workspaceFolder}/graph",
       "console": "integratedTerminal",
       "justMyCode": false
     }

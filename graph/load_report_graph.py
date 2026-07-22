@@ -11,8 +11,11 @@ import re
 import sys
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parents[1]
-SRC = REPO_ROOT / "src"
+# This script lives in graph/; the package is graph/src, the report data is the
+# shared top-level reports/ (one level above graph/).
+GRAPH_DIR = Path(__file__).resolve().parent
+REPO_ROOT = GRAPH_DIR.parent
+SRC = GRAPH_DIR / "src"
 sys.path.insert(0, str(SRC))
 
 from neo4j import GraphDatabase  # noqa: E402
@@ -21,7 +24,7 @@ from pnp_graph.chunking import session_id_from_path  # noqa: E402
 from pnp_graph.store import sanitize_predicate  # noqa: E402
 
 REPORT_NEO4J_URL = os.environ.get("REPORT_NEO4J_URL", "bolt://localhost:7689")
-DEFAULT_REPORT = Path(__file__).resolve().parent / "Session_Report_S01_2025-03-26.md"
+DEFAULT_REPORT = REPO_ROOT / "reports" / "Session_Report_S01_2025-03-26.md"
 
 _JSON_FENCE_RE = re.compile(r"```json\s*(\{.*?\})\s*```", re.DOTALL)
 

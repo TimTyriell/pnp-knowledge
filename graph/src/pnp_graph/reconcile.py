@@ -26,11 +26,16 @@ _SKIP_TYPES = {"Session"}  # structural, ids are scheme-specific by design
 
 
 def _find_report(session_id: str) -> Path:
-    for base in (REPO_ROOT, REPO_ROOT / "reports"):
+    # REPO_ROOT is graph/ (the frozen pipeline's root); session reports are the
+    # shared top-level reports/, i.e. one level above graph/.
+    bases = (REPO_ROOT, REPO_ROOT / "reports", REPO_ROOT.parent / "reports")
+    for base in bases:
         hits = sorted(base.glob(f"Session_Report_*_{session_id}.md"))
         if hits:
             return hits[0]
-    raise FileNotFoundError(f"no Session_Report_*_{session_id}.md in {REPO_ROOT} or reports/")
+    raise FileNotFoundError(
+        f"no Session_Report_*_{session_id}.md in {', '.join(str(b) for b in bases)}"
+    )
 
 
 def _report_graph(session_id: str) -> dict:

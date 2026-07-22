@@ -53,7 +53,7 @@ Three repos, split by role in the data flow:
 | Repo | Role | Contents |
 |---|---|---|
 | `TimTyriell/pnp-crawl` | **input** | transcription/diarization pipeline (unchanged) |
-| `TimTyriell/pnp-graph-service` | **memory** | everything knowledge: `services/kb/` (pnp_okf pipeline + read API), `services/summary/`, `knowledge/` (OKF bundle = system of record + conflicts + sources), `reports/`, `docs/architecture/`, frozen `src/pnp_graph/` |
+| `TimTyriell/pnp-knowledge` (renamed from `pnp-graph-service`, ADR-002) | **memory** | everything knowledge: `services/kb/` (pnp_okf pipeline + read API), `services/summary/`, `knowledge/` (OKF bundle = system of record + conflicts + sources), `reports/`, `docs/architecture/`, and the **frozen** GraphRAG under `graph/` |
 | `TimTyriell/pnp-export-data` | **output** | the wiki agent (stages 01–04 + `md2wiki.py`), a pure client of the KB API — holds no knowledge of its own |
 
 Memory-repo consequences stay as before: session tags (`s27`) share the repo with code — keep code untagged or prefixed (`rel-*`); the `/changes` API and knowledge review diffs are path-scoped (`-- knowledge/`); knowledge-ingest branches (`ingest/s27`) touch only `knowledge/`. Legacy on-disk folders (`okf-experiments-main/`, `pnp-report/`) are working copies — the repos are canonical.

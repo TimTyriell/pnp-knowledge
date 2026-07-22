@@ -9,7 +9,7 @@ Distill Pen & Paper actual-play transcripts into an [Open Knowledge Format (OKF)
 See [ARCHITECTURE.md](ARCHITECTURE.md) for the full pipeline diagram.
 
 Since the 2026-07-22 monorepo move this lives in
-`pnp-graph-service/services/kb`; the canonical bundle is
+`pnp-knowledge/services/kb`; the canonical bundle is
 `../../knowledge/bundle/splitter_des_ewigen` and the system-level docs are in
 `../../docs/architecture/`. A **read-only HTTP API** over the bundle ships as
 `python -m pnp_okf.api` (127.0.0.1:8070): `/concepts` (typed-ID or path

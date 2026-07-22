@@ -1,9 +1,11 @@
 __pycache__/
 *.py[cod]
 .venv/
-state/
 .env
 .pytest_cache/
-compare/out/
-docs/data_export/**
-transcripts/**
+
+# Frozen GraphRAG runtime/generated data (now under graph/)
+graph/state/
+graph/transcripts/**
+graph/compare/out/
+graph/docs/data_export/**
