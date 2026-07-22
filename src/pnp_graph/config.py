@@ -303,3 +303,17 @@ GENERIC_PLACE_TERMS = frozenset({
     "tuer", "dach", "treppe", "treppen", "nebel", "blume", "blumen", "kisten",
     "kiste", "boden", "natur", "nature", "bruecke", "wasser", "statue",
 })
+
+# Generic-role backstop for the is_named_character gate (audit_v8pro D11): a bare
+# common-noun role ('der Bauer' -> 'bauer', 'das Kind' -> 'kind') is stage-dressing,
+# not a stable individual, so it earns no Character node even when the model sets
+# is_named_character=True. Matched against the WHOLE normalized name
+# (resolve.is_generic_role), NOT substrings — so a real named NPC that merely
+# contains a role word ('Bauer Grimm', 'König Zebros', 'Das gerettete Mädchen')
+# survives. Distinct from GENERIC_MOB_TERMS, which is a substring match for combat
+# fodder; role nouns MUST stay whole-name to avoid nuking named NPCs.
+GENERIC_ROLE_TERMS = frozenset({
+    "bauer", "wirt", "wirtin", "schmied", "kerl", "dame", "herr", "mann", "frau",
+    "junge", "maedchen", "kind", "alte", "alter", "fremde", "fremder", "koenig",
+    "koenigin", "wirt", "gast", "gaeste", "leute", "menge",
+})

@@ -148,6 +148,19 @@ def _write_graph(db, resolved: dict) -> None:
             create_props=create_props, match_props=match_props,
         )
 
+    # is_pc derived deterministically from PLAYS (audit_v8pro D10): a Character is
+    # a PC iff a Player plays it. Runs AFTER edges so PLAYS exists; order- and
+    # session-independent, so a later session that mentions a PC as a plain NPC
+    # can no longer downgrade is_pc. Scoped to this session's characters so the
+    # per-session write stays bounded.
+    char_ids = [e["id"] for e in resolved["entities"] if e["type"] == "Character"]
+    if char_ids:
+        db.run(
+            "MATCH (c:Entity) WHERE c.id IN $ids "
+            "SET c.is_pc = exists((:Entity {type:'Player'})-[:PLAYS]->(c))",
+            ids=char_ids,
+        )
+
 
 def write_session(driver, resolved: dict) -> None:
     """Write one session's resolved graph in a single atomic transaction."""
@@ -218,12 +231,30 @@ _QA_QUERIES = {
         "MATCH ()-[r]->() WHERE type(r) IN "
         "['LOCATED_IN','OWNED_BY','MEMBER_OF','ALLIED_WITH','HOSTILE_TO'] "
         "AND r.valid_from IS NULL RETURN count(r) AS c"),
+    # audit_v8pro §8 acceptance checks ---------------------------------------
+    "alias_collisions": (  # 15. no name/alias string may point at >1 entity (D9)
+        "MATCH (n:Entity) WHERE (n.session_id IS NULL OR n.session_id <> 'SRD') "
+        "AND NOT n.type IN ['Session','Player'] "
+        "UNWIND ([toLower(n.name)] + [a IN coalesce(n.aliases, []) | toLower(a)]) AS s "
+        "WITH s, count(DISTINCT n.id) AS ids WHERE s IS NOT NULL AND ids > 1 "
+        "RETURN count(*) AS c"),
+    "plays_target_not_pc": (  # 16. every PLAYS target must be is_pc=true (D10)
+        "MATCH (:Entity {type:'Player'})-[:PLAYS]->(c:Entity) "
+        "WHERE c.is_pc <> true RETURN count(c) AS c"),
+    "event_session_mismatch": (  # 17. Event IN_SESSION must match its own session_id (R2)
+        "MATCH (e:Entity {type:'Event'})-[:IN_SESSION]->(s:Entity) "
+        "WHERE e.session_id <> s.session_id RETURN count(*) AS c"),
+    "item_status_vocab": (  # 18. Item.status is a controlled enum (O4)
+        "MATCH (i:Entity {type:'Item'}) WHERE i.status IS NOT NULL AND NOT i.status IN "
+        "['found','owned','used','lost','destroyed','unknown'] RETURN count(i) AS c"),
 }
 _QA_BLOCKERS = ("dup_names", "cross_type_names", "missing_provenance", "timeline_unlinked",
                 "orphan_events", "forbidden_decision_nodes", "provenance_gap",
                 "bidirectional_dup_edges",
                 "empty_significance_events", "srd_world_edges",
-                "double_current_location", "volatile_edge_without_valid_from")
+                "double_current_location", "volatile_edge_without_valid_from",
+                "alias_collisions", "plays_target_not_pc", "event_session_mismatch",
+                "item_status_vocab")
 
 # identity-critical types for the near-duplicate review gate (audit v6 test 3);
 # Events legitimately repeat similar titles across sessions, Sessions/Players

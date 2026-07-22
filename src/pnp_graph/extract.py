@@ -83,7 +83,9 @@ _SCENE_PROMPT = (
     "context shows they are different figures (e.g. a tomb guardian vs. a fleeing child). Names "
     "read aloud from an in-fiction list, book, or scroll (a Namensliste) are not aliases of the "
     "reader or of each other; extract such a name only if it clearly denotes a character present "
-    "in the scene.\n\n"
+    "in the scene. An interjection or exclamation is NEVER a character name: 'Brass', 'Mist', "
+    "'verdammt', 'Halt', 'Achtung' express emotion or a command, not a person — never extract "
+    "one as a character or as an alias of one.\n\n"
 )
 
 

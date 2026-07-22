@@ -30,6 +30,7 @@ from .config import (
     EVENT_PREDICATES,
     GENERIC_MOB_TERMS,
     GENERIC_PLACE_TERMS,
+    GENERIC_ROLE_TERMS,
     IDENTITY_PREDICATES,
     META_EVENT_TERMS,
     OOC_DENYLIST,
@@ -146,6 +147,26 @@ def is_generic_place(surface: str) -> bool:
     return normalize(surface) in GENERIC_PLACE_TERMS
 
 
+def is_generic_role(surface: str) -> bool:
+    """Deterministic backstop for the is_named_character gate (audit_v8pro D11): a
+    bare role common noun ('der Bauer' -> 'bauer') is stage-dressing, not a stable
+    individual. Whole-name match only (mirrors is_generic_place, NOT the substring
+    is_generic_mob) so a named NPC that merely contains a role word ('König Zebros')
+    survives."""
+    return normalize(surface) in GENERIC_ROLE_TERMS
+
+
+_GENERIC_ALIAS_TERMS = frozenset(GENERIC_MOB_TERMS) | GENERIC_PLACE_TERMS | GENERIC_ROLE_TERMS
+
+
+def is_generic_alias(surface: str) -> bool:
+    """A bare generic common-noun ('die Katze', 'der Wald', 'der Bauer') is too
+    ambiguous to be a persisted alias (audit_v8pro D9): it collides across
+    entities. Whole normalized name match against the union of the mob/place/role
+    vocabularies."""
+    return normalize(surface) in _GENERIC_ALIAS_TERMS
+
+
 def slug(surface: str) -> str:
     """Human-readable id part: 'der Lindo Laut (Tim)' -> 'LindoLaut'."""
     s = _PAREN_RE.sub("", surface)
@@ -171,6 +192,48 @@ class Resolver:
         # gray-band identity candidates queued for the LLM adjudicator
         # (audit v6); drained once per session by adjudicate.adjudicate_session
         self.pending_candidates: list[dict] = []
+        self._dedupe_aliases()
+
+    def _dedupe_aliases(self) -> None:
+        """Enforce alias uniqueness per section on load (audit_v8pro D9): a
+        normalized surface may belong to at most one entry, and a bare generic
+        common-noun is never a persisted alias. Canonicals are never touched
+        (a canonical collision is a duplicate-entity problem, resolved by merge,
+        not here); the first entry to claim a normalized surface keeps it, later
+        claimants have it stripped. Self-healing: cleans collisions already in
+        the checked-in registry, so a stale double-owned alias can't survive a
+        reload."""
+        for section, entries in self.registry.items():
+            if not isinstance(entries, dict):
+                continue
+            claimed: dict[str, str] = {}
+            for eid, entry in entries.items():
+                if isinstance(entry, dict) and entry.get("canonical"):
+                    claimed.setdefault(normalize(entry["canonical"]), eid)
+            for eid, entry in entries.items():
+                if not isinstance(entry, dict):
+                    continue
+                kept, seen = [], set()
+                for a in entry.get("aliases", []):
+                    n = normalize(a)
+                    if not n or n in seen:
+                        self._dirty = True
+                        continue
+                    if is_generic_alias(a):
+                        log.info("alias %r dropped from %s (generic common noun)", a, eid)
+                        self._dirty = True
+                        continue
+                    owner = claimed.get(n)
+                    if owner is not None and owner != eid:
+                        log.info("alias %r dropped from %s (already owned by %s)", a, eid, owner)
+                        self._dirty = True
+                        continue
+                    claimed.setdefault(n, eid)
+                    seen.add(n)
+                    kept.append(a)
+                if kept != entry.get("aliases", []):
+                    entry["aliases"] = kept
+                    self._dirty = True
 
     def save(self) -> None:
         if not self._dirty:
@@ -213,9 +276,21 @@ class Resolver:
 
     def _add_alias(self, section: str, eid: str, surface: str) -> None:
         entry = self.registry[section][eid]
-        if surface not in self._surfaces(entry):
-            entry.setdefault("aliases", []).append(surface)
-            self._dirty = True
+        if surface in self._surfaces(entry):
+            return
+        # Alias-uniqueness guard (audit_v8pro D9): never attach a generic common
+        # noun, and never attach a surface a DIFFERENT entry already owns — that
+        # is the collision the load-time _dedupe_aliases cleans, prevented at the
+        # source so a fuzzy auto-add can't reintroduce it.
+        if is_generic_alias(surface):
+            log.info("alias %r not added to %s (generic common noun)", surface, eid)
+            return
+        owner = self._lookup_exact_or_norm(section, surface)
+        if owner and owner != eid:
+            log.info("alias %r not added to %s (already owned by %s)", surface, eid, owner)
+            return
+        entry.setdefault("aliases", []).append(surface)
+        self._dirty = True
 
     def _mint(self, section: str, prefix: str, surface: str, **extra) -> str:
         base = f"{prefix}_{slug(surface)}"
@@ -577,9 +652,10 @@ def resolve_graph(
         # PCs bypass — they are pre-registered from the transcript (in `entities`
         # already), so the gate only ever fires on LLM-extracted surfaces.
         is_cast_pc = surface_to_id.get(normalize(c.name)) in entities
-        if not is_cast_pc and (not c.is_named_character or is_generic_mob(c.name)):
+        if not is_cast_pc and (not c.is_named_character or is_generic_mob(c.name)
+                               or is_generic_role(c.name)):
             dropped.append({"subject": c.name, "predicate": "IN_SESSION",
-                            "object": session_node_id, "reason": "generic mob (not a named individual)"})
+                            "object": session_node_id, "reason": "generic mob/role (not a named individual)"})
             continue
         cid = register(c.name, "Character", {
             "name": c.name, "aliases": c.aliases,
@@ -591,7 +667,12 @@ def resolve_graph(
             # only stopped an EMPTY note from blanking the summary, not a
             # non-empty one from overwriting it).
             "pending_notes": [c.description] if c.description else [],
-            "is_pc": c.role.upper() == "PC", "role": c.role or "NPC",
+            # is_pc is NOT taken from the model's role guess (audit_v8pro D10): a
+            # later session mentioning a PC as a plain NPC would write is_pc=false
+            # and store's ON MATCH would overwrite the cast's true. is_pc is set
+            # ONLY by bootstrap_cast (=true) and repaired deterministically from
+            # PLAYS in store.write_session; extracted NPCs simply carry no is_pc.
+            "role": c.role or "NPC",
         }, chunks_of("characters", c.name))
         if cid in gm_pids:  # registry resolved a GM alias to the GM player
             continue
@@ -620,7 +701,8 @@ def resolve_graph(
     for item in extraction.items:
         if not item.is_named_artifact:
             continue  # generic loot lives in the vector store, never a node
-        iid = register(item.name, "Item", {"name": item.name, "status": item.status},
+        iid = register(item.name, "Item",
+                       {"name": item.name, "status": item.status, "status_note": item.status_note},
                        chunks_of("items", item.name))
         if item.owner:
             owner_id = endpoint(item.owner)
@@ -641,10 +723,22 @@ def resolve_graph(
             dropped.append({"subject": e.label, "predicate": "IN_SESSION",
                             "object": session_node_id, "reason": reason})
             continue
-        eid = register(e.label, "Event",
-                       {"name": e.label, "summary": e.summary,
-                        "significance": e.narrative_significance_reasoning},
-                       chunks_of("events", e.label))
+        # Session-scoped event id (audit_v8pro R2): an Event is a one-off, never
+        # recurring across sessions, so its id MUST carry the session — otherwise
+        # two sessions with the same scene title ('Kampf gegen den Geist') mint
+        # the same EVT_<slug> and Neo4j MERGEs them into one node that then
+        # collects IN_SESSION edges from both sessions (the Tentakel-Monster ->
+        # SESS_2025-03-26 mislink). Minted inline, bypassing the ephemeral
+        # resolver `events` section (never persisted); same-session re-mention
+        # dedups on the deterministic id via add_entity.
+        eid = f"EVT_{session_id}_{slug(e.label)}"
+        ev_props = {"name": e.label, "summary": e.summary,
+                    "significance": e.narrative_significance_reasoning}
+        ev_chunks = chunks_of("events", e.label)
+        if ev_chunks:
+            ev_props["evidence_chunks"] = ev_chunks
+        add_entity(eid, "Event", ev_props)
+        surface_to_id.setdefault(normalize(e.label), eid)
         add_edge(eid, session_node_id, "IN_SESSION")
         if e.location:
             loc_id = endpoint(e.location)

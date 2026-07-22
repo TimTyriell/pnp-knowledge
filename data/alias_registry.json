@@ -118,9 +118,10 @@
     },
     "NPC_Tindrael": {
       "canonical": "Tindrael",
-      "aliases": [],
+      "aliases": [
+        "Tindra"
+      ],
       "adjudicated_distinct": [
-        "NPC_Tindra",
         "NPC_Tendril"
       ]
     },
@@ -238,13 +239,6 @@
       "adjudicated_distinct": [
         "NPC_Baeuerin",
         "NPC_Auranil"
-      ]
-    },
-    "NPC_Tindra": {
-      "canonical": "Tindra",
-      "aliases": [],
-      "adjudicated_distinct": [
-        "NPC_Tindrael"
       ]
     },
     "NPC_CookiesFrettchen": {
@@ -409,10 +403,7 @@
     },
     "NPC_Guenda": {
       "canonical": "Günda",
-      "aliases": [],
-      "adjudicated_distinct": [
-        "NPC_GrueneDame"
-      ]
+      "aliases": []
     },
     "NPC_Gaurak": {
       "canonical": "Gaurak",
@@ -440,22 +431,18 @@
     },
     "NPC_KoenigZebros": {
       "canonical": "König Zebros",
-      "aliases": []
+      "aliases": [
+        "Zebros"
+      ]
     },
     "NPC_BelorusDerStille": {
       "canonical": "Belorus der Stille",
-      "aliases": []
+      "aliases": [
+        "Belorus"
+      ]
     },
     "NPC_UntoteAnfuehrer": {
       "canonical": "Der Untote Anführer",
-      "aliases": []
-    },
-    "NPC_Belorus": {
-      "canonical": "Belorus",
-      "aliases": []
-    },
-    "NPC_Zebros": {
-      "canonical": "Zebros",
       "aliases": []
     },
     "NPC_Nox": {
@@ -474,10 +461,6 @@
       "canonical": "Der Fischer (Cornivum)",
       "aliases": []
     },
-    "NPC_Brass": {
-      "canonical": "Brass",
-      "aliases": []
-    },
     "NPC_SchlangengottAvatar": {
       "canonical": "Schlangengott-Avatar",
       "aliases": []
@@ -486,16 +469,11 @@
       "canonical": "Luli",
       "aliases": []
     },
-    "NPC_GrueneDame": {
-      "canonical": "Die grüne Dame",
-      "aliases": [],
-      "adjudicated_distinct": [
-        "NPC_Guenda"
-      ]
-    },
     "NPC_Hexe": {
       "canonical": "Die Hexe",
-      "aliases": []
+      "aliases": [
+        "Die grüne Dame"
+      ]
     },
     "NPC_Pilz": {
       "canonical": "Der Pilz",

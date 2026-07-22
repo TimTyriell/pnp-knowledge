@@ -43,12 +43,17 @@ class Item(BaseModel):
         "(e.g. 'Schwert des Veritas', 'Sigille'). False for generic/consumable "
         "loot: torches, gold, arrows, potions, standard weapons — those are NOT nodes.")
     owner: str | None = None
-    status: str = Field(default="", description="e.g. looted, used")
+    # Controlled vocabulary (audit_v8pro O4): the status token must be queryable/
+    # validatable, so it is a fixed enum — any German prose ("bei Cookie, enthält
+    # Infos über die Untoten") belongs in status_note, never here.
+    status: Literal["found", "owned", "used", "lost", "destroyed", "unknown"] = "unknown"
+    status_note: str = Field(default="", description="Free-text detail the enum can't "
+        "carry, e.g. 'bei Cookie — Hinweis auf die Untoten im Schloss'")
 
 
 class Quest(BaseModel):
     name: str
-    status: str = Field(default="open", description="new, open, or completed")
+    status: Literal["new", "open", "completed"] = "open"
 
 
 class Event(BaseModel):
