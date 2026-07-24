@@ -1,10 +1,11 @@
 ---
-type: Location
+type: Domain
 title: Splitterwelt
 description: Eine von Roland erwähnte Zwischenwelt, die durch den Krieg der Götter
-  entstanden ist. Sie liegt zwischen den 'Circle Below' und den 'Hallow…
+  entstanden ist. Sie liegt zwischen den 'Circle Below' und den 'Hallows Above'
+  und enthält das Tor zu Abisalis.
 tags:
-- locations
+- domains
 timestamp: '2026-03-10T00:00:00Z'
 ---
 
@@ -20,8 +21,8 @@ Die Splitterwelt ist eine Zwischenwelt oder Paralleldimension, die infolge des K
 
 ## Zugänge
 
-*   Ein Tor zur vergessenen Welt **Abyssalis** (auch Abyssares genannt) befindet sich in der Splitterwelt.
-*   Ein Portal im Anwesen von [Voras](../npcs/voras.md) ermöglicht den Zugang zur Splitterwelt und von dort aus zu den Toren von Abyssalis.
+*   Ein Tor zum Reich [Abisalis](abisalis.md) befindet sich in der Splitterwelt.
+*   Ein Portal im Anwesen von [Voras](../npcs/voras.md) ermöglicht den Zugang zur Splitterwelt und von dort aus zu den Toren von Abisalis.
 
 ## Wirkung auf die reale Welt
 

@@ -5,6 +5,8 @@
 # Kompendium
 
 * [Charaktere](characters/)
+* [Götter](deities/)
+* [Reiche](domains/)
 * [Ereignisse](events/)
 * [Fraktionen](factions/)
 * [Gegenstände](items/)

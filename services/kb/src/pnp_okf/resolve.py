@@ -74,6 +74,9 @@ def merge_near_duplicates(
                 winner.aliases.append(name)
         winner.mentions.extend(loser.mentions)
         winner.mentions.sort(key=lambda m: (m.date, m.citation_ts))
+        # Importance is a property of the person/place, not of the spelling
+        # that happened to win, so it survives the fold.
+        winner.important = winner.important or loser.important
         survivors.remove(loser)
         merged_away[loser.concept_id] = winner.concept_id
         log.info(
@@ -155,6 +158,23 @@ def _load_alias_overrides(registry_path: Path) -> dict[str, str]:
     return overrides
 
 
+def _load_important(registry_path: Path) -> set[str]:
+    """Concept ids flagged ``important: true`` in the registry.
+
+    These force the deep synthesis tier regardless of mention count — the
+    escape hatch for entities the automatic rules underrate.
+    """
+
+    if not registry_path.exists():
+        return set()
+    data = yaml.safe_load(registry_path.read_text(encoding="utf-8")) or {}
+    return {
+        str(entry.get("concept_id", "")).strip()
+        for entry in data.get("entities") or []
+        if entry.get("important")
+    } - {""}
+
+
 def resolve_entities(
     extractions: dict[str, SessionExtraction],
     transcripts: dict[str, SessionTranscript],
@@ -169,6 +189,7 @@ def resolve_entities(
     """
 
     overrides = _load_alias_overrides(registry_path)
+    important = _load_important(registry_path)
     # Also match registry keys after slugification, so "Lindo  Laut" folds
     # into a registry entry written as "lindo laut".
     slug_overrides = {slugify(k): v for k, v in overrides.items()}
@@ -197,6 +218,7 @@ def resolve_entities(
                     canonical_name=mention.name.strip(),
                     aliases=[],
                     mentions=[],
+                    important=concept_id in important,
                 )
                 entities[concept_id] = entity
             if (
@@ -235,6 +257,7 @@ def write_registry(entities: list[CanonicalEntity], registry_path: Path) -> None
 
     merge: dict[str, str] = {}
     preserved_aliases: dict[str, list[str]] = {}
+    preserved_important: set[str] = set()
     if registry_path.exists():
         existing = yaml.safe_load(registry_path.read_text(encoding="utf-8")) or {}
         merge = existing.get("merge") or {}
@@ -243,6 +266,8 @@ def write_registry(entities: list[CanonicalEntity], registry_path: Path) -> None
             cid = str(entry.get("concept_id", "")).strip()
             if cid and entry.get("aliases"):
                 preserved_aliases[cid] = [str(a).strip() for a in entry["aliases"]]
+            if cid and entry.get("important"):
+                preserved_important.add(cid)
 
     inventory = []
     for e in entities:
@@ -251,15 +276,17 @@ def write_registry(entities: list[CanonicalEntity], registry_path: Path) -> None
         for alias in preserved_aliases.get(e.concept_id, []) + list(e.aliases):
             if alias not in aliases and alias.lower() != e.canonical_name.lower():
                 aliases.append(alias)
-        inventory.append(
-            {
-                "concept_id": e.concept_id,
-                "type": e.type.value,
-                "canonical_name": e.canonical_name,
-                "aliases": aliases,
-                "mention_count": len(e.mentions),
-            }
-        )
+        entry = {
+            "concept_id": e.concept_id,
+            "type": e.type.value,
+            "canonical_name": e.canonical_name,
+            "aliases": aliases,
+            "mention_count": len(e.mentions),
+        }
+        # Only write the flag when set, so the file stays uncluttered.
+        if e.important or e.concept_id in preserved_important:
+            entry["important"] = True
+        inventory.append(entry)
     doc = {
         "merge": merge,
         "entities": inventory,
@@ -277,6 +304,10 @@ def write_registry(entities: list[CanonicalEntity], registry_path: Path) -> None
         "# fold it in without listing it under a concept, e.g.:\n"
         "#   merge:\n"
         "#     \"heck\": factions/hag\n"
+        "#\n"
+        "# 'important: true' on a concept forces the deep synthesis tier for\n"
+        "# entities the automatic rules underrate (a pivotal NPC or city whose\n"
+        "# mention count stays low). Characters and Deities are always deep.\n"
     )
     registry_path.write_text(
         header + yaml.safe_dump(doc, sort_keys=False, allow_unicode=True),

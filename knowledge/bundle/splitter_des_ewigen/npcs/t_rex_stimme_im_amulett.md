@@ -10,7 +10,7 @@ timestamp: '2025-08-12T00:00:00Z'
 
 # T-Rex (Stimme im Amulett)
 
-Eine Entität, die in [Lindo Lauts](../characters/lindo_laut.md) Amulett wohnt und mit ihm kommuniziert. In früheren Tagen war sie ein Kampfgefährte von [Seras](../npcs/seras.md).
+Eine Entität, die in [Lindo Lauts](../characters/lindo_laut.md) Amulett wohnt und mit ihm kommuniziert. In früheren Tagen war sie ein Kampfgefährte von [Zeyrath](../deities/seras.md) (in Sitzungen als Seras bezeichnet).
 
 # Belege
 1. Session 2025-08-12 @ 00:44:57 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)

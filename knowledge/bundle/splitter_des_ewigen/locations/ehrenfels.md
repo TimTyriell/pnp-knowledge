@@ -25,7 +25,7 @@ Im Winter liegt Schnee in der Stadt und der Fluss beginnt zu gefrieren.
 ## Bedeutung in der Kampagne
 
 - Ein wichtiges Dokument soll nach Ehrenfels gebracht werden. Ein wiederbelebter Soldat nannte die Stadt als eigentliches Ziel seiner Nachricht, nachdem er zuvor von [Willauch](../locations/willauch.md) gesprochen hatte.
-- Laut [Slix](../npcs/slix.md) befindet sich in Ehrenfels der letzte Teil von [Vasuls](../npcs/vasul.md) Macht. Slix will dorthin, um seine volle Stärke zu erlangen, was die Gruppe unbedingt verhindern muss.
+- Laut [Slix](../npcs/slix.md) befindet sich in Ehrenfels der letzte Teil von [Vhar'Zuls](../deities/vharzul.md) Macht. Slix will dorthin, um seine volle Stärke zu erlangen, was die Gruppe unbedingt verhindern muss.
 
 # Belege
 

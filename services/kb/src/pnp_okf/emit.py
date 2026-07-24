@@ -40,6 +40,8 @@ _TYPE_LABEL_DE = {
     EntityType.FACTION: "Fraktionen",
     EntityType.ITEM: "Gegenstände",
     EntityType.EVENT: "Ereignisse",
+    EntityType.DEITY: "Götter",
+    EntityType.DOMAIN: "Reiche",
 }
 
 

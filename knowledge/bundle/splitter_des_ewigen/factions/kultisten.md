@@ -11,7 +11,7 @@ timestamp: '2025-09-02T00:00:00Z'
 # Kultisten
 
 ## Allgemein
-Die Kultisten sind eine Gruppe von Anhängern des [Varsul](../gods/varsul.md). Ihr Ziel ist es, ein bestehendes Heiligtum für ihre eigenen Zwecke umzuwidmen.
+Die Kultisten sind eine Gruppe von Anhängern des [Vhar'Zul](../deities/vharzul.md). Ihr Ziel ist es, ein bestehendes Heiligtum für ihre eigenen Zwecke umzuwidmen.
 
 ## Bekannte Aktivitäten
 - Versuchten, ein Heiligtum umzuwidmen.

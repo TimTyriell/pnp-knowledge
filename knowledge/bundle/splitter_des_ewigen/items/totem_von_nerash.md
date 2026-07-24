@@ -10,7 +10,7 @@ timestamp: '2025-09-02T00:00:00Z'
 
 # Totem von Nerash
 
-Ein von [Nerash](../npcs/nerash.md) erhaltenes Totem, das die Gruppe bei sich trägt. Es dient als ritueller Gegenstand, um Nerash um Hilfe zu bitten.
+Ein von [Nerash](../deities/nerash.md) erhaltenes Totem, das die Gruppe bei sich trägt. Es dient als ritueller Gegenstand, um Nerash um Hilfe zu bitten.
 
 ## Verwendung
 

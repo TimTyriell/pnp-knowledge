@@ -10,7 +10,7 @@ timestamp: '2026-02-17T00:00:00Z'
 
 # Slix
 
-Slix ist ein dämonischer Diener und ein Teil des alten Gottes [Vasul](../gods/vasul.md), der in [Lindo Laut](lindo-laut.md) wohnt und zeitweise die Kontrolle über dessen Körper übernimmt. Er erscheint auf Abruf und zeigt sich enttäuscht über Lindos Zögern, seine Macht einzusetzen, und drängt ihn, seine Kräfte zu nutzen.
+Slix ist ein dämonischer Diener und ein Teil des alten Gottes [Vhar'Zul](../deities/vharzul.md), der in [Lindo Laut](../characters/lindo_laut.md) wohnt und zeitweise die Kontrolle über dessen Körper übernimmt. Er erscheint auf Abruf und zeigt sich enttäuscht über Lindos Zögern, seine Macht einzusetzen, und drängt ihn, seine Kräfte zu nutzen.
 
 ## Persönlichkeit und Verhalten
 

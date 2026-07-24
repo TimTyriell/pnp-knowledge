@@ -1,10 +1,11 @@
 ---
-type: Location
+type: Domain
 title: Zwischenebene (Vorebene des Circle Below)
 description: Eine düstere, trostlose Dimension voller verfaulter Bäume, alter Schlachtfelder
-  und seelenloser Kreaturen. Sie dient als Vorhof zur Hölle u…
+  und seelenloser Kreaturen. Dient als Vorhof zur Hölle und Übergangsbereich vor
+  dem Circle Below.
 tags:
-- locations
+- domains
 timestamp: '2025-09-06T00:00:00Z'
 ---
 
@@ -18,7 +19,7 @@ Die Landschaft der Zwischenebene ist geprägt von Verfall und Trostlosigkeit. Ve
 
 ## Bewohner und Funktion
 
-In dieser Vorebene residiert der [Fährmann](../npcs/faehrmann.md), der eine wichtige Rolle beim Übergang in tiefere Bereiche zu spielen scheint.
+In dieser Vorebene residiert der [Fährmann](../locations/faehre_faehrmann.md), der eine wichtige Rolle beim Übergang in tiefere Bereiche zu spielen scheint.
 
 # Belege
 

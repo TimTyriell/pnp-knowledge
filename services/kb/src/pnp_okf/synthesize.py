@@ -15,7 +15,14 @@ from tenacity import (
 from pnp_okf.llm_client import build_client
 from pnp_okf.config import DeepSeekConfig
 from pnp_okf.models import CanonicalEntity
-from pnp_okf.prompts import PROMPT_VERSION, SYNTH_SYSTEM, SYNTH_USER_TEMPLATE
+from pnp_okf.prompts import (
+    PROMPT_VERSION,
+    SYNTH_EXCERPTS_TEMPLATE,
+    SYNTH_SOURCES_TEMPLATE,
+    SYNTH_SYSTEM,
+    SYNTH_TIER_GUIDANCE,
+    SYNTH_USER_TEMPLATE,
+)
 
 log = logging.getLogger(__name__)
 
@@ -30,12 +37,18 @@ def _render_mentions(entity: CanonicalEntity) -> str:
     return "\n".join(lines)
 
 
-def _cache_key(entity: CanonicalEntity, cfg: DeepSeekConfig) -> str:
+def _cache_key(
+    entity: CanonicalEntity, cfg: DeepSeekConfig, sources: str, excerpts: str
+) -> str:
     payload = json.dumps(
         {
             "v": PROMPT_VERSION,
             "model": cfg.model,
             "entity": entity.model_dump(mode="json"),
+            "tier": entity.tier,
+            # Extra grounding changes the output, so it has to key the cache.
+            "sources": hashlib.sha256(sources.encode("utf-8")).hexdigest()[:16],
+            "excerpts": hashlib.sha256(excerpts.encode("utf-8")).hexdigest()[:16],
         },
         ensure_ascii=False,
         sort_keys=True,
@@ -54,13 +67,22 @@ def _cache_path(cache_dir: Path, entity: CanonicalEntity) -> Path:
     wait=wait_exponential(multiplier=2, min=2, max=30),
     retry=retry_if_exception_type(Exception),
 )
-def _call_llm(client, cfg: DeepSeekConfig, entity: CanonicalEntity) -> str:
+def _call_llm(
+    client,
+    cfg: DeepSeekConfig,
+    entity: CanonicalEntity,
+    sources: str,
+    excerpts: str,
+) -> str:
     user = SYNTH_USER_TEMPLATE.format(
         name=entity.canonical_name,
         type=entity.type.value,
         concept_id=entity.concept_id,
         aliases=", ".join(entity.aliases) or "-",
+        tier_guidance=SYNTH_TIER_GUIDANCE[entity.tier],
         mentions=_render_mentions(entity),
+        sources=SYNTH_SOURCES_TEMPLATE.format(sources=sources) if sources else "",
+        excerpts=SYNTH_EXCERPTS_TEMPLATE.format(excerpts=excerpts) if excerpts else "",
     )
     completion = client.chat.completions.create(
         model=cfg.model,
@@ -83,10 +105,17 @@ def synthesize_entity_body(
     *,
     client=None,
     force: bool = False,
+    sources: str = "",
+    excerpts: str = "",
 ) -> str:
-    """Produce the German markdown body for one canonical entity (cached)."""
+    """Produce the German markdown body for one canonical entity (cached).
 
-    key = _cache_key(entity, cfg)
+    ``sources`` is matched world material from ``knowledge/sources/``;
+    ``excerpts`` is original transcript dialogue around this entity's
+    citations. Both are optional extra grounding — see :mod:`pnp_okf.context`.
+    """
+
+    key = _cache_key(entity, cfg, sources, excerpts)
     path = _cache_path(cache_dir, entity)
     if not force and path.exists():
         blob = json.loads(path.read_text(encoding="utf-8"))
@@ -94,9 +123,16 @@ def synthesize_entity_body(
             log.info("[synth] cache hit: %s", entity.concept_id)
             return blob["body"]
 
-    log.info("[synth] calling DeepSeek: %s", entity.concept_id)
+    log.info(
+        "[synth] calling DeepSeek: %s (tier=%s, %d mentions%s%s)",
+        entity.concept_id,
+        entity.tier,
+        len(entity.mentions),
+        ", +sources" if sources else "",
+        f", +{len(excerpts)//1000}k excerpt chars" if excerpts else "",
+    )
     client = client or build_client(cfg)
-    body = _call_llm(client, cfg, entity)
+    body = _call_llm(client, cfg, entity, sources, excerpts)
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(
         json.dumps({"_key": key, "body": body}, ensure_ascii=False, indent=2),

@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import os
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from pathlib import Path
 
 try:  # optional convenience: load a .env if python-dotenv is present
@@ -16,6 +16,14 @@ class ConfigError(RuntimeError):
     """Raised when required configuration is missing."""
 
 
+# Quality carries the pipeline: extraction is the ceiling for everything
+# downstream, and the deep-tier entries are the ones meant to be thorough.
+# The long tail of one-mention stubs is supposed to stay short, so it runs on
+# the cheaper model.
+DEFAULT_MODEL = "deepseek-v4-pro"
+DEFAULT_LIGHT_MODEL = "deepseek-v4-flash"
+
+
 @dataclass(frozen=True)
 class DeepSeekConfig:
     """DeepSeek API connection settings (OpenAI-compatible endpoint)."""
@@ -23,16 +31,25 @@ class DeepSeekConfig:
     base_url: str
     model: str
     api_key: str
+    light_model: str = DEFAULT_LIGHT_MODEL
 
     @classmethod
     def from_env(cls) -> "DeepSeekConfig":
         base_url = os.environ.get("DEEPSEEK_BASE_URL", "https://api.deepseek.com").strip()
-        model = os.environ.get("DEEPSEEK_MODEL", "deepseek-chat").strip()
+        model = os.environ.get("DEEPSEEK_MODEL", DEFAULT_MODEL).strip()
+        light = os.environ.get("DEEPSEEK_LIGHT_MODEL", DEFAULT_LIGHT_MODEL).strip()
         api_key = os.environ.get("DEEPSEEK_API_KEY", "").strip()
 
         if not api_key:
             raise ConfigError("Missing required environment variable: DEEPSEEK_API_KEY")
-        return cls(base_url=base_url, model=model, api_key=api_key)
+        return cls(base_url=base_url, model=model, api_key=api_key, light_model=light)
+
+    def for_tier(self, tier: str) -> "DeepSeekConfig":
+        """Config for one synthesis tier — the strong model only where it pays."""
+
+        if tier == "deep" or self.model == self.light_model:
+            return self
+        return replace(self, model=self.light_model)
 
 
 @dataclass(frozen=True)
@@ -44,6 +61,35 @@ class Paths:
     cache_dir: Path
 
     @property
+    def _knowledge_root(self) -> Path:
+        """Directory holding the bundle tree's siblings.
+
+        For the monorepo layout ``knowledge/bundle/<name>`` that is
+        ``knowledge/``; for a free-standing bundle it is the bundle's parent.
+        """
+
+        if self.bundle_dir.parent.name == "bundle":
+            return self.bundle_dir.parent.parent
+        return self.bundle_dir.parent
+
+    @property
+    def registry_path(self) -> Path:
+        """Entity registry — the durable record of merges and importance.
+
+        Must resolve next to ``conflicts/`` and ``sources/``: pointing it at
+        the wrong place silently discards every hand-curated merge and starts
+        a fresh registry instead.
+        """
+
+        return self._knowledge_root / "entity_registry.yaml"
+
+    @property
+    def sources_dir(self) -> Path:
+        """World material injected into synthesis (see :mod:`pnp_okf.context`)."""
+
+        return self._knowledge_root / "sources"
+
+    @property
     def conflicts_dir(self) -> Path:
         """Open-conflict queue, sibling of the bundle tree.
 
@@ -52,9 +98,7 @@ class Paths:
         bundle it sits next to the bundle directory.
         """
 
-        if self.bundle_dir.parent.name == "bundle":
-            return self.bundle_dir.parent.parent / "conflicts"
-        return self.bundle_dir.parent / "conflicts"
+        return self._knowledge_root / "conflicts"
 
     @classmethod
     def resolve(

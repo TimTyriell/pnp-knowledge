@@ -10,7 +10,7 @@ timestamp: '2026-02-17T00:00:00Z'
 
 # Schriftrolle von Nerash
 
-Eine von der Göttin [Nerash](../npcs/nerash.md) erhaltene Schriftrolle. Sie beschreibt ein Ritual, um den Teil von [Vasul](../npcs/vasul.md) in [Lindo Laut](../characters/lindo_laut.md) zu vertreiben. Das Ritual muss in [Abyssalis](../locations/abyssalis.md) durchgeführt werden.
+Eine von der Göttin [Nerash](../deities/nerash.md) erhaltene Schriftrolle. Sie beschreibt ein Ritual, um den Teil von [Vhar'Zul](../deities/vharzul.md) in [Lindo Laut](../characters/lindo_laut.md) zu vertreiben. Das Ritual muss in [Abisalis](../domains/abisalis.md) durchgeführt werden.
 
 # Belege
 1. Session 2026-02-17 @ 00:56:42 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)

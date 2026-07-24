@@ -10,7 +10,7 @@ timestamp: '2025-08-20T00:00:00Z'
 
 # Kultisten des Varsul
 
-Eine Gruppe von Anhängern des Gottes [Varsul](../goetter/varsul.md), die sich in der Nähe des Gipfels aufhalten.
+Eine Gruppe von Anhängern des Gottes [Vhar'Zul](../deities/vharzul.md), die sich in der Nähe des Gipfels aufhalten.
 
 ## Aktivitäten
 

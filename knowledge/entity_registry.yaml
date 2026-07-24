@@ -15,6 +15,7 @@ merge:
   valerie: characters/valeria
   valeria: characters/valeria
   lindo laut: characters/lindo_laut
+  lindo laut (pedro): characters/lindo_laut
   nyrella: characters/nyrella
   perry das schnabeltier: npcs/perry_das_schnabeltier
   parry das schnabeltier: npcs/perry_das_schnabeltier
@@ -26,6 +27,28 @@ merge:
   brechka: locations/breska
   bresca: locations/breska
   dorf (bresca?): locations/breska
+  belorus der stille: npcs/belorus
+  lord belorus: npcs/belorus
+  vasul: deities/vharzul
+  varsul: deities/vharzul
+  warzul: deities/vharzul
+  basul: deities/vharzul
+  varsul / warzul: deities/vharzul
+  vhar zul: deities/vharzul
+  vhar'zul: deities/vharzul
+  tarvok: deities/tarvok_der_erdrichter
+  tarvok (der erdrichter): deities/tarvok_der_erdrichter
+  seras: deities/seras
+  uhoriaks: deities/uhoriaks
+  vorgulta: deities/vorgulta
+  abyssalis: domains/abisalis
+  abyssares: domains/abisalis
+  amulett von duran: items/amulett_des_heiligen_duran
+  amulett: items/amulett_des_heiligen_duran
+  amulett des lindo laut: items/amulett_des_heiligen_duran
+  amulett von lindo laut: items/amulett_des_heiligen_duran
+  lindo lauts amulett: items/amulett_des_heiligen_duran
+  alte götter (old gods): factions/die_alten_goetter
 entities:
 - concept_id: characters/brim
   type: Character
@@ -56,13 +79,9 @@ entities:
 - concept_id: characters/lindo_laut
   type: Character
   canonical_name: Lindo Laut
-  aliases: []
-  mention_count: 31
-- concept_id: characters/lindo_laut_pedro
-  type: Character
-  canonical_name: Lindo Laut (Pedro)
-  aliases: []
-  mention_count: 1
+  aliases:
+  - Lindo Laut (Pedro)
+  mention_count: 32
 - concept_id: characters/lunara_velora
   type: Character
   canonical_name: Lunara Velora
@@ -534,11 +553,6 @@ entities:
   canonical_name: Zweiter Arena-Kampf
   aliases: []
   mention_count: 1
-- concept_id: factions/alte_goetter_old_gods
-  type: Faction
-  canonical_name: Alte Götter (Old Gods)
-  aliases: []
-  mention_count: 1
 - concept_id: factions/banditen_fraktion
   type: Faction
   canonical_name: Banditen (Fraktion)
@@ -561,9 +575,9 @@ entities:
   mention_count: 2
 - concept_id: factions/die_alten_goetter
   type: Faction
-  canonical_name: Die Alten Götter
+  canonical_name: Die Alten Götter (Old Gods)
   aliases: []
-  mention_count: 1
+  mention_count: 2
 - concept_id: factions/die_gilde
   type: Faction
   canonical_name: Die Gilde
@@ -645,16 +659,6 @@ entities:
   canonical_name: Silberkornbande
   aliases: []
   mention_count: 1
-- concept_id: factions/tarvok
-  type: Faction
-  canonical_name: Tarvok
-  aliases: []
-  mention_count: 1
-- concept_id: factions/uhoriaks
-  type: Faction
-  canonical_name: Uhoriaks
-  aliases: []
-  mention_count: 1
 - concept_id: factions/untote_armee
   type: Faction
   canonical_name: Untote Armee
@@ -665,46 +669,21 @@ entities:
   canonical_name: Untote Horde (Zebras)
   aliases: []
   mention_count: 1
-- concept_id: factions/varsul_warzul
-  type: Faction
-  canonical_name: Varsul / Warzul
-  aliases: []
-  mention_count: 1
-- concept_id: factions/vorgulta
-  type: Faction
-  canonical_name: Vorgulta
-  aliases: []
-  mention_count: 1
 - concept_id: factions/zwerge
   type: Faction
   canonical_name: Zwerge
   aliases: []
   mention_count: 1
-- concept_id: items/amulett
-  type: Item
-  canonical_name: Amulett
-  aliases: []
-  mention_count: 1
 - concept_id: items/amulett_des_heiligen_duran
   type: Item
   canonical_name: Amulett des Heiligen Duran
-  aliases: []
-  mention_count: 1
-- concept_id: items/amulett_des_lindo_laut
-  type: Item
-  canonical_name: Amulett des Lindo Laut
-  aliases: []
-  mention_count: 1
-- concept_id: items/amulett_von_duran
-  type: Item
-  canonical_name: Amulett von Duran
-  aliases: []
-  mention_count: 1
-- concept_id: items/amulett_von_lindo_laut
-  type: Item
-  canonical_name: Amulett von Lindo Laut
-  aliases: []
-  mention_count: 1
+  aliases:
+  - Amulett von Duran
+  - Amulett des Lindo Laut
+  - Amulett von Lindo Laut
+  - Lindo Lauts Amulett
+  - Amulett
+  mention_count: 6
 - concept_id: items/angriffsplan
   type: Item
   canonical_name: Angriffsplan
@@ -985,11 +964,6 @@ entities:
   canonical_name: Lila Kristalle
   aliases: []
   mention_count: 1
-- concept_id: items/lindo_lauts_amulett
-  type: Item
-  canonical_name: Lindo Lauts Amulett
-  aliases: []
-  mention_count: 1
 - concept_id: items/logbuch_der_expedition
   type: Item
   canonical_name: Logbuch der Expedition
@@ -1240,10 +1214,12 @@ entities:
   canonical_name: Zeremonieller Dolch
   aliases: []
   mention_count: 1
-- concept_id: locations/abyssalis
-  type: Location
-  canonical_name: Abyssalis
-  aliases: []
+- concept_id: domains/abisalis
+  type: Domain
+  canonical_name: Abisalis
+  aliases:
+  - Abyssalis
+  - Abyssares
   mention_count: 2
 - concept_id: locations/alter_turm
   type: Location
@@ -1606,8 +1582,8 @@ entities:
   canonical_name: Spinnennest-Arena
   aliases: []
   mention_count: 1
-- concept_id: locations/splitterwelt
-  type: Location
+- concept_id: domains/splitterwelt
+  type: Domain
   canonical_name: Splitterwelt
   aliases: []
   mention_count: 3
@@ -1686,8 +1662,8 @@ entities:
   canonical_name: Zum grünen Sichelmond
   aliases: []
   mention_count: 1
-- concept_id: locations/zwischenebene_vorebene_des_circle_below
-  type: Location
+- concept_id: domains/zwischenebene_vorebene_des_circle_below
+  type: Domain
   canonical_name: Zwischenebene (Vorebene des Circle Below)
   aliases: []
   mention_count: 1
@@ -1734,13 +1710,10 @@ entities:
 - concept_id: npcs/belorus
   type: NPC
   canonical_name: Belorus
-  aliases: []
-  mention_count: 2
-- concept_id: npcs/belorus_der_stille
-  type: NPC
-  canonical_name: Belorus der Stille
-  aliases: []
-  mention_count: 3
+  aliases:
+  - Belorus der Stille
+  - Lord Belorus
+  mention_count: 6
 - concept_id: npcs/berthold
   type: NPC
   canonical_name: Berthold
@@ -2061,8 +2034,8 @@ entities:
   canonical_name: König Zebros
   aliases: []
   mention_count: 1
-- concept_id: npcs/kol_meref
-  type: NPC
+- concept_id: deities/kol_meref
+  type: Deity
   canonical_name: Kol Meref
   aliases: []
   mention_count: 1
@@ -2145,11 +2118,6 @@ entities:
 - concept_id: npcs/loran_silberbart
   type: NPC
   canonical_name: Loran Silberbart
-  aliases: []
-  mention_count: 1
-- concept_id: npcs/lord_belorus
-  type: NPC
-  canonical_name: Lord Belorus
   aliases: []
   mention_count: 1
 - concept_id: npcs/lord_harik
@@ -2247,8 +2215,8 @@ entities:
   canonical_name: Nayruk
   aliases: []
   mention_count: 1
-- concept_id: npcs/nerash
-  type: NPC
+- concept_id: deities/nerash
+  type: Deity
   canonical_name: Nerash
   aliases: []
   mention_count: 4
@@ -2361,10 +2329,11 @@ entities:
   canonical_name: Ser Eulenweiss
   aliases: []
   mention_count: 1
-- concept_id: npcs/seras
-  type: NPC
-  canonical_name: Seras
-  aliases: []
+- concept_id: deities/seras
+  type: Deity
+  canonical_name: Zeyrath, Herr der Flammen
+  aliases:
+  - Seras
   mention_count: 1
 - concept_id: npcs/silberbestien
   type: NPC
@@ -2431,11 +2400,13 @@ entities:
   canonical_name: T-Rex (Stimme im Amulett)
   aliases: []
   mention_count: 1
-- concept_id: npcs/tarvok_der_erdrichter
-  type: NPC
-  canonical_name: Tarvok (Der Erdrichter)
-  aliases: []
-  mention_count: 1
+- concept_id: deities/tarvok_der_erdrichter
+  type: Deity
+  canonical_name: Thar'vok, der Erdrichter
+  aliases:
+  - Tarvok
+  - Tarvok (Der Erdrichter)
+  mention_count: 2
 - concept_id: npcs/tindra
   type: NPC
   canonical_name: Tindra
@@ -2481,16 +2452,28 @@ entities:
   canonical_name: Valdemar der Goldene Ritter
   aliases: []
   mention_count: 1
-- concept_id: npcs/varsul
-  type: NPC
-  canonical_name: Varsul
-  aliases: []
-  mention_count: 2
-- concept_id: npcs/vasul
-  type: NPC
-  canonical_name: Vasul
-  aliases: []
-  mention_count: 4
+- concept_id: deities/vharzul
+  type: Deity
+  canonical_name: Vhar'Zul, der Gerissene
+  aliases:
+  - Vasul
+  - Varsul
+  - Warzul
+  - Basul
+  mention_count: 7
+- concept_id: deities/uhoriaks
+  type: Deity
+  canonical_name: Uhoriax, Mutter der Schleier
+  aliases:
+  - Uhoriaks
+  - Die Vernichterin
+  mention_count: 1
+- concept_id: deities/vorgulta
+  type: Deity
+  canonical_name: Vorgul'Thar, Herr der Tausend Seelen
+  aliases:
+  - Vorgulta
+  mention_count: 1
 - concept_id: npcs/verwundeter_soldat_aus_breska
   type: NPC
   canonical_name: Verwundeter Soldat aus Breska

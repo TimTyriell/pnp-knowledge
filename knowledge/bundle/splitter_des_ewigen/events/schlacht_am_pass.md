@@ -10,7 +10,7 @@ timestamp: '2025-09-30T00:00:00Z'
 
 # Schlacht am Pass
 
-Die Schlacht am Pass war ein militärischer Konflikt, bei dem eine Übermacht von Untoten einen strategisch wichtigen Pass angriff. Die Verteidiger konnten den Pass erfolgreich halten. Das Gefecht endete mit dem Tod des gegnerischen Generals und dem Erscheinen von [Belorus der Stille](../npcs/belorus_der_stille.md).
+Die Schlacht am Pass war ein militärischer Konflikt, bei dem eine Übermacht von Untoten einen strategisch wichtigen Pass angriff. Die Verteidiger konnten den Pass erfolgreich halten. Das Gefecht endete mit dem Tod des gegnerischen Generals und dem Erscheinen von [Belorus](../npcs/belorus.md).
 
 # Belege
 1. Session 2025-09-30, 00:10:20: https://www.youtube.com/watch?v=bUT7Mc2hjUY

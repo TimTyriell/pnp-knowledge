@@ -16,7 +16,7 @@ Die Krypta ist ein unterirdischer Raum, der sich direkt unter der Kapelle befind
 
 In der Krypta befinden sich mehrere markante Elemente:
 *   Ein Thron
-*   Eine Statue von [Varsul](../npcs/varsul.md)
+*   Eine Statue von [Vhar'Zul](../deities/vharzul.md)
 *   Mehrere Gräber
 
 # Belege

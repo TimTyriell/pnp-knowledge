@@ -5,9 +5,12 @@ import logging
 import shutil
 import subprocess
 import sys
+from collections import Counter
 from pathlib import Path
 
 from pnp_okf.config import DeepSeekConfig, ConfigError, Paths
+from pnp_okf.context import excerpts_for, load_sources, sources_for
+from pnp_okf.dedup import propose, render_report
 from pnp_okf.emit import (
     build_concept_index,
     emit_conflict,
@@ -71,20 +74,36 @@ def cmd_run(args: argparse.Namespace) -> int:
 
     extractions = _extract_all(transcripts, cfg, paths, args.force)
 
-    registry_path = paths.bundle_dir.parent / "entity_registry.yaml"
+    registry_path = paths.registry_path
     entities = resolve_entities(extractions, tmap, registry_path)
     write_registry(entities, registry_path)
 
     if args.clean and paths.bundle_dir.exists():
         shutil.rmtree(paths.bundle_dir)
 
+    # Extra grounding for synthesis: world material that never appears in a
+    # transcript, plus original dialogue for the entries that warrant depth.
+    source_sections = load_sources(paths.sources_dir)
+
     index = build_concept_index(entities, tmap)
     session_entries = emit_sessions(paths.bundle_dir, tmap, extractions, index)
     unresolved_total = 0
     conflict_count = 0
+    tier_counts: Counter[str] = Counter(e.tier for e in entities)
+    log.info(
+        "Synthesis tiers: %s",
+        ", ".join(f"{t}={tier_counts[t]}" for t in ("deep", "standard", "brief")),
+    )
     for entity in entities:
         body = synthesize_entity_body(
-            entity, cfg, paths.cache_dir, force=args.force
+            entity,
+            cfg.for_tier(entity.tier),
+            paths.cache_dir,
+            force=args.force,
+            sources=sources_for(entity, source_sections),
+            excerpts=(
+                excerpts_for(entity, tmap) if entity.tier == "deep" else ""
+            ),
         )
         unresolved, conflicts = emit_entity(paths.bundle_dir, entity, body, index)
         unresolved_total += len(unresolved)
@@ -136,6 +155,44 @@ def cmd_extract(args: argparse.Namespace) -> int:
     extractions = _extract_all(transcripts, cfg, paths, args.force)
     for sid, ex in extractions.items():
         log.info("%s: %d entities", sid, len(ex.entities))
+    return 0
+
+
+def cmd_dedup(args: argparse.Namespace) -> int:
+    """Propose entity merges for human review. Writes a report, not the registry.
+
+    Runs on cached extractions, so it costs one small call per identity space
+    and never re-reads transcripts.
+    """
+
+    paths = Paths.resolve(args.transcripts, args.bundle, args.cache)
+    cfg = DeepSeekConfig.from_env()
+    transcripts = _select(
+        load_transcripts(paths.transcript_dir), args.limit, args.session
+    )
+    tmap = {t.session_id: t for t in transcripts}
+    extractions = _extract_all(transcripts, cfg, paths, force=False)
+
+    registry_path = paths.registry_path
+    entities = resolve_entities(extractions, tmap, registry_path)
+
+    # Screening runs on the fast model: it only narrows ~840 entities down to
+    # candidate groups, and a human confirms every one before it is written.
+    groups = propose(entities, cfg.for_tier("standard"))
+    report = render_report(groups, entities)
+    out = Path(args.out) if args.out else paths.conflicts_dir / "merge_proposals.md"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(report, encoding="utf-8")
+
+    by_conf = Counter(g.confidence for g in groups)
+    log.info(
+        "%d merge group(s) proposed over %d entities (%s). Report: %s",
+        len(groups),
+        len(entities),
+        ", ".join(f"{k}={v}" for k, v in by_conf.most_common()),
+        out,
+    )
+    log.info("Nothing was written to the registry — confirm the groups first.")
     return 0
 
 
@@ -275,6 +332,13 @@ def _build_parser() -> argparse.ArgumentParser:
     extract = sub.add_parser("extract", help="Extraction stage only (fills cache)")
     _add_common(extract)
     extract.set_defaults(func=cmd_extract)
+
+    dedup = sub.add_parser(
+        "dedup", help="Propose entity merges for review (writes a report only)"
+    )
+    _add_common(dedup)
+    dedup.add_argument("--out", help="Report path (default: conflicts/merge_proposals.md)")
+    dedup.set_defaults(func=cmd_dedup)
 
     check = sub.add_parser("check", help="Verify config + count transcripts (no LLM calls)")
     check.add_argument("--transcripts", help="Directory of *.json transcripts")

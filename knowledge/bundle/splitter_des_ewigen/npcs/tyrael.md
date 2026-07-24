@@ -10,7 +10,7 @@ timestamp: '2026-03-03T00:00:00Z'
 
 # Tyrael
 
-Ein untoter, sehr mächtiger Magier (Lich). Er ist der Autor eines Buches über [Vorgulta](../gods/vorgulta.md), das er als Anhänger des alten Gottes über einen langen Zeitraum verfasst hat. Das Werk enthält unvollständige Anleitungen zur Seelenmagie.
+Ein untoter, sehr mächtiger Magier (Lich). Er ist der Autor eines Buches über [Vorgul'Thar](../deities/vorgulta.md) (in Sitzungen als Vorgulta bezeichnet), das er als Anhänger des alten Gottes über einen langen Zeitraum verfasst hat. Das Werk enthält unvollständige Anleitungen zur Seelenmagie.
 
 Tyrael untersuchte den Dämon in [Lindo Laut](../locations/lindo_laut.md) und warnte vor dessen Macht.
 

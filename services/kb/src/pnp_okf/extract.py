@@ -67,12 +67,6 @@ def _extract_json_block(text: str) -> str:
     return m.group(1).strip() if m else text.strip()
 
 
-@retry(
-    reraise=True,
-    stop=stop_after_attempt(4),
-    wait=wait_exponential(multiplier=2, min=2, max=30),
-    retry=retry_if_exception_type(Exception),
-)
 def _call_llm_structured(client, cfg: DeepSeekConfig, messages: list) -> SessionExtraction:
     """Attempt extraction via OpenAI structured-outputs (beta.parse).
 
@@ -80,6 +74,11 @@ def _call_llm_structured(client, cfg: DeepSeekConfig, messages: list) -> Session
     json_schema mode (per pnp-graph-service's experience); raises an
     exception (caught by the caller) so `_call_llm` falls back to the
     JSON-prompt path below.
+
+    Deliberately *not* retried: an unsupported endpoint answers 400 every
+    time, so retrying only multiplies the probe cost by four on every
+    session before the fallback runs. Transient failures are still covered
+    by the retry on the fallback path.
     """
     completion = client.beta.chat.completions.parse(
         model=cfg.model,

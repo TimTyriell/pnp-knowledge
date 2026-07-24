@@ -5,7 +5,7 @@ description: Ein Feen-Barde (Troubadour), der gut pfeifen kann und seine Gefähr
   mit Musik inspiriert und heilt. Er liest die Beschwörungsformel vor,…
 tags:
 - characters
-timestamp: '2026-03-03T00:00:00Z'
+timestamp: '2026-03-10T00:00:00Z'
 ---
 
 # Lindo Laut
@@ -26,15 +26,19 @@ Lindo ist ein charismatischer und neugieriger Charakter, der sich gerne vorstell
 
 *   **Amulett des Heiligen Duran:** Ein mächtiges, aber gefährliches Artefakt, das Lindo trägt. Es enthält drei gefangene Seelenstücke und übt eine dunkle Präsenz auf ihn aus. Es ermöglichte ihm, ein mächtiges Fluchtportal zu öffnen, zieht ihn aber auch zu Schreinen und flüstert ihm zu, Opfer zu bringen.
 *   **Dolch (Dagger):** Ein Dolch, den er von [Brass](brass.md) erhielt.
-*   **Zauberstab:** Ein portalfähiger Zauberstab, den er von [Vasul](../gods/vasul.md) (auch bekannt als Tyrex) erhielt, nachdem er eine wichtige Rolle bei dessen Wiederbelebung spielte.
+*   **Zauberstab:** Ein portalfähiger Zauberstab, den er von [Vhar'Zul](../deities/vharzul.md) (auch bekannt als Tyrex) erhielt, nachdem er eine wichtige Rolle bei dessen Wiederbelebung spielte.
 
-## Die Verbindung zu Vasul und die innere Dunkelheit
+## Die Verbindung zu Vhar'Zul und die innere Dunkelheit
 
-Lindo hat eine besondere Verbindung zum alten Gott [Vasul](../gods/vasul.md). Er trägt ein Fragment des Gottes in sich, das sich als eine zweite, dämonische Seele namens **Slix** manifestiert. Diese Verbindung macht ihn zu einer Gefahr für die Welt und führt dazu, dass der Gott [Belorus](../gods/belorus.md) persönlich erscheint, um ihn zu töten.
+Lindo hat eine besondere Verbindung zum alten Gott [Vhar'Zul](../deities/vharzul.md). Er trägt ein Fragment des Gottes in sich, das sich als eine zweite, dämonische Seele namens **Slix** manifestiert. Diese Verbindung macht ihn zu einer Gefahr für die Welt und führt dazu, dass [Belorus](../npcs/belorus.md) persönlich erscheint, um ihn zu töten.
 
-Unter dem Einfluss der Stimmen aus seinem Amulett und der Macht in ihm verwandelt sich Lindo kurzzeitig in eine dämonischere Form mit vampirähnlichen Zügen und roten Augen. Er wird von dem Drang heimgesucht, Opfer zu bringen, kann aber mehrfach die Kontrolle behalten. Er fungiert als Kanal für Vasuls Macht, verbannt Dämonen und kann Seelen nach Abyssalis schicken. Er überzeugt [Belorus](../gods/belorus.md) schließlich, dass sein Tod Vasul nur stärken würde.
+Unter dem Einfluss der Stimmen aus seinem Amulett und der Macht in ihm verwandelt sich Lindo kurzzeitig in eine dämonischere Form mit vampirähnlichen Zügen und roten Augen. Er wird von dem Drang heimgesucht, Opfer zu bringen, kann aber mehrfach die Kontrolle behalten. Er fungiert als Kanal für Vhar'Zuls Macht, verbannt Dämonen und kann Seelen nach [Abisalis](../domains/abisalis.md) schicken. Er überzeugt [Belorus](../npcs/belorus.md) schließlich, dass sein Tod Vhar'Zul nur stärken würde.
 
 Um seine Freunde zu schützen, lässt er sich magische Handschellen anlegen, die seine Kräfte und die Verbindung zu Slix unterdrücken. In diesem Zustand ist er auf eine Armbrust angewiesen und wirkt ruhiger und unauffälliger. Später sucht er nach einem Verwandlungstrank und nimmt die neue Identität **"Pedro die Katze"** an.
+
+## Spielerwechsel und Persönlichkeitswandel
+
+Lindo Laut wurde ursprünglich von Tim gespielt; ab Session 2026-03-10 wird er von Pedro übernommen. Der Charakter zeigt sich seither besonnener und einfühlsamer, übernimmt eine beruhigende Rolle innerhalb der Gruppe (etwa gegenüber Vampiren) und tröstet [Lunara](../npcs/lunara.md) in angespannten Situationen. [Voras](../npcs/voras.md) bezeichnet ihn als "das ganze Übel", da er etwas in sich trägt — die genaue Natur davon ist bislang nicht näher bekannt (vermutlich ein Verweis auf das Vhar'Zul-Fragment).
 
 ## Wichtige Beziehungen
 
@@ -43,9 +47,10 @@ Um seine Freunde zu schützen, lässt er sich magische Handschellen anlegen, die
 *   **[Cookie](../npcs/cookie.md):** Macht ihn unsichtbar und kämpft an seiner Seite.
 *   **[Brass](brass.md):** Erhält einen Dolch von ihm.
 *   **[Esterossa](esterossa.md):** Wirkt Unsichtbarkeit auf sie und springt für sie ein.
-*   **[Vasul](../gods/vasul.md):** Trägt ein Fragment des alten Gottes in sich und dient als sein Kanal.
-*   **[Belorus](../gods/belorus.md):** Wird von ihm als Bedrohung gejagt, kann ihn aber von seiner Sache überzeugen.
-*   **[Lunara](../npcs/lunara.md):** Befreit ihn von Slix' Übernahme.
+*   **[Vhar'Zul](../deities/vharzul.md):** Trägt ein Fragment des alten Gottes in sich und dient als sein Kanal.
+*   **[Belorus](../npcs/belorus.md):** Wird von ihm als Bedrohung gejagt, kann ihn aber von seiner Sache überzeugen.
+*   **[Lunara](../npcs/lunara.md):** Befreit ihn von Slix' Übernahme; wird von ihm getröstet.
+*   **[Voras](../npcs/voras.md):** Zeigt sich ihm gegenüber kritisch und hinterfragend, insbesondere zu dessen Plänen und den Göttern.
 
 # Belege
 
@@ -80,3 +85,4 @@ Um seine Freunde zu schützen, lässt er sich magische Handschellen anlegen, die
 29. Session 2026-02-17 @ 00:00:41
 30. Session 2026-02-24 @ 00:03:57
 31. Session 2026-03-03 @ 00:03:35
+32. Session 2026-03-10 @ 00:10:47, https://www.youtube.com/watch?v=Kr9_AC2XtOw

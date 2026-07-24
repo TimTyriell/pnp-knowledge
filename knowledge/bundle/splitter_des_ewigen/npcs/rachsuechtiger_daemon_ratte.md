@@ -10,7 +10,7 @@ timestamp: '2025-09-06T00:00:00Z'
 
 # Rachsüchtiger Dämon (Ratte)
 
-Ein dämonisches Wesen, das einen uralten Vertrag mit [Vasul](../goetter/vasul.md) besitzt. Der Vertrag umfasst die Forderung nach 10.000 Seelen sowie Halbgöttern.
+Ein dämonisches Wesen, das einen uralten Vertrag mit [Vhar'Zul](../deities/vharzul.md) besitzt. Der Vertrag umfasst die Forderung nach 10.000 Seelen sowie Halbgöttern.
 
 ## Bekannte Handlungen
 

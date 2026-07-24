@@ -27,6 +27,8 @@ class EntityType(str, Enum):
     FACTION = "Faction"
     ITEM = "Item"
     EVENT = "Event"
+    DEITY = "Deity"
+    DOMAIN = "Domain"
 
 
 # Subdirectory (concept-id prefix) for each entity type.
@@ -37,6 +39,8 @@ TYPE_DIR: dict[EntityType, str] = {
     EntityType.FACTION: "factions",
     EntityType.ITEM: "items",
     EntityType.EVENT: "events",
+    EntityType.DEITY: "deities",
+    EntityType.DOMAIN: "domains",
 }
 
 
@@ -56,6 +60,8 @@ ID_PREFIX: dict[EntityType, str] = {
     EntityType.FACTION: "FACTION",
     EntityType.ITEM: "ITEM",
     EntityType.EVENT: "EVENT",
+    EntityType.DEITY: "DEITY",
+    EntityType.DOMAIN: "DOMAIN",
 }
 
 
@@ -151,8 +157,11 @@ class EntityMention(BaseModel):
     name: str = Field(description="Name of the entity as it appears in the session.")
     type: EntityType
     note: str = Field(
-        description="One or two German sentences summarizing what this session "
-        "reveals about the entity."
+        description="German summary of what this session reveals about the "
+        "entity. Depth depends on the entity's role in THIS session: 4-8 "
+        "sentences with concrete details (actions, decisions, dialogue, "
+        "changes, relationships) for entities central to the session; 1-2 "
+        "sentences for incidental mentions."
     )
     citation_ts: str = Field(
         description="Timestamp HH:MM:SS of the moment supporting the note."
@@ -163,8 +172,10 @@ class SessionExtraction(BaseModel):
     """Structured output produced by the map/extraction stage for a session."""
 
     recap: str = Field(
-        description="A concise German recap (5-10 sentences) of what happened "
-        "in this session."
+        description="A detailed German recap (500-900 words) of this session: "
+        "an opening plain-prose paragraph with no heading, followed by the "
+        "chronological course of play split into scenes, each under a '## ' "
+        "heading."
     )
     entities: list[EntityMention] = Field(default_factory=list)
 
@@ -191,6 +202,7 @@ class CanonicalEntity(BaseModel):
     canonical_name: str
     aliases: list[str] = Field(default_factory=list)
     mentions: list[MentionRef] = Field(default_factory=list)
+    important: bool = False  # hand-set in the registry; forces the deep tier
 
     @property
     def entity_id(self) -> str:
@@ -198,3 +210,33 @@ class CanonicalEntity(BaseModel):
 
         slug = self.concept_id.rsplit("/", 1)[-1]
         return f"{ID_PREFIX[self.type]}_{slug.upper()}"
+
+    @property
+    def tier(self) -> str:
+        """Synthesis depth tier: ``deep``, ``standard`` or ``brief``.
+
+        Mention count alone is a poor importance signal — a pivotal NPC whose
+        name was transcribed three different ways shows up as three concepts
+        with one mention each. So the deep tier is the union of three rules:
+        the hand-set ``important`` flag from the registry (for exactly those
+        cases), the small closed types that always matter (player characters
+        and deities), and a high mention count.
+        """
+
+        if self.important or self.type in ALWAYS_DEEP_TYPES:
+            return "deep"
+        if len(self.mentions) >= DEEP_MENTION_THRESHOLD:
+            return "deep"
+        if len(self.mentions) >= 2 or self.type in ALWAYS_STANDARD_TYPES:
+            return "standard"
+        return "brief"
+
+
+# Types whose members are always worth a full entry: player characters are the
+# spine of the campaign, and deities are a small, lore-heavy closed set.
+ALWAYS_DEEP_TYPES = {EntityType.CHARACTER, EntityType.DEITY}
+
+# Small closed sets that deserve more than a stub even on a single mention.
+ALWAYS_STANDARD_TYPES = {EntityType.DOMAIN, EntityType.FACTION}
+
+DEEP_MENTION_THRESHOLD = 8
