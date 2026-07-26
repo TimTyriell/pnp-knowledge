@@ -1,0 +1,171 @@
+"""Apply the confirmed identity merges and set the ``important`` flags.
+
+Second half of the human-in-the-loop dedup pass (see apply_merges.py). Both
+lists are explicit: nothing is inferred, so re-running is idempotent.
+
+    python apply_important.py            # dry run
+    python apply_important.py --write    # update knowledge/entity_registry.yaml
+"""
+
+from __future__ import annotations
+
+import argparse
+import logging
+import re
+import sys
+from pathlib import Path
+
+import yaml
+
+sys.path.insert(0, str(Path(__file__).parent / "src"))
+
+from pnp_okf.config import DeepSeekConfig, Paths  # noqa: E402
+from pnp_okf.extract import _cache_key, _cache_path, _load_cached  # noqa: E402
+from pnp_okf.ingest import load_transcripts  # noqa: E402
+from pnp_okf.resolve import resolve_entities  # noqa: E402
+
+# User-confirmed identities that no string method could find.
+LATE_MERGES: dict[str, list[str]] = {
+    # "Lenra the Hag": the crypt necromancer and the moor-witch behind the
+    # goblin attack are one person. ("Hack" = Hag, also used as a species.)
+    "npcs/lenra": ["npcs/hack"],
+    # "Enox (Gildenmeister)" is transcription drift for Nox, who the entry
+    # itself calls the Gildenmeister of the Dwarfmaster guild.
+    "npcs/nox": ["npcs/gildenmeister"],
+}
+
+# ``important: true`` forces the deep tier regardless of mention count — the
+# override for entities the automatic rules underrate.
+IMPORTANT: dict[str, list[str]] = {
+    "named major NPCs": [
+        "npcs/voras_der_heilige_der_schrecken",
+        "npcs/belorus",
+        "npcs/lenra",
+        "npcs/nox",
+    ],
+    "recurring major NPCs": [
+        "npcs/slix_vasul",
+        "npcs/slix",
+        "npcs/tyrael",
+        "npcs/sandro",
+        "npcs/tindrael",
+        "npcs/roland",
+        "npcs/koenig_zebros",
+    ],
+    "settlements": [
+        "locations/cornivum",
+        "locations/brandau",
+        "locations/sanddorninseln",
+        "locations/jalan",
+        "locations/boragdil",
+        "locations/burg_zebros",
+        "locations/casa_del_cookie",
+    ],
+    # Gods from the pantheon scripture that appear rarely in play. They pull
+    # their depth from knowledge/sources/ rather than from session evidence.
+    "pantheon deities": [
+        "deities/akastrale",
+        "deities/gruul",
+        "deities/cepros",
+        "deities/coram_schildbrecher",
+        "deities/kaleandra_die_rote",
+        "deities/sitravil",
+        "deities/neiraj",
+        "deities/holodarn",
+        "deities/bodrak",
+        "deities/stiller_gott",
+        "deities/kol_meref",
+        "deities/seras",
+        "deities/huludan",
+        "deities/joran_der_muenzenzaehler",
+        "deities/heiliger_duran",
+        "deities/alter_schlangengott",
+        "deities/ohoriaks",
+    ],
+}
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--write", action="store_true")
+    args = ap.parse_args()
+    logging.disable(logging.WARNING)
+
+    paths = Paths.resolve(
+        "C:/dev/pnp/pnp-crawl/transcripts_final",
+        "C:/dev/pnp/pnp-knowledge/knowledge/bundle/splitter_des_ewigen",
+        "C:/dev/pnp/pnp-knowledge/services/kb/.cache",
+    )
+    cfg = DeepSeekConfig.from_env()
+    transcripts = load_transcripts(paths.transcript_dir)
+    extractions = {
+        t.session_id: c
+        for t in transcripts
+        if (c := _load_cached(_cache_path(paths.cache_dir, t), _cache_key(t, cfg)))
+    }
+    entities = resolve_entities(
+        extractions, {t.session_id: t for t in transcripts}, paths.registry_path
+    )
+    by_id = {e.concept_id: e for e in entities}
+
+    # 1. late merges -> name/alias keys pointing at the survivor
+    new_merges: dict[str, str] = {}
+    for canonical, losers in LATE_MERGES.items():
+        if canonical not in by_id:
+            print(f"!! canonical missing: {canonical}")
+            continue
+        for loser in losers:
+            e = by_id.get(loser)
+            if e is None:
+                print(f"!! absorbed missing: {loser}")
+                continue
+            for name in [e.canonical_name, *e.aliases]:
+                if name:
+                    new_merges[name.strip().lower()] = canonical
+            print(f"merge  {loser:45} -> {canonical}")
+
+    # 2. important flags
+    flagged, missing = [], []
+    for group, ids in IMPORTANT.items():
+        for cid in ids:
+            (flagged if cid in by_id else missing).append(cid)
+    print(f"\nimportant: {len(flagged)} found, {len(missing)} not present")
+    for m in missing:
+        print(f"   missing: {m}")
+
+    if not args.write:
+        print("\nDry run. Re-run with --write.")
+        return 0
+
+    raw = paths.registry_path.read_text(encoding="utf-8")
+    doc = yaml.safe_load(raw) or {}
+    doc.setdefault("merge", {}).update(new_merges)
+
+    ents = doc.get("entities") or []
+    index = {str(e.get("concept_id", "")): e for e in ents}
+    added = 0
+    for cid in flagged:
+        entry = index.get(cid)
+        if entry is None:
+            # The entities list is regenerated by write_registry on the next
+            # run; a stub here is enough to carry the flag across.
+            entry = {"concept_id": cid, "type": by_id[cid].type.value,
+                     "canonical_name": by_id[cid].canonical_name, "aliases": []}
+            ents.append(entry)
+            added += 1
+        entry["important"] = True
+    doc["entities"] = ents
+
+    header = re.split(r"^merge:", raw, maxsplit=1, flags=re.MULTILINE)[0]
+    paths.registry_path.write_text(
+        header + yaml.safe_dump(doc, sort_keys=False, allow_unicode=True),
+        encoding="utf-8",
+    )
+    print(f"\nmerge entries: {len(doc['merge'])}, important flags: {len(flagged)}"
+          f" ({added} new stub entries)")
+    print(f"written: {paths.registry_path}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

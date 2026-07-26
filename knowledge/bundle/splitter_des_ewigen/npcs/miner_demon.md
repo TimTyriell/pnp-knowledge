@@ -1,16 +1,16 @@
 ---
 type: NPC
 title: Miner Demon
-description: Ein feuerbeschwörender Dämon (Tier 1, Solo), Anhänger der alten Gottheiten.
-  Er ist intelligent, telepathisch unempfänglich für Lindos Kommu…
+description: Der Minendämon ist eine Tier-1-Solokreatur, die aus dem Rift erscheint.
+  Er ist skelettartig mit Fleischresten, trägt eine Axt und hat eine…
 tags:
 - npcs
 timestamp: '2025-05-27T00:00:00Z'
+id: NPC_MINER_DEMON
 ---
 
-# Miner Demon
-
-Ein feuerbeschwörender Dämon, der den alten Gottheiten dient. Er ist ein intelligenter Gegner der Stufe 1 (Solo), der sich telepathischen Kommunikationsversuchen widersetzt – so blieben [Lindos](../characters/lindo.md) Versuche, mit ihm in Kontakt zu treten, erfolglos. Im Kampf setzt er verheerende Angriffe wie *Hellfire* und *Reaper* ein.
+Der **Miner Demon** ist eine Tier-1-Solokreatur, die aus einem Rift erscheint. Er hat ein skelettartiges Äußeres mit Fleischresten, trägt eine Axt und wird von einer dunklen Aura umgeben. Seine Fähigkeiten umfassen *Höllenfeuer* (ein Flächenangriff, der Brand verursacht) und *Reaper* (das seinen Schaden basierend auf seinen markierten TP erhöht). Der Dämon ist intelligent, kommuniziert jedoch nicht und dient den Alten Göttern. Im Kampf setzte er einen Turm in Brand und griff mit zwei Hieben an; besiegt wurde er erst durch konzentrierten Beschuss. Nach seinem Tod löste er sich in Energie auf, die zurück in das Portal gesaugt wurde.
 
 # Belege
-1. Session 2025-05-27, 00:46:26 – https://www.youtube.com/watch?v=bamCIB_CkR8
+
+1. Session 2025-05-27 @ 01:00:00 (https://www.youtube.com/watch?v=bamCIB_CkR8)

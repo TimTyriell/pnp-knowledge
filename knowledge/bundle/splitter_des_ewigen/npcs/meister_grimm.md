@@ -1,16 +1,15 @@
 ---
 type: NPC
 title: Meister Grimm
-description: Ein zwergischer Überlebender, der leicht aufbrausend und misstrauisch
-  ist. Er trauert um den gefallenen Prinzen Bran.
+description: Meister Grimm ist der zweite Zwerg, ein grimmiger und misstrauischer
+  Krieger. Er reagiert gereizt auf Rotunas‘ flapsige Bemerkung über den…
 tags:
 - npcs
 timestamp: '2025-09-09T00:00:00Z'
+id: NPC_MEISTER_GRIMM
 ---
 
-# Meister Grimm
-
-Meister Grimm ist ein zwergischer Überlebender, der durch den Verlust von [Prinz Bran](../characters/prinz_bran.md) geprägt ist. Er trauert um den gefallenen Prinzen und zeigt sich in seinem Auftreten leicht aufbrausend sowie misstrauisch gegenüber anderen.
+**Meister Grimm** ist ein grimmiger und misstrauischer Zwergenkrieger, der [Brandoran](/npcs/brandoran.md) begleitet. Er reagiert gereizt auf Rotunas‘ flapsige Bemerkung über den Prinzen und droht mit seinem Streitkolben, beruhigt sich jedoch später und beteiligt sich an der Flucht aus der Stadt. Im Vergleich zu Brandoran ist er deutlich vorsichtiger und misstrauischer.
 
 # Belege
-1. Session 2025-09-09 @ 01:21:36 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
+1. Session 2025-09-09 @ 01:22:38 – https://www.youtube.com/watch?v=Zl0qfuI6Goc

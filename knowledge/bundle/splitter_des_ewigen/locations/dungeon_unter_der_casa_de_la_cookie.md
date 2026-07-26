@@ -1,22 +1,15 @@
 ---
 type: Location
 title: Dungeon unter der Casa de la Cookie
-description: Ein tief in die Erde führender, feuchter Dungeon mit Dschungelbewuchs,
-  süßlichem Verwesungsgeruch, giftigen Gasen und einem Raum voller auf…
+description: Ein feuchter, von Dschungelgewächsen durchsetzter Untergrundkomplex mit
+  tückischen Gasen, Schlamm, gestapelten Skeletten und giftigen Stink…
 tags:
 - locations
 timestamp: '2026-02-11T00:00:00Z'
+id: LOC_DUNGEON_UNTER_DER_CASA_DE_LA_COOKIE
 ---
 
-# Dungeon unter der Casa de la Cookie
-
-Ein tief in die Erde führender Dungeon, der sich unter der [Casa de la Cookie](casa_de_la_cookie.md) befindet.
-
-## Beschreibung
-- **Atmosphäre:** Feucht, mit Dschungelbewuchs durchzogen.
-- **Geruch:** Süßlicher Verwesungsgeruch liegt in der Luft.
-- **Gefahren:** In den Tunneln treten giftige Gase aus.
-- **Besonderheiten:** Ein Raum ist voller aufgestapelter Skelette.
+Der Dungeon unter der Casa de la Cookie ist ein feuchter, von Dschungelgewächsen durchsetzter Untergrundkomplex. Er enthält tückische Gase, Schlamm, gestapelte Skelette und giftige Stinkpflanzen. Im Inneren befinden sich ein Altar und Artefakte des alten Gottes Tarvok. Die Gruppe drang bis zu einem unpassierbaren Gasvorhang vor und musste sich zurückziehen; eine große Statue und seltsame Kristalle deuten auf tiefere Geheimnisse hin.
 
 # Belege
-1. Session 2026-02-11 @ 00:01:24 (https://www.youtube.com/watch?v=3C8SD-cyNPM)
+1. Session 2026-02-11 @ 00:05:53 (https://www.youtube.com/watch?v=3C8SD-cyNPM)

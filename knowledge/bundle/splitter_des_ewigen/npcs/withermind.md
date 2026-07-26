@@ -1,24 +1,15 @@
 ---
 type: NPC
 title: Withermind
-description: Ein mächtiger Untoter mit einem großen Schwert, der gefallene Untote
-  wiederbeleben kann und eine Druckwelle als Angriff einsetzt.
+description: Ein großer untoter Krieger mit einem Buster-Schwert, der am Ende der
+  Session erscheint. Er kann gefallene Untote wiederbeleben und löschte…
 tags:
 - npcs
 timestamp: '2025-09-23T00:00:00Z'
+id: NPC_WITHERMIND
 ---
 
-# Withermind
-
-## Beschreibung
-Withermind ist ein mächtiger Untoter, der ein großes Schwert führt. Er verfügt über die Fähigkeit, gefallene Untote wiederzubeleben und setzt im Kampf eine zerstörerische Druckwelle ein.
-
-## Fähigkeiten
-- **Wiederbelebung:** Kann gefallene Untote wieder zum Leben erwecken.
-- **Druckwelle:** Setzt eine Druckwelle als Angriff ein.
-
-## Ausrüstung
-- Großes Schwert
+Withermind ist ein großer untoter Krieger, der mit einem Buster-Schwert kämpft und ein ganzes Kommando untoter Gegner anführt. Er kann gefallene Untote wiederbeleben und demonstrierte während eines Gefechts auf dem Pass überwältigende magische Fähigkeiten, indem er Rotunas' Feuerball mit einer einzigen Geste auslöschte. Sein mächtiger Flächenangriff – eine Welle, die Esterossa schwer traf – zwang die Gruppe, den Kampf gegen ihn aufzunehmen, um den Pass zu halten.
 
 # Belege
-1. Session 2025-09-23 @ 00:49:46 (https://www.youtube.com/watch?v=DGzfqVigS0g)
+1. Session 2025-09-23 @ 01:49:52 – [YouTube](https://www.youtube.com/watch?v=DGzfqVigS0g)

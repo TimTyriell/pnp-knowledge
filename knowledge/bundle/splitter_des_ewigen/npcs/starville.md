@@ -1,16 +1,15 @@
 ---
 type: NPC
 title: Starville
-description: Ein Kämpfer, der es in mehreren Disziplinen bis ins Finale geschafft
-  hat und von Mil als Ansprechpartner für Monsterkämpfe empfohlen wird.
+description: Starville ist ein erfahrener Kämpfer, der in mehreren Disziplinen zweiter
+  wurde. Er berichtet über den Ablauf der Monsterkämpfe und eine be…
 tags:
 - npcs
 timestamp: '2025-10-14T00:00:00Z'
+id: NPC_STARVILLE
 ---
 
-# Starville
-
-Starville ist ein Kämpfer, der in den Arenen von [Mil](../orte/mil.md) antritt und sich dort einen Namen gemacht hat. Er hat es in mehreren Kampfdisziplinen bis ins Finale geschafft. Aufgrund seiner Erfahrung und seines Könnens wird er von [Mil](../orte/mil.md) als Ansprechpartner für Monsterkämpfe empfohlen.
+Starville ist ein erfahrener Kämpfer, der in mehreren Disziplinen jeweils den zweiten Platz belegt hat. Er berichtet über den Ablauf der Monsterkämpfe und erwähnt eine besondere Kreatur namens Gedankenschinder, gegen die der Einsatz von Talismanen hilfreich war.
 
 # Belege
-1. Session 2025-10-14, 01:11:14 – https://www.youtube.com/watch?v=cUtz87UCHu4
+1. Session 2025-10-14 @ 01:17:46 (https://www.youtube.com/watch?v=cUtz87UCHu4)

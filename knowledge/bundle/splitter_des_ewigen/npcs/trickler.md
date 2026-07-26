@@ -1,16 +1,12 @@
 ---
 type: NPC
 title: Trickler
-description: Ein extrem alt und gebrechlich wirkender Magier, der die Gruppe in der
-  Taverne anspricht und für eine geheime Mission gegen die 'Silberkern…
+description: Trickler ist ein uralter, gebrechlicher Magier, der mit einer Gruppe
+  schwer bewaffneter Abenteurer auf einer wichtigen Mission gegen die Si…
 tags:
 - npcs
 timestamp: '2026-03-18T00:00:00Z'
+id: NPC_TRICKLER
 ---
 
-# Trickler
-
-Trickler ist ein extrem alt und gebrechlich wirkender Magier, der die Gruppe in einer Taverne anspricht. Er versucht, die Charaktere für eine geheime Mission gegen die "Silberkerne" anzuwerben. Insbesondere [Rotunas](../characters/rotunas.md) verhält sich ihm gegenüber misstrauisch.
-
-# Belege
-1. Session 2026-03-18, 00:53:48, https://www.youtube.com/watch?v=HHXxsASLrbQ
+Trickler ist ein uralter, gebrechlicher Magier, der mit einer Gruppe schwer bewaffneter Abenteurer auf einer wichtigen Mission gegen die Silberkerne unterwegs ist. In einer Taverne spricht er die Heldengruppe an, um sie für diesen entscheidenden Schlag anzuwerben. Er prahlt mit seinem uralten Grimoire und fordert Rotunas zu einem Kräftemessen heraus, um die Überlegenheit alter Magie zu beweisen. Rotunas misstraut ihm jedoch, da ein wirklich mächtiger Magier seinen Körper nicht so verfallen lassen würde. Trickler wird schließlich von seinen Kameraden zurückgerufen und humpelt schwerfällig davon.

@@ -166,6 +166,11 @@ class EntityMention(BaseModel):
     citation_ts: str = Field(
         description="Timestamp HH:MM:SS of the moment supporting the note."
     )
+    subtype: str = Field(
+        default="",
+        description="Category of the entity, chosen from the closed list given "
+        "for its type in the instructions. Empty for types with no list.",
+    )
 
 
 class SessionExtraction(BaseModel):
@@ -203,6 +208,7 @@ class CanonicalEntity(BaseModel):
     aliases: list[str] = Field(default_factory=list)
     mentions: list[MentionRef] = Field(default_factory=list)
     important: bool = False  # hand-set in the registry; forces the deep tier
+    subtype: str = ""  # closed-vocabulary category; groups the type's index
 
     @property
     def entity_id(self) -> str:
@@ -223,11 +229,15 @@ class CanonicalEntity(BaseModel):
         and deities), and a high mention count.
         """
 
-        if self.important or self.type in ALWAYS_DEEP_TYPES:
+        n = len(self.mentions)
+        if self.important or n >= DEEP_MENTION_THRESHOLD:
             return "deep"
-        if len(self.mentions) >= DEEP_MENTION_THRESHOLD:
+        # Type alone is not enough: a single passing mention cannot support a
+        # long entry, and demanding one only yields padding — the exact
+        # shallowness this tiering exists to fix. Needs corroboration first.
+        if self.type in ALWAYS_DEEP_TYPES and n >= 2:
             return "deep"
-        if len(self.mentions) >= 2 or self.type in ALWAYS_STANDARD_TYPES:
+        if n >= 2 or self.type in ALWAYS_DEEP_TYPES or self.type in ALWAYS_STANDARD_TYPES:
             return "standard"
         return "brief"
 
@@ -240,3 +250,40 @@ ALWAYS_DEEP_TYPES = {EntityType.CHARACTER, EntityType.DEITY}
 ALWAYS_STANDARD_TYPES = {EntityType.DOMAIN, EntityType.FACTION}
 
 DEEP_MENTION_THRESHOLD = 8
+
+
+# Closed subtype vocabulary per entity type. Deliberately closed: a free-form
+# label drifts ("Kampf"/"Schlacht"/"Gefecht") and the grouping it exists for
+# becomes worthless. Types not listed here carry no subtype.
+#
+# This is the seam to a future property graph: a subtype becomes a node label
+# (``(:Event:Kampf)``) and a grouped index becomes a query, so no collection
+# *entity* ever has to exist. A "Verträge" node would link unrelated contracts
+# and invent multi-hop paths between them; a label does not.
+SUBTYPES: dict[EntityType, tuple[str, ...]] = {
+    EntityType.EVENT: (
+        "Kampf", "Ritual", "Vertrag", "Reise", "Tod", "Verhandlung",
+        "Entdeckung", "Fest", "Sonstiges",
+    ),
+    EntityType.ITEM: (
+        "Waffe", "Rüstung", "Schmuck", "Schriftstück", "Trank", "Artefakt",
+        "Werkzeug", "Sonstiges",
+    ),
+    EntityType.LOCATION: (
+        "Siedlung", "Gebäude", "Wildnis", "Dungeon", "Festung", "Sonstiges",
+    ),
+    EntityType.FACTION: ("Gilde", "Bande", "Kult", "Volk", "Armee", "Sonstiges"),
+    EntityType.DEITY: ("Alter Gott", "Neuer Gott", "Halbgott", "Sonstiges"),
+}
+
+
+# Events are occurrences, not persistent beings, so their identity is bounded
+# in time. Every other type recurs and must cluster across the whole campaign.
+SESSION_SCOPED_TYPES = {EntityType.EVENT}
+
+# How many sessions one event may span. Real arcs run over a few sittings — the
+# tournament at Willauch took three or four — so a hard one-session rule would
+# shred them. The cap is a *span*, not a count: sessions 20-22 stay one event,
+# while a generic name reappearing in sessions 5 and 40 (span 36) does not,
+# which is the case that silently corrupts an entry.
+MAX_EVENT_SESSION_SPAN = 3

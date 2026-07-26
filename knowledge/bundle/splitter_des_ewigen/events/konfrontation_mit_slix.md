@@ -1,16 +1,15 @@
 ---
 type: Event
 title: Konfrontation mit Slix
-description: Nach Lindo Lauts Enthüllung über Kronos übernimmt Slix die Kontrolle,
-  bedroht die Gruppe und wird in einem Kampf von Lunara durch pure Will…
+description: In Lindos Pocket Domain eskalierte die Situation, als Slix die Kontrolle
+  übernahm. Er zwang Lunara zu Boden, wurde dann von Dodo und Estero…
 tags:
 - events
 timestamp: '2026-02-11T00:00:00Z'
+id: EVENT_KONFRONTATION_MIT_SLIX
 ---
 
-# Konfrontation mit Slix
-
-Nachdem [Lindo Laut](../npcs/lindo_laut.md) der Gruppe die Wahrheit über [Kronos](../npcs/kronos.md) offenbart hatte, übernahm [Slix](../npcs/slix.md) die Kontrolle über die Situation. Er bedrohte die Gruppe, woraufhin es zu einem Kampf kam. [Lunara](../characters/lunara.md) stellte sich Slix entgegen und besiegte ihn durch pure Willenskraft. Der Vorfall ließ die Gruppe zutiefst erschüttert zurück.
+Die Konfrontation mit Slix fand in Lindos Pocket Domain statt, als Slix, der verborgene fünfte Teil [Vhar'Zuls](/deities/vharzul.md), die Kontrolle übernahm. Er zwang Lunara zu Boden, wurde aber von [Dodo](/characters/dodo.md) und Esterossa angegriffen. Lunaras emotionale Reaktion brach seine Macht und befreite Lindo. Dieses Ereignis enthüllte die Bedrohung durch Lindos innere Dämonen und stellte das Vertrauen der Gruppe auf eine harte Probe.
 
 # Belege
-1. Session 2026-02-11, 01:32:51 – https://www.youtube.com/watch?v=3C8SD-cyNPM
+1. Session 2026-02-11 @ 01:33:41 (https://www.youtube.com/watch?v=3C8SD-cyNPM)

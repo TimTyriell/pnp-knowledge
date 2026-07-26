@@ -78,16 +78,23 @@ def link(concept_id: str, title: str) -> str:
 def write_index(
     directory: Path,
     sections: list[tuple[str, list[tuple[str, str, str]]]],
+    *,
+    sub_level: int | None = None,
 ) -> Path:
     """Write an ``index.md`` (no frontmatter) with grouped bullet lists.
 
     ``sections`` is a list of ``(heading, entries)`` where each entry is
     ``(title, relative_url, description)``.
+
+    With ``sub_level`` set, every section after the first is written at that
+    heading depth — used to nest subtype groups under the type's own heading
+    instead of listing them as siblings.
     """
 
     lines: list[str] = []
-    for heading, entries in sections:
-        lines.append(f"# {heading}")
+    for i, (heading, entries) in enumerate(sections):
+        depth = 1 if (sub_level is None or i == 0) else sub_level
+        lines.append(f"{'#' * depth} {heading}")
         lines.append("")
         for title, url, description in entries:
             suffix = f" - {description}" if description else ""

@@ -1,16 +1,15 @@
 ---
 type: NPC
 title: Marus
-description: Der Anführer der in der Nähe der Silbergruft lagernden Silberkornbande.
-  Er ist misstrauisch, aber kooperativ, nachdem die Gruppe ihr Wissen…
+description: Marus ist der Anführer einer Gruppe der Silberkornbande, die nahe der
+  Silbergruft lagert. Er begegnet den Helden anfangs misstrauisch, taut…
 tags:
 - npcs
 timestamp: '2026-02-24T00:00:00Z'
+id: NPC_MARUS
 ---
 
-# Marus
-
-Marus ist der Anführer der [Silberkornbande](../factions/silberkornbande.md), die in der Nähe der [Silbergruft](../locations/silbergruft.md) ihr Lager aufgeschlagen hat. Er begegnet Fremden zunächst mit Misstrauen, zeigt sich jedoch kooperativ, sobald die Gruppe glaubhaft ihr Wissen über die Bande unter Beweis stellt.
+Marus ist der Anführer einer Gruppe der [Silberkornbande](/factions/silberkornbande.md), die nahe der Silbergruft lagert. Anfangs begegnet er den Helden misstrauisch, taut aber auf, als diese ihr Wissen über [Sarina](/npcs/sarina.md) und [Harl](/npcs/harl.md) beweisen. Er gibt bereitwillig detaillierte Informationen über die Mine und lädt die Gruppe am Ende zum Feiern ein, nachdem er [Dodos](/characters/dodo.md) Lüge glaubt, dass nichts mehr zu holen sei.
 
 # Belege
-1. Session 2026-02-24 @ 00:44:54 (https://www.youtube.com/watch?v=WOFArbwDDIQ)
+1. Session 2026-02-24 @ 00:43:28 (https://www.youtube.com/watch?v=WOFArbwDDIQ)

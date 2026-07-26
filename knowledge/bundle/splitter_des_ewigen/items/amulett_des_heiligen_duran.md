@@ -1,37 +1,40 @@
 ---
 type: Item
 title: Amulett des Heiligen Duran
-description: Ein mächtiges, verderbtes Artefakt, das von der Priesterin Auranil
-  übergeben wird und mehrere Seelen der zersplitterten Macht Vhar'Zuls enthält.
-  Drängt seinen Träger zu Opferungen und Machtergreifung.
+description: 'Ein mächtiges magisches Amulett, das einst dem Heiligen Duran gehörte.
+  Es verleiht dem Träger enorme arkanische Kraft: Lindo Laut spürte, w…'
 tags:
 - items
-timestamp: '2025-08-20T00:00:00Z'
+timestamp: '2025-11-14T00:00:00Z'
+id: ITEM_AMULETT_DES_HEILIGEN_DURAN
+aliases:
+- Amulett des Duran
+- Amulett der Vier
+- Die Geister im Amulett
+- Amulett (Medaillon)
+- Amulett (Stimmen)
+- Amulett
 ---
 
 # Amulett des Heiligen Duran
 
-Ein mächtiges, verderbtes Artefakt, das von der Priesterin [Auranil](../npcs/auranil.md) übergeben wurde. Es verlieh [Lindo Laut](../characters/lindo_laut.md) genug Kraft, um ein Portal zur Flucht zu erschaffen. Es stellt eine direkte Verbindung zum Gott [Vhar'Zul](../deities/vharzul.md) her, dessen zersplitterte Macht als mehrere gebundene Seelen/Stimmen im Amulett enthalten ist — darunter [Esua](../npcs/esua.md) und [Kol Meref](../deities/kol_meref.md).
+Das **Amulett des Heiligen Duran** ist ein mächtiges magisches Artefakt, das einst dem legendären Heiligen Duran gehörte. Es gelangte durch die Priesterin Auranil in den Besitz von [Lindo Laut](/characters/lindo_laut.md), der es fortan an einer Kette trug. Anfänglich verlieh es dem Träger enorme arkanische Kraft – Lindo konnte damit ein Portal öffnen, nachdem frühere Versuche gescheitert waren. Nach einem Kampf im Buch verfärbte sich das Amulett tiefrot und begann zu vibrieren; es offenbarte sich als Behältnis für vier Seelenfragmente alter Götter. Diese Geister forderten Lindo zu Gewalt und Opfern auf und trieben ihn an den Rand der Verderbnis. Nach der finalen Aktion im Zielbereich wurde das Amulett leer und wertlos.
 
-## Eigenschaften und Wirkung
+## Macht und die Geister darin
 
-*   **Enthaltene Stimmen:** Mehrere Wesen, darunter Esua und Kol Meref; die Zahl der gefangenen Seelen wird an unterschiedlichen Punkten der Kampagne mit drei bzw. vier beziffert.
-*   **Einfluss:** Die Stimmen drängen den Träger unablässig zu Opferungen und Machtergreifung — bis hin zur konkreten Aufforderung, in ein Herz zu beißen.
-*   **Umgebungsreaktion:** Das Amulett wird in der Nähe von Tempeln und Schreinen stärker und zieht seinen Träger dorthin.
-*   **Eigenständiger Wille:** Es zeigt Handlungsmacht — es versuchte etwa, [Lindo Laut](../characters/lindo_laut.md) davon abzuhalten, [Nerash](../deities/nerash.md) zu befreien, indem es ihm Macht anbot.
+Das Amulett enthielt ursprünglich vier Seelenfragmente alter Götter: Koll, Glut, Vortrex und ein weiteres Wesen. Eines der Fragmente war bereits von Nerash vernichtet worden; die verbliebenen drei Geister – in späteren Belegen als Esua, Tyrex, Sintra benannt – gewannen zunehmend an Stärke. Sie kommunizierten mit Lindo, nannten ihn „Meister“ und drängten ihn zu Opfern und Gewaltakten. So forderten sie ein Blutopfer in Zusammenhang mit dem Brunnen und verlangten, dass Lindo in ein Herz beiße. Die Geister zehrten an der Umgebungsmagie und versuchten, Lindos Handlungen zu lenken. Nachdem die Gruppe die Phiole erreichte und die finale Aktion durchführte, schrien die Stimmen vor Hass und Furcht und verstummten für immer. Das Amulett wurde daraufhin zu einem leeren, wertlosen Gegenstand.
 
-## Träger
+## Wirkung auf Lindo Laut
 
-Ursprünglich von [Lindo Laut](../characters/lindo_laut.md) getragen. Nach dem Kampf in der Buchebene wurde es von [Rotunas](../npcs/rotunas.md) getragen; äußerlich zeigte es sich danach verdunkelt mit einem tief dunkelroten Punkt.
-
-## Aktueller Zustand
-
-Nachdem die bösartigen Seelen [Esua](../npcs/esua.md) und [Sintra](../npcs/sintra.md) vernichtet wurden, fühlt sich das Amulett nun leer an. Zuvor enthielt es auch die Seele von Tyrex (dem von [Vhar'Zul](../deities/vharzul.md) übernommenen Körper).
+Lindo Laut spürte die Kraft des Amuletts sofort: Es machte ihn leichter, ließ Energie durch seinen Körper fließen und befähigte ihn zu Zaubern, die normalerweise außerhalb seiner Fähigkeiten lagen. Schon bei der Übergabe fühlte er ein warmes Pochen und ein Erkennen, als ob das Artefakt auf ihn gewartet hätte. Mit seiner Hilfe öffnete er das rettende Portal zum Schiff. Doch bald zeigte sich die dunkle Seite: Die Geister beschimpften ihn als schwach und feige, flüsterten ihm ein, seine Autorität gegenüber Esterossa durchzusetzen, und drängten zu immer radikaleren Taten. Lindo widerstand mehrfach der Versuchung – er nutzte die dunkle Kraft, um [Cookie](/characters/cookie.md) zu heilen, lehnte es aber ab, den Gildemeister zu desintegrieren. Sowohl der Graf als auch der Gildemeister erkannten die Gefahr und rieten, das Amulett loszuwerden. Lindo trug es dennoch bis zum Schluss, bis es nach der Konfrontation mit den Stimmen seine Macht verlor.
 
 # Belege
-1. Session 2025-05-06, 01:30:45 - https://www.youtube.com/watch?v=e0v6AFGd4mE
-2. Session 2025-06-25, 00:29:17 – https://www.youtube.com/watch?v=tpkO9uGw6-I
-3. Session 2025-07-09, 00:08:15 – https://www.youtube.com/watch?v=XOnHa6CmDbo
-4. Session 2025-08-12, 00:51:52 – https://www.youtube.com/watch?v=vHIjua0BZ9Y
-5. Session 2025-08-20, 00:07:30 – https://www.youtube.com/watch?v=-XbO3FLSL_I
-6. Session 2025-09-02, 00:59:05 – https://www.youtube.com/watch?v=TLZOH7TlGhk
+
+1. Session 2025-05-06 @ 01:33:08 – https://www.youtube.com/watch?v=e0v6AFGd4mE  
+2. Session 2025-06-25 @ 01:29:29 – https://www.youtube.com/watch?v=tpkO9uGw6-I  
+3. Session 2025-07-22 @ 02:44:27 – https://www.youtube.com/watch?v=BRRCUgW4xRo  
+4. Session 2025-08-12 @ 00:51:34 – https://www.youtube.com/watch?v=vHIjua0BZ9Y  
+5. Session 2025-08-20 @ 00:07:30 – https://www.youtube.com/watch?v=-XbO3FLSL_I  
+6. Session 2025-09-02 @ 02:16:27 – https://www.youtube.com/watch?v=TLZOH7TlGhk  
+7. Session 2025-11-14 @ 00:58:14 – https://www.youtube.com/watch?v=8Khb-Y8XbKY  
+8. Kapitel 6 — Das Amulett aus *Der Splitter des Ewigen* (Zusatzquelle)

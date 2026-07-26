@@ -1,25 +1,15 @@
 ---
 type: NPC
 title: Mimic
-description: Eine als riesige Muschel getarnte Kreatur, die Lindo Laut und Cookie
-  angreift. Sie verschlingt Cookie fast, wird aber von Dodo und Rotunas…
+description: Getarnt als dritte Muschel entpuppt sie sich als aggressive Mimic mit
+  Zähnen. Sie packt Cookie und kaut auf ihr herum, fügt schweren Schade…
 tags:
 - npcs
 timestamp: '2025-06-10T00:00:00Z'
+id: NPC_MIMIC
 ---
 
-# Mimic
-
-Ein als riesige Muschel getarnter Mimic, der in der Nähe des Strandes lauert.
-
-## Begegnung mit der Gruppe
-
-Der Mimic griff [Lindo Laut](../characters/lindo_laut.md) und [Cookie](../characters/cookie.md) an und verschlang Cookie beinahe. [Dodo](../characters/dodo.md) und [Rotunas](../characters/rotunas.md) rissen die Kreatur gemeinsam auf, woraufhin Dodo sie mit einem gezielten Schlag endgültig zerstörte.
-
-## Beute
-
-Im Inneren des Mimics fanden sich Gold sowie magische Handschuhe.
+Die **Mimic** war eine aggressive, als dritte Muschel getarnte Kreatur, die die Gruppe in einer Begegnung überraschte. Sie packte Cookie, kaut auf ihr und fügte schweren Schaden zu. Nachdem Lindo Laut mit einem Dolch eingriff, trennte Dodo mit einem Streitkolbenschlag die Schale ab, wodurch Cookie befreit wurde. Im Inneren der Mimic fanden die Abenteurer Gold und verbesserte arkane Kampfhandschuhe.
 
 # Belege
-
-1. Session 2025-06-10, 01:16:47 – https://www.youtube.com/watch?v=cLkCu3Iq3y8
+1. Session 2025-06-10 @ 01:16:47 (https://www.youtube.com/watch?v=cLkCu3Iq3y8) – Beschreibung der Mimic-Begegnung und des Kampfverlaufs.

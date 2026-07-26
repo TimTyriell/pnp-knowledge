@@ -17,8 +17,13 @@ from collections.abc import Iterable
 from pnp_okf.models import TYPE_DIR
 from pnp_okf.okf import slugify
 
-# Matches ``[label](/dir/slug.md)`` bundle-relative links.
-_LINK_RE = re.compile(r"\[([^\]]+)\]\((/[^)]*?\.md)\)")
+# Matches any markdown link to a ``.md`` target: bundle-absolute
+# (``/dir/slug.md``), document-relative (``../npcs/x.md``, ``./x.md``) or bare
+# (``x.md``). The synthesis prompt asks for relative paths while the emitted
+# convention is absolute, so a pattern anchored on a leading "/" silently let
+# every relative link through unchecked — unnormalized *and* uncounted by
+# validation. External URLs are excluded by the scheme guard.
+_LINK_RE = re.compile(r"\[([^\]]+)\]\((?!\w+:)([^)\s]*?\.md)\)")
 
 # Valid top-level concept directories (entity types + reserved ``sessions``).
 _VALID_DIRS: set[str] = set(TYPE_DIR.values()) | {"sessions"}
@@ -44,9 +49,24 @@ _DIR_ALIASES: dict[str, str] = {
     "gilden": "factions",
     "ereignisse": "events",
     "ereignis": "events",
-    "gottheiten": "npcs",
-    "goetter": "npcs",
-    "götter": "npcs",
+    # Deities and domains got their own directories; these used to point at
+    # npcs/ and would now silently mis-resolve a god onto an NPC.
+    "gottheiten": "deities",
+    "goetter": "deities",
+    "götter": "deities",
+    "gods": "deities",
+    "gott": "deities",
+    "reiche": "domains",
+    "ebenen": "domains",
+    "dimensionen": "domains",
+    "planes": "domains",
+    "player-characters": "characters",
+    "player_characters": "characters",
+    "spielercharaktere": "characters",
+    "pcs": "characters",
+    "monsters": "npcs",
+    "creatures": "npcs",
+    "kreaturen": "npcs",
     "kenku": "npcs",
     "sessionen": "sessions",
     "sitzungen": "sessions",
@@ -75,6 +95,12 @@ class ConceptIndex:
             return None
 
         parts = t.split("/")
+        # Drop leading "." / ".." segments from document-relative hrefs so the
+        # directory hint is the concept directory, not the traversal.
+        while parts and parts[0] in (".", ".."):
+            parts.pop(0)
+        if not parts:
+            return None
         base_raw = parts[-1]
         base = slugify(base_raw)
 
@@ -91,8 +117,8 @@ class ConceptIndex:
             for cand in (f"{dir_hint}/{base_raw}", f"{dir_hint}/{base_raw.lower()}", f"{dir_hint}/{base}"):
                 if cand in self.ids:
                     return cand
-        elif t in self.ids:
-            return t
+        elif "/".join(parts) in self.ids:
+            return "/".join(parts)
 
         # 2. Resolve by (slugified) basename, preferring the hinted directory.
         matches = self._by_basename.get(base)

@@ -1,30 +1,15 @@
 ---
 type: Item
 title: Das Buch
-description: Ein Buch, das Lunara vor zwölf Jahren Voras als Dank gab. Es konnte lange
-  nicht geöffnet werden, bis ein Hexenartefakt verwendet wurde. Sei…
+description: Ein mysteriöses Buch, das Lunara vor zwölf Jahren als Dank an Voras gab,
+  nachdem er ihren Bruder gerettet hatte. Voras konnte es elf Jahre…
 tags:
 - items
 timestamp: '2026-03-10T00:00:00Z'
+id: ITEM_DAS_BUCH
 ---
 
-# Das Buch
-
-## Allgemein
-
-Das Buch ist ein mysteriöses Artefakt, das [Lunara](../npcs/lunara.md) vor zwölf Jahren [Voras](../npcs/voras.md) als Dank überreichte. Es handelte sich um ein verschlossenes Buch, das über lange Zeit nicht geöffnet werden konnte.
-
-## Öffnung
-
-Die Öffnung des Buches gelang erst durch den Einsatz eines Hexenartefakts. Dieser Vorgang hatte schwerwiegende Konsequenzen: Er führte zum Erwachen von [Belorus](../npcs/belorus.md) und in der Folge zur Zerstörung von [Breska](../locations/breska.md).
-
-## Eigenschaften
-
-- Ursprünglich ein Geschenk von Lunara an Voras
-- War über zwölf Jahre hinweg verschlossen
-- Konnte nur mit einem Hexenartefakt geöffnet werden
-- Seine Öffnung löste katastrophale Ereignisse aus
+Ein mysteriöses Buch, das Lunara vor zwölf Jahren als Dank für die Rettung ihres Bruders an [Voras](/npcs/vora.md) gab. Voras konnte es elf Jahre lang nicht öffnen, bis eine Hexe es mit einem Artefakt entsiegelte. Die Öffnung löste eine Kettenreaktion aus: [Belorus](/npcs/belorus.md) erwachte, Vasuls Einfluss wuchs und [Breska](/locations/breska.md) wurde zerstört. Das Buch steht im Zentrum dieser Verwicklungen.
 
 # Belege
-
-1. Session 2026-03-10 @ 01:09:03 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
+1. Session 2026-03-10 @ 01:08:16 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)

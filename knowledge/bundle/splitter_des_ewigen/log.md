@@ -1,5 +1,50 @@
 # Update Log
 
+## 2026-07-21
+* **Session**: [LIVE PLAY🔴 - Daggerheart 🎲](/sessions/2026-07-21.md)
+
+## 2026-07-10
+* **Session**: [LIVE PLAY🔴 - Daggerheart 🎲](/sessions/2026-07-10.md)
+
+## 2026-06-16
+* **Session**: [LIVE PLAY🔴 - Daggerheart 🎲](/sessions/2026-06-16.md)
+
+## 2026-06-10
+* **Session**: [LIVE PLAY🔴 - Daggerheart 🎲](/sessions/2026-06-10.md)
+
+## 2026-06-04
+* **Session**: [LIVE PLAY🔴 - Daggerheart 🎲](/sessions/2026-06-04.md)
+
+## 2026-05-27
+* **Session**: [LIVE PLAY🔴 - Daggerheart 🎲](/sessions/2026-05-27.md)
+
+## 2026-05-19
+* **Session**: [LIVE PLAY🔴 - Daggerheart 🎲](/sessions/2026-05-19.md)
+
+## 2026-05-13
+* **Session**: [LIVE PLAY🔴 - Daggerheart 🎲](/sessions/2026-05-13.md)
+
+## 2026-05-06
+* **Session**: [LIVE PLAY🔴 - Daggerheart 🎲](/sessions/2026-05-06.md)
+
+## 2026-04-14
+* **Session**: [LIVE PLAY🔴 - Daggerheart 🎲](/sessions/2026-04-14.md)
+
+## 2026-04-09
+* **Session**: [LIVE PLAY🔴 - Daggerheart 🎲](/sessions/2026-04-09.md)
+
+## 2026-04-07
+* **Session**: [LIVE PLAY🔴 - Daggerheart 🎲](/sessions/2026-04-07.md)
+
+## 2026-03-31
+* **Session**: [LIVE PLAY🔴 - Daggerheart 🎲](/sessions/2026-03-31.md)
+
+## 2026-03-24
+* **Session**: [LIVE  PLAY🔴 - Daggerheart 🎲](/sessions/2026-03-24.md)
+
+## 2026-03-23
+* **Session**: [LIVE  PLAY🔴 - Daggerheart 🎲 - Chipped Dice Tavern](/sessions/2026-03-23.md)
+
 ## 2026-03-18
 * **Session**: [LIVE  PLAY🔴 - Daggerheart 🎲](/sessions/2026-03-18.md)
 

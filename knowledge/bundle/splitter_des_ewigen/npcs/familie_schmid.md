@@ -1,22 +1,15 @@
 ---
 type: NPC
 title: Familie Schmid
-description: Bauernfamilie, die mit Holz arbeitet. Sie stellen den Helden acht Palisaden
-  für die Dorfverteidigung zur Verfügung.
+description: Bauern, die mit Holz arbeiten. Sie stellen den Helden auf Bitte hin acht
+  Palisaden zur Verfügung.
 tags:
 - npcs
 timestamp: '2025-04-09T00:00:00Z'
+id: NPC_FAMILIE_SCHMID
 ---
 
-# Familie Schmid
-
-Eine Bauernfamilie aus [Dorf Düsterbruch](../orte/duesterbruch.md), die sich auf die Arbeit mit Holz spezialisiert hat.
-
-## Rolle im Dorf
-Die Schmids unterstützen die Dorfgemeinschaft mit ihrer Holzarbeit. Sie stellten den Helden acht Palisaden zur Verfügung, um die Verteidigung von Düsterbruch zu verstärken.
-
-## Beziehungen
-- Stellten Palisaden für die Heldengruppe her
+Die Familie Schmid ist eine Bauernfamilie, die mit Holz arbeitet. Sie stellten den Helden auf deren Bitte hin acht Palisaden zur Verfügung.[1]
 
 # Belege
-1. Session 2025-04-09, 00:41:27 – https://www.youtube.com/watch?v=1PWdwvun5ow
+1. Session 2025-04-09 @ 01:01:03 (https://www.youtube.com/watch?v=1PWdwvun5ow)

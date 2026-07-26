@@ -6,6 +6,8 @@ from pathlib import Path
 
 from pnp_okf.links import ConceptIndex, normalize_body
 from pnp_okf.models import (
+    DIR_TO_TYPE,
+    SUBTYPES,
     TYPE_DIR,
     CanonicalEntity,
     EntityType,
@@ -177,6 +179,7 @@ def emit_entity(
         "title": entity.canonical_name,
         "description": description,
         "tags": [TYPE_DIR[entity.type]],
+        **({"subtype": entity.subtype} if entity.subtype else {}),
         "timestamp": f"{last.date}T00:00:00Z" if last and last.date else _now_iso(),
     }
     if entity.aliases:
@@ -193,8 +196,19 @@ def emit_conflict(
     """Write one open-conflict file for human resolution.
 
     Lives outside the bundle (``knowledge/conflicts/``) so the queue is
-    reviewable and resolvable independently of concept content. Resolution =
-    fix the concept (or a registry/alias error), then delete this file.
+    reviewable and resolvable independently of concept content.
+
+    Resolving one means editing an *input*, never the concept file — the
+    bundle is generated and every run overwrites it, so a note written there
+    is lost:
+
+    * two things wrongly treated as one (or vice versa) -> fix the merge or
+      alias in ``entity_registry.yaml``;
+    * a genuine canon call only the GM can make -> record it under an
+      ``ENTSCHEIDUNG:`` heading in ``knowledge/sources/``, which synthesis
+      treats as overriding the session evidence.
+
+    Then re-run and delete this file.
     """
 
     conflicts_dir.mkdir(parents=True, exist_ok=True)
@@ -220,6 +234,69 @@ def emit_conflict(
 # --- indexes and log --------------------------------------------------------
 
 
+def prune_conflicts(conflicts_dir: Path, still_open: set[str]) -> int:
+    """Delete queued conflicts that the latest run no longer reports.
+
+    Without this the queue only ever grows: a conflict resolved via a
+    registry fix or a GM ruling keeps its file forever, so the reviewer
+    cannot tell the outstanding ones from the settled ones.
+
+    Only files carrying ``type: Conflict`` are considered, so anything else
+    kept alongside them (e.g. a ``merge_proposals.md`` report) is untouched.
+    """
+
+    if not conflicts_dir.is_dir():
+        return 0
+    expected = {f"{cid.replace('/', '__')}.md" for cid in still_open}
+    removed = 0
+    for path in sorted(conflicts_dir.glob("*.md")):
+        if path.name in expected:
+            continue
+        head = path.read_text(encoding="utf-8")[:400]
+        if "type: Conflict" not in head:
+            continue
+        path.unlink()
+        log.info("[emit] conflict resolved, removed from queue: %s", path.name)
+        removed += 1
+    return removed
+
+
+def prune_orphans(
+    bundle_dir: Path, entities: list[CanonicalEntity]
+) -> int:
+    """Delete concept files whose entity no longer exists. Returns the count.
+
+    Emit only ever writes; a concept that gets merged away or renamed leaves
+    its old file behind for good. Those stale files keep their outdated body
+    and links, show up as duplicate titles in validation, and — worse — are
+    still served by the read-only API and exported to the wiki as if current.
+
+    Only entity concepts are considered: ``sessions/``, the per-directory
+    ``index.md`` files and ``log.md`` are emitted separately and never orphan.
+    """
+
+    live = {f"{e.concept_id}.md" for e in entities}
+    entity_dirs = set(TYPE_DIR.values())
+    removed = 0
+    for directory in entity_dirs:
+        d = bundle_dir / directory
+        if not d.is_dir():
+            continue
+        for path in d.glob("*.md"):
+            if path.name == "index.md":
+                continue
+            rel = f"{directory}/{path.name}"
+            if rel not in live:
+                path.unlink()
+                log.info("[emit] pruned orphaned concept: %s", rel)
+                removed += 1
+        # A directory can empty out entirely (e.g. a type that lost all its
+        # members); leave it in place only if it still holds something.
+        if not any(d.iterdir()):
+            d.rmdir()
+    return removed
+
+
 def emit_indexes(
     bundle_dir: Path,
     entities: list[CanonicalEntity],
@@ -239,18 +316,41 @@ def emit_indexes(
             [("Sessions", sorted(session_entries, key=lambda e: e[1]))],
         )
 
-    # per-type index.md (url is the concept id relative to its directory)
+    # per-type index.md, grouped by subtype where the type has one.
+    #
+    # This is what replaces "collection" concepts: a page listing every ring
+    # would be a node with no referent, and in a property graph it would link
+    # unrelated items and invent paths between them. A grouping is a *view* —
+    # here a heading, later a query over the subtype label.
     for directory, group in by_dir.items():
-        entries = [
-            (
+        def _entry(e: CanonicalEntity) -> tuple[str, str, str]:
+            return (
                 e.canonical_name,
                 f"{e.concept_id.split('/', 1)[1]}.md",
                 _short_desc(e.mentions[0].note) if e.mentions else "",
             )
-            for e in sorted(group, key=lambda e: e.canonical_name.lower())
-        ]
-        heading = _type_heading(directory)
-        write_index(bundle_dir / directory, [(heading, entries)])
+
+        ordered = sorted(group, key=lambda e: e.canonical_name.lower())
+        etype = DIR_TO_TYPE.get(directory)
+        vocabulary = SUBTYPES.get(etype) if etype else None
+
+        if vocabulary and any(e.subtype for e in ordered):
+            sections: list[tuple[str, list[tuple[str, str, str]]]] = []
+            for label in vocabulary:
+                members = [e for e in ordered if e.subtype == label]
+                if members:
+                    sections.append((label, [_entry(e) for e in members]))
+            rest = [e for e in ordered if e.subtype not in vocabulary]
+            if rest:
+                sections.append(("Ohne Kategorie", [_entry(e) for e in rest]))
+            # Keep the type name as the page's first heading.
+            sections.insert(0, (_type_heading(directory), []))
+            write_index(bundle_dir / directory, sections, sub_level=2)
+        else:
+            write_index(
+                bundle_dir / directory,
+                [(_type_heading(directory), [_entry(e) for e in ordered])],
+            )
 
     # root index.md
     root_sections: list[tuple[str, list[tuple[str, str, str]]]] = []

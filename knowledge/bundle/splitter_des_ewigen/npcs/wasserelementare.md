@@ -1,22 +1,15 @@
 ---
 type: NPC
 title: Wasserelementare
-description: Zwei aus Wasser bestehende Kreaturen, die die Gruppe in einem dunklen,
-  gefluteten Raum angreifen. Dodos Feueratem ist wirkungslos, da sie s…
+description: Zwei Wasserelementare greifen in einem überfluteten Raum an. Dodos Feueratem
+  lässt sie kurz verdampfen, aber sie regenerieren sich sofort a…
 tags:
 - npcs
 timestamp: '2025-06-10T00:00:00Z'
+id: NPC_WASSERELEMENTARE
 ---
 
-# Wasserelementare
-
-Wasserelementare sind Kreaturen, die vollständig aus Wasser bestehen. Sie wurden in einem dunklen, gefluteten Raum angetroffen, wo sie die Gruppe angriffen.
-
-## Eigenschaften
-
-*   **Zusammensetzung:** Bestehen aus Wasser.
-*   **Regeneration:** Können sich aus dem umgebenden Wasser regenerieren, was bestimmte Angriffsarten wirkungslos macht. So zeigte der Feueratem von [Dodo](../characters/dodo.md) keine Wirkung.
-*   **Schwäche:** Sind anfällig für Kälteeffekte. [Rotuna](../characters/rotuna.md) konnte sie mit einem Eiszauber einfrieren, woraufhin sie zu einer Eiswand erstarrten.
+Zwei Wasserelementare griffen die Gruppe in einem überfluteten Raum an. Sie bestanden vollständig aus Wasser und regenerierten sich nach [Dodos](/characters/dodo.md) Feueratem sofort aus dem umgebenden Wasser. Rotuna konnte sie mit einem von unten wirkenden Eisangriff einfrieren, sodass sie als erstarrte Eiswand bewegungsunfähig wurden.
 
 # Belege
-1.  Session 2025-06-10 @ 01:38:25 (https://www.youtube.com/watch?v=cLkCu3Iq3y8)
+1. Session 2025-06-10 @ 01:38:25 (https://www.youtube.com/watch?v=cLkCu3Iq3y8)

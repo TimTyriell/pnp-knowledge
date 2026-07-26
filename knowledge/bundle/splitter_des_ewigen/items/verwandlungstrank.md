@@ -1,22 +1,16 @@
 ---
 type: Item
 title: Verwandlungstrank
-description: Ein von Sys Fizik gebrauter Trank, der Lindo Laut für fast ein Jahr in
-  einen kleinwüchsigen Katari verwandelt. Ein zweiter Trank kann die W…
+description: Von Zis Fizik gebrauter Trank, der Lindo Laut in einen Katari verwandelt.
+  Er umfasst einen Haupttrank für die Verwandlung und ein Gegenmitt…
 tags:
 - items
 timestamp: '2026-03-03T00:00:00Z'
+id: ITEM_VERWANDLUNGSTRANK
 ---
 
-# Verwandlungstrank
-
-Ein von [Sys Fizik](../npcs/sys_fizik.md) gebrauter Trank mit starker magischer Wirkung.
-
-## Wirkung
-Der Trank verwandelt eine Person in einen kleinwüchsigen Katari. Die Wirkung hält für fast ein Jahr an, kann aber durch die Einnahme eines zweiten Tranks vorzeitig beendet werden.
-
-## Bekannte Anwendung
-- [Lindo Laut](../characters/lindo_laut.md) wurde durch diesen Trank verwandelt.
+Der **Verwandlungstrank** wurde von [Zis Fizik](/npcs/zis_fizik.md) gebraut und verwandelte [Lindo Laut](/characters/lindo_laut.md) in einen Katari. Der Trank umfasst einen Haupttrank für die Verwandlung und ein Gegenmittel zur vorzeitigen Beendigung. Die Wirkung hält fast ein Jahr an und kostete fast das gesamte Kopfgeld-Vermögen.
 
 # Belege
-1. Session 2026-03-03, 00:55:36, https://www.youtube.com/watch?v=BRUNuNKTeOg
+
+1. Session 2026-03-03 @ 01:55:41 (https://www.youtube.com/watch?v=BRUNuNKTeOg)

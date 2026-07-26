@@ -1,22 +1,15 @@
 ---
 type: NPC
 title: Lionel Magno
-description: Der ältere Verwalter von Crowfin Manor. Er führt die Gruppe durch das
-  Haus, erzählt von dessen Geschichte und opfert sich im Kampf gegen Sl…
+description: Lionel ist der Hausmeister von Crowfin Manor und tief mit dem Anwesen
+  verbunden. Er führt die Charaktere auf ihre Zimmer, bedient beim Esse…
 tags:
 - npcs
 timestamp: '2026-02-17T00:00:00Z'
+id: NPC_LIONEL_MAGNO
 ---
 
-# Lionel Magno
-
-Lionel Magno ist der ältere Verwalter von [Crowfin Manor](../locations/crowfin_manor.md).
-
-## Rolle und Persönlichkeit
-Er führt Besucher durch das Anwesen und kennt sich mit dessen Geschichte aus. Lionel zeigt sich fürsorglich gegenüber der Gruppe und ist bereit, sich für deren Schutz zu opfern.
-
-## Schicksal
-Während eines Kampfes gegen [Slix](slix.md) stellt sich Lionel schützend vor die Gruppe. Er wird dabei getötet.
+Lionel Magno war der Hausmeister von [Crowfin Manor](/locations/crowfin_manor.md) und tief mit dem Anwesen verbunden. Er führte die Gäste auf ihre Zimmer, bediente beim Essen und fungierte als begeisterter Fremdenführer, der unter anderem vor der Legende des Schwerts Zebrosia warnte. In der finalen Auseinandersetzung meldete er sich freiwillig, das Schwert zu berühren, um die Gruppe zu retten, wurde jedoch von Slix brutal getötet, indem ihm das Herz herausgerissen wurde. Sein Opfer unterstrich seine Hingabe an das Haus und seine Gäste.
 
 # Belege
-1. Session 2026-02-17, 00:14:27 – https://www.youtube.com/watch?v=Z2jlzpoTWVw
+1. Session 2026-02-17 @ 01:58:25 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)

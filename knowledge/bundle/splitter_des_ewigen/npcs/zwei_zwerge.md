@@ -1,23 +1,15 @@
 ---
 type: NPC
 title: Zwei Zwerge
-description: Bewohner von Cornivum, die Fische für die Giftgewinnung verarbeiten.
-  Sie erklären Rotunas detailliert, wie das Nervengift aus den Flossen d…
+description: Die beiden Zwerge im Dorf sind für die Fleisch- und Giftgewinnung zuständig.
+  Sie zeigen Rotunas, wie man aus den Rückenflossen giftiger Fis…
 tags:
 - npcs
 timestamp: '2025-06-03T00:00:00Z'
+id: NPC_ZWEI_ZWERGE
 ---
 
-# Zwei Zwerge
-
-Die Zwei Zwerge sind Bewohner von [Cornivum](../orte/cornivum.md), die sich auf die Verarbeitung von Fischen zur Giftgewinnung spezialisiert haben.
-
-## Tätigkeit
-
-Die Zwei Zwerge extrahieren ein Nervengift aus den Flossen von Sumpfhaien. Sie erklärten [Rotunas](rotunas.md) den detaillierten Prozess dieser Extraktion.
-
----
+Die beiden Zwerge im Dorf sind für die Fleisch- und Giftgewinnung zuständig. Sie zeigten Rotunas, wie aus den Rückenflossen giftiger Fische ein Lähmungsgift extrahiert wird. Einer der Zwerge demonstrierte den Vorgang an einem Fisch und warnte eindringlich vor der Gefahr bei Hautkontakt mit dem Gift.
 
 # Belege
-
-1. Session 2025-06-03, 00:17:57 – https://www.youtube.com/watch?v=jtYR4Je0a18
+1. Session 2025-06-03 @ 00:17:56 (https://www.youtube.com/watch?v=jtYR4Je0a18)

@@ -1,19 +1,15 @@
 ---
 type: NPC
 title: Orlanius Schwarzhorn
-description: Ein Magier in Bresca, Spezialist für altes Wissen. Warnt Lindo Laut vor
-  der korrumpierenden Macht des verdunkelten Amuletts und identifizie…
+description: Ein Magier in Breska, Experte für alte Magie. Er untersucht das korrumpierte
+  Amulett, identifiziert vier gefangene Seelen und warnt Lindo L…
 tags:
 - npcs
 timestamp: '2025-06-25T00:00:00Z'
+id: NPC_ORLANIUS_SCHWARZHORN
 ---
 
-# Orlanius Schwarzhorn
-
-Orlanius Schwarzhorn ist ein Magier in der Stadt [Bresca](../orte/bresca.md) und ein Spezialist für altes Wissen.
-
-## Rolle in der Handlung
-Orlanius Schwarzhorn wurde von der Gruppe um [Lindo Laut](../characters/lindo_laut.md) konsultiert, um zwei magische Artefakte zu untersuchen. Er warnte Lindo Laut eindringlich vor der korrumpierenden Macht des verdunkelten Amuletts. Zudem identifizierte er [Rotunas](../characters/rotuna.md)' Schlüssel als einen Portalschlüssel. Um die Kommunikation mit der Gruppe aufrechtzuerhalten, übergab er ihnen einen Rabenstein.
+Orlanius Schwarzhorn ist ein Magier in Breska und Experte für alte Magie. In einem Treffen mit der Gruppe untersuchte er das korrumpierte Amulett, identifizierte vier darin gefangene Seelen und warnte Lindo Laut vor der verdorbenen Macht. Sein Kaufangebot für das Amulett wurde abgelehnt. Daraufhin schenkte er der Gruppe einen Rabenstein als Kommunikationsmittel und identifizierte Rotunas‘ magischen Schlüssel als Portalöffner mit unbekanntem Ziel. Schließlich bat er die Gruppe, sein Haus zu verlassen.
 
 # Belege
-1. Session 2025-06-25, 01:31:45, https://www.youtube.com/watch?v=tpkO9uGw6-I
+1. Session 2025-06-25 @ 01:39:19 (https://www.youtube.com/watch?v=tpkO9uGw6-I)

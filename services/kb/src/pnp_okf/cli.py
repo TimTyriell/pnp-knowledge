@@ -6,11 +6,12 @@ import shutil
 import subprocess
 import sys
 from collections import Counter
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 from pnp_okf.config import DeepSeekConfig, ConfigError, Paths
 from pnp_okf.context import excerpts_for, load_sources, sources_for
-from pnp_okf.dedup import propose, render_report
+from pnp_okf.dedup import load_never_merge, propose, render_report
 from pnp_okf.emit import (
     build_concept_index,
     emit_conflict,
@@ -18,10 +19,12 @@ from pnp_okf.emit import (
     emit_indexes,
     emit_log,
     emit_sessions,
+    prune_conflicts,
+    prune_orphans,
 )
 from pnp_okf.extract import extract_session
 from pnp_okf.ingest import load_transcripts
-from pnp_okf.models import SessionExtraction, SessionTranscript
+from pnp_okf.models import CanonicalEntity, SessionExtraction, SessionTranscript
 from pnp_okf.resolve import resolve_entities, write_registry
 from pnp_okf.synthesize import synthesize_entity_body
 from pnp_okf.validate import fix_bundle, validate_bundle
@@ -89,13 +92,17 @@ def cmd_run(args: argparse.Namespace) -> int:
     session_entries = emit_sessions(paths.bundle_dir, tmap, extractions, index)
     unresolved_total = 0
     conflict_count = 0
+    open_conflicts: set[str] = set()
     tier_counts: Counter[str] = Counter(e.tier for e in entities)
     log.info(
         "Synthesis tiers: %s",
         ", ".join(f"{t}={tier_counts[t]}" for t in ("deep", "standard", "brief")),
     )
-    for entity in entities:
-        body = synthesize_entity_body(
+    # Synthesis is one independent network call per entity; run them
+    # concurrently or a full rebuild takes hours. Emit stays sequential so
+    # file writes and the conflict queue keep a deterministic order.
+    def _synth(entity: CanonicalEntity) -> tuple[str, str]:
+        return entity.concept_id, synthesize_entity_body(
             entity,
             cfg.for_tier(entity.tier),
             paths.cache_dir,
@@ -105,16 +112,36 @@ def cmd_run(args: argparse.Namespace) -> int:
                 excerpts_for(entity, tmap) if entity.tier == "deep" else ""
             ),
         )
+
+    bodies: dict[str, str] = {}
+    with ThreadPoolExecutor(max_workers=args.workers) as pool:
+        for future in as_completed([pool.submit(_synth, e) for e in entities]):
+            concept_id, body = future.result()
+            bodies[concept_id] = body
+
+    for entity in entities:
+        body = bodies[entity.concept_id]
         unresolved, conflicts = emit_entity(paths.bundle_dir, entity, body, index)
         unresolved_total += len(unresolved)
         if conflicts:
             conflict_path = emit_conflict(paths.conflicts_dir, entity, conflicts)
             conflict_count += 1
+            open_conflicts.add(entity.concept_id)
             log.warning(
                 "[conflict] %s has contradicting evidence -> %s",
                 entity.concept_id,
                 conflict_path,
             )
+    settled = prune_conflicts(paths.conflicts_dir, open_conflicts)
+    if settled:
+        log.info("Cleared %d resolved conflict(s) from the queue.", settled)
+
+    pruned = prune_orphans(paths.bundle_dir, entities)
+    if pruned:
+        log.info(
+            "Pruned %d concept file(s) with no entity behind them any more.", pruned
+        )
+
     emit_indexes(paths.bundle_dir, entities, session_entries)
     emit_log(paths.bundle_dir, tmap)
 
@@ -178,7 +205,11 @@ def cmd_dedup(args: argparse.Namespace) -> int:
 
     # Screening runs on the fast model: it only narrows ~840 entities down to
     # candidate groups, and a human confirms every one before it is written.
-    groups = propose(entities, cfg.for_tier("standard"))
+    groups = propose(
+        entities,
+        cfg.for_tier("standard"),
+        never_merge=load_never_merge(registry_path),
+    )
     report = render_report(groups, entities)
     out = Path(args.out) if args.out else paths.conflicts_dir / "merge_proposals.md"
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -309,6 +340,10 @@ def _add_common(p: argparse.ArgumentParser) -> None:
     )
     p.add_argument(
         "--force", action="store_true", help="Ignore cache and re-call the LLM"
+    )
+    p.add_argument(
+        "--workers", type=int, default=8,
+        help="Parallel synthesis calls (default 8)",
     )
 
 

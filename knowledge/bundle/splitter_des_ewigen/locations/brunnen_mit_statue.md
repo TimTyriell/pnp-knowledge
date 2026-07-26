@@ -1,16 +1,15 @@
 ---
 type: Location
 title: Brunnen mit Statue
-description: Ein funktionsfähiger Brunnen mit einer Statue, ähnlich der in der Goblinfestung.
-  Nimmt Blutopfer an und produziert daraufhin eine dickflüss…
+description: Ein funktionsfähiger Brunnen mit einer Statue, die eine blutbefleckte
+  Schale hält. Sie ähnelt einer früher gesehenen Statue. Lindo Laut opf…
 tags:
 - locations
 timestamp: '2025-08-20T00:00:00Z'
+id: LOC_BRUNNEN_MIT_STATUE
 ---
 
-# Brunnen mit Statue
-
-Ein funktionsfähiger Brunnen, der eine Statue beinhaltet, die jener in der Goblinfestung ähnelt. Der Brunnen nimmt Blutopfer an und produziert daraufhin eine dickflüssige Substanz, die ein pochendes Herz enthält.
+Ein funktionsfähiger Brunnen mit einer Statue, die eine blutbefleckte Schale hält; die Statue ähnelt einer zuvor gesehenen Statue und Schnee bleibt auf ihr nicht liegen, sodass altes Blut sichtbar bleibt. Als [Lindo Laut](/characters/lindo_laut.md) Blut opfert, bringt der Brunnen einen Eimer mit einer farblosen, dickflüssigen Substanz hervor, die ein pochendes Herz enthält.
 
 # Belege
-1. Session 2025-08-20 @ 00:41:44 (https://www.youtube.com/watch?v=-XbO3FLSL_I)
+1. Session 2025-08-20 @ 00:41:42 (https://www.youtube.com/watch?v=-XbO3FLSL_I)

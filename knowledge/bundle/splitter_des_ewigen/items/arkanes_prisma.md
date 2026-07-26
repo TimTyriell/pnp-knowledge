@@ -1,23 +1,15 @@
 ---
 type: Item
 title: Arkanes Prisma
-description: Ein einmalig nutzbarer Stein, der allen Zauberrollen einen Bonus von
-  +1 gibt. Gefunden von Lindo Laut im Turm.
+description: Gefunden von Lindo Laut. Bei Aktivierung erhalten alle Gruppenmitglieder
+  +1 auf Zauberrollen, bis die Energie einmalig verbraucht ist, dann…
 tags:
 - items
 timestamp: '2025-06-10T00:00:00Z'
+id: ITEM_ARKANES_PRISMA
 ---
 
-# Arkanes Prisma
-
-Ein einmalig nutzbarer magischer Stein, der die Wirkung von Zauberrollen verstärkt.
-
-## Eigenschaften
-- Gewährt allen Zauberrollen einen Bonus von +1
-- Einmalige Verwendung
-
-## Geschichte
-Das Arkanen Prisma wurde von [Lindo Laut](../characters/lindo_laut.md) im Turm gefunden.
+Das **Arkane Prisma** wurde von [Lindo Laut](/characters/lindo_laut.md) gefunden. Bei Aktivierung des Prismas erhalten alle Gruppenmitglieder für eine einzelne Zauberprobe einen Bonus von +1 auf ihre Zauberrollen. Die magische Energie des Prismas ist nach dieser einmaligen Nutzung verbraucht, woraufhin das Item zerstört wird.
 
 # Belege
-1. Session 2025-06-10 @ 00:20:24 (https://www.youtube.com/watch?v=cLkCu3Iq3y8)
+1. Session 2025-06-10 @ 00:20:24 – https://www.youtube.com/watch?v=cLkCu3Iq3y8

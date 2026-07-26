@@ -21,6 +21,7 @@ from __future__ import annotations
 import json
 import logging
 from difflib import SequenceMatcher
+from pathlib import Path
 
 from pydantic import BaseModel, Field
 
@@ -203,12 +204,49 @@ def _ask_chunk(
     return out
 
 
+def load_never_merge(registry_path) -> list[set[str]]:
+    """Pairs the human has ruled distinct, from the registry ``never_merge:``.
+
+    Look-alikes that are genuinely different people recur every sweep —
+    "Myko" (Willauch group) and "Miqo" (Kinder aus Abisalis) score as a near
+    match forever. Without a memory of the rejection each run re-proposes
+    them and the reviewer re-decides the same cases, which is what makes a
+    repeated sweep expensive.
+    """
+
+    import yaml  # local: keeps the module importable without a registry
+
+    path = Path(registry_path)
+    if not path.exists():
+        return []
+    data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    out: list[set[str]] = []
+    for group in data.get("never_merge") or []:
+        ids = {str(c).strip() for c in group if str(c).strip()}
+        if len(ids) >= 2:
+            out.append(ids)
+    return out
+
+
 def propose(
-    entities: list[CanonicalEntity], cfg: DeepSeekConfig, *, client=None
+    entities: list[CanonicalEntity],
+    cfg: DeepSeekConfig,
+    *,
+    client=None,
+    never_merge: list[set[str]] | None = None,
 ) -> list[MergeGroup]:
     """String and LLM candidates, deduplicated, highest confidence first."""
 
     groups = llm_candidates(entities, cfg, client=client) + string_candidates(entities)
+    if never_merge:
+        kept = []
+        for g in groups:
+            ids = set(g.concept_ids)
+            if any(len(ids & blocked) >= 2 for blocked in never_merge):
+                log.info("[dedup] suppressed previously-rejected group: %s", ids)
+                continue
+            kept.append(g)
+        groups = kept
     seen: dict[frozenset[str], MergeGroup] = {}
     for g in groups:
         key = frozenset(g.concept_ids)

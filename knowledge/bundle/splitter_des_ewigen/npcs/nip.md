@@ -1,16 +1,15 @@
 ---
 type: NPC
 title: Nip
-description: Ein ständig betrunkener Dorfbewohner in der Taverne. Er ist sehr schreckhaft
-  und fällt bei Valerias Zaubervorführung ohnmächtig um.
+description: Ein betrunkener Dorfbewohner, der bei einer Feuerdemonstration in Panik
+  gerät und ohnmächtig wird. Valeria heilt ihn mit Mending Touch, wor…
 tags:
 - npcs
 timestamp: '2025-04-09T00:00:00Z'
+id: NPC_NIP
 ---
 
-# Nip
-
-Nip ist ein ständig betrunkener Dorfbewohner, der in der örtlichen Taverne anzutreffen ist. Er zeichnet sich durch eine sehr schreckhafte Natur aus. Während einer Zaubervorführung von [Valeria](../characters/valeria.md) fiel er vor Schreck in Ohnmacht.
+Nip ist ein betrunkener Dorfbewohner, der während einer Feuerdemonstration in Panik gerät und ohnmächtig wird. Die Abenteurerin Valeria wendet *Mending Touch* auf ihn an, woraufhin er erwacht und weniger betrunken nach Hause geht.
 
 # Belege
-1. Session 2025-04-09 @ 00:46:13 (https://www.youtube.com/watch?v=1PWdwvun5ow)
+1. Session 2025-04-09 @ 00:54:06 (https://www.youtube.com/watch?v=1PWdwvun5ow)

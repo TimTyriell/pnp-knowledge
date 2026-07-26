@@ -1,16 +1,15 @@
 ---
 type: NPC
 title: Gorak
-description: Ein Tiefenzwerg und Anführer der neuen Gilde in Breska. Er lädt die Gruppe
-  ein, um eine Nachricht an ihren Gildenmeister zu überbringen und…
+description: Gorak ist der Anführer der neuen Gilde in Breska und vertritt die Interessen
+  der vier Gildenoberhäupter. Er möchte ein Treffen mit der Berg…
 tags:
 - npcs
 timestamp: '2025-09-17T00:00:00Z'
+id: NPC_GORAK
 ---
 
-# Gorak
-
-Gorak ist ein Tiefenzwerg und der Anführer der neuen Gilde in [Breska](../locations/breska.md). Er tritt an die Gruppe heran, um sie für seine Gilde zu gewinnen. In diesem Zusammenhang bittet er sie, eine Nachricht an ihren Gildenmeister zu überbringen, und bietet ihnen eine Aufnahmeprüfung an.
+Gorak ist der Anführer der neuen Gilde in Breska und spricht im Namen der vier Gildenoberhäupter. Er bot der Gruppe ein Treffen mit der Berggilde an und versprach ihnen im Gegenzug die Mitgliedschaft – unter der Bedingung, dass sie den flüchtigen Anführer Roland ausschalten. Nachdem die Gruppe den Auftrag ablehnte, reagierte Gorak professionell und höflich, wenngleich enttäuscht. Sein Lachen mit den anderen Oberhäuptern wirkte einstudiert und diabolisch. Er betonte die Regel, dass kein Gildenmitglied ermordet werden dürfe.
 
 # Belege
-1. Session 2025-09-17, 00:24:13, https://www.youtube.com/watch?v=AhIT8dcxw2o
+1. Session 2025-09-17 @ 00:24:31 (https://www.youtube.com/watch?v=AhIT8dcxw2o)

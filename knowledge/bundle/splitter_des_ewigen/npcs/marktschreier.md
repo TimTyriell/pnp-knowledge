@@ -1,19 +1,16 @@
 ---
 type: NPC
 title: Marktschreier
-description: Ein Nachrichtenverbreiter, der in der Taverne Neuigkeiten verkündet,
-  darunter die militärische Aufrüstung in Willau, die Nachrichtensperre…
+description: 'Der Marktschreier verkündet gegen Bezahlung Nachrichten: Will auch rüstet
+  auf, Breska ist von der Außenwelt abgeschnitten, eine Gildengrupp…'
 tags:
 - npcs
 timestamp: '2025-11-18T00:00:00Z'
+id: NPC_MARKTSCHREIER
 ---
 
-# Marktschreier
-
-Ein Nachrichtenverbreiter, der in der Taverne Neuigkeiten verkündet.
-
-## Bekannte Auftritte
-- In einer Taverne, wo er Neuigkeiten verkündete, darunter die militärische Aufrüstung in [Willau](../orte/willau.md), die Nachrichtensperre aus [Breska](../orte/breska.md) und die Sichtung von Untoten am Fuße des Berges.
+Der **Marktschreier** ist ein NPC, der auf den Straßen gegen Bezahlung aktuelle Nachrichten ausruft. In der Stadt Willa kündigte er an, dass Will aufrüstet, [Breska](/locations/breska.md) von der Außenwelt abgeschnitten sei, eine Gildengruppe gestorben sei und Untote am Bergfuß gesichtet wurden. Die Abenteurerin Esterossa bezahlte ihn, um die Nachricht vom heldenhaften Tod der [Cookies](/characters/cookie.md) zu verbreiten.
 
 # Belege
-1. Session 2025-11-18 @ 00:55:14 (https://www.youtube.com/watch?v=w__ahowb9p0)
+
+1. Session 2025-11-18 @ 00:56:41 – <https://www.youtube.com/watch?v=w__ahowb9p0>

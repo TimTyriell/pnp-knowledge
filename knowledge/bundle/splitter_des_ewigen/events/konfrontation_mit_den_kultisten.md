@@ -1,18 +1,15 @@
 ---
 type: Event
 title: Konfrontation mit den Kultisten
-description: Die Gruppe wird von Kultisten entdeckt, die Dodo mit einem Versteinerungszauber
-  belegen. Die Situation eskaliert, als die Kultisten den fal…
+description: Am Gipfel fordern Kultisten die Gruppe heraus. Dodo wird teilweise versteinert,
+  weil er keine passende Antwort gibt. Lindo Lauts Ruf nach S…
 tags:
 - events
 timestamp: '2025-08-20T00:00:00Z'
+id: EVENT_KONFRONTATION_MIT_DEN_KULTISTEN
 ---
 
-# Konfrontation mit den Kultisten
-
-Während die Gruppe sich in einem von Kultisten kontrollierten Gebiet aufhielt, wurde sie von diesen entdeckt. Die Kultisten eröffneten die Auseinandersetzung, indem sie [Dodo](../characters/dodo.md) mit einem Versteinerungszauber belegten.
-
-Die Situation eskalierte weiter, als die Kultisten ihren falschen Gott anriefen. [Esterossa](../characters/esterossa.md) reagierte darauf, indem sie zum Angriff rief.
+Am 20. August 2025 erreichte die Gruppe den Gipfel, wo sie von Kultisten herausgefordert wurde. [Dodo](/characters/dodo.md) wurde teilweise versteinert, weil er keine passende Antwort gab. [Lindo Laut](/characters/lindo_laut.md)s Ruf nach Standhaftigkeit stoppte den Zauber kurzzeitig, doch die Kultisten bereiteten einen weiteren Angriff vor, während sie erklärten, Varsur zu dienen. Die Konfrontation endete mit dem unmittelbaren Beginn eines Kampfes.
 
 # Belege
-1. Session 2025-08-20, 01:19:04 – https://www.youtube.com/watch?v=-XbO3FLSL_I
+1. Session 2025-08-20 @ 01:18:33 (https://www.youtube.com/watch?v=-XbO3FLSL_I)

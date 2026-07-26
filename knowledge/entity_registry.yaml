@@ -68,7 +68,6 @@ merge:
   die neuen götter: deities/neue_goetter
   abyssalis (splitterwelt): domains/splitterwelt
   materielle pläne: domains/materielle_ebene
-  myko: characters/miko
   die gilde: factions/dwarfmaster_gilde
   gilde: factions/dwarfmaster_gilde
   dwarfmasters: factions/dwarfmaster_gilde
@@ -96,7 +95,6 @@ merge:
   dodos streitkolben: items/der_heilige_streitkolben
   der phönixfeder: items/phoenixfeder
   cookies kaputter kompass: items/kaputter_kompass
-  leuchtende ringe (cookie): items/leuchtringe
   stab (lindos stab): items/lindos_stab
   stab: items/lindos_stab
   schattenfinger (kenku-kralle): items/schattenfinger
@@ -106,10 +104,8 @@ merge:
   der grüne seelenstein: items/seelenstein
   der kristall: items/gruener_kristall
   göttliche handschellen: items/magische_handschellen
-  der ring: items/ring_der_teleportation
   schlüssel: items/magischer_schluessel
   der stab (schlüssel): items/magischer_schluessel
-  schriftrolle: items/schriftrolle_von_nerash
   notiz: items/notiz_findet_einen_suendenbock
   willauch: locations/willau
   willoch: locations/willau
@@ -142,7 +138,6 @@ merge:
   nyruk: npcs/nairuk
   kahnführer lobrecht: npcs/lobrecht
   kapitän lobrecht: npcs/lobrecht
-  miyamani und käpt'n lobrecht: npcs/lobrecht
   der gildenmeister: npcs/nox
   enox (gildenmeister): npcs/nox
   moorhexe hack: npcs/lenra
@@ -158,6 +153,35 @@ merge:
   hack: npcs/lenra
   gildenmeister: npcs/nox
   gildemeister: npcs/nox
+  lindo lauts ring: items/ring_der_teleportation
+  teleportationsring: items/ring_der_teleportation
+  lindos ring: items/ring_der_teleportation
+  tyrex: deities/thyrex
+  t-rex: deities/thyrex
+  tyrex (t-rex): deities/thyrex
+  t-rex (stimme im amulett): deities/thyrex
+  t-rex (geist im amulett): deities/thyrex
+  thyrex: deities/thyrex
+  der graf: npcs/voras_der_heilige_der_schrecken
+  graf: npcs/voras_der_heilige_der_schrecken
+  der graf voras: npcs/voras_der_heilige_der_schrecken
+never_merge:
+- - characters/miko
+  - characters/myko
+- - npcs/lobrecht
+  - npcs/miyamani
+- - npcs/freibeuter_harald
+  - npcs/abisalis_harald
+ignore:
+- locations/bruecke
+- locations/turm
+split:
+- name: harald
+  session: '2026-03-18'
+  concept_id: npcs/freibeuter_harald
+- name: harald
+  session: '2026-04-14'
+  concept_id: npcs/abisalis_harald
 entities:
 - concept_id: characters/brim
   type: Character
@@ -192,9 +216,9 @@ entities:
   mention_count: 47
 - concept_id: characters/esterossa_torbhalm
   type: Character
-  canonical_name: Esterossa Torbhalm
+  canonical_name: Esterossa
   aliases:
-  - Esterossa
+  - Esterossa Torbhalm
   mention_count: 40
 - concept_id: characters/finn
   type: Character
@@ -239,10 +263,15 @@ entities:
   mention_count: 1
 - concept_id: characters/miko
   type: Character
-  canonical_name: Myko
+  canonical_name: Miqo
   aliases:
   - Miko
-  mention_count: 3
+  mention_count: 2
+- concept_id: characters/myko
+  type: Character
+  canonical_name: Myko
+  aliases: []
+  mention_count: 1
 - concept_id: characters/nina_oma
   type: Character
   canonical_name: Nina (Oma)
@@ -451,14 +480,17 @@ entities:
   - Tavok (Erdrichter)
   - Tavok, der Erdrichter
   mention_count: 5
-- concept_id: deities/tyrex_t_rex
+- concept_id: deities/thyrex
   type: Deity
-  canonical_name: Tyrex (T-Rex)
-  aliases: []
-  mention_count: 1
+  canonical_name: Thyrex
+  aliases:
+  - Tyrex (T-Rex)
+  - Tyrex
+  - T-Rex (Geist im Amulett)
+  mention_count: 4
 - concept_id: deities/vharzul
   type: Deity
-  canonical_name: Warzul (Varsurs)
+  canonical_name: Vhar'Zul
   aliases:
   - Vasul
   - Varsul
@@ -466,6 +498,7 @@ entities:
   - Basul
   - Valsur
   - Vasur / Vasul
+  - Warzul (Varsurs)
   mention_count: 19
 - concept_id: deities/vorgul_tar
   type: Deity
@@ -475,7 +508,8 @@ entities:
   - Volgulta
   - Vorgul'tar
   - Vorgul’tar
-  mention_count: 7
+  - Vorgultar
+  mention_count: 8
 - concept_id: deities/voros
   type: Deity
   canonical_name: Voros
@@ -1286,11 +1320,6 @@ entities:
   canonical_name: Beschwörungsstab
   aliases: []
   mention_count: 1
-- concept_id: items/botschaft_schriftrolle
-  type: Item
-  canonical_name: Botschaft / Schriftrolle
-  aliases: []
-  mention_count: 1
 - concept_id: items/brims_ketten
   type: Item
   canonical_name: Brims Ketten
@@ -1389,11 +1418,6 @@ entities:
   - Der heilige Streitkolben
   - Dodos heiliger Streitkolben
   mention_count: 4
-- concept_id: items/der_obsidianring
-  type: Item
-  canonical_name: Der Obsidianring
-  aliases: []
-  mention_count: 1
 - concept_id: items/der_speer
   type: Item
   canonical_name: Der Speer
@@ -1417,11 +1441,6 @@ entities:
 - concept_id: items/die_magische_uebertragungswolke
   type: Item
   canonical_name: Die magische Übertragungswolke
-  aliases: []
-  mention_count: 1
-- concept_id: items/die_ringe
-  type: Item
-  canonical_name: Die Ringe
   aliases: []
   mention_count: 1
 - concept_id: items/die_schriftrolle_von_belorus
@@ -1501,10 +1520,10 @@ entities:
   mention_count: 1
 - concept_id: items/gegengifte
   type: Item
-  canonical_name: Gegengift aus dem Sumpf
+  canonical_name: Gegengift
   aliases:
   - Gegengifte
-  - Gegengift
+  - Gegengift aus dem Sumpf
   mention_count: 3
 - concept_id: items/giftpfeile
   type: Item
@@ -1546,11 +1565,6 @@ entities:
   canonical_name: Gold
   aliases: []
   mention_count: 1
-- concept_id: items/gold_und_ring
-  type: Item
-  canonical_name: Gold und Ring
-  aliases: []
-  mention_count: 1
 - concept_id: items/goldenes_amulett_aus_der_ruine
   type: Item
   canonical_name: Goldenes Amulett aus der Ruine
@@ -1589,10 +1603,10 @@ entities:
   mention_count: 1
 - concept_id: items/gruener_kristall
   type: Item
-  canonical_name: Grüner Kristall
+  canonical_name: Grüne Kristalle
   aliases:
   - Der Kristall
-  - Grüne Kristalle
+  - Grüner Kristall
   mention_count: 3
 - concept_id: items/halsband
   type: Item
@@ -1605,11 +1619,6 @@ entities:
   aliases:
   - Heilige Pfeile (Holy Arrows)
   mention_count: 2
-- concept_id: items/heilige_schriftrollen
-  type: Item
-  canonical_name: Heilige Schriftrollen
-  aliases: []
-  mention_count: 1
 - concept_id: items/heiliges_oel
   type: Item
   canonical_name: Heiliges Öl
@@ -1682,20 +1691,9 @@ entities:
   canonical_name: Lähmungspfeile (Sumpf-Hype-Pfeile)
   aliases: []
   mention_count: 1
-- concept_id: items/leuchtringe
-  type: Item
-  canonical_name: Leuchtringe
-  aliases:
-  - Leuchtende Ringe (Cookie)
-  mention_count: 2
 - concept_id: items/lila_kristalle
   type: Item
   canonical_name: Lila Kristalle
-  aliases: []
-  mention_count: 1
-- concept_id: items/lindo_lauts_ring
-  type: Item
-  canonical_name: Lindo Lauts Ring
   aliases: []
   mention_count: 1
 - concept_id: items/lindos_amulett
@@ -1827,10 +1825,12 @@ entities:
   mention_count: 1
 - concept_id: items/ring_der_teleportation
   type: Item
-  canonical_name: Ring der Teleportation
+  canonical_name: Teleportationsring
   aliases:
   - Der Ring
-  mention_count: 3
+  - Ring der Teleportation
+  - Lindo Lauts Ring
+  mention_count: 4
 - concept_id: items/ritualkessel
   type: Item
   canonical_name: Ritualkessel
@@ -1878,28 +1878,12 @@ entities:
   canonical_name: Schleimbälle
   aliases: []
   mention_count: 1
-- concept_id: items/schriftrolle_der_natursprache
-  type: Item
-  canonical_name: Schriftrolle der Natursprache
-  aliases: []
-  mention_count: 1
-- concept_id: items/schriftrolle_mit_kopfgeld
-  type: Item
-  canonical_name: Schriftrolle mit Kopfgeld
-  aliases: []
-  mention_count: 1
-- concept_id: items/schriftrolle_tote_sprechen
-  type: Item
-  canonical_name: Schriftrolle Tote sprechen
-  aliases: []
-  mention_count: 1
 - concept_id: items/schriftrolle_von_nerash
   type: Item
-  canonical_name: Schriftrolle
+  canonical_name: Schriftrolle von Nerash
   aliases:
-  - Schriftrolle von Nerash
   - Schriftrolle (von Nerash)
-  mention_count: 3
+  mention_count: 2
 - concept_id: items/schutzkristall
   type: Item
   canonical_name: Schutzkristall
@@ -1912,9 +1896,9 @@ entities:
   mention_count: 1
 - concept_id: items/schwarzer_palantir
   type: Item
-  canonical_name: Schwarzer Palantir
+  canonical_name: Schwärzer Palantir
   aliases:
-  - Schwärzer Palantir
+  - Schwarzer Palantir
   mention_count: 2
 - concept_id: items/seelenkristall
   type: Item
@@ -1944,9 +1928,9 @@ entities:
   mention_count: 1
 - concept_id: items/splitter_des_ewigen
   type: Item
-  canonical_name: Splitter des Ewigen
+  canonical_name: Der Splitter des Ewigen
   aliases:
-  - Der Splitter des Ewigen
+  - Splitter des Ewigen
   mention_count: 2
 - concept_id: items/splitter_spruch
   type: Item
@@ -1996,11 +1980,6 @@ entities:
 - concept_id: items/tarvoks_artefakt_silbernes_ei
   type: Item
   canonical_name: Tarvoks Artefakt (silbernes Ei)
-  aliases: []
-  mention_count: 1
-- concept_id: items/teleportationsring
-  type: Item
-  canonical_name: Teleportationsring
   aliases: []
   mention_count: 1
 - concept_id: items/totem_der_nerash
@@ -2176,12 +2155,6 @@ entities:
   canonical_name: Brokkadil
   aliases: []
   mention_count: 1
-- concept_id: locations/bruecke
-  type: Location
-  canonical_name: Brücke
-  aliases:
-  - Die Brücke
-  mention_count: 5
 - concept_id: locations/brunnen_mit_statue
   type: Location
   canonical_name: Brunnen mit Statue
@@ -2587,9 +2560,9 @@ entities:
   mention_count: 1
 - concept_id: locations/sanddorninseln
   type: Location
-  canonical_name: Sanddorninseln
+  canonical_name: Sanddorn-Inseln
   aliases:
-  - Sanddorn-Inseln
+  - Sanddorninseln
   mention_count: 2
   important: true
 - concept_id: locations/schatzraum
@@ -2694,13 +2667,6 @@ entities:
   canonical_name: Tore von Abyssalis
   aliases: []
   mention_count: 1
-- concept_id: locations/turm
-  type: Location
-  canonical_name: Turm
-  aliases:
-  - Der Turm
-  - Der alte Turm
-  mention_count: 4
 - concept_id: locations/unterirdische_ruinenstadt_dungeon
   type: Location
   canonical_name: Unterirdische Ruinenstadt (Dungeon)
@@ -2780,6 +2746,12 @@ entities:
   type: Location
   canonical_name: Zwergenfestung
   aliases: []
+  mention_count: 1
+- concept_id: npcs/abisalis_harald
+  type: NPC
+  canonical_name: Abisalis-Harald
+  aliases:
+  - Harald
   mention_count: 1
 - concept_id: npcs/adelia
   type: NPC
@@ -2882,9 +2854,9 @@ entities:
   mention_count: 2
 - concept_id: npcs/buergermeister_berthold
   type: NPC
-  canonical_name: Bürgermeister Berthold
+  canonical_name: Berthold
   aliases:
-  - Berthold
+  - Bürgermeister Berthold
   mention_count: 2
 - concept_id: npcs/bugbaeren
   type: NPC
@@ -2943,9 +2915,9 @@ entities:
   mention_count: 1
 - concept_id: npcs/der_jen
   type: NPC
-  canonical_name: Der Jen
+  canonical_name: Jen
   aliases:
-  - Jen
+  - Der Jen
   mention_count: 2
 - concept_id: npcs/der_org_barkeeper
   type: NPC
@@ -3074,6 +3046,12 @@ entities:
   canonical_name: Fluffy
   aliases: []
   mention_count: 1
+- concept_id: npcs/freibeuter_harald
+  type: NPC
+  canonical_name: Freibeuter-Harald
+  aliases:
+  - Harald
+  mention_count: 1
 - concept_id: npcs/froschwaechter_bruecke
   type: NPC
   canonical_name: Froschwächter (Brücke)
@@ -3091,11 +3069,11 @@ entities:
   mention_count: 1
 - concept_id: npcs/geist_von_rotunas
   type: NPC
-  canonical_name: Geist von Rotunas
+  canonical_name: Rotunas
   aliases:
   - Geist
   - Der Geist
-  - Rotunas
+  - Geist von Rotunas
   mention_count: 33
 - concept_id: npcs/geisterhafter_waechter_mit_krone
   type: NPC
@@ -3162,11 +3140,6 @@ entities:
   canonical_name: Gorak
   aliases: []
   mention_count: 1
-- concept_id: npcs/graf
-  type: NPC
-  canonical_name: Graf
-  aliases: []
-  mention_count: 1
 - concept_id: npcs/grosse_silberbestie_mutterbestie
   type: NPC
   canonical_name: Große Silberbestie (Mutterbestie)
@@ -3207,11 +3180,6 @@ entities:
   canonical_name: Hans
   aliases: []
   mention_count: 2
-- concept_id: npcs/harald
-  type: NPC
-  canonical_name: Harald
-  aliases: []
-  mention_count: 2
 - concept_id: npcs/harkarus_jin
   type: NPC
   canonical_name: Harkarus (Jin)
@@ -3234,9 +3202,9 @@ entities:
   mention_count: 1
 - concept_id: npcs/hendrik_heinrich
   type: NPC
-  canonical_name: Hendrik Heinrich
+  canonical_name: Hendrik
   aliases:
-  - Hendrik
+  - Hendrik Heinrich
   mention_count: 2
 - concept_id: npcs/herakles_raxxles
   type: NPC
@@ -3248,17 +3216,13 @@ entities:
   canonical_name: Hermann
   aliases: []
   mention_count: 1
-- concept_id: npcs/hexe
-  type: NPC
-  canonical_name: Heck (die Hexe)
-  aliases:
-  - Hexe
-  mention_count: 3
 - concept_id: npcs/hexe_alchemistin
   type: NPC
   canonical_name: Hexe (Alchemistin)
-  aliases: []
-  mention_count: 1
+  aliases:
+  - Heck (die Hexe)
+  - Hexe
+  mention_count: 4
 - concept_id: npcs/horatio
   type: NPC
   canonical_name: Horatio
@@ -3388,9 +3352,9 @@ entities:
   mention_count: 1
 - concept_id: npcs/lady_lyra_von_willau
   type: NPC
-  canonical_name: Lady Lyra von Willau
+  canonical_name: Lady Lyra
   aliases:
-  - Lady Lyra
+  - Lady Lyra von Willau
   mention_count: 2
 - concept_id: npcs/lara
   type: NPC
@@ -3402,7 +3366,12 @@ entities:
   canonical_name: Leandras (Magier)
   aliases:
   - Leandras
-  mention_count: 3
+  mention_count: 1
+- concept_id: npcs/lendras
+  type: NPC
+  canonical_name: Leandras
+  aliases: []
+  mention_count: 2
 - concept_id: npcs/lenra
   type: NPC
   canonical_name: Lenra
@@ -3448,14 +3417,6 @@ entities:
   canonical_name: Lisa
   aliases: []
   mention_count: 1
-- concept_id: npcs/lobrecht
-  type: NPC
-  canonical_name: Lobrecht
-  aliases:
-  - Kahnführer Lobrecht
-  - Kapitän Lobrecht
-  - Miyamani und Käpt'n Lobrecht
-  mention_count: 4
 - concept_id: npcs/loran_silberbart
   type: NPC
   canonical_name: Loran Silberbart
@@ -3538,6 +3499,14 @@ entities:
   canonical_name: Miner Demon
   aliases: []
   mention_count: 1
+- concept_id: npcs/miyamani_und_kaept_n_lobrecht
+  type: NPC
+  canonical_name: Miyamani und Käpt'n Lobrecht
+  aliases:
+  - Lobrecht
+  - Kahnführer Lobrecht
+  - Kapitän Lobrecht
+  mention_count: 4
 - concept_id: npcs/nairog_peri_ajani
   type: NPC
   canonical_name: Nairog, Peri, Ajani
@@ -3547,10 +3516,12 @@ entities:
   type: NPC
   canonical_name: Nyruk
   aliases:
-  - Nairook (Nayruk)
-  - Nai Ruck
-  - Nairuk
   - Naeruk
+  - Nai Ruck
+  - Nai Ruk
+  - Nairook
+  - Nairook (Nayruk)
+  - Nairuk
   mention_count: 9
 - concept_id: npcs/namenloser_waechter
   type: NPC
@@ -3760,18 +3731,13 @@ entities:
   canonical_name: Skelettbogenschützen
   aliases: []
   mention_count: 1
-- concept_id: npcs/slix
-  type: NPC
-  canonical_name: Slix
-  aliases: []
-  mention_count: 2
-  important: true
 - concept_id: npcs/slix_vasul
   type: NPC
   canonical_name: Slicks
   aliases:
   - Slix/Vasul
-  mention_count: 4
+  - Slix
+  mention_count: 6
   important: true
 - concept_id: npcs/soldat
   type: NPC
@@ -3831,11 +3797,6 @@ entities:
 - concept_id: npcs/sumpfmonster
   type: NPC
   canonical_name: Sumpfmonster
-  aliases: []
-  mention_count: 1
-- concept_id: npcs/t_rex_geist_im_amulett
-  type: NPC
-  canonical_name: T-Rex (Geist im Amulett)
   aliases: []
   mention_count: 1
 - concept_id: npcs/talron
@@ -3905,16 +3866,11 @@ entities:
   aliases: []
   mention_count: 3
   important: true
-- concept_id: npcs/tyrex
-  type: NPC
-  canonical_name: Tyrex
-  aliases: []
-  mention_count: 2
 - concept_id: npcs/ulvanara_liam
   type: NPC
-  canonical_name: Ulvanara (Liam)
+  canonical_name: Liam
   aliases:
-  - Liam
+  - Ulvanara (Liam)
   mention_count: 5
 - concept_id: npcs/unbenannte_tieflingdame
   type: NPC
@@ -3923,9 +3879,9 @@ entities:
   mention_count: 1
 - concept_id: npcs/untote_skelette
   type: NPC
-  canonical_name: Untote Skelette
+  canonical_name: Skelette
   aliases:
-  - Skelette
+  - Untote Skelette
   mention_count: 2
 - concept_id: npcs/untoter_baer
   type: NPC
@@ -3934,9 +3890,9 @@ entities:
   mention_count: 1
 - concept_id: npcs/untoter_general_todesritter
   type: NPC
-  canonical_name: Untoter General (Todesritter)
+  canonical_name: Untoter General
   aliases:
-  - Untoter General
+  - Untoter General (Todesritter)
   mention_count: 2
 - concept_id: npcs/untoter_waechter
   type: NPC
@@ -3955,17 +3911,13 @@ entities:
   mention_count: 1
 - concept_id: npcs/voras_der_heilige_der_schrecken
   type: NPC
-  canonical_name: Voras der Heilige / der Schrecken
+  canonical_name: Voras der Heilige
   aliases:
-  - Voras der Heilige
   - Voras
-  mention_count: 6
+  - Graf
+  - Voras der Heilige / der Schrecken
+  mention_count: 7
   important: true
-- concept_id: npcs/vorgultar
-  type: NPC
-  canonical_name: Vorgultar
-  aliases: []
-  mention_count: 1
 - concept_id: npcs/wache
   type: NPC
   canonical_name: Wache

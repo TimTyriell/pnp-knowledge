@@ -1,19 +1,15 @@
 ---
 type: NPC
 title: Lisa
-description: Eine Einheimische aus Willau, die die Gruppe aus Ehrenfels kennt und
-  ihnen Informationen über das Turnier und die Stadt gibt.
+description: Lisa ist eine alte Bekannte aus Ehrenfels, die in der Taverne auf die
+  Gruppe trifft. Sie erklärt ausführlich die sechs Turnierdisziplinen,…
 tags:
 - npcs
 timestamp: '2025-10-14T00:00:00Z'
+id: NPC_LISA
 ---
 
-# Lisa
-
-Eine Einheimische aus [Willau](../locations/willau.md), die der Gruppe aus [Ehrenfels](../locations/ehrenfels.md) bekannt ist.
-
-## Rolle in der Handlung
-Lisa begegnete der Gruppe in Willau und versorgte sie mit Informationen über die Stadt und das dort stattfindende Turnier.
+**Lisa** ist eine alte Bekannte der Gruppe aus Ehrenfels. In der Taverne trifft sie auf die Abenteurer und erläutert ihnen ausführlich die sechs Turnierdisziplinen, die vier Tiers sowie die Vorlieben der Stadtherrschaft für Kampfkunst. Zugleich warnt sie vor den Gefahren der Magierkämpfe und rät dringend, Champion Mil aufzusuchen.
 
 # Belege
-1. Session 2025-10-14 @ 00:32:38 (https://www.youtube.com/watch?v=cUtz87UCHu4)
+1. Session 2025‑10‑14 @ 00:35:53 (https://www.youtube.com/watch?v=cUtz87UCHu4)

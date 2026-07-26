@@ -1,16 +1,15 @@
 ---
 type: NPC
 title: Fluffy
-description: Ein großer, wolfsähnlicher Hund in Crowfin Manor, der sehr anhänglich
-  ist und von den Charakteren gestreichelt wird.
+description: Ein großer, wolfsartiger Hund, der auf Crowfin Manor lebt. Er ist freundlich
+  und verschmust, scheint aber nach Aufmerksamkeit zu hungern, u…
 tags:
 - npcs
 timestamp: '2026-02-17T00:00:00Z'
+id: NPC_FLUFFY
 ---
 
-# Fluffy
-
-Fluffy ist ein großer, wolfsähnlicher Hund, der sich in [Crowfin Manor](../locations/crowfin-manor.md) aufhält. Er zeigt ein sehr anhängliches Wesen und lässt sich bereitwillig von den Charakteren streicheln.
+Fluffy ist ein großer, wolfsartiger Hund, der auf [Crowfin Manor](/locations/crowfin_manor.md) lebt. Er ist freundlich und verschmust, hungert aber geradezu nach Aufmerksamkeit. Wer ihn streichelt, empfindet ein wohliges Gefühl der Sicherheit.
 
 # Belege
 1. Session 2026-02-17 @ 00:16:06 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)

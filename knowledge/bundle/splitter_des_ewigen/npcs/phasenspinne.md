@@ -1,27 +1,15 @@
 ---
 type: NPC
 title: Phasenspinne
-description: Der zweite Arena-Gegner. Eine riesige, giftige Spinne, die sich teleportieren
-  kann, Netze verschießt und ihre Brut aus Eiern schlüpfen läss…
+description: Die Phasenspinne ist der Bossgegner der zweiten Arena. Sie kann sich
+  teleportieren, Netze verschießen und Giftbälle spucken. Sie greift Est…
 tags:
 - npcs
 timestamp: '2025-10-21T00:00:00Z'
+id: NPC_PHASENSPINNE
 ---
 
-# Phasenspinne
-
-Die Phasenspinne war der zweite Gegner, dem sich die Gruppe in der Arena stellen musste. Es handelte sich um eine riesige, giftige Spinne mit übernatürlichen Fähigkeiten.
-
-## Fähigkeiten
-
-*   **Teleportation:** Die Kreatur war in der Lage, sich im Kampf zu teleportieren.
-*   **Netzangriff:** Sie konnte Netze auf ihre Gegner verschießen.
-*   **Brutbeschwörung:** Die Phasenspinne ließ ihre Brut aus Eiern schlüpfen, um zusätzliche Feinde ins Feld zu führen.
-
-## Schicksal
-
-Die Gruppe tötete die Phasenspinne im Kampf. Bei ihrem Tod explodierte sie in einer Wolke aus Säure.
+Die **Phasenspinne** ist der Bossgegner der zweiten Arena der Kampagne. Sie kann sich teleportieren, Netze verschießen und Giftbälle spucken. Die Spinne greift Esterossa aus dem Hinterhalt an, vergiftet ihn und attackiert die Gruppe wiederholt aus wechselnden Positionen. Als sie schwer getroffen wird, platzen aus ihr Eier, aus denen drei Spinnenlinge schlüpfen. Sie wird von Esterossas Hammer getötet und explodiert in einer ätzenden Säurewolke, die der Gruppe Schaden zufügt; ihre Brut flieht danach.
 
 # Belege
-
-1.  Session 2025-10-21 @ 01:10:44 (https://www.youtube.com/watch?v=sxFhbtwoefA)
+1. Session 2025-10-21 @ 01:10:11 – https://www.youtube.com/watch?v=sxFhbtwoefA

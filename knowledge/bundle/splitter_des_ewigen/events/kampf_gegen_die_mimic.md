@@ -1,22 +1,16 @@
 ---
 type: Event
 title: Kampf gegen die Mimic
-description: Eine der Muscheln entpuppt sich als Mimic und greift an. Sie verschlingt
-  Cookie und verursacht schweren Schaden. Dodo und Rotunas versuchen…
+description: Eine gefährliche Begegnung in der Muschelkammer. Die Mimic überrascht
+  Lindo Laut und packt Cookie, die beinahe stirbt. Dodo und Rotunas sch…
 tags:
 - events
 timestamp: '2025-06-10T00:00:00Z'
+id: EVENT_KAMPF_GEGEN_DIE_MIMIC
 ---
 
-# Kampf gegen die Mimic
-
-## Verlauf
-Während die Gruppe Muscheln sammelte, entpuppte sich eine davon als Mimic und griff an. Die Kreatur verschlang [Cookie](../characters/cookie.md) und fügte ihm schweren Schaden zu. [Dodo](../characters/dodo.md) und [Rotunas](../characters/rotunas.md) versuchten zunächst erfolglos, das Maul der Mimic aufzureißen. Erst ein gezielter Schlag von [Dodo](../characters/dodo.md) mit seinem Streitkolben trennte den Oberkiefer der Mimic ab und befreite [Cookie](../characters/cookie.md).
-
-## Beteiligte
-- [Cookie](../characters/cookie.md) (verschlungen und verletzt)
-- [Dodo](../characters/dodo.md) (erlegte die Mimic)
-- [Rotunas](../characters/rotunas.md) (versuchte vergeblich, die Mimic aufzureißen)
+In der Muschelkammer überraschte eine Mimic Lindo Laut und packte Cookie, die beinahe starb. Dodo und Rotunas scheiterten zunächst daran, das Maul der Kreatur zu öffnen, wodurch Cookie weiteren Schaden erlitt. Erst ein gemeinsamer Angriff von Lindo Laut und Dodo konnte die Mimic endgültig besiegen. Die Gruppe erbeutete wertvolle Gegenstände.
 
 # Belege
-1. Session 2025-06-10, 01:16:47 – https://www.youtube.com/watch?v=cLkCu3Iq3y8
+
+1. Session 2025-06-10 @ 01:16:47 (https://www.youtube.com/watch?v=cLkCu3Iq3y8)

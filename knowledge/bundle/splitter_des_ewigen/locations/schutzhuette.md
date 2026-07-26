@@ -1,16 +1,15 @@
 ---
 type: Location
 title: Schutzhütte
-description: Eine kleine, leere Hütte auf einem freien Feld, die früher Reisenden
-  als Schutz diente. Die Gruppe sucht dort am Ende der Session Zuflucht…
+description: Eine kleine, leere Schutzhütte auf freiem Feld, die einst Reisenden als
+  Unterstand diente. Die Gruppe findet hier Zuflucht nach den Kämpfen…
 tags:
 - locations
 timestamp: '2025-11-25T00:00:00Z'
+id: LOC_SCHUTZHUETTE
 ---
 
-# Schutzhütte
-
-Die Schutzhütte ist ein kleines, verlassenes Gebäude auf einem freien Feld. Sie diente früher Reisenden als Schutz vor den Elementen und bot der Gruppe am Ende ihrer Reise Zuflucht vor der Kälte. Bei ihrer Ankunft fanden sie die Hütte leer vor.
+Die **Schutzhütte** ist eine kleine, verlassene Feldhütte auf freiem Gelände, die ursprünglich Reisenden als Unterstand diente. Die Gruppe nutzt sie nach den Kämpfen als provisorischen Rückzugsort, um sich zu beraten und zu heilen. Da die Temperaturen nachts stark abfallen, bietet allein dieses Gebäude Schutz vor dem Wetter, während die Gruppe ihr weiteres Vorgehen bespricht.
 
 # Belege
-1. Session 2025-11-25, 01:50:33, https://www.youtube.com/watch?v=wd5R4fJfngY
+1. Session 2025-11-25 @ 01:50:33 (https://www.youtube.com/watch?v=wd5R4fJfngY)

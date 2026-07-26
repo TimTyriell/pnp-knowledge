@@ -1,16 +1,15 @@
 ---
 type: Location
 title: Silbergruft
-description: Eine verlassene, tief in einen Wald eingewachsene Silbermine südlich
-  von Ehrenfels. Sie ist die Heimat giftiger Silberbestien und birgt ein…
+description: Die stillgelegte Silbermine im Wald südlich der Berge von Ehrenfels besteht
+  aus mehreren Ebenen. Oben befinden sich zwei geplünderte Räume…
 tags:
 - locations
 timestamp: '2026-02-24T00:00:00Z'
+id: LOC_SILBERGRUFT
 ---
 
-# Silbergruft
-
-Die Silbergruft ist eine verlassene Silbermine, die tief in einen Wald eingewachsen südlich von [Ehrenfels](ehrenfels.md) liegt. Sie ist die Heimat giftiger Silberbestien und birgt einen riesigen, unberührten Silberberg sowie ein magisches Artefakt.
+Die **Silbergruft** ist eine stillgelegte Silbermine im Wald südlich der Berge von Ehrenfels. Sie besteht aus mehreren Ebenen: zwei geplünderte obere Räume mit einer notdürftig reparierten Leiter, einer riesigen Halle mit einer gewaltigen Silberader und lebendigen Kristallen sowie einem tiefsten Nest mit brüchigem Boden und tiefen Spalten, in dem große Silberbestien hausen. Ein verschütteter Gang wurde von den Helden gesprengt, um die Kreaturen abzuschotten. Ein verwittertes Schild bezeugt, dass die Mine einst einem Zebros gehörte.
 
 # Belege
-1. Session 2026-02-24 @ 00:07:51 (https://www.youtube.com/watch?v=WOFArbwDDIQ)
+1. Session 2026-02-24 @ 00:07:10 (https://www.youtube.com/watch?v=WOFArbwDDIQ)

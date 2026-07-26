@@ -1,16 +1,15 @@
 ---
 type: Item
 title: Beschwörungsstab
-description: Ein gefährliches Artefakt, das von der vernichteten Splitterwelt-Kreatur
-  zurückgelassen wurde. Es dient dazu, Kreaturen aus anderen Reichen…
+description: Ein von den Alten Göttern geschaffenes Artefakt, mit dem man Kreaturen
+  aus abyssalen Reichen (wie der Schattenwelt) beschwören kann. Eigent…
 tags:
 - items
 timestamp: '2025-11-25T00:00:00Z'
+id: ITEM_BESCHWOERUNGSSTAB
 ---
 
-# Beschwörungsstab
-
-Ein gefährliches Artefakt, das von einer vernichteten Splitterwelt-Kreatur zurückgelassen wurde. Der Stab dient dazu, Kreaturen aus anderen Reichen zu beschwören. [Lindo Laut](../characters/lindo_laut.md) kann ihn gefahrlos an sich nehmen.
+Der Beschwörungsstab ist ein Artefakt der Alten Götter, mit dem sich Kreaturen aus abyssalen Reichen wie der Schattenwelt beschwören lassen. Ursprünglich vernichteten oder verbannten die Neuen Götter alle derartigen Stäbe. Lindo Laut kann diesen Stab aufgrund seiner Verbindung zur Splitterwelt gefahrlos aufheben und in seinem Beutel der Aufbewahrung verstauen. Slicks deutet an, dass der Stab es Lindo ermöglicht, besonders obstruse Wesen zu beschwören, was jedoch viel Energie kostet.
 
 # Belege
-1. Session 2025-11-25, 00:56:25 – https://www.youtube.com/watch?v=wd5R4fJfngY
+[1] Session 2025-11-25 @ 00:56:25 (https://www.youtube.com/watch?v=wd5R4fJfngY)

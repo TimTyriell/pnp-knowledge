@@ -6,9 +6,20 @@ invalidated automatically.
 
 from __future__ import annotations
 
-PROMPT_VERSION = "4"
+from pnp_okf.models import SUBTYPES
 
-EXTRACT_SYSTEM = """\
+PROMPT_VERSION = "5"
+
+
+def _render_subtypes() -> str:
+    """The closed subtype vocabulary, rendered for the extraction prompt."""
+
+    return "\n".join(
+        f"- {etype.value}: {', '.join(values)}" for etype, values in SUBTYPES.items()
+    )
+
+
+_EXTRACT_SYSTEM_TEMPLATE = """\
 Du bist ein sorgfältiger Archivar für eine Pen-&-Paper-Rollenspielkampagne
 (Daggerheart, deutschsprachig). Du erhältst das diarisierte Transkript EINER
 Session. Sprecher in Klammern markieren die reale Person und ihre Rolle,
@@ -41,6 +52,23 @@ Halte fest, was diese Session NEU über die Entität verrät oder was sich
 verändert hat — diese Notizen sind später die einzige Grundlage für den
 Kampagnen-Eintrag.
 
+Benenne EREIGNISSE immer **spezifisch und eindeutig**. Ein Ereignis ist ein
+einmaliger Vorfall, kein Oberbegriff. Nenne die beteiligte Figur, den Ort oder
+den Gegner mit:
+- schlecht: „Vertrag", „Portal", „Kampf", „Beschwörung", „Teleport"
+- gut: „Vertrag mit dem Ratten-Dämon", „Flucht durch das Portal in Ehrenfels",
+  „Kampf gegen die Ghule am Brunnen", „Beschwörung des Seelenkalbs"
+Dasselbe gilt für Orte und Gegenstände: „Turm" oder „Brücke" allein ist als
+Eintrag wertlos — schreibe „Phipps' Turm" oder „Brücke vor der Zwergenfestung".
+Ist ein Ding im Transkript wirklich namenlos und beiläufig, lasse es lieber
+ganz weg, statt einen Allerweltsnamen zu vergeben.
+
+Ordne jeder Entität zusätzlich einen **subtype** aus der folgenden
+geschlossenen Liste zu — passend zu ihrem Typ. Wähle ausschließlich aus dieser
+Liste, erfinde keine eigenen Kategorien. Für Typen, die hier nicht aufgeführt
+sind (Character, NPC, Domain), lässt du das Feld leer.
+{subtypes}
+
 Wichtige Regeln:
 - Erfinde nichts. Nutze nur Informationen aus dem Transkript.
 - Das Transkript ist automatisch transkribiert und enthält Fehler bei
@@ -51,6 +79,8 @@ Wichtige Regeln:
   Twitch-Chat) von der Spielwelt. Extrahiere Entitäten der SPIELWELT, nicht
   die realen Personen selbst.
 """
+
+EXTRACT_SYSTEM = _EXTRACT_SYSTEM_TEMPLATE.replace("{subtypes}", _render_subtypes())
 
 EXTRACT_USER_TEMPLATE = """\
 Session-ID: {session_id}
@@ -156,7 +186,14 @@ SYNTH_SOURCES_TEMPLATE = """
 Zusätzliche Quellen (Weltmaterial außerhalb der Session-Transkripte, z. B.
 Regelwerk, Pantheon-Schriften, Kampagnen-Unterlagen). Diese gelten als
 kanonisch für Hintergrundwissen. Wenn das Spielgeschehen ihnen widerspricht,
-nenne beides und weise auf die Abweichung hin:
+nenne beides und weise auf die Abweichung hin.
+
+AUSNAHME — Abschnitte, die mit "ENTSCHEIDUNG:" beginnen, sind verbindliche
+Festlegungen der Spielleitung. Sie haben Vorrang vor JEDEM widersprechenden
+Beleg aus den Sessions. Schreibe den Eintrag so, als wäre die Festlegung die
+Tatsache; erwähne die widerlegten Varianten höchstens kurz als frühere
+Fehlannahme. Führe einen so entschiedenen Punkt NICHT unter
+"# Offene Konflikte" auf.
 {sources}
 """
 

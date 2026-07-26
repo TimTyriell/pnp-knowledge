@@ -13,7 +13,13 @@ from pnp_okf.models import (
     SessionExtraction,
     SessionTranscript,
 )
-from pnp_okf.models import DIR_TO_TYPE, PERSON_TYPES, TYPE_DIR
+from pnp_okf.models import (
+    DIR_TO_TYPE,
+    PERSON_TYPES,
+    MAX_EVENT_SESSION_SPAN,
+    SESSION_SCOPED_TYPES,
+    TYPE_DIR,
+)
 from pnp_okf.okf import slugify
 
 log = logging.getLogger(__name__)
@@ -33,7 +39,16 @@ def _same_space(a: CanonicalEntity, b: CanonicalEntity) -> bool:
 
 
 def _tokens(entity: CanonicalEntity) -> set[str]:
-    return set(slugify(entity.canonical_name).split("_"))
+    """Name tokens for the subset rule, taken from the *concept id*.
+
+    Deliberately not ``canonical_name``: that is a display label a human may
+    pin at any time ("Nyruk" for "Nairuk"). Driving merge decisions off it
+    meant a pure renaming silently reshuffled which entities folded together,
+    so a cosmetic fix could surface unrelated conflicts elsewhere. The
+    concept id is the stable identity, and ``_fuzzy_match`` already uses it.
+    """
+
+    return set(entity.concept_id.rsplit("/", 1)[-1].split("_"))
 
 
 def _fuzzy_match(a: CanonicalEntity, b: CanonicalEntity) -> bool:
@@ -44,6 +59,7 @@ def _fuzzy_match(a: CanonicalEntity, b: CanonicalEntity) -> bool:
 
 def merge_near_duplicates(
     entities: list[CanonicalEntity],
+    never_merge: list[set[str]] | None = None,
 ) -> list[CanonicalEntity]:
     """Second resolution pass: fold near-duplicate entities together.
 
@@ -64,6 +80,14 @@ def merge_near_duplicates(
 
     survivors: list[CanonicalEntity] = list(entities)
     merged_away: dict[str, str] = {}
+    blocked = never_merge or []
+
+    def _forbidden(a: CanonicalEntity, b: CanonicalEntity) -> bool:
+        # A human ruling that two things are distinct must also stop the
+        # automatic passes, not just the dedup suggestions — otherwise a
+        # deliberate split is silently undone on the next run.
+        pair = {a.concept_id, b.concept_id}
+        return any(len(pair & group) >= 2 for group in blocked)
 
     def _merge(loser: CanonicalEntity, winner: CanonicalEntity, rule: str) -> None:
         for name in [loser.canonical_name, *loser.aliases]:
@@ -92,7 +116,7 @@ def merge_near_duplicates(
         changed = False
         for a in list(survivors):
             for b in list(survivors):
-                if a is b or not _same_space(a, b):
+                if a is b or not _same_space(a, b) or _forbidden(a, b):
                     continue
                 if _fuzzy_match(a, b):
                     loser, winner = sorted(
@@ -114,6 +138,7 @@ def merge_near_duplicates(
             if b is not a
             and b.type in PERSON_TYPES
             and _tokens(a) < _tokens(b)
+            and not _forbidden(a, b)
         ]
         if len(supersets) == 1:
             _merge(a, supersets[0], "token-subset")
@@ -158,6 +183,88 @@ def _load_alias_overrides(registry_path: Path) -> dict[str, str]:
     return overrides
 
 
+def _load_never_merge_pairs(registry_path: Path) -> list[set[str]]:
+    """``never_merge:`` groups, so the automatic passes honour them too."""
+
+    if not registry_path.exists():
+        return []
+    data = yaml.safe_load(registry_path.read_text(encoding="utf-8")) or {}
+    out: list[set[str]] = []
+    for group in data.get("never_merge") or []:
+        ids = {str(c).strip() for c in group if str(c).strip()}
+        if len(ids) >= 2:
+            out.append(ids)
+    return out
+
+
+def _load_splits(registry_path: Path) -> dict[tuple[str, str], str]:
+    """Route one *session's* mention of a name to its own concept.
+
+    Merging fixes many-names-one-being; this fixes the opposite, which no
+    name-based rule can reach: two unrelated beings sharing a name. The
+    campaign has two Haralds — a privateer captain and a demon — extracted
+    under the identical string, so only the session they appear in tells them
+    apart.
+
+    Registry form (``session`` matches the session date or id)::
+
+        split:
+          - name: harald
+            session: "2026-04-14"
+            concept_id: npcs/harald_daemon
+    """
+
+    if not registry_path.exists():
+        return {}
+    data = yaml.safe_load(registry_path.read_text(encoding="utf-8")) or {}
+    out: dict[tuple[str, str], str] = {}
+    for rule in data.get("split") or []:
+        name = str(rule.get("name", "")).strip().lower()
+        session = str(rule.get("session", "")).strip()
+        concept_id = str(rule.get("concept_id", "")).strip()
+        if name and session and concept_id:
+            out[(name, session)] = concept_id
+    return out
+
+
+def _load_canonical_names(registry_path: Path) -> dict[str, str]:
+    """Hand-set display names from the registry, keyed by concept id.
+
+    Without this the title always comes from whichever transcript spelling
+    happened to be extracted first, so a corrected name ("Thyrex" for the
+    mis-heard "T-Rex", "Nyruk" for "Nairuk") could never be made to stick —
+    the correction would be silently overwritten on every run.
+    """
+
+    if not registry_path.exists():
+        return {}
+    data = yaml.safe_load(registry_path.read_text(encoding="utf-8")) or {}
+    out: dict[str, str] = {}
+    for entry in data.get("entities") or []:
+        cid = str(entry.get("concept_id", "")).strip()
+        name = str(entry.get("canonical_name", "")).strip()
+        if cid and name:
+            out[cid] = name
+    return out
+
+
+def _load_ignored(registry_path: Path) -> set[str]:
+    """Concept ids listed under ``ignore:`` — never become concepts at all.
+
+    Extraction inevitably produces generic buckets ("Brücke", "Turm",
+    "Statue"): every session that features *a* bridge feeds the same concept,
+    so it accumulates mentions of unrelated things and reads as one place
+    that keeps changing. Such a concept cannot be fixed by merging or by a
+    ruling — it should not exist. Its mentions are dropped and any file left
+    over is pruned on the next run.
+    """
+
+    if not registry_path.exists():
+        return set()
+    data = yaml.safe_load(registry_path.read_text(encoding="utf-8")) or {}
+    return {str(c).strip() for c in (data.get("ignore") or []) if str(c).strip()}
+
+
 def _load_important(registry_path: Path) -> set[str]:
     """Concept ids flagged ``important: true`` in the registry.
 
@@ -190,21 +297,50 @@ def resolve_entities(
 
     overrides = _load_alias_overrides(registry_path)
     important = _load_important(registry_path)
+    ignored = _load_ignored(registry_path)
+    pinned_names = _load_canonical_names(registry_path)
+    splits = _load_splits(registry_path)
+    dropped = 0
     # Also match registry keys after slugification, so "Lindo  Laut" folds
     # into a registry entry written as "lindo laut".
     slug_overrides = {slugify(k): v for k, v in overrides.items()}
     entities: dict[str, CanonicalEntity] = {}
+    # Chronological position of each session, for the event-span cap.
+    session_order = {sid: i for i, sid in enumerate(sorted(extractions))}
 
     for session_id in sorted(extractions):
         extraction = extractions[session_id]
         transcript = transcripts[session_id]
         for mention in extraction.entities:
             name_key = mention.name.strip().lower()
+            # A per-session split wins over every name-based rule: it is the
+            # only signal that separates two beings sharing one name.
             concept_id = (
-                overrides.get(name_key)
+                splits.get((name_key, transcript.date))
+                or splits.get((name_key, session_id))
+                or overrides.get(name_key)
                 or slug_overrides.get(slugify(mention.name))
                 or _default_concept_id(mention.type, mention.name)
             )
+            if concept_id in ignored:
+                dropped += 1
+                continue
+            # An event may span a few sittings (a tournament, a siege) but not
+            # the whole campaign: past MAX_EVENT_SESSION_SPAN the same generic
+            # name ("Vertrag") is a different occurrence, so it gets its own
+            # id instead of being folded in. An explicit registry override is
+            # a human saying they DO belong together and always wins.
+            explicit = name_key in overrides or slugify(mention.name) in slug_overrides
+            if mention.type in SESSION_SCOPED_TYPES and not explicit:
+                claimed = entities.get(concept_id)
+                if claimed is not None:
+                    seen = [
+                        session_order.get(m.session_id, 0) for m in claimed.mentions
+                    ]
+                    here = session_order.get(session_id, 0)
+                    span = max(seen + [here]) - min(seen + [here]) + 1
+                    if span > MAX_EVENT_SESSION_SPAN:
+                        concept_id = f"{concept_id}_{transcript.date}"
             # Keep type consistent with the concept-id directory: a merge may
             # fold this mention into a concept of a different type.
             entity_type = DIR_TO_TYPE.get(
@@ -219,6 +355,7 @@ def resolve_entities(
                     aliases=[],
                     mentions=[],
                     important=concept_id in important,
+                    subtype=mention.subtype.strip(),
                 )
                 entities[concept_id] = entity
             if (
@@ -226,6 +363,8 @@ def resolve_entities(
                 and mention.name.strip() not in entity.aliases
             ):
                 entity.aliases.append(mention.name.strip())
+            if not entity.subtype and mention.subtype.strip():
+                entity.subtype = mention.subtype.strip()
             entity.mentions.append(
                 MentionRef(
                     session_id=session_id,
@@ -237,7 +376,23 @@ def resolve_entities(
                 )
             )
 
-    resolved = merge_near_duplicates(list(entities.values()))
+    if dropped:
+        log.info(
+            "[resolve] dropped %d mention(s) for %d ignored concept(s)",
+            dropped,
+            len(ignored),
+        )
+    # A hand-set canonical_name wins over the extracted spelling.
+    for cid, entity in entities.items():
+        pinned = pinned_names.get(cid)
+        if pinned and pinned != entity.canonical_name:
+            if entity.canonical_name not in entity.aliases:
+                entity.aliases.append(entity.canonical_name)
+            entity.canonical_name = pinned
+
+    resolved = merge_near_duplicates(
+        list(entities.values()), _load_never_merge_pairs(registry_path)
+    )
     log.info(
         "[resolve] %d mentions -> %d canonical entities",
         sum(len(e.entities) for e in extractions.values()),
@@ -258,9 +413,16 @@ def write_registry(entities: list[CanonicalEntity], registry_path: Path) -> None
     merge: dict[str, str] = {}
     preserved_aliases: dict[str, list[str]] = {}
     preserved_important: set[str] = set()
+    # Any other hand-maintained top-level key (``ignore:``, ``never_merge:``,
+    # …) must survive: this function rewrites the file on every run, so a key
+    # it does not know about would be silently deleted and the setting lost.
+    extra_keys: dict[str, object] = {}
     if registry_path.exists():
         existing = yaml.safe_load(registry_path.read_text(encoding="utf-8")) or {}
         merge = existing.get("merge") or {}
+        extra_keys = {
+            k: v for k, v in existing.items() if k not in ("merge", "entities")
+        }
         # Keep the hand-maintained aliases on each concept.
         for entry in existing.get("entities") or []:
             cid = str(entry.get("concept_id", "")).strip()
@@ -289,6 +451,7 @@ def write_registry(entities: list[CanonicalEntity], registry_path: Path) -> None
         inventory.append(entry)
     doc = {
         "merge": merge,
+        **extra_keys,
         "entities": inventory,
     }
     registry_path.parent.mkdir(parents=True, exist_ok=True)

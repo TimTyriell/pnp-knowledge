@@ -35,9 +35,13 @@ def _entity(concept_id, etype, name, n_mentions=1, important=False, aliases=None
 
 
 def test_tiers():
-    # Player characters and deities are deep regardless of mention count.
-    assert _entity("characters/dodo", EntityType.CHARACTER, "Dodo").tier == "deep"
-    assert _entity("deities/vharzul", EntityType.DEITY, "Vhar'Zul").tier == "deep"
+    # Player characters and deities go deep once corroborated...
+    assert _entity("characters/dodo", EntityType.CHARACTER, "Dodo", 2).tier == "deep"
+    assert _entity("deities/vharzul", EntityType.DEITY, "Vhar'Zul", 2).tier == "deep"
+    # ...but a single passing mention cannot carry a long entry, so it drops to
+    # standard rather than being padded out to 1500 words.
+    assert _entity("characters/finn", EntityType.CHARACTER, "Finn", 1).tier == "standard"
+    assert _entity("deities/gruul", EntityType.DEITY, "Gruul", 1).tier == "standard"
     # The hand-set flag is the escape hatch for the rules' blind spot: a
     # pivotal NPC fragmented across spellings shows only one mention.
     assert _entity("npcs/voras", EntityType.NPC, "Voras").tier == "brief"

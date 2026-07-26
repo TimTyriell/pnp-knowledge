@@ -1,26 +1,23 @@
 ---
 type: NPC
 title: Hans
-description: Ein Soldat aus Breska, der eine Nachricht für Lindo Laut überbringt.
-  Er wurde von Lord Belorus geschickt und übergibt ahnungslos einen magi…
+description: Ein Soldat aus Breska, der von Belorus geschickt wurde, um die Nachricht
+  zu überbringen. War zuerst ängstlich und zögerlich, übergab dann a…
 tags:
 - npcs
 timestamp: '2026-03-18T00:00:00Z'
+id: NPC_HANS
 ---
 
-# Hans
+# Hans (NPC)
 
-## Barkeeper & Bote
+Hans ist ein tieflingischer Barkeeper in der Taverne **„Zum grünen Sichelmond“**. Er begegnete der Gruppe während ihres Aufenthalts in der Ortschaft und erwies sich als aufgeschlossener und hilfsbereiter Informant, insbesondere nachdem er ein großzügiges Trinkgeld erhalten hatte.
 
-Hans ist ein freundlicher Tiefling, der die Taverne "Zum grünen Sichelmond" betreibt. Er verfügt über ausgezeichnete Ortskenntnisse und gibt bereitwillig detaillierte Informationen über Reiserouten und regionale Gefahren preis.
+## Rolle als Informant zur nördlichen Route
 
-## Rolle in der Handlung
+Hans servierte der Gruppe ein reichhaltiges Mahl und gab auf Nachfrage bereitwillig Auskunft über den Weg nach Norden. Er beschrieb die Route über das **Lager Bucht**, durch einen gefährlichen Gebirgspass, der von Vargen und Orks bewohnt wird. Dabei riet er dringend, einen **Ork-Führer** zu engagieren, um den Pass sicher zu durchqueren. Das Ziel der Reise sei die Festung **Hartwacht**.
 
-Hans trat ursprünglich als Soldat aus Breska in Erscheinung, der im Auftrag von Lord Belorus eine Nachricht an [Lindo Laut](../characters/lindo_laut.md) überbrachte. Ahnungslos übergab er dabei einen magischen Kristall, aus dem später der Todesritter beschworen wurde.
-
-Später begegnete die Gruppe ihm erneut als Barkeeper der Taverne "Zum grünen Sichelmond", wo er ihnen detaillierte Informationen über die Route zu den Orks und die Gefahren des Passes mitteilte.
+Darüber hinaus empfahl Hans, sich an die Freibeuter **Harald** und dessen **Ersten Maat** zu wenden, wenn die Gruppe mehr über die Piratenaktivitäten in der Region erfahren wolle. Er betonte, dass diese Freibeuter – anders als die üblichen Gerüchte behaupteten – keinerlei Verbindung zu den **Silberkernen** hätten. Damit stellte er eine verlässliche, ortskundige Quelle für die Gefahren und Akteure des Nordens dar.
 
 # Belege
-
-1. Session 2026-01-13 @ 00:52:04 (https://www.youtube.com/watch?v=w4LB1s9_3rs)
-2. Session 2026-03-18 @ 00:39:43 (https://www.youtube.com/watch?v=HHXxsASLrbQ)
+1. Session 2026-03-18 @ 00:38:53 (https://www.youtube.com/watch?v=HHXxsASLrbQ)

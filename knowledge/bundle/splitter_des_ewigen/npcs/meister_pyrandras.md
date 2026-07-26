@@ -1,24 +1,27 @@
 ---
 type: NPC
 title: Meister Pyrandras
-description: Ein goldener Dragonborn und hochrangiger Wächter der Gilde. Er reagiert
-  sofort auf den Alarm, organisiert die Verteidigung und durchbricht…
+description: Ein goldener Drachengeborener und Anführer der Wachen. Er taucht mit
+  drei Soldaten auf und übernimmt mit einem Drachenschrei das Kommando.…
 tags:
 - npcs
-timestamp: '2025-07-22T00:00:00Z'
+timestamp: '2026-04-09T00:00:00Z'
+id: NPC_MEISTER_PYRANDRAS
 ---
 
-# Meister Pyrandras
+**Meister Pyrandras** ist ein goldener Drachengeborener und der Anführer der Wachen bzw. Kommandant von Ehrenfels. Er tritt sowohl bei der Sicherung der Stadt als auch während der dämonischen Invasion in Erscheinung, wo er die Verteidigung koordiniert und strategische Anweisungen an die Gruppe weitergibt.
 
-Meister Pyrandras ist ein goldener Dragonborn und ein hochrangiger Wächter der Gilde.
+## Rolle und Erscheinungsbild
 
-## Rolle in der Gilde
-Er reagiert sofort auf den Alarm und übernimmt die Organisation der Verteidigung. Gemeinsam mit seiner Magierin gelingt es ihm, die Dimensionsbarriere des Hexenmeisters zu durchbrechen.
+Pyrandras wird als goldener Drachengeborener beschrieben. Er führt eine Einheit von drei Soldaten und übernimmt mit einem markanten Drachenschrei das Kommando. Nachdem er die Wachen zur Sicherung der Stadt vorausgeschickt hat, sammelt er die Gruppe ein und ordnet an, den gelähmten Assassinen herbeizubringen. Anschließend diskutiert er mit [Lindo Laut](/characters/lindo_laut.md) über die Verteilung der Beute.
 
-## Verbindungen
-- Mitglied der Gilde
-- Arbeitet mit einer Magierin zusammen
-- Steht im Konflikt mit dem Hexenmeister
+## Verteidigung von Ehrenfels
+
+Während des Dämonenangriffs übernimmt Pyrandras die Führung der Verteidigung von Ehrenfels. Er kämpft persönlich gegen die Dämonen und befiehlt der Gruppe, zur Brücke zu eilen und das Portal zu schließen. Seine Einheit wird im Verlauf der Kämpfe stark dezimiert; er selbst wird von hinten unterstützt, kann die Verluste jedoch nicht verhindern.
 
 # Belege
-1. Session 2025-07-22 @ 02:06:20 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
+
+1. Session 2025-07-22 @ 02:05:58 – YouTube  
+   https://www.youtube.com/watch?v=BRRCUgW4xRo  
+2. Session 2026-04-09 @ 00:15:31 – YouTube  
+   https://www.youtube.com/watch?v=vcGkejr8_nI
