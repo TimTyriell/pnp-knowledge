@@ -119,7 +119,14 @@ def _call_llm_json_prompt(client, cfg: DeepSeekConfig, messages: list) -> Sessio
         response_format={"type": "json_object"},
     )
     raw = completion.choices[0].message.content or ""
-    return SessionExtraction.model_validate_json(_extract_json_block(raw))
+    parsed = SessionExtraction.model_validate_json(_extract_json_block(raw))
+    # A session that produced a recap but no entities is a silent failure, not
+    # a result: the model spent its budget on the prose and dropped the list.
+    # Raising here lets the retry above take another sample instead of caching
+    # a hole in the bundle.
+    if parsed.recap.strip() and not parsed.entities:
+        raise RuntimeError("Extraction returned a recap but zero entities")
+    return parsed
 
 
 def _call_llm(client, cfg: DeepSeekConfig, transcript: SessionTranscript) -> SessionExtraction:

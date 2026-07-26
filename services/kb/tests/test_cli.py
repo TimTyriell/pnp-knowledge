@@ -32,3 +32,5 @@ def test_check_with_valid_config(tmp_path: Path, monkeypatch):
     monkeypatch.setenv("DEEPSEEK_MODEL", "deepseek-chat")
     ret = main(["check", "--transcripts", str(tmp_path)])
     assert ret == 0
+
+

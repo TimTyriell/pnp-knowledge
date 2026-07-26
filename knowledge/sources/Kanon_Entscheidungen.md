@@ -127,6 +127,39 @@ HINWEIS ZUR DARSTELLUNG: Das ist allerdings sehr spezifisches Wissen vom
 Spieltisch. Halte es im Eintrag knapp und beiläufig; das Wiki soll nicht mehr
 wissen, als den Zuschauern zugänglich ist.
 
+### Liam Velora
+
+ENTSCHEIDUNG: Der korrekte Name lautet **Liam Velora** — Lunaras Bruder. Er
+tritt auch als **Ulvanara**, junger Wächter Vorgul'tars, auf; das ist dieselbe
+Person unter fremder Kontrolle, kein zweites Wesen.
+
+ENTSCHEIDUNG: Vhar'Zuls Aussage, Liam existiere **nur noch als Seele**, ist
+**falsch**. Ob aus Unwissenheit oder Absicht, ist unklar — stelle beides als
+offene Möglichkeit dar, aber nicht die Behauptung selbst als Tatsache.
+
+### Hendrik (Nomadenführer)
+
+ENTSCHEIDUNG: **Zwei verschiedene Personen.** Dieser Eintrag betrifft
+ausschließlich **Hendrik, den älteren Anführer der Bergnomaden** (Session
+2025-08-12). Er hat nichts mit dem Bauern Hendrik Heinrich zu tun.
+
+### Hendrik Heinrich (Bauer)
+
+ENTSCHEIDUNG: Der **Bauer und Besitzer der Heinrich-Farm**, die den Silberkernen
+als Unterschlupf dient (Session 2026-03-23). Er ist **nicht** identisch mit
+Hendrik, dem Anführer der Bergnomaden — die Namensähnlichkeit ist Zufall.
+
+### Jen (Schreiberin)
+
+ENTSCHEIDUNG: **Zwei verschiedene Personen** tragen diesen Namen. Hier geht es
+um die **menschliche Schreiberin**, die die Gruppe nahe der Kapelle antrifft
+(Session 2026-06-10).
+
+### Der Jen (Diener Vorgul'tars)
+
+ENTSCHEIDUNG: Ein **mysteriöser Diener Vorgul'tars**, der aus eigenen Interessen
+handelt (Session 2026-06-16). **Nicht** identisch mit der Schreiberin Jen.
+
 ### Nyruk
 
 ENTSCHEIDUNG: Der korrekte Name lautet **Nyruk**, nicht „Nairuk" — die übrigen

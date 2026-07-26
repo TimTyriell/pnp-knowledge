@@ -63,7 +63,7 @@ merge:
   volgultar: deities/vorgul_tar
   volgulta: deities/vorgul_tar
   vorgultar, herr der tausend seelen: deities/vorgul_tar
-  schlangengottheit: deities/alter_schlangengott
+  schlangengottheit: deities/schlangengott
   duran: deities/heiliger_duran
   die neuen götter: deities/neue_goetter
   abyssalis (splitterwelt): domains/splitterwelt
@@ -162,9 +162,57 @@ merge:
   t-rex (stimme im amulett): deities/thyrex
   t-rex (geist im amulett): deities/thyrex
   thyrex: deities/thyrex
-  der graf: npcs/voras_der_heilige_der_schrecken
-  graf: npcs/voras_der_heilige_der_schrecken
-  der graf voras: npcs/voras_der_heilige_der_schrecken
+  der graf: npcs/voras
+  graf: npcs/voras
+  der graf voras: npcs/voras
+  ulvanara: npcs/liam_velora
+  ulvanara (liam): npcs/liam_velora
+  liam: npcs/liam_velora
+
+  # --- Id pins ------------------------------------------------------------
+  # A concept id is derived from whichever name a session happened to use, so
+  # a sharper extraction prompt silently moves it and every hand-set pin,
+  # never_merge pair and wiki URL breaks with it. The fix is to keep the short
+  # id as the identity and fold the longer spellings into it here; the full
+  # name lives on as the display 'canonical_name'.
+  gildenmeister nox: npcs/nox
+  esterossa torpalm: characters/esterossa
+  esterossa torbhalm: characters/esterossa
+  esterossa: characters/esterossa
+  liam velora: npcs/liam_velora
+  ulnavar (liam): npcs/liam_velora
+  "käpt'n lobrecht": npcs/lobrecht
+  kapitän lobrecht: npcs/lobrecht
+  kahnführer lobrecht: npcs/lobrecht
+  nyruk: npcs/nyruk
+  nairuk: npcs/nyruk
+  nairook: npcs/nyruk
+  naeruk: npcs/nyruk
+  seras (seraph): deities/seras
+  vilau (willau): locations/willau
+
+  # Voras is one person: "der Graf" is Voras der Heilige (Kanon_Entscheidungen).
+  voras: npcs/voras
+  voras der heilige: npcs/voras
+  graf voras der heilige: npcs/voras
+  voras (voras der heilige / voras der schrecken): npcs/voras
+  voras der heilige / der schrecken: npcs/voras
+
+  # Rotunas is a player character with ~29 mentions. One session named his
+  # ghostly double "Geister-Doppelgänger von Rotunas" and, being the longest
+  # name in the cluster, that id swallowed the man himself.
+  rotunas: characters/rotunas
+  rotuna: characters/rotunas
+  geister-doppelgänger von rotunas: npcs/geist_von_rotunas
+
+  # Belorus the man, distinct from his mages and his army.
+  belorus: npcs/belorus
+  die magier von belorus: factions/magier_von_belorus
+  armee von belorus: factions/belorus_untotenarmee
+
+  # The mention named "Cookie und Valeria" describes Valeria throughout.
+  cookie und valeria: characters/valeria
+  "wiese (cookie's begleiter)": npcs/wiese
 never_merge:
 - - characters/miko
   - characters/myko
@@ -172,9 +220,22 @@ never_merge:
   - npcs/miyamani
 - - npcs/freibeuter_harald
   - npcs/abisalis_harald
+- - npcs/hendrik
+  - npcs/hendrik_heinrich
+- - npcs/jen
+  - npcs/der_jen
+# Without this the token-subset rule folds the man back into his double,
+# because {rotunas} is a subset of {geist, von, rotunas}.
+- - characters/rotunas
+  - npcs/geist_von_rotunas
 ignore:
 - locations/bruecke
 - locations/turm
+# A class of object, not an object: every mention is a different potion and an
+# entry about "healing potions in general" carries nothing worth linking.
+- items/heiltrank
+# Two unrelated inns in two unrelated towns; "die Taverne" is not an identity.
+- locations/die_taverne
 split:
 - name: harald
   session: '2026-03-18'
@@ -182,6 +243,78 @@ split:
 - name: harald
   session: '2026-04-14'
   concept_id: npcs/abisalis_harald
+# Generic place nouns that clustered three unrelated places into one entry.
+# Names are descriptive labels, safe to rename via canonical_name.
+- name: mine
+  session: '2025-10-07'
+  concept_id: locations/kristallmine
+- name: die mine
+  session: '2025-10-07'
+  concept_id: locations/kristallmine
+- name: mine
+  session: '2026-01-27'
+  concept_id: locations/zwergenmine
+- name: die mine
+  session: '2026-01-27'
+  concept_id: locations/zwergenmine
+- name: mine
+  session: '2026-07-10'
+  concept_id: locations/verlassene_mine_an_der_farm
+- name: die mine
+  session: '2026-07-10'
+  concept_id: locations/verlassene_mine_an_der_farm
+- name: kapelle
+  session: '2025-07-09'
+  concept_id: locations/schreinkapelle_der_festung
+- name: die kapelle
+  session: '2025-07-09'
+  concept_id: locations/schreinkapelle_der_festung
+- name: kapelle
+  session: '2025-09-02'
+  concept_id: locations/parfon_kapelle_auf_dem_berg
+- name: die kapelle
+  session: '2025-09-02'
+  concept_id: locations/parfon_kapelle_auf_dem_berg
+- name: kapelle
+  session: '2026-06-10'
+  concept_id: locations/kapelle_von_vorgultars_refugium
+- name: die kapelle
+  session: '2026-06-10'
+  concept_id: locations/kapelle_von_vorgultars_refugium
+- name: sumpf
+  session: '2025-04-01'
+  concept_id: locations/sumpf_vor_dem_goblin_dorf
+- name: der sumpf
+  session: '2025-04-01'
+  concept_id: locations/sumpf_vor_dem_goblin_dorf
+- name: sumpf
+  session: '2026-02-17'
+  concept_id: locations/sumpf_der_sumpfhexe
+- name: der sumpf
+  session: '2026-02-17'
+  concept_id: locations/sumpf_der_sumpfhexe
+- name: sumpf
+  session: '2026-05-27'
+  concept_id: locations/sumpf_bei_nebelwacht
+- name: der sumpf
+  session: '2026-05-27'
+  concept_id: locations/sumpf_bei_nebelwacht
+# Three different soul stones, one destroyed on camera in 2025-06-25.
+- name: seelenstein
+  session: '2025-06-17'
+  concept_id: items/seelenstein_des_rotunas
+- name: seelenstein
+  session: '2025-06-25'
+  concept_id: items/seelenstein_des_rotunas
+- name: seelenstein
+  session: '2026-01-13'
+  concept_id: items/gruener_seelenkristall_von_hans
+- name: der grüne seelenstein
+  session: '2026-01-13'
+  concept_id: items/gruener_seelenkristall_von_hans
+- name: seelenstein
+  session: '2026-04-14'
+  concept_id: items/haralds_seelenstein
 entities:
 - concept_id: characters/brim
   type: Character
@@ -214,12 +347,21 @@ entities:
   canonical_name: Dodo
   aliases: []
   mention_count: 47
-- concept_id: characters/esterossa_torbhalm
+- concept_id: characters/esterossa
   type: Character
   canonical_name: Esterossa
   aliases:
   - Esterossa Torbhalm
+  - Esterossa Torpalm
   mention_count: 40
+  important: true
+- concept_id: characters/rotunas
+  type: Character
+  canonical_name: Rotunas
+  aliases:
+  - Rotuna
+  mention_count: 29
+  important: true
 - concept_id: characters/finn
   type: Character
   canonical_name: Finn
@@ -324,7 +466,7 @@ entities:
   canonical_name: Alte Götter
   aliases: []
   mention_count: 1
-- concept_id: deities/alter_schlangengott
+- concept_id: deities/schlangengott
   type: Deity
   canonical_name: Alter Schlangengott
   aliases:
@@ -2915,7 +3057,7 @@ entities:
   mention_count: 1
 - concept_id: npcs/der_jen
   type: NPC
-  canonical_name: Jen
+  canonical_name: Der Jen (Diener Vorgul'tars)
   aliases:
   - Der Jen
   mention_count: 2
@@ -3202,7 +3344,7 @@ entities:
   mention_count: 1
 - concept_id: npcs/hendrik_heinrich
   type: NPC
-  canonical_name: Hendrik
+  canonical_name: Hendrik Heinrich (Bauer)
   aliases:
   - Hendrik Heinrich
   mention_count: 2
@@ -3866,9 +4008,9 @@ entities:
   aliases: []
   mention_count: 3
   important: true
-- concept_id: npcs/ulvanara_liam
+- concept_id: npcs/liam_velora
   type: NPC
-  canonical_name: Liam
+  canonical_name: Liam Velora
   aliases:
   - Ulvanara (Liam)
   mention_count: 5
@@ -3909,7 +4051,7 @@ entities:
   canonical_name: Vora
   aliases: []
   mention_count: 1
-- concept_id: npcs/voras_der_heilige_der_schrecken
+- concept_id: npcs/voras
   type: NPC
   canonical_name: Voras der Heilige
   aliases:
@@ -3963,3 +4105,15 @@ entities:
   canonical_name: Zwei Zwerge
   aliases: []
   mention_count: 1
+- concept_id: npcs/liam
+  type: NPC
+  canonical_name: Liam Velora
+  aliases: []
+- concept_id: npcs/hendrik
+  type: NPC
+  canonical_name: Hendrik (Nomadenführer)
+  aliases: []
+- concept_id: npcs/jen
+  type: NPC
+  canonical_name: Jen (Schreiberin)
+  aliases: []

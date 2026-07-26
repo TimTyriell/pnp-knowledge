@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 import json
 import logging
+import re
 from pathlib import Path
 
 from tenacity import (
@@ -34,6 +35,67 @@ def _render_mentions(entity: CanonicalEntity) -> str:
         lines.append(
             f"[{i}] Session {m.date} @ {m.citation_ts} ({m.url}){marker}\n    {m.note}"
         )
+    return "\n".join(lines)
+
+
+def link_targets(entities: list[CanonicalEntity]) -> dict[str, str]:
+    """``display name -> concept_id`` for deterministic cross-linking.
+
+    On a name collision the better-attested entity wins, so a passing mention
+    never steals a link from the concept the campaign actually revolves around.
+    """
+
+    best: dict[str, CanonicalEntity] = {}
+    for entity in sorted(entities, key=lambda e: len(e.mentions)):
+        for name in [entity.canonical_name, *entity.aliases]:
+            name = name.strip()
+            if len(name) >= 4:
+                best[name] = entity
+    return {name: e.concept_id for name, e in best.items()}
+
+
+def _autolink(text: str, targets: dict[str, str], skip: str) -> str:
+    """Link the first occurrence of each known entity name in ``text``."""
+
+    linked: set[str] = set()
+    # Longest names first, so "Lindo Laut" is not pre-empted by "Lindo".
+    for name in sorted(targets, key=len, reverse=True):
+        concept_id = targets[name]
+        if concept_id == skip or concept_id in linked:
+            continue
+        # German runs names through the genitive ("Lindo Lauts Amulett"), so
+        # allow a trailing -s and keep it inside the link label.
+        tail = "" if name[-1] in "sßxz" else "s?"
+        # Not inside a word, not inside an existing link label or url.
+        match = re.search(rf"(?<![\w\[/]){re.escape(name)}{tail}(?![\w\]])", text)
+        if match is None:
+            continue
+        label = match.group(0)
+        text = f"{text[:match.start()]}[{label}]({concept_id}.md){text[match.end():]}"
+        linked.add(concept_id)
+    return text
+
+
+def render_brief_body(
+    entity: CanonicalEntity, targets: dict[str, str] | None = None
+) -> str:
+    """Body for a brief-tier entity, built locally with no LLM call.
+
+    A brief entry's entire input is one 30-70 word note, and a model asked to
+    turn that into a 50-word page only reformats it — no knowledge is added.
+    For 862 of 1074 entries that was about half the cost and most of the wall
+    time of a full run. Cross-links are matched against the concept index
+    instead, which is also steadier than a model inventing them.
+    """
+
+    paragraphs = [m.note.strip() for m in entity.mentions if m.note.strip()]
+    body = "\n\n".join(paragraphs)
+    if targets:
+        body = _autolink(body, targets, skip=entity.concept_id)
+    lines = [body, "", "# Belege", ""]
+    for i, m in enumerate(entity.mentions, start=1):
+        marker = "" if m.quality == "hoch" else f" [Transkriptqualität: {m.quality}]"
+        lines.append(f"{i}. Session {m.date} @ {m.citation_ts} ({m.url}){marker}")
     return "\n".join(lines)
 
 
