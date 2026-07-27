@@ -273,7 +273,10 @@ In Sessions als „Esua", „Esoa" oder „Ezreal" gehört.
 ### Koll'Mereth
 
 ENTSCHEIDUNG: Koll'Mereth, „die Krone", ist eine der Seelen Vhar'Zuls und
-**keine eigenständige Gottheit**. In Sessions als „Kol Meref" gehört.
+**keine eigenständige Gottheit**. In Sessions als „Kol Meref" und als „Koll"
+gehört — beide Schreibweisen meinen ihn. Die Belege vom oberen Schrein in der
+Kapelle und die Gravur auf der linken Statue gehören zu diesem Eintrag; er ist
+eine der Stimmen in Lindo Lauts Amulett.
 
 ### Slix
 
@@ -296,6 +299,96 @@ Beide wollten Vhar'Zul zurückholen — allerdings dessen **ursprünglichen Teil
 nicht die besonnene Persönlichkeit. Da der wiedererstarkte Vhar'Zul die Gestalt
 von Tyrex angenommen hat und diese Persönlichkeit ein **Feind Dormaks** ist,
 wurde Dormak am Ende von Vhar'Zul selbst ausgelöscht.
+
+### Huludan
+
+ENTSCHEIDUNG: **Huludan ist ein Titan** — das uralte Wesen, das im *Splitter
+des Ewigen* gefangen ist und das Vhar'Zul befreien wollte, um einen
+Schöpferwunsch zu erwirken.
+
+ENTSCHEIDUNG: Der Name **„Holodarn" existiert nicht**. Er ist durchgehend ein
+Transkriptionsfehler und darf in keinem Eintrag als Eigenname auftauchen.
+
+ENTSCHEIDUNG: Das Wesen, das in Session 2026-05-13 auftritt und „in Huludans
+Namen den Segen ausspricht", ist **real, aber namenlos** — es wird als *Diener
+Huludans* geführt. Es ist weder celestisch noch dämonisch und ist **nicht**
+mit Huludan identisch. Belege, die es „Holodarn" nennen, meinen diesen Diener;
+Belege aus Session 2026-06-16, die „Holodarn" den Urgott im Splitter nennen,
+meinen Huludan selbst.
+
+### Willauch
+
+ENTSCHEIDUNG: Willauch liegt auf der aktuellen Karte im **Südwesten**. Belege,
+die die Stadt als „Hauptstadt im Norden" oder „größte Stadt der nördlichen
+Schneise" bezeichnen, sind falsch.
+
+ENTSCHEIDUNG: Die kanonische Schreibweise ist **Willauch**. „Willau",
+„Willoch" und „Vilauch" sind Transkriptionsvarianten.
+
+### Belorus
+
+ENTSCHEIDUNG: Belorus ist ein **schwarzer Paladin** — ausdrücklich **kein
+Lich**. Belege, die ihn als Lich bezeichnen, sind falsch.
+
+ENTSCHEIDUNG: Belorus ist **keine Gottheit**. Die Beschreibung als „Gottheit,
+die mit Stille assoziiert ist" beruht auf seinem Beinamen *der Stille* und ist
+ein Missverständnis; er ist ein mächtiger NPC, kein göttliches Wesen.
+
+### Hans
+
+ENTSCHEIDUNG: Es gibt **zwei verschiedene Personen namens Hans**. Der Soldat
+aus Breska, der Belorus' versiegelte Botschaft überbringt (Session 2026-01-13),
+und der Tiefling-Wirt der Taverne *Zum grünen Sichelmond* (Session 2026-03-18)
+haben nichts miteinander zu tun. Sie werden getrennt geführt.
+
+### Adeliga
+
+OFFEN — noch keine Festlegung der Spielleitung. Die Belege beschreiben Adeliga
+einmal als menschliche Geschäftsfrau ohne übernatürliche Merkmale und einmal
+als riesigen, übernatürlichen Eulen-Seraph mit göttlichem Auftrag. Ob dieselbe
+Person in zwei Gestalten oder zwei Wesen gemeint sind, ist ungeklärt. Der
+Widerspruch bleibt bewusst unter „Offene Konflikte" stehen.
+
+### Hal / Harl
+
+ENTSCHEIDUNG: **Hal (auch Harl) hat beide Rollen** — der Widerspruch
+„Stellvertreter" gegen „Anführer" ist keiner. Die **Banditenfestung ist ein
+Lager der Silberkerne**; er ist dort stellvertretender Anführer und zugleich
+Anführer der Silberkerne. Beide Belege gelten.
+
+### Goblin-Götter
+
+ENTSCHEIDUNG: Die Goblin-Götter sind **chaotisch und wechselhaft**, nicht
+bösartig. Der Beleg aus Session 2025-04-15, der sie als „bösartige
+Göttergruppe" bezeichnet, ist eine Fehleinschätzung.
+
+### Schwarzer Palantir
+
+ENTSCHEIDUNG: Beide Fundortangaben stimmen und widersprechen sich nicht: Der
+Palantir lag im **Labor der Hag**, und dieses Labor liegt **im Sumpf-Dungeon**.
+
+### Verhandlung mit Harl
+
+ENTSCHEIDUNG: Es gab **eine einzige Verhandlung**, keine Vorverhandlung. Der
+Preis ist derselbe: **eine Truhe Gold = 10 Säcke Gold**. Es war eine
+**Gruppenverhandlung** der Rotunas-Freunde, bei der **Lindo Laut die Gruppe
+vertrat** — deshalb erscheint er in einem Beleg als alleiniger Verhandler.
+
+### Der Schinder
+
+ENTSCHEIDUNG: Das Geschlecht des Schinders ist für den Kanon **unerheblich**;
+im Zweifel männlich. Kein offener Konflikt.
+
+### Gott und Erscheinung
+
+ENTSCHEIDUNG: Tritt ein Gott körperlich auf, bleibt das **ein Knoten vom Typ
+Deity**. Die Erscheinung ist ein Ereignis, das auf den Gott verweist, kein
+zweiter Eintrag. Betrifft [Nerash](../bundle/splitter_des_ewigen/deities/nerash.md),
+Kol Meref und die Kultisten des Varsurs.
+
+Nicht betroffen: eine Organisation und ihr Sitz bleiben **getrennt**, auch bei
+gleichem Namen. Die *Seelenwacht* ist sowohl ein Orden als auch eine Stadt —
+das sind zwei Dinge mit einer echten Beziehung zwischen ihnen, keine Dublette.
 
 ---
 

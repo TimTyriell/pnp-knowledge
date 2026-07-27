@@ -156,6 +156,13 @@ def test_split_conflicts_returns_section():
     assert body == _CONFLICT_BODY  # section stays visible in the concept
 
 
+def test_split_conflicts_ignores_an_all_clear_section():
+    # The model keeps the heading and declares there is nothing to resolve;
+    # queueing that wastes a reviewer's attention on an empty case.
+    body = "Text.\n\n# Offene Konflikte\n\n_Keine widersprüchlichen Belege vorhanden._"
+    assert split_conflicts(body)[1] is None
+
+
 def test_emit_entity_flags_disputed_and_queues_conflict(tmp_path: Path):
     bundle = tmp_path / "bundle" / "campaign"
     entity = _entity("characters/lindo_laut", "Lindo Laut")

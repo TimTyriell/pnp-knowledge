@@ -76,11 +76,43 @@ _DIR_ALIASES: dict[str, str] = {
 class ConceptIndex:
     """Resolve a link target string to a canonical concept id."""
 
-    def __init__(self, concept_ids: Iterable[str]) -> None:
+    def __init__(
+        self,
+        concept_ids: Iterable[str],
+        names: dict[str, str] | None = None,
+    ) -> None:
+        """``names`` maps a display name or alias to its concept id.
+
+        The synthesis links to whatever the prose calls a thing, not to its
+        concept id — ``npcs/vasul.md`` for ``deities/vharzul``. Without the
+        name map those links are simply dropped, which cost the bundle 161
+        edges on the v5 run.
+        """
+
         self.ids: set[str] = set(concept_ids)
         self._by_basename: dict[str, set[str]] = defaultdict(set)
         for cid in self.ids:
             self._by_basename[slugify(cid.rsplit("/", 1)[-1])].add(cid)
+        self._by_name: dict[str, set[str]] = defaultdict(set)
+        for name, cid in (names or {}).items():
+            slug = slugify(name)
+            if slug and slug not in self._by_basename:
+                self._by_name[slug].add(cid)
+        # A first-name link ("lunara" for lunara_velora) resolves only when
+        # exactly one concept slug extends it — otherwise it is a guess.
+        self._by_prefix: dict[str, set[str]] = defaultdict(set)
+        # The model also drops the word separator ("lindolaut"), which no
+        # amount of slugifying the target recovers.
+        self._by_compact: dict[str, set[str]] = defaultdict(set)
+        for cid in self.ids:
+            slug = cid.rsplit("/", 1)[-1]
+            head = slug.split("_", 1)[0]
+            if head != slug:
+                self._by_prefix[head].add(cid)
+                self._by_compact[slug.replace("_", "")].add(cid)
+        for slug, cids in self._by_name.items():
+            if "_" in slug:
+                self._by_compact[slug.replace("_", "")].update(cids)
 
     def resolve(self, target: str) -> str | None:
         """Return the canonical concept id for ``target`` or ``None``.
@@ -131,7 +163,21 @@ class ConceptIndex:
                 return next(iter(matches))
             return None  # ambiguous across directories
 
-        # 3. Last resort: naive singularization (``cookies`` -> ``cookie``).
+        # 3. The name the prose uses ("Vasul" -> deities/vharzul). The
+        #    directory hint is untrustworthy here — the model guesses the
+        #    directory from the name it chose — so a unique name wins outright.
+        for table in (self._by_name, self._by_compact, self._by_prefix):
+            candidates = table.get(base)
+            if not candidates:
+                continue
+            if len(candidates) == 1:
+                return next(iter(candidates))
+            if dir_hint:
+                preferred = {c for c in candidates if c.startswith(f"{dir_hint}/")}
+                if len(preferred) == 1:
+                    return next(iter(preferred))
+
+        # 4. Last resort: naive singularization (``cookies`` -> ``cookie``).
         if base.endswith("s"):
             singular = self._by_basename.get(base[:-1])
             if singular and len(singular) == 1:

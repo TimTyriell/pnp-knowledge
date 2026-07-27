@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import logging
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -32,7 +33,13 @@ def build_concept_index(
 
     concept_ids = [e.concept_id for e in entities]
     concept_ids += [_session_concept_id(t) for t in transcripts.values()]
-    return ConceptIndex(concept_ids)
+    # Names and aliases too, so a link written as the prose name resolves.
+    # Least-attested first, so the better-attested entity wins a collision.
+    names: dict[str, str] = {}
+    for entity in sorted(entities, key=lambda e: len(e.mentions)):
+        for name in [entity.canonical_name, *entity.aliases]:
+            names[name] = entity.concept_id
+    return ConceptIndex(concept_ids, names)
 
 
 _TYPE_LABEL_DE = {
@@ -54,6 +61,31 @@ def _now_iso() -> str:
 def _short_desc(text: str, limit: int = 140) -> str:
     one_line = " ".join(text.split())
     return one_line if len(one_line) <= limit else one_line[: limit - 1].rstrip() + "…"
+
+
+_MD_LINK = re.compile(r"\[([^\]]+)\]\([^)]*\)")
+# A list marker needs the space after it — otherwise "**Huludan** ist …" reads
+# as a bullet and the whole opening paragraph is skipped.
+_NOT_PROSE = re.compile(r"^(#|>|\||[-*+]\s|\d+\.\s)")
+
+
+def _lead_text(body: str) -> str:
+    """First prose paragraph of a synthesized body, stripped of markup.
+
+    The description used to come from the first *mention note*, which is raw
+    extraction output: it ignores every later session and every canon ruling.
+    That is how Huludan ended up described as "the entity Holodarn serves"
+    after the GM ruled that Holodarn is not a name. The synthesized body knows
+    both, so the summary comes from there.
+    """
+
+    for block in body.split("\n\n"):
+        line = block.strip()
+        if not line or _NOT_PROSE.match(line):
+            continue
+        line = _MD_LINK.sub(r"\1", line)
+        return line.replace("**", "").replace("__", "").strip()
+    return ""
 
 
 # --- session concepts -------------------------------------------------------
@@ -148,6 +180,12 @@ def split_conflicts(body: str) -> tuple[str, str | None]:
     if idx < 0:
         return body, None
     section = body[idx + len(_CONFLICT_HEADING):].strip()
+    # The model keeps the heading and fills it with "_Keine widersprüchlichen
+    # Belege vorhanden._" instead of omitting it. Taking that at face value
+    # queues an entry for human resolution that says there is nothing to
+    # resolve, which is how a review queue stops being read.
+    if section.lstrip("_* \t").lower().startswith("keine"):
+        return body, None
     return body, section or None
 
 
@@ -172,7 +210,11 @@ def emit_entity(
 
     first = entity.mentions[0] if entity.mentions else None
     last = entity.mentions[-1] if entity.mentions else None
-    description = _short_desc(first.note) if first else entity.canonical_name
+    lead = _lead_text(body)
+    if lead:
+        description = _short_desc(lead)
+    else:
+        description = _short_desc(first.note) if first else entity.canonical_name
     frontmatter = {
         "type": entity.type.value,
         "id": entity.entity_id,
