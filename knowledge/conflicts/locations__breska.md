@@ -2,7 +2,7 @@
 type: Conflict
 title: 'Offener Konflikt: Brechka'
 description: Widersprüchliche Belege — menschliche Entscheidung nötig.
-timestamp: '2026-07-27T21:42:36+00:00'
+timestamp: '2026-07-27T21:47:47+00:00'
 id: CONFLICT_LOC_BRESKA
 status: open
 concept: locations/breska

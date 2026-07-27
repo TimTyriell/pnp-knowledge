@@ -2,7 +2,7 @@
 type: Conflict
 title: 'Offener Konflikt: Tyrael'
 description: Widersprüchliche Belege — menschliche Entscheidung nötig.
-timestamp: '2026-07-27T21:42:36+00:00'
+timestamp: '2026-07-27T21:47:48+00:00'
 id: CONFLICT_NPC_TYRAEL
 status: open
 concept: npcs/tyrael

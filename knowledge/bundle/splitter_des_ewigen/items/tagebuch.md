@@ -1,0 +1,17 @@
+---
+type: Item
+title: Tagebuch
+description: Ein von Cookie und Dodo gestohlenes Buch. Cookie vermutet, dass es der
+  gesuchte Gegenstand sein könnte, da die Untoten von zwei Personen un…
+tags:
+- items
+timestamp: '2025-09-30T00:00:00Z'
+id: ITEM_TAGEBUCH
+subtype: Schriftstück
+---
+
+Ein von [Cookie](/characters/cookie.md) und [Dodo](/characters/dodo.md) gestohlenes Buch. Cookie vermutet, dass es der gesuchte Gegenstand sein könnte, da die Untoten von zwei Personen und einem Item sprachen – passend zu Cookie und Dodo und dem Tagebuch.
+
+# Belege
+
+1. Session 2025-09-30 @ 00:56:23 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
