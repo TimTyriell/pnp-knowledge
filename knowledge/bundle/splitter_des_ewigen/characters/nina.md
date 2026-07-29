@@ -9,7 +9,7 @@ timestamp: '2026-03-23T00:00:00Z'
 id: CHAR_NINA
 ---
 
-Nina ist eine betagte Halbling-Bardin, die aus Geldnot auf Abenteuer geht. Sie spielt die Rolle der redseligen Großmutter, verfolgt aber eigennützige Ziele. Mit ihrer Fähigkeit **Wonderborn** zieht sie nützliche Gegenstände aus ihrem Rucksack, kämpft mit einer Armbrust und magisch verstärkten Bolzen und setzt im sozialen Umgang auf Täuschung und Bluffs, scheitert jedoch gelegentlich. Sie ist die treibende Kraft hinter der Entscheidung, Gefangene an [Willoch](/locations/willau.md) auszuliefern – eine Handlung, die ihre zynische Einstellung unterstreicht.
+Nina ist eine betagte Halbling-Bardin, die aus Geldnot auf Abenteuer geht. Sie spielt die Rolle der redseligen Großmutter, verfolgt aber eigennützige Ziele. Mit ihrer Fähigkeit **Wonderborn** zieht sie nützliche Gegenstände aus ihrem Rucksack, kämpft mit einer Armbrust und magisch verstärkten Bolzen und setzt im sozialen Umgang auf Täuschung und Bluffs, scheitert jedoch gelegentlich. Sie ist die treibende Kraft hinter der Entscheidung, Gefangene an [Willoch](/locations/willauch.md) auszuliefern – eine Handlung, die ihre zynische Einstellung unterstreicht.
 
 ## Hintergrund und Persönlichkeit
 

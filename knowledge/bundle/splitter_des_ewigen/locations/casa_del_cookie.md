@@ -65,7 +65,7 @@ Die Casa del Cookie hat sich über die Kampagnenmonate hinweg stark verwandelt. 
 
 - **[Vasul](/deities/vharzul.md)** – Öffnete ein Portal, durch das die Gruppe aus Ehrenfels fliehen konnte – mutmaßlich zurück zur Casa del Cookie oder einem verbundenen Ort. [4]
 
-- **[Willau / Willauch](/locations/willau.md)** – Nächstgelegene Siedlung, relativ zu der die Casa del Cookie nordwestlich liegt. [1]
+- **[Willau / Willauch](/locations/willauch.md)** – Nächstgelegene Siedlung, relativ zu der die Casa del Cookie nordwestlich liegt. [1]
 
 ## Chronologie
 

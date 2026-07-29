@@ -101,12 +101,34 @@ merge:
   schlüssel: items/magischer_schluessel
   der stab (schlüssel): items/magischer_schluessel
   notiz: items/notiz_von_hal
-  willauch: locations/willau
-  willoch: locations/willau
-  willau (willoch): locations/willau
-  willauer: locations/willau
-  vilauch: locations/willau
+  willau: locations/willauch
+  willauch: locations/willauch
+  willoch: locations/willauch
+  willau (willoch): locations/willauch
+  willauer: locations/willauch
+  vilauch: locations/willauch
   das flüchtlingslager: locations/fluechtlingslager
+
+  # --- Place names: the town goes last ---------------------------------------
+  # GM ruling 2026-07-28: a building keeps its own node — the graph wants the
+  # edge between a place and the town it sits in — but the id has to say where
+  # it is, and the town belongs at the end. "arena_von_willauch", never
+  # "kapelle_in_ehrenfels" or an id that opens with the town.
+  arena von willoch: locations/arena_von_willauch
+  zweite arena (netzbereich): locations/zweite_arena_von_willauch
+  arena-lager: locations/arena_lager_von_willauch
+  kapelle in ehrenfels: locations/kapelle_von_ehrenfels
+  taverne in ehrenfels: locations/taverne_von_ehrenfels
+  ehrenfels (spitze mit wasserfall und krähenstatuen): locations/tempelanlage_von_ehrenfels
+  gruft in breska: locations/gruft_von_breska
+  flüchtlingslager vor bresca: locations/fluechtlingslager_von_breska
+  waldstück bei brechka: locations/waldstueck_bei_breska
+  die festung in boragdil: locations/festung_von_boragdil
+  # One city described twice; the fortress inside it keeps its own node.
+  boragdil (ruinenstadt und festung): locations/boragdil
+  # "Villauch, eine große Stadt im Südwesten" is Willauch under a misheard name
+  # — the location matches the ruling exactly.
+  villauch: locations/willauch
   # 'die kapelle', 'der sumpf' and 'die mine' used to fold into one generic
   # concept each; those are now split per session below, because each name
   # covered three unrelated places. A merge here would rebuild the bucket.
@@ -125,7 +147,7 @@ merge:
   der altarraum des ohoriaks: locations/altarraum_des_uhoriaks
   die gruft des grafen: locations/gruft_des_grafen
   boragdil / brocadil: locations/boragdil
-  die arena: locations/arena_von_willoch
+  die arena: locations/arena_von_willauch
   naeruk: npcs/nyruk
   nai ruck: npcs/nyruk
   nairook (nayruk): npcs/nyruk
@@ -149,8 +171,8 @@ merge:
   slicks: npcs/slix_vasul
   seraph: npcs/seraphen
   geistergestalt (bote von belorus): npcs/belorus
-  lord kaledan: npcs/lord_kalidarn_von_willau
-  lord von willauch: npcs/lord_kalidarn_von_willau
+  lord kaledan: npcs/lord_kalidarn_von_willauch
+  lord von willauch: npcs/lord_kalidarn_von_willauch
   hack: npcs/lenra
   gildenmeister: npcs/nox
   gildemeister: npcs/nox
@@ -185,7 +207,7 @@ merge:
   nairuk: npcs/nyruk
   nairook: npcs/nyruk
   seras (seraph): deities/seras
-  vilau (willau): locations/willau
+  vilau (willau): locations/willauch
   # Voras is one person: "der Graf" is Voras der Heilige (Kanon_Entscheidungen).
   voras: npcs/voras
   voras der heilige: npcs/voras
@@ -313,7 +335,7 @@ merge:
   auranie: npcs/auranil
   priesterin auraniell: npcs/auranil
   priesterin auraniel: npcs/auranil
-  lord kalidarn von willoch: npcs/lord_kalidarn_von_willau
+  lord kalidarn von willoch: npcs/lord_kalidarn_von_willauch
   hardwacht: locations/hartwacht
   breschka: locations/breska
   gilde (dwarfmaster gilde): factions/gilde_von_ehrenfels
@@ -625,9 +647,21 @@ canonical_name:
   factions/kult_des_vharzul: Kult des Vhar'Zul
   factions/sippe_des_voras: Sippe des Voras
   factions/anhaenger_vorgultars: Anhänger Vorgul'tars
-  # GM ruling: the canonical spelling is Willauch. The id stays 'willau' —
-  # ids are identity, names are display, and the wiki URL must not move.
-  locations/willau: Willauch
+  # GM ruling: Willauch is the canonical spelling, and the id moved with it so
+  # the graph reads consistently: the town and every building in it now share
+  # one spelling (arena_von_willauch next to willauch, not next to willau).
+  locations/willauch: Willauch
+  locations/arena_von_willauch: Arena von Willauch
+  locations/zweite_arena_von_willauch: Zweite Arena von Willauch
+  locations/arena_lager_von_willauch: Arena-Lager von Willauch
+  locations/kapelle_von_ehrenfels: Kapelle von Ehrenfels
+  locations/taverne_von_ehrenfels: Taverne von Ehrenfels
+  locations/tempelanlage_von_ehrenfels: Tempelanlage von Ehrenfels
+  locations/gruft_von_breska: Gruft von Breska
+  locations/fluechtlingslager_von_breska: Flüchtlingslager von Breska
+  locations/waldstueck_bei_breska: Waldstück bei Breska
+  locations/festung_von_boragdil: Festung von Boragdil
+  npcs/lord_kalidarn_von_willauch: Lord Kalidarn von Willauch
   npcs/kraeuterhexe_von_lady_kalen: Kräuterhexe von Lady Kalen
   npcs/lady_kalen: Lady Kalen
   npcs/adeliga_vom_haus_des_loewen: Adeliga (Haus des Löwen)

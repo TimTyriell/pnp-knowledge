@@ -2783,15 +2783,17 @@ entities:
   canonical_name: Altes Bauernhaus
   aliases: []
   mention_count: 1
-- concept_id: locations/arena_lager
+- concept_id: locations/arena_lager_von_willauch
   type: Location
-  canonical_name: Arena-Lager
-  aliases: []
+  canonical_name: Arena-Lager von Willauch
+  aliases:
+  - Arena-Lager
   mention_count: 1
-- concept_id: locations/arena_von_willoch
+- concept_id: locations/arena_von_willauch
   type: Location
-  canonical_name: Arena von Willoch
-  aliases: []
+  canonical_name: Arena von Willauch
+  aliases:
+  - Arena von Willoch
   mention_count: 1
 - concept_id: locations/aussenposten_der_gilde
   type: Location
@@ -2857,13 +2859,9 @@ entities:
   canonical_name: Boragdil
   aliases:
   - Boragdil / Brocadil
-  mention_count: 1
+  - Boragdil (Ruinenstadt und Festung)
+  mention_count: 2
   important: true
-- concept_id: locations/boragdil_ruinenstadt_und_festung
-  type: Location
-  canonical_name: Boragdil (Ruinenstadt und Festung)
-  aliases: []
-  mention_count: 1
 - concept_id: locations/brandau
   type: Location
   canonical_name: Brandau
@@ -3070,11 +3068,6 @@ entities:
   canonical_name: die Brücke der Furcht
   aliases: []
   mention_count: 1
-- concept_id: locations/die_festung_in_boragdil
-  type: Location
-  canonical_name: die Festung (in Boragdil)
-  aliases: []
-  mention_count: 1
 - concept_id: locations/die_grosse_schlucht
   type: Location
   canonical_name: Die große Schlucht
@@ -3145,11 +3138,6 @@ entities:
   canonical_name: Ehrenfels
   aliases: []
   mention_count: 12
-- concept_id: locations/ehrenfels_spitze_mit_wasserfall_und_kraehenstatuen
-  type: Location
-  canonical_name: Ehrenfels (Spitze mit Wasserfall und Krähenstatuen)
-  aliases: []
-  mention_count: 1
 - concept_id: locations/eingestuerzte_bruecke
   type: Location
   canonical_name: Eingestürzte Brücke
@@ -3181,16 +3169,23 @@ entities:
   canonical_name: Fels
   aliases: []
   mention_count: 1
+- concept_id: locations/festung_von_boragdil
+  type: Location
+  canonical_name: Festung von Boragdil
+  aliases:
+  - die Festung (in Boragdil)
+  mention_count: 1
 - concept_id: locations/fluechtlingslager
   type: Location
   canonical_name: Das Flüchtlingslager
   aliases:
   - Flüchtlingslager
   mention_count: 1
-- concept_id: locations/fluechtlingslager_vor_bresca
+- concept_id: locations/fluechtlingslager_von_breska
   type: Location
-  canonical_name: Flüchtlingslager vor Bresca
-  aliases: []
+  canonical_name: Flüchtlingslager von Breska
+  aliases:
+  - Flüchtlingslager vor Bresca
   mention_count: 1
 - concept_id: locations/forschungslabor
   type: Location
@@ -3272,10 +3267,11 @@ entities:
   canonical_name: Gruft des Grafen
   aliases: []
   mention_count: 1
-- concept_id: locations/gruft_in_breska
+- concept_id: locations/gruft_von_breska
   type: Location
-  canonical_name: Gruft in Breska
-  aliases: []
+  canonical_name: Gruft von Breska
+  aliases:
+  - Gruft in Breska
   mention_count: 1
 - concept_id: locations/halblingsfarm
   type: Location
@@ -3349,10 +3345,11 @@ entities:
   canonical_name: Kaminraum mit grüner Flamme
   aliases: []
   mention_count: 1
-- concept_id: locations/kapelle_in_ehrenfels
+- concept_id: locations/kapelle_von_ehrenfels
   type: Location
-  canonical_name: Kapelle in Ehrenfels
-  aliases: []
+  canonical_name: Kapelle von Ehrenfels
+  aliases:
+  - Kapelle in Ehrenfels
   mention_count: 1
 - concept_id: locations/kapelle_von_tarvok
   type: Location
@@ -3622,11 +3619,6 @@ entities:
   canonical_name: Taverne im Dungeon
   aliases: []
   mention_count: 1
-- concept_id: locations/taverne_in_ehrenfels
-  type: Location
-  canonical_name: Taverne in Ehrenfels
-  aliases: []
-  mention_count: 1
 - concept_id: locations/taverne_kyla
   type: Location
   canonical_name: Taverne Kyla
@@ -3637,10 +3629,22 @@ entities:
   canonical_name: Taverne (ungenannt)
   aliases: []
   mention_count: 1
+- concept_id: locations/taverne_von_ehrenfels
+  type: Location
+  canonical_name: Taverne von Ehrenfels
+  aliases:
+  - Taverne in Ehrenfels
+  mention_count: 1
 - concept_id: locations/tempel_des_splitter_des_ewigen
   type: Location
   canonical_name: Tempel des Splitter des Ewigen
   aliases: []
+  mention_count: 1
+- concept_id: locations/tempelanlage_von_ehrenfels
+  type: Location
+  canonical_name: Tempelanlage von Ehrenfels
+  aliases:
+  - Ehrenfels (Spitze mit Wasserfall und Krähenstatuen)
   mention_count: 1
 - concept_id: locations/tiefwasser
   type: Location
@@ -3703,11 +3707,6 @@ entities:
   canonical_name: Villa
   aliases: []
   mention_count: 1
-- concept_id: locations/villauch
-  type: Location
-  canonical_name: Villauch
-  aliases: []
-  mention_count: 1
 - concept_id: locations/voras_anwesen
   type: Location
   canonical_name: Voras’ Anwesen
@@ -3723,27 +3722,26 @@ entities:
   canonical_name: Waldpfad zur Farm
   aliases: []
   mention_count: 1
-- concept_id: locations/waldstueck_bei_brechka
+- concept_id: locations/waldstueck_bei_breska
   type: Location
-  canonical_name: Waldstück bei Brechka
-  aliases: []
+  canonical_name: Waldstück bei Breska
+  aliases:
+  - Waldstück bei Brechka
   mention_count: 1
 - concept_id: locations/waldstueck_nahe_der_huette
   type: Location
   canonical_name: Waldstück nahe der Hütte
   aliases: []
   mention_count: 1
-- concept_id: locations/willau
+- concept_id: locations/willauch
   type: Location
   canonical_name: Willauch
   aliases:
-  - Willau (Willoch)
-  - Willauer
-  - Willoch
-  - Vilauch
-  - Vilau (Willau)
   - Willau
-  mention_count: 9
+  - Vilau (Willau)
+  - Willoch
+  - Villauch
+  mention_count: 10
 - concept_id: locations/windung
   type: Location
   canonical_name: Windung
@@ -3764,10 +3762,11 @@ entities:
   canonical_name: Zum grünen Sichelmond
   aliases: []
   mention_count: 1
-- concept_id: locations/zweite_arena_netzbereich
+- concept_id: locations/zweite_arena_von_willauch
   type: Location
-  canonical_name: Zweite Arena (Netzbereich)
-  aliases: []
+  canonical_name: Zweite Arena von Willauch
+  aliases:
+  - Zweite Arena (Netzbereich)
   mention_count: 1
 - concept_id: locations/zwergenfestung
   type: Location
@@ -4634,11 +4633,10 @@ entities:
   canonical_name: Lord Harek
   aliases: []
   mention_count: 1
-- concept_id: npcs/lord_kalidarn_von_willau
+- concept_id: npcs/lord_kalidarn_von_willauch
   type: NPC
-  canonical_name: Lord Kaledan
+  canonical_name: Lord Kalidarn von Willauch
   aliases:
-  - Lord Kalidarn von Willau
   - Lord von Willauch
   - Lord Kalidarn von Willoch
   mention_count: 2

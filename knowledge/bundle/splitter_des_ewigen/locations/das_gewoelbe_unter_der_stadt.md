@@ -10,7 +10,7 @@ id: LOC_DAS_GEWOELBE_UNTER_DER_STADT
 subtype: Dungeon
 ---
 
-Ein geheimes Katakombensystem unter [Willauch](/locations/willau.md), in das [Sys Fizik](/npcs/sys_fizik.md) die Gruppe führt, um ungestört den Trankhandel abzuschließen. Es ist schmutzig und dient als Labor des [Goblins](/factions/goblins.md).
+Ein geheimes Katakombensystem unter [Willauch](/locations/willauch.md), in das [Sys Fizik](/npcs/sys_fizik.md) die Gruppe führt, um ungestört den Trankhandel abzuschließen. Es ist schmutzig und dient als Labor des [Goblins](/factions/goblins.md).
 
 # Belege
 

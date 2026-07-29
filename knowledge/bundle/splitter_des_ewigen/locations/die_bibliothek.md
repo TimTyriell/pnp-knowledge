@@ -10,7 +10,7 @@ id: LOC_DIE_BIBLIOTHEK
 subtype: Gebäude
 ---
 
-Die sagenumwobene Bibliothek von [Willauch](/locations/willau.md), bewacht von Sandwächtern, beherbergt seltene Schriften aus der Zeit vor der großen Brandkatastrophe. Sie wird von [Safin Al Barak](/npcs/safin_al_barak.md) gehütet und enthält Werke über alte Götter, Flüche, rote Magie und magische Materialien. Nur Champions oder besondere Gäste erhalten Einlass.
+Die sagenumwobene Bibliothek von [Willauch](/locations/willauch.md), bewacht von Sandwächtern, beherbergt seltene Schriften aus der Zeit vor der großen Brandkatastrophe. Sie wird von [Safin Al Barak](/npcs/safin_al_barak.md) gehütet und enthält Werke über alte Götter, Flüche, rote Magie und magische Materialien. Nur Champions oder besondere Gäste erhalten Einlass.
 
 # Belege
 

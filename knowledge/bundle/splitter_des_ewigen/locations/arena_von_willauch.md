@@ -1,13 +1,15 @@
 ---
 type: Location
-title: Arena von Willoch
+title: Arena von Willauch
 description: Ein großes Amphitheater mit Publikum und einer Loge für die Adligen Lady
   Lyra, Garlin den Weisen und Lord Kalidarn. Hier finden der Werwolf…
 tags:
 - locations
 timestamp: '2025-10-21T00:00:00Z'
-id: LOC_ARENA_VON_WILLOCH
+id: LOC_ARENA_VON_WILLAUCH
 subtype: Gebäude
+aliases:
+- Arena von Willoch
 ---
 
 Ein großes Amphitheater mit Publikum und einer Loge für die Adligen Lady Lyra, Garlin den Weisen und Lord Kalidarn. Hier finden der Werwolfkampf und die abschließenden Performance-Runden statt. Die Teleportation nach dem zweiten Kampf bringt die Helden direkt in die Arena zurück.

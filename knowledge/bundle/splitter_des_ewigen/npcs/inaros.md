@@ -11,7 +11,7 @@ id: NPC_INAROS
 
 # Inaros
 
-Ein männlicher Strixwolf, der in Ehrenfels lebt. Er wurde von [Dodo](/characters/dodo.md) und [Lunara](/characters/lunara_velora.md) vor dem Jäger [Willauch](/locations/willau.md) gerettet und versteckt sich seither zusammen mit einem Strixwolf-Ei in der Siedlung. Später hilft er der Gruppe bei der Flucht vor [Nerash](/deities/nerash.md), indem er [Nox](/npcs/nox.md) packt und die anderen mitnimmt, während [Rotunas](/characters/rotunas.md) den Rückzug deckt.
+Ein männlicher Strixwolf, der in Ehrenfels lebt. Er wurde von [Dodo](/characters/dodo.md) und [Lunara](/characters/lunara_velora.md) vor dem Jäger [Willauch](/locations/willauch.md) gerettet und versteckt sich seither zusammen mit einem Strixwolf-Ei in der Siedlung. Später hilft er der Gruppe bei der Flucht vor [Nerash](/deities/nerash.md), indem er [Nox](/npcs/nox.md) packt und die anderen mitnimmt, während [Rotunas](/characters/rotunas.md) den Rückzug deckt.
 
 ## Rettung und Unterschlupf
 

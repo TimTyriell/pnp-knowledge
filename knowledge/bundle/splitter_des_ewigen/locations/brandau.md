@@ -51,7 +51,7 @@ Brandau unterlag im Krieg gegen Willauch. Die genauen Umstände der Niederlage b
 
 ## Beziehungen und Verbindungen
 
-- **[Willauch](/locations/willau.md)**: Kriegsgegner und Besatzer. Brandau wurde von Willauch besiegt, und die Propaganda gegen Brandau wirkt fort.
+- **[Willauch](/locations/willauch.md)**: Kriegsgegner und Besatzer. Brandau wurde von Willauch besiegt, und die Propaganda gegen Brandau wirkt fort.
 - **[Herakles](/npcs/herakles_raxxles.md)**: Ehemaliger Bewohner Brandaus, der nach der Niederlage floh und nun eine Widerstandsgruppe aus ehemaligen Brandauern anführt.
 - **[Talron](/npcs/talron.md)**: Ehemaliges Mitglied der Stadtgarde Brandaus, geflohen, dient nun als Informant für Herakles' Gruppe.
 - **[Hal](/npcs/hal_harl.md)**: Bandit, auf den in Brandau (neben Willauch) die Todesstrafe ausgesetzt ist, aufgrund von Karawanenüberfällen.

@@ -1,13 +1,15 @@
 ---
 type: Location
-title: Gruft in Breska
+title: Gruft von Breska
 description: Die Gruft beherbergt den Eingang zu Voras’ unterirdischem Reich und wird
   von einem untoten Wächter bewacht. Hier steigt Dodo allein hinab u…
 tags:
 - locations
 timestamp: '2026-03-10T00:00:00Z'
-id: LOC_GRUFT_IN_BRESKA
+id: LOC_GRUFT_VON_BRESKA
 subtype: Dungeon
+aliases:
+- Gruft in Breska
 ---
 
 Die Gruft beherbergt den Eingang zu [Voras](/npcs/voras.md)’ unterirdischem Reich und wird von einem untoten Wächter bewacht. Hier steigt [Dodo](/characters/dodo.md) allein hinab und trifft [Tindrael](/npcs/tindrael.md) und später Voras. Später wird auch der Rest der Gruppe (außer den Soldaten) eingelassen.

@@ -10,7 +10,7 @@ id: NPC_SOLDATEN_VON_WILLAUCH
 subtype: Armee
 ---
 
-Die Soldaten von [Willauch](/locations/willau.md) halten [Tiefwasser](/locations/tiefwasser.md) besetzt, führen spontane Kontrollen durch und stürmen die Schiffs-[Taverne](/locations/taverne.md), um [Harald](/npcs/freibeuter_harald.md) festzunehmen. Sie werden von Lunaras übermächtigem [Abyssalis](/domains/splitterwelt.md)-Zauber vorübergehend mental kontrolliert und zur Aufgabe gezwungen.
+Die Soldaten von [Willauch](/locations/willauch.md) halten [Tiefwasser](/locations/tiefwasser.md) besetzt, führen spontane Kontrollen durch und stürmen die Schiffs-[Taverne](/locations/taverne.md), um [Harald](/npcs/freibeuter_harald.md) festzunehmen. Sie werden von Lunaras übermächtigem [Abyssalis](/domains/splitterwelt.md)-Zauber vorübergehend mental kontrolliert und zur Aufgabe gezwungen.
 
 # Belege
 

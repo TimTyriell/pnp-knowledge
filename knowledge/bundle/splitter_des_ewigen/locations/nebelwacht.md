@@ -14,7 +14,7 @@ Die **Nebelwacht** ist eine befestigte Festung südwestlich der Stadt Villauch, 
 
 ## Lage und strategische Bedeutung
 
-Die Nebelwacht befindet sich im Süden der bekannten Länder, südwestlich von [Villauch](/locations/villauch.md) [1]. Sie liegt unmittelbar an der Nebelwand, einer natürlichen Barriere aus undurchdringlichem Nebel, die den Kontinent in eine bewohnte und eine dunkle Seite teilt [2]. Aufgrund dieser exponierten Position fungiert die Festung als erster Außenposten gegen alles, was aus dem Nebel hervordringt, und ist damit ein zentraler Stützpunkt im Abwehrkampf gegen die Dunkelheit [2].
+Die Nebelwacht befindet sich im Süden der bekannten Länder, südwestlich von [Villauch](/locations/willauch.md) [1]. Sie liegt unmittelbar an der Nebelwand, einer natürlichen Barriere aus undurchdringlichem Nebel, die den Kontinent in eine bewohnte und eine dunkle Seite teilt [2]. Aufgrund dieser exponierten Position fungiert die Festung als erster Außenposten gegen alles, was aus dem Nebel hervordringt, und ist damit ein zentraler Stützpunkt im Abwehrkampf gegen die Dunkelheit [2].
 
 ## Zustand und Besatzung
 

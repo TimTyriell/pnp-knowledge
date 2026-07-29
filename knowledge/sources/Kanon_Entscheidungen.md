@@ -446,6 +446,16 @@ Uhoriaks' und Herrin von Boragdil. Sie darf nie mit Lenra vermengt werden.
 ENTSCHEIDUNG: **Abisalis ist die Splitterwelt** — dieselbe Domäne, zwei Namen.
 „Abyssalis" und „Abyssares" sind Transkriptionsvarianten.
 
+### Benennung von Orten
+
+ENTSCHEIDUNG: Ein Gebäude oder Gelände innerhalb einer Stadt bekommt einen
+**eigenen Eintrag** — der Graph soll die Beziehung zwischen Ort und Stadt als
+Kante zeigen, nicht durch Verschmelzen verlieren.
+
+ENTSCHEIDUNG: Die **Stadt steht im Namen immer am Schluss**: *Arena von
+Willauch*, *Kapelle von Ehrenfels*, *Gruft von Breska*. Nicht „Kapelle in
+Ehrenfels" und nicht mit der Stadt am Anfang.
+
 ### Was ein Gegenstand ist
 
 ENTSCHEIDUNG: Nur **besondere** Gegenstände werden als eigener Eintrag geführt

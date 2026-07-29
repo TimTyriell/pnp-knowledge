@@ -15,7 +15,7 @@ aliases:
 
 # Organisation der Kalos
 
-Die als **Organisation der Kalos** oder kurz **Kalos** bezeichnete Gruppierung ist eine im Verborgenen agierende Fraktion, die sich gegen [Villauch](/locations/villauch.md) stellt. Sie rekrutiert Verbündete durch ihren zwielichtigen Anwerber Kalos und wird von der Gruppe in Verbindung mit den unheimlichen Nebeln und Monstern der Region gebracht. Ein genauer Name ist nicht bekannt, ebenso wenig wie ihre tatsächlichen Ziele oder ihre Führung.
+Die als **Organisation der Kalos** oder kurz **Kalos** bezeichnete Gruppierung ist eine im Verborgenen agierende Fraktion, die sich gegen [Villauch](/locations/willauch.md) stellt. Sie rekrutiert Verbündete durch ihren zwielichtigen Anwerber Kalos und wird von der Gruppe in Verbindung mit den unheimlichen Nebeln und Monstern der Region gebracht. Ein genauer Name ist nicht bekannt, ebenso wenig wie ihre tatsächlichen Ziele oder ihre Führung.
 
 ## Auftreten und Anwerbung
 

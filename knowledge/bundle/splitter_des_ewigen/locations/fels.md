@@ -10,7 +10,7 @@ id: LOC_FELS
 subtype: Siedlung
 ---
 
-Fels ist das zweite Militärcamp von [Willauch](/locations/willau.md) im Norden, erwähnt als alternative Station, aber nicht direkt besucht.
+Fels ist das zweite Militärcamp von [Willauch](/locations/willauch.md) im Norden, erwähnt als alternative Station, aber nicht direkt besucht.
 
 # Belege
 

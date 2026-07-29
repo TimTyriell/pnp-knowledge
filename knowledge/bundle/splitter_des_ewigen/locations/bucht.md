@@ -10,7 +10,7 @@ id: LOC_BUCHT
 subtype: Siedlung
 ---
 
-Bucht ist eines der beiden Militärcamps von [Willauch](/locations/willau.md) nördlich von [Tiefwasser](/locations/tiefwasser.md), das auf dem Weg zu den Orkgebieten passiert werden muss.
+Bucht ist eines der beiden Militärcamps von [Willauch](/locations/willauch.md) nördlich von [Tiefwasser](/locations/tiefwasser.md), das auf dem Weg zu den Orkgebieten passiert werden muss.
 
 # Belege
 

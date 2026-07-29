@@ -10,7 +10,7 @@ id: EVENT_AUSLIEFERUNG_DER_GEFANGENEN_AN_WILLOCH
 subtype: Verhandlung
 ---
 
-Nach dem Kampf entscheidet die Mehrheit der Gruppe, [Floran](/npcs/floran.md) und [Adria](/npcs/adria.md) trotz ihrer Unschuldsbeteuerungen und der moralischen Zweifel an [Willochs](/locations/willau.md) Motiven an die Stadt auszuliefern. Sie knebeln die Gefangenen und treten ohne Rast den Rückzug an. In Willoch werden sie begeistert empfangen, reich belohnt und erfahren, dass die Gefangenen möglicherweise gefoltert werden.
+Nach dem Kampf entscheidet die Mehrheit der Gruppe, [Floran](/npcs/floran.md) und [Adria](/npcs/adria.md) trotz ihrer Unschuldsbeteuerungen und der moralischen Zweifel an [Willochs](/locations/willauch.md) Motiven an die Stadt auszuliefern. Sie knebeln die Gefangenen und treten ohne Rast den Rückzug an. In Willoch werden sie begeistert empfangen, reich belohnt und erfahren, dass die Gefangenen möglicherweise gefoltert werden.
 
 # Belege
 

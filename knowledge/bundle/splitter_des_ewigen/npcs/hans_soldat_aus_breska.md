@@ -22,7 +22,7 @@ In einer Begegnung (Session 2026-01-13) traf Hans auf die Gruppe, bestand auf Ü
 
 ## Tod, Wiederbelebung und Ende
 
-In einer anderen Begegnung (Session 2026-01-06) wurde Hans verwirrt und traumatisiert aufgefunden. Er sprach von einer wichtigen, verlorenen Nachricht und einem Festmahl, das ihn krank gemacht habe. Kurz darauf starb er an grünem Erbrochenen, das auf einen Kristall hindeutete. Lunara belebte ihn wieder; danach war seine Persönlichkeit klarer und entschlossener. Er führte die Gruppe zur Leiche seines Kommandanten und barg eine versiegelte Schriftrolle – vermutlich die gleiche, die er zuvor überbracht hatte. Während des Kampfes mit dem [Seelenkalb](/npcs/seelenkalb.md) versuchte Hans, mit der Rolle zu fliehen, wurde jedoch von Lindo gestoppt. Auf dem Sterbebett offenbarte er voller Panik, dass die Botschaft auf keinen Fall nach [Willauch](/locations/willau.md) gelangen dürfe; dies waren seine letzten Worte.
+In einer anderen Begegnung (Session 2026-01-06) wurde Hans verwirrt und traumatisiert aufgefunden. Er sprach von einer wichtigen, verlorenen Nachricht und einem Festmahl, das ihn krank gemacht habe. Kurz darauf starb er an grünem Erbrochenen, das auf einen Kristall hindeutete. Lunara belebte ihn wieder; danach war seine Persönlichkeit klarer und entschlossener. Er führte die Gruppe zur Leiche seines Kommandanten und barg eine versiegelte Schriftrolle – vermutlich die gleiche, die er zuvor überbracht hatte. Während des Kampfes mit dem [Seelenkalb](/npcs/seelenkalb.md) versuchte Hans, mit der Rolle zu fliehen, wurde jedoch von Lindo gestoppt. Auf dem Sterbebett offenbarte er voller Panik, dass die Botschaft auf keinen Fall nach [Willauch](/locations/willauch.md) gelangen dürfe; dies waren seine letzten Worte.
 
 # Belege
 

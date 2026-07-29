@@ -1,13 +1,15 @@
 ---
 type: Location
-title: die Festung (in Boragdil)
+title: Festung von Boragdil
 description: Eine der vier großen Festungen in Abyssalis, ehemals ein Sammelpunkt
   für Seelen. Ein mächtiger Schutzzauber schützte sie, bis er kürzlich v…
 tags:
 - locations
 timestamp: '2026-04-14T00:00:00Z'
-id: LOC_DIE_FESTUNG_IN_BORAGDIL
+id: LOC_FESTUNG_VON_BORAGDIL
 subtype: Festung
+aliases:
+- die Festung (in Boragdil)
 ---
 
 Eine der vier großen Festungen in [Abyssalis](/domains/splitterwelt.md), ehemals ein Sammelpunkt für Seelen. Ein mächtiger Schutzzauber schützte sie, bis er kürzlich von Kindern zerstört wurde. Die Hexe und [Ohoriaks](/deities/ohoriaks.md) nutzten das Chaos, um sie zu übernehmen.

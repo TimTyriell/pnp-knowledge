@@ -9,7 +9,7 @@ timestamp: '2025-11-18T00:00:00Z'
 id: NPC_DURCHGRAS_UND_BURFUN_BARKEEPER
 ---
 
-Durchgras und Burfun sind die Barkeeper der [Taverne in Ehrenfels](/locations/taverne_in_ehrenfels.md), unterstützt von der Bardame [Iris](/npcs/iris.md) und einem Org-Kellner. Der Org ist sichtlich betroffen von [Cookies](/characters/cookie.md) Tod und spendiert eine Runde. Sie zeigen Mitgefühl und bewirten die Gruppe den ganzen Abend. Später legen sie sogar einen Eimer für eventuelle Übergabe bereit.
+Durchgras und Burfun sind die Barkeeper der [Taverne in Ehrenfels](/locations/taverne_von_ehrenfels.md), unterstützt von der Bardame [Iris](/npcs/iris.md) und einem Org-Kellner. Der Org ist sichtlich betroffen von [Cookies](/characters/cookie.md) Tod und spendiert eine Runde. Sie zeigen Mitgefühl und bewirten die Gruppe den ganzen Abend. Später legen sie sogar einen Eimer für eventuelle Übergabe bereit.
 
 # Belege
 
