@@ -10,7 +10,7 @@ id: EVENT_DIE_SCHLACHT_UM_GEMATA
 subtype: Kampf
 ---
 
-Der große Goblinangriff auf [Gemata](/locations/gemata.md), bei dem die Helden und die Dorfbewohner gegen mehrere Wellen von Feinden kämpfen, darunter [Goblins](/factions/goblins.md), ein Oger und Bogenschützen. Der Kampf endet mit dem Sieg der Verteidiger, nachdem [Voras](/npcs/vampire_untote_von_voras.md) eingreift.
+Der große Goblinangriff auf [Gemata](/locations/gemata.md), bei dem die Helden und die Dorfbewohner gegen mehrere Wellen von Feinden kämpfen, darunter [Goblins](/factions/goblins.md), ein Oger und Bogenschützen. Der Kampf endet mit dem Sieg der Verteidiger, nachdem [Voras](/npcs/voras.md) eingreift.
 
 # Belege
 

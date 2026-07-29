@@ -10,7 +10,7 @@ id: EVENT_BELORUS_ERSCHEINUNG_UND_ULTIMATUM
 subtype: Sonstiges
 ---
 
-Nach dem Tod des [Dreadknights](/npcs/dreadknight.md) materialisierte [Belorus](/npcs/magier_von_belorus.md) als untoter Lich über dem Schlachtfeld. Er lobte die Kampfkraft der Gruppe, forderte aber energisch [Lindo Lauts](/characters/lindo_laut.md) Auslieferung und drohte mit einem neuen Götterkrieg. Sein Ultimatum und die anschließende Erhebung einer Untotenarmee beendeten die Session als Cliffhanger.
+Nach dem Tod des [Dreadknights](/npcs/dreadknight.md) materialisierte [Belorus](/npcs/belorus.md) als untoter Lich über dem Schlachtfeld. Er lobte die Kampfkraft der Gruppe, forderte aber energisch [Lindo Lauts](/characters/lindo_laut.md) Auslieferung und drohte mit einem neuen Götterkrieg. Sein Ultimatum und die anschließende Erhebung einer Untotenarmee beendeten die Session als Cliffhanger.
 
 # Belege
 

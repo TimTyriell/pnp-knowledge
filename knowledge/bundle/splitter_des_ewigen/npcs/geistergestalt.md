@@ -9,7 +9,7 @@ timestamp: '2025-09-30T00:00:00Z'
 id: NPC_GEISTERGESTALT
 ---
 
-Diese magische, geräuschlose Gestalt erschien nach dem Gefecht und sprach telepathisch zu [Rotunas](/characters/rotunas.md). Sie übermittelte die Kapitulation und erklärte, dass [Belorus](/npcs/magier_von_belorus.md) zwei Personen und einen entwendeten Gegenstand sucht. Sie war dünn, von zwei Wächtern flankiert und kommunizierte ohne sichtbare Mundbewegung.
+Diese magische, geräuschlose Gestalt erschien nach dem Gefecht und sprach telepathisch zu [Rotunas](/characters/rotunas.md). Sie übermittelte die Kapitulation und erklärte, dass [Belorus](/npcs/belorus.md) zwei Personen und einen entwendeten Gegenstand sucht. Sie war dünn, von zwei Wächtern flankiert und kommunizierte ohne sichtbare Mundbewegung.
 
 # Belege
 

@@ -10,7 +10,7 @@ id: EVENT_KONFRONTATION_MIT_BELORUS
 subtype: Verhandlung
 ---
 
-Die zentrale Begegnung in der Burg: [Dodo](/characters/dodo.md) versucht, den Todesritter einzuschüchtern, scheitert jedoch und wird daraufhin von mehreren untoten Kämpfern angegriffen. [Cookie](/characters/cookie.md) aktiviert aus dem Hintergrund den Schutzkristall, der alle Untoten vertreibt und [Belorus](/npcs/magier_von_belorus.md) zum Rückzug zwingt. Dieser fühlt sich unehrenhaft behandelt, verschwindet, löst aber einen Alarm aus, der die gesamte Burg in Aufruhr versetzt.
+Die zentrale Begegnung in der Burg: [Dodo](/characters/dodo.md) versucht, den Todesritter einzuschüchtern, scheitert jedoch und wird daraufhin von mehreren untoten Kämpfern angegriffen. [Cookie](/characters/cookie.md) aktiviert aus dem Hintergrund den Schutzkristall, der alle Untoten vertreibt und [Belorus](/npcs/belorus.md) zum Rückzug zwingt. Dieser fühlt sich unehrenhaft behandelt, verschwindet, löst aber einen Alarm aus, der die gesamte Burg in Aufruhr versetzt.
 
 # Belege
 

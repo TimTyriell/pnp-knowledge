@@ -197,7 +197,6 @@ merge:
   geister-doppelgänger von rotunas: npcs/geist_von_rotunas
   # Belorus the man, distinct from his mages and his army.
   belorus: npcs/belorus
-  die magier von belorus: npcs/magier_von_belorus
   armee von belorus: factions/belorus_untotenarmee
   # One place, three nodes: the leading article made its own concept and one
   # session typed it as a Location. Folding by name also fixes the type,
@@ -275,7 +274,11 @@ merge:
   seraphen von vorgotha: npcs/seraphen_von_vorgotha
   söldner des hauptmanns aaron: npcs/soeldner_des_hauptmanns_aaron
   soldaten von willauch: npcs/soldaten_von_willauch
-  vampire/untote von voras: npcs/vampire_untote_von_voras
+  # GM ruling: Voras stays an NPC and his clan is a faction of its own — they
+  # were influential enough. Only unnamed or once-mentioned collectives get
+  # pulled into the faction they belong to instead of keeping a node.
+  vampire/untote von voras: factions/sippe_des_voras
+  die magier von belorus: factions/belorus_untotenarmee
   vorgultars magier-assassinen: npcs/vorgultars_magier_assassinen
 
   # Every goblin band is the same people seen in a different place.
@@ -522,6 +525,7 @@ canonical_name:
   deities/kollmereth: Koll'Mereth (die Krone)
   factions/gilde_von_ehrenfels: Die Gilde von Ehrenfels
   factions/kult_des_vharzul: Kult des Vhar'Zul
+  factions/sippe_des_voras: Sippe des Voras
   factions/anhaenger_vorgultars: Anhänger Vorgul'tars
   # GM ruling: the canonical spelling is Willauch. The id stays 'willau' —
   # ids are identity, names are display, and the wiki URL must not move.

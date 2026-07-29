@@ -2,7 +2,7 @@
 type: Conflict
 title: 'Offener Konflikt: Silberkerne'
 description: Widersprüchliche Belege — menschliche Entscheidung nötig.
-timestamp: '2026-07-29T08:41:46+00:00'
+timestamp: '2026-07-29T08:53:43+00:00'
 id: CONFLICT_FACTION_SILBERKERNE
 status: open
 concept: factions/silberkerne

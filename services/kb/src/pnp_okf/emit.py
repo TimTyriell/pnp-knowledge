@@ -180,11 +180,21 @@ def split_conflicts(body: str) -> tuple[str, str | None]:
     if idx < 0:
         return body, None
     section = body[idx + len(_CONFLICT_HEADING):].strip()
-    # The model keeps the heading and fills it with "_Keine widersprüchlichen
-    # Belege vorhanden._" instead of omitting it. Taking that at face value
-    # queues an entry for human resolution that says there is nothing to
-    # resolve, which is how a review queue stops being read.
-    if section.lstrip("_* \t").lower().startswith("keine"):
+    # The model keeps the heading and then writes that there is nothing to
+    # resolve — sometimes as "_Keine widersprüchlichen Belege vorhanden._",
+    # sometimes as a paragraph ending "Es gibt keine widersprüchlichen Belege
+    # über sein Überleben". Queueing either wastes a reviewer on an empty case,
+    # which is how a review queue stops being read. Only a lone all-clear is
+    # dropped: with a second point the section may still hold a real conflict.
+    lowered = section.lower()
+    bullets = sum(
+        1 for line in section.splitlines() if line.lstrip().startswith(("- ", "* "))
+    )
+    lone = bullets <= 1
+    if lone and (
+        lowered.lstrip("_* \t").startswith("keine")
+        or "keine widersprüchlichen belege" in lowered
+    ):
         return body, None
     return body, section or None
 

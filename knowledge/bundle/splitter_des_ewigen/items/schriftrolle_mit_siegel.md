@@ -10,7 +10,7 @@ id: ITEM_SCHRIFTROLLE_MIT_SIEGEL
 subtype: Schriftstück
 ---
 
-Das zentrale Questobjekt. Eine versiegelte Rolle, die vom Kommandanten unter der Rüstung getragen wird. Sie enthält eine wichtige Erkenntnis von [Voras](/npcs/vampire_untote_von_voras.md) und darf weder verloren noch geöffnet werden.
+Das zentrale Questobjekt. Eine versiegelte Rolle, die vom Kommandanten unter der Rüstung getragen wird. Sie enthält eine wichtige Erkenntnis von [Voras](/npcs/voras.md) und darf weder verloren noch geöffnet werden.
 
 # Belege
 

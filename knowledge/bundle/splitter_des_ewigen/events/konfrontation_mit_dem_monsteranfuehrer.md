@@ -10,7 +10,7 @@ id: EVENT_KONFRONTATION_MIT_DEM_MONSTERANFUEHRER
 subtype: Kampf
 ---
 
-Nach der Erweckung stellt sich [Voras](/npcs/vampire_untote_von_voras.md) dem Anführer der verbliebenen Monster. Mit einem Fingerzeig und einer stummen, dunklen Macht tötet er den Anführer, woraufhin die restlichen Feinde fliehen.
+Nach der Erweckung stellt sich [Voras](/npcs/voras.md) dem Anführer der verbliebenen Monster. Mit einem Fingerzeig und einer stummen, dunklen Macht tötet er den Anführer, woraufhin die restlichen Feinde fliehen.
 
 # Belege
 

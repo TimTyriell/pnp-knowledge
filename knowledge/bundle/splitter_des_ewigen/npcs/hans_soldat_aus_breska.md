@@ -14,7 +14,7 @@ aliases:
 
 # Hans (Soldat aus Breska)
 
-Hans war ein Soldat aus dem Dorf [Breska](/locations/breska.md), der im Auftrag von [Belorus](/npcs/magier_von_belorus.md) eine versiegelte Botschaft überbrachte. Er trat in zwei Begegnungen in Erscheinung, die von Trauma, Panik und einer Wandlung von Verwirrung zu kurzzeitiger Entschlossenheit geprägt waren. Er starb mindestens zweimal und wurde einmal durch [Lunara](/characters/lunara_velora.md) wiederbelebt; seine letzten Worte galten einer eindringlichen Warnung.
+Hans war ein Soldat aus dem Dorf [Breska](/locations/breska.md), der im Auftrag von [Belorus](/npcs/belorus.md) eine versiegelte Botschaft überbrachte. Er trat in zwei Begegnungen in Erscheinung, die von Trauma, Panik und einer Wandlung von Verwirrung zu kurzzeitiger Entschlossenheit geprägt waren. Er starb mindestens zweimal und wurde einmal durch [Lunara](/characters/lunara_velora.md) wiederbelebt; seine letzten Worte galten einer eindringlichen Warnung.
 
 ## Überbringer der Botschaft
 

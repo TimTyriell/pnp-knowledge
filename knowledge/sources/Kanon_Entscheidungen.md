@@ -396,6 +396,22 @@ vertrat** — deshalb erscheint er in einem Beleg als alleiniger Verhandler.
 ENTSCHEIDUNG: Das Geschlecht des Schinders ist für den Kanon **unerheblich**;
 im Zweifel männlich. Kein offener Konflikt.
 
+### Tyrael
+
+ENTSCHEIDUNG: Das Wesen, über das Tyrael konkretes Wissen besitzt, ist
+**Vhar'Zul**. „Basul" und „Vasul" sind zwei Transkriptionen desselben Namens;
+es besteht kein Widerspruch. Tyrael kennt Vhar'Zul als bekannten Gott und gibt
+einige Informationen über ihn preis.
+
+### Nyrella
+
+ENTSCHEIDUNG: Nyrellas Eisbär heißt **Nyruk**. „Nairuk", „Nairook", „Nayruk"
+und „Naeruk" sind Transkriptionsvarianten desselben Namens — kein Widerspruch.
+
+ENTSCHEIDUNG: Wer in Session 5 im Moment vor dem Knall gesprochen hat, ist
+**bewusst nicht festgelegt** und für den Kanon nicht relevant. Dieser Punkt ist
+**nicht** als offener Konflikt zu führen.
+
 ### Was eine Fraktion ist
 
 ENTSCHEIDUNG: Eine **Fraktion** ist eine Macht, die **über eine Stadt und über
@@ -408,6 +424,12 @@ werden als NPC geführt.
 ENTSCHEIDUNG: Zwei Ausnahmen gelten wegen **narrativer Bedeutung**, nicht wegen
 Macht: die **Flüchtlinge aus Breska** und die **Gefährten von Rotunas** (die
 Heldengruppe selbst) bleiben Fraktionen.
+
+ENTSCHEIDUNG: Eine Person und die nach ihr benannte Gruppe sind **zwei
+Einträge**, nicht einer. **Voras** bleibt ein NPC, und seine **Sippe** ist eine
+eigene Fraktion, weil sie einflussreich genug war. Nur **unbenannte** oder
+**einmalig erwähnte** Kollektive werden in die Fraktion hineingezogen, zu der
+sie gehören — sie bekommen keinen eigenen Knoten.
 
 ENTSCHEIDUNG: „Dwarfmasters" ist der **Twitch-Account**, nicht der Name der
 Gilde. Die Gilde der Gruppe ist die **Gilde von Ehrenfels**.

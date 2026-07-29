@@ -10,7 +10,7 @@ id: EVENT_DIE_VERHANDLUNG_MIT_BELORUS
 subtype: Verhandlung
 ---
 
-In der erstarrten [Splitterwelt](/domains/splitterwelt.md) konfrontiert Lindo [Belorus](/npcs/magier_von_belorus.md) mit dem Buch und ihrer gemeinsamen Feindin [Leandra](/npcs/lenra.md). Durch eine emotionale Rede und einen überzeugenden Performance-Wurf bringt er den Paladin dazu, seinen Angriff aufzugeben und ihnen zu vertrauen. Belorus zieht schließlich ab und akzeptiert, dass sein Weg nicht der richtige war.
+In der erstarrten [Splitterwelt](/domains/splitterwelt.md) konfrontiert Lindo [Belorus](/npcs/belorus.md) mit dem Buch und ihrer gemeinsamen Feindin [Leandra](/npcs/lenra.md). Durch eine emotionale Rede und einen überzeugenden Performance-Wurf bringt er den Paladin dazu, seinen Angriff aufzugeben und ihnen zu vertrauen. Belorus zieht schließlich ab und akzeptiert, dass sein Weg nicht der richtige war.
 
 # Belege
 

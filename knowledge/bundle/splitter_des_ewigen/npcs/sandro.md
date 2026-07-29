@@ -36,7 +36,7 @@ Bereits im ersten dokumentierten Kampf erleidet Sandro massiven Schaden (54 Punk
 
 ## Beziehungen und Verbindungen
 
-- **[Voras](/npcs/vampire_untote_von_voras.md):** Sandro dient dem Vampir Voras direkt und wird von diesem mit der Führung der Gruppe durch das Portal beauftragt. Voras‘ Aussage „dann folgt Sandro durch das Portal“ [1:19:15] zeigt das Vertrauensverhältnis.
+- **[Voras](/npcs/voras.md):** Sandro dient dem Vampir Voras direkt und wird von diesem mit der Führung der Gruppe durch das Portal beauftragt. Voras‘ Aussage „dann folgt Sandro durch das Portal“ [1:19:15] zeigt das Vertrauensverhältnis.
 - **Die Heldengruppe (Brim, Lindo, Lunara, Otis, Rotunas u.a.):** Nach dem ersten gemeinsamen Kampf verneigt sich Sandro vor der Gruppe und bezeichnet sie als **„Champions“**, was tiefen Respekt für ihre Stärke ausdrückt. Auf Lindos Bitte hin übergibt er Brim bereitwillig seine letzte Schriftrolle.
 - **[Vasul](/deities/vharzul.md):** Sandro greift in einer Szene einen Dämon an, der Vasul bedroht, und zeigt damit Solidarität mit Vasul und der Gruppe.
 

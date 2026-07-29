@@ -10,7 +10,7 @@ id: LOC_GRUFT_IN_BRESKA
 subtype: Dungeon
 ---
 
-Die Gruft beherbergt den Eingang zu [Voras](/npcs/vampire_untote_von_voras.md)’ unterirdischem Reich und wird von einem untoten Wächter bewacht. Hier steigt [Dodo](/characters/dodo.md) allein hinab und trifft [Tindrael](/npcs/tindrael.md) und später Voras. Später wird auch der Rest der Gruppe (außer den Soldaten) eingelassen.
+Die Gruft beherbergt den Eingang zu [Voras](/npcs/voras.md)’ unterirdischem Reich und wird von einem untoten Wächter bewacht. Hier steigt [Dodo](/characters/dodo.md) allein hinab und trifft [Tindrael](/npcs/tindrael.md) und später Voras. Später wird auch der Rest der Gruppe (außer den Soldaten) eingelassen.
 
 # Belege
 

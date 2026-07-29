@@ -29,9 +29,9 @@ Innerhalb weniger Monate wuchs der Ort zu einer befestigten Kleinstadt mit Palis
 
 Breska ist einer der zentralen Schauplätze der Kampagne. Die Helden (darunter [Rotunas](/characters/rotunas.md), [Valeria](/characters/valeria.md), [Dodo](/characters/dodo.md), [Esterossa](/characters/esterossa.md), [Cookie](/characters/cookie.md) und [Lindo Laut](/characters/lindo_laut.md)) wurden von der Gilde entsandt, um das Dorf vor einem drohenden Goblinangriff zu warnen und zu verteidigen. Die Schlacht um Breska war der erste große militärische Erfolg der Gruppe und begründete ihren Ruf als Retter. [1, 4]
 
-Im Anschluss an den Sieg entdeckten die Gefährten eine verborgene Gruft unter dem Friedhof und erweckten dort den Vampir [Voras der Heilige](/npcs/vampire_untote_von_voras.md). Diese Begegnung machte Breska zum Ausgangspunkt einer weitreichenden Entwicklung: Voras wurde zu einem einflussreichen Verbündeten, während die Stadt selbst unter seinem Schutz und seiner Finanzierung exponentiell wuchs und zu einem Machtfaktor in der Region wurde. [4, 5, Kapitel 3]
+Im Anschluss an den Sieg entdeckten die Gefährten eine verborgene Gruft unter dem Friedhof und erweckten dort den Vampir [Voras der Heilige](/npcs/voras.md). Diese Begegnung machte Breska zum Ausgangspunkt einer weitreichenden Entwicklung: Voras wurde zu einem einflussreichen Verbündeten, während die Stadt selbst unter seinem Schutz und seiner Finanzierung exponentiell wuchs und zu einem Machtfaktor in der Region wurde. [4, 5, Kapitel 3]
 
-Später wurde Breska zum Ziel der untoten Armeen von [Belorus](/npcs/magier_von_belorus.md), dem General der [Hack](/npcs/lenra.md). Die Belagerung und der Fall der Stadt markierten eine dramatische Wende im Konflikt und zwangen die Helden, sich mit den Konsequenzen ihrer früheren Entscheidungen auseinanderzusetzen. [7, 8, 9, 10]
+Später wurde Breska zum Ziel der untoten Armeen von [Belorus](/npcs/belorus.md), dem General der [Hack](/npcs/lenra.md). Die Belagerung und der Fall der Stadt markierten eine dramatische Wende im Konflikt und zwangen die Helden, sich mit den Konsequenzen ihrer früheren Entscheidungen auseinanderzusetzen. [7, 8, 9, 10]
 
 ---
 
@@ -74,10 +74,10 @@ Breska liegt in einem Tal, umgeben von Wäldern und in relativer Nähe zu einem 
 
 ## Beziehungen und Verbindungen
 
-- **[Voras der Heilige](/npcs/vampire_untote_von_voras.md):** Der Vampirfürst lag seit unbestimmter Zeit in einer Gruft unter dem Friedhof. Nach seiner Erweckung finanzierte er den Ausbau Breskas, stellte sich schützend vor die Stadt und verteidigte sie gegen Untote. Sein Tod markiert das endgültige Ende Breskas als bewohnter Ort. [4, 9, 10, 11]
+- **[Voras der Heilige](/npcs/voras.md):** Der Vampirfürst lag seit unbestimmter Zeit in einer Gruft unter dem Friedhof. Nach seiner Erweckung finanzierte er den Ausbau Breskas, stellte sich schützend vor die Stadt und verteidigte sie gegen Untote. Sein Tod markiert das endgültige Ende Breskas als bewohnter Ort. [4, 9, 10, 11]
 - **[Leandras](/npcs/lendras.md):** Der ansässige Magier, der die Helden zur Gruft führte und einen magischen Schlüssel übergab. Seine Rolle war entscheidend für die Entdeckung Voras'. [Kapitel 3]
 - **Die Gilde:** Die Organisation, die die Helden entsandte, um Breska zu retten, und später selbst in der Stadt eine dominante Stellung einnahm. [5]
-- **[Die Hack](/npcs/lenra.md) und [Belorus](/npcs/magier_von_belorus.md):** Die Hexe und ihr untoter General suchten in Breska nach einem gesuchten Magier, der etwas gefunden hatte, das einen machtvollen Ort zugänglich machte. [2] Später belagerte Belorus die Stadt mit einer Armee Untoter, zerstörte sie und trug alle Leichen fort. [7, 8, 9, 10]
+- **[Die Hack](/npcs/lenra.md) und [Belorus](/npcs/belorus.md):** Die Hexe und ihr untoter General suchten in Breska nach einem gesuchten Magier, der etwas gefunden hatte, das einen machtvollen Ort zugänglich machte. [2] Später belagerte Belorus die Stadt mit einer Armee Untoter, zerstörte sie und trug alle Leichen fort. [7, 8, 9, 10]
 - **[Hal](/npcs/hal_harl.md) und die Flüchtlinge:** Breska wies Flüchtlinge ab und verfolgte eine Politik der Autarkie, was Spannungen mit umherziehenden Gruppen wie denen von Hal erzeugte. [6]
 - **Nachbarorte:** Informationen über die Bedrohung durch die Hack stammten ursprünglich aus Breska; die Stadt diente als Ausgangspunkt für weitere Ermittlungen der Helden. [3]
 

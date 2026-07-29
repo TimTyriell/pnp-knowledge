@@ -20,7 +20,7 @@ Lenra – auch bekannt unter den Namen **Die Hack**, **Leandra** oder **Lanra** 
 
 ## Rolle in der Kampagne
 
-Die Hack fungiert als übergeordnete, wiederkehrende Feindin, deren Handlungen sich wie ein roter Faden durch die Ereignisse ziehen. Sie befahl den Goblinangriff auf Gemata [2], manipulierte die Helden, das Siegel an Vasuls Buch zu brechen und Col Mereth zu zerstören [6], und wird verdächtigt, das Golem-Experiment in der Zwergenfestung sabotiert zu haben, um Unfrieden zu stiften [5]. Nach der Konfrontation in Bresca vermutet die Gruppe, dass sie selbst das Auffinden des Palantír und die Öffnung des Buches gezielt herbeigeführt hat, um den Grafen von Bresca zu schwächen [4]. Lindo Laut bezeichnete sie später als mögliche Feindin, die die Gruppe und [Belorus](/npcs/magier_von_belorus.md) gegeneinander ausspielen wolle [6].
+Die Hack fungiert als übergeordnete, wiederkehrende Feindin, deren Handlungen sich wie ein roter Faden durch die Ereignisse ziehen. Sie befahl den Goblinangriff auf Gemata [2], manipulierte die Helden, das Siegel an Vasuls Buch zu brechen und Col Mereth zu zerstören [6], und wird verdächtigt, das Golem-Experiment in der Zwergenfestung sabotiert zu haben, um Unfrieden zu stiften [5]. Nach der Konfrontation in Bresca vermutet die Gruppe, dass sie selbst das Auffinden des Palantír und die Öffnung des Buches gezielt herbeigeführt hat, um den Grafen von Bresca zu schwächen [4]. Lindo Laut bezeichnete sie später als mögliche Feindin, die die Gruppe und [Belorus](/npcs/belorus.md) gegeneinander ausspielen wolle [6].
 
 ## Wichtige Merkmale
 
@@ -37,7 +37,7 @@ Ihre Macht ist der Gruppe deutlich bewusst. Dodo kommentierte nach dem Fund eine
 ## Beziehungen und Verbindungen
 
 - **[Vasul](/deities/vharzul.md)**: Lenra scheint die Wiederkehr Vasuls aktiv zu betreiben. Sie manipulierte die Helden, das Siegel an Vasuls Buch zu brechen und Col Mereth zu zerstören [6].
-- **[Belorus](/npcs/magier_von_belorus.md)**: Lindo Lauts Anschuldigung, Belorus sei nur eine „Schachfigur in Leandras Spielplatz“, blieb von diesem unbeantwortet, deutet aber auf eine bestehende Verbindung oder Rivalität hin [6].
+- **[Belorus](/npcs/belorus.md)**: Lindo Lauts Anschuldigung, Belorus sei nur eine „Schachfigur in Leandras Spielplatz“, blieb von diesem unbeantwortet, deutet aber auf eine bestehende Verbindung oder Rivalität hin [6].
 - **Statue mit Krug**: In der Krypta und später in einer Burg fanden die Helden eine Statue, die sie direkt mit der Hack in Verbindung bringen. Über die Statue wirkte Lenra tatsächlich – ein Umstand, den die Gruppe als sehr spezifisches Wissen aus der Begegnung ableitete. Die genaue Funktion des Kruges ist ihnen unbekannt [3][Kanon_Entscheidungen.md].
 - **Graf von Bresca**: Der gesamte Vorfall um Buch und Palantír in [Breschka](/locations/breska.md) wird als Manöver gedeutet, mit dem Lenra den Grafen schwächen wollte [4].
 
@@ -48,7 +48,7 @@ Ihre Macht ist der Gruppe deutlich bewusst. Dodo kommentierte nach dem Fund eine
 - **Session 2025-05-14 (Burg)**: In einer Burgkapelle entdeckt die Gruppe eine Statue, die Dodo der Hack zuordnet; er äußert deutlichen Widerwillen gegen eine weitere Konfrontation. Die Funktion des dazugehörigen Kruges bleibt rätselhaft. [3]
 - **Session 2025-06-25 (Bresca)**: Während die Helden nach dem Öffnen von Vasuls Buch noch verwirrt sind, erscheint Lenra als Illusion auf einem Dach, lächelt und gebietet Schweigen. Lindo Laut kombiniert, dass die Hexe den Fund des Palantír und das Brechen des Siegels absichtlich herbeigeführt hat, um den Grafen zu schwächen. [4]
 - **Session 2025-10-07 (Zwergenfestung)**: Ein grünes, naturmagisches Konstrukt mit Kontrollrune an einem Golem erweckt in der Gruppe den Verdacht, die Hack habe das Experiment sabotiert, um Zwietracht zu säen. [5]
-- **Session 2026-01-20 (Dorfverteidigung)**: Während der Belagerung durch [Belorus](/npcs/magier_von_belorus.md) nennt Lindo Laut die Hexe „Leandra“ und beschuldigt sie, beide Seiten gegeneinander auszuspielen. Es wird endgültig klar, dass sie den Bruch von Vasuls Siegel und die Zerstörung Col Mereths lenkte, um Vasuls Wiederkehr zu fördern. [6]
+- **Session 2026-01-20 (Dorfverteidigung)**: Während der Belagerung durch [Belorus](/npcs/belorus.md) nennt Lindo Laut die Hexe „Leandra“ und beschuldigt sie, beide Seiten gegeneinander auszuspielen. Es wird endgültig klar, dass sie den Bruch von Vasuls Siegel und die Zerstörung Col Mereths lenkte, um Vasuls Wiederkehr zu fördern. [6]
 
 ## Offene Fragen
 

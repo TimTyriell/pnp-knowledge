@@ -1767,7 +1767,8 @@ entities:
   - Untote Horde
   - Untote
   - Untotenarmee von Zebros
-  mention_count: 9
+  - Die Magier von Belorus
+  mention_count: 10
 - concept_id: factions/brabarand_gilde
   type: Faction
   canonical_name: Brabarand-Gilde
@@ -1854,6 +1855,12 @@ entities:
   - Banditen
   - Banditen (im Banditenlager)
   mention_count: 9
+- concept_id: factions/sippe_des_voras
+  type: Faction
+  canonical_name: Sippe des Voras
+  aliases:
+  - Vampire/Untote von Voras
+  mention_count: 1
 - concept_id: items/alchemisten_flaeschchen
   type: Item
   canonical_name: Alchemisten-Fläschchen
@@ -4057,6 +4064,13 @@ entities:
   canonical_name: Baran
   aliases: []
   mention_count: 2
+- concept_id: npcs/belorus
+  type: NPC
+  canonical_name: Belorus der Stille
+  aliases:
+  - Belorus
+  mention_count: 6
+  important: true
 - concept_id: npcs/bergwaechter
   type: NPC
   canonical_name: Bergwächter
@@ -4864,14 +4878,6 @@ entities:
   canonical_name: Lurk
   aliases: []
   mention_count: 1
-- concept_id: npcs/magier_von_belorus
-  type: NPC
-  canonical_name: Die Magier von Belorus
-  aliases:
-  - Belorus der Stille
-  - Belorus
-  mention_count: 7
-  important: true
 - concept_id: npcs/marktschreier
   type: NPC
   canonical_name: Marktschreier
@@ -5289,16 +5295,6 @@ entities:
   canonical_name: Valdemar der Goldene Ritter
   aliases: []
   mention_count: 1
-- concept_id: npcs/vampire_untote_von_voras
-  type: NPC
-  canonical_name: Vampire/Untote von Voras
-  aliases:
-  - Voras der Heilige
-  - Graf Voras der Heilige
-  - Voras
-  - Voras (Voras der Heilige / Voras der Schrecken)
-  mention_count: 6
-  important: true
 - concept_id: npcs/vasur
   type: NPC
   canonical_name: Vasur
@@ -5309,6 +5305,15 @@ entities:
   canonical_name: Venezia
   aliases: []
   mention_count: 1
+- concept_id: npcs/voras
+  type: NPC
+  canonical_name: Voras (Voras der Heilige / Voras der Schrecken)
+  aliases:
+  - Graf Voras der Heilige
+  - Voras
+  - Voras der Heilige
+  mention_count: 5
+  important: true
 - concept_id: npcs/vorgultars_magier_assassinen
   type: NPC
   canonical_name: Vorgultars Magier-Assassinen

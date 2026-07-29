@@ -1,8 +1,8 @@
 ---
 type: Faction
 title: Belorus’ Untotenarmee
-description: Belorus’ Untotenarmee ist eine gewaltige Streitmacht aus untoten Kreaturen,
-  die unter dem Befehl des schwarzen Paladins Belorus steht. Die…
+description: Bei Belorus‘ Untotenarmee handelt es sich um eine gewaltige Streitmacht
+  aus Untoten, die von dem schwarzen Paladin Belorus (genannt „der St…
 tags:
 - factions
 timestamp: '2026-03-10T00:00:00Z'
@@ -13,6 +13,7 @@ aliases:
 - Belorus’ Untotenarmee
 - Untote Armee
 - Untote Horde
+- Die Magier von Belorus
 - Belorus‘ Untotenarmee
 - Untote
 - Armee von Belorus
@@ -21,71 +22,82 @@ aliases:
 
 ## Überblick
 
-Belorus’ Untotenarmee ist eine gewaltige Streitmacht aus untoten Kreaturen, die unter dem Befehl des schwarzen Paladins [Belorus](/npcs/magier_von_belorus.md) steht. Die Armee setzt sich aus verschiedenen Untoten-Typen zusammen, darunter Skelette, Zombies, Ghule und größere, mächtigere Kreaturen wie ein Minotaurus-Skelett und ein schwarzer Ritter. Sie agiert auffallend diszipliniert und koordiniert, was auf eine durchdachte Kommandostruktur hindeutet.
-
-Die Armee trat erstmals im Steinbachtal in Erscheinung, wo sie die Siedlung überrannte, und breitete sich in der Folge über die gesamte Region aus. Sie belagerte Breska, griff Flüchtlingstrecks an und stellte sich der Gruppe um Dodo, Rotunas, Esterossa und andere mehrfach in den Weg. Nach einer verheerenden Schlacht um Ehrenfels und einer Einigung zwischen Belorus und der Gruppe zog sich die Armee schließlich nach Zebros zurück.
+Bei Belorus‘ Untotenarmee handelt es sich um eine gewaltige Streitmacht aus Untoten, die von dem schwarzen Paladin [Belorus](/npcs/belorus.md) (genannt „der Stille“) kommandiert wird. Die Armee setzt sich aus Skeletten, Zombies, Ghulen und mächtigeren untoten Kreaturen zusammen und agiert diszipliniert sowie offenbar mit einem übergeordneten Auftrag. Sie sucht im Auftrag ihres Meisters gezielt nach zwei Personen und einem gestohlenen Gegenstand [3]. Nach einer Reihe verheerender Angriffe auf Siedlungen der Region – darunter die Überrennung Steinbachtals und die Belagerung Breskas – hat sich die Armee nach der Niederlage ihres Anführers in die Berge von Zebros zurückgezogen und verhält sich seither passiv [9][10].
 
 ## Rolle in der Kampagne
 
-Die Untotenarmee fungierte über weite Strecken der Kampagne als zentrale, überregionale Bedrohung. Sie war der Auslöser für die Fluchtbewegungen aus dem Steinbachtal und später aus Breska, unterbrach Handelsrouten und isolierte Städte voneinander. Die Gruppe begegnete ihr immer wieder in unterschiedlichen Kontexten: als Verfolger, Belagerer und schließlich als Gegner in einer großen Entscheidungsschlacht. Anders als eine bloße, ziellose Horde schien die Armee stets einen bestimmten Auftrag zu verfolgen – namentlich die Suche nach zwei Personen und einem gestohlenen Gegenstand im Auftrag Belorus’ – und handelte mit einer gewissen strategischen Absicht.
+Die Untotenarmee war über weite Strecken der Kampagne die zentrale äußere Bedrohung für die Gruppe und die gesamte Region. Sie tauchte erstmals beim Angriff auf Steinbachtal auf, verfolgte später Flüchtlinge aus Breska und griff die Helden mehrfach direkt an. Die Armee fungierte als ausführende Hand von Belorus’ Willen – ihre Angriffe, ihre scheinbare Suche und ihre koordinierte Kriegsführung trieben die Handlung voran und zwangen die Gruppe zu strategischen Entscheidungen, Bündnissen und schließlich zur großen Schlacht, in der Belorus besiegt wurde.
 
 ## Wichtige Merkmale
 
 ### Zusammensetzung
 
-Die Armee besteht aus mehreren untoten Kreaturentypen:
-- **Skelettkrieger:** Nahkämpfer, mit Schwertern und Äxten bewaffnet. Einige Skelette treten auch als Bogenschützen auf [3][5][7].
-- **Zombies:** Standard-Untote, die in großer Zahl auftreten [1][4].
-- **Ghule:** Schnellere, aggressivere Untote, die sowohl in Breska als auch in der Schlacht um Ehrenfels dokumentiert sind [4][7][9].
-- **Große Monster:** Darunter ein Minotaurus-Skelett und ein schwarzer Ritter als besonders mächtige Einheiten [1]. In der Schlacht um Ehrenfels werden zudem „große Äxte tragende Kreaturen“ als besonders gefährlich hervorgehoben [7].
-- **Magier:** In mindestens einem Gefecht werden untote Magier innerhalb der Horde gesichtet [5].
+Die Armee besteht aus verschiedenen untoten Einheiten, die in Wellen und taktischen Formationen kämpfen [8]:
 
-### Führungsstruktur
+- **Skelettkrieger**: Nahkämpfer mit Schwertern und großen Äxten; diszipliniert und regenerierbar [2][5][8]
+- **Skelett-Bogenschützen**: Pfeilschützen, die koordiniert feuern [3][6][8]
+- **Zombies**: Ergänzen die Reihen, teils an Wagen klammernd [2][4]
+- **Ghule**: Furchterregende Kreaturen, die auch nach dem Rückzug der Armee in Städten zurückbleiben [4][10]
+- **Mächtige Untote**: Darunter ein Minotaurus, ein schwarzer Ritter [1] und ein Todesritter als Kommandeur [3]
+- **Zwei untote Magier**: Belorus‘ engste Diener, die Schutzmagie wirken und verheerende Blitzangriffe ausführen; sie schützten Belorus aktiv und teleportierten sich mit ihm fort, nachdem er besiegt war [7]
 
-Die Armee operiert unter einer hierarchischen Kommandostruktur. Belorus selbst steht an der Spitze und gibt von hinten Anweisungen [7]. Unter ihm dienen mächtige Kommandeure wie ein **Todesritter**, der am Pass eine Streitmacht aus Skeletten und Bogenschützen befehligte [3], und ein **Withermind**, der die Verfolgung der Flüchtlinge aus Breska anführte [2]. Die Vernichtung eines solchen Generals führt zum Zerfall oder zur Flucht der ihm unterstellten Einheiten – als Rotunas den Todesritter besiegte, entspannten sich die übrigen Skelette und rannten davon [3].
+### Anführer und Kontrollmechanismus
 
-### Taktik und Verhalten
+Die Armee wird nicht von einem zentralen Punkt aus gesteuert, sondern über eine Hierarchie von Anführern. Werden diese vernichtet, zerfallen die von ihnen abhängigen Untoten [4]. In einer Schlacht am Pass wurde beobachtet, wie nach dem Tod des kommandierenden Todesritters die angreifenden Skelette ihren Kampfeswillen verloren und davonliefen [3]. Dieses Prinzip gilt offenbar für mehrere Ebenen der Armee. Belorus selbst kontrollierte die Masse der Untoten während der großen Schlacht direkt, gab Zeichen und befahl Angriffswellen [8].
 
-Die Armee zeigt ein ungewöhnlich hohes Maß an Koordination. Sie greift in Wellen an, setzt Brandpfeile ein und versucht, Gegner in Hinterhalte zu locken [5][7]. Einzelne Skelette fungieren als Späher [6]. Gefallene Soldaten werden im Kampf wiederbelebt [2]. In der Schlacht um Ehrenfels ließ Belorus Brücken durch Brandpfeile zerstören, um Vormarschwege zu öffnen [7]. Nach der Einigung mit der Gruppe wird die Armee als „ehrenhaft“ beschrieben [9].
+### Wiederbelebung
+
+Gefallene untote Soldaten können von ihren Kommandeuren wiederbelebt und erneut in den Kampf geschickt werden [2]. Dies macht die Armee besonders zermürbend für konventionelle Verteidiger.
+
+### Kampftaktik
+
+Die Armee agiert koordiniert und taktisch. Sie schießt mit Bogenschützen aus der Distanz, bindet Gegner im Nahkampf und versucht gelegentlich, Feinde in Hinterhalte zu locken [5]. In der Schlacht um das Dorf griff sie in Wellen an [8]. Trotz ihrer Untoten-Natur wurde ihr Verhalten von Beobachtern als „ehrenhaft“ beschrieben [10] – eine schwer einzuordnende Charakterisierung, die möglicherweise auf die eiserne Disziplin oder einen pervertierten Ehrenkodex des schwarzen Paladins Belorus zurückgeht.
+
+### Rückzugsort Zebros
+
+Die Armee stieg von den Bergen um Zebros herab, um die Lande zu überrennen, und zog sich nach ihrer Niederlage dorthin zurück [4][9]. Der Bergwald der Gilde scheint einen magischen Schutz zu besitzen, der Untote fernhält [5, Transkript].
 
 ## Beziehungen und Verbindungen
 
-- **[Belorus](/npcs/magier_von_belorus.md):** Die Armee dient Belorus dem Stillen direkt und absolut. Er kontrolliert sie und erteilt Befehle im Gefecht [7]. Die Armee suchte in seinem Auftrag nach zwei Personen und einem gestohlenen Gegenstand [3]. Nach der Einigung Belorus’ mit der Gruppe zog sich auch die Armee zurück [9].
-- **[Lunara Velora](/characters/lunara_velora.md):** Lunas Splitterwelt-Manifestation vernichtete einen Großteil der Armee in der Schlacht um Ehrenfels [7].
-- **Die Gruppe (Dodo, Rotunas, Esterossa, Nyrella u. a.):** Wiederholte direkte Konfrontationen, unter anderem am Pass, in den Wäldern nahe der Gilde, bei Breska und schließlich in der Entscheidungsschlacht um Ehrenfels.
+- **[Belorus der Stille](/npcs/belorus.md)**: Oberbefehlshaber und schwarzer Paladin, kein Lich und keine Gottheit. Seine engsten Diener sind die beiden untoten Magier [7].
+- **[Rotunas](/characters/rotunas.md)**, **[Esterossa](/characters/esterossa.md)**, **[Lindo Laut](/characters/lindo_laut.md)**, **[Dodo](/characters/dodo.md)**, **[Nyrella](/characters/nyrella.md)**, **[Lunara Velora](/characters/lunara_velora.md)**: Die Gruppe der Helden, die der Armee mehrfach begegnete und schließlich Belorus besiegte.
+- **[Breska](/locations/breska.md)**: Die Stadt wurde von der Armee belagert und schließlich zerstört; alle Leichen wurden von den Untoten mitgenommen [6][10].
+- **Steinbachtal**: Die erste dokumentierte Siedlung, die von der Armee überrannt wurde. Die Untoten durchsuchten die Stadt und kehrten während der Bergungsarbeiten zurück, um die Kathedrale zu belagern und das Gewölbe zu stürmen [1].
+- **Die Zwei Personen und der gestohlene Gegenstand**: Der explizite Suchauftrag der Armee; Identität und Natur sind bislang ungeklärt [3].
 
 ## Chronologie
 
-**Steinbachtal (Session 1):** Die Armee überrannte die Siedlung Steinbachtal. Sie schien nach etwas Bestimmtem zu suchen, verließ die Stadt zunächst nach dem Angriff, kehrte aber während der Bergungsarbeiten zurück und belagerte die Kathedrale. Sie stürmte schließlich das Gewölbe [1].
+1. **Angriff auf Steinbachtal** (vor Session 1): Die Armee überrannte die Stadt, schien nach etwas zu suchen und zog zunächst ab, kehrte aber während der Bergungsarbeiten zurück und stürmte das Kathedralengewölbe [1].
 
-**Breska–Ehrenfels (Session 2):** Eine große Streitmacht unter Führung eines Withermind verfolgte Flüchtlinge aus Breska und griff die Gruppe am Pass an. Untote Soldaten wurden während des Kampfes wiederbelebt [2].
+2. **Verfolgung der Flüchtlinge aus Breska** (Session 2, ca. 2025-09-23): Eine Streitmacht unter Führung eines Withermind verfolgte die Breska-Flüchtlinge und griff die Gruppe am Pass an. Gefallene Untote wurden wiederbelebt [2].
 
-**Passgefecht (Session 3):** Ein Todesritter kommandierte Skelette und Bogenschützen. Die Streitmacht suchte im Auftrag Belorus’ nach zwei Personen und einem gestohlenen Gegenstand. Der Todesritter wurde von Rotunas mit einer mächtigen magischen Attacke vernichtet, woraufhin die verbliebenen Skelette die Kampfhandlungen einstellten und flohen. Die Einheit wurde fast vollständig ausgelöscht [3].
+3. **Schlacht am Pass** (Session 3, ca. 2025-09-30): Eine Einheit aus Skeletten und Bogenschützen unter einem Todesritter stellte die Gruppe, suchte nach zwei Personen und einem gestohlenen Gegenstand. Rotunas vernichtete den Kommandeur und die meisten Untoten mit einem gewaltigen Angriff; die verbliebenen Skelette flohen [3].
 
-**Ausbreitung und Belagerung Breskas (Session 4):** Die Armee, nun Hunderte bis Tausende von Untoten stark, stieg von Zebros herab und überrannte das Land. Sie wurde von Generälen angeführt, deren Tod die abhängigen Untoten zerfallen ließ. Breska wurde belagert und die Stadt stellte die Kommunikation nach außen ein [4].
+4. **Bedrohung Breskas** (Session 4–6, ca. 2025-11-18 bis 2026-01-06): Hunderte bis Tausende Untote durchstreiften die Region. Breska wurde belagert und schließlich zerstört; die Armee nahm alle Leichen mit [4][6][10].
 
-**Waldgefecht (Session 5):** Eine disziplinierte Horde mit Skelettkriegern, Bogenschützen und Magiern verfolgte die Gruppe, wurde aber im Nahkampf überraschend besiegt. Der Anführer versuchte, die Gruppe in einen Hinterhalt zu locken. Die Untoten zogen sich geordnet zurück und betraten den magisch geschützten Wald um die Gilde nicht [5].
+5. **Verfolgung im Wald** (Session 5, ca. 2025-11-25): Eine disziplinierte Horde Skelette mit Bogenschützen, Schwertkämpfern und Magiern verfolgte die Gruppe, wurde im Nahkampf überraschend besiegt und zog sich geordnet zurück; der Anführer plante einen Hinterhalt [5]. Die Armee mied den magisch geschützten Wald um die Gilde [5, Transkript].
 
-**Breska-Späher (Session 6):** Einzelne Skelett-Späher und Kämpfer wurden in der Region um Breska gesichtet. Die breite Bedrohung durch die Armee war allgegenwärtig [6].
+6. **Späher nahe Breska** (Session 6, ca. 2026-01-06): Einzelne Skelett-Bogenschützen attackierten einen fliehenden Breska-Soldaten und die Gruppe [6].
 
-**Schlacht um Ehrenfels (Session 7):** Die Armee griff in Wellen an – Skelettkrieger, Ghule und große Monster mit Äxten. Besonders die Bogenschützen und die großen Kreaturen erwiesen sich als gefährlich. Belorus dirigierte die Angriffe. Die Schlacht endete mit der weitgehenden Vernichtung der Armee durch Lunaras Splitterwelt-Manifestation [7].
+7. **Die große Schlacht** (Session 7–8, ca. 2026-01-20): Belorus führte die Armee persönlich gegen das verteidigte Dorf. Angriff in Wellen; Bogenschützen und große Axtträger besonders gefährlich [8]. Die untoten Magier schützten Belorus und einen Kristall aktiv. Sie wehrten Ballistenschüsse ab, dispellten Lunaras Magie und verwundeten Lindo Laut schwer mit Blitzen [7]. Lunaras Splitterwelt-Manifestation vernichtete den Großteil der Armee. Nach Belorus’ Niederlage schützten die Magier ihn und teleportierten mit ihm fort [7][8].
 
-**Rückzug nach Zebros (Session 8–9):** Nach der Schlacht und der Einigung zwischen Belorus und der Gruppe zog sich die Armee nach Zebros zurück. Sie wurde als passiv beschrieben. In Breska blieben nur einzelne Ghule und Wächter zurück. Nox berichtete, er habe bereits Untote befragt, um Wissen über die Vergangenheit zu erlangen [8][9].
+8. **Rückzug und Passivität** (Session 9–10, ca. 2026-02-17 bis 2026-03-10): Die Reste der Armee zogen sich nach Zebros zurück und verhalten sich seither passiv [9]. Nox hat bereits Untote befragt, um Wissen über die Vergangenheit zu erlangen [9]. Einzelne Ghule und Wächter verblieben in Breska [10].
 
 ## Offene Fragen
 
-- Das endgültige Ziel der Armee jenseits der Suche nach den zwei Personen und dem Gegenstand blieb unklar. In Session 4 wird das Ziel der Armee explizit als „unbekannt“ bezeichnet [4].
-- Was genau aus Breska nach dem Rückzug der Armee geworden ist, war zum Zeitpunkt der letzten Berichte noch ungeklärt [8].
-- Die Natur des magischen Schutzes, der die Untoten am Betreten des Waldes um die Gilde hinderte, wurde nicht aufgeklärt [5].
+- Wer sind die zwei Personen, nach denen die Armee im Auftrag von Belorus sucht?
+- Was ist der gestohlene Gegenstand, der zurückgebracht werden soll?
+- Was geschah mit Belorus und seinen Magiern nach der Teleportation? Wohin flohen sie?
 
 ## Belege
 
-[1] Session 2025-09-09, 00:11:21, https://www.youtube.com/watch?v=Zl0qfuI6Goc
-[2] Session 2025-09-23, 01:28:20, https://www.youtube.com/watch?v=DGzfqVigS0g
-[3] Session 2025-09-30, 00:46:10, https://www.youtube.com/watch?v=bUT7Mc2hjUY
-[4] Session 2025-11-18, 01:27:05, https://www.youtube.com/watch?v=w__ahowb9p0
-[5] Session 2025-11-25, 00:59:04, https://www.youtube.com/watch?v=wd5R4fJfngY
-[6] Session 2026-01-06, 00:40:27, https://www.youtube.com/watch?v=VGw81seFvbo
-[7] Session 2026-01-20, 00:22:28, https://www.youtube.com/watch?v=H3ckYdTv4y8
-[8] Session 2026-02-17, 00:05:56, https://www.youtube.com/watch?v=Z2jlzpoTWVw
-[9] Session 2026-03-10, 00:03:00, https://www.youtube.com/watch?v=Kr9_AC2XtOw
+1. Session 2025-09-09 @ 00:11:21 — Überblick über die Armee und Angriff auf Steinbachtal
+2. Session 2025-09-23 @ 01:28:20 — Angriff am Pass, Withermind, Wiederbelebung
+3. Session 2025-09-30 @ 00:46:10 — Todesritter, Suchauftrag, Vernichtung der Einheit
+4. Session 2025-11-18 @ 01:27:05 — Zusammensetzung, Generäle, Zerfallsmechanik
+5. Session 2025-11-25 @ 00:59:04 — Disziplinierte Horde, Rückzug, geplanter Hinterhalt
+6. Session 2026-01-06 @ 00:40:27 — Belagerung Breskas, Bogenschützen-Späher
+7. Session 2026-01-20 @ 00:51:06 — Die zwei Magier, Schutzhandlungen, Blitze, Teleportation
+8. Session 2026-01-20 @ 00:22:28 — Schlachtverlauf, Wellenangriffe, Vernichtung durch Splitterwelt
+9. Session 2026-02-17 @ 00:05:56 — Rückzug nach Zebros, Passivität, Nox‘ Befragung von Untoten
+10. Session 2026-03-10 @ 00:03:00 — Zerstörung Breskas, Mitnahme der Leichen, zurückgebliebene Ghule, ehrenhafte Beschreibung

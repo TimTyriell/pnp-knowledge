@@ -9,7 +9,7 @@ timestamp: '2026-03-10T00:00:00Z'
 id: NPC_NAMENLOSER_WAECHTER
 ---
 
-Ein untoter Krieger in [Belorus](/npcs/magier_von_belorus.md)’ Rüstung bewacht den Eingang zur Gruft. Er erkennt [Dodo](/characters/dodo.md) als den Trollschlechter und erlaubt ihm den Abstieg, verlangt aber, dass die anderen oben bleiben oder ihre Waffen abgeben. Er folgt offenbar Befehlen von [Voras](/npcs/vampire_untote_von_voras.md).
+Ein untoter Krieger in [Belorus](/npcs/belorus.md)’ Rüstung bewacht den Eingang zur Gruft. Er erkennt [Dodo](/characters/dodo.md) als den Trollschlechter und erlaubt ihm den Abstieg, verlangt aber, dass die anderen oben bleiben oder ihre Waffen abgeben. Er folgt offenbar Befehlen von [Voras](/npcs/voras.md).
 
 # Belege
 

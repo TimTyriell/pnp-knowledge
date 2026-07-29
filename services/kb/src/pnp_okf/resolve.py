@@ -139,6 +139,13 @@ def merge_near_duplicates(
             and b.type in PERSON_TYPES
             and _tokens(a) < _tokens(b)
             and not _forbidden(a, b)
+            # The longer name only wins if it is at least as well attested.
+            # A short name with many mentions next to a longer one with a
+            # handful is not a person and their fuller name — it is a person
+            # and something *derived* from them: "Die Magier von Belorus",
+            # "Geist von Rotunas", "Vampire von Voras". Folding that way round
+            # deletes the actual character and keeps the footnote.
+            and len(b.mentions) >= len(a.mentions)
         ]
         if len(supersets) == 1:
             _merge(a, supersets[0], "token-subset")
