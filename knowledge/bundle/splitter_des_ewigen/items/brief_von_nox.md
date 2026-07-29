@@ -10,7 +10,7 @@ id: ITEM_BRIEF_VON_NOX
 subtype: Schriftstück
 ---
 
-Ein von [Ser Eulenweiss](/npcs/ser_eulenweiss.md) mitgebrachter, festgenähter Brief des [Gildenmeisters](/npcs/nox.md) Nox an [Voras](/npcs/voras.md). Voras reißt ihn barsch an sich und liest ihn nicht öffentlich. Der Inhalt bleibt unbekannt, wird aber als Vorwand genutzt, um Ser Eulenweiss eine Einigung vorzutäuschen.
+Ein von [Ser Eulenweiss](/npcs/ser_eulenweiss.md) mitgebrachter, festgenähter Brief des [Gildenmeisters](/npcs/nox.md) Nox an [Voras](/npcs/vampire_untote_von_voras.md). Voras reißt ihn barsch an sich und liest ihn nicht öffentlich. Der Inhalt bleibt unbekannt, wird aber als Vorwand genutzt, um Ser Eulenweiss eine Einigung vorzutäuschen.
 
 # Belege
 

@@ -49,7 +49,7 @@ Seine Vision bei der Segnung zeigt Hoffnung und einen inneren Konflikt.
 
 ## Beziehungen und Verbindungen
 
-- **[Adelia](/npcs/adeliga.md)**: Sie vermittelt Jorans Segen an Sange, wobei er seinen echten Namen flüstert.
+- **[Adelia](/npcs/adeliga_der_eulenseraph.md)**: Sie vermittelt Jorans Segen an Sange, wobei er seinen echten Namen flüstert.
 - **[Joran](/deities/joran_der_muenzenzaehler.md) (der Münzenzähler)**: Segnete Sange, was dessen Blutmagie beruhigte und einen Lichtfunken im roten Chaos entzündete. Die Verbindung wird durch den Timer mit einem Strich symbolisiert.
 - **[Bruma](/characters/bruma_stormrak.md)**: Sange folgt Bruma begeistert in die Mine, beobachtet ihn mit der magischen Maske und zeigt eine enge Kampfgefährtenschaft.
 - **[Saris](/characters/saris.md)**: Sange ist Saris gegenüber skeptisch und untersucht dessen Vergangenheit mit seinen Fähigkeiten.

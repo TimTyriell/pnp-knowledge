@@ -20,7 +20,7 @@ Die **Anhänger Nerashs** sind eine religiöse Gruppierung, die den neuen Gott *
 
 ## Verbindungen
 
-Es gibt Hinweise auf eine Verbindung zwischen Nerash und dem [Seraph](/npcs/die_drei_gefallenen_seraphen.md). Als Esterossa in einer Begegnung die Statue Nerashs zeigte, reagierte der Seraph auffällig darauf, was auf eine enge Beziehung – möglicherweise Zugehörigkeit – hindeutet.
+Es gibt Hinweise auf eine Verbindung zwischen Nerash und dem [Seraph](/npcs/seraphen.md). Als Esterossa in einer Begegnung die Statue Nerashs zeigte, reagierte der Seraph auffällig darauf, was auf eine enge Beziehung – möglicherweise Zugehörigkeit – hindeutet.
 
 # Belege
 

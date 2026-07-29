@@ -6,6 +6,37 @@ rejected, the entry says so and why, so it is not re-proposed.
 
 ---
 
+## I-002 — A ruling should reach every entry that depends on it
+
+**Status:** proposed, 2026-07-27. Not scheduled.
+
+`context.sources_for()` attaches a `knowledge/sources/` section to an entity by
+matching the section heading against that entity's name. So a ruling about
+Nyruk reaches `npcs/nyruk` and nothing else — even though the entries that
+*mention* Nyruk are exactly the ones that repeat the settled contradiction.
+
+Two of the five open conflicts after the v5 rebuild are this, not real
+disagreements:
+
+- `characters/nyrella` lists the Nyruk/Nairuk/Nairook spellings as an open
+  conflict, and even states that the ruling settles on "Nairuk" — it settles on
+  **Nyruk**. The synthesis never saw the ruling and reconstructed it from the
+  transcripts.
+- `npcs/tyrael` lists "Basul" vs "Vasul" as unresolved. Both fold into
+  `deities/vharzul` by rule.
+
+A reviewer who finds decided questions in the queue stops reading the queue, so
+this costs more than the two entries.
+
+**Sketch:** match a source section not only against the entity's own names but
+against the names of the entities it cites, i.e. attach a ruling to every entry
+whose mentions contain the ruled name. The cost is per-entity prompt size, so
+it wants a cap: attach at most the few most relevant sections, longest name
+match first. Note this invalidates the synth cache for every entity that gains
+a section — worth batching with other synthesis work rather than doing alone.
+
+---
+
 ## I-001 — Canonical proper nouns at the source, not by rewriting transcripts
 
 **Status:** proposed, 2026-07-27. Not scheduled.

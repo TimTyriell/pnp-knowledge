@@ -10,7 +10,7 @@ id: LOC_ZEBRAS
 subtype: Festung
 ---
 
-Zebras ist eine Bergfestung, in der [Dodo](/characters/dodo.md) und [Cookie](/characters/cookie.md) einst waren. Dort erhielt Dodo seinen heiligen [Streitkolben](/items/streitkolben.md), der sich im Kampf als wirksam gegen [Belorus](/npcs/belorus.md)' Kreaturen erwies und die magische Barriere des [Dreadknights](/npcs/dreadknight.md) durchschlagen konnte.
+Zebras ist eine Bergfestung, in der [Dodo](/characters/dodo.md) und [Cookie](/characters/cookie.md) einst waren. Dort erhielt Dodo seinen heiligen [Streitkolben](/items/streitkolben.md), der sich im Kampf als wirksam gegen [Belorus](/npcs/magier_von_belorus.md)' Kreaturen erwies und die magische Barriere des [Dreadknights](/npcs/dreadknight.md) durchschlagen konnte.
 
 # Belege
 

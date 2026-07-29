@@ -9,7 +9,7 @@ timestamp: '2025-07-29T00:00:00Z'
 id: NPC_ASLEINA
 ---
 
-Asleina ist die Anführerin der verbliebenen Dorfverteidiger und zunächst froh über die Ankunft der Helden. Sie beharrt jedoch auf einem Verteidigungsplan und misstraut den [Kuatau](/factions/kuatau.md) zutiefst. Nachdem die Gruppe den Brunnen manipuliert und die Kuatau anrücken, befiehlt sie ihren Soldaten, den Kapitän und [Miaomani](/npcs/miaomani.md) anzugreifen, was zum Verrat führt. Sie wird von [Leandras](/npcs/lendras.md) außer Gefecht gesetzt, bevor weiteres Blut fließt.
+Asleina ist die Anführerin der verbliebenen Dorfverteidiger und zunächst froh über die Ankunft der Helden. Sie beharrt jedoch auf einem Verteidigungsplan und misstraut den [Kuatau](/npcs/kuatau.md) zutiefst. Nachdem die Gruppe den Brunnen manipuliert und die Kuatau anrücken, befiehlt sie ihren Soldaten, den Kapitän und [Miaomani](/npcs/miaomani.md) anzugreifen, was zum Verrat führt. Sie wird von [Leandras](/npcs/lendras.md) außer Gefecht gesetzt, bevor weiteres Blut fließt.
 
 # Belege
 

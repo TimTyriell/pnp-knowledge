@@ -14,7 +14,7 @@ aliases:
 
 ## Überblick
 
-Joran der Münzenzähler ist eine der „neuen Götter“, die nach der Verbannung der alten Götter vor zwölf Jahren in der Welt wirken. Sein Name ist auf einer Statue eingraviert, und er wird von seiner Paladin [Adelia](/npcs/adeliga.md) als „meine Gottheit. Mein Patron, mein Beschützer“ beschrieben. Über ihn ist „nicht allzu viel bekannt“. Seine Darstellung als junger Mann mit einem Sack Gold unter dem Fuß und einer Münze in der Hand legt eine Affinität zu Handel oder Reichtum nahe; zugleich spendet sein Segen Hoffnung und Wärme, und seine „Gnade“ manifestiert sich als goldenes Leuchten in den Augen seiner Geweihten. Die neuen Götter, zu denen er gehört, „versuchen inständig das Gleichgewicht aufrechtzuerhalten“ und „reden mit denen, die es verdienen“.
+Joran der Münzenzähler ist eine der „neuen Götter“, die nach der Verbannung der alten Götter vor zwölf Jahren in der Welt wirken. Sein Name ist auf einer Statue eingraviert, und er wird von seiner Paladin [Adelia](/npcs/adeliga_der_eulenseraph.md) als „meine Gottheit. Mein Patron, mein Beschützer“ beschrieben. Über ihn ist „nicht allzu viel bekannt“. Seine Darstellung als junger Mann mit einem Sack Gold unter dem Fuß und einer Münze in der Hand legt eine Affinität zu Handel oder Reichtum nahe; zugleich spendet sein Segen Hoffnung und Wärme, und seine „Gnade“ manifestiert sich als goldenes Leuchten in den Augen seiner Geweihten. Die neuen Götter, zu denen er gehört, „versuchen inständig das Gleichgewicht aufrechtzuerhalten“ und „reden mit denen, die es verdienen“.
 
 ## Rolle in der Kampagne
 
@@ -44,7 +44,7 @@ Die neuen Götter offenbaren sich nicht öffentlich, sondern „reden mit denen,
 
 ## Beziehungen und Verbindungen
 
-- **[Adelia](/npcs/adeliga.md):** Paladin Jorans, die in seinem Namen handelt und seinen Segen anbietet. Ihre Augen leuchten golden auf, wenn sie von ihm spricht.
+- **[Adelia](/npcs/adeliga_der_eulenseraph.md):** Paladin Jorans, die in seinem Namen handelt und seinen Segen anbietet. Ihre Augen leuchten golden auf, wenn sie von ihm spricht.
 - **[Sange](/characters/sange.md):** Lässt sich von Adelia taufen und wird dadurch zu Jorans geweihtem Gefolgsmann. Der Gott wird zu Sanges Patron, und der Segen bringt einen Lichtfunken in seine chaotische Blutmagie.
 - **[Saris](/characters/saris.md):** Fertigt eine detaillierte Zeichnung und Beschreibung von Jorans Statue an und befragt Adelia zu der Gottheit. Später bespricht er den neuen Gläubigen Sange mit seinem eigenen Schutzgeist.
 

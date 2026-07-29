@@ -1,36 +1,31 @@
 ---
 type: Faction
 title: Die Flüchtlinge
-description: Eine Gruppe von Zivilisten, die vor Banditen und später vor dem Krieg
-  aus der Stadt Breska (auch Bereska genannt) flohen. Sie bestehen aus…
+description: Die Flüchtlinge aus Breska sind eine Gemeinschaft von Vertriebenen, die
+  vor mehreren Bedrohungen aus ihrem Heimatort Breska geflohen sind.…
 tags:
 - factions
 timestamp: '2026-01-20T00:00:00Z'
 id: FACTION_FLUECHTLINGE_AUS_BRESKA
 subtype: Volk
 aliases:
-- Die Flüchtlinge aus Bereska
 - Flüchtlinge aus Breska
+- Die Flüchtlinge aus Bereska
+- Flüchtlinge (Gruppe um Roland)
 ---
 
-# Die Flüchtlinge aus Breska
+Die **Flüchtlinge aus Breska** sind eine Gemeinschaft von Vertriebenen, die vor mehreren Bedrohungen aus ihrem Heimatort Breska geflohen sind. Sie setzen sich aus Dorfbewohnern, Handwerkern und Bauern zusammen, sind nicht bewaffnet oder kämpferisch und werden von [Roland](/npcs/roland.md) angeführt. Ihr Ziel ist es, einen sicheren Ort für den Winter zu finden und langfristig eine neue Heimat aufzubauen. Die Abenteurergruppe um Hal übernimmt ihren Schutz und handelt ihre Unterbringung im ehemaligen Banditenlager aus.
 
-Eine Gruppe von Zivilisten, die vor Banditen und später vor dem Krieg aus der Stadt Breska (auch Bereska genannt) flohen. Sie bestehen aus Dorfbewohnern, Handwerkern und Bauern, sind unbewaffnet, erschöpft und führen beschädigte Wagen mit Verletzten mit sich. Angeführt werden sie von [Roland](/npcs/roland.md). Die Flüchtlinge suchen dringend einen sicheren Ort für den Winter und erhalten dabei Hilfe von der Gruppe der Abenteurer.
+## Herkunft und Flucht
 
-## Hintergrund und Herkunft
+Die Flüchtlinge verließen Breska aufgrund einer Mischung aus Gefahren: [1] berichtet von Untoten und der örtlichen Obrigkeit, [2] nennt Banditen als Grund. Die Gruppe vereint also Vertriebene, die vor mehreren Bedrohungen – Untoten, Banditen und den Machthabern in Breska – geflohen sind. Roland tritt als ihr Sprecher auf und willigt im Namen der Gruppe in den Marsch zum Banditenlager ein [1]. Sie sind eine bunt gemischte, nicht kämpferische Gemeinschaft, die auf der Suche nach Schutz und Sicherheit ist [1][2].
 
-Die Flüchtlinge stammen aus Breska (in späteren Erwähnungen auch Bereska genannt), das offenbar von Banditen heimgesucht wurde. In der ersten Begegnung wird berichtet, dass sie spezifisch vor Banditen aus Breska geflohen sind [1]. In einer späteren Erwähnung wird der Grund allgemeiner als „Krieg in Bereska“ angegeben [3]. Es handelt sich um dieselbe Gruppe – sie hat also nacheinander sowohl Banditen als auch Kriegshandlungen zur Flucht bewegt.
+## Schutz und Unterbringung
 
-## Beziehung zur Gruppe und ihr Schicksal
-
-Die Abenteurergruppe trifft die Flüchtlinge erstmals auf ihrem Weg und übernimmt deren Schutz. In Session 2 handelt die Gruppe mit [Hal](/npcs/hal_harl.md) eine Unterbringung für die Flüchtlinge über den Winter aus [2]. Später (Session 3) finden die Flüchtlinge im Banditenversteck Schutz, während dort eine Schlacht tobt. Sie verstecken sich und erleiden einige Verluste durch Pfeilhagel. Die Abenteurer bemühen sich aktiv, sie zu schützen [3]. Ob alle Flüchtlinge den Winter und die Kämpfe überleben, ist aus den vorliegenden Belegen nicht eindeutig.
-
-## Aktuelle Lage
-
-Nach der Schlacht im Banditenversteck ist die Gruppe vorerst in Sicherheit, aber geschwächt und mit Verlusten. Ob sie den Winter über in der Unterkunft von Hal bleiben oder weiterziehen, geht aus den Quellen nicht hervor.
+Als die Flüchtlinge im Banditenlager ankommen, sind sie erschöpft, ihre Wagen sind beschädigt und es gibt Verletzte [3]. Roland handelt mit Hal die Unterbringung für den Winter aus [3]. Die Abenteurer schützen die Zivilisten; während einer Schlacht verstecken sich die Flüchtlinge im Versteck, erleiden jedoch Verluste durch einen Pfeilhagel [4]. Die Gruppe bemüht sich aktiv, sie zu verteidigen und weiteren Schaden von ihnen abzuwenden [4]. Ihre Sicherheit bleibt ein zentrales Anliegen der Kampagne.
 
 # Belege
-
-1. Session 2025-09-23 @ 00:21:26 – <https://www.youtube.com/watch?v=DGzfqVigS0g>  
-2. Session 2025-09-30 @ 01:09:12 – <https://www.youtube.com/watch?v=bUT7Mc2hjUY>  
-3. Session 2026-01-20 @ 00:06:33 – <https://www.youtube.com/watch?v=H3ckYdTv4y8>
+1. Session 2025-09-17 @ 00:36:38 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
+2. Session 2025-09-23 @ 00:21:26 (https://www.youtube.com/watch?v=DGzfqVigS0g)
+3. Session 2025-09-30 @ 01:09:12 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+4. Session 2026-01-20 @ 00:06:33 (https://www.youtube.com/watch?v=H3ckYdTv4y8)

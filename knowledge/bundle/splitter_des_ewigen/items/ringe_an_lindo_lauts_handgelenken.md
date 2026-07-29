@@ -10,7 +10,7 @@ id: ITEM_RINGE_AN_LINDO_LAUTS_HANDGELENKEN
 subtype: Artefakt
 ---
 
-Magische Handschellen, die von Nox und [Voras](/npcs/voras.md) in wochenlanger Arbeit geschmiedet wurden. Sie dienen dazu, das Wesen in [Lindo Laut](/characters/lindo_laut.md) zu unterdrücken und einen Weltenwechsel risikofrei zu halten. Der Nebel in [Breska](/locations/breska.md) sorgt dafür, dass ihre Funktion nicht durch Magie ausspioniert werden kann.
+Magische Handschellen, die von Nox und [Voras](/npcs/vampire_untote_von_voras.md) in wochenlanger Arbeit geschmiedet wurden. Sie dienen dazu, das Wesen in [Lindo Laut](/characters/lindo_laut.md) zu unterdrücken und einen Weltenwechsel risikofrei zu halten. Der Nebel in [Breska](/locations/breska.md) sorgt dafür, dass ihre Funktion nicht durch Magie ausspioniert werden kann.
 
 # Belege
 

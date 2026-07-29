@@ -10,7 +10,7 @@ id: ITEM_DIE_STATUE_DES_NERASH
 subtype: Artefakt
 ---
 
-[Esterossa](/characters/esterossa.md) trägt eine kleine Statue des Gottes [Nerash](/deities/nerash.md) bei sich. Während [Belorus](/npcs/belorus.md)' Ansprache steckte er die Hand in die Tasche, um die Statue für den Notfall bereitzuhalten.
+[Esterossa](/characters/esterossa.md) trägt eine kleine Statue des Gottes [Nerash](/deities/nerash.md) bei sich. Während [Belorus](/npcs/magier_von_belorus.md)' Ansprache steckte er die Hand in die Tasche, um die Statue für den Notfall bereitzuhalten.
 
 # Belege
 

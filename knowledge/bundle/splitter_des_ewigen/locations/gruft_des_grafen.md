@@ -10,7 +10,7 @@ id: LOC_GRUFT_DES_GRAFEN
 subtype: Dungeon
 ---
 
-Das unterirdische Reich des Grafen [Voras](/npcs/voras.md). Sie ist luxuriös mit Statuen längst vergessener Götter, Rüstungen und magischen Spiegeln ausgestattet. Ein magischer Mechanismus schützt die inneren Tore. Der Graf empfängt sie in seiner Thronhalle und verfällt nach der Zerstörung des Buches in Tobsucht.
+Das unterirdische Reich des Grafen [Voras](/npcs/vampire_untote_von_voras.md). Sie ist luxuriös mit Statuen längst vergessener Götter, Rüstungen und magischen Spiegeln ausgestattet. Ein magischer Mechanismus schützt die inneren Tore. Der Graf empfängt sie in seiner Thronhalle und verfällt nach der Zerstörung des Buches in Tobsucht.
 
 # Belege
 

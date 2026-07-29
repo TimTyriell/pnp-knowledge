@@ -10,7 +10,7 @@ id: LOC_WINDUNG
 subtype: Siedlung
 ---
 
-Windung ist ein idyllisches, aber fast verlassenes Fischerdorf auf einer Insel. Einst wurde hier ein wertvolles Erz abgebaut, heute ist es nur noch ein ruhiger Ort. Im Verlauf der Session wird die Insel von den [Kuatau](/factions/kuatau.md) beansprucht und die Menschen müssen evakuiert werden, sodass Windung als menschliche Siedlung verloren ist.
+Windung ist ein idyllisches, aber fast verlassenes Fischerdorf auf einer Insel. Einst wurde hier ein wertvolles Erz abgebaut, heute ist es nur noch ein ruhiger Ort. Im Verlauf der Session wird die Insel von den [Kuatau](/npcs/kuatau.md) beansprucht und die Menschen müssen evakuiert werden, sodass Windung als menschliche Siedlung verloren ist.
 
 # Belege
 

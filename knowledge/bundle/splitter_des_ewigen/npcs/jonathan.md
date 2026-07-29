@@ -9,7 +9,7 @@ timestamp: '2026-06-04T00:00:00Z'
 id: NPC_JONATHAN
 ---
 
-Einer der beiden Totenschädel auf [Saris](/characters/saris.md)' Schultern, ein ehemaliger Bandit, der für Tests starb. Er schlägt vor, die [Gnolle](/factions/gnolle.md) für Experimente zu nutzen, und nennt [Adelia](/npcs/adeliga.md) eine Lügnerin. Nur Saris hört ihn. Er ist der 'böse' Kopf und misstraut Herakles.
+Einer der beiden Totenschädel auf [Saris](/characters/saris.md)' Schultern, ein ehemaliger Bandit, der für Tests starb. Er schlägt vor, die [Gnolle](/npcs/gnolle.md) für Experimente zu nutzen, und nennt [Adelia](/npcs/adeliga_der_eulenseraph.md) eine Lügnerin. Nur Saris hört ihn. Er ist der 'böse' Kopf und misstraut Herakles.
 
 # Belege
 

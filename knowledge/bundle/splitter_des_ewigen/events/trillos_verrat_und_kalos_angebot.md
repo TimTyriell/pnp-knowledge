@@ -10,7 +10,7 @@ id: EVENT_TRILLOS_VERRAT_UND_KALOS_ANGEBOT
 subtype: Sonstiges
 ---
 
-Im Turm offenbart [Trillo](/npcs/trillo.md) seinen Verrat und stellt [Kalos](/npcs/kalos.md) vor, der die Gruppe in seine Organisation aufnehmen will. Als sie ablehnen, teleportiert sich Trillo fort und überlässt sie Kalos.
+Im Turm offenbart [Trillo](/npcs/trillo.md) seinen Verrat und stellt [Kalos](/npcs/organisation_der_kalos.md) vor, der die Gruppe in seine Organisation aufnehmen will. Als sie ablehnen, teleportiert sich Trillo fort und überlässt sie Kalos.
 
 # Belege
 

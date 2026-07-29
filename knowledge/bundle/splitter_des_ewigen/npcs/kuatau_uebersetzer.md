@@ -9,7 +9,7 @@ timestamp: '2025-07-29T00:00:00Z'
 id: NPC_KUATAU_UEBERSETZER
 ---
 
-Dieser [Kuatau](/factions/kuatau.md) wird gefangen und von [Cookie](/characters/cookie.md) mit der Sprache der Natur verstanden. Er überbringt die Botschaft des Friedens an den [Kuatau-Priester](/npcs/kuatau_priester.md) und fungiert als Vermittler, indem er die Worte der Helden an seinen Anführer weitergibt.
+Dieser [Kuatau](/npcs/kuatau.md) wird gefangen und von [Cookie](/characters/cookie.md) mit der Sprache der Natur verstanden. Er überbringt die Botschaft des Friedens an den [Kuatau-Priester](/npcs/kuatau_priester.md) und fungiert als Vermittler, indem er die Worte der Helden an seinen Anführer weitergibt.
 
 # Belege
 

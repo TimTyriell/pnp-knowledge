@@ -1773,24 +1773,9 @@ entities:
   canonical_name: Brabarand-Gilde
   aliases: []
   mention_count: 1
-- concept_id: factions/brandau_widerstand
-  type: Faction
-  canonical_name: Brandau-Widerstand
-  aliases: []
-  mention_count: 1
 - concept_id: factions/bresca_gilde
   type: Faction
   canonical_name: Bresca-Gilde
-  aliases: []
-  mention_count: 1
-- concept_id: factions/daemonen_abyssalis
-  type: Faction
-  canonical_name: Dämonen (Abyssalis)
-  aliases: []
-  mention_count: 1
-- concept_id: factions/die_champions_der_arena
-  type: Faction
-  canonical_name: Die Champions der Arena
   aliases: []
   mention_count: 1
 - concept_id: factions/die_gefaehrten_von_rotunas
@@ -1798,24 +1783,9 @@ entities:
   canonical_name: Die Gefährten von Rotunas
   aliases: []
   mention_count: 1
-- concept_id: factions/die_goblins_der_mine
-  type: Faction
-  canonical_name: Die Goblins der Mine
-  aliases: []
-  mention_count: 1
-- concept_id: factions/die_schmuggler
-  type: Faction
-  canonical_name: Die Schmuggler
-  aliases: []
-  mention_count: 1
 - concept_id: factions/die_zwerge_der_festung
   type: Faction
   canonical_name: Die Zwerge der Festung
-  aliases: []
-  mention_count: 1
-- concept_id: factions/dorfbewohner_von_gemata
-  type: Faction
-  canonical_name: Dorfbewohner von Gemata
   aliases: []
   mention_count: 1
 - concept_id: factions/fluechtlinge_aus_breska
@@ -1824,17 +1794,8 @@ entities:
   aliases:
   - Flüchtlinge aus Breska
   - Die Flüchtlinge aus Bereska
-  mention_count: 3
-- concept_id: factions/fluechtlinge_gruppe_um_roland
-  type: Faction
-  canonical_name: Flüchtlinge (Gruppe um Roland)
-  aliases: []
-  mention_count: 1
-- concept_id: factions/freibeuter
-  type: Faction
-  canonical_name: Freibeuter
-  aliases: []
-  mention_count: 1
+  - Flüchtlinge (Gruppe um Roland)
+  mention_count: 4
 - concept_id: factions/gilde_der_schilde
   type: Faction
   canonical_name: Gilde der Schilde
@@ -1854,59 +1815,16 @@ entities:
   - Die Gilde
   - Berggilde (Fraktion)
   mention_count: 20
-- concept_id: factions/gnolle
-  type: Faction
-  canonical_name: Gnolle
-  aliases:
-  - Gnoll-Horde
-  mention_count: 2
-- concept_id: factions/goblin_armee
-  type: Faction
-  canonical_name: Goblin-Armee
-  aliases: []
-  mention_count: 1
 - concept_id: factions/goblins
   type: Faction
   canonical_name: Goblins
   aliases:
   - Goblinhorde
   - Goblins der Minen
-  mention_count: 2
-- concept_id: factions/goblins_des_anwesens
-  type: Faction
-  canonical_name: Goblins des Anwesens
-  aliases: []
-  mention_count: 1
-- concept_id: factions/grottenschrate
-  type: Faction
-  canonical_name: Grottenschrate
-  aliases: []
-  mention_count: 1
-- concept_id: factions/halblingsdorfbewohner
-  type: Faction
-  canonical_name: Halblingsdorfbewohner
-  aliases: []
-  mention_count: 1
-- concept_id: factions/hendriks_sippe
-  type: Faction
-  canonical_name: Hendriks Sippe
-  aliases: []
-  mention_count: 1
-- concept_id: factions/hexenzirkel_der_nachtwaechterinnen
-  type: Faction
-  canonical_name: Hexenzirkel der Nachtwächterinnen
-  aliases: []
-  mention_count: 1
-- concept_id: factions/hydrid
-  type: Faction
-  canonical_name: Hydrid
-  aliases: []
-  mention_count: 1
-- concept_id: factions/kuatau
-  type: Faction
-  canonical_name: Kuatau
-  aliases: []
-  mention_count: 1
+  - Goblins des Anwesens
+  - Die Goblins der Mine
+  - Goblin-Armee
+  mention_count: 5
 - concept_id: factions/kult_des_vharzul
   type: Faction
   canonical_name: Kult des Vhar'Zul
@@ -1920,34 +1838,9 @@ entities:
   canonical_name: Kultisten der alten Götter
   aliases: []
   mention_count: 1
-- concept_id: factions/lindos_amulett_stimmen
-  type: Faction
-  canonical_name: Lindos Amulett-Stimmen
-  aliases: []
-  mention_count: 1
-- concept_id: factions/magier_von_belorus
-  type: Faction
-  canonical_name: Die Magier von Belorus
-  aliases: []
-  mention_count: 1
-- concept_id: factions/ordensbrueder
-  type: Faction
-  canonical_name: Ordensbrüder
-  aliases: []
-  mention_count: 1
-- concept_id: factions/organisation_der_kalos
-  type: Faction
-  canonical_name: Organisation der Kalos
-  aliases: []
-  mention_count: 1
 - concept_id: factions/seelenwacht
   type: Faction
   canonical_name: Seelenwacht
-  aliases: []
-  mention_count: 1
-- concept_id: factions/seraphen_von_vorgotha
-  type: Faction
-  canonical_name: Seraphen von Vorgotha
   aliases: []
   mention_count: 1
 - concept_id: factions/silberkerne
@@ -1961,26 +1854,6 @@ entities:
   - Banditen
   - Banditen (im Banditenlager)
   mention_count: 9
-- concept_id: factions/soeldner_des_hauptmanns_aaron
-  type: Faction
-  canonical_name: Söldner des Hauptmanns Aaron
-  aliases: []
-  mention_count: 1
-- concept_id: factions/soldaten_von_willauch
-  type: Faction
-  canonical_name: Soldaten von Willauch
-  aliases: []
-  mention_count: 1
-- concept_id: factions/vampire_untote_von_voras
-  type: Faction
-  canonical_name: Vampire/Untote von Voras
-  aliases: []
-  mention_count: 1
-- concept_id: factions/vorgultars_magier_assassinen
-  type: Faction
-  canonical_name: Vorgultars Magier-Assassinen
-  aliases: []
-  mention_count: 1
 - concept_id: items/alchemisten_flaeschchen
   type: Item
   canonical_name: Alchemisten-Fläschchen
@@ -2005,7 +1878,8 @@ entities:
   - Die Geister im Amulett
   - Amulett (Medaillon)
   - Amulett (Stimmen)
-  mention_count: 4
+  - Lindos Amulett-Stimmen
+  mention_count: 5
 - concept_id: items/amulett_mit_den_vier_seelenstuecken
   type: Item
   canonical_name: Amulett mit den vier Seelenstücken
@@ -3209,12 +3083,12 @@ entities:
   important: true
 - concept_id: locations/breska
   type: Location
-  canonical_name: Brechka
+  canonical_name: Breska
   aliases:
   - Bresca
-  - Breska
   - Dorf (Bresca?)
   - Breschka
+  - Brechka
   mention_count: 11
 - concept_id: locations/bruecke_des_dritten_eilands
   type: Location
@@ -4123,12 +3997,18 @@ entities:
   aliases:
   - Harald
   mention_count: 1
-- concept_id: npcs/adeliga
+- concept_id: npcs/adeliga_der_eulenseraph
   type: NPC
-  canonical_name: Adeliga
+  canonical_name: Adeliga (Eulen-Seraph)
   aliases:
   - Adelia
-  mention_count: 2
+  mention_count: 1
+- concept_id: npcs/adeliga_vom_haus_des_loewen
+  type: NPC
+  canonical_name: Adeliga (Haus des Löwen)
+  aliases:
+  - Adeliga
+  mention_count: 1
 - concept_id: npcs/adria
   type: NPC
   canonical_name: Adria
@@ -4177,15 +4057,6 @@ entities:
   canonical_name: Baran
   aliases: []
   mention_count: 2
-- concept_id: npcs/belorus
-  type: NPC
-  canonical_name: Belorus der Stille
-  aliases:
-  - Lord Belorus
-  - Geistergestalt (Bote von Belorus)
-  - Belorus
-  mention_count: 6
-  important: true
 - concept_id: npcs/bergwaechter
   type: NPC
   canonical_name: Bergwächter
@@ -4209,6 +4080,11 @@ entities:
 - concept_id: npcs/bote_der_silberkerne
   type: NPC
   canonical_name: Bote der Silberkerne
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/brandau_widerstand
+  type: NPC
+  canonical_name: Brandau-Widerstand
   aliases: []
   mention_count: 1
 - concept_id: npcs/brandon
@@ -4259,6 +4135,11 @@ entities:
 - concept_id: npcs/daemon_der_hybris
   type: NPC
   canonical_name: Dämon der Hybris
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/daemonen_abyssalis
+  type: NPC
+  canonical_name: Dämonen (Abyssalis)
   aliases: []
   mention_count: 1
 - concept_id: npcs/daemonische_stimme
@@ -4361,13 +4242,18 @@ entities:
   canonical_name: die alte Frau
   aliases: []
   mention_count: 1
+- concept_id: npcs/die_champions_der_arena
+  type: NPC
+  canonical_name: Die Champions der Arena
+  aliases: []
+  mention_count: 1
 - concept_id: npcs/die_drei_gefallenen_seraphen
   type: NPC
   canonical_name: Die drei gefallenen Seraphen
   aliases:
   - Seraph
   - Seraphen
-  mention_count: 3
+  mention_count: 2
 - concept_id: npcs/die_drei_halborks
   type: NPC
   canonical_name: Die drei Halborks
@@ -4409,6 +4295,11 @@ entities:
   canonical_name: Die kleinen Kreaturen
   aliases: []
   mention_count: 1
+- concept_id: npcs/die_schmuggler
+  type: NPC
+  canonical_name: Die Schmuggler
+  aliases: []
+  mention_count: 1
 - concept_id: npcs/die_sumpfhexe
   type: NPC
   canonical_name: Die Sumpfhexe
@@ -4430,6 +4321,11 @@ entities:
   canonical_name: Diener Huludans
   aliases:
   - Holodarn
+  mention_count: 1
+- concept_id: npcs/dorfbewohner_von_gemata
+  type: NPC
+  canonical_name: Dorfbewohner von Gemata
+  aliases: []
   mention_count: 1
 - concept_id: npcs/dormak
   type: NPC
@@ -4517,7 +4413,8 @@ entities:
   canonical_name: Freibeuter-Harald
   aliases:
   - Harald
-  mention_count: 1
+  - Freibeuter
+  mention_count: 2
 - concept_id: npcs/froschartige_kreaturen_dungeon
   type: NPC
   canonical_name: Froschartige Kreaturen (Dungeon)
@@ -4587,6 +4484,12 @@ entities:
   canonical_name: Gnoll (Heiler)
   aliases: []
   mention_count: 1
+- concept_id: npcs/gnolle
+  type: NPC
+  canonical_name: Gnolle
+  aliases:
+  - Gnoll-Horde
+  mention_count: 2
 - concept_id: npcs/goblin_kind
   type: NPC
   canonical_name: Goblin-Kind
@@ -4612,11 +4515,12 @@ entities:
   canonical_name: Großes Vieh (in der Seelennetzhalle)
   aliases: []
   mention_count: 1
-- concept_id: npcs/grottenschrat
+- concept_id: npcs/grottenschrate
   type: NPC
-  canonical_name: Grottenschrat
-  aliases: []
-  mention_count: 1
+  canonical_name: Grottenschrate
+  aliases:
+  - Grottenschrat
+  mention_count: 2
 - concept_id: npcs/guenther_shani
   type: NPC
   canonical_name: Günther (Shani)
@@ -4635,6 +4539,11 @@ entities:
   - Hal
   - HAL
   mention_count: 6
+- concept_id: npcs/halblingsdorfbewohner
+  type: NPC
+  canonical_name: Halblingsdorfbewohner
+  aliases: []
+  mention_count: 1
 - concept_id: npcs/haloras
   type: NPC
   canonical_name: Haloras
@@ -4690,6 +4599,11 @@ entities:
   aliases:
   - Hendrik Heinrich
   mention_count: 1
+- concept_id: npcs/hendriks_sippe
+  type: NPC
+  canonical_name: Hendriks Sippe
+  aliases: []
+  mention_count: 1
 - concept_id: npcs/herakles_raxxles
   type: NPC
   canonical_name: Herakles (Raxxles)
@@ -4705,6 +4619,11 @@ entities:
   canonical_name: Hexenmeister-Goblin
   aliases: []
   mention_count: 1
+- concept_id: npcs/hexenzirkel_der_nachtwaechterinnen
+  type: NPC
+  canonical_name: Hexenzirkel der Nachtwächterinnen
+  aliases: []
+  mention_count: 1
 - concept_id: npcs/horatio
   type: NPC
   canonical_name: Horatio
@@ -4713,6 +4632,11 @@ entities:
 - concept_id: npcs/hubert
   type: NPC
   canonical_name: Hubert
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/hydrid
+  type: NPC
+  canonical_name: Hydrid
   aliases: []
   mention_count: 1
 - concept_id: npcs/inaros
@@ -4739,11 +4663,6 @@ entities:
 - concept_id: npcs/jonathan
   type: NPC
   canonical_name: Jonathan
-  aliases: []
-  mention_count: 1
-- concept_id: npcs/kalos
-  type: NPC
-  canonical_name: Kalos
   aliases: []
   mention_count: 1
 - concept_id: npcs/kane
@@ -4815,6 +4734,11 @@ entities:
   canonical_name: Kronos
   aliases: []
   mention_count: 3
+- concept_id: npcs/kuatau
+  type: NPC
+  canonical_name: Kuatau
+  aliases: []
+  mention_count: 1
 - concept_id: npcs/kuatau_priester
   type: NPC
   canonical_name: Kuatau-Priester
@@ -4940,6 +4864,14 @@ entities:
   canonical_name: Lurk
   aliases: []
   mention_count: 1
+- concept_id: npcs/magier_von_belorus
+  type: NPC
+  canonical_name: Die Magier von Belorus
+  aliases:
+  - Belorus der Stille
+  - Belorus
+  mention_count: 7
+  important: true
 - concept_id: npcs/marktschreier
   type: NPC
   canonical_name: Marktschreier
@@ -5034,6 +4966,17 @@ entities:
   canonical_name: Ohoriaks-Anhängerin
   aliases: []
   mention_count: 1
+- concept_id: npcs/ordensbrueder
+  type: NPC
+  canonical_name: Ordensbrüder
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/organisation_der_kalos
+  type: NPC
+  canonical_name: Organisation der Kalos
+  aliases:
+  - Kalos
+  mention_count: 2
 - concept_id: npcs/orlanius_schwarzhorn
   type: NPC
   canonical_name: Orlanius Schwarzhorn
@@ -5166,6 +5109,16 @@ entities:
   canonical_name: Ser Eulenweiss
   aliases: []
   mention_count: 1
+- concept_id: npcs/seraphen
+  type: NPC
+  canonical_name: Seraph
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/seraphen_von_vorgotha
+  type: NPC
+  canonical_name: Seraphen von Vorgotha
+  aliases: []
+  mention_count: 1
 - concept_id: npcs/serrava
   type: NPC
   canonical_name: Serrava
@@ -5199,6 +5152,16 @@ entities:
   - Slix
   mention_count: 7
   important: true
+- concept_id: npcs/soeldner_des_hauptmanns_aaron
+  type: NPC
+  canonical_name: Söldner des Hauptmanns Aaron
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/soldaten_von_willauch
+  type: NPC
+  canonical_name: Soldaten von Willauch
+  aliases: []
+  mention_count: 1
 - concept_id: npcs/splitterkalb
   type: NPC
   canonical_name: Splitterkalb
@@ -5326,6 +5289,16 @@ entities:
   canonical_name: Valdemar der Goldene Ritter
   aliases: []
   mention_count: 1
+- concept_id: npcs/vampire_untote_von_voras
+  type: NPC
+  canonical_name: Vampire/Untote von Voras
+  aliases:
+  - Voras der Heilige
+  - Graf Voras der Heilige
+  - Voras
+  - Voras (Voras der Heilige / Voras der Schrecken)
+  mention_count: 6
+  important: true
 - concept_id: npcs/vasur
   type: NPC
   canonical_name: Vasur
@@ -5336,17 +5309,11 @@ entities:
   canonical_name: Venezia
   aliases: []
   mention_count: 1
-- concept_id: npcs/voras
+- concept_id: npcs/vorgultars_magier_assassinen
   type: NPC
-  canonical_name: Voras der Heilige
-  aliases:
-  - Voras
-  - Graf
-  - Voras der Heilige / der Schrecken
-  - Graf Voras der Heilige
-  - Voras (Voras der Heilige / Voras der Schrecken)
-  mention_count: 5
-  important: true
+  canonical_name: Vorgultars Magier-Assassinen
+  aliases: []
+  mention_count: 1
 - concept_id: npcs/wachmann
   type: NPC
   canonical_name: Wachmann

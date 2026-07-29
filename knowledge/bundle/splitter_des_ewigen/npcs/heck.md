@@ -9,7 +9,7 @@ timestamp: '2025-05-06T00:00:00Z'
 id: NPC_HECK
 ---
 
-Die Heck ist eine Hexe, die von den Gnollen als Autorität anerkannt wird. [Lindo Laut](/characters/lindo_laut.md) verwandelt sich in sie, um drei [Gnolle](/factions/gnolle.md) abzulenken und sie in die [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) zu befehligen. Die Gruppe fragt später, ob die Heck mit den Angriffen in Verbindung steht, aber die Überlebenden können keinen Zusammenhang bestätigen.
+Die Heck ist eine Hexe, die von den Gnollen als Autorität anerkannt wird. [Lindo Laut](/characters/lindo_laut.md) verwandelt sich in sie, um drei [Gnolle](/npcs/gnolle.md) abzulenken und sie in die [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) zu befehligen. Die Gruppe fragt später, ob die Heck mit den Angriffen in Verbindung steht, aber die Überlebenden können keinen Zusammenhang bestätigen.
 
 # Belege
 

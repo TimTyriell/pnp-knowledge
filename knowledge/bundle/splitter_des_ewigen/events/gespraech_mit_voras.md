@@ -10,7 +10,7 @@ id: EVENT_GESPRAECH_MIT_VORAS
 subtype: Verhandlung
 ---
 
-Im Anwesen offenbart [Voras](/npcs/voras.md) nach einem anfänglichen Wutausbruch seinen wahren Plan: Zusammen mit Nox hat er die Ringe geschmiedet und einen Weg nach [Abyssalis](/domains/splitterwelt.md) vorbereitet. Er klagt die Gruppe für den Verlust [Breskas](/locations/breska.md) an, wird aber durch [Lindo Lauts](/characters/lindo_laut.md) Rede besänftigt. Lunara erfährt die Folgen ihres Buchgeschenks. Voras Entschuldigung und das Angebot zum Testlauf ebnen den weiteren Weg.
+Im Anwesen offenbart [Voras](/npcs/vampire_untote_von_voras.md) nach einem anfänglichen Wutausbruch seinen wahren Plan: Zusammen mit Nox hat er die Ringe geschmiedet und einen Weg nach [Abyssalis](/domains/splitterwelt.md) vorbereitet. Er klagt die Gruppe für den Verlust [Breskas](/locations/breska.md) an, wird aber durch [Lindo Lauts](/characters/lindo_laut.md) Rede besänftigt. Lunara erfährt die Folgen ihres Buchgeschenks. Voras Entschuldigung und das Angebot zum Testlauf ebnen den weiteren Weg.
 
 # Belege
 

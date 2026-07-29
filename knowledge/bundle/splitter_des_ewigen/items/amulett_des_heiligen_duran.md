@@ -1,8 +1,8 @@
 ---
 type: Item
 title: Amulett des Heiligen Duran
-description: Das Amulett des Heiligen Duran, auch als *Amulett des Duran* oder *Lindo
-  Lauts Amulett* bekannt, ist ein mächtiges magisches Artefakt in Fo…
+description: Das Amulett des Heiligen Duran (auch *Lindo Lauts Amulett* oder *Lindos
+  Amulett-Stimmen* genannt) ist ein mächtiges magisches Artefakt, das…
 tags:
 - items
 timestamp: '2025-09-02T00:00:00Z'
@@ -11,29 +11,31 @@ subtype: Artefakt
 aliases:
 - Amulett des Duran
 - Lindo Lauts Amulett
+- Lindos Amulett-Stimmen
 ---
 
 # Amulett des Heiligen Duran
 
-Das **Amulett des Heiligen Duran**, auch als *Amulett des Duran* oder *Lindo Lauts Amulett* bekannt, ist ein mächtiges magisches Artefakt in Form eines Amuletts, das ursprünglich dem Gott Duran gehörte. Es wird von [Auranil](/npcs/auranil.md) aufbewahrt und später dem Magier [Lindo Laut](/characters/lindo_laut.md) übergeben. Das Amulett verleiht seinem Träger übernatürliche Zauberkraft und ein Gefühl von Leichtigkeit, unterliegt aber im Lauf der Kampagne einer fundamentalen Veränderung, die es zum Schauplatz eines Konflikts zwischen göttlicher Macht und Korruption macht.
+Das **Amulett des Heiligen Duran** (auch *Lindo Lauts Amulett* oder *Lindos Amulett-Stimmen* genannt) ist ein mächtiges magisches Artefakt, das ursprünglich dem Heiligen Duran gehörte und später von [Lindo Laut](/characters/lindo_laut.md) getragen wurde. Es verleiht seinem Träger außergewöhnliche Zauberkraft, birgt jedoch die Gefahr der Korrumpierung durch die darin gefangenen Seelen oder göttlichen Fragmente. Das Amulett spielte eine zentrale Rolle im Konflikt zwischen den Göttern und unterlag im Laufe der Zeit mehrfachen Veränderungen.
 
-## Herkunft und ursprüngliche Funktion
+## Göttlicher Ursprung und erste Nutzung
 
-Das Amulett stammt vom Gott [Duran](/deities/heiliger_duran.md) und strahlt in seinem ursprünglichen Zustand göttliche Macht aus. Auranil übergibt es Lindo Laut, damit dieser damit ein Portal zum Schiff erschaffen kann. Unter dem Einfluss des Amuletts gelingt es Lindo, einen Zauber weit über sein normales Vermögen zu wirken; er empfindet dabei ein Gefühl von Leichtigkeit und enormer Kraft. In dieser Phase wirkt das Amulett als reiner Kanal göttlicher Energie und ermöglicht Handlungen, die der Träger allein nicht vollbringen könnte. [1]
+Das Amulett stammt von [Duran](/deities/heiliger_duran.md), der es dem Heiligen Duran hinterließ. Es wurde von [Auranil](/npcs/auranil.md) aufbewahrt und Lindo Laut übergeben, der damit unter anderem ein Portal erschuf. Beim Tragen verspürte Lindo ein Gefühl von Leichtigkeit und eine enorme Steigerung seiner Zauberkraft, sodass er einen Zauber weit über sein normales Vermögen wirken konnte. [1]
 
-## Korrumpierung und Gefangenschaft der Seelen
+## Korruption und die gefangenen Seelen
 
-Nach einer Seelenprüfung verändert sich das Amulett grundlegend. Ein dunkelroter Punkt erscheint auf seiner Oberfläche, es beginnt zu vibrieren, und die Stimmen von vier Kultisten sind darin gefangen. Der Magier [Orlanius](/npcs/orlanius_schwarzhorn.md) warnt Lindo, dass die eingeschlossenen Seelen zwar Macht verleihen, aber Lindos eigene Seele verändern würden, wenn er sie nutze; Duran habe seinen Segen entzogen. [2]
+Nach einer Seelenprüfung veränderte sich das Amulett: Ein dunkelroter Punkt erschien, es begann zu vibrieren, und die Stimmen von vier Kultisten waren darin gefangen. [2] Der Magier [Orlanius](/npcs/orlanius_schwarzhorn.md) warnte, dass die Seelen dem Träger Macht verleihen, aber auch Lindos eigene Seele verändern würden; Duran selbst habe seinen Segen entzogen. [2]
 
-Das Amulett beherbergt nun vier Entitäten. Eine von ihnen wird als [Kol Meref](/deities/kollmereth.md) identifiziert. Es zieht Lindo zu einem oberen Schrein und verleiht ihm dabei ein Gefühl von Wärme und Freiheit. Nachdem Lindo eine Kerze auspustet, wird das Amulett kalt und still – ein roter Strahl schießt daraus hervor, und drei Stimmen lachen und versuchen Lindo zu verführen. Das Artefakt wird damit zum zentralen Objekt des Konflikts zwischen den Göttern, dessen Einfluss ambivalent und gefährlich ist. [3]
+Im weiteren Verlauf offenbarte das Amulett vier Entitäten, von denen eine als [Kol Meref](/deities/kollmereth.md) identifiziert wurde. [3] Es zog Lindo zu einem oberen Schrein und verlieh ihm Wärme und Freiheit. Nach einem rituellen Auspusten einer Kerze wurde es kalt und still, ein roter Strahl schoss hervor, und drei Stimmen lachten und versuchten Lindo zu verführen. [3] Später wurden die Stimmen als Fragmente alter Götter erkannt, darunter [Ezua](/deities/ezua_alter_gott_im_amulett.md) und eine Feuerpräsenz. Sie kommunizierten mit Lindo, beeinflussten sein Verhalten – etwa indem sie ihn drängten, [Hendrik](/npcs/hendrik.md) zu demütigen – und verlangten am Altar ein Opfer, um ihre Macht zu steigern. [4]
 
-## Zustand nach der Zerstörung der Seelen
+## Die Zerstörung der Seelen und der Verlust der Macht
 
-Im weiteren Verlauf beherbergt das Amulett die Seelen von [Esua](/npcs/esua.md), [Citral](/npcs/citral.md) und [Tyrex](/deities/thyrex.md) und dient als Katalysator für Lindos innere Zerrissenheit. Nachdem die Seelen in einem finalen Akt zerstört werden, fühlt sich das Amulett für Lindo leer und wertlos an – es verliert seine gesamte magische Aura und wird zu einem bloßen Gegenstand ohne göttliche oder korrupte Macht. [4]
+In einer späteren Phase beherbergte das Amulett die Seelen von Esua, [Citral](/npcs/citral.md) und [Tyrex](/deities/thyrex.md). Es wirkte als Katalysator für Lindos innere Zerrissenheit. Nachdem diese Seelen zerstört waren, fühlte sich das Amulett für Lindo leer und wertlos an. [5] Die ursprüngliche göttliche Macht war damit offenbar erloschen.
 
-# Belege
+## Belege
 
-1. Session 2025-05-06 @ 01:26:28 (https://www.youtube.com/watch?v=e0v6AFGd4mE)
-2. Session 2025-06-25 @ 01:29:17 (https://www.youtube.com/watch?v=tpkO9uGw6-I)
-3. Session 2025-07-09 @ 00:08:15 (https://www.youtube.com/watch?v=XOnHa6CmDbo)
-4. Session 2025-09-02 @ 02:16:27 (https://www.youtube.com/watch?v=TLZOH7TlGhk)
+1. Session 2025-05-06 @ 01:26:28 – [YouTube](https://www.youtube.com/watch?v=e0v6AFGd4mE)  
+2. Session 2025-06-25 @ 01:29:17 – [YouTube](https://www.youtube.com/watch?v=tpkO9uGw6-I)  
+3. Session 2025-07-09 @ 00:08:15 – [YouTube](https://www.youtube.com/watch?v=XOnHa6CmDbo)  
+4. Session 2025-08-12 @ 01:44:57 – [YouTube](https://www.youtube.com/watch?v=vHIjua0BZ9Y)  
+5. Session 2025-09-02 @ 02:16:27 – [YouTube](https://www.youtube.com/watch?v=TLZOH7TlGhk)

@@ -17,7 +17,7 @@ Kriegs primäre Rolle im Kampf ist die eines Nah- und Fernkämpfers. Seine Waffe
 
 ## Persönlichkeit und Auftreten
 
-Krieg begegnet anderen Charakteren mit einer sarkastischen und selbstbewussten Art. Ein älterer Paladin verspottet ihn einst als „Meisterstratege“ – ein Titel, den Krieg nicht ablehnt, sondern stolz annimmt und fortan für sich beansprucht. Dieser Trotz und sein gelassener Umgang mit Spott unterstreichen sein Selbstvertrauen. Er zeigt keine Scheu vor Konfrontation: Als ihm [Kalos](/npcs/kalos.md) ein Angebot unterbreitet, lehnt er es ruhig, aber bestimmt ab. Sein Glaube an den Teamgeist und an die Stärke der Goblins prägt seine Entscheidungen und macht ihn zu einem entschlossenen, aber nicht blind-aggressiven Mitglied der Gruppe.
+Krieg begegnet anderen Charakteren mit einer sarkastischen und selbstbewussten Art. Ein älterer Paladin verspottet ihn einst als „Meisterstratege“ – ein Titel, den Krieg nicht ablehnt, sondern stolz annimmt und fortan für sich beansprucht. Dieser Trotz und sein gelassener Umgang mit Spott unterstreichen sein Selbstvertrauen. Er zeigt keine Scheu vor Konfrontation: Als ihm [Kalos](/npcs/organisation_der_kalos.md) ein Angebot unterbreitet, lehnt er es ruhig, aber bestimmt ab. Sein Glaube an den Teamgeist und an die Stärke der Goblins prägt seine Entscheidungen und macht ihn zu einem entschlossenen, aber nicht blind-aggressiven Mitglied der Gruppe.
 
 # Belege
 

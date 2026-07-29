@@ -10,7 +10,7 @@ id: LOC_HAUS_DES_MAGIERS_LENDRAS
 subtype: Gebäude
 ---
 
-Das Haus des Magiers [Lendras](/npcs/lendras.md) in [Gemata](/locations/gemata.md) wird während der Schlacht von einer rabenartigen Kreatur und einem [Grottenschrat](/npcs/grottenschrat.md) angegriffen. Die Gruppe eilt zur Rettung und kämpft dort.
+Das Haus des Magiers [Lendras](/npcs/lendras.md) in [Gemata](/locations/gemata.md) wird während der Schlacht von einer rabenartigen Kreatur und einem [Grottenschrat](/npcs/grottenschrate.md) angegriffen. Die Gruppe eilt zur Rettung und kämpft dort.
 
 # Belege
 

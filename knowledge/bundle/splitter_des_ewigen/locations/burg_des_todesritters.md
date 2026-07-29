@@ -10,7 +10,7 @@ id: LOC_BURG_DES_TODESRITTERS
 subtype: Festung
 ---
 
-Das Hauptverlies der Session: eine alte, aber noch intakte Burganlage mit Statuen von [Bodrak](/deities/bodrak.md) und der Hack, einer magisch verriegelten Tür und einem Audienzsaal mit aufgebahrten Schädeln. Im Obergeschoss befindet sich [Belorus](/npcs/belorus.md)’ Gemach mit einem [Tagebuch](/items/tagebuch.md). Die Burg wird von untoten Bogenschützen bewacht und verfügt über einen Mechanismus, der bei Belorus’ Rückzug eine ganze Armee herbeiruft.
+Das Hauptverlies der Session: eine alte, aber noch intakte Burganlage mit Statuen von [Bodrak](/deities/bodrak.md) und der Hack, einer magisch verriegelten Tür und einem Audienzsaal mit aufgebahrten Schädeln. Im Obergeschoss befindet sich [Belorus](/npcs/magier_von_belorus.md)’ Gemach mit einem [Tagebuch](/items/tagebuch.md). Die Burg wird von untoten Bogenschützen bewacht und verfügt über einen Mechanismus, der bei Belorus’ Rückzug eine ganze Armee herbeiruft.
 
 # Belege
 

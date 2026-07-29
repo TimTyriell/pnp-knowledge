@@ -2,7 +2,7 @@
 type: Conflict
 title: 'Offener Konflikt: Nyrella'
 description: Widersprüchliche Belege — menschliche Entscheidung nötig.
-timestamp: '2026-07-27T21:47:46+00:00'
+timestamp: '2026-07-29T08:41:46+00:00'
 id: CONFLICT_CHAR_NYRELLA
 status: open
 concept: characters/nyrella

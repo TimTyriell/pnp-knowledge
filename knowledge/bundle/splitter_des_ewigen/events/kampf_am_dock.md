@@ -10,7 +10,7 @@ id: EVENT_KAMPF_AM_DOCK
 subtype: Kampf
 ---
 
-Das erste Gefecht gegen die [Kuatau](/factions/kuatau.md) am Hafen, bei dem der Kapitän und [Miaomani](/npcs/miaomani.md) gerettet werden. Die Helden zeigen ihre Kampffertigkeiten und nehmen zwei Kuatau gefangen, was die Grundlage für die späteren Verhandlungen legt.
+Das erste Gefecht gegen die [Kuatau](/npcs/kuatau.md) am Hafen, bei dem der Kapitän und [Miaomani](/npcs/miaomani.md) gerettet werden. Die Helden zeigen ihre Kampffertigkeiten und nehmen zwei Kuatau gefangen, was die Grundlage für die späteren Verhandlungen legt.
 
 # Belege
 

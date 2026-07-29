@@ -9,7 +9,7 @@ timestamp: '2025-04-15T00:00:00Z'
 id: NPC_BUGBAEREN_WACHEN
 ---
 
-Die Bugbären (als [Grottenschrate](/factions/grottenschrate.md) oder Fellbiester bezeichnet) bewachen die Burgruine. Sie lauern mit Armbrüsten auf den Mauern und greifen die Gruppe aus dem Hinterhalt an. Einige werden von den Helden getötet, andere sterben durch göttliches Niesen. Sie waren etwa sechs bis sieben an der Zahl.
+Die Bugbären (als [Grottenschrate](/npcs/grottenschrate.md) oder Fellbiester bezeichnet) bewachen die Burgruine. Sie lauern mit Armbrüsten auf den Mauern und greifen die Gruppe aus dem Hinterhalt an. Einige werden von den Helden getötet, andere sterben durch göttliches Niesen. Sie waren etwa sechs bis sieben an der Zahl.
 
 # Belege
 

@@ -10,7 +10,7 @@ id: ITEM_DAS_BUCH_VON_VASUL
 subtype: Schriftstück
 ---
 
-Ein altes Buch mit Wissen über [Vasul](/deities/vharzul.md) und seine Splitter. [Lindo Laut](/characters/lindo_laut.md) wirft es in der Verhandlung vor [Belorus](/npcs/belorus.md), um zu beweisen, dass sie nicht auf Vasuls Seite stehen. Es wird enthüllt, dass die Gruppe das Siegel des Buches brach, was zur Zerstörung von Col Mereth führte – ein Schritt in [Leandras](/npcs/lendras.md) Plan.
+Ein altes Buch mit Wissen über [Vasul](/deities/vharzul.md) und seine Splitter. [Lindo Laut](/characters/lindo_laut.md) wirft es in der Verhandlung vor [Belorus](/npcs/magier_von_belorus.md), um zu beweisen, dass sie nicht auf Vasuls Seite stehen. Es wird enthüllt, dass die Gruppe das Siegel des Buches brach, was zur Zerstörung von Col Mereth führte – ein Schritt in [Leandras](/npcs/lendras.md) Plan.
 
 # Belege
 

@@ -43,7 +43,7 @@ Tindrael ist durchgehend loyal, zunächst gegenüber dem Bürgermeister und Bres
 
 - **Bertie, die Ziege**: Tindrael ist der Besitzer der schwer zu bändigenden Ziege. Valerias Erfolg, Bertie einzufangen und zu reiten, ist der Auslöser für sein Wohlwollen gegenüber der Gruppe.
 - **Bürgermeister von Breska**: Tindrael war einst die rechte Hand des Bürgermeisters [3, 00:40:29]. Seine Position als „zweite Autoritätsperson“ [1, 00:27:17] leitet sich aus diesem Verhältnis ab. Der Bürgermeister wurde später „abgeschlachtet und ermordet“ [3, 00:40:29].
-- **[Voras](/npcs/voras.md)**: Nach dem Untergang Breskas tritt Tindrael in den Dienst des Grafen, zunächst als dessen Adjutant, später als untoter Diener in der Gruft. Die Beziehung scheint auf unbedingter Loyalität zu basieren; Tindrael hat sich „nicht aus den Diensten von Voros wegbewegt“ [3, 00:39:58].
+- **[Voras](/npcs/vampire_untote_von_voras.md)**: Nach dem Untergang Breskas tritt Tindrael in den Dienst des Grafen, zunächst als dessen Adjutant, später als untoter Diener in der Gruft. Die Beziehung scheint auf unbedingter Loyalität zu basieren; Tindrael hat sich „nicht aus den Diensten von Voros wegbewegt“ [3, 00:39:58].
 - **Kerl**: Einer der beiden Wächter, den die Helden vor dem Bürgermeisterbesuch treffen. Tindrael bestätigt, dass Kerl – zusammen mit ihm selbst – den Überfall auf Breska überlebt hat.
 - **Die Helden**: Zu Valeria und Rotunas baut Tindrael rasch ein Vertrauensverhältnis auf. Dodo erkennt er selbst nach langer Zeit noch und fragt gezielt nach den übrigen Gefährten, namentlich Cookie und Lindo Laut.
 

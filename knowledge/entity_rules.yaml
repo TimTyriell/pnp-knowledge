@@ -197,7 +197,7 @@ merge:
   geister-doppelgänger von rotunas: npcs/geist_von_rotunas
   # Belorus the man, distinct from his mages and his army.
   belorus: npcs/belorus
-  die magier von belorus: factions/magier_von_belorus
+  die magier von belorus: npcs/magier_von_belorus
   armee von belorus: factions/belorus_untotenarmee
   # One place, three nodes: the leading article made its own concept and one
   # session typed it as a Location. Folding by name also fixes the type,
@@ -249,6 +249,44 @@ merge:
   goblin-götter: deities/goblingoetter
   goblin götter: deities/goblingoetter
 
+  # --- What counts as a Faction ---------------------------------------------
+  # GM ruling 2026-07-27: a Faction is a power that acts beyond one town and
+  # one session — the guilds, the Silberkerne, Belorus' army, the cults, the
+  # dwarves. A handful of mages, a village's inhabitants or one session's
+  # gnoll pack is not a faction; it is a collective character.
+  #
+  # These keep their node and their text and only stop being Factions: a merge
+  # into another directory adopts that directory's type. Nothing is lost.
+  brandau-widerstand: npcs/brandau_widerstand
+  dämonen (abyssalis): npcs/daemonen_abyssalis
+  die champions der arena: npcs/die_champions_der_arena
+  die schmuggler: npcs/die_schmuggler
+  dorfbewohner von gemata: npcs/dorfbewohner_von_gemata
+  freibeuter: npcs/freibeuter
+  gnolle: npcs/gnolle
+  grottenschrate: npcs/grottenschrate
+  halblingsdorfbewohner: npcs/halblingsdorfbewohner
+  hendriks sippe: npcs/hendriks_sippe
+  hexenzirkel der nachtwächterinnen: npcs/hexenzirkel_der_nachtwaechterinnen
+  hydrid: npcs/hydrid
+  kuatau: npcs/kuatau
+  ordensbrüder: npcs/ordensbrueder
+  organisation der kalos: npcs/organisation_der_kalos
+  seraphen von vorgotha: npcs/seraphen_von_vorgotha
+  söldner des hauptmanns aaron: npcs/soeldner_des_hauptmanns_aaron
+  soldaten von willauch: npcs/soldaten_von_willauch
+  vampire/untote von voras: npcs/vampire_untote_von_voras
+  vorgultars magier-assassinen: npcs/vorgultars_magier_assassinen
+
+  # Every goblin band is the same people seen in a different place.
+  goblin-armee: factions/goblins
+  goblins des anwesens: factions/goblins
+  die goblins der mine: factions/goblins
+  flüchtlinge (gruppe um roland): factions/fluechtlinge_aus_breska
+  # GM ruling: the voices are Vhar'Zul's souls, heard through the amulet —
+  # they belong to the amulet's entry and to the god, not to a group of their own.
+  lindos amulett-stimmen: items/amulett_des_heiligen_duran
+
   # One cult per god instead of one per phrasing. The cult stays a Faction of
   # its own — it is not the god — but "Anhänger X" and "Kultisten des X" are
   # the same body of worshippers.
@@ -258,7 +296,7 @@ merge:
   kultisten von varsurs: factions/kult_des_vharzul
   anhänger vorgulras: factions/anhaenger_vorgultars
   anhänger von volgulta / wargulta: factions/anhaenger_vorgultars
-  gnoll-horde: factions/gnolle
+  gnoll-horde: npcs/gnolle
 
   # --- Whisper variants, people and places ---------------------------------
   # Confirmed against the notes: "Lanra: eine hagere, verhutzelte Hexe (Hag),
@@ -332,6 +370,9 @@ never_merge:
 # Two unrelated men called Hans (GM ruling); the fuzzy pass would refold them.
 - - npcs/hans_soldat_aus_breska
   - npcs/hans_wirt_zum_gruenen_sichelmond
+# Two different Adeligas (GM ruling); the fuzzy pass would refold them.
+- - npcs/adeliga_vom_haus_des_loewen
+  - npcs/adeliga_der_eulenseraph
 # Names that sit just under the auto-merge threshold but are different people.
 # Reviewed 2026-07-27 against their notes; locked so no later spelling drift
 # pushes a pair over 0.9 and folds them silently.
@@ -370,6 +411,22 @@ split:
 - name: verhandlung mit holodarn
   session: '2026-05-13'
   concept_id: events/verhandlung_mit_dem_diener_huludans
+# GM ruling: two different women called Adeliga — the proprietor of the Haus des
+# Löwen in Willauch, and an owl seraph met in the Ringtal. The extractor read
+# "elegant businesswoman" and "giant celestial paladin" as one contradictory
+# person; they were never the same.
+- name: adeliga
+  session: '2026-03-03'
+  concept_id: npcs/adeliga_vom_haus_des_loewen
+- name: adelia
+  session: '2026-03-03'
+  concept_id: npcs/adeliga_vom_haus_des_loewen
+- name: adeliga
+  session: '2026-06-04'
+  concept_id: npcs/adeliga_der_eulenseraph
+- name: adelia
+  session: '2026-06-04'
+  concept_id: npcs/adeliga_der_eulenseraph
 # Two unrelated men called Hans: the soldier who carries Belorus' sealed message
 # and the tiefling innkeeper of "Zum grünen Sichelmond".
 - name: hans
@@ -469,6 +526,11 @@ canonical_name:
   # GM ruling: the canonical spelling is Willauch. The id stays 'willau' —
   # ids are identity, names are display, and the wiki URL must not move.
   locations/willau: Willauch
+  npcs/adeliga_vom_haus_des_loewen: Adeliga (Haus des Löwen)
+  npcs/adeliga_der_eulenseraph: Adeliga (Eulen-Seraph)
+  # The transcripts spell it Brechka, Bresca, Breschka and Reska; the campaign
+  # spelling is Breska, which is also the concept id.
+  locations/breska: Breska
   npcs/hans_soldat_aus_breska: Hans (Soldat aus Breska)
   npcs/hans_wirt_zum_gruenen_sichelmond: Hans (Wirt zum grünen Sichelmond)
   # GM ruling: Huludan is the Titan; the being that serves him was never named

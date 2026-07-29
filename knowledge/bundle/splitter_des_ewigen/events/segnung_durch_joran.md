@@ -10,7 +10,7 @@ id: EVENT_SEGNUNG_DURCH_JORAN
 subtype: Ritual
 ---
 
-Ein Ritual, bei dem [Adelia](/npcs/adeliga.md) [Sange](/characters/sange.md) im Namen Jorans segnet. Sange erlebt eine Vision, Licht und eine tiefe Verbundenheit. Er erhält einen Timer mit einem Strich, der seine Bindung zu Joran anzeigt. Die anderen sehen ihn leuchten und hören ein Gebet.
+Ein Ritual, bei dem [Adelia](/npcs/adeliga_der_eulenseraph.md) [Sange](/characters/sange.md) im Namen Jorans segnet. Sange erlebt eine Vision, Licht und eine tiefe Verbundenheit. Er erhält einen Timer mit einem Strich, der seine Bindung zu Joran anzeigt. Die anderen sehen ihn leuchten und hören ein Gebet.
 
 # Belege
 

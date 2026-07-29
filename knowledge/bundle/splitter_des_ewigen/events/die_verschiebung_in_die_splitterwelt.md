@@ -10,7 +10,7 @@ id: EVENT_DIE_VERSCHIEBUNG_IN_DIE_SPLITTERWELT
 subtype: Ritual
 ---
 
-Lunaras gewaltige arkane Handlung, bei der sie mit rotunischer Unterstützung die Grenze zur [Splitterwelt](/domains/splitterwelt.md) aufreißt. Die Umgebung gefriert, die Untoten erstarren, und sie lösen sich auf. Dieser Moment bricht [Belorus](/npcs/belorus.md)’ Angriffslust und zwingt ihn zum Stillstand, wodurch die Verhandlung möglich wird.
+Lunaras gewaltige arkane Handlung, bei der sie mit rotunischer Unterstützung die Grenze zur [Splitterwelt](/domains/splitterwelt.md) aufreißt. Die Umgebung gefriert, die Untoten erstarren, und sie lösen sich auf. Dieser Moment bricht [Belorus](/npcs/magier_von_belorus.md)’ Angriffslust und zwingt ihn zum Stillstand, wodurch die Verhandlung möglich wird.
 
 # Belege
 

@@ -12,7 +12,7 @@ aliases:
 - Die Mine
 ---
 
-Eine aufgegebene [Mine](/locations/kristallmine.md) im Norden der Farm, laut den Halblingen erschöpft. Die [Gnolle](/factions/gnolle.md) graben einen Tunnel hinein, um einen Überraschungsangriff zu starten. Der Eingang wird bereits von zwei Wachen gesichert; die Gruppe soll sie säubern und den Durchgang blockieren.
+Eine aufgegebene [Mine](/locations/kristallmine.md) im Norden der Farm, laut den Halblingen erschöpft. Die [Gnolle](/npcs/gnolle.md) graben einen Tunnel hinein, um einen Überraschungsangriff zu starten. Der Eingang wird bereits von zwei Wachen gesichert; die Gruppe soll sie säubern und den Durchgang blockieren.
 
 # Belege
 

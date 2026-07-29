@@ -10,7 +10,7 @@ id: EVENT_TOD_VON_VORAS_UND_SANDRO
 subtype: Tod
 ---
 
-[Nerash](/deities/nerash.md) erscheint und tötet [Sandro](/npcs/sandro.md) mit einem Schlag und [Voras](/npcs/voras.md), indem er ihn durchtrennt und in die Luft schleudert.
+[Nerash](/deities/nerash.md) erscheint und tötet [Sandro](/npcs/sandro.md) mit einem Schlag und [Voras](/npcs/vampire_untote_von_voras.md), indem er ihn durchtrennt und in die Luft schleudert.
 
 # Belege
 

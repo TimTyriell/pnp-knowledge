@@ -10,7 +10,7 @@ id: LOC_PORTAL_IN_VORAS_ANWESEN
 subtype: Sonstiges
 ---
 
-Ein von [Voras](/npcs/voras.md) und Nox vorbereitetes magisches Tor, das konstant in die [Splitterwelt](/domains/splitterwelt.md) geöffnet bleibt. Es wird von [Sandro](/npcs/sandro.md) bewacht und dient als Teststrecke und zukünftiger Zugang nach Abyssalis. Die Gruppe benutzt es für ihren Probeausflug.
+Ein von [Voras](/npcs/vampire_untote_von_voras.md) und Nox vorbereitetes magisches Tor, das konstant in die [Splitterwelt](/domains/splitterwelt.md) geöffnet bleibt. Es wird von [Sandro](/npcs/sandro.md) bewacht und dient als Teststrecke und zukünftiger Zugang nach Abyssalis. Die Gruppe benutzt es für ihren Probeausflug.
 
 # Belege
 

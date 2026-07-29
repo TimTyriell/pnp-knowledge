@@ -10,7 +10,7 @@ id: ITEM_SCHUTZZAUBER_KRISTALL
 subtype: Artefakt
 ---
 
-Ein kleiner, glimmender Kristall, der in der [Schmugglerbasis](/locations/schmugglerbasis.md) gefunden wird und vor Gutem und Böse schützen soll. [Cookie](/characters/cookie.md) aktiviert ihn in höchster Not während des Kampfes gegen [Belorus](/npcs/belorus.md)’ [Untote](/factions/belorus_untotenarmee.md); eine heilige Welle geht von ihm aus und lässt alle untoten Diener im Umkreis sofort vergehen. Er bietet wohl auch einen anhaltenden Schutzeffekt in einem Radius, der die Untoten fernhält. Die Aktivierung hat Belorus so erzürnt, dass er den Kampf abbrach.
+Ein kleiner, glimmender Kristall, der in der [Schmugglerbasis](/locations/schmugglerbasis.md) gefunden wird und vor Gutem und Böse schützen soll. [Cookie](/characters/cookie.md) aktiviert ihn in höchster Not während des Kampfes gegen [Belorus](/npcs/magier_von_belorus.md)’ [Untote](/factions/belorus_untotenarmee.md); eine heilige Welle geht von ihm aus und lässt alle untoten Diener im Umkreis sofort vergehen. Er bietet wohl auch einen anhaltenden Schutzeffekt in einem Radius, der die Untoten fernhält. Die Aktivierung hat Belorus so erzürnt, dass er den Kampf abbrach.
 
 # Belege
 

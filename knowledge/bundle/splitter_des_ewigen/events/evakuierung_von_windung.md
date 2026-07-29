@@ -10,7 +10,7 @@ id: EVENT_EVAKUIERUNG_VON_WINDUNG
 subtype: Reise
 ---
 
-Die überlebenden Dorfbewohner besteigen das Schiff und verlassen mit den Helden die Insel. Die [Kuatau](/factions/kuatau.md) bleiben zurück und übernehmen [Windung](/locations/windung.md) vorübergehend. Das [Ende](/locations/ende.md) ist für alle Beteiligten unbefriedigend und wirft viele Fragen auf.
+Die überlebenden Dorfbewohner besteigen das Schiff und verlassen mit den Helden die Insel. Die [Kuatau](/npcs/kuatau.md) bleiben zurück und übernehmen [Windung](/locations/windung.md) vorübergehend. Das [Ende](/locations/ende.md) ist für alle Beteiligten unbefriedigend und wirft viele Fragen auf.
 
 # Belege
 

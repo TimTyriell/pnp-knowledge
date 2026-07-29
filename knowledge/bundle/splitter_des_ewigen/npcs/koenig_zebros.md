@@ -33,7 +33,7 @@ Das Schwert Zebrosia ist das letzte sichtbare Überbleibsel seiner Familie. Es b
 
 ## Beziehungen und Verbindungen
 
-- **General [Belorus](/npcs/belorus.md):** War der oberste General unter Zebros und dient ihm offenbar noch immer, "auf untote Weise". Ein von Zebros geschriebener Brief deutet auf ein angespanntes Verhältnis hin: "Ich habe das Gefühl, mein oberster General hat ein Auge darauf geworfen." Zebros misstraute Belorus offenbar so sehr, dass er den wertvollen Gegenstand lieber extern in Steinbachtal verstecken ließ.
+- **General [Belorus](/npcs/magier_von_belorus.md):** War der oberste General unter Zebros und dient ihm offenbar noch immer, "auf untote Weise". Ein von Zebros geschriebener Brief deutet auf ein angespanntes Verhältnis hin: "Ich habe das Gefühl, mein oberster General hat ein Auge darauf geworfen." Zebros misstraute Belorus offenbar so sehr, dass er den wertvollen Gegenstand lieber extern in Steinbachtal verstecken ließ.
 
 - **Bürgermeister von Steinbachtal:** Eine historische Verbindung bestand zum damaligen Bürgermeister des Ortes. Zebros vertraute diesem offenbar genug, um ihm einen wichtigen Gegenstand zur Aufbewahrung anzuvertrauen. Dies erklärt, warum das abgelegene Steinbachtal "recht gut betucht ist, obwohl die so abseits von der restlichen Welt sind."
 
@@ -67,7 +67,7 @@ Jahrhunderte später existieren physische Überreste von Zebros' Herrschaft: sei
 
 - **Die Einsturzursache:** War der Einsturz der Bergspitze ein natürliches Ereignis, oder steckten Feinde – vielleicht die neuen Götter selbst – dahinter?
 
-- **Belorus' Treue:** Dient [Belorus](/npcs/belorus.md) dem toten König aus freiem Willen, oder wurde er durch einen Fluch an seine Pflicht gebunden?
+- **Belorus' Treue:** Dient [Belorus](/npcs/magier_von_belorus.md) dem toten König aus freiem Willen, oder wurde er durch einen Fluch an seine Pflicht gebunden?
 
 - **Das Schwert der Göttlichkeitsspaltung:** Für wen oder was wurde Zebrosia ursprünglich geschmiedet? War Zebros selbst in den "großen Kampf" gegen die neuen Götter verwickelt?
 

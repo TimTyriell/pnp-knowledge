@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Hans (Soldat aus Breska)
-description: Hans ist ein Soldat aus der Kleinstadt Breska, der im Dienst des Adelshauses
-  Belorus steht. Die Gruppe begegnet ihm in zwei Szenen, die zus…
+description: Hans war ein Soldat aus dem Dorf Breska, der im Auftrag von Belorus eine
+  versiegelte Botschaft überbrachte. Er trat in zwei Begegnungen in…
 tags:
 - npcs
 timestamp: '2026-01-13T00:00:00Z'
@@ -12,28 +12,19 @@ aliases:
 - Soldat aus Breska
 ---
 
-### Hans (Soldat aus Breska)
+# Hans (Soldat aus Breska)
 
-Hans ist ein Soldat aus der Kleinstadt Breska, der im Dienst des Adelshauses Belorus steht. Die Gruppe begegnet ihm in zwei Szenen, die zusammen ein widersprüchliches Bild von Leben, Tod und Wiederkehr zeichnen: Einmal stirbt er an grünem Erbrochenem und wird von Lunara wiederbelebt; ein anderes Mal überbringt er eine versiegelte Botschaft und beschwört panisch einen Dreadknight herbei. Gemeinsam ist all seinen Auftritten eine tiefe Verunsicherung und die obsessive Sorge, dass eine bestimmte Nachricht nicht nach Willauch gelangen darf.
+Hans war ein Soldat aus dem Dorf [Breska](/locations/breska.md), der im Auftrag von [Belorus](/npcs/magier_von_belorus.md) eine versiegelte Botschaft überbrachte. Er trat in zwei Begegnungen in Erscheinung, die von Trauma, Panik und einer Wandlung von Verwirrung zu kurzzeitiger Entschlossenheit geprägt waren. Er starb mindestens zweimal und wurde einmal durch [Lunara](/characters/lunara_velora.md) wiederbelebt; seine letzten Worte galten einer eindringlichen Warnung.
 
-#### Rolle und Mission
+## Überbringer der Botschaft
 
-Hans war der Bote des Kommandanten von Breska, der eine versiegelte Schriftrolle von Belorus empfangen hatte. In der ersten Begegnung (Session 2026-01-06) erscheint er verwirrt und traumatisiert, spricht von einem verlorenen wichtigen Befehl und einem Festmahl, das ihn krank machte. Nach seiner Wiederbelebung führt er die Gruppe zur Leiche seines Kommandanten und birgt die Rolle. Er versucht, mit der Schriftrolle zu fliehen, wird aber von Lindo gestoppt. Auf dem Sterbebett offenbart er panisch: „Die Botschaft darf auf keinen Fall nach Willauch gelangen.“  
+In einer Begegnung (Session 2026-01-13) traf Hans auf die Gruppe, bestand auf Übergabe einer versiegelten Schriftrolle und darauf, dass [Lindo](/characters/lindo_laut.md) herauskomme. Er wirkte verängstigt und warf in Panik einen grünen [Seelenstein](/items/seelenstein_des_rotunas.md) zu Boden, der einen [Dreadknight](/npcs/dreadknight.md) und einen Schädel herbeiteleportierte. [Nyrella](/characters/nyrella.md) und ihr Bär identifizierten ihn als lebenden Menschen. Die von ihm überbrachte Botschaft stammte von Belorus und war versiegelt; Hans stand sichtlich unter Druck, sie zu übergeben.
 
-In der späteren Begegnung (Session 2026-01-13) übergibt Hans dieselbe versiegelte Botschaft an die Gruppe – diesmal direkt. Er besteht darauf, dass Lindo laut herauskommt, und wirft in höchster Angst einen grünen Seelenstein zu Boden, der einen Dreadknight und einen Schädel herbeiteleportiert. Sein Verhalten ist erneut von Panik geprägt; Nyrella und ihr Bär identifizieren ihn als lebenden Menschen, nicht als Untoten.
+## Tod, Wiederbelebung und Ende
 
-#### Eigenschaften und Verhalten
-
-Hans wirkt durchgängig als ängstlicher, traumatisierter Mann, dessen Persönlichkeit zwischen Verwirrung und entschlossener Panik schwankt. Nach der Wiederbelebung durch Lunara wird seine Haltung klarer und zielgerichteter – doch diese Klarheit mündet in Fluchtversuch und letztlich in Tod oder erneute Bedrohung. Die grüne Substanz, an der er erstmals stirbt, sowie der grüne Seelenstein, den er im zweiten Auftritt einsetzt, deuten auf eine Verbindung zu denselben Kristallen oder alchemistischen Substanzen hin. Seine letzten Worte in der ersten Szene drehen sich ausschließlich um die Gefahr, dass die Botschaft Willauch erreicht.
-
-#### Zum Verhältnis der Begegnungen
-
-Die Chronologie der beiden Szenen ist nicht eindeutig geklärt. In Session 2026-01-06 stirbt Hans, wird wiederbelebt und stirbt erneut; in Session 2026-01-13 ist er unversehrt, aber ebenso verängstigt. Es ist möglich, dass die zweite Begegnung *vor* der ersten stattfindet (die Übergabe der Rolle als Auslöser für die spätere Vergiftung) oder dass es sich um eine alternative Version oder eine zeitliche Überlappung handelt. Die Spielleitung hat klargestellt, dass der Soldat Hans nichts mit dem gleichnamigen Tiefling-Wirt der Taverne „Zum grünen Sichelmond“ zu tun hat – beide sind getrennte Personen.
-
----
+In einer anderen Begegnung (Session 2026-01-06) wurde Hans verwirrt und traumatisiert aufgefunden. Er sprach von einer wichtigen, verlorenen Nachricht und einem Festmahl, das ihn krank gemacht habe. Kurz darauf starb er an grünem Erbrochenen, das auf einen Kristall hindeutete. Lunara belebte ihn wieder; danach war seine Persönlichkeit klarer und entschlossener. Er führte die Gruppe zur Leiche seines Kommandanten und barg eine versiegelte Schriftrolle – vermutlich die gleiche, die er zuvor überbracht hatte. Während des Kampfes mit dem [Seelenkalb](/npcs/seelenkalb.md) versuchte Hans, mit der Rolle zu fliehen, wurde jedoch von Lindo gestoppt. Auf dem Sterbebett offenbarte er voller Panik, dass die Botschaft auf keinen Fall nach [Willauch](/locations/willau.md) gelangen dürfe; dies waren seine letzten Worte.
 
 # Belege
 
-1. Session 2026-01-06, 02:04:47 – [Transkriptlink](https://www.youtube.com/watch?v=VGw81seFvbo)  
-2. Session 2026-01-13, 01:14:28 – [Transkriptlink](https://www.youtube.com/watch?v=w4LB1s9_3rs)  
-3. Kanon-Entscheidungen.md – Festlegung zur Trennung der beiden Hans-Personen
+1. Session 2026-01-06, 02:04:47 ([YouTube](https://www.youtube.com/watch?v=VGw81seFvbo))
+2. Session 2026-01-13, 01:14:28 ([YouTube](https://www.youtube.com/watch?v=w4LB1s9_3rs))

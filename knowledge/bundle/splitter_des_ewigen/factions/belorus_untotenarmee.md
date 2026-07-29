@@ -21,7 +21,7 @@ aliases:
 
 ## Überblick
 
-Belorus’ Untotenarmee ist eine gewaltige Streitmacht aus untoten Kreaturen, die unter dem Befehl des schwarzen Paladins [Belorus](/npcs/belorus.md) steht. Die Armee setzt sich aus verschiedenen Untoten-Typen zusammen, darunter Skelette, Zombies, Ghule und größere, mächtigere Kreaturen wie ein Minotaurus-Skelett und ein schwarzer Ritter. Sie agiert auffallend diszipliniert und koordiniert, was auf eine durchdachte Kommandostruktur hindeutet.
+Belorus’ Untotenarmee ist eine gewaltige Streitmacht aus untoten Kreaturen, die unter dem Befehl des schwarzen Paladins [Belorus](/npcs/magier_von_belorus.md) steht. Die Armee setzt sich aus verschiedenen Untoten-Typen zusammen, darunter Skelette, Zombies, Ghule und größere, mächtigere Kreaturen wie ein Minotaurus-Skelett und ein schwarzer Ritter. Sie agiert auffallend diszipliniert und koordiniert, was auf eine durchdachte Kommandostruktur hindeutet.
 
 Die Armee trat erstmals im Steinbachtal in Erscheinung, wo sie die Siedlung überrannte, und breitete sich in der Folge über die gesamte Region aus. Sie belagerte Breska, griff Flüchtlingstrecks an und stellte sich der Gruppe um Dodo, Rotunas, Esterossa und andere mehrfach in den Weg. Nach einer verheerenden Schlacht um Ehrenfels und einer Einigung zwischen Belorus und der Gruppe zog sich die Armee schließlich nach Zebros zurück.
 
@@ -50,7 +50,7 @@ Die Armee zeigt ein ungewöhnlich hohes Maß an Koordination. Sie greift in Well
 
 ## Beziehungen und Verbindungen
 
-- **[Belorus](/npcs/belorus.md):** Die Armee dient Belorus dem Stillen direkt und absolut. Er kontrolliert sie und erteilt Befehle im Gefecht [7]. Die Armee suchte in seinem Auftrag nach zwei Personen und einem gestohlenen Gegenstand [3]. Nach der Einigung Belorus’ mit der Gruppe zog sich auch die Armee zurück [9].
+- **[Belorus](/npcs/magier_von_belorus.md):** Die Armee dient Belorus dem Stillen direkt und absolut. Er kontrolliert sie und erteilt Befehle im Gefecht [7]. Die Armee suchte in seinem Auftrag nach zwei Personen und einem gestohlenen Gegenstand [3]. Nach der Einigung Belorus’ mit der Gruppe zog sich auch die Armee zurück [9].
 - **[Lunara Velora](/characters/lunara_velora.md):** Lunas Splitterwelt-Manifestation vernichtete einen Großteil der Armee in der Schlacht um Ehrenfels [7].
 - **Die Gruppe (Dodo, Rotunas, Esterossa, Nyrella u. a.):** Wiederholte direkte Konfrontationen, unter anderem am Pass, in den Wäldern nahe der Gilde, bei Breska und schließlich in der Entscheidungsschlacht um Ehrenfels.
 

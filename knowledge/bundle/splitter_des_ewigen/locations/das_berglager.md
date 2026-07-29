@@ -10,7 +10,7 @@ id: LOC_DAS_BERGLAGER
 subtype: Siedlung
 ---
 
-Ein primitives Lager mit Zelten und einer Höhle, bewohnt von [Hendriks Sippe](/factions/hendriks_sippe.md). Die Nomaden leben hier seit elf oder zwölf Generationen und bauen angeblich Eisen ab. Die Umgebung ist karg, und die Bewohner wirken unterernährt und schmutzig.
+Ein primitives Lager mit Zelten und einer Höhle, bewohnt von [Hendriks Sippe](/npcs/hendriks_sippe.md). Die Nomaden leben hier seit elf oder zwölf Generationen und bauen angeblich Eisen ab. Die Umgebung ist karg, und die Bewohner wirken unterernährt und schmutzig.
 
 # Belege
 

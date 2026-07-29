@@ -343,11 +343,28 @@ haben nichts miteinander zu tun. Sie werden getrennt geführt.
 
 ### Adeliga
 
-OFFEN — noch keine Festlegung der Spielleitung. Die Belege beschreiben Adeliga
-einmal als menschliche Geschäftsfrau ohne übernatürliche Merkmale und einmal
-als riesigen, übernatürlichen Eulen-Seraph mit göttlichem Auftrag. Ob dieselbe
-Person in zwei Gestalten oder zwei Wesen gemeint sind, ist ungeklärt. Der
-Widerspruch bleibt bewusst unter „Offene Konflikte" stehen.
+ENTSCHEIDUNG: Es gibt **zwei verschiedene Frauen namens Adeliga**. Die eine ist
+die Besitzerin des *Haus des Löwen* in **Willauch** — eine menschliche
+Geschäftsfrau, elegant und kühl, ohne übernatürliche Merkmale (Session
+2026-03-03). Die andere ist ein **Eulen-Seraph** und Paladin des neuen Gottes
+*Joran der Münzenzähler*, der der Gruppe im **Ringtal** begegnet (Session
+2026-06-04). Sie haben nichts miteinander zu tun; der scheinbare Widerspruch
+zwischen „Geschäftsfrau" und „himmlisches Wesen" ist keiner.
+
+### Breska
+
+ENTSCHEIDUNG: Die kanonische Schreibweise des Dorfes ist **Breska**.
+„Brechka", „Bresca", „Breschka" und „Reska" sind Transkriptionsvarianten.
+
+### Silberkerne
+
+ENTSCHEIDUNG: Die Silberkerne sind **eine Organisation mit mehreren Lagern**,
+nicht mehrere gleichnamige Banden. **Harl und Sarina führen das Ganze**;
+**Floran** führt lediglich die Zelle auf der **Heinrich-Farm**. Belege, die
+Floran als Anführer der Silberkerne bezeichnen, meinen diese eine Zelle.
+
+ENTSCHEIDUNG: Anlass der Verfolgung ist der **Mord an einem Diplomaten**. Der
+Beleg, der stattdessen vom Tod einer Prinzessin spricht, ist eine Verwechslung.
 
 ### Hal / Harl
 
@@ -378,6 +395,22 @@ vertrat** — deshalb erscheint er in einem Beleg als alleiniger Verhandler.
 
 ENTSCHEIDUNG: Das Geschlecht des Schinders ist für den Kanon **unerheblich**;
 im Zweifel männlich. Kein offener Konflikt.
+
+### Was eine Fraktion ist
+
+ENTSCHEIDUNG: Eine **Fraktion** ist eine Macht, die **über eine Stadt und über
+eine Session hinaus** wirkt — die Gilden, die Silberkerne, Belorus'
+Untotenarmee, die Kulte der Götter, die Zwerge der Festung, die Goblins. Eine
+Handvoll Magier, die Bewohner eines Dorfes oder ein Gnoll-Rudel aus einer
+Session sind **keine** Fraktion, sondern ein **kollektiver Charakter** und
+werden als NPC geführt.
+
+ENTSCHEIDUNG: Zwei Ausnahmen gelten wegen **narrativer Bedeutung**, nicht wegen
+Macht: die **Flüchtlinge aus Breska** und die **Gefährten von Rotunas** (die
+Heldengruppe selbst) bleiben Fraktionen.
+
+ENTSCHEIDUNG: „Dwarfmasters" ist der **Twitch-Account**, nicht der Name der
+Gilde. Die Gilde der Gruppe ist die **Gilde von Ehrenfels**.
 
 ### Gott und Erscheinung
 

@@ -10,7 +10,7 @@ id: EVENT_FLUCHT_PER_TELEPORTATION
 subtype: Sonstiges
 ---
 
-Angesichts des erscheinenden [Belorus](/npcs/belorus.md) und seiner Armee teleportierte [Rotunas](/characters/rotunas.md) die gesamte Gruppe ([Dodo](/characters/dodo.md), [Esterossa](/characters/esterossa.md), Lunara, [Nyrella](/characters/nyrella.md) mit Nayruk) hinter die Palisade des Lagers. Ein Gegenzauber von Belorus scheiterte knapp (Rotunas' 11 gegen Belorus' 8). Hal ließ daraufhin das Tor schließen.
+Angesichts des erscheinenden [Belorus](/npcs/magier_von_belorus.md) und seiner Armee teleportierte [Rotunas](/characters/rotunas.md) die gesamte Gruppe ([Dodo](/characters/dodo.md), [Esterossa](/characters/esterossa.md), Lunara, [Nyrella](/characters/nyrella.md) mit Nayruk) hinter die Palisade des Lagers. Ein Gegenzauber von Belorus scheiterte knapp (Rotunas' 11 gegen Belorus' 8). Hal ließ daraufhin das Tor schließen.
 
 # Belege
 
