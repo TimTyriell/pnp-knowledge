@@ -1,40 +1,56 @@
 ---
 type: Location
 title: Sanddorn-Inseln
-description: Die Sanddorninseln sind ein lukratives Handelsziel nördlich von Tiefwasser,
-  bekannt für Gewürze und andere Waren; nur über Tiefwasser errei…
+description: Die Sanddorn-Inseln (auch Sanddorninseln, Sanddornische Inseln oder Sundown-Inseln
+  genannt) sind eine Inselgruppe nördlich der Hafenstadt T…
 tags:
 - locations
 timestamp: '2026-03-18T00:00:00Z'
 id: LOC_SANDDORNINSELN
-subtype: Siedlung
+subtype: Wildnis
 aliases:
 - Sanddorninseln
+- Sanddorninseln (Sundown-Inseln)
 ---
 
 ## Überblick
-Die Sanddorn-Inseln liegen nördlich von Tiefwasser und sind ein lukratives Handelsziel, das vor allem für seine Gewürze und andere Waren bekannt ist. 
-Sie sind ausschließlich über den Hafen von Tiefwasser zu erreichen, was den Ort zu einem zentralen Knotenpunkt für den Handel mit den Inseln macht.
+
+Die Sanddorn-Inseln (auch Sanddorninseln, Sanddornische Inseln oder Sundown-Inseln genannt) sind eine Inselgruppe nördlich der Hafenstadt [Tiefwasser](/locations/tiefwasser.md). Sie sind ausschließlich über Tiefwasser erreichbar und gelten als lukratives Handelsziel, vor allem für Gewürze und andere begehrte Waren.[2] Die Region ist die Heimat von [Lunara Velora](/characters/lunara_velora.md), die in einem Dorf auf einer der Inseln geboren wurde.[1]
 
 ## Rolle in der Kampagne
-Bisher (Session 1) werden die Sanddorn-Inseln nur als profitables Handelsziel erwähnt, das über die Handelsrouten von Tiefwasser bedient wird. Eine direkte Rolle in der Handlung ist noch nicht erkennbar.
+
+Die Sanddorn-Inseln waren bereits früh in der Kampagne Schauplatz eines Auftrags der Gruppe. In Session 1 wird erwähnt, dass einer der ersten Aufträge, den die Charaktere annahmen, auf den „Sundown-Inseln“ stattfand.[1] Später, in Session 2, werden sie als wichtiges Handelsziel vorgestellt, das über Tiefwasser angefahren wird. Dort liegt auch der narrative Ursprung von Lunara, deren Verbindung zur Region mehrfach zur Sprache kommt – etwa als sie sich der Gruppe mit den Worten vorstellte: „Also geboren bin ich in einem Inseldorf auf diesen Sanddormischen Inseln.“[1]
 
 ## Wichtige Merkmale
-- **Lage und Zugang:** Nördlich von Tiefwasser; nur von Tiefwasser aus per Schiff zu erreichen.  
-  *„Nur über Tiefwasser kommt man nämlich über die nördliche …“* [1]  
-- **Wirtschaft:** Bekannt für Gewürze und andere Waren, die über Tiefwasser gehandelt werden.  
-- **Schiffsverbindungen:** In Tiefwasser liegen Schiffe aus Willow und (früher) Brandau, die die Route zu den Sanddorn-Inseln befahren. [1]
+
+**Lage und Erreichbarkeit**  
+Die Inseln liegen nördlich von Tiefwasser. Der Seeweg von und zu ihnen führt zwingend über diesen Hafen – es gibt offenbar keine alternative Route. Tiefwasser selbst profitiert von diesem Umstand und hat eine strategische Bedeutung als Umschlagplatz für Warenströme von und nach Willow.[2]
+
+**Wirtschaft**  
+Die Inseln sind ein „lukratives Handelsziel“[2] und bekannt für Gewürzlieferungen. In Tiefwasser zeugen zwei große Schiffe vom Warenumschlag, und es wird vermutet, dass „hier eine ganze Menge Waren durchgehen, anders würde es wahrscheinlich auch nicht funktionieren.“[2] Dass die Inseln als exklusiv über Tiefwasser zugänglich beschrieben werden, verleiht ihnen eine Sonderstellung im regionalen Handel.
+
+**Kulturelle Prägung**  
+Lunara beschreibt ihr Heimatdorf als einfaches Inseldorf. Ihr Vater war ein Tidekin – Wasserwesen, deren Erbe ihr die Fähigkeit verleiht, unter Wasser zu atmen. Sie selbst betont jedoch, weder mit dem Vater noch mit den Inseln viel gemein zu haben: „Ich habe eigentlich nichts mit meinem Vater gemein oder eigentlich auch mit diesen ganzen Inseln oder so.“[1] Ihre Mutter war eine Hexe, und Lunara wuchs im abgeschieden lebenden Hexenzirkel der Nachtwächterinnen auf.
 
 ## Beziehungen und Verbindungen
-- **[Tiefwasser](/locations/tiefwasser.md):** Der einzige Hafen, von dem aus die Sanddorn-Inseln angelaufen werden können. Die Stadt dient als Umschlagplatz für die Güter der Inseln und beherbergt die dafür genutzten Schiffe (u. a. aus Willow, ehemals aus Brandau). [1]
+
+- **[Lunara Velora](/characters/lunara_velora.md)** – geboren auf den Sanddorn-Inseln, Tochter eines Tidekin von dort. Sie hat die Inseln verlassen und steht ihnen emotional distanziert gegenüber.
+- **[Tiefwasser](/locations/tiefwasser.md)** – einziger Zugangshafen zu den Inseln und Drehkreuz für den Handel mit ihnen.
+- **Willow** – Die Stadt oder Region Willow nutzt offenbar Schiffe, die auch Routen zu den Sanddorn-Inseln befahren.[2]
+- **Die Gruppe** – führte bereits in der Frühphase der Kampagne einen Auftrag auf den Inseln aus.[1]
 
 ## Chronologie
-- **Session 1 (2026-03-18):** Erste Erwähnung der Sanddorn-Inseln als lukratives Handelsziel nördlich von Tiefwasser, das nur über diesen Hafen erreichbar ist. [1]
+
+- **Session 1 (18.11.2025):** Die Sanddorn-Inseln werden erstmals erwähnt, als Lunara von ihrer Herkunft erzählt. Der GM ergänzt, dass ein sehr früher Auftrag der Gruppe auf den „Sundown-Inseln“ stattfand. Ein Spieler bringt sie zudem mit der Nähe zu Tarkia in Verbindung.
+- **Session 2 (18.03.2026):** Die Inseln werden als nördliches Handelsziel von Tiefwasser aus beschrieben. Der GM erklärt, dass sie nur über Tiefwasser erreichbar sind und betont ihren wirtschaftlichen Wert.
 
 ## Offene Fragen
-- Wie sehen die Inseln selbst aus? Gibt es feste Siedlungen oder nur Handelsstationen?
-- Warum ist der Zugang ausschließlich von Tiefwasser aus möglich – etwa durch gefährliche Gewässer oder politische Barrieren?
-- Welche konkreten Waren neben Gewürzen werden von den Inseln exportiert?
+
+- Warum genau sind die Sanddorn-Inseln ausschließlich über Tiefwasser erreichbar – liegt es an gefährlichen Gewässern, politischen Restriktionen oder natürlichen Gegebenheiten?
+- Welcher Auftrag führte die Gruppe in der Frühphase der Kampagne dorthin, und was geschah dabei?
+- Welche weiteren Inseln oder Siedlungen gehören zur Inselgruppe?
 
 ## Belege
-[1] Session 2026-03-18, 00:22:08, https://www.youtube.com/watch?v=HHXxsASLrbQ – Sanddorn-Inseln als Handelsziel nördlich von Tiefwasser, nur über Tiefwasser erreichbar; Schiffe aus Willow und früher Brandau liegen dort.
+
+[1] Session 2025-11-18, 00:35:10 – https://www.youtube.com/watch?v=w__ahowb9p0  
+[2] Session 2026-03-18, 00:22:08 – https://www.youtube.com/watch?v=HHXxsASLrbQ

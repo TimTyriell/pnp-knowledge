@@ -10,7 +10,7 @@ id: LOC_TREFFPUNKT
 subtype: Wildnis
 ---
 
-Ein ungeeigneter Ort im dichten Wald nahe der [Banditenfestung](/locations/banditenlager.md), wo sich die Gruppe mit den Flüchtlingen verabredet hatte. Ohne Rodung kein Lagerbau möglich.
+Ein ungeeigneter Ort im dichten Wald nahe der [Banditenfestung](/locations/banditenlager_der_silberkerne.md), wo sich die Gruppe mit den Flüchtlingen verabredet hatte. Ohne Rodung kein Lagerbau möglich.
 
 # Belege
 

@@ -9,7 +9,7 @@ timestamp: '2025-04-09T00:00:00Z'
 id: NPC_NIP
 ---
 
-Nip ist ein leicht schreckhafter und betrunkener Gast in der [Taverne](/locations/taverne.md), der bei der Erwähnung eines Angriffs panisch flüchtet und gegen die Wand rennt. [Valeria](/characters/valeria.md) kümmert sich um ihn, und später wird in Betracht gezogen, ihn als Lockvogel einzusetzen. Es wird humorvoll angedeutet, er könne ein betrunkener Mönch sein.
+Nip ist ein leicht schreckhafter und betrunkener Gast in der [Taverne](/locations/taverne_von_breska.md), der bei der Erwähnung eines Angriffs panisch flüchtet und gegen die Wand rennt. [Valeria](/characters/valeria.md) kümmert sich um ihn, und später wird in Betracht gezogen, ihn als Lockvogel einzusetzen. Es wird humorvoll angedeutet, er könne ein betrunkener Mönch sein.
 
 # Belege
 

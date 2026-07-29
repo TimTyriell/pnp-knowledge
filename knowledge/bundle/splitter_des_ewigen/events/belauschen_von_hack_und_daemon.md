@@ -10,7 +10,7 @@ id: EVENT_BELAUSCHEN_VON_HACK_UND_DAEMON
 subtype: Entdeckung
 ---
 
-[Dodo](/characters/dodo.md) und Lindo lauschten im [Labor der Hexe](/locations/labor_der_hexe.md) und hörten, wie sie in einer dämonischen Sprache mit einer tiefen Stimme sprach. Sie verstanden den Satz: „Der Graf ist uns im Weg. Wir sollten uns darum kümmern.“ Dies ist ein konkreter Hinweis auf eine Verschwörung gegen eine als Graf bezeichnete Person und etabliert eine dämonische Allianz.
+[Dodo](/characters/dodo.md) und Lindo lauschten im [Labor der Hexe](/locations/versunkene_stadt_dungeon.md) und hörten, wie sie in einer dämonischen Sprache mit einer tiefen Stimme sprach. Sie verstanden den Satz: „Der Graf ist uns im Weg. Wir sollten uns darum kümmern.“ Dies ist ein konkreter Hinweis auf eine Verschwörung gegen eine als Graf bezeichnete Person und etabliert eine dämonische Allianz.
 
 # Belege
 

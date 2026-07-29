@@ -1,16 +1,18 @@
 ---
 type: Location
-title: Taverne
+title: Taverne von Breska
 description: Die Taverne von Wirt Hubert, in der sich die Dorfbewohner versammeln
   und die Helden ihre Warnung aussprechen. Hier findet die improvisierte…
 tags:
 - locations
 timestamp: '2025-04-09T00:00:00Z'
-id: LOC_TAVERNE
+id: LOC_TAVERNE_VON_BRESKA
 subtype: Gebäude
+aliases:
+- Taverne
 ---
 
-Die Taverne von Wirt [Hubert](/npcs/hubert.md), in der sich die Dorfbewohner versammeln und die Helden ihre Warnung aussprechen. Hier findet die improvisierte Feuershow statt, und die ersten Unterstützer melden sich.
+[Die Taverne](/locations/taverne_von_ehrenfels.md) von Wirt [Hubert](/npcs/hubert.md), in der sich die Dorfbewohner versammeln und die Helden ihre Warnung aussprechen. Hier findet die improvisierte Feuershow statt, und die ersten Unterstützer melden sich.
 
 # Belege
 

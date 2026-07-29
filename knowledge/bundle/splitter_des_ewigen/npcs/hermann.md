@@ -9,7 +9,7 @@ timestamp: '2025-04-30T00:00:00Z'
 id: NPC_HERMANN
 ---
 
-Barkeeper der ersten [Taverne](/locations/taverne.md) auf Sanddorn. Er verkauft Bier für eine Goldmünze und ist stolzer Besitzer der Katze [Ajani](/npcs/katze_ajani_guenther.md). Als sich die Katze [Esterossa](/characters/esterossa.md) zuwendet, wird er aggressiv und zieht eine Waffe, wird aber von [Anton Großwurz](/npcs/anton_grosswurz.md) eingeschläfert. Er beschuldigte Esterossa des Katzendiebstahls.
+Barkeeper der ersten [Taverne](/locations/taverne_von_breska.md) auf Sanddorn. Er verkauft Bier für eine Goldmünze und ist stolzer Besitzer der Katze [Ajani](/npcs/katze_ajani_guenther.md). Als sich die Katze [Esterossa](/characters/esterossa.md) zuwendet, wird er aggressiv und zieht eine Waffe, wird aber von [Anton Großwurz](/npcs/anton_grosswurz.md) eingeschläfert. Er beschuldigte Esterossa des Katzendiebstahls.
 
 # Belege
 

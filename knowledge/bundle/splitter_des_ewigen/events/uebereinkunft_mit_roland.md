@@ -10,7 +10,7 @@ id: EVENT_UEBEREINKUNFT_MIT_ROLAND
 subtype: Verhandlung
 ---
 
-[Rotunas](/characters/rotunas.md) überzeugt [Roland](/npcs/roland.md), die Flüchtlinge zum [Banditenlager](/locations/banditenlager.md) zu führen, während die Gruppe zur Berggilde reist. Sie verabreden ein Treffen in zehn Tagen. Roland verlangt Sicherheitsgarantien und nimmt das Gold für Proviant an.
+[Rotunas](/characters/rotunas.md) überzeugt [Roland](/npcs/roland.md), die Flüchtlinge zum [Banditenlager](/locations/banditenlager_der_silberkerne.md) zu führen, während die Gruppe zur Berggilde reist. Sie verabreden ein Treffen in zehn Tagen. Roland verlangt Sicherheitsgarantien und nimmt das Gold für Proviant an.
 
 # Belege
 

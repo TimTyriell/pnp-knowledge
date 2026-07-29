@@ -12,7 +12,7 @@ aliases:
 - Arena-Lager
 ---
 
-Ein Zeltlager etwa eine Stunde Fußmarsch außerhalb der Stadtmauern, in dem die Turnierteilnehmer und Champions campieren. Hier befinden sich die Zelte von Mil und von [Tyrael](/npcs/tyrael.md)/Bosa, ein Gemeinschaftsfeuer und ein abgegrenzter Bereich für mitgebrachte Zelte. Die Gruppe schlägt hier ein großes Gemeinschaftszelt auf und verbringt die Nacht. [Das Lager](/locations/das_lager.md) ist von Bannern verschiedener Städte und Fraktionen umgeben und belebt sich besonders an den Abenden.
+Ein Zeltlager etwa eine Stunde Fußmarsch außerhalb der Stadtmauern, in dem die Turnierteilnehmer und Champions campieren. Hier befinden sich die Zelte von Mil und von [Tyrael](/npcs/tyrael.md)/Bosa, ein Gemeinschaftsfeuer und ein abgegrenzter Bereich für mitgebrachte Zelte. Die Gruppe schlägt hier ein großes Gemeinschaftszelt auf und verbringt die Nacht. Das Lager ist von Bannern verschiedener Städte und Fraktionen umgeben und belebt sich besonders an den Abenden.
 
 # Belege
 

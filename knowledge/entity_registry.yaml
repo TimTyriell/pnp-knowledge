@@ -2748,11 +2748,6 @@ entities:
   canonical_name: Altar in den Narbenfeldern
   aliases: []
   mention_count: 1
-- concept_id: locations/altarraum_des_uhoriaks
-  type: Location
-  canonical_name: Altarraum des Uhoriaks
-  aliases: []
-  mention_count: 1
 - concept_id: locations/alte_burgruine_mit_krypta
   type: Location
   canonical_name: Alte Burgruine mit Krypta
@@ -2771,11 +2766,6 @@ entities:
 - concept_id: locations/alter_vorposten
   type: Location
   canonical_name: Alter Vorposten
-  aliases: []
-  mention_count: 1
-- concept_id: locations/altes_banditenlager
-  type: Location
-  canonical_name: Altes Banditenlager
   aliases: []
   mention_count: 1
 - concept_id: locations/altes_bauernhaus
@@ -2800,19 +2790,16 @@ entities:
   canonical_name: Außenposten der Gilde
   aliases: []
   mention_count: 1
-- concept_id: locations/banditenlager
+- concept_id: locations/banditenlager_der_silberkerne
   type: Location
-  canonical_name: Das Banditenlager
+  canonical_name: Banditenlager der Silberkerne
   aliases:
   - Banditenfestung
-  - Banditenlager (Festung)
+  - Banditenlager (Burgruine)
   - Banditenlager
-  mention_count: 2
-- concept_id: locations/banditenlager_burgruine
-  type: Location
-  canonical_name: Banditenlager (Burgruine)
-  aliases: []
-  mention_count: 1
+  - Das Banditenlager (im Wald)
+  - Altes Banditenlager
+  mention_count: 5
 - concept_id: locations/banditenversteck_unter_der_farm
   type: Location
   canonical_name: Banditenversteck unter der Farm
@@ -2844,14 +2831,15 @@ entities:
   canonical_name: Berggilde (Gilde der Gruppe)
   aliases: []
   mention_count: 1
+- concept_id: locations/berglager_der_hendriks_sippe
+  type: Location
+  canonical_name: Berglager der Hendriks-Sippe
+  aliases:
+  - das Berglager
+  mention_count: 1
 - concept_id: locations/bergspitze
   type: Location
   canonical_name: Bergspitze
-  aliases: []
-  mention_count: 1
-- concept_id: locations/bibliothek_der_gruft
-  type: Location
-  canonical_name: Bibliothek der Gruft
   aliases: []
   mention_count: 1
 - concept_id: locations/boragdil
@@ -2928,19 +2916,9 @@ entities:
   canonical_name: Crowfin Manor
   aliases: []
   mention_count: 1
-- concept_id: locations/das_banditenlager_im_wald
-  type: Location
-  canonical_name: Das Banditenlager (im Wald)
-  aliases: []
-  mention_count: 1
 - concept_id: locations/das_banditenversteck
   type: Location
   canonical_name: Das Banditenversteck
-  aliases: []
-  mention_count: 1
-- concept_id: locations/das_berglager
-  type: Location
-  canonical_name: das Berglager
   aliases: []
   mention_count: 1
 - concept_id: locations/das_daemonenportal
@@ -2956,16 +2934,6 @@ entities:
 - concept_id: locations/das_heiligtum
   type: Location
   canonical_name: das Heiligtum
-  aliases: []
-  mention_count: 1
-- concept_id: locations/das_lager
-  type: Location
-  canonical_name: Das Lager
-  aliases: []
-  mention_count: 1
-- concept_id: locations/das_lagerhaus
-  type: Location
-  canonical_name: Das Lagerhaus
   aliases: []
   mention_count: 1
 - concept_id: locations/das_portal
@@ -3016,8 +2984,13 @@ entities:
 - concept_id: locations/der_dungeon_der_uralten_unterkunft
   type: Location
   canonical_name: Der Dungeon der uralten Unterkunft
-  aliases: []
-  mention_count: 1
+  aliases:
+  - Taverne im Dungeon
+  - Schmiede im Dungeon
+  - Forschungslabor
+  - Altarraum des Uhoriaks
+  - Raum der Drachenstatue
+  mention_count: 6
 - concept_id: locations/der_fluss_mit_den_geistergesichtern
   type: Location
   canonical_name: Der Fluss mit den Geistergesichtern
@@ -3073,11 +3046,6 @@ entities:
   canonical_name: Die große Schlucht
   aliases: []
   mention_count: 1
-- concept_id: locations/die_hoehle_beim_lager
-  type: Location
-  canonical_name: die Höhle beim Lager
-  aliases: []
-  mention_count: 1
 - concept_id: locations/die_klippe
   type: Location
   canonical_name: Die Klippe
@@ -3098,24 +3066,9 @@ entities:
   canonical_name: Die Narbe
   aliases: []
   mention_count: 3
-- concept_id: locations/die_schmierige_taverne
-  type: Location
-  canonical_name: Die schmierige Taverne
-  aliases: []
-  mention_count: 1
 - concept_id: locations/die_stadt
   type: Location
   canonical_name: Die Stadt
-  aliases: []
-  mention_count: 1
-- concept_id: locations/die_taverne_im_gestrandeten_schiff
-  type: Location
-  canonical_name: Die Taverne im gestrandeten Schiff
-  aliases: []
-  mention_count: 1
-- concept_id: locations/die_taverne_neben_der_kirche
-  type: Location
-  canonical_name: Die Taverne neben der Kirche
   aliases: []
   mention_count: 1
 - concept_id: locations/die_zwischenebene
@@ -3147,11 +3100,6 @@ entities:
 - concept_id: locations/eistreppe
   type: Location
   canonical_name: Eistreppe
-  aliases: []
-  mention_count: 1
-- concept_id: locations/elektrischer_gang
-  type: Location
-  canonical_name: Elektrischer Gang
   aliases: []
   mention_count: 1
 - concept_id: locations/ende
@@ -3186,11 +3134,6 @@ entities:
   canonical_name: Flüchtlingslager von Breska
   aliases:
   - Flüchtlingslager vor Bresca
-  mention_count: 1
-- concept_id: locations/forschungslabor
-  type: Location
-  canonical_name: Forschungslabor
-  aliases: []
   mention_count: 1
 - concept_id: locations/friedhof
   type: Location
@@ -3227,11 +3170,6 @@ entities:
   canonical_name: Gemata
   aliases: []
   mention_count: 1
-- concept_id: locations/gepluendertes_lager
-  type: Location
-  canonical_name: Geplündertes Lager
-  aliases: []
-  mention_count: 1
 - concept_id: locations/gewoelbe_der_wunder
   type: Location
   canonical_name: Gewölbe der Wunder
@@ -3265,8 +3203,9 @@ entities:
 - concept_id: locations/gruft_des_grafen
   type: Location
   canonical_name: Gruft des Grafen
-  aliases: []
-  mention_count: 1
+  aliases:
+  - Bibliothek der Gruft
+  mention_count: 2
 - concept_id: locations/gruft_von_breska
   type: Location
   canonical_name: Gruft von Breska
@@ -3278,17 +3217,18 @@ entities:
   canonical_name: Halblingsfarm
   aliases: []
   mention_count: 1
-- concept_id: locations/halle_der_seelennetze
-  type: Location
-  canonical_name: Halle der Seelennetze
-  aliases: []
-  mention_count: 1
 - concept_id: locations/hartwacht
   type: Location
   canonical_name: Hartwacht
   aliases:
   - Hardwacht
   mention_count: 2
+- concept_id: locations/hauptinsel_von_sanddorn
+  type: Location
+  canonical_name: Hauptinsel von Sanddorn
+  aliases:
+  - Sanddorn (Hauptinsel)
+  mention_count: 1
 - concept_id: locations/haus_des_loewen
   type: Location
   canonical_name: Haus des Löwen
@@ -3340,11 +3280,6 @@ entities:
   aliases: []
   mention_count: 1
   important: true
-- concept_id: locations/kaminraum_mit_gruener_flamme
-  type: Location
-  canonical_name: Kaminraum mit grüner Flamme
-  aliases: []
-  mention_count: 1
 - concept_id: locations/kapelle_von_ehrenfels
   type: Location
   canonical_name: Kapelle von Ehrenfels
@@ -3401,15 +3336,11 @@ entities:
   aliases:
   - Mine
   mention_count: 1
-- concept_id: locations/labor_der_hexe
+- concept_id: locations/lagerhaus_von_ehrenfels
   type: Location
-  canonical_name: Labor der Hexe
-  aliases: []
-  mention_count: 1
-- concept_id: locations/lager_bei_der_ruine
-  type: Location
-  canonical_name: Lager bei der Ruine
-  aliases: []
+  canonical_name: Lagerhaus von Ehrenfels
+  aliases:
+  - Das Lagerhaus
   mention_count: 1
 - concept_id: locations/leandras_haus
   type: Location
@@ -3419,11 +3350,6 @@ entities:
 - concept_id: locations/magia_tower
   type: Location
   canonical_name: Magia Tower
-  aliases: []
-  mention_count: 1
-- concept_id: locations/muschelraum_mit_mimic
-  type: Location
-  canonical_name: Muschelraum mit Mimic
   aliases: []
   mention_count: 1
 - concept_id: locations/nebelwacht
@@ -3462,21 +3388,6 @@ entities:
   canonical_name: Portal in Voras’ Anwesen
   aliases: []
   mention_count: 1
-- concept_id: locations/raum_der_drachenstatue
-  type: Location
-  canonical_name: Raum der Drachenstatue
-  aliases: []
-  mention_count: 1
-- concept_id: locations/raum_mit_brunnen_und_gitter
-  type: Location
-  canonical_name: Raum mit Brunnen und Gitter
-  aliases: []
-  mention_count: 1
-- concept_id: locations/raum_mit_schlangenglyphen
-  type: Location
-  canonical_name: Raum mit Schlangenglyphen
-  aliases: []
-  mention_count: 1
 - concept_id: locations/relinas_haus
   type: Location
   canonical_name: Relinas Haus
@@ -3498,23 +3409,14 @@ entities:
   canonical_name: Ruine des Königs Zebros
   aliases: []
   mention_count: 1
-- concept_id: locations/sanddorn_hauptinsel
-  type: Location
-  canonical_name: Sanddorn (Hauptinsel)
-  aliases: []
-  mention_count: 1
 - concept_id: locations/sanddorninseln
   type: Location
   canonical_name: Sanddorn-Inseln
   aliases:
   - Sanddorninseln
-  mention_count: 1
+  - Sanddorninseln (Sundown-Inseln)
+  mention_count: 2
   important: true
-- concept_id: locations/sanddorninseln_sundown_inseln
-  type: Location
-  canonical_name: Sanddorninseln (Sundown-Inseln)
-  aliases: []
-  mention_count: 1
 - concept_id: locations/schiffswrack
   type: Location
   canonical_name: Schiffswrack
@@ -3530,10 +3432,11 @@ entities:
   canonical_name: Schmid-Hof
   aliases: []
   mention_count: 1
-- concept_id: locations/schmiede_im_dungeon
+- concept_id: locations/schmierige_taverne_von_willauch
   type: Location
-  canonical_name: Schmiede im Dungeon
-  aliases: []
+  canonical_name: Schmierige Taverne von Willauch
+  aliases:
+  - Die schmierige Taverne
   mention_count: 1
 - concept_id: locations/schmugglerbasis
   type: Location
@@ -3609,32 +3512,38 @@ entities:
   aliases:
   - Sumpf
   mention_count: 1
-- concept_id: locations/taverne
+- concept_id: locations/taverne_im_gestrandeten_schiff_von_tiefwasser
   type: Location
-  canonical_name: Taverne
-  aliases: []
+  canonical_name: Taverne im gestrandeten Schiff (Tiefwasser)
+  aliases:
+  - Die Taverne im gestrandeten Schiff
   mention_count: 1
-- concept_id: locations/taverne_im_dungeon
+- concept_id: locations/taverne_kyla_von_sanddorn
   type: Location
-  canonical_name: Taverne im Dungeon
-  aliases: []
+  canonical_name: Taverne Kyla von Sanddorn
+  aliases:
+  - Taverne Kyla
   mention_count: 1
-- concept_id: locations/taverne_kyla
+- concept_id: locations/taverne_neben_der_kirche_von_willauch
   type: Location
-  canonical_name: Taverne Kyla
-  aliases: []
+  canonical_name: Taverne neben der Kirche von Willauch
+  aliases:
+  - Die Taverne neben der Kirche
   mention_count: 1
-- concept_id: locations/taverne_ungenannt
+- concept_id: locations/taverne_von_breska
   type: Location
-  canonical_name: Taverne (ungenannt)
-  aliases: []
+  canonical_name: Taverne von Breska
+  aliases:
+  - Taverne
   mention_count: 1
 - concept_id: locations/taverne_von_ehrenfels
   type: Location
   canonical_name: Taverne von Ehrenfels
   aliases:
   - Taverne in Ehrenfels
-  mention_count: 1
+  - Die Taverne
+  - Taverne (ungenannt)
+  mention_count: 4
 - concept_id: locations/tempel_des_splitter_des_ewigen
   type: Location
   canonical_name: Tempel des Splitter des Ewigen
@@ -3700,8 +3609,15 @@ entities:
 - concept_id: locations/versunkene_stadt_dungeon
   type: Location
   canonical_name: Versunkene Stadt (Dungeon)
-  aliases: []
-  mention_count: 1
+  aliases:
+  - Raum mit Schlangenglyphen
+  - Muschelraum mit Mimic
+  - Raum mit Brunnen und Gitter
+  - Kaminraum mit grüner Flamme
+  - Elektrischer Gang
+  - Halle der Seelennetze
+  - Labor der Hexe
+  mention_count: 8
 - concept_id: locations/villa
   type: Location
   canonical_name: Villa
@@ -3757,10 +3673,11 @@ entities:
   canonical_name: Zerstörter Aussichtsturm
   aliases: []
   mention_count: 1
-- concept_id: locations/zum_gruenen_sichelmond
+- concept_id: locations/zum_gruenen_sichelmond_von_tiefwasser
   type: Location
-  canonical_name: Zum grünen Sichelmond
-  aliases: []
+  canonical_name: Zum grünen Sichelmond (Tiefwasser)
+  aliases:
+  - Zum grünen Sichelmond
   mention_count: 1
 - concept_id: locations/zweite_arena_von_willauch
   type: Location

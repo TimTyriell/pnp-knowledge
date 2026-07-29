@@ -456,6 +456,16 @@ ENTSCHEIDUNG: Die **Stadt steht im Namen immer am Schluss**: *Arena von
 Willauch*, *Kapelle von Ehrenfels*, *Gruft von Breska*. Nicht „Kapelle in
 Ehrenfels" und nicht mit der Stadt am Anfang.
 
+ENTSCHEIDUNG: **Räume innerhalb eines Dungeons bekommen keinen eigenen
+Eintrag** — anders als Gebäude in einer Stadt. Ein Dungeon wird an einem Abend
+durchquert, seine Räume haben außerhalb davon kein Eigenleben; sie werden im
+Eintrag des Dungeons beschrieben.
+
+ENTSCHEIDUNG: **Lager, die die Gruppe für eine Nacht aufschlägt, werden nicht
+geführt.** Ein Lager bekommt nur dann einen Eintrag, wenn es dauerhaft und
+identifizierbar ist — das *Banditenlager der Silberkerne*, das *Berglager der
+Hendriks-Sippe*, die Flüchtlingslager.
+
 ### Was ein Gegenstand ist
 
 ENTSCHEIDUNG: Nur **besondere** Gegenstände werden als eigener Eintrag geführt

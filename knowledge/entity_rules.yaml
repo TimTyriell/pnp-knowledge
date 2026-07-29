@@ -134,9 +134,58 @@ merge:
   # covered three unrelated places. A merge here would rebuild the bucket.
   der nebelsumpf: locations/sumpf_bei_nebelwacht
   die brücke: locations/bruecke
-  das banditenlager: locations/banditenlager
-  banditenlager (festung): locations/banditenlager
-  banditenfestung: locations/banditenlager
+  # The Silberkerne headquarters, seen four times over a year and named
+  # differently each time: a ruined keep in a mountain basin that Hal's band
+  # fortified, extended over the winter, and finally held against the undead.
+  das banditenlager: locations/banditenlager_der_silberkerne
+  banditenlager: locations/banditenlager_der_silberkerne
+  banditenlager (festung): locations/banditenlager_der_silberkerne
+  banditenfestung: locations/banditenlager_der_silberkerne
+  banditenlager (burgruine): locations/banditenlager_der_silberkerne
+  das banditenlager (im wald): locations/banditenlager_der_silberkerne
+  altes banditenlager: locations/banditenlager_der_silberkerne
+  # A settlement, not a camp: Hendrik's clan has lived there for eleven or
+  # twelve generations.
+  das berglager: locations/berglager_der_hendriks_sippe
+  das lagerhaus: locations/lagerhaus_von_ehrenfels
+
+  # GM ruling: rooms fold into their dungeon. A dungeon is explored in one
+  # sitting and its rooms have no life outside it, so each is a paragraph in
+  # the dungeon's entry rather than a node with a single mention.
+  taverne im dungeon: locations/der_dungeon_der_uralten_unterkunft
+  schmiede im dungeon: locations/der_dungeon_der_uralten_unterkunft
+  forschungslabor: locations/der_dungeon_der_uralten_unterkunft
+  raum der drachenstatue: locations/der_dungeon_der_uralten_unterkunft
+  altarraum des uhoriaks: locations/der_dungeon_der_uralten_unterkunft
+
+  # The sunken city says so itself: "Der Dungeon enthält mehrere Räume, darunter
+  # ein Gewölbe mit Mosaik, einen Raum mit …". The Turm im Sumpf in the same
+  # session is a separate resting place above it, not their container.
+  raum mit schlangenglyphen: locations/versunkene_stadt_dungeon
+  muschelraum mit mimic: locations/versunkene_stadt_dungeon
+  raum mit brunnen und gitter: locations/versunkene_stadt_dungeon
+  kaminraum mit grüner flamme: locations/versunkene_stadt_dungeon
+  bibliothek der gruft: locations/gruft_des_grafen
+  # The exploration continues a week later: the lab is "der letzte erforschte
+  # Raum des Dungeons", and the Palantir ruling places it in the swamp dungeon.
+  elektrischer gang: locations/versunkene_stadt_dungeon
+  halle der seelennetze: locations/versunkene_stadt_dungeon
+  labor der hexe: locations/versunkene_stadt_dungeon
+
+  # The session is a guild tavern evening and names no other place; the guild
+  # sits in Ehrenfels, so this is its tavern. An assumption, not a citation.
+  taverne (ungenannt): locations/taverne_von_ehrenfels
+
+  # Taverns, assigned to the town their session plays in.
+  die schmierige taverne: locations/schmierige_taverne_von_willauch
+  die taverne neben der kirche: locations/taverne_neben_der_kirche_von_willauch
+  zum grünen sichelmond: locations/zum_gruenen_sichelmond_von_tiefwasser
+  die taverne im gestrandeten schiff: locations/taverne_im_gestrandeten_schiff_von_tiefwasser
+  taverne kyla: locations/taverne_kyla_von_sanddorn
+
+  # One island group under two names, plus its main island as its own place.
+  sanddorninseln (sundown-inseln): locations/sanddorninseln
+  sanddorn (hauptinsel): locations/hauptinsel_von_sanddorn
   der turm: locations/turm
   der alte turm: locations/turm
   kleinringtal: locations/ringtal
@@ -469,7 +518,15 @@ ignore:
 # A class of object, not an object: every mention is a different potion, and an
 # entry about "healing potions in general" carries nothing worth linking.
 - items/heiltrank
-# Two unrelated inns in two unrelated towns; "die Taverne" is not an identity.
+# Camps the party pitched for a night and left. Not places, and not
+# identifiable: one note even describes the VTT rather than the world.
+- locations/das_lager
+- locations/lager_bei_der_ruine
+- locations/gepluendertes_lager
+# Named after a camp that is itself unidentifiable.
+- locations/die_hoehle_beim_lager
+# The 2026-04-09 mention is now split out as the tavern of Ehrenfels; what
+# remains under this id is one unplaceable inn.
 - locations/die_taverne
 # Ordinary gear and money, not artefacts: only the special, magical items are
 # worth a node. An antidote bought in a village or a chest of coin carries
@@ -563,6 +620,14 @@ split:
 - name: harald
   session: '2026-04-14'
   concept_id: npcs/abisalis_harald
+# A bare "Taverne" must not be merged by name — every town has one, and a merge
+# would pull them all together. The session says which town it is.
+- name: taverne
+  session: '2025-04-09'
+  concept_id: locations/taverne_von_breska
+- name: die taverne
+  session: '2026-04-09'
+  concept_id: locations/taverne_von_ehrenfels
 # Generic place nouns that clustered unrelated places into one entry. The names
 # are descriptive labels, safe to rename via canonical_name.
 - name: mine
@@ -661,6 +726,17 @@ canonical_name:
   locations/fluechtlingslager_von_breska: Flüchtlingslager von Breska
   locations/waldstueck_bei_breska: Waldstück bei Breska
   locations/festung_von_boragdil: Festung von Boragdil
+  locations/banditenlager_der_silberkerne: Banditenlager der Silberkerne
+  locations/berglager_der_hendriks_sippe: Berglager der Hendriks-Sippe
+  locations/lagerhaus_von_ehrenfels: Lagerhaus von Ehrenfels
+  locations/taverne_von_breska: Taverne von Breska
+  locations/taverne_von_ehrenfels: Taverne von Ehrenfels
+  locations/schmierige_taverne_von_willauch: Schmierige Taverne von Willauch
+  locations/taverne_neben_der_kirche_von_willauch: Taverne neben der Kirche von Willauch
+  locations/zum_gruenen_sichelmond_von_tiefwasser: Zum grünen Sichelmond (Tiefwasser)
+  locations/taverne_im_gestrandeten_schiff_von_tiefwasser: Taverne im gestrandeten Schiff (Tiefwasser)
+  locations/taverne_kyla_von_sanddorn: Taverne Kyla von Sanddorn
+  locations/hauptinsel_von_sanddorn: Hauptinsel von Sanddorn
   npcs/lord_kalidarn_von_willauch: Lord Kalidarn von Willauch
   npcs/kraeuterhexe_von_lady_kalen: Kräuterhexe von Lady Kalen
   npcs/lady_kalen: Lady Kalen

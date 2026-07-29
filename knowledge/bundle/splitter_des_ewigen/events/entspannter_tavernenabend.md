@@ -10,7 +10,7 @@ id: EVENT_ENTSPANNTER_TAVERNENABEND
 subtype: Sonstiges
 ---
 
-Die Heldengruppe hat sich für einen geselligen Abend in einer [Taverne](/locations/taverne.md) ohne offiziellen Gildenauftrag entschieden. Dieses besondere Ereignis rahmt die gesamte Session und ermöglicht freies Rollenspiel abseits gefährlicher Missionen.
+Die Heldengruppe hat sich für einen geselligen Abend in einer [Taverne](/locations/taverne_von_breska.md) ohne offiziellen Gildenauftrag entschieden. Dieses besondere Ereignis rahmt die gesamte Session und ermöglicht freies Rollenspiel abseits gefährlicher Missionen.
 
 # Belege
 

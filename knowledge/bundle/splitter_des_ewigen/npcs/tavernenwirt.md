@@ -9,7 +9,7 @@ timestamp: '2025-07-22T00:00:00Z'
 id: NPC_TAVERNENWIRT
 ---
 
-Ein Troggal (orkähnliches Wesen), der die [Taverne](/locations/taverne.md) führt. Wacht durch den Lärm auf, bedroht zunächst Lindo, erkennt dann die Situation und holt die Stadtwachen zur Hilfe.
+Ein Troggal (orkähnliches Wesen), der die [Taverne](/locations/taverne_von_breska.md) führt. Wacht durch den Lärm auf, bedroht zunächst Lindo, erkennt dann die Situation und holt die Stadtwachen zur Hilfe.
 
 # Belege
 

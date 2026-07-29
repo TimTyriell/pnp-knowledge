@@ -10,7 +10,7 @@ id: NPC_DIE_SCHMUGGLER
 subtype: Bande
 ---
 
-Eine Untergrundorganisation in [Willauch](/locations/willauch.md), die unter anderem Schmuggelrouten, Tarnmittel und gefälschte Identitäten anbietet. [Sys Fizik](/npcs/sys_fizik.md) arbeitet für sie, und in ihrer [Taverne](/locations/taverne.md) werden diskret Geschäfte abgewickelt.
+Eine Untergrundorganisation in [Willauch](/locations/willauch.md), die unter anderem Schmuggelrouten, Tarnmittel und gefälschte Identitäten anbietet. [Sys Fizik](/npcs/sys_fizik.md) arbeitet für sie, und in ihrer [Taverne](/locations/taverne_von_breska.md) werden diskret Geschäfte abgewickelt.
 
 # Belege
 

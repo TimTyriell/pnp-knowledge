@@ -10,7 +10,7 @@ id: ITEM_DREI_FLAESCHCHEN_AUS_DEM_LABOR
 subtype: Trank
 ---
 
-Kleine, unbeschriftete Fläschchen mit unbekanntem Inhalt, die [Cookie](/characters/cookie.md) aus einem Regal im [Forschungslabor](/locations/forschungslabor.md) mitnimmt. Sie kann sie nicht identifizieren, hofft aber, sie später dem Alchemisten zeigen zu können. Möglicherweise handelt es sich um Heilmittel oder experimentelle Substanzen.
+Kleine, unbeschriftete Fläschchen mit unbekanntem Inhalt, die [Cookie](/characters/cookie.md) aus einem Regal im [Forschungslabor](/locations/der_dungeon_der_uralten_unterkunft.md) mitnimmt. Sie kann sie nicht identifizieren, hofft aber, sie später dem Alchemisten zeigen zu können. Möglicherweise handelt es sich um Heilmittel oder experimentelle Substanzen.
 
 # Belege
 
