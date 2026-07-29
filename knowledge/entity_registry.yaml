@@ -4070,12 +4070,6 @@ entities:
   canonical_name: Die Harpyienartige Kreatur
   aliases: []
   mention_count: 1
-- concept_id: npcs/die_hexe_alchemistin_von_lady_kalen
-  type: NPC
-  canonical_name: die Hexe (Alchemistin von Lady Kalen)
-  aliases:
-  - Lady Kalen
-  mention_count: 2
 - concept_id: npcs/die_kinder
   type: NPC
   canonical_name: Die Kinder
@@ -4499,6 +4493,12 @@ entities:
   canonical_name: Kommandant der Einheit
   aliases: []
   mention_count: 1
+- concept_id: npcs/kraeuterhexe_von_lady_kalen
+  type: NPC
+  canonical_name: Kräuterhexe von Lady Kalen
+  aliases:
+  - die Hexe (Alchemistin von Lady Kalen)
+  mention_count: 1
 - concept_id: npcs/krevis
   type: NPC
   canonical_name: Krevis
@@ -4537,6 +4537,11 @@ entities:
 - concept_id: npcs/kultistenmagier
   type: NPC
   canonical_name: Kultistenmagier
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/lady_kalen
+  type: NPC
+  canonical_name: Lady Kalen
   aliases: []
   mention_count: 1
 - concept_id: npcs/lady_lyra_von_willoch

@@ -137,6 +137,10 @@ merge:
   moorhexe hack: npcs/lenra
   heck (die hexe): npcs/lenra
   die hack (hexe): npcs/lenra
+  # The herb witch and the woman she serves ended up in one node because
+  # {lady, kalen} is a subset of her full name and both had a single mention.
+  die hexe (alchemistin von lady kalen): npcs/kraeuterhexe_von_lady_kalen
+  lady kalen: npcs/lady_kalen
   die sumpfhexe: npcs/lenra
   sumpfhexe: npcs/lenra
   leandra: npcs/lenra
@@ -413,7 +417,10 @@ never_merge:
 # but the Splitterwelt has a *second* Hag who is not: the herb witch serving
 # Uhoriaks' followers, Lady Kalen's alchemist. Keep her out of Lenra's entry.
 - - npcs/lenra
-  - npcs/die_hexe_alchemistin_von_lady_kalen
+  - npcs/kraeuterhexe_von_lady_kalen
+# The witch serves Lady Kalen; they are not the same woman.
+- - npcs/kraeuterhexe_von_lady_kalen
+  - npcs/lady_kalen
 # Two different Adeligas (GM ruling); the fuzzy pass would refold them.
 - - npcs/adeliga_vom_haus_des_loewen
   - npcs/adeliga_der_eulenseraph
@@ -621,6 +628,8 @@ canonical_name:
   # GM ruling: the canonical spelling is Willauch. The id stays 'willau' —
   # ids are identity, names are display, and the wiki URL must not move.
   locations/willau: Willauch
+  npcs/kraeuterhexe_von_lady_kalen: Kräuterhexe von Lady Kalen
+  npcs/lady_kalen: Lady Kalen
   npcs/adeliga_vom_haus_des_loewen: Adeliga (Haus des Löwen)
   npcs/adeliga_der_eulenseraph: Adeliga (Eulen-Seraph)
   # The transcripts spell it Brechka, Bresca, Breschka and Reska; the campaign
