@@ -46,13 +46,13 @@ merge:
   tarvok (der erdrichter): deities/tarvok_der_erdrichter
   seras: deities/seras
   abyssalis: domains/splitterwelt
-  abyssares: domains/abisalis
+  abyssares: domains/splitterwelt
   amulett von duran: items/amulett_des_heiligen_duran
   amulett: items/amulett_des_heiligen_duran
   amulett des lindo laut: items/amulett_des_heiligen_duran
   amulett von lindo laut: items/amulett_des_heiligen_duran
   lindo lauts amulett: items/amulett_des_heiligen_duran
-  alte götter (old gods): factions/die_alten_goetter
+  alte götter (old gods): deities/alte_goetter
   vasur / vasul: deities/vharzul
   warzul (varsurs): deities/vharzul
   valsur: deities/vharzul
@@ -67,7 +67,6 @@ merge:
   duran: deities/heiliger_duran
   die neuen götter: deities/neue_goetter
   abyssalis (splitterwelt): domains/splitterwelt
-  materielle pläne: domains/materielle_ebene
   die gilde: factions/gilde_von_ehrenfels
   gilde: factions/gilde_von_ehrenfels
   dwarfmasters: factions/gilde_von_ehrenfels
@@ -80,31 +79,28 @@ merge:
   goblinhorde: factions/goblins
   goblins der minen: factions/goblins
   die hack: npcs/lenra
-  rotunas bande: factions/rotunas_helden
-  untote armeen: factions/untotenarmee
-  die neuen: factions/die_neuen_goetter
-  die alten: factions/alte_goetter
+  rotunas bande: factions/die_gefaehrten_von_rotunas
+  untote armeen: factions/belorus_untotenarmee
+  die neuen: deities/neue_goetter
+  die alten: deities/alte_goetter
   amulett der vier: items/amulett_des_heiligen_duran
   amulett des duran: items/amulett_des_heiligen_duran
   amulett (medaillon): items/amulett_des_heiligen_duran
   amulett (stimmen): items/amulett_des_heiligen_duran
   die geister im amulett: items/amulett_des_heiligen_duran
-  cepros’ heiliger streitkolben: items/der_heilige_streitkolben
-  dodos heiliger streitkolben: items/der_heilige_streitkolben
-  dodos streitkolben: items/der_heilige_streitkolben
-  der phönixfeder: items/phoenixfeder
+  cepros’ heiliger streitkolben: items/streitkolben_von_dodo
+  der phönixfeder: items/die_phoenixfeder
   cookies kaputter kompass: items/kaputter_kompass
-  stab (lindos stab): items/lindos_stab
-  stab: items/lindos_stab
+  stab (lindos stab): items/lindo_lauts_stab
+  stab: items/lindo_lauts_stab
   schattenfinger (kenku-kralle): items/schattenfinger
   schattenfinger-klaue: items/schattenfinger
   gegengift aus dem sumpf: items/gegengifte
-  heilige pfeile (holy arrows): items/heilige_pfeile
   der kristall: items/gruener_kristall
   göttliche handschellen: items/magische_handschellen
   schlüssel: items/magischer_schluessel
   der stab (schlüssel): items/magischer_schluessel
-  notiz: items/notiz_findet_einen_suendenbock
+  notiz: items/notiz_von_hal
   willauch: locations/willau
   willoch: locations/willau
   willau (willoch): locations/willau
@@ -124,12 +120,12 @@ merge:
   kleinringtal: locations/ringtal
   berg zebras: locations/berge_von_zebros
   zebras berg: locations/berge_von_zebros
-  der katakomben-dungeon: locations/katakomben
+  der katakomben-dungeon: locations/katakomben_unter_dem_friedhof
   kathedrale von steinbachtal: locations/kathedrale
-  der altarraum des ohoriaks: locations/altarraum
-  die gruft des grafen: locations/gruft
+  der altarraum des ohoriaks: locations/altarraum_des_uhoriaks
+  die gruft des grafen: locations/gruft_des_grafen
   boragdil / brocadil: locations/boragdil
-  die arena: locations/arena_von_willau
+  die arena: locations/arena_von_willoch
   naeruk: npcs/nyruk
   nai ruck: npcs/nyruk
   nairook (nayruk): npcs/nyruk
@@ -139,7 +135,10 @@ merge:
   der gildenmeister: npcs/nox
   enox (gildenmeister): npcs/nox
   moorhexe hack: npcs/lenra
-  heck (die hexe): npcs/hexe
+  heck (die hexe): npcs/lenra
+  die hack (hexe): npcs/lenra
+  die sumpfhexe: npcs/lenra
+  sumpfhexe: npcs/lenra
   leandra: npcs/lenra
   geist: npcs/geist_von_rotunas
   der geist: npcs/geist_von_rotunas
@@ -261,7 +260,9 @@ merge:
   die champions der arena: npcs/die_champions_der_arena
   die schmuggler: npcs/die_schmuggler
   dorfbewohner von gemata: npcs/dorfbewohner_von_gemata
-  freibeuter: npcs/freibeuter
+  # GM ruling: these privateers are Harald's own crew, so they belong in his
+  # entry rather than in a node of their own.
+  freibeuter: npcs/freibeuter_harald
   gnolle: npcs/gnolle
   grottenschrate: npcs/grottenschrate
   halblingsdorfbewohner: npcs/halblingsdorfbewohner
@@ -318,6 +319,34 @@ merge:
   # GM ruling: chapel, monastery and ruin are one place at different times.
   kapelle des heiligen duran: locations/kloster_des_heiligen_duran
   ruine des heiligen duran: locations/kloster_des_heiligen_duran
+
+  # --- Items ----------------------------------------------------------------
+  # The same totems Nerash gave every hero, described once in the singular and
+  # once as the set of white statuettes the guildmaster handed out.
+  totems der nerash: items/totem_von_nerash
+  # Dodo's mace, described six different ways across six sessions — every note
+  # says "Dodos Waffe". Not Brandon's Morgenstern des Heiligen Duran.
+  streitkolben: items/streitkolben_von_dodo
+  dodos leuchtender streitkolben: items/streitkolben_von_dodo
+  heiliger streitkolben dodos: items/streitkolben_von_dodo
+  der heilige streitkolben aus zebras: items/streitkolben_von_dodo
+  streitkolben von zebras: items/streitkolben_von_dodo
+  dodos streitkolben: items/streitkolben_von_dodo
+  dodos heiliger streitkolben: items/streitkolben_von_dodo
+  # GM ruling: one sword. "Verflucht" and "heilig" are two readings of the same
+  # wilful blade Esterossa carries.
+  esterossas verfluchtes schwert: items/esterossas_schwert
+  # Whisper switches language mid-session, so one object arrives under a German
+  # and an English name. These two are the only pair worth keeping — the other
+  # twins (Armbrust/crossbow, Ausdauertrank/stamina potion) are ordinary gear
+  # and drop out entirely via ignore.
+  glow-ringe: items/magische_boxringe
+  glow ringe: items/magische_boxringe
+  magische boxringe (glowing rings): items/magische_boxringe
+  # Generic ids invite the next session's unrelated diary or symbol to join
+  # them, so the specific thing gets a specific id.
+  tagebuch: items/gestohlenes_tagebuch
+  symbol: items/symbol_in_der_villa
 
   # --- Whisper variants of the pantheon ------------------------------------
   # Every one of these is one god heard several ways. Confirmed by the GM
@@ -380,6 +409,11 @@ never_merge:
 # Two unrelated men called Hans (GM ruling); the fuzzy pass would refold them.
 - - npcs/hans_soldat_aus_breska
   - npcs/hans_wirt_zum_gruenen_sichelmond
+# GM ruling: Lenra is the Hag, and every witch on the material side is her —
+# but the Splitterwelt has a *second* Hag who is not: the herb witch serving
+# Uhoriaks' followers, Lady Kalen's alchemist. Keep her out of Lenra's entry.
+- - npcs/lenra
+  - npcs/die_hexe_alchemistin_von_lady_kalen
 # Two different Adeligas (GM ruling); the fuzzy pass would refold them.
 - - npcs/adeliga_vom_haus_des_loewen
   - npcs/adeliga_der_eulenseraph
@@ -408,6 +442,55 @@ ignore:
 - items/heiltrank
 # Two unrelated inns in two unrelated towns; "die Taverne" is not an identity.
 - locations/die_taverne
+# Ordinary gear and money, not artefacts: only the special, magical items are
+# worth a node. An antidote bought in a village or a chest of coin carries
+# nothing that a reader would follow a link for. Same reasoning as
+# items/heiltrank above. Ids must be the ones resolve actually produces —
+# ignoring "items/gegengifte" did nothing while the real nodes were
+# "items/gegengift" and "items/gegengift_anti_gift_aus_dem_sumpf".
+- items/heiltraenke
+- items/gegengift
+- items/gegengift_anti_gift_aus_dem_sumpf
+# A merge above still routes "gegengift aus dem sumpf" here, so this id has to
+# be listed too — an ignore only bites on the exact id a mention lands on.
+- items/gegengifte
+- items/truhe_gold
+- items/gold_aus_der_schatztruhe
+- items/handvoll_gold_belohnung
+- items/empty_chest_ender_truhe
+# Ordinary gear, reviewed with the GM 2026-07-28. Weapons and armour without
+# anything special about them, consumables, camp kit, coin and ammunition.
+# "Verbessert" is upgrade mechanics, not an artefact. Kronos' corpse stays: it
+# is the proof for a bounty and carries the plot.
+- items/armbrust
+- items/armbrust_advanced_crossbow
+- items/shortbow
+- items/otis_kurzbogen
+- items/die_balliste
+- items/waffen_von_dodo
+- items/silberpfeile
+- items/verbesserter_kriegshammer
+- items/verbesserte_arkan_handschuhe
+- items/schild
+- items/ausdauertrank
+- items/stamina_potion
+- items/brauner_brei
+- items/glueckstag_trank
+- items/stress_trank
+- items/heiltrank_von_lukas
+- items/rotunas_heiltrank
+- items/talrons_heiltraenke
+- items/alchemisten_flaeschchen
+- items/baerenfallen
+- items/palisaden
+- items/rauchbombe
+- items/zwergenbomben
+- items/wasserbehaelter
+- items/premium_schlafsack
+- items/der_goldtopf
+- items/goldene_perlen_brocken
+- items/goldsaecke_von_valeria
+- items/schleimbaelle
 split:
 # "Holodarn" is a mishearing that covered two different beings. 2026-05-13 is
 # the servant ("dient Huludan"); 2026-06-16 is the Titan himself, trapped in
@@ -561,6 +644,10 @@ canonical_name:
   locations/sumpf_vor_dem_goblin_dorf: Sumpf vor dem Goblin-Dorf
   locations/sumpf_der_sumpfhexe: Sumpf der Sumpfhexe
   locations/sumpf_bei_nebelwacht: Sumpf bei Nebelwacht
+  items/streitkolben_von_dodo: Dodos heiliger Streitkolben
+  items/magische_boxringe: Magische Boxringe
+  items/gestohlenes_tagebuch: Gestohlenes Tagebuch
+  items/symbol_in_der_villa: Symbol in der Villa
   items/seelenstein_des_rotunas: Seelenstein des Rotunas
   items/gruener_seelenkristall_von_hans: Grüner Seelenkristall von Hans
   items/haralds_seelenstein: Haralds Seelenstein

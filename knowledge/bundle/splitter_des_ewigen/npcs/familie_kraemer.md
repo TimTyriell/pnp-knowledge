@@ -9,7 +9,7 @@ timestamp: '2025-04-09T00:00:00Z'
 id: NPC_FAMILIE_KRAEMER
 ---
 
-Die Familie Krämer betreibt einen Hof mit Kühen und einem Schmied. Das Kind (die Tochter) erschrickt vor [Valeria](/characters/valeria.md), rennt in den Wald und löst eine Kuhpanik aus. Die Eltern sind verärgert, helfen aber bei der Verteidigung, nachdem der Goblinspäher getötet wurde. Der Schmied stellt drei [Bärenfallen](/items/baerenfallen.md) und eine weitere Barrikade zur Verfügung.
+Die Familie Krämer betreibt einen Hof mit Kühen und einem Schmied. Das Kind (die Tochter) erschrickt vor [Valeria](/characters/valeria.md), rennt in den Wald und löst eine Kuhpanik aus. Die Eltern sind verärgert, helfen aber bei der Verteidigung, nachdem der Goblinspäher getötet wurde. Der Schmied stellt drei Bärenfallen und eine weitere Barrikade zur Verfügung.
 
 # Belege
 

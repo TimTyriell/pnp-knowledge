@@ -10,7 +10,7 @@ id: ITEM_KONTROLLSYMBOL_AUF_TATTRICK
 subtype: Sonstiges
 ---
 
-Ein magisches Mal auf [Tattricks](/npcs/tattrick.md) Hinterkopf, das [Vorgul'tar](/deities/vorgul_tar.md) nutzt, um ihn auch über weite Distanzen zu steuern und zu überwachen. [Esterossa](/characters/esterossa.md) löscht es mit göttlicher Hilfe und ersetzt es durch das [Symbol](/items/symbol.md) seines eigenen Gottes, wodurch Tattrick befreit wird.
+Ein magisches Mal auf [Tattricks](/npcs/tattrick.md) Hinterkopf, das [Vorgul'tar](/deities/vorgul_tar.md) nutzt, um ihn auch über weite Distanzen zu steuern und zu überwachen. [Esterossa](/characters/esterossa.md) löscht es mit göttlicher Hilfe und ersetzt es durch das [Symbol](/items/symbol_in_der_villa.md) seines eigenen Gottes, wodurch Tattrick befreit wird.
 
 # Belege
 

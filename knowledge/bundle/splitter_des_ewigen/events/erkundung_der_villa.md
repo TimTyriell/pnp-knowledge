@@ -10,7 +10,7 @@ id: EVENT_ERKUNDUNG_DER_VILLA
 subtype: Entdeckung
 ---
 
-Die sechs Abenteurer betraten unter der Führung des [Richters](/npcs/richter_herr_der_seelenwacht.md) und des [Schinders](/npcs/schinder.md) die alte [Villa](/locations/villa.md) oberhalb von [Jalan](/locations/jalan.md). [Dante](/characters/dante.md) öffnete gewaltsam die Tür, und die Gruppe gelangte in eine Halle mit Treppe. Die Erkundung begann mit der Entdeckung eines unbekannten [Symbols](/items/symbol.md) auf dem Boden, das die Gruppe vor ein Rätsel stellte. Das weitere Vorgehen wurde durch das [Ende](/locations/ende.md) der Aufzeichnung unterbrochen.
+Die sechs Abenteurer betraten unter der Führung des [Richters](/npcs/richter_herr_der_seelenwacht.md) und des [Schinders](/npcs/schinder.md) die alte [Villa](/locations/villa.md) oberhalb von [Jalan](/locations/jalan.md). [Dante](/characters/dante.md) öffnete gewaltsam die Tür, und die Gruppe gelangte in eine Halle mit Treppe. Die Erkundung begann mit der Entdeckung eines unbekannten [Symbols](/items/symbol_in_der_villa.md) auf dem Boden, das die Gruppe vor ein Rätsel stellte. Das weitere Vorgehen wurde durch das [Ende](/locations/ende.md) der Aufzeichnung unterbrochen.
 
 # Belege
 

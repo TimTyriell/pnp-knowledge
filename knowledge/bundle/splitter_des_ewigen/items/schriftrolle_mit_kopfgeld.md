@@ -10,7 +10,7 @@ id: ITEM_SCHRIFTROLLE_MIT_KOPFGELD
 subtype: Schriftstück
 ---
 
-Ein Brief, der ein Kopfgeld in Höhe einer [Truhe Gold](/items/truhe_gold.md) auf die gesamte Heldengruppe aussetzt. Beweist, dass ein unbekannter Auftraggeber die [Brabarand-Gilde](/factions/brabarand_gilde.md) angeheuert hat.
+Ein Brief, der ein Kopfgeld in Höhe einer Truhe Gold auf die gesamte Heldengruppe aussetzt. Beweist, dass ein unbekannter Auftraggeber die [Brabarand-Gilde](/factions/brabarand_gilde.md) angeheuert hat.
 
 # Belege
 

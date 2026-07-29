@@ -10,7 +10,7 @@ id: ITEM_HALS_PUPPE
 subtype: Schriftstück
 ---
 
-Eine handgeschnitzte Holzpuppe, die [Harl](/npcs/hal_harl.md), ein Bandit der [Silberkornbande](/factions/silberkerne.md), [Nyrella](/characters/nyrella.md) aus seinem Vorleben mitgegeben hat. Sie trägt das Wappen der Bande (grauer [Schild](/items/schild.md) mit drei Apfelkörnern) und dient als Beweis für die Freundschaft mit der Bande.
+Eine handgeschnitzte Holzpuppe, die [Harl](/npcs/hal_harl.md), ein Bandit der [Silberkornbande](/factions/silberkerne.md), [Nyrella](/characters/nyrella.md) aus seinem Vorleben mitgegeben hat. Sie trägt das Wappen der Bande (grauer Schild mit drei Apfelkörnern) und dient als Beweis für die Freundschaft mit der Bande.
 
 # Belege
 

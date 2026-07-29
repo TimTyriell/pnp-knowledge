@@ -10,7 +10,7 @@ id: LOC_BRUNNEN_UNTER_DER_KAPELLE
 subtype: Dungeon
 ---
 
-Ein magischer, blau leuchtender Brunnen im Keller der [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md), der einst die Minen mit Energie versorgte. Als das [Sternamulett](/items/sternamulett.md) hineingelegt wird, wird das Wasser schwarz, Pilze wachsen und ein Portal zur [Sumpfhexe](/npcs/die_sumpfhexe.md) öffnet sich.
+Ein magischer, blau leuchtender Brunnen im Keller der [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md), der einst die Minen mit Energie versorgte. Als das [Sternamulett](/items/sternamulett.md) hineingelegt wird, wird das Wasser schwarz, Pilze wachsen und ein Portal zur [Sumpfhexe](/npcs/lenra.md) öffnet sich.
 
 # Belege
 

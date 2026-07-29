@@ -10,7 +10,7 @@ id: EVENT_BERGUNG_DES_THRONS
 subtype: Entdeckung
 ---
 
-Durch erneutes Aktivieren des Portals mit Lindos Stab holen die Helden den dämonischen Thron, [Nyrella](/characters/nyrella.md) und die Tiere aus dem Heiligtum in die reelle Welt. Der Thron wird als gefährliches Artefakt eingestuft, und zusätzlich wird eine [Truhe Gold](/items/truhe_gold.md) geborgen.
+Durch erneutes Aktivieren des Portals mit Lindos Stab holen die Helden den dämonischen Thron, [Nyrella](/characters/nyrella.md) und die Tiere aus dem Heiligtum in die reelle Welt. Der Thron wird als gefährliches Artefakt eingestuft, und zusätzlich wird eine Truhe Gold geborgen.
 
 # Belege
 

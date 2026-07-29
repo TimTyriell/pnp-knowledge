@@ -10,7 +10,7 @@ id: LOC_SCHMID_HOF
 subtype: Siedlung
 ---
 
-Der Bauernhof der [Familie Schmid](/npcs/familie_schmid.md), die auf Holzverarbeitung spezialisiert ist und die [Palisaden](/items/palisaden.md) für die Verteidigung herstellt.
+Der Bauernhof der [Familie Schmid](/npcs/familie_schmid.md), die auf Holzverarbeitung spezialisiert ist und die Palisaden für die Verteidigung herstellt.
 
 # Belege
 

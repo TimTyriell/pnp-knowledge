@@ -10,7 +10,7 @@ id: ITEM_DER_HEILIGE_DOLCH
 subtype: Waffe
 ---
 
-Ein von [Dodo](/characters/dodo.md) aus den Materialien der Schmiede gefertigter dolchartiger Aufsatz für seinen [Streitkolben](/items/streitkolben.md). Er wird mit dem heiligen Öl gesalbt und in der blauen Flamme entzündet. Im Kampf trifft Dodo die Kreatur damit, und sie zerfällt augenblicklich zu Staub – der erste Hinweis, dass es sich um die richtige Waffe handelt. Das Feuer erlischt jedoch nach dem Treffer und muss später neu entfacht werden, weil die Gruppe kein Drachenblut verwendet hat.
+Ein von [Dodo](/characters/dodo.md) aus den Materialien der Schmiede gefertigter dolchartiger Aufsatz für seinen [Streitkolben](/items/streitkolben_von_dodo.md). Er wird mit dem heiligen Öl gesalbt und in der blauen Flamme entzündet. Im Kampf trifft Dodo die Kreatur damit, und sie zerfällt augenblicklich zu Staub – der erste Hinweis, dass es sich um die richtige Waffe handelt. Das Feuer erlischt jedoch nach dem Treffer und muss später neu entfacht werden, weil die Gruppe kein Drachenblut verwendet hat.
 
 # Belege
 

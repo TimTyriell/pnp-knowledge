@@ -10,7 +10,7 @@ id: EVENT_UEBERGABE_DES_AMULETTS_AN_ROTUNAS
 subtype: Sonstiges
 ---
 
-[Horatio](/npcs/horatio.md) übergibt [Rotunas](/characters/rotunas.md) sein Amulett als Geste des Vertrauens und [Symbol](/items/symbol.md) der Autorität über die unterirdischen Bereiche.
+[Horatio](/npcs/horatio.md) übergibt [Rotunas](/characters/rotunas.md) sein Amulett als Geste des Vertrauens und [Symbol](/items/symbol_in_der_villa.md) der Autorität über die unterirdischen Bereiche.
 
 # Belege
 

@@ -10,7 +10,7 @@ id: LOC_DAS_BANDITENVERSTECK
 subtype: Festung
 ---
 
-Ein befestigter Stützpunkt in den Bergen, der als Zufluchtsort für die Banditengilde und die Flüchtlinge dient. Es verfügt über einen Turm, [Palisaden](/items/palisaden.md), ein Tor und einen Graben mit Brücke. Die gesamte Session spielt hier, und es wird während der Schlacht schwer beschädigt, bleibt aber letztlich standhaft.
+Ein befestigter Stützpunkt in den Bergen, der als Zufluchtsort für die Banditengilde und die Flüchtlinge dient. Es verfügt über einen Turm, Palisaden, ein Tor und einen Graben mit Brücke. Die gesamte Session spielt hier, und es wird während der Schlacht schwer beschädigt, bleibt aber letztlich standhaft.
 
 # Belege
 

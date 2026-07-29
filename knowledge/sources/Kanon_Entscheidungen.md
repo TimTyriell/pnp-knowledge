@@ -419,6 +419,41 @@ ENTSCHEIDUNG: Wer in Session 5 im Moment vor dem Knall gesprochen hat, ist
 **bewusst nicht festgelegt** und für den Kanon nicht relevant. Dieser Punkt ist
 **nicht** als offener Konflikt zu führen.
 
+### Dodos heiliger Streitkolben
+
+ENTSCHEIDUNG: Dodo führt **eine** heilige Waffe. „Streitkolben", „Dodos
+leuchtender Streitkolben", „Heiliger Streitkolben Dodos", „Der heilige
+Streitkolben aus Zebras" und „Streitkolben von Zebras" bezeichnen alle
+dieselbe. Nicht zu verwechseln mit dem *Morgenstern des Heiligen Duran*, der
+Ritter Brandon gehört.
+
+ENTSCHEIDUNG: Die drei Herkunftsangaben widersprechen sich **nicht**: Dodo zog
+die Waffe **in der Festung Zebras aus einem Spiegel**, und sie stammt
+**ursprünglich von Cepros**. Das sind drei Teile einer Geschichte.
+
+### Die Hags
+
+ENTSCHEIDUNG: **Lenra** ist *die Hag* der Kampagne. „Die Hack", „Heck",
+„Lanra", „Leandra", „Moorhexe" und **„die Sumpfhexe"** bezeichnen alle sie.
+
+ENTSCHEIDUNG: **Ausnahme** — im **Abisalis** (= der *Splitterwelt*) existiert
+eine **zweite Hag**, die **nicht** Lenra ist: die **Kräuterhexe der Anhänger
+Uhoriaks'**, persönliche Alchemistin von **Lady Kalen**, der Sprecherin
+Uhoriaks' und Herrin von Boragdil. Sie darf nie mit Lenra vermengt werden.
+
+### Abisalis
+
+ENTSCHEIDUNG: **Abisalis ist die Splitterwelt** — dieselbe Domäne, zwei Namen.
+„Abyssalis" und „Abyssares" sind Transkriptionsvarianten.
+
+### Was ein Gegenstand ist
+
+ENTSCHEIDUNG: Nur **besondere** Gegenstände werden als eigener Eintrag geführt
+— magische, heilige oder handlungstragende Artefakte. **Gewöhnliche
+Ausrüstung** wird nicht getrackt: normale Schwerter und Rüstungen,
+Verbrauchsgüter wie Heiltränke und Gegengifte, Geld und Goldfunde. Ein Eintrag,
+dem ein Leser nicht folgen würde, gehört nicht in die Wissensbasis.
+
 ### Was eine Fraktion ist
 
 ENTSCHEIDUNG: Eine **Fraktion** ist eine Macht, die **über eine Stadt und über

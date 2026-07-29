@@ -10,7 +10,7 @@ id: EVENT_VERTEIDIGUNGSPLANUNG_VON_BRECHKA
 subtype: Sonstiges
 ---
 
-Nach der Warnung vor dem Goblinangriff organisieren [Valeria](/characters/valeria.md) und [Rotunas](/characters/rotunas.md) die Dorfbewohner, um eine Falle zu bauen. Sie platzieren [Palisaden](/items/palisaden.md) und [Bärenfallen](/items/baerenfallen.md) so, dass die [Goblins](/factions/goblins.md) in einen engen Bereich gelockt werden, wo die Bogenschützen und Kämpfer sie erwarten. Der Plan basiert auf der gefälschten Notiz.
+Nach der Warnung vor dem Goblinangriff organisieren [Valeria](/characters/valeria.md) und [Rotunas](/characters/rotunas.md) die Dorfbewohner, um eine Falle zu bauen. Sie platzieren Palisaden und Bärenfallen so, dass die [Goblins](/factions/goblins.md) in einen engen Bereich gelockt werden, wo die Bogenschützen und Kämpfer sie erwarten. Der Plan basiert auf der gefälschten Notiz.
 
 # Belege
 

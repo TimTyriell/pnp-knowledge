@@ -10,7 +10,7 @@ id: LOC_GEWOELBE_UNTER_STEINBACHTAL
 subtype: Dungeon
 ---
 
-Ein unterirdischer Raum mit einem magischen Pentagramm, in dem der [Streitkolben](/items/streitkolben.md) [Zebrus Zorn](/items/zebrus_zorn.md) von blauen Flammen und unsichtbaren Ketten gehalten wurde. Er war hinter einer zwergisch versiegelten Tür versteckt und mit einem Spiegel verbunden, über den die Waffe erreichbar war. Der Raum füllte sich während der Bergung mit beißendem Nebel.
+Ein unterirdischer Raum mit einem magischen Pentagramm, in dem der [Streitkolben](/items/streitkolben_von_dodo.md) [Zebrus Zorn](/items/zebrus_zorn.md) von blauen Flammen und unsichtbaren Ketten gehalten wurde. Er war hinter einer zwergisch versiegelten Tür versteckt und mit einem Spiegel verbunden, über den die Waffe erreichbar war. Der Raum füllte sich während der Bergung mit beißendem Nebel.
 
 # Belege
 

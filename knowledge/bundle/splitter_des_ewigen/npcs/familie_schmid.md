@@ -9,7 +9,7 @@ timestamp: '2025-04-09T00:00:00Z'
 id: NPC_FAMILIE_SCHMID
 ---
 
-Die Bauernfamilie Schmid arbeitet mit Holz und versorgt die Helden mit acht angespitzten [Palisaden](/items/palisaden.md), die auf der Stelle angefertigt werden. Sie sind kooperativ und machen sich sofort an die Arbeit.
+Die Bauernfamilie Schmid arbeitet mit Holz und versorgt die Helden mit acht angespitzten Palisaden, die auf der Stelle angefertigt werden. Sie sind kooperativ und machen sich sofort an die Arbeit.
 
 # Belege
 

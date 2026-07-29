@@ -20,7 +20,7 @@ Nox ist der Gildenmeister der Dwarfmaster-Gilde (von manchen auch als Abenteurer
 
 Nox ist einer der zentralen Verbündeten und Wissensgeber für die Gruppe. Er führt die Helden in die Geheimnisse der Gilde ein, erklärt die Natur der Portale und der alten Götter und warnt vor Gefahren, die mit den entdeckten Artefakten und Seelenstücken verbunden sind. Im späteren Verlauf wird er zu einem aktiven Kämpfer gegen dämonische Bedrohungen und gerät selbst ins Visier von [Nerash](/deities/nerash.md).
 
-Er agiert als Vermittler von Lösungen: Er bietet göttliche Handschellen an, um [Vasul](/deities/vharzul.md) in [Lindo Laut](/characters/lindo_laut.md) zu bannen, erwähnt die Reise nach Abyssalis mithilfe von Nerashs Schriftrolle, verweist auf die Runen von [Lunara Velora](/characters/lunara_velora.md) im Magia Tower und bringt die [Sumpfhexe](/npcs/die_sumpfhexe.md) als mögliche Wissensquelle ins Spiel. Zudem stellt er einen Schutzzauber bereit, um die Gruppe in [Crowfin Manor](/locations/crowfin_manor.md) vor Vasuls Einfluss abzuschirmen.
+Er agiert als Vermittler von Lösungen: Er bietet göttliche Handschellen an, um [Vasul](/deities/vharzul.md) in [Lindo Laut](/characters/lindo_laut.md) zu bannen, erwähnt die Reise nach Abyssalis mithilfe von Nerashs Schriftrolle, verweist auf die Runen von [Lunara Velora](/characters/lunara_velora.md) im Magia Tower und bringt die [Sumpfhexe](/npcs/lenra.md) als mögliche Wissensquelle ins Spiel. Zudem stellt er einen Schutzzauber bereit, um die Gruppe in [Crowfin Manor](/locations/crowfin_manor.md) vor Vasuls Einfluss abzuschirmen.
 
 ## Wichtige Merkmale
 
@@ -37,7 +37,7 @@ Er agiert als Vermittler von Lösungen: Er bietet göttliche Handschellen an, um
 - **[Nerash](/deities/nerash.md):** Nox bezeichnet Nerash als „verlorenen Demigott“, der einst für die neuen Götter kämpfte und vor langer Zeit verschwand. Später wird Nox selbst zum Ziel von Nerashs Angriff (Session 8). Die Existenz einer Schriftrolle Nerashs, die eine Reise nach Abyssalis ermöglicht, ist ihm bekannt.
 - **[Sandro](/npcs/sandro.md) und [Horatio](/npcs/horatio.md):** Beide tauchen in Session 7 gemeinsam mit Nox auf, um Angreifer abzuwehren, während die Gruppe durch das Portal flieht.
 - **[Inaros](/npcs/inaros.md):** In Session 8 rettet Inaros den ohnmächtig zusammengebrochenen Nox vor dem riesigen Dämonenwesen.
-- **[Sumpfhexe](/npcs/die_sumpfhexe.md):** Nox bringt die Sumpfhexe als mögliche Informantin ins Spiel, da sie mehr über Vasul wissen könnte.
+- **[Sumpfhexe](/npcs/lenra.md):** Nox bringt die Sumpfhexe als mögliche Informantin ins Spiel, da sie mehr über Vasul wissen könnte.
 - **Gilde (Dwarfmaster-Gilde / Abenteurergilde):** Nox ist der unbestrittene Anführer der Gilde. Er bestimmt, wer Zugang zu Geheimwissen über das Rift erhält, und betont mehrfach, dass nur wenige Gildenmitglieder diese Wahrheit kennen.
 
 ## Chronologie

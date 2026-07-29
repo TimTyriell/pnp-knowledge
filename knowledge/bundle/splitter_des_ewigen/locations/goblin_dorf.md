@@ -10,7 +10,7 @@ id: LOC_GOBLIN_DORF
 subtype: Siedlung
 ---
 
-Ein von [Goblins](/factions/goblins.md) erobertes und umfunktioniertes menschliches Dorf, umgeben von [Palisaden](/items/palisaden.md). Besteht aus mehreren Hütten, einem Hauptgebäude und einem kleinen See. Schauplatz des finalen Kampfes gegen [Schleichfurz](/npcs/schleichfurz.md) und seine Bande.
+Ein von [Goblins](/factions/goblins.md) erobertes und umfunktioniertes menschliches Dorf, umgeben von Palisaden. Besteht aus mehreren Hütten, einem Hauptgebäude und einem kleinen See. Schauplatz des finalen Kampfes gegen [Schleichfurz](/npcs/schleichfurz.md) und seine Bande.
 
 # Belege
 

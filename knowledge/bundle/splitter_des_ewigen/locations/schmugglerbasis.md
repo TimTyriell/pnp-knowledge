@@ -10,7 +10,7 @@ id: LOC_SCHMUGGLERBASIS
 subtype: Gebäude
 ---
 
-Ein erstaunlich intaktes Haus im Außenposten, das als Basislager für Abenteurer oder Schmuggler diente. Hier finden die Helden [Heiltränke](/items/heiltraenke.md), eine Spitzhacke, den Schutzkristall und ein Notizbuch mit Beobachtungen über [Untote](/factions/belorus_untotenarmee.md) und Eisbären. Die Tür kann von innen verriegelt werden.
+Ein erstaunlich intaktes Haus im Außenposten, das als Basislager für Abenteurer oder Schmuggler diente. Hier finden die Helden Heiltränke, eine Spitzhacke, den Schutzkristall und ein Notizbuch mit Beobachtungen über [Untote](/factions/belorus_untotenarmee.md) und Eisbären. Die Tür kann von innen verriegelt werden.
 
 # Belege
 

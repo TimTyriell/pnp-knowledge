@@ -10,7 +10,7 @@ id: LOC_SCHMIEDE_IM_DUNGEON
 subtype: Gebäude
 ---
 
-Ein kleiner Raum mit Schmiedewerkzeug und zahlreichen Materialien, die der Zwerg bereits bearbeitet hat. [Dodo](/characters/dodo.md) findet hier eine Anleitung, um eine Waffe gegen die Kreatur zu fertigen, und in einer etwa halbstündigen Arbeit setzt er einen dolchartigen Aufsatz auf seinen [Streitkolben](/items/streitkolben.md). Die Schmiede ist funktionsfähig, aber die Materialien reichen nur für eine kleine Klinge.
+Ein kleiner Raum mit Schmiedewerkzeug und zahlreichen Materialien, die der Zwerg bereits bearbeitet hat. [Dodo](/characters/dodo.md) findet hier eine Anleitung, um eine Waffe gegen die Kreatur zu fertigen, und in einer etwa halbstündigen Arbeit setzt er einen dolchartigen Aufsatz auf seinen [Streitkolben](/items/streitkolben_von_dodo.md). Die Schmiede ist funktionsfähig, aber die Materialien reichen nur für eine kleine Klinge.
 
 # Belege
 

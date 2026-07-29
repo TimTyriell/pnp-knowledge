@@ -10,7 +10,7 @@ id: EVENT_ATTENTAT_UND_VERGIFTUNG_VON_ROTUNAS
 subtype: Kampf
 ---
 
-Auf dem Marsch wird [Rotunas](/characters/rotunas.md) von einem Dunkelelf mit einem vergifteten Dolch attackiert. [Esterossa](/characters/esterossa.md) verkrüppelt den Attentäter mit einem Donnerkeil. [Nyrella](/characters/nyrella.md) bemerkt die schwarze Wunde und das Gift. Esterossa verabreicht ein [Gegengift](/items/gegengifte.md), während der Attentäter ohnmächtig wird. Der Vorfall enthüllt einen [Mordauftrag auf Rotunas](/items/mordauftrag_auf_rotunas.md).
+Auf dem Marsch wird [Rotunas](/characters/rotunas.md) von einem Dunkelelf mit einem vergifteten Dolch attackiert. [Esterossa](/characters/esterossa.md) verkrüppelt den Attentäter mit einem Donnerkeil. [Nyrella](/characters/nyrella.md) bemerkt die schwarze Wunde und das Gift. Esterossa verabreicht ein Gegengift, während der Attentäter ohnmächtig wird. Der Vorfall enthüllt einen [Mordauftrag auf Rotunas](/items/mordauftrag_auf_rotunas.md).
 
 # Belege
 

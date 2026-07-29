@@ -10,7 +10,7 @@ id: EVENT_KAMPF_GEGEN_DIE_SILBERBESTIEN_ERSTE_BEGEGNUNG
 subtype: Kampf
 ---
 
-Auf der mittleren Minenebene werden [Dodo](/characters/dodo.md), Lindo, [Nyrella](/characters/nyrella.md) und Lunara von vier [Silberbestien](/npcs/silberbestien.md) angegriffen, darunter einem Anführer. Nyrella tötet den Anführer mit einem kritischen Eis-Pfeil, Lunara verbrennt die restlichen drei mit Schattenfeuer. Lindo verfehlt mit der [Armbrust](/items/armbrust.md). Der Kampf endet schnell.
+Auf der mittleren Minenebene werden [Dodo](/characters/dodo.md), Lindo, [Nyrella](/characters/nyrella.md) und Lunara von vier [Silberbestien](/npcs/silberbestien.md) angegriffen, darunter einem Anführer. Nyrella tötet den Anführer mit einem kritischen Eis-Pfeil, Lunara verbrennt die restlichen drei mit Schattenfeuer. Lindo verfehlt mit der Armbrust. Der Kampf endet schnell.
 
 # Belege
 

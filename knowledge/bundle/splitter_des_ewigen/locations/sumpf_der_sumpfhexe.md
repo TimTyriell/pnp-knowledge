@@ -12,7 +12,7 @@ aliases:
 - Sumpf
 ---
 
-Der [Sumpf](/locations/sumpf_vor_dem_goblin_dorf.md) ist die letzte bekannte Heimat der [Sumpfhexe](/npcs/die_sumpfhexe.md), zu dem Nox einen erfolglosen Kopfgeldauftrag ausgeschrieben hat.
+Der [Sumpf](/locations/sumpf_vor_dem_goblin_dorf.md) ist die letzte bekannte Heimat der [Sumpfhexe](/npcs/lenra.md), zu dem Nox einen erfolglosen Kopfgeldauftrag ausgeschrieben hat.
 
 # Belege
 

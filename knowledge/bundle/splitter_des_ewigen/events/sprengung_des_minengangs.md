@@ -10,7 +10,7 @@ id: EVENT_SPRENGUNG_DES_MINENGANGS
 subtype: Ritual
 ---
 
-Lindo platziert zwei [Zwergenbomben](/items/zwergenbomben.md) im Zugang zur tiefsten Ebene und zündet sie, um die [Silberbestien](/npcs/silberbestien.md) abzutrennen. Die Sprengung ist erfolgreich und wird später den [Banditen](/factions/silberkerne.md) als versuchte Flucht vor den Bestien verkauft.
+Lindo platziert zwei Zwergenbomben im Zugang zur tiefsten Ebene und zündet sie, um die [Silberbestien](/npcs/silberbestien.md) abzutrennen. Die Sprengung ist erfolgreich und wird später den [Banditen](/factions/silberkerne.md) als versuchte Flucht vor den Bestien verkauft.
 
 # Belege
 

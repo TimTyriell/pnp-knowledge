@@ -1,34 +1,31 @@
 ---
 type: NPC
 title: Freibeuter-Harald
-description: Freibeuter-Harald ist der Kapitän einer Gruppe ehemaliger Söldner, die
-  einst für die Handelsstadt Brandau kämpften und später in Tiefwasser…
+description: Freibeuter-Harald, auch nur *Harald* oder *der Freibeuter* genannt, ist
+  der Kapitän einer Freibeuter-Gruppe, die einst für die Stadt Branda…
 tags:
 - npcs
 timestamp: '2026-03-18T00:00:00Z'
 id: NPC_FREIBEUTER_HARALD
+subtype: Bande
 aliases:
-- Harald
 - Freibeuter
+- Harald
 ---
 
-**Freibeuter-Harald** ist der Kapitän einer Gruppe ehemaliger Söldner, die einst für die Handelsstadt [Brandau](/locations/brandau.md) kämpften und später in [Tiefwasser](/locations/tiefwasser.md) eine neue Heimat suchten. Nachdem sie fälschlich beschuldigt wurden, mit den [Silberkernen](/factions/silberkerne.md) zusammenzuarbeiten, lebt Harald mit seiner Crew im Untergrund. Er betreibt eine heruntergekommene Taverne als Rückzugsort und verteidigt sich bevorzugt mit einem Rapier. Weder ein Magier noch ein Dämon – es handelt sich hier ausschließlich um den Freibeuter-Kapitän; der gleichnamige Dämon in Abyssalis ist eine eigenständige Figur.
+# Freibeuter-Harald
 
-## Hintergrund und Lage in Tiefwasser
+**Freibeuter-Harald**, auch nur *Harald* oder *der Freibeuter* genannt, ist der Kapitän einer Freibeuter-Gruppe, die einst für die Stadt **Brandau** kämpfte und heute in **Tiefwasser** lebt. Er betreibt eine heruntergekommene Taverne und verteidigt sich mit einem Rapier. Harald und seine Leute werden von der Stadtwache fälschlich der Unterstützung der **Silberkerne** beschuldigt. Er gilt als ortskundig, wehrhaft und impulsiv – wer in seiner Taverne schnüffelt, bekommt seine Faust zu spüren.
 
-Haralds Freibeuter waren ursprünglich Söldner für Brandau, ließen sich aber nach Ende der Kämpfe in Tiefwasser nieder. Aus ungeklärten Gründen gerieten sie ins Visier der Stadtwache, die sie verdächtigt, die Silberkerne zu unterstützen. Harald selbst beteuert, diese Anschuldigung sei vollkommen aus der Luft gegriffen. Die Gruppe lebt seither im Verborgenen und wird von den Soldaten Tiefwassers gejagt.
+## Falsche Anschuldigung und Begegnung mit der Gruppe
 
-## Begegnung mit der Gruppe
+Harald gerät ins Visier der Obrigkeit, als Soldaten in seiner Taverne nach Beweisen für eine Zusammenarbeit mit den Silberkernen suchen. Er verprügelt einen schnüffelnden Soldaten, bevor er der Gruppe von Abenteurern die Hintergründe erklärt: Die Freibeuter werden zu Unrecht verdächtigt, die Silberkerne zu unterstützen. Er gibt zudem einen Hinweis auf deren Führung – ein Monster, einen starken Mann und eine starke Frau.
 
-Als ein Soldat in Haralds Taverne herumschnüffelt, schreitet der Kapitän selbst ein und verprügelt den Eindringling. Gegenüber den Ankömmlingen (darunter [Lunara](/characters/lunara_velora.md)) klärt Harald die Situation auf: Die Freibeuter seien die wahren Opfer einer Verleumdungskampagne. Er nennt die Anführer der Silberkerne – ein Monster, einen starken Mann und eine starke Frau – und warnt vor deren Einfluss.
+## Kampf in der Taverne und Flucht
 
-Kurz darauf stürmen weitere Soldaten die Taverne. Harald kämpft gemeinsam mit seinem Ersten Maat gegen die Angreifer. Als die Lage aussichtslos wird, gelingt die Flucht dank eines übermächtigen Zaubers von Lunara, der die verfolgenden Soldaten hinwegfegt und der Crew die Flucht ermöglicht.
-
-## Verbleib
-
-Nach der geglückten Flucht ist Harald mit seiner Crew untergetaucht. Ob er sich erneut der Gruppe oder anderen Kräften anschließen wird, ist nicht bekannt.
+Als wenig später Soldaten die Taverne stürmen, stellt Harald sich ihnen zusammen mit seinem Ersten Maat entgegen. Der Kampf eskaliert, bis die Magierin **Lunara** einen übermächtigen Zauber wirkt, der Harald und seinem Maat die Flucht ermöglicht. Seitdem ist Harald mit seinen Freibeutern auf der Flucht vor der Stadtwache von Tiefwasser.
 
 # Belege
 
-1. Session 2026-03-18 @ 01:10:25 – https://www.youtube.com/watch?v=HHXxsASLrbQ  
-2. Session 2026-03-18 @ 01:14:34 – https://www.youtube.com/watch?v=HHXxsASLrbQ
+1. Session 2026-03-18 @ 01:10:25 – Harald als Kapitän, Hintergrund, Verprügeln des Soldaten, Erklärung zu den Silberkernen (https://www.youtube.com/watch?v=HHXxsASLrbQ)
+2. Session 2026-03-18 @ 01:14:34 – Bestätigung der falschen Beschuldigung und Verfolgung durch die Stadtwache (https://www.youtube.com/watch?v=HHXxsASLrbQ)

@@ -10,7 +10,7 @@ id: EVENT_HERSTELLUNG_DER_WAFFE
 subtype: Entdeckung
 ---
 
-[Dodo](/characters/dodo.md) verbringt etwa eine halbe Stunde in der Schmiede, um mit der Zwergenanleitung einen Dolchaufsatz für seinen [Streitkolben](/items/streitkolben.md) zu fertigen. Währenddessen wird die Gruppe von der Kreatur angegriffen, und [Lindo Laut](/characters/lindo_laut.md) hält sie mit Ketten fest. Nach der Fertigstellung tränkt die Gruppe den Dolch mit dem heiligen Öl und entzündet ihn in der blauen Flamme.
+[Dodo](/characters/dodo.md) verbringt etwa eine halbe Stunde in der Schmiede, um mit der Zwergenanleitung einen Dolchaufsatz für seinen [Streitkolben](/items/streitkolben_von_dodo.md) zu fertigen. Währenddessen wird die Gruppe von der Kreatur angegriffen, und [Lindo Laut](/characters/lindo_laut.md) hält sie mit Ketten fest. Nach der Fertigstellung tränkt die Gruppe den Dolch mit dem heiligen Öl und entzündet ihn in der blauen Flamme.
 
 # Belege
 

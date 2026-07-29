@@ -10,7 +10,7 @@ id: NPC_KUATAU
 subtype: Volk
 ---
 
-Die Kuatau sind amphibische Fischmenschen, die mit Speeren, Netzen und Schleudern kämpfen und von Magiern unterstützt werden. Sie wurden von der [Sumpfhexe](/npcs/die_sumpfhexe.md) manipuliert, die ihnen Versprechungen machte und Amulette gab, um ein Portal zu öffnen. In Wahrheit suchen sie nur ihre angestammte Heimat, die nun von Menschen bewohnt ist. Durch die Überzeugungsarbeit der Helden erkennen sie die Täuschung und werden zu widerwilligen Verbündeten.
+Die Kuatau sind amphibische Fischmenschen, die mit Speeren, Netzen und Schleudern kämpfen und von Magiern unterstützt werden. Sie wurden von der [Sumpfhexe](/npcs/lenra.md) manipuliert, die ihnen Versprechungen machte und Amulette gab, um ein Portal zu öffnen. In Wahrheit suchen sie nur ihre angestammte Heimat, die nun von Menschen bewohnt ist. Durch die Überzeugungsarbeit der Helden erkennen sie die Täuschung und werden zu widerwilligen Verbündeten.
 
 # Belege
 

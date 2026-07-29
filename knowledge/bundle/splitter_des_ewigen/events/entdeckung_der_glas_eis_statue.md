@@ -10,7 +10,7 @@ id: EVENT_ENTDECKUNG_DER_GLAS_EIS_STATUE
 subtype: Entdeckung
 ---
 
-Am Brunnen entdeckten die Helden eine Statue aus schwarzem Glas oder Eis mit [Vasuls](/deities/vharzul.md) [Symbol](/items/symbol.md). [Nyrella](/characters/nyrella.md) zerschoss sie, und [Rotunas](/characters/rotunas.md) schmolz die Reste mit Feuer, fand aber nichts darunter. Die Untersuchung offenbarte das ungewöhnliche Material und die Verspottung Vasuls durch andere Köpfe.
+Am Brunnen entdeckten die Helden eine Statue aus schwarzem Glas oder Eis mit [Vasuls](/deities/vharzul.md) [Symbol](/items/symbol_in_der_villa.md). [Nyrella](/characters/nyrella.md) zerschoss sie, und [Rotunas](/characters/rotunas.md) schmolz die Reste mit Feuer, fand aber nichts darunter. Die Untersuchung offenbarte das ungewöhnliche Material und die Verspottung Vasuls durch andere Köpfe.
 
 # Belege
 

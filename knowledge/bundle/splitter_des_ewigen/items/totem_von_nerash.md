@@ -1,30 +1,32 @@
 ---
 type: Item
 title: Totem von Nerash
-description: Das Totem von Nerash ist ein heiliges Artefakt, das den Anhängern der
-  Göttin Nerash verliehen wird. Es dient sowohl als Werkzeug zur Heilun…
+description: Die Totems von Nerash sind kleine weiße Statuen, die der Göttin Nerash
+  nachempfunden sind. Sie werden vom Gildenmeister an jedes Gruppenmit…
 tags:
 - items
 timestamp: '2025-09-02T00:00:00Z'
 id: ITEM_TOTEM_VON_NERASH
 subtype: Artefakt
+aliases:
+- Totem von Nerash
+- Totems der Nerash
 ---
 
-## Übersicht
+# Totem von Nerash
 
-Das **Totem von Nerash** ist ein heiliges Artefakt, das den Anhängern der Göttin Nerash verliehen wird. Es dient sowohl als Werkzeug zur Heilung als auch als Medium zur Kontaktaufnahme mit der Göttin. In den Händen eines Helden kanalisiert es ungekannte Kräfte und stellt eine direkte Verbindung zur göttlichen Sphäre her.
+Die **Totems von Nerash** sind kleine weiße Statuen, die der Göttin [Nerash](/deities/nerash.md) nachempfunden sind. Sie werden vom Gildenmeister an jedes Gruppenmitglied verliehen und erscheinen den Trägern auf mysteriöse Weise in den Händen, als sie aus einer Kutsche erwachen. Die Artefakte dienen als sichtbares Zeichen einer Verbindung zu Nerash und scheinen von den Abenteurern selbst ungeahnte Kräfte zu kanalisieren. Die Gruppe führt mehrere dieser Totems mit sich und nutzt sie unter anderem zur Heilung und zur rituellen Kontaktaufnahme.
 
-## Rolle und Verwendung
+## Hintergrund und Erhalt
 
-Das Totem wird primär als Fokus für heilende Magie eingesetzt. In der [Session 2025-07-22](https://www.youtube.com/watch?v=BRRCUgW4xRo) nutzt [Lindo](/characters/lindo_laut.md) das Artefakt, um [Cookie](/characters/cookie.md) zu heilen – dabei kanalisiert er plötzlich Kräfte, die er zuvor nicht beherrschte. Die Wirkung ist sichtbar übernatürlich und deutet auf eine direkte göttliche Intervention oder Verstärkung hin.
+Der Gildenmeister übergibt die Totems nach der Rückkehr der Charaktere an jedes Mitglied. Dabei handelt es sich nicht um einfache Souvenirs – die Statuen erscheinen den Helden unvermittelt in den Händen, als sie aus einer Kutschfahrt erwachen, was auf eine übernatürliche Bindung hinweist. Ein Totem wird jedem zugeteilt, der als „Held von Nerash“ bezeichnet wird. Die genauen Umstände der Herstellung oder der magischen Aufladung sind bislang nicht bekannt, doch die Statuen sind eindeutig der Gestalt der Göttin Nerash nachempfunden.
 
-Darüber hinaus fungiert das Totem als Kommunikationsmittel mit Nerash. In der [Session 2025-09-02](https://www.youtube.com/watch?v=TLZOH7TlGhk) plant die Gruppe, das Artefakt in einer Kapelle einzusetzen, um mit der Göttin in Kontakt zu treten. Die genaue Prozedur der Zeremonie ist nicht überliefert, aber die Kapelle scheint ein besonders geeigneter Ort für diesen Vorgang zu sein.
+## Wirkung und Verwendung
 
-## Herkunft und Bedeutung
+Die Toteme besitzen nachweislich heilende Eigenschaften: [Lindo](/characters/lindo_laut.md) setzt eines ein, um [Cookie](/characters/cookie.md) zu heilen, und kanalisiert dabei Kräfte, die ihm zuvor nicht zur Verfügung standen. Dies deutet darauf hin, dass die Artefakte als Fokus für magische Fähigkeiten dienen können, die normalerweise außerhalb der Reichweite des Anwenders liegen. Später plant die Gruppe, ein Totem in einer Kapelle zu verwenden, um gezielt Kontakt mit der Göttin Nerash aufzunehmen. Die Artefakte sind damit nicht nur Werkzeuge der Heilung, sondern auch potentielle Kommunikationsmittel zwischen den Sterblichen und ihrer Patronin.
 
-Jeder der sogenannten **Helden von Nerash** erhielt bei seiner Berufung ein eigenes Totem der Göttin. Die exakte Anzahl der ausgegebenen Artefakte ist unbekannt, doch die Gruppe führt eines davon stets bei sich. Das Totem ist damit nicht nur ein magisches Werkzeug, sondern auch ein Symbol der Erwählung und der Bindung an den göttlichen Auftrag. In den Händen Unbefugter oder außerhalb des göttlichen Willens könnte es vermutlich keine Wirkung entfalten.
+# Belege
 
-## Belege
-
-1. Session 2025-07-22 @ 01:49:25 – Lindo heilt Cookie mit dem Totem und kanalisiert ungekannte Kräfte. [Link](https://www.youtube.com/watch?v=BRRCUgW4xRo&t=6565s)  
-2. Session 2025-09-02 @ 01:55:14 – Totem als Medium zur Kontaktaufnahme mit Nerash in einer Kapelle. [Link](https://www.youtube.com/watch?v=TLZOH7TlGhk&t=6914s)
+1. Session 2025-07-09 @ 01:26:30 – [Kleine weiße Statuen, die Nerash ähneln. Verteilung durch den Gildenmeister.](https://www.youtube.com/watch?v=XOnHa6CmDbo)
+2. Session 2025-07-22 @ 01:49:25 – [Lindo heilt Cookie mit dem Totem und kanalisiert unbekannte Kräfte.](https://www.youtube.com/watch?v=BRRCUgW4xRo)
+3. Session 2025-09-02 @ 01:55:14 – [Totem zur Kontaktaufnahme mit Nerash in einer Kapelle geplant.](https://www.youtube.com/watch?v=TLZOH7TlGhk)

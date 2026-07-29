@@ -10,7 +10,7 @@ id: ITEM_ZEBRUS_ZORN
 subtype: Waffe
 ---
 
-Ein legendärer [Streitkolben](/items/streitkolben.md), gefunden in einem magischen Gewölbe. Er ermöglicht es, den Schaden um 1w10 zu erhöhen (danach Stress zu markieren) und dient als Lichtquelle, wenn der Befehl ausgesprochen wird. [Rotunas](/characters/rotunas.md) holte ihn mit Mage Hand aus einem Spiegel und warf ihn [Dodo](/characters/dodo.md) zu.
+Ein legendärer [Streitkolben](/items/streitkolben_von_dodo.md), gefunden in einem magischen Gewölbe. Er ermöglicht es, den Schaden um 1w10 zu erhöhen (danach Stress zu markieren) und dient als Lichtquelle, wenn der Befehl ausgesprochen wird. [Rotunas](/characters/rotunas.md) holte ihn mit Mage Hand aus einem Spiegel und warf ihn [Dodo](/characters/dodo.md) zu.
 
 # Belege
 

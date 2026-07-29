@@ -1853,11 +1853,6 @@ entities:
   aliases:
   - Vampire/Untote von Voras
   mention_count: 1
-- concept_id: items/alchemisten_flaeschchen
-  type: Item
-  canonical_name: Alchemisten-Fläschchen
-  aliases: []
-  mention_count: 1
 - concept_id: items/altes_dokument_mit_siegel
   type: Item
   canonical_name: Altes Dokument mit Siegel
@@ -1909,34 +1904,14 @@ entities:
   canonical_name: Arcane Prisma
   aliases: []
   mention_count: 1
-- concept_id: items/armbrust
-  type: Item
-  canonical_name: Armbrust
-  aliases: []
-  mention_count: 1
-- concept_id: items/armbrust_advanced_crossbow
-  type: Item
-  canonical_name: Armbrust (Advanced Crossbow)
-  aliases: []
-  mention_count: 1
 - concept_id: items/armschienen_von_slix_fesseln
   type: Item
   canonical_name: Armschienen von Slix (Fesseln)
   aliases: []
   mention_count: 1
-- concept_id: items/ausdauertrank
-  type: Item
-  canonical_name: Ausdauertrank
-  aliases: []
-  mention_count: 1
 - concept_id: items/ausserirdische_statue
   type: Item
   canonical_name: Außerirdische Statue
-  aliases: []
-  mention_count: 1
-- concept_id: items/baerenfallen
-  type: Item
-  canonical_name: Bärenfallen
   aliases: []
   mention_count: 1
 - concept_id: items/belohnung_fuer_kronos
@@ -1972,11 +1947,6 @@ entities:
 - concept_id: items/bild_von_xenia
   type: Item
   canonical_name: Bild von Xenia
-  aliases: []
-  mention_count: 1
-- concept_id: items/brauner_brei
-  type: Item
-  canonical_name: Brauner Brei
   aliases: []
   mention_count: 1
 - concept_id: items/brief_von_hals_herrin
@@ -2079,19 +2049,9 @@ entities:
   canonical_name: Deathkiss-Tentakel
   aliases: []
   mention_count: 1
-- concept_id: items/der_goldtopf
-  type: Item
-  canonical_name: Der Goldtopf
-  aliases: []
-  mention_count: 1
 - concept_id: items/der_heilige_dolch
   type: Item
   canonical_name: Der heilige Dolch
-  aliases: []
-  mention_count: 1
-- concept_id: items/der_heilige_streitkolben_aus_zebras
-  type: Item
-  canonical_name: Der heilige Streitkolben aus Zebras
   aliases: []
   mention_count: 1
 - concept_id: items/der_obsidianring
@@ -2112,11 +2072,6 @@ entities:
 - concept_id: items/der_stab
   type: Item
   canonical_name: Der Stab
-  aliases: []
-  mention_count: 1
-- concept_id: items/die_balliste
-  type: Item
-  canonical_name: Die Balliste
   aliases: []
   mention_count: 1
 - concept_id: items/die_bluttuer
@@ -2159,11 +2114,6 @@ entities:
   canonical_name: Die Statue des Nerash
   aliases: []
   mention_count: 1
-- concept_id: items/dodos_leuchtender_streitkolben
-  type: Item
-  canonical_name: Dodos leuchtender Streitkolben
-  aliases: []
-  mention_count: 1
 - concept_id: items/drei_flaeschchen_aus_dem_labor
   type: Item
   canonical_name: Drei Fläschchen aus dem Labor
@@ -2179,11 +2129,6 @@ entities:
   canonical_name: Eisstachel (Ice Spike)
   aliases: []
   mention_count: 1
-- concept_id: items/empty_chest_ender_truhe
-  type: Item
-  canonical_name: Empty Chest (Ender-Truhe)
-  aliases: []
-  mention_count: 1
 - concept_id: items/esterossas_axt
   type: Item
   canonical_name: Esterossas Axt
@@ -2192,13 +2137,9 @@ entities:
 - concept_id: items/esterossas_schwert
   type: Item
   canonical_name: Esterossas Schwert
-  aliases: []
-  mention_count: 1
-- concept_id: items/esterossas_verfluchtes_schwert
-  type: Item
-  canonical_name: Esterossas verfluchtes Schwert
-  aliases: []
-  mention_count: 1
+  aliases:
+  - Esterossas verfluchtes Schwert
+  mention_count: 2
 - concept_id: items/fahndungsplakat_fuer_kronos
   type: Item
   canonical_name: Fahndungsplakat für Kronos
@@ -2224,36 +2165,20 @@ entities:
   canonical_name: Flüche und das Schweigen
   aliases: []
   mention_count: 1
-- concept_id: items/gegengift_anti_gift_aus_dem_sumpf
+- concept_id: items/gestohlenes_tagebuch
   type: Item
-  canonical_name: Gegengift (Anti-Gift aus dem Sumpf)
-  aliases: []
-  mention_count: 1
-- concept_id: items/gegengifte
-  type: Item
-  canonical_name: Gegengift
+  canonical_name: Gestohlenes Tagebuch
   aliases:
-  - Gegengifte
-  - Gegengift aus dem Sumpf
-  mention_count: 2
+  - Tagebuch
+  mention_count: 1
 - concept_id: items/glamourstone
   type: Item
   canonical_name: Glamourstone
   aliases: []
   mention_count: 1
-- concept_id: items/glow_ringe
-  type: Item
-  canonical_name: Glow-Ringe
-  aliases: []
-  mention_count: 1
 - concept_id: items/gluecksstein_mit_rune_leben
   type: Item
   canonical_name: Glücksstein mit Rune 'Leben'
-  aliases: []
-  mention_count: 1
-- concept_id: items/glueckstag_trank
-  type: Item
-  canonical_name: Glückstag-Trank
   aliases: []
   mention_count: 1
 - concept_id: items/gluehende_ringe
@@ -2266,24 +2191,9 @@ entities:
   canonical_name: Goblin-Notiz
   aliases: []
   mention_count: 1
-- concept_id: items/gold_aus_der_schatztruhe
-  type: Item
-  canonical_name: Gold aus der Schatztruhe
-  aliases: []
-  mention_count: 1
-- concept_id: items/goldene_perlen_brocken
-  type: Item
-  canonical_name: Goldene Perlen/Brocken
-  aliases: []
-  mention_count: 1
 - concept_id: items/goldenes_amulett_duran_anhaenger
   type: Item
   canonical_name: Goldenes Amulett (Duran-Anhänger)
-  aliases: []
-  mention_count: 1
-- concept_id: items/goldsaecke_von_valeria
-  type: Item
-  canonical_name: Goldsäcke von Valeria
   aliases: []
   mention_count: 1
 - concept_id: items/gruener_kristall
@@ -2314,11 +2224,6 @@ entities:
   canonical_name: Halsband des Monsters
   aliases: []
   mention_count: 1
-- concept_id: items/handvoll_gold_belohnung
-  type: Item
-  canonical_name: Handvoll Gold (Belohnung)
-  aliases: []
-  mention_count: 1
 - concept_id: items/haralds_rapier
   type: Item
   canonical_name: Haralds Rapier
@@ -2330,24 +2235,9 @@ entities:
   aliases:
   - Seelenstein
   mention_count: 1
-- concept_id: items/heiliger_streitkolben_dodos
-  type: Item
-  canonical_name: Heiliger Streitkolben Dodos
-  aliases: []
-  mention_count: 1
 - concept_id: items/heiliges_oel
   type: Item
   canonical_name: Heiliges Öl
-  aliases: []
-  mention_count: 1
-- concept_id: items/heiltraenke
-  type: Item
-  canonical_name: Heiltränke
-  aliases: []
-  mention_count: 1
-- concept_id: items/heiltrank_von_lukas
-  type: Item
-  canonical_name: Heiltrank von Lukas
   aliases: []
   mention_count: 1
 - concept_id: items/herz_aus_dem_brunnen
@@ -2426,11 +2316,13 @@ entities:
   canonical_name: Magische Axt
   aliases: []
   mention_count: 1
-- concept_id: items/magische_boxringe_glowing_rings
+- concept_id: items/magische_boxringe
   type: Item
-  canonical_name: Magische Boxringe (Glowing Rings)
-  aliases: []
-  mention_count: 1
+  canonical_name: Magische Boxringe
+  aliases:
+  - Magische Boxringe (Glowing Rings)
+  - Glow-Ringe
+  mention_count: 2
 - concept_id: items/magische_handschellen
   type: Item
   canonical_name: Göttliche Handschellen
@@ -2490,16 +2382,6 @@ entities:
   canonical_name: Otis' Hammer
   aliases: []
   mention_count: 1
-- concept_id: items/otis_kurzbogen
-  type: Item
-  canonical_name: Otis' Kurzbogen
-  aliases: []
-  mention_count: 1
-- concept_id: items/palisaden
-  type: Item
-  canonical_name: Palisaden
-  aliases: []
-  mention_count: 1
 - concept_id: items/pergament_mit_roter_magie
   type: Item
   canonical_name: Pergament mit roter Magie
@@ -2515,19 +2397,9 @@ entities:
   canonical_name: Pilzsekret
   aliases: []
   mention_count: 1
-- concept_id: items/premium_schlafsack
-  type: Item
-  canonical_name: Premium-Schlafsack
-  aliases: []
-  mention_count: 1
 - concept_id: items/rabenstein
   type: Item
   canonical_name: Rabenstein
-  aliases: []
-  mention_count: 1
-- concept_id: items/rauchbombe
-  type: Item
-  canonical_name: Rauchbombe
   aliases: []
   mention_count: 1
 - concept_id: items/ring_der_teleportation
@@ -2551,11 +2423,6 @@ entities:
 - concept_id: items/rotunas_goblin_woerterbuch
   type: Item
   canonical_name: Rotunas' Goblin-Wörterbuch
-  aliases: []
-  mention_count: 1
-- concept_id: items/rotunas_heiltrank
-  type: Item
-  canonical_name: Rotunas' Heiltrank
   aliases: []
   mention_count: 1
 - concept_id: items/rotunas_metallarm
@@ -2591,19 +2458,9 @@ entities:
   - Schattenfinger
   - Schattenfinger (Kenku-Kralle)
   mention_count: 4
-- concept_id: items/schild
-  type: Item
-  canonical_name: Schild
-  aliases: []
-  mention_count: 1
 - concept_id: items/schild_zum_heiligtum
   type: Item
   canonical_name: Schild zum Heiligtum
-  aliases: []
-  mention_count: 1
-- concept_id: items/schleimbaelle
-  type: Item
-  canonical_name: Schleimbälle
   aliases: []
   mention_count: 1
 - concept_id: items/schluessel_stab_zu_den_toren_von_abyssalis
@@ -2676,11 +2533,6 @@ entities:
   aliases:
   - Seelenstein
   mention_count: 2
-- concept_id: items/shortbow
-  type: Item
-  canonical_name: Shortbow
-  aliases: []
-  mention_count: 1
 - concept_id: items/siegel_dolch
   type: Item
   canonical_name: Siegel-Dolch
@@ -2694,11 +2546,6 @@ entities:
 - concept_id: items/silbernes_ei_artefakt
   type: Item
   canonical_name: Silbernes Ei-Artefakt
-  aliases: []
-  mention_count: 1
-- concept_id: items/silberpfeile
-  type: Item
-  canonical_name: Silberpfeile
   aliases: []
   mention_count: 1
 - concept_id: items/spinnenei
@@ -2722,11 +2569,6 @@ entities:
   canonical_name: Stab von Lindo Laut (Portalstab)
   aliases: []
   mention_count: 1
-- concept_id: items/stamina_potion
-  type: Item
-  canonical_name: Stamina Potion
-  aliases: []
-  mention_count: 1
 - concept_id: items/statue_der_alten_goetter
   type: Item
   canonical_name: Statue der alten Götter
@@ -2742,26 +2584,17 @@ entities:
   canonical_name: Sternamulett
   aliases: []
   mention_count: 1
-- concept_id: items/streitkolben
-  type: Item
-  canonical_name: Streitkolben
-  aliases: []
-  mention_count: 1
 - concept_id: items/streitkolben_von_dodo
   type: Item
-  canonical_name: Streitkolben von Dodo
-  aliases: []
-  mention_count: 1
-- concept_id: items/streitkolben_von_zebras
-  type: Item
-  canonical_name: Streitkolben von Zebras
-  aliases: []
-  mention_count: 1
-- concept_id: items/stress_trank
-  type: Item
-  canonical_name: Stress-Trank
-  aliases: []
-  mention_count: 1
+  canonical_name: Dodos heiliger Streitkolben
+  aliases:
+  - Streitkolben von Dodo
+  - Streitkolben
+  - Dodos leuchtender Streitkolben
+  - Heiliger Streitkolben Dodos
+  - Streitkolben von Zebras
+  - Der heilige Streitkolben aus Zebras
+  mention_count: 6
 - concept_id: items/strohpuppe
   type: Item
   canonical_name: Strohpuppe
@@ -2777,29 +2610,20 @@ entities:
   canonical_name: Sumpfhai-Lähmungspfeile
   aliases: []
   mention_count: 1
-- concept_id: items/symbol
-  type: Item
-  canonical_name: Symbol
-  aliases: []
-  mention_count: 1
 - concept_id: items/symbol_der_silberkerne
   type: Item
   canonical_name: Symbol der Silberkerne
   aliases: []
   mention_count: 1
-- concept_id: items/tagebuch
+- concept_id: items/symbol_in_der_villa
   type: Item
-  canonical_name: Tagebuch
-  aliases: []
+  canonical_name: Symbol in der Villa
+  aliases:
+  - Symbol
   mention_count: 1
 - concept_id: items/tagebuch_des_belorus
   type: Item
   canonical_name: Tagebuch des Belorus
-  aliases: []
-  mention_count: 1
-- concept_id: items/talrons_heiltraenke
-  type: Item
-  canonical_name: Talrons Heiltränke
   aliases: []
   mention_count: 1
 - concept_id: items/tavas_armor
@@ -2820,13 +2644,9 @@ entities:
 - concept_id: items/totem_von_nerash
   type: Item
   canonical_name: Totem von Nerash
-  aliases: []
-  mention_count: 2
-- concept_id: items/totems_der_nerash
-  type: Item
-  canonical_name: Totems der Nerash
-  aliases: []
-  mention_count: 1
+  aliases:
+  - Totems der Nerash
+  mention_count: 3
 - concept_id: items/trank_zur_verwandlung
   type: Item
   canonical_name: Trank zur Verwandlung
@@ -2836,11 +2656,6 @@ entities:
 - concept_id: items/trickers_grimoire
   type: Item
   canonical_name: Trickers Grimoire
-  aliases: []
-  mention_count: 1
-- concept_id: items/truhe_gold
-  type: Item
-  canonical_name: Truhe Gold
   aliases: []
   mention_count: 1
 - concept_id: items/umhang_mit_tarvoks_symbol
@@ -2861,16 +2676,6 @@ entities:
 - concept_id: items/vasuls_kristall
   type: Item
   canonical_name: Vasuls Kristall
-  aliases: []
-  mention_count: 1
-- concept_id: items/verbesserte_arkan_handschuhe
-  type: Item
-  canonical_name: Verbesserte Arkan-Handschuhe
-  aliases: []
-  mention_count: 1
-- concept_id: items/verbesserter_kriegshammer
-  type: Item
-  canonical_name: Verbesserter Kriegshammer
   aliases: []
   mention_count: 1
 - concept_id: items/verschlingender_dolch_devouring_dagger
@@ -2908,16 +2713,6 @@ entities:
   canonical_name: Wachstumstrank
   aliases: []
   mention_count: 1
-- concept_id: items/waffen_von_dodo
-  type: Item
-  canonical_name: Waffen von Dodo
-  aliases: []
-  mention_count: 1
-- concept_id: items/wasserbehaelter
-  type: Item
-  canonical_name: Wasserbehälter
-  aliases: []
-  mention_count: 1
 - concept_id: items/xerxes_dolche
   type: Item
   canonical_name: Xerxes' Dolche
@@ -2936,11 +2731,6 @@ entities:
 - concept_id: items/zeremonialdolch
   type: Item
   canonical_name: Zeremonialdolch
-  aliases: []
-  mention_count: 1
-- concept_id: items/zwergenbomben
-  type: Item
-  canonical_name: Zwergenbomben
   aliases: []
   mention_count: 1
 - concept_id: locations/abyssalis_abyssares
@@ -4275,11 +4065,6 @@ entities:
   canonical_name: Die Geisterdame
   aliases: []
   mention_count: 1
-- concept_id: npcs/die_hack_hexe
-  type: NPC
-  canonical_name: Die Hack (Hexe)
-  aliases: []
-  mention_count: 1
 - concept_id: npcs/die_harpyienartige_kreatur
   type: NPC
   canonical_name: Die Harpyienartige Kreatur
@@ -4306,12 +4091,6 @@ entities:
   canonical_name: Die Schmuggler
   aliases: []
   mention_count: 1
-- concept_id: npcs/die_sumpfhexe
-  type: NPC
-  canonical_name: Die Sumpfhexe
-  aliases:
-  - Sumpfhexe
-  mention_count: 2
 - concept_id: npcs/die_vier_boten_des_todes
   type: NPC
   canonical_name: Die vier Boten des Todes
@@ -4790,7 +4569,10 @@ entities:
   - Die Hack
   - Leandra
   - Lanra
-  mention_count: 6
+  - Die Hack (Hexe)
+  - Die Sumpfhexe
+  - Sumpfhexe
+  mention_count: 9
   important: true
 - concept_id: npcs/leonard
   type: NPC
