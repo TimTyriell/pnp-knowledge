@@ -35,7 +35,7 @@ Diese Enthüllung geschieht unmittelbar vor dem geplanten Aufbruch der Abenteure
 ## Beziehungen und Verbindungen
 
 - **Die Bergnomaden:** Sie sind die heimliche Kultgemeinschaft, die Seras dient und den Namen hütet. Anführer dieser Gruppe ist möglicherweise Hendrik, der am Morgen nach dem Vorfall gut gelaunt erscheint und die Stimmung nicht sofort bemerkt.[1]
-- **[Ezua](/deities/ezua_alter_gott_im_amulett.md):** Ein früherer Kampfgefährte des Gottes – und zwar, wie es heißt, „in den letzten Tagen“ –, der durch Lindos Amulett mit der Gegenwart verbunden ist. Die genaue Natur dieser Gefährtenschaft bleibt offen.[1]
+- **Ezua:** Ein früherer Kampfgefährte des Gottes – und zwar, wie es heißt, „in den letzten Tagen“ –, der durch Lindos Amulett mit der Gegenwart verbunden ist. Die genaue Natur dieser Gefährtenschaft bleibt offen.[1]
 - **[Lindo Laut](/characters/lindo_laut.md):** Der Halbling (oder ein anderer Abenteurer) trägt das Amulett, das Ezua gehörte, und verabschiedet sich von den Nomaden mit den Worten „ein flammendes Herz“ – ein deutlicher Bezug zum Flammenkult und möglicherweise ein Erkennungszeichen.[1]
 - **Das Heiligtum:** Ein konkreter Ort im oder am Berg, an dem der Kult seinen rituellen Mittelpunkt hat; die Gruppe ist auf dem Weg dorthin.[1]
 

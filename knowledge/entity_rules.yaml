@@ -334,7 +334,14 @@ merge:
   schlangenfigur (serpent god): deities/schlangengott
   serpent god: deities/schlangengott
   nehrasch: deities/nerash
+  neiraj: deities/nerash
   kord: deities/korn
+  # Ezhura "die Glut", one of Vhar'Zul's souls in Lindo's amulet. Heard as
+  # "Glut" and as "Ezua"; the Buch der vier Seelen gives the full name.
+  glut: deities/ezhura
+  ezua: deities/ezhura
+  ezua (alter gott im amulett): deities/ezhura
+  ezhura: deities/ezhura
   goblingötter: deities/goblingoetter
   goblin-gott (dodos gott): deities/goblingoetter
 
@@ -523,6 +530,7 @@ canonical_name:
   # One of the five souls Vhar'Zul was split into; the Buch der vier Seelen
   # names him "die Krone". Transcribed both as "Koll" and as "Kol Meref".
   deities/kollmereth: Koll'Mereth (die Krone)
+  deities/ezhura: Ezhura (die Glut)
   factions/gilde_von_ehrenfels: Die Gilde von Ehrenfels
   factions/kult_des_vharzul: Kult des Vhar'Zul
   factions/sippe_des_voras: Sippe des Voras

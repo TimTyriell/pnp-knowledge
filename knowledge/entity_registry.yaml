@@ -199,16 +199,13 @@ entities:
   aliases: []
   mention_count: 1
   important: true
-- concept_id: deities/ezua_alter_gott_im_amulett
+- concept_id: deities/ezhura
   type: Deity
-  canonical_name: Ezua (alter Gott im Amulett)
-  aliases: []
-  mention_count: 1
-- concept_id: deities/glut
-  type: Deity
-  canonical_name: Glut
-  aliases: []
-  mention_count: 1
+  canonical_name: Ezhura (die Glut)
+  aliases:
+  - Ezua (alter Gott im Amulett)
+  - Glut
+  mention_count: 2
 - concept_id: deities/goblingoetter
   type: Deity
   canonical_name: Goblingötter
@@ -270,18 +267,13 @@ entities:
   canonical_name: Lugasach
   aliases: []
   mention_count: 1
-- concept_id: deities/neiraj
-  type: Deity
-  canonical_name: Neiraj
-  aliases: []
-  mention_count: 1
-  important: true
 - concept_id: deities/nerash
   type: Deity
   canonical_name: Nerash
   aliases:
   - Nehrasch
-  mention_count: 9
+  - Neiraj
+  mention_count: 10
 - concept_id: deities/neue_goetter
   type: Deity
   canonical_name: Neue Götter

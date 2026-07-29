@@ -441,6 +441,31 @@ sie gehören — sie bekommen keinen eigenen Knoten.
 ENTSCHEIDUNG: „Dwarfmasters" ist der **Twitch-Account**, nicht der Name der
 Gilde. Die Gilde der Gruppe ist die **Gilde von Ehrenfels**.
 
+### Ezhura
+
+ENTSCHEIDUNG: „Glut" und „Ezua" bezeichnen **dieselbe Entität**: **Ezhura**, im
+*Buch der vier Seelen* „die Glut" genannt — eine der Seelen Vhar'Zuls und eine
+der Stimmen in Lindo Lauts Amulett. Ihre Statue steht ganz rechts im Schrein.
+
+ENTSCHEIDUNG: **Ezhuras Seelenstück wurde nicht ausgelöscht.** Belege, die das
+behaupten, verwechseln sie mit **Koll'Mereth**. Ezhura spricht später weiterhin
+aus dem Amulett; der Widerspruch beruht auf dieser Verwechslung.
+
+### Koll'Mereth: Auslöschung
+
+ENTSCHEIDUNG: Das Seelenstück, das **Nerash ausgelöscht** hat, ist das von
+**Koll'Mereth**, nicht das von Ezhura. Seitdem sind von den vier im Amulett
+bekannten Seelen nur noch drei übrig.
+
+### Blutschalen-Statuen
+
+HINWEIS ZUR DARSTELLUNG: Die namenlose „böse Gottheit" der Statue mit der
+Blutschale ist **nicht sicher zuzuordnen** — wahrscheinlich Vhar'Zul, aber
+**jede Blutschalen-Statue kann einem anderen Gott gehören**. Eine Statue mit
+Blutschale ist also *kein* Erkennungsmerkmal für eine bestimmte Gottheit.
+Entsprechend vorsichtig formulieren und keine Zuordnung als gesichert
+darstellen.
+
 ### Gott und Erscheinung
 
 ENTSCHEIDUNG: Tritt ein Gott körperlich auf, bleibt das **ein Knoten vom Typ

@@ -10,7 +10,7 @@ id: LOC_TAVERNE_IM_DUNGEON
 subtype: Gebäude
 ---
 
-Der erste größere Raum nach dem Eingang, mit einer Bar, einem Ofen mit glimmender [Glut](/deities/glut.md) und drei großen Schränken. In einem Schrank ist ein Zwergenkadaver gut erhalten, in einem anderen ein großes Zeichen von [Uhoriaks](/deities/ohoriaks.md), und im dritten sind drei Leichen brutal hineingepresst. Hier finden sich das [Tagebuch](/items/tagebuch.md) des [Bullrin](/npcs/bullrin.md) und die ersten Spuren der früheren Gruppen.
+Der erste größere Raum nach dem Eingang, mit einer Bar, einem Ofen mit glimmender [Glut](/deities/ezhura.md) und drei großen Schränken. In einem Schrank ist ein Zwergenkadaver gut erhalten, in einem anderen ein großes Zeichen von [Uhoriaks](/deities/ohoriaks.md), und im dritten sind drei Leichen brutal hineingepresst. Hier finden sich das [Tagebuch](/items/tagebuch.md) des [Bullrin](/npcs/bullrin.md) und die ersten Spuren der früheren Gruppen.
 
 # Belege
 

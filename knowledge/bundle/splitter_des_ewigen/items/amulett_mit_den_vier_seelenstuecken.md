@@ -10,7 +10,7 @@ id: ITEM_AMULETT_MIT_DEN_VIER_SEELENSTUECKEN
 subtype: Artefakt
 ---
 
-[Lindos Amulett](/items/lindos_amulett.md), das die Seelenstücke der vier alten Götter ([Koll](/deities/kollmereth.md), [Glut](/deities/glut.md) und zwei weitere) enthält. Vibriert in der Nähe des Schreins und verleiht dem Träger große Macht. Nach dem Tod eines Stücks (Glut) verbleiben drei, die mit jedem Verlust stärker werden und schließlich den alten Gott zurückholen könnten.
+[Lindos Amulett](/items/lindos_amulett.md), das die Seelenstücke der vier alten Götter ([Koll](/deities/kollmereth.md), [Glut](/deities/ezhura.md) und zwei weitere) enthält. Vibriert in der Nähe des Schreins und verleiht dem Träger große Macht. Nach dem Tod eines Stücks (Glut) verbleiben drei, die mit jedem Verlust stärker werden und schließlich den alten Gott zurückholen könnten.
 
 # Belege
 
