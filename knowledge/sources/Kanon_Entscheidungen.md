@@ -366,6 +366,13 @@ Floran als Anführer der Silberkerne bezeichnen, meinen diese eine Zelle.
 ENTSCHEIDUNG: Anlass der Verfolgung ist der **Mord an einem Diplomaten**. Der
 Beleg, der stattdessen vom Tod einer Prinzessin spricht, ist eine Verwechslung.
 
+ENTSCHEIDUNG: Es gibt **kein drittes Führungsmitglied und kein „Monster"**. Die
+Stelle geht auf eine einzige Aussage einer Figur zurück, die ausdrücklich sagt,
+sie habe die Anführer *nie gesehen*: „Soll wohl irgendein Monster sein, ein
+krasser Mann und eine sehr, sehr starke Frau." Das ist **Hörensagen über
+dieselben zwei Personen** — der „krasse Mann" ist Harl, die „sehr starke Frau"
+ist Sarina. „Monster" ist eine Beschreibung, kein Name und keine dritte Figur.
+
 ### Hal / Harl
 
 ENTSCHEIDUNG: **Hal (auch Harl) hat beide Rollen** — der Widerspruch
