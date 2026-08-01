@@ -10,7 +10,7 @@ id: LOC_VASULS_FESTUNG_IN_ABYSSALIS
 subtype: Festung
 ---
 
-Eine massive, in die [Berge](/locations/berge.md) gebaute Festung, die [Vasul](/deities/vharzul.md) als sicherer Rückzugsort vor den anderen vier Göttern dient. Die Gruppe wird nach dem Kampf gegen [Dormak](/npcs/dormak.md) kurz hierher teleportiert und erhält von Vasul Informationen über die Götter von [Abyssalis](/domains/splitterwelt.md).
+Eine massive, in die Berge gebaute Festung, die [Vasul](/deities/vharzul.md) als sicherer Rückzugsort vor den anderen vier Göttern dient. Die Gruppe wird nach dem Kampf gegen [Dormak](/npcs/dormak.md) kurz hierher teleportiert und erhält von Vasul Informationen über die Götter von [Abyssalis](/domains/splitterwelt.md).
 
 # Belege
 

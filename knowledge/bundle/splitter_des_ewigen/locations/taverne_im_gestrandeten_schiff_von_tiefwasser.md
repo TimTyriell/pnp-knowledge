@@ -12,7 +12,7 @@ aliases:
 - Die Taverne im gestrandeten Schiff
 ---
 
-Eine zweite [Taverne](/locations/taverne_von_breska.md) in [Tiefwasser](/locations/tiefwasser.md), untergebracht in einem auf Grund gelaufenen Schiff. Sie hat keinen eigenen Namen und gilt als weniger vornehm als der 'Sichelmond'. Hier treffen die Helden auf [Harald](/npcs/freibeuter_harald.md) und werden in den Kampf mit der Stadtwache verwickelt.
+Eine zweite Taverne in [Tiefwasser](/locations/tiefwasser.md), untergebracht in einem auf Grund gelaufenen Schiff. Sie hat keinen eigenen Namen und gilt als weniger vornehm als der 'Sichelmond'. Hier treffen die Helden auf [Harald](/npcs/freibeuter_harald.md) und werden in den Kampf mit der Stadtwache verwickelt.
 
 # Belege
 

@@ -12,7 +12,7 @@ aliases:
 - Zum grünen Sichelmond
 ---
 
-Die gehobene [Taverne](/locations/taverne_von_breska.md) 'Zum grünen Sichelmond' in [Tiefwasser](/locations/tiefwasser.md), geführt von [Hans](/npcs/hans_soldat_aus_breska.md). Sie bietet teure Speisen wie Papagei (2 Goldmünzen) und ist [Treffpunkt](/locations/treffpunkt.md) für die Gruppe, um Informationen über die Route nach [Hartwacht](/locations/hartwacht.md) zu erhalten.
+Die gehobene Taverne 'Zum grünen Sichelmond' in [Tiefwasser](/locations/tiefwasser.md), geführt von [Hans](/npcs/hans_soldat_aus_breska.md). Sie bietet teure Speisen wie Papagei (2 Goldmünzen) und ist [Treffpunkt](/locations/treffpunkt.md) für die Gruppe, um Informationen über die Route nach [Hartwacht](/locations/hartwacht.md) zu erhalten.
 
 # Belege
 

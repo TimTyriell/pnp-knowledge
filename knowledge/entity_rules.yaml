@@ -20,6 +20,8 @@
 merge:
   cookie (ribbit): characters/cookie
   cookie: characters/cookie
+  ribbit: characters/cookie
+  kuki: characters/cookie
   valerie: characters/valeria
   valeria: characters/valeria
   lindo laut: characters/lindo_laut
@@ -44,7 +46,15 @@ merge:
   vhar'zul: deities/vharzul
   tarvok: deities/tarvok_der_erdrichter
   tarvok (der erdrichter): deities/tarvok_der_erdrichter
-  seras: deities/seras
+  # GM ruling 2026-07-29: "Seras / Seraph" und "Parfon" sind keine eigenen
+  # Götter — beide Male ist Thar'Vok, der Erdrichter gemeint (Bergnomaden in
+  # 2025-08-12, Steingott der Bergkapelle in 2025-09-02). Bewusst NICHT der
+  # nackte Name "seraph": das ist Esterossas Gattung und die gefallenen
+  # Seraphen, die damit nichts zu tun haben.
+  seras: deities/tarvok_der_erdrichter
+  seras (seraph): deities/tarvok_der_erdrichter
+  seirat: deities/tarvok_der_erdrichter
+  parfon: deities/tarvok_der_erdrichter
   abyssalis: domains/splitterwelt
   abyssares: domains/splitterwelt
   amulett von duran: items/amulett_des_heiligen_duran
@@ -255,7 +265,6 @@ merge:
   käpt'n lobrecht: npcs/lobrecht
   nairuk: npcs/nyruk
   nairook: npcs/nyruk
-  seras (seraph): deities/seras
   vilau (willau): locations/willauch
   # Voras is one person: "der Graf" is Voras der Heilige (Kanon_Entscheidungen).
   voras: npcs/voras
@@ -515,6 +524,16 @@ never_merge:
 ignore:
 - locations/bruecke
 - locations/turm
+# One-off scene dressing, single mention each, no lasting name in the
+# transcript. prompts.py already tells extraction to omit truly nameless
+# things rather than give them a generic label — these slipped through
+# anyway. Reviewed with the GM 2026-07-30.
+- locations/der_riss
+- locations/der_steg
+- locations/die_klippe
+- locations/berge
+- locations/der_wald
+- locations/die_lichtung
 # A class of object, not an object: every mention is a different potion, and an
 # entry about "healing potions in general" carries nothing worth linking.
 - items/heiltrank
@@ -700,6 +719,30 @@ split:
   session: '2026-04-14'
   concept_id: items/haralds_seelenstein
 
+# GM review 2026-07-30: these generic-noun locations had real, substantial
+# content but no disambiguating anchor in their id — unlike the throwaway
+# scenery in ignore: below. Session-scoped like mine/kapelle/sumpf above, so a
+# *different* cemetery/library/pass mentioned in a later session gets its own
+# id instead of folding in here.
+- name: friedhof
+  session: '2025-04-09'
+  concept_id: locations/friedhof_von_breska
+- name: die bibliothek
+  session: '2026-03-03'
+  concept_id: locations/bibliothek_von_willauch
+- name: der bergpass
+  session: '2026-05-19'
+  concept_id: locations/bergpass_zwischen_jalan_und_der_narbe
+- name: ende
+  session: '2026-03-18'
+  concept_id: locations/ende_jenseits_der_orkgebiete
+# "Die Stadt" is Ehrenfels before the campaign ever says the name out loud:
+# same guild seat, same role as the party's home base, only the session
+# predates the first session that names Ehrenfels outright.
+- name: die stadt
+  session: '2025-05-27'
+  concept_id: locations/ehrenfels
+
 # Display names pinned by hand, keyed by concept id. Without a pin the title is
 # whichever spelling a transcript happened to use first, so a correction never
 # sticks. The concept id stays as it is — only the label changes.
@@ -708,6 +751,9 @@ canonical_name:
   # names him "die Krone". Transcribed both as "Koll" and as "Kol Meref".
   deities/kollmereth: Koll'Mereth (die Krone)
   deities/ezhura: Ezhura (die Glut)
+  # Kanon-Schreibweise aus Bekannte_Pantheon_der_Goetter.md; in den Sessions
+  # als "Tarvok", "Tavok", "Tarvolk", "Seras/Seraph" und "Parfon" gehört.
+  deities/tarvok_der_erdrichter: Thar'Vok, der Erdrichter
   factions/gilde_von_ehrenfels: Die Gilde von Ehrenfels
   factions/kult_des_vharzul: Kult des Vhar'Zul
   factions/sippe_des_voras: Sippe des Voras
@@ -758,7 +804,10 @@ canonical_name:
   locations/zwergenmine: Zwergenmine
   locations/verlassene_mine_an_der_farm: Verlassene Mine an der Farm
   locations/schreinkapelle_der_festung: Schreinkapelle der Festung
-  locations/parfon_kapelle_auf_dem_berg: Parfon-Kapelle auf dem Berg
+  # Der "Steingott" der Kapelle ist Thar'Vok; die concept id behält das alte
+  # Wort, nur das Label folgt dem Ruling.
+  locations/parfon_kapelle_auf_dem_berg: Thar'Vok-Kapelle auf dem Berg
+  events/enthuellung_des_seras_kults: Enthüllung des Thar'Vok-Kults
   locations/kapelle_von_vorgultars_refugium: Kapelle von Vorgultars Refugium
   locations/sumpf_vor_dem_goblin_dorf: Sumpf vor dem Goblin-Dorf
   locations/sumpf_der_sumpfhexe: Sumpf der Sumpfhexe
@@ -770,6 +819,15 @@ canonical_name:
   items/seelenstein_des_rotunas: Seelenstein des Rotunas
   items/gruener_seelenkristall_von_hans: Grüner Seelenkristall von Hans
   items/haralds_seelenstein: Haralds Seelenstein
+  locations/friedhof_von_breska: Friedhof von Breska
+  locations/bibliothek_von_willauch: Bibliothek von Willauch
+  locations/bergpass_zwischen_jalan_und_der_narbe: Bergpass zwischen Jalan und der Narbe
+  locations/ende_jenseits_der_orkgebiete: Ende (jenseits der Orkgebiete)
+  # Appeared twice, in two different forms, at two different sites (Training
+  # der Zwergmeistergilde / Kapelle) — the campaign itself never resolved
+  # whether it's one phenomenon or two, so the label stays dual instead of
+  # forcing a single anchor.
+  locations/das_portal: Das Portal (Zwergmeistergilde-Gelände / Kapelle)
 
 # Concepts that force the deep synthesis tier regardless of mention count —
 # the escape hatch for entities the automatic rules underrate. Characters and
@@ -790,7 +848,6 @@ important:
 - deities/neiraj
 - deities/ohoriaks
 - deities/schlangengott
-- deities/seras
 - deities/sitravil
 - locations/boragdil
 - locations/brandau

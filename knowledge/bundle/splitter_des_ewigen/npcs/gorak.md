@@ -9,7 +9,7 @@ timestamp: '2025-09-17T00:00:00Z'
 id: NPC_GORAK
 ---
 
-Gorak ist der Anführer der [Bresca-Gilde](/factions/bresca_gilde.md) und eröffnet das Bündnisangebot an die Berggilde. Er wirkt berechnend und lacht am [Ende](/locations/ende.md) diabolisch, als die Gruppe die Aufnahmeprüfung ablehnt. Er übergibt ein magisch versiegeltes Schriftstück und besteht auf der Mission, [Roland](/npcs/roland.md) zu töten.
+Gorak ist der Anführer der [Bresca-Gilde](/factions/bresca_gilde.md) und eröffnet das Bündnisangebot an die Berggilde. Er wirkt berechnend und lacht am [Ende](/locations/ende_jenseits_der_orkgebiete.md) diabolisch, als die Gruppe die Aufnahmeprüfung ablehnt. Er übergibt ein magisch versiegeltes Schriftstück und besteht auf der Mission, [Roland](/npcs/roland.md) zu töten.
 
 # Belege
 

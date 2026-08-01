@@ -1,16 +1,16 @@
 ---
 type: NPC
 title: Schleichfurz
-description: Ein Goblin-Magier und Anführer des Goblin-Dorfes. Hält eine kurze, siegesgewisse
-  Ansprache vor seinen Untergebenen, in der er die Eroberung…
+description: Der selbsternannte Herrscher des Goblin-Dorfes. Er hält eine kurze Ansprache
+  an die feiernden Goblins, verkündet den Sieg über die Menschen…
 tags:
 - npcs
 timestamp: '2025-04-01T00:00:00Z'
 id: NPC_SCHLEICHFURZ
 ---
 
-Ein Goblin-Magier und Anführer des Goblin-Dorfes. Hält eine kurze, siegesgewisse Ansprache vor seinen Untergebenen, in der er die Eroberung eines menschlichen Lagers feiert und einen weiteren Angriff plant. Im Kampf teleportiert er sich mit einem dunklen Nebel eine Etage nach oben und greift die Eindringlinge mit Feuerzaubern an. Wird schließlich von [Mikasa](/characters/mikasa.md) vom Dach gestoßen und aufgespießt. Sein Tod versetzt die verbliebenen [Goblins](/factions/goblins.md) in Panik.
+Der selbsternannte Herrscher des Goblin-Dorfes. Er hält eine kurze Ansprache an die feiernden [Goblins](/factions/goblins.md), verkündet den Sieg über die Menschen und plant weitere Züge. Er zieht sich in ein Gebäude zurück und wird später von der Gruppe belauscht, als er mit einem Magier über einen gemeinsamen Angriff spricht. Er selbst kämpft offenbar nicht, sondern wird vermutlich im Hintergrund getötet oder flieht – der Fokus im Endkampf liegt auf dem Magier und einem anderen Nahkämpfer.
 
 # Belege
 
-1. Session 2025-04-01 @ 01:14:11 (https://www.youtube.com/watch?v=LZIuUzc3F18)
+1. Session 2025-04-01 @ 01:13:32 (https://www.youtube.com/watch?v=LZIuUzc3F18)

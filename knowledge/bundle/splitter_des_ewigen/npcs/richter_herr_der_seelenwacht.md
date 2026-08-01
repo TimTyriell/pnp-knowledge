@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Richter (Herr der Seelenwacht)
-description: Der Richter, auch als Herr der Seelenwacht bezeichnet, ist ein hochrangiger
-  Anführer der Seelenwacht im Abyssalis. Er wird als abgebrüht, m…
+description: Der Richter, auch Herr der Seelenwacht genannt, ist ein hochrangiger
+  Anführer der Seelenwacht im Abyssalis. Er gilt als abgebrüht und sehr…
 tags:
 - npcs
 timestamp: '2026-05-13T00:00:00Z'
@@ -12,22 +12,33 @@ aliases:
 - der Richter
 ---
 
-# Richter (Herr der Seelenwacht)
-
-Der **Richter**, auch als **Herr der Seelenwacht** bezeichnet, ist ein hochrangiger Anführer der Seelenwacht im Abyssalis. Er wird als abgebrüht, mächtig und entschlussfreudig beschrieben. Gemeinsam mit dem [Schinder](/npcs/schinder.md) teilt er sich die Führung der Organisation. In der Kampagne trat er direkt mit den Spielercharakteren in Kontakt, begleitete sie auf einem gefährlichen Auftrag und traf folgenreiche moralische Entscheidungen.
+Der **Richter**, auch **Herr der Seelenwacht** genannt, ist ein hochrangiger Anführer der Seelenwacht im Abyssalis. Er gilt als abgebrüht und sehr mächtig und wird gemeinsam mit dem Schinder als Führungsperson der Seelenwacht genannt. In der Vergangenheit nahm er die Kinder mit, die den Schutzzauber der Festung Seelenwacht zerstört hatten. Später führte er zwei Gruppen zur Villa oberhalb von Jalan, begleitete sie auf ihrer Expedition und traf dort weitreichende Entscheidungen.
 
 ## Rolle und Auftreten
 
-Der Richter befehligt die Seelenwacht, eine militärische Macht im Abyssalis. Bereits früh in der Kampagne wird erwähnt, dass er jene Kinder an sich nahm, die den Schutzzauber einer Festung zerstörten – ein Hinweis auf seine harte, pragmatische Handlungsweise[1]. In einer späteren Sitzung führt er die beiden Spielergruppen zur Villa oberhalb der Siedlung Jalan. Dort erklärt er, dass die Gruppe etwas Wertvolles finden könne, insbesondere für Rotunas’ Gruppe von großer Bedeutung. Er verspricht eine spätere Belohnung und erwähnt, dass die Rückkehr von Vasul möglicherweise einen Ausweg aus dem Abyssalis biete. Aufgrund eines Zwischenfalls, der der Seelenwacht viele Soldaten kostete, mahnt er zur Eile, da Jalan geschwächt und verwundbar sei[2].
+- Herr von [Seelenwacht](/locations/seelenwacht.md) und hochrangiger Anführer der Seelenwacht im [Abyssalis](/domains/splitterwelt.md), gemeinsam mit dem [Schinder](/npcs/schinder.md).
+- Wird als abgebrüht und sehr mächtig beschrieben.
+- Bereits früher trat er als Herr von Seelenwacht in Erscheinung, als er die Kinder mitnahm, die den Schutzzauber der Festung zerstört hatten.
 
-## Handlungen in der Kampagne
+## Ziele und Vorgehen in Jalan
 
-Während der Ereignisse um die Villa begleitet der Richter die Gruppe persönlich. In der folgenden Sitzung verliert er zunächst einen Finger, als er einen mysteriösen Ring berührt. Nach einer erneuten Berührung des Steins empfängt er eine Vision, die ihm offenbart, dass das gesuchte Ziel in den sogenannten „Narben“ liege. Lunara setzt anschließend Blutkontrolle ein, um ihn zu zwingen, den Ring vollständig aus dem Stein zu ziehen[3].
+- Führte die beiden Gruppen zur Villa oberhalb von [Jalan](/locations/jalan.md) und erklärte, dass sie dort etwas Wertvolles finden könnten, insbesondere für die Gruppe um [Rotunas](/characters/rotunas.md).
+- Versprach eine spätere Belohnung.
+- Betonte, dass die Rückkehr von [Vasul](/deities/vharzul.md) möglicherweise einen Ausweg aus dem Abyssalis biete.
+- Mahnte zur Eile, da die Seelenwacht durch einen Zwischenfall viele Soldaten verloren hatte und Jalan geschwächt war.
 
-Nach dem darauffolgenden Kampf interpretiert der Richter die aufgetauchte geisterhafte Erscheinung als eine Essenz – weder alter noch neuer Gott. In einer demokratischen Abstimmung mit Dante und Kip entscheidet er sich gemeinsam mit ihnen, das angebotene Abkommen nicht anzunehmen und stattdessen den Schinder zu retten. Als ein Portal zur Flucht erscheint, lehnt er die sofortige Flucht ab, um den Schinder noch zu holen. Bevor er sich endgültig von der anderen Gruppe trennt, verabschiedet er sich mit guten Wünschen[3].
+## Verlauf der Expedition
+
+- Begleitete die Gruppe als wichtiger NPC.
+- Verlor zu Beginn der Session einen Finger, als er den Ring berührte.
+- Berührte den Stein erneut und erhielt eine Vision, die ihm verriet, dass das Ziel in den „Narben“ liege.
+- [Lunara](/characters/lunara_velora.md) zwang ihn mittels Blutkontrolle, den Ring herauszuziehen.
+- Nach dem Kampf interpretierte er die Zeichen und glaubte, dass das geisterhafte Wesen weder ein alter noch ein neuer Gott sei, sondern eine Essenz.
+- Er entschied gemeinsam mit [Dante](/characters/dante.md) und [Kip](/characters/kip.md), den Deal nicht anzunehmen und stattdessen den Schinder zu retten.
+- Als das Portal erschien, lehnte er die sofortige Flucht ab, um den Schinder zu holen, und verabschiedete sich von der anderen Gruppe mit besten Wünschen.
 
 # Belege
 
-1. Session 2026-04-14 @ 01:45:15 – https://www.youtube.com/watch?v=1Jyu92P7_Fg  
-2. Session 2026-05-06 @ 00:14:29 – https://www.youtube.com/watch?v=MB4quhDWsQE  
+1. Session 2026-04-14 @ 01:45:15 – https://www.youtube.com/watch?v=1Jyu92P7_Fg
+2. Session 2026-05-06 @ 00:14:29 – https://www.youtube.com/watch?v=MB4quhDWsQE
 3. Session 2026-05-13 @ 01:39:19 – https://www.youtube.com/watch?v=4afPD9Q_5AY

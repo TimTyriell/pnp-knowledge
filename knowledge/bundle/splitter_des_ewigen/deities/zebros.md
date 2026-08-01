@@ -1,8 +1,8 @@
 ---
 type: Deity
 title: Zebros
-description: Zebros ist eine nicht mehr aktive Gottheit, die nach Aussage einer Inschrift
-  am Eingang der Silbergruft als deren ehemaliger Eigentümer gef…
+description: Zebros ist kein Gott, sondern der Name eines alten Königreichs, das im
+  Götterkrieg zerstört wurde. Derselbe Name bezeichnete auch die Haupt…
 tags:
 - deities
 timestamp: '2026-02-24T00:00:00Z'
@@ -12,16 +12,17 @@ subtype: Alter Gott
 
 # Zebros
 
-Zebros ist eine nicht mehr aktive Gottheit, die nach Aussage einer Inschrift am Eingang der Silbergruft als deren ehemaliger Eigentümer geführt wird. Die Überlieferung assoziiert ihn mit der Erde und einem Erdgott. Über sein Wirken, Aussehen oder seinen Kult ist nichts weiter bekannt; er tritt in der Kampagne nicht direkt in Erscheinung und scheint nicht mehr zu existieren.
+Zebros ist kein Gott, sondern der Name eines alten Königreichs, das im Götterkrieg zerstört wurde. Derselbe Name bezeichnete auch die Hauptstadt dieses Königreichs sowie einen Berg (den Berg Zebros), der bis heute bestehen blieb. Vom Königreich selbst sind heute nur noch Ruinen und Relikte erhalten.
 
-## Hintergrund
+## Geschichte
 
-Der einzige bekannte Hinweis auf Zebros stammt von einem Schild am Mineneingang der Silbergruft, auf dem er als vormaliger Besitzer des Bergwerks genannt wird. Die Silbergruft war offenbar einst sein Territorium oder ein heiliger Ort, der später in andere Hände überging oder aufgegeben wurde. Der genaue Zeitpunkt seines Verschwindens oder Todes ist unklar; die Quellen deuten darauf hin, dass Zebros heute nicht mehr anwesend oder wirkmächtig ist.
+Das Königreich Zebros existierte in einer Epoche vor dem Götterkrieg und wurde in dessen Verlauf vernichtet. Auch seine Hauptstadt, die ebenfalls Zebros hieß, wurde zerstört. Über Herrscher, Kultur oder das genaue Ausmaß des Reichs ist bislang nichts bekannt. Die einzige erhaltene Nennung des Namens stammt aus einer Inschrift in der Silbergruft.
 
-## Assoziationen
+## Hinterlassenschaften und Deutung
 
-Die Charaktere der Kampagne verknüpfen Zebros spontan mit der Sphäre der Erde. Dies könnte auf seine mutmaßliche Domäne als Erdgott hindeuten: Schutz der Minen, Herrschaft über unterirdische Reichtümer oder Verbindung zur Stabilität des Bodens. Da keine weiteren Texte oder Kulthandlungen überliefert sind, bleibt diese Zuordnung spekulativ.
+Von Zebros zeugen heute nur Ruinen und Relikte; der Berg Zebros dagegen steht weiterhin. Eine Inschrift am Mineneingang der Silbergruft nennt Zebros als „ehemaligen Eigentümer“ der Mine. Die Gruppe assoziierte den Namen zunächst mit einem Erdgott. Nach Festlegung der Spielleitung handelt es sich bei dieser Nennung jedoch nicht um eine Gottheit: Vermutlich bezieht sich die Inschrift auf ein Relikt oder eine Ruine aus der Zeit des Königreichs, dessen Name mit dem einer Gottheit verwechselt wurde.
 
 # Belege
 
-1. Session 2026-02-24, 00:57:01 – Schild am Mineneingang der Silbergruft, Erwähnung als ehemaliger Eigentümer und Assoziation mit einem Erdgott. (https://www.youtube.com/watch?v=WOFArbwDDIQ)
+1. Session 2026-02-24, 00:57:01 – https://www.youtube.com/watch?v=WOFArbwDDIQ  
+2. Kanon_Entscheidungen.md, Abschnitt „Zebros“ (Spielleitungsfestlegung)

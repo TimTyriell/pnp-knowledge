@@ -10,7 +10,7 @@ id: LOC_ALTES_BAUERNHAUS
 subtype: Gebäude
 ---
 
-Ein geplündertes, einsturzgefährdetes Bauernhaus nahe der Burg. Hier fand [Kuki](/characters/kuki.md) die [Voodoo-Puppe](/items/voodoo_puppe.md) und ein Funke entzündete fast einen Brand.
+Ein geplündertes, einsturzgefährdetes Bauernhaus nahe der Burg. Hier fand [Kuki](/characters/cookie.md) die [Voodoo-Puppe](/items/voodoo_puppe.md) und ein Funke entzündete fast einen Brand.
 
 # Belege
 

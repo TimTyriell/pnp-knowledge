@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Leandras
-description: Leandras (auch Lendras geschrieben) ist ein menschlicher Magier, der
-  in mehreren Dörfern der Region in Erscheinung tritt. Er wirkt zurückge…
+description: 'Leandras – in den Aufzeichnungen auch als Lendras geführt – ist ein
+  Menschenmagier, der der Gruppe in drei Phasen begegnet: zunächst als mü…'
 tags:
 - npcs
 timestamp: '2025-07-29T00:00:00Z'
@@ -11,24 +11,30 @@ aliases:
 - Lendras
 ---
 
-# Leandras
+**Leandras** – in den Aufzeichnungen auch als **Lendras** geführt – ist ein Menschenmagier, der der Gruppe in drei Phasen begegnet: zunächst als mürrischer Einzelgänger, dann als geheimnisvoller Helfer in [Gemata](/locations/gemata.md) und schließlich als Auftraggeber zur Verteidigung von [Windungs](/locations/windung.md).
 
-Leandras (auch Lendras geschrieben) ist ein menschlicher Magier, der in mehreren Dörfern der Region in Erscheinung tritt. Er wirkt zurückgezogen und mürrisch, entpuppt sich aber in Krisen als hilfsbereiter und mächtiger Zauberer. Seine Motivationen bleiben oft undurchsichtig; mal lehnt er jede Beteiligung an Konflikten ab, mal greift er selbst mit verheerender Magie ein. Seine Auftritte sind von Geheimniskrämerei und einer abweisenden, aber letztlich kooperativen Haltung gegenüber der Heldengruppe geprägt.
+## Rolle und Wesen
 
-## Rolle und Auftreten
+Leandras lebt zurückgezogen in einem kleinen, vergitterten Haus und wirkt mürrisch; er wünscht vor allem seine Ruhe. Als [Valeria](/characters/valeria.md) und [Rotunas](/characters/rotunas.md) ihn wegen einer Goblin-Bedrohung um Hilfe bitten, verweist er sie an den Bürgermeister und verweigert jede Mithilfe. Seine Haustür ist mit einer magischen Rune gesichert, die er selbst verschließt – ein Hinweis darauf, dass er womöglich etwas zu verbergen hat.
 
-Leandras lebt als versponnener Einzelgänger in seinem Haus. In [Brechka](/locations/breska.md) wird er von [Valeria](/characters/valeria.md) durch das Fenster überrascht, reagiert abweisend und schickt sie zum Bürgermeister; an der Verteidigung des Dorfes will er sich nicht beteiligen. Sein Haus ist durch eine magische Rune an der Tür geschützt, die [Rotunas](/characters/rotunas.md) beim Versuch, sie zu verriegeln, zu spüren bekommt. In [Gemata](/locations/gemata.md) zeigt er ein anderes Gesicht: Dort wird er von der Hexe Hack angegriffen, kämpft tapfer, tötet eine rabenartige Kreatur mit einem Blitz und lässt sich von der Gruppe retten. Anschließend übergibt er [Esterossa](/characters/esterossa.md) einen magischen Schlüssel und führt die Gruppe in die Katakomben, um [Voras](/npcs/voras.md) zu erwecken – ein Ziel, das er mit Dringlichkeit verfolgt. In [Windung](/locations/windung.md) fungiert er als Auftraggeber: Er ruft die Helden zur Verteidigung des Ortes, begrüßt sie bei der Ankunft und schleudert, als Soldaten den Kapitän und [Miaomani](/npcs/miaomani.md) angreifen, wütend einen Feuerball in die Menge, um seine Verbündeten zu schützen. Die aufgebrachte [Asleina](/npcs/asleina.md) betäubt er mit einem Schlafzauber. Trotz dieser entschlossenen Eingriffe wirkt er von den überraschenden Wendungen oft überfordert und vertraut auf die Fähigkeiten der Helden.
+In der folgenden Begegnung zeigt er sich tapfer, wirkt aber weiterhin geheimnisvoll und treibt zur Eile an. Er scheint gute Absichten zu verfolgen und ist sichtlich erleichtert, als sich der von ihm befreite [Voras](/npcs/voras.md) als Verbündeter entpuppt. Bei der Verteidigung Windungs tritt er schließlich als wissbegieriger Zauberer auf, der die Gruppe selbst herbeigerufen hat. Er vertraut auf die Fähigkeiten der Helden, ist von den überraschenden Wendungen allerdings völlig überfordert und respektiert am Ende die ungewöhnliche Lösung.
 
 ## Magische Fähigkeiten
 
-Leandras beherrscht offensive und defensive Magie. Er nutzt eine Blitzattacke, um eine rabenartige Kreatur zu töten, und setzt einen Feuerball ein, der mehrere Angreifer tötet. Sein Haus in Brechka ist mit einer magischen Rune gesichert. Er kann einen Schlafzauber wirken, um Personen außer Gefecht zu setzen. In Gemata bricht er den Bann, der Voras gefangen hält. Diese Fähigkeiten zeigen, dass er ein erfahrener Magier ist, auch wenn er seine Kräfte nicht immer proaktiv einsetzt.
+- Sichert seine Tür mit einer magischen Rune, die er selbst verschließt.
+- Tötet eine rabenartige Kreatur mit einem Blitz.
+- Schleudert in Windungs wütend einen Feuerball in eine Menge Soldaten und tötet die Angreifer, um seine Verbündeten zu schützen.
+- Betäubt die aufgebrachte [Asleina](/npcs/asleina.md) mit einem Schlafzauber.
+- Bricht den Bann, der Voras gefangen hält.
 
-## Beziehungen und Verlauf
+## Verlauf
 
-Leandras entwickelt im Laufe der Zeit eine lose Zusammenarbeit mit der Heldengruppe. Anfangs in Brechka noch ablehnend, wird er in Gemata zum Verbündeten, der die Gruppe in die Katakomben führt und Voras befreit. In Windung fungiert er als Auftraggeber und greift massiv in den Konflikt mit den Kuatau ein. Er bietet an, beim Kampf gegen die Kuatau zu helfen, respektiert aber am Ende die ungewöhnliche Lösung der Helden. Seine Motive bleiben teils im Dunkeln; er treibt zur Eile an, scheint aber gute Absichten zu haben. Sein Verhalten gegenüber der Gruppe wandelt sich von Distanz zu Vertrauen.
+- **Session 2025-04-09:** Leandras weist Valeria und Rotunas ab, die wegen der Goblin-Bedrohung an seine Tür kommen. Er bleibt bis zum Ende der Begegnung unkooperativ.
+- **Session 2025-04-23:** Sein Haus wird während des Angriffs der Hexe Hack von einer rabenartigen Kreatur und einem Grottenschrat attackiert. Er kämpft, wird verletzt und tötet die Kreatur. Nach der Rettung gibt er [Esterossa](/characters/esterossa.md) einen magischen Schlüssel und führt die Gruppe in die Katakomben, um Voras zu erwecken; dort bricht er den Bann.
+- **Session 2025-07-29:** Als Auftraggeber begrüßt er die Gruppe zur Verteidigung Windungs. Als Soldaten den Kapitän und [Miaomani](/npcs/miaomani.md) angreifen, schreitet er mit einem Feuerball ein. Er bietet an, beim Kampf gegen die Kuatau zu helfen.
 
 # Belege
 
-1. Session 2025-04-09 @ 00:08:51 (https://www.youtube.com/watch?v=1PWdwvun5ow)
-2. Session 2025-04-23 @ 01:28:49 (https://www.youtube.com/watch?v=z3C-bewKqUs)
-3. Session 2025-07-29 @ 01:55:02 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
+1. Session 2025-04-09 @ 00:08:51 – https://www.youtube.com/watch?v=1PWdwvun5ow
+2. Session 2025-04-23 @ 01:28:49 – https://www.youtube.com/watch?v=z3C-bewKqUs
+3. Session 2025-07-29 @ 01:55:02 – https://www.youtube.com/watch?v=XXgO5Ht4Q0A

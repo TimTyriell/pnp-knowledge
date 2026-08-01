@@ -10,7 +10,7 @@ id: LOC_BRUECKE_MIT_KAMPFSPUREN
 subtype: Gebäude
 ---
 
-Eine alte Befestigungsanlage, die vor mindestens 100 Jahren Schauplatz einer Schlacht war. Auf der Brücke begegnen sie den Froschwächtern. Am [Ende](/locations/ende.md) führt eine Treppe ins Wasser zum Eingang der versunkenen Stadt.
+Eine alte Befestigungsanlage, die vor mindestens 100 Jahren Schauplatz einer Schlacht war. Auf der Brücke begegnen sie den Froschwächtern. Am [Ende](/locations/ende_jenseits_der_orkgebiete.md) führt eine Treppe ins Wasser zum Eingang der versunkenen Stadt.
 
 # Belege
 

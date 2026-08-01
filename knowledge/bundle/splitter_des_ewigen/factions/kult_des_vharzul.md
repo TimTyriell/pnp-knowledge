@@ -1,8 +1,8 @@
 ---
 type: Faction
 title: Kult des Vhar'Zul
-description: Der Kult des Vhar'Zul (auch bekannt als *Vasulianer*, *Anhänger Vasuls*
-  oder *Kultisten des Varsurs*) ist eine feindselige religiöse Gruppi…
+description: Der Kult des Vhar'Zul – auch Vasulianer, Anhänger Vasuls oder Kultisten
+  des Varsurs – ist eine feindselige Sekte, die den Gott Vhar'Zul ver…
 tags:
 - factions
 timestamp: '2026-05-13T00:00:00Z'
@@ -16,19 +16,23 @@ aliases:
 
 # Kult des Vhar'Zul
 
-Der **Kult des Vhar'Zul** (auch bekannt als *Vasulianer*, *Anhänger Vasuls* oder *Kultisten des Varsurs*) ist eine feindselige religiöse Gruppierung, die dem zersplitterten Gott Vhar'Zul dient. Die Anhänger erkennen weder Tarvok noch andere Götter an und sind für ihre aggressive Verteidigung heiliger Stätten sowie für Versteinerungsmagie bekannt. Der Kult entstand nach der Zersplitterung Vhar'Zuls in fünf Seelen; viele seiner Mitglieder scheinen ehemalige Anwärter einer Prüfung an einem Brunnen zu sein, die diese nicht bestanden haben [[2]](#belege). Im Verlauf der Kampagne kehrte Vhar'Zul als vollwertige Gottheit mit der dominierenden Persönlichkeit der Seele Thyrex zurück (Kanonentscheidung), was die Ausrichtung des Kults grundlegend veränderte – Belege aus den Sitzungen spiegeln vor allem die Phase vor dieser Wiedervereinigung wider.
+Der **Kult des Vhar'Zul** – auch **Vasulianer**, **Anhänger Vasuls** oder **Kultisten des Varsurs** – ist eine feindselige Sekte, die den Gott Vhar'Zul verehrt, der in verschiedenen Überlieferungen als Varsurs oder Vasul erscheint. Die Vasulianer gelten als Bedrohung; sie bewachen heilige Stätten und greifen Eindringlinge an [1][2].
 
-## Geschichte und Zersplitterung
+## Glaubensgrundlage
 
-Vhar'Zul wurde einst in fünf Seelen zerspalten: Sythraal (der Schleier), Ezhura (die Glut), Koll'Mereth (die Krone), Thyrex (der Sänger) sowie der im *Buch der vier Seelen* verschwiegene fünfte Teil Slix (Kanonentscheidung). Der Kult entstand aus Personen, die eine Prüfung an einem Brunnen nicht bestanden hatten und daraufhin in den Dienst des zersplitterten Gottes traten [[2]](#belege). Sie bewachen Kapellen und greifen Eindringlinge an, die sie als Feinde ihres Gottes betrachten [[1]](#belege). Erst durch die Allianz zwischen Lindo Laut und der Seele Thyrex – die in einem Amulett wohnte – wurden die übrigen Seelen ausgelöscht, sodass Vhar'Zul als vollwertige Gottheit zurückkehrte, fortan mit der besonnenen Persönlichkeit Thyrex’ (Kanonentscheidung).
+Vhar'Zul wurde nicht getötet, sondern in fünf Seelen zerspalten: **Sythraal** (der Schleier), **Ezhura** (die Glut), **Koll'Mereth** (die Krone), **Thyrex** (der Sänger) sowie der verborgene fünfte Teil **Slix**. Das *Buch der vier Seelen* kennt nur vier dieser Teile und ist unvollständig. Vier der Seelen sind bösartig, nur Thyrex gilt als besonnen. Später kehrte Vhar'Zul durch [Lindo Laut](/characters/lindo_laut.md) und Thyrex als vollwertige Gottheit zurück; seither prägt Thyrex' Persönlichkeit den Gott. Der Kult verehrt ausdrücklich Vhar'Zul, nicht Tarvok [1].
 
-## Beziehungen und Aktivitäten
+## Auftreten und Aktivitäten
 
-Die Anhänger des Kults zeigen sich durchweg feindselig gegenüber Außenstehenden. In der Nähe einer Kapelle versteinerten sie Dodo teilweise und forderten die Gruppe auf, sich zu erkennen zu geben [[1]](#belege). Ihre Motivationen sind vielschichtig: Laut Nox zielen Vasulianer auf Lunara ab, offenbar wegen ihrer Runen [[3]](#belege). Dante und Lunara gelten selbst als Anhänger des alten Gottes Vasul – Dante wurde als Kind ohne Wahl an den Gott gebunden – und werden daher von einem Seraph als Feinde identifiziert [[4]](#belege). Esterossa warnt eindringlich vor den manipulativen Kräften, die von Vhar'Zul (hier als Vasul bezeichnet) ausgehen [[4]](#belege). Der Kult operierte also sowohl vor als auch nach der Wiedervereinigung Vhar'Zuls, wobei die älteren Belege einen zersplitterten, unberechenbaren Gott beschreiben, während die spätere Entwicklung zu einem geeinten Kult unter Thyrex’ Führung führte.
+Eine Gruppe von Anhängern hielt sich nahe der Kapelle auf, spürte die Anwesenheit von Fremden und forderte [Dodo](/characters/dodo.md) auf, sich zu erkennen zu geben. Als Reaktion versteinerten sie ihn teilweise mit einem Zauber [1]. Diese Kultisten haben die Prüfung am Brunnen nicht bestanden und wurden „zu etwas anderem“; sie bewachen die Kapelle feindselig [1][2]. Laut [Nox](/npcs/nox.md) sind Vasulianer darauf aus, auf [Lunara](/characters/lunara_velora.md) zuzugreifen, möglicherweise wegen ihrer Runen [3]. [Esterossa](/characters/esterossa.md) warnt vor Vasuls Manipulationen [4].
+
+## Mitglieder und Konflikte
+
+[Dante](/characters/dante.md) und Lunara sind Anhänger des alten Gottes Vasul; Dante wurde als Kind zu Vasul geschickt und hatte keine Wahl, den Gott anzunehmen. Der Seraph erkennt die beiden daran und will sie töten [4]. Damit ist die Gruppe direkt in die Auseinandersetzung mit dem Kult und seinen Verbündeten verstrickt.
 
 # Belege
-1. Session 2025-08-20 @ 01:26:26 (https://www.youtube.com/watch?v=-XbO3FLSL_I) – Kultisten des Varsurs an einer Kapelle, Versteinerungszauber, Feindseligkeit.
-2. Session 2025-08-20 @ 01:26:26 (https://www.youtube.com/watch?v=-XbO3FLSL_I) – Ursprung des Kults: aus der nicht bestandenen Prüfung am Brunnen; Bewachung der Kapelle.
-3. Session 2026-02-17 @ 01:16:36 (https://www.youtube.com/watch?v=Z2jlzpoTWVw) – Vasulianer als Bedrohung für Lunara wegen ihrer Runen.
-4. Session 2026-05-13 @ 00:13:50 (https://www.youtube.com/watch?v=4afPD9Q_5AY) – Dante und Lunara als Anhänger Vasuls; Seraph erkennt sie; Esterossas Warnung vor Manipulation.
-5. Kanon_Entscheidungen.md – Vhar'Zuls Zersplitterung in fünf Seelen, Unvollständigkeit des *Buchs der vier Seelen*, Rückkehr als vollwertige Gottheit mit Thyrex-Persönlichkeit.
+
+1. Session 2025-08-20 @ 01:26:26 (https://www.youtube.com/watch?v=-XbO3FLSL_I)
+2. Session 2025-08-20 @ 01:26:26 (https://www.youtube.com/watch?v=-XbO3FLSL_I)
+3. Session 2026-02-17 @ 01:16:36 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
+4. Session 2026-05-13 @ 00:13:50 (https://www.youtube.com/watch?v=4afPD9Q_5AY)

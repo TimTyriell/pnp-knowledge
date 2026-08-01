@@ -10,7 +10,7 @@ id: EVENT_KAMPF_GEGEN_DEN_WANDERNDEN_UNTOTEN
 subtype: Kampf
 ---
 
-Eine Serie von Begegnungen mit der regenerierenden Kreatur. [Cookie](/characters/cookie.md) stoppt sie das erste Mal mit magischen Ranken und zermalmt sie, doch sie setzt sich aus schwarzem Schlamm neu zusammen. [Lindo Laut](/characters/lindo_laut.md) fesselt sie mit Ketten, und [Dodo](/characters/dodo.md) treibt sie mit Schildstößen zurück, bis er sie schließlich mit dem brennenden Dolch vernichtet. Nach dem Tod kehrt eine zweite, intelligentere Variante zurück, die Magie einsetzt und die Gruppe bis zum [Ende](/locations/ende.md) der Sitzung bedrängt.
+Eine Serie von Begegnungen mit der regenerierenden Kreatur. [Cookie](/characters/cookie.md) stoppt sie das erste Mal mit magischen Ranken und zermalmt sie, doch sie setzt sich aus schwarzem Schlamm neu zusammen. [Lindo Laut](/characters/lindo_laut.md) fesselt sie mit Ketten, und [Dodo](/characters/dodo.md) treibt sie mit Schildstößen zurück, bis er sie schließlich mit dem brennenden Dolch vernichtet. Nach dem Tod kehrt eine zweite, intelligentere Variante zurück, die Magie einsetzt und die Gruppe bis zum [Ende](/locations/ende_jenseits_der_orkgebiete.md) der Sitzung bedrängt.
 
 # Belege
 

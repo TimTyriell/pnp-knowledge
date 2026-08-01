@@ -10,7 +10,7 @@ id: ITEM_BROSCHEN_DER_HEXE
 subtype: Artefakt
 ---
 
-Vier Broschen, die der reiche Gast im Auftrag der Hexe an die Dorfbewohner verteilte. Sie sind weniger mächtig als das [Sternamulett](/items/sternamulett.md), aber Teil des Plans. [Cookie](/characters/cookie.md) sammelt sie am [Ende](/locations/ende.md) ein, um weitere Gefahren zu verhindern.
+Vier Broschen, die der reiche Gast im Auftrag der Hexe an die Dorfbewohner verteilte. Sie sind weniger mächtig als das [Sternamulett](/items/sternamulett.md), aber Teil des Plans. [Cookie](/characters/cookie.md) sammelt sie am [Ende](/locations/ende_jenseits_der_orkgebiete.md) ein, um weitere Gefahren zu verhindern.
 
 # Belege
 

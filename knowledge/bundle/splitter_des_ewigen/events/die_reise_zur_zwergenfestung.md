@@ -10,7 +10,7 @@ id: EVENT_DIE_REISE_ZUR_ZWERGENFESTUNG
 subtype: Reise
 ---
 
-[Rotunas](/characters/rotunas.md) und [Esterossa](/characters/esterossa.md) brechen von [Ehrenfels](/locations/ehrenfels.md) auf und wandern etwa anderthalb Tage durch die [Berge](/locations/berge.md) zur [Zwergenfestung](/locations/zwergenfestung.md). Der Weg ist kalt und beschwerlich, aber sie erreichen die Festung ohne Zwischenfälle.
+[Rotunas](/characters/rotunas.md) und [Esterossa](/characters/esterossa.md) brechen von [Ehrenfels](/locations/ehrenfels.md) auf und wandern etwa anderthalb Tage durch die Berge zur [Zwergenfestung](/locations/zwergenfestung.md). Der Weg ist kalt und beschwerlich, aber sie erreichen die Festung ohne Zwischenfälle.
 
 # Belege
 

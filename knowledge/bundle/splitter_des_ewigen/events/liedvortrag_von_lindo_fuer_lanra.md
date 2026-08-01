@@ -10,7 +10,7 @@ id: EVENT_LIEDVORTRAG_VON_LINDO_FUER_LANRA
 subtype: Sonstiges
 ---
 
-Auf [Lanras](/npcs/lenra.md) Bitte spielt [Lindo Laut](/characters/lindo_laut.md) ein heimatliches, liebevolles Lied, das ihr gefällt. Währenddessen nutzt [Kuki](/characters/kuki.md) den Moment, um die [Voodoo-Puppe](/items/voodoo_puppe.md) einzusetzen.
+Auf [Lanras](/npcs/lenra.md) Bitte spielt [Lindo Laut](/characters/lindo_laut.md) ein heimatliches, liebevolles Lied, das ihr gefällt. Währenddessen nutzt [Kuki](/characters/cookie.md) den Moment, um die [Voodoo-Puppe](/items/voodoo_puppe.md) einzusetzen.
 
 # Belege
 

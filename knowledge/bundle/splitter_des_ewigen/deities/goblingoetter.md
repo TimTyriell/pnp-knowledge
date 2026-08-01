@@ -1,8 +1,8 @@
 ---
 type: Deity
 title: Goblingötter
-description: Die Goblingötter sind eine pantheonartige Gruppe chaotischer Gottheiten,
-  die als externe, unberechenbare Kraft in die Geschicke der Spielwe…
+description: Die Goblingötter bilden ein chaotisches Pantheon, das von den Goblins
+  verehrt wird. Sie stellen in der Spielwelt eine unberechenbare göttli…
 tags:
 - deities
 timestamp: '2025-11-14T00:00:00Z'
@@ -16,96 +16,84 @@ aliases:
 
 ## Überblick
 
-Die Goblingötter sind eine pantheonartige Gruppe chaotischer Gottheiten, die als externe, unberechenbare Kraft in die Geschicke der Spielwelt eingreifen. Sie sind keine bösartige Göttergruppe — die frühe Einschätzung aus der zweiten Session wurde später als Fehleinschätzung revidiert; ihre Natur ist vielmehr chaotisch und wechselhaft. 
-
-In der Spielwelt manifestiert sich ihre Macht typischerweise durch grüne Blitze, die vom Himmel herab zuschlagen und sowohl Verbündete stärken als auch Gegner behindern können. Außerhalb des Spielgeschehens werden die Goblingötter vom Twitch-Chat verkörpert: Zuschauer können durch Chat-Interaktionen Einfluss auf die Story nehmen, was vom Spielleiter aufgegriffen und in die Spielwelt übersetzt wird. Der GM kündigte sie in der ersten Session mit den Worten an: *"Ihr dürft natürlich wieder die bösen Goblin-Götter spielen oder die lieben Goblin-Götter, das ist euch überlassen."*
-
-Ihre Eingriffe reichen von kleinen, humorvollen Aktionen wie dem Niesen eines Bugbären über die Umbenennung einer Katze in „Günther“ bis hin zu kampfentscheidenden göttlichen Interventionen.
+Die Goblingötter bilden ein chaotisches Pantheon, das von den Goblins verehrt wird. Sie stellen in der Spielwelt eine unberechenbare göttliche Kraft dar, deren Einfluss sich in plötzlichen, oft humorvollen Eingriffen manifestiert. Auf der Meta-Ebene werden sie durch den Twitch-Chat verkörpert, der als kollektive Stimme der Gottheiten fungiert – ein ungewöhnliches narratives Mittel, bei dem Zuschauerinteraktionen in das Spielgeschehen einfließen. Die Goblingötter sind weder eindeutig gut noch böse, sondern vor allem wechselhaft: Mal gewähren sie Segnungen wie Heilige Pfeile oder Blitz-Verstärkungen, mal sorgen sie mit einem grünen Blitz dafür, dass Feinde auf die Helden aufmerksam werden.
 
 ## Rolle in der Kampagne
 
-Die Goblingötter nehmen eine einzigartige Doppelrolle ein: Sie sind sowohl eine spielwelt-interne Gottheitengruppe als auch eine Meta-Instanz, die den Zuschauern des Streams eine interaktive Teilnahme ermöglicht. Der GM ruft sie regelmäßig zu Beginn von Sessions humorvoll an und lädt den Chat ein, Einfluss zu nehmen: *"Ihr dürft gerne wieder die Goblin Götter spielen."*
+Die Goblingötter wurden in der ersten Session (2025-04-09) eingeführt und begleiten die Kampagne seither als wiederkehrendes Spielelement. Der Spielleiter erklärt das Prinzip gleich zu Beginn: „ihr dürft natürlich wieder die bösen Goblin-Götter spielen oder die lieben Goblin-Götter, das ist euch überlassen. Das heißt, wenn ihr Einfluss nehmen wollt auf die Story und es passt gerade, dann würde ich, also dann schreibt einfach was rein und dann kann ich das eventuell übernehmen.“ [1]
 
-Ihre Rolle im Spielgeschehen ist vielschichtig:
-
-- **Kampfunterstützung**: Sie stärken Charaktere im Kampf, gewähren zusätzliche Angriffe (etwa [Cookie](/characters/cookie.md) die Zauber „Holy Arrows“ im Kampf gegen Untote) oder verleihen Vorteile wie [Esterossas](/characters/esterossa.md) gestärkten Angriff in der Arena.
-- **Kampfbehinderung**: Sie können auch gegen die Gruppe wirken, indem sie etwa [Cookies](/characters/cookie.md) Ranken auflösen oder Feinde mit einem grünen Blitz auf die Helden aufmerksam machen.
-- **Ressourcenvergabe**: Sie gewähren der Gruppe Hoffnungspunkte und Inspirationspunkte, wie etwa nach einer gelungenen Einrichtung eines Raumes, als der GM kommentierte: *"Dafür geben die Goblin-Götter einen Inspirationspunkt"*.
-- **Narrative Wendungen**: Sie leiteten den Briefboten und griffen in kleinen, humorvollen Momenten ein — etwa der Umbenennung der Katze in „Günther“.
-
-Die Götter sind dabei nie verlässlich: Sie können in derselben Session helfen und behindern, was ihre chaotische Natur unterstreicht.
+Diese duale Rolle – Zuschauerinteraktion und göttliches Wirken in der Spielwelt – zieht sich durch die gesamte Kampagne. Die Goblingötter werden vom Spielleiter regelmäßig angerufen, wenn es darum geht, den Chat in das Geschehen einzubinden. Ihre Macht zeigt sich dabei nicht in großen, weltverändernden Akten, sondern in kleinen, präzisen Eingriffen, die das Kampfgeschehen oder soziale Situationen beeinflussen können.
 
 ## Wichtige Merkmale
 
-### Manifestation und Erscheinung
-Die primäre physische Manifestation der Goblingötter in der Spielwelt sind **grüne Blitze**, die vom Himmel herabfahren. Diese Blitze können gezielt einzelne Charaktere oder Gegner treffen und deren Zustand unmittelbar verändern.
+Die Goblingötter manifestieren sich in der Spielwelt vor allem durch **grüne Blitze**. Diese visuelle Signatur taucht mehrfach auf: 2025-04-30 hält die Dungeon-Master-Hand einen grünen Blitz auf, der das Schiff treffen sollte [4]; 2025-05-06 macht ein grüner Blitz die Feinde auf die Helden aufmerksam [5]; 2025-09-23 trifft ein grüner Blitz Cookie und verleiht ihr die Fähigkeit „Heilige Pfeile“ [6]; 2025-10-21 manifestieren sie sich in der Arena als grüne Blitze von oben [8].
 
-In einer bemerkenswerten Szene während der Schiffsreise versuchten die Goblingötter mit einem großen grünen Blitz das Schiff zu treffen, doch: *"die Dungeon Master Hand hält den Blitz auf und schleudert den Blitz wieder zurück zu den Gömling-Göttern."* Dies zeigt, dass selbst der Spielleiter ihre Macht aktiv begrenzen kann, wenn das Spielgeschehen es erfordert.
+Ihr Wirken ist **unberechenbar und richtungsneutral**. Sie können:
+- Goblins im Kampf stärken („Die Goblingötter sind uns gnädig. Nun werden wir euch zerfleischen.“) [3]
+- Einzelne Charaktere mit zusätzlichen Fähigkeiten oder Angriffen ausstatten, z.B. Cookie mit Holy Arrows [6] oder Esterossa mit einem Angriffsvorteil [8]
+- Gegnerische Aktionen behindern, etwa Cookies Ranken auflösen [8]
+- Durch Blitze in Schlachten eingreifen und Gegner oder Verbündete zufällig treffen [3]
+- Unpassende Momente erzeugen, wie einen Bugbären zum Niesen bringen und von der Mauer fallen lassen [2]
+- Benennungen vornehmen – so wird die Katze in „Günther“ umbenannt [4]
+- Inspirationspunkte gewähren [9]
+- Den Briefboten leiten [9]
 
-### Wesenszüge und Wirkungsweise
-Die Goblingötter sind durch extreme **Unberechenbarkeit** und **Launenhaftigkeit** gekennzeichnet. Ihre Eingriffe folgen keinem erkennbaren moralischen Kompass, sondern scheinbar dem kollektiven Willen des Chats oder einer eigenen chaotischen Agenda. Sie lassen sich von den Spielern als „böse“ oder „lieb“ anrufen und scheinen sich in beide Richtungen auslegen zu lassen.
+Das Pantheon scheint **kollektiv und unpersönlich** zu agieren. Anders als bei individuellen Gottheiten treten die Goblingötter stets als Gruppe auf, ohne dass einzelne namentlich hervorgehoben würden. Dodo spricht zwar von seinem „Goblin-Gott-Verstärker“ [7], was auf eine persönlichere Beziehung zu einer bestimmten Gottheit hindeuten könnte, aber auch hier bleibt unklar, ob es sich um eine spezifische Entität oder das Pantheon als Ganzes handelt.
 
-Ihre Eingriffe zeigen oft einen **humorvollen Unterton** — sie lassen einen Bugbären von der Mauer niesen, taufen eine Katze um oder schicken Blitze, die Feinde auf die Helden aufmerksam machen. Dies deckt sich mit ihrer Beschreibung als chaotisch-wechselhaft, nicht als genuin bösartig.
-
-### Mechanik
-Im Spiel fungieren sie als Ressourcensystem: Der Chat kann durch Interaktion (vermutlich Punktevergabe oder spezifische Kommandos) die Gunst der Götter erlangen. Diese übersetzt der GM in konkrete spielmechanische Vorteile wie zusätzliche Angriffe, Hoffnungspunkte oder Statuseffekte. [Dodo](/characters/dodo.md) nutzt beispielsweise einen speziellen „Goblin-Gott-Verstärker“, der ihm *"einen bösen Blick und gesteigerte Fähigkeiten"* verleiht.
+**Dodos Goblin-Gott-Verstärker**: Wenn Dodo seinen „Unstoppable“-Modus aktiviert, erhält er einen „ganz bösen Blick“ und gesteigerte kämpferische Fähigkeiten. Die Äußerlichkeiten seiner Verwandlung sind subtil – „Also äußerlich macht sich das nicht wirklich bemerkbar. Jetzt bin ich wütend. Das ist eher so das Mindset, das sich ein bisschen ändert.“ [7]
 
 ## Beziehungen und Verbindungen
 
-**Zu [Dodo](/characters/dodo.md)**: Dodo hat eine besondere Beziehung zu den Goblingöttern. Er nutzt aktiv einen „Goblin-Gott-Verstärker“, der ihn im Kampf stärkt und ihm einen bösen Blick verleiht. Sein Gott oder seine Verbindung zu den Göttern wird als Quelle seiner Kräfte benannt — in der Session vom 30. September 2025 wird ein nicht näher benannter Goblin-Gott erwähnt, der ihm Kräfte verleiht.
+### Cookie
+Cookie scheint eine besondere Verbindung zu den Goblingöttern zu haben. 2025-09-23 ruft sie im Kampf gezielt den „Goblin Gott“ an, woraufhin sie von einem grünen Blitz getroffen wird und die Fähigkeit Holy Arrows erhält. [6] Sie nutzt diesen Bonus, um zwei Untote zu töten. Ob Cookies Bindung an die Goblingötter auf eine aktive Verehrung oder eine einmalige Gunst zurückgeht, bleibt unklar. Cookie selbst agiert dabei zwischen Ehrfurcht und Pragmatismus – sie bittet um Hilfe, als wäre die Göttergunst eine verfügbare, wenn auch unzuverlässige Ressource.
 
-**Zu [Cookie](/characters/cookie.md)**: Cookie scheint die Goblingötter zu verehren oder sie zumindest direkt anzurufen. In der Seelenwacht-Session (23. September 2025) gewähren ihr die Götter durch einen grünen Blitz die Fähigkeit „Holy Arrows“, mit der sie zwei Untote tötet. Sie ruft vor ihrem Angriff den *"Goblin Gott"* an.
+### Dodo
+Dodo führt den „Goblin-Gott-Verstärker“, eine wiederkehrende Mechanik, die ihm im Kampf gesteigerte Kräfte verleiht. [7] Die Formulierung „der sowieso schon vergrößerte Goblin-Gott-Verstärker Dodo“ deutet darauf hin, dass dies keine einmalige Segnung ist, sondern ein stärker habitualisierter Zustand. Sein Kampfstil entwickelte sich über die Zeit: Zunächst führte er ein Breitschwert, wechselte auf Tier 2 zu einem Streitkolben und trägt heute „Zebros Zorn“, eine heilige Waffe, die die Gruppe in der Seelenwacht-Session erhielt.
 
-**Zu [Esterossa](/characters/esterossa.md)**: In der Arena-Session stärken die Goblingötter Esterossa mit einem grünen Blitz und geben ihr einen Angriffsvorteil. Sie bedankt sich mit den Worten: *"Dankeschön, Koblen-Götter. Das fühlt sich prima an."*
+### Esterossa
+In der Arena 2025-10-21 wird Esterossa von einem grünen Blitz getroffen und gestärkt. Sie reagiert mit Dankbarkeit: „Dankeschön, Koblen-Götter. Das fühlt sich prima an.“ [8] Beachtenswert ist die quasi-familiäre Anrede „Koblen-Götter“, die bei keinem anderen Charakter so auftaucht und auf eine unverkrampfte, fast vertrauliche Haltung schließen lässt.
 
-**Zu Gegnern**: Die Goblingötter können auch Feinde stärken. In der Schlacht um das Dorf Breschka traf ein Blitz vier Goblins, die daraufhin an Stärke gewannen. Einer von ihnen rief: *"Die Goblingötter sind uns gnädig. Nun werden wir euch zerfleischen."* Dies belegt, dass sie nicht exklusiv einer Seite verpflichtet sind.
+### Valeria, Rotunas und die Gruppe
+Die übrigen Gruppenmitglieder erleben die Goblingötter primär als externe, oft unberechenbare Kraft, die in ihr Leben eingreift. Niemand zeigt aktive Anbetung oder ritualisierte Verehrung – die Götter werden akzeptiert, mitunter gefürchtet, aber nicht angebetet.
 
-**Zum Twitch-Chat**: Die Götter sind die primäre Schnittstelle zwischen Chat und Spielwelt. Der Chat „spielt“ die Goblingötter und kann durch kollektive Entscheidungen das Spielgeschehen beeinflussen.
-
-**Zum Spielleiter**: Der GM agiert als Vermittler zwischen Göttern und Spielwelt. Er ruft sie an, übersetzt Chat-Interaktionen in spielmechanische Effekte und kann ihre Macht wie in der Schiff-Szene auch aktiv begrenzen.
+### Goblins in der Spielwelt
+In Breschka rufen die Goblins während der Schlacht die Goblingötter an und empfangen tatsächlich Stärkung durch einen Blitz. „Die Goblingötter sind uns gnädig. Nun werden wir euch zerfleischen.“ [3] Dies zeigt, dass die Götter nicht nur für die Spielercharaktere, sondern auch für NPCs in der Welt real und wirksam sind – ihre Macht ist kein exklusives Element der Helden.
 
 ## Chronologie
 
-**Session 1 (9. April 2025)**: Die Goblingötter werden vom GM als interaktives Element angekündigt, aber noch nicht aktiviert. Er erklärt dem Chat, dass sie Einfluss nehmen können: *"Ihr dürft natürlich wieder die bösen Goblin-Götter spielen oder die lieben Goblin-Götter, das ist euch überlassen."*
+**Session 2025-04-09**: Einführung der Goblingötter als Interaktionsmöglichkeit für den Twitch-Chat. Der Spielleiter etabliert, dass der Chat sowohl die „bösen“ als auch die „lieben“ Goblingötter spielen kann. Erste Nutzung dieser Mechanik. [1]
 
-**Session 2 (15. April 2025)**: Erste aktive Eingriffe. Die Götter lassen einen Bugbären niesen und von einer Mauer fallen. In der Bauernhaus-Szene werden sie grollend erwähnt. In dieser Session werden sie fälschlich als „bösartige Göttergruppe“ bezeichnet — eine spätere Entscheidung der Spielleitung stellt klar, dass sie chaotisch und wechselhaft sind, nicht bösartig.
+**Session 2025-04-15**: Die Goblingötter werden als „bösartige Göttergruppe“ bezeichnet – eine Einschätzung, die sich später als Fehleinschätzung herausstellt. In dieser Session lassen sie einen Bugbären niesen und von der Mauer fallen, und sie werden in der Bauernhaus-Szene kurz grollend erwähnt. [2]
 
-**Session 3 (23. April 2025)**: Während der Schlacht um das Dorf schicken die Götter Blitze, die einige Goblins stärken. Die gestärkten Goblins rufen aus: *"Die Goblingötter sind uns gnädig."*
+**Session 2025-04-23**: Während der Schlacht greifen die Goblingötter aktiv ein, indem sie Blitze schicken, die vier Goblins stärken. Diese rufen daraufhin aus: „Die Goblingötter sind uns gnädig.“ [3] Valeria reagiert sofort mit einem Flächenzauber.
 
-**Session 4 (30. April 2025)**: Auf dem Schiff versuchen die Goblingötter mit einem großen grünen Blitz das Schiff zu treffen. Der GM als „Dungeon Master Hand“ wehrt den Blitz ab und schleudert ihn zurück. Die Götter benennen in dieser Session die Katze in „Günther“ um. Der GM ruft sie zu Sessionsbeginn humorvoll an.
+**Session 2025-04-30**: Ein grüner Blitz soll das Schiff treffen, wird aber von der Dungeon-Master-Hand aufgehalten und zu den Göttern zurückgeschleudert. Die Götter benennen die Katze in „Günther“ um. [4] Erstmals zeigt sich die Meta-Ebene ganz explizit: Der Spielleiter interagiert physisch mit dem göttlichen Eingriff.
 
-**Session 5 (6. Mai 2025)**: Die Götter gewähren der Gruppe mehrfach Gunst in Form von Hoffnungspunkten. Ein grüner Blitz macht jedoch auch die Feinde auf die Helden aufmerksam, was ihre ambivalente Natur unterstreicht.
+**Session 2025-05-06**: Der Chat wird erneut als Goblingötter angerufen. In dieser Session gewähren sie der Gruppe mehrmals Gunst in Form von Hoffnungspunkten, verursachen aber auch einen grünen Blitz, der die Feinde auf die Helden aufmerksam macht. [5]
 
-**Session 8 (23. September 2025)**: [Cookie](/characters/cookie.md) ruft vor ihrem Angriff den *"Goblin Gott"* an. Dieser gewährt ihr durch einen grünen Blitz einen Bonus — den Zauber „Holy Arrows“ — mit dem sie zwei Untote tötet. Die Manifestation ihrer Macht wird als kurz beschrieben: *"Ihre Macht manifestierte sich nur kurz."*
+**Session 2025-09-23**: Cookie ruft im Kampf spezifisch den „Goblin Gott“ an und wird von einem grünen Blitz getroffen, der ihr die Fähigkeit Heilige Pfeile (Holy Arrows) verleiht. Mit dieser zusätzlichen Macht tötet sie zwei Untote. [6]
 
-**Session 9 (30. September 2025)**: Dodo aktiviert seinen „Goblin-Gott-Verstärker“ und erhält *"einen ganz bösen Blick"* sowie gesteigerte Fähigkeiten im Kampf. Sein göttlicher Verstärker wird mit einem nicht näher benannten Goblin-Gott in Verbindung gebracht.
+**Session 2025-09-30**: Dodo aktiviert regelmäßig seinen „Goblin-Gott-Verstärker“, der ihm einen „bösen Blick“ und gesteigerte Fähigkeiten verleiht. [7] Sein Kampfstil ist zu diesem Zeitpunkt längst auf den Streitkolben umgestellt; später wird er „Zebros Zorn“ erhalten.
 
-**Session 10 (21. Oktober 2025)**: In der Arena manifestieren sich die Götter erneut als grüne Blitze. Sie stärken Esterossa mit einem Angriffsvorteil und [Cookie](/characters/cookie.md) ruft ein weiteres Mal den Goblin-Gott an, der ihre Ranken einsetzt. In dieser Session werden sie auch als behindernde Kraft gezeigt, da sie [Cookies](/characters/cookie.md) Ranken auflösen können. Die Interaktion wird explizit als Twitch-Chat-Mechanik beschrieben.
+**Session 2025-10-21**: In der Arena manifestieren sich die Goblingötter als grüne Blitze, die von oben herabschlagen. Esterossa erhält einen Angriffsvorteil, während Cookies Ranken aufgelöst werden – die Götter agieren richtungsneutral, unterstützen und behindern gleichermaßen. [8]
 
-**Session 11 (14. November 2025)**: Die Goblingötter leiten den Briefboten und gewähren der Gruppe einen Inspirationspunkt. Der GM kommentiert: *"Dafür geben die Goblin-Götter einen Inspirationspunkt, wenn sowas gibt. Alle gerne einen Hauptpunkt."*
+**Session 2025-11-14**: Die Goblingötter leiten den Briefboten und gewähren der Gruppe einen Inspirationspunkt. [9] Dies ist der bislang letzte dokumentierte Eingriff.
 
 ## Offene Fragen
 
-- Die genaue **Anzahl und Identität** der einzelnen Goblingötter bleibt ungeklärt. Während meist von „den Goblingöttern“ im Plural die Rede ist, spricht [Dodo](/characters/dodo.md) von seinem spezifischen Gott und [Cookie](/characters/cookie.md) ruft den *"Goblin Gott"* im Singular an. Ob es sich um ein Pantheon mit individuellen Göttern oder um eine kollektive Entität handelt, ist offen.
-- Der **Ursprung** der Götter und ihr **Verhältnis zu anderen Gottheiten** der Spielwelt sind nicht thematisiert.
-- Die genaue **Mechanik der Chat-Interaktion** (Punktesystem, Kommandos, Abstimmungen) wird in den Transkripten nicht detailliert erklärt, nur ihre Existenz und Wirkung.
+- Handelt es sich bei Dodos „Goblin-Gott-Verstärker“ um eine Beziehung zu einer spezifischen einzelnen Gottheit innerhalb des Pantheons, oder wirkt hier die kollektive Macht der Gruppe? Die Formulierung im Singular („Goblin-Gott“) und die Konstanz des Effekts deuten auf eine persönlichere Verbindung hin, doch in keiner Session wird ein einzelner Gott namentlich benannt.
+- Warum scheinen Cookie und Dodo eine stärkere Anbindung an die Goblingötter zu haben als andere Charaktere? Sind sie aktive Verehrer, oder wurden sie von den Göttern auserwählt?
+- Wie verhalten sich die Goblingötter zu anderen Pantheonen oder Gottheiten der Welt? Gibt es Konflikte, Allianzen oder Überschneidungen?
+- Wie genau funktioniert die Verbindung zwischen Twitch-Chat und Spielwelt? Der Spielleiter hat erklärt, dass der Chat die Götter „spielt“, aber wo verläuft die Grenze zwischen Zuschauerentscheidung und göttlichem Willen?
 
 ## Belege
 
-[1] Session 2025-04-09 @ 00:04:57 (https://www.youtube.com/watch?v=1PWdwvun5ow) – Erste Ankündigung der Goblingötter als Chat-Interaktion.
-
-[2] Session 2025-04-15 @ 01:31:13 (https://www.youtube.com/watch?v=YCpAz_syjaY) – Bugbär-Niesen-Intervention; erste (später revidierte) Charakterisierung als bösartig.
-
-[3] Session 2025-04-23 @ 01:11:46 (https://www.youtube.com/watch?v=z3C-bewKqUs) – Blitz stärkt Goblins in der Schlacht; Goblin-Ausruf über die Gnade der Götter.
-
-[4] Session 2025-04-30 @ 00:12:43 (https://www.youtube.com/watch?v=fsCOiSkKKTE) – Abgewehrter Blitz auf dem Schiff; Umbenennung der Katze in Günther; humorvolle Anrufung.
-
-[5] Session 2025-05-06 @ 00:03:04 (https://www.youtube.com/watch?v=e0v6AFGd4mE) – Hoffnungspunkte und grüner Blitz, der Feinde aufmerksam macht.
-
-[6] Session 2025-09-23 @ 01:39:56 (https://www.youtube.com/watch?v=DGzfqVigS0g) – Cookie erhält „Holy Arrows“ von den Goblingöttern; tötet zwei Untote.
-
-[7] Session 2025-09-30 @ 00:02:08 (https://www.youtube.com/watch?v=bUT7Mc2hjUY) – Dodos Goblin-Gott-Verstärker mit bösem Blick und gesteigerten Fähigkeiten.
-
-[8] Session 2025-10-21 @ 00:20:53 (https://www.youtube.com/watch?v=sxFhbtwoefA) – Arena-Manifestation als grüne Blitze; Stärkung Esterossas; Auflösung von Cookies Ranken.
-
-[9] Session 2025-11-14 @ 01:27:25 (https://www.youtube.com/watch?v=8Khb-Y8XbKY) – Götter leiten Briefboten; gewähren Inspirationspunkt.
+[1] Session 2025-04-09 @ 00:04:57 (https://www.youtube.com/watch?v=1PWdwvun5ow)
+[2] Session 2025-04-15 @ 01:31:13 (https://www.youtube.com/watch?v=YCpAz_syjaY)
+[3] Session 2025-04-23 @ 01:11:46 (https://www.youtube.com/watch?v=z3C-bewKqUs)
+[4] Session 2025-04-30 @ 00:12:43 (https://www.youtube.com/watch?v=fsCOiSkKKTE)
+[5] Session 2025-05-06 @ 00:02:04 (https://www.youtube.com/watch?v=e0v6AFGd4mE)
+[6] Session 2025-09-23 @ 01:39:56 (https://www.youtube.com/watch?v=DGzfqVigS0g)
+[7] Session 2025-09-30 @ 00:02:08 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[8] Session 2025-10-21 @ 00:20:53 (https://www.youtube.com/watch?v=sxFhbtwoefA)
+[9] Session 2025-11-14 @ 01:27:25 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)

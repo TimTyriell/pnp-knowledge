@@ -10,7 +10,7 @@ id: LOC_BERGSPITZE
 subtype: Wildnis
 ---
 
-Die Spitze des [Berges](/locations/berge.md), die [das Heiligtum](/locations/das_heiligtum.md) beherbergt. Von dort aus ist Licht zu sehen, und sie ist das Ziel der Gruppe.
+Die Spitze des Berges, die [das Heiligtum](/locations/das_heiligtum.md) beherbergt. Von dort aus ist Licht zu sehen, und sie ist das Ziel der Gruppe.
 
 # Belege
 

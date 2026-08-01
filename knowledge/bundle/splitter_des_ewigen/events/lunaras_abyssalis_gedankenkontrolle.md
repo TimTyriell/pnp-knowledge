@@ -10,7 +10,7 @@ id: EVENT_LUNARAS_ABYSSALIS_GEDANKENKONTROLLE
 subtype: Sonstiges
 ---
 
-Lunara spricht in der Sprache des [Abyssalis](/domains/splitterwelt.md) und befiehlt allen Soldaten, die Waffen niederzulegen und zu verschwinden. Der Zauber gerät außer Kontrolle und löscht kurzzeitig die Gedanken aller Anwesenden in der [Taverne](/locations/taverne_von_breska.md), einschließlich ihrer eigenen Gruppe. Dies geschieht unter dem Einfluss des Neumonds und ihrer unbewussten Verbindung zur Ebene Abyssalis.
+Lunara spricht in der Sprache des [Abyssalis](/domains/splitterwelt.md) und befiehlt allen Soldaten, die Waffen niederzulegen und zu verschwinden. Der Zauber gerät außer Kontrolle und löscht kurzzeitig die Gedanken aller Anwesenden in der Taverne, einschließlich ihrer eigenen Gruppe. Dies geschieht unter dem Einfluss des Neumonds und ihrer unbewussten Verbindung zur Ebene Abyssalis.
 
 # Belege
 

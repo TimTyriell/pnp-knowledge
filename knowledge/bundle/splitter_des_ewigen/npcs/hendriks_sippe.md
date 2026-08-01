@@ -10,7 +10,7 @@ id: NPC_HENDRIKS_SIPPE
 subtype: Kult
 ---
 
-Eine Gemeinschaft von Bergnomaden, die seit Generationen den alten Gott [Seras](/deities/seras.md) verehrt. Sie leben zurückgezogen, bauen Eisen ab und meiden die Zivilisation. Sie werden von [Hendrik](/npcs/hendrik.md) angeführt und haben gelernt, mit dem Hassgeist zu existieren, indem sie ihn ignorieren. Nach außen hin verbergen sie ihren Glauben aus Angst vor Verfolgung.
+Eine Gemeinschaft von Bergnomaden, die seit Generationen den alten Gott Seras verehrt. Sie leben zurückgezogen, bauen Eisen ab und meiden die Zivilisation. Sie werden von [Hendrik](/npcs/hendrik.md) angeführt und haben gelernt, mit dem Hassgeist zu existieren, indem sie ihn ignorieren. Nach außen hin verbergen sie ihren Glauben aus Angst vor Verfolgung.
 
 # Belege
 

@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Perry
-description: 'Perry (auch: Parry) ist das treue Schnabeltier und der tierische Begleiter
-  von Cookie. Das Wesen wird durchgehend als Schnabeltier beschrie…'
+description: Perry (gelegentlich auch „Parry“ geschrieben) ist ein schnabeltierartiges
+  Wesen und der treue tierische Begleiter von Cookie. Er verfügt üb…
 tags:
 - npcs
 timestamp: '2025-11-18T00:00:00Z'
@@ -12,139 +12,82 @@ aliases:
 - Perry das Schnabeltier
 - Parry
 - Parry das Schnabeltier
+status: disputed
 ---
 
 ## Überblick
 
-Perry (auch: Parry) ist das treue Schnabeltier und der tierische
-Begleiter von [Cookie](/characters/cookie.md). Das Wesen wird
-durchgehend als Schnabeltier beschrieben – eine ungewöhnliche, in
-der Gruppe anfangs mit Skepsis betrachtete Wahl, die jedoch von
-Cookie selbstbewusst vertreten wird: „Ich will Parry das
-Schnabeltier. Parry das Schnabeltier ist schon gut im Kämpfen. Der
-ist crazy.“ [1] Perry begleitet die Gruppe von Beginn an und wird je
-nach Situation als Kundschafter, Kämpfer oder stiller Gefährte
-eingesetzt. Trotz seiner geringen Größe und seines scheuen Wesens
-hat er sich in mehreren Auseinandersetzungen als wertvoll erwiesen,
-steht dabei aber stets in einer engen Bindung zu seiner Gefährtin.
+Perry (gelegentlich auch „Parry“ geschrieben) ist ein schnabeltierartiges Wesen und der treue tierische Begleiter von [Cookie](/characters/cookie.md). Er verfügt über einen Giftstachel, mit dem er Gegner angreifen und je nach Stärke des Ziels für eine gewisse Zeit lähmen kann. Zu seinen besonderen Fähigkeiten zählen außerdem eine ausgeprägte Tarnung sowie die Fähigkeit, sich gut an verschiedene Umgebungen anzupassen. Cookie kann Perry über Telepathie steuern. In der Kampagne tritt Perry sowohl als Kampfunterstützung als auch als Späher und Ablenkung in Erscheinung, wobei seine Effektivität stark von der Umgebung abhängt. Er wird meist in einem pokéball-ähnlichen Behältnis mitgeführt und auf Kommando gerufen.
 
 ## Rolle in der Kampagne
 
-Perry nimmt eine flexible Rolle als Unterstützer ein. Im Kampf kann
-er mit seinem Giftstachel Gegner angreifen und „für eine gewisse
-Zeit lähmen“ [2]. Dank seiner geringen Größe und seiner natürlichen
-Tarnfähigkeit eignet er sich außerdem als Späher oder Schleicher
-[3][4]. Allerdings ist Perry nicht durchgehend kampftauglich; die
-Kanondokumente legen fest, dass dies ein vorübergehender Zustand
-ist, kein dauerhaftes Wesensmerkmal. So reagiert er bei akuter
-Gefahr oder in unheimlicher Umgebung panisch und verkriecht sich
-dann beispielsweise in Cookies Tasche [4][8]. Selbst in
-kampflastigen Situationen wie der Arena von Willau wird Perry
-gemeinsam mit Cookie als offizieller Herausforderer angekündigt und
-präsentiert sich dort „in voller Pracht“ [7]. Außerhalb von Kämpfen
-dient Perry auch als soziale Brücke – sein seltenes spontanes
-Vertrauen gegenüber einer fremden Person wird von der Gruppe als
-bedeutsames Zeichen gedeutet [9].
+Perry fungiert primär als Cookies tierischer Gefährte im Rahmen ihrer Ranger-Klasse. In Kämpfen kann er auf Befehl angreifen, wobei er von den Vorteilen profitiert, die normalerweise nur für Cookie gelten, etwa der Wirkung des „Ranger Focus“ [1]. Sein Giftstachel ermöglicht lähmende Angriffe [2].
+
+Neben dem Kampf wird Perry mehrfach als potenzieller Späher oder Ablenkung in Betracht gezogen. Seine geringe Größe und seine Tarnfähigkeiten machen ihn für solche Aufgaben besonders geeignet. Cookie nutzt ihn gezielt, um Gegner zu täuschen, in Hinterhalte zu locken oder abzulenken [2][3][4].
+
+Allerdings zeigt sich im Verlauf der Kampagne, dass Perry nicht für jede Umgebung geschaffen ist. Insbesondere in beengten, dunklen oder bedrohlichen Ortschaften gerät er unter Stress und zieht sich in Cookies Tasche zurück. Dabei handelt es sich laut Spielleitungsentscheidung ausdrücklich um einen **vorübergehenden Zustand**, nicht um eine dauerhafte Eigenschaft. In offeneren oder vertrauteren Umgebungen ist Perry durchaus kampftauglich.
+
+Über seine mechanische Funktion hinaus übernimmt Perry eine narrative Rolle als eine Art emotionaler Gradmesser: Seine ungewöhnliche Annäherung an [Lunara Velora](/characters/lunara_velora.md) in Session 9 wird von der gesamten Gruppe als bedeutsames Zeichen für deren Vertrauenswürdigkeit interpretiert, da Perry normalerweise sehr scheu ist und lange braucht, um Vertrauen zu fassen.
 
 ## Wichtige Merkmale
 
-Perry ist ein Schnabeltier, dessen Äußeres in den Tokens als
-„niedlich“ umschrieben wird [2][9] – je nach Darstellung läuft er
-„auf zwei seinen kleinen Beinchen“ [7]. Er besitzt einen giftigen
-Stachel, der als seine primäre Waffe fungiert und Gegner je nach
-Stärke temporär lähmen oder verletzen kann [2][4][7]. Zudem
-beherrscht er Tarnung und Schleichen, was ihm erlaubt, auch ohne
-Kampf Nutzen zu stiften, etwa um Wachen in einen Hinterhalt zu
-locken [2] oder feindliche Stellungen auszukundschaften [3][4].
+### Spezies und Erscheinung
 
-Vom Wesen her ist Perry äußerst scheu und braucht selbst innerhalb
-der Gruppe sehr lange, um Vertrauen zu fassen und sich streicheln zu
-lassen [9]. In unheimlichen oder klaustrophobischen Umgebungen – zum
-Beispiel im Dungeon mit Leichenberg – gerät er schnell in Panik und
-sucht Schutz in unmittelbarer Nähe zu Cookie [8]. Diese
-Empfindlichkeit führt mitunter dazu, dass er „kurz davor [ist], das
-Zeitliche zu segnen“ [8], kann aber durch Beruhigung von Cookes
-Seite wieder eingedämmt werden.
+Perry wird durchgehend als Schnabeltier beschrieben [1][2][7][9]. Eine einmalige Bezeichnung als „Frosch-Gefährte“ stellt einen offenen Widerspruch in den Quellen dar (siehe offene Konflikte). Er ist von sehr geringer Größe und kann sich auf zwei Beinen fortbewegen. In der Arena präsentiert er sich auf seinen „kleinen Beinchen“ und läuft „in voller Pracht“ neben Cookie her [7].
+
+### Fähigkeiten
+
+- **Giftstachel**: Perrys primäre Waffe. Er kann Gegner damit angreifen und – abhängig von deren Stärke – für eine gewisse Zeit lähmen [2].
+- **Tarnung**: Perry besitzt die Fähigkeit, sich „gut anzupassen und zu tarnen“ [2]. Diese Fähigkeit wird als sein Experience beschrieben und gewährt ihm einen Bonus bei Heimlichkeitsaktionen. In Kombination mit seiner geringen Größe und Dunkelheit kann er dadurch außergewöhnlich gut schleichen [4]. Als konkreter Bonus wird ein +2-Wert auf Tarnungs-Würfe genannt [4].
+- **Telepathische Steuerung**: Cookie kann Perry über Telepathie lenken und ihm Anweisungen geben [2].
+- **Kampfbonus**: Wenn Cookie ihn zum Angriff befiehlt, profitiert Perry von allen Vorteilen, die normalerweise nur für Cookie gelten (z. B. Ranger Focus). Bei einem erfolgreichen Wurf nutzt sein Schadenswurf Cookies Proficiency und Schadenswürfel [1].
+
+### Wesenszüge
+
+Perry ist von Natur aus sehr scheu. Es dauert lange, bis er Vertrauen zu anderen Personen fasst – selbst bei den Mitgliedern der Gruppe hat es „sehr lange gedauert, bis er sich so ein bisschen an euch geschmust hat“ [9]. In beengenden, dunklen oder bedrohlichen Umgebungen reagiert er mit Panik und verkriecht sich in Cookies Tasche. Diese Stressanfälligkeit ist als vorübergehender, situationsabhängiger Zustand zu werten und beschreibt keine permanente Unfähigkeit zum Kampf (siehe Spielleitungsentscheidung). In vertrauten oder offenen Umgebungen zeigt Perry dieses Verhalten nicht.
 
 ## Beziehungen und Verbindungen
 
-- **[Cookie](/characters/cookie.md):** Perrys engste Bindung.
-  Cookie setzt ihn taktisch ein, sorgt sich um sein Wohlergehen („Ich
-  will nicht, dass er weg ist“ [8]) und kann ihn durch Zuwendung
-  beruhigen [8]. Die beiden bilden eine emotionale Einheit; wird
-  Perry von Stress geplagt, leidet auch Cookes taktische Breite.
-- **Gruppe (Esterossa, Dodo, Lindo Laut, Rotunas, Nyrella):** Die
-  Gruppe akzeptiert Perry als vollwertiges Mitglied. Esterossa stellt
-  ihn etwa neuen Bekanntschaften als „den doch sehr gewieften Perry“
-  vor [6]. Umgekehrt hat es aber lange gedauert, bis Perry
-  körperliche Nähe auch den anderen Gruppenmitgliedern gegenüber
-  zuließ [9].
-- **[Lunara Velora](/characters/lunara_velora.md):** In Session
-  2025-11-18 nähert sich Perry unaufgefordert Lunara und lässt sich
-  von ihr streicheln. Dieses Verhalten wird von der gesamten Gruppe
-  als außergewöhnliches Zeichen für Lunas Vertrauenswürdigkeit
-  gewertet [9]. Die Natur dieser Verbindung bleibt ungeklärt.
+- **[Cookie](/characters/cookie.md)**: Cookies tierischer Begleiter. Die beiden sind durch eine telepathische Verbindung eng miteinander verknüpft. Cookie trägt ihn in einem pokéball-ähnlichen Behältnis bei sich und ruft ihn bei Bedarf. Sie sorgt sich um sein Wohlergehen – als Perry im Dungeon kurz davor steht, „das Zeitliche zu segnen“, beruhigt sie ihn durch Streicheln und verhindert so, dass er sich dauerhaft zurückzieht.
+- **[Lunara Velora](/characters/lunara_velora.md)**: Eine besondere, für Perry untypische Beziehung. In Session 9 nähert sich Perry Lunara von sich aus und lässt sich von ihr streicheln – ein Verhalten, das er normalerweise nur nach langer Zeit des Vertrauensaufbaus zeigt. Dies wird von der Gruppe als Zeichen für Lunas Vertrauenswürdigkeit gewertet.
+- **Die restliche Gruppe**: Perry hat zu allen Gruppenmitgliedern nach und nach Vertrauen aufgebaut, was jedoch jeweils sehr lange dauerte [9]. Esterossa erwähnt ihn als „den doch sehr gewieften Perry“ [6]. In brenzligen Situationen wie in der Arena wird er von der Gruppe als Teil des Teams wahrgenommen und mit Sorge bedacht [7].
 
 ## Chronologie
 
-- **Session 2025-03-26 (Charaktererschaffung):** Cookie wählt ein
-  Schnabeltier namens Perry als Begleiter. Werte werden zunächst
-  nicht festgelegt, das Tier kommt nicht zum Einsatz [1].
-- **Session 2025-04-01:** Erster dokumentierter Kampfeinsatz. Perry
-  tötet einen Goblin mit einem giftigen Stich ins Auge, weckt die
-  Gruppe lautlos während der Nachtwache, lockt Wachen in einen
-  Hinterhalt und unterstützt in mehreren Gefechten [2].
-- **Session 2025-05-27:** Cookie zieht den Einsatz als Ablenkung
-  kurzzeitig in Betracht, verwirft die Idee jedoch. Perrys
-  Fähigkeiten im Tarnen und Spähen werden bestätigt [3].
-- **Session 2025-07-22:** Perry wird von Angreifern beschossen,
-  gerät in Panik und versteckt sich. Später bewacht er aus dieser
-  Deckung heraus einen gelähmten Attentäter [4].
-- **Session 2025-07-29:** Perry spielt kaum eine aktive Rolle und
-  wird am Ende der Mission fast am Steg vergessen, bevor die Gruppe
-  ablegt [5].
-- **Session 2025-10-07:** Eine technisch bedingte Kuriosität: Cookie
-  kann Perrys Token nicht sehen, die anderen Gruppenmitglieder schon.
-  Perry wird in der Vorstellung als Geistwesen wahrgenommen, obwohl
-  es sich um einen Anzeigefehler handelt [6].
-- **Session 2025-10-21 (Arena):** Cookie und Perry werden gemeinsam
-  als Herausforderer vorgestellt. Perry wird von kleinen Spinnen
-  attackiert, erleidet aber nur Stress und hält sich kämpfend nahe
-  bei Cookie [7].
-- **Session 2025-10-28:** Der Dungeon mit dem Leichenberg versetzt
-  Perry in Panik. Er verkriecht sich in Cookies Tasche und droht an
-  Stress zu sterben, wird jedoch durch Cookies Streicheln beruhigt
-  [8]. Hier zeigt sich der vorübergehende Zustand fehlender
-  Kampftauglichkeit unter extremen Bedingungen.
-- **Session 2025-11-18:** Höhepunkt der charakterlichen Entwicklung:
-  Perry, sonst extrem scheu, nähert sich Lunara und lässt sich von
-  ihr streicheln – ein von der Gruppe als bedeutsam erachteter
-  Moment [9].
+- **Session 1 (2025-03-26)**: Perry wird während Celins Charaktererstellung als „Parry das Schnabeltier“ konzipiert. Celin beschreibt ihn als bereits gut im Kämpfen, was vom GM scherzhaft als „fast unschlagbar“ kommentiert wird. Im tatsächlichen Abenteuer kommt er noch nicht zum Einsatz.
+
+- **Session 2 (2025-04-01)**: Erster aktiver Einsatz. Cookie ruft Perry, um einen Goblin anzugreifen. Perry erzielt einen kritischen Treffer ins Auge des Gegners und tötet ihn. Später wird er als Lockvogel eingesetzt, um zwei Goblins in eine Hütte zu führen, und lenkt einen vergrößerten Goblin ab.
+
+- **Session 3 (2025-05-27)**: Cookie erwägt, Perry als Ablenkung einzusetzen, verwirft die Idee jedoch. Seine Tarn- und Spähfähigkeiten werden erneut hervorgehoben.
+
+- **Session 4 (2025-07-22)**: Perry wird zum Auskundschaften vorgeschickt. Er schleicht sich aufgrund seiner geringen Größe und der Dunkelheit mit Vorteil (17 + 2 Tarnungsbonus = 19). Später wird er von Angreifern beschossen, gerät in Panik und versteckt sich. Anschließend bleibt er bei einem gelähmten Attentäter, um ihn zu bewachen.
+
+- **Session 5 (2025-07-29)**: Perry spielt kaum eine aktive Rolle und wird am Ende der Session fast am Steg vergessen. Cookie sucht ihn zuvor vergeblich.
+
+- **Session 6 (2025-10-07)**: Perry wird mehrfach nicht von Cookie gesehen, während andere ihn deutlich wahrnehmen. Dabei handelt es sich um ein technisches Darstellungsproblem, nicht um eine spielinterne Unsichtbarkeit.
+
+- **Session 7 (2025-10-21)**: Arena-Einsatz. Perry wird mit Cookie als Team vorgestellt und läuft auf zwei Beinen neben ihr her. Im Kampf wird er von kleinen Spinnen angegriffen, erleidet aber nur Stress und hält sich nahe bei Cookie.
+
+- **Session 8 (2025-10-28)**: Im Dungeon gerät Perry sofort in Panik und verkriecht sich in Cookies Tasche, noch bevor es zum Kampf kommt. Der Anblick des Leichenbergs löst starken Stress aus. Cookie verhindert durch Streicheln, dass er völlig ausfällt. Der GM stellt fest: „Perry ist einfach nicht gemacht für diese Ortschaften.“ Gemäß Spielleitungsentscheidung ist dies ein vorübergehender Zustand.
+
+- **Session 9 (2025-11-18)**: Perry nähert sich unaufgefordert Lunara und lässt sich von ihr streicheln, obwohl er sonst sehr scheu ist und lange braucht, um Vertrauen zu fassen. Die Gruppe wertet dies als bedeutsames Zeichen.
 
 ## Offene Fragen
 
-- Was genau hat Perry in Lunara gesehen, das ihn – entgegen seines
-  sonstigen Verhaltens – spontan Vertrauen fassen ließ? Die Gruppe
-  wertet dies als Zeichen für Lunas Vertrauenswürdigkeit, eine
-  konkrete Erklärung bleibt jedoch aus [9].
+- Es ist ungeklärt, was genau Perry in Lunara sieht, das ihn dazu bewegt, ihr so schnell zu vertrauen. Der GM deutet es nur an: „Irgendetwas scheint Perry in Lunara zu sehen, was ihm selber irgendwie so ein, ja ich sag jetzt mal …“ – der Satz bleibt unvollendet.
 
 ## Belege
 
-[1] Session 2025-03-26 @ 00:29:12
-    (https://www.youtube.com/watch?v=ROCKGeeRUFw)
-[2] Session 2025-04-01 @ 00:14:26
-    (https://www.youtube.com/watch?v=LZIuUzc3F18)
-[3] Session 2025-05-27 @ 00:50:01
-    (https://www.youtube.com/watch?v=bamCIB_CkR8)
-[4] Session 2025-07-22 @ 00:18:10
-    (https://www.youtube.com/watch?v=BRRCUgW4xRo)
-[5] Session 2025-07-29 @ 02:02:21
-    (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
-[6] Session 2025-10-07 @ 00:06:03
-    (https://www.youtube.com/watch?v=qVAF_54S8Vw)
-[7] Session 2025-10-21 @ 00:10:20
-    (https://www.youtube.com/watch?v=sxFhbtwoefA)
-[8] Session 2025-10-28 @ 01:12:46
-    (https://www.youtube.com/watch?v=V6NzNakqxXM)
-[9] Session 2025-11-18 @ 01:43:14
-    (https://www.youtube.com/watch?v=w__ahowb9p0)
+[1] Session 2025-03-26 @ 00:27:43–00:30:14 (https://www.youtube.com/watch?v=ROCKGeeRUFw)
+[2] Session 2025-04-01 @ 00:13:09–00:16:03 (https://www.youtube.com/watch?v=LZIuUzc3F18)
+[3] Session 2025-05-27 @ 00:48:45–00:51:11 (https://www.youtube.com/watch?v=bamCIB_CkR8)
+[4] Session 2025-07-22 @ 00:16:51–00:19:35 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
+[5] Session 2025-07-29 @ 02:00:52–02:03:16 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
+[6] Session 2025-10-07 @ 00:04:36–00:07:25 (https://www.youtube.com/watch?v=qVAF_54S8Vw)
+[7] Session 2025-10-21 @ 00:08:50–00:10:20 (https://www.youtube.com/watch?v=sxFhbtwoefA)
+[8] Session 2025-10-28 @ 01:11:22–01:14:07 (https://www.youtube.com/watch?v=V6NzNakqxXM)
+[9] Session 2025-11-18 @ 01:41:49–01:43:19 (https://www.youtube.com/watch?v=w__ahowb9p0)
+
+## Offene Konflikte
+
+- In den meisten Quellen wird Perry als Schnabeltier beschrieben [1][2][7][9]. In Session 5 [5] wird er jedoch als „Frosch-Gefährte“ bezeichnet („Parry guckt … Der chillt da in dem anderen Frosch“). Die übrigen Quellen sowie die durchgängige Beschreibung seiner Fähigkeiten und seines Verhaltens stützen die Einordnung als Schnabeltier, sodass die „Frosch“-Bezeichnung als einmaliger Widerspruch bestehen bleibt.

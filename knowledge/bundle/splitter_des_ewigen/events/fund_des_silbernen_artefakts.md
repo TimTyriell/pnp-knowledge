@@ -10,7 +10,7 @@ id: EVENT_FUND_DES_SILBERNEN_ARTEFAKTS
 subtype: Entdeckung
 ---
 
-[Lindo Laut](/characters/lindo_laut.md) und [Nyrella](/characters/nyrella.md) entdecken am [Ende](/locations/ende.md) eines gasverseuchten Ganges ein in Leder eingewickeltes Bündel. Darin befindet sich ein [Umhang mit [Tarvoks](/deities/tarvok_der_erdrichter.md) Symbol](items/umhang_mit_tarvoks_symbol.md) und das silberne Ei. Der Fund beweist eine Verbindung des Dungeons zu den alten Göttern.
+[Lindo Laut](/characters/lindo_laut.md) und [Nyrella](/characters/nyrella.md) entdecken am [Ende](/locations/ende_jenseits_der_orkgebiete.md) eines gasverseuchten Ganges ein in Leder eingewickeltes Bündel. Darin befindet sich ein [Umhang mit [Tarvoks](/deities/tarvok_der_erdrichter.md) Symbol](items/umhang_mit_tarvoks_symbol.md) und das silberne Ei. Der Fund beweist eine Verbindung des Dungeons zu den alten Göttern.
 
 # Belege
 

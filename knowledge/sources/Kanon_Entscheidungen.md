@@ -227,6 +227,34 @@ trägt den Namen nur zufällig gleich. Eine Nebenfigur.
 HINWEIS ZUR DARSTELLUNG: Wie bei Akastrale — vorerst nur ein knapper Entwurf
 des aktuellen Wissensstandes, ausdrücklich als vorläufig gekennzeichnet.
 
+### Thar'Vok, der Erdrichter
+
+ENTSCHEIDUNG: **„Seras" / „Seraph" ist keine Gottheit.** Die Bergnomaden in
+Session 2025-08-12 verehren **Thar'Vok, den Erdrichter**. Der Name im
+Transkript („also wir sind hier für Seraph", „Da ist es Seras, Herr der
+Flammen") ist ein Verhörer am Tisch bzw. ein Transkriptionsfehler und darf in
+keinem Eintrag als Eigenname erscheinen. Belege über den Kult der Nomaden,
+das Heiligtum am Berg und den Gruß „ein flammendes Herz" gehören in diesen
+Eintrag.
+
+ENTSCHEIDUNG: **„Parfon" ist ebenfalls keine Gottheit.** Der „ursprüngliche
+Steingott", dem die Bergkapelle geweiht war, bevor Vhar'Zuls Kult sie
+übernahm (Session 2025-09-02), ist **Thar'Vok**. Auch dieser Name ist ein
+Transkriptionsfehler.
+
+ENTSCHEIDUNG: Warum der Name nicht genannt werden darf: Thar'Vok ist ein
+**alter Gott**, und die Verehrung alter Götter ist in der Zeit **nach dem
+Götterkrieg verboten bzw. verpönt**. Die Panik der Dorfbewohner ist kulturell
+und politisch begründet — keine übernatürliche Gefahr durch das Aussprechen
+des Namens.
+
+ENTSCHEIDUNG: Thar'Vok war ein **Kampfgefährte Vhar'Zuls** („keine Freunde,
+aber Kampfgefährten in den letzten Tagen"). Diesen Hinweis gibt **Vhar'Zul
+selbst** — als Stimme (Thyrex) in Lindo Lauts Amulett. Belege, die den
+Kampfgefährten [Ezhura](../bundle/splitter_des_ewigen/deities/ezhura.md) („Ezua")
+zuschreiben, verwechseln die sprechende Stimme mit dem Inhalt der Aussage und
+sind ungültig.
+
 ### Vhar'Zul
 
 ENTSCHEIDUNG: Vhar'Zul wurde nicht getötet, sondern **in fünf Seelen
@@ -235,6 +263,10 @@ Schleier), **Ezhura** (die Glut), **Koll'Mereth** (die Krone) und **Thyrex**
 (der Sänger). Das Buch ist an dieser Stelle **unvollständig**: es gibt einen
 **versteckten fünften Teil, Slix**. Vier der fünf sind bösartig; **Thyrex ist
 der einzige besonnene**.
+
+ENTSCHEIDUNG: **Thar'Vok, der Erdrichter war ein Kampfgefährte Vhar'Zuls** —
+siehe den Abschnitt zu Thar'Vok. Die Auskunft darüber gibt Vhar'Zul als Stimme
+im Amulett Lindo Lauts (Session 2025-08-12).
 
 ENTSCHEIDUNG: Behandle die Angabe „vier Seelen" im Buch nicht als Widerspruch
 zu Belegen, die von fünf Teilen sprechen — das Buch weiß von Slix schlicht
@@ -520,6 +552,25 @@ Blutschale ist **nicht sicher zuzuordnen** — wahrscheinlich Vhar'Zul, aber
 Blutschale ist also *kein* Erkennungsmerkmal für eine bestimmte Gottheit.
 Entsprechend vorsichtig formulieren und keine Zuordnung als gesichert
 darstellen.
+
+### Zebros
+
+ENTSCHEIDUNG: **Zebros ist keine Gottheit.** Der Name bezeichnet ein **altes
+Königreich**, das im **Götterkrieg zerstört** wurde. Die **Hauptstadt** des
+Königreichs trug ebenfalls den Namen Zebros, ebenso ein **Berg** (der **Berg
+Zebros**). Vom Königreich sind heute nur noch **Ruinen und Relikte** erhalten;
+der Berg Zebros dagegen **steht weiterhin**. Der Beleg, der Zebros anhand der
+Inschrift in der Silbergruft als „ehemaligen Eigentümer" und Erdgott führt,
+verwechselt eine Nennung des Reichsnamens mit einer Gottheit — dort ist
+vermutlich ein Relikt oder eine Ruine aus der Zeit des Königreichs gemeint,
+nicht ein Gott. Führe den Eintrag als **Ort/ehemaliges Königreich**, nicht als
+Deity.
+
+HINWEIS ZUR DARSTELLUNG: Hauptstadt und Berg sind bislang nur durch diese eine
+Nennung belegt und bekommen deshalb vorerst **keine eigenen Einträge** —
+beschreibe beide knapp innerhalb dieses Eintrags. Ein eigener Eintrag ist erst
+gerechtfertigt, sobald weitere Sessions sie unabhängig voneinander behandeln
+(vgl. „Benennung von Orten").
 
 ### Gott und Erscheinung
 

@@ -10,7 +10,7 @@ id: ITEM_VOODOO_PUPPE
 subtype: Artefakt
 ---
 
-Eine grob aus Holz geflochtene Strichmännchen-Figur, die [Kuki](/characters/kuki.md) im Bauernhaus entdeckt und einsteckt. Später versucht sie, sie gegen [Lanra](/npcs/lenra.md) einzusetzen, indem sie einen Pfeil hineinrammt, was ihr jedoch selbst Schaden zufügt.
+Eine grob aus Holz geflochtene Strichmännchen-Figur, die [Kuki](/characters/cookie.md) im Bauernhaus entdeckt und einsteckt. Später versucht sie, sie gegen [Lanra](/npcs/lenra.md) einzusetzen, indem sie einen Pfeil hineinrammt, was ihr jedoch selbst Schaden zufügt.
 
 # Belege
 

@@ -1,8 +1,8 @@
 ---
 type: Location
 title: Burg Zebros
-description: Burg Zebros – auch als Berg Zebros bezeichnet – ist ein Berg, auf dem
-  sich eine Burg (die eigentliche Burg Zebros) befindet. Der gesamte Or…
+description: Zebros bezeichnet ein altes Königreich, das im Götterkrieg zerstört wurde.
+  Die Hauptstadt trug denselben Namen, ebenso ein Berg – der Berg…
 tags:
 - locations
 timestamp: '2025-06-25T00:00:00Z'
@@ -14,48 +14,54 @@ aliases:
 
 ## Überblick
 
-Burg Zebros – auch als Berg Zebros bezeichnet – ist ein Berg, auf dem sich eine Burg (die eigentliche Burg Zebros) befindet. Der gesamte Ort wird von Untoten überrannt und derzeit von einem namentlich nicht genannten dunklen Paladin beherrscht. Die Belege lassen keine genaueren Aussagen über Aussehen, Größe oder ursprüngliche Funktion der Burg zu. Klar ist nur, dass es sich um einen von nekromantischen Kräften dominierten Schauplatz handelt, der als potenzielles Machtzentrum für Nekromanten begehrt ist.
+Zebros bezeichnet ein altes Königreich, das im Götterkrieg zerstört wurde. Die Hauptstadt trug denselben Namen, ebenso ein Berg – der Berg Zebros. Vom Königreich selbst sind heute nur noch Ruinen und Relikte erhalten. Der Berg Zebros hingegen steht weiterhin und ist in der Gegenwart als „Burg Zebros“ bekannt. Er wird von einem dunklen Paladin beherrscht und ist von Untoten überrannt.
 
 ## Rolle in der Kampagne
 
-Der Berg Zebros steht im Fokus der Expansionspläne des Nekromanten Graf Voras. Voras beabsichtigt, den Ort mit seinen nekromantischen Fähigkeiten zu erobern, um seine eigene Macht auszubauen. Welche strategische oder symbolische Bedeutung der Berg konkret für ihn hat, ist bislang nicht näher ausgeführt.
-
-Zugleich besitzt die Burg eine persönliche Vorgeschichte für das Gruppenmitglied [Dodo](/characters/dodo.md): Dodo hat den Berg bereits in der Vergangenheit aufgesucht und dort gegen den dunklen Paladin gekämpft. Der Ausgang dieses Kampfes sowie Dodos jetzige Haltung gegenüber dem Ort bleiben offen, ebenso ob Dodo den Paladin besiegt, vertrieben oder lediglich ein Gefecht überlebt hat. Die Verbindung macht den Berg zu einem Ort mit potenziell wiederkehrender Bedeutung für Dodos Hintergrund.
+Der Berg Zebros ist ein strategisch bedeutsamer Ort im Machtgefüge der Region. Graf Voras plant, ihn mit seiner Nekromantie zu erobern, um seine eigene Macht auszubauen. Der Abenteurer Dodo war bereits vor Ort und kämpfte gegen den dunklen Paladin, der den Berg beherrscht. Die Burg stellt damit ein aktuelles Konfliktfeld dar, das sowohl mit Voras' Ambitionen als auch mit Dodos persönlicher Vergangenheit verknüpft ist.
 
 ## Wichtige Merkmale
 
 ### Lage
 
-Die geographische Lage von Burg Zebros wird in den vorliegenden Belegen nicht beschrieben. Es fehlen Hinweise, in welcher Region der Berg liegt, wie er zu erreichen ist oder welche Anrainer er hat.
+Die genaue geografische Einordnung des Berges ist bislang nicht belegt. Er liegt in einer Region, die zum Einflussgebiet von Graf Voras gehört oder an dieses angrenzt.
 
 ### Beschaffenheit
 
-Die Belege sprechen von einem Berg, der von Untoten überrannt wird. Die spezifische Beschaffenheit der Burg oder ihrer Befestigungen bleibt unbekannt. Der Fokus liegt auf dem Zustand der massiven Untotenpräsenz und der Herrschaft eines dunklen Paladins, was den Ort als extrem gefährlich und wahrscheinlich dauerhaft von negativer Energie durchdrungen erscheinen lässt. Ob es sich um eine verfallene Festung, eine noch intakte Anlage oder nur um Reste handelt, ist nicht belegt.
+Beim Berg Zebros handelt es sich um eine Erhebung, auf der sich eine Burg befindet – daher die synonyme Bezeichnung „Burg Zebros“. Die Burg ist stark befestigt und dient dem dunklen Paladin als Machtbasis. Der gesamte Berg wird von Untoten überrannt, was darauf hindeutet, dass nekromantische Kräfte den Ort durchdrungen haben.
 
-### Bewohner
+### Das untergegangene Königreich
 
-- **Untote:** Der Berg wird als „von Untoten überrannt“ beschrieben. Weder die Art der Untoten (Skelette, Zombies, Geister etc.) noch deren Anzahl oder Ursprung sind bekannt.
-- **Dunkler Paladin:** Ein namentlich nicht genannter, korrumpierter Paladin übt die Herrschaft über den Berg aus. Seine Fähigkeiten, Motivation und die Dauer seiner Präsenz sind nicht dokumentiert. Dass Dodo gegen ihn kämpfte, belegt seine reale Gefährlichkeit, aber Details zum Kampf fehlen.
+Das Königreich Zebros existierte in einer früheren Ära und wurde im Götterkrieg vollständig zerstört. Seine Hauptstadt trug ebenfalls den Namen Zebros. Vom Königreich zeugen heute nur noch Ruinen und vereinzelte Relikte. Der Berg Zebros war vermutlich ein bedeutender Ort innerhalb dieses Reiches und hat als einziges geografisches Merkmal die Zerstörung überdauert.
+
+### Bewohner und herrschende Macht
+
+Der Berg wird von einem dunklen Paladin beherrscht, dessen Identität noch nicht enthüllt ist. Seine Streitmacht besteht aus Untoten, die den gesamten Berg bevölkern. Weitere Details über seine Gefolgsleute oder mögliche Verbündete sind nicht bekannt.
 
 ## Beziehungen und Verbindungen
 
-- **Graf Voras:** Der Nekromant plant, den Berg mit seinen nekromantischen Mitteln zu erobern, um seine Macht zu vergrößern. Die Burg stellt für ihn ein konkretes Ziel in seinen politischen und machtpolitischen Ambitionen dar.
-- **[Dodo](/characters/dodo.md):** Dodo war bereits an diesem Ort; er kämpfte gegen den dunklen Paladin. Über den Hintergrund dieser Konfrontation, den Anlass der Reise oder die Folgen ist nichts weiter bekannt. Es ist unklar, ob Dodo den Ort als persönliche Angelegenheit betrachtet oder ob die Vergangenheit dort aufgelöst ist.
-- **Dunkler Paladin (namenlos):** Als derzeitiger Herrscher wird er lediglich als Gegenspieler für Dodo und potenzielles Hindernis für Graf Voras’ Pläne erwähnt. Seine Beziehung zu den Untoten oder eventuell zu Voras ist nicht festgestellt.
+- **Graf Voras**: Plant die Eroberung des Berges mittels Nekromantie, um seinen eigenen Machtbereich zu erweitern. Seine Nekromantie könnte ein Mittel sein, die bereits vorhandenen Untoten unter seine Kontrolle zu bringen.
+- **[Dodo](/characters/dodo.md)**: War bereits vor Ort und hat gegen den dunklen Paladin gekämpft. Der Ausgang dieser Auseinandersetzung ist nicht überliefert.
+- **Dunkler Paladin**: Beherrscht den Berg und kommandiert die Untotenarmee. Seine Herkunft und Ziele sind unbekannt.
+- **Das Königreich Zebros**: Der Berg ist ein Überbleibsel dieses im Götterkrieg vernichteten Reichs. Ob eine direkte Verbindung zwischen dem alten Königreich und dem gegenwärtigen Paladin besteht, ist offen.
 
 ## Chronologie
 
-- **Zeitlich vor der aktuellen Kampagne:** Dodo reist zum Berg Zebros und liefert sich einen Kampf mit dem dortigen dunklen Paladin. Die Quelle gibt keinen genauen Zeitpunkt an, doch die Formulierung „Dodo war bereits dort“ macht klar, dass die Begegnung abgeschlossen ist, bevor die Hauptkampagne einsetzt. Das Ergebnis des Kampfes wird nicht mitgeteilt; der Paladin könnte besiegt, vertrieben oder noch am Leben sein.
-- **Session 2025-06-25:** Graf Voras schmiedet Pläne, den Berg mit seiner Nekromantie zu erobern, um seine Macht zu erweitern. Eine konkrete Umsetzung oder militärische Aktion ist in dieser Session noch nicht erfolgt. Der Ort bleibt aktuell unter der Kontrolle des dunklen Paladins und von Untoten überrannt.
+1. **Vor dem Götterkrieg**: Das Königreich Zebros existiert mit seiner Hauptstadt gleichen Namens. Der Berg Zebros ist Teil dieses Reiches.
+2. **Im Götterkrieg**: Das Königreich wird vollständig zerstört. Nur Ruinen, Relikte und der Berg selbst überdauern.
+3. **Unbestimmte Zeit später**: Ein dunkler Paladin bemächtigt sich des Berges. Die Burg wird errichtet oder wiederaufgebaut, Untote überschwemmen das Gebiet.
+4. **Session 2025-06-25**: [1] Graf Voras fasst den Plan, den Berg mit seiner Nekromantie zu erobern. Dodo hat den Ort in der Vergangenheit aufgesucht und gegen den Paladin gekämpft.
 
 ## Offene Fragen
 
-- Wie endete der Kampf zwischen Dodo und dem dunklen Paladin? Ist der Paladin noch am Leben und beherrscht den Berg weiterhin, oder hat Dodo ihn besiegt?
-- Was genau verspricht sich Graf Voras von der Eroberung – etwa eine nekromantische Quelle, eine Armee oder einen strategischen Stützpunkt?
-- Wie sieht die Burg tatsächlich aus? Handelt es sich um eine Festung, ein Turm oder nur um Ruinen auf einem Berg?
-- Welche Art von Untoten bevölkert den Berg und woher stammen sie?
-- Gibt es eine Verbindung zwischen dem dunklen Paladin und Graf Voras, oder agieren sie unabhängig voneinander?
+- Wer ist der dunkle Paladin, und welche Ziele verfolgt er mit der Kontrolle über den Berg?
+- Warum ist der Berg Zebros von den Zerstörungen des Götterkriegs verschont geblieben oder zumindest wieder zu einer bewohnbaren Struktur geworden?
+- Besteht eine inhaltliche Verbindung zwischen dem Paladin und dem alten Königreich Zebros (etwa durch Relikte oder Abstammung)?
+- Wie verlief Dodos Kampf gegen den Paladin, und mit welchem Ergebnis endete er?
+- Welche spezifische Rolle spielt der Berg in Graf Voras’ größeren Plänen?
 
 ## Belege
 
-1. Session 2025-06-25 @ 00:31:30, YouTube: [https://www.youtube.com/watch?v=tpkO9uGw6-I](https://www.youtube.com/watch?v=tpkO9uGw6-I)
+[1] Session 2025-06-25 @ 00:31:30 – Erste Erwähnung des Berges, seiner Besetzung durch Untote, des dunklen Paladins sowie Voras’ Eroberungspläne und Dodos Aufenthalt. (https://www.youtube.com/watch?v=tpkO9uGw6-I)
+
+[E1] Kanon_Entscheidungen.md – Verbindliche Festlegung: Zebros ist ein altes Königreich, keine Gottheit. Hauptstadt und Berg trugen denselben Namen. Zerstört im Götterkrieg. Berg steht weiterhin, Königreich nur noch als Ruinen und Relikte erhalten.

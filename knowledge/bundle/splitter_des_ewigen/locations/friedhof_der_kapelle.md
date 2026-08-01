@@ -10,7 +10,7 @@ id: LOC_FRIEDHOF_DER_KAPELLE
 subtype: Wildnis
 ---
 
-Der [Friedhof](/locations/friedhof.md) vor der [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) mit edlen Grabstätten für Krieger. Die Gräber erheben sich unter [Dormaks](/npcs/dormak.md) Befehl als [Untote](/factions/belorus_untotenarmee.md).
+Der Friedhof vor der [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) mit edlen Grabstätten für Krieger. Die Gräber erheben sich unter [Dormaks](/npcs/dormak.md) Befehl als [Untote](/factions/belorus_untotenarmee.md).
 
 # Belege
 

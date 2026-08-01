@@ -9,7 +9,7 @@ timestamp: '2025-06-25T00:00:00Z'
 id: NPC_BUERGERMEISTER_BERTOLD
 ---
 
-Redseliger Bürgermeister von [Bresca](/locations/breska.md). Er prahlt mit dem Ausbau der Stadt, der neuen Palisade, der [Taverne](/locations/taverne_von_breska.md) und der [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md). Er berichtet von einem abgewehrten Goblinangriff und lädt die Helden auf ein Bier ein.
+Redseliger Bürgermeister von [Bresca](/locations/breska.md). Er prahlt mit dem Ausbau der Stadt, der neuen Palisade, der Taverne und der [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md). Er berichtet von einem abgewehrten Goblinangriff und lädt die Helden auf ein Bier ein.
 
 # Belege
 

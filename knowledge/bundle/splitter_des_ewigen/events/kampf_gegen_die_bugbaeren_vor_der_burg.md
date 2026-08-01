@@ -10,7 +10,7 @@ id: EVENT_KAMPF_GEGEN_DIE_BUGBAEREN_VOR_DER_BURG
 subtype: Kampf
 ---
 
-In der Dunkelheit werden die Helden von mehreren Bugbären mit Armbrüsten angegriffen. Nach einem gescheiterten Schleichen schaltet Lindo einen Wächter aus, [Rotunas](/characters/rotunas.md) und [Esterossa](/characters/esterossa.md) verschießen Blitze, [Kuki](/characters/kuki.md) tötet einen weiteren mit einem Knieschuss. Die [Goblin-Götter](/deities/goblingoetter.md) lassen einen Bugbär niesen und von der Mauer stürzen.
+In der Dunkelheit werden die Helden von mehreren Bugbären mit Armbrüsten angegriffen. Nach einem gescheiterten Schleichen schaltet Lindo einen Wächter aus, [Rotunas](/characters/rotunas.md) und [Esterossa](/characters/esterossa.md) verschießen Blitze, [Kuki](/characters/cookie.md) tötet einen weiteren mit einem Knieschuss. Die [Goblin-Götter](/deities/goblingoetter.md) lassen einen Bugbär niesen und von der Mauer stürzen.
 
 # Belege
 

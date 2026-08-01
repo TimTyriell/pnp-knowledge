@@ -10,7 +10,7 @@ id: EVENT_EXPEDITION_IN_DEN_NEBELSUMPF_MIT_TRILLO
 subtype: Reise
 ---
 
-Unter [Trillos](/npcs/trillo.md) Schutzkuppel bricht die Gruppe durch eine Seitentür auf und marschiert stundenlang durch den nebligen [Sumpf](/locations/sumpf_vor_dem_goblin_dorf.md). Sie entdecken die Leichen der vorherigen Expedition und erfahren von Trillos angeblicher Flucht.
+Unter [Trillos](/npcs/trillo.md) Schutzkuppel bricht die Gruppe durch eine Seitentür auf und marschiert stundenlang durch den nebligen [Sumpf](/locations/sumpf_der_sumpfhexe.md). Sie entdecken die Leichen der vorherigen Expedition und erfahren von Trillos angeblicher Flucht.
 
 # Belege
 

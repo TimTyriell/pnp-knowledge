@@ -12,7 +12,7 @@ aliases:
 - Die Kapelle
 ---
 
-Ruinenartige [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) am [Ende](/locations/ende.md) des Weges, die als Eingang zu [Vorgultars](/deities/vorgul_tar.md) Refugium dient. Über ihr kreist der Rabe, und ein geheimer Mechanismus öffnet ein Tor. Im Inneren befindet sich eine Kammer mit Regalen und einem Schädel.
+Ruinenartige [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) am [Ende](/locations/ende_jenseits_der_orkgebiete.md) des Weges, die als Eingang zu [Vorgultars](/deities/vorgul_tar.md) Refugium dient. Über ihr kreist der Rabe, und ein geheimer Mechanismus öffnet ein Tor. Im Inneren befindet sich eine Kammer mit Regalen und einem Schädel.
 
 # Belege
 

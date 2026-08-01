@@ -10,7 +10,7 @@ id: EVENT_SCHRUMPFUNG_VON_DODO_UND_KUKI
 subtype: Sonstiges
 ---
 
-[Lanra](/npcs/lenra.md) macht mit einer Handbewegung [Dodo](/characters/dodo.md) und [Kuki](/characters/kuki.md) winzig klein, nachdem Dodo versucht, sie einzuschüchtern.
+[Lanra](/npcs/lenra.md) macht mit einer Handbewegung [Dodo](/characters/dodo.md) und [Kuki](/characters/cookie.md) winzig klein, nachdem Dodo versucht, sie einzuschüchtern.
 
 # Belege
 

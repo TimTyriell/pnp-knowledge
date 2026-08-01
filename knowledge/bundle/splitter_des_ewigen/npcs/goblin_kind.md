@@ -1,15 +1,15 @@
 ---
 type: NPC
 title: Goblin-Kind
-description: Ein betrunkener Goblin, der auf einem Hügel uriniert, während die Gruppe
-  sich nähert. Wird von Mikasa gepackt und durch Genickbruch getötet…
+description: Ein betrunkener junger Goblin, der beim Urinieren am Hang von Dodo überrascht
+  wird. Dodo dreht ihm den Kopf herum und tötet ihn lautlos. Es…
 tags:
 - npcs
 timestamp: '2025-04-01T00:00:00Z'
 id: NPC_GOBLIN_KIND
 ---
 
-Ein betrunkener Goblin, der auf einem Hügel uriniert, während die Gruppe sich nähert. Wird von [Mikasa](/characters/mikasa.md) gepackt und durch Genickbruch getötet; sein Kopf wird als Trophäe eingesteckt.
+Ein betrunkener junger Goblin, der beim Urinieren am Hang von [Dodo](/characters/dodo.md) überrascht wird. Dodo dreht ihm den Kopf herum und tötet ihn lautlos. [Esterossa](/characters/esterossa.md) nimmt den Kopf als makabre Trophäe an sich.
 
 # Belege
 

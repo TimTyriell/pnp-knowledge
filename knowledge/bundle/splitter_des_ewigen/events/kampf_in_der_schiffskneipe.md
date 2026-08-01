@@ -10,7 +10,7 @@ id: EVENT_KAMPF_IN_DER_SCHIFFSKNEIPE
 subtype: Kampf
 ---
 
-[Harald](/npcs/freibeuter_harald.md) und sein Erster Maat kämpfen gegen mehrere Soldaten, die die [Taverne](/locations/taverne_von_breska.md) stürmen, um Harald festzunehmen. [Rotunas](/characters/rotunas.md) verriegelt die Tür mit einem Runensiegel, Lunara versucht die Soldaten zu verängstigen, entfesselt aber versehentlich [Abyssalis](/domains/splitterwelt.md)-Kräfte und zwingt die Soldaten zur Aufgabe. Harald und sein Maat entkommen im entstandenen Chaos.
+[Harald](/npcs/freibeuter_harald.md) und sein Erster Maat kämpfen gegen mehrere Soldaten, die die Taverne stürmen, um Harald festzunehmen. [Rotunas](/characters/rotunas.md) verriegelt die Tür mit einem Runensiegel, Lunara versucht die Soldaten zu verängstigen, entfesselt aber versehentlich [Abyssalis](/domains/splitterwelt.md)-Kräfte und zwingt die Soldaten zur Aufgabe. Harald und sein Maat entkommen im entstandenen Chaos.
 
 # Belege
 

@@ -9,7 +9,7 @@ timestamp: '2026-03-18T00:00:00Z'
 id: NPC_LARA
 ---
 
-Lara ist ein Mitglied der [Gilde der Schilde](/factions/gilde_der_schilde.md) in [Tiefwasser](/locations/tiefwasser.md). Sie spricht die Gruppe auf dem Marktplatz an, ist von [Brims](/characters/brim.md) Muskeln beeindruckt und bietet einen Auftrag gegen ein angebliches Silberkern-Piratenlager an. Sie warnt vor dem [Ende](/locations/ende.md), da bisher niemand zurückgekehrt sei.
+Lara ist ein Mitglied der [Gilde der Schilde](/factions/gilde_der_schilde.md) in [Tiefwasser](/locations/tiefwasser.md). Sie spricht die Gruppe auf dem Marktplatz an, ist von [Brims](/characters/brim.md) Muskeln beeindruckt und bietet einen Auftrag gegen ein angebliches Silberkern-Piratenlager an. Sie warnt vor dem [Ende](/locations/ende_jenseits_der_orkgebiete.md), da bisher niemand zurückgekehrt sei.
 
 # Belege
 

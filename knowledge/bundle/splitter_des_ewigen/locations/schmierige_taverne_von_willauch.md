@@ -12,7 +12,7 @@ aliases:
 - Die schmierige Taverne
 ---
 
-Eine heruntergekommene [Taverne](/locations/taverne_von_breska.md) am Stadtrand, die als [Treffpunkt](/locations/treffpunkt.md) für Schmuggler und zwielichtige Gestalten dient. Hier trifft die Gruppe den Türsteher und später den Goblin [Sys Fizik](/npcs/sys_fizik.md), der in einem versteckten Gewölbe darunter sein Labor hat.
+Eine heruntergekommene Taverne am Stadtrand, die als [Treffpunkt](/locations/treffpunkt.md) für Schmuggler und zwielichtige Gestalten dient. Hier trifft die Gruppe den Türsteher und später den Goblin [Sys Fizik](/npcs/sys_fizik.md), der in einem versteckten Gewölbe darunter sein Labor hat.
 
 # Belege
 

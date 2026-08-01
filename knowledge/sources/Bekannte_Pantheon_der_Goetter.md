@@ -43,7 +43,7 @@ Dieses Schriftstück ist die Überlieferung aus vielen geschriebenen Werken der 
 - Mag: Standhaftigkeit, Eide halten, Bauten aus Stein
 - Hasst: Verrat, unnötige Zerstörung von Bergen
 
-*Kampagnenbezug: siehe [Thar'vok, der Erdrichter](../bundle/splitter_des_ewigen/deities/tarvok_der_erdrichter.md) — in Sitzungen als "Tarvok" transkribiert.*
+*Kampagnenbezug: siehe [Thar'vok, der Erdrichter](../bundle/splitter_des_ewigen/deities/tarvok_der_erdrichter.md) — in Sitzungen als "Tarvok", "Tavok", "Tarvolk" und (verhört) als "Seras/Seraph" bzw. "Parfon" transkribiert.*
 
 ### Uhoriax, Mutter der Schleier
 

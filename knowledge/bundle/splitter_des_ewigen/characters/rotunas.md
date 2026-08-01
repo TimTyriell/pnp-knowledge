@@ -1,8 +1,8 @@
 ---
 type: Character
 title: Rotunas
-description: Rotunas ist einer der zentralen Protagonisten der Kampagne und der Namensgeber
-  der als "Rotunas und seine Freunde" bekannten Abenteurergrup…
+description: Rotunas ist ein riesenblütiger Magier der Dwarfmaster-Gilde und der zentrale
+  Ankerpunkt der Heldengruppe. Sein Name hat sich so stark einge…
 tags:
 - characters
 timestamp: '2026-04-09T00:00:00Z'
@@ -13,130 +13,90 @@ aliases:
 
 ## Überblick
 
-Rotunas ist einer der zentralen Protagonisten der Kampagne und der Namensgeber der als "Rotunas und seine Freunde" bekannten Abenteurergruppe. Er ist ein riesenhafter Magier aus einem Kriegerstamm, was seine ungewöhnliche Kombination aus massiver physischer Präsenz und mächtiger arkane Magie erklärt. Seine Magie manifestiert sich als Runen-Tätowierungen auf seiner Haut, die bei Anwendung seiner Zauber aufleuchten. Er trägt seine erhaltenen arkane Macht buchstäblich auf dem Körper.
-
-Als Faustkämpfer mit magischen Boxringen kombiniert er physische Wucht mit elementarer Magie, insbesondere Eis- und Feuerzaubern, Teleportation und defensiven Schutzbarrieren. Seine Größe von 3,20 Metern macht ihn zu einer einschüchternden Erscheinung, die er sowohl im Kampf als auch in sozialen Situationen zu nutzen weiß. Im Verlauf der Kampagne verlor er seinen rechten Unterarm und trägt seitdem eine von den Zwergen der Festung Zinn gefertigte mechanische Prothese.
-
-Rotunas ist ein **Riese** und damit der Daggerheart-Klasse **Giant** zugehörig. Frühere Fehlannahmen, die ihn als Elfen bezeichnen, sind falsch. [ENTSCHEIDUNG]
+Rotunas ist ein riesenblütiger Magier der Dwarfmaster-Gilde und der zentrale Ankerpunkt der Heldengruppe. Sein Name hat sich so stark eingeprägt, dass Außenstehende oft von „Rotunas und seine Freunde“ oder „Rotunas und der Rest“ sprechen, ohne genau zu wissen, wer sich dahinter verbirgt. Gespielt wird er von Micha. Seine Magie basiert vollständig auf Runen, die bei Aktivierung auf seiner Haut leuchten — zunächst nur an den Händen und Armen, später über den ganzen Körper. Im Nahkampf setzt er magische Armringe und seine Boxerfahrung ein. Rotunas ist impulsiv, kampferprobt und zunehmend vom Verlust und der Selbstaufopferung geprägt.
 
 ## Rolle in der Kampagne
 
-Rotunas ist der inoffizielle Anführer der Heldengruppe, deren Name sich bereits in den ersten Sessions um seine Person herum etablierte. Die Bewohner der Region kennen die Gruppe als "Rotunas und seine Freunde" oder "Rotunas und der Rest", wobei oft unklar ist, wer genau Rotunas eigentlich ist — was sogar dazu führt, dass andere Mitglieder der Gruppe für ihn gehalten werden. [13]
-
-Er agiert als Diplomat und Entscheidungsträger in kritischen Situationen: Er verhandelt mit dem Goblin-Hauptmann Lurk und dem Schamanen der Goblins [24], übernimmt das Vertrauenssymbol von Horatio [18] und tritt während der Konfrontation mit Belorus als Lindo Lauts Stellvertreter auf, indem er vorgibt, der gesuchte Lindo zu sein. [22]
-
-Zugleich ist er der moralische Kompass und Beschützer der Gruppe. Er verteidigt vehement Flüchtlinge, spendet großzügig Gold und Nahrung, und setzt sich für die Schwachen ein. [13] Seine langfristige Vision zeigt sich in Plänen zur Gründung einer Siedlung zwischen Bresca und der Berggilde. [13] Er lehnt jedoch Methoden anderer Gilden entschieden ab, wenn sie nicht seinen moralischen Standards entsprechen. [13] Nachdem er erkennt, dass Lindo Laut und Lunara Informationen über die wahre Natur von Lindo Lauts Kräften zurückhielten, distanziert er sich und priorisiert andere Ziele. [28]
+Rotunas fungiert als Anführer und Namensgeber der Gruppe. In diplomatischen Situationen übernimmt er häufig die Verhandlungen, so etwa als er die Zwerge von Steinhammer davon überzeugt, die Goblins nicht anzugreifen, und mit Brocken ihrer Sprache einen Deal aushandelt [24]. Er plant die Verteidigung von Dörfern, hält die Moral der Bewohner aufrecht und zeigt Initiative, wenn Gefahr droht [1][2][3]. Er hinterfragt Autoritäten wie Joar Vanurs Herrschaftsanspruch [4] oder lehnt die Methoden einer neuen Gilde entschieden ab [13]. Gleichzeitig hat er eine langfristige Vision: Er schlägt vor, eine Siedlung zwischen Bresca und der Berggilde zu gründen [13], und träumt später von einem eigenen Magierturm [18]. Mit fortschreitender Kampagne wird er zunehmend misstrauisch gegenüber einstigen Verbündeten und spitzt die Frage zu, wem er noch vertrauen kann [28]. Sein Opfertod in der finalen Konfrontation mit Nerash markiert den Höhepunkt dieser Entwicklung [29].
 
 ## Wichtige Merkmale
 
-### Physische Erscheinung
-Rotunas ist ein Riese von 3,20 Metern Größe. [22] Seine Haut ist mit Runen-Tätowierungen bedeckt, die bei magischer Aktivität aufleuchten — zunächst an den Armen, später auch am ganzen Körper, wenn er große Kräfte mobilisiert. [3] [8] Während des Kampfes gegen den Seelengeist leuchteten die Runen über seinen gesamten Körper, was von anderen als "Avatar-Modus" beschrieben wurde. [8] In Momenten großer Erleuchtung nehmen seine Augen eine goldene Farbe an. [29]
+### Auftreten
 
-Er trägt eine magische Rüstung (Tavas Armor) und magische Boxringe an seinen Händen, die er im Nahkampf einsetzt. [1] [3] Seit der Session am 2026-02-17 trägt er eine mechanische Prothese für seinen verlorenen rechten Unterarm, die von den Zwergen der Festung Zinn gefertigt wurde. [27] [25]
+Rotunas ist ein Riese von etwa 3,20 Metern Größe [22]. Er trägt Valeria oft auf der Schulter [1]. Runen auf seinen Armen und Händen leuchten bei Magieanwendung; im „Avatar-Modus“ ziehen sich die Runen über seinen gesamten Körper, sein Gesicht eingeschlossen [8]. Nach dem Verlust seines rechten Unterarms trägt er eine von den Zwergen der Festung Zinn gefertigte mechanische Prothese [27]. Im erleuchteten Zustand hat er goldene Augen [29].
 
-### Magische Fähigkeiten
-Rotunas' Magie basiert auf Runen, die auf seinen Armen und seinem Körper tätowiert sind. Seine Klasse als Rune Reader ("Runenleser") erlaubt ihm, Magie zu verstehen und zu manipulieren. [23] Zu seinen dokumentierten Zaubern gehören:
+### Fähigkeiten
 
-- **Ice Spike / Ice Spikes**: Eisattacken, die Feinde einfrieren oder durchbohren. Setzt sie gegen Goblins, Kuatau und Untote ein. [1] [12] [22] [20]
-- **Feuerball / Wild Flame**: Wirkt mächtige Feuerangriffe; kann einen Feuerball über seinem Kopf sammeln und so lange wachsen lassen, bis er seinen gesamten Körper überdeckt und als Schutzschild gegen Pfeile dient. [6] [14] [23] [15]
-- **Power Push**: Physischer Druckstoß, der Gegner gegen Wände schleudert und tötet. [5] [8]
-- **Nebelkuppel / Nebelwand**: Erschafft Nebel, um die Gruppe vor Blicken zu schützen oder Dorfbewohner zu schützen. [5] [23]
-- **Tarvas Armor**: Magische Schutzbarriere, die Verbündeten einen zusätzlichen Rüstungsslot gewährt. [2] [20]
-- **Arcane Dove / Arkane Tür**: Teleportation zu einem gesehenen Ort, etwa auf einen Balkon. [6] [20] [27]
-- **Mystic's Tether / Magic Tether**: Magische Fesseln, um Gegner zu binden, z.B. einen Dreadknight mit Eis zu umschlingen. [22] [29]
-- **Runensiegel / Runenschloss**: Versiegelt Türen mit Magie, z.B. die Zellentür von Gulrak oder die Schiffs-Taverne. [4] [27]
-- **Mage Hand**: Projiziert eine magische Hand für Manipulationen. [12]
-- **Reveal**: Entdeckt Fallen. [8]
+- **Runenmagie**: Sämtliche Magie Rotunas‘ basiert auf Runen. Er beherrscht Eis-Zauber (Ice Spike, Ice Spikes, Eiswand, frostige Umklammerung), Feuerzauber (Feuerball, Wild Flame, flammende Fäuste, Lavastoß), Teleportation (Arcane Dove, Arkane Tür, Massenteleportation), Schutzzauber (Tarvas Armour, Runenschloss, Nebelkuppel, Nebelwand), Kampfmagie (Power Push, Mystic‘s Tether) und Hilfsmittel wie Mage Hand. Er kann magische Energie in seine Augen leiten, um Mana-Ströme zu erkennen [9], und mit Reveal Fallen entdecken [8].
+- **Erfahrung (Boxing)**: Er setzt seine magischen Armringe und Faustkampftechniken im Nahkampf ein [1][3].
+- **Erfahrung (Rune Reader)**: Als Runenleser kann er magische Konstrukte analysieren, Kontrollrunen identifizieren [16] und die Magie anderer verstehen und unterstützen [23].
+- **Wissen**: Er ist belesen — er übersetzt ein Buch [7], recherchiert zur Geschichte der Insel [4], analysiert Kristalle [16] und erkennt die Natur von künstlichen Seelen [9]. Er lernt sogar goblinische Brockenwörter für Verhandlungen [24].
+- **Spätere Entwicklung**: Nach wochenlangem Fieberschlaf brennt er sich eine neue Rune für die Abyssal-Sprache ein. Er fühlt sich leichter, stärker, beweglicher und beherrscht nun Teleportation zu Orten, die er bereits besucht hat [22].
 
-Seine Teleportationsfähigkeiten ermöglichen schnelle Positionswechsel und Massenteleportationen, letztere jedoch mit hohem Risiko. [5] [22] [24] Er beherrscht auch Abyssal, eine neue Rune, die er sich im Fiebertraum eingebrannt hat. [22]
+### Wesenszüge
 
-### Kampfstil und physische Stärke
-Rotunas kämpft bevorzugt im Nahkampf mit seinen magischen Boxringen und nutzt seine Experience Boxing, um Hope-Punkte für erfahrene Techniken auszugeben. [3] Seine enorme physische Stärke erlaubt es ihm, Metalltüren einzutreten und Gegner mit bloßen Fäusten zu zertrümmern. [8] [22] Eine seiner verheerendsten Aktionen war der Knochenhand-Schlag gegen Slicks, bei dem er sein Horn brach und den Dämon quer durch den Garten schleuderte — allerdings um den Preis seines rechten Unterarms. [25]
-
-### Persönlichkeit und Wesenszüge
-Rotunas ist impulsiv, kreativ und unerschütterlich im Kampf, wenngleich er oft am Rande der Erschöpfung operiert. [8] Er misstraut offensichtlichen Machtdemonstrationen (z.B. dem alten Magier Trickler, dessen Gebrechlichkeit er für unvereinbar mit großer Macht hält) und hinterfragt Autoritätsansprüche wie den von Joar Vanur. [4] [27] Er hat eine starke emotionale Verbindung zu seinen Begleitern, insbesondere zu Valeria, die er oft auf seine Schulter hob, und zeigt große Sorge um den Pilz Luli. [1] [8]
-
-Er mag kein Wasser und ist in nassen Umgebungen weniger effektiv. [4] Er bleibt in Tavernen oft nüchtern und beobachtet die Geschehnisse wachsam. [19] In seiner Freizeit liest er Bücher und strebt nach Wissen, insbesondere nach einem eigenen Magierturm. [19] [18]
+Rotunas ist impulsiv und neigt zu riskanten Aktionen — er öffnet das versiegelte Buch und löst damit die Seelenprüfung aus [9], er fasst die vergiftete Klaue an [5] und berührt die lilanen Kristalle mit bloßen Fingern [16]. Sein Kampfgeist ist unerschütterlich; selbst als ihm die Hand aufgelöst wird, schlägt er noch mit dem blanken Knochen zu und schleudert Slicks quer durch den Garten [25]. Er trägt eine tiefe Verantwortung für die Schwachen — er spendet großzügig Gold und Nahrung an Flüchtlinge [13], verteidigt sie gegen Halborks [13] und priorisiert den Schutz der Silberkerne [28]. Zugleich ist er nachtragend, wenn Vertrauen gebrochen wird: Gegenüber Lindo Laut und Lunara fühlt er sich hintergangen, weil sie Informationen über ihre Kräfte zurückhielten [28]. Er misstraut dem alten Magier Trickler, da dessen gezeigte Gebrechlichkeit nicht mit großer Macht vereinbar zu sein scheint [27]. Gegenüber neuen Bekanntschaften wie Lunara bleibt er vorsichtig, lädt sie aber dennoch in die Gruppe ein [19].
 
 ## Beziehungen und Verbindungen
 
-- **[Valeria](/characters/valeria.md)**: Enge Freundschaft; er hob sie auf seine Schulter, um ihr zu helfen, und setzte seine Größe ein, um Wachen einzuschüchtern. Valerias Brief an ihn enthüllte ihre Schwangerschaft. [1] [18]
-
-- **[Lindo Laut](/characters/lindo_laut.md)**: Komplexe Beziehung. Er steht als Lindo Lauts Stellvertreter während der Belorus-Konfrontation ein, ist aber später verletzt darüber, dass Informationen über die wahre Natur von Lindo Lauts Kräften vor ihm zurückgehalten wurden. [22] [28] [26]
-
-- **[Dodo](/characters/dodo.md)**: Kampfverbündeter und Freund; er gibt Dodo Heiltränke und wirft ihm den mächtigen Streitkolben Zebrus Zorn zu. [12] [22]
-
-- **[Esterossa](/characters/esterossa.md)**: Schützling; er legt Tarvas Armour auf sie und arbeitet im Kampf eng mit ihr zusammen. [20] [23] Esterossa nennt die Gruppe "Rotunas und seine Freunde". [21]
-
-- **[Lunara Velora](/characters/lunara_velora.md)**: Misstrauische Bindung; er lädt sie in die Gruppe ein, bleibt aber vorsichtig. Später fühlt er sich von ihr hintergangen, nachdem sie Informationen über Lindo Laut zurückhielt. [19] [28] Er unterstützt ihre Magie während der Splitterwelten-Konfrontation, indem er seine eigene Energie beisteuert. [23]
-
-- **Lindo Lauts innere Besessenheit**: Rotunas vermutet, dass es sich um ein Überbleibsel von Basul handelt, das nach der Spaltung in der Splitterwelt haften blieb. [17]
-
-- **Gilden und Fraktionen**: Er ist Mitglied der Dwarfmaster-Gilde, priorisiert aber den Schutz der Silberkerne nach dem Mord und möchte den wahren Schuldigen finden, indem er mit Toten spricht. [9] [27] Er lehnt die Methoden einer neuen Gilde entschieden ab. [13]
-
-- **Die Goblins von Zinnfestung**: Er verhandelt erfolgreich mit Lurk und dem Schamanen, lernt einige goblinische Brocken und erhält magisches Erz als Lohn. [24]
-
-- **Gulrak**: Er gibt ihm Wasser und verspricht Freilassung, versiegelt dann aber heimlich die Zellentür. [4]
-
-- **Joar Vanur**: Er hinterfragt dessen Herrschaftsanspruch und recherchiert über die Geschichte der Insel. [4]
+- **[Valeria](/characters/valeria.md)** — Rotunas trägt Valeria oft auf der Schulter [1]. Sie erhalten intime Briefe; Valeria teilt ihm ihre Schwangerschaft mit [18]. Die genaue Natur ihrer Beziehung bleibt unausgesprochen, aber die Vertrautheit ist tief.
+- **[Lindo Laut](/characters/lindo_laut.md)** — Einst enger Verbündeter, kühlt das Verhältnis drastisch ab, als Rotunas erfährt, dass Lindo Laut und Lunara die wahre Natur von Lindos Kräften verschwiegen haben. Rotunas weigert sich daraufhin, ins Abyssalis zu gehen. Er akzeptiert die Spaltung der Gruppe, öffnet ihnen jedoch noch ein Portal nach Ehrenfels [28]. Als er kurz zuvor fast von Lindos unkontrollierter Macht getötet wird, ist dies eine Zäsur [26].
+- **[Esterossa](/characters/esterossa.md)** — Rotunas schützt Esterossa aktiv mit Tarvas Armour vor Energieentzug [20]. Sie vertraut ihm als Anführer und stellt ihn bei Verhandlungen als Referenz vor [21].
+- **[Dodo](/characters/dodo.md)** — Dodo heilt Rotunas mehrfach, brennt etwa das Gift aus einer Wunde [5]. Rotunas wirft Dodo im Kampf den mächtigen Kolben Zebrus Zorn zu [12] und gibt ihm einen Heiltrank [22].
+- **[Lunara Velora](/characters/lunara_velora.md)** — Rotunas bleibt ihr gegenüber vorsichtig, lädt sie aber dennoch in die Gruppe ein [19]. Später fühlt er sich von ihr hintergangen [28]. In der Konfrontation mit Belorus unterstützt er Lunara mit seiner Magie, damit sie die Kontrolle über die Splitterwelt erlangt [23].
+- **Zwerge von Steinhammer** — Er verhandelt erfolgreich mit ihnen und erhält magisches Erz als Lohn [24]. Die Zwerge der Festung Zinn fertigen seinen mechanischen Arm [27].
+- **Goblins** — Rotunas baut durch einen lauten Friedensruf und das Anbieten eines Sandwiches Vertrauen auf, stoppt einen drohenden Kampf und handelt einen Deal aus [24].
+- **[Die Sumpfhexe](/npcs/lenra.md)** — Er überzeugt den Kuatau-Priester logisch, dass die Sumpfhexe sie alle betrogen hat [10].
+- **Die Silberkerne** — Nach einem Mordanschlag auf ihn [13] und der Verwicklung der Kerne in einen Mordfall schlägt Rotunas vor, den wahren Täter mit Totenbefragung zu ermitteln, um sie zu entlasten [27].
+- **[Slicks / Slix](/npcs/slix_vasul.md)** — Der Dämon ist für den Verlust von Rotunas‘ rechtem Unterarm verantwortlich. Rotunas rammt ihm im selben Kampf die Knochenhand ins Gesicht, bricht dessen Horn und schleudert ihn durch den Garten [25].
+- **Nerash** — In ihrem finalen Kampf opfert Rotunas seine gesamte Lebensenergie in einer magischen Explosion und tötet sich und Nerash [29].
 
 ## Chronologie
 
-### Frühe Sessions (2025-04-09 bis 2025-06-03)
-Rotunas etabliert sich als mächtiger Kämpfer und Magier. In der Goblin-Höhle setzt er Ice Spike ein und findet die Notiz des Goblins, die er mit Krakelschrift fälscht und im Stiefel der Leiche versteckt. [1] Er entdeckt die magische Schutzrune an Leandras Tür. [1] Während des Bugbären-Angriffs setzt er Blitze ein und schützt Verbündete mit Tarvas Armor. [2] Im Kampf gegen den Oger boxt er diesen in eine vorbereitete Falle. [3] Auf dem Schiffswrack findet er ein durchnässtes Buch und repariert es mit Magie; es enthüllt eine gescheiterte Expedition zu einer Kirche. [4] Er erkauft Informationen von Piraten über den gefangenen Kenku und den versuchten Diebstahl bei Baran. [4]
+### Frühe Abenteuer
+- **Sessions 1–3** (April 2025): Rotunas verteidigt Dörfer gegen Goblins, Bugbären und einen Oger. Er setzt erstmals seine Runenmagie (Blitze, Nebel, Magiegeschosse) und seine Boxhandschuhe ein. Er fälscht Goblin-Notizen und überzeugt Wachen und Dorfbewohner [1][2][3]. Er trägt ein Gildensiegel am Arm [1].
+- **Session 4** (30. April 2025): Auf einem Schiff hadert er mit der Seefahrt („Rotunas ist einer von den Wachen einfach nur“) [4]. Er erkauft Informationen von Piraten, verhört Gulrak und versiegelt heimlich die Zellentür mit einer Rune [4].
+- **Session 5** (6. Mai 2025): Im Kampf gegen Gnolle zeigt er enorme Schubzauber und teleportiert sich in günstige Positionen. Er entdeckt einen kranken Baum und wird an der vergifteten Klaue verletzt; Dodo brennt das Gift aus [5].
+- **Session 6** (3. Juni 2025): In Cornivum befragt er Zwerge über Giftextraktion und Dorfbewohner über den Turm. Am Schlangenschrein versucht er, der Hydra Fisch zu opfern. Er öffnet die Turmtür mit Arcane Dove [6].
 
-Die Expedition in die Sumpfregion bringt neue Herausforderungen: Er wird durch die vergiftete Klaue schwer verletzt, Dodo brennt das Gift aus. [5] Er entdeckt einen kranken Baum mit Pilzbefall. [5] Im Kampf gegen die Sumpfbestie eröffnet er mit einem Great-Staff-Angriff und setzt Wild Flame ein. [6] Am Schlangenschrein versucht er, der Hydra ein Fischopfer darzubringen. [6] Er öffnet die Tür des Turms mit Arcane Dove, indem er auf den Balkon teleportiert. [6]
+### Der Turm und die Seelenprüfung
+- **Session 7** (10. Juni 2025): Er beginnt ein Projekt zur Übersetzung eines Buches, findet einen Glamour-Stein und kämpft gegen seinen eigenen Geister-Doppelgänger. Er erhält verbesserte Arkan-Handschuhe aus einer Mimic und friert Wasserelementare ein [7].
+- **Session 8** (17. Juni 2025): Er wird vom Seelengeist beinahe getötet, rettet sich mit Wizard‘s Hope und zerstört den Geist mit einem letzten magischen Faustschlag. Er findet einen Seelenstein und zeigt große Sorge um Luli [8].
+- **Session 9** (25. Juni 2025): Rotunas öffnet impulsiv das versiegelte Buch und löst damit die Seelenprüfung aus. Er besiegt einen Celestial mit einem Lavafeuerball, setzt den Seelenstein als Notfallschild ein und verliert einen permanenten Hoffnungspunkt [9].
 
-### Der Turm und die Seelenprüfung (2025-06-10 bis 2025-06-25)
-Im Turm beginnt er mit der Übersetzung eines Buches, findet einen Glamourstone und kämpft gegen seinen eigenen Geister-Doppelgänger. [7] Er versiegelt Türen mit Runenschloss, doch seine Barrieren werden nach und nach zerstört. [7] Im Kampf gegen Wasserelementare friert er sie mit Eismagie ein. [7]
+### Kuatau, Portal und Attentat
+- **Session 10** (29. Juli 2025): Er tötet mehrere Kuatau mit Eisspeeren, verhört einen Gefangenen grob und bricht ihm versehentlich das Genick. Er entdeckt die Wirkung des Sternamuletts und schließt gemeinsam mit dem Kuatau-Priester und Lindo Laut das entstandene Portal [10].
+- **Session 13** (17. September 2025): Rotunas verteidigt Flüchtlinge, spendet Gold und Nahrung und plant eine eigene Siedlung. Er lehnt die Methoden einer neuen Gilde ab. Noch in derselben Session wird er von einem Attentäter mit einem vergifteten Dolch erstochen — eine Verschwörung gegen ihn wird offenbar [13].
+- **Session 14** (23. September 2025): Vom Gnoll geheilt, aber mit bleibender Schwäche (2 HP weniger) kämpft er gegen Untote und entfesselt einen massiven Feuerball [14].
+- **Session 15** (30. September 2025): Er kombiniert seine Feuerzauber mit Lindo Laut zu einem lila Feuersturm, wird fast von Pfeilen getötet, rettet sich mit einem Wurf auf Hope (vollständige Heilung) und vernichtet daraufhin den Todesritter und die meisten Untoten [15].
 
-Gegen den Seelengeist wird er beinahe getötet, aber seine Wizards Hope-Fähigkeit rettet ihn; er opfert drei Hope-Punkte, um nicht zu sterben, und die Runen auf seinem Körper leuchten überall auf. [8] Mit einem verzweifelten magischen Faustschlag zerstört er den Geist endgültig. [8] Er findet einen Seelenstein und den Glückstag-Trank. [8] Als er das versiegelte Buch öffnet, löst er die Seelenprüfung aus und kämpft gegen Celestials; dabei verliert er einen permanenten Hoffnungspunkt. [9]
+### Kristalle, Golem und Turnier
+- **Session 16** (7. Oktober 2025): Er analysiert lila und grüne Kristalle, beweist deren Wechselwirkung und entdeckt die Kontrollrune unter einem großen grünen Kristall. Im Kampf zerstört er den rechten Arm des Golems mit einem gezielten Feuerball [16].
+- **Session 17** (14. Oktober 2025): Auf dem Turnier erkennt er sofort, dass der Lich Tyrael ihn im direkten Duell überfordern würde, und lehnt den Wizard-Kampf ab, stimmt aber dem Monsterkampf zu [17].
 
-### Das Kuatau-Dorf und die Sumpfhexe (2025-07-29)
-Er tötet mehrere Kuatau mit Eiszaubern. [10] Bei groben Verhör eines Gefangenen bricht er ihm versehentlich das Genick. [10] Er entdeckt die Wirkung des Sternamuletts und arbeitet mit dem Kuatau-Priester und Lindo Laut zusammen, um das entstandene Portal zu schließen. [10] Er überzeugt den Priester logisch, dass die Sumpfhexe sie alle betrogen hat. [10]
+### Vertrag, Lunara und Flüchtlinge
+- **Session 18** (14. November 2025): Horatio übergibt das Amulett an Esterossa, die auf Rotunas verweist. Er unterzeichnet einen magischen Vertrag und erfährt aus Valerias Brief von ihrer Schwangerschaft. Er träumt von einem Magierturm, wird aber ausgebremst [18].
+- **Session 19** (18. November 2025): Er bleibt nüchtern und beobachtet die Feier, spricht mit Auranie über die Untotengefahr und bleibt Lunara gegenüber vorsichtig. Er liest Bücher aus dem Keller [19].
+- **Session 20** (25. November 2025): Er schützt Esterossa mit Tarvas Armour, bekämpft ein Splitterwesen mit Magic Tether und Power Push und zerschmettert eine Skeletthorde mit einer Ice-Spikes-Attacke, für die er alle seine Hope- und mehrere Stress-Punkte opfert [20].
 
-### Untote, Halborks und Attentat (2025-09-09 bis 2025-10-07)
-Er kämpft mit Ice Spike, flammenden Fäusten und Feuerball gegen Untote; beim Töten eines Zombies erkennt er, einen Menschen getötet zu haben, was ihm Stress verursacht. [12] Er analysiert die schwarze Glas/Eis-Statue und holt mit Mage Hand den Streitkolben Zebrus Zorn aus dem Pentagramm. [12]
+### Konfrontation mit Belorus und Goblindiplomatie
+- **Session 22** (13. Januar 2026): Nach wochenlangem Fieberschlaf kehrt er mit neuer Abyssal-Rune und verbesserter Teleportation zurück. Er zertrümmert einen schwebenden Schädel mit Faustangriffen (42+30 Schaden). Er gibt sich als Lindo Laut aus und besteht einen magischen Gegenwurf gegen Belorus [22].
+- **Session 23** (20. Januar 2026): Er springt zu Lunara hinab und nutzt seine Runenleser-Erfahrung, um ihre Magie zu unterstützen, was ihr die Kontrolle über die Splitterwelt gibt. Er wird schwer verwundet, aber von Esterossa befreit und geheilt [23].
+- **Session 24** (27. Januar 2026): Er lernt goblinische Brockenwörter, stoppt einen Kampf mit einem lauten „Halt! Einkampf? Deal! Handel!“ und baut mit einem Sandwich Vertrauen bei einem kleinen Goblin auf. Er erhält magisches Erz [24].
 
-In der Konfrontation mit Halborks verteidigt er vehement Flüchtlinge und wird dabei verletzt. [13] Er wird von einem Attentäter mit einem vergifteten Dolch erstochen, was seine Identität als Ziel einer Verschwörung offenbart. [13] Nach der Heilung durch den Gnoll beschwört er einen massiven Feuerball, der feindliche Pfeile absorbiert und die Untoten-Horde vernichtet. [14]
+### Verlust des Arms und Spaltung der Gruppe
+- **Session 25** (17. Februar 2026): Slicks zwingt ihn, das Schwert zu berühren, woraufhin seine Hand sich aufzulösen beginnt. Rotunas rammt ihm mit letzter Kraft die Knochenhand ins Gesicht, bricht dessen Horn und verliert den gesamten rechten Unterarm [25].
+- **Session 26** (24. Februar 2026): Lindo Laut berichtet, dass Rotunas fast von seiner unkontrollierten Macht getötet wurde. Rotunas ist nicht anwesend [26].
+- **Session 27** (18. März 2026): Er kehrt mit mechanischem Arm zurück, misstraut dem Magier Trickler und verriegelt Türen mit seinem Runensiegel. Er schlägt vor, den wahren Mörder mit Totenbefragung zu finden [27].
+- **Session 28** (24. März 2026): Er fühlt sich von Lindo Laut und Lunara hintergangen, weigert sich, ins Abyssalis zu gehen, und akzeptiert die Spaltung der Gruppe — öffnet ihnen aber noch ein Portal [28].
 
-In der Schlacht gegen den Todesritter kämpft er an vorderster Front, kombiniert seine Feuerzauber mit Lindo Laut zu einem lila Feuersturm und wird fast von Pfeilen getötet. [15] Ein Wurf auf Hope bringt ihn mit voller Gesundheit zurück, worauf er eine finale Attacke entfesselt, die den Todesritter und die meisten Untoten ausschaltet. [15]
-
-In den Kristallhöhlen experimentiert er mit lilanen und grünen Kristallen. [16] Er entdeckt eine Kontrollrune unter einem großen grünen Kristall, identifiziert sie als Kontrollzauber, scheitert aber daran, sie zu analysieren, bevor sie sich auflöst. [16] Im Kampf gegen den Golem zerstört er mit einem gezielten Feuerball den rechten Arm des Kolosses. [16]
-
-### Das Turnier und Verträge (2025-10-14 bis 2025-11-18)
-Während des Turniers zeigt er einen Spiegel, der seinen dämonischen Aspekt reflektiert. [17] Er erkennt sofort, dass der Lich Tyrael und andere Magier ihn im direkten Duell überfordern würden und lehnt den Wizard-Kampf ab, stimmt aber dem Monsterkampf zu. [17] Bei der Diskussion um Lindo Lauts Besessenheit vermutet er ein Überbleibsel von Basul. [17]
-
-In der Verhandlung mit Horatio bemerkt er frisches Blut an dessen Kleidung, hält sich mit Fragen jedoch zurück. [18] Er nimmt das Amulett als Vertrauenssymbol an und unterzeichnet den Vertrag mit einem magischen Siegel. [18] Er untersucht mit Dodo den Altar und spekuliert über Nekromantie. [18] Später erhält er einen Brief von Valeria, der ihre Schwangerschaft enthüllt. [18]
-
-In der Taverne spricht er mit Auranie über die Situation in Breska und zeigt Besorgnis über die wachsende Untotengefahr. [19] Er bleibt die Nacht über wachsam und liest Bücher aus dem Keller. [19]
-
-### Das Splitterwesen und Belorus (2025-11-25 bis 2026-01-20)
-Gegen das Splitterwesen versucht er, es mit Magic Tether festzuhalten und teleportiert sich per Arcane Dawn direkt vor die Kreatur, um sie mit Power Push in den Wald zu stoßen. [20] Im Kampf gegen die Untoten erschafft er eine Nebelwand und entfesselt mit letzter Kraft eine verheerende Ice Spikes-Attacke, die sämtliche Skelette zerstört. [20]
-
-Nach wochenlangem Schlaf kehrt er verändert zurück: Er hat sich im Fiebertraum eine neue Rune für die Abyssal-Sprache eingebrannt, fühlt sich leichter, stärker und bewegt sich graziler. [22] Er beherrscht nun Teleportation zu Orten, die er zuvor besucht hatte. [22] Im Kampf gegen den Dreadknight zertrümmert er den schwebenden Schädel mit einer brachialen Faustkombination (42 + 30 Schaden). [22]
-
-In der Konfrontation mit Belorus wagt er eine Massenteleportation hinter die Palisade und besteht einen magischen Gegenwurf (seine 11 gegen Belorus' 8). [22] Er tritt als Lindo Lauts Stellvertreter auf und lügt Belorus an. [22] Im finalen Kampf gegen Belorus springt er zu Lunara hinab und nutzt sein Wissen als Runenleser, um ihre Magie zu verstehen und mit eigener Energie zu unterstützen. [23] Er wird von einer Schädelhorde umzingelt und schwer verwundet, aber von Esterossa befreit und geheilt. [23]
-
-### Goblins und die Splitterwelten-Konfrontation (2026-01-27 bis 2026-02-17)
-Er lernt goblinische Brockenwörter und verhandelt erfolgreich mit Lurk und dem Schamanen. [24] Sein kritisches Würfelergebnis beim Performance-Check rettet die Verhandlung mehrfach. [24] Er bietet einem Goblin ein Sandwich an und baut so Vertrauen auf. [24] Er teleportiert die gesamte Delegation sicher zurück und erhält magisches Erz als Lohn. [24]
-
-In der ausweglosen Situation gegen Slicks versucht er zunächst, Lionel und sich selbst durch Teleportation in Sicherheit zu bringen, scheitert jedoch. [25] Als Slicks ihn zwingen will, das Schwert zu berühren und er bereits seine Hand sich auflösen sieht, setzt er einen letzten heroischen Schlag ein: Seine Knochenhand rammt er Slicks ins Gesicht, bricht dessen Horn und schleudert ihn quer durch den Garten. [25] Durch diese Aktion verliert er seinen gesamten Arm bis auf den Knochen. [25] Anschließend ermutigt er Lindo, die Handschellen zu nehmen. [25]
-
-### Bruch mit Lindo Laut und neue Wege (2026-02-24 bis 2026-03-24)
-Rotunas ist nicht anwesend während Lindo Lauts Erklärung seiner verlorenen Kräfte, wird aber als der Charakter erwähnt, der fast von Lindo Lauts unkontrollierter Macht getötet wurde. [26] Er kehrt mit einem von den Zwergen der Festung Zinn gefertigten mechanischen Arm zurück. [27] In Tiefwasser misstraut er dem alten Magier Trickler und schlägt vor, den wahren Schuldigen am Mord zu finden, indem er mit Toten spricht. [27]
-
-Er fühlt sich von Lindo Laut und Lunara hintergangen, besonders weil sie Informationen über die wahre Natur von Lindo Lauts Kräften zurückhielten. [28] Er priorisiert den Schutz der Silberkerne und den Besuch des Magierturms. [28] Er weigert sich, ins Abyssalis zu gehen, da er Liam nicht kennt und das Risiko für zu hoch hält, willigt aber ein, der Gruppe ein Portal nach Ehrenfels zu öffnen. [28]
-
-### Finales Opfer (2026-04-09)
-In dieser Session opfert er sich, um Nerash aufzuhalten, indem er seine gesamte Lebensenergie in einer magischen Explosion entlädt und beide tötet. [29] Zuvor hatte er den Dämonenmagier erschlagen und die Säulen des Portals zerstört. [29] Er trägt Tavas Armor und hat goldene Augen, wenn er erleuchtet ist. [29]
+### Finales Opfer
+- **Session 29** (9. April 2026): Im Kampf gegen Nerash tötet er den Dämonenmagier und zerstört die Säulen des Portals. Als der Feind nicht aufzuhalten ist, entlädt er seine gesamte Lebensenergie in einer magischen Explosion und opfert sich. Er stirbt gemeinsam mit Nerash [29].
 
 ## Offene Fragen
 
-- Die genaue Natur des Dämons in ihm, von dem Tyrael sprach ("Er ist mächtig, selbst ich spüre das") und der im Spiegel sichtbar ist, bleibt ungeklärt. Tyrael deutete an, dass der Dämon noch erwachen werde und dass Rotunas dann nicht in der Nähe seiner Begleiter sein sollte. [17]
-- Der Inhalt des übersetzten Buches und die darin enthaltenen Informationen wurden nie vollständig enthüllt. [7]
-- Was genau aus den Silberkernen und dem Mordfall wurde, mit dem er sich befassen wollte, ist unklar. [27]
-- Ob sein Opfer endgültig war oder ob es eine Möglichkeit der Rückkehr gibt, ist offen.
+- Was genau ist die dämonische Präsenz in Rotunas, die Tyrael als „sehr klein, aber mächtig, und wird bald erwachen“ beschrieb [17]? Die Natur dieses Wesens wurde nie abschließend geklärt.
+- Sein Opfertod in Session 29 scheint endgültig — doch die Art der Magie (Entladung der gesamten Lebensenergie) und seine Geschichte von Wiederkehr (Wizard‘s Hope, Fieberschlaf mit neuen Fähigkeiten) lassen die Frage offen, ob seine Seele oder Essenz vollständig ausgelöscht ist.
 
 ## Belege
 
@@ -150,7 +110,7 @@ In dieser Session opfert er sich, um Nerash aufzuhalten, indem er seine gesamte 
 [8] Session 2025-06-17 @ 01:13:30 (https://www.youtube.com/watch?v=tl76B4V0io8)
 [9] Session 2025-06-25 @ 00:52:35 (https://www.youtube.com/watch?v=tpkO9uGw6-I)
 [10] Session 2025-07-29 @ 01:48:02 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
-[11] Session 2025-08-05 @ 00:01:20 (https://www.youtube.com/watch?v=cRNIWJz_ATo) [Transkriptqualität: mittel]
+[11] Session 2025-08-05 @ 00:01:20 (https://www.youtube.com/watch?v=cRNIWJz_ATo)
 [12] Session 2025-09-09 @ 00:14:24 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
 [13] Session 2025-09-17 @ 00:04:34 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
 [14] Session 2025-09-23 @ 01:46:05 (https://www.youtube.com/watch?v=DGzfqVigS0g)

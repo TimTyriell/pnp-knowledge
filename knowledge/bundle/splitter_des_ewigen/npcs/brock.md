@@ -1,15 +1,15 @@
 ---
 type: NPC
 title: Brock
-description: Brock ist der zweite Wächter neben Kerl und bewacht ebenfalls das Haus
-  des Bürgermeisters. Er unterstützt Kerls anfängliche Weigerung, die…
+description: Brock ist der zweite Wächter an Bertholds Haus. Er steht Kerl bei, sagt
+  aber während der gesamten Szene nichts.
 tags:
 - npcs
 timestamp: '2025-04-09T00:00:00Z'
 id: NPC_BROCK
 ---
 
-Brock ist der zweite Wächter neben [Kerl](/npcs/kerl.md) und bewacht ebenfalls das Haus des Bürgermeisters. Er unterstützt Kerls anfängliche Weigerung, die Helden passieren zu lassen.
+Brock ist der zweite Wächter an [Bertholds](/npcs/berthold.md) Haus. Er steht [Kerl](/npcs/kerl.md) bei, sagt aber während der gesamten Szene nichts.
 
 # Belege
 

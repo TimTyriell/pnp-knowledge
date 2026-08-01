@@ -10,7 +10,7 @@ id: EVENT_KONFRONTATION_MIT_DEN_KULTISTEN
 subtype: Verhandlung
 ---
 
-An der Spitze des [Berges](/locations/berge.md) werden die Helden von [Kultisten des Varsurs](/factions/kult_des_vharzul.md) gestellt. Ein Kultist versteinert [Dodo](/characters/dodo.md) teilweise. [Lindo Laut](/characters/lindo_laut.md) appelliert an Standhaftigkeit, was die Versteinerung stoppt, doch die Kultisten bekennen sich zu [Varsurs](/deities/vharzul.md) und bereiten einen Angriff vor.
+An der Spitze des Berges werden die Helden von [Kultisten des Varsurs](/factions/kult_des_vharzul.md) gestellt. Ein Kultist versteinert [Dodo](/characters/dodo.md) teilweise. [Lindo Laut](/characters/lindo_laut.md) appelliert an Standhaftigkeit, was die Versteinerung stoppt, doch die Kultisten bekennen sich zu [Varsurs](/deities/vharzul.md) und bereiten einen Angriff vor.
 
 # Belege
 

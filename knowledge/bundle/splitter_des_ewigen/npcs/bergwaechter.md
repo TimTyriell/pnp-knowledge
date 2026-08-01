@@ -9,7 +9,7 @@ timestamp: '2025-08-20T00:00:00Z'
 id: NPC_BERGWAECHTER
 ---
 
-Eine vermummte, geisterhafte Gestalt, die als Wächter des [Berges](/locations/berge.md) dient. Er erscheint nach dem Bestehen der Brunnen-Prüfung und erklärt, dass alle Kultisten an dieser Prüfung gescheitert sind und sich danach verändert hätten. Er lobt die Gruppe und weist ihnen den Weg zu den versteckten heiligen Treppen, damit sie das Unheil auf der Spitze beenden können.
+Eine vermummte, geisterhafte Gestalt, die als Wächter des Berges dient. Er erscheint nach dem Bestehen der Brunnen-Prüfung und erklärt, dass alle Kultisten an dieser Prüfung gescheitert sind und sich danach verändert hätten. Er lobt die Gruppe und weist ihnen den Weg zu den versteckten heiligen Treppen, damit sie das Unheil auf der Spitze beenden können.
 
 # Belege
 

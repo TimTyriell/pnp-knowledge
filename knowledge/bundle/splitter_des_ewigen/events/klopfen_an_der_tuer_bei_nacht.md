@@ -10,7 +10,7 @@ id: EVENT_KLOPFEN_AN_DER_TUER_BEI_NACHT
 subtype: Sonstiges
 ---
 
-Um halb drei klopft es an der Tür des Bauernhauses. [Rotunas](/characters/rotunas.md) fragt, wer da sei, erhält aber keine Antwort und tut es als Täuschung ab. Das Klopfen bleibt ungeklärt und markiert das [Ende](/locations/ende.md) der Session.
+Um halb drei klopft es an der Tür des Bauernhauses. [Rotunas](/characters/rotunas.md) fragt, wer da sei, erhält aber keine Antwort und tut es als Täuschung ab. Das Klopfen bleibt ungeklärt und markiert das [Ende](/locations/ende_jenseits_der_orkgebiete.md) der Session.
 
 # Belege
 

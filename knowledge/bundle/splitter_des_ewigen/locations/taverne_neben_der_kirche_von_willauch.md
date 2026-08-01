@@ -12,7 +12,7 @@ aliases:
 - Die Taverne neben der Kirche
 ---
 
-Eine lebhafte, aber günstige [Taverne](/locations/taverne_von_breska.md), in der die Gruppe eine Woche lang ein Privatzimmer mietet. Die Barkeeperin sorgt für Ordnung, und es herrscht nachts reger Betrieb mit Prügeleien und Gesang.
+Eine lebhafte, aber günstige Taverne, in der die Gruppe eine Woche lang ein Privatzimmer mietet. Die Barkeeperin sorgt für Ordnung, und es herrscht nachts reger Betrieb mit Prügeleien und Gesang.
 
 # Belege
 

@@ -10,7 +10,7 @@ id: LOC_SCHLANGENSCHREIN
 subtype: Gebäude
 ---
 
-Eine magische Stätte im [Sumpf](/locations/sumpf_vor_dem_goblin_dorf.md) nordöstlich von [Cornivum](/locations/cornivum.md), bestehend aus zwei Altären – einer mit einem Schlangenkopf, der andere mit Runen – und leuchtenden Kristallen. Von hier geht ein dröhnender Bass aus, der natürliche Magie stört. Eine kleine Schlange lauert zwischen den Kristallen, und die Avatar-Erscheinung des Schlangengottes erscheint.
+Eine magische Stätte im [Sumpf](/locations/sumpf_der_sumpfhexe.md) nordöstlich von [Cornivum](/locations/cornivum.md), bestehend aus zwei Altären – einer mit einem Schlangenkopf, der andere mit Runen – und leuchtenden Kristallen. Von hier geht ein dröhnender Bass aus, der natürliche Magie stört. Eine kleine Schlange lauert zwischen den Kristallen, und die Avatar-Erscheinung des Schlangengottes erscheint.
 
 # Belege
 

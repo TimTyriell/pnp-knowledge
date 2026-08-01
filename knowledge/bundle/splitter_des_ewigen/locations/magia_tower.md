@@ -10,7 +10,7 @@ id: LOC_MAGIA_TOWER
 subtype: Gebäude
 ---
 
-Das Schloss des Magiers, auch Magia Tower genannt, liegt am [Ende](/locations/ende.md) der Welt und beherbergt uraltes Wissen über Runen. Nox schlägt vor, dass [Rotunas](/characters/rotunas.md) und Lunara dorthin reisen, um ihre Runen zu studieren und die Kontrollrunen zu entfernen.
+Das Schloss des Magiers, auch Magia Tower genannt, liegt am [Ende](/locations/ende_jenseits_der_orkgebiete.md) der Welt und beherbergt uraltes Wissen über Runen. Nox schlägt vor, dass [Rotunas](/characters/rotunas.md) und Lunara dorthin reisen, um ihre Runen zu studieren und die Kontrollrunen zu entfernen.
 
 # Belege
 

@@ -10,7 +10,7 @@ id: EVENT_PERFORMANCE_RUNDEN_IN_DER_ARENA
 subtype: Fest
 ---
 
-Nach den beiden Kämpfen zeigen die Helden jeweils eine Showeinlage für das Publikum: [Cookie](/characters/cookie.md) mit einem akrobatischen Salto, [Esterossa](/characters/esterossa.md) mit dem Emporreißen des Werwolfkiefers und einer Rede, [Dodo](/characters/dodo.md) mit Schildklopfen und Jubelrufen. Am [Ende](/locations/ende.md) der zweiten Runde wirbelt Dodo seine leuchtende Keule, Esterossa verbeugt sich pathetisch und Cookie erschafft einen lila Sternenhimmel. Nur Lord Kalidarn bleibt kühl.
+Nach den beiden Kämpfen zeigen die Helden jeweils eine Showeinlage für das Publikum: [Cookie](/characters/cookie.md) mit einem akrobatischen Salto, [Esterossa](/characters/esterossa.md) mit dem Emporreißen des Werwolfkiefers und einer Rede, [Dodo](/characters/dodo.md) mit Schildklopfen und Jubelrufen. Am [Ende](/locations/ende_jenseits_der_orkgebiete.md) der zweiten Runde wirbelt Dodo seine leuchtende Keule, Esterossa verbeugt sich pathetisch und Cookie erschafft einen lila Sternenhimmel. Nur Lord Kalidarn bleibt kühl.
 
 # Belege
 
