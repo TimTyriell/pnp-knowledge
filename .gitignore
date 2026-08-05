@@ -4,6 +4,9 @@ __pycache__/
 .env
 .pytest_cache/
 
+# graphify derived output (graph, report, AST cache) — regenerate with /graphify
+graphify-out/
+
 # Frozen GraphRAG runtime/generated data (now under graph/)
 graph/state/
 graph/transcripts/**

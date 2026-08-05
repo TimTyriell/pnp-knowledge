@@ -754,6 +754,10 @@ canonical_name:
   # Kanon-Schreibweise aus Bekannte_Pantheon_der_Goetter.md; in den Sessions
   # als "Tarvok", "Tavok", "Tarvolk", "Seras/Seraph" und "Parfon" gehört.
   deities/tarvok_der_erdrichter: Thar'Vok, der Erdrichter
+  # GM ruling 2026-08-05: "Slix" ist die kanonische Schreibweise des fünften,
+  # im Buch der vier Seelen nicht verzeichneten Vhar'Zul-Splitters. In den
+  # Sessions überwiegend als "Slicks" transkribiert — das wird zum Alias.
+  npcs/slix_vasul: Slix
   factions/gilde_von_ehrenfels: Die Gilde von Ehrenfels
   factions/kult_des_vharzul: Kult des Vhar'Zul
   factions/sippe_des_voras: Sippe des Voras
