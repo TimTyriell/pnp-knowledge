@@ -9,7 +9,7 @@ timestamp: '2026-01-06T00:00:00Z'
 id: NPC_KOMMANDANT_DER_EINHEIT
 ---
 
-Der gefallene Anführer der Soldatengruppe, tot im Schnee mit einer schweren Plattenrüstung. Unter seiner Rüstung trägt er die gesuchte Schriftrolle. Er wird nicht näher beschrieben, dient nur als Ziel der Bergungsmission.
+Der gefallene Anführer der Soldatengruppe, tot im Schnee mit einer schweren Plattenrüstung. Unter seiner Rüstung trägt er die gesuchte [Schriftrolle](/items/schriftrolle.md). Er wird nicht näher beschrieben, dient nur als Ziel der Bergungsmission.
 
 # Belege
 

@@ -10,7 +10,7 @@ id: ITEM_SCHRIFTROLLE_MIT_DER_NATUR_REDEN
 subtype: Schriftstück
 ---
 
-Eine Schriftrolle, die es erlaubt, mit Bäumen und Pflanzen zu kommunizieren und durch Windgeflüster Antworten zu erhalten. [Esterossa](/characters/esterossa.md) findet sie in einem der Zelte des geplünderten Lagers. Da [Cookie](/characters/cookie.md) diese Fähigkeit bereits beherrscht, ist sie für die Gruppe überflüssig.
+Eine [Schriftrolle](/items/schriftrolle.md), die es erlaubt, mit Bäumen und Pflanzen zu kommunizieren und durch Windgeflüster Antworten zu erhalten. [Esterossa](/characters/esterossa.md) findet sie in einem der Zelte des geplünderten Lagers. Da [Cookie](/characters/cookie.md) diese Fähigkeit bereits beherrscht, ist sie für die Gruppe überflüssig.
 
 # Belege
 

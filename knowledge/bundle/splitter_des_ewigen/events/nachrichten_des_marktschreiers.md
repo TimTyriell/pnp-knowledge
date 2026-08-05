@@ -10,7 +10,7 @@ id: EVENT_NACHRICHTEN_DES_MARKTSCHREIERS
 subtype: Sonstiges
 ---
 
-Der [Marktschreier](/npcs/marktschreier.md) verkündet gegen Bezahlung in der Taverne: [Willau](/locations/willauch.md) rüstet auf, aus [Breska](/locations/breska.md) kommen keine Nachrichten, eine andere Gildengruppe ist gestorben, und [Untote](/factions/belorus_untotenarmee.md) wurden am Fuße des Berges gesichtet. Die Gruppe lässt ihn zusätzlich [Cookies](/characters/cookie.md) Tod und ihren Arena-Sieg verbreiten.
+Der [Marktschreier](/npcs/marktschreier.md) verkündet gegen Bezahlung in der [Taverne](/locations/taverne.md): [Willau](/locations/willauch.md) rüstet auf, aus [Breska](/locations/breska.md) kommen keine Nachrichten, eine andere Gildengruppe ist gestorben, und [Untote](/factions/belorus_untotenarmee.md) wurden am Fuße des Berges gesichtet. Die Gruppe lässt ihn zusätzlich [Cookies](/characters/cookie.md) Tod und ihren Arena-Sieg verbreiten.
 
 # Belege
 

@@ -1,11 +1,11 @@
 ---
 type: Location
 title: Casa del Cookie
-description: 'Die Casa del Cookie (auch: Casa de Cookie, La Casa de Cookie, oder Cookies
-  Casa) ist das Hauptquartier und die wichtigste Operationsbasis d…'
+description: Die Casa del Cookie ist ein Anwesen nordwestlich von Willauch in einem
+  dichten, uralten Waldstück. Es liegt auf einem kleinen Hügel und ist…
 tags:
 - locations
-timestamp: '2026-03-31T00:00:00Z'
+timestamp: '2026-08-04T00:00:00Z'
 id: LOC_CASA_DEL_COOKIE
 subtype: Gebäude
 aliases:
@@ -15,84 +15,76 @@ aliases:
 
 ## Überblick
 
-Die Casa del Cookie (auch: Casa de Cookie, La Casa de Cookie, oder Cookies Casa) ist das Hauptquartier und die wichtigste Operationsbasis der Abenteurergruppe. Es handelt sich um ein zweistöckiges Haus auf einem bewaldeten Hügel nordwestlich von Willauch. Das Gebäude war ursprünglich eine Ruine, wurde aber von der Gruppe – insbesondere von Horatio und einer Gruppe Goblins – restauriert.
+Die Casa del Cookie ist ein Anwesen nordwestlich von Willauch in einem dichten, uralten Waldstück. Es liegt auf einem kleinen Hügel und ist von sehr alten Bäumen umgeben, die teils noch nie von Menschenhand angetastet wurden — ein Wald, der „wahrscheinlich schon die letzten Jahrzehnte, Jahrhunderte hier steht". Ursprünglich handelte es sich um eine Ruine, die die Gruppe als Belohnung für ihren Sieg über den Lich in einem schweren Turnier in Villauch erhielt. Die Besitzurkunde verbrieft das Landstück mitsamt Jagd- und Abholzrechten im Umkreis.
 
-Den Namen wählte die Gruppe per Chat-Abstimmung im Gedenken an ihre gefallene Gefährtin Cookie, die in einem Turnier ums Leben kam. Der Sieg über einen Lich in diesem Turnier bescherte ihnen die Besitzurkunde für das Anwesen. [1][3]
+Das Anwesen wurde zu Ehren der beim Turnier gefallenen Mitstreiterin Cookie benannt und dient seither als wichtigste Operationsbasis der Gruppe. Im Keller befinden sich ein Schrein sowie ein Zugang zu einem tiefergelegenen Dungeon. In der Abwesenheit der Helden hat sich das Gelände weiterentwickelt: Ein weiteres Haus wurde errichtet, und das Anwesen fungiert mittlerweile als Zufluchtsort für Flüchtlinge.
 
 ## Rolle in der Kampagne
 
-Die Casa del Cookie fungiert als zentraler Rückzugsort und Operationsbasis der Gruppe. Von hier aus brechen sie zu ihren Missionen auf und hierher kehren sie zurück. Das Haus dient auch als sicherer Hafen für Verbündete und als Ort, an dem wichtige strategische Entscheidungen getroffen werden.
+Die Casa del Cookie ist die zentrale Heimatbasis der Gruppe. Hierher kehren die Helden nach ihren Abenteuern zurück; von hier aus werden Pläne geschmiedet und Operationen koordiniert. Während des Angriffs auf Ehrenfels blieb Lindo Laut gezielt in der Casa del Cookie zurück, um von dort aus die Kontrolle über den in ihm gefangenen Dämon Slix aufrechtzuerhalten. Die räumliche Trennung von der Gruppe erlaubte es ihm, sich auf diesen Zauber zu konzentrieren.
 
-Magisch ist die Casa del Cookie ein Knotenpunkt für Portale: Lindo Laut hat dort ein Portal platziert, und Lunara Velora besitzt einen Samen, mit dem sie an einem beliebigen Ort einen Baum wachsen lassen kann, der nach 24 Stunden ein Portal direkt zum Haus öffnet. [2]
-
-In der Casa del Cookie hält Lindo Laut zudem die Kontrolle über den in ihm gefangenen Dämon Slix aufrecht. Während die anderen Gruppenmitglieder in Ehrenfels waren, blieb Lindo Laut zurück und meditierte im Haus, um den Bannzauber aufrechtzuerhalten. [4]
+Das Anwesen hat sich zudem zu einem Anlaufpunkt für Schutzsuchende entwickelt. Nyrella hilft vor Ort beim Aufbau und bei der Versorgung der Flüchtlinge. Durch ein von Lindo Laut platziertes Portal ist die Casa del Cookie auch ein strategischer Knotenpunkt für schnelle Reisen: Lunara besitzt einen Samen, der binnen 24 Stunden einen Portalbaum zur Casa wachsen lassen kann — eine Notfallverbindung, die die Gruppe in Betracht zieht, wenn andere Reisewege zu gefährlich sind.
 
 ## Wichtige Merkmale
 
-### Architektur und Räumlichkeiten
+### Lage und Umgebung
+Die Casa del Cookie liegt abgelegen in einem dichten, uralten Wald nordwestlich von Willauch. Die Bäume sind so alt, dass manche von ihnen seit Jahrhunderten unberührt stehen. Diese Lage bot ursprünglich Schutz vor Armeen und macht das Anwesen schwer zugänglich für ungebetene Gäste. Von den Baumwipfeln aus ist das Dach auf dem Hügel sichtbar.
 
-Das Gebäude verfügt über zwei Etagen und einen Gemeinschaftsraum. Unter dem Haus befindet sich ein Arbeitskeller mit einem Brunnen. Ein besonderes Merkmal ist ein Schrein im Keller. Von dort aus führen geheime unterirdische Gänge in einen tiefer gelegenen Dungeon. [1][3]
+In der näheren Umgebung hat sich der Dschungel teilweise bis in die unterirdischen Bereiche hinein ausgebreitet. In der Tiefe herrscht feuchtes Klima, und ein süßlicher Geruch liegt in der Luft — „so ein Blumenstrauß, der so ein bisschen älter ist. Aber nicht negativ".
 
-### Umgebung
+### Beschaffenheit
+Das Gebäude wurde von Horatio und Goblins restauriert und verfügt über:
+- **Zwei Etagen** mit einem Gemeinschaftsraum
+- Einen **Arbeitskeller mit Brunnen**
+- Eine **Schreinanlage** im Keller
+- **Geheime unterirdische Gänge**, die in einen tieferen Dungeon führen — einen Eingang, der "recht tief in die Erde führt"
 
-Die Casa del Cookie liegt auf einem kleinen Hügel inmitten eines großen, dichten Waldstücks. Der Wald wirkt beinahe abgeschirmt, und die Bäume sind teilweise sehr alt – vermutlich seit Jahrzehnten oder Jahrhunderten unberührt. Diese Lage bietet natürlichen Schutz vor Armeen. [1]
+Die Gruppe plante früh, die Casa del Cookie als Basis weiter auszubauen, etwa mit einer Magierakademie oder einem Turm. Im Laufe der Zeit ist tatsächlich ein **zweites Haus** auf dem Gelände entstanden, das gemeinsam mit den Flüchtlingen errichtet wurde. Dennoch schlafen weiterhin viele Bewohner im Freien oder auf engstem Raum.
 
-Der Wald selbst wird als von Bäumen umgeben beschrieben; vom Hügel aus ist durch die Baumwipfel ein Dach zu erkennen. Laut Esterossa liegt das Haus "sehr weit im Süden, links von Willoch", was in Kombination mit der Festlegung auf nordwestlich von Willauch auf eine möglicherweise frühere Fehleinschätzung oder eine andere Perspektive zurückgeht. [1][2] (Siehe Chronologie und ENTSCHEIDUNG.)
+### Portalverbindung
+Lindo Laut hat in der Casa del Cookie ein Portal platziert. Über einen speziellen Samen kann ein Baum gepflanzt werden, der nach 24 Stunden ein Portal zur Casa öffnet — allerdings nur, wenn der Baum in dieser Zeit beschützt wird.
 
-### Der Dungeon
-
-Der Eingang zum Dungeon führt tief in die Erde hinab. Die Umgebung wird als sehr feucht beschrieben; der Dschungel hat sich selbst in die tieferen Felsvorsprünge hinein ausgebreitet. Es liegt ein leicht süßlicher Geruch in der Luft – vergleichbar mit einem etwas älteren Blumenstrauß, jedoch nicht unangenehm. [3]
-
-### Entwicklungen über die Zeit
-
-Die Casa del Cookie hat sich über die Kampagnenmonate hinweg stark verwandelt. Was als Ruine begann, wurde restauriert und ausgebaut. Die Gruppe plant langfristig eine Erweiterung um eine Magierakademie oder einen Turm. [1]
+### Bewohner und Nutzer
+- Die **Heldengruppe** nutzt das Anwesen als Basis.
+- **Lindo Laut** hält sich häufig dort auf; er meditierte dort, um Slix zu kontrollieren, und verbrachte später Tage auf dem Marktplatz mit Musizieren.
+- **Nyrella** hilft beim Aufbau und kümmert sich um die Flüchtlinge.
+- Eine wachsende Zahl von **Flüchtlingen** hat hier Zuflucht gefunden.
+- Gelegentlich trainieren Lindo Laut und Dodo hier im Übungskampf.
 
 ## Beziehungen und Verbindungen
 
-- **[Lindo Laut](/characters/lindo_laut.md)** – Hat ein Portal in der Casa del Cookie platziert, sodass er und andere es als magischen Ankerpunkt nutzen können. Hält dort in Meditation die Kontrolle über den Dämon Slix aufrecht. [2][4]
-
-- **[Lunara Velora](/characters/lunara_velora.md)** – Besitzt einen Samen von Lindo Laut, mit dem sie einen Baum pflanzen kann, der nach 24 Stunden ein Portal zur Casa del Cookie öffnet. [2]
-
-- **[Cookie](/characters/cookie.md)** – Die gefallene Gefährtin, nach der das Haus benannt wurde. Sie starb im Turnier, durch das die Gruppe das Anwesen errang. [3]
-
-- **[Horatio](/npcs/horatio.md)** – War maßgeblich an der Restaurierung des Gebäudes beteiligt, ebenso wie die Goblins. [1]
-
-- **[Dodo](/characters/dodo.md)** – Fungierte bei der ersten Besichtigung als Führer zum Hügel, auf dem das Haus liegt. [1]
-
-- **[Esterossa](/characters/esterossa.md)** – Steht in einem ambivalenten Verhältnis zum Anwesen, da es durch Cookies Tod ermöglicht wurde: "Ihr Ableben unser Freud, also ihr Tod bescherte uns jetzt ein Anwesen." [1]
-
-- **[Slix](/npcs/slix_vasul.md)** – Der in Lindo Laut gefesselte Dämon. Bei Lindos Aufenthalt in der Casa del Cookie erlebte dieser eine Panikattacke, die Slix' Angst vor einer nahenden Bedrohung offenbarte: "Lindo Laut, er kommt uns vernichten. Ihr müsst schreien, ihr müsst fliehen." [4]
-
-- **[Vasul](/deities/vharzul.md)** – Öffnete ein Portal, durch das die Gruppe aus Ehrenfels fliehen konnte – mutmaßlich zurück zur Casa del Cookie oder einem verbundenen Ort. [4]
-
-- **[Willau / Willauch](/locations/willauch.md)** – Nächstgelegene Siedlung, relativ zu der die Casa del Cookie nordwestlich liegt. [1]
+- **[Cookie](/characters/cookie.md)** — Die gefallene Namensgeberin des Anwesens. Sie starb im Turnier, durch dessen Sieg die Gruppe das Anwesen überhaupt erst errang. Das Haus wurde in ihrem Gedenken benannt.
+- **[Horatio](/npcs/horatio.md)** — War an der Restaurierung der ursprünglichen Ruine beteiligt.
+- **Goblins** — Halfen Horatio beim Wiederaufbau des Anwesens.
+- **[Lindo Laut](/characters/lindo_laut.md)** — Platzierte das Portal; meditierte in der Casa, um die Kontrolle über **Slix** aufrechtzuerhalten, und wurde dort von Slix' panischem Schrei erreicht, als in Ehrenfels die Ereignisse eskalierten.
+- **[Lunara Velora](/characters/lunara_velora.md)** — Besitzt den Samen, der einen Portalbaum zur Casa wachsen lassen kann.
+- **[Nyrella](/characters/nyrella.md)** — Hilt vor Ort beim Aufbau und bei der Flüchtlingshilfe; ihr geht es dort gut.
+- **[Rotunas](/characters/rotunas.md)** — Die Gruppe bezeichnet die Casa als „unsere neue Siedlung", während Rotunas sie im Gespräch als „eure wirtschaftliche Siedlung" charakterisiert. Eine von Rotunas beschützte Statue in Ehrenfels erinnert an seinen Einsatz.
+- **[Villauch](/locations/willauch.md)** — Schauplatz des Turniers, in dem die Gruppe das Anwesen errang.
+- **Silberkern** — Nyrella hilft offenbar von dort aus beim Aufbau der Casa del Cookie (die genaue Verbindung bleibt vage).
 
 ## Chronologie
 
-1. **Erwerb (vor Session 2025-11-14):** Die Gruppe besiegt einen Lich in einem Turnier in Villauch und erhält als Belohnung die Urkunde für ein Anwesen. Cookie kommt bei diesem Turnier ums Leben. Nach einer Trauerzeit macht sich die Gruppe auf, das Anwesen zu besichtigen. [1][3]
+**Sieg über den Lich und Erwerb** (Session vom 14.11.2025): Die Gruppe besiegt den Lich im Turnier von Villauch. Cookie fällt. Als Anerkennung erhalten die Helden eine Besitzurkunde über ein Landstück. Bei der ersten Besichtigung finden sie eine von Bäumen umgebene Ruine auf einem Hügel vor. Die Gruppe beschließt, das Anwesen zu restaurieren und als Basis auszubauen. Per Chat-Abstimmung wird der Name „Casa del Cookie" festgelegt.
 
-2. **Erste Besichtigung (Session 2025-11-14):** Die Gruppe erreicht das Haus – zu diesem Zeitpunkt noch eine Ruine auf einem bewaldeten Hügel nordwestlich von Willau. Sie erkunden das Gebäude und seine Umgebung. Per Chat-Abstimmung wird der Name "Casa del Cookie" gewählt. [1]
+**Portal-Einrichtung** (vor Session vom 13.01.2026): Lindo Laut hat ein Portal im Haus platziert. Lunara erhält von ihm einen Samen, der einen Portalbaum wachsen lassen kann. In Diskussionen über Flüchtlingsrouten wird die Casa als mögliche Notfall-Zuflucht erwogen.
 
-3. **Restaurierung und Ausbau (zwischen Session 2025-11-14 und 2026-01-13):** Horatio und die Goblins restaurieren das Haus. Es entstehen zwei Etagen, ein Gemeinschaftsraum, ein Arbeitskeller mit Brunnen und ein Schrein. Geheime Gänge zum darunterliegenden Dungeon werden entdeckt. Die Gruppe plant eine Erweiterung um eine Magierakademie oder einen Turm. [1][3]
+**Erkundung des Dungeons** (Session vom 11.02.2026): Beim Durchstöbern des Kellers entdeckt die Gruppe einen Schrein und den Eingang zu einem tieferen Dungeon, den sie sich für später aufhebt. In dieser Session beginnt der „Deep Dive" in diesen Dungeon, der feucht und teilweise vom Dschungel überwuchert ist.
 
-4. **Portal-Verbindung (Session 2026-01-13):** Lindo Laut hat ein Portal in der Casa del Cookie platziert. Lunara Velora erhält von ihm einen Samen, mit dem sie von überall aus einen Portalbaum wachsen lassen kann, der nach 24 Stunden Schutz eine Verbindung zum Haus herstellt. In einer strategischen Diskussion mit HAL und Nyrella wird die Casa als mögliche Zuflucht für Geflüchtete erwogen. [2]
+**Lindo Lauts Rückzug** (Session vom 31.03.2026): Während der Rest der Gruppe in Ehrenfels kämpft, bleibt Lindo Laut in der Casa del Cookie, um die Kontrolle über Slix zu halten. In tiefer Meditation sitzend, wird er plötzlich von Slix' panischer Angst durchfahren: „Lindo Laut, er kommt uns vernichten. Ihr müsst schreien, ihr müsst fliehen." Lindo Laut steht daraufhin mit zitternden Knien am Hang und blickt ins Tal.
 
-5. **Dungeon-Erkundung (Session 2026-02-11):** Die Gruppe dringt tiefer in den Dungeon unter dem Haus vor. Der Dungeon wird als feucht und stark vom Dschungel durchwachsen beschrieben, mit einem süßlichen Geruch in der Luft. [3]
-
-6. **Rückzugsort in der Krise (Session 2026-03-31):** Während der Rest der Gruppe in Ehrenfels gegen einen Dämon kämpft, bleibt Lindo Laut meditierend in der Casa del Cookie zurück, um die Kontrolle über Slix aufrechtzuerhalten. Über seine Verbindung zu Slix spürt er dessen Panik und hört dessen Warnung vor einer großen Bedrohung. Nach der Flucht der Gruppe durch Vasuls Portal ist anzunehmen, dass sie in die Casa del Cookie zurückkehren. [4]
+**Wachstum und Entwicklung** (bis Session vom 04.08.2026): In den folgenden Monaten entwickelt sich das Anwesen weiter. Ein zweites Haus ist entstanden. Flüchtlinge haben sich angesiedelt, schlafen teils noch im Freien. Nyrella hilft beim Aufbau. Die ursprüngliche Ruine, das Turnier-Hauptquartier, das Portal-Haus und schließlich die wachsende Siedlung — all das beschreibt unterschiedliche Stadien ein und desselben Ortes, der sich über die Zeit stetig verändert hat.
 
 ## Offene Fragen
 
-- Was befindet sich in den tieferen Ebenen des Dungeons, die die Gruppe noch nicht vollständig erkundet hat? [3]
-- Welche Bedrohung kündigt Slix mit den Worten "er kommt uns vernichten" an, und betrifft sie auch die Casa del Cookie? [4]
-- Wurde der Ausbau zur Magierakademie oder zum Turm jemals konkret begonnen? [1]
+- Wohin führt der tiefe Dungeon unterhalb der Casa del Cookie, und welche Gefahren oder Geheimnisse birgt er?
+- Wie viele Flüchtlinge haben sich mittlerweile angesiedelt, und wie weit ist der Ausbau der Siedlung fortgeschritten?
+- In welcher Beziehung steht der Silberkern zur Casa del Cookie?
 
 ## Belege
 
-[1] Session 2025-11-14, 00:01:38–00:04:25, https://www.youtube.com/watch?v=8Khb-Y8XbKY
-
-[2] Session 2026-01-13, 00:46:52–00:48:53, https://www.youtube.com/watch?v=w4LB1s9_3rs
-
-[3] Session 2026-02-11, 00:02:12–00:04:45, https://www.youtube.com/watch?v=3C8SD-cyNPM
-
-[4] Session 2026-03-31, 00:47:34–00:48:45, https://www.youtube.com/watch?v=Ee-K84wcxLM
+1. Session 2025-11-14, 00:02:44: https://www.youtube.com/watch?v=8Khb-Y8XbKY
+2. Session 2026-01-13, 00:47:53: https://www.youtube.com/watch?v=w4LB1s9_3rs
+3. Session 2026-02-11, 00:03:29: https://www.youtube.com/watch?v=3C8SD-cyNPM
+4. Session 2026-03-31, 00:47:34: https://www.youtube.com/watch?v=Ee-K84wcxLM
+5. Session 2026-08-04, 01:43:55: https://www.youtube.com/watch?v=qRj2t3wQHfs

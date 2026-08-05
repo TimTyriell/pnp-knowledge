@@ -10,7 +10,7 @@ id: EVENT_BEFRAGUNG_DER_TOTEN_KRIEGERIN_MIT_MIT_TOTEN_SPRECHEN
 subtype: Entdeckung
 ---
 
-Mittels der Schriftrolle wurde eine tote Kriegerin befragt. Sie gab preis, dass die Untoten zu Hunderten das Tor überrannten, ein schwarzer Ritter sie anführte, und dass die Verteidiger sich selbst töteten, um nicht verwandelt zu werden. Sie bestätigte auch den Tod des Prinzen.
+Mittels der [Schriftrolle](/items/schriftrolle.md) wurde eine tote Kriegerin befragt. Sie gab preis, dass die Untoten zu Hunderten das Tor überrannten, ein schwarzer Ritter sie anführte, und dass die Verteidiger sich selbst töteten, um nicht verwandelt zu werden. Sie bestätigte auch den Tod des Prinzen.
 
 # Belege
 

@@ -1,65 +1,52 @@
 ---
 type: Character
 title: Kaya
-description: Kaya ist eine Faun-Bardin, die von ihrer Spielerin Tina als „relativ
-  lebenslustig, relativ frech“ beschrieben wird [1]. Sie bestreitet ihre…
+description: Session 2 (2026-07-10) – Innerlich macht sich Kaya Sorgen wegen Sanges
+  neuem Gott und hat sich deshalb bereits mit Jonathan und Samuel besp…
 tags:
 - characters
-timestamp: '2026-07-10T00:00:00Z'
+timestamp: '2026-07-23T00:00:00Z'
 id: CHAR_KAYA
 ---
 
 ## Überblick
-
-Kaya ist eine Faun-Bardin, die von ihrer Spielerin Tina als „relativ lebenslustig, relativ frech“ beschrieben wird [1]. Sie bestreitet ihren Lebensunterhalt mit abendlichen Auftritten in der Taverne und verdient so ihr Gold [1]. Trotz ihrer nach außen getragenen Unbeschwertheit zeigt sie ein wachsames Auge für die Gefahren, die ungeprüfte göttliche Patronage mit sich bringt, und agiert als intuitives moralisches Frühwarnsystem der Gruppe. Ihre Verbindung zur Musik ist nicht nur Broterwerb, sondern ein aktives Werkzeug – zur Beruhigung, zur Inspiration und zur emotionalen Fürsorge.
+Kaya ist eine Faun-Bardin, die als lebenslustiger, frecher Freigeist die Gruppe begleitet. Sie trägt mit Musik, Charme und wachsender Kampfkraft zur gemeinsamen Sache bei und mischt spielerische Unbekümmertheit mit wachem Instinkt und echtem Mitgefühl. In der Welt trägt sie keinen Beinamen, sondern tritt einfach als Kaya auf.
 
 ## Rolle in der Kampagne
-
-Kaya fungiert als das emotionale Zentrum und die diplomatische Vermittlerin der Gruppe. Sie setzt Musik ein, um Spannungen abzubauen, Tiere zu beruhigen und die Moral auf langen Wanderungen hochzuhalten [2]. Durch ihren Instinkt entlarvt sie Unwahrheiten und agiert als Korrektiv, wenn andere Gruppenmitglieder zu ungestüm oder naiv handeln. Sie verhindert etwa, dass [Saris](/characters/saris.md) eine Fremde aufdringlich analysiert [2], und durchschaut mühelos die Lügen von [Talron](/npcs/talron.md) [1]. Gegenüber neuen, potenziell gefährlichen Einflüssen – insbesondere Göttersegen – nimmt sie eine skeptische, schützende Haltung ein und vertritt damit eine konservativere Linie als etwa Sange [2].
+Kaya nimmt eine unterstützende, aber vielseitige Rolle ein: Sie unterhält die Gefährten mit Musik, bringt mit flotten Dehnübungen vor Kämpfen einen moralischen Schub (Rally-D6) und setzt im Gefecht zunehmend clever ihre Zauber ein. Außerdem durchschaut sie Lügen, bietet emotionale Stütze – besonders für [Sange](/characters/sange.md) – und agiert mitfühlend, etwa wenn sie einen Hund mit Musik beruhigt oder einem Kind Trost spendet. Ihre anfängliche Scheu vor dem Kampf weicht im Verlauf der Abenteuer einem überlegten, selbstbewussten Auftreten.
 
 ## Wichtige Merkmale
-
-### Auftreten und Wesenszüge
-
-Kayas dominantes Wesensmerkmal ist eine demonstrative Sorglosigkeit, die sie selbst bei längerem Fußmarsch durch Hüpfen und Musik aufrechterhält: „Aber sie versucht weiterhin ihr sorgloses Selbst zu bleiben“ [2]. Diese Haltung ist jedoch teils bewusst kultiviert, denn unter der Oberfläche ist sie wegen [Sanges](/characters/sange.md) Annahme des Gottes [Joran](/deities/joran_der_muenzenzaehler.md) insgeheim besorgt: „Da ist sie sich auch noch nicht so ganz sicher und beugt ihn ab und an mal so ein bisschen, so ob da jetzt irgendwas passiert, kommen denen Münzen aus den Ohren, was passiert“ [2].
-
-Ihr Mitgefühl zeigt sich im Umgang mit Schwächeren: Sie zeigt Mitgefühl für ein Kind [1] und wird von einem Halblingsjungen für ihre beruhigende Musik gelobt [2]. Ihre Neugierde wiederum richtet sich auf das Skurrile, etwa Saris und dessen sprechende Schädel, mit denen sie – obwohl sie sie nicht hören kann – so tut, als könnte sie es, weil sie Spaß an der Vorstellung hat [1][2].
-
-### Fähigkeiten
-
-- **Musikalische Begabung**: Sie verdient ihren Lebensunterhalt als Bardin in der Taverne [1] und nutzt Musik aktiv, um Tiere (etwa den Hund Nepp) zu beruhigen [2], Eindrücke poetisch festzuhalten (sie notiert sich poetische Worte von Sange für ein Lied) [1] und die Gruppe bei langen Wanderpassagen zu unterhalten sowie die Stimmung zu heben [2].
-- **Instinkt für Wahrheit**: Sie durchschaut mühelos, wenn jemand lügt – etwa bei Talron [1].
-- **Gruppenführung und -motivation**: Vor dem Aufbruch zur Mine führt sie die Gruppe in Dehnübungen und gewährt ihnen einen Rally-Würfel (D6) [2]. Diese Rolle deutet auf eine anerkannte Position als physische und moralische Stütze der Gruppe hin.
-- **Vorsicht und Selbstschutz**: Sie vertraut auf Warnungen (wie die von Samuel) und lehnt unbekannte Segen ab [1].
-
-### Besondere Gegenstände
-
-- **Schützende Halskette von Bruma**: Sie erhält von der mysteriösen Bruma eine Halskette mit Schutzwirkung und freut sich sehr darüber [2].
-- **Heiltränke**: Sie bekommt von Talron zwei Heiltränke ausgehändigt [2].
+- **Spezies / Auftreten:** Faun (Faunendame); genauere körperliche Beschreibungen fehlen, doch die Faunenherkunft unterstreicht ihr naturverbundenes, lebensfrohes Wesen. Sie kleidet sich nicht näher beschrieben.
+- **Klasse:** Bardin – sie spielt abends in einer Taverne und verdient damit Gold, nutzt Musik auch außerhalb der Bühne als Werkzeug, etwa zur Beruhigung von Tieren.
+- **Fähigkeiten:**
+  - *Magische Hand* (Arcane Hand): beschwört eine schwebende Hand, mit der sie gezielt Gegner schubsen oder Gegenstände manipulieren kann.
+  - *Feuerzauber:* eingesetzt im Kampf, z. B. um den Gnoll-Anführer ins Feuer zu ziehen.
+  - *Rally-D6:* vor dem Aufbruch zur Mine lässt sie die Gruppe Dehnübungen machen und gewährt einen Bonuswürfel.
+  - *Instinkt:* durchschaut mühelos Lügen, etwa die von Talron (Session 1).
+- **Wesenszüge:**
+  - Lebenslustig und frech, bemüht sich nach außen um eine sorglose Haltung, obwohl sie innerlich Sorgen plagen (z. B. wegen Sanges neuem Gott).
+  - Misstrauisch gegenüber unbekannten Göttern: Sie lehnt Jorans Segen ab, weil sie „unbekannten Göttern nicht traut“ und sich auf Samuels Warnung verlässt.
+  - Mitfühlend und einfühlsam: Sie spricht Sange nach dessen Verwandlung behutsam an, bietet Unterstützung an und zeigt Mitgefühl für das Kind.
+  - Wissbegierig, aber taktvoll: Sie erkundigt sich neugierig nach Saris’ Schädeln, vereitelt jedoch eine aufdringliche Analyse durch Saris bei Bruma, indem sie sich selbst vorstellt und das Gespräch lenkt.
+  - Entwickelt sich von anfänglicher Ängstlichkeit zu einer tatkräftigen Kämpferin, die im Team taktische Vorschläge macht und beherzt zupackt.
 
 ## Beziehungen und Verbindungen
-
-- **[Sange](/characters/sange.md)**: Ihre engste Beziehung in der Gruppe. Kaya hilft Sange aktiv, die Lüge über die Puppe zu vertuschen [1]. Sie ist jedoch zutiefst misstrauisch gegenüber Sanges neuem Gott Joran und hat sich deswegen mit anderen (Jonathan und Samuel) beraten. Sie beobachtet Sange seit der Segnung genau auf Veränderungen [2]. Dass sie sich poetische Worte von Sange für ein Lied notiert, deutet auf eine enge, vielleicht liebevoll-ironische Verbundenheit hin [1].
-- **[Saris](/characters/saris.md)**: Kaya ist neugierig auf Saris und seine sprechenden Schädel Jonathan und Samuel. Obwohl sie die Schädel nicht hören kann, tut sie aus Spielerei manchmal so, als sei es der Fall [1][2]. Sie greift aktiv ein, als Saris zu einer aufdringlichen Analyse einer Fremden (Bruma) ansetzt, und stellt stattdessen sich selbst vor, um die Situation zu entschärfen [2].
-- **[Talron](/npcs/talron.md)**: Sie durchschaut seine Lügen mit ihrem Instinkt [1] und erhält von ihm zwei Heiltränke sowie auf ihre Frage nach der früheren, gescheiterten Gruppe eine düstere Antwort [2]. Die Beziehung ist von pragmatischer Zusammenarbeit und einer gewissen Vorsicht Kayas geprägt.
-- **[Bruma](/characters/bruma_stormrak.md)**: Bei der ersten Begegnung blockt sie Saris ab und stellt sich selbst vor, woraufhin Bruma ihr eine schützende Halskette überreicht, über die Kaya sich sehr freut [2].
-- **Nepp und Sibi**: Sie beruhigt den Hund Nepp mit Musik und erntet dafür das Lob des Halblingsjungen Sibi [2].
+- **[Sange](/characters/sange.md)** – Kaya deckt Sanges Lüge um die Puppe und beobachtet mit Sorge, wie er den neuen Gott Joran annimmt. Sie unterhält sich heimlich mit Jonathan und Samuel darüber, horcht Sange immer wieder aus, ob „Münzen aus den Ohren kommen“, und bietet ihm nach seiner Verwandlung einfühlsam ihre Hilfe an.
+- **[Talron](/npcs/talron.md)** – Sie durchschaut Talrons Lüge mit ihrem Instinkt, hinterfragt die frühere gescheiterte Gruppe und erhält von ihm zwei Heiltränke.
+- **[Saris](/characters/saris.md)** – Sie ist neugierig auf seine Schädel Jonathan und Samuel, tut manchmal so, als könne sie die Schädel hören, obwohl das nicht der Fall ist. Bei der ersten Begegnung mit Bruma verhindert sie eine taktlose Analyse durch Saris und übernimmt selbst die Vorstellung.
+- **[Bruma](/characters/bruma_stormrak.md)** – Kaya freut sich sehr über eine schützende Halskette, die sie von Bruma geschenkt bekommt. In der Mine kooperiert sie eng mit Bruma: Gemeinsam lösen sie einen Felssturz aus und ziehen den Gnoll-Anführer ins Feuer.
+- **Jonathan und Samuel** – Die beiden Schädel, die Saris begleiten, warnten ursprünglich vor einem unbekannten Gott; Kaya schenkt dieser Warnung Glauben und konsultiert sie in Bezug auf Sanges Zustand.
+- **Sibi (Halblingsjunge)** – Auf der Farm lobt Sibi Kaya, nachdem sie den Hund Nepp mit Musik beruhigt hat.
+- **Joran** – Der Gott, dessen Segen sie ablehnt, weil sie ihm nicht traut.
 
 ## Chronologie
+**Session 1 (2026-06-04)** – Kaya stellt sich als lebenslustige Faun-Bardin vor. Sie spielt abends in der Taverne und verdient Gold. Sie hilft Sange, eine Lüge über eine Puppe zu vertuschen, und durchschaut Talrons Unwahrheit mit ihrem Instinkt. Sie lehnt Jorans Segen ab, vertraut auf Samuels Warnung und notiert poetische Worte von Sange für ein Lied. Gegenüber Saris’ Schädeln zeigt sie Neugier und beweist Mitgefühl für ein trauriges Kind.
 
-**Session 1 (2026-06-04):** Kaya tritt als lebenslustige, abendlich in der Taverne auftretende Faun-Bardin in Erscheinung. Sie beweist ihren Instinkt, indem sie eine Lüge Talrons durchschaut und Sange dabei hilft, die Wahrheit über eine Puppe zu vertuschen. Sie lehnt den Segen Jorans, den Sange annimmt, für sich selbst explizit ab, da sie unbekannten Göttern nicht traut, und schenkt der Warnung Samuels Glauben. Sie notiert poetische Äußerungen Sanges für ein künftiges Lied und begegnet Saris und seinen Schädeln mit gespielter wie echter Neugier [1].
+**Session 2 (2026-07-10)** – Innerlich macht sich Kaya Sorgen wegen Sanges neuem Gott und hat sich deshalb bereits mit Jonathan und Samuel besprochen. Nach außen bemüht sie sich, die Sorglose zu bleiben, und unterhält die Gruppe auf Wanderungen mit Musik. Bei der Begegnung mit Bruma geht sie dazwischen, stoppt Saris und stellt sich selbst vor; zur Belohnung erhält sie eine schützende Halskette. Auf der Farm beruhigt sie den Hund Nepp mit Musik und wird dafür von dem Halblingsjungen Sibi gelobt. Sie fragt Talron nach der früheren gescheiterten Gruppe und bekommt eine düstere Auskunft. Vor dem Aufbruch zur Mine leitet sie Dehnübungen an und gibt der Gruppe einen Rally-D6; von Talron erhält sie zwei Heiltränke.
 
-**Zwischen den Sessions:** Sange nimmt den Segen Jorans an, was bei Kaya Besorgnis auslöst. Sie sucht das Gespräch mit Jonathan und Samuel (die sie weiterhin nicht hören kann), tut aber so, als könne sie das, und nimmt die Warnung, die ursprünglich Jonathan ausgesprochen hatte, als Bestätigung ihrer eigenen Skepsis an [2].
-
-**Session 2 (2026-07-10):** Kaya offenbart ihre innere Besorgnis um Sanges Entwicklung und beobachtet ihn auf subtile Veränderungen hin, während sie nach außen ihre sorglose Fassade aufrechterhält. Sie führt die Gruppe mit Musik durch Wanderpassagen. Bei der Begegnung mit Bruma stoppt sie Saris’ aufdringliches Verhalten und erhält als Dank eine Schutzhalskette. Auf der Farm beruhigt sie den Hund Nepp musikalisch und wird von Sibi gelobt. Sie befragt Talron zur früheren, gescheiterten Gruppe und erhält eine düstere Antwort. Vor dem Aufbruch zur Mine leitet sie die Gruppe zu Dehnübungen an, verleiht ihnen einen Rally-D6 und empfängt von Talron zwei Heiltränke [2].
-
-## Offene Fragen
-
-- Die genaue Natur von Kayas Gesprächen mit Jonathan und Samuel bleibt unklar, da sie die Schädel nicht wirklich hört und nur so tut – ob und wie sie deren Warnungen dennoch korrekt interpretiert oder lediglich auf ihr Bauchgefühl vertraut, ist offen [2].
-- Inwieweit sich Kayas Misstrauen gegenüber Joran als berechtigt erweist und ob ihre Fürsorge für Sange in einen offenen Konflikt mit dessen wachsender Götterbindung mündet, ist nicht geklärt [2].
-- Welche düsteren Details Kayas Frage nach Talrons früherer Gruppe genau zutage förderte, ist aus den Belegen nicht ersichtlich [2].
+**Session 3 (2026-07-23)** – Kaya setzt ihre Zauber geschickt im Kampf ein. Sie schlägt vor, eine magische Hand zu beschwören, um die Bugbären in den Schacht zu stoßen: „Ich könnte theoretisch eine Magic Hand beschwören und mit der schon mal versuchen, einen oder sogar beide in den Schacht reinzuschubsen.“ Den ersten stößt sie über die Kante, den zweiten bringt sie zu Fall, indem sie ihm „so richtig in die Kniekehle“ knufft, woraufhin er mit einem Bauchplatscher in die Tiefe stürzt. Gemeinsam mit Bruma löst sie einen Felssturz aus und zieht den Gnoll-Anführer ins Feuer. Nach Sanges Verwandlung spricht sie ihn einfühlsam an und bietet ihre Unterstützung an. Sie hat sich von anfänglicher Ängstlichkeit zu einer selbstbewussten Kämpferin entwickelt.
 
 ## Belege
-
-[1] Session 2026-06-04 @ 00:06:41 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
-[2] Session 2026-07-10 @ 00:07:45 (https://www.youtube.com/watch?v=H-eHSlfxUAg)
+[1] Session 2026-06-04 @ 00:06:41 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)  
+[2] Session 2026-07-10 @ 00:07:45 (https://www.youtube.com/watch?v=H-eHSlfxUAg)  
+[3] Session 2026-07-23 @ 00:56:22 (https://www.youtube.com/watch?v=Gb-TEbCFF0M)

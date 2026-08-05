@@ -10,7 +10,7 @@ id: ITEM_SCHRIFTROLLE_MIT_TOTEN_SPRECHEN
 subtype: Schriftstück
 ---
 
-Eine magische Schriftrolle, die auf eine Leiche fiel und es erlaubt, mit einem Verstorbenen zu kommunizieren. Sie wurde genutzt, um eine tote Kriegerin über den Untotenangriff und den schwarzen Ritter zu befragen, bevor ihre Macht erlosch.
+Eine magische [Schriftrolle](/items/schriftrolle.md), die auf eine Leiche fiel und es erlaubt, mit einem Verstorbenen zu kommunizieren. Sie wurde genutzt, um eine tote Kriegerin über den Untotenangriff und den schwarzen Ritter zu befragen, bevor ihre Macht erlosch.
 
 # Belege
 

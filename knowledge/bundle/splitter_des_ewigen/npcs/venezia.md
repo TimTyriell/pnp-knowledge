@@ -9,7 +9,7 @@ timestamp: '2025-04-30T00:00:00Z'
 id: NPC_VENEZIA
 ---
 
-Eine weitere Empfangsdame in der ersten Taverne, die die Gruppe die Treppe hinunter zur eigentlichen Schänke schickt, als [Esterossa](/characters/esterossa.md) nach der Taverne fragt. Sie wird nur kurz erwähnt.
+Eine weitere Empfangsdame in der ersten [Taverne](/locations/taverne.md), die die Gruppe die Treppe hinunter zur eigentlichen Schänke schickt, als [Esterossa](/characters/esterossa.md) nach der Taverne fragt. Sie wird nur kurz erwähnt.
 
 # Belege
 

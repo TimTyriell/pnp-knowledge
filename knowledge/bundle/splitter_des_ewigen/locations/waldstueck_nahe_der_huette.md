@@ -10,7 +10,7 @@ id: LOC_WALDSTUECK_NAHE_DER_HUETTE
 subtype: Wildnis
 ---
 
-Das verschneite Waldgebiet, in dem die Patrouillen stattfinden. Es ist still und fast tierleer, bietet aber Deckung zwischen den Bäumen. Hier finden sie die Statue, kämpfen gegen [Untote](/factions/belorus_untotenarmee.md), bergen die Schriftrolle und werden vom [Seelenkalb](/npcs/seelenkalb.md) angegriffen.
+Das verschneite Waldgebiet, in dem die Patrouillen stattfinden. Es ist still und fast tierleer, bietet aber Deckung zwischen den Bäumen. Hier finden sie die Statue, kämpfen gegen [Untote](/factions/belorus_untotenarmee.md), bergen die [Schriftrolle](/items/schriftrolle.md) und werden vom [Seelenkalb](/npcs/seelenkalb.md) angegriffen.
 
 # Belege
 

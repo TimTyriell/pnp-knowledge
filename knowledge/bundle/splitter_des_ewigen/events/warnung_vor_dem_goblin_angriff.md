@@ -10,7 +10,7 @@ id: EVENT_WARNUNG_VOR_DEM_GOBLIN_ANGRIFF
 subtype: Sonstiges
 ---
 
-[Valeria](/characters/valeria.md) und [Rotunas](/characters/rotunas.md) berichten in [Brechka](/locations/breska.md) mehrfach (bei [Leandras](/npcs/lendras.md), [Berthold](/npcs/berthold.md), in der Taverne und bei den Bauern) von dem bevorstehenden Goblin-Angriff, den die [Gilde](/factions/gilde_von_ehrenfels.md) aufgedeckt hat. Sie überzeugen die meisten Dorfbewohner, die Verteidigung zu organisieren.
+[Valeria](/characters/valeria.md) und [Rotunas](/characters/rotunas.md) berichten in [Brechka](/locations/breska.md) mehrfach (bei [Leandras](/npcs/lendras.md), [Berthold](/npcs/berthold.md), in der [Taverne](/locations/taverne.md) und bei den Bauern) von dem bevorstehenden Goblin-Angriff, den die [Gilde](/factions/gilde_von_ehrenfels.md) aufgedeckt hat. Sie überzeugen die meisten Dorfbewohner, die Verteidigung zu organisieren.
 
 # Belege
 

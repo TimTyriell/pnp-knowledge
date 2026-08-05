@@ -1,5 +1,14 @@
 # Update Log
 
+## 2026-08-04
+* **Session**: [Daggerheart - DSdE | Season 1 Folge 2 | Team A](/sessions/2026-08-04.md)
+
+## 2026-07-29
+* **Session**: [Daggerheart - DSdE | Season 1 Folge 1 | Team A](/sessions/2026-07-29.md)
+
+## 2026-07-23
+* **Session**: [Daggerheart - DSdE | Season 1 Folge 2 | Team B](/sessions/2026-07-23.md)
+
 ## 2026-07-21
 * **Session**: [LIVE PLAY🔴 - Daggerheart 🎲](/sessions/2026-07-21.md)
 

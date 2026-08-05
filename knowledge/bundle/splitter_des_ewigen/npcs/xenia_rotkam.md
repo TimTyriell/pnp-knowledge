@@ -9,7 +9,7 @@ timestamp: '2026-06-04T00:00:00Z'
 id: NPC_XENIA_ROTKAM
 ---
 
-Eine Infernis-Wirtin der Taverne in [Kleinringtal](/locations/ringtal.md). Sie gewährt der Gruppe eine Gratisübernachtung wegen ihrer Hilfe für die Flüchtlinge. Sie reagiert distanziert auf [Saris](/characters/saris.md)' Annäherungsversuche, aber er zeichnet später ein Porträt von ihr. Sie ist eine Anhängerin Jorans? (sieht man an ihrer Reaktion auf die Totenschädel).
+Eine Infernis-Wirtin der [Taverne](/locations/taverne.md) in [Kleinringtal](/locations/ringtal.md). Sie gewährt der Gruppe eine Gratisübernachtung wegen ihrer Hilfe für die Flüchtlinge. Sie reagiert distanziert auf [Saris](/characters/saris.md)' Annäherungsversuche, aber er zeichnet später ein Porträt von ihr. Sie ist eine Anhängerin Jorans? (sieht man an ihrer Reaktion auf die Totenschädel).
 
 # Belege
 

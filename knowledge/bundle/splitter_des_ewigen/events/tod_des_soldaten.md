@@ -10,7 +10,7 @@ id: EVENT_TOD_DES_SOLDATEN
 subtype: Tod
 ---
 
-Nachdem er versucht hat, mit der Schriftrolle zu fliehen, stirbt der Soldat endgültig, während er enthüllt, dass die Rolle nicht nach [Willauch](/locations/willauch.md) darf.
+Nachdem er versucht hat, mit der [Schriftrolle](/items/schriftrolle.md) zu fliehen, stirbt der Soldat endgültig, während er enthüllt, dass die Rolle nicht nach [Willauch](/locations/willauch.md) darf.
 
 # Belege
 

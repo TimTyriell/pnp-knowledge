@@ -10,7 +10,7 @@ id: ITEM_HALSBAND_MIT_BOTSCHAFT
 subtype: Schriftstück
 ---
 
-Ein Halsband, das nach dem Tod des Monsters an dessen Tentakel gefunden wird. Es trägt eine Markierung und eine daran befestigte Schriftrolle mit einer Botschaft, die von einer nahen Ortschaft stammt und darauf hindeutet, dass das Monster jemandes Haustier war. Die Gruppe nimmt die Botschaft mit, um der Spur später zu folgen.
+Ein Halsband, das nach dem Tod des Monsters an dessen Tentakel gefunden wird. Es trägt eine Markierung und eine daran befestigte [Schriftrolle](/items/schriftrolle.md) mit einer Botschaft, die von einer nahen Ortschaft stammt und darauf hindeutet, dass das Monster jemandes Haustier war. Die Gruppe nimmt die Botschaft mit, um der Spur später zu folgen.
 
 # Belege
 

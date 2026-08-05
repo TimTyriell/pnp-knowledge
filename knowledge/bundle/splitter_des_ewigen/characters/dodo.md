@@ -1,104 +1,70 @@
 ---
 type: Character
 title: Dodo
-description: Dodo ist ein schwer gepanzerter Frontkämpfer und der unerschütterliche
-  Tank der Gruppe. Er ist ein drachblütiger Goblin (halb Drache, halb…
+description: Dodo ist ein drachblütiger Goblin und der zähe, unerschütterliche Frontkämpfer
+  der Heldengilde Ehrenfels. In einer Welt voller Götter, Dämo…
 tags:
 - characters
-timestamp: '2026-07-21T00:00:00Z'
+timestamp: '2026-08-04T00:00:00Z'
 id: CHAR_DODO
 status: disputed
 ---
 
 ## Überblick
 
-Dodo ist ein schwer gepanzerter Frontkämpfer und der unerschütterliche Tank der Gruppe. Er ist ein drachblütiger Goblin (halb Drache, halb Goblin) von der Insel Tarkia [6, 25]. Sein bevorzugter Kampfstil ist der Einsatz von Schild und schwerer Nahkampfwaffe, wobei er sich immer wieder schützend vor seine Gefährten wirft und massiven Schaden absorbiert. Sein Markenzeichen ist sein Feueratem, den er im Kampf sowohl als Kegelangriff als auch gezielt im Nahkampf einsetzt. Bekannt ist er unter dem Beinamen „der Trollschlechter“ [23].
-
-Ursprünglich führte Dodo ein Breitschwert, kaufte sich später einen Streitkolben und führt inzwischen **Zebros Zorn** – einen heiligen Streitkolben, den er in der Festung Zebras aus einem Spiegel zog und der ursprünglich von Cepros stammt. Er ist Mitglied der Gilde und genießt durch seine Arena-Erfolge einen wachsenden Ruf.
+Dodo ist ein drachblütiger Goblin und der zähe, unerschütterliche Frontkämpfer der Heldengilde Ehrenfels. In einer Welt voller Götter, Dämonen und Untoten ist er der Anker der Gruppe: ein schwer gepanzerter Krieger mit Schild und Waffe, dessen oberstes Prinzip der Schutz seiner Freunde ist. Er stellt sich jeder Gefahr als Erster entgegen, absorbiert mit seiner Rüstung und seinem Schild gewaltige Treffer und spuckt Feuer auf alles, was seinen Gefährten droht. Seine Taten in der Arena von Breska brachten ihm den Beinamen „der Trollschlechter“ ein, unter dem er weithin bekannt und respektiert wird. Trotz seiner oft grimmigen Erscheinung ist er ein loyaler und emotionaler Gefährte, dessen Verbundenheit zu seinen Freunden sich nicht nur im Kampf, sondern auch in kleinen Gesten zeigt – etwa, indem er ihre Namen in seinen Schild brennt.
 
 ## Rolle in der Kampagne
 
-Dodo fungiert als klassischer Tank und Bodyguard der Gruppe. Er stellt sich Gegnern als Erstes entgegen, absorbiert Treffer mit seinem Schild und seiner schweren Rüstung und nutzt seine Fähigkeit „Unstoppable“, um physischen Schaden zu halbieren [1, 4, 6]. Wenn Gefährten angegriffen werden, wirft er sich mit seiner Reaktion dazwischen und nimmt den Schaden auf sich [6, 8, 40].
-
-Daneben ist er der moralische Anker der Gruppe. Er zeigt Mitgefühl mit Verbündeten und selbst mit Gegnern [9], versucht zu verhandeln, bevor er kämpft [19, 43], und drängt seine Gefährten zu besonnenem Handeln. In entscheidenden Momenten packt er Lindo Laut körperlich, um ihn von unüberlegten Aktionen abzuhalten [16, 30].
-
-Gleichzeitig ist er für impulsive Aktionen bekannt – so löst er durch unbedachtes Handeln mit einem schwarzen Palantir eine Katastrophe aus [10] und zerstört einen Ring, was den Tod eines Seraphen einleitet [42].
-
-Trotz seiner kämpferischen Stärke ist er mit übernatürlichen und göttlichen Phänomenen zunehmend überfordert und verlässt sich hier auf das Urteil seiner Gefährten, besonders auf [Lunara Velora](/characters/lunara_velora.md) [45, 46].
+Dodo fungiert als der klassische Tank und Bodyguard der Gruppe. In nahezu jeder Kampfbegegnung stellt er sich zwischen die Gegner und die verletzlicheren Mitglieder, insbesondere [Cookie](/characters/cookie.md) und [Lindo Laut](/characters/lindo_laut.md). Seine passive Schadensreduktion von 9 und die Fähigkeit, mit seiner Reaktion Schaden für andere zu absorbieren, machen ihn zum Fels in der Brandung [1][6]. Er beschützt [Esterossa](/characters/esterossa.md) [1], [Lindo Laut](/characters/lindo_laut.md) [6], [Cookie](/characters/cookie.md) [8], [Rotunas](/characters/rotunas.md) [7] und viele andere. Seine Rolle geht jedoch über den Kampf hinaus: Er ist ein moralischer Kompass, der [Lindo Laut](/characters/lindo_laut.md) körperlich und emotional im Zaum hält [16], und ein Ermutiger, der Hoffnungspunkte weitergibt und seine Gefährten mit Komplimenten motiviert [3][6].
 
 ## Wichtige Merkmale
 
-### Kampfstil und Ausrüstung
+### Fähigkeiten
 
-- **Schild und schwere Rüstung**: Dodo trägt eine Vollplatte, deren Innenseite mit Fell ausgepolstert ist [5], und einen großen Schild, in den er die Namen seiner Freunde gebrannt hat [38]. Seine passive Schadensreduktion macht ihn extrem widerstandsfähig [1].
-- **Waffenentwicklung**: Zunächst führte er ein Breitschwert, dann einen Streitkolben. Seine aktuelle Hauptwaffe ist der heilige Streitkolben **Zebros Zorn**, gezogen aus einem Spiegel in der Festung Zebras, ursprünglich von Cepros stammend [29].
-- **Fähigkeit: Unstoppable**: Aktiviert diesen Modus, um physischen Schaden zu halbieren [4, 6].
-- **Fähigkeit: Bodyguard**: Kann sich als Reaktion vor einen angegriffenen Verbündeten werfen und den Schaden absorbieren [6, 8, 40].
-- **Feueratem (Elemental Breath)**: Setzt ihn als Kegelangriff, im Nahkampf als breite Feuerwand oder gezielt ein [7, 21, 27, 43]. Wirksam gegen Untote, Pilzgoblins, Spinnweben und Spinnenbrut [8, 9, 23].
-- **Rüstungsslots**: Opfert regelmäßig Rüstungsslots, um schweren Schaden abzumildern [5, 6, 8].
-- **Hope-Punkte**: Gibt sie an Verbündete weiter, um sie zu unterstützen und zu motivieren [3, 6].
+- **Feueratem (Elemental Breath):** Dodo kann einen Kegel oder eine breite Flammenwand speien [12][30]. Er setzt den Atem sowohl gegen einzelne Ziele wie die Augen der Bestie [7] als auch gegen Horden von Skeletten [30] oder Pilzgoblins [9] ein. Im Magen des Seelenkalbs entfesselt er einen 360-Grad-Feueratem und vernichtet sechs Skelette auf einmal [27].
+- **Unstoppable:** Seine zentrale Verteidigungsfähigkeit, die eingehenden physischen Schaden halbiert [4].
+- **Schild & Rüstung:** Sein Schild ist eine Verlängerung seines Willens. Er blockt Pfeile für [Esterossa](/characters/esterossa.md) [1], Bolzen für die Gruppe [2] und sogar den konzentrierten Hieb eines Ettins, wobei er doppelten Schaden (47 Punkte) auf sich nimmt, um Lunara zu schützen [40]. Dodos Rüstungsslots dienen als zusätzliche Schadenspuffer [5][6][8].
+- **Goblin-Schatten:** Eine mysteriöse Fähigkeit, die es ihm erlaubt, Schaden zu reduzieren [29], einen Schattengoblin zur Ablenkung einzusetzen [23] und sogar magische Feuerwände zu blocken, wobei der Schatten dabei verbrennt [44].
+- **Rüstzeug:** Über die Zeit wechselte Dodo von einem Breitschwert zu einem Streitkolben. In der Festung Zebras zog er eine heilige Waffe aus einem Spiegel – „Zebros Zorn“, einen leuchtenden, von Cepros stammenden Streitkolben [18][29][35]. Er führt zudem einen Dolchaufsatz, den er selbst in der Schmiede mit heiligem Öl weihte [24].
 
-### Fähigkeiten außerhalb des Kampfes
+### Auftreten
 
-- **Handwerkliches Geschick**: Repariert regelmäßig Schild und Rüstung [8, 43]. In der Schmiede fertigt er mit einer Zwergenanleitung einen Dolchaufsatz für seinen Kolben und tränkt ihn in heiligem Öl [24].
-- **Klettergeschick**: Als Klippengeborener hat er trotz schwerer Rüstung Vorteile bei Agility-Würfen in felsigem Gelände [4].
-- **Einschüchterung**: Versucht mehrfach, Gegner durch bedrohliches Auftreten – einschließlich Flammenaustoß aus Augen und Nase – einzuschüchtern, mit wechselndem Erfolg [2, 5, 12, 40].
+Dodo ist von kompakter, stämmiger Statur und trägt eine schwere Vollplatte, deren Inneres mit Fell ausgekleidet ist [5]. Seine Schuppenhaut und sein stets getragener Schild machen ihn zu einer unverwechselbaren Erscheinung. Nach Schlachten ist seine Rüstung oft ramponiert und sein Schild gezeichnet, doch seine Haut und Schuppen regenerieren sich unter [Esterossas](/characters/esterossa.md) Fürsorge und mit Heiltränken [43]. Sein Gesichtsausdruck ist meist grimmig konzentriert, Müdigkeit und Schlafentzug sind ihm in den Augen abzulesen [43]. Dennoch kann er furchteinflößend wirken – er lässt gezielt Flammen aus Augen und Nase schießen, um Gegner einzuschüchtern [40]. Sein Schild trägt eingebrannt die Namen seiner Freunde, und um den Hals trägt er eine Steinfigur von [Lindo Laut](/characters/lindo_laut.md) als Amulett [38].
 
-### Auftreten und Wesenszüge
+### Wesenszüge
 
-- **Loyal**: Stellt seine Freunde und Familie über alles. Will keine starke Bindung zu Göttern eingehen, sondern nur seine Lieben beschützen [32].
-- **Mutig und aufopferungsvoll**: Wirft sich ohne Zögern in Gefahr, um andere zu schützen [4, 24, 40].
-- **Stolz auf seine Herkunft**: Reagiert emotional auf einen aufgespießten Goblin aus seiner Heimat [17].
-- **Misstrauisch gegenüber Göttern und Magie**: Hat mit alten Göttern schlechte Erfahrungen gemacht, mit neuen Göttern etwas bessere, bleibt aber insgesamt distanziert [32].
-- **Manchmal unbedacht**: Hält ohne nachzudenken den schwarzen Palantir an das verbotene Buch und löst eine Katastrophe aus [10]. Entzündet Schädel, was unbeabsichtigt die Regeneration eines Gegners fördert [39].
-- **Fürsorglich**: Brennt einem verwundeten Gefährten mit einer Fackel die Wunde aus, um Gift zu neutralisieren [4]. Bietet seinen Premium-Schlafsack an [25] und fragt „Meld dich, wenn du was brauchst“ [44].
+Dodos Loyalität kennt kaum Grenzen. Er beschwört gegenüber [Esterossa](/characters/esterossa.md) „brüderliche Treue“ [31] und betont, dass für ihn die Sicherheit von [Lindo Laut](/characters/lindo_laut.md) oberste Priorität habe – und dass er Plan und Leben seines Freundes notfalls mit Gewalt bewahren würde [32][37]. Er vertraut Lunara bedingungslos und folgt ihr wie ein treuer Söldner [40][42]. Sein Kampfstil ist von einem starken Gerechtigkeitsempfinden geprägt: Das Töten eines Wehrlosen wie Dormak widerstrebt ihm zutiefst [38]. Er ist handwerklich begabt und in der Schmiede versiert [24]. Ein Unbehagen gegenüber Magie und Göttern ist ihm eigen; er bekennt, „keine starke Bindung zu den Göttern“ zu haben, aber seine Freunde und Familie beschützen zu wollen [32].
 
 ## Beziehungen und Verbindungen
 
-### Gruppe
-
-- **[Esterossa](/characters/esterossa.md)**: Kampfgefährte und Bruder. Kämpfen oft Seite an Seite, Esterossa heilt ihn mehrfach. Dodo schwört ihm brüderliche Treue [31]. Beim Abschied vom sterbenden Esterossa verspricht er, ihn nie zu vergessen und immer ein Bier für ihn zu trinken [46].
-- **[Lindo Laut](/characters/lindo_laut.md)**: Dodo gibt ihm Hope-Punkte, lobt ihn und hält ihn in kritischen Momenten körperlich zurück, um unüberlegte Handlungen zu verhindern [6, 16, 30]. Er trägt eine Steinfigur von Lindo als Amulett bei sich [38]. Seine oberste Priorität ist Lindos Sicherheit [37].
-- **[Cookie](/characters/cookie.md)**: Fungiert oft als ihr Bodyguard, schützt sie im Kampf, wirft sich dazwischen und gibt ihr Heiltränke [5, 8, 23]. Nach ihrem Tod betrauert er sie tief [26]. Er überreicht später ihren Stein an Lunara [26].
-- **[Rotunas](/characters/rotunas.md)**: Brennt dessen vergiftete Wunde aus [4]. Stützt ihn nach anstrengenden Aktionen [27]. Reist gemeinsam mit ihm in den Abyssalis [41].
-- **[Lunara Velora](/characters/lunara_velora.md)**: Vertraut ihr zunehmend und folgt ihren Entscheidungen, obwohl er die göttlich-magische Welt nicht versteht [42, 45]. Tauscht mit ihr vertrauliche Informationen aus – etwa über den geretteten Strixwolf Inaros [37]. Sie hat ein Raben-Tattoo, dessen Bedeutung Dodo kennt [37].
-- **[Nyrella](/characters/nyrella.md)**: Informiert sie über Cookies Tod [26].
-
-### Außenwelt
-
-- **Mil**: Ist von ihr beeindruckt und erwägt ernsthaft ihr einjähriges Trainingsangebot, würde dann aber für ein Jahr aus der Gruppe ausscheiden [22].
-- **Roland**: Warnt ihn vor drohender Gefahr und drängt auf ein sicheres Treffen in zehn Tagen [19].
-- **Sys Fizik**: Ein Goblin, der Dodos „Fährtenverwandtschaft“ riecht und ihm vertraut [34].
-- **Inaros**: Ein Strixwolf, den Dodo und Lunara gerettet haben und der nun in Ehrenfels versteckt ist [37].
-- **Luli**: Zeigt Mitgefühl mit ihr [9].
+- **[Esterossa](/characters/esterossa.md):** Dodos beständigster Kampfgefährte. Gemeinsam gehen sie als Frontlinie voran, [Esterossa](/characters/esterossa.md) heilt ihn und Dodo beschützt ihn. [Esterossa](/characters/esterossa.md) lehrte ihn den Götterglauben von Korn [32], und Dodo versprach, für ihn immer ein Bier zu trinken [46].
+- **[Lindo Laut](/characters/lindo_laut.md):** Ein tiefer Bruderbund. Dodo schenkt ihm Hoffnungspunkte, hält ihn physisch zurück, als Dormak ihn verführen will [16], und packt ihn blitzschnell, als Slicks ihn gegen Belorus aufhetzt [30]. Er gab ihm seinen Premium-Schlafsack [25].
+- **[Cookie](/characters/cookie.md):** Dodo fungiert als ihr persönlicher Bodyguard und wird nicht müde, sich schützend vor sie zu werfen [5][8]. Ihr Tod trifft ihn schwer [26].
+- **Lunara:** Die Beziehung intensiviert sich im Verlauf des Abenteuers. Dodo beweist ihr gegenüber absolutes Vertrauen [40][42], auch wenn er später in der Entscheidungsschlacht gegen ihre Pläne Stellung bezieht, weil er ihre Motive für falsch hält [45].
+- **[Rotunas](/characters/rotunas.md):** Kamerad, den er rettet [7][18] und ermahnt. Von Rotunas erhält er magische Buffs [20] und Heilung [29]. Dodo zeigt an dessen Statue in Ehrenfels tiefe Reue über sein Unvermögen, ihn zu beschützen [47].
+- **Nerash:** Erhält von Nerash ein Totem [12] und verhandelt später mit seinem Abgesandten Vitius [48].
+- **Inaros, der Strixwolf:** Von Dodo und Lunara gerettet und heimlich in Ehrenfels untergebracht [37][47].
+- **Reputation:** Als Champion der Arena und Trollschlechter genießt Dodo in Breska und darüber hinaus hohes Ansehen [19][22][23][34].
 
 ## Chronologie
 
-**Sessions 1–7 (Etablierung als Tank)**: Dodo erweist sich von Beginn an als unverwüstlicher Frontkämpfer. Er schützt Esterossa, Cookie und Lindo Laut, tötet Goblins und Gnolle und übersteht Angriffe dank seiner hohen Schadensreduktion. Er kommuniziert kurzzeitig mit Perry dank eines magischen Steins [1]. Beim Angriff auf Lendras Haus wird er von der rabenartigen Kreatur verletzt [3]. Er seilt sich über eine Schlucht ab, kämpft gegen einen Gnoll und brennt Rotunas‘ vergiftete Wunde aus [4]. In der Konfrontation mit Belorus wird er geschrumpft, kämpft dann gegen zahlreiche Untote und opfert Rüstungsslots [5]. Er gibt Lindo drei Hoffnungspunkte für einen mächtigen Zauber [6]. In den Katakomben rettet er Rotunas, zerschmettert den eingefrorenen Kopf einer Bestie und stellt am Schlangenschrein die entscheidende Frage nach der Hack [7].
+Dodos Laufbahn beginnt als zäher Stalwart, der sich in den ersten Kämpfen als unverwüstlicher Tank beweist [1]. Früh etabliert sich sein Beschützerinstinkt, als er [Esterossa](/characters/esterossa.md) im Gefecht gegen Goblins den Rücken freihält [3]. Unter dem Einfluss von [Cookies](/characters/cookie.md) magischem Stein kommuniziert er mit ihrem Begleiter Perry [1].
 
-**Sessions 8–14 (Kampf und Verlust)**: Er repariert seine Ausrüstung, findet einen arkanen Umhang und schützt Cookie mehrfach [8]. In der Seelennetzhalle betet er demütig zur Schlangengottheit, woraufhin ein Teil der Seelennetze zu Asche zerfällt – ein Akt, den er als Befreiung interpretiert. Er findet den schwarzen Palantir und belauscht mit Lindo die Hexe [9]. In der Prüfung hält er den schwarzen Palantir an das Buch und löst so eine Katastrophe aus [10]. Er schlägt vor, nur die Kette über Nerashs Mund zu zerstören [11]. Im Kampf gegen Assassinen zerschmettert er einen im Sturzflug und verbrennt zwei weitere [12]. Ein entspannter Tavernenabend folgt [13]. Er leidet unter der Hoffnungslosigkeit, die vom Hassgeist ausgeht, und kämpft gegen Ghule [14].
+In der Festung Zebras opfert er Rüstungsslots und besiegt Untote, bevor er mit der Gruppe gegen übermächtige Gegner wie Lanra (die ihn auf Miniaturgröße schrumpft) [2] und den Verräter Lendras [3] kämpft. Er seilt sich als Klippengeborener über eine Schlucht ab und rettet [Rotunas](/characters/rotunas.md) das Leben, indem er dessen vergiftete Wunde mit einer Fackel ausbrennt [4]. Seine Begeisterung für den Kampf steigt, und er stellt sich einem Gnoll und einem großen Gegner, unterstützt durch einen Ritter [4].
 
-**Sessions 15–20 (Versteinerung, Ruhm und neue Waffe)**: Dodo wird von Kultisten versteinert, weil er nicht das erwartete Codewort nennt; Lindo greift ein [15]. Noch teilweise versteinert, hält er Lindo während der Verhandlung mit Dormak zurück [16]. Ein aufgespießter Goblin aus seiner Heimat verursacht ihm einen Stresspunkt; er weigert sich standhaft, den Seelenknechtschaftsvertrag zu unterschreiben [17]. Er erhält Zebros Zorn, seinen heiligen Streitkolben [18]. In Bresca wird er als Arena-Champion erkannt und verhandelt mit Gorak und den Flüchtlingen [19]. Im Kampf gegen Untote erhält er einen Stärke-Buff [20].
+Ein Wendepunkt ist die Begegnung mit Belorus, wo er versucht, den Todesritter einzuschüchtern – und scheitert [5]. Er überlebt einen brutalen Kampf gegen untote Horden und flieht schließlich mit [Cookie](/characters/cookie.md) [5]. In der Arena von Breska erwirbt er den Titel „Trollschlechter“ und seinen ersten einfachen Streitkolben – eine Entwicklung, die mit dem Kauf auf Tier 2 einhergeht. Seine wachsende Reputation wird deutlich, als er in Breska sofort erkannt und mit Respekt behandelt wird [19].
 
-**Sessions 21–28 (Arena, Verluste und neue Gefährten)**: Dodo setzt Feueratem im Nahkampf gegen Skelette ein und wird von einem grünen Blitz schwer getroffen [21]. In Willau erwägt er Mils Trainingsangebot und tritt im Monsterkampf auf Tier 3 an [22]. Als „Trollschlechter“ erzielt er im Arenakampf gegen den Werwolf den Todesstoß, schützt Cookie vor der Phasenspinne und vernichtet die Spinnenbrut mit Feueratem [23]. In der Schmiede fertigt er einen geweihten Dolchaufsatz und tötet mit der brennenden Waffe eine Kreatur [24]. Er sucht nach seinem Freund Krenko und untersucht einen brummenden Altar, der bei Berührung Blitze auslöst [25]. Er betrauert Cookies Tod, lädt Lunara in die Gruppe ein und überreicht ihr Cookies Stein [26]. Er wird von einem Splitterwesen verschlungen und kämpft sich mit Heilung und Feueratem frei [27]. Er zerstört einen grünen Kristall in einer Statue und erhält eine Vision, wird später von einem Seelenkalb verschlungen [28].
+In der Seelenwacht-Session erreicht Dodo einen spirituellen Höhepunkt: Er betet vor der Schlangengottheit, woraufhin ein Teil der Seelennetze zu Asche zerfällt – ein Akt, den er als Befreiung interpretiert [9]. Er findet einen schwarzen Palantir [9] und löst unwissentlich eine Katastrophe aus, indem er den Palantir an ein verbotenes Buch hält [10].
 
-**Sessions 29–34 (Konfrontationen und Enthüllungen)**: Dodo liest einen Brief von Belorus, erkennt das Siegel und den grünen Seelenstein. Im Kampf gegen den Dreadknight nutzt er einen mysteriösen Goblin-Schatten zur Schadensreduktion und enthauptet den Ritter schließlich mit Zebros Zorn [29]. Er übernimmt die Rolle des Taktikers in der Verteidigung und verhindert, dass Lindo unter Slicks‘ Einfluss Belorus angreift [30]. Er öffnet die Grufttüre, wird von einer Gaswolke und einer betäubenden Pflanzenwolke getroffen und greift den verwandelten Lindo mit seinem heiligen Streitkolben an [31]. Er ist misstrauisch gegenüber Slicks und prüft instinktiv, ob seine Waffen ihm eine Verbindung zu einem legendären Schwert geben könnten [32]. Er besorgt Gegengifte und eine Armbrust für Lindo, entdeckt die Mimik und täuscht Banditen mit einer glaubhaften Geschichte [33]. In der Bibliothek sucht er nach Schutz gegen Magie und findet ein Buch über obsidianartiges Material [34].
-
-**Sessions 35–39 (Breska, Vampirfürst und Abyssalis)**: Dodo wird vom Wächter der Gildenhalle als einziges altes Mitglied erkannt und allein zu Voras gelassen. In der Konfrontation mit dem Vampirfürsten verhandelt er ruhig und führt im Kampf in der Splitterwelt den finalen Schlag auf den Schädel des Monsters aus [35]. Nach einem emotionalen Gespräch mit Lindo ist er still und nachdenklich [36]. Er offenbart die Rettung des Strixwolfs Inaros und betont, dass Lindos Sicherheit oberste Priorität hat [37]. Im Kampf gegen Dormak tötet er den Dämon mit Zebros Zorn, obwohl er das Töten Wehrloser verabscheut. In Abyssalis hält er sich zurück und folgt Lunaras Führung [38]. In einem Ritualraum entzündet er Schädel und wird selbst von einer Kreatur umhüllt, ruft dann zur Zerstörung der Ritualadern auf [39].
-
-**Sessions 40–46 (Abyssalis, Narbe und Finale)**: Dodo leidet unter Albträumen und wirft sich schützend vor Lunara, wobei er 47 Schadenspunkte absorbiert [40]. Er reist mit Rotunas, Esterossa und Lunara in den Abyssalis und bemerkt ein ungewöhnliches Symbol [41]. Im Kampf gegen den Seraphen zerstört er auf Anraten den Ring, was den Tod des Seraphen einleitet, und öffnet sich Lunara gegenüber [42]. Als Richborn mit Schuppen steigt er zur Narbe auf, renkt sich die Schulter ein und kämpft mit Feueratem und Streitkolben gegen Kobolde, Goblins und einen Seraphen [43]. Nach Lunaras Explosion empfängt er Lindo mit einer schweigenden Umarmung und zeigt Fürsorge für Lunara [44]. In der Endphase fühlt er sich von Magie überfordert und stellt sich in der Entscheidungsschlacht auf die Seite von Lindo und Esterossa, weil er glaubt, Lunara sei durch den Wunsch nach Nekromantie für ihren Bruder geblendet [45]. In den letzten Kämpfen stößt er einen Leibgardisten in den Abgrund, widersteht den Kontrollfäden des Hybris-Dämons und zerschlägt eine Statue, um die Verbindung zu Ultanar zu kappen. Am sterbenden Esterossa verspricht er, ihn nie zu vergessen [46].
+Ein schwerer Einschnitt ist die Versteinerung durch Kultisten, nachdem er das erwartete Codewort nicht nennt; erst [Lindo Laut](/characters/lindo_laut.md) greift ein [15]. Später wird er in den Abyssalis gerufen. Die Reise durch die dämonische Splitterwelt führt ihn an seine emotionalen Grenzen: Er sieht einen Goblin aus seiner Heimat aufgespießt und verweigert standhaft den Seelenknechtschaftsvertrag eines Ratten-Dämons [17]. Nach [Cookies](/characters/cookie.md) Tod informiert er [Nyrella](/characters/nyrella.md) und unternimmt mit der Gruppe den Marsch in die Splitterwelt. In Zebras’ Festung gelingt der entscheidende Fund: Aus einem Spiegel zieht er „Zebros Zorn“, den heiligen Streitkolben von Cepros [18]. In der Endphase des Angriffs auf die Festung eilt er zur sterbenden Lunara, wirft sich im Kampf gegen einen Seraphen schützend vor sie und zerstört dessen Ring mit einem Kolbenschlag [42]. Er durchlebt den Höhepunkt des Konflikts um die Seelen seiner Freunde, als er sich in der Entscheidungsschlacht gegen Lunaras Pläne und auf die Seite von [Lindo Laut](/characters/lindo_laut.md) und [Esterossa](/characters/esterossa.md) stellt [45]. Zurück in der Heimat begegnet er dem Verlust von [Rotunas](/characters/rotunas.md) mit tiefer Reue [47] und beobachtet die Huldigung der Gruppe durch die Stadt mit Skepsis [47].
 
 ## Offene Fragen
 
-- **Herkunft**: Dodos genaue Geschichte vor der Kampagne ist nur bruchstückhaft bekannt. Er stammt von der Insel Tarkia, sucht nach seinem Freund Krenko, und ein Massaker an seiner Familie liegt in seiner Vergangenheit [24, 25]. Details zu diesen Ereignissen fehlen.
-- **Arena-Zukunft**: Dodo erwägt ernsthaft Mils einjähriges Trainingsangebot. Es ist unklar, ob er dieses Angebot annehmen wird und welche Konsequenzen dies für die Gruppe hätte [22].
-- **Der mysteriöse Goblin-Schatten**: Im Kampf gegen den Dreadknight nutzt Dodo „einen mysteriösen Goblin-Schatten aus dem Schnee“ zur Schadensreduktion [29]. Die Natur und Herkunft dieser Fähigkeit wurden nicht weiter erklärt.
-- **Verbindung zu den Waffen**: Dodo prüft instinktiv, ob seine Waffen aus Zebros‘ Zeit ihm eine Verbindung zu einem legendären Schwert geben könnten [32]. Das Ergebnis dieser Prüfung und die Natur dieser Verbindung bleiben ungeklärt.
-- **Strixwolf Inaros**: Dodo und Lunara haben den Strixwolf gerettet und in Ehrenfels versteckt. Die weitere Entwicklung dieser Kreatur und ihre Rolle sind offen [37].
-
-## Offene Konflikte
-
-- **Spezies-Widerspruch**: Dodos Spezies wird in den Belegen unterschiedlich beschrieben: als „Stalwart“ [1], „zwergenhafter Krieger“/„Zwergen-Krieger“ [5, 10, 27], „Halb-Drache, halb-Goblin“/„Guardian (Starward)“ [6], „drachblütiger Goblin“/„drachenblütiger Goblin“ [15, 17, 23], „Goblin“ [14, 26], „Richborn (Halb-Goblin) mit Schuppen“ [43] und „Halb-Drakoner-Halb-Goblin“ [28]. Eine eindeutige Klärung seiner Spezies ist aus den Belegen nicht möglich. (Die Entscheidung, dass das Vermissen der „blauen Haut“ ein Domänen-Effekt war, betrifft diesen Widerspruch nicht.)
+- Die genaue Herkunft von Dodos Goblin-Schatten-Fähigkeit bleibt ungeklärt. Es ist nicht bekannt, ob es sich um eine angeborene Gabe, einen erlernten Zauber oder einen Segen handelt.
+- Seine Heimatinsel Tarkia wurde nur flüchtig erwähnt; es ist unklar, was genau ihn von dort vertrieb und ob sein gesuchter Freund Krenko je gefunden wird.
+- Die Bedeutung des Brummens des Altars, das ihn in der Nacht weckte und auf seine Berührung mit Blitzen reagierte, ist nicht abschließend erklärt [25].
+- Welches Schicksal sein Strixwolf Inaros in Ehrenfels erleidet, während er selbst in Abyssalis kämpft, ist ungewiss [47].
 
 ## Belege
 
@@ -148,3 +114,9 @@ Trotz seiner kämpferischen Stärke ist er mit übernatürlichen und göttlichen
 [44] Session 2026-06-10 @ 00:19:35 (https://www.youtube.com/watch?v=_3tLSiT1tck)
 [45] Session 2026-06-16 @ 00:10:09 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
 [46] Session 2026-07-21 @ 00:09:49 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
+[47] Session 2026-07-29 @ 00:06:33 (https://www.youtube.com/watch?v=umGyKLkefJI)
+[48] Session 2026-08-04 @ 00:14:37 (https://www.youtube.com/watch?v=qRj2t3wQHfs)
+
+## Offene Konflikte
+
+- Dodos Abstammung wird in den Quellen inkonsistent beschrieben: Mal wird er als „zwergenhafter Krieger“ [5] oder „Zwergen-Krieger“ [10] bezeichnet, in anderen Sessions explizit als „halb Drache, halb Goblin“ [6] oder „drachenblütiger Goblin“ [15] respektive „drachblütiger Goblin-Geborener“ [18]. Diese widersprüchlichen Aussagen stehen nebeneinander und sind durch die Chronologie nicht auflösbar, da sich keine Metamorphose des Charakters nachweisen lässt.

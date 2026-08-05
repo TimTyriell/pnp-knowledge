@@ -10,7 +10,7 @@ id: EVENT_UEBERFALL_DER_BRABARAND_GILDE
 subtype: Kampf
 ---
 
-Die Assassinen dringen nachts in die Taverne ein, bringen eine Fallen an den Türen an und versuchen, die Helden mit vergifteten Dolchen zu ermorden. Nach heftigen Kämpfen innen und außen sowie der Konfrontation mit einem magischen Kenku werden die Angreifer getötet oder gefangen genommen.
+Die Assassinen dringen nachts in die [Taverne](/locations/taverne.md) ein, bringen eine Fallen an den Türen an und versuchen, die Helden mit vergifteten Dolchen zu ermorden. Nach heftigen Kämpfen innen und außen sowie der Konfrontation mit einem magischen Kenku werden die Angreifer getötet oder gefangen genommen.
 
 # Belege
 

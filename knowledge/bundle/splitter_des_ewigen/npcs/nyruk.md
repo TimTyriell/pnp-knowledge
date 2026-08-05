@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Nyruk
-description: Nyruk ist ein großer Eisbär und der treue tierische Gefährte von Nyrella.
-  Er lebt mit ihr in der Wildnis und begleitet sie auf allen Reisen…
+description: Nyruk ist ein großer Eisbär und der treue tierische Gefährte der Jägerin
+  Nyrella. Er lebt mit ihr in der Wildnis und begleitet sie auf Schr…
 tags:
 - npcs
 timestamp: '2026-03-24T00:00:00Z'
@@ -16,71 +16,53 @@ aliases:
 
 ## Überblick
 
-Nyruk ist ein großer Eisbär und der treue tierische Gefährte von [Nyrella](/characters/nyrella.md). Er lebt mit ihr in der Wildnis und begleitet sie auf allen Reisen und Kämpfen. Sein Name wurde in den Aufzeichnungen unterschiedlich transkribiert („Nairook“, „Nairuk“, „Naeruk“); die verbindliche Schreibweise lautet **Nyruk**. Er ist ein rein irdisches Wesen ohne Flugfähigkeit – frühere Darstellungen, die ihn als Vogel oder fliegend beschrieben, sind inkorrekt.
+Nyruk ist ein großer Eisbär und der treue tierische Gefährte der Jägerin [Nyrella](/characters/nyrella.md). Er lebt mit ihr in der Wildnis und begleitet sie auf Schritt und Tritt – sei es im Kampf, auf Reisen oder in ruhigen Momenten. Nyruk zeigt eine enge, intuitive Bindung zu Nyrella und versteht Kommandos seiner Verbündeten. Sein Verhalten reicht von verspielt-zutraulich bis hin zu entschlossen-beschützend, je nachdem, wie er die Absichten seines Gegenübers einschätzt. Innerhalb der Gruppe ist er als kraftvoller Kämpfer und als emotionales Bindeglied bekannt, das Stimmungen widerspiegelt und Beziehungen unterstreicht.
 
 ## Rolle in der Kampagne
 
-Nyruk dient als Nyrellas primärer Beschützer und Kampfgefährte. Im Gefecht greift er aktiv Gegner an, insbesondere auf direkte Anweisung von Nyrella oder anderen Gruppenmitgliedern wie [Dodo](/characters/dodo.md). Seine bloße Anwesenheit wirkt einschüchternd auf Feinde, und sein Gebrüll warnt die Gruppe vor verborgenen Gegnern. Außerhalb des Kampfes erfüllt er soziale Funktionen: Er bietet den Kindern im Flüchtlingslager Ablenkung als „lebender Rollercoaster“, führt in der Taverne Kunststücke auf und dient als emotionale Stütze für Nyrella, die in seinem Fell schläft. Seine Reaktion auf Fremde kann als Indikator für deren friedliche Absichten dienen – Nyrella nutzt ihre enge Verbindung zu ihm, um einzuschätzen, ob eine Person eine Bedrohung darstellt.
+Nyruk fungiert primär als Nyrellas Beschützer und Kampfpartner. In Gefechten greift er auf Befehl an, zieht die Aufmerksamkeit von Gegnern auf sich und setzt seine gewaltige Körperkraft ein, um Feinde zu vernichten. Außerhalb des Kampfes dient er als eine Art emotionaler Seismograph: Seine Reaktionen auf Personen – ob freudiges Anspringen, argwöhnisches Knurren oder gelassenes Beschnuppern – bestätigen oder hinterfragen deren Absichten. Zudem übernimmt er gelegentlich die Rolle eines lebendigen Spielgeräts, etwa als „lebender Rollercoaster“ für Flüchtlingskinder.
+
+Durch seine Größe wird er in beengten Umgebungen zum Hindernis, was die Gruppe zwingt, ihn zurückzulassen oder gesondert zu versorgen. Seine Anwesenheit bindet Nyrella oft an einen Ort, wenn es gilt, Schutzbedürftige zu bewachen.
 
 ## Wichtige Merkmale
 
-Nyruk ist ein großer Eisbär von massiver Statur. Seine schiere Größe bereitet in engen Räumen Probleme: In einem Fluchttunnel passte er nur knapp durch und benötigte aktive Unterstützung. Er kann nicht fliegen, bewegt sich aber geschickt am Boden und ist in der Lage, komplexe Anweisungen zu verstehen und auszuführen.
+Nyruk ist ein **großer Eisbär** mit entsprechend imposanter Statur. Sein Fell ist so dicht, dass Nyrella darin schlafen kann. Er bewegt sich trotz seiner Größe erstaunlich geschickt, wie sein knappes Passieren eines engen Fluchttunnels zeigt, wobei er allerdings auf die Hilfe seiner Gefährten angewiesen war.
 
-Sein Kräftespektrum umfasst mächtige Prankenhiebe – mit einem einzigen Schlag köpfte er einen bereits angeschlagenen großen Untoten und ließ dessen Körper zu Gebein zerfallen. Nach erfolgreichen Angriffen brüllt er kampflustig, um Aufmerksamkeit auf sich zu ziehen und Feinde von verwundeten Gruppenmitgliedern abzulenken.
-
-Verhaltensmuster:
-- Zeigt überschwängliche Freude bei Wiederbegegnungen, springt an Vertrauten hoch und leckt ihre Gesichter ab
-- Heult in Trauer um verstorbene Gefährten wie Cookie
-- Nimmt bei wahrgenommener Bedrohung eine defensive Haltung ein: Zähne fletschen, Ohren anlegen, stellt sich schützend zwischen Nyrella und potenzielle Gefahren
-- Wird unzufrieden, wenn Nyrella sich von ihm entfernt
-- Lässt sich bereitwillig von als friedlich erkannten Fremden streicheln
+**Fähigkeiten und Verhalten:**
+- **Kampfkraft:** Nyruk schlägt mit seinen Pranken verheerend zu. Ein einzelner Hieb genügt, um einen bereits angeschlagenen großen untoten Tempelritter zu vernichten und das Gebein „samt Rüstung und Waffe in sich zusammenfallen“ zu lassen. Nach solchen Aktionen brüllt er kampflustig, um Aufmerksamkeit auf sich zu ziehen.
+- **Warnsignal:** Entdeckt er Gegner, die Nyrella nicht sieht, stößt er ein lautes Brüllen aus, um die Gruppe zu alarmieren.
+- **Emotionale Intelligenz:** Nyruk reagiert sensibel auf Stimmungen und Beziehungen. Er springt vor Freude an [Esterossa](/characters/esterossa.md) hoch und leckt ihm das Gesicht, heult in Trauer um Cookie, lässt sich von dem Halbling Miyamani auf den Rücken steigen und von Kane streicheln – was dessen friedliche Gesinnung bestätigt.
+- **Schutzinstinkt:** Nach [Lindo](/characters/lindo_laut.md) Lauts Verrat stellt sich Nyruk schützend zwischen Nyrella und die Gruppe, bleckt die Zähne, legt die Ohren an und bleibt stets in Nyrellas unmittelbarer Nähe. Er lässt sie nicht mehr aus den Augen und ist unzufrieden, wenn sie sich entfernt.
+- **Größe als Herausforderung:** In der Silbergruft muss Nyruk aufgrund seiner Größe zurückbleiben. Die Gruppe sichert ihn mit Knochen ab, bevor sie in die Mine vordringt.
 
 ## Beziehungen und Verbindungen
 
-**Zu Nyrella:** Die Bindung zu Nyrella ist tief und symbiotisch. Sie reitet auf seinem Rücken, schläft in seinem Fell und kommuniziert intuitiv mit ihm. Nach bestimmten belastenden Ereignissen blieben sie unzertrennlich – Nyruk wich nicht mehr von ihrer Seite und zeigte deutliches Unbehagen bei jeder Trennung.
-
-**Zur Abenteurergruppe:**
-- [Dodo](/characters/dodo.md): Akzeptiert dessen Kommandos bereitwillig. Dodo lobte ihn nach einem Kampf überschwänglich und umarmte ihn.
-- [Esterossa](/characters/esterossa.md): Mag ihn offensichtlich – springt bei Wiederbegegnungen an ihm hoch und leckt sein Gesicht ab. Als Esterossa auf einen Barhocker stieg, um auf „Augenhöhe“ mit Nyrella zu sein, reagierte er unbeeindruckt.
-- [Rotunas](/characters/rotunas.md): Sieht in ihm einen Kampfgefährten; Nyruk griff auf Dodos Befehl gezielt Gegner an, die Rotunas bedrohten.
-- [Lindo Laut](/characters/lindo_laut.md) und [Lunara Velora](/characters/lunara_velora.md): Nach Lindos Verrat gegenüber Nyrella zeigte Nyruk ihnen gegenüber offenes Misstrauen. Er fletschte bei ihrem Anblick die Zähne, legte die Ohren an und blieb in Verteidigungshaltung. Selbst als die Situation sich entspannt hatte, blieb eine spürbare Distanz.
-- Zu Kane: Ließ sich ohne Anzeichen von Bedrohung streicheln, was Nyrella als Bestätigung für Kanes friedliche Absichten interpretierte.
-- Zum Halbling Miyamani (Miauzmani): Lässt sich auf den Rücken steigen und führte mit Nyrella Kunststücke in der Taverne vor.
-
-**Zu Kindern und Flüchtlingen:** Fungierte als „lebender Rollercoaster“ für die Kinder des Lagers und zeigte dabei große Geduld und Sanftmut.
+- **[Nyrella](/characters/nyrella.md):** Die tiefste und engste Bindung. Nyruk ist Nyrellas ständiger Begleiter, trägt sie auf seinem Rücken und schläft bei ihr. In Momenten der Gefahr oder des Misstrauens weicht er nicht von ihrer Seite. Nyrella wiederum vertraut ihm blind und verlässt sich auf seine Instinkte.
+- **[Dodo](/characters/dodo.md):** Dodo hat eine bemerkenswerte Befehlsautorität über Nyruk. Auf Dodos Kommando stürzt sich der Bär auf einen bestimmten Gegner und führt den Befehl präzise aus. Nach dem Kampf lobt Dodo ihn und umarmt ihn. Nyruk scheint Dodos Anweisungen ebenso zuverlässig zu befolgen wie die von Nyrella.
+- **[Esterossa](/characters/esterossa.md):** Nyruk zeigt Esterossa gegenüber große Zuneigung. Beim Wiedersehen in der Taverne stürmt er auf ihn zu, springt ihn an und leckt ihm das Gesicht ab – ein Ausdruck unverhohlener Freude.
+- **Zur restlichen Gruppe:** Das Verhältnis zur Gruppe wandelt sich mit den Ereignissen. Waren die Helden anfangs vertraute Verbündete, so wird Nyruk nach Lindos Verrat misstrauisch und geht in eine verteidigende Haltung, sobald sie sich Nyrella nähern. Nach der Rückkehr aus der Silbergruft beschnuppert er jedoch alle und springt freudig auf Nyrella zu, was auf eine allmähliche Wiederannäherung hindeutet.
+- **Zu Fremden:** Nyruks Reaktion auf Fremde ist ein Indikator für deren Absichten. Als Kane den Bären streichelt und dieser es gelassen geschehen lässt, erkennt Nyrella über ihre Verbindung zu Nyruk, dass Kane friedliche Absichten hegt und keine Bedrohung darstellt.
 
 ## Chronologie
 
-**Session 1 (2025-07-29):** Nyruk kämpft an Nyrellas Seite gegen Kuatau-Angreifer. Er verfehlt zunächst einen Gegner, warnt die Gruppe aber durch lautes Brüllen vor einem weiteren Kuatau, der sich zwischen Kisten versteckt hält.
-
-**Session 2 (2025-09-09):** Während der Flucht durch einen engen Tunnel muss Nyruk als Bär hindurchgezwängt werden. Der Schwierigkeitsgrad ist hoch (14), und er benötigt Unterstützung, schafft es aber.
-
-**Session 3 (2025-09-23):** Nyrella geht zu Nyruk, um auf die Karawane zu warten. Der verwundete Roland erreicht sie und berichtet vom Angriff auf die Karawane. In dieser Session wurde Nyruk fälschlich als fliegend beschrieben – dies entsprach nicht der Realität. Nyrella schickt ihn mit Roland zurück, während sie die anderen holt.
-
-**Session 4 (2025-09-30):** Im Flüchtlingslager dient Nyruk den Kindern als lebende Achterbahn. Nyrella beobachtet ihn dabei voller Stolz und Nostalgie. Er bleibt mit ihr bei den Flüchtlingen, um über sie zu wachen.
-
-**Session 5 (2025-11-18):** In der Taverne trifft Nyrella mit Nyruk auf die Gruppe. Nyruk stürmt freudig auf Esterossa zu, springt an ihm hoch und leckt sein Gesicht ab. Er heult in Trauer um Cookie. Später führt er mit Nyrella Kunststücke auf und lässt Miyamani auf seinen Rücken steigen. Nyrella schläft in seinem Fell.
-
-**Session 6 (2026-01-20):** Auf Dodos Kommando stürzt Nyruk sich auf einen großen, bereits angeschlagenen Untoten und tötet ihn mit einem mächtigen Prankenhieb. Dodo zeigt auf den Untoten und Nyruk, der die Anweisung gut versteht, attackiert sofort. Nach dem vernichtenden Schlag brüllt er kampflustig in die Runde, um Aufmerksamkeit auf sich zu ziehen. Dodo umarmt ihn nach dem Kampf.
-
-**Session 7 (2026-02-24):** Nyruks Verhalten hat sich verändert. Nach Lindos Verrat ist er misstrauisch gegenüber der Gruppe – speziell Lindo Laut und Lunara Velora. Er fletscht bei ihrem Anblick die Zähne, legt die Ohren an und stellt sich schützend zwischen Nyrella und die anderen. Er weicht nicht mehr von Nyrellas Seite; sie reitet auf seinem Rücken, und jede Trennung macht ihn unzufrieden. Aufgrund seiner Größe muss er vor einer Mine zurückbleiben, wird aber mit Knochen abgesichert. Bei der Rückkehr der Gruppe springt er freudig auf Nyrella zu und beschnuppert alle.
-
-**Sessions 8–9 (2026-03-24):** Nyruk wartet während einer Diskussion am Turm. Kane streichelt ihn, und Nyruk zeigt keinerlei Bedrohungsgefühl – für Nyrella ein klares Zeichen von Kanes friedlicher Gesinnung. Nyruk beschützt die Gruppe weiterhin und bleibt Nyrellas treuer Begleiter.
+- **Kampf gegen die Kuatau (Session 2025-07-29):** Nyruk kämpft an Nyrellas Seite, verfehlt zunächst einen Gegner, warnt die Gruppe aber mit lautem Brüllen vor einem weiteren Kuatau, der sich zwischen Kisten versteckt.
+- **Flucht aus der Gruft (Session 2025-09-09):** Nyruk hilft im Kampf gegen Skelette und einen Minotaurus. Als die Gruppe durch einen engen Fluchttunnel entkommt, passt er nur knapp hindurch und ist auf die Hilfe der Gefährten angewiesen.
+- **Bei den Flüchtlingen (Session 2025-09-30):** Nyruk dient den Kindern im Flüchtlingslager als lebendige Achterbahn. Er bleibt gemeinsam mit Nyrella bei den Flüchtlingen, um über sie zu wachen.
+- **Wiedersehen in der Taverne (Session 2025-11-18):** Nyruk und Nyrella treffen die Gruppe in einer Taverne wieder. Nyruk stürmt auf Esterossa zu, springt an ihm hoch und leckt ihm das Gesicht. Später führt er mit Nyrella Kunststücke auf und lässt sich von einem Halbling auf den Rücken steigen. Nyrella schläft in seinem Fell.
+- **Kampf gegen die untoten Tempelritter (Session 2026-01-20):** Auf Dodos Befehl greift Nyruk einen bereits angeschlagenen großen Untoten an und tötet ihn mit einem einzigen gewaltigen Prankenhieb. Anschließend brüllt er kampflustig, um Aufmerksamkeit zu erregen. Dodo lobt und umarmt ihn nach dem Kampf.
+- **Nach Lindos Verrat und zur Silbergruft (Session 2026-02-24):** Nachdem Nyrella von Lindos Verrat erfahren hat, ist Nyruk äußerst misstrauisch gegenüber der Gruppe. Er bleckt die Zähne, stellt sich schützend zwischen Nyrella und die anderen und weicht nicht von ihrer Seite. In der Silbergruft muss er aufgrund seiner Größe zurückbleiben und wird mit Knochen versorgt. Als die Gruppe zurückkehrt, springt er freudig auf Nyrella zu und beschnuppert alle.
+- **Begegnung mit Kane (Session 2026-03-24):** Während die Gruppe auf einem Turm diskutiert, streichelt der Ork Kane Nyruk. Der Bär fühlt sich nicht bedroht, und Nyrella erkennt über ihre Verbindung zu ihm, dass Kane friedliche Absichten hat. Nyruk wartet während des anschließenden Gesprächs.
 
 ## Offene Fragen
 
-- Nyruks Herkunft und wie er zu Nyrellas Gefährten wurde, ist bislang nicht dokumentiert.
-- Die genaue Natur des Bandes zwischen Nyruk und Nyrella – ob es sich um eine magische Verbindung, eine bloß emotionale Bindung oder etwas Göttliches handelt – bleibt unklar. Eine Quelle beschrieb einen Gott namens „Naeruk“ als wohlgesonnen; dies könnte auf eine Verwechslung oder eine tiefere Beziehung zwischen Nyrella, Nyruk und einer göttlichen Entität hindeuten, die aber nicht abschließend geklärt ist.
-- Das Ausmaß von Nyruks Intelligenz und Verständnisfähigkeit – er versteht komplexe verbale Anweisungen und erfasst taktische Situationen – ist in seiner genauen Grenze nicht definiert.
+- Es bleibt ungeklärt, ob und wie nachhaltig Nyruks Misstrauen gegenüber der Gruppe nach Lindos Verrat abgebaut wurde. Seine freudige Reaktion nach der Rückkehr aus der Silbergruft deutet auf eine Versöhnung hin, doch die langfristige Entwicklung des Vertrauensverhältnisses ist offen.
 
 ## Belege
 
-[1] Session 2025-07-29 @ 00:39:48 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
-[2] Session 2025-09-09 @ 01:54:40 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
-[3] Session 2025-09-23 @ 01:17:09 (https://www.youtube.com/watch?v=DGzfqVigS0g)
-[4] Session 2025-09-30 @ 01:43:52 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
-[5] Session 2025-11-18 @ 00:06:45 (https://www.youtube.com/watch?v=w__ahowb9p0)
-[6] Session 2026-01-20 @ 01:27:33 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
-[7] Session 2026-02-24 @ 00:05:46 (https://www.youtube.com/watch?v=WOFArbwDDIQ)
-[8] Session 2026-03-24 @ 01:15:32 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
-[9] Session 2026-03-24 @ 01:15:32 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
+1. Session 2025-07-29, 00:39:48, https://www.youtube.com/watch?v=XXgO5Ht4Q0A
+2. Session 2025-09-09, 01:54:40, https://www.youtube.com/watch?v=Zl0qfuI6Goc
+3. Session 2025-09-30, 01:43:52, https://www.youtube.com/watch?v=bUT7Mc2hjUY
+4. Session 2025-11-18, 00:06:45, https://www.youtube.com/watch?v=w__ahowb9p0
+5. Session 2026-01-20, 01:27:33, https://www.youtube.com/watch?v=H3ckYdTv4y8
+6. Session 2026-02-24, 00:05:46, https://www.youtube.com/watch?v=WOFArbwDDIQ
+7. Session 2026-03-24, 01:15:32, https://www.youtube.com/watch?v=Yj5BWJfg3Ag (Beleg [9] im Originalauftrag)
