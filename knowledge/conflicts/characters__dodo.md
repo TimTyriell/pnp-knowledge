@@ -2,7 +2,7 @@
 type: Conflict
 title: 'Offener Konflikt: Dodo'
 description: Widersprüchliche Belege — menschliche Entscheidung nötig.
-timestamp: '2026-08-01T12:07:51+00:00'
+timestamp: '2026-08-05T20:00:23+00:00'
 id: CONFLICT_CHAR_DODO
 status: open
 concept: characters/dodo

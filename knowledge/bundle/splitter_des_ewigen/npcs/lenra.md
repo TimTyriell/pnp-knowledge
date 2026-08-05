@@ -1,8 +1,8 @@
 ---
 type: NPC
-title: Lenra
-description: Lenra, von den Helden meist „die Hack“ oder „die Sumpfhexe“ genannt,
-  ist eine hagere, verhutzelte Hexe von großer Macht und die zentrale An…
+title: Landra, die Hag
+description: Lanra ist eine hagere, verhutzelte Hexe (Hag), die offenbar die Fäden
+  hinter dem Angriff auf Breschka zieht. Sie erscheint am Altar, heißt…
 tags:
 - npcs
 timestamp: '2026-02-17T00:00:00Z'
@@ -18,64 +18,51 @@ aliases:
 ---
 
 ## Überblick
-
-Lenra, von den Helden meist „die Hack“ oder „die Sumpfhexe“ genannt, ist eine hagere, verhutzelte Hexe von großer Macht und die zentrale Antagonistin der Kampagne. Sie tritt als manipulative Drahtzieherin auf, die aus dem Verborgenen heraus Völker und Fraktionen gegeneinander ausspielt, um undurchsichtige Ziele zu verfolgen. Ihr Äußeres wird als hexenartig beschrieben — „eine Hack, oder?“ [1] — mit krummem Rücken und einem charakteristischen, bedrohlichen Lachen [1]. Ihre Magie manifestiert sich häufig in grüner oder lila Farbe, und sie verfügt über die Fähigkeit, Lebewesen zu schrumpfen, sich zu teleportieren und Illusionen zu wirken.
+Landra, fast durchgängig nur „die Hack“ (auch „die Hack (Hexe)“, „Moorhexe“, „Sumpfhexe“ oder „Leandra“ genannt), ist eine hagere, verhutzelte Hexe und die zentrale Antagonistin der Kampagne. Sie agiert aus dem Hintergrund als Manipulatorin und Drahtzieherin, die immer wieder Völker und Fraktionen gegeneinander ausspielt. Ihre Präsenz ist von grüner Magie, teuflischen Bündnissen und einem spöttischen, überlegenen Auftreten geprägt. Die Gruppe ist ihr mehrfach begegnet — stets war sie ihnen einen Schritt voraus.
 
 ## Rolle in der Kampagne
-
-Lenra ist die wiederkehrende Antagonistin, die von Beginn an die Fäden zieht. Sie befahl den Goblinangriff auf Breschka [1] und später auf Gemata [2]. In der Krypta von Breschka trat sie den Helden erstmals direkt gegenüber [1]. Seitdem durchzieht ihr Einfluss zahlreiche Konflikte: Sie rüstete die Kuatau mit magischen Amuletten aus und täuschte sie mit dem Versprechen, ihnen ihr Land zurückzugeben [6]; sie sabotierte vermutlich ein Golem-Experiment, um Unfrieden zu stiften [7]; und sie manipulierte die Gruppe, das Siegel an Vasuls Buch zu brechen [8]. Ihre Motive bleiben weitgehend im Dunkeln, doch Nox vermutet, dass sie konkrete Pläne in Bezug auf Vasul verfolgte [9].
+Die Hack fungiert als wiederkehrende Strippenzieherin hinter mehreren Bedrohungen. Sie befahl den Goblinangriff auf [Gemata](/locations/gemata.md) [2] und war mutmaßlich verantwortlich für einen früheren Angriff auf [Breska](/locations/breska.md) [5]. Sie stattete die [Kuatau](/npcs/kuatau.md) mit magischen Amuletten aus und gaukelte ihnen vor, eine Verbündete im Kampf um ihr Land zu sein [6]. In [Bresca](/locations/breska.md) (auch Breska) wurde sie als Illusion auf einem Dach gesichtet und lächelte der Gruppe bedeutungsvoll zu — eine stumme Botschaft, dass sie die Helden weiterhin im Auge hat [5]. Später wird deutlich, dass sie die Gruppe gezielt manipulierte, um das Siegel an Vasuls Buch zu brechen und Col Mereth zu zerstören — Schritte, die Vasuls Wiederkehr fördern sollten [8]. Innerhalb der Spielwelt wird sie als eine derart mächtige und unheimliche Bedrohung wahrgenommen, dass selbst [Nox](/npcs/nox.md) sie als mögliche Wissensquelle in Bezug auf Vasul nennt [9].
 
 ## Wichtige Merkmale
-
-Lenras Erscheinung ist die einer verhutzelten, hageren Gestalt [1]. Ihre Stimme wechselt: Einmal spricht sie mit heller Stimme, dann wieder in tiefer, dämonischer Sprache [4]. Zu ihren dokumentierten Fähigkeiten zählen:
-
-- **Schrumpfungszauber:** Mit einer Handbewegung schrumpfte sie Dodo und Kuki auf winzige Größe [1].
-- **Teleportation:** Durch Berühren eines Altars verschwand sie augenblicklich [1].
-- **Illusionsmagie:** Sie projizierte eine Illusion ihrer selbst auf ein Dach in Bresca, lächelte und gebot Schweigen [5].
-- **Offensive Zauber:** Sie löste Rotunas‘ Eiswand mit einem lila Strahl auf und feuerte einen lila Todesstrahl auf die Gruppe ab, der nur knapp verfehlte [4].
-- **Verbrennung von Wesen:** Eine Kreatur verbrannte, als sie auf ein brunnenartiges Konstrukt stieg und daran hantierte [4].
-
-Ihr Wesen ist belustigt-herablassend; sie amüsiert sich über Einschüchterungsversuche der Helden [1] und tritt stets mit einem überlegenen Lächeln auf.
+- **Erscheinungsbild:** Hager, verhutzelt, mit krummem Rücken [1, 4] und einem Lächeln, das ihre Überlegenheit ausdrückt [1, 5].
+- **Stimme:** Wechselt zwischen einer hellen Stimme und einer düsteren, dämonischen Stimme [4].
+- **Magische Fähigkeiten:**
+  - Schrumpfen von Lebewesen auf winzige Größe mit einer simplen Handbewegung [1].
+  - Teleportation über Altar-Berührung [1].
+  - Auflösen von Eiswänden mittels lila Strahlen [4].
+  - Gefährlicher lila Todesstrahl [4].
+  - Erzeugung illusionärer Abbilder ihrer selbst über große Distanzen [5].
+  - Grüne, naturgebundene Magie, erkennbar an grünen Kristallen und Kontrollrunen [7].
+  - Herstellung magischer Amulette, die Kontrolle über andere Wesen ausüben oder zumindest deren Loyalität sichern [6].
+- **Wesenszüge:** Belustigt und spöttisch gegenüber Einschüchterungsversuchen [1]. Völlig unbeeindruckt von den Fähigkeiten der Gruppe — als [Kuki](/characters/cookie.md) eine Voodoo-Puppe einsetzt, lacht sie nur [1]. Berechnend und geduldig („Bist du dir sicher, dass du das Richtige tust oder dass du aktuell auch nur ein Schachfigur in Leandras Spielplatz bist?“ — Lindo Laut über ihren Einfluss [8]).
 
 ## Beziehungen und Verbindungen
-
-- **Goblinstämme:** Lenra kommandierte die Goblins, die Breschka und Gemata angriffen [1][2].
-- **Dämonen:** Sie führte ein Gespräch in dämonischer Sprache mit einer Wesenheit im Sumpf-Dungeon [4].
-- **Kuatau:** Täuschte das Echsenvolk mit magischen Amuletten und dem falschen Versprechen der Landrückgewinnung [6].
-- **Vasul:** Ihre Pläne scheinen mit der Wiederkehr Vasuls verknüpft. Sie manipulierte die Helden, das Siegel an seinem Buch zu brechen und Col Mereth zu zerstören [8][9].
-- **Graf von Bresca:** Sie bezeichnete ihn als Hindernis — „der Graf ist uns im Weg. Er kommt uns näher. Wir sollten uns darum kümmern“ [4] — und ließ später Buch und Palantir in seinen Besitz gelangen, vermutlich um ihn zu schwächen [5].
-- **Statue & Krug:** In der Krypta von Breschka und später in einer Burg fanden die Helden eine Statue mit einem Krug, die sie Lenra zuordnen. Die Funktionalität des Kruges ist den Helden bekannt, doch dessen genaue Bedeutung bleibt unklar [3]. Lenra wirkte tatsächlich durch diese Statue.
-- **Belorus:** Lindo Laut warf Belorus vor, eine Schachfigur in „Leandras Spielplatz“ zu sein [8].
+- **Feuerwesen / Dämon:** Die Hack beschwor ein Feuerwesen, das sonst niemand herbeirufen kann [1]. Während der belauschten Konversation im Sumpf-Dungeon sprach sie mit einer dämonischen Stimme zu einer Entität — kurz darauf verbrannte eine Kreatur auf einem brunnenartigen Konstrukt [4].
+- **Graf von Breska:** Sie sieht ihn als Hindernis. Im Dungeon äußerte sie: „Aber der Graf ist uns im Weg. Er kommt uns näher. Wir sollten uns darum kümmern.“ [4] Später vermutet die Gruppe, dass sie den Vorfall mit dem Buch und dem Palantír manipulierte, um den Grafen zu schwächen [5].
+- **[Kuatau](/npcs/kuatau.md):** Sie gab sich als Freundin aus, um die Kuatau für ihre Zwecke einzuspannen [6].
+- **[Belorus](/npcs/belorus.md):** Sie scheint ihn als Schachfigur zu benutzen oder zumindest gegen die Helden auszuspielen [8].
+- **Vasul:** Ihre Pläne stehen in Verbindung mit Vasuls Wiederkehr. Nox erwähnt, sie habe „sicherlich nicht versucht, irgendwie das zu erhalten, was Lindo Laut nun in sich hat“ [9]. Zuvor hatte sie darauf hingewirkt, dass das Siegel an Vasuls Buch gebrochen und Col Mereth zerstört wird [8].
+- **[Dodo](/characters/dodo.md) & [Kuki](/characters/cookie.md):** Schrumpfte die beiden beim ersten Zusammentreffen auf Miniaturgröße [1].
 
 ## Chronologie
-
-- **Sessions um Breschka (2025-04-15):** Erstes direktes Auftreten in der Krypta. Lenra begrüßt die Helden spöttisch, schrumpft Dodo und Kuki, amüsiert sich über den Einsatz einer Voodoo-Puppe und teleportiert via Altar. Bereits hier wird sie mit dem Angriff auf Breschka in Verbindung gebracht. [1]
-
-- **Angriff auf Gemata (2025-04-23):** Lenra wird als Auftraggeberin des Goblinangriffs identifiziert, erscheint aber nicht persönlich. [2]
-
-- **Krypta & Burg (2025-05-14):** Die Helden finden eine Statue mit Krug, die Dodo Lenra zuordnet: „Das könnte potenziell von der Hack sein.“ Er äußert Unbehagen: „Ich habe eigentlich keinen Bock auf die Hack.“ [3]
-
-- **Sumpf-Dungeon (2025-06-17):** Die Gruppe belauscht Lenra im Gespräch mit einer dämonischen Stimme. Sie erwähnt den Grafen als Hindernis. Sie steigt auf ein Brunnenkonstrukt, eine Kreatur verbrennt. Später erscheint sie, durchbricht Rotunas‘ Eiswand mit einem lila Strahl und feuert einen Todesstrahl auf die Fliehenden. [4]
-
-- **Bresca (2025-06-25):** Lenra erscheint als Illusion auf einem Dach, lächelt und bedeutet zu schweigen. Die Gruppe schließt daraus, dass sie die Ereignisse um Buch und Palantir manipuliert hat, um den Grafen zu schwächen. [5]
-
-- **Kuatau-Dorf (2025-07-29):** Es kommt heraus, dass Lenra die Kuatau mit magischen Amuletten köderte. Rotunas beschreibt sie, und die Kuatau nicken zustimmend: „Freund, gute Dame sie ist.“ Ihr Plan, durch einen Brunnen ein Portal zu öffnen, wird vereitelt. [6]
-
-- **Golem-Experiment (2025-10-07):** Grüne Kristalle und eine Kontrollrune erinnern die Gruppe an Lenras Machart. Sie wird als wahrscheinliche Saboteurin vermutet. [7]
-
-- **Col Mereth (2026-01-20):** Lindo Laut nennt sie „Leandras Spielplatz“ gegenüber Belorus. Es wird klar, dass Lenra die Helden dazu brachte, Vasuls Siegel zu brechen und Col Mereth zu zerstören. [8]
-
-- **Letzte Erwähnung (2026-02-17):** Nox erwähnt Lenra als mögliche Wissensquelle zu Vasul. Sie ist jedoch seit längerem verschwunden; ein Kopfgeldauftrag blieb erfolglos. Rotunas fragt: „Ich dachte, sie ist vielleicht gestorben oder so.“ Nox erwidert, dass niemand den Auftrag annahm, nach ihr zu suchen. [9]
+1. **Erstes Aufeinandertreffen in der Krypta:** Die Hack empfängt die Gruppe an einem Altar, begrüßt sie spöttisch („Komm doch herein, meine lieben Freunde“), schrumpft Dodo und Kuki, hört sich [Lindo Lauts](/characters/lindo_laut.md) Lied an und teleportiert sich dann über den Altar fort. Die Gruppe bleibt verwirrt und gedemütigt zurück [1].
+2. **Angriff auf Gemata befohlen:** Ohne persönlich in Erscheinung zu treten, ordnet die Hack einen Goblinangriff auf das Dorf Gemata an [2].
+3. **Statue und Krug:** In einer Burg entdeckt die Gruppe eine Statue, die Dodo der Hack zuordnet. Die Statue trägt einen Krug, dessen Funktion den Helden aus einer früheren Begegnung in der Krypta bekannt ist. Dodo bemerkt: „Ich habe eigentlich keinen Bock auf die Hack.“ [3]
+4. **Sumpf-Dungeon:** Die Gruppe belauscht ein Gespräch zwischen der Hack und einer dämonischen Entität, in dem sie den Grafen als Hindernis bezeichnet. Kurz darauf steigt die Hack auf ein brunnenartiges Konstrukt, eine Kreatur verbrennt. Bei der Flucht der Helden erscheint sie, löst Rotunas‘ Eiswand auf und feuert einen lila Todesstrahl ab, der knapp verfehlt [4].
+5. **Illusion in Bresca:** Auf einem Dach von Bresca erscheint eine Illusion der Hack, lächelt und bedeutet den Helden zu schweigen. Die Gruppe erkennt, dass sie den Fund des Palantír und die Öffnung des Buches bewusst herbeigeführt haben könnte [5].
+6. **Kuatau-Manipulation:** Die Sumpfhexe wird als Drahtzieherin hinter den Kuatau-Angriffen entlarvt. Sie hatte den Kuatau magische Amulette geschenkt und vorgegaukelt, ihnen bei der Rückeroberung ihres Landes zu helfen. Der Plan, ein Portal durch einen Brunnen zu öffnen, wird von den Helden und einem Kuatau-Priester vereitelt [6].
+7. **Sabotageverdacht beim Golem-Experiment:** Ein grünes Magiegebilde und eine Kontrollrune werden entdeckt. Die Gruppe vermutet die Hack als Saboteurin, die Unfrieden stiften will [7].
+8. **Vasuls Buch und Col Mereth:** Die Gruppe erkennt, dass die Hack sie dazu manipulierte, das Siegel an Vasuls Buch zu brechen und Col Mereth zu zerstören. Lindo Laut wirft Belorus vor, eine Schachfigur in Leandras Spiel zu sein [8].
+9. **Verschwunden:** Nox berichtet, dass die Sumpfhexe seit geraumer Zeit verschwunden ist. Ein auf sie ausgesetztes Kopfgeld blieb ohne Ergebnis. Sie wird dennoch als mögliche Wissensquelle über Vasul in Betracht gezogen [9].
 
 ## Offene Fragen
-
-- Was bezweckte Lenra konkret mit der Wiederkehr Vasuls, und welche Rolle spielte der Krug dabei?
-- Warum ist sie verschwunden, und wo hält sie sich derzeit auf?
-- In welchem Verhältnis steht sie zu den Dämonen, mit denen sie kommunizierte?
-- Welche Funktion hatte das brunnenartige Konstrukt im Sumpf-Dungeon?
+- Was genau bezweckt die Hack mit Vasuls Wiederkehr? Ihre Motive bleiben im Dunkeln, obwohl ihre Handlungen darauf hindeuten [8, 9].
+- Wo hält sie sich aktuell auf? Sie ist „schon seit einer ganzen Weile“ verschwunden, und selbst ein Kopfgeldauftrag brachte keine Spur [9].
+- Welches Bündnis verbindet sie mit den Dämonen, und welche Rolle spielt das brunnenartige Konstrukt im Sumpf-Dungeon? [4]
+- In welchem Verhältnis steht sie zum Feuerwesen, das nur sie beschwören kann? [1]
+- Warum manipulierte sie gezielt die Helden, statt sie direkt zu vernichten? Ihr spöttisches, geduldiges Verhalten deutet auf einen größeren Plan hin [1, 5, 8].
 
 ## Belege
-
 [1] Session 2025-04-15 @ 01:52:00 (https://www.youtube.com/watch?v=YCpAz_syjaY)
 [2] Session 2025-04-23 @ 00:03:07 (https://www.youtube.com/watch?v=z3C-bewKqUs)
 [3] Session 2025-05-14 @ 00:54:14 (https://www.youtube.com/watch?v=5eAEDN5ra-4)

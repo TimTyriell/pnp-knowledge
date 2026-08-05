@@ -228,6 +228,12 @@ merge:
   geist: npcs/geist_von_rotunas
   der geist: npcs/geist_von_rotunas
   slicks: npcs/slix_vasul
+  # Muss explizit hier stehen, seit canonical_name auf "Slix" gepinnt ist:
+  # write_registry lässt einen Alias weg, der dem Canonical entspricht, also
+  # verschwand "Slix" aus den Aliases und die Mentions slugifizierten im
+  # Folgelauf zu einem eigenen Konzept npcs/slix. Die Regel hält sie zusammen.
+  slix: npcs/slix_vasul
+  slix/vasul: npcs/slix_vasul
   seraph: npcs/seraphen
   geistergestalt (bote von belorus): npcs/belorus
   lord kaledan: npcs/lord_kalidarn_von_willauch
@@ -758,6 +764,13 @@ canonical_name:
   # im Buch der vier Seelen nicht verzeichneten Vhar'Zul-Splitters. In den
   # Sessions überwiegend als "Slicks" transkribiert — das wird zum Alias.
   npcs/slix_vasul: Slix
+  # GM ruling 2026-08-05: die Hexe hinter dem Angriff auf Breska heißt im Kanon
+  # "Landra, die Hag" — so steht sie auch im Wiki. "Hag" ist das Kreaturenwort,
+  # die Sessions haben es als "Hack"/"Heck" verhört, den Namen selbst als
+  # "Lenra", "Lanra", "Moorhexe", "Sumpfhexe" und "Leandra". Alle folden schon
+  # oben nach npcs/lenra; die concept id bleibt `lenra`, weil ids stabil
+  # bleiben sollen und nur der Anzeigename kanonisiert wird.
+  npcs/lenra: Landra, die Hag
   factions/gilde_von_ehrenfels: Die Gilde von Ehrenfels
   factions/kult_des_vharzul: Kult des Vhar'Zul
   factions/sippe_des_voras: Sippe des Voras

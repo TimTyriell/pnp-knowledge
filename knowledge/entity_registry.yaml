@@ -1292,7 +1292,12 @@ entities:
   canonical_name: Nox' Beschwörungsritual
   aliases:
   - Beschwörungsritual
-  mention_count: 2
+  mention_count: 1
+- concept_id: events/nox_beschwoerungsritual_2025-05-27
+  type: Event
+  canonical_name: Nox' Beschwörungsritual
+  aliases: []
+  mention_count: 1
 - concept_id: events/nox_versiegelung_des_portals
   type: Event
   canonical_name: Nox' Versiegelung des Portals
@@ -4438,7 +4443,7 @@ entities:
   mention_count: 3
 - concept_id: npcs/lenra
   type: NPC
-  canonical_name: Lenra
+  canonical_name: Landra, die Hag
   aliases:
   - Moorhexe Hack
   - Hack
@@ -4801,10 +4806,10 @@ entities:
   mention_count: 1
 - concept_id: npcs/slix_vasul
   type: NPC
-  canonical_name: Slicks
+  canonical_name: Slix
   aliases:
   - Slix/Vasul
-  - Slix
+  - Slicks
   mention_count: 7
   important: true
 - concept_id: npcs/soeldner_des_hauptmanns_aaron

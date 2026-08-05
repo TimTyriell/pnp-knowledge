@@ -2,7 +2,7 @@
 type: Conflict
 title: 'Offener Konflikt: Die Gilde von Ehrenfels'
 description: Widersprüchliche Belege — menschliche Entscheidung nötig.
-timestamp: '2026-08-01T12:07:52+00:00'
+timestamp: '2026-08-05T20:00:23+00:00'
 id: CONFLICT_FACTION_GILDE_VON_EHRENFELS
 status: open
 concept: factions/gilde_von_ehrenfels

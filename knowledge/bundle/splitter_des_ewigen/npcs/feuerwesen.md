@@ -9,7 +9,7 @@ timestamp: '2025-04-15T00:00:00Z'
 id: NPC_FEUERWESEN
 ---
 
-Aus der Statue beschworenes Feuerwesen, das angibt, nur von [Lenra](/npcs/lenra.md) (Lanra) gerufen werden zu können. Es stößt eine Stichflamme aus, nennt die Helden unwürdig und verschwindet sofort wieder.
+Aus der Statue beschworenes Feuerwesen, das angibt, nur von Lenra ([Lanra](/npcs/lenra.md)) gerufen werden zu können. Es stößt eine Stichflamme aus, nennt die Helden unwürdig und verschwindet sofort wieder.
 
 # Belege
 

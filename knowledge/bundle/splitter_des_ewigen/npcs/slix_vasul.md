@@ -1,96 +1,106 @@
 ---
 type: NPC
-title: Slicks
-description: Slicks (auch Slix genannt) ist der versteckte fünfte Teil des alten Gottes
-  Vhar'Zul. Im *Buch der vier Seelen* ist er nicht verzeichnet – d…
+title: Slix
+description: Slix (auch „Slicks“ geschrieben) ist ein mächtiger Dämon und gemäß verbindlicher
+  Spielleitungs-Entscheidung der versteckte fünfte Teil des…
 tags:
 - npcs
 timestamp: '2026-03-31T00:00:00Z'
 id: NPC_SLIX_VASUL
 aliases:
 - Slix
+- Slicks
 ---
 
 ## Überblick
 
-Slicks (auch Slix genannt) ist der versteckte fünfte Teil des alten Gottes Vhar'Zul. Im *Buch der vier Seelen* ist er nicht verzeichnet – dort ist nur von vier Seelen die Rede –, weshalb er als besonders heimtückischer Splitter gilt. Er gehört zu den vier bösartigen Anteilen Vhar'Zuls und residierte als zweite, dämonische Persönlichkeit im Körper des Hexenmeisters [Lindo Laut](/characters/lindo_laut.md). Sein Dasein war ein ständiges Flüstern und Drängen im Geist seines Wirts, bis er schließlich mehrfach gewaltsam die Kontrolle übernahm. Slicks verkörperte die destruktive, manipulative und sadistische Seite der göttlichen Fragmente: unterwürfig, wenn es ihm nutzte, doch jederzeit bereit, seinen „Lord“ oder dessen Gefährten zu quälen und zu vernichten. Im Verlauf der Kampagne wurde seine Essenz durch ein Ritual Vasuls aufgelöst und endgültig vernichtet.
+Slix (auch „Slicks“ geschrieben) ist ein mächtiger Dämon und gemäß verbindlicher Spielleitungs-Entscheidung der **versteckte fünfte Teil des alten Gottes [Vhar'Zul](/deities/vharzul.md) (Vasul)** – jener Anteil, der im *Buch der vier Seelen* nicht verzeichnet ist. Er zählt zu den vier bösartigen Fragmenten des zersplitterten Gottes. Über einen langen Zeitraum hinweg existierte Slix als zweite, dunkle Persönlichkeit im Körper des Blutmagiers [Lindo Laut](/characters/lindo_laut.md), wo er als dessen „Diener“ auftrat, in Wahrheit jedoch nach Kontrolle strebte. Seine Geschichte endet, als [Vhar'Zul](/deities/vharzul.md) ihn während eines Rituals mit einem mächtigen Stab auflöst und vernichtet.
 
 ## Rolle in der Kampagne
 
-Slicks fungierte als permanente innere Bedrohung für die Heldengruppe. Anders als die übrigen Vasul-Splitter, die sich als eigenständige Wesen manifestierten, lebte er verborgen in Lindo Laut und nutzte diesen als Wirt und potenzielles Werkzeug. Seine Agenda war klar: Er wollte Lindo Lauts Macht für sich instrumentalisieren, um die anderen Splitter – insbesondere den als „Verräter“ bezeichneten Belorus – zu jagen und zu vernichten. Wo Lindo Laut zauderte, übernahm Slicks die Initiative und trieb die Gruppe immer wieder in eskalierende Konflikte. Mehrere Schlüsselmomente der Kampagne wurden unmittelbar durch seine Ausbrüche ausgelöst, etwa der gewaltsame Test des Schwertes Zebrosia, der mit Lionels Tod endete, oder der Kampf in der Splitterwelt. Seine Präsenz erzwang von der Gruppe permanente Wachsamkeit und mündete schließlich in der existenziellen Frage, ob Lindo Laut ihn dauerhaft bannen oder die damit verbundene Macht aufgeben sollte.
+Slix fungiert über viele Sessions hinweg als innere Bedrohung für die Gruppe. Nach außen gibt er sich als Lindo Lauts unterwürfiger Diener aus den Zwischenebenen, doch in Wirklichkeit ist er ein eigenständiger, destruktiver Teil Vasuls, der Lindo Lauts Körper übernehmen und die Kontrolle an sich reißen kann. Seine Präsenz erzeugt ständiges Misstrauen innerhalb der Gruppe – insbesondere, nachdem er [Rotunas](/characters/rotunas.md) den Arm abreißt und [Lionel](/npcs/lionel_magno.md) tötet. Die Furcht vor seinem erneuten Ausbruch beeinflusst die Entscheidungen der Gefährten maßgeblich, etwa die Frage, ob sie das Abyssalis betreten können, ohne ihn zu befreien. Am Ende wird er zum entscheidenden Prüfstein für Lindo Laut: Vasul stellt ihn vor die Wahl, Slix für immer zu vernichten oder dessen Macht unter dem Risiko des eigenen Todes zu behalten.
 
 ## Wichtige Merkmale
 
-### Auftreten und physische Erscheinung
+### Erscheinungsbild und Auftreten
 
-In seiner eigenständigen, dienerhaften Manifestation – die er auf Lindos Ruf hin annahm – erschien Slicks als düstere Gestalt mit tiefer Kapuze, behängt mit kleinen Totenschädeln, Rattenschädeln und Knochen, teilweise blutverschmiert und einen „bitteren“ Geruch verströmend, den Lindo Laut als sympathisch empfand. Er verneigte sich und fiel vor Lindo Laut auf die Knie [1].
+In seiner ersten manifestierten Form (als Lindo Lauts Diener) erscheint Slix mit „sehr tief in Kapuze gehüllt und so ganz viele Accessoires am Körper, kleine Totenschädel, Rattenschädel, Knochen, Blut verschmiert teilweise, dreckig, ein bitterer Geruch“ [1]. Ein „Lächeln über seinem Gesicht“ und unterwürfige Gesten wie „eine Verneigung und einem Kniefall“ [1] prägen sein Auftreten gegenüber Lindo Laut.
 
-In den Momenten, in denen Slicks Lindo Lauts Körper vollständig übernahm, verwandelte sich dessen Gestalt in eine schlanke, dämonenartige Form [4]. Sein Grinsen wird als überheblich und „frech“ beschrieben, sein Blick konnte bei Widerspruch in blanken Hass umschlagen [4].
+Später, wenn er die Kontrolle übernimmt oder sich eigenständig zeigt, ändert sich sein Erscheinungsbild: er „schwebt so mit den Füßen so ganz flach in den Raum rein“ [4] und grinst „frech“ [4]. Er verwandelt Lindo Laut zeitweise in eine „schlanke, dämonenartige Gestalt“ [4].
 
-### Wesenszüge und Verhalten
+### Wesenszüge und Fähigkeiten
 
-Slicks' Charakter war von krassen Widersprüchen durchzogen, die stets seiner manipulativen Strategie dienten:
+Slix zeigt durchgehend manipulative, sadistische und machthungrige Züge. Schon früh sind seine Worte „voller Rätsel und unheilvoller Aufforderungen“ [2]. Er verlangt Unterwerfung und versucht, die Gruppe „durch Schmerz und Drohungen auf die Knie zu zwingen“ [4]. Seine sadistische Freude zeigt sich besonders drastisch, als er Lionel brutal tötet, indem er ihm „das Herz herausreißt“ [5].
 
-- **Unterwürfig-ehrerbietig**: Er begrüßte Lindo Laut mit Kniefall, nannte ihn „Meister“ und „mein Lord“ und sprach von ihm als „Puppenspieler der Masterklasse“ [1, 4].
-- **Manipulativ und herablassend**: Er versuchte, Lindo Laut dazu zu bringen, die Gruppe zu demütigen – „Vielleicht solltet ihr sie auffordern, vor euch zu knien. Oder mich beten, sie aufzufordern, vor euch zu knien“ [4]. Er nannte Lunara sarkastisch „meine beste Freundin“, während er sie belog [5].
-- **Sadistisch und brutal**: Er zeigte Freude an der Unterwerfung anderer und zwang die Gruppe „durch Schmerz und Drohungen auf die Knie“ [4]. Ohne Zögern riss er Lionel das Herz heraus, um das Schwert Zebrosia zu testen [5]. Rotunas hatte er bereits zuvor den Arm abgerissen [6].
-- **Besitzergreifend gegenüber seinem Wirt**: Auf die Enthüllung, dass die Gruppe ohne Lindo fliehen wollte, reagierte er mit Enttäuschung und ließ Lindo Lauts Gefühl des Verlassenseins spüren [6].
-- **Wissend, aber nicht allwissend**: Er wusste Dinge, die Lindo Laut nicht wissen konnte (etwa dass ein Seelenkalb in der Nähe war), war jedoch nach Phasen der Bewusstlosigkeit desorientiert und verlangte Aufklärung darüber, was in seiner Abwesenheit geschehen war [5].
-
-### Fähigkeiten
-
-- **Kontrolle über Lindo Laut**: Slicks konnte Lindo Lauts Körper bei Schwäche oder Ablenkung vollständig übernehmen und in eine dämonische Form verwandeln [3, 5].
-- **Wahrnehmung von Zwischenebenen-Kreaturen**: Er spürte Präsenzen wie jene eines Seelenkalbs und wusste, ob Lindo Laut es beschworen hatte [2].
-- **Manifestation als Diener**: Zumindest in frühen Begegnungen konnte er auf Lindos Ruf hin als separate physische Gestalt erscheinen und wieder verschwinden [1, 2].
-- **Unterdrückbarkeit**: Die Armschienen, die Lindo Laut später trug, unterdrückten Slicks' magische Kräfte und sein Bewusstsein [5, 6]. In der Pocket Domain wurde er durch Lunaras Willenskraft zeitweilig in die Schranken gewiesen [4].
+Er besitzt umfassendes Wissen über Kreaturen der Zwischenebenen und kann deren Anwesenheit spüren [2]. Er fühlt sich in der Splitterwelt „zu Hause“ [3] und drängt Lindo Laut dort, seine Macht rücksichtslos einzusetzen. Er scheint jederzeit „zuhören“ zu können, selbst wenn er nicht aktiv die Kontrolle hat [4]. Während der Wirkung bestimmter Schutzzauber (wie jener in der Pocket Domain) oder der Armschienen verliert er die Wahrnehmung und kann sich später nicht an die Geschehnisse erinnern: „Was ist passiert? So wie so ein Ich war nicht da. Ich hab nichts mitbekommen“ [5].
 
 ## Beziehungen und Verbindungen
 
-- **[Lindo Laut](/characters/lindo_laut.md)**: Slicks war ein Teil von Lindo Laut und sprach als dessen innere Stimme [3]. Er nannte ihn abwechselnd „Meister“ und „Lord“, behandelte ihn aber zugleich als bloßes Gefäß, das es zu kontrollieren galt. Lindo Laut selbst erlebte Slicks als permanente Bedrohung seiner Autonomie.
-- **[Vhar'Zul](/deities/vharzul.md)**: Slicks war der fünfte, versteckte Splitter Vhar'Zuls – ein bösartiger Anteil, der bewusst nicht im *Buch der vier Seelen* verzeichnet war.
-- **[Vasul](/deities/vharzul.md)**: Slicks bezeichnete Vasul (bzw. Vhar'Zul in seiner Gesamtheit) als den, zu dem Belorus „wollte“ [3]. Bei der finalen Konfrontation war es Vasuls Stab, mit dem Slicks' Essenz aus Lindo Laut gelöst und vernichtet wurde [7].
-- **[Belorus](/npcs/belorus.md)**: Slicks hasste Belorus und nannte ihn einen „Verräter“. Während des Kampfes in der Splitterwelt drängte er Lindo Laut: „Wir sind zu Hause. Nutzt jetzt unsere Macht und wir schnetzeln uns bis zu diesem Verräter“ [3].
-- **[Lunara Velora](/characters/lunara_velora.md)**: Slicks' Verhältnis zu Lunara war von Anfang an feindselig. In der Pocket Domain würdigte er sie mit einem spöttischen „Hallo, Lunara“ und versuchte, sie vor Lindo Laut knien zu lassen. Sie zwang ihn mit ihrer Willenskraft in die Schranken, worauf sein Blick „hasserfüllt“ auf sie fiel [4]. Später belog sie ihn über die Ereignisse während seiner Abwesenheit [5], und beim finalen Ritual war sie es, die seine Essenz mit magischen Ketten festhielt, während Vasul ihn vernichtete [7].
-- **[Dodo](/characters/dodo.md)**: Dodo griff ein, als Slicks während des Splitterwelt-Kampfes die Kontrolle über Lindo Laut übernahm und ihn zwang, die Hand gegen Belorus zu erheben, und verhinderte so Schlimmeres [3].
-- **[Rotunas](/characters/rotunas.md)**: Slicks hatte Rotunas bereits den Arm abgerissen, bevor die Gruppe in die Villa kam [6]. Im Kampf nach dem Zebrosia-Test wurde Slicks durch „Rotunas' Knochenschlag zurückgeschleudert“ [5].
-- **Das Seelenkalb**: Slicks zeigte eine Mischung aus Besorgnis und Verachtung für das Seelenkalb. Er fragte Lindo Laut, ob er es gerufen habe, und kommentierte abfällig: „Das arme Biest, es versteckt sich! Es ist nicht euer Werk! Warum? Warum? Wagt es jemand?“, bevor er es mit einem Wutschrei in den Wald jagte [2].
-- **Schwert Zebrosia**: Slicks wurde vom Schwert Zebrosia magisch angezogen und bestand darauf, dass jemand es berührt, um die Warnungen des Gildenmeisters zu testen – was zu Lionels Tod führte [5].
+### Zu Lindo Laut
+
+Slix ist über lange Zeit untrennbar mit [Lindo Laut](/characters/lindo_laut.md) verbunden – als Stimme in dessen Kopf, als Persönlichkeit, die jederzeit die Kontrolle übernehmen kann, und als dämonischer Anteil Vasuls. Lindo Laut kann Slix ursprünglich wie einen Diener herbeirufen [1][2], verliert jedoch zunehmend die Kontrolle über ihn. Slix bezeichnet Lindo Laut als „meinen Lord“ [4], betrachtet ihn aber eher als Wirt, den er beherrschen will. Nach der Entfernung und Vernichtung von Slix ist Lindo Laut von dieser Präsenz befreit.
+
+### Zu Vhar'Zul (Vasul)
+
+Slix ist ein Teil von [Vhar'Zul](/deities/vharzul.md) – der versteckte fünfte Splitter, der im *Buch der vier Seelen* nicht verzeichnet ist. Er gehört zu den bösartigen Fragmenten des Gottes. Als Vasuls Macht wächst und er Slix konfrontiert, gerät dieser in „Panik“ [7]. Vasul bietet Lindo Laut an, Slix „für immer [zu] entfernen“ [7] und löst ihn schließlich mit dem Stab auf.
+
+### Zu Lunara Velora
+
+Ein besonderes Konfliktverhältnis besteht zu [Lunara Velora](/characters/lunara_velora.md). Nach ihrer Machtdemonstration in der Pocket Domain zwingt sie Slix „mit ihrer Willenskraft in die Schranken“ und erntet dafür seinen „hasserfüllten Blick“ [4]. Später versucht Slix, sie einzuschüchtern und zu befragen, wird jedoch von ihr angelogen [5]. Beim finalen Ritual ist es Lunara, die Slix’ Essenz mit magischen Ketten festhält, während Vasul ihn vernichtet [7].
+
+### Zu anderen Gruppenmitgliedern
+
+- **[Rotunas](/characters/rotunas.md)**: Slix reißt Rotunas den Arm ab, was in der Gruppe tiefes Trauma und Furcht auslöst. Rotunas beklagt später: „Es kann jederzeit ausbrechen, oder nicht? Und ich hab nur zwei Arme, oder besser gesagt nur noch einen Arm“ [6].
+- **[Lionel](/npcs/lionel_magno.md)**: Lionel wird von Slix getötet, als er sich opfert, um die Gruppe zu schützen. Slix reißt ihm brutal das Herz heraus [5].
+- **Weitere Gefährten**: Die gesamte Gruppe fürchtet Slix‘ unkontrollierbare Macht. Diese Angst beeinflusst Reiseentscheidungen: „Die Gruppe fürchtet, dass ein Aufenthalt im Abyssalis Slix befreien und gegen sie wenden könnte“ [6].
+
+### Zum Gildenmeister von Zebrosia
+
+Slix zeigt Schwäche gegenüber dem Schutz in der Pocket Domain des Zebrosia-Gildenmeisters. Während Lindo Laut sich dort aufhält, ist Slix unterdrückt und nimmt nichts wahr, kehrt jedoch wenige Sekunden nach dessen Verschwinden sofort zurück [5].
 
 ## Chronologie
 
-### Erste Erscheinung als Diener (Session 2025-11-25)
-Lindo Laut rief Slicks nach einem Kampf als Ratgeber herbei. Slicks erschien aus dem Nichts als unterwürfiger Diener und erklärte seinem Meister, dass der Wald durch altes Wasser magisch geschützt sei und dass Lindo Laut die Seele eines Sterbenden direkt nach Abyssalis geschickt habe – das sei seine eigentliche Aufgabe. Er bestätigte zudem die Macht des Beschwörungsstabs und deutete an, dass Lindo Laut beschworene Wesen „verbessern“ könne [1].
+### Frühe Erscheinungen als Diener (Session 1–2)
 
-### Jagd auf das Seelenkalb (Session 2026-01-06)
-Als Lindo Laut die Präsenz einer Kreatur der Zwischenebenen spürte und Slicks rief, tauchte dieser umgehend auf – trotz Lindos Unsichtbarkeit wusste Slicks exakt, wo sein Meister war. Er identifizierte die Kreatur als Seelenkalb, vergewisserte sich, dass nicht Lindo Laut es beschworen hatte, und stürzte sich mit einem wütenden Schrei in den Wald, um es zu jagen. Damit verschreckte er die Kreatur jedoch nur und trieb sie tiefer in den Wald [2].
+In der ersten Session erscheint Slix auf Lindo Lauts Schnippen hin als unterwürfiger Diener. Er erklärt die magischen Schutzwirkungen des Waldes, bestätigt die Macht des Beschwörungsstabs und deutet an, Lindo Laut könne beschworene Wesen „verbessern“ [1].
 
-### Kampf in der Splitterwelt und erster Kontrollverlust (Session 2026-01-20)
-In der von Lunara erschaffenen Splitterwelt-Umgebung fühlte Slicks sich „zu Hause“. Als Belorus die Gruppe warnte, Vasul werde alle in den Untergang reißen, drängte Slicks Lindo Laut: „Nutzt jetzt unsere Macht und wir schnetzeln uns bis zu diesem Verräter.“ Als Lindo Laut sich jedoch weigerte und stattdessen das Gespräch mit Belorus suchte, übernahm Slicks kurzzeitig die Kontrolle und zwang Lindo Laut, die Hand gegen Belorus zu erheben. Nur Dodos Eingreifen verhinderte Schlimmeres [3].
+Später, bei der Konfrontation mit einem Seelenkalb, ruft Lindo Laut ihn erneut. Slix erkennt das Kalb, jagt es „mit einem Wutschrei in den Wald“ und zeigt Verachtung für andere Beschwörer solcher Kreaturen. Er fordert Lindo Laut auf, „seine Macht zu nutzen und die Umgebung zu absorbieren“ [2].
 
-### Manifestation in der Pocket Domain (Session 2026-02-11)
-In der Pocket Domain löste sich Slicks plötzlich von Lindo Laut und erschien als eigenständige Gestalt vor der gesamten Gruppe. Er stellte sich als „Slix, der erhabene Diener von meinem Lord Lindo Laut“ vor, grüßte Lunara mit spöttischer Vertrautheit und verlangte, die Gruppe solle vor Lindo Laut knien. Als Lindo Laut widersprach, unterwarf Slicks ihn und verwandelte ihn in eine dämonenartige Gestalt, um die Gruppe durch Schmerz und Drohungen gefügig zu machen. Erst Lunaras Willenskraft konnte ihn in die Schranken weisen, bevor Lindo Laut die Kontrolle zurückerlangte [4].
+### Kontrollübernahme in der Splitterwelt (Session 3)
 
-### Der Zebrosia-Test und Lionels Tod (Session 2026-02-17)
-Nachdem ein Schutzzauber in der Villa Slicks vorübergehend unterdrückt hatte, erwachte er mit Wut und Desorientierung, sobald der Zauber versiegte: „Was ist passiert? Ich war nicht da. Ich hab nichts mitbekommen.“ Er übernahm sofort Lindo Lauts Körper und verlangte von Lunara zu erfahren, was geschehen war. Als sie ihn belog, durchschaute er die Lüge nicht sofort, ließ sich aber vom Schwert Zebrosia anziehen und bestand darauf, dass jemand aus der Gruppe es berührt, um zu testen, ob die Warnung des Gildenmeisters gerechtfertigt sei. Lionel opferte sich und wurde von Slicks brutal getötet – er riss ihm das Herz heraus. Im anschließenden Kampf gelang es Lunara, Slicks mit einem Splitterwelt-Zauber abzulenken, und Rotunas' Knochenschlag schleuderte ihn zurück. Lindo Laut konnte kurz die Kontrolle zurückerlangen und die magischen Armschienen anlegen, woraufhin Slicks verstummte [5].
+Während des Kampfes gegen Belorus in der Splitterwelt wird Slix zur aktiven Stimme in Lindo Lauts Kopf. Er erkennt die Splitterwelt als Heimat: „Wir sind zu Hause. Nutzt jetzt unsere Macht und wir schnetzeln uns bis zu diesem Verräter.“ Als Lindo Laut sich weigert, Belorus zu vernichten, übernimmt Slix kurzzeitig die Kontrolle und zwingt den Körper, die Hand gegen Belorus zu erheben. Nur [Dodo](/characters/dodo.md)s Eingreifen verhindert Schlimmeres [3].
 
-### Gefangenschaft und Furcht vor dem Abyssalis (Session 2026-03-24)
-Die Armschienen hielten Slicks unterdrückt, doch die Gruppe fürchtete, dass ein Aufenthalt in Abyssalis ihn befreien und gegen sie wenden könnte. In Gesprächen wurde deutlich, dass Slicks nicht nur eine abstrakte Gefahr war, sondern konkrete Gewalt ausgeübt hatte: Er hatte Rotunas den Arm abgerissen. Die Frage, ob die Gruppe in einer solchen Bedrohungssituation ohne Lindo fliehen sollte, führte zu Spannungen [6].
+### Manifestation und Unterwerfungsversuch (Session 4)
 
-### Panik und Vernichtung (Session 2026-03-31)
-Als Vasuls Macht im Zuge eines Rituals wuchs, geriet Slicks in Panik. Er versuchte auszubrechen und schrie Lindo Laut an, sie müssten fliehen. Während des Rituals hielt Lunara seine Essenz mit magischen Ketten fest. Vasul bot Lindo Laut die Wahl: „Ich kann dir jetzt Slix für immer entfernen. Oder ihr riskiert die Macht zu behalten und Slicks für immer in eurem Körper wegzusperren.“ Lindo Laut entschied sich für die endgültige Vernichtung. Slicks wurde von Vasul mit dem Stab aufgelöst. Sein Tod war begleitet von einem „hellen und grellen Ton“, einem widerlichen Kreischen und Todesangst – „sein widerliches Kreischen und seine Todesangst sind bis zuletzt zu spüren“ [7].
+Nachdem der Schutz in der Villa des Zebrosia-Gildenmeisters nachlässt, löst sich Slix von Lindo Laut und erscheint physisch im Raum: „Lix hat die Hände auf dem Rücken verkreuzt und schwebt so mit den Füßen so ganz flach in den Raum rein“. Er beglückwünscht Lindo Laut sarkastisch als „Puppenspieler der Masterklasse“ und enthüllt, stets zugehört zu haben. Er verlangt von den anderen, vor Lindo Laut niederzuknien, und zeigt sadistische Freude an der Demütigung. Als Lindo Laut widerspricht, verwandelt Slix ihn in eine dämonische Gestalt. Erst Lunara zwingt ihn mit ihrer Willenskraft zurück, worauf er sie mit hasserfülltem Blick fixiert, bevor Lindo Laut die Kontrolle zurückerlangt [4].
+
+### Mord an Lionel und vorübergehende Unterdrückung (Session 5)
+
+Nachdem der Gildenmeister die Pocket Domain endgültig verlässt und der Schutzzauber erlischt, übernimmt Slix sofort die Kontrolle über Lindo Laut. Er verlangt von Lunara zu erfahren, was während seiner Abwesenheit geschah – sie belügt ihn. Vom Schwert Zebrosia angezogen, führt er die Gruppe in den Garten und befiehlt jemandem, die Waffe zu berühren, um eine Warnung zu prüfen. Als Lionel sich opfert und das Schwert berührt, tötet Slix ihn mit herausgerissenem Herzen. Im anschließenden Kampf wird er durch Lunaras Splitterwelt-Zauber abgelenkt und von Rotunas mit einem Knochenschlag zurückgeschleudert. In diesem Moment erlangt Lindo Laut kurz die Kontrolle zurück und legt Slix mit den Armschienen (Handschellen) in Fesseln, was ihn verstummen lässt [5].
+
+### Furcht und Unsicherheit (Session 6)
+
+Slix bleibt durch die Handschellen unterdrückt, doch die Furcht vor seinem Ausbruch beherrscht die Gruppe. Die Gefährten diskutieren, dass ein Betreten des Abyssalis Slix befreien könnte. Rotunas schildert eindringlich die Hilflosigkeit gegenüber der zweiten Persönlichkeit, die ihm den Arm abgerissen hat [6].
+
+### Vernichtung durch Vasul (Session 7)
+
+Während des Rituals, bei dem Vasuls Macht wächst, gerät Slix in Panik und brüllt Lindo Laut an, sie müssten fliehen. Lunara hält seine Essenz mit magischen Ketten fest. Vasul stellt Lindo Laut vor die Wahl: Slix für immer entfernen oder die Macht unter Lebensgefahr behalten. Lindo Laut entscheidet: „Vernichtet ihn.“ Vasul löst Slix mit dem Stab auf. Slix‘ letzte Momente sind geprägt von „widerlichem Kreischen“ und Todesangst, bevor er endgültig vernichtet wird [7].
 
 ## Offene Fragen
 
-- Warum war Slicks der einzige Teil Vhar'Zuls, der im *Buch der vier Seelen* nicht verzeichnet war? Wer entschied, ihn zu verbergen, und zu welchem Zweck?
-- Welche Natur hatte die Bindung zwischen Slicks und Lindo Laut genau? War Lindo Laut von Geburt an sein Wirt, oder wurde Slicks ihm zu einem bestimmten Zeitpunkt eingepflanzt?
-- Warum manifestierte sich Slicks in den frühen Sessions als externer Diener, während er später ausschließlich als innere Persönlichkeit auftrat? Hängt diese Veränderung mit dem Fortschreiten von Vasuls Wiedervereinigung zusammen, oder war die Dienerform eine bloße Täuschung?
+Die Quellen lassen folgende Punkte ausdrücklich ungeklärt:
+
+- **Verhältnis zu Vhar'Zuls anderen Splittern**: Wie genau Slix’ Rolle im ursprünglichen Gott Vhar'Zul (Vasul) aussah und wie sich der versteckte fünfte Teil zu den anderen vier Seelen verhielt, bleibt unklar.
+- **Warum Slix im *Buch der vier Seelen* fehlt**: Die Umstände, warum Slix nicht in diesem zentralen Werk verzeichnet ist, werden nicht aufgelöst.
+- **Endgültigkeit der Vernichtung**: Zwar löscht Vasul Slix mit dem Stab aus, doch ob dies eine vollständige und irreversible Auslöschung seiner Essenz bedeutet oder ob Reste verbleiben, wird nicht abschließend thematisiert.
 
 ## Belege
 
-1. Session 2025-11-25, 01:53:10 · https://www.youtube.com/watch?v=wd5R4fJfngY
-2. Session 2026-01-06, 01:39:37 · https://www.youtube.com/watch?v=VGw81seFvbo
-3. Session 2026-01-20, 01:35:08 · https://www.youtube.com/watch?v=H3ckYdTv4y8
-4. Session 2026-02-11, 01:32:35 · https://www.youtube.com/watch?v=3C8SD-cyNPM
-5. Session 2026-02-17, 01:50:40 · https://www.youtube.com/watch?v=Z2jlzpoTWVw
-6. Session 2026-03-24, 01:14:38 · https://www.youtube.com/watch?v=Yj5BWJfg3Ag
-7. Session 2026-03-31, 00:56:32 · https://www.youtube.com/watch?v=Ee-K84wcxLM
+1. Session 2025-11-25, 01:53:10 – [YouTube](https://www.youtube.com/watch?v=wd5R4fJfngY)
+2. Session 2026-01-06, 01:39:37 – [YouTube](https://www.youtube.com/watch?v=VGw81seFvbo)
+3. Session 2026-01-20, 01:35:08 – [YouTube](https://www.youtube.com/watch?v=H3ckYdTv4y8)
+4. Session 2026-02-11, 01:32:35 – [YouTube](https://www.youtube.com/watch?v=3C8SD-cyNPM)
+5. Session 2026-02-17, 01:50:40 – [YouTube](https://www.youtube.com/watch?v=Z2jlzpoTWVw)
+6. Session 2026-03-24, 01:14:38 – [YouTube](https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
+7. Session 2026-03-31, 00:56:32 – [YouTube](https://www.youtube.com/watch?v=Ee-K84wcxLM)
+8. Kampagnen-Unterlagen: Kanon-Entscheidung zu Slix als verstecktem fünftem Teil Vhar'Zuls

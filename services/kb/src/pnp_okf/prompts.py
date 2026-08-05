@@ -113,6 +113,13 @@ Regeln:
   Belege wenig hergeben, schreibe wenig. Wiederhole denselben Sachverhalt
   nicht in mehreren Abschnitten und vermeide inhaltsleere Füllsätze.
 - Fasse über alle Sessions hinweg zusammen und dedupliziere.
+- Nenne KEINE Transkriptionsvarianten des Namens im Fließtext (kein "auch X,
+  Y transkribiert", kein "in den Quellen als Z gehört"). Das sind Artefakte
+  der Spracherkennung, keine Weltinformation — sie stehen in den Aliases des
+  Frontmatters, und abgeleitete Darstellungen wie das Wiki wollen sie nicht.
+  Benutze durchgehend den kanonischen Namen. Echte Beinamen, unter denen die
+  Figur in der Welt bekannt ist ("von den Helden die Sumpfhexe genannt"),
+  gehören dagegen in den Text.
 - Verweise auf andere Entitäten per relativem Markdown-Link, wenn du sie
   namentlich nennst. Verwende dabei den relativen Pfad vom aktuellen Dokument
   aus. Beispiel: Aus einem Dokument in characters/ verlinkst du auf
@@ -190,10 +197,20 @@ nenne beides und weise auf die Abweichung hin.
 
 AUSNAHME — Abschnitte, die mit "ENTSCHEIDUNG:" beginnen, sind verbindliche
 Festlegungen der Spielleitung. Sie haben Vorrang vor JEDEM widersprechenden
-Beleg aus den Sessions. Schreibe den Eintrag so, als wäre die Festlegung die
-Tatsache; erwähne die widerlegten Varianten höchstens kurz als frühere
-Fehlannahme. Führe einen so entschiedenen Punkt NICHT unter
+Beleg aus den Sessions. Schreibe den Eintrag so, als wäre die Festlegung schon
+immer die Tatsache gewesen. Führe einen so entschiedenen Punkt NICHT unter
 "# Offene Konflikte" auf.
+
+Diese Abschnitte sind Anweisungen AN DICH, kein zu zitierender Text. Setze sie
+still um: Erwähne NICHT, dass eine Entscheidung getroffen wurde, und zähle die
+verworfenen Varianten NICHT auf — weder als "frühere Fehlannahme" noch als
+"in den Quellen auch als X transkribiert". Falsche Schreibweisen und
+Transkriptionsfehler sind Artefakte der Spracherkennung; sie stehen in den
+Aliases des Frontmatters und haben im Fließtext nichts verloren. Benutze
+einfach durchgehend die festgelegte Schreibweise.
+
+Eine sachliche Korrektur, die im Spiel selbst stattfand ("die Gruppe hielt ihn
+lange für tot"), ist davon unberührt und darf erzählt werden.
 {sources}
 """
 

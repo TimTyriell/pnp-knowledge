@@ -2,7 +2,7 @@
 type: Conflict
 title: 'Offener Konflikt: Perry'
 description: Widersprüchliche Belege — menschliche Entscheidung nötig.
-timestamp: '2026-08-01T12:07:52+00:00'
+timestamp: '2026-08-05T20:00:24+00:00'
 id: CONFLICT_NPC_PERRY_DAS_SCHNABELTIER
 status: open
 concept: npcs/perry_das_schnabeltier
