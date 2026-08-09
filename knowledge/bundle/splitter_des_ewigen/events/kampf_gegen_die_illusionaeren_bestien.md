@@ -10,7 +10,7 @@ id: EVENT_KAMPF_GEGEN_DIE_ILLUSIONAEREN_BESTIEN
 subtype: Kampf
 ---
 
-Zwei große [Silberbestien](/npcs/silberbestien.md) greifen an, lösen sich aber in Illusionen auf, als sie getroffen werden. Die eigentliche Bedrohung ist die Mutterkreatur, die die Illusionen erschafft und sich zurückzieht.
+Zwei große Silberbestien greifen an, lösen sich aber in Illusionen auf, als sie getroffen werden. Die eigentliche Bedrohung ist die Mutterkreatur, die die Illusionen erschafft und sich zurückzieht.
 
 # Belege
 

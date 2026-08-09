@@ -1,12 +1,16 @@
 from __future__ import annotations
 
 import argparse
+import json
 import logging
+import os
 import shutil
 import subprocess
 import sys
+import time
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime, timezone
 from pathlib import Path
 
 from pnp_okf.config import DeepSeekConfig, ConfigError, Paths
@@ -63,9 +67,48 @@ def _extract_all(
     return out
 
 
+def _state_dir() -> Path:
+    return Path(os.environ.get("PNP_STATE_DIR", "./state")).expanduser()
+
+
+def _write_run_status(started_at: str, ok: bool, error: str | None, counts: dict) -> None:
+    """Persist last-run metadata for the dashboard's GET /status endpoint.
+
+    No such record existed before this change — a run left only bundle
+    diffs and stdout logs behind, nothing a status endpoint could read.
+    """
+
+    state_dir = _state_dir()
+    state_dir.mkdir(parents=True, exist_ok=True)
+    ended_at = datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
+    run_id = started_at.replace(":", "").replace("-", "")
+    record = {
+        "run_id": run_id,
+        "started_at": started_at,
+        "ended_at": ended_at,
+        "ok": ok,
+        "error": error,
+        "counts": counts,
+    }
+    (state_dir / "last_run.json").write_text(
+        json.dumps(record, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    with open(state_dir / "history.jsonl", "a", encoding="utf-8") as f:
+        f.write(json.dumps({"ts": ended_at, **record}, ensure_ascii=False) + "\n")
+
+
 def cmd_run(args: argparse.Namespace) -> int:
     """Full pipeline: ingest -> extract -> resolve -> synthesize -> emit."""
 
+    started_at = datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
+    try:
+        return _run_pipeline(args, started_at)
+    except Exception as exc:
+        _write_run_status(started_at, ok=False, error=str(exc), counts={})
+        raise
+
+
+def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     paths = Paths.resolve(args.transcripts, args.bundle, args.cache)
     cfg = DeepSeekConfig.from_env()
 
@@ -170,6 +213,18 @@ def cmd_run(args: argparse.Namespace) -> int:
         "Visualize with the okf package:\n"
         "  python -m reference_agent visualize --bundle %s",
         paths.bundle_dir,
+    )
+
+    entities_by_type = dict(Counter(e.type for e in entities))
+    _write_run_status(
+        started_at,
+        ok=True,
+        error=None,
+        counts={
+            "entities_by_type": entities_by_type,
+            "conflicts_open": conflict_count,
+            "sessions_ingested": len(transcripts),
+        },
     )
     return 0
 

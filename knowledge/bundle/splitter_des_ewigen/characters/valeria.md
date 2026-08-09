@@ -1,69 +1,93 @@
 ---
 type: Character
 title: Valeria
-description: Valeria ist eine kleine Simja (Affenmagierin) mit nomadischem Hintergrund
-  und eine begabte Feuerzauberin. Sie ist neugierig, impulsiv und b…
+description: Valeria ist eine Simja (Affenmagierin) und Feuermagierin, die als impulsives
+  und neugieriges Mitglied der Gilde auftritt. Sie stammt aus ei…
 tags:
 - characters
 timestamp: '2025-11-18T00:00:00Z'
 id: CHAR_VALERIA
-aliases:
-- Cookie und Valeria
 ---
 
 ## Überblick
 
-Valeria ist eine kleine Simja (Affenmagierin) mit nomadischem Hintergrund und eine begabte Feuerzauberin. Sie ist neugierig, impulsiv und bekannt für ihren großen Appetit – ihre *Experience* lautet schlicht: „Essen ist großartig“. In den ersten Abenteuern der Kampagne gehörte sie zur aktiven Gruppe, die das Dorf Brechka gegen Goblins verteidigte und später einen Schrein des Gottes Nerash erkundete. Nach diesen Ereignissen zog sie sich aufgrund einer Schwangerschaft vorerst aus dem aktiven Geschehen zurück und wird seitdem nur noch durch Briefe und Nachrichten vertreten.
+Valeria ist eine Simja (Affenmagierin) und Feuermagierin, die als impulsives und neugieriges Mitglied der Gilde auftritt. Sie stammt aus einem nomadischen Hintergrund und zeichnet sich durch einen unstillbaren Appetit aus – ihr Experience-Eintrag lautet: „Essen ist großartig.“ Ihre Magie wirkt sie über einen großen Stab und ein ungewöhnliches Zauberbuch-System: eine Fliegerbrille mit eingeschobenen farbigen Scheiben, auf denen ihre Sprüche notiert sind. Im Laufe der Kampagne entwickelt sie sich von einer vorlauten Kämpferin zu einer Figur, die sich zeitweise mit dunklen Mächten einlässt, bevor sie sich aus persönlichen Gründen aus dem aktiven Abenteuerleben zurückzieht.
 
 ## Rolle in der Kampagne
 
-Valeria ist eine offensive Magierin und flexible Unterstützerin. Sie tritt als klassische Kampfzauberin auf, die mit Feuerzaubern (z. B. *Wild Flame*, Feuerblitze) Gegner ausschaltet, aber auch heilen (*Mending Touch*) und durch geschickte Täuschungen (vorgetäuschte Hammelkeule aus der Nomadentasche) Fallen stellen kann. In Kämpfen gibt sie oft Hope aus, um Verbündete wie [Rotunas](/characters/rotunas.md) zu unterstützen. Später fehlt sie bei wichtigen Missionen, was die Gruppe vor logistische Herausforderungen stellt. Ab Session 2025-09-17 wird sie als abwesend erwähnt, und ab November 2025 ist klar, dass sie wegen der Schwangerschaft nicht mehr zur Verfügung steht. Ihre Rolle verlagert sich damit von einer aktiven Abenteuerin zu einer Figur im Hintergrund, die aber durch Briefe und die Sorge der anderen präsent bleibt.
+Valeria wird zusammen mit [Rotunas](/characters/rotunas.md) in der ersten Session von der Gilde in das Dorf Brechka entsandt, um bei der Verteidigung gegen einen bevorstehenden Goblin-Angriff zu helfen. Sie hebt sich durch ihre Mischung aus kämpferischer Effektivität und kindlicher Impulsivität von den anderen Gildenmitgliedern ab.
+
+In den folgenden Sessions ist sie federführend an der Erkundung des Goblin-Lagers, der Zerstörung der roten Ketten des Speers und der Befreiung der angeketteten Kreatur in Nerashs Schrein beteiligt. Ihr Handeln am Schrein ist ein entscheidender Wendepunkt: Sie pustet die Kerze aus und entfernt damit die Barriere, aus reinem Übermut.
+
+In späteren Sessions ist Valeria abwesend. In der vierten Session wird ihr Fehlen von [Dodo](/characters/dodo.md) bedauert. In der fünften und sechsten Session wird ihr Fernbleiben durch [Esterossa](/characters/esterossa.md) aufgeklärt: Valeria ist schwanger und nimmt daher vorerst nicht mehr an den Abenteuern der Gruppe teil. Sie schickt einen Brief mit Gold und einem Ring.
 
 ## Wichtige Merkmale
 
-### Fähigkeiten & Kampfstil
+### Physis und Ausrüstung
 
-*   **Feuermagie:** Valerias Spezialität. Sie wirkt zerstörerische Zauber, etwa *Wild Flame*, mit denen sie in einem Moment gleich drei Goblins tötete. Ihre Feuerblitze, die sie mit einem *Great Staff* kanalisiert, sind präzise und verheerend.
-*   **Heilung:** Trotz ihres Schwerpunkts auf Angriffszaubern beherrscht sie *Mending Touch*, mit dem sie einen verwundeten Dorfbewohner versorgen konnte.
-*   **Magische Hilfsfertigkeiten:** In Session 3 versucht sie, einen Bannzauber zu wirken – einen Spruch, den sie einmal gelernt, aber nie perfektioniert hat. Mit Nachteil auf die Probe gelingt es ihr dennoch, die roten Ketten, die einen Speer fesselten, durch massive Hitzeeinwirkung aufzulösen und den Speer zu befreien.
-*   **Improvisation & Täuschung:** Ihre „Nomadentasche“ ermöglicht es ihr, vorgetäuschte Gegenstände hervorzuholen; mit einer vorgetäuschten Hammelkeule lockte sie einen Oger in eine Falle.
+Valeria wird als „kleine Simja-Magierin“ beschrieben, als „ein kleines Äffchen“[1]. Sie trägt eine markante Fliegerbrille, in die sie farbige Wechselscheiben mit ihren Zaubersprüchen einschiebt – je nach Bedarf klackt eine rote Scheibe für ihre Feuerzauber vor ihr Auge[2].
 
-### Ausrüstung & Auftreten
+Sie führt einen großen Stab („Great Staff“), mit dem sie Feuerblitze schleudert[1]. Zudem besitzt sie eine Nomadentasche, aus der sie unerwartete Gegenstände hervorholen kann, etwa eine vorgetäuschte Hammelkeule, mit der sie einen Oger in eine Falle lockt[2]. In der ersten Session erwirbt sie von einem Händler namens Berthold eine Armbrust, die sie später dem Wirt Hubert zur Verteidigung des Dorfes überlässt[1].
 
-*   **Fliegerbrille mit Wechselscheiben:** Valerias ungewöhnliches Zauberbuch. In die Brille kann sie farbige Scheiben einsetzen, auf denen Zaubersprüche notiert sind. Je nach gewähltem Glas klappt sie die passende Scheibe vor das Auge – im Kampf gegen Goblins war es beispielsweise eine rote Scheibe für *Wild Flame*. Der Spieler Benjamin beschreibt es: „Valeria hat so eine Fliegerbrille … Gläser, die sie sich in die Fliegerbrille reinschieben kann … je nachdem welches, klackt dann so vor das Auge so eine durchsichtige Scheibe in der Farbe.“
-*   **Great Staff:** Ihre Hauptwaffe für Feuerblitze.
-*   **Nomadentasche:** Quelle für Illusionen und nützliche Gegenstände.
-*   **Armbrust:** In Brechka kauft sie eine Armbrust von Berthold, reicht sie aber später an den Wirt Hubert weiter, als die Gruppe die Dorfverteidigung organisiert.
-*   **Erscheinung:** Als Simja ist sie ein kleines äffchenartiges Wesen, das gern auf Entdeckungstour geht (klettert in Häuser, reitet Ziegen).
+### Magische Fähigkeiten
+
+Valerias Magie ist feuerbasiert. Ihre wichtigsten belegten Zauber:
+
+- **Wild Flame**: Ein Feuerzauber, mit dem sie mehrere Gegner gleichzeitig treffen kann. In der zweiten Session tötet sie damit drei Goblins auf einmal[2].
+- **Feuerblitze über den Great Staff**: In der ersten Session erzielt sie damit den tödlichen Treffer gegen den Goblin-Späher[1].
+- **Mending Touch**: Ein Heilzauber, mit dem sie einen verwundeten Dorfbewohner versorgt[2].
+- **Magie-Bannen**: Sie verfügt über rudimentäre Kenntnisse in Bannmagie, auch wenn sie nach eigener Aussage „immer schlecht darin“ war und den Zauber nicht in ihrer täglichen Vorbereitung führt[3]. Dennoch gelingt es ihr unter erschwerten Bedingungen, die roten Ketten des Speers im Feuer aufzulösen.
 
 ### Wesenszüge
 
-*   **Neugierde und Impulsivität:** Sie klettert auf die Ziege Bertie, untersucht Dinge ohne langes Zögern und erschrickt dabei versehentlich ein Kind des Krämers. In Session 3 bläst sie kühn die Kerze an Nerashs Schrein aus, was die Barriere öffnet und eine angekettete Kreatur erscheinen lässt.
-*   **Übermut und Prahlerei:** Nach dem Auslöschen der Kerze ruft sie: „Hehe, Dips, meiner!“, als der Speer frei wird, und prahlt mit ihrer Tat. Später betet sie zu Nerash und bietet sich als dessen erste Dienerin an: eine Mischung aus Selbstbewusstsein und spiritueller Suche.
-*   **Hilfsbereitschaft und Mitgefühl:** Sie versorgt den betrunkenen Nip, heilt den verwundeten Dorfbewohner und treibt die Bewohner Brechkas zur Verteidigung an. Zugleich zeigt sie ein gutes Gespür für Gefahren: Den kalten Speer legt sie nach dem Berühren schnell wieder hin, weil er ihr ein ungutes Gefühl gibt.
-*   **Misstrauen:** Gegenüber der Halbelfe [Lendras](/npcs/lendras.md) ist sie vorsichtig, vermag aber keine Lügen zu erkennen.
+Valeria ist neugierig, impulsiv und zuweilen übermütig. Sie klettert in fremde Häuser, reitet auf der Ziege Bertie und erschreckt dabei versehentlich das Kind der Krämerfamilie[1]. Im Kampf prahlt sie mit ihren Erfolgen und ruft nach dem Ergreifen des Speers triumphierend: „Hehe, Dips, meiner!“ – nur um ihn sofort wieder hinzulegen, als sie die unheimliche Kälte spürt: „Ich mag den nicht, den Speer (...) da sträuben sich meine ganzen Haare“[3].
+
+Sie zeigt eine ausgeprägte Hilfsbereitschaft: Sie treibt die Dorfbewohner zur Verteidigung an, versorgt den betrunkenen Nip und gibt mehrfach Hope aus, um [Rotunas](/characters/rotunas.md) zu unterstützen[1].
+
+Eine dunklere Facette zeigt sich am Schrein von [Nerash](/deities/nerash.md). Aus reinem Übermut pustet sie die Kerze aus und prahlt anschließend mit ihrer Tat. Nach der Rückkehr bietet sie sich Nerash an: „Du bist mein Gott, ich bin deine erste Dienerin, deine ergebene Dienerin.“[3] Dies offenbart eine gewisse Naivität gegenüber den Mächten, mit denen sie spielt, und eine Bereitschaft, sich schnell neuen Einflüssen zu öffnen.
+
+Sie ist zudem misstrauisch gegenüber bestimmten Personen – im Gespräch mit [Lendras](/npcs/lendras.md) versucht sie, Lügen zu erkennen, findet aber keine[2].
 
 ## Beziehungen und Verbindungen
 
-*   **[Rotunas](/characters/rotunas.md):** Ihr Mitstreiter und Empfänger ihrer Hoffnungspunkte in Kämpfen. In Session 2 brüllt sie nach ihm, um Unterstützung zu holen.
-*   **[Cookie](/characters/cookie.md) und [Lindo Laut](/characters/lindo_laut.md):** Werden in Session 4 gemeinsam mit Valeria genannt, als die Gruppe beschließt, eine Prüfung gemeinsam mit ihnen zu machen. Cookie ist auch in späteren Sessions als enge Vertraute erkennbar; in Session 4 wird erwähnt, dass sowohl Cookie als auch Valeria bei der Prüfung fehlen.
-*   **[Esterossa](/characters/esterossa.md):** Überbringt im November 2025 einen Brief von Valeria, in dem die Schwangerschaft mitgeteilt wird. Sie bleibt also in Kontakt mit der Gruppe.
-*   **Bewohner von Brechka:** Sie interagiert mit dem Krämer Berthold (kaufte ihm eine Armbrust ab), dem Wirt Hubert (gab ihm ihre Armbrust) und vielen anderen Dorfbewohnern während der Verteidigung.
-*   **[Nerash](/deities/nerash.md):** Die Gottheit, deren Schrein die Gruppe erkundet. Nach den Ereignissen betet Valeria zu Nerash und bietet sich als Dienerin an. Sie zeigt eine persönliche Verbindung zu diesem Wesen.
+- **[Rotunas](/characters/rotunas.md)**: Valeria wird zusammen mit Rotunas nach Brechka entsandt. Im Kampf brüllt sie nach ihm („Rotunas, ich könnte hier ein bisschen Muskelköfte brauchen“) und gibt mehrfach Hope aus, um ihn zu unterstützen[1][2].
+- **[Dodo](/characters/dodo.md)**: Dodo erwähnt Valeria in der vierten Session namentlich und bedauert, dass sie und [Cookie](/characters/cookie.md) bei der Prüfung fehlen[4].
+- **[Esterossa](/characters/esterossa.md)**: Esterossa ist die Überbringerin des Briefes, in dem Valeria ihre vorläufige Abwesenheit wegen der Schwangerschaft erklärt[6].
+- **[Nerash](/deities/nerash.md)**: Nachdem Valeria die Kerze an Nerashs Schrein auspustet und die Barriere entfernt, betet sie zu dem dunklen Wesen und bietet sich als erste Dienerin an[3].
+- **Das ungeborene Kind**: In der sechsten Session bestätigt Esterossa, dass Valeria „eine kleine Valeria“ erwartet und „unpässlich für die nächste Zeit für diese Gruppe“ ist[6]. Der Spielleiter bezeichnet es scherzhaft als „Cookie (...) noch im Fötus-Status“[6].
 
 ## Chronologie
 
-*   **Session 1 (2025-04-09):** Valeria wird zusammen mit Rotunas als neue, alte Figur in die Gruppe eingeführt. Sie erkundet Brechka (klettert in Leandras’ Haus, reitet Ziege Bertie), kauft eine Armbrust und versorgt den betrunkenen Nip. Während der Vorbereitung auf den Goblin-Angriff motiviert sie die Dorfbewohner und gibt ihre Armbrust an Hubert weiter. Im Kampf gegen den Goblin-Späher landen ihre Feuerblitze den tödlichen Treffer. Sie setzt Hope ein, um Rotunas zu helfen.
-*   **Session 2 (2025-04-23):** Im Kampf gegen mehrere Goblins und einen Oger nutzt sie erneut *Wild Flame* und eine vorgetäuschte Hammelkeule, tötet drei Goblins mit einem mächtigen Schlag und heilt einen Dorfbewohner. Sie ist misstrauisch gegenüber Lendras, aber deren Aussagen scheinen wahr zu sein. Ihre Fliegerbrille mit Wechselscheiben wird erstmals detailliert beschrieben.
-*   **Session 3 (2025-07-09):** In Nerashs Schrein löst sie mit einem improvisierten Bannzauber die roten Ketten eines Speers. Als sie den Speer anfasst, spürt sie eine unangenehme Kälte und legt ihn sofort wieder ab. Kurz darauf pustet sie die Kerze am Schrein aus, wodurch die Barriere fällt und eine Kreatur sichtbar wird. Nach der Rückkehr betet sie zu Nerash und möchte seine erste Dienerin werden.
-*   **Session 4 (2025-09-17):** Sie ist nicht anwesend. Dodo erwähnt, dass sie und Cookie bei einer geplanten Prüfung eigentlich dabei sein sollten.
-*   **Session 5 (2025-11-14):** Sie fehlt erneut, diesmal aufgrund ihrer Schwangerschaft. Sie schickt einen Brief mit Gold und einem Ring als Zeichen ihrer Verbundenheit.
-*   **Session 6 (2025-11-18):** Esterossa bestätigt, dass Valeria ein Kind erwartet und deshalb vorerst nicht an Abenteuern teilnehmen kann. Der Brief wird der Gruppe überbracht. Cookie wird scherzhaft als „kleine Tochter oder Sohn von ... Valeria“ erwähnt, aber das ist nicht wörtlich zu nehmen (GM scherzt).
+### Session 1 (2025-04-09) – Ankunft in Brechka
+
+Valeria wird mit [Rotunas](/characters/rotunas.md) von der Gilde nach Brechka geschickt. Sie klettert in Leandras' Haus, reitet auf der Ziege Bertie, kauft Berthold eine Armbrust ab und versorgt den betrunkenen Nip. Im Kampf gegen den Goblin-Späher nutzt sie ihren Great Staff für Feuerblitze und erzielt den tödlichen Treffer. Beim Verteidigungsplan treibt sie die Bewohner an und gibt ihre Armbrust an den Wirt Hubert weiter.
+
+### Session 2 (2025-04-23) – Verteidigung und Goblin-Jagd
+
+Valeria stellt sich mehreren Goblins und einem Oger. Mit ihrer Nomadentasche lockt sie den Oger mit einer vorgetäuschten Hammelkeule in eine Falle. Mit Wild Flame tötet sie drei Goblins gleichzeitig. Sie heilt einen verwundeten Dorfbewohner mit Mending Touch und misstraut Lendras.
+
+### Session 3 (2025-07-09) – Der Speer und Nerashs Schrein
+
+Valeria nutzt Bannmagie, um die roten Ketten des Speers im Feuer aufzulösen. Sie ergreift den Speer kurz, spürt aber die unangenehme Kälte und legt ihn wieder hin. Später pustet sie die Kerze an Nerashs Schrein aus, wodurch die Barriere fällt und die angekettete Kreatur erscheint. Sie prahlt mit der Tat und bietet sich Nerash als erste Dienerin an.
+
+### Session 4 (2025-09-17) – Erwähnung der Abwesenheit
+
+Valeria fehlt in dieser Session. Dodo erwähnt, dass sie und Cookie bei der Prüfung dabei sein sollten[4].
+
+### Session 5 (2025-11-14) – Brief und Schwangerschaft
+
+Valeria ist erneut abwesend. Sie schickt einen Brief mit Gold und einem Ring. Ihre Schwangerschaft wird als Grund genannt[5].
+
+### Session 6 (2025-11-18) – Bestätigung des Rückzugs
+
+Esterossa bestätigt, dass Valeria ein Kind erwartet und vorerst nicht mehr an Abenteuern teilnehmen kann. Sie ist „unpässlich für die nächste Zeit für diese Gruppe“[6].
 
 ## Offene Fragen
 
-*   Die genauen Umstände ihrer Schwangerschaft (Vaterschaft, Zeitpunkt der Empfängnis) sind nicht bekannt.
-*   Ob und wann Valeria nach der Geburt zur aktiven Gruppe zurückkehren wird, ist ungewiss. Ihre Beziehung zu Nerash und die Rolle als eventuelle Dienerin bleiben ebenso ungeklärt wie die Frage, welche Auswirkungen ihre Mutterschaft auf ihre magischen Ambitionen haben wird.
+- Ist das ungeborene Kind tatsächlich von Cookie (so der Scherz des Spielleiters: „noch im Fötus-Status“) oder handelt es sich um eine eigenständige Figur?
+- Hat Valerias Gebet an Nerash und ihr Angebot, seine Dienerin zu sein, langfristige Konsequenzen für sie oder das Kind?
+- Wer ist der Vater des Kindes, und welche Rolle spielt er in Valerias Leben während ihrer Abwesenheit?
+- Wird Valeria nach der Geburt des Kindes in die Gruppe zurückkehren, und wenn ja, wie wird sich ihre Rolle verändern?
 
 ## Belege
 

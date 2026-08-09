@@ -75,6 +75,18 @@ One service, **two modules** — not two services. The risk isolation the read/w
 
 Stateless client of the KB API. Generates recap (grounded, cited) and optional outlook. No persistence beyond output files.
 
+### 3.4 Dashboard — `services/dashboard/` (Glossar tab)
+
+Mostly a read-only status view (§3.0), but its Glossar tab is a second *author*
+of `knowledge/entity_rules.yaml` — the pipeline (§3.1) is still never one.
+It lists every entity with its aliases and their literal occurrence count
+over the transcripts, and a Sync button patches the rules file directly
+(comment-preserving line patch, loopback-only, validated before write). The
+invariant that keeps ADR-001 intact: it only ever writes hand-authored
+*rules*, never `knowledge/bundle/` or the generated `entity_registry.yaml`,
+and it never triggers a pipeline run — a rules edit just marks the bundle
+stale until someone runs `pnp run` themselves.
+
 ## 4. API contracts (sketch)
 
 ### 4.1 KB service

@@ -10,7 +10,7 @@ id: EVENT_KAMPF_GEGEN_DIE_GHULE_2026-03-10
 subtype: Kampf
 ---
 
-In den Ruinen von [Breska](/locations/breska.md) überrascht die Gruppe vier [Ghule](/npcs/ghule.md) im Hinterhalt. [Brim](/characters/brim.md) entdeckt sie rechtzeitig, und der Kampf beginnt zu ihren Gunsten. Lunara verbrennt drei mit ihrem Schattenfeuer, während [Dodo](/characters/dodo.md) und Brim den letzten erledigen. [Ser Eulenweiss](/npcs/ser_eulenweiss.md)’ Leute sind kaum involviert.
+In den Ruinen von [Breska](/locations/breska.md) überrascht die Gruppe vier Ghule im Hinterhalt. [Brim](/characters/brim.md) entdeckt sie rechtzeitig, und der Kampf beginnt zu ihren Gunsten. Lunara verbrennt drei mit ihrem Schattenfeuer, während [Dodo](/characters/dodo.md) und Brim den letzten erledigen. [Ser Eulenweiss](/npcs/ser_eulenweiss.md)’ Leute sind kaum involviert.
 
 # Belege
 

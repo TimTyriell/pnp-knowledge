@@ -10,7 +10,7 @@ id: ITEM_ZEBROSIA_SCHWERT_DES_KOENIGS
 subtype: Artefakt
 ---
 
-Zebrosia ist das legendäre Schwert von [König Zebros](/npcs/koenig_zebros.md), das seit Jahrzehnten in einem Stein im Garten von [Crowfin Manor](/locations/crowfin_manor.md) steckt. Der Legende nach kann es Götter besiegen, aber jeder, der es zu ziehen versucht und nicht würdig ist, zerfällt zu Asche. Lionel warnt die Gruppe eindringlich davor, es zu berühren. [Slicks](/npcs/slix_vasul.md) zeigt großes Interesse daran und zwingt die Gruppe, es anzufassen, was zum Kampf und Lionels Tod führt. Nox rät ebenfalls davon ab, es sei denn, man fühlt sich bereit.
+Zebrosia ist das legendäre Schwert von [König Zebros](/factions/koenigreich_zebros.md), das seit Jahrzehnten in einem Stein im Garten von [Crowfin Manor](/locations/crowfin_manor.md) steckt. Der Legende nach kann es Götter besiegen, aber jeder, der es zu ziehen versucht und nicht würdig ist, zerfällt zu Asche. Lionel warnt die Gruppe eindringlich davor, es zu berühren. [Slicks](/npcs/slix_vasul.md) zeigt großes Interesse daran und zwingt die Gruppe, es anzufassen, was zum Kampf und Lionels Tod führt. Nox rät ebenfalls davon ab, es sei denn, man fühlt sich bereit.
 
 # Belege
 

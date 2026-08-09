@@ -10,7 +10,7 @@ id: EVENT_AUFTRAGSERTEILUNG_FUER_VALUNA
 subtype: Verhandlung
 ---
 
-[Vitius](/npcs/vitius.md) erteilt der Gruppe den Auftrag, eine heilende Phiole aus [Valuna](/locations/valuna.md) zu holen, um mehrere verwundete [Seraphen](/npcs/die_drei_gefallenen_seraphen.md) zu retten. Er betont die Dringlichkeit und bietet die Gildenmeisterschaft von [Ehrenfels](/locations/ehrenfels.md) als Belohnung. Die Gruppe reagiert zögernd, was Vitius nervös macht. Die Sitzung endet mit der offenen Entscheidung.
+[Vitius](/npcs/vitius.md) erteilt der Gruppe den Auftrag, eine heilende Phiole aus [Valuna](/locations/valuna.md) zu holen, um mehrere verwundete Seraphen zu retten. Er betont die Dringlichkeit und bietet die Gildenmeisterschaft von [Ehrenfels](/locations/ehrenfels.md) als Belohnung. Die Gruppe reagiert zögernd, was Vitius nervös macht. Die Sitzung endet mit der offenen Entscheidung.
 
 # Belege
 

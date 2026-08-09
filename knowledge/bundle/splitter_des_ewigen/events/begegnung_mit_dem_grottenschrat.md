@@ -10,7 +10,7 @@ id: EVENT_BEGEGNUNG_MIT_DEM_GROTTENSCHRAT
 subtype: Entdeckung
 ---
 
-Auf dem Waldpfad stößt die Gruppe auf einen sterbenden [Grottenschrat](/npcs/grottenschrate.md) mit einem Kriegspfeil in der Brust. [Talron](/npcs/talron.md) sichert ihn, [Sange](/characters/sange.md) erhält eine magische Vision des vorausgegangenen Angriffs, und [Saris](/characters/saris.md) tötet ihn schließlich mit einem Dolch.
+Auf dem Waldpfad stößt die Gruppe auf einen sterbenden Grottenschrat mit einem Kriegspfeil in der Brust. [Talron](/npcs/talron.md) sichert ihn, [Sange](/characters/sange.md) erhält eine magische Vision des vorausgegangenen Angriffs, und [Saris](/characters/saris.md) tötet ihn schließlich mit einem Dolch.
 
 # Belege
 

@@ -10,7 +10,7 @@ id: NPC_SERAPHEN_VON_VORGOTHA
 subtype: Kult
 ---
 
-Geflügelte Diener [Vorgultars](/deities/vorgul_tar.md) mit magischen Lichtlanzen. Zu Beginn wurde bereits einer von Lunara getötet; später greifen sie das [Kristallbiest](/npcs/kristallbiest.md) aus der Luft an und verwickeln es in einen Kampf. Sie sind loyal und diszipliniert, aber nicht unverwundbar.
+Geflügelte Diener [Vorgultars](/deities/vorgul_tar.md) mit magischen Lichtlanzen. Zu Beginn wurde bereits einer von Lunara getötet; später greifen sie das Kristallbiest aus der Luft an und verwickeln es in einen Kampf. Sie sind loyal und diszipliniert, aber nicht unverwundbar.
 
 # Belege
 

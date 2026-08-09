@@ -10,7 +10,7 @@ id: EVENT_RETTUNG_VON_LENDRAS
 subtype: Kampf
 ---
 
-Während der Schlacht wird [Lendras](/npcs/lendras.md)' Haus angegriffen. [Esterossa](/characters/esterossa.md), [Dodo](/characters/dodo.md) und [Rotunas](/characters/rotunas.md) eilen hin und besiegen eine rabenartige Kreatur und einen [Grottenschrat](/npcs/grottenschrate.md). Lendras wird gerettet und schließt sich der Gruppe an.
+Während der Schlacht wird [Lendras](/npcs/lendras.md)' Haus angegriffen. [Esterossa](/characters/esterossa.md), [Dodo](/characters/dodo.md) und [Rotunas](/characters/rotunas.md) eilen hin und besiegen eine rabenartige Kreatur und einen Grottenschrat. Lendras wird gerettet und schließt sich der Gruppe an.
 
 # Belege
 

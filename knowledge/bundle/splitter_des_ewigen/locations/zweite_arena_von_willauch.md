@@ -12,7 +12,7 @@ aliases:
 - Zweite Arena (Netzbereich)
 ---
 
-Ein abgeschirmtes, mit Netzen überspanntes Gelände außerhalb von [Willoch](/locations/willauch.md). Eine Kutsche bringt die Gruppe dorthin. Unter der Oberfläche befindet sich ein Höhlensystem mit der [Phasenspinne](/npcs/phasenspinne.md) und ihrem Nest. Die Umgebung ist klein und wirkt künstlich für die Kämpfe angelegt.
+Ein abgeschirmtes, mit Netzen überspanntes Gelände außerhalb von [Willoch](/locations/willauch.md). Eine Kutsche bringt die Gruppe dorthin. Unter der Oberfläche befindet sich ein Höhlensystem mit der Phasenspinne und ihrem Nest. Die Umgebung ist klein und wirkt künstlich für die Kämpfe angelegt.
 
 # Belege
 

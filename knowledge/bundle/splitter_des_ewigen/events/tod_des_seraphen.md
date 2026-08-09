@@ -10,7 +10,7 @@ id: EVENT_TOD_DES_SERAPHEN
 subtype: Tod
 ---
 
-Der [Seraph](/npcs/seraphen.md) stirbt, nachdem die Kristalle seine Essenz absorbiert haben. Er fällt zusammen und löst sich vollständig auf, bevor [Esterossa](/characters/esterossa.md) Gebet ihn retten kann.
+Der Seraph stirbt, nachdem die Kristalle seine Essenz absorbiert haben. Er fällt zusammen und löst sich vollständig auf, bevor [Esterossa](/characters/esterossa.md) Gebet ihn retten kann.
 
 # Belege
 

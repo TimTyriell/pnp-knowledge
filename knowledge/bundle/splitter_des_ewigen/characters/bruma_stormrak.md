@@ -1,70 +1,55 @@
 ---
 type: Character
 title: Bruma Stormrak
-description: Bruma Stormrak ist ein blau geschuppter Drakoner von über zwei Metern
-  Größe und ein mächtiger Sturmzauberer. Er stößt als neuer Mitstreiter…
+description: Bruma Stormrak ist ein 2,10 Meter großer blauer Drakoner von eindrucksvoller,
+  ruhiger Präsenz, die jedoch stets eine unterschwellige Aggres…
 tags:
 - characters
-timestamp: '2026-07-23T00:00:00Z'
+timestamp: '2026-08-06T00:00:00Z'
 id: CHAR_BRUMA_STORMRAK
 ---
 
 ## Überblick
 
-Bruma Stormrak ist ein blau geschuppter Drakoner von über zwei Metern Größe und ein mächtiger Sturmzauberer. Er stößt als neuer Mitstreiter zur Gruppe um [Talron](/npcs/talron.md) und fällt sofort durch seine beherrschte, aber unterschwellig aggressive Präsenz sowie seine außergewöhnliche Kontrolle über Blitzenergie auf. Sein Erkennungszeichen ist ein überdimensionierter Metallstab mit Spulenform, den er sowohl als Wanderstab wie auch als Fokus für seine Magie einsetzt.
+Bruma Stormrak ist ein 2,10 Meter großer blauer Drakoner von eindrucksvoller, ruhiger Präsenz, die jedoch stets eine unterschwellige Aggression birgt – „so eine Raubkatze, die einfach auf der Jagd ist“ [1]. Seine matten blauen Schuppen sind an den Spitzen heller und zeigen an manchen Stellen winzige Funkenüberschläge; seine Augen leuchten saphirblau. Er führt einen über 2,30 Meter langen Metallstab mit spulenartigen Elementen, der gleichzeitig Wanderstab und magisches Werkzeug ist. Eine kleinere Version dieses Stabs trägt er als Halskette [1]. Brumas Magie ist elementar mit Blitzen verbunden; er beschwört leuchtende Blitzelementare und hüllt sich im Kampf in knisternde Energie. Trotz seiner kontrollierten Ausstrahlung ist er von einem tiefen Zorn und einer großen Einsamkeit geprägt, die aus dem Verlust seiner Heimat rühren [3].
 
 ## Rolle in der Kampagne
 
-Bruma wird von [Talron](/npcs/talron.md) als Verstärkung in die Gruppe geholt, als die Bedrohung durch einen Gnoll-Stamm immer dringlicher wird. Er bringt nicht nur offensive Kampfkraft mit, sondern auch strategischen Weitblick und ein entschlossenes Drängen auf schnelles Handeln. In der ersten gemeinsamen Operation – der Erkundung und Säuberung der Minen – agiert er als Speerspitze und taktischer Kopf, der seine Blitzmagie präzise einsetzt, Fallen legt und die Gruppe zur Umkehr bewegt, als er die gegnerische Übermacht erkennt. Seine Rolle ist die eines impulsiven, aber kontrolliert zuschlagenden Sturmbeschwörers, der Kameradschaft mit tödlicher Effektivität verbindet.
+Bruma wird von [Talron](/npcs/talron.md) als neuer Mitstreiter in die Gruppe eingeführt [1]. Von Beginn an ist er derjenige, der die Gefahr durch die Gnolle am nüchternsten einschätzt und eindringlich zum Handeln drängt – sei es durch entschlossenes Vorangehen in die Mine oder durch das spätere Plädoyer für einen Rückzug angesichts der gewaltigen Übermacht [1][2]. Seine donnernde Präsenz und seine Blitzmagie sind entscheidend, um die widerstrebenden Halblinge zur Evakuierung ihres Hofes zu bewegen [3]. In einer emotionalen Konfrontation mit [Xenia](/npcs/xenia_rotkam.md) offenbart er den Verlust seiner Heimat und überzeugt sie dadurch, Kleinringtal zu evakuieren [3]. Bruma fungiert so als moralischer Kompass und treibende Kraft, der die Dringlichkeit ihrer Mission immer wieder ins Bewusstsein ruft.
 
 ## Wichtige Merkmale
 
-### Erscheinung und Auftreten
+- **Auftreten und Wesen:** Bruma strahlt eine meditative Ruhe aus, die von unterdrückter Wut und ständiger Anspannung unterlegt ist. Er wird schnell zornig, wenn er das Gefühl hat, dass eine Bedrohung nicht ernst genug genommen wird: „Dass hier keiner das ernst nimmt. Die Sache, der nicht versteht. Es könnte gefährlich sein für das ganze Dorf.“ [2]. Gleichzeitig zeigt er eine verletzliche Seite und zitiert Weisheiten seiner Großmutter [3].
 
-Bruma ist ein etwa 2,10 Meter großer, drakonider Humanoider mit mattblauer Schuppenhaut, die an den Spitzen in ein helleres Blau übergeht. Seine Augen sind saphirblau. Die Schuppen zeigen gelegentlich winzige Funkenüberschläge – ein erstes Anzeichen der in ihm schlummernden elektrischen Energie.
+- **Blitzmagie und Kampf:** Brumas elementare Magie manifestiert sich in Blitzen. Er kann mit seinem Stab ein leuchtendes Blitzelementar beschwören, das eigenständig Wache hält [1]. Im Kampf setzt er „Unleashed Chaos“ und „Elemental Origin“ ein und vernichtet Gegner mit Donnerschlägen und zielgenauen Angriffen. Zudem kann er mit Stress seine Anti-Chaos-Tokens regenerieren [2]. Sein Elementar-Klon wird später taktisch genutzt, um einen Geheimgang zum Einsturz zu bringen [2].
 
-Er trägt eine leichte, aber partiell verstärkte Gewandung: Schulterplatten aus Metall, einen metallbeschlagenen Waffenrock und ansonsten relativ leichte Kleidung. Um den Hals hängt eine filigrane Halskette mit Spulenelementen, die eine verkleinerte Version seines Stabes darstellt.
+- **Einschüchternde Präsenz:** Bruma versteht es, seine Größe und Magie gezielt zur Einschüchterung einzusetzen – sei es bei einem misstrauischen Wachmann, den er zum Schweigen bringt, oder bei den Halblingen, denen er mit knisternden Blitzen droht: „…ich alleine würde hier ausreichen, um euch alle zu Asche zu verwandeln. Und das, was kommt, ist noch viel, viel schlimmer.“ [3].
 
-Über seinem gesamten Wesen liegt eine tiefe, fast meditative Ruhe, unter der jedoch stets eine latente Aggression brodelt – von einem Betrachter der Gruppe beschrieben wie eine „Raubkatze, die einfach auf der Jagd ist“. Seine Gesichtszüge bleiben dabei völlig neutral.
-
-### Ausrüstung und Fokus: Der Stab
-
-Sein zentrales Werkzeug ist ein gewaltiger Metallstab von ca. 2,30 Metern Länge, der ihn noch überragt. Der Stab ist mit Spulen versehen und wirkt durch seine Materialwahl und Form weniger wie ein Wanderstab denn wie ein technisch anmutender Blitzableiter. Er dient Bruma als Kanal für seine stürmischen Zauber.
-
-### Fähigkeiten
-
-Bruma ist ein **Sturmzauberer**, der Blitzenergie manipulieren und mit höchster Präzision einsetzen kann:
-
-- **Blitzgeschosse:** Er kann tödliche Blitzprojektile erzeugen, mit denen er einzelne Ziele punktgenau ausschaltet – so etwa einen gnollischen Bogenschützen und einen Bugbear-Wächter.
-- **Blitz-Klon:** Bruma kann eine exakte, aus Blitzenergie bestehende Kopie seiner selbst heraufbeschwören. Dieser Klon agierte in der Mine als Träger und wurde später benutzt, um einen Geheimeingang zu zerstören.
-- **Blitzelementar:** Bereits in der ersten Nacht beschwor er ein leuchtendes Wesen aus Blitz, das über das Lager der Gruppe wachte.
-- **Kombinierte Angriffe:** Gemeinsam mit [Kaya](/characters/kaya.md) nutzte er seine Energie, um Ruinenabschnitte kontrolliert zum Einsturz zu bringen und darin zahlreiche Gnolle zu begraben.
-- **Aura und Einschüchterung:** Seine knisternde Präsenz reicht aus, um misstrauische Wachleute zum Nachgeben zu bewegen; er muss dafür kaum Worte verlieren.
-
-Sein Kampfstil ist direkt, aber nicht kopflos – er setzt seine Fähigkeiten dosiert und taktisch ein, unterstützt Verbündete und analysiert die Lage, bevor er losschlägt.
+- **Symbolische Gegenstände:** Von einem Halbling-Jungen erhält er eine geschnitzte Figur und einen Heiltrank. Xenias Schürze nimmt er als Symbol an sich [3].
 
 ## Beziehungen und Verbindungen
 
-- **[Talron](/npcs/talron.md):** Talron ist derjenige, der Bruma als neuen Mitstreiter in die Gruppe einführt. Er scheint ihm zu vertrauen und lässt ihn vor Hauptmann Aaron Bericht erstatten.
-- **[Kaya](/characters/kaya.md):** Bruma zeigt eine besondere Verbindung zu Kaya. Er schenkt ihr eine Halskette in Form seines Stabes mit den Worten, sie solle Kaya beschützen, wenn er selbst es nicht könne. Später kooperieren beide taktisch bei der Sprengung der Tunnelruinen.
-- **[Saris](/characters/saris.md):** In der Schlacht spendet Bruma Saris einen Hoffnungspunkt (Hope) und verstärkt damit dessen Kampfeswut. Saris’ unorthodoxe Methoden akzeptiert Bruma ohne Einwand.
-- **Hauptmann Aaron:** Bruma berichtet vor Aaron und Talron vom gegrabenen Gnoll-Tunnel und drängt auf sofortiges Handeln. Er respektiert die militärische Struktur, setzt sich aber entschlossen durch.
-- **Wachmannschaft:** Einen misstrauischen Wachposten schüchtert Bruma mühelos ein, um der Gruppe das Lagern nahe der Mine zu ermöglichen.
+- **[Talron](/npcs/talron.md):** Stellt Bruma als neuen Mitstreiter vor und scheint Vertrauen in ihn zu haben [1].
+- **[Kaya](/characters/kaya.md):** Bruma schenkt Kaya eine Halskette in Form seines Stabs mit den Worten, sie solle sie beschützen, wenn er es nicht könne [1].
+- **[Saris](/characters/saris.md) und [Sange](/characters/sange.md):** Nach Sanges Verwandlung und Saris' sprechenden Schädeln wird Bruma zunehmend misstrauisch [2]. Dennoch verweist er bei den Halblingen auf Sage als Helfer beim Verladen der Tiere [3].
+- **Hauptmann Aaron:** Bruma berichtet ihm von dem gegrabenen Tunnel der Gnolle und drängt auf schnelles Handeln [1].
+- **[Xenia](/npcs/xenia_rotkam.md):** In einer emotionalen Konfrontation offenbart Bruma ihr seine Einsamkeit und den Verlust seiner Heimat und bewegt sie so zur Evakuierung Kleinringtals [3].
+- **Die Halblinge:** Brumas Einschüchterung und Überzeugungskraft bringen die Halblinge dazu, ihren Hof zu verlassen. Ein Junge übergibt ihm aus Dank eine geschnitzte Figur und einen Heiltrank [3].
 
 ## Chronologie
 
-### Session 1: Ankunft und Vorstoß in die Mine (2026-07-10)
-Die Gruppe findet Bruma auf einer Ruine meditierend vor. Er springt grazil herab, stellt sich mit ruhiger Intensität vor, schenkt Kaya die schützende Halskette und beschwört ein Blitzelementar zur Nachtwache. Er bleibt selbst wach und angespannt. Vor [Talron](/npcs/talron.md) und Hauptmann Aaron berichtet er von einem Tunnel, den Gnolle gegraben haben, und drängt energisch auf ein Eingreifen. Nachdem er einen Wachmann eingeschüchtert hat, schreitet er als Erster in die Mine – bereits knisternd vor Blitzenergie – mit den Worten: *„Der Blitz ist es, der die Arbeit tut.“*
+**Session 2026-07-10 [1]:** Bruma wird von Talron als kampfbereiter Drakoner vorgestellt. Er meditiert auf einer Ruine und springt grazil herab, als die Gruppe eintrifft. Er schenkt Kaya die schützende Halskette und lässt ein Blitzelementar über das Nachtlager wachen, während er selbst wach und angespannt bleibt. Bruma berichtet Hauptmann Aaron von dem Tunnel der Gnolle und drängt auf sofortiges Handeln. Nachdem er einen misstrauischen Wachmann einschüchtert, schreitet er als Erster in die Mine – knisternd vor Blitzenergie und mit dem Ausspruch: „Der Blitz ist es, der die Arbeit tut.“
 
-### Session 2: Kampf in der Mine und strategischer Rückzug (2026-07-23)
-Im Minenkomplex setzt Bruma seine Blitzmagie mit verheerender Wirkung ein. Er eliminiert gezielt einen Bogenschützen und den Bugbear-Wächter. Durch die Erschaffung eines Blitz-Klons verschafft er der Gruppe einen Träger und zerstört später den Geheimeingang. Zusammen mit [Kaya](/characters/kaya.md) bringt er Ruinenteile zum Einsturz und begräbt eine große Anzahl Gnolle unter sich. Er entdeckt eine Kriegskarte und einen Blutstein, erkennt daran die Übermacht des Feindes und plädiert überzeugend für den sofortigen Rückzug ins Dorf, um Verstärkung zu holen und die Informationen zu sichern.
+**Session 2026-07-23 [2]:** In der Mine zeigt sich Bruma von Beginn an zornig über die seiner Ansicht nach verharmloste Bedrohung für das Dorf. Im Kampf setzt er seine Blitzmagie effektiv ein und vernichtet mehrere Gegner. Nach Sanges Verwandlung und Saris' sprechenden Schädeln wird er zunehmend misstrauisch. Angesichts des riesigen Gnoll-Hauptlagers plädiert er eindringlich für den Rückzug. Er findet wertvolle Beute wie einen Blutstein und eine Kriegskarte. Sein Elementar-Klon wird genutzt, um später einen Geheimgang zum Einsturz zu bringen.
+
+**Session 2026-08-06 [3]:** Bruma überzeugt die widerstrebenden Halblinge mit donnernder Präsenz und Blitzmagie, ihren Hof zu evakuieren. Er konfrontiert Xenia emotional, offenbart den Verlust seiner Heimat und seine tiefe Einsamkeit und bringt sie so dazu, Kleinringtal zu räumen. Von einem Halbling-Jungen erhält er eine geschnitzte Figur und einen Heiltrank. Am Abend spricht er davon, dass er seine Heimat gegen eine Gefahr verteidigen musste und nun allein sei. Xenias Schürze nimmt er als Symbol an sich.
 
 ## Offene Fragen
 
-- Die genaue Herkunft Brumas, sein Grund, sich Talron anzuschließen, und die Bedeutung der schützenden Halskette über das gesprochene Wort hinaus bleiben im Dunkeln.
-- Weder die Kriegskarte noch der Blutstein wurden in den Sitzungen näher analysiert; ihre Inhalte und mögliche Verbindungen zu Brumas Wissen sind unbekannt.
+- Wo genau liegt Brumas verlorene Heimat, und welche Gefahr zwang ihn, sie zu verteidigen und letztlich allein zurückzulassen?
 
 ## Belege
 
-[1] Session 2026-07-10, 00:13:53–00:18:00, https://www.youtube.com/watch?v=H-eHSlfxUAg  
-[2] Session 2026-07-23, 01:44:14–01:48:00, https://www.youtube.com/watch?v=Gb-TEbCFF0M
+[1] Session 2026-07-10 @ 00:13:53 (https://www.youtube.com/watch?v=H-eHSlfxUAg)  
+[2] Session 2026-07-23 @ 00:05:20 (https://www.youtube.com/watch?v=Gb-TEbCFF0M)  
+[3] Session 2026-08-06 @ 00:35:38 (https://www.youtube.com/watch?v=0HyPHao8s_k)

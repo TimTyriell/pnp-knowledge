@@ -2,7 +2,7 @@
 type: Conflict
 title: 'Offener Konflikt: Der Goblin-Magier'
 description: Widersprüchliche Belege — menschliche Entscheidung nötig.
-timestamp: '2026-08-05T21:46:04+00:00'
+timestamp: '2026-08-09T17:50:45+00:00'
 id: CONFLICT_NPC_DER_GOBLIN_MAGIER
 status: open
 concept: npcs/der_goblin_magier

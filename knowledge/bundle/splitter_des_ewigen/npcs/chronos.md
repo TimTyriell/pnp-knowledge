@@ -9,7 +9,7 @@ timestamp: '2026-02-11T00:00:00Z'
 id: NPC_CHRONOS
 ---
 
-Wesen, dessen Seele im [Splitterkalb](/npcs/splitterkalb.md) gebunden ist. Wird nur beiläufig von [Lindo Laut](/characters/lindo_laut.md) genannt. Weitere Details sind nicht bekannt.
+Wesen, dessen Seele im Splitterkalb gebunden ist. Wird nur beiläufig von [Lindo Laut](/characters/lindo_laut.md) genannt. Weitere Details sind nicht bekannt.
 
 # Belege
 

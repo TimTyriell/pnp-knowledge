@@ -10,7 +10,7 @@ id: EVENT_LUNARAS_WIEDERGEBURT
 subtype: Tod
 ---
 
-Lunara stürzt in den Abgrund und wird durch die Magie der Feder geheilt. In einer Vision treibt [Liam](/npcs/liam_velora.md) sie zurück ins Leben. Sie erwacht und tötet kurz darauf den [Seraphen](/npcs/die_drei_gefallenen_seraphen.md). Das Ereignis markiert ihren Überlebenswillen und ihre neue Entschlossenheit.
+Lunara stürzt in den Abgrund und wird durch die Magie der Feder geheilt. In einer Vision treibt [Liam](/npcs/liam_velora.md) sie zurück ins Leben. Sie erwacht und tötet kurz darauf den Seraphen. Das Ereignis markiert ihren Überlebenswillen und ihre neue Entschlossenheit.
 
 # Belege
 

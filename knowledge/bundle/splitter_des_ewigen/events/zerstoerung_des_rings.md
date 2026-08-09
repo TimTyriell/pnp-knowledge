@@ -10,7 +10,7 @@ id: EVENT_ZERSTOERUNG_DES_RINGS
 subtype: Sonstiges
 ---
 
-[Dodo](/characters/dodo.md) zerschlägt auf Drängen der Gruppe den Ring mit seinem heiligen [Streitkolben](/items/streitkolben_von_dodo.md). [Der Ring](/items/ring_der_teleportation.md) zerspringt, das [Symbol](/items/symbol_in_der_villa.md) leuchtet auf und die Kristalle am [Seraphen](/npcs/die_drei_gefallenen_seraphen.md) absorbieren seine Essenz, was zu seinem qualvollen Tod führt.
+[Dodo](/characters/dodo.md) zerschlägt auf Drängen der Gruppe den Ring mit seinem heiligen [Streitkolben](/items/streitkolben_von_dodo.md). [Der Ring](/items/ring_der_teleportation.md) zerspringt, das [Symbol](/items/symbol_in_der_villa.md) leuchtet auf und die Kristalle am Seraphen absorbieren seine Essenz, was zu seinem qualvollen Tod führt.
 
 # Belege
 

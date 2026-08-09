@@ -10,7 +10,7 @@ id: LOC_WALD_NAHE_BRECHKA
 subtype: Wildnis
 ---
 
-Das Waldstück, in das die Tochter der Krämers flieht und in dem der [Goblin-Kundschafter](/npcs/goblin_kundschafter.md) lauert. Der Kampf findet zwischen Bäumen und Sträuchern statt; ein Baum wird durch [Valerias](/characters/valeria.md) Feuerblitz in Brand gesetzt.
+Das Waldstück, in das die Tochter der Krämers flieht und in dem der Goblin-Kundschafter lauert. Der Kampf findet zwischen Bäumen und Sträuchern statt; ein Baum wird durch [Valerias](/characters/valeria.md) Feuerblitz in Brand gesetzt.
 
 # Belege
 

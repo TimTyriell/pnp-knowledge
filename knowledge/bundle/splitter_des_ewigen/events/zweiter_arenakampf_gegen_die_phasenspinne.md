@@ -10,7 +10,7 @@ id: EVENT_ZWEITER_ARENAKAMPF_GEGEN_DIE_PHASENSPINNE
 subtype: Kampf
 ---
 
-In einem netzüberzogenen Areal kämpft die Gruppe gegen eine teleportierende [Phasenspinne](/npcs/phasenspinne.md) und ihre Spinnenbrut. Die Spinne setzt Netze, Gift und Phasenwechsel ein. [Cookie](/characters/cookie.md) betäubt sie schließlich mit Hai-Gift, [Esterossa](/characters/esterossa.md) zerschmettert ihren Kopf, was eine Säureexplosion auslöst. Anschließend wird das [Spinnenei](/items/spinnenei.md) geborgen.
+In einem netzüberzogenen Areal kämpft die Gruppe gegen eine teleportierende Phasenspinne und ihre Spinnenbrut. Die Spinne setzt Netze, Gift und Phasenwechsel ein. [Cookie](/characters/cookie.md) betäubt sie schließlich mit Hai-Gift, [Esterossa](/characters/esterossa.md) zerschmettert ihren Kopf, was eine Säureexplosion auslöst. Anschließend wird das [Spinnenei](/items/spinnenei.md) geborgen.
 
 # Belege
 

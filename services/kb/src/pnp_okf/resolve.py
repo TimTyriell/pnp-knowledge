@@ -298,6 +298,26 @@ def _load_canonical_names(registry_path: Path) -> dict[str, str]:
     return out
 
 
+def _load_alias_blocks(registry_path: Path) -> dict[str, set[str]]:
+    """``alias_block:`` — spellings that must not be shown as aliases of a concept.
+
+    Deleting an alias from the generated registry never sticks: write_registry
+    preserves existing aliases and appends newly discovered ones, so the name
+    is back after the next run. This is the suppression list. It is display
+    only — identity still comes entirely from merge:/never_merge:/split:, so
+    blocking a spelling here can never silently fold or split a concept.
+    """
+
+    data = _registry_data(registry_path)
+    out: dict[str, set[str]] = {}
+    for cid, names in (data.get("alias_block") or {}).items():
+        cid = str(cid).strip()
+        blocked = {str(n).strip().lower() for n in (names or []) if str(n).strip()}
+        if cid and blocked:
+            out[cid] = blocked
+    return out
+
+
 def _load_ignored(registry_path: Path) -> set[str]:
     """Concept ids listed under ``ignore:`` — never become concepts at all.
 
@@ -320,6 +340,14 @@ def _load_important(registry_path: Path) -> set[str]:
     escape hatch for entities the automatic rules underrate. Settable from
     ``entity_rules.yaml`` as an ``important:`` list as well, so the choice can
     be justified next to the other identity rules.
+
+    ``entities[].important`` is read too, for a half-migrated repo that still
+    carries the flag directly in the generated file (see test_rules_pins.py).
+    But that makes ``important: true`` a ratchet: once a run writes it into
+    the registry, every later run reads it straight back, so removing the id
+    from ``important:`` in the rules never turns it off. ``unimportant:`` is
+    the escape hatch for that — it wins over both sources, same shape as
+    ``alias_block:`` overriding a registry-preserved alias.
     """
 
     data = _registry_data(registry_path)
@@ -329,7 +357,8 @@ def _load_important(registry_path: Path) -> set[str]:
         for entry in data.get("entities") or []
         if entry.get("important")
     }
-    return flagged - {""}
+    suppressed = {str(c).strip() for c in (data.get("unimportant") or [])}
+    return (flagged - suppressed) - {""}
 
 
 def resolve_entities(
@@ -349,6 +378,7 @@ def resolve_entities(
     important = _load_important(registry_path)
     ignored = _load_ignored(registry_path)
     pinned_names = _load_canonical_names(registry_path)
+    alias_blocks = _load_alias_blocks(registry_path)
     splits = _load_splits(registry_path)
     dropped = 0
     # Also match registry keys after slugification, so "Lindo  Laut" folds
@@ -439,6 +469,9 @@ def resolve_entities(
             if entity.canonical_name not in entity.aliases:
                 entity.aliases.append(entity.canonical_name)
             entity.canonical_name = pinned
+        blocked = alias_blocks.get(cid)
+        if blocked:
+            entity.aliases = [a for a in entity.aliases if a.lower() not in blocked]
 
     resolved = merge_near_duplicates(
         list(entities.values()), _load_never_merge_pairs(registry_path)
@@ -489,12 +522,18 @@ def write_registry(entities: list[CanonicalEntity], registry_path: Path) -> None
             if cid and entry.get("important"):
                 preserved_important.add(cid)
 
+    alias_blocks = _load_alias_blocks(registry_path)
     inventory = []
     for e in entities:
         # Start from the hand-maintained aliases, then append discovered ones.
+        blocked = alias_blocks.get(e.concept_id, set())
         aliases: list[str] = []
         for alias in preserved_aliases.get(e.concept_id, []) + list(e.aliases):
-            if alias not in aliases and alias.lower() != e.canonical_name.lower():
+            if (
+                alias not in aliases
+                and alias.lower() != e.canonical_name.lower()
+                and alias.lower() not in blocked
+            ):
                 aliases.append(alias)
         entry = {
             "concept_id": e.concept_id,

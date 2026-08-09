@@ -45,7 +45,7 @@ Seine typische Erscheinung umfasst ein großes Bastardschwert, das „leicht bl�
 
 ## Beziehungen und Verbindungen
 
-- **[König Zebros](/deities/zebros.md)**: Belorus war einst dessen General und Paladin. Ein Tagebuch in seinem Gemach offenbart seine Geschichte und seinen Fluch, was auf eine tiefe, tragische Verbindung zu diesem ehemaligen Herrscher hinweist.
+- **[König Zebros](/factions/koenigreich_zebros.md)**: Belorus war einst dessen General und Paladin. Ein Tagebuch in seinem Gemach offenbart seine Geschichte und seinen Fluch, was auf eine tiefe, tragische Verbindung zu diesem ehemaligen Herrscher hinweist.
 - **[Dodo](/characters/dodo.md)**: Dodo hinterlässt den stärksten Eindruck. Belorus erkennt ihn als „wahren Krieger" an und verneigt sich vor ihm – eine Geste widerwilligen Respekts, die sonst niemandem zuteilwird.
 - **[Lindo Laut](/characters/lindo_laut.md)**: Das zentrale Ziel seiner Jagd. Belorus weiß, dass Lindo ein Fragment des alten Gottes Vasul in sich trägt, und will ihn töten, um einen neuen Götterkrieg zu verhindern. Lindo wiederum konfrontiert ihn mit Worten, die Belorus‘ Motivation verstehen und umlenken.
 - **Die Gruppe insgesamt**: Von anfänglicher Verachtung („Sprecht jetzt oder lasst es bleiben und seid still für immer") zu einer widerwilligen Allianz. Die Gruppe beeindruckt ihn durch den Sieg über seine Diener, und er glaubt schließlich ihrer Versicherung, auf derselben Seite zu stehen.

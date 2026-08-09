@@ -10,7 +10,7 @@ id: EVENT_AUSEINANDERSETZUNG_VOR_DER_NERASH_KAPELLE
 subtype: Verhandlung
 ---
 
-[Meister Pyrandas](/npcs/meister_pyrandras.md) und seine Begleiter konfrontieren die [Seraphen](/npcs/die_drei_gefallenen_seraphen.md)-Wachen mit der Abwesenheit [Nerashs](/deities/nerash.md). Ein Wächter bedroht [Orlanius Schwarzhorn](/npcs/orlanius_schwarzhorn.md) und zeigt damit die Aggressivität der neuen Machthaber. [Haloen](/npcs/harloen.md) kommentiert die Arroganz der Seraphen gegenüber [Lindo Laut](/characters/lindo_laut.md).
+[Meister Pyrandas](/npcs/meister_pyrandras.md) und seine Begleiter konfrontieren die Seraphen-Wachen mit der Abwesenheit [Nerashs](/deities/nerash.md). Ein Wächter bedroht [Orlanius Schwarzhorn](/npcs/orlanius_schwarzhorn.md) und zeigt damit die Aggressivität der neuen Machthaber. [Haloen](/npcs/harloen.md) kommentiert die Arroganz der Seraphen gegenüber [Lindo Laut](/characters/lindo_laut.md).
 
 # Belege
 

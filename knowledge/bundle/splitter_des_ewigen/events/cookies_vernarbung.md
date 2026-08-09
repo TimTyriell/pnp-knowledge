@@ -10,7 +10,7 @@ id: EVENT_COOKIES_VERNARBUNG
 subtype: Tod
 ---
 
-[Cookie](/characters/cookie.md) erleidet durch den [Kenku-Hexenmeister](/npcs/kenku_hexenmeister.md) schwere magische Verletzungen und wählt den Vernarbungstod, anstatt zu sterben. Sie fällt bewusstlos zusammen und erhält eine bleibende Narbe am Bauch.
+[Cookie](/characters/cookie.md) erleidet durch den Kenku-Hexenmeister schwere magische Verletzungen und wählt den Vernarbungstod, anstatt zu sterben. Sie fällt bewusstlos zusammen und erhält eine bleibende Narbe am Bauch.
 
 # Belege
 

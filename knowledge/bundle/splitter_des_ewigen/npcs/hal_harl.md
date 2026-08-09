@@ -1,8 +1,8 @@
 ---
 type: NPC
-title: Hal (Harl)
-description: Hal (auch Harl oder HAL) ist der Anführer der Silberkerne und zugleich
-  stellvertretender Anführer der Banditenfestung, einem Lager der Silb…
+title: Harl
+description: Hal ist der Anführer der Silberkerne und zugleich stellvertretender Anführer
+  der Banditenfestung, die als Lager der Silberkerne dient. Der…
 tags:
 - npcs
 timestamp: '2026-03-18T00:00:00Z'
@@ -11,28 +11,36 @@ aliases:
 - Hal
 - Hal (Harl)
 - HAL
-- Harl
 ---
 
-**Hal (auch Harl oder HAL)** ist der Anführer der Silberkerne und zugleich stellvertretender Anführer der Banditenfestung, einem Lager der Silberkerne. Er ist ein charismatischer Nordländer, der im Namen einer elbischen Herrin handelt und für die Unterbringung der Flüchtlinge aus Rotunas einen hohen Preis aushandelt.
+Hal ist der Anführer der Silberkerne und zugleich stellvertretender Anführer der Banditenfestung, die als Lager der Silberkerne dient. Der charismatische Nordländer handelt im Auftrag einer elbischen Herrin und verhandelte mit den Rotunas-Freunden über die Unterbringung der Flüchtlinge. Im weiteren Verlauf entwickelte sich die anfänglich konfliktreiche Beziehung zu einer engen Verbündetenschaft: Hal koordinierte die Verteidigung des Lagers, besprach mit der Gruppe die Strategie für den kommenden Frühling und sicherte ihr die ewige Dankbarkeit der Banditengilde zu.
 
-## Rolle und Hintergrund
+## Rolle und Stellung
 
-Hal kommandiert die Silberkerne, eine Banditengilde, die in einer Burgruine haust. In der Festung fungiert er als rechte Hand eines übergeordneten Anführers. Er dient einer elbischen Herrin, die über die Aufnahme von Flüchtlingen entscheidet. Seine Bande ist Teil einer größeren Streitmacht, zu der er nach dem Winter aufbrechen will – er befürchtet, das Lager nicht dauerhaft halten zu können. Hal warnt die Gruppe vor einer Hexe im Osten und vor zunehmender Untotenaktivität.
+- Anführer der Silberkerne; in der Banditenfestung, einem Lager der Silberkerne, bekleidet er zugleich die Position des stellvertretenden Anführers.
+- Dient einer elbischen Herrin, die über die Aufnahme der Flüchtlinge entscheidet.
+- Erteilt zusammen mit [Sarina](/npcs/sarina.md) Befehle an die Bande; die Banditen erwarten ihre Anweisungen.
+- Fürchtet, dass seine Bande das Lager nicht auf Dauer halten kann, und plant, nach dem Winter mit den Flüchtlingen zu seiner übergeordneten Streitmacht aufzubrechen.
+- Warnt vor einer Hexe im Osten und vor zunehmender Untotenaktivität.
 
-## Verhalten und Beziehungen
+## Verhandlung um die Flüchtlinge
 
-Hal verhandelt geschickt: Zunächst fordert er 6–8 Säcke Gold für die Unterbringung der Flüchtlinge, reduziert aber auf eine Truhe (10 Säcke), nachdem die Handwerkerdienste der Flüchtlinge zugesichert werden. Die Gruppe der Rotunas-Freunde zahlt 2 Säcke Anzahlung; Lindo Laut vertritt sie bei den Gesprächen. Als die Verhandlung stockt, droht Hal mit Gewalt, schwört aber auf seine Ehre und zeigt sich am nächsten Morgen versöhnlich. Nach der Verteidigungsschlacht gegen die Untoten dankt er der Gruppe überschwänglich, gesteht, dass sie seine Erwartungen übertroffen haben, und verspricht der Banditengilde ewige Dankbarkeit. Später schickt er die handschriftliche Nachricht *„findet einen Sündenbock. H."*, um die Silberkerne zu schützen. Nyrella schenkt er eine handgeschnitzte Puppe mit dem Bandensymbol, die er aus seinem Vorleben bei sich trug.
+- In einer einzigen Gruppenverhandlung, bei der [Lindo Laut](/characters/lindo_laut.md) die Gruppe vertrat, handelte Hal den Preis für die Unterbringung der Flüchtlinge aus.
+- Zunächst forderte er 6–8 Säcke Gold, reduzierte die Forderung aber auf eine Truhe Gold (10 Säcke), nachdem die Handwerkerdienste der Flüchtlinge zugesichert worden waren; zwei Säcke dienten als Anzahlung.
+- Als die Verhandlung stockte, drohte er mit Gewalt. Nach Zahlung der vollen Summe willigte er ein, schwor auf seine Ehre und zeigte sich am nächsten Morgen versöhnlich.
 
-## Verlauf der Ereignisse
+## Verbündeter der Gruppe
 
-Nach der Ankunft der Flüchtlinge verhandelt Hal mit der Gruppe, nimmt die Anzahlung entgegen und gewährt Schutz. Im Spätwinter beruft er die Abenteurer in sein Zelt, um die Lage in Breska und die Strategie für den Frühling zu besprechen. Er zeigt widerwillige Anerkennung für Nyrellas Aufbauarbeit und lässt bei Erscheinen des Belorus sofort das Tor schließen. Während des Angriffs der Untoten koordiniert Hal die Verteidigung, feuert persönlich die Balliste und bläst nach hohen Verlusten den Rückzug. Nach der Schlacht würdigt er die Hilfe der Gruppe.
+- Rief die Gruppe in sein Zelt, um Nachrichten aus [Breska](/locations/breska.md) und die Strategie für den Frühling zu besprechen; würdigte dabei widerwillig [Nyrellas](/characters/nyrella.md) Aufbauarbeit und ließ beim Erscheinen von [Belorus](/npcs/belorus.md) sofort das Tor schließen.
+- Koordinierte die Verteidigung des Lagers, feuerte die Balliste und blies nach hohen Verlusten den Rückzug. Nach der Schlacht dankte er der Gruppe überschwänglich, gestand, dass sie seine Erwartungen übertroffen hatten, und versprach, dass die Banditengilde ihr auf ewig zu Dank verpflichtet sei.
+- Schenkte Nyrella eine handgeschnitzte Puppe mit dem Bandensymbol, die er aus seinem Vorleben trug.
+- Sandte der Gruppe später die handschriftliche Nachricht „findet einen Sündenbock. H.“, um den Verdacht von den Silberkernen abzulenken.
 
 # Belege
 
-1. Session 2025-09-23 @ 01:10:12 – [Video](https://www.youtube.com/watch?v=DGzfqVigS0g)
-2. Session 2025-09-30 @ 02:06:31 – [Video](https://www.youtube.com/watch?v=bUT7Mc2hjUY)
-3. Session 2026-01-13 @ 02:14:15 – [Video](https://www.youtube.com/watch?v=w4LB1s9_3rs)
-4. Session 2026-01-20 @ 02:00:08 – [Video](https://www.youtube.com/watch?v=H3ckYdTv4y8)
-5. Session 2026-02-24 @ 00:36:41 – [Video](https://www.youtube.com/watch?v=WOFArbwDDIQ)
-6. Session 2026-03-18 @ 01:45:21 – [Video](https://www.youtube.com/watch?v=HHXxsASLrbQ)
+1. Session 2025-09-23 @ 01:10:12 – https://www.youtube.com/watch?v=DGzfqVigS0g
+2. Session 2025-09-30 @ 02:06:31 – https://www.youtube.com/watch?v=bUT7Mc2hjUY
+3. Session 2026-01-13 @ 02:14:15 – https://www.youtube.com/watch?v=w4LB1s9_3rs
+4. Session 2026-01-20 @ 02:00:08 – https://www.youtube.com/watch?v=H3ckYdTv4y8
+5. Session 2026-02-24 @ 00:36:41 – https://www.youtube.com/watch?v=WOFArbwDDIQ
+6. Session 2026-03-18 @ 01:45:21 – https://www.youtube.com/watch?v=HHXxsASLrbQ

@@ -1,8 +1,8 @@
 ---
 type: Item
 title: Hope Hold Flare
-description: Die Hope Hold Flare ist ein magischer Gegenstand, den Lindo Laut besitzt.
-  Er aktiviert ihn in der Taverne, um ein beeindruckendes Feuerwerk…
+description: Ein magischer Gegenstand im Besitz von Lindo Laut, der normalerweise
+  im Kampf Verbündeten Hoffnung spendet. Er setzt ihn ein, um bei der An…
 tags:
 - items
 timestamp: '2026-07-29T00:00:00Z'
@@ -10,8 +10,8 @@ id: ITEM_HOPE_HOLD_FLARE
 subtype: Artefakt
 ---
 
-Die Hope Hold Flare ist ein magischer Gegenstand, den [Lindo Laut](/characters/lindo_laut.md) besitzt. Er aktiviert ihn in der [Taverne](/locations/taverne.md), um ein beeindruckendes Feuerwerk zu erzeugen und damit die Heldenrückkehr zu inszenieren.
+Ein magischer Gegenstand im Besitz von [Lindo Laut](/characters/lindo_laut.md), der normalerweise im Kampf Verbündeten Hoffnung spendet. Er setzt ihn ein, um bei der Ankunft in der [Taverne](/locations/taverne.md) ein spektakuläres Feuerwerk zu entfachen und so die Wirkung der Gruppe zu verstärken.
 
 # Belege
 
-1. Session 2026-07-29 @ 00:46:59 (https://www.youtube.com/watch?v=umGyKLkefJI)
+1. Session 2026-07-29 @ 00:47:12 (https://www.youtube.com/watch?v=umGyKLkefJI)

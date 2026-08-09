@@ -13,7 +13,7 @@ Kip ist ein Gestaltwandler mit der Fähigkeit, sich in einen Bären zu verwandel
 
 ## Rolle und Fähigkeiten
 
-Kip beherrscht die Verwandlung in einen Bären und setzt diese Form im Kampf ein. Während des ersten Zusammenstoßes mit dem [Seraphen](/npcs/seraphen.md) gelang es ihm, das Wesen mit einem wuchtigen Bärenschlag zu Boden zu schlagen und so zu überraschen. Nach dem Gefecht spürte er die Anwesenheit eines Geistes und konnte einem Besitzversuch erfolgreich widerstehen – ein Hinweis auf mentale Stärke oder eine besondere Verbindung zur übernatürlichen Sphäre.
+Kip beherrscht die Verwandlung in einen Bären und setzt diese Form im Kampf ein. Während des ersten Zusammenstoßes mit dem Seraphen gelang es ihm, das Wesen mit einem wuchtigen Bärenschlag zu Boden zu schlagen und so zu überraschen. Nach dem Gefecht spürte er die Anwesenheit eines Geistes und konnte einem Besitzversuch erfolgreich widerstehen – ein Hinweis auf mentale Stärke oder eine besondere Verbindung zur übernatürlichen Sphäre.
 
 ## Beziehungen und Motivation
 

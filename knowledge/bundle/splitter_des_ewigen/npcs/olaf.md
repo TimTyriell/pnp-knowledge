@@ -1,15 +1,15 @@
 ---
 type: NPC
 title: Olaf
-description: Olaf ist ein Wachmann am Tor von Ehrenfels, der die Gruppe kennt und
-  freundschaftlich begrüßt. Er informiert sie über die Verluste in der S…
+description: Ein wachsames Torwache von Ehrenfels, der die Helden sofort erkennt und
+  ihnen überschwänglich die Ankunft bereitet. Er informiert sie knapp…
 tags:
 - npcs
 timestamp: '2026-07-29T00:00:00Z'
 id: NPC_OLAF
 ---
 
-Olaf ist ein [Wachmann](/npcs/wachmann.md) am Tor von [Ehrenfels](/locations/ehrenfels.md), der die Gruppe kennt und freundschaftlich begrüßt. Er informiert sie über die Verluste in der Stadt und die Verschwundenheit von Nox, bevor er sie zur [Taverne](/locations/taverne.md) schickt.
+Ein wachsames Torwache von [Ehrenfels](/locations/ehrenfels.md), der die Helden sofort erkennt und ihnen überschwänglich die Ankunft bereitet. Er informiert sie knapp über die Verluste und die veränderte Stimmung in der Stadt.
 
 # Belege
 

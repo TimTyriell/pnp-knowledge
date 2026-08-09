@@ -10,7 +10,7 @@ id: LOC_WALDPFAD_ZUR_FARM
 subtype: Wildnis
 ---
 
-Ein schmaler, von dichten Bäumen gesäumter Karrenweg, auf dem die Halblinge normalerweise mit Ziegengespannen ihre Waren transportieren. Hier finden die Charaktere den angeschossenen [Grottenschrat](/npcs/grottenschrate.md).
+Ein schmaler, von dichten Bäumen gesäumter Karrenweg, auf dem die Halblinge normalerweise mit Ziegengespannen ihre Waren transportieren. Hier finden die Charaktere den angeschossenen Grottenschrat.
 
 # Belege
 

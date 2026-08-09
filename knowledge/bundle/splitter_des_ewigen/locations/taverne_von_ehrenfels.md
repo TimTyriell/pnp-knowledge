@@ -1,34 +1,32 @@
 ---
 type: Location
 title: Taverne von Ehrenfels
-description: Die Taverne von Ehrenfels (oft kurz *die Taverne* genannt) ist die zentrale
-  Gaststätte und Herberge der Bergstadt Ehrenfels. Sie dient den…
+description: Die Taverne von Ehrenfels ist die zentrale Taverne der Bergstadt Ehrenfels
+  und Treffpunkt der dortigen Gilde. Sie ist gut besucht, wird von…
 tags:
 - locations
 timestamp: '2026-04-09T00:00:00Z'
 id: LOC_TAVERNE_VON_EHRENFELS
 subtype: Gebäude
 aliases:
-- Taverne (ungenannt)
 - Taverne in Ehrenfels
 - Die Taverne
 ---
 
 # Taverne von Ehrenfels
 
-Die **Taverne von Ehrenfels** (oft kurz *die Taverne* genannt) ist die zentrale Gaststätte und Herberge der Bergstadt [Ehrenfels](/locations/ehrenfels.md). Sie dient den Abenteurern als regelmäßiger Treffpunkt, Übernachtungsort und Schauplatz sowohl geselliger Abende als auch gefährlicher Zwischenfälle.
+Die Taverne von Ehrenfels ist die zentrale Taverne der Bergstadt [Ehrenfels](/locations/ehrenfels.md) und Treffpunkt der dortigen Gilde. Sie ist gut besucht, wird von mehreren Barkeepern betrieben und bietet das starke Goblingebräu „Kornklatscher“ an. Zugleich dient sie als Herberge mit einfachen Zimmern. Im Verlauf der Kampagne ist sie wiederholt der Ort, an dem die Heldengruppe zusammentrifft und von dem aus entscheidende Ereignisse ihren Anfang nehmen.
 
-## Rolle und Ereignisse
+## Gaststätte und Herberge
 
-Die Taverne fungiert als informelles Hauptquartier der örtlichen Heldengilde. Hier kommen die Charaktere zusammen, um sich auszutauschen, Rast zu machen oder neue Aufträge zu besprechen. In einer Nacht wird die Gruppe während ihres Schlafs Opfer eines Überfalls, der in den einfachen Zimmern der Herberge beginnt – die zentrale Holztreppe knarzt bei Belastung und gibt möglicherweise frühzeitig Alarm. Zu Beginn eines späteren Angriffs auf Ehrenfels beobachten die Helden von der Taverne aus die ersten Anzeichen der Bedrohung.
+Die Taverne ist das soziale Zentrum der Bergstadt. In ihrem Schankraum treffen sich Gilde und Heldengruppe; das Lokal ist in der Regel gut besucht und wird von mehreren Barkeepern gleichzeitig bewirtet. Das bekannteste ausgeschenkte Getränk ist das starke Goblingebräu „Kornklatscher“. Als Herberge verfügt die Taverne über einfache Zimmer für Übernachtungsgäste. Eine zentrale Treppe verbindet die Etagen; sie knarzt bei Belastung und wird in der Schilderung der Nacht des Überfalls erwähnt.
 
-## Angebot und Atmosphäre
+## Ereignisse
 
-Die Taverne ist gut besucht und wird von mehreren Barkeepern betrieben. Sie bietet neben einfachen Schlafplätzen das starke Goblingebräu **Kornklatscher** an. An ruhigen Abenden herrscht eine entspannte Stimmung, in der Geschichten erzählt und die Umgebung erkundet wird. Nach den Nachrichten des örtlichen Marktschreiers kann die Laune der Gäste jedoch vorübergehend gedrückt sein, und die Schankstube leert sich.
+In einer Nacht, in der die Gruppe in der Taverne übernachtet, beginnt ein nächtlicher Überfall. Zu Beginn einer späteren Session dient die Taverne erneut als Treffpunkt: Von hier aus beobachten die Helden die ersten Anzeichen eines Angriffs. An einem weiteren Abend leert sich der Schankraum gegen Ende, als der Marktschreier Nachrichten verkündet; die Stimmung wird dadurch vorübergehend gedrückt.
 
 # Belege
 
-1. Session 2025-07-22 @ 00:07:03 – [YouTube](https://www.youtube.com/watch?v=BRRCUgW4xRo)  
-2. Session 2025-08-05 @ 00:01:29 – [YouTube](https://www.youtube.com/watch?v=cRNIWJz_ATo) (Transkriptqualität: mittel)  
-3. Session 2025-11-18 @ 00:00:00 – [YouTube](https://www.youtube.com/watch?v=w__ahowb9p0)  
-4. Session 2026-04-09 @ 00:09:00 – [YouTube](https://www.youtube.com/watch?v=vcGkejr8_nI)
+1. Session 2025-07-22 @ 00:07:03 – https://www.youtube.com/watch?v=BRRCUgW4xRo
+2. Session 2025-11-18 @ 00:00:00 – https://www.youtube.com/watch?v=w__ahowb9p0
+3. Session 2026-04-09 @ 00:09:00 – https://www.youtube.com/watch?v=vcGkejr8_nI

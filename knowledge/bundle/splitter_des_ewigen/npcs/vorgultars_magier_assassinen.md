@@ -10,7 +10,7 @@ id: NPC_VORGULTARS_MAGIER_ASSASSINEN
 subtype: Bande
 ---
 
-Vier magiebegabte Kämpfer in Roben, die die Feuerwand bewachen. Einer führt eine mächtige Sense, ein anderer spuckt schwarze Strahlen. Sie werden schließlich alle von der Gruppe und dem [Kristallbiest](/npcs/kristallbiest.md) ausgeschaltet.
+Vier magiebegabte Kämpfer in Roben, die die Feuerwand bewachen. Einer führt eine mächtige Sense, ein anderer spuckt schwarze Strahlen. Sie werden schließlich alle von der Gruppe und dem Kristallbiest ausgeschaltet.
 
 # Belege
 

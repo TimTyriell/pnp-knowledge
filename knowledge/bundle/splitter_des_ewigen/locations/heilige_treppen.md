@@ -10,7 +10,7 @@ id: LOC_HEILIGE_TREPPEN
 subtype: Sonstiges
 ---
 
-Versteckte Treppen, die vom [Bergwächter](/npcs/bergwaechter.md) offenbart werden und zur Spitze des Berges führen. Sie sind in den Berg gehauen und ziehen magische Energie an.
+Versteckte Treppen, die vom Bergwächter offenbart werden und zur Spitze des Berges führen. Sie sind in den Berg gehauen und ziehen magische Energie an.
 
 # Belege
 

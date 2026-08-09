@@ -10,7 +10,7 @@ id: EVENT_VERBANNUNG_DES_RATTEN_DAEMONS
 subtype: Ritual
 ---
 
-[Lindo Laut](/characters/lindo_laut.md) nutzt [Vasuls](/deities/vharzul.md) göttliche Kraft und einen Verbannungszauber, um den aufdringlichen Ratten-Dämon aufzulösen, bevor er seinen Vertrag einfordern kann. [Der Dämon](/npcs/der_daemon.md) erscheint später jedoch wieder.
+[Lindo Laut](/characters/lindo_laut.md) nutzt [Vasuls](/deities/vharzul.md) göttliche Kraft und einen Verbannungszauber, um den aufdringlichen Ratten-Dämon aufzulösen, bevor er seinen Vertrag einfordern kann. Der Dämon erscheint später jedoch wieder.
 
 # Belege
 

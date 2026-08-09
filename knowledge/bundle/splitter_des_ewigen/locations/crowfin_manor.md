@@ -10,7 +10,7 @@ id: LOC_CROWFIN_MANOR
 subtype: Gebäude
 ---
 
-Crowfin Manor ist eine alte [Villa](/locations/villa.md) aus der Zeit der [Zebros](/deities/zebros.md)-Könige, die jetzt als Gildensitz dient. Sie ist von einem starken Schutzzauber umgeben, der Ungebetene abhält und [Lindo Lauts](/characters/lindo_laut.md) Verwandlung unterdrückt. Das Anwesen birgt viele historische Geheimnisse, darunter das Schwert Zebrosia im Garten.
+Crowfin Manor ist eine alte [Villa](/locations/villa.md) aus der Zeit der [Zebros](/factions/koenigreich_zebros.md)-Könige, die jetzt als Gildensitz dient. Sie ist von einem starken Schutzzauber umgeben, der Ungebetene abhält und [Lindo Lauts](/characters/lindo_laut.md) Verwandlung unterdrückt. Das Anwesen birgt viele historische Geheimnisse, darunter das Schwert Zebrosia im Garten.
 
 # Belege
 

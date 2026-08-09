@@ -1,5 +1,8 @@
 # Update Log
 
+## 2026-08-06
+* **Session**: [Daggerheart - DSdE | Season 1 Folge 3 | Team B](/sessions/2026-08-06.md)
+
 ## 2026-08-04
 * **Session**: [Daggerheart - DSdE | Season 1 Folge 2 | Team A](/sessions/2026-08-04.md)
 
@@ -128,9 +131,6 @@
 
 ## 2025-08-12
 * **Session**: [Daggerheart | Dwarfmaster Gilde im Einsatz | DM: Deniz](/sessions/2025-08-12.md)
-
-## 2025-08-05
-* **Session**: [Daggerheart | Dwarfmaster Gilde im Einsatz | DM: Deniz](/sessions/2025-08-05.md)
 
 ## 2025-07-29
 * **Session**: [Daggerheart | Dwarfmaster Gilde im Einsatz | DM: Deniz](/sessions/2025-07-29.md)

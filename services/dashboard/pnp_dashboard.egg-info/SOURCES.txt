@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+pnp_dashboard.egg-info/PKG-INFO
+pnp_dashboard.egg-info/SOURCES.txt
+pnp_dashboard.egg-info/dependency_links.txt
+pnp_dashboard.egg-info/requires.txt
+pnp_dashboard.egg-info/top_level.txt

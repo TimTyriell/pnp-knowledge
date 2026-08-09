@@ -10,7 +10,7 @@ id: EVENT_BESCHWOERUNG_VON_SLIX
 subtype: Ritual
 ---
 
-[Lindo Laut](/characters/lindo_laut.md) ruft seinen Diener [Slix](/npcs/slix_vasul.md), der das nahe [Seelenkalb](/npcs/seelenkalb.md) bestätigt und es verscheucht.
+[Lindo Laut](/characters/lindo_laut.md) ruft seinen Diener [Slix](/npcs/slix_vasul.md), der das nahe Seelenkalb bestätigt und es verscheucht.
 
 # Belege
 

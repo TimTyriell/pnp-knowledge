@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Auranil
-description: Auranil ist eine halblingische Priesterin des Heiligen Duran und eine
-  langjährige Bekannte der Heldengruppe. Sie begegnet den Helden erstma…
+description: Auranil ist eine Priesterin, die den Helden seit ihren Anfangstagen verbunden
+  ist. Sie stammt aus dem Kloster des Heiligen Duran und wirkte…
 tags:
 - npcs
 timestamp: '2026-08-04T00:00:00Z'
@@ -13,21 +13,23 @@ aliases:
 - Priesterin Auraniel
 ---
 
-Auranil ist eine halblingische Priesterin des Heiligen Duran und eine langjährige Bekannte der Heldengruppe. Sie begegnet den Helden erstmals als letzte Überlebende des Klerus einer bedrängten Kapelle, dient später in Bresca und leitet zuletzt eine kleine Kapelle in Ehrenfels. Von den Ereignissen der vergangenen Monate sichtlich gezeichnet, bleibt sie eine aufmerksame Warnerin – besonders was Liam betrifft.
+Auranil ist eine Priesterin, die den Helden seit ihren Anfangstagen verbunden ist. Sie stammt aus dem Kloster des Heiligen Duran und wirkte an mehreren Orten, zuletzt an der kleinen Kapelle in Ehrenfels, wo sie Gottesdienste für die neuen Götter abhält.
 
-## Rolle und Verlauf
+## Rolle und Werdegang
 
-Die Helden treffen Auranil, als die Kapelle des Heiligen Duran, in der sie als letzte Überlebende des Klerus ausharrt, schwer bedrängt wird. Zum Dank küsst sie jedem die Hand und übergibt [Lindo Laut](/characters/lindo_laut.md) das Amulett des Heiligen Duran, damit die Gruppe fliehen kann. Auf dem Schiff warnt sie vor den Schattenfingern, die vom Festland kommen, um Artefakte zu stehlen, und bittet um Wachsamkeit (Beleg 1).
+Auranil ist die letzte Überlebende des Klerus der Kapelle des Heiligen Duran. Als die Helden eintreffen, wird sie schwer bedrängt; zum Dank küsst sie jedem die Hand und übergibt [Lindo Laut](/characters/lindo_laut.md) das Amulett des Heiligen Duran, um die Flucht zu ermöglichen. Auf dem Schiff sorgt sie sich um die Schattenfinger, die vom Festland kommen, um Artefakte zu stehlen, und bittet die Gruppe um Wachsamkeit. [1]
 
-Sie stammt aus einem Kloster des Heiligen Duran, das von der Hack angegriffen wurde; sie trägt einen Morgenstern, der dem von Sir Rains ähnelt (Beleg 2). Graf Voras überredet sie, in Bresca zu bleiben, wo sie in der neuen Kapelle dient. Etwa einen Monat vor ihrer Rückkehr nach Ehrenfels wird sie dort wegen neuer religiöser Strömungen entlassen. In Ehrenfels wirkt sie bedrückt und befürchtet, Bresca könnte von Untoten überrannt werden, ohne dass Hilfe zu erwarten ist (Beleg 3).
+Später dient sie als Priesterin in der neuen Kapelle von Breska. Sie kam aus einem Kloster, das von der Hack angegriffen wurde, und trägt einen ähnlichen Morgenstern wie Sir Rains. Graf Voras überredete sie, in Breska zu bleiben. [2] Wegen neuer religiöser Strömungen wurde sie schließlich entlassen und kehrte nach Ehrenfels zurück. Sie wirkt bedrückt und befürchtet, dass Breska von Untoten überrannt werden könnte und keine Hilfe mehr zu erwarten ist. [3]
 
-In Ehrenfels hält sie in der kleinen Kapelle Gottesdienste für die neuen Götter; sie ist nervös, dass nur wenige Besucher kommen, und freut sich über jeden Einzelnen (Beleg 6). Kurz vor der Vorladung der Gruppe bei [Vityus](/npcs/vityus.md) warnt sie die Helden erneut (Beleg 5).
+## Beziehung zu den Helden
 
-## Eigenschaften und Beziehungen
+Die Gruppe hat Auranil bereits früher gerettet; sie kennt die Helden seit den Anfangstagen und auch [Rotunas](/characters/rotunas.md) von früher. [3][4] Als ältere Priesterin warnt sie die Gruppe eindringlich davor, [Liam](/npcs/liam_velora.md) mit zum Tempel des Nerash zu bringen, da etwas an ihm hafte, das dort nicht geduldet werde. Ihre Nervosität tritt offen zutage, als Liam sie direkt anspricht und ihre Ängste durchschaut. [5]
 
-Auranil ist eine ältere Priesterin und Halbling, gezeichnet von den Strapazen der letzten Monate (Beleg 2, 5). Ihr Segen löst bei den Anwesenden spürbar positive Gefühle aus, nur bei Liam nicht. Vor [Liam](/npcs/liam_velora.md) hat sie große Angst, da er sie bedrohlich fixiert; erst als ihr [Lunara](/characters/lunara_velora.md) zunickt, kann sie ihn segnen – ohne Wirkung (Beleg 6). Schon zuvor spürt sie eine dunkle Präsenz an ihm und rät dringend davon ab, ihn mit in den Tempel zu nehmen; als Liam ihre Worte mit einer Prophezeiung bestätigt, verlässt sie panisch die Feier (Beleg 5).
+In Ehrenfels hält sie einen Gottesdienst für die neuen Götter; sie ist nervös, dass nur wenige kommen, und freut sich über jeden Besucher. Ihr Segen löst bei den Anwesenden spürbare positive Gefühle aus, hat auf Liam jedoch keine Wirkung. Vor ihm hat sie große Angst, da er sie bedrohlich fixiert; sie kann ihn erst segnen, nachdem [Lunara](/characters/lunara_velora.md) ihr zunickt. [6]
 
-Sie kennt [Rotunas](/characters/rotunas.md) von früher (Beleg 4) und ist eng mit dem Wirt [Bufrun](/npcs/bufrun.md) befreundet, wobei die Freundschaft eine romantische Note hat (Beleg 6).
+## Eigenschaften
+
+Auranil ist ein Halbling und wird als ältere Priesterin beschrieben. [2][5] Sie trägt einen ähnlichen Morgenstern wie Sir Rains. [2] Eng befreundet ist sie mit dem Wirt [Bufrun](/npcs/bufrun.md), wobei eine romantische Note angedeutet wird. [6]
 
 # Belege
 
@@ -35,5 +37,5 @@ Sie kennt [Rotunas](/characters/rotunas.md) von früher (Beleg 4) und ist eng mi
 2. Session 2025-06-25, 00:27:12 – https://www.youtube.com/watch?v=tpkO9uGw6-I
 3. Session 2025-11-18, 01:21:05 – https://www.youtube.com/watch?v=w__ahowb9p0
 4. Session 2026-04-09, 00:57:19 – https://www.youtube.com/watch?v=vcGkejr8_nI
-5. Session 2026-07-29, 01:34:43 – https://www.youtube.com/watch?v=umGyKLkefJI
+5. Session 2026-07-29, 01:35:43 – https://www.youtube.com/watch?v=umGyKLkefJI
 6. Session 2026-08-04, 01:22:40 – https://www.youtube.com/watch?v=qRj2t3wQHfs

@@ -10,7 +10,7 @@ id: EVENT_ERSCHEINUNG_DES_BERGWAECHTERS
 subtype: Entdeckung
 ---
 
-Nach [Lindo Lauts](/characters/lindo_laut.md) Rettung materialisiert sich der [Bergwächter](/npcs/bergwaechter.md), um die Gruppe zu loben und ihnen den Weg zur Spitze zu weisen. Er offenbart, dass die Prüfung jeden Kultisten veränderte, und bittet sie, das Unheil zu beenden.
+Nach [Lindo Lauts](/characters/lindo_laut.md) Rettung materialisiert sich der Bergwächter, um die Gruppe zu loben und ihnen den Weg zur Spitze zu weisen. Er offenbart, dass die Prüfung jeden Kultisten veränderte, und bittet sie, das Unheil zu beenden.
 
 # Belege
 

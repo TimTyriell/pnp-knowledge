@@ -9,7 +9,7 @@ timestamp: '2025-11-18T00:00:00Z'
 id: NPC_MIYAMANI
 ---
 
-Miyamani ist ein Halbling, der an der Zirkusvorführung teilnimmt und versucht, auf dem Eisbären [Nairuk](/npcs/nyruk.md) zu tanzen, dabei jedoch unsanft stürzt. Er und sein Captain [Lobrecht](/npcs/lobrecht.md) bestätigen später die Untotenplage und die Unpassierbarkeit der Wege nach [Breska](/locations/breska.md).
+Miyamani ist ein Halbling, der an der Zirkusvorführung teilnimmt und versucht, auf dem Eisbären [Nairuk](/npcs/nyruk.md) zu tanzen, dabei jedoch unsanft stürzt. Er und sein Captain Lobrecht bestätigen später die Untotenplage und die Unpassierbarkeit der Wege nach [Breska](/locations/breska.md).
 
 # Belege
 

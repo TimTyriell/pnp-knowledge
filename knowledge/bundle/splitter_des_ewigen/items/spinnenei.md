@@ -10,7 +10,7 @@ id: ITEM_SPINNENEI
 subtype: Artefakt
 ---
 
-Ein großes, grünes Ei der [Phasenspinne](/npcs/phasenspinne.md), das in einer magischen Truhe auf einer Druckplatte gesichert ist. Es ist das gesuchte Objekt der zweiten Prüfung und muss der Obrigkeit übergeben werden, um den Kampf zu bestehen. [Dodo](/characters/dodo.md) präsentiert es nach der Rückkehr der jubelnden Menge.
+Ein großes, grünes Ei der Phasenspinne, das in einer magischen Truhe auf einer Druckplatte gesichert ist. Es ist das gesuchte Objekt der zweiten Prüfung und muss der Obrigkeit übergeben werden, um den Kampf zu bestehen. [Dodo](/characters/dodo.md) präsentiert es nach der Rückkehr der jubelnden Menge.
 
 # Belege
 

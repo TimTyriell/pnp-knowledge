@@ -10,7 +10,7 @@ id: EVENT_GESPRAECH_MIT_AURANIE_UEBER_BRESKA
 subtype: Verhandlung
 ---
 
-[Rotunas](/characters/rotunas.md) und [Dodo](/characters/dodo.md) befragen [Auranie](/npcs/auranil.md), die ihre Vertreibung aus [Breska](/locations/breska.md) und die Vermutung äußert, dass Breska von Tausenden Untoten umzingelt und vielleicht nicht mehr zu retten sei. Later bestätigen [Lobrecht](/npcs/lobrecht.md) und [Miyamani](/npcs/miyamani.md) die Lage.
+[Rotunas](/characters/rotunas.md) und [Dodo](/characters/dodo.md) befragen [Auranie](/npcs/auranil.md), die ihre Vertreibung aus [Breska](/locations/breska.md) und die Vermutung äußert, dass Breska von Tausenden Untoten umzingelt und vielleicht nicht mehr zu retten sei. Later bestätigen Lobrecht und [Miyamani](/npcs/miyamani.md) die Lage.
 
 # Belege
 

@@ -9,7 +9,7 @@ timestamp: '2026-08-04T00:00:00Z'
 id: NPC_ORLANIUS_SCHWARZHORN
 ---
 
-Orlanius Schwarzhorn ist ein Magier in [Bresca](/locations/breska.md), spezialisiert auf alte Magie. Er untersucht Artefakte und begegnet den Helden, als diese das veränderte Amulett von [Duran](/deities/heiliger_duran.md) zu ihm bringen. Später taucht er in [Ehrenfels](/locations/ehrenfels.md) auf, wo er [Pyrandas](/npcs/pyrandas.md) bei einer Konfrontation mit den Seraphen begleitet.
+Orlanius Schwarzhorn ist ein Magier in [Bresca](/locations/breska.md), spezialisiert auf alte Magie. Er untersucht Artefakte und begegnet den Helden, als diese das veränderte Amulett von [Duran](/deities/heiliger_duran.md) zu ihm bringen. Später taucht er in [Ehrenfels](/locations/ehrenfels.md) auf, wo er Pyrandas bei einer Konfrontation mit den Seraphen begleitet.
 
 ## Wirken in Bresca
 
@@ -17,7 +17,7 @@ In Bresca untersucht Orlanius das veränderte Amulett von [Duran](/deities/heili
 
 ## In Ehrenfels
 
-Orlanius begleitet [Pyrandas](/npcs/pyrandas.md) zu einer Konfrontation mit den Seraphen. Während der Auseinandersetzung wird er von einem der Wächter bedroht; er stolpert erschrocken zurück, bewahrt aber die Fassung und beruhigt Pyrandas. Vermutlich ist er in Ehrenfels ein weiterer Anführer oder Berater.
+Orlanius begleitet Pyrandas zu einer Konfrontation mit den Seraphen. Während der Auseinandersetzung wird er von einem der Wächter bedroht; er stolpert erschrocken zurück, bewahrt aber die Fassung und beruhigt Pyrandas. Vermutlich ist er in Ehrenfels ein weiterer Anführer oder Berater.
 
 # Belege
 

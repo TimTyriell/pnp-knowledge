@@ -1,8 +1,8 @@
 ---
 type: Faction
 title: Die Gilde von Ehrenfels
-description: Die Abenteurergilde, die Valeria und Rotunas mit der Warnung und Verteidigung
-  von Brechka beauftragt hat. Rotunas trägt ein Gildensiegel am…
+description: Die Gilde von Ehrenfels, oft auch Berggilde oder schlicht die Gilde genannt,
+  ist eine traditionsreiche Abenteurergilde mit Sitz hoch in den…
 tags:
 - factions
 timestamp: '2026-08-04T00:00:00Z'
@@ -11,7 +11,6 @@ subtype: Gilde
 aliases:
 - Dwarfmaster Gilde
 - Zwergmeistergilde
-- Gilde (Dwarfmaster Gilde?)
 - Gilde von Ehrenfels
 - Berggilde (Fraktion)
 - Gilde (Dwarfmaster Gilde)
@@ -23,58 +22,68 @@ aliases:
 ---
 
 ## Überblick
-Die Gilde von Ehrenfels – in den nördlichen Landen auch als Berggilde bekannt – ist eine traditionsreiche Abenteurergilde mit Sitz in der schwer zugänglichen Bergsiedlung Ehrenfels. Sie ist eine der beiden großen Gilden im Norden und dient als zentrale Anlaufstelle für Söldner, Abenteurer und Auftraggeber. Unter der Leitung des Gildenmeisters Nox spezialisierte sich die Gilde auf hochkarätige Aufträge („high-value-targets“), erforscht übernatürliche Phänomene und schult ihre Mitglieder im Kampf gegen die Diener der Alten Götter. Ein eigenes Schiff, medizinische Versorgung, ein von Nox gestelltes Manor und ein geheimer Außenposten mit einem Riss in die Dunkle Welt unterstreichen ihre weitreichenden Mittel.
+
+Die Gilde von Ehrenfels, oft auch Berggilde oder schlicht die Gilde genannt, ist eine traditionsreiche Abenteurergilde mit Sitz hoch in den Eulenbergen. Ihr Hauptsitz ist das abgelegene Bergdorf Ehrenfels, eine schwer zugängliche, fast uneinnehmbare Festungssiedlung, in der Menschen und Anderlinge friedlich zusammenleben. Die Gilde dient als zentrale Anlaufstelle für Auftraggeber und Abenteurer im Norden der Lande. Sie rekrutiert Söldner, vergibt High-Value-Quests, bietet ihren Mitgliedern Unterkunft, Ausbildung und medizinische Versorgung und unterhält ein weitreichendes Informationsnetzwerk. Die Gilde wird von einem Gildenmeister geführt – lange Jahre war dies der legendäre Nox. Nach den verheerenden Ereignissen der großen Schlacht um Ehrenfels gilt Nox als verschollen; die Führung ist vakant, und das Verhältnis zu den neuen Machthabern in der Stadt bleibt angespannt.
 
 ## Rolle in der Kampagne
-Die Gilde von Ehrenfels ist das narrative und logistische Fundament der gesamten Kampagne. Von hier aus erhalten die Spielercharaktere ([Rotunas](/characters/rotunas.md), [Dodo](/characters/dodo.md), [Lindo Laut](/characters/lindo_laut.md), [Esterossa](/characters/esterossa.md), [Lunara Velora](/characters/lunara_velora.md) u. a.) ihre Missionen, die vom Schutz kleiner Dörfer über diplomatische Vermittlungen bis zur Erkundung dämonischer Bedrohungen reichen. Die Gilde bietet Rückzugsort, Heilung, Training und Belohnungen und fungiert zugleich als Informationsdrehscheibe. Im späteren Verlauf wird sie selbst zum Schauplatz politischer Spannungen und eines Führungsvakuums, als Meister Nox verschwindet und Graf [Voras](/npcs/voras.md) fällt.
+
+Die Gilde von Ehrenfels bildet das Rückgrat der gesamten Kampagne. Sie ist Auftraggeberin, Arbeitgeberin und sicherer Rückzugsort für die Heldengruppe um [Rotunas](/characters/rotunas.md), [Dodo](/characters/dodo.md), [Lindo Laut](/characters/lindo_laut.md) und ihre Gefährt*innen. Nahezu jede Mission der Charaktere – ob die Verteidigung Brechkas, die Säuberung der Krypta, die Erkundung der Sanddorninseln, diplomatische Reisen nach Breska oder die Geisterjagd in Steinbachtal – wurde von der Gilde vergeben oder zumindest gebilligt. Die Gilde entlohnt ihre Abenteurer (etwa mit Goldsäcken für erfolgreiche Einsätze), feiert ihre Erfolge und steht ihnen mit Ressourcen wie dem gildeneigenen Schiff, dem Manor oder dem Heilerdorf zur Seite. Gleichzeitig behält sie die Fäden in der Hand: Gildenmeister Nox schickt Raben aus, um bestimmte Mitglieder (namentlich Lindo Laut) zu überwachen, sammelt Informationen über weltbewegende Entwicklungen und bereitet seine Gilde auf den Widerstand gegen uralte Mächte vor. Im späteren Verlauf gerät die Gilde selbst in Bedrängnis, wird in der Schlacht dezimiert und muss sich mit neuen Herrschern arrangieren.
 
 ## Wichtige Merkmale
-- **Sitz:** Ehrenfels, ein Bergdorf auf den Eulenbergen. Die Lage macht den Ort nahezu uneinnehmbar; selbst eine Armee könnte kaum heraufziehen. Die befestigte Siedlung beherbergt Gildehalle, Taverne, Krankenstation und Übungsplätze.
-- **Auftragsprofil:** Die Gilde vergibt breit gefächerte Aufträge – von Goblinangriffen über Krypta-Säuberungen, Rettungsmissionen, Erkundungen (Sanddorninseln, Steinbachtal) bis zu diplomatischen Missionen (Bresca) und der Lösung von Konflikten (Zwerg-Goblin-Krise). Regelmäßig lockt sie Söldner mit hohen Belohnungen (z. B. Gold) und zeitweise sogar mit Bezahlung für bloße Anwesenheit in Ehrenfels – ein Novum, das als „Ruhe vor dem Sturm“ gedeutet wurde.
-- **Übernatürliches Wissen und Geheimhaltung:** Die Gilde betreibt einen Außenposten mit einem Riss zur Dunklen Welt, um deren Wesen zu studieren und zu bekämpfen. Rekruten werden im Kampf gegen die Alten Götter trainiert. Meister Nox höchstpersönlich ermahnt die Helden nach einem Portalvorfall: *„Ihr solltet darüber nicht reden. […] Ich habe nichts gesehen.“* Offensichtlich weiß die Gilde um größere Zusammenhänge, verlangt aber strikte Diskretion.
-- **Ressourcen:** Ein eigenes Gildenschiff, eine Krankenstation, die selbst Vergiftungen behandeln kann, ein Manor für verdiente Gruppen sowie wirtschaftliche Stärke. Trotz Lieferengpässen blüht die Gildewirtschaft, und Händler bringen Nachrichten aus fernen Landen.
+
+- **Lage:** Der Gildensitz Ehrenfels thront auf einem großen Berg der Eulenberge. Die einzige Zufahrtsstraße ist steil und leicht zu verteidigen – eine ganze Armee würde beim Sturm enorme Verluste erleiden. Das Dorf ist von Gräben und Mauern umgeben; die Gebäude wirken gedrungen und wehrhaft. Medizinische Stationen, eine Taverne und das Gildenmanor gehören zu den zentralen Einrichtungen. In den Wintermonaten liegen die Wege unter Schnee und Eis, später kann Tiefschnee das Fortkommen nahezu unmöglich machen.
+- **Führung:** Die Gilde untersteht einem Gildenmeister. Während fast der gesamten Kampagne ist dies Nox, ein mächtiger und verschwiegener Magier, der die Geschicke der Organisation lenkt. Er trainiert die Mitglieder persönlich im Kampf gegen die Diener der Alten Götter, hat einen Zauber entwickelt, der übernatürliche Kräfte lokal unterdrückt, und weiß um die Existenz der Dunklen Welt und ihrer Rifts. Nach der Schlacht um Ehrenfels gerät Nox in die Flucht; der Posten des Gildenmeisters ist seither unbesetzt.
+- **Aufgaben und Ausrüstung:** Die Gilde übernimmt Gefahrenabwehr, Monsterjagd, Erkundung, Bergung wertvoller Artefakte und diplomatische Missionen. Sie verfügt über ein eigenes Schiff, eine kleine Flotte von Begleit-NSCs und unterhält einen abgelegenen Außenposten mit einem Rift zur Dunklen Welt, um diese Dimension zu studieren und ihre Auswüchse zu bekämpfen. Mitglieder erhalten ein Gildensiegel (etwa ein Abzeichen am Arm) und können auf die Gildenschmiede, das Heilerhaus und das Manor zurückgreifen.
+- **Wirtschaft und Wachstum:** Trotz immer wieder auftretender Lieferengpässe ist die Gilde stark gewachsen und hat eine florierende Wirtschaft aufgebaut. Händler, die in Ehrenfels Station machen, tragen zur Informationsbeschaffung bei. Dennoch sind die Ressourcen endlich – so konnte die Gilde etwa zwei Dutzend Flüchtlinge nicht dauerhaft beherbergen.
+- **Informationsnetz:** Nox lässt Raben als Späher fliegen und weiß oft mehr, als seine Abenteurer ahnen. Er sammelt Berichte über die Aktivitäten anderer Fraktionen, über dämonische Einflüsse und über die Entwicklungen im gesamten Norden.
 
 ## Beziehungen und Verbindungen
-- **[Joar Vanur](/npcs/joar_vanur.md):** Gute Beziehungen zur Gilde, die ihm anscheinend vertraut.
-- **Graf Voras:** Enges, wenn auch geheimes Bündnis. Nox und Voras arbeiteten zusammen an Vorbereitungen für einen Vorstoß nach Abyssalis. Voras empfand die Gilde als „anstrengend und undankbar“, benötigte sie aber.
-- **Die Bresca-Gilde:** Konkurrierende Abenteurergilde, die ein Bündnisangebot an die Berggilde richtet. Die Ehrenfelser Gilde erhält das Angebot über ihre Mitglieder zur Übermittlung an die Führung.
-- **Hack und Graf Voras:** Die Gilde steht zwischen den Fronten dieser verfeindeten Parteien und nimmt gelegentlich Aufträge an, die beide Seiten betreffen.
-- **Zwerge von Brechka:** Die Gilde entsendet die Helden, um den Zwerg-Goblin-Konflikt zu lösen, da sie an stabilen Verhältnissen und der Versorgung mit zwergischen Waren interessiert ist. In der Zwergenfestung wird sie respektvoll empfangen (z. B. durch [Loran Silberbart](/npcs/loran_silberbart.md)).
-- **Vityus (neues Regime):** Nach dem Tod von Voras und Nox‘ Verschwinden gerät die führungslose Gilde unter Druck. Vityus bietet [Dodo](/characters/dodo.md) die Gildenmeisterschaft an, um Kontrolle auszuüben; das Verhältnis ist angespannt.
+
+- **[Nox](/npcs/nox.md):** Langjähriger Gildenmeister; steht im Zentrum der Gilde. Er arbeitet im Geheimen mit [Graf Voras](/npcs/voras.md) zusammen und treibt die Vorbereitungen für einen Vorstoß nach Abyssalis voran. Nach der Schlacht um Ehrenfels ist er von der Bildfläche verschwunden; Gerüchte über seinen Tod sind nicht bestätigt.
+- **Abenteurergruppe:** [Rotunas](/characters/rotunas.md), [Dodo](/characters/dodo.md), [Esterossa](/characters/esterossa.md), [Lindo Laut](/characters/lindo_laut.md), [Nyrella](/characters/nyrella.md), [Lunara Velora](/characters/lunara_velora.md) sowie der verstorbene [Cookie](/characters/cookie.md) sind oder waren Mitglieder der Gilde. Die Gruppe hat sich durch zahlreiche Aufträge einen Namen gemacht und wird nach der Rückkehr aus Abyssalis als Hoffnungsschimmer gefeiert.
+- **[Graf Voras](/npcs/voras.md):** Ein Vampir und ehemaliger Gegenspieler, mit dem die Gilde später ein Bündnis eingeht. Voras empfindet die Zusammenarbeit mit der Gilde als anstrengend und undankbar, sieht aber ihre Notwendigkeit. Ser Eulenweiss, eine Vertraute, übergibt einen versiegelten Brief für den Fall, dass Nox fallen sollte.
+- **Bresca-Gilde:** Eine neu gegründete Abenteurergilde, die der Gilde von Ehrenfels ein Bündnis anbietet. Erste Verhandlungen werden über [Dodo](/characters/dodo.md) und seine Gefährten als Sprachrohr geführt. Die Gilde von Ehrenfels gilt hier als die traditionellere der beiden großen Gilden im Norden.
+- **Die Hack:** Eine feindliche Fraktion, die mit dämonischen Kreaturen paktiert und gegen den Grafen Voras intrigiert. Die Gilde steht zwischen den Fronten und muss mehrfach gegen die Hack vorgehen.
+- **Zwerge von Breska:** Die Gilde wurde entsandt, um den Zwerg-Goblin-Konflikt zu lösen und die Versorgung mit zwergischen Waren zu sichern. Ein erster diplomatischer Besuch führte die Helden in die Zwergenfestung.
+- **Nera (neue Herrscher):** Nach der Schlacht um Ehrenfels hat die Fraktion aus Nera die Kontrolle über die Stadt beansprucht. Die Gilde steht unter Beobachtung; das Verhältnis ist angespannt, der Gildenmeisterposten wird von Vitius als politisches Druckmittel eingesetzt.
+- **Sonstige:** Die Gilde unterhält gute Beziehungen zu [Joar Vanur](/npcs/joar_vanur.md) (Schiffspassagen) und hat Konflikte mit Fraktionen wie Willau und Brandau.
 
 ## Chronologie
-- **Frühe Phase (Sessions 1–3):** Die Gilde beauftragt [Rotunas](/characters/rotunas.md) und [Valeria](/characters/valeria.md) mit der Warnung Brechkas vor Goblins, später mit der Säuberung einer Krypta. Die Helden werden nach erfolgreicher Goblin-Mission in der Gilde gefeiert. Sie erhalten Gold und das Angebot für die Sanddorninseln.
-- **Training und übernatürliche Enthüllungen (Session 4):** Die Gilde zeigt ihre militärische Ausbildung gegen Alte Götter. Meister Nox leitet Rekruten persönlich an.
-- **Diplomatie und Schatten (Session 5–8):** Die Gruppe erhält eine diplomatische Mission nach Bresca und later Steinbachtal. Die Gilde bleibt als Absender stets präsent, agiert aber im Hintergrund. Nox erscheint nach einem Portalzwischenfall und warnt vor Indiskretion (Session 6).
-- **Politische Verwicklungen (Session 9–13):** Die Gilde wird von der Bresca-Gilde als „die aus den Bergen“ angesprochen. Intern pflegt Lindo Laut ein Journal, weil er sich selbst Kleinigkeiten nicht merken kann – sogar den Gildennamen vergisst er gelegentlich. Die Gilde erhält Aufträge von Magiern, die einen Golem außer Kontrolle gebracht haben, und gerät zwischen die Fronten von Willau und Brandau.
-- **Aufbau und Spionage (Session 14–18):** Während eines Tavernenabends wird betont, dass der Abend keine offizielle Gildenmission ist. Nox enthüllt später (Session 18), dass er Raben hinter [Lindo Laut](/characters/lindo_laut.md) hergeschickt hat, und stellt das betriebene Manor zur Verfügung. Die Gilde wächst und erfährt über Händler von fernen Landen; Nox bereitet die Gruppe auf kommende Entwicklungen vor.
-- **Schlacht um Ehrenfels und Führungsvakuum (Session 19–22):** Nox gibt geheime Aufträge für Voras. Während einer großen Schlacht stirbt Voras, Nox gilt als verschwunden – gerüchteweise tot oder auf der Flucht. Die Wachen berichten der zurückkehrenden Gruppe: *„Rotunas, Voras, Nox – alle weg, alle tot oder verschollen.“* Der Posten des Gildenmeisters ist vakant. Vityus, der neue Herrscher, bietet Dodo die Meisterschaft als Belohnung an und übt Druck auf die Gilde aus, deren Verhältnis zu den neuen Machthabern angespannt ist.
+
+- **Frühe Phase (Session 1–3):** Die Gilde erteilt erste Aufträge: Warnung Brechkas vor einem Goblinangriff, anschließende Krypta-Reinigung. Die Gruppe wird in Ehrenfels gefeiert und erhält 5 Gold pro Kopf für ihren Erfolg. Die Gilde stellt ein Schiff bereit, um die Helden zu den Sanddorninseln zu schicken.
+- **Training und Geheimnisse (Session 4–6):** Gildenmeister Nox taucht erstmals prominent auf. Er leitet ein Trainingslager, das speziell auf den Kampf gegen die Alten Götter ausgerichtet ist, und unterhält einen Außenposten mit einem Rift zur Dunklen Welt. Als die Gruppe ein Portal durchschreitet und zurückkehrt, erscheint Nox aus dem Nichts und ermahnt sie, Stillschweigen zu bewahren. Er beantwortet Fragen zu dem verlorenen Halbgott Nerash und zeigt damit sein tiefes Wissen über die verborgenen Mächte.
+- **Diplomatie und Fraktionen (Session 5, 7–9):** Die Gilde schickt die Helden auf eine diplomatische Mission nach Breska. Parallel gerät sie zwischen die Fronten des Vampirgrafen Voras und der dämonenbündischen Hack. In Steinbachtal untersucht die Gruppe eine untote Bedrohung; der Rückweg führt zurück zum Gildenhauptsitz, wo Rotunas’ schwere Vergiftung im gildeneigenen Heilerdorf behandelt wird. Die Gilde hat nicht genug Platz, um alle Flüchtlinge aufzunehmen.
+- **Bündnis mit Bresca und innere Konflikte (Session 8, 11, 12):** Die Bresca-Gilde tritt auf den Plan und bietet ein Bündnis an. Lindo Laut, der als inoffizieller Anführer der Heldengruppe fungiert, beginnt ein Journal, um sich Namen und Gildenbezeichnungen zu merken – mit mäßigem Erfolg. Die Gilde scheint in Konflikte mit Willau und Brandau verwickelt.
+- **Nox’ Offensive (Session 17–19):** Nox, inzwischen umfassend informiert, beruft die Gruppe zu einem Treffen ins Manor. Er gesteht, Raben zu ihrer Überwachung entsandt zu haben, und spricht offen über das Wachstum der Gilde und die Bedrohung aus dem Süden (Willau, Brandau, Abyssalis). Ser Eulenweiss überbringt einen Brief von Nox an Voras für den Fall seines eigenen Ablebens. Die Gilde beginnt, sich aktiv auf den großen Konflikt vorzubereiten, und verteidigt Ehrenfels unter Nox’ Führung. Die Stadt wird zum Rückzugsort für Söldner, die fürstlich bezahlt werden, einfach nur da zu sein.
+- **Die Schlacht und ihre Folgen (Session 20–21):** In der titanischen Schlacht um Ehrenfels verliert die Gilde viele Mitglieder. Nox gilt als verschollen; Gerüchte über seinen Tod kursieren. Pyrandas und Olanio Schwarzohr übernehmen übergangsweise. Die Fraktion aus Nera beansprucht die Stadt für sich und installiert neue Kontrollorgane. Die Gilde existiert zwar noch, muss sich aber den neuen Machtverhältnissen beugen. Vitius bietet Dodo die vakante Gildenmeisterschaft an – ein klares Zeichen, dass die Gilde als Institution erhalten bleiben soll, jedoch politisch instrumentalisiert wird.
 
 ## Offene Fragen
-- **Verbleib von Meister Nox:** Gerüchten zufolge verschwunden, vielleicht sogar tot. Seine wirkliche Situation ist ungeklärt; die Gilde hat keine Gewissheit.
-- **Neuer Gildenmeister:** Der Posten ist unbesetzt. Ob Vityus‘ Angebot an Dodo realisiert wird oder die Gilde aus den eigenen Reihen eine Führung findet, ist offen.
-- **Zukunft unter dem neuen Regime:** Wie sich die Gilde unter dem Druck von Vityus und ohne Nox‘ Führung behaupten wird – und ob sie ihre Unabhängigkeit und ihre besonderen Kenntnisse bewahren kann – bleibt abzuwarten.
+
+- Was geschah in der Schlacht wirklich mit Nox? Die Gerüchte über seinen Tod könnten falsch sein, doch sein aktueller Aufenthaltsort und seine Pläne bleiben ungewiss.
+- Wie wird sich die Gilde unter dem Einfluss der neuen Herrscher aus Nera entwickeln? Droht eine Unterwanderung oder gar Auflösung?
+- Wer wird dauerhaft den Posten des Gildenmeisters übernehmen – und unter welchen Bedingungen?
+- Inwieweit werden die früheren geheimen Bündnisse (etwa mit Voras) unter den neuen Machtverhältnissen fortbestehen können?
 
 ## Belege
+
 [1] Session 2025-04-09 @ 00:10:21 (https://www.youtube.com/watch?v=1PWdwvun5ow)  
 [2] Session 2025-04-15 @ 00:01:17 (https://www.youtube.com/watch?v=YCpAz_syjaY)  
 [3] Session 2025-04-30 @ 00:02:58 (https://www.youtube.com/watch?v=fsCOiSkKKTE)  
 [4] Session 2025-05-27 @ 00:17:14 (https://www.youtube.com/watch?v=bamCIB_CkR8)  
 [5] Session 2025-06-25 @ 00:01:29 (https://www.youtube.com/watch?v=tpkO9uGw6-I)  
 [6] Session 2025-07-09 @ 01:23:10 (https://www.youtube.com/watch?v=XOnHa6CmDbo)  
-[7] Session 2025-08-05 @ 00:01:29 (https://www.youtube.com/watch?v=cRNIWJz_ATo) [Transkriptqualität: mittel]  
-[8] Session 2025-09-09 @ 00:06:43 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)  
-[9] Session 2025-09-17 @ 00:28:22 (https://www.youtube.com/watch?v=AhIT8dcxw2o)  
-[10] Session 2025-09-23 @ 00:13:03 (https://www.youtube.com/watch?v=DGzfqVigS0g)  
-[11] Session 2025-09-23 @ 00:22:35 (https://www.youtube.com/watch?v=DGzfqVigS0g)  
-[12] Session 2025-09-30 @ 00:57:42 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)  
-[13] Session 2025-10-07 @ 00:00:03 (https://www.youtube.com/watch?v=qVAF_54S8Vw)  
-[14] Session 2025-11-18 @ 00:00:00 (https://www.youtube.com/watch?v=w__ahowb9p0)  
-[15] Session 2025-11-25 @ 00:06:57 (https://www.youtube.com/watch?v=wd5R4fJfngY)  
-[16] Session 2026-01-06 @ 00:12:18 (https://www.youtube.com/watch?v=VGw81seFvbo)  
-[17] Session 2026-01-27 @ 00:04:07 (https://www.youtube.com/watch?v=9RzvnnWzV7E)  
-[18] Session 2026-02-17 @ 00:47:42 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)  
-[19] Session 2026-03-10 @ 00:14:01 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)  
-[20] Session 2026-04-09 @ 00:08:00 (https://www.youtube.com/watch?v=vcGkejr8_nI)  
-[21] Session 2026-07-29 @ 00:20:54 (https://www.youtube.com/watch?v=umGyKLkefJI)  
-[22] Session 2026-08-04 @ 00:07:38 (https://www.youtube.com/watch?v=qRj2t3wQHfs)
+[7] Session 2025-09-09 @ 00:06:43 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)  
+[8] Session 2025-09-17 @ 00:28:22 (https://www.youtube.com/watch?v=AhIT8dcxw2o)  
+[9] Session 2025-09-23 @ 00:13:03 (https://www.youtube.com/watch?v=DGzfqVigS0g)  
+[10] Session 2025-09-23 @ 00:22:35 (https://www.youtube.com/watch?v=DGzfqVigS0g)  
+[11] Session 2025-09-30 @ 00:57:42 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)  
+[12] Session 2025-10-07 @ 00:00:03 (https://www.youtube.com/watch?v=qVAF_54S8Vw)  
+[13] Session 2025-11-18 @ 00:00:00 (https://www.youtube.com/watch?v=w__ahowb9p0)  
+[14] Session 2025-11-25 @ 00:06:57 (https://www.youtube.com/watch?v=wd5R4fJfngY)  
+[15] Session 2026-01-06 @ 00:12:18 (https://www.youtube.com/watch?v=VGw81seFvbo)  
+[16] Session 2026-01-27 @ 00:04:07 (https://www.youtube.com/watch?v=9RzvnnWzV7E)  
+[17] Session 2026-02-17 @ 00:47:42 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)  
+[18] Session 2026-03-10 @ 00:14:01 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)  
+[19] Session 2026-04-09 @ 00:08:00 (https://www.youtube.com/watch?v=vcGkejr8_nI)  
+[20] Session 2026-07-29 @ 01:13:00 (https://www.youtube.com/watch?v=umGyKLkefJI)  
+[21] Session 2026-08-04 @ 00:07:38 (https://www.youtube.com/watch?v=qRj2t3wQHfs)

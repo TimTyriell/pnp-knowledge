@@ -10,7 +10,7 @@ id: EVENT_KAMPF_GEGEN_DEN_SERAPHEN
 subtype: Kampf
 ---
 
-Ein erbitterter Kampf der gesamten Gruppe gegen den [Seraphen](/npcs/die_drei_gefallenen_seraphen.md), einen Tier-4-Gegner. Der [Seraph](/npcs/seraphen.md) attackiert nacheinander Kip, [Dante](/characters/dante.md), [Dodo](/characters/dodo.md) und [Esterossa](/characters/esterossa.md) mit Heiligkeitsschaden. Die Gruppe setzt Statuen, Feuerangriffe und eine Bärengestalt ein, um ihn zu überwältigen, kann ihn aber erst durch die [Zerstörung des Rings](/events/zerstoerung_des_rings.md) töten.
+Ein erbitterter Kampf der gesamten Gruppe gegen den Seraphen, einen Tier-4-Gegner. Der Seraph attackiert nacheinander Kip, [Dante](/characters/dante.md), [Dodo](/characters/dodo.md) und [Esterossa](/characters/esterossa.md) mit Heiligkeitsschaden. Die Gruppe setzt Statuen, Feuerangriffe und eine Bärengestalt ein, um ihn zu überwältigen, kann ihn aber erst durch die [Zerstörung des Rings](/events/zerstoerung_des_rings.md) töten.
 
 # Belege
 

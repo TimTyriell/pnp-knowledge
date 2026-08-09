@@ -10,7 +10,7 @@ id: ITEM_HEILENDE_PHIOLE
 subtype: Trank
 ---
 
-Ein seltener Heiltrank, der in [Valuna](/locations/valuna.md) hergestellt wird und die Kraft hat, mehrere schwer verletzte [Seraphen](/npcs/die_drei_gefallenen_seraphen.md) gleichzeitig zu heilen. [Vitius](/npcs/vitius.md) betont, dass selbst eine einzige Phiole für viele Brüder ausreicht, wenn sie sparsam aufgeteilt wird. Der Trank ist so selten, dass selbst [Gunther](/characters/gunther.md) in [Willauch](/locations/willauch.md) nie davon gehört hat.
+Ein seltener Heiltrank, der in [Valuna](/locations/valuna.md) hergestellt wird und die Kraft hat, mehrere schwer verletzte Seraphen gleichzeitig zu heilen. [Vitius](/npcs/vitius.md) betont, dass selbst eine einzige Phiole für viele Brüder ausreicht, wenn sie sparsam aufgeteilt wird. Der Trank ist so selten, dass selbst [Gunther](/characters/gunther.md) in [Willauch](/locations/willauch.md) nie davon gehört hat.
 
 # Belege
 

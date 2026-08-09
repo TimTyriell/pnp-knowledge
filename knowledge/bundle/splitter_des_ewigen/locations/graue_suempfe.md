@@ -10,7 +10,7 @@ id: LOC_GRAUE_SUEMPFE
 subtype: Wildnis
 ---
 
-Ein Sumpfgebiet, in das die [Goblins](/factions/goblins.md) und [Gnolle](/npcs/gnolle.md) vor etwa einem Jahr zurückgedrängt wurden und aus dem sie nun offenbar wieder hervorströmen.
+Ein Sumpfgebiet, in das die [Goblins](/factions/goblins.md) und Gnolle vor etwa einem Jahr zurückgedrängt wurden und aus dem sie nun offenbar wieder hervorströmen.
 
 # Belege
 

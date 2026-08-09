@@ -1,30 +1,36 @@
 ---
 type: Location
 title: Kleinringtal
-description: Kleinringtal ist eine größere Stadt in der Region, die als wichtiges
-  Ziel für Karawanen dient und auf der Handelsroute zwischen Breska und…
+description: Kleinringtal (auch Ringtal genannt) ist eine größere Stadt in der Nähe
+  der Taverne von Xenia Rotkam. Sie liegt etwa einen Tagesmarsch von d…
 tags:
 - locations
-timestamp: '2026-06-04T00:00:00Z'
+timestamp: '2026-08-06T00:00:00Z'
 id: LOC_RINGTAL
 subtype: Siedlung
 aliases:
 - Ringtal
 ---
 
-# Kleinringtal (auch Ringtal)
+# Kleinringtal
 
-Kleinringtal ist eine größere Stadt in der Region, die als wichtiges Ziel für Karawanen dient und auf der Handelsroute zwischen [Breska](/locations/breska.md) und dem Ringtal liegt. Die Stadt ist derzeit akut bedroht: Ihre Verteidigung besteht nur aus etwa 50 Soldaten, während eine Monsterinvasion bevorsteht. Dies macht sie extrem verwundbar und hat die Aufmerksamkeit von Abenteurern und Händlern auf sich gezogen.
+Kleinringtal (auch Ringtal genannt) ist eine größere Stadt in der Nähe der Taverne von [Xenia Rotkam](/npcs/xenia_rotkam.md). Sie liegt etwa einen Tagesmarsch von der befestigten Siedlung mit Xenias Taverne entfernt, an der Straße zwischen Breska und Kleinringtal. Die Stadt dient als Ziel der Karawanen und wird später zum wichtigen Stützpunkt für Flüchtlinge.
 
-## Lage und Erreichbarkeit
+## Lage und Bedeutung
 
-Die Stadt befindet sich etwa einen Tagesmarsch von einer kleinen Taverne mit eigener Mauer entfernt, die auf halbem Weg zwischen Breska und Kleinringtal liegt. Diese Taverne gehört [Xenia Rotkam](/npcs/xenia_rotkam.md) und dient als Versammlungsort für Reisende sowie als Austragungsort von Turnieren. Sie ist der letzte Rastplatz vor Erreichen der Stadt und bietet Händlern und Karawanen einen geschützten Anlaufpunkt.
+Kleinringtal ist der nächste große Stützpunkt der Region und Ziel der Karawanen. Die Taverne an der Straße zwischen Breska und Kleinringtal ist ein Zwischenhalt für Reisende; die Stadt selbst liegt einen Tagesmarsch von dieser Siedlung entfernt. Während einer Fluchtbewegung wird Kleinringtal zum erklärten Ziel: Die befestigte Siedlung mit der Taverne dient den Flüchtlingen nur als Zwischenstation, während Kleinringtal als der Ort gilt, an dem man sich längerfristig in Sicherheit bringen kann.
 
-## Verteidigungslage und Bedrohung
+## Verteidigungslage
 
-Kleinringtal wird als „nicht ausreichend verteidigt“ beschrieben. Die Garnison umfasst lediglich rund 50 Soldaten – für eine Stadt dieser Größe und Bedeutung eine äußerst schwache Truppe. Die bevorstehende Monsterinvasion stellt eine existenzielle Gefahr dar, die weder von den eigenen Kräften noch von der nahegelegenen Taverne allein abgewendet werden kann. Diese prekäre Situation hat in der Region Unruhe ausgelöst und macht die Stadt zu einem Brennpunkt der Kampagne.
+Die Stadt besitzt massive Mauern, die einer Belagerung durch 200–300 Mann standhalten könnten. Zugleich wird Kleinringtal als nicht ausreichend verteidigt beschrieben: Nur etwa 50 Soldaten stehen einer bevorstehenden Monsterinvasion gegenüber. Die Stadtmauern bieten also Schutz vor einem Belagerungsheer, die geringe Truppenstärke macht eine Verteidigung gegen einen Monsterangriff jedoch fraglich.
+
+## Rolle im Verlauf
+
+Zunächst wird Kleinringtal als Ziel der Karawanen erwähnt. Später, als Flüchtlinge die befestigte Siedlung an der Straße als Zwischenstation nutzen, überzeugt die Gruppe Xenia Rotkam, den Ort zu evakuieren. Kleinringtal bleibt als nächstes großes Fluchtziel bestehen: Die massiven Mauern gelten als belagerungsfähig, und die Stadt ist der nächste große Stützpunkt, an dem die Flüchtlinge Schutz suchen können.
 
 # Belege
 
 1. Session 2026-06-04 @ 00:03:50 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
 2. Session 2026-06-04 @ 00:40:14 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
+3. Session 2026-08-06 @ 01:04:05 (https://www.youtube.com/watch?v=0HyPHao8s_k)
+4. Session 2026-08-06 @ 00:06:36 (https://www.youtube.com/watch?v=0HyPHao8s_k)

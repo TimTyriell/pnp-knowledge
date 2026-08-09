@@ -1,8 +1,8 @@
 ---
 type: Location
 title: Zwergenmine
-description: Die Zwergenmine ist eine weit verzweigte, unterirdische Anlage unter
-  der Zwergenfestung, deren Ursprünge teilweise bis vor das Zeitalter de…
+description: 'Die Zwergenmine ist ein weit verzweigtes Höhlen- und Minensystem, dessen
+  genaue Herkunft unklar ist: Einige Berichte beschreiben es als tei…'
 tags:
 - locations
 timestamp: '2026-07-23T00:00:00Z'
@@ -13,15 +13,17 @@ aliases:
 status: disputed
 ---
 
-Die Zwergenmine ist eine weit verzweigte, unterirdische Anlage unter der [Zwergenfestung](/locations/zwergenfestung.md), deren Ursprünge teilweise bis vor das Zeitalter der alten Götter zurückreichen. Die Überlieferung zu dieser Mine ist jedoch uneinheitlich: Während die eine Quelle sie als von Zwergen ausgebaute Förderstätte für magisches Erz beschreibt, nennt eine andere sie eine alte Halbling-Mine, die von Goblins, Bugbären und Gnollen überrannt wurde. Ob es sich um ein und dieselbe Anlage handelt oder um zwei verschiedene Orte, ist aus den Belegen nicht eindeutig zu klären.
+Die Zwergenmine ist ein weit verzweigtes Höhlen- und Minensystem, dessen genaue Herkunft unklar ist: Einige Berichte beschreiben es als teilweise schon vor dem Zeitalter der alten Götter existierende Anlage unter der Zwergenfestung, andere als ursprünglich von Halblingen erbautes Höhlensystem. In den letzten zwölf Jahren wurde sie von den Zwergen stark ausgebaut und diente dem Abbau von reichlich magischem Erz. Zuletzt wurde die Anlage von Goblins, Bugbären und Gnollen besetzt, die sie für ihre eigenen Zwecke umnutzten.
 
-## Ausbau durch die Zwerge
+## Aufbau und Ebenen
 
-In den letzten zwölf Jahren haben die Zwerge das Minensystem erheblich ausgebaut und fördern dort reichlich magisches Erz. Eine unterirdische Brücke über einen Fluss markiert die Grenze zum Goblingebiet. In der Tiefe der Mine befinden sich alte zwergische Lager sowie ein defekter Fahrstuhl, der die verschiedenen Ebenen der Mine miteinander verbindet.
+Die Mine erstreckt sich über mehrere Ebenen und ist insgesamt gut ausgebaut, wirkt durch die Besetzung jedoch zweckentfremdet. Eine unterirdische Brücke über einen Fluss markiert die Grenze zum Goblingebiet. In der Tiefe befinden sich alte zwergische Lager sowie ein defekter Fahrstuhl, der die Ebenen miteinander verbindet.
 
-## Die überrannte Halbling-Mine
+Spätere Erkundungen dokumentieren folgende Bereiche: einen Eingangsbereich mit Knochen, einen Raum mit Kessel und Käfigen, einen Schacht mit Leiter, der zum Bugbär-Lager führt, sowie Ruinen mit Turm. Noch tiefer liegt ein Gebiet der Gnolle. Ein Geheimgang führt von der Anlage aus ins Freie.
 
-Die als alte Halbling-Mine bezeichnete Anlage wurde von Goblins, Bugbären und Gnollen überrannt. Sie verfügt über mehrere Ebenen, einen Kochplatz, einen Schacht mit Seilzugang, einen Bereich mit Tageslichteinfall und eine Wendeltreppe. Die Gruppe drang durch den Haupteingang in die Mine ein und verließ sie später durch einen Geheimgang.
+## Geschichte und Besitzverhältnisse
+
+Ursprünglich bauten die Zwerge das Minensystem in den letzten zwölf Jahren aus und förderten dort reichlich magisches Erz. Alte zwergische Lager und der defekte Fahrstuhl zeugen von dieser Nutzung. Später wurde die Anlage von Goblins, Bugbären und Gnollen eingenommen, die sie umfunktionierten: Kessel und Käfige deuten auf eine Nutzung als Unterschlupf und möglicherweise als Gefangenenort hin.
 
 # Belege
 
@@ -30,4 +32,5 @@ Die als alte Halbling-Mine bezeichnete Anlage wurde von Goblins, Bugbären und G
 
 # Offene Konflikte
 
-- Beleg [1] beschreibt die Mine als Zwergenmine unter der Zwergenfestung, in der magisches Erz gefördert wird; Beleg [2] beschreibt dieselbe Entität als alte Halbling-Mine, die von Goblins, Bugbären und Gnollen überrannt wurde. Die Belege nennen jeweils unterschiedliche Merkmale (unterirdische Brücke und Fahrstuhl gegenüber Kochplatz und Wendeltreppe), ohne dass eine Verbindung zwischen den beiden Beschreibungen hergestellt wird.
+- Der Ursprung der Mine ist widersprüchlich belegt: Beleg [1] nennt ein „teilweise schon vor dem Zeitalter der alten Götter existierendes Minensystem“, Beleg [2] beschreibt sie als „ursprünglich von Halblingen gebaut“. Diese beiden Aussagen sind nicht miteinander vereinbar.
+- Uneinheitlich ist auch der Besitzstand: Beleg [1] schildert eine von Zwergen aktiv genutzte und ausgebaute Förderstätte, Beleg [2] beschreibt dieselbe Anlage als von Goblins, Bugbären und Gnollen besetzt – möglicherweise ein späterer Zustand, ohne dass die Belege eine Übernahme explizit machen.

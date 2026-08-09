@@ -19,7 +19,7 @@ Die Pocket Domain ist ein abgeschlossener, eigenständiger Raum außerhalb der n
 
 ## Funktion und Bedeutung
 
-Innerhalb der Pocket Domain bewahrt Lindo Laut das magische Wesen [Splitterkalb](/npcs/splitterkalb.md) auf – ein wichtiges Lebewesen, das aus einer vorherigen Begegnung stammt. Die Domain diente zudem als Schauplatz der Konfrontation mit [Slix](/npcs/slix_vasul.md). Diese Auseinandersetzung fand in dem geschützten, aber privaten Rahmen statt, was die Bedeutung der Pocket Domain als sicheren Ort für sensible Treffen oder Gefahrenmomente zeigt.
+Innerhalb der Pocket Domain bewahrt Lindo Laut das magische Wesen Splitterkalb auf – ein wichtiges Lebewesen, das aus einer vorherigen Begegnung stammt. Die Domain diente zudem als Schauplatz der Konfrontation mit [Slix](/npcs/slix_vasul.md). Diese Auseinandersetzung fand in dem geschützten, aber privaten Rahmen statt, was die Bedeutung der Pocket Domain als sicheren Ort für sensible Treffen oder Gefahrenmomente zeigt.
 
 # Belege
 

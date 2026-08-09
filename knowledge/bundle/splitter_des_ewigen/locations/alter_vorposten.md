@@ -10,7 +10,7 @@ id: LOC_ALTER_VORPOSTEN
 subtype: Siedlung
 ---
 
-Eine verfallene Siedlung auf der [Bergspitze](/locations/bergspitze.md) von [Zebros](/deities/zebros.md), die aus mehreren Häusern besteht. Hier finden [Cookie](/characters/cookie.md) und [Dodo](/characters/dodo.md) das Papier über [König Zebros](/npcs/koenig_zebros.md), einen Obelisken mit zerstörten Runen und einen gefrorenen Teddybären. Die Häuser sind teils eingestürzt und mit Schnee bedeckt; eines davon diente später Abenteurern als Unterschlupf.
+Eine verfallene Siedlung auf der [Bergspitze](/locations/bergspitze.md) von Zebros, die aus mehreren Häusern besteht. Hier finden [Cookie](/characters/cookie.md) und [Dodo](/characters/dodo.md) das Papier über [König Zebros](/factions/koenigreich_zebros.md), einen Obelisken mit zerstörten Runen und einen gefrorenen Teddybären. Die Häuser sind teils eingestürzt und mit Schnee bedeckt; eines davon diente später Abenteurern als Unterschlupf.
 
 # Belege
 

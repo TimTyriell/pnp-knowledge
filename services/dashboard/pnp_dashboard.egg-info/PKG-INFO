@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: pnp-dashboard
+Version: 0.1.0
+Summary: Read-only status dashboard merging pnp-crawl, pnp-kb and pnp-export-data snapshots
+Requires-Python: >=3.11
+Requires-Dist: fastapi>=0.110
+Requires-Dist: uvicorn>=0.29
+Requires-Dist: httpx>=0.27
+Requires-Dist: pyyaml>=6.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"

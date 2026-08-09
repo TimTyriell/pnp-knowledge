@@ -1,77 +1,66 @@
 ---
 type: Character
 title: Saris
-description: Saris ist ein Tiefling, ein Infernis-Hexenmeister und Wissenschaftler
-  von ausgeprägter Wissbegierde. Ständige Begleiter sind die beiden Tot…
+description: Saris ist ein Infernis-Hexenmeister und selbsternannter Wissenschaftler
+  von extrem wissbegieriger, fast klinisch-distanzierter Natur. Als T…
 tags:
 - characters
-timestamp: '2026-07-23T00:00:00Z'
+timestamp: '2026-08-06T00:00:00Z'
 id: CHAR_SARIS
 ---
 
 ## Überblick
 
-Saris ist ein Tiefling, ein Infernis-Hexenmeister und Wissenschaftler von ausgeprägter Wissbegierde. Ständige Begleiter sind die beiden Totenschädel Jonathan und Samuel, die auf seinen Schultern sitzen und deren Stimmen nur er hören kann. Die beiden Schädel fungieren als Berater und Quelle okkulten Wissens, wobei Saris häufig mit ihnen spricht oder auf ihre Mitteilungen hört. Er zeichnet sich durch eine morbide Faszination für Blut, Leichen und seltene Kreaturen aus und dokumentiert seine Beobachtungen akribisch in einem Lederbuch.
+Saris ist ein Infernis-Hexenmeister und selbsternannter Wissenschaftler von extrem wissbegieriger, fast klinisch-distanzierter Natur. Als Tiefling mit zwei sprechenden Totenschädeln – Jonathan und Samuel – auf seinen Schultern unterwegs, führt er akribisch ein Lederbuch mit Notizen und Zeichnungen über alle Wesen und Phänomene, denen er begegnet. Seine Blutmagie setzt er mit brutaler Präzision ein, und sein geheimnisvoller Patron, zu dem er in stillem Gebet Kontakt aufnimmt, verleiht ihm Macht über den Tod. Vor zwölf Jahren erwachte er ohne Erinnerungen auf einem Feld; niemand aus seiner Umgebung kann sich an die Zeit davor erinnern.
 
 ## Rolle in der Kampagne
 
-Saris gehört zur Gruppe der Charaktere, die in der Kampagne zusammen unterwegs sind. Seine Rolle innerhalb der Gruppe ist ambivalent: Einerseits bringt er wertvolles Wissen und unkonventionelle Lösungsansätze ein, andererseits sorgt sein unheimliches Auftreten und seine offensichtliche Verbindung zu dunklen Mächten für Misstrauen bei anderen Charakteren.
-
-In der ersten dokumentierten Session zeigte sich seine Wissbegierde deutlich, als er Flüchtlinge detailliert befragte und sich alles notierte. Er bezahlte drei Hände Gold, um Flüchtlingen Einlass zu gewähren. Gleichzeitig wurde er von Herakles aufgrund von Misstrauen von einem Treffen ausgeschlossen.
-
-Seine morbide, wissenschaftliche Natur zeigte sich in seinem Angebot, Gnolle für Tests zu nutzen. Im Kampf erweist er sich als eiskalter und effizienter Kämpfer, der keine Skrupel kennt, Feinde lautlos zu töten und selbst das Blut Gefallener als Waffe einzusetzen.
+Saris fungiert in der Heldengruppe als Forscher und Beobachter. Wo andere auf Konfrontation oder Diplomatie setzen, sammelt er Blutproben, befragt Leichen und kritzelt seitenweise Notizen in sein Lederbuch. Im Kampf ist er ein eiskalter Taktiker, der gefallene Feinde als Ressource für seine Blutmagie nutzt und zögert nicht, selbst nachzusetzen, wenn ein Gegner bereits verwundet ist. Seine Motive bleiben für die Gruppe oft undurchschaubar; er ist weniger an politischen Diskussionen oder dem Wohl der Gemeinschaft interessiert, sondern daran, „mehr zu erforschen, mehr herauszufinden über neue Wesen“. In ruhevollen Momenten betet er zu seinem Patron und lauscht auf dessen unheilvolle Botschaften.
 
 ## Wichtige Merkmale
 
+### Auftreten und Ausrüstung
+
+Saris trägt stets seine beiden Schädel Jonathan und Samuel auf den Schultern mit sich, mit denen er hörbare Gespräche führt, obwohl außer ihm niemand sie sprechen hört. Er führt ein Lederbuch, in dem er Beobachtungen detailliert festhält. Seine Hauptwaffe ist ein Morgenstern mit ausfahrbaren Stacheln. Nach einer Begegnung in der Mine trägt er zudem einen Knochendolch bei sich, den er von einer wiederbelebten Leiche als Geschenk erhielt. Eine Lupe nutzt er zur Untersuchung anatomischer Besonderheiten, etwa von [Brumas](/characters/bruma_stormrak.md) Hand.
+
 ### Fähigkeiten
 
-Saris ist ein Blutmagier, der das Blut gefallener Feinde als Ressource für seine Magie nutzt. Er kann daraus tödliche Geschosse formen, die er im Kampf einsetzt. Als Waffe führt er einen Zepter, den er in einen Morgenstern verwandeln kann.
+Saris beherrscht eine Form der Blutmagie, die er präzise einsetzt. Er kann Blut aus gefallenen Feinden extrahieren und zu tödlichen Projektilen formen – etwa zu „kleinen Nadeln, so Blut-Spitzennadeln“, die Gegner durchlöchern. Im Kampf kombiniert er dies mit schnellen Dolchstößen. Zudem besitzt er die nekromantische Fähigkeit, mit Toten zu kommunizieren; so sprach er in der verlassenen Mine allein mit einem Leichnam, der ihm daraufhin einen aus seiner eigenen Rippe geformten Knochendolch überreichte. Sein geheimnisvoller Patron verleiht ihm weitere, nicht näher spezifizierte Macht und warnt ihn mit Sätzen wie: „Dunkelheit kommt!“
 
-Seine wissenschaftliche Ader äußert sich in akribischer Beobachtung und Dokumentation. Er untersucht Dinge mit einer Lupe, fertigt detaillierte Zeichnungen an und macht sich umfangreiche Notizen. Seine Zeichnungen sind nicht immer akkurat – so fertigte er eine anatomische Skizze eines Grottenschrats an, auf der das Herz an der falschen Stelle saß.
+### Wesenszüge
 
-Im Kampf zeigte er die Fähigkeit, eine Bugbärin mit einem einzigen, präzisen Dolchstoß lautlos zu töten und die Leiche geschickt zu verbergen, bevor sie entdeckt werden konnte.
+Saris zeigt eine „fast klinische Faszination für das Fremdartige und Neue“. Er sammelt Blutproben, befragt Flüchtlinge und untersucht jede Kreatur, die ihm unterkommt, mit wissenschaftlicher Distanz. Sein Mitgefühl ist minimal: Einen angeschlagenen Grottenschrat packt er am Pfeil, sticht tiefer und tötet ihn schließlich mit einem Dolch ins Herz, wobei er sich ohne Zögern mit Blut besudelt. Von seinen Gefährten wird er als „eiskalt und effizient“ wahrgenommen. Trotz dieser brutalen Ader ist er stets „immer gut gelaunter Tiefling“ und wirkt für Außenstehende oft geistesabwesend oder in seine eigenen Studien vertieft. Saris ist ein obsessiver Dokumentarist; selbst seine Zeichnungen enthalten bewusste Fehlinformationen – so zeichnete er das Herz eines Grottenschrats an die falsche Stelle.
 
-### Auftreten und Wesenszüge
-
-Saris beschreibt sich selbst als "immer gut gelaunter Tiefling" – "Es gibt immer was zum Studieren. Es gibt immer was zum Sehen, zum Aufschreiben, Wissen zu verbrennen, um es weiterzuleiten." Diese stets positive, wissbegierige Grundhaltung kontrastiert scharf mit seinen unheimlichen und moralisch fragwürdigen Handlungen.
-
-Sein manisches Lachen beim Töten von Goblins unterstreicht seine gestörte Natur. Er zeigt keine Scheu vor Blut – beim Töten eines Grottenschrats packte er den Pfeil, stach tiefer, tötete ihn schließlich mit einem Dolch ins Herz und besudelte sich dabei mit Blut. Er sammelt Blutproben von getöteten Feinden.
-
-Seine künstlerische Seite zeigte sich, als er nachts ein sehr gutes Bild von Xenia zeichnete und es heimlich an der Bar hinterließ.
-
-Die beiden Schädel Jonathan und Samuel sind stets auf seinen Schultern präsent und "blicken über die Schultern" oder "schauen über diese ganzen Sachen". Saris redet mit ihnen, hört auf ihren Rat und bezieht sich in Entscheidungen auf sie. So lehnte er den Segen Jorans auf Samuels Rat hin ab, da die Eule angeblich lüge.
-
-Nachts betet Saris zu seinem Patron und spürt dabei eine lauschende Präsenz. Sein Patron warnt ihn vor kommender Dunkelheit.
+Seine Vergangenheit ist ein weißer Fleck. Er selbst offenbart: Vor zwölf Jahren sei er ohne Erinnerungen auf einem Feld erwacht, und niemand könne sich an die Zeit davor erinnern.
 
 ## Beziehungen und Verbindungen
 
-- **Jonathan und Samuel**: Die beiden sprechenden Totenschädel sind Saris' ständige Begleiter und Berater. Nur Saris kann ihre Stimmen hören. Kaya tut manchmal so, als könne sie die Schädel ebenfalls hören, nachdem Jonathan ursprünglich davor gewarnt hatte, einen Gott anzunehmen.
-- **Kaya**: Die Faunen-Bardin zeigt Interesse an Jonathan und Samuel und gibt vor, mit ihnen sprechen zu können. Jonathan hatte sie zuvor vor der Annahme eines Gottes gewarnt.
-- **Herakles**: Misstraut Saris und schloss ihn von einem Treffen aus.
-- **Talron**: Behandelt Saris wie ein Sorgenkind und zog ihn auf einer Farm zurück, nachdem dieser Sibi und dessen Hund erschreckt hatte.
-- **Bruma Stormrak**: Saris untersuchte Brumas Hand mit seiner Lupe und zeigte sich fasziniert von deren seltener Rasse.
-- **Sibi (und dessen Hund)**: Wurden von Saris auf einer Farm erschreckt.
-- **Xenia**: Saris zeichnete nachts ein sehr gutes Bild von ihr und hinterließ es heimlich an der Bar.
-- **Saris' Patron**: Eine unheimliche Macht, zu der Saris betet und die ihm Warnungen zukommen lässt. Der Patron warnt vor "kommender Dunkelheit".
+- **Jonathan und Samuel**: Die beiden Totenschädel sind Saris‘ ständige, nur für ihn hörbare Begleiter. Sie dienen als Ratgeber und Gesprächspartner. Jonathan warnte ursprünglich davor, einen Gott anzunehmen, und auf Samuels Rat lehnte Saris den Segen Jorans ab, da „die Eule angeblich lügt“. Saris spricht offen mit den Schädeln, was auf die Gruppe befremdlich wirkt. [Kaya](/characters/kaya.md) versucht gelegentlich, so zu tun, als könne sie Jonathan und Samuel ebenfalls hören.
+- **Geheimnisvoller Patron**: Eine höhere Macht, zu der Saris nachts betet und von der er spürt, dass sie ihm zuhört. Der Patron warnt ihn mit unheilvollen Botschaften („Dunkelheit kommt!“) und scheint ihm Macht über Tote zu verleihen. Saris‘ Kommunikation mit der Leiche in der Mine legt nahe, dass er den Patron direkt anspricht („Ich weiß, wenn ich euch höre. Und ihr habt mich, ich weiß nicht, gewarnt.“) und Antworten in Form von Artefakten wie dem Knochendolch erhält.
+- **Die Heldengruppe**: Saris‘ Verhältnis zur Gruppe ist ambivalent. Er bezahlt drei Hände Gold, um den Flüchtlingen Einlass zu gewähren, und zeichnet nachts ein sehr gutes Bild von [Xenia](/npcs/xenia_rotkam.md), das er heimlich an der Bar hinterlässt. Gleichzeitig wird er von [Herakles](/npcs/herakles_raxxles.md) wegen Misstrauens von einem Treffen ausgeschlossen, und [Talron](/npcs/talron.md) zieht ihn „wie ein Sorgenkind“ von einem verängstigten Kind zurück.
+- **[Bruma Stormrak](/characters/bruma_stormrak.md)**: Saris ist fasziniert von Brumas seltener Rasse und untersucht dessen Hand mit seiner Lupe.
 
 ## Chronologie
 
-**Session vom 04.06.2026**: Saris trat als Infernis-Hexenmeister und verrückter Wissenschaftler mit den Schädeln Jonathan und Samuel auf. Er befragte Flüchtlinge detailliert, notierte alles und bezahlte drei Hände Gold für deren Einlass. Herakles schloss ihn wegen Misstrauens von einem Treffen aus. Nachts zeichnete er ein sehr gutes Bild von Xenia und hinterließ es heimlich an der Bar. Er lehnte den Segen Jorans ab, nachdem Samuel gewarnt hatte, die Eule lüge. Saris bot an, Gnolle für Tests zu nutzen.
+1. **Erste Begegnungen in der Stadt**: Saris befragt Flüchtlinge detailliert und notiert alles. Er bezahlt drei Hände Gold, um ihnen Einlass zu gewähren. Auf Samuels Rat lehnt er den Segen Jorans ab. Herakles schließt ihn aufgrund von Misstrauen von einem Treffen aus. In der Nacht zeichnet er Xenia und hinterlässt das Bild heimlich. Er bietet an, Gnolle für Tests zu nutzen.
 
-**Session vom 10.07.2026**: Saris untersuchte Brumas Hand mit einer Lupe und war fasziniert von der seltenen Rasse. Beim Grottenschrat zögerte er nicht – er packte den Pfeil, stach tiefer und tötete ihn mit einem Dolch ins Herz, wobei er sich mit Blut besudelte. Nachts betete er zu seinem Patron und spürte eine lauschende Präsenz. Auf einer Farm erschreckte er Sibi und dessen Hund und wurde von Talron wie ein Sorgenkind zurückgezogen. Anschließend saß er unter einem Baum und machte Notizen über den Grottenschrat, inklusive einer anatomisch falschen Zeichnung des Herzens. Er schlug vor, die Mine auszuräuchern, erntete damit aber Ablehnung.
+2. **Untersuchung des Grottenschrats und der Goblin-Plage**: Saris untersucht Brumas Hand mit der Lupe. Beim Kampf gegen einen Grottenschrat packt er den Pfeil in dessen Wunde, sticht tiefer und tötet ihn mit einem Dolch ins Herz. Anschließend sitzt er unter einem Baum und zeichnet den Grottenschrat – mit einer falschen Markierung des Herzens. Er schlägt vor, die Goblin-Mine auszuräuchern, erntet aber Ablehnung.
 
-**Session vom 23.07.2026**: Saris erwies sich als eiskalter Blutmagier. Er tötete eine Bugbärin lautlos mit einem Dolchstoß, sammelte Blutproben und nutzte im Kampf das Blut gefallener Feinde für tödliche Geschosse. Er schwang seinen Zepter, den er in einen Morgenstern verwandeln kann. Beim Töten der letzten Goblins lachte er unheimlich und manisch. Er hörte die Stimme seines Patrons, der vor kommender Dunkelheit warnte.
+3. **Kampf gegen Goblins und Bugbären**: Saris tötet eine herabsteigende Bugbärin mit einem schnellen Dolchstoß. Er formt aus dem Blut eines gefallenen Goblins Nadeln, die einen weiteren Goblin „komplett durchlöchern“. Sein Patron meldet sich mit der Warnung „Dunkelheit kommt!“. Saris setzt seinen Morgenstern mit ausfahrbaren Stacheln gegen eine letzte Goblin-Horde ein und erhält beim Klettern einen Stresspunkt.
+
+4. **Vision in der Mine und Enthüllung**: Saris begibt sich allein in die Mine, spricht mit einer Leiche und bittet um Wissen über die Dunkelheit und wie man sie besiegt. Die Leiche zieht sich eine Rippe aus der Brust und formt daraus einen Knochendolch, den Saris als Geschenk erhält. Später in der Taverne offenbart er der Gruppe, dass er vor zwölf Jahren ohne Erinnerungen auf einem Feld erwachte und dass niemand sich an die Zeit davor erinnern kann.
 
 ## Offene Fragen
 
-- Wer oder was genau ist Saris' Patron, und welcher Natur ist dessen Macht?
-- Was ist der Ursprung und die wahre Natur von Jonathan und Samuel – sind es tatsächlich Überreste Verstorbener, gebundene Geister oder Manifestationen von Saris' eigener Psyche oder der Macht seines Patrons?
-- Welches Wissen genau teilen Jonathan und Samuel mit Saris, und welche Agenda verfolgen die Schädel?
-- Welche Bewandtnis hat die Warnung des Patrons vor "kommender Dunkelheit"?
-- Wie weit reicht Saris' moralische Abgestumpftheit, und welche Grenzen hat seine wissenschaftliche Neugier?
+- Was geschah vor zwölf Jahren? Saris selbst hat keine Erinnerung an die Zeit vor seinem Erwachen auf dem Feld – und auch niemand sonst scheint sich daran erinnern zu können. Dies deutet auf einen übernatürlichen Eingriff oder eine vollständige Auslöschung seiner Vergangenheit hin.
+- Wer oder was ist Saris‘ geheimnisvoller Patron? Welche Agenda verfolgt er mit Warnungen wie „Dunkelheit kommt!“ und der Vergabe von Artefakten wie dem Knochendolch?
+- Welche Rolle spielen Jonathan und Samuel? Dass nur Saris sie hört, wirft die Frage auf, ob sie real, Projektionen seines Geistes oder an ihn gebundene Seelen sind.
+- Welche Funktion hat der Knochendolch? Die Leiche übergab ihn als „Antwort“ auf Saris‘ Frage, wie man die Dunkelheit besiegen könne; seine genauen Eigenschaften sind noch unbekannt.
+- Was genau ist die „Dunkelheit“, vor der der Patron warnt, und welche Verbindung hat sie zu den Goblins, Gnollen und der größeren Bedrohung?
 
 ## Belege
 
-[1] Session 2026-06-04, 00:07:31, https://www.youtube.com/watch?v=EGNh8O7pE5Q
-[2] Session 2026-07-10, 00:08:56, https://www.youtube.com/watch?v=H-eHSlfxUAg
-[3] Session 2026-07-23, 00:42:14, https://www.youtube.com/watch?v=Gb-TEbCFF0M
+[1] Session 2026-06-04 @ 00:07:31 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
+[2] Session 2026-07-10 @ 00:08:56 (https://www.youtube.com/watch?v=H-eHSlfxUAg)
+[3] Session 2026-07-23 @ 00:24:35 (https://www.youtube.com/watch?v=Gb-TEbCFF0M)
+[4] Session 2026-08-06 @ 00:45:14 (https://www.youtube.com/watch?v=0HyPHao8s_k)

@@ -10,7 +10,7 @@ id: EVENT_EINSATZ_DER_SCHRIFTROLLE_VON_NERASH
 subtype: Kampf
 ---
 
-[Lindo Laut](/characters/lindo_laut.md) teleportiert sich hinter den [Dämon der Hybris](/npcs/daemon_der_hybris.md) und liest die [Schriftrolle](/items/schriftrolle.md) vor. [Der Dämon](/npcs/der_daemon.md) explodiert in gleißendem Licht, und die Kontrollfäden über Ulnavar lösen sich auf, wodurch [Liam](/npcs/liam_velora.md) befreit wird.
+[Lindo Laut](/characters/lindo_laut.md) teleportiert sich hinter den [Dämon der Hybris](/npcs/daemon_der_hybris.md) und liest die [Schriftrolle](/items/schriftrolle.md) vor. Der Dämon explodiert in gleißendem Licht, und die Kontrollfäden über Ulnavar lösen sich auf, wodurch [Liam](/npcs/liam_velora.md) befreit wird.
 
 # Belege
 

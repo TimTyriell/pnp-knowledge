@@ -1,122 +1,142 @@
 ---
 type: Character
 title: Dodo
-description: Dodo ist ein drachblütiger Goblin und der zähe, unerschütterliche Frontkämpfer
-  der Heldengilde Ehrenfels. In einer Welt voller Götter, Dämo…
+description: Dodo, der „Trollschlechter“, ist ein drachblütiger Goblin – halb Drache,
+  halb Goblin – und ein unerschütterlicher Wächter und Leibwächter.…
 tags:
 - characters
 timestamp: '2026-08-04T00:00:00Z'
 id: CHAR_DODO
-status: disputed
+aliases:
+- Dodo
+- Marco's Guardian
 ---
 
 ## Überblick
 
-Dodo ist ein drachblütiger Goblin und der zähe, unerschütterliche Frontkämpfer der Heldengilde Ehrenfels. In einer Welt voller Götter, Dämonen und Untoten ist er der Anker der Gruppe: ein schwer gepanzerter Krieger mit Schild und Waffe, dessen oberstes Prinzip der Schutz seiner Freunde ist. Er stellt sich jeder Gefahr als Erster entgegen, absorbiert mit seiner Rüstung und seinem Schild gewaltige Treffer und spuckt Feuer auf alles, was seinen Gefährten droht. Seine Taten in der Arena von Breska brachten ihm den Beinamen „der Trollschlechter“ ein, unter dem er weithin bekannt und respektiert wird. Trotz seiner oft grimmigen Erscheinung ist er ein loyaler und emotionaler Gefährte, dessen Verbundenheit zu seinen Freunden sich nicht nur im Kampf, sondern auch in kleinen Gesten zeigt – etwa, indem er ihre Namen in seinen Schild brennt.
+Dodo, der „Trollschlechter“, ist ein drachblütiger Goblin – halb Drache, halb Goblin – und ein unerschütterlicher Wächter und Leibwächter. Der stämmige Krieger trägt eine schwere Vollplatte, einen großen Schild und kämpft mit einem heiligen Streitkolben, den er aus der Festung des toten Gottes Zebros an sich nahm. Dodos bloße Anwesenheit flößt Vertrauen ein: Mit seinem Feueratem, seiner Fähigkeit, Schaden von Gefährten abzufangen, und einer schier übermenschlichen Zähigkeit ist er das Bollwerk der Gruppe, das selbst heilloseste Schlachten übersteht.
 
 ## Rolle in der Kampagne
 
-Dodo fungiert als der klassische Tank und Bodyguard der Gruppe. In nahezu jeder Kampfbegegnung stellt er sich zwischen die Gegner und die verletzlicheren Mitglieder, insbesondere [Cookie](/characters/cookie.md) und [Lindo Laut](/characters/lindo_laut.md). Seine passive Schadensreduktion von 9 und die Fähigkeit, mit seiner Reaktion Schaden für andere zu absorbieren, machen ihn zum Fels in der Brandung [1][6]. Er beschützt [Esterossa](/characters/esterossa.md) [1], [Lindo Laut](/characters/lindo_laut.md) [6], [Cookie](/characters/cookie.md) [8], [Rotunas](/characters/rotunas.md) [7] und viele andere. Seine Rolle geht jedoch über den Kampf hinaus: Er ist ein moralischer Kompass, der [Lindo Laut](/characters/lindo_laut.md) körperlich und emotional im Zaum hält [16], und ein Ermutiger, der Hoffnungspunkte weitergibt und seine Gefährten mit Komplimenten motiviert [3][6].
+Dodo ist das unverwüstliche Fundament der Heldengruppe. Als klassischer Tank stellt er sich jeder Bedrohung in den Weg, schützt mit seiner Reaktion verwundbare Gefährten und absorbiert gewaltige Treffer. Sein kompromissloser Schutzinstinkt macht ihn zur inoffiziellen Leibwache – besonders für die kleine Diebin Cookie, später für die abyssale Gelehrte Lunara Velora und immer für den impulsiven Lindo Laut. Über die reine Kampfrolle hinaus spendet er Hope, feuert seine Freunde an und zeigt sich als treuer Gefährte, der klare Worte findet, wenn moralische Entscheidungen anstehen. Nach Cookies Tod und dem Verlust weiterer Weggefährten übernimmt er auch die Rolle des Felsens in der Trauer, der dennoch voranschreitet.
 
 ## Wichtige Merkmale
 
-### Fähigkeiten
+- **Abstammung und Erscheinung:** Dodo ist ein klippengeborener Halb-Drache / Halb-Goblin (Drachblütiger) mit bläulichen Schuppen, untersetzter Statur und einer tiefen, rauen Stimme. Seine Augen zeugen von unzähligen Kämpfen und durchwachten Nächten; sein Gang ist schwerfällig, aber entschlossen.
 
-- **Feueratem (Elemental Breath):** Dodo kann einen Kegel oder eine breite Flammenwand speien [12][30]. Er setzt den Atem sowohl gegen einzelne Ziele wie die Augen der Bestie [7] als auch gegen Horden von Skeletten [30] oder Pilzgoblins [9] ein. Im Magen des Seelenkalbs entfesselt er einen 360-Grad-Feueratem und vernichtet sechs Skelette auf einmal [27].
-- **Unstoppable:** Seine zentrale Verteidigungsfähigkeit, die eingehenden physischen Schaden halbiert [4].
-- **Schild & Rüstung:** Sein Schild ist eine Verlängerung seines Willens. Er blockt Pfeile für [Esterossa](/characters/esterossa.md) [1], Bolzen für die Gruppe [2] und sogar den konzentrierten Hieb eines Ettins, wobei er doppelten Schaden (47 Punkte) auf sich nimmt, um Lunara zu schützen [40]. Dodos Rüstungsslots dienen als zusätzliche Schadenspuffer [5][6][8].
-- **Goblin-Schatten:** Eine mysteriöse Fähigkeit, die es ihm erlaubt, Schaden zu reduzieren [29], einen Schattengoblin zur Ablenkung einzusetzen [23] und sogar magische Feuerwände zu blocken, wobei der Schatten dabei verbrennt [44].
-- **Rüstzeug:** Über die Zeit wechselte Dodo von einem Breitschwert zu einem Streitkolben. In der Festung Zebras zog er eine heilige Waffe aus einem Spiegel – „Zebros Zorn“, einen leuchtenden, von Cepros stammenden Streitkolben [18][29][35]. Er führt zudem einen Dolchaufsatz, den er selbst in der Schmiede mit heiligem Öl weihte [24].
+- **Kampfstil:** Er setzt auf hohe Stärke und physische Widerstandskraft. Sein bevorzugtes Arsenal wechselte im Laufe der Zeit: Zu Beginn führte er ein Breitschwert, das er später gegen einen gekauften Streitkolben eintauschte, bevor er in Zebros‘ Domäne den heiligen Streitkolben **„Zebros Zorn“** aus einem Spiegel zog – eine Waffe, die ursprünglich vom Gott Cepros stammt und ihn seither begleitet.
 
-### Auftreten
+- **Fähigkeiten:**
+  - *I am your Shield:* Dodo wirft sich als Reaktion zwischen einen Angreifer und einen Verbündeten, erhält Stress und reduziert den Schaden um seine Stärke und eingesetzte Rüstungsslots.
+  - *Unstoppable:* Er aktiviert einen Zustand, in dem er jeglichen physischen Schaden halbiert und oft mehrere Rüstungsslots opfert, um schwerste Treffer zu überstehen.
+  - *Feueratem (Elemental Breath):* Sein Drachenerbe erlaubt ihm, vernichtende Flammen zu speien – im Nahkampf als breiter Kegel oder gezielt gegen Horden.
+  - *Rüstungsreparatur:* Durch reine Willenskraft und Hope kann er zerstörte Rüstungsslots während einer Rast erneuern.
+  - *Schildblock:* Sein massiver Schild absorbiert selbst Magiegeschosse und lässt ihn enorme Schadenssummen abfangen; später brennt er sogar die Namen seiner Freunde in das Schild.
 
-Dodo ist von kompakter, stämmiger Statur und trägt eine schwere Vollplatte, deren Inneres mit Fell ausgekleidet ist [5]. Seine Schuppenhaut und sein stets getragener Schild machen ihn zu einer unverwechselbaren Erscheinung. Nach Schlachten ist seine Rüstung oft ramponiert und sein Schild gezeichnet, doch seine Haut und Schuppen regenerieren sich unter [Esterossas](/characters/esterossa.md) Fürsorge und mit Heiltränken [43]. Sein Gesichtsausdruck ist meist grimmig konzentriert, Müdigkeit und Schlafentzug sind ihm in den Augen abzulesen [43]. Dennoch kann er furchteinflößend wirken – er lässt gezielt Flammen aus Augen und Nase schießen, um Gegner einzuschüchtern [40]. Sein Schild trägt eingebrannt die Namen seiner Freunde, und um den Hals trägt er eine Steinfigur von [Lindo Laut](/characters/lindo_laut.md) als Amulett [38].
+- **Ausrüstung:** Schwere Plattenrüstung (mehrfach mit Fell gefüttert), ein großer Schild, ein heiliger Streitkolben („Zebros Zorn“), ein arkaner Umhang (gefunden in der Mimik-Höhle), sowie gelegentlich Heiltränke, Wurfwaffen und Spezialwerkzeuge wie eine Spitzhacke.
 
-### Wesenszüge
-
-Dodos Loyalität kennt kaum Grenzen. Er beschwört gegenüber [Esterossa](/characters/esterossa.md) „brüderliche Treue“ [31] und betont, dass für ihn die Sicherheit von [Lindo Laut](/characters/lindo_laut.md) oberste Priorität habe – und dass er Plan und Leben seines Freundes notfalls mit Gewalt bewahren würde [32][37]. Er vertraut Lunara bedingungslos und folgt ihr wie ein treuer Söldner [40][42]. Sein Kampfstil ist von einem starken Gerechtigkeitsempfinden geprägt: Das Töten eines Wehrlosen wie Dormak widerstrebt ihm zutiefst [38]. Er ist handwerklich begabt und in der Schmiede versiert [24]. Ein Unbehagen gegenüber Magie und Göttern ist ihm eigen; er bekennt, „keine starke Bindung zu den Göttern“ zu haben, aber seine Freunde und Familie beschützen zu wollen [32].
+- **Persönlichkeit:** Dodo ist stoisch, loyal und von einer bodenständigen Skepsis gegenüber Göttern und übernatürlichen Mächten geprägt. Er vertraut auf seine Muskelkraft und seinen Schild, zeigt aber tiefe emotionale Bindungen zu seinen Gefährten. Seine Herkunft aus Tarkia und ein Massaker an seiner Familie haben ihn abgehärtet, doch der Anblick eines vertrauten Gesichts kann ihn aus der Fassung bringen. Er schätzt Direktheit, handwerkliches Geschick und ein kühles Goblingebräu.
 
 ## Beziehungen und Verbindungen
 
-- **[Esterossa](/characters/esterossa.md):** Dodos beständigster Kampfgefährte. Gemeinsam gehen sie als Frontlinie voran, [Esterossa](/characters/esterossa.md) heilt ihn und Dodo beschützt ihn. [Esterossa](/characters/esterossa.md) lehrte ihn den Götterglauben von Korn [32], und Dodo versprach, für ihn immer ein Bier zu trinken [46].
-- **[Lindo Laut](/characters/lindo_laut.md):** Ein tiefer Bruderbund. Dodo schenkt ihm Hoffnungspunkte, hält ihn physisch zurück, als Dormak ihn verführen will [16], und packt ihn blitzschnell, als Slicks ihn gegen Belorus aufhetzt [30]. Er gab ihm seinen Premium-Schlafsack [25].
-- **[Cookie](/characters/cookie.md):** Dodo fungiert als ihr persönlicher Bodyguard und wird nicht müde, sich schützend vor sie zu werfen [5][8]. Ihr Tod trifft ihn schwer [26].
-- **Lunara:** Die Beziehung intensiviert sich im Verlauf des Abenteuers. Dodo beweist ihr gegenüber absolutes Vertrauen [40][42], auch wenn er später in der Entscheidungsschlacht gegen ihre Pläne Stellung bezieht, weil er ihre Motive für falsch hält [45].
-- **[Rotunas](/characters/rotunas.md):** Kamerad, den er rettet [7][18] und ermahnt. Von Rotunas erhält er magische Buffs [20] und Heilung [29]. Dodo zeigt an dessen Statue in Ehrenfels tiefe Reue über sein Unvermögen, ihn zu beschützen [47].
-- **Nerash:** Erhält von Nerash ein Totem [12] und verhandelt später mit seinem Abgesandten Vitius [48].
-- **Inaros, der Strixwolf:** Von Dodo und Lunara gerettet und heimlich in Ehrenfels untergebracht [37][47].
-- **Reputation:** Als Champion der Arena und Trollschlechter genießt Dodo in Breska und darüber hinaus hohes Ansehen [19][22][23][34].
+- **[Lindo Laut](/characters/lindo_laut.md):** Dodo ist dessen Bodyguard, Vertrauter und moralischer Anker. Er fängt Angriffe ab, gibt Hope, hält Lindo Laut in gefährlichen Momenten physisch zurück und steht ihm bei schicksalhaften Entscheidungen bei, selbst wenn er die göttlichen Stimmen nicht versteht.
+- **[Esterossa](/characters/esterossa.md):** Kampfgefährte und Bruder im Geiste. Dodo bewundert Esterossas Mut und Fähigkeiten, heilt ihn, koordiniert gemeinsame Angriffe und schwört ihm ewige Treue. Nach Esterossas Tod trägt er dessen Andenken in sich.
+- **[Cookie](/characters/cookie.md):** Dodos erste große Beschützerin; er stellt sich wiederholt zwischen sie und tödliche Feinde, gibt ihr Heiltränke und betrauert ihren Verlust zutiefst. Durch ihre Magie konnte er sogar kurz mit dem Raben Perry kommunizieren.
+- **[Rotunas](/characters/rotunas.md):** Enger Kampfgenosse, den Dodo mit Heilzaubern stützt und dessen magische Fähigkeiten er respektiert. Nach Rotunas‘ Tod sucht er nach Spuren seines Freundes und zeigt Reue, nicht da gewesen zu sein.
+- **[Lunara Velora](/characters/lunara_velora.md):** Nach Cookies Tod rückt Lunara in die Rolle der zu Schützenden. Dodo vertraut ihr bedingungslos, folgt ihren Anweisungen und rettet sie mehrfach, selbst wenn er ihre abyssale Logik nicht durchschaut.
+- **Nyrella:** Heilerin und Vertraute; Dodo informiert sie über Cookies Tod und teilt emotionale Momente.
+- **Krenko:** Ein Freund aus der Heimat Tarkia, den Dodo sucht und dessen Verbleib ungewiss ist.
+- **Mil:** Arenakampfmeisterin in Willau; sie bietet Dodo ein einjähriges Training an, das er ernsthaft erwägt.
+- **Zebros / Cepros:** Dodo betet vereinzelt zur Schlangengottheit, erhält Zebros‘ Zorn und ahnt die Macht der alten Götter, bleibt aber grundsätzlich distanziert und misstrauisch.
 
 ## Chronologie
 
-Dodos Laufbahn beginnt als zäher Stalwart, der sich in den ersten Kämpfen als unverwüstlicher Tank beweist [1]. Früh etabliert sich sein Beschützerinstinkt, als er [Esterossa](/characters/esterossa.md) im Gefecht gegen Goblins den Rücken freihält [3]. Unter dem Einfluss von [Cookies](/characters/cookie.md) magischem Stein kommuniziert er mit ihrem Begleiter Perry [1].
+Die folgende Übersicht zeichnet Dodos Entwicklung über die Sessions nach – nicht als vollständige Nacherzählung jedes Kampfes, sondern als Abfolge der entscheidenden Wendepunkte.
 
-In der Festung Zebras opfert er Rüstungsslots und besiegt Untote, bevor er mit der Gruppe gegen übermächtige Gegner wie Lanra (die ihn auf Miniaturgröße schrumpft) [2] und den Verräter Lendras [3] kämpft. Er seilt sich als Klippengeborener über eine Schlucht ab und rettet [Rotunas](/characters/rotunas.md) das Leben, indem er dessen vergiftete Wunde mit einer Fackel ausbrennt [4]. Seine Begeisterung für den Kampf steigt, und er stellt sich einem Gnoll und einem großen Gegner, unterstützt durch einen Ritter [4].
+1. **Erste Einsätze (2025-03-26 bis 2025-05-06):** Dodo erscheint als Guardian mit Breitschwert und Schild. Er schützt Tim und Esterossa, tötet Goblins und überlebt Tentakelangriffe. In Schneeflocke stellt er sich einem großen Gegner und brennt Rotunas‘ vergiftete Wunde aus. An der Brücke von Zebros‘ Domäne wird er *unstoppable* und halbiert physischen Schaden.
 
-Ein Wendepunkt ist die Begegnung mit Belorus, wo er versucht, den Todesritter einzuschüchtern – und scheitert [5]. Er überlebt einen brutalen Kampf gegen untote Horden und flieht schließlich mit [Cookie](/characters/cookie.md) [5]. In der Arena von Breska erwirbt er den Titel „Trollschlechter“ und seinen ersten einfachen Streitkolben – eine Entwicklung, die mit dem Kauf auf Tier 2 einhergeht. Seine wachsende Reputation wird deutlich, als er in Breska sofort erkannt und mit Respekt behandelt wird [19].
+2. **Konfrontation mit Untoten & Belorus (2025-05-14 bis 2025-05-27):** Dodo trägt jetzt einen Kolben (Streitkolben). Er schützt Cookie, widersteht dem brutalen Kampf gegen Untote und flieht mit ihr. Gegenüber dem Todesritter Belorus scheitert eine Einschüchterung, doch er besteht den Kampf und erneuert seine Rüstung. Später agiert er als klassischer Tank und gibt Lindo Hope.
 
-In der Seelenwacht-Session erreicht Dodo einen spirituellen Höhepunkt: Er betet vor der Schlangengottheit, woraufhin ein Teil der Seelennetze zu Asche zerfällt – ein Akt, den er als Befreiung interpretiert [9]. Er findet einen schwarzen Palantir [9] und löst unwissentlich eine Katastrophe aus, indem er den Palantir an ein verbotenes Buch hält [10].
+3. **Jagd, Mimik und Schlangenschrein (2025-06-03 bis 2025-06-17):** Dodos Feueratem kommt gegen Monster und Hydren zum Einsatz. Er findet einen arkanen Umhang, zerschmettert eine Mimik und beschützt Cookie. Im Seelennetz-Schrein betet er zur Schlangengottheit, woraufhin Seelenfesseln zu Asche zerfallen. Er findet einen schwarzen Palantir.
 
-Ein schwerer Einschnitt ist die Versteinerung durch Kultisten, nachdem er das erwartete Codewort nicht nennt; erst [Lindo Laut](/characters/lindo_laut.md) greift ein [15]. Später wird er in den Abyssalis gerufen. Die Reise durch die dämonische Splitterwelt führt ihn an seine emotionalen Grenzen: Er sieht einen Goblin aus seiner Heimat aufgespießt und verweigert standhaft den Seelenknechtschaftsvertrag eines Ratten-Dämons [17]. Nach [Cookies](/characters/cookie.md) Tod informiert er [Nyrella](/characters/nyrella.md) und unternimmt mit der Gruppe den Marsch in die Splitterwelt. In Zebras’ Festung gelingt der entscheidende Fund: Aus einem Spiegel zieht er „Zebros Zorn“, den heiligen Streitkolben von Cepros [18]. In der Endphase des Angriffs auf die Festung eilt er zur sterbenden Lunara, wirft sich im Kampf gegen einen Seraphen schützend vor sie und zerstört dessen Ring mit einem Kolbenschlag [42]. Er durchlebt den Höhepunkt des Konflikts um die Seelen seiner Freunde, als er sich in der Entscheidungsschlacht gegen Lunaras Pläne und auf die Seite von [Lindo Laut](/characters/lindo_laut.md) und [Esterossa](/characters/esterossa.md) stellt [45]. Zurück in der Heimat begegnet er dem Verlust von [Rotunas](/characters/rotunas.md) mit tiefer Reue [47] und beobachtet die Huldigung der Gruppe durch die Stadt mit Skepsis [47].
+4. **Gildenprüfung und schwarzer Palantir (2025-06-25):** Dodo hat eine neue Keule. In einer Prüfung zerschmettert er Engel, hält aber unbedacht den schwarzen Palantir an das verbotene Buch und löst eine Katastrophe aus, die den Grafen erzürnt.
+
+5. **Nerash und assasinen (2025-07-09 bis 2025-07-22):** Dodo agiert vorsichtig, will nur die Kette über Nerashs Mund lösen, bleibt im Hintergrund. Später im Kampf gegen Assassinen zerschmettert er einen im Sturzflug, schüchtert mehrere mit Flammen ein und erhält ein Totem von Nerash.
+
+6. **Brücke der Hoffnungslosigkeit und Versteinerung (2025-08-12 bis 2025-08-20):** Unter dem Einfluss eines Hassgeistes leidet er an Hoffnungslosigkeit, trinkt einen Ausdauertrank und wirft einen Ghul ins Feuer. Später wird er von Kultisten versteinert, weil er das Codewort nicht nennt, und bleibt regungslos, bis Lindo Laut eingreift.
+
+7. **Thron des Dämons und Zebros‘ Zorn (2025-09-02 bis 2025-09-09):** Noch teilweise versteinert kämpft Dodo weiter. Er hält Lindo Laut vor dem Thron zurück und wird durch den Wunsch vollständig geheilt. In der Festung Zebras‘ widersteht er dem Ratten-Dämon und verweigert den Seelenvertrag. Kurz darauf erhält er **Zebros Zorn** – sein heiliger Streitkolben leuchtet erstmals. (Dies ist der Erhalt der Waffe, die er aus einem Spiegel zog und die von Cepros stammt.)
+
+8. **Arena-Champion in Breska und Willau (2025-09-17 bis 2025-10-21):** Dodo wird als berühmter Arena-Champion erkannt. Er verhandelt mit Gorak, warnt vor Gefahren und wird von Halborks respektiert. In Willau beeindruckt er den Kampfmeister Mil, erwägt das Trainingsangebot, besiegt einen Werwolf und eine Phasenspinne, schützt Cookie und tötet das Biest mit einem Todesstoß. Sein Ruf als „Trollschlechter“ wächst.
+
+9. **Schmiede und Leichenberg (2025-10-28):** Dodo zeigt handwerkliches Geschick, fertigt einen Dolchaufsatz für seinen Kolben und tränkt ihn in heiligen Öl. Sein Hintergrund – Überlebender eines Massakers an seiner Familie – verleiht ihm stoische Härte. Im Kampf gegen eine nekrotische Kreatur landet er den entscheidenden brennenden Schlag.
+
+10. **Pilzdorf, Kosmos-Pilz und Cookies Tod (2025-11-14 bis 2025-11-25):** Dodo sucht Krenko, erforscht einen summenden Altar, löst Blitze aus. Er gibt Esterossa seinen premium Schlafsack und trauert nach Cookies Tod. Im Untotenkampf nutzt er *Unstoppable* und einen 360-Grad-Feueratem, um sechs Skelette zu vernichten, und stützt den verwundeten Rotunas.
+
+11. **Kristallstatue und Belorus‘ Brief (2026-01-06 bis 2026-01-13):** Dodo zerstört einen lebenden Kristall und hat eine Vision. Später liest er Belorus‘ Brief mit einem grünen Seelenstein und enthauptet im Kampf einen Dreadknight mit Zebros‘ Zorn.
+
+12. **Schlacht um Ehrenfels und Slicks‘ Einfluss (2026-01-20):** Als Taktiker befiehlt Dodo den Rückzug, setzt gezielt Feuerstöße ein und reißt Lindo Laut von einem besessenen Angriff auf Belorus los. Danach koordiniert er die Heilung und nimmt eine mächtige Waffe als Beute.
+
+13. **Dormak und Abyssalis (2026-02-11 bis 2026-04-14):** Dodo sucht in einer Gruft nach Silber, wehrt sich gegen Gaswolken und ein Seelenkalb. In einer Pocket Domain greift er den verwandelten Lindo Laut an und fordert seinen Freund zurück. Später in Abyssalis vertraut er Lunara und tötet den Dämon Dormak – obwohl er das Töten Wehrloser verabscheut. Er trägt die Namen seiner Freunde im Schild und eine Steinfigur Lindo Lauts als Amulett.
+
+14. **Ritualstätte und Ettin (2026-04-07 bis 2026-04-14):** Dodo entzündet unbeabsichtigt Schädel, die einen Gegner regenerieren lassen, wird von einem rosa Klumpen umhüllt und teilt mit Feueratem aus. Später leidet er unter Albträumen und vermisst seine Freunde. Gegen den Ettin wirft er sich vor Lunara und absorbiert doppelten Schaden (47 Punkte), obwohl er die Zusammenhänge nicht versteht.
+
+15. **Rückkehr der alten Götter und Slicks (2026-05-06 bis 2026-06-16):** Dodo erkennt ein rätselhaftes Bodensymbol nicht, kämpft gegen Seraphen, zerstört einen Ring und öffnet sich Lunara. Er übersteht Koboldhorden und verhandelt erfolglos auf Goblinisch mit fanatischen Vollstreckern. In der Entscheidungsschlacht verfolgt er die Kontroversen um die alten Götter und stellt sich auf die Seite von Lindo Laut und Esterossa, weil er Lunaras Nekromantieplan als falsch empfindet.
+
+16. **Verlust und Abschied (2026-07-21 bis 2026-08-04):** Dodo stößt einen Leibgardisten in den Abgrund, widersteht Kontrollfäden, zerschlägt eine Statue und nimmt Abschied vom sterbenden Esterossa. Zurück in der vertrauten Welt sucht er sofort seinen Strixwolf Inaros, zeigt Reue wegen Rotunas und begrüßt Gunther mit goblinischer Skepsis. In der Audienz bei Vitius bleibt er misstrauisch, warnt vor der Assassinen-Stadt Valuna und erinnert an gefallene Freunde.
 
 ## Offene Fragen
 
-- Die genaue Herkunft von Dodos Goblin-Schatten-Fähigkeit bleibt ungeklärt. Es ist nicht bekannt, ob es sich um eine angeborene Gabe, einen erlernten Zauber oder einen Segen handelt.
-- Seine Heimatinsel Tarkia wurde nur flüchtig erwähnt; es ist unklar, was genau ihn von dort vertrieb und ob sein gesuchter Freund Krenko je gefunden wird.
-- Die Bedeutung des Brummens des Altars, das ihn in der Nacht weckte und auf seine Berührung mit Blitzen reagierte, ist nicht abschließend erklärt [25].
-- Welches Schicksal sein Strixwolf Inaros in Ehrenfels erleidet, während er selbst in Abyssalis kämpft, ist ungewiss [47].
+- Dodo sucht seinen Freund **Krenko** aus Tarkia, der bislang unauffindbar bleibt (Session 2025-11-14).
+- Das einjährige Trainingsangebot von **Mil** in Willau steht im Raum – ob Dodo es annimmt und damit für ein Jahr aus der Gruppe ausscheidet, ist offen (Session 2025-10-14).
 
 ## Belege
 
-[1] Session 2025-04-01 @ 00:09:10 (https://www.youtube.com/watch?v=LZIuUzc3F18)
-[2] Session 2025-04-15 @ 00:54:29 (https://www.youtube.com/watch?v=YCpAz_syjaY)
-[3] Session 2025-04-23 @ 01:27:34 (https://www.youtube.com/watch?v=z3C-bewKqUs)
-[4] Session 2025-05-06 @ 00:44:00 (https://www.youtube.com/watch?v=e0v6AFGd4mE)
-[5] Session 2025-05-14 @ 00:05:41 (https://www.youtube.com/watch?v=5eAEDN5ra-4)
-[6] Session 2025-05-27 @ 01:48:15 (https://www.youtube.com/watch?v=bamCIB_CkR8)
-[7] Session 2025-06-03 @ 00:33:46 (https://www.youtube.com/watch?v=jtYR4Je0a18)
-[8] Session 2025-06-10 @ 00:13:16 (https://www.youtube.com/watch?v=cLkCu3Iq3y8)
-[9] Session 2025-06-17 @ 01:32:13 (https://www.youtube.com/watch?v=tl76B4V0io8)
-[10] Session 2025-06-25 @ 00:50:21 (https://www.youtube.com/watch?v=tpkO9uGw6-I)
-[11] Session 2025-07-09 @ 00:56:56 (https://www.youtube.com/watch?v=XOnHa6CmDbo)
-[12] Session 2025-07-22 @ 00:47:37 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
-[13] Session 2025-08-05 @ 00:00:01 (https://www.youtube.com/watch?v=cRNIWJz_ATo) [Transkriptqualität: mittel]
-[14] Session 2025-08-12 @ 01:52:43 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)
-[15] Session 2025-08-20 @ 01:20:01 (https://www.youtube.com/watch?v=-XbO3FLSL_I)
-[16] Session 2025-09-02 @ 01:42:09 (https://www.youtube.com/watch?v=TLZOH7TlGhk)
-[17] Session 2025-09-06 @ 00:21:55 (https://www.youtube.com/watch?v=vo1xnyLQDJk)
-[18] Session 2025-09-09 @ 00:18:21 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
-[19] Session 2025-09-17 @ 00:20:30 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
-[20] Session 2025-09-23 @ 01:32:30 (https://www.youtube.com/watch?v=DGzfqVigS0g)
-[21] Session 2025-09-30 @ 00:16:09 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
-[22] Session 2025-10-14 @ 01:09:10 (https://www.youtube.com/watch?v=cUtz87UCHu4)
-[23] Session 2025-10-21 @ 00:03:02 (https://www.youtube.com/watch?v=sxFhbtwoefA)
-[24] Session 2025-10-28 @ 01:45:06 (https://www.youtube.com/watch?v=V6NzNakqxXM)
-[25] Session 2025-11-14 @ 00:03:50 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)
-[26] Session 2025-11-18 @ 00:04:08 (https://www.youtube.com/watch?v=w__ahowb9p0)
-[27] Session 2025-11-25 @ 00:42:14 (https://www.youtube.com/watch?v=wd5R4fJfngY)
-[28] Session 2026-01-06 @ 01:15:16 (https://www.youtube.com/watch?v=VGw81seFvbo)
-[29] Session 2026-01-13 @ 02:04:22 (https://www.youtube.com/watch?v=w4LB1s9_3rs)
-[30] Session 2026-01-20 @ 01:55:27 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
-[31] Session 2026-02-11 @ 00:14:32 (https://www.youtube.com/watch?v=3C8SD-cyNPM)
-[32] Session 2026-02-17 @ 01:00:23 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
-[33] Session 2026-02-24 @ 00:02:06 (https://www.youtube.com/watch?v=WOFArbwDDIQ)
-[34] Session 2026-03-03 @ 00:53:56 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
-[35] Session 2026-03-10 @ 00:28:08 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
-[36] Session 2026-03-18 @ 00:07:23 (https://www.youtube.com/watch?v=HHXxsASLrbQ)
-[37] Session 2026-03-24 @ 01:48:47 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
-[38] Session 2026-03-31 @ 00:42:40 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
-[39] Session 2026-04-07 @ 00:08:17 (https://www.youtube.com/watch?v=MAuQPMNY548)
-[40] Session 2026-04-14 @ 01:18:40 (https://www.youtube.com/watch?v=1Jyu92P7_Fg)
-[41] Session 2026-05-06 @ 00:23:33 (https://www.youtube.com/watch?v=MB4quhDWsQE)
-[42] Session 2026-05-13 @ 01:21:40 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
-[43] Session 2026-05-19 @ 00:02:40 (https://www.youtube.com/watch?v=xEcGJeaNixI)
-[44] Session 2026-06-10 @ 00:19:35 (https://www.youtube.com/watch?v=_3tLSiT1tck)
-[45] Session 2026-06-16 @ 00:10:09 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
-[46] Session 2026-07-21 @ 00:09:49 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
-[47] Session 2026-07-29 @ 00:06:33 (https://www.youtube.com/watch?v=umGyKLkefJI)
-[48] Session 2026-08-04 @ 00:14:37 (https://www.youtube.com/watch?v=qRj2t3wQHfs)
-
-## Offene Konflikte
-
-- Dodos Abstammung wird in den Quellen inkonsistent beschrieben: Mal wird er als „zwergenhafter Krieger“ [5] oder „Zwergen-Krieger“ [10] bezeichnet, in anderen Sessions explizit als „halb Drache, halb Goblin“ [6] oder „drachenblütiger Goblin“ [15] respektive „drachblütiger Goblin-Geborener“ [18]. Diese widersprüchlichen Aussagen stehen nebeneinander und sind durch die Chronologie nicht auflösbar, da sich keine Metamorphose des Charakters nachweisen lässt.
+1. Session 2025-03-26 @ 01:36:22 (https://www.youtube.com/watch?v=ROCKGeeRUFw)
+2. Session 2025-04-01 @ 00:09:10 (https://www.youtube.com/watch?v=LZIuUzc3F18)
+3. Session 2025-04-15 @ 00:54:29 (https://www.youtube.com/watch?v=YCpAz_syjaY)
+4. Session 2025-04-23 @ 01:27:34 (https://www.youtube.com/watch?v=z3C-bewKqUs)
+5. Session 2025-05-06 @ 00:44:00 (https://www.youtube.com/watch?v=e0v6AFGd4mE)
+6. Session 2025-05-14 @ 00:05:41 (https://www.youtube.com/watch?v=5eAEDN5ra-4)
+7. Session 2025-05-27 @ 01:48:15 (https://www.youtube.com/watch?v=bamCIB_CkR8)
+8. Session 2025-06-03 @ 00:33:46 (https://www.youtube.com/watch?v=jtYR4Je0a18)
+9. Session 2025-06-10 @ 00:13:16 (https://www.youtube.com/watch?v=cLkCu3Iq3y8)
+10. Session 2025-06-17 @ 01:32:13 (https://www.youtube.com/watch?v=tl76B4V0io8)
+11. Session 2025-06-25 @ 00:50:21 (https://www.youtube.com/watch?v=tpkO9uGw6-I)
+12. Session 2025-07-09 @ 00:56:56 (https://www.youtube.com/watch?v=XOnHa6CmDbo)
+13. Session 2025-07-22 @ 00:47:37 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
+14. Session 2025-08-12 @ 01:52:43 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)
+15. Session 2025-08-20 @ 01:20:01 (https://www.youtube.com/watch?v=-XbO3FLSL_I)
+16. Session 2025-09-02 @ 01:42:09 (https://www.youtube.com/watch?v=TLZOH7TlGhk)
+17. Session 2025-09-06 @ 00:21:55 (https://www.youtube.com/watch?v=vo1xnyLQDJk)
+18. Session 2025-09-09 @ 00:18:21 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
+19. Session 2025-09-17 @ 00:20:30 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
+20. Session 2025-09-23 @ 01:32:30 (https://www.youtube.com/watch?v=DGzfqVigS0g)
+21. Session 2025-09-30 @ 00:16:09 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+22. Session 2025-10-14 @ 01:09:10 (https://www.youtube.com/watch?v=cUtz87UCHu4)
+23. Session 2025-10-21 @ 00:03:02 (https://www.youtube.com/watch?v=sxFhbtwoefA)
+24. Session 2025-10-28 @ 01:45:06 (https://www.youtube.com/watch?v=V6NzNakqxXM)
+25. Session 2025-11-14 @ 00:03:50 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)
+26. Session 2025-11-18 @ 00:04:08 (https://www.youtube.com/watch?v=w__ahowb9p0)
+27. Session 2025-11-25 @ 00:42:14 (https://www.youtube.com/watch?v=wd5R4fJfngY)
+28. Session 2026-01-06 @ 01:15:16 (https://www.youtube.com/watch?v=VGw81seFvbo)
+29. Session 2026-01-13 @ 02:04:22 (https://www.youtube.com/watch?v=w4LB1s9_3rs)
+30. Session 2026-01-20 @ 01:55:27 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
+31. Session 2026-02-11 @ 00:14:32 (https://www.youtube.com/watch?v=3C8SD-cyNPM)
+32. Session 2026-02-17 @ 01:00:23 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
+33. Session 2026-02-24 @ 00:02:06 (https://www.youtube.com/watch?v=WOFArbwDDIQ)
+34. Session 2026-03-03 @ 00:53:56 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
+35. Session 2026-03-10 @ 00:28:08 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
+36. Session 2026-03-18 @ 00:07:23 (https://www.youtube.com/watch?v=HHXxsASLrbQ)
+37. Session 2026-03-24 @ 01:48:47 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
+38. Session 2026-03-31 @ 00:42:40 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
+39. Session 2026-04-07 @ 00:08:17 (https://www.youtube.com/watch?v=MAuQPMNY548)
+40. Session 2026-04-14 @ 01:18:40 (https://www.youtube.com/watch?v=1Jyu92P7_Fg)
+41. Session 2026-05-06 @ 00:23:33 (https://www.youtube.com/watch?v=MB4quhDWsQE)
+42. Session 2026-05-13 @ 01:21:40 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
+43. Session 2026-05-19 @ 00:02:40 (https://www.youtube.com/watch?v=xEcGJeaNixI)
+44. Session 2026-06-10 @ 00:19:35 (https://www.youtube.com/watch?v=_3tLSiT1tck)
+45. Session 2026-06-16 @ 00:10:09 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
+46. Session 2026-07-21 @ 00:09:49 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
+47. Session 2026-07-29 @ 01:17:30 (https://www.youtube.com/watch?v=umGyKLkefJI)
+48. Session 2026-08-04 @ 00:14:37 (https://www.youtube.com/watch?v=qRj2t3wQHfs)

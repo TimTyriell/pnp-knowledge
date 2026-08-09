@@ -1,17 +1,17 @@
 ---
 type: Item
 title: Goldsack
-description: Ein großer Sack mit Goldmünzen, den Bruma bei der Leiche des Gnoll-Anführers
-  findet. Er wird von der Gruppe als Beute mitgenommen.
+description: Ein Beutel voll Gold, den Lindo Laut dem Wirt zuwirft, um eine Runde
+  für alle Anwesenden zu spendieren, was die Feierstimmung weiter anheiz…
 tags:
 - items
-timestamp: '2026-07-23T00:00:00Z'
+timestamp: '2026-07-29T00:00:00Z'
 id: ITEM_GOLDSACK
 subtype: Sonstiges
 ---
 
-Ein großer Sack mit Goldmünzen, den Bruma bei der Leiche des [Gnoll-Anführers](/npcs/gnoll_anfuehrer.md) findet. Er wird von der Gruppe als Beute mitgenommen.
+Ein Beutel voll Gold, den [Lindo Laut](/characters/lindo_laut.md) dem Wirt zuwirft, um eine Runde für alle Anwesenden zu spendieren, was die Feierstimmung weiter anheizt.
 
 # Belege
 
-1. Session 2026-07-23 @ 01:57:04 (https://www.youtube.com/watch?v=Gb-TEbCFF0M)
+1. Session 2026-07-29 @ 01:08:08 (https://www.youtube.com/watch?v=umGyKLkefJI)

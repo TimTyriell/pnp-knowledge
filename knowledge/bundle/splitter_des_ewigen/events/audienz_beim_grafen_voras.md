@@ -10,7 +10,7 @@ id: EVENT_AUDIENZ_BEIM_GRAFEN_VORAS
 subtype: Verhandlung
 ---
 
-Ein Gespräch zwischen den Helden und dem Vampirgrafen. Sie berichten von der Hack und erfahren von seinen Plänen bezüglich [Zebros](/deities/zebros.md). [Dodos](/characters/dodo.md) Bemerkungen über den Kampf mit dem dunklen Paladin und das gestohlene Buch trüben die Stimmung. Der Graf verfällt kurzzeitig in Zorn, bevor er sie in die Bibliothek schickt.
+Ein Gespräch zwischen den Helden und dem Vampirgrafen. Sie berichten von der Hack und erfahren von seinen Plänen bezüglich [Zebros](/factions/koenigreich_zebros.md). [Dodos](/characters/dodo.md) Bemerkungen über den Kampf mit dem dunklen Paladin und das gestohlene Buch trüben die Stimmung. Der Graf verfällt kurzzeitig in Zorn, bevor er sie in die Bibliothek schickt.
 
 # Belege
 

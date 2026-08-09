@@ -13,11 +13,42 @@
 # ignore:      concept ids that must not exist at all; their mentions are
 #              dropped and any leftover file is pruned.
 # split:       (name, session) -> concept_id, for two beings sharing a name.
+# alias_block: concept_id -> [names]. Display-only suppression list for
+#              spellings that must not show up as an alias; identity is
+#              unaffected — see resolve.py::_load_alias_blocks.
 #
 # Canon rulings that are prose, not identity, belong in knowledge/sources/
 # instead — see Kanon_Entscheidungen.md.
+#
+# "Never written by the pipeline" still holds — pnp_okf only ever reads this
+# file. The pnp-dashboard Glossar tab is a second, human-facing author: its
+# Sync button line-patches this file (comment-preserving, not a YAML
+# round-trip) for rename/add-alias/hide-alias edits made in the UI. See
+# services/dashboard/README.md and docs/architecture/ARCHITECTURE.md §3.4.
 
 merge:
+  # GM/Noah 2026-08-09: "Zebros" is a fallen kingdom, not a god or a person —
+  # deities/zebros and npcs/koenig_zebros both said so in their own body text
+  # ("Zebros ist kein Gott... bezeichnet keine einzelne Person"), yet kept
+  # separate Deity/NPC nodes repeating the same kingdom lore a third time
+  # (it's also explained inside locations/berge_von_zebros). One Faction
+  # node instead — merging into factions/ also fixes the type, since a merge
+  # adopts its target directory's type (see "die splitterwelt" below). The
+  # mountain (locations/berge_von_zebros) and its fortress
+  # (locations/burg_zebros) stay separate real places, only linking here.
+  zebros: factions/koenigreich_zebros
+  könig zebros: factions/koenigreich_zebros
+  # "Lunara Velora" (canonical, full name) is almost never spoken — the
+  # transcripts just say "Lunara" (721 literal occurrences vs 0 for the full
+  # name). Without this, the Glossar's literal count badly undercounts her.
+  lunara: characters/lunara_velora
+  # GM/Noah cleanup 2026-08-09: these three are VTT/character-sheet default
+  # names the extractor picked up once each ("Celin's Frosch-Ranger" is
+  # Cookie's class label, "Tim's Fairy Bard" is Lindo Laut's, "Marco's
+  # Guardian" is Dodo's) — same PC, not a separate character.
+  celin's frosch-ranger: characters/cookie
+  tim's fairy bard: characters/lindo_laut
+  marco's guardian: characters/dodo
   cookie (ribbit): characters/cookie
   cookie: characters/cookie
   ribbit: characters/cookie
@@ -225,8 +256,12 @@ merge:
   die sumpfhexe: npcs/lenra
   sumpfhexe: npcs/lenra
   leandra: npcs/lenra
-  geist: npcs/geist_von_rotunas
-  der geist: npcs/geist_von_rotunas
+  # Noah 2026-08-09: the ghostly double is not a separate NPC — fold it into
+  # Rotunas himself. It was one 2025-06-10 scene (electric attack on Dodo,
+  # then destroyed) with no life of its own.
+  geist: characters/rotunas
+  der geist: characters/rotunas
+  geist von rotunas: characters/rotunas
   slicks: npcs/slix_vasul
   # Muss explizit hier stehen, seit canonical_name auf "Slix" gepinnt ist:
   # write_registry lässt einen Alias weg, der dem Canonical entspricht, also
@@ -283,7 +318,7 @@ merge:
   # name in the cluster, that id swallowed the man himself.
   rotunas: characters/rotunas
   rotuna: characters/rotunas
-  geister-doppelgänger von rotunas: npcs/geist_von_rotunas
+  geister-doppelgänger von rotunas: characters/rotunas
   # Belorus the man, distinct from his mages and his army.
   belorus: npcs/belorus
   armee von belorus: factions/belorus_untotenarmee
@@ -293,7 +328,6 @@ merge:
   die splitterwelt: domains/splitterwelt
   splitterwelt: domains/splitterwelt
   # The mention named "Cookie und Valeria" describes Valeria throughout.
-  cookie und valeria: characters/valeria
   wiese (cookie's begleiter): npcs/wiese
 
   # --- A deity that shows up in the flesh is still that deity --------------
@@ -423,6 +457,12 @@ merge:
   streitkolben von zebras: items/streitkolben_von_dodo
   dodos streitkolben: items/streitkolben_von_dodo
   dodos heiliger streitkolben: items/streitkolben_von_dodo
+  # Noah 2026-08-09: "Zebros Zorn" is the weapon's real/canon name — the
+  # bundle text already says as much ("in den Aufzeichnungen auch 'Zebros
+  # Zorn' genannt... dasselbe Exemplar, Kanon-Entscheidung"), but
+  # items/zebrus_zorn (session 2025-09-09) was never actually folded in.
+  zebrus zorn: items/streitkolben_von_dodo
+  zebros zorn: items/streitkolben_von_dodo
   # GM ruling: one sword. "Verflucht" and "heilig" are two readings of the same
   # wilful blade Esterossa carries.
   esterossas verfluchtes schwert: items/esterossas_schwert
@@ -489,10 +529,6 @@ never_merge:
   - npcs/hendrik_heinrich
 - - npcs/jen
   - npcs/der_jen
-# Without this the token-subset rule folds the man back into his double,
-# because {rotunas} is a subset of {geist, von, rotunas}.
-- - characters/rotunas
-  - npcs/geist_von_rotunas
 # The Titan and his servant were both transcribed "Holodarn"; keep them apart.
 - - deities/huludan
   - npcs/diener_huludans
@@ -602,6 +638,89 @@ ignore:
 - items/goldene_perlen_brocken
 - items/goldsaecke_von_valeria
 - items/schleimbaelle
+# GM/Noah cleanup 2026-08-09: unnamed monster-of-the-week encounters — a
+# species/role label, not a name, one combat scene each. Same reasoning as
+# items/heiltrank above: an entry about "a Gnoll" in general carries nothing
+# worth linking. A concrete named individual (e.g. npcs/mil, one of the
+# Champions der Arena) is unaffected and stays.
+- npcs/gnoll_anfuehrer
+- npcs/gnoll_heiler
+- npcs/gnolle
+- npcs/grottenschrate
+- npcs/phasenspinne
+- npcs/die_kinder
+- npcs/die_zwei_zwerge
+- npcs/bergwaechter
+- npcs/die_drei_halborks
+- npcs/die_drei_gefallenen_seraphen
+- npcs/seraphen
+- npcs/kultistenmagier
+- npcs/schattenwesen
+- npcs/untote_wache
+- npcs/zombies_in_der_hoehle
+- npcs/goblin_kind
+- npcs/goblin_kundschafter
+- npcs/goblin_schamane
+- npcs/hexenmeister_goblin
+- npcs/kenku_hexenmeister
+- npcs/bugbaeren_wachen
+- npcs/bugbear_waechter
+- npcs/bugbear_weibchen
+- npcs/skelettbogenschuetzen
+- npcs/skelettkopf
+- npcs/ghule
+- npcs/minotaurus_untoter
+- npcs/untoter_baer
+- npcs/untoter_general
+- npcs/untoter_magier
+- npcs/todesritter_general
+- npcs/withermind
+- npcs/wasserelementare
+- npcs/silberbestien
+- npcs/sumpfbestie
+- npcs/tentakelmonster
+- npcs/kristallbiest
+- npcs/kristallwesen
+- npcs/feuerwesen
+- npcs/steinernes_nashorn
+- npcs/zweikoepfiger_riese
+- npcs/der_troll
+- npcs/der_balor
+- npcs/der_ettin
+- npcs/der_daemon
+- npcs/der_daemonenmagier
+- npcs/der_ratten_daemon
+- npcs/daemonen_abyssalis
+- npcs/daemonische_stimme
+- npcs/dunkle_gestalt
+- npcs/namenloser_waechter
+- npcs/eulenartige_wache
+- npcs/froschartige_kreaturen_dungeon
+- npcs/froschwaechter_bruecke
+- npcs/sammler_kreatur
+- npcs/wildschwein
+- npcs/pilzgoblins
+- npcs/der_kleine_goblin_goblin_freund
+- npcs/attentaeter_dunkelelf
+- npcs/der_korrumpierte_kultist
+- npcs/der_wandernde_untote_regenerator
+- npcs/mimik_silberbarren
+- npcs/der_haarige_werwolf
+- npcs/die_harpyienartige_kreatur
+- npcs/waldschrat
+- npcs/warforged_in_der_wolke
+- npcs/schwarzer_ritter
+- npcs/tote_kriegerin
+- npcs/sterbender_bote
+- npcs/piraten_in_der_taverne
+- npcs/soldaten_von_willauch
+# Encounters, not characters (Noah 2026-08-09): a magically corrupted calf,
+# a nameless guard post, an unnamed arena roster. "Die Champions der Arena"
+# without a name is not worth tracking — concrete champions (e.g. Mil) keep
+# their own node.
+- npcs/seelenkalb
+- npcs/splitterkalb
+- npcs/die_champions_der_arena
 split:
 # "Holodarn" is a mishearing that covered two different beings. 2026-05-13 is
 # the servant ("dient Huludan"); 2026-06-16 is the Titan himself, trapped in
@@ -753,6 +872,7 @@ split:
 # whichever spelling a transcript happened to use first, so a correction never
 # sticks. The concept id stays as it is — only the label changes.
 canonical_name:
+  factions/koenigreich_zebros: Königreich Zebros
   # One of the five souls Vhar'Zul was split into; the Buch der vier Seelen
   # names him "die Krone". Transcribed both as "Koll" and as "Kol Meref".
   deities/kollmereth: Koll'Mereth (die Krone)
@@ -829,7 +949,8 @@ canonical_name:
   locations/sumpf_vor_dem_goblin_dorf: Sumpf vor dem Goblin-Dorf
   locations/sumpf_der_sumpfhexe: Sumpf der Sumpfhexe
   locations/sumpf_bei_nebelwacht: Sumpf bei Nebelwacht
-  items/streitkolben_von_dodo: Dodos heiliger Streitkolben
+  # Noah 2026-08-09: "Zebros Zorn" is the canon name (see merge: above).
+  items/streitkolben_von_dodo: Zebros Zorn
   items/magische_boxringe: Magische Boxringe
   items/gestohlenes_tagebuch: Gestohlenes Tagebuch
   items/symbol_in_der_villa: Symbol in der Villa
@@ -845,6 +966,8 @@ canonical_name:
   # whether it's one phenomenon or two, so the label stays dual instead of
   # forcing a single anchor.
   locations/das_portal: Das Portal (Zwergmeistergilde-Gelände / Kapelle)
+  npcs/voras: Voras der Heilige
+  npcs/hal_harl: Harl
 
 # Concepts that force the deep synthesis tier regardless of mention count —
 # the escape hatch for entities the automatic rules underrate. Characters and
@@ -866,6 +989,7 @@ important:
 - deities/ohoriaks
 - deities/schlangengott
 - deities/sitravil
+- factions/koenigreich_zebros
 - locations/boragdil
 - locations/brandau
 - locations/burg_zebros
@@ -874,7 +998,6 @@ important:
 - locations/jalan
 - locations/sanddorninseln
 - npcs/belorus
-- npcs/koenig_zebros
 - npcs/lenra
 - npcs/nox
 - npcs/roland
@@ -883,3 +1006,11 @@ important:
 - npcs/tindrael
 - npcs/tyrael
 - npcs/voras
+
+# alias_block: Anzeigenamen, die NICHT mehr als Alias eines Konzepts
+# erscheinen sollen. Rein kosmetisch: die Zuordnung (merge/never_merge)
+# bleibt unberuehrt, die Schreibweise verschwindet nur aus Registry,
+# Frontmatter und Synthese. Geschrieben vom Glossar-Sync.
+alias_block:
+  characters/valeria:
+  - cookie und valeria

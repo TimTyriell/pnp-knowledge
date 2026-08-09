@@ -1,8 +1,8 @@
 ---
 type: Character
 title: Gunther
-description: Gunther ist ein Halb-Halbling/Halb-Goblin von adliger Herkunft, der in
-  feiner Kleidung und mit einem großen Siegelring am rechten Daumen au…
+description: Gunther ist ein neu in die Gruppe eingeführter Spielercharakter, der
+  sich durch seine ungewöhnliche Abstammung und sein selbstbewusstes Auf…
 tags:
 - characters
 timestamp: '2026-08-04T00:00:00Z'
@@ -11,65 +11,56 @@ id: CHAR_GUNTHER
 
 ## Überblick
 
-Gunther ist ein Halb-Halbling/Halb-Goblin von adliger Herkunft, der in feiner Kleidung und mit einem großen Siegelring am rechten Daumen auftritt. Er bewegt sich selbstbewusst und formvollendet, zeigt jedoch eine ausgeprägte Empfindlichkeit gegenüber dem Wort „Goblin“ sowie Kommentaren über seine Größe. Gunther arbeitet für eine mysteriöse Fraktion, die aufstrebende Heldengruppen mit Adelshäusern vernetzen will, und hat es sich zur Aufgabe gemacht, die Gruppe um Dodo und Lindo Laut auf ihre Tauglichkeit zu prüfen. Er verfügt über die bemerkenswerte Fähigkeit „Uncanny Disguise“, mit der er andere Personen täuschend echt imitieren kann, sowie über umfangreiches Wissen über göttliche Wesen. Sein bevorzugtes Getränk ist süßer Kirschlikör.
+Gunther ist ein neu in die Gruppe eingeführter Spielercharakter, der sich durch seine ungewöhnliche Abstammung und sein selbstbewusstes Auftreten auszeichnet. Er ist ein Halb-Halbling, Halb-Goblin – eine Kombination, die er mit Stolz, aber auch mit einer gewissen Empfindlichkeit gegenüber abwertenden Bezeichnungen trägt. Sein äußeres Erscheinungsbild ist für jemanden seiner Herkunft außergewöhnlich gepflegt: Er trägt edle Kleidung, einen Ledermantel und einen Siegelring, was auf einen gehobenen sozialen Status oder zumindest den Anspruch daran hindeutet. Gunther strahlt Etikette und eine leichte Arroganz aus und tritt bei seiner ersten Begegnung mit der Gruppe äußerst selbstbewusst auf, indem er ihnen anbietet, sie in höhere politische Kreise einzuführen.
+
+Neben seinem weltgewandten Auftreten verfügt Gunther über die bemerkenswerte Fähigkeit „Uncanny Disguise“, die es ihm erlaubt, seine Gestalt zu verändern und andere Personen täuschend echt zu imitieren. Er ist zudem Mitglied einer geheimen Organisation, deren Aufgabe es ist, Helden zu evaluieren – ein Umstand, den er der Gruppe offenbart, um seine Nützlichkeit zu unterstreichen.
 
 ## Rolle in der Kampagne
 
-Gunther tritt primär als Beobachter und Prüfer der Heldengruppe auf. Er sucht die Gruppe gezielt in der Taverne in Ehrenfels auf, nachdem er von ihrer bevorstehenden Ankunft erfahren hat und „einiges mit diesen zu besprechen“ hat [1]. Seine Fraktion hat den Auftrag, vielversprechende Helden zu identifizieren und Verbindungen zu Adelshäusern herzustellen.
+Gunther stößt in einer Phase zur Gruppe, in der diese nach dem Verlust von Rotunas und der Konfrontation mit Nerash neu formiert ist. Er positioniert sich sofort als jemand, der Zugang zu einflussreichen Kreisen und nützliches Wissen über göttliche Wesen besitzt. Seine erste praktische Handlung besteht darin, sich mittels seiner Gestaltwandlerfähigkeit in [Lunara Velora](/characters/lunara_velora.md) zu verwandeln, um beim Besuch des Tempels ihre Anwesenheit vorzutäuschen und so einen reibungslosen Ablauf zu gewährleisten. Dies gelingt ihm mit einem Performance-Wurf von 23 so überzeugend, dass Vitius getäuscht wird.
 
-Über die reine Beobachtung hinaus entwickelt sich Gunther in den folgenden Tagen zu einem Mentor für Liam (siehe [Liam](/npcs/liam_velora.md)). Er unterrichtet ihn in Tischmanieren und versucht, ihm Respekt vor anderen Glaubensrichtungen beizubringen, auch wenn Liam „bei neuen Göttern blockiert“ [2]. Zudem übernimmt er eine strategische Beraterfunktion für die gesamte Gruppe, schlägt den Namen „Rotunas Erben“ vor und rät zu vorsichtigem Vorgehen.
+Über die folgenden Tage übernimmt Gunther eine Art Mentorenrolle für den entrückten [Liam](/npcs/liam_velora.md). Er bringt ihm Tischmanieren bei und versucht, ihm Respekt vor anderen Glaubensrichtungen beizubringen, auch wenn Liam bei der Konfrontation mit neuen Göttern blockiert. Darüber hinaus organisiert er die Unterbringung von [Liam](/npcs/liam_velora.md), was seine praktische Fürsorge und organisatorischen Fähigkeiten unter Beweis stellt. In strategischen Diskussionen schlägt er den Gruppennamen „Rotunas Erben“ vor und rät zu vorsichtigem Vorgehen – beides Hinweise darauf, dass er die Gruppendynamik beobachtet und aktiv mitgestalten will.
 
-Durch seine Verkleidungsfähigkeit testet er auch die Wachsamkeit der Gruppe: Er gibt sich erfolgreich als Lunara aus, bevor die Gruppe zum Tempel geht, und täuscht dabei Vitius mit einem außergewöhnlich hohen Performance-Wurf von 23.
+Seine Zugehörigkeit zu einer Helden evaluierenden Geheimorganisation deutet an, dass seine Motive über unmittelbare Hilfe hinausgehen könnten und er möglicherweise einen längerfristigen Beobachtungs- oder Bewertungsauftrag verfolgt.
 
 ## Wichtige Merkmale
 
-### Aussehen und Auftreten
+### Fähigkeiten
 
-Gunther trägt stets feine, adlige Kleidung, über der ein passgenauer großer Ledermantel liegt. An seinem rechten Daumen prangt ein großer Siegelring [1]. Sein Äußeres wird als sehr gepflegt beschrieben. Trotz – oder vielleicht wegen – seiner goblinartigen Erscheinung mit halblingschen Eigenschaften legt er größten Wert auf ein aristokratisches Auftreten und formvollendete Manieren.
+Gunthers hervorstechendste Fähigkeit ist **Uncanny Disguise**, eine magische oder übernatürliche Begabung zur Gestaltwandlung. Er kann die Fähigkeit innerhalb weniger Minuten wirken, wie er selbst erklärt: „Das kann ich, während ich ein paar Minuten Zeit habe.“ Die Täuschung ist so perfekt, dass selbst nahestehende Personen getäuscht werden können – bei seinem Auftritt als [Lunara Velora](/characters/lunara_velora.md) reagiert Vitius ohne jeden Verdacht, und selbst [Lindo Laut](/characters/lindo_laut.md), der sich selbst als „close mit Lunara“ bezeichnet, muss erst durch einen Performance-Check überzeugt werden, der Gunther mit Bravour gelingt.
 
-Seine Empfindlichkeit bezüglich seiner Herkunft zeigt sich in einer deutlichen Abneigung gegen das Wort „Goblin“ sowie in gereizten Reaktionen auf Kommentare über seine Größe [1].
+### Auftreten und Wesenszüge
 
-### Fähigkeit: Uncanny Disguise
+Gunthers Auftreten ist eine Mischung aus aristokratischer Contenance und kaum verhohlener Arroganz. Er legt großen Wert auf Form und Etikette, was sich in Gesten wie dem tiefen Verneigen bei der Begrüßung und dem andächtigen Gebet vor der Statue Rotunas' zeigt. Bei der Gedenkstätte für Rotunas senkt er den Kopf und legt die Hände zum Gebet – eine Geste, die echte Pietät oder zumindest das Bemühen um respektvolles Verhalten signalisiert.
 
-Gunther beherrscht die Fähigkeit „Uncanny Disguise“, die es ihm erlaubt, andere Personen täuschend echt zu imitieren. In der ersten direkten Konfrontation mit der Gruppe gibt er sich als Lunara aus und täuscht Vitius erfolgreich – der Performance-Wurf erreicht den außergewöhnlichen Wert von 23 [2]. Die Verkleidung ist so überzeugend, dass selbst jemand, der der echten Person nahesteht, getäuscht werden kann [1].
+Zugleich reagiert er ausgesprochen empfindlich auf Anspielungen auf seine Herkunft. Das Wort „Goblin“ und Bemerkungen über seine Größe scheinen wunde Punkte zu sein, die sein sonst so kontrolliertes Auftreten durchbrechen können. Seine Selbstbeschreibung als Mitglied einer elitären Organisation und sein Angebot, die Gruppe in „höhere politische Kreise“ zu führen, unterstreichen sein ausgeprägtes Selbstbewusstsein und seinen sozialen Ehrgeiz.
 
-### Wissen über göttliche Wesen
+### Wissen
 
-Gunther besitzt umfangreiches Wissen über göttliche Wesen und deren Machtverhältnisse. Er schätzt die Macht eines Engels als unmittelbar an die jeweilige Gottheit gebunden ein [2]. Dieses Wissen bringt er auch in seine Mentorenrolle gegenüber Liam ein, wobei er auf Respekt für unterschiedliche Glaubensrichtungen drängt.
+Gunther verfügt über umfangreiches Wissen über göttliche Wesen und deren Machtstrukturen. Er kann einschätzen, dass die Macht eines Engels direkt an die Gottheit gebunden ist, der er dient – eine Information, die auf tiefergehende theologische oder arkane Kenntnisse schließen lässt. Seine Vertrautheit mit politischen Strukturen legt zudem nahe, dass er sich in gehobenen Kreisen zu bewegen weiß oder zumindest über entsprechende Kontakte verfügt.
 
 ## Beziehungen und Verbindungen
 
-### Fraktion
+**Zur Gruppe:** Gunther tritt nicht als Bittsteller, sondern als Dienstleister auf – er bietet der Gruppe seine Dienste an, nicht umgekehrt. Sein Verhältnis zur Gruppe ist zunächst das eines Evaluators und Mentors. Er beobachtet, bewertet und gibt Ratschläge, scheint aber noch nicht als vollwertiges emotional gleichgestelltes Mitglied integriert zu sein. Sein Vorschlag für den Gruppennamen „Rotunas Erben“ zeigt sein Interesse an der Identitätsbildung der Gruppe, könnte aber auch Teil seines Evaluierungsauftrags sein.
 
-Gunther arbeitet für eine nicht namentlich genannte Fraktion, deren Ziel es ist, aufstrebende Helden mit Adelshäusern zu vernetzen. Seine eigene adlige Kleidung und der Siegelring deuten darauf hin, dass er selbst Verbindungen zum Adel hat. Die Fraktion scheint über gute Informationsquellen zu verfügen – Gunther wusste nicht nur vom Eintreffen der Gruppe in Ehrenfels, sondern hatte bereits „viel gehört“ über sie [1].
+**[Liam](/npcs/liam_velora.md):** Zu dem entrückten Bruder von [Lunara](/characters/lunara_velora.md) baut Gunther eine Mentorenbeziehung auf. Er kümmert sich praktisch um dessen Unterbringung und versucht pädagogisch auf ihn einzuwirken, indem er ihm Tischmanieren und religiöse Toleranz beibringt. Als er sich als [Lunara](/characters/lunara_velora.md) ausgibt, betont er gegenüber Vitius: „Mein Bruder ist unten im Gasthaus. Wir sind froh, dass wir ihn befreien konnten. Und ich hoffe einfach, dass wir dieses Treffen, so wichtig es natürlich ist, schnell beenden können. Weil, wie ihr bestimmt wisst, Familie ist das Wichtigste.“ Diese Aussage ist Teil der Tarnung, zeigt aber, wie gut Gunther die Prioritäten und Werte seiner Rolle versteht.
 
-### Liam
-
-Zwischen Gunther und [Liam](/npcs/liam_velora.md) entwickelt sich über die Tage nach der ersten Begegnung eine Mentor-Schüler-Beziehung. Gunther bringt ihm Tischmanieren bei und arbeitet an Liams Einstellung zu anderen Glaubensrichtungen, auch wenn Liam bei neuen Göttern Schwierigkeiten hat [2].
-
-### Bruder
-
-Gunther erwähnt einen Bruder, der zeitweise in Gefangenschaft war und den die Gruppe – möglicherweise in Abyssalis – befreien konnte. In der Szene nach der Rückkehr sagt er: „Mein Bruder ist unten im Gasthaus. Wir sind froh, dass wir ihn befreien konnten“ [2]. Er betont, dass Familie für ihn das Wichtigste sei, und drängt auf ein schnelles Ende des Treffens, um zu seinem Bruder zurückkehren zu können.
-
-### Heldengruppe
-
-Gunther beobachtet die Gruppe auf ihre Tauglichkeit und bietet ihnen seine Dienste an [1]. Nach der Prüfungsphase positioniert er sich als strategischer Berater, schlägt den Gruppennamen „Rotunas Erben“ vor und empfiehlt ein vorsichtiges Vorgehen [2]. Die Beziehung ist zunächst geschäftsmäßig-distanziert, entwickelt sich aber durch die gemeinsame Zeit und seine Mentorenrolle in Richtung eines Vertrauensverhältnisses.
+**Geheimorganisation:** Gunther gehört einer nicht namentlich genannten geheimen Organisation an, die Helden evaluiert. Über deren Ziele, Mitglieder und Methoden ist nichts Genaueres bekannt, außer dass Gunther offenbar in ihrem Auftrag handelt und die Gruppe der Spielercharaktere zu den von ihm evaluierten Helden gehört.
 
 ## Chronologie
 
-**Session 2026-07-29**: Gunther taucht erstmals in der Taverne in Ehrenfels auf und stellt sich der Heldengruppe vor. Er tritt in voller adliger Montur auf, präsentiert sich selbstbewusst und beobachtet die Gruppe im Auftrag seiner Fraktion. Er beweist scharfe Ohren, als er ein Gespräch belauscht, und nutzt noch vor dem Tempelbesuch seine Fähigkeit „Uncanny Disguise“, um sich als Lunara auszugeben. In der Taverne stößt er mit süßem Kirschlikör an.
+- **Session 2026-07-29:** Gunther wird erstmals eingeführt und tritt der Gruppe als selbstbewusster Halb-Halbling-Halb-Goblin in edler Kleidung gegenüber. Er offenbart seine Zugehörigkeit zu einer Geheimorganisation, die Helden evaluiert, und bietet an, die Gruppe in höhere politische Kreise zu führen. Beim gemeinsamen Gang zum Tempel wirkt er „Uncanny Disguise“ und verwandelt sich in [Lunara Velora](/characters/lunara_velora.md), um deren Anwesenheit vorzutäuschen. An der Gedenkstätte für Rotunas senkt er respektvoll den Kopf zum Gebet. Später organisiert er die Unterbringung des entrückten [Liam](/npcs/liam_velora.md).
 
-**Session 2026-08-04** (umfasst die folgenden Tage): Gunthers Verkleidungstäuschung wird aufgelöst – er hatte sich bei der Ankunft als Lunara ausgegeben und Vitius mit einem Performance-Wurf von 23 erfolgreich getäuscht. Sein Bruder ist inzwischen befreit und befindet sich im Gasthaus. Gunther übernimmt in den folgenden Tagen eine aktive Mentorenrolle für [Liam](/npcs/liam_velora.md), bringt ihm Tischmanieren bei und versucht, ihm Respekt für andere Glaubensrichtungen beizubringen. Er schlägt der Gruppe den Namen „Rotunas Erben“ vor und rät zu vorsichtigem strategischem Vorgehen.
+- **Session 2026-08-04:** Gunthers Verkleidung als [Lunara](/characters/lunara_velora.md) wird auf die Probe gestellt. Vitius gratuliert der falschen [Lunara](/characters/lunara_velora.md) zur erfolgreichen Rückkehr. Gunther als [Lunara](/characters/lunara_velora.md) verneigt sich tief und erklärt, es gehe ihr gut, und bittet um ein schnelles Ende des Treffens, um zu ihrem Bruder zurückzukehren. Ein Performance-Check mit dem Ergebnis 23 überzeugt selbst [Lindo Laut](/characters/lindo_laut.md), der [Lunara](/characters/lunara_velora.md) nahesteht. In den folgenden Tagen übernimmt Gunther eine Mentorenrolle für [Liam](/npcs/liam_velora.md), bringt ihm Tischmanieren und religiöse Toleranz bei, schlägt den Gruppennamen „Rotunas Erben“ vor und rät in strategischen Fragen zu vorsichtigem Vorgehen.
 
 ## Offene Fragen
 
-- Die genaue Identität und Natur von Gunthers Fraktion ist nicht bekannt – wer genau beauftragt ihn, und welche Interessen verfolgt diese Organisation?
-- Gunthers adliger Hintergrund bleibt unklar. Trägt er den Siegelring als Teil seiner eigenen Familie oder als Zeichen seiner Zugehörigkeit zur Fraktion?
-- Der Verbleib und die Identität seines Bruders sind nicht weiter ausgeführt. Warum war der Bruder in Gefangenschaft, und welche Rolle spielt er in Gunthers Geschichte?
-- Ob Gunthers Fraktion tatsächlich neutrale Vermittler oder eigeninteressierte Manipulatoren sind, ist noch nicht geklärt.
+- Welcher Organisation gehört Gunther genau an, und welche Kriterien legt sie bei der Evaluierung von Helden an?
+- Welche persönlichen Motive verfolgt Gunther über seinen offiziellen Auftrag hinaus?
+- Wie weit reichen seine Fähigkeiten der Gestaltwandlung – kann er jede beliebige Person imitieren, und gibt es Grenzen oder Risiken?
+- Was ist seine tatsächliche soziale Herkunft, und woher stammen seine edle Kleidung und sein Siegelring?
 
 ## Belege
 
-[1] Session 2026-07-29, 00:08:03, https://www.youtube.com/watch?v=umGyKLkefJI – Einführung Gunthers: Aussehen, Auftreten, Fraktionszugehörigkeit, Fähigkeiten, Vorlieben.
-
-[2] Session 2026-08-04, 00:18:13, https://www.youtube.com/watch?v=qRj2t3wQHfs – Verkleidungstäuschung, Wissen über göttliche Wesen, Mentorenrolle, Gruppennamenvorschlag, Bruder.
+1. Session 2026-07-29, 01:51:04 – https://www.youtube.com/watch?v=umGyKLkefJI
+2. Session 2026-08-04, 00:18:13 – https://www.youtube.com/watch?v=qRj2t3wQHfs

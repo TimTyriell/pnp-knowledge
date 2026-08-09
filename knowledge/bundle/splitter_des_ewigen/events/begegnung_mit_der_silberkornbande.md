@@ -10,7 +10,7 @@ id: EVENT_BEGEGNUNG_MIT_DER_SILBERKORNBANDE
 subtype: Verhandlung
 ---
 
-Die Gruppe trifft auf [Marus](/npcs/marus.md) und seine Leute in der Banditenhöhle, weist sich mit [Hals Puppe](/items/hals_puppe.md) und dem Namen [Sarina](/npcs/sarina.md) aus und erhält gegen Gold Informationen über die [Mine](/locations/kristallmine.md) und die [Silberbestien](/npcs/silberbestien.md). Dies bereitet sie auf die Gefahren vor.
+Die Gruppe trifft auf [Marus](/npcs/marus.md) und seine Leute in der Banditenhöhle, weist sich mit [Hals Puppe](/items/hals_puppe.md) und dem Namen [Sarina](/npcs/sarina.md) aus und erhält gegen Gold Informationen über die [Mine](/locations/kristallmine.md) und die Silberbestien. Dies bereitet sie auf die Gefahren vor.
 
 # Belege
 

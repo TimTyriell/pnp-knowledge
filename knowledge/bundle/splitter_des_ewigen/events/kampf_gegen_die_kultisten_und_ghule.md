@@ -10,7 +10,7 @@ id: EVENT_KAMPF_GEGEN_DIE_KULTISTEN_UND_GHULE
 subtype: Kampf
 ---
 
-Der Schlagabtausch am Berghang, bei dem die Gruppe drei Kultisten und drei [Ghule](/npcs/ghule.md) niederringt und den Magier gefangen nimmt.
+Der Schlagabtausch am Berghang, bei dem die Gruppe drei Kultisten und drei Ghule niederringt und den Magier gefangen nimmt.
 
 # Belege
 

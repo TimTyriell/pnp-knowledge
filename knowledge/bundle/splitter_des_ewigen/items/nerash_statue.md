@@ -10,7 +10,7 @@ id: ITEM_NERASH_STATUE
 subtype: Artefakt
 ---
 
-Eine kleine Götzenstatue des neuen Gottes [Nerash](/deities/nerash.md), die [Esterossa](/characters/esterossa.md) bei sich trägt und dem [Seraphen](/npcs/die_drei_gefallenen_seraphen.md) ins Gesicht hält, um ihn aufzuhalten. Sie löst beim Seraphen starke Verwirrung und Schmerz aus. Auch [Dodo](/characters/dodo.md) besitzt eine solche Statue.
+Eine kleine Götzenstatue des neuen Gottes [Nerash](/deities/nerash.md), die [Esterossa](/characters/esterossa.md) bei sich trägt und dem Seraphen ins Gesicht hält, um ihn aufzuhalten. Sie löst beim Seraphen starke Verwirrung und Schmerz aus. Auch [Dodo](/characters/dodo.md) besitzt eine solche Statue.
 
 # Belege
 

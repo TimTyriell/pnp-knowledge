@@ -10,7 +10,7 @@ id: ITEM_BILD_VON_XENIA
 subtype: Sonstiges
 ---
 
-Ein von [Saris](/characters/saris.md) mit einer 23 gezeichnetes Büstenporträt der Wirtin Xenia, das er heimlich an der Bar hinterlegt. Es demonstriert sein künstlerisches Talent und sein Interesse an ihr. Er tut dies, während er so tut, als würde er unbeteiligt die Statue zeichnen.
+Ein von [Saris](/characters/saris.md) mit einer 23 gezeichnetes Büstenporträt der Wirtin [Xenia](/npcs/xenia_rotkam.md), das er heimlich an der Bar hinterlegt. Es demonstriert sein künstlerisches Talent und sein Interesse an ihr. Er tut dies, während er so tut, als würde er unbeteiligt die Statue zeichnen.
 
 # Belege
 

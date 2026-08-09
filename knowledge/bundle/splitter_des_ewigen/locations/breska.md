@@ -1,11 +1,11 @@
 ---
 type: Location
 title: Breska
-description: 'Breska ist eine Siedlung, die im Verlauf der Kampagne einen dramatischen
-  Wandel durchläuft: von einem kleinen, naturverbundenen Dorf über e…'
+description: 'Nach dem Aufstieg zur Stadt: Innerhalb eines Jahres wuchs die Siedlung
+  enorm. Eine hohe Palisade und später steinerne Mauern umgaben sie. D…'
 tags:
 - locations
-timestamp: '2026-07-29T00:00:00Z'
+timestamp: '2026-07-21T00:00:00Z'
 id: LOC_BRESKA
 subtype: Siedlung
 aliases:
@@ -16,70 +16,56 @@ aliases:
 ---
 
 ## Überblick
-
-Breska ist eine Siedlung, die im Verlauf der Kampagne einen dramatischen Wandel durchläuft: von einem kleinen, naturverbundenen Dorf über eine befestigte und rasch aufstrebende Kleinstadt bis hin zu einer zerstörten und schließlich verlassenen Ruinenstadt. Ursprünglich auf einer Lichtung gelegen, besteht der Ort zunächst nur aus wenigen Häusern, zwei großen Bauernhöfen, einer Taverne, einem Bürgermeisterhaus und einem abgelegenen Magierturm [1]. Nachdem die Helden das Dorf vor einem Goblinangriff retten, finanziert der Vampirgraf [Voras der Heilige](/npcs/voras.md) den massiven Ausbau Breskas, sodass es innerhalb eines Jahres zu einer befestigten Stadt mit Palisade, Kapelle, ausgebauter Taverne, Marktplatz und neuer Gilde heranwächst [4]. Später wird die Stadt von einer Armee Untoter unter dem General [Belorus](/npcs/belorus.md) belagert, die Mauern fallen, die Bevölkerung verhungert beinahe, und nach dem Durchzug der Untoten bleibt Breska als menschenleere Ruine zurück, in der nur noch das Anwesen des Voras steht [9][10][11].
+Breska ist eine Siedlung, die im Verlauf der Kampagne einen drastischen Wandel durchlief: vom kleinen, naturverbundenen Dorf über eine rasch gewachsene, befestigte Kleinstadt bis hin zu einer von Untoten zerstörten und schließlich verlassenen Ruine. Der Ort war Schauplatz der ersten großen Schlacht der Helden, der Erweckung des Vampirs Voras und später das Epizentrum der Belagerung durch den Untoten-General Belorus. Das einzige Gebäude, das die Zerstörung überdauerte, war das Anwesen des Fürsten Voras.
 
 ## Rolle in der Kampagne
-
-Breska ist einer der zentralen Handlungsorte der Kampagne. Schauplatz des ersten größeren Gefechts der Gruppe gegen die Goblins und damit Ausgangspunkt der Verbindung zu Voras dem Heiligen, den die Gefährten unter dem Friedhof aus seinem Schlaf erwecken. Die Verteidigung des Dorfes und die anschließende Erweckung des Vampirs haben weitreichende Folgen für den gesamten Weltenkonflikt. Später dient die Stadt als Spiegel der eskalierenden Bedrohung durch die Untotenarmee: Ihre Belagerung und Zerstörung demonstrieren die wachsende Macht von Belorus und treiben die Handlung voran, als die Gruppe verzweifelt versucht, Nachrichten aus der eingeschlossenen Stadt zu erhalten und schließlich in den Ruinen nach Voras sucht. Breska wird auch zum Symbol für die Kehrseiten des rasanten Aufstiegs — mit der neuen Gilde, strengen Einlasskontrollen und der Abweisung von Flüchtlingen zeigt sich die Stadt zunehmend abgeschottet und unnahbar [5][6].
+Breska bildete den Ausgangspunkt der Handlung. Die von der Gilde entsandten Helden [Rotunas](/characters/rotunas.md) und Valerie sollten das Dorf vor einer drohenden Goblinhorde warnen und verteidigen. Die folgende Schlacht, in die später die ganze Gruppe eingriff, rettete nicht nur das Dorf, sondern führte zur zufälligen Erweckung [Voras' des Heiligen](/npcs/voras.md) in einer Gruft unter dem Friedhof. In den Monaten danach stieg Breska dank Voras’ Finanzierung zu einer prosperierenden Kleinstadt auf und wurde zur Basis der neuen örtlichen Gilde. Als die Armeen des Untoten-Generals Belorus die Umgebung überrannten, wurde Breska über Monate belagert, fiel schließlich und wurde fast vollständig zerstört. Die Rückkehr der Helden in die Ruinen endete mit dem Tod Voras’ und der Aktivierung des Splitters des Ewigen, woraufhin der Ort endgültig aufgegeben wurde.
 
 ## Wichtige Merkmale
 
-### Lage und Beschaffenheit
+### Lage
+Das ursprüngliche Dorf lag abgeschieden auf einer bewaldeten Lichtung in einem Tal. Später, nach der Zerstörung, lag ein dichter, magischer Nebel über dem Tal, den Voras zur Abschirmung erschaffen hatte.
 
-Das ursprüngliche Dorf liegt auf einer Lichtung, umgeben von Wald und einem kleinen Berg. Es ist naturbelassen mit ein paar Bäumchen, verfügt über einen Friedhof auf einem Felsplateau und die Fenster der Häuser sind zum Schutz vor Überfällen vergittert [1]. Innerhalb eines Jahres verwandelt sich die Siedlung in eine befestigte Kleinstadt mit einer großen Palisade, einer Stadtmauer und einer zentral auf dem Berg errichteten Kapelle [4]. Die Taverne wird komplett ausgebaut, ein Marktplatz entsteht, und die neue Gilde überragt den Ort. Unter dem Friedhof verbirgt sich ein Eingang zu Katakomben, in denen zwei Sarkophage stehen — einer davon die Ruhestätte des Vampirs Voras, dessen Inschrift von jemandem mit einem Meißel zu „VORAS DER SCHRECKEN" geändert wurde, während er selbst sich als „der Heilige" bezeichnet.
+### Beschaffenheit
+**Vor dem Goblinangriff:** Breska bestand aus wenigen Häusern, zwei großen Bauernhöfen, einer Taverne, dem Bürgermeisterhaus und einem abgelegenen Magierturm. Die meisten Fenster waren zum Schutz vor Überfällen vergittert. Ein markantes Felsplateau auf dem Friedhof diente als Orientierungspunkt; unter dem ältesten Grab verbarg sich magisch gesichert eine Gruft mit zwei Sarkophagen.
 
-Nach dem Fall der Stadt präsentiert sich Breska als Trümmerfeld: Die Gebäude sind von Katapulten zerstört, ein dichter, magischer Nebel — von Voras zur Abschirmung erzeugt — liegt über dem Tal. Es gibt keine Leichen, da Belorus sie alle mitgenommen hat. Einzig das Anwesen des Voras steht noch unversehrt [10][11].
+**Nach dem Aufstieg zur Stadt:** Innerhalb eines Jahres wuchs die Siedlung enorm. Eine hohe Palisade und später steinerne Mauern umgaben sie. Die Taverne wurde ausgebaut, eine Kapelle, neue Wohnhäuser, ein Marktplatz und sogar eine Arena entstanden. Ein großes Gildenhaus dominierte das Stadtbild. Der Einlass wurde streng kontrolliert, Flüchtlinge wurden abgewiesen.
 
-### Bewohner und Einrichtungen
+**Nach der Belagerung:** Katapulte hatten fast alle Gebäude zerstört. Leichen gab es nicht, da Belorus sie mitgenommen hatte. Nur das Anwesen des Fürsten stand noch unversehrt. Die Helden fanden Breska als stille Ruinenstadt unter dem dichten magischen Nebel.
 
-Zu Dorfzeiten leben in Breska einfache Bauern und Handwerker. Der Bürgermeister heißt Berthold, zudem gibt es einen Totengräber, mehrere Wachen, einen Wirt und den abseits wohnenden Magier Leandras. Die meisten Bewohner sind anfangs misstrauisch gegenüber Fremden, lassen sich aber von den Gildenmitgliedern überzeugen, das Dorf zu befestigen.
-
-In der Stadtphase wird Breska von der neuen Gilde dominiert. Die Wachen erkennen die Helden als „Retter des Dorfes Breska" und gewähren ihnen Einlass [4]. Später werden die Kontrollen jedoch streng, und Flüchtlinge werden abgewiesen [5]. In der Belagerungsphase leiden die Bewohner an Nahrungsmittelknappheit — die ersten Einwohner sterben, und Boten dringen nicht mehr aus der Stadt [7][8].
+### Bewohner
+Im Dorf lebten einfache Bauern, der Bürgermeister Berthold, der Magier Leandras, der Totengräber, einige Wachen und der Wirt der Taverne. Nach dem Ausbau zog die Gilde ein und stellte eine eigene Stadtwache; Voras residierte als Schutzherr in seinem Anwesen. Während der Belagerung verhungerten viele Bewohner oder fielen den Untoten zum Opfer. Überlebende scheinen vor oder nach der Zerstörung geflohen zu sein; nach Voras’ Tod war der Ort unbewohnt.
 
 ## Beziehungen und Verbindungen
-
-- **[Voras der Heilige](/npcs/voras.md)**: Wird von der Gruppe in den Katakomben unter Breskas Friedhof erweckt. Er finanziert später den Ausbau der Stadt und wird zu ihrem Schutzherrn. Sein eigenwilliger Charakter zeigt sich schon bei der Erweckung: „Voras, und korrigierte sich, als läge ihm daran, von Fremden richtig verstanden zu werden: *Der Heilige.* Nicht der Schrecken. Den Stein hat ein Lügner beschrieben." Nach seinem Tod bleibt sein Anwesen als einziges Gebäude der Stadt unversehrt [11].
-- **[Belorus](/npcs/belorus.md)**: Der untote General, der Breska mit seiner Armee belagert, die Mauern niederreißt und die Bevölkerung fast aushungert. Nach der Zerstörung nimmt er alle Leichen mit sich [10].
-- **[Die Gilde von Ehrenfels](/locations/ehrenfels.md)**: Entsendet zuerst Valerie und Rotunas zur Warnung und Verteidigung des Dorfes, später wacht sie über die Geschicke der Stadt. Nach Breskas Wachstum übersteigt die Stadt die Gilde selbst an Größe [5].
-- **[Leandras](/npcs/lendras.md)**: Der Magier von Breska, der im abgelegenen Turm lebt und beim Goblinangriff fast überrannt wird. Übergibt den Gefährten zum Dank einen magischen Schlüssel, der den Zugang zur Gruft unter dem Friedhof öffnet.
-- **[Hal](/npcs/hal_harl.md)**: Der Anführer einer Banditengruppe, berichtet, dass Breska zunehmend autark wird und nach Leuten wie seinen Banditen sucht [6].
-- **[Roland](/npcs/roland.md)**: Ein Anführer von Flüchtlingen, die aus Breska vertrieben wurden [6].
-- **[Hans](/npcs/hans_soldat_aus_breska.md)**: Ein Bote, der aus dem belagerten Breska entkommt und von der schwarzen Rüstung auf Seiten der Angreifer berichtet [9].
+- **[Voras der Heilige](/npcs/voras.md):** Der Vampirgraf erwachte in der Gruft unter Breskas Friedhof und wurde zum heimlichen Schutzherrn. Er finanzierte den Ausbau zur Stadt, schirmte die Ruinen mit einem Nebel ab und fiel schließlich dem Ansturm der Untoten oder den Ereignissen um den Splitter zum Opfer.
+- **[Rotunas](/characters/rotunas.md) und Valerie:** Die beiden Helden der Gilde warnten das Dorf vor dem Goblinangriff und fälschten die Angriffsnotizen eines getöteten Spähers, um die Horde in einen Hinterhalt zu locken.
+- **Die Gilde:** Auftraggeberin der ersten Mission. Die Gilde etablierte später eine große Niederlassung in Breska und dominierte das städtische Leben.
+- **[Die Hack (Moorhexe)](/npcs/lenra.md):** In Breska sammelten die Helden Hinweise, dass die Hack die treibende Kraft hinter dem ersten Goblinangriff war.
+- **[Belorus der Untoten-General](/npcs/belorus.md):** Seine Armee belagerte und zerstörte Breska. Er ließ sämtliche Leichen fortschaffen und zog mit seiner schwarzen Rüstung ab, bevor die Untoten die Belagerung abbrachen.
+- **Hal und Banditen:** Der Anführer Hal erwähnte, Breska werde immer autarker und suche aktiv nach Gesetzlosen. Flüchtlinge unter einem gewissen Roland waren aus der Stadt vertrieben worden.
 
 ## Chronologie
-
-**Ankunft der ersten Gildenmitglieder**: Valerie und Rotunas erreichen das Dorf, gewinnen das Vertrauen der Bewohner, retten eine Bauerntochter vor einem Goblinspäher und fälschen dessen Angriffsnotizen, um die Horde in einen vorbereiteten Hinterhalt zu lenken. Gemeinsam mit den Dorfbewohnern errichten sie Palisaden, graben Fallen und verteilen Posten.
-
-**Die Schlacht um Breska**: Die gesamte Gruppe — Dodo, Esterossa, Cookie, Lindo Laut, Valerie und Rotunas — stellt sich der Goblinhorde, die durch die vorbereitete Gasse zwischen Stein und Friedhof anrückt. Die Horde umfasst Goblins, einen Oger, ein krähenartiges Wesen und einen Grottenschrat. Lindo Laut singt entgegen dem Plan ein lautes Lied vom Rathausdach, das zwar den Hinterhalt verrät, aber die Verteidiger stärkt und die Feinde verwundbar macht. Valerie entfacht Wildfeuer, Rotunas ringt den Oger nieder, Esterossa heilt einen sterbenden Bauern. Ein junger Schmied fällt trotzdem. Leandras wird an seinem Turm von Krähenwesen und Grottenschrat bedrängt und von einem Teil der Gruppe gerettet. Die Horde wird gebrochen.
-
-**Erweckung des Voras**: Leandras führt die Gefährten zum Friedhof. Mit dem magischen Schlüssel öffnen sie eine verborgene Gruft unter dem ältesten Grab. In der Kammer stehen zwei Sarkophage, einer trägt die verwitterte Inschrift „VORAS DER SCHRECKEN". Gemeinsam stemmen Dodo und Esterossa den Deckel beiseite. Der Vampir erwacht: „Zwei Augen, blass wie Mondlicht auf Eis". Er stellt sich als Voras der Heilige vor und tötet noch in derselben Nacht die fliehenden Goblins.
-
-**Ausbau zur Stadt**: Innerhalb eines Jahres wird Breska massiv ausgebaut — mit Palisade, Kapelle, erweiterter Taverne, Marktplatz und einer großen neuen Gilde. Voras finanziert den Ausbau. Die Helden werden als Retter erkannt und willkommen geheißen [4]. Die Gilde etabliert sich als dominierende Macht, Arenen werden gebaut, Einlasskontrollen verschärft, und Flüchtlinge werden abgewiesen [5].
-
-**Zunehmende Bedrohung durch Untote**: Breska wird autarker, sucht aber auch nach Banditen wie Hals Leuten [6]. Auranie wird aus der Stadt vertrieben, Kranführer Lobrecht bestätigt, dass die Wege unpassierbar sind. Es dringen keine Nachrichten mehr aus Breska [7].
-
-**Belagerung**: Die Stadt wird von Untoten umzingelt und leidet unter Nahrungsmangel. Der Soldat Hans entkommt und berichtet von der Not. Ein Hilferuf von Voras dem Heiligen erreicht die Außenwelt: Die menschliche Bevölkerung ist beinahe verhungert, die Mauern sind gefallen, die Stadt ist überrannt. Eine Gestalt in schwarzer Rüstung wurde auf Seiten der Angreifer gesichtet, bevor sie nach Westen verschwand. Die Untoten greifen das Anwesen nicht aktiv an, während Belorus anderswo operiert [8][9].
-
-**Zerstörung und Nachspiel**: Die Gruppe kehrt aus Abyssalis zurück und findet Breska als menschenleere Ruine vor. Die Gebäude sind von Katapulten zerstört, ein magischer Nebel liegt über dem Tal, und alle Leichen wurden von Belorus fortgeschafft. Nur das Anwesen des Voras steht unversehrt. Der Ort ist nach dem Tod von Fürst Voras dem Heiligen verwaist [10][11][12].
+1. **Warnung und Vorbereitung (einige Tage vor dem Angriff):** Rotunas und Valerie erreichen das kleine Dorf, gewinnen das Vertrauen der Bewohner und fälschen die Goblinpläne, um einen Hinterhalt zwischen dem großen Stein und dem Friedhof zu legen. Sie errichten mit den Dorfbewohnern Palisaden und Fallen. Der Magier Leandras händigt ihnen einen magischen Schlüssel aus.  
+2. **Schlacht um Breska:** Die gesamte Heldengruppe (Dodo, Esterossa, Cookie, Lindo Laut) verteidigt das Dorf gegen eine Horde aus Goblins, einem Oger, einem krähenartigen Wesen und einem Grottenschrat. Während der Kämpfe wird ein junger Schmied getötet; Esterossa rettet einen anderen Bauern mit heilender Hand. Lindo Lauts Gesang schwächt die Feinde. Nach dem Sieg führt Leandras die Gruppe zum Friedhof, wo sie mit dem Schlüssel die Gruft öffnet und Voras erweckt.  
+3. **Aufstieg zur Stadt (etwa ein Jahr später):** Dank Voras’ Geld und Einfluss ist Breska zu einer befestigten Kleinstadt mit Mauern, Markt, Kapelle, Taverne und Gildehalle gewachsen. Die Helden werden als Retter empfangen, die Wachen erkennen sie sofort.  
+4. **Zunehmende Abschottung:** Aus Breska dringen keine Nachrichten mehr. Boten kommen nicht zurück, die Wege zur Stadt sind von Untoten unpassierbar. Auranie wird vertrieben, später ist die Stadt komplett von der Außenwelt abgeschnitten und von Untoten umzingelt.  
+5. **Belagerung und Fall:** Ein entkommener Soldat berichtet von Nahrungsmangel und ersten Todesfällen. Ein Hilferuf Voras’ meldet gefallene Mauern, eine beinahe verhungerte Bevölkerung und das Auftauchen einer schwarzen Rüstung unter den Angreifern – Belorus selbst. Die Untoten greifen nicht mehr aktiv an, belagern die Stadt aber weiter.  
+6. **Zerstörung und Ende:** Die Helden finden Breska unter dem magischen Nebel in Trümmern. Nur das Anwesen ist intakt. Sie durchsuchen die alte Gildenhalle, die Gruft und schließlich das Anwesen. Nach der Aktivierung des Splitters des Ewigen öffnet Lindo Laut ein Fluchtportal direkt in die Ruinen; Voras stirbt. Der Ort bleibt verlassen zurück.
 
 ## Offene Fragen
+- Das Schicksal der überlebenden Bewohner – ob und wohin sie flohen – bleibt ungeklärt.
+- Ob Breska nach dem Tod Voras’ jemals wieder besiedelt oder ganz aufgegeben wird, ist nicht bekannt.
 
-- Das endgültige Schicksal der Zivilbevölkerung Breskas bleibt ungeklärt. Wurden die Bewohner evakuiert oder sind sie umgekommen? Die Abwesenheit von Leichen in den Ruinen lässt Belorus' Mitnahme als Erklärung zu, doch ob einige Einwohner entkommen konnten, ist nicht bekannt.
-- Der Verbleib der „schwarzen Rüstung", die während der Belagerung gesichtet wurde und dann nach Westen verschwand, bleibt ein Rätsel.
-- Ob der magische Nebel, der über dem Tal liegt, sich je wieder lichten wird und ob Breska jemals wieder besiedelt wird, lassen die Quellen offen.
-
-## Belege
-
-[1] Session 2025-04-09 @ 00:02:59 (https://www.youtube.com/watch?v=1PWdwvun5ow)  
-[2] Session 2025-04-15 @ 01:33:07 (https://www.youtube.com/watch?v=YCpAz_syjaY)  
-[3] Session 2025-04-23 @ 00:03:07 (https://www.youtube.com/watch?v=z3C-bewKqUs)  
-[4] Session 2025-06-25 @ 00:02:51 (https://www.youtube.com/watch?v=tpkO9uGw6-I)  
-[5] Session 2025-09-17 @ 00:07:22 (https://www.youtube.com/watch?v=AhIT8dcxw2o)  
-[6] Session 2025-09-30 @ 02:12:25 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)  
-[7] Session 2025-11-18 @ 00:56:57 (https://www.youtube.com/watch?v=w__ahowb9p0)  
-[8] Session 2026-01-06 @ 01:03:38 (https://www.youtube.com/watch?v=VGw81seFvbo)  
-[9] Session 2026-01-13 @ 00:38:23 (https://www.youtube.com/watch?v=w4LB1s9_3rs)  
-[10] Session 2026-03-10 @ 00:05:33 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)  
-[11] Session 2026-07-21 @ 01:49:28 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)  
-[12] Session 2026-07-29 @ 00:04:31 (https://www.youtube.com/watch?v=umGyKLkefJI)
+# Belege
+1. Session 2025-04-09 @ 00:03:50 (https://www.youtube.com/watch?v=1PWdwvun5ow)  
+2. Session 2025-04-15 @ 01:33:07 (https://www.youtube.com/watch?v=YCpAz_syjaY)  
+3. Session 2025-04-23 @ 00:03:07 (https://www.youtube.com/watch?v=z3C-bewKqUs)  
+4. Session 2025-06-25 @ 00:03:00 (https://www.youtube.com/watch?v=tpkO9uGw6-I)  
+5. Session 2025-09-17 @ 00:07:22 (https://www.youtube.com/watch?v=AhIT8dcxw2o)  
+6. Session 2025-09-30 @ 02:12:25 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)  
+7. Session 2025-11-18 @ 00:57:49 (https://www.youtube.com/watch?v=w__ahowb9p0)  
+8. Session 2026-01-06 @ 01:03:38 (https://www.youtube.com/watch?v=VGw81seFvbo)  
+9. Session 2026-01-13 @ 00:38:23 (https://www.youtube.com/watch?v=w4LB1s9_3rs)  
+10. Session 2026-03-10 @ 00:05:00 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)  
+11. Session 2026-07-21 @ 01:49:28 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)  
+12. Buchkapitel „Die Glocken von Breska“ aus *Der Splitter des Ewigen* und „Breschka rüstet sich“ aus *Der Splitter des Ewigen Buch 1*

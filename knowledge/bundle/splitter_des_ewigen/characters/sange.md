@@ -2,72 +2,74 @@
 type: Character
 title: Sange
 description: Sange ist ein Katari-Blatthunter von eleganter, nobler Erscheinung, der
-  eine magische Maske trägt, die ihre Mimik verändern kann. Er beherr…
+  sein Gesicht stets hinter einer magischen Maske verbirgt. Er ist ei…
 tags:
 - characters
-timestamp: '2026-07-23T00:00:00Z'
+timestamp: '2026-08-06T00:00:00Z'
 id: CHAR_SANGE
 ---
 
 ## Überblick
 
-Sange ist ein Katari-Blatthunter von eleganter, nobler Erscheinung, der eine magische Maske trägt, die ihre Mimik verändern kann. Er beherrscht die Blutmagie und steht im Dienste des Gottes Joran, des Münzenzählers. Unter der Oberfläche seiner kontrollierten Fassade ringt er mit einer unkontrollierbaren Bestiennatur, die sich in Momenten extremer Belastung gewaltsam Bahn bricht – eine wolfsartige Verwandlung, an die er sich nachträglich nicht erinnern kann.
+Sange ist ein Katari-Blatthunter von eleganter, nobler Erscheinung, der sein Gesicht stets hinter einer magischen Maske verbirgt. Er ist ein ehemaliger Künstler aus Brandau, dessen Leben durch den Verlust seiner Geliebten und das Erwachen einer wilden Blutmagie aus der Bahn geworfen wurde. Auf der Suche nach Kontrolle über diese Macht hat er sich dem Gott Joran, dem Münzenzähler, zugewandt. Seine Magie ist seither spürbar ruhiger geworden, doch in ihm schlummert eine unkontrollierbare, werwolfartige Kampfform, die ihn entsetzt zurücklässt. Unter der Maske verbirgt sich ein schwarz-rot gestreiftes Fellgesicht mit menschlichen Zügen, Schnurrhaaren und einer tiefen inneren Zerrissenheit zwischen Künstler, Monster und Gottsucher.
 
 ## Rolle in der Kampagne
 
-Sange ist ein zentrales Mitglied der Heldengruppe, das aktiv zur Planung und Durchführung von Missionen beiträgt. Bereits in der ersten gemeinsamen Unternehmung half er, den Plan zur Rettung eines Bauernhofs zu schmieden [1]. Seine besonderen Fähigkeiten machen ihn zu einem wichtigen Ermittler: Er kann die Vergangenheit anderer sehen und Visionen empfangen, die das Schicksal von Personen offenbaren [1, 3].
+Sange ist Teil der Heldengruppe, die sich um den Schutz von Gehöften und die Abwehr von Angreifern wie Gnollen und Grottenschraten kümmert. Er bringt sowohl kämpferische Härte als auch mystische Fähigkeiten in die Gruppe ein. Durch seine Blutmagie-Rituale, die er auf Waffen und Talismane anwendet, verstärkt er die Schlagkraft des Teams. Seine magische Maske und seine Sinne machen ihn zu einem effektiven Beobachter. Gleichzeitig ist er eine tragende emotionale Figur, deren Suche nach innerem Frieden und Kontrolle über die eigene Monstrosität einen Kontrapunkt zur äußeren Bedrohung bildet.
 
-Seine innere Zerrissenheit zwischen der von Joran geschenkten Ordnung und dem chaotischen Wesen seiner Blutmagie sowie der unheimlichen Wolfsnatur macht ihn zu einer Figur mit bedeutendem narrativem Gewicht. Seine Suche nach Erklärungen für seine Fähigkeiten und der vagen Führung durch seinen Gott treibt seine persönliche Entwicklung voran.
+Innerhalb der Gruppe sorgt sein anfängliches Misstrauen gegenüber [Saris](/characters/saris.md) für Spannung, die sich später in wachsendes Vertrauen auflöst. In [Bruma Stormrak](/characters/bruma_stormrak.md) findet er eine verwandte kampfeslustige Seele. Seine Enthüllungen über seine Vergangenheit und seine wahre Gestalt markieren Wendepunkte des Zusammenwachsens der Gruppe.
 
 ## Wichtige Merkmale
 
 ### Magische Maske
 
-Sange trägt eine magische Maske, die Emotionen spiegeln und ihre Mimik verändern kann [1, 2]. Er setzt sie sowohl zur Tarnung als auch zur Beobachtung ein – etwa, um Bruma zu observieren [2]. Gelegentlich nutzt er sie für morbide Scherze, wie als er ein Kind mit einer Grimasse erschreckte [1].
+Sanges markantestes äußeres Merkmal ist seine magische Maske. Sie ist in der Lage, ihre Mimik zu verändern und Emotionen zu spiegeln. Sange nutzt sie sowohl zur Täuschung – etwa um jemanden mit einer Grimasse zu erschrecken – als auch zur unauffälligen Beobachtung, wenn er beispielweise [Bruma](/characters/bruma_stormrak.md) damit im Auge behält [2]. Erst in Momenten großen Vertrauens nimmt er die Maske ab und gibt sein wahres Gesicht preis [4].
 
 ### Blutmagie
 
-Seine Magie beschreibt Sange bildlich als eine rote Glaskugel, deren Inhalt früher turbulent und stürmisch war. Seit er von Joran gesegnet wurde, ist dieses innere Chaos ruhiger geworden: "Seitdem er eben jetzt im Gefolge von dem neuen Gottes ist, ist es viel ruhiger geworden, dass in diesem Rot wie so ein kleiner Funke Licht jetzt auch drin, was einfach diesem Chaos der Blutmagie so ein bisschen entgegenwirkt" [2]. Im Kampf führt er ein blutverzaubertes Schwert und setzt Blutmagie offensiv ein [3].
+Sange beherrscht die Blutmagie, eine von ihm als chaotisch und turbulent beschriebene Kraft. Er kann Waffen und Talismane mit Ritualen verzaubern [3] und vermag es, in sterbenden Kreaturen deren letzte Eindrücke zu sehen – so erfuhr er von der Attacke auf die Farm, indem er den Geist eines sterbenden Grottenschrats durchdrang [2]. Seine Magie stellt er sich bildlich als rot gefüllte Glaskugel vor, in der seit Jorans Segen ein kleiner, ruhiger Lichtfunke brennt [2].
 
-### Verbindung zu Joran
+### Werwolfgestalt
 
-Sange empfing den Segen Jorans durch Vermittlung von Adelia (Adelie). Dabei flüsterte er seinen echten Namen und erlebte eine Vision von Hoffnung und innerem Konflikt. Als physisches Symbol dieser Verbindung erhielt er einen Timer mit einem Strich [1]. Joran antwortet auf Sangis Hilferufe, jedoch nur mit vager Führung [3].
+Zum ersten Mal in der Schlacht um einen Turm gegen einen Gnoll-Kommandanten zeigte sich Sanges erschreckendste Fähigkeit: Wenn er unter extremem Stress steht, kann er sich in eine halb-werwolfartige Kreatur verwandeln. Dabei wachsen seine Klauen, die Muskeln schwellen an, die Mähne wird länger, und seine physische Kraft und Mobilität steigern sich massiv. Der Wandel überkommt ihn gegen seinen Willen – er fällt auf die Knie, krampft und nimmt die Welt nur noch als Pochen der Herzen wahr, bevor die Bestie die Kontrolle übernimmt. Nach dem Kampf leidet Sange unter vollständiger Amnesie bezüglich des Geschehenen und reagiert mit Verzweiflung und Panik auf die Lücke in seiner Erinnerung [3].
 
-### Unkontrollierte Wolfsgestalt
+### Segen Jorans
 
-In Momenten extremer Anspannung verwandelt sich Sange unkontrolliert in eine wolfsartige Bestie. Die erste dokumentierte Transformation geschah während eines Kampfes in einer Mine: "Meine Sicht verschwimmt kurz. Ich nehme nur noch das Pochen von den ganzen Herzen wahr. Ich markiere mir einen Stress und ihr seht, wie Zange kurz auf die Knie fällt vor Anstrengung und anfängt zu krampfen. Ihr seht, wie die Klauen an den Händen länger werden. Die Muskeln werden oder die Spannen an werden ein bisschen größer. Die Mähne wird ein bisschen länger und ich verwandle mich in so eine Art Halb-Werwolf-Gestalt" [3].
+Seit Sange von [Adelie](/npcs/adeliga_der_eulenseraph.md) den Segen Jorans empfing, hat sich seine Blutmagie beruhigt. Er beschreibt es als einen kleinen Lichtfunken im roten Chaos, der dem Sturm seiner Magie entgegenwirkt [2]. Der Segen manifestiert sich auch in konkreten mechanischen Vorteilen: An einer Statue Joranjas erhielt Sange einen Segen, der seinen nächsten Rally-Wurf zu einem kritischen Erfolg machte [4], und er trägt einen Timer mit einer Markierung, die seine Verbindung zu Joran symbolisiert [1]. Im Gebet gewährt Joran ihm Erkenntnis: Er müsse der Ursache seiner Verwandlung nachgehen, um sie kontrollieren zu lernen [3].
 
-In dieser Form verfügt er über übermenschliche Sprungkraft und brutale Angriffsfähigkeiten. Nach der Rückverwandlung fehlt ihm jegliche Erinnerung an das Geschehene: Er hat "keinerlei Erinnerung daran" [3]. Die Transformation ist neu und überrascht sowohl ihn selbst als auch seine Gefährten – Kaya "springt auch erstmal kurz erschrocken zurück" [3].
+### Auftreten und Erscheinungsbild
 
-### Soziales Verhalten
-
-Sanges soziale Interaktionen sind oft unbeholfen. Sein Versuch, ein verängstigtes Kind mit einer selbstgebastelten Puppe zu besänftigen, scheitert, da die Puppe gruselig wirkt und zerstört wird [1]. Gegenüber Saris zeigt er zunächst Skepsis, nutzt aber seine Fähigkeiten, um dessen Vergangenheit zu ergründen [1]. Gegenüber einer eulenartigen Wache, die er nach Adelie fragt, wird er mit gezückten Dolchen bedroht und zurückgewiesen [2].
+Unter der Maske ist Sange ein Katari mit schwarzem Fell, durchzogen von roten Streifen, und Schnurrhaaren. Er betont, dass sein Aussehen nicht vollständig katzenartig sei – man erkenne noch menschliche Züge [4]. Seine Kleidung beschreibt er selbst als „bisschen eleganter, bisschen nobler, bisschen mysteriös" [1], was zu seiner Vergangenheit als angesehener Künstler in höheren Kreisen passt [4]. Seine Augen hinter der Maske spiegeln seine innere Zerrissenheit wider [3].
 
 ## Beziehungen und Verbindungen
 
-- **Joran, der Münzenzähler**: Sangis göttlicher Patron. Der Segen brachte einen "kleinen Lichtfunken" in das Chaos seiner Blutmagie [2] und verlieh ihm einen Timer als Verbindungssymbol [1].
-- **Adelia (Adelie)**: Vermittlerin des göttlichen Segens Jorans. Sange sucht aktiv nach ihr und lässt sich von ihr den Segen geben [1, 2].
-- **[Bruma Stormrak](/characters/bruma_stormrak.md)**: Sange folgt Bruma begeistert in die Tiefe einer Mine, getrieben von einem inneren Drang: Sein "Blut schreie nach Kampf" [2].
-- **[Kaya](/characters/kaya.md)**: Gefährtin, die auf seine unkontrollierte Verwandlung erschrocken reagiert, sich aber im Kampf schützend vor ihn stellt [3].
-- **[Saris](/characters/saris.md)**: Gefährte, dem Sange zunächst skeptisch gegenübersteht. Er nutzt seine Fähigkeiten, um Saris' Vergangenheit zu erkunden [1].
+- **[Joran, der Münzenzähler](/deities/joran_der_muenzenzaehler.md):** Sanges neuer Schutzgott, dessen Segen seine Blutmagie beruhigte und ihm Orientierung gibt. In Visionen und Gebeten kommuniziert Joran mit ihm und gibt ihm Aufgaben.
+- **[Adelie](/npcs/adeliga_der_eulenseraph.md):** Eine Figur, die Sange Jorans Segen übermittelte. Später sucht er eine „eulenartige Wache" und fragt nach ihr, was ihm Feindseligkeit einbringt [2].
+- **[Bruma Stormrak](/characters/bruma_stormrak.md):** Sange fühlt sich von Brumas Kampfeslust angezogen und folgt ihm mit Begeisterung in gefährliche Situationen wie den Minenschacht [2]. Als Bruma in der Taverne einen emotionalen Ausbruch hat, sieht Sange den Moment, sein eigenes Vertrauen durch das Ablegen der Maske zu zeigen [4].
+- **[Saris](/characters/saris.md):** Anfangs ist Sange skeptisch gegenüber Saris und nutzt seine Fähigkeiten, um dessen Vergangenheit zu ergründen [1]. Später kämpfen sie Seite an Seite.
+- **Heimat Brandau:** Sange stammt aus dem Land Brandau, das den Krieg gegen Willoch verloren hat. Er selbst ging jedoch weit früher fort, nachdem er seine Geliebte verlor. Seinen Status als angesehener Künstler in höheren Kreisen hat er damit ebenfalls eingebüßt [4].
+- **Talron und Raxalis:** Sange erkennt die Brisanz eines Gesprächs der beiden über den Schutz einer Person namens Marie und hält dieses Wissen zunächst zurück [4].
 
 ## Chronologie
 
-**Tag 1 – Begegnung in einer Siedlung** [1]: Sange erschreckt ein Kind mit einer Masken-Grimasse und versucht vergeblich, sich mit einer selbstgebastelten Puppe zu entschuldigen. Er empfängt durch Adelia den Segen Jorans, flüstert seinen echten Namen und erhält eine Vision sowie einen Timer als Verbindungssymbol. Er beobachtet Saris skeptisch und setzt seine Fähigkeiten ein, um dessen Vergangenheit zu sehen. Er beteiligt sich an der Planung zur Rettung eines Bauernhofs.
+- **Session 1 (2026-06-04):** Sange tritt in Erscheinung, erschreckt zunächst ein Kind mit seiner Maskengrimasse und versucht sich unbeholfen mit einer selbstgebastelten Puppe zu entschuldigen. Er lässt sich von [Adelie](/npcs/adeliga_der_eulenseraph.md) Jorans Segen geben, flüstert dabei seinen echten Namen und erfährt eine Vision von Hoffnung und innerem Konflikt. Er erhält einen Strich auf seinem Timer als Zeichen der Bindung. Er ist skeptisch gegenüber [Saris](/characters/saris.md) und nutzt seine Kräfte, um in dessen Vergangenheit zu sehen. Er beteiligt sich maßgeblich an der Planung zur Rettung des Bauernhofs [1].
 
-**Anderthalb Tage später** [2]: Sanges Blutmagie hat sich durch Jorans Segen beruhigt. Er beobachtet Bruma mit seiner magischen Maske. Bei einem sterbenden Grottenschrat setzt er Blutmagie ein, um dessen letzte Erinnerung zu sehen – den Angriff auf die Farm, bei dem die Kreatur beschossen wurde. Bei einer eulenartigen Wache erkundigt er sich nach Adelie und wird feindselig zurückgewiesen. Vor einer Mine erklärt er, sein Blut schreie nach Kampf, und folgt Bruma in die Tiefe.
+- **Session 2 (2026-07-10):** Sange beschreibt, wie sich seine Blutmagie seit dem Segen Jorans verändert hat – ein ruhiger Lichtfunke im roten Sturm. Er beobachtet [Bruma](/characters/bruma_stormrak.md) mit seiner Maske. Bei einem sterbenden Grottenschrat wendet er einen Zauber an, um dessen letzte Eindrücke zu sehen: den Angriff auf die Farm und den Abschuss der Kreatur. Auf der Suche nach Adelie wird er von einer eulenartigen Wache mit gezückten Dolchen zurückgewiesen. Vor der Mine offenbart er seinen Blutdurst mit den Worten, sein Blut schreie nach Kampf, und folgt Bruma begeistert in die Tiefe [2].
 
-**In der Mine** [3]: Im Kampf gegen Minenarbeiter-Gegner verschwimmt Sangis Sicht, er nimmt nur noch das Pochen der Herzen wahr und verwandelt sich erstmals unkontrolliert in eine wolfsartige Bestie. In dieser Gestalt springt er von Fels zu Fels und greift brutal an. Nach dem Kampf hat er keinerlei Erinnerung an die Verwandlung. Er wendet sich hilfesuchend an Joran, der ihm nur vage Führung bietet. Verwirrt und verletzlich sucht er aktiv nach Erklärungen für seine unkontrollierbaren Fähigkeiten.
+- **Session 3 (2026-07-23):** Im Kampf gegen einen Gnoll-Kommandanten markiert Sange Stress und verwandelt sich vor den Augen der Gruppe in eine halb-werwolfartige Kampfform – sein Körper krampft, Klauen und Muskeln wachsen, und seine Sinne fokussieren sich einzig auf das Pochen der Herzen. Er stürmt brutal und effektiv auf den Feind zu, doch nach dem Kampf hat er keinerlei Erinnerung an das Geschehen. Verwirrt und verzweifelt betet er zu Joran, der ihm die Erkenntnis gewährt, dass er die Ursache dieser Verwandlung finden müsse, um sie zu kontrollieren. Seine Augen hinter der Maske spiegeln die innere Zerrissenheit. Zuvor hatte er bereits sein Blutmagie-Ritual auf Waffe und Talisman angewandt [3].
+
+- **Session 4 (2026-08-06):** Sange erweist sich als pragmatischer Planer, indem er Hühnerkäfige baut. Als [Talron](/npcs/talron.md) und Raxalis über den Schutz von Marie sprechen, erkennt er die Brisanz und schweigt zunächst. An der Statue von Joranja empfängt er einen Segen, der seinen nächsten Rally-Wurf zum Crit macht. In der Taverne, angeregt durch Brumas emotionalen Ausbruch, legt er zum ersten Mal vor der Gruppe demonstrativ seine Maske ab und zeigt sein Katari-Gesicht – schwarzes Fell mit roten Streifen, Schnurrhaare, menschliche Züge. Er offenbart seine Herkunft: Er stamme aus Brandau, habe seine Geliebte verloren, sei ein angesehener Künstler gewesen und habe seine Heimat schon vor dem Krieg verlassen. Sein neuer Gott gebe ihm Halt, die Blutmagie zu bändigen [4].
 
 ## Offene Fragen
 
-- Was ist die genaue Natur und der Ursprung der wolfsartigen Transformation? Sange selbst sucht nach Erklärungen, Joran gibt nur vage Antworten [3].
-- Welche Bewandtnis hat der Timer, den Sange von Joran erhielt, und was bedeutet der einzelne Strich darauf [1]?
-- Warum wird Sange von der eulenartigen Wache mit gezückten Dolchen bedroht, als er nach Adelie fragt [2]?
-- Was ist Sangis wahrer Name, den er beim Empfang des Segens flüsterte [1]?
+- Was genau löste Sanges Blutmagie aus, und was ist die Ursache seiner unkontrollierten Werwolf-Verwandlung?
+- Wer ist die verlorene Geliebte, und wie starb sie?
+- Warum wurde Sange von der eulenartigen Wache abgewiesen, als er nach Adelie fragte?
+- Welche Bewandtnis hat die Person Marie, deren Schutz Talron und Raxalis besprechen?
 
 ## Belege
 
 [1] Session 2026-06-04, 00:07:15, https://www.youtube.com/watch?v=EGNh8O7pE5Q
 [2] Session 2026-07-10, 00:06:19, https://www.youtube.com/watch?v=H-eHSlfxUAg
-[3] Session 2026-07-23, 01:34:06, https://www.youtube.com/watch?v=Gb-TEbCFF0M
+[3] Session 2026-07-23, 01:35:06, https://www.youtube.com/watch?v=Gb-TEbCFF0M
+[4] Session 2026-08-06, 01:50:54, https://www.youtube.com/watch?v=0HyPHao8s_k

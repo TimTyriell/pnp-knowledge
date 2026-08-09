@@ -9,7 +9,7 @@ timestamp: '2026-02-24T00:00:00Z'
 id: NPC_MARUS
 ---
 
-Marus ist der Anführer der [Silberkornbande](/factions/silberkerne.md), die in der [Mine](/locations/kristallmine.md) und Umgebung ihr Lager hat. Er gibt der Gruppe nach anfänglichem Misstrauen, das durch [Nyrellas](/characters/nyrella.md) Puppe und Kenntnis von [Sarinas](/npcs/sarina.md) Namen ausgeräumt wird, gegen Gold Informationen über die Mine: Die unteren Ebenen wurden nie betreten, [Silberbestien](/npcs/silberbestien.md) mit lähmendem Gift sind eine Gefahr, und Wasser schadet ihnen. Später versucht er, die Gruppe nach ihrer Rückkehr auf eventuelle Funde zu durchleuchten, glaubt aber [Dodos](/characters/dodo.md) Lüge, dass nichts gefunden wurde, und lädt sie auf Bier ein.
+Marus ist der Anführer der [Silberkornbande](/factions/silberkerne.md), die in der [Mine](/locations/kristallmine.md) und Umgebung ihr Lager hat. Er gibt der Gruppe nach anfänglichem Misstrauen, das durch [Nyrellas](/characters/nyrella.md) Puppe und Kenntnis von [Sarinas](/npcs/sarina.md) Namen ausgeräumt wird, gegen Gold Informationen über die Mine: Die unteren Ebenen wurden nie betreten, Silberbestien mit lähmendem Gift sind eine Gefahr, und Wasser schadet ihnen. Später versucht er, die Gruppe nach ihrer Rückkehr auf eventuelle Funde zu durchleuchten, glaubt aber [Dodos](/characters/dodo.md) Lüge, dass nichts gefunden wurde, und lädt sie auf Bier ein.
 
 # Belege
 

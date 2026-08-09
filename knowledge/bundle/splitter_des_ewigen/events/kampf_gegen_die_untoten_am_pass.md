@@ -10,7 +10,7 @@ id: EVENT_KAMPF_GEGEN_DIE_UNTOTEN_AM_PASS
 subtype: Kampf
 ---
 
-Die Gruppe verteidigte den [Pass](/locations/pass.md) gegen eine Horde Untoter unter dem [Withermind](/npcs/withermind.md). Durch Feuerball, Rankenzauber und präzise Schüsse hielt sie die Stellung, wurde aber fast überrannt, als der Withermind eingriff.
+Die Gruppe verteidigte den [Pass](/locations/pass.md) gegen eine Horde Untoter unter dem Withermind. Durch Feuerball, Rankenzauber und präzise Schüsse hielt sie die Stellung, wurde aber fast überrannt, als der Withermind eingriff.
 
 # Belege
 

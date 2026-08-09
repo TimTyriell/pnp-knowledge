@@ -10,7 +10,7 @@ id: EVENT_ZERSTOERUNG_DES_RATTEN_DAEMONS
 subtype: Kampf
 ---
 
-[Lindo Laut](/characters/lindo_laut.md) feuert auf [Vasuls](/deities/vharzul.md) letztes Geheiß einen göttlichen Energiestrahl aus seinem Stab auf den zurückgekehrten Ratten-Dämon, durchbohrt ihn und saugt gleichzeitig die Kraft des dahinter stehenden Balors ab. [Der Dämon](/npcs/der_daemon.md) löst sich mit einem Schnipsen endgültig auf.
+[Lindo Laut](/characters/lindo_laut.md) feuert auf [Vasuls](/deities/vharzul.md) letztes Geheiß einen göttlichen Energiestrahl aus seinem Stab auf den zurückgekehrten Ratten-Dämon, durchbohrt ihn und saugt gleichzeitig die Kraft des dahinter stehenden Balors ab. Der Dämon löst sich mit einem Schnipsen endgültig auf.
 
 # Belege
 

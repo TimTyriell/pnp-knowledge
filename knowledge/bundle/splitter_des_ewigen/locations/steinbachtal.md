@@ -10,7 +10,7 @@ id: LOC_STEINBACHTAL
 subtype: Siedlung
 ---
 
-Eine einst stabile Minenstadt am Fuße des Berges [Zebros](/deities/zebros.md), die nun von Untoten überrannt ist. Die meisten Gebäude stehen noch, sind aber geplündert und weisen Kampfspuren auf. Ein Nebel liegt über der Stadt, und nur wenige Lichter brennen, darunter eines in der [Kathedrale](/locations/kathedrale.md) im Westen.
+Eine einst stabile Minenstadt am Fuße des Berges [Zebros](/factions/koenigreich_zebros.md), die nun von Untoten überrannt ist. Die meisten Gebäude stehen noch, sind aber geplündert und weisen Kampfspuren auf. Ein Nebel liegt über der Stadt, und nur wenige Lichter brennen, darunter eines in der [Kathedrale](/locations/kathedrale.md) im Westen.
 
 # Belege
 

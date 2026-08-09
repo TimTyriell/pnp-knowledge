@@ -10,7 +10,7 @@ id: EVENT_OFFENBARUNG_IN_DER_POCKET_DOMAIN
 subtype: Entdeckung
 ---
 
-[Lindo Laut](/characters/lindo_laut.md) enthüllt seine Kontrolle über das [Splitterkalb](/npcs/splitterkalb.md) und lädt die Gruppe in seine Pocket Domain. Dort erscheint [Slix](/npcs/slix_vasul.md), erklärt die Überwachung und droht. Die Gruppe erfährt von einer dunklen Präsenz, die Lindo Laut befehligt und deren Geheimnisse lebensgefährlich sind.
+[Lindo Laut](/characters/lindo_laut.md) enthüllt seine Kontrolle über das Splitterkalb und lädt die Gruppe in seine Pocket Domain. Dort erscheint [Slix](/npcs/slix_vasul.md), erklärt die Überwachung und droht. Die Gruppe erfährt von einer dunklen Präsenz, die Lindo Laut befehligt und deren Geheimnisse lebensgefährlich sind.
 
 # Belege
 

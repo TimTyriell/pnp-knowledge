@@ -10,7 +10,7 @@ id: EVENT_FLUCHT_AUS_ABYSSALIS
 subtype: Reise
 ---
 
-Nach der Rettung [Liams](/npcs/liam_velora.md) und [Esterossas](/characters/esterossa.md) Opferung öffnet [Lindo Laut](/characters/lindo_laut.md) ein Portal nach [Breska](/locations/breska.md). Mit dem ohnmächtigen Liam und Esterossas Waffe entkommen die Überlebenden, verfolgt von [Seraphen](/npcs/die_drei_gefallenen_seraphen.md). [Das Portal](/locations/das_portal.md) wird im letzten Moment geschlossen.
+Nach der Rettung [Liams](/npcs/liam_velora.md) und [Esterossas](/characters/esterossa.md) Opferung öffnet [Lindo Laut](/characters/lindo_laut.md) ein Portal nach [Breska](/locations/breska.md). Mit dem ohnmächtigen Liam und Esterossas Waffe entkommen die Überlebenden, verfolgt von Seraphen. [Das Portal](/locations/das_portal.md) wird im letzten Moment geschlossen.
 
 # Belege
 

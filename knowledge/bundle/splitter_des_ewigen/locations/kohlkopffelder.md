@@ -1,8 +1,8 @@
 ---
 type: Location
 title: Kohlkopffelder
-description: Die Kohlkopffelder sind ein Ort in der Nähe von Ehrenfels, den Dodo auf
-  der Suche nach seinem Strixwolf mehrfach besorgt betrachtet.
+description: Ein Bereich oberhalb der Stadt, zu dem Dodo kurz aufbricht, um nach seinem
+  Strixwolf zu suchen. Die Felder werden mehrfach als Orientierung…
 tags:
 - locations
 timestamp: '2026-07-29T00:00:00Z'
@@ -10,8 +10,8 @@ id: LOC_KOHLKOPFFELDER
 subtype: Wildnis
 ---
 
-Die Kohlkopffelder sind ein Ort in der Nähe von [Ehrenfels](/locations/ehrenfels.md), den [Dodo](/characters/dodo.md) auf der Suche nach seinem Strixwolf mehrfach besorgt betrachtet.
+Ein Bereich oberhalb der Stadt, zu dem [Dodo](/characters/dodo.md) kurz aufbricht, um nach seinem Strixwolf zu suchen. Die Felder werden mehrfach als Orientierungspunkt genannt.
 
 # Belege
 
-1. Session 2026-07-29 @ 01:14:46 (https://www.youtube.com/watch?v=umGyKLkefJI)
+1. Session 2026-07-29 @ 01:16:44 (https://www.youtube.com/watch?v=umGyKLkefJI)

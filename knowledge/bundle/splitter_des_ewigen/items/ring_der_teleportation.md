@@ -12,7 +12,7 @@ aliases:
 - Der Ring
 ---
 
-Ein lilafarbener, in Stein eingelassener Ring mit teleportativen Fähigkeiten, der nach seiner Aktivierung Visionen auslöste und durch seine Zerstörung weitreichende Folgen für die Kampagne hatte. Der Ring war untrennbar mit dem [Seraphen](/npcs/seraphen.md) und einem Geist verbunden.
+Ein lilafarbener, in Stein eingelassener Ring mit teleportativen Fähigkeiten, der nach seiner Aktivierung Visionen auslöste und durch seine Zerstörung weitreichende Folgen für die Kampagne hatte. Der Ring war untrennbar mit dem Seraphen und einem Geist verbunden.
 
 ## Eigenschaften und Funktionen
 

@@ -10,7 +10,7 @@ id: ITEM_BESCHWOERUNGSBUCH
 subtype: Schriftstück
 ---
 
-Das Buch des [Kultistenmagiers](/npcs/kultistenmagier.md), aus dem er die [Ghule](/npcs/ghule.md) beschwor und das von der Gruppe erbeutet wird.
+Das Buch des Kultistenmagiers, aus dem er die Ghule beschwor und das von der Gruppe erbeutet wird.
 
 # Belege
 

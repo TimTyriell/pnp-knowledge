@@ -10,7 +10,7 @@ id: EVENT_VISION_DES_SCHARMUETZELS
 subtype: Entdeckung
 ---
 
-[Sanges](/characters/sange.md) Zauber zeigt ihm in einer Vision, wie der [Grottenschrat](/npcs/grottenschrate.md) mit zwei Gnollen an der Barrikade der Farm auftauchte und von Pfeilen beschossen wurde. Ein Pfeil traf ihn tödlich, die [Gnolle](/npcs/gnolle.md) flohen in den Wald.
+[Sanges](/characters/sange.md) Zauber zeigt ihm in einer Vision, wie der Grottenschrat mit zwei Gnollen an der Barrikade der Farm auftauchte und von Pfeilen beschossen wurde. Ein Pfeil traf ihn tödlich, die Gnolle flohen in den Wald.
 
 # Belege
 
