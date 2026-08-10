@@ -84,6 +84,16 @@ class Paths:
         return self._knowledge_root / "entity_registry.yaml"
 
     @property
+    def episodes_path(self) -> Path:
+        """The campaign's episode list — hand-maintained, read-only here.
+
+        Sibling of the bundle tree like the registry, because an Abenteuername
+        is curation, not pipeline output (see :mod:`pnp_okf.episodes`).
+        """
+
+        return self._knowledge_root / "episodes.yaml"
+
+    @property
     def sources_dir(self) -> Path:
         """World material injected into synthesis (see :mod:`pnp_okf.context`)."""
 

@@ -14,4 +14,4 @@ Ein Artefakt, das mehrere Fragmente alter Götter (darunter Ezua) enthält und t
 
 # Belege
 
-1. Session 2025-08-12 @ 01:44:57 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)
+[P-18] Session 2025-08-12 @ 01:44:57 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)

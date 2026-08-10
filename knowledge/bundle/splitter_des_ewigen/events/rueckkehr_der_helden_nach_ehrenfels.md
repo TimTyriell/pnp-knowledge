@@ -14,4 +14,4 @@ Die Ankunft der Gruppe löst einen spontanen Triumphzug aus: Wachen, Priester un
 
 # Belege
 
-1. Session 2026-07-29 @ 00:48:55 (https://www.youtube.com/watch?v=umGyKLkefJI)
+[S1-01-A] Session 2026-07-29 @ 00:48:55 (https://www.youtube.com/watch?v=umGyKLkefJI)

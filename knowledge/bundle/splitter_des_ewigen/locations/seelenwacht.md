@@ -14,4 +14,4 @@ Eine Stadt, die als Ziel der Gruppe genannt wird. Sie wird vom [Richter](/npcs/r
 
 # Belege
 
-1. Session 2026-04-14 @ 01:44:11 (https://www.youtube.com/watch?v=1Jyu92P7_Fg)
+[P-48] Session 2026-04-14 @ 01:44:11 (https://www.youtube.com/watch?v=1Jyu92P7_Fg)

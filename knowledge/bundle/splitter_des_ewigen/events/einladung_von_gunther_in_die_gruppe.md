@@ -14,4 +14,4 @@ Nachdem [Gunther](/characters/gunther.md) sein Wissen und seine Verbindungen off
 
 # Belege
 
-1. Session 2026-07-29 @ 01:30:55 (https://www.youtube.com/watch?v=umGyKLkefJI)
+[S1-01-A] Session 2026-07-29 @ 01:30:55 (https://www.youtube.com/watch?v=umGyKLkefJI)

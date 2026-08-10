@@ -14,4 +14,4 @@ In der Bibliothek benutzt [Dodo](/characters/dodo.md) den schwarzen Palantir, um
 
 # Belege
 
-1. Session 2025-06-25 @ 00:50:21 (https://www.youtube.com/watch?v=tpkO9uGw6-I)
+[P-13] Session 2025-06-25 @ 00:50:21 (https://www.youtube.com/watch?v=tpkO9uGw6-I)

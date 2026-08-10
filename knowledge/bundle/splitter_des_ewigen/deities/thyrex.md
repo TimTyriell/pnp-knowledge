@@ -50,8 +50,8 @@ Eine physische Beschreibung fehlt; Thyrex tritt nie unmittelbar als Gestalt in E
 
 ## Chronologie
 
-1. **Ursprung:** Thyrex ist von Anbeginn einer der vier Aspekte der Seele Vhar’Zuls. Gleichzeitig ist er als „der Sänger“ eine eigenständige Persönlichkeit mit musikalischer Magie.
-2. **Erster Kontakt mit Lindo Laut (Session 2025-09-02):** Während eines Kampfes gegen eine Vasul-Statue und als Lindo am Boden liegt, meldet sich Thyrex aus Lindos Amulett. Er rät, die anderen Stimmen zu ignorieren, und schenkt Lindo die Fähigkeit, einen nahezu allmächtigen Befehl auszusprechen. Lindo wünscht die Wiederbelebung seiner Kameraden – Thyrex’ Lob („*das könnte alles ändern*“) deutet an, dass dieser Akt weitreichende Folgen hat. In dieser Zeit verbündet sich Thyrex mit Lindo gegen die drei bösartigen Seelen und wird anschließend zur dominanten Persönlichkeit des wiedererstarkten Vhar’Zul.
+[P-20] **Ursprung:** Thyrex ist von Anbeginn einer der vier Aspekte der Seele Vhar’Zuls. Gleichzeitig ist er als „der Sänger“ eine eigenständige Persönlichkeit mit musikalischer Magie.
+[P-44] **Erster Kontakt mit Lindo Laut (Session 2025-09-02):** Während eines Kampfes gegen eine Vasul-Statue und als Lindo am Boden liegt, meldet sich Thyrex aus Lindos Amulett. Er rät, die anderen Stimmen zu ignorieren, und schenkt Lindo die Fähigkeit, einen nahezu allmächtigen Befehl auszusprechen. Lindo wünscht die Wiederbelebung seiner Kameraden – Thyrex’ Lob („*das könnte alles ändern*“) deutet an, dass dieser Akt weitreichende Folgen hat. In dieser Zeit verbündet sich Thyrex mit Lindo gegen die drei bösartigen Seelen und wird anschließend zur dominanten Persönlichkeit des wiedererstarkten Vhar’Zul.
 3. **Agieren im Abyssalis (Session 2026-03-24):** Thyrex ist jetzt die vorherrschende Seele Vhar’Zuls und unterstützt Lunara Velora als „Augen und Ohren“ im Abyssalis. Er hat ihr aus einer früheren Gefangenschaft geholfen und hält Kontakt zu ihrem Bruder. Eine von ihm hinterlassene Notiz warnt vor den Vasul-Teilen und enthält einen Hilferuf; Lunara will ihm den Stab bringen, um die Gefahr zu bekämpfen.
 
 Die einst als widersprüchlich wahrgenommenen Rollen – absorbiertes Fragment im Amulett und eigenständig handelnder Verbündeter im Abyssalis – sind damit chronologisch aufgelöst: Beides trifft zu, jedoch in zwei aufeinander folgenden Phasen.
@@ -66,7 +66,7 @@ Die einst als widersprüchlich wahrgenommenen Rollen – absorbiertes Fragment i
 
 ## Belege
 
-1. Session 2025-09-02 @ 02:14:16: [https://www.youtube.com/watch?v=TLZOH7TlGhk](https://www.youtube.com/watch?v=TLZOH7TlGhk)
-2. Session 2026-03-24 @ 01:33:38: [https://www.youtube.com/watch?v=Yj5BWJfg3Ag](https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
+[P-20] Session 2025-09-02 @ 02:14:16: [https://www.youtube.com/watch?v=TLZOH7TlGhk](https://www.youtube.com/watch?v=TLZOH7TlGhk)
+[P-44] Session 2026-03-24 @ 01:33:38: [https://www.youtube.com/watch?v=Yj5BWJfg3Ag](https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
 3. Das_Buch_der_vier_Seelen.md (Auszug: Thyrex, der Sänger)
 4. Kanon_Entscheidungen.md (Abschnitt: Thyrex – Auflösung Widerspruch)

@@ -62,5 +62,5 @@ Gunther verfügt über umfangreiches Wissen über göttliche Wesen und deren Mac
 
 ## Belege
 
-1. Session 2026-07-29, 01:51:04 – https://www.youtube.com/watch?v=umGyKLkefJI
-2. Session 2026-08-04, 00:18:13 – https://www.youtube.com/watch?v=qRj2t3wQHfs
+[S1-01-A] Session 2026-07-29, 01:51:04 – https://www.youtube.com/watch?v=umGyKLkefJI
+[S1-02-A] Session 2026-08-04, 00:18:13 – https://www.youtube.com/watch?v=qRj2t3wQHfs

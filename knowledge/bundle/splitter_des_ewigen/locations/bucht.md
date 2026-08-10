@@ -14,4 +14,4 @@ Bucht ist eines der beiden Militärcamps von [Willauch](/locations/willauch.md) 
 
 # Belege
 
-1. Session 2026-03-18 @ 00:19:19 (https://www.youtube.com/watch?v=HHXxsASLrbQ)
+[P-42] Session 2026-03-18 @ 00:19:19 (https://www.youtube.com/watch?v=HHXxsASLrbQ)

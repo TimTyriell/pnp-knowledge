@@ -68,8 +68,8 @@ Als Anführer einer untoten Vampirarmee beweist er im Kampf um Ehrenfels taktisc
 
 ## Belege
 
-1. Session 2025-04-23, 01:53:41 – Erweckung Voras' in Gemata, erste Vorstellung, Fähigkeiten-Demonstration (https://www.youtube.com/watch?v=z3C-bewKqUs)
-2. Session 2025-06-25, 00:24:24 – Aufbau Breskas, Plan mit Berg Zebros, Zorn wegen des alten Buches (https://www.youtube.com/watch?v=tpkO9uGw6-I)
-3. Session 2026-01-06, 01:03:38 – Voras' Erkenntnis, Aussendung der Soldaten, Belagerung Breskas (https://www.youtube.com/watch?v=VGw81seFvbo)
-4. Session 2026-03-10, 00:55:20 – Bündnis mit Nox, Ringe für Lindo, Scharade, Splitterwelt-Prüfung, Dienst an Kaleandra (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
-5. Session 2026-04-09, 01:04:42 – Kampf um Ehrenfels, Tod durch Nerash (https://www.youtube.com/watch?v=vcGkejr8_nI)
+[P-05] Session 2025-04-23, 01:53:41 – Erweckung Voras' in Gemata, erste Vorstellung, Fähigkeiten-Demonstration (https://www.youtube.com/watch?v=z3C-bewKqUs)
+[P-13] Session 2025-06-25, 00:24:24 – Aufbau Breskas, Plan mit Berg Zebros, Zorn wegen des alten Buches (https://www.youtube.com/watch?v=tpkO9uGw6-I)
+[P-33] Session 2026-01-06, 01:03:38 – Voras' Erkenntnis, Aussendung der Soldaten, Belagerung Breskas (https://www.youtube.com/watch?v=VGw81seFvbo)
+[P-41] Session 2026-03-10, 00:55:20 – Bündnis mit Nox, Ringe für Lindo, Scharade, Splitterwelt-Prüfung, Dienst an Kaleandra (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
+[P-47] Session 2026-04-09, 01:04:42 – Kampf um Ehrenfels, Tod durch Nerash (https://www.youtube.com/watch?v=vcGkejr8_nI)

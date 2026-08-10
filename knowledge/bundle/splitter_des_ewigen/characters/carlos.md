@@ -21,4 +21,4 @@ Carlos beherrscht die Beschwörung von Ranken und Käfern, was auf eine enge Ver
 
 # Belege
 
-1. Session 2026-05-27 @ 01:39:09 (https://www.youtube.com/watch?v=IYYmgpqsp7E)
+[P-52] Session 2026-05-27 @ 01:39:09 (https://www.youtube.com/watch?v=IYYmgpqsp7E)

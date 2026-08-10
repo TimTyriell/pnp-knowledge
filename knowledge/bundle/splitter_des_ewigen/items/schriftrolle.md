@@ -14,4 +14,4 @@ Eine magische Schriftrolle, die [Vitius](/npcs/vitius.md) der Gruppe mitgegeben 
 
 # Belege
 
-1. Session 2026-08-04 @ 00:16:42 (https://www.youtube.com/watch?v=qRj2t3wQHfs)
+[S1-02-A] Session 2026-08-04 @ 00:16:42 (https://www.youtube.com/watch?v=qRj2t3wQHfs)

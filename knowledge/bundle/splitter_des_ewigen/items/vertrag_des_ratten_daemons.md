@@ -14,4 +14,4 @@ Ein Schriftstück zur Seelenknechtschaft, das der Ratten-Dämon jedem Helden zur
 
 # Belege
 
-1. Session 2025-09-06 @ 00:46:03 (https://www.youtube.com/watch?v=vo1xnyLQDJk)
+[P-21] Session 2025-09-06 @ 00:46:03 (https://www.youtube.com/watch?v=vo1xnyLQDJk)

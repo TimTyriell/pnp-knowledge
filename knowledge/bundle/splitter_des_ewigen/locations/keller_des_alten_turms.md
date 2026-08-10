@@ -14,4 +14,4 @@ Ein alter Turmkeller im [Abyssalis](/domains/splitterwelt.md), den die Gruppe al
 
 # Belege
 
-1. Session 2026-06-16 @ 00:04:51 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
+[P-55] Session 2026-06-16 @ 00:04:51 (https://www.youtube.com/watch?v=qe0ck8hvYpk)

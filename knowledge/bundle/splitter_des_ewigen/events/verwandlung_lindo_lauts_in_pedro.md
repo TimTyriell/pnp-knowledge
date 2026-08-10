@@ -14,4 +14,4 @@ Außerhalb der Stadt nimmt [Lindo Laut](/characters/lindo_laut.md) den Trank ein
 
 # Belege
 
-1. Session 2026-03-03 @ 01:57:32 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
+[P-40] Session 2026-03-03 @ 01:57:32 (https://www.youtube.com/watch?v=BRUNuNKTeOg)

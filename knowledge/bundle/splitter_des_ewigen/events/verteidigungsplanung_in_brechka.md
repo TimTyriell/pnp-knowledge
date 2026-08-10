@@ -14,4 +14,4 @@ Nach dem Kampf entwerfen [Valeria](/characters/valeria.md) und [Rotunas](/charac
 
 # Belege
 
-1. Session 2025-04-09 @ 01:36:02 (https://www.youtube.com/watch?v=1PWdwvun5ow)
+[P-03] Session 2025-04-09 @ 01:36:02 (https://www.youtube.com/watch?v=1PWdwvun5ow)

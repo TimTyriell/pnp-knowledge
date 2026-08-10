@@ -14,4 +14,4 @@ Ein großer Hammer, den [Otis](/characters/otis.md) als Hauptwaffe führt. Er nu
 
 # Belege
 
-1. Session 2026-04-09 @ 00:07:58 (https://www.youtube.com/watch?v=vcGkejr8_nI)
+[P-47] Session 2026-04-09 @ 00:07:58 (https://www.youtube.com/watch?v=vcGkejr8_nI)

@@ -14,4 +14,4 @@ In der Dunkelheit werden die Helden von mehreren Bugbären mit Armbrüsten angeg
 
 # Belege
 
-1. Session 2025-04-15 @ 00:56:23 (https://www.youtube.com/watch?v=YCpAz_syjaY)
+[P-04] Session 2025-04-15 @ 00:56:23 (https://www.youtube.com/watch?v=YCpAz_syjaY)

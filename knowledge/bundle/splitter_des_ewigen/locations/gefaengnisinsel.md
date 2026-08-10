@@ -14,4 +14,4 @@ Eine kleine Insel nahe der Hauptinsel, auf der [Joar Vanur](/npcs/joar_vanur.md)
 
 # Belege
 
-1. Session 2025-04-30 @ 01:11:20 (https://www.youtube.com/watch?v=fsCOiSkKKTE)
+[P-06] Session 2025-04-30 @ 01:11:20 (https://www.youtube.com/watch?v=fsCOiSkKKTE)

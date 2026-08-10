@@ -14,4 +14,4 @@ Unmittelbar nach dem Tod des Gnoll-Anführers löst sich dessen Fleisch auf und 
 
 # Belege
 
-1. Session 2026-07-23 @ 01:48:44 (https://www.youtube.com/watch?v=Gb-TEbCFF0M)
+[S1-02-B] Session 2026-07-23 @ 01:48:44 (https://www.youtube.com/watch?v=Gb-TEbCFF0M)

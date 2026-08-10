@@ -14,4 +14,4 @@ Cookys Nahkampfwaffen, die sie an beiden Händen trägt. Sie setzt sie ein, als 
 
 # Belege
 
-1. Session 2025-04-01 @ 01:47:14 (https://www.youtube.com/watch?v=LZIuUzc3F18)
+[P-02] Session 2025-04-01 @ 01:47:14 (https://www.youtube.com/watch?v=LZIuUzc3F18)

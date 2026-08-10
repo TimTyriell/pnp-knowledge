@@ -16,4 +16,4 @@ Ein Stein, mit dem Dämonen Seelen einfangen und aufbewahren. [Harald](/npcs/fre
 
 # Belege
 
-1. Session 2026-04-14 @ 00:45:24 (https://www.youtube.com/watch?v=1Jyu92P7_Fg)
+[P-48] Session 2026-04-14 @ 00:45:24 (https://www.youtube.com/watch?v=1Jyu92P7_Fg)

@@ -14,4 +14,4 @@ Der [Gildenmeister](/npcs/nox.md) führt Lindo, [Esterossa](/characters/esteross
 
 # Belege
 
-1. Session 2025-07-22 @ 02:50:41 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
+[P-15] Session 2025-07-22 @ 02:50:41 (https://www.youtube.com/watch?v=BRRCUgW4xRo)

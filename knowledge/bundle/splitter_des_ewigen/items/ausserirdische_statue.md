@@ -14,4 +14,4 @@ Eine kleine, fremdartige Statue aus unbekanntem Material, die die Gruppe nach de
 
 # Belege
 
-1. Session 2026-04-07 @ 01:54:21 (https://www.youtube.com/watch?v=MAuQPMNY548)
+[P-46] Session 2026-04-07 @ 01:54:21 (https://www.youtube.com/watch?v=MAuQPMNY548)

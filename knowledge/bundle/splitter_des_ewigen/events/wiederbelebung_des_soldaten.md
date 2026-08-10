@@ -14,4 +14,4 @@ Lunara findet den Soldaten scheinbar tot und reanimiert ihn mit einer Herzdruckm
 
 # Belege
 
-1. Session 2026-01-06 @ 01:21:57 (https://www.youtube.com/watch?v=VGw81seFvbo)
+[P-33] Session 2026-01-06 @ 01:21:57 (https://www.youtube.com/watch?v=VGw81seFvbo)

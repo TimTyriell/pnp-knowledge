@@ -16,4 +16,4 @@ Ein großes Amphitheater mit Publikum und einer Loge für die Adligen Lady Lyra,
 
 # Belege
 
-1. Session 2025-10-21 @ 00:03:31 (https://www.youtube.com/watch?v=sxFhbtwoefA)
+[P-28] Session 2025-10-21 @ 00:03:31 (https://www.youtube.com/watch?v=sxFhbtwoefA)

@@ -97,14 +97,14 @@ Die Stimme aus Lindos Amulett (später als Vhar'Zuls Thyrex identifiziert) best�
 
 ## Belege
 
-[1] Session 2025-08-12, 01:40:35, https://www.youtube.com/watch?v=vHIjua0BZ9Y — Die alte Frau nennt den Namen des Gottes; Panik im Dorf; Gruß „flammendes Herz"; Amulett-Stimme über Kampfgefährten.
+[P-18] Session 2025-08-12, 01:40:35, https://www.youtube.com/watch?v=vHIjua0BZ9Y — Die alte Frau nennt den Namen des Gottes; Panik im Dorf; Gruß „flammendes Herz"; Amulett-Stimme über Kampfgefährten.
 
-[2] Session 2025-08-20, 01:12:25, https://www.youtube.com/watch?v=-XbO3FLSL_I — Wegweiser zur Kapelle von Tarvok; Lindo zitiert Domänen und Attribute.
+[P-19] Session 2025-08-20, 01:12:25, https://www.youtube.com/watch?v=-XbO3FLSL_I — Wegweiser zur Kapelle von Tarvok; Lindo zitiert Domänen und Attribute.
 
-[3] Session 2025-09-02, 00:56:35, https://www.youtube.com/watch?v=TLZOH7TlGhk — Kapelle ursprünglich dem Steingott (Thar'Vok) geweiht, nun Vhar'Zul-Kult; rituelle Gegenstände gefunden.
+[P-20] Session 2025-09-02, 00:56:35, https://www.youtube.com/watch?v=TLZOH7TlGhk — Kapelle ursprünglich dem Steingott (Thar'Vok) geweiht, nun Vhar'Zul-Kult; rituelle Gegenstände gefunden.
 
-[4] Session 2026-02-11, 00:40:12, https://www.youtube.com/watch?v=3C8SD-cyNPM — Esterossa identifiziert Tarvoks Symbol auf Umhang und Behälter; alter Gott, wahrscheinlich nicht mehr existent; Schrein besitzt möglicherweise Kraft der Erschaffung/Erweckung.
+[P-37] Session 2026-02-11, 00:40:12, https://www.youtube.com/watch?v=3C8SD-cyNPM — Esterossa identifiziert Tarvoks Symbol auf Umhang und Behälter; alter Gott, wahrscheinlich nicht mehr existent; Schrein besitzt möglicherweise Kraft der Erschaffung/Erweckung.
 
-[5] Session 2026-02-17, 01:54:22, https://www.youtube.com/watch?v=Z2jlzpoTWVw — Vhar'Zul (Thyrex) bestätigt König Zebros als Thar'Vok-Anhänger; Explosion vernichtete Stadt und Gott.
+[P-38] Session 2026-02-17, 01:54:22, https://www.youtube.com/watch?v=Z2jlzpoTWVw — Vhar'Zul (Thyrex) bestätigt König Zebros als Thar'Vok-Anhänger; Explosion vernichtete Stadt und Gott.
 
-[6] Session 2026-03-24, 00:15:20, https://www.youtube.com/watch?v=Yj5BWJfg3Ag — Statuen im Turm als Thar'Vok identifiziert; der Gott ist tot.
+[P-44] Session 2026-03-24, 00:15:20, https://www.youtube.com/watch?v=Yj5BWJfg3Ag — Statuen im Turm als Thar'Vok identifiziert; der Gott ist tot.

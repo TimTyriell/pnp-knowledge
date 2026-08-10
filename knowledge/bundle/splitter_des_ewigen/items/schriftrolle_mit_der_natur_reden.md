@@ -14,4 +14,4 @@ Eine [Schriftrolle](/items/schriftrolle.md), die es erlaubt, mit Bäumen und Pfl
 
 # Belege
 
-1. Session 2025-04-01 @ 00:20:06 (https://www.youtube.com/watch?v=LZIuUzc3F18)
+[P-02] Session 2025-04-01 @ 00:20:06 (https://www.youtube.com/watch?v=LZIuUzc3F18)

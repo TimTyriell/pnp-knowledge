@@ -14,4 +14,4 @@ Die Bewohner von [Gemata](/locations/gemata.md), darunter ein Schmied, eine Wach
 
 # Belege
 
-1. Session 2025-04-23 @ 00:35:45 (https://www.youtube.com/watch?v=z3C-bewKqUs)
+[P-05] Session 2025-04-23 @ 00:35:45 (https://www.youtube.com/watch?v=z3C-bewKqUs)

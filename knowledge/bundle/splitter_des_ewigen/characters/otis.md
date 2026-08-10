@@ -31,8 +31,8 @@ Otis ist ein beständiger Teilnehmer der Abenteuergruppe. In der ersten dokument
 - **Krall und weitere Gefährten:** Otis agiert als Teil einer größeren Gruppe, zu der in der ersten Session unter anderem [Krall](/characters/krall.md) und [Floran](/npcs/floran.md) gehören. [Floran](/npcs/floran.md) tritt er in einem Kampf "spartanisch" in eine Grube.
 
 ## Chronologie
-1. **Session 1 (2026-03-23):** Otis stellt sich als aus dem Steinbruch stammender Waldläufer vor. Durch unvorsichtiges Verhalten alarmiert er Banditen. Im Kampf beweist er extreme physische Gewalt (Zermalmen eines Kopfes, Durchbrechen einer Scheunenwand). Er kickt einen Gefährten in die Tiefe. Am Ende der Session entscheidet er sich gegen alternative Vorschläge dafür, die Gefangenen nach [Willoch](/locations/willauch.md) zu bringen, weil dies der bezahlte Auftrag ist. Er erhält einen verbesserten Kriegshammer.
-2. **Zwischen den Sessions:** Otis hat sein Geld erhalten und lebt einige Zeit in Saus und Braus.
+[P-43] **Session 1 (2026-03-23):** Otis stellt sich als aus dem Steinbruch stammender Waldläufer vor. Durch unvorsichtiges Verhalten alarmiert er Banditen. Im Kampf beweist er extreme physische Gewalt (Zermalmen eines Kopfes, Durchbrechen einer Scheunenwand). Er kickt einen Gefährten in die Tiefe. Am Ende der Session entscheidet er sich gegen alternative Vorschläge dafür, die Gefangenen nach [Willoch](/locations/willauch.md) zu bringen, weil dies der bezahlte Auftrag ist. Er erhält einen verbesserten Kriegshammer.
+[P-47] **Zwischen den Sessions:** Otis hat sein Geld erhalten und lebt einige Zeit in Saus und Braus.
 3. **Session 2 (2026-04-09):** Otis ist Teil der Gruppe um [Rotunas](/characters/rotunas.md). Er rettet zwei Kinder vor einem Dämonenmagier, indem er sie in ein Lagerhaus bringt, und tötet den Magier anschließend mit einem Bogenschuss. Er setzt unkonventionelle Taktiken gegen Dämonen ein und nutzt sein Wissen über Gestein, um gemeinsam mit [Rotunas](/characters/rotunas.md) Portalsäulen zu zerstören. Zudem äußert er den Wunsch, seiner Mutter einen schönen Stein mitzubringen.
 
 ## Offene Fragen
@@ -41,5 +41,5 @@ Otis ist ein beständiger Teilnehmer der Abenteuergruppe. In der ersten dokument
 - Wo genau sich sein heimatlicher Steinbruch befindet und ob dieser mit einem bekannten Ort der Spielwelt verknüpft ist, bleibt offen.
 
 ## Belege
-[1] Session 2026-03-23 @ 00:00:44 (https://www.youtube.com/watch?v=niVxKtdQBn0)
-[2] Session 2026-04-09 @ 00:02:48 (https://www.youtube.com/watch?v=vcGkejr8_nI)
+[P-43] Session 2026-03-23 @ 00:00:44 (https://www.youtube.com/watch?v=niVxKtdQBn0)
+[P-47] Session 2026-04-09 @ 00:02:48 (https://www.youtube.com/watch?v=vcGkejr8_nI)

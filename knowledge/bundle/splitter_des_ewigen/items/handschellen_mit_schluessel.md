@@ -14,4 +14,4 @@ Ein Paar Handschellen mit dazugehörigem Schlüssel, gefunden zwischen den Gobli
 
 # Belege
 
-1. Session 2026-07-23 @ 00:37:34 (https://www.youtube.com/watch?v=Gb-TEbCFF0M)
+[S1-02-B] Session 2026-07-23 @ 00:37:34 (https://www.youtube.com/watch?v=Gb-TEbCFF0M)

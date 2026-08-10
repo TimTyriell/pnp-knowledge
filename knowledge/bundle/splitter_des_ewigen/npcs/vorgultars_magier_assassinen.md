@@ -14,4 +14,4 @@ Vier magiebegabte Kämpfer in Roben, die die Feuerwand bewachen. Einer führt ei
 
 # Belege
 
-1. Session 2026-06-10 @ 01:23:21 (https://www.youtube.com/watch?v=_3tLSiT1tck)
+[P-54] Session 2026-06-10 @ 01:23:21 (https://www.youtube.com/watch?v=_3tLSiT1tck)

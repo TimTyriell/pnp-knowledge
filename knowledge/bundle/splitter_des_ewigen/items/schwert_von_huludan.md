@@ -16,4 +16,4 @@ Ein lautlos aus schwarzer Flüssigkeit aufsteigendes Schwert mit einem Basston, 
 
 # Belege
 
-1. Session 2026-05-13 @ 01:35:34 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
+[P-50] Session 2026-05-13 @ 01:35:34 (https://www.youtube.com/watch?v=4afPD9Q_5AY)

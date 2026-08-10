@@ -16,4 +16,4 @@ Der Hauptteil der Festung, der einen Raum mit zwei Schreinen enthält: einen obe
 
 # Belege
 
-1. Session 2025-07-09 @ 00:39:00 (https://www.youtube.com/watch?v=XOnHa6CmDbo)
+[P-14] Session 2025-07-09 @ 00:39:00 (https://www.youtube.com/watch?v=XOnHa6CmDbo)

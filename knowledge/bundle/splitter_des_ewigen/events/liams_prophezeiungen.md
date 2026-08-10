@@ -14,4 +14,4 @@ subtype: Entdeckung
 
 # Belege
 
-1. Session 2026-07-29 @ 01:24:13 (https://www.youtube.com/watch?v=umGyKLkefJI)
+[S1-01-A] Session 2026-07-29 @ 01:24:13 (https://www.youtube.com/watch?v=umGyKLkefJI)

@@ -14,4 +14,4 @@ subtype: Ritual
 
 # Belege
 
-1. Session 2025-04-15 @ 01:13:58 (https://www.youtube.com/watch?v=YCpAz_syjaY)
+[P-04] Session 2025-04-15 @ 01:13:58 (https://www.youtube.com/watch?v=YCpAz_syjaY)

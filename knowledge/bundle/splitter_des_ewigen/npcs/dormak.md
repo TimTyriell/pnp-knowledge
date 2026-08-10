@@ -23,5 +23,5 @@ Dormak war kein loyaler Diener Vasuls, sondern ein eigenmächtiger Akteur, der i
 
 ## Belege
 
-1. Session 2025-09-02 @ 01:46:04 (https://www.youtube.com/watch?v=TLZOH7TlGhk) – Dormak in der Kapelle; Auftreten, Angriff und Flucht.
-2. Session 2026-03-31 @ 00:32:36 (https://www.youtube.com/watch?v=Ee-K84wcxLM) – Dormaks finaler Kampf; Überwältigung und Vernichtung durch Vasul.
+[P-20] Session 2025-09-02 @ 01:46:04 (https://www.youtube.com/watch?v=TLZOH7TlGhk) – Dormak in der Kapelle; Auftreten, Angriff und Flucht.
+[P-45] Session 2026-03-31 @ 00:32:36 (https://www.youtube.com/watch?v=Ee-K84wcxLM) – Dormaks finaler Kampf; Überwältigung und Vernichtung durch Vasul.

@@ -14,4 +14,4 @@ subtype: Verhandlung
 
 # Belege
 
-1. Session 2026-07-10 @ 01:30:00 (https://www.youtube.com/watch?v=H-eHSlfxUAg)
+[S1-01-B] Session 2026-07-10 @ 01:30:00 (https://www.youtube.com/watch?v=H-eHSlfxUAg)

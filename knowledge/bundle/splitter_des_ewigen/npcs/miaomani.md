@@ -28,11 +28,11 @@ Gemeinsam mit dem Kahnführer Lobrecht, ihrer Partner, begrüßt Miaomani die He
 
 # Belege
 
-1. Session 2025-04-30 @ 00:05:10 – https://www.youtube.com/watch?v=fsCOiSkKKTE
-2. Session 2025-05-06 @ 00:03:04 – https://www.youtube.com/watch?v=e0v6AFGd4mE
-3. Session 2025-07-29 @ 01:56:53 – https://www.youtube.com/watch?v=XXgO5Ht4Q0A
-4. Session 2026-07-29 @ 00:47:52 – https://www.youtube.com/watch?v=umGyKLkefJI
+[P-06] Session 2025-04-30 @ 00:05:10 – https://www.youtube.com/watch?v=fsCOiSkKKTE
+[P-07] Session 2025-05-06 @ 00:03:04 – https://www.youtube.com/watch?v=e0v6AFGd4mE
+[P-16] Session 2025-07-29 @ 01:56:53 – https://www.youtube.com/watch?v=XXgO5Ht4Q0A
+[S1-01-A] Session 2026-07-29 @ 00:47:52 – https://www.youtube.com/watch?v=umGyKLkefJI
 
 # Offene Konflikte
 
-- Beleg [3] bezeichnet Miaomani als „katzenartige Gefährtin des Kapitäns“, Beleg [4] als „Partnerin des Kahnführers Lobrecht“. Es bleibt unklar, ob Lobrecht mit dem Kapitän identisch ist oder ob Miaomani zwei verschiedene Beziehungen hat.
+- Beleg [P-16] bezeichnet Miaomani als „katzenartige Gefährtin des Kapitäns“, Beleg [S1-01-A] als „Partnerin des Kahnführers Lobrecht“. Es bleibt unklar, ob Lobrecht mit dem Kapitän identisch ist oder ob Miaomani zwei verschiedene Beziehungen hat.

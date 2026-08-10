@@ -14,4 +14,4 @@ Eine magische Rüstung, die [Rotunas](/characters/rotunas.md) aktiviert, indem e
 
 # Belege
 
-1. Session 2026-04-09 @ 00:37:06 (https://www.youtube.com/watch?v=vcGkejr8_nI)
+[P-47] Session 2026-04-09 @ 00:37:06 (https://www.youtube.com/watch?v=vcGkejr8_nI)

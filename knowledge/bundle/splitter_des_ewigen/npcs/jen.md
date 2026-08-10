@@ -23,4 +23,4 @@ Es ist nicht feststellbar, ob sie eine Verbindung zu Vorgultar hat oder ob sie l
 
 ## Belege
 
-1. Session 2026-06-10 @ 01:12:42 – <https://www.youtube.com/watch?v=_3tLSiT1tck>
+[P-54] Session 2026-06-10 @ 01:12:42 – <https://www.youtube.com/watch?v=_3tLSiT1tck>

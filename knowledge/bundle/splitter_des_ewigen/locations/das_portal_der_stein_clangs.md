@@ -14,4 +14,4 @@ Ein steinernes Tor mit kleinen Kristallen, bewacht von den Stein-Clangs. Es erm√
 
 # Belege
 
-1. Session 2026-05-19 @ 00:06:15 (https://www.youtube.com/watch?v=xEcGJeaNixI)
+[P-51] Session 2026-05-19 @ 00:06:15 (https://www.youtube.com/watch?v=xEcGJeaNixI)

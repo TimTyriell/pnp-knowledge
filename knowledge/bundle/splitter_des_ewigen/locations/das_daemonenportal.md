@@ -14,4 +14,4 @@ Ein magisches Tor im Norden [Ehrenfels](/locations/ehrenfels.md)', aus dem die D
 
 # Belege
 
-1. Session 2026-04-09 @ 00:12:00 (https://www.youtube.com/watch?v=vcGkejr8_nI)
+[P-47] Session 2026-04-09 @ 00:12:00 (https://www.youtube.com/watch?v=vcGkejr8_nI)

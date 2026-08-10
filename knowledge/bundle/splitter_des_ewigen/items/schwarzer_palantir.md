@@ -26,6 +26,6 @@ Auf Anraten hin hielt Dodo den Schwarzen Palantir an ein versiegeltes Buch. Dara
 
 ## Belege
 
-1. Session 2025-06-17 @ 01:53:34 – [YouTube](https://www.youtube.com/watch?v=tl76B4V0io8)
-2. Session 2025-06-25 @ 00:50:21 – [YouTube](https://www.youtube.com/watch?v=tpkO9uGw6-I)
+[P-12] Session 2025-06-17 @ 01:53:34 – [YouTube](https://www.youtube.com/watch?v=tl76B4V0io8)
+[P-13] Session 2025-06-25 @ 00:50:21 – [YouTube](https://www.youtube.com/watch?v=tpkO9uGw6-I)
 3. Kanon_Entscheidungen.md – Festlegung zu den Fundortangaben

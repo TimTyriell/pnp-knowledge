@@ -13,4 +13,4 @@ Der Dämon der Hybris ist eine große, schwebende Kreatur, die Fäden spinnt und
 
 # Belege
 
-1. Session 2026-07-21 @ 01:29:40 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
+[P-57] Session 2026-07-21 @ 01:29:40 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)

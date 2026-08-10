@@ -13,4 +13,4 @@ Die Kultisten tragen alle einen Zeremonialdolch, den [Cookie](/characters/cookie
 
 # Belege
 
-1. Session 2025-09-02 @ 00:52:43 (https://www.youtube.com/watch?v=TLZOH7TlGhk)
+[P-20] Session 2025-09-02 @ 00:52:43 (https://www.youtube.com/watch?v=TLZOH7TlGhk)

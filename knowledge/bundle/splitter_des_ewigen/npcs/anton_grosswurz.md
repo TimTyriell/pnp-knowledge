@@ -13,4 +13,4 @@ Ein Magier und Heiler in der ersten [Taverne](/locations/taverne.md), der sich a
 
 # Belege
 
-1. Session 2025-04-30 @ 00:46:23 (https://www.youtube.com/watch?v=fsCOiSkKKTE)
+[P-06] Session 2025-04-30 @ 00:46:23 (https://www.youtube.com/watch?v=fsCOiSkKKTE)

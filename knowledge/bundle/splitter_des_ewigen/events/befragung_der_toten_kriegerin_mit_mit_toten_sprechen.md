@@ -14,4 +14,4 @@ Mittels der [Schriftrolle](/items/schriftrolle.md) wurde eine tote Kriegerin bef
 
 # Belege
 
-1. Session 2025-09-09 @ 01:12:27 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
+[P-22] Session 2025-09-09 @ 01:12:27 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)

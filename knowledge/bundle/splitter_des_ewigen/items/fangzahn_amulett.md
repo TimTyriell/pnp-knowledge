@@ -14,4 +14,4 @@ Ein Amulett mit vampirzahnartigem Motiv, das magische Energie ausstrahlt. [Lindo
 
 # Belege
 
-1. Session 2025-06-10 @ 00:44:34 (https://www.youtube.com/watch?v=cLkCu3Iq3y8)
+[P-11] Session 2025-06-10 @ 00:44:34 (https://www.youtube.com/watch?v=cLkCu3Iq3y8)

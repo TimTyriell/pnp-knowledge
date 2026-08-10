@@ -14,4 +14,4 @@ Ein Halsband, das nach dem Tod des Monsters an dessen Tentakel gefunden wird. Es
 
 # Belege
 
-1. Session 2025-03-26 @ 01:47:46 (https://www.youtube.com/watch?v=ROCKGeeRUFw)
+[P-01] Session 2025-03-26 @ 01:47:46 (https://www.youtube.com/watch?v=ROCKGeeRUFw)

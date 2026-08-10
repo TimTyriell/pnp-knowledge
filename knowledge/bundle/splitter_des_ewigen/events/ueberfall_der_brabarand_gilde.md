@@ -14,4 +14,4 @@ Die Assassinen dringen nachts in die [Taverne](/locations/taverne.md) ein, bring
 
 # Belege
 
-1. Session 2025-07-22 @ 00:19:03 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
+[P-15] Session 2025-07-22 @ 00:19:03 (https://www.youtube.com/watch?v=BRRCUgW4xRo)

@@ -75,6 +75,6 @@ Brandau unterlag im Krieg gegen Willauch. Die genauen Umstände der Niederlage b
 
 ## Belege
 
-[1] Session 2025-09-30 @ 02:07:03 – Hal erwähnt die Todesstrafe in Brandau (neben Willauch). (https://www.youtube.com/watch?v=bUT7Mc2hjUY)  
-[2] Session 2026-03-18 @ 00:22:08 – Brandau wurde im Krieg von Willauch besiegt; Freibeuter verloren Broterwerb; Schiffe in Tiefwasserwitt stammen teils aus Brandau. (https://www.youtube.com/watch?v=HHXxsASLrbQ)  
-[3] Session 2026-06-04 @ 01:07:59 – Herakles' Herkunft aus Brandau, Flucht nach Kriegsniederlage, Widerstand aus ehemaligen Brandauern; Informant Talron als Ex-Gardist; anhaltende Propaganda gegen Brandau. (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
+[P-25] Session 2025-09-30 @ 02:07:03 – Hal erwähnt die Todesstrafe in Brandau (neben Willauch). (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[P-42] Session 2026-03-18 @ 00:22:08 – Brandau wurde im Krieg von Willauch besiegt; Freibeuter verloren Broterwerb; Schiffe in Tiefwasserwitt stammen teils aus Brandau. (https://www.youtube.com/watch?v=HHXxsASLrbQ)
+[P-53] Session 2026-06-04 @ 01:07:59 – Herakles' Herkunft aus Brandau, Flucht nach Kriegsniederlage, Widerstand aus ehemaligen Brandauern; Informant Talron als Ex-Gardist; anhaltende Propaganda gegen Brandau. (https://www.youtube.com/watch?v=EGNh8O7pE5Q)

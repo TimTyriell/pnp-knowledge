@@ -14,4 +14,4 @@ Eine verfallene Siedlung auf der [Bergspitze](/locations/bergspitze.md) von Zebr
 
 # Belege
 
-1. Session 2025-05-14 @ 00:08:38 (https://www.youtube.com/watch?v=5eAEDN5ra-4)
+[P-08] Session 2025-05-14 @ 00:08:38 (https://www.youtube.com/watch?v=5eAEDN5ra-4)

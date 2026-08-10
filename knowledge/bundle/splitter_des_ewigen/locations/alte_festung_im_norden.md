@@ -14,4 +14,4 @@ Eine verlassene Festung im äußersten Norden, die [Horatio](/npcs/horatio.md) a
 
 # Belege
 
-1. Session 2025-11-14 @ 00:45:05 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)
+[P-30] Session 2025-11-14 @ 00:45:05 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)

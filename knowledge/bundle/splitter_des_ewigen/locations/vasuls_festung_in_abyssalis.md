@@ -14,4 +14,4 @@ Eine massive, in die Berge gebaute Festung, die [Vasul](/deities/vharzul.md) als
 
 # Belege
 
-1. Session 2026-03-31 @ 01:10:31 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
+[P-45] Session 2026-03-31 @ 01:10:31 (https://www.youtube.com/watch?v=Ee-K84wcxLM)

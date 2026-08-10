@@ -5,6 +5,7 @@ export interface Action {
   kind: string;
   label: string;
   ref: string;
+  url?: string;
 }
 
 export interface LastRun {
@@ -43,6 +44,33 @@ export interface FunnelRow {
   in_bundle: boolean;
   committed_at: string | null;
   lead_time_days: number | null;
+  episode: string | null;
+  episode_title: string | null;
+}
+
+export interface Episode {
+  video_id: string;
+  date: string;
+  season: string;
+  team: string;
+  id?: string;
+  title?: string;
+  description?: string;
+  url?: string;
+  tags?: string[];
+}
+
+export interface Season {
+  label: string;
+  template?: string;
+  per_team?: boolean;
+  pinned?: boolean;
+}
+
+export interface Episodes {
+  seasons: Record<string, Season>;
+  episodes: Episode[];
+  error?: string;
 }
 
 export interface DashboardStatus {
@@ -92,6 +120,8 @@ export interface Glossary {
 
 export type Edit =
   | { op: "rename"; concept_id: string; name: string }
+  | { op: "unpin"; concept_id: string }
+  | { op: "set_important"; concept_id: string; important: boolean }
   | { op: "add_alias"; concept_id: string; alias: string }
   | { op: "delete_alias"; concept_id: string; alias: string; source: AliasSource; unfold_ack?: boolean };
 

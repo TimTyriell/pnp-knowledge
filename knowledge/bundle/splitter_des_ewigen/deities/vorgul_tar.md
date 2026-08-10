@@ -89,12 +89,12 @@ Trotz seiner Schrecklichkeit wird Vorgul'tar in Tyraels Buch nicht durchweg nega
 
 ## Belege
 
-[1] Session 2026-03-03 @ 01:31:02 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
-[2] Session 2026-03-31 @ 01:15:35 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
-[3] Session 2026-04-14 @ 01:25:21 (https://www.youtube.com/watch?v=1Jyu92P7_Fg)
-[4] Session 2026-05-13 @ 01:35:48 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
-[5] Session 2026-05-19 @ 00:08:25 (https://www.youtube.com/watch?v=xEcGJeaNixI)
-[6] Session 2026-06-10 @ 00:37:47 (https://www.youtube.com/watch?v=_3tLSiT1tck)
-[7] Session 2026-06-16 @ 00:45:08 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
-[8] Session 2026-07-21 @ 00:15:40 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
+[P-40] Session 2026-03-03 @ 01:31:02 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
+[P-45] Session 2026-03-31 @ 01:15:35 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
+[P-48] Session 2026-04-14 @ 01:25:21 (https://www.youtube.com/watch?v=1Jyu92P7_Fg)
+[P-50] Session 2026-05-13 @ 01:35:48 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
+[P-51] Session 2026-05-19 @ 00:08:25 (https://www.youtube.com/watch?v=xEcGJeaNixI)
+[P-54] Session 2026-06-10 @ 00:37:47 (https://www.youtube.com/watch?v=_3tLSiT1tck)
+[P-55] Session 2026-06-16 @ 00:45:08 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
+[P-57] Session 2026-07-21 @ 00:15:40 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
 [9] ENTSCHEIDUNG: Der Jen, aus Kanon_Entscheidungen.md

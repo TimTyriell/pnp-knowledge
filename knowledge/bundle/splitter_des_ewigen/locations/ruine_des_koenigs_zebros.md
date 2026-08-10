@@ -14,4 +14,4 @@ Eine halbzerfallene Gedenkstätte mit einer großen Statue des Königs und viele
 
 # Belege
 
-1. Session 2025-05-14 @ 00:22:55 (https://www.youtube.com/watch?v=5eAEDN5ra-4)
+[P-08] Session 2025-05-14 @ 00:22:55 (https://www.youtube.com/watch?v=5eAEDN5ra-4)

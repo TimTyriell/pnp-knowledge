@@ -14,4 +14,4 @@ Ein verborgener Tempel im [Abyssalis](/domains/splitterwelt.md), der den 'große
 
 # Belege
 
-1. Session 2026-06-16 @ 01:33:22 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
+[P-55] Session 2026-06-16 @ 01:33:22 (https://www.youtube.com/watch?v=qe0ck8hvYpk)

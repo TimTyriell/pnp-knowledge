@@ -14,4 +14,4 @@ Ein magischer Stein, der an einer Waffe befestigt werden kann und dieser die Eig
 
 # Belege
 
-1. Session 2026-07-23 @ 01:57:18 (https://www.youtube.com/watch?v=Gb-TEbCFF0M)
+[S1-02-B] Session 2026-07-23 @ 01:57:18 (https://www.youtube.com/watch?v=Gb-TEbCFF0M)

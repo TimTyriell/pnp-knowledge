@@ -47,10 +47,10 @@ Der Berg wird von einem dunklen Paladin beherrscht, dessen Identität noch nicht
 
 ## Chronologie
 
-1. **Vor dem Götterkrieg**: Das Königreich Zebros existiert mit seiner Hauptstadt gleichen Namens. Der Berg Zebros ist Teil dieses Reiches.
+[P-13] **Vor dem Götterkrieg**: Das Königreich Zebros existiert mit seiner Hauptstadt gleichen Namens. Der Berg Zebros ist Teil dieses Reiches.
 2. **Im Götterkrieg**: Das Königreich wird vollständig zerstört. Nur Ruinen, Relikte und der Berg selbst überdauern.
 3. **Unbestimmte Zeit später**: Ein dunkler Paladin bemächtigt sich des Berges. Die Burg wird errichtet oder wiederaufgebaut, Untote überschwemmen das Gebiet.
-4. **Session 2025-06-25**: [1] Graf Voras fasst den Plan, den Berg mit seiner Nekromantie zu erobern. Dodo hat den Ort in der Vergangenheit aufgesucht und gegen den Paladin gekämpft.
+4. **Session 2025-06-25**: [P-13] Graf Voras fasst den Plan, den Berg mit seiner Nekromantie zu erobern. Dodo hat den Ort in der Vergangenheit aufgesucht und gegen den Paladin gekämpft.
 
 ## Offene Fragen
 
@@ -62,6 +62,6 @@ Der Berg wird von einem dunklen Paladin beherrscht, dessen Identität noch nicht
 
 ## Belege
 
-[1] Session 2025-06-25 @ 00:31:30 – Erste Erwähnung des Berges, seiner Besetzung durch Untote, des dunklen Paladins sowie Voras’ Eroberungspläne und Dodos Aufenthalt. (https://www.youtube.com/watch?v=tpkO9uGw6-I)
+[P-13] Session 2025-06-25 @ 00:31:30 – Erste Erwähnung des Berges, seiner Besetzung durch Untote, des dunklen Paladins sowie Voras’ Eroberungspläne und Dodos Aufenthalt. (https://www.youtube.com/watch?v=tpkO9uGw6-I)
 
 [E1] Kanon_Entscheidungen.md – Verbindliche Festlegung: Zebros ist ein altes Königreich, keine Gottheit. Hauptstadt und Berg trugen denselben Namen. Zerstört im Götterkrieg. Berg steht weiterhin, Königreich nur noch als Ruinen und Relikte erhalten.

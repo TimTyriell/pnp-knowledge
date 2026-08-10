@@ -14,4 +14,4 @@ Ein Umhang mit Kapuze, der auf Befehl die Farbe wechseln kann. Von [Dodo](/chara
 
 # Belege
 
-1. Session 2025-06-10 @ 00:21:40 (https://www.youtube.com/watch?v=cLkCu3Iq3y8)
+[P-11] Session 2025-06-10 @ 00:21:40 (https://www.youtube.com/watch?v=cLkCu3Iq3y8)

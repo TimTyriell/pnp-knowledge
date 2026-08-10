@@ -13,4 +13,4 @@ Der wachhabende Hauptmann auf der Hauptinsel Sanddorn. Er fordert von Neuankömm
 
 # Belege
 
-1. Session 2025-04-30 @ 00:31:22 (https://www.youtube.com/watch?v=fsCOiSkKKTE)
+[P-06] Session 2025-04-30 @ 00:31:22 (https://www.youtube.com/watch?v=fsCOiSkKKTE)

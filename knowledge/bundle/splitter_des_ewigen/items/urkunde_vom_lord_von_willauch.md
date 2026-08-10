@@ -14,4 +14,4 @@ Das Dokument des Lords, das den Besitzanspruch der Gruppe auf das Anwesen bestä
 
 # Belege
 
-1. Session 2025-11-14 @ 00:01:38 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)
+[P-30] Session 2025-11-14 @ 00:01:38 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)

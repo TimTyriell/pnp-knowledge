@@ -14,4 +14,4 @@ Ro tunas reißt mit magischen Händen den großen grünen Kristall aus der Veran
 
 # Belege
 
-1. Session 2025-10-07 @ 01:02:28 (https://www.youtube.com/watch?v=qVAF_54S8Vw)
+[P-26] Session 2025-10-07 @ 01:02:28 (https://www.youtube.com/watch?v=qVAF_54S8Vw)

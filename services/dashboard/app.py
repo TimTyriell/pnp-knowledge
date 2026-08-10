@@ -44,6 +44,7 @@ EXPORT_STATUS = EXPORT_DIR / "status" / "status.json"
 EXPORT_HISTORY = EXPORT_DIR / "status" / "history.jsonl"
 RULES_PATH = KNOWLEDGE_DIR / "entity_rules.yaml"
 REGISTRY_PATH = KNOWLEDGE_DIR / "entity_registry.yaml"
+EPISODES_PATH = KNOWLEDGE_DIR / "episodes.yaml"
 
 WEB_DIST = Path(__file__).parent / "web" / "dist"
 
@@ -52,7 +53,17 @@ app = FastAPI(title="pnp-dashboard")
 
 @app.get("/api/status")
 def status() -> dict:
-    return merge.build(CRAWL_STATUS, EXPORT_STATUS, KB_URL)
+    return merge.build(CRAWL_STATUS, EXPORT_STATUS, KB_URL, EPISODES_PATH)
+
+
+@app.get("/api/episodes")
+def episodes() -> dict:
+    """The campaign's episode list — knowledge/episodes.yaml, read-only.
+
+    Kept out of /api/status because it changes once per session, not every
+    10 seconds, and the frontend fetches it once.
+    """
+    return merge.load_episodes(EPISODES_PATH)
 
 
 def _read_history(path: Path) -> list[dict]:

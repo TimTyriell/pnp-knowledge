@@ -14,4 +14,4 @@ Die Gruppe erreicht [Crowfin Manor](/locations/crowfin_manor.md), spürt den Sch
 
 # Belege
 
-1. Session 2026-02-17 @ 00:05:56 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
+[P-38] Session 2026-02-17 @ 00:05:56 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)

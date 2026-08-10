@@ -13,4 +13,4 @@ Marus ist der Anführer der [Silberkornbande](/factions/silberkerne.md), die in 
 
 # Belege
 
-1. Session 2026-02-24 @ 00:44:13 (https://www.youtube.com/watch?v=WOFArbwDDIQ)
+[P-39] Session 2026-02-24 @ 00:44:13 (https://www.youtube.com/watch?v=WOFArbwDDIQ)

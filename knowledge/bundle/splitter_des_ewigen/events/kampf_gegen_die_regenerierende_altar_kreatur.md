@@ -14,4 +14,4 @@ Nachdem die vier Schädel mit Feuer am Altar erlöschen, erscheint eine fleischi
 
 # Belege
 
-1. Session 2026-04-07 @ 01:03:34 (https://www.youtube.com/watch?v=MAuQPMNY548)
+[P-46] Session 2026-04-07 @ 01:03:34 (https://www.youtube.com/watch?v=MAuQPMNY548)

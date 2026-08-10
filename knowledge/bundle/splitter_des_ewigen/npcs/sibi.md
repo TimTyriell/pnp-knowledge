@@ -13,4 +13,4 @@ Ein neugieriger Halblingsjunge, der mit seinem Hund [Nepp](/npcs/nepp.md) auf de
 
 # Belege
 
-1. Session 2026-07-10 @ 01:19:30 (https://www.youtube.com/watch?v=H-eHSlfxUAg)
+[S1-01-B] Session 2026-07-10 @ 01:19:30 (https://www.youtube.com/watch?v=H-eHSlfxUAg)

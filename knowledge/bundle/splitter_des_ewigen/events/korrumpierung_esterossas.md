@@ -14,4 +14,4 @@ Unmittelbar nach [Vasuls](/deities/vharzul.md) Niederlage erscheint [Vorgul'tar]
 
 # Belege
 
-1. Session 2026-06-16 @ 02:01:23 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
+[P-55] Session 2026-06-16 @ 02:01:23 (https://www.youtube.com/watch?v=qe0ck8hvYpk)

@@ -14,4 +14,4 @@ Die überlebenden Dorfbewohner besteigen das Schiff und verlassen mit den Helden
 
 # Belege
 
-1. Session 2025-07-29 @ 02:02:40 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
+[P-16] Session 2025-07-29 @ 02:02:40 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)

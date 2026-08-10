@@ -14,4 +14,4 @@ Ein Holzschild an der eingestürzten Brücke, auf dem nur "zum Heiligtum" steht.
 
 # Belege
 
-1. Session 2025-08-12 @ 00:24:50 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)
+[P-18] Session 2025-08-12 @ 00:24:50 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)

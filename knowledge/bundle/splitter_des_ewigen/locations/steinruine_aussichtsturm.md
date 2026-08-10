@@ -14,4 +14,4 @@ Ein eingestürzter Turm aus Stein, den [Esterossa](/characters/esterossa.md) als
 
 # Belege
 
-1. Session 2025-04-01 @ 00:51:33 (https://www.youtube.com/watch?v=LZIuUzc3F18)
+[P-02] Session 2025-04-01 @ 00:51:33 (https://www.youtube.com/watch?v=LZIuUzc3F18)

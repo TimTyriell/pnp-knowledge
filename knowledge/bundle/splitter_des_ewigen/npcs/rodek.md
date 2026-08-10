@@ -13,4 +13,4 @@ Rodek ist der Älteste des Sumpfdorfes [Cornivum](/locations/cornivum.md), ein D
 
 # Belege
 
-1. Session 2025-06-03 @ 00:07:25 (https://www.youtube.com/watch?v=jtYR4Je0a18)
+[P-10] Session 2025-06-03 @ 00:07:25 (https://www.youtube.com/watch?v=jtYR4Je0a18)

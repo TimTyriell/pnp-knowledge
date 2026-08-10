@@ -29,5 +29,5 @@ Esterossa ist sich des zwiespältigen Wesens seines Schwerts bewusst. Er kämpft
 
 ## Belege
 
-1. Session 2026-05-19 @ 00:02:35 (https://www.youtube.com/watch?v=xEcGJeaNixI)  
-2. Session 2026-06-16 @ 01:45:08 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
+[P-51] Session 2026-05-19 @ 00:02:35 (https://www.youtube.com/watch?v=xEcGJeaNixI)
+[P-55] Session 2026-06-16 @ 01:45:08 (https://www.youtube.com/watch?v=qe0ck8hvYpk)

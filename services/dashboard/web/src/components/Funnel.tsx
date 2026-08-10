@@ -14,6 +14,7 @@ export function Funnel({ rows }: { rows: FunnelRow[] }) {
         <table>
           <thead>
             <tr>
+              <th>Folge</th>
               <th>Datum</th>
               <th>Session</th>
               <th>DL</th>
@@ -27,6 +28,9 @@ export function Funnel({ rows }: { rows: FunnelRow[] }) {
           <tbody>
             {sorted.map((r) => (
               <tr key={r.video_id ?? r.video_date}>
+                <td className="cell-mono" title={r.episode_title ?? undefined}>
+                  {r.episode ?? "—"}
+                </td>
                 <td>{r.video_date ?? "—"}</td>
                 <td className="cell-mono">{r.stem ?? r.video_id ?? "—"}</td>
                 <td>

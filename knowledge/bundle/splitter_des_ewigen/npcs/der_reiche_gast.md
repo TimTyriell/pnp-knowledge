@@ -13,4 +13,4 @@ Ein wohlhabender Fremder, der vor einiger Zeit [Windung](/locations/windung.md) 
 
 # Belege
 
-1. Session 2025-07-29 @ 00:26:15 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
+[P-16] Session 2025-07-29 @ 00:26:15 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)

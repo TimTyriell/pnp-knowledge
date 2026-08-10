@@ -14,4 +14,4 @@ Der geisterhafte Wächter durchschaut [Esterossas](/characters/esterossa.md) Uns
 
 # Belege
 
-1. Session 2025-08-12 @ 00:17:22 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)
+[P-18] Session 2025-08-12 @ 00:17:22 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)

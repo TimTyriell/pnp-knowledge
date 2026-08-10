@@ -13,4 +13,4 @@ Silberbart ist der erste Zwerg, dem die Abenteurer begegnen, er empfängt sie fr
 
 # Belege
 
-1. Session 2026-01-27 @ 00:05:25 (https://www.youtube.com/watch?v=9RzvnnWzV7E)
+[P-36] Session 2026-01-27 @ 00:05:25 (https://www.youtube.com/watch?v=9RzvnnWzV7E)

@@ -14,4 +14,4 @@ Die letzte Konfrontation vor dem Eingang zur Narbe: Drei gefallene Seraphen bewa
 
 # Belege
 
-1. Session 2026-05-19 @ 02:16:27 (https://www.youtube.com/watch?v=xEcGJeaNixI)
+[P-51] Session 2026-05-19 @ 02:16:27 (https://www.youtube.com/watch?v=xEcGJeaNixI)

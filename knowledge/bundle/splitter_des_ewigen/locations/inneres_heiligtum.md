@@ -14,4 +14,4 @@ Der abgeschlossene Raum hinter der magischen Tür, der die Statue [Varsuls](/dei
 
 # Belege
 
-1. Session 2025-09-02 @ 01:35:11 (https://www.youtube.com/watch?v=TLZOH7TlGhk)
+[P-20] Session 2025-09-02 @ 01:35:11 (https://www.youtube.com/watch?v=TLZOH7TlGhk)

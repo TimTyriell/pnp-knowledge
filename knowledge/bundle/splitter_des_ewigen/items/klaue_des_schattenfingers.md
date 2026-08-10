@@ -14,4 +14,4 @@ Eine abgebrochene Klaue eines [Schattenfingers](/items/schattenfinger.md), die m
 
 # Belege
 
-1. Session 2025-05-06 @ 00:21:24 (https://www.youtube.com/watch?v=e0v6AFGd4mE)
+[P-07] Session 2025-05-06 @ 00:21:24 (https://www.youtube.com/watch?v=e0v6AFGd4mE)

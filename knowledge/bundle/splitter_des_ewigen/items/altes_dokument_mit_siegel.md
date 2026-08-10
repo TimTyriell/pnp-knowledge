@@ -14,4 +14,4 @@ Ein altes Schriftstück, das Lindo im Labor entdeckte und das mit einem Siegel v
 
 # Belege
 
-1. Session 2025-06-17 @ 01:43:59 (https://www.youtube.com/watch?v=tl76B4V0io8)
+[P-12] Session 2025-06-17 @ 01:43:59 (https://www.youtube.com/watch?v=tl76B4V0io8)

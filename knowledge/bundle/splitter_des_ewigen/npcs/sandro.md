@@ -59,6 +59,6 @@ Während eines Gefechts gegen mehrere Dämonen nutzt der GM Sandros Fähigkeit: 
 
 ## Belege
 
-1. Session 2026-03-10, 01:17:50 – Einführung Sandros, Portalführung, Kampf gegen Schattenkreatur, Übergabe der Schriftrolle, Champions-Titel. [Link](https://www.youtube.com/watch?v=Kr9_AC2XtOw)
-2. Session 2026-03-31, 00:46:14 – Lichtblitz auf Dämon, Solidarität mit Vasul und der Gruppe. [Link](https://www.youtube.com/watch?v=Ee-K84wcxLM)
-3. Session 2026-04-09, 01:28:42 – Magischer Käfig, Tod durch Nerash. [Link](https://www.youtube.com/watch?v=vcGkejr8_nI)
+[P-41] Session 2026-03-10, 01:17:50 – Einführung Sandros, Portalführung, Kampf gegen Schattenkreatur, Übergabe der Schriftrolle, Champions-Titel. [Link](https://www.youtube.com/watch?v=Kr9_AC2XtOw)
+[P-45] Session 2026-03-31, 00:46:14 – Lichtblitz auf Dämon, Solidarität mit Vasul und der Gruppe. [Link](https://www.youtube.com/watch?v=Ee-K84wcxLM)
+[P-47] Session 2026-04-09, 01:28:42 – Magischer Käfig, Tod durch Nerash. [Link](https://www.youtube.com/watch?v=vcGkejr8_nI)

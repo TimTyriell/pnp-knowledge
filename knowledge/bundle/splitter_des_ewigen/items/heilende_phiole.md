@@ -14,4 +14,4 @@ Ein seltener Heiltrank, der in [Valuna](/locations/valuna.md) hergestellt wird u
 
 # Belege
 
-1. Session 2026-08-04 @ 02:09:40 (https://www.youtube.com/watch?v=qRj2t3wQHfs)
+[S1-02-A] Session 2026-08-04 @ 02:09:40 (https://www.youtube.com/watch?v=qRj2t3wQHfs)

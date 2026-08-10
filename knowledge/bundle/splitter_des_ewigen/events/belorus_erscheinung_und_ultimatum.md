@@ -14,4 +14,4 @@ Nach dem Tod des [Dreadknights](/npcs/dreadknight.md) materialisierte [Belorus](
 
 # Belege
 
-1. Session 2026-01-13 @ 02:09:44 (https://www.youtube.com/watch?v=w4LB1s9_3rs)
+[P-34] Session 2026-01-13 @ 02:09:44 (https://www.youtube.com/watch?v=w4LB1s9_3rs)

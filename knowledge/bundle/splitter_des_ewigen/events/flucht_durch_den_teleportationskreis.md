@@ -14,4 +14,4 @@ Kurz bevor die Hexe sie mit einem Todesstrahl treffen konnte, aktivierte Lindo d
 
 # Belege
 
-1. Session 2025-06-17 @ 01:59:50 (https://www.youtube.com/watch?v=tl76B4V0io8)
+[P-12] Session 2025-06-17 @ 01:59:50 (https://www.youtube.com/watch?v=tl76B4V0io8)

@@ -14,4 +14,4 @@ Ein alter Turm nordöstlich von [Cornivum](/locations/cornivum.md), auf den die 
 
 # Belege
 
-1. Session 2025-06-03 @ 01:51:20 (https://www.youtube.com/watch?v=jtYR4Je0a18)
+[P-10] Session 2025-06-03 @ 01:51:20 (https://www.youtube.com/watch?v=jtYR4Je0a18)

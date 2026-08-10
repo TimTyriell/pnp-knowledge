@@ -13,4 +13,4 @@ Eine Magierin, die mit [Meister Pyrandras](/npcs/meister_pyrandras.md) zur Verst
 
 # Belege
 
-1. Session 2025-07-22 @ 02:20:25 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
+[P-15] Session 2025-07-22 @ 02:20:25 (https://www.youtube.com/watch?v=BRRCUgW4xRo)

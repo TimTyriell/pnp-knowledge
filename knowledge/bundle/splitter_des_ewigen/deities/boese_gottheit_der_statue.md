@@ -24,4 +24,4 @@ Esterossa, eine Autorität für übernatürliche Phänomene, konnte die Gottheit
 
 # Belege
 
-1. Session 2025-04-15, 01:12:23 – [Video](https://www.youtube.com/watch?v=YCpAz_syjaY)
+[P-04] Session 2025-04-15, 01:12:23 – [Video](https://www.youtube.com/watch?v=YCpAz_syjaY)

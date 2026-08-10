@@ -14,4 +14,4 @@ Nachdem Jen [Tattricks](/npcs/tattrick.md) Kontrollsymbol aktiviert, erkennt die
 
 # Belege
 
-1. Session 2026-06-16 @ 01:28:18 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
+[P-55] Session 2026-06-16 @ 01:28:18 (https://www.youtube.com/watch?v=qe0ck8hvYpk)

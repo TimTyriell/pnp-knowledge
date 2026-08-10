@@ -14,4 +14,4 @@ Eine einst stabile Minenstadt am Fuße des Berges [Zebros](/factions/koenigreich
 
 # Belege
 
-1. Session 2025-09-09 @ 00:07:30 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
+[P-22] Session 2025-09-09 @ 00:07:30 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)

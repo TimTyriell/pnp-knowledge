@@ -14,4 +14,4 @@ Eine extrem süße, honigartige Substanz aus einem Pilz, die [Dodo](/characters/
 
 # Belege
 
-1. Session 2025-11-14 @ 00:23:07 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)
+[P-30] Session 2025-11-14 @ 00:23:07 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)

@@ -141,7 +141,6 @@ merge:
   göttliche handschellen: items/magische_handschellen
   schlüssel: items/magischer_schluessel
   der stab (schlüssel): items/magischer_schluessel
-  notiz: items/notiz_von_hal
   willau: locations/willauch
   willauch: locations/willauch
   willoch: locations/willauch
@@ -968,6 +967,9 @@ canonical_name:
   locations/das_portal: Das Portal (Zwergmeistergilde-Gelände / Kapelle)
   npcs/voras: Voras der Heilige
   npcs/hal_harl: Harl
+  items/lindo_lauts_stab: Schlüssel von Abisalis
+  items/notiz_von_hal: Notiz von Harl
+  deities/korn: Korn, der Blutgott
 
 # Concepts that force the deep synthesis tier regardless of mention count —
 # the escape hatch for entities the automatic rules underrate. Characters and
@@ -1014,3 +1016,5 @@ important:
 alias_block:
   characters/valeria:
   - cookie und valeria
+  items/notiz_von_hal:
+  - notiz

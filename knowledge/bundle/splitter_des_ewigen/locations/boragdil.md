@@ -44,7 +44,7 @@ Boragdil liegt in den Erntefeldern von Abyssalis, in einem Waldgebiet. Zwischen 
 - **Session 2026-04-14 (ca. eine Woche später):** Die Gruppe kehrt an den Rand Boragdils zurück. „Es sieht immer noch so karg und trist aus wie noch vor einer Woche oder vor den letzten Tagen.“ Die Wesen reagieren diesmal schwächer auf die Gruppe – sie ignorieren deren Präsenz weitgehend oder weichen spezifisch [Lunara Velora](/characters/lunara_velora.md) aus.
 
 ## Belege
-[1] Session 2026-03-31, ca. 01:35:40 – YouTube-Link: https://www.youtube.com/watch?v=Ee-K84wcxLM  
-[2] Session 2026-04-14, ca. 00:35:01 – YouTube-Link: https://www.youtube.com/watch?v=1Jyu92P7_Fg  
+[P-45] Session 2026-03-31, ca. 01:35:40 – YouTube-Link: https://www.youtube.com/watch?v=Ee-K84wcxLM
+[P-48] Session 2026-04-14, ca. 00:35:01 – YouTube-Link: https://www.youtube.com/watch?v=1Jyu92P7_Fg
 [3] Transkript Session 2026-03-31, 01:34:18–01:37:09  
 [4] Transkript Session 2026-04-14, 00:33:31–00:35:47

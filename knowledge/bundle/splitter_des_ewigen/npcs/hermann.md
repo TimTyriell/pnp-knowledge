@@ -13,4 +13,4 @@ Barkeeper der ersten [Taverne](/locations/taverne.md) auf Sanddorn. Er verkauft 
 
 # Belege
 
-1. Session 2025-04-30 @ 00:43:12 (https://www.youtube.com/watch?v=fsCOiSkKKTE)
+[P-06] Session 2025-04-30 @ 00:43:12 (https://www.youtube.com/watch?v=fsCOiSkKKTE)

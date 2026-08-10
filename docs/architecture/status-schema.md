@@ -89,8 +89,13 @@ ki_bytes, anomalies: [...]}`.
 
 `actions[]` kinds: `harvest` (human edit pending re-ingest into the KB,
 `ref` = harvest file), `stub` (planned page not yet created, `ref` = wiki
-title), `edited` (KI region hand-edited, blocks re-merge, `ref` = page
-title), `anomaly` (`ref` = page title, `label` = anomaly type).
+title, `url` = direct link to the wiki's create-page editor for that title
+— clicking it opens `?action=edit` on the non-existing page), `edited` (KI
+region hand-edited, blocks re-merge, `ref` = page title), `anomaly`
+(`ref` = page title, `label` = anomaly type).
+
+`url` is optional on any action — only `stub` sets it today. The dashboard
+renders `label`/`ref` as a link when present, plain text otherwise.
 
 `history.jsonl` line: `{ts, pages_ki, pages_clean, pages_edited, uploaded,
 failed}`.

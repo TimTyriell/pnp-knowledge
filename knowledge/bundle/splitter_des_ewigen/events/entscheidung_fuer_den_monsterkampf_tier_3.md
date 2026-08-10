@@ -14,4 +14,4 @@ Nach intensiven Diskussionen und unter Berücksichtigung der Warnungen ([Lindo L
 
 # Belege
 
-1. Session 2025-10-14 @ 02:05:36 (https://www.youtube.com/watch?v=cUtz87UCHu4)
+[P-27] Session 2025-10-14 @ 02:05:36 (https://www.youtube.com/watch?v=cUtz87UCHu4)

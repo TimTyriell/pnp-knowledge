@@ -14,4 +14,4 @@ Ein Ring, der dem Träger einmal pro kurze Rast eine Teleportation über eine Re
 
 # Belege
 
-1. Session 2025-07-22 @ 02:37:52 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
+[P-15] Session 2025-07-22 @ 02:37:52 (https://www.youtube.com/watch?v=BRRCUgW4xRo)

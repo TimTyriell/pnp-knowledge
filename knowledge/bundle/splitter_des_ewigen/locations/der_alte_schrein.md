@@ -14,4 +14,4 @@ Ein uralter Tempel aus der Zeit der alten Götter, der heute nur noch als Denkma
 
 # Belege
 
-1. Session 2025-07-22 @ 02:47:26 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
+[P-15] Session 2025-07-22 @ 02:47:26 (https://www.youtube.com/watch?v=BRRCUgW4xRo)

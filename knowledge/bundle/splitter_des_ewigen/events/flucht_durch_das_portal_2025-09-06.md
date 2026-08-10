@@ -14,4 +14,4 @@ Die Helden springen durch ein von [Lindo Laut](/characters/lindo_laut.md) geöff
 
 # Belege
 
-1. Session 2025-09-06 @ 00:49:13 (https://www.youtube.com/watch?v=vo1xnyLQDJk)
+[P-21] Session 2025-09-06 @ 00:49:13 (https://www.youtube.com/watch?v=vo1xnyLQDJk)

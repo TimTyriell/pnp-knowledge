@@ -49,12 +49,12 @@ Esterossa vereint scheinbare Widersprüche: Er verhandelt charmant und diplomati
 
 ## Chronologie
 
-1. **Ankunft und erste Kämpfe** (Sessions 1–3): Esterossa erscheint als geflügelter Kämpfer mit Axt, der zu einem unbekannten Gott betet und durch ein Siegel heilt. Er erkennt eine Statue einer bösen Gottheit und vollzieht ein Blutopfer, das einen Feuerdämonen beschwört. Im Nahkampf zerschmettert er Skelette und stößt einen Goblin-Magier in den Tod.
-2. **Sprecher und Gelehrter** (Sessions 4–6): Er übernimmt immer mehr Sprecherrollen, freundet sich mit der Katze Ajani an und trickst Gefangene aus. Archäologisch identifiziert er den Heiligen Duran und dessen Artefakte. Beim Portal-Kampf verschießt er Blitzstrahlen, wird aber schwer getroffen und sinkt erschöpft auf dem Schiff zusammen.
-3. **Sumpf und Befreiung Nerashs** (Sessions 7–9): Im Sumpf betet er zu Korn um Abkühlung und setzt Frostmagie gegen eine Sumpfbestie ein. Er sammelt eine drogenartige Pflanze und erkennt am Schlangenschrein alte Götter. Mit einem düsteren Speer zerschlägt er die Ketten der gefesselten Nerash und befreit sie.
-4. **Taktiker und Turnierheld** (Sessions 10–22): Esterossa etabliert sich als Feldherr und Diplomat. Er rettet den Kapitän und Miaomani mit einem Gebet, heilt Kameraden und formt mit „Shape Material“ Steinwände, Brücken und Fluchttore. Beim Turnier von Jalan schlägt er Monsterkämpfe vor, erbeutet einen Werwolf-Kiefer und steigert durch präzise Magie seinen Ruhm. Die Gruppe erhält ein Anwesen, das er ausbaut.
-5. **Krise und Pilgerreise** (Sessions 23–31): Nach den Enthüllungen um Lindo Laut und Lunara hadert Esterossa mit den neuen Göttern und verlässt die Gruppe. Auf einer Pilgerreise sucht er Korn um Rat für Lindos Leiden und kehrt versöhnt zurück. Er schwört Lindo Laut öffentlich Treue und stellt sich hinter den Beschluss, nach Abyssalis zu ziehen.
-6. **Abyssalis und Opfer** (Sessions 32–39): In der Zwischenebene mahnt er zu unauffälligem Vorgehen, heilt Dodos Wunden und formt Deckung. Er befreit Tattrick von Vorgultars Kontrolle, indem er dessen Symbol mit heiliger Magie überbrennt und durch das Zeichen seines Gottes ersetzt. Im finalen Kampf durchtrennt er Vasuls Arm und zerstört den Kristall des Splitters – doch der Splitter korrumpiert ihn. Seine Flügel werden rot, er beginnt zu verblassen, kämpft aber weiter, bis er sich auflöst. Sein letzter Blick gehört Dodo, der verspricht, ihn ehrenvoll zu gedenken. Seine Waffe wird gerettet, seine Seele nicht.
+[P-02] **Ankunft und erste Kämpfe** (Sessions 1–3): Esterossa erscheint als geflügelter Kämpfer mit Axt, der zu einem unbekannten Gott betet und durch ein Siegel heilt. Er erkennt eine Statue einer bösen Gottheit und vollzieht ein Blutopfer, das einen Feuerdämonen beschwört. Im Nahkampf zerschmettert er Skelette und stößt einen Goblin-Magier in den Tod.
+[P-04] **Sprecher und Gelehrter** (Sessions 4–6): Er übernimmt immer mehr Sprecherrollen, freundet sich mit der Katze Ajani an und trickst Gefangene aus. Archäologisch identifiziert er den Heiligen Duran und dessen Artefakte. Beim Portal-Kampf verschießt er Blitzstrahlen, wird aber schwer getroffen und sinkt erschöpft auf dem Schiff zusammen.
+[P-05] **Sumpf und Befreiung Nerashs** (Sessions 7–9): Im Sumpf betet er zu Korn um Abkühlung und setzt Frostmagie gegen eine Sumpfbestie ein. Er sammelt eine drogenartige Pflanze und erkennt am Schlangenschrein alte Götter. Mit einem düsteren Speer zerschlägt er die Ketten der gefesselten Nerash und befreit sie.
+[P-06] **Taktiker und Turnierheld** (Sessions 10–22): Esterossa etabliert sich als Feldherr und Diplomat. Er rettet den Kapitän und Miaomani mit einem Gebet, heilt Kameraden und formt mit „Shape Material“ Steinwände, Brücken und Fluchttore. Beim Turnier von Jalan schlägt er Monsterkämpfe vor, erbeutet einen Werwolf-Kiefer und steigert durch präzise Magie seinen Ruhm. Die Gruppe erhält ein Anwesen, das er ausbaut.
+[P-07] **Krise und Pilgerreise** (Sessions 23–31): Nach den Enthüllungen um Lindo Laut und Lunara hadert Esterossa mit den neuen Göttern und verlässt die Gruppe. Auf einer Pilgerreise sucht er Korn um Rat für Lindos Leiden und kehrt versöhnt zurück. Er schwört Lindo Laut öffentlich Treue und stellt sich hinter den Beschluss, nach Abyssalis zu ziehen.
+[P-09] **Abyssalis und Opfer** (Sessions 32–39): In der Zwischenebene mahnt er zu unauffälligem Vorgehen, heilt Dodos Wunden und formt Deckung. Er befreit Tattrick von Vorgultars Kontrolle, indem er dessen Symbol mit heiliger Magie überbrennt und durch das Zeichen seines Gottes ersetzt. Im finalen Kampf durchtrennt er Vasuls Arm und zerstört den Kristall des Splitters – doch der Splitter korrumpiert ihn. Seine Flügel werden rot, er beginnt zu verblassen, kämpft aber weiter, bis er sich auflöst. Sein letzter Blick gehört Dodo, der verspricht, ihn ehrenvoll zu gedenken. Seine Waffe wird gerettet, seine Seele nicht.
 
 ## Offene Fragen
 
@@ -64,42 +64,42 @@ Esterossa vereint scheinbare Widersprüche: Er verhandelt charmant und diplomati
 
 ## Belege
 
-1. Session 2025-04-01 @ 00:08:25 (https://www.youtube.com/watch?v=LZIuUzc3F18)
-2. Session 2025-04-15 @ 01:12:39 (https://www.youtube.com/watch?v=YCpAz_syjaY)
-3. Session 2025-04-23 @ 00:54:34 (https://www.youtube.com/watch?v=z3C-bewKqUs)
-4. Session 2025-04-30 @ 00:10:23 (https://www.youtube.com/watch?v=fsCOiSkKKTE)
-5. Session 2025-05-06 @ 00:14:08 (https://www.youtube.com/watch?v=e0v6AFGd4mE)
-6. Session 2025-05-27 @ 00:55:27 (https://www.youtube.com/watch?v=bamCIB_CkR8)
-7. Session 2025-06-03 @ 00:03:20 (https://www.youtube.com/watch?v=jtYR4Je0a18)
-8. Session 2025-07-09 @ 00:31:41 (https://www.youtube.com/watch?v=XOnHa6CmDbo)
-9. Session 2025-07-22 @ 00:48:07 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
-10. Session 2025-07-29 @ 01:25:18 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
-11. Session 2025-08-12 @ 01:32:05 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)
-12. Session 2025-08-20 @ 00:53:51 (https://www.youtube.com/watch?v=-XbO3FLSL_I)
-13. Session 2025-09-02 @ 01:55:14 (https://www.youtube.com/watch?v=TLZOH7TlGhk)
-14. Session 2025-09-06 @ 00:08:19 (https://www.youtube.com/watch?v=vo1xnyLQDJk)
-15. Session 2025-09-09 @ 00:59:31 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
-16. Session 2025-09-17 @ 01:35:30 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
-17. Session 2025-09-23 @ 01:36:29 (https://www.youtube.com/watch?v=DGzfqVigS0g)
-18. Session 2025-09-30 @ 00:37:50 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
-19. Session 2025-10-07 @ 00:52:26 (https://www.youtube.com/watch?v=qVAF_54S8Vw)
-20. Session 2025-10-14 @ 00:24:12 (https://www.youtube.com/watch?v=cUtz87UCHu4)
-21. Session 2025-10-21 @ 00:05:01 (https://www.youtube.com/watch?v=sxFhbtwoefA)
-22. Session 2025-11-14 @ 00:02:44 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)
-23. Session 2025-11-18 @ 00:02:14 (https://www.youtube.com/watch?v=w__ahowb9p0)
-24. Session 2025-11-25 @ 00:18:36 (https://www.youtube.com/watch?v=wd5R4fJfngY)
-25. Session 2026-01-06 @ 02:00:56 (https://www.youtube.com/watch?v=VGw81seFvbo)
-26. Session 2026-01-13 @ 01:44:17 (https://www.youtube.com/watch?v=w4LB1s9_3rs)
-27. Session 2026-01-20 @ 01:26:04 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
-28. Session 2026-01-27 @ 01:13:34 (https://www.youtube.com/watch?v=9RzvnnWzV7E)
-29. Session 2026-02-11 @ 00:06:53 (https://www.youtube.com/watch?v=3C8SD-cyNPM)
-30. Session 2026-02-17 @ 00:04:13 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
-31. Session 2026-03-24 @ 01:09:20 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
-32. Session 2026-03-31 @ 00:14:07 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
-33. Session 2026-04-07 @ 00:39:33 (https://www.youtube.com/watch?v=MAuQPMNY548)
-34. Session 2026-05-06 @ 00:23:42 (https://www.youtube.com/watch?v=MB4quhDWsQE)
-35. Session 2026-05-13 @ 01:40:52 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
-36. Session 2026-05-19 @ 00:01:54 (https://www.youtube.com/watch?v=xEcGJeaNixI)
-37. Session 2026-06-10 @ 00:23:35 (https://www.youtube.com/watch?v=_3tLSiT1tck)
-38. Session 2026-06-16 @ 01:54:22 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
-39. Session 2026-07-21 @ 00:11:20 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
+[P-02] Session 2025-04-01 @ 00:08:25 (https://www.youtube.com/watch?v=LZIuUzc3F18)
+[P-04] Session 2025-04-15 @ 01:12:39 (https://www.youtube.com/watch?v=YCpAz_syjaY)
+[P-05] Session 2025-04-23 @ 00:54:34 (https://www.youtube.com/watch?v=z3C-bewKqUs)
+[P-06] Session 2025-04-30 @ 00:10:23 (https://www.youtube.com/watch?v=fsCOiSkKKTE)
+[P-07] Session 2025-05-06 @ 00:14:08 (https://www.youtube.com/watch?v=e0v6AFGd4mE)
+[P-09] Session 2025-05-27 @ 00:55:27 (https://www.youtube.com/watch?v=bamCIB_CkR8)
+[P-10] Session 2025-06-03 @ 00:03:20 (https://www.youtube.com/watch?v=jtYR4Je0a18)
+[P-14] Session 2025-07-09 @ 00:31:41 (https://www.youtube.com/watch?v=XOnHa6CmDbo)
+[P-15] Session 2025-07-22 @ 00:48:07 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
+[P-16] Session 2025-07-29 @ 01:25:18 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
+[P-18] Session 2025-08-12 @ 01:32:05 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)
+[P-19] Session 2025-08-20 @ 00:53:51 (https://www.youtube.com/watch?v=-XbO3FLSL_I)
+[P-20] Session 2025-09-02 @ 01:55:14 (https://www.youtube.com/watch?v=TLZOH7TlGhk)
+[P-21] Session 2025-09-06 @ 00:08:19 (https://www.youtube.com/watch?v=vo1xnyLQDJk)
+[P-22] Session 2025-09-09 @ 00:59:31 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
+[P-23] Session 2025-09-17 @ 01:35:30 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
+[P-24] Session 2025-09-23 @ 01:36:29 (https://www.youtube.com/watch?v=DGzfqVigS0g)
+[P-25] Session 2025-09-30 @ 00:37:50 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[P-26] Session 2025-10-07 @ 00:52:26 (https://www.youtube.com/watch?v=qVAF_54S8Vw)
+[P-27] Session 2025-10-14 @ 00:24:12 (https://www.youtube.com/watch?v=cUtz87UCHu4)
+[P-28] Session 2025-10-21 @ 00:05:01 (https://www.youtube.com/watch?v=sxFhbtwoefA)
+[P-30] Session 2025-11-14 @ 00:02:44 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)
+[P-31] Session 2025-11-18 @ 00:02:14 (https://www.youtube.com/watch?v=w__ahowb9p0)
+[P-32] Session 2025-11-25 @ 00:18:36 (https://www.youtube.com/watch?v=wd5R4fJfngY)
+[P-33] Session 2026-01-06 @ 02:00:56 (https://www.youtube.com/watch?v=VGw81seFvbo)
+[P-34] Session 2026-01-13 @ 01:44:17 (https://www.youtube.com/watch?v=w4LB1s9_3rs)
+[P-35] Session 2026-01-20 @ 01:26:04 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
+[P-36] Session 2026-01-27 @ 01:13:34 (https://www.youtube.com/watch?v=9RzvnnWzV7E)
+[P-37] Session 2026-02-11 @ 00:06:53 (https://www.youtube.com/watch?v=3C8SD-cyNPM)
+[P-38] Session 2026-02-17 @ 00:04:13 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
+[P-44] Session 2026-03-24 @ 01:09:20 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
+[P-45] Session 2026-03-31 @ 00:14:07 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
+[P-46] Session 2026-04-07 @ 00:39:33 (https://www.youtube.com/watch?v=MAuQPMNY548)
+[P-49] Session 2026-05-06 @ 00:23:42 (https://www.youtube.com/watch?v=MB4quhDWsQE)
+[P-50] Session 2026-05-13 @ 01:40:52 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
+[P-51] Session 2026-05-19 @ 00:01:54 (https://www.youtube.com/watch?v=xEcGJeaNixI)
+[P-54] Session 2026-06-10 @ 00:23:35 (https://www.youtube.com/watch?v=_3tLSiT1tck)
+[P-55] Session 2026-06-16 @ 01:54:22 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
+[P-57] Session 2026-07-21 @ 00:11:20 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)

@@ -14,4 +14,4 @@ Zwei Dolche, die Xerxes im Nahkampf benutzt. Er verbindet einen mit einem Seil f
 
 # Belege
 
-1. Session 2026-04-09 @ 00:15:47 (https://www.youtube.com/watch?v=vcGkejr8_nI)
+[P-47] Session 2026-04-09 @ 00:15:47 (https://www.youtube.com/watch?v=vcGkejr8_nI)

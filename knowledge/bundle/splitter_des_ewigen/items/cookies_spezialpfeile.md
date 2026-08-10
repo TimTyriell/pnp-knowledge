@@ -14,4 +14,4 @@ subtype: Waffe
 
 # Belege
 
-1. Session 2025-10-21 @ 00:35:48 (https://www.youtube.com/watch?v=sxFhbtwoefA)
+[P-28] Session 2025-10-21 @ 00:35:48 (https://www.youtube.com/watch?v=sxFhbtwoefA)

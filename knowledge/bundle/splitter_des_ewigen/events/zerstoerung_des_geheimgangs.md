@@ -14,4 +14,4 @@ Die Gruppe benutzt das von den Dorfbewohnern erhaltene Holz und Brumas Elementar
 
 # Belege
 
-1. Session 2026-07-23 @ 02:01:26 (https://www.youtube.com/watch?v=Gb-TEbCFF0M)
+[S1-02-B] Session 2026-07-23 @ 02:01:26 (https://www.youtube.com/watch?v=Gb-TEbCFF0M)

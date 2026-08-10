@@ -13,4 +13,4 @@ Die beiden brutalen Wachen und Henker im Dienst von [Joar Vanur](/npcs/joar_vanu
 
 # Belege
 
-1. Session 2025-04-30 @ 01:12:28 (https://www.youtube.com/watch?v=fsCOiSkKKTE)
+[P-06] Session 2025-04-30 @ 01:12:28 (https://www.youtube.com/watch?v=fsCOiSkKKTE)

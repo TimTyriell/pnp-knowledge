@@ -14,4 +14,4 @@ Ein Lager mit mindestens 100 Gnoll-Einheiten, das Bruma zuvor ausspioniert hat. 
 
 # Belege
 
-1. Session 2026-07-23 @ 01:59:14 (https://www.youtube.com/watch?v=Gb-TEbCFF0M)
+[S1-02-B] Session 2026-07-23 @ 01:59:14 (https://www.youtube.com/watch?v=Gb-TEbCFF0M)

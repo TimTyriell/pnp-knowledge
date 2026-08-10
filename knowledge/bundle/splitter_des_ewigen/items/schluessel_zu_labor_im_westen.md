@@ -14,4 +14,4 @@ Ein kleiner Schlüssel in einer Schatulle, den [Baran](/npcs/baran.md) der Grupp
 
 # Belege
 
-1. Session 2025-04-30 @ 01:53:09 (https://www.youtube.com/watch?v=fsCOiSkKKTE)
+[P-06] Session 2025-04-30 @ 01:53:09 (https://www.youtube.com/watch?v=fsCOiSkKKTE)

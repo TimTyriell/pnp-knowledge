@@ -14,4 +14,4 @@ Ein pulsierender, unwirklich anmutender Haufen aus grünen Kristallen, Pilzen un
 
 # Belege
 
-1. Session 2025-10-07 @ 00:22:07 (https://www.youtube.com/watch?v=qVAF_54S8Vw)
+[P-26] Session 2025-10-07 @ 00:22:07 (https://www.youtube.com/watch?v=qVAF_54S8Vw)

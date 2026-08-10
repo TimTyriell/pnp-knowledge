@@ -15,4 +15,4 @@ Ein Lager für Waren und Nahrung, in das [Otis](/characters/otis.md) die gerette
 
 # Belege
 
-1. Session 2026-04-09 @ 00:34:33 (https://www.youtube.com/watch?v=vcGkejr8_nI)
+[P-47] Session 2026-04-09 @ 00:34:33 (https://www.youtube.com/watch?v=vcGkejr8_nI)

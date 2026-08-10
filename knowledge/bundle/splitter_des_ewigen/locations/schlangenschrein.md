@@ -14,4 +14,4 @@ Eine magische Stätte im [Sumpf](/locations/sumpf_der_sumpfhexe.md) nordöstlich
 
 # Belege
 
-1. Session 2025-06-03 @ 01:35:40 (https://www.youtube.com/watch?v=jtYR4Je0a18)
+[P-10] Session 2025-06-03 @ 01:35:40 (https://www.youtube.com/watch?v=jtYR4Je0a18)

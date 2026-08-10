@@ -13,4 +13,4 @@ Ein alter Mann, der mit [Talron](/npcs/talron.md) über die Bedrohung durch die 
 
 # Belege
 
-1. Session 2026-08-06 @ 01:15:45 (https://www.youtube.com/watch?v=0HyPHao8s_k)
+[S1-03-B] Session 2026-08-06 @ 01:15:45 (https://www.youtube.com/watch?v=0HyPHao8s_k)

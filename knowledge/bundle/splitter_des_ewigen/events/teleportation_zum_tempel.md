@@ -14,4 +14,4 @@ Auf [Tattricks](/npcs/tattrick.md) Drängen spricht [Lindo Laut](/characters/lin
 
 # Belege
 
-1. Session 2026-06-16 @ 01:31:28 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
+[P-55] Session 2026-06-16 @ 01:31:28 (https://www.youtube.com/watch?v=qe0ck8hvYpk)

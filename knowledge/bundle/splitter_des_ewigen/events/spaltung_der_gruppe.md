@@ -14,4 +14,4 @@ Die Gruppe trennt sich: [Dante](/characters/dante.md), Kip und [der Richter](/np
 
 # Belege
 
-1. Session 2026-05-13 @ 01:39:19 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
+[P-50] Session 2026-05-13 @ 01:39:19 (https://www.youtube.com/watch?v=4afPD9Q_5AY)

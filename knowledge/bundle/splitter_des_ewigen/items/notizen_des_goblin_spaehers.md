@@ -14,4 +14,4 @@ Der tote Goblin-Späher trägt handschriftliche Notizen mit Kritzeleien möglich
 
 # Belege
 
-1. Session 2025-04-09 @ 01:26:22 (https://www.youtube.com/watch?v=1PWdwvun5ow)
+[P-03] Session 2025-04-09 @ 01:26:22 (https://www.youtube.com/watch?v=1PWdwvun5ow)

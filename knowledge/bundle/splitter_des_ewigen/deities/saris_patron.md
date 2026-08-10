@@ -22,4 +22,4 @@ Die Entität scheint mit Blutmagie und düsteren Vorzeichen verbunden zu sein. W
 
 # Belege
 
-1. Session 2026-07-23 @ 01:48:17 – https://www.youtube.com/watch?v=Gb-TEbCFF0M
+[S1-02-B] Session 2026-07-23 @ 01:48:17 – https://www.youtube.com/watch?v=Gb-TEbCFF0M

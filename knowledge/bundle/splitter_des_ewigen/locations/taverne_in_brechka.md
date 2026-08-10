@@ -14,4 +14,4 @@ Die Dorfschenke, geführt vom Wirt [Hubert](/npcs/hubert.md). Hier treffen sich 
 
 # Belege
 
-1. Session 2025-04-09 @ 00:43:15 (https://www.youtube.com/watch?v=1PWdwvun5ow)
+[P-03] Session 2025-04-09 @ 00:43:15 (https://www.youtube.com/watch?v=1PWdwvun5ow)

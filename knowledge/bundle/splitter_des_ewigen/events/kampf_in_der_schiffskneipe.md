@@ -14,4 +14,4 @@ subtype: Kampf
 
 # Belege
 
-1. Session 2026-03-18 @ 01:21:00 (https://www.youtube.com/watch?v=HHXxsASLrbQ)
+[P-42] Session 2026-03-18 @ 01:21:00 (https://www.youtube.com/watch?v=HHXxsASLrbQ)

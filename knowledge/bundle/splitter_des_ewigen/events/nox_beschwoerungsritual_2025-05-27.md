@@ -14,4 +14,4 @@ Nox öffnet mit einem Stab und gemurmelten Formeln den Rift, woraufhin eine Sogw
 
 # Belege
 
-1. Session 2025-05-27 @ 00:43:00 (https://www.youtube.com/watch?v=bamCIB_CkR8)
+[P-09] Session 2025-05-27 @ 00:43:00 (https://www.youtube.com/watch?v=bamCIB_CkR8)

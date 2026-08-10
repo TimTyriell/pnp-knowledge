@@ -13,4 +13,4 @@ Hubert ist der Wirt der Dorfschenke. Er serviert [Valeria](/characters/valeria.m
 
 # Belege
 
-1. Session 2025-04-09 @ 00:46:13 (https://www.youtube.com/watch?v=1PWdwvun5ow)
+[P-03] Session 2025-04-09 @ 00:46:13 (https://www.youtube.com/watch?v=1PWdwvun5ow)

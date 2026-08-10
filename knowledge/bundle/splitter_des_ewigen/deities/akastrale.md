@@ -56,6 +56,6 @@ In der ersten Session (2026-03-31) ließ die Spielleitung den Chat über die ver
 
 ## Belege
 
-1. Session 2026-03-31, 01:18:12 – *„Akastrale, der dunkle Hunger, ist die stärkste und wahnsinnigste der vier alten Götter. Ihr Diener, der Klojin, wird in den Erntefeldern gesichtet, und die Gruppe will eine Begegnung mit ihr unbedingt vermeiden.“* (https://www.youtube.com/watch?v=Ee-K84wcxLM)
+[P-45] Session 2026-03-31, 01:18:12 – *„Akastrale, der dunkle Hunger, ist die stärkste und wahnsinnigste der vier alten Götter. Ihr Diener, der Klojin, wird in den Erntefeldern gesichtet, und die Gruppe will eine Begegnung mit ihr unbedingt vermeiden.“* (https://www.youtube.com/watch?v=Ee-K84wcxLM)
 2. Zusätzliche Quelle: *Bekannte_Pantheon_der_Goetter.md* – Eintrag „Akastrale, der dunkle Hunger“ mit Domänen, Symbol, Anhängern, Opfergaben, Geboten und Beschreibung.
 3. Zusätzliche Quelle: *Kanon_Entscheidungen.md* – ENTSCHEIDUNG: Akastrale ist eine weibliche alte Gottheit. Hinweis zur Darstellung: nur knapper Entwurf des aktuellen Kenntnisstands, keine Spekulation.

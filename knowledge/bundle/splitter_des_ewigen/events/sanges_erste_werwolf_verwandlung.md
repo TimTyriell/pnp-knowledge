@@ -14,4 +14,4 @@ Ausgelöst durch Stress und die Kampfhitze verwandelt sich [Sange](/characters/s
 
 # Belege
 
-1. Session 2026-07-23 @ 01:35:06 (https://www.youtube.com/watch?v=Gb-TEbCFF0M)
+[S1-02-B] Session 2026-07-23 @ 01:35:06 (https://www.youtube.com/watch?v=Gb-TEbCFF0M)

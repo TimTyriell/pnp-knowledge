@@ -14,4 +14,4 @@ Die Gruppe verbringt viele Stunden in der Bibliothek und sammelt Informationen Ã
 
 # Belege
 
-1. Session 2026-03-03 @ 01:31:02 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
+[P-40] Session 2026-03-03 @ 01:31:02 (https://www.youtube.com/watch?v=BRUNuNKTeOg)

@@ -14,4 +14,4 @@ Ein Sumpfgebiet, in das die [Goblins](/factions/goblins.md) und Gnolle vor etwa 
 
 # Belege
 
-1. Session 2026-07-10 @ 00:11:03 (https://www.youtube.com/watch?v=H-eHSlfxUAg)
+[S1-01-B] Session 2026-07-10 @ 00:11:03 (https://www.youtube.com/watch?v=H-eHSlfxUAg)

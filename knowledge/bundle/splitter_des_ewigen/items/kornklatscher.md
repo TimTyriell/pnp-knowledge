@@ -14,4 +14,4 @@ Ein starkes alkoholisches Getränk, das von [Goblins](/factions/goblins.md) gebr
 
 # Belege
 
-1. Session 2025-11-18 @ 00:26:56 (https://www.youtube.com/watch?v=w__ahowb9p0)
+[P-31] Session 2025-11-18 @ 00:26:56 (https://www.youtube.com/watch?v=w__ahowb9p0)

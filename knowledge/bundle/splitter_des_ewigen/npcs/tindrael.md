@@ -38,15 +38,15 @@ Tindrael fungiert als wiederkehrender Verbündeter, dessen Schicksal eng mit dem
 
 ## Chronologie
 
-1. **2025-04-09 – Brechka (Session 1)**  
+[P-03] **2025-04-09 – Brechka (Session 1)**
    Die Helden werden von einer Wache an Tindrael verwiesen, um Zutritt zum Bürgermeister zu erhalten. Auf Nachfrage erklärt die Wache: *„Tindrael ist der Grabwächter. Er ist ein Geistlicher, er hat hier einiges zu sagen.“* Valeria kommentiert: *„Bruder Tindrael.“*  
    Auf dem Friedhof treffen sie Tindrael, der von einer großen Ziege begleitet wird. Valeria zähmt Bertie mühelos. Tindrael glaubt der Warnung vor einer Bedrohung sofort, bringt die Gruppe zu Berthold und hilft, die Verteidigungsmaßnahmen zu koordinieren. Er bleibt über die ganze Session ein verlässlicher Unterstützer.
 
-2. **2025-06-25 – Grafensitz (Session 2)**  
+[P-13] **2025-06-25 – Grafensitz (Session 2)**
    Der Ort wird nun als Stadt beschrieben. Tindrael will die Helden begrüßen, wird aber vom Grafen unterbrochen: *„Willkommen, willkommen. Es freut mich, dass ihr eure Reise wieder bei mir aufgeschlagen habt. Was verschafft mir die Ehre meiner Retter?“*  
    Tindrael, jetzt Adjutant des Grafen (auch „Tindra“ genannt), begleitet die Helden in eine Bibliothek und warnt sie eindringlich, nichts mitzunehmen. Nach einem späteren, nicht näher beschriebenen Desaster wirkt er ratlos, befolgt jedoch die Anweisungen seines Herrn.
 
-3. **2026-03-10 – Gruft des Voras (Session 3)**  
+[P-41] **2026-03-10 – Gruft des Voras (Session 3)**
    In der Unterwelt begegnet ein vertrautes Gesicht: *„Mein Name ist Tindrael. Ich war einst die rechte Hand vom Bürgermeister. Nun, den gibt es nicht mehr. Abgeschlachtet und ermordet. Ihr wollt zu Woras. Das ist richtig. Folgt mir.“*  
    Er empfängt Dodo respektvoll, kondoliert zum Tod von Cookie und fragt nach Lindo Laut und den anderen. *„Cookie musste leider ihr Leben geben.“* – *„Ach, das ist aber bedauerlich. Wahrhaftig bedauerlich.“*  
    Nur er und Kerl überlebten den Überfall. Tindrael führt Dodo zu Voras mit den Worten: *„Mein Lord, Dodo ist nun da.“*
@@ -61,6 +61,6 @@ Tindrael fungiert als wiederkehrender Verbündeter, dessen Schicksal eng mit dem
 
 ## Belege
 
-[1] Session 2025-04-09 @ 00:20:30 (https://www.youtube.com/watch?v=1PWdwvun5ow)  
-[2] Session 2025-06-25 @ 00:24:24 (https://www.youtube.com/watch?v=tpkO9uGw6-I)  
-[3] Session 2026-03-10 @ 00:40:29 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
+[P-03] Session 2025-04-09 @ 00:20:30 (https://www.youtube.com/watch?v=1PWdwvun5ow)
+[P-13] Session 2025-06-25 @ 00:24:24 (https://www.youtube.com/watch?v=tpkO9uGw6-I)
+[P-41] Session 2026-03-10 @ 00:40:29 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)

@@ -27,6 +27,6 @@ Die Toteme besitzen nachweislich heilende Eigenschaften: [Lindo](/characters/lin
 
 # Belege
 
-1. Session 2025-07-09 @ 01:26:30 – [Kleine weiße Statuen, die Nerash ähneln. Verteilung durch den Gildenmeister.](https://www.youtube.com/watch?v=XOnHa6CmDbo)
-2. Session 2025-07-22 @ 01:49:25 – [Lindo heilt Cookie mit dem Totem und kanalisiert unbekannte Kräfte.](https://www.youtube.com/watch?v=BRRCUgW4xRo)
-3. Session 2025-09-02 @ 01:55:14 – [Totem zur Kontaktaufnahme mit Nerash in einer Kapelle geplant.](https://www.youtube.com/watch?v=TLZOH7TlGhk)
+[P-14] Session 2025-07-09 @ 01:26:30 – [Kleine weiße Statuen, die Nerash ähneln. Verteilung durch den Gildenmeister.](https://www.youtube.com/watch?v=XOnHa6CmDbo)
+[P-15] Session 2025-07-22 @ 01:49:25 – [Lindo heilt Cookie mit dem Totem und kanalisiert unbekannte Kräfte.](https://www.youtube.com/watch?v=BRRCUgW4xRo)
+[P-20] Session 2025-09-02 @ 01:55:14 – [Totem zur Kontaktaufnahme mit Nerash in einer Kapelle geplant.](https://www.youtube.com/watch?v=TLZOH7TlGhk)

@@ -14,4 +14,4 @@ Ein kleiner Splitter, den [Vasul](/deities/vharzul.md) in der Hand hält, erscha
 
 # Belege
 
-1. Session 2026-06-16 @ 01:17:20 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
+[P-55] Session 2026-06-16 @ 01:17:20 (https://www.youtube.com/watch?v=qe0ck8hvYpk)

@@ -22,4 +22,4 @@ Die Einheit ist dezimiert, ihre Ausrüstung ramponiert: Die Rüstungen weisen de
 
 # Belege
 
-1. Session 2026-08-06 @ 00:06:36 (https://www.youtube.com/watch?v=0HyPHao8s_k)
+[S1-03-B] Session 2026-08-06 @ 00:06:36 (https://www.youtube.com/watch?v=0HyPHao8s_k)

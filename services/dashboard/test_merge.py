@@ -87,6 +87,34 @@ def test_funnel_session_only_on_one_side_still_shown():
     assert rows2[0]["in_bundle"] is True
 
 
+def test_funnel_attaches_episode_by_video_id():
+    crawl = {"items": [
+        {"video_id": "abc123", "video_date": "2026-01-01", "stem": "s", "downloaded": True},
+        {"video_id": "unknown", "video_date": "2026-01-02", "stem": "s2", "downloaded": True},
+    ]}
+    episodes = merge.episodes_by_video(
+        {"episodes": [{"video_id": "abc123", "id": "S1-01-A", "title": "Funken"}]}
+    )
+    rows = {r["video_id"]: r for r in merge.build_funnel(crawl, {}, episodes)}
+    assert rows["abc123"]["episode"] == "S1-01-A"
+    assert rows["abc123"]["episode_title"] == "Funken"
+    # An episode nobody listed yet must not break the row.
+    assert rows["unknown"]["episode"] is None
+
+
+def test_load_episodes_missing_and_int_season_key():
+    result = merge.load_episodes(Path("does/not/exist/episodes.yaml"))
+    assert result["episodes"] == [] and result["error"]
+
+    scratch = Path(__file__).parent / "_test_scratch"
+    scratch.mkdir(exist_ok=True)
+    path = scratch / "episodes.yaml"
+    # Season 1 unquoted: YAML hands back an int, the episode says "1".
+    path.write_text("seasons:\n  1:\n    label: Staffel 1\nepisodes: []\n", encoding="utf-8")
+    assert list(merge.load_episodes(path)["seasons"]) == ["1"]
+    path.unlink()
+
+
 def test_inbox_concatenates_and_tags_service():
     crawl = {"actions": [{"kind": "unresolved_speaker", "label": "SPEAKER_02", "ref": "s1"}]}
     kb = {"actions": [{"kind": "conflict", "label": "X", "ref": "c1.md"}]}

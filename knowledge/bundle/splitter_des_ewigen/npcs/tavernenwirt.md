@@ -13,4 +13,4 @@ Ein Troggal (orkähnliches Wesen), der die [Taverne](/locations/taverne.md) füh
 
 # Belege
 
-1. Session 2025-07-22 @ 01:04:29 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
+[P-15] Session 2025-07-22 @ 01:04:29 (https://www.youtube.com/watch?v=BRRCUgW4xRo)

@@ -14,4 +14,4 @@ Nach dem Kampf entscheidet die Mehrheit der Gruppe, [Floran](/npcs/floran.md) un
 
 # Belege
 
-1. Session 2026-03-23 @ 03:09:28 (https://www.youtube.com/watch?v=niVxKtdQBn0)
+[P-43] Session 2026-03-23 @ 03:09:28 (https://www.youtube.com/watch?v=niVxKtdQBn0)

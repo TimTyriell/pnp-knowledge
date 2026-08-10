@@ -30,7 +30,7 @@ Zunächst wird Kleinringtal als Ziel der Karawanen erwähnt. Später, als Flüch
 
 # Belege
 
-1. Session 2026-06-04 @ 00:03:50 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
-2. Session 2026-06-04 @ 00:40:14 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
-3. Session 2026-08-06 @ 01:04:05 (https://www.youtube.com/watch?v=0HyPHao8s_k)
-4. Session 2026-08-06 @ 00:06:36 (https://www.youtube.com/watch?v=0HyPHao8s_k)
+[P-53a] Session 2026-06-04 @ 00:03:50 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
+[P-53b] Session 2026-06-04 @ 00:40:14 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
+[S1-03-Ba] Session 2026-08-06 @ 01:04:05 (https://www.youtube.com/watch?v=0HyPHao8s_k)
+[S1-03-Bb] Session 2026-08-06 @ 00:06:36 (https://www.youtube.com/watch?v=0HyPHao8s_k)

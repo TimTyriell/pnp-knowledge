@@ -22,4 +22,4 @@ Jorah erhört Sanges Hilferuf. Statt die Lage unmittelbar zu verändern, schenkt
 
 # Belege
 
-1. Session 2026-07-23, 01:55:28 – https://www.youtube.com/watch?v=Gb-TEbCFF0M
+[S1-02-B] Session 2026-07-23, 01:55:28 – https://www.youtube.com/watch?v=Gb-TEbCFF0M

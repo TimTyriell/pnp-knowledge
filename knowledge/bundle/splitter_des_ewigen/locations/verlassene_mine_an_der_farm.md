@@ -16,4 +16,4 @@ Eine aufgegebene [Mine](/locations/kristallmine.md) im Norden der Farm, laut den
 
 # Belege
 
-1. Session 2026-07-10 @ 01:53:20 (https://www.youtube.com/watch?v=H-eHSlfxUAg)
+[S1-01-B] Session 2026-07-10 @ 01:53:20 (https://www.youtube.com/watch?v=H-eHSlfxUAg)

@@ -14,4 +14,4 @@ Ein Schlüssel mit einem Totenkopf als Griff, gefunden bei den Goblin-Hinterlass
 
 # Belege
 
-1. Session 2026-07-23 @ 00:37:44 (https://www.youtube.com/watch?v=Gb-TEbCFF0M)
+[S1-02-B] Session 2026-07-23 @ 00:37:44 (https://www.youtube.com/watch?v=Gb-TEbCFF0M)

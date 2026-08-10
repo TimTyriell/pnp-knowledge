@@ -14,4 +14,4 @@ Ein magischer Gegenstand, den Lunara aus der Notiz von [Tyrex](/deities/thyrex.m
 
 # Belege
 
-1. Session 2026-03-24 @ 01:51:12 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
+[P-44] Session 2026-03-24 @ 01:51:12 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)

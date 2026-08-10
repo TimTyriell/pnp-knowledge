@@ -35,7 +35,7 @@ Die Statue und die nahegelegene Gilde dienten der Gruppe jedoch als erste Orient
 
 ## Chronologie
 
-- **Session vom 18. März 2026 ([1]):** Brim entdeckt auf dem Marktplatz von Tiefwasser die Statue des Coram Schildbrecher. Ein erfolgreicher Knowledge-Wurf (23) offenbart, dass es sich um einen der neuen Götter handelt, der für Heldenschaft, Zusammenhalt und Gemeinschaft steht, und dass seine Anhängerschaft verschiedenen Völkern offensteht. Im Anschluss wird die nahegelegene Gilde des Schildes als mögliche Anlaufstelle für die Gruppe identifiziert.
+- **Session vom 18. März 2026 ([P-42]):** Brim entdeckt auf dem Marktplatz von Tiefwasser die Statue des Coram Schildbrecher. Ein erfolgreicher Knowledge-Wurf (23) offenbart, dass es sich um einen der neuen Götter handelt, der für Heldenschaft, Zusammenhalt und Gemeinschaft steht, und dass seine Anhängerschaft verschiedenen Völkern offensteht. Im Anschluss wird die nahegelegene Gilde des Schildes als mögliche Anlaufstelle für die Gruppe identifiziert.
 
 ## Offene Fragen
 
@@ -47,4 +47,4 @@ Die Statue und die nahegelegene Gilde dienten der Gruppe jedoch als erste Orient
 
 ## Belege
 
-[1] Session vom 18. März 2026, ab 00:25:14, https://www.youtube.com/watch?v=HHXxsASLrbQ
+[P-42] Session vom 18. März 2026, ab 00:25:14, https://www.youtube.com/watch?v=HHXxsASLrbQ

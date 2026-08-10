@@ -21,5 +21,5 @@ Der Circle Below ist die unterste der drei genannten kosmologischen Ebenen. Übe
 
 # Belege
 
-1. Session 2025-09-06 @ 00:09:10 (https://www.youtube.com/watch?v=vo1xnyLQDJk)  
-2. Session 2025-09-30 @ 01:50:02 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[P-21] Session 2025-09-06 @ 00:09:10 (https://www.youtube.com/watch?v=vo1xnyLQDJk)
+[P-25] Session 2025-09-30 @ 01:50:02 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)

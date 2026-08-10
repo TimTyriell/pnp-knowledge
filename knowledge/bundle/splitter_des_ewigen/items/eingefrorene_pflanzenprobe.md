@@ -14,4 +14,4 @@ Ein kleines Stück der Gas absondernden Pflanze, das von [Nyrella](/characters/n
 
 # Belege
 
-1. Session 2026-02-11 @ 01:17:41 (https://www.youtube.com/watch?v=3C8SD-cyNPM)
+[P-37] Session 2026-02-11 @ 01:17:41 (https://www.youtube.com/watch?v=3C8SD-cyNPM)

@@ -14,4 +14,4 @@ Eine Gruppe von Kultisten, die in der Narbe einen Kristall mit Chants und Formel
 
 # Belege
 
-1. Session 2026-06-10 @ 00:34:06 (https://www.youtube.com/watch?v=_3tLSiT1tck)
+[P-54] Session 2026-06-10 @ 00:34:06 (https://www.youtube.com/watch?v=_3tLSiT1tck)

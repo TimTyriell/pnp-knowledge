@@ -14,4 +14,4 @@ Zebras ist eine Bergfestung, in der [Dodo](/characters/dodo.md) und [Cookie](/ch
 
 # Belege
 
-1. Session 2026-01-13 @ 01:37:13 (https://www.youtube.com/watch?v=w4LB1s9_3rs)
+[P-34] Session 2026-01-13 @ 01:37:13 (https://www.youtube.com/watch?v=w4LB1s9_3rs)

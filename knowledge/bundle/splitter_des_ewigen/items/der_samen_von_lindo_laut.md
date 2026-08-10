@@ -14,4 +14,4 @@ Lunara erhielt von [Lindo Laut](/characters/lindo_laut.md) einen Samen, der an e
 
 # Belege
 
-1. Session 2026-01-13 @ 00:47:14 (https://www.youtube.com/watch?v=w4LB1s9_3rs)
+[P-34] Session 2026-01-13 @ 00:47:14 (https://www.youtube.com/watch?v=w4LB1s9_3rs)

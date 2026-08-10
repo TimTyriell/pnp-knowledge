@@ -77,5 +77,5 @@ Beteiligung des Gottes am Spielgeschehen ist bislang nicht erfolgt.
 
 ## Belege
 
-[1] Session 2025-05-14 @ 00:51:28 (https://www.youtube.com/watch?v=5eAEDN5ra-4)  
+[P-08] Session 2025-05-14 @ 00:51:28 (https://www.youtube.com/watch?v=5eAEDN5ra-4)
 [2] Session 2025-05-14 @ 00:50:00–00:52:50 (Transkript-Ausschnitt)

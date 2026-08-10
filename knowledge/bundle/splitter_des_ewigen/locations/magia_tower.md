@@ -14,4 +14,4 @@ Das Schloss des Magiers, auch Magia Tower genannt, liegt am [Ende](/locations/en
 
 # Belege
 
-1. Session 2026-02-17 @ 01:40:37 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
+[P-38] Session 2026-02-17 @ 01:40:37 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)

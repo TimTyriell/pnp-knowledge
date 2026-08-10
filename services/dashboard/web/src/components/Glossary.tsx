@@ -34,9 +34,39 @@ function stagedDeletes(edits: Edit[], cid: string): Extract<Edit, { op: "delete_
   return edits.filter((e): e is Extract<Edit, { op: "delete_alias" }> => e.op === "delete_alias" && e.concept_id === cid);
 }
 
+function stagedUnpin(edits: Edit[], cid: string): boolean {
+  return edits.some((e) => e.op === "unpin" && e.concept_id === cid);
+}
+
+function stagedImportant(edits: Edit[], cid: string): boolean | undefined {
+  for (let i = edits.length - 1; i >= 0; i--) {
+    const e = edits[i];
+    if (e.op === "set_important" && e.concept_id === cid) return e.important;
+  }
+  return undefined;
+}
+
 function stageRename(edits: Edit[], cid: string, name: string): Edit[] {
-  const rest = edits.filter((e) => !(e.op === "rename" && e.concept_id === cid));
+  // A new name replaces any staged unpin — renaming always (re)creates a pin.
+  const rest = edits.filter((e) => !((e.op === "rename" || e.op === "unpin") && e.concept_id === cid));
   return [...rest, { op: "rename", concept_id: cid, name }];
+}
+
+function stageUnpin(edits: Edit[], cid: string): Edit[] {
+  const rest = edits.filter((e) => !((e.op === "rename" || e.op === "unpin") && e.concept_id === cid));
+  return [...rest, { op: "unpin", concept_id: cid }];
+}
+
+function unstageUnpin(edits: Edit[], cid: string): Edit[] {
+  return edits.filter((e) => !(e.op === "unpin" && e.concept_id === cid));
+}
+
+function stageImportant(edits: Edit[], cid: string, important: boolean, original: boolean): Edit[] {
+  const rest = edits.filter((e) => !(e.op === "set_important" && e.concept_id === cid));
+  // Toggling back to the value it already had is a no-op — drop the edit
+  // instead of staging a change that would produce an empty diff.
+  if (important === original) return rest;
+  return [...rest, { op: "set_important", concept_id: cid, important }];
 }
 
 function stageAddAlias(edits: Edit[], cid: string, alias: string): Edit[] {
@@ -118,6 +148,19 @@ export function Glossary() {
     setEdits((eds) => stageAddAlias(eds, cid, alias));
   }
 
+  function handleTogglePin(cid: string, currentlyPinned: boolean, isStagedUnpin: boolean) {
+    if (isStagedUnpin) {
+      setEdits((eds) => unstageUnpin(eds, cid));
+      return;
+    }
+    if (!currentlyPinned) return;
+    setEdits((eds) => stageUnpin(eds, cid));
+  }
+
+  function handleToggleImportant(cid: string, effective: boolean, original: boolean) {
+    setEdits((eds) => stageImportant(eds, cid, !effective, original));
+  }
+
   async function handlePreview() {
     setSyncError(null);
     setBusy(true);
@@ -197,6 +240,39 @@ export function Glossary() {
         </button>
       </div>
 
+      <details className="glossary-legend">
+        <summary>
+          Was bedeuten <span className="badge glossary-toggle">Pin</span> und <span className="badge glossary-toggle">★</span>?
+        </summary>
+        <dl>
+          <dt>
+            <span className="badge glossary-toggle">Pin</span>
+          </dt>
+          <dd>
+            Der Anzeigename dieser Entität ist fest in <code>canonical_name:</code> (in <code>entity_rules.yaml</code>) hinterlegt. Ohne
+            Pin nimmt die Pipeline bei jedem Lauf einfach die Schreibweise, die zuerst in einem Transkript auftaucht — eine Korrektur
+            (z. B. „Slicks" → „Slix") würde sonst beim nächsten Lauf wieder verschwinden. Mit Pin bleibt sie stehen. Klick auf den Pin
+            entfernt die Regel wieder; der Name fällt dann beim nächsten Lauf zurück auf das, was die Extraktion natürlich liefert.
+          </dd>
+          <dt>
+            <span className="badge glossary-toggle">★</span>
+          </dt>
+          <dd>
+            „Synthese" ist der Schritt, in dem die KI aus allen Erwähnungen einer Entität den eigentlichen Bundle-Text schreibt (der
+            Fließtext in <code>knowledge/bundle/…</code>). Es gibt drei Tiefenstufen — <em>brief</em> (kurz), <em>standard</em>,{" "}
+            <em>deep</em> (ausführlich, mit Rollen/Beziehungen/Chronologie) — normalerweise automatisch nach Erwähnungshäufigkeit und Typ
+            vergeben. Der Stern erzwingt <em>deep</em> unabhängig davon — für Entitäten, die inhaltlich wichtig sind, aber
+            selten/uneinheitlich erwähnt wurden (z. B. weil ihr Name mehrfach anders transkribiert wurde). Klick schaltet um; wirkt erst
+            nach dem nächsten <code>pnp run</code>. Charaktere und Götter mit ≥2 Erwähnungen sind schon durch ihren Typ immer{" "}
+            <em>deep</em> — bei denen zeigt der{" "}
+            <span className="badge glossary-toggle-fixed" style={{ pointerEvents: "none" }}>
+              ★
+            </span>{" "}
+            golden statt anklickbar, weil er dort nichts umschalten würde.
+          </dd>
+        </dl>
+      </details>
+
       {edits.length > 0 && (
         <div className="glossary-sync-bar">
           <span>{edits.length} geänderte Regel(n) noch nicht synchronisiert.</span>
@@ -257,14 +333,24 @@ export function Glossary() {
             {rows.map((e) => {
               const cid = e.concept_id;
               const rename = stagedRename(edits, cid);
+              const unpinStaged = stagedUnpin(edits, cid);
               const adds = stagedAdds(edits, cid);
               const deletes = stagedDeletes(edits, cid);
               const deletedNames = new Set(deletes.map((d) => d.alias.toLowerCase()));
               const displayName = rename ?? e.canonical_name;
               const visibleAliases = e.aliases.filter((a) => !deletedNames.has(a.name.toLowerCase()));
+              const effectivePinned = e.pinned && !unpinStaged;
+              const stagedImp = stagedImportant(edits, cid);
+              const effectiveImportant = stagedImp ?? e.important;
+              const dirty = rename || unpinStaged || adds.length || deletes.length || stagedImp !== undefined;
+              // Character/Deity with >=2 mentions are always deep-tier by
+              // type alone (models.py ALWAYS_DEEP_TYPES) — the ★ toggle
+              // would be a no-op for them, so show a fixed gold star instead
+              // of a clickable one that lies about being optional.
+              const alwaysDeep = (e.type === "Character" || e.type === "Deity") && e.mention_count >= 2;
 
               return (
-                <tr key={cid} className={rename || adds.length || deletes.length ? "state-warn" : undefined}>
+                <tr key={cid} className={dirty ? "state-warn" : undefined}>
                   <td>
                     <input
                       key={`${cid}-${displayName}`}
@@ -279,15 +365,38 @@ export function Glossary() {
                         if (ev.key === "Enter") (ev.target as HTMLInputElement).blur();
                       }}
                     />
-                    {e.pinned && (
-                      <span className="badge" title="Anzeigename per canonical_name: fixiert">
-                        Pin
-                      </span>
+                    {(e.pinned || unpinStaged) && (
+                      <button
+                        className={`badge glossary-toggle${effectivePinned ? "" : " glossary-toggle-off"}`}
+                        title={
+                          effectivePinned
+                            ? "Anzeigename per canonical_name: fixiert — klicken zum Entfernen"
+                            : "Pin wird beim Sync entfernt — klicken zum Rückgängigmachen"
+                        }
+                        onClick={() => handleTogglePin(cid, e.pinned, unpinStaged)}
+                      >
+                        {effectivePinned ? "Pin" : "Pin ✗"}
+                      </button>
                     )}
-                    {e.important && (
-                      <span className="badge" title="Erzwingt tiefe Synthese">
+                    {alwaysDeep ? (
+                      <span
+                        className="badge glossary-toggle-fixed"
+                        title="Charaktere und Götter sind ab 2 Erwähnungen immer tiefe Synthese — nicht abschaltbar"
+                      >
                         ★
                       </span>
+                    ) : (
+                      <button
+                        className={`badge glossary-toggle${effectiveImportant ? "" : " glossary-toggle-off"}`}
+                        title={
+                          effectiveImportant
+                            ? "Erzwingt tiefe Synthese — klicken zum Ausschalten"
+                            : "Klicken, um tiefe Synthese zu erzwingen"
+                        }
+                        onClick={() => handleToggleImportant(cid, effectiveImportant, e.important)}
+                      >
+                        ★
+                      </button>
                     )}
                   </td>
                   <td>{e.type}</td>

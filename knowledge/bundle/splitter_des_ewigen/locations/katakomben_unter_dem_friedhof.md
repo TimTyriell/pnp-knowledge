@@ -14,4 +14,4 @@ Ein versteckter Eingang unter dem Friedhof von [Gemata](/locations/gemata.md) f√
 
 # Belege
 
-1. Session 2025-04-23 @ 01:38:21 (https://www.youtube.com/watch?v=z3C-bewKqUs)
+[P-05] Session 2025-04-23 @ 01:38:21 (https://www.youtube.com/watch?v=z3C-bewKqUs)

@@ -14,4 +14,4 @@ Eine von [Sanges](/characters/sange.md) Blutmagie durchdrungene Maske, die ihren
 
 # Belege
 
-1. Session 2026-07-10 @ 00:41:14 (https://www.youtube.com/watch?v=H-eHSlfxUAg)
+[S1-01-B] Session 2026-07-10 @ 00:41:14 (https://www.youtube.com/watch?v=H-eHSlfxUAg)

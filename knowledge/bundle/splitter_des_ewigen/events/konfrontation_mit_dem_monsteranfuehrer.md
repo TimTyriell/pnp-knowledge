@@ -14,4 +14,4 @@ Nach der Erweckung stellt sich [Voras](/npcs/voras.md) dem Anführer der verblie
 
 # Belege
 
-1. Session 2025-04-23 @ 01:56:35 (https://www.youtube.com/watch?v=z3C-bewKqUs)
+[P-05] Session 2025-04-23 @ 01:56:35 (https://www.youtube.com/watch?v=z3C-bewKqUs)

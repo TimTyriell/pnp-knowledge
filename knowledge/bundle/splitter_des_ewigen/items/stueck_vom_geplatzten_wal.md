@@ -14,4 +14,4 @@ Nach der Explosion des rosa Klumpens schneidet [Esterossa](/characters/esterossa
 
 # Belege
 
-1. Session 2026-04-07 @ 01:58:26 (https://www.youtube.com/watch?v=MAuQPMNY548)
+[P-46] Session 2026-04-07 @ 01:58:26 (https://www.youtube.com/watch?v=MAuQPMNY548)

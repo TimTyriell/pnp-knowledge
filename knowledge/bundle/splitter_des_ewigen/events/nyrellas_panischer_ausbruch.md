@@ -14,4 +14,4 @@ Nach der Rückkehr aus der Domain erstarrt [Nyrella](/characters/nyrella.md) zun
 
 # Belege
 
-1. Session 2026-02-11 @ 01:53:34 (https://www.youtube.com/watch?v=3C8SD-cyNPM)
+[P-37] Session 2026-02-11 @ 01:53:34 (https://www.youtube.com/watch?v=3C8SD-cyNPM)

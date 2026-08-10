@@ -13,4 +13,4 @@ Bufrun ist der Wirt der [Taverne](/locations/taverne.md), in der die Gruppe unte
 
 # Belege
 
-1. Session 2026-08-04 @ 01:24:29 (https://www.youtube.com/watch?v=qRj2t3wQHfs)
+[S1-02-A] Session 2026-08-04 @ 01:24:29 (https://www.youtube.com/watch?v=qRj2t3wQHfs)

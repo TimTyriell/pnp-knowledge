@@ -27,5 +27,5 @@ Als wenig später Soldaten die Taverne stürmen, stellt Harald sich ihnen zusamm
 
 # Belege
 
-1. Session 2026-03-18 @ 01:10:25 – Harald als Kapitän, Hintergrund, Verprügeln des Soldaten, Erklärung zu den Silberkernen (https://www.youtube.com/watch?v=HHXxsASLrbQ)
-2. Session 2026-03-18 @ 01:14:34 – Bestätigung der falschen Beschuldigung und Verfolgung durch die Stadtwache (https://www.youtube.com/watch?v=HHXxsASLrbQ)
+[P-42a] Session 2026-03-18 @ 01:10:25 – Harald als Kapitän, Hintergrund, Verprügeln des Soldaten, Erklärung zu den Silberkernen (https://www.youtube.com/watch?v=HHXxsASLrbQ)
+[P-42b] Session 2026-03-18 @ 01:14:34 – Bestätigung der falschen Beschuldigung und Verfolgung durch die Stadtwache (https://www.youtube.com/watch?v=HHXxsASLrbQ)

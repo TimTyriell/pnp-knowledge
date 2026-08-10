@@ -13,4 +13,4 @@ Eine der beiden Magierinnen, Schwester von [Arus](/npcs/arus.md), die den Golem 
 
 # Belege
 
-1. Session 2025-10-07 @ 00:00:03 (https://www.youtube.com/watch?v=qVAF_54S8Vw)
+[P-26] Session 2025-10-07 @ 00:00:03 (https://www.youtube.com/watch?v=qVAF_54S8Vw)

@@ -14,4 +14,4 @@ Eine abgelegene, bewachte Insel, auf der sich die Ruine eines Forts und die [Kap
 
 # Belege
 
-1. Session 2025-05-06 @ 00:02:55 (https://www.youtube.com/watch?v=e0v6AFGd4mE)
+[P-07] Session 2025-05-06 @ 00:02:55 (https://www.youtube.com/watch?v=e0v6AFGd4mE)

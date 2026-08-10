@@ -14,4 +14,4 @@ Ein neu in den Berg gemeißelter Tempel mit goldenem Schimmer, der dem Seraphen 
 
 # Belege
 
-1. Session 2026-07-29 @ 01:53:52 (https://www.youtube.com/watch?v=umGyKLkefJI)
+[S1-01-A] Session 2026-07-29 @ 01:53:52 (https://www.youtube.com/watch?v=umGyKLkefJI)

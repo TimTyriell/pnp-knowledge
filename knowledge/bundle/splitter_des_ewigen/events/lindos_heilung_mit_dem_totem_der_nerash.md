@@ -14,4 +14,4 @@ In einem verzweifelten Moment betet Lindo zum Gedenken an [Nerash](/deities/nera
 
 # Belege
 
-1. Session 2025-07-22 @ 01:49:45 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
+[P-15] Session 2025-07-22 @ 01:49:45 (https://www.youtube.com/watch?v=BRRCUgW4xRo)

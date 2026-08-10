@@ -14,4 +14,4 @@ Eine Skizze mit Erklärungen, die [Dodo](/characters/dodo.md) in der Schmiede fi
 
 # Belege
 
-1. Session 2025-10-28 @ 01:36:45 (https://www.youtube.com/watch?v=V6NzNakqxXM)
+[P-29] Session 2025-10-28 @ 01:36:45 (https://www.youtube.com/watch?v=V6NzNakqxXM)

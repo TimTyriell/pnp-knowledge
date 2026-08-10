@@ -28,4 +28,4 @@ Der Anführer des Minenpostens trug bei seinem Tod einen Blutstein und eine Krie
 
 # Belege
 
-1. Session 2026-07-23 @ 01:59:55 – https://www.youtube.com/watch?v=Gb-TEbCFF0M
+[S1-02-B] Session 2026-07-23 @ 01:59:55 – https://www.youtube.com/watch?v=Gb-TEbCFF0M

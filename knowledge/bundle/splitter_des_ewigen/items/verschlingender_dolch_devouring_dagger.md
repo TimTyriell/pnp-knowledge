@@ -14,4 +14,4 @@ Ein magischer Dolch (Tier 2), den [Brass](/npcs/brass.md) als Entschädigung an 
 
 # Belege
 
-1. Session 2025-06-03 @ 01:23:12 (https://www.youtube.com/watch?v=jtYR4Je0a18)
+[P-10] Session 2025-06-03 @ 01:23:12 (https://www.youtube.com/watch?v=jtYR4Je0a18)

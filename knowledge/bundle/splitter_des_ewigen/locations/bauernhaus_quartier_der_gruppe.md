@@ -14,4 +14,4 @@ Das Bauernhaus ist ein abgelegenes Gebäude am Stadtrand von [Ehrenfels](/locati
 
 # Belege
 
-1. Session 2025-11-18 @ 01:39:10 (https://www.youtube.com/watch?v=w__ahowb9p0)
+[P-31] Session 2025-11-18 @ 01:39:10 (https://www.youtube.com/watch?v=w__ahowb9p0)

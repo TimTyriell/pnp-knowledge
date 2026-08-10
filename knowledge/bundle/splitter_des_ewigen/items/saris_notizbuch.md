@@ -21,5 +21,5 @@ Das Buch ist aus braunem Leder gefertigt und handlich genug, um ständig mitgef�
 Saris dokumentiert in dem Notizbuch systematisch seine Beobachtungen. Es enthält unter anderem eine detaillierte Zeichnung und Notizen zu einem Grottenschrat, bei dem er ein falsches Herzmark vermerkt. Neben Kreaturen hält er auch Eindrücke von Orten und Personen fest – etwa eine Statue Jorans, die Flüchtlinge aus einer Siedlung und neue Bekanntschaften. Die Aufzeichnungen sind Ausdruck seiner wissenschaftlichen Methode, gesammeltes Wissen zu ordnen und für spätere Analysen bereitzuhalten.
 
 # Belege  
-1. Session 2026-06-04 @ 00:47:31 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)  
-2. Session 2026-07-10 @ 01:40:20 (https://www.youtube.com/watch?v=H-eHSlfxUAg)
+[P-53] Session 2026-06-04 @ 00:47:31 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
+[S1-01-B] Session 2026-07-10 @ 01:40:20 (https://www.youtube.com/watch?v=H-eHSlfxUAg)

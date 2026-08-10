@@ -14,4 +14,4 @@ Vor dem Eintreffen auf der Farm führt [Kaya](/characters/kaya.md) die Gruppe in
 
 # Belege
 
-1. Session 2026-07-10 @ 00:53:19 (https://www.youtube.com/watch?v=H-eHSlfxUAg)
+[S1-01-B] Session 2026-07-10 @ 00:53:19 (https://www.youtube.com/watch?v=H-eHSlfxUAg)

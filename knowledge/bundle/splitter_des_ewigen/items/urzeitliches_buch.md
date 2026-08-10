@@ -14,4 +14,4 @@ Ein altes, mit Magie gesichertes Buch aus dem [Circle Below](/domains/circle_bel
 
 # Belege
 
-1. Session 2025-06-25 @ 00:46:04 (https://www.youtube.com/watch?v=tpkO9uGw6-I)
+[P-13] Session 2025-06-25 @ 00:46:04 (https://www.youtube.com/watch?v=tpkO9uGw6-I)

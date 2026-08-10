@@ -22,5 +22,5 @@ Trotz der scheinbaren Weite und Ruhe gelten die Erntefelder als unsicherer Ort. 
 
 # Belege
 
-1. Session 2026-03-31 @ 01:31:49 – Beschreibung der Landschaft und Ankunft der Gruppe in den Erntefeldern. (https://www.youtube.com/watch?v=Ee-K84wcxLM)
-2. Session 2026-05-06 @ 00:08:07 – Warnung des Richters vor dem Verweilen in den Erntefeldern. (https://www.youtube.com/watch?v=MB4quhDWsQE)
+[P-45] Session 2026-03-31 @ 01:31:49 – Beschreibung der Landschaft und Ankunft der Gruppe in den Erntefeldern. (https://www.youtube.com/watch?v=Ee-K84wcxLM)
+[P-49] Session 2026-05-06 @ 00:08:07 – Warnung des Richters vor dem Verweilen in den Erntefeldern. (https://www.youtube.com/watch?v=MB4quhDWsQE)

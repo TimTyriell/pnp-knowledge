@@ -16,4 +16,4 @@ Ein primitives Lager mit Zelten und einer Höhle, bewohnt von [Hendriks Sippe](/
 
 # Belege
 
-1. Session 2025-08-12 @ 00:27:50 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)
+[P-18] Session 2025-08-12 @ 00:27:50 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)

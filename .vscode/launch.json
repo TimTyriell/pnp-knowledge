@@ -90,6 +90,33 @@
       "envFile": "${workspaceFolder}/services/kb/.env",
       "console": "integratedTerminal",
       "justMyCode": false
+    },
+    {
+      "name": "Dashboard: Start Backend",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "${workspaceFolder}/services/dashboard/.venv/Scripts/python.exe",
+      "program": "${workspaceFolder}/services/dashboard/app.py",
+      "cwd": "${workspaceFolder}/services/dashboard",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "Dashboard: Start Frontend (Vite dev)",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm run dev",
+      "cwd": "${workspaceFolder}/services/dashboard/web"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Dashboard: Start Backend + Frontend",
+      "configurations": ["Dashboard: Start Backend", "Dashboard: Start Frontend (Vite dev)"]
+    },
+    {
+      "name": "Dashboard: Full stack (KB API + Backend + Frontend)",
+      "configurations": ["KB: Start API", "Dashboard: Start Backend", "Dashboard: Start Frontend (Vite dev)"]
     }
   ]
 }

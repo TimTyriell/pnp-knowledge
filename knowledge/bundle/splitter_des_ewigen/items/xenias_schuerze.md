@@ -14,4 +14,4 @@ Die Schürze der Tavernenwirtin, die sie im Zorn fortwirft, nachdem sie die Evak
 
 # Belege
 
-1. Session 2026-08-06 @ 01:44:32 (https://www.youtube.com/watch?v=0HyPHao8s_k)
+[S1-03-B] Session 2026-08-06 @ 01:44:32 (https://www.youtube.com/watch?v=0HyPHao8s_k)

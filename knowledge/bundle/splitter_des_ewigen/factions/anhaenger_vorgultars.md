@@ -31,5 +31,5 @@ Die Anhänger sind feindlich eingestellt gegenüber dem Schinder und dessen Verb
 
 # Belege
 
-1. Session 2026-05-13 @ 01:37:30, URL: https://www.youtube.com/watch?v=4afPD9Q_5AY
-2. Session 2026-05-19 @ 00:08:25, URL: https://www.youtube.com/watch?v=xEcGJeaNixI
+[P-50] Session 2026-05-13 @ 01:37:30, URL: https://www.youtube.com/watch?v=4afPD9Q_5AY
+[P-51] Session 2026-05-19 @ 00:08:25, URL: https://www.youtube.com/watch?v=xEcGJeaNixI

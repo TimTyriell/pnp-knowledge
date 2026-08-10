@@ -81,5 +81,5 @@ folglich nicht dokumentiert wurde.
 
 ## Belege
 
-1. Session 2026-03-03, 01:23:12 – [YouTube](https://www.youtube.com/watch?v=BRUNuNKTeOg)
+[P-40] Session 2026-03-03, 01:23:12 – [YouTube](https://www.youtube.com/watch?v=BRUNuNKTeOg)
 2. Pantheon-Dokument: *Gruul, Herr der Glutbande* (aus Bekannte_Pantheon_der_Goetter.md)

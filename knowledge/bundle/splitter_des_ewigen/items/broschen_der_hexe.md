@@ -14,4 +14,4 @@ Vier Broschen, die der reiche Gast im Auftrag der Hexe an die Dorfbewohner verte
 
 # Belege
 
-1. Session 2025-07-29 @ 01:57:43 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
+[P-16] Session 2025-07-29 @ 01:57:43 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)

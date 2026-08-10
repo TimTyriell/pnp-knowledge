@@ -14,4 +14,4 @@ In einer Post-Credit-Szene marschiert eine riesige Armee aus Monstern aus den To
 
 # Belege
 
-1. Session 2026-07-21 @ 01:52:50 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
+[P-57] Session 2026-07-21 @ 01:52:50 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)

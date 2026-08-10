@@ -14,4 +14,4 @@ Ein verkohlter Speer, der in einem magischen Feuer auf dem Vorplatz der Festung 
 
 # Belege
 
-1. Session 2025-07-09 @ 00:18:00 (https://www.youtube.com/watch?v=XOnHa6CmDbo)
+[P-14] Session 2025-07-09 @ 00:18:00 (https://www.youtube.com/watch?v=XOnHa6CmDbo)

@@ -24,6 +24,6 @@ Die Katze schloss sich sofort Esterossa an und kehrte nicht zu Hermann zurück, 
 
 ## Belege
 
-1. Session 2025-04-30 @ 00:33:04 – [YouTube](https://www.youtube.com/watch?v=fsCOiSkKKTE) – Braune Katze, ursprünglich Hermanns, von Goblin-Göttern auf Günther getauft, schließt sich Esterossa an.
-2. Session 2025-09-30 @ 01:36:23 – [YouTube](https://www.youtube.com/watch?v=bUT7Mc2hjUY) – Nyrella stellt mittels *Nature’s Tongue* fest, dass die Katze weiblich ist und Adjani heißt.
-3. Session 2025-11-18 @ 01:51:25 – [YouTube](https://www.youtube.com/watch?v=w__ahowb9p0) – Ajani liegt kurz tot oder schlafend unter Dodo, sonst unauffällig.
+[P-06] Session 2025-04-30 @ 00:33:04 – [YouTube](https://www.youtube.com/watch?v=fsCOiSkKKTE) – Braune Katze, ursprünglich Hermanns, von Goblin-Göttern auf Günther getauft, schließt sich Esterossa an.
+[P-25] Session 2025-09-30 @ 01:36:23 – [YouTube](https://www.youtube.com/watch?v=bUT7Mc2hjUY) – Nyrella stellt mittels *Nature’s Tongue* fest, dass die Katze weiblich ist und Adjani heißt.
+[P-31] Session 2025-11-18 @ 01:51:25 – [YouTube](https://www.youtube.com/watch?v=w__ahowb9p0) – Ajani liegt kurz tot oder schlafend unter Dodo, sonst unauffällig.

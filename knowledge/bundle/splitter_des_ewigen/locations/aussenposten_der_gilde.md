@@ -14,4 +14,4 @@ Der abgelegene Trainingsposten der Dwarfmaster-[Gilde](/factions/gilde_von_ehren
 
 # Belege
 
-1. Session 2025-05-27 @ 00:22:55 (https://www.youtube.com/watch?v=bamCIB_CkR8)
+[P-09] Session 2025-05-27 @ 00:22:55 (https://www.youtube.com/watch?v=bamCIB_CkR8)

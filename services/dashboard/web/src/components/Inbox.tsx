@@ -30,7 +30,15 @@ export function Inbox({ actions }: { actions: Action[] }) {
           <ul>
             {items.map((a, i) => (
               <li key={i}>
-                <span className="badge">{a.service}</span> {a.label} <span className="muted">{a.ref}</span>
+                <span className="badge">{a.service}</span>{" "}
+                {a.url ? (
+                  <a href={a.url} target="_blank" rel="noreferrer">
+                    {a.label}
+                  </a>
+                ) : (
+                  a.label
+                )}{" "}
+                <span className="muted">{a.ref}</span>
               </li>
             ))}
           </ul>

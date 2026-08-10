@@ -14,4 +14,4 @@ Nachdem [Cookie](/characters/cookie.md) eine Tür geöffnet hatte, griffen zwei 
 
 # Belege
 
-1. Session 2025-06-17 @ 00:24:00 (https://www.youtube.com/watch?v=tl76B4V0io8)
+[P-12] Session 2025-06-17 @ 00:24:00 (https://www.youtube.com/watch?v=tl76B4V0io8)

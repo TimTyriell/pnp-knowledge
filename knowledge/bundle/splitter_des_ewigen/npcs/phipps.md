@@ -13,4 +13,4 @@ Phipps ist ein ängstlicher Gnom, der allein in einem halb verfallenen Turm lebt
 
 # Belege
 
-1. Session 2025-04-15 @ 00:13:23 (https://www.youtube.com/watch?v=YCpAz_syjaY)
+[P-04] Session 2025-04-15 @ 00:13:23 (https://www.youtube.com/watch?v=YCpAz_syjaY)

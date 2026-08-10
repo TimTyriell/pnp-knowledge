@@ -13,4 +13,4 @@ Gulrak ist ein Kenku, der von [Joar Vanur](/npcs/joar_vanur.md) gefangen gehalte
 
 # Belege
 
-1. Session 2025-04-30 @ 01:12:48 (https://www.youtube.com/watch?v=fsCOiSkKKTE)
+[P-06] Session 2025-04-30 @ 01:12:48 (https://www.youtube.com/watch?v=fsCOiSkKKTE)

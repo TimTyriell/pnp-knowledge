@@ -13,4 +13,4 @@ Sys Fizik ist ein kleiner, abgebrühter Goblin, der als Alchemist für die Schmu
 
 # Belege
 
-1. Session 2026-03-03 @ 01:55:31 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
+[P-40] Session 2026-03-03 @ 01:55:31 (https://www.youtube.com/watch?v=BRUNuNKTeOg)

@@ -14,4 +14,4 @@ Ein altes Buch mit Wissen über [Vasul](/deities/vharzul.md) und seine Splitter.
 
 # Belege
 
-1. Session 2026-01-20 @ 01:47:48 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
+[P-35] Session 2026-01-20 @ 01:47:48 (https://www.youtube.com/watch?v=H3ckYdTv4y8)

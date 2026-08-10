@@ -14,4 +14,4 @@ Ein dramatischer Kampf, bei dem die Kreatur [Dodo](/characters/dodo.md) verschli
 
 # Belege
 
-1. Session 2026-01-06 @ 02:00:56 (https://www.youtube.com/watch?v=VGw81seFvbo)
+[P-33] Session 2026-01-06 @ 02:00:56 (https://www.youtube.com/watch?v=VGw81seFvbo)

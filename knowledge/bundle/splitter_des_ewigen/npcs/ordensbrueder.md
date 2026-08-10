@@ -14,4 +14,4 @@ Ein Orden von Magiern, dem [Trillo](/npcs/trillo.md) angehört. Sie sind auf Sch
 
 # Belege
 
-1. Session 2026-05-27 @ 00:48:09 (https://www.youtube.com/watch?v=IYYmgpqsp7E)
+[P-52] Session 2026-05-27 @ 00:48:09 (https://www.youtube.com/watch?v=IYYmgpqsp7E)

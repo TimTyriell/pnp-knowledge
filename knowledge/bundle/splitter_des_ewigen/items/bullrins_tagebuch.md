@@ -14,4 +14,4 @@ Ein gut erhaltenes Buch, das [Bullrins](/npcs/bullrin.md) Beobachtungen über di
 
 # Belege
 
-1. Session 2025-10-28 @ 01:02:16 (https://www.youtube.com/watch?v=V6NzNakqxXM)
+[P-29] Session 2025-10-28 @ 01:02:16 (https://www.youtube.com/watch?v=V6NzNakqxXM)

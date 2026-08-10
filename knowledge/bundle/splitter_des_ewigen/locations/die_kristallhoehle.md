@@ -14,4 +14,4 @@ Eine Höhle mit pulsierenden lila Kristallen, die Magie aus der Narbe kanalisier
 
 # Belege
 
-1. Session 2026-05-19 @ 01:28:46 (https://www.youtube.com/watch?v=xEcGJeaNixI)
+[P-51] Session 2026-05-19 @ 01:28:46 (https://www.youtube.com/watch?v=xEcGJeaNixI)

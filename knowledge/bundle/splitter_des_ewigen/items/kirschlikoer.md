@@ -14,4 +14,4 @@ Ein süßer Likör, den [Gunther](/characters/gunther.md) bestellt und der [Lind
 
 # Belege
 
-1. Session 2026-07-29 @ 01:18:52 (https://www.youtube.com/watch?v=umGyKLkefJI)
+[S1-01-A] Session 2026-07-29 @ 01:18:52 (https://www.youtube.com/watch?v=umGyKLkefJI)

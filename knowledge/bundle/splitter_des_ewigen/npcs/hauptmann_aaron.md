@@ -21,5 +21,5 @@ Die Gruppe muss sich Aarons Vertrauen erst verdienen. Nachdem Bruma ihm von eine
 
 # Belege
 
-1. Session 2026-07-10 @ 01:30:00 – <https://www.youtube.com/watch?v=H-eHSlfxUAg>
-2. Session 2026-08-06 @ 00:06:36 – <https://www.youtube.com/watch?v=0HyPHao8s_k>
+[S1-01-B] Session 2026-07-10 @ 01:30:00 – <https://www.youtube.com/watch?v=H-eHSlfxUAg>
+[S1-03-B] Session 2026-08-06 @ 00:06:36 – <https://www.youtube.com/watch?v=0HyPHao8s_k>

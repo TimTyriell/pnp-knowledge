@@ -14,4 +14,4 @@ Gemata ist ein kleines Dorf, das von [Goblins](/factions/goblins.md) angegriffen
 
 # Belege
 
-1. Session 2025-04-23 @ 01:54:37 (https://www.youtube.com/watch?v=z3C-bewKqUs)
+[P-05] Session 2025-04-23 @ 01:54:37 (https://www.youtube.com/watch?v=z3C-bewKqUs)

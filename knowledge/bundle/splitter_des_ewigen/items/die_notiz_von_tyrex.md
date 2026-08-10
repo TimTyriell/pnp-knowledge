@@ -14,4 +14,4 @@ Ein Schriftstück, das Lunara beim Nekromanten fand und zunächst für belanglos
 
 # Belege
 
-1. Session 2026-03-24 @ 01:33:38 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
+[P-44] Session 2026-03-24 @ 01:33:38 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)

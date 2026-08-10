@@ -24,5 +24,5 @@ Kurz nach der Ankunft einer Gruppe in Ehrenfels warnt der Priester der Kapelle v
 
 # Belege
 
-1. Session 2026-07-29 @ 00:32:27 (https://www.youtube.com/watch?v=umGyKLkefJI)
-2. Session 2026-08-04 @ 02:05:09 (https://www.youtube.com/watch?v=qRj2t3wQHfs)
+[S1-01-A] Session 2026-07-29 @ 00:32:27 (https://www.youtube.com/watch?v=umGyKLkefJI)
+[S1-02-A] Session 2026-08-04 @ 02:05:09 (https://www.youtube.com/watch?v=qRj2t3wQHfs)

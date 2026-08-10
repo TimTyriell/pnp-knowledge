@@ -14,4 +14,4 @@ Geflügelte Diener [Vorgultars](/deities/vorgul_tar.md) mit magischen Lichtlanze
 
 # Belege
 
-1. Session 2026-06-10 @ 00:09:08 (https://www.youtube.com/watch?v=_3tLSiT1tck)
+[P-54] Session 2026-06-10 @ 00:09:08 (https://www.youtube.com/watch?v=_3tLSiT1tck)

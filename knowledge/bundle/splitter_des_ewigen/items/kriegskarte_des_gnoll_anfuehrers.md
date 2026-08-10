@@ -14,4 +14,4 @@ Eine strategische Karte, die Bruma zusammen mit dem [Blutstein](/items/blutstein
 
 # Belege
 
-1. Session 2026-07-23 @ 01:57:05 (https://www.youtube.com/watch?v=Gb-TEbCFF0M)
+[S1-02-B] Session 2026-07-23 @ 01:57:05 (https://www.youtube.com/watch?v=Gb-TEbCFF0M)

@@ -14,4 +14,4 @@ Eine grob aus Holz geflochtene Strichmännchen-Figur, die [Kuki](/characters/coo
 
 # Belege
 
-1. Session 2025-04-15 @ 01:59:16 (https://www.youtube.com/watch?v=YCpAz_syjaY)
+[P-04] Session 2025-04-15 @ 01:59:16 (https://www.youtube.com/watch?v=YCpAz_syjaY)

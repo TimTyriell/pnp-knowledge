@@ -13,4 +13,4 @@ Lukas, ein aufgeweckter Goblin-Alchemist, führt die Gruppe durch das Haus und p
 
 # Belege
 
-1. Session 2025-11-14 @ 00:09:48 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)
+[P-30] Session 2025-11-14 @ 00:09:48 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)

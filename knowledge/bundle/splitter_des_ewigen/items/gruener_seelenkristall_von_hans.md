@@ -16,4 +16,4 @@ Ein grüner Kristall, den [Hans](/npcs/hans_soldat_aus_breska.md) warf und der i
 
 # Belege
 
-1. Session 2026-01-13 @ 01:15:10 (https://www.youtube.com/watch?v=w4LB1s9_3rs)
+[P-34] Session 2026-01-13 @ 01:15:10 (https://www.youtube.com/watch?v=w4LB1s9_3rs)

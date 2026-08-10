@@ -14,4 +14,4 @@ Das unterirdische Versteck der [Silberkerne](/factions/silberkerne.md) ist nur d
 
 # Belege
 
-1. Session 2026-03-23 @ 02:34:52 (https://www.youtube.com/watch?v=niVxKtdQBn0)
+[P-43] Session 2026-03-23 @ 02:34:52 (https://www.youtube.com/watch?v=niVxKtdQBn0)

@@ -14,4 +14,4 @@ Ein Kristall, der für eine Begegnung allen Zauberfertigkeitswürfen +1 gibt und
 
 # Belege
 
-1. Session 2025-06-10 @ 00:20:39 (https://www.youtube.com/watch?v=cLkCu3Iq3y8)
+[P-11] Session 2025-06-10 @ 00:20:39 (https://www.youtube.com/watch?v=cLkCu3Iq3y8)

@@ -16,4 +16,4 @@ Eine der vier großen Festungen in [Abyssalis](/domains/splitterwelt.md), ehemal
 
 # Belege
 
-1. Session 2026-04-14 @ 01:26:00 (https://www.youtube.com/watch?v=1Jyu92P7_Fg)
+[P-48] Session 2026-04-14 @ 01:26:00 (https://www.youtube.com/watch?v=1Jyu92P7_Fg)

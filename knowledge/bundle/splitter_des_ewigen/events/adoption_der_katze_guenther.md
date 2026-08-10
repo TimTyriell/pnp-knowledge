@@ -14,4 +14,4 @@ In der ersten [Taverne](/locations/taverne.md) freundet [Esterossa](/characters/
 
 # Belege
 
-1. Session 2025-04-30 @ 00:33:08 (https://www.youtube.com/watch?v=fsCOiSkKKTE)
+[P-06] Session 2025-04-30 @ 00:33:08 (https://www.youtube.com/watch?v=fsCOiSkKKTE)

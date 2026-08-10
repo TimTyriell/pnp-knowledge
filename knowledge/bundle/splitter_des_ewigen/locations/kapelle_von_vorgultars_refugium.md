@@ -16,4 +16,4 @@ Ruinenartige [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) am [Ende](/loc
 
 # Belege
 
-1. Session 2026-06-10 @ 01:43:22 (https://www.youtube.com/watch?v=_3tLSiT1tck)
+[P-54] Session 2026-06-10 @ 01:43:22 (https://www.youtube.com/watch?v=_3tLSiT1tck)

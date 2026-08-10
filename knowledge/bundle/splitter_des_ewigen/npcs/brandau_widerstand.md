@@ -14,4 +14,4 @@ Eine kleine Gruppierung ehemaliger Brandauer unter Herakles, die versucht, gegen
 
 # Belege
 
-1. Session 2026-06-04 @ 01:08:04 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
+[P-53] Session 2026-06-04 @ 01:08:04 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)

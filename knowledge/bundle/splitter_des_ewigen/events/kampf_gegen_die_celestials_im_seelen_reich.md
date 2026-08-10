@@ -14,4 +14,4 @@ Ein Kampf in einer prismatischen Dimension über Lava. Gegen vier nacheinander b
 
 # Belege
 
-1. Session 2025-06-25 @ 00:52:35 (https://www.youtube.com/watch?v=tpkO9uGw6-I)
+[P-13] Session 2025-06-25 @ 00:52:35 (https://www.youtube.com/watch?v=tpkO9uGw6-I)

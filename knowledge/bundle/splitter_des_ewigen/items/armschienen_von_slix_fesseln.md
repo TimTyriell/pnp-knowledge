@@ -14,4 +14,4 @@ Die magischen Armschienen, die [Slix](/npcs/slix_vasul.md) in [Lindo Laut](/char
 
 # Belege
 
-1. Session 2026-03-31 @ 00:55:45 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
+[P-45] Session 2026-03-31 @ 00:55:45 (https://www.youtube.com/watch?v=Ee-K84wcxLM)

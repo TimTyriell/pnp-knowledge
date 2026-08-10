@@ -13,4 +13,4 @@ Berti war einst der Bürgermeister von [Bresca](/locations/breska.md), mit dem [
 
 # Belege
 
-1. Session 2025-09-17 @ 01:07:47 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
+[P-23] Session 2025-09-17 @ 01:07:47 (https://www.youtube.com/watch?v=AhIT8dcxw2o)

@@ -14,4 +14,4 @@ Kurz vor dem Heiligtum stoßen sie auf einen makabren Altar mit geopferten Leich
 
 # Belege
 
-1. Session 2025-08-12 @ 01:59:20 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)
+[P-18] Session 2025-08-12 @ 01:59:20 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)

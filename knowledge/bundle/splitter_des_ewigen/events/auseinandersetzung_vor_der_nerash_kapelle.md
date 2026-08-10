@@ -14,4 +14,4 @@ subtype: Verhandlung
 
 # Belege
 
-1. Session 2026-08-04 @ 02:02:21 (https://www.youtube.com/watch?v=qRj2t3wQHfs)
+[S1-02-A] Session 2026-08-04 @ 02:02:21 (https://www.youtube.com/watch?v=qRj2t3wQHfs)

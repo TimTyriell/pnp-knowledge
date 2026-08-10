@@ -14,4 +14,4 @@ Nachdem eine Bärenfalle zuschnappt, versteckt sich die Gruppe. Ein Kultist komm
 
 # Belege
 
-1. Session 2026-05-19 @ 00:54:23 (https://www.youtube.com/watch?v=xEcGJeaNixI)
+[P-51] Session 2026-05-19 @ 00:54:23 (https://www.youtube.com/watch?v=xEcGJeaNixI)

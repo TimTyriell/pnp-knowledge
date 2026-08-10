@@ -14,4 +14,4 @@ Ein alter, zerbröckelter Turm im Wald, in dem der Gnom [Phipps](/npcs/phipps.md
 
 # Belege
 
-1. Session 2025-04-15 @ 00:13:24 (https://www.youtube.com/watch?v=YCpAz_syjaY)
+[P-04] Session 2025-04-15 @ 00:13:24 (https://www.youtube.com/watch?v=YCpAz_syjaY)

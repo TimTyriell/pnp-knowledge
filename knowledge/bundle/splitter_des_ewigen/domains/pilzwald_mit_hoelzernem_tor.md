@@ -20,4 +20,4 @@ Der Wald ist düster und wirkt unheimlich. Die Verbindung zur realen Natur ist w
 Das abrupte Ende der Vision und das Gefühl der Abgeschnittenheit von der natürlichen Welt legen nahe, dass der Pilzwald nicht nur eine einfache Traumlandschaft ist, sondern eine Manifestation einer mächtigen, möglicherweise feindseligen Entität. Der Ruf des Tores und die aggressive Ausbreitung der Pilze in der realen Welt könnten auf eine bewusste Einflussnahme dieser Kraft hindeuten. Näheres ist bislang nicht bekannt, aber die Vision dient als Warnung vor den Gefahren der Pilzkommunikation.
 
 # Belege
-1. Session 2025-04-30 @ 01:42:06 – <https://www.youtube.com/watch?v=fsCOiSkKKTE>
+[P-06] Session 2025-04-30 @ 01:42:06 – <https://www.youtube.com/watch?v=fsCOiSkKKTE>

@@ -14,4 +14,4 @@ Im Obergeschoss des Dorfes belauschen die Helden die Anführer. [Dodo](/characte
 
 # Belege
 
-1. Session 2025-04-01 @ 01:43:22 (https://www.youtube.com/watch?v=LZIuUzc3F18)
+[P-02] Session 2025-04-01 @ 01:43:22 (https://www.youtube.com/watch?v=LZIuUzc3F18)

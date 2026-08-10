@@ -13,4 +13,4 @@ Ein wachsames Torwache von [Ehrenfels](/locations/ehrenfels.md), der die Helden 
 
 # Belege
 
-1. Session 2026-07-29 @ 00:18:45 (https://www.youtube.com/watch?v=umGyKLkefJI)
+[S1-01-A] Session 2026-07-29 @ 00:18:45 (https://www.youtube.com/watch?v=umGyKLkefJI)

@@ -13,4 +13,4 @@ Brass ist ein Dunkelelf aus [Cornivum](/locations/cornivum.md), der der Gruppe z
 
 # Belege
 
-1. Session 2025-06-03 @ 00:15:45 (https://www.youtube.com/watch?v=jtYR4Je0a18)
+[P-10] Session 2025-06-03 @ 00:15:45 (https://www.youtube.com/watch?v=jtYR4Je0a18)

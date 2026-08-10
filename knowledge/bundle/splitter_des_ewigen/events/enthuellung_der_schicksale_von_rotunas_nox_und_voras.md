@@ -14,4 +14,4 @@ Kurz nach der Ankunft erfahren die Helden von der großen Schlacht und den Verlu
 
 # Belege
 
-1. Session 2026-07-29 @ 00:21:23 (https://www.youtube.com/watch?v=umGyKLkefJI)
+[S1-01-A] Session 2026-07-29 @ 00:21:23 (https://www.youtube.com/watch?v=umGyKLkefJI)

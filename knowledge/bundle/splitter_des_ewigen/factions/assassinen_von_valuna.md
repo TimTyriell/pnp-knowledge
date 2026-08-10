@@ -19,4 +19,4 @@ Die Assassinen von Valuna genießen einen Ruf, der gleichermaßen von Gefahr und
 Die Abenteurergruppe hat in der Vergangenheit negative Erfahrungen mit den Assassinen von Valuna gemacht. Diese gehen auf ein einst auf die Gruppe ausgesetztes Kopfgeld zurück. Wie genau das Kopfgeld mit der Fraktion zusammenhing und ob es bis heute nachwirkt, ist aus den vorliegenden Berichten nicht ersichtlich – ebenso wenig, ob die Assassinen von Valuna inzwischen als Bedrohung oder als mögliche Ansprechpartner gelten müssen.
 
 # Belege
-1. Session 2026-08-04, 02:10:08 – https://www.youtube.com/watch?v=qRj2t3wQHfs
+[S1-02-A] Session 2026-08-04, 02:10:08 – https://www.youtube.com/watch?v=qRj2t3wQHfs

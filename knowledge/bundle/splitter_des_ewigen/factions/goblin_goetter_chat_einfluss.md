@@ -26,5 +26,5 @@ Der Name verbindet die Fraktion eng mit den Goblins: Die Fähigkeit, Goblins zus
 
 # Belege
 
-1. Session 2025-04-01 @ 00:17:50 (https://www.youtube.com/watch?v=LZIuUzc3F18)
+[P-02] Session 2025-04-01 @ 00:17:50 (https://www.youtube.com/watch?v=LZIuUzc3F18)
 2. Kanon_Entscheidungen.md: ENTSCHEIDUNG – Die Goblin-Götter sind chaotisch und wechselhaft, nicht bösartig; die Einschätzung aus Session 2025-04-15 ist eine Fehleinschätzung.

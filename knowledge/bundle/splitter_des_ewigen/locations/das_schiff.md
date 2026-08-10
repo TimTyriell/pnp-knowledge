@@ -14,4 +14,4 @@ Das Schiff von [Kapitän Lobrecht](/npcs/lobrecht.md), mit dem die Helden reisen
 
 # Belege
 
-1. Session 2025-07-29 @ 01:56:53 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
+[P-16] Session 2025-07-29 @ 01:56:53 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)

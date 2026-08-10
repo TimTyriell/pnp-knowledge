@@ -14,4 +14,4 @@ Während [Cookies](/characters/cookie.md) Wache erscheint ein gehörntes Wesen i
 
 # Belege
 
-1. Session 2025-04-01 @ 00:41:36 (https://www.youtube.com/watch?v=LZIuUzc3F18)
+[P-02] Session 2025-04-01 @ 00:41:36 (https://www.youtube.com/watch?v=LZIuUzc3F18)

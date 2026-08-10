@@ -24,5 +24,5 @@ Der Kompass ist so stark beschädigt, dass er **in der normalen Welt nichts anze
 
 # Belege
 
-1. Session 2025-05-27 @ 00:06:09 – Cookie wählt einen etwas beschädigten Kompass als persönlichen Gegenstand und hofft auf dessen Nutzen zur Wegsuche. (https://www.youtube.com/watch?v=bamCIB_CkR8)
-2. Session 2025-09-06 @ 00:28:24 – Cookies defekter Kompass zeigt weder in der normalen Welt noch in der Zwischenebene eine Richtung an und erweist sich als nutzlos. (https://www.youtube.com/watch?v=vo1xnyLQDJk)
+[P-09] Session 2025-05-27 @ 00:06:09 – Cookie wählt einen etwas beschädigten Kompass als persönlichen Gegenstand und hofft auf dessen Nutzen zur Wegsuche. (https://www.youtube.com/watch?v=bamCIB_CkR8)
+[P-21] Session 2025-09-06 @ 00:28:24 – Cookies defekter Kompass zeigt weder in der normalen Welt noch in der Zwischenebene eine Richtung an und erweist sich als nutzlos. (https://www.youtube.com/watch?v=vo1xnyLQDJk)

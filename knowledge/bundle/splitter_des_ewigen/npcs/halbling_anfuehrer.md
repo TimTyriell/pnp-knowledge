@@ -13,4 +13,4 @@ Ein störrischer Halbling, der das Dorf seit fast 30 Jahren bewohnt und es nicht
 
 # Belege
 
-1. Session 2026-08-06 @ 00:31:55 (https://www.youtube.com/watch?v=0HyPHao8s_k)
+[S1-03-B] Session 2026-08-06 @ 00:31:55 (https://www.youtube.com/watch?v=0HyPHao8s_k)

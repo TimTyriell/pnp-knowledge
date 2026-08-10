@@ -16,4 +16,4 @@ Eine heruntergekommene [Taverne](/locations/taverne.md) am Stadtrand, die als [T
 
 # Belege
 
-1. Session 2026-03-03 @ 00:38:46 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
+[P-40] Session 2026-03-03 @ 00:38:46 (https://www.youtube.com/watch?v=BRUNuNKTeOg)

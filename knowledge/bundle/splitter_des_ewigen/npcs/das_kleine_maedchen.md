@@ -13,4 +13,4 @@ Ein Kind im Dorf, das von [Sanges Maske](/items/sanges_maske.md) erschreckt wird
 
 # Belege
 
-1. Session 2026-06-04 @ 00:28:09 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
+[P-53] Session 2026-06-04 @ 00:28:09 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)

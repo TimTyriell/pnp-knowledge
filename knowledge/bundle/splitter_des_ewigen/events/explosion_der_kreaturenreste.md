@@ -14,4 +14,4 @@ Als [Esterossa](/characters/esterossa.md) versucht, ein Stück des aufgeblähten
 
 # Belege
 
-1. Session 2026-04-07 @ 01:56:49 (https://www.youtube.com/watch?v=MAuQPMNY548)
+[P-46] Session 2026-04-07 @ 01:56:49 (https://www.youtube.com/watch?v=MAuQPMNY548)

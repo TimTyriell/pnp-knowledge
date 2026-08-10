@@ -14,4 +14,4 @@ Eine einfache Armbrust, die [Valeria](/characters/valeria.md) Bürgermeister [Be
 
 # Belege
 
-1. Session 2025-04-09 @ 00:38:49 (https://www.youtube.com/watch?v=1PWdwvun5ow)
+[P-03] Session 2025-04-09 @ 00:38:49 (https://www.youtube.com/watch?v=1PWdwvun5ow)

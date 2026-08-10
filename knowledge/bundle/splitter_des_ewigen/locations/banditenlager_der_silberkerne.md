@@ -34,8 +34,8 @@ Die Flüchtlinge lagerten zunächst vor den Toren der Festung, wurden aber spät
 
 # Belege
 
-1. Session 2025-09-17 @ 01:13:12 – https://www.youtube.com/watch?v=AhIT8dcxw2o  
-2. Session 2025-09-23 @ 00:27:55 – https://www.youtube.com/watch?v=DGzfqVigS0g  
-3. Session 2025-09-30 @ 01:01:32 – https://www.youtube.com/watch?v=bUT7Mc2hjUY  
-4. Session 2025-11-18 @ 00:19:19 – https://www.youtube.com/watch?v=w__ahowb9p0  
-5. Session 2026-01-13 @ 00:14:58 – https://www.youtube.com/watch?v=w4LB1s9_3rs
+[P-23] Session 2025-09-17 @ 01:13:12 – https://www.youtube.com/watch?v=AhIT8dcxw2o
+[P-24] Session 2025-09-23 @ 00:27:55 – https://www.youtube.com/watch?v=DGzfqVigS0g
+[P-25] Session 2025-09-30 @ 01:01:32 – https://www.youtube.com/watch?v=bUT7Mc2hjUY
+[P-31] Session 2025-11-18 @ 00:19:19 – https://www.youtube.com/watch?v=w__ahowb9p0
+[P-34] Session 2026-01-13 @ 00:14:58 – https://www.youtube.com/watch?v=w4LB1s9_3rs

@@ -14,4 +14,4 @@ Ein Trank aus [Cookies](/characters/cookie.md) Alchemievorrat, der [Esterossas](
 
 # Belege
 
-1. Session 2025-10-21 @ 01:12:29 (https://www.youtube.com/watch?v=sxFhbtwoefA)
+[P-28] Session 2025-10-21 @ 01:12:29 (https://www.youtube.com/watch?v=sxFhbtwoefA)

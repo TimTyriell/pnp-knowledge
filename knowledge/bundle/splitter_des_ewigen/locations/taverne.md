@@ -14,4 +14,4 @@ Der zentrale [Treffpunkt](/locations/treffpunkt.md) der Stadt, in dem die Helden
 
 # Belege
 
-1. Session 2026-07-29 @ 00:50:22 (https://www.youtube.com/watch?v=umGyKLkefJI)
+[S1-01-A] Session 2026-07-29 @ 00:50:22 (https://www.youtube.com/watch?v=umGyKLkefJI)

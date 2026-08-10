@@ -14,4 +14,4 @@ Ein von [Brass](/npcs/brass.md) initiierter Kampf gegen eine gefährliche amphib
 
 # Belege
 
-1. Session 2025-06-03 @ 00:37:52 (https://www.youtube.com/watch?v=jtYR4Je0a18)
+[P-10] Session 2025-06-03 @ 00:37:52 (https://www.youtube.com/watch?v=jtYR4Je0a18)

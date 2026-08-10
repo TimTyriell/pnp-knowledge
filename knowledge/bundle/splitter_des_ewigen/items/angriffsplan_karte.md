@@ -14,4 +14,4 @@ Eine Karte mit einem Angriffsplan der [Goblins](/factions/goblins.md) auf ein na
 
 # Belege
 
-1. Session 2025-04-01 @ 01:59:58 (https://www.youtube.com/watch?v=LZIuUzc3F18)
+[P-02] Session 2025-04-01 @ 01:59:58 (https://www.youtube.com/watch?v=LZIuUzc3F18)

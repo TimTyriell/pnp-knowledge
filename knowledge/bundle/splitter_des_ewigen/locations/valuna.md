@@ -14,4 +14,4 @@ Valuna ist eine Stadt der Assassinen im Norden, weit entfernt von [Ehrenfels](/l
 
 # Belege
 
-1. Session 2026-08-04 @ 02:10:51 (https://www.youtube.com/watch?v=qRj2t3wQHfs)
+[S1-02-A] Session 2026-08-04 @ 02:10:51 (https://www.youtube.com/watch?v=qRj2t3wQHfs)

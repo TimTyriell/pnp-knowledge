@@ -14,4 +14,4 @@ Die Gruppe wird von [Joar Vanur](/npcs/joar_vanur.md) beauftragt, den gefangenen
 
 # Belege
 
-1. Session 2025-04-30 @ 01:12:48 (https://www.youtube.com/watch?v=fsCOiSkKKTE)
+[P-06] Session 2025-04-30 @ 01:12:48 (https://www.youtube.com/watch?v=fsCOiSkKKTE)

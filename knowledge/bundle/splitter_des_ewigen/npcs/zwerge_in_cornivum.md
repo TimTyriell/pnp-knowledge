@@ -13,4 +13,4 @@ Zwei Zwerge arbeiten im Dorf und sind auf das Extrahieren von Gift spezialisiert
 
 # Belege
 
-1. Session 2025-06-03 @ 00:24:29 (https://www.youtube.com/watch?v=jtYR4Je0a18)
+[P-10] Session 2025-06-03 @ 00:24:29 (https://www.youtube.com/watch?v=jtYR4Je0a18)

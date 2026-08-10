@@ -14,4 +14,4 @@ Der Kopf des von [Dodo](/characters/dodo.md) getöteten Goblin-Kindes. [Esteross
 
 # Belege
 
-1. Session 2025-04-01 @ 01:12:21 (https://www.youtube.com/watch?v=LZIuUzc3F18)
+[P-02] Session 2025-04-01 @ 01:12:21 (https://www.youtube.com/watch?v=LZIuUzc3F18)

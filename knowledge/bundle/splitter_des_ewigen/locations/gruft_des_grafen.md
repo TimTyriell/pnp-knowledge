@@ -29,5 +29,5 @@ Die Heldengruppe trifft in der Thronhalle auf Graf Voras, der sie zunächst empf
 
 # Belege
 
-1. Session 2025-06-25 @ 00:15:03 – unterirdisches Reich des Grafen Voras, luxuriöse Ausstattung, magischer Mechanismus, Thronhalle, Tobsucht nach Buchzerstörung. (https://www.youtube.com/watch?v=tpkO9uGw6-I)
-2. Session 2025-06-25 @ 00:42:54 – gewaltiger Raum mit uralten Büchern, Tränken, Artefakten, Drachenei; Auffinden des versiegelten Buchs, Öffnung mit schwarzem Palantir, Seelenprüfung. (https://www.youtube.com/watch?v=tpkO9uGw6-I)
+[P-13a] Session 2025-06-25 @ 00:15:03 – unterirdisches Reich des Grafen Voras, luxuriöse Ausstattung, magischer Mechanismus, Thronhalle, Tobsucht nach Buchzerstörung. (https://www.youtube.com/watch?v=tpkO9uGw6-I)
+[P-13b] Session 2025-06-25 @ 00:42:54 – gewaltiger Raum mit uralten Büchern, Tränken, Artefakten, Drachenei; Auffinden des versiegelten Buchs, Öffnung mit schwarzem Palantir, Seelenprüfung. (https://www.youtube.com/watch?v=tpkO9uGw6-I)

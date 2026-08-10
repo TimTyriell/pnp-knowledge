@@ -14,4 +14,4 @@ Ein Dolch, den ein reanimierter Leichnam aus seiner eigenen Rippe formt und [Sar
 
 # Belege
 
-1. Session 2026-08-06 @ 00:45:14 (https://www.youtube.com/watch?v=0HyPHao8s_k)
+[S1-03-B] Session 2026-08-06 @ 00:45:14 (https://www.youtube.com/watch?v=0HyPHao8s_k)

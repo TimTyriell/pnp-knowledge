@@ -14,4 +14,4 @@ Ein uraltes Pergament, beschrieben mit roter Tinte, das [Safin Al Barak](/npcs/s
 
 # Belege
 
-1. Session 2026-03-03 @ 01:37:48 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
+[P-40] Session 2026-03-03 @ 01:37:48 (https://www.youtube.com/watch?v=BRUNuNKTeOg)

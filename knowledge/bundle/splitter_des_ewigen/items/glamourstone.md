@@ -14,4 +14,4 @@ Ein Stein, der eine Illusion einer Person erzeugen kann, wenn deren Kopie gespei
 
 # Belege
 
-1. Session 2025-06-10 @ 00:19:24 (https://www.youtube.com/watch?v=cLkCu3Iq3y8)
+[P-11] Session 2025-06-10 @ 00:19:24 (https://www.youtube.com/watch?v=cLkCu3Iq3y8)

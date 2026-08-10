@@ -14,4 +14,4 @@ Als Lunara die starken Kristalle in der Höhle berührt, wird sie von einer Visi
 
 # Belege
 
-1. Session 2026-05-19 @ 01:33:07 (https://www.youtube.com/watch?v=xEcGJeaNixI)
+[P-51] Session 2026-05-19 @ 01:33:07 (https://www.youtube.com/watch?v=xEcGJeaNixI)

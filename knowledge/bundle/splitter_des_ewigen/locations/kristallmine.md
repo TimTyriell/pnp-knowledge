@@ -24,5 +24,5 @@ Am Rande des Halblinghofs gelegen, beherbergt die Mine angekettete Leichen. [Sar
 
 # Belege
 
-1. Session 2025-10-07, 00:53:26 – [Video](https://www.youtube.com/watch?v=qVAF_54S8Vw)
-2. Session 2026-08-06, 00:40:22 – [Video](https://www.youtube.com/watch?v=0HyPHao8s_k)
+[P-26] Session 2025-10-07, 00:53:26 – [Video](https://www.youtube.com/watch?v=qVAF_54S8Vw)
+[S1-03-B] Session 2026-08-06, 00:40:22 – [Video](https://www.youtube.com/watch?v=0HyPHao8s_k)

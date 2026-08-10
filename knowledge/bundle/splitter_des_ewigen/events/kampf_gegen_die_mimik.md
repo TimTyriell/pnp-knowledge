@@ -16,4 +16,4 @@ Eine als harmlose Muschel getarnte Mimic greift an und verschluckt fast [Cookie]
 
 # Belege
 
-1. Session 2025-06-10 @ 01:17:26 (https://www.youtube.com/watch?v=cLkCu3Iq3y8)
+[P-11] Session 2025-06-10 @ 01:17:26 (https://www.youtube.com/watch?v=cLkCu3Iq3y8)

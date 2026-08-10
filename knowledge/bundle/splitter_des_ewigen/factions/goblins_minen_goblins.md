@@ -22,4 +22,4 @@ Die Goblins hausen in primitiven Verhältnissen. Sie züchten Goblin-Hunde und t
 
 # Belege
 
-1. Session 2026-07-23 @ 00:14:11 – https://www.youtube.com/watch?v=Gb-TEbCFF0M
+[S1-02-B] Session 2026-07-23 @ 00:14:11 – https://www.youtube.com/watch?v=Gb-TEbCFF0M

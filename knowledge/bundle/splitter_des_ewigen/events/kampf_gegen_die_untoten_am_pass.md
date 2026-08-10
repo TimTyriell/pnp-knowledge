@@ -14,4 +14,4 @@ Die Gruppe verteidigte den [Pass](/locations/pass.md) gegen eine Horde Untoter u
 
 # Belege
 
-1. Session 2025-09-23 @ 01:28:17 (https://www.youtube.com/watch?v=DGzfqVigS0g)
+[P-24] Session 2025-09-23 @ 01:28:17 (https://www.youtube.com/watch?v=DGzfqVigS0g)

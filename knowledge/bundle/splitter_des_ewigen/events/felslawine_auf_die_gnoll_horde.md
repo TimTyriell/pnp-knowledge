@@ -14,4 +14,4 @@ Bruma und [Kaya](/characters/kaya.md) zaubern gemeinsam (Tag Team, drei Hope ges
 
 # Belege
 
-1. Session 2026-07-23 @ 01:20:38 (https://www.youtube.com/watch?v=Gb-TEbCFF0M)
+[S1-02-B] Session 2026-07-23 @ 01:20:38 (https://www.youtube.com/watch?v=Gb-TEbCFF0M)

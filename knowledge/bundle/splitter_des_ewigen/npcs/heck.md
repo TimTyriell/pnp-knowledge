@@ -13,4 +13,4 @@ Die Heck ist eine Hexe, die von den Gnollen als Autorität anerkannt wird. [Lind
 
 # Belege
 
-1. Session 2025-05-06 @ 00:54:45 (https://www.youtube.com/watch?v=e0v6AFGd4mE)
+[P-07] Session 2025-05-06 @ 00:54:45 (https://www.youtube.com/watch?v=e0v6AFGd4mE)

@@ -14,4 +14,4 @@ In der erstarrten [Splitterwelt](/domains/splitterwelt.md) konfrontiert Lindo [B
 
 # Belege
 
-1. Session 2026-01-20 @ 01:44:36 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
+[P-35] Session 2026-01-20 @ 01:44:36 (https://www.youtube.com/watch?v=H3ckYdTv4y8)

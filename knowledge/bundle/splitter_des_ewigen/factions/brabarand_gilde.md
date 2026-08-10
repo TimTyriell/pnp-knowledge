@@ -24,4 +24,4 @@ Die Brabarand-Gilde wurde von einem unbekannten Auftraggeber mit einer ganzen Tr
 
 ## Belege
 
-[1] Session 2025-07-22 @ 01:15:00 (https://www.youtube.com/watch?v=BRRCUgW4xRo) – Erste Erwähnung der Gilde, ihrer Merkmale und des Auftrags gegen die Heldengruppe.
+[P-15] Session 2025-07-22 @ 01:15:00 (https://www.youtube.com/watch?v=BRRCUgW4xRo) – Erste Erwähnung der Gilde, ihrer Merkmale und des Auftrags gegen die Heldengruppe.

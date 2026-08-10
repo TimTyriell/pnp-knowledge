@@ -14,4 +14,4 @@ Vor der Gruft steht ein untoter Krieger, der [Dodo](/characters/dodo.md) als „
 
 # Belege
 
-1. Session 2026-03-10 @ 00:35:02 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
+[P-41] Session 2026-03-10 @ 00:35:02 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)

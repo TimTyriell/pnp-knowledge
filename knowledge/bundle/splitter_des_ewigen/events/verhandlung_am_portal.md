@@ -14,4 +14,4 @@ Die Gruppe tritt an die Stein-Clangs heran und bittet um Durchlass, wird jedoch 
 
 # Belege
 
-1. Session 2026-05-19 @ 00:08:30 (https://www.youtube.com/watch?v=xEcGJeaNixI)
+[P-51] Session 2026-05-19 @ 00:08:30 (https://www.youtube.com/watch?v=xEcGJeaNixI)

@@ -35,8 +35,8 @@ In seiner ursprünglichen Form wird Cornivum von abgehärteten, misstrauischen E
 - **Die Gruppe:** Charaktere wie Esterossa, Lindo Laut, Rotunas, Dodo und Lunara Velora erreichen Cornivum in einer frühen Phase und erhalten dort Rast und Informationen. Ihre genaue Rolle bei den späteren Ereignissen ist offen.
 
 ## Chronologie
-1. **Frühe Phase (um Session 2025-06-03):** Cornivum ist ein kleines, abgeschiedenes Einsiedlerdorf im Sumpf, das die Gruppe nach einem anstrengenden Tagesmarsch erreicht. Die Bewohner sind misstrauisch, die Häuser stehen auf Stelzen. Der Ort dient als letzter Anlaufpunkt vor der Wildnis.
-2. **Übergangsjahr:** [Lenra](/npcs/lenra.md) beginnt, das Dorf zu übernehmen und für ihre Zwecke umzugestalten. Die Siedlung wächst stetig und verändert ihren Charakter von einer abgelegenen Siedlung zu einer Festung.
+[P-10] **Frühe Phase (um Session 2025-06-03):** Cornivum ist ein kleines, abgeschiedenes Einsiedlerdorf im Sumpf, das die Gruppe nach einem anstrengenden Tagesmarsch erreicht. Die Bewohner sind misstrauisch, die Häuser stehen auf Stelzen. Der Ort dient als letzter Anlaufpunkt vor der Wildnis.
+[P-57] **Übergangsjahr:** [Lenra](/npcs/lenra.md) beginnt, das Dorf zu übernehmen und für ihre Zwecke umzugestalten. Die Siedlung wächst stetig und verändert ihren Charakter von einer abgelegenen Siedlung zu einer Festung.
 3. **Endphase des Prologs (Session 2026-07-21):** Cornivum ist nun eine ausgewachsene Festung. In der finalen Szene marschiert eine gewaltige Armee aus Gnollen, Bugbears, Goblins, Trollen, Ogern und weiteren Kreaturen aus dem Tor, angeführt von einem großen Bären und düsteren Gestalten. Dieser Auszug markiert das Ende des Prologs und den Auftakt zur ersten großen Bedrohung der Kampagne.
 
 ## Offene Fragen
@@ -46,5 +46,5 @@ In seiner ursprünglichen Form wird Cornivum von abgehärteten, misstrauischen E
 - Wie genau gelang es [Lenra](/npcs/lenra.md), innerhalb eines Jahres eine derart große Streitmacht zu züchten, und welche weiteren Kräfte schlummern in der Festung?
 
 ## Belege
-[1] Session 2025-06-03 @ 00:04:02 (https://www.youtube.com/watch?v=jtYR4Je0a18) – Beschreibung des ursprünglichen Sumpfdorfes, Architektur, Umgebung, Bewohner.  
-[2] Session 2026-07-21 @ 01:52:50 (https://www.youtube.com/watch?v=KNV4oNGJ0tw) – Enthüllung der Festung Cornivum und Ausmarsch der Monsterarmee, Ende des Prologs.
+[P-10] Session 2025-06-03 @ 00:04:02 (https://www.youtube.com/watch?v=jtYR4Je0a18) – Beschreibung des ursprünglichen Sumpfdorfes, Architektur, Umgebung, Bewohner.
+[P-57] Session 2026-07-21 @ 01:52:50 (https://www.youtube.com/watch?v=KNV4oNGJ0tw) – Enthüllung der Festung Cornivum und Ausmarsch der Monsterarmee, Ende des Prologs.

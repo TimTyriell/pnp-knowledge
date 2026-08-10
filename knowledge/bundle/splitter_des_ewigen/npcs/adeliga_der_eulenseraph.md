@@ -22,6 +22,6 @@ Als Paladin Jorans verbreitet Adeliga den Segen ihres Gottes. Sie ist ein Eulen-
 Im Ringtal (Session 2026-06-04) vollzieht Adeliga an [Sange](/characters/sange.md) eine leuchtende Zeremonie, bei der Sange eine spirituelle Erfahrung macht. Die Begegnung hinterlässt ein Gefühl der Verbundenheit. Bei einer späteren Begegnung an einer Statue Jorans (Session 2026-08-06) segnet sie Sange erneut mit einem Gebet und gewährt ihm, seinen nächsten Rally-Wurf als automatischen Krit zu behandeln.
 
 # Belege
-1. Session 2026-06-04, 01:18:21 – https://www.youtube.com/watch?v=EGNh8O7pE5Q
-2. Session 2026-08-06, 01:11:31 – https://www.youtube.com/watch?v=0HyPHao8s_k
+[P-53] Session 2026-06-04, 01:18:21 – https://www.youtube.com/watch?v=EGNh8O7pE5Q
+[S1-03-B] Session 2026-08-06, 01:11:31 – https://www.youtube.com/watch?v=0HyPHao8s_k
 3. Kanon_Entscheidungen.md (Spielleitungs-Festlegung)

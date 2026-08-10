@@ -14,4 +14,4 @@ subtype: Ritual
 
 # Belege
 
-1. Session 2026-08-04 @ 01:28:20 (https://www.youtube.com/watch?v=qRj2t3wQHfs)
+[S1-02-A] Session 2026-08-04 @ 01:28:20 (https://www.youtube.com/watch?v=qRj2t3wQHfs)

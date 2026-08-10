@@ -18,4 +18,4 @@ Die Gilde trat an die Gruppe heran, um ihr einen Auftrag gegen die Silberkerne a
 
 # Belege
 
-1. Session 2026-03-18, 00:26:31 – [YouTube](https://www.youtube.com/watch?v=HHXxsASLrbQ)
+[P-42] Session 2026-03-18, 00:26:31 – [YouTube](https://www.youtube.com/watch?v=HHXxsASLrbQ)

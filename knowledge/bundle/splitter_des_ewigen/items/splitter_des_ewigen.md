@@ -26,5 +26,5 @@ Im Zuge der Ereignisse um den Tempel gelang es Esterossa, den Splitter zu berüh
 
 # Belege
 
-[1] Session 2026-06-16 @ 01:37:14 – https://www.youtube.com/watch?v=qe0ck8hvYpk  
-[2] Session 2026-07-21 @ 00:00:42 – https://www.youtube.com/watch?v=KNV4oNGJ0tw
+[P-55] Session 2026-06-16 @ 01:37:14 – https://www.youtube.com/watch?v=qe0ck8hvYpk
+[P-57] Session 2026-07-21 @ 00:00:42 – https://www.youtube.com/watch?v=KNV4oNGJ0tw

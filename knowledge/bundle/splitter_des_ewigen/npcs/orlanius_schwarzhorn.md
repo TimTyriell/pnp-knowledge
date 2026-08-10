@@ -21,5 +21,5 @@ Orlanius begleitet Pyrandas zu einer Konfrontation mit den Seraphen. Während de
 
 # Belege
 
-1. Session 2025-06-25, 01:39:19, [YouTube](https://www.youtube.com/watch?v=tpkO9uGw6-I)
-2. Session 2026-08-04, 02:02:21, [YouTube](https://www.youtube.com/watch?v=qRj2t3wQHfs)
+[P-13] Session 2025-06-25, 01:39:19, [YouTube](https://www.youtube.com/watch?v=tpkO9uGw6-I)
+[S1-02-A] Session 2026-08-04, 02:02:21, [YouTube](https://www.youtube.com/watch?v=qRj2t3wQHfs)

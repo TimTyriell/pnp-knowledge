@@ -14,4 +14,4 @@ Unmittelbar nach dem Kampf finden sich die Abenteurer am Tor von [Nebelwacht](/l
 
 # Belege
 
-1. Session 2026-05-27 @ 01:45:36 (https://www.youtube.com/watch?v=IYYmgpqsp7E)
+[P-52] Session 2026-05-27 @ 01:45:36 (https://www.youtube.com/watch?v=IYYmgpqsp7E)

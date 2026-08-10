@@ -14,4 +14,4 @@ Aus dem Hinterhalt greifen zwei Gruppen von Kobold-ähnlichen Kreaturen mit Blas
 
 # Belege
 
-1. Session 2026-05-19 @ 01:11:19 (https://www.youtube.com/watch?v=xEcGJeaNixI)
+[P-51] Session 2026-05-19 @ 01:11:19 (https://www.youtube.com/watch?v=xEcGJeaNixI)

@@ -14,4 +14,4 @@ Ein Stab mit der Sprache der Alten Götter, der vom Splitterwesen fallengelassen
 
 # Belege
 
-1. Session 2025-11-25 @ 00:56:25 (https://www.youtube.com/watch?v=wd5R4fJfngY)
+[P-32] Session 2025-11-25 @ 00:56:25 (https://www.youtube.com/watch?v=wd5R4fJfngY)

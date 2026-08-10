@@ -13,4 +13,4 @@ Eine der beiden Seelen in [Lindo Lauts Amulett](/items/amulett_des_heiligen_dura
 
 # Belege
 
-1. Session 2025-09-02 @ 01:49:20 (https://www.youtube.com/watch?v=TLZOH7TlGhk)
+[P-20] Session 2025-09-02 @ 01:49:20 (https://www.youtube.com/watch?v=TLZOH7TlGhk)

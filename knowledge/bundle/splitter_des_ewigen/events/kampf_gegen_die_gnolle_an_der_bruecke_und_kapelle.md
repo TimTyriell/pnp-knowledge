@@ -14,4 +14,4 @@ Eine mehrteilige Schlacht, die mit einem Hinterhalt der Gnolle beginnt, als die 
 
 # Belege
 
-1. Session 2025-05-06 @ 00:50:33 (https://www.youtube.com/watch?v=e0v6AFGd4mE)
+[P-07] Session 2025-05-06 @ 00:50:33 (https://www.youtube.com/watch?v=e0v6AFGd4mE)

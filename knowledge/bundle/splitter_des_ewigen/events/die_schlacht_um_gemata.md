@@ -14,4 +14,4 @@ Der große Goblinangriff auf [Gemata](/locations/gemata.md), bei dem die Helden 
 
 # Belege
 
-1. Session 2025-04-23 @ 00:23:33 (https://www.youtube.com/watch?v=z3C-bewKqUs)
+[P-05] Session 2025-04-23 @ 00:23:33 (https://www.youtube.com/watch?v=z3C-bewKqUs)

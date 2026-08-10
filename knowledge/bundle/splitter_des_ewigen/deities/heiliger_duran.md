@@ -24,23 +24,23 @@ Durans Erbe bildet einen zentralen Strang der Kampagne. Die Helden stoßen in de
 
 ### Historische Gestalt
 
-Duran war „kein wirklicher Gott, aber ein Heiliger, einer der von den Göttern auserwählt worden war" [1]. Er führte sein Volk „mit sehr viel Wissen, mit sehr viel Kraft und Stärke" [1] und wirkte als Kleriker. Sein plötzliches Verschwinden ist historisch nicht aufgeklärt — „man weiß nicht wirklich wieso" [1]. Dass sich sein Schrein auf einer abgelegenen Insel befindet, nährt die Vermutung, er könnte seine letzten Tage fernab des Festlandes verbracht haben.
+Duran war „kein wirklicher Gott, aber ein Heiliger, einer der von den Göttern auserwählt worden war" [P-07]. Er führte sein Volk „mit sehr viel Wissen, mit sehr viel Kraft und Stärke" [P-07] und wirkte als Kleriker. Sein plötzliches Verschwinden ist historisch nicht aufgeklärt — „man weiß nicht wirklich wieso" [P-07]. Dass sich sein Schrein auf einer abgelegenen Insel befindet, nährt die Vermutung, er könnte seine letzten Tage fernab des Festlandes verbracht haben.
 
 ### Artefakte
 
 Zwei Gegenstände dienten als Durans Erkennungsmerkmale und sind von magischer Natur:
 
-1. **Das Amulett**: Ein Schmuckstück, das Duran zu Lebzeiten auszeichnete. Es leuchtete ursprünglich golden oder silbern, veränderte sich jedoch nach der Tötung der himmlischen Engel: ein „tief dunkelroter Punkt" erschien darauf, es vibrierte, und die Helden spürten, dass „etwas Düsteres" darin Einzug gehalten hatte [2]. Der Graf deutet an, dass der Segen von dem Amulett genommen wurde.
+[P-07] **Das Amulett**: Ein Schmuckstück, das Duran zu Lebzeiten auszeichnete. Es leuchtete ursprünglich golden oder silbern, veränderte sich jedoch nach der Tötung der himmlischen Engel: ein „tief dunkelroter Punkt" erschien darauf, es vibrierte, und die Helden spürten, dass „etwas Düsteres" darin Einzug gehalten hatte [2]. Der Graf deutet an, dass der Segen von dem Amulett genommen wurde.
 
-2. **Der Morgenstern**: Eine magische Waffe, die neben dem Amulett zu Durans charakteristischen Insignien zählte. Über seine spezifischen Kräfte ist nichts Näheres bekannt.
+[P-13] **Der Morgenstern**: Eine magische Waffe, die neben dem Amulett zu Durans charakteristischen Insignien zählte. Über seine spezifischen Kräfte ist nichts Näheres bekannt.
 
 ## Beziehungen und Verbindungen
 
 - **[Esterossa](/characters/esterossa.md)**: Die Lorborn-Gelehrte identifiziert den Schrein und vermittelt den Helden das historische Wissen über Duran, das auf dem Festland überliefert ist.
 - **Die Helden**: Sie sind die Entdecker von Durans Schrein und Träger seiner Artefakte. Ihre Handlung in der Prüfung — die Vernichtung der Engel — bringt sie in einen direkten Konflikt mit Durans göttlichem Willen.
-- **Der Graf**: Ein frommer Adliger auf der Insel, der Duran verehrt und die Zerstörung der Engel als Sakrileg betrachtet. Seine drastische Reaktion — er wirft einen Stuhl um, flucht in einer fremden Sprache und verlässt wütend den Raum [2] — unterstreicht die Schwere des Vergehens aus Sicht der Gläubigen.
-- **Die himmlischen Engel**: Wesen, die Duran dienen oder ihm geweiht sind. Sie werden in der Prüfung von den Helden als Gegner identifiziert („Ihr habt nicht die heiligen... Engel unserer Götter vernichtet, richtig?" [2]) und vollständig vernichtet.
-- **[Baran](/npcs/baran.md)**: Ein möglicher früherer Träger eines ähnlichen Amuletts. Die Verbindung ist spekulativ; Esterossa verwirft den Gedanken im selben Atemzug („Ne, das war nicht" [1]).
+- **Der Graf**: Ein frommer Adliger auf der Insel, der Duran verehrt und die Zerstörung der Engel als Sakrileg betrachtet. Seine drastische Reaktion — er wirft einen Stuhl um, flucht in einer fremden Sprache und verlässt wütend den Raum [P-13] — unterstreicht die Schwere des Vergehens aus Sicht der Gläubigen.
+- **Die himmlischen Engel**: Wesen, die Duran dienen oder ihm geweiht sind. Sie werden in der Prüfung von den Helden als Gegner identifiziert („Ihr habt nicht die heiligen... Engel unserer Götter vernichtet, richtig?" [P-13]) und vollständig vernichtet.
+- **[Baran](/npcs/baran.md)**: Ein möglicher früherer Träger eines ähnlichen Amuletts. Die Verbindung ist spekulativ; Esterossa verwirft den Gedanken im selben Atemzug („Ne, das war nicht" [P-07]).
 
 ## Chronologie
 
@@ -50,9 +50,9 @@ Die Helden erkunden die Ruinen der Sanddorninseln und stoßen auf einen Schrein 
 
 ### Session 2025-06-25 — Der Zorn Durans
 
-Die Helden suchen den Grafen auf und berichten von ihren Erlebnissen. Als sie von einer Prüfung erzählen, in der ihre Seelen in eine andere Dimension gerissen wurden und sie gegen vier Gestalten kämpften, erkennt der Graf die Beschreibung sofort: Es handelte sich nicht um Dämonen, sondern um „die heiligen Engel unserer Götter" [2]. Die Helden bestätigen, dass sie die Engel vernichtet haben.
+Die Helden suchen den Grafen auf und berichten von ihren Erlebnissen. Als sie von einer Prüfung erzählen, in der ihre Seelen in eine andere Dimension gerissen wurden und sie gegen vier Gestalten kämpften, erkennt der Graf die Beschreibung sofort: Es handelte sich nicht um Dämonen, sondern um „die heiligen Engel unserer Götter" [P-13]. Die Helden bestätigen, dass sie die Engel vernichtet haben.
 
-Diese Offenbarung löst eine unmittelbare physische Reaktion bei Durans Amulett aus: Es hört auf, golden oder silbern zu leuchten, zeigt stattdessen einen tief dunkelroten Punkt und beginnt zu vibrieren. Das Amulett fühlt sich nun „düster" an [2]. Der Graf, entsetzt über das Sakrileg, verliert die Fassung, zerstört einen Stuhl, flucht und verlässt den Raum. Er macht unmissverständlich klar, dass die Tötung der Engel Duran selbst verärgert und der göttliche Segen von dem Amulett genommen wurde.
+Diese Offenbarung löst eine unmittelbare physische Reaktion bei Durans Amulett aus: Es hört auf, golden oder silbern zu leuchten, zeigt stattdessen einen tief dunkelroten Punkt und beginnt zu vibrieren. Das Amulett fühlt sich nun „düster" an [P-13]. Der Graf, entsetzt über das Sakrileg, verliert die Fassung, zerstört einen Stuhl, flucht und verlässt den Raum. Er macht unmissverständlich klar, dass die Tötung der Engel Duran selbst verärgert und der göttliche Segen von dem Amulett genommen wurde.
 
 ## Offene Fragen
 
@@ -64,5 +64,5 @@ Diese Offenbarung löst eine unmittelbare physische Reaktion bei Durans Amulett 
 
 ## Belege
 
-[1] Session 2025-05-06, 00:14:33, https://www.youtube.com/watch?v=e0v6AFGd4mE
-[2] Session 2025-06-25, 01:29:17, https://www.youtube.com/watch?v=tpkO9uGw6-I
+[P-07] Session 2025-05-06, 00:14:33, https://www.youtube.com/watch?v=e0v6AFGd4mE
+[P-13] Session 2025-06-25, 01:29:17, https://www.youtube.com/watch?v=tpkO9uGw6-I

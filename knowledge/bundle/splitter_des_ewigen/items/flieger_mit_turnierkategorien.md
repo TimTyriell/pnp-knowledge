@@ -14,4 +14,4 @@ Ein vom Anmeldestand ausgehändigter Papierflieger, auf dem die sechs Diszipline
 
 # Belege
 
-1. Session 2025-10-14 @ 00:18:29 (https://www.youtube.com/watch?v=cUtz87UCHu4)
+[P-27] Session 2025-10-14 @ 00:18:29 (https://www.youtube.com/watch?v=cUtz87UCHu4)

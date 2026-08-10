@@ -14,4 +14,4 @@ Ein prunkvoller Ring mit ungewisser magischer Aura, den [Valeria](/characters/va
 
 # Belege
 
-1. Session 2025-11-14 @ 00:43:18 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)
+[P-30] Session 2025-11-14 @ 00:43:18 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)

@@ -14,4 +14,4 @@ In einem Ritual unter [Vasuls](/deities/vharzul.md) Leitung zerbricht [Lindo Lau
 
 # Belege
 
-1. Session 2026-03-31 @ 01:00:18 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
+[P-45] Session 2026-03-31 @ 01:00:18 (https://www.youtube.com/watch?v=Ee-K84wcxLM)

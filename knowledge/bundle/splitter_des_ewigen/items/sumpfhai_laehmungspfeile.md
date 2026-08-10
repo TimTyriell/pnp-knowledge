@@ -14,4 +14,4 @@ Pfeile, deren Spitzen mit dem Nervengift von Sumpfhaien präpariert sind. Das Gi
 
 # Belege
 
-1. Session 2025-06-03 @ 00:20:30 (https://www.youtube.com/watch?v=jtYR4Je0a18)
+[P-10] Session 2025-06-03 @ 00:20:30 (https://www.youtube.com/watch?v=jtYR4Je0a18)

@@ -14,4 +14,4 @@ Das Gildenhaus ist ein imponierendes Gebäude mit einem strategischen Tisch, an 
 
 # Belege
 
-1. Session 2025-09-17 @ 00:15:57 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
+[P-23] Session 2025-09-17 @ 00:15:57 (https://www.youtube.com/watch?v=AhIT8dcxw2o)

@@ -50,9 +50,9 @@ Die neuen Götter offenbaren sich nicht öffentlich, sondern „reden mit denen,
 
 ## Chronologie
 
-1. **Session 2026-06-04 (Nacht in Pinzax):** Saris untersucht spätabends die Statue mit der Inschrift „Joran, der Münzenzähler“. Adelia gesellt sich zu ihm, offenbart Joran als ihren Patron und demonstriert beiläufig seine Gnade durch ein goldenes Augenglimmen. Später bietet sie Sanges Segen an; dieser lässt sich taufen und erhält einen Timer als Verbindungssymbol.
+[P-53] **Session 2026-06-04 (Nacht in Pinzax):** Saris untersucht spätabends die Statue mit der Inschrift „Joran, der Münzenzähler“. Adelia gesellt sich zu ihm, offenbart Joran als ihren Patron und demonstriert beiläufig seine Gnade durch ein goldenes Augenglimmen. Später bietet sie Sanges Segen an; dieser lässt sich taufen und erhält einen Timer als Verbindungssymbol.
 
-2. **Session 2026-07-10 (etwa anderthalb Tage später):** Sange reflektiert die innere Veränderung durch Jorans Segen: Seine Blutmagie ist ruhiger geworden, ein Lichtfunke durchzieht das rote Chaos. Saris bespricht Sanges neuen Glaubensstatus mit seinem Schutzgeist.
+[S1-01-B] **Session 2026-07-10 (etwa anderthalb Tage später):** Sange reflektiert die innere Veränderung durch Jorans Segen: Seine Blutmagie ist ruhiger geworden, ein Lichtfunke durchzieht das rote Chaos. Saris bespricht Sanges neuen Glaubensstatus mit seinem Schutzgeist.
 
 ## Offene Fragen
 
@@ -62,5 +62,5 @@ Die neuen Götter offenbaren sich nicht öffentlich, sondern „reden mit denen,
 
 ## Belege
 
-1. Session 2026-06-04 @ 01:17:57–01:20:32 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
-2. Session 2026-07-10 @ 00:05:29–00:07:45 (https://www.youtube.com/watch?v=H-eHSlfxUAg)
+[P-53] Session 2026-06-04 @ 01:17:57–01:20:32 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
+[S1-01-B] Session 2026-07-10 @ 00:05:29–00:07:45 (https://www.youtube.com/watch?v=H-eHSlfxUAg)

@@ -23,5 +23,5 @@ Als Kleinringtal evakuiert werden soll, weigert sich Xenia: Die Taverne ist ihr 
 
 # Belege
 
-1. Session 2026-06-04 @ 00:53:24 – https://www.youtube.com/watch?v=EGNh8O7pE5Q
-2. Session 2026-08-06 @ 01:41:58 – https://www.youtube.com/watch?v=0HyPHao8s_k
+[P-53] Session 2026-06-04 @ 00:53:24 – https://www.youtube.com/watch?v=EGNh8O7pE5Q
+[S1-03-B] Session 2026-08-06 @ 01:41:58 – https://www.youtube.com/watch?v=0HyPHao8s_k

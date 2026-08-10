@@ -14,4 +14,4 @@ Ein Ring, der die Pocket Domain erschafft und kontrolliert. Zieht [Lindo Laut](/
 
 # Belege
 
-1. Session 2026-02-11 @ 01:49:26 (https://www.youtube.com/watch?v=3C8SD-cyNPM)
+[P-37] Session 2026-02-11 @ 01:49:26 (https://www.youtube.com/watch?v=3C8SD-cyNPM)

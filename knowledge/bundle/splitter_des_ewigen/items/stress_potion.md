@@ -14,4 +14,4 @@ Ein Heiltrank, den Bruma von einem Halbling-Jungen erhält. Er stellt W6+1 Stres
 
 # Belege
 
-1. Session 2026-08-06 @ 01:09:47 (https://www.youtube.com/watch?v=0HyPHao8s_k)
+[S1-03-B] Session 2026-08-06 @ 01:09:47 (https://www.youtube.com/watch?v=0HyPHao8s_k)

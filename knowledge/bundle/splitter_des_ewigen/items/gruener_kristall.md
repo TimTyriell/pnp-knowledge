@@ -38,6 +38,6 @@ Die grünen Kristalle tauchten im Verlauf der Kampagne an verschiedenen Orten au
 
 ## Belege
 
-1. Session 2025-10-07 @ 00:35:18 – [YouTube](https://www.youtube.com/watch?v=qVAF_54S8Vw)
-2. Session 2026-01-20 @ 00:51:06 – [YouTube](https://www.youtube.com/watch?v=H3ckYdTv4y8)
-3. Session 2026-05-13 @ 00:39:24 – [YouTube](https://www.youtube.com/watch?v=4afPD9Q_5AY)
+[P-26] Session 2025-10-07 @ 00:35:18 – [YouTube](https://www.youtube.com/watch?v=qVAF_54S8Vw)
+[P-35] Session 2026-01-20 @ 00:51:06 – [YouTube](https://www.youtube.com/watch?v=H3ckYdTv4y8)
+[P-50] Session 2026-05-13 @ 00:39:24 – [YouTube](https://www.youtube.com/watch?v=4afPD9Q_5AY)

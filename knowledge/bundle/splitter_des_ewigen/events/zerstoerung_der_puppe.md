@@ -14,4 +14,4 @@ Das Kind entdeckt die unheimliche [Strohpuppe](/items/strohpuppe.md), die [Sange
 
 # Belege
 
-1. Session 2026-06-04 @ 01:53:47 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
+[P-53] Session 2026-06-04 @ 01:53:47 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)

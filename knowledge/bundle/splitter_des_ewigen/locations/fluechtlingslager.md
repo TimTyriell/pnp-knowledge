@@ -16,4 +16,4 @@ Ein Lager am Wasser außerhalb des Waldes, wohin [Horatio](/npcs/horatio.md) dur
 
 # Belege
 
-1. Session 2025-11-14 @ 00:27:27 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)
+[P-30] Session 2025-11-14 @ 00:27:27 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)

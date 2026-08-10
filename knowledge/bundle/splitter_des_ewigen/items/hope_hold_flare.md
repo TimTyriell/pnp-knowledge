@@ -14,4 +14,4 @@ Ein magischer Gegenstand im Besitz von [Lindo Laut](/characters/lindo_laut.md), 
 
 # Belege
 
-1. Session 2026-07-29 @ 00:47:12 (https://www.youtube.com/watch?v=umGyKLkefJI)
+[S1-01-A] Session 2026-07-29 @ 00:47:12 (https://www.youtube.com/watch?v=umGyKLkefJI)

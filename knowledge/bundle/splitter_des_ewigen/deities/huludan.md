@@ -40,10 +40,10 @@ Zuvor war die Gruppe auf einen namenlosen Diener Huludans gestoßen, der ihnen i
 
 ## Chronologie
 
-1. **Vorspiel (vor den Sessions):** Huludan wird im Splitter des Ewigen gefangen. Vorgul’tar übernimmt die Wacht. Vasul entdeckt den Splitter und beginnt seine Pläne.
-2. **Session 2026-05-13:** Die Heldengruppe begegnet in einer Schlucht einem geheimnisvollen Wesen, das sich später als Diener Huludans erweist (im Transkript fälschlich „Holodarn“ genannt). Es segnet die Gruppe, führt sie und mahnt: *„Was auch immer ihr tut, es wird immer ein Nachspiel haben.“*
-3. **Session 2026-06-10:** In der Narbe versuchen die Helden verzweifelt, eine helfende Macht herbeizurufen. [Lindo Laut](/characters/lindo_laut.md) erinnert sich an den Namen *Huludan*, den [Lunara Velora](/characters/lunara_velora.md) einst erwähnt hatte. Beim Aussprechen leuchten alle Kristalle hell auf, ein tiefer Atemzug ohne Ausatmen zieht Richtung Osten. Lindo ruft den Namen erneut – noch stärkerer Sog, funkelnde Kristalle. Später aktiviert er durch eine weitere Nennung Huludans einen Kristall, der zu einer Monsterkreatur wird und Vasuls Diener verschlingt.
-4. **Session 2026-06-16:** Vasul offenbart in der Splitterhöhle seinen wahren Plan. Er ruft den Namen des Titanen („Holodarn“ im Transkript) und erläutert: *„Ihr wisst es, ihr kennt ihn, ihr habt seinen Namen gehört. Er ist der Schlüssel für die Welt. Wir werden in der Lage sein – kein Gott, kein alter, kein neuer.“* Die Höhle leuchtet grell lila, ein Atmen antwortet. Vasul präsentiert einen Kristall als Werkzeug, um den Schutz Vorgul’tars auszulöschen und Huludan auferstehen zu lassen.
+[P-50] **Vorspiel (vor den Sessions):** Huludan wird im Splitter des Ewigen gefangen. Vorgul’tar übernimmt die Wacht. Vasul entdeckt den Splitter und beginnt seine Pläne.
+[P-54] **Session 2026-05-13:** Die Heldengruppe begegnet in einer Schlucht einem geheimnisvollen Wesen, das sich später als Diener Huludans erweist (im Transkript fälschlich „Holodarn“ genannt). Es segnet die Gruppe, führt sie und mahnt: *„Was auch immer ihr tut, es wird immer ein Nachspiel haben.“*
+[P-55] **Session 2026-06-10:** In der Narbe versuchen die Helden verzweifelt, eine helfende Macht herbeizurufen. [Lindo Laut](/characters/lindo_laut.md) erinnert sich an den Namen *Huludan*, den [Lunara Velora](/characters/lunara_velora.md) einst erwähnt hatte. Beim Aussprechen leuchten alle Kristalle hell auf, ein tiefer Atemzug ohne Ausatmen zieht Richtung Osten. Lindo ruft den Namen erneut – noch stärkerer Sog, funkelnde Kristalle. Später aktiviert er durch eine weitere Nennung Huludans einen Kristall, der zu einer Monsterkreatur wird und Vasuls Diener verschlingt.
+[P-57] **Session 2026-06-16:** Vasul offenbart in der Splitterhöhle seinen wahren Plan. Er ruft den Namen des Titanen („Holodarn“ im Transkript) und erläutert: *„Ihr wisst es, ihr kennt ihn, ihr habt seinen Namen gehört. Er ist der Schlüssel für die Welt. Wir werden in der Lage sein – kein Gott, kein alter, kein neuer.“* Die Höhle leuchtet grell lila, ein Atmen antwortet. Vasul präsentiert einen Kristall als Werkzeug, um den Schutz Vorgul’tars auszulöschen und Huludan auferstehen zu lassen.
 5. **Session 2026-07-21:** [Esterossa](/characters/esterossa.md) hat von Huludan („von besagtem Huludan“) ein leeres Schwert erhalten. Noch vor Vasuls Berührung des Splitters durchtrennt sie mit diesem Schwert Vasuls Gestalt; die Klinge absorbiert seine Essenz. Ohne zu zögern geht Esterossa einen Schritt weiter und berührt selbst den Splitter des Ewigen. Eine Abstimmung über vier mögliche Konsequenzen wird abgehalten, deren Ausgang vorerst nicht mitgeteilt wird (Magie defekt, weiterer Tageszyklus, Eclipse/Rote Nacht mit neuer Magie).
 
 ## Offene Fragen
@@ -55,7 +55,7 @@ Zuvor war die Gruppe auf einen namenlosen Diener Huludans gestoßen, der ihnen i
 
 ## Belege
 
-[1] Session 2026-05-13 @ 01:38:05 (https://www.youtube.com/watch?v=4afPD9Q_5AY)  
-[2] Session 2026-06-10 @ 00:32:01 (https://www.youtube.com/watch?v=_3tLSiT1tck)  
-[3] Session 2026-06-16 @ 01:41:47 (https://www.youtube.com/watch?v=qe0ck8hvYpk)  
-[4] Session 2026-07-21 @ 00:00:42 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
+[P-50] Session 2026-05-13 @ 01:38:05 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
+[P-54] Session 2026-06-10 @ 00:32:01 (https://www.youtube.com/watch?v=_3tLSiT1tck)
+[P-55] Session 2026-06-16 @ 01:41:47 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
+[P-57] Session 2026-07-21 @ 00:00:42 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)

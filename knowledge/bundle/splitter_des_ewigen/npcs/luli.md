@@ -13,4 +13,4 @@ Luli ist ein kleines, kindlich wirkendes Pilzwesen, das von der „grünen Dame�
 
 # Belege
 
-1. Session 2025-06-17 @ 01:36:10 (https://www.youtube.com/watch?v=tl76B4V0io8)
+[P-12] Session 2025-06-17 @ 01:36:10 (https://www.youtube.com/watch?v=tl76B4V0io8)

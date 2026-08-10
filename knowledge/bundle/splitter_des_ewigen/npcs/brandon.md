@@ -13,4 +13,4 @@ Brandon ist ein Ritter, der den [Morgenstern des Heiligen Duran](/items/morgenst
 
 # Belege
 
-1. Session 2025-05-06 @ 01:57:28 (https://www.youtube.com/watch?v=e0v6AFGd4mE)
+[P-07] Session 2025-05-06 @ 01:57:28 (https://www.youtube.com/watch?v=e0v6AFGd4mE)

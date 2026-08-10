@@ -14,4 +14,4 @@ Nachdem er versucht hat, mit der [Schriftrolle](/items/schriftrolle.md) zu flieh
 
 # Belege
 
-1. Session 2026-01-06 @ 02:04:47 (https://www.youtube.com/watch?v=VGw81seFvbo)
+[P-33] Session 2026-01-06 @ 02:04:47 (https://www.youtube.com/watch?v=VGw81seFvbo)

@@ -14,4 +14,4 @@ Ein altes Zauberbuch, das [Trickler](/npcs/trickler.md) bei der Herausforderung 
 
 # Belege
 
-1. Session 2026-03-18 @ 00:56:59 (https://www.youtube.com/watch?v=HHXxsASLrbQ)
+[P-42] Session 2026-03-18 @ 00:56:59 (https://www.youtube.com/watch?v=HHXxsASLrbQ)

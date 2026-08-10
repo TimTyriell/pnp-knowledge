@@ -154,7 +154,7 @@ entities:
   canonical_name: Valeria
   aliases:
   - Valerie
-  mention_count: 6
+  mention_count: 5
 - concept_id: characters/velora
   type: Character
   canonical_name: Velora
@@ -264,12 +264,13 @@ entities:
   mention_count: 3
 - concept_id: deities/korn
   type: Deity
-  canonical_name: Blutgott
+  canonical_name: Korn, der Blutgott
   aliases:
   - Korn
   - Born
   - Core
   - Kord
+  - Blutgott
   mention_count: 9
 - concept_id: deities/lugasch
   type: Deity
@@ -2499,8 +2500,9 @@ entities:
   mention_count: 1
 - concept_id: items/lindo_lauts_stab
   type: Item
-  canonical_name: Lindo Lauts Stab
-  aliases: []
+  canonical_name: Schlüssel von Abisalis
+  aliases:
+  - Lindo Lauts Stab
   mention_count: 2
 - concept_id: items/lindos_amulett
   type: Item
@@ -2563,8 +2565,9 @@ entities:
   mention_count: 1
 - concept_id: items/notiz_von_hal
   type: Item
-  canonical_name: Notiz von HAL
-  aliases: []
+  canonical_name: Notiz von Harl
+  aliases:
+  - Notiz von HAL
   mention_count: 1
 - concept_id: items/notizen_des_goblin_spaehers
   type: Item
@@ -4101,6 +4104,11 @@ entities:
   canonical_name: Citral
   aliases: []
   mention_count: 1
+- concept_id: npcs/cookie_und_valeria
+  type: NPC
+  canonical_name: Cookie und Valeria
+  aliases: []
+  mention_count: 1
 - concept_id: npcs/daemon_der_hybris
   type: NPC
   canonical_name: Dämon der Hybris
@@ -4314,6 +4322,11 @@ entities:
 - concept_id: npcs/grosses_vieh_in_der_seelennetzhalle
   type: NPC
   canonical_name: Großes Vieh (in der Seelennetzhalle)
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/grottenschrat
+  type: NPC
+  canonical_name: Grottenschrat
   aliases: []
   mention_count: 1
 - concept_id: npcs/guenther_shani

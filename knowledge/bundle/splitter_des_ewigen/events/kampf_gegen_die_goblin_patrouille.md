@@ -14,4 +14,4 @@ Beim Abstieg trifft die Gruppe auf eine Goblin-Patrouille mit einem Magier. Nach
 
 # Belege
 
-1. Session 2026-05-19 @ 01:56:19 (https://www.youtube.com/watch?v=xEcGJeaNixI)
+[P-51] Session 2026-05-19 @ 01:56:19 (https://www.youtube.com/watch?v=xEcGJeaNixI)

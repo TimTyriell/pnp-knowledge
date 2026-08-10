@@ -14,4 +14,4 @@ Der Friedhof vor der [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) mit ed
 
 # Belege
 
-1. Session 2025-09-02 @ 01:51:59 (https://www.youtube.com/watch?v=TLZOH7TlGhk)
+[P-20] Session 2025-09-02 @ 01:51:59 (https://www.youtube.com/watch?v=TLZOH7TlGhk)

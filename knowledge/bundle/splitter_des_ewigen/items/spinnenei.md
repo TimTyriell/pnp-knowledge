@@ -14,4 +14,4 @@ Ein großes, grünes Ei der Phasenspinne, das in einer magischen Truhe auf einer
 
 # Belege
 
-1. Session 2025-10-21 @ 01:51:33 (https://www.youtube.com/watch?v=sxFhbtwoefA)
+[P-28] Session 2025-10-21 @ 01:51:33 (https://www.youtube.com/watch?v=sxFhbtwoefA)

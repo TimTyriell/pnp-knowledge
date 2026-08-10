@@ -26,5 +26,5 @@ Cookie entdeckte den Seelenstein beim Durchsuchen von Überresten in einem unter
 
 # Belege
 
-1. Session 2025-06-17 @ 01:52:45 – Cookie findet einen Stein, in dem ein Gesicht glitzert; Rotunas vermutet, dass ein Geist freigesetzt wird. (https://www.youtube.com/watch?v=tl76B4V0io8)
-2. Session 2025-06-25 @ 01:16:08 – Rotunas nutzt den Seelenstein als Schild gegen einen Engelsstrahl, der Stein wird zerstört. (https://www.youtube.com/watch?v=tpkO9uGw6-I)
+[P-12] Session 2025-06-17 @ 01:52:45 – Cookie findet einen Stein, in dem ein Gesicht glitzert; Rotunas vermutet, dass ein Geist freigesetzt wird. (https://www.youtube.com/watch?v=tl76B4V0io8)
+[P-13] Session 2025-06-25 @ 01:16:08 – Rotunas nutzt den Seelenstein als Schild gegen einen Engelsstrahl, der Stein wird zerstört. (https://www.youtube.com/watch?v=tpkO9uGw6-I)

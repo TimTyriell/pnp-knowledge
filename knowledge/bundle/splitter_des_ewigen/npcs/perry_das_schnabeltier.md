@@ -21,9 +21,9 @@ Perry (gelegentlich auch „Parry“ geschrieben) ist ein schnabeltierartiges We
 
 ## Rolle in der Kampagne
 
-Perry fungiert primär als Cookies tierischer Gefährte im Rahmen ihrer Ranger-Klasse. In Kämpfen kann er auf Befehl angreifen, wobei er von den Vorteilen profitiert, die normalerweise nur für Cookie gelten, etwa der Wirkung des „Ranger Focus“ [1]. Sein Giftstachel ermöglicht lähmende Angriffe [2].
+Perry fungiert primär als Cookies tierischer Gefährte im Rahmen ihrer Ranger-Klasse. In Kämpfen kann er auf Befehl angreifen, wobei er von den Vorteilen profitiert, die normalerweise nur für Cookie gelten, etwa der Wirkung des „Ranger Focus“ [P-01]. Sein Giftstachel ermöglicht lähmende Angriffe [P-02].
 
-Neben dem Kampf wird Perry mehrfach als potenzieller Späher oder Ablenkung in Betracht gezogen. Seine geringe Größe und seine Tarnfähigkeiten machen ihn für solche Aufgaben besonders geeignet. Cookie nutzt ihn gezielt, um Gegner zu täuschen, in Hinterhalte zu locken oder abzulenken [2][3][4].
+Neben dem Kampf wird Perry mehrfach als potenzieller Späher oder Ablenkung in Betracht gezogen. Seine geringe Größe und seine Tarnfähigkeiten machen ihn für solche Aufgaben besonders geeignet. Cookie nutzt ihn gezielt, um Gegner zu täuschen, in Hinterhalte zu locken oder abzulenken [P-02][P-09][P-15].
 
 Allerdings zeigt sich im Verlauf der Kampagne, dass Perry nicht für jede Umgebung geschaffen ist. Insbesondere in beengten, dunklen oder bedrohlichen Ortschaften gerät er unter Stress und zieht sich in Cookies Tasche zurück. Dabei handelt es sich laut Spielleitungsentscheidung ausdrücklich um einen **vorübergehenden Zustand**, nicht um eine dauerhafte Eigenschaft. In offeneren oder vertrauteren Umgebungen ist Perry durchaus kampftauglich.
 
@@ -33,24 +33,24 @@ Allerdings zeigt sich im Verlauf der Kampagne, dass Perry nicht für jede Umgebu
 
 ### Spezies und Erscheinung
 
-Perry wird durchgehend als Schnabeltier beschrieben [1][2][7][9]. Eine einmalige Bezeichnung als „Frosch-Gefährte“ stellt einen offenen Widerspruch in den Quellen dar (siehe offene Konflikte). Er ist von sehr geringer Größe und kann sich auf zwei Beinen fortbewegen. In der Arena präsentiert er sich auf seinen „kleinen Beinchen“ und läuft „in voller Pracht“ neben Cookie her [7].
+Perry wird durchgehend als Schnabeltier beschrieben [P-01][P-02][P-28][P-31]. Eine einmalige Bezeichnung als „Frosch-Gefährte“ stellt einen offenen Widerspruch in den Quellen dar (siehe offene Konflikte). Er ist von sehr geringer Größe und kann sich auf zwei Beinen fortbewegen. In der Arena präsentiert er sich auf seinen „kleinen Beinchen“ und läuft „in voller Pracht“ neben Cookie her [P-28].
 
 ### Fähigkeiten
 
-- **Giftstachel**: Perrys primäre Waffe. Er kann Gegner damit angreifen und – abhängig von deren Stärke – für eine gewisse Zeit lähmen [2].
-- **Tarnung**: Perry besitzt die Fähigkeit, sich „gut anzupassen und zu tarnen“ [2]. Diese Fähigkeit wird als sein Experience beschrieben und gewährt ihm einen Bonus bei Heimlichkeitsaktionen. In Kombination mit seiner geringen Größe und Dunkelheit kann er dadurch außergewöhnlich gut schleichen [4]. Als konkreter Bonus wird ein +2-Wert auf Tarnungs-Würfe genannt [4].
-- **Telepathische Steuerung**: Cookie kann Perry über Telepathie lenken und ihm Anweisungen geben [2].
-- **Kampfbonus**: Wenn Cookie ihn zum Angriff befiehlt, profitiert Perry von allen Vorteilen, die normalerweise nur für Cookie gelten (z. B. Ranger Focus). Bei einem erfolgreichen Wurf nutzt sein Schadenswurf Cookies Proficiency und Schadenswürfel [1].
+- **Giftstachel**: Perrys primäre Waffe. Er kann Gegner damit angreifen und – abhängig von deren Stärke – für eine gewisse Zeit lähmen [P-02].
+- **Tarnung**: Perry besitzt die Fähigkeit, sich „gut anzupassen und zu tarnen“ [P-02]. Diese Fähigkeit wird als sein Experience beschrieben und gewährt ihm einen Bonus bei Heimlichkeitsaktionen. In Kombination mit seiner geringen Größe und Dunkelheit kann er dadurch außergewöhnlich gut schleichen [P-15]. Als konkreter Bonus wird ein +2-Wert auf Tarnungs-Würfe genannt [P-15].
+- **Telepathische Steuerung**: Cookie kann Perry über Telepathie lenken und ihm Anweisungen geben [P-02].
+- **Kampfbonus**: Wenn Cookie ihn zum Angriff befiehlt, profitiert Perry von allen Vorteilen, die normalerweise nur für Cookie gelten (z. B. Ranger Focus). Bei einem erfolgreichen Wurf nutzt sein Schadenswurf Cookies Proficiency und Schadenswürfel [P-01].
 
 ### Wesenszüge
 
-Perry ist von Natur aus sehr scheu. Es dauert lange, bis er Vertrauen zu anderen Personen fasst – selbst bei den Mitgliedern der Gruppe hat es „sehr lange gedauert, bis er sich so ein bisschen an euch geschmust hat“ [9]. In beengenden, dunklen oder bedrohlichen Umgebungen reagiert er mit Panik und verkriecht sich in Cookies Tasche. Diese Stressanfälligkeit ist als vorübergehender, situationsabhängiger Zustand zu werten und beschreibt keine permanente Unfähigkeit zum Kampf (siehe Spielleitungsentscheidung). In vertrauten oder offenen Umgebungen zeigt Perry dieses Verhalten nicht.
+Perry ist von Natur aus sehr scheu. Es dauert lange, bis er Vertrauen zu anderen Personen fasst – selbst bei den Mitgliedern der Gruppe hat es „sehr lange gedauert, bis er sich so ein bisschen an euch geschmust hat“ [P-31]. In beengenden, dunklen oder bedrohlichen Umgebungen reagiert er mit Panik und verkriecht sich in Cookies Tasche. Diese Stressanfälligkeit ist als vorübergehender, situationsabhängiger Zustand zu werten und beschreibt keine permanente Unfähigkeit zum Kampf (siehe Spielleitungsentscheidung). In vertrauten oder offenen Umgebungen zeigt Perry dieses Verhalten nicht.
 
 ## Beziehungen und Verbindungen
 
 - **[Cookie](/characters/cookie.md)**: Cookies tierischer Begleiter. Die beiden sind durch eine telepathische Verbindung eng miteinander verknüpft. Cookie trägt ihn in einem pokéball-ähnlichen Behältnis bei sich und ruft ihn bei Bedarf. Sie sorgt sich um sein Wohlergehen – als Perry im Dungeon kurz davor steht, „das Zeitliche zu segnen“, beruhigt sie ihn durch Streicheln und verhindert so, dass er sich dauerhaft zurückzieht.
 - **[Lunara Velora](/characters/lunara_velora.md)**: Eine besondere, für Perry untypische Beziehung. In Session 9 nähert sich Perry Lunara von sich aus und lässt sich von ihr streicheln – ein Verhalten, das er normalerweise nur nach langer Zeit des Vertrauensaufbaus zeigt. Dies wird von der Gruppe als Zeichen für Lunas Vertrauenswürdigkeit gewertet.
-- **Die restliche Gruppe**: Perry hat zu allen Gruppenmitgliedern nach und nach Vertrauen aufgebaut, was jedoch jeweils sehr lange dauerte [9]. Esterossa erwähnt ihn als „den doch sehr gewieften Perry“ [6]. In brenzligen Situationen wie in der Arena wird er von der Gruppe als Teil des Teams wahrgenommen und mit Sorge bedacht [7].
+- **Die restliche Gruppe**: Perry hat zu allen Gruppenmitgliedern nach und nach Vertrauen aufgebaut, was jedoch jeweils sehr lange dauerte [P-31]. Esterossa erwähnt ihn als „den doch sehr gewieften Perry“ [P-26]. In brenzligen Situationen wie in der Arena wird er von der Gruppe als Teil des Teams wahrgenommen und mit Sorge bedacht [P-28].
 
 ## Chronologie
 
@@ -78,16 +78,16 @@ Perry ist von Natur aus sehr scheu. Es dauert lange, bis er Vertrauen zu anderen
 
 ## Belege
 
-[1] Session 2025-03-26 @ 00:27:43–00:30:14 (https://www.youtube.com/watch?v=ROCKGeeRUFw)
-[2] Session 2025-04-01 @ 00:13:09–00:16:03 (https://www.youtube.com/watch?v=LZIuUzc3F18)
-[3] Session 2025-05-27 @ 00:48:45–00:51:11 (https://www.youtube.com/watch?v=bamCIB_CkR8)
-[4] Session 2025-07-22 @ 00:16:51–00:19:35 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
-[5] Session 2025-07-29 @ 02:00:52–02:03:16 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
-[6] Session 2025-10-07 @ 00:04:36–00:07:25 (https://www.youtube.com/watch?v=qVAF_54S8Vw)
-[7] Session 2025-10-21 @ 00:08:50–00:10:20 (https://www.youtube.com/watch?v=sxFhbtwoefA)
-[8] Session 2025-10-28 @ 01:11:22–01:14:07 (https://www.youtube.com/watch?v=V6NzNakqxXM)
-[9] Session 2025-11-18 @ 01:41:49–01:43:19 (https://www.youtube.com/watch?v=w__ahowb9p0)
+[P-01] Session 2025-03-26 @ 00:27:43–00:30:14 (https://www.youtube.com/watch?v=ROCKGeeRUFw)
+[P-02] Session 2025-04-01 @ 00:13:09–00:16:03 (https://www.youtube.com/watch?v=LZIuUzc3F18)
+[P-09] Session 2025-05-27 @ 00:48:45–00:51:11 (https://www.youtube.com/watch?v=bamCIB_CkR8)
+[P-15] Session 2025-07-22 @ 00:16:51–00:19:35 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
+[P-16] Session 2025-07-29 @ 02:00:52–02:03:16 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
+[P-26] Session 2025-10-07 @ 00:04:36–00:07:25 (https://www.youtube.com/watch?v=qVAF_54S8Vw)
+[P-28] Session 2025-10-21 @ 00:08:50–00:10:20 (https://www.youtube.com/watch?v=sxFhbtwoefA)
+[P-29] Session 2025-10-28 @ 01:11:22–01:14:07 (https://www.youtube.com/watch?v=V6NzNakqxXM)
+[P-31] Session 2025-11-18 @ 01:41:49–01:43:19 (https://www.youtube.com/watch?v=w__ahowb9p0)
 
 ## Offene Konflikte
 
-- In den meisten Quellen wird Perry als Schnabeltier beschrieben [1][2][7][9]. In Session 5 [5] wird er jedoch als „Frosch-Gefährte“ bezeichnet („Parry guckt … Der chillt da in dem anderen Frosch“). Die übrigen Quellen sowie die durchgängige Beschreibung seiner Fähigkeiten und seines Verhaltens stützen die Einordnung als Schnabeltier, sodass die „Frosch“-Bezeichnung als einmaliger Widerspruch bestehen bleibt.
+- In den meisten Quellen wird Perry als Schnabeltier beschrieben [P-01][P-02][P-28][P-31]. In Session 5 [P-16] wird er jedoch als „Frosch-Gefährte“ bezeichnet („Parry guckt … Der chillt da in dem anderen Frosch“). Die übrigen Quellen sowie die durchgängige Beschreibung seiner Fähigkeiten und seines Verhaltens stützen die Einordnung als Schnabeltier, sodass die „Frosch“-Bezeichnung als einmaliger Widerspruch bestehen bleibt.

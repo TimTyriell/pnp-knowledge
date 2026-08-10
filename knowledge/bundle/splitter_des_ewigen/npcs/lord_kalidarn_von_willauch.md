@@ -16,20 +16,20 @@ Lord Kalidarn von Willauch ist der Herrscher der südwestlichen Stadt Willauch (
 
 ## Arenavorsitz und Urteilsgewalt
 
-Lord Kalidarn sitzt der Arena von Willauch vor und übt dort die letzte Entscheidungsgewalt über die unterlegenen Kämpfer aus. Mit dem Daumen gibt er das Signal – beim Kampf gegen einen Werwolf fällte er das Todesurteil [1]. Während des gesamten Abends der Arenakämpfe zeigt er sich unbeeindruckt: Weder Dodos Sieg noch die spektakulären Performances der Kämpfer können ihn zu einer Regung bewegen; selbst der grüne Blitz der Goblin-Götter entlockt ihm nur ein kurzes Klatschen [1]. Sein Verhalten deutet darauf hin, dass er auf etwas wartet und hohe Ansprüche an die Gebotenen stellt.
+Lord Kalidarn sitzt der Arena von Willauch vor und übt dort die letzte Entscheidungsgewalt über die unterlegenen Kämpfer aus. Mit dem Daumen gibt er das Signal – beim Kampf gegen einen Werwolf fällte er das Todesurteil [P-28]. Während des gesamten Abends der Arenakämpfe zeigt er sich unbeeindruckt: Weder Dodos Sieg noch die spektakulären Performances der Kämpfer können ihn zu einer Regung bewegen; selbst der grüne Blitz der Goblin-Götter entlockt ihm nur ein kurzes Klatschen [P-28]. Sein Verhalten deutet darauf hin, dass er auf etwas wartet und hohe Ansprüche an die Gebotenen stellt.
 
 ## Beziehung zur Gruppe
 
-Nach dem Sieg der Abenteurer über den Lich trat Lord Kalidarn als derjenige auf, der die offizielle Urkunde für ein Anwesen ausstellte [2]. Dies bestätigt seine Position als lokaler Herrscher, der über Grundbesitz und Rechtsdokumente verfügt. Weitere Interaktionen zwischen ihm und der Gruppe sind bislang nicht bekannt.
+Nach dem Sieg der Abenteurer über den Lich trat Lord Kalidarn als derjenige auf, der die offizielle Urkunde für ein Anwesen ausstellte [P-30]. Dies bestätigt seine Position als lokaler Herrscher, der über Grundbesitz und Rechtsdokumente verfügt. Weitere Interaktionen zwischen ihm und der Gruppe sind bislang nicht bekannt.
 
 ## Persönlichkeit
 
-Lord Kalidarn wirkt reserviert und schwer zu beeindrucken. Seine ausdauernde Gleichgültigkeit selbst gegenüber außergewöhnlichen Darbietungen und seine knappen Reaktionen (einmaliges Klatschen) lassen auf einen erfahrenen, vielleicht abgestumpften oder zielgerichteten Herrscher schließen, der bewusst eine Distanz wahrt. Hohe Ansprüche und das Warten auf "etwas" prägen seinen Auftritt [1].
+Lord Kalidarn wirkt reserviert und schwer zu beeindrucken. Seine ausdauernde Gleichgültigkeit selbst gegenüber außergewöhnlichen Darbietungen und seine knappen Reaktionen (einmaliges Klatschen) lassen auf einen erfahrenen, vielleicht abgestumpften oder zielgerichteten Herrscher schließen, der bewusst eine Distanz wahrt. Hohe Ansprüche und das Warten auf "etwas" prägen seinen Auftritt [P-28].
 
 # Belege
 
-1. Session 2025-10-21 @ 00:40:02 – Lord Kalidarn als Arenavorsitzender, Daumenentscheid, Unbeeindrucktheit, hohe Ansprüche.  
+[P-28] Session 2025-10-21 @ 00:40:02 – Lord Kalidarn als Arenavorsitzender, Daumenentscheid, Unbeeindrucktheit, hohe Ansprüche.
    https://www.youtube.com/watch?v=sxFhbtwoefA  
-2. Session 2025-11-14 @ 00:00:37 – Lord Kalidarn stellt der Gruppe die Urkunde für ein Anwesen aus.  
+[P-30] Session 2025-11-14 @ 00:00:37 – Lord Kalidarn stellt der Gruppe die Urkunde für ein Anwesen aus.
    https://www.youtube.com/watch?v=8Khb-Y8XbKY  
 3. Kanon_Entscheidungen.md – Schreibweise "Willauch" und Lage im Südwesten (zur Einordnung).

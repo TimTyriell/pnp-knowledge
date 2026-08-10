@@ -23,4 +23,4 @@ Rifts sind die einzigen bekannten Durchlässe zwischen der materiellen Welt und 
 
 # Belege
 
-1. Session 2025-05-27 @ 00:16:11 (https://www.youtube.com/watch?v=bamCIB_CkR8)
+[P-09] Session 2025-05-27 @ 00:16:11 (https://www.youtube.com/watch?v=bamCIB_CkR8)

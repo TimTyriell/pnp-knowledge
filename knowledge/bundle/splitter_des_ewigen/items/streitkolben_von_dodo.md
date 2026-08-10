@@ -30,10 +30,10 @@ Der Streitkolben leuchtet auf ein gesprochenes Wort hin und dient so als Lichtqu
 
 # Belege
 
-1. Session 2025-09-09, 01:51:25, https://www.youtube.com/watch?v=Zl0qfuI6Goc
-2. Session 2025-09-30, 00:59:44, https://www.youtube.com/watch?v=bUT7Mc2hjUY
-3. Session 2025-10-21, 01:09:02, https://www.youtube.com/watch?v=sxFhbtwoefA
-4. Session 2025-11-25, 00:42:14, https://www.youtube.com/watch?v=wd5R4fJfngY
-5. Session 2026-01-06, 01:54:06, https://www.youtube.com/watch?v=VGw81seFvbo
-6. Session 2026-01-13, 02:01:42, https://www.youtube.com/watch?v=w4LB1s9_3rs
-7. Session 2026-05-13, 00:19:37, https://www.youtube.com/watch?v=4afPD9Q_5AY
+[P-22] Session 2025-09-09, 01:51:25, https://www.youtube.com/watch?v=Zl0qfuI6Goc
+[P-25] Session 2025-09-30, 00:59:44, https://www.youtube.com/watch?v=bUT7Mc2hjUY
+[P-28] Session 2025-10-21, 01:09:02, https://www.youtube.com/watch?v=sxFhbtwoefA
+[P-32] Session 2025-11-25, 00:42:14, https://www.youtube.com/watch?v=wd5R4fJfngY
+[P-33] Session 2026-01-06, 01:54:06, https://www.youtube.com/watch?v=VGw81seFvbo
+[P-34] Session 2026-01-13, 02:01:42, https://www.youtube.com/watch?v=w4LB1s9_3rs
+[P-50] Session 2026-05-13, 00:19:37, https://www.youtube.com/watch?v=4afPD9Q_5AY

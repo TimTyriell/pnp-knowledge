@@ -26,5 +26,5 @@ In den Hollows Above sollen die Seelen der Verstorbenen ihre letzte Ruhe finden.
 
 # Belege
 
-1. Session 2025-09-30 @ 01:50:02 – Die zweite kosmologische Ebene, zwischen der und dem Circle Below die Splitterwelt existiert. (https://www.youtube.com/watch?v=bUT7Mc2hjUY)  
-2. Session 2025-11-25 @ 01:46:26 – Der Himmel der Seelen. Die Gruppe stellt fest, dass die Seele des Boten nicht dorthin gelangen kann, sondern in die Splitterwelt gezogen wurde. (https://www.youtube.com/watch?v=wd5R4fJfngY)
+[P-25] Session 2025-09-30 @ 01:50:02 – Die zweite kosmologische Ebene, zwischen der und dem Circle Below die Splitterwelt existiert. (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[P-32] Session 2025-11-25 @ 01:46:26 – Der Himmel der Seelen. Die Gruppe stellt fest, dass die Seele des Boten nicht dorthin gelangen kann, sondern in die Splitterwelt gezogen wurde. (https://www.youtube.com/watch?v=wd5R4fJfngY)

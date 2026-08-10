@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import type { DashboardStatus, Glossary, HistoryResponse } from "./types";
+import type { DashboardStatus, Episodes, Glossary, HistoryResponse } from "./types";
 
 const POLL_MS = 10_000;
 
@@ -81,4 +81,10 @@ function useOnce<T>(url: string) {
 
 export function useGlossary() {
   return useOnce<Glossary>("/api/glossary");
+}
+
+// Changes once per session, not every 10s — one fetch, with reload for when a
+// title was just filled in.
+export function useEpisodes() {
+  return useOnce<Episodes>("/api/episodes");
 }

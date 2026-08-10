@@ -14,4 +14,4 @@ Die Gruppe trifft zum ersten Mal auf [Vitius](/npcs/vitius.md) und erfährt sein
 
 # Belege
 
-1. Session 2026-08-04 @ 00:13:46 (https://www.youtube.com/watch?v=qRj2t3wQHfs)
+[S1-02-A] Session 2026-08-04 @ 00:13:46 (https://www.youtube.com/watch?v=qRj2t3wQHfs)

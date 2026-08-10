@@ -22,4 +22,4 @@ Lugasch gehört zu den sogenannten Goblin-Göttern. Im Verlauf der Session wurde
 
 # Belege
 
-1. Session 2025-04-01 @ 00:54:51 (https://www.youtube.com/watch?v=LZIuUzc3F18)
+[P-02] Session 2025-04-01 @ 00:54:51 (https://www.youtube.com/watch?v=LZIuUzc3F18)

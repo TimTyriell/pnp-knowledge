@@ -42,13 +42,13 @@ Seine Vergangenheit ist ein weißer Fleck. Er selbst offenbart: Vor zwölf Jahre
 
 ## Chronologie
 
-1. **Erste Begegnungen in der Stadt**: Saris befragt Flüchtlinge detailliert und notiert alles. Er bezahlt drei Hände Gold, um ihnen Einlass zu gewähren. Auf Samuels Rat lehnt er den Segen Jorans ab. Herakles schließt ihn aufgrund von Misstrauen von einem Treffen aus. In der Nacht zeichnet er Xenia und hinterlässt das Bild heimlich. Er bietet an, Gnolle für Tests zu nutzen.
+[P-53] **Erste Begegnungen in der Stadt**: Saris befragt Flüchtlinge detailliert und notiert alles. Er bezahlt drei Hände Gold, um ihnen Einlass zu gewähren. Auf Samuels Rat lehnt er den Segen Jorans ab. Herakles schließt ihn aufgrund von Misstrauen von einem Treffen aus. In der Nacht zeichnet er Xenia und hinterlässt das Bild heimlich. Er bietet an, Gnolle für Tests zu nutzen.
 
-2. **Untersuchung des Grottenschrats und der Goblin-Plage**: Saris untersucht Brumas Hand mit der Lupe. Beim Kampf gegen einen Grottenschrat packt er den Pfeil in dessen Wunde, sticht tiefer und tötet ihn mit einem Dolch ins Herz. Anschließend sitzt er unter einem Baum und zeichnet den Grottenschrat – mit einer falschen Markierung des Herzens. Er schlägt vor, die Goblin-Mine auszuräuchern, erntet aber Ablehnung.
+[S1-01-B] **Untersuchung des Grottenschrats und der Goblin-Plage**: Saris untersucht Brumas Hand mit der Lupe. Beim Kampf gegen einen Grottenschrat packt er den Pfeil in dessen Wunde, sticht tiefer und tötet ihn mit einem Dolch ins Herz. Anschließend sitzt er unter einem Baum und zeichnet den Grottenschrat – mit einer falschen Markierung des Herzens. Er schlägt vor, die Goblin-Mine auszuräuchern, erntet aber Ablehnung.
 
-3. **Kampf gegen Goblins und Bugbären**: Saris tötet eine herabsteigende Bugbärin mit einem schnellen Dolchstoß. Er formt aus dem Blut eines gefallenen Goblins Nadeln, die einen weiteren Goblin „komplett durchlöchern“. Sein Patron meldet sich mit der Warnung „Dunkelheit kommt!“. Saris setzt seinen Morgenstern mit ausfahrbaren Stacheln gegen eine letzte Goblin-Horde ein und erhält beim Klettern einen Stresspunkt.
+[S1-02-B] **Kampf gegen Goblins und Bugbären**: Saris tötet eine herabsteigende Bugbärin mit einem schnellen Dolchstoß. Er formt aus dem Blut eines gefallenen Goblins Nadeln, die einen weiteren Goblin „komplett durchlöchern“. Sein Patron meldet sich mit der Warnung „Dunkelheit kommt!“. Saris setzt seinen Morgenstern mit ausfahrbaren Stacheln gegen eine letzte Goblin-Horde ein und erhält beim Klettern einen Stresspunkt.
 
-4. **Vision in der Mine und Enthüllung**: Saris begibt sich allein in die Mine, spricht mit einer Leiche und bittet um Wissen über die Dunkelheit und wie man sie besiegt. Die Leiche zieht sich eine Rippe aus der Brust und formt daraus einen Knochendolch, den Saris als Geschenk erhält. Später in der Taverne offenbart er der Gruppe, dass er vor zwölf Jahren ohne Erinnerungen auf einem Feld erwachte und dass niemand sich an die Zeit davor erinnern kann.
+[S1-03-B] **Vision in der Mine und Enthüllung**: Saris begibt sich allein in die Mine, spricht mit einer Leiche und bittet um Wissen über die Dunkelheit und wie man sie besiegt. Die Leiche zieht sich eine Rippe aus der Brust und formt daraus einen Knochendolch, den Saris als Geschenk erhält. Später in der Taverne offenbart er der Gruppe, dass er vor zwölf Jahren ohne Erinnerungen auf einem Feld erwachte und dass niemand sich an die Zeit davor erinnern kann.
 
 ## Offene Fragen
 
@@ -60,7 +60,7 @@ Seine Vergangenheit ist ein weißer Fleck. Er selbst offenbart: Vor zwölf Jahre
 
 ## Belege
 
-[1] Session 2026-06-04 @ 00:07:31 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
-[2] Session 2026-07-10 @ 00:08:56 (https://www.youtube.com/watch?v=H-eHSlfxUAg)
-[3] Session 2026-07-23 @ 00:24:35 (https://www.youtube.com/watch?v=Gb-TEbCFF0M)
-[4] Session 2026-08-06 @ 00:45:14 (https://www.youtube.com/watch?v=0HyPHao8s_k)
+[P-53] Session 2026-06-04 @ 00:07:31 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
+[S1-01-B] Session 2026-07-10 @ 00:08:56 (https://www.youtube.com/watch?v=H-eHSlfxUAg)
+[S1-02-B] Session 2026-07-23 @ 00:24:35 (https://www.youtube.com/watch?v=Gb-TEbCFF0M)
+[S1-03-B] Session 2026-08-06 @ 00:45:14 (https://www.youtube.com/watch?v=0HyPHao8s_k)

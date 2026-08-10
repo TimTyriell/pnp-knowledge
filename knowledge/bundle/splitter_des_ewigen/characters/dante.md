@@ -61,5 +61,5 @@ Dante wird während der Kämpfe mit einem Seraphen zweimal schwer getroffen und 
 - Welcher Verlust hat die Gruppe vor Dantes knapper Rettung vor dem Hungertod getroffen?
 
 ## Belege
-1. Session 2026-05-06, 00:03:22, https://www.youtube.com/watch?v=MB4quhDWsQE
-2. Session 2026-05-13, 01:42:01, https://www.youtube.com/watch?v=4afPD9Q_5AY
+[P-49] Session 2026-05-06, 00:03:22, https://www.youtube.com/watch?v=MB4quhDWsQE
+[P-50] Session 2026-05-13, 01:42:01, https://www.youtube.com/watch?v=4afPD9Q_5AY

@@ -24,5 +24,5 @@ Gegenüber der Gruppe zeigt sich Horatio wechselhaft: Während der ersten Begegn
 Das frische Blut ohne Jagdbeute wirft Fragen auf – ob Horatio einem anderen Zweck nachgeht oder ob er das Blut bewusst als Signal trägt, bleibt ungeklärt. Auch die Bedeutung seines Amuletts und sein Wissen über die Hintergründe der Gruppe (sein unvermittelter Auftritt beim Ritual) legen nahe, dass Horatio mehr im Schatten agiert, als er zugibt. Sein Interesse an Harmonie könnte ebenso taktisch wie aufrichtig sein.
 
 # Belege
-1. Session 2025-11-14 @ 00:37:15 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)  
-2. Session 2026-03-31 @ 00:53:38 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
+[P-30] Session 2025-11-14 @ 00:37:15 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)
+[P-45] Session 2026-03-31 @ 00:53:38 (https://www.youtube.com/watch?v=Ee-K84wcxLM)

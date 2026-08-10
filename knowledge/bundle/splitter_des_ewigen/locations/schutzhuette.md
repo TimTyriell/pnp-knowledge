@@ -14,4 +14,4 @@ Ein kleines, leeres Gebäude auf dem freien Feld, früher eine Reisenden-Schutz.
 
 # Belege
 
-1. Session 2025-11-25 @ 01:50:33 (https://www.youtube.com/watch?v=wd5R4fJfngY)
+[P-32] Session 2025-11-25 @ 01:50:33 (https://www.youtube.com/watch?v=wd5R4fJfngY)

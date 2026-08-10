@@ -14,4 +14,4 @@ Ein kleines, nasses Buch, das [Rotunas](/characters/rotunas.md) im Wrack findet.
 
 # Belege
 
-1. Session 2025-04-30 @ 00:26:38 (https://www.youtube.com/watch?v=fsCOiSkKKTE)
+[P-06] Session 2025-04-30 @ 00:26:38 (https://www.youtube.com/watch?v=fsCOiSkKKTE)

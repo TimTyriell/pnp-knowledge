@@ -23,4 +23,4 @@ Xerxes diente einst einem König, rebellierte aber gegen dessen ausbeuterische H
 
 # Belege
 
-1. Session 2026-04-09 @ 00:01:10 – https://www.youtube.com/watch?v=vcGkejr8_nI
+[P-47] Session 2026-04-09 @ 00:01:10 – https://www.youtube.com/watch?v=vcGkejr8_nI

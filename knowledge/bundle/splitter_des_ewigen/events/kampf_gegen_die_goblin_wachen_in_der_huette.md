@@ -14,4 +14,4 @@ Die Gruppe lockt zwei Goblin-Wachen mithilfe von [Perry](/npcs/perry_das_schnabe
 
 # Belege
 
-1. Session 2025-04-01 @ 01:20:35 (https://www.youtube.com/watch?v=LZIuUzc3F18)
+[P-02] Session 2025-04-01 @ 01:20:35 (https://www.youtube.com/watch?v=LZIuUzc3F18)

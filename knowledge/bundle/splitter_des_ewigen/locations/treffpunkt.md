@@ -14,4 +14,4 @@ Ein ungeeigneter Ort im dichten Wald nahe der [Banditenfestung](/locations/bandi
 
 # Belege
 
-1. Session 2025-09-23 @ 00:19:15 (https://www.youtube.com/watch?v=DGzfqVigS0g)
+[P-24] Session 2025-09-23 @ 00:19:15 (https://www.youtube.com/watch?v=DGzfqVigS0g)

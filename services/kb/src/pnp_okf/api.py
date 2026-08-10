@@ -340,6 +340,7 @@ def create_app(bundle_dir: Path | None = None) -> FastAPI:
                     "id": fm.get("id"),
                     "date": cid.rsplit("/", 1)[-1],
                     "video_id": _video_id_from_resource(fm.get("resource")),
+                    "episode": fm.get("episode"),
                     "title": fm.get("title"),
                     "quality": fm.get("quality"),
                     "unsicher_ratio": fm.get("unsicher_ratio"),

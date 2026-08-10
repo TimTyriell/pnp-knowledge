@@ -16,4 +16,4 @@ Ein Zeltlager etwa eine Stunde Fußmarsch außerhalb der Stadtmauern, in dem die
 
 # Belege
 
-1. Session 2025-10-14 @ 00:54:08 (https://www.youtube.com/watch?v=cUtz87UCHu4)
+[P-27] Session 2025-10-14 @ 00:54:08 (https://www.youtube.com/watch?v=cUtz87UCHu4)

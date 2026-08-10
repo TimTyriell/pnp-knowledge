@@ -14,4 +14,4 @@ Ein Beutel voll Gold, den [Lindo Laut](/characters/lindo_laut.md) dem Wirt zuwir
 
 # Belege
 
-1. Session 2026-07-29 @ 01:08:08 (https://www.youtube.com/watch?v=umGyKLkefJI)
+[S1-01-A] Session 2026-07-29 @ 01:08:08 (https://www.youtube.com/watch?v=umGyKLkefJI)

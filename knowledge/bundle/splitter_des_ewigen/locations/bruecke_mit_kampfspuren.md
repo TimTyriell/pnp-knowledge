@@ -14,4 +14,4 @@ Eine alte Befestigungsanlage, die vor mindestens 100 Jahren Schauplatz einer Sch
 
 # Belege
 
-1. Session 2025-06-10 @ 00:26:00 (https://www.youtube.com/watch?v=cLkCu3Iq3y8)
+[P-11] Session 2025-06-10 @ 00:26:00 (https://www.youtube.com/watch?v=cLkCu3Iq3y8)

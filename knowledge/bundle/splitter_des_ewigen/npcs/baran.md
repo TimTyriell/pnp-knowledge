@@ -25,5 +25,5 @@ Die erste Begegnung findet statt, als der Kenku Gulrak versucht, etwas aus der T
 
 # Belege
 
-1. Session 2025-04-30 @ 01:48:36 (https://www.youtube.com/watch?v=fsCOiSkKKTE) – Baran als Schankwirt und Forscher, Diebstahlversuch durch Gulrak, Schlüssel zum Labor.
-2. Session 2025-05-06 @ 01:18:29 (https://www.youtube.com/watch?v=e0v6AFGd4mE) – Baran als Druide mit Tierverwandlung, Auftritt in der Kapelle, erschöpfter Kampf und Rettung durchs Portal.
+[P-06] Session 2025-04-30 @ 01:48:36 (https://www.youtube.com/watch?v=fsCOiSkKKTE) – Baran als Schankwirt und Forscher, Diebstahlversuch durch Gulrak, Schlüssel zum Labor.
+[P-07] Session 2025-05-06 @ 01:18:29 (https://www.youtube.com/watch?v=e0v6AFGd4mE) – Baran als Druide mit Tierverwandlung, Auftritt in der Kapelle, erschöpfter Kampf und Rettung durchs Portal.

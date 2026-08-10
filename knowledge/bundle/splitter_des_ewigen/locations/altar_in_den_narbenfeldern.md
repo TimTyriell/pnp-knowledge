@@ -14,4 +14,4 @@ Ein kleiner, versteckter Altar in den Narbenfeldern des [Abyssalis](/domains/spl
 
 # Belege
 
-1. Session 2026-06-16 @ 00:28:54 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
+[P-55] Session 2026-06-16 @ 00:28:54 (https://www.youtube.com/watch?v=qe0ck8hvYpk)

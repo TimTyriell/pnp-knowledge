@@ -14,4 +14,4 @@ Magische Ringe, die [Cookie](/characters/cookie.md) trägt und mit denen sie pfl
 
 # Belege
 
-1. Session 2025-05-27 @ 01:05:40 (https://www.youtube.com/watch?v=bamCIB_CkR8)
+[P-09] Session 2025-05-27 @ 01:05:40 (https://www.youtube.com/watch?v=bamCIB_CkR8)

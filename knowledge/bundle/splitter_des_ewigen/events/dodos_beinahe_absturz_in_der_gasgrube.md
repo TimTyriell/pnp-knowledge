@@ -14,4 +14,4 @@ Beim Erkunden der Grabkammer rutscht [Dodo](/characters/dodo.md) im knöcheltief
 
 # Belege
 
-1. Session 2026-02-11 @ 00:22:59 (https://www.youtube.com/watch?v=3C8SD-cyNPM)
+[P-37] Session 2026-02-11 @ 00:22:59 (https://www.youtube.com/watch?v=3C8SD-cyNPM)

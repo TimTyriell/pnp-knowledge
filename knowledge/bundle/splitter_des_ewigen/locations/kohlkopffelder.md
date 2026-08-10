@@ -14,4 +14,4 @@ Ein Bereich oberhalb der Stadt, zu dem [Dodo](/characters/dodo.md) kurz aufbrich
 
 # Belege
 
-1. Session 2026-07-29 @ 01:16:44 (https://www.youtube.com/watch?v=umGyKLkefJI)
+[S1-01-A] Session 2026-07-29 @ 01:16:44 (https://www.youtube.com/watch?v=umGyKLkefJI)

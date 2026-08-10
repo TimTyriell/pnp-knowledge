@@ -1,31 +1,30 @@
 ---
 type: NPC
 title: Samuel (Schädel)
-description: Samuel ist ein untoter Schädel, der Saris auf ihren Reisen begleitet.
-  Er gilt als der „gute“ Kopf unter den Schädeln an Saris’ Seite, blieb…
+description: Samuel ist ein untoter Schädel, der freiwillig bei Saris blieb und auf
+  deren rechter Schulter getragen wird. In der Gruppe gilt er als der…
 tags:
 - npcs
 timestamp: '2026-07-23T00:00:00Z'
 id: NPC_SAMUEL_SCHAEDEL
 aliases:
+- Samuel (Schädel)
 - Samuel
 ---
 
-Samuel ist ein untoter Schädel, der Saris auf ihren Reisen begleitet. Er gilt als der „gute“ Kopf unter den Schädeln an Saris’ Seite, blieb freiwillig bei ihr und sitzt auf ihrer rechten Schulter. Sein Rat zur Ablehnung des Segens Jorans und seine Inspiration für Kaya zeigen seinen Einfluss auf die Gruppe; Kaya rät dennoch, ihm nicht immer zu vertrauen.
+**Samuel** ist ein untoter Schädel, der freiwillig bei [Saris](/characters/saris.md) blieb und auf deren rechter Schulter getragen wird. In der Gruppe gilt er als der „gute“ Kopf – ein Beiname, der ihn von dem anderen Schädel unterscheidet, den Saris mit sich führt. Trotz dieses Rufs äußert [Kaya](/characters/kaya.md), dass man Samuel nicht immer vertrauen sollte.
 
-## Rolle und Auftreten
+## Rolle und Verhalten
 
-Samuel ist einer von zwei untoten Schädeln, die Saris begleiten [1][2]. Er zeichnet sich dadurch aus, dass er aus eigenem Willen bei Saris blieb [1]. Sein üblicher Platz ist auf Saris’ rechter Schulter [2]. In einer späteren Session bleibt er stumm [2].
+Samuel übernimmt eine beratende Rolle im Gefolge. Als Saris vor der Entscheidung steht, den Segen [Jorans](/deities/joran_der_muenzenzaehler.md) anzunehmen, rät er ihr davon ab. Seine Ablehnung überzeugt auch Kaya, den Segen ebenfalls nicht anzunehmen. In derselben Begegnung spendet Samuel Kaya durch eine Berührung Inspiration (Inspirational Words), sodass sie sich wohl fühlt.
 
-## Einfluss auf die Gruppe
+Obwohl sein Rat in dieser Situation positiv wirkt, bleibt Samuels Vertrauenswürdigkeit eingeschränkt: Kaya warnt davor, ihm nicht immer zu vertrauen.
 
-Als Saris vor der Frage stand, den Segen Jorans anzunehmen, riet Samuel davon ab. Dieser Rat überzeugte auch Kaya, den Segen abzulehnen [1]. Zudem spendete Samuel Kaya durch eine Berührung Inspiration (Inspirational Words), sodass sie sich wohl fühlte [1]. Seine Worte und Gesten wirken damit direkt auf Entscheidungen und Stimmung der Gruppe.
+## Auftreten
 
-## Vertrauen
-
-Trotz seiner Bezeichnung als „guter“ Kopf ist Samuel nicht unumstritten: Laut Kaya sollte man ihm nicht immer vertrauen [2]. Die Umstände, die zu dieser Einschätzung führen, sind aus den vorliegenden Aufzeichnungen nicht ersichtlich.
+In der Session vom 23. Juli 2026 ist Samuel als zweiter Schädel auf Saris’ rechter Schulter präsent, sagt jedoch nichts.
 
 # Belege
 
-1. Session 2026-06-04 @ 00:15:40 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
-2. Session 2026-07-23 @ 01:50:49 (https://www.youtube.com/watch?v=Gb-TEbCFF0M)
+[P-53] Session 2026-06-04, 00:15:40 – https://www.youtube.com/watch?v=EGNh8O7pE5Q
+[S1-02-B] Session 2026-07-23, 01:50:49 – https://www.youtube.com/watch?v=Gb-TEbCFF0M

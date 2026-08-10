@@ -14,4 +14,4 @@ Ein über 2,30 Meter langer, größtenteils metallener Stab mit Spulenstruktur, 
 
 # Belege
 
-1. Session 2026-07-10 @ 00:14:06 (https://www.youtube.com/watch?v=H-eHSlfxUAg)
+[S1-01-B] Session 2026-07-10 @ 00:14:06 (https://www.youtube.com/watch?v=H-eHSlfxUAg)

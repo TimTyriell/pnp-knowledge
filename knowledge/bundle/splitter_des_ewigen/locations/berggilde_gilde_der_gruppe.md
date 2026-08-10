@@ -14,4 +14,4 @@ Die Berggilde ist die Heimatbasis der Gruppe, mehrere Tagesmärsche entfernt. Si
 
 # Belege
 
-1. Session 2025-09-17 @ 00:28:22 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
+[P-23] Session 2025-09-17 @ 00:28:22 (https://www.youtube.com/watch?v=AhIT8dcxw2o)

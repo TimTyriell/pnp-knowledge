@@ -14,4 +14,4 @@ Ein von [Voras](/npcs/voras.md) und Nox vorbereitetes magisches Tor, das konstan
 
 # Belege
 
-1. Session 2026-03-10 @ 01:18:47 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
+[P-41] Session 2026-03-10 @ 01:18:47 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)

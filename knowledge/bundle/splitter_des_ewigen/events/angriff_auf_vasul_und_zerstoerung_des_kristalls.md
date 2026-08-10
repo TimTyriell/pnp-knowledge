@@ -14,4 +14,4 @@ Als [Vasul](/deities/vharzul.md) den letzten Schritt zum Splitter geht, entschei
 
 # Belege
 
-1. Session 2026-06-16 @ 01:54:22 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
+[P-55] Session 2026-06-16 @ 01:54:22 (https://www.youtube.com/watch?v=qe0ck8hvYpk)

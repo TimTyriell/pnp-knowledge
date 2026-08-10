@@ -14,4 +14,4 @@ Ein rotes Echsenmonster greift das Tor von [Nebelwacht](/locations/nebelwacht.md
 
 # Belege
 
-1. Session 2026-05-27 @ 00:41:31 (https://www.youtube.com/watch?v=IYYmgpqsp7E)
+[P-52] Session 2026-05-27 @ 00:41:31 (https://www.youtube.com/watch?v=IYYmgpqsp7E)

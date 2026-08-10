@@ -14,4 +14,4 @@ In [Barans](/npcs/baran.md) privatem Forschungsraum zeigt er der Gruppe eine Sch
 
 # Belege
 
-1. Session 2025-04-30 @ 01:53:09 (https://www.youtube.com/watch?v=fsCOiSkKKTE)
+[P-06] Session 2025-04-30 @ 01:53:09 (https://www.youtube.com/watch?v=fsCOiSkKKTE)

@@ -14,4 +14,4 @@ Ein Stein, den [Dodo](/characters/dodo.md) von [Cookie](/characters/cookie.md) e
 
 # Belege
 
-1. Session 2025-11-18 @ 01:48:51 (https://www.youtube.com/watch?v=w__ahowb9p0)
+[P-31] Session 2025-11-18 @ 01:48:51 (https://www.youtube.com/watch?v=w__ahowb9p0)

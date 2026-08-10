@@ -22,4 +22,4 @@ Neben der Führung durch Seraph Vityus ist der Priester [Harloën](/npcs/harloen
 
 # Belege
 
-1. Session 2026-07-29 @ 00:32:27 (https://www.youtube.com/watch?v=umGyKLkefJI)
+[S1-01-A] Session 2026-07-29 @ 00:32:27 (https://www.youtube.com/watch?v=umGyKLkefJI)

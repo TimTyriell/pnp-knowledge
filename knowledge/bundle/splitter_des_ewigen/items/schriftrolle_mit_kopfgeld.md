@@ -14,4 +14,4 @@ Ein Brief, der ein Kopfgeld in Höhe einer Truhe Gold auf die gesamte Heldengrup
 
 # Belege
 
-1. Session 2025-07-22 @ 02:35:34 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
+[P-15] Session 2025-07-22 @ 02:35:34 (https://www.youtube.com/watch?v=BRRCUgW4xRo)

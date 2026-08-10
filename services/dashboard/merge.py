@@ -14,6 +14,7 @@ from pathlib import Path
 from typing import Any
 
 import httpx
+import yaml
 
 STALE_AFTER_H = 48
 
@@ -82,12 +83,42 @@ def _lead_time_days(video_date: str | None, committed_at: str | None) -> float |
     return round((d1 - d0).total_seconds() / 86400, 1)
 
 
-def build_funnel(crawl: dict[str, Any], kb: dict[str, Any]) -> list[dict[str, Any]]:
+def load_episodes(path: Path) -> dict[str, Any]:
+    """Read knowledge/episodes.yaml, tolerating a missing or corrupt file.
+
+    Read straight from the file rather than through the KB API on purpose: an
+    episode exists as soon as it is published, long before it is transcribed
+    and ingested, and the list is most useful exactly for those gaps.
+    """
+    if not path.is_file():
+        return {"seasons": {}, "episodes": [], "error": f"{path} does not exist"}
+    try:
+        data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    except (OSError, yaml.YAMLError) as exc:
+        return {"seasons": {}, "episodes": [], "error": str(exc)}
+    return {
+        # An unquoted season 1 comes back as an int and would never match the
+        # string in an episode entry.
+        "seasons": {str(k): v for k, v in (data.get("seasons") or {}).items()},
+        "episodes": data.get("episodes") or [],
+    }
+
+
+def episodes_by_video(episodes: dict[str, Any]) -> dict[str, dict[str, Any]]:
+    return {ep["video_id"]: ep for ep in episodes.get("episodes") or [] if ep.get("video_id")}
+
+
+def build_funnel(
+    crawl: dict[str, Any],
+    kb: dict[str, Any],
+    episodes: dict[str, dict[str, Any]] | None = None,
+) -> list[dict[str, Any]]:
     """One row per session, joined across crawl and kb by video_id (date fallback).
 
     Sessions present on only one side still get a row, with the missing
     side's fields left null — the gap itself is the point of this view.
     """
+    episodes = episodes or {}
     crawl_items = crawl.get("items") or []
     kb_items = kb.get("items") or []
 
@@ -135,6 +166,11 @@ def build_funnel(crawl: dict[str, Any], kb: dict[str, Any]) -> list[dict[str, An
         entry["committed_at"] = row.get("committed_at")
         entry["lead_time_days"] = _lead_time_days(entry.get("video_date"), row.get("committed_at"))
 
+    for entry in by_key.values():
+        episode = episodes.get(entry.get("video_id") or "") or {}
+        entry["episode"] = episode.get("id")
+        entry["episode_title"] = episode.get("title") or None
+
     return [by_key[k] for k in order]
 
 
@@ -148,15 +184,21 @@ def build_inbox(crawl: dict[str, Any], kb: dict[str, Any], export: dict[str, Any
     return inbox
 
 
-def build(crawl_status_path: Path, export_status_path: Path, kb_url: str) -> dict[str, Any]:
+def build(
+    crawl_status_path: Path,
+    export_status_path: Path,
+    kb_url: str,
+    episodes_path: Path | None = None,
+) -> dict[str, Any]:
     now = _now()
     crawl = load_local_status(crawl_status_path, now)
     kb = fetch_kb_status(kb_url, now)
     export = load_local_status(export_status_path, now)
+    episodes = episodes_by_video(load_episodes(episodes_path)) if episodes_path else {}
     return {
         "crawl": crawl,
         "kb": kb,
         "export": export,
-        "funnel": build_funnel(crawl, kb),
+        "funnel": build_funnel(crawl, kb, episodes),
         "inbox": build_inbox(crawl, kb, export),
     }

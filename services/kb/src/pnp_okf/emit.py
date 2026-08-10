@@ -5,6 +5,7 @@ import re
 from datetime import datetime, timezone
 from pathlib import Path
 
+from pnp_okf.episodes import Episodes
 from pnp_okf.links import ConceptIndex, normalize_body
 from pnp_okf.models import (
     DIR_TO_TYPE,
@@ -96,6 +97,7 @@ def emit_sessions(
     transcripts: dict[str, SessionTranscript],
     extractions: dict[str, SessionExtraction],
     index: ConceptIndex | None = None,
+    episodes: Episodes | None = None,
 ) -> list[tuple[str, str, str]]:
     """Write one ``sessions/<date>.md`` concept per session.
 
@@ -103,13 +105,23 @@ def emit_sessions(
     against the concept set. Returns index entries ``(title, url, description)``.
     """
 
+    episodes = episodes or Episodes()
     entries: list[tuple[str, str, str]] = []
     for session_id in sorted(transcripts):
         transcript = transcripts[session_id]
         extraction = extractions[session_id]
         date = transcript.date or session_id[:10]
         concept_id = f"sessions/{date}"
-        title = f"Session {date}"
+        episode = episodes.for_url(transcript.url) or {}
+        # "Folge P-34 – Belorus", never the bare Abenteuername: those collide
+        # with entity pages of the same name (Belorus, Crowfen, Tiefwasser …),
+        # and this title becomes the wiki page title downstream.
+        if episode.get("id") and (episode.get("title") or "").strip():
+            title = f"Folge {episode['id']} – {episode['title'].strip()}"
+        elif episode.get("id"):
+            title = f"Folge {episode['id']}"
+        else:
+            title = transcript.title or f"Session {date}"
 
         intro_lines: list[str] = []
         for mention in extraction.entities:
@@ -130,7 +142,7 @@ def emit_sessions(
             "",
             "# Belege",
             "",
-            f"[1] [Vollständige Session (VOD)]({transcript.url})",
+            f"[{episode.get('id') or '1'}] [Vollständige Session (VOD)]({transcript.url})",
         ]
 
         body = "\n".join(body_parts)
@@ -146,14 +158,25 @@ def emit_sessions(
 
         frontmatter = {
             "type": "Session",
-            "title": transcript.title or title,
-            "description": _short_desc(extraction.recap),
+            "title": title,
+            "description": episode.get("description") or _short_desc(extraction.recap),
             "resource": transcript.url,
-            "tags": ["session", date],
+            "tags": ["session", date] + ([f"season-{episode['season']}"] if episode.get("season") else []),
             "timestamp": f"{date}T00:00:00Z" if date else _now_iso(),
             "quality": transcript.quality,
             "unsicher_ratio": round(transcript.unsicher_ratio, 3),
         }
+        # Episode identity travels with the concept: the wiki agent reads these
+        # off the API and never has to know about episodes.yaml.
+        if episode:
+            frontmatter |= {
+                "episode": episode.get("id"),
+                "episode_title": episode.get("title") or None,
+                "season": str(episode["season"]) if episode.get("season") else None,
+                "season_label": episodes.season_label(episode.get("season")),
+                "team": episode.get("team"),
+                "youtube_title": transcript.title or None,
+            }
         write_concept(bundle_dir, concept_id, frontmatter, body)
         entries.append(
             (title, f"{date}.md", _short_desc(extraction.recap, 100))

@@ -14,4 +14,4 @@ Die Abenteurer entscheiden sich, die mittlere von drei großen Türen im [Gewöl
 
 # Belege
 
-1. Session 2026-04-07 @ 00:08:44 (https://www.youtube.com/watch?v=MAuQPMNY548)
+[P-46] Session 2026-04-07 @ 00:08:44 (https://www.youtube.com/watch?v=MAuQPMNY548)

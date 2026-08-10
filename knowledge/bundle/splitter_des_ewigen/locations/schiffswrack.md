@@ -14,4 +14,4 @@ Ein altes, schwer beschädigtes Galeerenwrack, das seit Jahren auf einer kleinen
 
 # Belege
 
-1. Session 2025-04-30 @ 00:19:40 (https://www.youtube.com/watch?v=fsCOiSkKKTE)
+[P-06] Session 2025-04-30 @ 00:19:40 (https://www.youtube.com/watch?v=fsCOiSkKKTE)

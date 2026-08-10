@@ -14,4 +14,4 @@ Ein magisches Schriftstück, das die Gruppe zuvor verwendet hat. Lunara und [Dod
 
 # Belege
 
-1. Session 2026-07-29 @ 01:15:56 (https://www.youtube.com/watch?v=umGyKLkefJI)
+[S1-01-A] Session 2026-07-29 @ 01:15:56 (https://www.youtube.com/watch?v=umGyKLkefJI)

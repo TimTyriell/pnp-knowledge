@@ -14,4 +14,4 @@ Nach langer Beratung entscheidet die Gruppe, die Ketten von [Nerash](/deities/ne
 
 # Belege
 
-1. Session 2025-07-09 @ 01:14:23 (https://www.youtube.com/watch?v=XOnHa6CmDbo)
+[P-14] Session 2025-07-09 @ 01:14:23 (https://www.youtube.com/watch?v=XOnHa6CmDbo)

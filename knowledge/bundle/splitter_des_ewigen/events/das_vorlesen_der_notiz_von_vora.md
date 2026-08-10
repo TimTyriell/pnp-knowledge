@@ -14,4 +14,4 @@ Nach dem Kampf versammelt sich die Gruppe, und Lindo liest laut die zuvor erhalt
 
 # Belege
 
-1. Session 2026-01-20 @ 02:03:43 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
+[P-35] Session 2026-01-20 @ 02:03:43 (https://www.youtube.com/watch?v=H3ckYdTv4y8)

@@ -14,4 +14,4 @@ Die Gruppe begegnet einem Wesen, das Lebensessenz absorbiert. Nach mehreren gesc
 
 # Belege
 
-1. Session 2025-11-25 @ 00:31:20 (https://www.youtube.com/watch?v=wd5R4fJfngY)
+[P-32] Session 2025-11-25 @ 00:31:20 (https://www.youtube.com/watch?v=wd5R4fJfngY)

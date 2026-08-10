@@ -14,4 +14,4 @@ Eine doppelflüglige Tür mit zwei roten Kristallen, die Lebenspunkte als Blutop
 
 # Belege
 
-1. Session 2025-10-28 @ 00:28:56 (https://www.youtube.com/watch?v=V6NzNakqxXM)
+[P-29] Session 2025-10-28 @ 00:28:56 (https://www.youtube.com/watch?v=V6NzNakqxXM)

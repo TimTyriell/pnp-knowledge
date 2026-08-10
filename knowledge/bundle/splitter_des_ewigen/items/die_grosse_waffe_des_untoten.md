@@ -14,4 +14,4 @@ Die riesige Waffe eines besonders großen Untoten, die [Dodo](/characters/dodo.m
 
 # Belege
 
-1. Session 2026-01-20 @ 01:58:35 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
+[P-35] Session 2026-01-20 @ 01:58:35 (https://www.youtube.com/watch?v=H3ckYdTv4y8)

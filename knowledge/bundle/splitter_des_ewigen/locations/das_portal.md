@@ -24,5 +24,5 @@ Nach der Befreiung von [Nerash](/deities/nerash.md) erscheint in der Kapelle ein
 
 # Belege
 
-1. [Session 2025-05-27 @ 00:23:43](https://www.youtube.com/watch?v=bamCIB_CkR8)
-2. [Session 2025-07-09 @ 01:22:10](https://www.youtube.com/watch?v=XOnHa6CmDbo)
+[P-09] [Session 2025-05-27 @ 00:23:43](https://www.youtube.com/watch?v=bamCIB_CkR8)
+[P-14] [Session 2025-07-09 @ 01:22:10](https://www.youtube.com/watch?v=XOnHa6CmDbo)

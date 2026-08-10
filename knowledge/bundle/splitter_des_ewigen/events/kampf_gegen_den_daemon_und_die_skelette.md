@@ -14,4 +14,4 @@ Der erste Trainingskampf der Gruppe unter den neuen Regeln. Sie kämpfen gegen f
 
 # Belege
 
-1. Session 2025-05-27 @ 00:46:26 (https://www.youtube.com/watch?v=bamCIB_CkR8)
+[P-09] Session 2025-05-27 @ 00:46:26 (https://www.youtube.com/watch?v=bamCIB_CkR8)

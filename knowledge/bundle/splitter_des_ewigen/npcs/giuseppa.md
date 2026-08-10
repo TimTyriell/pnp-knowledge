@@ -13,4 +13,4 @@ Die Empfangsdame in der ersten Herberge/Taverne auf der Hauptinsel. Sie bietet d
 
 # Belege
 
-1. Session 2025-04-30 @ 00:33:47 (https://www.youtube.com/watch?v=fsCOiSkKKTE)
+[P-06] Session 2025-04-30 @ 00:33:47 (https://www.youtube.com/watch?v=fsCOiSkKKTE)

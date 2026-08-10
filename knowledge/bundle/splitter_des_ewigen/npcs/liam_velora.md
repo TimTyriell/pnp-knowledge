@@ -28,9 +28,9 @@ Seine seltenen, prophetisch anmutenden Aussagen deuten auf eine kleine Flamme â€
 
 # Belege
 
-1. Session 2026-03-24 @ 00:55:46 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
-2. Session 2026-06-10 @ 00:13:18 (https://www.youtube.com/watch?v=_3tLSiT1tck)
-3. Session 2026-07-21 @ 01:27:30 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
-4. Session 2026-07-29 @ 01:46:17 (https://www.youtube.com/watch?v=umGyKLkefJI)
-5. Session 2026-08-04 @ 01:03:43 (https://www.youtube.com/watch?v=qRj2t3wQHfs)
+[P-44] Session 2026-03-24 @ 00:55:46 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
+[P-54] Session 2026-06-10 @ 00:13:18 (https://www.youtube.com/watch?v=_3tLSiT1tck)
+[P-57] Session 2026-07-21 @ 01:27:30 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
+[S1-01-A] Session 2026-07-29 @ 01:46:17 (https://www.youtube.com/watch?v=umGyKLkefJI)
+[S1-02-A] Session 2026-08-04 @ 01:03:43 (https://www.youtube.com/watch?v=qRj2t3wQHfs)
 6. Kanon_Entscheidungen.md (Kampagnen-Unterlagen)

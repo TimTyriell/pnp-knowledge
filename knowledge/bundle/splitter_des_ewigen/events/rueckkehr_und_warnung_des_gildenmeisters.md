@@ -14,4 +14,4 @@ Nachdem die Gruppe das Portal durchquert hat und auf dem Gildengelände erschein
 
 # Belege
 
-1. Session 2025-07-09 @ 01:23:10 (https://www.youtube.com/watch?v=XOnHa6CmDbo)
+[P-14] Session 2025-07-09 @ 01:23:10 (https://www.youtube.com/watch?v=XOnHa6CmDbo)
