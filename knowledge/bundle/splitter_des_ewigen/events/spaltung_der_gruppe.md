@@ -10,8 +10,8 @@ id: EVENT_SPALTUNG_DER_GRUPPE
 subtype: Sonstiges
 ---
 
-Die Gruppe trennt sich: [Dante](/characters/dante.md), Kip und [der Richter](/npcs/richter_herr_der_seelenwacht.md) entscheiden, den [Schinder](/npcs/schinder.md) zu unterstützen und später das Portal zu nutzen, während Lunara, [Esterossa](/characters/esterossa.md) und [Dodo](/characters/dodo.md) mit [Holodarn](/deities/huludan.md) zur Narbe ziehen. Die Charaktere verabschieden sich mit gemischten Gefühlen.
+Die Gruppe trennt sich: [Dante](/characters/dante.md), Kip und [der Richter](/npcs/richter_herr_der_seelenwacht.md) entscheiden, den [Schinder](/npcs/schinder.md) zu unterstützen und später das Portal zu nutzen, während Lunara, [Esterossa](/characters/esterossa.md) und [Dodo](/characters/dodo.md) mit [Holodarn](/npcs/diener_huludans.md) zur Narbe ziehen. Die Charaktere verabschieden sich mit gemischten Gefühlen.
 
 # Belege
 
-[P-50] Session 2026-05-13 @ 01:39:19 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
+[P-49] Session 2026-05-13 @ 01:39:19 (https://www.youtube.com/watch?v=4afPD9Q_5AY)

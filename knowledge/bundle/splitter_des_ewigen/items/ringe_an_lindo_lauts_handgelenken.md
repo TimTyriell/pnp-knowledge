@@ -14,4 +14,4 @@ Magische Handschellen, die von Nox und [Voras](/npcs/voras.md) in wochenlanger A
 
 # Belege
 
-[P-41] Session 2026-03-10 @ 01:03:17 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
+[P-40] Session 2026-03-10 @ 01:03:17 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)

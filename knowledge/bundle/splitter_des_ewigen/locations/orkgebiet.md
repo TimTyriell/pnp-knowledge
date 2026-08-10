@@ -14,4 +14,4 @@ Eine trockene, warme und karge Region im Norden, nahe [Hartwacht](/locations/har
 
 # Belege
 
-[P-26] Session 2025-10-07 @ 00:00:03 (https://www.youtube.com/watch?v=qVAF_54S8Vw)
+[P-25] Session 2025-10-07 @ 00:00:03 (https://www.youtube.com/watch?v=qVAF_54S8Vw)

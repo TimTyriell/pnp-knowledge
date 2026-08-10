@@ -14,4 +14,4 @@ Die sechs Abenteurer betraten unter der Führung des [Richters](/npcs/richter_he
 
 # Belege
 
-[P-49] Session 2026-05-06 @ 00:21:51 (https://www.youtube.com/watch?v=MB4quhDWsQE)
+[P-48] Session 2026-05-06 @ 00:21:51 (https://www.youtube.com/watch?v=MB4quhDWsQE)

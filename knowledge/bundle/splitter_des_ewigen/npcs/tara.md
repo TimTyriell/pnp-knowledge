@@ -13,4 +13,4 @@ Tara ist die grimmige Verwalterin der Festung [Nebelwacht](/locations/nebelwacht
 
 # Belege
 
-[P-52] Session 2026-05-27 @ 00:19:32 (https://www.youtube.com/watch?v=IYYmgpqsp7E)
+[P-51] Session 2026-05-27 @ 00:19:32 (https://www.youtube.com/watch?v=IYYmgpqsp7E)

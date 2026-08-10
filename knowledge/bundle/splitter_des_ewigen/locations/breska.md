@@ -49,8 +49,8 @@ Im Dorf lebten einfache Bauern, der Bürgermeister Berthold, der Magier Leandras
 [P-04] **Schlacht um Breska:** Die gesamte Heldengruppe (Dodo, Esterossa, Cookie, Lindo Laut) verteidigt das Dorf gegen eine Horde aus Goblins, einem Oger, einem krähenartigen Wesen und einem Grottenschrat. Während der Kämpfe wird ein junger Schmied getötet; Esterossa rettet einen anderen Bauern mit heilender Hand. Lindo Lauts Gesang schwächt die Feinde. Nach dem Sieg führt Leandras die Gruppe zum Friedhof, wo sie mit dem Schlüssel die Gruft öffnet und Voras erweckt.
 [P-05] **Aufstieg zur Stadt (etwa ein Jahr später):** Dank Voras’ Geld und Einfluss ist Breska zu einer befestigten Kleinstadt mit Mauern, Markt, Kapelle, Taverne und Gildehalle gewachsen. Die Helden werden als Retter empfangen, die Wachen erkennen sie sofort.
 [P-13] **Zunehmende Abschottung:** Aus Breska dringen keine Nachrichten mehr. Boten kommen nicht zurück, die Wege zur Stadt sind von Untoten unpassierbar. Auranie wird vertrieben, später ist die Stadt komplett von der Außenwelt abgeschnitten und von Untoten umzingelt.
-[P-23] **Belagerung und Fall:** Ein entkommener Soldat berichtet von Nahrungsmangel und ersten Todesfällen. Ein Hilferuf Voras’ meldet gefallene Mauern, eine beinahe verhungerte Bevölkerung und das Auftauchen einer schwarzen Rüstung unter den Angreifern – Belorus selbst. Die Untoten greifen nicht mehr aktiv an, belagern die Stadt aber weiter.
-[P-25] **Zerstörung und Ende:** Die Helden finden Breska unter dem magischen Nebel in Trümmern. Nur das Anwesen ist intakt. Sie durchsuchen die alte Gildenhalle, die Gruft und schließlich das Anwesen. Nach der Aktivierung des Splitters des Ewigen öffnet Lindo Laut ein Fluchtportal direkt in die Ruinen; Voras stirbt. Der Ort bleibt verlassen zurück.
+[P-22] **Belagerung und Fall:** Ein entkommener Soldat berichtet von Nahrungsmangel und ersten Todesfällen. Ein Hilferuf Voras’ meldet gefallene Mauern, eine beinahe verhungerte Bevölkerung und das Auftauchen einer schwarzen Rüstung unter den Angreifern – Belorus selbst. Die Untoten greifen nicht mehr aktiv an, belagern die Stadt aber weiter.
+[P-24] **Zerstörung und Ende:** Die Helden finden Breska unter dem magischen Nebel in Trümmern. Nur das Anwesen ist intakt. Sie durchsuchen die alte Gildenhalle, die Gruft und schließlich das Anwesen. Nach der Aktivierung des Splitters des Ewigen öffnet Lindo Laut ein Fluchtportal direkt in die Ruinen; Voras stirbt. Der Ort bleibt verlassen zurück.
 
 ## Offene Fragen
 - Das Schicksal der überlebenden Bewohner – ob und wohin sie flohen – bleibt ungeklärt.
@@ -61,11 +61,11 @@ Im Dorf lebten einfache Bauern, der Bürgermeister Berthold, der Magier Leandras
 [P-04] Session 2025-04-15 @ 01:33:07 (https://www.youtube.com/watch?v=YCpAz_syjaY)
 [P-05] Session 2025-04-23 @ 00:03:07 (https://www.youtube.com/watch?v=z3C-bewKqUs)
 [P-13] Session 2025-06-25 @ 00:03:00 (https://www.youtube.com/watch?v=tpkO9uGw6-I)
-[P-23] Session 2025-09-17 @ 00:07:22 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
-[P-25] Session 2025-09-30 @ 02:12:25 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
-[P-31] Session 2025-11-18 @ 00:57:49 (https://www.youtube.com/watch?v=w__ahowb9p0)
-[P-33] Session 2026-01-06 @ 01:03:38 (https://www.youtube.com/watch?v=VGw81seFvbo)
-[P-34] Session 2026-01-13 @ 00:38:23 (https://www.youtube.com/watch?v=w4LB1s9_3rs)
-[P-41] Session 2026-03-10 @ 00:05:00 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
-[P-57] Session 2026-07-21 @ 01:49:28 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
+[P-22] Session 2025-09-17 @ 00:07:22 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
+[P-24] Session 2025-09-30 @ 02:12:25 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[P-30] Session 2025-11-18 @ 00:57:49 (https://www.youtube.com/watch?v=w__ahowb9p0)
+[P-32] Session 2026-01-06 @ 01:03:38 (https://www.youtube.com/watch?v=VGw81seFvbo)
+[P-33] Session 2026-01-13 @ 00:38:23 (https://www.youtube.com/watch?v=w4LB1s9_3rs)
+[P-40] Session 2026-03-10 @ 00:05:00 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
+[P-55] Session 2026-07-21 @ 01:49:28 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
 12. Buchkapitel „Die Glocken von Breska“ aus *Der Splitter des Ewigen* und „Breschka rüstet sich“ aus *Der Splitter des Ewigen Buch 1*

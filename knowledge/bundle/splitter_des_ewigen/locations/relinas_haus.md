@@ -14,4 +14,4 @@ Das Haus des Orakels [Relina](/npcs/relina.md), über dem ein knöcherner Drache
 
 # Belege
 
-[P-48] Session 2026-04-14 @ 01:53:08 (https://www.youtube.com/watch?v=1Jyu92P7_Fg)
+[P-47] Session 2026-04-14 @ 01:53:08 (https://www.youtube.com/watch?v=1Jyu92P7_Fg)

@@ -1,33 +1,17 @@
 ---
 type: Item
 title: Esterossas Schwert
-description: Esterossas Schwert ist ein mächtiges, eigenwilliges Klingenwaffe, die
-  der Seraph Esterossa führt. Es zeigt ein starkes Eigenleben, handelt…
+description: Ein mysteriöses Schwert, das Esterossa führt, obwohl er ihm misstraut.
+  Es reagiert auf die Kristallhöhle mit Flüstern und Leuchten und wird…
 tags:
 - items
-timestamp: '2026-06-16T00:00:00Z'
+timestamp: '2026-05-19T00:00:00Z'
 id: ITEM_ESTEROSSAS_SCHWERT
 subtype: Waffe
-aliases:
-- Esterossas Schwert
-- Esterossas verfluchtes Schwert
 ---
 
-# Esterossas Schwert
+Ein mysteriöses Schwert, das [Esterossa](/characters/esterossa.md) führt, obwohl er ihm misstraut. Es reagiert auf die Kristallhöhle mit Flüstern und Leuchten und wird heller, während die Kristalle an Energie verlieren. Im Kampf versagt es einmal und verweigert den Befehl, aber später durchbricht es die Waffe eines Seraphs. Esterossa glaubt, dass es mit seiner Seele verbunden ist.
 
-Esterossas Schwert ist ein mächtiges, eigenwilliges Klingenwaffe, die der Seraph Esterossa führt. Es zeigt ein starkes Eigenleben, handelt nach einer eigenen Agenda und scheint eine Verbindung zu übernatürlichen Kräften wie Kristallen, göttlichen Namen und Essenzen Vasuls zu haben. Esterossa selbst hadert mit dem Einfluss des Schwerts auf seine Seele.
+# Belege
 
-## Eigenschaften und Verhalten
-
-Das Schwert reagiert auf Kristalle in der Umgebung: In einer Kristallhöhle summt und flüstert es, lädt sich an den Kristallen auf und leuchtet heller, nachdem die Kristalle erloschen sind. Es trägt den Namen „Holodarn“ auf seiner Klinge, der in der Nähe eines Splitter genannten Wesens oder Artefakts hell glüht, und zeigt eine gierige Erwartung, diesen Splitter zu treffen.
-
-Im Kampf gehorcht das Schwert nicht immer Esterossas Willen: Gegen einen Goblin-Magier verweigert es den tödlichen Hieb, während es wenig später einen Seraphen mühelos durchbohrt. Bei einem Angriff auf Vasul absorbiert es die gesamte freigesetzte Energie Vasuls, was seine eigenständige Macht und Absicht unterstreicht.
-
-## Einfluss auf Esterossa
-
-Esterossa ist sich des zwiespältigen Wesens seines Schwerts bewusst. Er kämpft mit der Frage, wie sehr die Waffe seine Seele und sein Handeln kontrolliert. Das Schwert scheint eine eigene Verbindung zu göttlichen oder dämonischen Mächten zu besitzen – es glüht mit Holodarns Namen und verschlingt Kräfte, die nicht von Esterossa selbst stammen. Diese Eigenschaften machen es zu einer unberechenbaren, aber enorm wirkungsvollen Waffe in den Händen des Winged Sentinel.
-
-## Belege
-
-[P-51] Session 2026-05-19 @ 00:02:35 (https://www.youtube.com/watch?v=xEcGJeaNixI)
-[P-55] Session 2026-06-16 @ 01:45:08 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
+[P-50] Session 2026-05-19 @ 01:30:18 (https://www.youtube.com/watch?v=xEcGJeaNixI)

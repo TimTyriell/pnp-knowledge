@@ -39,6 +39,6 @@ Der **Richter**, auch **Herr der Seelenwacht** genannt, ist ein hochrangiger Anf
 
 # Belege
 
-[P-48] Session 2026-04-14 @ 01:45:15 – https://www.youtube.com/watch?v=1Jyu92P7_Fg
-[P-49] Session 2026-05-06 @ 00:14:29 – https://www.youtube.com/watch?v=MB4quhDWsQE
-[P-50] Session 2026-05-13 @ 01:39:19 – https://www.youtube.com/watch?v=4afPD9Q_5AY
+[P-47] Session 2026-04-14 @ 01:45:15 – https://www.youtube.com/watch?v=1Jyu92P7_Fg
+[P-48] Session 2026-05-06 @ 00:14:29 – https://www.youtube.com/watch?v=MB4quhDWsQE
+[P-49] Session 2026-05-13 @ 01:39:19 – https://www.youtube.com/watch?v=4afPD9Q_5AY

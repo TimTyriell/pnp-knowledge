@@ -13,4 +13,4 @@ Der gefallene Anführer der Soldatengruppe, tot im Schnee mit einer schweren Pla
 
 # Belege
 
-[P-33] Session 2026-01-06 @ 01:36:35 (https://www.youtube.com/watch?v=VGw81seFvbo)
+[P-32] Session 2026-01-06 @ 01:36:35 (https://www.youtube.com/watch?v=VGw81seFvbo)

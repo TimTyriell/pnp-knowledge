@@ -14,4 +14,4 @@ Der sterbende Bote erliegt seinen Verletzungen, nachdem [Lindo Lauts](/character
 
 # Belege
 
-[P-32] Session 2025-11-25 @ 01:38:53 (https://www.youtube.com/watch?v=wd5R4fJfngY)
+[P-31] Session 2025-11-25 @ 01:38:53 (https://www.youtube.com/watch?v=wd5R4fJfngY)

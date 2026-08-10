@@ -13,4 +13,4 @@ id: NPC_GUENTHER_SHANI
 
 # Belege
 
-[P-24] Session 2025-09-23 @ 01:01:26 (https://www.youtube.com/watch?v=DGzfqVigS0g)
+[P-23] Session 2025-09-23 @ 01:01:26 (https://www.youtube.com/watch?v=DGzfqVigS0g)

@@ -14,4 +14,4 @@ Die Gruppe trifft auf [Marus](/npcs/marus.md) und seine Leute in der Banditenhö
 
 # Belege
 
-[P-39] Session 2026-02-24 @ 00:40:32 (https://www.youtube.com/watch?v=WOFArbwDDIQ)
+[P-38] Session 2026-02-24 @ 00:40:32 (https://www.youtube.com/watch?v=WOFArbwDDIQ)

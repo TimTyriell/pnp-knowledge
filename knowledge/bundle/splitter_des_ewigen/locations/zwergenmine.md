@@ -27,10 +27,10 @@ Ursprünglich bauten die Zwerge das Minensystem in den letzten zwölf Jahren aus
 
 # Belege
 
-[P-36] Session 2026-01-27 @ 00:21:13 – https://www.youtube.com/watch?v=9RzvnnWzV7E
+[P-35] Session 2026-01-27 @ 00:21:13 – https://www.youtube.com/watch?v=9RzvnnWzV7E
 [S1-02-B] Session 2026-07-23 @ 00:04:11 – https://www.youtube.com/watch?v=Gb-TEbCFF0M
 
 # Offene Konflikte
 
-- Der Ursprung der Mine ist widersprüchlich belegt: Beleg [P-36] nennt ein „teilweise schon vor dem Zeitalter der alten Götter existierendes Minensystem“, Beleg [S1-02-B] beschreibt sie als „ursprünglich von Halblingen gebaut“. Diese beiden Aussagen sind nicht miteinander vereinbar.
-- Uneinheitlich ist auch der Besitzstand: Beleg [P-36] schildert eine von Zwergen aktiv genutzte und ausgebaute Förderstätte, Beleg [S1-02-B] beschreibt dieselbe Anlage als von Goblins, Bugbären und Gnollen besetzt – möglicherweise ein späterer Zustand, ohne dass die Belege eine Übernahme explizit machen.
+- Der Ursprung der Mine ist widersprüchlich belegt: Beleg [P-35] nennt ein „teilweise schon vor dem Zeitalter der alten Götter existierendes Minensystem“, Beleg [S1-02-B] beschreibt sie als „ursprünglich von Halblingen gebaut“. Diese beiden Aussagen sind nicht miteinander vereinbar.
+- Uneinheitlich ist auch der Besitzstand: Beleg [P-35] schildert eine von Zwergen aktiv genutzte und ausgebaute Förderstätte, Beleg [S1-02-B] beschreibt dieselbe Anlage als von Goblins, Bugbären und Gnollen besetzt – möglicherweise ein späterer Zustand, ohne dass die Belege eine Übernahme explizit machen.

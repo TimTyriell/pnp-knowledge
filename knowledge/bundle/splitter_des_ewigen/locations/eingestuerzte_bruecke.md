@@ -27,5 +27,5 @@ Die eingestürzte Brücke hat für die Gruppe vor allem eine praktische Funktion
 
 # Belege
 
-[P-18] [Session 2025-08-12 @ 00:24:50](https://www.youtube.com/watch?v=vHIjua0BZ9Y) – Eine alte, eingestürzte Brücke auf dem Weg zum Heiligtum, mit einem Schild daneben. Sie ist wohl schon lange zerstört, und die Gruppe muss über einen Baumstamm balancieren.
-[P-19] [Session 2025-08-20 @ 00:13:20](https://www.youtube.com/watch?v=-XbO3FLSL_I) – Eine Brücke, die die Gruppe bereits zuvor gesehen hatte und die nun eingestürzt ist. Sie dient als Orientierungspunkt.
+[P-17] [Session 2025-08-12 @ 00:24:50](https://www.youtube.com/watch?v=vHIjua0BZ9Y) – Eine alte, eingestürzte Brücke auf dem Weg zum Heiligtum, mit einem Schild daneben. Sie ist wohl schon lange zerstört, und die Gruppe muss über einen Baumstamm balancieren.
+[P-18] [Session 2025-08-20 @ 00:13:20](https://www.youtube.com/watch?v=-XbO3FLSL_I) – Eine Brücke, die die Gruppe bereits zuvor gesehen hatte und die nun eingestürzt ist. Sie dient als Orientierungspunkt.

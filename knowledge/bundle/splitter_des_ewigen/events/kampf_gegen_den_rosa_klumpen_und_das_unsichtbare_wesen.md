@@ -14,4 +14,4 @@ Im Ritualraum aktiviert [Dodo](/characters/dodo.md) unbeabsichtigt einen rosa, g
 
 # Belege
 
-[P-46] Session 2026-04-07 @ 01:34:20 (https://www.youtube.com/watch?v=MAuQPMNY548)
+[P-45] Session 2026-04-07 @ 01:34:20 (https://www.youtube.com/watch?v=MAuQPMNY548)

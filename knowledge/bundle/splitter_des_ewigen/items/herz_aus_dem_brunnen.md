@@ -14,4 +14,4 @@ Ein pochendes, fleischiges Herz, das [Lindo Laut](/characters/lindo_laut.md) aus
 
 # Belege
 
-[P-19] Session 2025-08-20 @ 00:53:29 (https://www.youtube.com/watch?v=-XbO3FLSL_I)
+[P-18] Session 2025-08-20 @ 00:53:29 (https://www.youtube.com/watch?v=-XbO3FLSL_I)

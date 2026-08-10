@@ -14,4 +14,4 @@ subtype: Ritual
 
 # Belege
 
-[P-33] Session 2026-01-06 @ 01:39:37 (https://www.youtube.com/watch?v=VGw81seFvbo)
+[P-32] Session 2026-01-06 @ 01:39:37 (https://www.youtube.com/watch?v=VGw81seFvbo)

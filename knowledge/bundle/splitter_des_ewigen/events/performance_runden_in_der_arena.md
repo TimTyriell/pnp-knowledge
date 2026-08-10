@@ -14,4 +14,4 @@ Nach den beiden Kämpfen zeigen die Helden jeweils eine Showeinlage für das Pub
 
 # Belege
 
-[P-28] Session 2025-10-21 @ 00:45:08 (https://www.youtube.com/watch?v=sxFhbtwoefA)
+[P-27] Session 2025-10-21 @ 00:45:08 (https://www.youtube.com/watch?v=sxFhbtwoefA)

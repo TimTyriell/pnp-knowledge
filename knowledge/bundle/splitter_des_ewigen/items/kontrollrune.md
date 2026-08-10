@@ -14,4 +14,4 @@ Eine eingravierte magische Rune für Kontrollzauber, die sowohl auf einem Stein 
 
 # Belege
 
-[P-26] Session 2025-10-07 @ 01:02:28 (https://www.youtube.com/watch?v=qVAF_54S8Vw)
+[P-25] Session 2025-10-07 @ 01:02:28 (https://www.youtube.com/watch?v=qVAF_54S8Vw)

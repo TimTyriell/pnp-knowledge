@@ -16,4 +16,4 @@ Eine lebhafte, aber günstige [Taverne](/locations/taverne.md), in der die Grupp
 
 # Belege
 
-[P-40] Session 2026-03-03 @ 01:05:11 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
+[P-39] Session 2026-03-03 @ 01:05:11 (https://www.youtube.com/watch?v=BRUNuNKTeOg)

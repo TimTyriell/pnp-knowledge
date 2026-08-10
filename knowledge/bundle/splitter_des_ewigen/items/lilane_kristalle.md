@@ -14,4 +14,4 @@ Leuchtende purpurfarbene Kristalle, die wie eine Lebensform wachsen und Feuchtig
 
 # Belege
 
-[P-26] Session 2025-10-07 @ 00:11:53 (https://www.youtube.com/watch?v=qVAF_54S8Vw)
+[P-25] Session 2025-10-07 @ 00:11:53 (https://www.youtube.com/watch?v=qVAF_54S8Vw)

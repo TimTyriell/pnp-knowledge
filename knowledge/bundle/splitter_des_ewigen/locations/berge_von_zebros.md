@@ -18,7 +18,7 @@ Die Berge von Zebros (auch Berg von Zebros genannt) sind eine kalte, neblige Ber
 
 Nach Festlegung der Spielleitung ist Zebros keine Gottheit, sondern ein altes Königreich, das im Götterkrieg zerstört wurde [3]. Die Hauptstadt des Königreichs trug ebenfalls den Namen Zebros, ebenso wie der Berg. Vom Königreich sind heute nur noch Ruinen und Relikte erhalten; der Berg Zebros selbst steht weiterhin [3]. Eine Inschrift in der Silbergruft, die zunächst als Beleg für einen „ehemaligen Eigentümer“ und Erdgott namens Zebros gedeutet wurde, beruht vermutlich auf einer Verwechslung mit dem Reichsnamen; gemeint sein dürfte ein Relikt oder eine Ruine aus der Zeit des Königreichs [3].
 
-Die Zebros-Dynastie hatte ihre Heimat an diesem Berg; als Erkennungszeichen diente ein spitzes Pyramiden-Symbol. Eine Villa, die in späteren Aufzeichnungen erwähnt wird, gehörte ursprünglich zum Herrschaftsgebiet des Berges [P-38].
+Die Zebros-Dynastie hatte ihre Heimat an diesem Berg; als Erkennungszeichen diente ein spitzes Pyramiden-Symbol. Eine Villa, die in späteren Aufzeichnungen erwähnt wird, gehörte ursprünglich zum Herrschaftsgebiet des Berges [P-37].
 
 ## Gegenwart und Rolle in der Kampagne
 
@@ -27,5 +27,5 @@ Einst gruben Zwerge hier zu tief und ließen die Spitze des Berges einstürzen; 
 # Belege
 
 [P-08] Session 2025-05-14, 00:00:57 – https://www.youtube.com/watch?v=5eAEDN5ra-4
-[P-38] Session 2026-02-17, 00:31:00 – https://www.youtube.com/watch?v=Z2jlzpoTWVw
+[P-37] Session 2026-02-17, 00:31:00 – https://www.youtube.com/watch?v=Z2jlzpoTWVw
 3. Kanon_Entscheidungen.md (Spielleitungs-Festlegung zu „Zebros“)

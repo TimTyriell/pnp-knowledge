@@ -14,4 +14,4 @@ Am nächsten Morgen warnte Hal vor einer Hexe im [Osten](/locations/osten.md) mi
 
 # Belege
 
-[P-25] Session 2025-09-30 @ 02:12:25 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[P-24] Session 2025-09-30 @ 02:12:25 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)

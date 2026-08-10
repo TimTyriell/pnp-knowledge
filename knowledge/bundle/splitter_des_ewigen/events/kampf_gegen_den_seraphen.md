@@ -14,4 +14,4 @@ Ein erbitterter Kampf der gesamten Gruppe gegen den Seraphen, einen Tier-4-Gegne
 
 # Belege
 
-[P-50] Session 2026-05-13 @ 00:31:14 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
+[P-49] Session 2026-05-13 @ 00:31:14 (https://www.youtube.com/watch?v=4afPD9Q_5AY)

@@ -13,4 +13,4 @@ Garlin der Weise ist ein warforged-artiges, mechanisches Wesen mit rotem Mantel 
 
 # Belege
 
-[P-28] Session 2025-10-21 @ 00:14:37 (https://www.youtube.com/watch?v=sxFhbtwoefA)
+[P-27] Session 2025-10-21 @ 00:14:37 (https://www.youtube.com/watch?v=sxFhbtwoefA)

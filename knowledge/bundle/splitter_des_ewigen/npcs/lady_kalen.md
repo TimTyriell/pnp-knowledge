@@ -13,4 +13,4 @@ Die Sprecherin von [Ohoriaks](/deities/ohoriaks.md) und Herrin der Stadt [Boragd
 
 # Belege
 
-[P-48] Session 2026-04-14 @ 01:24:20 (https://www.youtube.com/watch?v=1Jyu92P7_Fg)
+[P-47] Session 2026-04-14 @ 01:24:20 (https://www.youtube.com/watch?v=1Jyu92P7_Fg)

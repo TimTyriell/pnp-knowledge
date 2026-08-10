@@ -45,4 +45,4 @@ Weitere Verbindungen – etwa zu anderen Gottheiten, zum übrigen Pantheon oder 
 
 ## Belege
 
-[P-41] Session 2026-03-10 @ 02:03:55 (https://www.youtube.com/watch?v=Kr9_AC2XtOw) – Voras beschreibt Kaleandra die Rote als unbekannte Vampirgottheit, die ihn unterstützt und keine Rücksicht auf Lebende nimmt; Statue in seinem Anwesen.
+[P-40] Session 2026-03-10 @ 02:03:55 (https://www.youtube.com/watch?v=Kr9_AC2XtOw) – Voras beschreibt Kaleandra die Rote als unbekannte Vampirgottheit, die ihn unterstützt und keine Rücksicht auf Lebende nimmt; Statue in seinem Anwesen.

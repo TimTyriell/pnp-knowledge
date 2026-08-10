@@ -14,4 +14,4 @@ Die Gruppe kämpft gegen ein beschworenes Skelett und einen untoten Krieger. [Ka
 
 # Belege
 
-[P-52] Session 2026-05-27 @ 01:31:38 (https://www.youtube.com/watch?v=IYYmgpqsp7E)
+[P-51] Session 2026-05-27 @ 01:31:38 (https://www.youtube.com/watch?v=IYYmgpqsp7E)

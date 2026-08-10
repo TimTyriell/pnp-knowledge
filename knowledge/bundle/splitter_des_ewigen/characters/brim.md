@@ -77,7 +77,7 @@ Brim kämpft zusammen mit Otis gegen Dämonen und schützt die Kinder. Er tötet
 
 # Belege
 
-[P-41] Session 2026-03-10, 01:55:15, https://www.youtube.com/watch?v=Kr9_AC2XtOw
-[P-42] Session 2026-03-18, 00:05:39, https://www.youtube.com/watch?v=HHXxsASLrbQ
-[P-46] Session 2026-04-07, 00:11:22, https://www.youtube.com/watch?v=MAuQPMNY548
-[P-47] Session 2026-04-09, 00:03:40, https://www.youtube.com/watch?v=vcGkejr8_nI
+[P-40] Session 2026-03-10, 01:55:15, https://www.youtube.com/watch?v=Kr9_AC2XtOw
+[P-41] Session 2026-03-18, 00:05:39, https://www.youtube.com/watch?v=HHXxsASLrbQ
+[P-45] Session 2026-04-07, 00:11:22, https://www.youtube.com/watch?v=MAuQPMNY548
+[P-46] Session 2026-04-09, 00:03:40, https://www.youtube.com/watch?v=vcGkejr8_nI

@@ -31,5 +31,5 @@ Sein Schiff ist inzwischen für den Winter vertaut. In der Taverne gesellt er si
 [P-06] Session 2025-04-30, 00:13:03 – https://www.youtube.com/watch?v=fsCOiSkKKTE
 [P-07] Session 2025-05-06, 00:02:30 – https://www.youtube.com/watch?v=e0v6AFGd4mE
 [P-16] Session 2025-07-29, 01:56:53 – https://www.youtube.com/watch?v=XXgO5Ht4Q0A
-[P-31] Session 2025-11-18, 01:28:08 – https://www.youtube.com/watch?v=w__ahowb9p0
+[P-30] Session 2025-11-18, 01:28:08 – https://www.youtube.com/watch?v=w__ahowb9p0
 [S1-01-A] Session 2026-07-29, 00:54:55 – https://www.youtube.com/watch?v=umGyKLkefJI

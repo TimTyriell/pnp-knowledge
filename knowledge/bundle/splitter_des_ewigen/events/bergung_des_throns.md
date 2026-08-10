@@ -14,4 +14,4 @@ Durch erneutes Aktivieren des Portals mit Lindos Stab holen die Helden den dämo
 
 # Belege
 
-[P-21] Session 2025-09-06 @ 00:53:40 (https://www.youtube.com/watch?v=vo1xnyLQDJk)
+[P-20] Session 2025-09-06 @ 00:53:40 (https://www.youtube.com/watch?v=vo1xnyLQDJk)

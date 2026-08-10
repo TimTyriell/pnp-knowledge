@@ -14,4 +14,4 @@ Ein verwittertes Buch, das [Dodo](/characters/dodo.md) konsultiert und das von m
 
 # Belege
 
-[P-40] Session 2026-03-03 @ 01:29:28 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
+[P-39] Session 2026-03-03 @ 01:29:28 (https://www.youtube.com/watch?v=BRUNuNKTeOg)

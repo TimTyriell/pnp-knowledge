@@ -26,5 +26,5 @@ In einer anderen Begegnung (Session 2026-01-06) wurde Hans verwirrt und traumati
 
 # Belege
 
-[P-33] Session 2026-01-06, 02:04:47 ([YouTube](https://www.youtube.com/watch?v=VGw81seFvbo))
-[P-34] Session 2026-01-13, 01:14:28 ([YouTube](https://www.youtube.com/watch?v=w4LB1s9_3rs))
+[P-32] Session 2026-01-06, 02:04:47 ([YouTube](https://www.youtube.com/watch?v=VGw81seFvbo))
+[P-33] Session 2026-01-13, 01:14:28 ([YouTube](https://www.youtube.com/watch?v=w4LB1s9_3rs))

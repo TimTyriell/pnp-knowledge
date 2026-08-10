@@ -14,4 +14,4 @@ Ein Kampf, bei dem die Gruppe einen dämonischen Magier stellt, der Kinder bedro
 
 # Belege
 
-[P-47] Session 2026-04-09 @ 00:18:28 (https://www.youtube.com/watch?v=vcGkejr8_nI)
+[P-46] Session 2026-04-09 @ 00:18:28 (https://www.youtube.com/watch?v=vcGkejr8_nI)

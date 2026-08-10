@@ -14,4 +14,4 @@ Der Schlagabtausch am Berghang, bei dem die Gruppe drei Kultisten und drei Ghule
 
 # Belege
 
-[P-20] Session 2025-09-02 @ 00:39:08 (https://www.youtube.com/watch?v=TLZOH7TlGhk)
+[P-19] Session 2025-09-02 @ 00:39:08 (https://www.youtube.com/watch?v=TLZOH7TlGhk)

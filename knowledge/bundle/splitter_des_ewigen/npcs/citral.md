@@ -13,4 +13,4 @@ Die andere Seele im Amulett, die wie [Esua](/npcs/esua.md) agiert und [Lindo Lau
 
 # Belege
 
-[P-20] Session 2025-09-02 @ 01:49:20 (https://www.youtube.com/watch?v=TLZOH7TlGhk)
+[P-19] Session 2025-09-02 @ 01:49:20 (https://www.youtube.com/watch?v=TLZOH7TlGhk)

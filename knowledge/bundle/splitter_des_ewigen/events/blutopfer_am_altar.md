@@ -14,4 +14,4 @@ Versuch, dem Gott [Uhoriaks](/deities/ohoriaks.md) Blut darzubringen. [Cookie](/
 
 # Belege
 
-[P-29] Session 2025-10-28 @ 01:30:02 (https://www.youtube.com/watch?v=V6NzNakqxXM)
+[P-28] Session 2025-10-28 @ 01:30:02 (https://www.youtube.com/watch?v=V6NzNakqxXM)

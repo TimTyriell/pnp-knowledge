@@ -14,4 +14,4 @@ In den Ruinen von [Breska](/locations/breska.md) überrascht die Gruppe vier Ghu
 
 # Belege
 
-[P-41] Session 2026-03-10 @ 00:20:08 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
+[P-40] Session 2026-03-10 @ 00:20:08 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)

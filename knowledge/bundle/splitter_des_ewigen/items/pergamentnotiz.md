@@ -14,4 +14,4 @@ Von [Nyrella](/characters/nyrella.md) mit Kohlestift geschriebene Warnung: ‚Ra
 
 # Belege
 
-[P-24] Session 2025-09-23 @ 01:00:45 (https://www.youtube.com/watch?v=DGzfqVigS0g)
+[P-23] Session 2025-09-23 @ 01:00:45 (https://www.youtube.com/watch?v=DGzfqVigS0g)

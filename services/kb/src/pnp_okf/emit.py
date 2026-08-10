@@ -16,7 +16,13 @@ from pnp_okf.models import (
     SessionExtraction,
     SessionTranscript,
 )
-from pnp_okf.okf import render_document, slugify, write_concept, write_index
+from pnp_okf.okf import (
+    render_document,
+    slugify,
+    split_document,
+    write_concept,
+    write_index,
+)
 
 log = logging.getLogger(__name__)
 
@@ -181,6 +187,54 @@ def emit_sessions(
         entries.append(
             (title, f"{date}.md", _short_desc(extraction.recap, 100))
         )
+    entries += _refresh_orphan_sessions(bundle_dir, transcripts, episodes)
+    return entries
+
+
+def _refresh_orphan_sessions(
+    bundle_dir: Path,
+    transcripts: dict[str, SessionTranscript],
+    episodes: Episodes,
+) -> list[tuple[str, str, str]]:
+    """Give session files with no transcript their episode identity back.
+
+    A session whose transcript is gone (deleted, never re-downloaded) keeps its
+    concept file — the recap in it is knowledge, and pruning it would destroy
+    the only record of that evening. But the loop above never sees it, so it
+    would keep a raw YouTube title and no episode id, and drop out of the
+    episode overview downstream. This pass touches only the frontmatter, never
+    the body, and only for files the run did not already write.
+    """
+
+    sessions_dir = bundle_dir / "sessions"
+    if not sessions_dir.is_dir() or not len(episodes):
+        return []
+
+    written = {t.date or t.session_id[:10] for t in transcripts.values()}
+    entries: list[tuple[str, str, str]] = []
+    for path in sorted(sessions_dir.glob("*.md")):
+        date = path.stem
+        if date == "index" or date in written:
+            continue
+        text = path.read_text(encoding="utf-8")
+        frontmatter, body = split_document(text)
+        episode = episodes.for_url(str(frontmatter.get("resource") or ""))
+        if not episode or not episode.get("id"):
+            continue
+        name = (episode.get("title") or "").strip()
+        title = f"Folge {episode['id']} – {name}" if name else f"Folge {episode['id']}"
+        frontmatter |= {
+            "title": title,
+            "description": episode.get("description") or frontmatter.get("description"),
+            "episode": episode["id"],
+            "episode_title": name or None,
+            "season": str(episode["season"]) if episode.get("season") else None,
+            "season_label": episodes.season_label(episode.get("season")),
+            "team": episode.get("team"),
+        }
+        write_concept(bundle_dir, f"sessions/{date}", frontmatter, body)
+        entries.append((title, f"{date}.md", str(frontmatter.get("description") or "")[:100]))
+        log.info("[emit] %s has no transcript — refreshed episode identity only", date)
     return entries
 
 

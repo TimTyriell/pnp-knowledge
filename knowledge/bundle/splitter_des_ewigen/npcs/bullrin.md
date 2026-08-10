@@ -13,4 +13,4 @@ Ein Zwerg aus einer früheren Abenteurergruppe, der im Dungeon zurückblieb, um 
 
 # Belege
 
-[P-29] Session 2025-10-28 @ 01:02:16 (https://www.youtube.com/watch?v=V6NzNakqxXM)
+[P-28] Session 2025-10-28 @ 01:02:16 (https://www.youtube.com/watch?v=V6NzNakqxXM)

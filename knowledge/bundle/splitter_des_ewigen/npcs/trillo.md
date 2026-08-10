@@ -13,4 +13,4 @@ Trillo ist ein Jäger und Ordensbruder mit einem leuchtenden Stab und sichtbaren
 
 # Belege
 
-[P-52] Session 2026-05-27 @ 01:21:05 (https://www.youtube.com/watch?v=IYYmgpqsp7E)
+[P-51] Session 2026-05-27 @ 01:21:05 (https://www.youtube.com/watch?v=IYYmgpqsp7E)

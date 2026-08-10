@@ -28,5 +28,5 @@ Der beigelegte Ring wird nicht näher beschrieben; ob er magische Eigenschaften 
 
 ## Belege
 
-[P-30] Session 2025-11-14, 00:42:46 – Esterossa liest den Brief vor, in dem Valeria ihre Schwangerschaft erklärt und zwei Goldsäcke sowie einen mysteriösen Ring schickt. (https://www.youtube.com/watch?v=8Khb-Y8XbKY)
-[P-31] Session 2025-11-18, 00:16:21 – Esterossa zeigt den Brief Nyrella, bestätigt damit Valerias Schwangerschaft und vorübergehende Abwesenheit. (https://www.youtube.com/watch?v=w__ahowb9p0)
+[P-29] Session 2025-11-14, 00:42:46 – Esterossa liest den Brief vor, in dem Valeria ihre Schwangerschaft erklärt und zwei Goldsäcke sowie einen mysteriösen Ring schickt. (https://www.youtube.com/watch?v=8Khb-Y8XbKY)
+[P-30] Session 2025-11-18, 00:16:21 – Esterossa zeigt den Brief Nyrella, bestätigt damit Valerias Schwangerschaft und vorübergehende Abwesenheit. (https://www.youtube.com/watch?v=w__ahowb9p0)

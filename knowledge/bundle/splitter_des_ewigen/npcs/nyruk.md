@@ -60,9 +60,9 @@ Nyruk ist ein **großer Eisbär** mit entsprechend imposanter Statur. Sein Fell 
 ## Belege
 
 [P-16] Session 2025-07-29, 00:39:48, https://www.youtube.com/watch?v=XXgO5Ht4Q0A
-[P-22] Session 2025-09-09, 01:54:40, https://www.youtube.com/watch?v=Zl0qfuI6Goc
-[P-24] Session 2025-09-30, 01:43:52, https://www.youtube.com/watch?v=bUT7Mc2hjUY
-[P-25] Session 2025-11-18, 00:06:45, https://www.youtube.com/watch?v=w__ahowb9p0
-[P-31] Session 2026-01-20, 01:27:33, https://www.youtube.com/watch?v=H3ckYdTv4y8
-[P-35] Session 2026-02-24, 00:05:46, https://www.youtube.com/watch?v=WOFArbwDDIQ
-[P-39] Session 2026-03-24, 01:15:32, https://www.youtube.com/watch?v=Yj5BWJfg3Ag (Beleg [9] im Originalauftrag)
+[P-21] Session 2025-09-09, 01:54:40, https://www.youtube.com/watch?v=Zl0qfuI6Goc
+[P-23] Session 2025-09-30, 01:43:52, https://www.youtube.com/watch?v=bUT7Mc2hjUY
+[P-24] Session 2025-11-18, 00:06:45, https://www.youtube.com/watch?v=w__ahowb9p0
+[P-30] Session 2026-01-20, 01:27:33, https://www.youtube.com/watch?v=H3ckYdTv4y8
+[P-34] Session 2026-02-24, 00:05:46, https://www.youtube.com/watch?v=WOFArbwDDIQ
+[P-38] Session 2026-03-24, 01:15:32, https://www.youtube.com/watch?v=Yj5BWJfg3Ag (Beleg [9] im Originalauftrag)

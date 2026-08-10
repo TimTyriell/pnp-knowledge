@@ -14,4 +14,4 @@ Die Gruppe trifft [Sys Fizik](/npcs/sys_fizik.md) in der Schmugglertaverne und b
 
 # Belege
 
-[P-40] Session 2026-03-03 @ 01:55:31 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
+[P-39] Session 2026-03-03 @ 01:55:31 (https://www.youtube.com/watch?v=BRUNuNKTeOg)

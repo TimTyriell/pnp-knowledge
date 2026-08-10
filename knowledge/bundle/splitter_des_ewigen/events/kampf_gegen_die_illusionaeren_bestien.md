@@ -14,4 +14,4 @@ Zwei große Silberbestien greifen an, lösen sich aber in Illusionen auf, als si
 
 # Belege
 
-[P-39] Session 2026-02-24 @ 01:55:53 (https://www.youtube.com/watch?v=WOFArbwDDIQ)
+[P-38] Session 2026-02-24 @ 01:55:53 (https://www.youtube.com/watch?v=WOFArbwDDIQ)

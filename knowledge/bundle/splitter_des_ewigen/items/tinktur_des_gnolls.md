@@ -14,4 +14,4 @@ Ein Brei aus unbekannten Kräutern, den der Gnoll auf [Rotunas](/characters/rotu
 
 # Belege
 
-[P-24] Session 2025-09-23 @ 00:12:16 (https://www.youtube.com/watch?v=DGzfqVigS0g)
+[P-23] Session 2025-09-23 @ 00:12:16 (https://www.youtube.com/watch?v=DGzfqVigS0g)

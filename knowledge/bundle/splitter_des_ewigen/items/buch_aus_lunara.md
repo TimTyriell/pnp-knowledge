@@ -14,4 +14,4 @@ Das rätselhafte Buch, das die junge Lunara vor zwölf Jahren zusammen mit ihrem
 
 # Belege
 
-[P-41] Session 2026-03-10 @ 01:09:03 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
+[P-40] Session 2026-03-10 @ 01:09:03 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)

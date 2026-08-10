@@ -25,4 +25,4 @@ Der Adler Merlin ist mehr als ein bloßes Haustier; Finn und Merlin teilen einen
 
 # Belege
 
-[P-52] Session 2026-05-27 @ 00:08:34 (https://www.youtube.com/watch?v=IYYmgpqsp7E)
+[P-51] Session 2026-05-27 @ 00:08:34 (https://www.youtube.com/watch?v=IYYmgpqsp7E)

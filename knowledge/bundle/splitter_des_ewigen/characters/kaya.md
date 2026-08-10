@@ -1,8 +1,8 @@
 ---
 type: Character
 title: Kaya
-description: Volk & Auftreten Kaya ist eine Faunin, eine naturverbundene Wesenheit
-  mit hörnerbewehrtem Kopf und bockartigen Beinen. Ihr Äußeres wird als…
+description: Kaya ist eine lebenslustige Bardin vom Volk der Faune (auch als Satyr
+  bezeichnet), die mit ihrer Laute als Straßenkünstlerin umherzieht [P-…
 tags:
 - characters
 timestamp: '2026-08-06T00:00:00Z'
@@ -10,53 +10,58 @@ id: CHAR_KAYA
 ---
 
 ## Überblick
-Kaya ist eine lebenslustige Faun‑Bardin und eine der zentralen Heldinnen der Gruppe. Sie begleitet ihre Gefährten auf einer gefahrvollen Reise und begegnet den Herausforderungen mit einer Mischung aus musikalischem Charme, spitzbübischer Frechheit und echter Fürsorge. Obwohl sie sich selbst nicht als Kämpferin sieht, wächst sie im Verlauf der Kampagne über sich hinaus und entdeckt ihre magischen Fähigkeiten sowie ihren Mut.
+
+Kaya ist eine lebenslustige Bardin vom Volk der Faune (auch als Satyr bezeichnet), die mit ihrer Laute als Straßenkünstlerin umherzieht [P-52][S1-01-B]. Sie gehört zu einer Gruppe von Abenteurern, die sich in der Taverne zusammengefunden haben, und versteht sich selbst als diejenige, die „hier ein bisschen für Stimmung sorgt“ [S1-01-B]. Ihr Nomadenleben hat sie geprägt: Nach dem Tod ihrer Mutter verlor die Gruppe ihre Heimat, und der Vater ist ihr entfremdet [S1-03-B].
 
 ## Rolle in der Kampagne
-Als Bardin erfüllt Kaya die klassische Rolle der Unterstützerin und Gesellschafterin. Sie unterhält die Truppe auf langen Wanderungen mit Musik, lockert angespannte Situationen mit Humor und verleiht dem Zusammenspiel der unterschiedlichen Charaktere eine leichte, herzliche Note. Im Kampf setzt sie ihre Magie zunehmend offensiv ein, bleibt aber stets um das Wohl ihrer Freunde besorgt. Ihre Fähigkeit, andere mit einem aufmunternden Wort zu stärken (Rally‑Würfel), und ihre wachsende Kampferfahrung machen sie zu einem wertvollen Mitglied der Gruppe.
+
+Innerhalb der Gruppe ist Kaya die soziale Vermittlerin und moralische Stütze. Sie entschärft Konflikte, bevor sie eskalieren – etwa als sie sich zwischen Saris Morgenstern und [Bruma Stormrak](/characters/bruma_stormrak.md) drängt, um eine übergriffige Handanalyse zu verhindern [S1-01-B]. Sie ist es, die im Farmlager freundlich winkt und versucht, die gruselig wirkenden Gefährten zu kaschieren [S1-01-B]. Nach Kämpfen kümmert sie sich einfühlsam um verwirrte oder verletzte Gruppenmitglieder [S1-02-B].
+
+Im Kampf hat sie sich von anfänglicher Ängstlichkeit zu einer taktisch geschickten Kämpferin entwickelt, die ihre magische Hand und Feuerzauber wirkungsvoll einsetzt [S1-02-B]. Gegenüber Autoritäten und Fremden setzt sie auf Charme und persönliche Ansprache, auch wenn sie damit nicht immer durchdringt [P-52][S1-03-B].
 
 ## Wichtige Merkmale
 
-**Volk & Auftreten**  
-Kaya ist eine Faunin, eine naturverbundene Wesenheit mit hörnerbewehrtem Kopf und bockartigen Beinen. Ihr Äußeres wird als lebensfroh und verspielt beschrieben; sie „hüpft ein bisschen und unterhält alle“ mit Musik[S1-01-B].
+**Auftreten und Wesenszüge:** Kaya tritt offen, charmant und körperlich expressiv auf – sie tanzt auf Tischen, macht Trippelschritte und setzt gezielt Blicke ein [P-52][S1-01-B][S1-03-B]. Sie zeigt Mitgefühl für künstlerische Enttäuschung bei anderen und ist tief berührt, wenn Gefährten persönliche Verluste offenbaren [P-52][S1-03-B]. Gegenüber Göttern ist sie skeptisch und lehnt Segnungen ab, nachdem sie ein verdächtiges Geflüster zwischen Saris und [Samuel](/npcs/samuel_schaedel.md) bemerkt hat [P-52]. Sie verfügt über ein gutes Gespür für Lügen und durchschaut etwa die Unwahrheiten des Informanten [Talron](/npcs/talron.md) [P-52].
 
-**Fähigkeiten**  
-- *Musik & performance*: Sie spielt abends in der Taverne, verdient damit Gold und setzt ihre Instrumente gezielt ein, um Tiere zu beruhigen (etwa den Hund Nepp auf der Halbling‑Farm)[S1-01-B].  
-- *Magie*: Kayas Zauber umfassen *Mage Hand* (eine magische Hand, mit der sie Gegner in Abgründe stößt) und *Wild Flame* (verheerende Feuerangriffe)[S1-02-B]. Außerdem kann sie *Rally‑Tokens* vergeben, die Verbündeten einen zusätzlichen D6 gewähren[S1-01-B][S1-02-B].  
-- *Instinkt*: Sie besitzt ein feines Gespür für Täuschungen und durchschaute schon früh Talrons Lüge sowie die fragwürdige Natur von Jorans Segen[P-53].
-
-**Wesenszüge**  
-- **Lebenslustig und frech**: In der ersten Session wird sie als „relativ lebenslustig, relativ frech“ eingeführt[P-53].  
-- **Einfühlsam und mitfühlend**: Sie zeigt tiefe Anteilnahme für Sange nach dessen Werwolf‑Transformation und für Bruma, als dieser von seiner Heimat spricht[S1-02-B][S1-03-B].  
-- **Sorglos, aber mit heimlicher Besorgnis**: Trotz ihrer heiteren Fassade macht sie sich große Sorgen um Sanges neuen Gott[S1-01-B].  
-- **Neugierig**: Sie ist fasziniert von Saris und seinen sprechenden Schädeln; sie tut sogar so, als könnte sie die Schädel hören, um deren Warnungen aufnehmen zu können[P-53][S1-01-B].
+**Fähigkeiten und Ausrüstung:**
+- **Deaf Deceiver:** Eine Fähigkeit, die es ihr ermöglicht, Lügen geschickt und überzeugend vorzutragen. Sie setzt sie ein, um den Wächter [Gerhard Schanz](/npcs/gerhard_schanz.md) zu belügen [P-52].
+- **Mage Hand (Magische Hand):** Kaya kann eine magische Hand beschwören und aus der Ferne steuern. Sie setzt sie taktisch ein, etwa um Gegner in Abgründe zu stoßen, oder schlägt vor, Feinde damit zu piesacken, um sie aus der Deckung zu locken [S1-02-B].
+- **Wild Flame (Wilde Flamme):** Ein verheerender Feuerangriff, den sie im Kampf entfesselt [S1-02-B].
+- **Rally-Die (Rally-Token):** Ein Schutzzauber, dessen Wirkung über mehrere Sessions hinweg aktiv bleiben kann. Sie verteilt zu Beginn eines Tages motivierend einen Rally-Die an ihre Gefährten [S1-01-B][S1-02-B].
+- **Laute:** Ihr Musikinstrument, mit dem sie aufheiternde Musik spielt und als Straßenkünstlerin auftritt [P-52][S1-01-B].
+- **Schützende Halskette:** Erhalten von [Bruma](/characters/bruma_stormrak.md) als Dank für ihre aufmunternde Art [S1-01-B].
+- **Heiltränke:** Zwei Heiltränke, die sie von [Talron](/npcs/talron.md) für die Minenmission empfängt [S1-01-B].
 
 ## Beziehungen und Verbindungen
 
-- **[Sange](/characters/sange.md)** – Enger Gefährte, um den sie sich wie eine ältere Schwester sorgt. Sie beobachtet misstrauisch die Veränderungen, die Jorans Segen in ihm auslöst, und ist nach seiner ersten Werwolf‑Verwandlung diejenige, die ihn ohne Urteil auffängt und ihm Unterstützung anbietet. Ihre Wertschätzung für Sange zeigt sich auch darin, dass sie seine poetischen Worte für ein eigenes Lied notiert[P-53][S1-02-B].
-- **[Saris](/characters/saris.md)** – Der Tiefling mit den geisterhaften Schädeln weckt ihre Neugier. Sie gibt sich Mühe, die unsichtbaren Begleiter Jonathan und Samuel zu „hören“ – obwohl sie sie tatsächlich nicht wahrnimmt – und schenkt vor allem Samuels Warnung vor Joran Glauben. Bei der ersten Begegnung mit Bruma stellt sie sich spontan vor, um Saris’ aufdringliches Verhalten abzufangen[S1-01-B].
-- **[Bruma Stormrak](/characters/bruma_stormrak.md)** – Der kämpferische Neuzugang schenkt ihr eine schützende Halskette, über die sie sich begeistert freut. Bruma zeigt sich im Gefecht beschützend („Kaya, wenn du dich unsicher fühlst, bleib hinten. Ich bin bei dir.“). Als seine Härte sie verunsichert und er von seiner Heimat spricht, bringt sie ihm ehrliches Mitgefühl entgegen[S1-01-B][S1-02-B][S1-03-B].
-- **[Talron](/npcs/talron.md)** – Ein ortskundiger NSC, den Kaya früh durchschaute. Er versorgte sie mit zwei Heiltränken und gab ihr eine düstere Antwort auf die Frage nach einer früheren, gescheiterten Gruppe[P-53][S1-01-B].
-- **Xenia** – Die tapfere Wirtin, die Kaya mit Schmeicheleien und persönlicher Ansprache zur Evakuierung bewegen wollte. Xenia lehnte ab und entschied sich, für ihre Taverne zu kämpfen[S1-03-B].
-- **Halblinge (Sibi, die Hofbewohner)** – Kaya scheiterte mit sanfter Überredungskunst an den eigensinnigen Halblingen, gewann aber den Jungen Sibi und den Hund Nepp durch ein musikalisches Ständchen[S1-01-B][S1-03-B].
-- **Familie** – Sie stammt aus einem Nomadenverband. Nach dem Tod ihrer Mutter löste sich die Gruppe auf, die ihr bis dahin Heimat gewesen war. Ihr Vater entfremdete sich von ihr, und bis heute besteht kein Kontakt[S1-03-B].
+- **[Bruma Stormrak](/characters/bruma_stormrak.md):** Kaya verhindert bei der ersten Begegnung eine unangenehme Situation mit Saris und stellt sich selbst als freundliche Vermittlerin vor. Sie erhält später eine schützende Halskette von ihm. Als Bruma ungewöhnliche Härte zeigt und seine Heimat erwähnt, ist Kaya verunsichert und zeigt Mitgefühl [S1-01-B][S1-03-B]. Bruma wiederum spricht ihr im Kampf Mut zu: „Kaya, wenn du dich unsicher fühlst, bleib hinten. Ich bin bei dir“ [S1-02-B].
+- **Saris Morgenstern:** Kaya beobachtet Saris‘ Neigung, Hände übermäßig zu analysieren, und fängt das bei neuen Bekanntschaften ab [S1-01-B]. Sie ist misstrauisch gegenüber Saris‘ Geflüster mit [Samuel](/npcs/samuel_schaedel.md), was zu ihrer Ablehnung von [Joran](/deities/joran.md)s Segen führt [P-52].
+- **[Sange](/characters/sange.md):** Nach dessen erster Werwolf-Verwandlung kümmert sich Kaya einfühlsam um den Verwirrten, bietet ihm ihre Unterstützung an und ermutigt ihn, die Kontrolle im Auge zu behalten – ohne ihn zu verurteilen [S1-02-B]. Sie zeigt bereits früh Mitgefühl für seine künstlerische Enttäuschung [P-52].
+- **[Talron](/npcs/talron.md):** Kaya durchschaut Talrons Lügen und entlockt ihm mit Charme die Wahrheit über die monströse Armee. Später erhält sie von ihm zwei Heiltränke [P-52][S1-01-B].
+- **[Xenia](/npcs/xenia_rotkam.md):** In Xenias Taverne versucht Kaya mit persönlicher Ansprache und Charme, die Wirtin zur Evakuierung zu bewegen. Sie spricht Xenia bewusst als Autoritätsperson an: „Ich komme zu derjenigen, die hier wirklich etwas bewirken kann“ [S1-03-B]. Trotz intensiven Bemühens scheitert sie an Xenias Entschlossenheit, ihr Lebenswerk zu verteidigen [S1-03-B].
+- **[Gerhard Schanz](/npcs/gerhard_schanz.md):** Kaya belügt den Wächter nach der Zerstörung der Puppe mit Hilfe ihrer Fähigkeit Deaf Deceiver [P-52].
+- **Nebb:** Den bellenden Kampfhund beruhigt sie mit einem Lied [S1-01-B].
+- **[Joran](/deities/joran.md):** Kaya lehnt seinen Segen aufgrund ihrer Götterskepsis ab [P-52].
 
 ## Chronologie
 
-- **Session 1 (4. Juni 2026)** – Kaya stellt sich als Faun‑Bardin vor, spielt in der örtlichen Taverne und verdient Gold. Sie hilft Sange, eine Lüge über eine Puppe zu vertuschen, durchschaut Talrons Täuschung und lehnt Jorans Segen ab, weil sie auf Samuels Warnung vertraut. Sie sammelt poetische Sätze von Sange und zeigt Mitgefühl für ein Kind sowie lebhaftes Interesse an Saris und seinen Schädeln[P-53].
-- **Session 2 (10. Juli 2026)** – Die Sorge um Sanges neuen Gott wächst, obwohl Kaya bemüht ist, ihre sorglose Art beizubehalten. Sie tritt Bruma gegenüber diplomatisch auf, stoppt Saris’ Aufdringlichkeit und freut sich über eine schützende Halskette. Auf einer Halbling‑Farm besänftigt sie den Hund Nepp mit Musik, wird von Sibi gelobt und befragt Talron nach der früheren Gruppe. Vor dem Minenaufbruch leitet sie Dehnübungen an, gewährt einen Rally‑D6 und erhält zwei Heiltränke[S1-01-B].
-- **Session 3 (23. Juli 2026)** – Im Minenkampf überwindet sie ihre Angst und nutzt *Mage Hand* sowie *Wild Flame* erfolgreich, um Feinde auszuschalten. Nach Sanges erster Werwolf‑Verwandlung betreut sie ihn behutsam, zeigt Verständnis und drängt ihn, die Kontrolle über seine neue Gestalt zu beobachten. Ihre Rally‑Tokens aus der vorigen Session sind noch aktiv[S1-02-B].
-- **Session 4 (6. August 2026)** – Kaya versucht zunächst, widerständige Halblinge mit sanften Worten umzustimmen, scheitert jedoch. Bei der Wirtin Xenia setzt sie auf Charme und die emotionale Ansprache, erntet aber eine unerschütterliche Absage. Brumas plötzliche Härte beunruhigt sie, und sie reagiert mit Mitgefühl, als er seine Heimat erwähnt. Später offenbart sie in der Taverne die schmerzhafte Geschichte ihrer nomadischen Vergangenheit, den Verlust der Mutter und die Entfremdung vom Vater, und gesteht, dass die einstige Gemeinschaft kein Zuhause mehr war[S1-03-B].
+**Session 2026-06-04 (Erstes Auftreten):** Kaya tritt als Straßenkünstlerin mit ihrer Laute in der Taverne auf, tanzt auf Tischen und sammelt sieben Goldmünzen. Als ein Mädchen eine Puppe zerstört, belügt sie den Wächter Gerhard Schanz geschickt mit ihrer Fähigkeit Deaf Deceiver. Sie erkennt Talrons Lügen und entlockt ihm die Wahrheit über eine monströse Armee. Ihre Skepsis gegenüber Göttern zeigt sich, als sie Jorans Segen ablehnt, nachdem sie ein Geflüster zwischen Saris und Samuel beobachtet hat. Sie zeigt Mitgefühl für Sanges künstlerische Enttäuschung [P-52].
+
+**Session 2026-07-10 (Verstärkung durch Bruma):** Bei Brumas Ankunft drängt sich Kaya zwischen ihn und Saris, um eine übermäßige Handanalyse zu verhindern, und stellt sich als die Bardin und Stimmungsmacherin der Gruppe vor. Sie beruhigt den Kampfhund Nebb mit einem Lied, initiiert am nächsten Morgen eine motivierende Dehnrunde mit Rally-Die und versucht im Farmlager, die gruseligen Gefährten durch freundliches Winken zu kaschieren. Sie erhält von Bruma eine schützende Halskette und von Talron zwei Heiltränke [S1-01-B].
+
+**Session 2026-07-23 (Minenmission und Werwolf-Vorfall):** Kaya überwindet ihre anfängliche Ängstlichkeit und wächst im Kampf über sich hinaus. Sie setzt ihre magische Hand ein, um Gegner in Abgründe zu stoßen, und nutzt Wild Flame für verheerende Feuerangriffe. Vor dem Kampf schlägt sie vor, Feinde mit der magischen Hand herauszulocken, wird aber von Bruma an die Risiken erinnert. Nach Sanges erster Werwolf-Verwandlung kümmert sie sich einfühlsam um ihn und bietet Unterstützung an, ohne zu verurteilen. Ihre Rally-Token aus der vorherigen Session sind noch aktiv [S1-02-B].
+
+**Session 2026-08-06 (Evakuierungsversuch bei Xenia):** In Xenias Taverne versucht Kaya zunächst mit sanften Worten, dann mit Charme und persönlicher Ansprache, die Wirtin zur Räumung des Dorfes zu bewegen. Sie scheitert trotz eines leidenschaftlichen Appells und eines „etwas feurigeren Blicks“. Xenia weist sie zurück: „Kaya, Liebes, du glaubst doch nicht, dass ich mein Lebenswerk einfach zurücklasse“. Am selben Abend erzählt Kaya in der Taverne von ihrem Nomadenleben, dem Tod ihrer Mutter und dem entfremdeten Vater; sie gibt zu, dass die Gruppe nach dem Tod der Mutter keine Heimat mehr war, und wirkt dabei tief berührt [S1-03-B].
 
 ## Offene Fragen
 
-- Was geschah mit Kayas entfremdetem Vater, und wird sie ihn je wiedersehen?
-- Kann sie Sange helfen, seine Werwolf‑Natur zu beherrschen?
-- Wie wird sie mit der eigenen Verlusterfahrung und der Sehnsucht nach Heimat umgehen, während die Reise weitergeht?
+- Kayas entfremdeter Vater wird erwähnt, aber sein Verbleib und die genauen Umstände der Entfremdung bleiben unklar [S1-03-B].
+- Die genaue Natur von Kayas Götterskepsis und ob sie grundsätzlicher oder situativer Natur ist, wird nicht weiter vertieft [P-52].
+- Ob Kayas Fähigkeiten (insbesondere Wild Flame und Mage Hand) angeboren, erlernt oder durch ihre Laute kanalisiert sind, wird nicht spezifiziert.
 
 ## Belege
 
-[P-53] Session 2026-06-04, 00:06:41 · [YouTube](https://www.youtube.com/watch?v=EGNh8O7pE5Q)
-[S1-01-B] Session 2026-07-10, 00:07:45 · [YouTube](https://www.youtube.com/watch?v=H-eHSlfxUAg)
-[S1-02-B] Session 2026-07-23, 00:15:18 · [YouTube](https://www.youtube.com/watch?v=Gb-TEbCFF0M)
-[S1-03-B] Session 2026-08-06, 01:32:09 · [YouTube](https://www.youtube.com/watch?v=0HyPHao8s_k)
+[P-52] Session 2026-06-04 @ 01:56:38 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
+[S1-01-B] Session 2026-07-10 @ 00:22:17 (https://www.youtube.com/watch?v=H-eHSlfxUAg)
+[S1-02-B] Session 2026-07-23 @ 00:15:18 (https://www.youtube.com/watch?v=Gb-TEbCFF0M)
+[S1-03-B] Session 2026-08-06 @ 01:32:09 (https://www.youtube.com/watch?v=0HyPHao8s_k)

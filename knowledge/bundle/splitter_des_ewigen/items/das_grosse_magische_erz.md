@@ -14,4 +14,4 @@ Ein riesiger, ungenutzter Brocken magischen Erzes im Besitz der Zwerge, der imme
 
 # Belege
 
-[P-36] Session 2026-01-27 @ 01:06:50 (https://www.youtube.com/watch?v=9RzvnnWzV7E)
+[P-35] Session 2026-01-27 @ 01:06:50 (https://www.youtube.com/watch?v=9RzvnnWzV7E)

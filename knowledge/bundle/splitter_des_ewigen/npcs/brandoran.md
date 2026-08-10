@@ -13,4 +13,4 @@ Ein zwergischer Überlebender in der [Kathedrale](/locations/kathedrale.md), der
 
 # Belege
 
-[P-22] Session 2025-09-09 @ 01:21:36 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
+[P-21] Session 2025-09-09 @ 01:21:36 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)

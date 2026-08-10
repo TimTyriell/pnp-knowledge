@@ -14,4 +14,4 @@ Die Gruppe findet kurz nach dem Betreten des Dungeons eine uralte Steintafel, di
 
 # Belege
 
-[P-37] Session 2026-02-11 @ 00:06:53 (https://www.youtube.com/watch?v=3C8SD-cyNPM)
+[P-36] Session 2026-02-11 @ 00:06:53 (https://www.youtube.com/watch?v=3C8SD-cyNPM)

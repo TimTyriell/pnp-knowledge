@@ -13,4 +13,4 @@ Eine mysteriöse Figur, die in [Ehrenfels](/locations/ehrenfels.md) den fünften
 
 # Belege
 
-[P-35] Session 2026-01-20 @ 02:05:00 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
+[P-34] Session 2026-01-20 @ 02:05:00 (https://www.youtube.com/watch?v=H3ckYdTv4y8)

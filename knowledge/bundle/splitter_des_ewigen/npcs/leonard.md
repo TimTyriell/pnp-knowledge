@@ -13,4 +13,4 @@ Ein untoter Barde, der ein Liebesgedicht vorträgt. Er ist sympathisch und hilfs
 
 # Belege
 
-[P-48] Session 2026-04-14 @ 01:44:11 (https://www.youtube.com/watch?v=1Jyu92P7_Fg)
+[P-47] Session 2026-04-14 @ 01:44:11 (https://www.youtube.com/watch?v=1Jyu92P7_Fg)

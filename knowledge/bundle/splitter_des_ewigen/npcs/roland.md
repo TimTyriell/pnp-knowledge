@@ -19,30 +19,30 @@ Roland ist der Anführer der Flüchtlinge aus Breska (auch "Bresca" genannt). Er
 
 ## Wichtige Merkmale
 
-- **Auftreten:** Roland trägt eine tiefe Stimme und erscheint in einer Szene „total blutverschmiert und außer Atem“ [P-24]. Er wirkt pragmatisch und direkt, mit einer gewissen Schicksalsergebenheit: „Wenn ich zwischen einem Übel und einem anderen Übel wählen muss, dann will ich gar keins“ [P-23]. Gegenüber der Gruppe zeigt er Dankbarkeit und überreicht ihnen zwei Säcke Gold zurück [P-25].
+- **Auftreten:** Roland trägt eine tiefe Stimme und erscheint in einer Szene „total blutverschmiert und außer Atem“ [P-23]. Er wirkt pragmatisch und direkt, mit einer gewissen Schicksalsergebenheit: „Wenn ich zwischen einem Übel und einem anderen Übel wählen muss, dann will ich gar keins“ [P-22]. Gegenüber der Gruppe zeigt er Dankbarkeit und überreicht ihnen zwei Säcke Gold zurück [P-24].
 
-- **Erzähler und Wissensbewahrer:** Seine Familie war „schon immer sehr schriftgewandt“ und hat viele Dinge niedergeschrieben. Roland hat dieses Wissen mündlich verinnerlicht, auch wenn die Schriftstücke selbst verloren sind: „Ich habe leider keine dieser Schriftstücke mehr übrig, aber es ist noch vieles in meinen Gedanken“ [P-25]. Er erzählt der Gruppe nachts am Lagerfeuer die Geschichte der vergessenen Götter und gibt damit einen entscheidenden Hinweis auf den weiteren Handlungsstrang.
+- **Erzähler und Wissensbewahrer:** Seine Familie war „schon immer sehr schriftgewandt“ und hat viele Dinge niedergeschrieben. Roland hat dieses Wissen mündlich verinnerlicht, auch wenn die Schriftstücke selbst verloren sind: „Ich habe leider keine dieser Schriftstücke mehr übrig, aber es ist noch vieles in meinen Gedanken“ [P-24]. Er erzählt der Gruppe nachts am Lagerfeuer die Geschichte der vergessenen Götter und gibt damit einen entscheidenden Hinweis auf den weiteren Handlungsstrang.
 
 ## Beziehungen und Verbindungen
 
-- **[Rotunas-Bande](/characters/rotunas.md) und deren Mitglieder:** Roland erkennt die Gruppe wieder und zeigt sich erfreut: „Ich kenne euch doch. [...] diese Rotunas-Bande, richtig? [...] Schön, euch mal wiederzusehen. Ist ja schon ein paar Tage her, seit wir die Goblins besiegt haben“ [P-23]. Er vertraut der Gruppe soweit, dass er sie als Helfer für die Karawane einfordert und später für ihre Unterstützung belohnt. Am Lagerfeuer apostrophiert [Rotunas](/characters/rotunas.md) die Gruppe sogar als „ihr seid alle meine Freunde“ [P-25] – Roland und die Flüchtlinge zählen also offenbar zum erweiterten Vertrauenskreis.
+- **[Rotunas-Bande](/characters/rotunas.md) und deren Mitglieder:** Roland erkennt die Gruppe wieder und zeigt sich erfreut: „Ich kenne euch doch. [...] diese Rotunas-Bande, richtig? [...] Schön, euch mal wiederzusehen. Ist ja schon ein paar Tage her, seit wir die Goblins besiegt haben“ [P-22]. Er vertraut der Gruppe soweit, dass er sie als Helfer für die Karawane einfordert und später für ihre Unterstützung belohnt. Am Lagerfeuer apostrophiert [Rotunas](/characters/rotunas.md) die Gruppe sogar als „ihr seid alle meine Freunde“ [P-24] – Roland und die Flüchtlinge zählen also offenbar zum erweiterten Vertrauenskreis.
 
-- **Bürgermeister von Bresca:** Roland gibt an, eigentlich mit dem Bürgermeister befreundet zu sein, aber sein Einfluss schwinde: „Eigentlich bin ich ja befreundet mit dem Bürgermeister, aber ich habe das Gefühl, der Einfluss sinkt tatsächlich mit der Zeit“ [P-23]. Dies deutet auf eine Verschiebung der Machtverhältnisse in der Stadt hin.
+- **Bürgermeister von Bresca:** Roland gibt an, eigentlich mit dem Bürgermeister befreundet zu sein, aber sein Einfluss schwinde: „Eigentlich bin ich ja befreundet mit dem Bürgermeister, aber ich habe das Gefühl, der Einfluss sinkt tatsächlich mit der Zeit“ [P-22]. Dies deutet auf eine Verschiebung der Machtverhältnisse in der Stadt hin.
 
-- **Flüchtlinge aus Breska:** Roland ist ihr Anführer und dirigiert sie in Gefahrensituationen. Er hat versucht, „so viele Leute wie möglich rüber zu kriegen“, bevor ein Einlassstopp verhängt wurde [P-23]. Er schickt Kutscher und koordiniert die Verteidigung des letzten Wagens [P-24].
+- **Flüchtlinge aus Breska:** Roland ist ihr Anführer und dirigiert sie in Gefahrensituationen. Er hat versucht, „so viele Leute wie möglich rüber zu kriegen“, bevor ein Einlassstopp verhängt wurde [P-22]. Er schickt Kutscher und koordiniert die Verteidigung des letzten Wagens [P-23].
 
 ## Chronologie
 
-[P-23] **Verteidigung Brescas (vor der ersten Session):** Roland und die Gruppe kämpften gemeinsam gegen Goblins, die die Stadt bedrohten. Er erinnert sich genau daran: „wegen euch würde das ganze Drecksdorf gar nicht mehr stehen“ [1].
+[P-22] **Verteidigung Brescas (vor der ersten Session):** Roland und die Gruppe kämpften gemeinsam gegen Goblins, die die Stadt bedrohten. Er erinnert sich genau daran: „wegen euch würde das ganze Drecksdorf gar nicht mehr stehen“ [1].
 
-[P-24] **Session 2025-09-17 – Konflikt mit der neuen Gilde:** Roland führt die Flüchtlinge außerhalb Brescas an und weigert sich, vor der neuen Gilde zu kapitulieren. Er zögert zunächst, die Karawane zum Banditenlager zu führen, willigt aber ein, nachdem ihm die Gruppe Unterstützung zusagt. Er wirkt besorgt, aber entschlossen. In derselben Szene äußert er sich frustriert über den Niedergang Brescas und den Einlassstopp [1].
+[P-23] **Session 2025-09-17 – Konflikt mit der neuen Gilde:** Roland führt die Flüchtlinge außerhalb Brescas an und weigert sich, vor der neuen Gilde zu kapitulieren. Er zögert zunächst, die Karawane zum Banditenlager zu führen, willigt aber ein, nachdem ihm die Gruppe Unterstützung zusagt. Er wirkt besorgt, aber entschlossen. In derselben Szene äußert er sich frustriert über den Niedergang Brescas und den Einlassstopp [1].
 
-[P-25] **Session 2025-09-23 – Überfall auf die Karawane:** Roland kommt blutverschmiert und außer Atem zum Treffpunkt mit [Nairuk](/npcs/nyruk.md) und [Nyrella](/characters/nyrella.md). Er meldet, dass die Karawane von Untoten angegriffen wurde, dass er „alles mögliche gemacht“ habe, um einen Vorteil zu verschaffen, dieser aber nicht lange vorhalten werde. Er hat alle Flüchtlinge bis zu diesem Zeitpunkt durchgebracht und organisiert die letzte Etappe der Evakuierung: Er schickt die Kutscher voraus und verteidigt den letzten Wagen [2].
+[P-24] **Session 2025-09-23 – Überfall auf die Karawane:** Roland kommt blutverschmiert und außer Atem zum Treffpunkt mit [Nairuk](/npcs/nyruk.md) und [Nyrella](/characters/nyrella.md). Er meldet, dass die Karawane von Untoten angegriffen wurde, dass er „alles mögliche gemacht“ habe, um einen Vorteil zu verschaffen, dieser aber nicht lange vorhalten werde. Er hat alle Flüchtlinge bis zu diesem Zeitpunkt durchgebracht und organisiert die letzte Etappe der Evakuierung: Er schickt die Kutscher voraus und verteidigt den letzten Wagen [2].
 
 4. **Session 2025-09-30 – Lagerfeuer und Geschichte der Splitterwelt:** Nach erfolgreicher Flucht übergibt Roland der Gruppe zwei Säcke Gold als Dank. In der Nacht, als die Kinder schlafen und nur noch ein kleiner Kreis Erwachsener wach ist, erzählt Roland die Geschichte vom Krieg zwischen alten und neuen Göttern, der vor 11 Jahren stattfand und mit einem kollektiven Gedächtnisverlust einherging. Er erwähnt:
-   - Den Krieg zwischen alten und neuen Göttern, der „vor nicht allzu langer Zeit“ die Welt der Götter maßgeblich veränderte [P-25].
-   - Die Splitterwelt sowie die „vergessene Welt Abyssalis“, in der angeblich alte Götter gefangen sind [P-25].
-   - Er fragt die Gruppe ausdrücklich: „Kennt ihr die Splitterwelt? Oder ja... Ich frag euch, wer kennt die Splitterwelt?“ [P-25] – was darauf hindeutet, dass dieses Wissen nicht allgemein verbreitet ist.
+   - Den Krieg zwischen alten und neuen Göttern, der „vor nicht allzu langer Zeit“ die Welt der Götter maßgeblich veränderte [P-24].
+   - Die Splitterwelt sowie die „vergessene Welt Abyssalis“, in der angeblich alte Götter gefangen sind [P-24].
+   - Er fragt die Gruppe ausdrücklich: „Kennt ihr die Splitterwelt? Oder ja... Ich frag euch, wer kennt die Splitterwelt?“ [P-24] – was darauf hindeutet, dass dieses Wissen nicht allgemein verbreitet ist.
 
 ## Offene Fragen
 
@@ -52,6 +52,6 @@ Roland ist der Anführer der Flüchtlinge aus Breska (auch "Bresca" genannt). Er
 
 ## Belege
 
-[P-23] Session 2025-09-17 @ 01:04:58–01:07:00 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
-[P-24] Session 2025-09-23 @ 01:16:04–01:19:04 (https://www.youtube.com/watch?v=DGzfqVigS0g)
-[P-25] Session 2025-09-30 @ 01:47:31–01:49:55 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[P-22] Session 2025-09-17 @ 01:04:58–01:07:00 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
+[P-23] Session 2025-09-23 @ 01:16:04–01:19:04 (https://www.youtube.com/watch?v=DGzfqVigS0g)
+[P-24] Session 2025-09-30 @ 01:47:31–01:49:55 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)

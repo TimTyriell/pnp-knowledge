@@ -14,4 +14,4 @@ Ein magischer Wald um den Berg der [Gilde](/factions/gilde_von_ehrenfels.md). Er
 
 # Belege
 
-[P-32] Session 2025-11-25 @ 00:24:22 (https://www.youtube.com/watch?v=wd5R4fJfngY)
+[P-31] Session 2025-11-25 @ 00:24:22 (https://www.youtube.com/watch?v=wd5R4fJfngY)

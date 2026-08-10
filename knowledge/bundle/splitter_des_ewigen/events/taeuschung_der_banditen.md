@@ -14,4 +14,4 @@ Zurück bei [Marus](/npcs/marus.md) lügt die Gruppe, dass sie kein Silber fande
 
 # Belege
 
-[P-39] Session 2026-02-24 @ 02:38:11 (https://www.youtube.com/watch?v=WOFArbwDDIQ)
+[P-38] Session 2026-02-24 @ 02:38:11 (https://www.youtube.com/watch?v=WOFArbwDDIQ)

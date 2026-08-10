@@ -14,4 +14,4 @@ Im geschützten Raum mit der Drachenstatue liest [Dodo](/characters/dodo.md) die
 
 # Belege
 
-[P-29] Session 2025-10-28 @ 02:04:25 (https://www.youtube.com/watch?v=V6NzNakqxXM)
+[P-28] Session 2025-10-28 @ 02:04:25 (https://www.youtube.com/watch?v=V6NzNakqxXM)

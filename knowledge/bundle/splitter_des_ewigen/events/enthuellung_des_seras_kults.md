@@ -16,4 +16,4 @@ Am Morgen verplappert sich [die alte Frau](/npcs/die_alte_frau.md) und gesteht, 
 
 # Belege
 
-[P-18] Session 2025-08-12 @ 01:40:35 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)
+[P-17] Session 2025-08-12 @ 01:40:35 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)

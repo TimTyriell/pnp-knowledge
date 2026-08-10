@@ -1,8 +1,8 @@
 ---
 type: Item
 title: Sanges Maske
-description: Eine von Sanges Blutmagie durchdrungene Maske, die ihren Ausdruck verändern
-  kann. Sie wird von ihm getragen und flößt den Bauern der Farm U…
+description: Eine magische Maske, die ihre Mimik ändern kann und mit Sanges Blutmagie
+  verbunden ist. In sie fließt ein leichter, stetiger Magiestrom. In…
 tags:
 - items
 timestamp: '2026-07-10T00:00:00Z'
@@ -10,7 +10,7 @@ id: ITEM_SANGES_MASKE
 subtype: Artefakt
 ---
 
-Eine von [Sanges](/characters/sange.md) Blutmagie durchdrungene Maske, die ihren Ausdruck verändern kann. Sie wird von ihm getragen und flößt den Bauern der Farm Unbehagen ein.
+Eine magische Maske, die ihre Mimik ändern kann und mit [Sanges](/characters/sange.md) Blutmagie verbunden ist. In sie fließt ein leichter, stetiger Magiestrom. In dieser Session wechselt sie den Ausdruck, als Sange Bruma umkreist, und wird von Brumas magischem Gespür wahrgenommen.
 
 # Belege
 

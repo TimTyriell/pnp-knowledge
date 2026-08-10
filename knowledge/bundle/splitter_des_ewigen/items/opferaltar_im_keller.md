@@ -14,4 +14,4 @@ Der Altar im Keller besteht aus einer blitzenden Flamme, die niemals erlischt un
 
 # Belege
 
-[P-30] Session 2025-11-14 @ 00:52:57 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)
+[P-29] Session 2025-11-14 @ 00:52:57 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)

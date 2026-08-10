@@ -13,4 +13,4 @@ Merlin ist [Finns](/characters/finn.md) Adler-Begleiter und dient als Späher so
 
 # Belege
 
-[P-52] Session 2026-05-27 @ 01:42:30 (https://www.youtube.com/watch?v=IYYmgpqsp7E)
+[P-51] Session 2026-05-27 @ 01:42:30 (https://www.youtube.com/watch?v=IYYmgpqsp7E)

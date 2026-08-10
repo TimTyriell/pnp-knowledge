@@ -14,4 +14,4 @@ Das Ziel der Gruppe, ein alter Tempel auf dem Berggipfel, zu dem ein Schild an e
 
 # Belege
 
-[P-18] Session 2025-08-12 @ 00:24:50 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)
+[P-17] Session 2025-08-12 @ 00:24:50 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)

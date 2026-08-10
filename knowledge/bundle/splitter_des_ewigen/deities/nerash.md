@@ -1,8 +1,8 @@
 ---
 type: Deity
 title: Nerash
-description: Nerash ist eine neue Halbgöttin, die einst für die neuen Götter kämpfte
-  und später von der Heldengruppe aus einem Gefängnis in einer andere…
+description: Nerash ist eine Gottheit, die von der Gruppe der Helden aus einer anderen
+  Dimension befreit wurde. Sie wird in den Quellen als „verschollen…
 tags:
 - deities
 timestamp: '2026-08-04T00:00:00Z'
@@ -16,83 +16,97 @@ status: disputed
 
 ## Überblick
 
-Nerash ist eine neue Halbgöttin, die einst für die neuen Götter kämpfte und später von der Heldengruppe aus einem Gefängnis in einer anderen Dimension befreit wurde. Nach ihrer Befreiung zeigte sie sich einerseits als schützende Macht, andererseits als furchteinflößende Gestalt mit zerstörerischen Fähigkeiten. Sie tritt in unterschiedlichen Kontexten als ambivalente Gottheit auf, die sowohl hilfreich als auch bedrohlich sein kann.
+Nerash ist eine Gottheit, die von der Gruppe der Helden aus einer anderen Dimension befreit wurde. Sie wird in den Quellen als „verschollener Halbgott“ oder „neue Göttin“ bezeichnet, die einst für die neuen Götter kämpfte. Ihr Erscheinungsbild ist das einer großen, geflügelten Gestalt mit dämonischen und engelsgleichen Zügen, die eine elegante Rüstung und eine gehörnte Maske trägt. Nerash verfügt über immense Macht, die sich in mühelosen Kampfhandlungen und der Fähigkeit, anderen göttlichen Wesen Schaden zuzufügen, manifestiert. Sie kann durch Träume kommunizieren und Artefakte wie Totems und mächtige Schriftrollen überbringen. Nach ihrer Befreiung in [Ehrenfels](/locations/ehrenfels.md) etablierte sich dort unter der Führung von Vitius ein Kult um sie, der die Stadt mit Hilfe ihrer [Seraphen](/npcs/seraphen_von_vorgotha.md) mit harter Hand regiert, während Nerash selbst unerreichbar bleibt und sich angeblich von Verletzungen erholt.
 
 ## Rolle in der Kampagne
 
-Nerash wurde von der Gruppe in den Katakomben unter einem Tempel entdeckt, wo sie in zahllosen Ketten gefesselt war. Nach ihrer Befreiung unterstützte sie die Helden im Kampf gegen Kol Meref und ermöglichte ihnen die Flucht. Sie schenkte jedem Mitglied der Gruppe ein Totem, das später für Heilung und als Verbindung zu ihr genutzt wurde.
+Nerash’ Rolle in der Kampagne ist ambivalent und hat sich im Verlauf der Geschichte mehrfach gewandelt. Zunächst erscheint sie als leidende, gefesselte Kreatur, die von der Gruppe befreit wird und sich dafür mit einem Schutzakt und Totems erkenntlich zeigt. In dieser Phase wird sie als wohlwollende oder zumindest hilfsbereite Macht wahrgenommen.
 
-Die Göttin spielte eine zentrale Rolle bei der Suche nach einem Weg, den Dämon Vasul aus Lindo Laut zu vertreiben. Sie erschien Dodo und möglicherweise weiteren Gruppenmitgliedern im Traum und überbrachte eine Schriftrolle mit einem mächtigen Ritualzauber. Dieses Ritual sollte an den lila Bergen in Abyssalis gewirkt werden. Nox vermutete, dass Nerash aus Verzweiflung handelte, da die neuen Götter geschwächt waren.
+Später wird sie zur Quelle entscheidender Informationen und Artefakte: Sie erscheint [Dodo](/characters/dodo.md) und möglicherweise anderen im Traum und überbringt eine Schriftrolle mit einem Ritual, das [Vasul](/deities/vharzul.md) aus [Lindo Laut](/characters/lindo_laut.md) vertreiben soll (→ [P-37]). Die Schriftrolle erweist sich später als mächtige Waffe gegen Götter oder deren Diener (→ [P-44]), und die Gruppe selbst spekuliert, ob Nerash von der Nutzung ihrer Schriftrolle weiß (→ [S1-01-A]).
 
-Bei der Schlacht um Ehrenfels erschien Nerash persönlich als göttliche Intervention. Sie tötete Voras und Sandro mühelos und wollte auch Nox vernichten, wurde jedoch von Rotunas aufgehalten. Angeblich rettete sie die Stadt vor einer dunklen Kreatur, wenngleich zu diesem Zeitpunkt bereits viele gefallen waren und der Gildenmeister den Tod fand. Seit dieser Schlacht ist sie abwesend; ihre Seraphen regieren Ehrenfels mit harter Hand, während die Göttin selbst unerreichbar bleibt.
+Ein dramatischer Wendepunkt tritt ein, als Nerash persönlich auf dem Richtplatz von Ehrenfels interveniert, [Voras](/npcs/voras.md) und [Sandro](/npcs/sandro.md) mühelos tötet und [Nox](/npcs/nox.md) vernichten will, bevor [Rotunas](/characters/rotunas.md) sie aufhält (→ [P-46]). Dieses Ereignis etabliert sie als zerstörerische, nicht uneingeschränkt wohlwollende Kraft.
+
+In der Folge wird Nerash zur Schutzpatronin von Ehrenfels (→ [P-52]), wobei ihre Anwesenheit und ihr Kult zunehmend problematische Züge annehmen. Die Gruppe misstraut ihr und ihrer Gefolgschaft, während ihr Einfluss in der Stadt wächst.
 
 ## Wichtige Merkmale
 
-### Erscheinung & Wesen
+### Erscheinungsbild und Auftreten
 
-Nerash zeigt sich als mächtige, furchteinflößende Kreatur mit gehörnter Maske, ledrigen Flügeln und einem Schwert. Sie wurde als "abstruse Gestalt" beschrieben, die in einer hockenden Position verharrte. Bei ihrem Erscheinen in Ehrenfels wird sie als "dämonenartige Gestalt" geschildert, die zugleich wie ein Engel wirkt — eine "mächtige, engelsgleiche Kreatur mit dämonischen Zügen". Ihre Erscheinung wird ausdrücklich als "göttliche Intervention" bezeichnet.
+Nerash ist eine große, geflügelte Gestalt in eleganter Rüstung mit einer gehörnten Maske. Ihre Erscheinung wird als „engelsgleiche Kreatur mit dämonischen Zügen“ beschrieben (→ [P-46]), als „so grausam und so groß wie der Dämon zuvor“, aber zugleich wie ein Engel aussehend. Ihre Präsenz wird als „göttliche Intervention“ bezeichnet (→ [P-46]).
 
-Die Göttin vereint furchteinflößende und schützende Aspekte in sich. Nach ihrer Befreiung entfesselte sie ihre Macht, beschwor ein leuchtendes Schwert und schützte die Gruppe mit der Drohung "Ihr werdet verbrennen!"
+Bei ihrer ersten Begegnung mit der Gruppe war sie von uralten magischen Ketten an Hals, Flügeln, Händen, Beinen und Hörnern gefesselt und ihr Mund war versiegelt (→ [P-14]). Sie kommunizierte in diesem Zustand durch Gesten und Blicke.
 
-### Fähigkeiten & Einfluss
+### Fähigkeiten
 
-Nerash verfügt über immense kämpferische Fähigkeiten. Mit einer bloßen Handbewegung — "die Klaue" — durchtrennte sie Voras und schleuderte ihn ins Nichts. Sandro wurde mühelos durch die Luft geschleudert. Sie kann offenbar mühelos starke Gegner töten.
+Nerash verfügt über immense physische und magische Macht. Sie kann mit bloßen Klauen mächtige Gegner durchtrennen und ins Nichts schleudern (→ [P-46]). Sie führt ein leuchtendes Schwert, mit dem sie die Statue des dunklen Gottes Kol Meref zerstörte (→ [P-14]).
 
-Sie überreichte der Gruppe Totems, mit denen Cookie später Heilung wirkte. Zudem kann sie in Träumen erscheinen und physische Artefakte wie eine Schriftrolle überbringen. Die Schriftrolle enthielt einen "überaus mächtigen Zauber", mit dem man "einem der Götter Schaden zufügen oder einem seiner Diener für immer auslöschen" kann.
+Sie besitzt die Fähigkeit, in Träumen zu erscheinen und physische Artefakte zu überbringen (→ [P-37]). Ihre Macht scheint jedoch Bedingungen zu unterliegen: In [Abyssalis](/domains/splitterwelt.md) erhält [Esterossa](/characters/esterossa.md) keine Verbindung zu ihr (→ [P-49]), und generell wird spekuliert, dass sie aus Verzweiflung handelt, da die neuen Götter geschwächt sind (→ [P-37]).
 
-In Abyssalis scheint die Verbindung zu ihr gestört zu sein. Esterossa betete zu ihrer Statue, um die Seele eines Seraphen zu retten, erhielt jedoch keine Antwort. Die Nutzung ihrer Statue verwirrte allerdings einen Seraphen und brachte ihn kurzzeitig zur Besinnung.
+### Wesenszüge
+
+Nerash zeigt sowohl fürsorgliche als auch zerstörerische Züge. Bei ihrer Befreiung fixiert sie [Valeria](/characters/valeria.md) „hoffnungsvoll und elend“ und stellt sich nach ihrer Befreiung schützend vor die Gruppe (→ [P-14]). Später tötet sie jedoch Voras und Sandro mühelos und will Nox vernichten, was auf eine kompromisslose, rachsüchtige oder richterliche Natur hindeutet (→ [P-46]).
 
 ## Beziehungen und Verbindungen
 
-**Zur Heldengruppe:** Nerash verdankt der Gruppe ihre Befreiung aus den Ketten. Sie belohnte die Helden mit Totems und unterstützte sie mit der Schriftrolle für das Ritual gegen Vasul. Das Verhältnis ist jedoch angespannt — die Gruppe misstraut ihr und ihrer Gefolgschaft, spekuliert, ob sie "nicht so unsere Freundin" sei und fragt sich, ob sie von der Nutzung ihrer Schriftrolle weiß.
+**Zur Gruppe der Helden:** Nerash wurde von der Gruppe aus ihrer Gefangenschaft befreit (→ [P-14], [P-15]). Sie schenkte jedem Helden ein Totem, das mehrfach verwendet wurde: [Cookie](/characters/cookie.md) heilte Lindo Laut damit (→ [P-15]), in der Kapelle versuchte die Gruppe, das Totem für ein Gebet zu nutzen, aber die Verbindung zu ihr war gestört (→ [P-19]).
 
-**Zu [Esterossa](/characters/esterossa.md):** Esterossa folgt Nerash als neuem Gott und betet zu ihr. Sie setzte Nerashs Statue ein, um einen Seraphen zu verwirren und betete um die Rettung seiner Seele — allerdings ohne Erfolg in Abyssalis.
+**Zu Esterossa:** Esterossa bezeichnet Nerash als „eine neue Göttin, der Esterossa folgt“ (→ [P-49]). Sie nutzt eine Statue von Nerash, um einen Seraphen zu verwirren und für sich zu gewinnen (→ [P-49]). Esterossa betet in Abyssalis zu ihr, erhält jedoch keine Verbindung (→ [P-49]).
 
-**Zu [Rotunas](/characters/rotunas.md):** Rotunas griff ein, um Nox vor Nerash zu retten. Nach Angaben der Einwohner von Ehrenfels wurde Nerash von Rotunas verletzt und ist seitdem abwesend.
+**Zu Vasul:** Vasul zeigt eine physische Reaktion auf die Nennung von Nerash' Namen – „ein Zucken über den Körper von Vasul“ (→ [P-44]) –, geht aber nicht weiter darauf ein.
 
-**Zu [Nox](/npcs/nox.md):** Nerash versuchte, Nox zu vernichten. Vitius behauptet dagegen, Nerash erhole sich von einem "hinterhältigen Angriff" durch Nox.
+**Zu Rotunas:** Bei der Intervention auf dem Richtplatz wird Nerash von Rotunas aufgehalten (→ [P-46]). Später behaupten die Einwohner Ehrenfels', Nerash sei von Rotunas verletzt worden und seitdem abwesend (→ [S1-02-A]).
 
-**Zu den neuen Göttern:** Nerash kämpfte einst für die neuen Götter und gilt als deren Dienerin. Nox vermutete, sie handle aus Verzweiflung, weil die neuen Götter geschwächt sind. In der Kapelle wurde ihre Verbindung als "gestört" beschrieben.
+**Zu Nox:** Nerash versucht, Nox zu vernichten, als sie auf dem Richtplatz erscheint (→ [P-46]). Vitius, der Anführer ihres Kults, behauptet später, Nerash erhole sich von Nox' „hinterhältigem Angriff“ (→ [S1-02-A]).
 
-**Zu den alten Göttern und dem Amulett:** Nerash erscheint als Gegenspielerin der alten Götter, die mit dem Amulett verbunden sind.
+**Zu Vitius und dem Kult in Ehrenfels:** Unter der Führung von Vitius breitet sich der Kult um Nerash in Ehrenfels aus (→ [S1-01-A]). Vitius fungiert als ihr Sprecher und verbreitet ihre Version der Ereignisse (→ [S1-02-A]). Die Seraphen Nerashs regieren die Stadt mit harter Hand, während sie selbst unerreichbar bleibt (→ [S1-02-A]).
 
 ## Chronologie
 
-**Befreiung (Session 2025-07-09):** Die Gruppe entdeckte Nerash in Ketten in einem Tempel. Nachdem sie alle Ketten zerschlagen hatten, befreite Nerash sich vollends. Sie kämpfte gegen die dunkle Energie aus der Statue von Kol Meref und schützte die Gruppe, sodass sie durch ein Portal fliehen konnte. Der Gildenmeister identifizierte sie später als verschollenen Halbgott, der einst für die neuen Götter kämpfte.
+[P-14] **Befreiung aus einer anderen Dimension (Session 2025-07-09):** Die Gruppe findet Nerash in Ketten in einem Gebäude, aus dem eine magische Barriere verschwunden ist. Sie wird als geflügelte Gestalt mit gehörnter Maske beschrieben, ihr Mund ist versiegelt. Nach ihrer Befreiung stellt sie sich schützend vor die Gruppe, wehrt einen Angriff des dunklen Gottes Kol Meref ab und zerstört dessen Statue mit ihrem leuchtenden Schwert. Die Gruppe erhält kleine Totems von ihr. (→ [1])
 
-**Geschenk der Totems (Session 2025-07-22):** Nerash schenkte jedem Helden ein Totem. Cookie nutzte eines davon, um Lindo Laut zu heilen.
+[P-15] **Totems und Heilung (Session 2025-07-22):** Cookie nutzt das Totem, um Lindo Laut zu heilen. Nerash wird als Gegenspielerin der alten Götter im Amulett charakterisiert. (→ [2])
 
-**Gestörte Verbindung (Session 2025-09-02):** In einer Kapelle versuchte die Gruppe, Nerash um Hilfe zu bitten. Die Verbindung zu ihr war jedoch gestört, und die Helden verloren dabei sowohl Hope als auch Stresspunkte.
+[P-19] **Versuchtes Gebet in der Kapelle (Session 2025-09-02):** Die Gruppe versucht, das Totem in der Kapelle zu verwenden und zu Nerash zu beten, doch die Verbindung zu ihr ist gestört. (→ [3])
 
-**Traum und Schriftrolle (Session 2026-02-17):** Nerash erschien Dodo und möglicherweise anderen im Traum. Sie überbrachte eine Schriftrolle mit einem Ritual, das Vasul aus Lindo Laut vertreiben sollte, und verwies auf die lila Berge in Abyssalis als Ort für das Ritual.
+[P-26] **Scherzhafte Erwähnung in der Diskussion um göttliche Hilfe (Session 2025-10-14):** Esterossa schlägt scherzhaft vor, Nerash anzurufen, falls Lindo Laut außer Kontrolle gerät. (→ [4])
 
-**Schlacht um Ehrenfels (Session 2026-04-09):** Nerash erschien als göttliche Intervention in Ehrenfels. Sie tötete Voras und Sandro mühelos und versuchte, Nox zu vernichten. Rotunas stellte sich ihr entgegen. Angeblich rettete Nerash die Stadt vor einer dunklen Kreatur, doch viele waren bereits gefallen, und der Gildenmeister fand den Tod.
+[P-37] **Traumerscheinung und Übergabe der Schriftrolle (Session 2026-02-17):** Nerash erscheint Dodo und möglicherweise anderen in Träumen und überbringt eine Schriftrolle mit einem Ritual, das Vasul aus Lindo Laut vertreiben soll. Sie verweist auf die lila Berge in Abyssalis. Nox vermutet, dass sie aus Verzweiflung handelt, da die neuen Götter geschwächt sind. (→ [5])
 
-**Ehrenfels unter Nerashs Seraphen (Session 2026-07-29 / 2026-08-04):** Der Kult der Nerash breitete sich in Ehrenfels unter Führung von Vitius aus, teils durch erzwungene Bekehrung, was auf Widerstand stieß. Die Göttin selbst blieb nach der Schlacht abwesend; ihre Seraphen regierten die Stadt mit harter Hand. Vitius behauptete, sie erhole sich von einem Angriff durch Nox; die Einwohner sagten, sie sei von Rotunas verletzt worden.
+[P-44] **Schriftrolle als Waffe identifiziert (Session 2026-03-31):** Vasul bestätigt die Macht der Schriftrolle, mit der man einem der Götter oder einem seiner Diener Schaden zufügen oder sie auslöschen kann. Bei der Namensnennung „Nehrasch“ zuckt Vasul kurz. (→ [6])
+
+[P-46] **Intervention auf dem Richtplatz (Session 2026-04-09):** Nerash erscheint auf dem Richtplatz von Ehrenfels, tötet Voras und Sandro mühelos und will Nox vernichten, wird aber von Rotunas aufgehalten. (→ [7])
+
+[P-49] **Esterossa und die Nerash-Statue (Session 2026-05-13):** Esterossa nutzt eine Nerash-Statue, um einen Seraphen zu verwirren und zum Einhalten zu bewegen. In Abyssalis erhält sie keine Verbindung zu Nerash. (→ [8])
+
+[P-52] **Rettung von Ehrenfels (Session 2026-06-04):** Laut Talrons Erzählung hat Nerash die Stadt Ehrenfels vor einer dunklen Kreatur gerettet. (→ [9])
+
+[S1-01-A] **Kultausbreitung in Ehrenfels (Session 2026-07-29):** Der Kult um Nerash breitet sich in Ehrenfels unter Führung von Vitius aus. Die Helden spekulieren über Nerash' Wissen um die Nutzung ihrer Schriftrolle. Die erzwungene Bekehrung stößt auf Widerstand. (→ [10])
+
+[S1-02-A] **Aktueller Status in Ehrenfels (Session 2026-08-04):** Nerash ist nach der Dämonenschlacht abwesend. Vitius behauptet, sie erhole sich von Nox' Angriff; die Einwohner sagen, sie sei von Rotunas verletzt worden. Ihre Seraphen regieren die Stadt mit harter Hand. Die Gruppe misstraut ihr und ihrer Gefolgschaft. (→ [11])
 
 ## Offene Fragen
 
-- Warum versuchte Nerash, Nox zu vernichten, obwohl die Gruppe sie befreit hatte?
-- Was geschah genau zwischen Nerash und Rotunas während der Schlacht um Ehrenfels, und warum ist die Göttin seitdem abwesend?
-- Weiß Nerash von der Nutzung ihrer Schriftrolle durch die Gruppe?
-- Welche Agenda verfolgt Nerash — handelt sie aus eigenem Antrieb oder als geschwächte Dienerin der neuen Götter, wie Nox vermutete?
-- In welchem Verhältnis steht Nerash zu den alten Göttern und dem Dämon Vasul?
-
-## Belege
-
-[P-14a] Session 2025-07-09, 00:47:25, https://www.youtube.com/watch?v=XOnHa6CmDbo
-[P-14b] Session 2025-07-09, 00:50:58, https://www.youtube.com/watch?v=XOnHa6CmDbo
-[P-15] Session 2025-07-22, 01:49:25, https://www.youtube.com/watch?v=BRRCUgW4xRo
-[P-20] Session 2025-09-02, 01:25:17, https://www.youtube.com/watch?v=TLZOH7TlGhk
-[P-27] Session 2025-10-14, 01:44:05, https://www.youtube.com/watch?v=cUtz87UCHu4
-[P-38] Session 2026-02-17, 00:56:42, https://www.youtube.com/watch?v=Z2jlzpoTWVw
-[P-45] Session 2026-03-31, 01:24:11, https://www.youtube.com/watch?v=Ee-K84wcxLM
-[P-47] Session 2026-04-09, 01:52:53, https://www.youtube.com/watch?v=vcGkejr8_nI
-[P-50] Session 2026-05-13, 00:34:49, https://www.youtube.com/watch?v=4afPD9Q_5AY
-[P-53] Session 2026-06-04, 02:37:28, https://www.youtube.com/watch?v=EGNh8O7pE5Q
-[S1-01-A] Session 2026-07-29, 01:15:36, https://www.youtube.com/watch?v=umGyKLkefJI
-[S1-02-A] Session 2026-08-04, 00:07:19, https://www.youtube.com/watch?v=qRj2t3wQHfs
+- Was geschah mit Nerash nach der Dämonenschlacht, und wo befindet sie sich jetzt? (→ [S1-02-A])
+- Wer hat Nerash tatsächlich verletzt – Nox oder Rotunas? (→ [S1-02-A])
+- Weiß Nerash, dass die Gruppe ihre Schriftrolle benutzt hat? (→ [S1-01-A])
+- Warum war die Verbindung zu Nerash in der Kapelle und in Abyssalis gestört? (→ [P-19], [P-49])
+- Was ist das genaue Verhältnis zwischen Nerash und den anderen neuen Göttern, und warum handelte sie laut Nox aus Verzweiflung? (→ [P-37])
+- Wird Nerash nach ihrer Genesung nach Ehrenfels zurückkehren, und welche Rolle wird sie dann spielen? (→ [S1-02-A])
 
 ## Offene Konflikte
 
-- Vitius behauptet, Nerash erhole sich von "Nox' hinterhältigem Angriff" [S1-02-A], während die Einwohner von Ehrenfels sagen, sie sei "von Rotunas verletzt worden" [S1-02-A]. Beide Versionen stehen unaufgelöst nebeneinander.
+- **Widerspruch zu Nox’ Rolle bei Nerash’ Verletzung:** Vitius behauptet, Nerash erhole sich von Nox’ hinterhältigem Angriff (→ [S1-02-A]), während die Einwohner Ehrenfels’ sagen, sie sei von Rotunas verletzt worden (→ [S1-02-A]). Gleichzeitig ist aus der Intervention auf dem Richtplatz bekannt, dass Rotunas Nerash aufgehalten hat (→ [P-46]), was beide Versionen teilweise stützen könnte. Die tatsächliche Ursache ihrer Verletzung bleibt ungeklärt.
+
+## Belege
+
+[P-14] Session 2025-07-09 @ 00:47:25 (https://www.youtube.com/watch?v=XOnHa6CmDbo)
+[P-15] Session 2025-07-22 @ 01:49:25 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
+[P-19] Session 2025-09-02 @ 01:25:17 (https://www.youtube.com/watch?v=TLZOH7TlGhk)
+[P-26] Session 2025-10-14 @ 01:44:05 (https://www.youtube.com/watch?v=cUtz87UCHu4)
+[P-37] Session 2026-02-17 @ 00:56:42 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
+[P-44] Session 2026-03-31 @ 01:24:11 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
+[P-46] Session 2026-04-09 @ 01:52:53 (https://www.youtube.com/watch?v=vcGkejr8_nI)
+[P-49] Session 2026-05-13 @ 00:34:49 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
+[P-52] Session 2026-06-04 @ 02:37:28 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
+[S1-01-A] Session 2026-07-29 @ 01:15:36 (https://www.youtube.com/watch?v=umGyKLkefJI)
+[S1-02-A] Session 2026-08-04 @ 00:07:19 (https://www.youtube.com/watch?v=qRj2t3wQHfs)

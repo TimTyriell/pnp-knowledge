@@ -14,4 +14,4 @@ An der Statue und dem Kristallturm greifen Tentakel aus dem Boden an. Lunara ver
 
 # Belege
 
-[P-54] Session 2026-06-10 @ 00:51:10 (https://www.youtube.com/watch?v=_3tLSiT1tck)
+[P-53] Session 2026-06-10 @ 00:51:10 (https://www.youtube.com/watch?v=_3tLSiT1tck)

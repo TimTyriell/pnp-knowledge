@@ -14,4 +14,4 @@ Der verwesende, kopflose Leichnam des Schamanen [Kronos](/npcs/kronos.md), den [
 
 # Belege
 
-[P-40] Session 2026-03-03 @ 00:25:00 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
+[P-39] Session 2026-03-03 @ 00:25:00 (https://www.youtube.com/watch?v=BRUNuNKTeOg)

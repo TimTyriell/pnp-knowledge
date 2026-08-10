@@ -14,4 +14,4 @@ Das Buch des Kultistenmagiers, aus dem er die Ghule beschwor und das von der Gru
 
 # Belege
 
-[P-20] Session 2025-09-02 @ 00:52:48 (https://www.youtube.com/watch?v=TLZOH7TlGhk)
+[P-19] Session 2025-09-02 @ 00:52:48 (https://www.youtube.com/watch?v=TLZOH7TlGhk)

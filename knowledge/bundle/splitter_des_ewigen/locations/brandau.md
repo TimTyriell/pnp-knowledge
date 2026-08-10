@@ -1,8 +1,8 @@
 ---
 type: Location
 title: Brandau
-description: Brandau ist eine Stadt, die im Krieg gegen Willauch besiegt wurde und
-  infolgedessen als "gefallene Stadt" gilt. Die Niederlage hatte weitre…
+description: Eine weitere Stadt, in der Hal geächtet ist. Wie Willauch nur als Referenz
+  erwähnt.
 tags:
 - locations
 timestamp: '2026-06-04T00:00:00Z'
@@ -10,71 +10,42 @@ id: LOC_BRANDAU
 subtype: Siedlung
 ---
 
-## Überblick
+# Brandau
 
-Brandau ist eine Stadt, die im Krieg gegen Willauch besiegt wurde und infolgedessen als "gefallene Stadt" gilt. Die Niederlage hatte weitreichende Konsequenzen: Viele ehemalige Bewohner wurden zu Flüchtlingen, und die örtlichen Freibeuter verloren ihre wirtschaftliche Grundlage. Obwohl Brandau weit entfernt von den aktuellen Handlungsorten der Kampagne liegt, wirkt die Propaganda gegen die Stadt und ihre Bewohner noch immer nach. Die Stadt wird mehrfach im Zusammenhang mit Ächtung erwähnt – so steht beispielsweise auf dem Kopf des Banditen Hal in Brandau die Todesstrafe.
+## Überblick
+Brandau ist eine ehemalige Stadt, die im Krieg gegen Willauch unterlag, zerstört wurde und seither nur noch als Trümmerstätte existiert. Sie galt als technologisch überlegen, verfügte über besondere Kampfeinheiten – die sogenannten Strixwölfe – und besaß einst eine eigene Flotte, die in Tiefwasserwitt lag.
 
 ## Rolle in der Kampagne
-
-Brandau dient primär als Herkunftsort und verbindendes Element für mehrere Figuren im Umfeld des Widerstands gegen Willauch:
-
-- **Herakles** und sein Widerstand bestehen aus ehemaligen Brandauern, die nach der Kriegsniederlage fliehen mussten. Herakles selbst sagt: „Ich habe einst in Brandau gelebt und musste hierhin fliegen, als wir den Krieg verloren hatten.“
-- Ein Informant Herakles' namens **Talron** wird als „ehemaliger der Garde aus Brandau“ beschrieben, der ebenfalls geflohen ist.
-- Viele der in späteren Sessions anwesenden Personen sind Flüchtlinge aus Brandau.
-
-Die Stadt fungiert somit als narratives Fundament für die Motivation der Widerstandsgruppe: Die Mitglieder eint das geteilte Schicksal des Verlusts ihrer Heimat und der Flucht vor der Herrschaft Willauchs. Herakles versucht, mit seiner Gruppierung weitere Brandauer und andere Hilfesuchende davon zu überzeugen, „dass man bei uns sicher ist, dass die Aktion auch irgendwo Sinn ergibt."
-
-Darüber hinaus ist Brandau einer der Orte, an denen **Hal** geächtet ist – neben Willauch. Hal selbst erwähnt: „Denn wir, wenn wir... Es ist wie es ist. Aber auf unserem Kopf, oder zumindest auf meinem, steht die Todesstrafe. Zumindest in Willau und in Brandau."
+Brandau spielt keine direkte Rolle im Handlungsverlauf der Gruppe, dient jedoch wiederholt als historischer Bezugspunkt und als Quelle von Flüchtlingen. Für den Banditenführer Hal ist Brandau ein Ort, an dem er zum Tode verurteilt ist. Überlebende der Zerstörung fanden in Ringtal und Kleinringtal Zuflucht und könnten dort Teil der Welt sein, die den Helden begegnet.
 
 ## Wichtige Merkmale
-
-### Lage und Beschaffenheit
-
-Zur geografischen Lage Brandaus gibt es keine präzisen Angaben, außer dass es „weit entfernt" von den aktuellen Handlungsorten liegt und sich im Westen befindet. Herakles sagt, er stamme „aus dem Westen" und habe einst in Brandau gelebt.
-
-Ein indirekter Hinweis auf Brandaus Lage und wirtschaftliche Struktur findet sich in der Beschreibung von Tiefwasserwitt: „Hier steht wohl das ein oder andere Schiff von Willau und früher auch mal Brandau." Dies legt nahe, dass Brandau einst eine Hafenstadt oder zumindest eine Stadt mit maritimer Präsenz war. Die Verbindung zu den Schiffen wird auch durch die Erwähnung der Freibeuter gestützt (siehe unten).
-
-### Bewohner
-
-**Ehemalige Freibeuter**  
-Brandau verfügte vor dem Krieg über örtliche Freibeuter, die durch die Niederlage gegen Willauch ihren Broterwerb verloren. Dies deutet darauf hin, dass die Stadt wahrscheinlich Zugang zum Meer hatte und dass Freibeuterei ein bedeutender Wirtschaftszweig war.
-
-**Flüchtlinge und Exilanten**  
-Viele Brandauer flohen nach der Niederlage aus ihrer Heimat. Ein Teil von ihnen schloss sich Herakles' Widerstandsgruppe an. Die Gruppe ist jedoch „sehr klein" und hat nicht die Kapazität, überall zu helfen. Herakles selbst betont die begrenzten Mittel: „Noch sind wir einfach zu geringe Anzahl an Leuten, um irgendwie überall zu sein."
-
-**Garde**  
-Talron, der Informant Herakles', war ehemals Mitglied der Garde Brandaus. Dies weist auf eine strukturierte militärische oder polizeiliche Organisation in der Vorkriegsstadt hin.
-
-### Politische Situation
-
-Brandau unterlag im Krieg gegen Willauch. Die genauen Umstände der Niederlage bleiben unklar, doch die Folgen sind destruktiv: Flucht der Bevölkerung, Verlust wirtschaftlicher Grundlagen, und eine anhaltende Propaganda, die selbst weit entfernt noch Wirkung zeigt. Dass eine Stadt wie Brandau den Krieg verlor, passt in das Bild von Willauchs militärischem Expansionsdrang – laut einer Beschreibung hat Willow (Willauch) „die ein oder anderen Probleme, schnell sich über die Landkarte zu bewegen", sitze aber strategisch günstig „sehr, sehr gut weit im Südwesten."
+- **Zerstörte Stadt:** Brandau wurde im Krieg gegen Willauch vollständig besiegt und liegt in Trümmern. [P-52]
+- **Technologische Überlegenheit:** Im Vergleich zu Willauch verfügte Brandau über fortschrittlichere Technik, was den Sieg Willauchs umso bemerkenswerter macht. [P-52]
+- **Strixwölfe:** Brandaus Streitkräfte nutzten besondere Einheiten, die als Strixwölfe bezeichnet werden. Ihr Verlust – offenbar durch eine gezielte Aktion Willauchs – gilt als kriegsentscheidend: „Sie war technologisch überlegen, verlor jedoch, weil Willauch ihre Strixwölfe ausschaltete.“ [P-52] Nähere Angaben, was Strixwölfe sind, fehlen.
+- **Herrscherfamilie:** Der Fürst von Brandau ist tot oder befindet sich in Gefangenschaft. Die Erbin ist verschollen. [P-52]
+- **Flucht der Bevölkerung:** Viele Überlebende flohen nach Ringtal und Kleinringtal. [P-52]
+- **Seefahrt:** In der Hafenstadt Tiefwasserwitt lagen früher auch Schiffe Brandaus. Nach der Niederlage werden dort nur noch willauische Schiffe erwähnt. [P-41] Der Verlust der Flotte kostete die örtlichen Freibeuter ihren Broterwerb. [P-41]
+- **Ächtung:** Brandau verhängte – zumindest in der Vergangenheit – die Todesstrafe über Banditen wie Hal. [P-24]
 
 ## Beziehungen und Verbindungen
-
-- **[Willauch](/locations/willauch.md)**: Kriegsgegner und Besatzer. Brandau wurde von Willauch besiegt, und die Propaganda gegen Brandau wirkt fort.
-- **[Herakles](/npcs/herakles_raxxles.md)**: Ehemaliger Bewohner Brandaus, der nach der Niederlage floh und nun eine Widerstandsgruppe aus ehemaligen Brandauern anführt.
-- **[Talron](/npcs/talron.md)**: Ehemaliges Mitglied der Stadtgarde Brandaus, geflohen, dient nun als Informant für Herakles' Gruppe.
-- **[Hal](/npcs/hal_harl.md)**: Bandit, auf den in Brandau (neben Willauch) die Todesstrafe ausgesetzt ist, aufgrund von Karawanenüberfällen.
+- **[Willauch](/locations/willauch.md) (Stadt und überregionale Macht):** Kriegsgegner und Sieger über Brandau. Die willauischen Streitkräfte schalteten die Strixwölfe aus und besiegten die Stadt. [P-41][P-52]
+- **Tiefwasserwitt:** Hafenstadt, in der Brandau vor dem Krieg Schiffe stationiert hatte. [P-41]
+- **[Ringtal](/locations/ringtal.md) und [Kleinringtal](/locations/ringtal.md):** Flucht- und Zufluchtsziele der überlebenden Brandauer. [P-52]
+- **[Hal](/npcs/hal_harl.md):** Banditenführer, der in Brandau zum Tode verurteilt oder zumindest geächtet ist. [P-24]
 
 ## Chronologie
-
-- **Vor den Ereignissen der Kampagne**: Brandau wird im Krieg von Willauch besiegt. Die Stadt fällt, Einwohner fliehen, Freibeuter verlieren ihre Existenzgrundlage. Herakles flieht aus Brandau.
-
-- **Session 2025-09-30**: Brandau wird erstmals erwähnt, als Hal den Spielercharakteren erklärt, dass auf seinen Kopf in Willau und in Brandau die Todesstrafe steht. Er begründet dies mit Karawanenüberfällen und betont, dass er und seine Leute nur diejenigen getötet hätten, die sich nicht ergeben wollten.
-
-- **Session 2026-03-18**: Im Kontext der Beschreibung Tiefwasserwitts wird erwähnt, dass die Schiffe, die dort liegen, ursprünglich teilweise aus Brandau stammen. Zudem wird Brandaus Niederlage gegen Willauch knapp zusammengefasst: Brandau sei eine Stadt gewesen, die im Krieg von Willauch besiegt wurde, und die örtlichen Freibeuter hätten dadurch ihren Broterwerb verloren.
-
-- **Session 2026-06-04**: Herakles offenbart den Spielercharakteren (in Abwesenheit von Saris, dem er misstraut) seine Herkunft aus Brandau und die Umstände seiner Flucht. Er erwähnt seinen Informanten Talron, einen ehemaligen Gardisten Brandaus, der am nächsten Tag eintreffen soll. Zudem wird deutlich, dass viele Anwesende Flüchtlinge aus Brandau sind und dass die Propaganda gegen die Stadt immer noch wirkt, obwohl sie weit entfernt liegt.
+- **Vor der Kampagne:** Brandau existierte als unabhängige Stadt mit fortgeschrittener Technik, eigener Flotte und Strixwölfen. Im Krieg gegen Willauch unterlag sie – die Ausschaltung der Strixwölfe besiegelte den Fall. Die Stadt wurde zerstört, der Fürst getötet oder gefangen genommen, die Erbin blieb verschollen. Überlebende flohen vor allem ins Ringtal und Kleinringtal. [P-52] Die Freibeuter, die von der brandauischen Seefahrt lebten, verloren damit ihre Existenzgrundlage. [P-41]  
+- **Session 2025-09-30:** Hal erklärt, dass auf seinem Kopf „die Todesstrafe [steht]. Zumindest in Willau und in Brandau.“ [P-24] Er spricht von Brandau in der Gegenwartsform, was entweder auf eine funktionierende Rechtsprechung noch vor der Zerstörung hindeutet oder darauf, dass die Ächtung auch nach dem Untergang der Stadt von willauischer Seite aufrechterhalten wurde.  
+- **Session 2026-03-18:** Bei der Annäherung an Tiefwasserwitt wird erwähnt, dass dort „das ein oder andere Schiff von Willau und früher auch mal Brandau“ liegt. [P-41] Brandau wird als vergangene Macht behandelt.  
+- **Session 2026-06-04:** Die Gruppe erfährt von Brandau als einer zerstörten Stadt, deren Fall mit dem Verlust der Strixwölfe zusammenhing, und die Fluchtbewegungen ins Ringtal und Kleinringtal werden benannt. [P-52]
 
 ## Offene Fragen
-
-- Wo genau liegt Brandau geografisch? Die Angabe „im Westen" und „weit entfernt" ist vage, ebenso der Hinweis auf Schifffahrt.
-- Welche konkreten Ereignisse führten zur Niederlage gegen Willauch? Die Belege sprechen nur allgemein von einem verlorenen Krieg.
-- Wie sieht Brandau gegenwärtig aus? Ist die Stadt zerstört, besetzt, oder existiert sie unter Willaucher Herrschaft weiter?
-- Wie viele Brandauer leben noch in der Stadt, und wie viele sind ins Exil gegangen?
+- Was genau sind die Strixwölfe? Die Belege geben keine Beschreibung – weder ob es sich um Kreaturen, magische Konstrukte oder Kriegsmaschinen handelt noch wie Willauch sie ausschalten konnte. [P-52]
+- Wer ist die verschollene Erbin? Es ist unklar, ob sie lebt, wo sie sich befindet und ob sie von Bedeutung für künftige Ereignisse sein könnte. [P-52]
+- Wie ist der Status des Fürsten – tot oder in Gefangenschaft? Und falls gefangen, an welchem Ort? [P-52]
+- Existieren noch bauliche Überreste oder eine Provinzverwaltung Brandaus unter willauischer Herrschaft, die Hals Ächtung erklären würde, obwohl die Stadt selbst zerstört ist? [P-24][P-52]
 
 ## Belege
-
-[P-25] Session 2025-09-30 @ 02:07:03 – Hal erwähnt die Todesstrafe in Brandau (neben Willauch). (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
-[P-42] Session 2026-03-18 @ 00:22:08 – Brandau wurde im Krieg von Willauch besiegt; Freibeuter verloren Broterwerb; Schiffe in Tiefwasserwitt stammen teils aus Brandau. (https://www.youtube.com/watch?v=HHXxsASLrbQ)
-[P-53] Session 2026-06-04 @ 01:07:59 – Herakles' Herkunft aus Brandau, Flucht nach Kriegsniederlage, Widerstand aus ehemaligen Brandauern; Informant Talron als Ex-Gardist; anhaltende Propaganda gegen Brandau. (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
+[P-24] Session 2025-09-30 @ 02:07:03 – [Link](https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[P-41] Session 2026-03-18 @ 00:22:08 – [Link](https://www.youtube.com/watch?v=HHXxsASLrbQ)
+[P-52] Session 2026-06-04 @ 01:13:20 – [Link](https://www.youtube.com/watch?v=EGNh8O7pE5Q)

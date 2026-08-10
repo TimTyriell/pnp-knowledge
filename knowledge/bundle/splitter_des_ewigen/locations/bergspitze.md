@@ -14,4 +14,4 @@ Die Spitze des Berges, die [das Heiligtum](/locations/das_heiligtum.md) beherber
 
 # Belege
 
-[P-19] Session 2025-08-20 @ 01:11:12 (https://www.youtube.com/watch?v=-XbO3FLSL_I)
+[P-18] Session 2025-08-20 @ 01:11:12 (https://www.youtube.com/watch?v=-XbO3FLSL_I)

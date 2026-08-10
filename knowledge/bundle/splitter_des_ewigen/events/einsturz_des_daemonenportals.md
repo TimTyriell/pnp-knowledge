@@ -14,4 +14,4 @@ Die Gruppe zerstört die Säulen des Dämonenportals, woraufhin das Deckengewöl
 
 # Belege
 
-[P-47] Session 2026-04-09 @ 01:45:24 (https://www.youtube.com/watch?v=vcGkejr8_nI)
+[P-46] Session 2026-04-09 @ 01:45:24 (https://www.youtube.com/watch?v=vcGkejr8_nI)

@@ -14,4 +14,4 @@ Ein riesiger untoter Minotaurus griff mit mächtigen Speerwürfen an und verletz
 
 # Belege
 
-[P-22] Session 2025-09-09 @ 00:56:33 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
+[P-21] Session 2025-09-09 @ 00:56:33 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)

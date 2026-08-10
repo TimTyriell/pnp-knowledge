@@ -53,7 +53,7 @@ Die Vorgänge in Jalan waren zudem mit einer vorherigen Begegnung mit einer Figu
 
 ## Chronologie
 
-[P-49] **Vor der Ankunft in Jalan**: Die Gruppen begegnen Vasul, der ihre Hopes auffüllt und ihnen Ressourcen für die Reise ins Abyssalis mitgibt.
+[P-48] **Vor der Ankunft in Jalan**: Die Gruppen begegnen Vasul, der ihre Hopes auffüllt und ihnen Ressourcen für die Reise ins Abyssalis mitgibt.
 
 2. **Ankunft und Zwischenfall**: Die Charaktere treffen in Jalan ein. Kurz darauf ereignet sich ein nicht näher beschriebener Zwischenfall, bei dem Jalan zahlreiche Verteidiger verliert. Der Richter und der Schinder ziehen sich mit Kip, Dante und Miko zur Beratung zurück.
 
@@ -71,4 +71,4 @@ Die Vorgänge in Jalan waren zudem mit einer vorherigen Begegnung mit einer Figu
 
 ## Belege
 
-[P-49] Session 2026-05-06 @ 00:11:37 – https://www.youtube.com/watch?v=MB4quhDWsQE (Transkript: 00:10:17 bis 00:13:00)
+[P-48] Session 2026-05-06 @ 00:11:37 – https://www.youtube.com/watch?v=MB4quhDWsQE (Transkript: 00:10:17 bis 00:13:00)

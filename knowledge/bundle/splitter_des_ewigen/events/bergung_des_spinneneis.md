@@ -14,4 +14,4 @@ Nach dem Spinnenkampf findet die Gruppe einen Raum mit einer Druckplattenfalle u
 
 # Belege
 
-[P-28] Session 2025-10-21 @ 01:44:07 (https://www.youtube.com/watch?v=sxFhbtwoefA)
+[P-27] Session 2025-10-21 @ 01:44:07 (https://www.youtube.com/watch?v=sxFhbtwoefA)

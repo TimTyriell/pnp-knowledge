@@ -14,4 +14,4 @@ Zebrosia ist das legendäre Schwert von [König Zebros](/factions/koenigreich_ze
 
 # Belege
 
-[P-38] Session 2026-02-17 @ 01:49:15 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
+[P-37] Session 2026-02-17 @ 01:49:15 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)

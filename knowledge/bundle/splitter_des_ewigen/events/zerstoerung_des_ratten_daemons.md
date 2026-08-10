@@ -14,4 +14,4 @@ subtype: Kampf
 
 # Belege
 
-[P-21] Session 2025-09-06 @ 00:47:43 (https://www.youtube.com/watch?v=vo1xnyLQDJk)
+[P-20] Session 2025-09-06 @ 00:47:43 (https://www.youtube.com/watch?v=vo1xnyLQDJk)

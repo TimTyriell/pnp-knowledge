@@ -14,4 +14,4 @@ Als [Dodo](/characters/dodo.md) eine der stinkenden Pflanzen mit Feuer attackier
 
 # Belege
 
-[P-37] Session 2026-02-11 @ 00:45:46 (https://www.youtube.com/watch?v=3C8SD-cyNPM)
+[P-36] Session 2026-02-11 @ 00:45:46 (https://www.youtube.com/watch?v=3C8SD-cyNPM)

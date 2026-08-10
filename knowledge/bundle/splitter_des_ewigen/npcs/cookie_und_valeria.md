@@ -13,4 +13,4 @@ id: NPC_COOKIE_UND_VALERIA
 
 # Belege
 
-[P-23] Session 2025-09-17 @ 00:39:17 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
+[P-22] Session 2025-09-17 @ 00:39:17 (https://www.youtube.com/watch?v=AhIT8dcxw2o)

@@ -1,8 +1,8 @@
 ---
 type: Location
 title: Die Narbe
-description: Die Narbe ist ein trostloser, von Kristallen überwucherter Landstrich
-  im Norden von Abyssalis, nahe der Siedlung Jalan. Sie ist auf der Kar…
+description: Die Narbe ist ein trostloser, kristallübersäter Landstrich in Abyssalis
+  nahe Jalan, der auf der Karte des Richters verzeichnet ist. Lunara,…
 tags:
 - locations
 timestamp: '2026-06-10T00:00:00Z'
@@ -10,24 +10,17 @@ id: LOC_DIE_NARBE
 subtype: Wildnis
 ---
 
-# Die Narbe
+**Die Narbe** ist ein trostloser, kristallübersäter Landstrich in [Abyssalis](/domains/splitterwelt.md) nahe [Jalan](/locations/jalan.md), der auf der Karte des [Richters](/npcs/richter_herr_der_seelenwacht.md) verzeichnet ist. [Lunara](/characters/lunara_velora.md), [Esterossa](/characters/esterossa.md) und [Dodo](/characters/dodo.md) machen sich auf den Weg dorthin.
 
-Die Narbe ist ein trostloser, von Kristallen überwucherter Landstrich im Norden von Abyssalis, nahe der Siedlung Jalan. Sie ist auf der Karte des Richters verzeichnet und dient als Versteck des uralten Wesens Vorgultar. Die Gruppe um Lunara, Esterossa und Dodo reiste zur Narbe, um Lunaras verschollenen Bruder Liam zu finden, der dort ebenso begraben liegen soll wie ein rätselhaftes Objekt, das mit Vorgultar zusammenhängt.
+## Geografie und Atmosphäre
 
-## Geographie und Erscheinungsbild
+Die Narbe liegt inmitten von Kristallfeldern; der Landstrich ist von Kristallen übersät. Schluchten, Klippen und magische Türme durchziehen das Gelände. Über dem Gebiet herrscht eine beklemmende Stille, durchbrochen von Flüstern und Echos toter Seelen.
 
-Die Narbe erstreckt sich als tiefes, von Schluchten und Klippen zerklüftetes Tal, dessen Boden und Hänge von rot und lila glimmenden Kristallen durchsetzt sind. Die Ausläufer dieser Kristalle durchziehen sogar den umliegenden Berg. Über das Gelände verstreut stehen mehrere magische Türme unbekannter Herkunft.
+## Verbindung zu Vorgultar und Liam
 
-Die Stimmung am Ort ist beklemmend: eine absolute Stille lastet über dem Tal, immer wieder durchbrochen von leisem Flüstern und den Echos toter Seelen. Der gesamte Landstrich wirkt wie eine offene Wunde in der Landschaft von Abyssalis.
-
-## Bedeutung und Geschichte
-
-Der Richter bestätigte Holodarn und der Gruppe, dass in der Narbe sowohl Lunaras Bruder Liam als auch etwas begraben liegt, das mit Vorgultar in Verbindung steht. Die Natur dieses Etwas ist bislang unbekannt, ebenso wie das genaue Schicksal von Liam. Die Gruppe machte sich auf den Weg zur Narbe, um die Geheimnisse des Ortes zu lüften und Liam zu finden.
-
-Vorgultar selbst haust in der Narbe; die Kristalle, das Flüstern und die toten Seelen deuten auf eine tiefgreifende, magische oder alptraumhafte Veränderung der Region durch seine Anwesenheit hin.
+[Holodarn](/npcs/diener_huludans.md) und der Richter bestätigen, dass in der Narbe sowohl [Lunaras](/characters/lunara_velora.md) Bruder [Liam](/npcs/liam_velora.md) als auch etwas begraben liegt, das mit [Vorgultar](/deities/vorgul_tar.md) zusammenhängt. In dem Landstrich haust Vorgultar.
 
 # Belege
 
-[P-50] Session 2026-05-13 @ 01:07:00 – https://www.youtube.com/watch?v=4afPD9Q_5AY
-[P-51] Session 2026-05-19 @ 01:35:42 – https://www.youtube.com/watch?v=xEcGJeaNixI
-[P-54] Session 2026-06-10 @ 00:07:05 – https://www.youtube.com/watch?v=_3tLSiT1tck
+[P-49] Session 2026-05-13, 01:07:00 – https://www.youtube.com/watch?v=4afPD9Q_5AY
+[P-53] Session 2026-06-10, 00:07:05 – https://www.youtube.com/watch?v=_3tLSiT1tck

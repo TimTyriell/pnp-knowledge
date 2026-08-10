@@ -1,8 +1,8 @@
 ---
 type: Deity
 title: Korn, der Blutgott
-description: Korn, auch als der Blutgott bekannt, ist ein neuer Gott, der mit Krieg,
-  Blutopfern und kriegerischer Hingabe assoziiert wird. Sein einziger…
+description: 'Die Verbindung zu Korn hat jedoch Grenzen: In der Demiplane, einem Zwischenreich,
+  war die Verbindung unterbrochen, und ein Gebet blieb uner…'
 tags:
 - deities
 timestamp: '2026-05-19T00:00:00Z'
@@ -16,80 +16,55 @@ aliases:
 ---
 
 ## Überblick
-
-Korn, auch als der Blutgott bekannt, ist ein neuer Gott, der mit Krieg, Blutopfern und kriegerischer Hingabe assoziiert wird. Sein einziger namentlich bekannter Anhänger innerhalb der Gruppe ist [Esterossa](/characters/esterossa.md), der ihm als Seraph dient und im Kampf Opfer darbringt. Korns Wesen ist geprägt von blutrünstigen Riten und der Erwartung, dass seine Gunst durch Stahl und vergossenes Blut verdient wird. Im weiteren Pantheon der Welt gehört er zu den "neuen Göttern", einer Fraktion, die sich von den älteren Gottheiten abgrenzt.
+Korn ist ein neuer Kriegsgott, der auch als der Blutgott bekannt ist. Sein Wesen ist geprägt von Blutdurst, Kampfeslust und der Forderung nach Opfern im Gefecht. Seine Anhänger bringen ihm im Kampf Blutopfer dar, und sein Einfluss scheint sich mit Gewalt und Blutvergießen zu nähren. Als eine neuere Gottheit ist er nicht Teil des alten Pantheons der Welt; sein einziger namentlich bekannter Anhänger in der Gruppe der Helden ist [Esterossa](/characters/esterossa.md), ein Seraph, der ihm inbrünstig dient.
 
 ## Rolle in der Kampagne
+Korn tritt in der Kampagne ausschließlich als die göttliche Quelle der Macht seines Dieners Esterossa in Erscheinung. Esterossa ruft ihn regelmäßig an, um göttliche Schutz- und Heilfähigkeiten zu kanalisieren, insbesondere um Schaden von Verbündeten abzuwenden oder Verletzte zu versorgen. Seine Gebete an Korn versetzen ihn in einen tranceartigen, blutrünstigen Zustand, der seine Kampfkraft steigert.
 
-Korn ist die Quelle der göttlichen Macht Esterossas. In zahlreichen Kämpfen ruft Esterossa den Blutgott mit standardisierten, martialischen Gebeten an, um Schutz für sich und seine Verbündeten zu erwirken oder um sich selbst in einen blutrünstigen Kampfrausch zu versetzen. Die Verbindung zu Korn dient nicht nur der Schadensminderung und Heilung, sondern auch als Ausdruck von Esterossas Weltanschauung und Selbstverständnis als Krieger.
+Die Verbindung zu Korn hat jedoch Grenzen: In der Demiplane, einem Zwischenreich, war die Verbindung unterbrochen, und ein Gebet blieb unerhört, obwohl Esterossa dennoch Motivation aus dem Ritual schöpfte. In einer späteren Schlacht gegen einen Seraph hatte Esterossa zudem das deutliche Gefühl, dass Korn ihn nicht erhört.
 
-Gleichzeitig ist Korn ein narratives Element, das Esterossas Charakterentwicklung spiegelt: Die ausschließlich kriegerische Ausrichtung seines Gottes steht im Kontrast zu Esterossas wachsender Freude daran, Hilfsbedürftigen zu helfen – ein innerer Wandel, den Esterossa selbst reflektiert.
+In einer ruhigeren Stunde reflektierte Esterossa, dass er trotz seiner Hingabe an den Kriegsgott mehr Gefallen daran findet, Hilfsbedürftigen beizustehen – ein Hinweis auf eine sich anbahnende innere Entwicklung, die seine Beziehung zu Korns kriegerischen Idealen möglicherweise verändern könnte.
 
 ## Wichtige Merkmale
+Korn wird als kriegerische, blutdürstige Gottheit charakterisiert, die vor allem durch Esterossas Gebete greifbar wird. Zentral ist die Assoziation mit Blut und Opfern: „trinke vom Blut der Gefallenen“ ist ein wiederkehrendes Motiv in den Anrufungen. Sein Wesen lässt sich aus der Formel ableiten, die Esterossa vor Kämpfen spricht:
 
-### Göttliche Macht und Einflussnahme
+> „Blut für den Blutgott, Ehre im Kampf und möge mein Feind zuerst fallen. Korn führe meine Hand, stärke mein Herz und trinke vom Blut der Gefallenen. Kein Frieden, nur Krieg, auf dass mein Stahl deine Gunst verdient.“
 
-Korn gewährt Esterossa die Fähigkeit, mit seinen Prey Dice Schaden von Verbündeten abzuwenden, indem er den Blutgott anruft. In einem Gefecht betet Esterossa: "Blutgott, gib mir Kraft, um diesen Schaden zum Teil von mich zu wenden" und mindert so eingehenden Schaden [P-09].
+Diese Worte versetzen Esterossa in einen Zustand innerer Hitze und Euphorie: Seine Adern pulsieren, das Herz schlägt schneller, er empfindet ein „inneres Feuer von Korn“. Das Gebet ist sowohl Bitte um Beistand als auch rituelle Vorbereitung auf einen Blutrausch.
 
-Seine Macht erstreckt sich auch auf Heilung. Esterossa wirkt mit Korns Hilfe ein "Lebendwort", um einen schwer verwundeten Soldaten zu retten und den in seinem Körper wuchernden Kristall aufzulösen. Nach der Heilung sagt er: "Korn hat dein Leben beschützt" [P-33]. Ebenso heilt er mit einem Gebet zu Korn und dem Wirken seiner "Seraph Hope" den Kapitän und Miaomani, die aufgespießt am Boden liegen [P-16].
-
-### Riten und Gebete
-
-Esterossas Gebete an Korn folgen einer feststehenden, blutrünstigen Formel. Vor Kämpfen spricht er sie, um sich in einen Zustand der Euphorie und Kampfbereitschaft zu versetzen:
-
-> "Blut für den Blutgott, Ehre im Kampf und möge mein Feind zuerst fallen. Korn führe meine Hand, stärke mein Herz und trinke vom Blut der Gefallenen. Kein Frieden, nur Krieg, auf das mein Stahl deine Gunst verdient." [P-18][P-28]
-
-Die Wirkung dieses Gebets ist unmittelbar physisch spürbar: Esterossa fühlt sich "blutrünstig", seine Adern beginnen zu pulsieren, sein Herz schlägt schneller, er sondert "Euphorie-Schweiß" ab und fühlt ein "inneres Feuer von Korn" in sich brennen [P-28].
-
-### Natur und Assoziationen
-
-Korn ist ein Kriegsgott, der mit Blutopfern assoziiert wird. Sein Wesen fasst Esterossas eigene frühere Einstellung zusammen: "durch seine Anbetung an Korn eher nur den Krieg gewöhnt" [P-25]. Es gibt jedoch keine Belege für eine unmittelbare Kommunikation Korns mit Esterossa; ob und wie der Gott Gebete erhört, bleibt oft unklar.
-
-Er wird explizit als "neuer Gott" klassifiziert und im Gespräch über die Haltung der Gruppe zu Göttern in Opposition zu den "alten Göttern" gestellt [P-38]. Über seine genaue Herkunft oder seine Stellung innerhalb der neuen Götter ist nichts bekannt; selbst bei der Entdeckung einer außerirdischen Statue, die niemand identifizieren kann, erwägt Esterossa lediglich, Korn um Hilfe zu bitten – "als mein Gott sollte er es vielleicht wissen" –, was darauf hindeutet, dass selbst sein eigenster Diener keine umfassende Kenntnis von Korns Wissen oder Machtbereich hat [P-46].
+Korn wird von den Helden als ein „neuer Gott“ eingeordnet, was auf eine jüngere Entstehungsgeschichte oder erst kürzlich gewonnene Bedeutung in der Welt hinweist.
 
 ## Beziehungen und Verbindungen
-
-- **[Esterossa](/characters/esterossa.md)** ist Korns Seraph und einziger bekannter Anhänger in der Gruppe. Er dient Korn mit blutrünstiger Hingabe und bringt ihm im Kampf Opfer dar. Die Beziehung ist geprägt von Esterossas Erwartung göttlicher Unterstützung im Gefecht, wobei er mit zunehmender Dauer der Kampagne auch eine persönliche Entwicklung durchläuft, die ihn vom reinen Kriegsdienst wegführt.
-
-- **[Dodo](/characters/dodo.md)** spricht stellvertretend für Esterossa über dessen Haltung zu den Göttern und ordnet Korn explizit den "neuen Göttern" zu [P-38].
-
-- Zu anderen Göttern oder Anhängern bestehen nach den vorliegenden Belegen keine direkten Beziehungen.
+- **[Esterossa](/characters/esterossa.md)**: Esterossa dient Korn als Seraph und ruft ihn im Kampf um Schutz, Heilung und Kraft an. Seine Treue wird von [Dodo](/characters/dodo.md) in einem Gespräch über die Haltung der Gruppe zu Göttern ausdrücklich hervorgehoben. In Momenten existenzieller Not – etwa nach der Rettung eines verwundeten Soldaten – schreibt Esterossa das Überleben des Mannes direkt Korn zu: „Korn hat dein Leben beschützt.“
+- **[Valeria](/characters/valeria.md)** und **[Lindo Laut](/characters/lindo_laut.md)**: Sie werden Zeugen von Esterossas Blutgott-Gebeten und zeigen sich teils irritiert. Lindo Laut kennt weder den Namen noch die Gottheit selbst und nennt Korns Natur neu und unvertraut: „Ich glaube Lindo Laut hätte den noch nie gehört, den Gott.“
+- **Arkus von Ehrenfels**: Der Gildenmeister erwähnt die Option, den Weg der neuen Götter zu ehren, als mögliche Weichenstellung für die Zukunft der Gilde und der Welt.
 
 ## Chronologie
-
-In der ersten dokumentierten Session betet Esterossa erstmals zu Korn und nutzt seine Prey Dice zur Schadensminderung [P-09].
-
-Wenig später heilt Esterossa mit einem Gebet zu Korn den Kapitän und Miaomani [P-16]. Der Spielleiter fragt an dieser Stelle nach dem Namen des Gottes – ein Hinweis darauf, dass Korns Identität zu diesem Zeitpunkt noch nicht vollständig etabliert war.
-
-Esterossa spricht sein standardisiertes Kriegsgebet und bekennt sich als Seraph Korns [P-18]. Sein Gebet ist nun voll ausformuliert und betont die kriegerische, blutopfernde Natur des Gottes.
-
-Esterossa reflektiert seine eigene Veränderung: Obwohl er Korn als Kriegsgott anbetet, findet er zunehmend Gefallen daran, Hilfsbedürftigen zu helfen, und erkennt eine Diskrepanz zwischen Korns Dogma und seiner eigenen Entwicklung [P-25].
-
-Vor einem Kampf spricht Esterossa erneut sein Gebet und beschreibt die physische Wirkung, die Korns Macht auf ihn hat – Hitze, Euphorie, Blutdurst [P-28].
-
-Esterossa heilt einen Soldaten mit einem Lebendwort und schreibt die Rettung Korn zu: "Korn hat dein Leben beschützt" [P-33].
-
-Im Gespräch über die Haltung der Gruppe zu Göttern wird Korn durch Dodo explizit den "neuen Göttern" zugeordnet [P-38].
-
-Bei der Entdeckung einer außerirdischen Statue, die niemand identifizieren kann, erwägt Esterossa, Korn um Hilfe zu bitten, verschiebt die Anrufung jedoch auf später [P-46].
-
-Im Kampf gegen die Seraphen bittet Esterossa in einem verzweifelten Gebet um Korns Kraft. Es bleibt unklar, ob Korn ihn erhört, doch Esterossa gelingt der tödliche Hieb, der das heilige Schwert des gegnerischen Seraphen durchbricht [P-51].
+- **Session 2025-05-27**: Esterossa nutzt sein Gottesemblem, um den Blutgott anzurufen und mit Prey Dice Schaden von sich abzuwenden. Dies ist die erste dokumentierte Anrufung.
+- **Session 2025-07-09**: In der Demiplane betet Esterossa zu Korn, doch die Verbindung ist unterbrochen. Er bittet um Schutz und Eingebung; sein Gott antwortet nicht, dennoch erhält er einen Rallye-Würfel als Zeichen innerer Motivation.
+- **Session 2025-07-29**: Esterossa betet zu Korn, um den schwer verwundeten Kapitän Lobrecht und [Miaomani](/npcs/miaomani.md) zu heilen, indem er seine Seraph-Fähigkeit einsetzt. Die Heilung gelingt, und die Geretteten danken ihm.
+- **Session 2025-08-12**: Esterossa spricht erstmals die vollständige blutrünstige Gebetsformel. Korn wird hier als neuerer Gott mit Blutopfer-Assoziation bezeichnet und schützt Esterossa auf der Brücke vor Verzweiflung. Die Gruppe reagiert mit Fragen auf den unbekannten Gott.
+- **Session 2025-09-30**: In einer ruhigen Szene sinniert Esterossa über eine Veränderung in sich: Trotz seiner Anbetung Korns und seiner kriegerischen Natur empfindet er zunehmend Freude daran, Hilfsbedürftigen zu helfen. Dies deutet eine mögliche innere Abkehr von reinem Kriegsdenken an.
+- **Session 2025-10-21**: Vor einem Arenakampf spricht Esterossa das Blutgott-Gebet und versinkt in blutrünstiger Euphorie: Adern pulsieren, Schweiß bricht aus, er fühlt Korns inneres Feuer.
+- **Session 2026-01-06**: Esterossa heilt einen sterbenden Soldaten mit der Macht Korns und verkündet: „Korn hat dein Leben beschützt.“
+- **Session 2026-02-17**: Im Gespräch über die Haltung der Gruppe zu Göttern stellt Dodo klar, dass Esterossa dem neuen Gott Korn tief zugewandt ist.
+- **Session 2026-04-07**: Die Gruppe entdeckt eine außerirdische Statue, die niemand zuordnen kann. Esterossa erwägt, Korn um Rat zu fragen, da sein Gott vielleicht mehr darüber weiß. Ob er eine Antwort erhält, bleibt offen.
+- **Session 2026-05-19**: Während des Kampfes gegen einen Seraph betet Esterossa zu Korn und bittet um Kraft. Er hat jedoch das Gefühl, dass Korn ihn nicht erhört, und kämpft dennoch aus eigenem Antrieb weiter – mit all seiner verbliebenen Kraft und dem Glauben an seinen Gott, selbst im unerhörten Gebet.
 
 ## Offene Fragen
-
-- Korns genaue Natur und Geschichte als "neuer Gott" sind unbekannt. Es gibt keinerlei Hinweise auf seinen Ursprung, seine Domäne oder seine Stellung im Pantheon.
-- Ob und wie Korn aktiv in die Welt eingreift, bleibt unklar. Die körperlichen Effekte von Esterossas Gebeten könnten göttliche Präsenz sein – oder rein psychologische Reaktionen.
-- Es ist nicht bekannt, ob Korn Esterossas wachsende Zuneigung zu hilfsbedürftigen Menschen und die Abkehr vom reinen Kriegsdienst billigt, ignoriert oder missbilligt.
-- Ob Korn Wissen über außerirdische Entitäten besitzt, wie Esterossa vermutet, ist offen [P-46].
+- Was weiß Korn über die außerirdische Statue, und kann oder will er Esterossa darüber Auskunft geben?
+- War Korn in der Demiplane lediglich wegen der abgeschotteten Natur des Ortes nicht erreichbar, oder gibt es grundsätzliche Grenzen seiner Macht?
+- Warum fühlte sich Esterossa im Kampf gegen den Seraph von Korn nicht erhört? Handelt es sich um eine Prüfung, Gleichgültigkeit oder ein Zeichen der Schwächung?
+- Gibt es neben Esterossa weitere Anhänger Korns, und wie verbreitet ist sein Kult in der Welt?
 
 ## Belege
-
-[P-09] Session 2025-05-27 @ 01:01:11 (https://www.youtube.com/watch?v=bamCIB_CkR8)
-[P-16] Session 2025-07-29 @ 01:25:31 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
-[P-18] Session 2025-08-12 @ 00:06:42 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)
-[P-25] Session 2025-09-30 @ 01:46:44 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
-[P-28] Session 2025-10-21 @ 00:05:23 (https://www.youtube.com/watch?v=sxFhbtwoefA)
-[P-33] Session 2026-01-06 @ 02:07:18 (https://www.youtube.com/watch?v=VGw81seFvbo)
-[P-38] Session 2026-02-17 @ 01:42:05 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
-[P-46] Session 2026-04-07 @ 02:02:39 (https://www.youtube.com/watch?v=MAuQPMNY548)
-[P-51] Session 2026-05-19 @ 02:27:04 (https://www.youtube.com/watch?v=xEcGJeaNixI)
+[P-09] Session 2025-05-27, 01:01:11 (https://www.youtube.com/watch?v=bamCIB_CkR8)
+[P-14] Session 2025-07-09, 00:12:20 (https://www.youtube.com/watch?v=XOnHa6CmDbo)
+[P-16] Session 2025-07-29, 01:25:31 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
+[P-17] Session 2025-08-12, 00:06:42 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)
+[P-24] Session 2025-09-30, 01:46:44 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[P-27] Session 2025-10-21, 00:05:23 (https://www.youtube.com/watch?v=sxFhbtwoefA)
+[P-32] Session 2026-01-06, 02:07:18 (https://www.youtube.com/watch?v=VGw81seFvbo)
+[P-37] Session 2026-02-17, 01:42:05 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
+[P-45] Session 2026-04-07, 02:02:39 (https://www.youtube.com/watch?v=MAuQPMNY548)
+[P-50] Session 2026-05-19, 02:26:40 (https://www.youtube.com/watch?v=xEcGJeaNixI)

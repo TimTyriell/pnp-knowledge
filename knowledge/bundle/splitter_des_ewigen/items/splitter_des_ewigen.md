@@ -1,8 +1,8 @@
 ---
 type: Item
 title: Der Splitter des Ewigen
-description: Der Splitter des Ewigen war ein riesiger, leuchtender Kristall im Inneren
-  des Tempels, in dem auch Holodarn gefangen lag. Er galt als das m…
+description: Der Splitter des Ewigen ist ein gewaltiger Kristall, der in einem Tempel
+  aufbewahrt wurde und von Vorgultar streng bewacht wurde. Vasul bes…
 tags:
 - items
 timestamp: '2026-07-21T00:00:00Z'
@@ -12,19 +12,17 @@ aliases:
 - Splitter des Ewigen
 ---
 
-# Der Splitter des Ewigen
+Der Splitter des Ewigen ist ein gewaltiger Kristall, der in einem Tempel aufbewahrt wurde und von [Vorgultar](/deities/vorgul_tar.md) streng bewacht wurde. [Vasul](/deities/vharzul.md) beschrieb ihn als Schöpfungsjuwel, mit dem sich [Holodarn](/npcs/diener_huludans.md) befreien und Wünsche verwirklichen ließen. Seine Macht, die Welt zu verändern, machte ihn zum zentralen Artefakt der Ereignisse um [Esterossa](/characters/esterossa.md).
 
-Der Splitter des Ewigen war ein riesiger, leuchtender Kristall im Inneren des Tempels, in dem auch Holodarn gefangen lag. Er galt als das mächtigste Artefakt der gesamten Welt und besaß die Fähigkeit, Wünsche zu erfüllen und die Grundfesten der Realität zu verändern. Über Jahrtausende hinweg wurde er von Vorgultar streng bewacht.
+## Erscheinung und Kräfte
 
-## Rolle und Macht
+Der Splitter des Ewigen erschien als gewaltiger Kristall von enormer Bedeutung. Vasul pries ihn als Schöpfungsjuwel: Wer ihn nutzte, konnte die Welt verändern, Wünsche erfüllen und Holodarn befreien. Seine transformative Kraft zeigte sich, als Esterossa ihn berührte – er verwandelte sich daraufhin in rote Energie und ging auf sie über.
 
-Der Splitter des Ewigen war kein gewöhnlicher Gegenstand, sondern ein Objekt von nahezu gottgleicher Macht. Er konnte die Realität an sich verändern und Wünsche auf eine Weise erfüllen, die über bloße Magie hinausging. Selbst der mächtige Vorgultar scheiterte einst daran, den Splitter zu nutzen – die Erfahrung trieb ihn an den Rand des Wahnsinns. Seither bewachte er den Kristall eifersüchtig, vermutlich um zu verhindern, dass irgendein anderer Wesen in den Besitz dieser Kontrollmacht gelangt.
+## Verlauf
 
-## Letzte bekannte Nutzung
-
-Im Zuge der Ereignisse um den Tempel gelang es Esterossa, den Splitter zu berühren. Der Kristall reagierte augenblicklich: Er löste sich in eine rote Energie auf, die Esterossa vollständig transformierte. Nach dieser Verwandlung und der Freisetzung der Energie löste sich der Splitter scheinbar vollständig auf, als hätte er nie existiert. Es ist unklar, ob die Essenz des Splitter weiterhin in Esterossa oder an einem anderen Ort fortbesteht oder ob die Macht für immer verloren ist.
+Der Kristall wurde zunächst von Vorgultar streng bewacht. Nach der Zerstörung von Vasuls Kristall wurde Esterossa von Vasul besessen und berührte in diesem Zustand den Splitter des Ewigen. Bei der Berührung verlor der Kristall seine feste Form, wurde zu roter Energie und transformierte Esterossa. Anschließend löste er sich vollständig auf, als hätte er nie existiert.
 
 # Belege
 
-[P-55] Session 2026-06-16 @ 01:37:14 – https://www.youtube.com/watch?v=qe0ck8hvYpk
-[P-57] Session 2026-07-21 @ 00:00:42 – https://www.youtube.com/watch?v=KNV4oNGJ0tw
+[P-54] Session 2026-06-16 @ 01:37:14 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
+[P-55] Session 2026-07-21 @ 00:00:42 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)

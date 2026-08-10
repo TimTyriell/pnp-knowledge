@@ -25,4 +25,4 @@ In der Gruppe hat Kipp die Führungsrolle übernommen. Seine Motivation ist nich
 
 # Belege
 
-[P-49] Session 2026-05-06 @ 00:02:22 (https://www.youtube.com/watch?v=MB4quhDWsQE)
+[P-48] Session 2026-05-06 @ 00:02:22 (https://www.youtube.com/watch?v=MB4quhDWsQE)

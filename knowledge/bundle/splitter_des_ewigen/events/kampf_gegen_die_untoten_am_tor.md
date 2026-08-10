@@ -14,4 +14,4 @@ Die erste Auseinandersetzung mit drei Zombies und einem aus dem Wasser kriechend
 
 # Belege
 
-[P-22] Session 2025-09-09 @ 00:14:24 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
+[P-21] Session 2025-09-09 @ 00:14:24 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)

@@ -14,4 +14,4 @@ Ein kleiner, gekarfster Stein mit einer Rune, die 'Leben' symbolisiert. Die Zwer
 
 # Belege
 
-[P-23] Session 2025-09-17 @ 01:03:07 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
+[P-22] Session 2025-09-17 @ 01:03:07 (https://www.youtube.com/watch?v=AhIT8dcxw2o)

@@ -13,4 +13,4 @@ Ein Soldat in vergoldeter Rüstung, der als Anführer der Hinrichtungsszene agie
 
 # Belege
 
-[P-27] Session 2025-10-14 @ 00:05:15 (https://www.youtube.com/watch?v=cUtz87UCHu4)
+[P-26] Session 2025-10-14 @ 00:05:15 (https://www.youtube.com/watch?v=cUtz87UCHu4)

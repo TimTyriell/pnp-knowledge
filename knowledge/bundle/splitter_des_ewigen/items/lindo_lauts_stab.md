@@ -28,6 +28,6 @@ Der Name des Schlüssels verweist auf die Domäne Abisalis, die mit der Splitter
 
 # Belege
 
-[P-21] Session 2025-09-06, 00:19:29 – https://www.youtube.com/watch?v=vo1xnyLQDJk
-[P-32] Session 2025-11-25, 00:15:15 – https://www.youtube.com/watch?v=wd5R4fJfngY
+[P-20] Session 2025-09-06, 00:19:29 – https://www.youtube.com/watch?v=vo1xnyLQDJk
+[P-31] Session 2025-11-25, 00:15:15 – https://www.youtube.com/watch?v=wd5R4fJfngY
 3. Kanon_Entscheidungen.md (Kampagnen-Unterlage): Abisalis ist die Splitterwelt.

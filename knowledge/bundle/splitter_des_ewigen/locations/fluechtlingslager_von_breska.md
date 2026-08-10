@@ -16,4 +16,4 @@ Ein notdürftiges Lager vor den Stadtmauern, in dem Zwerge, Gnome, Menschen und 
 
 # Belege
 
-[P-23] Session 2025-09-17 @ 00:49:11 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
+[P-22] Session 2025-09-17 @ 00:49:11 (https://www.youtube.com/watch?v=AhIT8dcxw2o)

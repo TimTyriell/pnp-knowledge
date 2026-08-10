@@ -27,4 +27,4 @@ Krall entscheidet sich für die Auslieferung der gefangenen Banditen, was darauf
 
 # Belege
 
-[P-43] Session 2026-03-23 @ 00:02:00 (https://www.youtube.com/watch?v=niVxKtdQBn0)
+[P-42] Session 2026-03-23 @ 00:02:00 (https://www.youtube.com/watch?v=niVxKtdQBn0)

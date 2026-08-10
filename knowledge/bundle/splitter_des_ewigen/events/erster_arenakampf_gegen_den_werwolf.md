@@ -14,4 +14,4 @@ Der Kampf beginnt mit [Cookies](/characters/cookie.md) Ranken, [Dodos](/characte
 
 # Belege
 
-[P-28] Session 2025-10-21 @ 00:16:39 (https://www.youtube.com/watch?v=sxFhbtwoefA)
+[P-27] Session 2025-10-21 @ 00:16:39 (https://www.youtube.com/watch?v=sxFhbtwoefA)

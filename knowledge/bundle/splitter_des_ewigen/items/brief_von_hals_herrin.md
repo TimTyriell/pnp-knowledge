@@ -14,4 +14,4 @@ Ein Schriftstück, das Hal von seiner elbischen Auftraggeberin erhielt. Darin st
 
 # Belege
 
-[P-25] Session 2025-09-30 @ 02:06:31 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[P-24] Session 2025-09-30 @ 02:06:31 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)

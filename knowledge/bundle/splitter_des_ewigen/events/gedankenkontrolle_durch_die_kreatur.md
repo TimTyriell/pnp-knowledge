@@ -14,4 +14,4 @@ Die zweite Kreatur versucht, zuerst [Lindo Laut](/characters/lindo_laut.md) und 
 
 # Belege
 
-[P-29] Session 2025-10-28 @ 02:07:44 (https://www.youtube.com/watch?v=V6NzNakqxXM)
+[P-28] Session 2025-10-28 @ 02:07:44 (https://www.youtube.com/watch?v=V6NzNakqxXM)

@@ -14,4 +14,4 @@ Das Verlies unter der zweiten Arena, zugänglich durch einen eingestürzten Scha
 
 # Belege
 
-[P-28] Session 2025-10-21 @ 01:05:41 (https://www.youtube.com/watch?v=sxFhbtwoefA)
+[P-27] Session 2025-10-21 @ 01:05:41 (https://www.youtube.com/watch?v=sxFhbtwoefA)

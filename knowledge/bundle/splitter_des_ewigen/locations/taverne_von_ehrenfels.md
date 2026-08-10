@@ -28,5 +28,5 @@ In einer Nacht, in der die Gruppe in der Taverne übernachtet, beginnt ein näch
 # Belege
 
 [P-15] Session 2025-07-22 @ 00:07:03 – https://www.youtube.com/watch?v=BRRCUgW4xRo
-[P-31] Session 2025-11-18 @ 00:00:00 – https://www.youtube.com/watch?v=w__ahowb9p0
-[P-47] Session 2026-04-09 @ 00:09:00 – https://www.youtube.com/watch?v=vcGkejr8_nI
+[P-30] Session 2025-11-18 @ 00:00:00 – https://www.youtube.com/watch?v=w__ahowb9p0
+[P-46] Session 2026-04-09 @ 00:09:00 – https://www.youtube.com/watch?v=vcGkejr8_nI

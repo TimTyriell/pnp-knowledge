@@ -14,4 +14,4 @@ Die Verteidigung des Gebirgspasses gegen eine Übermacht von Untoten unter einem
 
 # Belege
 
-[P-25] Session 2025-09-30 @ 00:46:10 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[P-24] Session 2025-09-30 @ 00:46:10 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)

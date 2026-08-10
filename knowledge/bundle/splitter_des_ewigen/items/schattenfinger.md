@@ -34,4 +34,4 @@ Die genaue Herkunft des Artefakts, der ursprüngliche Besitzer und die vollstän
 [P-07] Session 2025-05-06 @ 00:28:08 (https://www.youtube.com/watch?v=e0v6AFGd4mE)
 [P-09] Session 2025-05-27 @ 02:02:17 (https://www.youtube.com/watch?v=bamCIB_CkR8)
 [P-10] Session 2025-06-03 @ 00:13:20 (https://www.youtube.com/watch?v=jtYR4Je0a18)
-[P-48] Session 2026-04-14 @ 01:57:46 (https://www.youtube.com/watch?v=1Jyu92P7_Fg)
+[P-47] Session 2026-04-14 @ 01:57:46 (https://www.youtube.com/watch?v=1Jyu92P7_Fg)

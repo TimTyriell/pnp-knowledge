@@ -14,4 +14,4 @@ Der Kampf gegen den Koloss mit seinen sechs Körperteilen. Die Gruppe zerstört 
 
 # Belege
 
-[P-26] Session 2025-10-07 @ 01:12:00 (https://www.youtube.com/watch?v=qVAF_54S8Vw)
+[P-25] Session 2025-10-07 @ 01:12:00 (https://www.youtube.com/watch?v=qVAF_54S8Vw)

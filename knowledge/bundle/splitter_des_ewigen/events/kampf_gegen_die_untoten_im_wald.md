@@ -14,4 +14,4 @@ Ein kurzer Scharmützel mit Bogenschützen und Skelettkriegern, der mit der Fluc
 
 # Belege
 
-[P-33] Session 2026-01-06 @ 00:40:33 (https://www.youtube.com/watch?v=VGw81seFvbo)
+[P-32] Session 2026-01-06 @ 00:40:33 (https://www.youtube.com/watch?v=VGw81seFvbo)

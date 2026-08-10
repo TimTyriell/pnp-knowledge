@@ -13,4 +13,4 @@ Ein elfischer Soldat, der die Gruppe zum Dungeon begleitet und bewacht. Er beant
 
 # Belege
 
-[P-29] Session 2025-10-28 @ 00:08:25 (https://www.youtube.com/watch?v=V6NzNakqxXM)
+[P-28] Session 2025-10-28 @ 00:08:25 (https://www.youtube.com/watch?v=V6NzNakqxXM)

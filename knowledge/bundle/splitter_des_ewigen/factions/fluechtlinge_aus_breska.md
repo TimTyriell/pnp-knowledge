@@ -18,14 +18,14 @@ Die **Flüchtlinge aus Breska** sind eine Gemeinschaft von Vertriebenen, die vor
 
 ## Herkunft und Flucht
 
-Die Flüchtlinge verließen Breska aufgrund einer Mischung aus Gefahren: [P-23] berichtet von Untoten und der örtlichen Obrigkeit, [P-24] nennt Banditen als Grund. Die Gruppe vereint also Vertriebene, die vor mehreren Bedrohungen – Untoten, Banditen und den Machthabern in Breska – geflohen sind. Roland tritt als ihr Sprecher auf und willigt im Namen der Gruppe in den Marsch zum Banditenlager ein [P-23]. Sie sind eine bunt gemischte, nicht kämpferische Gemeinschaft, die auf der Suche nach Schutz und Sicherheit ist [P-23][P-24].
+Die Flüchtlinge verließen Breska aufgrund einer Mischung aus Gefahren: [P-22] berichtet von Untoten und der örtlichen Obrigkeit, [P-23] nennt Banditen als Grund. Die Gruppe vereint also Vertriebene, die vor mehreren Bedrohungen – Untoten, Banditen und den Machthabern in Breska – geflohen sind. Roland tritt als ihr Sprecher auf und willigt im Namen der Gruppe in den Marsch zum Banditenlager ein [P-22]. Sie sind eine bunt gemischte, nicht kämpferische Gemeinschaft, die auf der Suche nach Schutz und Sicherheit ist [P-22][P-23].
 
 ## Schutz und Unterbringung
 
-Als die Flüchtlinge im Banditenlager ankommen, sind sie erschöpft, ihre Wagen sind beschädigt und es gibt Verletzte [P-25]. Roland handelt mit Hal die Unterbringung für den Winter aus [P-25]. Die Abenteurer schützen die Zivilisten; während einer Schlacht verstecken sich die Flüchtlinge im Versteck, erleiden jedoch Verluste durch einen Pfeilhagel [P-35]. Die Gruppe bemüht sich aktiv, sie zu verteidigen und weiteren Schaden von ihnen abzuwenden [P-35]. Ihre Sicherheit bleibt ein zentrales Anliegen der Kampagne.
+Als die Flüchtlinge im Banditenlager ankommen, sind sie erschöpft, ihre Wagen sind beschädigt und es gibt Verletzte [P-24]. Roland handelt mit Hal die Unterbringung für den Winter aus [P-24]. Die Abenteurer schützen die Zivilisten; während einer Schlacht verstecken sich die Flüchtlinge im Versteck, erleiden jedoch Verluste durch einen Pfeilhagel [P-34]. Die Gruppe bemüht sich aktiv, sie zu verteidigen und weiteren Schaden von ihnen abzuwenden [P-34]. Ihre Sicherheit bleibt ein zentrales Anliegen der Kampagne.
 
 # Belege
-[P-23] Session 2025-09-17 @ 00:36:38 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
-[P-24] Session 2025-09-23 @ 00:21:26 (https://www.youtube.com/watch?v=DGzfqVigS0g)
-[P-25] Session 2025-09-30 @ 01:09:12 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
-[P-35] Session 2026-01-20 @ 00:06:33 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
+[P-22] Session 2025-09-17 @ 00:36:38 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
+[P-23] Session 2025-09-23 @ 00:21:26 (https://www.youtube.com/watch?v=DGzfqVigS0g)
+[P-24] Session 2025-09-30 @ 01:09:12 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[P-34] Session 2026-01-20 @ 00:06:33 (https://www.youtube.com/watch?v=H3ckYdTv4y8)

@@ -14,4 +14,4 @@ Die zweite Brücke, die beim Überschreiten lähmende Hoffnungslosigkeit auslös
 
 # Belege
 
-[P-18] Session 2025-08-12 @ 01:52:43 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)
+[P-17] Session 2025-08-12 @ 01:52:43 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)

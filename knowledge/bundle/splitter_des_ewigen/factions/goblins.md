@@ -33,5 +33,5 @@ Der Goblinstamm der Minen besitzt eine komplexe Hierarchie: An der Spitze steht 
 
 [P-03] Session 2025-04-09 @ 00:02:59 – https://www.youtube.com/watch?v=1PWdwvun5ow
 [P-05] Session 2025-04-23 @ 00:23:33 – https://www.youtube.com/watch?v=z3C-bewKqUs
-[P-30] Session 2025-11-14 @ 00:12:14 – https://www.youtube.com/watch?v=8Khb-Y8XbKY
-[P-36] Session 2026-01-27 @ 00:15:55 – https://www.youtube.com/watch?v=9RzvnnWzV7E
+[P-29] Session 2025-11-14 @ 00:12:14 – https://www.youtube.com/watch?v=8Khb-Y8XbKY
+[P-35] Session 2026-01-27 @ 00:15:55 – https://www.youtube.com/watch?v=9RzvnnWzV7E

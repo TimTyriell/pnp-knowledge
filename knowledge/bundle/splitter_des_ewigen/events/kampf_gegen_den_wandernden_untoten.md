@@ -14,4 +14,4 @@ Eine Serie von Begegnungen mit der regenerierenden Kreatur. [Cookie](/characters
 
 # Belege
 
-[P-29] Session 2025-10-28 @ 01:19:20 (https://www.youtube.com/watch?v=V6NzNakqxXM)
+[P-28] Session 2025-10-28 @ 01:19:20 (https://www.youtube.com/watch?v=V6NzNakqxXM)

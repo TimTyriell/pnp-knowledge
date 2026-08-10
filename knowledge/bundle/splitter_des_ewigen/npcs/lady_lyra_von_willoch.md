@@ -13,4 +13,4 @@ Lady Lyra ist eine Adlige in [Willoch](/locations/willauch.md) und sitzt bei den
 
 # Belege
 
-[P-28] Session 2025-10-21 @ 00:13:02 (https://www.youtube.com/watch?v=sxFhbtwoefA)
+[P-27] Session 2025-10-21 @ 00:13:02 (https://www.youtube.com/watch?v=sxFhbtwoefA)

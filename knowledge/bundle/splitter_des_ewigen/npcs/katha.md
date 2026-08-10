@@ -13,4 +13,4 @@ Katha verließ die Gruppe zusammen mit [Esterossa](/characters/esterossa.md) auf
 
 # Belege
 
-[P-38] Session 2026-02-17 @ 00:04:13 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
+[P-37] Session 2026-02-17 @ 00:04:13 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)

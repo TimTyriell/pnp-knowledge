@@ -1,8 +1,8 @@
 ---
 type: Item
 title: Brumas Stab
-description: Ein über 2,30 Meter langer, größtenteils metallener Stab mit Spulenstruktur,
-  den Bruma als Wanderstab und magischen Fokus nutzt. Bei Einsat…
+description: Ein überdimensionaler Metallstab, etwa 2,30 Meter lang, mit Spulenform.
+  Er dient Bruma als Wanderstab und magischer Fokus. Beim Aufschlagen…
 tags:
 - items
 timestamp: '2026-07-10T00:00:00Z'
@@ -10,7 +10,7 @@ id: ITEM_BRUMAS_STAB
 subtype: Artefakt
 ---
 
-Ein über 2,30 Meter langer, größtenteils metallener Stab mit Spulenstruktur, den Bruma als Wanderstab und magischen Fokus nutzt. Bei Einsatz knistert er vor Blitzenergie und dient unter anderem dazu, sein Blitzelementar zu beschwören.
+Ein überdimensionaler Metallstab, etwa 2,30 Meter lang, mit Spulenform. Er dient Bruma als Wanderstab und magischer Fokus. Beim Aufschlagen auf den Boden erzeugt er einen lauten Donner und kann Blitzbögen schlagen. Wird zur Beschwörung des Blitzelementars genutzt.
 
 # Belege
 

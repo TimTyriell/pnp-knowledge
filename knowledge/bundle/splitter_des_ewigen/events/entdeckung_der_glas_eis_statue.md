@@ -14,4 +14,4 @@ Am Brunnen entdeckten die Helden eine Statue aus schwarzem Glas oder Eis mit [Va
 
 # Belege
 
-[P-22] Session 2025-09-09 @ 00:43:29 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
+[P-21] Session 2025-09-09 @ 00:43:29 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)

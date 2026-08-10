@@ -44,7 +44,7 @@ Es gab zeitweilig die Annahme, Ezhuras Seelenstück sei von Nerash ausgelöscht 
 [P-15] **Session 2025-07-22 (Schrein)**
    Lindo erkennt in einem Schrein vier Statuen, die die vier Seelen repräsentieren. Die Statue ganz rechts stellt Ezhura („den Glutkollegen“) dar. In dieser Szene äußert Lindo irrtümlich, Nerash habe diesen Gott ausgelöscht – eine Fehlannahme, die später durch die fortdauernde Präsenz Ezhuras widerlegt wird.
 
-[P-18] **Session 2025-08-12 (Amulettgespräch)**
+[P-17] **Session 2025-08-12 (Amulettgespräch)**
    Während die Gruppe durch eine frostige Umgebung läuft, nimmt Lindo Kontakt zu den Stimmen im Amulett auf. Er befragt explizit die als „T-Rex“ bezeichnete Stimme nach dem Verhältnis zwischen seinem früheren Ich und Seras. Die Antwort kommt von Ezua: Man sei in den letzten Tagen Kampfgefährten gewesen, nicht Freunde. Später, an einem Altar, drängen Ezhura und die übrigen Stimmen Lindo, ein Opfer zu bringen.
 
 ## Offene Fragen
@@ -56,7 +56,7 @@ Es gab zeitweilig die Annahme, Ezhuras Seelenstück sei von Nerash ausgelöscht 
 ## Belege
 
 [P-15] Session 2025-07-22 @ 02:50:23 – [YouTube](https://www.youtube.com/watch?v=BRRCUgW4xRo)
-[P-18] Session 2025-08-12 @ 01:44:57 – [YouTube](https://www.youtube.com/watch?v=vHIjua0BZ9Y)
+[P-17] Session 2025-08-12 @ 01:44:57 – [YouTube](https://www.youtube.com/watch?v=vHIjua0BZ9Y)
 3. *Das Buch der vier Seelen* (Auszug zu Ezhura, der Glut)  
 4. *Kanon_Entscheidungen.md* – Festlegung, dass Ezhura eine der vier Seelen Vhar'Zuls ist und dass „Glut“ und „Ezua“ dieselbe Entität bezeichnen.  
 5. *Kanon_Entscheidungen.md* – Festlegung, dass Ezhuras Seelenstück nicht ausgelöscht wurde; die gegenteilige Behauptung beruht auf einer Verwechslung mit Koll'Mereth.

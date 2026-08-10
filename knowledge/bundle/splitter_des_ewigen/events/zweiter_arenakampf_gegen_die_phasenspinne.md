@@ -14,4 +14,4 @@ In einem netzüberzogenen Areal kämpft die Gruppe gegen eine teleportierende Ph
 
 # Belege
 
-[P-28] Session 2025-10-21 @ 01:06:46 (https://www.youtube.com/watch?v=sxFhbtwoefA)
+[P-27] Session 2025-10-21 @ 01:06:46 (https://www.youtube.com/watch?v=sxFhbtwoefA)

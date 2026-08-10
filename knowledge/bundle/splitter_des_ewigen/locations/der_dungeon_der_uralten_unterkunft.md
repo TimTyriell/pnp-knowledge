@@ -36,9 +36,9 @@ Das gesamte Bauwerk ist als ein System konzipiert: Die Tore und Fallen der versc
 
 # Belege
 
-[P-29a] Session 2025-10-28 @ 00:20:18 – https://www.youtube.com/watch?v=V6NzNakqxXM
-[P-29b] Session 2025-10-28 @ 00:33:04 – https://www.youtube.com/watch?v=V6NzNakqxXM
-[P-29c] Session 2025-10-28 @ 01:34:23 – https://www.youtube.com/watch?v=V6NzNakqxXM
-[P-29d] Session 2025-10-28 @ 01:49:32 – https://www.youtube.com/watch?v=V6NzNakqxXM
-[P-29e] Session 2025-10-28 @ 01:23:29 – https://www.youtube.com/watch?v=V6NzNakqxXM
-[P-29f] Session 2025-10-28 @ 02:04:21 – https://www.youtube.com/watch?v=V6NzNakqxXM
+[P-28a] Session 2025-10-28 @ 00:20:18 – https://www.youtube.com/watch?v=V6NzNakqxXM
+[P-28b] Session 2025-10-28 @ 00:33:04 – https://www.youtube.com/watch?v=V6NzNakqxXM
+[P-28c] Session 2025-10-28 @ 01:34:23 – https://www.youtube.com/watch?v=V6NzNakqxXM
+[P-28d] Session 2025-10-28 @ 01:49:32 – https://www.youtube.com/watch?v=V6NzNakqxXM
+[P-28e] Session 2025-10-28 @ 01:23:29 – https://www.youtube.com/watch?v=V6NzNakqxXM
+[P-28f] Session 2025-10-28 @ 02:04:21 – https://www.youtube.com/watch?v=V6NzNakqxXM

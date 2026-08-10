@@ -14,4 +14,4 @@ Ein unterirdischer Raum mit einem magischen Pentagramm, in dem der [Streitkolben
 
 # Belege
 
-[P-22] Session 2025-09-09 @ 01:40:02 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
+[P-21] Session 2025-09-09 @ 01:40:02 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)

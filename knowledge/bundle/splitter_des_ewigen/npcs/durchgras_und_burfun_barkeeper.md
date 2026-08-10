@@ -13,4 +13,4 @@ Durchgras und Burfun sind die Barkeeper der [Taverne in Ehrenfels](/locations/ta
 
 # Belege
 
-[P-31] Session 2025-11-18 @ 00:03:09 (https://www.youtube.com/watch?v=w__ahowb9p0)
+[P-30] Session 2025-11-18 @ 00:03:09 (https://www.youtube.com/watch?v=w__ahowb9p0)

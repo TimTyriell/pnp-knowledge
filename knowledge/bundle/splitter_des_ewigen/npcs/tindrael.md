@@ -46,7 +46,7 @@ Tindrael fungiert als wiederkehrender Verbündeter, dessen Schicksal eng mit dem
    Der Ort wird nun als Stadt beschrieben. Tindrael will die Helden begrüßen, wird aber vom Grafen unterbrochen: *„Willkommen, willkommen. Es freut mich, dass ihr eure Reise wieder bei mir aufgeschlagen habt. Was verschafft mir die Ehre meiner Retter?“*  
    Tindrael, jetzt Adjutant des Grafen (auch „Tindra“ genannt), begleitet die Helden in eine Bibliothek und warnt sie eindringlich, nichts mitzunehmen. Nach einem späteren, nicht näher beschriebenen Desaster wirkt er ratlos, befolgt jedoch die Anweisungen seines Herrn.
 
-[P-41] **2026-03-10 – Gruft des Voras (Session 3)**
+[P-40] **2026-03-10 – Gruft des Voras (Session 3)**
    In der Unterwelt begegnet ein vertrautes Gesicht: *„Mein Name ist Tindrael. Ich war einst die rechte Hand vom Bürgermeister. Nun, den gibt es nicht mehr. Abgeschlachtet und ermordet. Ihr wollt zu Woras. Das ist richtig. Folgt mir.“*  
    Er empfängt Dodo respektvoll, kondoliert zum Tod von Cookie und fragt nach Lindo Laut und den anderen. *„Cookie musste leider ihr Leben geben.“* – *„Ach, das ist aber bedauerlich. Wahrhaftig bedauerlich.“*  
    Nur er und Kerl überlebten den Überfall. Tindrael führt Dodo zu Voras mit den Worten: *„Mein Lord, Dodo ist nun da.“*
@@ -63,4 +63,4 @@ Tindrael fungiert als wiederkehrender Verbündeter, dessen Schicksal eng mit dem
 
 [P-03] Session 2025-04-09 @ 00:20:30 (https://www.youtube.com/watch?v=1PWdwvun5ow)
 [P-13] Session 2025-06-25 @ 00:24:24 (https://www.youtube.com/watch?v=tpkO9uGw6-I)
-[P-41] Session 2026-03-10 @ 00:40:29 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
+[P-40] Session 2026-03-10 @ 00:40:29 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)

@@ -13,4 +13,4 @@ Ein zwergischer Prinz, der im [Kampf gegen die Untoten](/events/kampf_gegen_die_
 
 # Belege
 
-[P-22] Session 2025-09-09 @ 01:23:23 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
+[P-21] Session 2025-09-09 @ 01:23:23 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)

@@ -14,4 +14,4 @@ Nach der Rettung [Liams](/npcs/liam_velora.md) und [Esterossas](/characters/este
 
 # Belege
 
-[P-57] Session 2026-07-21 @ 01:47:59 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
+[P-55] Session 2026-07-21 @ 01:47:59 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)

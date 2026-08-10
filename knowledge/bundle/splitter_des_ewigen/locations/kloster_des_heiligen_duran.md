@@ -34,4 +34,4 @@ Das Kloster wurde zum Zentrum eines gewaltsamen Konflikts: Gnolle und Grottensch
 
 [P-07a] Session 2025-05-06 @ 00:08:18 (https://www.youtube.com/watch?v=e0v6AFGd4mE)
 [P-07b] Session 2025-05-06 @ 01:19:36 (https://www.youtube.com/watch?v=e0v6AFGd4mE)
-[P-31] Session 2025-11-18 @ 01:21:07 (https://www.youtube.com/watch?v=w__ahowb9p0)
+[P-30] Session 2025-11-18 @ 01:21:07 (https://www.youtube.com/watch?v=w__ahowb9p0)

@@ -24,6 +24,6 @@ Die Gruppe steht in enger Verbindung zu **Vasul**, der ihr den Namen gab und sie
 
 # Belege
 
-[P-21] Session 2025-09-06, 00:02:44 – Vasul adressiert die Gruppe als „Gefährten von Rotunas“ und würdigt ihr gemeinsames Handeln bei der Jagd auf Kreaturen und der Ablehnung des Seelenvertrags. [YouTube](https://www.youtube.com/watch?v=vo1xnyLQDJk)
+[P-20] Session 2025-09-06, 00:02:44 – Vasul adressiert die Gruppe als „Gefährten von Rotunas“ und würdigt ihr gemeinsames Handeln bei der Jagd auf Kreaturen und der Ablehnung des Seelenvertrags. [YouTube](https://www.youtube.com/watch?v=vo1xnyLQDJk)
 
 2. Kanon-Entscheidung: Rotunas hat die Klasse Giant (Riese) – keine Elf. (Quelle: Kanon_Entscheidungen.md)

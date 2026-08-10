@@ -10,7 +10,7 @@ id: LOC_KAPELLE_DER_NERASH
 subtype: Gebäude
 ---
 
-[Die Kapelle](/locations/schreinkapelle_der_festung.md) auf dem Berg in [Ehrenfels](/locations/ehrenfels.md), erbaut von [Nerashs](/deities/nerash.md) Dienern. Hier residiert [Vitius](/npcs/vitius.md) mit zwei Wächtern und empfängt die Gruppe. Der Innenraum ist schlicht mit Särgen und einer Truhe ausgestattet. Die Atmosphäre ist unheimlich, und die Tore schließen sich magisch hinter den Besuchern.
+[Die Kapelle](/locations/kapelle_von_vorgultars_refugium.md) auf dem Berg in [Ehrenfels](/locations/ehrenfels.md), erbaut von [Nerashs](/deities/nerash.md) Dienern. Hier residiert [Vitius](/npcs/vitius.md) mit zwei Wächtern und empfängt die Gruppe. Der Innenraum ist schlicht mit Särgen und einer Truhe ausgestattet. Die Atmosphäre ist unheimlich, und die Tore schließen sich magisch hinter den Besuchern.
 
 # Belege
 

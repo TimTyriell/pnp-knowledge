@@ -1,8 +1,8 @@
 ---
 type: Location
 title: Willauch
-description: Willauch (auch Willau, Willoch, Vilau, Villauch transkribiert; kanonisch
-  Willauch) ist eine der größten und wohlhabendsten Städte der bekan…
+description: Willauch ist eine große, von gewaltigen Mauern umgebene Stadt im Südwesten
+  der bekannten Region. Sie ist eine der bedeutendsten und wohlhab…
 tags:
 - locations
 timestamp: '2026-06-04T00:00:00Z'
@@ -17,96 +17,72 @@ aliases:
 
 ## Überblick
 
-Willauch (auch Willau, Willoch, Vilau, Villauch transkribiert; kanonisch Willauch) ist eine der größten und wohlhabendsten Städte der bekannten Region. Sie liegt im Südwesten der Karte, etwa einen Tagesmarsch von der Grenzfestung Nebelwacht entfernt. Die Stadt ist von massiven Mauern umgeben und gilt als sicherer, multikultureller Knotenpunkt, der Abenteurer aller Völker anzieht. Willauch wird von einem Lord und einer Lady regiert und verfügt über eine Arena, zahlreiche Tavernen – darunter magische –, Kasernen, einen Marktplatz sowie eine Guillotine für öffentliche Hinrichtungen. Die Stadt ging als Sieger aus einem Krieg gegen Brandau hervor und verfolgt eine harte Linie gegenüber Feinden, während die eigenen Bürger gut behandelt werden. Das Stadtwappen zeigt eine eiserne Faust vor einem Stern auf grünem Grund.
+Willauch ist eine große, von gewaltigen Mauern umgebene Stadt im Südwesten der bekannten Region. Sie ist eine der bedeutendsten und wohlhabendsten Siedlungen der Zivilisation und ging kürzlich als klarer Sieger aus einem Krieg gegen das benachbarte Brandau hervor. Die Stadt gilt als Hort unbegrenzter Möglichkeiten – sie zieht Abenteurer aller Völker an, beherbergt magische Tavernen und einen geschäftigen Markt, und ist gleichermaßen für spektakuläre Arenakämpfe wie für öffentliche Hinrichtungen berüchtigt. Trotz ihrer Härte gegenüber Feinden strahlt Willauch nach innen Stabilität und Wohlstand aus und wird von ihren Bewohnern als sicherer Ort geschätzt, der seine eigenen Leute gut behandelt.
 
 ## Rolle in der Kampagne
 
-Willauch fungiert als zentraler Handlungsort und Machtzentrum, mit dem die Gruppe mehrfach interagiert:
+Willauch ist ein wiederkehrender Angelpunkt der Geschehnisse und mehrfacher Auftraggeber der Abenteurergruppe:
 
-- Erstmals wird die Stadt als Ort genannt, an dem Hal und seine Männer wegen Karawanenüberfällen mit der Todesstrafe gesucht werden [P-25].
-- Später ist Willauch Austragungsort des großen Arena-Turniers zur Feier des Sieges über Brandau, bei dem die Gruppe teilnimmt, den Sieg erringt und dabei Cookie verliert [P-27][P-30][P-31].
-- Nach dem Turnier erhalten die Überlebenden von Lord Kaledan eine Urkunde über ein Anwesen im Norden der Stadt [P-30].
-- Ein sterbender Soldat versucht, ein Dokument an sich zu bringen, und warnt eindringlich: „Das darf auf keinen Fall nach Willau gelangen“ [P-33].
-- Die Gruppe kehrt mehrfach zurück: für Kopfgeld-Auszahlungen, Recherchen in der Bibliothek und Handel, wobei sie etwa eine Woche in der Stadt verbringt [P-40].
-- Willauch erteilt den Auftrag, flüchtige Banditen zu fangen, und empfängt die Gruppe nach erfolgreicher Mission als Helden mit fürstlicher Entlohnung („jeder von uns hat zwei Säcke Gold bekommen“) [P-43].
-- Die Stadt kontrolliert Tiefwasser und setzt hohe Belohnungen für die Verteidigung der Grenze bei Nebelwacht aus [P-42][P-52].
-- Willauch sucht aktiv nach Verbliebenen aus Brandau und versucht, eine Neuformierung zu verhindern [P-53].
+- **Arena-Turnier und Urkunde** – In Willauch nahm die Gruppe an einem großen Turnier teil, bei dem sie gegen Monster, einen Werwolf und in einem dritten Dungeon gegen einen Lich kämpfte. Der Sieg wurde mit dem Tod von Cookie bitter bezahlt; als Ausgleich verlieh der Lord der Gruppe eine Urkunde über ein Anwesen nördlich der Stadt ([P-26]–[P-30]).
+- **Basis für Recherchen** – Nach dem Turnier kehrte die Gruppe für knapp eine Woche nach Willauch zurück, um ein Kopfgeld einzutreiben und Nachforschungen anzustellen. Die Stadt bot mit ihrer Bibliothek und vielen Tavernen gute Bedingungen dafür ([P-39]).
+- **Kopfgeldauftrag** – Willauch beauftragte die Gruppe mit der Jagd auf Banditen. Da die Stadt hart gegen ihre Feinde vorgeht, wurden die Gefangenen zur Aburteilung nach Willauch gebracht und die Abenteurer dort als Helden empfangen und fürstlich entlohnt ([P-42]).
+- **Verteidiger von Nebelwacht** – Die Stadt setzte hohe Belohnungen für die Verteidigung der nahen Grenzfestung Nebelwacht aus und zog Söldner und Abenteurer an diesen südwestlichen Vorposten ([P-51]).
+- **Politische Intrigen** – Ein sterbender Soldat überreichte der Gruppe ein Dokument mit der eindringlichen Warnung, es dürfe „auf keinen Fall nach Willau gelangen“ – ein Hinweis auf brisante Geheimnisse und undurchsichtige politische Spannungen ([P-32]).
+
+Neben diesen direkten Berührungspunkten schwebt Willauch stets als militärische und politische Größe im Hintergrund: Die Stadt kontrolliert Tiefwasser, verfolgt die als „Silberkerne“ bezeichneten Gruppierungen und bemüht sich, ihre neu gewonnene Dominanz über das besiegte Brandau durch Propaganda und unbarmherzige Fahndung nach flüchtigen Brandauern zu festigen ([P-41],[P-52]).
 
 ## Wichtige Merkmale
 
 ### Lage
 
-Willauch liegt im Südwesten der Region, nahe der Grenzfestung Nebelwacht – „ein Tagesmarsch von Willau entfernt“ [P-52]. Die Stadt ist über Landwege erreichbar; die Nähe zu Nebelwacht macht sie zu einem strategisch bedeutenden Akteur bei der Grenzsicherung.
+Willauch liegt im Südwesten der Region. Die Entfernung zur Grenzfestung Nebelwacht beträgt etwa einen Tagesmarsch; die Festung gilt als Bollwerk gegen die Verwüstungen, die der Götterkrieg vor zwölf Jahren im umliegenden Land hinterlassen hat ([P-51]). Die Stadt kontrolliert außerdem die Siedlung Tiefwasser und unterhält von dort aus militärische Suchaktionen ([P-41]).
 
-### Stadtbild und Infrastruktur
+### Beschaffenheit
 
-Die Stadt ist von massiven Mauern umgeben, die selbst erfahrene Reisende beeindrucken: „Sowas habt ihr bis jetzt noch nicht gesehen“ [P-27]. Innerhalb der Mauern bietet Willauch das Bild einer sicheren, wohlhabenden Großstadt: Marktstände, patrouillierende Wachen und ein lebhaftes Treiben prägen den Alltag [P-40].
+Die Stadt ist von einer massiven Mauer umgeben, die alle Besucher beeindruckt und sie selbst gegen größere Gefahren nahezu uneinnehmbar macht. Die Tore öffnen sich für Reisende und Händler meist ohne Argwohn. Im Inneren herrscht eine Mischung aus Ordnung und geschäftigem Treiben: ein großer Marktplatz, Kasernen, magische Tavernen und das ungewöhnliche Gebäude der Bibliothek – beschrieben als „ein Wüstengebäude“ – bestimmen das Stadtbild ([P-26],[P-39],[P-51]). Öffentliche Hinrichtungen finden auf einem zentralen Platz unter einer Guillotine statt; bei besonderen Anlässen stachelt ein goldener Ritter die Menge an, während der Marktschreier die Urteile verkündet ([P-26]). Die Arena liegt außerhalb der Mauern und fasst große Zuschauermengen.
 
-Bekannte Einrichtungen umfassen:
-- Eine Arena, die außerhalb der eigentlichen Stadt liegt und für große Turniere genutzt wird [P-27].
-- Mehrere Tavernen – darunter mindestens eine magische Taverne – sowie „zwielichtige Ecken“ [P-40].
-- Kasernen, einen Marktplatz und eine Guillotine für öffentliche Hinrichtungen [P-27].
-- Eine ungewöhnliche Bibliothek, die wie ein Wüstengebäude anmutet [P-40].
+Das Wappen Willauchs zeigt eine eiserne Faust vor einem Stern auf grünem Grund ([P-51]).
 
-### Atmosphäre und Sicherheit
+### Bewohner
 
-Willauch wirkt extrem sicher und wohlhabend: „Die Stadt selber wirkt auch einfach, als wäre sie extrem sicher und wohlhabend“ [P-40]. Während des Arena-Turniers herrscht eine aufgeladene, laute Stimmung; in ruhigeren Zeiten ist die Stadt lebendig, aber weniger trubelig [P-27][P-40].
-
-### Herrschaft
-
-Die Stadt wird von Lord Kaledan und Lady Lyra regiert, die während des Turniers das Fest ausrichten und Belohnungen vergeben [P-27][P-30]. Die Herrschaft repräsentiert einen machiavellistischen Ansatz: Die eigenen Bürger werden gut behandelt, gegenüber Feinden agiert Willauch jedoch rücksichtslos [P-43].
-
-### Wappen
-
-Das Wappen Willauchs zeigt eine eiserne Faust vor einem Stern auf grünem Grund [P-52].
+Willauch ist multikulturell und beherbergt Angehörige aller Völker. Die Stadt wird von einem Lord und einer Lady regiert – während des Arena-Turniers waren dies Lord Kaledan und Lady Lyra, die das Fest ausrichteten und die Urkunde für die Gruppe unterzeichneten ([P-26],[P-30]). Die Bürger behandeln die eigenen Leute gut und profitieren von der Sicherheit und dem Wohlstand; gegenüber Fremden, Besiegten und besonders Banditen zeigt die Herrschaft jedoch eine rücksichtslose Härte ([P-42]). Öffentliche Gewalt wird zelebriert, und die Guillotine ist ein fester Bestandteil der urbanen Inszenierung. Dennoch lockt die Stadt mit ihren zahlreichen Tavernen, zwielichtigen Ecken und dem Versprechen von Gold und Ruhm stetig neue Abenteurer an ([P-39]).
 
 ## Beziehungen und Verbindungen
 
-- **Brandau**: Willauch führte Krieg gegen Brandau und besiegte die Stadt vernichtend. Nach dem Sieg sucht Willauch aktiv nach Verbliebenen, setzt Kopfgelder aus und verbreitet negative Propaganda über den besiegten Gegner [P-27][P-53]. Ein Marktschreier berichtet, dass Willauch nach dem Sieg militärisch aufrüstet [P-31].
-- **Tiefwasser**: Willauch kontrolliert die Siedlung Tiefwasser und setzt Soldaten zur Verfolgung der Silberkerne ein [P-42].
-- **Nebelwacht**: Die Grenzfestung im Süden wird von Willauch aus unterstützt; die Stadt setzt hohe Belohnungen für die Verteidigung aus [P-52].
-- **Banditen**: Gegen Karawanenüberfälle geht Willauch mit harten Strafen vor. Gefangene werden öffentlich hingerichtet; auf Hal und seine Männer steht die Todesstrafe [P-25][P-27].
-- **Die Gruppe**: Die Abenteurer haben sich durch den Arena-Sieg einen Namen gemacht und wurden mehrfach von der Herrschaft Willauchs beauftragt und entlohnt. Dodo erhielt eine Urkunde über ein Anwesen, unterschrieben vom Lord [P-30]. Bei der Rückkehr mit gefangenen Banditen wird die Gruppe „als Helden empfangen und fürstlich entlohnt“ [P-43].
+- **Krieg gegen Brandau**: Willauch besiegte Brandau und feierte den Sieg mit dem großen Arena-Turnier, das explizit der Eingliederung des unterlegenen Landes diente ([P-26]). Auch nach dem Sieg verfolgt die Stadt aktiv flüchtige Brandauer und verbreitet Propaganda, die bis in Ortschaften wie Kleinringtal vordringt und dort die Stimmung gegen Brandau wendet ([P-52]).
+- **Tiefwasser und die Silberkerne**: Willauch kontrolliert Tiefwasser und entsendet von dort Soldaten, die eine als „Silberkerne“ bezeichnete Gruppierung verfolgen ([P-41]).
+- **Nebelwacht**: Die Grenzfestung ist eng an Willauch angebunden; die Stadt schrieb hohe Belohnungen für alle aus, die zur Verteidigung Nebelwachts beitragen ([P-51]).
+- **Auftraggeber für Söldner**: Die Stadt setzt regelmäßig Kopfgeldprämien aus, etwa für die Gefangennahme von Banditen, und entlohnt erfolgreiche Gruppen großzügig mit mehreren Säcken Gold ([P-39],[P-42]).
+- **Die Gruppe der Helden**: Neben der Urkunde für das Anwesen nördlich von Willauch (von den Helden als „verschlossene Freiheit“ bezeichnet) ist die Stadt mehrfacher Arbeitgeber der Abenteurer – und zugleich Ziel geheimer Machenschaften, wie das ominöse Dokument zeigt, das um jeden Preis von Willauch ferngehalten werden soll ([P-29],[P-32]).
 
 ## Chronologie
 
-[P-25] **Vor dem Beginn der Kampagne**: Der Götterkrieg vor zwölf Jahren verwüstet Landstriche zwischen den Kontinenten; Nebelwacht bleibt als einzige Barriere [9]. Willauch führt später Krieg gegen Brandau und geht als Sieger hervor [2][10].
-
-[P-27] **Session 1 (30.09.2025)**: Willauch wird als Stadt genannt, in der Hal und seine Männer wegen Karawanenüberfällen mit der Todesstrafe gesucht werden. Sie kommt als Zufluchtsort für die Flüchtlinge nicht in Frage [1].
-
-[P-30] **Session 2 (14.10.2025)**: Die Gruppe erreicht Willauch während der Turnier-Anmeldung. Sie erlebt die Stadt als extrem laute, multikulturelle Metropole mit öffentlicher Hinrichtung und Arena-Turnier [2].
-
-[P-31] **Session 3 (14.11.2025)**: Nach Ende des Arena-Turniers und Cookies Tod erhält Dodo eine Urkunde über ein Anwesen, unterschrieben vom Lord von Willauch. Dodo kommentiert: „Wir haben in Vilau an dem Turnier teilgenommen“ [3][4].
-
-[P-33] **Session 4 (18.11.2025)**: Ein Marktschreier berichtet, dass Vilau nach dem Sieg militärisch aufrüstet [4].
-
-[P-40] **Session 5 (06.01.2026)**: Ein sterbender Soldat versucht, ein Dokument an sich zu nehmen, und warnt: „Das darf auf keinen Fall nach Willau gelangen“ [5].
-
-[P-42] **Session 6 (03.03.2026)**: Die Gruppe kehrt nach Willauch zurück, kassiert Kopfgelder für Kronos und erhält zwei Säcke Gold pro Person. Die Stadt wirkt weniger trubelig als während der Arena-Spiele. Die Gruppe verbringt eine knappe Woche mit Recherchen und Handel [6].
-
-[P-43] **Session 7 (18.03.2026)**: Es wird bekannt, dass Willauch Tiefwasser kontrolliert und Soldaten zur Verfolgung der Silberkerne einsetzt [7].
-
-[P-52] **Session 8 (23.03.2026)**: Die Gruppe erhält von Willauch den Auftrag, flüchtige Banditen zu fangen und dorthin zu bringen. Diskutiert wird, ob Willauch eine „schlimme Stadt“ sei; Otis erwidert: „Ich komme aus Willauf. Ich kenne die Leute da ja. Alle ein bisschen cool.“ Die Gruppe entscheidet sich für die Auslieferung und wird in Willauch als Helden empfangen und fürstlich entlohnt [8].
-
-[P-53] **Session 9 (27.05.2026)**: Willauch wird als eine der größten Städte im Südwesten beschrieben, die hohe Belohnungen für die Verteidigung der Grenze bei Nebelwacht aussetzt. Das Wappen wird erstmals detailliert beschrieben: eiserne Faust vor einem Stern auf grünem Grund [9].
-
-11. **Session 10 (04.06.2026)**: Kaya erinnert sich, dass Willauch Brandau vernichtend besiegt hat und immer noch Verhandlungszettel mit Kopfgeldern auf Verbliebene kursieren. Es wird bestätigt, dass Willauch starkes Interesse daran hat, eine Neuformierung Brandaus zu unterbinden [P-53].
+- **Vor der Gruppe** – Der Banditenführer Hal und seine Männer wurden in Willauch (und Brandau) bereits früher wegen Karawanenüberfällen gesucht. Die Todesstrafe stand auf Hals Kopf, was ihn zu einem Leben im Verborgenen zwang ([P-24]).
+- **Sessions im Herbst 2025 (10.–11. Monat)** – Die Gruppe erreicht Willauch erstmals während des großen Turniers zur Feier des Sieges über Brandau. Sie erlebt die überfüllten Straßen, die öffentliche Hinrichtung eines Banditen und die Ankündigung als Ort, in dem „alles möglich ist“ ([P-26]). Sie meldet sich zum Arenakampf an und besteht drei gefährliche Prüfungen. Nach Cookies Tod beim Kampf gegen den Lich erhält die Gruppe vom Lord eine Urkunde über ein Anwesen ([P-29],[P-30]). Ein Marktschreier berichtet über die laufende militärische Aufrüstung der Stadt ([P-30]).
+- **Winter 2025/26** – Während einer Mission fernab von Willauch stirbt ein Soldat in den Händen der Gruppe und übergibt ein Dokument mit der letzten Warnung, dass es nicht nach Willauch gelangen dürfe ([P-32]).
+- **Session Frühjahr 2026 (3. Monat)** – Die Gruppe kehrt zurück und findet die Stadt weniger trubelig als während des Turniers, aber weiterhin wohlhabend und sicher. Sie verbringt eine knappe Woche mit der Suche nach einer Kopfgeldbelohnung und nutzt die Bibliothek für Recherchen ([P-39]).
+- **Später Frühjahr 2026** – Willauch kontrolliert Tiefwasser und seine Soldaten jagen die Silberkerne ([P-41]).
+- **Session 2026-03-23** – Im Auftrag der Stadt bringt die Gruppe gefangene Banditen nach Willauch. Die Diskussion offenbart die janusköpfige Moral der Stadt: Sie geht hart gegen Feinde vor, behandelt aber die eigenen Bürger gut. Die Abenteurer werden als Helden empfangen und fürstlich entlohnt ([P-42]).
+- **Session 2026-05-27** – Willauch stellt hohe Belohnungen für die Verteidigung von Nebelwacht aus. Das Wappen (eiserne Faust vor Stern auf Grün) und die südwestliche Lage treten deutlich hervor ([P-51]).
+- **Session 2026-06-04** – Die Propaganda der Stadt erreicht Kleinringtal; die Bewohner stehen Brandau feindselig gegenüber. Willauch sucht aktiv nach flüchtigen Brandauern ([P-52]).
 
 ## Offene Fragen
 
-- Welches Dokument sollte unter keinen Umständen nach Willauch gelangen, und wer steckte dahinter? [P-33]
-- Welche konkreten Folgen hatte die militärische Aufrüstung nach dem Sieg über Brandau? [P-31]
-- Inwiefern ist Willauch in größere politische Konflikte jenseits der Brandau-Nachwirkungen verstrickt?
+- Welche genaue Natur hat das Dokument, das um jeden Preis von Willauch ferngehalten werden soll, und welche Fraktion steckt dahinter? ([P-32])
+- Wer sind die „Silberkerne“, die von Willauchs Soldaten verfolgt werden – eine Rebellenbewegung, eine magische Fraktion oder Überreste Brandaus? ([P-41])
+- In welchem Verhältnis steht die Festung Nebelwacht genau zu Willauch? Ist sie ein direkter Außenposten der Stadt oder eine unabhängige Grenzfestung, für die Willauch lediglich Söldner anwirbt? ([P-51])
+- Wer herrscht gegenwärtig über Willauch? Lord Kaledan und Lady Lyra wurden während des Arena-Turniers genannt, doch spätere Auftraggeber werden namentlich nicht mehr spezifiziert ([P-26],[P-42],[P-51]).
+- Wie tief ist die Kontrolle Willauchs über Tiefwasser – handelt es sich um eine vollständig eingegliederte Siedlung oder ein abhängiges Schutzgebiet? ([P-41])
 
 ## Belege
 
-[P-25] Session 2025-09-30 @ 02:07:03, https://www.youtube.com/watch?v=bUT7Mc2hjUY
-[P-27] Session 2025-10-14 @ 00:03:04, https://www.youtube.com/watch?v=cUtz87UCHu4
-[P-30] Session 2025-11-14 @ 00:01:38, https://www.youtube.com/watch?v=8Khb-Y8XbKY
-[P-31] Session 2025-11-18 @ 00:08:50, https://www.youtube.com/watch?v=w__ahowb9p0
-[P-33] Session 2026-01-06 @ 02:05:00, https://www.youtube.com/watch?v=VGw81seFvbo
-[P-40] Session 2026-03-03 @ 00:09:41, https://www.youtube.com/watch?v=BRUNuNKTeOg
-[P-42] Session 2026-03-18 @ 00:04:22, https://www.youtube.com/watch?v=HHXxsASLrbQ
-[P-43] Session 2026-03-23 @ 03:09:36, https://www.youtube.com/watch?v=niVxKtdQBn0
-[P-52] Session 2026-05-27 @ 00:04:37, https://www.youtube.com/watch?v=IYYmgpqsp7E
-[P-53] Session 2026-06-04 @ 01:11:18, https://www.youtube.com/watch?v=EGNh8O7pE5Q
+[P-24] Session 2025-09-30 @ 02:07:03 – https://www.youtube.com/watch?v=bUT7Mc2hjUY
+[P-26] Session 2025-10-14 @ 00:03:04 – https://www.youtube.com/watch?v=cUtz87UCHu4
+[P-29] Session 2025-11-14 @ 00:01:38 – https://www.youtube.com/watch?v=8Khb-Y8XbKY
+[P-30] Session 2025-11-18 @ 00:08:50 – https://www.youtube.com/watch?v=w__ahowb9p0
+[P-32] Session 2026-01-06 @ 02:05:00 – https://www.youtube.com/watch?v=VGw81seFvbo
+[P-39] Session 2026-03-03 @ 00:09:41 – https://www.youtube.com/watch?v=BRUNuNKTeOg
+[P-41] Session 2026-03-18 @ 00:04:22 – https://www.youtube.com/watch?v=HHXxsASLrbQ
+[P-42] Session 2026-03-23 @ 03:09:36 – https://www.youtube.com/watch?v=niVxKtdQBn0
+[P-51] Session 2026-05-27 @ 00:04:37 – https://www.youtube.com/watch?v=IYYmgpqsp7E
+[P-52] Session 2026-06-04 @ [01:15:39] – https://www.youtube.com/watch?v=EGNh8O7pE5Q

@@ -16,4 +16,4 @@ Die Gruft beherbergt den Eingang zu [Voras](/npcs/voras.md)’ unterirdischem Re
 
 # Belege
 
-[P-41] Session 2026-03-10 @ 00:29:50 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
+[P-40] Session 2026-03-10 @ 00:29:50 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)

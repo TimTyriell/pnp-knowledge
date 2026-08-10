@@ -14,4 +14,4 @@ Ein gigantisches Monster mit lila Flammen greift an. [Sandro](/npcs/sandro.md) w
 
 # Belege
 
-[P-41] Session 2026-03-10 @ 01:33:10 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
+[P-40] Session 2026-03-10 @ 01:33:10 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)

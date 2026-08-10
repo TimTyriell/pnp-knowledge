@@ -16,4 +16,4 @@ Ein von [Cookie](/characters/cookie.md) und [Dodo](/characters/dodo.md) gestohle
 
 # Belege
 
-[P-25] Session 2025-09-30 @ 00:56:23 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[P-24] Session 2025-09-30 @ 00:56:23 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)

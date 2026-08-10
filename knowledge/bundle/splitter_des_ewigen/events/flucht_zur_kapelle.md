@@ -14,4 +14,4 @@ Nachdem das Kristallbiest die Aufmerksamkeit auf sich zieht, rennen die Helden z
 
 # Belege
 
-[P-54] Session 2026-06-10 @ 01:45:27 (https://www.youtube.com/watch?v=_3tLSiT1tck)
+[P-53] Session 2026-06-10 @ 01:45:27 (https://www.youtube.com/watch?v=_3tLSiT1tck)

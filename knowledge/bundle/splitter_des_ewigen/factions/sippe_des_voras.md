@@ -25,4 +25,4 @@ Die Sippe agierte unter dem persönlichen Kommando von Voras als kohärente Kamp
 Mit dem Tod von Voras brach die Sippe in sich zusammen. Die untote Armee verlor ihre bindende Kontrollinstanz und zerfiel, sodass kein weiterer Widerstand von ihr ausging.
 
 # Belege
-[P-47] Session 2026-04-09 @ 01:30:58 (https://www.youtube.com/watch?v=vcGkejr8_nI)
+[P-46] Session 2026-04-09 @ 01:30:58 (https://www.youtube.com/watch?v=vcGkejr8_nI)

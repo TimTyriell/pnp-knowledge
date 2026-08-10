@@ -2,7 +2,7 @@
 type: Location
 title: Ehrenfels
 description: Ehrenfels ist die hoch in den Eulenbergen gelegene Gildenhauptstadt der
-  Dwarfmaster-Gilde und zugleich die Heimatstadt der Abenteurergruppe…
+  Dwarfmaster-Gilde. Die Stadt ist in eine Senke eines Berggipfels ge…
 tags:
 - locations
 timestamp: '2026-08-04T00:00:00Z'
@@ -15,91 +15,102 @@ aliases:
 
 ## Überblick
 
-Ehrenfels ist die hoch in den Eulenbergen gelegene Gildenhauptstadt der Dwarfmaster-Gilde und zugleich die Heimatstadt der Abenteurergruppe um Lindo Laut, Esterossa, Dodo, Rotunas und Lunara Velora. Die befestigte Bergstadt liegt auf einem Berggipfel, in eine Senke eingearbeitet, und ist nur schwer zu erreichen – eine Armee könnte kaum ohne enorme Verluste bis hierher vorrücken. Sie gilt als friedlicher Ort, der selten von Konflikten heimgesucht wurde, und profitiert stark von den magischen Artefakten und Materialien der Zwerge.
+Ehrenfels ist die hoch in den Eulenbergen gelegene Gildenhauptstadt der Dwarfmaster-Gilde. Die Stadt ist in eine Senke eines Berggipfels gebaut und liegt in einer schwer zugänglichen, schneereichen Region – im Winter friert der Fluss zu und bittere Kälte herrscht. Ehrenfels gilt als friedlicher, geschäftiger Ort, der selten von Konflikten heimgesucht wird. Die Stadt ist befestigt und so positioniert, dass eine Armee nur unter großen Verlusten hierher vordringen könnte.
+
+Die Stadt ist in zwei Hauptteile gegliedert: Der rechte Teil beherbergt die höherrangigen Bewohner – meist Abenteurer der Tier-3-Klasse, die Außergewöhnliches für die Gilde geleistet haben – sowie den großen Handelsmarkt, den Kampfplatz und das Gebäude des Gildenmeisters. Der linke Teil ist eher für Ankömmlinge bestimmt und beherbergt die Kathedrale, die in den Berg eingearbeitet ist, sowie Schmieden. Daneben existiert ein altes, heruntergekommenes Gebäude einer ehemaligen Adelsfamilie, das leer steht und potenziell erworben werden könnte. Oberhalb der Stadt liegen die Kohlkopffelder.
+
+Die Stadt profitiert stark von den magischen Artefakten und Materialien der Zwerge. Menschen und Anderlinge leben hier friedlich zusammen.
 
 ## Rolle in der Kampagne
 
-Ehrenfels ist der zentrale Ankerpunkt der gesamten Kampagne. Von hier aus brechen die Helden zu ihren ersten Abenteuern auf, hierher kehren sie zurück, und hier finden entscheidende Wendepunkte statt:
+Ehrenfels ist die Heimatstadt der Abenteurergruppe und Sitz ihrer Gilde, von der aus sie zu vielen ihrer Abenteuer aufbrachen. Im Verlauf der Kampagne entwickelte sich die Stadt zu einem strategischen Knotenpunkt von entscheidender Bedeutung:
 
-- Die Stadt ist Sitz der Dwarfmaster-Gilde und Ausgangspunkt der Reise zum Außenposten, mit der die Kampagne beginnt.
-- Sie ist das Ziel der Gruppe, als sie ein wichtiges Schreiben aus Breska überbringen soll. Zunächst herrscht Verwirrung über das Ziel (der sterbende Soldat sagt zunächst „Willauch", korrigiert sich dann zu „Ehrenfels"), doch letztlich soll das Dokument dringend nach Ehrenfels gebracht werden.
-- In Ehrenfels befindet sich der fünfte Teil Vasuls, bewacht vom Gildenmeister. Erreicht dieser Teil die Stadt, kann Vasul seine volle Macht wiedererlangen – was Lindo Laut, der Teile Vasuls in sich trägt, zu einer existenziellen Bedrohung für die Stadt macht. Nox arbeitet an einem Schutzzauber, der Lindo Laut den Zutritt verwehren soll.
-- Von Ehrenfels aus existiert ein Portal ins Abyssalis, die Splitterwelt, erschaffen von Voras und Nox. Die Gruppe plant, über diesen Weg nach einer Lösung für Vasuls Problem zu suchen.
-- Während die Hauptgruppe im Abyssalis weilt, wird Ehrenfels von einer Dämoneninvasion heimgesucht. Die Stadt wird nur knapp gerettet, nicht zuletzt durch das Eingreifen der Göttin Nerash. Der Gildenmeister fällt in dieser Schlacht.
-- Nach der Schlacht ist die Stadt geschwächt und leidet unter schweren Verlusten. In der Folge ergreifen die Seraphen die Herrschaft und verdrehen die Wahrheit über die Geschehnisse der Dämonenschlacht.
+Der fünfte Teil des mächtigen Wesens Vasul befindet sich in Ehrenfels, bewacht vom Gildenmeister. Erreicht ein Teil Vasuls die Stadt, kann dieser seine volle Macht wiedererlangen. Die Gruppe wurde mehrfach gewarnt, sich von Ehrenfels fernzuhalten, um Vasuls Rückkehr nicht zu begünstigen.
+
+[Nox](/npcs/nox.md) plante, Ehrenfels mit einem Schutzzauber zu versehen, um [Lindo Laut](/characters/lindo_laut.md) – und damit Vasul – den Zutritt zur Stadt zu verwehren. Von Ehrenfels aus existiert zudem ein Portal ins Abyssalis, die Splitterwelt, erschaffen von [Voras](/npcs/voras.md) und Nox. Die Gruppe plante, über Ehrenfels ins Abyssalis zu reisen, da Lindo Laut die Stadt nicht betreten durfte.
+
+Während die Gruppe im Abyssalis war, wurde Ehrenfels von einer Dämoneninvasion heimgesucht. [Rotunas](/characters/rotunas.md) blieb zurück und verteidigte die Stadt mit tapferen Kriegern. Die Stadt überstand den Angriff weitgehend unbeschadet, erlitt aber schwere Verluste – darunter fiel der Anführer von Rotunas und seinen Freunden.
+
+Nach der Rückkehr der Gruppe wurde Ehrenfels unter die Herrschaft der Seraphen gestellt, die die Geschehnisse der Dämonenschlacht verdrehten und die Bürger nur in Andeutungen über die neuen Machthaber sprechen ließen.
 
 ## Wichtige Merkmale
 
 ### Lage und Beschaffenheit
 
-Ehrenfels liegt hoch oben auf einem Berggipfel der Eulenberge und ist in eine Senke eingearbeitet. Die Stadt ist nur schwer zu erreichen und gilt als natürliche Festung. Das Klima ist rau: Im Winter liegt Schnee, der Fluss friert zu, und die Kälte ist bitter. Die Straßen müssen vom Schnee freigekratzt werden. Von Ehrenfels aus sind die Zwergenfestung Zinn und der Außenposten jeweils etwa anderthalb Tagesreisen entfernt.
+Ehrenfels liegt hoch in den Eulenbergen, auf einem Berggipfel in eine Senke gebaut. Die Stadt ist schwer zu erreichen – eine Armee würde unter großen Verlusten scheitern. Von Ehrenfels aus sind es etwa anderthalb Tagesreisen zur Zwergenfestung Zinn, die auf ähnlicher Höhe liegt.
 
-### Stadtgliederung
+Im Winter liegt Schnee, der Fluss friert zu, und die Kälte ist bitter. Die Straßen werden notdürftig freigekratzt und der Schnee zur Seite geschoben.
 
-Die Stadt ist in zwei Teile unterteilt:
-- Der **rechte Teil** ist das wohlhabendere Viertel, in dem höherrangige Gildenmitglieder leben – meist Abenteurer der Stufe Tier 3, die der Gilde große Dienste erwiesen haben. Hier befinden sich der große Handelsmarkt, der Kampfplatz sowie das Gebäude des Gildenmeisters.
-- Der **linke Teil** ist eher für Ankömmlinge und Besucher. Hier liegen die Kathedrale, die in den Berg eingebaut ist, sowie die Schmieden. Auch ein altes, heruntergekommenes Gebäude einer ehemaligen Adelsfamilie, die ihren Ruf verloren hat, steht hier leer.
+### Einrichtungen und Gebäude
 
-### Gebäude und Orte
+Die Stadt verfügt über eine Taverne, die der Gruppe als Unterschlupf dient und von einem Wirt namens Bufrun geführt wird. Es existiert eine alte Kapelle im Ort sowie eine neue Kapelle des [Nerash](/deities/nerash.md) auf dem Berg. Ein [Rotunas](/characters/rotunas.md)-Denkmal wurde nach der Verteidigung der Stadt errichtet. Die Kathedrale ist in den Berg eingearbeitet.
 
-- **Die Taverne**: Wird von einem Wirt namens Bufrun geführt und dient der Gruppe nach der Dämonenschlacht als Unterschlupf. In kalten Wintern spielt sich das gesamte soziale Leben innerhalb der Taverne ab.
-- **Die alte Kapelle**: Ein älteres religiöses Gebäude in der Stadt.
-- **Der neue Tempel des Nerash**: Nach der Rettung der Stadt durch die Göttin auf dem Berg errichtet.
-- **Das Rotunas-Denkmal**: Wurde nach der Dämonenschlacht errichtet.
-- **Das Gebäude des Gildenmeisters**: Sitz der Gildenführung, wo der fünfte Teil Vasuls bewacht wurde.
-- **Die Kohlkopffelder**: Landwirtschaftliche Flächen oberhalb der Stadt.
+Am rechten Stadtrand erhebt sich eine riesige Statue eines Zwerges mit einem Krug in der Hand – ein sympathisches, unkonventionelles Denkmal für zwergische Verhältnisse.
 
-### Bewohner und Atmosphäre
+### Bewohner
 
-Ehrenfels beherbergt eine Mischung aus Menschen und Anderlingen, die friedlich zusammenleben. Die Stadt ist geschäftig und pulsierend, sofern nicht gerade bittere Kälte die Bewohner in die Häuser treibt. Nach der Dämoneninvasion hat sich die Stimmung grundlegend verändert: Trotz weitgehend unbeschädigter Gebäude leiden die Bewohner unter den schweren Verlusten und einer gedrückten Atmosphäre. Unter der Herrschaft der Seraphen sprechen die Bürger nur noch in Andeutungen über die neuen Machthaber und die wahren Geschehnisse der Schlacht.
+Ehrenfels wird von Menschen und Anderlingen bewohnt, die friedlich miteinander leben. Die Dwarfmaster-Gilde ist hier beheimatet und gilt als Abenteurergilde, die für hochkarätige Aufträge bekannt ist. Der Gildenmeister residiert im rechten Teil der Stadt und bewacht den fünften Teil Vasuls.
+
+Nach der Dämonenschlacht und der Übernahme durch die Seraphen ist die Stimmung in der Stadt gedrückt. Die Bürger leiden unter der verzerrten Darstellung der Ereignisse und sprechen nur in Andeutungen über die neuen Machthaber.
 
 ## Beziehungen und Verbindungen
 
-- **Dwarfmaster-Gilde**: Ehrenfels ist der Sitz der Gilde und profitiert von deren magischen Artefakten und den Erzeugnissen der Zwergenschmieden. Die Gilde ist bekannt für hochkarätige Aufträge („high-value-targets").
-- **Nox und der Gildenmeister**: Nox, einer der mächtigsten Magier der Gilde, arbeitet an einem Schutzzauber für die Stadt. Der Gildenmeister – möglicherweise Nox selbst – bewachte den fünften Teil Vasuls und fiel in der Dämonenschlacht. Gerüchten zufolge ist Nox tot oder verschwunden.
-- **Vasul**: Der fünfte Teil des zersplitterten Wesens Vasul befindet sich in Ehrenfels. Würde Lindo Laut die Stadt betreten und sich mit diesem Teil vereinen, könnte Vasul seine volle Macht erlangen. Deshalb wurde die Gruppe mehrfach gewarnt, Ehrenfels fernzubleiben.
-- **Nerash**: Die neu aufgestiegene Göttin erschien während der Dämoneninvasion und rettete die Stadt. Ihr zu Ehren wurde ein Tempel auf dem Berg errichtet.
-- **Abyssalis**: Von Ehrenfels aus führt ein von Voras und Nox erschaffenes Portal in die Splitterwelt. Die Gruppe plante, über diesen Weg ins Abyssalis zu reisen, um eine Lösung für Vasuls Einfluss auf Lindo Laut zu finden.
-- **Breska**: Die Entfernung von Breska nach Ehrenfels beträgt mehrere Tagesreisen. Nach der Zerstörung Breskas und der Rückkehr aus dem Abyssalis war Ehrenfels der nächste logische Anlaufpunkt.
-- **Willauch**: Ehrenfels und Willauch sind über Handels- und Questwege miteinander verbunden.
-- **Esterossa**: Sie blieb während der Abyssalis-Reise in Ehrenfels zurück, um einen neuen Freund zu bewachen.
+- **[Dwarfmaster-Gilde](/factions/gilde_von_ehrenfels.md):** Ehrenfels ist Sitz und Hauptquartier der Abenteurergilde, der die Gruppe angehört. Die Gilde profitiert von den magischen Artefakten und Materialien der Zwerge.
+- **[Zwerge](/npcs/zwerge_in_cornivum.md):** Die nahegelegene Zwergenfestung Zinn ist nur etwa anderthalb Tagesreisen entfernt. Die Zwerge unterstützen Ehrenfels mit magischen Artefakten und Materialien.
+- **[Vasul](/deities/vharzul.md):** Der fünfte Teil Vasuls befindet sich in Ehrenfels, bewacht vom Gildenmeister. Dies macht die Stadt zu einem kritischen Punkt für Vasuls Rückkehr zur vollen Macht.
+- **[Lindo Laut](/characters/lindo_laut.md):** Lindo Laut darf Ehrenfels nicht betreten, da er Teile Vasuls in sich trägt. Ein Schutzzauber sollte dies sicherstellen.
+- **[Nox](/npcs/nox.md):** Nox plante, einen Schutzzauber über Ehrenfels zu legen. Er erschuf gemeinsam mit [Voras](/npcs/voras.md) ein Portal von Ehrenfels ins Abyssalis. Über Nox' Schicksal kursieren Gerüchte, er sei tot oder verschwunden.
+- **[Voras](/npcs/voras.md):** Erschuf gemeinsam mit Nox das Portal ins Abyssalis.
+- **[Rotunas](/characters/rotunas.md):** Blieb in Ehrenfels zurück, um die Stadt während der Dämoneninvasion zu verteidigen, während die Gruppe ins Abyssalis reiste.
+- **[Esterossa](/characters/esterossa.md):** Hielt sich in Ehrenfels auf, um einen neuen Freund zu bewachen, während die Gruppe in [Willauch](/locations/willauch.md) war.
+- **[Prinzessin](/npcs/prinzessin_von_brandau.md):** Wurde nach ihrer Rettung in Ehrenfels in Sicherheit gebracht.
 
 ## Chronologie
 
-[P-09] Die unbenannte Stadt ist zu Beginn der Kampagne Ausgangspunkt und Rückkehrort nach dem Training. Die Gruppe reist von hier zum Außenposten und kehrt zurück.
-[P-15] Nach den ersten Abenteuern kehrt die Gruppe im Winter nach Ehrenfels zurück. Schnee liegt, der Fluss friert zu, die Kälte ist bitter. Sie erhalten als Anerkennung für ihre Taten ein kostenloses Bauernhaus als Quartier.
-[P-31] Ein schwer verwundeter Soldat mit einem wichtigen Schreiben soll die Gruppe nach Ehrenfels führen. Zunächst herrscht Verwirrung, ob das Ziel Willauch oder Ehrenfels ist; schließlich wird Ehrenfels als Bestimmungsort bestätigt.
-[P-33] Lindo Laut offenbart der Gruppe aus einer Notiz Voras‘, dass ein fünfter Teil Vasuls in Ehrenfels vom Gildenmeister bewacht wird. Die Erkenntnis überschattet die Siegesstimmung nach einem harten Kampf.
-[P-34] Die Gruppe – mit Ausnahme von Rotunas und Esterossa – begibt sich nach Willauch, um in der dortigen Bibliothek zu recherchieren und die Woche auf die Fertigstellung eines Gegenmittels zu warten. Ehrenfels bleibt ihr Heimathafen.
-[P-35] Rotunas begibt sich nach dem Verlust seines Arms zur Zwergenfestung Zinn nahe Ehrenfels und erhält dort einen mechanischen Ersatz. Er bleibt über einen Monat bei den Zwergen.
-[P-36] Die Gruppe entscheidet sich gegen einen langen Umweg und für eine riskante Lösung: Via Ehrenfels ins Abyssalis zu reisen. Rotunas soll ein Portal dorthin öffnen. Lindo Laut darf Ehrenfels nicht betreten.
-[P-38] Zeitgleich werden neue Abenteurer durch einen ungewöhnlichen Aufruf nach Ehrenfels gelockt – sie sollen für einige Wochen in der Stadt verweilen und werden dafür bezahlt. Erfahrenen Beobachtern kommt dies merkwürdig vor.
-[P-40] Während die Hauptgruppe im Abyssalis ist, wird Ehrenfels von einer Dämoneninvasion heimgesucht. Rotunas und weitere Verteidiger stellen sich der Schlacht. Die Göttin Nerash erscheint und rettet die Stadt, doch der Gildenmeister fällt und viele Dorfbewohner und Abenteurer sterben. Die Stadt ist geschwächt.
-[P-42] Nach ihrer Rückkehr aus dem Abyssalis und der zerstörten Stadt Breska zieht die Gruppe nach Ehrenfels – in Unkenntnis der dortigen Geschehnisse. Sie finden eine Stadt vor, die äußerlich weitgehend unbeschadet ist, aber unter den Verlusten und der neuen Herrschaft der Seraphen leidet. Die Seraphen verzerren die Wahrheit über die Dämonenschlacht. Die Bürger wagen es nur in Andeutungen, über die neuen Machthaber zu sprechen.
+**Frühe Sessions:** Ehrenfels ist Ausgangspunkt der Gruppe. Sie reist von hier zum Außenposten und kehrt nach dem Training zurück. Die Stadt ist Sitz der Dwarfmaster-Gilde und den Charakteren als Heimatstadt vertraut.
+
+**Session 2026-01-06:** Eine wichtige Botschaft sollte dringend nach Ehrenfels gebracht werden. Der überlebende Soldat nennt zunächst Ehrenfels als Ziel, widerspricht dann aber dieser Aussage – es bleibt unklar, ob die Botschaft tatsächlich für Ehrenfels bestimmt war.
+
+**Session 2026-01-13:** Die Gruppe will mit dem wichtigen Schreiben zügig nach Ehrenfels zurückkehren. Dodo erwähnt, dass Lindo Laut ein Portal zum Trainingsgelände der Gilde in Ehrenfels öffnen könne.
+
+**Session 2026-01-20:** Die Gruppe erfährt aus einer Notiz, dass der fünfte Teil Vasuls in Ehrenfels liegt, bewacht vom Gildenmeister. Dies wirft Fragen über die Gilde und ihre Rolle auf.
+
+**Session 2026-01-27:** Rotunas und Esterossa brechen von Ehrenfels zur Zwergenfestung auf – eine Reise von anderthalb Tagen.
+
+**Session 2026-02-17:** Nox warnt die Gruppe eindringlich, sich von Ehrenfels fernzuhalten. Er plant, einen Schutzzauber über die Stadt zu legen, um Lindo Laut und Vasul am Betreten zu hindern.
+
+**Session 2026-03-03:** Esterossa hält sich in Ehrenfels auf, um einen neuen Freund zu bewachen, während die Gruppe in Willauch ist.
+
+**Session 2026-03-18:** Rotunas erwähnt Ehrenfels gegenüber Harald als Heimatsiedlung der Gruppe und Sitz ihrer Gilde.
+
+**Session 2026-03-24:** Die Prinzessin wurde nach ihrer Rettung in Ehrenfels in Sicherheit gebracht. Von hier existiert ein Portal ins Abyssalis. Die Gruppe entscheidet sich, über Ehrenfels ins Abyssalis zu reisen, da Lindo Laut die Stadt nicht betreten darf.
+
+**Session 2026-04-09:** Ehrenfels wird von einer Dämoneninvasion heimgesucht. Die Gilde ruft Abenteurer zusammen, um in der Stadt zu verweilen – ein ungewöhnlicher Auftrag, der für Rotunas und andere Eingeweihte merkwürdig erscheint.
+
+**Session 2026-07-29:** Rotunas verteidigt die Stadt mit tapferen Kriegern gegen die Dämonen. Der Anführer von Rotunas und seinen Freunden fällt. Die Stadt übersteht den Angriff mit geringen Gebäudeschäden, aber schweren Verlusten und gedrückter Stimmung. Ein Rotunas-Denkmal wird errichtet, die neue Kapelle des Nerash existiert nun auf dem Berg.
+
+**Session 2026-08-04:** Ehrenfels steht unter der Herrschaft der Seraphen, die die Geschehnisse der Dämonenschlacht verdrehen. Die Gruppe nutzt die Taverne des Bufrun als Unterschlupf. Die Bürger wagen es nur in Andeutungen, über die neuen Machthaber zu sprechen.
 
 ## Offene Fragen
 
-- Was genau geschah während der Dämonenschlacht im Detail, und wie griff Nerash ein?
-- Sind die Hauptcharaktere über den Fall des Gildenmeisters und Nox‘ Schicksal informiert, als sie nach Ehrenfels zurückkehren?
-- Welche Rolle spielte die Gilde bei den ungewöhnlichen Quest-Aufrufen, neue Abenteurer nach Ehrenfels zu locken?
-- Ist das Portal ins Abyssalis nach der Dämoneninvasion noch intakt?
-- War Nox‘ Schutzzauber gegen Lindo Laut erfolgreich oder wurde er durch die Ereignisse der Schlacht überholt?
-- Welche Absicht verfolgen die Seraphen mit ihrer verzerrten Darstellung der Schlacht, und wie lange wird ihre Herrschaft anhalten?
+- Welche Rolle genau spielt der Gildenmeister bei der Bewachung des fünften Vasul-Teils?
+- Was geschah mit Nox – ist er tot oder nur verschwunden?
+- Welche Ziele verfolgen die Seraphen in Ehrenfels, und wie lange wird ihre Herrschaft andauern?
+- Warum rief die Gilde vor der Dämoneninvasion Abenteurer zusammen, nur um in der Stadt zu verweilen? Dies war ein in der Geschichte Ehrenfels' nie dagewesener Vorgang.
 
 ## Belege
 
-[P-09] Session 2025-05-27, ~02:04:31 – Rückkehr in die unbenannte Stadt/Gilde (https://www.youtube.com/watch?v=bamCIB_CkR8)
-[P-15] Session 2025-07-22, ~00:02:26 – Beschreibung des Gildenhauptquartiers auf dem Berg (https://www.youtube.com/watch?v=BRRCUgW4xRo)
-[P-31] Session 2025-11-18, ~00:00:00 – Winter in Ehrenfels; Schnee, gefrierender Fluss, kostenloses Quartier (https://www.youtube.com/watch?v=w__ahowb9p0)
-[P-33] Session 2026-01-06, ~01:25:47 – Soldat nennt Ehrenfels als Ziel der Botschaft (https://www.youtube.com/watch?v=VGw81seFvbo)
-[P-34] Session 2026-01-13, ~00:24:28 – Gruppe will Schreiben nach Ehrenfels bringen (https://www.youtube.com/watch?v=w4LB1s9_3rs)
-[P-35] Session 2026-01-20, ~02:05:00 – Fünfter Teil Vasuls in Ehrenfels, vom Gildenmeister bewacht (https://www.youtube.com/watch?v=H3ckYdTv4y8)
-[P-36] Session 2026-01-27, ~00:01:29 – Heimatstadt, Sitz der Gilde, 1,5 Tagesreisen entfernt (https://www.youtube.com/watch?v=9RzvnnWzV7E)
-[P-38] Session 2026-02-17, ~01:29:20 – Nox plant Schutzzauber für Ehrenfels gegen Lindo Laut (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
-[P-40] Session 2026-03-03, ~01:00:26 – Esterossa bleibt in Ehrenfels, um Freund zu bewachen (https://www.youtube.com/watch?v=BRUNuNKTeOg)
-[P-42] Session 2026-03-18, ~00:11:55 – Rotunas nennt Ehrenfels als Heimatsiedlung (https://www.youtube.com/watch?v=HHXxsASLrbQ)
-[P-44] Session 2026-03-24, ~02:05:28 – Portal von Voras/Nox von Ehrenfels ins Abyssalis; Lindo darf Stadt nicht betreten (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
-[P-47] Session 2026-04-09, ~00:06:50 – Bergstadt auf Eulenbergen, schwer erreichbar, seltsame Quest-Aufrufe (https://www.youtube.com/watch?v=vcGkejr8_nI)
-[P-53] Session 2026-06-04, ~02:37:01 – Dämoneninvasion, Nerash rettet Stadt, Gildenmeister tot, Stadt geschwächt (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
-[S1-01-A] Session 2026-07-29, ~00:00:01 – Stadt unbeschadet aber unter Verlusten; Taverne, Kapelle, Tempel, Denkmal, Kohlkopffelder (https://www.youtube.com/watch?v=umGyKLkefJI)
-[S1-02-A] Session 2026-08-04, ~00:07:38 – Seraphen herrschen, verdrehen Wahrheit; Bürger ängstlich; Taverne als Unterschlupf (https://www.youtube.com/watch?v=qRj2t3wQHfs)
+[P-09] Session 2025-05-27 @ 02:04:31 (https://www.youtube.com/watch?v=bamCIB_CkR8)
+[P-15] Session 2025-07-22 @ 00:02:26 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
+[P-30] Session 2025-11-18 @ 00:00:00 (https://www.youtube.com/watch?v=w__ahowb9p0)
+[P-32] Session 2026-01-06 @ 01:25:47 (https://www.youtube.com/watch?v=VGw81seFvbo)
+[P-33] Session 2026-01-13 @ 00:24:28 (https://www.youtube.com/watch?v=w4LB1s9_3rs)
+[P-34] Session 2026-01-20 @ 02:05:00 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
+[P-35] Session 2026-01-27 @ 00:01:29 (https://www.youtube.com/watch?v=9RzvnnWzV7E)
+[P-37] Session 2026-02-17 @ 01:29:20 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
+[P-39] Session 2026-03-03 @ 01:00:26 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
+[P-41] Session 2026-03-18 @ 00:11:55 (https://www.youtube.com/watch?v=HHXxsASLrbQ)
+[P-43] Session 2026-03-24 @ 02:05:28 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
+[P-46] Session 2026-04-09 @ 00:06:50 (https://www.youtube.com/watch?v=vcGkejr8_nI)
+[S1-01-A] Session 2026-07-29 @ 00:00:01 (https://www.youtube.com/watch?v=umGyKLkefJI)
+[S1-02-A] Session 2026-08-04 @ 00:07:38 (https://www.youtube.com/watch?v=qRj2t3wQHfs)

@@ -14,4 +14,4 @@ Während der Timer des Rituals auf 6 von 10 steht und das tiefe Brummen lauter w
 
 # Belege
 
-[P-46] Session 2026-04-07 @ 01:48:35 (https://www.youtube.com/watch?v=MAuQPMNY548)
+[P-45] Session 2026-04-07 @ 01:48:35 (https://www.youtube.com/watch?v=MAuQPMNY548)

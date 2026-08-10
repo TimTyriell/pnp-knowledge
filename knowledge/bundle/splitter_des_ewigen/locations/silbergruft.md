@@ -14,4 +14,4 @@ Die Silbergruft ist eine verlassene Silbermine südlich der Berge von [Ehrenfels
 
 # Belege
 
-[P-39] Session 2026-02-24 @ 00:07:20 (https://www.youtube.com/watch?v=WOFArbwDDIQ)
+[P-38] Session 2026-02-24 @ 00:07:20 (https://www.youtube.com/watch?v=WOFArbwDDIQ)

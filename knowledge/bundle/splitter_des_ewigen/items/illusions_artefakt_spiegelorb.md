@@ -14,4 +14,4 @@ Diese handballgroße, silberne Kugel schwebte in der tiefsten Minenebene und wur
 
 # Belege
 
-[P-39] Session 2026-02-24 @ 02:14:02 (https://www.youtube.com/watch?v=WOFArbwDDIQ)
+[P-38] Session 2026-02-24 @ 02:14:02 (https://www.youtube.com/watch?v=WOFArbwDDIQ)

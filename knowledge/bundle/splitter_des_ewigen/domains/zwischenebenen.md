@@ -23,4 +23,4 @@ Lindo Lauts Kräfte sind mit den Zwischenebenen verknüpft. Dies deutet darauf h
 
 # Belege
 
-[P-33] Session 2026-01-06 @ 01:41:24 (https://www.youtube.com/watch?v=VGw81seFvbo)
+[P-32] Session 2026-01-06 @ 01:41:24 (https://www.youtube.com/watch?v=VGw81seFvbo)

@@ -13,4 +13,4 @@ Eine Wächterin der Festung [Boragdil](/locations/boragdil.md), die sich als Die
 
 # Belege
 
-[P-45] Session 2026-03-31 @ 02:18:29 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
+[P-44] Session 2026-03-31 @ 02:18:29 (https://www.youtube.com/watch?v=Ee-K84wcxLM)

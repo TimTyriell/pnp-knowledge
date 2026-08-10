@@ -14,4 +14,4 @@ Das Gewölbe der Wunder ist ein modularer, magischer Dungeon, der von Harkarus v
 
 # Belege
 
-[P-46] Session 2026-04-07 @ 00:00:00 (https://www.youtube.com/watch?v=MAuQPMNY548)
+[P-45] Session 2026-04-07 @ 00:00:00 (https://www.youtube.com/watch?v=MAuQPMNY548)

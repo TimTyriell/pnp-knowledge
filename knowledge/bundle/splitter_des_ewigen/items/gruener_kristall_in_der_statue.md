@@ -14,4 +14,4 @@ Das Artefakt im Inneren der Statue, das sie zu bewegen schien und eine unheimlic
 
 # Belege
 
-[P-33] Session 2026-01-06 @ 01:12:40 (https://www.youtube.com/watch?v=VGw81seFvbo)
+[P-32] Session 2026-01-06 @ 01:12:40 (https://www.youtube.com/watch?v=VGw81seFvbo)

@@ -14,4 +14,4 @@ Ein von [Horatio](/npcs/horatio.md) gefundenes Artefakt, das die Tore im Keller 
 
 # Belege
 
-[P-30] Session 2025-11-14 @ 00:52:21 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)
+[P-29] Session 2025-11-14 @ 00:52:21 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)

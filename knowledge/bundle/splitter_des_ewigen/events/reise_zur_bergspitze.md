@@ -14,4 +14,4 @@ Die Gruppe entscheidet sich, ohne den Umweg zum Tor direkt zur [Kapelle](/locati
 
 # Belege
 
-[P-19] Session 2025-08-20 @ 01:06:44 (https://www.youtube.com/watch?v=-XbO3FLSL_I)
+[P-18] Session 2025-08-20 @ 01:06:44 (https://www.youtube.com/watch?v=-XbO3FLSL_I)

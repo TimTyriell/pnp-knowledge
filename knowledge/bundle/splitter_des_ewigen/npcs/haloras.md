@@ -13,4 +13,4 @@ Haloras ist ein Ifriti und dient [Adeliga](/npcs/adeliga_vom_haus_des_loewen.md)
 
 # Belege
 
-[P-40] Session 2026-03-03 @ 00:31:59 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
+[P-39] Session 2026-03-03 @ 00:31:59 (https://www.youtube.com/watch?v=BRUNuNKTeOg)

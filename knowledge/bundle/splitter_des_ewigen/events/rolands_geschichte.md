@@ -14,4 +14,4 @@ subtype: Entdeckung
 
 # Belege
 
-[P-25] Session 2025-09-30 @ 01:50:28 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[P-24] Session 2025-09-30 @ 01:50:28 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)

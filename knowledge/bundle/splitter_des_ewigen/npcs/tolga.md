@@ -1,15 +1,15 @@
 ---
 type: NPC
 title: Tolga
-description: Ein griesgrämiger alter Halbling, der die Neuankömmlinge offen verspottet.
-  Er zeigt auf Sanges Maske und beschwert sich, dass er Leute nich…
+description: Ein alter, grantiger Halbling auf der Farm. Er ist sofort misstrauisch
+  gegenüber der Gruppe und beschimpft Sange wegen seiner Maske mit den…
 tags:
 - npcs
 timestamp: '2026-07-10T00:00:00Z'
 id: NPC_TOLGA
 ---
 
-Ein griesgrämiger alter Halbling, der die Neuankömmlinge offen verspottet. Er zeigt auf [Sanges Maske](/items/sanges_maske.md) und beschwert sich, dass er Leute nicht mag, die ihr Gesicht verstecken. Außerdem erwähnt er die frühere, gescheiterte Gruppe und stichelt damit gegen [Talron](/npcs/talron.md).
+Ein alter, grantiger Halbling auf der Farm. Er ist sofort misstrauisch gegenüber der Gruppe und beschimpft [Sange](/characters/sange.md) wegen seiner Maske mit den Worten: "Ich mag nicht, wenn Leute ihr Gesicht verstecken." Er enthüllt vor allen, dass [Talrons](/npcs/talron.md) vorherige Gruppe umgekommen sei, was Talron sichtlich verärgert. Er stichelt weiter, bis Talron ihn zurückweist.
 
 # Belege
 

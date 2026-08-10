@@ -26,32 +26,32 @@ Diese duale Rolle – Zuschauerinteraktion und göttliches Wirken in der Spielwe
 
 ## Wichtige Merkmale
 
-Die Goblingötter manifestieren sich in der Spielwelt vor allem durch **grüne Blitze**. Diese visuelle Signatur taucht mehrfach auf: 2025-04-30 hält die Dungeon-Master-Hand einen grünen Blitz auf, der das Schiff treffen sollte [P-06]; 2025-05-06 macht ein grüner Blitz die Feinde auf die Helden aufmerksam [P-07]; 2025-09-23 trifft ein grüner Blitz Cookie und verleiht ihr die Fähigkeit „Heilige Pfeile“ [P-24]; 2025-10-21 manifestieren sie sich in der Arena als grüne Blitze von oben [P-28].
+Die Goblingötter manifestieren sich in der Spielwelt vor allem durch **grüne Blitze**. Diese visuelle Signatur taucht mehrfach auf: 2025-04-30 hält die Dungeon-Master-Hand einen grünen Blitz auf, der das Schiff treffen sollte [P-06]; 2025-05-06 macht ein grüner Blitz die Feinde auf die Helden aufmerksam [P-07]; 2025-09-23 trifft ein grüner Blitz Cookie und verleiht ihr die Fähigkeit „Heilige Pfeile“ [P-23]; 2025-10-21 manifestieren sie sich in der Arena als grüne Blitze von oben [P-27].
 
 Ihr Wirken ist **unberechenbar und richtungsneutral**. Sie können:
 - Goblins im Kampf stärken („Die Goblingötter sind uns gnädig. Nun werden wir euch zerfleischen.“) [P-05]
-- Einzelne Charaktere mit zusätzlichen Fähigkeiten oder Angriffen ausstatten, z.B. Cookie mit Holy Arrows [P-24] oder Esterossa mit einem Angriffsvorteil [P-28]
-- Gegnerische Aktionen behindern, etwa Cookies Ranken auflösen [P-28]
+- Einzelne Charaktere mit zusätzlichen Fähigkeiten oder Angriffen ausstatten, z.B. Cookie mit Holy Arrows [P-23] oder Esterossa mit einem Angriffsvorteil [P-27]
+- Gegnerische Aktionen behindern, etwa Cookies Ranken auflösen [P-27]
 - Durch Blitze in Schlachten eingreifen und Gegner oder Verbündete zufällig treffen [P-05]
 - Unpassende Momente erzeugen, wie einen Bugbären zum Niesen bringen und von der Mauer fallen lassen [P-04]
 - Benennungen vornehmen – so wird die Katze in „Günther“ umbenannt [P-06]
-- Inspirationspunkte gewähren [P-30]
-- Den Briefboten leiten [P-30]
+- Inspirationspunkte gewähren [P-29]
+- Den Briefboten leiten [P-29]
 
-Das Pantheon scheint **kollektiv und unpersönlich** zu agieren. Anders als bei individuellen Gottheiten treten die Goblingötter stets als Gruppe auf, ohne dass einzelne namentlich hervorgehoben würden. Dodo spricht zwar von seinem „Goblin-Gott-Verstärker“ [P-25], was auf eine persönlichere Beziehung zu einer bestimmten Gottheit hindeuten könnte, aber auch hier bleibt unklar, ob es sich um eine spezifische Entität oder das Pantheon als Ganzes handelt.
+Das Pantheon scheint **kollektiv und unpersönlich** zu agieren. Anders als bei individuellen Gottheiten treten die Goblingötter stets als Gruppe auf, ohne dass einzelne namentlich hervorgehoben würden. Dodo spricht zwar von seinem „Goblin-Gott-Verstärker“ [P-24], was auf eine persönlichere Beziehung zu einer bestimmten Gottheit hindeuten könnte, aber auch hier bleibt unklar, ob es sich um eine spezifische Entität oder das Pantheon als Ganzes handelt.
 
-**Dodos Goblin-Gott-Verstärker**: Wenn Dodo seinen „Unstoppable“-Modus aktiviert, erhält er einen „ganz bösen Blick“ und gesteigerte kämpferische Fähigkeiten. Die Äußerlichkeiten seiner Verwandlung sind subtil – „Also äußerlich macht sich das nicht wirklich bemerkbar. Jetzt bin ich wütend. Das ist eher so das Mindset, das sich ein bisschen ändert.“ [P-25]
+**Dodos Goblin-Gott-Verstärker**: Wenn Dodo seinen „Unstoppable“-Modus aktiviert, erhält er einen „ganz bösen Blick“ und gesteigerte kämpferische Fähigkeiten. Die Äußerlichkeiten seiner Verwandlung sind subtil – „Also äußerlich macht sich das nicht wirklich bemerkbar. Jetzt bin ich wütend. Das ist eher so das Mindset, das sich ein bisschen ändert.“ [P-24]
 
 ## Beziehungen und Verbindungen
 
 ### Cookie
-Cookie scheint eine besondere Verbindung zu den Goblingöttern zu haben. 2025-09-23 ruft sie im Kampf gezielt den „Goblin Gott“ an, woraufhin sie von einem grünen Blitz getroffen wird und die Fähigkeit Holy Arrows erhält. [P-24] Sie nutzt diesen Bonus, um zwei Untote zu töten. Ob Cookies Bindung an die Goblingötter auf eine aktive Verehrung oder eine einmalige Gunst zurückgeht, bleibt unklar. Cookie selbst agiert dabei zwischen Ehrfurcht und Pragmatismus – sie bittet um Hilfe, als wäre die Göttergunst eine verfügbare, wenn auch unzuverlässige Ressource.
+Cookie scheint eine besondere Verbindung zu den Goblingöttern zu haben. 2025-09-23 ruft sie im Kampf gezielt den „Goblin Gott“ an, woraufhin sie von einem grünen Blitz getroffen wird und die Fähigkeit Holy Arrows erhält. [P-23] Sie nutzt diesen Bonus, um zwei Untote zu töten. Ob Cookies Bindung an die Goblingötter auf eine aktive Verehrung oder eine einmalige Gunst zurückgeht, bleibt unklar. Cookie selbst agiert dabei zwischen Ehrfurcht und Pragmatismus – sie bittet um Hilfe, als wäre die Göttergunst eine verfügbare, wenn auch unzuverlässige Ressource.
 
 ### Dodo
-Dodo führt den „Goblin-Gott-Verstärker“, eine wiederkehrende Mechanik, die ihm im Kampf gesteigerte Kräfte verleiht. [P-25] Die Formulierung „der sowieso schon vergrößerte Goblin-Gott-Verstärker Dodo“ deutet darauf hin, dass dies keine einmalige Segnung ist, sondern ein stärker habitualisierter Zustand. Sein Kampfstil entwickelte sich über die Zeit: Zunächst führte er ein Breitschwert, wechselte auf Tier 2 zu einem Streitkolben und trägt heute „Zebros Zorn“, eine heilige Waffe, die die Gruppe in der Seelenwacht-Session erhielt.
+Dodo führt den „Goblin-Gott-Verstärker“, eine wiederkehrende Mechanik, die ihm im Kampf gesteigerte Kräfte verleiht. [P-24] Die Formulierung „der sowieso schon vergrößerte Goblin-Gott-Verstärker Dodo“ deutet darauf hin, dass dies keine einmalige Segnung ist, sondern ein stärker habitualisierter Zustand. Sein Kampfstil entwickelte sich über die Zeit: Zunächst führte er ein Breitschwert, wechselte auf Tier 2 zu einem Streitkolben und trägt heute „Zebros Zorn“, eine heilige Waffe, die die Gruppe in der Seelenwacht-Session erhielt.
 
 ### Esterossa
-In der Arena 2025-10-21 wird Esterossa von einem grünen Blitz getroffen und gestärkt. Sie reagiert mit Dankbarkeit: „Dankeschön, Koblen-Götter. Das fühlt sich prima an.“ [P-28] Beachtenswert ist die quasi-familiäre Anrede „Koblen-Götter“, die bei keinem anderen Charakter so auftaucht und auf eine unverkrampfte, fast vertrauliche Haltung schließen lässt.
+In der Arena 2025-10-21 wird Esterossa von einem grünen Blitz getroffen und gestärkt. Sie reagiert mit Dankbarkeit: „Dankeschön, Koblen-Götter. Das fühlt sich prima an.“ [P-27] Beachtenswert ist die quasi-familiäre Anrede „Koblen-Götter“, die bei keinem anderen Charakter so auftaucht und auf eine unverkrampfte, fast vertrauliche Haltung schließen lässt.
 
 ### Valeria, Rotunas und die Gruppe
 Die übrigen Gruppenmitglieder erleben die Goblingötter primär als externe, oft unberechenbare Kraft, die in ihr Leben eingreift. Niemand zeigt aktive Anbetung oder ritualisierte Verehrung – die Götter werden akzeptiert, mitunter gefürchtet, aber nicht angebetet.
@@ -71,13 +71,13 @@ In Breschka rufen die Goblins während der Schlacht die Goblingötter an und emp
 
 **Session 2025-05-06**: Der Chat wird erneut als Goblingötter angerufen. In dieser Session gewähren sie der Gruppe mehrmals Gunst in Form von Hoffnungspunkten, verursachen aber auch einen grünen Blitz, der die Feinde auf die Helden aufmerksam macht. [P-07]
 
-**Session 2025-09-23**: Cookie ruft im Kampf spezifisch den „Goblin Gott“ an und wird von einem grünen Blitz getroffen, der ihr die Fähigkeit Heilige Pfeile (Holy Arrows) verleiht. Mit dieser zusätzlichen Macht tötet sie zwei Untote. [P-24]
+**Session 2025-09-23**: Cookie ruft im Kampf spezifisch den „Goblin Gott“ an und wird von einem grünen Blitz getroffen, der ihr die Fähigkeit Heilige Pfeile (Holy Arrows) verleiht. Mit dieser zusätzlichen Macht tötet sie zwei Untote. [P-23]
 
-**Session 2025-09-30**: Dodo aktiviert regelmäßig seinen „Goblin-Gott-Verstärker“, der ihm einen „bösen Blick“ und gesteigerte Fähigkeiten verleiht. [P-25] Sein Kampfstil ist zu diesem Zeitpunkt längst auf den Streitkolben umgestellt; später wird er „Zebros Zorn“ erhalten.
+**Session 2025-09-30**: Dodo aktiviert regelmäßig seinen „Goblin-Gott-Verstärker“, der ihm einen „bösen Blick“ und gesteigerte Fähigkeiten verleiht. [P-24] Sein Kampfstil ist zu diesem Zeitpunkt längst auf den Streitkolben umgestellt; später wird er „Zebros Zorn“ erhalten.
 
-**Session 2025-10-21**: In der Arena manifestieren sich die Goblingötter als grüne Blitze, die von oben herabschlagen. Esterossa erhält einen Angriffsvorteil, während Cookies Ranken aufgelöst werden – die Götter agieren richtungsneutral, unterstützen und behindern gleichermaßen. [P-28]
+**Session 2025-10-21**: In der Arena manifestieren sich die Goblingötter als grüne Blitze, die von oben herabschlagen. Esterossa erhält einen Angriffsvorteil, während Cookies Ranken aufgelöst werden – die Götter agieren richtungsneutral, unterstützen und behindern gleichermaßen. [P-27]
 
-**Session 2025-11-14**: Die Goblingötter leiten den Briefboten und gewähren der Gruppe einen Inspirationspunkt. [P-30] Dies ist der bislang letzte dokumentierte Eingriff.
+**Session 2025-11-14**: Die Goblingötter leiten den Briefboten und gewähren der Gruppe einen Inspirationspunkt. [P-29] Dies ist der bislang letzte dokumentierte Eingriff.
 
 ## Offene Fragen
 
@@ -93,7 +93,7 @@ In Breschka rufen die Goblins während der Schlacht die Goblingötter an und emp
 [P-05] Session 2025-04-23 @ 01:11:46 (https://www.youtube.com/watch?v=z3C-bewKqUs)
 [P-06] Session 2025-04-30 @ 00:12:43 (https://www.youtube.com/watch?v=fsCOiSkKKTE)
 [P-07] Session 2025-05-06 @ 00:02:04 (https://www.youtube.com/watch?v=e0v6AFGd4mE)
-[P-24] Session 2025-09-23 @ 01:39:56 (https://www.youtube.com/watch?v=DGzfqVigS0g)
-[P-25] Session 2025-09-30 @ 00:02:08 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
-[P-28] Session 2025-10-21 @ 00:20:53 (https://www.youtube.com/watch?v=sxFhbtwoefA)
-[P-30] Session 2025-11-14 @ 01:27:25 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)
+[P-23] Session 2025-09-23 @ 01:39:56 (https://www.youtube.com/watch?v=DGzfqVigS0g)
+[P-24] Session 2025-09-30 @ 00:02:08 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[P-27] Session 2025-10-21 @ 00:20:53 (https://www.youtube.com/watch?v=sxFhbtwoefA)
+[P-29] Session 2025-11-14 @ 01:27:25 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)

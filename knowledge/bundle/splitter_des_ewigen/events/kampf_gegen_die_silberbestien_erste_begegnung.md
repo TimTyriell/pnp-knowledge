@@ -14,4 +14,4 @@ Auf der mittleren Minenebene werden [Dodo](/characters/dodo.md), Lindo, [Nyrella
 
 # Belege
 
-[P-39] Session 2026-02-24 @ 01:18:56 (https://www.youtube.com/watch?v=WOFArbwDDIQ)
+[P-38] Session 2026-02-24 @ 01:18:56 (https://www.youtube.com/watch?v=WOFArbwDDIQ)

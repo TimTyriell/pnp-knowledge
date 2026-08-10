@@ -2,7 +2,7 @@
 type: Conflict
 title: 'Offener Konflikt: Miaomani'
 description: Widersprüchliche Belege — menschliche Entscheidung nötig.
-timestamp: '2026-08-10T17:58:52+00:00'
+timestamp: '2026-08-10T19:31:07+00:00'
 id: CONFLICT_NPC_MIAOMANI
 status: open
 concept: npcs/miaomani

@@ -14,4 +14,4 @@ Nach [Nyrellas](/characters/nyrella.md) Lockruf griff eine Horde Skelette an. [E
 
 # Belege
 
-[P-22] Session 2025-09-09 @ 00:31:00 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
+[P-21] Session 2025-09-09 @ 00:31:00 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)

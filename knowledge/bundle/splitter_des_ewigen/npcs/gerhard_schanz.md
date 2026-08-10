@@ -1,16 +1,16 @@
 ---
 type: NPC
 title: Gerhard Schanz
-description: Ein Wächter und Ausbilder im Dorf. Er verteidigt das Kind und schimpft
-  Sange für das Erschrecken. Später kümmert er sich um das Mädchen, al…
+description: Ein Wächter und Ausbilder in Kleinringtal, der sich um Ordnung kümmert.
+  Er weist Sange zurecht, nachdem dieser das kleine Mädchen erschreck…
 tags:
 - npcs
 timestamp: '2026-06-04T00:00:00Z'
 id: NPC_GERHARD_SCHANZ
 ---
 
-Ein Wächter und Ausbilder im Dorf. Er verteidigt das Kind und schimpft [Sange](/characters/sange.md) für das Erschrecken. Später kümmert er sich um das Mädchen, als es die Puppe zerstört. Er trainiert die Dorfbewohner und unterbricht seine Übungen für das Kind.
+Ein Wächter und Ausbilder in [Kleinringtal](/locations/ringtal.md), der sich um Ordnung kümmert. Er weist [Sange](/characters/sange.md) zurecht, nachdem dieser das kleine Mädchen erschreckt hat, und untersucht später den Vorfall mit der Puppe. Er wird als grimmig, aber fürsorglich dargestellt und kümmert sich um das Mädchen.
 
 # Belege
 
-[P-53] Session 2026-06-04 @ 00:31:13 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
+[P-52] Session 2026-06-04 @ [01:32:38] (https://www.youtube.com/watch?v=EGNh8O7pE5Q)

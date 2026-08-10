@@ -13,4 +13,4 @@ Eine elbische Auftraggeberin, die Hal und seine [Banditen](/factions/silberkerne
 
 # Belege
 
-[P-25] Session 2025-09-30 @ 02:08:47 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[P-24] Session 2025-09-30 @ 02:08:47 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)

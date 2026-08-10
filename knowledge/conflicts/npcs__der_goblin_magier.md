@@ -2,7 +2,7 @@
 type: Conflict
 title: 'Offener Konflikt: Der Goblin-Magier'
 description: Widersprüchliche Belege — menschliche Entscheidung nötig.
-timestamp: '2026-08-10T17:58:52+00:00'
+timestamp: '2026-08-10T19:31:07+00:00'
 id: CONFLICT_NPC_DER_GOBLIN_MAGIER
 status: open
 concept: npcs/der_goblin_magier
@@ -12,9 +12,4 @@ Betrifft: `npcs/der_goblin_magier` (NPC_DER_GOBLIN_MAGIER)
 
 # Offene Konflikte
 
-- In [P-02] stirbt der Goblin-Magier in der Session vom 01.04.2025; in [P-51] tritt in der späteren Session vom 19.05.2026 erneut ein Goblin-Magier auf und stirbt ebenfalls. Es gibt keinen Beleg für eine Wiederbelebung oder dafür, dass es sich um zwei verschiedene Individuen handelt.
-
-# Belege
-
-[P-02] Session 2025-04-01 @ 01:43:22 (https://www.youtube.com/watch?v=LZIuUzc3F18)
-[P-51] Session 2026-05-19 @ 01:56:19 (https://www.youtube.com/watch?v=xEcGJeaNixI)
+- Beleg 1 zufolge stirbt der Goblin-Magier in der ersten Begegnung, aufgespießt an der Treppe. Beleg 2 zeigt ihn zu einem späteren Zeitpunkt wieder lebend, erneut im Kampf mit Esterossa, und endet wiederum mit seinem Tod. Eine Wiederbelebung wird in den Quellen nicht erwähnt; unklar ist, ob es sich um dieselbe Figur handelt (etwa durch Auferstehung) oder um zwei verschiedene goblinische Magiewirker unter derselben Bezeichnung.

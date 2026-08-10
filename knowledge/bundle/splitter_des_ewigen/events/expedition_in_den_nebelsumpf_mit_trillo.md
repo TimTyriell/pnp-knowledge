@@ -14,4 +14,4 @@ Unter [Trillos](/npcs/trillo.md) Schutzkuppel bricht die Gruppe durch eine Seite
 
 # Belege
 
-[P-52] Session 2026-05-27 @ 00:56:13 (https://www.youtube.com/watch?v=IYYmgpqsp7E)
+[P-51] Session 2026-05-27 @ 00:56:13 (https://www.youtube.com/watch?v=IYYmgpqsp7E)

@@ -13,4 +13,4 @@ Ein tiefroter Tiefling und Mitglied der Gildenführung in [Bresca](/locations/br
 
 # Belege
 
-[P-23] Session 2025-09-17 @ 00:26:08 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
+[P-22] Session 2025-09-17 @ 00:26:08 (https://www.youtube.com/watch?v=AhIT8dcxw2o)

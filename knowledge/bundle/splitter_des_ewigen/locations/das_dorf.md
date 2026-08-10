@@ -10,7 +10,7 @@ id: LOC_DAS_DORF
 subtype: Siedlung
 ---
 
-Das bedrohte Dorf in der Nähe der [Mine](/locations/kristallmine.md). Es wird von der Monsterarmee bedroht und hat die Gruppe zur Erkundung geschickt. Die Abenteurer kehren hierher zurück, um vor der großen Gefahr zu warnen und Hilfe zu holen.
+Das bedrohte Dorf in der Nähe der [Mine](/locations/kristallmine.md). Es wird von der [Monsterarmee](/factions/monsterarmee.md) bedroht und hat die Gruppe zur Erkundung geschickt. Die Abenteurer kehren hierher zurück, um vor der großen Gefahr zu warnen und Hilfe zu holen.
 
 # Belege
 

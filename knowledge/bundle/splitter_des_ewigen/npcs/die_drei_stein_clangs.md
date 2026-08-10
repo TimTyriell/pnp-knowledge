@@ -1,16 +1,16 @@
 ---
 type: NPC
 title: Die drei Stein-Clangs
-description: Drei friedliche, aus Stein gefertigte Clangs (Warforged-ähnliche Wesen)
-  bewachen ein Portal, das den Berg überquert. Sie grüßen höflich und…
+description: Diese drei Warforged-artigen Wesen aus Stein bewachen ein Portal am Bergfuß.
+  Sie dienen Vorgul'tar und lassen nur dessen Anhänger passieren…
 tags:
 - npcs
 timestamp: '2026-05-19T00:00:00Z'
 id: NPC_DIE_DREI_STEIN_CLANGS
 ---
 
-Drei friedliche, aus Stein gefertigte Clangs (Warforged-ähnliche Wesen) bewachen ein Portal, das den Berg überquert. Sie grüßen höflich und blockieren den Durchgang, da die Gruppe keine Anhänger Wargultas ist. Sie erwähnen, dass sie vor all jenem beschützen, die Böses wollen, lassen aber einen Dämon und einen filigranen Diener Wargultas ohne Weiteres passieren. Die Gruppe entscheidet sich gegen einen Kampf und zieht weiter.
+Diese drei Warforged-artigen Wesen aus Stein bewachen ein Portal am Bergfuß. Sie dienen [Vorgul'tar](/deities/vorgul_tar.md) und lassen nur dessen Anhänger passieren. Sie verhalten sich friedlich und verneigen sich vor der Gruppe, verweigern aber den Zutritt, da [Esterossa](/characters/esterossa.md), [Dodo](/characters/dodo.md) und Lunara nicht zu Vorgul'tar gehören. Sie ignorieren einen vorbeiziehenden Dämon, der offenbar ein Diener ist.
 
 # Belege
 
-[P-51] Session 2026-05-19 @ 00:07:02 (https://www.youtube.com/watch?v=xEcGJeaNixI)
+[P-50] Session 2026-05-19 @ 00:07:02 (https://www.youtube.com/watch?v=xEcGJeaNixI)

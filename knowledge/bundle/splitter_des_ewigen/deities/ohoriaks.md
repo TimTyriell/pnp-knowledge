@@ -69,11 +69,11 @@ Boragdil war einst ein Vorposten zur Steuerung der Erntefelder, geschützt durch
 
 ## Chronologie
 
-[P-29] **Vor der Kampagne (unbestimmte Zeit)**: Ohoriaks und die drei anderen Götter werden in Abyssalis eingesperrt. Die Festung Boragdil wird errichtet und mit einem Schutzzauber versehen.
+[P-28] **Vor der Kampagne (unbestimmte Zeit)**: Ohoriaks und die drei anderen Götter werden in Abyssalis eingesperrt. Die Festung Boragdil wird errichtet und mit einem Schutzzauber versehen.
 
-[P-45] **Vor wenigen Monaten**: Der Schutzzauber von Boragdil wird zerstört – „irgendwas oder irgendwer hat sie vernichtet“. Ohoriaks hat dieses Ereignis vorhergesehen. Ihre Anhänger unter Lady Kalen übernehmen die Festung und die umliegende Stadt gewaltsam: „Wir haben alle vernichtet, die noch hier waren, oder eingesperrt oder absorbiert.“
+[P-44] **Vor wenigen Monaten**: Der Schutzzauber von Boragdil wird zerstört – „irgendwas oder irgendwer hat sie vernichtet“. Ohoriaks hat dieses Ereignis vorhergesehen. Ihre Anhänger unter Lady Kalen übernehmen die Festung und die umliegende Stadt gewaltsam: „Wir haben alle vernichtet, die noch hier waren, oder eingesperrt oder absorbiert.“
 
-[P-48] **Session 2025-10-28**: Die Gruppe um Lindo Laut, Dodo und Cookie entdeckt eine unterirdische Tempelanlage mit Bluttüren und einem Altar, der Ohoriaks gewidmet ist. Das Symbol des dreieckigen Pendels und eine Inschrift fordern ein Blutopfer. Lindo Laut erfährt durch seine innere Verbindung den Namen „Ororeax“ und den Beinamen „die Vernichterin“ sowie die Notwendigkeit eines Opfers. Dodos Berührung der Tür lässt die Kristalle mit Blut vollaufen; es wird klar, dass speziell drachenblütiges Blut gefordert sein könnte. Eine zweite Kreatur in der Anlage scheint mit Ohoriaks im Bunde zu stehen.
+[P-47] **Session 2025-10-28**: Die Gruppe um Lindo Laut, Dodo und Cookie entdeckt eine unterirdische Tempelanlage mit Bluttüren und einem Altar, der Ohoriaks gewidmet ist. Das Symbol des dreieckigen Pendels und eine Inschrift fordern ein Blutopfer. Lindo Laut erfährt durch seine innere Verbindung den Namen „Ororeax“ und den Beinamen „die Vernichterin“ sowie die Notwendigkeit eines Opfers. Dodos Berührung der Tür lässt die Kristalle mit Blut vollaufen; es wird klar, dass speziell drachenblütiges Blut gefordert sein könnte. Eine zweite Kreatur in der Anlage scheint mit Ohoriaks im Bunde zu stehen.
 
 4. **Session 2026-03-31**: Ohoriaks wird von der Entität Vasul (?) neben Akastrale, Südrawell und Vorgutar als eine der vier Götter von Abyssalis vorgestellt und als „Mutter der Schleier, eine beschützende, aber doch sehr jähzornige Göttin“ beschrieben. Ihre Anhänger kontrollieren die Festung Boragdil und verweigern der Gruppe den Einlass.
 
@@ -90,8 +90,8 @@ Boragdil war einst ein Vorposten zur Steuerung der Erntefelder, geschützt durch
 
 ## Belege
 
-[P-29] Session 2025-10-28 @ 01:22:00–01:24:40 (https://www.youtube.com/watch?v=V6NzNakqxXM) – Entdeckung des Altars, Bluttüren, Lindo Lauts Verbindung und die Bezeichnung „Vernichterin“, Blutopfer-Forderung.
+[P-28] Session 2025-10-28 @ 01:22:00–01:24:40 (https://www.youtube.com/watch?v=V6NzNakqxXM) – Entdeckung des Altars, Bluttüren, Lindo Lauts Verbindung und die Bezeichnung „Vernichterin“, Blutopfer-Forderung.
 
-[P-45] Session 2026-03-31 @ 01:16:27–01:19:18 (https://www.youtube.com/watch?v=Ee-K84wcxLM) – Vorstellung der vier Götter von Abyssalis, Ohoriaks als „Mutter der Schleier“, Kontrolle über Boragdil.
+[P-44] Session 2026-03-31 @ 01:16:27–01:19:18 (https://www.youtube.com/watch?v=Ee-K84wcxLM) – Vorstellung der vier Götter von Abyssalis, Ohoriaks als „Mutter der Schleier“, Kontrolle über Boragdil.
 
-[P-48] Session 2026-04-14 @ 01:24:15–01:27:07 (https://www.youtube.com/watch?v=1Jyu92P7_Fg) – Lady Kalen als Sprecherin, Übernahme Boragdils nach Prophezeiung, Konflikt mit Vorgutar.
+[P-47] Session 2026-04-14 @ 01:24:15–01:27:07 (https://www.youtube.com/watch?v=1Jyu92P7_Fg) – Lady Kalen als Sprecherin, Übernahme Boragdils nach Prophezeiung, Konflikt mit Vorgutar.

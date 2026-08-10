@@ -69,6 +69,26 @@ def write_concept(
     return path
 
 
+def split_document(text: str) -> tuple[dict, str]:
+    """Inverse of :func:`render_document`: ``(frontmatter, body)``.
+
+    Tolerant by design — a concept file with no or broken frontmatter comes
+    back as ``({}, text)`` rather than raising, so one bad file cannot stop a
+    read over the whole bundle.
+    """
+
+    if not text.startswith("---"):
+        return {}, text
+    parts = text.split("---\n", 2)
+    if len(parts) < 3:
+        return {}, text
+    try:
+        fm = yaml.safe_load(parts[1])
+    except yaml.YAMLError:
+        return {}, parts[2]
+    return (fm if isinstance(fm, dict) else {}), parts[2].strip()
+
+
 def link(concept_id: str, title: str) -> str:
     """Bundle-relative markdown link to another concept (SPEC 5.1)."""
 

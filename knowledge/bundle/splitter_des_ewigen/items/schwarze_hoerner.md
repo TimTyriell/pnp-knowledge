@@ -14,4 +14,4 @@ Die zwei verbliebenen Hörner der getöteten Schattenkreatur, die nicht mit ihre
 
 # Belege
 
-[P-41] Session 2026-03-10 @ 01:55:12 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
+[P-40] Session 2026-03-10 @ 01:55:12 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)

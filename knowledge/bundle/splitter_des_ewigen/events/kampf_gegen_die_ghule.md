@@ -14,4 +14,4 @@ Mehrere Ghule greifen die Gruppe im Lager gleichzeitig von allen Seiten an. Lind
 
 # Belege
 
-[P-18] Session 2025-08-12 @ 01:03:37 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)
+[P-17] Session 2025-08-12 @ 01:03:37 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)

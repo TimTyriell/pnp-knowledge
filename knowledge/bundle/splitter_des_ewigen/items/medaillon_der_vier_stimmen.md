@@ -14,4 +14,4 @@ Ein Amulett, das [Lindo Laut](/characters/lindo_laut.md) trägt und in dem die S
 
 # Belege
 
-[P-19] Session 2025-08-20 @ 00:07:30 (https://www.youtube.com/watch?v=-XbO3FLSL_I)
+[P-18] Session 2025-08-20 @ 00:07:30 (https://www.youtube.com/watch?v=-XbO3FLSL_I)

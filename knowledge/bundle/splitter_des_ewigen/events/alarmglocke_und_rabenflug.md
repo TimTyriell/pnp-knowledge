@@ -14,4 +14,4 @@ Am Morgen löste ein grüner Blitz versehentlich die Alarmglocke aus. In der Nac
 
 # Belege
 
-[P-24] Session 2025-09-23 @ 01:07:04 (https://www.youtube.com/watch?v=DGzfqVigS0g)
+[P-23] Session 2025-09-23 @ 01:07:04 (https://www.youtube.com/watch?v=DGzfqVigS0g)

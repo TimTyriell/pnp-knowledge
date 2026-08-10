@@ -56,6 +56,6 @@ Sein schriftliches Werk offenbart weitere Facetten: Er beschreibt Vorgulta nicht
 
 ## Belege
 
-[P-27] Session 2025-10-14 @ 01:25:14 (https://www.youtube.com/watch?v=cUtz87UCHu4)
-[P-38] Session 2026-02-17 @ 01:38:16 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
-[P-40] Session 2026-03-03 @ 01:31:02 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
+[P-26] Session 2025-10-14 @ 01:25:14 (https://www.youtube.com/watch?v=cUtz87UCHu4)
+[P-37] Session 2026-02-17 @ 01:38:16 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
+[P-39] Session 2026-03-03 @ 01:31:02 (https://www.youtube.com/watch?v=BRUNuNKTeOg)

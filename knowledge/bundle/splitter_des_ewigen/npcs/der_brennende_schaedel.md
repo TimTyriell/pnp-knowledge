@@ -13,4 +13,4 @@ Der schwebende Schädel war Teil der Beschwörung, schoss rosa Energiestrahlen a
 
 # Belege
 
-[P-34] Session 2026-01-13 @ 01:59:00 (https://www.youtube.com/watch?v=w4LB1s9_3rs)
+[P-33] Session 2026-01-13 @ 01:59:00 (https://www.youtube.com/watch?v=w4LB1s9_3rs)

@@ -13,4 +13,4 @@ Floran ist der Anführer der [Silberkerne](/factions/silberkerne.md)-Bande und d
 
 # Belege
 
-[P-43] Session 2026-03-23 @ 00:10:24 (https://www.youtube.com/watch?v=niVxKtdQBn0)
+[P-42] Session 2026-03-23 @ 00:10:24 (https://www.youtube.com/watch?v=niVxKtdQBn0)

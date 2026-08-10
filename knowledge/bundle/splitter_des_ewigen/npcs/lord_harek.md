@@ -13,4 +13,4 @@ Lord Harek ist der Zwergenfürst, der von Silberbart geholt wird, als die ersten
 
 # Belege
 
-[P-36] Session 2026-01-27 @ 00:59:40 (https://www.youtube.com/watch?v=9RzvnnWzV7E)
+[P-35] Session 2026-01-27 @ 00:59:40 (https://www.youtube.com/watch?v=9RzvnnWzV7E)

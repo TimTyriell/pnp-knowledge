@@ -14,4 +14,4 @@ Die Helden kontaktierten die zwei zwergischen Überlebenden in der [Kathedrale](
 
 # Belege
 
-[P-22] Session 2025-09-09 @ 01:18:17 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
+[P-21] Session 2025-09-09 @ 01:18:17 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)

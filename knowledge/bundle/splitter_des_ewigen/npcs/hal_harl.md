@@ -31,10 +31,10 @@ Bei der Verteidigung des Verstecks koordinierte Harl die Abwehr, feuerte die Bal
 
 # Belege
 
-[P-24] Session vom 23.09.2025, 01:10:12 – https://www.youtube.com/watch?v=DGzfqVigS0g
-[P-25] Session vom 30.09.2025, 02:06:31 – https://www.youtube.com/watch?v=bUT7Mc2hjUY
-[P-34] Session vom 13.01.2026, 02:14:15 – https://www.youtube.com/watch?v=w4LB1s9_3rs
-[P-35] Session vom 20.01.2026, 02:00:08 – https://www.youtube.com/watch?v=H3ckYdTv4y8
-[P-39] Session vom 24.02.2026, 00:36:41 – https://www.youtube.com/watch?v=WOFArbwDDIQ
-[P-42] Session vom 18.03.2026, 01:45:21 – https://www.youtube.com/watch?v=HHXxsASLrbQ
+[P-23] Session vom 23.09.2025, 01:10:12 – https://www.youtube.com/watch?v=DGzfqVigS0g
+[P-24] Session vom 30.09.2025, 02:06:31 – https://www.youtube.com/watch?v=bUT7Mc2hjUY
+[P-33] Session vom 13.01.2026, 02:14:15 – https://www.youtube.com/watch?v=w4LB1s9_3rs
+[P-34] Session vom 20.01.2026, 02:00:08 – https://www.youtube.com/watch?v=H3ckYdTv4y8
+[P-38] Session vom 24.02.2026, 00:36:41 – https://www.youtube.com/watch?v=WOFArbwDDIQ
+[P-41] Session vom 18.03.2026, 01:45:21 – https://www.youtube.com/watch?v=HHXxsASLrbQ
 7. Kanon_Entscheidungen.md – Spielleitungs-Festlegungen zu „Hal / Harl" und „Verhandlung mit Harl"

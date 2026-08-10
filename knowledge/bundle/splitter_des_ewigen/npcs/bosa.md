@@ -13,4 +13,4 @@ Bosa ist ein galappaartiger Heiler und Wiederbeleber, der an der Seite von [Tyra
 
 # Belege
 
-[P-27] Session 2025-10-14 @ 01:27:11 (https://www.youtube.com/watch?v=cUtz87UCHu4)
+[P-26] Session 2025-10-14 @ 01:27:11 (https://www.youtube.com/watch?v=cUtz87UCHu4)

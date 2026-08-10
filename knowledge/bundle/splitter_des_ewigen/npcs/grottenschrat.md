@@ -1,16 +1,16 @@
 ---
 type: NPC
 title: Grottenschrat
-description: Ein sterbender Angehöriger der Gnoll-Fraktion, gefunden auf dem Waldpfad
-  mit einem großen Kriegspfeil in der Brust. Saris tötet ihn, indem…
+description: Ein schwer verwundeter Gnoll-ähnlicher Schrat, der auf dem Weg zur Farm
+  gefunden wird. Ihm steckt ein massiver Kriegspfeil in der Brust, un…
 tags:
 - npcs
 timestamp: '2026-07-10T00:00:00Z'
 id: NPC_GROTTENSCHRAT
 ---
 
-Ein sterbender Angehöriger der Gnoll-Fraktion, gefunden auf dem Waldpfad mit einem großen Kriegspfeil in der Brust. [Saris](/characters/saris.md) tötet ihn, indem er mit dem Dolch sein Herz durchbohrt, nachdem Versuche der Verständigung scheitern.
+Ein schwer verwundeter Gnoll-ähnlicher Schrat, der auf dem Weg zur Farm gefunden wird. Ihm steckt ein massiver Kriegspfeil in der Brust, und er blutet stark. Durch [Sanges](/characters/sange.md) Vision wird klar, dass er mit zwei Gnollen die Farm angreifen wollte, aber von einem Pfeil der Verteidiger getroffen wurde, während die Gnolle flohen. Er ist kurz vor dem Tod und kann nicht mit der Gruppe kommunizieren. [Saris](/characters/saris.md) versucht zuerst, den Pfeil herauszuziehen, und tötet ihn schließlich mit einem Dolchstoß ins Herz.
 
 # Belege
 
-[S1-01-B] Session 2026-07-10 @ 01:02:05 (https://www.youtube.com/watch?v=H-eHSlfxUAg)
+[S1-01-B] Session 2026-07-10 @ 01:00:55 (https://www.youtube.com/watch?v=H-eHSlfxUAg)

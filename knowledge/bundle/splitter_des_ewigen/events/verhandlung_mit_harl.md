@@ -31,6 +31,6 @@ Im Gegenzug durften die Flüchtlinge auf Harls Gebiet campieren und wurden vorl�
 
 # Belege
 
-[P-24] Session 2025-09-23 @ 01:10:41 (https://www.youtube.com/watch?v=DGzfqVigS0g) – Lindo Laut handelt mit Harl den Preis aus; Reduzierung von 6–8 auf 1 Truhe Gold; Anzahlung von 2 Säcken.
-[P-25] Session 2025-09-30 @ 01:28:41 (https://www.youtube.com/watch?v=bUT7Mc2hjUY) – Gruppenverhandlung; Drohkulisse mit Bogenschützen; Lindo setzt Gedankenlesen ein; Einigung auf 10 Säcke Gold.
+[P-23] Session 2025-09-23 @ 01:10:41 (https://www.youtube.com/watch?v=DGzfqVigS0g) – Lindo Laut handelt mit Harl den Preis aus; Reduzierung von 6–8 auf 1 Truhe Gold; Anzahlung von 2 Säcken.
+[P-24] Session 2025-09-30 @ 01:28:41 (https://www.youtube.com/watch?v=bUT7Mc2hjUY) – Gruppenverhandlung; Drohkulisse mit Bogenschützen; Lindo setzt Gedankenlesen ein; Einigung auf 10 Säcke Gold.
 3. Kanon_Entscheidungen.md – Festlegung: Eine einzige Verhandlung; 1 Truhe Gold = 10 Säcke Gold; Lindo als Vertreter der Gruppe.

@@ -14,4 +14,4 @@ Der Gnoll mischte eine Tinktur und legte sie auf [Rotunas](/characters/rotunas.m
 
 # Belege
 
-[P-24] Session 2025-09-23 @ 00:13:03 (https://www.youtube.com/watch?v=DGzfqVigS0g)
+[P-23] Session 2025-09-23 @ 00:13:03 (https://www.youtube.com/watch?v=DGzfqVigS0g)

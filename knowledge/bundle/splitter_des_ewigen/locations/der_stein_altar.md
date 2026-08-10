@@ -14,4 +14,4 @@ Ein Stein in einem unterirdischen Raum, in den ein Ring eingelassen ist und auf 
 
 # Belege
 
-[P-50] Session 2026-05-13 @ 00:15:25 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
+[P-49] Session 2026-05-13 @ 00:15:25 (https://www.youtube.com/watch?v=4afPD9Q_5AY)

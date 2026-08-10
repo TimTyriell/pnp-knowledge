@@ -21,4 +21,4 @@ Krieg begegnet anderen Charakteren mit einer sarkastischen und selbstbewussten A
 
 # Belege
 
-[P-52] Session 2026-05-27 @ 01:40:22 – https://www.youtube.com/watch?v=IYYmgpqsp7E
+[P-51] Session 2026-05-27 @ 01:40:22 – https://www.youtube.com/watch?v=IYYmgpqsp7E

@@ -14,4 +14,4 @@ Die Gruppe wird in der Scheune eingeschlossen, nachdem ihre Tarnung auffliegt. D
 
 # Belege
 
-[P-43] Session 2026-03-23 @ 01:17:00 (https://www.youtube.com/watch?v=niVxKtdQBn0)
+[P-42] Session 2026-03-23 @ 01:17:00 (https://www.youtube.com/watch?v=niVxKtdQBn0)

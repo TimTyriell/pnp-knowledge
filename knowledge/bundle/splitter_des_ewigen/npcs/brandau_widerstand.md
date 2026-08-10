@@ -1,17 +1,17 @@
 ---
 type: NPC
 title: Brandau-Widerstand
-description: Eine kleine Gruppierung ehemaliger Brandauer unter Herakles, die versucht,
-  gegen die Monster zu helfen und vielleicht eine neue Heimat aufz…
+description: Eine kleine, von Herakles geführte Gruppierung ehemaliger Brandauer,
+  die versucht, gegen die Monster und die Politik Willauchs zu bestehen.…
 tags:
 - npcs
 timestamp: '2026-06-04T00:00:00Z'
 id: NPC_BRANDAU_WIDERSTAND
-subtype: Sonstiges
+subtype: Bande
 ---
 
-Eine kleine Gruppierung ehemaliger Brandauer unter Herakles, die versucht, gegen die Monster zu helfen und vielleicht eine neue Heimat aufzubauen. Sie ist zu klein, um effektiv zu kämpfen, und wirbt um Unterstützung. [Talron](/npcs/talron.md) gehört dazu.
+Eine kleine, von Herakles geführte Gruppierung ehemaliger Brandauer, die versucht, gegen die Monster und die Politik [Willauchs](/locations/willauch.md) zu bestehen. Sie rekrutiert neue Mitglieder und plant, umliegende Dörfer zu evakuieren.
 
 # Belege
 
-[P-53] Session 2026-06-04 @ 01:08:04 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
+[P-52] Session 2026-06-04 @ [01:48:06] (https://www.youtube.com/watch?v=EGNh8O7pE5Q)

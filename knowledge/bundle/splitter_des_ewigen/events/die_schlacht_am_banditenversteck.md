@@ -14,4 +14,4 @@ Die große Schlacht, in der die Gruppe mit den [Banditen](/factions/silberkerne.
 
 # Belege
 
-[P-35] Session 2026-01-20 @ 00:18:22 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
+[P-34] Session 2026-01-20 @ 00:18:22 (https://www.youtube.com/watch?v=H3ckYdTv4y8)

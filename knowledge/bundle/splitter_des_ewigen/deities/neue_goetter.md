@@ -28,13 +28,13 @@ Sie sind zahlreicher als die Alten Götter und den Sterblichen näher. Die knapp
 
 Ihr Sieg über die Alten Götter war nicht absolut, sondern beruhte darauf, einige der Alten in einer vergessenen Welt namens Abyssalis (auch als Abyssares bezeichnet) gefangen zu nehmen. Nur dadurch, so die Überlieferung, konnten sie den Krieg knapp gewinnen. Diese Welt wird als Ort des Schreckens beschrieben — eine Horrorgeschichte, aus der jene, die überleben, mit großer Macht zurückkehren.
 
-Sie werden im Kontrast zu den Alten Göttern auch als „Halbgötter“ bezeichnet — so zumindest der Dämon Vasul, der diesen Begriff abschätzig für die Neuen Götter verwendet. [P-21]
+Sie werden im Kontrast zu den Alten Göttern auch als „Halbgötter“ bezeichnet — so zumindest der Dämon Vasul, der diesen Begriff abschätzig für die Neuen Götter verwendet. [P-20]
 
 ## Beziehungen und Verbindungen
 
-**Alte Götter** — Die Beziehung ist von grundsätzlicher Feindschaft geprägt. Die Neuen Götter verdrängten die Alten in einem Krieg, verbannten einige nach Abyssalis und zerstörten oder bannten deren Beschwörungsstäbe. Der Krieg führte zur Entstehung der Splitterwelt, einer Zwischenwelt voller geplagter Seelen zwischen dem Circle Below und den Hallows Above. [P-25]
+**Alte Götter** — Die Beziehung ist von grundsätzlicher Feindschaft geprägt. Die Neuen Götter verdrängten die Alten in einem Krieg, verbannten einige nach Abyssalis und zerstörten oder bannten deren Beschwörungsstäbe. Der Krieg führte zur Entstehung der Splitterwelt, einer Zwischenwelt voller geplagter Seelen zwischen dem Circle Below und den Hallows Above. [P-24]
 
-**Vasul** — Der Ratten-Dämon behauptet, den Neuen Göttern im Krieg „sehr, sehr viele“ Seelen geliefert zu haben — konkret nennt er 10.000. Als Gegenleistung hätten die Neuen Götter ihm etwas versprochen, das sie nie einhielten. Vasuls harscher Kommentar dazu: „Wer seine Versprechen nicht einhält, ist wahrhaft ein Schwein. Aber keine Ratte.“ Was genau ihm versprochen wurde, bleibt unausgesprochen, doch es handelte sich um eine erwartete Gegenleistung von höherem Wert. [P-21]
+**Vasul** — Der Ratten-Dämon behauptet, den Neuen Göttern im Krieg „sehr, sehr viele“ Seelen geliefert zu haben — konkret nennt er 10.000. Als Gegenleistung hätten die Neuen Götter ihm etwas versprochen, das sie nie einhielten. Vasuls harscher Kommentar dazu: „Wer seine Versprechen nicht einhält, ist wahrhaft ein Schwein. Aber keine Ratte.“ Was genau ihm versprochen wurde, bleibt unausgesprochen, doch es handelte sich um eine erwartete Gegenleistung von höherem Wert. [P-20]
 
 ## Chronologie
 
@@ -59,6 +59,6 @@ Das Wissen der Gruppe über die Neuen Götter verdichtet sich über die Sessions
 ## Belege
 
 [P-09] Session 2025-05-27 @ 02:03:26 (https://www.youtube.com/watch?v=bamCIB_CkR8)
-[P-21] Session 2025-09-06 @ 00:15:28 (https://www.youtube.com/watch?v=vo1xnyLQDJk)
-[P-25] Session 2025-09-30 @ 01:50:02 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
-[P-32] Session 2025-11-25 @ 00:56:51 (https://www.youtube.com/watch?v=wd5R4fJfngY)
+[P-20] Session 2025-09-06 @ 00:15:28 (https://www.youtube.com/watch?v=vo1xnyLQDJk)
+[P-24] Session 2025-09-30 @ 01:50:02 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[P-31] Session 2025-11-25 @ 00:56:51 (https://www.youtube.com/watch?v=wd5R4fJfngY)

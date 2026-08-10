@@ -14,4 +14,4 @@ Die Gruppe entdeckt eine sich bewegende Statue und zerstört sie, wobei der grü
 
 # Belege
 
-[P-33] Session 2026-01-06 @ 01:11:49 (https://www.youtube.com/watch?v=VGw81seFvbo)
+[P-32] Session 2026-01-06 @ 01:11:49 (https://www.youtube.com/watch?v=VGw81seFvbo)

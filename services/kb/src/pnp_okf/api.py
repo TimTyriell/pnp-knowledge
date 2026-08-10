@@ -23,6 +23,8 @@ import yaml
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 
+from pnp_okf.okf import split_document
+
 _RESERVED = {"index.md", "log.md"}
 _VIDEO_ID_RE = re.compile(r"(?:v=|youtu\.be/)([A-Za-z0-9_-]{6,})")
 
@@ -57,17 +59,7 @@ def _repo_root(bundle_dir: Path) -> Path:
 # --- concept reading ---------------------------------------------------------
 
 
-def _split_frontmatter(text: str) -> tuple[dict, str]:
-    if not text.startswith("---"):
-        return {}, text
-    parts = text.split("---\n", 2)
-    if len(parts) < 3:
-        return {}, text
-    try:
-        fm = yaml.safe_load(parts[1])
-    except yaml.YAMLError:
-        return {}, parts[2]
-    return (fm if isinstance(fm, dict) else {}), parts[2].strip()
+_split_frontmatter = split_document  # kept as the name the routes below use
 
 
 class BundleReader:

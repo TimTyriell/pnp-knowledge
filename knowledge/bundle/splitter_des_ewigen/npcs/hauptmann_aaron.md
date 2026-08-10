@@ -1,25 +1,31 @@
 ---
 type: NPC
 title: Hauptmann Aaron
-description: Hauptmann Aaron ist der Anführer der Söldnertruppe auf der Farm. Er wird
-  als kampferprobte Gestalt in schwer beschädigter Rüstung beschrieb…
+description: Hauptmann Aaron ist der kriegserfahrene Anführer der Söldnertruppe, die
+  zum Schutz der Halblingsfarm abgestellt wurde. Seine Rüstung und Wa…
 tags:
 - npcs
 timestamp: '2026-08-06T00:00:00Z'
 id: NPC_HAUPTMANN_AARON
 ---
 
-Hauptmann Aaron ist der Anführer der Söldnertruppe auf der Farm. Er wird als kampferprobte Gestalt in schwer beschädigter Rüstung beschrieben, deren ehemaliges Wappen abgekratzt wurde. Sein Auftreten ist autoritär, aber nicht unfreundlich; Neuankömmlinge mustert er mit scharfem Blick und stellt gezielte Fragen.
+# Hauptmann Aaron
 
-## Rolle und Erscheinungsbild
+Hauptmann Aaron ist der kriegserfahrene Anführer der Söldnertruppe, die zum Schutz der Halblingsfarm abgestellt wurde. Seine Rüstung und Waffe sind schwer mitgenommen, das Wappen auf seinem Schild ist zerkratzt – ein Mann, der viele Schlachten gesehen hat.
 
-Aaron führt die Söldnertruppe auf der Farm an. Seine Rüstung weist schwere Schäden auf, das ursprüngliche Wappen ist unkenntlich gemacht. Gegenüber der Gruppe verhält er sich prüfend: [Bruma](/characters/bruma_stormrak.md) fragt er nach seinem Glauben, [Sange](/characters/sange.md) nach seiner Maske und [Kaya](/characters/kaya.md) nach ihren Fähigkeiten. Sein Auftreten wirkt autoritär, aber nicht unfreundlich.
+## Rolle und Auftreten
 
-## Beziehung zur Gruppe und weiterer Verlauf
+Aaron begegnet der Gruppe zunächst streng: Er mustert sie eingehend und befragt sie zu ihren Fähigkeiten. Besonders [Brumas](/characters/bruma_stormrak.md) Stärke als Drakoner und [Sanges](/characters/sange.md) maskierte Identität hinterfragt er. Der Hinweis auf den Gnolltunnel beeindruckt ihn jedoch, woraufhin er der Minenmission sofort zustimmt – obwohl er dort bereits Wachen postiert hat.
 
-Die Gruppe muss sich Aarons Vertrauen erst verdienen. Nachdem Bruma ihm von einem Tunnel berichtet, ist Aaron beunruhigt und schickt die Gruppe als Vertrauensbeweis in die Mine. Später drängt er auf die sofortige Evakuierung des Hofes und setzt eine Frist von vier Stunden; dabei zeigt er Respekt für die Gruppe und verlässt sich auf ihr Urteil. In Kleinringtal genügt ein Salut von ihm, um das Tor zu öffnen – ein Hinweis auf seinen hohen Status. Nach ein bis zwei Tagen Rast plant er, weiter nach Ringtal zu ziehen.
+Gegenüber [Talron](/npcs/talron.md) wahrt er respektvolle Distanz. Seine Haltung zu den Halblingen macht er deutlich: Sie sollen nicht herumkommandiert, sondern nur beschützt werden.
+
+## Verlauf
+
+Als die Lage eskaliert, drängt Aaron auf die sofortige Evakuierung des Hofes und setzt eine Frist von vier Stunden. Der Gruppe begegnet er inzwischen mit Respekt und vertraut auf ihr Urteil.
+
+Sein hoher Status zeigt sich in [Kleinringtal](/locations/ringtal.md): Ein Salut von ihm genügt, um das Tor öffnen zu lassen. Nach ein bis zwei Tagen Rast plant er, weiter nach Ringtal zu ziehen.
 
 # Belege
 
-[S1-01-B] Session 2026-07-10 @ 01:30:00 – <https://www.youtube.com/watch?v=H-eHSlfxUAg>
-[S1-03-B] Session 2026-08-06 @ 00:06:36 – <https://www.youtube.com/watch?v=0HyPHao8s_k>
+[S1-01-B] Session 2026-07-10, 01:30:30 – https://www.youtube.com/watch?v=H-eHSlfxUAg
+[S1-03-B] Session 2026-08-06, 00:06:36 – https://www.youtube.com/watch?v=0HyPHao8s_k

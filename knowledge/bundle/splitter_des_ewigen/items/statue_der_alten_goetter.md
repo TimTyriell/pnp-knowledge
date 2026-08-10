@@ -14,4 +14,4 @@ Eine verwitterte Steinstatue mit einer Schale, die an frühere Begegnungen der G
 
 # Belege
 
-[P-33] Session 2026-01-06 @ 00:28:10 (https://www.youtube.com/watch?v=VGw81seFvbo)
+[P-32] Session 2026-01-06 @ 00:28:10 (https://www.youtube.com/watch?v=VGw81seFvbo)

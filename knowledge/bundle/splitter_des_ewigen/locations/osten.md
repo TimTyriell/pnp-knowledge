@@ -14,4 +14,4 @@ Die Himmelsrichtung, in der sich laut Hal eine mächtige Hexe mit einer Festung 
 
 # Belege
 
-[P-25] Session 2025-09-30 @ 02:12:25 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[P-24] Session 2025-09-30 @ 02:12:25 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)

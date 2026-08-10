@@ -14,4 +14,4 @@ Der [Gebirgspass](/locations/gebirgspass.md), den die Gruppe verteidigte. [Ester
 
 # Belege
 
-[P-25] Session 2025-09-30 @ 00:01:30 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[P-24] Session 2025-09-30 @ 00:01:30 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)

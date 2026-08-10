@@ -1,8 +1,8 @@
 ---
 type: Item
 title: Arcane Cloak
-description: Ein Umhang mit Kapuze, der auf Befehl die Farbe wechseln kann. Von Dodo
-  im Turm gefunden.
+description: Ein magischer Mantel mit Kapuze, den Dodo im Turm findet (00:21:40).
+  Er ändert seine Farbe nach dem Wunsch des Trägers.
 tags:
 - items
 timestamp: '2025-06-10T00:00:00Z'
@@ -10,7 +10,7 @@ id: ITEM_ARCANE_CLOAK
 subtype: Artefakt
 ---
 
-Ein Umhang mit Kapuze, der auf Befehl die Farbe wechseln kann. Von [Dodo](/characters/dodo.md) im Turm gefunden.
+Ein magischer Mantel mit Kapuze, den [Dodo](/characters/dodo.md) im Turm findet (00:21:40). Er ändert seine Farbe nach dem Wunsch des Trägers.
 
 # Belege
 

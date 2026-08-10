@@ -13,4 +13,4 @@ Lisa ist eine Diplomatin aus [Willau](/locations/willauch.md), die die Helden au
 
 # Belege
 
-[P-27] Session 2025-10-14 @ 00:38:07 (https://www.youtube.com/watch?v=cUtz87UCHu4)
+[P-26] Session 2025-10-14 @ 00:38:07 (https://www.youtube.com/watch?v=cUtz87UCHu4)

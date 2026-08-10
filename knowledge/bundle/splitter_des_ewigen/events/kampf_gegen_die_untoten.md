@@ -14,4 +14,4 @@ Die Gruppe springt mit einem Arkantor mitten in eine untote Armee. [Dodo](/chara
 
 # Belege
 
-[P-32] Session 2025-11-25 @ 00:59:04 (https://www.youtube.com/watch?v=wd5R4fJfngY)
+[P-31] Session 2025-11-25 @ 00:59:04 (https://www.youtube.com/watch?v=wd5R4fJfngY)

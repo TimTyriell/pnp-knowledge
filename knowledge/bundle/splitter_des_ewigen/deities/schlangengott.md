@@ -1,8 +1,8 @@
 ---
 type: Deity
 title: Alter Schlangengott
-description: Der Alte Schlangengott, auch als „Schlangenfigur“ (Serpent God) oder
-  einfach „Schlangengott“ bezeichnet, ist eine gefallene, uralte Gotthei…
+description: Der Alte Schlangengott ist eine längst gefallene oder nicht mehr aktiv
+  präsente Gottheit, deren physische Form als sechsköpfige Schlangenhy…
 tags:
 - deities
 timestamp: '2025-06-17T00:00:00Z'
@@ -15,40 +15,56 @@ aliases:
 
 ## Überblick
 
-Der Alte Schlangengott, auch als „Schlangenfigur“ (Serpent God) oder einfach „Schlangengott“ bezeichnet, ist eine gefallene, uralte Gottheit. Sein bekanntestes Abbild ist eine sechsköpfige Schlangenhydra [P-10]. Er galt in mythischer Vorzeit als Schöpferwesen, das amphibische Kreaturen mit enorm starken Giften erschuf, die Zivilisationen infiltrieren konnten [P-10]. Obwohl er zu den „alten Göttern“ zählt, die nicht mehr in der Welt präsent sind, besitzt er weiterhin beträchtliche Macht und kann in die Welt eingreifen [P-12].
+Der Alte Schlangengott ist eine längst gefallene oder nicht mehr aktiv präsente Gottheit, deren physische Form als sechsköpfige Schlangenhydra beschrieben wird. Nach Wissen aus historischen Aufzeichnungen erschuf er einst amphibische Dienerwesen mit außergewöhnlich mächtigen Giften und der Fähigkeit, Zivilisationen zu unterwandern. In der Gegenwart manifestiert er sich als geisterhafte Avatar-Erscheinung und tritt über diese mit Sterblichen in Kontakt.
+
+Sein genauer Status in der aktuellen Epoche ist unklar: Er zählt zu den „Alten Göttern“, die nach verbreiteter Auffassung nicht mehr in der Welt wirken. Dennoch hat er sich in jüngster Zeit mehrfach bemerkbar gemacht und direkte Eingriffe vorgenommen.
 
 ## Rolle in der Kampagne
 
-Der Schlangengott ist eine wiederkehrende, ambivalente Macht. Er trat der Gruppe erstmals an einem Schrein als geisterhafter Avatar gegenüber und bot Macht im Tausch für einen Dienst an [P-10]. Später wurde eine Verbindung zu ihm durch [Dodo](/characters/dodo.md) hergestellt, der den Gott in einer ausweglosen Situation anrief. Die daraufhin gewährte Intervention war brutal – sie ließ Seelen zu Asche zerfallen, befreite die Gruppe jedoch aus einer Bedrohung [P-12]. Die Glyphen in einem unterirdischen Dungeonraum deuten zudem darauf hin, dass eine ihm ergebene Kultur existierte, die ihn anbetete [P-11].
+Der Alte Schlangengott taucht als ambivalente Macht auf, die der Gruppe sowohl Angebote macht als auch auf Bitten reagiert. Esterossa erinnert sich aus ihren Studien, dass dieser Gott und seine Kreaturen früher „wirklich teilweise Zivilisationen infiltrieren“ konnten [P-10]. Bei einem Schrein erscheint der Schlangengott der Gruppe als geisterhafte Erscheinung und bietet Macht im Tausch gegen Dienst an. Nach einem misslungenen Angriff auf Dodo gibt er den entscheidenden Hinweis, dass die Hack im Norden zu finden ist [P-10].
+
+Später betet Dodo, der eine Verbindung zu dieser Entität aufgebaut hat, zu ihm – und erhält eine Antwort in Form einer brutalen Intervention: Die Seelen oder Köpfe, die in Netzen gefangen waren, zerfallen zu Asche [P-12].
+
+Seine Ethik und Ziele bleiben unklar. Die Gruppe registriert eine gewisse Skrupellosigkeit: Seine Hilfe wirkt effektiv, aber zerstörerisch, und der Preis für seine Unterstützung ist nicht definiert.
 
 ## Wichtige Merkmale
 
-- **Erscheinung:** Die Gottheit wird als sechsköpfige Schlangenhydra visualisiert [P-10]. Ein geisterhafter Avatar dieser Form erschien der Gruppe an einem Schrein [P-10]. Glyphen in einem Dungeon zeigen keilförmige, plumpe Schlangenköpfe, die nicht exakt dem Avatar gleichen, aber eine klare Verbindung zu dem alten Gott aufweisen [P-11].
-- **Schöpfungskraft:** Einst erschuf er humanoide, amphibische Schlangenkreaturen mit starken Naturgiften. Diese Wesen konnten Zivilisationen unterwandern, da sie stets den „Heimvorteil“ der Natur nutzten [P-10].
-- **Machtfülle:** Trotz seines Status als gefallener, alter Gott verfügt er über erhebliche verbliebene Macht [P-12]. Auf ein Gebet von Dodo hin ließ er in einem mit Seelennetzen gefüllten Raum sämtliche gefangenen Köpfe und Netze im Bereich der Gruppe „zur Asche zerfallen“ [P-12]. Die Stimme des Gottes war während dieser Intervention hörbar [P-12].
+- **Sechsköpfige Schlangenhydra**: Die physische oder symbolische Form wird als mehrköpfiges Schlangenwesen beschrieben [P-10].
+- **Geisterhafter Avatar**: In der Gegenwart erscheint er nicht leibhaftig, sondern als geisterhafte Präsenz an einem Schrein [P-10].
+- **Schöpfung amphibischer Gifttiere**: Seine ersten Lebewesen waren amphibische Kreaturen mit enorm starken Giften. Diese nutzten Naturmagie und konnten Zivilisationen infiltrieren [P-10].
+- **Macht durch Zerstörung**: Als Dodo um Seelenerlösung betet, bewirkt die Intervention des Schlangengottes, dass „die ganzen Köpfe in diesem Netz, die schreien vor Brutalität, vor Schmerzen und ihr seht einfach nur, wie diese Köpfe vor euch, […] zur Asche zerfällt“ [P-12].
+- **Verbindung durch Gebet**: Dodo hat eine persönliche Verbindung zu ihm aufgebaut und kann ihn durch stille Gebete erreichen [P-12].
 
 ## Beziehungen und Verbindungen
 
-- **[Dodo](/characters/dodo.md):** Dodo hat aktiv eine Verbindung zu dieser Gottheit aufgebaut. Er bezeichnet selbst, dass er „schon connected“ mit der Schlangenfigur sei und nutzt diese Verbindung, um ein stilles Gebet zu sprechen, das eine unmittelbare, zerstörerische Intervention auslöst [P-12].
-- **[Cookie](/characters/cookie.md):** Empfindet die Schlangenwesen und den Gott als „gruselig“ und zeigt eine ablehnende, misstrauische Haltung [P-11].
-- **[Esterossa](/characters/esterossa.md):** Erinnert sich durch Studien in der Norborn-Bibliotheca an die Schöpfungsgeschichte und Fähigkeiten der ersten Diener des Gottes [P-10].
-- **Die Kurzen:** In einem ersten Dungeonraum fanden sich Glyphen und ein magischer Mechanismus, die laut Dodos Einschätzung von Wesen stammen, die den alten Schlangengott anbeteten [P-11].
+- **[Dodo](/characters/dodo.md)**: Dodo hat eine aktive Verbindung zum Schlangengott. Er kniet mit aufgestelltem Schild nieder und betet zu ihm, woraufhin der Gott antwortet [P-12].
+- **Hinweisgeber für die Gruppe**: Der Schlangengott gibt den Hinweis auf eine Hack im Norden [P-10].
+- **Spannungen mit Lindo Laut**: Lindo Laut argumentiert, dass die alten Götter „jetzt hier nicht mehr so viel zu sagen“ hätten [P-12], was die Skepsis der Gruppe gegenüber dieser Macht verdeutlicht.
 
 ## Chronologie
 
-- **Session 1 (2025-06-03):** Die Gruppe begegnet einem geisterhaften Avatar des Schlangengottes an einem Schrein. Der Avatar bietet Macht im Tausch gegen einen Dienst an. Nach einem misslungenen Angriff auf Dodo gibt er den rätselhaften Hinweis, dass „die Hack im Norden zu finden ist“ [P-10]. Esterossa teilt zeitgleich sein historisches Wissen über die Schöpfermerkmale des Gottes [P-10].
-- **Session 2 (2025-06-10):** In einem unterirdischen Raum mit vier Runen identifiziert Dodo, dass die dortigen Schlangenglyphen stilistisch mit dem alten Gott verwandt sind und es sich wahrscheinlich um eine frühere Kultstätte seiner Anbeter handelt [P-11].
-- **Session 3 (2025-06-17):** In einem Raum, der mit Netzen aus gefangenen, leidenden Seelen gefüllt ist, kniet Dodo nieder und spricht ein stilles Gebet: „Diese gefallenen Krieger scheinen lang genug gelitten zu haben. Bitte, ja, bitte erlöse sie.“ Eine hörbare Stimme antwortet, und der Bereich der Seelen vor der Gruppe zerfällt zu Asche, was den Weg freimacht. Die Gefährten reagieren schockiert; Cookie kommentiert, Dodo habe „dafür gerade einfach irgendwelche Seelen verbrannt“, Dodo selbst deutet den Akt jedoch als Befreiung [P-12].
+### Erste Begegnung am Schrein (Session 2025-06-03)
+
+Esterossa erinnert sich aus der Bibliotheca an Legenden über den Schlangengott: Er habe seine Untertanen – vielleicht Humanoide, vielleicht nur ein Stück Erde – in amphibische Kreaturen mit enorm starken Giften verwandelt, die Zivilisationen unterwandern konnten. Esterossa kommentiert dies mit: „Das ist mir alles ein bisschen shady. Alte Götter, die sind dir gefallen, gibt‘s nicht mehr“ [P-10].
+
+Am Schrein erscheint der geisterhafte Avatar des Gottes. Er bietet Macht im Tausch gegen Dienst an und attackiert Dodo erfolglos. Nach dem Angriff gibt er den Hinweis, dass die Hack im Norden zu finden ist [P-10].
+
+### Intervention im Seelennetz (Session 2025-06-17)
+
+In den Seelennetzen, wo unzählige gefangene Köpfe vor Schmerz schreien, will die Gruppe weitergehen. Cookie mahnt: „Also du weißt schon, dass die alten Götter noch gut viel Macht haben, obwohl die nicht mehr da sind“ [P-12]. Dodo hält inne und richtet ein Gebet an den Schlangengott:
+
+> „Diese gefallenen Krieger scheinen lang genug gelitten zu haben. Bitte, ja, bitte erlöse sie.“ [P-12]
+
+Daraufhin hört die Gruppe eine Stimme, und ein Teil der Seelen vor ihnen zerfällt zu Asche. Rotunas reagiert bestürzt: „Was hast du getan?“, worauf Dodo antwortet: „Den Weg freigemacht.“ Cookie kritisiert die Brutalität: „Du hast dafür gerade einfach irgendwelche Seelen verbrannt, aber okay“ [P-12].
 
 ## Offene Fragen
 
-- Die genaue Identität des angebotenen „Dienstes“ aus der ersten Begegnung und das vollständige Wesen des Paktes mit der Gruppe bleiben ungeklärt [P-10].
-- Was mit der „Hack im Norden“ gemeint ist, die der Avatar als Hinweis gab, wurde bisher nicht aufgelöst [P-10].
-- Die genaue Beziehung zwischen dem Avatar des Schlangengottes und den abweichend gestalteten Glyphen in der mutmaßlichen Kultstätte ist unbestimmt – Dodo erkennt eine Verwandtschaft, aber keine direkte Übereinstimmung [P-11].
-- Die moralische und metaphysische Bedeutung der zerstörerischen Seelen-Intervention („zur Asche zerfallen“) ist unter den Gefährten umstritten und in ihrer endgültigen Wirkung nicht abschließend geklärt [P-12].
+- **Was ist die Hack im Norden?** Der Schlangengott gab diesen Hinweis, aber Ziel und Zweck sind unbekannt [P-10].
+- **Sind die Seelen erlöst oder nur zerstört?** Dodo glaubt an Erlösung, Cookie hält es für brutale Vernichtung [P-12].
+- **In welchem Zustand existiert der Schlangengott heute?** Er gilt als gefallen, manifestiert sich aber als Avatar; der genaue Status (gebannt, geschwächt, erwachend) bleibt ungeklärt.
+- **Welche Gegenleistung erwartet er für seine Macht?** Das Angebot „Macht im Tausch gegen Dienst“ wurde nie konkretisiert [P-10].
 
 ## Belege
 
-[P-10] Session 2025-06-03 @ 01:37:50 (https://www.youtube.com/watch?v=jtYR4Je0a18)
-[P-11] Session 2025-06-10 @ 00:55:06 (https://www.youtube.com/watch?v=cLkCu3Iq3y8)
-[P-12] Session 2025-06-17 @ 01:32:03 (https://www.youtube.com/watch?v=tl76B4V0io8)
+[P-10] Session 2025-06-03, 01:36:58–01:39:07 – https://www.youtube.com/watch?v=jtYR4Je0a18
+[P-12] Session 2025-06-17, 01:30:46–01:33:32 – https://www.youtube.com/watch?v=tl76B4V0io8

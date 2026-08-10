@@ -14,4 +14,4 @@ Im Turm offenbart [Trillo](/npcs/trillo.md) seinen Verrat und stellt [Kalos](/np
 
 # Belege
 
-[P-52] Session 2026-05-27 @ 01:21:05 (https://www.youtube.com/watch?v=IYYmgpqsp7E)
+[P-51] Session 2026-05-27 @ 01:21:05 (https://www.youtube.com/watch?v=IYYmgpqsp7E)

@@ -14,4 +14,4 @@ Ein riesiger Turm aus Kristall, der enorme magische Energie ausstrahlt. Lunara s
 
 # Belege
 
-[P-54] Session 2026-06-10 @ 00:40:16 (https://www.youtube.com/watch?v=_3tLSiT1tck)
+[P-53] Session 2026-06-10 @ 00:40:16 (https://www.youtube.com/watch?v=_3tLSiT1tck)

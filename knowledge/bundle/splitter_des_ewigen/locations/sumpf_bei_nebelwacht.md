@@ -16,4 +16,4 @@ Das neblige Sumpfgebiet außerhalb von [Nebelwacht](/locations/nebelwacht.md), g
 
 # Belege
 
-[P-52] Session 2026-05-27 @ 00:58:35 (https://www.youtube.com/watch?v=IYYmgpqsp7E)
+[P-51] Session 2026-05-27 @ 00:58:35 (https://www.youtube.com/watch?v=IYYmgpqsp7E)

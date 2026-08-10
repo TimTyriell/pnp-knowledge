@@ -28,5 +28,5 @@ Gemeinsam mit [Orlanius Schwarzhorn](/npcs/orlanius_schwarzhorn.md) und [Haloen]
 # Belege
 
 [P-15] Session 2025-07-22 @ 02:07:07 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
-[P-47] Session 2026-04-09 @ 00:15:49 (https://www.youtube.com/watch?v=vcGkejr8_nI)
+[P-46] Session 2026-04-09 @ 00:15:49 (https://www.youtube.com/watch?v=vcGkejr8_nI)
 [S1-02-A] Session 2026-08-04 @ 02:02:21 (https://www.youtube.com/watch?v=qRj2t3wQHfs)

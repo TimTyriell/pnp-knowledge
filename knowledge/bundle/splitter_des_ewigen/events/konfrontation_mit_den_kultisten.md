@@ -14,4 +14,4 @@ An der Spitze des Berges werden die Helden von [Kultisten des Varsurs](/factions
 
 # Belege
 
-[P-19] Session 2025-08-20 @ 01:20:01 (https://www.youtube.com/watch?v=-XbO3FLSL_I)
+[P-18] Session 2025-08-20 @ 01:20:01 (https://www.youtube.com/watch?v=-XbO3FLSL_I)

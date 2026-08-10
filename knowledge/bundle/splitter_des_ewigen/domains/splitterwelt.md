@@ -1,8 +1,8 @@
 ---
 type: Domain
 title: Splitterwelt
-description: Die Splitterwelt ist eine jenseitige Zwischenwelt, die im Krieg zwischen
-  den alten und neuen Göttern entstanden ist. Sie existiert als eine…
+description: Die Splitterwelt ist eine Paralleldimension, die im Krieg zwischen alten
+  und neuen Göttern entstanden ist. Sie liegt als Zwischenwelt zwisc…
 tags:
 - domains
 timestamp: '2026-08-04T00:00:00Z'
@@ -15,92 +15,73 @@ aliases:
 
 ## Überblick
 
-Die Splitterwelt ist eine jenseitige Zwischenwelt, die im Krieg zwischen den alten und neuen Göttern entstanden ist. Sie existiert als eine Art Spalt oder Riss zwischen dem Circle Below und den Hallows Above und ist erfüllt mit geplagten Seelen und unzähligen Verbindungen. Die Schriften berichten von einem Tor, das in eine vergessene Welt innerhalb dieser Zwischenebene führt: Abyssalis, auch als „Die Splitterwelt“ im engeren Sinne bezeichnet.
+Die Splitterwelt ist eine Paralleldimension, die im Krieg zwischen alten und neuen Göttern entstanden ist. Sie liegt als Zwischenwelt zwischen dem Circle Below und den Hallows Above und ist erfüllt von geplagten Seelen und unzähligen Verbindungen. [P-24] Ursprünglich eine Bastion der alten Götter, wurde sie in ein Gefängnis verwandelt, aus dem es kaum ein Entkommen gibt. [P-37a][P-49] Der Ort wird als alptraumhafte, düstere Ebene beschrieben, die an den Kräften der Eindringlinge zehrt und deren Seelen absorbiert. [P-48][P-53]
 
-Abyssalis war einst eine Bastion der alten Götter, wurde jedoch im Zuge des Götterkrieges in ein Gefängnis umgewandelt. Die neuen Götter konnten den Krieg nur knapp für sich entscheiden, indem sie einige der alten Götter in dieser Welt gefangen nahmen. Wer oder was genau diese Gefangenschaft bewirkt hat, ist unbekannt. Abyssalis gilt als eine Welt des Schreckens, aus der nur wenige zurückkehren – wer sie überlebt, kommt meist mit großer Macht zurück. [P-25]
-
-Die Ebene zehrt aktiv an der Lebenskraft und den Seelen derjenigen, die sie betreten. Magie ist hier allgegenwärtig und kann von mächtigen Wesen kontrolliert werden. Es gibt keinen Tag-Nacht-Zyklus; stattdessen erhellen lila Berge, bunte Himmelsfarben und wandernde Lichter die unheimliche, verzerrte Landschaft. [P-45, P-54]
+Die Splitterwelt besitzt keinen normalen Tag-Nacht-Zyklus; stattdessen erhellen bunte, sich bewegende Lichter am Himmel die Landschaft. [P-44][P-50] Die Geographie ist verzerrt und von lila Bergen, Nebelschwaden, Kristallen und bizarren Felsformationen geprägt. [P-44][P-50][P-55] In den Flüssen sind zahllose Seelen gefangen, und die „Erntefelder“ dienen als Ankunftsort neu eintreffender Seelen. [P-44] Der Aufenthalt in dieser Welt verursacht stetigen Stress und kann zu einem abyssalen Wahnsinn führen, vor dem nur besondere Schutzmaßnahmen bewahren. [P-53][P-44]
 
 ## Rolle in der Kampagne
 
-Die Splitterwelt und insbesondere Abyssalis durchziehen die gesamte Kampagne als zentraler Handlungsort und kosmologischer Bezugspunkt:
-
-- **Herkunft der Macht:** Sowohl [Lindo Laut](/characters/lindo_laut.md) als auch [Lunara](/characters/lunara_velora.md) haben tiefe Verbindungen zu Abyssalis. Lindo Lauts Dämon (ein Teil des alten Gottes Vasul) stammt von dort, ebenso wie seine Fähigkeit, Seelen dorthin zu schicken. Lunaras Kräfte speisen sich teilweise aus dieser Ebene, und sie kann die Splitterwelt durch ihre Runenmagie herbeirufen oder mit ihr interagieren. [P-27, P-32a, P-35, P-42]
-- **Gefängnis der alten Götter:** Abyssalis dient als kosmologisches Gefängnis für vier alte Götter, darunter Vasul und Vorgul'tar. Vasul versucht, durch seinen in Lindo Laut gebundenen Teil zu entkommen und seine volle Macht wiederzuerlangen. [P-25, P-38a, P-44a]
-- **Schauplatz der Rettungsmission:** Die Gruppe reist nach Abyssalis, um [Liam](/npcs/liam_velora.md), Lunaras Bruder und Gefangenen Vorgul'tars, zu befreien und die Bedrohung durch Vasuls zersplitterte Teile zu neutralisieren. [P-38a, P-44a, P-49]
-- **Dämoneninvasion in der materiellen Welt:** Ein Portal in der Arena von Ehrenfels verband Abyssalis mit der materiellen Welt. Dämonische Kreaturen drangen hindurch, was die Gilde unter Nox zu verantworten hat. [P-47, S1-02-Aa, S1-02-Ab]
-- **Bewohner und Fraktionen:** In Abyssalis existieren die Erntefelder als Ankunftsort neuer Seelen, die Festung Jalan sowie die Seelenwacht mit dem Richter und dem Schinder als deren Anführer. [P-41, P-45, P-49]
+Die Splitterwelt ist ein zentraler Schauplatz der späteren Kampagnenphase. Nachdem die Gruppe erfuhr, dass der alte Gott Vasul dort gefangen ist und durch einen Teil in [Lindo Laut](/characters/lindo_laut.md) zu entkommen versucht, wurde die Reise dorthin unausweichlich. [P-37a] Ein künstliches Portal, errichtet von Voras in Bresca, und ein alter Riss in der Arena von Ehrenfels ermöglichten den Zugang. [P-43b][P-46] Ein Teil der Gruppe begab sich in die Splitterwelt, um Liams Seele zu befreien, die Vasul-Teile zu bekämpfen und Nerashs Ritual zur Zerstörung Vasuls vorzubereiten. [P-43a] Dort trafen sie auf die Seelenwacht, auf den gefangenen Vasul und auf eine Vielzahl feindseliger Wesen. Später öffnete Holodarn ein Portal zurück in die materielle Welt. [P-49] Für [Lunara Velora](/characters/lunara_velora.md) ist die Splitterwelt zudem eine Quelle ihrer Kräfte; sie kann die Ebene vorübergehend in die materielle Welt holen und spricht ihre Sprache. [P-34][P-41]
 
 ## Wichtige Merkmale
 
-- **Gefängniswelt und ehemalige Bastion:** Abyssalis war ursprünglich eine Bastion der alten Götter, wurde jedoch durch einen Zauber der neuen Götter zu einem unentrinnbaren Gefängnis umfunktioniert. Die Ebene kann nur mit den richtigen Mitteln – etwa Lindo Lauts Stab oder Lunaras Runen – betreten oder verlassen werden. [P-25, P-38a, P-50]
-- **Lebensentzug und Seelenabsorption:** Die Welt zehrt an der Essenz und Seele von Eindringlingen. Bereits nach kurzer Zeit verursacht der Aufenthalt Erschöpfung und Stress. Seelen werden regelrecht absorbiert und können in Abyssalis gefangen gehalten werden. [P-54, P-41, P-44a]
-- **Kein Tag-Nacht-Zyklus, unheimliche Atmosphäre:** Es gibt keinen natürlichen Wechsel von Tag und Nacht. Der Himmel zeigt lila, grüne und blaue Farbtöne; wandernde Lichter – laut Lunaras Erinnerungen riesige, fliegende, saurierartige Raubtiere – bewegen sich am Firmament und erinnern an die Kristalle, die in der Ebene und in der materiellen Welt gefunden wurden. [P-39, P-45, P-55]
-- **Tore und Portale:** Es existieren mehrere Zugänge: ein alter Riss in der Arena von Ehrenfels, ein künstliches Portal von Voras in Bresca (außerhalb von Abyssalis, in der Zwischenebene) und Zandros Portal in der Splitterwelt selbst, das in die Festung der Seelenwacht führte. [P-41, P-44a, P-44b, P-47]
-- **Kreaturen und Dämonen:** Aus der Splitterwelt stammen gefährliche, absorbierende Wesen sowie dämonische Kreaturen, die für Lebewesen tödlich sind. Schattenkreaturen und andere Entitäten durchstreifen die Ebene. Nach ihrem Tod werden Seelen nach Abyssalis gezogen. [P-32b, P-41, P-47]
-- **Allgegenwärtige Magie:** Die Magie in Abyssalis ist omnipräsent und kann von mächtigen Wesen wie den alten Göttern kontrolliert werden. Sie beeinflusst Zauber und kann diese unkontrolliert verstärken, insbesondere bei Lunaras Verbindung während des Neumonds. [P-42, P-54]
-- **Sprache von Abyssalis:** Es existiert eine eigene Sprache („Abyssalis“ oder „Abyssalisch“), die Lunara und Rotunas beherrschen. Lunara nutzt sie unfreiwillig, um Feinde zu beeinflussen. [P-42, P-47]
+- **Beschaffenheit:** Eine zerbrochene, kristallene Parallelwelt. In ihr existieren Splitterfelder und verzerrte Strukturen. [P-34][P-50] Der Himmel zeigt keine echte Decke, sondern ein Gewirr aus Farben – Lila, Grün, Blau. [P-44] „Bunte Lichter an der Decke“ kommen und gehen und simulieren eine Art Tagesrhythmus. [P-50] Die Umgebung ist voller Nebel und gelegentlich von unheimlichen Kristallen durchsetzt. [P-50]
+- **Gefahren:** Die Welt entzieht Lebewesen aktiv Lebenskraft und verursacht permanenten Stress. [P-53] Magie ist allgegenwärtig und kann von mächtigen Entitäten kontrolliert werden. [P-53] Wer zu lange verweilt, riskiert den abyssalen Wahnsinn; nur Vasuls Schutz gewährte der Gruppe zeitweise Immunität. [P-44] Die einheimische Fauna umfasst riesige, fliegende saurierartige Raubtiere, deren Leuchten dem Kristallglanz ähnelt, [P-38] sowie ein Sandwurm-Biest [P-54] und gefährliche Schattenkreaturen. [P-40]
+- **Bewohner:** Die Ebene ist die Heimat der vier alten Götter, die hier gefangen sind – darunter Vasul und Basul. [P-43a][P-26] Daneben existieren umherirrende Seelen, die Seelenwacht (mit Instanzen wie dem Richter und dem Schinder), [P-48] sowie dämonische Wesen und Splitterwelt-Kreaturen, deren bloße Anwesenheit für Sterbliche gefährlich ist. [P-31b][P-46] Auch [Slicks](/npcs/slix_vasul.md) stammt von hier. [P-34]
 
 ## Beziehungen und Verbindungen
 
-- **[Vasul](/deities/vharzul.md):** Alter Gott, in Abyssalis gefangen. Nutzt Lindo Laut als Wirt für einen Teil seiner selbst, um zu entkommen. Seine Rückkehr und die Zerstörung seiner gespaltenen Teile sind zentrale Handlungsmotive in Abyssalis. [P-38a, P-44a, P-45]
-- **[Vorgul'tar](/deities/vorgul_tar.md):** Beherrscht einen Teil von Abyssalis, hält Liam gefangen. Seine Macht schwindet im Verlauf der Ereignisse, Vögel fallen tot vom Himmel. [P-49, P-55]
-- **[Lunara](/characters/lunara_velora.md):** Zieht einen Teil ihrer Kräfte aus Abyssalis, kann die Splitterwelt herbeirufen und spricht deren Sprache. Ihre Verbindung wird durch den Neumond beeinflusst und kann unkontrollierbare Magie auslösen. [P-35, P-39, P-42]
-- **[Lindo Laut](/characters/lindo_laut.md):** Trägt einen Teil Vasuls in sich, kann Seelen nach Abyssalis schicken und nutzt den Beschwörungsstab, um die Ebene zu betreten. [P-32a, P-32b, P-38a]
-- **[Basul](/deities/vharzul.md):** Alter Gott, Herr der Seelen, dessen Herkunftsort Abyssalis ist. Seine Macht über Seelenessenz ist in Tyraels Erinnerungen verborgen. [P-27]
-- **[Liam](/npcs/liam_velora.md):** Lunaras Bruder, von Vorgul'tar in Abyssalis gefangen gehalten. Wird von der Gruppe befreit und kehrt mit bleibenden Spuren und seltsamen Fähigkeiten zurück. [P-45, S1-02-Aa]
-- **Seelenwacht:** Fraktion innerhalb Abyssalis, geführt vom Richter und vom Schinder. Sie unterrichten die Gruppe über die Ebene und stellen sich als Unterstützung heraus. [P-49]
-- **Gilde / Nox:** Verantwortlich für das Öffnen des Portals in Ehrenfels, das die Dämoneninvasion auslöste. Vitius betont die Schuld der Gilde an dieser Katastrophe. [S1-02-Ab]
-- **[Rotunas](/characters/rotunas.md):** Beherrscht die Sprache von Abyssalis und studiert Lunaras Runen, die mit der Ebene verbunden sind. [P-42, P-47]
-- **[Slicks](/npcs/slix_vasul.md):** Ein Wesen aus der Splitterwelt, das sich in ihrer Nähe „zu Hause“ fühlt und die Gruppe im Kampf unterstützt. [P-35]
+- **[Lindo Laut](/characters/lindo_laut.md):** Sein Dämon ist ein abgetrennter Teil Vasuls, der sich in der Splitterwelt befand. Lindo Laut hat einen Beschwörungsstab, mit dem er Portale dorthin öffnen kann, und er hat bereits Seelen in die Splitterwelt geschickt. [P-31a][P-43a] In der Zwischenwelt zwischen den Ebenen traf er auf einen Teil Vasuls, der ihm half. [P-43b]
+- **[Lunara Velora](/characters/lunara_velora.md):** Sie kann die Splitterwelt temporär herbeirufen, um das Gefechtsfeld zu shiften („Splitterwelt-Sphäre“). [P-34][P-41] Ihre Verbindung wird durch den Neumond beeinflusst und kann ihre Zauber unkontrolliert verstärken. [P-41] Sie spricht die Sprache der Splitterwelt und hat Erinnerungen an deren Himmelslichter. [P-38][P-41]
+- **[Vasul](/deities/vharzul.md):** Der alte Gott ist in der Splitterwelt gefangen und versucht durch seinen Teil in Lindo Laut zu entkommen. [P-37a] Er versprach, Liams Seele von einem der anderen gefangenen Götter zurückzuholen. [P-44]
+- **Ehrenfels:** Ein dauerhaftes Portal in der Arena der Stadt verbindet die materielle Welt direkt mit der Splitterwelt und ermöglichte den Einfall von Dämonen, was die Katastrophe von Ehrenfels auslöste. [P-46][S1-02-Ab]
+- **Nerashs Ritual:** Das Ritual zur endgültigen Zerstörung Vasuls erfordert eine Reise in die Splitterwelt. [P-37a]
 
 ## Chronologie
 
-- **Session 1 (2025-09-30):** Roland enthüllt den Mythos der Splitterwelt und Abyssalis als Gefängnis der alten Götter. [P-25]
-- **Session 2 (2025-10-14):** Lindo Laut entdeckt in Tyraels Erinnerungen den Namen „Abyssalis“ als Herkunftsort von Basul. Die Verbindung wird abgebrochen, bevor mehr offenbart wird. [P-27]
-- **Session 3-4 (2025-11-25):** Enthüllung, dass Lindo Laut Seelen nach Abyssalis schicken kann. Erstes Auftreten einer beschworenen Kreatur aus der Splitterwelt. [P-32a, P-32b]
-- **Session 7 (2026-01-20):** Lunara ruft die Splitterwelt herbei, um die Gruppe im Kampf gegen Belorus und die Untoten zu schützen. Die Ebene nähert sich der materiellen Welt an, erstarrt die Gegner und wird nach dem Kampf wieder aufgelöst. [P-35]
-- **Session 10 (2026-02-17):** Diskussion über Abyssalis als Gefängniswelt und Vasuls Versuch, durch Lindo Laut zu entkommen. Erster Plan, nach Abyssalis zu reisen, um Vasul mit Nerashs Ritual zu zerstören. [P-38a]
-- **Session 11 (2026-02-24):** Lunara erinnert sich an die wandernden Lichter am Himmel von Abyssalis – riesige, fliegende Raubtiere – deren Leuchten den Kristallen in einer Mine ähnelt. [P-39]
-- **Session 13 (2026-03-10):** Die Gruppe durchquert die Zwischenebene der Splitterwelt mit Zandros Hilfe und erreicht das Tor nach Abyssalis. Brim fühlt sich stark verunsichert. [P-41]
-- **Session 14 (2026-03-18):** Lunara spricht unfreiwillig die Sprache von Abyssalis, um Soldaten zur Aufgabe zu zwingen, und offenbart damit ihre tiefe Verbindung zur Ebene. [P-42]
-- **Session 16 (2026-03-24):** Plan zur Reise nach Abyssalis, um Liam zu retten und die Vasul-Teile zu bekämpfen. Voras und Nox erstellen ein Portal in die Zwischenwelt. [P-44a, P-44b]
-- **Session 18 (2026-03-31):** Die Gruppe springt direkt nach Abyssalis in die Erntefelder, wird von Vasul teleportiert und sieht erstmals die volle, unwirkliche Landschaft der Ebene. [P-45]
-- **Session 20 (2026-04-09):** Bestätigung, dass die Dämonen in Ehrenfels aus Abyssalis stammen und das Portal in der Arena die Verbindung darstellt. [P-47]
-- **Session 22 (2026-05-06):** Die Gruppe trifft in Abyssalis auf die Seelenwacht (Richter und Schinder). Die Ebene wird als „abgefuckt“ wie der Abyss oder Made in Abyss beschrieben. [P-49]
-- **Session 24-25 (2026-05-13, 2026-06-10):** Holodarn zerstört ein Portal in Abyssalis, die Gruppe wird getrennt und findet wieder zusammen. Die Ebene zehrt an ihnen und verursacht Erschöpfung. [P-50, P-54]
-- **Session 27 (2026-06-16):** Aufenthalt im Keller eines alten Turms in Abyssalis, Vasul kommuniziert über einen Raben. Vorgul'tars Macht schwindet, die Welt ist in Aufruhr. [P-55]
-- **Session 30 (2026-07-21):** Die Höhle mit dem Splitter bricht zusammen, die Gruppe verlässt Abyssalis durch ein Portal. Ende der Kampagnenphase. [P-57]
-- **Session 32-33 (2026-08-04):** Liams Rettung wird resümiert. Sein Aufenthalt im Abyssalis hat ihn tief geprägt und ihm seltsame Fähigkeiten verliehen. Vitius betont die Gefahr und die Konsequenzen der Reise. [S1-02-Aa, S1-02-Ab]
+[P-24] **Vor der Kampagne:** Die Splitterwelt entsteht im Götterkrieg als Gefängnis für die alten Götter. Alte Schriften berichten von einer „Welt des Schreckens“, aus der Überlebende mit großer Macht zurückkehren. [1]
+[P-26] **Session 2 (2025-10-14):** In [Tyrael](/npcs/tyrael.md) verborgenen Erinnerungen findet Lindo Laut den Namen der Splitterwelt als Herkunft von Basul. [2]
+[P-31a] **Session 3/4 (2025-11-25):** Lindo Laut schickt die Seele eines Sterbenden direkt in die Splitterwelt – eine seiner Aufgaben. [3] Ein absorbierendes Wesen aus der Splitterwelt wird gesichtet; [4] seine Anwesenheit gilt als Gefahr für Reisende.
+[P-31b] **Session 5 (2026-01-20):** [Lunara Velora](/characters/lunara_velora.md) aktiviert ihre Runen und bringt temporär die Splitterwelt in die materielle Ebene, um die Untoten erstarren zu lassen. Slicks kommentiert: „Wir sind zu Hause.“ [5]
+[P-34] **Session 6/7 (2026-02-17):** Die Gruppe bespricht, mit dem Stab in die Splitterwelt zu reisen, um Vasul zu zerstören. Lunara nutzt die Splitterwelt erneut zur Täuschung von Slicks. [6][7]
+[P-37a] **Session 9 (2026-03-10):** Die Gruppe durchquert die Zwischenebene, erreicht das Tor zur Splitterwelt und kämpft gegen eine Schattenkreatur, deren Seele nach dem Tod dorthin gezogen wird. [9]
+[P-37b] **Session 10 (2026-03-18):** Lunara spricht unfreiwillig die Sprache der Splitterwelt und zwingt damit gegnerische Soldaten zur Aufgabe. [10]
+[P-38] **Session 11 (2026-03-24):** Der Plan konkretisiert sich: Reise in die Splitterwelt, um Liam zu retten und Vasuls Teile zu bekämpfen. [11]
+[P-40] **Session 13 (2026-03-31):** Die Gruppe betritt die Splitterwelt direkt über Vasuls Festung. Sie sehen lila Berge, bunte Himmelslichter und die Erntefelder. Vasul erklärt, dass Liams Essenz im Besitz eines anderen alten Gottes ist. [13]
+[P-41] **Session 15 (2026-05-06):** Erste Begegnung mit der Seelenwacht (Richter, Schinder) in der Festung Jalan. [15]
+[P-43a] **Session 16 (2026-05-13):** Holodarn öffnet ein Portal, das die Gruppe zurück in die materielle Welt bringen könnte. Eine angelartige Gestalt (ein Seraph) zerstört jedoch ein Pentagramm-artiges Portal und droht der Gruppe. [16]
+[P-43b] **Session 17–20 (2026-05-19 bis 2026-07-21):** Die Gruppe bewegt sich durch verschiedene Regionen der Splitterwelt – Narbenfelder, Statuen, Sandwurm, und erreicht schließlich den Tempel mit dem Splitter. Die Umgebung zehrt an ihren Kräften. [17][19][20] Am Ende bricht die Höhle zusammen und die Gruppe entkommt durch ein Portal. [20]
+[P-44] **Session 21–22 (2026-08-04):** Liam ist befreit, sein Aufenthalt in der Splitterwelt hat ihn tief geprägt und ihm seltsame Fähigkeiten verliehen. [21] Die Gilde räumt ein, dass das Portal in Ehrenfels die Katastrophe verursachte. [22]
 
 ## Offene Fragen
 
-- Wer oder was genau hält die alten Götter in Abyssalis gefangen? Die Schriften sprechen nur vage von einem umgedrehten Zauber der neuen Götter. [P-25]
-- Welche Wesenheit oder Kraft hat die Bastion der alten Götter in ein Gefängnis verwandelt?
-- Ist Vasul nach den Ereignissen endgültig zerstört oder existieren weitere Teile von ihm in Abyssalis oder anderswo?
-- Welche langfristigen Folgen hat die Zerstörung des Splitters und die Flucht aus Abyssalis für die Ebene selbst und ihre Bewohner?
-- Inwieweit ist Liams Seele durch den Aufenthalt in Abyssalis dauerhaft verändert, und welche Fähigkeiten hat er exakt erlangt?
+- Wer oder was genau die alten Götter in der Splitterwelt gefangen hat – die neuen Götter oder eine dritte Macht?
+- Ob die riesigen fliegenden Raubtiere, die Lunara in ihrer Erinnerung sah, noch immer existieren.
+- Welche Konsequenzen die Zerstörung Vasuls für die Stabilität der Splitterwelt hätte.
+- Welche anderen alten Götter neben Vasul und Basul noch in der Splitterwelt gefangen sind (einer wird als Besitzer von Liams Essenz genannt, bleibt aber namentlich unerwähnt). [P-44]
+- Weshalb Lunara Velora eine derart tiefe Verbindung zur Splitterwelt hat und ob sie von den alten Göttern abstammt.
 
 ## Belege
 
-[P-25] Session 2025-09-30 @ 01:50:02 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
-[P-27] Session 2025-10-14 @ 01:59:42 (https://www.youtube.com/watch?v=cUtz87UCHu4)
-[P-32a] Session 2025-11-25 @ 01:56:17 (https://www.youtube.com/watch?v=wd5R4fJfngY)
-[P-32b] Session 2025-11-25 @ 00:09:04 (https://www.youtube.com/watch?v=wd5R4fJfngY)
-[P-35] Session 2026-01-20 @ 01:34:52 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
-[P-38a] Session 2026-02-17 @ 01:35:05 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
-[P-38b] Session 2026-02-17 @ 02:06:13 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
-[P-39] Session 2026-02-24 @ 01:43:00 (https://www.youtube.com/watch?v=WOFArbwDDIQ)
-[P-41] Session 2026-03-10 @ 01:22:41 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
-[P-42] Session 2026-03-18 @ 01:31:21 (https://www.youtube.com/watch?v=HHXxsASLrbQ)
-[P-44a] Session 2026-03-24 @ 01:45:33 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
-[P-44b] Session 2026-03-24 @ 00:37:46 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
-[P-45] Session 2026-03-31 @ 01:10:31 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
-[P-47] Session 2026-04-09 @ 00:38:04 (https://www.youtube.com/watch?v=vcGkejr8_nI)
-[P-49] Session 2026-05-06 @ 00:07:35 (https://www.youtube.com/watch?v=MB4quhDWsQE)
-[P-50] Session 2026-05-13 @ 00:07:02 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
-[P-54] Session 2026-06-10 @ 00:21:31 (https://www.youtube.com/watch?v=_3tLSiT1tck)
-[P-55] Session 2026-06-16 @ 00:04:51 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
-[P-57] Session 2026-07-21 @ 00:00:42 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
+[P-24] Session 2025-09-30 @ 01:50:02 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[P-26] Session 2025-10-14 @ 01:59:42 (https://www.youtube.com/watch?v=cUtz87UCHu4)
+[P-31a] Session 2025-11-25 @ 01:56:17 (https://www.youtube.com/watch?v=wd5R4fJfngY)
+[P-31b] Session 2025-11-25 @ 00:09:04 (https://www.youtube.com/watch?v=wd5R4fJfngY)
+[P-34] Session 2026-01-20 @ 01:34:52 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
+[P-37a] Session 2026-02-17 @ 01:35:05 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
+[P-37b] Session 2026-02-17 @ 02:06:13 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
+[P-38] Session 2026-02-24 @ 01:43:00 (https://www.youtube.com/watch?v=WOFArbwDDIQ)
+[P-40] Session 2026-03-10 @ 01:22:41 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
+[P-41] Session 2026-03-18 @ 01:31:21 (https://www.youtube.com/watch?v=HHXxsASLrbQ)
+[P-43a] Session 2026-03-24 @ 01:45:33 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
+[P-43b] Session 2026-03-24 @ 00:37:46 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
+[P-44] Session 2026-03-31 @ 01:10:31 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
+[P-46] Session 2026-04-09 @ 00:38:04 (https://www.youtube.com/watch?v=vcGkejr8_nI)
+[P-48] Session 2026-05-06 @ 00:07:35 (https://www.youtube.com/watch?v=MB4quhDWsQE)
+[P-49] Session 2026-05-13 @ 00:07:02 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
+[P-50] Session 2026-05-19 @ 00:01:04 (https://www.youtube.com/watch?v=xEcGJeaNixI)
+[P-53] Session 2026-06-10 @ 00:21:31 (https://www.youtube.com/watch?v=_3tLSiT1tck)
+[P-54] Session 2026-06-16 @ 00:04:00 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
+[P-55] Session 2026-07-21 @ 00:00:42 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
 [S1-02-Aa] Session 2026-08-04 @ 00:10:40 (https://www.youtube.com/watch?v=qRj2t3wQHfs)
 [S1-02-Ab] Session 2026-08-04 @ 00:27:19 (https://www.youtube.com/watch?v=qRj2t3wQHfs)

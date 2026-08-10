@@ -27,5 +27,5 @@ Mil ist eine offenbar weithin bekannte Persönlichkeit, vermutlich in der Rolle 
 
 # Belege
 
-[P-27] Session 2025-10-14, 01:00:01 (https://www.youtube.com/watch?v=cUtz87UCHu4) – Erstes Auftreten: katzenartiger Berserker, Solo-Champion, wittert Dämonen, misstrauisch, taktische Ratschläge, Ausbildungsangebot, Gedächtnislücken.
-[P-40] Session 2026-03-03, 00:56:02 (https://www.youtube.com/watch?v=BRUNuNKTeOg) – Mil als bekannte Persönlichkeit, Verwandlungsoption durch Goblin, von Gruppe abgelehnt.
+[P-26] Session 2025-10-14, 01:00:01 (https://www.youtube.com/watch?v=cUtz87UCHu4) – Erstes Auftreten: katzenartiger Berserker, Solo-Champion, wittert Dämonen, misstrauisch, taktische Ratschläge, Ausbildungsangebot, Gedächtnislücken.
+[P-39] Session 2026-03-03, 00:56:02 (https://www.youtube.com/watch?v=BRUNuNKTeOg) – Mil als bekannte Persönlichkeit, Verwandlungsoption durch Goblin, von Gruppe abgelehnt.

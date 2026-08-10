@@ -14,7 +14,7 @@ Die Minen-Goblins sind eine kleine, chaotische Bande von Goblins, die in der Min
 
 ## Rolle und Stellung in der Mine
 
-Die Goblins verrichten Handlangerdienste für die [Bugbären](/factions/bugbaeren_minen_trupp.md) und Gnolle, die ihnen in der Hierarchie der Mine übergeordnet sind. Diese Arbeit als untergeordnete Hilfskräfte prägt ihren Alltag; über konkrete Aufgaben oder das Verhältnis zu den übrigen Bewohnern der Mine ist jedoch nichts Weiteres dokumentiert.
+Die Goblins verrichten Handlangerdienste für die [Bugbären](/factions/bugbaeren_minen_trupp.md) und [Gnolle](/factions/gnolle_und_goblins.md), die ihnen in der Hierarchie der Mine übergeordnet sind. Diese Arbeit als untergeordnete Hilfskräfte prägt ihren Alltag; über konkrete Aufgaben oder das Verhältnis zu den übrigen Bewohnern der Mine ist jedoch nichts Weiteres dokumentiert.
 
 ## Lebensweise und Bräuche
 

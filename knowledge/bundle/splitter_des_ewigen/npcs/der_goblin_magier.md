@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Der Goblin-Magier
-description: Der Goblin-Magier ist ein magiebegabter Goblin, der in zwei dokumentierten
-  Vorfällen als Gegner der Gruppe auftritt. In beiden Fällen wird…
+description: Der Goblin-Magier ist ein magiebegabter Goblin, der der Gruppe in zwei
+  getrennten Begegnungen gegenübertrat. Beide Male endet die Konfronta…
 tags:
 - npcs
 timestamp: '2026-05-19T00:00:00Z'
@@ -13,27 +13,21 @@ aliases:
 status: disputed
 ---
 
-# Der Goblin-Magier
+Der Goblin-Magier ist ein magiebegabter Goblin, der der Gruppe in zwei getrennten Begegnungen gegenübertrat. Beide Male endet die Konfrontation tödlich für ihn — jeweils im direkten Zweikampf mit [Esterossa](/characters/esterossa.md). Er gehört zu den wenigen Gegnern der Gruppe, die Magie wirken und sich zugleich verständigen können.
 
-Der Goblin-Magier ist ein magiebegabter Goblin, der in zwei dokumentierten Vorfällen als Gegner der Gruppe auftritt. In beiden Fällen wird er von [Esterossa](/characters/esterossa.md) getötet. Ob es sich um dieselbe Entität oder um verschiedene Individuen handelt, die nur ähnlich bezeichnet werden, ist durch die Belege nicht geklärt.
+## Erste Begegnung: Hauptgebäude
 
-## Fähigkeiten und Auftreten
+Beim ersten Zusammentreffen hält sich der Goblin-Magier im Obergeschoss des Hauptgebäudes auf. Als die Gruppe angreift, zieht er sich, von dunklem Nebel umhüllt, teleportierend eine Etage höher zurück. Von dort schleudert er Feuerbälle auf Esterossa und erzeugt eine Druckwelle. Im anschließenden Ringkampf mit Esterossa unterliegt er jedoch: Er wird die Treppe hinuntergestoßen, wo er aufgespießt stirbt.
 
-Im Obergeschoss des Hauptgebäudes zeigt der Goblin-Magier ausgeprägte magische Fähigkeiten: Er teleportiert sich mit einem dunklen Nebel eine Etage höher, schleudert Feuerbälle auf Esterossa und erzeugt eine Druckwelle. Im Ringkampf mit Esterossa unterliegt er.
+## Zweite Begegnung: Anführer der Bogenschützen
 
-Der zweite Goblin-Magier tritt als korrumpierter, intelligenter Magier und Anführer einer Goblin-Patrouille auf. Er kann schweben und spricht Goblinisch mit [Dodo](/characters/dodo.md). Auf Dodds Antwort, die Gruppe wolle sich nur ein Bild machen, reagiert er wütend, weist sie ab und befiehlt den Rückzug.
-
-## Begegnungen mit der Gruppe
-
-In der ersten Begegnung greift die Gruppe das Hauptgebäude an; der Goblin-Magier flieht zunächst per Teleportation nach oben, wird aber im folgenden Kampf von Esterossa die Treppe hinuntergestoßen und stirbt dort aufgespießt.
-
-In der zweiten Begegnung steht die Gruppe ihm als Anführer einer Patrouille gegenüber. Er fragt Dodo, ob sie zu Wargulta wollen. Nach dem Wortwechsel mit Dodo kommt es zum Kampf; der Goblin-Magier flieht, wird von Esterossa verfolgt und schließlich mit der Axt in zwei Teile gehauen, nachdem das verfluchte Schwert zunächst versagt hat.
-
-## Offene Konflikte
-
-- In [P-02] stirbt der Goblin-Magier in der Session vom 01.04.2025; in [P-51] tritt in der späteren Session vom 19.05.2026 erneut ein Goblin-Magier auf und stirbt ebenfalls. Es gibt keinen Beleg für eine Wiederbelebung oder dafür, dass es sich um zwei verschiedene Individuen handelt.
+Später tritt der Goblin-Magier erneut in Erscheinung, nun als intelligenter, korrumpierter Goblin mit leuchtend roten Augen, der einen Trupp Bogenschützen anführt. Er spricht Goblinisch und die Gemeinsprache, wirkt Magie und schwebt herab, um mit [Dodo](/characters/dodo.md) zu verhandeln. Als er erfährt, dass die Gruppe keine Anhänger [Vorgul'tars](/deities/vorgul_tar.md) sind, bezeichnet er sie als „elende Missgestalt“ und befiehlt den Angriff. Er versucht zu fliehen, wird aber von Esterossa gestellt und getötet.
 
 # Belege
 
-[P-02] Session 2025-04-01 @ 01:43:22 (https://www.youtube.com/watch?v=LZIuUzc3F18)
-[P-51] Session 2026-05-19 @ 01:56:19 (https://www.youtube.com/watch?v=xEcGJeaNixI)
+[P-02] Session 2025-04-01, 01:43:22 – https://www.youtube.com/watch?v=LZIuUzc3F18
+[P-50] Session 2026-05-19, 01:57:16 – https://www.youtube.com/watch?v=xEcGJeaNixI
+
+# Offene Konflikte
+
+- Beleg 1 zufolge stirbt der Goblin-Magier in der ersten Begegnung, aufgespießt an der Treppe. Beleg 2 zeigt ihn zu einem späteren Zeitpunkt wieder lebend, erneut im Kampf mit Esterossa, und endet wiederum mit seinem Tod. Eine Wiederbelebung wird in den Quellen nicht erwähnt; unklar ist, ob es sich um dieselbe Figur handelt (etwa durch Auferstehung) oder um zwei verschiedene goblinische Magiewirker unter derselben Bezeichnung.

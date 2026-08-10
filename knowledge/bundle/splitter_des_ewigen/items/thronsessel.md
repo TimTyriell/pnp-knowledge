@@ -14,4 +14,4 @@ Ein abgrundtief böser, Energie ausstrahlender Thron, den die Helden aus dem Hei
 
 # Belege
 
-[P-21] Session 2025-09-06 @ 00:53:54 (https://www.youtube.com/watch?v=vo1xnyLQDJk)
+[P-20] Session 2025-09-06 @ 00:53:54 (https://www.youtube.com/watch?v=vo1xnyLQDJk)

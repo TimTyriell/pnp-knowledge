@@ -14,4 +14,4 @@ Eine einzelne Goldmünze, die [Nyrella](/characters/nyrella.md) aus dem Pot nimm
 
 # Belege
 
-[P-44] Session 2026-03-24 @ 00:25:24 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
+[P-43] Session 2026-03-24 @ 00:25:24 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)

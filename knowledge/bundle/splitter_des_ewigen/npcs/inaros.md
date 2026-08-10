@@ -15,11 +15,11 @@ Ein männlicher Strixwolf, der in Ehrenfels lebt. Er wurde von [Dodo](/character
 
 ## Rettung und Unterschlupf
 
-Inaros wurde von Dodo und Lunara in einer lebensbedrohlichen Lage aufgespürt und vor Willauch bewahrt. Seitdem lebt er mit einem Strixwolf-Ei in einem geheimen Versteck in Ehrenfels. Dodo fühlt sich für die Wesen verantwortlich und will ihnen ein sicheres Zuhause schaffen, das fern von Willauchs Jagt liegt. [P-44]
+Inaros wurde von Dodo und Lunara in einer lebensbedrohlichen Lage aufgespürt und vor Willauch bewahrt. Seitdem lebt er mit einem Strixwolf-Ei in einem geheimen Versteck in Ehrenfels. Dodo fühlt sich für die Wesen verantwortlich und will ihnen ein sicheres Zuhause schaffen, das fern von Willauchs Jagt liegt. [P-43]
 
 ## Fluchthilfe für die Gruppe
 
-Inaros ist den Bewohnern von Ehrenfels bekannt. Als die Gruppe sich nach einer gefährlichen Begegnung mit Nerash in einer prekären Lage befindet, erscheint Inaros unerwartet, schnappt sich Nox und bietet allen die Möglichkeit, sich auf seinem Rücken in Sicherheit zu bringen. Rotunas bleibt bewusst zurück, um ihm die nötige Zeit für die Flucht zu verschaffen. [P-47]
+Inaros ist den Bewohnern von Ehrenfels bekannt. Als die Gruppe sich nach einer gefährlichen Begegnung mit Nerash in einer prekären Lage befindet, erscheint Inaros unerwartet, schnappt sich Nox und bietet allen die Möglichkeit, sich auf seinem Rücken in Sicherheit zu bringen. Rotunas bleibt bewusst zurück, um ihm die nötige Zeit für die Flucht zu verschaffen. [P-46]
 
 ## Beziehungen
 
@@ -31,5 +31,5 @@ Inaros ist den Bewohnern von Ehrenfels bekannt. Als die Gruppe sich nach einer g
 
 # Belege
 
-[P-44] Session 2026-03-24 @ 01:28:44 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
-[P-47] Session 2026-04-09 @ 01:55:47 (https://www.youtube.com/watch?v=vcGkejr8_nI)
+[P-43] Session 2026-03-24 @ 01:28:44 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
+[P-46] Session 2026-04-09 @ 01:55:47 (https://www.youtube.com/watch?v=vcGkejr8_nI)

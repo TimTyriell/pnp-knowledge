@@ -13,4 +13,4 @@ Ein Orakel in einem Haus mit einem Knochendrachen, das [Ohoriaks](/deities/ohori
 
 # Belege
 
-[P-48] Session 2026-04-14 @ 01:57:46 (https://www.youtube.com/watch?v=1Jyu92P7_Fg)
+[P-47] Session 2026-04-14 @ 01:57:46 (https://www.youtube.com/watch?v=1Jyu92P7_Fg)
