@@ -1,35 +1,43 @@
 ---
 type: Item
 title: Grüne Kristalle
-description: Die grünen Kristalle sind eine korrumpierte Variante, die die lila Kristalle
-  in grüne umwandeln kann, wenn sie mit ihnen in Kontakt kommen.…
+description: <!-- Body für items/gruener_kristall.md -->
 tags:
 - items
 timestamp: '2026-05-13T00:00:00Z'
 id: ITEM_GRUENER_KRISTALL
+subtype: Artefakt
 aliases:
 - Der Kristall
-- Grüner Kristall
 ---
 
-Die **Grünen Kristalle** sind eine korrumpierte Variante der lila Kristalle. Sie entstehen, wenn lila Kristalle mit ihnen in Kontakt kommen, und wandeln diese um. Sie sind feueranfälliger, verbrennen schneller und können explosionsartig reagieren. Die Kristalle scheinen eine magische Präsenz auszustrahlen, die mit der Hack in Verbindung gebracht wird, und wurden an mehreren Orten als treibende Kraft für Konstrukte und Statuen genutzt.
+<!-- Body für items/gruener_kristall.md -->
 
-## Eigenschaften und Verhalten
+## Überblick
 
-Grüne Kristalle sind instabiler als ihre lila Gegenstücke: Sie sind feueranfälliger und gehen bei Kontakt mit Feuer explosionsartig in Flammen auf. Eine solche Explosion schleuderte [Dodo](/characters/dodo.md) zurück und bescherte ihm eine Vision: ein Labor mit einem großen grünen Kristall und einer Gestalt. Die Detonation zerstört den Kristall endgültig – nach der Explosion erlischt z. B. das Leuchten der zugehörigen Statue. Zudem sind die Kristalle offenbar in der Lage, lila Kristalle zu infizieren und selbst in grüne zu verwandeln, wenn sie in Kontakt kommen. Sie wachsen in pulsierenden grünen Strukturen und können als animierendes Element für Konstrukte wie einen Golem oder eine Statue dienen.
+**Grüne Kristalle** sind eine Variante der in der Splitterwelt vorkommenden Kristalle. Sie leuchten grün, strahlen eine leichte magische Präsenz aus und enthalten im Inneren einen pulsierenden Herzschlag. Ihre Platzierung wurde offenbar absichtlich manipuliert, um Kontrolle auszuüben. Die Kristalle sind extrem feuerempfindlich und verbrennen rückstandslos, können aber andere Kristallarten assimilieren.
 
-## Vorkommen und Rolle
+## Eigenschaften
 
-Die grünen Kristalle traten in mehreren Zusammenhängen auf:
+Ein grüner Kristall ist durch sein charakteristisches grünes Leuchten und einen schwachen, aber spürbaren magischen Puls erkennbar. Im Inneren ist ein regelmäßiger Herzschlag wahrnehmbar. Die Kristalle besitzen die Fähigkeit, **lilafarbene Kristalle** zu assimilieren: Bereits eine kleine grüne Fläche genügt, um einen gesamten violetten Stein vollständig einzufärben und zu übernehmen. Diese Assimilationskraft deutet auf eine inhärente Dominanz oder ein hierarchisches Verhältnis zwischen den Kristallfarben hin.
 
-- **Mine und Kontrollrune**: In der Mine wurden sie zusammen mit einer Kontrollrune gefunden, was auf eine gezielte Manipulation hindeutet. Sie wuchsen auch in der pulsierenden grünen Struktur, die [Lindo Laut](/characters/lindo_laut.md) und Dodo zerstörten.
-- **Statue und Golem**: Ein grüner Kristall war das animierende Element einer Statue. Der gleiche Kristalltyp trieb offenbar auch einen Golem an, der mit dem vergifteten Essen in Verbindung stand, das den Boten befallen hatte. Nach der Zerstörung des Kristalls verlor die Statue endgültig ihre Energie.
-- **Lunaras Kristall**: Lunara besitzt einen explosiven grünen Kristall von einem früheren Abenteuer. Sie erwog kurz, ihn gegen den Ring einzusetzen, behielt ihn aber letztlich.
-- **Laborszene**: Dodos Vision deutet auf ein Labor mit einem großen grünen Kristall hin, was auf einen zentralen Ursprungsort hindeutet.
+Feuer stellt die verwundbarste Stelle der grünen Kristalle dar: Sie verbrennen **vollständig und ohne Rückstände**, sobald sie starker Hitze ausgesetzt werden. Dies unterscheidet sie von anderen Kristallarten, die gegenüber Feuer möglicherweise resistenter sind.
 
-Die Kristalle sind eng mit der Hack verknüpft, die die magische Präsenz der Kristalle zu steuern scheint.
+## Rolle und Nutzung
 
-# Belege
-1. Session 2025-10-07 @ 00:35:30 (https://www.youtube.com/watch?v=qVAF_54S8Vw)
-2. Session 2026-01-06 @ 01:13:03 (https://www.youtube.com/watch?v=VGw81seFvbo)
-3. Session 2026-05-13 @ 00:39:21 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
+In der Hand von Mächten wie **Belorus** dienen grüne Kristalle als mächtige Artefakte, um Magie zu kanalisieren und zu verstärken. Ein solcher Kristall wurde von Belorus eingesetzt, um einen Zauber zu ermöglichen – der Kristall war kurz davor, **aktiviert** zu werden, als die Splitterwelt erschien, was die Aktivierung unterbrach. Versuche, den Kristall mit einer Balliste zu zerstören (durchgeführt von **Hal**) oder durch einen Feuerball (gewirkt von **Rotunas**) scheiterten; der Feuerball richtete keinerlei Schaden an. Dies legt nahe, dass die Kristalle zwar feuerempfindlich, aber nicht durch magisches Feuer angreifbar sind, oder dass der Kristall durch Belorus’ Magie geschützt wurde.
+
+Ein weiterer funkelnder Kristall, der von dem **Richter** gefunden wurde und zuvor eine Truhe geöffnet hatte, zeigte ähnliche Reaktionen wie ein Explosionskristall und wurde von **Lunara** an sich genommen, nachdem sie dessen Gefährlichkeit erkannt hatte. Ob es sich dabei ebenfalls um einen grünen Kristall handelt, ist nicht eindeutig belegt.
+
+## Verlauf
+
+Die grünen Kristalle tauchten im Verlauf der Kampagne an verschiedenen Orten auf:
+- Ihre Platzierung in der Splitterwelt wurde offenbar **manipuliert**, um Kontrolle auszuüben (Beleg 1).
+- Ein Exemplar befand sich im Besitz von Belorus, der es zur magischen Kanalisation nutzte. Es wurde nach dem Auftauchen der Splitterwelt nicht aktiviert (Beleg 2).
+- Ein weiteres Exemplar (oder ein ähnlicher Kristall) wurde vom Richter in einer Truhe entdeckt und von Lunara sichergestellt (Beleg 3).
+
+## Belege
+
+[P-25] Session 2025-10-07 @ 00:35:18 – [YouTube](https://www.youtube.com/watch?v=qVAF_54S8Vw)
+[P-34] Session 2026-01-20 @ 00:51:06 – [YouTube](https://www.youtube.com/watch?v=H3ckYdTv4y8)
+[P-49] Session 2026-05-13 @ 00:39:24 – [YouTube](https://www.youtube.com/watch?v=4afPD9Q_5AY)

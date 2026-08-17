@@ -1,8 +1,8 @@
 ---
 type: Character
 title: Otis
-description: 'Ein menschlicher Ranger, ehemals Steinklöpper aus einem Steinbruch.
-  In dieser Session agiert er als impulsiver Kämpfer: Er entschuldigt sic…'
+description: Optisch wird er als "sehr großgewachsener, junger, menschlicher Mann"
+  geschildert. Im Kampfgeschehen wirkt er sowohl mit roher Gewalt als a…
 tags:
 - characters
 timestamp: '2026-04-09T00:00:00Z'
@@ -10,128 +10,36 @@ id: CHAR_OTIS
 ---
 
 ## Überblick
+Otis ist ein menschlicher Waldläufer, der bei der ersten Vorstellungsrunde als "Human Ranger" beschrieben wird. Er wuchs in einem Steinbruch auf und hat diesen Hintergrund nach eigener Aussage hinter sich gelassen, um sich neuen Aufgaben zu widmen: "Ich […] bin in einem… Steinbruch aufgewachsen und habe jetzt vor, was anderes zu kloppen außer Steine." Kämpferisch tritt er mit einem Hammer sowie einem Kurzbogen in Erscheinung, wobei seine physische Kraft und unkonventionelle Taktiken hervorstechen.
 
-Otis ist ein menschlicher Waldläufer (*Human Ranger*), der ursprünglich
-in einem Steinbruch als „Steinklöpper“ gearbeitet hat. Er ist ein
-großgewachsener, junger Mann, impulsiv und kampflustig, mit einer
-tiefen – fast zärtlichen – Verbindung zu Stein und Fels. Seine primären
-Waffen sind ein großer Hammer und ein Bogen, wobei er eher durch
-unorthodoxe Nahkampftaktiken auffällt als durch elegante Technik. Otis
-zeichnet sich durch eine pragmatisch‑humorvolle Art aus und handelt
-oft aus dem Bauch heraus, was ebenso zu brachialen Aktionen wie dem
-Einschlagen von Wänden führt wie zu spontanen Rettungsaktionen.
+Optisch wird er als "sehr großgewachsener, junger, menschlicher Mann" geschildert. Im Kampfgeschehen wirkt er sowohl mit roher Gewalt als auch mit spontaner Effektivität – etwa wenn er einen Wächterkopf an einer Wand zermalmt oder Dämonen mit einem Schwung seines Hammers wie Kegel umstößt.
 
 ## Rolle in der Kampagne
-
-Otis ist Teil einer Abenteurergruppe, die in ihrer ersten bekannten
-Mission Gefangene nach Willau eskortiert. Dort agiert er als einer der
-vordersten Kämpfer, dessen rohe Kraft und unkonventionelle Manöver
-regelmäßig zum Tragen kommen. In der zweiten Session wird er unerwartet
-zum Beschützer zweier Kinder, die inmitten eines Dämonenangriffs von
-einem Magier (Xerxes) an ihn übergeben werden. Otis
-beweist in dieser Szene nicht nur Kampfkraft, sondern auch
-Verantwortungsgefühl, als er die Kinder in Sicherheit bringt und wenig
-später einen Gruppenkameraden vor dem Absturz rettet.
+Otis ist ein beständiger Teilnehmer der Abenteuergruppe. In der ersten dokumentierten Mission agiert er als impulsiver Kämpfer und führt die Aufgabe pragmatisch zu Ende: Er bringt Gefangene nach [Willoch](/locations/willauch.md), weil er dafür bezahlt wurde. In der zweiten Session hat er sich der Gruppe um [Rotunas](/characters/rotunas.md) angeschlossen und ist an der Rettung von Kindern sowie der Zerstörung von Portalsäulen beteiligt. Vom Spielleiter wird erwähnt, dass er nach der ersten Quest "die letzten Tage ein bisschen vielleicht im Saus und Braus gelebt" habe.
 
 ## Wichtige Merkmale
-
-- **Erscheinung:** Otis wird als „großgewachsener, junger menschlicher
-  Mann“ beschrieben. In der Kampagne nutzt sein Spieler Nils das
-  Charakterportrait eines *Human Ranger* aus dem Setting.
-- **Waffen:** Ein großer Hammer (später ein verbesserter Kriegshammer,
-  den er von [Krall](/characters/krall.md) erhält) sowie ein Bogen.
-- **Kampfstil:** Otis setzt auf rohe Wucht und überraschende Manöver.
-  Er selbst bezeichnet seinen Stil als „Steinschubser“ – in einer
-  Szene schleudert er einen Dämon „wie eine Bowlingkugel“ in weitere
-  Gegner. Sein aus dem Steinbruch stammendes Wissen über Hebel, Gewicht
-  und Bruchkanten verleiht ihm handfeste Vorteile im Kampf. Zudem
-  beherrscht er einen regeltechnischen *Death‑Maneuvers*‑Skill, mit dem
-  er besonders verheerende Angriffe ausführen kann.
-- **Persönlichkeit:**
-  - *Impulsiv und direkt:* Er schlägt ohne Zögern eine Scheunenwand
-    ein und kickt [Floran](/npcs/floran.md) mit einem Sparta‑Tritt zurück.
-  - *Pragmatisch‑humorvoll:* Vor dem Dämonenkampf stiehlt er drei
-    Weinkelche aus einem Zelt; einen schönen Stein hebt er
-    kommentarlos auf und denkt dabei an seine Mutter. Für eine
-    Entscheidung über das Ziel der Gefangeneneskorte lässt er sich
-    mit Geld beeinflussen und findet die Leute in Willau einfach
-    „cool“.
-  - *Beschützend:* Als zwei Kinder in Gefahr sind, handelt er sofort,
-    bringt sie weg vom Kampfgeschehen und riskiert später sein Leben,
-    um [Brim](/characters/brim.md) vor einem Absturz zu bewahren.
-- **Zitate:**
-  - „Hi, ich bin Nils. Ich spiele heute Otis, einen Human Ranger und
-    bin in einem... Steinbruch aufgewachsen und habe jetzt vor, was
-    anderes zu kloppen außer Steine.“ (Session 2026‑03‑23)
-  - „Nicht die Kinder, die haben doch viel Platz zum Wachsen.“
-    (sinngemäß, als er die bedrohten Kinder bemerkt, Session 2026‑04‑09)
+- **Kampf mit dem Hammer:** Otis’ primäre Waffe ist ein Kriegshammer, mit dem er massive physische Schäden verursacht. In der ersten Session reißt er mit einem kritischen Schlag die Rückwand einer Scheune ein. Gegen Ende erhält er von einer nicht namentlich genannten Quelle einen verbesserten Kriegshammer geschenkt.
+- **Kurzbogen:** In der zweiten Session wird erwähnt, dass er auch einen Kurzbogen führt und diesen effektiv einsetzt – so erlegt er einen Dämonenmagier mit einem gezielten Schuss.
+- **Impulsivität und Ungeschicklichkeit:** Sein Verhalten kann unbedacht sein. So beschwert er sich lautstark über die Unterkunft und alarmiert dadurch feindliche Banditen.
+- **Unkonventionelle Taktiken:** Abseits roher Gewalt zeigt er kreative Kampfhandlungen, etwa das "Wegkegeln von Dämonen wie Bowlingkugeln."
+- **Steinbruch-Herkunft:** Sein Wissen über Fels und Gestein kommt taktisch zum Einsatz, als er gemeinsam mit [Rotunas](/characters/rotunas.md) Portalsäulen zerstört.
+- **Humor:** Er wird als humorvoll beschrieben und zeigt eine emotionale Seite, etwa durch den Wunsch, seiner Mutter einen schönen Stein mitzubringen.
 
 ## Beziehungen und Verbindungen
-
-- **[Krall](/characters/krall.md)** – der schildkrötenartige Guardian schmiedet
-  Otis einen verbesserten Kriegshammer und scheint ihm wohlgesonnen.
-- **Xerxes** – der Magier vertraut Otis während des
-  Dämonenangriffs zwei Kinder an, mit den Worten: „Lauf dem dort, er
-  bringt euch in Sicherheit!“
-- **Nina** – eine namentlich bekannte, aber nicht
-  näher beschriebene Person, die Otis irreführend als „Ehemann“ oder
-  „Sohn“ bezeichnet. Die Ursache für diese Verwechslung ist unklar und
-  sorgte am Tisch für Verwirrung.
-- **[Floran](/npcs/floran.md)** – Otis kickt Floran in einem Kampf oder
-  Gerangel mit einem Sparta‑Tritt weg. Die Umstände deuten auf
-  Spannungen oder eine hitzige Situation hin, werden aber nicht weiter
-  erklärt.
-- **[Brim](/characters/brim.md)** – Otis rettet Brim vor dem Absturz, indem er
-  seinen Hammer in einer Felsspalte verkeilt und Brim an den Beinen
-  packt.
-- **Die unbenannten Kinder** – zwei von Dämonen bedrohte Kinder, die
-  sich in Panik an Otis’ „Rockzipfel“ festhalten und von ihm in
-  Sicherheit gebracht werden.
-- **Otis’ Mutter** – sie wird nur indirekt erwähnt, als Otis einen
-  schönen Stein findet; offenbar löst Stein‑Materie Erinnerungen an
-  sie aus.
+- **Mutter / Nina:** Zu einer Frau namens [Nina](/characters/nina.md) besteht eine auffällig enge Bindung. In der ersten Session wird sie zugleich als "Mutter" und "Ehefrau" bezeichnet (in Anführungszeichen), und Otis folgt bereitwillig ihren Anweisungen. In der zweiten Session ist nur von seiner Mutter die Rede, der er eine Gesteinsprobe als Geschenk mitnehmen will.
+- **Rotunas:** Gemeinsam mit [Rotunas](/characters/rotunas.md) zerstört Otis in der zweiten Session die Portalsäulen.
+- **Krall und weitere Gefährten:** Otis agiert als Teil einer größeren Gruppe, zu der in der ersten Session unter anderem [Krall](/characters/krall.md) und [Floran](/npcs/floran.md) gehören. [Floran](/npcs/floran.md) tritt er in einem Kampf "spartanisch" in eine Grube.
 
 ## Chronologie
-
-### Session 2026‑03‑23
-
-Otis tritt der Abenteurergruppe bei. Im Verlauf der Sitzung eskortiert
-die Gruppe Gefangene und es kommt zu mehreren Interaktionen, die Otis’
-Wesensart zeigen: Er entschuldigt sich bei Gerda,
-beschwert sich über die Unterkunft und schlägt kurzerhand mit seinem
-Hammer die Scheunenwand ein. Im Kampf setzt er mehrfach seinen
-*Death‑Maneuvers*‑Skill ein und schleudert [Floran](/npcs/floran.md) mit
-einem Sparta‑Kick zurück. Von Nina wird er
-irritierend als „Ehemann“ oder „Sohn“ angesprochen. Am Ende der Session
-akzeptiert er einen verbesserten Kriegshammer von [Krall](/characters/krall.md) und
-stimmt dafür, die Gefangenen nach Willau zu bringen – mit der
-Begründung, dass er dafür bezahlt wurde und die Leute dort „cool“ seien.
-
-### Session 2026‑04‑09
-
-Die Gruppe findet sich in einem von Dämonen attackierten Ort wieder.
-Otis und Xerxes werden Zeugen, wie ein Dämon einen Magie‑
-Blitz auf zwei Kinder abfeuert; der Magier fängt den Blitz ab und
-übergibt die Kinder an Otis mit der Aufforderung, sie in Sicherheit
-zu bringen. Otis bringt die Kinder aus der Kampfzone und kämpft dann
-aggressiv gegen die Dämonen. Dabei wirft er einen Gegner nach Art einer
-Bowlingkugel in andere und rettet [Brim](/characters/brim.md) vor einem Absturz,
-indem er seinen Hammer in einer Felsspalte verkeilt und Brim an den
-Beinen packt. Noch vor dem Kampf stiehlt er drei Weinkelche und hebt
-einen Stein auf, bei dem er an seine Mutter denkt.
+[P-42] **Session 1 (2026-03-23):** Otis stellt sich als aus dem Steinbruch stammender Waldläufer vor. Durch unvorsichtiges Verhalten alarmiert er Banditen. Im Kampf beweist er extreme physische Gewalt (Zermalmen eines Kopfes, Durchbrechen einer Scheunenwand). Er kickt einen Gefährten in die Tiefe. Am Ende der Session entscheidet er sich gegen alternative Vorschläge dafür, die Gefangenen nach [Willoch](/locations/willauch.md) zu bringen, weil dies der bezahlte Auftrag ist. Er erhält einen verbesserten Kriegshammer.
+[P-46] **Zwischen den Sessions:** Otis hat sein Geld erhalten und lebt einige Zeit in Saus und Braus.
+3. **Session 2 (2026-04-09):** Otis ist Teil der Gruppe um [Rotunas](/characters/rotunas.md). Er rettet zwei Kinder vor einem Dämonenmagier, indem er sie in ein Lagerhaus bringt, und tötet den Magier anschließend mit einem Bogenschuss. Er setzt unkonventionelle Taktiken gegen Dämonen ein und nutzt sein Wissen über Gestein, um gemeinsam mit [Rotunas](/characters/rotunas.md) Portalsäulen zu zerstören. Zudem äußert er den Wunsch, seiner Mutter einen schönen Stein mitzubringen.
 
 ## Offene Fragen
-
-- Wer ist Nina genau, und warum spricht sie Otis
-  mit familiären Titeln wie „Ehemann“ oder „Sohn“ an?
-- Welche Rolle spielt Otis’ Mutter und was verbindet die beiden so stark
-  mit Stein?
-- Warum verließ Otis den Steinbruch; wollte er nur „was anderes kloppen“,
-  oder steckt ein tieferer Grund dahinter?
-- Was hat es mit dem Konflikt zwischen Otis und [Floran](/npcs/floran.md) auf
-  sich, der in dem Sparta‑Kick gipfelt?
+- Die genaue Beziehung zu [Nina](/characters/nina.md) ist unklar. In der ersten Session wird sie sowohl als Mutter als auch als Ehefrau bezeichnet, in der zweiten Session ist nur von der Mutter die Rede. Ob es sich um ein und dieselbe Person handelt oder um zwei verschiedene Bezugspersonen, geht aus den Belegen nicht hervor.
+- Von wem und unter welchen Umständen Otis den verbesserten Kriegshammer in der ersten Session geschenkt bekam, wird nicht spezifiziert.
+- Wo genau sich sein heimatlicher Steinbruch befindet und ob dieser mit einem bekannten Ort der Spielwelt verknüpft ist, bleibt offen.
 
 ## Belege
-
-[1] Session 2026‑03‑23, ab 00:00:44 – [YouTube](https://www.youtube.com/watch?v=niVxKtdQBn0)  
-[2] Session 2026‑04‑09, ab 00:19:15 – [YouTube](https://www.youtube.com/watch?v=vcGkejr8_nI)
+[P-42] Session 2026-03-23 @ 00:00:44 (https://www.youtube.com/watch?v=niVxKtdQBn0)
+[P-46] Session 2026-04-09 @ 00:02:48 (https://www.youtube.com/watch?v=vcGkejr8_nI)

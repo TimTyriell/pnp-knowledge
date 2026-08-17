@@ -1,49 +1,37 @@
 ---
 type: Deity
 title: Sitravil
-description: Sitravil (auch Südrawell genannt), die Fleischweberin, wird als eine
-  der vier alten Götter erwähnt, spielt in dieser Session jedoch keine a…
+description: Sitravil, die Fleischweberin, ist eine federhafte Göttin, die Unheil
+  bringt und zu den vier alten Göttern von Abyssalis gehört. Sie wird nu…
 tags:
 - deities
 timestamp: '2026-03-31T00:00:00Z'
 id: DEITY_SITRAVIL
+subtype: Alter Gott
 ---
 
 ## Überblick
-
-Sitravil, auch unter dem Namen **Südrawell**, die **Fleischweberin** bekannt, ist eine der vier alten Götter, die in der Ebene **Abyssalis** gefangen sind. Sie wird als eine federhafte Kreatur beschrieben, die ausschließlich Unheil bringt. Innerhalb von Abyssalis scheint sie die Seelen der Verstorbenen zu „erfetzen“ – eine gewaltsame Form der Aneignung oder Zerstörung.
+Sitravil, die Fleischweberin, ist eine federhafte Göttin, die Unheil bringt und zu den vier alten Göttern von Abyssalis gehört. [P-44]
 
 ## Rolle in der Kampagne
-
-In den bisherigen Geschehnissen tritt Sitravil nicht persönlich in Erscheinung, sondern wird lediglich als Teil des Pantheons der alten Götter von Abyssalis erwähnt. Gemeinsam mit [Akastrale](/deities/akastrale.md), [Ohoriaks](/deities/ohoriaks.md) und Vorgutar stellt sie eine allgegenwärtige Gefahr für die Seelen in der Unterwelt dar. Nur innerhalb einer bestimmten Festung – die sich im Einflussbereich Vorgutars befindet – sind Lebende und Seelen offenbar vor dem Zugriff der vier Götter sicher.
-
-Die Erwähnung Sitravils dient vor allem dazu, die feindliche Umgebung von Abyssalis zu charakterisieren. Sie ist eine der Mächte, zwischen denen sich die Charaktere bewegen müssen, ohne dass ihre spezifische Agenda oder ihr Wirken über das Seelen-Erfetzen hinaus bereits konkret geworden wäre.
+Sitravil wird als Teil einer Gruppe von vier alten Göttern – namentlich fällt nur [Vasul](/deities/vharzul.md) – eingeführt, die eine latente Bedrohung für die Festung der Gruppe darstellt. In der Session forderte der Spielleiter den Chat auf, per Abstimmung zu bestimmen, „wie viel Zeit dieser Festung bleibt, bevor sie in ihren Grundmauern erschüttert wird. Und die anderen vier Götter Vasul und diese Festung finden.“ [P-44] Sitravil ist damit als eine der kommenden antagonistischen Mächte verankert, deren genaue Rolle in der Handlung noch aussteht.
 
 ## Wichtige Merkmale
-
-- **Federhafte Kreatur**: Sitravils physische Erscheinung wird mit Federn assoziiert, was auf ein vogelähnliches oder geflügeltes Wesen hindeuten könnte.
-- **Die Fleischweberin**: Dieser Titel weist auf eine besondere Verbindung zu Fleisch – sei es das Verformen, Erschaffen oder Manipulieren von Körpern. Über die genauen Fähigkeiten ist nichts Näheres bekannt.
-- **Bringt nur Unheil**: In der Darstellung des GM ist sie eine rein schadenstiftende Macht, ohne erkennbare beschützende oder ambivalente Aspekte (im Gegensatz zu Ohoriaks, die trotz ihres Jähzorns auch beschützend wirkt).
-- **Erfetzt Seelen**: In Abyssalis werden die meisten Seelen entweder von Akastrale gefressen, von Ohoriaks aufgenommen oder von Sitravil **erfetzt**. Das Wort „erfetzt“ ist möglicherweise auf das Zerreißen oder Zerfetzen von Seelen zu beziehen, was auf eine destruktive, verzehrende Interaktion hindeutet.
+- **Beiname:** die Fleischweberin
+- **Erscheinung:** federhaft (möglicherweise gefiedert, mit flaumigen oder vogelähnlichen Zügen)
+- **Wesen:** bringt Unheil
+- **Pantheon:** eine der vier alten Götter von Abyssalis
 
 ## Beziehungen und Verbindungen
-
-- **Zu den anderen alten Göttern**: Sitravil wird als eine von vier alten Gottheiten genannt, die gemeinsam in Abyssalis eingesperrt sind. Neben ihr sind dies [Akastrale (der verrückte/dunkle Hunger)](/deities/akastrale.md), [Ohoriaks (Mutter der Schleier)](/deities/ohoriaks.md) und Vorgutar (Herr der Tausend Seelen). Ob zwischen ihnen Bündnisse, Rivalitäten oder Gleichgültigkeit herrschen, geht aus den Quellen nicht hervor.
-- **Zu Vorgutar**: Vorgutars Festung bietet Schutz vor dem Einfluss der vier Götter, darunter auch Sitravil. Dies setzt sie in ein Konkurrenz- oder Bedrohungsverhältnis, mindestens aus Sicht derjenigen, die in der Festung Zuflucht suchen. Kinderseelen scheinen von Sitravils Zugriff ebenso ausgenommen zu sein wie vom Rest des Quartetts.
+- **[Vasul](/deities/vharzul.md):** wird im selben Kontext als weiterer der vier alten Götter von Abyssalis erwähnt. Die restlichen zwei Gottheiten dieser Gruppe sind noch unbenannt.
 
 ## Chronologie
-
-- **Session 2026-03-31** – Erste und bislang einzige Erwähnung: Der GM führt Sitravil („Südrawell, die Fleischweberin“) als eine der vier alten Götter von Abyssalis ein und erläutert ihre Rolle im Schicksal der Seelen (Erfetzen). Sie tritt nicht aktiv in Erscheinung.
+- **Session 2026-03-31:** Erste Erwähnung. Der Chat stimmte über die verbleibende Sessions-Zahl bis zum Eintreffen der vier alten Götter ab; eine konkrete Aktion von Sitravil selbst fand nicht statt. [P-44]
 
 ## Offene Fragen
-
-- Was bedeutet es konkret, dass sie Seelen „erfetzt“? Ist dies eine Art von Verzehr, Zerstörung oder Umformung?
-- Welche Verbindung besteht zwischen dem Titel „Fleischweberin“ und dem federhaften Äußeren? Ist sie in der Lage, Körper zu formen, zu besetzen oder zu erschaffen?
-- Warum ist sie – wie die anderen alten Götter – in Abyssalis eingesperrt? Wer oder was hat sie dorthin verbannt?
-- Hat Sitravil eigene Ziele, Kulte oder Diener außerhalb von Abyssalis, oder beschränkt sich ihr Wirken rein auf die Ebene der toten Seelen?
-- Steht sie in einem besonderen Verhältnis zu den anderen drei alten Göttern, oder sind sie nur zufällig gemeinsam gefangen?
-- Warum sind ausgerechnet Kinderseelen ihrem Zugriff entzogen?
+- Was bedeutet der Titel „Fleischweberin“ konkret – welche Domäne oder Fähigkeit verbirgt sich dahinter?
+- Inwiefern ist Sitravil „federhaft“ und wie prägt dieses Merkmal ihre Darstellung oder Kräfte?
+- Welche Position nimmt sie innerhalb der vier alten Götter ein, und wie verhält sie sich zu Vasul und den beiden noch unbekannten Gottheiten?
 
 ## Belege
-
-[1] Session 2026-03-31, Transkript-Ausschnitte um 01:14:24–01:16:27, https://www.youtube.com/watch?v=Ee-K84wcxLM
+[P-44] Session 2026-03-31 @ 01:18:12 (https://www.youtube.com/watch?v=Ee-K84wcxLM)

@@ -1,82 +1,61 @@
 ---
 type: Deity
 title: Akastrale
-description: Akastrale, der verrückte Hunger, ist die stärkste und gefährlichste der
-  vier alten Götter. Im Abyssalis sind ihre Diener als Seelenjäger un…
+description: Akastrale, bekannt als „der dunkle Hunger“, ist eine uralte Gottheit
+  und gilt als die stärkste und wahnsinnigste unter den vier alten Götte…
 tags:
 - deities
 timestamp: '2026-03-31T00:00:00Z'
 id: DEITY_AKASTRALE
+subtype: Alter Gott
 ---
+
+# Akastrale
+
+> **Hinweis:** Dieser Eintrag gibt den vorläufigen Kenntnisstand der Gruppe wieder und wird ergänzt, sobald neue Erkenntnisse vorliegen.
 
 ## Überblick
 
-> Dieser Eintrag spiegelt den vorläufigen Kenntnisstand der Gruppe wider und
-> wird später ergänzt.
+Akastrale, bekannt als „der dunkle Hunger“, ist eine uralte Gottheit und gilt als die stärkste und wahnsinnigste unter den vier alten Göttern. Ihre Domänen sind Leere, Gier und Verzehr. Ihr Symbol ist ein schwarzer Schlund, umgeben von gezackten Zähnen. Akastrale wird weiblich gedacht und mit den Pronomen sie/ihr angesprochen.
 
-Akastrale, auch als der verrückte Hunger oder der dunkle Hunger bekannt, ist
-eine der vier alten Gottheiten, die in Abyssalis eingesperrt wurden. Sie ist
-eine weibliche Entität und gilt unter den eingekerkerten Göttern als die
-stärkste und gefährlichste. Ihre Domäne umfasst Leere, Gier und Verzehr; sie
-verkörpert einen niemals endenden, alles verschlingenden Hunger. Alte
-Schriften beschreiben sie als einen uralten Abgrund, den selbst die übrigen
-Götter fürchten.
+Offene Verehrung erfährt sie selten; ihre Anhänger sind Kultisten, Wahnsinnige und Kreaturen der Finsternis. Ihr werden Blut, verdorbene Speisen und verbrannte Knochen dargebracht. Die wenigen überlieferten Gebote fordern Wachstum durch Verschlingen, das Brechen von Grenzen und grenzenlose Gier; Maßhalten, Sättigung und freiwilligen Verzicht verabscheut sie.
+
+Alte Schriften beschreiben Akastrale als einen uralten Abgrund, den selbst die anderen Götter fürchten. Ihr Einfluss wird überall dort spürbar, wo Hunger niemals endet; ihre Anhänger glauben, dass letztlich alles Leben dazu bestimmt ist, von ihr verschlungen zu werden.
 
 ## Rolle in der Kampagne
 
-Akastrale trat bislang nur indirekt in Erscheinung. In den Erntefeldern von
-Abyssalis beobachtete die Gruppe einen ihrer Diener, einen
-[Klojin](/npcs/klojin.md), der einen Menschen verschlang. Ein
-mysteriöser Gewährsmann erklärte später, dass die meisten Seelen, die in
-Abyssalis enden, von Akastrale gefressen werden – sofern sie nicht von
-[Ohoriaks](/deities/ohoriaks.md) aufgenommen oder von Südrawell
-zerfetzt werden. Kinderseelen scheinen diesen Gesetzen nicht zu unterliegen,
-was Vorgul’tar ausnutzt, um sie zu sammeln. Die
-einzige bekannte Zuflucht vor Akastrales Einfluss ist Vorgul’tars Festung
-sowie das Tor in ihrem Innern.
+Die Gruppe ist Akastrale bislang nicht direkt begegnet und will eine Konfrontation „unbedingt vermeiden“. Ihr Diener, der [Klojin](/npcs/klojin_gaijin.md), wurde jedoch bereits in den Erntefeldern gesichtet, was auf eine nahende Präsenz der Göttin hindeutet. Zudem suchen Akastrale und die anderen alten Götter – darunter Vasul – nach der Festung der Gruppe; es ist nur eine Frage der Zeit, bis sie sie finden.
+
+In der ersten Session (2026-03-31) ließ die Spielleitung den Chat über die verbleibende Frist abstimmen: Die gewählte Zahl zwischen 1 und 10 entspricht der Anzahl Sessions, bevor die Götter die Festung erschüttern.
 
 ## Wichtige Merkmale
 
-- **Beinamen:** verrückter Hunger, dunkler Hunger (obgleich die Gottheit weiblich ist, werden die geläufigen Titel maskulin gebraucht)
 - **Domänen:** Leere, Gier, Verzehr
-- **Symbol:** ein schwarzer Schlund, umgeben von gezackten Zähnen
-- **Anhänger:** Kultisten, Wahnsinnige, Kreaturen der Finsternis (darunter die Klojin-Seelenjäger)
+- **Symbol:** Ein schwarzer Schlund, umgeben von gezackten Zähnen
+- **Anhänger:** Kultisten, Wahnsinnige, Kreaturen der Finsternis
 - **Opfergaben:** Blut, verdorbene Speisen, verbrannte Knochen
-- **Gebote:** Wachstum durch Verschlingen, Brechen von Grenzen, grenzenlose Gier – sie hasst Maßhalten, Sättigung und freiwilligen Verzicht
-- **Wesen:** Ein uralter, nie sättigbarer Hunger. Ihre Anhänger glauben, dass alles Leben letztlich dazu bestimmt ist, von ihr verschlungen zu werden. Sie wird selten offen verehrt, doch ihr Einfluss ist überall spürbar, wo der Hunger nie endet.
+- **Gebote:** Mag Wachstum durch Verschlingen, das Brechen von Grenzen und grenzenlose Gier; hasst Maßhalten, Sättigung und freiwilligen Verzicht
+- **Beschreibung in alten Schriften:** Ein uralter Abgrund, der selbst die Götter fürchten; ein unstillbarer Hunger, dem alles Leben anheimfallen soll
 
 ## Beziehungen und Verbindungen
 
-Akastrale gehört zu den vier alten Göttern, die in Abyssalis gefangen sind;
-die anderen sind Südrawell (die Fleischweberin),
-[Ohoriaks](/deities/ohoriaks.md) (Mutter der Schleier) und
-Vorgul’tar (Herr der Tausend Seelen). Während
-Ohoriaks Seelen aufnimmt und Südrawell sie zerfetzt, verschlingt Akastrale
-die Mehrzahl der Verstorbenen, die in die Erntefelder gelangen. Ihre Diener,
-die Klojin, agieren dort als Seelenjäger. Vorgul’tar widersetzt sich ihrem
-Einfluss, indem er Seelen – insbesondere Kinderseelen – für seine eigenen
-Zwecke sammelt und eine geschützte Festung unterhält.
+- **[Klojin](/npcs/klojin_gaijin.md):** Ein Diener Akastrales, auf den die Gruppe in den Erntefeldern gestoßen ist.
+- **Die anderen alten Götter:** Alte Schriften berichten, dass selbst die übrigen Götter Akastrale fürchten. Konkret wird Vasul namentlich als einer der vier alten Götter genannt, die gemeinsam nach der Festung der Gruppe suchen.
 
 ## Chronologie
 
-- **Session 1 (2026-03-31):** Erste Erwähnung. Der mysteriöse Verbündete in
-  Abyssalis nennt Akastrale als eine der vier eingekerkerten Gottheiten und
-  beschreibt sie als den verrückten Hunger. Er führt aus, dass Seelen von ihr
-  gefressen werden. Die Gruppe beobachtet unmittelbar darauf einen Klojin,
-  der einen Menschen verschlingt.
+- **Session 2026-03-31:** Akastrale wird als stärkste und wahnsinnigste der vier alten Götter eingeführt. Der Klojin, ihr Diener, wurde in den Erntefeldern gesehen. Eine Abstimmung im Chat legt fest, wie viele Sessions vergehen, bevor die alten Götter – darunter Akastrale – die Festung der Gruppe erreichen.
 
 ## Offene Fragen
 
-- Wie manifestiert sich Akastrales Hunger in der Welt der Lebenden, und gibt
-  es Kulte, die ihr dort dienen?
-- Worauf stützt sich die Behauptung, sie sei die stärkste der vier alten
-  Götter?
-- Können die Klojin-Seelenjäger bekämpft oder abgewehrt werden?
-- Warum sind Kinderseelen vor ihrem Zugriff geschützt, und lässt sich dieser
-  Schutz auf andere Seelen übertragen?
+- Was genau ist die Natur Akastrales – ein bewusstes Wesen, eine urzeitliche Kraft oder ein Prinzip des Verzehrs?
+- Welche konkreten Ziele verfolgt sie, und in welcher Beziehung steht sie zu den übrigen alten Göttern?
+- Welche Rolle spielt der Klojin in ihrem Wirken, und wie viele weitere Diener hat sie?
+- Wie äußert sich ihr Einfluss in der Welt, bevor sie physisch in Erscheinung tritt?
+- Hat sie eine wahrnehmbare Gestalt oder tritt sie ausschließlich durch ihre Domänen in Erscheinung?
 
 ## Belege
 
-[1] Session 2026-03-31, 01:15:35 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
-[2] Zusätzliche Quelle: *Bekannte_Pantheon_der_Goetter.md*, Eintrag „Akastrale, der dunkle Hunger"
-[3] Kanon-Entscheidung: *Kanon_Entscheidungen.md*, Festlegung, dass Akastrale weiblich ist
+[P-44] Session 2026-03-31, 01:18:12 – *„Akastrale, der dunkle Hunger, ist die stärkste und wahnsinnigste der vier alten Götter. Ihr Diener, der Klojin, wird in den Erntefeldern gesichtet, und die Gruppe will eine Begegnung mit ihr unbedingt vermeiden.“* (https://www.youtube.com/watch?v=Ee-K84wcxLM)
+2. Zusätzliche Quelle: *Bekannte_Pantheon_der_Goetter.md* – Eintrag „Akastrale, der dunkle Hunger“ mit Domänen, Symbol, Anhängern, Opfergaben, Geboten und Beschreibung.
+3. Zusätzliche Quelle: *Kanon_Entscheidungen.md* – ENTSCHEIDUNG: Akastrale ist eine weibliche alte Gottheit. Hinweis zur Darstellung: nur knapper Entwurf des aktuellen Kenntnisstands, keine Spekulation.

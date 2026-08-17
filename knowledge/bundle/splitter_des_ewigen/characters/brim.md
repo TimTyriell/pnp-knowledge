@@ -1,53 +1,83 @@
 ---
 type: Character
 title: Brim
-description: Brim ist ein zwergischer Krieger und Slayer, der erst seit kurzem mit
-  der Gruppe reist und offiziell noch kein Gildenmitglied ist. Er zeigt…
+description: Brim ist ein zwergischer Krieger und Slayer, gespielt von Kevin. Er stieß
+  durch eine Zufallsbegegnung auf einem Schlachtfeld zwischen Willo…
 tags:
 - characters
 timestamp: '2026-04-09T00:00:00Z'
 id: CHAR_BRIM
 ---
 
-# Brim
-
 ## Überblick
-Brim ist ein zwergischer Krieger und Slayer, der mit einer schweren Axt kämpft und metallene Armschienen trägt, die er zu widerstandsfähigen Ketten formen kann. Er stieß zufällig zu einer Gruppe von Gildenmitgliedern und reist seither mit ihnen, ohne sich einer der Gilden fest angeschlossen zu haben. Sein Verhalten ist direkt, pragmatisch und von einer instinktiven Wachsamkeit geprägt; im Kampf zeigt er Mut und ungewöhnliche Einfälle.
+
+Brim ist ein zwergischer Krieger und Slayer, gespielt von Kevin. Er stieß durch eine Zufallsbegegnung auf einem Schlachtfeld zwischen Willow und Brandau zur Gruppe um die Gilde Rotunas und war dort bereits in die Rettung einer Prinzessin verwickelt. Seither reist er mit der Truppe, ohne einer Gilde fest beigetreten zu sein. Brim kämpft muskulös und entschlossen mit einer großen Axt sowie mit Eisenketten, die er an seinen Armschienen trägt – eine Kombination aus roher Gewalt und überraschender taktischer Finesse.
 
 ## Rolle in der Kampagne
-Brim ist ein „zufälliger“ Begleiter der Gruppe, der nach einer gemeinsamen Mission beschloss, vorerst an ihrer Seite zu bleiben, bis sich die Lage beruhigt hat. [2] Weil er keiner Gilde verpflichtet ist, kann er flexibler auf Aufträge reagieren und hat mehr Freiheit bei der Auswahl von Missionen. Er tritt als taktischer Impulsgeber auf: In Willow drängt er auf Informationen über Orks und Ende, lenkt die Gruppe zur freundlicheren Gilde und später zu den Freibeutern; am Lagerfeuer plädiert er dafür, die akute Silberkerne-Krise vor der Reise nach Ende zu priorisieren. [2] Im Kampf übernimmt er die Rolle des Frontkämpfers, der seine Ketten sowohl offensiv als auch zum Kontrollieren von Gegnern einsetzt und durch hohen Schaden heraussticht.
+
+Brim fungiert als externer Verstärker der Gruppe. Da er keiner Gilde fest angehört, kann er flexibel Missionen annehmen und unterstützt die „Gummibärenbande“ (Rotunas’ Worte) bei ihren Einsätzen in der Splitterwelt und auf der materiellen Ebene. Seine Rolle ist die eines loy alen, pragmatischen Frontkämpfers, der einiges einstecken kann und oft den ersten Schritt wagt – sei es die Wahl einer Tür oder der direkte Angriff auf einen Altar.
+
+Gleichzeitig bringt Brim eine Außenperspektive ein: Er erkennt beispielsweise in Tiefwasser die Statue des neuen Gottes Coram Schildbrecher und schlägt vor, die Gilde der Schilde als Informationsquelle zu nutzen. Durch sein informelles Verhältnis zur Gruppe bleibt er ein Stück weit unabhängig, bindet sich aber zunehmend an deren Ziele.
 
 ## Wichtige Merkmale
-- **Waffen und Ausrüstung:** Schwere Axt; Armschienen, die er zu Metallketten umwickeln und lösen kann. Die Ketten dienen normalerweise dem Blocken, lassen sich aber auch werfen, um Gegner zu fesseln oder zu Boden zu ziehen. [1][4]
-- **Kampfstärke:** Verursacht in einem einzelnen Schlag 38 Schaden (Session 2026-03-10) und erledigt mehrere Dämonen im Nahkampf. [1][4]
-- **Instinkt und Wahrnehmung:** Erkennt nahe Breska einen Hinterhalt aus Ghulen, bevor die Gruppe ihn bemerkt. [1]
-- **Einfallsreichtum:** Schlägt im Dungeon vor, die schwarze Flüssigkeit aus Fässern zu nutzen, um die unsichtbare Brücke sichtbar zu machen: *„Ist vielleicht der Pfad unsichtbar und man kann die Flüssigkeit benutzen, um so zu gucken einfach, sag ich mal, ob die liegen bleibt oder ob es halt runterfällt quasi.“* [3] Diese Idee führt die Gruppe sicher über den Abgrund.
-- **Pragmatismus und Direktheit:** Fragt ohne Umschweife nach strategischen Informationen, lotst die Gruppe bei der Flucht aus der Taverne zwischen Gebäuden hindurch und entscheidet schnell, wer sich im Kampf um welchen Gegner kümmert. [2][4]
-- **Auftreten:** Ein robuster Zwerg, der mit seiner Statur Eindruck macht – etwa, als er [Lara](/npcs/lara.md) durch das Spielen seiner Oberarmmuskeln beeindruckt. [2]
-- **Belastbarkeit:** Übersteht zweimal lebensgefährliche Situationen (Verschlungenwerden von einer Kreatur, magischer Käfig) und bleibt handlungsfähig; der Ausflug in die Splitterwelt verursacht ihm aber spürbaren Stress, und er äußert den Wunsch nach besserer Vorbereitung. [1][3]
+
+- **Kampfstil und Ausrüstung:** Brim trägt eine große Axt und an den Armschienen befestigte Eisenketten (Beleg 1, 3). Er setzt die Ketten sowohl offensiv ein – etwa als er sie einer Schattenkreatur um die Hörner wickelt – als auch defensiv und zur Kontrolle des Gegners. In Session 4 wird erwähnt, dass er auch geschickt mit einem Schwert kämpft.
+
+- **Zähigkeit:** Er kann im Kampf viel einstecken („kann einiges einstecken“, Beleg 3). Selbst nachdem er kurzzeitig von der Altar-Kreatur verschluckt wird, kämpft er weiter, sobald er befreit ist.
+
+- **Instinkt und Pragmatismus:** Brim entdeckt Ghule im Hinterhalt (Beleg 1) und hat die Idee, schwarze Flüssigkeit zu nutzen, um einen unsichtbaren Pfad sichtbar zu machen (Beleg 3). Seine Entscheidung für die linke Tür begründet er lapidar mit: „Ich hab links immer ein gutes Gefühl“ (Session 3, 00:11:22).
+
+- **Emotionale Verfassung in fremden Dimensionen:** In der Splitterwelt erhält Brim zwei Stresspunkte – die unheimliche Umgebung setzt ihm spürbar zu (Beleg 1).
+
+- **Informationsbedürfnis:** Nach der ersten har ten Mission in der Splitterwelt ist Brim außer Atem und fordert für die Zukunft mehr Informationen: „Dann benötige ich das nächste Mal aber, glaube ich, ein bisschen mehr Aufklärung. Mehr Vorbereitung. […] Vorbereitung im Sinne von Informationen, die Brim einfach fehlen“ (Session 1, 01:55:22).
+
+- **Auftreten:** Er zeigt sich nach Kämpfen oft mitgenommen, aber auch „verschmitzt grinsend“ (Beleg 3). Kevin beschreibt Brim als jemanden, der „so ein bisschen einsam […] durch die Lande gestreift“ ist und hier und da Aufträge annimmt (Session 4, 00:03:40).
 
 ## Beziehungen und Verbindungen
-- **[Dodo](/characters/dodo.md):** Führt mit Dodo einen kombinierten Angriff aus, bei dem Brim die Hörner der Schattenkreatur mit seinen Ketten umschlingt und den Kopf nach unten reißt, während Dodo mit seinem Kolben zuschlägt. [1]
-- **Rotunas:** Entwickelt eine Kameradschaft und weist Rotunas im Gefecht gegen Dämonen an: *„Rotunas, kümmer du dich um den Magier, wir beschäftigen das Fußvolk.“* [4]
-- **[Otis](/characters/otis.md):** Wird von einem fliegenden Dämon fast in die Tiefe gerissen und von Otis gerettet. [4]
-- **[Lara](/npcs/lara.md):** Beeindruckt Lara mit einem gelungenen Präsenz-Wurf, indem er seine Muskeln zeigt. [2]
-- **Sandro, der Vampir:** Nach dem Sieg über die Schattenkreatur verneigt sich Sandro vor der Gruppe und nennt sie „Champions“, wobei er Brims Leistung würdigt. [1]
+
+- **Gilde Rotunas / „die Gruppe“:** Brim ist den Gildenmitgliedern zufällig begegnet und begleitet sie, „bis sich die Lage, die sich da bei der Mission ergeben hat, ein bisschen beruhigt hat“ (Session 2, 00:05:50). Er arbeitet effektiv mit ihnen zusammen, versteht sich jedoch selbst nicht als festes Mitglied.
+
+- **[Dodo](/characters/dodo.md):** Im Kampf gegen die Schattenkreatur arbeitet Brim direkt mit Dodo zusammen: Er reißt den Kopf der Kreatur herunter, sodass Dodo den Todesstoß ausführen kann (Beleg 1). Auf Dodos lakonische Bemerkung, er solle sich an heftige Missionen gewöhnen, reagiert Brim mit dem Wunsch nach mehr Vorbereitung.
+
+- **[Lindo Laut](/characters/lindo_laut.md):** Brim war verwirrt, als er Lindo Lauts Namen zum ersten Mal hörte – ein Hinweis darauf, wie neu die Gruppe für ihn ist (Beleg 1).
+
+- **[Otis](/characters/otis.md):** In Session 4 beschützt Brim Otis und die Kinder. Als Brim selbst von einem geflügelten Dämon in den Abgrund gerissen zu werden droht, rettet Otis ihn (Beleg 4).
+
+- **Harald:** Brim zeigt sich gegenüber Harald aufgeschlossen und stimmt dem Plan zu, die Silberkerne zu entlasten (Beleg 2).
+
+- **Keine feste Gilde:** Brim ist bewusst keiner Gilde beigetreten, um flexibel zu bleiben (Session 2, 00:06:10).
 
 ## Chronologie
-**Session 2026-03-10 (Breska / Splitterwelt)**  
-Brim bemerkt einen Hinterhalt aus Ghulen und stürzt sich mit seiner Axt ins Gefecht. Im Kampf gegen eine große Schattenkreatur entfesselt er seine Ketten, wirft sie um die Hörner des Monsters und zieht den Kopf herab, sodass Dodo den Todesstoß setzen kann. Ein einzelner Schlag von ihm verursacht 38 Schaden. Die Begegnung mit der Splitterwelt setzt ihm zu; er erklärt hinterher, er benötige mehr Informationen und Vorbereitung. [1]
 
-**Session 2026-03-18 (Willow)**  
-Brim stellt sich als neu zur Gruppe gestoßener Zwergenkrieger vor – es ist seine zweite Session. Er lotst die Gruppe nach Informationen, lenkt sie zur freundlicheren Gilde und später zu den Freibeutern. Bei der Flucht aus einer Taverne behält er den Überblick und führt die Gefährten zwischen Gebäuden hindurch. Am abendlichen Lagerfeuer argumentiert er erfolgreich dafür, zuerst die Silberkerne-Krise zu lösen, statt sofort nach Ende aufzubrechen. [2]
+### Vor der Kampagne
 
-**Session 2026-04-07 (Dungeon mit unsichtbarer Brücke)**  
-Brim schlägt vor, die schwarze Flüssigkeit aus Fässern zu verwenden, um die unsichtbare Brücke sichtbar zu machen – die Idee erweist sich als richtig. Im Kampf gegen eine Altarkreatur ruft er dazu auf, den Altar zu zerstören. Einen rosa Klumpen tritt er gezielt in eine Tentakelgrube und setzt ihn so außer Gefecht. Später durchtrennt er die Knotenpunkte der Adern und stoppt das Ritual. Brim wird aus dem Inneren der Kreatur und aus einem magischen Käfig gerettet; er bleibt trotz der Strapazen einsatzfähig. [3]
+Brim streifte einsam umher, nahm hier und da Aufträge an. Auf einem Schlachtfeld zwischen Willow und Brandau traf er zufällig auf die Gruppe und wurde in die Rettung einer Prinzessin verwickelt. Seitdem bleibt er bei der Truppe (Session 4, 00:03:40).
 
-**Session 2026-04-09 (Kampf gegen Dämonen)**  
-In einer Schlacht gegen abyssale Dämonen stellt sich Brim einem größeren Schwertdämon, auch wenn er zunächst nicht trifft. Er wehrt den Gegenangriff ab und erledigt mehrere Gegner. Ein fliegender Dämon ergreift ihn und droht ihn in die Tiefe zu reißen, doch Otis rettet ihn. Im Gefecht dirigiert er Rotunas mit einem kurzen Befehl zum gegnerischen Magier. [4]
+### Session 1 – Splitterwelt und Schattenkreatur (10.03.2026)
 
-## Belege
-[1] Session 2026-03-10 @ 01:50:14 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)  
-[2] Session 2026-03-18 @ 00:05:39 (https://www.youtube.com/watch?v=HHXxsASLrbQ)  
-[3] Session 2026-04-07 @ 00:16:46 (https://www.youtube.com/watch?v=MAuQPMNY548)  
-[4] Session 2026-04-09 @ 00:36:08 (https://www.youtube.com/watch?v=vcGkejr8_nI)
+Brim betritt erstmals die Splitterwelt. Er entdeckt Ghule im Hinterhalt und beweist seinen Instinkt. Die unheimliche Umgebung stresst ihn sichtlich (zwei Stresspunkte), und er zweifelt kurz, ob er in der richtigen Gruppe ist. Im Kampf gegen die große Schattenkreatur wickelt er seine Armketten um deren Hörner und reißt den Kopf herunter, was Dodo den finalen Stoß ermöglicht. Nach dem Kampf ist er außer Atem und verlangt für künftige Missionen mehr Informationen, da ihm Hintergründe (wie Lindo Lauts Name oder Voras’ Erklärungen) völlig neu sind.
+
+### Session 2 – Tiefwasser und die Gilde der Schilde (18.03.2026)
+
+In Tiefwasser identifiziert Brim eine Statue des neuen Gottes Coram Schildbrecher und schlägt vor, die Gilde der Schilde als Informationsquelle zu nutzen. Er stimmt dem Plan zu, die Silberkerne zu entlasten, und zeigt sich Harald gegenüber aufgeschlossen.
+
+### Session 3 – Der Dungeon mit den drei Türen (07.04.2026)
+
+Brim entscheidet sich für die linke Tür („Ich hab links immer ein gutes Gefühl“). In den Räumen dahinter schlägt er vor, die schwarze Flüssigkeit zum Sichtbarmachen eines unsichtbaren Pfades zu nutzen. Im Kampf gegen die Altar-Kreatur wird er kurzzeitig von ihr verschluckt, muss von Dodo und Esterossa befreit werden und zerstört anschließend mit einem Schlag den Altar, was die Kreatur schwächt. Einen rosa Klumpen tritt er in eine Grube, woraufhin Tentakeln diesen zerfetzen; daraufhin teleportiert ihn die unsichtbare Kreatur in einen Käfig. Brim durchtrennt als erster die Adern, die das Ritual speisen, und entdeckt die eingewickelte Statue. Nach dem Kampf ist er sichtlich mitgenommen, grinst aber verschmitzt.
+
+### Session 4 – Schutz der Kinder vor Dämonen (09.04.2026)
+
+Brim kämpft zusammen mit Otis gegen Dämonen und schützt die Kinder. Er tötet mehrere Gegner, wird jedoch von einem geflügelten Dämon beinahe in den Abgrund gerissen; Otis rettet ihn. Sein Kampfstil wird hier auch mit einem Schwert ergänzt. Er zeigt sich loyal und pragmatisch.
+
+## Offene Fragen
+
+- Brims persönlicher Hintergrund ist bislang nur vage umrissen – abgesehen davon, dass er „einsam durch die Lande gestreift“ ist und Gelegenheitsaufträge annimmt, ist über seine Herkunft oder Motivation nichts bekannt.
+- Es bleibt unklar, ob Brim sich langfristig einer Gilde anschließen oder die Gruppe nach der Beruhigung der aktuellen Lage wieder verlassen wird. Sein Anspruch auf mehr Informationen deutet zumindest auf eine gewisse Bereitschaft hin, sich tiefer zu involvieren.
+- Das Ausmaß und der genaue Grund seines Stresses in der Splitterwelt sind nicht abschließend geklärt – handelt es sich um generelle Unverträglichkeit mit der Dimension oder um situationsbedingte Überforderung?
+
+# Belege
+
+[P-40] Session 2026-03-10, 01:55:15, https://www.youtube.com/watch?v=Kr9_AC2XtOw
+[P-41] Session 2026-03-18, 00:05:39, https://www.youtube.com/watch?v=HHXxsASLrbQ
+[P-45] Session 2026-04-07, 00:11:22, https://www.youtube.com/watch?v=MAuQPMNY548
+[P-46] Session 2026-04-09, 00:03:40, https://www.youtube.com/watch?v=vcGkejr8_nI

@@ -1,15 +1,17 @@
 ---
 type: Location
 title: Schiffswrack
-description: Ein altes, schwer beschädigtes Galeerenwrack nordwestlich der Bucht,
-  das bereits seit Jahren dort liegt und mit Moos bewachsen ist. Es war…
+description: Ein altes, schwer beschädigtes Galeerenwrack, das seit Jahren auf einer
+  kleinen Insel nahe der Hauptinsel auf Grund liegt. Es ist mit Moos…
 tags:
 - locations
 timestamp: '2025-04-30T00:00:00Z'
 id: LOC_SCHIFFSWRACK
+subtype: Wildnis
 ---
 
-Ein altes, schwer beschädigtes Galeerenwrack liegt nordwestlich der Bucht und ist bereits seit Jahren dort mit Moos bewachsen. Es war Teil einer Expedition zu einer Kirche, wie ein in der Kajüte gefundenes, durchnässtes Logbuch verrät. Das Wrack selbst bietet keine weiteren bekannten Besonderheiten.
+Ein altes, schwer beschädigtes Galeerenwrack, das seit Jahren auf einer kleinen Insel nahe der Hauptinsel auf Grund liegt. Es ist mit Moos bewachsen und wurde vermutlich manövrierunfähig hier gestrandet. [Rotunas](/characters/rotunas.md) findet in der Kajüte ein durchnässtes Büchlein, das später über eine Expedition zu einer Kirche berichtet. Ansonsten ist das Wrack ohne weitere Schätze oder Hinweise.
 
 # Belege
-1. Session 2025-04-30 @ 00:20:46 (https://www.youtube.com/watch?v=fsCOiSkKKTE)
+
+[P-06] Session 2025-04-30 @ 00:19:40 (https://www.youtube.com/watch?v=fsCOiSkKKTE)

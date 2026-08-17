@@ -1,15 +1,17 @@
 ---
 type: Location
 title: Kapelle von Tarvok
-description: Ein Wegweiser nahe des Gipfels zeigt zur Kapelle von Tarvok. Die Gruppe
-  erreicht den Bereich mit einer fragilen Brücke und Feuer. Dort werd…
+description: Die Kapelle des alten Gottes Tarvok, auf die ein Wegweiser nahe der Spitze
+  verweist. Sie ist das Ziel der Reise, doch die Kultisten, die si…
 tags:
 - locations
 timestamp: '2025-08-20T00:00:00Z'
 id: LOC_KAPELLE_VON_TARVOK
+subtype: Gebäude
 ---
 
-Die Kapelle von Tarvok liegt nahe eines Berggipfels, der über einen Wegweiser ausgeschildert ist. Die Umgebung ist neblig und dunkel, doch am Gipfel selbst scheint Licht. Die Gruppe erreicht den Bereich über eine fragile Brücke, die von Feuer flankiert wird. Dort werden sie von Kultisten erwartet.
+[Die Kapelle](/locations/kapelle_von_vorgultars_refugium.md) des alten Gottes [Tarvok](/deities/tarvok_der_erdrichter.md), auf die ein Wegweiser nahe der Spitze verweist. Sie ist das Ziel der Reise, doch die Kultisten, die sich dort aufhalten, verehren nicht Tarvok, sondern [Varsurs](/deities/vharzul.md).
 
 # Belege
-- Session 2025-08-20 @ 01:11:51 – <https://www.youtube.com/watch?v=-XbO3FLSL_I>
+
+[P-18] Session 2025-08-20 @ 01:12:25 (https://www.youtube.com/watch?v=-XbO3FLSL_I)

@@ -1,15 +1,16 @@
 ---
 type: NPC
 title: Haloras
-description: Ein Efreeti (eine Art Dschinn), der im Haus des Löwen als Diener der
-  geheimnisvollen Chefin agiert. Er empfängt die Gruppe, zeigt sich von…
+description: Haloras ist ein Ifriti und dient Adeliga im Haus des Löwen. Er empfängt
+  die Gruppe und begleitet sie die Treppe hinauf. Auf Befehl material…
 tags:
 - npcs
 timestamp: '2026-03-03T00:00:00Z'
 id: NPC_HALORAS
 ---
 
-**Haloras** ist ein Efreeti (eine Art Dschinn), der im Haus des Löwen als Diener der geheimnisvollen Chefin fungiert. Er empfing die Gruppe, zeigte sich von Kronos' Leiche beeindruckt und materialisierte später die versprochene Belohnung: zwei Truhen und fünf Säcke Gold. Haloras bot den Helden an, sie im Haus aushängen zu lassen, doch sie lehnten ab.
+Haloras ist ein Ifriti und dient [Adeliga](/npcs/adeliga_vom_haus_des_loewen.md) im [Haus des Löwen](/locations/haus_des_loewen.md). Er empfängt die Gruppe und begleitet sie die Treppe hinauf. Auf Befehl materialisiert er die Belohnung: zwei Truhen und fünf Säcke Gold. Später präsentiert er eine silberne Feder, die er angeblich von Lunara gefunden hat – tatsächlich eine Ortungsvorrichtung, mit der er die Gruppe hätte verfolgen können.
 
 # Belege
-1. Session 2026-03-03 @ 00:24:00 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
+
+[P-39] Session 2026-03-03 @ 00:31:59 (https://www.youtube.com/watch?v=BRUNuNKTeOg)

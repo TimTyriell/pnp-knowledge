@@ -1,24 +1,24 @@
 ---
 type: Character
 title: Carlos
-description: Carlos ist ein Naturmagier (vermutlich ein Catari) mit Fähigkeiten wie
-  ‚Dornenhaut‘ (Verwandlung, die Schaden reduziert) und ‚Wishes and Ta…
+description: Carlos ist ein naturverbundener Zauberer, der sich unmittelbar einem
+  Forschungsteam anschließt, um die Ursachen der Monster zu ergründen. S…
 tags:
 - characters
 timestamp: '2026-05-27T00:00:00Z'
 id: CHAR_CARLOS
 ---
 
-Carlos ist ein Naturmagier und mutmaßlich ein Catari, der in der Kampagne als neugieriger und entschlossener Kämpfer auftritt. Seine Fähigkeiten sind stark an die Natur gebunden; er kann seinen Körper verändern und pflanzliche Ranken nutzen, um Gegner zu kontrollieren. Zudem besitzt er eine auffällige, käferartige Panzerbeschwörung, die ihm als Rüstung dient. Carlos stellt viele Fragen, durchschaut Täuschungen und zeigt ein gesundes Misstrauen gegenüber unnatürlichen Phänomenen wie dem Nebel.
+Carlos ist ein naturverbundener Zauberer, der sich unmittelbar einem Forschungsteam anschließt, um die Ursachen der Monster zu ergründen. Sein wissenschaftliches Interesse ist stark ausgeprägt, und er geht in der Erkundung stets vorsichtig und misstrauisch vor, insbesondere gegenüber dem mysteriösen Nebel, der die Region umgibt. Er trägt entscheidend zu Verhandlungen und Kämpfen bei, indem er sowohl defensive Magie als auch scharfe Beobachtungsgabe einsetzt.
 
-## Fähigkeiten und Kampfstil
+## Rolle und Motivation
 
-Carlos beherrscht mehrere naturmagische Fertigkeiten. Dazu gehören *Dornenhaut* – eine Verwandlung, die eingehenden Schaden reduziert – sowie *Wishes and Tangle*, womit er Ranken beschwört, die Gegner fesseln können. Darüber hinaus ruft er einen Käferpanzer als schützende Rüstung herbei. Diese Fähigkeiten setzt er trotz anfänglicher Angst (er gibt sich selbst Stress für den Käferpanzer) entschlossen im Kampf an der Seite seiner Gefährten ein.
+Carlos‘ Hauptmotivation ist die wissenschaftliche Untersuchung der Monsterphänomene. Deshalb zögert er nicht, sich dem Forschungsteam anzuschließen. Mit seinem selbstbewussten Auftreten, verstärkt durch magische Mittel, gelingt es ihm, Tara von der Dringlichkeit und Ernsthaftigkeit des Vorhabens zu überzeugen. In einem entscheidenden Gespräch mit Trillo und Kalos stellt er die richtigen Fragen und entwickelt einen scharfen Instinkt für Täuschung: Er erkennt, dass Kalos eine Illusion sein könnte, und teilt diese Beobachtung sofort der Gruppe mit. Diese Aufmerksamkeit trägt wesentlich zum erfolgreichen Verlauf des folgenden Kampfes bei.
 
-## Persönlichkeit und Wahrnehmung
+## Fähigkeiten und Taktiken
 
-Carlos ist von Natur aus neugierig und stellt viele Fragen, etwa nach dem Zauberer hinter dem Nebel. Er misstraut dem Nebel und den unnatürlichen Erscheinungen, was seine tiefe Verbindung zur Natur widerspiegelt. Im Kampf erweist er sich als scharfsinnig: So durchschaut er Trilos Lüge und erkennt, dass Kalos nur eine Illusion ist.
+Carlos beherrscht die Beschwörung von Ranken und Käfern, was auf eine enge Verbindung zur Natur schließen lässt. Zur eigenen Sicherheit nutzt er defensive Zauber wie Dornenhaut und eine Käferpanzer-Rüstung, die ihn vor den Gefahren des Nebels schützen. Obwohl sein Zauber „Wishes and Tangle“ im kritischen Moment scheitert, bleibt seine Rolle als wachsamer Unterstützer und Taktiker für die Gruppe von zentraler Bedeutung.
 
 # Belege
 
-1. Session 2026-05-27 @ 00:15:38 – Carlos‘ Fähigkeiten, Persönlichkeit und Kampfverhalten werden beschrieben. (https://www.youtube.com/watch?v=IYYmgpqsp7E)
+[P-51] Session 2026-05-27 @ 01:39:09 (https://www.youtube.com/watch?v=IYYmgpqsp7E)

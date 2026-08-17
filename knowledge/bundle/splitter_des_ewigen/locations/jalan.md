@@ -1,48 +1,74 @@
 ---
 type: Location
 title: Jalan
-description: Jalan ist eine unterirdische Festung mit einem Dorf darüber. Sie wurde
-  kürzlich geschwächt, da viele Verteidiger durch einen Zwischenfall v…
+description: 'Jalan ist eine befestigte Anlage, die aus zwei Ebenen besteht: einer
+  unterirdischen Festung und einem darüber liegenden Dorf. Die Anlage be…'
 tags:
 - locations
-timestamp: '2026-05-13T00:00:00Z'
+timestamp: '2026-05-06T00:00:00Z'
 id: LOC_JALAN
+subtype: Festung
 ---
 
 ## Überblick
 
-Jalan ist eine unterirdische Festung, über der ein Dorf in den Erntefeldern liegt. Oberhalb des Dorfes thront auf einem Hügel eine Villa. Die Siedlung wurde kürzlich stark geschwächt – bei einem Zwischenfall gingen viele ihrer Verteidiger verloren. Jalan dient als Ausgangspunkt der Mission; von hier aus ziehen die Heldengruppen in die Tiefen der Seelenwacht.
+Jalan ist eine befestigte Anlage, die aus zwei Ebenen besteht: einer unterirdischen Festung und einem darüber liegenden Dorf. Die Anlage befindet sich in der Region Abyssalis und verfügt über einen Portaleingang, der den Zugang zur Untergrundfestung ermöglicht. Auf einem Hügel oder Berg unmittelbar hinter Jalan liegt eine große, alte Villa, die auf den ersten Blick verfallen wirkt.
+
+Jalan diente als Sammelpunkt für die Gruppen der Abenteurer und war Schauplatz ihrer ersten Zusammenkunft. Durch einen kürzlich eingetretenen Zwischenfall hat die Festung einen erheblichen Teil ihrer Verteidiger verloren und befindet sich in einem geschwächten Zustand. Die Seelenwacht ist nicht bereit, nennenswerte Verstärkung in Form von Soldaten nach Jalan zu entsenden.
 
 ## Rolle in der Kampagne
 
-Jalan ist der Startort der Kampagne. Die aktuelle Heldengruppe (Dante, Miqo, Lunara Velora und andere) befindet sich zu Beginn der ersten Session bereits in Jalan und bricht von dort auf. Auch die vorherige Gruppe um Dodo, Esterossa, Lunara und Lindo Laut reiste von der Festung Brokkadil nach Jalan und trat von hier aus den Weg in die Seelenwacht an, wo sie auf den Richter und den Schinder traf. Jalan markiert damit den letzten sicheren Vorposten vor dem gefährlichen Abstieg.
+Jalan fungierte als Ausgangspunkt für eine gemeinsame Mission der zuvor getrennt agierenden Charaktergruppen. Der Richter und der Schinder versammelten dort sechs Personen – darunter Kip, Dante und Miko sowie drei weitere – und führten sie zu der Villa oberhalb der Festung. Die Dringlichkeit der Situation in Jalan und die knappe Zeit wurden dabei betont: Der Richter stellte unmissverständlich klar, dass keine Zeit für Diskussionen oder Auseinandersetzungen zwischen den Gruppenmitgliedern bleibe, da noch eine wichtige Aufgabe zu erledigen sei.
+
+Die Vorgänge in Jalan waren zudem mit einer vorherigen Begegnung mit einer Figur namens Vasul verknüpft, bei der die Gruppe offenbar Unterstützung und Auffüllung ihrer Ressourcen („Hopes“) erhalten hatte, bevor sie ins Abyssalis aufbrach.
 
 ## Wichtige Merkmale
 
-- **Lage und Aufbau**: Jalan besteht aus einer unterirdischen Festung und einem darüber liegenden Dorf in den Erntefeldern. Auf einem Hügel oberhalb des Dorfes erhebt sich eine Villa.
-- **Kürzliche Schwächung**: Vor Beginn der Kampagne wurde Jalan erheblich geschwächt, weil viele Verteidiger durch einen Zwischenfall ums Leben kamen. Das Dorf selbst wurde kürzlich angegriffen – vermutlich handelt es sich um denselben Vorfall.
+### Lage und Beschaffenheit
+
+- Jalan liegt im Abyssalis, einer Region, deren Umgebung an den Kräften der Charaktere zehrt. Bereits nach wenigen Tagen Aufenthalt macht sich diese Belastung bemerkbar.
+- Die Anlage gliedert sich in ein oberirdisches Dorf und eine darunterliegende Festung. Ein Portaleingang gewährt Zutritt zur unterirdischen Ebene.
+- Auf einem Berg oder Hügel hinter Jalan befindet sich eine alte, baufällige Villa, die offenbar Teil des Festungskomplexes oder mit diesem verbunden ist. Die Beschreibung betont den Eindruck des Verfalls: Die Villa „wirkte beim ersten Eindruck einfach nur kaputt“.
+- Innerhalb der Festung oder der Villa soll sich etwas „von großem Wert“ befinden – ein Ziel, das über die bloße Eroberung Jalans hinausweist.
+
+### Verteidigungszustand
+
+- Jalan verfügte ursprünglich über eine nennenswerte Garnison aus Soldaten und Kämpfern, erlitt jedoch durch einen nicht näher beschriebenen „Zwischenfall“ schwere Verluste.
+- Die Seelenwacht lehnt es ab, substantielle Verstärkungen zu entsenden, was die Position Jalans prekär macht.
+- Der Richter brachte die Dringlichkeit der Situation zum Ausdruck: Die Verteidigungsfähigkeit ist kompromittiert, und die verbliebene Zeit muss für die Erfüllung der Mission genutzt werden.
+
+### Bewohner und Anführer
+
+- Der Richter und der Schinder sind offenkundig Autoritätspersonen in Jalan. Sie übernahmen die Führung der versammelten Gruppen und trafen Entscheidungen über die Prioritäten.
+- Der Richter agiert direktiv und duldete keine Verzögerungen oder Konflikte innerhalb der zusammengestellten Gruppe.
+- Die beiden hatten sich kurz vor dem Aufbruch zur Villa mit Kip, Dante und Miko wegen des erwähnten Zwischenfalls beraten.
 
 ## Beziehungen und Verbindungen
 
-- **[Brokkadil](/locations/brokkadil.md)**: Die Festung, von der aus die vorherige Heldengruppe (Dodo, Esterossa, Lunara, Lindo Laut) nach Jalan reiste.
-- **Richter und [Schinder](/npcs/schinder.md)**: Die Gruppe um Dodo traf in der Seelenwacht, dem Zielort nach dem Aufbruch aus Jalan, auf diese beiden mächtigen Persönlichkeiten. Sie begegnen auch der aktuellen Gruppe wieder.
-- **Seelenwacht**: Das von Jalan aus angesteuerte, gefahrvolle Gebiet.
+- **[Vasul](/deities/vharzul.md)** – Eine Figur, die die Gruppe vor der Ankunft in Jalan aufsuchte und ihnen Ressourcen („Hopes“) auffüllte sowie sie für die Reise ins Abyssalis ausstattete.
+- **Der Richter und der Schinder** – Die führenden Autoritäten in Jalan. Sie koordinierten die Gruppen, bewerteten den Zwischenfall und leiteten die Mission zur Villa.
+- **[Rotunas und seine Freunde](/characters/rotunas.md)** – Eine Fraktion oder Gruppe, für die Informationen aus der Villa von besonderer Bedeutung sein könnten. Die Mission in Jalan scheint teilweise deren Zielen zu dienen.
+- **Tomiko** – Eine Person, die den Charakteren Hinweise auf die tieferen Beweggründe der Mission gab. Es entstand der Eindruck, dass die Eroberung Jalans nicht das einzige Ziel war, sondern der Zugang zu etwas in der Anlage Verborgenem.
+- **Die Seelenwacht** – Eine übergeordnete Instanz, die zwar präsent ist, aber keine substantiellen Truppenkontingente für Jalan bereitstellt.
 
 ## Chronologie
 
-1. **Vor der Kampagne**: Jalan wird durch einen Angriff oder Zwischenfall schwer getroffen; viele Verteidiger sterben.
-2. **Vor der ersten Session**: Dodo, Esterossa, Lunara und Lindo Laut reisen von Brokkadil nach Jalan und brechen von dort in die Seelenwacht auf, wo sie den Richter und den Schinder treffen.
-3. **Session 2026-05-06**: Die neue Heldengruppe startet in Jalan und begibt sich auf ihre Expedition.
-4. **Session 2026-05-13**: Es wird rückblickend bestätigt, dass das Dorf in den Erntefeldern kürzlich angegriffen wurde – derselbe Vorfall, der die Verteidigerzahl dezimierte.
+[P-48] **Vor der Ankunft in Jalan**: Die Gruppen begegnen Vasul, der ihre Hopes auffüllt und ihnen Ressourcen für die Reise ins Abyssalis mitgibt.
+
+2. **Ankunft und Zwischenfall**: Die Charaktere treffen in Jalan ein. Kurz darauf ereignet sich ein nicht näher beschriebener Zwischenfall, bei dem Jalan zahlreiche Verteidiger verliert. Der Richter und der Schinder ziehen sich mit Kip, Dante und Miko zur Beratung zurück.
+
+3. **Versammlung und Aufbruch**: Der Richter und der Schinder versammeln sechs Personen (die drei genannten plus drei weitere, die sich untereinander noch nicht kennen) und führen sie zur Villa oberhalb der Festung. Der Richter macht deutlich, dass die Zeit drängt und die Mission Vorrang hat.
+
+4. **Erkundung der Villa**: Die Gruppe erreicht den Eingang der Villa, wo der Richter und der Schinder die sechs Teilnehmer ein letztes Mal mustern, bevor die eigentliche Erkundung beginnt.
 
 ## Offene Fragen
 
-- Wer oder was griff Jalan an, und auf welche Weise kamen die vielen Verteidiger ums Leben?
-- Welche Funktion hat die Villa oberhalb des Dorfes, und wer bewohnt sie?
-- Wurde Jalan nach der Schwächung dauerhaft aufgegeben, oder gibt es Bestrebungen, die Festung und das Dorf wieder aufzubauen?
-- Warum wechselte die Gruppe um Dodo von Brokkadil nach Jalan – gab es einen strategischen Grund oder Zwang?
+- Was genau war der „Zwischenfall“, der so viele Verteidiger das Leben kostete?
+- Welcher Art ist das Objekt oder die Information von „großem Wert“, das in der Villa oder der Festung verborgen sein soll?
+- Warum verweigert die Seelenwacht Verstärkungen – aus Kapazitätsgründen oder aus strategischem Kalkül?
+- In welcher Beziehung stehen der Richter und der Schinder zur Seelenwacht und zu den Fraktionen um Rotunas und Tomiko?
+- Welche Rolle spielte Jalan vor der Ankunft der Abenteurer, und welche Bedeutung hatte es im größeren Konflikt, in den die Charaktere verwickelt sind?
 
 ## Belege
 
-1. Session 2026-05-06, 00:05:12 (https://www.youtube.com/watch?v=MB4quhDWsQE)
-2. Session 2026-05-13, 00:54:48 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
+[P-48] Session 2026-05-06 @ 00:11:37 – https://www.youtube.com/watch?v=MB4quhDWsQE (Transkript: 00:10:17 bis 00:13:00)

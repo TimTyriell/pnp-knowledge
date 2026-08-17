@@ -1,15 +1,17 @@
 ---
 type: Location
 title: Windung
-description: Fischerdorf auf einer Insel, das früher von einem magischen Erzabbau
-  lebte. Unter der Kapelle befindet sich eine alte Mine mit einem blau l…
+description: Windung ist ein idyllisches, aber fast verlassenes Fischerdorf auf einer
+  Insel. Einst wurde hier ein wertvolles Erz abgebaut, heute ist es…
 tags:
 - locations
 timestamp: '2025-07-29T00:00:00Z'
 id: LOC_WINDUNG
+subtype: Siedlung
 ---
 
-Windung ist ein Fischerdorf auf einer Insel, das einst vom Abbau magischen Erzes lebte. Unter der Kapelle des Dorfes befindet sich eine verlassene Mine mit einem blau leuchtenden Brunnen, der die Kristalle mit Energie versorgte. Der Ort wird später Schauplatz eines Portals und droht, in einen Sumpf zurückverwandelt zu werden.
+Windung ist ein idyllisches, aber fast verlassenes Fischerdorf auf einer Insel. Einst wurde hier ein wertvolles Erz abgebaut, heute ist es nur noch ein ruhiger Ort. Im Verlauf der Session wird die Insel von den [Kuatau](/npcs/kuatau.md) beansprucht und die Menschen müssen evakuiert werden, sodass Windung als menschliche Siedlung verloren ist.
 
 # Belege
-1. Session 2025-07-29 @ 00:19:44 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
+
+[P-16] Session 2025-07-29 @ 00:03:27 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)

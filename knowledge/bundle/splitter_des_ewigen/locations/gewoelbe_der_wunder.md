@@ -1,15 +1,17 @@
 ---
 type: Location
 title: Gewölbe der Wunder
-description: Das Gewölbe ist ein modularer Dungeon, in dem sich die Türen erst öffnen,
-  wenn ein Raum erfolgreich gemeistert wurde. Betreten wird es durc…
+description: Das Gewölbe der Wunder ist ein modularer, magischer Dungeon, der von
+  Harkarus verwaltet wird. Der Zugang führt in einen zentralen Raum mit…
 tags:
 - locations
 timestamp: '2026-04-07T00:00:00Z'
 id: LOC_GEWOELBE_DER_WUNDER
+subtype: Dungeon
 ---
 
-Das Gewölbe der Wunder ist ein modularer Dungeon, dessen Türen sich erst öffnen, wenn ein Raum erfolgreich gemeistert wurde. Es kann durch einen von drei Gängen betreten werden, von denen jeder einen eigenen Umgebungseffekt vorgibt; in der bekannten Begegnung wählte die Gruppe den mittleren Gang. Der Dungeon wird von Harkarus verwaltet und bietet die Möglichkeit, nach einer Rast einen schwierigeren Abschnitt zu wagen. Die Atmosphäre ist dunkel und unheimlich.
+Das Gewölbe der Wunder ist ein modularer, magischer Dungeon, der von Harkarus verwaltet wird. Der Zugang führt in einen zentralen Raum mit drei großen Türen, die jeweils einen Umwelteffekt (links: Nebel, Mitte: Wasser, rechts: Feuer) vorgeben. Dahinter erstrecken sich Gänge mit weiteren Türen, die zu verschiedenen, zufällig ausgewürfelten Minidungeons führen. In dieser Session betritt die Gruppe die mittlere Tür und durchquert mehrere miteinander verbundene Räume voller Rätsel, Kreaturen und uralter Mechanismen, bis sie schließlich das Ritual stoppen und eine außerirdische Statue finden.
 
 # Belege
-1. Session 2026-04-07 @ 00:00:19 (https://www.youtube.com/watch?v=MAuQPMNY548)
+
+[P-45] Session 2026-04-07 @ 00:00:00 (https://www.youtube.com/watch?v=MAuQPMNY548)

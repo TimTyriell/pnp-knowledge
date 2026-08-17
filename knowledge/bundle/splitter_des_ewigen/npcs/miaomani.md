@@ -1,26 +1,38 @@
 ---
 type: NPC
 title: Miaomani
-description: Miaomani ist eine flinke Catfolk-Ausguckerin auf dem Schiff. Sie hält
-  nach Piraten Ausschau und bringt die Gruppe später mit dem Beiboot zu…
+description: Miaomani ist eine katzenartige Catfolk-Frau, die der Heldengruppe in
+  mehreren Situationen begegnet. Zunächst arbeitet sie als Ausguck auf d…
 tags:
 - npcs
-timestamp: '2025-07-29T00:00:00Z'
+timestamp: '2026-07-29T00:00:00Z'
 id: NPC_MIAOMANI
+aliases:
+- Miamani
+status: disputed
 ---
 
-Miaomani ist eine flinke Catfolk-Ausguckerin, die auf dem Schiff von Kapitän Esterossa dient. Sie zeichnet sich durch Wendigkeit und scharfe Aufmerksamkeit aus, hält nach Piraten Ausschau und bringt die Gruppe später mit dem Beiboot zum Schiffswrack. Im Kampf kämpft sie mit einer Muskete. Bei einem Gefecht wird sie zusammen mit Lobrecht niedergeschossen, aber von Esterossa geheilt und kann sich auf das Schiff retten.
+Miaomani ist eine katzenartige Catfolk-Frau, die der Heldengruppe in mehreren Situationen begegnet. Zunächst arbeitet sie als Ausguck auf dem Gildenschiff, später wird sie als Gefährtin des Kapitäns bezeichnet und in einer Taverne als Partnerin des Kahnführers [Lobrecht](/npcs/lobrecht.md) vorgestellt. Sie zeigt sich den Helden gegenüber durchgehend freundlich und hilfsbereit.
 
-## Rolle an Bord
+## Rolle auf dem Gildenschiff
 
-Miaomani fungiert als Ausguck auf dem Schiff und entdeckt aus der Ferne die vielen Fackeln auf der Insel. Sie bringt die Gruppe mit dem Beiboot zum Schiffswrack, was ihre Vertrautheit mit der Umgebung und ihre praktische Nautikkenntnis zeigt. Ihre Beschreibung als „flink“ und „wendig“ sowie ihr Einsatz als Wache deuten auf eine agil-kämpferische Natur hin.
+Miaomani dient als Ausguck auf dem Gildenschiff. Sie ist flink und klettert gewandt im Mast, wo sie [Esterossa](/characters/esterossa.md) bei der Ankunft freundlich begrüßt und ihn bei sich Ausschau halten lässt. Nach der Ankunft setzt sie die Gruppe mit dem Beiboot ab. Bei der Annäherung an die Insel entdeckt sie von weitem die vielen Fackeln und warnt die Gruppe vor der starken Bewachung.
 
-## Kampf und Verletzung
+## Verwundung und Heilung
 
-In einer Auseinandersetzung wird Miaomani zusammen mit Lobrecht niedergeschossen. Esterossa heilt beide, woraufhin Miaomani sich auf das Schiff retten kann. Dieser Vorfall zeigt, dass sie aktiv an Kämpfen teilnimmt (mit einer Muskete) und dass Esterossa eine enge, fürsorgliche Beziehung zu ihr hat.
+In einem Gefecht mit Soldaten wird Miaomani schwer verwundet. Sie wird von Esterossa geheilt, nachdem die Soldaten sie niedergestreckt haben.
 
-## Belege
+## Begegnung in der Taverne
 
-1. Session 2025-04-30 @ 00:05:10 (https://www.youtube.com/watch?v=fsCOiSkKKTE)  
-2. Session 2025-05-06 @ 00:03:04 (https://www.youtube.com/watch?v=e0v6AFGd4mE)  
-3. Session 2025-07-29 @ 00:34:00 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
+Gemeinsam mit dem Kahnführer Lobrecht, ihrer Partner, begrüßt Miaomani die Helden in einer Taverne. Sie bleibt im Hintergrund, lächelt und teilt die Freude über das Wiedersehen. Die Belege lassen offen, ob Lobrecht mit dem Kapitän des Gildenschiffs identisch ist oder ob Miaomani inzwischen eine andere Bindung eingegangen ist.
+
+# Belege
+
+[P-06] Session 2025-04-30 @ 00:05:10 – https://www.youtube.com/watch?v=fsCOiSkKKTE
+[P-07] Session 2025-05-06 @ 00:03:04 – https://www.youtube.com/watch?v=e0v6AFGd4mE
+[P-16] Session 2025-07-29 @ 01:56:53 – https://www.youtube.com/watch?v=XXgO5Ht4Q0A
+[S1-01-A] Session 2026-07-29 @ 00:47:52 – https://www.youtube.com/watch?v=umGyKLkefJI
+
+# Offene Konflikte
+
+- Beleg [P-16] bezeichnet Miaomani als „katzenartige Gefährtin des Kapitäns“, Beleg [S1-01-A] als „Partnerin des Kahnführers Lobrecht“. Es bleibt unklar, ob Lobrecht mit dem Kapitän identisch ist oder ob Miaomani zwei verschiedene Beziehungen hat.

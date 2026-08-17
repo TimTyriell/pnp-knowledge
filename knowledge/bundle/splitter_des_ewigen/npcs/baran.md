@@ -1,24 +1,29 @@
 ---
 type: NPC
 title: Baran
-description: Baran ist der gelehrte Schankwirt der Taverne Kyla, der im Geheimen ein
-  Forschungslabor betreibt. Er besitzt eine kleine Schatulle mit eine…
+description: Baran ist der freundliche, kleinwüchsige Schankwirt der Taverne Kyla
+  und zugleich ein forschender Druide, der sich in Tiere verwandeln kann…
 tags:
 - npcs
 timestamp: '2025-05-06T00:00:00Z'
 id: NPC_BARAN
 ---
 
-**Baran** ist der gelehrte Schankwirt der Taverne Kyla, der im Geheimen ein Forschungslabor betreibt. Er besitzt eine Schatulle mit einem antiken Schlüssel, der zu einem verlassenen Labor und einer verborgenen Kirche führt. Obwohl er äußerlich zurückhaltend und gebildet wirkt, offenbarte er druidische Fähigkeiten, indem er sich in einen Vogel verwandelte, und kämpfte an der Seite der Kapitelverteidiger. Seine genaue Verbindung zum Heiligen Duran und der verborgenen Kirche ist bislang nicht vollständig geklärt.
+Baran ist der freundliche, kleinwüchsige Schankwirt der Taverne Kyla und zugleich ein forschender Druide, der sich in Tiere verwandeln kann. Er beschäftigt sich im Geheimen mit magischen Artefakten und einer alten Kirche, die er auf den Inseln erforscht. Die Protagonist*innen lernen ihn zunächst nach einem gescheiterten Diebstahlversuch kennen, später überrascht er sie, als er ihnen unerwartet in einer ausweglosen Kampfsituation zur Hilfe eilt.
 
-## Geheime Nachforschungen
+## Rolle und Auftreten
 
-Baran betreibt im Verborgenen ein Forschungslabor, über das selbst Vanur nur wenig weiß – was zu Spannungen zwischen den beiden führt. Er bewahrt eine kleine Schatulle mit einem antiken Schlüssel auf, der den Weg zu einem verlassenen Labor und einer verborgenen Kirche weist. Baran ist bereit, seine Forschungsergebnisse mit den Abenteurern zu teilen, sobald er die genaue Lage der Kirche ermittelt hat. Sein Interesse an diesen Orten scheint mit seiner eigenen Vergangenheit oder einem tieferen Ziel verbunden zu sein.[1]
+Baran ist von eher kleiner Statur, möglicherweise ein Gnom, und tritt stets freundlich und kooperativ auf. In seiner Taverne Kyla bewirtet er Gäste, doch hinter den Kulissen verfolgt er eine eigene, verdeckte Forschung. In seinem privaten Raum verwahrt er eine kleine Schatulle mit einem Schlüssel, der zu einem abgelegenen Labor im Westen der Inseln führt – einem Ort, den er selbst zur Erforschung der alten, auf den Inseln versteckten Kirche nutzt. Selbst seinem langjährigen Bekannten Joar Vanur hat er von diesem Labor nichts erzählt.
 
-## Druidische Fähigkeiten und Kampfeinsatz
+## Fähigkeiten und Geheimnisse
 
-Während einer Rettungsaktion flog Baran den anderen als Vogel voraus, um das Schlimmste zu verhindern, und zeigte dabei kurz seine druidische Natur, indem er seine Hand in ein Federvieh verwandelte.[2] Er kämpfte aktiv an der Seite der Kapitelverteidiger und drängte nach der geglückten Rettung zur Eile. Seine Fähigkeiten und seine Bereitschaft, sich direkt einzubringen, deuten darauf hin, dass er mehr ist als ein einfacher Tavernenwirt – seine genaue Rolle im Geflecht der verborgenen Kirche und gegenüber dem Heiligen Duran bleibt jedoch unklar.
+Baran ist ein Druide und beherrscht die Fähigkeit, sich in Tiere zu verwandeln. Als die Gruppe in einer Kapelle von einer Übermacht angegriffen wird, erscheint er plötzlich, weil er als Vogel vorausgeflogen ist, um zu helfen. Zu diesem Zeitpunkt ist er bereits erschöpft vom Kampf, kämpft jedoch weiter und gehört zu den letzten Überlebenden. Schließlich kann er sich durch ein Portal retten. Er bietet an, künftige Erkenntnisse mit der Gruppe zu teilen, bleibt ansonsten aber zurückhaltend, was seine wahren Beweggründe angeht.
+
+## Begegnungen mit der Gruppe
+
+Die erste Begegnung findet statt, als der Kenku Gulrak versucht, etwas aus der Taverne zu stehlen. Baran kann den Dieb jedoch überwältigen und zeigt der Gruppe daraufhin den Schlüssel zu seinem Labor. Später, in der Kapelle, taucht er unerwartet auf und kämpft an ihrer Seite – ein Einsatz, der sein Vertrauen und seine Bereitschaft zur Zusammenarbeit unterstreicht.
 
 # Belege
-1. Session 2025-04-30 @ 01:53:27 – [YouTube](https://www.youtube.com/watch?v=fsCOiSkKKTE)
-2. Session 2025-05-06 @ 01:26:56 – [YouTube](https://www.youtube.com/watch?v=e0v6AFGd4mE)
+
+[P-06] Session 2025-04-30 @ 01:48:36 (https://www.youtube.com/watch?v=fsCOiSkKKTE) – Baran als Schankwirt und Forscher, Diebstahlversuch durch Gulrak, Schlüssel zum Labor.
+[P-07] Session 2025-05-06 @ 01:18:29 (https://www.youtube.com/watch?v=e0v6AFGd4mE) – Baran als Druide mit Tierverwandlung, Auftritt in der Kapelle, erschöpfter Kampf und Rettung durchs Portal.

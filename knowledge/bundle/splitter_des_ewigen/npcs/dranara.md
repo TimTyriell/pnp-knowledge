@@ -1,15 +1,16 @@
 ---
 type: NPC
 title: Dranara
-description: Die Dorfoberhaupt, die zunächst um Hilfe bittet, aber zunehmend feindselig
-  wird, als die Gruppe die sternförmigen Broschen und das Amulett…
+description: Dranara ist das Oberhaupt von Windung und Tochter der ermordeten ehemaligen
+  Dorfvorsteher. Sie wirkt zunächst einfach und verletzlich, doch…
 tags:
 - npcs
 timestamp: '2025-07-29T00:00:00Z'
 id: NPC_DRANARA
 ---
 
-Dranara ist die Dorfoberhaupt eines von Kuatau-Angriffen heimgesuchten Dorfes. Sie bittet die Gruppe zunächst um Hilfe, wird aber zunehmend feindselig, als diese die sternförmigen Broschen und das Amulett hinterfragen. Daraufhin befiehlt sie ihren Soldaten, Lobrecht und Miaomani zu töten, wird jedoch von Leandras mit einem Schlafzauber außer Gefecht gesetzt. Ihre Eltern waren die ersten Opfer der Kuatau-Angriffe; sie weigert sich, das Land aufzugeben.
+Dranara ist das Oberhaupt von [Windung](/locations/windung.md) und Tochter der ermordeten ehemaligen Dorfvorsteher. Sie wirkt zunächst einfach und verletzlich, doch sie wird wütend und weigert sich, nachzugeben, als die Gruppe die Sternbrosche aus dem Grab entnimmt und mit den [Kuatau](/npcs/kuatau.md) verhandeln will. Sie verteidigt das Land ihrer Familie und besteht darauf, dass die Kuatau nicht geduldet werden können. Ihre Starrheit führt dazu, dass sie von [Leandras](/npcs/lendras.md) in Schlaf versetzt wird, um eine Eskalation zu verhindern.
 
 # Belege
-1. Session 2025-07-29 @ 00:26:46 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
+
+[P-16] Session 2025-07-29 @ 01:05:25 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)

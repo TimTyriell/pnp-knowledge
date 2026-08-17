@@ -1,15 +1,17 @@
 ---
 type: Item
 title: Angriffsplan-Karte
-description: Nach der Säuberung des Dorfes findet die Gruppe eine Karte, die einen
-  geplanten Angriff der Goblins auf ein nahes Dorf zeigt. Diese Informa…
+description: Eine Karte mit einem Angriffsplan der Goblins auf ein nahegelegenes Dorf,
+  aus dem die Helden ursprünglich kommen. Sie wird nach der Säuberu…
 tags:
 - items
 timestamp: '2025-04-01T00:00:00Z'
 id: ITEM_ANGRIFFSPLAN_KARTE
+subtype: Schriftstück
 ---
 
-Die **Angriffsplan-Karte** ist ein Dokument, das die Gruppe nach der Säuberung eines Goblindorfes an sich nimmt. Die Karte zeigt einen geplanten Angriff der Goblins auf ein nahe gelegenes Dorf und birgt damit das Potenzial für ein künftiges Abenteuer.
+Eine Karte mit einem Angriffsplan der [Goblins](/factions/goblins.md) auf ein nahegelegenes Dorf, aus dem die Helden ursprünglich kommen. Sie wird nach der Säuberung des Goblin-Dorfes erbeutet und könnte für die weitere Handlung entscheidend sein.
 
 # Belege
-1. Session 2025-04-01 @ 01:59:50 – [YouTube](https://www.youtube.com/watch?v=LZIuUzc3F18)
+
+[P-02] Session 2025-04-01 @ 01:59:58 (https://www.youtube.com/watch?v=LZIuUzc3F18)

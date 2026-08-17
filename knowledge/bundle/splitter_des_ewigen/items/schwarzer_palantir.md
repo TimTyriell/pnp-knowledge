@@ -1,27 +1,31 @@
 ---
 type: Item
 title: Schwärzer Palantir
-description: Eine runde, schwarze Kugel, ähnlich einem Palantir, aber kleiner. Dodo
-  findet sie und wird von Rotunas gewarnt, nicht hineinzusehen.
+description: Der Schwarze Palantir war ein uraltes, dunkles Artefakt, das äußerlich
+  einer kleinen runden Kugel glich und starke Magie ausstrahlte. Es wu…
 tags:
 - items
 timestamp: '2025-06-25T00:00:00Z'
 id: ITEM_SCHWARZER_PALANTIR
+subtype: Artefakt
 aliases:
 - Schwarzer Palantir
 ---
 
-Der **Schwärzer Palantir** ist eine runde, schwarze Kugel, die einem Palantir ähnelt, aber kleiner ist. Es handelt sich um ein mächtiges, dunkles Artefakt, das von [Dodo](/characters/dodo.md) im Sumpf gefunden wurde. Rotunas warnte Dodo davor, in das Artefakt hineinzusehen. Das Objekt löste sich später beim Kontakt mit einem verbotenen Buch auf, öffnete dessen Siegel und löste dadurch unbeabsichtigt eine Seelenreise aus, bevor es vollständig verschwand.
+## Schwarzer Palantir (Item)
 
-## Aussehen und Warnung
+Der **Schwarze Palantir** war ein uraltes, dunkles Artefakt, das äußerlich einer kleinen runden Kugel glich und starke Magie ausstrahlte. Es wurde von [Dodo](/characters/dodo.md) im Labor der Hag im Sumpf-Dungeon gefunden und später bei der Öffnung eines versiegelten Buches zerstört.
 
-Der Schwärzer Palantir wird als eine runde, schwarze Kugel beschrieben, die vom Aussehen her an einen traditionellen Palantir erinnert, jedoch kleiner ist. Rotunas warnte Dodo ausdrücklich davor, in das Artefakt hineinzusehen, was auf eine unmittelbare Gefahr oder eine verderbliche Wirkung hindeutet. Die genaue Natur dieser Gefahr ist nicht dokumentiert.
+### Fund und Eigenschaften
 
-## Auflösung und Konsequenzen
+Dodo entdeckte die Kugel im Labor der Hag, das sich im Sumpf-Dungeon befand (ENTSCHEIDUNG: Beide Fundortangaben aus den Sitzungen stimmen überein – das Labor liegt im Sumpf-Dungeon). Das Artefakt konnte zunächst nicht identifiziert werden, obwohl es offensichtlich Magie ausstrahlte. Dodo wurde eindringlich davor gewarnt, in den Palantir hineinzuschauen – ein Hinweis auf die Gefahr, die von dem Gegenstand ausging.
 
-Das Artefakt zeigte seine entscheidende Wirkung, als es mit einem verbotenen Buch in Kontakt kam. Bei der Berührung löste sich der Schwärzer Palantir auf und öffnete das Siegel des Buches. Dieser Vorgang setzte Ereignisse in Gang, die eine Seelenreise auslösten – ob dies beabsichtigt oder eine unbeabsichtigte Folge war, bleibt unklar. Nach der Auflösung war das Objekt verschwunden und tauchte seither nicht wieder auf.
+### Verwendung und Zerstörung
 
-# Belege
+Auf Anraten hin hielt Dodo den Schwarzen Palantir an ein versiegeltes Buch. Daraufhin begannen beide Gegenstände zu leuchten, woraufhin sich das Buch öffnete. Der Palantir sprang bei diesem Vorgang – er wurde zerstört. Der Graf der Gegend tobte anschließend, weil ein "Werk der Dunkelheit" in seine Bibliothek gebracht worden war. Die Zerstörung des Palantirs verhinderte wohl eine weitere Erforschung oder Nutzung des Artefakts.
 
-1. Session 2025-06-17 @ 01:53:33 (https://www.youtube.com/watch?v=tl76B4V0io8)
-2. Session 2025-06-25 @ 00:50:21 (https://www.youtube.com/watch?v=tpkO9uGw6-I)
+## Belege
+
+[P-12] Session 2025-06-17 @ 01:53:34 – [YouTube](https://www.youtube.com/watch?v=tl76B4V0io8)
+[P-13] Session 2025-06-25 @ 00:50:21 – [YouTube](https://www.youtube.com/watch?v=tpkO9uGw6-I)
+3. Kanon_Entscheidungen.md – Festlegung zu den Fundortangaben

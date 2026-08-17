@@ -1,75 +1,89 @@
 ---
 type: Character
 title: Sange
-description: Sange, ein Katari-Blatthunter mit magischer Maske, wird von Kevin gespielt.
-  Er ist elegant, aber distanziert und führt oft verdeckte Gesprä…
+description: Sange ist ein Katari-Blatthunter und Blutmagier, der aus Brandau stammt.
+  Er trägt eine magische Maske, die Emotionen spiegelt und sein wahr…
 tags:
 - characters
-timestamp: '2026-07-10T00:00:00Z'
+timestamp: '2026-08-06T00:00:00Z'
 id: CHAR_SANGE
 ---
 
 ## Überblick
 
-Sange ist ein Katari-Blatthunter, gespielt von Kevin. Er tritt elegant, nobel und mysteriös auf und trägt eine magische Maske, die sein Gesicht verbirgt – zugleich aber seine wahren Emotionen preisgibt, was zu unbeabsichtigten sozialen Komplikationen führen kann. Seine Magie ist Blutmagie, die er bildlich als eine rot gefüllte, turbulent-stürmische Glaskugel beschreibt. Im Verlauf der Kampagne nimmt er als Einziger der Gruppe den Segen des Gottes Joran den Münzenzähler an, was seine innere Unruhe spürbar dämpft und seine Blutmagie um ein kleines, ruhiges Licht bereichert.
+Sange ist ein Katari-Blatthunter und Blutmagier, der aus Brandau stammt. Er trägt eine magische Maske, die Emotionen spiegelt und sein wahres Gesicht verbirgt – ein Katzenartiges mit schwarzem Fell, roten Streifen und Schnurrhaaren, das dennoch menschliche Züge bewahrt. In seiner Heimat war er ein angesehener Künstler, der in höheren Kreisen verkehrte, bis er Brandau verließ, nachdem er seine Geliebte verloren hatte. Seine Blutmagie manifestierte sich irgendwann nach diesem Verlust.
+
+Auf der Suche nach Kontrolle über seine chaotische Magie wandte er sich dem neuen Gott Joran, dem Münzenzähler, zu und empfing dessen Segen. Diese Verbindung brachte ihm nicht nur einen Timer als physisches Zeichen, sondern auch eine spürbare Beruhigung seiner inneren magischen Kräfte. Sange verbirgt unter seiner höflichen und zurückhaltenden Fassade eine tiefe Zerrissenheit, die sich sowohl in seiner Blutmagie als auch in einer animalischen Verwandlungsfähigkeit äußert, über die er keine bewusste Kontrolle besitzt.
 
 ## Rolle in der Kampagne
 
-Sange bewegt sich oft in einer explorativen, auf Spurensuche ausgerichteten Rolle. Er nutzt seine magischen Fähigkeiten, um vergangene Gräueltaten zu rekonstruieren und der Gruppe so Ermittlungsansätze zu liefern. Aufgrund seiner distanzierten Art und seiner Neigung zu verdeckten Gesprächen agiert er häufig als jemand, der Informationen sammelt und die Gruppe strategisch zu lenken versucht – etwa, indem er sie auf die Spur eines Informanten bringt. Seine unbedachte Erwähnung des heiklen Themas Brandau im Gespräch mit [Talron](/npcs/talron.md) zeigt jedoch, dass seine kommunikative Vorsicht nicht unfehlbar ist und beinahe zur Eskalation führt.
+Sange ist eine treibende Kraft bei der Kontaktaufnahme mit dem Widerstand [P-52] und zeigt wiederholt strategisches Denken sowie Handlungsdrang. Er erkennt die Brisanz von Gesprächen, behält Wissen zunächst für sich und analysiert Situationen mit neugierigem Misstrauen [S1-01-B][S1-03-B]. Im Kampf offenbart er eine brutale und effektive Seite, insbesondere nach seiner Verwandlung [S1-02-B]. Seine Fähigkeiten als Blatthunter, insbesondere das Sehen von Visionen aus Blut und Vergangenheit, machen ihn zu einem wertvollen Informationssammler für die Gruppe [P-52][S1-01-B].
 
 ## Wichtige Merkmale
 
 ### Magische Maske
 
-Sanges Maske ist kein bloßer Gegenstand, sondern ein magisches Artefakt mit ambivalenter Funktion: Sie verbirgt sein Gesicht, stellt aber seine echten Emotionen dar. Dies kann so verstörend wirken, dass ein Kind davon erschreckt wird. Die Maske verändert sich dynamisch – so wird beschrieben, dass sie sich während der Begutachtung Brumas verändert.
+Sanges Maske ist ein zentraler Teil seines Charakters. Sie spiegelt seine Emotionen oder die anderer Wesen und kann ihre Mimik wechseln [P-52][S1-01-B]. Er nutzt sie, um sein Katari-Äußeres zu verbergen, und nimmt sie nur als Zeichen tiefen Vertrauens ab [S1-03-B].
 
 ### Blutmagie
 
-Sanges Magie manifestiert sich als Blutmagie. Er beschreibt sie als „rot gefüllte Glaskugel", die vor der Annahme von Jorans Segen „immer so sehr turbulent, stürmisch" war. Er kann Blut offenbar manipulieren und zu sich ziehen: In einer Szene zieht er [Saris'](/characters/saris.md) Blut mit einer Handbewegung zu sich und lässt es in seiner Handfläche verschwinden.
+Sange beherrscht Blutmagie, die er bildlich als eine Glaskugel beschreibt, gefüllt mit turbulentem, stürmischem Rot [S1-01-B]. Er kann Blut von Gegenständen ziehen, um Sauereien zu vermeiden [S1-01-B], und wendet Rituale an, um Waffen und Talismane zu verzaubern [S1-02-B]. Vor seiner Verbindung zu Joran war diese Magie chaotisch und schwer kontrollierbar. Nach dem Segen beschreibt er eine Veränderung:
 
-### Visionen vergangener Gräueltaten
+> „Seitdem er eben jetzt im Gefolge von dem neuen Gottes ist, ist es viel ruhiger geworden, dass in diesem Rot wie so ein kleiner Funke Licht jetzt auch drin, was einfach diesem Chaos der Blutmagie so ein bisschen entgegenwirkt." [S1-01-B]
 
-Sange besitzt die Fähigkeit, Visionen der letzten Gräueltat an einem Ort zu empfangen. Er setzt diese Fähigkeit mehrfach ein:
-- Um Saris' letzte Gräueltat zu sehen
-- Auf dem Weg zur Farm, wo er erblickt, wie der Grottenschrat von einem Pfeil aus dem Lager getroffen wurde, während zwei Gnolle fliehen
+### Blatthunter-Fähigkeiten
 
-### Auftreten und Wesenszüge
+Als Blatthunter besitzt Sange die Fähigkeit, Visionen aus Blut oder von vergangenen Ereignissen zu empfangen. Er nutzte diese Gabe, um Saris' Vergangenheit zu sehen [P-52] und um eine Vision vom Angriff auf den Grottenschrat zu erhalten [S1-01-B].
 
-Kevin beschreibt Sange selbst als „bisschen eleganter gekleidet, bisschen nobler, bisschen mysteriös mit so einer Maske auf". Er ist elegant, aber distanziert und führt oft verdeckte Gespräche. Trotz seiner kühlen Fassade zeigt er Mitgefühl: Nachdem seine Maske ein Kind erschreckt, bastelt er dem Mädchen als Wiedergutmachung eine Strohpuppe. Gegenüber [Saris](/characters/saris.md) bleibt er skeptisch.
+### Werwolf-ähnliche Verwandlung
 
-### Spirituelle Erfahrung durch Jorans Segen
+In einer extremen Stresssituation offenbart Sange erstmals eine animalische Verwandlungsfähigkeit. Ausgelöst durch das Pochen von Herzen verschwimmt seine Sicht, er fällt auf die Knie, krampft und verwandelt sich in eine „halb-Werwolf-Gestalt" [S1-02-B]. Dabei wachsen Klauen, die Muskeln und Spann werden größer, die Mähne wird länger. In dieser Form ist er äußerst mobil und kampfstark – er springt von Fels zu Fels und greift mit einer ungewöhnlich hohen Schadenswirkung an [S1-02-B].
 
-Sange ist der Einzige der Gruppe, der den Segen Jorans annimmt. Diese Entscheidung hat tiefgreifende Folgen:
+Nach dem Kampf leidet er jedoch unter vollständiger Amnesie bezüglich des Geschehenen. Er zeigt Verwirrung und Verzweiflung und betet zu Joran um Antworten. Joran gewährt ihm die Erkenntnis, dass er der Ursache der Verwandlung nachgehen muss, um sie zu kontrollieren [S1-02-B].
 
-> „Seitdem er eben jetzt im Gefolge von dem neuen Gottes ist, ist es viel ruhiger geworden, dass in diesem Rot wie so ein kleiner Funke Licht jetzt auch drin, was einfach diesem Chaos der Blutmagie so ein bisschen entgegenwirkt"
+### Persönlichkeit und Erscheinungsbild
 
-Er durchlebt eine unruhige Vision, in der Jorans Segen in ihm mit seiner Blutmagie ringt. Am Morgen danach fühlt er sich dennoch erholter, was auf eine Art inneren Ausgleich oder zumindest eine Stabilisierung hindeutet. Kevin resümiert, Sanges Gefühlslage habe sich „so ein bisschen verändert, beziehungsweise seine Magie so minimal".
+Sange ist höflich und zurückhaltend [P-52], zeigt aber auch strategische Bedenken und drängt auf rasches Handeln [S1-01-B][S1-03-B]. In der Taverne offenbart er seine künstlerische Vergangenheit und den Verlust seiner Geliebten als Grund für seine Abkehr von Brandau [S1-03-B]. Seine Augen hinter der Maske spiegeln seine innere Zerrissenheit wider [S1-02-B].
+
+Sein Katari-Äußeres unter der Maske beschreibt er als nicht vollständig katzenartig wie „Cats the Musical", sondern mit erkennbaren menschlichen Zügen und schwarz-rot gestreiftem Fell [S1-03-B].
 
 ## Beziehungen und Verbindungen
 
-- **[Saris](/characters/saris.md):** Sange steht Saris skeptisch gegenüber und nutzt seine Fähigkeit, um dessen letzte Gräueltat zu sehen. Später zieht er Saris' Blut magisch an sich.
-- **[Kaya](/characters/kaya.md):** Als Teil der Abenteurergruppe; die Beziehung wird in den Belegen nicht näher ausgeführt.
-- **[Talron](/npcs/talron.md):** Ein fahrender Ritter, mit dem Sange im Gespräch unbedacht das heikle Thema Brandau zur Sprache bringt, was beinahe zur Eskalation führt.
-- **Joran den Münzenzähler:** Sange nimmt als Einziger Jorans Segen an. Die Beziehung ist spirituell tiefgreifend: Jorans Einfluss beruhigt Sanges Blutmagie und fügt ihr ein Element des Lichts hinzu, ringt aber auch in nächtlichen Visionen mit der dunklen Magie.
-- **Eulenartige Kreatur:** Im Lager befragt Sange eine eulenartige Kreatur nach Adelia. Er wird von ihr bedrohlich aufgefordert, das Lager zu verlassen.
+### Joran, der Münzenzähler
+
+Sange empfing den Segen Jorans in einer Zeremonie und erhielt einen Timer, der seine Verbindung zu dem neuen Gott markiert [P-52]. Diese Verbindung wirkt besänftigend auf seine Blutmagie [S1-01-B] und gewährt ihm in Momenten der Verzweiflung göttliche Führung [S1-02-B]. An einer Statue von Joranja empfängt er einen weiteren Segen, der seinen nächsten Rally-Wurf zu einem kritischen Erfolg macht [S1-03-B]. Er betet aktiv zu Joran, wenn er Antworten sucht [S1-02-B].
+
+### Bruma Stormrak
+
+Sange begegnet Bruma mit neugierigem Misstrauen und nutzt seine Maske, um dessen Mimik zu studieren [S1-01-B]. Die genaue Natur dieser Beziehung bleibt in der Entwicklung.
+
+### Saris
+
+Sange nutzt seine Blatthunter-Fähigkeit, um Saris' Vergangenheit zu sehen [P-52], und wendet Blutmagie an, um dessen Blut von Kleidung zu ziehen [S1-01-B].
+
+### Die Gruppe
+
+Sange beginnt, der Gruppe zunehmend zu vertrauen. Er nimmt in einer Taverne seine Maske ab und offenbart sein wahres Gesicht sowie seine Herkunft – ein bewusster Akt des Vertrauens [S1-03-B]. Gleichzeitig behält er sensibles Wissen, etwa über ein Gespräch zwischen Talron und Raxalis bezüglich des Schutzes einer Person namens Marie, zunächst für sich [S1-03-B].
 
 ## Chronologie
 
-### Session 1 (2026-06-04)
+**Session 2026-06-04**: Sange empfängt den Segen Jorans und erhält einen Timer. In der Nacht spürt er einen Konflikt zwischen seiner Blutmagie und der neuen göttlichen Energie, fühlt aber erstmals seit langem Hoffnung. Er nutzt seine Blatthunter-Fähigkeit, um Saris' Vergangenheit zu sehen, und ist treibende Kraft bei der Kontaktaufnahme mit dem Widerstand [P-52].
 
-Sange wird als Katari-Blatthunter mit magischer Maske vorgestellt. In der Interaktion mit einem Kind offenbart seine Maske versehentlich seine echten Emotionen und erschreckt das Mädchen; zur Wiedergutmachung bastelt er ihr eine Strohpuppe. Er nutzt seine Fähigkeit, um Saris' letzte Gräueltat zu sehen, und bleibt diesem gegenüber skeptisch. Er nimmt als Einziger den Segen Jorans an und erlebt eine tiefe spirituelle Erfahrung. Nachts hat er eine unruhige Vision, in der Jorans Segen mit seiner Blutmagie ringt; am Morgen fühlt er sich dennoch erholter. Später versucht er, die Gruppe auf die Spur des Informanten zu lenken, und bringt im Gespräch mit Talron unbedacht das heikle Thema Brandau zur Sprache – eine Situation, die fast eskaliert.
+**Session 2026-07-10**: Sanges innere Glaskugel hat sich beruhigt – ein kleiner Lichtfunke wirkt dem Chaos der Blutmagie entgegen. Er untersucht Bruma mit neugierigem Misstrauen, erhält eine Vision vom Angriff auf den Grottenschrat und zieht mit Blutmagie Blut von Saris' Kleidung. Im Farmlager wird er von einer eulenartigen Wache bedroht und aus dem Camp gejagt, zeigt sich kampfbereit und drängt auf rasches Handeln [S1-01-B].
 
-### Session 2 (2026-07-10)
+**Session 2026-07-23**: Sange verwandelt sich erstmals in eine Halb-Werwolf-Gestalt, kämpft brutal gegen den Gnoll-Kommandanten, leidet danach unter vollständiger Amnesie. Er betet zu Joran und erhält die Weisung, der Ursache der Verwandlung nachzugehen, um Kontrolle zu erlangen. Zuvor hatte er ein Blutmagie-Ritual zur Verzauberung von Waffe und Talisman durchgeführt [S1-02-B].
 
-Sanges magische Maske verändert sich während der Begutachtung Brumas. Seine Blutmagie hat sich durch Jorans Segen beruhigt: Das turbulente Chaos ist einer ruhigeren Präsenz gewichen, in der ein kleiner Lichtfunke dem Rot entgegenwirkt. Auf dem Weg zur Farm wirkt er einen Zauber und empfängt eine Vision der letzten Gräueltat: Der Grottenschrat wird von einem Pfeil aus dem Lager getroffen, während zwei Gnolle fliehen. Später zieht er Saris' Blut mit einer Handbewegung zu sich und lässt es in seiner Handfläche verschwinden. Im Lager befragt er eine eulenartige Kreatur nach Adelia und wird von ihr unter Drohungen aufgefordert, das Lager zu verlassen.
+**Session 2026-08-06**: Sange baut Käfige, äußert strategische Bedenken und erkennt die Brisanz eines Gesprächs über den Schutz von Marie. In der Taverne nimmt er seine Maske ab, offenbart sein Katari-Äußeres und erzählt von Brandau, dem Verlust seiner Geliebten und seinem früheren Leben als Künstler. Er empfängt an der Statue von Joranja einen Segen [S1-03-B].
 
 ## Offene Fragen
 
-- Die genaue Natur und Herkunft von Sanges Blutmagie bleibt in den Belegen ungeklärt.
-- Was es mit dem Thema Brandau auf sich hat und warum es gegenüber Talron derart heikel ist, wird nicht ausgeführt.
-- Die Identität und Rolle der eulenartigen Kreatur sowie der von Sange gesuchten Adelia sind offen.
+- Die genaue Natur und der Ursprung der Werwolf-ähnlichen Verwandlung sind ungeklärt. Sange selbst hat keine bewusste Kontrolle darüber und keine Erinnerung an die Geschehnisse während der Transformation [S1-02-B].
+- Was mit Sanges Geliebter in Brandau geschah und wie genau der Verlust seine Blutmagie auslöste, wurde nicht näher ausgeführt [S1-03-B].
+- Jorans Hinweis, dass Sange der Ursache der Verwandlung „nachgehen muss", lässt offen, ob diese Ursache in Sanges Vergangenheit, seiner Blutmagie oder einer externen Macht liegt [S1-02-B].
 
 ## Belege
 
-[1] Session 2026-06-04 @ 00:07:15 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
-[2] Session 2026-07-10 @ 00:06:19 (https://www.youtube.com/watch?v=H-eHSlfxUAg)
+[P-52] Session 2026-06-04, 01:24:48 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
+[S1-01-B] Session 2026-07-10, 00:06:19 (https://www.youtube.com/watch?v=H-eHSlfxUAg)
+[S1-02-B] Session 2026-07-23, 01:35:06 (https://www.youtube.com/watch?v=Gb-TEbCFF0M)
+[S1-03-B] Session 2026-08-06, 01:50:54 (https://www.youtube.com/watch?v=0HyPHao8s_k)

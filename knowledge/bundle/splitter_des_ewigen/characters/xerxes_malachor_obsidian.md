@@ -1,8 +1,8 @@
 ---
 type: Character
 title: Xerxes Malachor Obsidian
-description: Ein Infernis mit tragischer Vorgeschichte, ehemaliger Arbeiter einer
-  Meisterhood, die er zerstörte. Er kann mit Shadow Stepper teleportiere…
+description: Xerxes Malachor Obsidian ist ein Infernis-Schurke mit dämonischem Erbe,
+  der im Kampf mit zwei Dolchen und einem Seil agiert. Er beherrscht…
 tags:
 - characters
 timestamp: '2026-04-09T00:00:00Z'
@@ -11,16 +11,16 @@ id: CHAR_XERXES_MALACHOR_OBSIDIAN
 
 # Xerxes Malachor Obsidian
 
-Xerxes Malachor Obsidian ist ein Infernis mit einer tragischen Vergangenheit. Er war einst Arbeiter einer Meisterhood, die er später selbst zerstörte. Xerxes bewegt sich bevorzugt im Hinterhalt und setzt seine ungewöhnlichen Fähigkeiten ein, um Gegner aus dem Schatten heraus zu überwältigen. In der Gruppe der Abenteurer macht er pragmatische, teils skrupellose Vorschläge, die jedoch nicht immer auf Zustimmung stoßen.
+Xerxes Malachor Obsidian ist ein **Infernis-Schurke** mit dämonischem Erbe, der im Kampf mit zwei Dolchen und einem Seil agiert. Er beherrscht den Schattenschritt – eine Fähigkeit, die in verzerrten Umgebungen zunächst versagen kann, aber durch den Einsatz von Stresspunkten gelingt. Ursprünglich diente er einem König, lehnte sich jedoch gegen die Ausbeutung auf und schloss sich der Gruppe an, um ein von Dämonen bewachtes Portal zu zerstören.
 
-## Fähigkeiten und Kampfstil
+## Rolle und Fähigkeiten
 
-Xerxes beherrscht die Fähigkeit *Shadow Stepper*, die ihm kurzstreckige Teleportation durch Schatten ermöglicht. Selbst als die Schattenmagie um ihn herum gestört ist, gelingt ihm diese Fortbewegung in der Schlacht. Er kämpft mit zwei Dolchen, die durch ein Seil verbunden sind. Mit dieser Waffe kann er Gegner zu Fall bringen, indem er sie damit einfängt und reißt; so gelingt es ihm etwa, einem Flugdämon den Flügel abzureißen. Xerxes ist ein geschickter Hinterhaltskämpfer und kombiniert seine Angriffe mit denen von Rotuna, um verheerende kombinierte Effekte zu erzielen.
+Xerxes ist ein **nahkampforientierter Kämpfer**, der seine beiden Dolche sowohl im direkten Gefecht als auch als Wurfwaffen einsetzt. Ein gezielter Dolchwurf kann Dämonen fesseln und so taktische Vorteile schaffen. Seine **Schattenschritt**-Technik erlaubt ihm kurze Teleportationen, allerdings zeigte sich in einer verzerrten Umgebung, dass diese Fähigkeit nicht immer zuverlässig wirkt – erst durch Stresspunkte gelang die Anwendung. Das mitgeführte Seil dient vermutlich Kletter- oder Fesselmanövern. Im Kampf gegen die Dämonen des Portals half er entscheidend mit, das Portal zu zerstören.
 
-## Persönlichkeit und Moral
+## Hintergrund
 
-Xerxes zeigt einen kalten Pragmatismus: Als der verwundete [Nox](/npcs/nox.md) bewusstlos am Boden liegt, schlägt er vor, ihn als Köder zu opfern, um einen Engel abzulenken. Der Vorschlag wird von der Gruppe verworfen. Diese Episode deutet auf eine Haltung hin, die das Überleben der Gruppe und die Erfüllung des Auftrags über das Leben Einzelner stellt – möglicherweise eine Folge der Zerstörung seiner eigenen Meisterhood.
+Xerxes diente einst einem König, rebellierte aber gegen dessen ausbeuterische Herrschaft. Dieses Ereignis trieb ihn in die Schatten und formte ihn zu einem abtrünnigen Schurken. Sein dämonisches Erbe könnte eine Quelle seiner übernatürlichen Fähigkeiten wie dem Schattenschritt sein, auch wenn die genauen Ursprünge dieses Erbes bislang nicht näher bekannt sind.
 
 # Belege
 
-- [1] Session 2026-04-09 @ 00:20:16 (<https://www.youtube.com/watch?v=vcGkejr8_nI>)
+[P-46] Session 2026-04-09 @ 00:01:10 – https://www.youtube.com/watch?v=vcGkejr8_nI

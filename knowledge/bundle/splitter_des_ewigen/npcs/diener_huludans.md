@@ -1,15 +1,18 @@
 ---
 type: NPC
 title: Diener Huludans
-description: Ein geisterhaftes Wesen, das zunächst nur kichernd und beobachtend im
-  Kampf anwesend ist. Es scheint mit dem Ring und dem Stein verbunden.…
+description: Holodarn ist ein geisterhaftes Wesen, das zunächst als stiller Beobachter
+  erscheint und wie ein Otter die Hände reibt. Es ist weder celesti…
 tags:
 - npcs
 timestamp: '2026-05-13T00:00:00Z'
 id: NPC_DIENER_HULUDANS
+aliases:
+- Holodarn
 ---
 
-Ein geisterhaftes Wesen, das sich nach der Zerstörung des Rings und dem Tod des Seraphen materialisierte und mit tiefer Stimme als Diener Huludans vorstellte. Es bot einen Pakt an: zwei Portale – eines in die schwarze Tiefe, eines zurück zur materiellen Ebene – sowie ein spezielles Schwert, um Volgulta zu verletzen. Der Diener betonte, dass Huludan sich an Abmachungen halte, und tauchte anschließend in das schwarze Portal, um seinen Meister zu informieren.
+Holodarn ist ein geisterhaftes Wesen, das zunächst als stiller Beobachter erscheint und wie ein Otter die Hände reibt. Es ist weder celestisch noch dämonisch und dient [Huludan](/deities/huludan.md). Nach der [Zerstörung des Rings](/events/zerstoerung_des_rings.md) manifestiert es sich und spricht mit tiefer Stimme. Es bietet der Gruppe im Austausch für Hilfe bei der Vernichtung Vorgulras einen Weg aus [Abyssalis](/domains/splitterwelt.md). Es beschwört ein Schwert, das [Vorgulta](/deities/vorgul_tar.md) verletzen kann, und ein Portal zur materiellen Ebene. Es verschwindet in eine schwarze Flüssigkeit, nachdem es den Deal besiegelt und Lunara versichert, dass ihr Bruder [Liam](/npcs/liam_velora.md) in der Narbe ist.
 
 # Belege
-1. Session 2026-05-13 @ 01:33:20 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
+
+[P-49] Session 2026-05-13 @ 01:34:35 (https://www.youtube.com/watch?v=4afPD9Q_5AY)

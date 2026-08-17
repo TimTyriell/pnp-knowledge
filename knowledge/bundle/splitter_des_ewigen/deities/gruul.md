@@ -1,51 +1,85 @@
 ---
 type: Deity
 title: Gruul
-description: Ein neuer, nordischer Gott, über den Dodo in der Bibliothek ein Buch
-  sucht. Safin kann jedoch keine spezifischen Dokumente zu ihm anbieten,…
+description: Gruul ist ein neuer Gott des Nordens, der in der Region um Tristram und
+  die westlichen Reiche kaum vertreten ist. Er wird im erweiterten Pa…
 tags:
 - deities
 timestamp: '2026-03-03T00:00:00Z'
 id: DEITY_GRUUL
+subtype: Neuer Gott
 ---
 
 ## Überblick
 
-Gruul, auch bekannt als der "Herr der Glutbande", ist eine neuere Gottheit aus den nördlichen Gefilden. In der Region, in der sich die Gruppe aktuell aufhält, ist sein Kult kaum vertreten, und es existieren so gut wie keine schriftlichen Aufzeichnungen über ihn -- ein Umstand, der direkte Auswirkungen auf die Nachforschungen der Charaktere hat. Die wenigen überlieferten Informationen beschreiben ihn als feurigen Gott, dessen Domänen Feuer, Treue und Vulkane umfassen. Sein heiliges Symbol ist ein brennender Ring. Seine Anhängerschaft rekrutiert sich vor allem aus Goblins, Drachen und Kobolden, die ihm Opfergaben in Form von Valuta-Salzen und Obsidian darbringen. Seine Gebote reflektieren eine ambivalente Natur: Er schätzt Treue, Familie und Leidenschaft, verabscheut hingegen Kälte, Verrat und Schwäche.
+Gruul ist ein neuer Gott des Nordens, der in der Region um Tristram und die
+westlichen Reiche kaum vertreten ist. Er wird im erweiterten Pantheon unter
+dem Titel **„Gruul, Herr der Glutbande“** geführt. Seine Domänen umfassen
+Feuer, Treue und Vulkane; sein Symbol ist ein brennender Ring. Zu seinen
+Anhängern zählen vor allem Goblins, Drachen und Kobolde, die ihm Valuta-Salze
+und Obsidian als Opfer darbringen. Seine Gebote preisen Treue, Familie und
+Leidenschaft, während er Kälte, Verrat und Schwäche verabscheut.
 
 ## Rolle in der Kampagne
 
-Die erste namentliche Erwähnung Gruuls im Spielgeschehen erfolgt durch [Dodo](/characters/dodo.md) während eines Besuchs in einer Bibliothek. Dodo, der sich selbst als wenig belesen bezeichnet, aber durchaus lesefähig ist, fragt den Bibliothekar Safin gezielt nach einem Buch über die "neuen Götter" und spezifisch nach einem Werk über Gruul. Die Tatsache, dass ausgerechnet der kampferprobte Krieger Dodo nach einem solchen Buch sucht -- und dies in einer Bibliothek, die er sonst nicht nach Buchwissen aufsucht -- deutet auf ein spezifisches, bisher nicht näher erläutertes Interesse oder Vorwissen hin.
-
-Die Suche verläuft jedoch ergebnislos. Safin antwortet auf Dodos Anfrage:
-
-> "Ich muss leider verneinen. So etwas habe ich zumindest nicht in meinem Kopf. Vielleicht gibt es ein Buch von damals, was diese Dinge, diese Infos erhält, aber soweit ich weiß, ist es ein nordischer Gott. Er ist nicht so sehr vertreten in dieser Region und dementsprechend wahrscheinlich gibt es nicht so viele Dokumente darüber."
-
-Diese Aussage etabliert mehrere kampagnenrelevante Fakten: Gruul ist in der geographischen Umgebung der Gruppe ein unbeschriebenes Blatt; seine Verehrung konzentriert sich auf den Norden; und selbst gut sortierte Bibliotheken wie die von Safin führen keine Materialien zu ihm. Damit bleibt die Frage nach seiner Bedeutung für Dodo -- und potenziell für die gesamte Kampagne -- zunächst unbeantwortet.
+Bislang ist Gruul nur indirekt in Erscheinung getreten: [Dodo](/characters/dodo.md),
+ein Mitglied der Heldengruppe, sucht gezielt nach Wissen über diesen Gott.
+Die Nachforschungen verliefen jedoch ergebnislos – in der Bibliothek von
+[Safin Al Barak](/npcs/safin_al_barak.md) existiert keine Schrift über
+Gruul, da er als nordische Gottheit in dieser Region kaum präsent ist und
+folglich nicht dokumentiert wurde.
 
 ## Wichtige Merkmale
 
 - **Titel:** Herr der Glutbande
-- **Geographische Verortung:** Nordischer Gott, in der aktuellen Spielregion kaum präsent oder dokumentiert
 - **Domänen:** Feuer, Treue, Vulkane
-- **Heiliges Symbol:** Ein brennender Ring
-- **Anhängerschaft:** Goblins, Drachen, Kobolde
+- **Symbol:** Brennender Ring
+- **Anhänger:** Goblins, Drachen, Kobolde
 - **Opfergaben:** Valuta-Salze, Obsidian
 - **Gebote:**
-  - Geschätzt: Treue, Familie, Leidenschaft
-  - Verhasst: Kälte, Verrat, Schwäche
+  - Mag: Treue, Familie, Leidenschaft
+  - Hasst: Kälte, Verrat, Schwäche
+- **Regionale Verortung:** Nordischer Gott, in den westlichen Reichen um
+  Tristram so gut wie unbekannt.
 
 ## Beziehungen und Verbindungen
 
-Zum gegenwärtigen Zeitpunkt sind keine direkten Verbindungen Gruuls zu anderen Gottheiten, Institutionen oder Nicht-Spieler-Charakteren dokumentiert. Die einzige relevante Beziehung besteht im Interesse des Spielercharakters [Dodo](/characters/dodo.md), der gezielt nach Wissen über Gruul sucht. Die Motivation hinter diesem Interesse ist bislang ungeklärt.
+- **[Dodo](/characters/dodo.md):** Der Krieger der Gruppe sucht aktiv nach Wissen über
+  Gruul und erfragte in der Bibliothek von Safin Al Barak ein entsprechendes
+  Buch – ohne Erfolg.
+- **[Safin Al Barak](/npcs/safin_al_barak.md):** Der Gelehrte konnte Dodos
+  Bitte nicht erfüllen; er führte aus, dass Gruul ein nordischer Gott sei und
+  es in dieser Region keine Dokumente über ihn gebe.
+- **Neue Götter des Nordens:** Gruul wird ausdrücklich zu den „neuen Göttern“
+  gezählt, über die Dodo mehr erfahren möchte. Weitere Mitglieder dieses
+  Pantheons sind in den Belegen nicht namentlich genannt.
+- **Anhängerschaft:** Goblins, Drachen und Kobolde werden als seine Verehrer
+  aufgeführt. Eine direkte Interaktion der Gruppe mit diesen Anhängern hat
+  noch nicht stattgefunden.
+
+## Chronologie
+
+- **Session 2026-03-03:** Während des Bibliotheksbesuchs bei Safin Al Barak
+  bittet Dodo um ein Buch über die neuen Götter, „vielleicht spezifisch zu dem
+  Gott Gruul“. Safin Al Barak verneint – in seiner Sammlung befinde sich kein
+  solches Werk. Er begründet dies mit Gruuls Herkunft: „es ist ein nordischer
+  Gott, er ist nicht so sehr vertreten in dieser Region und dementsprechend
+  wahrscheinlich gibt es nicht so viele Dokumente darüber.“ Dodo nimmt dies
+  zur Kenntnis, vertieft die Suche aber nicht weiter. Seitdem ist Gruul in
+  den Aufzeichnungen nicht wieder aufgetaucht.
 
 ## Offene Fragen
 
-- Welche Bewandtnis hat Dodos aktives Interesse an Gruul? Verfügt er über Vorwissen, eine persönliche Verbindung oder einen konkreten Auftrag?
-- Welche konkrete Rolle (wenn überhaupt) wird Gruul im weiteren Verlauf der Kampagne spielen, insbesondere angesichts seiner regionalen Abwesenheit?
-- Inwiefern könnten Gruuls Domänen -- Feuer, Treue, Vulkane -- sowie seine Bewertung von Stärke und Schwäche thematisch mit der Gruppe oder einzelnen Charakteren kollidieren?
+- Warum sucht Dodo ausgerechnet nach Wissen über Gruul? Seine Motivation
+  wurde bislang nicht erläutert.
+- Welche Rolle spielt Gruul innerhalb des Pantheons der „neuen Götter des
+  Nordens“ und in welchem Verhältnis steht er zu anderen nordischen Gottheiten?
+- Warum ist ein Gott mit Domänen wie Feuer und Treue ausgerechnet im Norden
+  beheimatet – einer Region, die eher mit Kälte assoziiert wird?
+- Hat Gruul Einfluss oder Anhänger jenseits des Nordens, die für die Gruppe
+  relevant werden könnten?
 
 ## Belege
 
-1. Session am 2026-03-03, 01:23:12 – https://www.youtube.com/watch?v=BRUNuNKTeOg (Dodo fragt in der Bibliothek nach einem Buch über Gruul; Safin kann nicht helfen, da Gruul ein nordischer Gott und in der Region kaum vertreten ist.)
-2. Weltmaterial: *Gruul, Herr der Glutbande* aus "Bekannte_Pantheon_der_Goetter.md" (Domänen, Symbol, Anhänger, Opfergaben, Gebote)
+[P-39] Session 2026-03-03, 01:23:12 – [YouTube](https://www.youtube.com/watch?v=BRUNuNKTeOg)
+2. Pantheon-Dokument: *Gruul, Herr der Glutbande* (aus Bekannte_Pantheon_der_Goetter.md)

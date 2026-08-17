@@ -1,15 +1,17 @@
 ---
 type: Location
 title: Magia Tower
-description: Ein Schloss am Rande der Welt, vermutlich weit entfernt, wo Rotunas die
-  Runen auf Lunaras Körper studieren könnte, um die Kontrollrune zu f…
+description: Das Schloss des Magiers, auch Magia Tower genannt, liegt am Ende der
+  Welt und beherbergt uraltes Wissen über Runen. Nox schlägt vor, dass R…
 tags:
 - locations
 timestamp: '2026-02-17T00:00:00Z'
 id: LOC_MAGIA_TOWER
+subtype: Gebäude
 ---
 
-**Magia Tower** ist ein Schloss am Rande der Welt, dessen genaue Lage nicht näher bekannt ist. Es galt als möglicher Ort, an dem Rotunas die Runen auf Lunaras Körper studieren könnte, um die Kontrollrune zu finden oder aufzuheben. In der Kampagne wurde der Ort nie tatsächlich besucht oder weiter beschrieben. [1]
+Das Schloss des Magiers, auch Magia Tower genannt, liegt am [Ende](/locations/ende_jenseits_der_orkgebiete.md) der Welt und beherbergt uraltes Wissen über Runen. Nox schlägt vor, dass [Rotunas](/characters/rotunas.md) und Lunara dorthin reisen, um ihre Runen zu studieren und die Kontrollrunen zu entfernen.
 
 # Belege
-1. [Session 2026-02-17 @ 01:28:20](https://www.youtube.com/watch?v=Z2jlzpoTWVw) – Erwähnung als mögliches Ziel für die Runenforschung.
+
+[P-37] Session 2026-02-17 @ 01:40:37 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)

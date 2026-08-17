@@ -1,15 +1,16 @@
 ---
 type: NPC
 title: Gulrak
-description: Gulrak ist ein gerupfter, demoralisierter Kenku, der von den Wachen brutal
-  gefoltert wurde. Er behauptet, die Inseln hätten einst seiner ma…
+description: Gulrak ist ein Kenku, der von Joar Vanur gefangen gehalten wird, weil
+  er versucht hat, bei Baran einzubrechen. Er wirkt gerupft und geschwä…
 tags:
 - npcs
 timestamp: '2025-04-30T00:00:00Z'
 id: NPC_GULRAK
 ---
 
-Gulrak ist ein gerupfter, demoralisierter Kenku, der von den Wachen brutal gefoltert wurde. Er behauptet, die Inseln hätten einst seiner magisch begabten Familie gehört, bis Piraten sie vertrieben und töteten. Er wurde gefasst, als er versuchte, ein Familienamulett mit Rabenschädel aus [Baran](/npcs/baran.md)s Besitz zu stehlen. Trotz seiner Lage zeigt er sich verschlagen und bietet den Helden Freiheit gegen Informationen an. Esterossa bricht den Deal, und [Cookie](/characters/cookie.md) packt ihn mit der Zunge, woraufhin er fast die Hoffnung verliert, doch Rotunas versiegelt heimlich die Zelle und bewahrt ihn so vor weiterer Folter. Seine Reaktion auf die Erwähnung einer Kirche deutet auf tieferes Wissen hin.
+Gulrak ist ein Kenku, der von [Joar Vanur](/npcs/joar_vanur.md) gefangen gehalten wird, weil er versucht hat, bei [Baran](/npcs/baran.md) einzubrechen. Er wirkt gerupft und geschwächt, aber immer noch verschlagen. Er behauptet, die [Sanddorninseln](/locations/sanddorninseln.md) hätten früher seiner Familie gehört und Baran besitze nun das magische Familienerbstück, ein Amulett mit Rabenschädel. Er bietet an, alles zu verraten, wenn man ihn befreit und die drei Anwesenden tötet. Als [Esterossa](/characters/esterossa.md) den Deal annimmt und die Tür öffnen will, versucht er zu fliehen, wird aber von [Cookies](/characters/cookie.md) Zunge gepackt und zurückgeworfen. [Rotunas](/characters/rotunas.md) versiegelt die Zelle anschließend magisch. Gulrak reagierte kurz auf die Erwähnung einer Kirche, gab aber keine weiteren Informationen.
 
 # Belege
-1. Session 2025-04-30 @ 01:14:11 (https://www.youtube.com/watch?v=fsCOiSkKKTE)
+
+[P-06] Session 2025-04-30 @ 01:12:48 (https://www.youtube.com/watch?v=fsCOiSkKKTE)

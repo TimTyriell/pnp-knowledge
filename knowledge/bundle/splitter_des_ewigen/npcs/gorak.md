@@ -1,15 +1,16 @@
 ---
 type: NPC
 title: Gorak
-description: Gorak ist der Anführer der neuen Gilde in Breska und vertritt die Interessen
-  der vier Gildenoberhäupter. Er möchte ein Treffen mit der Berg…
+description: Gorak ist der Anführer der Bresca-Gilde und eröffnet das Bündnisangebot
+  an die Berggilde. Er wirkt berechnend und lacht am Ende diabolisch,…
 tags:
 - npcs
 timestamp: '2025-09-17T00:00:00Z'
 id: NPC_GORAK
 ---
 
-Gorak ist der Anführer der neuen Gilde in Breska und spricht im Namen der vier Gildenoberhäupter. Er bot der Gruppe ein Treffen mit der Berggilde an und versprach ihnen im Gegenzug die Mitgliedschaft – unter der Bedingung, dass sie den flüchtigen Anführer Roland ausschalten. Nachdem die Gruppe den Auftrag ablehnte, reagierte Gorak professionell und höflich, wenngleich enttäuscht. Sein Lachen mit den anderen Oberhäuptern wirkte einstudiert und diabolisch. Er betonte die Regel, dass kein Gildenmitglied ermordet werden dürfe.
+Gorak ist der Anführer der [Bresca-Gilde](/factions/bresca_gilde.md) und eröffnet das Bündnisangebot an die Berggilde. Er wirkt berechnend und lacht am [Ende](/locations/ende_jenseits_der_orkgebiete.md) diabolisch, als die Gruppe die Aufnahmeprüfung ablehnt. Er übergibt ein magisch versiegeltes Schriftstück und besteht auf der Mission, [Roland](/npcs/roland.md) zu töten.
 
 # Belege
-1. Session 2025-09-17 @ 00:24:31 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
+
+[P-22] Session 2025-09-17 @ 00:26:08 (https://www.youtube.com/watch?v=AhIT8dcxw2o)

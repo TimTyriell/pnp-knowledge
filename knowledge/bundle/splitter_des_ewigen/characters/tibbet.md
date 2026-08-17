@@ -1,28 +1,28 @@
 ---
 type: Character
 title: Tibbet
-description: Ein junger Ribbet-Zauberer, der seine Fähigkeiten ausbauen will und einen
-  Barbaren namens Gummo sucht. Er setzt häufig Illusionen ein, um s…
+description: Tibbet ist ein junger Ribbit-Zauberer, der auf der Suche nach einem Barbaren
+  namens Gummo durch die Welt zieht. Er beherrscht Illusionsmagi…
 tags:
 - characters
 timestamp: '2026-03-23T00:00:00Z'
 id: CHAR_TIBBET
 ---
 
-Tibbet ist ein junger Ribbet-Zauberer, der sich auf die Suche nach dem Barbaren Gummo begeben hat. Er setzt seine wachsenden magischen Fähigkeiten vor allem für Illusionen ein, um sich und seine Gefährten zu tarnen oder im Kampf zu unterstützen. Seine Neugier und sein Wunsch, Gummo zu finden, treiben ihn an, doch als diese Suche erfolglos bleibt, fällt er zögerliche Entscheidungen und stimmt schließlich einer umstrittenen Auslieferung zu.
+# Tibbet
 
-## Illusionsmagie und Kampfstil
+Tibbet ist ein junger Ribbit-Zauberer, der auf der Suche nach einem Barbaren namens Gummo durch die Welt zieht. Er beherrscht Illusionsmagie und eisbasierte Kampfzauber, setzt aber auch seine lange Zunge für akrobatische Manöver ein. In der Gruppe übernimmt er eine taktisch unterstützende Rolle, indem er Waffen magisch verstärkt und sich an koordinierten Angriffen beteiligt. Trotz anfänglicher Unsicherheit trifft er schließlich eine pragmatische Entscheidung, als sich die Gelegenheit bietet, sein eigentliches Ziel besser zu verfolgen.
 
-Tibbet beherrscht die Kunst der Illusion meisterhaft. Häufig tarnt er sich selbst als Fass, um unbemerkt zu bleiben, oder erschafft Illusionen, um die Gruppe zu decken. Im Gefecht wirkt er den Zauberspruch *Reign of Blades*, der Eissplitter auf Gegner schleudert, und verstärkt die Bolzen seiner Gefährtin Nina für koordinierte Tag-Team-Angriffe. Seine Magie ist somit sowohl defensiv-taktisch als auch offensiv einsetzbar.
+## Fähigkeiten und Kampfstil
 
-## Suche nach Gummo
+Tibbets magische Fähigkeiten sind vielseitig und auf Täuschung und Kontrolle ausgelegt. Er kann Illusionen erschaffen, etwa um sich selbst als Fass zu tarnen, und nutzt den Zauber *Reign of Blades*, um Wasser in geschossartige Eissplitter zu verwandeln. Seine lange Zunge erlaubt ihm zudem akrobatische Bewegungen, die er im Kampf einsetzt.  
 
-Tibbets zentrales Anliegen ist die Begegnung mit dem Barbaren Gummo. Er fragt [Floran](/npcs/floran.md) wiederholt nach Gummos Aufenthaltsort, erhält jedoch keine Antwort. Als die Gruppe vor der finalen Entscheidung steht, jemanden auszuliefern, zögert Tibbet zunächst, stimmt aber schließlich dafür – nachdem seine eigene Suche erfolglos geblieben ist. Dies deutet auf eine gewisse Resignation hin: Ohne eine Spur von Gummo scheint er die Prioritäten der Gruppe über seinen persönlichen Auftrag zu stellen.
+Im Team agiert Tibbet vor allem unterstützend: Er verstärkt die Waffen seiner Verbündeten mit Magie, um ihre Angriffskraft zu erhöhen, und beteiligt sich an Teamangriffen. Im entscheidenden Gefecht gegen [Floran](/npcs/floran.md) gelingt ihm ein mächtiger kombinierter Angriff mit [Nina](/characters/nina.md), der den Gegner schwer trifft.
 
-## Persönlichkeit
+## Rolle in der Gruppe und Entscheidungen
 
-Tibbet wirkt neugierig, aber auch unsicher. Seine Fragen drängen nicht aufdringlich, und bei der Gruppenentscheidung zeigt er sich zögerlich, bevor er sich der Mehrheit anschließt. Der junge Ribbet sucht offenbar nach einem Ziel oder einer Führungsfigur – vielleicht verkörpert durch den vermissten Gummo.
+Tibbets primäres Motiv ist die Suche nach Gummo, der für ihn von persönlicher Bedeutung ist. Als die Gruppe über das Schicksal eines Gefangenen abstimmt, der Informationen über Gummos Aufenthaltsort haben könnte, zeigt sich Tibbet zunächst unschlüssig. Erst als er erfährt, dass Gummo sich nicht an dem betreffenden Ort aufhält, stimmt er für die Auslieferung – eine Entscheidung, die sowohl Pragmatismus als auch seine Fixierung auf die Suche widerspiegelt.
 
-## Belege
+# Belege
 
-1. Session 2026-03-23 @ 00:02:28 (https://www.youtube.com/watch?v=niVxKtdQBn0)
+[P-42] Session 2026-03-23 @ 00:02:28 – [YouTube-Link](https://www.youtube.com/watch?v=niVxKtdQBn0)

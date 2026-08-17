@@ -1,55 +1,56 @@
 ---
 type: Location
 title: Sanddorn-Inseln
-description: Die Sanddorn-Inseln sind eine tropische, karibisch anmutende Region mit
-  vielen kleinen Inseln, Palmen und Sandstränden. Die Hauptinsel behe…
+description: Die Sanddorn-Inseln (auch Sanddorninseln, Sanddornische Inseln oder Sundown-Inseln
+  genannt) sind eine Inselgruppe nördlich der Hafenstadt T…
 tags:
 - locations
-timestamp: '2025-07-29T00:00:00Z'
+timestamp: '2026-03-18T00:00:00Z'
 id: LOC_SANDDORNINSELN
+subtype: Wildnis
 aliases:
 - Sanddorninseln
+- Sanddorninseln (Sundown-Inseln)
 ---
 
 ## Überblick
-Die Sanddorn-Inseln sind ein tropisch geprägter Archipel, der karibisch anmutet: viele kleine Inseln, Palmen und weiße Sandstrände prägen das Bild. Die Hauptinsel beherbergt eine gedrungene, aber wohlhabende Siedlung mit Tavernen, einem großen Inn und weiteren massiven Gebäuden. Dieser Wohlstand ist trügerisch – er speist sich offenkundig aus Piraterie oder systematischer Bestechung. Die Inseln wurden einst von einer Kenku-Familie gehalten, bevor sie von Piraten übernommen wurden, was einen schwelenden sozialen Konflikt verursacht. Ein weiteres auffälliges Merkmal ist eine neuartige Pilzplage: Pilze breiten sich in der Inselflora aus und verströmen eine unheimliche magische Aura, unterbrochen von sternförmigen Symbolen.
+
+Die Sanddorn-Inseln (auch Sanddorninseln, Sanddornische Inseln oder Sundown-Inseln genannt) sind eine Inselgruppe nördlich der Hafenstadt [Tiefwasser](/locations/tiefwasser.md). Sie sind ausschließlich über Tiefwasser erreichbar und gelten als lukratives Handelsziel, vor allem für Gewürze und andere begehrte Waren.[P-41] Die Region ist die Heimat von [Lunara Velora](/characters/lunara_velora.md), die in einem Dorf auf einer der Inseln geboren wurde.[P-30]
 
 ## Rolle in der Kampagne
-Die Sanddorn-Inseln sind das Ziel einer Mission der Gruppe: auf der Hauptinsel soll sich ihr Auftraggeber befinden. Die Ankunft markiert den Beginn eines neuen Handlungsabschnitts in einer fremden, latent feindseligen Umgebung. Später – in Session 2025-07-29 – dienen die Inseln als retrospektiver Bezugspunkt: Esterossa erinnert sich, als sie eine sternförmige Brosche mit Restmagie untersucht, dass die Gruppe „auf der Insel […] auf den Sanddorninseln […] was ähnliches gesehen [hat] und du weißt, das lag so ein bisschen zwischen Pilzen.“ Damit verknüpft sich die Pilz-Symbolik der Inseln unmittelbar mit der aktuellen Bedrohung der Kampagne.
+
+Die Sanddorn-Inseln waren bereits früh in der Kampagne Schauplatz eines Auftrags der Gruppe. In Session 1 wird erwähnt, dass einer der ersten Aufträge, den die Charaktere annahmen, auf den „Sundown-Inseln“ stattfand.[P-30] Später, in Session 2, werden sie als wichtiges Handelsziel vorgestellt, das über Tiefwasser angefahren wird. Dort liegt auch der narrative Ursprung von Lunara, deren Verbindung zur Region mehrfach zur Sprache kommt – etwa als sie sich der Gruppe mit den Worten vorstellte: „Also geboren bin ich in einem Inseldorf auf diesen Sanddormischen Inseln.“[P-30]
 
 ## Wichtige Merkmale
 
-### Lage und Erscheinungsbild
-Die Inselgruppe liegt so, dass der Osten in Richtung der Hauptinsel weist – bei der Ankunft der Gruppe beschreibt der GM: „Im Osten. Wenn ich [aus der Sicht des Schiffes] rechts gehe … Diese Insel mit verschiedenen Gebäuden? … Das ist im Osten. East.“ Die Sonne geht zu diesem Zeitpunkt bereits unter, und die Szenerie wird als Bucht mit sichtbarer Hauptinsel dargestellt. Palmen und Sandstrände dominieren das Landschaftsbild; das Klima ist karibisch-warm.
+**Lage und Erreichbarkeit**  
+Die Inseln liegen nördlich von Tiefwasser. Der Seeweg von und zu ihnen führt zwingend über diesen Hafen – es gibt offenbar keine alternative Route. Tiefwasser selbst profitiert von diesem Umstand und hat eine strategische Bedeutung als Umschlagplatz für Warenströme von und nach Willow.[P-41]
 
-### Wohlstand und Architektur
-Auf der kartierten Hauptinsel stehen mehrere massive Gebäude: eine Taverne, ein großes Inn und weitere, nicht näher spezifizierte Steinbauten. Diese Bauten zeugen von erheblichem Wohlstand, der nach Aussage der Belege nicht durch Handel oder Landwirtschaft, sondern durch „Piraterie oder Bestechung“ erwirtschaftet wurde. Der GM beschreibt eine harte Hand, die das Eiland zusammenhält – „Vanur regiert das Eiland mit strenger Hand, unterstützt von sadistischen Wachen.“ Wer Vanur genau ist, bleibt an dieser Stelle ungesagt, doch die Wortwahl („regiert“, „sadistische Wachen“) zeichnet das Bild einer brutalen Herrschaft.
+**Wirtschaft**  
+Die Inseln sind ein „lukratives Handelsziel“[P-41] und bekannt für Gewürzlieferungen. In Tiefwasser zeugen zwei große Schiffe vom Warenumschlag, und es wird vermutet, dass „hier eine ganze Menge Waren durchgehen, anders würde es wahrscheinlich auch nicht funktionieren.“[P-41] Dass die Inseln als exklusiv über Tiefwasser zugänglich beschrieben werden, verleiht ihnen eine Sonderstellung im regionalen Handel.
 
-### Besitzkonflikt: Kenku gegen Piraten
-Die Besitzverhältnisse der Inseln sind historisch aufgeladen. Ursprünglich gehörte die Inselgruppe einer Familie von Kenku. Piraten übernahmen jedoch die Kontrolle – ob gewaltsam, durch Vertreibung oder auf andere Weise, wird nicht ausgeführt. Diese Übernahme hat einen „tiefen sozialen Konflikt“ hinterlassen, der offenbar weiter schwelt. Die gegenwärtige Herrschaft Vanurs könnte mit dieser Piratenübernahme in Verbindung stehen, auch wenn die Belege den Zusammenhang nicht explizit herstellen.
-
-### Der Pilzbefall
-Ein für die Inseln ungewöhnliches Merkmal ist das plötzliche Auftreten einer Pilzplage. Der GM hält fest: „Ungewöhnlich ist das plötzliche Auftreten von Pilzen, die sich in der Flora ausbreiten und eine unheimliche magische Aura verströmen.“ Zwischen diesen Pilzen fand die Gruppe sternförmige Symbole, wie Esterossas spätere Erinnerung in Session 2025-07-29 explizit macht: „als ihr auf der Insel wart, auf den Sanddorninseln[,] da habt ihr was ähnliches gesehen und du weißt, das lag so ein bisschen zwischen Pilzen.“ Diese Symbole könnten mit einer magischen oder transzendenten Entität in Verbindung stehen, da sie bei erneuter Sichtung in einem anderen Kontext (einer Brosche) „Restmagie“ aufweisen.
+**Kulturelle Prägung**  
+Lunara beschreibt ihr Heimatdorf als einfaches Inseldorf. Ihr Vater war ein Tidekin – Wasserwesen, deren Erbe ihr die Fähigkeit verleiht, unter Wasser zu atmen. Sie selbst betont jedoch, weder mit dem Vater noch mit den Inseln viel gemein zu haben: „Ich habe eigentlich nichts mit meinem Vater gemein oder eigentlich auch mit diesen ganzen Inseln oder so.“[P-30] Ihre Mutter war eine Hexe, und Lunara wuchs im abgeschieden lebenden Hexenzirkel der Nachtwächterinnen auf.
 
 ## Beziehungen und Verbindungen
-- **Vanur** (Herrscher): Regiert die Hauptinsel mit strenger Hand; seine sadistischen Wachen stützen sein Regime.
-- **Kenku-Familie**: Frühere Eigentümer der Inseln; ihr Verbleib oder Schicksal nach der Piratenübernahme ist nicht dokumentiert.
-- **Piraten**: Haben die Inseln von den Kenku übernommen; mögliche Verbindung zur gegenwärtigen Herrschaft Vanurs.
-- **Esterossa**: Erinnert sich in Session 2025-07-29 an die sternförmigen Symbole zwischen den Pilzen auf den Sanddorn-Inseln, als sie anderswo auf ein ähnliches Symbol stößt. Dadurch wird der Pilzbefall der Inseln mit dem übergeordneten Mysterium der Kampagne verknüpft.
-- **Unbekannte magische Quelle**: Die Kombination aus Pilzen und sternförmigen Symbolen deutet auf eine magische oder jenseitige Macht hin, über deren Natur die Belege nichts weiter verraten.
+
+- **[Lunara Velora](/characters/lunara_velora.md)** – geboren auf den Sanddorn-Inseln, Tochter eines Tidekin von dort. Sie hat die Inseln verlassen und steht ihnen emotional distanziert gegenüber.
+- **[Tiefwasser](/locations/tiefwasser.md)** – einziger Zugangshafen zu den Inseln und Drehkreuz für den Handel mit ihnen.
+- **Willow** – Die Stadt oder Region Willow nutzt offenbar Schiffe, die auch Routen zu den Sanddorn-Inseln befahren.[P-41]
+- **Die Gruppe** – führte bereits in der Frühphase der Kampagne einen Auftrag auf den Inseln aus.[P-30]
 
 ## Chronologie
-1. **Unbestimmte Vergangenheit**: Die Kenku-Familie besitzt die Sanddorn-Inseln, bevor Piraten sie übernehmen. Vanur etabliert (vermutlich in der Folge) ein strenges Regiment.
-2. **Neuere Vergangenheit**: Pilze tauchen auf natives Inseln plötzlich auf, breiten sich aus und werden von sternförmigen Symbolen begleitet.
-3. **Session 2025-04-30**: Die Gruppe erreicht die Sanddorn-Inseln bei Sonnenuntergang, ankert in einer Bucht und sichtet die Hauptinsel mit ihren Gebäuden. Der Missionsauftraggeber soll sich dort befinden.
-4. **Session 2025-07-29**: Esterossa erinnert sich bei der Untersuchung eines ähnlich geformten magischen Artefakts an die sternförmigen Symbole zwischen den Pilzen auf den Sanddorn-Inseln. Diese Erinnerung erfolgt unmittelbar vor einem Kampf bei den „Dogs“, als sie das Artefakt einsteckt und sich zur Verteidigung aufmacht.
+
+- **Session 1 (18.11.2025):** Die Sanddorn-Inseln werden erstmals erwähnt, als Lunara von ihrer Herkunft erzählt. Der GM ergänzt, dass ein sehr früher Auftrag der Gruppe auf den „Sundown-Inseln“ stattfand. Ein Spieler bringt sie zudem mit der Nähe zu Tarkia in Verbindung.
+- **Session 2 (18.03.2026):** Die Inseln werden als nördliches Handelsziel von Tiefwasser aus beschrieben. Der GM erklärt, dass sie nur über Tiefwasser erreichbar sind und betont ihren wirtschaftlichen Wert.
 
 ## Offene Fragen
-- Wer ist Vanur genau, und wie kam er an die Macht?
-- Was geschah mit der ursprünglichen Kenku-Familie nach der Piratenübernahme?
-- Welche Entität oder magische Kraft steckt hinter den Pilzen und den sternförmigen Symbolen?
-- Besteht ein direkter Zusammenhang zwischen der Piratenherrschaft und dem Pilzbefall?
+
+- Warum genau sind die Sanddorn-Inseln ausschließlich über Tiefwasser erreichbar – liegt es an gefährlichen Gewässern, politischen Restriktionen oder natürlichen Gegebenheiten?
+- Welcher Auftrag führte die Gruppe in der Frühphase der Kampagne dorthin, und was geschah dabei?
+- Welche weiteren Inseln oder Siedlungen gehören zur Inselgruppe?
 
 ## Belege
-[1] Session 2025-04-30, 00:17:38 (YouTube: fsCOiSkKKTE)
-[2] Session 2025-07-29, 00:33:26 (YouTube: XXgO5Ht4Q0A)
+
+[P-30] Session 2025-11-18, 00:35:10 – https://www.youtube.com/watch?v=w__ahowb9p0
+[P-41] Session 2026-03-18, 00:22:08 – https://www.youtube.com/watch?v=HHXxsASLrbQ

@@ -1,15 +1,17 @@
 ---
 type: Location
 title: Crowfin Manor
-description: Eine jahrhundertealte Villa, einst königliche Residenz der Zebros-Dynastie
-  und nun von der Gilde beansprucht. Das Gebäude ist von einem sta…
+description: Crowfin Manor ist eine alte Villa aus der Zeit der Zebros-Könige, die
+  jetzt als Gildensitz dient. Sie ist von einem starken Schutzzauber um…
 tags:
 - locations
 timestamp: '2026-02-17T00:00:00Z'
 id: LOC_CROWFIN_MANOR
+subtype: Gebäude
 ---
 
-Crowfin Manor ist eine jahrhundertealte Villa, die einst als königliche Residenz der Zebros-Dynastie diente und heute von der Gilde beansprucht wird. Ein starker Schutzzauber umgibt das Anwesen, hält Unerwünschte fern und kann innerhalb der Mauern sogar Slix unterdrücken; im Garten steckt zudem das Schwert Zebrosia. Enox nutzt das Anwesen als Rückzugsort und Arbeitsstätte, während Lionel es allein pflegt und sehr daran hängt – die in den Steinen eingelassene Magie verhindert den Verfall.
+Crowfin Manor ist eine alte [Villa](/locations/villa.md) aus der Zeit der [Zebros](/factions/koenigreich_zebros.md)-Könige, die jetzt als Gildensitz dient. Sie ist von einem starken Schutzzauber umgeben, der Ungebetene abhält und [Lindo Lauts](/characters/lindo_laut.md) Verwandlung unterdrückt. Das Anwesen birgt viele historische Geheimnisse, darunter das Schwert Zebrosia im Garten.
 
 # Belege
-1. Session 2026-02-17 @ 00:10:36 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
+
+[P-37] Session 2026-02-17 @ 00:05:28 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)

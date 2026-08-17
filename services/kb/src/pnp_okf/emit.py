@@ -1,9 +1,11 @@
 from __future__ import annotations
 
 import logging
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 
+from pnp_okf.episodes import Episodes
 from pnp_okf.links import ConceptIndex, normalize_body
 from pnp_okf.models import (
     DIR_TO_TYPE,
@@ -14,7 +16,13 @@ from pnp_okf.models import (
     SessionExtraction,
     SessionTranscript,
 )
-from pnp_okf.okf import render_document, slugify, write_concept, write_index
+from pnp_okf.okf import (
+    render_document,
+    slugify,
+    split_document,
+    write_concept,
+    write_index,
+)
 
 log = logging.getLogger(__name__)
 
@@ -32,7 +40,13 @@ def build_concept_index(
 
     concept_ids = [e.concept_id for e in entities]
     concept_ids += [_session_concept_id(t) for t in transcripts.values()]
-    return ConceptIndex(concept_ids)
+    # Names and aliases too, so a link written as the prose name resolves.
+    # Least-attested first, so the better-attested entity wins a collision.
+    names: dict[str, str] = {}
+    for entity in sorted(entities, key=lambda e: len(e.mentions)):
+        for name in [entity.canonical_name, *entity.aliases]:
+            names[name] = entity.concept_id
+    return ConceptIndex(concept_ids, names)
 
 
 _TYPE_LABEL_DE = {
@@ -56,6 +70,31 @@ def _short_desc(text: str, limit: int = 140) -> str:
     return one_line if len(one_line) <= limit else one_line[: limit - 1].rstrip() + "…"
 
 
+_MD_LINK = re.compile(r"\[([^\]]+)\]\([^)]*\)")
+# A list marker needs the space after it — otherwise "**Huludan** ist …" reads
+# as a bullet and the whole opening paragraph is skipped.
+_NOT_PROSE = re.compile(r"^(#|>|\||[-*+]\s|\d+\.\s)")
+
+
+def _lead_text(body: str) -> str:
+    """First prose paragraph of a synthesized body, stripped of markup.
+
+    The description used to come from the first *mention note*, which is raw
+    extraction output: it ignores every later session and every canon ruling.
+    That is how Huludan ended up described as "the entity Holodarn serves"
+    after the GM ruled that Holodarn is not a name. The synthesized body knows
+    both, so the summary comes from there.
+    """
+
+    for block in body.split("\n\n"):
+        line = block.strip()
+        if not line or _NOT_PROSE.match(line):
+            continue
+        line = _MD_LINK.sub(r"\1", line)
+        return line.replace("**", "").replace("__", "").strip()
+    return ""
+
+
 # --- session concepts -------------------------------------------------------
 
 
@@ -64,6 +103,7 @@ def emit_sessions(
     transcripts: dict[str, SessionTranscript],
     extractions: dict[str, SessionExtraction],
     index: ConceptIndex | None = None,
+    episodes: Episodes | None = None,
 ) -> list[tuple[str, str, str]]:
     """Write one ``sessions/<date>.md`` concept per session.
 
@@ -71,13 +111,23 @@ def emit_sessions(
     against the concept set. Returns index entries ``(title, url, description)``.
     """
 
+    episodes = episodes or Episodes()
     entries: list[tuple[str, str, str]] = []
     for session_id in sorted(transcripts):
         transcript = transcripts[session_id]
         extraction = extractions[session_id]
         date = transcript.date or session_id[:10]
         concept_id = f"sessions/{date}"
-        title = f"Session {date}"
+        episode = episodes.for_url(transcript.url) or {}
+        # "Folge P-34 – Belorus", never the bare Abenteuername: those collide
+        # with entity pages of the same name (Belorus, Crowfen, Tiefwasser …),
+        # and this title becomes the wiki page title downstream.
+        if episode.get("id") and (episode.get("title") or "").strip():
+            title = f"Folge {episode['id']} – {episode['title'].strip()}"
+        elif episode.get("id"):
+            title = f"Folge {episode['id']}"
+        else:
+            title = transcript.title or f"Session {date}"
 
         intro_lines: list[str] = []
         for mention in extraction.entities:
@@ -98,7 +148,7 @@ def emit_sessions(
             "",
             "# Belege",
             "",
-            f"[1] [Vollständige Session (VOD)]({transcript.url})",
+            f"[{episode.get('id') or '1'}] [Vollständige Session (VOD)]({transcript.url})",
         ]
 
         body = "\n".join(body_parts)
@@ -114,18 +164,77 @@ def emit_sessions(
 
         frontmatter = {
             "type": "Session",
-            "title": transcript.title or title,
-            "description": _short_desc(extraction.recap),
+            "title": title,
+            "description": episode.get("description") or _short_desc(extraction.recap),
             "resource": transcript.url,
-            "tags": ["session", date],
+            "tags": ["session", date] + ([f"season-{episode['season']}"] if episode.get("season") else []),
             "timestamp": f"{date}T00:00:00Z" if date else _now_iso(),
             "quality": transcript.quality,
             "unsicher_ratio": round(transcript.unsicher_ratio, 3),
         }
+        # Episode identity travels with the concept: the wiki agent reads these
+        # off the API and never has to know about episodes.yaml.
+        if episode:
+            frontmatter |= {
+                "episode": episode.get("id"),
+                "episode_title": episode.get("title") or None,
+                "season": str(episode["season"]) if episode.get("season") else None,
+                "season_label": episodes.season_label(episode.get("season")),
+                "team": episode.get("team"),
+                "youtube_title": transcript.title or None,
+            }
         write_concept(bundle_dir, concept_id, frontmatter, body)
         entries.append(
             (title, f"{date}.md", _short_desc(extraction.recap, 100))
         )
+    entries += _refresh_orphan_sessions(bundle_dir, transcripts, episodes)
+    return entries
+
+
+def _refresh_orphan_sessions(
+    bundle_dir: Path,
+    transcripts: dict[str, SessionTranscript],
+    episodes: Episodes,
+) -> list[tuple[str, str, str]]:
+    """Give session files with no transcript their episode identity back.
+
+    A session whose transcript is gone (deleted, never re-downloaded) keeps its
+    concept file — the recap in it is knowledge, and pruning it would destroy
+    the only record of that evening. But the loop above never sees it, so it
+    would keep a raw YouTube title and no episode id, and drop out of the
+    episode overview downstream. This pass touches only the frontmatter, never
+    the body, and only for files the run did not already write.
+    """
+
+    sessions_dir = bundle_dir / "sessions"
+    if not sessions_dir.is_dir() or not len(episodes):
+        return []
+
+    written = {t.date or t.session_id[:10] for t in transcripts.values()}
+    entries: list[tuple[str, str, str]] = []
+    for path in sorted(sessions_dir.glob("*.md")):
+        date = path.stem
+        if date == "index" or date in written:
+            continue
+        text = path.read_text(encoding="utf-8")
+        frontmatter, body = split_document(text)
+        episode = episodes.for_url(str(frontmatter.get("resource") or ""))
+        if not episode or not episode.get("id"):
+            continue
+        name = (episode.get("title") or "").strip()
+        title = f"Folge {episode['id']} – {name}" if name else f"Folge {episode['id']}"
+        frontmatter |= {
+            "title": title,
+            "description": episode.get("description") or frontmatter.get("description"),
+            "episode": episode["id"],
+            "episode_title": name or None,
+            "season": str(episode["season"]) if episode.get("season") else None,
+            "season_label": episodes.season_label(episode.get("season")),
+            "team": episode.get("team"),
+        }
+        write_concept(bundle_dir, f"sessions/{date}", frontmatter, body)
+        entries.append((title, f"{date}.md", str(frontmatter.get("description") or "")[:100]))
+        log.info("[emit] %s has no transcript — refreshed episode identity only", date)
     return entries
 
 
@@ -148,6 +257,22 @@ def split_conflicts(body: str) -> tuple[str, str | None]:
     if idx < 0:
         return body, None
     section = body[idx + len(_CONFLICT_HEADING):].strip()
+    # The model keeps the heading and then writes that there is nothing to
+    # resolve — sometimes as "_Keine widersprüchlichen Belege vorhanden._",
+    # sometimes as a paragraph ending "Es gibt keine widersprüchlichen Belege
+    # über sein Überleben". Queueing either wastes a reviewer on an empty case,
+    # which is how a review queue stops being read. Only a lone all-clear is
+    # dropped: with a second point the section may still hold a real conflict.
+    lowered = section.lower()
+    bullets = sum(
+        1 for line in section.splitlines() if line.lstrip().startswith(("- ", "* "))
+    )
+    lone = bullets <= 1
+    if lone and (
+        lowered.lstrip("_* \t").startswith("keine")
+        or "keine widersprüchlichen belege" in lowered
+    ):
+        return body, None
     return body, section or None
 
 
@@ -172,7 +297,11 @@ def emit_entity(
 
     first = entity.mentions[0] if entity.mentions else None
     last = entity.mentions[-1] if entity.mentions else None
-    description = _short_desc(first.note) if first else entity.canonical_name
+    lead = _lead_text(body)
+    if lead:
+        description = _short_desc(lead)
+    else:
+        description = _short_desc(first.note) if first else entity.canonical_name
     frontmatter = {
         "type": entity.type.value,
         "id": entity.entity_id,

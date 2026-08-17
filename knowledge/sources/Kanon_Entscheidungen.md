@@ -227,6 +227,34 @@ trägt den Namen nur zufällig gleich. Eine Nebenfigur.
 HINWEIS ZUR DARSTELLUNG: Wie bei Akastrale — vorerst nur ein knapper Entwurf
 des aktuellen Wissensstandes, ausdrücklich als vorläufig gekennzeichnet.
 
+### Thar'Vok, der Erdrichter
+
+ENTSCHEIDUNG: **„Seras" / „Seraph" ist keine Gottheit.** Die Bergnomaden in
+Session 2025-08-12 verehren **Thar'Vok, den Erdrichter**. Der Name im
+Transkript („also wir sind hier für Seraph", „Da ist es Seras, Herr der
+Flammen") ist ein Verhörer am Tisch bzw. ein Transkriptionsfehler und darf in
+keinem Eintrag als Eigenname erscheinen. Belege über den Kult der Nomaden,
+das Heiligtum am Berg und den Gruß „ein flammendes Herz" gehören in diesen
+Eintrag.
+
+ENTSCHEIDUNG: **„Parfon" ist ebenfalls keine Gottheit.** Der „ursprüngliche
+Steingott", dem die Bergkapelle geweiht war, bevor Vhar'Zuls Kult sie
+übernahm (Session 2025-09-02), ist **Thar'Vok**. Auch dieser Name ist ein
+Transkriptionsfehler.
+
+ENTSCHEIDUNG: Warum der Name nicht genannt werden darf: Thar'Vok ist ein
+**alter Gott**, und die Verehrung alter Götter ist in der Zeit **nach dem
+Götterkrieg verboten bzw. verpönt**. Die Panik der Dorfbewohner ist kulturell
+und politisch begründet — keine übernatürliche Gefahr durch das Aussprechen
+des Namens.
+
+ENTSCHEIDUNG: Thar'Vok war ein **Kampfgefährte Vhar'Zuls** („keine Freunde,
+aber Kampfgefährten in den letzten Tagen"). Diesen Hinweis gibt **Vhar'Zul
+selbst** — als Stimme (Thyrex) in Lindo Lauts Amulett. Belege, die den
+Kampfgefährten [Ezhura](../bundle/splitter_des_ewigen/deities/ezhura.md) („Ezua")
+zuschreiben, verwechseln die sprechende Stimme mit dem Inhalt der Aussage und
+sind ungültig.
+
 ### Vhar'Zul
 
 ENTSCHEIDUNG: Vhar'Zul wurde nicht getötet, sondern **in fünf Seelen
@@ -235,6 +263,10 @@ Schleier), **Ezhura** (die Glut), **Koll'Mereth** (die Krone) und **Thyrex**
 (der Sänger). Das Buch ist an dieser Stelle **unvollständig**: es gibt einen
 **versteckten fünften Teil, Slix**. Vier der fünf sind bösartig; **Thyrex ist
 der einzige besonnene**.
+
+ENTSCHEIDUNG: **Thar'Vok, der Erdrichter war ein Kampfgefährte Vhar'Zuls** —
+siehe den Abschnitt zu Thar'Vok. Die Auskunft darüber gibt Vhar'Zul als Stimme
+im Amulett Lindo Lauts (Session 2025-08-12).
 
 ENTSCHEIDUNG: Behandle die Angabe „vier Seelen" im Buch nicht als Widerspruch
 zu Belegen, die von fünf Teilen sprechen — das Buch weiß von Slix schlicht
@@ -273,7 +305,10 @@ In Sessions als „Esua", „Esoa" oder „Ezreal" gehört.
 ### Koll'Mereth
 
 ENTSCHEIDUNG: Koll'Mereth, „die Krone", ist eine der Seelen Vhar'Zuls und
-**keine eigenständige Gottheit**. In Sessions als „Kol Meref" gehört.
+**keine eigenständige Gottheit**. In Sessions als „Kol Meref" und als „Koll"
+gehört — beide Schreibweisen meinen ihn. Die Belege vom oberen Schrein in der
+Kapelle und die Gravur auf der linken Statue gehören zu diesem Eintrag; er ist
+eine der Stimmen in Lindo Lauts Amulett.
 
 ### Slix
 
@@ -296,6 +331,257 @@ Beide wollten Vhar'Zul zurückholen — allerdings dessen **ursprünglichen Teil
 nicht die besonnene Persönlichkeit. Da der wiedererstarkte Vhar'Zul die Gestalt
 von Tyrex angenommen hat und diese Persönlichkeit ein **Feind Dormaks** ist,
 wurde Dormak am Ende von Vhar'Zul selbst ausgelöscht.
+
+### Huludan
+
+ENTSCHEIDUNG: **Huludan ist ein Titan** — das uralte Wesen, das im *Splitter
+des Ewigen* gefangen ist und das Vhar'Zul befreien wollte, um einen
+Schöpferwunsch zu erwirken.
+
+ENTSCHEIDUNG: Der Name **„Holodarn" existiert nicht**. Er ist durchgehend ein
+Transkriptionsfehler und darf in keinem Eintrag als Eigenname auftauchen.
+
+ENTSCHEIDUNG: Das Wesen, das in Session 2026-05-13 auftritt und „in Huludans
+Namen den Segen ausspricht", ist **real, aber namenlos** — es wird als *Diener
+Huludans* geführt. Es ist weder celestisch noch dämonisch und ist **nicht**
+mit Huludan identisch. Belege, die es „Holodarn" nennen, meinen diesen Diener;
+Belege aus Session 2026-06-16, die „Holodarn" den Urgott im Splitter nennen,
+meinen Huludan selbst.
+
+### Willauch
+
+ENTSCHEIDUNG: Willauch liegt auf der aktuellen Karte im **Südwesten**. Belege,
+die die Stadt als „Hauptstadt im Norden" oder „größte Stadt der nördlichen
+Schneise" bezeichnen, sind falsch.
+
+ENTSCHEIDUNG: Die kanonische Schreibweise ist **Willauch**. „Willau",
+„Willoch" und „Vilauch" sind Transkriptionsvarianten.
+
+### Belorus
+
+ENTSCHEIDUNG: Belorus ist ein **schwarzer Paladin** — ausdrücklich **kein
+Lich**. Belege, die ihn als Lich bezeichnen, sind falsch.
+
+ENTSCHEIDUNG: Belorus ist **keine Gottheit**. Die Beschreibung als „Gottheit,
+die mit Stille assoziiert ist" beruht auf seinem Beinamen *der Stille* und ist
+ein Missverständnis; er ist ein mächtiger NPC, kein göttliches Wesen.
+
+### Hans
+
+ENTSCHEIDUNG: Es gibt **zwei verschiedene Personen namens Hans**. Der Soldat
+aus Breska, der Belorus' versiegelte Botschaft überbringt (Session 2026-01-13),
+und der Tiefling-Wirt der Taverne *Zum grünen Sichelmond* (Session 2026-03-18)
+haben nichts miteinander zu tun. Sie werden getrennt geführt.
+
+### Adeliga
+
+ENTSCHEIDUNG: Es gibt **zwei verschiedene Frauen namens Adeliga**. Die eine ist
+die Besitzerin des *Haus des Löwen* in **Willauch** — eine menschliche
+Geschäftsfrau, elegant und kühl, ohne übernatürliche Merkmale (Session
+2026-03-03). Die andere ist ein **Eulen-Seraph** und Paladin des neuen Gottes
+*Joran der Münzenzähler*, der der Gruppe im **Ringtal** begegnet (Session
+2026-06-04). Sie haben nichts miteinander zu tun; der scheinbare Widerspruch
+zwischen „Geschäftsfrau" und „himmlisches Wesen" ist keiner.
+
+### Breska
+
+ENTSCHEIDUNG: Die kanonische Schreibweise des Dorfes ist **Breska**.
+„Brechka", „Bresca", „Breschka" und „Reska" sind Transkriptionsvarianten.
+
+### Silberkerne
+
+ENTSCHEIDUNG: Die Silberkerne sind **eine Organisation mit mehreren Lagern**,
+nicht mehrere gleichnamige Banden. **Harl und Sarina führen das Ganze**;
+**Floran** führt lediglich die Zelle auf der **Heinrich-Farm**. Belege, die
+Floran als Anführer der Silberkerne bezeichnen, meinen diese eine Zelle.
+
+ENTSCHEIDUNG: Anlass der Verfolgung ist der **Mord an einem Diplomaten**. Der
+Beleg, der stattdessen vom Tod einer Prinzessin spricht, ist eine Verwechslung.
+
+ENTSCHEIDUNG: Es gibt **kein drittes Führungsmitglied und kein „Monster"**. Die
+Stelle geht auf eine einzige Aussage einer Figur zurück, die ausdrücklich sagt,
+sie habe die Anführer *nie gesehen*: „Soll wohl irgendein Monster sein, ein
+krasser Mann und eine sehr, sehr starke Frau." Das ist **Hörensagen über
+dieselben zwei Personen** — der „krasse Mann" ist Harl, die „sehr starke Frau"
+ist Sarina. „Monster" ist eine Beschreibung, kein Name und keine dritte Figur.
+
+### Hal / Harl
+
+ENTSCHEIDUNG: **Hal (auch Harl) hat beide Rollen** — der Widerspruch
+„Stellvertreter" gegen „Anführer" ist keiner. Die **Banditenfestung ist ein
+Lager der Silberkerne**; er ist dort stellvertretender Anführer und zugleich
+Anführer der Silberkerne. Beide Belege gelten.
+
+### Goblin-Götter
+
+ENTSCHEIDUNG: Die Goblin-Götter sind **chaotisch und wechselhaft**, nicht
+bösartig. Der Beleg aus Session 2025-04-15, der sie als „bösartige
+Göttergruppe" bezeichnet, ist eine Fehleinschätzung.
+
+### Schwarzer Palantir
+
+ENTSCHEIDUNG: Beide Fundortangaben stimmen und widersprechen sich nicht: Der
+Palantir lag im **Labor der Hag**, und dieses Labor liegt **im Sumpf-Dungeon**.
+
+### Verhandlung mit Harl
+
+ENTSCHEIDUNG: Es gab **eine einzige Verhandlung**, keine Vorverhandlung. Der
+Preis ist derselbe: **eine Truhe Gold = 10 Säcke Gold**. Es war eine
+**Gruppenverhandlung** der Rotunas-Freunde, bei der **Lindo Laut die Gruppe
+vertrat** — deshalb erscheint er in einem Beleg als alleiniger Verhandler.
+
+### Der Schinder
+
+ENTSCHEIDUNG: Das Geschlecht des Schinders ist für den Kanon **unerheblich**;
+im Zweifel männlich. Kein offener Konflikt.
+
+### Tyrael
+
+ENTSCHEIDUNG: Das Wesen, über das Tyrael konkretes Wissen besitzt, ist
+**Vhar'Zul**. „Basul" und „Vasul" sind zwei Transkriptionen desselben Namens;
+es besteht kein Widerspruch. Tyrael kennt Vhar'Zul als bekannten Gott und gibt
+einige Informationen über ihn preis.
+
+### Nyrella
+
+ENTSCHEIDUNG: Nyrellas Eisbär heißt **Nyruk**. „Nairuk", „Nairook", „Nayruk"
+und „Naeruk" sind Transkriptionsvarianten desselben Namens — kein Widerspruch.
+
+ENTSCHEIDUNG: Wer in Session 5 im Moment vor dem Knall gesprochen hat, ist
+**bewusst nicht festgelegt** und für den Kanon nicht relevant. Dieser Punkt ist
+**nicht** als offener Konflikt zu führen.
+
+### Dodos heiliger Streitkolben
+
+ENTSCHEIDUNG: Dodo führt **eine** heilige Waffe. „Streitkolben", „Dodos
+leuchtender Streitkolben", „Heiliger Streitkolben Dodos", „Der heilige
+Streitkolben aus Zebras" und „Streitkolben von Zebras" bezeichnen alle
+dieselbe. Nicht zu verwechseln mit dem *Morgenstern des Heiligen Duran*, der
+Ritter Brandon gehört.
+
+ENTSCHEIDUNG: Die drei Herkunftsangaben widersprechen sich **nicht**: Dodo zog
+die Waffe **in der Festung Zebras aus einem Spiegel**, und sie stammt
+**ursprünglich von Cepros**. Das sind drei Teile einer Geschichte.
+
+### Die Hags
+
+ENTSCHEIDUNG: **Lenra** ist *die Hag* der Kampagne. „Die Hack", „Heck",
+„Lanra", „Leandra", „Moorhexe" und **„die Sumpfhexe"** bezeichnen alle sie.
+
+ENTSCHEIDUNG: **Ausnahme** — im **Abisalis** (= der *Splitterwelt*) existiert
+eine **zweite Hag**, die **nicht** Lenra ist: die **Kräuterhexe der Anhänger
+Uhoriaks'**, persönliche Alchemistin von **Lady Kalen**, der Sprecherin
+Uhoriaks' und Herrin von Boragdil. Sie darf nie mit Lenra vermengt werden.
+
+### Abisalis
+
+ENTSCHEIDUNG: **Abisalis ist die Splitterwelt** — dieselbe Domäne, zwei Namen.
+„Abyssalis" und „Abyssares" sind Transkriptionsvarianten.
+
+### Benennung von Orten
+
+ENTSCHEIDUNG: Ein Gebäude oder Gelände innerhalb einer Stadt bekommt einen
+**eigenen Eintrag** — der Graph soll die Beziehung zwischen Ort und Stadt als
+Kante zeigen, nicht durch Verschmelzen verlieren.
+
+ENTSCHEIDUNG: Die **Stadt steht im Namen immer am Schluss**: *Arena von
+Willauch*, *Kapelle von Ehrenfels*, *Gruft von Breska*. Nicht „Kapelle in
+Ehrenfels" und nicht mit der Stadt am Anfang.
+
+ENTSCHEIDUNG: **Räume innerhalb eines Dungeons bekommen keinen eigenen
+Eintrag** — anders als Gebäude in einer Stadt. Ein Dungeon wird an einem Abend
+durchquert, seine Räume haben außerhalb davon kein Eigenleben; sie werden im
+Eintrag des Dungeons beschrieben.
+
+ENTSCHEIDUNG: **Lager, die die Gruppe für eine Nacht aufschlägt, werden nicht
+geführt.** Ein Lager bekommt nur dann einen Eintrag, wenn es dauerhaft und
+identifizierbar ist — das *Banditenlager der Silberkerne*, das *Berglager der
+Hendriks-Sippe*, die Flüchtlingslager.
+
+### Was ein Gegenstand ist
+
+ENTSCHEIDUNG: Nur **besondere** Gegenstände werden als eigener Eintrag geführt
+— magische, heilige oder handlungstragende Artefakte. **Gewöhnliche
+Ausrüstung** wird nicht getrackt: normale Schwerter und Rüstungen,
+Verbrauchsgüter wie Heiltränke und Gegengifte, Geld und Goldfunde. Ein Eintrag,
+dem ein Leser nicht folgen würde, gehört nicht in die Wissensbasis.
+
+### Was eine Fraktion ist
+
+ENTSCHEIDUNG: Eine **Fraktion** ist eine Macht, die **über eine Stadt und über
+eine Session hinaus** wirkt — die Gilden, die Silberkerne, Belorus'
+Untotenarmee, die Kulte der Götter, die Zwerge der Festung, die Goblins. Eine
+Handvoll Magier, die Bewohner eines Dorfes oder ein Gnoll-Rudel aus einer
+Session sind **keine** Fraktion, sondern ein **kollektiver Charakter** und
+werden als NPC geführt.
+
+ENTSCHEIDUNG: Zwei Ausnahmen gelten wegen **narrativer Bedeutung**, nicht wegen
+Macht: die **Flüchtlinge aus Breska** und die **Gefährten von Rotunas** (die
+Heldengruppe selbst) bleiben Fraktionen.
+
+ENTSCHEIDUNG: Eine Person und die nach ihr benannte Gruppe sind **zwei
+Einträge**, nicht einer. **Voras** bleibt ein NPC, und seine **Sippe** ist eine
+eigene Fraktion, weil sie einflussreich genug war. Nur **unbenannte** oder
+**einmalig erwähnte** Kollektive werden in die Fraktion hineingezogen, zu der
+sie gehören — sie bekommen keinen eigenen Knoten.
+
+ENTSCHEIDUNG: „Dwarfmasters" ist der **Twitch-Account**, nicht der Name der
+Gilde. Die Gilde der Gruppe ist die **Gilde von Ehrenfels**.
+
+### Ezhura
+
+ENTSCHEIDUNG: „Glut" und „Ezua" bezeichnen **dieselbe Entität**: **Ezhura**, im
+*Buch der vier Seelen* „die Glut" genannt — eine der Seelen Vhar'Zuls und eine
+der Stimmen in Lindo Lauts Amulett. Ihre Statue steht ganz rechts im Schrein.
+
+ENTSCHEIDUNG: **Ezhuras Seelenstück wurde nicht ausgelöscht.** Belege, die das
+behaupten, verwechseln sie mit **Koll'Mereth**. Ezhura spricht später weiterhin
+aus dem Amulett; der Widerspruch beruht auf dieser Verwechslung.
+
+### Koll'Mereth: Auslöschung
+
+ENTSCHEIDUNG: Das Seelenstück, das **Nerash ausgelöscht** hat, ist das von
+**Koll'Mereth**, nicht das von Ezhura. Seitdem sind von den vier im Amulett
+bekannten Seelen nur noch drei übrig.
+
+### Blutschalen-Statuen
+
+HINWEIS ZUR DARSTELLUNG: Die namenlose „böse Gottheit" der Statue mit der
+Blutschale ist **nicht sicher zuzuordnen** — wahrscheinlich Vhar'Zul, aber
+**jede Blutschalen-Statue kann einem anderen Gott gehören**. Eine Statue mit
+Blutschale ist also *kein* Erkennungsmerkmal für eine bestimmte Gottheit.
+Entsprechend vorsichtig formulieren und keine Zuordnung als gesichert
+darstellen.
+
+### Zebros
+
+ENTSCHEIDUNG: **Zebros ist keine Gottheit.** Der Name bezeichnet ein **altes
+Königreich**, das im **Götterkrieg zerstört** wurde. Die **Hauptstadt** des
+Königreichs trug ebenfalls den Namen Zebros, ebenso ein **Berg** (der **Berg
+Zebros**). Vom Königreich sind heute nur noch **Ruinen und Relikte** erhalten;
+der Berg Zebros dagegen **steht weiterhin**. Der Beleg, der Zebros anhand der
+Inschrift in der Silbergruft als „ehemaligen Eigentümer" und Erdgott führt,
+verwechselt eine Nennung des Reichsnamens mit einer Gottheit — dort ist
+vermutlich ein Relikt oder eine Ruine aus der Zeit des Königreichs gemeint,
+nicht ein Gott. Führe den Eintrag als **Ort/ehemaliges Königreich**, nicht als
+Deity.
+
+HINWEIS ZUR DARSTELLUNG: Hauptstadt und Berg sind bislang nur durch diese eine
+Nennung belegt und bekommen deshalb vorerst **keine eigenen Einträge** —
+beschreibe beide knapp innerhalb dieses Eintrags. Ein eigener Eintrag ist erst
+gerechtfertigt, sobald weitere Sessions sie unabhängig voneinander behandeln
+(vgl. „Benennung von Orten").
+
+### Gott und Erscheinung
+
+ENTSCHEIDUNG: Tritt ein Gott körperlich auf, bleibt das **ein Knoten vom Typ
+Deity**. Die Erscheinung ist ein Ereignis, das auf den Gott verweist, kein
+zweiter Eintrag. Betrifft [Nerash](../bundle/splitter_des_ewigen/deities/nerash.md),
+Kol Meref und die Kultisten des Varsurs.
+
+Nicht betroffen: eine Organisation und ihr Sitz bleiben **getrennt**, auch bei
+gleichem Namen. Die *Seelenwacht* ist sowohl ein Orden als auch eine Stadt —
+das sind zwei Dinge mit einer echten Beziehung zwischen ihnen, keine Dublette.
 
 ---
 

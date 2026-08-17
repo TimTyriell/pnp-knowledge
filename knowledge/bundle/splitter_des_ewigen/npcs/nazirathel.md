@@ -1,16 +1,16 @@
 ---
 type: NPC
 title: Nazirathel
-description: Nazirathel ist ein furchterregendes Wesen, das von Vorgul'tar gerufen
-  wurde und die Gruppe sucht. Es wird als eine Gestalt beschrieben, die…
+description: Nazirathel ist ein riesiges, gefährlich aussehendes Wesen mit Lava, das
+  als treuer Diener Vorgul'tars die Luft durchkämmt. Es wird von Vorg…
 tags:
 - npcs
 timestamp: '2026-06-16T00:00:00Z'
 id: NPC_NAZIRATHEL
 ---
 
-Nazirathel ist ein furchterregendes Wesen, das von Vorgul'tar gerufen wurde und die Gruppe verfolgte. Es brachte Nebel mit sich und lief in einer von Lava geprägten Umgebung herab. Die Gruppe entkam knapp durch Lunaras Schleier, während Tatrick sich opferte, um Nazirathel aufzuhalten, sodass die anderen durch ein Portal fliehen konnten.
+Nazirathel ist ein riesiges, gefährlich aussehendes Wesen mit Lava, das als treuer Diener [Vorgul'tars](/deities/vorgul_tar.md) die Luft durchkämmt. Es wird von Vorgul'tar zurückgerufen, als die Situation eskaliert. Die Gruppe entgeht ihm dank Lunara's Schleier und flieht zum Altar.
 
 # Belege
 
-1. Session 2026-06-16 @ 01:02:15 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
+[P-54] Session 2026-06-16 @ 01:02:15 (https://www.youtube.com/watch?v=qe0ck8hvYpk)

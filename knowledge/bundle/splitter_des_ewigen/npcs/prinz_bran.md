@@ -1,15 +1,16 @@
 ---
 type: NPC
 title: Prinz Bran
-description: Prinz Bran war ein zwergischer Prinz, der während der Belagerung von
-  Steinbachtal fiel. Die überlebenden Zwerge begruben ihn in der Kathedr…
+description: Ein zwergischer Prinz, der im Kampf gegen die Untoten fiel und in der
+  Kathedrale bestattet wurde. Er wird von Brandoran und Grimm betrauert…
 tags:
 - npcs
 timestamp: '2025-09-09T00:00:00Z'
 id: NPC_PRINZ_BRAN
 ---
 
-Prinz Bran war ein zwergischer Prinz, der während der Belagerung von Steinbachtal fiel. Die überlebenden Zwerge bestatteten ihn in der Kathedrale des Ortes. Esterossa sprach an seinem Grab einen ergreifenden Segen, was den trauernden Zwergen Trost spendete. Sein Tod trug maßgeblich zur gedrückten Stimmung der Zwergengemeinschaft bei.
+Ein zwergischer Prinz, der im [Kampf gegen die Untoten](/events/kampf_gegen_die_untoten.md) fiel und in der [Kathedrale](/locations/kathedrale.md) bestattet wurde. Er wird von [Brandoran](/npcs/brandoran.md) und Grimm betrauert; sein Grab ist einer der beiden Steinsärge im hinteren Teil der Kirche.
 
 # Belege
-1. Session 2025-09-09 @ 01:26:53 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
+
+[P-21] Session 2025-09-09 @ 01:23:23 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)

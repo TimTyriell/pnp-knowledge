@@ -1,31 +1,28 @@
 ---
 type: NPC
 title: Horatio
-description: Horatio ist der menschliche Anführer der Goblin-Gemeinschaft auf dem
-  Anwesen. Er beansprucht, das verfallene Gebäude mit Hilfe der Goblins…
+description: Horatio ist ein wettergegerbter menschlicher Jäger, der das verwilderte
+  Anwesen gemeinsam mit einer Gruppe von Goblins wiederaufgebaut hat…
 tags:
 - npcs
 timestamp: '2026-03-31T00:00:00Z'
 id: NPC_HORATIO
 ---
 
-# Horatio
+**Horatio** ist ein wettergegerbter menschlicher Jäger, der das verwilderte Anwesen gemeinsam mit einer Gruppe von Goblins wiederaufgebaut hat und es nun als eine Art strenger, aber fairer Anführer beaufsichtigt. Er zeigt sowohl eine pragmatische Konfliktvermeidung als auch eine undurchsichtige Seite – etwa wenn er von der Jagd zurückkehrt, ohne Beute, aber mit frischem Blut an sich. In den wenigen Begegnungen der Gruppe mit ihm wirkt er geheimnisvoll, aber auch bereit, zur Harmonie der Gemeinschaft beizutragen.
 
-Horatio ist ein menschlicher Anführer einer Goblin-Gemeinschaft auf einem verfallenen Anwesen, das die Gruppe für sich beansprucht. Er tritt als pragmatischer, selbstbewusster Verhandlungspartner auf, der die Interessen seiner kleinen Gemeinschaft verteidigt, aber auch zu Kompromissen bereit ist. Später zeigt sich, dass er ein Verbündeter Vasuls ist.
+## Auftreten und erste Begegnung
 
-## Rolle und Gemeinschaft
+Horatio tritt als grobschlächtiger, wettergegerbter Mensch auf, der das Anwesen instand gehalten hat. Bei seiner Rückkehr von der Jagd hat er nichts erlegt, dennoch klebt frisches Blut an seiner Kleidung – ein Umstand, den [Rotunas](/characters/rotunas.md) misstrauisch registriert. Zunächst verfinstert sich sein Gesicht beim Anblick der Urkunde, mit der Rotunas Besitzansprüche geltend macht. Horatio bietet jedoch rasch den Keller als Wohnraum an, um einen offenen Konflikt zu vermeiden. In der anschließenden Verhandlung pocht er auf sein eigenes Zimmer und die Koordination der Gemeinschaft, stellt aber gleichzeitig klar, dass er keine Armeen im Wald duldet. Nach der Einigung übergibt er Rotunas bereitwillig ein Amulett und zieht sich zurück. Insgesamt vermittelt er den Eindruck, Geheimnisse zu hüten, aber auch ein echtes Interesse an friedlichem Zusammenleben zu haben.
 
-Horatio beansprucht, das verfallene Gebäude mit Hilfe der Goblins wieder aufgebaut zu haben, und führt die Gemeinschaft mit einem klaren Sinn für Ordnung an. Er reagiert zunächst ablehnend auf den Besitzanspruch der Gruppe, da er die Verantwortung für die Goblins und seine eigene Position nicht aufgeben will. Nach längeren Verhandlungen schlägt er einen Kompromiss vor: Er behält sein persönliches Zimmer und die Koordinationsrolle über die Gemeinschaft, während die Gruppe das gesamte Anwesen als Eigentum erhält. Horatio sorgt zudem dafür, dass ein diebischer Goblin das von [Valeria](/characters/valeria.md) geschickte Gold zurückgibt, was seine Autorität und seinen Gerechtigkeitssinn unterstreicht.
+## Beziehungen und Rolle in der Gemeinschaft
 
-## Verhandlungsergebnisse
+Gegenüber der Gruppe zeigt sich Horatio wechselhaft: Während der ersten Begegnung mit Rotunas ist er verhandlungsbereit und sucht Kompromisse, bleibt aber reserviert. In einer späteren Szene erscheint er unverhofft neben [Sandro](/npcs/sandro.md), als [Vasul](/deities/vharzul.md) ein Ritual an [Lindo Laut](/characters/lindo_laut.md) vorbereitet, und verschwindet mit einem flapsigen Kommentar ebenso schnell wieder. Dies deutet darauf hin, dass er sich frei auf dem Gelände bewegt und vielleicht mehr über die Vorgänge weiß, als er preisgibt. Seine Autorität gegenüber den Goblins wird nicht direkt gezeigt, aber sein Auftreten als „Anführer“ legt nahe, dass er die Geschicke des Anwesens zumindest mitbestimmt.
 
-Horatio übergibt Rotunas ein Amulett, das die Tore zum Untergrund öffnet, und unterschreibt einen schriftlichen Vertrag, der die vereinbarte Aufteilung festschreibt. Sein Auftreten wirkt pragmatisch und auf das Wohl seiner Gemeinschaft bedacht – er ist kein Feind, sondern ein potenzieller Partner, der klare Grenzen setzt.
+## Geheimnisse und offene Fragen
 
-## Verbündeter Vasuls
-
-In einem späteren Zusammentreffen erweist sich Horatio als Verbündeter von Vasul. Als Sandro die Situation kommentiert, weist Horatio ihn an, wieder hineinzugehen, und reagiert lakonisch auf die Ereignisse. Diese Verbindung deutet auf weitreichendere Allianzen über das Anwesen hinaus hin.
+Das frische Blut ohne Jagdbeute wirft Fragen auf – ob Horatio einem anderen Zweck nachgeht oder ob er das Blut bewusst als Signal trägt, bleibt ungeklärt. Auch die Bedeutung seines Amuletts und sein Wissen über die Hintergründe der Gruppe (sein unvermittelter Auftritt beim Ritual) legen nahe, dass Horatio mehr im Schatten agiert, als er zugibt. Sein Interesse an Harmonie könnte ebenso taktisch wie aufrichtig sein.
 
 # Belege
-
-1. Session 2025-11-14 @ 00:37:49 – <https://www.youtube.com/watch?v=8Khb-Y8XbKY>
-2. Session 2026-03-31 @ 00:53:38 – <https://www.youtube.com/watch?v=Ee-K84wcxLM>
+[P-29] Session 2025-11-14 @ 00:37:15 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)
+[P-44] Session 2026-03-31 @ 00:53:38 (https://www.youtube.com/watch?v=Ee-K84wcxLM)

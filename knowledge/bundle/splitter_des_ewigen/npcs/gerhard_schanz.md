@@ -1,15 +1,16 @@
 ---
 type: NPC
 title: Gerhard Schanz
-description: Ein Wächter in Kleinringtal, der das Training beaufsichtigt. Er weist
-  Sange zurecht, als dessen Maske das Kind erschreckt, und beruhigt spä…
+description: Ein Wächter und Ausbilder in Kleinringtal, der sich um Ordnung kümmert.
+  Er weist Sange zurecht, nachdem dieser das kleine Mädchen erschreck…
 tags:
 - npcs
 timestamp: '2026-06-04T00:00:00Z'
 id: NPC_GERHARD_SCHANZ
 ---
 
-Gerhard Schanz ist ein Wächter in Kleinringtal, der das Training beaufsichtigt. Er weist Sange zurecht, als dessen Maske ein Kind erschreckt, und beruhigt später das Mädchen nach einem Wutanfall mit einer Puppe. In der Taverne reagiert er aufgebracht, als Sange das Wort „Brandau“ fallen lässt, und verteidigt die offizielle Linie, dass keine Brandauer geduldet werden.
+Ein Wächter und Ausbilder in [Kleinringtal](/locations/ringtal.md), der sich um Ordnung kümmert. Er weist [Sange](/characters/sange.md) zurecht, nachdem dieser das kleine Mädchen erschreckt hat, und untersucht später den Vorfall mit der Puppe. Er wird als grimmig, aber fürsorglich dargestellt und kümmert sich um das Mädchen.
 
 # Belege
-1. Session 2026-06-04 @ 00:31:13 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
+
+[P-52] Session 2026-06-04 @ [01:32:38] (https://www.youtube.com/watch?v=EGNh8O7pE5Q)

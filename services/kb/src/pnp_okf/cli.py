@@ -1,12 +1,16 @@
 from __future__ import annotations
 
 import argparse
+import json
 import logging
+import os
 import shutil
 import subprocess
 import sys
+import time
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime, timezone
 from pathlib import Path
 
 from pnp_okf.config import DeepSeekConfig, ConfigError, Paths
@@ -22,6 +26,7 @@ from pnp_okf.emit import (
     prune_conflicts,
     prune_orphans,
 )
+from pnp_okf.episodes import Episodes, citation_labels, relabel_citations
 from pnp_okf.extract import extract_session
 from pnp_okf.ingest import load_transcripts
 from pnp_okf.models import CanonicalEntity, SessionExtraction, SessionTranscript
@@ -63,9 +68,48 @@ def _extract_all(
     return out
 
 
+def _state_dir() -> Path:
+    return Path(os.environ.get("PNP_STATE_DIR", "./state")).expanduser()
+
+
+def _write_run_status(started_at: str, ok: bool, error: str | None, counts: dict) -> None:
+    """Persist last-run metadata for the dashboard's GET /status endpoint.
+
+    No such record existed before this change — a run left only bundle
+    diffs and stdout logs behind, nothing a status endpoint could read.
+    """
+
+    state_dir = _state_dir()
+    state_dir.mkdir(parents=True, exist_ok=True)
+    ended_at = datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
+    run_id = started_at.replace(":", "").replace("-", "")
+    record = {
+        "run_id": run_id,
+        "started_at": started_at,
+        "ended_at": ended_at,
+        "ok": ok,
+        "error": error,
+        "counts": counts,
+    }
+    (state_dir / "last_run.json").write_text(
+        json.dumps(record, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    with open(state_dir / "history.jsonl", "a", encoding="utf-8") as f:
+        f.write(json.dumps({"ts": ended_at, **record}, ensure_ascii=False) + "\n")
+
+
 def cmd_run(args: argparse.Namespace) -> int:
     """Full pipeline: ingest -> extract -> resolve -> synthesize -> emit."""
 
+    started_at = datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
+    try:
+        return _run_pipeline(args, started_at)
+    except Exception as exc:
+        _write_run_status(started_at, ok=False, error=str(exc), counts={})
+        raise
+
+
+def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     paths = Paths.resolve(args.transcripts, args.bundle, args.cache)
     cfg = DeepSeekConfig.from_env()
 
@@ -88,8 +132,11 @@ def cmd_run(args: argparse.Namespace) -> int:
     # transcript, plus original dialogue for the entries that warrant depth.
     source_sections = load_sources(paths.sources_dir)
 
+    episodes = Episodes.load(paths.episodes_path)
+    log.info("Episode list: %d entr(y/ies) from %s", len(episodes), paths.episodes_path)
+
     index = build_concept_index(entities, tmap)
-    session_entries = emit_sessions(paths.bundle_dir, tmap, extractions, index)
+    session_entries = emit_sessions(paths.bundle_dir, tmap, extractions, index, episodes)
     unresolved_total = 0
     conflict_count = 0
     open_conflicts: set[str] = set()
@@ -122,8 +169,16 @@ def cmd_run(args: argparse.Namespace) -> int:
             concept_id, body = future.result()
             bodies[concept_id] = body
 
+    unlabelled = 0
     for entity in entities:
         body = bodies[entity.concept_id]
+        # "[3]" -> "[S1-01-A]". The model numbers its evidence list; which
+        # episode each number stands for is known here, not there.
+        labels = citation_labels([m.url for m in entity.mentions], episodes)
+        if labels:
+            body = relabel_citations(body, labels)
+        elif entity.mentions:
+            unlabelled += 1
         unresolved, conflicts = emit_entity(paths.bundle_dir, entity, body, index)
         unresolved_total += len(unresolved)
         if conflicts:
@@ -135,6 +190,13 @@ def cmd_run(args: argparse.Namespace) -> int:
                 entity.concept_id,
                 conflict_path,
             )
+    if unlabelled:
+        log.warning(
+            "%d entr(y/ies) kept numeric citations — a cited session is missing "
+            "from %s. Run pnp-crawl/sync_episodes.py --write.",
+            unlabelled,
+            paths.episodes_path,
+        )
     settled = prune_conflicts(paths.conflicts_dir, open_conflicts)
     if settled:
         log.info("Cleared %d resolved conflict(s) from the queue.", settled)
@@ -170,6 +232,18 @@ def cmd_run(args: argparse.Namespace) -> int:
         "Visualize with the okf package:\n"
         "  python -m reference_agent visualize --bundle %s",
         paths.bundle_dir,
+    )
+
+    entities_by_type = dict(Counter(e.type for e in entities))
+    _write_run_status(
+        started_at,
+        ok=True,
+        error=None,
+        counts={
+            "entities_by_type": entities_by_type,
+            "conflicts_open": conflict_count,
+            "sessions_ingested": len(transcripts),
+        },
     )
     return 0
 

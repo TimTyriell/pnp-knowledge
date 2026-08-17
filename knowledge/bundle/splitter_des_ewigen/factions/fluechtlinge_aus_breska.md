@@ -1,31 +1,31 @@
 ---
 type: Faction
 title: Die Flüchtlinge
-description: Eine lose Gemeinschaft von Vertriebenen unter Rolands Führung, die vor
-  Untoten aus der Wildnis geflohen sind. Sie haben kein Geld und werde…
+description: Die Flüchtlinge aus Breska sind eine Gemeinschaft von Vertriebenen, die
+  vor mehreren Bedrohungen aus ihrem Heimatort Breska geflohen sind.…
 tags:
 - factions
-timestamp: '2025-09-30T00:00:00Z'
+timestamp: '2026-01-20T00:00:00Z'
 id: FACTION_FLUECHTLINGE_AUS_BRESKA
+subtype: Volk
 aliases:
 - Flüchtlinge aus Breska
+- Die Flüchtlinge aus Bereska
+- Flüchtlinge (Gruppe um Roland)
 ---
 
-Die **Flüchtlinge aus Breska** sind eine lose Gemeinschaft von etwa zwei Dutzend vertriebenen Bauern und Handwerkern, die unter der Führung des Bauern [Roland](/npcs/roland.md) aus ihrer Heimat vor einer Bedrohung durch Untote geflohen sind. Die Gruppe ist mittellos, reist mit drei beschädigten Wagen und wurde von der Stadt Breska abgewiesen. Die Abenteurer, insbesondere [Nyrella](/characters/nyrella.md), helfen den Flüchtlingen bei der Umsiedlung und gewährleisten ihre Sicherheit.
+Die **Flüchtlinge aus Breska** sind eine Gemeinschaft von Vertriebenen, die vor mehreren Bedrohungen aus ihrem Heimatort Breska geflohen sind. Sie setzen sich aus Dorfbewohnern, Handwerkern und Bauern zusammen, sind nicht bewaffnet oder kämpferisch und werden von [Roland](/npcs/roland.md) angeführt. Ihr Ziel ist es, einen sicheren Ort für den Winter zu finden und langfristig eine neue Heimat aufzubauen. Die Abenteurergruppe um Hal übernimmt ihren Schutz und handelt ihre Unterbringung im ehemaligen Banditenlager aus.
 
-## Hintergrund und Flucht
+## Herkunft und Flucht
 
-Die Flüchtlinge stammen ursprünglich aus der Stadt Breska, die sie aufgrund eines Krieges und einer Verfolgung durch Untote verlassen mussten. Ihre Flucht war von Entbehrungen geprägt: Die Kinder sind ausgemergelt, die Wagen durch die Strapazen beschädigt, und die gesamte Gruppe zeigt deutliche Zeichen von Erschöpfung. Nachdem sie dank des Eingreifens der Abenteurer vor den Untoten in Sicherheit gebracht werden konnten, suchen sie nun dringend eine neue Bleibe. Die Stadt Breska verweigerte ihnen jedoch die Aufnahme, weshalb sie auf die Unterstützung von Außenstehenden angewiesen sind.
+Die Flüchtlinge verließen Breska aufgrund einer Mischung aus Gefahren: [P-22] berichtet von Untoten und der örtlichen Obrigkeit, [P-23] nennt Banditen als Grund. Die Gruppe vereint also Vertriebene, die vor mehreren Bedrohungen – Untoten, Banditen und den Machthabern in Breska – geflohen sind. Roland tritt als ihr Sprecher auf und willigt im Namen der Gruppe in den Marsch zum Banditenlager ein [P-22]. Sie sind eine bunt gemischte, nicht kämpferische Gemeinschaft, die auf der Suche nach Schutz und Sicherheit ist [P-22][P-23].
 
-## Führung und Zusammenhalt
+## Schutz und Unterbringung
 
-Angeführt wird die Gruppe von Roland, einem Bauern, der sich als fürsorglicher und entschlossener Anführer erweist. Die Flüchtlinge halten fest zusammen: Sie weigern sich, sich aufzuteilen oder getrennte Wege zu gehen, und bestehen darauf, als Gemeinschaft vereint zu bleiben. Dieser Zusammenhalt zeigt sich auch in der kollektiven Dankbarkeit gegenüber den Helden, nachdem diese sie gerettet haben.
-
-## Beziehung zu den Helden
-
-Die Flüchtlinge schwören Nyrella ewige Dankbarkeit für die erhaltene Hilfe. Nachdem die Bedrohung durch die Untoten abgewendet wurde, feiern sie die Abenteurer überschwänglich. Die Gruppe plant gemeinsam mit den Helden ihre Umsiedlung, wobei Nyrella vorübergehend bei den Flüchtlingen bleibt, um ihre Sicherheit zu gewährleisten und den weiteren Verlauf zu begleiten.
+Als die Flüchtlinge im Banditenlager ankommen, sind sie erschöpft, ihre Wagen sind beschädigt und es gibt Verletzte [P-24]. Roland handelt mit Hal die Unterbringung für den Winter aus [P-24]. Die Abenteurer schützen die Zivilisten; während einer Schlacht verstecken sich die Flüchtlinge im Versteck, erleiden jedoch Verluste durch einen Pfeilhagel [P-34]. Die Gruppe bemüht sich aktiv, sie zu verteidigen und weiteren Schaden von ihnen abzuwenden [P-34]. Ihre Sicherheit bleibt ein zentrales Anliegen der Kampagne.
 
 # Belege
-1. Session 2025-09-17 @ 00:53:53 – [YouTube](https://www.youtube.com/watch?v=AhIT8dcxw2o)
-2. Session 2025-09-23 @ 00:21:26 – [YouTube](https://www.youtube.com/watch?v=DGzfqVigS0g)
-3. Session 2025-09-30 @ 01:09:12 – [YouTube](https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[P-22] Session 2025-09-17 @ 00:36:38 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
+[P-23] Session 2025-09-23 @ 00:21:26 (https://www.youtube.com/watch?v=DGzfqVigS0g)
+[P-24] Session 2025-09-30 @ 01:09:12 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[P-34] Session 2026-01-20 @ 00:06:33 (https://www.youtube.com/watch?v=H3ckYdTv4y8)

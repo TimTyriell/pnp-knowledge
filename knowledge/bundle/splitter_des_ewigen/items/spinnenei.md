@@ -1,15 +1,17 @@
 ---
 type: Item
 title: Spinnenei
-description: Ein schweres, grünes Ei, das in einer magisch gesicherten Truhe im Zentrum
-  des Spinnenverlieses liegt. Es ist das Zielobjekt der zweiten Pr…
+description: Ein großes, grünes Ei der Phasenspinne, das in einer magischen Truhe
+  auf einer Druckplatte gesichert ist. Es ist das gesuchte Objekt der zw…
 tags:
 - items
 timestamp: '2025-10-21T00:00:00Z'
 id: ITEM_SPINNENEI
+subtype: Artefakt
 ---
 
-Das Spinnenei ist ein schweres, grünes Ei, das in einer magisch gesicherten Truhe im Zentrum des Spinnenverlieses lag. Es war das Zielobjekt der zweiten Prüfung. [Dodo](/characters/dodo.md) barg das Ei, was eine Fallenmechanik auslöste und den Einsturz des Verlieses herbeiführte. Nach dem Kampf wurde das Ei von einer Wache entgegengenommen und aus der Arena getragen.
+Ein großes, grünes Ei der Phasenspinne, das in einer magischen Truhe auf einer Druckplatte gesichert ist. Es ist das gesuchte Objekt der zweiten Prüfung und muss der Obrigkeit übergeben werden, um den Kampf zu bestehen. [Dodo](/characters/dodo.md) präsentiert es nach der Rückkehr der jubelnden Menge.
 
 # Belege
-1. Session 2025-10-21 @ 01:51:23 (https://www.youtube.com/watch?v=sxFhbtwoefA)
+
+[P-27] Session 2025-10-21 @ 01:51:33 (https://www.youtube.com/watch?v=sxFhbtwoefA)

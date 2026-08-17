@@ -1,15 +1,17 @@
 ---
 type: Item
 title: Nerash-Statue
-description: Eine kleine Götzenstatue des Gottes Nerash, die Esterossa bei sich hat.
-  Ihr Anblick verursacht beim Seraphen Qualen.
+description: Eine kleine Götzenstatue des neuen Gottes Nerash, die Esterossa bei sich
+  trägt und dem Seraphen ins Gesicht hält, um ihn aufzuhalten. Sie l…
 tags:
 - items
 timestamp: '2026-05-13T00:00:00Z'
 id: ITEM_NERASH_STATUE
+subtype: Artefakt
 ---
 
-Die **Nerash-Statue** ist eine kleine Götzenstatue des Gottes Nerash. Sie befindet sich im Besitz von Esterossa. Ihr Anblick verursacht beim Seraphen Qualen.
+Eine kleine Götzenstatue des neuen Gottes [Nerash](/deities/nerash.md), die [Esterossa](/characters/esterossa.md) bei sich trägt und dem Seraphen ins Gesicht hält, um ihn aufzuhalten. Sie löst beim Seraphen starke Verwirrung und Schmerz aus. Auch [Dodo](/characters/dodo.md) besitzt eine solche Statue.
 
 # Belege
-1. Session 2026-05-13 @ 00:35:09 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
+
+[P-49] Session 2026-05-13 @ 00:34:49 (https://www.youtube.com/watch?v=4afPD9Q_5AY)

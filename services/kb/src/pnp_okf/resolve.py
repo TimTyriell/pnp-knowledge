@@ -139,6 +139,13 @@ def merge_near_duplicates(
             and b.type in PERSON_TYPES
             and _tokens(a) < _tokens(b)
             and not _forbidden(a, b)
+            # The longer name only wins if it is at least as well attested.
+            # A short name with many mentions next to a longer one with a
+            # handful is not a person and their fuller name — it is a person
+            # and something *derived* from them: "Die Magier von Belorus",
+            # "Geist von Rotunas", "Vampire von Voras". Folding that way round
+            # deletes the actual character and keeps the footnote.
+            and len(b.mentions) >= len(a.mentions)
         ]
         if len(supersets) == 1:
             _merge(a, supersets[0], "token-subset")
@@ -156,6 +163,46 @@ def merge_near_duplicates(
     return sorted(survivors, key=lambda e: e.concept_id)
 
 
+RULES_FILENAME = "entity_rules.yaml"
+
+
+def rules_path_for(registry_path: Path) -> Path:
+    """The hand-authored rules file that sits next to the registry."""
+
+    return registry_path.with_name(RULES_FILENAME)
+
+
+def _registry_data(registry_path: Path) -> dict:
+    """Registry inventory plus the hand-authored rules beside it.
+
+    ``entity_registry.yaml`` is *generated*: :func:`write_registry` rewrites it
+    through a YAML dump on every run, which strips every comment. Keeping the
+    rules there meant the tool erased the reasons for its own rules. So they
+    live in ``entity_rules.yaml``, which nothing ever writes — the split makes
+    the existing invariant real: rules are input, the inventory is output.
+
+    Rules still found in the registry are honoured, so an un-migrated file
+    keeps working; the rules file wins where both define the same name.
+    """
+
+    data: dict = {}
+    if registry_path.exists():
+        data = yaml.safe_load(registry_path.read_text(encoding="utf-8")) or {}
+    rules_path = rules_path_for(registry_path)
+    if not rules_path.exists():
+        return data
+    rules = yaml.safe_load(rules_path.read_text(encoding="utf-8")) or {}
+    for key, value in rules.items():
+        existing = data.get(key)
+        if isinstance(value, dict) and isinstance(existing, dict):
+            data[key] = {**existing, **value}
+        elif isinstance(value, list) and isinstance(existing, list):
+            data[key] = existing + value
+        else:
+            data[key] = value
+    return data
+
+
 def _load_alias_overrides(registry_path: Path) -> dict[str, str]:
     """Load ``alias (lowercased) -> concept_id`` overrides from the registry.
 
@@ -166,9 +213,7 @@ def _load_alias_overrides(registry_path: Path) -> dict[str, str]:
     name in without listing it under a concept.
     """
 
-    if not registry_path.exists():
-        return {}
-    data = yaml.safe_load(registry_path.read_text(encoding="utf-8")) or {}
+    data = _registry_data(registry_path)
     overrides: dict[str, str] = {}
     # Per-concept aliases from 'entities:' (primary, human-maintained source).
     for entry in data.get("entities") or []:
@@ -186,9 +231,7 @@ def _load_alias_overrides(registry_path: Path) -> dict[str, str]:
 def _load_never_merge_pairs(registry_path: Path) -> list[set[str]]:
     """``never_merge:`` groups, so the automatic passes honour them too."""
 
-    if not registry_path.exists():
-        return []
-    data = yaml.safe_load(registry_path.read_text(encoding="utf-8")) or {}
+    data = _registry_data(registry_path)
     out: list[set[str]] = []
     for group in data.get("never_merge") or []:
         ids = {str(c).strip() for c in group if str(c).strip()}
@@ -214,9 +257,7 @@ def _load_splits(registry_path: Path) -> dict[tuple[str, str], str]:
             concept_id: npcs/harald_daemon
     """
 
-    if not registry_path.exists():
-        return {}
-    data = yaml.safe_load(registry_path.read_text(encoding="utf-8")) or {}
+    data = _registry_data(registry_path)
     out: dict[tuple[str, str], str] = {}
     for rule in data.get("split") or []:
         name = str(rule.get("name", "")).strip().lower()
@@ -234,17 +275,46 @@ def _load_canonical_names(registry_path: Path) -> dict[str, str]:
     happened to be extracted first, so a corrected name ("Thyrex" for the
     mis-heard "T-Rex", "Nyruk" for "Nairuk") could never be made to stick —
     the correction would be silently overwritten on every run.
+
+    A pin belongs in ``entity_rules.yaml`` under ``canonical_name:``, where the
+    reason for it can be written down; the value read back from the generated
+    inventory is the same setting without its comment, kept for what is already
+    pinned there.
     """
 
-    if not registry_path.exists():
-        return {}
-    data = yaml.safe_load(registry_path.read_text(encoding="utf-8")) or {}
+    data = _registry_data(registry_path)
     out: dict[str, str] = {}
+    for cid, name in (data.get("canonical_name") or {}).items():
+        cid, name = str(cid).strip(), str(name).strip()
+        if cid and name:
+            out[cid] = name
     for entry in data.get("entities") or []:
         cid = str(entry.get("concept_id", "")).strip()
         name = str(entry.get("canonical_name", "")).strip()
+        if cid in out:
+            continue  # an explicit rule wins over the generated inventory
         if cid and name:
             out[cid] = name
+    return out
+
+
+def _load_alias_blocks(registry_path: Path) -> dict[str, set[str]]:
+    """``alias_block:`` — spellings that must not be shown as aliases of a concept.
+
+    Deleting an alias from the generated registry never sticks: write_registry
+    preserves existing aliases and appends newly discovered ones, so the name
+    is back after the next run. This is the suppression list. It is display
+    only — identity still comes entirely from merge:/never_merge:/split:, so
+    blocking a spelling here can never silently fold or split a concept.
+    """
+
+    data = _registry_data(registry_path)
+    out: dict[str, set[str]] = {}
+    for cid, names in (data.get("alias_block") or {}).items():
+        cid = str(cid).strip()
+        blocked = {str(n).strip().lower() for n in (names or []) if str(n).strip()}
+        if cid and blocked:
+            out[cid] = blocked
     return out
 
 
@@ -259,9 +329,7 @@ def _load_ignored(registry_path: Path) -> set[str]:
     over is pruned on the next run.
     """
 
-    if not registry_path.exists():
-        return set()
-    data = yaml.safe_load(registry_path.read_text(encoding="utf-8")) or {}
+    data = _registry_data(registry_path)
     return {str(c).strip() for c in (data.get("ignore") or []) if str(c).strip()}
 
 
@@ -269,17 +337,28 @@ def _load_important(registry_path: Path) -> set[str]:
     """Concept ids flagged ``important: true`` in the registry.
 
     These force the deep synthesis tier regardless of mention count — the
-    escape hatch for entities the automatic rules underrate.
+    escape hatch for entities the automatic rules underrate. Settable from
+    ``entity_rules.yaml`` as an ``important:`` list as well, so the choice can
+    be justified next to the other identity rules.
+
+    ``entities[].important`` is read too, for a half-migrated repo that still
+    carries the flag directly in the generated file (see test_rules_pins.py).
+    But that makes ``important: true`` a ratchet: once a run writes it into
+    the registry, every later run reads it straight back, so removing the id
+    from ``important:`` in the rules never turns it off. ``unimportant:`` is
+    the escape hatch for that — it wins over both sources, same shape as
+    ``alias_block:`` overriding a registry-preserved alias.
     """
 
-    if not registry_path.exists():
-        return set()
-    data = yaml.safe_load(registry_path.read_text(encoding="utf-8")) or {}
-    return {
+    data = _registry_data(registry_path)
+    flagged = {str(c).strip() for c in (data.get("important") or [])}
+    flagged |= {
         str(entry.get("concept_id", "")).strip()
         for entry in data.get("entities") or []
         if entry.get("important")
-    } - {""}
+    }
+    suppressed = {str(c).strip() for c in (data.get("unimportant") or [])}
+    return (flagged - suppressed) - {""}
 
 
 def resolve_entities(
@@ -299,6 +378,7 @@ def resolve_entities(
     important = _load_important(registry_path)
     ignored = _load_ignored(registry_path)
     pinned_names = _load_canonical_names(registry_path)
+    alias_blocks = _load_alias_blocks(registry_path)
     splits = _load_splits(registry_path)
     dropped = 0
     # Also match registry keys after slugification, so "Lindo  Laut" folds
@@ -389,6 +469,9 @@ def resolve_entities(
             if entity.canonical_name not in entity.aliases:
                 entity.aliases.append(entity.canonical_name)
             entity.canonical_name = pinned
+        blocked = alias_blocks.get(cid)
+        if blocked:
+            entity.aliases = [a for a in entity.aliases if a.lower() not in blocked]
 
     resolved = merge_near_duplicates(
         list(entities.values()), _load_never_merge_pairs(registry_path)
@@ -416,12 +499,20 @@ def write_registry(entities: list[CanonicalEntity], registry_path: Path) -> None
     # Any other hand-maintained top-level key (``ignore:``, ``never_merge:``,
     # …) must survive: this function rewrites the file on every run, so a key
     # it does not know about would be silently deleted and the setting lost.
+    # Keys that have moved to entity_rules.yaml are *not* copied back — this
+    # dump would strip their comments, which is why they moved out.
     extra_keys: dict[str, object] = {}
+    rules_path = rules_path_for(registry_path)
+    migrated: set[str] = set()
+    if rules_path.exists():
+        migrated = set(yaml.safe_load(rules_path.read_text(encoding="utf-8")) or {})
     if registry_path.exists():
         existing = yaml.safe_load(registry_path.read_text(encoding="utf-8")) or {}
-        merge = existing.get("merge") or {}
+        merge = {} if "merge" in migrated else (existing.get("merge") or {})
         extra_keys = {
-            k: v for k, v in existing.items() if k not in ("merge", "entities")
+            k: v
+            for k, v in existing.items()
+            if k not in ("merge", "entities") and k not in migrated
         }
         # Keep the hand-maintained aliases on each concept.
         for entry in existing.get("entities") or []:
@@ -431,12 +522,18 @@ def write_registry(entities: list[CanonicalEntity], registry_path: Path) -> None
             if cid and entry.get("important"):
                 preserved_important.add(cid)
 
+    alias_blocks = _load_alias_blocks(registry_path)
     inventory = []
     for e in entities:
         # Start from the hand-maintained aliases, then append discovered ones.
+        blocked = alias_blocks.get(e.concept_id, set())
         aliases: list[str] = []
         for alias in preserved_aliases.get(e.concept_id, []) + list(e.aliases):
-            if alias not in aliases and alias.lower() != e.canonical_name.lower():
+            if (
+                alias not in aliases
+                and alias.lower() != e.canonical_name.lower()
+                and alias.lower() not in blocked
+            ):
                 aliases.append(alias)
         entry = {
             "concept_id": e.concept_id,
@@ -450,27 +547,26 @@ def write_registry(entities: list[CanonicalEntity], registry_path: Path) -> None
             entry["important"] = True
         inventory.append(entry)
     doc = {
-        "merge": merge,
+        # Omitted once the rules have moved out, so the generated file does not
+        # sprout an empty key that invites hand-edits it would then eat.
+        **({"merge": merge} if merge else {}),
         **extra_keys,
         "entities": inventory,
     }
     registry_path.parent.mkdir(parents=True, exist_ok=True)
     header = (
-        "# Entity registry.\n"
+        "# Entity registry — GENERATED. The pipeline rewrites this file on\n"
+        "# every run and the YAML dump strips comments, so do not document\n"
+        "# anything here.\n"
         "#\n"
-        "# Maintain aliases by hand: add a name under a concept's 'aliases:'\n"
-        "# in the 'entities:' list below. Each alias both de-duplicates\n"
-        "# matching mentions and is shown as a display alias. Your aliases are\n"
-        "# never overwritten - the tool only appends newly discovered variants.\n"
+        f"# Identity rules (merge/never_merge/ignore/split) live in\n"
+        f"# {RULES_FILENAME} next to this file, which nothing ever writes.\n"
         "#\n"
-        "# 'merge:' is optional: map a name (lowercased) to a concept_id to\n"
-        "# fold it in without listing it under a concept, e.g.:\n"
-        "#   merge:\n"
-        "#     \"heck\": factions/hag\n"
-        "#\n"
-        "# 'important: true' on a concept forces the deep synthesis tier for\n"
-        "# entities the automatic rules underrate (a pivotal NPC or city whose\n"
-        "# mention count stays low). Characters and Deities are always deep.\n"
+        "# Two hand-maintained fields survive here, per concept:\n"
+        "#   aliases:         appended to, never clobbered\n"
+        "#   important: true  forces the deep synthesis tier for entities the\n"
+        "#                    automatic rules underrate (Characters and\n"
+        "#                    Deities are always deep anyway)\n"
     )
     registry_path.write_text(
         header + yaml.safe_dump(doc, sort_keys=False, allow_unicode=True),

@@ -1,36 +1,36 @@
 ---
 type: Location
 title: Kleinringtal
-description: Ein kleines Tavernendorf mit eigener Mauer, umgeben von einem Übungsplatz
-  und einer Götterstatue. Es liegt auf dem Weg zwischen Breska und…
+description: Kleinringtal ist eine befestigte Siedlung an der Handelsstraße zwischen
+  Breska und der größeren Stadt Ringtal, die etwa einen halben Tagesm…
 tags:
 - locations
-timestamp: '2026-06-04T00:00:00Z'
+timestamp: '2026-08-06T00:00:00Z'
 id: LOC_RINGTAL
+subtype: Siedlung
 aliases:
 - Ringtal
 ---
 
 # Kleinringtal
 
-Kleinringtal ist ein kleines, befestigtes Tavernendorf, das auf der Route zwischen Breska und der größeren Stadt Ringtal liegt. Das Dorf verfügt über eine eigene Mauer, einen Übungsplatz und eine Götterstatue. Nach den Verwüstungen in Brandau hat Kleinringtal eine Rolle als Zufluchtsort für Flüchtlinge eingenommen und dient der ansässigen Bevölkerung als Rückzugsort vor den wiederholten Überfällen durch Gnoll-Horden.
+Kleinringtal ist eine befestigte Siedlung an der Handelsstraße zwischen Breska und der größeren Stadt Ringtal, die etwa einen halben Tagesmarsch entfernt liegt. Die Siedlung dient als Versorgungs- und Zwischenstation für Reisende und Flüchtlinge. Ihr Kern ist eine befestigte Taverne mit eigener Mauer und einem Trainingsplatz, die Siedlung selbst ist mit Holzpalisaden umgeben.
 
-## Lage und Aufbau
+## Lage und Funktion
 
-Kleinringtal liegt an einer Durchgangsstraße zwischen [Breska](/locations/breska.md) und der namensgebenden Stadt [Ringtal](/locations/ringtal.md). Das Dorf ist mit einer schützenden Mauer umgeben, die seine Bewohner und Gäste vor äußeren Bedrohungen abschirmt. Innerhalb der Mauern befinden sich eine Taverne (die dem Ort seinen Charakter als „Tavernendorf“ verleiht), ein offener Übungsplatz sowie eine auffällige Statue, die einer Gottheit gewidmet ist. Diese Einrichtungen deuten auf eine Gemeinschaft hin, die sowohl alltägliche Einkehr als auch militärische Vorbereitung und religiöse Verehrung in ihren Alltag integriert.
+Kleinringtal liegt an der Handelsstraße zwischen Breska und Ringtal. Es ist eine Zwischenstation für Reisende und insbesondere für Flüchtlinge, von denen viele aus dem gefallenen Brandau stammen. Die befestigte Taverne dient als Versorgungsstation für die Durchreisenden.
 
-## Zufluchtsort für Flüchtlinge aus Brandau
+## Befestigung und Verteidigung
 
-Nach dem Fall oder der Aufgabe der nahegelegenen Siedlung Brandau strömten zahlreiche Überlebende nach Kleinringtal. Das Dorf hat diese Flüchtlinge aufgenommen und beherbergt sie dauerhaft, was die Bevölkerungszahl und die Versorgungssituation vor Ort spürbar belastet. Der Zustrom steht im direkten Zusammenhang mit den ständigen Gnollüberfällen, die Brandau offenbar unbewohnbar gemacht haben. Kleinringtal fungiert daher nicht nur als Raststation für Reisende, sondern auch als letzte vergleichsweise sichere Zuflucht für die Vertriebenen der Region.
+Die Siedlung verfügt über Holzpalisaden und die Taverne besitzt eine eigene Mauer sowie einen Trainingsplatz. Trotz dieser Befestigungen halten die Einwohner Kleinringtal für unzureichend gegen eine große Armee. Die Siedlung ist nicht darauf ausgelegt, einer größeren Streitmacht standzuhalten.
 
-## Beziehung zu Ringtal
+## Rolle im Verlauf
 
-Kleinringtal stellt die letzte Ortschaft vor der Stadt Ringtal dar, die etwa einen Tagesmarsch oder weniger entfernt liegt. Ringtal gilt als nächstgelegener größerer Ort und war ursprünglich das eigentliche Ziel der Flüchtlingsbewegung. Allerdings verfügt Ringtal eigenen Angaben zufolge über lediglich rund fünfzig Soldaten, sodass es einer größeren Bedrohung kaum gewachsen wäre. Kleinringtal dient somit als Puffer und erste Verteidigungslinie. Die enge geografische Nähe lässt auf regelmäßigen Austausch und gegenseitige Abhängigkeit zwischen den beiden Siedlungen schließen, auch wenn Kleinringtal aufgrund seiner Befestigung und seiner Funktion als Zufluchtsort eine gewisse Eigenständigkeit bewahrt.
+Als sich eine große Armee nähert, gelingt es der Gruppe, Xenia zu überzeugen, den Ort zu evakuieren. Die Fluchtbewegung zielt auf die nahegelegene Stadt Ringtal, die als nächster großer Stützpunkt mit massiven Mauern gilt und einer Belagerung standhalten könnte.
 
 # Belege
 
-1. Session 2026-06-04 @ 00:10:07 – https://www.youtube.com/watch?v=EGNh8O7pE5Q  
-   Beschreibung von Kleinringtal als Tavernendorf mit Mauer, Übungsplatz und Götterstatue; Lage zwischen Breska und Ringtal; Unterbringung von Flüchtlingen aus Brandau; Rolle als Zuflucht vor Gnollüberfällen.
-
-2. Session 2026-06-04 @ 00:05:40 – https://www.youtube.com/watch?v=EGNh8O7pE5Q  
-   Erwähnung Ringtals als größere Stadt in der Nähe, mit etwa 50 Soldaten und als Ziel der Flüchtlinge.
+[P-52a] Session 2026-06-04 @ 00:10:12 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
+[P-52b] Session 2026-06-04 @ 02:46:34 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
+[S1-03-Ba] Session 2026-08-06 @ 01:04:05 (https://www.youtube.com/watch?v=0HyPHao8s_k)
+[S1-03-Bb] Session 2026-08-06 @ 00:06:36 (https://www.youtube.com/watch?v=0HyPHao8s_k)

@@ -1,15 +1,16 @@
 ---
 type: NPC
 title: Lia
-description: Lia, die Schwester von Arus, teilte die Verantwortung für das gescheiterte
-  Experiment. Sie begrüßte die Gruppe und gab bereitwillig Auskunf…
+description: Eine der beiden Magierinnen, Schwester von Arus, die den Golem erschuf.
+  Sie ist jung, enthusiastisch (fast aufdringlich zu Rotunas) und ges…
 tags:
 - npcs
 timestamp: '2025-10-07T00:00:00Z'
 id: NPC_LIA
 ---
 
-Lia ist die Schwester von [Arus](/npcs/arus.md) und teilte mit ihm die Verantwortung für ein gescheitertes Experiment, bei dem ein Golem außer Kontrolle geriet. Sie begrüßte die Gruppe und gab bereitwillig Auskunft: Der Golem sei etwa sechsmal so groß wie ein Mensch, und sie und Arus hätten bereits erfolglos versucht, ihn mit Zaubern aufzuhalten. Im Kampf unterstützte sie die Gruppe mit Feuerpfeilen. Nach der Vernichtung des Golems verabschiedete sie sich kurz und wirkte enttäuscht über den Verlust ihrer Arbeit.
+Eine der beiden Magierinnen, Schwester von [Arus](/npcs/arus.md), die den Golem erschuf. Sie ist jung, enthusiastisch (fast aufdringlich zu [Rotunas](/characters/rotunas.md)) und gestresst wegen der schiefgegangenen Beschwörung. Sie erklärt die Funktionsweise des Golems und die Gefahr der Kristalle. Sie und Arus haben Sprengfallen vorbereitet, um das Kristallfeld notfalls zu zerstören. Nach dem Kampf ist sie enttäuscht über den Verlust ihrer Forschung und reist kurz angebunden ab.
 
 # Belege
-1. Session 2025-10-07 @ 00:03:03 (https://www.youtube.com/watch?v=qVAF_54S8Vw)
+
+[P-25] Session 2025-10-07 @ 00:00:03 (https://www.youtube.com/watch?v=qVAF_54S8Vw)

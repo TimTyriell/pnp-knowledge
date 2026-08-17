@@ -1,18 +1,16 @@
 ---
 type: NPC
 title: Günther (Shani)
-description: Ein tierischer Begleiter von Esterossa, der ursprünglich eine Katze namens
-  Shani war, aber von der Gruppe 'Günther' genannt wurde. Sie über…
+description: Esterossas geflügelte Katze, ursprünglich weiblich und hieß Shani. Sie
+  überbrachte eine schriftliche Warnung von Nyrella an Esterossa und b…
 tags:
 - npcs
 timestamp: '2025-09-23T00:00:00Z'
 id: NPC_GUENTHER_SHANI
 ---
 
-# Günther (Shani)
-
-Günther (ursprünglich *Shani*) ist ein tierischer Begleiter von Esterossa. Es handelt sich um eine Katze, die von der Gruppe den Namen **Günther** erhielt. Sie überbrachte eine Nachricht zwischen [Nyrella](/characters/nyrella.md) und Esterossa und wurde von Esterossa gestreichelt; dabei erfuhr Nyrella von der Katze ihren wahren Namen.
+[Esterossas](/characters/esterossa.md) geflügelte Katze, ursprünglich weiblich und hieß Shani. Sie überbrachte eine schriftliche Warnung von [Nyrella](/characters/nyrella.md) an Esterossa und beschwerte sich über ihren vergessenen Namen.
 
 # Belege
 
-[1] Session 2025-09-23 @ 01:01:42 (https://www.youtube.com/watch?v=DGzfqVigS0g)
+[P-23] Session 2025-09-23 @ 01:01:26 (https://www.youtube.com/watch?v=DGzfqVigS0g)

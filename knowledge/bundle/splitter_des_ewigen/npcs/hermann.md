@@ -1,16 +1,16 @@
 ---
 type: NPC
 title: Hermann
-description: Hermann ist der Barkeeper der ersten Taverne, der Esterossa ein Bier
-  und eine Schüssel Milch für die Katze serviert. Er ist leicht reizbar…
+description: Barkeeper der ersten Taverne auf Sanddorn. Er verkauft Bier für eine
+  Goldmünze und ist stolzer Besitzer der Katze Ajani. Als sich die Katze…
 tags:
 - npcs
 timestamp: '2025-04-30T00:00:00Z'
 id: NPC_HERMANN
 ---
 
-Hermann ist der Barkeeper der ersten Taverne, die die Gruppe besucht. Er serviert Esterossa ein Bier und eine Schüssel Milch für deren Katze. Er ist leicht reizbar und beschuldigt Esterossa, seine Katze Adjani gestohlen zu haben; der Streit wird von Anton geschlichtet.
+Barkeeper der ersten [Taverne](/locations/taverne.md) auf Sanddorn. Er verkauft Bier für eine Goldmünze und ist stolzer Besitzer der Katze [Ajani](/npcs/katze_ajani_guenther.md). Als sich die Katze [Esterossa](/characters/esterossa.md) zuwendet, wird er aggressiv und zieht eine Waffe, wird aber von [Anton Großwurz](/npcs/anton_grosswurz.md) eingeschläfert. Er beschuldigte Esterossa des Katzendiebstahls.
 
 # Belege
 
-1. Session 2025-04-30 @ 00:43:30 (https://www.youtube.com/watch?v=fsCOiSkKKTE)
+[P-06] Session 2025-04-30 @ 00:43:12 (https://www.youtube.com/watch?v=fsCOiSkKKTE)

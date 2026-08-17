@@ -1,15 +1,17 @@
 ---
 type: Location
 title: Zwergenfestung
-description: Die Festung der Zwerge liegt hoch in den Bergen, ist von Schnee bedeckt
-  und nahezu uneinnehmbar. Sie verfügt über eine große Mauer, ein sch…
+description: Die Festung der Zwerge liegt hoch in den Bergen, schwer zugänglich und
+  nahezu uneinnehmbar. Sie besitzt eine große Statue eines trinkenden…
 tags:
 - locations
 timestamp: '2026-01-27T00:00:00Z'
 id: LOC_ZWERGENFESTUNG
+subtype: Festung
 ---
 
-Die Zwergenfestung liegt hoch in den Bergen, ist von Schnee bedeckt und gilt als nahezu uneinnehmbar. Eine große Mauer und ein schweres Tor schützen den Komplex, der im Inneren eine warme Empfangshalle besitzt, die von einem magischen Kristall beheizt wird. Zur Ausstattung zählen Werkstätten, ein Brunnen und bewaffnete Wachen. Sie dient als Ausgangspunkt für die Mission der Gruppe.
+[Die Festung](/locations/die_festung.md) der Zwerge liegt hoch in den Bergen, schwer zugänglich und nahezu uneinnehmbar. Sie besitzt eine große Statue eines trinkenden Zwergs vor der Mauer, dicke Tore und einen tief in den Berg führenden Minenschacht. Im Inneren gibt es eine Empfangshalle mit einem magischen Kristall als Wärmequelle und eine Werkstatt mit Schmieden und Hochöfen, wo Artefakte gefertigt werden.
 
 # Belege
-1. Session 2026-01-27 @ 00:03:08 (https://www.youtube.com/watch?v=9RzvnnWzV7E)
+
+[P-35] Session 2026-01-27 @ 00:03:08 (https://www.youtube.com/watch?v=9RzvnnWzV7E)

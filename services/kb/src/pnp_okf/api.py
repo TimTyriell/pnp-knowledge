@@ -11,15 +11,22 @@ Run:  python -m pnp_okf.api   (binds 127.0.0.1 only; single-operator setup)
 
 from __future__ import annotations
 
+import json
 import os
+import re
 import subprocess
+from datetime import datetime, timezone
 from functools import lru_cache
 from pathlib import Path
 
 import yaml
 from fastapi import FastAPI, HTTPException, Query
+from fastapi.middleware.cors import CORSMiddleware
+
+from pnp_okf.okf import split_document
 
 _RESERVED = {"index.md", "log.md"}
+_VIDEO_ID_RE = re.compile(r"(?:v=|youtu\.be/)([A-Za-z0-9_-]{6,})")
 
 
 # --- git plumbing ------------------------------------------------------------
@@ -52,17 +59,7 @@ def _repo_root(bundle_dir: Path) -> Path:
 # --- concept reading ---------------------------------------------------------
 
 
-def _split_frontmatter(text: str) -> tuple[dict, str]:
-    if not text.startswith("---"):
-        return {}, text
-    parts = text.split("---\n", 2)
-    if len(parts) < 3:
-        return {}, text
-    try:
-        fm = yaml.safe_load(parts[1])
-    except yaml.YAMLError:
-        return {}, parts[2]
-    return (fm if isinstance(fm, dict) else {}), parts[2].strip()
+_split_frontmatter = split_document  # kept as the name the routes below use
 
 
 class BundleReader:
@@ -190,6 +187,34 @@ def _default_bundle_dir() -> Path:
     return root / "knowledge" / "bundle" / "splitter_des_ewigen"
 
 
+def _load_last_run() -> dict | None:
+    state_dir = Path(os.environ.get("PNP_STATE_DIR", "./state")).expanduser()
+    path = state_dir / "last_run.json"
+    if not path.is_file():
+        return None
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return None
+
+
+def _video_id_from_resource(resource: str | None) -> str | None:
+    if not resource:
+        return None
+    m = _VIDEO_ID_RE.search(resource)
+    return m.group(1) if m else None
+
+
+def _bundle_fingerprint(bundle_dir: Path) -> tuple[int, float]:
+    """Cheap change signal for /status: file count + max mtime over the bundle.
+
+    A handful of stat() calls versus /concepts' full read+YAML-parse of every
+    file — /status must stay fast for a 10s dashboard poll.
+    """
+    mtimes = [p.stat().st_mtime for p in bundle_dir.rglob("*.md") if p.name not in _RESERVED]
+    return (len(mtimes), max(mtimes) if mtimes else 0.0)
+
+
 def create_app(bundle_dir: Path | None = None) -> FastAPI:
     reader = BundleReader(bundle_dir or _default_bundle_dir())
     conflicts_dir = (
@@ -198,6 +223,18 @@ def create_app(bundle_dir: Path | None = None) -> FastAPI:
         else reader.bundle_dir.parent / "conflicts"
     )
     app = FastAPI(title="pnp-kb", description="Read-only campaign knowledge API")
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=[
+            "http://127.0.0.1:5173",
+            "http://localhost:5173",
+            "http://127.0.0.1:8090",
+            "http://localhost:8090",
+        ],
+        allow_methods=["GET"],
+        allow_headers=["*"],
+    )
+    _status_cache: dict = {"key": None, "value": None}
 
     @app.get("/health")
     def health() -> dict:
@@ -266,6 +303,76 @@ def create_app(bundle_dir: Path | None = None) -> FastAPI:
             fm, body = _split_frontmatter(path.read_text(encoding="utf-8"))
             out.append({"file": path.name, "frontmatter": fm, "body_md": body})
         return out
+
+    @app.get("/status")
+    def status() -> dict:
+        fingerprint = _bundle_fingerprint(reader.bundle_dir)
+        if _status_cache["key"] == fingerprint:
+            cached = dict(_status_cache["value"])
+            cached["generated_at"] = (
+                datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
+            )
+            return cached
+
+        counts_by_type: dict[str, int] = {}
+        items = []
+        for cid in reader.concept_paths(None):
+            fm, _ = reader.read(cid, None)
+            ctype = str(fm.get("type", ""))
+            counts_by_type[ctype] = counts_by_type.get(ctype, 0) + 1
+            if ctype != "Session":
+                continue
+            rel = f"{reader.rel_bundle}/{cid}.md"
+            committed_at = _git(
+                reader.repo_root, "log", "-1", "--format=%cI", "--", rel
+            ).strip() or None
+            items.append(
+                {
+                    "concept": cid,
+                    "id": fm.get("id"),
+                    "date": cid.rsplit("/", 1)[-1],
+                    "video_id": _video_id_from_resource(fm.get("resource")),
+                    "episode": fm.get("episode"),
+                    "title": fm.get("title"),
+                    "quality": fm.get("quality"),
+                    "unsicher_ratio": fm.get("unsicher_ratio"),
+                    "committed_at": committed_at,
+                }
+            )
+
+        conflicts_list = []
+        actions = []
+        if conflicts_dir.is_dir():
+            for path in sorted(conflicts_dir.glob("*.md")):
+                fm, _ = _split_frontmatter(path.read_text(encoding="utf-8"))
+                entry = {
+                    "file": path.name,
+                    "id": fm.get("id"),
+                    "concept": fm.get("concept"),
+                    "title": fm.get("title"),
+                    "timestamp": fm.get("timestamp"),
+                }
+                conflicts_list.append(entry)
+                actions.append({"kind": "conflict", "label": fm.get("title"), "ref": path.name})
+
+        head = _git(reader.repo_root, "rev-parse", "--short", "HEAD").strip()
+        tags = _git(reader.repo_root, "tag", "--list", "s*").split()
+
+        value = {
+            "schema": 1,
+            "service": "pnp-kb",
+            "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
+            "last_run": _load_last_run(),
+            "head": head,
+            "session_tags": sorted(tags),
+            "counts_by_type": counts_by_type,
+            "items": sorted(items, key=lambda r: r["concept"]),
+            "conflicts": conflicts_list,
+            "actions": actions,
+        }
+        _status_cache["key"] = fingerprint
+        _status_cache["value"] = value
+        return value
 
     return app
 

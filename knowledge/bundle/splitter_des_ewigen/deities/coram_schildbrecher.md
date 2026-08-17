@@ -1,39 +1,50 @@
 ---
 type: Deity
 title: Coram Schildbrecher
-description: Ein neuer Gott, der für Heldenschaft, Zusammenhalt und Gemeinschaft steht.
-  Eine gepflegte Statue von ihm thront auf dem zentralen Platz von…
+description: Coram Schildbrecher ist einer der „neuen Götter“ der Spielwelt, der in
+  der Stadt Tiefwasser öffentlich verehrt wird. Auf dem Marktplatz der…
 tags:
 - deities
 timestamp: '2026-03-18T00:00:00Z'
 id: DEITY_CORAM_SCHILDBRECHER
+subtype: Neuer Gott
 ---
 
 ## Überblick
 
-Coram Schildbrecher ist einer der neuen Götter, die in der Spielwelt verehrt werden. Er steht für Heldenschaft, Zusammenhalt und Gemeinschaft. Auf dem zentralen Platz der Stadt [Tiefwasser](/locations/tiefwasser.md) thront eine gepflegte Statue von ihm, die als Symbol für das friedliche Zusammenleben verschiedener Völker dient. Die Inschrift trägt seinen Namen, und in unmittelbarer Nähe befindet sich ein Schild mit der Aufschrift „Gilde der Schilde“.
+Coram Schildbrecher ist einer der „neuen Götter“ der Spielwelt, der in der Stadt Tiefwasser öffentlich verehrt wird. Auf dem Marktplatz der Stadt befindet sich eine gut erhaltene Statue des Gottes, deren Inschrift seinen Namen trägt. Er steht für Heldenschaft, Zusammenhalt und Gemeinschaft und scheint Angehörige unterschiedlichster Völker in seinem Kult willkommen zu heißen.  
+
+Die bislang einzige dokumentierte Erwähnung stammt aus der ersten gemeinsamen Session der Gruppe, die nach Tiefwasser kam. Auf dem Marktplatz entdeckte Brim die Statue, erkannte die Bedeutung und wies die Gefährten auf ein angrenzendes Gebäude hin, das sich als Sitz der „Gilde des Schildes“ (eigentlich „Gilde des Schildes“, vom Spielleiter scherzhaft als „Gilde der Schilde“ bezeichnet) herausstellte.  
 
 ## Rolle in der Kampagne
 
-Die Heldengruppe stieß bei ihrer Ankunft in Tiefwasser auf die Statue des Coram Schildbrecher. Der Zwerg [Brim](/characters/brim.md) erkannte durch einen erfolgreichen Wissenswurf die Bedeutung der Statue und beschrieb sie seinen Gefährten. Er wies darauf hin, dass sich dort in der Nähe ein Gildengebäude – die Gilde der Schilde – befände, das eine vielversprechende Anlaufstelle sein könnte, um Informationen über die Orks und das drohende Ende zu erhalten. Bisher hat die Gruppe jedoch noch keine direkte Interaktion mit dem Kult oder der Gilde aufgenommen; der Gott markiert lediglich einen potenziellen Ausgangspunkt für weitere Nachforschungen.
+In der laufenden Kampagne begegnet die Gruppe Coram Schildbrecher zunächst nur in Form einer Statue und des mit ihm assoziierten Gildenhauses auf dem Platz von Tiefwasser. Eine aktive Rolle des Gottes oder ein direktes Eingreifen in das Geschehen ist nicht belegt.  
+
+Die Statue und die nahegelegene Gilde dienten der Gruppe jedoch als erste Orientierung in der Stadt. Brim vermutete, dass die Gilde des Schildes eine vielversprechende Anlaufstelle sein könnte, um Informationen über die Orks oder das Ende zu erhalten. Die Assoziation zwischen dem Gott und der Gilde ist offensichtlich, auch wenn die genaue Verbindung (etwa: göttlicher Schutzpatron der Gilde) noch nicht geklärt ist.
 
 ## Wichtige Merkmale
 
-- **Domäne**: Heldenschaft, Zusammenhalt und Gemeinschaft.
-- **Verehrung**: Seine Statue auf dem Platz von Tiefwasser wird gut instand gehalten, was auf eine aktive Anhängerschaft schließen lässt. Der allgemeine Zustand deutet auf eine noch junge, aber bereits etablierte Gottheit hin.
-- **Symbolik**: Die Präsenz der Statue spiegelt das multiethnische Miteinander in Tiefwasser wider. In der Beschreibung des Gamemasters heißt es: *„Und ist einer der Götter, die wohl für die Heldenschaft steht, für Zusammenhalt und für Gemeinschaft, und das auch mehr oder weniger so ein bisschen darstellt, alleine in den Leuten, die ihr hier am Platz seht, weil ihr seht Menschen, ihr seht einen Elf, ihr seht einen Tiefling, aber sogar einen Goblin und die scheinen sich hier ganz gut zu arrangieren.“* (Session 2026-03-18)
+- **Erscheinungsbild:** Die Statue auf dem Marktplatz von Tiefwasser war zum Zeitpunkt der ersten Session noch recht gut in Stand gehalten, was auf eine relativ junge oder zumindest aktiv gepflegte Verehrung hindeutet.  
+- **Wesen und Domäne:** Coram Schildbrecher wird als ein Gott der Heldenschaft, des Zusammenhalts und der Gemeinschaft beschrieben. Diese Werte spiegeln sich offenbar auch in der sozialen Realität am Ort wider: Auf dem Platz waren Menschen, ein Elf, ein Tiefling und sogar ein Goblin zu sehen, die friedlich miteinander umgingen.  
+- **Inklusivität:** Anders als viele traditionelle Kulte akzeptiert Coram Schildbrecher auch nicht-menschliche Völker; die gemischte Menge an seinem Verehrungsort unterstreicht diesen integrativen Charakter.  
 
 ## Beziehungen und Verbindungen
 
-- **[Tiefwasser](/locations/tiefwasser.md)**: Die Statue Coram Schildbrechers befindet sich auf dem zentralen Platz der Stadt und ist dort ein markanter Orientierungspunkt. Sie verkörpert die Ideale des friedlichen Zusammenlebens, die in Tiefwasser praktiziert werden.
-- **Gilde der Schilde**: Ein Schild mit dem Namen dieser Gilde ist in der Nähe der Statue angebracht. Die Wortwahl („Gilde der Schilde“) spielt offensichtlich auf den Namen des Gottes an. Ob es sich um eine ihm geweihte Organisation, einen Kriegerorden oder eine Handelsgilde handelt, ist unklar. [Brim](/characters/brim.md) vermutete, dass die Gilde eine gute Quelle für Informationen über die Orks sein könnte.
+- **Gilde des Schildes:** Das Gildenhaus direkt am Platz trägt einen eng mit dem Gott verknüpften Namen (Schild). Es ist anzunehmen, dass die Gilde in irgendeiner Form mit dem Kult um Coram Schildbrecher verbunden ist – sei es als Trägerorganisation des Tempels, als weltlicher Arm der Gemeinschaft oder als eine von ihm inspirierte Vereinigung. Genaue Einzelheiten sind nicht bekannt.  
+- **Tiefwasser:** Die Stadt dient als Schauplatz der Verehrung. Eine Statue an einem zentralen öffentlichen Ort zeigt, dass Coram Schildbrecher zumindest lokal eine anerkannte oder geförderte Gottheit ist.
+
+## Chronologie
+
+- **Session vom 18. März 2026 ([P-41]):** Brim entdeckt auf dem Marktplatz von Tiefwasser die Statue des Coram Schildbrecher. Ein erfolgreicher Knowledge-Wurf (23) offenbart, dass es sich um einen der neuen Götter handelt, der für Heldenschaft, Zusammenhalt und Gemeinschaft steht, und dass seine Anhängerschaft verschiedenen Völkern offensteht. Im Anschluss wird die nahegelegene Gilde des Schildes als mögliche Anlaufstelle für die Gruppe identifiziert.
 
 ## Offene Fragen
 
-- Welche genaue Rolle spielt die Gilde der Schilde und in welcher Beziehung steht sie zu Coram Schildbrecher? Ist sie ein religiöser Orden, eine Söldnergruppe oder etwas anderes?
-- Handelt es sich bei Coram Schildbrecher um eine aktive, eingreifende Gottheit oder eher um eine idealisierte Symbolfigur?
-- Welche konkreten Lehren oder Gebote vertritt sein Kult, und wie ist er in der Götterwelt des Settings verortet?
+- Die genaue Stellung Coram Schildbrechers im Pantheon ist unklar – wurde er als Teil einer neuen Göttergeneration geboren oder handelt es sich um einen aufgestiegenen Sterblichen?  
+- Was bedeutet der Beiname „Schildbrecher“? Ist er martialischer Natur, eine Anspielung auf das Durchbrechen von Barrieren zwischen Völkern oder das Brechen eines Schildes als Symbol?  
+- Welche Rolle spielt die Gilde des Schildes konkret im Kult? Ist sie eine Söldnergilde, eine Handelsgilde oder ein religiöser Orden?  
+- Gibt es weitere Tempel, Schreine oder Kulthandlungen außerhalb der Statue auf dem Marktplatz?  
+- In welchem Verhältnis steht Coram Schildbrecher zu anderen (neuen oder alten) Göttern?
 
 ## Belege
 
-1. Session 2026-03-18, 00:25:14, https://www.youtube.com/watch?v=HHXxsASLrbQ
+[P-41] Session vom 18. März 2026, ab 00:25:14, https://www.youtube.com/watch?v=HHXxsASLrbQ

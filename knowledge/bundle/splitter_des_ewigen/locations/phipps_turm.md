@@ -1,15 +1,17 @@
 ---
 type: Location
 title: Phipps' Turm
-description: Ein alter, zerfallener Turm in der Nähe der Burg, in dem der Gnom Phipps
-  wohnt (00:08:52). Er hat ein kleines Feuer und gibt dem Einsiedler…
+description: Ein alter, zerbröckelter Turm im Wald, in dem der Gnom Phipps als Einsiedler
+  lebt. Er hat dort ein kleines Feuer und versteckt sich hinter…
 tags:
 - locations
 timestamp: '2025-04-15T00:00:00Z'
 id: LOC_PHIPPS_TURM
+subtype: Gebäude
 ---
 
-Der **Phipps’ Turm** ist ein alter, zerfallener Turm in der Nähe der Burg. In ihm wohnt der Gnom [Phipps](/npcs/phipps.md), der ein kleines Feuer unterhält und dem Einsiedler Schutz bietet. Die Gruppe traf dort auf Phipps und erhielt von ihm Informationen.
+Ein alter, zerbröckelter Turm im Wald, in dem der Gnom [Phipps](/npcs/phipps.md) als Einsiedler lebt. Er hat dort ein kleines Feuer und versteckt sich hinter einer Kiste.
 
 # Belege
-1. Session 2025-04-15 @ 00:08:52 – https://www.youtube.com/watch?v=YCpAz_syjaY
+
+[P-04] Session 2025-04-15 @ 00:13:24 (https://www.youtube.com/watch?v=YCpAz_syjaY)

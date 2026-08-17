@@ -1,15 +1,17 @@
 ---
 type: Item
 title: Voodoo-Puppe
-description: Eine kleine hölzerne Strichmännchen-Puppe, die Cookie in den Ruinen eines
-  Bauernhauses fand (00:29:06). Sie nahm sie mit. Später, im Kampf…
+description: Eine grob aus Holz geflochtene Strichmännchen-Figur, die Kuki im Bauernhaus
+  entdeckt und einsteckt. Später versucht sie, sie gegen Lanra ei…
 tags:
 - items
 timestamp: '2025-04-15T00:00:00Z'
 id: ITEM_VOODOO_PUPPE
+subtype: Artefakt
 ---
 
-Eine kleine, hölzerne Strichmännchen-Puppe, die Cookie in den Ruinen eines Bauernhauses fand und an sich nahm. Im Kampf gegen die Hexe Lenra versuchte sie, die Puppe mit einem Pfeil zu durchbohren, in der Hoffnung, dadurch die Hexe zu verletzen – die Magie der Puppe kehrte sich jedoch gegen sie: Cookie selbst erlitt vier Schaden. Die Puppe scheint eine Voodoo-Verbindung zu besitzen, deren Wirkung noch nicht vollständig verstanden ist.
+Eine grob aus Holz geflochtene Strichmännchen-Figur, die [Kuki](/characters/cookie.md) im Bauernhaus entdeckt und einsteckt. Später versucht sie, sie gegen [Lanra](/npcs/lenra.md) einzusetzen, indem sie einen Pfeil hineinrammt, was ihr jedoch selbst Schaden zufügt.
 
 # Belege
-1. Session 2025-04-15 @ 00:29:06 & 01:59:33 (https://www.youtube.com/watch?v=YCpAz_syjaY)
+
+[P-04] Session 2025-04-15 @ 01:59:16 (https://www.youtube.com/watch?v=YCpAz_syjaY)

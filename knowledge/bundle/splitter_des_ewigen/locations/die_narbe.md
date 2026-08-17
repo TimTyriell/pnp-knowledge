@@ -1,16 +1,26 @@
 ---
 type: Location
 title: Die Narbe
-description: Ein Ort in den Erntefeldern, links von Jalan, hinter einem großen Berg
-  verborgen. Laut den Visionen des Richters und den Informationen des…
+description: Die Narbe ist ein trostloser, kristallübersäter Landstrich in Abyssalis
+  nahe Jalan, der auf der Karte des Richters verzeichnet ist. Lunara,…
 tags:
 - locations
-timestamp: '2026-05-13T00:00:00Z'
+timestamp: '2026-06-10T00:00:00Z'
 id: LOC_DIE_NARBE
+subtype: Wildnis
 ---
 
-Die Narbe ist eine entlegene Stätte in den [Erntefeldern](/locations/erntefelder.md), verborgen hinter einem großen Berg links von [Jalan](/locations/jalan.md). Laut Visionen des Richters und Informationen eines Geistes halten sich dort sowohl Volgulta als auch Lunaras Bruder Liam auf. Die Gruppe der Abenteurer brach dorthin auf, um Volgulta zu töten.
+**Die Narbe** ist ein trostloser, kristallübersäter Landstrich in [Abyssalis](/domains/splitterwelt.md) nahe [Jalan](/locations/jalan.md), der auf der Karte des [Richters](/npcs/richter_herr_der_seelenwacht.md) verzeichnet ist. [Lunara](/characters/lunara_velora.md), [Esterossa](/characters/esterossa.md) und [Dodo](/characters/dodo.md) machen sich auf den Weg dorthin.
+
+## Geografie und Atmosphäre
+
+Die Narbe liegt inmitten von Kristallfeldern; der Landstrich ist von Kristallen übersät. Schluchten, Klippen und magische Türme durchziehen das Gelände. Über dem Gebiet herrscht eine beklemmende Stille, durchbrochen von Flüstern und Echos toter Seelen.
+
+## Verbindung zu Vorgultar und Liam
+
+[Holodarn](/npcs/diener_huludans.md) und der Richter bestätigen, dass in der Narbe sowohl [Lunaras](/characters/lunara_velora.md) Bruder [Liam](/npcs/liam_velora.md) als auch etwas begraben liegt, das mit [Vorgultar](/deities/vorgul_tar.md) zusammenhängt. In dem Landstrich haust Vorgultar.
 
 # Belege
 
-1. Session 2026-05-13 @ 00:55:21 – https://www.youtube.com/watch?v=4afPD9Q_5AY
+[P-49] Session 2026-05-13, 01:07:00 – https://www.youtube.com/watch?v=4afPD9Q_5AY
+[P-53] Session 2026-06-10, 00:07:05 – https://www.youtube.com/watch?v=_3tLSiT1tck

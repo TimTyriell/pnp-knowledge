@@ -1,27 +1,34 @@
 ---
 type: Item
 title: Göttliche Handschellen
-description: Ein Paar magischer Ringe, die Enox Lionel bringen lässt und die mächtige
-  Wesen bannen können. Sie unterdrücken die gesamte Magie des Träger…
+description: Die göttlichen Handschellen (auch einfach „Die Handschellen“ genannt)
+  sind ein magisches Artefakt in Form zweier verbundener Ringe. Sie wur…
 tags:
 - items
 timestamp: '2026-03-24T00:00:00Z'
 id: ITEM_MAGISCHE_HANDSCHELLEN
+subtype: Artefakt
 aliases:
-- Magische Handschellen
+- Die Handschellen
 ---
 
-Die **Göttlichen Handschellen**, auch als magische Handschellen bekannt, sind ein Paar magischer Ringe, die als Fessel wirken. Sie wurden von Enox Lionel beschafft und später von [Lindo Laut](/characters/lindo_laut.md) getragen. Das Artefakt unterdrückt die gesamte Magie des Trägers und verhindert, dass der mächtige Geist Slix die Kontrolle übernimmt – solange die Handschellen angelegt sind. Ihre Wirkung entfaltet sich jedoch nur einmal: Nach dem Ausziehen verlieren sie endgültig ihre Macht. Lindo Laut legte sie sich im entscheidenden Moment an, um seine Freunde zu schützen, und trug sie fortan als ständige Erinnerung an die Gefahr in ihm.
+Die **göttlichen Handschellen** (auch einfach „Die Handschellen“ genannt) sind ein magisches Artefakt in Form zweier verbundener Ringe. Sie wurden erschaffen, um mächtige Wesen zu bannen oder deren Einfluss zu unterdrücken. In der Kampagne dienten sie als letztes Mittel, um die in [Lindo Laut](/characters/lindo_laut.md) wohnende zweite Persönlichkeit **Vasul** (bzw. den von ihr verkörperten Aspekt **Slix**) zu bändigen.
 
-## Funktionsweise und Einschränkungen
+## Herkunft und Übergabe
 
-Die Göttlichen Handschellen bestehen aus zwei magischen Ringen, die zusammengehören und wie Handschellen getragen werden. Sie unterdrücken sämtliche Magie des Trägers, was sie zu einem mächtigen Bannmittel gegen übernatürliche Wesen macht. Insbesondere verhindern sie, dass der Geist Slix aus Lindo Laut ausbricht und die Kontrolle übernimmt. Einmal ausgezogen, sind die Handschellen nutzlos – ihre magische Kraft erschöpft sich vollständig. Diese Einmaligkeit unterstreicht ihre Bedeutung als letztes Mittel in einer kritischen Lage.
+Die Handschellen wurden – nach einer späteren Quelle – von **Voras** bereitgestellt, der sie als Geschenk zur Verfügung stellte, um die Gefahr durch Lindos zweite Persönlichkeit zu bannen.[^2] In der entscheidenden Situation bot jedoch **Nox** Lindo die Handschellen an und warnte dabei, dass sie nur *einmal* angelegt werden könnten.[^1] Lindo akzeptierte das Angebot, nachdem er vorübergehend die Kontrolle über **Slicks** (Vasuls Manifestation) zurückgewonnen hatte, und legte die Fesseln an, wodurch Vasuls Einfluss zunächst gestoppt wurde.[^1]
 
-## Bedeutung für Lindo Laut
+## Wirkung und Einschränkungen
 
-Lindo Laut trägt die Handschellen nicht nur als Schutzmaßnahme, sondern auch als Symbol seiner inneren Zerrissenheit. Nach einem Zwischenfall, bei dem er unbeabsichtigt Rotunas‘ Arm zerstörte, entschloss er sich, die Fesseln anzulegen. Die Handschellen stehen seither für den Verlust seiner Musik und die ständige Bedrohung durch die dunkle Macht in ihm. Sie sind ein permanentes Opfer, das er für die Sicherheit seiner Gefährten bringt, und gleichzeitig eine Bürde, die ihn an seine Grenzen erinnert.
+Das Artefakt unterbindet sämtliche magischen Fähigkeiten des Trägers – sowohl offensive als auch defensive – und blockiert damit auch die Machtentfaltung eines in ihm gebundenen Wesens wie Vasul oder Slix.[^1] Wegen dieser totalen magischen Unterdrückung stellte Nox klar, dass die Handschellen nur *einmal* angelegt werden können; eine einmalige Bindung kann nicht rückgängig gemacht werden.[^1]
+
+Eine bisher nicht näher erläuterte Nebenwirkung ist, dass Lindo Laut seit dem Tragen der Handschellen nicht mehr in der Lage ist, seine geliebte Musik zu hören.[^2] Dies deutet darauf hin, dass das Hören oder Wahrnehmen von Musik bei Lindo möglicherweise an magische Fähigkeiten gebunden ist oder dass die Handschellen auch nicht-magische Sinneswahrnehmung beeinträchtigen.
+
+## Rolle in der Geschichte
+
+Die Handschellen wurden zu einem kritischen Wendepunkt, als Lindos innere Zerrissenheit zwischen seiner eigenen Persönlichkeit und Vasul/Slix zu eskalieren drohte. Nox’ Angebot und Lindos Annahme der Fesseln verhinderten eine vollständige Übernahme durch Vasul[^1], unterdrückten aber gleichzeitig Lindos eigene magische Fähigkeiten sowie seinen Zugang zur Musik. Seitdem trägt Lindo die Handschellen dauerhaft, was seine Möglichkeiten einschränkt, aber die Gruppe vor dem Ausbrechen der zerstörerischen zweiten Persönlichkeit bewahrt.[^2]
 
 # Belege
 
-1. Session 2026-02-17 @ 01:07:18 – [YouTube](https://www.youtube.com/watch?v=Z2jlzpoTWVw)  
-2. Session 2026-03-24 @ 01:05:40 – [YouTube](https://www.youtube.com/watch?v=Yj5BWJfg3Ag) [Transkriptqualität: mittel]
+[^1]: Session 2026-02-17 @ 02:16:38 <https://www.youtube.com/watch?v=Z2jlzpoTWVw>
+[^2]: Session 2026-03-24 @ 01:04:50 <https://www.youtube.com/watch?v=Yj5BWJfg3Ag>

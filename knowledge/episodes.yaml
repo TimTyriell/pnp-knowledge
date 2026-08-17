@@ -1,0 +1,540 @@
+# episodes.yaml — die Episoden-Liste der Kampagne.
+#
+# System of Record fuer Folgen-Identitaet: eine Episoden-ID pro Aufzeichnung,
+# plus der handgepflegte Abenteuername und die Kurzbeschreibung, die keine
+# Pipeline ableiten kann. Gekeyt auf video_id, weil das der einzige ueber alle
+# drei Repos stabile Schluessel ist (Datum kollidiert, sobald zwei Teams am
+# selben Tag aufnehmen).
+#
+# Konsumenten lesen nur `id` — die Ableitung passiert einmal, in
+# pnp-crawl/sync_episodes.py, und wird hier materialisiert.
+#
+# ID-Regel:
+#   `id:` gesetzt  -> wird genommen.
+#   sonst          -> Episoden derselben season (und desselben team, wenn
+#                     per_team) nach date sortieren, n = 1-basierter Index,
+#                     `template` formatieren.
+#
+# Neue Season oder neues Team = nur ein Eintrag unter `seasons:` / `teams:`.
+# Kein Code.
+#
+# Pflege:  cd ../pnp-crawl && python sync_episodes.py --check | --write
+
+schema: 1
+
+seasons:
+  "P":
+    label: Prolog
+    # pinned: die IDs stehen literal in jedem Eintrag statt abgeleitet zu
+    # werden. P-01..P-55, lueckenlos. Zwei Aenderungen gegenueber der alten
+    # Wiki-Tabelle (P-01..P-57):
+    #   * H-eHSlfxUAg (war P-56) heisst auf YouTube "Season 1 Episode 1 |
+    #     Team B" und ist nach S1-01-B gewandert.
+    #   * cRNIWJz_ATo (war P-17) war ein abgebrochener Stream, siehe `ignore`.
+    # Alles danach ist um eins nachgerueckt, damit keine Luecke bleibt.
+    pinned: true
+  "1":
+    label: Staffel 1
+    template: "S{season}-{n:02d}-{team}"
+    per_team: true
+
+# Videos that exist in pnp-crawl but are not episodes. Listed here so
+# sync_episodes.py never re-adds them and so a gap in the numbering is a
+# documented decision rather than an oversight.
+ignore:
+  cRNIWJz_ATo: Abgebrochener Stream (2025-08-05) — keine spielbare Session, kein Transkript.
+
+teams:
+  # Gruppenname aus pnp-crawl/groups/ -> Buchstabe in der ID.
+  Team-A: A
+  Team-B: B
+  Team-C: C
+  willauch: W
+
+episodes:
+  - video_id: ROCKGeeRUFw
+    date: 2025-03-26
+    season: "P"
+    team: Team-A
+    id: P-01
+    title: "Session Zero"
+    description: "Testen und Daggerheart Einleitung"
+    url: https://www.youtube.com/watch?v=ROCKGeeRUFw
+  - video_id: LZIuUzc3F18
+    date: 2025-04-01
+    season: "P"
+    team: Team-A
+    id: P-02
+    title: "Das Goblinlager"
+    description: "Goblin Lager finden und ausräuchern."
+    url: https://www.youtube.com/watch?v=LZIuUzc3F18
+  - video_id: 1PWdwvun5ow
+    date: 2025-04-09
+    season: "P"
+    team: Team-A
+    id: P-03
+    title: "Breska"
+    description: "Breska erkunden und auf einen Angriff vorbereiten."
+    url: https://www.youtube.com/watch?v=1PWdwvun5ow
+  - video_id: YCpAz_syjaY
+    date: 2025-04-15
+    season: "P"
+    team: Team-A
+    id: P-04
+    title: "Das Versteck der Hexe"
+    description: "Die Drahtzieherin hinter den Goblins auffinden."
+    url: https://www.youtube.com/watch?v=YCpAz_syjaY
+  - video_id: z3C-bewKqUs
+    date: 2025-04-23
+    season: "P"
+    team: Team-A
+    id: P-05
+    title: "Verteidigung von Breska"
+    description: "Breska vor den Goblins verteidigen."
+    url: https://www.youtube.com/watch?v=z3C-bewKqUs
+  - video_id: fsCOiSkKKTE
+    date: 2025-04-30
+    season: "P"
+    team: Team-A
+    id: P-06
+    title: "Die Sanddorn Inseln #1"
+    description: "Die Insel erkunden. Hier soll es eine Spur zur Hexe geben."
+    url: https://www.youtube.com/watch?v=fsCOiSkKKTE
+  - video_id: e0v6AFGd4mE
+    date: 2025-05-06
+    season: "P"
+    team: Team-A
+    id: P-07
+    title: "Dei Sanddorn Inseln #2"
+    description: "Das Artefakt bergen."
+    url: https://www.youtube.com/watch?v=e0v6AFGd4mE
+  - video_id: 5eAEDN5ra-4
+    date: 2025-05-14
+    season: "P"
+    team: Team-A
+    id: P-08
+    title: "Zebros erkunden (Bergspitze)"
+    description: "Zebros erkunden und dabei stoßen sie auf Belorus der eine Armee vorbereitet."
+    url: https://www.youtube.com/watch?v=5eAEDN5ra-4
+  - video_id: bamCIB_CkR8
+    date: 2025-05-27
+    season: "P"
+    team: Team-A
+    id: P-09
+    title: "Trainingslager"
+    description: "Kämpfe im Trainingslager"
+    url: https://www.youtube.com/watch?v=bamCIB_CkR8
+  - video_id: jtYR4Je0a18
+    date: 2025-06-03
+    season: "P"
+    team: Team-A
+    id: P-10
+    title: "Sumpf Dungeon #1"
+    description: "Das zweite Versteck der Hexe finden."
+    url: https://www.youtube.com/watch?v=jtYR4Je0a18
+  - video_id: cLkCu3Iq3y8
+    date: 2025-06-10
+    season: "P"
+    team: Team-A
+    id: P-11
+    title: "Sumpf Dungeon #2"
+    description: "Dungeon Crawl."
+    url: https://www.youtube.com/watch?v=cLkCu3Iq3y8
+  - video_id: tl76B4V0io8
+    date: 2025-06-17
+    season: "P"
+    team: Team-A
+    id: P-12
+    title: "Sumpf Dungeon #3"
+    description: "Sie treffen auf Dormak und die Hexe Leandra."
+    url: https://www.youtube.com/watch?v=tl76B4V0io8
+  - video_id: tpkO9uGw6-I
+    date: 2025-06-25
+    season: "P"
+    team: Team-A
+    id: P-13
+    title: "Voras der Heilige"
+    description: "Sie finden Voras und befreien die Teile von Vhar'Zul"
+    url: https://www.youtube.com/watch?v=tpkO9uGw6-I
+  - video_id: XOnHa6CmDbo
+    date: 2025-07-09
+    season: "P"
+    team: Team-A
+    id: P-14
+    title: "Neerash"
+    description: "Sie vernichten ein Teil von Vhar'Zul und befreien Neerash."
+    url: https://www.youtube.com/watch?v=XOnHa6CmDbo
+  - video_id: BRRCUgW4xRo
+    date: 2025-07-22
+    season: "P"
+    team: Team-A
+    id: P-15
+    title: "Angriff in Ehrenfels"
+    description: "Sie werden in Ehrenfels angegriffen von Assassinen."
+    url: https://www.youtube.com/watch?v=BRRCUgW4xRo
+  - video_id: XXgO5Ht4Q0A
+    date: 2025-07-29
+    season: "P"
+    team: Team-A
+    id: P-16
+    title: "Die einsame Insel"
+    description: "Eine einsame kleine Insel."
+    url: https://www.youtube.com/watch?v=XXgO5Ht4Q0A
+  - video_id: vHIjua0BZ9Y
+    date: 2025-08-12
+    season: "P"
+    team: Team-A
+    id: P-17
+    title: "Der Pfad"
+    description: "Reise zur alten Kapelle."
+    url: https://www.youtube.com/watch?v=vHIjua0BZ9Y
+  - video_id: -XbO3FLSL_I
+    date: 2025-08-20
+    season: "P"
+    team: Team-A
+    id: P-18
+    title: "Der Blut Packt"
+    description: "[[Lindo Laut|Lindolaut]] erhält seine Form."
+    url: https://www.youtube.com/watch?v=-XbO3FLSL_I
+  - video_id: TLZOH7TlGhk
+    date: 2025-09-02
+    season: "P"
+    team: Team-A
+    id: P-19
+    title: "Die Kapelle"
+    description: "Die betreten die Kapelle von Thar´Vok dem Erdrichter und treffen Dormak dem Diener. Dort gelingt es ihnen zwei Teile von Vhar Zul zu vernichten und Dormak zu vertreiben."
+    url: https://www.youtube.com/watch?v=TLZOH7TlGhk
+  - video_id: vo1xnyLQDJk
+    date: 2025-09-06
+    season: "P"
+    team: Team-A
+    id: P-20
+    title: "Splitterwelt"
+    description: "Sie begleiten den letzten Teil von Vhar´Zul durch die Splitterwelt nach Abisalis."
+    url: https://www.youtube.com/watch?v=vo1xnyLQDJk
+  - video_id: Zl0qfuI6Goc
+    date: 2025-09-09
+    season: "P"
+    team: Team-A
+    id: P-21
+    title: "Die Armee der Toten"
+    description: "Die Arme von Belorus setzt sich in Bewegung und hat die erste Statt als Opfer gefordert."
+    url: https://www.youtube.com/watch?v=Zl0qfuI6Goc
+  - video_id: AhIT8dcxw2o
+    date: 2025-09-17
+    season: "P"
+    team: Team-A
+    id: P-22
+    title: "Breska #2"
+    description: "Sie kehren nach Breska zurück, sprechen mit der neuen Gilde und [[Dodo]] wird zum Trollschlächter."
+    url: https://www.youtube.com/watch?v=AhIT8dcxw2o
+  - video_id: DGzfqVigS0g
+    date: 2025-09-23
+    season: "P"
+    team: Team-A
+    id: P-23
+    title: "Auf der Flucht"
+    description: "Sie retten sich mit den Flüchtigen vor Untoten zum Banditenlager."
+    url: https://www.youtube.com/watch?v=DGzfqVigS0g
+  - video_id: bUT7Mc2hjUY
+    date: 2025-09-30
+    season: "P"
+    team: Team-A
+    id: P-24
+    title: "Banditen und Flüchtige"
+    description: "Sie überreden Harl, ein Mitglied der Silberkern Bande, die Flüchtlinge für den Winter aufzunehmen."
+    url: https://www.youtube.com/watch?v=bUT7Mc2hjUY
+  - video_id: qVAF_54S8Vw
+    date: 2025-10-07
+    season: "P"
+    team: Team-A
+    id: P-25
+    title: "Der Koloss und die Kristalle"
+    description: "Kampf gegen einen Koloss."
+    url: https://www.youtube.com/watch?v=qVAF_54S8Vw
+  - video_id: cUtz87UCHu4
+    date: 2025-10-14
+    season: "P"
+    team: Team-A
+    id: P-26
+    title: "Willauch #1"
+    description: "Ankunft in Willauch."
+    url: https://www.youtube.com/watch?v=cUtz87UCHu4
+  - video_id: sxFhbtwoefA
+    date: 2025-10-21
+    season: "P"
+    team: Team-A
+    id: P-27
+    title: "Arene Kampf"
+    description: "Kampf in der Arena."
+    url: https://www.youtube.com/watch?v=sxFhbtwoefA
+  - video_id: V6NzNakqxXM
+    date: 2025-10-28
+    season: "P"
+    team: Team-A
+    id: P-28
+    title: "Lich Dungeon"
+    description: "Sie kämpfen in der letzten Quest gegen einen alten Lich."
+    url: https://www.youtube.com/watch?v=V6NzNakqxXM
+  - video_id: 8Khb-Y8XbKY
+    date: 2025-11-14
+    season: "P"
+    team: Team-A
+    id: P-29
+    title: "Eine eigene Base"
+    description: "Sie finden die kleine Basis im Jungle."
+    url: https://www.youtube.com/watch?v=8Khb-Y8XbKY
+  - video_id: w__ahowb9p0
+    date: 2025-11-18
+    season: "P"
+    team: Team-A
+    id: P-30
+    title: "Taverne #2"
+    description: "Lunara Velora tritt der Gruppe bei."
+    url: https://www.youtube.com/watch?v=w__ahowb9p0
+  - video_id: wd5R4fJfngY
+    date: 2025-11-25
+    season: "P"
+    team: Team-A
+    id: P-31
+    title: "Seelenkälber"
+    description: "Sie erkunden die leere Steppe und werden von Monstrosität attackiert."
+    url: https://www.youtube.com/watch?v=wd5R4fJfngY
+  - video_id: VGw81seFvbo
+    date: 2026-01-06
+    season: "P"
+    team: Team-A
+    id: P-32
+    title: "Stille"
+    description: "Sie erkunden die leere Steppe und werden von Monstrosität attackiert."
+    url: https://www.youtube.com/watch?v=VGw81seFvbo
+  - video_id: w4LB1s9_3rs
+    date: 2026-01-13
+    season: "P"
+    team: Team-A
+    id: P-33
+    title: "Belorus"
+    description: "Belorus greift das Lager mit den Flüchtlingen an."
+    url: https://www.youtube.com/watch?v=w4LB1s9_3rs
+  - video_id: H3ckYdTv4y8
+    date: 2026-01-20
+    season: "P"
+    team: Team-A
+    id: P-34
+    title: "Lunara Velora"
+    description: "Sie überreden Belorus und er lässt von ihnen ab und zieht seine Untoten zurück."
+    url: https://www.youtube.com/watch?v=H3ckYdTv4y8
+  - video_id: 9RzvnnWzV7E
+    date: 2026-01-27
+    season: "P"
+    team: Team-A
+    id: P-35
+    title: "Minen"
+    description: "Sie erkunden die Minen der Zwerge."
+    url: https://www.youtube.com/watch?v=9RzvnnWzV7E
+  - video_id: 3C8SD-cyNPM
+    date: 2026-02-11
+    season: "P"
+    team: Team-A
+    id: P-36
+    title: "Casa de la Cookie"
+    description: "Sie erkunden den Dungeon unter der Casa de la Cookie."
+    url: https://www.youtube.com/watch?v=3C8SD-cyNPM
+  - video_id: Z2jlzpoTWVw
+    date: 2026-02-17
+    season: "P"
+    team: Team-A
+    id: P-37
+    title: "Crowfen"
+    description: "Sie folgen der Einladung von Nox und Slicks zeigt sein wahres Gesicht."
+    url: https://www.youtube.com/watch?v=Z2jlzpoTWVw
+  - video_id: WOFArbwDDIQ
+    date: 2026-02-24
+    season: "P"
+    team: Team-A
+    id: P-38
+    title: "Silbergruft"
+    description: "Sie finden einen alten Dungeon. Die Mine ist noch voll mit abbaubarem Silber."
+    url: https://www.youtube.com/watch?v=WOFArbwDDIQ
+  - video_id: BRUNuNKTeOg
+    date: 2026-03-03
+    season: "P"
+    team: Team-A
+    id: P-39
+    title: "Wissen"
+    description: "Sie sammeln wissen für ihre weiterführenden Missionen."
+    url: https://www.youtube.com/watch?v=BRUNuNKTeOg
+  - video_id: Kr9_AC2XtOw
+    date: 2026-03-10
+    season: "P"
+    team: Team-A
+    id: P-40
+    title: "Breska #3"
+    description: "Das zerstörte Breska wird durchsucht und Voras gibt sich zu erkennen."
+    url: https://www.youtube.com/watch?v=Kr9_AC2XtOw
+  - video_id: HHXxsASLrbQ
+    date: 2026-03-18
+    season: "P"
+    team: Team-A
+    id: P-41
+    title: "Tiefwasser"
+    description: "Sie reisen Richtung norden und kommen an Tiefwasser vorbei."
+    url: https://www.youtube.com/watch?v=HHXxsASLrbQ
+  - video_id: niVxKtdQBn0
+    date: 2026-03-23
+    season: "P"
+    team: willauch
+    id: P-42
+    title: "Banditen"
+    description: "SPEZIAL - Die B-Gruppe jagt im Namen Willauchs die Banditen."
+    url: https://www.youtube.com/watch?v=niVxKtdQBn0
+    tags: [SPEZIAL]
+  - video_id: Yj5BWJfg3Ag
+    date: 2026-03-24
+    season: "P"
+    team: Team-A
+    id: P-43
+    title: "Gemeinsam"
+    description: "Sie besprechen die letzten Schritte."
+    url: https://www.youtube.com/watch?v=Yj5BWJfg3Ag
+  - video_id: Ee-K84wcxLM
+    date: 2026-03-31
+    season: "P"
+    team: Team-A
+    id: P-44
+    title: "Vhar'Zul"
+    description: "Sie befreien die Power von Vhar'Zul und reisen mit ihm ins Abisalis."
+    url: https://www.youtube.com/watch?v=Ee-K84wcxLM
+  - video_id: MAuQPMNY548
+    date: 2026-04-07
+    season: "P"
+    team: Team-A
+    id: P-45
+    title: "Gewölbe der Wunder #1"
+    description: "SPEZIAL - Dungeon Crawl"
+    url: https://www.youtube.com/watch?v=MAuQPMNY548
+    tags: [SPEZIAL]
+  - video_id: vcGkejr8_nI
+    date: 2026-04-09
+    season: "P"
+    team: Team-A
+    id: P-46
+    title: "Verteidigung von Ehrenfels"
+    description: "SPEZIAL - Eine andere Gruppe verteidigt Ehrenfels vor den Dämonen. Neerash erscheint am Ende und will Nox töten, aber Rotunas opfert sich und rettet ihn und die Stadt."
+    url: https://www.youtube.com/watch?v=vcGkejr8_nI
+    tags: [SPEZIAL]
+  - video_id: 1Jyu92P7_Fg
+    date: 2026-04-14
+    season: "P"
+    team: Team-A
+    id: P-47
+    title: "Abisalis #2"
+    description: "Erkundung von Brokadil."
+    url: https://www.youtube.com/watch?v=1Jyu92P7_Fg
+  - video_id: MB4quhDWsQE
+    date: 2026-05-06
+    season: "P"
+    team: Team-A
+    id: P-48
+    title: "Abisalis #3"
+    description: "CROSSOVER - Erkundung der alten Villa in Jalan."
+    url: https://www.youtube.com/watch?v=MB4quhDWsQE
+    tags: [CROSSOVER]
+  - video_id: 4afPD9Q_5AY
+    date: 2026-05-13
+    season: "P"
+    team: Team-A
+    id: P-49
+    title: "Abisalis #4"
+    description: "CROSSOVER - Kampf gegen den gefallenen Seraph."
+    url: https://www.youtube.com/watch?v=4afPD9Q_5AY
+    tags: [CROSSOVER]
+  - video_id: xEcGJeaNixI
+    date: 2026-05-19
+    season: "P"
+    team: Team-A
+    id: P-50
+    title: "Abisalis #5"
+    description: "Reise zur Narbe."
+    url: https://www.youtube.com/watch?v=xEcGJeaNixI
+  - video_id: IYYmgpqsp7E
+    date: 2026-05-27
+    season: "P"
+    team: Team-A
+    id: P-51
+    title: "Nebelwacht"
+    description: "SPEZIAL - Erkundung Nebelwacht."
+    url: https://www.youtube.com/watch?v=IYYmgpqsp7E
+    tags: [SPEZIAL]
+  - video_id: EGNh8O7pE5Q
+    date: 2026-06-04
+    season: "P"
+    team: Team-B
+    id: P-52
+    title: "Weit Weg"
+    description: "Eine neue Gruppe RA, neue Abenteuer am Ende der Karte."
+    url: https://www.youtube.com/watch?v=EGNh8O7pE5Q
+  - video_id: _3tLSiT1tck
+    date: 2026-06-10
+    season: "P"
+    team: Team-A
+    id: P-53
+    title: "Abisalis #6"
+    description: "Im Dunkeln"
+    url: https://www.youtube.com/watch?v=_3tLSiT1tck
+  - video_id: qe0ck8hvYpk
+    date: 2026-06-16
+    season: "P"
+    team: Team-A
+    id: P-54
+    title: "Abisalis #7"
+    description: "Im Dunkeln"
+    url: https://www.youtube.com/watch?v=qe0ck8hvYpk
+  - video_id: H-eHSlfxUAg
+    date: 2026-07-10
+    season: "1"
+    team: Team-B
+    id: S1-01-B
+    title: "Funken"
+    description: "Talron trifft Bruma Stormrak; Hauptmann Aaron schickt sie in die verlassene Mine."
+    url: https://www.youtube.com/watch?v=H-eHSlfxUAg
+  - video_id: KNV4oNGJ0tw
+    date: 2026-07-21
+    season: "P"
+    team: Team-A
+    id: P-55
+    title: "Abisalis Finale"
+    description: "Die Rote Nacht und Liam"
+    url: https://www.youtube.com/watch?v=KNV4oNGJ0tw
+  - video_id: qRj2t3wQHfs
+    date: 2026-08-04
+    season: "1"
+    team: Team-A
+    id: S1-02-A
+    title: "Vitius"
+    description: "Der Seraph erzählt seine Version der Schlacht und schickt sie nach Valuna."
+    url: https://www.youtube.com/watch?v=qRj2t3wQHfs
+  - video_id: umGyKLkefJI
+    date: 2026-07-29
+    season: "1"
+    team: Team-A
+    id: S1-01-A
+    title: "Rückkehr nach Ehrenfels"
+    description: "Rotunas ist gefallen, Nox verschwunden, und Gunther schließt sich der Gruppe an."
+    url: https://www.youtube.com/watch?v=umGyKLkefJI
+  - video_id: Gb-TEbCFF0M
+    date: 2026-07-23
+    season: "1"
+    team: Team-B
+    id: S1-02-B
+    title: "Die Gnoll-Mine"
+    description: "Sie säubern die Mine, Sange verwandelt sich erstmals zum Werwolf."
+    url: https://www.youtube.com/watch?v=Gb-TEbCFF0M
+  - video_id: 0HyPHao8s_k
+    date: 2026-08-06
+    season: "1"
+    team: Team-B
+    id: S1-03-B
+    title: "Die Evakuierung"
+    description: "Der Halblingshof wird aufgegeben und Xenia zur Flucht überredet."
+    url: https://www.youtube.com/watch?v=0HyPHao8s_k

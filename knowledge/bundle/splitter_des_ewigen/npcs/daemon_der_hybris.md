@@ -1,15 +1,16 @@
 ---
 type: NPC
 title: Dämon der Hybris
-description: Ein riesiges, spinnenartiges Wesen, das unsichtbare Fäden spinnt, um
-  die Helden und Ulvanara zu kontrollieren. Es versucht, Lindo, Dodo und…
+description: Der Dämon der Hybris ist eine große, schwebende Kreatur, die Fäden spinnt
+  und die Kontrolle über Ulnavar ausübt. Er greift die Gruppe mit m…
 tags:
 - npcs
 timestamp: '2026-07-21T00:00:00Z'
 id: NPC_DAEMON_DER_HYBRIS
 ---
 
-Der **Dämon der Hybris** war ein riesiges, spinnenartiges Wesen, das unsichtbare Fäden spann, um die Helden (Lindo, [Dodo](/characters/dodo.md), Lunara) und Ulvanara zu kontrollieren. Es scheiterte daran, die Willenskraft der Helden zu brechen. Lindo teleportierte sich mithilfe eines Rings hinter den Dämon und setzte eine mächtige Schriftrolle ein, die den Dämon in einem gleißenden Lichtblitz vollständig vernichtete und in Funken auflöste. Mit seinem Tod erlosch die Kontrolle über Ulvanara.
+Der Dämon der Hybris ist eine große, schwebende Kreatur, die Fäden spinnt und die Kontrolle über Ulnavar ausübt. Er greift die Gruppe mit mentalen Attacken an und webt ein Netz aus Fäden, das alle drei gefangen nehmen soll. [Lindo Laut](/characters/lindo_laut.md) teleportiert sich hinter ihn und setzt die [Schriftrolle von Nerash](/items/schriftrolle_von_nerash.md) ein, die den Dämon in gleißendem Licht explodieren lässt. Seine Vernichtung befreit Ulnavar von der Kontrolle.
 
 # Belege
-1. Session 2026-07-21 @ 01:07:10 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
+
+[P-55] Session 2026-07-21 @ 01:29:40 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)

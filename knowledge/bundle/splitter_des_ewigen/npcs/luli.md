@@ -1,15 +1,16 @@
 ---
 type: NPC
 title: Luli
-description: Ein kleines, pilzartiges Wesen, das in einer Zelle im Seelennetz-Bereich
-  gefangen gehalten wird. Sie berichtet, dass die grüne Dame (Hexe)…
+description: Luli ist ein kleines, kindlich wirkendes Pilzwesen, das von der „grünen
+  Dame“ (der Hexe) in einem Käfig in den Seelennetzen gefangen gehalt…
 tags:
 - npcs
 timestamp: '2025-06-17T00:00:00Z'
 id: NPC_LULI
 ---
 
-Luli war ein kleines, pilzartiges Wesen, das von [Cookie](/characters/cookie.md) im Seelennetz-Bereich aus einer Zelle befreit wurde. Sie berichtete, dass die grüne Dame (Hexe) ihre Familie in einen großen Kessel geworfen hatte. Aus Angst klammerte sie sich an Cookie, weigerte sich jedoch, den Pilzraum zu betreten. Kurz darauf riss sie sich los und wurde von einer großen Kreatur gefressen, was Cookie emotional schwer traf.
+Luli ist ein kleines, kindlich wirkendes Pilzwesen, das von der „grünen Dame“ (der Hexe) in einem Käfig in den Seelennetzen gefangen gehalten wurde. Sie berichtete, dass ihre Familie in einen großen Kessel geworfen wurde. [Cookie](/characters/cookie.md) befreite sie mit ihrer Kompassnadel und Luli klammerte sich sofort an sie. Aus Angst ließ sie sich jedoch nie weit von Cookie entfernen; als die Gruppe das Labor betrat, blieb sie beim Frettchen zurück. Später riss sie sich los und rannte in Richtung Labor, wo sie kurz darauf von einem großen, unheimlichen Wesen gefressen wurde. Ihr Tod traf die Gruppe, besonders Cookie, schwer. Ihr Verhalten zeigte große Verlorenheit und kindliches Vertrauen.
 
 # Belege
-1. Session 2025-06-17 @ 01:34:16 (https://www.youtube.com/watch?v=tl76B4V0io8)
+
+[P-12] Session 2025-06-17 @ 01:36:10 (https://www.youtube.com/watch?v=tl76B4V0io8)

@@ -1,121 +1,106 @@
 ---
 type: Deity
 title: Vorgultar, Herr der Tausend Seelen
-description: Ein alter Gott, der im großen Krieg gefehlt hat und in Abyssalis gefangen
-  ist. Er wird von seinem Anhänger Tyrael als nicht böse beschriebe…
+description: Vorgultar, auch bekannt als der „Herr der Tausend Seelen“, ist einer
+  der vier alten Götter von Abyssalis. Er wurde während des großen Krieg…
 tags:
 - deities
 timestamp: '2026-07-21T00:00:00Z'
 id: DEITY_VORGUL_TAR
+subtype: Alter Gott
 aliases:
-- Vorgul’tar
-- Volgultar
-- Volgulta
 - Vorgul'tar
 - Vorgultar
+- Vorgulta
+status: disputed
 ---
 
 ## Überblick
 
-Vorgultar (auch Vorgul’tar, Volgultar, Volgulta, Vorgul'tar) ist einer der vier alten Götter, die im großen Krieg besiegt und in der Unterwelt Abyssalis gefangen wurden. Er trägt den Titel "Herr der Tausend Seelen" und wird als der "Sammler der Seelen" beschrieben. Seine Macht speist sich aus der Essenz der Seelen — laut dem von Tyrael verfassten Buch *Vorgulta, Herr der Tausend Seelen* ist er ein Gott, der den Seelen den Übergang in die Circuit Below erleichtert, und nicht als böse zu betrachten. [1]
-
-Von den vier in Abyssalis eingesperrten Göttern ist Vorgultar als einziger noch nicht vollständig dem Wahnsinn verfallen. Die anderen drei sind Akastrale, der dunkle Hunger; Südrawell, die Fleischweberin; und Ohoriaks, Mutter der Schleier. [1, 3.1]
+Vorgultar, auch bekannt als der „Herr der Tausend Seelen“, ist einer der vier alten Götter von Abyssalis. Er wurde während des großen Krieges in Abyssalis eingesperrt, hat dort jedoch im Gegensatz zu den anderen alten Göttern seinen Verstand nicht verloren [P-39][P-44]. Seine Macht schöpft er aus Seelen: Er sammelt die Essenz Verstorbener, verhilft ihnen zum Übergang in die Unterwelt und nutzt die daraus gewonnene Energie [P-39][P-44]. In der frühen Überlieferung, insbesondere im Buch Tyraels, wird er nicht als bösartig, sondern als wohlwollender Psychopomp beschrieben, der den Seelen den Weg in die „Circuit Below“ ebnete [P-39]. In der Gegenwart der Kampagne hat er sich in der Narbe verschanzt und stellt eine korrumpierende, territoriale Präsenz dar, die aktiv gegen Eindringlinge vorgeht [P-50][P-53][P-54].
 
 ## Rolle in der Kampagne
 
-Vorgultar ist der zentrale Antagonist des Abyssalis-Handlungsbogens der Kampagne. Er hält die Essenz von Liam Velora, dem verstorbenen Bruder der Spielercharakterin Lunara Velora, in seiner Gewalt. Dies wurde der Gruppe durch Tyrael offenbart: "Vorgul'tar hat sich deinen... [Bruder genommen]", wobei Kinderseelen für Vorgultar von besonderem Interesse sind, da sie "nicht ganz den Gesetzen der Natur hier zu entsprechen" scheinen. [3.1]
+Vorgultar ist das zentrale Ziel der Mission, die die Gruppe um Lunara nach Abyssalis führt. Lunara hat ein persönliches Motiv: Vorgultar hält die Seele ihres Bruders gefangen, vermutlich weil Kinderseelen in Abyssalis besonderen Gesetzen unterliegen und nicht wie andere Seelen von den Einflüssen der Sphäre zerstört oder absorbiert werden [P-44][P-49][P-55].
 
-Die Gruppe um Lunara, Dodo, Lindo Laut und Esterossa trifft in den Erntefeldern von Abyssalis auf den Geist Huludans, der ihnen ein Schwert übergibt, mit dem Vorgultar verletzt werden kann. Huludans Geist erklärt, dass sie Vorgultar vernichten müssen, um Liam zu befreien und den Krieg zu beeinflussen. [4]
+Zu Beginn der Kampagne versucht die Gruppe, sich als Anhänger Vorgultars auszugeben, um in der Dämonengesellschaft von Abyssalis bestehen zu können [P-44][P-47]. Dieser Täuschungsversuch scheitert später, als ihnen das nötige Wissen fehlt, um echte Diener zu überzeugen [P-50].
 
-Vorgultars Reich wird als "die Narbe" bezeichnet, ein in den Erntefeldern lokalisiertes Gebiet. Seine Anhängerschaft ist vielfältig und umfasst Stone Clangs, Goblinkultisten, Seraphen und ein riesiges Rhinozeros-Wesen. In der Narbe befindet sich ein Tor, das nur für seine Diener passierbar ist. [5, 6]
-
-Vorgultars Fraktion befand sich im Konflikt mit Ohoriaks um die Kontrolle über Boragdil, eine Stadt in den Erntefeldern. Ohoriaks hat diese Stadt jedoch schließlich für sich beansprucht: "Dann war Vorgul Tar zu spät. Uroreax hat diese Stadt für sich beansprucht." [3, 3.2]
+Die Figur Holodarn (auch als „der Schinder“ bekannt) stattet die Gruppe mit einem besonderen Schwert aus, das spezifisch dazu geeignet ist, Vorgultar zu verletzen [P-49]. Holodarn selbst zieht in den Kampf gegen Vorgultars Anhänger, die draußen gegen ihn und seine Verbündeten kämpfen [P-49]. In der finalen Auseinandersetzung wird Vorgultar von Esterossa aus seiner Höhle getrieben und schließlich endgültig niedergeschmettert, woraufhin er in die Tiefe stürzt [P-55].
 
 ## Wichtige Merkmale
 
-### Auftreten
+### Domäne und Machtquelle
 
-Vorgultar zeigt sich den Helden in unterschiedlichen Gestalten:
+Vorgultars Macht basiert auf der Essenz von Seelen. Er sammelt sie, hilft ihnen beim Übergang und nutzt ihre Energie. Das Buch Tyraels enthält umfangreiche Anleitungen zur Seelenmagie, darunter die Verwendung von Seelensteinen. Es beschreibt die Praxis wie ein Rezept in sieben Schritten, wobei der letzte Schritt absichtlich ausgelassen wurde, damit das vollständige Wissen beim Schreiber verbleibt [P-39].
 
-- **Physische Form in der Narbe**: Ein vielköpfiges, schreiendes Wesen, das am ehesten der False Hydra aus den Tales-Taktikspielen entspricht. Es hat viele Mäuler, aus denen jedoch keine eigene Stimme kommt — stattdessen schreien die in ihm gefangenen Seelen. [8.1]
+### Gestalt und Erscheinung
 
-- **Celestische Gestalt**: Vorgultar kann eine "celestische Gestalt" annehmen, in der er dem Spielercharakter Esterossa zum Verwechseln ähnlich sieht. Er erscheint in dieser Form, als der Splitter im Tempel aktiviert wird, und steht plötzlich hinter der Gruppe. [7]
+Vorgultars physische Manifestation wird als eine große, Hydra-ähnliche Kreatur beschrieben – konkret orientiert an der Darstellung einer „False Hydra“, jedoch mit abweichenden Eigenschaften. Aus seinen Mündern kommt keine eigene Stimme, sondern die Schreie der in ihm gefangenen Seelen. Dieser kollektive Seelenschrei ist so überwältigend, dass er Wesen in der Nähe zu Boden zwingt und unerträgliche Schmerzen verursacht [P-55].
+
+Zusätzlich kann Vorgultar eine celestische Gestalt annehmen. Am Ende von Session 7 erscheint er im Tempel in einer Gestalt, die Esterossa bis ins Detail gleicht, und versucht vom Splitter Besitz zu ergreifen [P-54].
+
+### Territoriales Verhalten und Verteidigung
+
+In der Narbe hat Vorgultar eine Festung aus purer Magie errichtet, deren Energie alle Zauber in ihrem Einflussbereich verstärkt [P-53]. Seine Anwesenheit äußert sich durch machtvolle Befehlstöne und ein tiefes Brüllen, das über das Land hallt [P-53]. Seine treuesten Diener – darunter die Clangs am Portal, die Goblins auf dem Berg und korrumpierte Seraphim – bewachen die Zugänge. Sein Einflussbereich ist so stark, dass seine Anhänger sofort erkennen, wer nicht zu ihnen gehört [P-50].
 
 ### Fähigkeiten
 
-- **Seelenschrei**: Vorgultars Angriff ist ein überwältigender Schrei aus "so vielen Schreien, so viel auf einmal", der Gegner zu Boden zwingt und ihre Gedanken überflutet. Nur Lunara gelingt es, diesem Effekt zu widerstehen. [8.1]
+- **Seelenmagie**: Nutzung der Essenz gefangener Seelen als Energiequelle [P-39][P-44]
+- **Seelenschrei**: Ein Angriff, bei dem alle an ihn gebundenen Seelen gleichzeitig aufschreien und Gegner mental überwältigen [P-55]
+- **Telepathische Einflussnahme**: Versucht mehrfach, mental auf die Gruppe einzuwirken [P-55]
+- **Gestaltwandel**: Kann die Form anderer Wesen annehmen, wie in der celestischen Erscheinung als Esterossa-Doppelgänger [P-54]
+- **Dienerkontrolle**: Kontrolliert Wesen wie Tatrick durch magische Symbole und ruft seinen treuesten Diener Nazirathel zu seinem Schutz zurück [P-54]
 
-- **Befehlskette**: Seine Stimme erklingt "wie ein Befehl über dieses Land" und befiehlt seinen Schergen telepathisch. Lunara kann diese Stimme nicht sprachlich verstehen, spürt aber instinktiv, dass es Vorgultar ist, der einen Befehl erteilt. [6]
+### Symbol
 
-- **Seelenbindung**: Vorgultar hält Seelen an sich gebunden oder befehligt sie. Wenn er aufschreit, tun es alle Seelen, die an ihn gebunden sind, im selben Augenblick. Teile von ihm können sich ablösen. [8.1]
-
-- **Splitter-Nutzung**: Vorgultar versuchte in der Vergangenheit, die Macht des Splitters zu nutzen, scheiterte jedoch. Bei dem Versuch tötete er einen seiner Vertrauten — vermutlich einen Diener namens Tatrick. Der Splitter versucht daraufhin aktiv, von Personen in seiner Umgebung Besitz zu ergreifen, beginnend mit Esterossa. [7]
-
-### Wesenszüge
-
-- **Intelligent und mächtig**: Er wird als klug genug beschrieben, den Wert von Kinderseelen erkannt zu haben. [2, 3.1]
-- **Ängstlich und nervös**: Er spürt Bedrohungen für sein Reich und zieht in solchen Momenten seine Truppen zusammen, ruft sogar seinen Diener Nazirathel zurück. [7]
-- **Nicht vollständig wahnsinnig**: Im Gegensatz zu den anderen gefangenen Göttern hat Vorgultar seinen Verstand noch teilweise bewahrt. Tyrael berichtet, er sei fähig, Seelen von Nord- nach Süd-Abyssalis zu bringen, um seinen Verstand zu bewahren. [1]
+Das Symbol Vorgultars wird als ein Kreis aus Schädeln mit einer brennenden Seele beschrieben [P-50]. Auf Ultanars Brust prangt ein Zeichen, das Totenschädel mit einer Flamme zeigt und Vorgultar zugeordnet wird [P-55]. In einer früheren Session wird abweichend davon ein Kreuz als sein Symbol erwähnt, das über einer Brücke erscheint [P-53].
 
 ## Beziehungen und Verbindungen
 
-- **Vasul (Basul)**: Vorgultar hasst den Gott Vasul. Der Diener Nazirathel stellt fest: "Wie zerstöre ich diesen Kristall? Nicht, wie man ihn zerstört. Basul hat sich diese Frage niemals gestellt." [7]
-
-- **Ohoriaks**: Konkurrierende Göttin in Abyssalis; Ohoriaks hat Vorgultars Fraktion die Stadt Boragdil abgenommen. [3, 3.2]
-
-- **Geist Huludans**: Huludan ist ein Gegenspieler Vorgultars und übergibt der Gruppe ein Schwert, das den Gott verletzen kann. Das Schwert erzeugt einen "Basston in der Brust". [4]
-
-- **Seraphen**: Stehen in Vorgultars Diensten und bilden einen Teil seiner Armee in der Narbe. Sie können seine Kräfte binden oder absorbieren, wie beim finalen Kampf, als "die vereinte Kraft Huludans und der Seraphen bindet seine Kräfte vorübergehend". [6, 7, 8]
-
-- **Das riesige Rhinozeros**: Ein kolossales Wesen in Vorgultars Reich. Vorgultar kommuniziert direkt mit ihm, und es dient als Wächter. [6]
-
-- **Nazirathel**: Ein Diener Vorgultars, der im Tempel stationiert ist und zurückgerufen wird, als der Gott Gefahr wittert. Er kennt Vorgultars gescheiterten Versuch mit dem Splitter. [7]
-
-- **Tatrick (vermutlich)**: Ein Vertrauter Vorgultars, der bei dessen gescheitertem Splitter-Experiment getötet wurde. [7]
-
-- **Tyrael**: Ein Anhänger, der ein Buch über Vorgultar verfasst hat: *Vorgulta, Herr der Tausend Seelen*. Er beschreibt den Gott wohlwollend. [1]
-
-- **Die Gruppe (Lunara, Dodo, Lindo Laut, Esterossa)**: Vorgultar wird zum zentralen Ziel ihrer Mission; sie geben sich mehrfach als seine Anhänger aus, um in feindlichem Gebiet zu bestehen. [2, 3, 5]
-
-- **Liam Velora**: Der Bruder Lunaras, dessen Seele in Vorgultars Gewalt ist. [3.1, 4]
-
-- **Der Richter**: Ein Verbündeter der Gruppe, der in der Narbe an ihrer Seite kämpft und später im Kampf gegen die Schergen verbleibt. [4]
+- **Tyrael**: Der Schreiber eines Buches, das Vorgultar wohlwollend beschreibt und Anleitungen zur Seelenmagie enthält. Tyrael hat das Buch wahrscheinlich über einen sehr langen Zeitraum geführt und das entscheidende letzte Rezeptelement absichtlich ausgelassen [P-39].
+- **Lunara Velora**: Vorgultar hält die Seele ihres Bruders gefangen. Sie gibt sich zeitweise als seine Anhängerin aus und ist die zentrale treibende Kraft hinter der Mission gegen ihn [P-44][P-55].
+- **Holodarn („Der Schinder“)**: Ein Verbündeter der Gruppe, der aktiv gegen Vorgultars Anhänger kämpft und das Schwert zur Verfügung stellt, mit dem Vorgultar verletzt werden kann [P-49].
+- **Nazirathel**: Vorgultars treuester Diener, den er zu seinem Schutz zurückruft [P-54].
+- **Die anderen alten Götter**: Vorgultar ist einer von vier alten Göttern in Abyssalis. Die anderen sind Akastrale (der verrückte Hunger), Sitravil (die Fleischweberin) und Ohoriaks (Mutter der Schleier). Anders als diese hat er seinen Verstand behalten [P-39][P-44][P-54].
+- **Der Schinder**: Kämpft Seite an Seite mit den Leuten der Gruppe gegen die Vorgultar-Anhänger [P-49].
 
 ## Chronologie
 
-1.  **Session am 03.03.2026**: Lindo Laut findet in einem staubigen Buchladen im Abyssalis ein Buch mit dem Titel *Vorgulta, Herr der Tausend Seelen*, verfasst von Tyrael. Es beschreibt Vorgultar als einen Seelen leitenden Gott und erwähnt, dass er als einziger der vier gefangenen Götter noch nicht völlig wahnsinnig ist. [1]
+**Vor der Kampagne**: Vorgultar wird im großen Krieg in Abyssalis eingesperrt. Er bleibt dort als einer von vier alten Göttern, bewahrt aber seinen Verstand [P-39].
 
-2.  **Session am 31.03.2026**: Tyrael offenbart Lunara, dass Vorgul’tar die Seele ihres Bruders Liam in Besitz genommen hat, da Kinderseelen besondere Eigenschaften haben. Er erklärt die Machtverhältnisse in Abyssalis mit den vier Göttern, darunter Vorgutar, Herr der Tausend Seelen, "jener, der die Macht durch das erhält, was die Essenz des Lebens ist". Die Gruppe tarnt sich später vor den Toren Boragdils als Anhänger Vorgul’tars, wird aber abgewiesen, weil die Stadt nun von Ohoriaks beansprucht wird. [2, 3.1]
+**Session 1 (2026-03-03)**: Lindo Laut und Lunara entdecken Tyraels Buch, das Vorgultar entgegen ihrer Erwartung wohlwollend als Seelenführer beschreibt. Das Buch enthält Anleitungen zur Seelenmagie mit einer absichtlich ausgelassenen letzten Zutat [P-39].
 
-3.  **Session am 14.04.2026**: In Boragdil gibt sich Lunara auf Lindo Lauts Anregung erneut als Anhängerin Vorgul Tars aus. Die Alchemistin von Ohoriaks erklärt, dass Ohoriaks die Stadt übernommen hat, da Vorgul Tar "zu spät" gekommen sei. Die Festung war zuvor durch einen mächtigen Zauber geschützt, der zerstört wurde. [3]
+**Session 2 (2026-03-31)**: Vorgultar wird als einer der vier alten Götter von Abyssalis identifiziert. Es wird offenbart, dass er Lunaras Bruder als Seele besitzt. Die Gruppe gibt sich erstmals als seine Anhänger aus [P-44].
 
-4.  **Session am 13.05.2026**: Der Geist Huludans übergibt der Gruppe ein spezielles Schwert, mit dem sie Volgulta verletzen können. Er lokalisiert den Gott in den Narben, einem Gebiet in den Erntefeldern, und erklärt, dass sie dort auch Liam finden werden. Die Gruppe beschließt, Vorgultar zu töten. [4]
+**Session 3 (2026-04-14)**: Lunara gibt gegenüber einer Alchemistin in der Stadt vor, Anhängerin Vorgultars zu sein, um Informationen zu sammeln. Die Alchemistin erklärt, dass Ohoriaks die Stadt bereits beansprucht hat – „Vorgul Tar war zu spät“ [P-47].
 
-5.  **Session am 19.05.2026**: Die Gruppe erreicht den Eingang zur Narbe, bewacht von drei Stone Clangs und einem steinernen Tor mit Kristallen. Das Tor ist nur für Diener Vorgultars passierbar. Die Clangs wirken entgegen der üblichen Feindseligkeit der Wesen in Abyssalis "friedlich". Die Gruppe tarnt sich erneut als Anhänger und kann zunächst passieren, wird aber später durchschaut. [5]
+**Session 4 (2026-05-13)**: Vorgultar wird endgültig als das Hauptziel der Mission bestätigt. Holodarn übergibt das Schwert, mit dem er verletzt werden kann, und verweist auf Lunaras Bruder als Grund, Vorgultar zu vernichten [P-49].
 
-6.  **Session am 10.06.2026**: Innerhalb der Narbe sehen die Helden Seraphen, die versuchen, Energie aus einem Kristall zu absorbieren, der "unnachgiebig" bleibt. Vorgultars Stimme ertönt als Befehl über das Land; Lunara spürt seine Präsenz, versteht aber die Worte nicht. Das riesige Rhinozeros nimmt die Gruppe fast wahr, scheitert aber an einem ungünstigen Wurf (eine "Eins-Chat"). Vorgultar schickt nach einem Alarm weitere Schergen, doch die Kraft Huludans und der Seraphen bindet ihn vorübergehend. [6]
+**Session 5 (2026-05-19)**: Die Gruppe erreicht die Narbe. Die Clangs am Portal, Goblins auf dem Berg und korrumpierte Seraphim werden als Vorgultars Diener identifiziert. Die Gruppe erwägt erneut, sich als Anhänger auszugeben, scheitert aber mangels Wissen über sein Symbol. Sein Symbol wird als Kreis aus Schädeln mit brennender Seele beschrieben [P-50].
 
-7.  **Session am 16.06.2026**: Vorgultar ist in seinem Reich "ängstlich und nervös" und ruft Nazirathel zu sich zurück. Nazirathel berichtet, dass Vorgultar einst den Splitter nutzen wollte, dabei scheiterte und einen Vertrauten tötete (vermutlich Tatrick). Der Splitter versucht nun, von Esterossa Besitz zu ergreifen. In diesem Moment erscheint Vorgultar selbst in celestischer Gestalt hinter der Gruppe — eine düstere Figur, die exakt wie Esterossa aussieht. [7]
+**Session 6 (2026-06-10)**: Vorgultar macht seine Präsenz durch laute Befehlstöne spürbar. Seine Seraphen und magische Diener verteidigen den Eingang. Über einer Brücke erscheint ein Kreuz als sein Symbol. Der Einfluss seiner Festung verstärkt alle Magie in der Umgebung [P-53].
 
-8.  **Session am 21.07.2026**: Vorgultar greift die Helden direkt an, indem er als vielköpfiges, schreiendes Wesen erscheint. Sein Seelenschrei überwältigt Dodo und Pedro, während Lunara widersteht. Sie sieht, wie "Esterossa" vor ihr steht, aber fremd wirkt — und wie das wahre Wesen Vorgultars aufschreit und sich Teile von ihm ablösen. Vorgultar zieht sich zurück, "schreiend diesen Ort verlassend". Esterossa sagt zu Lunara: "Das ist die einzige Möglichkeit, um deinen Bruder zu retten." Die Zerstörung einer Kontrollstatue und eines Dämons der Hybris schwächt Vorgultars Macht weiter; Ulvanaras Schild bricht, und die Helden können entkommen. Sein genaues Schicksal bleibt ungewiss. [8, 8.1]
+**Session 7 (2026-06-16)**: Vorgultar wird als „Herr der Schleier“ bezeichnet. Er hat Angst vor den Eindringlingen und ruft Nazirathel zurück. Er kontrolliert Tatrick und andere Diener mit Symbolen. Als Esterossa den Splitter berührt, erscheint Vorgultar in einer celestischen Gestalt, die Esterossa gleicht. Er versucht, vom Splitter Besitz zu ergreifen [P-54].
+
+**Session 8 (2026-07-21)**: Der finale Kampf. Vorgultar manifestiert sich als Hydra-ähnliche Kreatur, deren Schreie aus den Stimmen gefangener Seelen bestehen. Lunara widersteht dem mentalen Angriff und beobachtet, wie Esterossa – oder eine fremd wirkende Version von ihm – Vorgultar abwehrt. Vorgultar zieht sich schreiend zurück, wird später von Esterossa endgültig niedergeschmettert und stürzt in die Tiefe. Sein Zeichen, Totenschädel mit einer Flamme, zeigt sich auf Ultanars Brust [P-55].
 
 ## Offene Fragen
 
-- Vorgultars endgültiges Schicksal nach dem Kampf in der Narbe ist ungewiss. Er zog sich verletzt zurück, wurde aber nicht vernichtet. [8]
-- Es ist nicht vollständig geklärt, warum Vorgultars Versuch, den Splitter zu nutzen, scheiterte und was genau dabei mit Tatrick geschah. [7]
-- Die genaue Natur von Vorgultars "cleverer" Nutzung der Kinderseelen und wie Liam Velora dabei involviert ist, wurde noch nicht im Detail aufgelöst. [3.1]
-- Es bleibt unklar, ob Vorgultar wirklich besiegt oder nur vorübergehend zurückgedrängt wurde. [8]
+- Der endgültige Status Vorgultars nach dem Sturz in die Tiefe ist unklar – es wird nicht explizit bestätigt, ob er zerstört oder nur besiegt wurde [P-55].
+- Die letzte Zutat für die Seelenmagie aus Tyraels Buch bleibt unbekannt und müsste in einem „Projekt mit Timer“ selbst erforscht werden [P-39].
+- Die genaue Natur der celestischen Gestalt, die Esterossa gleicht, und die Frage, ob Esterossa in diesem Moment unter Vorgultars Kontrolle stand oder aus eigenem Antrieb handelte, bleibt ambivalent. Lunara nimmt Esterossa in diesem Moment als „fremd“ wahr, aber es ist Esterossa, der Vorgultar abwehrt und Lunara erklärt, dies sei die einzige Möglichkeit, ihren Bruder zu retten [P-55].
 
 ## Belege
 
-[1] Session 2026-03-03 @ 01:21:46 (Video, YT: BRUNuNKTeOg)
-[2] Session 2026-03-31 @ 01:15:35 (Video, YT: Ee-K84wcxLM)
-[3] Session 2026-04-14 @ 01:25:38 (Video, YT: 1Jyu92P7_Fg)
-[3.1] Session 2026-03-31 @ 01:15:35–01:16:27 (Transkript-Ausschnitt)
-[3.2] Session 2026-04-14 @ 01:25:38–01:26:00 (Transkript-Ausschnitt)
-[4] Session 2026-05-13 @ 01:36:29 (Video, YT: 4afPD9Q_5AY)
-[5] Session 2026-05-19 @ 00:06:54 (Video, YT: xEcGJeaNixI)
-[6] Session 2026-06-10 @ 00:38:07 (Video, YT: _3tLSiT1tck)
-[7] Session 2026-06-16 @ 01:59:26 (Video, YT: qe0ck8hvYpk)
-[8] Session 2026-07-21 @ 00:14:44 (Video, YT: KNV4oNGJ0tw)
-[8.1] Session 2026-07-21 @ 00:14:44–00:16:07 (Transkript-Ausschnitt)
+[P-39] Session 2026-03-03, https://www.youtube.com/watch?v=BRUNuNKTeOg, ab 01:29:33
+[P-44] Session 2026-03-31, https://www.youtube.com/watch?v=Ee-K84wcxLM, ab 01:15:35
+[P-47] Session 2026-04-14, https://www.youtube.com/watch?v=1Jyu92P7_Fg, ab 01:25:21
+[P-49] Session 2026-05-13, https://www.youtube.com/watch?v=4afPD9Q_5AY, ab 01:34:32
+[P-50] Session 2026-05-19, https://www.youtube.com/watch?v=xEcGJeaNixI, ab 00:23:09
+[P-53] Session 2026-06-10, https://www.youtube.com/watch?v=_3tLSiT1tck, ab 00:36:28
+[P-54] Session 2026-06-16, https://www.youtube.com/watch?v=qe0ck8hvYpk, ab 01:59:07
+[P-55] Session 2026-07-21, https://www.youtube.com/watch?v=KNV4oNGJ0tw, ab 00:14:10
+
+## Offene Konflikte
+
+- Das Symbol Vorgultars wird in [P-50] und [P-55] als Kreis aus Schädeln mit einer brennenden Seele (bzw. Totenschädel mit einer Flamme) beschrieben. In [P-53] erscheint dagegen ein Kreuz als sein Symbol über einer Brücke. Es bleibt unklar, ob es sich um zwei verschiedene, kontextabhängige Symbole handelt oder hier ein Widerspruch vorliegt.

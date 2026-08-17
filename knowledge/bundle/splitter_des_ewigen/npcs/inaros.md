@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Inaros
-description: Inaros ist ein Strixwolf (eine greifähnliche Kreatur mit Wolfskopf),
-  den die Gruppe vor Willauch gerettet hat. Er lebt nun zusammen mit ein…
+description: Ein männlicher Strixwolf, der in Ehrenfels lebt. Er wurde von Dodo und
+  Lunara vor dem Jäger Willauch gerettet und versteckt sich seither zu…
 tags:
 - npcs
 timestamp: '2026-04-09T00:00:00Z'
@@ -11,17 +11,25 @@ id: NPC_INAROS
 
 # Inaros
 
-**Inaros** ist ein Strixwolf – eine greifähnliche Kreatur mit Wolfskopf – der von der Gruppe vor Willauch gerettet wurde und seither in einem Versteck in [[Ehrenfels]] lebt. [Dodo](/characters/dodo.md) hat die Pflege des Tiers übernommen. Später greift Inaros entscheidend in eine Notsituation ein, als er mehrere Helden auf seinem Rücken in Sicherheit trägt.
+Ein männlicher Strixwolf, der in Ehrenfels lebt. Er wurde von [Dodo](/characters/dodo.md) und [Lunara](/characters/lunara_velora.md) vor dem Jäger [Willauch](/locations/willauch.md) gerettet und versteckt sich seither zusammen mit einem Strixwolf-Ei in der Siedlung. Später hilft er der Gruppe bei der Flucht vor [Nerash](/deities/nerash.md), indem er [Nox](/npcs/nox.md) packt und die anderen mitnimmt, während [Rotunas](/characters/rotunas.md) den Rückzug deckt.
 
-## Rettung und Leben in Ehrenfels
+## Rettung und Unterschlupf
 
-Inaros wurde von der Gruppe vor einer Bedrohung durch Willauch befreit. Seitdem versteckt er sich gemeinsam mit einem ungeschlüpften Ei in Ehrenfels. Dodo kümmert sich um den Strixwolf und versorgt ihn (Beleg 1).
+Inaros wurde von Dodo und Lunara in einer lebensbedrohlichen Lage aufgespürt und vor Willauch bewahrt. Seitdem lebt er mit einem Strixwolf-Ei in einem geheimen Versteck in Ehrenfels. Dodo fühlt sich für die Wesen verantwortlich und will ihnen ein sicheres Zuhause schaffen, das fern von Willauchs Jagt liegt. [P-43]
 
-## Eingreifen in der Krise
+## Fluchthilfe für die Gruppe
 
-In einer späteren gefährlichen Lage stürzt der Strixwolf aus der Luft herab und signalisiert den Helden, auf seinen Rücken zu springen (Beleg 2). Er trägt [Otis](/characters/otis.md), [Brim](/characters/brim.md), Xerxes und [Nox](/npcs/nox.md) in Sicherheit, während Rotunas zurückbleibt (Beleg 2). Die Rettung erscheint als schicksalhafter Eingriff. Der Strixwolf war bereits zuvor in Ehrenfels gesichtet worden und hatte dort heimlich Nahrung gestohlen (Beleg 2).
+Inaros ist den Bewohnern von Ehrenfels bekannt. Als die Gruppe sich nach einer gefährlichen Begegnung mit Nerash in einer prekären Lage befindet, erscheint Inaros unerwartet, schnappt sich Nox und bietet allen die Möglichkeit, sich auf seinem Rücken in Sicherheit zu bringen. Rotunas bleibt bewusst zurück, um ihm die nötige Zeit für die Flucht zu verschaffen. [P-46]
+
+## Beziehungen
+
+- **Dodo und Lunara**: Seine Retter; zu ihnen hat er eine vertrauensvolle Bindung aufgebaut.
+- **Rotunas**: Rotunas ermöglicht seine Fluchthilfe, indem er Nerash aufhält.
+- **Nox**: Inaros transportiert Nox während der Rettungsaktion.
+- **Willauch**: Der Jäger, der ihn bedroht hat; eine feindselige Beziehung.
+- **Nerash**: Inaros stellt sich nicht direkt gegen Nerash, doch seine Fluchthilfe vereitelt Nerashs Angriff.
 
 # Belege
 
-1. Session 2026-03-24 @ 01:29:18 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
-2. Session 2026-04-09 @ 01:55:47 (https://www.youtube.com/watch?v=vcGkejr8_nI)
+[P-43] Session 2026-03-24 @ 01:28:44 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
+[P-46] Session 2026-04-09 @ 01:55:47 (https://www.youtube.com/watch?v=vcGkejr8_nI)

@@ -1,15 +1,16 @@
 ---
 type: NPC
 title: Serrava
-description: Ein tiefroter Tiefling und Anführer der Gilde, neben Gorak stehend; er
-  nickt der Gruppe nur zu.
+description: Ein tiefroter Tiefling und Mitglied der Gildenführung in Bresca. Er stellt
+  sich kurz vor und ist Teil des diabolischen Lachens am Ende.
 tags:
 - npcs
 timestamp: '2025-09-17T00:00:00Z'
 id: NPC_SERRAVA
 ---
 
-Serrava ist ein tiefroter Tiefling und Anführer einer nicht näher bezeichneten Gilde. Er wurde neben Gorak stehend angetroffen und nickte der Gruppe nur zu, als sie ihm begegnete.
+Ein tiefroter Tiefling und Mitglied der Gildenführung in [Bresca](/locations/breska.md). Er stellt sich kurz vor und ist Teil des diabolischen Lachens am [Ende](/locations/ende_jenseits_der_orkgebiete.md).
 
 # Belege
-1. Session 2025-09-17 @ 00:26:28 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
+
+[P-22] Session 2025-09-17 @ 00:26:08 (https://www.youtube.com/watch?v=AhIT8dcxw2o)

@@ -1,15 +1,17 @@
 ---
 type: Location
 title: Tiefwasser
-description: Eine kleine, aber strategisch wichtige Hafenstadt unter der Kontrolle
-  von Willauch. Sie dient als letzte menschliche Siedlung vor dem Ork-G…
+description: Tiefwasser ist eine kleine, aber wichtige Hafenstadt im Norden von Willauch,
+  die als letzte menschliche Grenze vor dem Orkgebiet gilt. Sie…
 tags:
 - locations
 timestamp: '2026-03-18T00:00:00Z'
 id: LOC_TIEFWASSER
+subtype: Siedlung
 ---
 
-Tiefwasser ist eine kleine, aber strategisch wichtige Hafenstadt unter der Kontrolle von Willauch. Sie dient als letzte menschliche Siedlung vor dem Ork-Gebiet und verfügt über einen Hafen, zwei Tavernen, ein Gildenhaus, eine Kirche und eine Statue des [Coram Schildbrecher](/deities/coram_schildbrecher.md). Nach einer Wirtshausschlägerei wurde die Stadt von Soldaten aus dem Lager Bucht abgeriegelt, sodass die Gruppe sie nicht mehr betreten kann.
+Tiefwasser ist eine kleine, aber wichtige Hafenstadt im Norden von [Willauch](/locations/willauch.md), die als letzte menschliche Grenze vor dem [Orkgebiet](/locations/orkgebiet.md) gilt. Sie dient als Umschlagplatz für Waren und als Ausgangspunkt für Reisen zu den [Sanddorninseln](/locations/sanddorninseln.md). In der Stadt befinden sich eine Statue des Gottes [Coram Schildbrecher](/deities/coram_schildbrecher.md), die [Gilde der Schilde](/factions/gilde_der_schilde.md), zwei Tavernen und ein Hafen. Nach dem Vorfall in der Schiffs-[Taverne](/locations/taverne.md) wird Tiefwasser von Soldaten abgeriegelt.
 
 # Belege
-[1] Session 2026-03-18 @ 00:21:17 (https://www.youtube.com/watch?v=HHXxsASLrbQ)
+
+[P-41] Session 2026-03-18 @ 00:21:00 (https://www.youtube.com/watch?v=HHXxsASLrbQ)

@@ -1,15 +1,16 @@
 ---
 type: NPC
 title: Familie Schmid
-description: Bauern, die mit Holz arbeiten. Sie stellen den Helden auf Bitte hin acht
-  Palisaden zur Verfügung.
+description: Die Bauernfamilie Schmid besitzt einen Hof mit Holz und Tieren. Sie stellt
+  den Helden Holz für Palisaden zur Verfügung und beginnt sofort m…
 tags:
 - npcs
 timestamp: '2025-04-09T00:00:00Z'
 id: NPC_FAMILIE_SCHMID
 ---
 
-Die Familie Schmid ist eine Bauernfamilie, die mit Holz arbeitet. Sie stellten den Helden auf deren Bitte hin acht Palisaden zur Verfügung.[1]
+Die Bauernfamilie Schmid besitzt einen Hof mit Holz und Tieren. Sie stellt den Helden Holz für Palisaden zur Verfügung und beginnt sofort mit dem Anfertigen von vier (später acht) Barrikaden, die später als Schutzmauern dienen.
 
 # Belege
-1. Session 2025-04-09 @ 01:01:03 (https://www.youtube.com/watch?v=1PWdwvun5ow)
+
+[P-03] Session 2025-04-09 @ 00:41:27 (https://www.youtube.com/watch?v=1PWdwvun5ow)

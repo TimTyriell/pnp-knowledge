@@ -1,31 +1,27 @@
 ---
 type: NPC
 title: Schinder
-description: Der Schinder ist der stille Partner des Richters. Er erscheint ebenso
-  abgebrüht, beteiligt sich aber nicht direkt an den Gesprächen. Er beg…
+description: Der Schinder ist ein hochrangiges Mitglied der Seelenwacht und fungiert
+  als Partner des Richters in der Führung dieser Organisation. Erstma…
 tags:
 - npcs
 timestamp: '2026-05-13T00:00:00Z'
 id: NPC_SCHINDER
 ---
 
-# Der Schinder
+# Schinder
 
-Der Schinder ist ein stiller, aber kampferprobter Partner des Richters. Er tritt meist schweigsam und abgebrüht auf, beteiligt sich nicht an Verhandlungen oder Gesprächen, fungiert jedoch als Kämpfer und Anführer innerhalb der Gruppe des Richters. Seine enge Bindung zum Richter zeigt sich darin, dass dieser ihn durch ein Portal zu retten versucht.
+Der Schinder ist ein hochrangiges Mitglied der [Seelenwacht](/factions/seelenwacht.md) und fungiert als Partner des [Richters](/npcs/richter_herr_der_seelenwacht.md) in der Führung dieser Organisation. Erstmals in Session 2026-05-06 trat er in Erscheinung, wo er als sehr abgebrüht beschrieben wurde, ohne jedoch aktiv einzugreifen. Nach Festlegung der Spielleitung ist das Geschlecht des Schinders für den Kanon unerheblich; im Zweifel wird die männliche Form verwendet. (Die in Session 2026-05-13 einmalig genutzte Bezeichnung als „Kampfgefährtin“ gilt als frühere Fehlannahme und ist nicht kanonisch.)
 
-## Rolle und Eigenschaften
+## Rolle innerhalb der Seelenwacht
 
-In den Belegen wird der Schinder als „stiller Partner“ des Richters beschrieben, der ebenso abgebrüht wirkt, aber nicht direkt an Gesprächen teilnimmt. Seine bloße Anwesenheit unterstreicht die Bedeutung der Mission, bei der er die Gruppe zur Villa begleitet und dem Richter zur Seite steht.[^1] Später wird er als Kämpfer und Anführer in der Gruppe des Richters geschildert, der außerhalb eines Tempels gegen Anhänger Volgultas kämpft.[^2] Die Kombination aus zurückhaltender Begleitung und aktiver Kampfrolle deutet auf eine vielseitige, loyale Person hin, die sowohl im Hintergrund als auch im direkten Gefecht agiert.
+Der Schinder teilt sich mit dem Richter die Führung der Seelenwacht. Beide gelten als abgebrüht und skrupellos. Während seines ersten Auftritts war der Schinder bei der Gruppe anwesend, ergriff aber nicht das Wort.
 
-## Beziehung zum Richter
+## Beteiligung am Angriff auf Jalan
 
-Der Schinder ist mehr als ein einfacher Gefolgsmann; er wird als „Partner“ bezeichnet. Der Richter ergreift während der Auseinandersetzung mit den Volgulta-Anhängern Maßnahmen, um den Schinder durch ein Portal zu retten.[^2] Dies zeigt ein enges Vertrauensverhältnis und eine gegenseitige Abhängigkeit – der Richter verliert seinen wichtigsten Kämpfer nicht kampflos, während der Schinder zuvor den Richter begleitete und unterstützte.
-
-## Verlauf
-
-Zunächst tritt der Schinder als stummer Begleiter des Richters auf, der die Gruppe zur Villa führt und dort präsent ist.[^1] Im weiteren Verlauf der Ereignisse kämpft er außerhalb des Tempels gegen Volgulta-Anhänger und gerät in eine Lage, aus der der Richter ihn zu retten versucht.[^2] Sein genaues Schicksal bleibt offen, doch die Rettungsbemühung unterstreicht seine Bedeutung für die Handlung.
+Beim Angriff auf [Jalan](/locations/jalan.md) befand sich der Schinder außerhalb der Stadt in einem erbitterten Kampf gegen Anhänger Vorgulras. Der Richter entschloss sich, ihm beizustehen, und die Gruppe um [Dante](/characters/dante.md) folgte durch ein Portal, um den Schinder zu unterstützen.
 
 # Belege
 
-[^1]: Session 2026-05-06 @ 00:06:11 – [YouTube](https://www.youtube.com/watch?v=MB4quhDWsQE)  
-[^2]: Session 2026-05-13 @ 01:38:55 – [YouTube](https://www.youtube.com/watch?v=4afPD9Q_5AY)
+[P-48] Session 2026-05-06 @ 00:06:11 (https://www.youtube.com/watch?v=MB4quhDWsQE)
+[P-49] Session 2026-05-13 @ 01:38:11 (https://www.youtube.com/watch?v=4afPD9Q_5AY)

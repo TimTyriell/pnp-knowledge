@@ -1,15 +1,17 @@
 ---
 type: Location
 title: Haus des Löwen
-description: Ein prunkvolles Etablissement in Willauch, das als Kopfgeld-Büro und
-  zugleich als Freudenhaus mit Tänzerinnen und Musikanten dient. Die Che…
+description: Das Haus des Löwen ist ein prunkvolles Etablissement, in dem Freudenhaus,
+  Kopfgeldbörse und Verhandlungsort vereint sind. Adeliga leitet es…
 tags:
 - locations
 timestamp: '2026-03-03T00:00:00Z'
 id: LOC_HAUS_DES_LOEWEN
+subtype: Gebäude
 ---
 
-Das Haus des Löwen ist ein prunkvolles Etablissement in **Willauch**, das sowohl als Kopfgeld-Büro als auch als Freudenhaus mit Tänzerinnen und Musikanten dient. Die Chefin erwarb es und machte es zu einem zentralen Umschlagplatz für Aufträge und Vergnügen. Die Gruppe suchte das Haus des Löwen auf, um die Belohnung für die Ergreifung von **Kronos** zu kassieren.
+Das Haus des Löwen ist ein prunkvolles Etablissement, in dem Freudenhaus, Kopfgeldbörse und Verhandlungsort vereint sind. [Adeliga](/npcs/adeliga_vom_haus_des_loewen.md) leitet es mit Hilfe des Ifriti [Haloras](/npcs/haloras.md). Die Gruppe kassiert hier die [Belohnung für Kronos](/items/belohnung_fuer_kronos.md) und wird Zeugin des Luxus und der Intrigen.
 
 # Belege
-1. Session 2026-03-03 @ 00:17:09 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
+
+[P-39] Session 2026-03-03 @ 00:17:09 (https://www.youtube.com/watch?v=BRUNuNKTeOg)

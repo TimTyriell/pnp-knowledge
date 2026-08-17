@@ -1,64 +1,110 @@
 ---
 type: Deity
-title: Tarvok
-description: Ein alter Gott, dessen Domäne Berge, Erdbeben und Beständigkeit umfasst.
-  Sein Symbol ist eine Granitburg mit eingeritztem Berggipfel. Opfer…
+title: Thar'Vok, der Erdrichter
+description: Thar'Vok, der Erdrichter — in den Transkripten als Tarvok, Tavok oder
+  Tarvolk wiedergegeben — ist einer der alten Götter, die einst den Kon…
 tags:
 - deities
 timestamp: '2026-03-24T00:00:00Z'
 id: DEITY_TARVOK_DER_ERDRICHTER
+subtype: Alter Gott
 aliases:
-- Tavok, der Erdrichter
-- Tavok (Erdrichter)
+- Tarvok
+- Parfon
+- Tavok (der Erdrichter)
+- Tarvolk
+- Seras (Seraph)
 ---
 
 ## Überblick
 
-Tarvok, auch Tavok genannt, war einer der alten Götter und trug den Titel **der Erdrichter**. Seine Domäne umfasste **Berge, Erdbeben und Beständigkeit** [1]. Sein Symbol war eine Granitburg mit eingeritztem Berggipfel, und als Opfergaben wurden glatte Steine, Werkzeuge aus Eisen sowie Anhänger dargebracht. Seine Anhänger rekrutierten sich aus Bergarbeitern, Baumeistern und standhaften Kriegern [1]. In der Gegenwart der Kampagne gilt Tarvok als tot – vernichtet durch eine gewaltige Explosion, die den Gott der Berge auslöschte [4][5]. Ehemalige Stätten seiner Verehrung sind vielfach von anderen Mächten übernommen oder umgewidmet worden.
+Thar'Vok, der Erdrichter — in den Transkripten als Tarvok, Tavok oder Tarvolk wiedergegeben — ist einer der alten Götter, die einst den Kontinent besiedelten. Seine Domänen umfassen Berge, Erdbeben und Beständigkeit; sein Symbol ist ein Granitblock mit eingeritztem Berggipfel. Als Anhänger gelten Bergarbeiter, Baumeister und standhafte Krieger; Opfergaben bestehen aus glatten Steinen und Werkzeugen aus Eisen. Seine Gebote verlangen Standhaftigkeit, das Halten von Eiden und Bauten aus Stein; verhasst sind ihm Verrat sowie die unnötige Zerstörung von Bergen.
+
+Thar'Vok existiert zum Zeitpunkt der Kampagne nicht mehr — er wurde in einer gewaltigen Explosion vernichtet, die auch eine ganze Stadt zerstörte. Seine Verehrung ist in der Zeit nach dem Götterkrieg verboten oder zumindest stark verpönt, was erklärt, warum die Bergnomaden seinen Namen nur versehentlich preisgeben und danach in panische Angst verfallen. Fragmente seines Kults und seiner Heiligtümer haben jedoch überdauert: eine Kapelle am Berg, ein versteckter Keller-Altar, Statuen in einem Turm und ein geheimnisvoller silberner Behälter mit seinem Symbol.
+
+Die Namen „Seras", „Seraph" und „Parfon" aus frühen Sessions sind Transkriptionsfehler und bezeichnen keine eigenen Gottheiten, sondern ebenfalls Thar'Vok.
 
 ## Rolle in der Kampagne
 
-Tarvok ist eine **historische Größe**, deren Erbe immer wieder in verfallenen Heiligtümern und überschriebenen Inschriften auftaucht. Schon früh stößt die Gruppe auf einen Wegweiser zu einer Kapelle des „heiligen Tarvok“ [1], und wenig später entdecken sie eine gewaltige magische Tür, deren ursprünglicher Name – Tavok, der Erdrichter – mit Blut zum Namen **Varsul** ausgestrichen wurde [2]. Diese symbolische Verdrängung zieht sich als Motiv durch: Tarvoks Orte sind von einem rivalisierenden Gott bzw. dessen Kult vereinnahmt.
+Thar'Vok zieht sich als wiederkehrendes Mysterium durch die Kampagne. Die Gruppe stößt in mehreren Etappen auf Spuren seines Kults und seiner Geschichte, ohne ihm jemals selbst zu begegnen:
 
-Die Gruppe findet später in einem Keller ein Lederbündel mit Tarvoks Symbol sowie einen Altar, der offenbar Erweckungs- oder Schöpfungsmagie ermöglicht und mit unterirdischen Strukturen verbunden ist [3]. Der Fund legt nahe, dass Tarvoks Einfluss im Dungeon einst größer war und vielleicht noch in Resten spürbar ist. Die Abenteurer begegnen einer Statue des Erdrichters in einem Turm und erkennen den Gott sofort an seinem Abbild – eine Bestätigung, dass er nur noch als Statue präsent ist [5].
+- Zunächst begegnen die Charaktere in einem Bergdorf Nomaden, die heimlich einem „alten Gott" dienen. Der Name wird versehentlich preisgegeben — die Gemeinschaft reagiert mit blankem Entsetzen, weil die Verehrung alter Götter nach dem Götterkrieg verboten ist. Der Gruß der Kultisten lautet: „ein flammendes Herz".
 
-Sein Schicksal wird schließlich durch einen Dämon namens **Slix** enthüllt: Der frühere König **Zebros** hing Tarvok an, doch der Gott fiel in einer großen Explosion, die „die Stadt und den Gott der Berge vernichtete“ [4]. Slix bezeichnet ihn verächtlich als „Schwachkopf“. Tarvok ist damit ein **gefallener alter Gott**, dessen Name nur noch in Ruinen und in den Erinnerungen Weniger existiert.
+- Später finden die Charaktere eine Kapelle, die ursprünglich Thar'Vok geweiht war, dann aber vom Kult Vhar'Zuls übernommen wurde. Die Gruppe hält die Kultisten zunächst für Thar'Vok-Anhänger, was sich als Irrtum herausstellt — tatsächlich dienen sie Vhar'Zul, der die Verehrungsstätte des toten Gottes an sich gerissen hat.
+
+- In Lindos Amulett spricht die Stimme Thyrex' (Vhar'Zuls) selbst über Thar'Vok und bestätigt, dass er dessen Kampfgefährte in den letzten Tagen war — keine Freunde, aber Verbündete.
+
+- In der Unterstadt finden die Charaktere einen silbernen Behälter und einen Umhang mit Thar'Voks Symbol. Esterossa identifiziert das Zeichen durch historisches Wissen: „Das ist das Zeichen von Tarvok, der Erdrichter — einer der alten Götter." Sie weiß aus Schriften, dass er „wahrscheinlich nicht mehr existiert".
+
+- Schließlich bestätigt die Stimme Vhar'Zuls, dass Thar'Vok vernichtet wurde: „Eine große Explosion hat die Stadt und den Gott der Berge vernichtet."
+
+- In einem Turm am Schwebefelsen entdeckt die Gruppe alte Statuen, die Thar'Vok darstellen. Lindo Laut hält lapidar fest: „Aber der ist schon tot."
+
+Die wiederholte Präsenz von Thar'Voks Symbolen und Heiligtümern illustriert das Schicksal der alten Götter nach dem Götterkrieg: besiegt, verboten, vergessen — aber nicht vollständig aus der Welt getilgt. Er dient damit als Hintergrundfolie für die Machtverschiebung zugunsten der neueren, aktiven Götter wie Vhar'Zul.
 
 ## Wichtige Merkmale
 
-- **Domäne:** Berge, Erdbeben, Beständigkeit [1].
-- **Symbol:** Granitburg mit eingeritztem Berggipfel [1].
-- **Opfergaben:** Glatte Steine, Werkzeuge aus Eisen, Anhänger [1].
-- **Verehrerschaft:** Bergarbeiter, Baumeister, standhafte Krieger [1].
-- **Aussehen:** Die einzige physische Beschreibung liefert die Turmstatue, die von der Gruppe ohne nähere Details als Tarvok erkannt wird [5].
-- **Zustand:** Tot; durch eine große Explosion zerstört [4][5], wobei eine frühere Quelle noch die Möglichkeit eines Exils offenließ [3].
+**Domänen und Aspekte:** Thar'Vok verkörpert Berge, Erdbeben und Beständigkeit. Seine Symbolik ist massiv und erdverbunden — der Granitblock mit Berggipfel. Als Gott der Standhaftigkeit verlangt er unerschütterliche Treue zu Eiden und hasst Verrat. Er wird als „Steingott" charakterisiert; seine Anhänger sind Menschen, die mit Stein arbeiten oder in den Bergen leben: Bergarbeiter, Baumeister, Krieger mit eiserner Disziplin.
+
+**Tod und Vermächtnis:** Thar'Vok ist tot — endgültig und spektakulär. Die Stimme Vhar'Zuls (Thyrex in Lindos Amulett) schildert es verächtlich: „Er ist relativ schnell gefallen. Eine große Explosion hat die Stadt und den Gott der Berge vernichtet. So ein Schwachkopf." Die Formulierung „relativ schnell gefallen" deutet an, dass sein Ende im größeren Kontext des Götterkriegs früh kam. Esterossas Wissen bestätigt den Tod indirekt: ihre Schriften sprechen von einem Gott, der „wahrscheinlich nicht mehr existiert".
+
+**Überlieferte Artefakte und Orte:**
+- Ein silberner, ei-artiger Behälter mit Thar'Voks Symbol — ob er magisch oder göttlich ist, bleibt unklar.
+- Ein Umhang mit demselben Symbol, der auf einen privaten Schrein oder Altar hindeutet.
+- Eine Kapelle am Berg, die ursprünglich Thar'Vok geweiht war und später von Vhar'Zul-Kultisten übernommen wurde. Dormag, der Diener Vhar'Zuls, nutzte sie als Ort für ein Ritual mit einem gegossenen Herzen.
+- Ein Keller-Altar und ein Schrein, der laut Esterossa möglicherweise „die Kraft hat, Dinge zu erschaffen oder zu erwecken" — eine vage Andeutung auf überdauernde göttliche Macht trotz des Todes des Gottes.
+- Statuen in einem Turm am Schwebefelsen, die den Erdrichter darstellen und von der Gruppe als solche identifiziert werden.
+
+**Kultpraktiken der Bergnomaden:** Die Nomaden verwenden den Gruß „ein flammendes Herz". Ihre Rituale umfassen traditionelle Elemente: Gebetsketten, Räuchermaterial, Wachs, Salz, rituelle Farbe für Bodenzeichnungen. Gold spielt in ihrer Ökonomie keine Rolle. Der Kult existiert laut eigener Aussage seit elf oder zwölf Generationen — also seit mehr als zwei Jahrhunderten — und ist eng mit dem Berg und dem dortigen Heiligtum verbunden.
 
 ## Beziehungen und Verbindungen
 
-- **Varsul:** Der heute aktive Gott/Gegenspieler, dessen Name den Tarvoks überschreibt. Aus der Kapelle von Tarvok wurde offenbar eine Stätte Varsuls [1][2].
-- **König Zebros:** Ein historischer Herrscher und überzeugter Anhänger Tarvoks, dem Slix ein mächtiges Schwert („das Schwert von Zebras“) zuschreibt [4]. Zebros und Tarvok sind offenbar gemeinsam untergegangen.
-- **Dormag der Diener:** Laut Lindo Laut lauerte Dormag ursprünglich in der „ursprüngliche[n] Kathedrale“ Tarvoks auf die Gruppe, bevor der Ort Varsul geweiht wurde [3]. Die genaue Beziehung zwischen Dormag und Tarvok bleibt unklar.
-- **Slix:** Ein Dämon, der sich über Tarvok lustig macht und dessen Tod in einer Explosion als Schwäche darstellt [4].
-- **Der Altar im Keller:** Ein altes Heiligtum Tarvoks, das Erweckungs- oder Schöpfungsmagie erlaubt und mit weitläufigen unterirdischen Strukturen verknüpft ist [3]. Ob es sich dabei um einen reinen Überrest oder um eine noch aktive Kraftquelle handelt, ist nicht geklärt.
+**Vhar'Zul (Kampfgefährte):** Die wichtigste Verbindung Thar'Voks. Vhar'Zul selbst — sprechend durch Thyrex in Lindos Amulett — bezeichnet sich als Thar'Voks Kampfgefährten in den letzten Tagen, betont aber: „keine Freunde, aber Kampfgefährten". Die beiden alten Götter fochten demnach gemeinsam, wenn auch nicht in tiefer Verbundenheit. Nach Thar'Voks Tod hat Vhar'Zul dessen Heiligtümer übernommen; sein Kult hat die Kapelle des toten Erdrichters in Besitz genommen und nutzt sie für eigene Rituale.
+
+Die Verwechslung in frühen Sessions — dass Ezhura („Ezua") der Kampfgefährte gewesen sei — wird durch die Spielleitungs-Entscheidung korrigiert: Es war die Stimme Vhar'Zuls, die sprach, nicht die Stimme Ezhuras. Der Kampfgefährte ist Vhar'Zul.
+
+**König Zebros:** Ein sterblicher Herrscher, der Thar'Vok folgte. Die Stimme Vhar'Zuls erwähnt ihn im Zusammenhang mit einem mächtigen Schwert: „Zebros? Ähm, nein. Er hat zumindest nicht uns gedient. Es waren Verbündete, aber sein wahrer Anhänger war Tavok, der Erdrichter." Zebros starb offenbar gemeinsam mit seinem Gott in der Explosion, die auch die Stadt auslöschte.
+
+**Die Bergnomaden:** Eine Gemeinschaft, die den Kult seit elf oder zwölf Generationen im Verborgenen pflegt — trotz des Verbots der Verehrung alter Götter. Ihre Panik bei der versehentlichen Preisgabe des Namens zeigt, wie tief das Verbot in der Gesellschaft verankert ist. Sie leben abgeschieden in den Bergen, ohne Goldwirtschaft, und bewahren Rituale und Wissen um den alten Gott.
+
+**Die Gruppe (Lindo Laut, Esterossa & Gefährten):** Die Charaktere begegnen Thar'Voks Vermächtnis wiederholt als archäologische Schicht. Lindo Laut erkennt den Namen sofort wieder, als die Gruppe die Kapelle erreicht, und zählt aus seinem Wissen die Domänen und Attribute auf. Esterossa identifiziert das Symbol auf dem Umhang durch historische Studien. Die Gruppe behandelt die Artefakte mit Vorsicht und gelegentlich mit Respekt, aber ohne aktive Verehrung.
 
 ## Chronologie
 
-1. **Erste Erwähnung (Session 2025-08-20):** Ein Wegweiser im Bergland weist zur „heiligen Kapelle von Tarvok“. Lindo Laut gibt die göttlichen Domänen und Symbole preis. Die Atmosphäre ist von Hoffnungslosigkeit begleitet; Cookie spürt eine unheimliche Anziehungskraft in Richtung Berg [1].
-2. **Überschriebene Tür (Session 2025-09-02):** Die Gruppe findet eine magisch versiegelte Tür mit der Inschrift „Tavok, der Erdrichter“, die blutig zu "Varsul" übertüncht wurde. Lindo öffnet den Verschluss und bestätigt die Theorie, dass dieser Kult vereinnahmt wurde [2].
-3. **Symbolfund und Altar (Session 2026-02-11):** In einem Lederknäuel entdecken die Gefährten Tarvoks Zeichen. Esterossa identifiziert es als das eines der alten Götter, „der wahrscheinlich nicht mehr existiert“. Lindo erinnert daran, dass Tarvok die ursprüngliche Kathedrale gehörte, in der Dormag sie erwartete [3]. Im Keller zeigt sich ein Altar mit Verbindung zu unterirdischen Strukturen und magischem Potenzial.
-4. **Bestätigung des Todes (Session 2026-02-17):** Slix berichtet von König Zebros, einem treuen Anhänger Tarvoks, und von der Explosion, die die Stadt und den Gott der Berge auslöschte. Tarvok wird als „Schwachkopf“ verspottet. Der Tod ist damit klar belegt [4].
-5. **Statue im Turm (Session 2026-03-24):** In einem alten Turm entdecken die Abenteurer eine Statue, die sie als die Tarvoks, des Erdrichters, erkennen. Die wiederholte Feststellung „der ist schon tot“ unterstreicht seinen endgültigen Status [5].
+**Session 2025-08-12 (Bergdorf):** Die Gruppe übernachtet bei Bergnomaden, die einer unbekannten Gottheit dienen. Eine alte Frau gibt den Namen versehentlich preis: „also wir sind hier für Seraph". Das Transkript hat den Namen als „Seras" oder „Seraph" verhört — tatsächlich handelt es sich um Thar'Vok. Die Gemeinschaft reagiert mit Entsetzen und Schweigen; die kulturelle und politische Ächtung alter Götter wird sichtbar. Lindo Laut verabschiedet sich mit dem Gruß des Kults: „ein flammendes Herz". Die Nomaden behaupten, dem Gott seit elf oder zwölf Generationen zu dienen.
+
+Die Stimme aus Lindos Amulett (später als Vhar'Zuls Thyrex identifiziert) bestätigt, dass der Gott der Nomaden sein Kampfgefährte war.
+
+**Session 2025-08-20 (Weg zur Kapelle):** Ein Wegweiser zeigt zur „heiligen Kapelle von Tarvok". Lindo Laut zitiert das Pantheon-Wissen: „Domäne, Berge, Erdbeben, Beständigkeit. […] Opfergabe, glatte Steine, Werkzeug aus Eisen, Anhänger, Bergarbeiter, Baumeister und standhafte Krieger". Die Gruppe vermutet zunächst, die Kultisten in der Kapelle seien Anhänger dieses Gottes.
+
+**Session 2025-09-02 (In der Kapelle):** Der Irrtum klärt sich auf: Die Kultisten in der Kapelle dienen nicht Thar'Vok, sondern Vhar'Zul (in den Notizen „Varsu" transkribiert). Lindo Laut rekonstruiert: „[Sie] waren vielleicht früher Anhänger von Parfon, dem Steingott, von dem anderen Magier." Der Name „Parfon" ist ebenfalls ein Transkriptionsfehler für Thar'Vok. Die Kapelle war ursprünglich ihm geweiht, bevor Vhar'Zuls Kult sie übernahm. Die Kultisten besitzen kein Gold, sondern rituelle Gegenstände: Gebetsketten, Räuchermaterial, Wachs, Salz und Bodenfarbe.
+
+**Session 2026-02-11 (Unterstadt, Keller-Altar):** Die Gruppe findet einen Umhang und einen silbernen, ei-artigen Behälter mit einem unbekannten Symbol. Esterossa erkennt es durch historisches Wissen: „Das ist das Zeichen von Tarvok, der Erdrichter. Einer der alten Götter." Aus Schriften weiß sie, dass er „wahrscheinlich nicht mehr existiert". Der Schrein im Keller besitzt demnach möglicherweise eine Kraft der Erschaffung oder Erweckung — eine ungeklärte Restwirkung des toten Gottes.
+
+**Session 2026-02-17 (Die Wahrheit aus dem Amulett):** Die Stimme Vhar'Zuls (Thyrex) enthüllt, dass König Zebros ein Anhänger Thar'Voks war: „sein wahrer Anhänger war Tavok, der Erdrichter." Sie schildert das Ende: „Er ist relativ schnell gefallen. Eine große Explosion hat die Stadt und den Gott der Berge vernichtet. So ein Schwachkopf." Die Herablassung Vhar'Zuls gegenüber dem toten Kampfgefährten wird deutlich.
+
+**Session 2026-03-24 (Turm am Schwebefelsen):** Die Gruppe findet Statuen eines alten Gottes. Esterossa und die anderen erkennen: „Das wird wahrscheinlich Tarvok sein, der Erdrichter." Lindo Laut stellt lapidar fest: „Aber der ist schon tot." Die Spielleitung bestätigt das unisono.
 
 ## Offene Fragen
 
-- **Tod oder Exil:** Eine Quelle (Session 3) nennt die Möglichkeit, Tarvok könne „tot oder im Exil“ sein. Spätere Belege sprechen ausschließlich von seinem Tod. Es bleibt ungewiss, ob es sich um eine ungenaue frühe Mutmaßung handelte oder ob ein Teil seines Wesens doch in irgendeiner Form überdauert.
-- **Der Altar und seine Macht:** Welche Magie genau an den Tarvok-Altar im Keller gebunden ist und ob sie aktiv / gefährlich ist, wurde nicht abschließend untersucht.
-- **Die große Explosion:** Ursache, Ort und genaue Teilnehmer des Ereignisses, das den Gott der Berge vernichtete, sind nicht bekannt.
+- **Überdauernde Macht trotz Tod:** Esterossa erwähnt, der Schrein Thar'Voks besitze möglicherweise die Kraft, „Dinge zu erschaffen oder zu erwecken". Wie ein toter Gott noch derartige Wirkung entfalten kann, bleibt ungeklärt. Handelt es sich um gespeicherte Magie, einen unzerstörten Aspekt des Gottes oder um den Glauben seiner verbliebenen Anhänger?
+
+- **Die Explosion und ihre Umstände:** Die Explosion, die Thar'Vok und Zebros' Stadt vernichtete, wird nur kursorisch erwähnt. War es eine Waffe im Götterkrieg, eine gescheiterte Verteidigung oder ein Akt des Verrats — einer der Domänen, die Thar'Vok laut seinem Kodex besonders hasste?
+
+- **Der silberne Behälter:** Das ei-artige Objekt mit Thar'Voks Symbol wurde nicht geöffnet. Sein Inhalt, Zweck und mögliche Verbindung zur „erschaffenden" Kraft des Gottes sind unbekannt.
+
+- **Verbot der Namensnennung:** Die Reaktion der Bergnomaden zeigt, dass allein das Aussprechen des Namens gesellschaftlich geächtet ist und Angst auslöst. Ist dies rein kulturell-politisch — wie von der Spielleitung festgelegt — oder gibt es in der Spielwelt darüber hinaus einen verbreiteten Aberglauben oder gar reale Gefahren, die mit der Namensnennung alter Götter verbunden sind? Die Belege zeigen nur die Reaktion, nicht deren genaue Begründung.
 
 ## Belege
 
-[1] Session 2025-08-20, 01:10:56–01:13:34, https://www.youtube.com/watch?v=-XbO3FLSL_I  
-[2] Session 2025-09-02, 01:33:07–01:35:36, https://www.youtube.com/watch?v=TLZOH7TlGhk  
-[3] Session 2026-02-11, 00:38:56–00:41:52, https://www.youtube.com/watch?v=3C8SD-cyNPM  
-[4] Session 2026-02-17, 01:53:21–01:55:46, https://www.youtube.com/watch?v=Z2jlzpoTWVw  
-[5] Session 2026-03-24, 00:14:08–00:17:02, https://www.youtube.com/watch?v=Yj5BWJfg3Ag
+[P-17] Session 2025-08-12, 01:40:35, https://www.youtube.com/watch?v=vHIjua0BZ9Y — Die alte Frau nennt den Namen des Gottes; Panik im Dorf; Gruß „flammendes Herz"; Amulett-Stimme über Kampfgefährten.
+
+[P-18] Session 2025-08-20, 01:12:25, https://www.youtube.com/watch?v=-XbO3FLSL_I — Wegweiser zur Kapelle von Tarvok; Lindo zitiert Domänen und Attribute.
+
+[P-19] Session 2025-09-02, 00:56:35, https://www.youtube.com/watch?v=TLZOH7TlGhk — Kapelle ursprünglich dem Steingott (Thar'Vok) geweiht, nun Vhar'Zul-Kult; rituelle Gegenstände gefunden.
+
+[P-36] Session 2026-02-11, 00:40:12, https://www.youtube.com/watch?v=3C8SD-cyNPM — Esterossa identifiziert Tarvoks Symbol auf Umhang und Behälter; alter Gott, wahrscheinlich nicht mehr existent; Schrein besitzt möglicherweise Kraft der Erschaffung/Erweckung.
+
+[P-37] Session 2026-02-17, 01:54:22, https://www.youtube.com/watch?v=Z2jlzpoTWVw — Vhar'Zul (Thyrex) bestätigt König Zebros als Thar'Vok-Anhänger; Explosion vernichtete Stadt und Gott.
+
+[P-43] Session 2026-03-24, 00:15:20, https://www.youtube.com/watch?v=Yj5BWJfg3Ag — Statuen im Turm als Thar'Vok identifiziert; der Gott ist tot.

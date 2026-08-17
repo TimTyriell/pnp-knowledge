@@ -1,15 +1,17 @@
 ---
 type: Event
 title: Flucht durch das Portal
-description: Nach der Vernichtung des Ratten-Dämons und der Schwächung des Balors
-  sprintete die Gruppe durch das von Lindo geöffnete Portal zurück in di…
+description: Während der Explosion springt die Gruppe durch ein schwarzes Portal und
+  kehrt auf die Trainingsgelände ihrer Gilde zurück.
 tags:
 - events
-timestamp: '2025-09-06T00:00:00Z'
+timestamp: '2025-07-09T00:00:00Z'
 id: EVENT_FLUCHT_DURCH_DAS_PORTAL
+subtype: Reise
 ---
 
-Nach der Vernichtung des Ratten-Dämons und der Schwächung des Balors sprintete die Gruppe durch das von Lindo geöffnete Portal zurück in die Sanktuarium-Rift. Damit entkam sie dem Balor.
+Während der Explosion springt die Gruppe durch ein schwarzes Portal und kehrt auf die Trainingsgelände ihrer [Gilde](/factions/gilde_von_ehrenfels.md) zurück.
 
 # Belege
-1. Session 2025-09-06 @ 00:49:11 (https://www.youtube.com/watch?v=vo1xnyLQDJk)
+
+[P-14] Session 2025-07-09 @ 01:20:10 (https://www.youtube.com/watch?v=XOnHa6CmDbo)

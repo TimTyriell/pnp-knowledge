@@ -1,16 +1,16 @@
 ---
 type: NPC
 title: Schleichfurz
-description: Schleichfurz ist der Goblin-Magier und Anführer des Dorfes. Er hält eine
-  kurze Siegesrede vor seinen feiernden Goblins, in der er verkündet…
+description: Der selbsternannte Herrscher des Goblin-Dorfes. Er hält eine kurze Ansprache
+  an die feiernden Goblins, verkündet den Sieg über die Menschen…
 tags:
 - npcs
 timestamp: '2025-04-01T00:00:00Z'
 id: NPC_SCHLEICHFURZ
 ---
 
-Schleichfurz ist der Goblin-Magier und Anführer eines Goblin-Dorfes. Er hält eine Siegesrede, in der er verkündet, dass alle Menschen ausgelöscht wurden und sie bald weiterziehen werden. Im Kampf teleportiert er sich vor [Dodo](/characters/dodo.md)s Angriff eine Etage höher und setzt einen Feuerzauber (eine Kugel aus drei Flammen) sowie eine Druckwelle ein. Esterossa ringt mit ihm, und nach einem Stolperer beider wird er schließlich von Esterossa vom Gebäude gestoßen und stirbt beim Aufprall auf die spitzen Palisaden.
+Der selbsternannte Herrscher des Goblin-Dorfes. Er hält eine kurze Ansprache an die feiernden [Goblins](/factions/goblins.md), verkündet den Sieg über die Menschen und plant weitere Züge. Er zieht sich in ein Gebäude zurück und wird später von der Gruppe belauscht, als er mit einem Magier über einen gemeinsamen Angriff spricht. Er selbst kämpft offenbar nicht, sondern wird vermutlich im Hintergrund getötet oder flieht – der Fokus im Endkampf liegt auf dem Magier und einem anderen Nahkämpfer.
 
 # Belege
 
-[1] Session 2025-04-01 @ 01:14:23 (https://www.youtube.com/watch?v=LZIuUzc3F18)
+[P-02] Session 2025-04-01 @ 01:13:32 (https://www.youtube.com/watch?v=LZIuUzc3F18)

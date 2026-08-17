@@ -1,15 +1,16 @@
 ---
 type: NPC
 title: Brass
-description: Brass ist ein Dunkelelf aus Cornivum, der zunächst feindselig auf die
-  Gruppe reagiert, sich aber beruhigt, als er von der Gilde erfährt. Er…
+description: Brass ist ein Dunkelelf aus Cornivum, der der Gruppe zunächst feindselig
+  gegenübertritt, sich aber beruhigt, als er hört, dass sie keine Ad…
 tags:
 - npcs
 timestamp: '2025-06-03T00:00:00Z'
 id: NPC_BRASS
 ---
 
-Brass ist ein Dunkelelf aus Cornivum, der der Gruppe zunächst feindselig begegnet, sich jedoch beruhigt, als er von ihrer Zugehörigkeit zur Gilde erfährt. Er fordert [Lindo Laut](/characters/lindo_laut.md) zu einer Jagd auf ein monsterähnliches Wesen heraus und führt die Gruppe dorthin. Im Kampf agiert er ungeschickt, wird von dem Monster verschlungen, aber nach seiner Rettung und Heilung schenkt er Lindo Laut aus Scham seinen magischen Dolch. Anschließend kehrt er allein ins Dorf zurück.
+Brass ist ein Dunkelelf aus [Cornivum](/locations/cornivum.md), der der Gruppe zunächst feindselig gegenübertritt, sich aber beruhigt, als er hört, dass sie keine Adeligen sind. Er fordert [Lindo Laut](/characters/lindo_laut.md) spielerisch zur Jagd heraus und führt die Gruppe zu einer Sumpfbestie. Im Kampf versucht er, auf die Kreatur zu springen, rutscht aber ab und wird fast getötet. Nach seiner Heilung schämt er sich und überreicht Lindo Laut seinen Verschlingenden Dolch als Entschuldigung. Er gibt zu, wenig Kampferfahrung zu haben.
 
 # Belege
-1. Session 2025-06-03 @ 00:15:45 (https://www.youtube.com/watch?v=jtYR4Je0a18)
+
+[P-10] Session 2025-06-03 @ 00:15:45 (https://www.youtube.com/watch?v=jtYR4Je0a18)

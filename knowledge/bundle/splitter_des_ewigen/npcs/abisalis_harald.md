@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Abisalis-Harald
-description: Ein Dämon, der zusammen mit einer Begleitung erscheint, um eine Kinderseele
-  mit einem Seelenstein zu ernten. Er wird von Lunaras Behauptung…
+description: Ein Dämon, der mit einem Begleiter erscheint und Anspruch auf die Kinderseele
+  erhebt. Er besitzt einen Seelenstein. Nach einer kurzen Konfr…
 tags:
 - npcs
 timestamp: '2026-04-14T00:00:00Z'
@@ -11,8 +11,8 @@ aliases:
 - Harald
 ---
 
-Harald ist ein Freibeuter-Kapitän, der eine heruntergekommene Taverne betreibt und sich bei Konflikten mit einem Rapier verteidigt. Er ist eine eigenständige Figur und nicht identisch mit dem gleichnamigen Dämon aus Abyssalis, der in einer Session kurz auftauchte, aber laut Festlegung der Spielleitung einer anderen Entität zugeordnet wird. Über Haralds Hintergrund oder Aktivitäten in der Kampagne liegen keine weiteren Berichte vor.
+Ein Dämon, der mit einem Begleiter erscheint und Anspruch auf die Kinderseele erhebt. Er besitzt einen [Seelenstein](/items/seelenstein_des_rotunas.md). Nach einer kurzen Konfrontation, in der Lunara die Seele als ihre Beute beansprucht, tritt er zurück und geht.
 
 # Belege
-1. [Session 2026-04-14 @ 00:44:35](https://www.youtube.com/watch?v=1Jyu92P7_Fg) – Dämon Harald, nicht dieser Freibeuter.
-2. Kanon_Entscheidungen.md – Beschreibung des Freibeuters.
+
+[P-47] Session 2026-04-14 @ 00:45:04 (https://www.youtube.com/watch?v=1Jyu92P7_Fg)

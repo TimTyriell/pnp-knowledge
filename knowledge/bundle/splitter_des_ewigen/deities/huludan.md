@@ -1,49 +1,75 @@
 ---
 type: Deity
 title: Huludan
-description: Huludan ist der Meister des geisterhaften Dieners. Der Diener betont
-  mehrfach, dass Huludan sich an geschlossene Vereinbarungen hält, und s…
+description: Huludan ist ein Titan – ein uraltes, machtvolles Wesen, das im *Splitter
+  des Ewigen* gefangen gehalten wird. Der bloße Klang seines Namens…
 tags:
 - deities
-timestamp: '2026-06-10T00:00:00Z'
+timestamp: '2026-07-21T00:00:00Z'
 id: DEITY_HULUDAN
+subtype: Sonstiges
 ---
 
-# Huludan
-
 ## Überblick
-Huludan ist eine übergeordnete, titanenhafte Entität, die sich bisher vor allem durch einen geisterhaften Diener und die unheilvolle Macht seines Namens in der Kampagne manifestiert hat. Der Name aktiviert die Kristalle in der „Narbe“ und kann sowohl segnenden Beistand als auch zerstörerische Kraft entfalten. Huludan scheint gegen den Kult des Vorgul’tar zu arbeiten, wahrt dabei jedoch eine distanzierte, vertragstreue Haltung und hält sich an geschlossene Vereinbarungen.
+
+Huludan ist ein Titan – ein uraltes, machtvolles Wesen, das im *Splitter des Ewigen* gefangen gehalten wird. Der bloße Klang seines Namens entfaltet in der Narbe eine ungeheure Energie: Kristalle leuchten auf, ein übernatürlicher Sog entsteht, und die Grenzen zwischen unbelebter Materie und lebendigen Kreaturen scheinen sich aufzulösen. Huludan selbst ist den Sterblichen kaum bekannt; was in der Welt von ihm wahrgenommen wird, sind die Effekte seiner Macht und die Handlungen eines namenlosen Dieners, der in seinem Namen auftritt. Vhar'Zul, ein Antagonist der Kampagne, wollte den Splitter öffnen, um Huludan zu befreien und als Gegenleistung einen Schöpferwunsch zu erwirken – ein Vorhaben, das zeigt, welch fundamentale Kräfte mit diesem Titanen verbunden werden.
 
 ## Rolle in der Kampagne
-Huludan trat indirekt an zwei zentralen Punkten in Erscheinung:
-1. **Portalszene (13.05.2026):** Sein geisterhafter Diener vermittelte in einer entscheidenden Begegnung, bot den Helden die Wahl zwischen einem neuen Leben und dem Kampf an der Seite ihrer Freunde und schloss mit den Worten „Möge Huludan euch segnen.“ Die explizite Erwähnung der Vernichtung Vorgul’tars als Bedingung für ein späteres Treffen verknüpft Huludan direkt mit dem Kampf gegen diesen Kult.
-2. **Narbe (10.06.2026):** Lindo Laut nutzte den Namen Huludan als machtvollen akustischen Befehl und lenkte die Energie der Kristalle auf einen feindlichen Magier, der daraufhin von einem Kristallwesen verzerrt und absorbiert wurde. Damit erwies sich Huludans Macht als kriegsentscheidendes Element im Gefecht gegen die Schergen Vorgul’tars.
 
-Huludan nimmt so die Rolle einer neutralen, aber mächtigen Schutzinstanz ein, die den Sterblichen zwar beisteht, jedoch an klare Abmachungen gebunden ist und ihre Hilfe nicht bedingungslos gewährt.
+Huludan steht als verborgene, titanische Präsenz im Zentrum der Ereignisse im Abyssal. Sein Gefängnis, der *Splitter des Ewigen*, war das von Vorgultar streng bewachte Ziel Vasuls, und die Frage, was Vasul mit dem Splitter bezweckte, trieb die Handlung über mehrere Sessions voran.
+
+Direkte Interaktion mit Huludans Macht erfolgte auf drei Ebenen:
+
+[P-49] **Der Diener:** Ein Wesen, das weder celestisch noch dämonisch ist, erschien der Abenteurergruppe, sprach einen Segen „in Huludans Namen“ und verließ sie mit einer mahnenden Warnung vor den Konsequenzen ihres Handelns. Dieser Diener ist von Huludan zu unterscheiden – er ist ein Abgesandter, nicht der Titan selbst.
+
+[P-53] **Die Anrufung des Namens:** In der Narbe sprach Lindo Laut den Namen „Huludan“ aus, woraufhin sämtliche Kristalle aufleuchteten und ein magischer Sog gen Osten entstand. Eine zweite Nennung verstärkte den Effekt. Später aktivierte Lindo Laut mit einem erneuten Ausruf einen Kristall, der sich in ein Monster verwandelte und Vorgultars Diener verschlang. Der Name wirkt wie ein Schlüssel oder Aktivator für die Kristalle der Narbe.
+
+[P-55] **Das Schwert:** Huludan war der ursprüngliche Besitzer eines leeren Schwertes, das Essenzen absorbiert. Esterossa erhielt dieses Schwert und durchtrennte damit Vasuls Essenz in einem einzigen Hieb – das Schwert glitt „einfach durch Vasul durch“ und „absorbierte seine Essenz“. Damit war Huludans Waffe das entscheidende Instrument, um Vasul zu vernichten.
 
 ## Wichtige Merkmale
-- **Meister des geisterhaften Dieners:** Der Diener – eine ätherische Gestalt – spricht und handelt im Auftrag Huludans. Nach seiner Botschaft versinkt er in einer schwarzen Flüssigkeit und kehrt zu seinem Meister zurück. Der Diener betont mehrfach, dass Huludan sich an Abmachungen hält.
-- **Wirkmacht des Namens:** Allein das Aussprechen des Namens „Huludan“ bringt die Kristalle in der Narbe zum Leuchten und Bündeln ihrer Energie. In der zweiten Session richtete Lindo „ein ganz, ganz lautes Huludan“ gezielt als Schallwelle auf einen Kristall, woraufhin eine feindliche Kreatur verzerrt und von einer lila Substanz zerfressen wurde. Die Kristalle zeigten sich gegenüber dem Kult um Vorgul’tar unnachgiebig.
-- **Assoziation mit schwarzer Flüssigkeit:** Der Diener verschwindet in einer schwarzen „Suppe“ – möglicherweise eine direkte Pforte zu Huludans Domäne.
-- **Segensaspekt:** Der Diener segnet die Helden ausdrücklich im Namen Huludans und bekräftigt damit eine wohlwollende, wenn auch distanzierte Macht.
-- **Titan/Mächtiges Wesen:** In der Chronik wird Huludan als „Titan oder mächtiges Wesen“ beschrieben, wenngleich dies bisher nur aus der Wirkung seiner Macht abgeleitet ist.
+
+**Macht des Namens:** Huludans Name ist in der Narbe eine Gewalt eigener Art. Das Aussprechen löst unmittelbare physikalische und magische Phänomene aus: Kristalle flackern und leuchten auf, ein gerichteter Sog zieht durch den Raum, Echos vergangener Stimmen werden hörbar. Die zweite Nennung verstärkte das Leuchten zu einem „Schimmern“, das von allen Kristallen abgestrahlt wurde. In einem Fall bewirkte der Name, dass ein Kristall sich in eine aggressive, monsterhafte Kreatur verwandelte. Die Macht scheint in den Kristallen selbst zu schlummern und durch den Namen geweckt zu werden.
+
+**Das Schwert:** Das Schwert wird als „leeres Schwert“ beschrieben – eine Waffe, die nicht aus gewöhnlichem Stahl besteht, sondern eine absorbierende Leere darstellt. Als Esterossa Vasul damit schlug, durchdrang es nicht den Körper, sondern durchtrennte die Essenz und saugte sie auf. Die Waffe ist uralt und stand ursprünglich in Huludans Besitz; ihr Zweck und ihre Verbindung zum Titanen sind nicht näher bekannt.
+
+**Der Diener:** Huludans namenloser Diener tritt als höfliche, würdevolle Gestalt auf. Er spricht Segnungen, mahnt die Gruppe zur Vorsicht („was auch immer ihr tut, es wird immer ein Nachspiel haben“) und verschwindet mit einem Sprint. Seine Loyalität zu Huludan ist über den Segensspruch belegt, seine genaue Natur bleibt ungeklärt.
 
 ## Beziehungen und Verbindungen
-- **Geisterhafter Diener** (diener_huludan): Direkter Bote und Untergebener Huludans; taucht in der Narbe und möglicherweise anderswo auf, um Huludans Willen zu überbringen.
-- **Vorgul’tar** (vorgultar): Der Diener stellt die Vernichtung Vorgul’tars als Voraussetzung für ein erneutes Treffen mit Huludan in Aussicht. In der Narbe blockiert der Kult Vorgul’tars die Wirkung der Kristalle nicht, obwohl er der Macht Huludans entgegenwirken will.
-- **Die Abenteurergruppe** (u. a. [Dodo](/characters/dodo.md), [Lindo Laut](/characters/lindo_laut.md), [Lunara Velora](/characters/lunara_velora.md)): Huludan segnete die Gruppe über den Diener und griff später durch Lindos Namensruf aktiv ins Kampfgeschehen ein.
-- **Schinder** (noch nicht angelegt): Vom Diener als Kämpfer an der Seite der Helden erwähnt, ohne dass eine direkte Verbindung zu Huludan sichtbar wird.
+
+- **Der Splitter des Ewigen:** Huludans Gefängnis. Der Splitter wird in der Narbe unter dem Abyssal aufbewahrt und von Vorgultar bewacht. Er existiert „seit ewigen Zeiten“ und scheint den Titanen gebunden zu halten.
+
+- **Die Kristalle der Narbe:** Alle Kristalle in der Narbe reagieren unmittelbar auf Huludans Namen. Sie leuchten auf, geben Schimmer ab, und zumindest einer konnte sich in ein Wesen verwandeln. Das legt eine intrinsische Verbindung zwischen den Kristallen und dem Titanen nahe – möglicherweise sind sie Teil seiner Essenz oder seines Gefängnisses.
+
+- **Vasul:** Vasuls letztes Ziel war der Splitter des Ewigen, und seine Verbindung zu den Kristallen (die auf Huludan reagieren) deutet auf eine – nie ausgesprochene – Beziehung zwischen ihm und dem Titanen hin. Er wurde mit Huludans eigenem Schwert vernichtet.
+
+- **Vhar'Zul:** Wollte den Splitter des Ewigen öffnen, um Huludan zu befreien und als Lohn einen Schöpferwunsch zu erhalten. Dies belegt, dass Huludans Befreiung als Mittel zu einem Zweck begehrt war – und dass der Titan als so mächtig gilt, dass seine Freilassung einen Wunsch von kosmischem Ausmaß rechtfertigen würde.
+
+- **Esterossa:** Trägerin des Schwertes. Sie vollstreckte den tödlichen Hieb gegen Vasul und berührte unmittelbar danach den Splitter des Ewigen. Ihre Verbindung zu Huludan ist eine indirekte, über die Waffe vermittelt.
+
+- **Lindo Laut:** Sprach den Namen als Erster in der Narbe aus und setzte die machtvolle Reaktion in Gang. Er erkannte den Namen wieder, nachdem Lunara ihn zuvor erwähnt hatte.
+
+- **[Lunara Velora](/characters/lunara_velora.md):** Hatte den Namen Huludan zuvor in der Anwesenheit von Lindo Laut erwähnt und gab damit den Hinweis, der die Gruppe in der Narbe auf die Idee brachte, den Namen als Werkzeug einzusetzen.
 
 ## Chronologie
-1. **13.05.2026 – Portalkammer:** Die Gruppe begegnet dem geisterhaften Diener Huludans. Er berichtet von der Schlacht draußen und dem Ansturm der Vorgul’tar-Anhänger. Dann stellt er die Wahl: durch das Portal in ein neues Leben fliehen oder ihren Freunden beistehen. Während er langsam in die schwarze Flüssigkeit abtaucht, spricht er: „Ihr habt heute einen großartigen Schritt getan. Möge Huludan euch segnen.“
-2. **10.06.2026 – Narbe:** Im Kampf aktiviert Lindo Laut den Namen Huludan, indem er ihn wie einen Opernchor mit seiner Geige nach vorne richtet. Die Kristalle leuchten auf und bündeln eine Energiefront, die einen mächtigen feindlichen Magier von hinten verzerrt und ihn unter einem grauenvollen Schrei von lila Energie zerfressen lässt. Lindo warnt die Gruppe vor einem weiteren Kristall.
+
+**Vor der Kampagne:** Huludan wird zu einem unbekannten Zeitpunkt in den Splitter des Ewigen eingeschlossen. Sein Schwert existiert als separates Artefakt in der Welt. Der Titan bleibt eine obskure Macht, von der nur wenige wissen.
+
+**Session 2026-05-13:** Ein namenloser Diener Huludans erscheint der Heldengruppe, spricht einen Segen in Huludans Namen und verabschiedet sich mit einer Warnung. Die Gruppe erfährt erstmals von der Existenz Huludans, ohne den Titanen selbst zu sehen.
+
+**Session 2026-06-10:** In der Narbe erinnert sich Lindo Laut auf Lunara Veloras Hinweis an den Namen Huludan. Als er ihn ausspricht, leuchten sämtliche Kristalle hell auf und ein magischer Atemzug – „Richtung Osten“, aber „kein Ausatmen“ – wird hörbar. Eine zweite Nennung intensiviert das Phänomen, alle Kristalle beginnen zu funkeln. Später aktiviert Lindo Laut durch Rufen des Namens einen Kristall, der sich in eine monsterhafte Gestalt verwandelt und Vorgultars Diener verschlingt. Die Gruppe erkennt eine tiefgreifende Verbindung zwischen Huludan, den Kristallen und Vasul.
+
+**Session 2026-07-21:** Esterossa, im Besitz des leeren Schwertes, das ursprünglich Huludan gehörte, tötet Vasul mit einem einzigen Hieb – das Schwert durchtrennt Vasuls Essenz und absorbiert sie. Unmittelbar darauf berührt Esterossa den Splitter des Ewigen. Der Titan selbst tritt nicht in Erscheinung, aber sein Schwert und sein Gefängnis werden zu den Scheidepunkten der Handlung.
 
 ## Offene Fragen
-- Was genau ist Huludan? Ein Titan, ein Gott oder ein urzeitliches Wesen aus einer anderen Sphäre?
-- Welche Verbindung besteht zwischen Huludan und den Kristallen in der Narbe – sind sie Artefakte, Manifestationen oder Gefängnisse seiner Macht?
-- Wie steht Huludan konkret zu Vorgul’tar? Gibt es einen direkten Konflikt oder wirken beide nur durch ihre Dienerkultisten?
-- Der Diener sprach von einem Wiedersehen nach der Vernichtung Vorgul’tars – was plant Huludan für die Zukunft und welchen Preis wird die Gruppe dafür zahlen müssen?
+
+- **Huludans Natur:** Was genau ist Huludan für ein Titan? Seine Domäne, sein Zweck und seine Geschichte bleiben vollständig im Dunkeln.
+- **Gefangenschaft:** Warum und von wem wurde Huludan im Splitter des Ewigen eingesperrt? Welche Konsequenzen hätte eine Befreiung?
+- **Verbindung zu Vasul:** Welche Beziehung bestand zwischen Vasul und Huludan? Strebte Vasul danach, den Titanen zu befreien, ihn zu kontrollieren oder seine Macht für eigene Zwecke zu nutzen?
+- **Die Kristalle:** Sind die Kristalle der Narbe Teile von Huludan selbst, Manifestationen seiner Macht oder Bestandteile seines Gefängnisses?
+- **Der Diener:** Wer oder was ist das Wesen, das in Huludans Namen handelt, und welche Mission verfolgt es?
 
 ## Belege
-1. Session 2026-05-13 @ 01:37:18 (https://www.youtube.com/watch?v=4afPD9Q_5AY)  
-2. Session 2026-06-10 @ 01:24:24 (https://www.youtube.com/watch?v=_3tLSiT1tck)
+
+[P-49] Session 2026-05-13, 01:39:19 – Der Diener segnet die Gruppe in Huludans Namen.
+[P-53] Session 2026-06-10, 00:30:32–00:32:51 – Lindo Laut ruft Huludans Namen; Kristalle reagieren; magischer Sog; erneute Nennung; Kristall verwandelt sich in Monster.
+[P-55] Session 2026-07-21, 00:00:00–00:00:42 – Huludan wird als ursprünglicher Besitzer des Schwertes erwähnt; Esterossa tötet Vasul damit.

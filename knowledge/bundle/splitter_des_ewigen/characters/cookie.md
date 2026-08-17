@@ -1,121 +1,126 @@
 ---
 type: Character
 title: Cookie
-description: Frosch-Rangerin (Beast Bound) mit Begleiter Parry das Schnabeltier. Sie
-  trägt einen Kurzbogen und leuchtende Ringe (scherzhaft “Zwiebelring…
+description: Cookie ist eine froschartige Waldläuferin (Ranger) und ein zentrales
+  Mitglied der Abenteurergruppe. Sie gehört der Subklasse "Beast Bound"…
 tags:
 - characters
-timestamp: '2026-07-21T00:00:00Z'
+timestamp: '2025-11-25T00:00:00Z'
 id: CHAR_COOKIE
+aliases:
+- Cookie
+- Kuki
+- Celin's Frosch-Ranger
+status: disputed
 ---
 
 ## Überblick
 
-Cookie ist eine froschartige Waldläuferin (Beast Bound) vom Volk der Ribbits, die mit ihrem treuen Schnabeltier-Begleiter Perry durch die Lande zog. Sie war eine naturverbundene Kämpferin mit einem Faible für Sumpf und Wasser – obwohl sie ironischerweise in einer Höhle aufgewachsen war [7]. Ihre Markenzeichen waren ein Kurzbogen, magische Leuchtringe (von der Gruppe scherzhaft „Zwiebelringe“ genannt) und eine lange, greifende Zunge, die sie sowohl im Kampf als auch beim heimlichen Naschen von den Tellern anderer einsetzte [1][4][7].
-
-Cookie war eine zentrale Figur der Kampagne und gehörte zur ursprünglichen Heldengruppe. Sie kämpfte von der ersten bis zur zweiundzwanzigsten Session an der Seite ihrer Gefährten, bevor sie im Kampf gegen einen Lich fiel [22]. Ihr Tod erschütterte die Gruppe nachhaltig und wurde über viele Sessions hinweg betrauert.
-
-Die **Casa del Cookie**, ein Ort nordwestlich von Willauch, trägt ihren Namen. Dieser Ort verwandelte sich im Lauf der Zeit stark – vermutlich durch die dunkle Magie einer Hag. Die widersprüchlich wirkenden Beschreibungen des Dorfes sind auf diese reale Veränderung zurückzuführen, nicht auf Fehler in der Überlieferung [Kanon_Entscheidungen].
+Cookie ist eine froschartige Waldläuferin (Ranger) und ein zentrales Mitglied der Abenteurergruppe. Sie gehört der Subklasse "Beast Bound" an und wird stets von ihrem tierischen Begleiter Perry (auch Parry genannt), einem Schnabeltier mit Giftstachel, begleitet. Cookie stammt aus einer Höhle, liebt das Sumpfleben und das Schwimmen, hasst aber Kälte. Sie ist eine geschickte Bogenschützin, die mit einem Kurzbogen und exotischen Giftpfeilen kämpft, und verfügt über naturmagische Fähigkeiten, die sie über ihre glühenden Ringe („Glow Rings") kanalisiert. Mit ihrer „Zunge der Natur" kann sie Tiere, Pflanzen und andere Naturwesen verstehen und mit ihnen kommunizieren. Im Verlauf der Kampagne entwickelt sie sich von einer fröhlichen, manchmal naiv wirkenden Frohnatur zu einer erfahrenen, fürsorglichen Kämpferin, die mehrfach das Leben ihrer Gefährten rettet. Cookie stirbt schließlich heldenhaft im Kampf gegen einen Lich während eines Arenaturniers in Vilau.
 
 ## Rolle in der Kampagne
 
-Cookie war eine der Kernfiguren der Heldengruppe. Als Naturkundige und Waldläuferin übernahm sie oft die Rolle der Späherin und Aufklärerin. Ihre Fähigkeit, mit der Natur zu sprechen (Nature's Tongue), machte sie zur unverzichtbaren Vermittlerin in Konflikten mit naturverbundenen Wesen – so entschärfte sie etwa eine brisante Situation mit einem gefangenen Kuatau-Fischmenschen, indem sie erstmals dessen Laute übersetzen konnte [11]. Als Alchemistin stellte sie regelmäßig Pfeilgifte und Heilmittel her und versorgte die Gruppe mit taktischen Ressourcen [8][21].
+Cookie dient der Gruppe als vielseitige Fernkämpferin und Späherin. Ihre präzisen Bogenschüsse, oft aus dem Hinterhalt oder erhöhten Positionen, bringen wiederholt die entscheidende Wende in Kämpfen — so tötet sie das Tentakelmonster mit einem Schuss ins Auge [P-01], erledigt den Bugbären-Wächter [P-04], markiert den Dämon mit einem finalen Nackenschuss [P-09] und lähmt einen Assassinen mit einem Giftpfeil [P-15]. Ihre Naturmagie macht sie zu einer effektiven Kontrolleurin: Mit „Vicious Entangle" beschwört sie dornige Ranken, die Gegner fesseln oder töten.
 
-Ihre Rolle im Kampf war vielseitig: aus dem Hinterhalt schoss sie präzise Pfeile und setzte Naturzauber wie Rankengeflecht (Vicious Entangle) ein, um Gegner festzuhalten. Sie agierte flexibel zwischen Fernkampf und Unterstützungsmagie, konnte aber auch mit ihren Ringen im Nahkampf bestehen [2][6]. Gegen Ende ihrer Laufbahn entwickelte sie sich zur fähigen Heilerin und setzte Heilungsfelder ein [18].
+Darüber hinaus ist sie die Feldsanitäterin und Heilerin der Gruppe. Sie heilt Esterossa nach dessen Absturz mit einem kritischen Wurf [P-17], versorgt Brass' Wunden [P-10], setzt ein heilendes Feld ein [P-24, P-28] und rettet Lindo Laut mit einer geheimnisvollen roten Alchemistenphiole vor dem Ersticken [P-18]. Ihre Fähigkeit, die Sprache der Natur zu sprechen, macht sie zur entscheidenden Übersetzerin für die Kuatau in der Kuapaka-Siedlung [P-16] und ermöglicht ihr, Pilze zu befragen [P-06] oder einen Herzschlag in einem grünen Gebilde zu spüren [P-25].
 
-Ihre größte Rolle spielte sie vielleicht in den Herzen ihrer Gefährten: ihr unerschütterlicher Optimismus, symbolisiert durch ihr morgendliches Herumhüpfen um die Gruppe, um allen einen Hope-Punkt zu geben, machte sie zum emotionalen Anker [3]. Ihr Tod markierte einen Wendepunkt in der Kampagne.
+Cookie zeigt auch wiederholt handwerkliches und alchemistisches Geschick: Sie stellt neun vergiftete Pfeile aus einer Vulkanpflanze her [P-11], öffnet Schlösser mit ihrer Kompassnadel [P-12] und imprägniert ihre Feuerfliegen mit einem Antimykotikum gegen Sporenfallen [P-12].
 
 ## Wichtige Merkmale
 
+### Fähigkeiten und Kampfstil
+
+- **Bogenkampf:** Cookie ist eine exzellente Schützin mit einem Kurzbogen. Sie setzt verschiedene Spezialpfeile ein: Sumpfhai-Lähmungspfeile [P-10], mit Vulkanpflanzen-Enzym getränkte Giftpfeile [P-11], „High Gift"-Pfeile mit Lähmungswirkung [P-15] und Silberpfeile gegen Untote [P-08]. Sie schießt präzise und oft mit Vorteil, wenn sie aus dem Verborgenen angreift [P-01, P-08, P-09].
+- **Naturmagie (Glow Rings):** Über ihre glühenden Ringe kanalisiert sie Naturzauber: „Vicious Entangle" (dornige Ranken, die Gegner fesseln oder zerquetschen) [P-09, P-23, P-28], „Käferpanzer" zur Verteidigung [P-11, P-24], ein heilendes Feld in Nahreichweite [P-24], und einen Glühwürmchenangriff [P-08]. Sie kann zudem Wurzeln oder Eisranken beschwören [P-08, P-17, P-19].
+- **Sprache der Natur:** Cookie kann Tiere, Pflanzen und Naturwesen verstehen und mit ihnen kommunizieren. Sie befragt Pilze [P-06], übersetzt die Sprache der Kuatau [P-16] und spürt mit Naturinstinkt Gegner oder magische Blockaden auf [P-10, P-25].
+- **Alchemie und Heilkunst:** Sie stellt Giftpfeile her [P-11], setzt Antimykotika gegen Pilzsporen ein [P-12, P-28], verabreicht Gegengifte [P-27] und heilt Verbündete mit Erste-Hilfe-Koffern [P-17] oder Heiltränken [P-11].
+- **Akrobatik und Zunge:** Cookie ist wendig und springt mit akrobatischen Salti [P-27]. Sie hat eine lange, greifbare Zunge, mit der sie Gegner packen kann — so fängt sie den fliehenden Kenku Gulrak und wirft ihn zurück in die Zelle [P-06].
+
 ### Auftreten und Wesenszüge
 
-Cookie war ein kleiner, froschartiger Humanoider (Ribbit), der auf zwei Beinen lief [3]. Sie trug mehrere leuchtende Ringe, die scherzhaft „Zwiebelringe“ genannt wurden, und einen Kurzbogen als Hauptwaffe [1]. Gegen Kälte war sie mit „viel Flausch und Mütze“ ausgerüstet [5]. Ihr Markenzeichen war eine lange, greifende Zunge, mit der sie Gegner packen und durch die Gegend schleudern konnte [4].
+Cookie ist von kleiner, froschartiger Statur. Sie ist von Natur aus fröhlich und hüpft um ihre Gefährten herum, um ihnen Mut zu machen [P-04]. Sie nascht und stiehlt gerne — etwa Essen und Wein [P-06] — und legt Wert auf gute Manieren [P-06]. Kälte hasst sie, weshalb sie sich mit dicker Pelzkleidung, Handschuhen und Mütze einpackt; nur ihre Füße sind kälteresistent [P-08]. Im Kampf leidet sie gelegentlich unter Auftrittsangst und markiert Stress [P-27], aktiviert aber stets vorausschauend ihren Käferpanzer. In unheimlichen Umgebungen fühlt sie sich unwohl und äußert offen ihre Zweifel oder Angst, bleibt aber im entscheidenden Moment besorgt und entschlossen [P-08, P-14, P-18]. Sie zeigt tiefe Fürsorge für ihre Gefährten, insbesondere für Luli, das Pilzwesen, das sie befreit und liebevoll aufnimmt [P-12], sowie für Perry, den sie in Stressmomenten streichelt und beruhigt [P-28].
 
-Ihr Charakter war geprägt von kindlicher Neugier und manchmal vorschnellem Handeln – sie „hat ein großes Herz“, war aber „manchmal unvorsichtig“ [3]. Sie naschte heimlich von den Tellern anderer Gäste [4] und hüpfte morgens um ihre Gefährten herum, um ihnen gute Laune zu machen [3]. Trotz ihrer fröhlichen Art hatte sie panische Angst vor Spinnen und markierte vor entsprechenden Kämpfen regelmäßig Stress [8][20].
+### Ausrüstung
 
-### Fähigkeiten und Ausrüstung
-
-- **Natursprache (Nature's Tongue):** Cookie konnte mit Tieren und Pflanzen kommunizieren, was mehrfach plotentscheidend war [2][7][11][19]
-- **Vicious Entangle (Rankenzauber):** Sie beschwor dornenbewehrte Ranken aus dem Boden, die Gegner festhielten [15][17][20]
-- **Leuchtring-Kampf:** Ihre magischen Ringe dienten als Nahkampfwaffen [2]
-- **Präzisionsschüsse:** Mit ihrem Bogen erzielte sie regelmäßig kritische Treffer, etwa gegen den Nacken eines Dämons oder das Knie eines Bugbären [3][6]
-- **Käferpanzer:** Sie konnte Insekten zu einem natürlichen Rüstungspanzer formieren [18]
-- **Glühwürmchen-Zauber:** Sie rief magische Fireflies herbei, die Gegner verbrennen konnten [5]
-- **Alchemie und Giftkunde:** Sie stellte Giftpfeile aus Vulkanpflanzen her, analysierte Substanzen und braute Heilmittel [7][8][20][21]
-- **Heilungsfähigkeiten:** Sie setzte Heilungsfelder ein und rettete Esterossa nach einem schweren Absturz [13][18]
-- **Greifzunge:** Ihre lange Zunge diente als Waffe und Werkzeug [4]
-
-### Begleiter
-
-Ihr ständiger Begleiter war **Perry**, ein Schnabeltier mit einem Giftstachel, mit dem es Gegner lähmen und verletzen konnte [1][2][13]. Cookie nutzte Perry auch als Späher und zur emotionalen Beruhigung in Stresssituationen [10][14][17]. Vor einer gefährlichen Zwischenebene ließ sie Perry zurück, was zeigt, wie sehr sie um ihn besorgt war [16].
+- Lederrüstung
+- Kurzbogen mit verschiedenen Gift- und Spezialpfeilen
+- Glowing Rings (Naturmagie-Fokus)
+- Kaputter Kompass / Kompassnadel (dient als Dietrich)
+- Erste-Hilfe-Koffer
+- Geheimnisvolle rote Alchemistenphiole [P-18]
+- Ender Chest (Beute aus dem Turm) [P-11]
+- Zeremonialdolch (von Kultisten geplündert) [P-19]
+- Voodoo-Puppe (im Bauernhaus gefunden) [P-04]
 
 ## Beziehungen und Verbindungen
 
-- **[Dodo](/characters/dodo.md):** Ihr engster Kampfgefährte. Dodo warf sich mehrfach schützend vor sie, etwa als sie im letzten Raum eines Dungeons fast getötet wurde [8]. Nach ihrem Tod war er es, der Nyrella die Nachricht überbrachte und ihr Grab beschrieb [22].
-- **[Lindo Laut](/characters/lindo_laut.md):** Eine besondere Verbindung; Cookie gab ihm in einer lebensgefährlichen Situation eine mysteriöse rote Phiole, die sein Leben rettete und den Effekt einer Prüfung brach [14]. Sie versuchte später, während einer düsteren Transformation an seine Liebe zur Musik zu appellieren [15]. Lindo Laut blieb nach ihrem Tod länger an ihrem Grab und besuchte es mehrfach [23][25].
-- **Esterossa:** Gemeinsam untersuchten sie eine Vulkanpflanze und ernteten deren aphrodisierendes Extrakt [7]. Cookie rettete ihm nach einem Absturz mit kritischem Heilwurf das Leben [13].
-- **[Nyrella](/characters/nyrella.md):** Cookie und Nyrella schlichen gemeinsam zur Aufklärung voraus [17]. Nach Cookies Tod zeigte Nyrella tiefe Trauer und ließ ihren Begleiter Nyruk heulen [22].
-- **Rodek:** Von ihm kaufte sie zehn Lähmungspfeile [7].
-- **Nerash (Goblin-Götter):** In der Demi-Ebene traf sie auf eine geisterhafte Gestalt, nachdem sie einen Speer aufhob [9]. Später segneten die Goblin-Götter sie mit einem heiligen Pfeilangriff [17] und verstärkten ihre Fireflies-Magie mit einem grünen Blitz [20].
+- **Perry / Parry:** Cookies tierischer Begleiter, ein Schnabeltier mit Giftstachel. Perry kämpft an ihrer Seite, setzt Goblins außer Gefecht [P-02] und lähmt Assassinen [P-15]. Cookie sorgt sich sehr um ihn — sie ist beunruhigt, als er nicht mit in die Zwischenebene teleportiert wird [P-20], und streichelt ihn in Stressmomenten [P-28].
+- **Lindo Laut:** Ein enges Vertrauensverhältnis. Cookie unterstützt Lindo emotional, hält seine Hand und ermutigt ihn, der Gruppe zu vertrauen [P-14]. Sie rettet ihm mit der roten Phiole das Leben [P-18] und warnt ihn vor den Verlockungen dunkler Mächte [P-19]. Umgekehrt blickt sie fragend zu ihm, als es um den Seelenvertrag geht [P-20].
+- **Dodo:** Die beiden kämpfen oft zusammen. Dodo rettet Cookie mehrfach das Leben — aus dem Maul der Mimic [P-11], vor dem Blutpendel am Altar von Uhoriaks [P-28] — und wirft sich im Kampf schützend vor sie [P-11]. Cookie lobt Dodos Mut [P-08] und teilt seine Skepsis gegenüber der Aufrichtigkeit von Inselbewohnern [P-06].
+- **Esterossa:** Cookie heilt Esterossa nach schweren Verletzungen [P-17] und arbeitet mit ihm bei der Herstellung von Giftpfeilen aus der Vulkanpflanze zusammen [P-11].
+- **Rotunas:** Cookie heilt Rotunas und kämpft an seiner Seite, etwa wenn sie im Kampf gegen Skelette und den Dämon ihre Rollen koordinieren [P-09].
+- **Nyrella:** Nyrella trauert tief um Cookie und würdigt sie als starke Kriegerin, an deren Seite sie immer gerne gekämpft hat [P-30].
+- **Luli:** Ein Pilzwesen, das Cookie aus einer Zelle befreit und liebevoll aufnimmt („Vielleicht sind wir ja deine neue Familie") [P-12]. Sie trauert tief um seinen späteren Verlust.
 
 ## Chronologie
 
-- **Session 1 (2025-03-26):** Erstes Auftreten. Cookie versteckt sich im Baum, bleibt unentdeckt und tötet ein Monster mit einem Pfeil ins Auge. Untersucht zuvor die Schriftrolle und erkennt die Bedeutung des Kessels [1].
-- **Session 2 (2025-04-01):** Führt Perry als Begleiter ein. Nutzt Leuchtringe im Nahkampf. Versteckt sich meisterhaft und entdeckt ein unidentifiziertes gehörntes Wesen. Zerschießt einen Trank, den ein Goblin trinken will [2].
-- **Session 3 (2025-04-15):** Gibt der Gruppe durch Umherhüpfen Hope. Findet eine Voodoo-Puppe. Tötet Bugbären. Erleidet durch Rückschlagmagie der Hexe Lenra 4 Schaden, als sie ihre Puppe mit einem Pfeil durchbohren will [3].
-- **Session 4 (2025-04-30):** Auf den Sanddorn-Inseln erlebt sie eine beunruhigende Vision, nachdem sie mit sprießenden Pilzen kommuniziert: ein Pilzwald, leuchtende Kristalle und ein hölzernes Tor rufen sie – sie empfindet es als bedrohlich. Setzt ihre Zunge ein, um den Kenku Gulrak zu packen [4].
-- **Session 5 (2025-05-14):** Ausgerüstet gegen Kälte. Findet drei heilige Pfeile und setzt einen für einen kritischen Treffer ein. Entdeckt das Buch über Belorus und aktiviert einen Schutzkristall, der Untote vertreibt. Nach der Konfrontation mit Belorus zeigt sie sich frustriert über ihr eigenes Handeln [5].
-- **Session 6 (2025-05-27):** Klettert auf einen Vorsprung und tötet einen Dämon mit einem Pfeil in den Nacken – der Gruppe von oben zuwinkend und grinsend. Ihr kaputter Kompass wird als mögliche Fehlerquelle erwähnt [6].
-- **Session 7 (2025-06-03):** Betont ihre Liebe zum Wasser und Sumpf, obwohl sie in einer Höhle aufwuchs. Kauft zehn Lähmungspfeile von Rodek. Erntet mit Esterossa die Vulkanpflanze. Leistet Erste Hilfe an Brass [7].
-- **Session 8 (2025-06-10):** Stellt neun Giftpfeile aus der Vulkanpflanze her. Entkommt zweimal knapp dem Tod: wird von einer Mimic gepackt und von Dodo gerettet, später von Froschwesen attackiert und erneut von Dodo geschützt. Markiert Stress aus Angst vor Spinnen. Legt ihr Tagebuch in die Enderkiste [8].
-- **Session 9 (2025-07-09):** Hebt einen Speer auf, der eine geisterhafte Gestalt erscheinen lässt. Fühlt sich in der Demi-Ebene unwohl und erhält mehrfach Stress. Umarmt am Ende Lindo Laut tröstend und erhält ein Nerash-Totem [9].
-- **Session 10 (2025-07-22):** Wacht als Erste auf und entdeckt Eindringlinge. Schützt die Gruppe mit nassen Tüchern vor Betäubungsgas. Schießt einen Assassinen mit Lähmungspfeil nieder, wird aber schwer verletzt und fällt in Ohnmacht. Erhält eine bleibende Narbe [10].
-- **Session 11 (2025-07-29):** Übersetzt erstmals die Laute der Kuatau und entschärft damit einen Konflikt. Fungiert als Vermittlerin zwischen Dorfbewohnern und dem Fischmenschen. Bietet ihre Empty Chest an, um gefährliche Amulette zu sichern [11].
-- **Session 13 (2025-08-12):** Heilt Esterossa kritisch nach einem Absturz mit Hope-Einsatz. Beschwört Eisranken im Kampf gegen Ghule; Perry verteidigt sie mit Giftstachel. Zeigt Misstrauen gegenüber Hendrik [13].
-- **Session 14 (2025-08-20):** Spricht sich gegen ein Opferritual aus. Gibt Lindo Laut eine mysteriöse rote Phiole, die sein Leben rettet. Hat eine leichte Panikattacke und beruhigt sich mit Perry [14].
-- **Session 15 (2025-09-02):** Fesselt Kultisten mit Eisdornen-Ranken. Plündert ein Lager und nimmt einen zeremoniellen Dolch mit. Führt ein Ablenkungsmanöver mit Perry aus und tötet einen Ghoul per Kopfschuss. Appelliert an Lindo Lauts Liebe zur Musik während dessen Transformation. Wird durch einen finalen Wunsch geheilt [15].
-- **Session 16 (2025-09-06):** Widersteht mentalen Einflüssen einer Zwischenebene mit kritischem Wurf. Nutzt ihren Jagdinstinkt, um zwei Kreaturen zu erspüren, die später geopfert werden. Weigert sich, einen Seelenvertrag zu unterschreiben. Lässt Perry zurück [16].
-- **Session 18 (2025-09-30):** Zieht Käfer an, um einen natürlichen Panzer zu bilden. Hält sich im Kampf eher im Hintergrund und setzt Heilungsfelder ein. Ist emotional berührt von einer Feier [18].
-- **Session 19 (2025-10-07):** Sammelt eine Probe lila Kristalle. Analysiert die Kristallstruktur und erkennt, dass grüne Kristalle das Wachstum steuern. Spürt eine vergiftete Präsenz in einer grünen Struktur. Setzt Know Your Enemy gegen einen Golem ein [19].
-- **Session 20 (2025-10-21):** Markiert Stress vor einem Spinnenkampf. Immobilisiert einen Werwolf. Verabreicht Esterossa ein Vulkangelixier und setzt verschiedene Pfeilgifte gegen die Phasenspinne ein. Beeindruckt Lady Lyra mit einem magischen Sternenhimmel aus Fireflies, verstärkt durch einen grünen Blitz der Goblin-Götter [20].
-- **Session 21 (2025-10-28):** Setzt antimykotisches Pulver gegen Sporen ein und bastelt Schutzmasken. Perry ist ängstlich und muss beschwichtigt werden. Unterliegt kurz einer Gedankenkontrolle und greift eine Drachenstatue an, wird aber von Dodo gerettet [21].
-- **Session 22 (2025-11-18):** **Tod.** Cookie stirbt im Kampf gegen einen Lich während der Turnier-Prüfungen. Dodo und Lindo Laut bestatten sie im Wald; ihr Grab wird zu einem Ort der Trauer und des Gedenkens. In der Taverne wird ihr mit einer Gedenkrunde und durch einen Marktschreier gedacht, der ihren heldenhaften Tod verbreiten soll [22].
-- **Posthum (Sessions 23-26):** Ihr Tod wird mehrfach thematisiert. Lindo Laut bleibt länger an ihrem Grab [23]. Tindrael bedauert ihren Verlust [24]. Ein lila leuchtender Altar erinnert Lindo Laut an den Altar, an dem sie starb [25]. Lunara Velora erwähnt sie im Abschlussgespräch – mit dem Kommentar, dass Cookie in dieser Phase keine Rolle mehr spielte [26].
+### Frühe Abenteuer
+
+Cookie kämpft bereits in den ersten Sessions mit der Gruppe gegen ein Tentakelmonster, das sie mit einem präzisen Schuss ins Auge tötet [P-01], und gegen Goblins und Bugbären im Sumpf [P-02, P-04]. Sie findet eine Voodoo-Puppe und versucht, sie gegen die Hexe Lenra einzusetzen, verletzt sich dabei aber nur selbst [P-04].
+
+### Reise zu den Sundown-Inseln und in die Berge
+
+Auf der Schiffsreise fühlt sie sich unwohl und äußert Zweifel an der Aufrichtigkeit der Inselbewohner [P-06]. Sie befragt Pilze und wird von einer düsteren Vision eines Pilzwaldes mit Kristallen und einem rufenden Holztor heimgesucht [P-06]. In den verschneiten Bergen hasst sie die Kälte, entdeckt aber wichtige Gegenstände wie den Schutzkristall und Belorus' Tagebuch und rettet die Gruppe mit einem kritischen Silberpfeil-Schuss auf die untote Wache [P-08].
+
+### Sumpf, Turm und Unterwasserstadt
+
+Im Sumpf fühlt sie sich wohl und genießt das Schwimmen [P-10]. Sie kauft Sumpfhai-Lähmungspfeile und sammelt die Flüssigkeit der Vulkanpflanze, aus der sie später vergiftete Pfeile herstellt [P-11]. Im Turm wird sie von einer Mimic fast getötet und überlebt nur dank ihrer Rüstung und Dodos Rettung; später wird sie von Froschkreaturen erneut schwer verletzt und zeigt Erschöpfung und Zweifel [P-11].
+
+### Hexenturm und Pilzgoblins
+
+Cookie beweist sich als geschickte Schlosserin und entschärft eine Sporenfalle [P-12]. Sie befreit das Pilzwesen Luli, das sich an sie schmiegt, und trauert später um seinen Verlust. Sie findet einen Stress-Trank und einen Seelenstein und plädiert früh für den Rückzug [P-12].
+
+### Ebene und Kapelle
+
+In der unheimlichen Ebene fühlt sie sich unwohl und sammelt Stresspunkte [P-14]. Sie hebt den mysteriösen Speer auf, löst damit eine Geistererscheinung aus und legt ihn später wieder hin [P-14]. Sie unterstützt Lindo emotional und ruft zu Esterossa, die Kette zu durchtrennen [P-14].
+
+### Kampf mit dem Lich und Tod
+
+Während eines Arenaturniers in Vilau kämpft die Gruppe gegen einen übermächtigen Lich. Cookie kämpft stark, kann aber nicht gerettet werden und stirbt heldenhaft [P-30]. Lindo Laut und Dodo bestatten sie an einem schönen Fleck im Wald; Lindo erweist ihr die letzte Ehre [P-30, P-31]. Die Nachricht von ihrem Tod verbreitet sich in der Stadt; der Barkeeper spendiert eine Trauerrunde, und die Gruppe lässt sie hochleben [P-30]. Nyrella und Nyruk trauern tief um sie — Nyrella nennt sie eine starke Kriegerin und sagt, ihr Verlust sei ein Verlust für die ganze Welt [P-30].
 
 ## Offene Fragen
 
-- Die genaue Natur ihrer geisterhaften Begegnung in der Demi-Ebene (die Gestalt beim Aufheben des Speers) blieb ungeklärt. Wer oder was erschien ihr dort? [9]
-- Die Herkunft der mysteriösen roten Phiole, mit der sie Lindo Laut das Leben rettete, wurde nie vollständig aufgeklärt [14].
-- Ihr kaputter Kompass, der mehrfach als mögliche Fehlerquelle erwähnt wurde, wurde nie repariert oder näher untersucht [6][16].
-- Die düstere Vision mit dem Pilzwald und dem hölzernen Tor von den Sanddorn-Inseln wurde nicht abschließend aufgelöst. Rief das Tor sie tatsächlich – und wohin? [4]
+- Was genau war die rote Alchemistenphiole, mit der Cookie Lindo Laut rettete, und woher stammte sie? Cookie erwähnt nur, sie habe sie „von einem Alchemisten zugesteckt bekommen" und wisse nicht genau, was sie bewirkt, außer dass sie widerstandsfähiger, stärker und mutiger mache [P-18].
+- Welche Bewandtnis hat Cookies kaputter Kompass? Sie nutzt die Nadel als Dietrich [P-12] und zückt den Kompass in der Zwischenebene in der Hoffnung auf Orientierung, doch er zeigt nichts an [P-20].
+- Was geschah mit der Ender Chest aus dem Turm, die Cookie erhielt? Sie wird erwähnt [P-11], aber nicht, was sie enthielt oder ob sie geöffnet wurde.
+- Warum wurde Cookies Fußkälteresistenz nie näher erklärt? Sie erwähnt beiläufig, dass ihre Füße kälteresistent seien, während der Rest ihres Körpers Kälte hasst [P-08].
+
+## Offene Konflikte
+
+- **Cookies Tod:** Belege [P-30] und [P-31] beschreiben ausführlich Cookies Tod im Kampf gegen einen Lich während des Arenaturniers in Vilau, die Trauer der Gruppe und ihre Bestattung. Alle übrigen Belege ([P-01] bis [P-28]) zeigen Cookie als lebendige, aktiv handelnde Teilnehmerin an den Ereignissen. Ein zeitlicher Ablauf, der beides vereinbaren könnte, ist aus den Belegen nicht ersichtlich.
 
 ## Belege
 
-[1] Session 2025-03-26, 01:40:14 – https://www.youtube.com/watch?v=ROCKGeeRUFw
-[2] Session 2025-04-01, 00:04:35 – https://www.youtube.com/watch?v=LZIuUzc3F18
-[3] Session 2025-04-15, 00:03:45 – https://www.youtube.com/watch?v=YCpAz_syjaY
-[4] Session 2025-04-30, 01:42:16 – https://www.youtube.com/watch?v=fsCOiSkKKTE
-[5] Session 2025-05-14, 01:26:16 – https://www.youtube.com/watch?v=5eAEDN5ra-4
-[6] Session 2025-05-27, 01:54:20 – https://www.youtube.com/watch?v=bamCIB_CkR8
-[7] Session 2025-06-03, 00:05:35 – https://www.youtube.com/watch?v=jtYR4Je0a18
-[8] Session 2025-06-10, 00:14:11 – https://www.youtube.com/watch?v=cLkCu3Iq3y8
-[9] Session 2025-07-09, 00:26:54 – https://www.youtube.com/watch?v=XOnHa6CmDbo
-[10] Session 2025-07-22, 00:55:34 – https://www.youtube.com/watch?v=BRRCUgW4xRo
-[11] Session 2025-07-29, 01:14:05 – https://www.youtube.com/watch?v=XXgO5Ht4Q0A
-[12] Session 2025-08-05, 00:00:01 – https://www.youtube.com/watch?v=cRNIWJz_ATo (Spielerzuordnung)
-[13] Session 2025-08-12, 00:18:54 – https://www.youtube.com/watch?v=vHIjua0BZ9Y
-[14] Session 2025-08-20, 00:04:11 – https://www.youtube.com/watch?v=-XbO3FLSL_I
-[15] Session 2025-09-02, 01:49:40 – https://www.youtube.com/watch?v=TLZOH7TlGhk
-[16] Session 2025-09-06, 00:23:39 – https://www.youtube.com/watch?v=vo1xnyLQDJk
-[17] Session 2025-09-23, 00:27:32 – https://www.youtube.com/watch?v=DGzfqVigS0g
-[18] Session 2025-09-30, 00:03:37 – https://www.youtube.com/watch?v=bUT7Mc2hjUY
-[19] Session 2025-10-07, 00:27:55 – https://www.youtube.com/watch?v=qVAF_54S8Vw
-[20] Session 2025-10-21, 00:20:11 – https://www.youtube.com/watch?v=sxFhbtwoefA
-[21] Session 2025-10-28, 00:22:00 – https://www.youtube.com/watch?v=V6NzNakqxXM
-[22] Session 2025-11-18, 00:09:30 – https://www.youtube.com/watch?v=w__ahowb9p0
-[23] Session 2025-11-25, 00:03:22 – https://www.youtube.com/watch?v=wd5R4fJfngY
-[24] Session 2026-03-10, 00:40:57 – https://www.youtube.com/watch?v=Kr9_AC2XtOw
-[25] Session 2026-04-07, 00:24:06 – https://www.youtube.com/watch?v=MAuQPMNY548
-[26] Session 2026-07-21, 01:58:55 – https://www.youtube.com/watch?v=KNV4oNGJ0tw
-
-Kanon_Entscheidungen: Casa del Cookie (aus Kanon_Entscheidungen.md)
+[P-01] Session 2025-03-26 @ 01:46:26 (https://www.youtube.com/watch?v=ROCKGeeRUFw)
+[P-02] Session 2025-04-01 @ 00:03:47 (https://www.youtube.com/watch?v=LZIuUzc3F18)
+[P-04] Session 2025-04-15 @ 01:44:25 (https://www.youtube.com/watch?v=YCpAz_syjaY)
+[P-06] Session 2025-04-30 @ 00:05:07 (https://www.youtube.com/watch?v=fsCOiSkKKTE)
+[P-08] Session 2025-05-14 @ 00:04:12 (https://www.youtube.com/watch?v=5eAEDN5ra-4)
+[P-09] Session 2025-05-27 @ 01:53:06 (https://www.youtube.com/watch?v=bamCIB_CkR8)
+[P-10] Session 2025-06-03 @ 00:05:35 (https://www.youtube.com/watch?v=jtYR4Je0a18)
+[P-11] Session 2025-06-10 @ 00:15:18 (https://www.youtube.com/watch?v=cLkCu3Iq3y8)
+[P-12] Session 2025-06-17 @ 01:36:50 (https://www.youtube.com/watch?v=tl76B4V0io8)
+[P-14] Session 2025-07-09 @ 00:24:58 (https://www.youtube.com/watch?v=XOnHa6CmDbo)
+[P-15] Session 2025-07-22 @ 00:55:34 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
+[P-16] Session 2025-07-29 @ 01:14:14 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
+[P-17] Session 2025-08-12 @ 00:18:29 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)
+[P-18] Session 2025-08-20 @ 00:56:02 (https://www.youtube.com/watch?v=-XbO3FLSL_I)
+[P-19] Session 2025-09-02 @ 01:50:14 (https://www.youtube.com/watch?v=TLZOH7TlGhk)
+[P-20] Session 2025-09-06 @ 00:23:39 (https://www.youtube.com/watch?v=vo1xnyLQDJk)
+[P-23] Session 2025-09-23 @ 01:39:04 (https://www.youtube.com/watch?v=DGzfqVigS0g)
+[P-24] Session 2025-09-30 @ 00:36:09 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[P-25] Session 2025-10-07 @ 00:17:45 (https://www.youtube.com/watch?v=qVAF_54S8Vw)
+[P-27] Session 2025-10-21 @ 00:04:35 (https://www.youtube.com/watch?v=sxFhbtwoefA)
+[P-28] Session 2025-10-28 @ 01:20:31 (https://www.youtube.com/watch?v=V6NzNakqxXM)
+[P-30] Session 2025-11-18 @ 00:09:47 (https://www.youtube.com/watch?v=w__ahowb9p0)
+[P-31] Session 2025-11-25 @ 00:03:22 (https://www.youtube.com/watch?v=wd5R4fJfngY)

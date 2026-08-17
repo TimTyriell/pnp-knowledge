@@ -1,27 +1,40 @@
 ---
 type: NPC
 title: Leandras
-description: Ein menschlicher Magier, der zurückgezogen in einem kleinen Haus lebt.
-  Er ist genervt von der Störung, glaubt der Warnung aber schließlich.…
+description: 'Leandras – in den Aufzeichnungen auch als Lendras geführt – ist ein
+  Menschenmagier, der der Gruppe in drei Phasen begegnet: zunächst als mü…'
 tags:
 - npcs
 timestamp: '2025-07-29T00:00:00Z'
 id: NPC_LENDRAS
+aliases:
+- Lendras
 ---
 
-# Leandras
+**Leandras** – in den Aufzeichnungen auch als **Lendras** geführt – ist ein Menschenmagier, der der Gruppe in drei Phasen begegnet: zunächst als mürrischer Einzelgänger, dann als geheimnisvoller Helfer in [Gemata](/locations/gemata.md) und schließlich als Auftraggeber zur Verteidigung von [Windungs](/locations/windung.md).
 
-Leandras ist ein menschlicher Magier, der zurückgezogen in einem kleinen, magisch gesicherten Haus lebt. Er beorderte die Gruppe nach Windung, wo er sie empfing und in die Situation vor Ort einführte. Bei einem Angriff von Dranaras Soldaten griff er mit Schlaf- und Feuerzaubern ein, zeigte sich aber zugleich verwirrt über die unerwarteten Wendungen.
+## Rolle und Wesen
 
-## Rückzugsort und erste Begegnung
+Leandras lebt zurückgezogen in einem kleinen, vergitterten Haus und wirkt mürrisch; er wünscht vor allem seine Ruhe. Als [Valeria](/characters/valeria.md) und [Rotunas](/characters/rotunas.md) ihn wegen einer Goblin-Bedrohung um Hilfe bitten, verweist er sie an den Bürgermeister und verweigert jede Mithilfe. Seine Haustür ist mit einer magischen Rune gesichert, die er selbst verschließt – ein Hinweis darauf, dass er womöglich etwas zu verbergen hat.
 
-Leandras bewohnt ein kleines Haus, das er mit magischen Sicherungen geschützt hat. Als die Gruppe ihn dort aufsucht, reagiert er zunächst genervt von der Störung, lässt sich aber schließlich von der Dringlichkeit ihrer Warnung überzeugen. Sein Verhalten deutet darauf hin, dass er Geheimnisse hütet, die über den unmittelbaren Anlass hinausgehen.
+In der folgenden Begegnung zeigt er sich tapfer, wirkt aber weiterhin geheimnisvoll und treibt zur Eile an. Er scheint gute Absichten zu verfolgen und ist sichtlich erleichtert, als sich der von ihm befreite [Voras](/npcs/voras.md) als Verbündeter entpuppt. Bei der Verteidigung Windungs tritt er schließlich als wissbegieriger Zauberer auf, der die Gruppe selbst herbeigerufen hat. Er vertraut auf die Fähigkeiten der Helden, ist von den überraschenden Wendungen allerdings völlig überfordert und respektiert am Ende die ungewöhnliche Lösung.
 
-## Eingreifen in Windung
+## Magische Fähigkeiten
 
-Leandras hatte die Gruppe ursprünglich nach Windung beordert. Als sie eintrifft, begrüßt er sie, erläutert die Lage und führt sie zu den Dorfbewohnern. Während des folgenden Angriffs durch Dranaras Soldaten setzt er einen Schlafzauber gegen deren Anführerin ein und beschützt verwundete Gefährten mit Feuerbällen. Nach dem Gefecht zeigt er sich verwirrt über die Entwicklungen, zollt jedoch [Lindo Laut](/characters/lindo_laut.md) und Rotunas Respekt für ihre diplomatischen Bemühungen.
+- Sichert seine Tür mit einer magischen Rune, die er selbst verschließt.
+- Tötet eine rabenartige Kreatur mit einem Blitz.
+- Schleudert in Windungs wütend einen Feuerball in eine Menge Soldaten und tötet die Angreifer, um seine Verbündeten zu schützen.
+- Betäubt die aufgebrachte [Asleina](/npcs/asleina.md) mit einem Schlafzauber.
+- Bricht den Bann, der Voras gefangen hält.
+
+## Verlauf
+
+- **Session 2025-04-09:** Leandras weist Valeria und Rotunas ab, die wegen der Goblin-Bedrohung an seine Tür kommen. Er bleibt bis zum Ende der Begegnung unkooperativ.
+- **Session 2025-04-23:** Sein Haus wird während des Angriffs der Hexe Hack von einer rabenartigen Kreatur und einem Grottenschrat attackiert. Er kämpft, wird verletzt und tötet die Kreatur. Nach der Rettung gibt er [Esterossa](/characters/esterossa.md) einen magischen Schlüssel und führt die Gruppe in die Katakomben, um Voras zu erwecken; dort bricht er den Bann.
+- **Session 2025-07-29:** Als Auftraggeber begrüßt er die Gruppe zur Verteidigung Windungs. Als Soldaten den Kapitän und [Miaomani](/npcs/miaomani.md) angreifen, schreitet er mit einem Feuerball ein. Er bietet an, beim Kampf gegen die Kuatau zu helfen.
 
 # Belege
 
-1. Session 2025-04-09 @ 00:08:48 (https://www.youtube.com/watch?v=1PWdwvun5ow) – Beschreibung des zurückgezogen lebenden Magiers, seines Hauses und seiner Reaktion auf die Störung.
-2. Session 2025-07-29 @ 00:06:29 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A) – Leandras‘ Rolle in Windung: Beorderung der Gruppe, Empfang, Erklärung der Situation, Einsatz von Schlaf- und Feuerzaubern sowie Respektbekundungen gegenüber Lindo Laut und Rotunas.
+[P-03] Session 2025-04-09 @ 00:08:51 – https://www.youtube.com/watch?v=1PWdwvun5ow
+[P-05] Session 2025-04-23 @ 01:28:49 – https://www.youtube.com/watch?v=z3C-bewKqUs
+[P-16] Session 2025-07-29 @ 01:55:02 – https://www.youtube.com/watch?v=XXgO5Ht4Q0A

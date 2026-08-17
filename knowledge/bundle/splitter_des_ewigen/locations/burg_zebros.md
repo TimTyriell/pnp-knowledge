@@ -1,65 +1,67 @@
 ---
 type: Location
 title: Burg Zebros
-description: Die Burg des einstigen Königs Zebros, heute eine Ruine mit intakt wirkendem
-  Hauptgebäude. Sie beherbergt die Statuen von König Zebros und z…
+description: Zebros bezeichnet ein altes Königreich, das im Götterkrieg zerstört wurde.
+  Die Hauptstadt trug denselben Namen, ebenso ein Berg – der Berg…
 tags:
 - locations
-timestamp: '2025-09-09T00:00:00Z'
+timestamp: '2025-06-25T00:00:00Z'
 id: LOC_BURG_ZEBROS
+subtype: Dungeon
 aliases:
 - Berg Zebros
 ---
 
 ## Überblick
 
-Die Burg Zebros, auch als „Berg Zebros“ bezeichnet, ist die Ruine der einstigen Festung von König Zebros. Das Hauptgebäude scheint trotz des ruinösen Zustands der Anlage noch intakt zu sein. Die Burg liegt auf einem großen Berg, der von Wasser umgeben und nur über eine Brücke zugänglich ist. Im Inneren finden sich alte Stallungen, Statuen des Königs und zweier Gottheiten sowie der Thronsaal, in dem der Hüne [Belorus](/npcs/belorus.md) residiert. Später treten Bogenschützen auf den Mauern auf, und eine Untotenarmee hat hier offenbar ihren Ursprung.
+Zebros bezeichnet ein altes Königreich, das im Götterkrieg zerstört wurde. Die Hauptstadt trug denselben Namen, ebenso ein Berg – der Berg Zebros. Vom Königreich selbst sind heute nur noch Ruinen und Relikte erhalten. Der Berg Zebros hingegen steht weiterhin und ist in der Gegenwart als „Burg Zebros“ bekannt. Er wird von einem dunklen Paladin beherrscht und ist von Untoten überrannt.
 
 ## Rolle in der Kampagne
 
-Die Burg ist Schauplatz einer frühen Expedition der Heldengruppe, bei der sie die Ruine erkundet und auf [Belorus](/npcs/belorus.md) trifft. In einem späteren Handlungsstrang ist die Umgebung des Berges relevant: Das am Fuß liegende Dorf Steinbachtal wird von einer vom Berg kommenden Untotenarmee bedroht, was die Burg in einen größeren Konflikt rückt.
+Der Berg Zebros ist ein strategisch bedeutsamer Ort im Machtgefüge der Region. Graf Voras plant, ihn mit seiner Nekromantie zu erobern, um seine eigene Macht auszubauen. Der Abenteurer Dodo war bereits vor Ort und kämpfte gegen den dunklen Paladin, der den Berg beherrscht. Die Burg stellt damit ein aktuelles Konfliktfeld dar, das sowohl mit Voras' Ambitionen als auch mit Dodos persönlicher Vergangenheit verknüpft ist.
 
 ## Wichtige Merkmale
 
-### Lage und Zugang
-Der Berg Zebros erhebt sich über dem Steinbachtal und ist vollständig von Wasser umschlossen. Der einzige Zugang führt über eine Brücke, was die Anlage schwer einnehmbar macht. Ohne Fackeln oder Nachtsicht ist die Umgebung bei Dunkelheit kaum einsehbar.
+### Lage
 
-### Bauwerk und Innenräume
-- **Eingang:** Eine verschlossene Tür, die sich mit einem Dietrich oder einem spitzen Werkzeug öffnen lässt, schließt sich automatisch, sobald jemand eintritt.
-- **Stallungen:** Unmittelbar links nach dem Eingang befinden sich Stallungen, die jedoch nicht für Tiere gedacht waren. Die leeren Plätze deuten darauf hin, dass hier einst Statuen oder „eingefrorene Viecher“ (so eine Vermutung der Gruppe) standen.
-- **Magisch versiegelte Tür:** Weiter im Inneren gibt es eine Tür, die nur mit Magie zu öffnen ist – ein deutliches Hindernis für Eindringlinge.
-- **Thronsaal:** Hinter der versiegelten Tür liegt der Thronsaal, in dem [Belorus](/npcs/belorus.md) sein Lager aufgeschlagen hat.
-- **Verteidigungsanlagen:** Die gesamte Burg ist mit mechanischen oder magischen Fallen gesichert. Auf den Mauern postierte Bogenschützen sorgen für zusätzlichen Schutz.
+Die genaue geografische Einordnung des Berges ist bislang nicht belegt. Er liegt in einer Region, die zum Einflussgebiet von Graf Voras gehört oder an dieses angrenzt.
 
-### Bewohner und Präsenzen
-- **Belorus:** Ein Hüne, der den Thronsaal bewohnt.
-- **Bogenschützen:** Unbekannte Verteidiger, die später die Mauern besetzen.
-- **Untotenarmee:** Spätere Ereignisse deuten darauf hin, dass eine Streitmacht von Untoten von der Burg oder dem Berg ausgeht und das umliegende Land bedroht.
-- **Statuen:** Im Hauptgebäude oder dessen Umfeld stehen Statuen von König Zebros sowie zwei Göttern: [Bodrak](/deities/bodrak.md) und eine nicht identifizierte Gottheit, die einen Krug hält.
+### Beschaffenheit
+
+Beim Berg Zebros handelt es sich um eine Erhebung, auf der sich eine Burg befindet – daher die synonyme Bezeichnung „Burg Zebros“. Die Burg ist stark befestigt und dient dem dunklen Paladin als Machtbasis. Der gesamte Berg wird von Untoten überrannt, was darauf hindeutet, dass nekromantische Kräfte den Ort durchdrungen haben.
+
+### Das untergegangene Königreich
+
+Das Königreich Zebros existierte in einer früheren Ära und wurde im Götterkrieg vollständig zerstört. Seine Hauptstadt trug ebenfalls den Namen Zebros. Vom Königreich zeugen heute nur noch Ruinen und vereinzelte Relikte. Der Berg Zebros war vermutlich ein bedeutender Ort innerhalb dieses Reiches und hat als einziges geografisches Merkmal die Zerstörung überdauert.
+
+### Bewohner und herrschende Macht
+
+Der Berg wird von einem dunklen Paladin beherrscht, dessen Identität noch nicht enthüllt ist. Seine Streitmacht besteht aus Untoten, die den gesamten Berg bevölkern. Weitere Details über seine Gefolgsleute oder mögliche Verbündete sind nicht bekannt.
 
 ## Beziehungen und Verbindungen
 
-- **[Belorus](/npcs/belorus.md):** Hat sich im Thronsaal eingerichtet und verteidigt diesen Bereich.
-- **[König Zebros](/npcs/koenig_zebros.md):** Einstiger Herrscher und Namensgeber; seine Statue ziert die Burg.
-- **[Bodrak](/deities/bodrak.md):** Eine der beiden dargestellten Gottheiten.
-- **Steinbachtal:** Das Dorf am Fuße des Berges leidet unter der Nähe zur Untotenarmee und ist durch die Zerstörungen in Mitleidenschaft gezogen.
-- **Unbekannte Gottheit mit Krug:** Die zweite Statue einer Gottheit, deren Identität bislang ein Rätsel ist.
+- **Graf Voras**: Plant die Eroberung des Berges mittels Nekromantie, um seinen eigenen Machtbereich zu erweitern. Seine Nekromantie könnte ein Mittel sein, die bereits vorhandenen Untoten unter seine Kontrolle zu bringen.
+- **[Dodo](/characters/dodo.md)**: War bereits vor Ort und hat gegen den dunklen Paladin gekämpft. Der Ausgang dieser Auseinandersetzung ist nicht überliefert.
+- **Dunkler Paladin**: Beherrscht den Berg und kommandiert die Untotenarmee. Seine Herkunft und Ziele sind unbekannt.
+- **Das Königreich Zebros**: Der Berg ist ein Überbleibsel dieses im Götterkrieg vernichteten Reichs. Ob eine direkte Verbindung zwischen dem alten Königreich und dem gegenwärtigen Paladin besteht, ist offen.
 
 ## Chronologie
 
-1. **Frühe Expedition (Session Mai):** Die Gruppe dringt in die Burg ein. Sie öffnet die Eingangstür mit Finesse, wird jedoch sofort eingeschlossen. In den Stallungen finden sie leere Sockel, die keine Tiere, sondern vermutlich Statuen trugen. Nach Überwindung der magischen Tür gelangen sie in den Thronsaal und begegnen [Belorus](/npcs/belorus.md). Später sehen sie sich Bogenschützen auf den Mauern gegenüber.
-
-2. **Bedrohung für Steinbachtal (Session September):** Das Dorf am Fuße des Berges ist weitgehend zerstört und nahezu unbewohnt. Eine Brücke führt zum wasserumgebenen Berg. Am Eingangstor des Ortes stehen unheimliche Gestalten. Aus Erzählungen geht hervor, dass eine Untotenarmee vom Berg Zebros herabgekommen ist und das Dorf heimgesucht hat.
+[P-13] **Vor dem Götterkrieg**: Das Königreich Zebros existiert mit seiner Hauptstadt gleichen Namens. Der Berg Zebros ist Teil dieses Reiches.
+2. **Im Götterkrieg**: Das Königreich wird vollständig zerstört. Nur Ruinen, Relikte und der Berg selbst überdauern.
+3. **Unbestimmte Zeit später**: Ein dunkler Paladin bemächtigt sich des Berges. Die Burg wird errichtet oder wiederaufgebaut, Untote überschwemmen das Gebiet.
+4. **Session 2025-06-25**: [P-13] Graf Voras fasst den Plan, den Berg mit seiner Nekromantie zu erobern. Dodo hat den Ort in der Vergangenheit aufgesucht und gegen den Paladin gekämpft.
 
 ## Offene Fragen
 
-- Welche Rolle spielen die Statuen – sind sie magische Wächter, oder handelt es sich um versteinerte Lebewesen?
-- Was verbirgt sich hinter der magisch versiegelten Tür außerhalb des Thronsaals?
-- Wer ist die unbekannte Göttin mit dem Krug?
-- Woher stammen die Bogenschützen, und wem dienen sie?
-- In welchem Verhältnis stehen die Untotenarmee und [Belorus](/npcs/belorus.md)? Wurde er von ihr vertrieben, kooperiert er mit ihr, oder ist er selbst ihr Ursprung?
+- Wer ist der dunkle Paladin, und welche Ziele verfolgt er mit der Kontrolle über den Berg?
+- Warum ist der Berg Zebros von den Zerstörungen des Götterkriegs verschont geblieben oder zumindest wieder zu einer bewohnbaren Struktur geworden?
+- Besteht eine inhaltliche Verbindung zwischen dem Paladin und dem alten Königreich Zebros (etwa durch Relikte oder Abstammung)?
+- Wie verlief Dodos Kampf gegen den Paladin, und mit welchem Ergebnis endete er?
+- Welche spezifische Rolle spielt der Berg in Graf Voras’ größeren Plänen?
 
 ## Belege
 
-[1] Session 2025-05-14 @ 00:56:00  
-[2] Session 2025-09-09 @ 00:08:10
+[P-13] Session 2025-06-25 @ 00:31:30 – Erste Erwähnung des Berges, seiner Besetzung durch Untote, des dunklen Paladins sowie Voras’ Eroberungspläne und Dodos Aufenthalt. (https://www.youtube.com/watch?v=tpkO9uGw6-I)
+
+[E1] Kanon_Entscheidungen.md – Verbindliche Festlegung: Zebros ist ein altes Königreich, keine Gottheit. Hauptstadt und Berg trugen denselben Namen. Zerstört im Götterkrieg. Berg steht weiterhin, Königreich nur noch als Ruinen und Relikte erhalten.

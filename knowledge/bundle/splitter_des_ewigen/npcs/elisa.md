@@ -1,15 +1,16 @@
 ---
 type: NPC
 title: Elisa
-description: Eine Jägerin, die mit dem Bogen umgehen kann und sich bereit erklärt,
-  bei der Verteidigung zu helfen. Sie wird auf dem Dach postiert.
+description: Elisa ist eine Jägerin im Dorf, die gut mit dem Bogen umgehen kann. Sie
+  ist bei der Diskussion in der Taverne anwesend und erklärt sich ber…
 tags:
 - npcs
 timestamp: '2025-04-09T00:00:00Z'
 id: NPC_ELISA
 ---
 
-Elisa ist eine Jägerin, die im Umgang mit dem Bogen bewandert ist. Sie erklärte sich bereit, bei der Verteidigung zu helfen, und wurde auf einem Dach postiert [1].
+Elisa ist eine Jägerin im Dorf, die gut mit dem Bogen umgehen kann. Sie ist bei der Diskussion in der [Taverne](/locations/taverne.md) anwesend und erklärt sich bereit, im Falle eines Angriffs von einer erhöhten Position aus zu kämpfen. Bei der Verteidigungsplanung wird sie auf einem Dach postiert.
 
 # Belege
-1. Session 2025-04-09 @ 00:50:53 (https://www.youtube.com/watch?v=1PWdwvun5ow)
+
+[P-03] Session 2025-04-09 @ 00:50:53 (https://www.youtube.com/watch?v=1PWdwvun5ow)

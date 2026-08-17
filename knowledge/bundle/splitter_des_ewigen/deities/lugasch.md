@@ -1,26 +1,25 @@
 ---
 type: Deity
 title: Lugasch
-description: Ein Goblin-Trickster-Gott, der versucht, Steine auf Dodo fallen zu lassen,
-  als Cookie vom Turm springt. Cookie erkennt den Namen durch eine…
+description: Lugasch ist eine Gottheit aus dem Pantheon der Goblin-Götter. Sein bisher
+  bekanntes Auftreten zeigt ihn als Trickster, der in das Geschehen…
 tags:
 - deities
 timestamp: '2025-04-01T00:00:00Z'
 id: DEITY_LUGASCH
+subtype: Alter Gott
 ---
 
-# Lugasch
+Lugasch ist eine Gottheit aus dem Pantheon der Goblin-Götter. Sein bisher bekanntes Auftreten zeigt ihn als Trickster, der in das Geschehen der Session eingriff.
 
-Lugasch ist ein Goblin-Trickster-Gott. Die einzige dokumentierte Begegnung mit ihm fand statt, als er versuchte, Steine auf den Halbling Dodo fallen zu lassen. Der Jäger Cookie gelang es durch einen Wissenswurf, seinen Namen zu identifizieren. Über seine Herkunft, sein Aussehen oder seine weiteren Absichten ist bislang nichts bekannt.
+## Rolle und Auftreten
 
-## Rolle und Wesen
+In der Session vom 1. April 2025 agierte Lugasch als einer der Goblin-Götter. Er löste eine Steinlawine aus, die [Dodo](/characters/dodo.md) beinahe traf. [Cookie](/characters/cookie.md) identifizierte ihn daraufhin als einen der Goblin-Götter. Weitere Handlungen Lugaschs sind aus dem bisherigen Beleg nicht bekannt.
 
-Lugasch wird als Trickster-Gott beschrieben, der nach Art eines Goblins handelt. Sein Verhalten – das Fallenlassen von Steinen auf ahnungslose Ziele – deutet auf eine boshaft-spielerische oder hinterlistige Natur hin. Ob er einer bestimmten Götterfamilie oder Sphäre angehört, ist nicht überliefert.
+## Zugehörigkeit
 
-## Begegnung mit der Gruppe
-
-Während Cookie vom Turm sprang, versuchte Lugasch, Steine auf Dodo fallen zu lassen. Cookie gelang ein Wissenswurf, der den Namen des Gottes offenbarte. Warum Lugasch ausgerechnet auf Dodo zielte oder ob die Aktion Teil eines größeren Plans war, bleibt unklar.
+Lugasch gehört zu den sogenannten Goblin-Göttern. Im Verlauf der Session wurden weitere Götter dieser Gruppe erwähnt, die das Geschehen beeinflussten; ihre Namen und Rollen sind bisher nicht dokumentiert.
 
 # Belege
 
-1. Session 2025-04-01 @ 00:55:08 – https://www.youtube.com/watch?v=LZIuUzc3F18
+[P-02] Session 2025-04-01 @ 00:54:51 (https://www.youtube.com/watch?v=LZIuUzc3F18)

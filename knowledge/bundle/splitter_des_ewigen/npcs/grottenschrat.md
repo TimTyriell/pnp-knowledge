@@ -1,15 +1,16 @@
 ---
 type: NPC
 title: Grottenschrat
-description: Ein schwer verwundeter Gnoll-ähnlicher Späher, der von einem Kriegspfeil
-  getroffen wurde. Talron bedroht ihn, während Saris ihn verletzt un…
+description: Ein schwer verwundeter Gnoll-ähnlicher Schrat, der auf dem Weg zur Farm
+  gefunden wird. Ihm steckt ein massiver Kriegspfeil in der Brust, un…
 tags:
 - npcs
 timestamp: '2026-07-10T00:00:00Z'
 id: NPC_GROTTENSCHRAT
 ---
 
-Der **Grottenschrat** war ein schwer verwundeter, gnollähnlicher Späher, der von einem Kriegspfeil getroffen worden war. Er wurde von [Talron](/npcs/talron.md) bedroht und schließlich von [Saris](/characters/saris.md) getötet. Während des Todeskampfs erhielt [Sange](/characters/sange.md) eine Vision von einem gescheiterten Angriff des Grottenschrats, bei dem zwei weitere Gnolle entkamen. Saris beschmierte sich mit dem Blut der sterbenden Kreatur.
+Ein schwer verwundeter Gnoll-ähnlicher Schrat, der auf dem Weg zur Farm gefunden wird. Ihm steckt ein massiver Kriegspfeil in der Brust, und er blutet stark. Durch [Sanges](/characters/sange.md) Vision wird klar, dass er mit zwei Gnollen die Farm angreifen wollte, aber von einem Pfeil der Verteidiger getroffen wurde, während die Gnolle flohen. Er ist kurz vor dem Tod und kann nicht mit der Gruppe kommunizieren. [Saris](/characters/saris.md) versucht zuerst, den Pfeil herauszuziehen, und tötet ihn schließlich mit einem Dolchstoß ins Herz.
 
 # Belege
-1. Session 2026-07-10 @ 01:02:05 (https://www.youtube.com/watch?v=H-eHSlfxUAg)
+
+[S1-01-B] Session 2026-07-10 @ 01:00:55 (https://www.youtube.com/watch?v=H-eHSlfxUAg)

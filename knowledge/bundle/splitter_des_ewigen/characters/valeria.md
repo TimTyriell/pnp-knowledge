@@ -1,85 +1,66 @@
 ---
 type: Character
 title: Valeria
-description: Valeria ist eine kleine Simja-Magierin mit großer Neugier und Appetit.
-  Sie reitet die Ziege Berti, nachdem sie einen beeindruckenden Mäh-La…
+description: Valeria ist eine kleine Simja, eine affenartige Magierin, und Mitglied
+  der Abenteurergilde. Gespielt von Benjamin, zeichnet sie sich durch…
 tags:
 - characters
-timestamp: '2025-11-14T00:00:00Z'
+timestamp: '2025-11-18T00:00:00Z'
 id: CHAR_VALERIA
 ---
 
 ## Überblick
 
-Valeria ist eine Simja-Magierin von kleiner Statur, die sich durch große Neugier, einen beachtlichen Appetit und eine ausgeprägte Impulsivität auszeichnet. Sie gehört dem Volk der Simja an [1] und war ursprünglich als magiebegabte Nomadin unterwegs [2]. Ihr Markenzeichen ist eine Piloten- bzw. Fliegerbrille, in die sie Zauberscheiben einklappt [2]. Valeria ist eine Feuer-Spezialistin, deren Magie „fast immer Feuer“ ist [2]. Sie reitet auf einer zahmen Ziege namens Berti, die mit einem Glöckchen-Halsband geschmückt ist [1]. Valeria war eine zentrale Gefährtin der Abenteurergruppe, musste sich jedoch später aufgrund der bevorstehenden Geburt ihres Kindes von der Gruppe trennen [4].
+Valeria ist eine kleine Simja, eine affenartige Magierin, und Mitglied der Abenteurergilde. Gespielt von Benjamin, zeichnet sie sich durch eine impulsive, neugierige und überaus verfressene Natur aus. Ihre primäre magische Spezialisierung ist die Feuermagie, die sie mit einem Great Staff und über ein ungewöhnliches Zauberbuch in Form einer Fliegerbrille mit farbigen Wechselscheiben kanalisiert.
 
 ## Rolle in der Kampagne
 
-Valeria war in den frühen Sessions (April bis Juli 2025) ein aktives Mitglied der Heldengruppe und brachte sowohl Kampfkraft als auch kreative Problemlösungen ein. Im Kampf agierte sie als offensiv ausgerichtete Magierin mit Feuerzaubern und erzielte dabei beachtliche Erfolge – sie tötete einen Goblin-Späher mit einem Feuerbolzen [1], eliminierte zwei Goblins gleichzeitig mit einem Feuerstrahl [1] und vernichtete später drei Goblins auf einmal mit Wild Flame [2]. Über die reine Kampfmagie hinaus zeigte sie sich einfallsreich: Sie schmiedete den Plan, die Goblin-Notizen zu fälschen und die Verteidigung um einen Stein herum zu organisieren [1], und brachte eine falsche Hammelkeule als Teil eines Oger-Narrativs ins Spiel [2]. In den Katakomben war es ihre impulsiv-neugierige Art, die den entscheidenden Moment auslöste, als sie die Kerze an Nerashs Schrein ausblies und damit die gefesselte Halbgöttin erscheinen ließ [3]. Valerias Ausscheiden markiert einen Wendepunkt: In Session 4 erreicht die Gruppe ihr herzlicher Abschiedsbrief, der den Staffelabschluss von Baendorf einleitet [4].
+Valeria ist eine offensive Magierin mit verheerenden Flächenzaubern. In den ersten Sessions ist sie eine treibende Kraft in Kämpfen und bei der Problemlösung, bis sie sich aufgrund einer Schwangerschaft von der Gruppe zurückzieht. Sie agiert oft impulsiv und direkt, was sowohl zu heroischen Momenten als auch zu kleineren, unbedachten Zwischenfällen führt.
 
 ## Wichtige Merkmale
 
-### Herkunft und Auftreten
-- Zugehörigkeit zum Simja-Volk [1]
-- Kleine Statur [1]
-- Trägt eine Piloten- bzw. Fliegerbrille, die als Halterung für Zauberscheiben dient [2]
-- Ursprünglich Nomadin [2]
-- Reittier: Ziege Berti mit Glöckchen-Halsband [1]; Valeria sitzt darauf „wie auf so einer Harley […] auf so einem Chopper“ [1]
+### Fähigkeiten und Ausrüstung
 
-### Magische Fähigkeiten
-- Offensive Feuermagie als Spezialisierung; „meine Magie ist fast immer Feuer“ [2]
-- Feuerbolzen via Great Staff [1]; Feuerstrahl, der mehrere Ziele durchschlagen kann [1]
-- Wild Flame: vernichtet drei Goblins gleichzeitig [2]
-- Mending Touch: Heil- und Beruhigungszauber, eingesetzt zur Beruhigung des betrunkenen Nip [1]
-- Erfolgreiche Zerstörung der Ketten des Speers mit Magie [3]
-- Allgemein wird ihre Zauberei als „erfolgreich und hoffnungsgebend“ charakterisiert [2]
+Valerias Magie ist stark auf das Element Feuer ausgerichtet. Ihre bekannten Zauber und Fähigkeiten umfassen:
 
-### Wesenszüge
-- Große Neugier, die sie dazu treibt, unbekannte Objekte wie das Dämonensymbol zu berühren [2]
-- Ausgeprägter Appetit („Wir machen heute Abend Hamelbraten“) [1]
-- Impulsiv: drängt darauf, den Speer zu holen und gegen die Ketten einzusetzen [3]; löscht die Kerze am Nerash-Schrein – „Das war vielleicht ich, sorry.“ [3]
-- Pragmatisch und unerschrocken: pflückt beiläufig eine Karotte vom Feld [1]
-- Sentimental: schließt ihren Abschiedsbrief mit der Bitte, „auch in finsteren Zeiten zu lachen“ [4]
+-   **Feuerblitze**: Mit ihrem „Great Staff“ verschießt sie Feuerblitze, mit denen sie bereits einen Goblin-Späher tödlich traf [P-03].
+-   **Wilde Flamme**: Ein mächtiger Flächenzauber, den sie mehrfach einsetzt und mit dem sie bis zu drei Gegner gleichzeitig ausschalten kann [P-05].
+-   **Berührende Heilung** (*Mending Touch*): Sie besitzt die Fähigkeit, Wunden zu heilen und versorgte so einen verwundeten Dorfbewohner [P-05].
+-   **Nomadentasche**: Valeria trägt eine Tasche bei sich, aus der sie unerwartet eine vorgetäuschte Hammelkeule hervorholen kann, um Feinde in eine Falle zu locken [P-05].
+-   **Fliegerbrille als Zauberbuch**: Ein einzigartiges Merkmal Valerias ist ihre Fliegerbrille. Statt eines klassischen Zauberbuchs sind an der Brille farbige, durchsichtige Wechselscheiben befestigt, die sie bei Bedarf vor ihr Auge klappt. Auf jeder Scheibe ist ein Zauberspruch geschrieben. Im Kampf aktivierte sie so eine rote Scheibe für den Zauber *Wilde Flamme* [P-05].
+-   **Improvisierte Magie**: Sie beherrscht gelernte, aber kaum geübte Zauber, wie einen Hitze-Zauber, der Metallketten zum Glühen und Schmelzen brachte, um sie zu zerstören. Der Versuch gelang ihr unter erschwerten Bedingungen [P-14].
 
-### Ausrüstung
-- Great Staff [1]
-- Armbrust (von Berthold gekauft, aber wegen fehlender Tragfähigkeit an Rotunas überlassen) [1]
-- Zwei Beutel Gold (dem Abschiedsbrief beigelegt) [4]
-- Ein mysteriöser Ring, den sie der Gruppe zusammen mit dem Abschiedsbrief übersendet [4]; sie erwarb ihn auf ihrer letzten Reise, und er „soll beschützen“ [4]
+### Auftreten und Wesenszüge
+
+-   **Neugierig und verfressen**: Ihre Grundeinstellung zum Leben fasst ihre Experience-Regel „Essen ist großartig“ perfekt zusammen. Sie ist stets auf der Suche nach neuen Erfahrungen und Genüssen [P-03].
+-   **Impulsiv**: Ihre Handlungen sind oft spontan, sei es beim Klettern auf Häuser, beim Reiten einer Ziege oder beim sofortigen Ergreifen eines gefährlichen Artefakts [P-03, P-14]. Diese Impulsivität führt auch dazu, dass sie versehentlich das Kind eines Krämers erschreckt [P-03].
+-   **Direkt und entschlossen**: Sie übernimmt schnell Führung, etwa als sie beim Verteidigungsplan die Bewohner antreibt und ihre eigene Armbrust an den Wirt [Hubert](/npcs/hubert.md) weitergibt [P-03].
+-   **Empfindlich gegenüber negativer Energie**: Bei der ersten Berührung des magischen Speers von [Nerash](/deities/nerash.md) spürt sie eine unangenehme Kälte und sträubt sich innerlich so sehr dagegen, dass sie ihn sofort wieder ablegt [P-14].
+-   **Misstrauisch**: Sie hegt Misstrauen gegenüber [Lenra](/npcs/lenra.md), kann bei ihr aber keine Lügen erkennen [P-05].
 
 ## Beziehungen und Verbindungen
 
-- **[Dodo](/characters/dodo.md):** Gefährte in der Abenteurergruppe während der ersten drei Sessions [1][2][3]
-- **[Lindo Laut](/characters/lindo_laut.md):** Ebenfalls Teil der Gruppe; in den Katakomben ist er von Nerashs Einfluss betroffen, während Valeria die Kerze löscht [3]
-- **Rotunas:** Valeria überlässt ihm die gekaufte Armbrust [1]
-- **Berthold:** Händler, von dem Valeria die Armbrust erwirbt [1]
-- **Nerash:** Halbgöttin, zu der Valeria nach den Ereignissen in den Katakomben spontan betet und Bewunderung zeigt [3]
-- **Ungeborenes Kind / Familie:** Späterer Grund für Valerias Ausscheiden aus der Gruppe [4]
+-   **[Rotunas](/characters/rotunas.md)**: Valeria packt mehrfach Hope für [Rotunas](/characters/rotunas.md) aus, um ihn zu unterstützen. Als sie allein im Kampf steht, ruft sie vergeblich nach seiner Muskelkraft [P-03, P-05].
+-   **[Cookie](/characters/cookie.md)**: Nachdem Valeria den Speer als unangenehm empfindet, bietet sie ihn [Cookie](/characters/cookie.md) an. Auf dessen begeisterte Reaktion hin schenkt sie ihr das Artefakt mit den Worten: *„Nimm mit, ich schenke ihn dir.“* [P-14]
+-   **[Nerash](/deities/nerash.md)**: Valeria ist diejenige, die die Flamme am Schrein von Nerash auspustet und so eine Beschwörung oder Barriere aufhebt. Daraufhin wendet sie sich spontan im Gebet an den Gott und bietet sich als dessen erste Dienerin an [P-14].
+-   **Gruppe und Gilde**: Sie ist ein aktives und wertvolles Mitglied der Gildengruppe, die nach Brechka entsandt wurde, um das Dorf vor einem Goblin-Angriff zu schützen. Später hält sie per Brief Kontakt und schickt Gold und einen Ring mit, was auf eine fortbestehende Verbundenheit hindeutet [P-03, P-29].
 
 ## Chronologie
 
-### Session 1 (2025-04-09) – Erstes Abenteuer
-Valeria tritt als kleine Simja-Magierin in Erscheinung. Sie nähert sich einer neugierigen Ziege (Berti), streichelt sie und reitet schließlich mit einem beeindruckenden Performance-Wurf von 16 auf ihr – „wie auf so einer Harley“. Im Kampf gegen einen Goblin-Späher setzt sie ihren Great Staff ein und tötet den Goblin mit einem Feuerbolzen. Sie kauft eine Armbrust von Berthold, kann sie aber nicht selbst tragen und überlässt sie Rotunas. Mit Mending Touch beruhigt sie den betrunkenen Nip. Sie pflückt beiläufig eine Karotte und schmiedet den Plan, Goblin-Notizen zu fälschen und die Verteidigung um einen Stein zu organisieren. [1]
-
-### Session 2 (2025-04-23) – Kampf und Katakomben
-Valeria setzt ihre Feuermagie mehrfach erfolgreich ein: ein Feuerstrahl tötet zwei Goblins (einer davon mit einem Loch im Kopf); mit Wild Flame vernichtet sie drei Goblins auf einmal. Sie heilt einen tödlich verwundeten Bauern. Kreativ führt sie eine falsche Hammelkeule als Teil eines Oger-Narrativs ein. In den Katakomben zeigt sie ihre Neugier, indem sie das Dämonensymbol berührt, und ihre Sorgfalt, als sie später eine Sarginschrift eigenhändig korrigiert. [2]
-
-### Session 3 (2025-07-09) – Der Nerash-Schrein
-Valeria zerstört die magischen Ketten des Speers mit ihrer Magie. Am Schrein der Nerash zeigt sie ihre impulsive Seite: Während Lindo Laut von einer dunklen Stimme beeinflusst wird, pustet Valeria die Kerze am Schrein aus – woraufhin die gefesselte Halbgöttin erscheint. Valeria kommentiert trocken: „Das war vielleicht ich, sorry.“ Nach der Rückkehr betet sie spontan zu Nerash und bringt ihre Bewunderung für die Halbgöttin zum Ausdruck. [3]
-
-### Session 4 (2025-11-14) – Staffelabschluss und Abschied
-Valeria ist nicht mehr persönlich anwesend. Die Gruppe erfährt, dass sie wegen der bevorstehenden Geburt ihres Kindes nicht weiter mitreisen kann. Ein herzlicher Abschiedsbrief von ihr wird überbracht, zusammen mit zwei Beuteln Gold und einem mysteriösen Ring, den sie auf ihrer letzten Reise erwarb. Der Brief enthält die Mahnung: „Bleibt stark, auch in finsteren Zeiten. Und vergesst nicht zu lachen.“ [4]
+-   **Sessions in Brechka (2025-04-09 & 2025-04-23)**: Valeria wird als Teil der Verstärkung nach Brechka geschickt. Sie beteiligt sich aktiv an den Kämpfen gegen Goblins und einen Oger, wobei sie ihre Feuerzauber und taktischen Finten (Hammelkeule) einsetzt. Sie tötet einen Goblin-Späher, mehrere Goblins mit einem einzigen mächtigen Zauberschlag, zerstört magische Ketten und interagiert mit dem Schrein des Nerash. Dabei zeigt sie sowohl ihre kämpferische Stärke als auch ihre impulsiven und fürsorglichen Seiten.
+-   **Session im Untergrund (2025-07-09)**: Valeria zerstört die magischen Ketten, die einen Speer sichern, durch einen Hitze-Zauber. Sie ergreift den Speer kurz, findet ihn jedoch so abstoßend, dass sie ihn an [Cookie](/characters/cookie.md) weitergibt. Sie ist es, die die rituelle Flamme am Schrein von [Nerash](/deities/nerash.md) löscht und sich dem Gott als erste Dienerin anbietet.
+-   **Abwesenheit (2025-11-14 & 2025-11-18)**: Valeria kann nicht mehr an den Abenteuern teilnehmen, da sie schwanger ist. [Esterossa](/characters/esterossa.md) überbringt der Gruppe einen Brief von ihr, der ihre Situation erklärt. In der Gruppe wird sie liebevoll-ironisch als „Valeria, noch im Fötus-Status“ bezeichnet und ihr Ausfall mit einem altbekannten Sprichwort kommentiert: „Außerdem haben wir jetzt ein Haus.“ Während ihrer Abwesenheit schickt sie der Gruppe neben dem Brief auch Gold und einen Ring [P-29, P-30].
 
 ## Offene Fragen
 
-- Wer ist der Vater von Valerias Kind? Dazu enthalten die Belege keinerlei Hinweise.
-- Was genau ist der mysteriöse Ring, und welche Kräfte oder Bedeutung hat er? Valerias Brief sagt lediglich, dass er „beschützen soll“ [4].
-- Wo befindet sich Berti nach Valerias Ausscheiden? Die Belege schweigen dazu.
-- Wie hat sich Valeria nach den Katakomben-Ereignissen weiterentwickelt? Zwischen Session 3 und ihrem Abschiedsbrief klafft eine Lücke in der Darstellung.
+-   Die Identität des Vaters von Valerias Kind ist aus den Belegen nicht bekannt.
+-   Es ist unklar, was aus ihrem spontanen Angebot an [Nerash](/deities/nerash.md), seine erste Dienerin zu werden, geworden ist und ob dies weitreichendere Konsequenzen hatte.
+-   Der Verbleib und die Zukunft ihres Kindes sind nach der letzten Erwähnung völlig offen.
 
 ## Belege
 
-[1] Session 2025-04-09 @ 00:24:04 – https://www.youtube.com/watch?v=1PWdwvun5ow
-[2] Session 2025-04-23 @ 00:33:51 – https://www.youtube.com/watch?v=z3C-bewKqUs
-[3] Session 2025-07-09 @ 00:46:11 – https://www.youtube.com/watch?v=XOnHa6CmDbo
-[4] Session 2025-11-14 @ 00:42:36 – https://www.youtube.com/watch?v=8Khb-Y8XbKY
+[P-03] Session 2025-04-09 @ 00:00:07 (https://www.youtube.com/watch?v=1PWdwvun5ow)
+[P-05] Session 2025-04-23 @ 01:24:12 (https://www.youtube.com/watch?v=z3C-bewKqUs)
+[P-14] Session 2025-07-09 @ 00:23:37 (https://www.youtube.com/watch?v=XOnHa6CmDbo)
+[P-29] Session 2025-11-14 @ 00:42:57 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)
+[P-30] Session 2025-11-18 @ 00:16:15 (https://www.youtube.com/watch?v=w__ahowb9p0)

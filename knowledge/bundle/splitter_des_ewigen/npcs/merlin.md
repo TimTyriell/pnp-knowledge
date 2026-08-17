@@ -1,15 +1,16 @@
 ---
 type: NPC
 title: Merlin
-description: Merlin ist Finns Adlergleiter und dient als Späher, der über der Festung
-  oder dem Schlachtfeld fliegt. Er erschrickt kurz, als die Strixwöl…
+description: Merlin ist Finns Adler-Begleiter und dient als Späher sowie Kampfunterstützung.
+  Er kann auf Befehl angreifen und verfügt über eigene Erfahr…
 tags:
 - npcs
 timestamp: '2026-05-27T00:00:00Z'
 id: NPC_MERLIN
 ---
 
-Merlin ist Finns Adlergleiter und dient der Gruppe als Späher, der über der Festung oder dem Schlachtfeld kreist. Im Gefecht vollführt er auf Finns Pfeife hin einen blitzschnellen Sturzflug, mit dem er Kalos’ Illusion durchbohrt und massiven Schaden anrichtet. Dabei erschrickt er kurz über vorbeischießende Strixwölfe und erleidet Stress. Finn verteilt auch Maus‑Leckerbissen von Merlin an andere Tiere, was auf eine enge, aber nicht ausschließlich auf Merlin konzentrierte Bindung hindeutet.
+Merlin ist [Finns](/characters/finn.md) Adler-Begleiter und dient als Späher sowie Kampfunterstützung. Er kann auf Befehl angreifen und verfügt über eigene Erfahrungspunkte (Experience), die er zur Verbesserung von Angriffen einsetzen kann. Im entscheidenden Kampf gegen die Illusion von [Kalos](/npcs/organisation_der_kalos.md) nutzt er seine Fähigkeit „Wir finden immer unser Ziel", um einen kritischen Treffer zu landen, bevor Kalos sich erneut teleportieren kann, und zerstört die Illusion. Merlin wird als treuer und präziser Jäger beschrieben.
 
 # Belege
-1. Session 2026-05-27 @ 00:08:34 (https://www.youtube.com/watch?v=IYYmgpqsp7E)
+
+[P-51] Session 2026-05-27 @ 01:42:30 (https://www.youtube.com/watch?v=IYYmgpqsp7E)

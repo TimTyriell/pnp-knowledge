@@ -1,36 +1,32 @@
 ---
 type: Item
 title: Teleportationsring
-description: Ein magischer Ring, den der Kenku trug. Er ermöglicht Teleportation bis
-  zu einer Entfernung von 'very far'. Lindo Laut untersucht ihn und d…
+description: Ein lilafarbener, in Stein eingelassener Ring mit teleportativen Fähigkeiten,
+  der nach seiner Aktivierung Visionen auslöste und durch seine…
 tags:
 - items
-timestamp: '2026-07-21T00:00:00Z'
+timestamp: '2026-05-13T00:00:00Z'
 id: ITEM_RING_DER_TELEPORTATION
+subtype: Schmuck
 aliases:
-- Ring der Teleportation
-- Lindo Lauts Ring
+- Der Ring
 ---
 
-### Ring der Teleportation
+Ein lilafarbener, in Stein eingelassener Ring mit teleportativen Fähigkeiten, der nach seiner Aktivierung Visionen auslöste und durch seine Zerstörung weitreichende Folgen für die Kampagne hatte. Der Ring war untrennbar mit dem Seraphen und einem Geist verbunden.
 
-Der **Ring der Teleportation** (auch *Lindo Lauts Ring* genannt) ist ein mächtiges magisches Artefakt, das seinem Träger die Fähigkeit verleiht, sich augenblicklich über eine als „sehr weit“ beschriebene Distanz zu teleportieren. Der Ring befindet sich im Besitz von [Lindo Laut](/characters/lindo_laut.md) und kann nach Entscheidung der Spielleitung nur einmal pro Spielsession aktiviert werden. Sein erster dokumentierter Auftritt war im Besitz eines Kenku.
+## Eigenschaften und Funktionen
 
-## Herkunft und Erwerb
+Der Ring zeigte zwei verschiedene, möglicherweise zusammenhängende Wirkungen. Einerseits konnte er seinen Träger per Gedankenbefehl an einen anderen Ort versetzen – so nutzte ihn [Lindo Laut](/characters/lindo_laut.md), um sich direkt auf den Thron in einer Kapelle zu teleportieren (Beleg [P-19]). Andererseits versetzte die bloße Berührung des Rings eine Person in eine Trance, in der sie Visionen empfing. [Lunara](/characters/lunara_velora.md) spürte durch ihn eine Verbindung zu den Kristallen des Ortes. Der Kontakt war jedoch nicht ungefährlich: Der [Richter](/npcs/richter_herr_der_seelenwacht.md) verlor bei der Berührung einen Finger (Beleg [P-49]).
 
-Der Ring wurde erstmals in der Gewalt eines Kenku gesichtet. [Lindo Laut](/characters/lindo_laut.md) untersuchte den Gegenstand, und die Abenteuergruppe beschloss, ihn fortan gemeinsam zu nutzen. In den folgenden Sitzungen trug Lindo den Ring stets bei sich und setzte ihn in kritischen Situationen ein; die genauen Umstände, unter denen er in seinen endgültigen Besitz gelangte, sind nicht überliefert.
+Der Ring war in Stein eingelassen und schien als eine Art Verankerung für den Seraphen und den mit ihm verbundenen Geist zu dienen.
 
-## Einsatz in der Kampagne
+## Verlauf
 
-Der Ring erwies sich in mehreren entscheidenden Kämpfen als wertvolles taktisches Werkzeug:
+In der ersten bekannten Nutzung aktivierte Lindo Laut den Ring und teleportierte sich damit auf den Thron der Kapelle (Session 2025-09-02).
 
-*   **Sprung auf den Thron (Session 2025-09-02):** Lindo aktivierte den Ring im letzten Moment, um auf einen Thron zu springen und so eine entscheidende Position für einen finalen Wurf einzunehmen.
-*   **Befreiung aus der Umklammerung (Session 2025-10-07):** Als ein Golem Lindo packte und zu zerquetschen drohte, teleportierte er sich mit dem Ring aus dem Griff und entkam der tödlichen Bedrohung.
-*   **Positionierung gegen den Dämon der Hybris (Session 2026-07-21):** Im Kampf gegen den [Dämon der Hybris](/npcs/daemon_der_hybris.md) nutzte Lindo den Ring, um sich hinter das Wesen zu teleportieren und dort eine Schriftrolle einzusetzen – ein Manöver, das den Kampfverlauf maßgeblich beeinflusste.
+In einer späteren Konfrontation (Session 2026-05-13) zerstörte [Dodo](/characters/dodo.md) den lilafarbenen Ring mit seinem heiligen Streitkolben. Diese Zerstörung hatte dramatische Konsequenzen: Sie tötete den Seraphen und löste die endgültige Manifestation von [Holodarn](/npcs/diener_huludans.md) aus. Es ist unklar, ob es sich bei dem zerstörten Ring um denselben Gegenstand handelt, den Lindo Laut zuvor zur Teleportation nutzte, oder um ein und denselben Ring, der im Laufe der Zeit seine zusätzlichen Eigenschaften offenbarte.
 
-# Belege
+## Belege
 
-1. Session 2025-07-22 @ 02:37:52 – <https://www.youtube.com/watch?v=BRRCUgW4xRo>
-2. Session 2025-09-02 @ 02:11:18 – <https://www.youtube.com/watch?v=TLZOH7TlGhk>
-3. Session 2025-10-07 @ 01:35:31 – <https://www.youtube.com/watch?v=qVAF_54S8Vw>
-4. Session 2026-07-21 @ 01:32:23 – <https://www.youtube.com/watch?v=KNV4oNGJ0tw>
+[P-19] Session 2025-09-02 @ 02:11:18 – Lindo Laut teleportiert sich mit dem Ring auf den Thron. (https://www.youtube.com/watch?v=TLZOH7TlGhk)
+[P-49] Session 2026-05-13 @ 00:47:40 – Der lilafarbene Ring in Stein, Trance, Verbindung zu Kristallen, Zerstörung durch Dodo. (https://www.youtube.com/watch?v=4afPD9Q_5AY)

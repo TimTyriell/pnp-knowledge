@@ -156,6 +156,32 @@ def test_split_conflicts_returns_section():
     assert body == _CONFLICT_BODY  # section stays visible in the concept
 
 
+def test_split_conflicts_ignores_an_all_clear_section():
+    # The model keeps the heading and declares there is nothing to resolve;
+    # queueing that wastes a reviewer's attention on an empty case.
+    body = "Text.\n\n# Offene Konflikte\n\n_Keine widersprüchlichen Belege vorhanden._"
+    assert split_conflicts(body)[1] is None
+
+
+def test_split_conflicts_ignores_an_all_clear_written_as_prose():
+    body = (
+        "Text.\n\n# Offene Konflikte\n\n- Session 5 beschreibt Voras' Tod. Es "
+        "gibt keine widersprüchlichen Belege über sein Überleben."
+    )
+    assert split_conflicts(body)[1] is None
+
+
+def test_split_conflicts_keeps_a_real_point_next_to_an_all_clear():
+    # One settled point must not silence a second, unsettled one.
+    body = (
+        "Text.\n\n# Offene Konflikte\n\n"
+        "- Zum Tod gibt es keine widersprüchlichen Belege.\n"
+        "- Sein Titel wird einmal als Graf, einmal als Herzog angegeben."
+    )
+    section = split_conflicts(body)[1]
+    assert section is not None and "Herzog" in section
+
+
 def test_emit_entity_flags_disputed_and_queues_conflict(tmp_path: Path):
     bundle = tmp_path / "bundle" / "campaign"
     entity = _entity("characters/lindo_laut", "Lindo Laut")

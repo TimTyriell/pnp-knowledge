@@ -1,15 +1,17 @@
 ---
 type: Location
 title: Nebelwacht
-description: Nebelwacht ist eine große Festung im Süden des Reiches Vilauch, die als
-  einziges Bollwerk gegen die Monster aus den Nebelsümpfen dient. Sie…
+description: Die Festung Nebelwacht liegt südwestlich von Villauch und wird ständig
+  von unbekannten Kreaturen angegriffen. Sie ist mit Ballisten und Kat…
 tags:
 - locations
 timestamp: '2026-05-27T00:00:00Z'
 id: LOC_NEBELWACHT
+subtype: Festung
 ---
 
-Die **Nebelwacht** ist eine große Festung im Süden des Reiches Vilauch, die als einziges Bollwerk gegen die Monster aus den Nebelsümpfen dient. Die Anlage steht ständig unter Belagerung und wird kontinuierlich repariert; im Inneren befinden sich ein Strategium für die Generäle, eine Taverne für die Soldaten, ein Aufzug für Baumaterialien und ein Tor zur Außenwelt. Über der Festung patrouillieren Elite-Reiter auf Strixwölfen. Die Atmosphäre ist angespannt, und die Soldaten wirken erschöpft von den unablässigen Angriffen.
+[Die Festung](/locations/die_festung.md) Nebelwacht liegt südwestlich von [Villauch](/locations/willauch.md) und wird ständig von unbekannten Kreaturen angegriffen. Sie ist mit Ballisten und Katapulten bestückt, permanent in Reparatur und beherbergt ein Forschungsteam sowie kampferprobte Soldaten.
 
 # Belege
-1. Session 2026-05-27 @ 00:21:53 (https://www.youtube.com/watch?v=IYYmgpqsp7E)
+
+[P-51] Session 2026-05-27 @ 00:03:06 (https://www.youtube.com/watch?v=IYYmgpqsp7E)
