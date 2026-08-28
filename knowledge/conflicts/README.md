@@ -6,22 +6,39 @@ es nicht. Das Modell wählt in so einem Fall bewusst keinen Gewinner.
 
 ## Der Grundsatz
 
-> Konflikte werden **niemals im Bundle** gelöst.
+> Konflikte werden **niemals im Bundle** gelöst — und diese Datei hier
+> gehört selbst dazu.
 
 `knowledge/bundle/` ist generierte Ausgabe. Jeder `pnp run` überschreibt sie —
 ein Kommentar oder eine Korrektur direkt in `characters/dodo.md` ist beim
 nächsten Lauf verschwunden. Gelöst wird immer an einem **Eingang**.
 
+Das gilt auch für die Datei, die gerade den Konflikt beschreibt: sie liegt
+zwar nicht unter `bundle/`, wird aber genauso bei jedem `pnp run` neu
+geschrieben (`emit_conflict()`, unbedingt, ohne die alte Datei zu lesen).
+Ein Status-Feld hier auf `resolved` setzen, den Text ändern oder die Datei
+von Hand löschen sieht wie eine Lösung aus, ist aber ein No-Op — beim nächsten
+Lauf kommt exakt dieselbe Datei zurück, solange sich am **Eingang** nichts
+geändert hat, denn der Synthese-Cache kennt diese Queue gar nicht. Editieren
+lohnt sich nur an den beiden Eingängen unten.
+
 ## Welcher Eingang? Zwei Fragen
 
 **1. „Sind hier zwei Dinge zu einem geworden — oder eines fälschlich zu zweien?"**
-→ Identitätsproblem → `entity_registry.yaml`
+→ Identitätsproblem → `entity_rules.yaml`
+
+**Nicht** `entity_registry.yaml`: die Registry ist generierte Ausgabe wie das
+Bundle, jeder Lauf schreibt sie komplett neu. Ein `merge:`-Eintrag, der dort
+statt in `entity_rules.yaml` landet, wird beim nächsten `pnp run`
+stillschweigend verworfen (`resolve.write_registry` behält eine `merge:`-Zeile
+in der Registry nur, solange sie *nicht* bereits nach `entity_rules.yaml`
+migriert ist) — die "Lösung" wirkt getroffen und ist es nicht.
 
 | Fall | Eintrag |
 |---|---|
 | Zwei Schreibweisen derselben Figur | `merge:` — `"warzul": deities/vharzul` |
 | Zwei *verschiedene* Figuren wurden zusammengelegt | Merge-Key entfernen **und** Paar in `never_merge:` eintragen |
-| Nebenname fehlt | `aliases:` beim Konzept |
+| Nebenname fehlt | `aliases:` beim Konzept in `entity_registry.yaml` (dort *wird* eine bestehende Alias-Liste beim Schreiben erhalten, siehe oben — nur `merge:`/`never_merge:`/`ignore:`/`split:`/`canonical_name:`/`important:`/`alias_block:` gehören nach `entity_rules.yaml`) |
 
 `never_merge:` ist wichtig: ohne den Eintrag schlägt der nächste
 `pnp dedup`-Lauf dieselbe Zusammenlegung wieder vor, und dieselbe Ablehnung
@@ -45,7 +62,8 @@ Dann sagt die Entscheidung genau das: *„kein Widerspruch, sondern Abfolge"*.
 ```
 1. pnp run                     → Konflikte landen hier
 2. Datei lesen, Frage 1 / 2 anwenden
-3. Eingang bearbeiten          → registry.yaml  oder  sources/Kanon_Entscheidungen.md
+3. Eingang bearbeiten          → entity_rules.yaml  oder  sources/Kanon_Entscheidungen.md
+                                 (nicht die Konfliktdatei selbst, nicht entity_registry.yaml)
 4. pnp run                     → betroffene Einträge werden neu geschrieben,
                                  gelöste Konfliktdateien verschwinden von selbst
 ```
@@ -58,6 +76,19 @@ weiteren Modellkosten an.
 Gelöste Konfliktdateien müssen **nicht** von Hand gelöscht werden; `pnp run`
 räumt sie ab, sobald der Widerspruch nicht mehr auftritt. Bleibt eine Datei
 bestehen, wurde der Widerspruch also noch nicht wirklich ausgeräumt.
+
+## Wenn die Entscheidung trotzdem nicht wirkt
+
+`ENTSCHEIDUNG:` erreicht eine Entität nur, wenn der Überschriftentext
+(`### <Name>`) auf ihren canonical_name oder einen Alias matcht
+(`context.sources_for`). Zwei Fallen, beide schon einmal echt aufgetreten:
+
+- Die Entität wurde umbenannt (`canonical_name:`-Pin in `entity_rules.yaml`),
+  aber die Überschrift hier nennt noch den alten Namen — die Entscheidung
+  greift dann für niemanden mehr. `pnp validate` findet das nicht; die Tests
+  unter `services/kb/tests/test_canon_decisions.py` schon.
+- Zwei Überschriften mit demselben Namen: die zweite ergänzt die erste, statt
+  sie zu ersetzen — beide werden injiziert, wo der Name matcht.
 
 ## Unsicherheit ist erlaubt
 

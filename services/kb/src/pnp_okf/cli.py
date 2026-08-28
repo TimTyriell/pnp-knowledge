@@ -243,6 +243,7 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
             "entities_by_type": entities_by_type,
             "conflicts_open": conflict_count,
             "sessions_ingested": len(transcripts),
+            "dropped_links": unresolved_total,
         },
     )
     return 0

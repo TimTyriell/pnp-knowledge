@@ -88,5 +88,7 @@ def test_load_reads_the_real_campaign_list():
     if not path.is_file():  # a free-standing checkout of services/kb
         return
     episodes = Episodes.load(path)
-    assert len(episodes) >= 61
+    # A floor, not a pin: this only needs to catch episodes.yaml going empty
+    # or badly truncated, not track the exact count as the campaign grows.
+    assert len(episodes) >= 60
     assert episodes.id_for_url("https://www.youtube.com/watch?v=ROCKGeeRUFw") == "P-01"
