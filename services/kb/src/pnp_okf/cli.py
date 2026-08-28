@@ -18,6 +18,7 @@ from pnp_okf.context import excerpts_for, load_sources, sources_for
 from pnp_okf.dedup import load_never_merge, propose, render_report
 from pnp_okf.emit import (
     build_concept_index,
+    check_rename_safety,
     emit_conflict,
     emit_entity,
     emit_indexes,
@@ -131,6 +132,18 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
 
     registry_path = paths.registry_path
     entities = resolve_entities(extractions, tmap, registry_path)
+
+    if not partial_run and not check_rename_safety(
+        registry_path, entities, allow=args.allow_rename
+    ):
+        _write_run_status(
+            started_at,
+            ok=False,
+            error="refusing to proceed: mass rename detected (see log)",
+            counts={},
+        )
+        return 2
+
     write_registry(entities, registry_path)
 
     if args.clean and paths.bundle_dir.exists():
@@ -489,6 +502,12 @@ def _build_parser() -> argparse.ArgumentParser:
         "--allow-prune", action="store_true",
         help="Allow pruning more than 10%% of existing concept files in one "
         "run. Orphan pruning is skipped entirely on a --limit/--session run.",
+    )
+    run.add_argument(
+        "--allow-rename", action="store_true",
+        help="Allow more than 10%% of the previous registry's concept ids to "
+        "go missing from a resolved run (e.g. after a deliberate registry "
+        "cleanup). The check is skipped entirely on a --limit/--session run.",
     )
     run.set_defaults(func=cmd_run)
 

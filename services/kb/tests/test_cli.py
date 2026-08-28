@@ -60,3 +60,9 @@ def test_run_allow_prune_flag_defaults_off():
     assert parser.parse_args(["run", "--allow-prune"]).allow_prune is True
 
 
+def test_run_allow_rename_flag_defaults_off():
+    parser = _build_parser()
+    assert parser.parse_args(["run"]).allow_rename is False
+    assert parser.parse_args(["run", "--allow-rename"]).allow_rename is True
+
+

@@ -5,6 +5,8 @@ import re
 from datetime import datetime, timezone
 from pathlib import Path
 
+import yaml
+
 from pnp_okf.episodes import Episodes
 from pnp_okf.links import ConceptIndex, normalize_body
 from pnp_okf.models import (
@@ -389,6 +391,53 @@ def prune_conflicts(conflicts_dir: Path, still_open: set[str]) -> int:
         log.info("[emit] conflict resolved, removed from queue: %s", path.name)
         removed += 1
     return removed
+
+
+def check_rename_safety(
+    registry_path: Path,
+    entities: list[CanonicalEntity],
+    *,
+    max_ratio: float = 0.1,
+    allow: bool = False,
+) -> bool:
+    """Refuse a run that abandons most of the previous registry's concept ids.
+
+    Same shape as :func:`prune_orphans`'s guard, one stage earlier: a mass
+    rename (an LLM resample rewording most extracted names, changing their
+    derived concept id) shows up here as most of the *previous* registry's
+    ids going missing from the freshly resolved entity set, before a single
+    file is written. This is what would have caught the 2026-08 incident —
+    prune_orphans only sees the bundle, which by the time it runs has already
+    been overwritten with the renamed content.
+
+    Below the size floor, or on the first-ever run (no registry yet), a large
+    ratio is not a meaningful signal, so the check is skipped.
+    """
+
+    if not registry_path.exists():
+        return True
+    data = yaml.safe_load(registry_path.read_text(encoding="utf-8")) or {}
+    previous = {
+        str(e.get("concept_id", "")).strip() for e in data.get("entities") or []
+    }
+    previous.discard("")
+    total = len(previous)
+    if total < 20:
+        return True
+    current = {e.concept_id for e in entities}
+    abandoned = previous - current
+    if not allow and len(abandoned) > max_ratio * total:
+        log.error(
+            "[resolve] refusing to proceed: %d/%d previously known concept(s) "
+            "(>%.0f%%) are absent from this run's resolved entities — this "
+            "usually means a re-extraction reworded most entity names, "
+            "changing their derived concept id (see docs/architecture for "
+            "the 2026-08 incident this guards against). Pass --allow-rename "
+            "if this is expected (e.g. after a deliberate registry cleanup).",
+            len(abandoned), total, max_ratio * 100,
+        )
+        return False
+    return True
 
 
 def prune_orphans(

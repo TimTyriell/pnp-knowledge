@@ -157,15 +157,71 @@ def test_adding_a_session_only_touches_entities_it_mentions(tmp_path: Path):
     assert (bundle / "sessions" / "2025-04-01.md") not in changed
 
 
-# --- identity stability under re-extraction (Phase 3, not yet implemented) --
+# --- identity stability under re-extraction ---------------------------------
+#
+# Phase 3 (registry-anchored identity, see test_registry_ledger.py) closes
+# two of the three ways a resample can rename a concept: a wording that was
+# already recorded as an alias reanchors exactly, and one within the fuzzy
+# bar of a retired slug reanchors by drift. Both are exercised end to end
+# here (through resolve_entities + write_registry, not the ledger's own
+# unit tests). The third way — a first-ever reword to wording that matches
+# neither, exactly the 08-17 incident's shape — has no code fix: recovering
+# it would require loosening the fuzzy match far enough to fold unrelated
+# entities together (measured against the real incident data: ratio >= 0.9
+# recovers 2% of the renamed concepts, and already mispairs some). That
+# case stays xfail; check_rename_safety (test_rename_guard.py) is the actual
+# defence against it — refuse the run rather than guess.
+
+
+def test_reanchors_a_previously_seen_alias_end_to_end(tmp_path: Path):
+    t1 = _transcript("2025-03-26_RF_a", "2025-03-26")
+    t2 = _transcript("2025-04-01_RF_b", "2025-04-01")
+    tmap = {t1.session_id: t1, t2.session_id: t2}
+    registry = tmp_path / "entity_registry.yaml"
+
+    # Two sessions, two spellings for the same person, close enough that the
+    # ordinary fuzzy merge pass folds them into one concept with an alias.
+    # "Cookie" gets the extra mention so it — not "Cookiie" — survives as
+    # the winner (merge_near_duplicates breaks ties toward more mentions).
+    first = {
+        t1.session_id: SessionExtraction(
+            recap="Recap.",
+            entities=[
+                _mention("Cookie", EntityType.CHARACTER, "00:08:25"),
+                _mention("Cookie", EntityType.CHARACTER, "00:09:00"),
+            ],
+        ),
+        t2.session_id: SessionExtraction(
+            recap="Recap.",
+            entities=[_mention("Cookiie", EntityType.CHARACTER, "00:05:00")],
+        ),
+    }
+    entities = resolve_entities(first, tmap, registry)
+    write_registry(entities, registry)
+    assert {e.concept_id for e in entities} == {"characters/cookie"}
+    assert "Cookiie" in entities[0].aliases
+
+    # The concept goes quiet (its sessions drop out of this run's scope,
+    # standing in for a reword that stops mentioning it under any known
+    # name), retiring it into the ledger with that alias intact.
+    write_registry([], registry)
+
+    # A later session uses the exact alias the ledger remembers.
+    t3 = _transcript("2025-04-09_RF_c", "2025-04-09")
+    later = {t3.session_id: SessionExtraction(
+        recap="Recap.",
+        entities=[_mention("Cookiie", EntityType.CHARACTER, "00:02:00")],
+    )}
+    entities = resolve_entities(later, {t3.session_id: t3}, registry)
+    assert {e.concept_id for e in entities} == {"characters/cookie"}
 
 
 @pytest.mark.xfail(
-    reason="Phase 3 (registry-anchored identity) is not implemented yet: "
-    "resolve_entities derives concept_id from the freshly extracted name, "
-    "so an LLM resample that rewords a name still creates a new concept "
-    "instead of reusing the registry's existing one. See the incident this "
-    "test file documents.",
+    reason="A first-ever reword to wording that matches neither a known "
+    "alias nor the fuzzy bar against the retired ledger cannot be "
+    "recovered without risking folding unrelated entities together (see "
+    "the module-level note above). check_rename_safety in "
+    "test_rename_guard.py is the actual defence — refuse the run.",
     strict=True,
 )
 def test_reworded_extraction_keeps_the_registry_concept_id(tmp_path: Path):
