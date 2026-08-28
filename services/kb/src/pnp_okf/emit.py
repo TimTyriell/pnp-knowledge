@@ -21,6 +21,7 @@ from pnp_okf.okf import (
     slugify,
     split_document,
     write_concept,
+    write_if_changed,
     write_index,
 )
 
@@ -391,7 +392,11 @@ def prune_conflicts(conflicts_dir: Path, still_open: set[str]) -> int:
 
 
 def prune_orphans(
-    bundle_dir: Path, entities: list[CanonicalEntity]
+    bundle_dir: Path,
+    entities: list[CanonicalEntity],
+    *,
+    max_ratio: float = 0.1,
+    allow: bool = False,
 ) -> int:
     """Delete concept files whose entity no longer exists. Returns the count.
 
@@ -402,26 +407,56 @@ def prune_orphans(
 
     Only entity concepts are considered: ``sessions/``, the per-directory
     ``index.md`` files and ``log.md`` are emitted separately and never orphan.
+
+    A run whose ``entities`` cover only part of the bundle (a partial
+    ``--limit``/``--session`` run, or a re-extraction that reworded names and
+    changed most concept ids at once) would otherwise call everything it
+    didn't touch an orphan and delete it. Past ``max_ratio`` of the existing
+    concept files, pruning refuses to run at all unless ``allow`` overrides
+    it — the caller is expected to pass ``allow=True`` only for a full run
+    where a large prune is actually expected (e.g. after a deliberate
+    registry cleanup).
     """
 
-    live = {f"{e.concept_id}.md" for e in entities}
     entity_dirs = set(TYPE_DIR.values())
-    removed = 0
+    existing: dict[str, list[Path]] = {}
     for directory in entity_dirs:
         d = bundle_dir / directory
         if not d.is_dir():
             continue
-        for path in d.glob("*.md"):
-            if path.name == "index.md":
-                continue
-            rel = f"{directory}/{path.name}"
-            if rel not in live:
-                path.unlink()
-                log.info("[emit] pruned orphaned concept: %s", rel)
-                removed += 1
+        existing[directory] = [p for p in d.glob("*.md") if p.name != "index.md"]
+
+    live = {f"{e.concept_id}.md" for e in entities}
+    stale = [
+        (directory, path)
+        for directory, paths in existing.items()
+        for path in paths
+        if f"{directory}/{path.name}" not in live
+    ]
+    total = sum(len(paths) for paths in existing.values())
+    # Below this size a "mass" deletion isn't distinguishable from a normal
+    # one (a 3-file bundle where 1 file is stale is already over any sane
+    # ratio), so the guard only engages once there is enough to be a signal.
+    if total >= 20 and not allow and len(stale) > max_ratio * total:
+        log.error(
+            "[emit] refusing to prune %d/%d concept file(s) (>%.0f%%) — this "
+            "usually means the run only covered part of the bundle "
+            "(--limit/--session) or a re-extraction reworded most entity "
+            "names. Pass --allow-prune on a full run if this is expected.",
+            len(stale), total, max_ratio * 100,
+        )
+        return 0
+
+    removed = 0
+    for directory, path in stale:
+        path.unlink()
+        log.info("[emit] pruned orphaned concept: %s/%s", directory, path.name)
+        removed += 1
+    for directory in existing:
+        d = bundle_dir / directory
         # A directory can empty out entirely (e.g. a type that lost all its
         # members); leave it in place only if it still holds something.
-        if not any(d.iterdir()):
+        if d.is_dir() and not any(d.iterdir()):
             d.rmdir()
     return removed
 
@@ -516,4 +551,4 @@ def emit_log(
             f"* **Session**: [{transcript.title or 'Session'}](/sessions/{date}.md)"
         )
         lines.append("")
-    (bundle_dir / "log.md").write_text("\n".join(lines).strip() + "\n", encoding="utf-8")
+    write_if_changed(bundle_dir / "log.md", "\n".join(lines).strip() + "\n")

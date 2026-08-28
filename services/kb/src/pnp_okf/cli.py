@@ -118,8 +118,16 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     )
     tmap = {t.session_id: t for t in transcripts}
     log.info("Processing %d session(s)", len(transcripts))
+    partial_run = args.limit is not None or bool(args.session)
 
-    extractions = _extract_all(transcripts, cfg, paths, args.force)
+    if args.reextract:
+        log.warning(
+            "--reextract: ignoring the extract cache. The LLM will resample "
+            "entity names, which can change their concept id and rename "
+            "files that carry no new knowledge (see docs/architecture for "
+            "the 2026-08 incident this guards against)."
+        )
+    extractions = _extract_all(transcripts, cfg, paths, args.reextract)
 
     registry_path = paths.registry_path
     entities = resolve_entities(extractions, tmap, registry_path)
@@ -134,6 +142,13 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
 
     episodes = Episodes.load(paths.episodes_path)
     log.info("Episode list: %d entr(y/ies) from %s", len(episodes), paths.episodes_path)
+
+    # Snapshot every concept file's mtime before emitting, so the run summary
+    # below can report what actually changed on disk (write_if_changed keeps
+    # an unchanged file's mtime untouched) instead of just what was attempted.
+    before_mtimes = {
+        p: p.stat().st_mtime_ns for p in paths.bundle_dir.rglob("*.md")
+    } if paths.bundle_dir.exists() else {}
 
     index = build_concept_index(entities, tmap)
     session_entries = emit_sessions(paths.bundle_dir, tmap, extractions, index, episodes)
@@ -201,14 +216,33 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     if settled:
         log.info("Cleared %d resolved conflict(s) from the queue.", settled)
 
-    pruned = prune_orphans(paths.bundle_dir, entities)
-    if pruned:
+    if partial_run:
+        pruned = 0
         log.info(
-            "Pruned %d concept file(s) with no entity behind them any more.", pruned
+            "Skipped orphan pruning: this run only covers part of the bundle "
+            "(--limit/--session), so concepts outside it are not orphans."
         )
+    else:
+        pruned = prune_orphans(paths.bundle_dir, entities, allow=args.allow_prune)
+        if pruned:
+            log.info(
+                "Pruned %d concept file(s) with no entity behind them any more.", pruned
+            )
 
     emit_indexes(paths.bundle_dir, entities, session_entries)
     emit_log(paths.bundle_dir, tmap)
+
+    after_paths = set(paths.bundle_dir.rglob("*.md")) if paths.bundle_dir.exists() else set()
+    new_files = len(after_paths - before_mtimes.keys())
+    changed_files = sum(
+        1 for p in after_paths & before_mtimes.keys()
+        if p.stat().st_mtime_ns != before_mtimes[p]
+    )
+    unchanged_files = len(after_paths) - new_files - changed_files
+    log.info(
+        "Run summary: %d new, %d changed, %d unchanged concept file(s), %d pruned.",
+        new_files, changed_files, unchanged_files, pruned,
+    )
 
     if unresolved_total:
         log.info(
@@ -417,7 +451,18 @@ def _add_common(p: argparse.ArgumentParser) -> None:
         "--limit", type=int, default=None, help="Process at most N sessions"
     )
     p.add_argument(
-        "--force", action="store_true", help="Ignore cache and re-call the LLM"
+        "--force", action="store_true",
+        help="Ignore the synthesis cache and re-call the LLM for entity "
+        "prose (extraction is untouched — see --reextract). For "
+        "'extract', this ignores the extraction cache instead, since "
+        "that is the only thing that command does.",
+    )
+    p.add_argument(
+        "--reextract", action="store_true",
+        help="Ignore the extraction cache and re-call the LLM for entity "
+        "mentions. Resamples the model, which can reword an entity's name "
+        "and change its concept id — prefer editing entity_rules.yaml over "
+        "this unless the transcript itself changed.",
     )
     p.add_argument(
         "--workers", type=int, default=8,
@@ -439,6 +484,11 @@ def _build_parser() -> argparse.ArgumentParser:
     _add_common(run)
     run.add_argument(
         "--clean", action="store_true", help="Delete the bundle dir before writing"
+    )
+    run.add_argument(
+        "--allow-prune", action="store_true",
+        help="Allow pruning more than 10%% of existing concept files in one "
+        "run. Orphan pruning is skipped entirely on a --limit/--session run.",
     )
     run.set_defaults(func=cmd_run)
 
