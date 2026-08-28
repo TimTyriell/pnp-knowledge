@@ -1,24 +1,24 @@
 ---
 type: Character
 title: Carlos
-description: Carlos ist ein naturverbundener Zauberer, der sich unmittelbar einem
-  Forschungsteam anschließt, um die Ursachen der Monster zu ergründen. S…
+description: Carlos ist ein Katari, der sich durch hohe Agilität auszeichnet. Seine
+  Neugier treibt ihn dazu, die Kreaturen seiner Umgebung zu erforschen…
 tags:
 - characters
 timestamp: '2026-05-27T00:00:00Z'
 id: CHAR_CARLOS
 ---
 
-Carlos ist ein naturverbundener Zauberer, der sich unmittelbar einem Forschungsteam anschließt, um die Ursachen der Monster zu ergründen. Sein wissenschaftliches Interesse ist stark ausgeprägt, und er geht in der Erkundung stets vorsichtig und misstrauisch vor, insbesondere gegenüber dem mysteriösen Nebel, der die Region umgibt. Er trägt entscheidend zu Verhandlungen und Kämpfen bei, indem er sowohl defensive Magie als auch scharfe Beobachtungsgabe einsetzt.
+Carlos ist ein Katari, der sich durch hohe Agilität auszeichnet. Seine Neugier treibt ihn dazu, die Kreaturen seiner Umgebung zu erforschen. Dabei helfen ihm eine ausgeprägte Verbindung zur Natur und besondere Fähigkeiten, die er sowohl beim Spurenlesen als auch im Kampf einsetzt.
 
-## Rolle und Motivation
+## Persönlichkeit und Forschungsdrang
 
-Carlos‘ Hauptmotivation ist die wissenschaftliche Untersuchung der Monsterphänomene. Deshalb zögert er nicht, sich dem Forschungsteam anzuschließen. Mit seinem selbstbewussten Auftreten, verstärkt durch magische Mittel, gelingt es ihm, Tara von der Dringlichkeit und Ernsthaftigkeit des Vorhabens zu überzeugen. In einem entscheidenden Gespräch mit Trillo und Kalos stellt er die richtigen Fragen und entwickelt einen scharfen Instinkt für Täuschung: Er erkennt, dass Kalos eine Illusion sein könnte, und teilt diese Beobachtung sofort der Gruppe mit. Diese Aufmerksamkeit trägt wesentlich zum erfolgreichen Verlauf des folgenden Kampfes bei.
+Carlos ist neugierig und möchte die Kreaturen erforschen, denen er begegnet. Sein Interesse gilt offenbar dem Verständnis dieser Wesen, und er sucht aktiv nach Spuren und Hinweisen, die ihm dabei helfen. Seine Verbindung zur Natur zeigt sich darin, dass er natürliche Materialien wie Käferpanzer als Schutz nutzt – ein Zeichen für ein enges Verhältnis zur Umwelt und ihren Lebewesen.
 
-## Fähigkeiten und Taktiken
+## Fähigkeiten und Kampfweise
 
-Carlos beherrscht die Beschwörung von Ranken und Käfern, was auf eine enge Verbindung zur Natur schließen lässt. Zur eigenen Sicherheit nutzt er defensive Zauber wie Dornenhaut und eine Käferpanzer-Rüstung, die ihn vor den Gefahren des Nebels schützen. Obwohl sein Zauber „Wishes and Tangle“ im kritischen Moment scheitert, bleibt seine Rolle als wachsamer Unterstützer und Taktiker für die Gruppe von zentraler Bedeutung.
+Durch seine hohe Agilität bewegt sich Carlos wendig und schnell. Mit der Fähigkeit *Gifted Tracker* kann er Spuren lesen und so Hinweise in der Umgebung entdecken. Im Kampf setzt er *Wishes and Tangles* ein, um Gegner zu fesseln und ihnen die Bewegungsfreiheit zu nehmen. Diese Kombination aus Naturverbundenheit, Spurensuche und Kampftechnik macht ihn zu einem vielseitigen Entdecker, der sowohl bei der Erforschung von Kreaturen als auch im Gefecht flexibel agieren kann.
 
 # Belege
 
-[P-51] Session 2026-05-27 @ 01:39:09 (https://www.youtube.com/watch?v=IYYmgpqsp7E)
+[P-51] Session 2026-05-27 @ 00:26:27 – https://www.youtube.com/watch?v=IYYmgpqsp7E

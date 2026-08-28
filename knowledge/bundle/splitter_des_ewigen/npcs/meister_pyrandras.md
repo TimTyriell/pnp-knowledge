@@ -1,32 +1,39 @@
 ---
 type: NPC
 title: Meister Pyrandras
-description: Meister Pyrandras ist der Kommandant der Stadtwache von Ehrenfels und
-  zugleich ein Drachengeborener mit goldenen Schuppen. Er tritt als Aut…
+description: 'Meister Pyrandras ist ein goldener Dragonborn aus Ehrenfels. Er tritt
+  in der Stadt als Meister auf und bekleidet mehrere Funktionen: Als Ko…'
 tags:
 - npcs
-timestamp: '2026-08-04T00:00:00Z'
+timestamp: '2026-08-12T00:00:00Z'
 id: NPC_MEISTER_PYRANDRAS
 aliases:
-- Meister Pyrandas
+- Meister Pirandras
 ---
 
-Meister Pyrandras ist der Kommandant der Stadtwache von Ehrenfels und zugleich ein Drachengeborener mit goldenen Schuppen. Er tritt als Autoritätsperson auf, die für Ordnung und Verteidigung der Stadt sorgt. Die Heldengruppe begegnet ihm mehrfach: zunächst bei der Untersuchung eines toten Kenku, später in der Verteidigung gegen Dämonen und zuletzt in einer konfrontativen Auseinandersetzung mit den Seraphen-Wachen, bei der er die Autorität von Nerash offen in Frage stellt.
+**Meister Pyrandras** ist ein goldener Dragonborn aus [Ehrenfels](/locations/ehrenfels.md). Er tritt in der Stadt als Meister auf und bekleidet mehrere Funktionen: Als Kommandant von Ehrenfels führt er die Verteidigung der Stadt an, zugleich ist er der Wirt der örtlichen Taverne. Über die Ereignisse hinweg zeigt er sich als kooperationsbereiter Ansprechpartner, gerät aber auch selbst in angespannte Situationen.
 
-## Rolle in Ehrenfels
+## Rolle und Auftreten
 
-Pyrandras kommandiert die Stadtwache von Ehrenfels. Als ein Alarm ausgelöst wird, reagiert er sofort, ruft mit einem Drachenschrei weitere Drachenblütige herbei und führt die Verstärkung zum Ort des Geschehens. Beim Fund eines toten Kenku untersucht er den Leichnam und übergibt den dabei gefundenen Brief an den Gildenmeister. Der Gruppe überlässt er einen Teleportationsring sowie einen Anteil des gefundenen Goldes – ein Zeichen dafür, dass er ihr Vertrauen entgegenbringt.
+Pyrandras wird von [Lindo Laut](/characters/lindo_laut.md) alarmiert und führt daraufhin die Verstärkung an. Er ist von der Lage beeindruckt, unterstützt die Gruppe und verhandelt mit dem Gildemeister über die Belohnung. Später, beim Angriff von Dämonen auf Ehrenfels, leitet er als Kommandant die Verteidigung, weist die Gruppe an, zur Brücke zu eilen, und hält trotz schwerer Bedrängnis im Kampf seine Stellung.
 
-## Verteidigung gegen die Dämonen
+Als Wirt der Taverne von Ehrenfels erlebt die Gruppe ihn in einer anderen Rolle: Nervös wegen der Vorfälle in der Kapelle zeigt er sich entsetzt, dass die Gruppe eine Göttin gesehen hat, und ist erleichtert, als die Seraphen die Stadt verlassen haben.
 
-Beim Angriff der Dämonen auf Ehrenfels kämpft Pyrandras an vorderster Front. Er weist die Gruppe an, zur Brücke zu eilen, und hält mit seinen Soldaten die Stellung, bis Verstärkung eintrifft. Damit erweist er sich nicht nur als Befehlshaber, sondern auch als Kämpfer, der persönlich in die Gefahr geht.
+## Konflikt mit den Seraphen
 
-## Konfrontation mit den Seraphen-Wachen
+Während die Seraphen in Ehrenfels sind, gerät Pyrandras mit ihnen aneinander. Er ist aufgebracht, weil sich Nerash nicht zeigt, und droht beinahe mit Gewalt. [Orlanius Schwarzhorn](/npcs/orlanius_schwarzhorn.md) gelingt es, ihn zu beruhigen.
 
-Gemeinsam mit [Orlanius Schwarzhorn](/npcs/orlanius_schwarzhorn.md) und [Haloen](/npcs/harloen.md) stellt sich Pyrandras den Seraphen-Wachen entgegen. Er kritisiert lautstark, dass sich [Nerash](/deities/nerash.md) noch nicht persönlich gezeigt hat, und wirkt bereit, einen Kampf zu beginnen. Nur Orlanius kann ihn beruhigen. Beim Abgang droht er den Seraphen indirekt – er scheint die wahren Machtverhältnisse in Ehrenfels in Frage zu stellen und ist nicht bereit, die Autorität der Seraphen widerspruchslos hinzunehmen.
+## Beziehungen
 
-# Belege
+- [Lindo Laut](/characters/lindo_laut.md) alarmiert ihn; daraufhin führt Pyrandras die Verstärkung an.
+- Mit dem **Gildemeister** verhandelt er über die Belohnung für die Gruppe.
+- [Nerash](/deities/nerash.md) bleibt einer Begegnung fern, was Pyrandras erzürnt.
+- [Orlanius Schwarzhorn](/npcs/orlanius_schwarzhorn.md) beruhigt ihn in der Auseinandersetzung mit den [Seraphen](/factions/seraphen.md).
+- Zu den Seraphen hat er ein angespanntes Verhältnis.
 
-[P-15] Session 2025-07-22 @ 02:07:07 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
-[P-46] Session 2026-04-09 @ 00:15:49 (https://www.youtube.com/watch?v=vcGkejr8_nI)
-[S1-02-A] Session 2026-08-04 @ 02:02:21 (https://www.youtube.com/watch?v=qRj2t3wQHfs)
+## Belege
+
+1. Session 2025-07-22, 02:07:00 – https://www.youtube.com/watch?v=BRRCUgW4xRo
+2. Session 2026-04-09, 00:15:31 – https://www.youtube.com/watch?v=vcGkejr8_nI
+3. Session 2026-08-04, 02:02:21 – https://www.youtube.com/watch?v=qRj2t3wQHfs
+4. Session 2026-08-12, 00:56:36 – https://www.youtube.com/watch?v=piUv11DCwDw

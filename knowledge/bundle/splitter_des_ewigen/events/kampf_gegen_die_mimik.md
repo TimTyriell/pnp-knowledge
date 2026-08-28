@@ -1,17 +1,17 @@
 ---
 type: Event
 title: Kampf gegen die Mimik
-description: Im Oberbau der Mine erscheinen sieben Silberbarren, die sich als Mimik
-  entpuppen, als Lindo sie mit einem Seil berührt. Die Kreatur verschl…
+description: Eine Muschel entpuppt sich als Mimik und greift die Gruppe an. Cookie
+  wird fast getötet, aber Dodo zerschmettert die Kreatur.
 tags:
 - events
-timestamp: '2026-02-24T00:00:00Z'
+timestamp: '2025-06-10T00:00:00Z'
 id: EVENT_KAMPF_GEGEN_DIE_MIMIK
 subtype: Kampf
 ---
 
-Im Oberbau der [Mine](/locations/kristallmine.md) erscheinen sieben Silberbarren, die sich als Mimik entpuppen, als Lindo sie mit einem Seil berührt. Die Kreatur verschlingt das Seil, wird aber nicht weiter bekämpft.
+Eine Muschel entpuppt sich als [Mimik](/npcs/mimik.md) und greift die Gruppe an. [Cookie](/characters/cookie.md) wird fast getötet, aber [Dodo](/characters/dodo.md) zerschmettert die Kreatur.
 
 # Belege
 
-[P-38] Session 2026-02-24 @ 01:02:40 (https://www.youtube.com/watch?v=WOFArbwDDIQ)
+[P-11] Session 2025-06-10 @ 01:16:47 (https://www.youtube.com/watch?v=cLkCu3Iq3y8)

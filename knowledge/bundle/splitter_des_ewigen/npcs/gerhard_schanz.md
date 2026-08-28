@@ -1,16 +1,16 @@
 ---
 type: NPC
 title: Gerhard Schanz
-description: Ein Wächter und Ausbilder in Kleinringtal, der sich um Ordnung kümmert.
-  Er weist Sange zurecht, nachdem dieser das kleine Mädchen erschreck…
+description: Gerhard Schanz ist ein Begleiter der Gruppe, der mit Hauptmann Aaron
+  verhandelt. Er kümmert sich um die Tavernenleute.
 tags:
 - npcs
-timestamp: '2026-06-04T00:00:00Z'
+timestamp: '2026-08-20T00:00:00Z'
 id: NPC_GERHARD_SCHANZ
 ---
 
-Ein Wächter und Ausbilder in [Kleinringtal](/locations/ringtal.md), der sich um Ordnung kümmert. Er weist [Sange](/characters/sange.md) zurecht, nachdem dieser das kleine Mädchen erschreckt hat, und untersucht später den Vorfall mit der Puppe. Er wird als grimmig, aber fürsorglich dargestellt und kümmert sich um das Mädchen.
+Gerhard Schanz ist ein Begleiter der Gruppe, der mit [Hauptmann Aaron](/npcs/hauptmann_aaron.md) verhandelt. Er kümmert sich um die Tavernenleute.
 
 # Belege
 
-[P-52] Session 2026-06-04 @ [01:32:38] (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
+1. Session 2026-08-20 @ 00:04:56 (https://www.youtube.com/watch?v=2EkWrNUfQi0)

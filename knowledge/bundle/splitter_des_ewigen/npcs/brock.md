@@ -1,15 +1,15 @@
 ---
 type: NPC
 title: Brock
-description: Brock ist der zweite Wächter an Bertholds Haus. Er steht Kerl bei, sagt
-  aber während der gesamten Szene nichts.
+description: Brock ist der zweite Wächter des Dorfes Brechka. Er wird nur kurz erwähnt,
+  als Kerl ihn als seinen Freund vorstellt. Er gehört zu den Verte…
 tags:
 - npcs
 timestamp: '2025-04-09T00:00:00Z'
 id: NPC_BROCK
 ---
 
-Brock ist der zweite Wächter an [Bertholds](/npcs/berthold.md) Haus. Er steht [Kerl](/npcs/kerl.md) bei, sagt aber während der gesamten Szene nichts.
+Brock ist der zweite Wächter des Dorfes [Brechka](/locations/breska.md). Er wird nur kurz erwähnt, als [Kerl](/npcs/kerl.md) ihn als seinen Freund vorstellt. Er gehört zu den Verteidigern des Dorfes.
 
 # Belege
 

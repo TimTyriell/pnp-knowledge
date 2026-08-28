@@ -1,8 +1,8 @@
 ---
 type: Faction
 title: Brabarand-Gilde
-description: Die Brabarand-Gilde ist eine berüchtigte Auftragskillergilde, die für
-  ihre Effektivität und Diskretion bekannt ist. Sie gilt als skrupellos…
+description: Die Brabarand-Gilde ist eine berüchtigte Auftragskiller-Organisation.
+  Sie ist dafür bekannt, dass man sie anheuern kann, um Leute gezielt a…
 tags:
 - factions
 timestamp: '2025-07-22T00:00:00Z'
@@ -12,16 +12,16 @@ subtype: Gilde
 
 # Brabarand-Gilde
 
-Die **Brabarand-Gilde** ist eine berüchtigte Auftragskillergilde, die für ihre Effektivität und Diskretion bekannt ist. Sie gilt als skrupellose Organisation, die für hohe Summen nahezu jeden Auftrag annimmt — einschließlich der vollständigen Ausschaltung einer gesamten Heldengruppe.
+Die **Brabarand-Gilde** ist eine berüchtigte Auftragskiller-Organisation. Sie ist dafür bekannt, dass man sie anheuern kann, um Leute gezielt auszuschalten. In der Kampagne tritt sie als Gegnerin der Gruppe in Erscheinung, als diese von Mitgliedern der Gilde angegriffen wird.
 
-## Ruf und Arbeitsweise
+## Auftragsmord und Ruf
 
-Die Gilde genießt einen Ruf als zuverlässige und gefährliche Söldnerorganisation im Untergrund. Ihre Mitglieder treten stets vermummt auf, tragen Tücher, die ihre Gesichter verbergen, und verwenden eine spezifische, auf Tödlichkeit ausgelegte Ausrüstung: Gifte, Armbrüste, Kurzschwerter und Dolche mit rüstungsdurchdringenden Eigenschaften. Diese Kombination erlaubt es ihnen, selbst gut geschützte Ziele effizient zu eliminieren. Ihre Methoden legen Wert auf Heimlichkeit und Präzision, was sie zu einer gefürchteten Adresse für Mordaufträge macht.
+Das Geschäft der Brabarand-Gilde sind gedungene Ausschaltungen: Wer die Gilde anheuert, kann über sie gezielt Personen aus dem Weg räumen lassen. Ihr Ruf als berüchtigte Organisation gründet auf dieser Tätigkeit.
 
-## Jüngster Auftrag
+## Angriff auf die Gruppe
 
-Die Brabarand-Gilde wurde von einem unbekannten Auftraggeber mit einer ganzen Truhe Gold angeheuert, um die gesamte Heldengruppe auszuschalten. Der erste Anschlag erfolgte in einer Taverne und war nach Einschätzung der Gilde nur die Vorhut — ein erster, offenbar gescheiterter Versuch, der Teil eines größeren, noch nicht ausgestandenen Plans war. Ob die Gilde nach dem Fehlschlag weitere Anläufe unternimmt oder ihren Auftrag als gescheitert betrachtet, ist nicht bekannt.
+Im Verlauf der Session wird die Gruppe von Angreifern überfallen. [Lindo Laut](/characters/lindo_laut.md) identifiziert die Angreifer als Mitglieder der Brabarand-Gilde. Der Angriff erfolgt, weil ein Kopfgeld auf die Gruppe ausgesetzt ist.
 
-## Belege
+# Belege
 
-[P-15] Session 2025-07-22 @ 01:15:00 (https://www.youtube.com/watch?v=BRRCUgW4xRo) – Erste Erwähnung der Gilde, ihrer Merkmale und des Auftrags gegen die Heldengruppe.
+[P-15] Session 2025-07-22 @ 01:14:00 – https://www.youtube.com/watch?v=BRRCUgW4xRo

@@ -1,8 +1,8 @@
 ---
 type: Location
 title: Orkgebiet
-description: Eine trockene, warme und karge Region im Norden, nahe Hartwacht und dem
-  Ende, dominiert von Palmen, Kakteen, Felsbrocken und Bergen. Teil d…
+description: Das Orkgebiet ist eine trockene, karge Region im Norden, in der die Gruppe
+  unterwegs ist. Es ist nicht feindlich, aber die Orks reagieren e…
 tags:
 - locations
 timestamp: '2025-10-07T00:00:00Z'
@@ -10,7 +10,7 @@ id: LOC_ORKGEBIET
 subtype: Wildnis
 ---
 
-Eine trockene, warme und karge Region im Norden, nahe [Hartwacht](/locations/hartwacht.md) und dem [Ende](/locations/ende_jenseits_der_orkgebiete.md), dominiert von Palmen, Kakteen, Felsbrocken und Bergen. Teil des Territoriums der Orks, die fremde Eindringlinge als kriegerischen Akt werten, weshalb die Anwesenheit der Magier und der Kampf riskant sind.
+Das Orkgebiet ist eine trockene, karge Region im Norden, in der die Gruppe unterwegs ist. Es ist nicht feindlich, aber die Orks reagieren empfindlich auf Bedrohungen.
 
 # Belege
 

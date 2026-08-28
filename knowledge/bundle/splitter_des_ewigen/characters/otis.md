@@ -1,8 +1,8 @@
 ---
 type: Character
 title: Otis
-description: Optisch wird er als "sehr großgewachsener, junger, menschlicher Mann"
-  geschildert. Im Kampfgeschehen wirkt er sowohl mit roher Gewalt als a…
+description: Otis ist ein junger Human Ranger, der in einem Steinbruch aufwuchs und
+  dort als Steinklopper arbeitete, bevor er sich als Söldner verdingte…
 tags:
 - characters
 timestamp: '2026-04-09T00:00:00Z'
@@ -10,36 +10,46 @@ id: CHAR_OTIS
 ---
 
 ## Überblick
-Otis ist ein menschlicher Waldläufer, der bei der ersten Vorstellungsrunde als "Human Ranger" beschrieben wird. Er wuchs in einem Steinbruch auf und hat diesen Hintergrund nach eigener Aussage hinter sich gelassen, um sich neuen Aufgaben zu widmen: "Ich […] bin in einem… Steinbruch aufgewachsen und habe jetzt vor, was anderes zu kloppen außer Steine." Kämpferisch tritt er mit einem Hammer sowie einem Kurzbogen in Erscheinung, wobei seine physische Kraft und unkonventionelle Taktiken hervorstechen.
 
-Optisch wird er als "sehr großgewachsener, junger, menschlicher Mann" geschildert. Im Kampfgeschehen wirkt er sowohl mit roher Gewalt als auch mit spontaner Effektivität – etwa wenn er einen Wächterkopf an einer Wand zermalmt oder Dämonen mit einem Schwung seines Hammers wie Kegel umstößt.
+Otis ist ein junger Human Ranger, der in einem Steinbruch aufwuchs und dort als Steinklopper arbeitete, bevor er sich als Söldner verdingte. Seine eigene Charakterisierung bringt es auf den Punkt: Er ist in einem Steinbruch aufgewachsen und hat nun vor, „was anderes zu kloppen außer Steine“. Er ist pragmatisch, gewaltbereit und im Kampf ebenso effektiv mit Hammer wie mit Bogen. Trotz seiner rauen Schale zeigt er eine gewisse Naivität und eine fürsorgliche Seite, die sich vor allem im Umgang mit seiner Gefährtin Nina und mit geretteten Kindern zeigt.
 
 ## Rolle in der Kampagne
-Otis ist ein beständiger Teilnehmer der Abenteuergruppe. In der ersten dokumentierten Mission agiert er als impulsiver Kämpfer und führt die Aufgabe pragmatisch zu Ende: Er bringt Gefangene nach [Willoch](/locations/willauch.md), weil er dafür bezahlt wurde. In der zweiten Session hat er sich der Gruppe um [Rotunas](/characters/rotunas.md) angeschlossen und ist an der Rettung von Kindern sowie der Zerstörung von Portalsäulen beteiligt. Vom Spielleiter wird erwähnt, dass er nach der ersten Quest "die letzten Tage ein bisschen vielleicht im Saus und Braus gelebt" habe.
+
+Otis gehört zu einer Gruppe von fünf Abenteurern, die in einem speziellen Abenteuer der Runde *Chip Dice Tavern – Dwarfmasters* zusammenkommen. Die Gruppe besteht neben ihm aus Myko, einem Funk-Rhetoride und ehemaligen Karawanenarzt, Nina, einer Halbling-Bardin in fortgeschrittenem Alter, die wegen Casino-Schulden ihres Mannes Geld verdienen muss, sowie Krall, einem Galapag-Guardian mit Zweihandhammer.
+
+Otis übernimmt innerhalb der Gruppe die Rolle des Beschützers, insbesondere von Nina, die er scherzhaft als seine „Mutter und Ehefrau“ bezeichnet. Er ist bereit, Gefangene in seine Heimatstadt Willauch zu bringen, da er aus dieser Stadt stammt und die Bezahlung akzeptiert. Im Kampfgeschehen agiert er als vorderste Front: Er stürmt Türen ein, zerschmettert Gegner mit seinem Hammer und nutzt seinen Bogen für Fernkampfangriffe. Gemeinsam mit Rotunas zerstört er die Säulen eines Portals und trägt damit entscheidend zum Sieg über die Bedrohung bei.
 
 ## Wichtige Merkmale
-- **Kampf mit dem Hammer:** Otis’ primäre Waffe ist ein Kriegshammer, mit dem er massive physische Schäden verursacht. In der ersten Session reißt er mit einem kritischen Schlag die Rückwand einer Scheune ein. Gegen Ende erhält er von einer nicht namentlich genannten Quelle einen verbesserten Kriegshammer geschenkt.
-- **Kurzbogen:** In der zweiten Session wird erwähnt, dass er auch einen Kurzbogen führt und diesen effektiv einsetzt – so erlegt er einen Dämonenmagier mit einem gezielten Schuss.
-- **Impulsivität und Ungeschicklichkeit:** Sein Verhalten kann unbedacht sein. So beschwert er sich lautstark über die Unterkunft und alarmiert dadurch feindliche Banditen.
-- **Unkonventionelle Taktiken:** Abseits roher Gewalt zeigt er kreative Kampfhandlungen, etwa das "Wegkegeln von Dämonen wie Bowlingkugeln."
-- **Steinbruch-Herkunft:** Sein Wissen über Fels und Gestein kommt taktisch zum Einsatz, als er gemeinsam mit [Rotunas](/characters/rotunas.md) Portalsäulen zerstört.
-- **Humor:** Er wird als humorvoll beschrieben und zeigt eine emotionale Seite, etwa durch den Wunsch, seiner Mutter einen schönen Stein mitzubringen.
+
+**Fähigkeiten:** Otis ist ein vielseitiger Kämpfer. Er beherrscht den Kampf mit dem Hammer, den er als ehemaliger Steinklopper effektiv einsetzt, um Wände einzureißen und Gegner zu zerschmettern. Zusätzlich nutzt er einen Bogen für den Fernkampf. Seine Erfahrung als Steinklopper macht ihn besonders wertvoll, wenn es darum geht, strukturelle Hindernisse wie Türen oder Wände zu überwinden – so tritt er etwa eine Tür ein, um in ein Lagerhaus zu stürmen, und zerstört zusammen mit Rotunas die Säulen eines Portals.
+
+**Auftreten:** Otis ist ein großer, junger Mensch mit einer pragmatischen und direkten Art. Er zögert nicht, Gewalt anzuwenden, wenn es die Situation erfordert, und scheut auch nicht davor zurück, Kinder unter den Arm zu nehmen und damit in Sicherheit zu bringen. Seine Naivität zeigt sich in Momenten, in denen er Situationen unbedarft angeht, etwa wenn er ohne große Umschweife eine Tür eintritt, ohne vorher zu prüfen, was sich dahinter befindet.
+
+**Wesenszüge:** Otis ist mutig und entschlossen. Er zögert nicht, sich in Gefahr zu begeben, um andere zu retten – so hilft er Brim, als dieser von einer Kreatur gepackt wird. Seine fürsorgliche Seite zeigt sich im Umgang mit Nina, die er beschützt, und mit den Kindern, die er vor Dämonen rettet. Sein Humor ist trocken und selbstironisch, etwa wenn er Nina scherzhaft als seine „Mutter und Ehefrau“ bezeichnet.
 
 ## Beziehungen und Verbindungen
-- **Mutter / Nina:** Zu einer Frau namens [Nina](/characters/nina.md) besteht eine auffällig enge Bindung. In der ersten Session wird sie zugleich als "Mutter" und "Ehefrau" bezeichnet (in Anführungszeichen), und Otis folgt bereitwillig ihren Anweisungen. In der zweiten Session ist nur von seiner Mutter die Rede, der er eine Gesteinsprobe als Geschenk mitnehmen will.
-- **Rotunas:** Gemeinsam mit [Rotunas](/characters/rotunas.md) zerstört Otis in der zweiten Session die Portalsäulen.
-- **Krall und weitere Gefährten:** Otis agiert als Teil einer größeren Gruppe, zu der in der ersten Session unter anderem [Krall](/characters/krall.md) und [Floran](/npcs/floran.md) gehören. [Floran](/npcs/floran.md) tritt er in einem Kampf "spartanisch" in eine Grube.
+
+**Nina:** Otis hat eine enge, wenn auch scherzhaft formulierte Bindung zu Nina. Er bezeichnet sie als seine „Mutter und Ehefrau“ und übernimmt in der Gruppe die Rolle ihres Beschützers. Die genaue Natur ihrer Beziehung – ob familiär, romantisch oder rein freundschaftlich – wird in den Belegen nicht näher ausgeführt.
+
+**Brim:** Otis hilft Brim im Kampf, als dieser von einer Kreatur gepackt wird. Die genaue Art ihrer Verbindung ist nicht näher beschrieben, aber die Rettungsaktion zeigt, dass Otis bereit ist, für seine Mitstreiter einzustehen.
+
+**Rotunas:** Gemeinsam mit Rotunas zerstört Otis die Säulen des Portals. Diese Zusammenarbeit deutet auf ein eingespieltes Team hin, auch wenn die näheren Umstände ihrer Beziehung nicht ausgeführt werden.
+
+**Willauch:** Otis stammt aus Willauch und ist bereit, Gefangene dorthin zu bringen. Die Stadt ist ihm vertraut, auch wenn die Belege nicht näher ausführen, was ihn mit ihr verbindet oder warum er sie verlassen hat.
 
 ## Chronologie
-[P-42] **Session 1 (2026-03-23):** Otis stellt sich als aus dem Steinbruch stammender Waldläufer vor. Durch unvorsichtiges Verhalten alarmiert er Banditen. Im Kampf beweist er extreme physische Gewalt (Zermalmen eines Kopfes, Durchbrechen einer Scheunenwand). Er kickt einen Gefährten in die Tiefe. Am Ende der Session entscheidet er sich gegen alternative Vorschläge dafür, die Gefangenen nach [Willoch](/locations/willauch.md) zu bringen, weil dies der bezahlte Auftrag ist. Er erhält einen verbesserten Kriegshammer.
-[P-46] **Zwischen den Sessions:** Otis hat sein Geld erhalten und lebt einige Zeit in Saus und Braus.
-3. **Session 2 (2026-04-09):** Otis ist Teil der Gruppe um [Rotunas](/characters/rotunas.md). Er rettet zwei Kinder vor einem Dämonenmagier, indem er sie in ein Lagerhaus bringt, und tötet den Magier anschließend mit einem Bogenschuss. Er setzt unkonventionelle Taktiken gegen Dämonen ein und nutzt sein Wissen über Gestein, um gemeinsam mit [Rotunas](/characters/rotunas.md) Portalsäulen zu zerstören. Zudem äußert er den Wunsch, seiner Mutter einen schönen Stein mitzubringen.
+
+**Session 2026-03-23:** Otis wird als Human Ranger vorgestellt, der in einem Steinbruch aufgewachsen ist und nun als Söldner arbeitet. Er schließt sich einer Gruppe von Abenteurern an, die ein spezielles Abenteuer bestreiten. Er übernimmt die Rolle des Beschützers von Nina und erklärt sich bereit, Gefangene nach Willauch zu bringen, da er aus dieser Stadt stammt und die Bezahlung akzeptiert. Seine pragmatische und gewaltbereite Art wird deutlich, ebenso wie seine Naivität.
+
+**Session 2026-04-09:** Otis zeigt sich im Kampf gegen Dämonen als mutig und entschlossen. Er rettet Kinder vor den Dämonen, indem er sie unter den Arm nimmt und in Sicherheit bringt. Er stürmt eine Tür ein, um ein Lagerhaus zu betreten, und nutzt dabei seine Stärke. Im Kampf hilft er Brim, als dieser von einer Kreatur gepackt wird, und zerstört zusammen mit Rotunas die Säulen des Portals. Seine Fähigkeiten mit Bogen und Hammer kommen dabei zum Einsatz.
 
 ## Offene Fragen
-- Die genaue Beziehung zu [Nina](/characters/nina.md) ist unklar. In der ersten Session wird sie sowohl als Mutter als auch als Ehefrau bezeichnet, in der zweiten Session ist nur von der Mutter die Rede. Ob es sich um ein und dieselbe Person handelt oder um zwei verschiedene Bezugspersonen, geht aus den Belegen nicht hervor.
-- Von wem und unter welchen Umständen Otis den verbesserten Kriegshammer in der ersten Session geschenkt bekam, wird nicht spezifiziert.
-- Wo genau sich sein heimatlicher Steinbruch befindet und ob dieser mit einem bekannten Ort der Spielwelt verknüpft ist, bleibt offen.
+
+- Die genaue Natur der Beziehung zwischen Otis und Nina bleibt unklar – die scherzhafte Bezeichnung als „Mutter und Ehefrau“ lässt Raum für Interpretationen, die die Belege nicht auflösen.
+- Was Otis dazu bewogen hat, den Steinbruch zu verlassen und als Söldner zu arbeiten, wird nicht näher ausgeführt.
+- Welche Verbindung Otis zu Willauch hat und warum er bereit ist, Gefangene dorthin zu bringen, bleibt offen.
 
 ## Belege
+
 [P-42] Session 2026-03-23 @ 00:00:44 (https://www.youtube.com/watch?v=niVxKtdQBn0)
-[P-46] Session 2026-04-09 @ 00:02:48 (https://www.youtube.com/watch?v=vcGkejr8_nI)
+[P-46] Session 2026-04-09 @ 00:33:50 (https://www.youtube.com/watch?v=vcGkejr8_nI)

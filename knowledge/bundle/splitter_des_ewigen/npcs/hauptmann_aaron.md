@@ -1,31 +1,26 @@
 ---
 type: NPC
 title: Hauptmann Aaron
-description: Hauptmann Aaron ist der kriegserfahrene Anführer der Söldnertruppe, die
-  zum Schutz der Halblingsfarm abgestellt wurde. Seine Rüstung und Wa…
+description: Hauptmann Aaron ist der Kommandant der Soldaten im Halblingsdorf. Der
+  kampferprobte Veteran trägt eine beschädigte Rüstung und ein entfernt…
 tags:
 - npcs
-timestamp: '2026-08-06T00:00:00Z'
+timestamp: '2026-08-20T00:00:00Z'
 id: NPC_HAUPTMANN_AARON
 ---
 
-# Hauptmann Aaron
-
-Hauptmann Aaron ist der kriegserfahrene Anführer der Söldnertruppe, die zum Schutz der Halblingsfarm abgestellt wurde. Seine Rüstung und Waffe sind schwer mitgenommen, das Wappen auf seinem Schild ist zerkratzt – ein Mann, der viele Schlachten gesehen hat.
+Hauptmann Aaron ist der Kommandant der Soldaten im [Halblingsdorf](/locations/halblingsdorf.md). Der kampferprobte Veteran trägt eine beschädigte Rüstung und ein entferntes Wappen. In der aussichtslosen Lage des Dorfes übernimmt er die Verantwortung für Evakuierung und Verhandlungen und arbeitet dabei zunehmend mit der Gruppe zusammen.
 
 ## Rolle und Auftreten
 
-Aaron begegnet der Gruppe zunächst streng: Er mustert sie eingehend und befragt sie zu ihren Fähigkeiten. Besonders [Brumas](/characters/bruma_stormrak.md) Stärke als Drakoner und [Sanges](/characters/sange.md) maskierte Identität hinterfragt er. Der Hinweis auf den Gnolltunnel beeindruckt ihn jedoch, woraufhin er der Minenmission sofort zustimmt – obwohl er dort bereits Wachen postiert hat.
-
-Gegenüber [Talron](/npcs/talron.md) wahrt er respektvolle Distanz. Seine Haltung zu den Halblingen macht er deutlich: Sie sollen nicht herumkommandiert, sondern nur beschützt werden.
+Aaron begegnet der Gruppe als autoritärer, pragmatischer Befehlshaber. Zu Beginn befragt er sie zu ihren Fähigkeiten; von [Bruma](/characters/bruma_stormrak.md)s Tunnelinformation ist er sichtlich beeindruckt, woraufhin er der Gruppe einen Lagerplatz zuweist. Er zeigt Autorität, lässt der Gruppe aber gewähren und vertraut ihr zunehmend. Er ist bereit, ihre Entscheidungen zu akzeptieren.
 
 ## Verlauf
 
-Als die Lage eskaliert, drängt Aaron auf die sofortige Evakuierung des Hofes und setzt eine Frist von vier Stunden. Der Gruppe begegnet er inzwischen mit Respekt und vertraut auf ihr Urteil.
-
-Sein hoher Status zeigt sich in [Kleinringtal](/locations/ringtal.md): Ein Salut von ihm genügt, um das Tor öffnen zu lassen. Nach ein bis zwei Tagen Rast plant er, weiter nach Ringtal zu ziehen.
+Die Gruppe wird von Aaron zunächst beauftragt, die Mine zu erkunden. Als sich die Lage als aussichtslos erweist, beschließt er, das Dorf zu evakuieren und nach [Kleinringtal](/locations/ringtal.md) zu ziehen. Bei den Verhandlungen mit Bürgermeister Spitzzahn übernimmt er die Zahlung der zwei Säcke Gold; Brumas Angebot, sich daran zu beteiligen, lehnt er ab. Stattdessen ist er bereit, Zivilisten auszubilden, und plant eine Ambush-Taktik gegen die Gnolle.
 
 # Belege
 
-[S1-01-B] Session 2026-07-10, 01:30:30 – https://www.youtube.com/watch?v=H-eHSlfxUAg
-[S1-03-B] Session 2026-08-06, 00:06:36 – https://www.youtube.com/watch?v=0HyPHao8s_k
+1. Session 2026-07-10, 00:31:30, https://www.youtube.com/watch?v=H-eHSlfxUAg
+2. Session 2026-08-06, 00:09:03, https://www.youtube.com/watch?v=0HyPHao8s_k
+3. Session 2026-08-20, 00:09:06, https://www.youtube.com/watch?v=2EkWrNUfQi0

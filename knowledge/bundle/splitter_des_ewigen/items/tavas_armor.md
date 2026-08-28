@@ -1,8 +1,8 @@
 ---
 type: Item
 title: Tavas Armor
-description: Eine magische Rüstung, die Rotunas aktiviert, indem er sich auf die Brust
-  schlägt und eine rote Rune erscheint. Sie gibt einen Rüstungspunk…
+description: Eine Rüstung, die Rotunas aktiviert, um seinen Rüstungswert zu erhöhen.
+  Er nutzt sie zu Beginn des Kampfes gegen die Dämonen.
 tags:
 - items
 timestamp: '2026-04-09T00:00:00Z'
@@ -10,7 +10,7 @@ id: ITEM_TAVAS_ARMOR
 subtype: Rüstung
 ---
 
-Eine magische Rüstung, die [Rotunas](/characters/rotunas.md) aktiviert, indem er sich auf die Brust schlägt und eine rote Rune erscheint. Sie gibt einen Rüstungspunkt.
+Eine Rüstung, die [Rotunas](/characters/rotunas.md) aktiviert, um seinen Rüstungswert zu erhöhen. Er nutzt sie zu Beginn des Kampfes gegen die [Dämonen](/factions/daemonen.md).
 
 # Belege
 

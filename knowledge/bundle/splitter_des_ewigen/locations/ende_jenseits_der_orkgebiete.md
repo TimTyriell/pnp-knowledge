@@ -1,8 +1,8 @@
 ---
 type: Location
 title: Ende (jenseits der Orkgebiete)
-description: Das Ende ist eine gefährliche Region mit einem Vulkan und instabiler
-  Umgebung, in der sich eine alte Bibliothek befinden soll. Den Namen tr…
+description: Das Ende ist eine gefährliche Region im Norden, die nach einer alten
+  Bibliothek benannt ist. Es ist sehr heiß und instabil, und niemand ist…
 tags:
 - locations
 timestamp: '2026-03-18T00:00:00Z'
@@ -12,7 +12,7 @@ aliases:
 - Ende
 ---
 
-Das Ende ist eine gefährliche Region mit einem Vulkan und instabiler Umgebung, in der sich eine alte Bibliothek befinden soll. Den Namen trägt es, weil noch niemand von dort zurückgekehrt ist. Lunara hat Informationen gesammelt, dass Orks die Route dorthin kennen.
+[Das Ende](/locations/das_ende.md) ist eine gefährliche Region im Norden, die nach einer alten Bibliothek benannt ist. Es ist sehr heiß und instabil, und niemand ist bisher zurückgekehrt. Die Orks haben Erfahrung mit der Route dorthin.
 
 # Belege
 

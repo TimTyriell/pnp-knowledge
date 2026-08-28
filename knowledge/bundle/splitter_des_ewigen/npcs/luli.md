@@ -1,16 +1,16 @@
 ---
 type: NPC
 title: Luli
-description: Luli ist ein kleines, kindlich wirkendes Pilzwesen, das von der „grünen
-  Dame“ (der Hexe) in einem Käfig in den Seelennetzen gefangen gehalt…
+description: Luli ist ein kleiner Pilz, der von der grünen Dame in einem Käfig eingesperrt
+  wurde. Er erzählt, dass die grüne Dame seine Familie in einen…
 tags:
 - npcs
 timestamp: '2025-06-17T00:00:00Z'
 id: NPC_LULI
 ---
 
-Luli ist ein kleines, kindlich wirkendes Pilzwesen, das von der „grünen Dame“ (der Hexe) in einem Käfig in den Seelennetzen gefangen gehalten wurde. Sie berichtete, dass ihre Familie in einen großen Kessel geworfen wurde. [Cookie](/characters/cookie.md) befreite sie mit ihrer Kompassnadel und Luli klammerte sich sofort an sie. Aus Angst ließ sie sich jedoch nie weit von Cookie entfernen; als die Gruppe das Labor betrat, blieb sie beim Frettchen zurück. Später riss sie sich los und rannte in Richtung Labor, wo sie kurz darauf von einem großen, unheimlichen Wesen gefressen wurde. Ihr Tod traf die Gruppe, besonders Cookie, schwer. Ihr Verhalten zeigte große Verlorenheit und kindliches Vertrauen.
+Luli ist ein kleiner Pilz, der von der grünen Dame in einem Käfig eingesperrt wurde. Er erzählt, dass die grüne Dame seine Familie in einen Kessel geworfen hat. [Cookie](/characters/cookie.md) befreit ihn und nimmt ihn mit, doch auf der Flucht wird er von einer Kreatur gefressen, was die Gruppe traurig zurücklässt.
 
 # Belege
 
-[P-12] Session 2025-06-17 @ 01:36:10 (https://www.youtube.com/watch?v=tl76B4V0io8)
+[P-12] Session 2025-06-17 @ 01:35:09 (https://www.youtube.com/watch?v=tl76B4V0io8)

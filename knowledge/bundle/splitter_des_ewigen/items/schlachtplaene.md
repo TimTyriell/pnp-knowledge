@@ -1,8 +1,8 @@
 ---
 type: Item
 title: Schlachtpläne
-description: Eine Schriftrolle mit den Kriegsplänen der Feinde, die den Vormarsch
-  auf Ringtal und Verstärkung aus den grauen Sümpfen zeigt. Bruma verwen…
+description: Die Schlachtpläne, die die Gruppe im feindlichen Lager gefunden hat.
+  Sie zeigen die Position des Lagers und zwei Pfeile aus den grauen Sümp…
 tags:
 - items
 timestamp: '2026-08-06T00:00:00Z'
@@ -10,7 +10,7 @@ id: ITEM_SCHLACHTPLAENE
 subtype: Schriftstück
 ---
 
-Eine [Schriftrolle](/items/schriftrolle.md) mit den Kriegsplänen der Feinde, die den Vormarsch auf [Ringtal](/locations/ringtal.md) und Verstärkung aus den grauen Sümpfen zeigt. Bruma verwendet sie, um [Xenia](/npcs/xenia_rotkam.md) die Bedrohung vor Augen zu führen.
+Die Schlachtpläne, die die Gruppe im feindlichen Lager gefunden hat. Sie zeigen die Position des Lagers und zwei Pfeile aus den grauen Sümpfen, die auf das Lager zeigen, sowie einen großen Pfeil Richtung [Ringtal](/locations/ringtal.md). Sie sind in einer unbekannten Sprache verfasst.
 
 # Belege
 

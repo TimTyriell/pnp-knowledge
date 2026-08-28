@@ -1,8 +1,8 @@
 ---
 type: Location
 title: Kristallmine
-description: Die Kristallmine ist eine kleine, feuchte Höhle, in der sowohl lila als
-  auch grüne Kristalle in größerer Zahl und Größe wachsen als in der…
+description: Die Kristallmine ist eine Stollenanlage am Rande des Halblingsdorfs,
+  in deren Gängen grüne und lilafarbene Kristalle wachsen. Sie wird in d…
 tags:
 - locations
 timestamp: '2026-08-06T00:00:00Z'
@@ -10,19 +10,28 @@ id: LOC_KRISTALLMINE
 subtype: Dungeon
 aliases:
 - Mine
+- Die Mine
 ---
 
-Die Kristallmine ist eine kleine, feuchte Höhle, in der sowohl lila als auch grüne Kristalle in größerer Zahl und Größe wachsen als in der Umgebung außerhalb. Im Zentrum der Höhle wurde ein großer grüner Kristall künstlich platziert, unter dem eine Kontrollrune angebracht ist. Die Mine liegt am Rande des Halblinghofs und dient später als Schauplatz eines dunklen Rituals.
+# Kristallmine
 
-## Kristalle und Kontrollrune
+Die Kristallmine ist eine Stollenanlage am Rande des Halblingsdorfs, in deren Gängen grüne und lilafarbene Kristalle wachsen. Sie wird in den Quellen zugleich in der Nähe des Zeltes verortet. In der Mine befindet sich die Kontrollrune für den Golem; außerdem dient sie als Ort eines Rituals, das [Saris](/characters/saris.md) an einer Leiche durchführt. Die Mine ist damit weit mehr als ein reiner Kristallfundort: Sie verbindet eine magische Kontrollfunktion mit einer rituellen Nutzung.
 
-Anders als im Umland gedeihen in der Kristallmine lila und grüne Kristalle in ungewöhnlich großer Zahl und Größe. Der zentrale grüne Kristall ist jedoch kein natürlicher Bewuchs, sondern wurde absichtlich dort positioniert; direkt unter ihm ist die Kontrollrune angebracht. Welche Funktion diese Rune genau erfüllt, ist nicht überliefert.
+## Lage und Erscheinung
 
-## Ritualstätte am Halblinghof
+Die Mine wird sowohl in der Nähe des Zeltes als auch am Rande des Halblingsdorfs verortet; die Angaben bezeichnen offenbar denselben Ort am Dorfrand. Ihren Namen verdankt sie den Kristallen, die in Grün und Lila in ihren Gängen wachsen. Weitere Angaben zur Ausdehnung, Tiefe oder Zugänglichkeit der Stollenanlage liegen nicht vor.
 
-Am Rande des Halblinghofs gelegen, beherbergt die Mine angekettete Leichen. [Saris](/characters/saris.md) führte hier ein Ritual mit einem der Toten durch und erhielt dabei einen Knochendolch. Die Kristallmine ist damit nicht nur ein Ort der Kristallvorkommen, sondern auch Schauplatz nekromantischer Handlungen.
+## Artefakte und Ritual
+
+Ein zentrales Artefakt der Mine ist die Kontrollrune. Mit ihr wird der Golem gesteuert; die Rune ist damit der Schlüssel, um Einfluss auf den Golem zu nehmen.
+
+Die Mine enthält außerdem einen Altar aus Steinen. Auf ihm liegt eine Leiche, die als Sprachrohr dient. Saris führt an dieser Leiche ein Ritual durch. Damit hat die Kristallmine neben ihrer Funktion als Kristalllagerstätte und Aufbewahrungsort der Kontrollrune auch eine rituelle Bedeutung.
+
+## Rolle im Verlauf
+
+Die Gruppe lernt die Mine zunächst als Fundort der Kontrollrune kennen. Später wird derselbe Ort von Saris für ihr Ritual mit der Leiche genutzt. Ob zwischen den Kristallen, der Rune und dem Altar ein Zusammenhang besteht, geht aus den vorliegenden Belegen nicht hervor.
 
 # Belege
 
-[P-25] Session 2025-10-07, 00:53:26 – [Video](https://www.youtube.com/watch?v=qVAF_54S8Vw)
-[S1-03-B] Session 2026-08-06, 00:40:22 – [Video](https://www.youtube.com/watch?v=0HyPHao8s_k)
+[P-25] Session 2025-10-07, 00:42:31 – https://www.youtube.com/watch?v=qVAF_54S8Vw
+[S1-03-B] Session 2026-08-06, 00:40:22 – https://www.youtube.com/watch?v=0HyPHao8s_k

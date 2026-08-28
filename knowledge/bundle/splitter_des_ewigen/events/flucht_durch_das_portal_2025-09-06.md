@@ -1,8 +1,8 @@
 ---
 type: Event
 title: Flucht durch das Portal
-description: Die Helden springen durch ein von Lindo Laut geöffnetes Portal und entkommen
-  so aus der Zwischenebene. Sie landen an einem unerwarteten Ort…
+description: Die Gruppe flieht durch ein Portal, das sich hinter dem Ratten-Dämon
+  öffnet, und gelangt in eine Kapelle.
 tags:
 - events
 timestamp: '2025-09-06T00:00:00Z'
@@ -10,7 +10,7 @@ id: EVENT_FLUCHT_DURCH_DAS_PORTAL_2025-09-06
 subtype: Reise
 ---
 
-Die Helden springen durch ein von [Lindo Laut](/characters/lindo_laut.md) geöffnetes Portal und entkommen so aus der Zwischenebene. Sie landen an einem unerwarteten Ort nahe dem ursprünglichen Riss.
+Die Gruppe flieht durch ein Portal, das sich hinter dem [Ratten-Dämon](/npcs/ratten_daemon.md) öffnet, und gelangt in eine [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md).
 
 # Belege
 

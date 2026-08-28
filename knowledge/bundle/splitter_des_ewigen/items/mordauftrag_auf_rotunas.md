@@ -1,8 +1,8 @@
 ---
 type: Item
 title: Mordauftrag auf Rotunas
-description: Ein in Eile geschriebener, inoffizieller Mordauftrag mit einer groben
-  Zeichnung von Rotunas, den der Attentäter bei sich trägt. Kein Auftra…
+description: Eine Schriftrolle mit einem Eilauftrag, Rotunas zu töten. Sie enthält
+  eine Beschreibung und Zeichnung von Rotunas, ist aber nicht vom Gilde…
 tags:
 - items
 timestamp: '2025-09-17T00:00:00Z'
@@ -10,7 +10,7 @@ id: ITEM_MORDAUFTRAG_AUF_ROTUNAS
 subtype: Schriftstück
 ---
 
-Ein in Eile geschriebener, inoffizieller Mordauftrag mit einer groben Zeichnung von [Rotunas](/characters/rotunas.md), den der Attentäter bei sich trägt. Kein Auftraggeber ist genannt, aber offenbar wurde mit Gold bezahlt.
+Eine Schriftrolle mit einem Eilauftrag, [Rotunas](/characters/rotunas.md) zu töten. Sie enthält eine Beschreibung und Zeichnung von Rotunas, ist aber nicht vom [Gildenmeister](/npcs/nox.md) unterschrieben. Sie wurde beim [Attentäter](/npcs/attentaeter.md) gefunden.
 
 # Belege
 

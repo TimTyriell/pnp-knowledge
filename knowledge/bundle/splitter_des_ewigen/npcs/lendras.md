@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Leandras
-description: 'Leandras – in den Aufzeichnungen auch als Lendras geführt – ist ein
-  Menschenmagier, der der Gruppe in drei Phasen begegnet: zunächst als mü…'
+description: Leandras ist ein Menschenmagier, der zunächst zurückgezogen in einem
+  kleinen Haus im Dorf Brechka lebt und sich später als zentrale Figur b…
 tags:
 - npcs
 timestamp: '2025-07-29T00:00:00Z'
@@ -11,30 +11,22 @@ aliases:
 - Lendras
 ---
 
-**Leandras** – in den Aufzeichnungen auch als **Lendras** geführt – ist ein Menschenmagier, der der Gruppe in drei Phasen begegnet: zunächst als mürrischer Einzelgänger, dann als geheimnisvoller Helfer in [Gemata](/locations/gemata.md) und schließlich als Auftraggeber zur Verteidigung von [Windungs](/locations/windung.md).
+Leandras ist ein Menschenmagier, der zunächst zurückgezogen in einem kleinen Haus im Dorf Brechka lebt und sich später als zentrale Figur bei der Verteidigung der Gruppe erweist. Er ist der Magier des Dorfes, wird von der Gruppe gesucht und führt sie schließlich in die Katakombe, in der er den Bann über Voras bricht. Anders als sein anfängliches Verhalten vermuten lässt, unterstützt er die Gruppe später aktiv und verlässt mit ihr die Insel.
 
-## Rolle und Wesen
+## Rolle und Verlauf
 
-Leandras lebt zurückgezogen in einem kleinen, vergitterten Haus und wirkt mürrisch; er wünscht vor allem seine Ruhe. Als [Valeria](/characters/valeria.md) und [Rotunas](/characters/rotunas.md) ihn wegen einer Goblin-Bedrohung um Hilfe bitten, verweist er sie an den Bürgermeister und verweigert jede Mithilfe. Seine Haustür ist mit einer magischen Rune gesichert, die er selbst verschließt – ein Hinweis darauf, dass er womöglich etwas zu verbergen hat.
+In Brechka begegnet Leandras den Besuchern zunächst unwirsch und verweist sie an den Bürgermeister [Berthold](/npcs/berthold.md). Seine Tür ist magisch mit einer Rune versiegelt, was darauf hindeutet, dass er etwas zu verbergen hat. Er ist zu diesem Zeitpunkt nicht bereit, bei der Verteidigung zu helfen, und bleibt zunächst nicht verfügbar.
 
-In der folgenden Begegnung zeigt er sich tapfer, wirkt aber weiterhin geheimnisvoll und treibt zur Eile an. Er scheint gute Absichten zu verfolgen und ist sichtlich erleichtert, als sich der von ihm befreite [Voras](/npcs/voras.md) als Verbündeter entpuppt. Bei der Verteidigung Windungs tritt er schließlich als wissbegieriger Zauberer auf, der die Gruppe selbst herbeigerufen hat. Er vertraut auf die Fähigkeiten der Helden, ist von den überraschenden Wendungen allerdings völlig überfordert und respektiert am Ende die ungewöhnliche Lösung.
+Später wird Leandras von einem Kenku angegriffen, den er mit einem Blitz tötet. Er übergibt [Esterossa](/characters/esterossa.md) einen magischen Schlüssel und führt die Gruppe zu einer Katakombe. Dort bricht er den Bann über [Voras](/npcs/voras.md) und erweckt ihn. Dabei wirkt er gestresst und geheimnisvoll, bittet die Gruppe um Vertrauen und erklärt, dass die Hack nach Voras’ Gemahlin sucht.
 
-## Magische Fähigkeiten
+In einer späteren Begegnung hat Leandras die Gruppe gerufen und hilft bei der Verteidigung. Als [Dranara](/npcs/dranara.md) die Gruppe angreifen will, wirkt er einen Schlafzauber auf sie. Er ist entsetzt über die Ereignisse und verlässt schließlich mit der Gruppe die Insel.
 
-- Sichert seine Tür mit einer magischen Rune, die er selbst verschließt.
-- Tötet eine rabenartige Kreatur mit einem Blitz.
-- Schleudert in Windungs wütend einen Feuerball in eine Menge Soldaten und tötet die Angreifer, um seine Verbündeten zu schützen.
-- Betäubt die aufgebrachte [Asleina](/npcs/asleina.md) mit einem Schlafzauber.
-- Bricht den Bann, der Voras gefangen hält.
+## Eigenschaften und Geheimnisse
 
-## Verlauf
-
-- **Session 2025-04-09:** Leandras weist Valeria und Rotunas ab, die wegen der Goblin-Bedrohung an seine Tür kommen. Er bleibt bis zum Ende der Begegnung unkooperativ.
-- **Session 2025-04-23:** Sein Haus wird während des Angriffs der Hexe Hack von einer rabenartigen Kreatur und einem Grottenschrat attackiert. Er kämpft, wird verletzt und tötet die Kreatur. Nach der Rettung gibt er [Esterossa](/characters/esterossa.md) einen magischen Schlüssel und führt die Gruppe in die Katakomben, um Voras zu erwecken; dort bricht er den Bann.
-- **Session 2025-07-29:** Als Auftraggeber begrüßt er die Gruppe zur Verteidigung Windungs. Als Soldaten den Kapitän und [Miaomani](/npcs/miaomani.md) angreifen, schreitet er mit einem Feuerball ein. Er bietet an, beim Kampf gegen die Kuatau zu helfen.
+Leandras zeigt über die Begegnungen hinweg widersprüchliche Züge: zunächst genervt und zurückgezogen, später wissbegierig und hilfsbereit. Seine gestresste, geheimnisvolle Art und die magisch versiegelte Tür deuten auf ein verborgenes Geheimnis hin, das in den Belegen jedoch nicht näher ausgeführt wird. Deutlich wird nur, dass er über magische Fähigkeiten verfügt, die er sowohl als Blitzangriff als auch als Schlafzauber einsetzt, und dass er Zugang zu den Katakomben und deren Bannmechanismen hat.
 
 # Belege
 
 [P-03] Session 2025-04-09 @ 00:08:51 – https://www.youtube.com/watch?v=1PWdwvun5ow
-[P-05] Session 2025-04-23 @ 01:28:49 – https://www.youtube.com/watch?v=z3C-bewKqUs
-[P-16] Session 2025-07-29 @ 01:55:02 – https://www.youtube.com/watch?v=XXgO5Ht4Q0A
+[P-05] Session 2025-04-23 @ 01:32:25 – https://www.youtube.com/watch?v=z3C-bewKqUs
+[P-16] Session 2025-07-29 @ 00:06:48 – https://www.youtube.com/watch?v=XXgO5Ht4Q0A

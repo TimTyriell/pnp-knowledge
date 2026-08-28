@@ -1,27 +1,27 @@
 ---
 type: NPC
 title: Dormak
-description: Dormak war ein mächtiger, wutentbrannter Dämon, der in der Kampagne zunächst
-  als Diener Varsuls (später Vasul genannt) auftrat, tatsächlich…
+description: 'Dormak war ein Diener Vhar''Zuls und Komplize der Hag Lenra. Er trat
+  mehrfach als Gegner der Gruppe auf, verfolgte jedoch eigene Ziele: Geme…'
 tags:
 - npcs
 timestamp: '2026-03-31T00:00:00Z'
 id: NPC_DORMAK
 ---
 
-**Dormak** war ein mächtiger, wutentbrannter Dämon, der in der Kampagne zunächst als Diener Varsuls (später Vasul genannt) auftrat, tatsächlich jedoch ein Komplize der Hag [Lenra](/npcs/lenra.md) war. Gemeinsam mit ihr verfolgte er die Rückkehr des **ursprünglichen, ungezähmten Teils von Vhar'Zul**, nicht der besonnenen Persönlichkeit, die später in Gestalt von Tyrex wiedererstarkte. Dadurch wurde Dormak zum Feind des wiedererstarkten Vasul (Vhar'Zul/Tyrex) und schließlich von diesem selbst ausgelöscht.
+Dormak war ein Diener [Vhar'Zuls](/deities/vharzul.md) und Komplize der Hag [Lenra](/npcs/lenra.md). Er trat mehrfach als Gegner der Gruppe auf, verfolgte jedoch eigene Ziele: Gemeinsam mit Lenra wollte er Vhar'Zuls ursprünglichen Teil zurückholen, nicht dessen besonnene Persönlichkeit. Als der wiedererstarkte Vhar'Zul die Gestalt von [Tyrex](/deities/thyrex.md) annahm, wurde Dormak zu dessen Feind.
 
-## Rolle und Motivation
+## Auftreten
 
-Dormak war kein loyaler Diener Vasuls, sondern ein eigenmächtiger Akteur, der im Bund mit der Hag Lenra handelte. Beide erstrebten die Wiederkehr des **ursprünglichen, zerstörerischen Kerns** Vhar’Zuls – jenes Teils, der nicht von späterer Besonnenheit gemildert war. Der wiedererstarkte Vhar’Zul nahm jedoch die Gestalt von Tyrex an und wurde dadurch zu Dormaks Gegner. Diese Feindschaft besiegelte sein Schicksal: Am Ende der zweiten Begegnung wurde Dormak von Vasul/Vhar’Zul selbst überwältigt und vernichtet.
+In der Kapelle erschien Dormak als Diener Vhar'Zuls. Arrogant und bedrohlich zwang er die Gruppe, sich auf den Thron zu setzen. Er verschwand, als [Lindo Laut](/characters/lindo_laut.md) die Macht des Throns nutzte, um die anderen Götter zu vernichten. Später überraschte er die Gruppe erneut; Lindo Laut erwähnte ihn als Gegner, der mit Vhar'Zul in Verbindung steht. In einem späteren Konflikt trat Dormak auf, um Vhar'Zul aufzuhalten, und zeigte Sorge: Er bat die Gruppe, Vhar'Zul nicht seine Göttlichkeit zurückerhalten zu lassen. [Dodo](/characters/dodo.md) stellte sich ihm entgegen. Dormaks Tod schwächte die Verteidigung von [Ehrenfels](/locations/ehrenfels.md).
 
-## Begegnungen mit der Gruppe
+## Ziele und Verbindungen
 
-**Erste Begegnung (Kapelle):** Dormak erschien auf einem Thron in einer Kapelle als Diener Varsuls. Er forderte Lindo Laut auf, sich zu setzen und die Macht seines Meisters zu empfangen, rief Untote herbei und griff die Gruppe mit Magie an. Als Lindo die Aspekte Esuar und Citral im Amulett zerstörte, zeigte sich Dormak sichtlich entsetzt und floh mit einer Handbewegung aus der Kapelle.
+Dormak stand im Dienst Vhar'Zuls, war aber zugleich Komplize der Hag Lenra. Beide wollten Vhar'Zul zurückholen – allerdings dessen ursprünglichen Teil, nicht die besonnene Persönlichkeit. Diese Absicht brachte ihn in Gegnerschaft zum wiedererstarkten Vhar'Zul, der die Gestalt von Tyrex angenommen hatte; diese Persönlichkeit war ein Feind Dormaks. Am Ende wurde Dormak von Vhar'Zul selbst ausgelöscht.
 
-**Zweite Begegnung (Finale):** Dormak trat durch ein Portal, zerbrach den Schutzschild von Ehrenfels und griff mit Blitzen und Flammen an. Trotz seiner Macht wurde er von Vasul überwältigt und gezwungen, niederzuknien. Mit Vasuls Segen zerschmetterte [Dodo](/characters/dodo.md) einen Teil von Dormaks Essenz, was den Dämon in einem letzten Schrei vernichtete. Seine Augen zeigten kurz Sorge, bevor er starb.
+# Belege
 
-## Belege
-
-[P-19] Session 2025-09-02 @ 01:46:04 (https://www.youtube.com/watch?v=TLZOH7TlGhk) – Dormak in der Kapelle; Auftreten, Angriff und Flucht.
-[P-44] Session 2026-03-31 @ 00:32:36 (https://www.youtube.com/watch?v=Ee-K84wcxLM) – Dormaks finaler Kampf; Überwältigung und Vernichtung durch Vasul.
+[P-19] Session 2025-09-02, 01:45:58, https://www.youtube.com/watch?v=TLZOH7TlGhk
+[P-34] Session 2026-01-20, 01:48:29, https://www.youtube.com/watch?v=H3ckYdTv4y8
+[P-44] Session 2026-03-31, 00:33:36, https://www.youtube.com/watch?v=Ee-K84wcxLM
+4. Kanon_Entscheidungen.md, Abschnitt „Dormak"

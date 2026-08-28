@@ -1,15 +1,15 @@
 ---
 type: NPC
 title: Kalec
-description: Ein Zwerg, der nach dem Streit mit Xenia zu Bruma tritt und ihm Respekt
-  zollt. Er bietet an, der Gruppe im Kampf beizustehen, falls es hart…
+description: Kalec ist ein Zwerg, der in der Taverne anwesend ist. Er zeigt sich beeindruckt
+  von Brumas Rede und verspricht, der Gruppe zur Seite zu ste…
 tags:
 - npcs
 timestamp: '2026-08-06T00:00:00Z'
 id: NPC_KALEC
 ---
 
-Ein Zwerg, der nach dem Streit mit [Xenia](/npcs/xenia_rotkam.md) zu Bruma tritt und ihm Respekt zollt. Er bietet an, der Gruppe im Kampf beizustehen, falls es hart auf hart kommt.
+Kalec ist ein Zwerg, der in der [Taverne](/locations/taverne.md) anwesend ist. Er zeigt sich beeindruckt von Brumas Rede und verspricht, der Gruppe zur Seite zu stehen, falls es zum Kampf kommt.
 
 # Belege
 

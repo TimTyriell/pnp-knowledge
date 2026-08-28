@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Hendrik Heinrich (Bauer)
-description: Hendrik ist der Bauer und Ehemann von Gerda, der als Schmied auf der
-  Farm arbeitet. Er hat die Banditen um Floran aufgenommen, obwohl Gerda…
+description: Hendrik ist der Ehemann von Gerda und der eigentliche Besitzer der Farm.
+  Er hat die Banditen aufgenommen, weil er erpresst wurde. Er ist zu…
 tags:
 - npcs
 timestamp: '2026-03-23T00:00:00Z'
@@ -11,7 +11,7 @@ aliases:
 - Hendrik Heinrich
 ---
 
-[Hendrik](/npcs/hendrik.md) ist der Bauer und Ehemann von Gerda, der als Schmied auf der Farm arbeitet. Er hat die [Banditen](/factions/silberkerne.md) um [Floran](/npcs/floran.md) aufgenommen, obwohl Gerda dagegen war. Im Gespräch mit der Gruppe wirkt er resigniert und lässt seinen Hammer fallen, als [Nina](/characters/nina.md) ihn emotional an seine Familie erinnert. Er kooperiert schließlich und verrät die Lage des geheimen Zugangs zum Banditenversteck unter dem kleinen Haus in der Mitte der Farm. Er ist kein Krieger und fürchtet um das Leben seiner Familie.
+[Hendrik](/npcs/hendrik.md) ist der Ehemann von Gerda und der eigentliche Besitzer der Farm. Er hat die [Banditen](/factions/silberkerne.md) aufgenommen, weil er erpresst wurde. Er ist zunächst kampfbereit, gibt aber nach Ninas Rede auf und versteckt sich mit seiner Familie. Er übergibt der Gruppe Informationen über das [Banditenlager](/locations/banditenlager_der_silberkerne.md).
 
 # Belege
 

@@ -1,126 +1,175 @@
 ---
 type: Deity
 title: Vhar'Zul
-description: Vhar'Zul, auch bekannt als „der Gerissene“, ist ein uralter Gott, der
-  über List, Intrigen und Handel wachte – so jedenfalls die fromme Lege…
+description: Vhar'Zul ist ein alter Gott, der einst als mächtige Gottheit existierte,
+  bis er durch den „Riss durch die Ewigkeit" nicht vernichtet, sonde…
 tags:
 - deities
-timestamp: '2026-08-04T00:00:00Z'
+timestamp: '2026-07-29T00:00:00Z'
 id: DEITY_VHARZUL
 subtype: Alter Gott
 aliases:
 - Varsul
 - Vasul
-- Basul
 - Valsor
-- Varsurs
+- Warzul
 ---
+
+# Vhar'Zul, der Geflüsterte Thron
 
 ## Überblick
 
-Vhar'Zul, auch bekannt als „der Gerissene“, ist ein uralter Gott, der über List, Intrigen und Handel wachte – so jedenfalls die fromme Legende. In Wahrheit handelte es sich um ein mächtiges, düsteres Wesen von ungeheurer Willenskraft, das im Zuge des Götterkriegs nicht starb, sondern in fünf Seelenfragmente zersplittert wurde: **Sythraal** (der Schleier), **Ezhura** (die Glut), **Koll'Mereth** (die Krone), **Thyrex** (der Sänger) und den geheimnisvollen fünften Teil **Slix**. Nur Thyrex trug einen besonnenen, wohlwollenden Charakter; die übrigen vier waren von Bosheit erfüllt. Über lange Zeit galt Vhar'Zul als tot, bis ihn die Heldengruppe um Lindo Laut unwissentlich aus der Zersplitterung erweckte. Schließlich kehrte er als vollwertige Gottheit mit der dominierenden Persönlichkeit Thyrex' zurück – edel, elegant, doch mit einem verborgenen Plan, der die gesamte Welt erschüttern sollte.
+Vhar'Zul ist ein alter Gott, der einst als mächtige Gottheit existierte, bis er durch den „Riss durch die Ewigkeit" nicht vernichtet, sondern in mehrere Seelen zerspalten wurde. Die Überlieferung im *Buch der vier Seelen* spricht von vier Fragmenten, doch tatsächlich existiert ein fünfter, versteckter Teil. Jede dieser Seelen trägt einen Aspekt seines einstigen Selbst und entwickelte eine eigenständige Persönlichkeit. Wer die Teile trennt, lässt ihn schlafen; wer sie vereint, erweckt ihn.
+
+In der Kampagne tritt Vhar'Zul als machthungrige, körperbesetzende Entität auf, die über lange Zeit hinweg versucht, ihre verlorene Macht zurückzugewinnen. Seine Anhänger sind die Kultisten, die ihm an verschiedenen Orten dienen. Sein Auftreten als machthungriger Dämonenfürst weicht deutlich von der Überlieferung ab, die ihn als Gott der klugen Worte und scharfen Verhandlungen beschreibt.
 
 ## Rolle in der Kampagne
 
-Vhar'Zul ist die zentrale, alles überspannende Macht, deren Schicksal die Handlung von den ersten Sitzungen bis zum finalen Akt prägt. Anfangs begegnet die Gruppe ihm nur indirekt: Kultisten verehren ihn, sein Name taucht in Tagebüchern auf, seine Statue steht in einer verfallenen Kapelle [P-18][P-19]. Drei seiner vier im Amulett Lindo Lauts gefangenen Seelen sind brutal und gefährlich; Lindo Laut verbündet sich mit dem vierten, Thyrex, und vernichtet die anderen [P-19][P-20a]. Dadurch wird Vhar'Zul wiedergeboren und erscheint zunächst als dankbarer, beinahe ritterlicher Verbündeter, der die Gruppe in die Splitterwelt teleportiert und mit dem Versprechen künftiger Belohnung entschwindet [P-20a][P-20b].
+Vhar'Zul ist eine zentrale Figur der Kampagne und auf vielfältige Weise mit den Protagonisten verbunden. Seine Rolle entwickelt sich über die Sessions hinweg von einer zunächst unklaren, bedrohlichen Präsenz zu einem zeitweiligen Verbündeten und schließlich zu einer tragischen Figur, deren Tod weitreichende Folgen hat.
 
-Doch sein Wesen bleibt zwiespältig. In einem Traum Lindo Lauts zeigt sich ein früherer, schattenhafter Vhar'Zul, der einen Pakt eingeht, um an wahre Macht zu gelangen [P-24]. Recherchen bei Tyrael und Belorus bestätigen, dass Vhar'Zul ein „Herr der Seelen“ und eine schreckliche Gefahr ist, wenn alle seine Teile je wieder zusammenfinden [P-26a][P-26b][P-34]. Der verborgene fünfte Teil Slix, von dem selbst das heilige *Buch der vier Seelen* nichts weiß, nistet sich in Lindo Laut ein und beeinflusst ihn zusehends [P-34][P-37]. So wird die Gruppe gezwungen, nach Abyssalis zu reisen, um Slix zu entfernen und Vhar'Zuls wahre Absichten zu ergründen.
+Die Gruppe begegnet Vhar'Zul erstmals indirekt über seine Anhänger an einem Tor, die ihm dienen. Lindo Lauts Amulett steht in direkter Verbindung zu dem Gott, der in vier Seelen gespalten wurde. Im Verlauf der Kampagne hilft die Gruppe Vhar'Zul, wieder einen Körper zu erlangen, und er gewährt ihr dafür temporäre Kräfte und einen Zauberstab.
 
-In Abyssalis gipfelt die Handlung: Vhar'Zul gewinnt durch absorbierte Kraft aus Krähenstatuen an Macht [P-44], zwingt Dormak in die Knie, leitet das Ritual zur Entfernung Slix' aus Lindo Laut und teleportiert die Helden anschließend in die Erntefelder – scheinbar als großzügiger Wohltäter. Er verspricht, Lunaras Bruder aus den Klauen Vorgul'tars zu befreien, sobald die Gruppe die nötige Essenz birgt [P-44]. Doch vor dem Splitter des Ewigen, dem Schöpfungsjuwel, offenbart er seine wahre Absicht: Er will den Urgott Holodarn befreien und die gesamte Herrschaft der Götter beenden. Seine verlockenden Angebote an jedes einzelne Gruppenmitglied – Vergöttlichung für Esterossa, Blüte Thares als Handelszentrum für Dodo, Befreiung Liams für Lunara und der Rang seiner rechten Hand für Lindo Laut – sind nichts als eine letzte Prüfung auf Loyalität [P-54].
+Vhar'Zul teleportiert die Gruppe in eine Zwischenebene des Circle Below, um die Fähre zu finden und seinen Platz zurückzuerobern. Er benötigt dafür eine physische Form, die er durch die Opferung eines lebenden Wesens erhält. Später reist er mit der Gruppe nach Abyssalis, um den Splitter des Ewigen zu finden, und verspricht, alle Wünsche zu erfüllen, wenn er den Splitter aktiviert.
 
-Der Betrug scheitert. Esterossa führt das Schwert von Huludan, zerstört Vhar'Zuls Kristall und saugt seine Essenz auf; der alte Gott wird vernichtet [P-54][P-55][S1-02-A]. Sein Tod bringt Lunara die innere Freiheit von der Kontrollrune und löscht endgültig seinen Einfluss auf Lindo Laut [S1-01-A][S1-02-A]. Die Kampagne endet mit dem Sieg über eine Schicksalsmacht, die den Lauf der Welt drohte für immer zu verändern.
+Sein Tod durch Esterossas Schwert löst die Ereignisse der finalen Sessions aus und befreit Lunara von einer Kontrollrune, die sie unter seinem Einfluss trug.
 
 ## Wichtige Merkmale
 
-* **Zersplitterung und Seelenfragmente:** Vhar'Zul wurde in fünf Teile gerissen. Nur vier – Sythraal, Ezhura, Koll'Mereth und Thyrex – überliefert das *Buch der vier Seelen*. Der fünfte, Slix, blieb verborgen. Drei dieser vier waren böse und wurden von Thyrex mithilfe Lindo Lauts ausgelöscht; Thyrex dominierte fortan die wiedergeborene Gottheit. Slix agierte separat und versteckte sich in Lindo Laut.
+### Fähigkeiten und Kräfte
 
-* **Erscheinung und Auftreten:** Als vollwertige Gottheit zeigt sich Vhar'Zul in prächtiger Robe und kunstvoller Maske, mit rot glimmenden Augen [P-20a][P-44]. Seine Bewegungen sind von schwebender Eleganz, seine Stimme ähnelt der Thyrex', aber tiefer und gebietender. Er neigt vor Lindo Laut respektvoll den Kopf und spricht von „Freundschaft“, doch unter der höflichen Fassade lauert ein kühler, manipulativer Geist [P-20a][P-54]. In Tiergestalt wählt er die Form eines Raben, die ihm telepathische Kommunikation bei eingeschränkter Sprache erlaubt [P-53].
+Vhar'Zul verfügt über die Fähigkeit, in Gedanken zu sprechen und Verbindungen zu anderen Wesen herzustellen. Er kann die Gruppe teleportieren, wie er es in die Zwischenebene des Circle Below tut. Seine Macht ist zeitweise stark geschwächt, erholt sich aber zunehmend: Als die Gruppe ihn in der Splitterwelt verabschiedet, ist er nur ein „leichtes, schwaches Licht", später jedoch spüren die Protagonisten „diese pure Power, als hätte er sich erholt, regeneriert".
 
-* **Macht und Fähigkeiten:** Vhar'Zul beherrscht die Zwischenebene – er selbst gibt sich als ihr Herrscher oder gar der Fährmann zu erkennen [P-20a]. Er kann sterbliche und ganze Gruppen mühelos teleportieren, die Gedanken anderer durchdringen und mit bloßem Befehl Diener in die Knie zwingen [P-44]. Seine Kontrolle über Seelenessenz erlaubt es ihm, aus einem kleinen Kadaver einen vollwertigen Körper zu formen [P-20a] und anderen Wesen Versprechungen von nahezu allmächtiger Erfüllung zu machen [P-54]. Einzelne seiner Teile verfügen über genug Macht, um ganze Götter zu vernichten [P-37]. Mit dem Splitter des Ewigen hätte er die Schöpfung selbst umgestalten können [P-54].
+Er kann temporäre Kräfte verleihen, wie er es Lindo Laut tut, und erscheint in verschiedenen Formen: als Rabe, als Skelettschädel und schließlich in physischer Form. Seine Macht wird als „fast die eines alten Gottes" beschrieben.
 
-* **Reich:** Abyssalis, eine Gefängniswelt, aus der er ohne fremde Hilfe nicht entkommen konnte [P-37][P-44]. Von dort aus beobachtete er durch Augen wie die Krähenstatuen die Geschehnisse in den Erntefeldern und bereitete seine endgültige Rückkehr vor.
+### Auftreten und Wesenszüge
+
+Vhar'Zul zeigt sich kooperativ, aber distanziert. Er trägt eine Maske, hinter der ein rotes Schimmern zu vernehmen ist. Seine Stimme wird als die eines „leicht freundlich angehauchten Lords" beschrieben, nicht als die eines brutalen Tyrannen, wie man es erwarten würde. Er verhandelt geschickt und schließt Deals ab, wie in Lindo Lauts Albtraum, wo er mit einer verhüllten Gestalt einen Pakt eingeht, um seine Macht zurückzuerlangen.
+
+Er ist berechnend und kontrolliert, zeigt aber auch Fürsorge: Er gibt der Gruppe Schutzamulette und beauftragt sie, Lunaras Bruder zu finden. Seine Identität scheint er zu erkennen, wenn er als Skelettschädel erscheint und die Gruppe beobachtet.
 
 ## Beziehungen und Verbindungen
 
-* **Lindo Laut:** Träger der Seelenfragmente und zentraler Verbündeter. Vhar'Zul nennt ihn wiederholt „Freund“ und will ihn zu seiner rechten Hand machen, verrät das Vertrauen aber letztlich. Lindo Laut agiert durch die emotionale Bindung zu Thyrex lange Zeit zögerlich loyal.
+### Lindo Laut
 
-* **Thyrex:** Der vierte Teil, der sich als einziger gegen seine Schöpfernatur stellt und Lindo Laut rettet. Nach Vhar'Zuls Wiedergeburt übernimmt seine Persönlichkeit die Führung – der wiedergeborene Gott ist im Kern Thyrex, verstrickt in einen schicksalhaften Konflikt mit seinem eigenen Ursprung.
+Lindo Laut trägt Vhar'Zuls Amulett und ist eines seiner Gefäße. Die Verbindung zwischen ihnen ist eng: Lindo Laut freundete sich mit Thyrex an, einer der Seelen Vhar'Zuls, die als Stimme in seinem Amulett saß. Gemeinsam löschten die beiden die übrigen Seelen aus, wodurch Vhar'Zul als vollwertige Gottheit zurückkehrte — mit der dominierenden Persönlichkeit von Thyrex. Vhar'Zul gewährt Lindo Laut temporäre Kräfte und nennt ihn „meine liebe Freundin".
 
-* **Lunara Velora:** Ehemalige Meisterin, durch eine Kontrollrune gebunden. Vhar'Zul beschützt ihren Bruder Liam als Pfand und verspricht dessen Befreiung, um ihre Dienste zu sichern. Sein Tod erlöst sie von der Rune und schafft Raum für einen gänzlich neuen Lebensabschnitt.
+### Lunara
 
-* **Dormak:** Ein Kultdiener, der in der Kapelle von Vhar'Zul agierte und später vor seiner gewachsenen Macht in die Knie gezwungen wurde [P-19][P-44].
+Lunara hat eine persönliche Verbindung zu Vhar'Zul: Er war ihr Meister und hat ihr Leben gerettet. Sie trägt eine Kontrollrune, die mit ihm in Verbindung steht. Nach seinem Tod wird ein „Schleier von ihr abgeworfen", und die Kontrollrune verliert ihre Macht über sie. Sie fühlt sich danach „sehr leer", aber auf eine ruhige, weiche Weise — eine gewisse Freiheit, von der sie nicht wusste, dass sie fehlte.
 
-* **Belorus:** Erkennt die wahre Bedrohung, die von Vhar'Zuls Rückkehr ausgeht, und versucht Lindo Laut zu töten, um die Vereinigung der Teile zu verhindern [P-34].
+### Dante
 
-* **Nerash:** Einst ein Weggefährte bei der Suche nach dem Splitter des Ewigen. Vhar'Zul gibt zu, dass sie ohne sterbliche Hilfe nie an das Juwel gelangt wären [P-54].
+Dante folgt Vhar'Zul als Gottheit und hat in einer Götterfahrt einen Segen von ihm erhalten. Er hatte „keine andere Wahl, außer den Gott anzunehmen, sonst wäre ich gestorben".
 
-* **Thar'Vok, der Erdrichter:** Kampfgefährte aus dem Götterkrieg, wie Vhar'Zul selbst als Stimme im Amulett offenbart (laut Kampagnenentscheidung).
+### Die fünf Seelen
 
-* **Esterossa:** Führt die entscheidende Attacke, zerstört seinen Kristall und saugt seine Essenz auf; wird so zur unmittelbaren Vollstreckerin seines Endes.
+Vhar'Zul wurde in fünf Seelen zerspalten: **Sythraal** (der Schleier), **Ezhura** (die Glut), **Koll'Mereth** (die Krone), **Thyrex** (der Sänger) und den versteckten fünften Teil **Slix**. Vier der fünf sind bösartig; Thyrex ist der einzige besonnene. Slix übernahm zeitweise die Kontrolle über Lindo Laut. Die Teile sind in Lindo Laut und im Abyssalis verteilt.
 
-* **Der Seraph (Vitius):** Bemerkt nach der Rückkehr der Gruppe das Verschwinden von Vhar'Zuls Macht und zeigt sich überrascht, dass sie keinen Schaden nahm [S1-02-A].
+### Thar'Vok
+
+Thar'Vok, der Erdrichter, war ein Kampfgefährte Vhar'Zuls. Diese Auskunft gibt Vhar'Zul als Stimme im Amulett Lindo Lauts.
+
+### Esterossa
+
+Esterossa ist diejenige, die Vhar'Zul letztendlich vernichtet. Sie greift ihn an, und seine Energie wird von ihrem Schwert absorbiert. Zuvor warnte sie vor ihm.
+
+### Belorus
+
+Belorus will Vhar'Zul vernichten, da er die alten Götter hasst.
+
+### Die Hexe
+
+Die Hexe bezeichnet Vhar'Zul als „Abschaum, der zurückgekehrt ist" und macht ihn für die Öffnung von Abyssalis verantwortlich. Sie droht, dass er dafür bezahlen wird.
 
 ## Chronologie
 
-[P-18] **Vor der Kampagne:** Im Götterkrieg vor zwölf Jahren zersplittert, nicht getötet. Vier Teile werden in einem Amulett gebannt, das später in Lindo Lauts Besitz gelangt. Der verborgene fünfte Teil Slix bleibt unentdeckt.
+### Erste Hinweise (Session 2025-08-20)
 
-[P-19] **Session 2025-08-20:** Auf einem Berg verehren Kultisten Vhar'Zul unter dem Namen Varsurs; sie fordern Standhaftigkeit und Treue. Sein Name erscheint in einem Tagebuch, das Cookie liest [1].
+Die Gruppe erfährt erstmals von Vhar'Zul, als sie auf seine Anhänger an einem Tor trifft. Lindo Laut erkennt, dass der Gott in vier Seelen gespalten wurde und mit seinem Amulett in Verbindung steht. Die Gruppe hatte zuvor angenommen, es gehe um den alten Gott Tarvok, doch nun treffen sie auf Anhänger Vhar'Zuls.
 
-[P-20a] **Session 2025-09-02:** In einer Kapelle enthüllt sich, dass die Aspekte Esua und Citral (Ezhura und Sythraal) in Lindo Lauts Amulett hausen. Lindo Laut nutzt den Thron, um zusammen mit Thyrex die beiden bösen Seelen zu vernichten [2].
+### Die Kapelle (Session 2025-09-02)
 
-[P-20b] **Session 2025-09-06:** Vhar'Zul kehrt vollständig zurück, nun mit der dominierenden Persönlichkeit Thyrex'. Er teleportiert die Gruppe in die Zwischenebene, formt aus einem Kadaver einen edlen Körper, dankt Lindo Laut überschwänglich und verspricht eine Belohnung. Er besteigt die Fähre und verschwindet im Nebel [3][4].
+Die Kultisten erweisen sich als Anhänger Vhar'Zuls. Eine Kapelle soll ihm geweiht werden, und seine Statue steht im Inneren. Er scheint ein neuer oder anderer Gott zu sein, der die alte Gottheit Tavok ablösen soll. Lindo Laut weiß nur wenig über ihn: „Es gibt kaum Daten oder sonst was über den Gott."
 
-[P-21] **Session 2025-09-09:** In Steinbachtal findet die Gruppe frische Statuen mit seinem Zeichen; Köpfe darunter lachen ihn aus, ein Zeichen für seinen zweifelhaften Ruf selbst unter anderen Mächten [5].
+### Wiedererlangung der physischen Form (Session 2025-09-06)
 
-[P-24] **Session 2025-09-30:** In Lindo Lauts Traum sucht ein früheres Ich Vhar'Zuls seine wahre Macht und schließt einen Pakt mit einer schattenhaften Gestalt, die ein Tor zu einem Reich gequälter Schatten öffnet [6].
+Vhar'Zul offenbart sich der Gruppe. Er hat die Persönlichkeit von Tyrex übernommen und teleportiert die Gruppe in eine Zwischenebene des Circle Below, um die Fähre zu finden und seinen Platz zurückzuerobern. Er benötigt eine physische Form, die er durch die Opferung eines lebenden Wesens erhält. Er zeigt sich kooperativ, aber distanziert, gewährt Lindo Laut temporäre Kräfte und verlässt die Gruppe am Ende auf einer Fähre.
 
-[P-26a] **Session 2025-10-14:** Tyrael gibt preis, dass Vhar'Zul unter dem Namen Basul/Valsor ein alter Herr der Seelen aus Abyssalis sei und wahrscheinlich noch existiere. Die Gruppe vermutet, dass der Dämon in Lindo Laut ein Überbleibsel von ihm ist [7][8].
+### Statuen in Steinbachtal (Session 2025-09-09)
 
-[P-26b] **Session 2026-01-20:** Belorus warnt vor der Rückkehr des zerspalteten Gottes und der Tyrannei, die sie brächte. Lunara erfährt, dass sie von der Hexe Leandra benutzt wurde, um Vhar'Zuls Siegel zu brechen. Der fünfte Teil in Ehrenfels wird zum nächsten Ziel [9].
+In Steinbachtal finden sich Statuen mit Vhar'Zuls Zeichen, die von anderen Köpfen verhöhnt werden. Die Gruppe hat Vhar'Zul geholfen, wieder einen Körper zu bekommen, und er hat ihnen einen Zauberstab gegeben.
 
-[P-34] **Session 2026-02-17:** Vhar'Zuls Teile suchen Ehrenfels, um seine volle Stärke wiederzuerlangen. Lunara dient ihm als Meisterin, fürchtet um ihren Bruder. Ein Ritual zur endgültigen Vernichtung wird erwogen [10].
+### Der Albtraum (Session 2025-09-30)
 
-[P-37] **Session 2026-03-24:** Lunara und Tyrex warnen, dass die drei in Lindo Laut ausgelöschten bösen Teile im Abyssalis weiterexistieren und aktiv sein könnten [11].
+Lindo Laut träumt von Vhar'Zul, der mit einer verhüllten Gestalt verhandelt und ein Tor zu einer Kammer voller Schatten öffnet. Er will seine Macht zurück und stimmt einem Deal zu. Die verhüllte Gestalt fragt spitzzüngig: „Ihr seid aber nicht mehr derselbe. Niemand wird euch folgen." Vhar'Zul antwortet: „Das lass mal ganz meine Sorge sein. Ich bin nun schon so weit hier runtergekommen. Jetzt erfüll mir diesen letzten Wunsch."
 
-[P-43] **Session 2026-03-31:** Vhar'Zul tritt regeneriert aus einem Portal, absorbiert die göttliche Kraft der Krähenstatuen, zwingt Dormak in die Knie und leitet das Ritual, um Slix aus Lindo Laut zu entfernen. Nach Gelingen schenkt er der Gruppe schützende Amulette und einen Teleportstein und schickt sie in die Erntefelder von Abyssalis. Er gesteht, dass Liams Seele bei Vorgul'tar sei und verspricht, diesen zu befreien, sobald die Helden die Essenz bergen [12].
+### Begegnung mit Tyrael (Session 2025-10-14)
 
-[P-44] **Session 2026-05-06:** Ein Richter in Abyssalis deutet Vhar'Zuls Rückkehr als Hoffnungsschimmer, aus der Gefängniswelt entkommen zu können [13].
+Tyrael kennt Vhar'Zul und weiß, woher er kommt. Er sagt, Vhar'Zul lebt noch. Lindo Laut vermutet eine Verbindung zwischen dem Gott und seiner eigenen Besessenheit.
 
-[P-48] **Session 2026-05-13:** Dante und Lunara bekennen sich zu Vhar'Zul. Ein Seraph will sie als Vasul-Anhänger töten; Esterossa warnt, dass Vhar'Zul Luna nur manipuliere [14].
+### Die fünfte Seele (Session 2026-01-20)
 
-[P-49] **Session 2026-06-10:** Vhar'Zul in Rabengestalt kontaktiert Lindo Laut und warnt vor Kreaturen vor dem Tempel Vorgul'tars. Er kündigt sein baldiges Eingreifen an und teilt mit, dass Liam in der Nähe sei [15].
+Es wird enthüllt, dass Vhar'Zul in vier Teile geteilt war, aber ein fünfter Teil in Ehrenfels verborgen liegt. Belorus will ihn vernichten, da er die alten Götter hasst. Vhar'Zul spricht zu Lunara in ihren Gedanken: „Wenn Vasul wieder zur Macht, an Macht gewinnt und gelangt, dann werden die alten Götter sich erheben."
 
-[P-53] **Session 2026-06-16:** Vor dem Splitter des Ewigen offenbart Vhar'Zul sein wahres Ansinnen, den Urgott Holodarn zu befreien. Er bietet jedem Gruppenmitglied persönliche Wünsche an. Esterossa zerstört seinen Kristall mit dem Schwert von Huludan; Vhar'Zuls Essenz wird aufgesogen und er scheitert endgültig [16].
+### Slix übernimmt die Kontrolle (Session 2026-02-17)
 
-[P-54] **Session 2026-07-21:** Lunara betrauert Vhar'Zul als ihre zentrale Bezugsperson und als letzte Hoffnung, Liam zu retten. Lindo Laut steht unter Schock über die Tat seines Gefährten [17].
+Der fünfte Teil, Slix, hat die Kontrolle über Lindo Laut übernommen. Nox vermutet, dass Vhar'Zul durch den Thron oder den Stab in Lindo Laut gelangt ist. Lunara offenbart ihre persönliche Verbindung zu Vhar'Zul: Er war ihr Meister und hat ihr Leben gerettet.
 
-[P-55] **Session 2026-07-29:** Mit Vhar'Zuls Tod fällt ein Schleier von Lunara, die Kontrollrune erlischt [18].
+### Die Teile im Abyssalis (Session 2026-03-24)
 
-[S1-01-A] **Session 2026-08-04:** Der Seraph Vitius stellt fest, dass Vhar'Zuls Macht nicht mehr existent ist. Die Gruppe hat die Schriftrolle erfolgreich und ohne eigenen Schaden eingesetzt [19].
+Lindo Laut erklärt: „Es gab ja insgesamt vier, beziehungsweise dann doch fünf Teile von Vasul, die alle eigenständige Persönlichkeiten entwickelt hatten. Wobei am Ende quasi diese eine Persönlichkeit die anderen drei in mir ausgelöscht hat." Er glaubt jedoch, dass die Teile nicht ausgelöscht, sondern nur stark geschwächt sind und nun im Abyssalis verteilt gegen den einen Teil ankämpfen, der sich gegen sie erhoben hat. Die Gruppe will diese Teile bekämpfen, um Lindo Laut zu retten.
+
+### Rückkehr in Ehrenfels (Session 2026-03-31)
+
+Vhar'Zul tritt aus dem Portal in Ehrenfels und absorbiert die in Statuen verborgene Göttlichkeit. Er zeigt sich mächtig und kontrolliert, entfernt Slix aus Lindo Laut und gibt der Gruppe Schutzamulette. Er führt sie nach Abyssalis und beauftragt sie, Lunaras Bruder zu finden. Seine Macht ist fast die eines alten Gottes.
+
+### In Abyssalis (Sessions 2026-04-14 bis 2026-05-13)
+
+Die Hexe bezeichnet Vhar'Zul als zurückgekehrten Abschaum, der für die Öffnung von Abyssalis verantwortlich ist. Die Gruppe hofft, durch ihn aus Abyssalis entkommen zu können. Dante offenbart, dass er Vhar'Zul als Gottheit folgt. Esterossa warnt vor ihm.
+
+### Warnung und Beobachtung (Session 2026-06-10)
+
+Vhar'Zul kontaktiert die Gruppe durch Thoughts Delver und warnt sie vor Gefahren. Er erscheint als Rabe und später als Skelettschädel, der ihre Identität zu erkennen scheint. Er sagt: „Ich wusste, dass du einfach, einfach genial bist, Lindo Laut. Ich wollte euch eine kleine Warnung schicken." Er kündigt an: „Ich kann noch nicht in Auftritt machen. Aber noch ein bisschen weiter, dann werde ich an eurer Seite sein."
+
+### Der Splitter des Ewigen (Session 2026-06-16)
+
+Vhar'Zul ist mit der Gruppe nach Abyssalis gereist, um den Splitter des Ewigen zu finden. Er erscheint in physischer Form und verspricht, alle Wünsche zu erfüllen, wenn er den Splitter aktiviert. Die Gruppe beobachtet ihn misstrauisch. Letztendlich wird er von Esterossa angegriffen, und seine Energie wird von ihrem Schwert absorbiert.
+
+### Vernichtung (Session 2026-07-21)
+
+Vhar'Zul wurde von Esterossa mit dem Schwert vernichtet, seine Essenz absorbiert. Sein Tod löst die Ereignisse der Session aus.
+
+### Nachwirkungen (Session 2026-07-29)
+
+Vhar'Zuls Tod hat Lunara von einer Kontrollrune befreit. Sie fühlt sich „sehr leer", aber auf eine ruhige Weise: „Seitdem er tot ist, wurde so ein bisschen so ein Schleier von ihr abgeworfen." Sie muss nun herausfinden, wer sie ohne ihn ist.
 
 ## Offene Fragen
 
-- Die drei bösen Seelen Sythraal, Ezhura und Koll'Mereth wurden in Lindo Laut zwar vernichtet, könnten aber als geschwächte Entitäten im Abyssalis weiterexistieren. Ob und wie sie dort Einfluss nehmen, ist nicht abschließend geklärt [P-43][P-48].
-- Der Verbleib des entfernten fünften Teils Slix nach dem Ritual ist nicht ausdrücklich bestätigt. Es bleibt ungewiss, ob er restlos vernichtet wurde oder ein eigenes Dasein im Abyssalis führt.
+- Was genau geschah mit den verbliebenen Teilen Vhar'Zuls nach seiner Vernichtung durch Esterossas Schwert? Wurden sie mit seiner Essenz absorbiert oder existieren sie weiter?
+- Welche Rolle spielte Vhar'Zul als Lunaras Meister, und wie hat er ihr Leben gerettet?
+- Was war der genaue Inhalt des Deals, den Vhar'Zul mit der verhüllten Gestalt in Lindo Lauts Albtraum schloss?
+- Welche Verbindung besteht zwischen Vhar'Zul und dem Seraph, der mit ihm in Verbindung steht und dessen Ring seine Magie enthält?
+- Was bedeutete Vhar'Zuls Aussage, dass „die alten Götter sich erheben" werden, wenn er wieder an Macht gewinnt?
 
 ## Belege
 
-[P-18] Session 2025-08-20 @ 01:26:26 (https://www.youtube.com/watch?v=-XbO3FLSL_I)
-[P-19] Session 2025-09-02 @ 02:12:38 (https://www.youtube.com/watch?v=TLZOH7TlGhk)
-[P-20a] Session 2025-09-06 @ 00:02:44 (https://www.youtube.com/watch?v=vo1xnyLQDJk)
-[P-20b] Session 2025-09-06 @ 00:41:24 (https://www.youtube.com/watch?v=vo1xnyLQDJk)
+[P-18] Session 2025-08-20 @ 01:28:39 (https://www.youtube.com/watch?v=-XbO3FLSL_I)
+[P-19] Session 2025-09-02 @ 00:56:12 (https://www.youtube.com/watch?v=TLZOH7TlGhk)
+[P-20] Session 2025-09-06 @ 00:02:44 (https://www.youtube.com/watch?v=vo1xnyLQDJk)
 [P-21] Session 2025-09-09 @ 00:43:29 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
-[P-24] Session 2025-09-30 @ 01:59:23 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
-[P-26a] Session 2025-10-14 @ 01:56:08 (https://www.youtube.com/watch?v=cUtz87UCHu4)
-[P-26b] Session 2025-10-14 @ 01:55:28 (https://www.youtube.com/watch?v=cUtz87UCHu4)
+[P-24] Session 2025-09-30 @ 01:58:23 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[P-26] Session 2025-10-14 @ 01:54:45 (https://www.youtube.com/watch?v=cUtz87UCHu4)
 [P-34] Session 2026-01-20 @ 00:17:11 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
-[P-37] Session 2026-02-17 @ 01:17:51 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
+[P-37] Session 2026-02-17 @ 00:54:20 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
 [P-43] Session 2026-03-24 @ 01:35:23 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
-[P-44] Session 2026-03-31 @ 00:25:37 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
-[P-48] Session 2026-05-06 @ 00:15:53 (https://www.youtube.com/watch?v=MB4quhDWsQE)
-[P-49] Session 2026-05-13 @ 00:13:28 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
-[P-53] Session 2026-06-10 @ 01:06:01 (https://www.youtube.com/watch?v=_3tLSiT1tck)
-[P-54] Session 2026-06-16 @ 01:38:00 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
-[P-55] Session 2026-07-21 @ 00:06:50 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
+[P-44a] Session 2026-03-31 @ 00:25:37 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
+[P-44b] Session 2026-03-31 @ 00:25:37 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
+[P-47] Session 2026-04-14 @ 00:28:41 (https://www.youtube.com/watch?v=1Jyu92P7_Fg)
+[P-48] Session 2026-05-06 @ 00:14:59 (https://www.youtube.com/watch?v=MB4quhDWsQE)
+[P-49] Session 2026-05-13 @ 00:13:19 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
+[P-53] Session 2026-06-10 @ 01:06:04 (https://www.youtube.com/watch?v=_3tLSiT1tck)
+[P-54] Session 2026-06-16 @ 00:17:05 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
+[P-55] Session 2026-07-21 @ 00:00:42 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
 [S1-01-A] Session 2026-07-29 @ 00:13:13 (https://www.youtube.com/watch?v=umGyKLkefJI)
-[S1-02-A] Session 2026-08-04 @ 00:16:42 (https://www.youtube.com/watch?v=qRj2t3wQHfs)
+
+Zusätzliche Quellen: Bekannte_Pantheon_der_Goetter.md, Das_Buch_der_vier_Seelen.md, Kanon_Entscheidungen.md

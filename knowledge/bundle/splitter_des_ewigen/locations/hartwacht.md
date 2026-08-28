@@ -1,34 +1,37 @@
 ---
 type: Location
 title: Hartwacht
-description: Hartwacht (auch Hardwacht) ist die große, als uneinnehmbar geltende Ork-Festung
-  im Norden. Sie ist die Hauptstadt der Orks und ein zentrale…
+description: 'Hartwacht wird in den erhaltenen Aufzeichnungen unterschiedlich beschrieben:
+  In einem älteren Bericht gilt sie als Stadt, die die Magier sc…'
 tags:
 - locations
-timestamp: '2026-03-24T00:00:00Z'
+timestamp: '2026-03-18T00:00:00Z'
 id: LOC_HARTWACHT
-subtype: Festung
-aliases:
-- Hardwacht
+subtype: Siedlung
+status: disputed
 ---
 
-# Hartwacht
+Hartwacht wird in den erhaltenen Aufzeichnungen unterschiedlich beschrieben: In einem älteren Bericht gilt sie als Stadt, die die Magier schützen wollten, in einer späteren Quelle als uneinnehmbare Orkfestung. Beide Aussagen stehen nebeneinander; ein belegter Übergang zwischen den Zuständen fehlt.
 
-Hartwacht (auch Hardwacht) ist die große, als uneinnehmbar geltende Ork-Festung im Norden. Sie ist die Hauptstadt der Orks und ein zentrales Ziel der Gruppe. Kane, der die Gruppe bei ihrem Vorhaben unterstützt, hat hier einen Großteil seines Lebens verbracht. Die in Hartwacht ansässigen Orks besitzen umfangreiches Wissen über den Magierturm und könnten der Gruppe helfen, sicher zur Schlucht und zum Turm zu gelangen.
+## Rolle und Bedeutung
 
-## Lage und Beschreibung
+Die Magier wollten Hartwacht offenbar vor einer Bedrohung schützen. Konkret wird ein Golem genannt, der die Stadt bedroht, falls er die Kristalle erreicht. Welche Rolle die Kristalle dabei spielen, ist nicht überliefert.
 
-Hartwacht liegt weit im Norden und gilt als uneinnehmbare Festung. Genauere topographische Details sind nicht bekannt; die Festung wird als massives Bollwerk beschrieben. Ihre isolierte Lage macht sie zu einem strategischen Rückzugsort und Wissenszentrum der Orks.
+In der jüngeren Quelle wird Hartwacht als uneinnehmbare Orkfestung beschrieben. Die Gruppe plant, dorthin zu reisen, um Informationen über „das Ende“ zu erhalten. Hartwacht scheint also ein Ort zu sein, an dem relevantes Wissen erreichbar ist.
 
-## Bewohner und Wissen
+## Lage und Umgebung
 
-Die Ork-Hauptstadt wird von einem Stamm oder einer Gesellschaft bewohnt, die sich über Generationen angesammeltes Wissen bewahrt hat, insbesondere über den Magierturm und die angrenzende Schlucht. Kane, ein erfahrener Ork, stammt aus Hartwacht und bietet an, die Gruppe dorthin zu führen – vorausgesetzt, sie hat sich zuvor bewährt. Lunara spekuliert, dass die Orks konkrete Routen oder Schutzmechanismen kennen, die eine sichere Passage zum Turm ermöglichen.
+Hartwacht liegt hinter einem Pass, der von Vargen und anderen Kreaturen bewohnt wird. Die Umgebung gilt als gefährlich; der Weg dorthin führt durch dieses Gebiet. Die Festung selbst wird als uneinnehmbar bezeichnet, was ihre Verteidigungsfähigkeit betont.
 
-## Bedeutung für die Kampagne
+## Bedrohung und Verlauf
 
-Die Gruppe sucht Hartwacht auf, um Informationen über das Ende ihrer Reise und mögliche Reisewege zu erhalten. Die Festung fungiert als Tor zum Magierturm, dessen Geheimnisse die Orks hüten. Sollte die Gruppe das Vertrauen der Bewohner gewinnen, könnte Hartwacht eine Schlüsselrolle bei der Navigation durch die gefährlichen nördlichen Gebiete spielen.
+Der Golem bedroht Hartwacht, falls er die Kristalle erreicht. Die genauen Umstände dieser Bedrohung – etwa was die Kristalle sind oder warum der Golem sie sucht – sind nicht dokumentiert. Die Reise der Gruppe nach Hartwacht steht im Zusammenhang mit der Suche nach Informationen über „das Ende“.
 
 # Belege
 
-[P-41] Session 2026-03-18, 00:45:12 – <https://www.youtube.com/watch?v=HHXxsASLrbQ>
-[P-43] Session 2026-03-24, 01:19:48 – <https://www.youtube.com/watch?v=Yj5BWJfg3Ag>
+[P-25] Session 2025-10-07 @ 00:09:39 (https://www.youtube.com/watch?v=qVAF_54S8Vw)
+[P-41] Session 2026-03-18 @ 00:45:15 (https://www.youtube.com/watch?v=HHXxsASLrbQ)
+
+# Offene Konflikte
+
+- Beleg 1 bezeichnet Hartwacht als Stadt, die die Magier schützen wollten; Beleg 2 bezeichnet Hartwacht als uneinnehmbare Orkfestung. Ein belegter Übergang (etwa eine Eroberung oder ein Besitzerwechsel) wird in den Quellen nicht genannt.

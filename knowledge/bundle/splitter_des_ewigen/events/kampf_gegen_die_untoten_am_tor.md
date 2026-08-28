@@ -1,8 +1,8 @@
 ---
 type: Event
 title: Kampf gegen die Untoten am Tor
-description: Die erste Auseinandersetzung mit drei Zombies und einem aus dem Wasser
-  kriechenden vierten. Rotunas' flammende Fäuste und Dodos Feueratem w…
+description: Die Gruppe kämpft gegen eine Gruppe von Zombies und Skeletten am Eingangstor
+  von Steinbachtal. Sie besiegen die Untoten, wobei Rotunas entd…
 tags:
 - events
 timestamp: '2025-09-09T00:00:00Z'
@@ -10,8 +10,8 @@ id: EVENT_KAMPF_GEGEN_DIE_UNTOTEN_AM_TOR
 subtype: Kampf
 ---
 
-Die erste Auseinandersetzung mit drei Zombies und einem aus dem Wasser kriechenden vierten. [Rotunas](/characters/rotunas.md)' flammende Fäuste und [Dodos](/characters/dodo.md) Feueratem waren entscheidend. Der Kampf endete mit der Einäscherung aller Gegner, was Rotunas jedoch wegen der Menschlichkeit der Opfer stressen ließ.
+Die Gruppe kämpft gegen eine Gruppe von Zombies und Skeletten am Eingangstor von [Steinbachtal](/locations/steinbachtal.md). Sie besiegen die Untoten, wobei [Rotunas](/characters/rotunas.md) entdeckt, dass Feuer effektiv ist. [Dodo](/characters/dodo.md) besiegt die Skelette mit seiner Keule.
 
 # Belege
 
-[P-21] Session 2025-09-09 @ 00:14:24 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
+[P-21] Session 2025-09-09 @ 00:13:30 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)

@@ -1,17 +1,17 @@
 ---
 type: Location
 title: Lager der Gruppe
-description: Das provisorische Lager im Wald, wo die Abenteurer ihre Reise begannen
-  und wohin sie nach dem Kampf zurückkehren. Es dient als Ausgangspunk…
+description: Das Lager, in dem die Gruppe nach dem Kampf zurückkehrte, um ihre Belohnung
+  abzuholen. Es war der Ausgangspunkt des Abenteuers.
 tags:
 - locations
 timestamp: '2025-03-26T00:00:00Z'
 id: LOC_LAGER_DER_GRUPPE
-subtype: Wildnis
+subtype: Siedlung
 ---
 
-Das provisorische Lager im Wald, wo die Abenteurer ihre Reise begannen und wohin sie nach dem Kampf zurückkehren. Es dient als Ausgangspunkt und Rastplatz.
+Das Lager, in dem die Gruppe nach dem Kampf zurückkehrte, um ihre Belohnung abzuholen. Es war der Ausgangspunkt des Abenteuers.
 
 # Belege
 
-[P-01] Session 2025-03-26 @ 00:59:04 (https://www.youtube.com/watch?v=ROCKGeeRUFw)
+[P-01] Session 2025-03-26 @ 01:49:33 (https://www.youtube.com/watch?v=ROCKGeeRUFw)

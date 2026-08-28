@@ -1,16 +1,16 @@
 ---
 type: NPC
 title: Herr Raxalis
-description: Ein alter Mann, der mit Talron über die Bedrohung durch die Armee spricht
-  und darauf drängt, 'Marie' zu beschützen. Er ist Teil der Geheimh…
+description: Herr Raxalis ist ein alter Mann, der mit Talron über die Bedrohung spricht.
+  Er scheint einflussreich zu sein und erwähnt die Notwendigkeit,…
 tags:
 - npcs
 timestamp: '2026-08-06T00:00:00Z'
 id: NPC_HERR_RAXALIS
 ---
 
-Ein alter Mann, der mit [Talron](/npcs/talron.md) über die Bedrohung durch die Armee spricht und darauf drängt, '[Marie](/npcs/marie.md)' zu beschützen. Er ist Teil der Geheimhaltung und weiß, dass gewisse Leute Marie nicht finden dürfen. Er scheint in politischen Ränken involviert zu sein.
+Herr Raxalis ist ein alter Mann, der mit [Talron](/npcs/talron.md) über die Bedrohung spricht. Er scheint einflussreich zu sein und erwähnt die Notwendigkeit, nach [Ringtal](/locations/ringtal.md) zu ziehen. Er hat ein Aushang am Schwarzen Brett, auf dem er Gefolgsleute sucht.
 
 # Belege
 
-[S1-03-B] Session 2026-08-06 @ 01:15:45 (https://www.youtube.com/watch?v=0HyPHao8s_k)
+[S1-03-B] Session 2026-08-06 @ 01:13:29 (https://www.youtube.com/watch?v=0HyPHao8s_k)

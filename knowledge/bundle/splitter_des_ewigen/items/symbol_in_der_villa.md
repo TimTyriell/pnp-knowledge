@@ -1,8 +1,8 @@
 ---
 type: Item
 title: Symbol in der Villa
-description: Auf dem Boden der Eingangshalle der Villa entdeckte Dodo ein unbekanntes
-  Symbol. Es handelte sich um eine Art Zeichen, dessen Bedeutung wed…
+description: Ein Symbol, das Dante auf dem Boden der Villa entdeckt. Niemand in der
+  Gruppe kann es zuordnen. Esterossa versucht, sich zu erinnern, ob si…
 tags:
 - items
 timestamp: '2026-05-06T00:00:00Z'
@@ -12,8 +12,8 @@ aliases:
 - Symbol
 ---
 
-Auf dem Boden der Eingangshalle der [Villa](/locations/villa.md) entdeckte [Dodo](/characters/dodo.md) ein unbekanntes Symbol. Es handelte sich um eine Art Zeichen, dessen Bedeutung weder er noch [Esterossa](/characters/esterossa.md) bestimmen konnte. Die Natur und der Zweck des Symbols blieben vorerst im Dunkeln.
+Ein Symbol, das [Dante](/characters/dante.md) auf dem Boden der [Villa](/locations/villa.md) entdeckt. Niemand in der Gruppe kann es zuordnen. [Esterossa](/characters/esterossa.md) versucht, sich zu erinnern, ob sie es schon einmal gesehen hat.
 
 # Belege
 
-[P-48] Session 2026-05-06 @ 00:23:33 (https://www.youtube.com/watch?v=MB4quhDWsQE)
+[P-48] Session 2026-05-06 @ 00:23:19 (https://www.youtube.com/watch?v=MB4quhDWsQE)

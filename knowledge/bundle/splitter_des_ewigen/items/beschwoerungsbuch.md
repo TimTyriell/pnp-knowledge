@@ -1,8 +1,8 @@
 ---
 type: Item
 title: Beschwörungsbuch
-description: Das Buch des Kultistenmagiers, aus dem er die Ghule beschwor und das
-  von der Gruppe erbeutet wird.
+description: Ein Buch, das die Kultisten bei sich tragen. Es enthält Anweisungen zur
+  Umwidmung einer Kirche und ist in der Sprache der alten Götter gesc…
 tags:
 - items
 timestamp: '2025-09-02T00:00:00Z'
@@ -10,8 +10,8 @@ id: ITEM_BESCHWOERUNGSBUCH
 subtype: Schriftstück
 ---
 
-Das Buch des Kultistenmagiers, aus dem er die Ghule beschwor und das von der Gruppe erbeutet wird.
+Ein Buch, das die [Kultisten](/factions/kultisten.md) bei sich tragen. Es enthält Anweisungen zur Umwidmung einer Kirche und ist in der Sprache der alten Götter geschrieben.
 
 # Belege
 
-[P-19] Session 2025-09-02 @ 00:52:48 (https://www.youtube.com/watch?v=TLZOH7TlGhk)
+[P-19] Session 2025-09-02 @ 00:58:04 (https://www.youtube.com/watch?v=TLZOH7TlGhk)

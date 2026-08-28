@@ -1,29 +1,27 @@
 ---
 type: Faction
 title: Die Gefährten von Rotunas
-description: Die Gefährten von Rotunas sind eine lose zusammengeschlossene Heldengruppe,
-  die im Namen des Riesen Rotunas handelt. Der Name wurde ihnen e…
+description: Die Gefährten von Rotunas sind eine Gruppe, die als Team in der Arena
+  antritt. Vom Ansager werden sie als „Rotunas Bande“ angekündigt. Der…
 tags:
 - factions
-timestamp: '2025-09-06T00:00:00Z'
+timestamp: '2025-10-21T00:00:00Z'
 id: FACTION_DIE_GEFAEHRTEN_VON_ROTUNAS
 subtype: Bande
+aliases:
+- Rotunas Bande
 ---
 
-# Die Gefährten von Rotunas
+Die **Gefährten von Rotunas** sind eine Gruppe, die als Team in der Arena antritt. Vom Ansager werden sie als **„Rotunas Bande“** angekündigt. Der Gruppenname verweist auf [Rotunas](/characters/rotunas.md), einen Riesen (Klasse Giant im Daggerheart-Regelwerk).
 
-Die **Gefährten von Rotunas** sind eine lose zusammengeschlossene Heldengruppe, die im Namen des Riesen **Rotunas** handelt. Der Name wurde ihnen erstmals von dem Schmied **Vasul** verliehen, der die Gruppe damit als geschlossene Einheit anerkennt und ihren gemeinsamen Auftrag würdigt. Die Gefährten treffen Entscheidungen im Konsens und verfolgen Ziele, die dem Wohl der Region dienen, auch wenn sie dabei riskante oder unkonventionelle Wege gehen.
+## Arena-Auftritte
 
-## Rolle und Handlungen
+Bislang ist nur ein einziger Auftritt belegt: Die Gruppe wird vom Ansager als „Rotunas Bande“ bezeichnet und tritt als geschlossenes Team in der Arena an. Zusammensetzung, Herkunft und weitere Einsätze sind nicht dokumentiert.
 
-Die Gefährten agieren als eigenständige, aber verbundene Einheit. Sie haben ihre Entschlüsse stets gemeinsam getroffen, etwa bei der **Jagd auf gefährliche Kreaturen** in der Umgebung von Rotunas oder bei der Ablehnung eines ominösen **Seelenvertrags**, der ihnen angeboten wurde. Vasul selbst betont ihre Geschlossenheit und spricht sie direkt als „Gefährten von Rotunas“ an, was darauf hindeutet, dass ihr Ruf als zusammenhaltende Truppe bereits bekannt ist.
+## Verbindung zu Rotunas
 
-## Beziehungen
-
-Die Gruppe steht in enger Verbindung zu **Vasul**, der ihr den Namen gab und sie als Einheit anspricht. Ihr Namensgeber **Rotunas** selbst ist ein **Riese** (Giant) – entgegen gelegentlicher Fehlannahmen, die ihn als Elf bezeichneten. Die genaue Art der Beziehung zu Rotunas (etwa ob er die Gruppe beauftragt hat oder sie ihn lediglich als Symbolfigur verehrt) ist aus den vorliegenden Belegen nicht näher bekannt.
+Die Gruppe ist nach Rotunas benannt, einem Riesen. Ob Rotunas selbst Teil der Gruppe ist, sie anführt oder nur als Namensgeber dient, geht aus den vorhandenen Quellen nicht hervor.
 
 # Belege
 
-[P-20] Session 2025-09-06, 00:02:44 – Vasul adressiert die Gruppe als „Gefährten von Rotunas“ und würdigt ihr gemeinsames Handeln bei der Jagd auf Kreaturen und der Ablehnung des Seelenvertrags. [YouTube](https://www.youtube.com/watch?v=vo1xnyLQDJk)
-
-2. Kanon-Entscheidung: Rotunas hat die Klasse Giant (Riese) – keine Elf. (Quelle: Kanon_Entscheidungen.md)
+[P-27] Session 2025-10-21, 00:49:40 – https://www.youtube.com/watch?v=sxFhbtwoefA

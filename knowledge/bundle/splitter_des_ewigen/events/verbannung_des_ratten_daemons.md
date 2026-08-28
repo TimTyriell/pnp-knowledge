@@ -1,17 +1,17 @@
 ---
 type: Event
 title: Verbannung des Ratten-Dämons
-description: Lindo Laut nutzt Vasuls göttliche Kraft und einen Verbannungszauber,
-  um den aufdringlichen Ratten-Dämon aufzulösen, bevor er seinen Vertrag…
+description: Lindo Laut verbannnt den Ratten-Dämon mit einem Bann-Zauber, um Zeit
+  zu gewinnen.
 tags:
 - events
 timestamp: '2025-09-06T00:00:00Z'
 id: EVENT_VERBANNUNG_DES_RATTEN_DAEMONS
-subtype: Ritual
+subtype: Kampf
 ---
 
-[Lindo Laut](/characters/lindo_laut.md) nutzt [Vasuls](/deities/vharzul.md) göttliche Kraft und einen Verbannungszauber, um den aufdringlichen Ratten-Dämon aufzulösen, bevor er seinen Vertrag einfordern kann. Der Dämon erscheint später jedoch wieder.
+[Lindo Laut](/characters/lindo_laut.md) verbannnt den [Ratten-Dämon](/npcs/ratten_daemon.md) mit einem Bann-Zauber, um Zeit zu gewinnen.
 
 # Belege
 
-[P-20] Session 2025-09-06 @ 00:19:42 (https://www.youtube.com/watch?v=vo1xnyLQDJk)
+[P-20] Session 2025-09-06 @ 00:20:00 (https://www.youtube.com/watch?v=vo1xnyLQDJk)

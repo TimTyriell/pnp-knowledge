@@ -1,8 +1,8 @@
 ---
 type: Event
 title: Verhandlung mit Harl
-description: Die Verhandlung mit dem Banditenchef Harl (auch *Hal* genannt) war das
-  zentrale Ereignis, bei dem die Rotunas-Freunde die Unterbringung ein…
+description: Die Verhandlung mit Harl war eine Gruppenverhandlung der Rotunas-Freunde
+  mit Harl um die Unterbringung von Flüchtlingen beziehungsweise Dor…
 tags:
 - events
 timestamp: '2025-09-30T00:00:00Z'
@@ -12,25 +12,22 @@ aliases:
 - Verhandlung mit Hal
 ---
 
-### Verhandlung mit Harl
+# Verhandlung mit Harl
 
-Die Verhandlung mit dem Banditenchef **Harl** (auch *Hal* genannt) war das zentrale Ereignis, bei dem die Rotunas-Freunde die Unterbringung einer Gruppe Flüchtlinge auf Harls Territorium aushandelten. **Lindo Laut** führte im Namen der gesamten Gruppe die Gespräche. Nach einem harten Feilschen, einer vorgezeigten Drohkulisse mit Bogenschützen und dem Einsatz von Lindos Gedankenlesefähigkeit einigte man sich auf eine Zahlung von **einer Truhe Gold** (entspricht **zehn Säcken Gold**) sowie die Zusicherung von Handwerkerdiensten durch die Flüchtlinge. Lindo leistete eine Anzahlung von zwei Säcken Gold.
+Die **Verhandlung mit Harl** war eine Gruppenverhandlung der [Rotunas-Freunde](/factions/rotunas_freunde.md) mit [Harl](/npcs/hal_harl.md) um die Unterbringung von Flüchtlingen beziehungsweise Dorfbewohnern. Harl erklärte sich grundsätzlich bereit, die Aufnahme zu ermöglichen, verlangte dafür jedoch Gold sowie ein Gespräch mit dem Anführer der Flüchtlinge. Nach einer angespannten Konfrontation einigte man sich auf eine Truhe Gold, die zehn Säcken Gold entspricht.
 
-#### Verlauf
+## Verlauf
 
-Die Verhandlung begann mit einer hohen Forderung Harls von sechs bis acht Truhen Gold. Die Gruppe konterte mit der Drohung, ihre Bogenschützen in Stellung zu bringen, um Druck aufzubauen. Harl lenkte daraufhin ein, nachdem Lindo **Handwerkerdienste** der Flüchtlinge als zusätzliches Angebot einbrachte – ein Zugeständnis, das den Preis drastisch senkte. Während des Wortwechsels setzte Lindo seine Gedankenlesefähigkeit ein, um Harls wahre Beweggründe zu durchschauen und so den Deal zu sichern, ohne auf versteckte Fallstricke hereinzufallen.
+Die Verhandlung wurde von den Rotunas-Freunden als Gruppe geführt, wobei [Lindo Laut](/characters/lindo_laut.md) das Wort für sie ergriff. Harl stellte seine Zustimmung unter Bedingungen: Zum einen verlangte er eine Zahlung in Gold, zum anderen ein Gespräch mit dem Anführer der Flüchtlinge. Die Stimmung während der Verhandlung war angespannt, und es kam zu einer Konfrontation, bevor man sich schließlich auf einen Preis einigte: eine Truhe Gold beziehungsweise zehn Säcke Gold.
 
-#### Ergebnis
+## Beteiligte
 
-Die Parteien einigten sich auf folgende Gegenleistungen:
-- **Zahlung:** Eine Truhe Gold (von der Gruppe als zehn Säcke Gold geführt).
-- **Dienstleistung:** Die Flüchtlinge verrichteten Handwerksarbeiten für Harls Lager.
-- **Anzahlung:** Lindo übergab sofort zwei Säcke Gold als Anzahlung.
-
-Im Gegenzug durften die Flüchtlinge auf Harls Gebiet campieren und wurden vorläufig geduldet.
+- [Harl](/npcs/hal_harl.md) – Verhandlungspartner der Gruppe.
+- [Lindo Laut](/characters/lindo_laut.md) – vertrat die Rotunas-Freunde in der Verhandlung.
+- Die Rotunas-Freunde – verhandelten als Gruppe.
+- Die Flüchtlinge beziehungsweise Dorfbewohner – ihre Unterbringung war der Gegenstand der Verhandlung; ihr Anführer wurde von Harl als Gesprächspartner gefordert.
 
 # Belege
 
-[P-23] Session 2025-09-23 @ 01:10:41 (https://www.youtube.com/watch?v=DGzfqVigS0g) – Lindo Laut handelt mit Harl den Preis aus; Reduzierung von 6–8 auf 1 Truhe Gold; Anzahlung von 2 Säcken.
-[P-24] Session 2025-09-30 @ 01:28:41 (https://www.youtube.com/watch?v=bUT7Mc2hjUY) – Gruppenverhandlung; Drohkulisse mit Bogenschützen; Lindo setzt Gedankenlesen ein; Einigung auf 10 Säcke Gold.
-3. Kanon_Entscheidungen.md – Festlegung: Eine einzige Verhandlung; 1 Truhe Gold = 10 Säcke Gold; Lindo als Vertreter der Gruppe.
+[P-23] Session 2025-09-23, 01:10:12 – https://www.youtube.com/watch?v=DGzfqVigS0g
+[P-24] Session 2025-09-30, 01:14:56 – https://www.youtube.com/watch?v=bUT7Mc2hjUY

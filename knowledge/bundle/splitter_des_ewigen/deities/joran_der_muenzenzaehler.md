@@ -1,48 +1,58 @@
 ---
 type: Deity
 title: Joran der Münzenzähler
-description: Joran der Münzenzähler ist ein Gott, der mit Reichtum und Handel assoziiert
-  wird. Sein Titel „der Münzenzähler“ unterstreicht eine buchhalt…
+description: Joran der Münzenzähler ist ein neuer Gott der Welt, die erst seit zwölf
+  Jahren besteht. Er gehört zu den neuen Göttern, die nach der Verban…
 tags:
 - deities
-timestamp: '2026-06-04T00:00:00Z'
+timestamp: '2026-07-10T00:00:00Z'
 id: DEITY_JORAN_DER_MUENZENZAEHLER
 subtype: Neuer Gott
+aliases:
+- Joran, der Münzenzähler
 ---
 
 ## Überblick
 
-Joran der Münzenzähler ist ein Gott, der mit Reichtum und Handel assoziiert wird.  
-Sein Titel „der Münzenzähler“ unterstreicht eine buchhalterische, auf Wohlstand und Austausch ausgerichtete Domäne.  
-Ihm ist eine Statue in [Kleinringtal](/locations/ringtal.md) geweiht.
+Joran der Münzenzähler ist ein neuer Gott der Welt, die erst seit zwölf Jahren besteht. Er gehört zu den neuen Göttern, die nach der Verbannung der alten Götter versuchen, das Gleichgewicht aufrechtzuerhalten. Über ihn ist nicht allzu viel bekannt; er offenbart sich nur denen, die es verdienen. Sein Zeichen findet sich an einer Statue in Kleinringtal, die dort aufgestellt ist und von seiner Paladin Adelia gehütet wird. Joran ist der Patron und Beschützer Adelias, die in seinem Namen handelt.
 
 ## Rolle in der Kampagne
 
-In der bislang einzigen belegten Szene (Session vom 04.06.2026) tritt Joran vermittelt durch seine Seraphin [Adelia](/npcs/adeliga_der_eulenseraph.md) in Erscheinung. Adelia verleiht [Sange](/characters/sange.md) auf dessen Bitten hin Jorans Segen. Sange spürt daraufhin eine neue, wohltuende Energie und erhält einen „Timer“ von Joran – ein göttliches Zeichen oder Instrument, dessen Natur und Funktion noch nicht offengelegt sind.
+Joran tritt in der Kampagne zunächst als Patron der Paladin Adelia in Erscheinung, die in Kleinringtal an seiner Statue wacht. Die Heldin Saris entdeckt die Statue und beginnt, sie wissenschaftlich zu dokumentieren – sie hat ein Notizbuch mit Zeichnungen, Inschriften und Schätzungen zur Größe der Statue angefertigt. Beim Gespräch mit Adelia erfährt Saris von Joran und seiner Rolle als neuer Gott.
+
+Die entscheidende Wendung kommt, als Joran den Helden Sange segnet. Dieser Segen löst einen Timer aus und verändert Sanges Blutmagie grundlegend: Die zuvor turbulente, stürmische Magie wird ruhiger, und in dem roten Chaos der Blutmagie erscheint ein kleiner Funke Licht, der dem Chaos entgegenwirkt. Sanges Gefühlslage verändert sich dadurch ebenfalls. Die Heldin Kaya reagiert misstrauisch auf diesen neuen Gott.
 
 ## Wichtige Merkmale
 
-- **Domäne:** Reichtum und Handel. Die Quellen beschreiben ihn als einen „neuen Gott“, der mit diesen Konzepten verbunden ist.
-- **Statue in Kleinringtal:** Ein Standbild zu seinen Ehren markiert einen sichtbaren Ort der Verehrung. Über weitere Kultstätten ist nichts bekannt.
-- **Segen und „Timer“:** Der von der Seraphin verliehene Segen Jorans vermittelt eine wohltuende Energie. Mit dem Segen erhält Sange einen „Timer“ – ein bislang nicht konkretisiertes Element, das von Joran stammt. Ob es sich um einen Zähler, eine Frist oder eine andere göttliche Markierung handelt, bleibt offen.
+Joran wird als Münzenzähler bezeichnet, was auf eine Verbindung zu Handel, Reichtum oder Abrechnung hindeuten könnte – genauere Informationen darüber liegen nicht vor. Er ist ein neuer Gott, der erst nach der Verbannung der alten Götter in Erscheinung getreten ist. Die neuen Götter versuchen inständig, das Gleichgewicht aufrechtzuerhalten, und sie reden mit denen, die es verdienen.
+
+Seine Gnade zeigt sich auf sichtbare Weise: Als Adelia über ihren Gott spricht, leuchten ihre Augen ganz leicht auf, wie mit einem goldenen Film – ein kurzes, magisches Aufleuchten, das wie ein Zauber wirkt. Saris bemerkt dieses Phänomen und fragt nach, ob es Magie sei; Adelia bestätigt, dass es die Gnade ihres Gottes ist.
 
 ## Beziehungen und Verbindungen
 
-- **[Adelia](/npcs/adeliga_der_eulenseraph.md)** – dient Joran als Seraphin und kann seinen Segen an Sterbliche weitergeben.
-- **[Sange](/characters/sange.md)** – empfing Jorans Segen durch Adelia und erhielt den Timer; erlebt die Energie als neu und wohltuend.
-- **[Kleinringtal](/locations/ringtal.md)** – beherbergt die Statue Jorans, den einzig bekannten physischen Bezugspunkt des Gottes in der Welt.
+**Adelia:** Sie ist die Paladin Jorans und handelt in seinem Namen. Sie wacht an seiner Statue in Kleinringtal, auch spät in der Nacht. Sie bezeichnet Joran als ihre Gottheit, ihren Patron und Beschützer. Sie ist eine Inferni, wie aus der Begrüßung Saris' hervorgeht.
+
+**Sange:** Er wird von Joran gesegnet. Der Segen beruhigt seine Blutmagie und verändert seine Gefühlslage. Sange ist seitdem im Gefolge des neuen Gottes.
+
+**Kaya:** Sie ist misstrauisch gegenüber Joran und diesem neuen Gott.
+
+**Saris:** Sie zeigt wissenschaftliches Interesse an Jorans Statue und dokumentiert sie in einem Notizbuch. Sie fragt Adelia nach der Gottheit aus.
 
 ## Chronologie
 
-- **Session 2026-06-04** – Adelia segnet Sange im Namen Jorans; Sange vernimmt eine wohltuende Energie und empfängt einen Timer von Joran.
+**Session 2026-06-04:** Saris ist nachts in Kleinringtal an der Statue, als Adelia sie anspricht. Saris zeigt Adelia ihr Notizbuch mit ihren Aufzeichnungen über die Statue. Adelia liest die Inschrift vor: „Joran, der Münzenzähler." Sie erklärt, dass Joran ihre Gottheit, ihr Patron und Beschützer ist, und dass sie in seinem Namen handelt. Auf Saris' Nachfrage erzählt Adelia, dass die Welt erst seit zwölf Jahren besteht, seit der Verbannung der alten Götter, und dass die neuen Götter das Gleichgewicht aufrechtzuerhalten versuchen. Sie betont, dass die Götter mit denen reden, die es verdienen. Beim Sprechen leuchten Adelias Augen kurz golden auf – die Gnade ihres Gottes, wie sie erklärt. Sange empfängt in dieser Session den Segen Jorans, was einen Timer auslöst.
+
+**Session 2026-07-10:** Sange reflektiert über die Veränderungen seit dem Segen: Seine Blutmagie, die zuvor turbulent und stürmisch war, ist ruhiger geworden. In dem roten Chaos der Blutmagie ist nun ein kleiner Funke Licht, der dem Chaos entgegenwirkt. Auch seine Gefühlslage hat sich verändert. Kaya äußert Misstrauen gegenüber diesem neuen Gott.
 
 ## Offene Fragen
 
-- Was genau ist der „Timer“ Jorans? Welche Wirkung, Bedeutung oder Dauer hat er?
-- Handelt es sich bei Joran tatsächlich um einen „neuen Gott“ und wie ist er in das bestehende Pantheon einzuordnen?
-- Gibt es außer der Statue in Kleinringtal weitere Zentren seiner Verehrung oder Anhängerschaft?
-- Welche Verbindung besteht zu anderen Göttern, insbesondere zu jenen, die Reichtum, Handel oder Zeit kontrollieren?
+- Was genau bedeutet der Beiname „Münzenzähler"? Welche Domäne oder welches Prinzip verkörpert Joran?
+- Warum hat Joran ausgerechnet Sange gesegnet? Was ist der Zweck dieses Segens?
+- Was löst der Timer aus, der durch Sanges Segen gestartet wurde?
+- Welche Rolle spielt Joran im größeren Gefüge der neuen Götter, die das Gleichgewicht aufrechterhalten?
+- Warum ist Kaya misstrauisch gegenüber Joran – gibt es dafür einen konkreten Grund oder ist es allgemeines Misstrauen gegenüber neuen Göttern?
 
 ## Belege
 
-[P-52] Session 2026-06-04 @ [01:30:08](https://www.youtube.com/watch?v=EGNh8O7pE5Q)
+[P-52] Session 2026-06-04 @ 01:19:18 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
+[S1-01-B] Session 2026-07-10 @ 00:06:19 (https://www.youtube.com/watch?v=H-eHSlfxUAg)

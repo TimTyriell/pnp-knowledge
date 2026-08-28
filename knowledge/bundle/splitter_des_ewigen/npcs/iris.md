@@ -1,16 +1,16 @@
 ---
 type: NPC
 title: Iris
-description: Iris ist eine Bardame in der Taverne, die Lunara zunächst reserviert
-  bedient und das starke Getränk Kornklatscher serviert. Sie sorgt sich…
+description: Iris ist eine Barkeeperin in der Taverne. Sie wird erwähnt, hat aber
+  keine aktive Rolle in der Session.
 tags:
 - npcs
 timestamp: '2025-11-18T00:00:00Z'
 id: NPC_IRIS
 ---
 
-Iris ist eine Bardame in der [Taverne](/locations/taverne.md), die Lunara zunächst reserviert bedient und das starke Getränk [Kornklatscher](/items/kornklatscher.md) serviert. Sie sorgt sich um Lunas Wohlbefinden und reagiert amüsiert auf [Nyrellas](/characters/nyrella.md) Trinkfestigkeit.
+Iris ist eine Barkeeperin in der [Taverne](/locations/taverne.md). Sie wird erwähnt, hat aber keine aktive Rolle in der Session.
 
 # Belege
 
-[P-30] Session 2025-11-18 @ 00:03:09 (https://www.youtube.com/watch?v=w__ahowb9p0)
+[P-30] Session 2025-11-18 @ 00:03:17 (https://www.youtube.com/watch?v=w__ahowb9p0)

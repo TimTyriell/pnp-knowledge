@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Adeliga (Eulen-Seraph)
-description: Adeliga ist eine Seraphin in Gestalt einer menschengroßen Eule und Paladin
-  des neuen Gottes Joran der Münzenzähler. Sie pilgert in seinem N…
+description: Adeliga ist ein Eulen-Seraph und Paladin des neuen Gottes Joran der Münzenzähler.
+  Sie ist eine etwa zwei Meter große, geflügelte Gestalt, d…
 tags:
 - npcs
 timestamp: '2026-08-06T00:00:00Z'
@@ -11,21 +11,24 @@ aliases:
 - Adelia
 ---
 
-Adeliga ist eine Seraphin in Gestalt einer menschengroßen Eule und Paladin des neuen Gottes [Joran der Münzenzähler](/deities/joran_der_muenzenzaehler.md). Sie pilgert in seinem Namen und begegnete der Gruppe im Ringtal. Nicht zu verwechseln ist sie mit ihrer Namensvetterin, der Besitzerin des [Hauses des Löwen](/locations/haus_des_loewen.md) in [Willauch](/locations/willauch.md); die menschliche Geschäftsfrau hat mit dem himmlischen Wesen nichts gemein.
+Adeliga ist ein Eulen-Seraph und Paladin des neuen Gottes [Joran der Münzenzähler](/deities/joran_der_muenzenzaehler.md). Sie ist eine etwa zwei Meter große, geflügelte Gestalt, die zum Leben erwachte und als Seraph der neuen Götter pilgert. Im Ringtal begegnete sie der Gruppe und bot ihr den Segen Jorans an. Sie wird als weise und mystisch beschrieben; ihre Augen leuchten golden, wenn sie von ihrem Gott spricht. In der Kampagnenchronik taucht derselbe Name noch einmal für eine Menschenfrau in Willauch auf; mit dieser hat der Eulen-Seraph jedoch nichts gemein.
 
 ## Erscheinung und Wesen
 
-Adeliga tritt als menschengroße Eule mit paladinartiger Erscheinung auf. Sie wirkt freundlich, ist aber in Glaubensfragen bestimmt. Während der Segenszeremonie, die sie für [Sange](/characters/sange.md) durchführt, leuchten ihre Augen golden.
+Adeliga hat die Gestalt einer großen Eule: Sie ist ungefähr zwei Meter groß und besitzt ein prächtiges Federkleid mit schönen Flügeln. Sie wirkt ruhig, weise und mystisch, und ihre golden leuchtenden Augen verraten ihre Nähe zu ihrer Gottheit. Sie wird ausdrücklich als Paladin bezeichnet, also als geweihte Kämpferin, auch wenn die überlieferten Begegnungen sie vor allem beim Gebet und beim Erteilen von Segen zeigen. Sie pilgert als Seraph der neuen Götter – ein Hinweis darauf, dass sie nicht nur eine Priesterin, sondern ein übernatürliches Wesen von höherem Rang ist. Die Überlieferung beschreibt sie zugleich als Dienerin oder Priesterin Jorans.
 
-## Glaube und Auftrag
-
-Adeliga dient Joran dem Münzenzähler, einem der neuen Götter. Ihr Pilgerweg führt sie in seinem Namen von Ort zu Ort; sie erzählt, dass die alten Götter vor zwölf Jahren verbannt wurden, und bietet den Segen Jorans an. Später tritt sie als Priesterin an einer Statue Jorans auf.
+Ihre Bindung an Joran, den Münzenzähler, ist eng: Sie betet vor einer Statue dieses Gottes und spricht in seinem Namen.
 
 ## Begegnungen mit der Gruppe
 
-Bei der ersten Begegnung im Ringtal vollzieht Adeliga in Gegenwart von [Saris](/characters/saris.md) und den anderen eine Zeremonie mit Sange: Er erhält dabei einen Timer und spürt eine göttliche Präsenz. Bei einer späteren Begegnung an einer Statue Jorans segnet sie Sange erneut mit einem Gebet und gewährt ihm, seinen nächsten Rally-Wurf als automatischen Crit zu behandeln.
+Beim ersten Zusammentreffen betet Adeliga vor einer Statue Jorans. Sie bietet der Gruppe den Segen Jorans an. [Sange](/characters/sange.md) nimmt den Segen an, während [Kaya](/characters/kaya.md) und [Saris](/characters/saris.md) ablehnen. In einer späteren Begegnung erscheint sie erneut an einer Statue Jorans und gewährt Sange einen Segen. Die genauen Umstände dieser zweiten Begegnung sind nicht näher überliefert.
+
+## Abgrenzung zur Namensvetterin
+
+Der Name Adeliga begegnet in der Kampagne an zwei Stellen: Neben dem Eulen-Seraph gibt es eine menschliche Geschäftsfrau gleichen Namens, die in der Stadt Willauch das Haus des Löwen führt. Sie wird als elegant und kühl beschrieben und hat keinerlei übernatürliche Merkmale. Die beiden Frauen sind nicht identisch und stehen in keinem Zusammenhang.
 
 # Belege
 
-[P-52] Session 2026-06-04, 01:23:55 – [YouTube](https://www.youtube.com/watch?v=EGNh8O7pE5Q). Erste Begegnung im Ringtal: Eulen-Seraphin, Pilgerin Jorans, Verbannung der alten Götter, Segenszeremonie mit Sange.
-[S1-03-B] Session 2026-08-06, 01:11:31 – [YouTube](https://www.youtube.com/watch?v=0HyPHao8s_k). Begegnung als Priesterin an der Statue Jorans: Gebet und Segen für Sange, automatischer Crit auf seinen nächsten Rally-Wurf.
+[P-52] Session 2026-06-04, 01:18:51 – https://www.youtube.com/watch?v=EGNh8O7pE5Q
+[S1-03-B] Session 2026-08-06, 01:11:31 – https://www.youtube.com/watch?v=0HyPHao8s_k
+3. Kanon_Entscheidungen.md (Spielleitungs-Festlegung)

@@ -1,15 +1,15 @@
 ---
 type: NPC
 title: Anton Großwurz
-description: Ein Magier und Heiler in der ersten Taverne, der sich als Heiler der
-  Stadt anbietet. Er schläfert den aufgebrachten Hermann mit einem Zaube…
+description: Anton Großwurz ist der Heiler der Stadt Sanddorn. Er schläfert einen
+  betrunkenen Gast ein, der Esterossa bedroht, und stellt sich als Heile…
 tags:
 - npcs
 timestamp: '2025-04-30T00:00:00Z'
 id: NPC_ANTON_GROSSWURZ
 ---
 
-Ein Magier und Heiler in der ersten [Taverne](/locations/taverne.md), der sich als Heiler der Stadt anbietet. Er schläfert den aufgebrachten [Hermann](/npcs/hermann.md) mit einem Zauber ein und gibt der Gruppe zu verstehen, dass in Sanddorn Diebstahl unter der Hand toleriert wird, solange man nicht erwischt wird. Er beobachtet amüsiert, wie [Cookie](/characters/cookie.md) Essen stiehlt.
+Anton Großwurz ist der Heiler der Stadt [Sanddorn](/locations/sanddorn.md). Er schläfert einen betrunkenen Gast ein, der [Esterossa](/characters/esterossa.md) bedroht, und stellt sich als Heiler vor, der gegen Bezahlung hilft.
 
 # Belege
 

@@ -1,8 +1,8 @@
 ---
 type: Location
 title: Pass
-description: Der Gebirgspass, den die Gruppe verteidigte. Esterossa verengte ihn mit
-  einer Steinwand, und Dodo blockierte die Lücke. Hier tobte die Schl…
+description: Der Pass ist der Ort, an dem die Gruppe die Untoten bekämpft. Er ist
+  durch Felsen und Bäume gekennzeichnet.
 tags:
 - locations
 timestamp: '2025-09-30T00:00:00Z'
@@ -10,8 +10,8 @@ id: LOC_PASS
 subtype: Wildnis
 ---
 
-Der [Gebirgspass](/locations/gebirgspass.md), den die Gruppe verteidigte. [Esterossa](/characters/esterossa.md) verengte ihn mit einer Steinwand, und [Dodo](/characters/dodo.md) blockierte die Lücke. Hier tobte die Schlacht gegen die Untoten, und nach dem Kampf wurde ein umgestürzter Baum von den Riesen (Dodo und möglicherweise [Rotunas](/characters/rotunas.md)) beiseite geräumt.
+Der Pass ist der Ort, an dem die Gruppe die Untoten bekämpft. Er ist durch Felsen und Bäume gekennzeichnet.
 
 # Belege
 
-[P-24] Session 2025-09-30 @ 00:01:30 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[P-24] Session 2025-09-30 @ 00:01:09 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)

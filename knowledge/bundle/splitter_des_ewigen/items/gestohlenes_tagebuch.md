@@ -1,8 +1,8 @@
 ---
 type: Item
 title: Gestohlenes Tagebuch
-description: Ein von Cookie und Dodo gestohlenes Buch. Cookie vermutet, dass es der
-  gesuchte Gegenstand sein könnte, da die Untoten von zwei Personen un…
+description: Das Tagebuch wurde von Cookie und Dodo aus einem Grabhügel gestohlen.
+  Die Untoten suchen danach, und die Gruppe vermutet, dass es der gesuc…
 tags:
 - items
 timestamp: '2025-09-30T00:00:00Z'
@@ -12,8 +12,8 @@ aliases:
 - Tagebuch
 ---
 
-Ein von [Cookie](/characters/cookie.md) und [Dodo](/characters/dodo.md) gestohlenes Buch. Cookie vermutet, dass es der gesuchte Gegenstand sein könnte, da die Untoten von zwei Personen und einem Item sprachen – passend zu Cookie und Dodo und dem Tagebuch.
+[Das Tagebuch](/items/das_tagebuch.md) wurde von [Cookie](/characters/cookie.md) und [Dodo](/characters/dodo.md) aus einem Grabhügel gestohlen. [Die Untoten](/factions/die_untoten.md) suchen danach, und die Gruppe vermutet, dass es der gesuchte Gegenstand ist.
 
 # Belege
 
-[P-24] Session 2025-09-30 @ 00:56:23 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[P-24] Session 2025-09-30 @ 00:56:54 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)

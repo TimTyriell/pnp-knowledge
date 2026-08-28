@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Kronos
-description: Kronos war ein Schamane, der zur meistgesuchtesten Person der Nördlichen
-  Schneise wurde. Auf seinen Kopf – lebendig – waren vier Truhen Gol…
+description: Kronos war ein Schamane aus der nördlichen Schneise und galt als meistgesuchter
+  Verbrecher der Region. Zum Zeitpunkt der Kampagne ist er to…
 tags:
 - npcs
 timestamp: '2026-03-03T00:00:00Z'
@@ -11,22 +11,17 @@ id: NPC_KRONOS
 
 # Kronos
 
-Kronos war ein Schamane, der zur meistgesuchtesten Person der **Nördlichen Schneise** wurde. Auf seinen Kopf – lebendig – waren vier Truhen Gold als Kopfgeld ausgesetzt. Er hatte in einer früheren Begegnung die Seele von **Lindo Laut** eingefangen und galt als möglicherweise in das Verschwinden von Menschen im Süden sowie die **Splitterwelt** verwickelt. Die Gruppe fand seinen kopflosen, verwesenden Leichnam und konnte mit ihm als Beweis eine üppige Belohnung einstreichen.
+Kronos war ein Schamane aus der nördlichen Schneise und galt als meistgesuchter Verbrecher der Region. Zum Zeitpunkt der Kampagne ist er tot, seine Seele befindet sich jedoch in der Gewalt von [Lindo Laut](/characters/lindo_laut.md). Die Gruppe kam mit ihm in Berührung, als sie sein Kopfgeld einlöste; zuvor hatte [Nox](/npcs/nox.md) vorgeschlagen, die gefangene Seele zu befragen.
 
-## Kopfgeld und Verbrechen
+## Schamane und Seele
 
-Ein Fahndungsplakat in der **Bresca-Gilde** zeigte Kronos’ Bild und versprach vier Truhen Gold für seine lebendige Ergreifung.[P-22] Er wurde als der meistgesuchteste Verbrecher der Nördlichen Schneise beschrieben.[P-39] Die genauen Vergehen, die zu diesem Ruf führten, sind nicht bekannt, doch sein Wirken als Schamane und die Gefangennahme einer Seele deuten auf okkulte oder machtpolitische Delikte hin.
+In der ersten Sitzung schlug Nox vor, Kronos zu befragen. Als Schamane, dessen Seele von Lindo Laut gefangen worden war, könnte er über die südlichen Lande und die Splitterwelt Bescheid wissen. Die Gruppe stufte die Befragung jedoch als riskant ein. Weitere Einzelheiten zu seiner Schamanenkunst oder den Umständen der Gefangennahme sind nicht überliefert.
 
-## Verbindung zu Lindo Laut und die Splitterwelt
+## Kopfgeld und Leichnam
 
-In einer vorherigen Begegnung hatte Kronos die Seele von **Lindo Laut** gefangen.[P-37] **Nox** schlug vor, Kronos zu befragen, da er möglicherweise über die Splitterwelt und das Verschwinden von Leuten im Süden Bescheid wusste.[P-37] Ob Kronos tatsächlich mit diesen Phänomenen in Verbindung stand, konnte nicht mehr geklärt werden, da die Gruppe ihn nicht mehr lebend antraf.
-
-## Tod und Folgen
-
-Die Gruppe trug Kronos’ verwesenden, kopflosen Körper über mehrere Wochen in einer Taschendimension mit sich.[P-39] Im **Haus des Löwen** wurde der Leichnam als Beweis vorgelegt. **Adeliga** betrachtete den Fund mit Skepsis und Abscheu, akzeptierte ihn jedoch.[P-39] Der Tod des Schamanen brachte den Helden eine üppige Belohnung und die Gelegenheit, sich als Kopfgeldjäger einen Namen zu machen.[P-39] Wie Kronos zu Tode kam und wer ihm den Kopf abtrennte, ist nicht überliefert.
+Bei der Übergabe des Kopfgolds im Haus des Löwen übergab die Gruppe den Leichnam des toten Schamanen. Die Dame des Hauses bemerkte, dass der Kopf fehlte und der Körper bereits zu verwesen begonnen hatte. Kronos wurde dabei als meistgesuchter Verbrecher der nördlichen Schneise bezeichnet. Was mit dem Kopf geschah, lassen die Belege offen.
 
 # Belege
 
-[P-22] Session 2025-09-17 @ 00:23:56 – [YouTube](https://www.youtube.com/watch?v=AhIT8dcxw2o)
-[P-37] Session 2026-02-17 @ 01:31:29 – [YouTube](https://www.youtube.com/watch?v=Z2jlzpoTWVw)
-[P-39] Session 2026-03-03 @ 00:23:47 – [YouTube](https://www.youtube.com/watch?v=BRUNuNKTeOg)
+[P-37] Session 2026-02-17 @ 01:32:46 – https://www.youtube.com/watch?v=Z2jlzpoTWVw
+[P-39] Session 2026-03-03 @ 00:23:08 – https://www.youtube.com/watch?v=BRUNuNKTeOg

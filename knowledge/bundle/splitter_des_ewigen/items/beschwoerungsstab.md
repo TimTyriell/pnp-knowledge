@@ -1,8 +1,8 @@
 ---
 type: Item
 title: Beschwörungsstab
-description: Ein Stab mit der Sprache der Alten Götter, der vom Splitterwesen fallengelassen
-  wurde. Er dient dazu, Kreaturen aus anderen Reichen herbeiz…
+description: Ein Stab, der von der Splitterwelt-Kreatur hinterlassen wurde. Er kann
+  verwendet werden, um Kreaturen aus anderen Reichen zu beschwören. Li…
 tags:
 - items
 timestamp: '2025-11-25T00:00:00Z'
@@ -10,7 +10,7 @@ id: ITEM_BESCHWOERUNGSSTAB
 subtype: Artefakt
 ---
 
-Ein Stab mit der Sprache der Alten Götter, der vom Splitterwesen fallengelassen wurde. Er dient dazu, Kreaturen aus anderen Reichen herbeizurufen. Normale Wesen würden bei Berührung Verbrennungen erleiden, aber [Lindo Laut](/characters/lindo_laut.md) kann ihn gefahrlos nutzen. [Slicks](/npcs/slix_vasul.md) bestätigt, dass Lindo mit ihm besonders mächtige Wesen beschwören kann.
+Ein [Stab](/items/lindo_lauts_stab.md), der von der [Splitterwelt-Kreatur](/npcs/kreatur_in_der_splitterwelt.md) hinterlassen wurde. Er kann verwendet werden, um Kreaturen aus anderen Reichen zu beschwören. [Lindo Laut](/characters/lindo_laut.md) steckt ihn ein.
 
 # Belege
 

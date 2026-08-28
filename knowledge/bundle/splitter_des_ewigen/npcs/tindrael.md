@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Tindrael
-description: Tindrael ist ein ehemaliger Geistlicher und Grabwächter des Dorfes Brechka
-  (später Breska). Er diente lange als rechte Hand des Bürgermeist…
+description: Tindrael ist der Grabwächter und Geistliche des Dorfes Brechka (später
+  Breska genannt). Er ist eine Autoritätsperson des Dorfes, die direkt…
 tags:
 - npcs
 timestamp: '2026-03-10T00:00:00Z'
@@ -11,56 +11,44 @@ id: NPC_TINDRAEL
 
 ## Überblick
 
-Tindrael ist ein ehemaliger Geistlicher und Grabwächter des Dorfes Brechka (später Breska). Er diente lange als rechte Hand des Bürgermeisters Berthold, stieg mit diesem zum Adjutanten des Grafen auf und wurde nach der Zerstörung Breskas zu einem untoten Diener des Wesens Voras. In seiner Laufbahn begegnet er den Helden mehrfach: zuerst als vertrauensvoller Unterstützer bei der Verteidigung des Dorfes, später als Begleiter in der Bibliothek und schließlich als melancholischer Empfänger in der Unterwelt.
+Tindrael ist der Grabwächter und Geistliche des Dorfes Brechka (später Breska genannt). Er ist eine Autoritätsperson des Dorfes, die direkt nach dem Bürgermeister rangiert. Die Gruppe trifft ihn erstmals, als sie seine entlaufene Ziege Bertie zurückbringt. Tindrael ist freundlich und hilfsbereit und unterstützt die Gruppe in der Folge bei ihren Anliegen im Dorf. In späteren Ereignissen erweist er sich als einer der wenigen Überlebenden des Untergangs von Breska und dient weiterhin einer höheren Macht.
 
 ## Rolle in der Kampagne
 
-Tindrael fungiert als wiederkehrender Verbündeter, dessen Schicksal eng mit dem Aufstieg und Fall Breskas verknüpft ist. Er tritt in drei entscheidenden Momenten auf:
+Tindrael ist der erste Ansprechpartner der Gruppe im Dorf Brechka. Nachdem die Gruppe seine Ziege Bertie zurückbringt, ist er der Gruppe wohlgesonnen und vermittelt zwischen ihr und dem Bürgermeister. Er glaubt den Neuigkeiten über den bevorstehenden Goblinangriff und begleitet die Gruppe zum Bürgermeister und später zu den Bauern, um die Verteidigungsvorbereitungen zu unterstützen.
 
-- **Erstes Treffen (2025-04-09)**: Als ranghöchster Geistlicher und Grabwächter ist er nach Bürgermeister Berthold die zweithöchste Autorität. Er glaubt der Goblin-Warnung vor einer drohenden Gefahr sofort, eskortiert die Gruppe zu Berthold und hilft anschließend, die Verteidigung des Dorfes zu organisieren.
-- **Zweites Treffen (2025-06-25)**: Nach der Konsolidierung des Ortes dient Tindrael nun als Adjutant des Grafen (vermutlich Berthold, der einen neuen Titel angenommen hat). Er warnt die Helden in der Bibliothek, nichts mitzunehmen, und bleibt nach einem ungenannten Desaster ratlos, aber gehorsam gegenüber seinem Herrn.
-- **Drittes Treffen (2026-03-10)**: Tindrael ist ein untoter Diener von Voras. Er empfängt Dodo in der Gruft, kondoliert zum Verlust von Cookie und führt ihn zu seinem neuen Meister. Seine Erinnerungen an die Vergangenheit sind intakt, doch seine Loyalität gehört nun Voras.
+In der späteren Session, nach dem Untergang von Breska, führt Tindrael Dodo durch die Gruft und stellt ihn Voras vor. Er fungiert damit als Wegbereiter und Führer zu einer höheren Macht, der die Gruppe in der zerstörten Stadt begegnet.
 
 ## Wichtige Merkmale
 
-- **Auftreten als Lebender**: In Brechka zeigt Tindrael sich als Geistlicher in Amtstracht? (nicht explizit beschrieben), begleitet von seiner zahmen Ziege Bertie. Er wird von der Wache als „Bruder Tindrael“ bezeichnet und genießt hohes Ansehen.
-- **Auftreten als Untoter**: Bei der dritten Begegnung wird er als „deutlich gestärkter und kräftiger, aber immer noch die schmale Gestalt von damals“ beschrieben. Seine körperliche Erscheinung hat durch den untoten Zustand an Substanz gewonnen.
-- **Persönlichkeit**: Tindrael tritt durchweg respektvoll und freundlich auf. Er zeigt sich glaubwürdig und einsatzbereit (sofortige Reaktion auf die Goblin-Warnung), später auch warnend (Bibliotheksregel) und nach dem Tod des Bürgermeisters melancholisch-trauernd. Selbst als untoter Diener bewahrt er eine würdevolle Haltung und kondoliert aufrichtig.
-- **Besitztümer**: Eine zahme Ziege namens Bertie, die Valeria mühelos zähmt.
+Tindrael wird als freundliche und hilfsbereite Person beschrieben. Als die Gruppe seine Ziege Bertie zurückbringt, reagiert er begeistert: *„Ach, was seid ihr denn so putzig? Ihr habt Bertie gefunden. Wie wundervoll."* Er zeigt sich dankbar für die Tat und bemerkt, dass die Gruppe etwas Einzigartiges an sich haben müsse, da Bertie normalerweise nicht leicht zu zähmen sei.
+
+Er ist eine geistliche Autoritätsperson und nach dem Bürgermeister die nächste Autorität im Dorf. Als die Gruppe ihn nach dem Bürgermeister fragt, antwortet er: *„Nun, ich bin tatsächlich hier nach dem Bürgermeister wahrscheinlich die nächste Autoritätsperson."*
+
+In der späteren Begegnung wird er als deutlich gestärkter und kräftiger beschrieben, behält aber seine schmale Gestalt. Er hat sich nicht aus den Diensten von Voras wegbewegt, was auf eine anhaltende Bindung an diese Macht hindeutet.
 
 ## Beziehungen und Verbindungen
 
-- **[Berthold](/npcs/berthold.md)** (Bürgermeister / Graf): Tindrael ist dessen rechte Hand und zweithöchste Autorität. Er dient ihm loyal, zunächst als Grabwächter, später als Adjutant des Grafen.
-- **[Voras](/npcs/voras.md)** : Nach dem Untergang Breskas wird Tindrael zum untoten Diener dieser Entität. Er spricht von Voras als „mein Lord“ und führt Besucher zu ihm.
-- **Die Helden**: [Dodo](/characters/dodo.md), [Rotunas](/characters/rotunas.md), [Valeria](/characters/valeria.md), [Lindo Laut](/characters/lindo_laut.md) und [Cookie](/characters/cookie.md). Besonders zu Dodo baut er eine respektvolle Bekanntenebene auf; beim Wiedersehen als Untoter erkundigt er sich namentlich nach den Gefährten.
-- **[Kerl](/npcs/kerl.md)** : Einziger namentlich genannter weiterer Überlebender des Massakers, das Breska auslöschte.
-- **Bertie**: Seine Ziege, die die Gruppe am Friedhof begrüßt und Valerias Zähmungskünste beweist.
+- **Bertie**: Tindraels Ziege, die entlaufen war und von der Gruppe zurückgebracht wird. Bertie ist normalerweise nicht leicht zu zähmen.
+- **Bürgermeister (Berthold)**: Tindrael ist nach ihm die nächste Autoritätsperson im Dorf und später dessen ehemalige rechte Hand.
+- **Die Wächter Kerl und Brock**: Die Dorfwächter, die die Gruppe zu Tindrael verweisen.
+- **Die Gruppe**: Tindrael ist der Gruppe dankbar für die Rückgabe seiner Ziege und unterstützt sie in der Folge.
+- **Voras**: Tindrael dient Voras und stellt Dodo ihm in der Gruft vor.
+- **Dodo**: Tindrael erkennt Dodo in der späteren Begegnung wieder und begrüßt ihn respektvoll.
 
 ## Chronologie
 
-[P-03] **2025-04-09 – Brechka (Session 1)**
-   Die Helden werden von einer Wache an Tindrael verwiesen, um Zutritt zum Bürgermeister zu erhalten. Auf Nachfrage erklärt die Wache: *„Tindrael ist der Grabwächter. Er ist ein Geistlicher, er hat hier einiges zu sagen.“* Valeria kommentiert: *„Bruder Tindrael.“*  
-   Auf dem Friedhof treffen sie Tindrael, der von einer großen Ziege begleitet wird. Valeria zähmt Bertie mühelos. Tindrael glaubt der Warnung vor einer Bedrohung sofort, bringt die Gruppe zu Berthold und hilft, die Verteidigungsmaßnahmen zu koordinieren. Er bleibt über die ganze Session ein verlässlicher Unterstützer.
+**Session 2025-04-09:** Die Gruppe bringt Tindraels entlaufene Ziege Bertie zurück. Tindrael ist begeistert und dankbar. Die Gruppe stellt sich als Mitglieder der Gilde vor und berichtet von einem bevorstehenden Goblinangriff auf das Dorf. Tindrael glaubt den Neuigkeiten, begleitet die Gruppe zum Bürgermeister und unterstützt die Verteidigungsvorbereitungen.
 
-[P-13] **2025-06-25 – Grafensitz (Session 2)**
-   Der Ort wird nun als Stadt beschrieben. Tindrael will die Helden begrüßen, wird aber vom Grafen unterbrochen: *„Willkommen, willkommen. Es freut mich, dass ihr eure Reise wieder bei mir aufgeschlagen habt. Was verschafft mir die Ehre meiner Retter?“*  
-   Tindrael, jetzt Adjutant des Grafen (auch „Tindra“ genannt), begleitet die Helden in eine Bibliothek und warnt sie eindringlich, nichts mitzunehmen. Nach einem späteren, nicht näher beschriebenen Desaster wirkt er ratlos, befolgt jedoch die Anweisungen seines Herrn.
-
-[P-40] **2026-03-10 – Gruft des Voras (Session 3)**
-   In der Unterwelt begegnet ein vertrautes Gesicht: *„Mein Name ist Tindrael. Ich war einst die rechte Hand vom Bürgermeister. Nun, den gibt es nicht mehr. Abgeschlachtet und ermordet. Ihr wollt zu Woras. Das ist richtig. Folgt mir.“*  
-   Er empfängt Dodo respektvoll, kondoliert zum Tod von Cookie und fragt nach Lindo Laut und den anderen. *„Cookie musste leider ihr Leben geben.“* – *„Ach, das ist aber bedauerlich. Wahrhaftig bedauerlich.“*  
-   Nur er und Kerl überlebten den Überfall. Tindrael führt Dodo zu Voras mit den Worten: *„Mein Lord, Dodo ist nun da.“*
+**Session 2026-03-10:** Tindrael begegnet der Gruppe in der zerstörten Stadt Breska wieder. Er ist deutlich gestärkter und kräftiger als zuvor. Er berichtet, dass der Bürgermeister abgeschlachtet und ermordet wurde und Breska nicht mehr existiert. Tindrael begleitet Dodo in der Gruft und stellt ihn Voras vor. Auf die Frage nach dem Verbleib der Gruppe erfährt er, dass Cookie ihr Leben lassen musste, was er bedauerlich findet.
 
 ## Offene Fragen
 
-- Was geschah bei dem Überfall, der Breska vollständig zerstörte und den Bürgermeister tötete?
-- Wie und warum wurde Tindrael zum untoten Diener von Voras? Stand Voras in Verbindung mit der früheren Bedrohung (der Haag) oder den alten Göttern?
-- Verblieb Bertie bei ihm, oder ging die Ziege in der Zerstörung verloren?
-- Welche Rolle spielt Kerl, und unter welchen Umständen überlebte er?
-- Besitzt Tindrael als Geistlicher besondere Fähigkeiten, und wie wirkt sich sein untoter Zustand darauf aus?
+- Welche genaue Rolle und Position hat Tindrael im Dienst von Voras? Die Belege zeigen, dass er sich „nicht aus den Diensten von Voros wegbewegt" hat, aber seine genauen Aufgaben und Verantwortlichkeiten bleiben unklar.
+- Wie hat Tindrael den Untergang von Breska überlebt, während der Bürgermeister ermordet wurde?
+- Was ist aus Bertie, seiner Ziege, geworden?
 
 ## Belege
 
-[P-03] Session 2025-04-09 @ 00:20:30 (https://www.youtube.com/watch?v=1PWdwvun5ow)
-[P-13] Session 2025-06-25 @ 00:24:24 (https://www.youtube.com/watch?v=tpkO9uGw6-I)
+[P-03] Session 2025-04-09 @ 00:26:27 (https://www.youtube.com/watch?v=1PWdwvun5ow)
 [P-40] Session 2026-03-10 @ 00:40:29 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)

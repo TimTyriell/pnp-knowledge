@@ -1,35 +1,38 @@
 ---
 type: NPC
 title: Kapitän Lobrecht
-description: Kapitän Lobrecht, auch Kahnführer Lobrecht genannt, führt das Gildenschiff,
-  mit dem die Heldengruppe zu den Sanddorninseln reist. Er zeigt…
+description: Kapitän Lobrecht ist ein erfahrener Seefahrer und Kahnführer, der der
+  Gruppe wiederholt begegnet. Er führt Schiffe und Eskorten, organisier…
 tags:
 - npcs
-timestamp: '2026-07-29T00:00:00Z'
+timestamp: '2026-08-25T00:00:00Z'
 id: NPC_LOBRECHT
 aliases:
+- Lobrecht
 - Kahnführer Lobrecht
-- Käpt'n Lobrecht
 ---
 
-Kapitän Lobrecht, auch Kahnführer Lobrecht genannt, führt das Gildenschiff, mit dem die Heldengruppe zu den Sanddorninseln reist. Er zeigt sich der Gruppe gegenüber freundlich. Später wird er in einen Verrat verwickelt, bei dem er nur dank magischer Heilung überlebt, und begegnet der Gruppe in der Taverne erneut.
+# Kapitän Lobrecht
 
-## Als Kapitän des Gildenschiffs
+Kapitän Lobrecht ist ein erfahrener Seefahrer und Kahnführer, der der Gruppe wiederholt begegnet. Er führt Schiffe und Eskorten, organisiert Evakuierungen und dient als Informationsquelle über Gefahren und Ereignisse in der Region. Mehrfach wird er bei Kämpfen schwer verletzt, überlebt jedoch dank Heilung und Rettung durch Verbündete. In [Ehrenfels](/locations/ehrenfels.md) gilt er als wichtige Persönlichkeit.
 
-Lobrecht ist in seiner Kajüte anzutreffen, zeigt [Cookie](/characters/cookie.md) eine Karte der Sanddorninseln und offeriert ihr Kuchen. Er beschreibt die Inseln als ein Paradies des Lebens, weist aber auf mögliche Normabweichungen hin. Für die Anreise bietet er an, die Gruppe direkt zur Auftragsinsel zu bringen oder mit einem Beiboot auszusetzen. Die Helden wählen das Beiboot; Lobrecht warnt sie zur Vorsicht und bleibt mit dem großen Schiff vor der Küste, wo er später die Überlebenden aufnimmt.
+## Rolle als Seefahrer und Informant
 
-## Verwundung und Rettung
+Lobrecht ist Kapitän des Schiffs, das die Gruppe nach [Windung](/locations/windung.md) bringt; bei einem Angriff wird er schwer verletzt, aber von [Esterossa](/characters/esterossa.md) geheilt. Er organisiert die Evakuierung der Dorfbewohner. [1] Später tritt er als Kahnführer auf, der die Gruppe freudig begrüßt und berichtet, dass [Nox](/npcs/nox.md) der Gruppe die Mission erklärt habe; er ist eine wichtige Informationsquelle über die Ereignisse in Ehrenfels. [4] Zusammen mit [Miaomani](/npcs/miaomani.md) unterwegs, berichtet er von Untoten in der Nähe von [Breska](/locations/breska.md) und bestätigt die Gefahr. [2]
 
-Während des Verrats wird Lobrecht von den Soldaten [Windungs](/locations/windung.md) mit Bolzen in den Rücken geschossen und schwer verwundet. Die magische Heilung von [Esterossa](/characters/esterossa.md) rettet ihm das Leben. Nach der Evakuierung stellt er den Aufbruch in Aussicht und drängt zur Eile, da er nicht länger warten will.
+## Kämpfe und Verletzungen
 
-## Wiedersehen in der Taverne
+In einer weiteren Begegnung ist Lobrecht Captain einer Eskorte, kämpft tapfer gegen Gnolle und wird von der Schattenhorde schwer verletzt, aber von [Lindo Laut](/characters/lindo_laut.md) in dessen Pocket Domain gerettet. [6] Bei einer Brückenüberquerung mit einem Seil, als Begleiter von [Joao](/events/joao_faellt_ins_wasser.md), wird er von einer durch Lindo Laut ausgelösten Lawine an der Schulter verletzt; er zeigt sich erfahren im Klettern, skeptisch gegenüber Joao, aber anerkennend gegenüber [Dodo](/characters/dodo.md), als dieser einen Basilisken zähmt. [5]
 
-Sein Schiff ist inzwischen für den Winter vertaut. In der Taverne gesellt er sich mit [Miyamani](/npcs/miyamani.md) zum Tisch, als das Gespräch auf [Breska](/locations/breska.md) kommt, und berichtet von der schwierigen Reise und den Untoten. Bei einem späteren Wiedersehen empfängt er die Gruppe zusammen mit Miyamani herzlich. Er erklärt, dass [Nox](/npcs/nox.md) vor seinem Verschwinden die Heldenmission publik gemacht habe; deshalb werde die Rückkehr der Gruppe als Triumph gefeiert. Von der Schlacht berichtet er und vom Auftauchen der Engel, doch zu Nox’ Verbleib kann er keine Angaben machen.
+## Verbindung zur Gruppe
+
+Für die Gruppe ist Lobrecht ein Bekannter und wiederkehrender Verbündeter. [4] Trotz mehrfacher Verwundungen bleibt er präsent; in Ehrenfels wird er als wichtige Persönlichkeit erwähnt, als er am Ende einer Schlacht als Verstärkung eintrifft. [3]
 
 # Belege
 
-[P-06] Session 2025-04-30, 00:13:03 – https://www.youtube.com/watch?v=fsCOiSkKKTE
-[P-07] Session 2025-05-06, 00:02:30 – https://www.youtube.com/watch?v=e0v6AFGd4mE
-[P-16] Session 2025-07-29, 01:56:53 – https://www.youtube.com/watch?v=XXgO5Ht4Q0A
-[P-30] Session 2025-11-18, 01:28:08 – https://www.youtube.com/watch?v=w__ahowb9p0
-[S1-01-A] Session 2026-07-29, 00:54:55 – https://www.youtube.com/watch?v=umGyKLkefJI
+1. Session 2025-07-29 @ 00:04:00 – https://www.youtube.com/watch?v=XXgO5Ht4Q0A
+2. Session 2025-11-18 @ 01:29:00 – https://www.youtube.com/watch?v=w__ahowb9p0
+3. Session 2026-04-09 @ 00:57:10 – https://www.youtube.com/watch?v=vcGkejr8_nI
+4. Session 2026-07-29 @ 00:46:59 – https://www.youtube.com/watch?v=umGyKLkefJI
+5. Session 2026-08-18 @ 00:15:26 – https://www.youtube.com/watch?v=10swvSz6k7U
+6. Session 2026-08-25 @ 01:02:47 – https://www.youtube.com/watch?v=1Cjj3OVqiYA

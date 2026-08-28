@@ -1,187 +1,188 @@
 ---
 type: Character
 title: Esterossa
-description: Esterossa ist ein männlicher Seraph der Unterklasse "Winged Sentinel",
-  ein geflügelter Kleriker, der dem neuen Gott Korn – auch Blutgott ge…
+description: Esterossa ist ein Seraph der Unterklasse „Winged Sentinel" und gehört
+  der Gruppe um Rotunas an. Er ist ein geflügelter, engelgleicher Krieg…
 tags:
 - characters
-timestamp: '2026-07-21T00:00:00Z'
+timestamp: '2026-07-29T00:00:00Z'
 id: CHAR_ESTEROSSA
-aliases:
-- Esterossa Torpalm
 ---
+
+# Esterossa
 
 ## Überblick
 
-Esterossa ist ein männlicher Seraph der Unterklasse "Winged Sentinel", ein geflügelter Kleriker, der dem neuen Gott Korn – auch Blutgott genannt – dient. Er vereint militärische Disziplin mit göttlicher Magie und tiefer historischer Gelehrsamkeit; seine Gefährten sahen in ihm sowohl den unerschrockenen Krieger mit Axt und Hammer als auch den einfühlsamen Heiler, der sich schützend vor seine Verbündeten stellt. Seine metallenen, später von Kristallen durchsetzten Flügel verleihen ihm übernatürliche Mobilität, während seine schwere Rüstung und sein unerschütterlicher Glaube ihn zu einem Bollwerk in der Schlacht machen. Esterossas Persönlichkeit pendelt zwischen charmanter Diplomatie, pragmatischer Skrupellosigkeit und tiefer Loyalität – eine Kombination, die ihn zum wiederholten Sprecher und Taktiker der Gruppe machte.
+Esterossa ist ein Seraph der Unterklasse „Winged Sentinel" und gehört der Gruppe um Rotunas an. Er ist ein geflügelter, engelgleicher Krieger und Heiler, der in der Gruppe als „das zweite Schild" und Heiler fungiert. Er trägt eine Rüstung, kämpft mit einer Axt beziehungsweise einem Warhammer und verfügt über heilige Magie. Esterossa ist ein frommer Anhänger des neuen Gottes Korn, der auch als Blutgott bezeichnet wird. Er ist ein Veteran vieler Kriege und verfügt über umfangreiches Wissen über Kulturen, Geschichte und Religionen. Sein voller Name lautet Esterossa Torpalm beziehungsweise Esterossa Torpa.
 
 ## Rolle in der Kampagne
 
-Esterossa erfüllte in der Gruppe mehrere Schlüsselrollen. Als **Heiler** setzte er regelmäßig "Mending Touch", "Healing Hands" und andere Gebete ein, um Verbündete zu versorgen – von Dodo über Rotunas bis zum Kapitän und Miaomani[[P-16]]. Sein "Lebendwort" (Life Word) brachte einen sterbenden Soldaten zurück, sein "Lifeboard" schützte Lindo Laut vor Angriffen, und sein "Seraph Hope" durchdrang kurz Dimensionen[[P-15]][[P-32]][[P-34]]. Mit "Shape Material" formte er Steinwände, Treibsand, Fluchttore, Spinnennetze zu Lanzen und verwandelte ein Holztor in Stahl – eine taktische Magie, die der Gruppe mehrfach das Überleben sicherte[[P-25]][[P-27]][[P-34]][[P-50]].
-
-Als **Kämpfer** stand er stets an vorderster Front, zerschmetterte Skelette mit der Axt, enthauptete fliehende Seraphen und befreite Dodo aus dem Magen einer Kreatur mit einem einzigen Axthieb (25 Holy Damage)[[P-04]][[P-09]][[P-32]]. Seine Flügel erlaubten ihm spektakuläre Sturzangriffe und Mobilität im Gefecht[[P-05]].
-
-Als **Gelehrter und Taktiker** brachte Esterossa sein historisches Wissen über Artefakte des Heiligen Duran, alte Götter, Runenschriften und das Wesen von Vasul ein[[P-07]][[P-10]][[P-20]]. Er entzifferte die Warntafel in Tarvoks Reich, erkannte das Symbol auf dem Umhang und entschlüsselte das zwergische Wort "Drunbran"[[P-21]][[P-36]]. Im Turnier von Willau agierte er als Informationssammler und plädierte für den Monsterkampf, weil die Gruppe gemeinsam stärker sei[[P-26]]. Im Kampf gegen den Steingolem koordinierte er die Angriffe seiner Gefährten und bereitete Fallen vor[[P-25]].
-
-Als **Diplomat und Sprecher** verhandelte Esterossa mit Banditen, beschwichtigte aufgebrachte Bürger, trickste Gulrak aus und führte Verhandlungen mit Horatio über die Aufnahme von Flüchtlingen[[P-06]][[P-29]][[P-23]]. Sein Charisma half ihm, das Vertrauen eines verwundeten Soldaten zu gewinnen, den er einfühlsam befragte[[P-32]].
+Esterossa ist ein zentrales Mitglied der Abenteurergruppe um Rotunas und über weite Strecken der Kampagne einer der Hauptcharaktere. Er übernimmt in der Gruppe mehrere Rollen: Als Heiler hält er seine Gefährten mit Gebeten und heiliger Magie im Kampf; als „zweites Schild" steht er an der Seite des Tanks Dodo und schützt die Gruppe; als militärischer Veteran bringt er taktisches Wissen und Kampferfahrung ein. In diplomatischen Situationen zeigt er sich redegewandt, insbesondere wenn Lindo Laut ausfällt. Er ist bei fast allen Abenteuern der Gruppe dabei und stellt sich selbst als „das zweite Schild und der Heiler dieser Gruppe" vor.
 
 ## Wichtige Merkmale
 
-Esterossa ist eine imposante Erscheinung: ein großer, geflügelter Seraph in schwerer Rüstung mit ringbesetzten Händen[[P-22]]. Seine Flügel waren ursprünglich metallen und weiß glänzend, wurden jedoch später von Kristallen durchzogen und nahmen einen lilafarbenen Schimmer an, als er das Schwert Holodarns berührte[[P-49]]. Trotz der Veränderung konnte er weiterhin fliegen. Nach der Berührung des Splitters des Ewigen verwandelten sich seine Flügel in rot leuchtende Gebilde, bevor sie im Kampf nach und nach abfielen[[P-55]].
+### Erscheinung und Wesen
 
-**Kampfausrüstung:** Esterossa führte eine magische heilige Axt, einen Kriegshammer, ein Schild und später ein rätselhaftes Schwert, das auf Kristalle reagierte und nach göttlicher Macht hungerte[[P-27]][[P-49]][[P-54]]. Das Schwert konnte Vorgulta verletzen und absorbierte schließlich Vasuls Essenz[[P-49]][[P-54]].
+Esterossa ist ein Seraph mit Flügeln, die er zum Fliegen nutzt. Er trägt eine Rüstung, die im Laufe der Kampagne beschädigt wird. Er hasst Kälte und beklagt sich, dass ihm bei niedrigen Temperaturen „die Flügel abfrieren". Sein Schlaf ist der eines Veteranen: Er schläft „wie ein Stein", auch bei lautesten Geräuschen.
 
-**Magische Fähigkeiten:**
-- **Heilmagie:** Mending Touch, Healing Hands, Lebendwort (Life Word), Lifeboard, Seraph Hope, Life Ward, Second Wind[[P-04]][[P-07]][[P-15]][[P-22]][[P-24]][[P-27]][[P-31]][[P-32]][[P-45]]
-- **Kampfmagie:** Blitzzauber, Donnerkeile, Frostmagie (einschließlich Einfrieren von Gegnern), heiliger Schaden[[P-09]][[P-10]][[P-22]][[P-32]]
-- **Formungsmagie (Shape Material):** Verwandlung von Stein, Sand, Spinnennetzen und Holz in defensive oder offensive Strukturen[[P-25]][[P-27]][[P-29]][[P-34]][[P-45]][[P-50]]
-- **Tarnung:** Unsichtbarkeit für Aufklärungsmissionen[[P-17]][[P-19]]
-- **Prayer Dice / Prey Dice:** Generierung von Hoffnungspunkten, Reduktion von Schaden für Verbündete, Abwenden von Schaden[[P-02]][[P-04]][[P-09]][[P-10]]
+### Fähigkeiten
 
-**Persönlichkeit:**
-- **Blutrünstige Frömmigkeit:** Esterossa betete vor Gefechten mit Litaneien wie "Blut für den Blutgott" und fühlte sich danach voller Kampfeseifer[[P-05]][[P-27]]. Sein Glaube an Korn – den er auch als "meinen guten Gott" bezeichnete – war zentral für seine Identität[[P-10]][[P-16]].
-- **Pragmatismus und Härte:** Er sammelte den Kopf eines Goblin-Kindes als Trophäe, trickste Gefangene mit falschen Versprechungen aus und zögerte nicht, Hindernisse mit Gewalt zu beseitigen[[P-02]][[P-06]].
-- **Loyalität und Fürsorge:** Trotz seiner Härte zeigte er tiefe Verbundenheit mit der Gruppe, entschuldigte sich für Fehler, tröstete Trauernde und sprang schützend zwischen Gefährten und Angreifer[[P-16]][[P-24]].
-- **Arroganz und Demut:** Anfangs als dekadent und arrogant beschrieben, reflektierte er später, dass er Gefallen daran fand, Bedürftigen zu helfen, und seine Arroganz ablegte[[P-22]][[P-24]].
+Esterossa verfügt über ein breites Spektrum an Fähigkeiten:
+
+- **Flugfähigkeit**: Als geflügelter Seraph kann er fliegen und nutzt dies im Kampf, um Positionen zu wechseln, Gegner aus der Luft anzugreifen oder Stürze abzufangen.
+- **Heilung**: Er heilt Verbündete mit Gebeten, „Healing Hands", „Mending Touch" und „Seraph Hope". Seine heilende Magie äußert sich unter anderem in goldenen Nebelwolken.
+- **Pray Dice**: Er kann göttlichen Schutz gewähren, indem er Schaden von Verbündeten abwendet.
+- **Fearless**: Sein Talent wandelt Stresspunkte in Hope um.
+- **Winged Sentinel**: Seine Unterklassen-Fähigkeit unterstützt ihn im Kampf.
+- **Material formen**: Er kann Materialien verändern, etwa Holz in Stahl verwandeln, um ein Tor zu verstärken, eine Steinwand beschwören, eine Treppe erschaffen oder Fackeln löschen.
+- **Magische Waffe**: Er beschwört eine magische Axt und kämpft mit einem Warhammer.
+- **Unsichtbarkeit**: Er kann sich unsichtbar machen, um zu erkunden oder sich anzuschleichen.
+- **Wissen**: Er verfügt über umfangreiches Wissen über Kulturen, Geschichte, Religionen und den „unteren Zirkel" der Dämonenfürsten.
+
+### Glaube
+
+Esterossa ist ein frommer Anhänger des neuen Gottes Korn, der auch als Blutgott bezeichnet wird. Er betet regelmäßig vor Kämpfen und Reisen, spricht Segen für die Gruppe und nutzt seine Gebete, um Verbündete zu schützen und zu heilen. Seine Gebete werden erhört, etwa wenn er einen grünen Blitz erhält, der seine Angriffe verstärkt. In einer Zwischenebene erhält er jedoch keine Verbindung zu seinem Gott.
 
 ## Beziehungen und Verbindungen
 
-**Korn, der Blutgott:** Esterossa diente ausschließlich diesem neuen Gott. Seine Gebete um kühleres Wetter, Kampfkraft oder Rat waren fester Bestandteil seines Handelns[[P-10]][[P-32]][[P-50]]. Er betonte mehrfach, dass er "nur vor seinem Gott kniet"[[P-36]].
-
-**Dodo:** Eine brüderliche Verbindung. Esterossa heilte Dodo mehrfach, zerschlug seine Fesseln, befreite ihn aus dem Magen einer Kreatur und schwor ihm nach Konflikten ewige Treue[[P-15]][[P-32]][[P-33]][[P-36]]. Dodo versprach ihm im Sterben ehrenvolles Gedenken[[P-55]].
-
-**Lindo Laut (Pedro):** Esterossa stand ihm nach anfänglicher Entfremdung wieder loyal zur Seite, kniete symbolisch vor ihm nieder und sicherte ihm "Schild und Schwert auf ewig" zu[[P-43]]. Er schützte ihn im Kampf, bot ihm Halt und versuchte, ihn aus dem Würgegriff Vasuls zu befreien[[P-18]][[P-44]].
-
-**Rotunas:** Kameradschaftliche Zusammenarbeit im Gefecht. Esterossa heilte ihn aus letztem Lebenspunkt und stellte sich schützend vor ihn[[P-34]].
-
-**Cookie:** Fürsorgliche Beziehung; er heilte sie mehrfach und hob sie empor, um eine Vulkanpflanze zu sammeln. Nach ihrem Tod erinnerte er sich bewegt an sie[[P-10]][[P-27]][[P-29]].
-
-**Nyrella:** Esterossa versuchte, ihren Alkoholkonsum heimlich zu drosseln, und bezog sie in rituelle Handlungen ein. Er schätzte ihre Fähigkeiten und rief sie in Notfällen zu Hilfe[[P-18]][[P-30]].
-
-**Lunara Velora:** Anfangs misstrauisch, entwickelte er Vertrauen – insbesondere durch ihre Entschlossenheit in Abyssalis. Er unterstützte ihre Entscheidungen, warnte aber vor blindem Vertrauen in Vasul[[P-30]][[P-44]][[P-49]].
-
-**Ajani / Günther:** Er freundete sich mit der Katze an und nahm sie als Begleiterin mit, die später von den Goblin-Göttern umbenannt wurde[[P-06]].
-
-**Valeria:** Esterossa las ihren emotionalen Brief vor und übermittelte ihre Schwangerschaftsnachricht[[P-29]][[P-30]].
-
-**Nerash:** Obwohl Diener Korns, trug Esterossa eine Statue Nerashs bei sich und versuchte mehrfach, die alte Göttin zu kontaktieren. Er befreite sie physisch aus magischen Fesseln, indem er ihre Ketten mit einem Speer zerschlug[[P-14]][[P-19]].
-
-**Vasul:** Esterossa erkannte Vasuls wahre Natur als Herrscher der Zwischenebene und Fährmann. In der finalen Konfrontation zerschmetterte er als Erster Vasuls Kristall und durchtrennte seinen Arm[[P-20]][[P-54]].
-
-**Splitter des Ewigen:** Die Berührung des Splitters verwandelte Esterossa in ein verblassendes, mächtiges Wesen, das sich schließlich opferte. Seine Seele wurde nicht gerettet[[P-55]].
+- **Rotunas**: Esterossa ist Teil der Gruppe um Rotunas und unterstützt ihn bei Verhandlungen und Kämpfen.
+- **Dodo**: Er steht an Dodos Seite als „zweites Schild", heilt ihn im Kampf und kämpft treu an seiner Seite. Er beschützt Dodo mehrfach, etwa mit einer Steinwand gegen Dormaks Angriff.
+- **Lindo Laut**: Er ist zunächst misstrauisch gegenüber Lindo Lauts Opfergedanken, unterstützt ihn später aber. Er versucht, Lindo Laut zu retten, als dieser am Herz erstickt, und stützt ihn, nachdem Slix entfernt wurde.
+- **Lunara**: Er ist misstrauisch gegenüber Lunara und hält zunächst Distanz zu ihr, folgt aber später ihren Plänen, wenn auch mit Bedenken. Er verwandelt heimlich Nyrellas Wein in Traubensaft, um sie zu schützen.
+- **Nyrella**: Er heilt ihren Bären und zeigt sich fürsorglich.
+- **Ajani/Günther**: Er findet die Katze Ajani, die ihm folgt und später in Günther umbenannt wird.
+- **Gulrak**: Er verhandelt mit Gulrak und tritt ihn zurück in die Zelle, nachdem er die Informationen erhalten hat.
+- **Joar Vanur**: Er versucht, die Situation mit Joar Vanur zu glätten.
+- **Belorus**: Belorus erkennt ihn als „wahren Krieger" an.
+- **Lord Harik**: Er beschützt Lord Harik.
+- **Nerash**: Er durchtrennt die Ketten der Kreatur mit dem Speer, was Nerash befreit. Später spürt er die Aufmerksamkeit von Nerash, als er das Totem berührt.
 
 ## Chronologie
 
-**Frühe Abenteuer:** Esterossa trat der Gruppe als geflügelter Seraph-Kleriker bei und bewies sich sofort im Kampf gegen Goblins und Skelette. Er identifizierte böse Statuen, erkannte die religiöse Bedeutung von Schreinen und Artefakten und vollzog ein Blutopfer, das einen Feuerdämon beschwor[[P-02]][[P-04]].
+### Frühe Abenteuer (April–Juni 2025)
 
-**Rettung Lendras und Gefängnisausbruch:** Er flog spektakulär in den Kampf, tötete zwei Goblins und brüllte "Blut für meinen Blutgott". Von Lendras erhielt er einen magischen Schlüssel, den er an Joar zurückgab. Im Gefängnis trickste er Gulrak aus und verhandelte diplomatisch[[P-05]][[P-06]].
+In der ersten dokumentierten Session spricht Esterossa einen Segen für die Gruppe, bevor sie eine Krypta betritt. Er opfert sein Blut an einer Statue, was eine Feuerkreatur beschwört, und kämpft gegen Skelette. Er identifiziert die Statue mithilfe seines Wissens und einer Bibliothek auf einem USB-Stick.
 
-**Die Sanddorninseln:** Esterossa identifizierte den Schrein des Heiligen Duran und teilte Wissen über dessen Artefakte – das Amulett und den Morgenstern. Er wurde von einem kritischen Bolzen getroffen, heilte sich selbst und unterstützte Dodo beim Seilakt[[P-07]].
+In der Verteidigung des Dorfes entdeckt er herannahende Goblins, weicht Pfeilen aus und tötet mehrere Goblins im Flug. Er erhält Inspiration von Lindo Laut und ein Kompliment von Dodo, was ihm Hope-Punkte bringt.
 
-**Sumpf und Frost:** Im Sumpf betete er zu Korn um kühleres Wetter und setzte Frostmagie ein, um eine Sumpfbestie einzufrieren – erst die drastische Temperatursenkung brachte den Erfolg. Er sammelte eine drogenartige Vulkanpflanze und erkannte den Schlangenschrein alter Götter[[P-10]].
+Auf der Reise zu den Inseln geht er auf den Ausguck und hält Ausschau nach Piraten. Er findet die Katze Ajani, die ihm folgt. In der Taverne versucht er, einen Konflikt mit einem betrunkenen Gast zu vermeiden, und verhandelt mit Gulrak.
 
-**Befreiung Nerashs:** Gegen den Widerstand des Amuletts zerschlug Esterossa die magischen Ketten der gefesselten Kreatur und befreite Nerash vollständig[[P-14]].
+Er erkennt den Heiligen Duran und seine Artefakte mithilfe seines Wissens über Kulturen und Geschichte. Im Kampf verwundet er einen Gnoll schwer mit seiner Axt und heilt einen verwundeten Ritter mit einem Gebet.
 
-**Taverne und Attentäter:** Er schlug ein Fenster ein, verspottete die Assassinen lachend und heilte Dodo mit "Seraph Hope", was kurz die Barriere zwischen den Dimensionen durchdrang. Gemeinsam mit Dodo und Lindo Laut tötete er den Kenku[[P-15]].
+Im Sumpfgebiet betet er für kühleres Wetter und nutzt seine Pray Dice. Er kauft ein Gegengift und friert eine Kreatur mit Magie ein. Er heilt Brass nach dem Kampf und zeigt sich skeptisch gegenüber dem Schlangengott.
 
-**Rettungstat:** Er stürzte sich zwischen Cookie und einen Angreifer und heilte den niedergestreckten Kapitän und Miaomani[[P-16]].
+### Zwischenebene und weitere Abenteuer (Juli–September 2025)
 
-**Höhle des alten Gottes:** Trotz Unsichtbarkeit wurde Esterossa vom geisterhaften Wächter angegriffen und stürzte schwer, konnte den Fall aber durch seinen Glauben abmildern. Sein Glaube schützte ihn auch auf der Brücke vor lähmender Verzweiflung[[P-17]].
+In einer Zwischenebene betet Esterossa zu Korn, erhält aber keine Verbindung. Er durchtrennt die Ketten einer Kreatur mit dem Speer, was Nerash befreit. Er handelt entschlossen gegen die Warnungen der Stimmen.
 
-**Der Herz-Vorfall:** Esterossa versuchte vergeblich, Lindo Laut nach dem Verschlucken des Herzens zu helfen, und rief Nyrella zur Hilfe[[P-18]].
+Im Kampf zeigt er sich als furchtloser Kämpfer, der lachend in den Kampf zieht und mit seiner Axt mehrere Gegner tötet. Er priorisiert den Magiewirker als Ziel. Er unterstützt die Entscheidung, das Amulett zu behalten.
 
-**Konfrontation mit Dormak:** Er bufte Dodo mit goldenem Staub, schaltete den Kultistenmagier mit einem nicht-tödlichen Hieb aus, wurde aber später von der Druckwelle niedergestreckt. Lindo Lauts Wunsch rettete ihn[[P-19]].
+Er findet das Stern-Amulett an einer Grabstätte und heilt Miaomani und Lobrecht mit Seraph Hope. Er wird unsichtbar und fliegt zur geisterhaften Gestalt, wird aber entdeckt und stürzt ab. Er erkundet das Lager der Anhänger und entdeckt Ghule und Zombies.
 
-**Abyssalis – Die Zwischenwelt:** Esterossa brachte Wissen über den Fährmann ein und schlussfolgerte, dass Vasul der Herrscher der Zwischenebene und Fährmann selbst ist, und dass Lindos Stab als Portalschlüssel dient[[P-20]].
+Er ist misstrauisch gegenüber Lindo Lauts Opfergedanken, unterstützt ihn aber später. Er versucht, Lindo Laut zu retten, als dieser am Herz erstickt. Er schlägt vor, die Gruppe zu führen, und heilt Nyrellas Bären.
 
-**Die Zwerge und der gefallene Prinz:** Er entschlüsselte das Wort "Drunbran", hielt eine bewegende Grabrede für Prinz Bran und trug Dodo unter Einsatz des Sentinel-Rings auf das Dach[[P-21]].
+Er ist unsichtbar und unterstützt die Gruppe mit Heilung und Nahkampfangriffen. Er schlägt den Zauberer mit der Rückseite seiner Axt nieder und fesselt ihn. Er spürt die Aufmerksamkeit von Nerash, als er das Totem berührt.
 
-**Die "dekadente" Phase:** Esterossa zeigte sich arrogant, stellte seine schwere Rüstung und Ringe zur Schau, doch hinter der Fassade sorgte er sich um die Gruppe und verabreichte Rotunas ein Gegengift[[P-22]].
+Er erinnert sich an ein Buch über den unteren Zirkel und vermutet, dass die Fähre eine Zwischenwelt ist. Er widersteht den Einflüssen der Ebene mit einem Krit und ist dadurch eine Stunde lang unabhängig geschützt. Er tötet einen Imp mit einem Schlag.
 
-**Schlacht am Bergpass:** Er formte eine Steinwand zur Verengung des Passes, heilte Dodo mit Life Ward und Healing Hand und entschuldigte sich später für sein Eingreifen in der Verhandlung. Während der Feier reflektierte er seine Entwicklung vom Kriegsanbeter zum Helfer der Bedürftigen[[P-24]].
+Er nutzt seine goldenen Nebelwolken, um Verbündete zu heilen, und seinen Ring Sentinel, um Dodo auf ein Dach zu bringen. Er hält eine Grabrede für den Prinzen und überzeugt die Zwerge, mit ihnen zu fliehen.
 
-**Turnier in Willau:** Esterossa agierte als Taktiker und Informationssammler, verhandelte mit Mil über Trainingsmodalitäten und plädierte für den Monsterkampf. Im Werwolfkampf riss er dem toten Werwolf einen Kieferknochen heraus und pries Dodo vor der Menge. Sein Shape Material rettete die Gruppe vor dem Einsturz[[P-26]][[P-27]].
+### Gilde und weitere Kämpfe (September–November 2025)
 
-**Das Anwesen:** Er flog voraus, entdeckte Goblins und beruhigte sie. In den Verhandlungen mit Horatio unterstrich er das gemeinsame Interesse an Flüchtlingen. Mit Shape Material erschuf er einen Schlafraum, was ihn erschöpfte, aber zufriedenstellte. Er las Valerias Brief vor und kommentierte ihre Sauklaue[[P-29]].
+In der Gilde stellt er sich als „Esterossa Torpa" vor und beeindruckt den Sukkubus mit seinem Auftreten. Er ist skeptisch gegenüber der Entscheidung, den Flüchtlingen zu helfen. Beim Angriff des Attentäters verbrennt er die Beine des Angreifers mit Magie und versucht, Rotunas mit einem Gegengift zu retten.
 
-**Winter und Schneeengel:** Esterossa zeigte sich misstrauisch gegenüber Lunara, verwandelte Nyrellas Wein heimlich in Traubensaft und musste sich später hinter einem Bauernhaus übergeben. Er machte zum Abschluss einen Schneeengel im Schnee[[P-30]].
+Er untersucht die Dokumente des Gnolls und findet ein Wanted-Plakat auf den Gnoll. Er kann Rotunas' Wunde nur verlangsamen. Im Kampf gegen die Untoten stellt er sich den Pfeilen entgegen und erleidet Schaden durch die Welle des Untoten-Anführers.
 
-**Untoten-Armee:** Vom Splitterwesen attackiert und geschwächt, heilte er Dodo und Rotunas, setzte Life Word ein und schlug vor, die restlichen Untoten zu ignorieren, um den Flüchtlingen zu helfen[[P-31]].
+Er erschafft eine Steinwand mit Guckloch, um den Pass zu verschmälern, und heilt Dodo. Er zeigt eine neue Seite, indem er Freude an der Hilfe für andere findet.
 
-**Das Seelenkalb:** Esterossa zog einem verwundeten Soldaten einen Pfeil aus dem Rücken und heilte ihn. Später schlitzte er mit der magischen Axt den Bauch der Kreatur auf, befreite den verschlungenen Dodo und verursachte 25 Holy Damage. Am Ende versuchte er, den sterbenden Soldaten mit einem Lebendwort zu retten[[P-32]].
+Er versucht, den Golem zu befehligen, was fehlschlägt. Er wird vom Golem gepackt und erleidet Schaden, überlebt aber. Er koordiniert die Angriffe und ermutigt die Gruppe.
 
-**Dreadknight und Statuen:** Er entdeckte zwei uralte Statuen, die bei jedem Angriff aufleuchteten. Nach einem gescheiterten Umformungsversuch zerstörte er eine mit dem Warhammer und raubte dem Dreadknight so den magischen Schutzschild. Danach heilte er Dodo zweifach[[P-33]].
+Im Turnier interessiert er sich für den Monsterkampf und berät die Gruppe. Er ist kein guter Einzelkämpfer, unterstützt aber die Gruppe.
 
-**Verteidigung des Stützpunkts:** Esterossa verwandelte das Holztor mit Shape Material in Stahl, gab Lindo Laut Hoffnungspunkte und castete Lifeboard auf ihn. Er kämpfte sich zu Rotunas durch, heilte ihn und stellte sich schützend vor ihn[[P-34]].
+Im Kampf gegen den Werwolf schlägt er mit seinem Warhammer zu. Bei der Phasenspinne wird er eingesponnen und vergiftet, kann sich aber mit Magie befreien. Er tötet die Spinne mit einem mächtigen Schlag und wird von der Menge gefeiert. Er betet zu Korn und erhält einen grünen Blitz, der seine Angriffe verstärkt.
 
-**Goblinverhandlungen und Brücke:** Er zerschmetterte im ersten Kampf sofort einen Goblin, betonte aber, dass im Notfall das Leben des Zwergenfürsten oberste Priorität habe. Am Ende wählte er Gold als Belohnung für bessere Ausrüstung[[P-35]].
+Er übernimmt die Gespräche mit den Goblins und verhandelt mit Horatio. Er erschafft mit Magie einen Schlafraum im Untergeschoss und denkt an den Ausbau des Anwesens.
 
-**Tarvoks Reich:** Esterossa entzifferte die Warntafel und erkannte später Tarvoks Symbol auf dem Umhang. Er heilte Dodos Käferbiss, schuf eine Steinbrücke über eine Grube und betonte im Altarraum, "nur vor seinem Gott" zu knien. Nach dem Vorfall zeigte er sich wütend über Verheimlichungen, teilte aber mit Dodo einen Moment brüderlicher Verbundenheit[[P-36]].
+Er ist misstrauisch gegenüber Lunara und hält Distanz zu ihr. Er verwandelt heimlich Nyrellas Wein in Traubensaft. Er beteiligt sich an der Zirkusvorstellung mit goldenem Glitzer und übergibt Nyrella zwei Goldmünzen für den Marktschreier.
 
-**Die Krise und Abreise:** Nach den Enthüllungen um Lindo Laut und Lunara verließ Esterossa die Gruppe, weil er die neuen Götter verehrte und mit der Situation haderte[[P-37]].
+### Abyssalis und die letzten Kämpfe (November 2025–Juli 2026)
 
-**Rückkehr und Versöhnung:** Nach längerer Pilgerreise kehrte er versöhnlich zurück. Er hatte mit Korn nach Lösungen für Lindo Lauts Qualen gesucht. In einer Herr-der-Ringe-artigen Szene kniete er vor Lindo nieder und sicherte ihm "Schild und Schwert auf ewig" zu. Er stellte sich aus Vertrauen hinter die Gruppenentscheidung und ging mit ins Abyssalis[[P-43]].
+In der Nähe der Splitterwelt-Kreatur verliert er Energie und wird von Lindo Laut mit dem Ton der Einkehr geheilt. Im Kampf heilt er Dodo mit Healing Hands, woraufhin die Kreatur flieht. Er untersucht den Beschwörungsstab und erkennt seine Funktion. Er wird unsichtbar und fliegt los, um die Untoten zu erkunden.
 
-**Abyssalis – Kampf gegen Dormak:** Esterossa zog eine Steinwand hoch, um einen Angriff auf Dodo abzuschwächen. Er analysierte die Lage kritisch, identifizierte den Klojin als Diener Akastrales und plädierte für unauffälliges Vorgehen. Sein Vertrauen in Lunara war spürbar[[P-44]].
+Er heilt den verwundeten Soldaten, indem er den Pfeil entfernt und die Wunde schließt. Im Kampf gegen das Seelenkalb beschwört er eine magische Axt und verletzt das Biest, wodurch er Dodo befreit. Er ist misstrauisch gegenüber dem Soldaten.
 
-**Feuer und Flammen:** Er löschte mit Magie die Flammen am Altar, wurde aber zweimal von lilafarbenen Blitzen getroffen. Er erkannte die Regeneration der Kreatur durch Feuer und führte einen kombinierten Flugangriff mit Lindo Laut aus. Er durchtrennte Adern, um das Ritual zu stoppen, und versuchte, ein Stück der toten Kreatur zu erbeuten, was eine Explosion auslöste[[P-45]].
+Er versucht, die magischen Statuen zu verstehen und zu zerstören. Er errichtet eine Barriere um Dodo und zerstört zwei Statuen mit seinem Warhammer. Belorus erkennt ihn als „wahren Krieger" an.
 
-**Das Schwert Holodarns:** Nach dem Kampf gegen einen drohenden Seraphen hielt Esterossa ihm eine Nerash-Statue entgegen, was den Seraphen verwirrte und schmerzte. Er versuchte vergeblich, die Seele des sterbenden Seraphen zu retten. Dann ergriff er das beschworene Schwert, das Vorgulta verletzen kann – bei der Berührung veränderten sich seine Flügel: Kristalle durchsetzten sie, der Glanz wurde lila. Er konnte weiterhin fliegen[[P-49]].
+Er verstärkt das Tor mit seiner Fähigkeit, Holz in Stahl zu verwandeln. Er schützt Lindo Laut mit einem Lebensschild und heilt Rotunas mit Restoration.
 
-**Narbe – Die Verwandlung:** Esterossa trug die Gruppe über den Fluss, formte Treppen und Schutzwälle, heilte Dodos Schulter und enthauptete einen fliehenden Seraphen. Sein Schwert verweigerte ihm einmal den Befehl. Nach der Rast waren seine Knochenflügel von Kristallen durchzogen. Er betete zu Korn um Kraft und war entschlossen, die Narbe zu erreichen und seine Seele vom Schwert zurückzugewinnen[[P-50]].
+Er beschützt Lord Harik und tötet einen Goblin im Kampf. Er unterstützt Rotunas bei den Verhandlungen und wählt als Belohnung Gold statt Erz.
 
-**Verschollen am Eingang der Narbe:** Nach dem Kampf gegen die Seraphen am Eingang der Narbe war Esterossa verschollen. Die Gruppe wartete zwanzig Minuten, dann setzten sie die Reise ohne ihn fort, im Vertrauen, dass er zurechtkomme[[P-53]].
+Er erkennt die Warnung auf der Tafel und identifiziert das Symbol auf dem Umhang als das von Tarvok, dem Erdrichter. Er versucht, Dodos Bein zu heilen, verursacht aber zunächst mehr Schaden. Im Kampf gegen Lindo Lauts Dämonenform greift er mutig an.
 
-**Rückkehr aus der Narbe:** Esterossa kehrte mit göttlicher Magie zurück, die ihm von seinem ungenannten Gott verliehen worden war. Sein Schwert hungerte nach göttlicher Macht. Er befreite Tatrick, indem er das Kontrollsymbol auf dessen Schädel überbrannte und sein eigenes Zeichen setzte. Im Tempel griff er als Erster Vasul an, zerschmetterte dessen Kristall und durchtrennte seinen Arm. Im Kampf um seine Seele wurde er vom Splitter überwältigt – dessen Berührung leitete seine Besessenheit ein[[P-54]].
+Nach einer Pilgerschaft kehrt er zurück und zeigt sich versöhnlich. Er unterstützt Lindo Laut in der Aussprache und bietet an, mit der Gruppe zu gehen, wenn sie versprechen, vorsichtig zu sein.
 
-**Das letzte Opfer:** Esterossa berührte den Splitter des Ewigen und verwandelte sich in eine mächtige, aber verblassende Gestalt mit roten Flügeln. Er räumte der Gruppe den Weg, kämpfte gegen Vorgultars Gehirnmonster und opferte sich. Mit jedem Einsatz seiner Macht verlor er an Substanz – ein Flügel fiel ab. Trotz der Verwandlung blieb sein Blick der eines Freundes. Im Sterben lächelte er, als Dodo ihm versprach, ihn ehrenvoll zu gedenken. Seine Waffe wurde von Lindo Laut gerettet, seine Seele jedoch nicht[[P-55]].
+Er beschwört eine Steinwand, um Dodo vor Dormaks Angriff zu schützen. Er ist misstrauisch gegenüber den Dämonen in Abyssalis und zeigt Mitgefühl, als er Lindo Laut stützt, nachdem Slix entfernt wurde.
+
+Er nutzt Shape Material, um die Fackeln zu löschen. Er wirft den Blob in den Käfig und sammelt ein Stück des geplatzten Blobs als Kriegsbeute. Er versucht, die Statue zu identifizieren, scheitert aber.
+
+Er zeigt dem Seraphen die Statue von Nerash, was ihn kurz schwächt. Er nimmt das Schwert der Kreatur an, das seine Flügel verändert und ihn mit Kristallen überzieht. Er warnt Lunara vor den alten Göttern, unterstützt aber die Entscheidung, zur Narbe zu gehen.
+
+Er trägt eine beschädigte Rüstung und ein magisches Schwert, das mit den Kristallen des Berges interagiert. Er führt die Gruppe durch schwieriges Gelände und nutzt seine Fähigkeit, Material zu formen, um eine Treppe zu erschaffen und den Höhleneingang zu verschließen. Seine Seele scheint an das Schwert gebunden zu sein.
+
+### Verschwinden und Wiederauftauchen (Juni–Juli 2026)
+
+Nach einem Kampf mit einem Seraphen wird Esterossa vermisst. Die Gruppe wartet kurz, entscheidet dann aber, ohne ihn weiterzugehen. Sein Verbleib ist ungewiss.
+
+Später stößt er neu zur Gruppe. Er ist entschlossen, Vasul aufzuhalten, und greift ihn an, als dieser den Splitter aktivieren will. Er zerstört den Splitter, wird aber dabei von dessen Energie besessen. Sein Schwert absorbiert die Energie von Vasul, und er wird zum Spielball der Mächte.
+
+Er berührt den Splitter des Ewigen und löst die Rote Nacht aus, wodurch er sich in ein fremdes Wesen verwandelt. Er vertreibt Vorgultar, verliert aber bei jeder Aktion Teile seiner Flügel. Er opfert sich, um die Gruppe zu retten, und stirbt, ohne dass seine Seele aufsteigt. Seine Waffe wird von Lindo Laut mitgenommen.
+
+Sein Tod wird in der Schlacht um Ehrenfels betrauert. In der Taverne gedenkt die Gruppe seiner, und Dodo ruft: „Auf Esterossa!"
 
 ## Offene Fragen
 
-- Es ist unklar, warum Esterossa, ein Diener Korns, eine Statue Nerashs bei sich trug und mehrfach versuchte, sie zu kontaktieren – insbesondere angesichts seiner ausschließlichen Verehrung des neuen Gottes[[P-14]][[P-19]][[P-49]].
-
-- Sein Schwert verweigerte ihm in der Narbe einmal den Befehl – die genauen Bedingungen und die volle Natur dieser Waffe bleiben ungeklärt[[P-50]].
-
-- Das Schicksal seiner nicht geretteten Seele nach der Opferung durch den Splitter des Ewigen ist unbekannt[[P-55]].
+- Was genau geschah mit Esterossa, nachdem er mit dem Seraphen kämpfte und vermisst wurde? Sein Verbleib in dieser Zeit ist ungeklärt.
+- Was bedeutet es, dass seine Seele an das Schwert gebunden zu sein scheint?
+- Warum steigt seine Seele nach seinem Opfertod nicht auf?
+- Was geschah mit seiner Waffe, die Lindo Laut mitgenommen hat?
 
 ## Belege
 
-[P-02] Session 2025-04-01 @ 00:08:25 (https://www.youtube.com/watch?v=LZIuUzc3F18)
-[P-04] Session 2025-04-15 @ 01:12:39 (https://www.youtube.com/watch?v=YCpAz_syjaY)
-[P-05] Session 2025-04-23 @ 00:54:34 (https://www.youtube.com/watch?v=z3C-bewKqUs)
+[P-04] Session 2025-04-15 @ 00:07:21 (https://www.youtube.com/watch?v=YCpAz_syjaY)
+[P-05] Session 2025-04-23 @ 00:13:40 (https://www.youtube.com/watch?v=z3C-bewKqUs)
 [P-06] Session 2025-04-30 @ 00:10:23 (https://www.youtube.com/watch?v=fsCOiSkKKTE)
 [P-07] Session 2025-05-06 @ 00:14:08 (https://www.youtube.com/watch?v=e0v6AFGd4mE)
-[P-09] Session 2025-05-27 @ 00:55:27 (https://www.youtube.com/watch?v=bamCIB_CkR8)
-[P-10] Session 2025-06-03 @ 00:03:20 (https://www.youtube.com/watch?v=jtYR4Je0a18)
-[P-14] Session 2025-07-09 @ 01:14:31 (https://www.youtube.com/watch?v=XOnHa6CmDbo)
-[P-15] Session 2025-07-22 @ 00:48:07 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
-[P-16] Session 2025-07-29 @ 01:25:18 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
-[P-17] Session 2025-08-12 @ 01:32:05 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)
-[P-18] Session 2025-08-20 @ 00:53:51 (https://www.youtube.com/watch?v=-XbO3FLSL_I)
-[P-19] Session 2025-09-02 @ 01:55:14 (https://www.youtube.com/watch?v=TLZOH7TlGhk)
-[P-20] Session 2025-09-06 @ 00:08:19 (https://www.youtube.com/watch?v=vo1xnyLQDJk)
-[P-21] Session 2025-09-09 @ 00:59:31 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
-[P-22] Session 2025-09-17 @ 01:35:30 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
-[P-23] Session 2025-09-23 @ 01:36:29 (https://www.youtube.com/watch?v=DGzfqVigS0g)
-[P-24] Session 2025-09-30 @ 00:37:50 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
-[P-25] Session 2025-10-07 @ 00:52:26 (https://www.youtube.com/watch?v=qVAF_54S8Vw)
-[P-26] Session 2025-10-14 @ 00:24:12 (https://www.youtube.com/watch?v=cUtz87UCHu4)
+[P-09] Session 2025-05-27 @ 00:26:31 (https://www.youtube.com/watch?v=bamCIB_CkR8)
+[P-10] Session 2025-06-03 @ 00:02:50 (https://www.youtube.com/watch?v=jtYR4Je0a18)
+[P-14] Session 2025-07-09 @ 00:12:20 (https://www.youtube.com/watch?v=XOnHa6CmDbo)
+[P-15] Session 2025-07-22 @ 00:09:00 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
+[P-16] Session 2025-07-29 @ 00:51:27 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
+[P-17] Session 2025-08-12 @ 00:15:21 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)
+[P-18] Session 2025-08-20 @ 00:40:36 (https://www.youtube.com/watch?v=-XbO3FLSL_I)
+[P-19] Session 2025-09-02 @ 00:13:38 (https://www.youtube.com/watch?v=TLZOH7TlGhk)
+[P-20] Session 2025-09-06 @ 00:07:34 (https://www.youtube.com/watch?v=vo1xnyLQDJk)
+[P-21] Session 2025-09-09 @ 00:17:14 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
+[P-22] Session 2025-09-17 @ 00:13:15 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
+[P-23] Session 2025-09-23 @ 00:05:51 (https://www.youtube.com/watch?v=DGzfqVigS0g)
+[P-24] Session 2025-09-30 @ 00:07:27 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[P-25] Session 2025-10-07 @ 00:04:30 (https://www.youtube.com/watch?v=qVAF_54S8Vw)
+[P-26] Session 2025-10-14 @ 00:56:23 (https://www.youtube.com/watch?v=cUtz87UCHu4)
 [P-27] Session 2025-10-21 @ 00:05:01 (https://www.youtube.com/watch?v=sxFhbtwoefA)
-[P-29] Session 2025-11-14 @ 00:02:44 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)
+[P-29] Session 2025-11-14 @ 00:06:11 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)
 [P-30] Session 2025-11-18 @ 00:02:14 (https://www.youtube.com/watch?v=w__ahowb9p0)
-[P-31] Session 2025-11-25 @ 00:18:36 (https://www.youtube.com/watch?v=wd5R4fJfngY)
-[P-32] Session 2026-01-06 @ 02:00:56 (https://www.youtube.com/watch?v=VGw81seFvbo)
-[P-33] Session 2026-01-13 @ 01:44:17 (https://www.youtube.com/watch?v=w4LB1s9_3rs)
-[P-34] Session 2026-01-20 @ 01:26:04 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
-[P-35] Session 2026-01-27 @ 01:13:34 (https://www.youtube.com/watch?v=9RzvnnWzV7E)
-[P-36] Session 2026-02-11 @ 00:06:53 (https://www.youtube.com/watch?v=3C8SD-cyNPM)
-[P-37] Session 2026-02-17 @ 00:04:13 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
-[P-43] Session 2026-03-24 @ 01:09:20 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
-[P-44] Session 2026-03-31 @ 00:14:07 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
-[P-45] Session 2026-04-07 @ 00:39:33 (https://www.youtube.com/watch?v=MAuQPMNY548)
+[P-31] Session 2025-11-25 @ 00:17:11 (https://www.youtube.com/watch?v=wd5R4fJfngY)
+[P-32] Session 2026-01-06 @ 00:10:34 (https://www.youtube.com/watch?v=VGw81seFvbo)
+[P-33] Session 2026-01-13 @ 00:02:29 (https://www.youtube.com/watch?v=w4LB1s9_3rs)
+[P-34] Session 2026-01-20 @ 00:13:00 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
+[P-35] Session 2026-01-27 @ 00:01:51 (https://www.youtube.com/watch?v=9RzvnnWzV7E)
+[P-36] Session 2026-02-11 @ 00:06:35 (https://www.youtube.com/watch?v=3C8SD-cyNPM)
+[P-43] Session 2026-03-24 @ 00:07:48 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
+[P-44] Session 2026-03-31 @ 00:34:07 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
+[P-45] Session 2026-04-07 @ 00:08:17 (https://www.youtube.com/watch?v=MAuQPMNY548)
 [P-48] Session 2026-05-06 @ 00:23:42 (https://www.youtube.com/watch?v=MB4quhDWsQE)
-[P-49] Session 2026-05-13 @ 01:40:52 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
+[P-49] Session 2026-05-13 @ 00:34:38 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
 [P-50] Session 2026-05-19 @ 00:01:54 (https://www.youtube.com/watch?v=xEcGJeaNixI)
-[P-53] Session 2026-06-10 @ 00:23:35 (https://www.youtube.com/watch?v=_3tLSiT1tck)
-[P-54] Session 2026-06-16 @ 01:57:28 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
-[P-55] Session 2026-07-21 @ 00:11:20 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
+[P-53] Session 2026-06-10 @ 00:23:19 (https://www.youtube.com/watch?v=_3tLSiT1tck)
+[P-54] Session 2026-06-16 @ 00:11:31 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
+[P-55] Session 2026-07-21 @ 00:12:24 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
+[S1-01-A] Session 2026-07-29 @ 01:08:38 (https://www.youtube.com/watch?v=umGyKLkefJI)

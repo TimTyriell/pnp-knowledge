@@ -1,16 +1,16 @@
 ---
 type: NPC
 title: Miyamani
-description: Miyamani ist ein Halbling, der an der Zirkusvorführung teilnimmt und
-  versucht, auf dem Eisbären Nairuk zu tanzen, dabei jedoch unsanft stür…
+description: Miyamani ist eine Katari und Begleiterin von Joao. Sie springt elegant
+  über die Brücke und schießt mit einer Armbrust auf den Fallout-Frosc…
 tags:
 - npcs
-timestamp: '2025-11-18T00:00:00Z'
+timestamp: '2026-08-18T00:00:00Z'
 id: NPC_MIYAMANI
 ---
 
-Miyamani ist ein Halbling, der an der Zirkusvorführung teilnimmt und versucht, auf dem Eisbären [Nairuk](/npcs/nyruk.md) zu tanzen, dabei jedoch unsanft stürzt. Er und sein Captain Lobrecht bestätigen später die Untotenplage und die Unpassierbarkeit der Wege nach [Breska](/locations/breska.md).
+Miyamani ist eine Katari und Begleiterin von Joao. Sie springt elegant über die Brücke und schießt mit einer Armbrust auf den [Fallout-Frosch](/npcs/fallout_frosch.md). Sie ist wortkarg, aber aufmerksam und zeigt Anerkennung für [Dodo](/characters/dodo.md), als er den Basilisken zähmt.
 
 # Belege
 
-[P-30] Session 2025-11-18 @ 01:17:12 (https://www.youtube.com/watch?v=w__ahowb9p0)
+1. Session 2026-08-18 @ 00:15:26 (https://www.youtube.com/watch?v=10swvSz6k7U)

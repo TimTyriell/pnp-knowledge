@@ -1,8 +1,8 @@
 ---
 type: Deity
 title: Kol Merefs
-description: Kol Merefs ist ein dunkler Gott, dessen Schrein in der Kapelle der Festung
-  steht. Er tritt durch eine Statue in Erscheinung, die von vielen…
+description: Kol Merefs ist ein alter Gott, von dem bislang nur wenige Spuren bekannt
+  sind. Seine Verehrung ist in einer Kapelle nachweisbar, in der ein…
 tags:
 - deities
 timestamp: '2025-07-09T00:00:00Z'
@@ -10,20 +10,16 @@ id: DEITY_KOL_MEREFS
 subtype: Alter Gott
 ---
 
-Kol Merefs ist ein dunkler Gott, dessen Schrein in der Kapelle der Festung steht. Er tritt durch eine Statue in Erscheinung, die von vielen Kerzen umgeben ist. Sein Name ist im Götterpantheon bekannt, seine genaue Natur bleibt jedoch mysteriös. In der Festung warnt er davor, [Nerash](/deities/nerash.md) zu befreien; nachdem die Gruppe dies dennoch tut, greift er sie mit zerstörerischer Energie an und wird von Nerash vernichtet.
+**Kol Merefs** ist ein alter Gott, von dem bislang nur wenige Spuren bekannt sind. Seine Verehrung ist in einer Kapelle nachweisbar, in der eine Statue von ihm aufgestellt ist. Die Kerzen vor der Statue sind erloschen, was auf eine verblasste oder unterbrochene Verehrung hindeutet. Über seine Herkunft, seine Anhänger und die Bedeutung seines Kultes ist darüber hinaus nichts bekannt.
 
-## Erscheinung und Schrein
+## Rolle und Wesen
 
-In der Kapelle der Festung befindet sich ein Schrein, der Kol Merefs gewidmet ist. Seine Statue ist von vielen Kerzen umgeben. Als die Gruppe sich dem Schrein nähert, erlöschen die Kerzen – ein Umstand, der als Reaktion auf ihre Anwesenheit gedeutet werden kann. Kol Merefs spricht durch die Statue und kommuniziert so direkt mit der Gruppe. Weitere Details zu seiner Gestalt oder den Umständen des Schreins sind nicht überliefert.
+Kol Merefs wird als dunkler Gott beschrieben. Die Gruppe erfährt, dass er geopfert werden muss, wobei unklar bleibt, ob ihm geopfert werden muss oder ob er selbst Gegenstand einer Opferung ist. Zugleich scheint er der Gegenspieler von [Nerash](/deities/nerash.md) zu sein; die beiden Gottheiten stehen offenbar in einem feindlichen Verhältnis zueinander.
 
-## Auftreten in der Festung
+## Die Statue in der Kapelle
 
-Kol Merefs warnt davor, Nerash zu befreien. Die Gruppe befreit Nerash dennoch. Daraufhin feuert Kol Merefs eine zerstörerische Energie auf die Gruppe ab. Anschließend wird er von Nerash vernichtet. Was dies für seinen Schrein, seine Statue und seine Existenz als Gott bedeutet, wird in den Belegen nicht ausgeführt.
+In einer Kapelle steht eine Statue des Kol Merefs. Die Gruppe findet sie mit erloschenen Kerzen vor – ein Hinweis darauf, dass der Kult um ihn nicht mehr aktiv gepflegt wird. Am Ende zerstört Nerash die Statue, womit das sichtbare Andenken an Kol Merefs an diesem Ort beseitigt wird.
 
-## Stellung im Pantheon
+## Belege
 
-Kol Merefs wird als dunkler Gott beschrieben. Sein Name ist im Götterpantheon bekannt, doch seine genaue Natur bleibt mysteriös; genauere Informationen über seine Herkunft, seine Zuständigkeiten oder sein Verhältnis zu anderen Gottheiten liegen nicht vor.
-
-# Belege
-
-[P-14] Session 2025-07-09, 00:51:33, https://www.youtube.com/watch?v=XOnHa6CmDbo
+[P-14] Session 2025-07-09 @ 00:52:18 (https://www.youtube.com/watch?v=XOnHa6CmDbo)

@@ -1,19 +1,19 @@
 ---
 type: Location
 title: Das Portal (Zwergmeistergilde-Gelände / Kapelle)
-description: Ein blau-rötlich schimmernder Rift, der als Tor zur Dunklen Welt dient.
-  Er befindet sich zentral auf dem Trainingsgelände und kann von Nox…
+description: Ein Portal, das die Gruppe zurück in ihre Welt führt. Es erscheint nach
+  der Befreiung von Nerash und die Gruppe springt hindurch, bevor die…
 tags:
 - locations
-timestamp: '2025-05-27T00:00:00Z'
+timestamp: '2025-07-09T00:00:00Z'
 id: LOC_DAS_PORTAL
-subtype: Sonstiges
+subtype: Reise
 aliases:
 - Das Portal
 ---
 
-Ein blau-rötlich schimmernder Rift, der als Tor zur Dunklen Welt dient. Er befindet sich zentral auf dem Trainingsgelände und kann von Nox mit einem Ritual geöffnet und wieder versiegelt werden. Beschworene Kreaturen treten aus ihm hervor, und ihre Essenz wird nach ihrer Niederlage in ihn zurückgesogen.
+Ein Portal, das die Gruppe zurück in ihre Welt führt. Es erscheint nach der Befreiung von [Nerash](/deities/nerash.md) und die Gruppe springt hindurch, bevor die Festung explodiert. Es lodert kurz schwarz und hinterlässt eine kleine Flamme.
 
 # Belege
 
-[P-09] Session 2025-05-27 @ 00:23:43 (https://www.youtube.com/watch?v=bamCIB_CkR8)
+[P-14] Session 2025-07-09 @ 01:20:10 (https://www.youtube.com/watch?v=XOnHa6CmDbo)

@@ -1,64 +1,57 @@
 ---
 type: Deity
 title: Alte Götter
-description: Die Alten Götter sind die ursprünglichen Gottheiten der Welt, die einst
-  über die Schöpfung herrschten. Vor etwa elf Jahren wurden sie in ei…
+description: Die Alten Götter sind eine Gruppe von Gottheiten, die einst die Welt
+  beherrschten, bevor sie von den neuen Göttern verdrängt wurden. Sie wu…
 tags:
 - deities
-timestamp: '2025-11-25T00:00:00Z'
+timestamp: '2025-06-17T00:00:00Z'
 id: DEITY_ALTE_GOETTER
 subtype: Alter Gott
 ---
 
 ## Überblick
 
-Die Alten Götter sind die ursprünglichen Gottheiten der Welt, die einst über die Schöpfung herrschten. Vor etwa elf Jahren wurden sie in einem verheerenden Krieg von den Neuen Göttern besiegt und in eine dämonische Dunkle Welt verbannt [P-09][P-24]. Trotz ihrer Niederlage und Verbannung streben sie danach, ihre verlorene Macht zurückzuerlangen, und senden Diener durch Risse in der Realität in die materielle Ebene [P-09]. Ihre Relikte, ihre Magie und die Sprachen ihrer Anhänger sind weiterhin in der Welt präsent und üben Einfluss aus [P-12][P-29][P-31].
+Die Alten Götter sind eine Gruppe von Gottheiten, die einst die Welt beherrschten, bevor sie von den neuen Göttern verdrängt wurden. Sie wurden in andere Ebenen verbannt und versuchen seither, durch Portale wieder an Macht zu gelangen. Ihre Anhänger sind die Dämonen. Obwohl sie verbannt sind, ist ihre Macht noch immer spürbar – sowohl in der Welt als auch in den Ebenen, in denen sie gefangen gehalten werden.
 
 ## Rolle in der Kampagne
 
-Die Alten Götter agieren als verborgene, antagonistische Kraft im Hintergrund der Welt. Obwohl sie nicht direkt in Erscheinung treten, ist ihr Einfluss durch verschiedene Elemente spürbar:
+Die Alten Götter bilden den Hintergrund einer der zentralen Bedrohungen der Kampagne. Sie sind die ursprünglichen Widersacher der neuen Götter und wurden in einem großen Krieg besiegt und verbannt. Seither versuchen sie, durch Portale in die Welt zurückzukehren und ihre verlorene Macht zurückzugewinnen. Die Dämonen, die in der Kampagne auftreten, handeln als ihre Anhänger und Diener.
 
-- Sie schicken Kreaturen wie einen Minerdämon durch Rifts, um ihre Macht in der materiellen Welt zu mehren. Die Gilde führt einen aktiven Kampf gegen diese Wesen [P-09].
-- Ihre gefangenen Diener und die Seelen ihrer besiegten Armeen existieren als gequälte Entitäten in magischen Gefängnissen, wo sie um Befreiung flehen [P-12].
-- Der Gottkrieg zwischen Alt und Neu erschuf die Splitterwelt und andere Zwischenreiche, die bis heute gefährliche Orte voller geplagter Seelen darstellen [P-24].
-- Objekte aus ihrer Zeit, wie der Beschwörungsstab, bergen immense und gefährliche Macht und wurden von den Neuen Göttern systematisch vernichtet – doch nicht alle konnten zerstört werden [P-31].
-- In Willauch existierte einst ein Kult der Alten Götter, und das gesamte Gebiet ist von ihrer Vergangenheit geprägt [P-29].
-
-Die überlebenden Relikte und das fortbestehende Wissen um die Alten Götter stellen eine latente Bedrohung dar, die von der Gruppe mehrfach erkannt und thematisiert wurde.
+In der Begegnung mit den gefangenen Seelen im Dungeon wird deutlich, dass der Konflikt mit den Alten Göttern noch immer nachwirkt: Die Seelen haben damals im Krieg gegen die Alten gekämpft und verloren. Ihre Gefangenschaft ist eine direkte Folge dieses verlorenen Krieges. Die Frage, ob die Alten Götter tatsächlich vollständig verbannt sind oder ob ihre Macht weiterhin wirkt, ist ein zentraler Punkt der Handlung.
 
 ## Wichtige Merkmale
 
-- **Sprache der Alten**: Die alten Götter verfügen über eine eigene Sprache, die von Kultisten in Schriften verwendet wurde [P-29] und auf mächtigen Artefakten wie dem Beschwörungsstab eingraviert ist. Lindo Laut erkannte diese Schrift als "Sprache der Old Ones" und konnte intuitiv verstehen, dass der Stab dazu diente, "Kreaturen zum Beispiel aus Abyssalis, aus der Schattenwelt, aus anderen Reichen der alten Götter zu beschwören" [P-31].
-- **Reich Abyssalis/Abyssares**: Eine "vergessene Welt, eine alte Bastion der alten Götter" [P-24]. Sie wird als "Welt des Schreckens" und als Gegenstand von Horrorgeschichten beschrieben. Es heißt, dass die Neuen Götter den Krieg nur gewinnen konnten, weil einige der Alten Götter in dieser Welt gefangen wurden – von was genau, ist unbekannt [P-24].
-- **Seelenweben**: Die Alten Götter setzten Seelenweben ein, um ihre Untertanen zu bestrafen. Diese magischen Konstrukte halten Seelen gefangen, die einst im Krieg gegen die Alten kämpften [P-12].
-- **Diener und Beschwörung**: Der Beschwörungsstab ist ein "verdammt gefährliches Objekt", mit dem Kreaturen aus den Reichen der Alten Götter herbeigerufen werden können. Die Neuen Götter hatten versucht, sämtliche dieser Stäbe zu vernichten oder zu verbannen [P-31].
+Die Alten Götter sind durch folgende Merkmale gekennzeichnet:
+
+- **Verbannt, aber nicht vernichtet**: Sie wurden in andere Ebenen verbannt, nicht zerstört. Ihre Macht ist trotz der Verbannung weiterhin spürbar.
+- **Streben nach Rückkehr**: Sie versuchen, durch Portale wieder an Macht zu gelangen.
+- **Anhänger**: Die Dämonen sind ihre Anhänger und handeln in ihrem Namen.
+- **Fähigkeit, Seelen zu binden**: Die gefangenen Seelen im Dungeon sind durch Netze gefesselt, die auf der Seele "hängen" – ein Hinweis auf die Fähigkeit der Alten Götter, Seelen zu binden und gefangen zu halten.
+- **Kommunikation**: Sie können durch gefangene Seelen oder andere Kanäle mit Lebenden kommunizieren, wie die Stimmen im Dungeon zeigen.
 
 ## Beziehungen und Verbindungen
 
-- **Neue Götter**: Die Alten Götter wurden von den Neuen Göttern im Krieg besiegt und verbannt. Der Sieg der Neuen Götter war jedoch knapp und nur möglich, weil einige der Alten Götter in Abyssalis gefangen wurden [P-24].
-- **Gefangene Seelen**: In einem Dungeon begegnete die Gruppe den gefangenen Seelen von Kriegern, die einst gegen die Alten Götter kämpften und verloren ("wir haben versagt"). Diese Seelen reagierten überrascht und hoffnungsvoll auf Dodos Aussage, dass die Alten Götter verbannt seien, und baten um Gebete für ihre Befreiung [P-12].
-- **Kultisten**: In Willauch existierte ein Kult, der die Alten Götter verehrte und Schriften in ihrer Sprache verfasste. Das Anwesen in der Tempelanlage war "wahrscheinlich mal Teil eines Kults" und die Vergangenheit Willauchs ist "definitiv geprägt von den alten Göttern" [P-29].
-- **Die Schlangenfigur**: Dodo betete zu einer Schlangenfigur, die offenbar einen Vertreter der Alten Götter darstellte. Sein Gebet wurde erhört, wenngleich die Folgen "zweifelhaft" waren [P-12].
+- **Zu den neuen Göttern**: Die neuen Götter haben die Alten Götter verdrängt und in andere Ebenen verbannt. Der Krieg zwischen ihnen war die "elendige Schlacht", von der die gefangenen Seelen berichten.
+- **Zu den Dämonen**: Die Dämonen sind die Anhänger der Alten Götter und dienen ihnen.
+- **Zu den gefangenen Seelen**: Die Seelen im Dungeon haben im Krieg gegen die Alten Götter gekämpft und versagt. Sie sind seither gefangen – vermutlich als Strafe oder als Werkzeug der Alten Götter.
+- **Zu den Helden**: Die Helden der Kampagne (Cookie, Lindo Laut und ihre Gefährten) begegnen den Alten Göttern indirekt durch die gefangenen Seelen. Lindo Laut stellt die provokante Frage: "Wenn die alten Götter keine Macht mehr hätten, wie könnten wir euch befreien?" – was die Seelen dazu bringt, um Befreiung und Gebete zu bitten.
 
 ## Chronologie
 
-- **Session 2025-05-27**: Erste Erwähnung der Alten Götter als ursprüngliche Götter der Welt. Sie wurden von den Neuen Göttern in eine dämonische Dunkle Welt verbannt und schicken nun Diener wie den Minerdämon durch Rifts. Die Gilde bekämpft diese Bedrohung [P-09].
-- **Session 2025-06-17**: Die Gruppe findet Seelenweben mit gefangenen Seelen, die im Krieg gegen die Alten Götter kämpften. Die Seelen berichten, dass sie die Schlacht verloren haben und eingesperrt wurden. Als Dodo verkündet, dass die Alten Götter keine Macht mehr hätten, reagieren die Seelen mit betretenem Schweigen und der Frage "Seht ihr die Wahrheit?". Sie bitten um Gebete für ihre Befreiung [P-12].
-- **Session 2025-09-30**: Rotunas erfährt aus alten Schriften von der Splitterwelt, die durch den Krieg zwischen Alten und Neuen Göttern entstand. Die Schriften erwähnen Abyssalis/Abyssares, eine alte Bastion der Alten Götter, in der einige von ihnen gefangen wurden, was den Neuen Göttern den knappen Sieg ermöglichte [P-24].
-- **Session 2025-11-14**: Die Gruppe entdeckt in Willauch ein Anwesen, das von Kultisten der Alten Götter genutzt wurde. Die Bücher vor Ort sind in der Sprache der Alten Götter verfasst. Esterossa erkennt, dass die gesamte Vergangenheit Willauchs stark von den Alten Göttern geprägt ist. Ein Amulett, das Türen zum Dungeon öffnet, wird als Überbleibsel identifiziert [P-29].
-- **Session 2025-11-25**: Die Gruppe findet einen Beschwörungsstab mit Inschriften in der Sprache der Alten Götter. Esterossa identifiziert die Gravuren als "Sprache der Old Ones", Lindo Laut erkennt intuitiv die Funktion: Der Stab beschwört Kreaturen aus Abyssalis und anderen Reichen der Alten Götter. Er erfährt, dass solche Objekte von den Neuen Göttern eigentlich vernichtet oder verbannt wurden, und kann den Stab gefahrlos an sich nehmen [P-31].
+- **Vor der Kampagne**: Die Alten Götter herrschten einst, wurden dann aber von den neuen Göttern in einem großen Krieg besiegt und in andere Ebenen verbannt. Die Dämonen wurden ihre Anhänger.
+- **Session 2025-05-27**: Die Helden erfahren grundlegende Informationen über die Alten Götter: Sie wurden von den neuen Göttern verdrängt, sind in andere Ebenen verbannt und versuchen, durch Portale wieder an Macht zu gelangen. Die Dämonen sind ihre Anhänger.
+- **Session 2025-06-17**: Im Dungeon begegnen die Helden gefangenen Seelen, die im Krieg gegen die Alten Götter gekämpft und verloren haben. Die Seelen warnen die Helden zunächst, weiterzugehen, da sie sonst ihre Seele riskieren. Als Lindo Laut behauptet, die Alten Götter seien verbannt, reagieren die Seelen mit betroffener Stille – und eine Stimme fragt, ob er die Wahrheit sage. Lindo Laut kontert, dass die Alten Götter noch Macht haben müssten, sonst könnten die Helden die Seelen nicht befreien. Daraufhin bitten die Seelen: "Befreit uns. Betet für uns." Die Helden erkennen, dass sie durch das Netz vor ihnen hindurchgehen könnten, aber dann würden die Netze auch auf ihrer eigenen Seele hängen.
 
 ## Offene Fragen
 
-- Was genau geschah in Abyssalis, das die Gefangennahme einiger Alter Götter ermöglichte? Die Quellen sagen nur "Von was genau, weiß man nicht" [P-24].
-- Welche Alten Götter sind noch aktiv, und welche wurden vollständig verbannt oder gefangen?
-- Wer oder was verbirgt sich hinter der Schlangenfigur, zu der Dodo betete, und welche Konsequenzen hat die Erhörung dieses Gebets [P-12]?
-- Existieren noch aktive Kulte der Alten Götter, oder sind die in Willauch gefundenen Überreste rein historisch [P-29]?
+- **Wie genau wurden die Alten Götter verbannt?** Die Belege nennen die Verbannung, aber nicht die Umstände oder den Mechanismus.
+- **Welche Macht haben die Alten Götter tatsächlich noch?** Lindo Laut argumentiert, dass sie Macht haben müssten, sonst könnten die Seelen nicht befreit werden – aber die Seelen selbst sind unsicher, ob die Götter wirklich verbannt sind.
+- **Was bedeutet das Netz, das auf der Seele hängt?** Die Seelen sind durch Netze gefesselt, und die Helden könnten durch das Netz hindurchgehen, aber dann würde es auch auf ihrer Seele hängen. Was genau dieses Netz ist und wie es mit den Alten Göttern zusammenhängt, bleibt unklar.
+- **Was bedeutet die Bitte "Betet für uns"?** Die Seelen bitten die Helden, für sie zu beten – ob dies eine Möglichkeit ist, die Alten Götter zu besänftigen oder die Seelen zu befreien, ist offen.
+- **Welche Rolle spielen die Portale?** Die Belege erwähnen, dass die Alten Götter durch Portale wieder an Macht gelangen wollen, aber es ist unklar, wo diese Portale sind und wie sie geöffnet werden können.
 
 ## Belege
 
-[P-09] Session 2025-05-27 @ 00:16:11 (https://www.youtube.com/watch?v=bamCIB_CkR8)
-[P-12] Session 2025-06-17 @ 01:29:03 (https://www.youtube.com/watch?v=tl76B4V0io8)
-[P-24] Session 2025-09-30 @ 01:50:02 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
-[P-29] Session 2025-11-14 @ 00:56:53 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)
-[P-31] Session 2025-11-25 @ 00:56:14 (https://www.youtube.com/watch?v=wd5R4fJfngY)
+[P-09] Session 2025-05-27 @ 00:15:30 – https://www.youtube.com/watch?v=bamCIB_CkR8
+[P-12] Session 2025-06-17 @ 01:29:03 – https://www.youtube.com/watch?v=tl76B4V0io8

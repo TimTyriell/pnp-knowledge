@@ -1,16 +1,16 @@
 ---
 type: Item
 title: Stein von Cookie
-description: Ein Stein, den Dodo von Cookie erhielt und der es ermöglicht, mit Tieren
-  zu sprechen. Er übergibt ihn Lunara, damit sie mit Perry kommunizi…
+description: Ein Stein, den Dodo von Cookie erhalten hat und der es ermöglicht, mit
+  Tieren zu sprechen. Dodo gibt ihn Lunara, damit sie mit Perry kommun…
 tags:
 - items
 timestamp: '2025-11-18T00:00:00Z'
 id: ITEM_STEIN_VON_COOKIE
-subtype: Werkzeug
+subtype: Artefakt
 ---
 
-Ein Stein, den [Dodo](/characters/dodo.md) von [Cookie](/characters/cookie.md) erhielt und der es ermöglicht, mit Tieren zu sprechen. Er übergibt ihn Lunara, damit sie mit [Perry](/npcs/perry_das_schnabeltier.md) kommunizieren kann.
+Ein Stein, den [Dodo](/characters/dodo.md) von [Cookie](/characters/cookie.md) erhalten hat und der es ermöglicht, mit Tieren zu sprechen. Dodo gibt ihn Lunara, damit sie mit [Perry](/npcs/perry_das_schnabeltier.md) kommunizieren kann.
 
 # Belege
 

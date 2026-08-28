@@ -1,16 +1,16 @@
 ---
 type: NPC
 title: Floran
-description: Floran ist der Anführer der Silberkerne-Bande und der Geliebte von Adria.
-  Er wird von den Scouts der Stadt als möglicher Mörder des Diploma…
+description: Floran ist der Anführer der Silberkerne, die die Farm der Heinrichs übernommen
+  haben. Er wird als Drahtzieher der Banditen beschrieben. Im…
 tags:
 - npcs
 timestamp: '2026-03-23T00:00:00Z'
 id: NPC_FLORAN
 ---
 
-Floran ist der Anführer der [Silberkerne](/factions/silberkerne.md)-Bande und der Geliebte von [Adria](/npcs/adria.md). Er wird von den Scouts der Stadt als möglicher Mörder des Diplomaten beschrieben. Im Kampf zeigt er sich als erfahrener Gegner, der einen Angriff von [Otis](/characters/otis.md) abblocken kann und sogar einen Stresspunkt einsetzt, um einem Bolzen auszuweichen. Nach einem harten Kampf wird er von der Gruppe überwältigt, gefesselt und schwer verletzt. Er beteuert seine Unschuld am Mord und kritisiert [Willoch](/locations/willauch.md) als grausame Stadt. Sein Schicksal bleibt offen, aber seine Gefangennahme ist der Höhepunkt der Mission.
+Floran ist der Anführer der [Silberkerne](/factions/silberkerne.md), die die [Farm der Heinrichs](/locations/farm_der_heinrichs.md) übernommen haben. Er wird als Drahtzieher der Banditen beschrieben. Im Kampf wird er von der Gruppe schwer verletzt und gefangen genommen. Er beteuert, den Diplomaten nicht ermordet zu haben, und bittet um Gnade. Er zeigt eine liebevolle Beziehung zu [Adria](/npcs/adria.md), seiner Gefährtin. Er wird nach [Willauch](/locations/willauch.md) gebracht, wo ihm vermutlich die Hinrichtung droht.
 
 # Belege
 
-[P-42] Session 2026-03-23 @ 00:10:24 (https://www.youtube.com/watch?v=niVxKtdQBn0)
+[P-42] Session 2026-03-23 @ 00:10:51 (https://www.youtube.com/watch?v=niVxKtdQBn0)

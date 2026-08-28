@@ -1,68 +1,79 @@
 ---
 type: NPC
 title: Voras der Heilige
-description: Voras der Heilige ist ein uralter Vampir und ehemaliger Graf, der über
-  Jahrhunderte in einem Sarkophag in den Katakomben unter Gemata ruhte…
+description: Voras der Heilige ist ein mächtiger Vampir und der Herr von Breska. Ursprünglich
+  war er in der Region unter dem Namen „der Schrecken“ bekan…
 tags:
 - npcs
-timestamp: '2026-04-09T00:00:00Z'
+timestamp: '2026-08-04T00:00:00Z'
 id: NPC_VORAS
 aliases:
-- Graf Voras der Heilige
+- Der Graf
 - Voras
-- Voras der Heilige
-- Voras (Voras der Heilige / Voras der Schrecken)
 ---
 
 ## Überblick
 
-Voras der Heilige ist ein uralter Vampir und ehemaliger Graf, der über Jahrhunderte in einem Sarkophag in den Katakomben unter Gemata ruhte. Sein ursprünglicher Beiname lautete „Voras der Schrecken“, doch nach seiner Wiedererweckung stellt er sich selbst als „Voras der Heilige“ vor – eine Bezeichnung, die von den Helden prompt auf seiner Grabinschrift korrigiert wird. Als Vampirfürst von Bresca finanzierte er den Aufbau des Dorfes zu einer aufstrebenden Stadt und erwies sich als mächtiger, wenn auch launischer und zunehmend verbitterter Verbündeter im Kampf gegen die Hack. Trotz seiner undurchsichtigen Motive und seines oft herrischen Auftretens opferte er schließlich sein gesamtes Vermögen für einen großen Plan, diente der Vampirgottheit Kaleandra und fiel in der finalen Schlacht um Ehrenfels.
+Voras der Heilige ist ein mächtiger Vampir und der Herr von Breska. Ursprünglich war er in der Region unter dem Namen „der Schrecken“ bekannt, bevor er sich nach seiner Wiedererweckung als „Voras der Heilige“ vorstellte. Er dient der Göttin Kaleandra und ist ein Anhänger der alten Götter. Voras ist eine zentrale Figur im Kampf gegen die Dämonen und verbündet sich zeitweise mit der Heldengruppe, bevor er in der Schlacht um Ehrenfels von Nerash getötet wird.
 
 ## Rolle in der Kampagne
 
-Voras wurde in der ersten Spielsitzung von [Lendras](/npcs/lendras.md) gezielt aus seinem Sarkophag erweckt, weil dieser ihn als machtvollen Verbündeten im Kampf gegen die Hack benötigte: „Wir brauchen ihn. Für das, was ich vorhabe.“ Nach seiner Wiedererweckung zeigte Voras sofort seine überwältigende Stärke, indem er mit einem lautlosen, dunklen Geräusch den Anführer der verbliebenen Monster tötete und die übrigen Kreaturen in die Flucht schlug. Er wurde so zu einer zentralen Waffe gegen die Bedrohung durch die Hack.
+Voras tritt erstmals in Erscheinung, als der Magier Lendras ihn in einer Katakombe aus seinem Sarg erweckt. Die Gruppe suchte ihn, weil sie seine Hilfe benötigte: Eine Hack war auf der Suche nach seiner Gemahlin. Nach seiner Erweckung schließt sich Voras der Gruppe an und verlässt mit ihr Gemata.
 
-Im Verlauf der Kampagne entwickelte sich Voras vom undurchsichtigen, aristokratischen Vampirfürsten Brescas – der die Gruppe zunächst von oben herab behandelte und später in Wut geriet, als ein uraltes Buch in seiner Bibliothek geöffnet und vernichtet wurde – zu einem verbitterten Verbündeten, der mit [Nox](/npcs/nox.md) monatelang einen Plan schmiedete und dafür sein gesamtes Vermögen opferte. Nachdem die Gruppe eine von ihm für aussichtslos gehaltene Prüfung bestand, entschuldigte er sich und sagte volle Unterstützung zu. In der finalen Schlacht um Ehrenfels führte er eine untote Vampirarmee auf Seiten der Verteidiger an und fiel im Kampf gegen Nerash.
+Später stellt sich heraus, dass Voras der Unterzeichner des Hilferufs aus Breska ist. In diesem Schreiben berichtet er, dass die Stadt von Untoten überrannt wurde und eine Gestalt in schwarzer Rüstung Richtung Westen verschwand. Er bittet um Hilfe, obwohl die Stadt faktisch nicht mehr existiert.
+
+In der Schlacht um Ehrenfels kämpft Voras mit seinen Kriegern gegen die Dämonen und belebt gefallene Krieger wieder. Er wird jedoch von Nerash angegriffen und getötet. Sein Tod wird in der Stadt Ehrenfels als schwerer Verlust betrauert; zusammen mit Nox und Rotunas gilt er als verloren.
 
 ## Wichtige Merkmale
 
-Voras erscheint nach seiner Erweckung als distinguierter Vampir von aristokratischer Statur. Mit fortschreitender Kampagne präsentiert er sich zunehmend mächtiger und stilvoller, thront in seinem Anwesen in Bresca und gebietet über untote Kreaturen und Beschwörer.
+Voras ist ein Vampir von beträchtlicher Macht. Bereits bei seiner ersten Begegnung mit der Gruppe tötet er die verbliebenen Goblins mit einem einzigen Blick, indem er sie bluten lässt und sterben lässt. Er wirkt mächtig und selbstbewusst und bietet der Gruppe seine Hilfe an.
 
-Seine Fähigkeiten sind gewaltig: Bereits kurz nach seiner Wiedererweckung demonstriert er mit einem bloßen Fingerzeig und einem lautlosen, dunklen Geräusch die Macht, Gegner augenblicklich zu töten. Er verfügt über weitreichende nekromantische Kräfte – so plante er etwa, den Berg Zebros mit Nekromantie unter seine Kontrolle zu bringen, um von dort aus die Hack zu bedrohen. In der finalen Schlacht befehligt er eine ganze Armee von Vampiren.
+Seine Fähigkeiten umfassen offenbar auch die Wiederbelebung gefallener Krieger im Kampf, was ihn zu einem wertvollen Verbündeten im Krieg gegen die Dämonen macht. In der Schlacht um Ehrenfels kämpft er an der Spitze seiner eigenen Truppe aus untoten Vampiren gegen die Dämonen.
 
-Charakterlich ist Voras komplex: Zunächst zeigt er sich gegenüber seinen „Rettern“ höflich-distanziert, doch seine Stimmung kann abrupt in Zorn umschlagen, wie etwa, als er von der Vernichtung des uralten Buches erfährt, einen Stuhl zerstört und fluchend den Raum verlässt. Er verlangt bedingungslosen Respekt, den er mit harschen Worten einfordert: „Lasst euch nicht von den Kreaturen beeinflussen.“ Hinter dieser Fassade verbirgt sich jedoch ein zutiefst verbitterter Herrscher, der sein gesamtes Vermögen für einen Plan opferte und Bresca danach für immer verlassen wollte, weil niemand ihm half. Er dient der Vampirgottheit [Kaleandra, der Roten](/deities/kaleandra_die_rote.md).
+Voras ist ein Anhänger der alten Götter und dient der Göttin Kaleandra. Er wird von Vitius als „Abscheulichkeit“ und „Altdiener alter Götter“ bezeichnet, was auf eine feindselige Haltung der neuen Götter oder ihrer Anhänger gegenüber ihm hindeutet.
 
 ## Beziehungen und Verbindungen
 
-- **[Lendras](/npcs/lendras.md):** Alter Verbündeter, der ihn aus dem Sarkophag erweckte und als Waffe gegen die Hack benötigte. Voras erkennt Lendras sofort nach seiner Wiedererweckung an.
-- **[Nox](/npcs/nox.md):** Widerwilliger Verbündeter, mit dem Voras gemeinsam die Ringe für [Lindo Laut](/characters/lindo_laut.md) schmiedete und einen monatelangen Plan vorbereitete, der sein gesamtes Vermögen kostete.
-- **[Dodo](/characters/dodo.md), [Valeria](/characters/valeria.md), [Esterossa](/characters/esterossa.md), [Rotunas](/characters/rotunas.md), [Lindo Laut](/characters/lindo_laut.md), [Cookie](/characters/cookie.md):** Die Helden, die ihn erweckten. Das Verhältnis ist angespannt: Voras beschuldigt sie, insbesondere durch das von [Lunara Velora](/characters/lunara_velora.md) hinterlassene Buch, das ganze Unheil (Belorus, Vasul, die Hexe) ausgelöst zu haben. Dennoch entschuldigt er sich später bei ihnen und sichert volle Unterstützung zu.
-- **[Kaleandra, die Rote](/deities/kaleandra_die_rote.md):** Die Vampirgottheit, der Voras dient.
-- **Bewohner von Bresca:** Als Graf und Stadtherr finanzierte er den Aufbau Brescas, kümmerte sich um Verteidigung, Kapelle und Handelsverkehr und schickte selbst unter schwersten Bedingungen Soldaten mit wichtigen Botschaften aus.
-- **Nerash:** Der Gegner, der Voras in der finalen Schlacht tötet, nachdem dieser versuchte, Sandro zu rächen.
+**Lendras:** Der Magier erweckt Voras aus seinem Sarg und bezeichnet ihn als „mein Herr“. Er ist offenbar ein treuer Diener, der auch später noch in Voras' Diensten steht.
+
+**Nox:** Voras hat zusammen mit Nox Ringe geschmiedet und ein Portal nach Abyssalis gebaut. Die genauen Details ihrer Zusammenarbeit bleiben unklar, aber sie scheinen eng verbündet gewesen zu sein. Beide werden nach der Schlacht um Ehrenfels als verloren erwähnt.
+
+**Lunara:** Voras macht Lunara für das Unglück von Breska verantwortlich, entschuldigt sich später jedoch für diese Anschuldigung.
+
+**Dodo:** Voras empfängt Dodo in seiner Gruft und erklärt ihm die Zerstörung der Stadt. Er ist bereit, die Gruppe zu unterstützen, nachdem sie ihre Stärke bewiesen haben.
+
+**Nerash:** Der Dämon Nerash tötet Voras in der Schlacht um Ehrenfels, indem er ihn zerfleischt. Vitius berichtet später, dass Voras von Nerash getötet wurde.
+
+**Die Hexe:** In einem belauschten Gespräch erwähnt die Hexe, dass „der Graf“ ihr im Weg sei und näher komme. Mit dem Grafen ist Voras gemeint, der offenbar eine Bedrohung für die Pläne der Hexe darstellt.
+
+**Kaleandra:** Voras dient der Göttin Kaleandra.
 
 ## Chronologie
 
-**Session 2025-04-23:** [Lendras](/npcs/lendras.md) erweckt Voras aus seinem Sarkophag in den Katakomben unter Gemata. Die Inschrift „Voras der Schrecken“ wird von [Valeria](/characters/valeria.md) zu „Voras der Heilige“ korrigiert. Voras tötet mühelos den Anführer der angreifenden Monster und vertreibt die übrigen.
+**Erste Begegnung (Gemata):** Lendras erweckt Voras aus seinem Sarg in einer Katakombe. Voras stellt sich als „Voras der Heilige“ vor und erklärt, dass eine Hack nach seiner Gemahlin sucht. Er tötet die verbliebenen Goblins mit einem Blick und schließt sich der Gruppe an, um Gemata zu verlassen.
 
-**Session 2025-06-25:** Voras präsentiert sich als Vampirgraf von Bresca, der das Dorf zu einer Stadt ausgebaut hat. Er plant, den Berg Zebros nekromantisch zu kontrollieren, um die Hack zu bedrohen. Nachdem die Helden von ihrer Begegnung mit dem dunklen Paladin, dem gestohlenen Buch und der Vernichtung der vier heiligen Engel [Durans](/deities/heiliger_duran.md) berichten, gerät er in Rage, zerstört einen Stuhl und verlässt den Raum.
+**Erwähnung durch die Hexe:** Die Hexe sagt in einem belauschten Gespräch: „Aber der Graf ist uns im Weg. Er kommt uns näher.“ Sie scheint ihn als Bedrohung für ihre Pläne zu betrachten.
 
-**Session 2026-01-06:** Voras, inzwischen Lord von Breska, hat eine wichtige Erkenntnis und schickt unter schwierigsten Bedingungen Soldaten mit einer Botschaft los. In der Stadt herrscht Nahrungsmittelknappheit, erste Bewohner sind gestorben.
+**Hilferuf aus Breska:** Voras unterzeichnet einen Hilferuf, der an alle Richtungen im Land verschickt wird. Darin beschreibt er, dass die menschliche Bevölkerung beinahe verhungert ist, die Mauern gefallen sind und die Stadt von Untoten überrannt wurde. Eine Gestalt in schwarzer Rüstung verschwand Richtung Westen. Sein Wappen ist auf dem Soldaten Hans zu sehen.
 
-**Session 2026-03-10:** Voras, Vampirfürst von Bresca und widerwilliger Verbündeter von [Nox](/npcs/nox.md), empfängt die Gruppe zunächst aggressiv, um eine Scharade für seine Begleiter aufrechtzuerhalten. In seinem Anwesen offenbart er, dass er mit Nox monatelang die Ringe für [Lindo Laut](/characters/lindo_laut.md) geschmiedet und sein gesamtes Vermögen investiert hat. Er ist verbittert und will Bresca verlassen. Nachdem die Helden eine Prüfung in der Splitterwelt bestehen, entschuldigt er sich, sichert volle Unterstützung zu und bekennt sich zu [Kaleandra, der Roten](/deities/kaleandra_die_rote.md).
+**Begegnung in der Gruft:** Voras empfängt Dodo in seiner Gruft in Breska. Er ist deutlich gestärkter und kräftiger als bei ihrer ersten Begegnung. Er erklärt die Zerstörung der Stadt und macht zunächst Lunara dafür verantwortlich, entschuldigt sich später jedoch. Er offenbart, dass er zusammen mit Nox Ringe geschmiedet und ein Portal nach Abyssalis gebaut hat. Er ist bereit, die Gruppe zu unterstützen, nachdem sie ihre Stärke bewiesen haben.
 
-**Session 2026-04-09:** Voras führt eine untote Vampirarmee auf Seiten Ehrenfels' in die finale Schlacht. Er wird von Nerash getötet, als er versucht, Sandro zu rächen; seine Krieger fallen mit ihm.
+**Schlacht um Ehrenfels:** Voras kämpft mit seinen Kriegern gegen die Dämonen und belebt gefallene Krieger wieder. Er wird von Nerash angegriffen und getötet, als dieser ihn zerfleischt.
+
+**Nachwirkungen:** Voras wird zusammen mit Nox und Rotunas als verloren erwähnt. Die Stadt Ehrenfels ist demoralisiert, und der Verlust der Helden wird schwer betrauert. Vitius berichtet später, dass Voras von Nerash getötet wurde und bezeichnet ihn als Abscheulichkeit und Altdiener alter Götter. Er erwähnt auch, dass Voras mit Nox zusammengearbeitet hat, aber die Details bleiben unklar.
 
 ## Offene Fragen
 
-- Was genau war die Erkenntnis, die Voras in der Botschaft von Session 2026-01-06 hatte und die ihn ein Dutzend Soldaten unter schwersten Bedingungen aussenden ließ?
-- Worin bestand die Scharade mit den untoten Kreaturen und dem Beschwörer, die Voras vor seinen eigenen Begleitern aufrechterhielt, und wer waren diese Begleiter?
+- Was genau geschah zwischen Voras und Nox? Die Details ihrer Zusammenarbeit – das Schmieden der Ringe und der Bau des Portals nach Abyssalis – bleiben unklar.
+- Wer ist die Gemahlin von Voras, nach der die Hack suchte? Dies wird in den Belegen nicht weiter ausgeführt.
+- Welche Rolle spielte Voras im Konflikt zwischen alten und neuen Göttern? Er wird als Anhänger alter Götter bezeichnet und dient Kaleandra, aber die genauen Umstände seines Dienstes sind nicht bekannt.
 
 ## Belege
 
-[P-05] Session 2025-04-23, 01:53:41 – https://www.youtube.com/watch?v=z3C-bewKqUs
-[P-13] Session 2025-06-25, 00:24:24 – https://www.youtube.com/watch?v=tpkO9uGw6-I
-[P-14] Session 2025-07-09, 00:02:44 – https://www.youtube.com/watch?v=XOnHa6CmDbo
-[P-32] Session 2026-01-06, 01:03:38 – https://www.youtube.com/watch?v=VGw81seFvbo
-[P-40] Session 2026-03-10, 00:55:20 – https://www.youtube.com/watch?v=Kr9_AC2XtOw
-[P-46] Session 2026-04-09, 01:04:42 – https://www.youtube.com/watch?v=vcGkejr8_nI
+[P-05] Session 2025-04-23 @ 01:53:37 (https://www.youtube.com/watch?v=z3C-bewKqUs)
+[P-12] Session 2025-06-17 @ 01:49:24 (https://www.youtube.com/watch?v=tl76B4V0io8)
+[P-33] Session 2026-01-13 @ 00:38:41 (https://www.youtube.com/watch?v=w4LB1s9_3rs)
+[P-40] Session 2026-03-10 @ 00:39:58 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
+[P-46] Session 2026-04-09 @ 01:04:10 (https://www.youtube.com/watch?v=vcGkejr8_nI)
+[S1-01-A] Session 2026-07-29 @ 00:21:13 (https://www.youtube.com/watch?v=umGyKLkefJI)
+[S1-02-A] Session 2026-08-04 @ 00:28:00 (https://www.youtube.com/watch?v=qRj2t3wQHfs)

@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Sandro
-description: Sandro ist ein liläugiger Magier im Dienste des Vampirs Voras. Er tritt
-  als kundiger Führer auf, der die Gruppe durch ein magisches Portal…
+description: Sandro ist ein mächtiger Magier und Verbündeter von Voras, der die Gruppe
+  durch die Splitterwelt führt und sie auf ihrem Weg nach Abyssalis…
 tags:
 - npcs
 timestamp: '2026-04-09T00:00:00Z'
@@ -11,54 +11,50 @@ id: NPC_SANDRO
 
 ## Überblick
 
-Sandro ist ein liläugiger Magier im Dienste des Vampirs Voras. Er tritt als kundiger Führer auf, der die Gruppe durch ein magisches Portal in die Splitterwelt geleitet. Im Kampf setzt er sowohl arkane Offensivmagie als auch heilige Schriftrollen ein, wobei er sich selbst nicht schont. Sein Einsatz endet tragisch, als er von dem mächtigen Wesen Nerash getötet wird.
+Sandro ist ein mächtiger Magier und Verbündeter von [Voras](/npcs/voras.md), der die Gruppe durch die Splitterwelt führt und sie auf ihrem Weg nach Abyssalis begleitet. Er wird als „sehr komische Gestalt“ mit lila Augen beschrieben, die vor der Gruppe steht. Sandro unterstützt die Gruppe mehrfach mit seinen magischen Fähigkeiten, sowohl beim Durchqueren der Splitterwelt als auch im Kampf gegen Dämonen. Er findet schließlich den Tod, als er von [Nerash](/deities/nerash.md) durch die Luft geschleudert wird.
 
 ## Rolle in der Kampagne
 
-Sandro fungiert zunächst als eine Art Wegbereiter und Unterstützer für die Gruppe. Er wird von Voras damit betraut, die Helden durch ein vorbereitetes Portal zu führen, das sie näher an ihr Ziel in Abyssalis bringen soll. Er erklärt die Funktionsweise des Portals – es ist in beide Welten offen und mit seiner Hilfe können die Charaktere auch wieder zurückkehren.
+Sandro dient der Gruppe als Führer und magischer Unterstützer. In der ersten Begegnung führt er die Gruppe durch ein Portal, das sie von der Splitterwelt aus sehr nah nach Abyssalis bringt. Der GM beschreibt: „Dieses Portal bringt euch sehr nah bereits nach Abyssalis. Zumindest auf der Splitterwelt. Wir haben bereits öfter mal einige Exkurse dorthin geleitet, um euch bereits den Weg ein wenig zu ebnen. Aber ihr müsstet letztendlich dort durch. Und wenn ihr bereit seid, dann folgt Sandro durch das Portal.“
 
-Im Kampf zeigt Sandro wiederholt Solidarität mit der Gruppe und ihren Verbündeten, selbst wenn seine eigenen Beiträge begrenzt sind. Seine letzte bedeutende Handlung ist das Wirken eines magischen Gefängnisses („magischer Cage“), das heranstürmende Dämonen kurzzeitig aufhält und den anderen die Flucht ermöglicht. Er opfert sich dabei letztlich selbst.
+Sandro fungiert dabei auch als Garant für die Rückkehr: „Mit Sandro werdet ihr wieder zurückkommen. Das Portal ist in beide Welten offen.“ Er hat also die Aufgabe, die Gruppe sicher durch die Splitterwelt zu führen und ihnen den Weg zu ebnen.
+
+Später kämpft Sandro in [Ehrenfels](/locations/ehrenfels.md) gegen Dämonen, als die Stadt angegriffen wird. Er wird von [Vasul](/deities/vharzul.md) weggeschickt, als dieser die Gruppe durch ein Tor nach Abyssalis führt. In der finalen Schlacht unterstützt er die Gruppe mit einem magischen Käfig, um Dämonen aufzuhalten, wird dabei jedoch von Nerash getötet.
 
 ## Wichtige Merkmale
 
-Sandros auffälligstes äußeres Merkmal sind seine **lila Augen**. Die Erzählung beschreibt ihn als „eine sehr komische Gestalt, die dort vor euch steht“ [1:19:15], was auf ein ungewöhnliches oder zumindest markantes Erscheinungsbild hindeutet.
+Sandro ist ein mächtiger Magier mit charakteristischen lila Augen. Er verfügt über mehrere magische Fähigkeiten:
 
-**Magische Fähigkeiten:**
+- **Portalführung**: Er kennt die Wege durch die Splitterwelt und kann Portale nutzen, die in beide Welten offen sind.
+- **Lichtblitz**: Im Kampf gegen Dämonen in Ehrenfels sendet er einen Lichtblitz in Richtung eines Dämons. Dieser Angriff bleibt jedoch wirkungslos: „Den hat das nicht mal ein Kratzer gemacht.“
+- **Magischer Käfig**: In der Schlacht gegen Nerashs Kreaturen erschafft er ein magisches Gefängnis, das die Kreaturen für einen Augenblick aufhält: „Sandro schleudert in dem Augenblick so eine Art magisches Gefängnis auf die Kreaturen. Und für einen Augenblick können die nicht passieren.“
 
-- **Eismagie:** Er feuert im Kampf einen magischen Eiszapfen auf eine Schattenkreatur.
-- **Lichtmagie:** In einer späteren Begegnung schickt Sandro einen Lichtblitz gegen einen Dämon, der Vasul bedroht. Der Angriff zeigt jedoch keinerlei Wirkung – „das juckt den 0,0. Den hat das nicht mal ein Kratzer gemacht“ [46:14].
-- **Heilige Schriftrollen:** Er setzt eine „gleißende Kugel aus einer heiligen Schriftrolle“ ein, die einer Schattenkreatur großen Schaden zufügt. Später übergibt er auf Lindos Aufforderung hin seine letzte verbliebene Schriftrolle an Brim.
-- **Magisches Gefängnis:** In seiner letzten Szene wirkt er „eine Art magisches Gefängnis“ (magischer Cage) auf mehrere Dämonen, die für einen Moment nicht passieren können.
-
-**Verwundbarkeit und Selbstaufopferung:**
-
-Bereits im ersten dokumentierten Kampf erleidet Sandro massiven Schaden (54 Punkte) und muss sich zurückziehen. Trotz seiner eigenen Verletztheit zeigt er keine Zögerlichkeit, sich erneut in Gefahr zu begeben. Sein letzter Einsatz endet tödlich: Er wird von Nerash getötet, als dieser auf dem Schlachtfeld erscheint.
+Sein Auftreten wird als ungewöhnlich beschrieben („sehr komische Gestalt“), was zusammen mit den lila Augen auf seine magische Natur hindeutet.
 
 ## Beziehungen und Verbindungen
 
-- **[Voras](/npcs/voras.md):** Sandro dient dem Vampir Voras direkt und wird von diesem mit der Führung der Gruppe durch das Portal beauftragt. Voras‘ Aussage „dann folgt Sandro durch das Portal“ [1:19:15] zeigt das Vertrauensverhältnis.
-- **Die Heldengruppe (Brim, Lindo, Lunara, Otis, Rotunas u.a.):** Nach dem ersten gemeinsamen Kampf verneigt sich Sandro vor der Gruppe und bezeichnet sie als **„Champions“**, was tiefen Respekt für ihre Stärke ausdrückt. Auf Lindos Bitte hin übergibt er Brim bereitwillig seine letzte Schriftrolle.
-- **[Vasul](/deities/vharzul.md):** Sandro greift in einer Szene einen Dämon an, der Vasul bedroht, und zeigt damit Solidarität mit Vasul und der Gruppe.
+- **[Voras](/npcs/voras.md)**: Sandro ist ein Verbündeter von Voras und arbeitet mit ihm zusammen, um die Gruppe durch die Splitterwelt zu führen.
+- **[Vasul](/deities/vharzul.md)**: Vasul schickt Sandro weg, als er die Gruppe nach Abyssalis führt. Die genaue Natur ihrer Beziehung wird nicht näher ausgeführt.
+- **Die Gruppe**: Sandro zeigt Respekt vor der Gruppe und unterstützt sie mehrfach mit seinen Fähigkeiten. Er gibt [Brim](/characters/brim.md) eine Schriftrolle.
+- **[Nerash](/deities/nerash.md)**: Nerash ist sein Mörder – er schleudert Sandro durch die Luft und tötet ihn damit.
 
 ## Chronologie
 
-**Erste Begegnung – Das Portal (Session 2026-03-10):**
-Sandro wird von Voras vorgestellt und führt die Gruppe zu einem dunklen Konstrukt mit einem großen, flüssigen Portal in der Mitte. Er erklärt, dass dieses Portal in die Splitterwelt und von dort weiter nach Abyssalis führt. Auf die Frage, wie man zurückkommt, antwortet der GM: „Mit Sandro werdet ihr wieder zurückkommen“ [1:19:15].
+**Session 2026-03-10 – Die Reise durch die Splitterwelt**: Sandro begegnet der Gruppe erstmals an einem dunklen Konstrukt mit einem großen flüssigen Portal in der Mitte. Er führt sie durch das Portal in Richtung Abyssalis. Der GM beschreibt, dass die Strukturen aus der Splitterwelt und Abyssalis bekannt sind und dass bereits einige Exkurse dorthin geleitet wurden, um der Gruppe den Weg zu ebnen. Sandro gibt Brim eine Schriftrolle und zeigt Respekt vor der Gruppe. Im Kampf gegen eine Kreatur wird er schwer verletzt.
 
-Während der Passage durch die Splitterwelt kommt es zum Kampf mit einer Schattenkreatur. Sandro feuert einen magischen Eiszapfen, setzt dann eine gleißende Kugel aus einer heiligen Schriftrolle ein und fügt dem Wesen großen Schaden zu. Dabei erleidet er jedoch selbst 54 Schaden und muss sich zurückziehen. Auf Lindos Aufforderung übergibt er Brim seine letzte Schriftrolle. Nach dem siegreichen Kampf verneigt er sich vor der Gruppe und nennt sie Champions. Es wird angedeutet, dass er später zu Runen befragt werden könnte.
+**Session 2026-03-31 – Die Verteidigung von Ehrenfels**: Sandro kämpft in Ehrenfels gegen Dämonen. Er sendet einen Lichtblitz in Richtung eines Dämons, der jedoch keinerlei Wirkung zeigt. Als Vasul die Gruppe durch ein Tor nach Abyssalis führt, wird Sandro weggeschickt. Der GM beschreibt die Szene: „Ihr seht, wie in dem Augenblick der Sandro einen Lichtblitz in Richtung Dämon schickt und der den trifft, aber das juckt den 0,0. Den hat das nicht mal ein Kratzer gemacht.“ Während die Gruppe durch das Portal flieht, bleiben Sandro und andere Kämpfer zurück, um Ehrenfels zu verteidigen.
 
-**Zweite Begegnung – Ehrenfels (Session 2026-03-31):**
-Sandro erscheint kurz während der chaotischen Kämpfe in Ehrenfels. Während Nox die Gruppe zur Flucht drängt („Geht! Wir kümmern uns!“ [46:14]) und Vasul ein Tor öffnet, feuert Sandro einen Lichtblitz auf einen Dämon, der Vasul bedroht. Der Angriff ist vollkommen wirkungslos. Sandros Auftritt zeigt dennoch seine Bereitschaft, an der Seite der Gruppe zu kämpfen, selbst gegen übermächtige Gegner. Lunara kommentiert die Szene ironisch: „Das ist ja ein richtiger Treff hier. Da sieht man mal alle Leute, die man sonst immer nur einzeln einmal im Jahr sieht“ [45:54].
-
-**Letzter Einsatz und Tod (Session 2026-04-09):**
-Während eines Gefechts gegen mehrere Dämonen nutzt der GM Sandros Fähigkeit: „Und Sandro schleudert in dem Augenblick so eine Art magisches Gefängnis auf die Kreaturen. Und für einen Augenblick können die nicht passieren“ [1:28:05]. Dieser magische Käfig hält die Dämonen kurz auf und verschafft den anderen Zeit zur Flucht („Rennt, Jungs, los“ [1:28:42]). Kurz darauf trifft Nerash ein und tötet Sandro. Die Belege beschreiben dies nüchtern: „Er wird von Nerash getötet, als dieser erscheint“ [Summary 3].
+**Session 2026-04-09 – Der Tod durch Nerash**: In der Schlacht gegen Nerashs Kreaturen unterstützt Sandro die Gruppe mit einem magischen Käfig, der die Kreaturen kurzzeitig aufhält. Der GM beschreibt: „In dem Augenblick nutze ich die Fähigkeit von dem lieben Sandro. Und Sandro schleudert in dem Augenblick so eine Art magisches Gefängnis auf die Kreaturen. Und für einen Augenblick können die nicht passieren.“ Kurz darauf wird Sandro von Nerash getötet, als dieser ihn durch die Luft schleudert.
 
 ## Offene Fragen
 
-- **Runen-Wissen:** In der ersten Session wird angedeutet, dass Sandro später zu Runen befragt werden könnte. Die verfügbaren Belege zeigen nicht, ob dies jemals geschah oder ob Sandro tatsächlich über spezielles Wissen zu Runen verfügte.
+- Was genau war Sandros Rolle in den „Experimenten“, von denen Voras spricht („lasst uns überprüfen, ob unsere Experimente funktioniert haben“)?
+- Welche Beziehung hatte Sandro zu Voras und wie lange arbeiteten sie bereits zusammen?
+- Welche Bedeutung hatten seine lila Augen – handelte es sich um ein Zeichen seiner magischen Natur oder um etwas anderes?
+- Was geschah mit der Schriftrolle, die Sandro Brim gab, und welche Funktion hatte sie?
 
-## Belege
+# Belege
 
-[P-40] Session 2026-03-10, 01:17:50 – Einführung Sandros, Portalführung, Kampf gegen Schattenkreatur, Übergabe der Schriftrolle, Champions-Titel. [Link](https://www.youtube.com/watch?v=Kr9_AC2XtOw)
-[P-44] Session 2026-03-31, 00:46:14 – Lichtblitz auf Dämon, Solidarität mit Vasul und der Gruppe. [Link](https://www.youtube.com/watch?v=Ee-K84wcxLM)
-[P-46] Session 2026-04-09, 01:28:42 – Magischer Käfig, Tod durch Nerash. [Link](https://www.youtube.com/watch?v=vcGkejr8_nI)
+[P-40] Session 2026-03-10 @ 01:19:15 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
+[P-44] Session 2026-03-31 @ 00:46:14 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
+[P-46] Session 2026-04-09 @ 01:28:05 (https://www.youtube.com/watch?v=vcGkejr8_nI)

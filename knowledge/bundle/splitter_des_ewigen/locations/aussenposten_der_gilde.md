@@ -1,16 +1,16 @@
 ---
 type: Location
 title: Außenposten der Gilde
-description: Der abgelegene Trainingsposten der Dwarfmaster-Gilde liegt in einem engen
-  Tal, umgeben von einem dichten, magisch wirkenden Wald. Das Gelän…
+description: Ein abgelegener Trainingsstützpunkt der Gilde, umgeben von dichtem Wald.
+  Er verfügt über ein Trainingsgelände mit Ruinen, einem Portal und…
 tags:
 - locations
 timestamp: '2025-05-27T00:00:00Z'
 id: LOC_AUSSENPOSTEN_DER_GILDE
-subtype: Siedlung
+subtype: Gebäude
 ---
 
-Der abgelegene Trainingsposten der Dwarfmaster-[Gilde](/factions/gilde_von_ehrenfels.md) liegt in einem engen Tal, umgeben von einem dichten, magisch wirkenden Wald. Das Gelände umfasst Ruinen, zwei Türme und ein zentrales Riftportal. Hier trainiert die Gilde ihre Mitglieder, indem sie Monster aus dem Rift beschwört. Der Ort dient der Erforschung und Bekämpfung der Alten Götter und ihrer Diener.
+Ein abgelegener Trainingsstützpunkt der [Gilde](/factions/gilde_von_ehrenfels.md), umgeben von dichtem Wald. Er verfügt über ein Trainingsgelände mit Ruinen, einem Portal und verschiedenen Verteidigungspositionen. Hier findet der Kampf gegen die beschworenen Kreaturen statt.
 
 # Belege
 

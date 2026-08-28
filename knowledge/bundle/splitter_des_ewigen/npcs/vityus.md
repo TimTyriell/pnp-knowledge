@@ -1,16 +1,16 @@
 ---
 type: NPC
 title: Vityus
-description: Der oberste Seraph im Dienste Nerashs und derzeitiger Anführer von Ehrenfels.
-  Er verlangt, dass alle Neuankömmlinge vor ihm erscheinen, und…
+description: Vityus ist der oberste Seraph im Dienste von Nerash und hat die Führung
+  in Ehrenfels übernommen. Er erwartet die Helden zu einem Gespräch u…
 tags:
 - npcs
 timestamp: '2026-07-29T00:00:00Z'
 id: NPC_VITYUS
 ---
 
-Der oberste Seraph im Dienste [Nerashs](/deities/nerash.md) und derzeitiger Anführer von [Ehrenfels](/locations/ehrenfels.md). Er verlangt, dass alle Neuankömmlinge vor ihm erscheinen, und hat einen Tempel in den Berg setzen lassen. Sein Bote, ein weiterer Seraph, überbringt die Einladung dringlich und emotionslos. Vityus wird als große, engelsgleiche Gestalt mit goldenem Schein beschrieben, die sich am [Ende](/locations/ende_jenseits_der_orkgebiete.md) der Session vor den Helden präsentiert und sie willkommen heißt.
+Vityus ist der oberste Seraph im Dienste von [Nerash](/deities/nerash.md) und hat die Führung in [Ehrenfels](/locations/ehrenfels.md) übernommen. Er erwartet die Helden zu einem Gespräch und lässt sie durch einen Seraph rufen. Er wird als unheimlich und mächtig beschrieben.
 
 # Belege
 
-[S1-01-A] Session 2026-07-29 @ 01:55:33 (https://www.youtube.com/watch?v=umGyKLkefJI)
+[S1-01-A] Session 2026-07-29 @ 01:33:25 (https://www.youtube.com/watch?v=umGyKLkefJI)

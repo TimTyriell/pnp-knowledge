@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Hendrik (Nomadenführer)
-description: Hendrik ist der Anführer einer Bergnomadengruppe, die seit Generationen
-  den alten Gott Seras verehrt. Er ist misstrauisch gegenüber Fremden…
+description: Hendrik ist der Anführer der Gruppe von Anhängern des alten Gottes Seras.
+  Er ist zunächst abweisend und verschlossen, lädt die Gruppe aber…
 tags:
 - npcs
 timestamp: '2025-08-12T00:00:00Z'
@@ -11,7 +11,7 @@ aliases:
 - Hendrik
 ---
 
-Hendrik ist der Anführer einer Bergnomadengruppe, die seit Generationen den alten Gott Seras verehrt. Er ist misstrauisch gegenüber Fremden und versucht, die Gruppe loszuwerden, gewährt ihnen aber schließlich eine Nacht Schutz. Er kontrolliert seine Leute streng und unterdrückt jede Offenbarung ihres Glaubens. Eine übernatürliche Präsenz scheint durch ihn zu sprechen, als er Lindo warnt, die Höhle nicht zu betreten. Trotz seiner harten Fassade zeigt er am Morgen gute Laune und bemüht sich, die Situation zu glätten. Er warnt eindringlich vor dem Hassgeist und scheint eine Verbindung zu den übernatürlichen Kräften des Berges zu haben.
+Hendrik ist der Anführer der Gruppe von Anhängern des alten Gottes [Seras](/deities/tarvok_der_erdrichter.md). Er ist zunächst abweisend und verschlossen, lädt die Gruppe aber ein, die Nacht zu verbringen. Er warnt vor Ghulen und dem [Hass-Spirit](/npcs/hass_spirit.md). Er scheint von einer anderen Macht besessen oder beeinflusst zu sein, als er [Lindo Laut](/characters/lindo_laut.md) zurechtweist. Er ist misstrauisch gegenüber Fremden und verbietet den Zutritt zur [Höhle](/locations/hoehle.md).
 
 # Belege
 

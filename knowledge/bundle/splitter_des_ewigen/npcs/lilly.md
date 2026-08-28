@@ -1,15 +1,15 @@
 ---
 type: NPC
 title: Lilly
-description: Lilly ist ein dienstbarer Sukkubus, der die Besucher in der Bresca-Gilde
-  empfängt. Sie ist charmant und führt die Gruppe zum strategischen…
+description: Lilly ist ein Sukkubus, der die Gruppe in der Gilde empfängt. Sie ist
+  verführerisch und beeindruckt von Esterossas Auftreten. Sie führt die…
 tags:
 - npcs
 timestamp: '2025-09-17T00:00:00Z'
 id: NPC_LILLY
 ---
 
-Lilly ist ein dienstbarer Sukkubus, der die Besucher in der [Bresca-Gilde](/factions/bresca_gilde.md) empfängt. Sie ist charmant und führt die Gruppe zum strategischen Tisch, wo die Gildenführer warten.
+Lilly ist ein Sukkubus, der die Gruppe in der [Gilde](/factions/gilde_von_ehrenfels.md) empfängt. Sie ist verführerisch und beeindruckt von [Esterossas](/characters/esterossa.md) Auftreten. Sie führt die Gruppe zu [Gorak](/npcs/gorak.md) und den Gildenführern.
 
 # Belege
 
