@@ -1,0 +1,11 @@
+# One concept_id per line: a conflict that was deliberately resolved (an
+# entity_rules.yaml edit, or an ENTSCHEIDUNG: ruling added to
+# knowledge/sources/Kanon_Entscheidungen.md) and confirmed gone from
+# knowledge/conflicts/ after the next `pnp run`.
+#
+# When you resolve a conflict, add its concept_id here. If it ever comes
+# back, test_no_conflict_regression.py names it instead of the queue
+# silently regrowing.
+#
+# Empty on purpose right now: none of the 10 conflicts currently in
+# knowledge/conflicts/ (Aug 2026) have been resolved yet on this branch.
