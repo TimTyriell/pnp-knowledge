@@ -77,9 +77,8 @@ entities:
 - concept_id: characters/gunther
   type: Character
   canonical_name: Gunther
-  aliases:
-  - Günther
-  mention_count: 9
+  aliases: []
+  mention_count: 5
 - concept_id: characters/kaya
   type: Character
   canonical_name: Kaya
@@ -4149,9 +4148,10 @@ entities:
   type: NPC
   canonical_name: Katze (Ajani / Günther)
   aliases:
-  - Ajani
+  - Günther
   - Adjani
-  mention_count: 1
+  - Shani
+  mention_count: 5
 - concept_id: npcs/kenku
   type: NPC
   canonical_name: Kenku

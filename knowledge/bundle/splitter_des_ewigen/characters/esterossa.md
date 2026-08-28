@@ -50,7 +50,7 @@ Esterossa ist ein frommer Anhänger des neuen Gottes Korn, der auch als Blutgott
 - **Lindo Laut**: Er ist zunächst misstrauisch gegenüber Lindo Lauts Opfergedanken, unterstützt ihn später aber. Er versucht, Lindo Laut zu retten, als dieser am Herz erstickt, und stützt ihn, nachdem Slix entfernt wurde.
 - **Lunara**: Er ist misstrauisch gegenüber Lunara und hält zunächst Distanz zu ihr, folgt aber später ihren Plänen, wenn auch mit Bedenken. Er verwandelt heimlich Nyrellas Wein in Traubensaft, um sie zu schützen.
 - **Nyrella**: Er heilt ihren Bären und zeigt sich fürsorglich.
-- **Ajani/Günther**: Er findet die Katze Ajani, die ihm folgt und später in Günther umbenannt wird.
+- **[Ajani/Günther](/npcs/katze_ajani_guenther.md)**: Er findet die Katze Ajani, die ihm folgt und später in Günther umbenannt wird.
 - **Gulrak**: Er verhandelt mit Gulrak und tritt ihn zurück in die Zelle, nachdem er die Informationen erhalten hat.
 - **Joar Vanur**: Er versucht, die Situation mit Joar Vanur zu glätten.
 - **Belorus**: Belorus erkennt ihn als „wahren Krieger" an.
