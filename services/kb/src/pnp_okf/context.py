@@ -63,6 +63,28 @@ def load_sources(sources_dir: Path) -> list[SourceSection]:
     return sections
 
 
+def _matches(name: str, slug: str) -> bool:
+    """Does a name (already slugified) name this source-section slug?
+
+    Names of 4+ characters use substring containment either way, so a
+    genitive heading like "Dodos heiliger Streitkolben" (slug
+    ``dodos_heiliger_streitkolben``) still matches the entity "Dodo".
+
+    Shorter names (``len < 4``) used to be dropped outright, on the theory
+    that a short fragment risks matching unrelated headings by accident. That
+    filter had a worse cost than the risk it guarded against: it made an
+    ``ENTSCHEIDUNG:`` ruling for any entity named "Nox" or "Jen" permanently
+    unreachable by synthesis, so the conflict it was meant to settle could
+    never actually resolve. A short name is instead required to match one
+    whole ``_``-delimited token of the slug — "nox" must equal a token, not
+    just appear inside one — which keeps the guard without the blind spot.
+    """
+
+    if len(name) >= 4:
+        return name in slug or slug in name
+    return name in slug.split("_")
+
+
 def sources_for(entity: CanonicalEntity, sections: list[SourceSection]) -> str:
     """Source sections whose heading names this entity, as markdown.
 
@@ -73,15 +95,10 @@ def sources_for(entity: CanonicalEntity, sections: list[SourceSection]) -> str:
     if not sections:
         return ""
     names = {slugify(n) for n in [entity.canonical_name, *entity.aliases] if n}
-    names = {n for n in names if len(n) >= 4}  # avoid matching on stubs
     if not names:
         return ""
 
-    hits = [
-        s
-        for s in sections
-        if any(n in s.slug or s.slug in n for n in names)
-    ]
+    hits = [s for s in sections if any(_matches(n, s.slug) for n in names)]
     if not hits:
         return ""
     return "\n\n".join(
