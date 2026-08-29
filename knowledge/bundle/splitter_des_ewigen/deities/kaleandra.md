@@ -16,7 +16,7 @@ subtype: Neuer Gott
 
 ## Rolle in der Kampagne
 
-Kaleandra tritt in der Kampagne bisher nicht direkt in Erscheinung, sondern wird ausschließlich durch ihren Diener [Voras](/npcs/voras.md) thematisiert. Im Gespräch zwischen den Helden und [Voras](/npcs/vora.md) – vermutlich im Kontext einer Verhandlung oder eines Deals, bei dem auch ein [Brief von Nox](/items/brief_von_nox.md) eine Rolle spielt – stellt [Lindo Laut](/characters/lindo_laut.md) die Frage nach dem Bezug der Anwesenden zu den Göttern. Voras antwortet darauf mit einem Bekenntnis zu seiner Göttin:
+Kaleandra tritt in der Kampagne bisher nicht direkt in Erscheinung, sondern wird ausschließlich durch ihren Diener [Voras](/npcs/voras.md) thematisiert. Im Gespräch zwischen den Helden und Voras – vermutlich im Kontext einer Verhandlung oder eines Deals, bei dem auch ein [Brief von Nox](/items/brief_von_nox.md) eine Rolle spielt – stellt [Lindo Laut](/characters/lindo_laut.md) die Frage nach dem Bezug der Anwesenden zu den Göttern. Voras antwortet darauf mit einem Bekenntnis zu seiner Göttin:
 
 > „Ich habe immer schon einem neuen Gott gedient. Schon viel, viel länger. Zumindest meinen Aufzeichnungen zu urteilen. Eine eher unbekannte Göttin, aber Kaleandra, die Rote, ist eine der Vampirgötter.“
 

@@ -67,7 +67,7 @@ Gerüchten zufolge ist Nox tot oder verschwunden. In der Session vom 29. Juli 20
 
 ### 2025-04-09: Warnung Brechkas
 
-Die Gruppe gehört zur Gilde und wurde beauftragt, Brechka vor dem Goblinangriff zu warnen. Sie haben ein Gildensiegel als Nachweis. Die Gruppe kennt sich durch die Gildenhalle und kann ohne große Bedenken als Team agieren. Sie haben den Auftrag angenommen, den eine andere Gruppe kurz zuvor erledigt hatte – praktisch die Fortsetzung davon.
+Die Gruppe gehört zur Gilde und wurde beauftragt, Breska vor dem Goblinangriff zu warnen. Sie haben ein Gildensiegel als Nachweis. Die Gruppe kennt sich durch die Gildenhalle und kann ohne große Bedenken als Team agieren. Sie haben den Auftrag angenommen, den eine andere Gruppe kurz zuvor erledigt hatte – praktisch die Fortsetzung davon.
 
 ### 2025-04-15: Krypta-Säuberung
 
@@ -83,7 +83,7 @@ Die Gruppe soll herausfinden, warum es in den Bergen von Zebros [Untote](/factio
 
 ### 2025-06-03: Suche nach der Hack
 
-Die Gilde hat die Gruppe ausgesandt, um die Hack zu finden. Sie hat einen Raben nach [Cornivum](/locations/cornivum.md) geschickt, um die Ankunft anzukündigen. Der Älteste des Dorfes, [Rodek](/npcs/rodek.md), begrüßt die Gruppe: „Die Gilde hatte bereits einen Raben vorausgeschickt und hatte gesagt, dass ihr kommen würdet."
+Die Gilde hat die Gruppe ausgesandt, um die Hag zu finden. Sie hat einen Raben nach [Cornivum](/locations/cornivum.md) geschickt, um die Ankunft anzukündigen. Der Älteste des Dorfes, [Rodek](/npcs/rodek.md), begrüßt die Gruppe: „Die Gilde hatte bereits einen Raben vorausgeschickt und hatte gesagt, dass ihr kommen würdet."
 
 ### 2025-06-25: Informationen über den dunklen Paladin
 
@@ -103,7 +103,7 @@ Die Gilde hat ein Haus für die Gruppe bereitgestellt. Ehrenfels liegt in den Be
 
 ### 2026-01-06: Wöchentliche Aufträge
 
-Die Gilde vergibt wöchentlich Aufträge. Die Gruppe hat sich einen Namen gemacht und ist bekannt. Die Heldengruppe wird von einer großen untoten Horde von Zebras bedroht, die sich über die Lande erstreckt. Die Helden haben einer großen Truppe von Flüchtlingen geholfen, sicher den Winter zu überwintern.
+Die Gilde vergibt wöchentlich Aufträge. Die Gruppe hat sich einen Namen gemacht und ist bekannt. Die Heldengruppe wird von einer großen untoten Horde von Zebros bedroht, die sich über die Lande erstreckt. Die Helden haben einer großen Truppe von Flüchtlingen geholfen, sicher den Winter zu überwintern.
 
 ### 2026-01-13: Portal zum Trainingsgelände
 

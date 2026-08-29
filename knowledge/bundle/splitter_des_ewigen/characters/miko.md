@@ -11,11 +11,11 @@ id: CHAR_MIKO
 
 ## Überblick
 
-Miko ist eine Spielerfigur der Kampagne und Teil der Gruppe um [Dante](/characters/dante.md) und [Kip](/characters/kip.md). Sie ist ein katzenähnliches Wesen mit einer Wolfsklaue anstelle der linken Hand, das in [Willoch](/locations/willauch.md) aufgewachsen ist und dort früh seine Familie verloren hat. Seitdem ist sie in den Freundeskreis um Dante und Kip aufgenommen worden, den sie als ihre neue Familie betrachtet. Ihre oberste Priorität ist das Überleben und der Schutz dieser Familie.
+Miko ist eine Spielerfigur der Kampagne und Teil der Gruppe um [Dante](/characters/dante.md) und [Kip](/characters/kip.md). Sie ist ein katzenähnliches Wesen mit einer Wolfsklaue anstelle der linken Hand, das in [Willauch](/locations/willauch.md) aufgewachsen ist und dort früh seine Familie verloren hat. Seitdem ist sie in den Freundeskreis um Dante und Kip aufgenommen worden, den sie als ihre neue Familie betrachtet. Ihre oberste Priorität ist das Überleben und der Schutz dieser Familie.
 
 ## Rolle in der Kampagne
 
-Miko gehört zur ursprünglichen Gruppe aus Willoch, die gemeinsam mit Dante und Kip in [Jalan](/locations/jalan.md) ankommt. Sie ist Teil des engeren Kreises um Dante, der sich selbst als Anführer der Gruppe bezeichnet. In der ersten dokumentierten Session wird sie nur kurz als Teil der Gruppe erwähnt, die in Jalan eintrifft, ohne direkt zu handeln.
+Miko gehört zur ursprünglichen Gruppe aus Willauch, die gemeinsam mit Dante und Kip in [Jalan](/locations/jalan.md) ankommt. Sie ist Teil des engeren Kreises um Dante, der sich selbst als Anführer der Gruppe bezeichnet. In der ersten dokumentierten Session wird sie nur kurz als Teil der Gruppe erwähnt, die in Jalan eintrifft, ohne direkt zu handeln.
 
 In der zweiten Session tritt sie aktiver in Erscheinung: Sie stellt sich dem [Seraphen](/factions/seraphen.md) entgegen, als dieser die Gruppe bedroht, und schießt einen Pfeil durch dessen Flügel. Dabei wird sie vom Seraphen gepackt, gewürgt und verletzt. Sie zeigt sich misstrauisch gegenüber der Gruppe um [Lunara](/characters/lunara_velora.md) und fragt nach deren Zielen. Sie folgt Dante und Kip, um dem [Richter](/npcs/richter_herr_der_seelenwacht.md) zu helfen.
 
@@ -29,13 +29,13 @@ Ihr Wesen ist von Misstrauen gegenüber Fremden geprägt. Als sie auf die Gruppe
 
 ## Beziehungen und Verbindungen
 
-Miko ist eng mit Dante und Kip verbunden. Sie ist mit ihnen in Willoch aufgewachsen, nachdem sie früh ihre Familie verloren hatte. Dante bezeichnet die Gruppe als „gute Freunde von früher, von Willoch“. Miko selbst nennt den Freundeskreis um Dante ihre „neue Familie“. Zu der Gruppe gehören neben Dante, Kip und Miko noch ein oder zwei weitere Personen, die in den Belegen nicht namentlich genannt werden.
+Miko ist eng mit Dante und Kip verbunden. Sie ist mit ihnen in Willauch aufgewachsen, nachdem sie früh ihre Familie verloren hatte. Dante bezeichnet die Gruppe als „gute Freunde von früher, von Willauch“. Miko selbst nennt den Freundeskreis um Dante ihre „neue Familie“. Zu der Gruppe gehören neben Dante, Kip und Miko noch ein oder zwei weitere Personen, die in den Belegen nicht namentlich genannt werden.
 
 Gegenüber der Gruppe um Lunara und [Dodo](/characters/dodo.md) ist Miko zunächst misstrauisch. Sie fragt nach deren Zielen, bevor sie sich ihnen anschließt. Der Seraph behandelt sie mit Verachtung und hält sie für unwürdig, seine Zeit zu beanspruchen.
 
 ## Chronologie
 
-**Session 2026-05-06:** Miko wird als Teil der Gruppe um Dante und Kip vorgestellt, die in Jalan ankommt. Sie selbst stellt sich nicht aktiv vor; die Informationen über sie stammen aus der Vorstellung ihres Mitspielers, der ihre Herkunft aus Willoch, den Verlust ihrer Familie und ihre Wolfsklaue beschreibt. Sie ist in dieser Session nicht direkt handelnd.
+**Session 2026-05-06:** Miko wird als Teil der Gruppe um Dante und Kip vorgestellt, die in Jalan ankommt. Sie selbst stellt sich nicht aktiv vor; die Informationen über sie stammen aus der Vorstellung ihres Mitspielers, der ihre Herkunft aus Willauch, den Verlust ihrer Familie und ihre Wolfsklaue beschreibt. Sie ist in dieser Session nicht direkt handelnd.
 
 **Session 2026-05-13:** Miko gerät in einen Konflikt mit dem Seraphen. Als dieser die Gruppe bedroht und Dodo sich gegen einen Geist zur Wehr setzt, spannt Miko ihren Bogen und ruft dem Seraphen zu, was mit ihnen passieren soll, wenn er mit den anderen fertig ist. Der Seraph reagiert blitzschnell, packt sie am Hals, würgt sie und zieht ihr sein Schwert über das Gesicht. Sie erleidet zwei HP Schaden. Der Seraph lässt sie fallen und wendet sich Dante zu. Miko überlebt den Angriff, ist aber verletzt. Sie zeigt sich misstrauisch gegenüber der Gruppe um Lunara und fragt nach deren Zielen, folgt dann aber Dante und Kip, um dem Richter zu helfen.
 

@@ -45,7 +45,7 @@ Landra ist eine Meisterin der Täuschung. Sie täuschte die Kuatau, manipulierte
 - **Die Heldengruppe**: Landra begegnet der Gruppe zunächst in ihrer Krypta, wo sie [Dodo](/characters/dodo.md) und [Cookie](/characters/cookie.md) schrumpft. Sie sieht die Gruppe als Hindernis auf ihrem Weg und versucht, sie zu manipulieren. Die Gruppe macht es sich zur Aufgabe, sie zu besiegen.
 - **[Die Goblins](/factions/die_goblins.md)**: Landra führt den Goblinangriff auf Breska an. Die Goblins scheinen unter ihrem Einfluss zu handeln.
 - **Die Kuatau**: Landra hat die Kuatau getäuscht, indem sie ihnen Amulette gab und ein [Portal unter der Kapelle](/events/portal_unter_der_kapelle.md) öffnete. Die Gruppe kann die Kuatau später davon überzeugen, dass Landra böse ist.
-- **[Voras](/npcs/vora.md)**: Landra ist auf der Suche nach Voras' Gemahlin. Die genaue Natur dieser Verbindung bleibt unklar.
+- **Voras**: Landra ist auf der Suche nach Voras' Gemahlin. Die genaue Natur dieser Verbindung bleibt unklar.
 - **[Lendras](/npcs/lendras.md)**: Landra hat den Magier Lendras angegriffen.
 - **Der Graf (Vampir)**: Der Vampirgraf steht Landra im Weg, wie die Gruppe herausfindet.
 - **Vasul**: Landra trägt die Zeichen Vasuls auf ihrer Haut und scheint mit ihm verbunden zu sein. Lindo Laut vermutet, dass sie Pläne mit ihm hat.

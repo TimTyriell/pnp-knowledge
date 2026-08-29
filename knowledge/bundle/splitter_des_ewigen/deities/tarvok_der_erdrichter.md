@@ -45,7 +45,7 @@ Der Gruß seiner Anhänger lautet „ein flammendes Herz", wie Lindo Laut ihn be
 
 ## Beziehungen und Verbindungen
 
-Thar'Vok war ein Kampfgefährte Vhar'Zuls – „keine Freunde, aber Kampfgefährten in den letzten Tagen". Diese Information erhält Lindo Laut direkt von Vhar'Zul selbst, der als Stimme in seinem [Amulett](/items/amulett_des_heiligen_duran.md) spricht. Die Beziehung der beiden Götter war also von gemeinsamen Kämpfen geprägt, nicht von Freundschaft.
+Thar'Vok war ein Kampfgefährte Vhar'Zuls – „keine Freunde, aber Kampfgefährten in den letzten Tagen". Diese Information erhält Lindo Laut direkt von Vhar'Zul selbst, der als Stimme in seinem Amulett spricht. Die Beziehung der beiden Götter war also von gemeinsamen Kämpfen geprägt, nicht von Freundschaft.
 
 Die Kirche Thar'Voks wurde später von Vhar'Zuls Kult übernommen. In der Kathedrale am Berg wurde der Name des Erdrichters mit Blut übermalt und durch den Vhar'Zuls ersetzt – ein symbolischer Akt der Usurpation. Die Anhänger am Tor der Kathedrale dienen bereits Vhar'Zul, nicht mehr dem Erdrichter.
 
@@ -55,9 +55,9 @@ Die Kirche Thar'Voks wurde später von Vhar'Zuls Kult übernommen. In der Kathed
 
 Die Gruppe begegnet Thar'Voks Einfluss erstmals im Lager der Bergnomaden. Die Nomaden verehren den Erdrichter, ohne dies offen zu benennen. Als Lindo Laut den Namen des Gottes ausspricht, reagieren die Anwesenden frostig und abweisend. Die Gruppe erkennt, dass die Nomaden Angst davor haben, für Anhänger eines alten Gottes gehalten zu werden. Lindo Laut fragt daraufhin die Stimme in seinem Amulett nach der Verbindung zwischen dessen altem Ich und Thar'Vok – und erfährt, dass die beiden Kampfgefährten waren.
 
-Auf dem Weg zum Berg finden die Helden einen Wegweiser zur „heiligen [Kapelle von Tarvok](/locations/kapelle_von_tarvok.md)". Lindo Laut erinnert sich an die Domänen des Gottes: Berge, Erdbeben, Beständigkeit, mit dem Symbol des Granitblocks und dem eingeritzten Berggipfel.
+Auf dem Weg zum Berg finden die Helden einen Wegweiser zur „heiligen [Kapelle von Thar'Vok](/locations/kapelle_von_tarvok.md)". Lindo Laut erinnert sich an die Domänen des Gottes: Berge, Erdbeben, Beständigkeit, mit dem Symbol des Granitblocks und dem eingeritzten Berggipfel.
 
-In der Kathedrale am Berg entdeckt die Gruppe die große, schwer eingelassene Tür, auf der einst „Tavok, der Erdrichter" stand – der Name wurde komplett in Blut übermalt und durch Vhar'Zul ersetzt. Die Tür ist magisch versiegelt, doch Lindo Lauts Magie öffnet sie. Die Gruppe zögert, sich auf diesen Gott einzulassen, doch ein Rückweg scheint nicht mehr möglich.
+In der Kathedrale am Berg entdeckt die Gruppe die große, schwer eingelassene Tür, auf der einst „Thar'Vok, der Erdrichter" stand – der Name wurde komplett in Blut übermalt und durch Vhar'Zul ersetzt. Die Tür ist magisch versiegelt, doch Lindo Lauts Magie öffnet sie. Die Gruppe zögert, sich auf diesen Gott einzulassen, doch ein Rückweg scheint nicht mehr möglich.
 
 In der Casa de la [Cookie](/characters/cookie.md) findet die Gruppe einen Umhang mit dem Symbol Thar'Voks sowie einen Altar in einem Versteck im Keller. [Esterossa](/characters/esterossa.md) erkennt das Zeichen aus Büchern, die sie in Flächenwille oder [Ehrenfels](/locations/ehrenfels.md) durchgearbeitet hat. Aus den Schriften weiß sie, dass Thar'Vok einer der älteren Götter war, „der wahrscheinlich nicht mehr existiert". Die Gruppe nimmt den Umhang und den Altar an sich, trotz Lindo Lauts Bedenken, die Artefakte zu öffnen.
 

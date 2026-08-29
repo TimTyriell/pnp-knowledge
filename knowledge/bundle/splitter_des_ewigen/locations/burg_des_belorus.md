@@ -1,8 +1,8 @@
 ---
 type: Location
 title: Burg des Belorus
-description: Die Burg des Belorus ist eine intakte Festung in den Bergen von Zebros.
-  Sie liegt unmittelbar neben einer großen, verfallenen Ruine, die vo…
+description: Die Burg des Belorus ist eine intakte Festung in den Bergen von Zebros,
+  dem gefallenen Königreich. Sie liegt unmittelbar neben einer großen…
 tags:
 - locations
 timestamp: '2025-05-14T00:00:00Z'
@@ -10,66 +10,77 @@ id: LOC_BURG_DES_BELORUS
 subtype: Gebäude
 ---
 
+# Burg des Belorus
+
 ## Überblick
 
-Die Burg des [Belorus](/npcs/belorus.md) ist eine intakte [Festung](/locations/festung.md) in den Bergen von [Zebros](/factions/koenigreich_zebros.md). Sie liegt unmittelbar neben einer großen, verfallenen Ruine, die von einer drakonisch aussehenden Statue auf einem Podest gekrönt wird und von Skeletten und Knochen übersät ist. Während die Ruine offenbar seit langer Zeit dem Verfall preisgegeben ist, wirkt die Burg selbst bemerkenswert gut erhalten. In ihr haust Belorus, ein mächtiger schwarzer Paladin, der in der Region als *der Stille* bekannt ist. Die Burg dient ihm als Sitz und Rückzugsort und ist durch untote Wachen sowie zahlreiche Fallen geschützt.
+Die Burg des [Belorus](/npcs/belorus.md) ist eine intakte [Festung](/locations/festung.md) in den Bergen von [Zebros](/factions/koenigreich_zebros.md), dem gefallenen Königreich. Sie liegt unmittelbar neben einer großen, verfallenen Ruine, die von einer drakonisch aussehenden Statue auf einem Podest gekrönt wird und von Skeletten und Knochen übersät ist. Während die Ruine offenbar seit langer Zeit dem Verfall preisgegeben ist, wirkt die Burg selbst auffallend gut erhalten. Sie dient dem schwarzen Paladin Belorus als Wohnsitz und Operationsbasis. Die Burg ist von untoten Wachen umgeben und mit Fallen gespickt, darunter mindestens eine Stichflamme-Falle. Im Inneren befinden sich ein [Thronsaal](/locations/thronsaal.md) sowie ein Gemach, in dem ein [Notizbuch](/items/notizbuch.md) aufbewahrt wird.
 
 ## Rolle in der Kampagne
 
-Die Burg des Belorus wurde zum Schauplatz einer entscheidenden Konfrontation zwischen der Heldengruppe und Belorus. Die Gruppe, bestehend aus [Dodo](/characters/dodo.md), [Celin](/characters/cookie.md) und weiteren Gefährten, drang in die Burg ein, nachdem sie zuvor einen Bären bekämpft hatte, der von den Goblingöttern beeinflusst worden war. Der Kampf gegen Belorus endete damit, dass die Gruppe mit einem [Schutzkristall](/items/schutzkristall.md) entkommen konnte, der sich in der Burg befand. Dieser [Kristall](/items/gruener_kristall.md) erwies sich als zentrales Artefakt für das weitere Vorgehen der Gruppe.
+Die Burg des Belorus war das Ziel der Gruppe, nachdem sie in den Bergen von Zebros auf die Spur des schwarzen Paladins gestoßen war. Die Gruppe — bestehend aus [Dodo](/characters/dodo.md), [Cookie](/characters/cookie.md) und weiteren Gefährten — näherte sich der Burg, nachdem sie zuvor einen Bären in einem magischen Duell überwunden hatte. Der Bär wurde durch Wurzeln gefesselt und anschließend durch einen grünen Blitz zusätzlich vereist, sodass die Gruppe ungehindert weiterziehen konnte.
+
+Beim Anblick der beiden Gebäudestrukturen — der Ruine und der intakten Burg — entschied sich die Gruppe, zunächst die Ruine zu erkunden, da dort keine Bewegungen zu erkennen waren. Die eigentliche [Konfrontation mit Belorus](/events/konfrontation_mit_belorus.md) fand in der Burg statt. Die Gruppe drang ein, wurde von Belorus gestellt und konnte schließlich mit einem [Schutzkristall](/items/schutzkristall.md) entkommen. Der Schutzkristall erwies sich als entscheidendes Artefakt, das der Gruppe die Flucht ermöglichte.
 
 ## Wichtige Merkmale
 
 ### Lage und Umgebung
 
-Die Burg liegt in den Bergen von Zebros, einer gebirgigen Region, die als Rückzugsgebiet für Belorus dient. Direkt neben der Burg befindet sich eine große Ruine mit einer imposanten Statue einer drakonisch aussehenden Kreatur auf einem Podest. Die Umgebung der Ruine ist übersät mit Skeletten und Knochen, was auf eine lange Geschichte von Tod und Gewalt in dieser Gegend hindeutet. Die Gruppe erreichte die Burg, nachdem sie sich von einem Kampf gegen einen Bären entfernt hatte, und konnte beide Gebäudestrukturen von einem erhöhten Standpunkt aus sehen.
+Die Burg liegt in den Bergen von Zebros, dem gefallenen Königreich, dessen Name in der Überlieferung gelegentlich missverstanden wurde. Die unmittelbare Umgebung ist geprägt von Tod und Verfall: Skelette und Knochen liegen verstreut, und die benachbarte Ruine wird von einer großen, drakonisch aussehenden Statue auf einem Podest dominiert. Die Gruppe bemerkte beim Anblick der Statue, dass diese Ruine schon seit langer Zeit in diesem Zustand ist.
 
 ### Architektur und Innenräume
 
-Die Burg verfügt über mehrere bemerkenswerte Räumlichkeiten:
+Die Burg selbst ist im Gegensatz zur Ruine „sehr intakt". Über ihre genaue Architektur ist aus den Belegen wenig bekannt, doch lassen sich folgende Räume nachweisen:
 
-- **[Thronsaal](/locations/thronsaal.md)**: Der zentrale Raum der Burg, in dem Belorus die Gruppe erwartete und zur Konfrontation stellte.
-- **Gemach mit [Notizbuch](/items/notizbuch.md)**: Ein privater Raum, der ein Notizbuch enthält, dessen Inhalt für die Gruppe von Bedeutung war.
-- **Fallen**: Die Burg ist mit Fallen gesichert, darunter mindestens eine Stichflamme, die bei der Erkundung ausgelöst wurde.
+- **Thronsaal**: Der zentrale Raum, in dem Belorus die Gruppe konfrontierte.
+- **Gemach mit Notizbuch**: Ein Raum, in dem ein Notizbuch aufbewahrt wird, dessen Inhalt und Bedeutung bislang nicht näher ausgeführt wurden.
 
 ### Verteidigungsanlagen
 
-Die Burg wird von untoten Wachen umgeben, die den Zugang bewachen. Diese untoten Wachen stellten eine zusätzliche Gefahr für die Gruppe dar, als sie sich der Burg näherten und in sie eindrangen.
+Die Burg ist mehrfach gesichert:
+
+- **[Untote](/factions/belorus_untotenarmee.md) Wachen**: Die Burg ist von untoten Wachen umgeben, die den Zugang bewachen.
+- **Fallen**: Im Inneren befinden sich Fallen, darunter nachweislich eine Stichflamme-Falle, die bei unvorsichtigem Vorgehen ausgelöst wird.
+
+### Bewohner
+
+Der einzige namentlich bekannte Bewohner der Burg ist Belorus selbst, ein schwarzer Paladin. Er ist ausdrücklich kein Lich und keine Gottheit, auch wenn sein Beiname *der Stille* gelegentlich zu Missverständnissen geführt hat. Er ist ein mächtiger NPC, der die Gruppe in der Burg stellte und sie zum Kampf herausforderte. Die Gruppe konnte ihn mit einem Verwurzelungs-Zauber temporär fesseln, was die Flucht mit dem Schutzkristall ermöglichte. Ob Belorus weitere Verbündete oder Diener in der Burg hat, ist nicht belegt.
 
 ## Beziehungen und Verbindungen
 
 ### Belorus
 
-Belorus ist der Herr der Burg und ihr wichtigster Bewohner. Er ist ein schwarzer Paladin, der in der Region als *der Stille* bekannt ist. Die Burg dient ihm als Wohnsitz und Operationsbasis. Die Beziehung zwischen Belorus und der Gruppe ist feindselig: Die Gruppe drang in seine Burg ein, wurde von ihm konfrontiert und musste mit dem Schutzkristall fliehen.
+Die Burg ist der Wohnsitz von Belorus, dem schwarzen Paladin. Er ist die zentrale Figur, die mit der Burg assoziiert wird, und die Gruppe suchte die Burg gezielt auf, um ihn zu konfrontieren. Die Konfrontation endete mit der Flucht der Gruppe, die den Schutzkristall an sich bringen konnte.
 
-### Die Goblingötter
+### Die Untote Horde von Zebros
 
-Die Burg liegt in unmittelbarer Nähe zu einem Gebiet, in dem die [Goblingötter](/deities/goblingoetter.md) aktiv sind. Kurz bevor die Gruppe die Burg erreichte, wurde ein Bär von den Goblingöttern beeinflusst und griff die Gruppe an. Der GM bemerkte dazu: „Nice try, [Goblin-Gott](/deities/goblin_gott.md). Die Goblingötter wollten euch gar nichts Gutes, aber es hat nicht genau so funktioniert wie er auch." Die genaue Verbindung zwischen den Goblingöttern und der Burg des Belorus bleibt unklar, aber die räumliche Nähe und die zeitliche Abfolge der Ereignisse legen nahe, dass die Goblingötter in der Region aktiv sind und möglicherweise ein Interesse an der Burg oder ihren Bewohnern haben.
+Belorus steht in Verbindung mit einer Armee von Untoten, die aus dem Gebiet des früheren Königreichs Zebros ins Tal zieht. Diese Armee wird gelegentlich als „Untote Horde von Zebros" bezeichnet, was auf einem Missverständnis beruht: „Zebros" ist eine Verhörung von „Zebros", dem gefallenen Königreich. Die Horde besteht nicht aus untoten Zebra-Tieren, sondern ist eine Armee von Untoten aus dem Gebiet des früheren Königreichs. Ob die Burg des Belorus als Ausgangspunkt oder Sammelpunkt dieser Armee dient, ist nicht explizit belegt, doch liegt die Verbindung nahe, da Belorus als Anführer der Untotenarmee gilt.
 
-### Die Ruine
+### Die benachbarte Ruine
 
-Die benachbarte Ruine mit der drakonischen Statue steht in enger räumlicher Verbindung zur Burg. Ob es eine direkte Verbindung zwischen der Ruine und Belorus gibt, ist nicht belegt. Die Gruppe erkundete die Ruine zunächst, bevor sie sich der Burg zuwandte, und stellte fest, dass sich dort keine lebenden Gestalten aufhielten.
+Die Burg liegt unmittelbar neben einer großen Ruine, die von einer drakonisch aussehenden Statue gekrönt wird. Die Beziehung zwischen Burg und Ruine ist unklar — ob die Ruine älter ist, ob sie in funktionalem Zusammenhang mit der Burg steht oder ob sie lediglich zufällig benachbart liegt, geht aus den Belegen nicht hervor. Die Gruppe erkundete die Ruine zuerst, fand dort aber keine lebenden Gestalten.
 
 ## Chronologie
 
 ### Session 2025-05-14
 
-Die Gruppe befand sich in den Bergen von Zebros und wurde von einem Bären angegriffen, der von den Goblingöttern beeinflusst worden war. Celin setzte einen Verwurzelungszauber ein, der den Bären mit Wurzeln fesselte. Ein grüner Blitz vom Himmel vereiste die Wurzeln zusätzlich, sodass der Bär vorübergehend bewegungsunfähig war. Die Gruppe entschied sich, nicht zu kämpfen, sondern zu fliehen: „Nee, wir gehen weg" (Celin) und „Wir gehen weg? Okay, schnell weg" (Marco/Dodo).
+Die Gruppe näherte sich der Burg des Belorus durch die [Berge von Zebros](/locations/berge_von_zebros.md). Zuvor hatte sie einen Bären in einem magischen Duell überwunden: Cookie (Celin) wirkte einen Verwurzelungs-Zauber, der den Bären mit Wurzeln fesselte und zu Boden drückte. Ein grüner Blitz vom Himmel vereiste die Wurzeln zusätzlich, sodass der Bär nicht mehr entkommen konnte. Die Gruppe entschied sich, nicht zu kämpfen, sondern weiterzuziehen.
 
-Die Gruppe lief in Richtung der Ruine und entdeckte dabei zwei Gebäudestrukturen: rechts eine große Ruine, links eine sehr intakte Burg. Dodo schlug vor, zunächst bei der Ruine vorbeizuschauen, da dort keine Gestalten zu sehen waren. Beim Näherkommen entdeckte die Gruppe eine große Statue einer drakonisch aussehenden Kreatur auf einem Podest, umgeben von Skeletten und Knochen.
+Beim Erreichen der Gebäudestrukturen sahen sie rechts eine große Ruine und links eine sehr intakte Burg. Die Gruppe entschied sich, zunächst die Ruine zu erkunden, da dort keine Bewegungen zu erkennen waren. Beim Näherkommen entdeckten sie eine große, drakonisch aussehende Statue auf einem Podest, umgeben von Skeletten und Knochen.
 
-Anschließend drang die Gruppe in die Burg ein. Dort wurde sie von Belorus konfrontiert. Die Gruppe konnte mit dem Schutzkristall aus der Burg entkommen, nachdem es zu einem Kampf oder einer Konfrontation gekommen war. Die genauen Umstände der Konfrontation und der Flucht sind in den vorliegenden Belegen nur teilweise dokumentiert.
+Anschließend drang die Gruppe in die Burg ein. Dort wurde sie von Belorus konfrontiert. Der Kampf endete damit, dass die Gruppe mit dem Schutzkristall entkommen konnte. Die Einzelheiten der Konfrontation und der Flucht sind in den vorliegenden Belegen nur teilweise ausgeführt.
 
 ## Offene Fragen
 
-- Welche Informationen enthält das Notizbuch in dem Gemach der Burg? Der Inhalt wurde nicht näher ausgeführt.
-- Welche Verbindung besteht zwischen der benachbarten Ruine mit der drakonischen Statue und der Burg des Belorus?
-- Welche Rolle spielen die Goblingötter in Bezug auf die Burg und Belorus?
-- Was geschah nach der Flucht der Gruppe mit dem Schutzkristall? Welche Bedeutung hat der Kristall für die weitere Kampagne?
-- Welche weiteren Räume und Geheimnisse birgt die Burg, die die Gruppe nicht erkundet hat?
+- **Inhalt des Notizbuchs**: Was steht in dem Notizbuch, das in einem Gemach der Burg aufbewahrt wird? Welche Bedeutung hat es für die Kampagne?
+- **Zweck des Schutzkristalls**: Welche Funktion hat der Schutzkristall, den die Gruppe aus der Burg entwendet hat? Warum war er für Belorus von Bedeutung?
+- **Verbindung zur Untoten Horde**: Dient die Burg als Ausgangspunkt oder Sammelpunkt der Untoten Horde von Zebros, oder ist die Verbindung zwischen Belorus und der Horde anderer Natur?
+- **Die benachbarte Ruine**: Welche Beziehung besteht zwischen der intakten Burg und der verfallenen Ruine mit der drakonischen Statue? Handelt es sich um ein zusammenhängendes Areal oder um zwei getrennte Stätten?
+- **Verbleib von Belorus**: Wo befindet sich Belorus nach der Flucht der Gruppe? Wird er die Gruppe verfolgen oder sich in der Burg neu formieren?
 
-## Belege
+# Belege
 
-[P-08] Session 2025-05-14 @ 00:33:01 (https://www.youtube.com/watch?v=5eAEDN5ra-4) — Beschreibung der Burg und der umliegenden Ruine, Eindringen der Gruppe, Konfrontation mit Belorus, Flucht mit dem Schutzkristall.
-2. Session 2025-05-14 @ 00:31:32–00:32:53 (https://www.youtube.com/watch?v=5eAEDN5ra-4) — Kampf gegen den Bären, Verwurzelungszauber von Celin, grüner Blitz, Entscheidung der Gruppe zu fliehen.
-3. Session 2025-05-14 @ 00:33:01–00:34:22 (https://www.youtube.com/watch?v=5eAEDN5ra-4) — Sichtung der Burg und der Ruine, Erkundung der Ruine, Entdeckung der drakonischen Statue und der Skelette.
+[P-08] Session 2025-05-14 @ 00:33:01 (https://www.youtube.com/watch?v=5eAEDN5ra-4) — Beschreibung der Burg und der benachbarten Ruine, Annäherung der Gruppe.
+2. Session 2025-05-14 @ 00:31:32–00:32:53 (https://www.youtube.com/watch?v=5eAEDN5ra-4) — Kampf gegen den Bären, Verwurzelungs-Zauber und Vereisung durch grünen Blitz.
+3. Session 2025-05-14 @ 00:33:22–00:34:22 (https://www.youtube.com/watch?v=5eAEDN5ra-4) — Erkundung der Ruine, Entdeckung der drakonischen Statue und der Skelette.
+4. Kanon_Entscheidungen.md — Festlegungen zu Belorus als schwarzem Paladin (kein Lich), als Nicht-Gottheit sowie zur Untoten Horde von Zebros.

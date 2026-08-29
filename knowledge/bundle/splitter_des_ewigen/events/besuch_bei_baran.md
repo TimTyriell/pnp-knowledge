@@ -10,7 +10,7 @@ id: EVENT_BESUCH_BEI_BARAN
 subtype: Verhandlung
 ---
 
-Die Gruppe besucht [Baran](/npcs/baran.md) in seiner Taverne, um Informationen über das [Amulett](/items/amulett_des_heiligen_duran.md) zu erhalten. Baran zeigt ihnen den [Schlüssel zum alten Labor](/items/schluessel_zum_alten_labor.md) und erwähnt die Kirche.
+Die Gruppe besucht [Baran](/npcs/baran.md) in seiner Taverne, um Informationen über das Amulett zu erhalten. Baran zeigt ihnen den [Schlüssel zum alten Labor](/items/schluessel_zum_alten_labor.md) und erwähnt die Kirche.
 
 # Belege
 

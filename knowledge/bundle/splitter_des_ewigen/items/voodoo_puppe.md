@@ -10,7 +10,7 @@ id: ITEM_VOODOO_PUPPE
 subtype: Artefakt
 ---
 
-Die Voodoo-Puppe ist eine kleine hölzerne Figur, die [Cookie](/characters/cookie.md) im Bauernhaus findet. Sie scheint magisch zu sein, da sie verwendet werden kann, um Schaden auf eine Person zu übertragen. Cookie versucht, sie gegen [Lanra](/npcs/lenra.md) einzusetzen, aber der Schaden wird auf sie selbst umgelenkt.
+Die Voodoo-Puppe ist eine kleine hölzerne Figur, die [Cookie](/characters/cookie.md) im Bauernhaus findet. Sie scheint magisch zu sein, da sie verwendet werden kann, um Schaden auf eine Person zu übertragen. Cookie versucht, sie gegen [Landra](/npcs/lenra.md) einzusetzen, aber der Schaden wird auf sie selbst umgelenkt.
 
 # Belege
 

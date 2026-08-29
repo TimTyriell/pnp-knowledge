@@ -13,7 +13,7 @@ aliases:
 - Kapelle des Heiligen Duran
 ---
 
-[Die Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) ist ein religiöses Gebäude auf der Insel, das dem Heiligen [Duran](/deities/heiliger_duran.md) geweiht ist. Sie wird von Gnollen angegriffen, aber die Gruppe kann sie verteidigen. In der Kapelle befindet sich eine Statue des Heiligen und das [Amulett](/items/amulett_des_heiligen_duran.md) wird aufbewahrt.
+[Die Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) ist ein religiöses Gebäude auf der Insel, das dem Heiligen [Duran](/deities/heiliger_duran.md) geweiht ist. Sie wird von Gnollen angegriffen, aber die Gruppe kann sie verteidigen. In der Kapelle befindet sich eine Statue des Heiligen und das Amulett wird aufbewahrt.
 
 # Belege
 

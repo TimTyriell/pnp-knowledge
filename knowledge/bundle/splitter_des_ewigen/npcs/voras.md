@@ -17,7 +17,7 @@ aliases:
 
 ## Überblick
 
-[Voras](/npcs/vora.md) der Heilige, ursprünglich bekannt als „der Schrecken“, ist ein mächtiger Vampir und Herrscher über [Breska](/locations/breska.md). Er wurde von der Gruppe in einer [Katakombe](/locations/katakombe.md) unter Gemata aus seinem Sarg erweckt, nachdem der Magier [Lendras](/npcs/lendras.md) seinen Bann brach. Bei seiner Erweckung stellte er sich selbstbewusst als „Voras der Heilige“ vor – ein Name, den die Gruppe daraufhin in ihren Aufzeichnungen korrigierte, wo zuvor „Voras der Schrecken“ gestanden hatte.
+Voras der Heilige, ursprünglich bekannt als „der Schrecken“, ist ein mächtiger Vampir und Herrscher über [Breska](/locations/breska.md). Er wurde von der Gruppe in einer [Katakombe](/locations/katakombe.md) unter Gemata aus seinem Sarg erweckt, nachdem der Magier [Lendras](/npcs/lendras.md) seinen Bann brach. Bei seiner Erweckung stellte er sich selbstbewusst als „Voras der Heilige“ vor – ein Name, den die Gruppe daraufhin in ihren Aufzeichnungen korrigierte, wo zuvor „Voras der Schrecken“ gestanden hatte.
 
 Voras ist ein Anhänger der alten Götter und dient der Göttin [Kaleandra](/deities/kaleandra.md). Er ist eine komplexe Figur: einerseits mächtig, selbstbewusst und herrschaftlich auftretend, andererseits zeigt er sich kooperativ gegenüber denen, die ihn erweckt haben, und bereit, seine Macht für größere Ziele einzusetzen. Er finanziert den Ausbau seiner Stadt, schmiedet Allianzen und kämpft letztlich an der Seite der Gruppe gegen die [Dämonen](/factions/daemonen.md) – bevor er in der [Schlacht um Ehrenfels](/events/schlacht_um_ehrenfels.md) von [Nerash](/deities/nerash.md) getötet wird.
 
@@ -26,7 +26,7 @@ Voras ist ein Anhänger der alten Götter und dient der Göttin [Kaleandra](/dei
 Voras ist eine zentrale Figur, die die Gruppe über mehrere Stationen begleitet. Seine Rolle wandelt sich dabei erheblich:
 
 - **Erwecker und Verbündeter**: Nach seiner Erweckung bietet er der Gruppe seine Hilfe an und wird zu einem wichtigen Ansprechpartner. Die Gruppe sucht ihn mehrfach auf, um Informationen über die [Hack](/npcs/lenra.md) auszutauschen.
-- **Herrscher von Breska**: Als Graf regiert er über die Stadt Breska und finanziert deren Ausbau. Er plant, den [Berg Zebras](/locations/berge_von_zebros.md) zu kontrollieren, um [Untote](/factions/belorus_untotenarmee.md) zu beherrschen – ein Ziel, das seine Ambitionen über die reine Stadtverwaltung hinaus zeigt.
+- **Herrscher von Breska**: Als Graf regiert er über die Stadt Breska und finanziert deren Ausbau. Er plant, den [Berg Zebros](/locations/berge_von_zebros.md) zu kontrollieren, um [Untote](/factions/belorus_untotenarmee.md) zu beherrschen – ein Ziel, das seine Ambitionen über die reine Stadtverwaltung hinaus zeigt.
 - **Unterzeichner des Hilferufs**: Als Breska von Untoten überrannt wird, sendet er einen Hilferuf an alle Richtungen im Land, unterzeichnet mit „Voras dem Heiligen“. In dem Schreiben berichtet er von der gefallenen Stadt, der belagerten Bevölkerung und einer geheimnisvollen Gestalt in schwarzer Rüstung, die Richtung Westen verschwand.
 - **Kämpfer gegen die Dämonen**: In der Schlacht um [Ehrenfels](/locations/ehrenfels.md) kämpft Voras mit seinen Kriegern gegen die Dämonen und belebt gefallene Krieger wieder. Er wird dabei von Nerash angegriffen und getötet.
 - **Posthume Bewertung**: Nach seinem Tod wird er von [Vitius](/npcs/vitius.md) als „Abscheulichkeit“ und „Altdiener alter Götter“ bezeichnet, der mit Nox zusammengearbeitet und die Streitkräfte attackiert habe. Diese Darstellung steht im Kontrast zu seinem vorherigen Auftreten als Verbündeter der Gruppe.
@@ -46,11 +46,11 @@ Voras verfügt über typische vampirische Fähigkeiten, die jedoch weit über da
 
 Voras tritt stets selbstbewusst und herrschaftlich auf. Er kleidet sich „super schick“ und sein Stil zieht sich durch den gesamten Kerker. Er ist ein komplexer Charakter: Er kann charmant und kooperativ sein, zeigt aber auch Wut und Ungeduld, etwa als die Gruppe die Engel vernichtet oder als das gestohlene Buch zur Sprache kommt. Er verlässt dann fluchend den Raum.
 
-Gegenüber denen, die ihn erweckt haben, zeigt er sich zunächst dankbar und hilfsbereit. Später wird sein Verhältnis zur Gruppe pragmatischer: Er ist interessiert an ihren Informationen über die Hack, gewährt ihnen Zugang zu seiner Bibliothek, erwartet aber auch, dass sie ihre Stärke beweisen.
+Gegenüber denen, die ihn erweckt haben, zeigt er sich zunächst dankbar und hilfsbereit. Später wird sein Verhältnis zur Gruppe pragmatischer: Er ist interessiert an ihren Informationen über die Hag, gewährt ihnen Zugang zu seiner Bibliothek, erwartet aber auch, dass sie ihre Stärke beweisen.
 
 ## Beziehungen und Verbindungen
 
-- **Lendras**: Der Magier, der Voras' Bann brach und ihn wiedererweckte. Lendras war überzeugt, „die richtige Entscheidung getroffen“ zu haben, und suchte Voras' Hilfe gegen die Hack, die nach seiner Gemahlin suchte.
+- **Lendras**: Der Magier, der Voras' Bann brach und ihn wiedererweckte. Lendras war überzeugt, „die richtige Entscheidung getroffen“ zu haben, und suchte Voras' Hilfe gegen die Hag, die nach seiner Gemahlin suchte.
 - **Die Gruppe ([Dodo](/characters/dodo.md), [Lindo Laut](/characters/lindo_laut.md), [Rotunas](/characters/rotunas.md) u. a.)**: Die Gruppe erweckte Voras und wird von ihm als „meine Retter“ bezeichnet. Das Verhältnis ist wechselhaft: von Dankbarkeit über pragmatische Zusammenarbeit bis hin zu Spannungen wegen des gestohlenen Buches und der vernichteten Engel.
 - **[Tindra](/npcs/tindra.md)/Tindrael**: Einst die rechte Hand des [Bürgermeisters](/npcs/buergermeister_spitzzahn.md) von Breska, dient sie später Voras. Sie begrüßt die Gruppe bei ihren Besuchen und führt Dodo zu Voras in dessen Gruft.
 - **Nox**: Voras hat zusammen mit Nox Ringe geschmiedet und ein [Portal](/locations/portal.md) nach [Abyssalis](/domains/splitterwelt.md) gebaut. Die genauen Details dieser Zusammenarbeit bleiben unklar. Nach Voras' Tod wird Nox von Vitius als sein Komplize bezeichnet.
@@ -62,11 +62,11 @@ Gegenüber denen, die ihn erweckt haben, zeigt er sich zunächst dankbar und hil
 
 ## Chronologie
 
-**Session 2025-04-23 – Die Erweckung**: Voras liegt in einem Sarg in der Katakombe unter Gemata. Lendras bricht seinen Bann und erweckt ihn. Voras stellt sich als „Voras der Heilige“ vor und erklärt, dass die Hack nach seiner Gemahlin sucht. Er tötet die verbliebenen Goblins mit einem Blick und bietet der Gruppe seine Hilfe an. Die Gruppe verlässt mit ihm Gemata.
+**Session 2025-04-23 – Die Erweckung**: Voras liegt in einem Sarg in der Katakombe unter Gemata. Lendras bricht seinen Bann und erweckt ihn. Voras stellt sich als „Voras der Heilige“ vor und erklärt, dass die Hag nach seiner Gemahlin sucht. Er tötet die verbliebenen Goblins mit einem Blick und bietet der Gruppe seine Hilfe an. Die Gruppe verlässt mit ihm Gemata.
 
 **Session 2025-06-17 – Erwähnung durch die Hexe**: Die Hexe erwähnt „den Grafen“ als Hindernis: „Aber der Graf ist uns im Weg. Er kommt uns näher.“ Es ist unklar, wer genau gemeint ist, aber es handelt sich um Voras.
 
-**Session 2025-06-25 – Audienz beim Grafen**: Die Gruppe sucht Voras in Breska auf. Er hat eine deutlich mächtigere Aura entwickelt als bei seiner Erweckung. Er finanziert den Ausbau der Stadt und plant, den Berg Zebras zu kontrollieren, um Untote zu beherrschen. Er ist interessiert an den Informationen der Gruppe über die Hack, aber verärgert über das gestohlene Buch. Er gewährt ihnen Zugang zu seiner Bibliothek, wird aber wütend, als sie die Engel vernichten, und verlässt fluchend den Raum.
+**Session 2025-06-25 – Audienz beim Grafen**: Die Gruppe sucht Voras in Breska auf. Er hat eine deutlich mächtigere Aura entwickelt als bei seiner Erweckung. Er finanziert den Ausbau der Stadt und plant, den Berg Zebros zu kontrollieren, um Untote zu beherrschen. Er ist interessiert an den Informationen der Gruppe über die Hag, aber verärgert über das gestohlene Buch. Er gewährt ihnen Zugang zu seiner Bibliothek, wird aber wütend, als sie die Engel vernichten, und verlässt fluchend den Raum.
 
 **Session 2026-01-13 – Der Hilferuf**: Breska ist von Untoten überrannt worden. Voras unterzeichnet einen Hilferuf, der an alle Richtungen im Land verschickt wurde. Er berichtet von der beinahe verhungerten Bevölkerung, den gefallenen Mauern und einer Gestalt in schwarzer Rüstung, die Richtung Westen verschwand. Sein Wappen ist auf dem Soldaten [Hans](/npcs/hans_soldat_aus_breska.md) zu sehen.
 
@@ -82,7 +82,7 @@ Gegenüber denen, die ihn erweckt haben, zeigt er sich zunächst dankbar und hil
 
 - **Die Gemahlin**: Die Hack sucht nach Voras' Gemahlin. Wer ist sie, und was ist aus ihr geworden? Dies wird in den Belegen nicht aufgelöst.
 - **Die Zusammenarbeit mit Nox**: Voras und Nox haben gemeinsam Ringe geschmiedet und ein Portal nach Abyssalis gebaut. Die genauen Details und Ziele dieser Zusammenarbeit bleiben unklar.
-- **[Der Berg](/locations/der_berg.md) Zebras**: Voras plante, den Berg Zebras zu kontrollieren, um Untote zu beherrschen. Was genau hat er dort vor, und wurde dieser Plan je umgesetzt?
+- **[Der Berg](/locations/der_berg.md) Zebros**: Voras plante, den Berg Zebros zu kontrollieren, um Untote zu beherrschen. Was genau hat er dort vor, und wurde dieser Plan je umgesetzt?
 - **Die Gestalt in schwarzer Rüstung**: Voras berichtete von einer Gestalt in schwarzer Rüstung, die vor dem Fall von Breska Richtung Westen verschwand. Wer war diese Gestalt?
 - **Die widersprüchliche Bewertung**: Die Gruppe erlebte Voras als Verbündeten, während Vitius ihn als Feind und „Abscheulichkeit“ darstellt. Wie ist dieser Widerspruch aufzulösen?
 

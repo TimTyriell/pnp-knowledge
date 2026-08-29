@@ -27,11 +27,11 @@ Er weist der Gruppe das Haus in Ehrenfels zu ([5], Session 2025-11-18) und lädt
 
 ## Wichtige Merkmale
 
-**Fähigkeiten:** Nox beherrscht mächtige Magie. Er beschwört Kreaturen durch Rituale ([1], Session 2025-05-27), nutzt eine magische Hand, um Gegenstände zu durchsuchen ([3], Session 2025-07-22), und hat einen Zauber entwickelt, der alle übernatürlichen Kräfte unterbindet, um ungestört sprechen zu können ([6], Session 2026-02-17). Im Kampf gegen das riesige Monster am Portal zeigt er sich als fähiger Magiekämpfer, der jedoch an seine Grenzen stößt ([9], Session 2026-04-09). Gemeinsam mit [Voras](/npcs/vora.md) hat er die Ringe geschmiedet, die die Gruppe auf ihrer Reise nach Abyssalis trägt ([7], Session 2026-03-10).
+**Fähigkeiten:** Nox beherrscht mächtige Magie. Er beschwört Kreaturen durch Rituale ([1], Session 2025-05-27), nutzt eine magische Hand, um Gegenstände zu durchsuchen ([3], Session 2025-07-22), und hat einen Zauber entwickelt, der alle übernatürlichen Kräfte unterbindet, um ungestört sprechen zu können ([6], Session 2026-02-17). Im Kampf gegen das riesige Monster am Portal zeigt er sich als fähiger Magiekämpfer, der jedoch an seine Grenzen stößt ([9], Session 2026-04-09). Gemeinsam mit Voras hat er die Ringe geschmiedet, die die Gruppe auf ihrer Reise nach Abyssalis trägt ([7], Session 2026-03-10).
 
 **Auftreten:** Nox wirkt stets ruhig, gefasst und emotionslos ([7], Session 2026-03-10). Selbst blutüberströmt auf der Straße zeigt er ein "unbedarftes", neutrales Gesicht ([5], Session 2025-11-18). Er spricht in ruhigem, bedächtigem Ton und neigt zu geheimnisvollen Andeutungen. Seine Erscheinung ist die eines weisen Mentors, der die Gruppe prüft und ihr Wissen dosiert vermittelt. Er beobachtet die Gruppe aus der Ferne — so hat er etwa Raben ausgeschickt, um Lindo Laut im Auge zu behalten ([6], Session 2026-02-17).
 
-**Wesenszüge:** Nox sorgt sich um das Gleichgewicht der Götter ([6], Session 2026-02-17). Er handelt vorsichtig und abwägend, warnt die Gruppe vor Gefahren und gibt ihr strategische Ratschläge, etwa nicht im Süden Richtung [Willau](/locations/willauch.md) und [Brandau](/locations/brandau.md) zu siedeln oder die alte Feste als Siedlungsort zu erwägen ([4], Session 2025-09-23). Er ist bereit, unpopuläre Entscheidungen zu treffen und Geheimnisse für sich zu behalten, wie seine Warnung an die Gruppe zeigt, über das Portal-Erlebnis zu schweigen ([2], Session 2025-07-09).
+**Wesenszüge:** Nox sorgt sich um das Gleichgewicht der Götter ([6], Session 2026-02-17). Er handelt vorsichtig und abwägend, warnt die Gruppe vor Gefahren und gibt ihr strategische Ratschläge, etwa nicht im Süden Richtung [Willauch](/locations/willauch.md) und [Brandau](/locations/brandau.md) zu siedeln oder die alte Feste als Siedlungsort zu erwägen ([4], Session 2025-09-23). Er ist bereit, unpopuläre Entscheidungen zu treffen und Geheimnisse für sich zu behalten, wie seine Warnung an die Gruppe zeigt, über das Portal-Erlebnis zu schweigen ([2], Session 2025-07-09).
 
 ## Beziehungen und Verbindungen
 
@@ -49,9 +49,9 @@ Er weist der Gruppe das Haus in Ehrenfels zu ([5], Session 2025-11-18) und lädt
 
 **Nach dem Portal-Durchgang (Session 2025-07-09):** Nox erscheint, als die Gruppe aus dem Portal tritt, und warnt sie, über das Erlebte zu schweigen. Er offenbart, dass Nerash ein verlorener Demigott ist, der einst für die neuen Götter kämpfte ([2]).
 
-**Untersuchung des Attentats (Session 2025-07-22):** Nox untersucht den [Kenku](/npcs/kenku.md)-[Attentäter](/npcs/attentaeter.md), findet [Dolch](/items/dolch.md), Brief und Ring, identifiziert das Kopfgeld auf die Gruppe und nimmt den Dolch zur Untersuchung an sich. Er warnt die Gruppe vor dem [Amulett](/items/amulett_des_heiligen_duran.md) und führt sie zum alten Schrein, wo er die vier Seelenstücke erklärt ([3]).
+**Untersuchung des Attentats (Session 2025-07-22):** Nox untersucht den [Kenku](/npcs/kenku.md)-[Attentäter](/npcs/attentaeter.md), findet [Dolch](/items/dolch.md), Brief und Ring, identifiziert das Kopfgeld auf die Gruppe und nimmt den Dolch zur Untersuchung an sich. Er warnt die Gruppe vor dem Amulett und führt sie zum alten Schrein, wo er die vier Seelenstücke erklärt ([3]).
 
-**Rat zur Siedlungsgründung (Session 2025-09-23):** Nox rät der Gruppe, im Norden zu bleiben, und schlägt die alte Feste als möglichen Siedlungsort vor. Er warnt vor den Städten Willau und Brandau im Süden und den untoten Armeen im Osten ([4]).
+**Rat zur Siedlungsgründung (Session 2025-09-23):** Nox rät der Gruppe, im Norden zu bleiben, und schlägt die alte Feste als möglichen Siedlungsort vor. Er warnt vor den Städten Willauch und Brandau im Süden und den untoten Armeen im Osten ([4]).
 
 **Blutüberströmt in Ehrenfels (Session 2025-11-18):** Die Gruppe sieht Nox blutüberströmt, aber unbedarft wirkend durch Ehrenfels laufen. Er hat der Gruppe das Haus zugewiesen ([5]).
 

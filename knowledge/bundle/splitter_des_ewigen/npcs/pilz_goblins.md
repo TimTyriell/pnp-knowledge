@@ -62,8 +62,8 @@ Sie haben eine soziale Struktur mit einem Anführer namens [Schleichfurz](/npcs/
 ### Erste Begegnung: Das Lager im Sumpf (Session 2025-04-01)
 Die Gruppe entdeckt auf ihrem Weg durch sumpfiges Gebiet ein kleines Lager. Sie nehmen ein Feuer und einen "ekelhaften Geruch" wahr. Bei näherer Untersuchung erkennen sie, dass dort Leichen liegen, die "erst vor kurzem" entstanden sind. Die Pilz-Goblins haben das Lager übernommen, die früheren Bewohner getötet und sind in Feierlaune und angetrunken. Sie planen, weiterzuziehen und ein Dorf anzugreifen. Die Gruppe erkennt, dass die Goblins einzeln nicht gefährlich sind, aber in der Gruppe gefährlich werden können. Sie haben einen Anführer (Schleichfurz) und einen Magier in ihren Reihen.
 
-### Bedrohung für Brechka (Session 2025-04-09)
-Die Gruppe erhält den Auftrag, das Dorf [Brechka](/locations/breska.md) auf einen möglichen Angriff von Goblins vorzubereiten. Eine andere Gruppe von Gildenmitgliedern hatte zuvor ein Camp der Goblins ausgeräuchert und einen Späher getötet, aber der Angriff steht noch bevor. Die Gruppe übernimmt die Fortsetzung dieses Auftrags.
+### Bedrohung für Breska (Session 2025-04-09)
+Die Gruppe erhält den Auftrag, das Dorf [Breska](/locations/breska.md) auf einen möglichen Angriff von Goblins vorzubereiten. Eine andere Gruppe von Gildenmitgliedern hatte zuvor ein Camp der Goblins ausgeräuchert und einen Späher getötet, aber der Angriff steht noch bevor. Die Gruppe übernimmt die Fortsetzung dieses Auftrags.
 
 ### Angriff auf die Gruppe (Session 2025-06-17)
 Als die Gruppe ein Gebäude erkundet und eine Tür öffnet, werden sie aus dem Hinterhalt angegriffen. Zwei pilzartige Goblin-Kreaturen greifen an, sobald [Dodo](/characters/dodo.md) den Raum betritt. Einer der Angriffe trifft Dodo am Oberarm, wird aber durch seine Schuppen abgeschwächt. Die Pilz-Goblins zeigen ihre charakteristischen Fähigkeiten: Sie werfen Sporen und regenerieren sich. Einer wird von [Rotunas](/characters/rotunas.md) gegen die Wand geschleudert, der andere von [Lindo Laut](/characters/lindo_laut.md) verbrannt – was darauf hindeutet, dass die Gruppe die Schwäche der Kreaturen gegen Feuer erkannt und genutzt hat.
@@ -79,7 +79,7 @@ Die Pilz-Goblins sind die Hauptgegner in der Mine. Sie haben ein Lager eingerich
 
 ## Offene Fragen
 
-- Was ist aus dem geplanten Angriff auf das Dorf (Brechka) geworden? Wurde er durchgeführt oder verhindert?
+- Was ist aus dem geplanten Angriff auf das Dorf (Breska) geworden? Wurde er durchgeführt oder verhindert?
 - Wie kam es zum Friedensvertrag in den Minen, und wurde er eingehalten?
 - Was ist aus dem Anwesen und seinen freundlichen Goblin-Bewohnern geworden?
 - Welche Rolle spielen die Bugbears und Gnolle in der Hierarchie der Pilz-Goblins?

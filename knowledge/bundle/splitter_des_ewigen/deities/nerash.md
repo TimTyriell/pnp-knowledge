@@ -25,7 +25,7 @@ Nerash ist über mehrere Handlungsstränge hinweg mit der Gruppe verbunden. Nach
 
 In einem Traum erscheint Nerash [Dodo](/characters/dodo.md) und übergibt ihm eine Schriftrolle mit einem Zauberspruch, um den Teil von Vasul aus [Lindo Laut](/characters/lindo_laut.md) zu vertreiben. Der Zauber soll in [Abyssalis](/domains/splitterwelt.md), bei den Szenen des Wahnsinns und den lila Bergen, gewirkt werden. [6] Nox bezweifelt allerdings, dass Nerash uneigennützig handelt, und fragt: „Wenn es ein Gott ist, warum kann er nicht selber das tun, was ihr..." [6]
 
-Nach der [Zerstörung des Portals](/events/zerstoerung_des_portals.md) erscheint Nerash als engelsgleicher Dämon, tötet Sandro und [Voras](/npcs/vora.md) und richtet ihr Schwert auf die Gruppe. Rotunas opfert sich, um sie zu vernichten. [8] In Ehrenfels haben in der Folge Diener Nerashs die Macht übernommen; die Bewohner sind gezwungen, ihr zu huldigen. [12] Die Gruppe hat zu diesem Zeitpunkt die [Schriftrolle von Nerash](/items/schriftrolle_von_nerash.md) bereits benutzt, was sich möglicherweise als problematisch erweist. [12]
+Nach der [Zerstörung des Portals](/events/zerstoerung_des_portals.md) erscheint Nerash als engelsgleicher Dämon, tötet Sandro und Voras und richtet ihr Schwert auf die Gruppe. Rotunas opfert sich, um sie zu vernichten. [8] In Ehrenfels haben in der Folge Diener Nerashs die Macht übernommen; die Bewohner sind gezwungen, ihr zu huldigen. [12] Die Gruppe hat zu diesem Zeitpunkt die [Schriftrolle von Nerash](/items/schriftrolle_von_nerash.md) bereits benutzt, was sich möglicherweise als problematisch erweist. [12]
 
 ## Wichtige Merkmale
 

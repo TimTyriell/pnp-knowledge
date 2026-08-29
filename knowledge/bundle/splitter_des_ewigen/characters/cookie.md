@@ -26,7 +26,7 @@ Cookie ist neugierig, verspielt und gut gelaunt, hat aber auch eine pragmatische
 
 ## Rolle in der Kampagne
 
-Cookie ist eine der Hauptheldinnen der Gruppe und übernimmt im Laufe der Kampagne verschiedene Rollen. Anfangs ist sie vor allem die neugierige Späherin und Fernkämpferin, die aus dem Hinterhalt mit ihrem Bogen agiert und den entscheidenden Treffer im Kampf landet. Sie ist diejenige, die im Bauernhaus die [Voodoo-Puppe](/items/voodoo_puppe.md) findet, die den Konflikt mit [Lanra](/npcs/lenra.md) auslöst, und sie ist es, die den Zöllner am Steg einschüchtert, damit die Gruppe die Insel betreten kann.
+Cookie ist eine der Hauptheldinnen der Gruppe und übernimmt im Laufe der Kampagne verschiedene Rollen. Anfangs ist sie vor allem die neugierige Späherin und Fernkämpferin, die aus dem Hinterhalt mit ihrem Bogen agiert und den entscheidenden Treffer im Kampf landet. Sie ist diejenige, die im Bauernhaus die [Voodoo-Puppe](/items/voodoo_puppe.md) findet, die den Konflikt mit [Landra](/npcs/lenra.md) auslöst, und sie ist es, die den Zöllner am Steg einschüchtert, damit die Gruppe die Insel betreten kann.
 
 Mit der Zeit wird sie zur Feldsanitäterin der Gruppe: Sie stellt Pfeile mit Vulkanpflanzengift her, trägt ein Medikit und heilt ihre Verbündeten — etwa [Esterossa](/characters/esterossa.md) nach seinem Sturz mit einem kritischen Erfolg oder [Lindo Laut](/characters/lindo_laut.md), dem sie in letzter Sekunde eine alchemistische Flüssigkeit verabreicht, die sein Leben rettet. Sie erschafft Heilungsfelder, die Verbündeten Trefferpunkte zurückgeben, und bekämpft Sporen und Gifte mit ihren alchemistischen Kenntnissen.
 
@@ -60,13 +60,13 @@ Cookie hat einen sensiblen Schlaf und wacht wegen jedem Scheiß auf — ein Inst
 
 **Lindo Laut**: Zu ihm hat Cookie eine besonders enge Beziehung. Sie macht ihn unsichtbar und geht als Späherin voraus, sie tröstet ihn in der fremden Welt und nimmt ihn in den Arm. Als er im Sterben liegt, rettet sie ihm mit einer alchemistischen Flüssigkeit das Leben.
 
-**Graf (Zebras)**: Cookie nimmt ein Buch aus der Burg des dunklen Paladins mit, was den Grafen verärgert. Er fordert, dass sie das Buch herbringt.
+**Graf (Zebros)**: Cookie nimmt ein Buch aus der Burg des dunklen Paladins mit, was den Grafen verärgert. Er fordert, dass sie das Buch herbringt.
 
 **Lady Lyra**: Cookie beeindruckt sie mit einem Feuerwerk aus Glühwürmchen.
 
 **Gulrak**: Cookie ist misstrauisch gegenüber ihm, glaubt ihm aber letztlich. Als er zu fliehen versucht, zieht sie ihn mit ihrer Zunge zurück in die Zelle.
 
-**Lanra**: Cookie versucht, Lanra mit der Voodoo-Puppe zu verletzen, was jedoch nach hinten losgeht und ihr selbst Schaden zufügt. Sie wird von Lanra geschrumpft.
+**Landra**: Cookie versucht, Landra mit der Voodoo-Puppe zu verletzen, was jedoch nach hinten losgeht und ihr selbst Schaden zufügt. Sie wird von Landra geschrumpft.
 
 ## Chronologie
 
@@ -74,7 +74,7 @@ Cookie hat einen sensiblen Schlaf und wacht wegen jedem Scheiß auf — ein Inst
 
 **Session 2025-04-01**: Cookie stellt sich als Frosch-Schurke mit Fernkampfwaffen (Bogen) und dem Schnabeltier-Begleiter Perry vor, der einen giftigen Stachel hat. Sie kann mit Tieren und Pflanzen sprechen und ist sehr gut im Verstecken. Sie ist neugierig und versucht, ein Wildschwein als Reittier zu überzeugen, was fehlschlägt. Im Kampf setzt sie Bogen und Leuchtringe ein. Sie warnt ihre Gruppe, als sie den Spion entdeckt.
 
-**Session 2025-04-15**: Cookie ist neugierig und findet die Voodoo-Puppe im Bauernhaus. Im [Kampf gegen die Bugbears](/events/kampf_gegen_die_bugbears.md) gelingt ihr ein gezielter Schuss aufs Knie. Sie versucht, Lanra mit der Voodoo-Puppe zu verletzen, was nach hinten losgeht und ihr selbst Schaden zufügt. Sie wird von Lanra geschrumpft. Sie hüpft verspielt um ihre Mitspieler herum und gibt ihnen Hope.
+**Session 2025-04-15**: Cookie ist neugierig und findet die Voodoo-Puppe im Bauernhaus. Im [Kampf gegen die Bugbears](/events/kampf_gegen_die_bugbears.md) gelingt ihr ein gezielter Schuss aufs Knie. Sie versucht, Landra mit der Voodoo-Puppe zu verletzen, was nach hinten losgeht und ihr selbst Schaden zufügt. Sie wird von Landra geschrumpft. Sie hüpft verspielt um ihre Mitspieler herum und gibt ihnen Hope.
 
 **Session 2025-04-30**: Cookie schüchtert den Zöllner am Steg ein, um die Insel betreten zu können. Sie hat eine Vision, als sie mit Pilzen spricht, und sieht ein hölzernes Tor in einem Waldstück, was auf eine dunkle Präsenz hindeutet. Sie ist misstrauisch gegenüber Gulrak, glaubt ihm aber letztlich. Sie setzt ihre Zunge ein, um Gulrak zurück in die Zelle zu ziehen, als er zu fliehen versucht. Beim Kapitän isst sie Kuchen mit Manieren und betrachtet ihn danach als ihren Buddy.
 

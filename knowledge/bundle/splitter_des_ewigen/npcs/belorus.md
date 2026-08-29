@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Belorus der Stille
-description: Belorus der Stille ist ein schwarzer Paladin und ehemaliger General von
-  König Zebros. Einst ein gefallener Paladin, der seinen Eid brach, d…
+description: Belorus der Stille ist ein schwarzer Paladin und ehemaliger General des
+  gefallenen Königreichs Zebros. Einst ein Paladin im Dienst von Köni…
 tags:
 - npcs
 timestamp: '2026-03-10T00:00:00Z'
@@ -15,75 +15,85 @@ aliases:
 
 ## Überblick
 
-Belorus der Stille ist ein schwarzer Paladin und ehemaliger General von [König Zebros](/factions/koenigreich_zebros.md). Einst ein gefallener Paladin, der seinen Eid brach, dient er nun als untoter Anführer einer gewaltigen Armee von Untoten. Er herrscht über eine Burg im Gebiet von Zebros und erhebt die Toten, um seine Streitmacht zu vergrößern. Sein Beiname *der Stille* verweist auf sein unheimliches, lautloses Auftreten — selbst seine Geistergestalten machen keinerlei Geräusche. Belorus ist ein mächtiger, geduldiger und entschlossener Gegner, der jedoch nicht ohne Verhandlungsbereitschaft agiert.
+Belorus der Stille ist ein schwarzer Paladin und ehemaliger General des gefallenen Königreichs Zebros. Einst ein Paladin im Dienst von [König Zebros](/factions/koenigreich_zebros.md), brach er seinen Eid und wurde zum Todespaladin (Death Knight), der über eine Burg in Zebros herrscht und [Untote](/factions/belorus_untotenarmee.md) erhebt. Er führt eine riesige untote Armee an, die aus dem Gebiet des früheren Königreichs Zebros ins Tal zieht. Sein Beiname *der Stille* verweist auf sein lautloses, unheimliches Auftreten — er bewegt sich ohne Geräusche und kommuniziert teils telepathisch.
+
+Belorus ist kein göttliches Wesen, sondern ein mächtiger NPC und einer der zentralen Gegenspieler der Gruppe. Er sucht nach einem Gefäß für den alten Gott [Vasul](/deities/vharzul.md) und glaubt, dieses in [Lindo Laut](/characters/lindo_laut.md) gefunden zu haben. Sein Ziel ist es, die alten Götter zu vernichten.
 
 ## Rolle in der Kampagne
 
-Belorus der Stille ist einer der zentralen Antagonisten der Kampagne. Die Gruppe begegnet ihm erstmals in seiner [Festung](/locations/festung.md) auf dem [Berg Zebras](/locations/berge_von_zebros.md), wo er sie herausfordert und in seine Armee eingliedern will. Durch einen [Schutzkristall](/items/schutzkristall.md) wird er vertrieben, schwört jedoch Rache. In der Folgezeit führt er eine riesige untote Armee an, die das Dorf [Breska](/locations/breska.md) zerstört — dort, wo die Kampagne ihren Anfang nahm. Er sucht gezielt nach [Lindo Laut](/characters/lindo_laut.md), da er in ihm ein Gefäß für den alten Gott [Vasul](/deities/vharzul.md) vermutet. Seine Armee greift mehrfach an, und er stellt der Gruppe ein Ultimatum. Letztlich lässt er sich jedoch von Lindo Lauts Rede überzeugen, akzeptiert die Gruppe als nicht von Vasul korrumpiert und zieht sich auf seinen Berg zurück.
+Belorus der Stille ist einer der Hauptantagonisten der Kampagne. Die Gruppe begegnet ihm erstmals in seiner [Festung](/locations/festung.md) auf dem Berg Zebros, wo er sie konfrontiert und in seine Armee eingliedern will. Von dort an zieht sich seine Bedrohung durch mehrere Handlungsstränge:
+
+- Er verfolgt die Gruppe und ihre Verbündeten mit Untoten, die er aussendet.
+- Er sucht nach zwei Personen und einem gestohlenen Gegenstand — vermutlich [Cookie](/characters/cookie.md) und [Dodo](/characters/dodo.md), die ein [Tagebuch](/items/gestohlenes_tagebuch.md) aus seiner Festung entwendet haben.
+- Er stellt Lindo Laut ein Ultimatum, da er in ihm ein Gefäß für den alten Gott Vasul vermutet.
+- Seine Untotenarmee zerstört die Stadt [Breska](/locations/breska.md) und tötet deren Bewohner.
+- Nach der Konfrontation mit der Gruppe auf dem Turm lässt er sich von Lindo Lauts Rede überzeugen, dass die Gruppe nicht von Vasul korrumpiert ist, und zieht sich zurück.
 
 ## Wichtige Merkmale
 
-### Auftreten und Erscheinung
+### Auftreten und Wesen
 
-Belorus tritt als schatten-schemenhafte Silhouette auf, die plötzlich vor seinen Gegnern erscheint. Seine Stimme ist tief und basshaltig, sodass sie durch Wände dringt. Er trägt ein großes Bastardschwert, das leicht bläulich-grünlich flimmert. Sein Auftreten wird als „bodenlos gruselig" beschrieben — er spricht mit tiefster Überzeugung und lässt sich von seinen Gegnern kaum einschätzen.
+Belorus tritt als schattenhafte, schemenhafte Silhouette auf, die Gänsehaut erzeugt. Seine Stimme ist tief und basshaltig, sein Ton „bodenlos gruselig" — die Gruppe kann ihn zunächst nicht einschätzen. Er bewegt sich ohne Geräusche, „klickt nicht oder macht irgendwelche Geräusche", und kommuniziert teils telepathisch mit seinen Gegnern.
 
-### Fähigkeiten
+Er ist geduldig und berechnend: Als die Gruppe zum Turm kommt, hat er gewartet, statt sofort anzugreifen. Er verhandelt zunächst, geht aber zum Angriff über, wenn seine Forderungen nicht erfüllt werden. Gleichzeitig zeigt er sich beeindruckt von unerwarteten Fähigkeiten seiner Gegner, etwa Lunaras Gabe, die [Splitterwelt](/domains/splitterwelt.md) zu öffnen.
 
-- **Untotenheer:** Belorus führt eine riesige Armee von Untoten an und erhebt die Toten, um seine Streitmacht zu vergrößern.
-- **Geistergestalten:** Er entsendet lautlose Geistergestalten, die telepathisch kommunizieren und auf seine Befehle hören.
-- **Armeekontrolle:** Er kann Soldaten kontrollieren oder freilassen, um Nachrichten zu überbringen.
-- **Beschwörung:** Er ist in der Lage, eine Armee von Untoten zu beschwören.
+### Bewaffnung und Ausrüstung
 
-### Wesenszüge
+Belorus führt ein großes Bastardschwert, das „leicht bläulich-grünlich" flimmert. Sein Wappen — ein großer Kreis mit einer Pfeilspitze darin — ist auf Siegeln seiner [Schriftrollen](/items/schriftrollen.md) zu finden und wird von Dodo wiedererkannt.
 
-Belorus ist geduldig — er wartet ab, anstatt sofort anzugreifen. Er verhandelt zunächst, bevor er Gewalt anwendet, und stellt Ultimaten mit Bedenkzeit. Gleichzeitig ist er entschlossen und geht zum Angriff über, wenn seine Forderungen nicht erfüllt werden. Er zeigt sich beeindruckt von außergewöhnlichen Fähigkeiten seiner Gegner, etwa Lunaras Gabe, die [Splitterwelt](/domains/splitterwelt.md) zu öffnen. Sein erklärtes Ziel ist es, die alten Götter zu vernichten.
+### Armee
+
+Belorus befehligt eine riesige untote Armee. Seine Untoten sind ihm bedingungslos ergeben; sie bezeichnen ihn als „unseren Meister" und ziehen sich auf sein Wort zurück. Die Armee zieht aus dem Gebiet des früheren Königreichs Zebros ins Tal und hat unter anderem Breska zerstört.
 
 ## Beziehungen und Verbindungen
 
-- **König Zebros:** Belorus war einst General unter König Zebros, bevor er fiel und zum Todespaladin wurde.
-- **Lindo Laut:** Belorus sucht gezielt nach ihm, da er glaubt, dass Lindo Laut ein Gefäß für den alten Gott Vasul ist. Er stellt ihm ein Ultimatum und verlangt seine Herausgabe.
-- **Die Gruppe:** Er fordert die Gruppe heraus, will sie in seine Armee eingliedern und erkennt ihre Stärke an. Nach dem Kampf zeigt er Respekt vor ihren Fähigkeiten.
-- **Vasul:** Belorus will die alten Götter vernichten und vermutet in der Gruppe ein Fragment eines Gottes.
-- **[Hans](/npcs/hans_soldat_aus_breska.md):** Ein Soldat, den Belorus mit einer Nachricht zu Lindo Laut schickt.
+- **König Zebros**: Belorus war dessen General, bevor er seinen Eid brach und zum Todespaladin wurde.
+- **Lindo Laut**: Belorus' zentrales Ziel. Er glaubt, dass Lindo Laut ein Gefäß für den alten Gott Vasul ist, und stellt ihm ein Ultimatum. Letztlich lässt er sich von Lindo Lauts Rede überzeugen und akzeptiert die Gruppe als nicht korrumpiert.
+- **Cookie und Dodo**: Die beiden haben aus Belorus' Festung ein Tagebuch gestohlen. Belorus sucht nach ihnen und dem gestohlenen Gegenstand.
+- **[Rotunas](/characters/rotunas.md)**: Belorus' Untote zeigen auf Rotunas als „den Mächtigsten" der Gruppe und vermuten in ihm den Anführer.
+- **[Hans](/npcs/hans_soldat_aus_breska.md)**: Ein Soldat, den Belorus mit einer Nachricht zu Lindo Laut schickt.
+- **Vasul**: Ein alter Gott, dessen Gefäß Belorus sucht. Belorus will die alten Götter vernichten.
+- **Breska**: [Die Stadt](/locations/ehrenfels.md) wurde von Belorus' Untotenarmee zerstört.
 
 ## Chronologie
 
 ### Erste Begegnung in der Festung (Session 2025-05-14)
 
-Die Gruppe dringt in die Burg von Belorus in Zebros ein. In einer Kammer voller Leichen erscheint Belorus als schatten-schemenhafte Silhouette und begrüßt die Eindringlinge mit den Worten: „Verschafft mir die Ehre, Sterblicher." Er vermutet, dass sie nicht auf Schatzsuche sind, sondern nach Personen suchen. Er stellt sie vor die Wahl: „Sprecht jetzt oder lasst es bleiben und seid still für immer." Er zieht sein flimmerndes Bastardschwert und will die Gruppe in seine Armee eingliedern. Durch einen Schutzkristall wird er vertrieben und schwört Rache. Seine Identität wird später aus einem Buch in seinem Gemach enthüllt.
+Die Gruppe dringt in Belorus' Burg in Zebros ein. In einer Kammer voller Leichen erscheint Belorus als schattenhafte Silhouette und konfrontiert sie: „Verschafft mir die Ehre, Sterblicher." Er vermutet, dass sie nicht auf Schatzsuche sind, sondern an den Personen interessiert ist, die sich in seiner Festung aufhalten. Er fordert die Gruppe heraus: „Gib mir einen Grund, dich nicht in meine Armee einzugliedern." Als die Gruppe keinen Ausweg sieht, wird Belorus durch einen [Schutzkristall](/items/schutzkristall.md) vertrieben. Er schwört Rache. Seine Identität wird später aus einem Buch in seinem Gemach enthüllt.
 
-### Der Streich (Session 2025-09-09)
+### Streich mit dem Streitkolben (Session 2025-09-09)
 
-Die Gruppe glaubt, Belorus dem Stillen einen Streich gespielt zu haben, indem sie einen [Streitkolben](/items/streitkolben_von_dodo.md) aus seinem Besitz stahlen. Sie entkommen über verschneite Ebenen, während das [Steinbachtal](/locations/steinbachtal.md) in Nebel versinkt. Der gestohlene Streitkolben entpuppt sich als besondere Waffe namens „Zebrus Zorn", die den Schaden erhöht und als Lichtquelle dient.
+Die Gruppe entkommt aus dem Gebiet von Zebros und glaubt, Belorus dem Stillen „einen kleinen Streich gespielt" zu haben, indem sie einen [Streitkolben](/items/streitkolben_von_dodo.md) stahl — ein Item namens *Zebros Zorn*, das als Lichtquelle dient und den Schaden um 1w10 erhöht. Die Gruppe verlässt das in Nebel versinkende [Steinbachtal](/locations/steinbachtal.md) mit zwei geretteten Zwergen.
 
-### Die Geistergestalt (Session 2025-09-30)
+### Begegnung mit Belorus' Untoten (Session 2025-09-30)
 
-[Untote](/factions/belorus_untotenarmee.md) greifen die Gruppe an. Eine lautlose Geistergestalt erscheint und zeigt auf [Rotunas](/characters/rotunas.md). Sie erklärt: „Unser General hat das Zeitliche gesegnet und ihr habt uns und unseren Meister beeindruckt. Wir wollen euch für dieses Mal verschonen." Auf die Frage nach ihrem Meister antwortet sie: „Unser Meister ist Belorus der Stille." Belorus sucht nach zwei Personen und einem gestohlenen Gegenstand — die Gruppe vermutet, dass es sich um [Cookie](/characters/cookie.md) und [Dodo](/characters/dodo.md) handelt, die ein [Tagebuch](/items/gestohlenes_tagebuch.md) gestohlen haben.
+Belorus' Untote greifen die Gruppe an. Eine Geistergestalt zeigt auf Rotunas und fragt telepathisch: „Seid ihr also der Anführer?" Die Untoten geben sich geschlagen und erklären: „Unser General hat das Zeitliche gesegnet und ihr habt uns und unseren Meister beeindruckt. Wir wollen euch für dieses Mal verschonen." Auf die Frage nach ihrem Meister antworten sie: „Unser Meister ist Belorus der Stille." Belorus sucht zu diesem Zeitpunkt nach zwei Personen und einem gestohlenen Gegenstand — die Gruppe vermutet, dass es sich um Cookie und Dodo handelt.
 
-### Das Ultimatum (Session 2026-01-13)
+### Ultimatum an Lindo Laut (Session 2026-01-13)
 
-Ein Soldat namens Hans überbringt der Gruppe eine versiegelte Schriftrolle mit dem Wappen von Belorus — einem großen Kreis mit einer Pfeilspitze. Dodo erkennt das Siegel aus der Festung auf dem Berg Zebras wieder. Hans wurde von Belorus geschickt, um Lindo Laut ein Ultimatum zu stellen. Nach dem Kampf erscheint Belorus persönlich, erkennt die Gruppe an und offenbart, dass er ein Fragment eines Gottes in ihnen vermutet. Er beschwört eine Armee von Untoten, woraufhin die Gruppe teleportiert.
+Belorus schickt den Soldaten Hans mit einer versiegelten Schriftrolle, die das Wappen von Belorus trägt. Dodo erkennt das Siegel aus der Festung auf dem Berg Zebros wieder. Hans überbringt eine Nachricht, in der Belorus Lindo Laut ein Ultimatum stellt. Nach dem Kampf erscheint Belorus persönlich, erkennt die Gruppe an und offenbart, dass er ein Fragment eines Gottes in ihnen vermutet. Er beschwört eine Armee von Untoten, woraufhin die Gruppe teleportiert.
 
-### Die Konfrontation (Session 2026-01-20)
+### Konfrontation auf dem Turm (Session 2026-01-20)
 
-Belorus wartet geduldig auf die Gruppe, anstatt sofort anzugreifen. Er erklärt: „Ich habe keinen Groll gegen dieses Dorf, gegen dieses Lager. Ich will nur eins. Ich verlange nach Lindo Laut." Er gewährt Minuten Gedenkzeit und stellt die Gruppe vor die Wahl: „Entweder entscheidet ihr dann für euer Leben oder dagegen." Er offenbart, dass er die alten Götter vernichten will, und zeigt sich beeindruckt von Lunaras Fähigkeit, die Splitterwelt zu öffnen. Letztlich lässt er sich von Lindo Lauts Rede überzeugen, akzeptiert die Gruppe als nicht von Vasul korrumpiert und zieht sich zurück.
+Belorus wartet geduldig auf die Gruppe am Turm. Er erklärt: „Diese Schlacht wird für euch nicht gut enden. Ich habe keinen Groll gegen dieses Dorf, gegen dieses Lager. Ich will nur eins. Ich verlange nach Lindo Laut." Er gewährt Minuten Gedenkzeit und droht: „Entweder entscheidet ihr dann für euer Leben oder dagegen." Belorus sucht Lindo Laut, da er glaubt, dass dieser ein Gefäß für den alten Gott Vasul ist. Er offenbart, dass er die alten Götter vernichten will, und zeigt sich beeindruckt von Lunaras Fähigkeit, die Splitterwelt zu öffnen. Letztlich lässt er sich von Lindo Lauts Rede überzeugen, akzeptiert die Gruppe als nicht von Vasul korrumpiert und zieht sich zurück.
 
-### Die Zerstörung von Breska (Session 2026-03-10)
+### Zerstörung von Breska und Rückzug (Session 2026-03-10)
 
-Belorus' Armee hat Breska zerstört und die Bewohner getötet. Die Gruppe hat ihn mehr oder weniger besiegt — sie konnte ihn überreden, dass seine Machenschaften keinen Sinn ergeben, woraufhin er sich auf seinen Berg zurückzog. Die Nachwirkungen seines Angriffs sind noch spürbar: Eine unnatürliche Nebelwand liegt über dem Tal von Breska, die Lunara als nicht natürlich erzeugt erkennt — möglicherweise ein Nachklang des Kampfes gegen Belorus.
+Belorus' Untotenarmee hat Breska zerstört und die Bewohner getötet. Die Gruppe hat Belorus mehr oder weniger besiegt — sie konnten ihn überreden, dass seine Machenschaften keinen Sinn ergeben, woraufhin er sich auf seinen Berg zurückzog. Nach dem Kampf bleibt eine unnatürliche Nebelwand über dem Tal von Breska zurück, die Lunara als nicht natürlich erzeugt erkennt — möglicherweise ein Nachwirkung des Kampfes gegen Belorus.
 
 ## Offene Fragen
 
-- Was genau geschah mit König Zebros, und in welchem Verhältnis steht Belorus' Burg zu dessen Reich?
-- Welche Rolle spielt der gestohlene Streitkolben „Zebrus Zorn" in Belorus' Plänen?
-- Was ist aus Belorus' Racheschwur geworden, nachdem er sich zurückgezogen hat?
-- Welche Verbindung besteht zwischen Belorus und den alten Göttern, die er vernichten will?
+- Was genau geschah mit König Zebros und dem Königreich Zebros, das Belorus' Eidbruch auslöste?
+- Was steht in dem Tagebuch, das Cookie und Dodo aus Belorus' Festung gestohlen haben, und warum ist es ihm so wichtig?
+- Was ist der Schutzkristall, der Belorus in der ersten Begegnung vertrieben hat, und woher stammt seine Macht?
+- Welche Verbindung besteht zwischen Belorus und dem alten Gott Vasul — dient er ihm, oder will er ihn nur als Mittel zum Zweck nutzen, um die alten Götter zu vernichten?
+- Ist die unnatürliche Nebelwand über Breska tatsächlich ein Nachwirkung des Kampfes, oder hat sie eine andere Ursache?
 
 ## Belege
 
-[P-08] Session 2025-05-14 @ 01:05:33 — https://www.youtube.com/watch?v=5eAEDN5ra-4
-[P-21] Session 2025-09-09 @ 02:00:00 — https://www.youtube.com/watch?v=Zl0qfuI6Goc
-[P-24] Session 2025-09-30 @ 00:52:20 — https://www.youtube.com/watch?v=bUT7Mc2hjUY
-[P-33] Session 2026-01-13 @ 00:56:42 — https://www.youtube.com/watch?v=w4LB1s9_3rs
-[P-34] Session 2026-01-20 @ 00:09:02 — https://www.youtube.com/watch?v=H3ckYdTv4y8
-[P-40] Session 2026-03-10 @ 00:02:00 — https://www.youtube.com/watch?v=Kr9_AC2XtOw
+[P-08] Session 2025-05-14 @ 01:05:33 (https://www.youtube.com/watch?v=5eAEDN5ra-4)
+[P-21] Session 2025-09-09 @ 02:00:00 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
+[P-24] Session 2025-09-30 @ 00:52:20 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[P-33] Session 2026-01-13 @ 00:56:42 (https://www.youtube.com/watch?v=w4LB1s9_3rs)
+[P-34] Session 2026-01-20 @ 00:09:02 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
+[P-40] Session 2026-03-10 @ 00:02:00 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)

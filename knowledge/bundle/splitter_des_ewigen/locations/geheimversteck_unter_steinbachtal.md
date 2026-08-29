@@ -10,7 +10,7 @@ id: LOC_GEHEIMVERSTECK_UNTER_STEINBACHTAL
 subtype: Dungeon
 ---
 
-Ein versteckter Raum unter einem Gebäude in [Steinbachtal](/locations/steinbachtal.md), erreichbar durch ein versiegeltes Tor. In der Mitte schwebt ein [Streitkolben](/items/streitkolben_von_dodo.md) auf einem Pentagramm, umgeben von Ketten. Der Raum ist mit alten Schriften und einem Spiegel gefüllt. Die Gruppe findet hier den Streitkolben „[Zebras Zorn](/items/zebras_zorn.md)“ und einen geheimen Fluchttunnel.
+Ein versteckter Raum unter einem Gebäude in [Steinbachtal](/locations/steinbachtal.md), erreichbar durch ein versiegeltes Tor. In der Mitte schwebt ein [Streitkolben](/items/streitkolben_von_dodo.md) auf einem Pentagramm, umgeben von Ketten. Der Raum ist mit alten Schriften und einem Spiegel gefüllt. Die Gruppe findet hier den Streitkolben „Zebros Zorn“ und einen geheimen Fluchttunnel.
 
 # Belege
 

@@ -26,7 +26,7 @@ Das Banditenlager der [Silberkerne](/factions/silberkerne.md) ist eine befestigt
 
 Das Banditenlager wird der Gruppe erstmals in Session 2025-09-17 als mögliches Ziel für die Flüchtlinge aus Breska vorgeschlagen. [Roland](/npcs/roland.md), ein Bewohner Breskas, markiert es auf der Karte und beschreibt es als altes Banditenlager, in dem noch Banditen leben, die Karawanen überfallen. Die Gruppe plant zunächst, die Flüchtlinge dorthin zu bringen, wobei unklar ist, ob man die Banditen vertreiben, töten oder sich mit ihnen arrangieren kann. [Nyrella](/characters/nyrella.md) formuliert die Hoffnung: „Vielleicht können wir ja auch erstmal schauen, wie diese Banditen so sind."
 
-In der Folge wird das Lager zum zentralen Operationspunkt der Gruppe: Sie kundschaften es aus, verhandeln mit den Anführern und bringen schließlich Flüchtlinge dort unter. In Session 2026-01-20 ist das Lager das „Hideout der Banditen, wo wir neben den Banditen eben ganz viele Flüchtlinge von Bereska untergebracht haben" ([Lindo Laut](/characters/lindo_laut.md)). Es wird zum Schauplatz der [Konfrontation mit Belorus](/events/konfrontation_mit_belorus.md), der das Lager mit seiner untoten Armee belagert.
+In der Folge wird das Lager zum zentralen Operationspunkt der Gruppe: Sie kundschaften es aus, verhandeln mit den Anführern und bringen schließlich Flüchtlinge dort unter. In Session 2026-01-20 ist das Lager das „Hideout der Banditen, wo wir neben den Banditen eben ganz viele Flüchtlinge von Breska untergebracht haben" ([Lindo Laut](/characters/lindo_laut.md)). Es wird zum Schauplatz der [Konfrontation mit Belorus](/events/konfrontation_mit_belorus.md), der das Lager mit seiner untoten Armee belagert.
 
 ## Wichtige Merkmale
 

@@ -15,7 +15,7 @@ Sange ist ein Katari-Blattjäger (in den Quellen auch als "Katari-Blatthunter" b
 
 Sange praktiziert [Blutmagie](/domains/blutmagie.md) und gehört damit der Klasse der Bloodhunter an. Seine Magie wird als turbulent und chaotisch beschrieben, vergleichbar mit einer stürmischen, rot gefüllten Glaskugel. Durch den Segen eines neuen Gottes hat sich seine Gefühlslage und seine Magie jedoch spürbar verändert.
 
-Ursprünglich stammt Sange aus [Brandau](/locations/brandau.md), einer Stadt, die den [Krieg](/characters/krieg.md) gegen [Willoch](/locations/willauch.md) verloren hat. Er verließ seine Heimat jedoch schon wesentlich früher, nicht wegen des Krieges, sondern weil er seine Heimat im Sinne seiner Geliebten verloren hat. Vor seiner Zeit als Blattjäger war er ein angesehener Künstler, der in höheren Kreisen verkehrte – ein Leben, das er durch die Blutmagie aufgeben musste.
+Ursprünglich stammt Sange aus [Brandau](/locations/brandau.md), einer Stadt, die den [Krieg](/characters/krieg.md) gegen [Willauch](/locations/willauch.md) verloren hat. Er verließ seine Heimat jedoch schon wesentlich früher, nicht wegen des Krieges, sondern weil er seine Heimat im Sinne seiner Geliebten verloren hat. Vor seiner Zeit als Blattjäger war er ein angesehener Künstler, der in höheren Kreisen verkehrte – ein Leben, das er durch die Blutmagie aufgeben musste.
 
 ## Rolle in der Kampagne
 
@@ -83,7 +83,7 @@ Sange untersucht einen Schädel in der Mine und erhält eine Vision von einem Ü
 
 ### Session 2026-08-06
 
-Sange nimmt seine Maske ab und offenbart der Gruppe seine wahre Identität als Katzenwesen. Er erzählt von seiner Vergangenheit: Er stammt aus Brandau, das den Krieg gegen Willoch verloren hat, verließ seine Heimat aber schon früher, weil er seine Geliebte verloren hat. Er war ein angesehener Künstler, der in höheren Kreisen verkehrte, musste dieses Leben aber durch die Blutmagie aufgeben. Er baut Käfige für die Hühner und zeigt taktisches Verständnis. Er belauscht das Gespräch zwischen Talron und Raxalis über Marie und hält diese Information geheim.
+Sange nimmt seine Maske ab und offenbart der Gruppe seine wahre Identität als Katzenwesen. Er erzählt von seiner Vergangenheit: Er stammt aus Brandau, das den Krieg gegen Willauch verloren hat, verließ seine Heimat aber schon früher, weil er seine Geliebte verloren hat. Er war ein angesehener Künstler, der in höheren Kreisen verkehrte, musste dieses Leben aber durch die Blutmagie aufgeben. Er baut Käfige für die Hühner und zeigt taktisches Verständnis. Er belauscht das Gespräch zwischen Talron und Raxalis über Marie und hält diese Information geheim.
 
 ## Offene Fragen
 

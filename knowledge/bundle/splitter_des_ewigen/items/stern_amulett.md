@@ -10,7 +10,7 @@ id: ITEM_STERN_AMULETT
 subtype: Artefakt
 ---
 
-Ein magisches [Amulett](/items/amulett_des_heiligen_duran.md) in Sternform, das [Esterossa](/characters/esterossa.md) an der Grabstätte findet. Es ist eines von fünf. Es hat Restmagie und wird von den [Kuatau](/npcs/kuatau.md) als Geschenk der [Sumpfhexe](/npcs/lenra.md) bezeichnet. [Rotunas](/characters/rotunas.md) löst es im Brunnen auf, wodurch ein [Portal](/locations/portal.md) entsteht.
+Ein magisches Amulett in Sternform, das [Esterossa](/characters/esterossa.md) an der Grabstätte findet. Es ist eines von fünf. Es hat Restmagie und wird von den [Kuatau](/npcs/kuatau.md) als Geschenk der [Sumpfhexe](/npcs/lenra.md) bezeichnet. [Rotunas](/characters/rotunas.md) löst es im Brunnen auf, wodurch ein [Portal](/locations/portal.md) entsteht.
 
 # Belege
 

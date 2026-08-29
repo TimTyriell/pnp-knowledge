@@ -23,7 +23,7 @@ Das Buch verzeichnet eine Liste von Namen. Belegt sind:
 
 ## Rolle und Verlauf
 
-Das Buch lag in einer Krypta, wo es mit [Lanra](/npcs/lenra.md) in Verbindung zu stehen schien, und wurde von [Lindo Laut](/characters/lindo_laut.md) aus einer Höhle mitgenommen. Die frischen Einträge legen nahe, dass die Liste laufend ergänzt wird. Der genaue Zweck des Buchs – etwa ob es Tote verzeichnet oder als allgemeines Namensregister dient – ist nicht abschließend geklärt.
+Das Buch lag in einer Krypta, wo es mit [Landra](/npcs/lenra.md) in Verbindung zu stehen schien, und wurde von [Lindo Laut](/characters/lindo_laut.md) aus einer Höhle mitgenommen. Die frischen Einträge legen nahe, dass die Liste laufend ergänzt wird. Der genaue Zweck des Buchs – etwa ob es Tote verzeichnet oder als allgemeines Namensregister dient – ist nicht abschließend geklärt.
 
 # Belege
 

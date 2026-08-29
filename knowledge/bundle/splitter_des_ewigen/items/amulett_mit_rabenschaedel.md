@@ -10,7 +10,7 @@ id: ITEM_AMULETT_MIT_RABENSCHAEDEL
 subtype: Artefakt
 ---
 
-Das [Amulett](/items/amulett_des_heiligen_duran.md) mit Rabenschädel ist ein magisches Erbstück, das [Gulrak](/npcs/gulrak.md) zurückholen wollte. Es befindet sich angeblich im Besitz von [Baran](/npcs/baran.md), wird aber nicht gefunden.
+Das Amulett mit Rabenschädel ist ein magisches Erbstück, das [Gulrak](/npcs/gulrak.md) zurückholen wollte. Es befindet sich angeblich im Besitz von [Baran](/npcs/baran.md), wird aber nicht gefunden.
 
 # Belege
 

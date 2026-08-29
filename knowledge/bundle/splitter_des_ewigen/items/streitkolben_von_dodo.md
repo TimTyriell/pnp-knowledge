@@ -1,8 +1,8 @@
 ---
 type: Item
 title: Zebros Zorn
-description: Zebros Zorn ist ein heiliger Streitkolben und die aktuelle Hauptwaffe
-  von Dodo. Die magische Waffe verursacht magischen Schaden; Dodo setzt…
+description: Zebros Zorn ist ein mächtiger, heiliger Streitkolben aus dem gefallenen
+  Königreich Zebros. Er dient Dodo als aktuelle Hauptwaffe, verursach…
 tags:
 - items
 timestamp: '2026-08-25T00:00:00Z'
@@ -17,22 +17,29 @@ aliases:
 - Der heilige Streitkolben aus Zebras
 - Zebrus Zorn
 - Der Streitkolben
+- Zebras Zorn
 ---
 
-Zebros Zorn ist ein heiliger Streitkolben und die aktuelle Hauptwaffe von [Dodo](/characters/dodo.md). Die magische Waffe verursacht magischen Schaden; Dodo setzt sie im Kampf zusammen mit seinem Feueratem ein. Sie ist Dodos einzige heilige Waffe. Der Name verweist auf das alte [Königreich Zebros](/factions/koenigreich_zebros.md) und nicht auf eine Gottheit. Dodo zog den Streitkolben in der [Festung](/locations/festung.md) Zebras aus einem Spiegel; ursprünglich stammt er aus Cepros.
+[Zebros](/factions/koenigreich_zebros.md) Zorn ist ein mächtiger, heiliger Streitkolben aus dem gefallenen Königreich [Zebros](/factions/koenigreich_zebros.md). Er dient [Dodo](/characters/dodo.md) als aktuelle Hauptwaffe, verursacht magischen Schaden und kann als Lichtquelle dienen. Die Gruppe barg ihn aus einem Geheimversteck in [Steinbachtal](/locations/steinbachtal.md).
 
-## Herkunft und Geschichte
+## Herkunft und Erwerb
 
-Dodo kämpfte zunächst mit einem Breitschwert. Auf Tier 2 kaufte er einen Streitkolben und nutzte seither diese Waffenform. In der [Seelenwacht](/locations/seelenwacht.md)-Session erhielt die Gruppe einen neuen Kolben, Zebros Zorn, der seither Dodos Hauptwaffe ist.
+Das Königreich Zebros wurde im Götterkrieg zerstört; der Streitkolben ist ein Relikt aus dieser Zeit. Einst wurde er in der [Festung](/locations/festung.md) Zebros aus einem Spiegel gezogen. In einem Geheimversteck in Steinbachtal schwebte er auf einem Pentagramm, gebunden von unsichtbaren Ketten; durch ein zwergisches Kommando ließ er sich aktivieren. [Rotunas](/characters/rotunas.md) zog ihn durch einen Spiegel, um die Waffe zu erbeuten.
 
-Der Streitkolben trägt den Namen des alten Königreichs Zebros, das im Götterkrieg zerstört wurde. Die Hauptstadt des Königreichs trug ebenfalls den Namen Zebros, ebenso ein Berg (der Berg Zebros). Vom Königreich sind heute nur noch Ruinen und Relikte erhalten; der Berg Zebros steht weiterhin. Die Waffe wurde in der Festung Zebras aus einem Spiegel gezogen; ihre ursprüngliche Herkunft liegt jedoch in Cepros.
+## Eigenschaften
 
-## Eigenschaften und Kampfrolle
+- Die Waffe erhöht den Schaden im Kampf um 1w10.
+- Sie verursacht magischen Schaden.
+- Auf ein zwergisches Kommando hin leuchtet sie und dient als Lichtquelle.
+- Dodo setzt sie im Kampf zusammen mit seinem Feueratem ein.
 
-Zebros Zorn ist eine magische Waffe, die magischen Schaden verursacht. Dodo nutzt sie zusammen mit seinem Feueratem, was sie zu einem zentralen Bestandteil seiner Kampfweise macht. Als heilige Waffe hebt sie sich von gewöhnlichen Streitkolben ab.
+## Rolle
+
+Dodo führte zunächst ein Breitschwert, wechselte aber auf den Streitkolben und nutzt Zebros Zorn seither als Hauptwaffe. Die Waffe wird in der Gruppe auch schlicht als Streitkolben von Dodo bezeichnet. Als heilige Waffe ist sie nicht mit dem [Morgenstern des Heiligen Duran](/items/morgenstern_des_heiligen_duran.md) zu verwechseln.
 
 # Belege
 
-1. Session 2026-05-19, 02:27:36 – https://www.youtube.com/watch?v=xEcGJeaNixI
-2. Session 2026-08-25, 01:51:04 – https://www.youtube.com/watch?v=1Cjj3OVqiYA
-3. Kanon_Entscheidungen.md (Spielleitungs-Kanondokument)
+1. Session 2025-09-09, 02:00:00 – [YouTube](https://www.youtube.com/watch?v=Zl0qfuI6Goc)
+2. Session 2026-05-19, 02:27:36 – [YouTube](https://www.youtube.com/watch?v=xEcGJeaNixI)
+3. Session 2026-08-25, 01:51:04 – [YouTube](https://www.youtube.com/watch?v=1Cjj3OVqiYA)
+4. Kanon_Entscheidungen.md – GM/Noah, Korrektur 2026-08-29.

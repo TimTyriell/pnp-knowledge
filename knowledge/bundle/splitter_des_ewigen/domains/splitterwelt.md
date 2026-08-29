@@ -64,7 +64,7 @@ Nox, der den alten Göttern angehört, errichtet gemeinsam mit [Voras](/npcs/vor
 
 - **Der Weg nach Abyssalis (Februar 2026):** Nerash weist der Gruppe den Weg: Sie müssen nach Abyssalis, zu den Szenen des Wahnsinns, zu den lila Bergen, um den Teil von Vasul aus Lindo Laut zu vertreiben. Abyssalis wird als Gefängniswelt beschrieben, in die die alten Götter verbannt wurden.
 
-- **Vorbereitungen (März 2026):** Die Gruppe erreicht die Splitterwelt durch ein Portal in Breska. Zandro zeigt ihnen das Tor zu Abyssalis, das zwei Stunden vom Portal entfernt liegt. Nox und [Voras](/npcs/vora.md) erstellen ein Portal nach Abyssalis. Lunara will dorthin reisen, um ihren Bruder zu retten und die Teile von Vasul zu bekämpfen.
+- **Vorbereitungen (März 2026):** Die Gruppe erreicht die Splitterwelt durch ein Portal in Breska. Zandro zeigt ihnen das Tor zu Abyssalis, das zwei Stunden vom Portal entfernt liegt. Nox und Voras erstellen ein Portal nach Abyssalis. Lunara will dorthin reisen, um ihren Bruder zu retten und die Teile von Vasul zu bekämpfen.
 
 - **Ankunft in Abyssalis (März/April 2026):** Die Gruppe betritt Abyssalis, eine dämonische Welt mit Ruinen, Erntefeldern und vier alten Göttern. Vasul gewährt Schutzamulette. Die Gruppe sucht nach Lunaras Bruder.
 

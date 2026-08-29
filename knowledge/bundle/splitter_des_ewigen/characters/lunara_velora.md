@@ -184,8 +184,8 @@ Lunara spürt die unheimliche Präsenz und erkennt die Verbindung zwischen dem B
 ## Offene Fragen
 
 - Was geschah mit Liam nach seiner Rettung? Er darf nicht zum Tempel, und Lunara bleibt bei ihm – seine weitere Entwicklung und ob er sich vollständig erholt, bleibt offen.
-- Die silberne Feder, die Lunara wiederbelebt hat, stammt von [Leandras](/npcs/lenra.md) – welche Bedeutung hat diese Verbindung und welche Rolle spielt Leandras weiterhin?
-- Lunara hat [Voras](/npcs/vora.md) vor zwölf Jahren ein Buch gegeben, das zu den aktuellen Ereignissen führte – die genauen Umstände und Inhalte dieses Buches bleiben unklar.
+- Die silberne Feder, die Lunara wiederbelebt hat, stammt von Leandras – welche Bedeutung hat diese Verbindung und welche Rolle spielt Leandras weiterhin?
+- Lunara hat Voras vor zwölf Jahren ein Buch gegeben, das zu den aktuellen Ereignissen führte – die genauen Umstände und Inhalte dieses Buches bleiben unklar.
 - Die Kontrollrunen, die Lunara mit Vasul verbanden – welche weiteren Auswirkungen haben sie auf sie, nachdem Vasul tot ist?
 
 ## Belege

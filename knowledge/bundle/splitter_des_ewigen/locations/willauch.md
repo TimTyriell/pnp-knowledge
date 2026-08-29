@@ -20,7 +20,7 @@ aliases:
 
 ## Überblick
 
-Willauch ist eine der beiden großen Städte der Region und gilt als die größte Stadt der nördlichen Schneise. Sie ist wohlhabend, gut verteidigt und multikulturell. [Die Stadt](/locations/ehrenfels.md) hat den [Krieg](/characters/krieg.md) gegen [Brandau](/locations/brandau.md) gewonnen und richtet seitdem Arena-Kämpfe aus, bei denen Kämpfe auf Leben und Tod ausgetragen werden. Willauch wird von Lord Kalidarn regiert, der sich selbst als „Herr und Sieger über Brandau, Herr über Willau und das ganze Reich" bezeichnet.
+Willauch ist eine der beiden großen Städte der Region und gilt als die größte Stadt der nördlichen Schneise. Sie ist wohlhabend, gut verteidigt und multikulturell. [Die Stadt](/locations/ehrenfels.md) hat den [Krieg](/characters/krieg.md) gegen [Brandau](/locations/brandau.md) gewonnen und richtet seitdem Arena-Kämpfe aus, bei denen Kämpfe auf Leben und Tod ausgetragen werden. Willauch wird von Lord Kalidarn regiert, der sich selbst als „Herr und Sieger über Brandau, Herr über Willauch und das ganze Reich" bezeichnet.
 
 Die Stadt verfügt über eine große Stadtmauer, die selbst erfahrene Reisende beeindruckt. Im Inneren finden sich ein Marktplatz, zahlreiche Tavernen, eine Kaserne, ein Anwesen des Lords sowie eine große Bibliothek. Die Arena liegt außerhalb der Stadt. Willauch wird als Ort beschrieben, „in dem alles möglich ist — von Handel bis hin zu irgendwelchen Intrigen, bis hin zu Kämpfen, bis hin zu was auch immer".
 
@@ -46,7 +46,7 @@ Willauch ist multikulturell und wohlhabend. Die Stadt hat viele Tavernen, in den
 
 ### Die Arena
 
-Die Arena liegt außerhalb der Stadt und ist Austragungsort von Kämpfen auf Leben und Tod. Lord Kalidarn persönlich eröffnet die Kämpfe mit den Worten: „Willkommen in der [Arena von Willau](/locations/arena_von_willau.md). Der Kampf möge in wenigen Augenblicken beginnen. Dieser Kampf ist auf Leben und Tod oder auf meinem Wille zu entscheiden." Das Publikum reagiert bei seinem Erscheinen mit großer Begeisterung — es werden Fähnchen geworfen, Menschen schreien, einige kippen sogar um.
+Die Arena liegt außerhalb der Stadt und ist Austragungsort von Kämpfen auf Leben und Tod. Lord Kalidarn persönlich eröffnet die Kämpfe mit den Worten: „Willkommen in der [Arena von Willauch](/locations/arena_von_willau.md). Der Kampf möge in wenigen Augenblicken beginnen. Dieser Kampf ist auf Leben und Tod oder auf meinem Wille zu entscheiden." Das Publikum reagiert bei seinem Erscheinen mit großer Begeisterung — es werden Fähnchen geworfen, Menschen schreien, einige kippen sogar um.
 
 ### Militär und Aufrüstung
 

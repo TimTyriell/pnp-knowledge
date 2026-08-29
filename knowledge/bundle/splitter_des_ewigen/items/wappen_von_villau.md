@@ -6,7 +6,7 @@ description: Das Wappen von Villau zeigt eine eiserne Faust auf grünem Hintergr
 tags:
 - items
 timestamp: '2026-05-27T00:00:00Z'
-id: ITEM_WAPPEN_VON_VILLAUCH
+id: ITEM_WAPPEN_VON_VILLAU
 subtype: Schriftstück
 ---
 

@@ -2,7 +2,7 @@
 type: Event
 title: Enthüllung von Leandras Plan
 description: Lindo Laut liest die Gedanken des Schamanen und erfährt, dass die Hexe
-  Leandra hinter dem Angriff steckt und ein Artefakt zurückfordert.
+  Landra hinter dem Angriff steckt und ein Artefakt zurückfordert.
 tags:
 - events
 timestamp: '2026-08-25T00:00:00Z'
@@ -10,7 +10,7 @@ id: EVENT_ENTHUELLUNG_VON_LEANDRAS_PLAN
 subtype: Entdeckung
 ---
 
-[Lindo Laut](/characters/lindo_laut.md) liest die Gedanken des Schamanen und erfährt, dass die Hexe [Leandra](/npcs/lenra.md) hinter dem Angriff steckt und ein Artefakt zurückfordert.
+[Lindo Laut](/characters/lindo_laut.md) liest die Gedanken des Schamanen und erfährt, dass die Hexe [Landra](/npcs/lenra.md) hinter dem Angriff steckt und ein Artefakt zurückfordert.
 
 # Belege
 

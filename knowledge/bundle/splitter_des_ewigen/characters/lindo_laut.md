@@ -19,7 +19,7 @@ aliases:
 
 ## Überblick
 
-Lindo Laut ist ein Feenwesen und Barde, gespielt von Tim, und gehört zu den zentralen Spielercharakteren der Kampagne. Er tritt zunächst als Troubadour mit der Fähigkeit *Inspiring Words* auf und entwickelt sich im Verlauf der Kampagne zu einem mächtigen, aber auch zunehmend ambivalenten Magiewirker. Seine musikalische Magie, seine Flugfähigkeit und sein diplomatisches Geschick machen ihn zur „Speerspitze … in allen diplomatischen Angelegenheiten der Gruppe“. Im Laufe der Kampagne durchläuft er mehrere tiefgreifende Transformationen: von der Fee über den Träger eines mächtigen [Amuletts](/items/amulett_des_heiligen_duran.md) mit vier Seelen, den Wirt eines dämonischen Wesens namens [Slix](/npcs/slix_vasul.md), bis hin zu einem Katari namens Pedro und schließlich zurück zur Feenform.
+Lindo Laut ist ein Feenwesen und Barde, gespielt von Tim, und gehört zu den zentralen Spielercharakteren der Kampagne. Er tritt zunächst als Troubadour mit der Fähigkeit *Inspiring Words* auf und entwickelt sich im Verlauf der Kampagne zu einem mächtigen, aber auch zunehmend ambivalenten Magiewirker. Seine musikalische Magie, seine Flugfähigkeit und sein diplomatisches Geschick machen ihn zur „Speerspitze … in allen diplomatischen Angelegenheiten der Gruppe“. Im Laufe der Kampagne durchläuft er mehrere tiefgreifende Transformationen: von der Fee über den Träger eines mächtigen Amuletts mit vier Seelen, den Wirt eines dämonischen Wesens namens [Slix](/npcs/slix_vasul.md), bis hin zu einem Katari namens Pedro und schließlich zurück zur Feenform.
 
 ## Rolle in der Kampagne
 
@@ -60,7 +60,7 @@ Lindo Laut ist neugierig, vorlaut und selbstbewusst, neigt aber dazu, Situatione
 - **[Tyrex](/deities/thyrex.md) und [Esuar](/npcs/esuar.md)**: Stimmen, die ihn beeinflussen wollen.
 - **Liam**: Dessen Seele könnte verloren sein; Lindo Laut weint, als er das realisiert.
 - **[Kaleandra](/deities/kaleandra.md)**: Erfragt von [Voras](/npcs/voras.md) deren Bezug zu den Göttern.
-- **[Leandra](/npcs/lenra.md)**: Hexe, an die er sich erinnert; ihr Plan wird durch Gedankenlesen enthüllt.
+- **[Landra](/npcs/lenra.md)**: Hexe, an die er sich erinnert; ihr Plan wird durch Gedankenlesen enthüllt.
 - **[Huludan](/deities/huludan.md)**: Name, den er ruft, um einen [Kristall](/items/gruener_kristall.md) zu aktivieren.
 
 ## Chronologie
@@ -69,13 +69,13 @@ Lindo Laut ist neugierig, vorlaut und selbstbewusst, neigt aber dazu, Situatione
 
 In der ersten Session stellt sich Lindo Laut als Barde mit der Subklasse Troubadour vor, wählt *Inspiring Words* und spielt im Kampf einen Song, der ein Monster verwundbar macht. Er führt ein Beschwörungsritual durch und heilt Marco.
 
-In der zweiten Session übernimmt er die Rolle des Sprechers, gewinnt das Vertrauen von Phipps, scheitert aber daran, ihn zu überzeugen, die Gruppe zu begleiten. Im Kampf gegen [Bugbears](/npcs/bugbears.md) zeigt er sich zunächst unsicher, besiegt aber mit einem Powerpush einen Gegner. Bei der Begegnung mit Lanra beeindruckt er sie mit einem Lied.
+In der zweiten Session übernimmt er die Rolle des Sprechers, gewinnt das Vertrauen von Phipps, scheitert aber daran, ihn zu überzeugen, die Gruppe zu begleiten. Im Kampf gegen [Bugbears](/npcs/bugbears.md) zeigt er sich zunächst unsicher, besiegt aber mit einem Powerpush einen Gegner. Bei der Begegnung mit Landra beeindruckt er sie mit einem Lied.
 
 In der [Katakombe](/locations/katakombe.md) motiviert er die Gruppe mit einer Rede und einem Lied, beschwört ein Abbild seiner selbst und wird vom [Oger](/npcs/oger.md) getroffen, kann den Schaden aber reduzieren. Er ist neugierig und vorlaut, fragt den Magier nach dem Buch mit den Namen und ist bereit, die Dorfbewohner zu schützen.
 
 ### Gildenzeit und Amulett (Mai–August 2025)
 
-Lindo Laut wird Mitglied der Dwarfmaster-[Gilde](/factions/gilde_von_ehrenfels.md) und erlernt Schauspielerei und Improvisation. Er erkundet die Umgebung aus der Luft, entdeckt die Klaue und das Lager, verwandelt sich in eine Eule und später in einen Gnoll und erschafft ein [Portal](/locations/portal.md). Dafür erhält er das Amulett des Heiligen Duran.
+Lindo Laut wird Mitglied der Dwarfmaster-[Gilde](/factions/gilde_von_ehrenfels.md) und erlernt Schauspielerei und Improvisation. Er erkundet die Umgebung aus der Luft, entdeckt die Klaue und das Lager, verwandelt sich in eine Eule und später in einen Gnoll und erschafft ein [Portal](/locations/portal.md). Dafür erhält er das [Amulett des Heiligen Duran](/items/amulett_des_heiligen_duran.md).
 
 Im Kampf gegen den Dämon motiviert er die Gruppe mit Gesang, kommuniziert telepathisch mit dem Dämon und setzt *Akan Barrage* ein, was den Dämon schwer verwundet. Seine Fähigkeit, Hope zu sammeln, ist entscheidend für den Sieg.
 
@@ -131,7 +131,7 @@ Zurück in Ehrenfels inszeniert er mit einer [Hope-Hold-Flare](/items/hope_hold_
 
 Er ist misstrauisch gegenüber Vitius, liest die Oberfläche seiner Gedanken und erkennt, dass dieser nicht an seine eigenen Worte glaubt. Er erhält den [Segen der neuen Götter](/events/segen_der_neuen_goetter.md). Nach [Nerashs](/deities/nerash.md) Verschwinden bringt er Vitius dazu, die korrupten Seraphen zu zeigen. Er hat einen emotionalen Moment mit Dodo am Nest von [Inaros](/npcs/inaros.md) und reflektiert über die Macht der alten Götter.
 
-Er versucht, über eine Brücke zu springen, fällt aber und muss sich mit den Flügeln retten. Er schießt mit einer Armbrust auf einen [Fallout-Frosch](/npcs/fallout_frosch.md) (sein erster Treffer), löst versehentlich eine Lawine aus, die [Lobrecht](/npcs/lobrecht.md) verletzt, und rettet Joao mit Teleportationsmagie. Er ist neugierig auf die Geschichte von [Zebros](/factions/koenigreich_zebros.md) und zeigt sich emotional berührt, als er erfährt, dass [Velorus](/npcs/velorus.md) einen Vater hat. Er erinnert sich an die Hexe Leandra und das Artefakt, liest die Gedanken des Schamanen und erfährt von [Leandras](/npcs/lendras.md) Plan. Er rettet Lobrecht in seine Pocket Domain.
+Er versucht, über eine Brücke zu springen, fällt aber und muss sich mit den Flügeln retten. Er schießt mit einer Armbrust auf einen [Fallout-Frosch](/npcs/fallout_frosch.md) (sein erster Treffer), löst versehentlich eine Lawine aus, die [Lobrecht](/npcs/lobrecht.md) verletzt, und rettet Joao mit Teleportationsmagie. Er ist neugierig auf die Geschichte von [Zebros](/factions/koenigreich_zebros.md) und zeigt sich emotional berührt, als er erfährt, dass [Velorus](/npcs/velorus.md) einen Vater hat. Er erinnert sich an die Hexe Landra und das Artefakt, liest die Gedanken des Schamanen und erfährt von [Leandras](/npcs/lendras.md) Plan. Er rettet Lobrecht in seine Pocket Domain.
 
 ## Offene Fragen
 

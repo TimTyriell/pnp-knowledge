@@ -10,7 +10,7 @@ id: EVENT_EXPEDITION_IN_DEN_NEBEL
 subtype: Reise
 ---
 
-Die Gruppe begleitet [Trilo](/npcs/trillo.md) auf einer Expedition in den Nebel, um die Quelle der Kreaturen zu finden. Sie finden Leichen und einen alten Turm.
+Die Gruppe begleitet [Trilo](/npcs/trilo.md) auf einer Expedition in den Nebel, um die Quelle der Kreaturen zu finden. Sie finden Leichen und einen alten Turm.
 
 # Belege
 

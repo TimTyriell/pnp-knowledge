@@ -1,12 +1,12 @@
 ---
-type: NPC
+type: Event
 title: Illusion von Kalos
 description: Kalos entpuppt sich als Illusion, die von Merlin zerstört wird. Die Gruppe
   erkennt, dass die gesamte Begegnung im Turm eine Falle war.
 tags:
-- npcs
+- events
 timestamp: '2026-05-27T00:00:00Z'
-id: NPC_ILLUSION_VON_KALOS
+id: EVENT_ILLUSION_VON_KALOS
 subtype: Entdeckung
 ---
 

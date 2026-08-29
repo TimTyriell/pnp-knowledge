@@ -1,15 +1,15 @@
 ---
 type: NPC
 title: Berthold
-description: Berthold ist der Bürgermeister von Brechka. Er ist zunächst skeptisch
-  gegenüber der Gruppe, glaubt aber nach dem Gildensiegel und der Warnu…
+description: Berthold ist der Bürgermeister von Breska. Er ist zunächst skeptisch
+  gegenüber der Gruppe, glaubt aber nach dem Gildensiegel und der Warnun…
 tags:
 - npcs
 timestamp: '2025-04-09T00:00:00Z'
 id: NPC_BERTHOLD
 ---
 
-Berthold ist der [Bürgermeister](/npcs/buergermeister_spitzzahn.md) von [Brechka](/locations/breska.md). Er ist zunächst skeptisch gegenüber der Gruppe, glaubt aber nach dem Gildensiegel und der Warnung vor dem Goblinangriff. Er verkauft [Valeria](/characters/valeria.md) eine Armbrust für eine Handvoll Gold und gibt ihnen zwei Handvoll Gold. Er überlässt der Gruppe die Verteidigungsplanung und ist selbst kein guter Kämpfer.
+Berthold ist der [Bürgermeister](/npcs/buergermeister_spitzzahn.md) von [Breska](/locations/breska.md). Er ist zunächst skeptisch gegenüber der Gruppe, glaubt aber nach dem Gildensiegel und der Warnung vor dem Goblinangriff. Er verkauft [Valeria](/characters/valeria.md) eine Armbrust für eine Handvoll Gold und gibt ihnen zwei Handvoll Gold. Er überlässt der Gruppe die Verteidigungsplanung und ist selbst kein guter Kämpfer.
 
 # Belege
 

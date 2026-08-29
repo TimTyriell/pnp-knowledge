@@ -35,7 +35,7 @@ Das Anwesen umfasst mehr als nur das ursprüngliche Herrenhaus. Im Laufe der Zei
 
 ### Untergeschoss und Dungeon
 
-Unter dem Haus befindet sich ein Untergeschoss mit einem [Altar](/items/altar.md) und einem Dungeon, der tief in die Erde führt. Der Eingang wurde entdeckt, als die Gruppe das Anwesen gründlich durchsuchte. Der Dungeon ist feucht, und der Dschungel hat sich in die Tiefen der Gruft und der Felsvorsprünge ausgebreitet. In der Luft liegt ein leicht süßer Geruch, der an einen etwas älteren Blumenstrauß erinnert – nicht unangenehm, aber eigenartig. [Der Altar](/locations/der_altar.md) im Keller steht mit [Tarvok](/deities/tarvok_der_erdrichter.md) in Verbindung.
+Unter dem Haus befindet sich ein Untergeschoss mit einem [Altar](/items/altar.md) und einem Dungeon, der tief in die Erde führt. Der Eingang wurde entdeckt, als die Gruppe das Anwesen gründlich durchsuchte. Der Dungeon ist feucht, und der Dschungel hat sich in die Tiefen der Gruft und der Felsvorsprünge ausgebreitet. In der Luft liegt ein leicht süßer Geruch, der an einen etwas älteren Blumenstrauß erinnert – nicht unangenehm, aber eigenartig. [Der Altar](/locations/der_altar.md) im Keller steht mit [Thar'Vok](/deities/tarvok_der_erdrichter.md) in Verbindung.
 
 ### Bewohner
 
@@ -47,7 +47,7 @@ Das Anwesen wurde ursprünglich von [Goblins](/npcs/pilz_goblins.md) bewohnt. Na
 - **Lindo Laut**: Nutzt die Casa del Cookie als Rückzugsort. Er hat dort ein [Portal](/locations/portal.md) platziert, das als Notfalloption für Flüchtlinge dient. Zudem hat er Lunara einen Samen gegeben, mit dem ein Baum wachsen kann, der zur Casa del Cookie führt – der Baum müsste allerdings 24 Stunden lang beschützt werden.
 - **Nyrella**: Hält sich an der Casa del Cookie auf und hilft den Flüchtlingen beim Aufbau ihrer neuen Heimat.
 - **[Lunara Velora](/characters/lunara_velora.md)**: Kennt die Casa del Cookie als Ziel des Baumes, der aus dem Samen von Lindo Laut wachsen kann.
-- **Tarvok**: Der Altar im Keller des Anwesens steht mit dieser Entität in Verbindung.
+- **Thar'Vok**: Der Altar im Keller des Anwesens steht mit dieser Entität in Verbindung.
 - **[Lord von Willauch](/npcs/lord_kalidarn_von_willauch.md)**: Vergab das Anwesen als Belohnung an die Gruppe.
 
 ## Chronologie
@@ -75,7 +75,7 @@ In den folgenden Tagen entwickelte sich die Casa del Cookie weiter. Nyrella half
 ## Offene Fragen
 
 - Was genau geschah mit den ursprünglichen Goblin-Bewohnern des Anwesens, nachdem die Gruppe es übernommen hatte?
-- Welche Bedeutung hat der Altar im Keller, der mit Tarvok in Verbindung steht, und welche Rolle spielt er für den Dungeon?
+- Welche Bedeutung hat der Altar im Keller, der mit Thar'Vok in Verbindung steht, und welche Rolle spielt er für den Dungeon?
 - Wohin führt der Dungeon unter der Casa del Cookie, und welche Geheimnisse birgt er noch?
 - Wie wird sich die Siedlung weiterentwickeln, und werden die Flüchtlinge dort dauerhaft eine Heimat finden?
 

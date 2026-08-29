@@ -523,6 +523,11 @@ entities:
   canonical_name: Befreiung von Luli
   aliases: []
   mention_count: 1
+- concept_id: events/befreiung_von_nerash
+  type: Event
+  canonical_name: Befreiung von Nerash
+  aliases: []
+  mention_count: 1
 - concept_id: events/begegnung_mit_dem_eisdaemon
   type: Event
   canonical_name: Begegnung mit dem Eisdämon
@@ -545,8 +550,9 @@ entities:
   mention_count: 1
 - concept_id: events/bergung_des_streitkolbens_zebras_zorn
   type: Event
-  canonical_name: Bergung des Streitkolbens Zebras Zorn
-  aliases: []
+  canonical_name: Bergung des Streitkolbens Zebros Zorn
+  aliases:
+  - Bergung des Streitkolbens Zebras Zorn
   mention_count: 1
 - concept_id: events/beschwoerung_der_kreaturen_durch_nox
   type: Event
@@ -647,11 +653,6 @@ entities:
 - concept_id: events/die_ankunft_von_vorgul_tar
   type: Event
   canonical_name: Die Ankunft von Vorgul'tar
-  aliases: []
-  mention_count: 1
-- concept_id: events/die_befreiung_von_nerash
-  type: Event
-  canonical_name: Befreiung von Nerash
   aliases: []
   mention_count: 1
 - concept_id: events/die_befreiung_von_tatrick
@@ -927,6 +928,11 @@ entities:
 - concept_id: events/hinterhalt_auf_die_bugbears
   type: Event
   canonical_name: Hinterhalt auf die Bugbears
+  aliases: []
+  mention_count: 1
+- concept_id: events/illusion_von_kalos
+  type: Event
+  canonical_name: Illusion von Kalos
   aliases: []
   mention_count: 1
 - concept_id: events/joao_faellt_ins_wasser
@@ -1726,7 +1732,8 @@ entities:
   - Untotenarmee von Zebros
   - Die Magier von Belorus
   - Die Untoten
-  mention_count: 3
+  - Untote Horde von Zebras
+  mention_count: 4
 - concept_id: factions/brabarand_gilde
   type: Faction
   canonical_name: Brabarand-Gilde
@@ -1912,11 +1919,6 @@ entities:
   canonical_name: Untote Armee von Steinbachtal
   aliases: []
   mention_count: 1
-- concept_id: factions/untote_horde_von_zebras
-  type: Faction
-  canonical_name: Untote Horde von Zebras
-  aliases: []
-  mention_count: 1
 - concept_id: factions/untote_krieger
   type: Faction
   canonical_name: Untote Krieger
@@ -1945,7 +1947,6 @@ entities:
   - Amulett des Lindo Laut
   - Amulett von Lindo Laut
   - Lindo Lauts Amulett
-  - Amulett
   - Amulett des Duran
   - Amulett der Vier
   - Die Geister im Amulett
@@ -2601,7 +2602,8 @@ entities:
   - Der heilige Streitkolben aus Zebras
   - Zebrus Zorn
   - Der Streitkolben
-  mention_count: 2
+  - Zebras Zorn
+  mention_count: 3
 - concept_id: items/symbol_in_der_villa
   type: Item
   canonical_name: Symbol in der Villa
@@ -2684,7 +2686,7 @@ entities:
   canonical_name: Wanted-Plakat auf Gnoll
   aliases: []
   mention_count: 1
-- concept_id: items/wappen_von_villauch
+- concept_id: items/wappen_von_villau
   type: Item
   canonical_name: Wappen von Villau
   aliases: []
@@ -2697,11 +2699,6 @@ entities:
 - concept_id: items/weisses_totem
   type: Item
   canonical_name: Weißes Totem
-  aliases: []
-  mention_count: 1
-- concept_id: items/zebras_zorn
-  type: Item
-  canonical_name: Zebras Zorn
   aliases: []
   mention_count: 1
 - concept_id: items/zebrosia
@@ -4010,11 +4007,6 @@ entities:
   canonical_name: Hubert
   aliases: []
   mention_count: 1
-- concept_id: npcs/illusion_von_kalos
-  type: NPC
-  canonical_name: Illusion von Kalos
-  aliases: []
-  mention_count: 1
 - concept_id: npcs/imps
   type: NPC
   canonical_name: Imps
@@ -4563,7 +4555,7 @@ entities:
   canonical_name: Trickler
   aliases: []
   mention_count: 1
-- concept_id: npcs/trillo
+- concept_id: npcs/trilo
   type: NPC
   canonical_name: Trilo
   aliases: []
@@ -4724,13 +4716,13 @@ retired:
   type: Domain
   canonical_name: Daggerheart
   aliases: []
-- concept_id: events/befreiung_von_nerash
-  type: Event
-  canonical_name: Befreiung von Nerash
-  aliases: []
 - concept_id: events/begegnung_mit_dem_skelettschaedel
   type: Event
   canonical_name: Begegnung mit dem Skelettschädel
+  aliases: []
+- concept_id: events/die_befreiung_von_nerash
+  type: Event
+  canonical_name: Befreiung von Nerash
   aliases: []
 - concept_id: events/die_falle
   type: Event
@@ -4751,10 +4743,6 @@ retired:
 - concept_id: events/feuerwand
   type: Event
   canonical_name: Feuerwand
-  aliases: []
-- concept_id: events/illusion_von_kalos
-  type: Event
-  canonical_name: Illusion von Kalos
   aliases: []
 - concept_id: events/kampf_gegen_das_skelett
   type: Event
@@ -4813,6 +4801,10 @@ retired:
   type: Faction
   canonical_name: Neue Götter
   aliases: []
+- concept_id: factions/untote_horde_von_zebras
+  type: Faction
+  canonical_name: Untote Horde von Zebras
+  aliases: []
 - concept_id: items/das_amulett_von_lindo_laut
   type: Item
   canonical_name: Das Amulett von Lindo Laut
@@ -4853,9 +4845,13 @@ retired:
   type: Item
   canonical_name: Verwandlungstrank
   aliases: []
-- concept_id: items/wappen_von_villau
+- concept_id: items/wappen_von_villauch
   type: Item
   canonical_name: Wappen von Villau
+  aliases: []
+- concept_id: items/zebras_zorn
+  type: Item
+  canonical_name: Zebras Zorn
   aliases: []
 - concept_id: locations/das_ende
   type: Location
@@ -4935,6 +4931,10 @@ retired:
   type: NPC
   canonical_name: Graf Voras
   aliases: []
+- concept_id: npcs/illusion_von_kalos
+  type: NPC
+  canonical_name: Illusion von Kalos
+  aliases: []
 - concept_id: npcs/jorah_vanur
   type: NPC
   canonical_name: Jorah Vanur
@@ -4966,7 +4966,7 @@ retired:
   type: NPC
   canonical_name: Südrawell
   aliases: []
-- concept_id: npcs/trilo
+- concept_id: npcs/trillo
   type: NPC
   canonical_name: Trilo
   aliases: []

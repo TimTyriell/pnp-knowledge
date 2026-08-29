@@ -75,7 +75,7 @@ Bei der Verteidigung eines Dorfes entdeckt er herannahende Goblins, weicht Pfeil
 
 ### Pirateninseln und Heiliger Duran (Mai–Juni 2025)
 
-Auf dem Weg zu den Pirateninseln geht Esterossa auf den Ausguck und hält Ausschau. Er erkennt den Heiligen Duran und seine Artefakte (ein [Amulett](/items/amulett_des_heiligen_duran.md) und eine magische Keule bzw. ein Morgenstern) und vermutet, dass Duran sich auf den Inseln niedergelassen haben könnte. Im Kampf verwundet er einen Gnoll schwer mit seiner Axt und heilt einen verwundeten Ritter mit einem Gebet. Er schlägt vor, ein [Portal](/locations/portal.md) zur Flucht zu nutzen.
+Auf dem Weg zu den Pirateninseln geht Esterossa auf den Ausguck und hält Ausschau. Er erkennt den Heiligen Duran und seine Artefakte (ein Amulett und eine magische Keule bzw. ein Morgenstern) und vermutet, dass Duran sich auf den Inseln niedergelassen haben könnte. Im Kampf verwundet er einen Gnoll schwer mit seiner Axt und heilt einen verwundeten Ritter mit einem Gebet. Er schlägt vor, ein [Portal](/locations/portal.md) zur Flucht zu nutzen.
 
 Im [Sumpf](/locations/sumpf_vor_dem_goblin_dorf.md) spricht er ein Gebet zu Korn für kühleres Wetter. Er kauft ein Gegengift und friert eine Kreatur mit Magie ein. Er heilt [Brass](/npcs/brass.md) nach dem Kampf und zeigt sich skeptisch gegenüber dem [Schlangengott](/deities/schlangengott.md).
 
@@ -89,7 +89,7 @@ In einem Kampf zeigt er sich als furchtloser Kämpfer, der lachend in den Kampf 
 
 Esterossa zerteilt einen [Kuatau](/npcs/kuatau.md) mit einem Schlag und findet das [Stern-Amulett](/items/stern_amulett.md) an einer Grabstätte. Er heilt [Miaomani](/npcs/miaomani.md) und [Lobrecht](/npcs/lobrecht.md) mit *Seraph Hope*.
 
-Er folgt dem Blutgott Born, wird unsichtbar und fliegt zu einer geisterhaften Gestalt, wird aber entdeckt und stürzt ab. Er erkundet ein Lager von Anhängern, entdeckt Ghule und Zombies. Am Morgen stellt er sich vor, was die Anhänger verunsichert.
+Er folgt dem Blutgott Korn, wird unsichtbar und fliegt zu einer geisterhaften Gestalt, wird aber entdeckt und stürzt ab. Er erkundet ein Lager von Anhängern, entdeckt Ghule und Zombies. Am Morgen stellt er sich vor, was die Anhänger verunsichert.
 
 ### Lindo Lauts Krise und unterer Zirkel (August–September 2025)
 
@@ -127,7 +127,7 @@ Esterossa ist während einer Patrouille unterwegs und kehrt mit der Gruppe zurü
 
 Er verstärkt ein Tor, indem er Holz in Stahl verwandelt, schützt Lindo Laut mit einem Lebensschild und heilt Rotunas mit *Restoration*. Er beschützt [Lord Harik](/npcs/lord_harik.md), tötet einen Goblin und unterstützt Rotunas bei Verhandlungen. Als Belohnung wählt er Gold statt Erz.
 
-Er erkennt eine Warnung auf einer Tafel und identifiziert das [Symbol](/items/symbol_in_der_villa.md) auf einem Umhang als das von [Tarvok](/deities/tarvok_der_erdrichter.md), dem Erdrichter. Er versucht, Dodos Bein zu heilen, verursacht aber zunächst mehr Schaden. Im Kampf gegen Lindo Lauts Dämonenform greift er mutig an.
+Er erkennt eine Warnung auf einer Tafel und identifiziert das [Symbol](/items/symbol_in_der_villa.md) auf einem Umhang als das von [Thar'Vok](/deities/tarvok_der_erdrichter.md), dem Erdrichter. Er versucht, Dodos Bein zu heilen, verursacht aber zunächst mehr Schaden. Im Kampf gegen Lindo Lauts Dämonenform greift er mutig an.
 
 ### Pilgerschaft und Rückkehr (März–April 2026)
 
