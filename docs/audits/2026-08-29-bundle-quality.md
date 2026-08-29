@@ -109,46 +109,74 @@ Genau **1** offener Konflikt bei 896 Entitäten. Die Erkennung feuert nur auf Wi
 - `synthesize.py` / `cli.py` — `autolink_prose()`, für alle Tiers verdrahtet (Fix 1)
 - `links.py` / `emit.py` — `normalize_body(self_id=...)`, degradiert Selbstlinks (Fix 4)
 - `models.py` — `DEEP_MENTION_THRESHOLD` 8 → 5 (Fix 2)
+- `resolve.py` — **neuer Fund beim realen Lauf:** hand-gepflegte Registry-Aliases (`aliases:`, laut Dateikopf „appended to, never clobbered") erreichten `link_targets()` nie — sie überlebten nur kosmetisch in der Datei, ohne je verlinkbar zu sein. `_load_preserved_aliases()` sät sie jetzt beim Erzeugen einer neuen Entität mit ein.
 
 **Tests (`services/kb/tests/`):**
 - 5 neue Unit-Tests für `autolink_prose` (Idempotenz, Belege-Grenze, Überschriften, bestehende Links) in `test_brief_local.py`
-- 4 neue Ratchets: Deep-Tier-Linkabdeckung + Faktions-/NPC-Beziehungsabdeckung (`test_link_coverage.py`), Zitationsabdeckung über alle 3 Formate + Tier-vs-Beleg-Abgleich (`test_bundle_invariants.py`), Artikel-Varianten-Dubletten (`test_rules_applied.py`)
+- 2 neue Tests für die Alias-Seeding-Korrektur in `test_rules_pins.py`
+- 4 neue Ratchets/harte Prüfungen: Deep-Tier-Linkabdeckung + Faktions-/NPC-Beziehungsabdeckung (`test_link_coverage.py`), Zitationsabdeckung über alle 4 Formate + Tier-vs-Beleg-Abgleich (`test_bundle_invariants.py`), Artikel-Varianten-Dubletten (`test_rules_applied.py`)
 - Neue Datei `test_audit_2026_08_29.py`: benannte Regressionen (22 Dubletten, 4 Inhalts-Gates, harter Pin-Test, Selbstlink-Test, PC-Nullgarantie)
 - `test_tiering_and_context.py::test_tiers` an neue Schwelle angepasst
 
 **Regeln:**
-- `entity_rules.yaml` — 20 Dubletten gefaltet (`merge:`/`split:`), 10 Gattungsknoten (`ignore:`), 7 tote `important:`-Pins korrigiert/entfernt, `unimportant: deities/akastrale`
+- `entity_rules.yaml` — 25 Dubletten gefaltet (`merge:`/`split:`, davon 3 erst durch den echten Lauf sichtbar geworden: `der_nebel`/`die_hoehle`/`die_falle` als Artikelvarianten der bereits ignorierten Formen), 13 Gattungsknoten (`ignore:`), 7 tote `important:`-Pins korrigiert/entfernt, `unimportant: deities/akastrale`, `alias_block:` für die mehrdeutige „Hans"-Kollision
 - `sources/Kanon_Entscheidungen.md` — Ring-der-Teleportation-Klarstellung nach GM-Rückmeldung
+- `entity_registry.yaml` — `Lenra` als Alias auf `npcs/lenra` ergänzt (jetzt wirksam dank der `resolve.py`-Korrektur)
 
 ## Nicht gefixt, bewusst
 
-- **5 Nodes ohne Quellenangabe** (`deities/saris_patron`, `locations/casa_del_cookie`, `locations/die_narbe`, `npcs/die_hexe`, `npcs/inaros`) — Ursache liegt in `extract.py` (Mention ohne `citation_ts`), außerhalb dieses Audits. Nur als Ratchet festgehalten.
+- **3 Nodes ohne Quellenangabe** (nach dem Lauf: `deities/saris_patron`, `npcs/lord_kalidarn_von_willauch`, `npcs/nyruk` — die Menge schwankt bei jeder Re-Extraktion) — Ursache liegt in `extract.py` (Mention ohne `citation_ts`), außerhalb dieses Audits. Nur als Ratchet festgehalten.
 - **Veraltete `never_merge`-Begründung** `miaomani`/`miyamani` — Prosa-Drift zwischen Kommentar und generiertem Inhalt ist nicht sinnvoll testbar; GM-Frage.
 - **Identitätskonflikte landen nicht in der Konflikt-Queue** — `pnp dedup` deckt das bereits ab, Automatisierung ist YAGNI bis sich das Gegenteil zeigt.
-- **`deities/gruul`, `deities/sitravil`** — kein Nachfolgekonzept auffindbar, aus `important:` entfernt statt geraten.
+- **`deities/sitravil`** — kein Nachfolgekonzept auffindbar, aus `important:` entfernt statt geraten. (`deities/gruul`, der andere ursprünglich fehlende Pin, ist beim echten Lauf von selbst wieder aufgetaucht — mit 1 Beleg korrekt auf `standard`-Tier, kein Pin nötig, siehe unten.)
+- **5 vorbestehende Artikel-Dubletten** (`items/handschellen`, `items/das_tagebuch`, `npcs/balor`, `npcs/daemonenmagier`, `npcs/ratten_daemon`) — außerhalb der ursprünglichen 22er-Liste dieses Audits, nur als Ratchet festgehalten.
 
 ## Offene GM-Fragen (`sources/Kanon_Entscheidungen.md`)
 
-`dunkler_paladin`/`belorus` (dieselbe Figur?) · `vora`/`voras` · `gilde_in_breska` (Faktion oder Ort?) · `untote_armee_von_steinbachtal` + `untote_horde_von_zebras` (eigene Verbände oder Teil der einen Armee?) · `rotunas_freunde`/`gefaehrten_von_rotunas` · `schlangenfigur`/`schlangengott` · `miaomani`/`miyamani` (Begründung veraltet) · `ringtal`/„Kleinringtal" (zwei Orte, ein Slug) · `der_waechter`/`waechter_des_berges` · Nachfolger für `deities/gruul` und `deities/sitravil`.
+`dunkler_paladin`/`belorus` (dieselbe Figur?) · `vora`/`voras` · `gilde_in_breska` (Faktion oder Ort?) · `untote_armee_von_steinbachtal` + `untote_horde_von_zebras` (eigene Verbände oder Teil der einen Armee?) · `rotunas_freunde`/`gefaehrten_von_rotunas` · `schlangenfigur`/`schlangengott` · `miaomani`/`miyamani` (Begründung veraltet) · `ringtal`/„Kleinringtal" (zwei Orte, ein Slug) · `der_waechter`/`waechter_des_berges` · Nachfolger für `deities/sitravil`.
 
-## Verifikationsstatus
+**Neu vom echten Lauf in die Konflikt-Queue gestellt** (`knowledge/conflicts/`, noch nicht durch dieses Audit geprüft): `locations__villau.md`, `npcs__der_seraph_vierter.md`, `npcs__harloen.md`, `npcs__meister_pyrandras.md` — je ein in sich widersprüchlicher Beleg-Fund der Synthese, gehören nach dem dokumentierten Ablauf (`conflicts/README.md`) vor die Spielleitung, nicht in dieses Audit. Der einzige vorherige offene Konflikt (`locations__hartwacht`) wurde von dieser Extraktion nicht reproduziert und automatisch vom Pipeline-Lauf entfernt.
+
+## Verifikationsstatus — abgeschlossen
 
 Vor jeder Änderung aufgenommen (Ist-Zustand): **2 Tests bereits rot**, unabhängig von dieser Arbeit — `test_every_ruling_reaches_at_least_one_entity` (11 vs. Baseline 9) und `test_unlinked_mentions_have_not_grown` (2485 vs. Baseline 1871). Repo-Drift, nicht Teil dieses Audits.
 
-Nach allen Code- und Regeländerungen, **ohne** `pnp run` (siehe unten):
+`DEEPSEEK_API_KEY` war entgegen der ursprünglichen Einschätzung doch verfügbar (über `.env`, nicht die Shell-Umgebung) — `pnp run` lief real, vier Durchgänge:
+
+1. **Lauf 1** — Fix 1/2/4 + `entity_rules.yaml` Teil A–F: 41 neu, 387 geändert, 64 gepruned. Internal Links 889 → 4513 (0 kaputt). Deckte 2 weitere reale Bugs auf, die nur ein echter Lauf zeigen konnte: den `das_ende`-Split-Key (fehlte am tatsächlichen Extraktionsnamen „Das Ende" statt „Ende") und die Hans-Namenskollision (siehe unten).
+2. **Lauf 2** — nach Korrektur von `das_ende` (Split-Key) und `alias_block: Hans` sowie einer hand-gepflegten `Lenra`-Alias: deckte auf, dass Registry-Aliases nie in `link_targets()` ankamen (siehe `resolve.py`-Fix oben) — cornivum→lenra blieb rot.
+3. **Lauf 3** — nach dem `resolve.py`-Fix: **breitere Cache-Invalidierung als erwartet** — da jetzt JEDE Entität mit gepflegten Aliases eine ggf. geänderte Alias-Liste bekommt (nicht nur die 3 gezielt reparierten Konzepte), lösten u. a. die teuren Deep-Tier-Hauptcharaktere (Dodo, Esterossa, Lindo Laut, Rotunas) neue Modellaufrufe aus — 56 `calling DeepSeek` statt der ursprünglich erwarteten ~9. Ein bewusster, korrekter, aber teurerer Seiteneffekt eines echten Bugfixes.
+4. **Lauf 4** — nach Ergänzung von `der_nebel`/`die_hoehle`/`die_falle` in `ignore:` (vom Lauf 3 selbst aufgedeckte Artikel-Dubletten): reiner Cache-Lauf, **0 neue Modellaufrufe**.
+
+**Endstand:**
 
 ```
-13 failed, 157 passed, 1 xfailed
+172 passed, 1 xfailed
 ```
 
-Die 13 roten Tests sind **erwartet und namentlich in `test_audit_2026_08_29.py` sowie den beiden oben genannten Vorbestehenden begründet** — jede prüft entweder eine Bundle-Datei, die erst ein `pnp run` neu schreibt (z. B. `test_named_duplicates_are_merged_away`, `test_ignore_rules_are_honoured`), oder `entity_registry.yaml`, das ebenfalls generierte Ausgabe ist (`test_important_flag_reaches_the_generated_registry`). Keiner davon ist ein Fehler in dieser Umsetzung — sie sind der Nachweis, dass die Regeln korrekt formuliert sind und auf einen Lauf warten.
+Der eine `xfail` ist vorbestehend und unabhängig von diesem Audit. Alle 9 ursprünglich benannten Regressionen aus `test_audit_2026_08_29.py` sind grün.
 
-**Blocker: `pnp run` konnte in dieser Session nicht ausgeführt werden — kein `DEEPSEEK_API_KEY` verfügbar.** Alle Code- und Regel-Änderungen sind fertig und durch Unit-Tests abgesichert; die eigentliche Bundle-Regeneration (Merges vollziehen, neue Deep-Tier-Einträge synthetisieren, Autolinker auf bestehende Cache-Bodies anwenden) steht noch aus. Nächster Schritt für die Person mit API-Zugang:
+| Ratchet | vorher | nachher |
+|---|---|---|
+| Deep-Tier-Nodes ohne Link | 53/60 | **0/73** (harte Obergrenze) |
+| unterschriebene Nodes (≥5 Mentions, kein Deep-Tier) | 9 | **0** (harte Obergrenze) |
+| überschriebene Nodes (≤1 Mention, Deep-Tier) | 5 | 6 — *legitimer Anstieg*: 3 korrigierte `important:`-Pins wirken jetzt wie vorgesehen (siehe unten) |
+| Faktionen mit Mitglieds-Link | 22/42 | **31/40** |
+| NPCs mit Faktions-Link | 31/228 | **46/218** |
+| unverlinkte Namensnennungen | 1871 | 1816 |
+| tote Regeln (`entity_rules.yaml`) | 37 | **15** |
+| Artikel-Varianten-Dubletten | 12 | **5** (alle vorbestehend, außerhalb der 22er-Liste) |
+| Nodes ohne Quellenangabe | 5 | 3 (Extraktions-Rauschen, außerhalb des Scopes) |
+| Konzepte gesamt | 896 | 933 |
 
-```
-cd services/kb
-python -m pnp run
-python -m pytest -q   # sollte auf 0 offene test_audit_2026_08_29.py-Fehler sinken
-```
+**Zur „zu tief"-Zeile (5→6):** kein Rückschritt. `important:` ist laut eigenem Docstring (`models.py`) „the escape hatch for entities the automatic rules underrate" — genau dafür gebaut, eine wenig belegte, aber zentrale Entität auf Deep-Tier zu heben. Die drei neu hinzukommenden Fälle (`bodrak_gott_der_stille`, `kaleandra`, `burg_des_belorus`) sind exakt die Pins, die dieses Audit von einer toten auf die richtige concept_id korrigiert hat — sie wirken jetzt wie ursprünglich beabsichtigt. Einzig `akastrale` hatte einen echten Widerspruch zur eigenen `ENTSCHEIDUNG:` („kein umfangreicher Eintrag") — behoben über `unimportant:`.
 
-Nach dem Lauf: Ratchets in `test_link_coverage.py` (`DEEP_TIER_NO_LINK_BASELINE`, `UNLINKED_MENTION_BASELINE`) und `test_rules_applied.py` (`ARTICLE_VARIANT_BASELINE`, `DEAD_RULES_BASELINE`) neu messen und senken — nie anheben, um einen Test grün zu machen.
+**Stichproben, inhaltlich bestätigt:**
+- `items/ring_der_teleportation.md` beschreibt jetzt Lindo Lauts Ring (GM-korrigiert während der Umsetzung)
+- `locations/cornivum.md` verlinkt `npcs/lenra.md`
+- `npcs/hans_soldat_aus_breska.md` verlinkt nicht mehr auf den falschen Hans
+- `factions/koenigreich_zebros.md`, `npcs/belorus.md` haben jetzt Links
+- keine Selbstlinks mehr im Bundle
+- alle 22 benannten Dubletten aus Frage 3 sind verschwunden
+
+Ratchets final gesenkt (siehe Commit-Historie für die genauen Zahlen je Datei): `UNLINKED_MENTION_BASELINE`, `DEEP_TIER_NO_LINK_BASELINE` (jetzt harte 0), `FACTIONS_WITH_MEMBER_LINK_BASELINE`/`NPCS_WITH_FACTION_LINK_BASELINE`, `too_shallow` (jetzt harte 0), `too_deep` (5→6, begründet), `UNCITED_ENTITY_BASELINE`, `DEAD_RULES_BASELINE`, `ARTICLE_VARIANT_BASELINE`.
