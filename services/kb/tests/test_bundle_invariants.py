@@ -144,7 +144,14 @@ def test_last_run_conflict_count_matches_the_committed_queue():
 # mistake this audit's own first pass made) only sees the first two and
 # wildly undercounts. This checks all three at once.
 
-_CITATION_LINE_RE = re.compile(r"^(\[[^\]]+\]|\d+\.)\s*Session\s", re.MULTILINE)
+# A 4th variant surfaced on the 2026-08-29 audit's real `pnp run`: a
+# numbered entry where the model wrapped the whole citation in a link
+# ("1. [Session 2025-06-25 @ ...](url)") instead of "1. Session ... (url)".
+# "Nummeriert auflisten... Session-Datum + Zeitstempel + URL" (prompts.py)
+# doesn't pin the exact punctuation, so this is valid model output, not a
+# malformed line — the numbered-marker branch allows an optional "[" before
+# "Session" to catch it too.
+_CITATION_LINE_RE = re.compile(r"^(\[[^\]]+\]|\d+\.)\s*\[?Session\s", re.MULTILINE)
 
 # Entity concepts with zero recognizable citation line in any of the three
 # formats, measured on this branch. Ratchet: may only go down. Root cause is
