@@ -45,8 +45,10 @@ _MIN_NAME_LEN = 5
 # "nodes not linked correctly" symptom reported for this bundle — the count
 # was previously unmeasured (validate.py cannot see it; see module
 # docstring), so this baseline is the first real measurement, not a design
-# target. Ratchet: it may only go down.
-UNLINKED_MENTION_BASELINE = 1871
+# target. Lowered from 1871 to 1816 after a real `pnp run` applied Fix 1
+# (autolink_prose) and the alias-seeding fix (resolve.py). Ratchet: it may
+# only go down.
+UNLINKED_MENTION_BASELINE = 1816
 
 
 def _bundle_files() -> list[tuple[str, str, str]]:
@@ -117,11 +119,12 @@ def test_unlinked_mentions_have_not_grown():
 
 _ANY_LINK_RE = re.compile(r"\]\([^)\s]*?\.md\)")
 
-# Deep-tier concepts (body has "## Überblick") with zero outgoing links,
-# measured on this branch before Fix 1 (autolink_prose in synthesize.py) is
-# exercised by a real `pnp run`. Ratchet: may only go down. Target after a
-# rebuild is <=10 — most deep nodes should link at least one other concept.
-DEEP_TIER_NO_LINK_BASELINE = 53
+# Deep-tier concepts (body has "## Überblick") with zero outgoing links.
+# Was 53/60 before Fix 1 (autolink_prose, synthesize.py); a real `pnp run`
+# afterward brought it to 0/73 — every deep-tier node now links at least one
+# other concept. Kept as a hard ceiling, not just a ratchet: this pattern
+# has a known complete fix and should never reappear silently.
+DEEP_TIER_NO_LINK_BASELINE = 0
 
 
 def test_deep_tier_nodes_are_linked():
@@ -151,13 +154,14 @@ _MEMBER_LINK_RE = re.compile(r"\]\(/?(?:\.\./)?(?:characters|npcs)/")
 _FACTION_LINK_RE = re.compile(r"\]\(/?(?:\.\./)?factions/")
 
 # (has-at-least-one-member-link, total) for factions/, and the NPC-side
-# mirror, measured on this branch. Ratchet in the *good* direction: the
-# fraction may only go up (kept as counts, not a percentage, so a change in
-# bundle size can't silently mask a regression).
-FACTIONS_WITH_MEMBER_LINK_BASELINE = 22
-FACTIONS_TOTAL_BASELINE = 42
-NPCS_WITH_FACTION_LINK_BASELINE = 31
-NPCS_TOTAL_BASELINE = 228
+# mirror. Was 22/42 and 31/228 before Fix 1 + the alias-seeding fix; a real
+# `pnp run` brought it to 31/40 and 46/218. Ratchet in the *good* direction:
+# the fraction may only go up (kept as counts, not a percentage, so a change
+# in bundle size can't silently mask a regression).
+FACTIONS_WITH_MEMBER_LINK_BASELINE = 31
+FACTIONS_TOTAL_BASELINE = 40
+NPCS_WITH_FACTION_LINK_BASELINE = 46
+NPCS_TOTAL_BASELINE = 218
 
 
 def test_relation_coverage_has_not_dropped():

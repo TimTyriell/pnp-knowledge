@@ -45,10 +45,12 @@ BUNDLE = KNOWLEDGE / "bundle" / "splitter_des_ewigen"
 pytestmark = pytest.mark.skipif(not REGISTRY.exists(), reason="no bundle checked out")
 
 # Dead rules found when this test was written (services/kb/tests, branch
-# test/okf-bundle-quality). This is a ratchet, not a target: it may only go
-# down as dead rules are repaired by re-running the pipeline or editing
-# entity_rules.yaml, and must never be raised to make a new regression pass.
-DEAD_RULES_BASELINE = 37
+# test/okf-bundle-quality). Was 37; the 2026-08-29 bundle-quality audit's
+# merges/important:-pin fixes plus a real `pnp run` brought it to 15. This
+# is a ratchet, not a target: it may only go down as dead rules are
+# repaired by re-running the pipeline or editing entity_rules.yaml, and
+# must never be raised to make a new regression pass.
+DEAD_RULES_BASELINE = 15
 
 
 def _bundle_concepts() -> set[str]:
@@ -231,9 +233,13 @@ def test_dead_rule_count_has_not_grown():
 _LEADING_ARTICLE_RE = re.compile(r"^(der|die|das|den|dem|des)_(.+)$")
 _GERMAN_ARTICLES = ("der", "die", "das")
 
-# Instances found on this branch, before entity_rules.yaml Teil 2 (A/F) is
-# applied and a `pnp run` regenerates the bundle. Ratchet: may only go down.
-ARTICLE_VARIANT_BASELINE = 12
+# Was 12 before entity_rules.yaml Teil 2 (A/F); after a real `pnp run`
+# re-extraction surfaced 3 *new* instances of the exact same pattern for
+# concepts already ignored bare (der_nebel/die_hoehle/die_falle beside
+# nebel/hoehle/falle) -- folded in too, landing at 5. The remaining 5 are
+# pre-existing and outside this audit's original 22-duplicate list. Ratchet:
+# may only go down.
+ARTICLE_VARIANT_BASELINE = 5
 
 
 def _article_variants(slug: str) -> set[str]:

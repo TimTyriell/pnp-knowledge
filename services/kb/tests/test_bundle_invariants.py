@@ -153,11 +153,12 @@ def test_last_run_conflict_count_matches_the_committed_queue():
 # "Session" to catch it too.
 _CITATION_LINE_RE = re.compile(r"^(\[[^\]]+\]|\d+\.)\s*\[?Session\s", re.MULTILINE)
 
-# Entity concepts with zero recognizable citation line in any of the three
-# formats, measured on this branch. Ratchet: may only go down. Root cause is
-# in extract.py (a mention without a citation_ts), out of scope for this
-# audit's fixes — see docs/audits/2026-08-29-bundle-quality.md.
-UNCITED_ENTITY_BASELINE = 5
+# Entity concepts with zero recognizable citation line in any of the four
+# formats. Was 5 on the pre-run bundle; a real `pnp run` (with re-extraction
+# picking different entities each time) settled at 3. Ratchet: may only go
+# down. Root cause is in extract.py (a mention without a citation_ts), out
+# of scope for this audit's fixes — see docs/audits/2026-08-29-bundle-quality.md.
+UNCITED_ENTITY_BASELINE = 3
 
 
 def test_every_entity_node_cites_a_source():
@@ -203,19 +204,28 @@ def test_tier_matches_the_evidence():
             too_shallow.append(cid)
 
     # "Too deep": a full deep-tier writeup built from essentially one
-    # mention — the padding failure mode. Baseline measured before
-    # `unimportant: deities/akastrale` (entity_rules.yaml) is honoured by a
-    # real `pnp run`.
-    assert len(too_deep) <= 5, (
+    # mention -- the padding failure mode. Measured after a real `pnp run`
+    # with `unimportant: deities/akastrale` and the corrected important:
+    # pins (entity_rules.yaml) applied. Fixing 3 of those pins from a dead
+    # concept_id to the real one (bodrak_gott_der_stille, kaleandra,
+    # burg_des_belorus) legitimately raised this from 5 to 6: important:
+    # is *designed* to force the deep tier onto a low-mention pivotal
+    # entity (models.py's own docstring: "the escape hatch for entities
+    # the automatic rules underrate"), so a pin finally working is not a
+    # new defect -- akastrale, the one case with a directly contradicting
+    # GM ruling ("kein umfangreicher Eintrag"), is the only one that was
+    # ever a real bug, and it's already fixed via unimportant:. Ratchet
+    # against these 6 going forward: may only go down.
+    assert len(too_deep) <= 6, (
         f"{len(too_deep)} concept(s) have full deep-tier structure from "
-        f"<=1 mention (baseline 5): {too_deep}"
+        f"<=1 mention (baseline 6): {too_deep}"
     )
     # "Too shallow": a recurring entity (>=5 mentions) that never got the
-    # deep tier — the stub failure mode. Baseline measured before
-    # DEEP_MENTION_THRESHOLD (models.py, Fix 2) is honoured by a real
-    # `pnp run`; target is 0 once entities in the 5-7 mention band clear the
-    # lowered threshold.
-    assert len(too_shallow) <= 9, (
+    # deep tier -- the stub failure mode. Confirmed 0 after DEEP_MENTION_
+    # THRESHOLD (models.py, Fix 2) took effect on a real `pnp run` -- kept
+    # as a hard ceiling, not just a ratchet, since this pattern has a known
+    # complete fix and should never reappear silently.
+    assert len(too_shallow) <= 0, (
         f"{len(too_shallow)} concept(s) have >=5 mentions but never got a "
-        f"deep-tier writeup (baseline 9): {too_shallow}"
+        f"deep-tier writeup (was fixed to 0 by lowering DEEP_MENTION_THRESHOLD): {too_shallow}"
     )
