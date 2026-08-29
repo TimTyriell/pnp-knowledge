@@ -136,6 +136,9 @@ merge:
   schattenfinger (kenku-kralle): items/schattenfinger
   schattenfinger-klaue: items/schattenfinger
   der kristall: items/gruener_kristall
+  # 2026-08-29 audit: items/kristall.md (bare, no article) duplicates this —
+  # its own body links "[Der Kristall](/items/gruener_kristall.md)".
+  kristall: items/gruener_kristall
   göttliche handschellen: items/magische_handschellen
   schlüssel: items/magischer_schluessel
   der stab (schlüssel): items/magischer_schluessel
@@ -250,6 +253,12 @@ merge:
   lindo lauts ring: items/ring_der_teleportation
   teleportationsring: items/ring_der_teleportation
   lindos ring: items/ring_der_teleportation
+  # GM-Klarstellung 2026-08-29: "der Ring der Teleportation ist der Ring von
+  # Lindo Laut" — items/ring_von_lindo_laut.md is the same object under its
+  # own stub title, not a second ring. The ring Dodo destroyed (Abisalis,
+  # lila Magie) is a third, unrelated item covered by the "Ringe"
+  # Sammeleintrag per Kanon_Entscheidungen.md, not by this concept.
+  ring von lindo laut: items/ring_der_teleportation
   tyrex: deities/thyrex
   t-rex: deities/thyrex
   tyrex (t-rex): deities/thyrex
@@ -453,6 +462,96 @@ merge:
   # the Titan; the being that serves him is real but was never named. Both were
   # transcribed "Holodarn", so only the session tells them apart — see split:.
   huludan: deities/huludan
+
+  # --- 2026-08-29 bundle-quality audit --------------------------------------
+  # A session-zero character-creation stub, never folded into the PC it
+  # actually is: same two skulls "Jonathan" and "Samuel", same
+  # Tiefling-Gelehrter/Hexenmeister-aus-dem-Infernis description. No rule
+  # existed for this one at all (unlike cookie/dodo/lindo_laut/esterossa
+  # below, whose *class-label* variant was already merged but not their own
+  # session-zero title).
+  saris bendal: characters/saris
+  # These four PCs' own session-zero stub titles were never merged, only the
+  # VTT default class-label each picked up once (see "celin's frosch-ranger"
+  # etc. above) — same fix as saris bendal, for the remaining four.
+  celin (cookie): characters/cookie
+  celin: characters/cookie
+  marco (dodo): characters/dodo
+  marco: characters/dodo
+  tim (lindo laut): characters/lindo_laut
+  tim: characters/lindo_laut
+  esterossa (mikasa): characters/esterossa
+  mikasa: characters/esterossa
+  # npcs/priesterin_auranie.md links its own subject to npcs/auranil.md
+  # ("[Auranie](/npcs/auranil.md) ist eine Priesterin...") — the pipeline's
+  # own cross-linker already resolved this name to Auranil, the concept
+  # duplicate just never got pruned. "auranie" bare is already merged above;
+  # this is the literal stub title.
+  priesterin auranie: npcs/auranil
+  # npcs/graf_voras.md links its own subject to npcs/voras.md ("[Voras der
+  # Heilige](/npcs/voras.md)"). "der graf voras" is already merged above;
+  # this is the bare title the stub file actually carries.
+  graf voras: npcs/voras
+  # npcs/captain_lobrecht.md links "Captain [Lobrecht](/npcs/lobrecht.md)" —
+  # the English rank is the one spelling the existing
+  # käpt'n/kahnführer/kapitän entries above don't cover.
+  captain lobrecht: npcs/lobrecht
+  # items/das_amulett_von_lindo_laut.md links its own subject to
+  # items/amulett_des_heiligen_duran.md — the leading article "Das" breaks
+  # the plain-string merge match against any existing key.
+  das amulett von lindo laut: items/amulett_des_heiligen_duran
+  # items/der_streitkolben.md duplicates items/streitkolben_von_dodo.md
+  # near-verbatim ("Der Streitkolben von Dodo ist eine Waffe...") — the
+  # bare "streitkolben" key above doesn't cover the article-prefixed form.
+  der streitkolben: items/streitkolben_von_dodo
+  # items/stab_von_lindo_laut.md and items/lindo_lauts_stab.md both describe
+  # Lunara using the staff to open a portal to Abisalis against Vasul's
+  # fragments — same object, near-verbatim body.
+  stab von lindo laut: items/lindo_lauts_stab
+  # factions/die_untoten.md ("Armee von Untoten... haben Breska zerstört und
+  # sich zum Berg Zebros zurückgezogen") is the same force, same route, as
+  # factions/belorus_untotenarmee.md — only the bare article-form title was
+  # never added (only "untote"/"untoten-armee" spellings are, above).
+  die untoten: factions/belorus_untotenarmee
+  # deities/die_alten_goetter.md and deities/alte_goetter.md both describe
+  # the four old gods defeated by the new gods, near-identically — the
+  # textbook German-article-variant duplication this audit's Question 2
+  # found throughout the bundle. "die alten"/"alte götter (old gods)" above
+  # don't cover the bare "die alten götter" the duplicate stub actually uses.
+  die alten götter: deities/alte_goetter
+  # Same zebros-style type-split precedent as the merge above (a concept
+  # existing as both a Deity and separately as an NPC, or Faction, with
+  # verbatim duplicate lore): deities/akastrale and npcs/akastrale both say
+  # "dunkler Hunger... eine der vier alten Götter"; deities/suedrawell and
+  # npcs/suedrawell both say "Fleischweberin"; deities/neue_goetter and
+  # factions/neue_goetter both describe the same pantheon (mirrors the
+  # already-documented "goblin gods are gods, not an organisation" ruling
+  # for goblingoetter above). A merge always adopts its target directory's
+  # type, so pointing the bare name at the Deity concept fixes the type too.
+  akastrale: deities/akastrale
+  südrawell: deities/suedrawell
+  neue götter: deities/neue_goetter
+  # deities/tavok.md duplicates deities/tarvok_der_erdrichter.md — only the
+  # parenthetical "tavok (erdrichter)" form above is covered, not the bare
+  # stub title.
+  tavok: deities/tarvok_der_erdrichter
+  # deities/kol_merefs.md (plural/possessive, the form actually used as this
+  # stub's title) duplicates deities/kollmereth.md — only the singular
+  # "kol meref" above is covered.
+  kol merefs: deities/kollmereth
+  # npcs/jorah_vanur.md and npcs/joar_vanur.md are the same recurring
+  # Sanddorn-Islands noble/merchant "Vanur", a Whisper spelling drift
+  # (Jorah/Joar/Joao) — the registry already carries Joao/Joar as aliases on
+  # the target, this is the one un-merged spelling. Not to be confused with
+  # deities/jorah (a god): see never_merge: below, this merchant was
+  # linking to the god's page by mistake.
+  jorah vanur: npcs/joar_vanur
+  # factions/fluechtlinge.md duplicates factions/fluechtlinge_aus_breska.md
+  # (same refugee group Roland leads) — "die flüchtlinge"/"flüchtlinge
+  # (gruppe um roland)" above cover the qualified forms, not the bare noun
+  # the duplicate stub actually uses as its title.
+  flüchtlinge: factions/fluechtlinge_aus_breska
+
 never_merge:
 - - characters/miko
   - characters/myko
@@ -495,7 +594,31 @@ never_merge:
   - characters/kipp      # der kleine Frosch, 13 Jahre alt
 - - npcs/miaomani        # Catfolk, Ausguck auf dem Gildenschiff
   - npcs/miyamani        # Halbling in der Zirkusvorführung
+# npcs/joar_vanur (mortal Sanddorn merchant, see merge: above) linked its
+# own subject's first name to deities/jorah (an unrelated god) — the fuzzy
+# pass would refold them on the shared bare name "Jorah".
+- - npcs/joar_vanur
+  - deities/jorah
 ignore:
+# 2026-08-29 bundle-quality audit: bare German common nouns used as a concept
+# title, the same failure mode as the generic-noun entries already ignored
+# below (bruecke/turm/etc.) — each name recurs across a dozen-plus sessions
+# for entirely different, unrelated instances, so a single node under the
+# bare noun is neither a specific referent nor a useful link target.
+# items/kristall is the one exception: it links its own subject to
+# items/gruener_kristall.md ("[Der Kristall](/items/gruener_kristall.md)")
+# — a merge:, not an ignore:, added above ("kristall: items/gruener_kristall",
+# next to the existing article-form "der kristall" key).
+- domains/daggerheart  # the rule system itself, not a place in the campaign world
+- npcs/kinder  # bare form of the already-ignored "npcs/die_kinder" below — the article-variant duplicate this audit's Question 2 found
+- npcs/gefangene_seelen
+- locations/dorf
+- locations/taverne
+- locations/pass
+- locations/nebel
+- locations/hoehle
+- events/falle
+- npcs/gnoll
 - locations/bruecke
 - locations/turm
 # One-off scene dressing, single mention each, no lasting name in the
@@ -777,6 +900,14 @@ split:
 - name: ende
   session: '2026-03-18'
   concept_id: locations/ende_jenseits_der_orkgebiete
+# 2026-08-29 bundle-quality audit: locations/das_ende.md (session 2025-10-07)
+# is the same place — its own body links "Ende" to
+# locations/ende_jenseits_der_orkgebiete.md ("ein Ort im hohen Norden, in
+# dessen Nähe die Kristalle wachsen"). The split above only covers the later
+# 2026-03-18 mention of the same bare name.
+- name: ende
+  session: '2025-10-07'
+  concept_id: locations/ende_jenseits_der_orkgebiete
 # "Die Stadt" is Ehrenfels before the campaign ever says the name out loud:
 # same guild seat, same role as the party's home base, only the session
 # predates the first session that names Ehrenfels outright.
@@ -861,22 +992,32 @@ important:
 - characters/esterossa
 - characters/rotunas
 - deities/akastrale
-- deities/bodrak
+# 2026-08-29 bundle-quality audit: six of these pins named a concept_id that
+# does not (or no longer) exists in the bundle — dead on arrival, and
+# invisible because DEAD_RULES_BASELINE (test_rules_applied.py) only ratchets
+# the *count*, never names them. test_important_pins_name_existing_concepts
+# (test_audit_2026_08_29.py) is now a hard, non-ratcheted check for exactly
+# this. Corrected where the real id was findable in the registry/bundle:
+- deities/bodrak_gott_der_stille  # was "deities/bodrak" — real slug has the epithet
 - deities/coram_schildbrecher
-- deities/gruul
 - deities/heiliger_duran
 - deities/huludan
 - deities/joran_der_muenzenzaehler
-- deities/kaleandra_die_rote
-- deities/kol_meref
-- deities/neiraj
+- deities/kaleandra  # was "deities/kaleandra_die_rote" — real slug is bare
+- deities/kollmereth  # was "deities/kol_meref" — see merge: "kol meref" above
+# "deities/gruul" and "deities/sitravil" matched no concept, alias, or merge
+# key anywhere in the registry or bundle — not a rename, just gone. Dropped
+# rather than guessed at; re-add once a GM ruling identifies what they
+# should point to (see Teil 2 G in the audit report).
+# "deities/neiraj" was never a concept_id at all — it's a merge: key
+# ("neiraj: deities/nerash" above), pinned by mistake. Nerash is a Deity, so
+# it already gets the deep tier once corroborated regardless of this flag.
 - deities/ohoriaks
 - deities/schlangengott
-- deities/sitravil
 - factions/koenigreich_zebros
 - locations/boragdil
 - locations/brandau
-- locations/burg_zebros
+- locations/burg_des_belorus  # was "locations/burg_zebros" — real slug per the merge: comment above ("the mountain and its fortress stay separate real places")
 - locations/casa_del_cookie
 - locations/cornivum
 - locations/jalan
@@ -890,6 +1031,16 @@ important:
 - npcs/tindrael
 - npcs/tyrael
 - npcs/voras
+
+# unimportant: overrides an `important: true` flag a past run baked straight
+# into entity_registry.yaml, when nothing here un-sets it (see
+# test_rules_pins.py::test_unimportant_overrides_a_registry_preserved_flag).
+unimportant:
+# 2026-08-29 bundle-quality audit: Kanon_Entscheidungen.md's own entry for
+# Akastrale says "vorerst kein umfangreicher Eintrag entstehen soll" — the
+# concept has exactly 1 mention, and the important: flag above is currently
+# forcing a full 6-section, 800-word deep-tier writeup against that ruling.
+- deities/akastrale
 
 # alias_block: Anzeigenamen, die NICHT mehr als Alias eines Konzepts
 # erscheinen sollen. Rein kosmetisch: die Zuordnung (merge/never_merge)
