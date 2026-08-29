@@ -1,8 +1,8 @@
 ---
 type: Deity
 title: Jorah
-description: Jorah ist eine Gottheit, die als Gott der Münzen und des Lichts verehrt
-  wird. In der Kampagne begegnet er als wohlwollender, wenngleich dis…
+description: 'Jorah ist eine Gottheit, die von Sange verehrt wird. Er ist bislang
+  nur durch ein einzelnes Ereignis bekannt: Sanges Gebet zu ihm wurde mit…'
 tags:
 - deities
 timestamp: '2026-07-23T00:00:00Z'
@@ -10,16 +10,18 @@ id: DEITY_JORAH
 subtype: Neuer Gott
 ---
 
-**Jorah** ist eine Gottheit, die als Gott der Münzen und des Lichts verehrt wird. In der Kampagne begegnet er als wohlwollender, wenngleich distanzierter Schutzpatron: Er erhört die Gebete seiner Anhänger, greift jedoch nicht unmittelbar in ihr Schicksal ein, sondern verleiht Erkenntnis und Orientierung.
+# Jorah
 
-## Anbetung und Segen
+**Jorah** ist eine Gottheit, die von [Sange](/characters/sange.md) verehrt wird. Er ist bislang nur durch ein einzelnes Ereignis bekannt: Sanges Gebet zu ihm wurde mit einer Vision beantwortet.
 
-Ein Gebet an Jorah kam über [Adelia](/npcs/adeliga_der_eulenseraph.md) zu [Sange](/characters/sange.md): Als Sange den Segen Jorahs empfing, übergab Adelia ihm das zugehörige Gebet. In einem Moment der Verzweiflung zitiert Sange dieses Gebet, um sich an Jorah zu wenden — es dient ihm damit als direkte Verbindung zu seiner Schutzgottheit.
+## Rolle und Verehrung
 
-## Wirken
+Jorah ist Gegenstand von Sanges Anbetung. Die genaue Form des Kultes, sein Zuständigkeitsbereich oder seine Stellung unter den Gottheiten sind nicht überliefert. Belegt ist lediglich, dass Sange zu Jorah betet und dass dieses Gebet eine übernatürliche Antwort findet.
 
-Jorah erhört Sanges Hilferuf. Statt die Lage unmittelbar zu verändern, schenkt er Sange eine Erkenntnis: Sange müsse die Ursache seiner Werwolf-Verwandlung finden, um sie kontrollieren zu können. Damit zeigt sich Jorahs Wirken als indirekt — er gibt den Bittstellern das nötige Wissen an die Hand, überlässt die Umsetzung aber ihnen selbst. Für Sange ist dieser Hinweis ein zentraler Anstoß, die Hintergründe seiner Verwandlung zu ergründen, anstatt nur gegen ihre Symptome anzukämpfen.
+## Vision und Werwolf-Verwandlung
+
+Während seines Gebets erhält Sange eine Vision von Jorah, die ihm Hinweise auf seine Werwolf-Verwandlung gibt. Die Vision liefert damit direkte Orientierung für Sanges Situation, lässt aber offen, ob Jorah aktiv in das Weltgeschehen eingreift, ob er Sange persönlich führt oder ob er generell auf die Nöte seiner Verehrer reagiert.
 
 # Belege
 
-[S1-02-B] Session 2026-07-23, 01:55:28 – https://www.youtube.com/watch?v=Gb-TEbCFF0M
+[S1-02-B] Session 2026-07-23 @ 01:55:06 – https://www.youtube.com/watch?v=Gb-TEbCFF0M

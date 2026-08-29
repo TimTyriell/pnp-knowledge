@@ -1,15 +1,15 @@
 ---
 type: NPC
 title: Lady Kalen
-description: Die Sprecherin von Ohoriaks und Herrin der Stadt Boragdil. Die Hexe arbeitet
-  direkt für sie.
+description: Lady Kalen ist die Sprecherin von Ohoriaks und die Herrin der Stadt.
+  Die Hexe arbeitet in ihrem Namen. Sie wird als mächtig und einflussrei…
 tags:
 - npcs
 timestamp: '2026-04-14T00:00:00Z'
 id: NPC_LADY_KALEN
 ---
 
-Die Sprecherin von [Ohoriaks](/deities/ohoriaks.md) und Herrin der Stadt [Boragdil](/locations/boragdil.md). Die Hexe arbeitet direkt für sie.
+Lady Kalen ist die Sprecherin von [Ohoriaks](/deities/ohoriaks.md) und die Herrin der Stadt. [Die Hexe](/npcs/die_hexe.md) arbeitet in ihrem Namen. Sie wird als mächtig und einflussreich beschrieben.
 
 # Belege
 

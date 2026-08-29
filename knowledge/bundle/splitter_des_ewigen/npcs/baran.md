@@ -1,29 +1,27 @@
 ---
 type: NPC
 title: Baran
-description: Baran ist der freundliche, kleinwüchsige Schankwirt der Taverne Kyla
-  und zugleich ein forschender Druide, der sich in Tiere verwandeln kann…
+description: Baran ist der Schankwirt der Taverne Kyla auf Sanddorn und zugleich ein
+  Druide. Die Gruppe begegnete ihm zunächst, als er von Gulrak bestoh…
 tags:
 - npcs
 timestamp: '2025-05-06T00:00:00Z'
 id: NPC_BARAN
 ---
 
-Baran ist der freundliche, kleinwüchsige Schankwirt der Taverne Kyla und zugleich ein forschender Druide, der sich in Tiere verwandeln kann. Er beschäftigt sich im Geheimen mit magischen Artefakten und einer alten Kirche, die er auf den Inseln erforscht. Die Protagonist*innen lernen ihn zunächst nach einem gescheiterten Diebstahlversuch kennen, später überrascht er sie, als er ihnen unerwartet in einer ausweglosen Kampfsituation zur Hilfe eilt.
+Baran ist der Schankwirt der Taverne Kyla auf Sanddorn und zugleich ein Druide. Die Gruppe begegnete ihm zunächst, als er von Gulrak bestohlen worden war; später unterstützte er sie erneut, flog ihr als Federvieh voraus und kämpfte an ihrer Seite.
 
-## Rolle und Auftreten
+## Rolle und Wesen
 
-Baran ist von eher kleiner Statur, möglicherweise ein Gnom, und tritt stets freundlich und kooperativ auf. In seiner Taverne Kyla bewirtet er Gäste, doch hinter den Kulissen verfolgt er eine eigene, verdeckte Forschung. In seinem privaten Raum verwahrt er eine kleine Schatulle mit einem Schlüssel, der zu einem abgelegenen Labor im Westen der Inseln führt – einem Ort, den er selbst zur Erforschung der alten, auf den Inseln versteckten Kirche nutzt. Selbst seinem langjährigen Bekannten Joar Vanur hat er von diesem Labor nichts erzählt.
-
-## Fähigkeiten und Geheimnisse
-
-Baran ist ein Druide und beherrscht die Fähigkeit, sich in Tiere zu verwandeln. Als die Gruppe in einer Kapelle von einer Übermacht angegriffen wird, erscheint er plötzlich, weil er als Vogel vorausgeflogen ist, um zu helfen. Zu diesem Zeitpunkt ist er bereits erschöpft vom Kampf, kämpft jedoch weiter und gehört zu den letzten Überlebenden. Schließlich kann er sich durch ein Portal retten. Er bietet an, künftige Erkenntnisse mit der Gruppe zu teilen, bleibt ansonsten aber zurückhaltend, was seine wahren Beweggründe angeht.
+Baran führt die Taverne Kyla auf [Sanddorn](/locations/sanddorn.md). Daneben besitzt er druidische Fähigkeiten: Bei einer späteren Gelegenheit war er als Federvieh zur Insel vorausgeflogen. Als er nach seiner Ankunft gefragt wurde, reagierte er nervös, gab die Verwandlung jedoch zu.
 
 ## Begegnungen mit der Gruppe
 
-Die erste Begegnung findet statt, als der Kenku Gulrak versucht, etwas aus der Taverne zu stehlen. Baran kann den Dieb jedoch überwältigen und zeigt der Gruppe daraufhin den Schlüssel zu seinem Labor. Später, in der Kapelle, taucht er unerwartet auf und kämpft an ihrer Seite – ein Einsatz, der sein Vertrauen und seine Bereitschaft zur Zusammenarbeit unterstreicht.
+Die erste bekannte Begegnung ereignete sich in seiner Taverne, nachdem [Gulrak](/npcs/gulrak.md) ihn bestohlen hatte; Baran überwältigte den Dieb. Gegenüber der Gruppe zeigte er sich kooperativ und präsentierte eine Schatulle mit einem Schlüssel zu einem alten Labor im Westen, in dem er Hinweise auf eine alte Kirche gefunden hatte. Er bot an, diese Informationen mit der Gruppe zu teilen.
+
+Später half Baran der Gruppe erneut: Er flog als Federvieh voraus und kämpfte an ihrer Seite, war dabei jedoch sichtlich erschöpft.
 
 # Belege
 
-[P-06] Session 2025-04-30 @ 01:48:36 (https://www.youtube.com/watch?v=fsCOiSkKKTE) – Baran als Schankwirt und Forscher, Diebstahlversuch durch Gulrak, Schlüssel zum Labor.
-[P-07] Session 2025-05-06 @ 01:18:29 (https://www.youtube.com/watch?v=e0v6AFGd4mE) – Baran als Druide mit Tierverwandlung, Auftritt in der Kapelle, erschöpfter Kampf und Rettung durchs Portal.
+[P-06] Session 2025-04-30 @ 01:49:06 – https://www.youtube.com/watch?v=fsCOiSkKKTE
+[P-07] Session 2025-05-06 @ 00:18:38 – https://www.youtube.com/watch?v=e0v6AFGd4mE

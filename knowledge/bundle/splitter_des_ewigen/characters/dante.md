@@ -1,65 +1,58 @@
 ---
 type: Character
 title: Dante
-description: Trotz seines Selbstanspruchs handelt er loyal gegenüber seinen Gefährten
-  und beteiligt sich aktiv an richtungsweisenden Entscheidungen. In…
+description: Dante ist ein Spielercharakter der Kampagne und stammt aus der Stadt
+  Willoch. Er ist von adliger Herkunft und war von Beruf Vampirjäger, be…
 tags:
 - characters
 timestamp: '2026-05-13T00:00:00Z'
 id: CHAR_DANTE
 ---
 
+# Dante
+
 ## Überblick
-Dante ist ein adeliger Vampirjäger aus Willoch und ein enger Jugendfreund von [Kip](/characters/kip.md) und Miko. Er betrachtet sich selbst als den eigentlichen Anführer der Gruppe, auch wenn diese Rolle offiziell von Kip beansprucht wird. Im Verlauf der Reise durch den Abyssalis ist Dante zu einem Wiedergänger geworden und kämpft seither mit den Folgen dieses untoten Daseins. Er ist ein Anhänger des Gottes [Vasul](/deities/vharzul.md), dem er jedoch mit einer gewissen Skepsis begegnet.
+
+Dante ist ein Spielercharakter der Kampagne und stammt aus der Stadt Willoch. Er ist von adliger Herkunft und war von Beruf Vampirjäger, bevor er in die Ereignisse der Kampagne verwickelt wurde. Gemeinsam mit seinen Jugendfreunden aus Willoch bildet er den Kern einer Gruppe, die sich den Gefahren der Unterwelt stellt. Im Verlauf der Kampagne hat Dante einen fundamentalen Wandel durchgemacht: Er ist untot geworden und agiert nun als Revenant. Trotz dieser Veränderung zählt er neben Kip zu den Anführern seiner Gruppe und ist aktiv an deren Entscheidungen und Erkundungen beteiligt.
 
 ## Rolle in der Kampagne
-Dante ist eine zentrale Figur innerhalb der Abenteurergruppe. Er versteht sich aufgrund seiner adeligen Herkunft und seiner Erfahrung als Vampirjäger als natürlicher Anführer, gerät damit jedoch in eine Rivalität mit Kip, der diese Position formell innehat. Diese Spannung wird von Dante offen thematisiert („Ich bin mehr oder weniger, abgesehen von Kip natürlich, der Leader dieser Gruppe.“).
 
-Trotz seines Selbstanspruchs handelt er loyal gegenüber seinen Gefährten und beteiligt sich aktiv an richtungsweisenden Entscheidungen. In einer kritischen Situation akzeptiert er das Angebot des [Schinders](/npcs/schinder.md), ein Portal zu nutzen und diesen zu unterstützen, anstatt einen anderen Weg einzuschlagen. Mit diesem Entschluss verlässt er gemeinsam mit Kip und Miko die Hauptgruppe.
+Dante nimmt in der Gruppe eine Führungsrolle ein. Er selbst beschreibt sich als "mehr oder weniger, abgesehen von Kip natürlich, der Leader dieser Gruppe". Diese Position zeigt sich in mehreren Situationen: Er ist aktiv an der Erkundung beteiligt, öffnet Türen und entdeckt wichtige Hinweise wie das Symbol auf dem Boden. In kritischen Momenten trifft er eigenständige Entscheidungen, die den Verlauf der Gruppe prägen – etwa als er sich entscheidet, mit Kip und Miko dem Richter zu folgen, um den Schinder zu retten, anstatt durch das Portal zu gehen.
+
+Seine Rolle als Anführer wird auch dadurch unterstrichen, dass er in der Gruppe die Initiative ergreift, wenn es um riskante Aktionen geht. So ist er es, der Lunara von dem Ring wegzieht, an dem sie hängt, und sie damit aus ihrer Trance befreit. Seine Entscheidungen sind dabei nicht immer von Vorsicht geprägt, sondern zeigen einen Krieger, der bereit ist, Verantwortung zu übernehmen und voranzugehen.
 
 ## Wichtige Merkmale
 
-### Stand und Beruf
-Dante stammt aus dem Adel von Willoch und hat sich dort einen Namen als Vampirjäger gemacht. Er betont seine noble Herkunft und sieht in ihr eine Grundlage seines Führungsanspruchs.
+Dante ist ein guter Krieger, wie er selbst betont. Seine adlige Herkunft aus Willoch prägt sein Auftreten und seine Stellung innerhalb der Gruppe. Als ehemaliger Vampirjäger bringt er spezifische Erfahrungen und Fähigkeiten im Kampf gegen übernatürliche Wesen mit, die in der Unterwelt, in der sich die Gruppe bewegt, von besonderem Wert sind.
 
-### Zustand als Wiedergänger
-Die Strapazen im Abyssalis haben Dante in einen Wiedergänger verwandelt. Er selbst erwähnt, dass er „nur knapp dem Hungertod entronnen“ ist und dass die Gruppe einen schweren Verlust erlitten hat. Sein körperlicher Zustand ist, wie bei seinen Gefährten, von Fäulnis und Verfall gezeichnet.
+Ein prägendes Merkmal ist seine Untot-Existenz als Revenant. Diese Verwandlung hat ihn in der letzten Session vor dem aktuellen Stand ereilt und verändert seine Position innerhalb der Gruppe sowie vermutlich auch seine Wahrnehmung der Welt. Trotz seines untoten Zustands bleibt er handlungsfähig und engagiert – er ist weiterhin aktiv an Kämpfen und Erkundungen beteiligt.
 
-### Glaubenszugehörigkeit und Skepsis
-Dante ist ein Anhänger Vasuls. Gleichwohl hegt er Misstrauen gegenüber dieser Gottheit. Vor seinem Aufbruch warnt er [Lunara Velora](/characters/lunara_velora.md) mit den Worten: *„Vertrau Vasul nicht zu sehr. Das ist alles, was ich hier sage.“*
-
-### Verlangen nach Rum
-Als wiederkehrendes Motiv äußert Dante eine starke Sehnsucht nach Rum, was seine irdischen Bedürfnisse trotz seines untoten Zustands unterstreicht.
+Charakteristisch ist auch sein Hang zu Genussmitteln: Er "sehnt sich ein bisschen nach Rum hier unten", was auf eine gewisse Lebenslust und Bodenständigkeit hindeutet, die im Kontrast zu seiner adligen Herkunft steht. Seine Verbundenheit mit seinen Jugendfreunden aus Willoch ist ein zentraler Bestandteil seines Wesens – die Gruppe ist für ihn mehr als nur eine Zweckgemeinschaft, sie sind "gute Freunde von früher".
 
 ## Beziehungen und Verbindungen
 
-### Zu Kip
-Dante und Kip kennen sich seit ihrer Kindheit in Willoch. Ihre Freundschaft wird durch eine andauernde Konkurrenz um die Führungsrolle in der Gruppe überlagert. Dante erkennt Kips formellen Status an, sieht sich selbst aber als die eigentliche Führungspersönlichkeit.
+Dante ist eng mit den anderen Mitgliedern seiner Gruppe verbunden, die alle aus Willoch stammen oder dort aufgewachsen sind. Besonders hervorzuheben ist seine Beziehung zu Kip, den er als den eigentlichen Anführer der Gruppe anerkennt, obwohl er selbst eine Führungsrolle einnimmt. Die Gruppe versteht sich als Familie – Miqo beschreibt, dass sie nach dem Verlust ihrer eigenen Familie in dem Freundeskreis mit Dante, Miko und anderen aufgewachsen ist und diese nun ihre "neue Familie" sind.
 
-### Zu Miko
-Miko gehört zu Dantes engstem Freundeskreis aus Kindertagen. Die drei – Dante, Kip und Miko – verbindet eine gemeinsame Geschichte aus Willoch, und sie agieren auch im Abyssalis als Kern der Gruppe.
+Zu Lunara Velora hat Dante eine beschützende Haltung. Als sie an dem Ring hängt und nicht bei Bewusstsein ist, ist er es, der sie packt und von dem Ring wegzieht, um sie zu befreien. Er warnt Lunara außerdem davor, Vasul nicht zu vertrauen – eine Warnung, die auf tiefere Kenntnisse oder zumindest ein starkes Misstrauen gegenüber dieser Figur schließen lässt.
 
-### Zu Vasul
-Dante dient Vasul, scheint jedoch widersprüchliche Gefühle gegenüber seinem Gott zu haben. Die ausdrückliche Warnung an Lunara deutet auf ein Wissen oder eine Erfahrung hin, die sein Vertrauen erschüttert hat.
-
-### Zu Lunara Velora
-Dante greift ein, als Lunara in Trance einen kristallbesetzten Ring zerstören will, und reißt sie aus diesem Zustand. Später verabschiedet er sich von ihr nicht mit Kampfgenossenschaft, sondern mit einer nachdrücklichen Warnung vor falschem Vertrauen.
-
-### Zum Richter und zum Schinder
-Nachdem der Richter einen emotionalen Appell an die Gruppe richtet, entscheidet Dante gemeinsam mit Kip, dem Richter zu folgen und den Schinder zu unterstützen. Miko schließt sich an. Dante kommentiert dies nicht mit Worten, aber die Entscheidung zeigt, dass er diese Wesen – so bizarr sie auch sein mögen – als neue, schützenswerte Familie akzeptiert hat.
+Mit dem Seraphen hat Dante eine gewaltsame Begegnung, bei der er schwer verletzt wird. Die Heilung erhält er von Esterossa, was auf eine Verbindung zu dieser Figur hindeutet. Seine Entscheidung, mit Kip und Miko dem Richter zu folgen, zeigt, dass er bereit ist, riskante Wege zu gehen, um andere zu retten – in diesem Fall den Schinder.
 
 ## Chronologie
 
-### Vor und während Session 1 (2026-05-06)
-Dante, Kip und Miko sind nach entbehrungsreichen Abenteuern im Abyssalis zu Wiedergängern geworden. Dante hat nur knapp den Hungertod überlebt. Die Gruppe trägt schwer an einem nicht näher bezeichneten Verlust. In einer Selbstvorstellung bekräftigt er seine adlige Herkunft aus Willoch, seinen Selbstanspruch als Anführer und seine frühere Tätigkeit als Vampirjäger. Zudem äußert er das dringende Bedürfnis nach Rum.
+In der Session vom 6. Mai 2026 stellt sich Dante der Gruppe vor und gibt dabei Einblick in seine Herkunft und seinen Werdegang. Er ist zu diesem Zeitpunkt bereits untot, ein Revenant, was in der vorherigen Session geschehen sein muss. Er ist aktiv an der Erkundung beteiligt, öffnet Türen und entdeckt das Symbol auf dem Boden. Seine Rolle als Anführer wird in dieser Session deutlich, als er vorschlägt, dass Kip mit etwas anfangen sollte, und sich selbst als Leader der Gruppe positioniert.
 
-### Session 2 (2026-05-13)
-Dante wird während der Kämpfe mit einem Seraphen zweimal schwer getroffen und erleidet hohen Schaden. Er verhindert, dass Lunara einen Ring mithilfe eines Kristalls zerstört, und holt sie aus ihrer Trance. Nach dem Kampf spürt er die Gegenwart eines unsichtbaren Geistes und warnt die Gruppe. Als der Schinder durch Holodarn einen Deal anbietet, entscheidet sich Dante zusammen mit Kip und Miko, das Portal zu nehmen und dem Schinder zu helfen. Von Lunara verabschiedet er sich mit der eindringlichen Mahnung, Vasul nicht blind zu vertrauen, und verschwindet anschließend gemeinsam mit seinen Gefährten in Richtung des Portals.
+In der Session vom 13. Mai 2026 eskaliert die Situation: Dante wird vom Seraphen schwer verletzt und benötigt Heilung, die er von Esterossa erhält. In dieser angespannten Lage zeigt sich sein Misstrauen gegenüber Vasul, vor dem er Lunara warnt. Als sich die Gelegenheit bietet, Lunara von dem Ring zu befreien, an dem sie hängt, zögert Dante nicht: Er greift sie und zieht sie weg, wodurch sie aus ihrer kurzen Bewusstlosigkeit erwacht. In der Folge entscheidet er sich, mit Kip und Miko dem Richter zu folgen, um den Schinder zu retten, anstatt den sichereren Weg durch das Portal zu nehmen. Diese Entscheidung zeigt seine Bereitschaft, Risiken einzugehen, um andere zu retten.
 
 ## Offene Fragen
-- Worauf genau gründet sich Dantes Misstrauen gegenüber Vasul? Die einzige Aussage dazu ist seine Warnung an Lunara, ohne dass er nähere Erläuterungen gibt.
-- Welcher Verlust hat die Gruppe vor Dantes knapper Rettung vor dem Hungertod getroffen?
+
+Die Belege lassen einige Fragen offen, die im Verlauf der Kampagne noch geklärt werden müssen:
+
+- Was genau hat Dante in der Session vor dem 6. Mai 2026 in seinen untoten Zustand als Revenant versetzt?
+- Welche konkreten Erfahrungen hat Dante als Vampirjäger gemacht, und haben diese ihn auf seine jetzige Situation als Untoter vorbereitet?
+- Warum warnt Dante Lunara ausdrücklich davor, Vasul nicht zu vertrauen – welche Kenntnisse oder Erfahrungen liegen dieser Warnung zugrunde?
+- Was erhofft sich Dante von der Rettung des Schinders, und welche Konsequenzen könnte seine Entscheidung haben, dem Richter zu folgen?
 
 ## Belege
-[P-48] Session 2026-05-06, 00:03:22, https://www.youtube.com/watch?v=MB4quhDWsQE
-[P-49] Session 2026-05-13, 01:42:01, https://www.youtube.com/watch?v=4afPD9Q_5AY
+
+[P-48] Session 2026-05-06 @ 00:03:22 (https://www.youtube.com/watch?v=MB4quhDWsQE)
+[P-49] Session 2026-05-13 @ 00:10:06 (https://www.youtube.com/watch?v=4afPD9Q_5AY)

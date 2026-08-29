@@ -1,15 +1,15 @@
 ---
 type: NPC
 title: Rolanes
-description: Rolanes ist ein reicher, hochnäsiger Tiefling und 'Meister der Münze'
-  in der Bresca-Gilde. Er ist hauptsächlich für die Finanzen zuständig…
+description: Rolanes ist ein Tiefling und der Schatzmeister der Gilde. Er ist reich
+  und protzig, wirkt aber abgehoben. Er bietet der Gruppe an, der Gild…
 tags:
 - npcs
 timestamp: '2025-09-17T00:00:00Z'
 id: NPC_ROLANES
 ---
 
-Rolanes ist ein reicher, hochnäsiger Tiefling und 'Meister der Münze' in der [Bresca-Gilde](/factions/bresca_gilde.md). Er ist hauptsächlich für die Finanzen zuständig und äußert sich kaum zur Diskussion, nickt nur und zeigt seinen Reichtum offen.
+Rolanes ist ein Tiefling und der Schatzmeister der [Gilde](/factions/gilde_von_ehrenfels.md). Er ist reich und protzig, wirkt aber abgehoben. Er bietet der Gruppe an, der Gilde beizutreten, und stellt die Aufnahmeprüfung vor.
 
 # Belege
 

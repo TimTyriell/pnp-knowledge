@@ -1,16 +1,16 @@
 ---
 type: NPC
 title: Adria
-description: Adria (auch Inferni genannt) ist Florans Gefährtin und kämpft mit einem
-  Bogen an seiner Seite. Sie wirft im finalen Gefecht eine Phiole, di…
+description: Adria ist die Gefährtin von Floran und eine Bogenschützin. Sie kämpft
+  an seiner Seite und ist verzweifelt, als er verletzt wird. Sie bittet…
 tags:
 - npcs
 timestamp: '2026-03-23T00:00:00Z'
 id: NPC_ADRIA
 ---
 
-Adria (auch Inferni genannt) ist [Florans](/npcs/floran.md) Gefährtin und kämpft mit einem Bogen an seiner Seite. Sie wirft im finalen Gefecht eine Phiole, die bei [Nina](/characters/nina.md) Verwundbarkeit auslöst, wird aber schließlich von [Otis](/characters/otis.md) und [Tibbet](/characters/tibbet.md) überwältigt. Nach Florans Fall bricht sie weinend zusammen und fleht die Gruppe an, sie nicht nach [Willoch](/locations/willauch.md) zu bringen, wo ihnen Folter und Tod drohen. Sie betont, dass der angebliche Diplomat nicht von ihnen ermordet wurde.
+Adria ist die Gefährtin von [Floran](/npcs/floran.md) und eine Bogenschützin. Sie kämpft an seiner Seite und ist verzweifelt, als er verletzt wird. Sie bittet die Gruppe, sie nicht nach [Willauch](/locations/willauch.md) zu bringen, da sie dort gefoltert und hingerichtet werden. Sie wird ebenfalls gefangen genommen und abgeführt.
 
 # Belege
 
-[P-42] Session 2026-03-23 @ 02:50:11 (https://www.youtube.com/watch?v=niVxKtdQBn0)
+[P-42] Session 2026-03-23 @ 03:03:30 (https://www.youtube.com/watch?v=niVxKtdQBn0)

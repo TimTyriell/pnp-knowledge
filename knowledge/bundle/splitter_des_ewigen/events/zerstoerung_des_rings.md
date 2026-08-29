@@ -1,8 +1,8 @@
 ---
 type: Event
 title: Zerstörung des Rings
-description: Dodo zerschlägt auf Drängen der Gruppe den Ring mit seinem heiligen Streitkolben.
-  Der Ring zerspringt, das Symbol leuchtet auf und die Kris…
+description: Dodo zerschlägt den Ring mit seinem Streitkolben, was den Seraphen tötet
+  und die geisterhafte Kreatur freisetzt.
 tags:
 - events
 timestamp: '2026-05-13T00:00:00Z'
@@ -10,7 +10,7 @@ id: EVENT_ZERSTOERUNG_DES_RINGS
 subtype: Sonstiges
 ---
 
-[Dodo](/characters/dodo.md) zerschlägt auf Drängen der Gruppe den Ring mit seinem heiligen [Streitkolben](/items/streitkolben_von_dodo.md). [Der Ring](/items/ring_der_teleportation.md) zerspringt, das [Symbol](/items/symbol_in_der_villa.md) leuchtet auf und die Kristalle am Seraphen absorbieren seine Essenz, was zu seinem qualvollen Tod führt.
+[Dodo](/characters/dodo.md) zerschlägt den Ring mit seinem Streitkolben, was den [Seraphen](/factions/seraphen.md) tötet und die geisterhafte Kreatur freisetzt.
 
 # Belege
 

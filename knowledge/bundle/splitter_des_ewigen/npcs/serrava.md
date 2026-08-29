@@ -1,16 +1,16 @@
 ---
 type: NPC
 title: Serrava
-description: Ein tiefroter Tiefling und Mitglied der Gildenführung in Bresca. Er stellt
-  sich kurz vor und ist Teil des diabolischen Lachens am Ende.
+description: Serrava ist ein tiefroter Tiefling, der an der Tafel der Gilde sitzt.
+  Er nickt der Gruppe nur zu und sagt nichts.
 tags:
 - npcs
 timestamp: '2025-09-17T00:00:00Z'
 id: NPC_SERRAVA
 ---
 
-Ein tiefroter Tiefling und Mitglied der Gildenführung in [Bresca](/locations/breska.md). Er stellt sich kurz vor und ist Teil des diabolischen Lachens am [Ende](/locations/ende_jenseits_der_orkgebiete.md).
+Serrava ist ein tiefroter Tiefling, der an der Tafel der [Gilde](/factions/gilde_von_ehrenfels.md) sitzt. Er nickt der Gruppe nur zu und sagt nichts.
 
 # Belege
 
-[P-22] Session 2025-09-17 @ 00:26:08 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
+[P-22] Session 2025-09-17 @ 00:27:20 (https://www.youtube.com/watch?v=AhIT8dcxw2o)

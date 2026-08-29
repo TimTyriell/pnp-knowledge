@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Hans (Wirt zum grünen Sichelmond)
-description: Hans ist der Tiefling-Wirt der Taverne 'Zum grünen Sichelmond'. Er tischt
-  der Gruppe ein üppiges Mahl auf, gibt detaillierte Auskunft über…
+description: Hans ist der Wirt der Taverne „Zum grünen Sichelmond“. Er gibt der Gruppe
+  Informationen über die Route nach Hartwacht und die Gefahren des…
 tags:
 - npcs
 timestamp: '2026-03-18T00:00:00Z'
@@ -11,7 +11,7 @@ aliases:
 - Hans
 ---
 
-[Hans](/npcs/hans_soldat_aus_breska.md) ist der Tiefling-Wirt der [Taverne](/locations/taverne.md) '[Zum grünen Sichelmond](/locations/zum_gruenen_sichelmond_von_tiefwasser.md)'. Er tischt der Gruppe ein üppiges Mahl auf, gibt detaillierte Auskunft über die Route nach [Hartwacht](/locations/hartwacht.md) (über Camp [Bucht](/locations/bucht.md), die Orkgebiete und die Schlucht, wobei er dringend einen Ork-Führer empfiehlt) und erwähnt die ortsansässigen [Freibeuter](/npcs/freibeuter_harald.md) unter Harald, die er für unschuldig am Silberkern-Vorwurf hält.
+Hans ist der Wirt der [Taverne](/locations/taverne.md) „[Zum grünen Sichelmond](/locations/zum_gruenen_sichelmond_von_tiefwasser.md)“. Er gibt der Gruppe Informationen über die Route nach [Hartwacht](/locations/hartwacht.md) und die Gefahren des Passes. Er erwähnt die [Freibeuter](/npcs/freibeuter_harald.md) Harald und seine Maat und verkauft [Rotunas](/characters/rotunas.md) einen eingepackten Papagei, der sich später als Rabe herausstellt.
 
 # Belege
 

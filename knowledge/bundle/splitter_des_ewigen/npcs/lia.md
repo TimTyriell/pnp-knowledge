@@ -1,16 +1,16 @@
 ---
 type: NPC
 title: Lia
-description: Eine der beiden Magierinnen, Schwester von Arus, die den Golem erschuf.
-  Sie ist jung, enthusiastisch (fast aufdringlich zu Rotunas) und ges…
+description: Lia ist eine Magierin und Schwester von Arus. Sie ist ebenfalls gestresst
+  und erklärt, dass sie den Golem beschworen haben, um gegen Untote…
 tags:
 - npcs
 timestamp: '2025-10-07T00:00:00Z'
 id: NPC_LIA
 ---
 
-Eine der beiden Magierinnen, Schwester von [Arus](/npcs/arus.md), die den Golem erschuf. Sie ist jung, enthusiastisch (fast aufdringlich zu [Rotunas](/characters/rotunas.md)) und gestresst wegen der schiefgegangenen Beschwörung. Sie erklärt die Funktionsweise des Golems und die Gefahr der Kristalle. Sie und Arus haben Sprengfallen vorbereitet, um das Kristallfeld notfalls zu zerstören. Nach dem Kampf ist sie enttäuscht über den Verlust ihrer Forschung und reist kurz angebunden ab.
+Lia ist eine Magierin und Schwester von [Arus](/npcs/arus.md). Sie ist ebenfalls gestresst und erklärt, dass sie den Golem beschworen haben, um gegen [Untote](/factions/belorus_untotenarmee.md) zu helfen. Sie ist beeindruckt von [Dodo](/characters/dodo.md) und zeigt Interesse an ihm. Sie bereitet die Sprengung der [Mine](/locations/kristallmine.md) vor, um den Golem zu stoppen.
 
 # Belege
 
-[P-25] Session 2025-10-07 @ 00:00:03 (https://www.youtube.com/watch?v=qVAF_54S8Vw)
+[P-25] Session 2025-10-07 @ 00:02:30 (https://www.youtube.com/watch?v=qVAF_54S8Vw)

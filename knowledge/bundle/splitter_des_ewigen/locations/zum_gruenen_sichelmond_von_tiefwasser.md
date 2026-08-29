@@ -1,8 +1,8 @@
 ---
 type: Location
 title: Zum grünen Sichelmond (Tiefwasser)
-description: Die gehobene Taverne 'Zum grünen Sichelmond' in Tiefwasser, geführt von
-  Hans. Sie bietet teure Speisen wie Papagei (2 Goldmünzen) und ist T…
+description: Die Taverne „Zum grünen Sichelmond“ ist eine gut besuchte Taverne in
+  Tiefwasser, die von Hans betrieben wird. Sie ist bekannt für ihr gutes…
 tags:
 - locations
 timestamp: '2026-03-18T00:00:00Z'
@@ -12,7 +12,7 @@ aliases:
 - Zum grünen Sichelmond
 ---
 
-Die gehobene [Taverne](/locations/taverne.md) 'Zum grünen Sichelmond' in [Tiefwasser](/locations/tiefwasser.md), geführt von [Hans](/npcs/hans_soldat_aus_breska.md). Sie bietet teure Speisen wie Papagei (2 Goldmünzen) und ist [Treffpunkt](/locations/treffpunkt.md) für die Gruppe, um Informationen über die Route nach [Hartwacht](/locations/hartwacht.md) zu erhalten.
+Die [Taverne](/locations/taverne.md) „Zum grünen Sichelmond“ ist eine gut besuchte Taverne in [Tiefwasser](/locations/tiefwasser.md), die von [Hans](/npcs/hans_wirt_zum_gruenen_sichelmond.md) betrieben wird. Sie ist bekannt für ihr gutes Essen und ihre Informationen.
 
 # Belege
 

@@ -1,19 +1,17 @@
 ---
 type: Location
 title: Bibliothek von Willauch
-description: Die sagenumwobene Bibliothek von Willauch, bewacht von Sandwächtern,
-  beherbergt seltene Schriften aus der Zeit vor der großen Brandkatastro…
+description: Die Bibliothek von Willauch ist ein Wüstengebäude, das das gesamte gesammelte
+  Wissen der Stadt und Umgebung enthält. Sie wird von Safin Al…
 tags:
 - locations
 timestamp: '2026-03-03T00:00:00Z'
 id: LOC_BIBLIOTHEK_VON_WILLAUCH
 subtype: Gebäude
-aliases:
-- Die Bibliothek
 ---
 
-Die sagenumwobene Bibliothek von [Willauch](/locations/willauch.md), bewacht von Sandwächtern, beherbergt seltene Schriften aus der Zeit vor der großen Brandkatastrophe. Sie wird von [Safin Al Barak](/npcs/safin_al_barak.md) gehütet und enthält Werke über alte Götter, Flüche, rote Magie und magische Materialien. Nur Champions oder besondere Gäste erhalten Einlass.
+Die Bibliothek von [Willauch](/locations/willauch.md) ist ein Wüstengebäude, das das gesamte gesammelte Wissen der Stadt und Umgebung enthält. Sie wird von [Safin Al Barak](/npcs/safin_al_barak.md) verwaltet und ist für einfache Bürger nicht zugänglich. Hier findet die Gruppe Bücher über die alten Götter und Magie.
 
 # Belege
 
-[P-39] Session 2026-03-03 @ 01:14:07 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
+[P-39] Session 2026-03-03 @ 00:14:00 (https://www.youtube.com/watch?v=BRUNuNKTeOg)

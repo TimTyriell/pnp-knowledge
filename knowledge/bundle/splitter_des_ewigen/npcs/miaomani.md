@@ -1,38 +1,31 @@
 ---
 type: NPC
 title: Miaomani
-description: Miaomani ist eine katzenartige Catfolk-Frau, die der Heldengruppe in
-  mehreren Situationen begegnet. Zunächst arbeitet sie als Ausguck auf d…
+description: Miaomani ist eine Catfolk und die Partnerin von Kapitän Lobrecht. Sie
+  reist mit ihm auf dessen Schiff, wo sie als Ausguck dient, und gilt i…
 tags:
 - npcs
-timestamp: '2026-07-29T00:00:00Z'
+timestamp: '2026-08-25T00:00:00Z'
 id: NPC_MIAOMANI
 aliases:
 - Miamani
-status: disputed
 ---
 
-Miaomani ist eine katzenartige Catfolk-Frau, die der Heldengruppe in mehreren Situationen begegnet. Zunächst arbeitet sie als Ausguck auf dem Gildenschiff, später wird sie als Gefährtin des Kapitäns bezeichnet und in einer Taverne als Partnerin des Kahnführers [Lobrecht](/npcs/lobrecht.md) vorgestellt. Sie zeigt sich den Helden gegenüber durchgehend freundlich und hilfsbereit.
+Miaomani ist eine Catfolk und die Partnerin von [Kapitän Lobrecht](/npcs/lobrecht.md). Sie reist mit ihm auf dessen Schiff, wo sie als Ausguck dient, und gilt in Ehrenfels als wichtige Persönlichkeit.
 
-## Rolle auf dem Gildenschiff
+## Rolle und Eigenschaften
 
-Miaomani dient als Ausguck auf dem Gildenschiff. Sie ist flink und klettert gewandt im Mast, wo sie [Esterossa](/characters/esterossa.md) bei der Ankunft freundlich begrüßt und ihn bei sich Ausschau halten lässt. Nach der Ankunft setzt sie die Gruppe mit dem Beiboot ab. Bei der Annäherung an die Insel entdeckt sie von weitem die vielen Fackeln und warnt die Gruppe vor der starken Bewachung.
+Miaomani ist Mitglied der Gilde [1] und Begleiterin beziehungsweise Partnerin von Lobrecht [3][5]. Auf dem Schiff übernimmt sie den Ausguck; ihre Flinkheit macht sie für diese Aufgabe geeignet [1]. Auch bei Eskorten übernimmt sie Beobachtungsaufgaben: Sie ist mit einer Armbrust bewaffnet und klettert auf einen Baum, um einen besseren Überblick zu haben [6]. Sie wird als freundlich beschrieben [1]. In Ehrenfels wird sie als wichtige Persönlichkeit genannt [4].
 
-## Verwundung und Heilung
+## Verlauf
 
-In einem Gefecht mit Soldaten wird Miaomani schwer verwundet. Sie wird von Esterossa geheilt, nachdem die Soldaten sie niedergestreckt haben.
-
-## Begegnung in der Taverne
-
-Gemeinsam mit dem Kahnführer Lobrecht, ihrer Partner, begrüßt Miaomani die Helden in einer Taverne. Sie bleibt im Hintergrund, lächelt und teilt die Freude über das Wiedersehen. Die Belege lassen offen, ob Lobrecht mit dem Kapitän des Gildenschiffs identisch ist oder ob Miaomani inzwischen eine andere Bindung eingegangen ist.
+Als [Esterossa](/characters/esterossa.md) zum Ausguck kommt, unterhält sich Miaomani mit ihm [1]. Bei einem späteren Angriff wird sie schwer verletzt, aber von Esterossa geheilt [2]. Bei einer Begegnung mit Untoten bestätigt sie die Bedrohung und hat wertvolle Kugeln verbraucht, um zu entkommen [3]. Am Ende einer Schlacht in Ehrenfels wird sie im Zusammenhang mit eintreffender Verstärkung erwähnt [4]. Später begrüßt sie die Helden lächelnd, bleibt dabei aber im Hintergrund [5].
 
 # Belege
 
-[P-06] Session 2025-04-30 @ 00:05:10 – https://www.youtube.com/watch?v=fsCOiSkKKTE
-[P-07] Session 2025-05-06 @ 00:03:04 – https://www.youtube.com/watch?v=e0v6AFGd4mE
-[P-16] Session 2025-07-29 @ 01:56:53 – https://www.youtube.com/watch?v=XXgO5Ht4Q0A
-[S1-01-A] Session 2026-07-29 @ 00:47:52 – https://www.youtube.com/watch?v=umGyKLkefJI
-
-# Offene Konflikte
-
-- Beleg [P-16] bezeichnet Miaomani als „katzenartige Gefährtin des Kapitäns“, Beleg [S1-01-A] als „Partnerin des Kahnführers Lobrecht“. Es bleibt unklar, ob Lobrecht mit dem Kapitän identisch ist oder ob Miaomani zwei verschiedene Beziehungen hat.
+1. Session 2025-04-30, 00:10:39 – https://www.youtube.com/watch?v=fsCOiSkKKTE
+2. Session 2025-07-29, 00:04:00 – https://www.youtube.com/watch?v=XXgO5Ht4Q0A
+3. Session 2025-11-18, 01:29:00 – https://www.youtube.com/watch?v=w__ahowb9p0
+4. Session 2026-04-09, 00:57:10 – https://www.youtube.com/watch?v=vcGkejr8_nI
+5. Session 2026-07-29, 00:46:59 – https://www.youtube.com/watch?v=umGyKLkefJI
+6. Session 2026-08-25, 01:00:18 – https://www.youtube.com/watch?v=1Cjj3OVqiYA

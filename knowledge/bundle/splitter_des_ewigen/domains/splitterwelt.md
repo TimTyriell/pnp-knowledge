@@ -1,87 +1,110 @@
 ---
 type: Domain
 title: Splitterwelt
-description: Die Splitterwelt ist eine Paralleldimension, die im Krieg zwischen alten
-  und neuen Göttern entstanden ist. Sie liegt als Zwischenwelt zwisc…
+description: Die Splitterwelt ist eine Zwischenwelt, die durch den Krieg zwischen
+  den alten und den neuen Göttern entstanden ist. Sie liegt zwischen den…
 tags:
 - domains
-timestamp: '2026-08-04T00:00:00Z'
+timestamp: '2026-08-12T00:00:00Z'
 id: DOMAIN_SPLITTERWELT
 subtype: Sonstiges
 aliases:
 - Abyssalis
-- Die Splitterwelt
 ---
+
+# Splitterwelt (Abyssalis)
 
 ## Überblick
 
-Die Splitterwelt ist eine Paralleldimension, die im Krieg zwischen alten und neuen Göttern entstanden ist. Sie liegt als Zwischenwelt zwischen dem Circle Below und den Hallows Above und ist erfüllt von geplagten Seelen und unzähligen Verbindungen. [P-24] Ursprünglich eine Bastion der alten Götter, wurde sie in ein Gefängnis verwandelt, aus dem es kaum ein Entkommen gibt. [P-37a][P-49] Der Ort wird als alptraumhafte, düstere Ebene beschrieben, die an den Kräften der Eindringlinge zehrt und deren Seelen absorbiert. [P-48][P-53]
-
-Die Splitterwelt besitzt keinen normalen Tag-Nacht-Zyklus; stattdessen erhellen bunte, sich bewegende Lichter am Himmel die Landschaft. [P-44][P-50] Die Geographie ist verzerrt und von lila Bergen, Nebelschwaden, Kristallen und bizarren Felsformationen geprägt. [P-44][P-50][P-55] In den Flüssen sind zahllose Seelen gefangen, und die „Erntefelder“ dienen als Ankunftsort neu eintreffender Seelen. [P-44] Der Aufenthalt in dieser Welt verursacht stetigen Stress und kann zu einem abyssalen Wahnsinn führen, vor dem nur besondere Schutzmaßnahmen bewahren. [P-53][P-44]
+Die Splitterwelt ist eine Zwischenwelt, die durch den Krieg zwischen den alten und den neuen Göttern entstanden ist. Sie liegt zwischen den Circles Below und den Hallows Above und ist geprägt von geplagten Seelen und unzähligen Verbindungen. In ihr befindet sich ein Tor zu Abyssalis, einer vergessenen Welt, die einst eine Bastion der alten Götter war. Abyssalis selbst ist eine Demiplane, eine Schattenwelt zur Prime World, die von den neuen Göttern in ein Gefängnis für die alten Götter verwandelt wurde.
 
 ## Rolle in der Kampagne
 
-Die Splitterwelt ist ein zentraler Schauplatz der späteren Kampagnenphase. Nachdem die Gruppe erfuhr, dass der alte Gott Vasul dort gefangen ist und durch einen Teil in [Lindo Laut](/characters/lindo_laut.md) zu entkommen versucht, wurde die Reise dorthin unausweichlich. [P-37a] Ein künstliches Portal, errichtet von Voras in Bresca, und ein alter Riss in der Arena von Ehrenfels ermöglichten den Zugang. [P-43b][P-46] Ein Teil der Gruppe begab sich in die Splitterwelt, um Liams Seele zu befreien, die Vasul-Teile zu bekämpfen und Nerashs Ritual zur Zerstörung Vasuls vorzubereiten. [P-43a] Dort trafen sie auf die Seelenwacht, auf den gefangenen Vasul und auf eine Vielzahl feindseliger Wesen. Später öffnete Holodarn ein Portal zurück in die materielle Welt. [P-49] Für [Lunara Velora](/characters/lunara_velora.md) ist die Splitterwelt zudem eine Quelle ihrer Kräfte; sie kann die Ebene vorübergehend in die materielle Welt holen und spricht ihre Sprache. [P-34][P-41]
+Die Splitterwelt und insbesondere Abyssalis sind zentrale Handlungsorte der Kampagne. Die Gruppe reist mehrfach zwischen der normalen Welt und Abyssalis hin und her, zunächst um Informationen zu sammeln, später um Lunaras Bruder zu retten und die Teile von Vasul zu bekämpfen. Die Reise nach Abyssalis wird von mehreren Fraktionen als äußerst gefährlich eingeschätzt — wer dorthin geht, muss mit schweren Konsequenzen rechnen. Die Rückkehr aus dem Gefängnis der alten Götter gilt als Beweis für die Gefährlichkeit und Entschlossenheit der Gruppe.
 
 ## Wichtige Merkmale
 
-- **Beschaffenheit:** Eine zerbrochene, kristallene Parallelwelt. In ihr existieren Splitterfelder und verzerrte Strukturen. [P-34][P-50] Der Himmel zeigt keine echte Decke, sondern ein Gewirr aus Farben – Lila, Grün, Blau. [P-44] „Bunte Lichter an der Decke“ kommen und gehen und simulieren eine Art Tagesrhythmus. [P-50] Die Umgebung ist voller Nebel und gelegentlich von unheimlichen Kristallen durchsetzt. [P-50]
-- **Gefahren:** Die Welt entzieht Lebewesen aktiv Lebenskraft und verursacht permanenten Stress. [P-53] Magie ist allgegenwärtig und kann von mächtigen Entitäten kontrolliert werden. [P-53] Wer zu lange verweilt, riskiert den abyssalen Wahnsinn; nur Vasuls Schutz gewährte der Gruppe zeitweise Immunität. [P-44] Die einheimische Fauna umfasst riesige, fliegende saurierartige Raubtiere, deren Leuchten dem Kristallglanz ähnelt, [P-38] sowie ein Sandwurm-Biest [P-54] und gefährliche Schattenkreaturen. [P-40]
-- **Bewohner:** Die Ebene ist die Heimat der vier alten Götter, die hier gefangen sind – darunter Vasul und Basul. [P-43a][P-26] Daneben existieren umherirrende Seelen, die Seelenwacht (mit Instanzen wie dem Richter und dem Schinder), [P-48] sowie dämonische Wesen und Splitterwelt-Kreaturen, deren bloße Anwesenheit für Sterbliche gefährlich ist. [P-31b][P-46] Auch [Slicks](/npcs/slix_vasul.md) stammt von hier. [P-34]
+### Die Splitterwelt
+
+Die Splitterwelt ist eine düstere, fremde Ebene, die durch ein Portal in Breska erreichbar ist. Sie beherbergt Kreaturen, die auf Lebendiges reagieren und als äußerst gefährlich gelten. Ein alter Zauber, der durch das Wasser des Waldes fließt, hält diese Kreaturen fern — doch wie lange dieser Schutz hält, ist ungewiss. In der Splitterwelt befindet sich eine alte Festung, in der umherirrende Seelen leben. Diese sind nicht gefährlich, sollten aber nicht zu viel Aufmerksamkeit erregen.
+
+Lunara kann mit ihren Runen die Grenze zur Splitterwelt öffnen. In dieser Welt sind die Untoten gefangen und können vernichtet werden. Die Splitterwelt scheint mit Vasul und der alten Magie verbunden zu sein.
+
+### Abyssalis
+
+Abyssalis ist eine Demiplane, die durch ein Tor in der Splitterwelt erreichbar ist. Das Tor kann nur mit einem Schlüssel geöffnet werden, den Lindo Laut besitzt. Von außen kann man hinein, aber ohne den Schlüssel kommt man nicht wieder heraus. Mit dem Schlüssel bleibt das Tor für eine Weile in beide Richtungen offen — wie lange genau, weiß niemand.
+
+Die Welt selbst ist düster und korrumpiert. Sie ist von einem ewigen Nebel bedeckt, es gibt keine echten Tage oder Nächte. Leuchtende Kreaturen jagen Seelen. Die Bewohner sind Dämonen und Seelen. Die Städte sind karg und trist. Es gibt Erntefelder, auf denen Seelen ankommen, und eine Festung, die von Ohoriak beansprucht wurde.
+
+Abyssalis ist geprägt von Ruinen, Kristallen, seltsamen Bäumen und einem Tempel. In den Narben, einem Gebiet mit Kristallen und Statuen, verändert sich die Welt ständig — selbst Vögel fallen von der Decke. Die Welt wird von Vorgul'tar beherrscht.
+
+Die Götter, die in Abyssalis eingesperrt sind, haben ihren Verstand verloren. Die Magie wird aus der Splitterwelt gezogen. Wer sich zu lange in Abyssalis aufhält, spürt den Einfluss der Welt — selbst mit Schutzamuletten, die Vasul der Gruppe gegeben hat.
 
 ## Beziehungen und Verbindungen
 
-- **[Lindo Laut](/characters/lindo_laut.md):** Sein Dämon ist ein abgetrennter Teil Vasuls, der sich in der Splitterwelt befand. Lindo Laut hat einen Beschwörungsstab, mit dem er Portale dorthin öffnen kann, und er hat bereits Seelen in die Splitterwelt geschickt. [P-31a][P-43a] In der Zwischenwelt zwischen den Ebenen traf er auf einen Teil Vasuls, der ihm half. [P-43b]
-- **[Lunara Velora](/characters/lunara_velora.md):** Sie kann die Splitterwelt temporär herbeirufen, um das Gefechtsfeld zu shiften („Splitterwelt-Sphäre“). [P-34][P-41] Ihre Verbindung wird durch den Neumond beeinflusst und kann ihre Zauber unkontrolliert verstärken. [P-41] Sie spricht die Sprache der Splitterwelt und hat Erinnerungen an deren Himmelslichter. [P-38][P-41]
-- **[Vasul](/deities/vharzul.md):** Der alte Gott ist in der Splitterwelt gefangen und versucht durch seinen Teil in Lindo Laut zu entkommen. [P-37a] Er versprach, Liams Seele von einem der anderen gefangenen Götter zurückzuholen. [P-44]
-- **Ehrenfels:** Ein dauerhaftes Portal in der Arena der Stadt verbindet die materielle Welt direkt mit der Splitterwelt und ermöglichte den Einfall von Dämonen, was die Katastrophe von Ehrenfels auslöste. [P-46][S1-02-Ab]
-- **Nerashs Ritual:** Das Ritual zur endgültigen Zerstörung Vasuls erfordert eine Reise in die Splitterwelt. [P-37a]
+- **Vasul**: Die Splitterwelt scheint mit Vasul und der alten Magie verbunden zu sein. Vasul gibt der Gruppe Schutzamulette für die Reise nach Abyssalis.
+- **Vorgulta/Vorgul'tar**: Einer der alten Götter, der in Abyssalis eingesperrt ist und die Welt beherrscht.
+- **Nerash**: Ein Gott, der der Gruppe den Weg nach Abyssalis weist — zu den Szenen des Wahnsinns, zu den lila Bergen, wo ein Zauber gewirkt werden kann, um den Teil von Vasul aus Lindo Laut zu vertreiben.
+- **Lindo Laut**: Besitzt den Schlüssel zum Tor nach Abyssalis. Sein Dämon (ein Teil von Vasul) stammt aus der Splitterwelt.
+- **Lunara**: Kann mit ihren Runen die Splitterwelt öffnen. Sie will nach Abyssalis reisen, um ihren Bruder zu retten.
+- **Nox**: Erstellt mit Voras ein Portal ins Abyssalis.
+- **Tyrael**: In seinen Gedanken erscheint Abyssalis als Herkunft von Valsor.
+- **Slix**: Erwähnt, dass Lindo Laut die Seele des sterbenden Mannes direkt nach Abyssalis geschickt hat.
 
 ## Chronologie
 
-[P-24] **Vor der Kampagne:** Die Splitterwelt entsteht im Götterkrieg als Gefängnis für die alten Götter. Alte Schriften berichten von einer „Welt des Schreckens“, aus der Überlebende mit großer Macht zurückkehren. [1]
-[P-26] **Session 2 (2025-10-14):** In [Tyrael](/npcs/tyrael.md) verborgenen Erinnerungen findet Lindo Laut den Namen der Splitterwelt als Herkunft von Basul. [2]
-[P-31a] **Session 3/4 (2025-11-25):** Lindo Laut schickt die Seele eines Sterbenden direkt in die Splitterwelt – eine seiner Aufgaben. [3] Ein absorbierendes Wesen aus der Splitterwelt wird gesichtet; [4] seine Anwesenheit gilt als Gefahr für Reisende.
-[P-31b] **Session 5 (2026-01-20):** [Lunara Velora](/characters/lunara_velora.md) aktiviert ihre Runen und bringt temporär die Splitterwelt in die materielle Ebene, um die Untoten erstarren zu lassen. Slicks kommentiert: „Wir sind zu Hause.“ [5]
-[P-34] **Session 6/7 (2026-02-17):** Die Gruppe bespricht, mit dem Stab in die Splitterwelt zu reisen, um Vasul zu zerstören. Lunara nutzt die Splitterwelt erneut zur Täuschung von Slicks. [6][7]
-[P-37a] **Session 9 (2026-03-10):** Die Gruppe durchquert die Zwischenebene, erreicht das Tor zur Splitterwelt und kämpft gegen eine Schattenkreatur, deren Seele nach dem Tod dorthin gezogen wird. [9]
-[P-37b] **Session 10 (2026-03-18):** Lunara spricht unfreiwillig die Sprache der Splitterwelt und zwingt damit gegnerische Soldaten zur Aufgabe. [10]
-[P-38] **Session 11 (2026-03-24):** Der Plan konkretisiert sich: Reise in die Splitterwelt, um Liam zu retten und Vasuls Teile zu bekämpfen. [11]
-[P-40] **Session 13 (2026-03-31):** Die Gruppe betritt die Splitterwelt direkt über Vasuls Festung. Sie sehen lila Berge, bunte Himmelslichter und die Erntefelder. Vasul erklärt, dass Liams Essenz im Besitz eines anderen alten Gottes ist. [13]
-[P-41] **Session 15 (2026-05-06):** Erste Begegnung mit der Seelenwacht (Richter, Schinder) in der Festung Jalan. [15]
-[P-43a] **Session 16 (2026-05-13):** Holodarn öffnet ein Portal, das die Gruppe zurück in die materielle Welt bringen könnte. Eine angelartige Gestalt (ein Seraph) zerstört jedoch ein Pentagramm-artiges Portal und droht der Gruppe. [16]
-[P-43b] **Session 17–20 (2026-05-19 bis 2026-07-21):** Die Gruppe bewegt sich durch verschiedene Regionen der Splitterwelt – Narbenfelder, Statuen, Sandwurm, und erreicht schließlich den Tempel mit dem Splitter. Die Umgebung zehrt an ihren Kräften. [17][19][20] Am Ende bricht die Höhle zusammen und die Gruppe entkommt durch ein Portal. [20]
-[P-44] **Session 21–22 (2026-08-04):** Liam ist befreit, sein Aufenthalt in der Splitterwelt hat ihn tief geprägt und ihm seltsame Fähigkeiten verliehen. [21] Die Gilde räumt ein, dass das Portal in Ehrenfels die Katastrophe verursachte. [22]
+- **Session 2025-09-30**: Die Gruppe erfährt erstmals von der Splitterwelt als Zwischenwelt zwischen den Circles Below und den Hallows Above, entstanden durch den Krieg der Götter. Es gibt ein Tor zu einer vergessenen Welt namens Abyssalis, einer alten Bastion der alten Götter, in der einige alte Götter gefangen sein sollen.
+- **Session 2025-10-14**: In Tyraels Gedanken erscheint Abyssalis als Herkunft von Valsor.
+- **Session 2025-11-25**: Die Gruppe begegnet einer Kreatur aus der Splitterwelt. Slix erwähnt, dass Lindo Laut die Seele eines sterbenden Mannes direkt nach Abyssalis geschickt hat.
+- **Session 2026-01-20**: Lunara öffnet mit ihren Runen die Splitterwelt. Die Untoten sind dort gefangen und können vernichtet werden.
+- **Session 2026-02-17**: Nerash weist die Gruppe im Traum den Weg nach Abyssalis — zu den Szenen des Wahnsinns, zu den lila Bergen, um den Teil von Vasul aus Lindo Laut zu vertreiben.
+- **Session 2026-03-03**: Abyssalis wird als kosmologische Ebene beschrieben, in der Vorgulta und andere Götter eingesperrt sind. Die Götter dort haben ihren Verstand verloren.
+- **Session 2026-03-10**: Die Gruppe erreicht die Splitterwelt durch ein Portal in Breska. Sie sieht das Tor zu Abyssalis. Lunara hat einen emotionalen Moment, als sie das Tor berührt und eine Stimme ihren Namen ruft.
+- **Session 2026-03-24**: Nox und Voras erstellen ein Portal ins Abyssalis. Lunara will dorthin reisen, um ihren Bruder zu retten und die Teile von Vasul zu bekämpfen.
+- **Session 2026-03-31**: Die Gruppe betritt Abyssalis. Sie erhält von Vasul Schutzamulette. Die Welt ist geprägt von Ruinen, Erntefeldern und vier alten Göttern.
+- **Session 2026-04-07**: Abyssalis wird als Handlungsort erwähnt, wird aber in dieser Session nicht besucht.
+- **Session 2026-04-14**: Die Gruppe ist seit einer Woche in Abyssalis. Die Welt ist von einem ewigen Nebel bedeckt, es gibt keine echten Tage oder Nächte. Die Stadt, in der sie sich aufhalten, ist karg und trist.
+- **Session 2026-05-06**: Die Gruppe ist in Abyssalis gestrandet und sucht nach einem Weg hinaus. Es kommt zu einem Crossover mit einer anderen Gruppe (Kip, Dante und Miko), die ebenfalls in Abyssalis gestrandet ist.
+- **Session 2026-05-13**: Die Gruppe erfährt von der Narbe, einem Gebiet in den Erntefeldern. Eine Kreatur öffnet ein Portal, um Abyssalis zu verlassen.
+- **Session 2026-05-19**: Die Gruppe ist weiterhin in Abyssalis. Die andere Gruppe hat sich entschieden, dem Richter zur Seite zu eilen und sich der Gruppe anzuschließen.
+- **Session 2026-06-10**: Abyssalis wird als Gefängniswelt beschrieben, ein Demiplane, das als Schattenwelt zur Prime World existiert. Die Gruppe ist hier, um Vorgultar zu finden.
+- **Session 2026-06-16**: Die Gruppe befindet sich in den Narben, einem Gebiet mit Kristallen und Statuen. Die Welt verändert sich, Vögel fallen von der Decke.
+- **Session 2026-07-21**: Die Gruppe flieht durch ein Portal nach Breska und verlässt Abyssalis.
+- **Session 2026-07-29**: Die Gruppe ist zurück in der normalen Welt und erleichtert, Abyssalis verlassen zu haben.
+- **Session 2026-08-04**: Die Gruppe ist aus Abyssalis zurückgekehrt. Liam wurde geopfert, um zu überleben. Die Schriftrolle wurde verwendet, um den Teil von Vasul aus Lindo Laut zu vertreiben.
+- **Session 2026-08-12**: Vitius erwähnt Abyssalis als Beweis für die Gefährlichkeit der Gruppe — sie sind aus dem Gefängnis der alten Götter zurückgekehrt.
 
 ## Offene Fragen
 
-- Wer oder was genau die alten Götter in der Splitterwelt gefangen hat – die neuen Götter oder eine dritte Macht?
-- Ob die riesigen fliegenden Raubtiere, die Lunara in ihrer Erinnerung sah, noch immer existieren.
-- Welche Konsequenzen die Zerstörung Vasuls für die Stabilität der Splitterwelt hätte.
-- Welche anderen alten Götter neben Vasul und Basul noch in der Splitterwelt gefangen sind (einer wird als Besitzer von Liams Essenz genannt, bleibt aber namentlich unerwähnt). [P-44]
-- Weshalb Lunara Velora eine derart tiefe Verbindung zur Splitterwelt hat und ob sie von den alten Göttern abstammt.
+- Was genau ist die Narbe in den Erntefeldern, und welche Bedeutung hat sie für die Gruppe?
+- Was ist mit Lunaras Bruder geschehen, und konnte er gerettet werden?
+- Welche Rolle spielen die vier alten Götter in Abyssalis, und was ist mit Vorgulta/Vorgul'tar?
+- Was ist mit den Szenen des Wahnsinns und den lila Bergen gemeint, zu denen Nerash die Gruppe geschickt hat?
+- Was ist mit Liam geschehen, der geopfert wurde, damit die Gruppe überleben konnte?
 
 ## Belege
 
-[P-24] Session 2025-09-30 @ 01:50:02 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
-[P-26] Session 2025-10-14 @ 01:59:42 (https://www.youtube.com/watch?v=cUtz87UCHu4)
-[P-31a] Session 2025-11-25 @ 01:56:17 (https://www.youtube.com/watch?v=wd5R4fJfngY)
-[P-31b] Session 2025-11-25 @ 00:09:04 (https://www.youtube.com/watch?v=wd5R4fJfngY)
-[P-34] Session 2026-01-20 @ 01:34:52 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
-[P-37a] Session 2026-02-17 @ 01:35:05 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
-[P-37b] Session 2026-02-17 @ 02:06:13 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
-[P-38] Session 2026-02-24 @ 01:43:00 (https://www.youtube.com/watch?v=WOFArbwDDIQ)
-[P-40] Session 2026-03-10 @ 01:22:41 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
-[P-41] Session 2026-03-18 @ 01:31:21 (https://www.youtube.com/watch?v=HHXxsASLrbQ)
-[P-43a] Session 2026-03-24 @ 01:45:33 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
-[P-43b] Session 2026-03-24 @ 00:37:46 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
-[P-44] Session 2026-03-31 @ 01:10:31 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
-[P-46] Session 2026-04-09 @ 00:38:04 (https://www.youtube.com/watch?v=vcGkejr8_nI)
-[P-48] Session 2026-05-06 @ 00:07:35 (https://www.youtube.com/watch?v=MB4quhDWsQE)
-[P-49] Session 2026-05-13 @ 00:07:02 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
-[P-50] Session 2026-05-19 @ 00:01:04 (https://www.youtube.com/watch?v=xEcGJeaNixI)
-[P-53] Session 2026-06-10 @ 00:21:31 (https://www.youtube.com/watch?v=_3tLSiT1tck)
-[P-54] Session 2026-06-16 @ 00:04:00 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
-[P-55] Session 2026-07-21 @ 00:00:42 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
-[S1-02-Aa] Session 2026-08-04 @ 00:10:40 (https://www.youtube.com/watch?v=qRj2t3wQHfs)
-[S1-02-Ab] Session 2026-08-04 @ 00:27:19 (https://www.youtube.com/watch?v=qRj2t3wQHfs)
+1. Session 2025-09-30 @ 01:50:02 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+2. Session 2025-09-30 @ 01:50:28 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+3. Session 2025-10-14 @ 01:59:42 (https://www.youtube.com/watch?v=cUtz87UCHu4)
+4. Session 2025-11-25 @ 00:08:50 (https://www.youtube.com/watch?v=wd5R4fJfngY)
+5. Session 2025-11-25 @ 01:56:17 (https://www.youtube.com/watch?v=wd5R4fJfngY)
+6. Session 2026-01-20 @ 01:34:52 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
+7. Session 2026-02-17 @ 00:57:10 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
+8. Session 2026-03-03 @ 00:41:22 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
+9. Session 2026-03-10 @ 01:23:39 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
+10. Session 2026-03-10 @ 01:29:02 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
+11. Session 2026-03-24 @ 00:37:51 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
+12. Session 2026-03-31 @ 00:06:55 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
+13. Session 2026-04-07 @ 02:01:31 (https://www.youtube.com/watch?v=MAuQPMNY548)
+14. Session 2026-04-09 @ 01:43:36 (https://www.youtube.com/watch?v=vcGkejr8_nI)
+15. Session 2026-04-14 @ 00:03:19 (https://www.youtube.com/watch?v=1Jyu92P7_Fg)
+16. Session 2026-05-06 @ 00:00:23 (https://www.youtube.com/watch?v=MB4quhDWsQE)
+17. Session 2026-05-13 @ 01:07:22 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
+18. Session 2026-05-19 @ 00:00:45 (https://www.youtube.com/watch?v=xEcGJeaNixI)
+19. Session 2026-06-10 @ 00:04:00 (https://www.youtube.com/watch?v=_3tLSiT1tck)
+20. Session 2026-06-16 @ 00:03:15 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
+21. Session 2026-07-21 @ 00:00:42 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
+22. Session 2026-07-29 @ 00:06:27 (https://www.youtube.com/watch?v=umGyKLkefJI)
+23. Session 2026-08-04 @ 00:16:42 (https://www.youtube.com/watch?v=qRj2t3wQHfs)
+24. Session 2026-08-12 @ 00:22:44 (https://www.youtube.com/watch?v=piUv11DCwDw)

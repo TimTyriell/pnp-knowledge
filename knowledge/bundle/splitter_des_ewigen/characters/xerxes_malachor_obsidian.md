@@ -1,8 +1,8 @@
 ---
 type: Character
 title: Xerxes Malachor Obsidian
-description: Xerxes Malachor Obsidian ist ein Infernis-Schurke mit dämonischem Erbe,
-  der im Kampf mit zwei Dolchen und einem Seil agiert. Er beherrscht…
+description: Xerxes Malachor Obsidian ist ein Infernis-Schurke, der sich neu der Gruppe
+  angeschlossen hat. Seine Vergangenheit ist von einer Tragödie ge…
 tags:
 - characters
 timestamp: '2026-04-09T00:00:00Z'
@@ -11,15 +11,15 @@ id: CHAR_XERXES_MALACHOR_OBSIDIAN
 
 # Xerxes Malachor Obsidian
 
-Xerxes Malachor Obsidian ist ein **Infernis-Schurke** mit dämonischem Erbe, der im Kampf mit zwei Dolchen und einem Seil agiert. Er beherrscht den Schattenschritt – eine Fähigkeit, die in verzerrten Umgebungen zunächst versagen kann, aber durch den Einsatz von Stresspunkten gelingt. Ursprünglich diente er einem König, lehnte sich jedoch gegen die Ausbeutung auf und schloss sich der Gruppe an, um ein von Dämonen bewachtes Portal zu zerstören.
+Xerxes Malachor Obsidian ist ein Infernis-Schurke, der sich neu der Gruppe angeschlossen hat. Seine Vergangenheit ist von einer Tragödie geprägt; nähere Umstände sind bislang nicht bekannt. Sein erklärtes Ziel ist der Kampf gegen Dämonen, den er mit einer Kombination aus Schattenmagie und Klingen austrägt.
 
 ## Rolle und Fähigkeiten
 
-Xerxes ist ein **nahkampforientierter Kämpfer**, der seine beiden Dolche sowohl im direkten Gefecht als auch als Wurfwaffen einsetzt. Ein gezielter Dolchwurf kann Dämonen fesseln und so taktische Vorteile schaffen. Seine **Schattenschritt**-Technik erlaubt ihm kurze Teleportationen, allerdings zeigte sich in einer verzerrten Umgebung, dass diese Fähigkeit nicht immer zuverlässig wirkt – erst durch Stresspunkte gelang die Anwendung. Das mitgeführte Seil dient vermutlich Kletter- oder Fesselmanövern. Im Kampf gegen die Dämonen des Portals half er entscheidend mit, das Portal zu zerstören.
+Xerxes tritt als effektiver Kämpfer gegen dämonische Bedrohungen auf. Seine Kampfweise verbindet Schattenmagie mit Klingenwaffen, und er beherrscht Teleportation, um sich blitzschnell ins Gefecht zu bewegen. Im ersten dokumentierten Einsatz zeigte er seine Fähigkeiten gleich mehrfach: Einen großen Dämon tötete er mit einem Doppelklingenangriff, eine fliegende Kreatur erledigte er mit einem gezielten Dolchwurf.
 
-## Hintergrund
+## Verlauf
 
-Xerxes diente einst einem König, rebellierte aber gegen dessen ausbeuterische Herrschaft. Dieses Ereignis trieb ihn in die Schatten und formte ihn zu einem abtrünnigen Schurken. Sein dämonisches Erbe könnte eine Quelle seiner übernatürlichen Fähigkeiten wie dem Schattenschritt sein, auch wenn die genauen Ursprünge dieses Erbes bislang nicht näher bekannt sind.
+Über Xerxes' Hintergrund und seine Beweggründe ist bisher wenig bekannt. Fest steht, dass er sich der Gruppe kürzlich angeschlossen hat und sich bereits im ersten gemeinsamen Kampf als wertvolle Verstärkung erwies.
 
 # Belege
 

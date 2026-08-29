@@ -1,8 +1,8 @@
 ---
 type: Location
 title: Dungeon unter dem Anwesen
-description: Ein unerkundeter, tiefer gelegener Bereich unter dem Keller, zu dem Horatio
-  mit dem Amulett Zugang gewährt.
+description: Ein unerforschter Dungeon unter dem Anwesen, zu dem Horatio den Zugang
+  zeigt. Die Gruppe plant, ihn später zu erkunden.
 tags:
 - locations
 timestamp: '2025-11-14T00:00:00Z'
@@ -10,7 +10,7 @@ id: LOC_DUNGEON_UNTER_DEM_ANWESEN
 subtype: Dungeon
 ---
 
-Ein unerkundeter, tiefer gelegener Bereich unter dem Keller, zu dem [Horatio](/npcs/horatio.md) mit dem Amulett Zugang gewährt.
+Ein unerforschter Dungeon unter dem Anwesen, zu dem [Horatio](/npcs/horatio.md) den Zugang zeigt. Die Gruppe plant, ihn später zu erkunden.
 
 # Belege
 

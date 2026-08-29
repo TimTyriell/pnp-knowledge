@@ -57,6 +57,35 @@ def _fuzzy_match(a: CanonicalEntity, b: CanonicalEntity) -> bool:
     return SequenceMatcher(None, slug_a, slug_b).ratio() >= FUZZY_RATIO
 
 
+def _reanchor_to_retired(
+    concept_id: str,
+    entity_type: EntityType,
+    retired: list[tuple[str, EntityType]],
+    blocked: list[set[str]],
+) -> str | None:
+    """Fuzzy-match a brand-new default concept id against the retired ledger.
+
+    Only reached when no override matched (see ``resolve_entities``): the
+    extracted wording has never been recorded as an alias of anything live
+    or retired. A slug this close to a *retired* id is very likely the same
+    being under session-dependent LLM rewording rather than a coincidence,
+    so it reanchors instead of minting a new concept. Same fuzzy bar and
+    identity-space rule as ``merge_near_duplicates`` — see its docstring.
+    """
+
+    slug = concept_id.rsplit("/", 1)[-1]
+    person = entity_type in PERSON_TYPES
+    for rid, rtype in retired:
+        if not (person and rtype in PERSON_TYPES) and entity_type != rtype:
+            continue
+        pair = {concept_id, rid}
+        if any(len(pair & group) >= 2 for group in blocked):
+            continue
+        if SequenceMatcher(None, slug, rid.rsplit("/", 1)[-1]).ratio() >= FUZZY_RATIO:
+            return rid
+    return None
+
+
 def merge_near_duplicates(
     entities: list[CanonicalEntity],
     never_merge: list[set[str]] | None = None,
@@ -222,10 +251,44 @@ def _load_alias_overrides(registry_path: Path) -> dict[str, str]:
             continue
         for alias in entry.get("aliases") or []:
             overrides[str(alias).strip().lower()] = concept_id
+    # Names once recorded on a now-retired concept still resolve to it — see
+    # write_registry's 'retired:' ledger. A live concept's own alias always
+    # wins on a name collision, since this loop runs after the one above and
+    # never clobbers an existing key.
+    for entry in data.get("retired") or []:
+        concept_id = str(entry.get("concept_id", "")).strip()
+        if not concept_id:
+            continue
+        for name in [entry.get("canonical_name", ""), *(entry.get("aliases") or [])]:
+            name = str(name).strip().lower()
+            if name and name not in overrides:
+                overrides[name] = concept_id
     # 'merge:' overrides take precedence for any explicit fold-ins.
     for raw_name, concept_id in (data.get("merge") or {}).items():
         overrides[str(raw_name).strip().lower()] = str(concept_id).strip()
     return overrides
+
+
+def _load_retired(registry_path: Path) -> list[tuple[str, EntityType]]:
+    """Concepts once live, now absent — the ledger ``write_registry`` keeps
+    so a later reword can still be fuzzy-reanchored (see
+    ``_reanchor_to_retired``). Generated-only: nothing under this key is
+    ever read from ``entity_rules.yaml``.
+    """
+
+    if not registry_path.exists():
+        return []
+    data = yaml.safe_load(registry_path.read_text(encoding="utf-8")) or {}
+    out: list[tuple[str, EntityType]] = []
+    for entry in data.get("retired") or []:
+        cid = str(entry.get("concept_id", "")).strip()
+        try:
+            etype = EntityType(str(entry.get("type", "")).strip())
+        except ValueError:
+            continue
+        if cid:
+            out.append((cid, etype))
+    return out
 
 
 def _load_never_merge_pairs(registry_path: Path) -> list[set[str]]:
@@ -380,6 +443,8 @@ def resolve_entities(
     pinned_names = _load_canonical_names(registry_path)
     alias_blocks = _load_alias_blocks(registry_path)
     splits = _load_splits(registry_path)
+    retired = _load_retired(registry_path)
+    never_merge_pairs = _load_never_merge_pairs(registry_path)
     dropped = 0
     # Also match registry keys after slugification, so "Lindo  Laut" folds
     # into a registry entry written as "lindo laut".
@@ -400,8 +465,15 @@ def resolve_entities(
                 or splits.get((name_key, session_id))
                 or overrides.get(name_key)
                 or slug_overrides.get(slugify(mention.name))
-                or _default_concept_id(mention.type, mention.name)
             )
+            if concept_id is None:
+                default_id = _default_concept_id(mention.type, mention.name)
+                concept_id = (
+                    _reanchor_to_retired(
+                        default_id, mention.type, retired, never_merge_pairs
+                    )
+                    or default_id
+                )
             if concept_id in ignored:
                 dropped += 1
                 continue
@@ -473,9 +545,7 @@ def resolve_entities(
         if blocked:
             entity.aliases = [a for a in entity.aliases if a.lower() not in blocked]
 
-    resolved = merge_near_duplicates(
-        list(entities.values()), _load_never_merge_pairs(registry_path)
-    )
+    resolved = merge_near_duplicates(list(entities.values()), never_merge_pairs)
     log.info(
         "[resolve] %d mentions -> %d canonical entities",
         sum(len(e.entities) for e in extractions.values()),
@@ -491,11 +561,20 @@ def write_registry(entities: list[CanonicalEntity], registry_path: Path) -> None
     function never clobbers them: existing aliases are preserved and any
     newly discovered name variants are appended. The optional ``merge:``
     mapping is carried through untouched.
+
+    A concept absent from ``entities`` this run (renamed, or its mentions
+    dropped) does not vanish: it moves to ``retired:``, keeping its
+    concept_id/type/canonical_name/aliases so a later reword can still
+    fuzzy-reanchor to it (``_reanchor_to_retired``). Before this ledger
+    existed, retirement erased the very alias memory that could have caught
+    the next rename — see docs/architecture for the 2026-08 incident.
     """
 
     merge: dict[str, str] = {}
     preserved_aliases: dict[str, list[str]] = {}
     preserved_important: set[str] = set()
+    existing_entities: list[dict] = []
+    existing_retired: list[dict] = []
     # Any other hand-maintained top-level key (``ignore:``, ``never_merge:``,
     # …) must survive: this function rewrites the file on every run, so a key
     # it does not know about would be silently deleted and the setting lost.
@@ -512,10 +591,12 @@ def write_registry(entities: list[CanonicalEntity], registry_path: Path) -> None
         extra_keys = {
             k: v
             for k, v in existing.items()
-            if k not in ("merge", "entities") and k not in migrated
+            if k not in ("merge", "entities", "retired") and k not in migrated
         }
+        existing_entities = existing.get("entities") or []
+        existing_retired = existing.get("retired") or []
         # Keep the hand-maintained aliases on each concept.
-        for entry in existing.get("entities") or []:
+        for entry in existing_entities:
             cid = str(entry.get("concept_id", "")).strip()
             if cid and entry.get("aliases"):
                 preserved_aliases[cid] = [str(a).strip() for a in entry["aliases"]]
@@ -546,12 +627,33 @@ def write_registry(entities: list[CanonicalEntity], registry_path: Path) -> None
         if e.important or e.concept_id in preserved_important:
             entry["important"] = True
         inventory.append(entry)
+
+    current_ids = {e.concept_id for e in entities}
+    ledger: dict[str, dict] = {}
+    for entry in existing_retired:
+        cid = str(entry.get("concept_id", "")).strip()
+        if cid:
+            ledger[cid] = entry
+    for entry in existing_entities:
+        cid = str(entry.get("concept_id", "")).strip()
+        if cid and cid not in current_ids:
+            ledger[cid] = {
+                "concept_id": cid,
+                "type": entry.get("type", ""),
+                "canonical_name": entry.get("canonical_name", ""),
+                "aliases": entry.get("aliases", []),
+            }
+    for cid in current_ids:
+        ledger.pop(cid, None)  # live again -> no longer retired
+    retired_out = [ledger[cid] for cid in sorted(ledger)]
+
     doc = {
         # Omitted once the rules have moved out, so the generated file does not
         # sprout an empty key that invites hand-edits it would then eat.
         **({"merge": merge} if merge else {}),
         **extra_keys,
         "entities": inventory,
+        **({"retired": retired_out} if retired_out else {}),
     }
     registry_path.parent.mkdir(parents=True, exist_ok=True)
     header = (
@@ -567,6 +669,10 @@ def write_registry(entities: list[CanonicalEntity], registry_path: Path) -> None
         "#   important: true  forces the deep synthesis tier for entities the\n"
         "#                    automatic rules underrate (Characters and\n"
         "#                    Deities are always deep anyway)\n"
+        "#\n"
+        "# retired: — concepts once live, now absent (renamed or dropped).\n"
+        "# Kept so a later reword can still reanchor to the same concept_id\n"
+        "# instead of minting a new one. Generated only; never hand-edit.\n"
     )
     registry_path.write_text(
         header + yaml.safe_dump(doc, sort_keys=False, allow_unicode=True),

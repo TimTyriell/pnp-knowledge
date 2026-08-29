@@ -1,8 +1,8 @@
 ---
 type: Faction
 title: Gilde der Schilde
-description: Die Gilde der Schilde ist eine kleine, aber angesehene Gilde in der Stadt
-  Tiefwasser. Sie hat sich auf Kundschaftermissionen spezialisiert,…
+description: Die Gilde der Schilde ist eine kleine, aber lukrative Gilde in Tiefwasser.
+  Sie bietet Aufträge gegen Orks und andere Bedrohungen an. Trotz…
 tags:
 - factions
 timestamp: '2026-03-18T00:00:00Z'
@@ -10,12 +10,18 @@ id: FACTION_GILDE_DER_SCHILDE
 subtype: Gilde
 ---
 
-Die **Gilde der Schilde** ist eine kleine, aber angesehene Gilde in der Stadt Tiefwasser. Sie hat sich auf Kundschaftermissionen spezialisiert, insbesondere in Richtung der Siedlungsgebiete der Orks, und pflegt einen soliden Ruf.
+# Gilde der Schilde
 
-## Aufträge und Beziehungen
+Die **Gilde der Schilde** ist eine kleine, aber lukrative Gilde in [Tiefwasser](/locations/tiefwasser.md). Sie bietet Aufträge gegen Orks und andere Bedrohungen an. Trotz ihrer geringen Größe scheint sie einträglich zu sein – zumindest legt ihre Beschreibung als lukrativ nahe, dass ihre Aufträge gut bezahlt sind.
 
-Die Gilde trat an die Gruppe heran, um ihr einen Auftrag gegen die Silberkerne anzubieten – eine Bedrohung, die offenbar in das Interessengebiet der Gilde fällt. Der genaue Inhalt des Auftrags sowie die Beweggründe der Gilde sind bislang nur oberflächlich bekannt, doch die Verbindung zwischen der Kundschaftertätigkeit gen Orkland und der Gegnerschaft zu den Silberkernen deutet auf eine strategische Ausrichtung hin.
+## Aufträge
+
+Die Gilde vergibt Aufträge gegen Orks und weitere Gefahren in und um Tiefwasser. Ein konkreter Auftrag, den sie ausschrieb, betraf ein Piratenlager: Die Gruppe wurde von [Lara](/npcs/lara.md) eingeladen, diesen Auftrag anzunehmen und das Lager anzugreifen.
+
+## Beziehungen
+
+[Lara](/npcs/lara.md) ist Mitglied der Gilde der Schilde. Über sie entstand der Kontakt zwischen der Gruppe und der Gilde; Lara warb die Gruppe persönlich für den Auftrag gegen das Piratenlager an. Weitere Mitglieder sind aus den vorliegenden Belegen nicht bekannt.
 
 # Belege
 
-[P-41] Session 2026-03-18, 00:26:31 – [YouTube](https://www.youtube.com/watch?v=HHXxsASLrbQ)
+[P-41] Session 2026-03-18 @ 00:26:31 – https://www.youtube.com/watch?v=HHXxsASLrbQ

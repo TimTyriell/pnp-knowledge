@@ -3,6 +3,8 @@ __pycache__/
 .venv/
 .env
 .cache/
+.test-cache/
+.test-bundle/
 state/
 build/
 dist/

@@ -1,15 +1,15 @@
 ---
 type: NPC
 title: Familie Schmid
-description: Die Bauernfamilie Schmid besitzt einen Hof mit Holz und Tieren. Sie stellt
-  den Helden Holz für Palisaden zur Verfügung und beginnt sofort m…
+description: Die Familie Schmid ist eine Bauernfamilie im Dorf Brechka, die Tiere
+  und Holz besitzt. Sie stellen der Gruppe acht Palisaden für die Vertei…
 tags:
 - npcs
 timestamp: '2025-04-09T00:00:00Z'
 id: NPC_FAMILIE_SCHMID
 ---
 
-Die Bauernfamilie Schmid besitzt einen Hof mit Holz und Tieren. Sie stellt den Helden Holz für Palisaden zur Verfügung und beginnt sofort mit dem Anfertigen von vier (später acht) Barrikaden, die später als Schutzmauern dienen.
+Die Familie Schmid ist eine Bauernfamilie im [Dorf](/locations/dorf.md) [Brechka](/locations/breska.md), die Tiere und Holz besitzt. Sie stellen der Gruppe acht Palisaden für die Verteidigung her.
 
 # Belege
 

@@ -1,16 +1,16 @@
 ---
 type: NPC
 title: Esua
-description: Eine der beiden Seelen in Lindo Lauts Amulett, die ihn beständig drängt,
-  die Macht Varsuls an sich zu reißen und sich auf den Thron zu setz…
+description: Esua ist eine der Stimmen im Amulett von Lindo Laut. Sie beschimpft ihn
+  als erbärmlich und Feigling, als er sich weigert, ein Tier zu opfer…
 tags:
 - npcs
-timestamp: '2025-09-02T00:00:00Z'
+timestamp: '2025-08-20T00:00:00Z'
 id: NPC_ESUA
 ---
 
-Eine der beiden Seelen in [Lindo Lauts Amulett](/items/amulett_des_heiligen_duran.md), die ihn beständig drängt, die Macht [Varsuls](/deities/vharzul.md) an sich zu reißen und sich auf den Thron zu setzen. Wird von [Lindo Lauts](/characters/lindo_laut.md) Willenskraft auf dem Thron endgültig ausgelöscht.
+Esua ist eine der Stimmen im [Amulett von Lindo Laut](/items/amulett_des_heiligen_duran.md). Sie beschimpft ihn als erbärmlich und Feigling, als er sich weigert, ein Tier zu opfern.
 
 # Belege
 
-[P-19] Session 2025-09-02 @ 01:49:20 (https://www.youtube.com/watch?v=TLZOH7TlGhk)
+[P-18] Session 2025-08-20 @ 00:07:34 (https://www.youtube.com/watch?v=-XbO3FLSL_I)

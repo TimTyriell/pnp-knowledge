@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Kuatau
-description: Die Kuatau sind amphibische Fischmenschen, die mit Speeren, Netzen und
-  Schleudern kämpfen und von Magiern unterstützt werden. Sie wurden vo…
+description: Amphibische Wesen, die Windung angreifen. Sie werden von einer Sumpfhexe
+  getäuscht und wollen nur nach Hause. Sie können Menschen in Kuatau…
 tags:
 - npcs
 timestamp: '2025-07-29T00:00:00Z'
@@ -10,8 +10,8 @@ id: NPC_KUATAU
 subtype: Volk
 ---
 
-Die Kuatau sind amphibische Fischmenschen, die mit Speeren, Netzen und Schleudern kämpfen und von Magiern unterstützt werden. Sie wurden von der [Sumpfhexe](/npcs/lenra.md) manipuliert, die ihnen Versprechungen machte und Amulette gab, um ein Portal zu öffnen. In Wahrheit suchen sie nur ihre angestammte Heimat, die nun von Menschen bewohnt ist. Durch die Überzeugungsarbeit der Helden erkennen sie die Täuschung und werden zu widerwilligen Verbündeten.
+Amphibische Wesen, die [Windung](/locations/windung.md) angreifen. Sie werden von einer [Sumpfhexe](/npcs/lenra.md) getäuscht und wollen nur nach Hause. Sie können Menschen in Kuatau verwandeln. Nach der Verhandlung verlassen sie die Insel für ein Jahr.
 
 # Belege
 
-[P-16] Session 2025-07-29 @ 01:15:00 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
+[P-16] Session 2025-07-29 @ 00:10:19 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)

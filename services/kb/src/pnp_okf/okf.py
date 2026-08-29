@@ -58,14 +58,29 @@ def render_document(frontmatter: dict[str, object], body: str) -> str:
     return f"---\n{yaml_block}\n---\n\n{body.strip()}\n"
 
 
+def write_if_changed(path: Path, content: str) -> bool:
+    """Write ``content`` to ``path`` only if it differs. Returns whether it wrote.
+
+    A run that touches nothing still overwrites every file with byte-identical
+    content, which erases mtimes as a signal of what a run actually changed
+    and makes an accidental mass-rewrite indistinguishable from a real one in
+    ``git status``. Skipping identical writes makes both observable again.
+    """
+
+    if path.exists() and path.read_text(encoding="utf-8") == content:
+        return False
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(content, encoding="utf-8")
+    return True
+
+
 def write_concept(
     bundle_dir: Path, concept_id: str, frontmatter: dict[str, object], body: str
 ) -> Path:
-    """Write ``<bundle_dir>/<concept_id>.md`` and return its path."""
+    """Write ``<bundle_dir>/<concept_id>.md`` (skipping an unchanged write) and return its path."""
 
     path = bundle_dir / f"{concept_id}.md"
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(render_document(frontmatter, body), encoding="utf-8")
+    write_if_changed(path, render_document(frontmatter, body))
     return path
 
 
@@ -120,7 +135,6 @@ def write_index(
             suffix = f" - {description}" if description else ""
             lines.append(f"* [{title}]({url}){suffix}")
         lines.append("")
-    directory.mkdir(parents=True, exist_ok=True)
     path = directory / "index.md"
-    path.write_text("\n".join(lines).strip() + "\n", encoding="utf-8")
+    write_if_changed(path, "\n".join(lines).strip() + "\n")
     return path

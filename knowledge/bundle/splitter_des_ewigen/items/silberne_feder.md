@@ -1,8 +1,8 @@
 ---
 type: Item
 title: Silberne Feder
-description: Die Silberne Feder war ein magisches Einmal-Objekt, das zunächst als
-  mögliche Ortungsvorrichtung in Erscheinung trat, sich aber als lebensr…
+description: Die Silberne Feder ist ein magisches Artefakt in der Kampagne. Sie dient
+  als teures Tracking-Gerät zur Personenverfolgung und besitzt zugle…
 tags:
 - items
 timestamp: '2026-06-10T00:00:00Z'
@@ -10,19 +10,19 @@ id: ITEM_SILBERNE_FEDER
 subtype: Werkzeug
 ---
 
-# Silberne Feder
+Die **Silberne Feder** ist ein magisches Artefakt in der Kampagne. Sie dient als teures Tracking-Gerät zur Personenverfolgung und besitzt zugleich eine lebensrettende Wirkung, die sich in einem einzigen, letzten Flügelschlag entlädt. Lunara erhielt die Feder von Leandras; später wurde sie ihr von Haloras abgenommen.
 
-Die **Silberne Feder** war ein magisches Einmal-Objekt, das zunächst als mögliche Ortungsvorrichtung in Erscheinung trat, sich aber als lebensrettendes Geschenk von [Leandras](/npcs/lendras.md) an [Lunara](/characters/lunara_velora.md) entpuppte. Nach der Aktivierung löste sie sich auf und war verbraucht.
+## Funktion und Eigenschaften
 
-## Auftauchen und Zweifel
+Lindo Laut erkannte die Feder als ein teures magisches Objekt, das es ermöglicht, Personen zu verfolgen. Sie diente also als eine Art Ortungsgerät.
 
-In der Hand von [Haloras](/npcs/haloras.md) wurde die silberne Feder Lunara gezeigt, wobei Haloras vorgab, sie gefunden zu haben. [Lindo Laut](/characters/lindo_laut.md) erkannte jedoch, dass die Feder als Ortungsvorrichtung dienen konnte – mit ihr hätte die Gruppe verfolgt oder belauscht werden können.[^1] Damit stand das Objekt zunächst unter dem Verdacht, ein Werkzeug der Überwachung zu sein.
+Darüber hinaus zeigte die Feder eine zweite, deutlich mächtigere Eigenschaft: Sie pulsiert, löst sich auf und heilt Lunara, bringt sie damit zurück ins Leben. Dies geschieht in Form eines letzten Flügelschlags, bevor die Feder sich vollständig auflöst und verschwindet.
 
-## Rettung und Verbrauch
+## Herkunft und Verlauf
 
-Tatsächlich stammte die Feder von Leandras. Als Lunara in eine lebensbedrohliche Situation geriet (Sturz), löste sich die Feder in silberne Partikel auf, heilte Wunden und Knochen und vermittelte eine kurze Vision. Danach war die Feder vollständig verbraucht. Lunara dankte Leandras innerlich für die Rettung.[^2]
+Die Feder stammt von Leandras, der sie Lunara übergab. Später wurde Lunara die Feder von Haloras abgenommen. Lindo Laut erkannte in diesem Zusammenhang ihre Funktion. Beim letzten dokumentierten Einsatz verlieh die Feder Lunara ihren letzten Flügelschlag, heilte sie und verschwand dabei endgültig.
 
 # Belege
 
-[^1]: Session 2026-03-03 @ 00:36:06 – <https://www.youtube.com/watch?v=BRUNuNKTeOg>  
-[^2]: Session 2026-06-10 @ 00:12:21 – <https://www.youtube.com/watch?v=_3tLSiT1tck>
+[P-39] Session 2026-03-03 @ 00:35:38 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
+[P-53] Session 2026-06-10 @ 00:12:21 (https://www.youtube.com/watch?v=_3tLSiT1tck)

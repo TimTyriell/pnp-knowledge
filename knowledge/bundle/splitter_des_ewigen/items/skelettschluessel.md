@@ -1,16 +1,16 @@
 ---
 type: Item
 title: Skelettschlüssel
-description: Ein Schlüssel mit einem Totenkopf als Griff, gefunden bei den Goblin-Hinterlassenschaften.
-  Es handelt sich um ein offizielles Daggerheart-I…
+description: Ein Schlüssel mit einem Totenkopf, der von Kaya im Goblinnest gefunden
+  wird. Er könnte zu einer Truhe oder Tür passen.
 tags:
 - items
 timestamp: '2026-07-23T00:00:00Z'
 id: ITEM_SKELETTSCHLUESSEL
-subtype: Artefakt
+subtype: Werkzeug
 ---
 
-Ein Schlüssel mit einem Totenkopf als Griff, gefunden bei den Goblin-Hinterlassenschaften. Es handelt sich um ein offizielles Daggerheart-Item, dessen genauer Verwendungszweck noch unbekannt ist.
+Ein [Schlüssel](/items/magischer_schluessel.md) mit einem Totenkopf, der von [Kaya](/characters/kaya.md) im [Goblinnest](/locations/goblinnest.md) gefunden wird. Er könnte zu einer Truhe oder Tür passen.
 
 # Belege
 

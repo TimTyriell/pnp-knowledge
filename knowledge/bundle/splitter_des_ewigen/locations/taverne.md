@@ -1,17 +1,17 @@
 ---
 type: Location
 title: Taverne
-description: Der zentrale Treffpunkt der Stadt, in dem die Helden gefeiert werden.
-  Sie wurde nach dem Brand wieder aufgebaut und dient als Ort der Zusam…
+description: Die Taverne, in der die Gruppe übernachtet. Sie wird von den Attentätern
+  angegriffen. Der Wirt, ein Org namens Troggal, ist entsetzt und ho…
 tags:
 - locations
-timestamp: '2026-07-29T00:00:00Z'
+timestamp: '2025-07-22T00:00:00Z'
 id: LOC_TAVERNE
 subtype: Gebäude
 ---
 
-Der zentrale [Treffpunkt](/locations/treffpunkt.md) der Stadt, in dem die Helden gefeiert werden. Sie wurde nach dem Brand wieder aufgebaut und dient als Ort der Zusammenkunft für Freunde und Trauernde gleichermaßen.
+Die Taverne, in der die Gruppe übernachtet. Sie wird von den Attentätern angegriffen. Der Wirt, ein Org namens [Troggal](/npcs/troggal.md), ist entsetzt und holt Verstärkung. Die Taverne wird während des Kampfes beschädigt.
 
 # Belege
 
-[S1-01-A] Session 2026-07-29 @ 00:50:22 (https://www.youtube.com/watch?v=umGyKLkefJI)
+[P-15] Session 2025-07-22 @ 00:07:03 (https://www.youtube.com/watch?v=BRRCUgW4xRo)

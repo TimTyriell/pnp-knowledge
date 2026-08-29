@@ -1,28 +1,24 @@
 ---
 type: Character
 title: Tibbet
-description: Tibbet ist ein junger Ribbit-Zauberer, der auf der Suche nach einem Barbaren
-  namens Gummo durch die Welt zieht. Er beherrscht Illusionsmagi…
+description: Tibbet ist ein junger Ribbet-Sorcerer, der in der Kampagne auf der Suche
+  nach dem Barbaren Gummo ist. Neugierig und zielstrebig, will er se…
 tags:
 - characters
 timestamp: '2026-03-23T00:00:00Z'
 id: CHAR_TIBBET
 ---
 
-# Tibbet
+Tibbet ist ein junger Ribbet-Sorcerer, der in der Kampagne auf der Suche nach dem Barbaren Gummo ist. Neugierig und zielstrebig, will er seine magischen Fähigkeiten ausbauen und seine Mission erfüllen. Im Kampf arbeitet er eng mit seinen Gefährten zusammen.
 
-Tibbet ist ein junger Ribbit-Zauberer, der auf der Suche nach einem Barbaren namens Gummo durch die Welt zieht. Er beherrscht Illusionsmagie und eisbasierte Kampfzauber, setzt aber auch seine lange Zunge für akrobatische Manöver ein. In der Gruppe übernimmt er eine taktisch unterstützende Rolle, indem er Waffen magisch verstärkt und sich an koordinierten Angriffen beteiligt. Trotz anfänglicher Unsicherheit trifft er schließlich eine pragmatische Entscheidung, als sich die Gelegenheit bietet, sein eigentliches Ziel besser zu verfolgen.
+## Magie und Kampf
 
-## Fähigkeiten und Kampfstil
+Tibbet setzt eine Reihe von Zaubern ein, darunter *Arcane Sense*, Illusionen und *Reign of Blades*. Damit unterstützt er seine Gruppe im Kampf und verbindet seine Zauber mit Tag-Team-Angriffen, um Gegner gemeinsam zu stellen. Sein Wunsch, die eigenen Fähigkeiten als Sorcerer weiterzuentwickeln, treibt ihn dabei an.
 
-Tibbets magische Fähigkeiten sind vielseitig und auf Täuschung und Kontrolle ausgelegt. Er kann Illusionen erschaffen, etwa um sich selbst als Fass zu tarnen, und nutzt den Zauber *Reign of Blades*, um Wasser in geschossartige Eissplitter zu verwandeln. Seine lange Zunge erlaubt ihm zudem akrobatische Bewegungen, die er im Kampf einsetzt.  
+## Mission und Begegnung mit Gummo
 
-Im Team agiert Tibbet vor allem unterstützend: Er verstärkt die Waffen seiner Verbündeten mit Magie, um ihre Angriffskraft zu erhöhen, und beteiligt sich an Teamangriffen. Im entscheidenden Gefecht gegen [Floran](/npcs/floran.md) gelingt ihm ein mächtiger kombinierter Angriff mit [Nina](/characters/nina.md), der den Gegner schwer trifft.
-
-## Rolle in der Gruppe und Entscheidungen
-
-Tibbets primäres Motiv ist die Suche nach Gummo, der für ihn von persönlicher Bedeutung ist. Als die Gruppe über das Schicksal eines Gefangenen abstimmt, der Informationen über Gummos Aufenthaltsort haben könnte, zeigt sich Tibbet zunächst unschlüssig. Erst als er erfährt, dass Gummo sich nicht an dem betreffenden Ort aufhält, stimmt er für die Auslieferung – eine Entscheidung, die sowohl Pragmatismus als auch seine Fixierung auf die Suche widerspiegelt.
+Tibbet sucht Gummo, einen Barbaren, der sein Volk überfallen hat. Die Auseinandersetzung mit ihm ist Teil seiner Mission: Als es um die Übergabe von Gefangenen geht, ist Tibbet bereit, sie zu übergeben, um die Mission zum Abschluss zu bringen.
 
 # Belege
 
-[P-42] Session 2026-03-23 @ 00:02:28 – [YouTube-Link](https://www.youtube.com/watch?v=niVxKtdQBn0)
+[P-42] Session 2026-03-23, 00:02:28 – [YouTube](https://www.youtube.com/watch?v=niVxKtdQBn0)

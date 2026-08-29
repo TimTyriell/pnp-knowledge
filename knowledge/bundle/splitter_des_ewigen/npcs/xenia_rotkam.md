@@ -1,32 +1,30 @@
 ---
 type: NPC
 title: Xenia Rotkam
-description: Xenia Rotkam ist die Wirtin und Besitzerin der Taverne in Kleinringtal.
-  Sie führt die Taverne als ihr Lebenswerk und begegnet der Gruppe hi…
+description: 'Xenia Rotkam ist die Inhaberin der Taverne Kleinringtal und eine Infernis.
+  Sie führt ihr Etablissement geschäftstüchtig und freundlich: Der…'
 tags:
 - npcs
-timestamp: '2026-08-06T00:00:00Z'
+timestamp: '2026-08-20T00:00:00Z'
 id: NPC_XENIA_ROTKAM
 aliases:
 - Xenia
-status: disputed
 ---
 
-Xenia Rotkam ist die Wirtin und Besitzerin der Taverne in [Kleinringtal](/locations/ringtal.md). Sie führt die Taverne als ihr Lebenswerk und begegnet der Gruppe hilfsbereit, aber mit Distanz.
+# Xenia Rotkam
 
-## Rolle in Kleinringtal
+Xenia Rotkam ist die Inhaberin der Taverne Kleinringtal und eine Infernis. Sie führt ihr Etablissement geschäftstüchtig und freundlich: Der Gruppe gewährt sie eine kostenlose Nacht und zeigt sich neugierig auf [Saris](/characters/saris.md) und seine Totenkopf-Gefährten. Als ihre Heimat bedroht wird, erweist sie sich als stolz und entschlossen, weigert sich zunächst zu evakuieren und wird erst durch [Brumas](/characters/bruma_stormrak.md) leidenschaftliche Rede umgestimmt. Nach dem Verlust Kleinringtals lebt sie als Flüchtling in Ringtal.
 
-In ihrer Taverne gewährt Xenia der Gruppe eine kostenlose Übernachtung, nachdem ein Gruppenmitglied den Flüchtlingen geholfen hat. Von der eigentümlichen Art eines anderen Gruppenmitglieds zeigt sie sich befremdet, bleibt aber höflich; dieses flirtet mit ihr und hinterlässt heimlich eine Zeichnung von ihr hinter der Theke.
+## Wirtin der Taverne Kleinringtal
 
-## Evakuierung der Taverne
+Xenia ist die Wirtin der Taverne Kleinringtal. Sie begegnet der Gruppe freundlich und geschäftstüchtig; neben der kostenlosen Nacht für die Ankommenden interessiert sie sich für Saris und seine Begleiter. Als die Bedrohung auf Kleinringtal zukommt, zeigt sie ihre stolze, entschlossene Seite: Sie weigert sich zunächst, ihre Taverne zu evakuieren, und ist bereit, sie zu verteidigen. Erst Brumas leidenschaftliche Rede bewegt sie zum Umdenken. Sie wirft ihre Schürze weg, verlässt die Taverne und organisiert die Evakuierung.
 
-Als Kleinringtal bedroht ist, weigert sich Xenia zunächst zu evakuieren: Die Taverne ist ihr Lebenswerk, und sie will lieber kämpfend untergehen. Erst nach [Brumas](/characters/bruma_stormrak.md) emotionalem Ausbruch, in dem er seinen Heimatverlust schildert, bricht sie zusammen. Sie offenbart, dass sie selbst vor zwölf Jahren ihre Heimat verloren hat und nichts über das Schicksal ihrer Familie weiß. Daraufhin ordnet sie die Evakuierung der Taverne an und vertraut Bruma ihr Schicksal an.
+## Verlust der Heimat
 
-## Offene Konflikte
-
-- [Beleg 1] nennt Xenia eine „infernische Wirtin“, [Beleg 2] bezeichnet sie als „resolute Halbelfe“. Die Quellenlage erlaubt keine eindeutige Festlegung ihrer Herkunft.
+Xenia hat eine bewegte Vergangenheit und verlor bereits vor zwölf Jahren ihre Heimat. Durch die Evakuierung verliert sie auch Kleinringtal: Sie kommt mit den Flüchtlingen nach Ringtal, wo sie angespannt und mürrisch auftritt, weil sie ihre Heimat verloren hat. Bruma bringt daraufhin den Vorschlag ein, Xenia in ein neues Etablissement in Ringtal einzubinden.
 
 # Belege
 
-[P-52] Session 2026-06-04, 00:53:24, <https://www.youtube.com/watch?v=EGNh8O7pE5Q>
-[S1-03-B] Session 2026-08-06, 01:41:58, <https://www.youtube.com/watch?v=0HyPHao8s_k>
+1. Session 2026-06-04 @ 00:53:24 – https://www.youtube.com/watch?v=EGNh8O7pE5Q
+2. Session 2026-08-06 @ 01:27:36 – https://www.youtube.com/watch?v=0HyPHao8s_k
+3. Session 2026-08-20 @ 00:28:14 – https://www.youtube.com/watch?v=2EkWrNUfQi0

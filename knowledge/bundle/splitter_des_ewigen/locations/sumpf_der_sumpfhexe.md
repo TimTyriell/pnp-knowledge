@@ -1,19 +1,19 @@
 ---
 type: Location
 title: Sumpf der Sumpfhexe
-description: Der Sumpf ist die letzte bekannte Heimat der Sumpfhexe, zu dem Nox einen
-  erfolglosen Kopfgeldauftrag ausgeschrieben hat.
+description: Der Sumpf ist ein gefährliches Gebiet mit giftigen Kreaturen und unbeständigem
+  Wasser. Er liegt weit entfernt von der Gildenstadt und ist s…
 tags:
 - locations
-timestamp: '2026-02-17T00:00:00Z'
+timestamp: '2025-06-03T00:00:00Z'
 id: LOC_SUMPF_DER_SUMPFHEXE
 subtype: Wildnis
 aliases:
 - Sumpf
 ---
 
-Der Sumpf ist die letzte bekannte Heimat der [Sumpfhexe](/npcs/lenra.md), zu dem Nox einen erfolglosen Kopfgeldauftrag ausgeschrieben hat.
+Der [Sumpf](/locations/sumpf_vor_dem_goblin_dorf.md) ist ein gefährliches Gebiet mit giftigen Kreaturen und unbeständigem Wasser. Er liegt weit entfernt von der Gildenstadt und ist schwer zu durchqueren.
 
 # Belege
 
-[P-37] Session 2026-02-17 @ 01:46:48 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
+[P-10] Session 2025-06-03 @ 00:01:30 (https://www.youtube.com/watch?v=jtYR4Je0a18)

@@ -1,8 +1,8 @@
 ---
 type: Location
 title: Valuna
-description: Valuna ist eine Stadt der Assassinen im Norden, weit entfernt von Ehrenfels.
-  Sie gilt als heilig und ist bekannt für die Herstellung selten…
+description: Valuna ist eine heilige Stadt, in der die Assassinen leben. Sie liegt
+  weit entfernt von Ehrenfels und es gibt kaum Informationen über sie.…
 tags:
 - locations
 timestamp: '2026-08-04T00:00:00Z'
@@ -10,7 +10,7 @@ id: LOC_VALUNA
 subtype: Siedlung
 ---
 
-Valuna ist eine Stadt der Assassinen im Norden, weit entfernt von [Ehrenfels](/locations/ehrenfels.md). Sie gilt als heilig und ist bekannt für die Herstellung seltener Heilphiolen. Die Gruppe soll dorthin reisen, um einen solchen Trank zu beschaffen. Über Valuna gibt es kaum Informationen, und die Assassinen sind verschlossen und potenziell feindselig.
+Valuna ist eine heilige Stadt, in der die [Assassinen](/factions/assassinen.md) leben. Sie liegt weit entfernt von [Ehrenfels](/locations/ehrenfels.md) und es gibt kaum Informationen über sie. Die Gruppe soll dort eine Phiole mit heiliger Macht besorgen.
 
 # Belege
 

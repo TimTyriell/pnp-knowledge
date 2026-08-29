@@ -1,16 +1,16 @@
 ---
 type: Event
 title: Rückzug aus dem Dungeon
-description: Aufgrund der anhaltenden Giftgase, der Demoralisation und fehlender Mittel
-  zum Atmen beschließt die Gruppe, den Dungeon zu verlassen. Sie n…
+description: Die Gruppe beschließt, den Dungeon zu verlassen, nachdem sie auf Hindernisse
+  wie giftige Gase und eine überwältigende Umgebung gestoßen sin…
 tags:
 - events
 timestamp: '2026-02-11T00:00:00Z'
 id: EVENT_RUECKZUG_AUS_DEM_DUNGEON
-subtype: Sonstiges
+subtype: Reise
 ---
 
-Aufgrund der anhaltenden Giftgase, der Demoralisation und fehlender Mittel zum Atmen beschließt die Gruppe, den Dungeon zu verlassen. Sie nehmen eine gefrorene Pflanzenprobe mit, um sie später untersuchen zu lassen. Der Rückzug wird als nicht erfolgreiche Mission gewertet.
+Die Gruppe beschließt, den Dungeon zu verlassen, nachdem sie auf Hindernisse wie giftige Gase und eine überwältigende Umgebung gestoßen sind. Sie nehmen eine Probe der Pflanze mit.
 
 # Belege
 

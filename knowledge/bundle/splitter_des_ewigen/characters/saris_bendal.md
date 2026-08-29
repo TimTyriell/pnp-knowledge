@@ -1,23 +1,24 @@
 ---
 type: Character
 title: Saris Bendal
-description: Saris Bendal ist ein verrückter Infernis-Wissenschaftler und Hexenmeister.
-  In der Kampagne tritt er als zwielichtiger Gönner einer Gruppe m…
+description: Saris Bendal ist ein Wissenschaftler und Hexenmeister aus dem Infernis.
+  Er kommuniziert mit zwei Totenschädeln, die er auf den Schultern tr…
 tags:
 - characters
 timestamp: '2026-06-04T00:00:00Z'
 id: CHAR_SARIS_BENDAL
 ---
 
-Saris Bendal ist ein verrückter Infernis-Wissenschaftler und Hexenmeister. In der Kampagne tritt er als zwielichtiger Gönner einer Gruppe mittelloser Flüchtlinge auf, denen er zunächst den Zutritt zu einem Ort ermöglicht. Zu seiner ständigen Begleitung gehören zwei sprechende Totenschädel, die auf seinen Schultern sitzen: [Jonathan](/npcs/jonathan_schaedel.md) und [Samuel](/npcs/samuel_schaedel.md). Saris ist extrem neugierig: Er notiert unablässig Beobachtungen und nutzt die Begegnung mit den Flüchtlingen, um sein Wissen zu erweitern. Seine Hilfe für die Gruppe ist jedoch von übergriffigem und schwer einzuschätzendem Verhalten begleitet, das immer wieder persönliche Grenzen überschreitet.
+**Saris Bendal** ist ein Wissenschaftler und Hexenmeister aus dem Infernis. Er kommuniziert mit zwei Totenschädeln, die er auf den Schultern trägt, und wirkt durch sein unkonventionelles Auftreten verrückt.
 
-## Auftreten und Rolle
+## Rolle und Eigenschaften
 
-Saris zeigt sich als finanzkräftiger Unterstützer, der drei Hände Gold zahlt, um den mittellosen Flüchtlingen Einlass zu gewähren. Anschließend nimmt er die Neuankömmlinge genau in Augenschein und befragt sie eingehend nach dem Angriff, um sein Wissen über das Geschehene zu erweitern. Seine Erfahrung als verrückter Wissenschaftler setzt er ein, um mit einer Karte die Herkunft der Flüchtlinge aus [Brandau](/locations/brandau.md) zu verschleiern. Die Teilnahme an der Segenszeremonie verweigert er allerdings: Samuel hat ihm geraten, die Eule erzähle Lügen.
+Saris ist dem Infernis zugehörig und wirkt dort als Wissenschaftler und Hexenmeister. Er ist ausgesprochen wissbegierig, tritt aber sozial unbeholfen auf. Um an Informationen zu gelangen, bezahlt er Flüchtlinge. Bei sich führt er ein goldenes Fläschchen mit einem Mittel gegen Ungeziefer, das er an Gnollen testen will.
 
-## Umgang mit anderen
+## Beziehungen
 
-Im direkten Kontakt überschreitet Saris regelmäßig Grenzen: Er inspiziert [Kayas](/characters/kaya.md) und [Sanges](/characters/sange.md) Hände und flirtet plump mit der Wirtin [Xenia](/npcs/xenia_rotkam.md). Obwohl er nach außen hin hilfsbereit wirkt, zeigt er zugleich eine heimliche Seite, indem er unauffällig eine Zeichnung von Xenia hinterlässt.
+Saris' ständige Begleiter sind die beiden Totenschädel Jonathan und Samuel, mit denen er spricht. Samuel rät ihm, den Segen Jorans nicht anzunehmen; Saris folgt diesem Rat. Von Xenia fertigt er eine Zeichnung an, die er ihr hinterlässt.
 
 # Belege
-[P-52] Session 2026-06-04, [01:21:41](https://www.youtube.com/watch?v=EGNh8O7pE5Q)
+
+[P-52] Session 2026-06-04, 00:15:40 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)

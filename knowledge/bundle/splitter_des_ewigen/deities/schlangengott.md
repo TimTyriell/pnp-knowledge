@@ -1,70 +1,45 @@
 ---
 type: Deity
 title: Alter Schlangengott
-description: Der Alte Schlangengott ist eine längst gefallene oder nicht mehr aktiv
-  präsente Gottheit, deren physische Form als sechsköpfige Schlangenhy…
+description: Der Alte Schlangengott ist eine übernatürliche Entität, die als fünfköpfige,
+  humanoide Schlange in Erscheinung tritt. Er wird an einem Schr…
 tags:
 - deities
-timestamp: '2025-06-17T00:00:00Z'
+timestamp: '2025-06-03T00:00:00Z'
 id: DEITY_SCHLANGENGOTT
 subtype: Alter Gott
 aliases:
-- Schlangenfigur (Serpent God)
 - Schlangengott
 ---
 
 ## Überblick
 
-Der Alte Schlangengott ist eine längst gefallene oder nicht mehr aktiv präsente Gottheit, deren physische Form als sechsköpfige Schlangenhydra beschrieben wird. Nach Wissen aus historischen Aufzeichnungen erschuf er einst amphibische Dienerwesen mit außergewöhnlich mächtigen Giften und der Fähigkeit, Zivilisationen zu unterwandern. In der Gegenwart manifestiert er sich als geisterhafte Avatar-Erscheinung und tritt über diese mit Sterblichen in Kontakt.
-
-Sein genauer Status in der aktuellen Epoche ist unklar: Er zählt zu den „Alten Göttern“, die nach verbreiteter Auffassung nicht mehr in der Welt wirken. Dennoch hat er sich in jüngster Zeit mehrfach bemerkbar gemacht und direkte Eingriffe vorgenommen.
+Der Alte Schlangengott ist eine übernatürliche Entität, die als fünfköpfige, humanoide Schlange in Erscheinung tritt. Er wird an einem Schrein verehrt, wo er einen Avatar manifestiert und mit Besuchern kommuniziert. Sein Auftreten wird als geisterhaft und zugleich hypnotisch beschrieben – eine Erscheinung, die zwischen Mensch und Schlange zu tanzen scheint. Der Gott spricht in einer fremden Sprache, die seine Zuhörer dennoch verstehen können. Er bietet Wissen und die Möglichkeit, ihm zu dienen, im Austausch für die Berührung bestimmter Kristalle an seinem Schrein.
 
 ## Rolle in der Kampagne
 
-Der Alte Schlangengott taucht als ambivalente Macht auf, die der Gruppe sowohl Angebote macht als auch auf Bitten reagiert. Esterossa erinnert sich aus ihren Studien, dass dieser Gott und seine Kreaturen früher „wirklich teilweise Zivilisationen infiltrieren“ konnten [P-10]. Bei einem Schrein erscheint der Schlangengott der Gruppe als geisterhafte Erscheinung und bietet Macht im Tausch gegen Dienst an. Nach einem misslungenen Angriff auf Dodo gibt er den entscheidenden Hinweis, dass die Hack im Norden zu finden ist [P-10].
-
-Später betet Dodo, der eine Verbindung zu dieser Entität aufgebaut hat, zu ihm – und erhält eine Antwort in Form einer brutalen Intervention: Die Seelen oder Köpfe, die in Netzen gefangen waren, zerfallen zu Asche [P-12].
-
-Seine Ethik und Ziele bleiben unklar. Die Gruppe registriert eine gewisse Skrupellosigkeit: Seine Hilfe wirkt effektiv, aber zerstörerisch, und der Preis für seine Unterstützung ist nicht definiert.
+Der Alte Schlangengott begegnete der Gruppe erstmals am Schrein, als diese auf der Suche nach einer Sumpfhexe war. Sein Avatar trat aus einem Schein hervor und begrüßte die Ankommenden mit den Worten: „Ihr seid hier. Willkommen am Schrein. Was wünscht ihr?“ Er stellte den Helden ein Angebot: Wer dem Gott der Schlangen dienen wolle, solle die Kristalle berühren. Die Gruppe lehnte dieses Angebot jedoch ab – Lindo Laut erklärte, man habe „gerade keine Zeit für Schlangen“, und Cookie ergänzte: „Für alles andere ja, aber für Schlangen heute nicht.“ Stattdessen fragte die Gruppe den Gott direkt, ob er eine Verbindung zu der gesuchten Sumpfhexe habe.
 
 ## Wichtige Merkmale
 
-- **Sechsköpfige Schlangenhydra**: Die physische oder symbolische Form wird als mehrköpfiges Schlangenwesen beschrieben [P-10].
-- **Geisterhafter Avatar**: In der Gegenwart erscheint er nicht leibhaftig, sondern als geisterhafte Präsenz an einem Schrein [P-10].
-- **Schöpfung amphibischer Gifttiere**: Seine ersten Lebewesen waren amphibische Kreaturen mit enorm starken Giften. Diese nutzten Naturmagie und konnten Zivilisationen infiltrieren [P-10].
-- **Macht durch Zerstörung**: Als Dodo um Seelenerlösung betet, bewirkt die Intervention des Schlangengottes, dass „die ganzen Köpfe in diesem Netz, die schreien vor Brutalität, vor Schmerzen und ihr seht einfach nur, wie diese Köpfe vor euch, […] zur Asche zerfällt“ [P-12].
-- **Verbindung durch Gebet**: Dodo hat eine persönliche Verbindung zu ihm aufgebaut und kann ihn durch stille Gebete erreichen [P-12].
+Der Alte Schlangengott erscheint als fünfköpfige Schlange mit humanoidem Körperbau. Seine Erscheinung wird als „geisterhaft“ und „geisterschemhaft“ beschrieben, wobei er zwischen verschiedenen Zuständen zu tanzen scheint – wie eine Schlange, die hypnotisiert oder entranst wirkt. Er tritt aus einem Schein hervor, wenn er sich Besuchern zeigt.
+
+Der Gott kommuniziert in einer Sprache, die nicht die der Helden ist, aber von ihnen dennoch verstanden wird. Sein Angebot an die Gruppe bestand darin, ihm zu dienen, indem sie die Kristalle an seinem Schrein berührten – offenbar ein ritueller Akt der Hingabe oder des Bündnisses. Im Gegenzug bietet er offenbar Wissen an, wie seine einleitende Frage „Was wünscht ihr?“ nahelegt.
 
 ## Beziehungen und Verbindungen
 
-- **[Dodo](/characters/dodo.md)**: Dodo hat eine aktive Verbindung zum Schlangengott. Er kniet mit aufgestelltem Schild nieder und betet zu ihm, woraufhin der Gott antwortet [P-12].
-- **Hinweisgeber für die Gruppe**: Der Schlangengott gibt den Hinweis auf eine Hack im Norden [P-10].
-- **Spannungen mit Lindo Laut**: Lindo Laut argumentiert, dass die alten Götter „jetzt hier nicht mehr so viel zu sagen“ hätten [P-12], was die Skepsis der Gruppe gegenüber dieser Macht verdeutlicht.
+Die genaue Natur der Verbindung zwischen dem Alten Schlangengott und der gesuchten Sumpfhexe bleibt ungeklärt. Lindo Laut fragte den Gott direkt: „Hat der Gott der Schlangen eine Verbindung zu dieser… Ey…“ – die Frage wurde jedoch nicht beantwortet, bevor der Beleg endet. Es ist unklar, ob der Gott die Sumpfhexe kennt, mit ihr verbündet ist oder gar selbst mit ihr in Verbindung steht.
 
 ## Chronologie
 
-### Erste Begegnung am Schrein (Session 2025-06-03)
-
-Esterossa erinnert sich aus der Bibliotheca an Legenden über den Schlangengott: Er habe seine Untertanen – vielleicht Humanoide, vielleicht nur ein Stück Erde – in amphibische Kreaturen mit enorm starken Giften verwandelt, die Zivilisationen unterwandern konnten. Esterossa kommentiert dies mit: „Das ist mir alles ein bisschen shady. Alte Götter, die sind dir gefallen, gibt‘s nicht mehr“ [P-10].
-
-Am Schrein erscheint der geisterhafte Avatar des Gottes. Er bietet Macht im Tausch gegen Dienst an und attackiert Dodo erfolglos. Nach dem Angriff gibt er den Hinweis, dass die Hack im Norden zu finden ist [P-10].
-
-### Intervention im Seelennetz (Session 2025-06-17)
-
-In den Seelennetzen, wo unzählige gefangene Köpfe vor Schmerz schreien, will die Gruppe weitergehen. Cookie mahnt: „Also du weißt schon, dass die alten Götter noch gut viel Macht haben, obwohl die nicht mehr da sind“ [P-12]. Dodo hält inne und richtet ein Gebet an den Schlangengott:
-
-> „Diese gefallenen Krieger scheinen lang genug gelitten zu haben. Bitte, ja, bitte erlöse sie.“ [P-12]
-
-Daraufhin hört die Gruppe eine Stimme, und ein Teil der Seelen vor ihnen zerfällt zu Asche. Rotunas reagiert bestürzt: „Was hast du getan?“, worauf Dodo antwortet: „Den Weg freigemacht.“ Cookie kritisiert die Brutalität: „Du hast dafür gerade einfach irgendwelche Seelen verbrannt, aber okay“ [P-12].
+**Session 2025-06-03:** Die Gruppe erreicht einen Schrein, an dem der Alte Schlangengott einen Avatar manifestiert. Er erscheint als fünfköpfige, humanoide Schlange in geisterhaftem Zustand und tritt aus einem Schein hervor. Er begrüßt die Helden und bietet ihnen an, ihm zu dienen, indem sie die Kristalle berühren. Die Gruppe lehnt ab – Lindo Laut erklärt, man habe keine Zeit für Schlangen, da man auf der Suche nach einer Sumpfhexe sei. Lindo Laut fragt den Gott, ob er eine Verbindung zu dieser Sumpfhexe habe. Die Antwort bleibt im Beleg offen.
 
 ## Offene Fragen
 
-- **Was ist die Hack im Norden?** Der Schlangengott gab diesen Hinweis, aber Ziel und Zweck sind unbekannt [P-10].
-- **Sind die Seelen erlöst oder nur zerstört?** Dodo glaubt an Erlösung, Cookie hält es für brutale Vernichtung [P-12].
-- **In welchem Zustand existiert der Schlangengott heute?** Er gilt als gefallen, manifestiert sich aber als Avatar; der genaue Status (gebannt, geschwächt, erwachend) bleibt ungeklärt.
-- **Welche Gegenleistung erwartet er für seine Macht?** Das Angebot „Macht im Tausch gegen Dienst“ wurde nie konkretisiert [P-10].
+- Hat der Alte Schlangengott eine Verbindung zur gesuchten Sumpfhexe? Die Frage wurde gestellt, aber nicht beantwortet.
+- Was genau bieten die Kristalle am Schrein – welches Wissen oder welche Macht würde der Gott im Austausch für ihre Berührung gewähren?
+- Welche Rolle spielt der Alte Schlangengott in der weiteren Kampagne, nachdem die Gruppe sein Angebot abgelehnt hat?
 
 ## Belege
 
-[P-10] Session 2025-06-03, 01:36:58–01:39:07 – https://www.youtube.com/watch?v=jtYR4Je0a18
-[P-12] Session 2025-06-17, 01:30:46–01:33:32 – https://www.youtube.com/watch?v=tl76B4V0io8
+[P-10] Session 2025-06-03, 01:42:01–01:44:26, https://www.youtube.com/watch?v=jtYR4Je0a18

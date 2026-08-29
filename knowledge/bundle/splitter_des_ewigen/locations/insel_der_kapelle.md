@@ -1,17 +1,17 @@
 ---
 type: Location
 title: Insel der Kapelle
-description: Eine abgelegene, bewachte Insel, auf der sich die Ruine eines Forts und
-  die Kapelle des Heiligen Duran befinden. Sie ist von Nebel umgeben,…
+description: Die Insel der Kapelle ist das Ziel der Mission. Sie ist stark bewacht
+  und beherbergt eine alte Ruine, ein Kriegslager und eine Kapelle, die…
 tags:
 - locations
 timestamp: '2025-05-06T00:00:00Z'
 id: LOC_INSEL_DER_KAPELLE
-subtype: Wildnis
+subtype: Siedlung
 ---
 
-Eine abgelegene, bewachte Insel, auf der sich die Ruine eines Forts und die [Kapelle des Heiligen Duran](/locations/kloster_des_heiligen_duran.md) befinden. Sie ist von Nebel umgeben, hat eine zerklüftete Küste und bietet nur einen einzigen, schwer zugänglichen Landeplatz. Die Brücke zur dritten Insel wird von Feinden kontrolliert.
+Die Insel der [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) ist das Ziel der Mission. Sie ist stark bewacht und beherbergt eine alte Ruine, ein [Kriegslager](/locations/kriegslager.md) und eine Kapelle, die dem Heiligen [Duran](/deities/heiliger_duran.md) geweiht ist. Die Gruppe erreicht sie mit einem Boot und muss sich durchkämpfen.
 
 # Belege
 
-[P-07] Session 2025-05-06 @ 00:02:55 (https://www.youtube.com/watch?v=e0v6AFGd4mE)
+[P-07] Session 2025-05-06 @ 00:03:04 (https://www.youtube.com/watch?v=e0v6AFGd4mE)

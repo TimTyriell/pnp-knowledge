@@ -1,8 +1,8 @@
 ---
 type: Location
 title: Kathedrale
-description: Das größte Gebäude im Ort, in dem das letzte Gefecht stattfand. Im Inneren
-  sind viele Leichen und zerstörte Skelette sowie die Gräber von P…
+description: Die Kathedrale ist der Ort des letzten Gefechts der Bewohner von Steinbachtal.
+  Sie ist mit Leichen und Grabsteinen gefüllt. Hier treffen di…
 tags:
 - locations
 timestamp: '2025-09-09T00:00:00Z'
@@ -12,8 +12,8 @@ aliases:
 - Kathedrale von Steinbachtal
 ---
 
-Das größte Gebäude im Ort, in dem das letzte Gefecht stattfand. Im Inneren sind viele Leichen und zerstörte Skelette sowie die Gräber von [Prinz Bran](/npcs/prinz_bran.md) und einem weiteren Krieger. Oben in einem Fenster leuchtet ein Feuer, und die Zwerge verschanzen sich dort.
+Die Kathedrale ist der Ort des letzten Gefechts der Bewohner von [Steinbachtal](/locations/steinbachtal.md). Sie ist mit Leichen und Grabsteinen gefüllt. Hier treffen die Gruppe auf die [Zwerge](/factions/zwerge.md) [Brandoran](/npcs/brandoran.md) und [Meister Grimm](/npcs/meister_grimm.md). Die Kathedrale hat ein Obergeschoss, in dem die Zwerge sich verschanzt haben.
 
 # Belege
 
-[P-21] Session 2025-09-09 @ 01:08:23 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
+[P-21] Session 2025-09-09 @ 01:07:52 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)

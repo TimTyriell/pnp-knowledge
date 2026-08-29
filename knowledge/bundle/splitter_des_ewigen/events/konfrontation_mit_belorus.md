@@ -1,16 +1,16 @@
 ---
 type: Event
 title: Konfrontation mit Belorus
-description: 'Die zentrale Begegnung in der Burg: Dodo versucht, den Todesritter einzuschüchtern,
-  scheitert jedoch und wird daraufhin von mehreren untote…'
+description: Belorus stellt die Gruppe in seiner Burg, fordert sie heraus und beschwört
+  Untote. Dodo versucht ihn einzuschüchtern, scheitert aber. Cooki…
 tags:
 - events
 timestamp: '2025-05-14T00:00:00Z'
 id: EVENT_KONFRONTATION_MIT_BELORUS
-subtype: Verhandlung
+subtype: Kampf
 ---
 
-Die zentrale Begegnung in der Burg: [Dodo](/characters/dodo.md) versucht, den Todesritter einzuschüchtern, scheitert jedoch und wird daraufhin von mehreren untoten Kämpfern angegriffen. [Cookie](/characters/cookie.md) aktiviert aus dem Hintergrund den Schutzkristall, der alle Untoten vertreibt und [Belorus](/npcs/belorus.md) zum Rückzug zwingt. Dieser fühlt sich unehrenhaft behandelt, verschwindet, löst aber einen Alarm aus, der die gesamte Burg in Aufruhr versetzt.
+[Belorus](/npcs/belorus.md) stellt die Gruppe in seiner Burg, fordert sie heraus und beschwört [Untote](/factions/belorus_untotenarmee.md). [Dodo](/characters/dodo.md) versucht ihn einzuschüchtern, scheitert aber. [Cookie](/characters/cookie.md) aktiviert den [Schutzkristall](/items/schutzkristall.md), der Belorus vertreibt.
 
 # Belege
 

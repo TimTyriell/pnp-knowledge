@@ -1,30 +1,29 @@
 ---
 type: Item
 title: Seelenstein des Rotunas
-description: Der Seelenstein des Rotunas (kurz *Seelenstein* oder *Stein*) ist ein
-  magischer Gegenstand, der eine gefangene Seele enthielt. Er wurde von…
+description: Der Seelenstein des Rotunas ist ein magischer Stein, in dem ein Gesicht
+  glitzert. Lindo Laut übergab ihn Dodo und bezeichnete ihn als nützl…
 tags:
 - items
-timestamp: '2025-06-25T00:00:00Z'
+timestamp: '2026-07-21T00:00:00Z'
 id: ITEM_SEELENSTEIN_DES_ROTUNAS
-subtype: Sonstiges
+subtype: Artefakt
 aliases:
 - Seelenstein
 ---
 
-# Seelenstein des Rotunas
+Der Seelenstein des Rotunas ist ein magischer Stein, in dem ein Gesicht glitzert. Lindo Laut übergab ihn Dodo und bezeichnete ihn als nützlich, um Seelen zu manipulieren oder zu sammeln. Bei einem späteren Versuch, mit dem Stein Esterossas Seele zu absorbieren, zerbrach er.
 
-Der **Seelenstein des Rotunas** (kurz *Seelenstein* oder *Stein*) ist ein magischer Gegenstand, der eine gefangene Seele enthielt. Er wurde von der Gruppe während der Loot-Phase in den Katakomben gefunden und später von dem Riesen [Rotunas](/characters/rotunas.md) getragen. In einer lebensbedrohlichen Situation opferte Rotunas den Stein, um einen tödlichen Angriff eines Engels abzuwehren, wobei der Stein zerbrach. Die genaue Herkunft und die vollständige Macht des Steins sind unbekannt, er steht jedoch vermutlich im Zusammenhang mit den in der Region gefangenen Seelen.
+## Eigenschaften und Funktion
 
-## Eigenschaften und Wirkung
+In dem Stein glitzert ein Gesicht. [Rotunas](/characters/rotunas.md) vermutete, dass beim Zerschlagen des Steins ein Geist freikommt. Diese Annahme deckt sich mit Lindo Lauts Einschätzung, der den Seelenstein für die Manipulation oder das Sammeln von Seelen geeignet hielt. Wie genau der Stein funktionierte und woher er stammte, ist nicht näher belegt.
 
-Der Seelenstein war ein handtellergroßer, unscheinbarer Stein, in dem bei genauem Hinsehen ein Gesicht zu glitzern schien – offenbar die eingeschlossene Seele. Rotunas spekulierte, dass beim Zerschlagen des Steins ein Geist freigesetzt würde; dies wurde jedoch nie bestätigt. Der Stein absorbierte oder lenkte einen tödlichen Energiestrahl eines Engels, wobei er selbst zerstört wurde. Ob der Stein auch aktiv als Schild gegen andere Angriffe eingesetzt werden konnte, ist nicht bekannt. Die enthaltene Seele wurde mit der Zerstörung des Steins vermutlich befreit – ihr weiteres Schicksal ist unklar.
+## Verlauf
 
-## Geschichte
-
-Cookie entdeckte den Seelenstein beim Durchsuchen von Überresten in einem unterirdischen Gang. Rotunas nahm den Stein an sich und trug ihn fortan bei sich. In einer späteren Prüfung – einem Kampf gegen einen Engel – richtete dieser einen tödlichen Energiestrahl auf Rotunas. Rotunas stellte den Seelenstein zwischen sich und den Strahl; der Stein explodierte und rettete so Rotunas das Leben.
+Lindo Laut gab den Seelenstein [Dodo](/characters/dodo.md). Als Lindo Laut später versuchte, [Esterossas](/characters/esterossa.md) Seele mit dem Seelenstein zu absorbieren, zerbrach der Stein. Statt der erhofften Absorption war ein Lachen zu hören; ob dabei tatsächlich ein Geist aus dem Stein freikam, bleibt unklar.
 
 # Belege
 
-[P-12] Session 2025-06-17 @ 01:52:45 – Cookie findet einen Stein, in dem ein Gesicht glitzert; Rotunas vermutet, dass ein Geist freigesetzt wird. (https://www.youtube.com/watch?v=tl76B4V0io8)
-[P-13] Session 2025-06-25 @ 01:16:08 – Rotunas nutzt den Seelenstein als Schild gegen einen Engelsstrahl, der Stein wird zerstört. (https://www.youtube.com/watch?v=tpkO9uGw6-I)
+[P-12] Session 2025-06-17 @ 01:53:10 (https://www.youtube.com/watch?v=tl76B4V0io8)
+[P-44] Session 2026-03-31 @ 01:45:02 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
+[P-55] Session 2026-07-21 @ 01:44:20 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)

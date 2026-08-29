@@ -1,37 +1,32 @@
 ---
 type: Faction
 title: Goblins
-description: 'Die Goblins sind in der Kampagne keine einheitliche Fraktion. Verschiedene
-  Gruppen treten auf: eine angriffslustige Bande bei Brechka, eine…'
+description: Die Goblins sind eine in der Kampagne mehrfach auftretende Spezies, die
+  in unterschiedlichen Gruppen und mit gegensätzlichen Absichten in E…
 tags:
 - factions
 timestamp: '2026-01-27T00:00:00Z'
 id: FACTION_GOBLINS
-subtype: Bande
-aliases:
-- Goblinhorde
-- Goblins des Anwesens
-- Die Goblins der Mine
+subtype: Volk
 ---
 
-# Goblins
+Die **Goblins** sind eine in der Kampagne mehrfach auftretende Spezies, die in unterschiedlichen Gruppen und mit gegensätzlichen Absichten in Erscheinung tritt. Sie gelten als kleine, schwache Kreaturen, die erst in großer Zahl zu einer ernsthaften Bedrohung werden. Die Belege zeigen sowohl feindselige als auch friedliche Gemeinschaften.
 
-Die **Goblins** sind in der Kampagne keine einheitliche Fraktion. Verschiedene Gruppen treten auf: eine angriffslustige Bande bei Brechka, eine von der Hack geschickte Streitmacht, eine sesshafte Gemeinschaft unter [Horatio](/npcs/horatio.md) sowie ein alteingesessener Stamm in den Minen. Für diese Gruppen sind auch die Bezeichnungen **Goblinhorde**, **Goblins des Anwesens** und **Goblins der Mine** geläufig.
+## Bedrohung aus dem Lager
 
-## Bekannte Gruppen
+Eine Gruppe von Goblins übernahm ein Lager und tötete dessen frühere Bewohner. Die Eindringlinge waren angetrunken und in Feierlaune; einzeln sind sie ungefährlich, in der Gruppe jedoch gefährlich. Angeführt wird die Gruppe von einem Anführer namens Schleichfurz, außerdem gehört ihr ein Magier an. Sie planten, weiterzuziehen und ein Dorf anzugreifen. Diese Bedrohung richtete sich in der Folge gegen das Dorf [Brechka](/locations/breska.md): Ein Späher der Goblins wurde getötet, doch ein größerer Angriff wurde erwartet.
 
-- **Goblinbande bei Brechka:** Sie plante einen Angriff auf das Dorf [Brechka](/locations/breska.md). Ihr Kundschafter wurde entdeckt und getötet; seine Notizen verrieten mögliche Angriffspunkte. Die drohende Attacke war der zentrale Handlungsantrieb dieser Zeit.
-- **Streitmacht der Hack:** Die Hack schickte Goblins, einen Oger und weitere Kreaturen, um [Gemata](/locations/gemata.md) anzugreifen. Die Streitmacht wurde von den Helden und Dorfbewohnern zurückgeschlagen.
-- **Goblins des Anwesens:** Eine kleine Gemeinschaft, die unter der Führung von [Horatio](/npcs/horatio.md) ein Anwesen bewohnt und instand hält.
-- **Goblins der Mine:** Ein zahlreicher, alteingesessener Goblinstamm in den unteren Minen, der diese zeitweise nicht bewohnt hat.
+## Goblins auf dem Anwesen
 
-## Hierarchie und Verhalten
+Eine andere Gruppe von Goblins bewohnt ein Anwesen und hält es instand. Sie verhält sich freundlich, zeigt sich gegenüber Fremden jedoch misstrauisch.
 
-Der Goblinstamm der Minen besitzt eine komplexe Hierarchie: An der Spitze steht ein Schamane, darunter die Anführer [Lurk](/npcs/lurk.md) und [Arik](/npcs/arik.md), und schließlich einfache Kämpfer. Der Stamm greift [Zwerge](/npcs/zwerge_in_cornivum.md) sofort an. Er erkennt den Wert des rohen magischen Erzes nicht, zeigt sich aber lernfähig und feierte den geschlossenen Pakt lautstark.
+## Goblins in den Minen
+
+In den Minen lebt eine weitere Gruppe von Goblins, die von den [Zwergen](/factions/zwerge.md) vertrieben wurde. Sie ist zahlreich und wird von einem Schamanen angeführt. Anfangs zeigte sie sich unnachgiebig, willigte aber schließlich in einen Friedensvertrag ein.
 
 # Belege
 
-[P-03] Session 2025-04-09 @ 00:02:59 – https://www.youtube.com/watch?v=1PWdwvun5ow
-[P-05] Session 2025-04-23 @ 00:23:33 – https://www.youtube.com/watch?v=z3C-bewKqUs
-[P-29] Session 2025-11-14 @ 00:12:14 – https://www.youtube.com/watch?v=8Khb-Y8XbKY
-[P-35] Session 2026-01-27 @ 00:15:55 – https://www.youtube.com/watch?v=9RzvnnWzV7E
+[P-02] Session 2025-04-01, 00:05:20 – https://www.youtube.com/watch?v=LZIuUzc3F18
+[P-03] Session 2025-04-09, 00:02:30 – https://www.youtube.com/watch?v=1PWdwvun5ow
+[P-29] Session 2025-11-14, 00:06:51 – https://www.youtube.com/watch?v=8Khb-Y8XbKY
+[P-35] Session 2026-01-27, 00:15:00 – https://www.youtube.com/watch?v=9RzvnnWzV7E

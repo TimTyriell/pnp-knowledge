@@ -1,8 +1,8 @@
 ---
 type: Event
 title: Kampf gegen die Tentakel
-description: An der Statue und dem Kristallturm greifen Tentakel aus dem Boden an.
-  Lunara verbrennt zwei, Dodo wird geschleudert und ein Riesenmaul bric…
+description: Die Gruppe wird von Tentakeln angegriffen, die aus dem Boden kommen.
+  Sie wehren sich, aber Dodo wird hochgeschleudert. Lunara verbrennt zwe…
 tags:
 - events
 timestamp: '2026-06-10T00:00:00Z'
@@ -10,8 +10,8 @@ id: EVENT_KAMPF_GEGEN_DIE_TENTAKEL
 subtype: Kampf
 ---
 
-An der Statue und dem Kristallturm greifen Tentakel aus dem Boden an. Lunara verbrennt zwei, [Dodo](/characters/dodo.md) wird geschleudert und ein Riesenmaul bricht auf. Dank Schleier und Taktik entkommen sie. Erste Bewährungsprobe in der Narbe.
+Die Gruppe wird von Tentakeln angegriffen, die aus dem Boden kommen. Sie wehren sich, aber [Dodo](/characters/dodo.md) wird hochgeschleudert. Lunara verbrennt zwei mit Schattenfeuer, [Lindo Laut](/characters/lindo_laut.md) schneidet einen ab.
 
 # Belege
 
-[P-53] Session 2026-06-10 @ 00:51:10 (https://www.youtube.com/watch?v=_3tLSiT1tck)
+[P-53] Session 2026-06-10 @ 00:50:10 (https://www.youtube.com/watch?v=_3tLSiT1tck)

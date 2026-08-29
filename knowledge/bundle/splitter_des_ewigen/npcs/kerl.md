@@ -1,27 +1,25 @@
 ---
 type: NPC
 title: Kerl
-description: Kerl ist ein Wächter, der zunächst zu den beiden Wachen gehört, die das
-  Haus des Bürgermeisters bewachen, und später als Leibgardist des Gr…
+description: Kerl ist ein Wächter in Brechka. Zunächst gehört er zu den beiden Wachen
+  des Dorfes, später wird er zum Leibwächter des Grafen befördert. G…
 tags:
 - npcs
 timestamp: '2025-06-25T00:00:00Z'
 id: NPC_KERL
 ---
 
-Kerl ist ein Wächter, der zunächst zu den beiden Wachen gehört, die das Haus des Bürgermeisters bewachen, und später als Leibgardist des Grafen in Erscheinung tritt. Er begegnet Fremden mit Skepsis, prahlt mit seinem langen Speer und lässt sich durch Drohungen nicht beeindrucken.
+Kerl ist ein Wächter in [Brechka](/locations/breska.md). Zunächst gehört er zu den beiden Wachen des Dorfes, später wird er zum Leibwächter des Grafen befördert. Gegenüber der Gruppe tritt er anfangs misstrauisch auf, zeigt sich nach seiner Beförderung jedoch freundlich und stolz auf seine neue Position.
 
-## Werdegang
+## Wache von Brechka
 
-Während der Ereignisse vom 9. April 2025 bewacht Kerl zusammen mit einem weiteren Wächter das Haus des Bürgermeisters. Als [Valeria](/characters/valeria.md) und [Rotunas](/characters/rotunas.md) Einlass begehren, ist er zunächst skeptisch und gewährt ihnen erst nach der Fürsprache von Tindrach den Zutritt.
+Als einer der beiden Wachen gehört Kerl zu den wenigen Kämpfern des Dorfes. Er ist Fremden gegenüber misstrauisch, lässt sich aber von [Valeria](/characters/valeria.md) einschüchtern. Als die Gruppe den Bürgermeister aufsuchen will, verweist er sie an [Tindrael](/npcs/tindrael.md), den Grabwächter, um die Erlaubnis zu erhalten, zum Bürgermeister zu gehen.
 
-Bis zum 25. Juni 2025 hat sich seine Stellung verändert: Er gehört nicht mehr der Dorfwache an, sondern ist inzwischen Leibgardist des Grafen. In dieser Funktion lässt er die Helden zum Grafen vor, obwohl er sich an einer Bemerkung von Rotunas stört.
+## Leibwächter des Grafen
 
-## Auftreten und Beziehungen
-
-Kerl zeigt ein selbstbewusstes, leicht prahlerisches Auftreten. Er hebt seinen langen Speer hervor und lässt sich auch von [Dodos](/characters/dodo.md) Keule nicht einschüchtern. Gegenüber Valeria und Rotunas bleibt er reserviert; eine entscheidende Rolle spielt die Fürsprache Tindrachs, die ihn dazu veranlasst, sie passieren zu lassen. Auch später reagiert er empfindlich auf Rotunas’ Bemerkung, gewährt den Helden aber trotzdem den Zutritt zum Grafen.
+Zu einem späteren Zeitpunkt wird Kerl zum Leibwächter des Grafen befördert. In dieser Funktion begleitet er die Gruppe in die Gruft, wo er Türen mit einem magischen Gegenstand öffnet. Dabei tritt er freundlich auf und prahlt mit seiner neuen Position.
 
 # Belege
 
-[P-03] Session 2025-04-09, 00:17:25 – https://www.youtube.com/watch?v=1PWdwvun5ow
-[P-13] Session 2025-06-25, 00:18:44 – https://www.youtube.com/watch?v=tpkO9uGw6-I
+[P-03] Session 2025-04-09 @ 00:17:22 – https://www.youtube.com/watch?v=1PWdwvun5ow
+[P-13] Session 2025-06-25 @ 00:18:44 – https://www.youtube.com/watch?v=tpkO9uGw6-I

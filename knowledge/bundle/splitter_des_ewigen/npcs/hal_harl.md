@@ -1,40 +1,31 @@
 ---
 type: NPC
 title: Harl
-description: Harl ist ein charismatischer Bandit aus dem Nordland und Anführer der
-  Silberkerne. In der Banditenfestung, einem Lager der Silberkerne in e…
+description: Harl ist Anführer der Silberkornbande und zugleich stellvertretender
+  Anführer ihres Lagers in der Banditenfestung. Der Mann mit nordländisc…
 tags:
 - npcs
-timestamp: '2026-03-18T00:00:00Z'
+timestamp: '2026-02-24T00:00:00Z'
 id: NPC_HAL_HARL
 aliases:
-- Hal (Harl)
-- HAL
 - Hal
 ---
 
-Harl ist ein charismatischer Bandit aus dem Nordland und Anführer der Silberkerne. In der Banditenfestung, einem Lager der Silberkerne in einer Burgruine, bekleidet er zugleich die Position des stellvertretenden Anführers. Er dient einer elbischen Herrin, die unter anderem über die Aufnahme von Flüchtlingen entscheidet. Im Verlauf der Kampagne trat Harl als Verhandlungspartner der Gruppe, als Warner vor Gefahren im Osten und als Verteidiger des Lagers in Erscheinung.
+Harl ist Anführer der Silberkornbande und zugleich stellvertretender Anführer ihres Lagers in der Banditenfestung. Der Mann mit nordländischem Akzent tritt charmant und verhandlungsgeschickt auf, zeigt sich aber misstrauisch und fordernd. In der Kampagne spielt er eine zentrale Rolle bei der Unterbringung der Flüchtlinge und der Verteidigung des Lagers.
 
-## Stellung und Charakter
+## Rolle in der Silberkornbande
 
-Harl führt die Silberkerne und ist zugleich stellvertretender Anführer der Banditenfestung, die den Silberkernen als Lager dient. Gegenüber der Abenteurergruppe zeigte er sich sowohl drohend als auch versöhnlich: In der Verhandlung um das Flüchtlingslager schwor er nach deren Abschluss auf seine Ehre und erwies sich am nächsten Morgen als kooperativ. Nyrellas Aufbauarbeit erkannte er widerwillig an. Nyrella schenkte er eine handgeschnitzte Puppe mit dem Symbol der Silberkerne, die er aus seinem Vorleben trug.
+In der Banditenfestung, die ein Lager der Silberkornbande ist, bekleidet Harl das Amt des stellvertretenden Anführers; zugleich ist er der Anführer der gesamten Bande. Bei der einzigen Verhandlung mit den Rotunas-Freunden, in der Lindo Laut die Gruppe vertrat, bestand Harl darauf, mit dem Anführer der Gruppe zu sprechen. Der vereinbarte Preis für das Campieren der Flüchtlinge betrug eine Truhe Gold, also zehn Säcke Gold. Er warnte, den Preis zu erhöhen, falls es Probleme gäbe, und drohte, die Dorfbewohner zu töten, falls die Gruppe ihn verrate. Lindo Laut las in seinen Gedanken, dass Harl vor allem um sein Ansehen vor seinen Männern fürchtete. Nach der Verhandlung akzeptierte er die Gruppe und warnte sie vor einer Hexe im Osten.
 
-## Verhandlung und Bündnis
+## Beziehung zu den Geflüchteten und späterer Verbleib
 
-Bei der Verhandlung um die Unterbringung der Flüchtlinge vertrat [Lindo Laut](/characters/lindo_laut.md) die Gruppe. Harl forderte zunächst sechs bis acht Säcke Gold; nach der Zusicherung von Handwerkerdiensten einigte er sich auf eine Truhe Gold, entsprechend zehn Säcken. Zwei Säcke akzeptierte er als Anzahlung, nach der vollständigen Zahlung willigte er ein. Während der stockenden Verhandlung drohte er mit Gewalt. Anschließend warnte er vor einer Hexe im Osten und vor zunehmender Untotenaktivität.
-
-Im Winter rief Harl die Gruppe in sein Zelt, um Nachrichten aus Breska und die Strategie für den Frühling zu besprechen. Er fürchtete, dass seine Bande das Lager nicht ewig halten könne, und kündigte an, nach dem Winter mit den Flüchtlingen zu seiner übergeordneten Streitmacht aufzubrechen. Als [Belorus](/npcs/belorus.md) vor dem Lager erschien, ließ er sofort das Tor schließen.
-
-## Verteidigung des Lagers und spätere Entwicklungen
-
-Bei der Verteidigung des Verstecks koordinierte Harl die Abwehr, feuerte die Balliste und blies nach hohen Verlusten den Rückzug. Nach der Schlacht dankte er der Gruppe überschwänglich, gestand, dass sie seine Erwartungen übertroffen hätten, und versprach, dass die Banditengilde ihnen auf ewig zu Dank verpflichtet sei. Später berieten die Banditen über fehlende Befehle von Harl und [Sarina](/npcs/sarina.md). Harl schickte der Gruppe die handschriftliche Nachricht „findet einen Sündenbock. H." und bat sie damit indirekt, den Verdacht von den Silberkernen abzulenken.
+Aus Sorge um die Sicherheit des Lagers schlug Harl vor, nach dem Winter abzuziehen, und war bereit, die Flüchtlinge mitzunehmen. Er zeigte sich dankbar für Nyrellas Arbeit. Er informierte die Gruppe über den Hilferuf aus Breska und eine Nachricht von Belorus. Bei einem Angriff auf das Lager koordinierte er die Verteidigung, gab seinen Leuten Befehle und kämpfte pragmatisch und mutig; nach dem Sieg erkannte er die Gruppe respektvoll an. Später jedoch verlieren die Banditen seine Spur: Zuletzt berichteten sie, Harl habe Nyrella ein kleines Püppchen als Glücksbringer gegeben und habe Probleme mit der Armee der Untoten gehabt, die jedoch gelöst wurden. Seither haben sie lange nichts von ihm gehört.
 
 # Belege
 
-[P-23] Session vom 23.09.2025, 01:10:12 – https://www.youtube.com/watch?v=DGzfqVigS0g
-[P-24] Session vom 30.09.2025, 02:06:31 – https://www.youtube.com/watch?v=bUT7Mc2hjUY
-[P-33] Session vom 13.01.2026, 02:14:15 – https://www.youtube.com/watch?v=w4LB1s9_3rs
-[P-34] Session vom 20.01.2026, 02:00:08 – https://www.youtube.com/watch?v=H3ckYdTv4y8
-[P-38] Session vom 24.02.2026, 00:36:41 – https://www.youtube.com/watch?v=WOFArbwDDIQ
-[P-41] Session vom 18.03.2026, 01:45:21 – https://www.youtube.com/watch?v=HHXxsASLrbQ
-7. Kanon_Entscheidungen.md – Spielleitungs-Festlegungen zu „Hal / Harl" und „Verhandlung mit Harl"
+[P-23] Session 2025-09-23, 01:10:12, https://www.youtube.com/watch?v=DGzfqVigS0g
+[P-24] Session 2025-09-30, 01:02:14, https://www.youtube.com/watch?v=bUT7Mc2hjUY
+[P-33] Session 2026-01-13, 00:36:24, https://www.youtube.com/watch?v=w4LB1s9_3rs
+[P-34] Session 2026-01-20, 00:09:00, https://www.youtube.com/watch?v=H3ckYdTv4y8
+[P-38] Session 2026-02-24, 00:38:12, https://www.youtube.com/watch?v=WOFArbwDDIQ
+6. Kanon_Entscheidungen.md (Spielleitungs-Festlegungen zu „Hal/Harl“ und „Verhandlung mit Harl“)

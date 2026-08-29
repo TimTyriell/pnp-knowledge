@@ -1,8 +1,8 @@
 ---
 type: Event
 title: Erweckung von Voras
-description: In den Katakomben öffnet die Gruppe den Sarkophag von Voras und Lendras
-  bricht den Bann, sodass der Vampir erwacht. Es stellt sich heraus,…
+description: Lendras bricht den Bann über Voras und erweckt ihn aus seinem Sarg. Voras
+  stellt sich als der Heilige vor und bietet seine Hilfe an.
 tags:
 - events
 timestamp: '2025-04-23T00:00:00Z'
@@ -10,8 +10,8 @@ id: EVENT_ERWECKUNG_VON_VORAS
 subtype: Ritual
 ---
 
-In den Katakomben öffnet die Gruppe den Sarkophag von [Voras](/npcs/voras.md) und [Lendras](/npcs/lendras.md) bricht den Bann, sodass der Vampir erwacht. Es stellt sich heraus, dass er ein Verbündeter ist und nicht der erwartete Feind.
+[Lendras](/npcs/lendras.md) bricht den Bann über [Voras](/npcs/voras.md) und erweckt ihn aus seinem Sarg. [Voras](/npcs/vora.md) stellt sich als der Heilige vor und bietet seine Hilfe an.
 
 # Belege
 
-[P-05] Session 2025-04-23 @ 01:49:53 (https://www.youtube.com/watch?v=z3C-bewKqUs)
+[P-05] Session 2025-04-23 @ 01:53:19 (https://www.youtube.com/watch?v=z3C-bewKqUs)

@@ -1,8 +1,8 @@
 ---
 type: Event
 title: Kampf gegen den Geist von Rotunas
-description: In der Runenkammer erscheint nach Rotunas' Berührung einer Rune ein geisterhafter
-  Doppelgänger (01:02:48). Der Geist greift mit magischem S…
+description: Die Gruppe wird in einem Gang von einer geisterhaften Kreatur in Rotunas'
+  Gestalt angegriffen. Dodo kann sie nicht verletzen, aber Rotunas'…
 tags:
 - events
 timestamp: '2025-06-10T00:00:00Z'
@@ -10,8 +10,8 @@ id: EVENT_KAMPF_GEGEN_DEN_GEIST_VON_ROTUNAS
 subtype: Kampf
 ---
 
-In der [Runenkammer](/locations/runenkammer.md) erscheint nach [Rotunas](/characters/rotunas.md)' Berührung einer Rune ein geisterhafter Doppelgänger (01:02:48). Der Geist greift mit magischem Schaden an, ist aber anfällig für Magie (01:03:13). Rotunas besiegt ihn mit einem Energiestoß (01:07:21). Der Kampf zeigt die Gefahr der Runen und die Verbindung zur Kammer.
+Die Gruppe wird in einem Gang von einer geisterhaften Kreatur in [Rotunas](/characters/rotunas.md)' Gestalt angegriffen. [Dodo](/characters/dodo.md) kann sie nicht verletzen, aber Rotunas' Energiewelle löst sie auf.
 
 # Belege
 
-[P-11] Session 2025-06-10 @ 01:02:48 (https://www.youtube.com/watch?v=cLkCu3Iq3y8)
+[P-11] Session 2025-06-10 @ 01:02:42 (https://www.youtube.com/watch?v=cLkCu3Iq3y8)

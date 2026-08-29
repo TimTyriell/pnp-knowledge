@@ -1,8 +1,8 @@
 ---
 type: Location
 title: Taverne Kyla von Sanddorn
-description: Barans gut besuchte Taverne auf der Hauptinsel, das größere der beiden
-  Wirtshäuser. Hier verkehren viele nicht-menschliche Gäste wie Gnome…
+description: Die Taverne Kyla ist das Etablissement von Baran auf Sanddorn. Sie ist
+  gut besucht und beherbergt viele Anderlinge. In einem privaten Raum…
 tags:
 - locations
 timestamp: '2025-04-30T00:00:00Z'
@@ -12,8 +12,8 @@ aliases:
 - Taverne Kyla
 ---
 
-[Barans](/npcs/baran.md) gut besuchte [Taverne](/locations/taverne.md) auf der Hauptinsel, das größere der beiden Wirtshäuser. Hier verkehren viele nicht-menschliche Gäste wie Gnome und Baren. Im Obergeschoss unterhält Baran ein privates Forschungszimmer voller magischer Bücher, Tränke und Truhen. Der Eingang ist bewacht; die Gruppe wird von [Joar Vanur](/npcs/joar_vanur.md) hineingeführt.
+Die [Taverne](/locations/taverne.md) Kyla ist das Etablissement von [Baran](/npcs/baran.md) auf [Sanddorn](/locations/sanddorn.md). Sie ist gut besucht und beherbergt viele Anderlinge. In einem privaten Raum bewahrt Baran magische Gegenstände und Dokumente auf.
 
 # Belege
 
-[P-06] Session 2025-04-30 @ 01:40:00 (https://www.youtube.com/watch?v=fsCOiSkKKTE)
+[P-06] Session 2025-04-30 @ 01:48:12 (https://www.youtube.com/watch?v=fsCOiSkKKTE)

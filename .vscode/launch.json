@@ -5,7 +5,7 @@
       "id": "transcriptDir",
       "type": "promptString",
       "description": "Transcript directory for the KB pipeline",
-      "default": "C:/dev/pnp/pnp-crawl/transcripts_final"
+      "default": "${workspaceFolder}/../pnp-crawl/transcripts_final"
     },
     {
       "id": "bundleDir",
@@ -59,7 +59,7 @@
       "request": "launch",
       "python": "${workspaceFolder}/services/kb/.venv/Scripts/python.exe",
       "module": "pnp_okf.cli",
-      "args": ["run", "--transcripts", "${input:transcriptDir}", "--bundle", "${input:bundleDir}", "--cache", "${input:cacheDir}", "--limit", "${input:limit}", "--force"],
+      "args": ["run", "--transcripts", "${input:transcriptDir}", "--bundle", "${workspaceFolder}/services/kb/.test-bundle", "--cache", "${workspaceFolder}/services/kb/.test-cache", "--limit", "${input:limit}", "--force"],
       "cwd": "${workspaceFolder}/services/kb",
       "env": { "PYTHONPATH": "${workspaceFolder}/services/kb/src" },
       "envFile": "${workspaceFolder}/services/kb/.env",

@@ -1,64 +1,69 @@
 ---
 type: Character
 title: Saris
-description: Ein wissensdurstiger Tiefling mit zwei magischen Schädeln, Jonathan und
-  Samuel, als Patron. Er studiert mit seiner Lupe Brumas Hand und fra…
+description: Saris ist ein Tiefling-Gelehrter, der sich durch eine ausgeprägte Wissbegierde
+  und einen Hang zum Makabren auszeichnet. Er kommuniziert mit…
 tags:
 - characters
-timestamp: '2026-08-06T00:00:00Z'
+timestamp: '2026-08-20T00:00:00Z'
 id: CHAR_SARIS
 ---
 
 ## Überblick
-Saris ist ein wissenshungriger Tiefling, der als Mitglied einer Abenteurergruppe umherzieht. Getrieben von einer fast klinischen Neugier auf alles Fremde, verbindet er die Gabe der Blutmagie mit einer unersättlichen Forschernatur. Zwei magische Schädel – Jonathan und Samuel – begleiten ihn, und ein geheimnisvoller Patron raunt ihm aus dem Jenseits Warnungen zu. Saris lebt ohne jede Erinnerung an die Zeit vor zwölf Jahren, als er auf einem Feld erwachte – eine Lücke, die weder er noch andere zu füllen vermögen.
+
+Saris ist ein Tiefling-Gelehrter, der sich durch eine ausgeprägte Wissbegierde und einen Hang zum Makabren auszeichnet. Er kommuniziert mit zwei Schädeln namens Jonathan und Samuel, die ihm als Begleiter und Informationsquellen dienen. Saris ist ein Magiebegabter, der Blutmagie einsetzt und ein besonderes Interesse an Kreaturen, Leichen und alchemistischen Substanzen hat. Sein Gedächtnis beginnt vor zwölf Jahren, als er auf einem Feld erwachte – an alles, was davor geschah, kann er sich nicht erinnern. In der Gruppe wird er oft als unheimlich oder ungeschickt wahrgenommen, bleibt aber stets neugierig und in seine Studien vertieft.
 
 ## Rolle in der Kampagne
-Innerhalb der Gruppe vereint Saris die Aufgaben eines Gelehrten und eines offensiven Magiers. Er seziert fremde Wesen und Artefakte, sammelt Proben und protokolliert anatomische Erkenntnisse. Im Kampf wird sein Auftreten schlagartig kühl und präzise: Er nutzt das Blut Gefallener, um daraus tödliche Geschosse zu formen, und schließt Lücken mit effizienten Dolchstößen. Zugleich hält er die Verbindung zu seinem übernatürlichen Patron, von dem er Hinweise auf eine drohende „Dunkelheit“ erhält und nach Wegen sucht, diese zu besiegen.
+
+Saris ist Mitglied der Abenteurergruppe, die gemeinsam mit Kaya, Bruma Stormrak und Sange das Dorf vor Gefahren beschützt. Während die anderen Mitglieder eher kämpferische oder soziale Rollen einnehmen, bringt Saris vor allem sein Wissen und seine magischen Fähigkeiten ein. Er untersucht Kreaturen wie den toten Grottenschrat und die Hand von Bruma, notiert sich Details und schlägt praktische Lösungen vor, etwa die Mine mit Rauch auszuräuchern. Seine Blutmagie macht ihn im Kampf zu einem gefährlichen Gegner, der Gegner mit einem Dolch tötet und Blut von Feinden sammelt. Gleichzeitig ist er in Gedanken versunken und wirkt oft abwesend, was ihn in der Gruppe zu einer schwer einzuschätzenden Figur macht.
 
 ## Wichtige Merkmale
 
-### Erscheinung und Auftreten
-Saris gleicht äußerlich einem Tiefling – einer Spezies, die selbst in einer fantastischen Welt selten anzutreffen ist. Er trägt eine Brille mit einer Vorrichtung, die er als Lupe nutzt; ein Stein oder eine Linse ermöglicht es ihm, Gegenstände und Körperteile vergrößert zu studieren. Seine Augen sind hinter den Gläsern kaum zu erkennen. Sobald er seine Blutmagie einsetzt, ist ein deutlicher Charakterwechsel spürbar: Aus dem zerstreuten Forscher wird ein fokussierter, eiskalter Kämpfer. Seine Kleidung bleibt von diesen Einsätzen oft nicht sauber – beim missglückten Versuch, einen Grottenschrat zu erlösen, tränkte er sich mit Blut.
+**Äußeres Erscheinungsbild:** Saris ist ein Tiefling, der eine Brille trägt. Diese wird von dem Zwerg Turbo in der Stadt als „nicht so gut wie bei dir“ bezeichnet, was darauf hindeutet, dass Saris' Brille von besonderer Qualität ist.
 
-### Persönlichkeit
-Saris zeigt eine beinahe zwanghafte Neugierde. Er will verstehen, wie Dinge und Wesen funktionieren, und schert sich wenig um gesellschaftliche Konventionen. Ohne Zögern greift er nach der Hand eines Fremden und untersucht sie unter der Lupe, ohne eine Vorstellung abzuwarten. [Kaya](/characters/kaya.md), seine Gefährtin, muss ihn regelmäßig bremsen und sozial abfedern („Mann, Saris, jetzt dress den doch nicht mal so direkt. Lass ihn sich doch erstmal mit allen bekannt machen.“). In Gefechten und im Umgang mit Leichen legt Saris eine befremdlich wirkende Effizienz an den Tag, die von den anderen als kalt und berechnend wahrgenommen wird. Gleichzeitig ist er nicht frei von Unbeholfenheit: Als er einen sterbenden Grottenschrat von seinen Qualen erlösen will, drückt er fälschlich einen Pfeil tiefer, bevor er das Wesen mit dem Dolch tötet – und notiert sich danach eifrig anatomische Beobachtungen.
+**Wesenszüge:** Saris ist durchgehend gut gelaunt und neugierig. Er selbst sagt über sich: „Saris geht es immer gut. Immer gut gelaunter Tiefling. Es gibt immer was zum Studieren. Es gibt immer was zum Sehen, zum Aufschreiben, Wissen zu verbrennen, um es weiterzuleiten.“ Diese Selbstbeschreibung trifft seinen Charakter treffend: Er ist ein Sammler von Wissen und Proben, der neue Kreaturen mit Begeisterung aufnimmt. Gleichzeitig zeigt er eine eiskalte und kalkulierte Seite, wenn er Blut von Feinden sammelt oder ein Ritual an einer Leiche durchführt. Die Gruppe nimmt ihn oft als unheimlich oder ungeschickt wahr.
 
-### Fähigkeiten
-- **Blutmagie:** Saris kann Blut aus toten oder sterbenden Körpern extrahieren, es in der Luft schweben lassen und zu spitzen Nadeln oder Pfeilspitzen formen, die er auf Gegner schleudert. Treffer durchbohren die Ziele und reißen weitere Wunden auf („Das ganze Blut aus dem Körper des getöteten gerade Goblins schwebt hoch. Es bilden sich so Pfeilspitzen und die fliegen einfach auf den zwei Meter weiter stehenden Goblin daneben. Komplett durchlöchern ihn.“).  
-- **Patron-Kommunikation:** In stillen Nächten oder brenzligen Momenten nimmt Saris Kontakt zu einem unheimlichen Wesen auf, von dem er Wissen über Götter und Warnungen empfängt. Der Patron warnte ihn eindringlich: *„Dunkelheit kommt!“*  
-- **Schädel-Gefährten:** Die beiden magischen Schädel Jonathan und Samuel sind ständige Begleiter, verharren jedoch oft in Schweigen. Ihre genaue Funktion – ob als Vermittler des Patrons oder als eigenständige Machtquellen – bleibt unklar.  
-- **Kampfausrüstung:** Saris führt eine Waffe, die einem Morgenstern mit ausfahrbaren Stacheln ähnelt, und setzte sie gegen Goblin-Horden ein. Im Nahkampf tötete er eine Bugbärin mit einem schnellen Dolchstoß. Aus der Mine brachte er einen Knochendolch mit, den eine wiederbelebte Leiche aus der eigenen Brust riss und ihm als Waffe gegen die Dunkelheit überließ.
+**Magische Fähigkeiten:** Saris beherrscht Blutmagie, die er im Kampf einsetzt, um Gegner zu töten. Er führt Rituale an Leichen durch, bei denen er magische Gegenstände erhält – so geschehen in der Mine, wo ihm ein untotes Wesen einen Knochendolch überreichte.
 
-### Die verlorenen Jahre
-In einer Taverne vertraute Saris seinen Gefährten an: Vor zwölf Jahren erwachte er auf einem offenen Feld – ohne jede Erinnerung an sein vorheriges Leben. Niemand, den er seither traf, konnte die Lücke füllen oder überhaupt etwas über seine Vergangenheit sagen. Dieses fundamentale Rätsel ist ein zentraler Antrieb seines Wissensdurstes.
+**Die Schädel Jonathan und Samuel:** Saris kommuniziert mit zwei Schädeln, die ihm als Begleiter dienen. Er redet mit ihnen, und sie liefern ihm Informationen – etwa über die Rasse der Goblins und Gnolle. Andere Gruppenmitglieder wie Kaya können die Schädel nicht hören, tun aber manchmal so, als ob sie es könnten. Jonathan hatte Kaya ursprünglich davor gewarnt, einen Gott anzunehmen.
+
+**Gedächtnisverlust:** Saris wachte vor zwölf Jahren auf einem Feld auf und kann sich an nichts davor erinnern. Er teilt seine Erkenntnis, dass niemand sich an die Zeit vor zwölf Jahren erinnern kann, was auf ein großes Ereignis hindeutet, das die Welt verändert haben muss.
 
 ## Beziehungen und Verbindungen
 
-- **[Kaya](/characters/kaya.md):** Die Bardin der Gruppe bremst Saris‘ Übereifer und schützt neue Bekanntschaften vor seiner direkten Art. Sie stellt ihn gegenüber Fremden vor und zieht ihn notfalls zur Seite. Saris scheint ihre Fürsorge zu akzeptieren, reagiert auf ihre Mahnungen jedoch gelegentlich mit echter Verwirrung.  
-- **[Bruma Stormrak](/characters/bruma_stormrak.md):** Der Drakuna weckt sofort Saris‘ wissenschaftliches Interesse. Gleich bei der ersten Begegnung nimmt er dessen Hand unter die Lupe und befragt ihn zu Sturmvorhersagen und möglichen Artefakten. Später in der Mine vertraut Saris ihm die Warnung des Patrons an und bittet ihn, einer Leiche Fragen zu stellen; als Resultat erhält Saris den Knochendolch. Bruma zeigt Respekt vor seiner unkonventionellen Art und schreckt vor der Direktheit nicht zurück.  
-- **Zange:** Der dritte im Bunde der ursprünglichen Gruppe wird gemeinsam mit Saris von Kaya vorgestellt. Genauere Interaktionen sind bislang nicht dokumentiert.  
-- **Patron:** Das unsichtbare, geheimnisvolle Wesen versorgt Saris mit Informationen und prophetischen Mahnungen. In der Rückschau führte die Warnung vor der Dunkelheit zum Erhalt des Knochendolchs, der offenbar eine spezielle Bewandtnis haben könnte.  
-- **Jonathan und Samuel:** Die Schädel gelten als magisch, doch schon in der zweiten belegten Session bleiben sie stumm. Ob sie der Kanal zum Patron sind oder unter eigenem Willen handeln, ist offen.  
-- **Siby:** Ein Halbling, den Saris im Farmlager erschreckt, indem er plötzlich hinter ihm auftaucht. Eine darüberhinausgehende Beziehung besteht nicht.
+**Jonathan und Samuel:** Die beiden Schädel sind Saris ständige Begleiter. Sie sitzen auf seinen Schultern oder blicken über sie und schauen auf die Dinge, die Saris untersucht. Sie dienen ihm als Informationsquellen und Gesprächspartner. Jonathan hatte Kaya vor der Annahme eines Gottes gewarnt.
+
+**Kaya:** Kaya ist eine Gefährtin von Saris, die sich Sorgen um den neuen Gott macht, den Saris angenommen hat. Sie beugt ihn ab und an, um zu sehen, ob etwas passiert. Sie tut gerne so, als würde sie die Schädel hören, und unterhält die Gruppe bei längeren Wanderungen mit Musik. Mit Kaya bespricht Saris auch die Beobachtung des Magiers in der Stadt und schlägt vor, ihn zu beobachten.
+
+**Bruma Stormrak:** Bruma ist ein angespannter Gefährte, der die Gefahr für das Dorf ernst nimmt und sich darüber ärgert, dass andere sie nicht ernst nehmen. Saris untersucht Brumas Hand, was auf eine besondere Verbindung oder ein gemeinsames Ereignis hindeutet.
+
+**Der Patron:** Saris hat einen Patron, der ihm eine Warnung über kommende Dunkelheit übermittelt. In der Mine spricht Saris zu diesem Patron: „Ich weiß, dass ihr es wart. Ich habe eure Stimme empfangen. Ich weiß, ich höre sie nicht häufig, aber ich weiß, wenn ich euch höre. Und ihr habt mich, ich weiß nicht, gewarnt oder was auch immer das war. Aber ihr habt mir was von der Dunkelheit erzählt und ich will wissen, wie man sie besiegt. Oder zumindest, wie ich diese Kraft mein eigen nennen kann.“ Die genaue Natur dieses Patrons bleibt unklar.
+
+**Turbo:** In der Stadt trifft Saris auf den Zwerg Turbo, der einen alchemistischen Laden betreibt. Turbo trägt eine kleine Brille und scheint Ahnung von seinem Handwerk zu haben. Bei ihm kauft Saris einen Schlaftrunk und leere Fläschchen.
+
+**Der Magier:** In der Stadt spürt Saris eine unheimliche Energie von einem Magier, die der des untoten Gnolls ähnelt. Er bespricht diese Beobachtung mit Kaya und schlägt vor, den Magier zu beobachten.
 
 ## Chronologie
 
-### Erste Begegnung mit Bruma (2026-07-10)
-Saris packt sofort die Hand des neuen Gefährten, um sie unter seiner Lupen-Brille zu studieren, und überschüttet Bruma mit Fragen zu Stürmen und Wetter-Artefakten. Kaya fängt die Situation ein und stellt klar, dass Saris nicht für Höflichkeitsrituale zu haben ist. Später am Tag begegnet die Gruppe einem sterbenden Grottenschrat. Saris versucht zu helfen, drückt aber den Pfeil tiefer und tötet das Wesen schließlich mit seinem Dolch – wobei er reichlich Blut auf seine Kleidung bekommt. Noch am Leichnam fertigt er eifrige Notizen zur Anatomie an. In der Nacht sucht er die Verbindung zu seinem Patron, bittet um Wissen über Götter und spürt gleichzeitig eine lauernde Präsenz um sich. Im Farmlager erschreckt er den Halbling Siby durch plötzliches Auftauchen und schlägt vor, die Mine auszuräuchern, wird damit aber überstimmt.
+**Session 2026-07-10:** Saris ist auf dem Weg mit der Gruppe und nutzt die Zeit, um Wissen über Goblins und Gnolle zu sammeln. Er hört Jonathan und Samuel zu, die ihm Informationen über diese Rassen liefern. Er untersucht Brumas Hand und den toten Grottenschrat, notiert sich Details und schlägt vor, die Mine mit Rauch auszuräuchern. Die Gruppe nimmt ihn als unheimlich wahr.
 
-### Überfall auf den Goblin-Außenposten (2026-07-23)
-Während eines Höhlenkampfes tötet Saris eine herabstürzende Bugbärin mit einem schnellen Dolchstoß. Als ein Goblin fällt, entzieht Saris dessen Körper alles Blut und formt daraus einen Hagel spitzer Nadeln, die einen benachbarten Bogenschützen durchlöchern. Seine Schädel Jonathan und Samuel bleiben in dieser Phase stumm, doch der Patron meldet sich unvermittelt mit der Warnung: *„Dunkelheit kommt!“*. Beim Klettern erleidet Saris einen Stressmoment, bleibt aber einsatzfähig; später kommt seine Morgenstern-artige Waffe mit ausfahrbaren Stacheln gegen die letzte Goblin-Horde zum Einsatz. Seine Gefährten nehmen ihn als eiskalt und effizient wahr.
+**Session 2026-07-23:** Die Gruppe dringt in eine Höhle ein, die von Halblingen gebaut wurde. Saris freut sich auf neue Kreaturen, die er noch nicht gesehen hat. Im Kampf tötet er eine Bugbear-Frau mit einem Dolch und nutzt Blutmagie, um Gegner zu töten. Er sammelt Proben von Goblin-Essen und Blut von Feinden. Sein Patron übermittelt ihm eine Warnung über kommende Dunkelheit.
 
-### Gang in die Mine und Offenbarung (2026-08-06)
-Saris entfernt sich von den anderen und begibt sich allein in die Mine. Vor einer Leiche berichtet er von der zerschlagenen Vorhut und fragt, wie man die Dunkelheit besiegen könne. Der Körper regt sich, reißt ihm mit grausamer Kraft eine Rippe aus der eigenen Brust, formt sie zu einem Knochendolch und hält ihm diesen entgegen – eine stumme Antwort. Während späterer politischer Diskussionen wirkt Saris geistesabwesend. In der Taverne erzählt er schließlich, dass er vor zwölf Jahren ohne Erinnerungen auf einem Feld erwachte und niemand ihm über sein früheres Leben Auskunft geben könne.
+**Session 2026-08-06:** In der Mine führt Saris ein Ritual an einer Leiche durch. Ein untotes Wesen erwacht, atmet röchelnd und rammt sich die Hand in die Brust, um eine Rippe herauszuziehen. Diese Rippe formt sich zu einem Knochendolch, den das Wesen Saris überreicht – als Antwort auf seine Frage, wie man die Dunkelheit besiegen oder die Kraft des Patrons für sich nutzen kann. Saris teilt seine Erkenntnis, dass niemand sich an die Zeit vor zwölf Jahren erinnern kann, was auf ein großes Ereignis hindeutet. Er wirkt abwesend und in Gedanken versunken.
+
+**Session 2026-08-20:** In der Stadt sucht Saris einen Gemischwarenladen und findet einen alchemistischen Laden, der von dem Zwerg Turbo betrieben wird. Er kauft einen Schlaftrunk und leere Fläschchen. Er spürt eine unheimliche Energie von einem Magier, die der des untoten Gnolls ähnelt, und bespricht mit Kaya die Beobachtung. Er schlägt vor, den Magier zu beobachten, und sichert sich ein Zimmer in der Taverne.
 
 ## Offene Fragen
-- Wer oder was ist Saris' Patron, und wie verknüpft er sich mit den Schädeln Jonathan und Samuel?  
-- Was genau ist die „Dunkelheit“, vor der der Patron warnte, und wie ist der Knochendolch gegen sie einzusetzen?  
-- Warum verlor Saris alle Erinnerungen, und weshalb kann sich niemand sonst an seine Vergangenheit erinnern?  
-- Welche Bewandtnis hat die „lauernde Präsenz“, die Saris während der Patron-Kommunikation spürt?
+
+- **Die Natur des Patrons:** Wer oder was ist Saris' Patron? Die Belege zeigen, dass der Patron mit Saris kommuniziert und ihm Warnungen übermittelt, aber seine Identität und sein Wesen bleiben unklar.
+- **Das Ereignis vor zwölf Jahren:** Saris wachte vor zwölf Jahren auf einem Feld auf und kann sich an nichts davor erinnern. Er vermutet, dass niemand sich an diese Zeit erinnern kann, was auf ein großes Ereignis hindeutet. Was genau geschah vor zwölf Jahren?
+- **Die Herkunft der Schädel:** Woher stammen Jonathan und Samuel, und was sind sie genau? Die Belege geben keine Auskunft über ihre Herkunft.
+- **Der Magier in der Stadt:** Wer ist der Magier, dessen Energie der des untoten Gnolls ähnelt? Saris plant, ihn zu beobachten, aber die Ergebnisse dieser Beobachtung sind nicht bekannt.
+- **Der Knochendolch:** Welche Bedeutung hat der Knochendolch, den Saris in der Mine erhalten hat? Er wurde als Antwort auf seine Frage übergeben, aber seine genauen Eigenschaften und Kräfte sind unklar.
 
 ## Belege
-[S1-01-B] Session 2026-07-10, 00:23:11, https://www.youtube.com/watch?v=H-eHSlfxUAg
-[S1-02-B] Session 2026-07-23, 00:24:35, https://www.youtube.com/watch?v=Gb-TEbCFF0M
-[S1-03-B] Session 2026-08-06, 00:45:14, https://www.youtube.com/watch?v=0HyPHao8s_k
+
+1. Session 2026-07-10 @ 00:08:56 – https://www.youtube.com/watch?v=H-eHSlfxUAg
+2. Session 2026-07-23 @ 00:03:57 – https://www.youtube.com/watch?v=Gb-TEbCFF0M
+3. Session 2026-08-06 @ 00:44:16 – https://www.youtube.com/watch?v=0HyPHao8s_k
+4. Session 2026-08-20 @ 00:49:47 – https://www.youtube.com/watch?v=2EkWrNUfQi0

@@ -131,12 +131,10 @@ merge:
   die geister im amulett: items/amulett_des_heiligen_duran
   cepros’ heiliger streitkolben: items/streitkolben_von_dodo
   der phönixfeder: items/die_phoenixfeder
-  cookies kaputter kompass: items/kaputter_kompass
   stab (lindos stab): items/lindo_lauts_stab
   stab: items/lindo_lauts_stab
   schattenfinger (kenku-kralle): items/schattenfinger
   schattenfinger-klaue: items/schattenfinger
-  gegengift aus dem sumpf: items/gegengifte
   der kristall: items/gruener_kristall
   göttliche handschellen: items/magische_handschellen
   schlüssel: items/magischer_schluessel
@@ -147,23 +145,14 @@ merge:
   willau (willoch): locations/willauch
   willauer: locations/willauch
   vilauch: locations/willauch
-  das flüchtlingslager: locations/fluechtlingslager
 
   # --- Place names: the town goes last ---------------------------------------
   # GM ruling 2026-07-28: a building keeps its own node — the graph wants the
   # edge between a place and the town it sits in — but the id has to say where
   # it is, and the town belongs at the end. "arena_von_willauch", never
   # "kapelle_in_ehrenfels" or an id that opens with the town.
-  arena von willoch: locations/arena_von_willauch
-  zweite arena (netzbereich): locations/zweite_arena_von_willauch
-  arena-lager: locations/arena_lager_von_willauch
   kapelle in ehrenfels: locations/kapelle_von_ehrenfels
   taverne in ehrenfels: locations/taverne_von_ehrenfels
-  ehrenfels (spitze mit wasserfall und krähenstatuen): locations/tempelanlage_von_ehrenfels
-  gruft in breska: locations/gruft_von_breska
-  flüchtlingslager vor bresca: locations/fluechtlingslager_von_breska
-  waldstück bei brechka: locations/waldstueck_bei_breska
-  die festung in boragdil: locations/festung_von_boragdil
   # One city described twice; the fortress inside it keeps its own node.
   boragdil (ruinenstadt und festung): locations/boragdil
   # "Villauch, eine große Stadt im Südwesten" is Willauch under a misheard name
@@ -172,8 +161,6 @@ merge:
   # 'die kapelle', 'der sumpf' and 'die mine' used to fold into one generic
   # concept each; those are now split per session below, because each name
   # covered three unrelated places. A merge here would rebuild the bucket.
-  der nebelsumpf: locations/sumpf_bei_nebelwacht
-  die brücke: locations/bruecke
   # The Silberkerne headquarters, seen four times over a year and named
   # differently each time: a ruined keep in a mountain basin that Hal's band
   # fortified, extended over the winter, and finally held against the undead.
@@ -186,17 +173,10 @@ merge:
   altes banditenlager: locations/banditenlager_der_silberkerne
   # A settlement, not a camp: Hendrik's clan has lived there for eleven or
   # twelve generations.
-  das berglager: locations/berglager_der_hendriks_sippe
-  das lagerhaus: locations/lagerhaus_von_ehrenfels
 
   # GM ruling: rooms fold into their dungeon. A dungeon is explored in one
   # sitting and its rooms have no life outside it, so each is a paragraph in
   # the dungeon's entry rather than a node with a single mention.
-  taverne im dungeon: locations/der_dungeon_der_uralten_unterkunft
-  schmiede im dungeon: locations/der_dungeon_der_uralten_unterkunft
-  forschungslabor: locations/der_dungeon_der_uralten_unterkunft
-  raum der drachenstatue: locations/der_dungeon_der_uralten_unterkunft
-  altarraum des uhoriaks: locations/der_dungeon_der_uralten_unterkunft
 
   # The sunken city says so itself: "Der Dungeon enthält mehrere Räume, darunter
   # ein Gewölbe mit Mosaik, einen Raum mit …". The Turm im Sumpf in the same
@@ -205,7 +185,6 @@ merge:
   muschelraum mit mimic: locations/versunkene_stadt_dungeon
   raum mit brunnen und gitter: locations/versunkene_stadt_dungeon
   kaminraum mit grüner flamme: locations/versunkene_stadt_dungeon
-  bibliothek der gruft: locations/gruft_des_grafen
   # The exploration continues a week later: the lab is "der letzte erforschte
   # Raum des Dungeons", and the Palantir ruling places it in the swamp dungeon.
   elektrischer gang: locations/versunkene_stadt_dungeon
@@ -217,26 +196,16 @@ merge:
   taverne (ungenannt): locations/taverne_von_ehrenfels
 
   # Taverns, assigned to the town their session plays in.
-  die schmierige taverne: locations/schmierige_taverne_von_willauch
-  die taverne neben der kirche: locations/taverne_neben_der_kirche_von_willauch
   zum grünen sichelmond: locations/zum_gruenen_sichelmond_von_tiefwasser
-  die taverne im gestrandeten schiff: locations/taverne_im_gestrandeten_schiff_von_tiefwasser
   taverne kyla: locations/taverne_kyla_von_sanddorn
 
   # One island group under two names, plus its main island as its own place.
   sanddorninseln (sundown-inseln): locations/sanddorninseln
-  sanddorn (hauptinsel): locations/hauptinsel_von_sanddorn
-  der turm: locations/turm
-  der alte turm: locations/turm
   kleinringtal: locations/ringtal
   berg zebras: locations/berge_von_zebros
   zebras berg: locations/berge_von_zebros
-  der katakomben-dungeon: locations/katakomben_unter_dem_friedhof
   kathedrale von steinbachtal: locations/kathedrale
-  der altarraum des ohoriaks: locations/altarraum_des_uhoriaks
-  die gruft des grafen: locations/gruft_des_grafen
   boragdil / brocadil: locations/boragdil
-  die arena: locations/arena_von_willauch
   naeruk: npcs/nyruk
   nai ruck: npcs/nyruk
   nairook (nayruk): npcs/nyruk
@@ -250,7 +219,6 @@ merge:
   die hack (hexe): npcs/lenra
   # The herb witch and the woman she serves ended up in one node because
   # {lady, kalen} is a subset of her full name and both had a single mention.
-  die hexe (alchemistin von lady kalen): npcs/kraeuterhexe_von_lady_kalen
   lady kalen: npcs/lady_kalen
   die sumpfhexe: npcs/lenra
   sumpfhexe: npcs/lenra
@@ -268,10 +236,14 @@ merge:
   # Folgelauf zu einem eigenen Konzept npcs/slix. Die Regel hält sie zusammen.
   slix: npcs/slix_vasul
   slix/vasul: npcs/slix_vasul
-  seraph: npcs/seraphen
   geistergestalt (bote von belorus): npcs/belorus
-  lord kaledan: npcs/lord_kalidarn_von_willauch
   lord von willauch: npcs/lord_kalidarn_von_willauch
+  # 2026-08-17 re-extraction dropped the "ch" (spoke "Lord Kalidarn von
+  # Willau"), which minted a duplicate npcs/lord_kalidarn_von_willau —
+  # folded back onto the stable id; Willauch is the campaign-canonical
+  # spelling (see locations/willauch below).
+  lord kalidarn von willau: npcs/lord_kalidarn_von_willauch
+  lord kaledan von willau: npcs/lord_kalidarn_von_willauch
   hack: npcs/lenra
   gildenmeister: npcs/nox
   gildemeister: npcs/nox
@@ -327,7 +299,6 @@ merge:
   die splitterwelt: domains/splitterwelt
   splitterwelt: domains/splitterwelt
   # The mention named "Cookie und Valeria" describes Valeria throughout.
-  wiese (cookie's begleiter): npcs/wiese
 
   # --- A deity that shows up in the flesh is still that deity --------------
   # Extraction types the same being as Deity in one sentence and NPC in the
@@ -378,32 +349,15 @@ merge:
   #
   # These keep their node and their text and only stop being Factions: a merge
   # into another directory adopts that directory's type. Nothing is lost.
-  brandau-widerstand: npcs/brandau_widerstand
-  dämonen (abyssalis): npcs/daemonen_abyssalis
-  die champions der arena: npcs/die_champions_der_arena
-  die schmuggler: npcs/die_schmuggler
-  dorfbewohner von gemata: npcs/dorfbewohner_von_gemata
   # GM ruling: these privateers are Harald's own crew, so they belong in his
   # entry rather than in a node of their own.
   freibeuter: npcs/freibeuter_harald
-  gnolle: npcs/gnolle
-  grottenschrate: npcs/grottenschrate
-  halblingsdorfbewohner: npcs/halblingsdorfbewohner
-  hendriks sippe: npcs/hendriks_sippe
-  hexenzirkel der nachtwächterinnen: npcs/hexenzirkel_der_nachtwaechterinnen
-  hydrid: npcs/hydrid
   kuatau: npcs/kuatau
-  ordensbrüder: npcs/ordensbrueder
   organisation der kalos: npcs/organisation_der_kalos
-  seraphen von vorgotha: npcs/seraphen_von_vorgotha
-  söldner des hauptmanns aaron: npcs/soeldner_des_hauptmanns_aaron
-  soldaten von willauch: npcs/soldaten_von_willauch
   # GM ruling: Voras stays an NPC and his clan is a faction of its own — they
   # were influential enough. Only unnamed or once-mentioned collectives get
   # pulled into the faction they belong to instead of keeping a node.
-  vampire/untote von voras: factions/sippe_des_voras
   die magier von belorus: factions/belorus_untotenarmee
-  vorgultars magier-assassinen: npcs/vorgultars_magier_assassinen
 
   # Every goblin band is the same people seen in a different place.
   goblin-armee: factions/goblins
@@ -417,13 +371,6 @@ merge:
   # One cult per god instead of one per phrasing. The cult stays a Faction of
   # its own — it is not the god — but "Anhänger X" and "Kultisten des X" are
   # the same body of worshippers.
-  anhänger vasuls: factions/kult_des_vharzul
-  vasulianer: factions/kult_des_vharzul
-  kultisten des varsurs: factions/kult_des_vharzul
-  kultisten von varsurs: factions/kult_des_vharzul
-  anhänger vorgulras: factions/anhaenger_vorgultars
-  anhänger von volgulta / wargulta: factions/anhaenger_vorgultars
-  gnoll-horde: npcs/gnolle
 
   # --- Whisper variants, people and places ---------------------------------
   # Confirmed against the notes: "Lanra: eine hagere, verhutzelte Hexe (Hag),
@@ -432,13 +379,11 @@ merge:
   auranie: npcs/auranil
   priesterin auraniell: npcs/auranil
   priesterin auraniel: npcs/auranil
-  lord kalidarn von willoch: npcs/lord_kalidarn_von_willauch
   hardwacht: locations/hartwacht
   breschka: locations/breska
   gilde (dwarfmaster gilde): factions/gilde_von_ehrenfels
   gilde (dwarfmaster gilde?): factions/gilde_von_ehrenfels
   die handschellen: items/magische_handschellen
-  saris' buch: items/saris_notizbuch
   # GM ruling: chapel, monastery and ruin are one place at different times.
   kapelle des heiligen duran: locations/kloster_des_heiligen_duran
   ruine des heiligen duran: locations/kloster_des_heiligen_duran
@@ -464,14 +409,10 @@ merge:
   zebros zorn: items/streitkolben_von_dodo
   # GM ruling: one sword. "Verflucht" and "heilig" are two readings of the same
   # wilful blade Esterossa carries.
-  esterossas verfluchtes schwert: items/esterossas_schwert
   # Whisper switches language mid-session, so one object arrives under a German
   # and an English name. These two are the only pair worth keeping — the other
   # twins (Armbrust/crossbow, Ausdauertrank/stamina potion) are ordinary gear
   # and drop out entirely via ignore.
-  glow-ringe: items/magische_boxringe
-  glow ringe: items/magische_boxringe
-  magische boxringe (glowing rings): items/magische_boxringe
   # Generic ids invite the next session's unrelated diary or symbol to join
   # them, so the specific thing gets a specific id.
   tagebuch: items/gestohlenes_tagebuch
@@ -496,10 +437,6 @@ merge:
   kord: deities/korn
   # Ezhura "die Glut", one of Vhar'Zul's souls in Lindo's amulet. Heard as
   # "Glut" and as "Ezua"; the Buch der vier Seelen gives the full name.
-  glut: deities/ezhura
-  ezua: deities/ezhura
-  ezua (alter gott im amulett): deities/ezhura
-  ezhura: deities/ezhura
   goblingötter: deities/goblingoetter
   goblin-gott (dodos gott): deities/goblingoetter
 
@@ -516,7 +453,6 @@ merge:
   # the Titan; the being that serves him is real but was never named. Both were
   # transcribed "Holodarn", so only the session tells them apart — see split:.
   huludan: deities/huludan
-  schwert von holodarn: items/schwert_von_huludan
 never_merge:
 - - characters/miko
   - characters/myko
@@ -528,9 +464,6 @@ never_merge:
   - npcs/hendrik_heinrich
 - - npcs/jen
   - npcs/der_jen
-# The Titan and his servant were both transcribed "Holodarn"; keep them apart.
-- - deities/huludan
-  - npcs/diener_huludans
 # Two unrelated men called Hans (GM ruling); the fuzzy pass would refold them.
 - - npcs/hans_soldat_aus_breska
   - npcs/hans_wirt_zum_gruenen_sichelmond
@@ -721,28 +654,21 @@ ignore:
 - npcs/splitterkalb
 - npcs/die_champions_der_arena
 split:
-# "Holodarn" is a mishearing that covered two different beings. 2026-05-13 is
-# the servant ("dient Huludan"); 2026-06-16 is the Titan himself, trapped in
-# the Splitter des Ewigen. Only the session separates them.
-- name: holodarn
-  session: '2026-05-13'
-  concept_id: npcs/diener_huludans
+# "Holodarn" is a mishearing of Huludan. A separate servant concept
+# (npcs/diener_huludans) existed briefly but was confirmed gone in the
+# 2026-08 rename cleanup — only deities/huludan remains, "Holodarn" is
+# already one of its aliases.
 - name: holodarn
   session: '2026-06-16'
   concept_id: deities/huludan
-- name: verhandlung mit holodarn
-  session: '2026-05-13'
-  concept_id: events/verhandlung_mit_dem_diener_huludans
 # GM ruling: two different women called Adeliga — the proprietor of the Haus des
 # Löwen in Willauch, and an owl seraph met in the Ringtal. The extractor read
 # "elegant businesswoman" and "giant celestial paladin" as one contradictory
-# person; they were never the same.
-- name: adeliga
-  session: '2026-03-03'
-  concept_id: npcs/adeliga_vom_haus_des_loewen
-- name: adelia
-  session: '2026-03-03'
-  concept_id: npcs/adeliga_vom_haus_des_loewen
+# person; they were never the same. The 2026-03-03 session's Adeliga (Haus des
+# Löwen) stopped being extracted as her own NPC after 2026-08-17 — confirmed
+# gone across repeated re-extraction (2026-08-29), not just incident noise.
+# Dropped for now; never_merge below still guards npcs/adeliga_der_eulenseraph
+# if she's ever hand-restored.
 - name: adeliga
   session: '2026-06-04'
   concept_id: npcs/adeliga_der_eulenseraph
@@ -760,14 +686,18 @@ split:
 - name: harald
   session: '2026-03-18'
   concept_id: npcs/freibeuter_harald
-- name: harald
+# 2026-08-17 re-extraction reworded this session's mention from "Harald" to
+# "Meister Harald" (same demon), which desynced this rule from the trigger
+# text and let a duplicate npcs/meister_harald concept form. Needs a real
+# pipeline run to fold that duplicate back into npcs/abisalis_harald.
+- name: meister harald
   session: '2026-04-14'
   concept_id: npcs/abisalis_harald
 # A bare "Taverne" must not be merged by name — every town has one, and a merge
-# would pull them all together. The session says which town it is.
-- name: taverne
-  session: '2025-04-09'
-  concept_id: locations/taverne_von_breska
+# would pull them all together. The session says which town it is. The
+# 2025-04-09 Breska tavern stopped being extracted as its own Location after
+# 2026-08-17 (folds into Hubert/Brechka instead) — confirmed gone across
+# repeated re-extraction (2026-08-29). Dropped for now.
 - name: die taverne
   session: '2026-04-09'
   concept_id: locations/taverne_von_ehrenfels
@@ -779,10 +709,11 @@ split:
 - name: die mine
   session: '2025-10-07'
   concept_id: locations/kristallmine
-- name: mine
-  session: '2026-01-27'
-  concept_id: locations/zwergenmine
-- name: die mine
+# 2026-08-17 re-extraction reworded this session's mention from "Mine"/"die
+# Mine" to "Mine der Zwerge" (same place), desyncing this rule and letting a
+# duplicate locations/mine_der_zwerge concept form. Needs a real pipeline
+# run to fold that duplicate back into locations/zwergenmine.
+- name: mine der zwerge
   session: '2026-01-27'
   concept_id: locations/zwergenmine
 - name: mine
@@ -791,24 +722,15 @@ split:
 - name: die mine
   session: '2026-07-10'
   concept_id: locations/verlassene_mine_an_der_farm
-- name: kapelle
-  session: '2025-07-09'
-  concept_id: locations/schreinkapelle_der_festung
-- name: die kapelle
-  session: '2025-07-09'
-  concept_id: locations/schreinkapelle_der_festung
+# The 2025-07-09 and 2026-06-10 chapels stopped being extracted as their own
+# Location after 2026-08-17 (fold into "Die Festung" / "Die Narbe" instead) —
+# confirmed gone across repeated re-extraction (2026-08-29). Dropped for now.
 - name: kapelle
   session: '2025-09-02'
   concept_id: locations/parfon_kapelle_auf_dem_berg
 - name: die kapelle
   session: '2025-09-02'
   concept_id: locations/parfon_kapelle_auf_dem_berg
-- name: kapelle
-  session: '2026-06-10'
-  concept_id: locations/kapelle_von_vorgultars_refugium
-- name: die kapelle
-  session: '2026-06-10'
-  concept_id: locations/kapelle_von_vorgultars_refugium
 - name: sumpf
   session: '2025-04-01'
   concept_id: locations/sumpf_vor_dem_goblin_dorf
@@ -821,12 +743,13 @@ split:
 - name: der sumpf
   session: '2026-02-17'
   concept_id: locations/sumpf_der_sumpfhexe
+# GM: this is the Hag's hideout, "Graue Sümpfe" — retargeted 2026-08-29 from
+# the dead locations/sumpf_bei_nebelwacht (never actually its own concept).
+# 2026-08-17 re-extraction stopped naming a swamp here at all (only "Der
+# Nebel"), so this rule stays dormant until a session mentions it again.
 - name: sumpf
   session: '2026-05-27'
-  concept_id: locations/sumpf_bei_nebelwacht
-- name: der sumpf
-  session: '2026-05-27'
-  concept_id: locations/sumpf_bei_nebelwacht
+  concept_id: locations/die_grauen_suempfe
 - name: seelenstein
   session: '2025-06-17'
   concept_id: items/seelenstein_des_rotunas
@@ -848,15 +771,9 @@ split:
 # scenery in ignore: below. Session-scoped like mine/kapelle/sumpf above, so a
 # *different* cemetery/library/pass mentioned in a later session gets its own
 # id instead of folding in here.
-- name: friedhof
-  session: '2025-04-09'
-  concept_id: locations/friedhof_von_breska
 - name: die bibliothek
   session: '2026-03-03'
   concept_id: locations/bibliothek_von_willauch
-- name: der bergpass
-  session: '2026-05-19'
-  concept_id: locations/bergpass_zwischen_jalan_und_der_narbe
 - name: ende
   session: '2026-03-18'
   concept_id: locations/ende_jenseits_der_orkgebiete
@@ -875,7 +792,6 @@ canonical_name:
   # One of the five souls Vhar'Zul was split into; the Buch der vier Seelen
   # names him "die Krone". Transcribed both as "Koll" and as "Kol Meref".
   deities/kollmereth: Koll'Mereth (die Krone)
-  deities/ezhura: Ezhura (die Glut)
   # Kanon-Schreibweise aus Bekannte_Pantheon_der_Goetter.md; in den Sessions
   # als "Tarvok", "Tavok", "Tarvolk", "Seras/Seraph" und "Parfon" gehört.
   deities/tarvok_der_erdrichter: Thar'Vok, der Erdrichter
@@ -891,38 +807,18 @@ canonical_name:
   # bleiben sollen und nur der Anzeigename kanonisiert wird.
   npcs/lenra: Landra, die Hag
   factions/gilde_von_ehrenfels: Die Gilde von Ehrenfels
-  factions/kult_des_vharzul: Kult des Vhar'Zul
-  factions/sippe_des_voras: Sippe des Voras
-  factions/anhaenger_vorgultars: Anhänger Vorgul'tars
   # GM ruling: Willauch is the canonical spelling, and the id moved with it so
   # the graph reads consistently: the town and every building in it now share
   # one spelling (arena_von_willauch next to willauch, not next to willau).
   locations/willauch: Willauch
-  locations/arena_von_willauch: Arena von Willauch
-  locations/zweite_arena_von_willauch: Zweite Arena von Willauch
-  locations/arena_lager_von_willauch: Arena-Lager von Willauch
   locations/kapelle_von_ehrenfels: Kapelle von Ehrenfels
   locations/taverne_von_ehrenfels: Taverne von Ehrenfels
-  locations/tempelanlage_von_ehrenfels: Tempelanlage von Ehrenfels
-  locations/gruft_von_breska: Gruft von Breska
-  locations/fluechtlingslager_von_breska: Flüchtlingslager von Breska
-  locations/waldstueck_bei_breska: Waldstück bei Breska
-  locations/festung_von_boragdil: Festung von Boragdil
   locations/banditenlager_der_silberkerne: Banditenlager der Silberkerne
-  locations/berglager_der_hendriks_sippe: Berglager der Hendriks-Sippe
-  locations/lagerhaus_von_ehrenfels: Lagerhaus von Ehrenfels
-  locations/taverne_von_breska: Taverne von Breska
   locations/taverne_von_ehrenfels: Taverne von Ehrenfels
-  locations/schmierige_taverne_von_willauch: Schmierige Taverne von Willauch
-  locations/taverne_neben_der_kirche_von_willauch: Taverne neben der Kirche von Willauch
   locations/zum_gruenen_sichelmond_von_tiefwasser: Zum grünen Sichelmond (Tiefwasser)
-  locations/taverne_im_gestrandeten_schiff_von_tiefwasser: Taverne im gestrandeten Schiff (Tiefwasser)
   locations/taverne_kyla_von_sanddorn: Taverne Kyla von Sanddorn
-  locations/hauptinsel_von_sanddorn: Hauptinsel von Sanddorn
   npcs/lord_kalidarn_von_willauch: Lord Kalidarn von Willauch
-  npcs/kraeuterhexe_von_lady_kalen: Kräuterhexe von Lady Kalen
   npcs/lady_kalen: Lady Kalen
-  npcs/adeliga_vom_haus_des_loewen: Adeliga (Haus des Löwen)
   npcs/adeliga_der_eulenseraph: Adeliga (Eulen-Seraph)
   # The transcripts spell it Brechka, Bresca, Breschka and Reska; the campaign
   # spelling is Breska, which is also the concept id.
@@ -931,34 +827,22 @@ canonical_name:
   npcs/hans_wirt_zum_gruenen_sichelmond: Hans (Wirt zum grünen Sichelmond)
   # GM ruling: Huludan is the Titan; the being that serves him was never named
   # on camera, and "Holodarn" was only ever a mishearing of Huludan.
-  npcs/diener_huludans: Diener Huludans
   deities/huludan: Huludan
-  items/schwert_von_huludan: Schwert von Huludan
-  events/verhandlung_mit_dem_diener_huludans: Verhandlung mit dem Diener Huludans
   # Descriptive labels for the places that used to share one generic noun.
   locations/kristallmine: Kristallmine
-  locations/zwergenmine: Zwergenmine
   locations/verlassene_mine_an_der_farm: Verlassene Mine an der Farm
-  locations/schreinkapelle_der_festung: Schreinkapelle der Festung
   # Der "Steingott" der Kapelle ist Thar'Vok; die concept id behält das alte
   # Wort, nur das Label folgt dem Ruling.
   locations/parfon_kapelle_auf_dem_berg: Thar'Vok-Kapelle auf dem Berg
-  events/enthuellung_des_seras_kults: Enthüllung des Thar'Vok-Kults
-  locations/kapelle_von_vorgultars_refugium: Kapelle von Vorgultars Refugium
   locations/sumpf_vor_dem_goblin_dorf: Sumpf vor dem Goblin-Dorf
   locations/sumpf_der_sumpfhexe: Sumpf der Sumpfhexe
-  locations/sumpf_bei_nebelwacht: Sumpf bei Nebelwacht
   # Noah 2026-08-09: "Zebros Zorn" is the canon name (see merge: above).
   items/streitkolben_von_dodo: Zebros Zorn
-  items/magische_boxringe: Magische Boxringe
   items/gestohlenes_tagebuch: Gestohlenes Tagebuch
   items/symbol_in_der_villa: Symbol in der Villa
   items/seelenstein_des_rotunas: Seelenstein des Rotunas
   items/gruener_seelenkristall_von_hans: Grüner Seelenkristall von Hans
-  items/haralds_seelenstein: Haralds Seelenstein
-  locations/friedhof_von_breska: Friedhof von Breska
   locations/bibliothek_von_willauch: Bibliothek von Willauch
-  locations/bergpass_zwischen_jalan_und_der_narbe: Bergpass zwischen Jalan und der Narbe
   locations/ende_jenseits_der_orkgebiete: Ende (jenseits der Orkgebiete)
   # Appeared twice, in two different forms, at two different sites (Training
   # der Zwergmeistergilde / Kapelle) — the campaign itself never resolved
@@ -968,7 +852,6 @@ canonical_name:
   npcs/voras: Voras der Heilige
   npcs/hal_harl: Harl
   items/lindo_lauts_stab: Schlüssel von Abisalis
-  items/notiz_von_hal: Notiz von Harl
   deities/korn: Korn, der Blutgott
 
 # Concepts that force the deep synthesis tier regardless of mention count —
@@ -982,7 +865,6 @@ important:
 - deities/coram_schildbrecher
 - deities/gruul
 - deities/heiliger_duran
-- deities/holodarn
 - deities/huludan
 - deities/joran_der_muenzenzaehler
 - deities/kaleandra_die_rote

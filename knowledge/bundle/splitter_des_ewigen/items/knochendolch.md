@@ -1,8 +1,8 @@
 ---
 type: Item
 title: Knochendolch
-description: Ein Dolch, den ein reanimierter Leichnam aus seiner eigenen Rippe formt
-  und Saris überreicht. Er dient als Antwort auf Saris’ Bitte um ein…
+description: Ein Dolch, den Saris von der wiederbelebten Leiche in der Mine erhält.
+  Er wurde aus einer Rippe geformt und scheint eine Antwort auf Saris'…
 tags:
 - items
 timestamp: '2026-08-06T00:00:00Z'
@@ -10,7 +10,7 @@ id: ITEM_KNOCHENDOLCH
 subtype: Waffe
 ---
 
-Ein Dolch, den ein reanimierter Leichnam aus seiner eigenen Rippe formt und [Saris](/characters/saris.md) überreicht. Er dient als Antwort auf Saris’ Bitte um ein Mittel gegen die Dunkelheit.
+Ein [Dolch](/items/dolch.md), den [Saris](/characters/saris.md) von der wiederbelebten Leiche in der [Mine](/locations/kristallmine.md) erhält. Er wurde aus einer Rippe geformt und scheint eine Antwort auf Saris' Frage nach der Dunkelheit zu sein.
 
 # Belege
 

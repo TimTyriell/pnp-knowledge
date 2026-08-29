@@ -1,17 +1,17 @@
 ---
 type: Event
 title: Kampf gegen die Untoten am Pass
-description: Die Gruppe verteidigte den Pass gegen eine Horde Untoter unter dem Withermind.
-  Durch Feuerball, Rankenzauber und präzise Schüsse hielt sie…
+description: Die Gruppe verteidigt den Pass gegen eine Armee Untoter unter der Führung
+  eines Todesritters. Der Kampf endet mit dem Sieg der Gruppe und d…
 tags:
 - events
-timestamp: '2025-09-23T00:00:00Z'
+timestamp: '2025-09-30T00:00:00Z'
 id: EVENT_KAMPF_GEGEN_DIE_UNTOTEN_AM_PASS
 subtype: Kampf
 ---
 
-Die Gruppe verteidigte den [Pass](/locations/pass.md) gegen eine Horde Untoter unter dem Withermind. Durch Feuerball, Rankenzauber und präzise Schüsse hielt sie die Stellung, wurde aber fast überrannt, als der Withermind eingriff.
+Die Gruppe verteidigt den [Pass](/locations/pass.md) gegen eine Armee Untoter unter der Führung eines [Todesritters](/npcs/todesritter.md). Der Kampf endet mit dem Sieg der Gruppe und dem Rückzug der Untoten.
 
 # Belege
 
-[P-23] Session 2025-09-23 @ 01:28:17 (https://www.youtube.com/watch?v=DGzfqVigS0g)
+[P-24] Session 2025-09-30 @ 00:11:13 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)

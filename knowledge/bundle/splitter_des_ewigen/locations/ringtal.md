@@ -1,36 +1,36 @@
 ---
 type: Location
 title: Kleinringtal
-description: Kleinringtal ist eine befestigte Siedlung an der Handelsstraße zwischen
-  Breska und der größeren Stadt Ringtal, die etwa einen halben Tagesm…
+description: Kleinringtal ist eine befestigte Tavernensiedlung in der nördlichen Schneise
+  und dient als Zwischenstopp auf dem Weg nach Ringtal. Die wohl…
 tags:
 - locations
-timestamp: '2026-08-06T00:00:00Z'
+timestamp: '2026-08-20T00:00:00Z'
 id: LOC_RINGTAL
 subtype: Siedlung
 aliases:
 - Ringtal
 ---
 
-# Kleinringtal
+Kleinringtal ist eine befestigte Tavernensiedlung in der nördlichen Schneise und dient als Zwischenstopp auf dem Weg nach [Ringtal](/locations/ringtal.md). Die wohlhabende Siedlung besitzt eine eigene Mauer und wirkt gepflegt, ist aber schlecht auf eine Belagerung vorbereitet.
 
-Kleinringtal ist eine befestigte Siedlung an der Handelsstraße zwischen Breska und der größeren Stadt Ringtal, die etwa einen halben Tagesmarsch entfernt liegt. Die Siedlung dient als Versorgungs- und Zwischenstation für Reisende und Flüchtlinge. Ihr Kern ist eine befestigte Taverne mit eigener Mauer und einem Trainingsplatz, die Siedlung selbst ist mit Holzpalisaden umgeben.
+## Lage und Rolle
 
-## Lage und Funktion
-
-Kleinringtal liegt an der Handelsstraße zwischen Breska und Ringtal. Es ist eine Zwischenstation für Reisende und insbesondere für Flüchtlinge, von denen viele aus dem gefallenen Brandau stammen. Die befestigte Taverne dient als Versorgungsstation für die Durchreisenden.
+Kleinringtal liegt an der Route nach Ringtal und wird von Reisenden als Zwischenstation genutzt. Ringtal selbst ist eine größere Stadt in der Nähe, die von Monstern bedroht wird und nur etwa 50 Soldaten aufweist; die feindliche Armee scheint auf dem Weg dorthin zu sein. Kleinringtal kommt dabei die Rolle des letzten Widerstands gegen die Gnolle zu, auch wenn es dafür eigentlich nicht gerüstet ist.
 
 ## Befestigung und Verteidigung
 
-Die Siedlung verfügt über Holzpalisaden und die Taverne besitzt eine eigene Mauer sowie einen Trainingsplatz. Trotz dieser Befestigungen halten die Einwohner Kleinringtal für unzureichend gegen eine große Armee. Die Siedlung ist nicht darauf ausgelegt, einer größeren Streitmacht standzuhalten.
+Die Siedlung ist von einer eigenen Mauer umgeben, die als hölzern beschrieben wird. Sie bietet den Bewohnern Schutz, doch die Stadt ist nicht gut auf eine Belagerung vorbereitet: Die Verteidigung ist schwach, auch wenn der Ort insgesamt wohlhabend und gepflegt wirkt. Während der Bedrohung durch die Gnolle ist am Horizont ein von den Flüchtlingen verlassenes und von den Gnollen zerstörtes Dorf zu sehen, das die Gefahr verdeutlicht.
 
-## Rolle im Verlauf
+## Aufenthalt der Gruppe
 
-Als sich eine große Armee nähert, gelingt es der Gruppe, Xenia zu überzeugen, den Ort zu evakuieren. Die Fluchtbewegung zielt auf die nahegelegene Stadt Ringtal, die als nächster großer Stützpunkt mit massiven Mauern gilt und einer Belagerung standhalten könnte.
+Die Gruppe erreicht Kleinringtal nach einem Gewaltmarsch und verbringt dort zwei Nächte. Bei einem späteren Aufenthalt verhandelt sie mit dem Bürgermeister über die Aufnahme von Flüchtlingen in die Stadt.
 
 # Belege
 
-[P-52a] Session 2026-06-04 @ 00:10:12 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
-[P-52b] Session 2026-06-04 @ 02:46:34 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
-[S1-03-Ba] Session 2026-08-06 @ 01:04:05 (https://www.youtube.com/watch?v=0HyPHao8s_k)
-[S1-03-Bb] Session 2026-08-06 @ 00:06:36 (https://www.youtube.com/watch?v=0HyPHao8s_k)
+1. Session 2026-06-04, 00:09:21 – https://www.youtube.com/watch?v=EGNh8O7pE5Q
+2. Session 2026-06-04, 00:09:21 – https://www.youtube.com/watch?v=EGNh8O7pE5Q
+3. Session 2026-08-06, 01:04:05 – https://www.youtube.com/watch?v=0HyPHao8s_k
+4. Session 2026-08-06, 00:17:07 – https://www.youtube.com/watch?v=0HyPHao8s_k
+5. Session 2026-08-20, 00:07:29 – https://www.youtube.com/watch?v=2EkWrNUfQi0
+6. Session 2026-08-20, 00:01:09 – https://www.youtube.com/watch?v=2EkWrNUfQi0

@@ -1,8 +1,8 @@
 ---
 type: Location
 title: Windung
-description: Windung ist ein idyllisches, aber fast verlassenes Fischerdorf auf einer
-  Insel. Einst wurde hier ein wertvolles Erz abgebaut, heute ist es…
+description: Ein Fischerdorf, das von den Kuatau angegriffen wird. Die Gruppe soll
+  es verteidigen. Es gibt eine Kapelle, einen Brunnen und eine Mine unt…
 tags:
 - locations
 timestamp: '2025-07-29T00:00:00Z'
@@ -10,8 +10,8 @@ id: LOC_WINDUNG
 subtype: Siedlung
 ---
 
-Windung ist ein idyllisches, aber fast verlassenes Fischerdorf auf einer Insel. Einst wurde hier ein wertvolles Erz abgebaut, heute ist es nur noch ein ruhiger Ort. Im Verlauf der Session wird die Insel von den [Kuatau](/npcs/kuatau.md) beansprucht und die Menschen müssen evakuiert werden, sodass Windung als menschliche Siedlung verloren ist.
+Ein Fischerdorf, das von den [Kuatau](/npcs/kuatau.md) angegriffen wird. Die Gruppe soll es verteidigen. Es gibt eine [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md), einen Brunnen und eine [Mine](/locations/kristallmine.md) unter der Kapelle. Die Kuatau wollen die Insel zurück, und die Gruppe verlässt sie am [Ende](/locations/ende_jenseits_der_orkgebiete.md).
 
 # Belege
 
-[P-16] Session 2025-07-29 @ 00:03:27 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
+[P-16] Session 2025-07-29 @ 00:04:00 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
