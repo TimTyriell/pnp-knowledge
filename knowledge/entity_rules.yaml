@@ -904,8 +904,12 @@ split:
 # is the same place — its own body links "Ende" to
 # locations/ende_jenseits_der_orkgebiete.md ("ein Ort im hohen Norden, in
 # dessen Nähe die Kristalle wachsen"). The split above only covers the later
-# 2026-03-18 mention of the same bare name.
-- name: ende
+# 2026-03-18 mention of the bare name "Ende" (see extract cache
+# 2026-03-18_RF_HHXxsASLrbQ.json); this session's own extraction names it
+# "Das Ende" (with article — 2025-10-07_RF_qVAF_54S8Vw.json), and split:
+# matches on the mention's exact lowercased name, not a slug, so the key has
+# to carry the article too.
+- name: das ende
   session: '2025-10-07'
   concept_id: locations/ende_jenseits_der_orkgebiete
 # "Die Stadt" is Ehrenfels before the campaign ever says the name out loud:
@@ -1051,3 +1055,14 @@ alias_block:
   - cookie und valeria
   items/notiz_von_hal:
   - notiz
+  # 2026-08-29 bundle-quality audit: both npcs/hans_soldat_aus_breska and
+  # npcs/hans_wirt_zum_gruenen_sichelmond carry the bare alias "Hans" (they
+  # are the split: pair above, "two unrelated men") — link_targets()
+  # (synthesize.py) can only map one name to one concept, so it picked
+  # whichever won the mention-count tiebreak, and the soldier's own body
+  # ended up linking "Hans" to the innkeeper's page. Blocking it here (this
+  # filter runs before synthesis, not just cosmetically on the registry —
+  # see resolve.py's per-entity alias_block pass) leaves the qualified
+  # titles linkable and only drops the ambiguous bare name.
+  npcs/hans_wirt_zum_gruenen_sichelmond:
+  - hans
