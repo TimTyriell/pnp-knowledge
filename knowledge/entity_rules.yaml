@@ -619,6 +619,18 @@ ignore:
 - locations/hoehle
 - events/falle
 - npcs/gnoll
+# A real `pnp run` re-extracted these same three concepts under their
+# article-prefixed spelling (locations/der_nebel, locations/die_hoehle,
+# events/die_falle) — same content, near-verbatim, confirmed against the
+# bodies above (e.g. der_nebel: "Der Nebel um Nebelwacht ist eine eigene
+# Entität... mentalen Einfluss auf Soldaten... Kreaturen, die die Festung
+# angreifen", identical to what locations/nebel said). Ignoring only the
+# bare form left the article form live — the exact failure mode
+# test_article_variant_does_not_slip_past_a_rule (test_rules_applied.py)
+# now checks for going forward.
+- locations/der_nebel
+- locations/die_hoehle
+- events/die_falle
 - locations/bruecke
 - locations/turm
 # One-off scene dressing, single mention each, no lasting name in the
