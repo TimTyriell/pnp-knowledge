@@ -32,7 +32,7 @@ from pnp_okf.extract import extract_session
 from pnp_okf.ingest import load_transcripts
 from pnp_okf.models import CanonicalEntity, SessionExtraction, SessionTranscript
 from pnp_okf.resolve import resolve_entities, write_registry
-from pnp_okf.synthesize import link_targets, render_brief_body, synthesize_entity_body
+from pnp_okf.synthesize import autolink_prose, link_targets, render_brief_body, synthesize_entity_body
 from pnp_okf.validate import fix_bundle, validate_bundle
 
 log = logging.getLogger("pnp_okf")
@@ -180,7 +180,7 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     def _synth(entity: CanonicalEntity) -> tuple[str, str]:
         if entity.tier == "brief":
             return entity.concept_id, render_brief_body(entity, targets)
-        return entity.concept_id, synthesize_entity_body(
+        body = synthesize_entity_body(
             entity,
             cfg.for_tier(entity.tier),
             paths.cache_dir,
@@ -190,6 +190,11 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
                 excerpts_for(entity, tmap) if entity.tier == "deep" else ""
             ),
         )
+        # The cache stores this body pre-autolink (see synthesize_entity_body),
+        # so linking here runs on every cache hit too — a rebuild after only
+        # entity_rules.yaml or DEEP_MENTION_THRESHOLD changed relinks every
+        # standard/deep entry without a single new model call.
+        return entity.concept_id, autolink_prose(body, targets, skip=entity.concept_id)
 
     bodies: dict[str, str] = {}
     with ThreadPoolExecutor(max_workers=args.workers) as pool:

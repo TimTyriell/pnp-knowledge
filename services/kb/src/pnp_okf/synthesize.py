@@ -54,6 +54,21 @@ def link_targets(entities: list[CanonicalEntity]) -> dict[str, str]:
     return {name: e.concept_id for name, e in best.items()}
 
 
+def _link_first_occurrence(text: str, name: str, concept_id: str) -> str:
+    """Link the first bare occurrence of ``name`` in ``text``, or return it
+    unchanged if there isn't one."""
+
+    # German runs names through the genitive ("Lindo Lauts Amulett"), so
+    # allow a trailing -s and keep it inside the link label.
+    tail = "" if name[-1] in "sßxz" else "s?"
+    # Not inside a word, not inside an existing link label or url.
+    match = re.search(rf"(?<![\w\[/]){re.escape(name)}{tail}(?![\w\]])", text)
+    if match is None:
+        return text
+    label = match.group(0)
+    return f"{text[:match.start()]}[{label}]({concept_id}.md){text[match.end():]}"
+
+
 def _autolink(text: str, targets: dict[str, str], skip: str) -> str:
     """Link the first occurrence of each known entity name in ``text``."""
 
@@ -63,17 +78,58 @@ def _autolink(text: str, targets: dict[str, str], skip: str) -> str:
         concept_id = targets[name]
         if concept_id == skip or concept_id in linked:
             continue
-        # German runs names through the genitive ("Lindo Lauts Amulett"), so
-        # allow a trailing -s and keep it inside the link label.
-        tail = "" if name[-1] in "sßxz" else "s?"
-        # Not inside a word, not inside an existing link label or url.
-        match = re.search(rf"(?<![\w\[/]){re.escape(name)}{tail}(?![\w\]])", text)
-        if match is None:
-            continue
-        label = match.group(0)
-        text = f"{text[:match.start()]}[{label}]({concept_id}.md){text[match.end():]}"
-        linked.add(concept_id)
+        new_text = _link_first_occurrence(text, name, concept_id)
+        if new_text != text:
+            text = new_text
+            linked.add(concept_id)
     return text
+
+
+_BELEGE_HEADING_RE = re.compile(r"^#{1,6}\s*Belege\s*$", re.IGNORECASE | re.MULTILINE)
+_LINK_TARGET_RE = re.compile(r"\]\(([^)\s]+?)\.md\)")
+
+
+def _linked_concept_ids(text: str, targets: dict[str, str]) -> set[str]:
+    """Concept ids already reachable via a markdown link somewhere in
+    ``text`` — matched by full path or bare slug, so a link the model wrote
+    itself (or a previous autolink pass) is never linked a second time."""
+
+    paths = {m.group(1).lstrip("./").lstrip("/") for m in _LINK_TARGET_RE.finditer(text)}
+    slugs = {p.rsplit("/", 1)[-1] for p in paths}
+    return {cid for cid in set(targets.values()) if cid in paths or cid.rsplit("/", 1)[-1] in slugs}
+
+
+def autolink_prose(text: str, targets: dict[str, str], skip: str) -> str:
+    """Autolink the narrative prose of a synthesized body — everything
+    before the ``# Belege`` heading, one line at a time.
+
+    Two things stay untouched on purpose: the ``# Belege`` citation list
+    (and anything after it, e.g. ``# Offene Konflikte`` — those cite by
+    number, not by name), and any ``#``-heading line, where an entity name is
+    a section title rather than prose. Idempotent: a name already linked
+    anywhere in the text (by the model itself or a prior pass) is never
+    linked again, so applying this twice is the same as applying it once.
+    """
+
+    match = _BELEGE_HEADING_RE.search(text)
+    head, tail = (text[: match.start()], text[match.start() :]) if match else (text, "")
+
+    linked = _linked_concept_ids(head, targets) | {skip}
+    names = sorted(targets, key=len, reverse=True)
+    lines = head.split("\n")
+    for i, line in enumerate(lines):
+        if line.lstrip().startswith("#"):
+            continue
+        for name in names:
+            concept_id = targets[name]
+            if concept_id in linked:
+                continue
+            new_line = _link_first_occurrence(line, name, concept_id)
+            if new_line != line:
+                line = new_line
+                linked.add(concept_id)
+        lines[i] = line
+    return "\n".join(lines) + tail
 
 
 def render_brief_body(
