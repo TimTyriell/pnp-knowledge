@@ -232,6 +232,31 @@ def _registry_data(registry_path: Path) -> dict:
     return data
 
 
+def _load_preserved_aliases(registry_path: Path) -> dict[str, list[str]]:
+    """``concept_id -> [alias, ...]`` straight from ``entities:``.
+
+    ``_load_alias_overrides`` turns this same data into a name->concept_id
+    table for routing a *mention whose name matches the alias* — but a hand-
+    added alias with no matching raw mention this run (e.g. "Lenra", the
+    concept's own historical slug, when every current transcript mention
+    says "Landra"/"Hack" instead) never reached the entity's own
+    ``aliases`` list, and therefore never reached ``link_targets()``
+    (synthesize.py) either: a name only extraction discovers is linkable,
+    hand-maintaining it in the registry was cosmetic. This seeds a new
+    entity's aliases from the registry so a hand-added spelling is usable
+    for cross-linking immediately, not just preserved in the file.
+    """
+
+    data = _registry_data(registry_path)
+    out: dict[str, list[str]] = {}
+    for entry in data.get("entities") or []:
+        concept_id = str(entry.get("concept_id", "")).strip()
+        aliases = [str(a).strip() for a in (entry.get("aliases") or []) if str(a).strip()]
+        if concept_id and aliases:
+            out[concept_id] = aliases
+    return out
+
+
 def _load_alias_overrides(registry_path: Path) -> dict[str, str]:
     """Load ``alias (lowercased) -> concept_id`` overrides from the registry.
 
@@ -438,6 +463,7 @@ def resolve_entities(
     """
 
     overrides = _load_alias_overrides(registry_path)
+    preserved_aliases = _load_preserved_aliases(registry_path)
     important = _load_important(registry_path)
     ignored = _load_ignored(registry_path)
     pinned_names = _load_canonical_names(registry_path)
@@ -500,11 +526,15 @@ def resolve_entities(
             )
             entity = entities.get(concept_id)
             if entity is None:
+                seeded_name = mention.name.strip()
+                seeded_aliases = [
+                    a for a in preserved_aliases.get(concept_id, []) if a != seeded_name
+                ]
                 entity = CanonicalEntity(
                     concept_id=concept_id,
                     type=entity_type,
-                    canonical_name=mention.name.strip(),
-                    aliases=[],
+                    canonical_name=seeded_name,
+                    aliases=seeded_aliases,
                     mentions=[],
                     important=concept_id in important,
                     subtype=mention.subtype.strip(),
