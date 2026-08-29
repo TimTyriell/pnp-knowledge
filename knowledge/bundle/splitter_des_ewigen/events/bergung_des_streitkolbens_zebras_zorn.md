@@ -9,7 +9,7 @@ timestamp: '2025-09-09T00:00:00Z'
 id: EVENT_BERGUNG_DES_STREITKOLBENS_ZEBRAS_ZORN
 subtype: Entdeckung
 aliases:
-- Bergung des Streitkolbens Zebras Zorn
+- Bergung des Streitkolbens Zebros Zorn
 ---
 
 Die Gruppe findet den [Streitkolben](/items/streitkolben_von_dodo.md) „Zebros Zorn“ auf einem Pentagramm. Nach mehreren fehlgeschlagenen Versuchen gelingt es [Rotunas](/characters/rotunas.md), ihn durch einen Spiegel zu ziehen, wodurch das Pentagramm sich auflöst.

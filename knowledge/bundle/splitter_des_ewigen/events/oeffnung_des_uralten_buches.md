@@ -10,7 +10,7 @@ id: EVENT_OEFFNUNG_DES_URALTEN_BUCHES
 subtype: Ritual
 ---
 
-[Dodo](/characters/dodo.md) hält den schwarzen Palantir an das uralte Buch, woraufhin sich beide auflösen und das Buch sich öffnet. Dies löst die Seelenreise und den [Kampf gegen die Celestials](/events/kampf_gegen_die_celestials.md) aus. Die Gruppe erkennt später, dass die [Hack](/npcs/lenra.md) den Palantir absichtlich platziert hat.
+[Dodo](/characters/dodo.md) hält den schwarzen Palantir an das uralte Buch, woraufhin sich beide auflösen und das Buch sich öffnet. Dies löst die Seelenreise und den [Kampf gegen die Celestials](/events/kampf_gegen_die_celestials.md) aus. Die Gruppe erkennt später, dass die [Hag](/npcs/lenra.md) den Palantir absichtlich platziert hat.
 
 # Belege
 

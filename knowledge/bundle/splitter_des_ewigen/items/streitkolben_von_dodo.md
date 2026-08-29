@@ -13,11 +13,11 @@ aliases:
 - Streitkolben
 - Dodos leuchtender Streitkolben
 - Heiliger Streitkolben Dodos
-- Streitkolben von Zebras
-- Der heilige Streitkolben aus Zebras
-- Zebrus Zorn
+- Streitkolben von Zebros
+- Der heilige Streitkolben aus Zebros
+- Zebros Zorn
 - Der Streitkolben
-- Zebras Zorn
+- Zebros Zorn
 ---
 
 [Zebros](/factions/koenigreich_zebros.md) Zorn ist ein mächtiger, heiliger Streitkolben aus dem gefallenen Königreich [Zebros](/factions/koenigreich_zebros.md). Er dient [Dodo](/characters/dodo.md) als aktuelle Hauptwaffe, verursacht magischen Schaden und kann als Lichtquelle dienen. Die Gruppe barg ihn aus einem Geheimversteck in [Steinbachtal](/locations/steinbachtal.md).

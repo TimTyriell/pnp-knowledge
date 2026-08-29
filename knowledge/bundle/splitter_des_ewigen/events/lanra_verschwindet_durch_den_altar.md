@@ -1,6 +1,6 @@
 ---
 type: Event
-title: Lanra verschwindet durch den Altar
+title: Landra verschwindet durch den Altar
 description: Landra berührt den Altar und verschwindet, nachdem sie die Gruppe verspottet
   hat. Sie hinterlässt Schriftrollen mit Hinweisen auf Breska.
 tags:

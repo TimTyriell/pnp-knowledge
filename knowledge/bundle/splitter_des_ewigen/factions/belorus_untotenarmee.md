@@ -17,7 +17,7 @@ aliases:
 - Untotenarmee von Zebros
 - Die Magier von Belorus
 - Die Untoten
-- Untote Horde von Zebras
+- Untote Horde von Zebros
 - Untote Armee
 ---
 

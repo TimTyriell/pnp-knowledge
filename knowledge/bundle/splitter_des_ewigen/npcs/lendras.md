@@ -19,7 +19,7 @@ Leandras ist ein Menschenmagier. Er lebt zurückgezogen in einem Haus in Breska;
 
 ## Begegnungen und Wirken
 
-Bei einem späteren Aufeinandertreffen wird Leandras von einem [Kenku](/npcs/kenku.md) angegriffen und tötet ihn mit einem Blitz. Er übergibt [Esterossa](/characters/esterossa.md) einen magischen [Schlüssel](/items/magischer_schluessel.md) und führt die Gruppe zu einer [Katakombe](/locations/katakombe.md). Dort bricht er den Bann über [Voras](/npcs/voras.md) und erweckt ihn. Er erklärt, dass die [Hack](/npcs/lenra.md) nach Voras' Gemahlin sucht.
+Bei einem späteren Aufeinandertreffen wird Leandras von einem [Kenku](/npcs/kenku.md) angegriffen und tötet ihn mit einem Blitz. Er übergibt [Esterossa](/characters/esterossa.md) einen magischen [Schlüssel](/items/magischer_schluessel.md) und führt die Gruppe zu einer [Katakombe](/locations/katakombe.md). Dort bricht er den Bann über [Voras](/npcs/voras.md) und erweckt ihn. Er erklärt, dass die [Hag](/npcs/lenra.md) nach Voras' Gemahlin sucht.
 
 In einer weiteren Begegnung ruft er die Gruppe herbei. Er hilft bei der Verteidigung, und als [Dranara](/npcs/dranara.md) die Gruppe angreifen will, wirkt er einen Schlafzauber auf sie. Er ist entsetzt über die Ereignisse und verlässt mit der Gruppe die Insel. [Lunara](/characters/lunara_velora.md) besitzt eine Feder von ihm, die sie einmal geheilt hat.
 

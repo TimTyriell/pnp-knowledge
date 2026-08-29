@@ -9,12 +9,12 @@ timestamp: '2026-08-04T00:00:00Z'
 id: LOC_BRESKA
 subtype: Siedlung
 aliases:
-- Bresca
-- Dorf (Bresca?)
-- Breschka
-- Bereska
 - Breska
-- Brechka
+- Dorf (Breska?)
+- Breska
+- Breska
+- Breska
+- Breska
 ---
 
 # Breska

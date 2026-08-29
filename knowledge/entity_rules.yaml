@@ -1067,8 +1067,13 @@ spelling:
   # Same evidence for Cepros: not one occurrence in the bundle means
   # anything else.
   Cepros: Zebros
-  # "Hack" is a common word; only the phrase naming the hag should turn.
-  die Hack: die Hag
+  # Bare token, not phrase-scoped: a full-bundle check (2026-08-30) found
+  # all 38 word-boundary "Hack" occurrences refer to the hag, and the phrase
+  # key "die Hack" missed the ones spanning a link bracket
+  # ("die [Hack](/npcs/lenra.md)") or a sentence-initial capital ("Die
+  # Hack sucht..."). Bare token confirmed safe the same way Zebras/Cepros
+  # were above; see services/kb/tests/test_spelling_sweep.py.
+  Hack: Hag
 
 # Concepts that force the deep synthesis tier regardless of mention count —
 # the escape hatch for entities the automatic rules underrate. Characters and

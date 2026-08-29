@@ -9,7 +9,7 @@ timestamp: '2026-06-10T00:00:00Z'
 id: DEITY_HULUDAN
 subtype: Sonstiges
 aliases:
-- Holodarn
+- Huludan
 ---
 
 ## Überblick

@@ -10,7 +10,7 @@ id: NPC_SLIX_VASUL
 subtype: Alter Gott
 aliases:
 - Slix/Vasul
-- Slicks
+- Slix
 ---
 
 # Slix

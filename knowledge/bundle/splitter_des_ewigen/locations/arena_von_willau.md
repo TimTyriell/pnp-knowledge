@@ -1,6 +1,6 @@
 ---
 type: Location
-title: Arena von Willau
+title: Arena von Willauch
 description: Die Arena von Willauch ist der Schauplatz der Kämpfe. Sie ist groß und
   von Zuschauern umgeben. Es gibt mehrere Arenen, die für verschiedene…
 tags:

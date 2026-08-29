@@ -41,6 +41,7 @@ Manually triaged below into buckets per the branch plan:
 | deities/korn | Kord → Korn | 1 |
 | deities/huludan | Holodarn → Huludan | 1 |
 | items/streitkolben_von_dodo | Zebrus Zorn → Zebros Zorn | 3 |
+| npcs/lenra | Hack → Hag | 38 (see "Defect 1" below) |
 
 Compound duplicates of the above (`Tarvok (Der Erdrichter)`, `Tavok (Erdrichter)`,
 `Tavok (der Erdrichter)`) need no separate rule — the bare-token rule already
@@ -53,7 +54,7 @@ rewrites the `Tarvok`/`Tavok` inside them.
 | "Festung Zebras" | "Festung Zebros" | "Zebras" alone collides with the animal |
 | "Berg Zebras" | "Berge von Zebros" | same |
 | "heiliger Streitkolben aus Zebras" / "Streitkolben von Cepros" | "…von Zebros" | "Cepros" never made it into the registry as an alias at all — extraction never proposed it as a mention; needs a direct `merge:`/`spelling:` addition, not just a registry fix |
-| "die Hack" (referring to Landra) | "die Hag" | "Hack" is a common word; only the phrase referring to the hag should turn |
+| ~~"die Hack" (referring to Landra)~~ | ~~"die Hag"~~ | superseded — see "Defect 1" below, moved to Bucket A as a bare token |
 
 `Cepros`/`Zebras` not appearing in the doctor's own output (despite being the
 lead example in the original report) is itself a finding: they were never
@@ -120,3 +121,47 @@ error on the same kingdom.
   concepts for the same weapon, one letter apart in the slug. Fixed via
   `merge:`; `validate.py`'s duplicate-title check widened to catch the next
   one of these (was `characters/`+`npcs/`-only).
+
+## Defects found writing the test suite (`services/kb/tests/test_spelling_sweep.py`)
+
+- **Defect 1 — a phrase-scoped `spelling:` key never fires across a link
+  bracket or a sentence-initial capital.** `die Hack: die Hag` did not match
+  `die [Hack](/npcs/lenra.md)` (the `[` sits inside the key, so the substring
+  `"die Hack"` is never contiguous in the text) or `Die Hack` at
+  `npcs/voras.md:83` (rules are case-sensitive, and `"die Hack"` ≠
+  `"Die Hack"`). Four body occurrences survived every prior `pnp run`:
+  `npcs/voras.md:28,83`, `npcs/froschwachen.md:12`, `npcs/lendras.md:22`, and
+  the same shape in `events/oeffnung_des_uralten_buches.md`,
+  `factions/goblinarmee.md`, `factions/gilde_von_ehrenfels.md`. Fixed by
+  switching to the bare token `Hack: Hag` — a full-bundle check found all 38
+  word-boundary `Hack` occurrences refer to the hag, so the phrase scoping
+  bought nothing and cost the bracket/capital misses. Retro-applied via
+  `pnp validate --fix` (no `pnp run`/LLM call needed).
+- **Defect 2 — the doctor and the fixer disagree on what "prose" is.**
+  `spelling_doctor.py::prose_only` flattens link labels
+  (`[Hack](x.md)` → `Hack`) and does not strip frontmatter; `apply_spellings`
+  keeps the brackets and only ever sees the body. The doctor's own report
+  therefore missed Defect 1 entirely — it reported "0 hits" for `Hack` before
+  the bare-token fix (its flattened view masked the exact shape that broke
+  the phrase key). `test_no_spelling_rule_key_survives_in_prose` checks the
+  fixer's actual output against the doctor's prose-extraction logic (labels
+  flattened, frontmatter *and* `# Belege` stripped), so a rule that cannot
+  reach its target is now a test failure, not a silent gap.
+
+## Decisions taken while writing the tests
+
+- **Frontmatter `aliases:` are explicitly out of scope for `spelling:`
+  rewriting.** Every canonicalized concept still carries its mishearing
+  variants under `aliases:` in frontmatter (43 occurrences bundle-wide,
+  e.g. `items/streitkolben_von_dodo.md:16,17,20`) — these are the raw *heard*
+  text that extraction and `merge:` match against, so rewriting them to canon
+  would break the very lookups that resolve the mishearing in the first
+  place. `test_no_spelling_rule_key_survives_in_prose` strips frontmatter
+  before checking, so this is a recorded decision, not a silent gap.
+- **`UNLINKED_MENTION_BASELINE` (`test_link_coverage.py`) was raised, not
+  lowered, on this branch: 1816 → 1889.** Canonicalizing spelling
+  necessarily creates unlinked mentions where there were none before — prose
+  that used to read "Brechka" matched no entity title and so wasn't counted;
+  now it reads "Breska" and is. `DEEP_TIER_NO_LINK_BASELINE` (hard `0`) and
+  the faction/NPC relation-coverage floors were re-checked and hold, so this
+  is not cover for an actual link regression.

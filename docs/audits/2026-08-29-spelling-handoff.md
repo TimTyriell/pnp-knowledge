@@ -24,9 +24,20 @@ Handled a different slice of this problem: name-spelling drift in *prose*
 merge/link identity work. Added the missing mechanism (`spelling:` rules,
 see `entity_rules.yaml` and `docs/audits/2026-08-30-spelling-sweep.md`) and
 fixed the reported Zebros/Willauch/Landra/Voras cases plus everything the
-same method surfaced (Breska, Tarvok, Adeliga, Slix, Korn, Huludan). The
-items below are untouched by this branch — still open for whoever picks up
-next.
+same method surfaced (Breska, Tarvok, Adeliga, Slix, Korn, Huludan). Also
+fixed, separate mechanism (autolink, not spelling): the genitive-tail
+collision that mislinked 18 occurrences of "Voras" to the unrelated
+one-mention concept `npcs/vora` (`synthesize.py::_link_first_occurrence`) —
+this is *not* a ruling that `vora`/`voras` are the same or different person
+(that question, listed below, is still open), only a fix to which of the two
+existing concepts a "Voras" mention actually points at. The items below are
+untouched by this branch — still open for whoever picks up next.
+
+Full test coverage for this branch's mechanism lives in
+`services/kb/tests/test_spelling_sweep.py`, `test_spellings_apply.py`,
+`test_spelling_doctor.py`, `test_validate_dups.py` — see
+`docs/audits/2026-08-30-spelling-sweep.md` for what each ratchet/hard-gate
+actually measures.
 
 ## Known instances (found during prior audit, not resolved)
 

@@ -9,11 +9,11 @@ timestamp: '2026-08-04T00:00:00Z'
 id: LOC_WILLAUCH
 subtype: Siedlung
 aliases:
-- Vilau (Willau)
-- Willoch
-- Villauch
+- Vilau (Willauch)
 - Willauch
-- Willau
+- Willauch
+- Willauch
+- Willauch
 ---
 
 # Willauch
