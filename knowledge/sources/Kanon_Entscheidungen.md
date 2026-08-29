@@ -71,7 +71,9 @@ fülle Lücken nicht mit Spekulation, die wie Tatsache klingt.
 ### Ring der Teleportation
 
 ENTSCHEIDUNG: Der Ring der Teleportation ist ein Gegenstand **von Lindo Laut**
-und wird einmal pro Session aktiviert. Der Ring, den Dodo zerstört hat, ist ein
+und wird einmal pro Session aktiviert. Er ist derselbe Gegenstand, der an
+anderer Stelle als "Lindo Lauts Ring" beschrieben wird — kein zweiter Ring,
+nur ein zweiter Titel dafür. Der Ring, den Dodo zerstört hat, ist ein
 **anderer, nicht verwandter Ring** — er gehört nicht in diesen Eintrag. Führe
 hier ausschließlich Lindos Ring.
 
@@ -81,8 +83,9 @@ ENTSCHEIDUNG: Sammeleintrag. Hier werden die verschiedenen kleineren Ringe der
 Kampagne **nur stichwortartig** aufgelistet — jeweils ein bis zwei Sätze, was
 der Ring ist und wo er auftauchte. Keine ausführlichen Einzelabschnitte, keine
 Chronologie. Diese Ringe waren jeweils nur kurz relevant (etwa der von Dodo
-zerstörte Ring) und verdienen keinen eigenen Eintrag. Lindos **Ring der
-Teleportation** gehört ausdrücklich NICHT hierher, er hat einen eigenen Eintrag.
+zerstörte Ring, assoziiert mit Abisalis und lila Magie) und verdienen keinen
+eigenen Eintrag. Lindos **Ring der Teleportation** gehört ausdrücklich NICHT
+hierher, er hat einen eigenen Eintrag.
 
 ### Schriftrollen
 
