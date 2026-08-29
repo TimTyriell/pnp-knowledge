@@ -156,7 +156,7 @@ def emit_sessions(
 
         body = "\n".join(body_parts)
         if index is not None:
-            body, unresolved = normalize_body(body, index)
+            body, unresolved = normalize_body(body, index, self_id=concept_id)
             if unresolved:
                 log.debug(
                     "[emit] %s: dropped %d unresolved link(s): %s",
@@ -295,7 +295,7 @@ def emit_entity(
 
     unresolved: list[str] = []
     if index is not None:
-        body, unresolved = normalize_body(body, index)
+        body, unresolved = normalize_body(body, index, self_id=entity.concept_id)
     body, conflicts = split_conflicts(body)
 
     first = entity.mentions[0] if entity.mentions else None

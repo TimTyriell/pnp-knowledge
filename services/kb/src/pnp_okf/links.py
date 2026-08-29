@@ -187,13 +187,17 @@ class ConceptIndex:
 
 
 def normalize_body(
-    body: str, index: ConceptIndex, *, drop_unresolved: bool = True
+    body: str, index: ConceptIndex, *, drop_unresolved: bool = True, self_id: str | None = None
 ) -> tuple[str, list[str]]:
     """Rewrite bundle-relative links in ``body`` against ``index``.
 
     Resolvable links are rewritten to their canonical ``/dir/slug.md`` form.
     Unresolvable links are collected and, when ``drop_unresolved`` is set,
     replaced by their plain-text label so the bundle contains no dead links.
+    A link that resolves to ``self_id`` — the document's own concept —  is
+    degraded the same way: a body linking its own page (e.g. a stray "Ringtal"
+    mention resolving back to the page it's written on) is not a citation,
+    it is a self-reference the synthesis should not have produced.
 
     Returns ``(new_body, unresolved_targets)``.
     """
@@ -203,9 +207,10 @@ def normalize_body(
     def _replace(match: re.Match[str]) -> str:
         label, target = match.group(1), match.group(2)
         cid = index.resolve(target)
-        if cid is not None:
+        if cid is not None and cid != self_id:
             return f"[{label}](/{cid}.md)"
-        unresolved.append(target)
-        return label if drop_unresolved else match.group(0)
+        if cid is None:
+            unresolved.append(target)
+        return label if (cid is None and drop_unresolved) or cid == self_id else match.group(0)
 
     return _LINK_RE.sub(_replace, body), unresolved
