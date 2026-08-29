@@ -47,8 +47,8 @@ def test_tiers():
     assert _entity("npcs/voras", EntityType.NPC, "Voras").tier == "brief"
     assert _entity("npcs/voras", EntityType.NPC, "Voras", important=True).tier == "deep"
     # High mention count promotes on its own.
-    assert _entity("locations/breska", EntityType.LOCATION, "Breska", 8).tier == "deep"
-    assert _entity("locations/breska", EntityType.LOCATION, "Breska", 7).tier == "standard"
+    assert _entity("locations/breska", EntityType.LOCATION, "Breska", 5).tier == "deep"
+    assert _entity("locations/breska", EntityType.LOCATION, "Breska", 4).tier == "standard"
     # Small closed sets clear the stub tier even on one mention.
     assert _entity("factions/gilde", EntityType.FACTION, "Gilde").tier == "standard"
     # One-off props stay brief so they don't get padded.

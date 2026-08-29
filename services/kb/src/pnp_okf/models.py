@@ -249,7 +249,7 @@ ALWAYS_DEEP_TYPES = {EntityType.CHARACTER, EntityType.DEITY}
 # Small closed sets that deserve more than a stub even on a single mention.
 ALWAYS_STANDARD_TYPES = {EntityType.DOMAIN, EntityType.FACTION}
 
-DEEP_MENTION_THRESHOLD = 8
+DEEP_MENTION_THRESHOLD = 5
 
 
 # Closed subtype vocabulary per entity type. Deliberately closed: a free-form
