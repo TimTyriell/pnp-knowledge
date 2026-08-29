@@ -130,6 +130,15 @@ merge:
   amulett (stimmen): items/amulett_des_heiligen_duran
   die geister im amulett: items/amulett_des_heiligen_duran
   cepros’ heiliger streitkolben: items/streitkolben_von_dodo
+  # 2026-08-30 spelling sweep: "Cepros" bare (origin references outside the
+  # weapon phrase above) is the same mishearing of "Zebros" -- GM ruling
+  # 2026-08-29 overturns the prior Kanon_Entscheidungen.md entry that treated
+  # it as a separate origin. See sources/Kanon_Entscheidungen.md.
+  cepros: factions/koenigreich_zebros
+  # items/zebras_zorn duplicates items/streitkolben_von_dodo ("Zebros Zorn")
+  # under a one-letter-off title that dodged validate.py's exact-match
+  # duplicate_titles check. Same weapon, fold it in.
+  zebras zorn: items/streitkolben_von_dodo
   der phönixfeder: items/die_phoenixfeder
   stab (lindos stab): items/lindo_lauts_stab
   stab: items/lindo_lauts_stab
@@ -344,6 +353,11 @@ merge:
   untote armee: factions/belorus_untotenarmee
   untotenarmee von zebros: factions/belorus_untotenarmee
   untote horde: factions/belorus_untotenarmee
+  # 2026-08-30 spelling sweep: a second, still-live concept for the same
+  # army under the misread name "Untote Horde von Zebras" (see
+  # sources/Kanon_Entscheidungen.md, ### Belorus) escaped the "untote horde"
+  # key above because its extracted name carried the "von Zebras" suffix.
+  untote horde von zebras: factions/belorus_untotenarmee
   untote: factions/belorus_untotenarmee
 
   # GM ruling: the Goblin gods are gods, not an organisation.
@@ -1000,6 +1014,66 @@ canonical_name:
   npcs/hal_harl: Harl
   items/lindo_lauts_stab: Schlüssel von Abisalis
   deities/korn: Korn, der Blutgott
+  # spelling: only rewrites body prose, never a frontmatter title — this
+  # event's own title still said "Zebras Zorn" after the spelling fix below
+  # landed everywhere else.
+  events/bergung_des_streitkolbens_zebras_zorn: Bergung des Streitkolbens Zebros Zorn
+
+# spelling: mishearing -> canon text, applied to synthesized PROSE (not just
+# the title — see canonical_name: above for that). Without this, a title pin
+# never reaches the body: the sentence around a link keeps saying "Willoch"
+# forever, on every re-run, even after the concept's own title says
+# "Willauch". Applied by links.py::apply_spellings via normalize_body, so it
+# reaches session bodies, entity bodies, and `pnp validate --fix` alike.
+#
+# Keys are case-sensitive, word-boundary matched, and never touch a link
+# target or the `# Belege` citation list. Prefer a bare token only once every
+# occurrence in the bundle is confirmed to be the misspelling (see
+# docs/audits/2026-08-30-spelling-sweep.md, Bucket A); a variant that
+# collides with a real word or another meaning needs a phrase key instead
+# (Bucket B) so only the actual mishearing turns, not every occurrence of the
+# common word.
+spelling:
+  # --- Bucket A: bare token, every occurrence confirmed a mishearing -------
+  Willau: Willauch
+  Willoch: Willauch
+  Villauch: Willauch
+  Brechka: Breska
+  Bereska: Breska
+  Bresca: Breska
+  Breschka: Breska
+  Lanra: Landra
+  Leandra: Landra
+  Lenra: Landra
+  Tarvok: Thar'Vok
+  Tavok: Thar'Vok
+  Tarvolk: Thar'Vok
+  Adelia: Adeliga
+  Slicks: Slix
+  Born: Korn
+  Kord: Korn
+  Holodarn: Huludan
+  Zebrus Zorn: Zebros Zorn
+  # --- Bucket B, revised: bare token after all ------------------------------
+  # "Zebras" reads as the animal in isolation, so the original plan scoped
+  # this to a handful of phrases ("Festung Zebras", "Berg Zebras"). That
+  # missed just as many real forms ("aus Zebras", "General von Zebras", a
+  # quoted "Zebras Zorn" in session recaps) as it caught. A full-bundle
+  # check (2026-08-30) turned up zero legitimate zebra-the-animal mentions —
+  # the only surviving "Zebra" text is burg_des_belorus.md's own canon
+  # explanation of this exact mishearing, which the word-boundary match on
+  # "Zebras" (plural) doesn't touch anyway. Bare token confirmed safe.
+  Zebras: Zebros
+  # Same evidence for Cepros: not one occurrence in the bundle means
+  # anything else.
+  Cepros: Zebros
+  # Bare token, not phrase-scoped: a full-bundle check (2026-08-30) found
+  # all 38 word-boundary "Hack" occurrences refer to the hag, and the phrase
+  # key "die Hack" missed the ones spanning a link bracket
+  # ("die [Hack](/npcs/lenra.md)") or a sentence-initial capital ("Die
+  # Hack sucht..."). Bare token confirmed safe the same way Zebras/Cepros
+  # were above; see services/kb/tests/test_spelling_sweep.py.
+  Hack: Hag
 
 # Concepts that force the deep synthesis tier regardless of mention count —
 # the escape hatch for entities the automatic rules underrate. Characters and
@@ -1078,3 +1152,12 @@ alias_block:
   # titles linkable and only drops the ambiguous bare name.
   npcs/hans_wirt_zum_gruenen_sichelmond:
   - hans
+  # 2026-08-30 spelling sweep: "Amulett" is a bare generic noun, registered
+  # as an alias because someone once called this artefact just "the
+  # amulet" — but link_targets() then autolinks *any* mention of the word
+  # "Amulett" to this one concept, including Dodo's own unrelated trinket
+  # (characters/dodo.md: "ein Amulett... das sich als einfacher Schmuck
+  # herausstellt"). The qualified aliases ("Amulett des Heiligen Duran" etc.)
+  # stay linkable; only the ambiguous bare noun is dropped.
+  items/amulett_des_heiligen_duran:
+  - amulett

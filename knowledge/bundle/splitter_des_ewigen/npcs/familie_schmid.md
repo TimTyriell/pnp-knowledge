@@ -1,15 +1,15 @@
 ---
 type: NPC
 title: Familie Schmid
-description: Die Familie Schmid sind Bauern in Brechka, die Tiere und Holz haben.
-  Sie stellen der Gruppe acht Palisaden für die Verteidigung her. Sie si…
+description: Die Familie Schmid sind Bauern in Breska, die Tiere und Holz haben. Sie
+  stellen der Gruppe acht Palisaden für die Verteidigung her. Sie sin…
 tags:
 - npcs
 timestamp: '2025-04-09T00:00:00Z'
 id: NPC_FAMILIE_SCHMID
 ---
 
-Die Familie Schmid sind Bauern in [Brechka](/locations/breska.md), die Tiere und Holz haben. Sie stellen der Gruppe acht Palisaden für die Verteidigung her. Sie sind bereit, ihren Hof zu verteidigen, aber nicht im Zentrum des Kampfes.
+Die Familie Schmid sind Bauern in [Breska](/locations/breska.md), die Tiere und Holz haben. Sie stellen der Gruppe acht Palisaden für die Verteidigung her. Sie sind bereit, ihren Hof zu verteidigen, aber nicht im Zentrum des Kampfes.
 
 # Belege
 

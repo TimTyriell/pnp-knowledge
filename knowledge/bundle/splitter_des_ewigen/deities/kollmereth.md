@@ -16,7 +16,7 @@ aliases:
 
 ## Überblick
 
-Koll'Mereth, genannt „die Krone", ist eines der vier Seelenstücke, die im [Amulett](/items/amulett_des_heiligen_duran.md) von [Lindo Laut](/characters/lindo_laut.md) gefangen sind. Er gehört zu den alten Göttern und ist eine der Stimmen, die aus dem Amulett zu Lindo Laut sprechen. Anders als eine eigenständige Gottheit ist Koll'Mereth eine der Seelen [Vhar'Zuls](/deities/vharzul.md) – ein Fragment des zerfallenen alten Gottes, das in dem Amulett bewahrt wird.
+Koll'Mereth, genannt „die Krone", ist eines der vier Seelenstücke, die im Amulett von [Lindo Laut](/characters/lindo_laut.md) gefangen sind. Er gehört zu den alten Göttern und ist eine der Stimmen, die aus dem Amulett zu Lindo Laut sprechen. Anders als eine eigenständige Gottheit ist Koll'Mereth eine der Seelen [Vhar'Zuls](/deities/vharzul.md) – ein Fragment des zerfallenen alten Gottes, das in dem Amulett bewahrt wird.
 
 Sein Wesen wird im Buch der vier Seelen als verführerisch und machthungrig beschrieben: Er sät Ehrgeiz wie ein Gift. Seine Stimme ist „Honig über rostigem Stahl", er bietet Einfluss, Macht und „das Gewicht von Worten, vor denen selbst Könige schweigen". Seine Präsenz macht aus Zweiflern Diener und aus Freunden Rivalen. Sein Leitsatz lautet: *„Ein Schritt noch… dann knien sie vor dir. Und nennen dich Herr…"*
 
@@ -24,9 +24,9 @@ Im Verlauf der Kampagne wurde Koll'Mereths Seelenstück durch die Handlungen der
 
 ## Rolle in der Kampagne
 
-Koll'Mereth begegnete der Gruppe auf zwei Wegen: als physische Statue an einem Opferaltar in der oberen Etage einer [Festung](/locations/festung.md) und als eines der vier Seelenstücke im Amulett von Lindo Laut.
+Koll'Mereth begegnete der Gruppe auf zwei Wegen: als physische Statue an einem Opferaltar in der oberen Etage einer [Festung](/locations/festung.md) und als eines der vier Seelenstücke im [Amulett von Lindo Laut](/items/amulett_des_heiligen_duran.md).
 
-In der Festung diente seine Statue als Opferaltar, der mit [Nerash](/deities/nerash.md) verbunden war. Die Gruppe erfuhr, dass sie geopfert werden müsste, um weiterzukommen. Durch die [Befreiung von Nerash](/events/die_befreiung_von_nerash.md) wurde die Statue zerstört – ein Ereignis, das sich später als folgenschwerer herausstellte, als zunächst angenommen.
+In der Festung diente seine Statue als Opferaltar, der mit [Nerash](/deities/nerash.md) verbunden war. Die Gruppe erfuhr, dass sie geopfert werden müsste, um weiterzukommen. Durch die [Befreiung von Nerash](/events/befreiung_von_nerash.md) wurde die Statue zerstört – ein Ereignis, das sich später als folgenschwerer herausstellte, als zunächst angenommen.
 
 Am alten Schrein, an dem die Gruppe die vier Seelenstücke untersuchte, symbolisierte eine von vier Statuen Koll'Mereth. Dort erkannte Lindo Laut, dass das Seelenstück, das Nerash ausgelöscht hatte, das von Koll'Mereth war. Seitdem sind von den vier bekannten Seelen nur noch drei im Amulett verblieben.
 

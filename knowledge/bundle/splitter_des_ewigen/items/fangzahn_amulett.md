@@ -10,7 +10,7 @@ id: ITEM_FANGZAHN_AMULETT
 subtype: Schmuck
 ---
 
-Ein [Amulett](/items/amulett_des_heiligen_duran.md) mit einem Gebiss mit Fangzähnen, das [Lindo Laut](/characters/lindo_laut.md) hinter einem Gitter findet. Es hat magische Energie.
+Ein Amulett mit einem Gebiss mit Fangzähnen, das [Lindo Laut](/characters/lindo_laut.md) hinter einem Gitter findet. Es hat magische Energie.
 
 # Belege
 

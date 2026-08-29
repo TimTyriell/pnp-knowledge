@@ -10,7 +10,7 @@ id: EVENT_VERRAT_VON_TRILO
 subtype: Verhandlung
 ---
 
-[Trilo](/npcs/trillo.md) stellt die Gruppe [Kalos](/npcs/organisation_der_kalos.md) vor und versucht, sie zu rekrutieren. Als sie ablehnen, beschwört er ein [Skelett](/npcs/skelett_bogenschuetzen.md) und teleportiert sich weg, wodurch sein Verrat offenbar wird.
+[Trilo](/npcs/trilo.md) stellt die Gruppe [Kalos](/npcs/organisation_der_kalos.md) vor und versucht, sie zu rekrutieren. Als sie ablehnen, beschwört er ein [Skelett](/npcs/skelett_bogenschuetzen.md) und teleportiert sich weg, wodurch sein Verrat offenbar wird.
 
 # Belege
 

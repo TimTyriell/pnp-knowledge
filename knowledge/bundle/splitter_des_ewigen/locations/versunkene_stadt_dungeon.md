@@ -18,7 +18,7 @@ aliases:
 - Raum mit Brunnen und Gitter
 ---
 
-Ein Raum mit einem Brunnen und einem Gitter, durch das [Lindo Laut](/characters/lindo_laut.md) ein [Amulett](/items/amulett_des_heiligen_duran.md) findet.
+Ein Raum mit einem Brunnen und einem Gitter, durch das [Lindo Laut](/characters/lindo_laut.md) ein Amulett findet.
 
 # Belege
 

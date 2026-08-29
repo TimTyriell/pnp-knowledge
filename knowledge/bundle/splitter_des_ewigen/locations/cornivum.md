@@ -36,20 +36,20 @@ Rodeck ist der Verwalter oder Anführer der Siedlung, der die Gruppe empfängt u
 
 ### Entwicklung zur Festung
 
-Über die Zeit des Prologs hinweg wächst Cornivum von einem kleinen Dorf zu einer Festung heran. Am Ende des Prologs ist die Siedlung zu einem militärischen Stützpunkt ausgebaut, dessen Stadttor eine gigantische Armee entlässt. Die Ursache dieses Wachstums ist die dunkle Magie der Hag [Lenra](/npcs/lenra.md), die das abgelegene Dorf nutzte, um dort eine Armee aus Gnollen, Waldschraten und Untoten zu züchten.
+Über die Zeit des Prologs hinweg wächst Cornivum von einem kleinen Dorf zu einer Festung heran. Am Ende des Prologs ist die Siedlung zu einem militärischen Stützpunkt ausgebaut, dessen Stadttor eine gigantische Armee entlässt. Die Ursache dieses Wachstums ist die dunkle Magie der Hag [Landra](/npcs/lenra.md), die das abgelegene Dorf nutzte, um dort eine Armee aus Gnollen, Waldschraten und Untoten zu züchten.
 
 ## Beziehungen und Verbindungen
 
 - **Die Gilde**: Cornivum steht in Verbindung mit der Gilde, die die Gruppe nach Cornivum geschickt hat. Rodeck betont, dass die Gruppe als Gäste der Gilde willkommen ist.
 - **Rodeck**: Der Verwalter der Siedlung, der die Gruppe empfängt und ihr Unterkunft gewährt.
-- **Lenra**: Die Hag, deren dunkle Magie das Wachstum Cornivums und die Züchtung der Armee verursacht hat.
+- **Landra**: Die Hag, deren dunkle Magie das Wachstum Cornivums und die Züchtung der Armee verursacht hat.
 - **Die Gruppe**: Cornivum dient der Gruppe als Stützpunkt und Unterschlupf während ihrer Erkundungen im [Sumpf](/locations/sumpf_vor_dem_goblin_dorf.md).
 
 ## Chronologie
 
 **Session 2025-06-03:** Die Gruppe erreicht Cornivum. Bei ihrer Ankunft wird sie von einem Dunkelelfen argwöhnisch gemustert, der sie zunächst für Adelige hält. Rodeck stellt klar, dass die Gruppe von der Gilde geschickt wurde und als Gast willkommen ist. Die Gruppe erhält einen bescheidenen Unterschlupf. In der Nachbarschaft arbeiten zwei [Zwerge](/factions/zwerge.md). Cornivum präsentiert sich zu diesem Zeitpunkt als kleines, abgeschiedenes Sumpfdorf.
 
-**Zwischenzeit:** Über mehr als ein Jahr hinweg wächst Cornivum stetig. Unter dem Einfluss der dunklen Magie der Hag Lenra wird das Dorf zu einer Festung ausgebaut, in der eine Armee aus Gnollen, Waldschraten und Untoten herangezüchtet wird.
+**Zwischenzeit:** Über mehr als ein Jahr hinweg wächst Cornivum stetig. Unter dem Einfluss der dunklen Magie der Hag Landra wird das Dorf zu einer Festung ausgebaut, in der eine Armee aus Gnollen, Waldschraten und Untoten herangezüchtet wird.
 
 **Session 2026-07-21:** Am Ende des Prologs zeigt sich die wahre Natur Cornivums: Aus der Festung marschiert eine gigantische Armee — [Gnolle](/factions/gnolle.md), [Bugbears](/npcs/bugbears.md), [Goblins](/npcs/pilz_goblins.md), Trolle und [Oger](/npcs/oger.md) in einer unüberschaubaren Schar. Angeführt wird sie von einem großen Bären und weiteren düsteren Gestalten. Der GM beschreibt die Szene als die Endszene des Prologs und kündigt an, dass dieses Ereignis das Thema der ersten richtigen Season sein wird.
 
@@ -58,7 +58,7 @@ Rodeck ist der Verwalter oder Anführer der Siedlung, der die Gruppe empfängt u
 - Was genau ist der Zweck der aus Cornivum marschierenden Armee, und gegen wen oder was wird sie ziehen?
 - Welche Rolle spielt der große Bär, der die Armee anführt?
 - Was ist mit [Ehrenfels](/locations/ehrenfels.md) und Will geschehen, die der GM im Zusammenhang mit dem Ausmarsch der Armee erwähnt?
-- Wie konnte Lenra die Armee unbemerkt in Cornivum züchten, und welche Rolle spielten die Einsiedler und Rodeck dabei?
+- Wie konnte Landra die Armee unbemerkt in Cornivum züchten, und welche Rolle spielten die Einsiedler und Rodeck dabei?
 
 ## Belege
 

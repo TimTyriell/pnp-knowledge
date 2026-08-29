@@ -1,15 +1,15 @@
 ---
 type: NPC
 title: Brock
-description: Brock ist der zweite Wache in Brechka. Er wird nur kurz erwähnt, als
-  er zusammen mit Kerl die Gruppe anspricht. Er wird als einer der stärk…
+description: Brock ist der zweite Wache in Breska. Er wird nur kurz erwähnt, als er
+  zusammen mit Kerl die Gruppe anspricht. Er wird als einer der stärks…
 tags:
 - npcs
 timestamp: '2025-04-09T00:00:00Z'
 id: NPC_BROCK
 ---
 
-Brock ist der zweite Wache in [Brechka](/locations/breska.md). Er wird nur kurz erwähnt, als er zusammen mit [Kerl](/npcs/kerl.md) die Gruppe anspricht. Er wird als einer der stärksten Nahkämpfer im Dorf beschrieben.
+Brock ist der zweite Wache in [Breska](/locations/breska.md). Er wird nur kurz erwähnt, als er zusammen mit [Kerl](/npcs/kerl.md) die Gruppe anspricht. Er wird als einer der stärksten Nahkämpfer im Dorf beschrieben.
 
 # Belege
 

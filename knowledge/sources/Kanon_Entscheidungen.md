@@ -369,6 +369,13 @@ ENTSCHEIDUNG: Belorus ist **keine Gottheit**. Die Beschreibung als „Gottheit,
 die mit Stille assoziiert ist" beruht auf seinem Beinamen *der Stille* und ist
 ein Missverständnis; er ist ein mächtiger NPC, kein göttliches Wesen.
 
+ENTSCHEIDUNG (GM/Noah 2026-08-30): Belorus' Untotenarmee wurde einmal separat
+als „Untote Horde von Zebras" erfasst und dabei falsch verstanden: „Zebras"
+ist hier wieder die Verhörung von **Zebros**, dem gefallenen Königreich — die
+Horde besteht nicht aus untoten *Zebra-Tieren*, sondern zieht aus dem Gebiet
+des früheren Königreichs Zebros ins Tal. Es ist **dieselbe** Armee wie oben,
+kein zweites, eigenständiges Konzept.
+
 ### Hans
 
 ENTSCHEIDUNG: Es gibt **zwei verschiedene Personen namens Hans**. Der Soldat
@@ -462,9 +469,17 @@ Streitkolben aus Zebras" und „Streitkolben von Zebras" bezeichnen alle
 dieselbe. Nicht zu verwechseln mit dem *Morgenstern des Heiligen Duran*, der
 Ritter Brandon gehört.
 
-ENTSCHEIDUNG: Die drei Herkunftsangaben widersprechen sich **nicht**: Dodo zog
-die Waffe **in der Festung Zebras aus einem Spiegel**, und sie stammt
-**ursprünglich von Cepros**. Das sind drei Teile einer Geschichte.
+ENTSCHEIDUNG (überholt, siehe Korrektur 2026-08-29 direkt darunter): Die drei
+Herkunftsangaben widersprechen sich nicht: Dodo zog die Waffe in der Festung
+Zebras aus einem Spiegel, und sie stammt ursprünglich von Cepros. Das sind
+drei Teile einer Geschichte.
+
+KORREKTUR (GM/Noah 2026-08-29): **„Cepros" ist keine dritte, eigenständige
+Herkunft** — es ist dieselbe Verhörung wie „Zebras" für **Zebros**, das
+gefallene Königreich. Die Waffe heißt **Zebros Zorn**, wurde **in der Festung
+Zebros aus einem Spiegel gezogen** und stammt **ursprünglich aus dem
+Königreich Zebros** — eine einzige Herkunft, nicht drei. Jede weitere
+Erwähnung von „Cepros" im Bundle bezeichnet ebenfalls Zebros.
 
 ### Die Hags
 

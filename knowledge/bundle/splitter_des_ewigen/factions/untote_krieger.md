@@ -12,7 +12,7 @@ subtype: Armee
 
 # Untote Krieger
 
-Die **Untoten Krieger** sind eine Fraktion wiederbelebter Kämpfer, die unter der Führung von [Voras](/npcs/voras.md) gegen die [Dämonen](/factions/daemonen.md) kämpfen. Ihre Existenz als untote Einheit ist unmittelbar an [Voras](/npcs/vora.md) gebunden: Er ist es, der die Krieger wiederbelebt und sie als Kampftruppe führt.
+Die **Untoten Krieger** sind eine Fraktion wiederbelebter Kämpfer, die unter der Führung von [Voras](/npcs/voras.md) gegen die [Dämonen](/factions/daemonen.md) kämpfen. Ihre Existenz als untote Einheit ist unmittelbar an Voras gebunden: Er ist es, der die Krieger wiederbelebt und sie als Kampftruppe führt.
 
 ## Rolle im Kampf gegen die Dämonen
 

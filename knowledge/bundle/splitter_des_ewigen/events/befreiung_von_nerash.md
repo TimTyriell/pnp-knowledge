@@ -6,7 +6,7 @@ description: Die Gruppe befreit Nerash, indem Esterossa die Ketten durchtrennt, 
 tags:
 - events
 timestamp: '2025-07-09T00:00:00Z'
-id: EVENT_DIE_BEFREIUNG_VON_NERASH
+id: EVENT_BEFREIUNG_VON_NERASH
 subtype: Kampf
 ---
 

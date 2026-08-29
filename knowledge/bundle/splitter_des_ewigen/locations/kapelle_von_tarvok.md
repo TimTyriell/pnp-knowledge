@@ -1,7 +1,7 @@
 ---
 type: Location
-title: Kapelle von Tarvok
-description: Ein Wegweiser zeigt zur Kapelle von Tarvok, die offenbar das Ziel der
+title: Kapelle von Thar'Vok
+description: Ein Wegweiser zeigt zur Kapelle von Thar'Vok, die offenbar das Ziel der
   Gruppe ist.
 tags:
 - locations
@@ -10,7 +10,7 @@ id: LOC_KAPELLE_VON_TARVOK
 subtype: Gebäude
 ---
 
-Ein Wegweiser zeigt zur [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) von [Tarvok](/deities/tarvok_der_erdrichter.md), die offenbar das Ziel der Gruppe ist.
+Ein Wegweiser zeigt zur [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) von [Thar'Vok](/deities/tarvok_der_erdrichter.md), die offenbar das Ziel der Gruppe ist.
 
 # Belege
 

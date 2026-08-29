@@ -406,6 +406,30 @@ def _load_alias_blocks(registry_path: Path) -> dict[str, set[str]]:
     return out
 
 
+def load_spellings(registry_path: Path) -> dict[str, str]:
+    """``spelling:`` — mishearing -> canon text, applied to synthesized
+    prose (see ``links.py::apply_spellings``).
+
+    A ``canonical_name:`` pin only fixes a concept's *title*; the transcript
+    mishearing that produced it (e.g. "Willoch" for "Willauch") otherwise
+    survives untouched in every body it was ever synthesized into, on every
+    re-run, forever. This is the other half of correcting a name.
+
+    Public (unlike this module's other ``_load_*`` helpers) because it is
+    also needed by ``cli.py`` (to build the emit-time :class:`ConceptIndex`)
+    and ``validate.py`` (so ``pnp validate --fix`` can retro-apply it without
+    a full pipeline run).
+    """
+
+    data = _registry_data(registry_path)
+    out: dict[str, str] = {}
+    for old, new in (data.get("spelling") or {}).items():
+        old, new = str(old).strip(), str(new).strip()
+        if old and new:
+            out[old] = new
+    return out
+
+
 def _load_ignored(registry_path: Path) -> set[str]:
     """Concept ids listed under ``ignore:`` — never become concepts at all.
 

@@ -1,7 +1,7 @@
 ---
 type: NPC
 title: Kerl
-description: Kerl ist ein Wächter aus Brechka, der im Verlauf der Kampagne vom Dorfwächter
+description: Kerl ist ein Wächter aus Breska, der im Verlauf der Kampagne vom Dorfwächter
   zum Leibwächter des Grafen aufsteigt. Die Gruppe begegnet ihm…
 tags:
 - npcs
@@ -9,11 +9,11 @@ timestamp: '2025-06-25T00:00:00Z'
 id: NPC_KERL
 ---
 
-Kerl ist ein Wächter aus [Brechka](/locations/breska.md), der im Verlauf der Kampagne vom Dorfwächter zum Leibwächter des Grafen aufsteigt. Die Gruppe begegnet ihm zunächst als misstrauischem Wachposten, später als freundlichem Begleiter bei ihrem Abstieg in die Gruft.
+Kerl ist ein Wächter aus [Breska](/locations/breska.md), der im Verlauf der Kampagne vom Dorfwächter zum Leibwächter des Grafen aufsteigt. Die Gruppe begegnet ihm zunächst als misstrauischem Wachposten, später als freundlichem Begleiter bei ihrem Abstieg in die Gruft.
 
 ## Rolle und Werdegang
 
-- Kerl ist einer der beiden Wachen in [Brechka](/locations/breska.md) und wird als einer der stärksten Nahkämpfer im Dorf beschrieben.
+- Kerl ist einer der beiden Wachen in [Breska](/locations/breska.md) und wird als einer der stärksten Nahkämpfer im Dorf beschrieben.
 - Später wird er zum Leibwächter des Grafen befördert.
 - In dieser Funktion begleitet er die Gruppe in die Gruft und öffnet dort Türen mit einem magischen Gegenstand.
 

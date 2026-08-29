@@ -10,7 +10,7 @@ id: ITEM_BRIEF_VON_NOX
 subtype: Schriftstück
 ---
 
-Ein [Brief](/items/brief.md) von Nox, den [Ser Eulenweiss](/npcs/ser_eulenweiss.md) an [Voras](/npcs/voras.md) übergeben soll. Er enthält offenbar wichtige Informationen und wird von [Voras](/npcs/vora.md) gelesen.
+Ein [Brief](/items/brief.md) von Nox, den [Ser Eulenweiss](/npcs/ser_eulenweiss.md) an [Voras](/npcs/voras.md) übergeben soll. Er enthält offenbar wichtige Informationen und wird von Voras gelesen.
 
 # Belege
 

@@ -1,8 +1,8 @@
 ---
 type: Character
 title: Dodo
-description: Dodo ist ein blauer Halbdrache, Halbgoblin und der Tank der Gruppe. Er
-  wurde von Marco gespielt und ist einer der zentralen Charaktere der…
+description: Dodo ist ein blauer Halb-Drache, Halb-Goblin und der Tank der Gruppe.
+  Er stammt von der Insel Tarkia, wo er in einem Vulkan aufgewachsen is…
 tags:
 - characters
 timestamp: '2026-08-25T00:00:00Z'
@@ -17,99 +17,133 @@ aliases:
 
 ## Überblick
 
-Dodo ist ein blauer Halbdrache, Halbgoblin und der Tank der Gruppe. Er wurde von Marco gespielt und ist einer der zentralen Charaktere der Kampagne. Geboren und aufgewachsen in einem Vulkan auf der Insel [Tarkia](/locations/tarkia.md), hat Dodo eine tiefe Verbindung zu seiner Heimat und deren Bewohnern. Er ist ein Guardian, der sich der Community der Ritborn (auch als Klippengeborene bezeichnet) zugehörig fühlt und Mitglied der Dwarfmaster-[Gilde](/factions/gilde_von_ehrenfels.md) ist.
-
-Sein äußeres Erscheinungsbild ist geprägt von dicken blauen Schuppen, die ihm als natürlicher Schutz dienen. Er trägt ein riesiges Turmschild und kämpft mit einem [Streitkolben](/items/streitkolben_von_dodo.md). Dodo ist groß und schwer gebaut, was ihm zusammen mit seiner hohen Rüstung (9 Schadensreduzierung) erlaubt, die Rolle des Beschützers und Vorkämpfers der Gruppe zu übernehmen. In der Arena hat er sich den Titel des Champions erkämpft und wird in der Öffentlichkeit als „Trollschlechter" bekannt.
+Dodo ist ein blauer Halb-Drache, Halb-Goblin und der Tank der Gruppe. Er stammt von der Insel [Tarkia](/locations/tarkia.md), wo er in einem Vulkan aufgewachsen ist. Als Guardian hat er sich der Gemeinschaft der Ritborn (auch als Klippengeborene bezeichnet) angeschlossen. Er kämpft mit einem Turmschild und einem [Streitkolben](/items/streitkolben_von_dodo.md), verfügt über einen Feueratem und ist bekannt für seine unerschütterliche Beschützerrolle innerhalb der Gruppe. Im Laufe der Kampagne wird er als Champion der Arena bekannt und trägt den Beinamen „Trollschlechter“.
 
 ## Rolle in der Kampagne
 
-Dodo ist das Schild und Schwert der Gruppe. Seine primäre Rolle ist die des Tanks: Er stellt sich schützend vor seine Verbündeten, nimmt Schaden für sie auf und hält die Linie gegen Feinde. Er geht meist voran, löst Fallen aus und übernimmt in zunehmendem Maße die Führung der Gruppe. Besonders in späteren Sessions wird er als Anführer beschrieben, der taktische Anweisungen gibt, Verhandlungen führt und Entscheidungen trifft.
+Dodo ist der defensive Anker der Gruppe. Er positioniert sich stets an der Front, zieht Angriffe auf sich und nimmt Schaden für seine Verbündeten auf. Seine Fähigkeiten wie „I am your Shield“, „Unstoppable“ und „Bedrohliche Aura“ machen ihn zum unverzichtbaren Schutzschild für die verwundbareren Mitglieder der Gruppe. Er stellt sich wiederholt schützend vor [Cookie](/characters/cookie.md), Lunara, [Lindo Laut](/characters/lindo_laut.md) und andere Gefährten.
 
-Er ist bereit, für seine Freunde einzustehen und sich in Gefahr zu begeben, um andere zu schützen. Seine Fähigkeit „I am your Shield" erlaubt es ihm, Schaden von Verbündeten abzufangen, und seine Fähigkeit „Unstoppable" macht ihn auch gegen kritische Treffer widerstandsfähig. In der Gruppe übernimmt er die Rolle des Beschützers von [Lindo Laut](/characters/lindo_laut.md), [Cookie](/characters/cookie.md) und Lunara, für die er wiederholt sein Leben riskiert.
+Über die Sessions hinweg entwickelt sich Dodo von einem einfachen Kämpfer zu einem Anführer und Strategen. Er übernimmt Verhandlungen mit [Banditen](/factions/silberkerne.md), führt die Gruppe nach [Breska](/locations/breska.md), entscheidet über das Vorgehen in der Gruft zu [Voras](/npcs/voras.md) und koordiniert die Verteidigung des Dorfes. Der GM bestätigt diese Entwicklung, als Sir Weiss ihn auffordert: „Herr Dodo, vielleicht führt ihr die Gruppe an. Ihr seid hier mehr bewandert und es wäre sicherlich sicherer, dass ihr entscheidet, wohin wir gehen.“
 
 ## Wichtige Merkmale
 
-### Fähigkeiten und Kampfstil
+### Äußere Erscheinung
 
-Dodo ist ein Stalwart mit hoher Rüstung und einem massiven Turmschild. Er kämpft mit einem Streitkolben, den er im Laufe der Kampagne mehrfach wechselt: Zunächst führt er ein Breitschwert, kauft dann auf Tier 2 einen Streitkolben und erhält schließlich in der [Seelenwacht](/locations/seelenwacht.md)-Session die heilige Waffe „[Zebros](/factions/koenigreich_zebros.md) Zorn", die er aus einem Spiegel in der [Festung](/locations/festung.md) Zebras zog. Diese Waffe stammt ursprünglich von Cepros und ist seine aktuelle Hauptwaffe. Sie leuchtet und kann Schutzschilde durchdringen, wie im Kampf gegen den untoten Krieger gezeigt wird.
+Dodo ist ein blauer Halb-Drache, Halb-Goblin mit dicken Schuppen, die ihm natürlichen Schutz bieten. Er trägt zeitweise keine Rüstung, sondern verlässt sich auf seine Schuppen, nutzt aber ein riesiges Schild und einen Streitkolben. Seine Größe wird mehrfach hervorgehoben – er wird als „riesiger Krieger“ beschrieben, und ein Goblin bemerkt über ihn: „Der riecht wie ein Goblin. Ist ein halber Goblin.“ In der Arena wird er als „Champion“ und „Trollschlechter“ bekannt.
 
-Sein Feueratem ist ein charakteristisches Merkmal, das als Teil von ihm gilt. Er setzt ihn gegen verschiedene Gegner ein, von Goblins über [Untote](/factions/belorus_untotenarmee.md) bis zu Wasserelementaren, wobei die Effektivität variiert. Gegen die Wasserelementare und [Pilz-Goblins](/npcs/pilz_goblins.md) richtet er nur wenig Schaden an, während er mit seinem Feuer Untote effektiv verbrennt und einen Spalt in den Schnee schmelzen kann.
+### Kampffähigkeiten
 
-Dodo kann in einen „Unstoppable-Modus" wechseln und verfügt über die Fähigkeit „Bedrohliche Aura", mit der er Gegner tauntet. Er nutzt Armor-Slots und Hope-Punkte, um Schaden abzufangen, und kann seine Rüstung reparieren. Er ist zudem in der Lage, Goblin-Schatten zu beschwören, um Verbündete zu schützen.
+Dodo ist ein Stalwart mit hoher Rüstung und 9 Schadensreduzierung. Er kämpft mit einem Turmschild und einem Streitkolben, den er im Laufe der Kampagne wechselt: Zunächst führt er ein Breitschwert, kauft dann auf Tier 2 einen Streitkolben und erhält schließlich in der [Seelenwacht](/locations/seelenwacht.md)-Session die heilige Waffe **Zebros Zorn**, die er seither als Hauptwaffe führt. Diese Waffe wurde in der [Festung](/locations/festung.md) Zebros aus einem Spiegel gezogen und stammt ursprünglich aus dem gefallenen [Königreich Zebros](/factions/koenigreich_zebros.md). Sie leuchtet im Kampf und kann Schutzschilde durchdringen.
+
+Sein Feueratem ist ein wiederkehrendes Element – er setzt ihn gegen Wasserelementare, [Pilz-Goblins](/npcs/pilz_goblins.md), [Untote](/factions/belorus_untotenarmee.md) und andere Gegner ein, wobei die Effektivität variiert. Er kann in einen „Unstoppable“-Modus wechseln, der ihn besonders widerstandsfähig macht. Seine Fähigkeit „Bedrohliche Aura“ nutzt er, um Gegner wie den Werwolf zu provozieren.
 
 ### Wesenszüge
 
-Dodo ist ein treuschlechter Kämpfer mit einem ausgeprägten Beschützerinstinkt. Er ist mutig und stellt sich Gegnern entgegen, zeigt aber auch taktische Zurückhaltung und Vorsicht. Er ist loyal gegenüber seinen Freunden und betont die Wichtigkeit der Gruppe als Familie. Er ist pragmatisch und will zum Beispiel das Kopfgeld eintreiben, zeigt aber auch Mitgefühl, etwa wenn er Cookie vor Kontrolle rettet oder einen toten [Fallout-Frosch](/npcs/fallout_frosch.md) mit einem Gebet ehrt.
+Dodo ist ein treuschlechter Kämpfer mit einem starken Beschützerinstinkt. Er ist loyal gegenüber seinen Freunden und stellt sich wiederholt schützend vor sie. Er zeigt Fürsorge, indem er Lindo Laut ermutigt und ihm Hope schenkt, Cookie seine Heiltränke gibt und Lunara vor Angriffen abschirmt. Er ist pragmatisch und vorsichtig, schlägt vor, Kreaturen erst anzusprechen, bevor man sie angreift, und versucht, Konflikte mit der [Gilde](/factions/gilde_von_ehrenfels.md) zu vermeiden.
 
-Er liebt Tiere und hat eine besondere Gabe im Umgang mit ihnen: Er kann Tiere beruhigen, zähmt einen Basilisken mit einem Hühnerbein und kümmert sich um seinen [Strixwolf](/npcs/strixwolf.md) [Inaros](/npcs/inaros.md). Er ist als Biestmeister bekannt. Gleichzeitig ist er misstrauisch gegenüber Fremden und religiösen Menschen und zeigt Abneigung gegen die neuen Götter.
-
-Dodo leidet unter Albträumen und Heimweh, besonders in [Abyssalis](/domains/splitterwelt.md). Er vermisst seine blaue Haut, was auf einen Domänen-Effekt der Götter zurückgeht, durch den kurzzeitig alles schwarz-weiß erschien. Er hält sein Schild mit den Namen seiner Freunde nah bei sich und trägt ein [Amulett](/items/amulett_des_heiligen_duran.md) mit diesen Namen. Er ist überfordert von magischen Ereignissen und Mächten, mit denen er sich nicht auskennt, und verlässt sich dann auf seine Gefährten.
+Gleichzeitig ist er von den magischen Ereignissen der Kampagne oft überfordert. Er gibt zu, dass er sich mit den Mächten, die in [Abyssalis](/domains/splitterwelt.md) herrschen, nicht auskennt, und hofft, dass [Esterossa](/characters/esterossa.md) das Richtige tut. Er leidet unter Albträumen und Heimweh, vermisst seine blaue Haut (bedingt durch einen Domänen-Effekt der Götter, der kurzzeitig alles schwarz-weiß erscheinen ließ) und hält sein Schild mit den Namen seiner Freunde nah bei sich.
 
 ## Beziehungen und Verbindungen
 
-Dodo hat enge Beziehungen zu mehreren Mitgliedern der Gruppe:
+### Esterossa
 
-- **[Esterossa](/characters/esterossa.md)**: Sie ist eine enge Verbündete und Heilerin. Sie heilt ihn mehrfach schwerer Verletzungen und er gibt ihr Komplimente, die beiden Hope-Punkte bringen. Er vertraut ihr und hofft, dass sie das Richtige tut.
-- **Lindo Laut**: Dodo beschützt ihn wiederholt und ist besorgt um ihn. Er versucht, ihn davon abzuhalten, den Thron zu besteigen, und hat einen emotionalen Moment mit ihm über ihre Freundschaft. Er will ihn von dem Dämon in ihm befreien.
-- **Cookie**: Er wirft sich vor sie, um sie vor Angriffen zu schützen, gibt ihr seine Heiltränke und rettet sie vor Kontrolle. Nach Cookies Tod informiert er die Gruppe darüber.
-- **Lunara**: Er ist offen für sie, bietet ihr an, sie auf Missionen zu begleiten, und gibt ihr einen [Stein von Cookie](/items/stein_von_cookie.md), mit dem man mit Tieren sprechen kann. Er vertraut ihr und stimmt zu, zur Narbe zu gehen.
-- **[Rotunas](/characters/rotunas.md)**: Er rettet Rotunas vor dem Biss einer Kreatur und wird von Rotunas' Magischer Hand aus einem Schacht gezogen.
-- **[Krenko](/npcs/krenko.md)**: Er sucht nach seinem alten Freund Krenko von der Insel Tarkia.
-- **Inaros**: Sein Strixwolf, den er in [Ehrenfels](/locations/ehrenfels.md) zurücklässt und sehr vermisst.
-- **[Gunther](/characters/gunther.md)**: Er ist ihm gegenüber aufgeschlossen, da dieser ähnliche Vorfahren hat.
+Esterossa ist Dodos engste Verbündete und Heilerin. Sie heilt ihn mehrfach im Kampf, befreit ihn aus dem Bauch eines Seelenkalbs und unterstützt ihn mit ihrem Schild. Dodo gibt ihr ein Kompliment, das beiden Hope-Punkte bringt, und er stellt sich dem Dämon entgegen, loyal an Esterossas Seite. Er vertraut ihrem Urteil, auch wenn er die magischen Zusammenhänge nicht immer versteht.
+
+### Lindo Laut
+
+Lindo Laut ist ein enger Freund, um den Dodo sich sorgt. Er versucht, ihn davon abzubringen, den Thron zu besteigen, beschützt ihn im Kampf und hat einen emotionalen Moment mit ihm über ihre Freundschaft. Als Lindo Laut von einem Dämon besessen wird, versucht Dodo, ihn im Kampf zu erreichen, indem er ihm in die Augen schaut, sieht aber nur den Dämon. Er ist bereit, ins Abyssalis zu gehen, um Lindo Laut zu befreien.
+
+### Lunara
+
+Lunara ist eine spätere Gefährtin, der Dodo vertraut. Er gibt ihr einen [Stein von Cookie](/items/stein_von_cookie.md), mit dem man mit Tieren sprechen kann, und bietet ihr an, sie auf einer Mission zu begleiten. Er vertraut ihrem Urteil und folgt ihr zur Narbe, auch wenn er der geisterhaften Kreatur misstrauisch gegenübersteht.
+
+### Cookie
+
+Cookie ist eine enge Gefährtin, die Dodo wiederholt beschützt. Er wirft sich vor sie, um sie vor Angriffen zu schützen, gibt ihr seine Heiltränke und rettet sie vor der Kontrolle einer Kreatur. Nach Cookies Tod informiert er die Gruppe darüber.
+
+### Rotunas
+
+[Rotunas](/characters/rotunas.md) ist ein Gefährte, den Dodo vor dem Biss einer Kreatur rettet. Er wird von Rotunas' Magischer Hand aus einem Schacht gezogen und betet an Rotunas' Statue um Vergebung.
+
+### Krenko
+
+Dodo sucht auf der Insel Tarkia nach seinem alten Freund [Krenko](/npcs/krenko.md). Er versucht, Vertrauen zu den dortigen Goblins aufzubauen.
+
+### Inaros
+
+Dodo kümmert sich um einen geretteten [Strixwolf](/npcs/strixwolf.md) namens [Inaros](/npcs/inaros.md), den er in [Ehrenfels](/locations/ehrenfels.md) zurücklässt. Als er aus Abyssalis zurückkehrt, fragt er besorgt nach ihm und erfährt, dass dieser vermisst wird. Er hinterlässt ein Totem am Nest von Inaros als Zeichen der Hoffnung.
+
+### Weitere Verbindungen
+
+- **[Vasul](/deities/vharzul.md)**: Erhält von ihm eine Figur in Form von Lunara als Schutz.
+- **[Gunther](/characters/gunther.md)**: Ist ihm gegenüber aufgeschlossen, da dieser ähnliche Vorfahren hat.
+- **[Hendrik](/npcs/hendrik.md)**: Ist misstrauisch gegenüber ihm und bietet an, ihn zu bewachen.
+- **Hal**: Ist misstrauisch und bleibt beim Abschied draußen.
+- **[Vitius](/npcs/vitius.md)**: Führt die Konfrontation mit ihm an und fordert die Wahrheit über [Nerash](/deities/nerash.md).
 
 ## Chronologie
 
-### Frühe Abenteuer (März bis Juni 2025)
+### Frühe Abenteuer (März–Juni 2025)
 
-Dodo beginnt als Guardian mit Breitschwert, der sich als Tank positioniert. Er nutzt „I am your Shield", um Schaden von Tim abzufangen, und entscheidet sich für die Community „Ritborn". In den ersten Kämpfen gegen Goblins zeigt er sich unerschütterlich und blockt Angriffe mit seinem Schild. Er trinkt einen Trank, um Stress abzubauen, und kämpft mit einem Kolben.
+Dodo beginnt als Guardian mit Breitschwert und der Fähigkeit „I am your Shield“. Er entscheidet sich für die Gemeinschaft der Ritborn. In den ersten Kämpfen gegen Goblins zeigt er sich als unerschütterlicher Tank, der mit seinem Schild Angriffe blockt und kritische Treffer mit „Unstoppable“ abwehrt. Er trinkt einen Trank, um Stress abzubauen, und kämpft mit einem Kolben.
 
-Im April wird er von [Lanra](/npcs/lenra.md) geschrumpft, kämpft aber weiter mutig. Er eilt Esterossa zur Hilfe und tötet mehrere Goblins. Im Mai zeigt er sich als Mitglied der Dwarfmaster-Gilde, tötet einen Gnoll mit einem kritischen Treffer und neutralisiert das Gift einer Klaue mit seiner Fackel. Er findet in einer Ruine ein goldenes Amulett, das sich als einfacher Schmuck herausstellt.
+In der Festung Zebros zerstört er eine Rüstung mit Beschwörungsmagie und wird von [Landra](/npcs/lenra.md) geschrumpft. Er tötet mehrere Goblins und eilt Esterossa zur Hilfe. In einer Ruine findet er ein goldenes Amulett, das sich als einfacher Schmuck herausstellt. Er neutralisiert das Gift einer Klaue mit seiner Fackel und entfernt die Klaue mit seinen Panzerhandschuhen.
 
-Im Juni kämpft er gegen einen Eisbären und Untote, wird von [Belorus](/npcs/belorus.md) als „armer Ritter" verspottet, bleibt aber standhaft. Er rettet Rotunas vor dem Biss einer Kreatur und zerschmettert sie. Er repariert seinen Schild, kämpft gegen eine [Mimik](/npcs/mimik.md) und setzt seinen Feueratem gegen Wasserelementare ein. Er findet einen schwarzen Palantir und betet zu seiner [Schlangenfigur](/deities/schlangenfigur.md), um gefangene Seelen zu erlösen, was diese jedoch zu Asche verbrennt.
+### Der Graf und die Untoten (Juni–September 2025)
 
-### Die Reise nach Zebras und der Graf (Juni bis August 2025)
+Dodo berichtet dem Grafen von seinen Erlebnissen auf dem [Berg Zebros](/locations/berge_von_zebros.md) und dem Kampf gegen den dunklen Paladin. In der Bibliothek findet er den schwarzen Palantir und hält ihn an ein Buch, was eine Kette von Ereignissen auslöst. Im [Kampf gegen die Celestials](/events/kampf_gegen_die_celestials.md) zeigt er sich mutig, springt über Gitter und schlägt mit Keule und Schild zu.
 
-Dodo berichtet dem Grafen von seinen Erlebnissen auf dem [Berg Zebras](/locations/berge_von_zebros.md) und dem Kampf gegen den dunklen Paladin. In der Bibliothek hält er den schwarzen Palantir an ein Buch, was eine Kette von Ereignissen auslöst. Im [Kampf gegen die Celestials](/events/kampf_gegen_die_celestials.md) zeigt er sich mutig und beschützt Lindo Laut.
+Er wird von den Anhängern Warzuls versteinert, als er sich nicht zu erkennen gibt, kann sich aber später befreien. Er verbrennt einen gefesselten [Kultisten](/factions/kultisten.md) und schmilzt mit seinem Feuer einen Spalt in den Schnee. Er erkennt einen Goblin aus seiner Heimat am Baum und erleidet Stress. Er weigert sich, den [Vertrag des Ratten-Dämons](/events/vertrag_des_ratten_daemons.md) zu unterschreiben.
 
-Im Juli wirkt Dodo traumatisiert von früheren Ereignissen und ist vorsichtig. Er schlägt vor, Kreaturen anzusprechen, bevor man sie angreift. Im Kampf gegen [Attentäter](/npcs/attentaeter.md) zeigt er sich als Drache, der Feuer speit, und tötet mehrere Gegner. Er wird schwer getroffen, aber von Esterossa geheilt.
+Im Kampf gegen den Minotaurus wird er von einem [Speer](/items/speer.md) getroffen, überlebt aber dank seines Schildes, zertrümmert das Knie des Minotaurus und besiegt ihn. Er ist bereit, als letzter zu fliehen und wird von Rotunas' Magischer Hand aus dem Schacht gezogen.
 
-Im August spürt er eine bedrückende Atmosphäre, wirft einen Ghul ins Feuer und ist misstrauisch gegenüber [Hendrik](/npcs/hendrik.md). Er gibt einem Riesen Hähnchenschlegel und erfährt den Weg. Am [Ende](/locations/ende_jenseits_der_orkgebiete.md) wird er von den Anhängern [Warzuls](/deities/vharzul.md) versteinert, als er sich nicht zu erkennen gibt.
+### Arena-Kämpfe (Oktober 2025)
 
-### Befreiung und Arena (September bis November 2025)
+Dodo wird als Champion der Arena bekannt. Er meditiert vor dem Kampf, um Ruhe zu finden, und nutzt seine Fähigkeit „Bedrohliche Aura“, um den Werwolf zu provozieren. Er tötet den Werwolf mit einem einzigen Schlag, nachdem der Lord das Urteil gefällt hat. Im [Kampf gegen die Phasenspinne](/events/kampf_gegen_die_phasenspinne.md) schützt er seine Gruppe mit seinem Schild und verbrennt die kleinen Spinnen mit seinem Feueratem. Er präsentiert das [Spinnenei](/items/spinnenei.md) der Menge und verlässt die Arena als Held.
 
-Im September kann sich Dodo aus der Versteinerung befreien. Er verbrennt einen gefesselten [Kultisten](/factions/kultisten.md) und schmilzt mit seinem Feuer einen Spalt in den Schnee. Er erkennt einen Goblin aus seiner Heimat am Baum und erleidet Stress. Er weigert sich, den [Vertrag des Ratten-Dämons](/events/vertrag_des_ratten_daemons.md) zu unterschreiben. Im Kampf gegen den Minotaurus wird er von einem [Speer](/items/speer.md) getroffen, überlebt aber dank seines Schildes und zertrümmert das Knie des Minotaurus.
+Er ist an einer Ausbildung bei Mil interessiert und erwägt, am Solo-Kampf teilzunehmen. Er opfert Blut an einer Tür und stellt eine Waffe her, die die Kreatur vernichten kann.
 
-Er wird als Champion der Arena bekannt und verhandelt mit [Roland](/npcs/roland.md) über den Zeitplan. Er ist misstrauisch gegenüber dem Gnoll und schlägt vor, die [Banditen](/factions/silberkerne.md) zu bezahlen. Im Kampf gegen die Untoten erhält er einen Stärke-Buff durch einen grünen Blitz. Er wechselt in den Unstoppable-Modus, beschwört einen Schatten-Goblin zum Schutz von Lindo Laut und ist misstrauisch gegenüber Hal.
+### Die Insel Tarkia und der Tod von Cookie (November 2025)
 
-Im Oktober verbrennt er zusammen mit Lindo Laut eine grüne Struktur und zerstört die Kristalle im Torso eines Golems. Er ist an einer Ausbildung bei Mil interessiert und erwägt, am Solo-Kampf teilzunehmen. In der Arena meditiert er vor dem Kampf, nutzt seine „Bedrohliche Aura" gegen den Werwolf und tötet ihn mit einem einzigen Schlag. Er präsentiert das [Spinnenei](/items/spinnenei.md) der Menge und verlässt die Arena als Held.
+Dodo sucht auf der Insel Tarkia nach seinem alten Freund Krenko. Er untersucht einen [Altar](/items/altar.md) und eine Flamme und vermutet einen Opferaltar. Nach Cookies Tod informiert er die Gruppe und gibt Lunara einen Stein von Cookie, mit dem man mit Tieren sprechen kann. Er beteiligt sich am Trinkgelage und trinkt [Kornklatscher](/items/kornklatscher.md).
 
-Im November sucht er nach seinem alten Freund Krenko auf der Insel Tarkia. Er untersucht einen [Altar](/items/altar.md) und vermutet einen Opferaltar. Er informiert die Gruppe über Cookies Tod und gibt Lunara einen Stein von Cookie.
+### Die Splitterwelt und Abyssalis (Januar–Juli 2026)
 
-### Die Splitterwelt und Abyssalis (November 2025 bis Juli 2026)
+Dodo wird von einer [Splitterwelt-Kreatur](/npcs/kreatur_in_der_splitterwelt.md) verschlungen und verliert HP, wird aber von Esterossa geheilt. Er sieht in einer Explosion eine Vision von einem Laboratorium mit einem großen grünen [Kristall](/items/gruener_kristall.md) und einer geheimnisvollen Gestalt. Er trägt einen Obsidianring aus seiner Heimat und den heiligen Streitkolben aus Zebros. Im Kampf gegen den untoten Krieger entdeckt er, dass sein Streitkolben den Schutzschild durchdringen kann.
 
-Dodo wird von der [Splitterwelt-Kreatur](/npcs/kreatur_in_der_splitterwelt.md) verschlungen und verliert HP, wird aber von Esterossa geheilt. Er nutzt eine heilige Waffe von Cepros. Im Januar wird er von einem Seelenkalb verschlungen, kann sich aber durch einen Schnitt von Esterossa befreien. Er sieht in einer Explosion eine Vision von einem Laboratorium mit einem großen grünen [Kristall](/items/gruener_kristall.md). Er trägt einen Obsidianring aus seiner Heimat und den heiligen Streitkolben aus Zebras.
+Er koordiniert die Verteidigung des Dorfes und gibt Befehle an die Dorfbewohner und Soldaten. Im Dungeon wird er von einem Käfer gebissen und von [Nyrella](/characters/nyrella.md) mit Ranken aus einer Grube gerettet. Im Kampf gegen die dämonische Form von Lindo Laut trifft er sie mit seinem leuchtenden Streitkolben und verursacht 24 Schaden.
 
-Im Februar koordiniert er die Verteidigung und gibt Befehle an Dorfbewohner und Soldaten. Er wird von einem Käfer gebissen und von [Nyrella](/characters/nyrella.md) gerettet. Im Kampf gegen die dämonische Form von Lindo Laut trifft er sie mit seinem leuchtenden Streitkolben und verursacht 24 Schaden. Er versucht, Lindo Laut im Kampf zu erreichen, sieht aber nur den Dämon.
+Er besorgt Gegengifte vom Alchemisten und kauft eine Armbrust für Lindo Laut. Er ist der einzige, der Ahnung vom Silberabbau hat, und schafft es, einen großen Brocken Silber abzubauen. Er übernimmt die Verhandlung mit den Banditen und täuscht vor, dass die Gruppe nichts gefunden hat, um die Silbervorkommen geheim zu halten.
 
-Im März besorgt er Gegengifte vom Alchemisten und kauft eine Armbrust für Lindo Laut. Er ist der einzige, der Ahnung vom Silberabbau hat, und täuscht vor, dass die Gruppe nichts gefunden hat. Er wird im [Haus des Löwen](/locations/haus_des_loewen.md) als Champion wiedererkannt und sucht nach einem Buch über Schutz gegen Magie. Er führt die Gruppe nach [Breska](/locations/breska.md) und geht allein in die Gruft zu [Voras](/npcs/voras.md).
+In der Bibliothek sucht er nach einem Buch über Schutz gegen Magie und erhält eine Art Schatzkarte, die auf ein Material in den nördlichen Inseln hinweist. Er führt die Gruppe nach Breska und übernimmt die Verhandlungen mit dem Wächter. Er geht allein in die Gruft zu Voras und zeigt sich als Anführer.
 
-Im April kümmert er sich um den geretteten Strixwolf Inaros und betont die Wichtigkeit der Gruppe als Familie. Er ist nervös wegen Abyssalis, aber hoffnungsvoll, Lindo Laut zu befreien. Er tötet [Dormak](/npcs/dormak.md) mit seinem Streitkolben, der durch Vasuls Macht verstärkt wird. Er trägt ein Amulett mit den Namen seiner Freunde und erhält von Vasul eine Figur in Form von Lunara als Schutz.
+In Abyssalis kämpft er gegen [Dormak](/npcs/dormak.md) und tötet ihn mit seinem Streitkolben, der durch Vasuls Macht verstärkt wird. Er trägt ein Amulett mit den Namen seiner Freunde und erhält von Vasul eine Figur in Form von Lunara als Schutz. Er wirft sich vor [Brim](/characters/brim.md), um ihn zu schützen, und wird vom rosa Blob umhüllt, kann sich aber befreien.
 
-In Abyssalis leidet er unter Albträumen und Heimweh. Er hält sein Schild mit den Namen seiner Freunde nah bei sich und vermisst seine blaue Haut. Er tankt den Angriff des Etten, um Lunara zu schützen, und versteht die Sprache der [Dämonen](/factions/daemonen.md) nicht. Er kämpft gegen den [Seraphen](/factions/seraphen.md), zerstört den Ring mit seinem Streitkolben und vernichtet den Seraphen.
+Er leidet unter Albträumen und Heimweh, hält sein Schild mit den Namen seiner Freunde nah bei sich und vermisst seine blaue Haut. Im Kampf gegen die [Höllenhunde](/npcs/hoellenhunde.md) tötet er einen Hund und tankt den Angriff des Etten, um Lunara zu schützen. Er versteht die Sprache der [Dämonen](/factions/daemonen.md) nicht und verlässt sich auf Lunara.
 
-### Rückkehr und neue Aufgaben (Juli bis August 2026)
+Im [Kampf gegen den Seraphen](/events/kampf_gegen_den_seraphen.md) erleidet er schwere Schäden und zerstört schließlich den Ring mit seinem Streitkolben, was den [Seraphen](/factions/seraphen.md) vernichtet. Er kämpft gegen Goblins und Seraphen, versteht die Goblin-Sprache und versucht, mit den korrumpierten Goblins zu verhandeln, was jedoch fehlschlägt. Er erleidet eine Schulterverletzung, die von Esterossa behandelt wird.
 
-Nach der [Rückkehr aus Abyssalis](/events/rueckkehr_aus_abyssalis.md) ist Dodo erleichtert und freut sich auf seinen Strixwolf Inaros, der jedoch vermisst wird. Er ist Gunther gegenüber aufgeschlossen und spricht ein Gebet an Rotunas' Statue. Er führt die Gruppe und spricht mit [Vitius](/npcs/vitius.md), ist aber misstrauisch gegenüber den neuen Göttern. Er fordert die Wahrheit von Vitius und hinterlässt ein Totem am Nest von Inaros als Zeichen der Hoffnung.
+Er ist besorgt um Lunara und rennt zu ihr, als sie fällt. Er trinkt eine Stamina-Potion und versucht, Goblin-Schatten zu beschwören, um die Feuerwand zu durchbrechen, was fehlschlägt. Er wird von Tentakeln angegriffen und hochgeschleudert, erleidet aber nur leichte Schäden. Er stößt einen Magier in die Kreatur und kämpft im Team mit Lindo Laut.
 
-Er fällt von einer einstürzenden Säule und verletzt sich, wird aber von Gunther geheilt. Er beruhigt den Basilisken mit einem Hühnerbein und zähmt ihn. Er übergibt [Sloppy](/npcs/sloppy.md) an [Vago](/npcs/vago.md) und zeigt Interesse an der Rüstung von [Edmund](/npcs/sir_edmund.md), die [Obsidian aus Tarkir](/items/obsidian_aus_tarkir.md) enthält. Als Biestmeister kann er Tiere beruhigen und vernichtet mit seinem Feueratem die Schattenhorde. Er tötet den Schamanen und verbrennt dessen Leiche.
+Er stellt sich auf die Seite von Lindo Laut und Esterossa, da er glaubt, dass die Wiederherstellung von [Liam](/npcs/liam_velora.md) durch Nekromantie nicht richtig wäre. Er erinnert sich an den Altar und führt die Gruppe dorthin. Er stößt einen Leibwächter in den Abgrund, zerstört die Statue, die Ulvanara kontrolliert, und verabschiedet sich von Esterossa.
+
+### Rückkehr und neue Aufgaben (Juli–August 2026)
+
+Dodo ist erleichtert, aus Abyssalis zurück zu sein, und freut sich auf seinen Strixwolf Inaros und seine Freunde. Er ist überfordert von der jubelnden Menge, aber glücklich, vertraute Gesichter zu sehen. Er fragt nach Inaros und erfährt, dass dieser vermisst wird. Er spricht ein Gebet an Rotunas' Statue und bittet um Vergebung.
+
+Er führt die Gruppe und spricht mit Vitius. Er ist misstrauisch gegenüber den neuen Göttern und zeigt Abneigung gegen religiöse Menschen. Er schätzt die Stärke der Seraphen ein und erkennt, dass sie im Kampf gefährlich sind, besonders wenn sie fliegen. Er erhält den [Segen der neuen Götter](/events/segen_der_neuen_goetter.md).
+
+Er führt die [Konfrontation mit Vitius](/events/konfrontation_mit_vitius.md) an und fordert die Wahrheit. Er betont, dass die Gruppe Nerash befreit hat und keinen Respekt vor einer Gottheit hat, die sie anlügt. Er hinterlässt ein Totem am Nest von Inaros als Zeichen der Hoffnung. Er hat einen emotionalen Moment mit Lindo Laut über ihre Freundschaft.
+
+Er fällt von einer einstürzenden Säule und verletzt sich, wird aber von Gunther geheilt. Er zeigt Mitgefühl für den toten [Fallout-Frosch](/npcs/fallout_frosch.md) und spricht ein Gebet. Er beruhigt den Basilisken mit einem Hühnerbein und schafft es, ihn zu reiten und zu zähmen. Er übergibt [Sloppy](/npcs/sloppy.md) an [Vago](/npcs/vago.md) und zeigt Interesse an der Rüstung von [Edmund](/npcs/sir_edmund.md), die [Obsidian aus Tarkir](/items/obsidian_aus_tarkir.md) enthält.
+
+Als Biestmeister kann er Tiere beruhigen. Im Kampf tankt er viel Schaden und nutzt seinen Feueratem, um die Schattenhorde zu vernichten. Er tötet den Schamanen und verbrennt dessen Leiche.
 
 ## Offene Fragen
 
-- Was ist mit Inaros, dem Strixwolf, geschehen? Er wird nach der Rückkehr aus Abyssalis vermisst.
-- Was ist zwischen [Nerash](/deities/nerash.md) und Rotunas vorgefallen? Dodo und die Gruppe wissen nicht, wem sie Glauben schenken sollen.
-- Was geschah mit Krenko, Dodos altem Freund von der Insel Tarkia? Die Suche nach ihm bleibt unvollendet.
-- Was ist die genaue Bedeutung des schwarzen Palantirs und der Vision von dem Laboratorium mit dem grünen Kristall?
+- Was ist mit Krenko, Dodos altem Freund von der Insel Tarkia, geschehen? Die Suche nach ihm wird begonnen, aber nicht abgeschlossen.
+- Was ist mit Inaros, dem Strixwolf, passiert? Er wird nach der [Rückkehr aus Abyssalis](/events/rueckkehr_aus_abyssalis.md) vermisst, und Dodo hinterlässt ein Totem an seinem Nest als Zeichen der Hoffnung.
+- Was genau geschah zwischen Nerash und Rotunas? Dodo weiß nicht, wem er Glauben schenken soll, und die Wahrheit bleibt ungeklärt.
 
 ## Belege
 

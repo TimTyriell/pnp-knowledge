@@ -1,6 +1,6 @@
 ---
 type: Event
-title: Turnier von Willau
+title: Turnier von Willauch
 description: 'Großes Turnier mit sechs Disziplinen: Solo, Duo, Team, Zauberer, Monster
   und Jagd. Es gibt vier Tiers mit unterschiedlichen Regeln. Die Gru…'
 tags:

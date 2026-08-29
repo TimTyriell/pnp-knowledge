@@ -1,8 +1,8 @@
 ---
 type: Item
-title: Artefakt von Tarvok
+title: Artefakt von Thar'Vok
 description: Ein silbernes, eiförmiges Artefakt, das in einem Umhang mit dem Symbol
-  von Tarvok gefunden wurde. Es könnte Erschaffungsmagie enthalten und…
+  von Thar'Vok gefunden wurde. Es könnte Erschaffungsmagie enthalten u…
 tags:
 - items
 timestamp: '2026-02-11T00:00:00Z'
@@ -10,7 +10,7 @@ id: ITEM_ARTEFAKT_VON_TARVOK
 subtype: Artefakt
 ---
 
-Ein silbernes, eiförmiges Artefakt, das in einem Umhang mit dem [Symbol](/items/symbol_in_der_villa.md) von [Tarvok](/deities/tarvok_der_erdrichter.md) gefunden wurde. Es könnte Erschaffungsmagie enthalten und wird von der Gruppe mitgenommen, aber nicht geöffnet.
+Ein silbernes, eiförmiges Artefakt, das in einem Umhang mit dem [Symbol](/items/symbol_in_der_villa.md) von [Thar'Vok](/deities/tarvok_der_erdrichter.md) gefunden wurde. Es könnte Erschaffungsmagie enthalten und wird von der Gruppe mitgenommen, aber nicht geöffnet.
 
 # Belege
 

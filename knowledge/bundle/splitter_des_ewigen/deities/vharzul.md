@@ -97,7 +97,7 @@ Die Gruppe trifft auf Anhänger Vhar'Zuls am Tor. Lindo Laut erkennt, dass der G
 
 ### Die Kapelle und die Statue (Session 2025-09-02)
 
-Die Gruppe stellt fest, dass die [Kultisten](/factions/kultisten.md) Anhänger Vhar'Zuls sind. [Die Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) soll ihm geweiht werden, und seine Statue steht im Inneren. Er scheint ein neuer oder anderer Gott zu sein, der die alte Gottheit Tavok ablösen soll.
+Die Gruppe stellt fest, dass die [Kultisten](/factions/kultisten.md) Anhänger Vhar'Zuls sind. [Die Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) soll ihm geweiht werden, und seine Statue steht im Inneren. Er scheint ein neuer oder anderer Gott zu sein, der die alte Gottheit Thar'Vok ablösen soll.
 
 ### Wiedererlangung der physischen Form (Session 2025-09-06)
 

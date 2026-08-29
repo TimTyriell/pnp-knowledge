@@ -1,8 +1,8 @@
 ---
 type: Item
 title: Lila Kugel
-description: Artefakt, das Joar gestohlen hat und das Leandra zurückfordert. Es hat
-  eine starke magische Anziehungskraft und stammt aus einem anderen Re…
+description: Artefakt, das Joar gestohlen hat und das Landra zurückfordert. Es hat
+  eine starke magische Anziehungskraft und stammt aus einem anderen Rei…
 tags:
 - items
 timestamp: '2026-08-25T00:00:00Z'
@@ -10,7 +10,7 @@ id: ITEM_LILA_KUGEL
 subtype: Artefakt
 ---
 
-Artefakt, das [Joar](/npcs/joar_vanur.md) gestohlen hat und das [Leandra](/npcs/lenra.md) zurückfordert. Es hat eine starke magische Anziehungskraft und stammt aus einem anderen Reich.
+Artefakt, das [Joar](/npcs/joar_vanur.md) gestohlen hat und das [Landra](/npcs/lenra.md) zurückfordert. Es hat eine starke magische Anziehungskraft und stammt aus einem anderen Reich.
 
 # Belege
 

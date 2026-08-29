@@ -18,7 +18,7 @@ Die **Gnolle** sind humanoide Kreaturen, die in der Region wiederholt als aggres
 
 ## Führung und Kontrolle
 
-Die Gnolle agieren nicht führungslos. Bei ihrem Angriff auf das Dorf wurden sie von einem unbekannten Anführer geführt, der eine pfeilartige Nase und entstellte Hände hatte; bei ihm könnte es sich um einen Pfeiltroll gehandelt haben. Bei den Karawanenüberfällen hingegen wurden sie von einem Schamanen angeführt. Darüber hinaus stehen sie unter dem Einfluss der Hexe [Leandra](/npcs/lenra.md), die die Gnolle kontrolliert. Inwieweit Schamane, unbekannter Anführer und [Leandras](/npcs/lendras.md) Kontrolle zusammenhängen, ist aus den vorliegenden Belegen nicht ersichtlich.
+Die Gnolle agieren nicht führungslos. Bei ihrem Angriff auf das Dorf wurden sie von einem unbekannten Anführer geführt, der eine pfeilartige Nase und entstellte Hände hatte; bei ihm könnte es sich um einen Pfeiltroll gehandelt haben. Bei den Karawanenüberfällen hingegen wurden sie von einem Schamanen angeführt. Darüber hinaus stehen sie unter dem Einfluss der Hexe [Landra](/npcs/lenra.md), die die Gnolle kontrolliert. Inwieweit Schamane, unbekannter Anführer und [Leandras](/npcs/lendras.md) Kontrolle zusammenhängen, ist aus den vorliegenden Belegen nicht ersichtlich.
 
 # Belege
 

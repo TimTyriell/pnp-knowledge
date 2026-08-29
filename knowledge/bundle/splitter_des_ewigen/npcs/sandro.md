@@ -33,7 +33,7 @@ Sein Auftreten wird als ungewöhnlich beschrieben („sehr komische Gestalt“),
 
 ## Beziehungen und Verbindungen
 
-- **[Voras](/npcs/voras.md)**: Sandro ist ein Verbündeter von [Voras](/npcs/vora.md) und arbeitet mit ihm zusammen, um die Gruppe durch die Splitterwelt zu führen.
+- **[Voras](/npcs/voras.md)**: Sandro ist ein Verbündeter von Voras und arbeitet mit ihm zusammen, um die Gruppe durch die Splitterwelt zu führen.
 - **[Vasul](/deities/vharzul.md)**: [Vasul](/deities/vharzul.md) schickt Sandro weg, als er die Gruppe nach Abyssalis führt. Die genaue Natur ihrer Beziehung wird nicht näher ausgeführt.
 - **Die Gruppe**: Sandro zeigt Respekt vor der Gruppe und unterstützt sie mehrfach mit seinen Fähigkeiten. Er gibt [Brim](/characters/brim.md) eine Schriftrolle.
 - **[Nerash](/deities/nerash.md)**: Nerash ist sein Mörder – er schleudert Sandro durch die Luft und tötet ihn damit.

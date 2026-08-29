@@ -9,15 +9,15 @@ timestamp: '2026-08-25T00:00:00Z'
 id: NPC_LENRA
 subtype: Bande
 aliases:
-- Lenra
-- Moorhexe Hack
-- Hack
-- Die Hack
-- Leandra
-- Die Hack (Hexe)
+- Landra
+- Moorhexe Hag
+- Hag
+- Die Hag
+- Landra
+- Die Hag (Hexe)
 - Die Sumpfhexe
 - Sumpfhexe
-- Lanra
+- Landra
 ---
 
 # Landra, die Hag
@@ -28,7 +28,7 @@ Landra, in der Welt weithin als die Sumpfhexe oder die Hag bekannt, ist eine der
 
 ## Rolle in der Kampagne
 
-Landra ist die treibende Kraft hinter mehreren zentralen Konflikten der Kampagne. Sie ist die Anführerin des Goblinangriffs auf das Dorf Breska, den sie von ihrer Krypta aus orchestriert. Die Gruppe erfährt von ihr zunächst als geheimnisvolle "Hack", die hinter den Angriffen steckt. Im weiteren Verlauf entpuppt sie sich als Drahtzieherin, die die Gruppe immer wieder manipuliert und ihre Handlungen lenkt, um ihre eigenen Ziele zu verfolgen.
+Landra ist die treibende Kraft hinter mehreren zentralen Konflikten der Kampagne. Sie ist die Anführerin des Goblinangriffs auf das Dorf Breska, den sie von ihrer Krypta aus orchestriert. Die Gruppe erfährt von ihr zunächst als geheimnisvolle "Hag", die hinter den Angriffen steckt. Im weiteren Verlauf entpuppt sie sich als Drahtzieherin, die die Gruppe immer wieder manipuliert und ihre Handlungen lenkt, um ihre eigenen Ziele zu verfolgen.
 
 Sie ist verantwortlich für die Täuschung der Kuatau, denen sie Amulette gab und ein [Portal](/locations/portal.md) unter einer [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) öffnete. Zudem stahl sie Artefakte aus einem Kloster und platzierte einen Palantir, um die Gruppe zu manipulieren. Ihr Ziel scheint unter anderem die Suche nach [Voras](/npcs/voras.md)' Gemahlin zu sein, und sie zeigt ein besonderes Interesse an dem, was [Lindo Laut](/characters/lindo_laut.md) in sich trägt. Sie trägt die Symbole und Zeichen des Gottes [Vasul](/deities/vharzul.md) auf ihrer Haut, was auf eine tiefere Verbindung zu ihm hindeutet. In einer späteren Session wird sie als Gegenspielerin beschrieben, die verschwunden ist und von der Nox vermutet, dass sie Pläne mit Vasul hat und deutlich mehr weiß als alle anderen. Ein Auftrag, im [Sumpf](/locations/sumpf_vor_dem_goblin_dorf.md) nach ihr zu suchen, wurde von niemandem angenommen.
 
@@ -45,7 +45,7 @@ Landra ist eine Meisterin der Täuschung. Sie täuschte die Kuatau, manipulierte
 - **Die Heldengruppe**: Landra begegnet der Gruppe zunächst in ihrer Krypta, wo sie [Dodo](/characters/dodo.md) und [Cookie](/characters/cookie.md) schrumpft. Sie sieht die Gruppe als Hindernis auf ihrem Weg und versucht, sie zu manipulieren. Die Gruppe macht es sich zur Aufgabe, sie zu besiegen.
 - **[Die Goblins](/factions/die_goblins.md)**: Landra führt den Goblinangriff auf Breska an. Die Goblins scheinen unter ihrem Einfluss zu handeln.
 - **Die Kuatau**: Landra hat die Kuatau getäuscht, indem sie ihnen Amulette gab und ein [Portal unter der Kapelle](/events/portal_unter_der_kapelle.md) öffnete. Die Gruppe kann die Kuatau später davon überzeugen, dass Landra böse ist.
-- **[Voras](/npcs/vora.md)**: Landra ist auf der Suche nach Voras' Gemahlin. Die genaue Natur dieser Verbindung bleibt unklar.
+- **Voras**: Landra ist auf der Suche nach Voras' Gemahlin. Die genaue Natur dieser Verbindung bleibt unklar.
 - **[Lendras](/npcs/lendras.md)**: Landra hat den Magier Lendras angegriffen.
 - **Der Graf (Vampir)**: Der Vampirgraf steht Landra im Weg, wie die Gruppe herausfindet.
 - **Vasul**: Landra trägt die Zeichen Vasuls auf ihrer Haut und scheint mit ihm verbunden zu sein. Lindo Laut vermutet, dass sie Pläne mit ihm hat.
@@ -54,7 +54,7 @@ Landra ist eine Meisterin der Täuschung. Sie täuschte die Kuatau, manipulierte
 ## Chronologie
 
 - **Session 2025-04-15**: Die Gruppe trifft in einer Krypta auf Landra. Sie beschwört eine Feuerkreatur, schrumpft Dodo und Cookie und stellt sich vor. Sie ist arrogant und herablassend, verspottet die Gruppe und verschwindet durch einen Altar. Die Gruppe vermutet, dass sie hinter den Angriffen auf Breska steckt.
-- **Session 2025-04-23**: Die Gruppe bestätigt, dass die "Hack" die Antagonistin ist, die den Goblinangriff auf Breska anführt. Sie wird als Moorhexe bezeichnet und ist auf der Suche nach Voras' Gemahlin. Sie hat den Magier Lendras angegriffen.
+- **Session 2025-04-23**: Die Gruppe bestätigt, dass die "Hag" die Antagonistin ist, die den Goblinangriff auf Breska anführt. Sie wird als Moorhexe bezeichnet und ist auf der Suche nach Voras' Gemahlin. Sie hat den Magier Lendras angegriffen.
 - **Session 2025-06-03**: Die Gruppe sucht in [Cornivum](/locations/cornivum.md) nach der Sumpfhexe, aber niemand dort kennt sie.
 - **Session 2025-06-10**: Die Gruppe beschreibt Landra als bucklige alte Frau mit magischen Fähigkeiten. Die [Froschwachen](/npcs/froschwachen.md) an der Brücke haben keine Informationen über sie. Die Gruppe hofft, im Dungeon Hinweise zu finden.
 - **Session 2025-06-25**: Die Gruppe findet heraus, dass Landra mit einer dämonischen Kreatur zusammenarbeitet, die durch ein Portal verschwunden ist. Sie hat ein Portal in Form eines Brunnens benutzt und plant, mit Pilzen eine Armee aufzubauen. Sie hat Artefakte aus einem Kloster gestohlen und die Gruppe manipuliert, indem sie den Palantir platzierte. Am Ende erscheint sie als Illusion und zwinkert der Gruppe zu.

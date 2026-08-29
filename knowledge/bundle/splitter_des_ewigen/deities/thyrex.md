@@ -17,13 +17,13 @@ aliases:
 
 ## Überblick
 
-Thyrex, genannt „der Sänger", ist eine der vier Seelen [Vhar'Zuls](/deities/vharzul.md). Er ist keine eigenständige Gottheit, sondern ein Teil des zersplitterten Wesens Vhar'Zul, das sich im Lauf der Kampagne als eigenständige Persönlichkeit aus dem [Amulett](/items/amulett_des_heiligen_duran.md) von [Lindo Laut](/characters/lindo_laut.md) manifestierte. Seine Melodien fädeln sich in Zauber ein wie Blut in Wasser — Musik wird Magie, Stimme wird Waffe. Wer ihm lauscht, hört in jedem Ton Versprechen und Fluch zugleich. Er trägt Ketten aus alten Liedern: *„Sssaa'drin… kel moriath… lass den Gesang durch deine Magie wehen…"*
+Thyrex, genannt „der Sänger", ist eine der vier Seelen [Vhar'Zuls](/deities/vharzul.md). Er ist keine eigenständige Gottheit, sondern ein Teil des zersplitterten Wesens Vhar'Zul, das sich im Lauf der Kampagne als eigenständige Persönlichkeit aus dem Amulett von [Lindo Laut](/characters/lindo_laut.md) manifestierte. Seine Melodien fädeln sich in Zauber ein wie Blut in Wasser — Musik wird Magie, Stimme wird Waffe. Wer ihm lauscht, hört in jedem Ton Versprechen und Fluch zugleich. Er trägt Ketten aus alten Liedern: *„Sssaa'drin… kel moriath… lass den Gesang durch deine Magie wehen…"*
 
 Thyrex verbündete sich mit Lindo Laut gegen die drei bösartigen Seelen Vhar'Zuls und ist seither die vorherrschende Persönlichkeit des wiedererstarkten Vhar'Zul.
 
 ## Rolle in der Kampagne
 
-Thyrex trat zunächst als Stimme in Lindo Lauts Kopf auf, die ihm Ratschläge gab und ihn drängte, die Macht des Throns zu nutzen. Er erwies sich als alter Gott beziehungsweise mächtige Entität, die mit Lindo Laut verbunden war — konkret sprach er aus Lindo Lauts Amulett. In einem entscheidenden Kampf gegen einen Ghul verlieh er Lindo Laut übernatürliche Kraft: Dessen Herzschlag setzte kurz aus, das zuvor Getrunkene breitete sich in seinem Körper aus, und er zerriss das Wesen in Sekundenschnelle. In diesem Moment erklang Thyrex' Stimme in seinem Kopf: „Das ändert alles."
+Thyrex trat zunächst als Stimme in Lindo Lauts Kopf auf, die ihm Ratschläge gab und ihn drängte, die Macht des Throns zu nutzen. Er erwies sich als alter Gott beziehungsweise mächtige Entität, die mit Lindo Laut verbunden war — konkret sprach er aus [Lindo Lauts Amulett](/items/amulett_des_heiligen_duran.md). In einem entscheidenden Kampf gegen einen Ghul verlieh er Lindo Laut übernatürliche Kraft: Dessen Herzschlag setzte kurz aus, das zuvor Getrunkene breitete sich in seinem Körper aus, und er zerriss das Wesen in Sekundenschnelle. In diesem Moment erklang Thyrex' Stimme in seinem Kopf: „Das ändert alles."
 
 Nach der Übernahme durch Vasul wurde Thyrex' Rolle komplexer: Seine Persönlichkeit und Erinnerungen gingen in Vasul über, der sich daraufhin als Verbündeter der Gruppe positionierte. Später, im [Abyssalis](/domains/splitterwelt.md), agierte Thyrex erneut eigenständig als Verbündeter von [Lunara Velora](/characters/lunara_velora.md), der er eine Notiz hinterließ, die vor den Teilen von Vasul warnt.
 

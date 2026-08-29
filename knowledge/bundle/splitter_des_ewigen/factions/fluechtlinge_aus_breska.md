@@ -9,7 +9,7 @@ timestamp: '2026-01-13T00:00:00Z'
 id: FACTION_FLUECHTLINGE_AUS_BRESKA
 subtype: Volk
 aliases:
-- Die Flüchtlinge aus Bereska
+- Die Flüchtlinge aus Breska
 - Flüchtlinge (Gruppe um Roland)
 - Flüchtlinge
 - Flüchtlinge aus Breska

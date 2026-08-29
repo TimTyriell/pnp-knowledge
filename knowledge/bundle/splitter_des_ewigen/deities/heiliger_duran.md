@@ -14,7 +14,7 @@ aliases:
 
 ## Überblick
 
-Heiliger Duran ist eine Gottheit in der Welt der Kampagne, deren Verehrung offenbar weit verbreitet ist. Sein bekanntestes Artefakt in der Kampagne ist das [Amulett](/items/amulett_des_heiligen_duran.md), das der Charakter [Lindo Laut](/characters/lindo_laut.md) bei sich trägt. Duran verfügt über eine Priesterschaft und Engel als übernatürliche Diener. Die genaue Natur seiner Macht und seines Einflusses ist bislang nur in Umrissen bekannt, doch die Ereignisse um sein Amulett und die getöteten Engel deuten darauf hin, dass er eine aktive, wache Gottheit ist, die auf Vergehen gegen ihre Ordnung reagiert.
+Heiliger Duran ist eine Gottheit in der Welt der Kampagne, deren Verehrung offenbar weit verbreitet ist. Sein bekanntestes Artefakt in der Kampagne ist das Amulett, das der Charakter [Lindo Laut](/characters/lindo_laut.md) bei sich trägt. Duran verfügt über eine Priesterschaft und Engel als übernatürliche Diener. Die genaue Natur seiner Macht und seines Einflusses ist bislang nur in Umrissen bekannt, doch die Ereignisse um sein Amulett und die getöteten Engel deuten darauf hin, dass er eine aktive, wache Gottheit ist, die auf Vergehen gegen ihre Ordnung reagiert.
 
 ## Rolle in der Kampagne
 
@@ -32,13 +32,13 @@ Die Gottheit reagiert auf Vergehen gegen ihre Ordnung: Das Töten ihrer Engel f�
 
 - **Lindo Laut**: Träger des Amuletts von Duran. Durch die Tötung der Engel verändert sich das Amulett, und Lindo Laut wird von Duran und dessen Anhängern verabscheut.
 - **Die Priesterin**: Eine Priesterin in einem Dorf, die mit Duran in Verbindung steht. Nach der Veränderung des Amuletts verweigert sie der Gruppe den Zugang und schmeißt sie hinaus.
-- **Die vier Engel Durans**: Werden von der Gruppe in der Bibliothek des [Voras](/npcs/vora.md) getötet und hausen seither im Amulett, wo sie dunkle Magie von sich geben.
+- **Die vier Engel Durans**: Werden von der Gruppe in der Bibliothek des Voras getötet und hausen seither im Amulett, wo sie dunkle Magie von sich geben.
 - **Die Gläubigen Durans**: Alle Personen im Dorf, die mit Duran zu tun haben, verabscheuen das veränderte Amulett und seine Träger.
 - **Voras**: Vampir, in dessen Bibliothek die Gruppe das Buch findet, das die Engel beschwört. Er reagiert auf die Ereignisse ebenfalls nicht erfreut, wenngleich unklar bleibt, ob dies mit Duran zusammenhängt.
 
 ## Chronologie
 
-**Session 2025-06-25:** Lindo Laut trägt das Amulett des Duran bei sich. In einem Gespräch mit einer Person, die sich als nicht ganz lebendig zu erkennen gibt und Fähigkeiten jenseits normaler Magie besitzt, zeigt Lindo Laut das Amulett. Die Person erkennt dessen Macht an. Im weiteren Verlauf der Session wird das Amulett verunreinigt und verliert seine Verbindung zu Duran. Ein Magier empfiehlt, bei Duran um Vergebung zu beten.
+**Session 2025-06-25:** Lindo Laut trägt das [Amulett des Duran](/items/amulett_des_heiligen_duran.md) bei sich. In einem Gespräch mit einer Person, die sich als nicht ganz lebendig zu erkennen gibt und Fähigkeiten jenseits normaler Magie besitzt, zeigt Lindo Laut das Amulett. Die Person erkennt dessen Macht an. Im weiteren Verlauf der Session wird das Amulett verunreinigt und verliert seine Verbindung zu Duran. Ein Magier empfiehlt, bei Duran um Vergebung zu beten.
 
 **Session 2025-07-09:** Die Gruppe befindet sich in der Bibliothek des Vampirs Voras. Dort öffnen sie durch Zufall ein Buch und töten dabei versehentlich vier Engel des heiligen Duran. Dadurch verändert sich das Amulett von Lindo Laut: Die vier getöteten Engel hausen nun darin und geben dunkle Magie von sich. Die Priesterin des Dorfes verweigert der Gruppe den Zugang, und alle, die mit Duran in Verbindung stehen, verabscheuen das Amulett. Die Gruppe versucht herauszufinden, was das Amulett von ihnen will. Am nächsten Tag wachen sie an einem schwarzen Abgrund mit schwarzem Wasser auf – ein Ereignis, dessen Zusammenhang mit Duran unklar bleibt.
 

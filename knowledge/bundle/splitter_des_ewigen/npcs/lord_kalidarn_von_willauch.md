@@ -8,9 +8,9 @@ tags:
 timestamp: '2025-11-14T00:00:00Z'
 id: NPC_LORD_KALIDARN_VON_WILLAUCH
 aliases:
-- Lord Kalidarn von Willau
+- Lord Kalidarn von Willauch
 - Lord von Willauch
-- Lord Kaledan von Willau
+- Lord Kaledan von Willauch
 ---
 
 # Lord Kalidarn von Willauch

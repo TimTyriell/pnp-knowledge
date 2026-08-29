@@ -8,7 +8,7 @@ tags:
 timestamp: '2026-08-06T00:00:00Z'
 id: NPC_ADELIGA_DER_EULENSERAPH
 aliases:
-- Adelia
+- Adeliga
 ---
 
 Adeliga ist ein Eulen-Seraph und Paladin des neuen Gottes [Joran der Münzenzähler](/deities/joran_der_muenzenzaehler.md). Sie ist eine etwa zwei Meter große, geflügelte Gestalt, die zum Leben erwachte und als Seraph der neuen Götter pilgert. Im [Ringtal](/locations/ringtal.md) begegnete sie der Gruppe und bot ihr den Segen Jorans an. Sie wird als weise und mystisch beschrieben; ihre Augen leuchten golden, wenn sie von ihrem Gott spricht. In der Kampagnenchronik taucht derselbe Name noch einmal für eine Menschenfrau in [Willauch](/locations/willauch.md) auf; mit dieser hat der Eulen-Seraph jedoch nichts gemein.

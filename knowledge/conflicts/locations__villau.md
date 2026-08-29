@@ -2,7 +2,7 @@
 type: Conflict
 title: 'Offener Konflikt: Villau'
 description: Widersprüchliche Belege — menschliche Entscheidung nötig.
-timestamp: '2026-08-29T17:54:46+00:00'
+timestamp: '2026-08-29T19:48:56+00:00'
 id: CONFLICT_LOC_VILLAU
 status: open
 concept: locations/villau

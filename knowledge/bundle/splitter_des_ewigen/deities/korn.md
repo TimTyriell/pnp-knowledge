@@ -10,9 +10,9 @@ id: DEITY_KORN
 subtype: Neuer Gott
 aliases:
 - Korn
-- Born
+- Korn
 - Core
-- Kord
+- Korn
 - Blutgott
 ---
 
@@ -54,7 +54,7 @@ Die übrigen Gruppenmitglieder nehmen Korn vor allem durch Esterossas Gebete wah
 
 **Session 2025-07-09:** In der fremden Welt versucht Esterossa, vor dem Weitergehen ein Gebet an Korn zu sprechen. Er erhält jedoch keine Verbindung zu seinem Gott — ein Hinweis darauf, dass die Welt von den Göttern abgeschnitten ist. Esterossa betet dennoch für die Gruppe, um aus den „unsäglichen Landen" zu entkommen und für Schutz auf der nächsten Mission. Er erhält seine Rallye-Die und fühlt sich motiviert.
 
-**Session 2025-08-12:** Esterossa spricht sein Kriegsgebet an Korn: „Born führe meine Hand, stärke mein Herz und trinke vom Blut der Gefallenen." Die Gruppe reagiert verwirrt auf die Bezeichnung „Blutgott"; Lindo Laut kennt den Gott nicht und kann sich den Namen nicht merken. Esterossa bietet an, ihm seinen Glauben näherzubringen.
+**Session 2025-08-12:** Esterossa spricht sein Kriegsgebet an Korn: „Korn führe meine Hand, stärke mein Herz und trinke vom Blut der Gefallenen." Die Gruppe reagiert verwirrt auf die Bezeichnung „Blutgott"; Lindo Laut kennt den Gott nicht und kann sich den Namen nicht merken. Esterossa bietet an, ihm seinen Glauben näherzubringen.
 
 **Session 2025-10-21:** Vor einem Kampf ruft Esterossa Korn mit seinem Standardgebet an: „Blut für den Blutgott, Ehre im Kampf und möge mein Feind zuerst fallen. Korn führe meine Hand, stärke mein Herz und trinke vom Blut der Gefallenen." Korn sendet ein Zeichen: ein grüner Blitz, der Esterossas Angriffe verstärkt. Esterossa beschreibt ein inneres Feuer, das in ihm brennt — pulsierende Adern, schneller Herzschlag, Euphorie und Blutrünstigkeit. Der Chat kommentiert mit „Blut für den Blutgott".
 

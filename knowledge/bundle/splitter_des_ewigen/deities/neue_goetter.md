@@ -26,16 +26,16 @@ Ihr Sieg über die Alten Götter markiert einen fundamentalen Bruch in der Gesch
 Die Neuen Götter sind eine zentrale Macht in der Welt der Kampagne. Sie haben die alte Ordnung gestürzt und eine neue Ära eingeläutet, deren Auswirkungen bis in die Gegenwart der Spielhandlung reichen. Die Gruppe begegnet ihnen und ihren Anhängern wiederholt:
 
 - Die Gilde verehrt die Neuen Götter und handelt in ihrem Namen.
-- Die Pilgerin [Adelia](/npcs/adeliga_der_eulenseraph.md), ein Seraph, reist durch die Welt, um möglichst viel über die Neuen Götter zu erfahren – sie bezeichnet ihre Mission als "die Bewahrung der Neuen".
+- Die Pilgerin [Adeliga](/npcs/adeliga_der_eulenseraph.md), ein Seraph, reist durch die Welt, um möglichst viel über die Neuen Götter zu erfahren – sie bezeichnet ihre Mission als "die Bewahrung der Neuen".
 - Die Gruppe selbst steht den Neuen Göttern misstrauisch gegenüber. Nach ihrer [Rückkehr aus Abyssalis](/events/rueckkehr_aus_abyssalis.md), dem Gefängnis der Alten Götter, werden sie von einer Priesterin der Neuen Götter konfrontiert, die ihnen vorwirft, Dinge getan zu haben, "vor denen die neuen Götter nur erzittern würden".
 
 Die Neue Götter sind damit eine ambivalente Größe: Für viele sind sie Erlöser, die die Welt von tyrannischen Göttern befreit haben – für die Gruppe sind sie eine unbekannte, potenziell bedrohliche Macht, deren Motive und Handlungen im Dunkeln liegen.
 
 ## Wichtige Merkmale
 
-Die Neuen Götter werden als weniger mächtig beschrieben als die Alten Götter, bauen ihre Kräfte aber aus. Sie sind den Sterblichen näher als ihre Vorgänger und gewähren aktiv Segen – so bietet etwa die Pilgerin Adelia der Gruppe die "Gnade von Joran des Münzenzählers" an, eines der Neuen Götter.
+Die Neuen Götter werden als weniger mächtig beschrieben als die Alten Götter, bauen ihre Kräfte aber aus. Sie sind den Sterblichen näher als ihre Vorgänger und gewähren aktiv Segen – so bietet etwa die Pilgerin Adeliga der Gruppe die "Gnade von Joran des Münzenzählers" an, eines der Neuen Götter.
 
-Ihr Sieg vor zwölf Jahren wird in der Überlieferung ihrer Anhänger als Erlösungstat gerahmt. Adelia schildert die Zeit davor als Herrschaft "dämonischer, abnormaler Kreaturen", die unterdrückten, folterten, brandschatzten und mordeten. Die Neuen Götter kamen "wie das Licht am Morgen", brachten Leben und Sicherheit und ließen die Sterblichen das Vergessen als Gnade erfahren.
+Ihr Sieg vor zwölf Jahren wird in der Überlieferung ihrer Anhänger als Erlösungstat gerahmt. Adeliga schildert die Zeit davor als Herrschaft "dämonischer, abnormaler Kreaturen", die unterdrückten, folterten, brandschatzten und mordeten. Die Neuen Götter kamen "wie das Licht am Morgen", brachten Leben und Sicherheit und ließen die Sterblichen das Vergessen als Gnade erfahren.
 
 Ein zentrales Merkmal ihrer Herrschaft ist eben dieses Vergessen: Niemand kann sich an die Zeit vor ihrem Sieg erinnern. Die Erinnerung der Sterblichen setzt erst vor zwölf Jahren ein.
 
@@ -57,7 +57,7 @@ Ein zentrales Merkmal ihrer Herrschaft ist eben dieses Vergessen: Niemand kann s
 
 **Session 2026-03-31:** Lindo Laut fragt Vasul, ob er ein Feind der Neuen Götter sei. Vasul antwortet, er sei weder Freund noch Feind der alten noch der neuen Götter.
 
-**Session 2026-06-04:** Die Gruppe trifft die Pilgerin Adelia, einen Seraph, die auf einer Pilgerreise ist, um möglichst viel über die Neuen Götter zu erfahren. Sie erzählt die Geschichte vom Sieg der Neuen Götter über die Alten und bietet der Gruppe die Gnade von Joran des Münzenzählers an.
+**Session 2026-06-04:** Die Gruppe trifft die Pilgerin Adeliga, einen Seraph, die auf einer Pilgerreise ist, um möglichst viel über die Neuen Götter zu erfahren. Sie erzählt die Geschichte vom Sieg der Neuen Götter über die Alten und bietet der Gruppe die Gnade von Joran des Münzenzählers an.
 
 **Session 2026-08-06:** Im Gespräch mit [Bruma Stormrak](/characters/bruma_stormrak.md) wird deutlich, dass niemand sich an die Zeit vor zwölf Jahren erinnern kann. Die Gruppe stellt fest, dass der "Law Drop" die Erinnerungen an die Zeit vor dem Sieg der Neuen Götter ausgelöscht hat.
 

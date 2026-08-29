@@ -10,7 +10,7 @@ id: ITEM_GOLDENES_AMULETT
 subtype: Schmuck
 ---
 
-Ein goldenes [Amulett](/items/amulett_des_heiligen_duran.md), das [Dodo](/characters/dodo.md) in der Ruine findet. Es stellt sich als einfacher Schmuck heraus, der die Insignie von [Duran](/deities/heiliger_duran.md) trägt.
+Ein goldenes Amulett, das [Dodo](/characters/dodo.md) in der Ruine findet. Es stellt sich als einfacher Schmuck heraus, der die Insignie von [Duran](/deities/heiliger_duran.md) trägt.
 
 # Belege
 

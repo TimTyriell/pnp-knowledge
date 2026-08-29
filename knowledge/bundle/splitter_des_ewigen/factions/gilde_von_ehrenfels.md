@@ -30,7 +30,7 @@ Die Gilde von [Ehrenfels](/locations/ehrenfels.md) ist eine Organisation, die Ab
 
 ## Rolle in der Kampagne
 
-Die Gilde ist die Organisation, der die Spielercharaktere angehören und für die sie im Laufe der Kampagne zahlreiche Missionen übernehmen. Sie vergibt Aufträge wie die Warnung [Brechkas](/locations/breska.md) vor dem Goblinangriff, die Säuberung einer [Krypta](/locations/krypta.md), die Erkundung der [Sanddorninseln](/locations/sanddorninseln.md), die Untersuchung der Untoten in den Bergen von [Zebros](/factions/koenigreich_zebros.md), die Suche nach der [Hack](/npcs/lenra.md), das Sammeln von Informationen über die Untotenarmee in [Steinbachtal](/locations/steinbachtal.md) und die Lösung des Konflikts zwischen Zwergen und [Goblins](/npcs/pilz_goblins.md). Die Gruppe kennt sich durch die Gilde, sei es nur flüchtig oder durch gemeinsame Missionen.
+Die Gilde ist die Organisation, der die Spielercharaktere angehören und für die sie im Laufe der Kampagne zahlreiche Missionen übernehmen. Sie vergibt Aufträge wie die Warnung [Brechkas](/locations/breska.md) vor dem Goblinangriff, die Säuberung einer [Krypta](/locations/krypta.md), die Erkundung der [Sanddorninseln](/locations/sanddorninseln.md), die Untersuchung der Untoten in den Bergen von [Zebros](/factions/koenigreich_zebros.md), die Suche nach der [Hag](/npcs/lenra.md), das Sammeln von Informationen über die Untotenarmee in [Steinbachtal](/locations/steinbachtal.md) und die Lösung des Konflikts zwischen Zwergen und [Goblins](/npcs/pilz_goblins.md). Die Gruppe kennt sich durch die Gilde, sei es nur flüchtig oder durch gemeinsame Missionen.
 
 Die Gilde stellt der Gruppe ein Haus bereit und versorgt sie mit Aufträgen. Sie schickt einen Raben voraus, um die Ankunft der Gruppe anzukündigen, und der [Gildenmeister](/npcs/nox.md) versorgt die Gruppe mit Informationen, etwa über die Einwohnerzahl von Steinbachtal. Die Gilde profitiert nach Aussage des Grafen von den Informationen, die die Gruppe sammelt.
 
@@ -67,7 +67,7 @@ Gerüchten zufolge ist Nox tot oder verschwunden. In der Session vom 29. Juli 20
 
 ### 2025-04-09: Warnung Brechkas
 
-Die Gruppe gehört zur Gilde und wurde beauftragt, Brechka vor dem Goblinangriff zu warnen. Sie haben ein Gildensiegel als Nachweis. Die Gruppe kennt sich durch die Gildenhalle und kann ohne große Bedenken als Team agieren. Sie haben den Auftrag angenommen, den eine andere Gruppe kurz zuvor erledigt hatte – praktisch die Fortsetzung davon.
+Die Gruppe gehört zur Gilde und wurde beauftragt, Breska vor dem Goblinangriff zu warnen. Sie haben ein Gildensiegel als Nachweis. Die Gruppe kennt sich durch die Gildenhalle und kann ohne große Bedenken als Team agieren. Sie haben den Auftrag angenommen, den eine andere Gruppe kurz zuvor erledigt hatte – praktisch die Fortsetzung davon.
 
 ### 2025-04-15: Krypta-Säuberung
 
@@ -81,9 +81,9 @@ Die Gruppe kehrt zur Gilde zurück und wird für ihre abgeschlossene Mission gef
 
 Die Gruppe soll herausfinden, warum es in den Bergen von Zebros [Untote](/factions/belorus_untotenarmee.md) gibt. Die Gilde vergibt Missionen und ist die Heimatbasis der Charaktere.
 
-### 2025-06-03: Suche nach der Hack
+### 2025-06-03: Suche nach der Hag
 
-Die Gilde hat die Gruppe ausgesandt, um die Hack zu finden. Sie hat einen Raben nach [Cornivum](/locations/cornivum.md) geschickt, um die Ankunft anzukündigen. Der Älteste des Dorfes, [Rodek](/npcs/rodek.md), begrüßt die Gruppe: „Die Gilde hatte bereits einen Raben vorausgeschickt und hatte gesagt, dass ihr kommen würdet."
+Die Gilde hat die Gruppe ausgesandt, um die Hag zu finden. Sie hat einen Raben nach [Cornivum](/locations/cornivum.md) geschickt, um die Ankunft anzukündigen. Der Älteste des Dorfes, [Rodek](/npcs/rodek.md), begrüßt die Gruppe: „Die Gilde hatte bereits einen Raben vorausgeschickt und hatte gesagt, dass ihr kommen würdet."
 
 ### 2025-06-25: Informationen über den dunklen Paladin
 
@@ -103,7 +103,7 @@ Die Gilde hat ein Haus für die Gruppe bereitgestellt. Ehrenfels liegt in den Be
 
 ### 2026-01-06: Wöchentliche Aufträge
 
-Die Gilde vergibt wöchentlich Aufträge. Die Gruppe hat sich einen Namen gemacht und ist bekannt. Die Heldengruppe wird von einer großen untoten Horde von Zebras bedroht, die sich über die Lande erstreckt. Die Helden haben einer großen Truppe von Flüchtlingen geholfen, sicher den Winter zu überwintern.
+Die Gilde vergibt wöchentlich Aufträge. Die Gruppe hat sich einen Namen gemacht und ist bekannt. Die Heldengruppe wird von einer großen untoten Horde von Zebros bedroht, die sich über die Lande erstreckt. Die Helden haben einer großen Truppe von Flüchtlingen geholfen, sicher den Winter zu überwintern.
 
 ### 2026-01-13: Portal zum Trainingsgelände
 

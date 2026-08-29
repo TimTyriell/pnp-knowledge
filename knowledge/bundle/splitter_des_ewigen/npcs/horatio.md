@@ -19,7 +19,7 @@ Horatio führt die Goblin-Gruppe und ist als Jäger tätig. Er hat das Anwesen, 
 
 ## Verlauf und Begegnungen
 
-Bei der ersten Begegnung ist Horatio verärgert über eine Urkunde, verhandelt aber mit der Gruppe: Er schlägt vor, dass sie das Untergeschoss bezieht, während er die Koordination und sein Zimmer behält. Im Zuge dieser Verhandlung übergibt er [Rotunas](/characters/rotunas.md) ein [Amulett](/items/amulett_des_heiligen_duran.md).
+Bei der ersten Begegnung ist Horatio verärgert über eine Urkunde, verhandelt aber mit der Gruppe: Er schlägt vor, dass sie das Untergeschoss bezieht, während er die Koordination und sein Zimmer behält. Im Zuge dieser Verhandlung übergibt er [Rotunas](/characters/rotunas.md) ein Amulett.
 
 In Ehrenfels ist Horatio später als Verbündeter anwesend. Er wird von [Vasul](/deities/vharzul.md) weggeschickt, zeigt jedoch Respekt und gehorcht dessen Anweisung.
 

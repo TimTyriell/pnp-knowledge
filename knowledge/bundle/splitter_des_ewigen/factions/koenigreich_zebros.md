@@ -54,7 +54,7 @@ Das Königreich verfügte über Elitesoldaten, deren Rüstungen aus dem Material
 
 - **[Alte Götter](/deities/alte_goetter.md)**: Zebros war der stärkste Verbündete der alten Götter in der nördlichen Schneise. Sein Untergang leitete das Ende der alten Götter mit ein.
 - **Steinbachtal**: [Die Stadt](/locations/ehrenfels.md) am Fuße des Berges Zebros hatte eine besondere Verbindung zum König, wie der gefundene Brief belegt. Diese Verbindung könnte erklären, warum das abgelegene Städtchen recht wohlhabend war.
-- **[Tavok, der Erdrichter](/deities/tarvok_der_erdrichter.md)**: Tavok war ein Anhänger von König Zebros.
+- **[Thar'Vok, der Erdrichter](/deities/tarvok_der_erdrichter.md)**: Thar'Vok war ein Anhänger von König Zebros.
 - **Königsfamilie**: Die gesamte Königsfamilie starb beim Untergang des Königreichs.
 - **General**: Ein oberster General des Königs wird im Brief erwähnt; er hatte „ein Auge auf etwas geworfen“.
 
@@ -72,7 +72,7 @@ Das Königreich verfügte über Elitesoldaten, deren Rüstungen aus dem Material
 
 - Was war es, auf das der oberste General des Königs „ein Auge geworfen“ hatte, und was sollte der Bürgermeister von Steinbachtal für den König aufbewahren? Der Brief nennt den Gegenstand nicht und verweist nur auf ein bekanntes Versteck („Du weißt wohin“).
 - Was genau geschah mit König Zebros selbst? Sein Schicksal ist nicht näher bekannt.
-- Welche Rolle spielte Tavok, der Erdrichter, als Anhänger des Königs?
+- Welche Rolle spielte Thar'Vok, der Erdrichter, als Anhänger des Königs?
 - Was ist aus dem Soldaten in der Takie-Rüstung geworden, und hat er den Krieg der Götter tatsächlich miterlebt?
 - Welche Verbindung besteht zwischen der eingestürzten Aussichtsplattform, auf der die Gruppe die erste Erwähnung von Zebros fand, und dem Königreich?
 

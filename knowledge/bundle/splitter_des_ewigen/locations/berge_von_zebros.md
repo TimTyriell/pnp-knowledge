@@ -10,7 +10,7 @@ id: LOC_BERGE_VON_ZEBROS
 subtype: Wildnis
 aliases:
 - Berg von Zebros
-- Berg Zebras
+- Berg Zebros
 ---
 
 Die **Berge von Zebros** sind eine verschneite Bergregion, die nach dem alten [Königreich Zebros](/factions/koenigreich_zebros.md) benannt ist, dessen Hauptstadt ebenfalls diesen Namen trug. Die Region ist das Ziel der Mission: Von hier strömen [Untote](/factions/belorus_untotenarmee.md) ins Tal, und die Gruppe reist her, um die Ursache der Untoten zu finden. In den Bergen liegen verlassene Siedlungen, eine Ruine mit einer Statue von König Zebros, eine intakte Burg und ein großer eingefrorener Baum. Das Gebiet wird von Untoten und Eisbären bevölkert.
@@ -21,7 +21,7 @@ Zebros war der Name eines alten Königreichs, das im Götterkrieg zerstört wurd
 
 ## Rolle in der Kampagne
 
-Die Berge von Zebros sind strategisch bedeutsam, weil aus ihnen Untote ins Tal strömen. Der Graf plant, die Kontrolle über den Berg zu erlangen, um die Untoten zu beherrschen. Auch [die Hack](/npcs/lenra.md) hat nach Vermutung der Gruppe Interesse an dem Berg. [Dodo](/characters/dodo.md) war bereits in den Bergen und kämpfte dort gegen den dunklen Paladin. Damit sind die Berge von Zebros ein zentraler Ort für die Macht über die Untoten.
+Die Berge von Zebros sind strategisch bedeutsam, weil aus ihnen Untote ins Tal strömen. Der Graf plant, die Kontrolle über den Berg zu erlangen, um die Untoten zu beherrschen. Auch [die Hag](/npcs/lenra.md) hat nach Vermutung der Gruppe Interesse an dem Berg. [Dodo](/characters/dodo.md) war bereits in den Bergen und kämpfte dort gegen den dunklen Paladin. Damit sind die Berge von Zebros ein zentraler Ort für die Macht über die Untoten.
 
 # Belege
 

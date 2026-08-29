@@ -10,7 +10,7 @@ id: LOC_ALTER_SCHREIN
 subtype: Gebäude
 ---
 
-Ein alter Schrein aus der Zeit der alten Götter, der inaktiv ist. Der [Gildemeister](/npcs/nox.md) führt die Gruppe dorthin, um die vier Statuen zu zeigen, die die Seelenstücke symbolisieren. Er ist ein Ort von großer Bedeutung für die Hintergrundgeschichte des [Amuletts](/items/amulett_des_heiligen_duran.md).
+Ein alter Schrein aus der Zeit der alten Götter, der inaktiv ist. Der [Gildemeister](/npcs/nox.md) führt die Gruppe dorthin, um die vier Statuen zu zeigen, die die Seelenstücke symbolisieren. Er ist ein Ort von großer Bedeutung für die Hintergrundgeschichte des Amuletts.
 
 # Belege
 

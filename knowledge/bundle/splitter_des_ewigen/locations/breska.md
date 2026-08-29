@@ -9,19 +9,19 @@ timestamp: '2026-08-04T00:00:00Z'
 id: LOC_BRESKA
 subtype: Siedlung
 aliases:
-- Bresca
-- Dorf (Bresca?)
-- Breschka
-- Bereska
 - Breska
-- Brechka
+- Dorf (Breska?)
+- Breska
+- Breska
+- Breska
+- Breska
 ---
 
 # Breska
 
 ## Überblick
 
-Breska ist eine kleine Siedlung, die in einem Tal an einem kleinen Berg liegt und von einer Lichtung umgeben ist. Ursprünglich ein bescheidenes Dorf mit zwei großen Bauernhöfen, einer Schenke, einem Friedhof und einem Magierhaus, entwickelte sich der Ort innerhalb eines Jahres zu einer Kleinstadt mit Stadtmauer, [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md), [Gilde](/factions/gilde_von_ehrenfels.md), Lazarett, Gardistenhaus und ausgebauter Taverne. [P-03] [P-13] [P-22] Die Siedlung liegt im Vergleich zu größeren Städten wie [Willau](/locations/willauch.md) oder [Ehrenfels](/locations/ehrenfels.md) eher unbedeutend, ist aber über die gesamte Kampagne hinweg ein zentraler Schauplatz geblieben. [P-26]
+Breska ist eine kleine Siedlung, die in einem Tal an einem kleinen Berg liegt und von einer Lichtung umgeben ist. Ursprünglich ein bescheidenes Dorf mit zwei großen Bauernhöfen, einer Schenke, einem Friedhof und einem Magierhaus, entwickelte sich der Ort innerhalb eines Jahres zu einer Kleinstadt mit Stadtmauer, [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md), [Gilde](/factions/gilde_von_ehrenfels.md), Lazarett, Gardistenhaus und ausgebauter Taverne. [P-03] [P-13] [P-22] Die Siedlung liegt im Vergleich zu größeren Städten wie [Willauch](/locations/willauch.md) oder [Ehrenfels](/locations/ehrenfels.md) eher unbedeutend, ist aber über die gesamte Kampagne hinweg ein zentraler Schauplatz geblieben. [P-26]
 
 Die Geschichte Breskas ist von einem bemerkenswerten Aufstieg und einem ebenso dramatischen Niedergang geprägt: Vom bedrohten Dorf zur prosperierenden Stadt, dann zur belagerten [Festung](/locations/festung.md) und schließlich zur zerstörten Ruine. [P-13] [P-33] [P-40] [P-52] [P-55]
 
@@ -35,7 +35,7 @@ Breska ist der Ausgangspunkt und wiederkehrende Bezugspunkt der Gruppe. Die Gef�
 - Unter dem Friedhof von Breska entdeckte die Gruppe Katakomben und erweckte dort **[Voras](/npcs/voras.md) den Heiligen**, eine vampirhafte Gestalt, die in einem Sarkophag schlief. [P-13]
 - Die Stadt wurde später von Untoten belagert, die Mauern fielen, und die Bevölkerung verhungerte. [P-33]
 - [Belorus](/npcs/belorus.md), ein dunkler Paladin mit einer untoten Armee, zerstörte Breska vollständig. [P-40] [P-52]
-- Nach der Flucht aus [Abyssalis](/domains/splitterwelt.md) kehrte die Gruppe in die Ruinen von Breska zurück; nur das Anwesen von [Voras](/npcs/vora.md) stand noch. [P-55]
+- Nach der Flucht aus [Abyssalis](/domains/splitterwelt.md) kehrte die Gruppe in die Ruinen von Breska zurück; nur das Anwesen von Voras stand noch. [P-55]
 
 ## Wichtige Merkmale
 
@@ -43,7 +43,7 @@ Breska ist der Ausgangspunkt und wiederkehrende Bezugspunkt der Gruppe. Die Gef�
 
 Breska liegt in einem Tal und ist von einem kleinen Berg und Bäumen umgeben. [P-03] [P-40] Die ursprüngliche Siedlung bestand aus zwei großen Bauernhöfen, einer Schenke, einem Friedhof und einem Magierhaus. Die Fenster waren vergittert, und das Dorf wurde von zwei Wachen geschützt. [P-03]
 
-Nach dem Ausbau verfügte Breska über eine große Stadtmauer (ursprünglich eine Palisade), eine Kapelle auf dem Hügel, eine ausgebaute Taverne, einen Marktplatz, ein Lazarett, ein Gardistenhaus, eine Gilde und mindestens vier neue Gebäude. [P-13] [P-22] Die Stadtmauer war im Vergleich zu der von Willau allerdings „ein Witz“ — Willaus Mauer war deutlich beeindruckender. [P-26]
+Nach dem Ausbau verfügte Breska über eine große Stadtmauer (ursprünglich eine Palisade), eine Kapelle auf dem Hügel, eine ausgebaute Taverne, einen Marktplatz, ein Lazarett, ein Gardistenhaus, eine Gilde und mindestens vier neue Gebäude. [P-13] [P-22] Die Stadtmauer war im Vergleich zu der von Willauch allerdings „ein Witz“ — Willaus Mauer war deutlich beeindruckender. [P-26]
 
 ### Bewohner und Einrichtungen
 
@@ -58,7 +58,7 @@ Nach dem Ausbau verfügte Breska über eine große Stadtmauer (ursprünglich ein
 
 - **Die Gilde**: Breska wurde von der Gilde unterstützt, die sowohl die Verteidigung des Dorfes organisierte als auch später die Stadt finanzierte. Die Gruppe wurde als „Retter des Dorfes“ begrüßt. [P-13]
 - **Der Graf**: Die Stadt wurde vom Grafen finanziert. [P-13]
-- **Willau**: Willau und Breska trieben Handel, unter anderem mit den [Assassinen](/factions/assassinen.md) im Norden. [S1-02-A]
+- **Willauch**: Willauch und Breska trieben Handel, unter anderem mit den [Assassinen](/factions/assassinen.md) im Norden. [S1-02-A]
 - **Ehrenfels**: Die Gruppe hatte den Auftrag, eine wichtige Botschaft von Breska nach Ehrenfels zu bringen. [P-32]
 - **Flüchtlinge**: Viele [Flüchtlinge aus Breska](/factions/fluechtlinge_aus_breska.md) wurden im [Banditenlager](/locations/banditenlager_der_silberkerne.md) untergebracht, nachdem sie nicht in die Stadt gelassen worden waren. [P-23] [P-34]
 
@@ -70,7 +70,7 @@ Die Gruppe kam nach einer langen Reise in Breska an, das von einer Goblinhorde b
 
 Die Horde griff in der Dämmerung an — Goblins, ein [Oger](/npcs/oger.md), ein krähengleiches Wesen und ein [Grottenschrat](/npcs/grottenschrat.md). [Lindo Laut](/characters/lindo_laut.md) sang ein Lied, das die Verteidiger stärkte, aber den Hinterhalt verriet. In der Schlacht fiel ein junger Schmied; einen zweiten Verwundeten rettete [Esterossa](/characters/esterossa.md) mit heilender Magie. Rotunas brachte den Oger zu Fall, Valeria tötete ihn mit Wildfeuer. [P-13]
 
-[Leandras](/npcs/lenra.md), der Magier, wurde am Turm von dem Krähenwesen und dem Grottenschrat bedrängt und rief per Horn um Hilfe. Die Gruppe eilte ihm zu Hilfe und rettete ihn. Zum Dank übergab er ihnen einen schweren, alten Schlüssel. [P-13]
+Leandras, der Magier, wurde am Turm von dem Krähenwesen und dem Grottenschrat bedrängt und rief per Horn um Hilfe. Die Gruppe eilte ihm zu Hilfe und rettete ihn. Zum Dank übergab er ihnen einen schweren, alten Schlüssel. [P-13]
 
 ### Die Entdeckung der Katakomben
 
@@ -111,7 +111,7 @@ Auf dem Rückweg besuchte die Gruppe Breska erneut, aber die Stadt war nur noch 
 ## Offene Fragen
 
 - Was genau suchte die Zielperson, die in den [Schriftrollen](/items/schriftrollen.md) in Breska verzeichnet war? Der Name wurde nicht bekannt gegeben. [P-04]
-- Was hatte der Magier in Breska gefunden, das für Lanra wichtig war? [P-04]
+- Was hatte der Magier in Breska gefunden, das für [Landra](/npcs/lenra.md) wichtig war? [P-04]
 - Warum gab es nach der Zerstörung Breskas keine Leichen? [P-40]
 - Was geschah mit der Bevölkerung Breskas nach dem Fall der Mauern? [P-33] [P-40]
 

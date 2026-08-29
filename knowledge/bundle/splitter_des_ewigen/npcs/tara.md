@@ -9,7 +9,7 @@ timestamp: '2026-05-27T00:00:00Z'
 id: NPC_TARA
 ---
 
-Tara ist die Verwalterin von [Nebelwacht](/locations/nebelwacht.md), eine grimmige Frau, die neue Rekruten empfängt und ihnen die [Festung](/locations/festung.md) zeigt. Sie wirkt streng und effizient, weicht Fragen aus und delegiert Aufgaben. Sie stellt die Gruppe [Trilo](/npcs/trillo.md) vor und überlässt ihm die Führung der Expedition.
+Tara ist die Verwalterin von [Nebelwacht](/locations/nebelwacht.md), eine grimmige Frau, die neue Rekruten empfängt und ihnen die [Festung](/locations/festung.md) zeigt. Sie wirkt streng und effizient, weicht Fragen aus und delegiert Aufgaben. Sie stellt die Gruppe [Trilo](/npcs/trilo.md) vor und überlässt ihm die Führung der Expedition.
 
 # Belege
 
