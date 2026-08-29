@@ -56,6 +56,15 @@ actually measures.
   worth re-checking against the "is it spelling or is it two entities"
   question before assuming either way.
 
+## Update 2026-08-30: branch reviewed, fixes not yet applied
+
+`fix/kb-autolink-and-entity-dedup` was code-reviewed before merge. The rules
+and registry work holds up; the *regenerated bundle* carries three new
+criticals (a flipped Hans mislink, an uncited entity page, an orphaned
+Hartwacht conflict) plus medium findings in the linking machinery and its
+tests. Ordered fix plan, verified root causes and re-measurement steps:
+**`2026-08-30-review-fix-plan.md`**. Start there before touching the branch.
+
 ## Rules of engagement (same as prior audit)
 
 - Never hand-edit a bundle `.md` file — fixes go in `entity_rules.yaml` /
