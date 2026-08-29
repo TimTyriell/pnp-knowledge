@@ -12,6 +12,7 @@ on is intact.
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 import pytest
@@ -131,4 +132,83 @@ def test_last_run_conflict_count_matches_the_committed_queue():
         f"{CONFLICTS_DIR} — the committed bundle and the last recorded run "
         f"disagree. Re-run `pnp run` on this checkout, or check out the "
         f"branch/commit last_run.json actually describes."
+    )
+
+
+# --- citation coverage --------------------------------------------------
+#
+# The bundle uses three citation-line shapes side by side: "[P-40] Session
+# …" and "[S1-01-A] Session …" from the LLM synthesis, and numbered
+# "1. Session …" from render_brief_body (synthesize.py) — brief entries are
+# rendered locally and never see the model. A naive `grep '^\[P-'` (the
+# mistake this audit's own first pass made) only sees the first two and
+# wildly undercounts. This checks all three at once.
+
+_CITATION_LINE_RE = re.compile(r"^(\[[^\]]+\]|\d+\.)\s*Session\s", re.MULTILINE)
+
+# Entity concepts with zero recognizable citation line in any of the three
+# formats, measured on this branch. Ratchet: may only go down. Root cause is
+# in extract.py (a mention without a citation_ts), out of scope for this
+# audit's fixes — see docs/audits/2026-08-29-bundle-quality.md.
+UNCITED_ENTITY_BASELINE = 5
+
+
+def test_every_entity_node_cites_a_source():
+    uncited = sorted(
+        cid
+        for cid, path, _fm in _entity_files()
+        if not _CITATION_LINE_RE.search(path.read_text(encoding="utf-8"))
+    )
+    assert len(uncited) <= UNCITED_ENTITY_BASELINE, (
+        f"{len(uncited)} entity concept(s) have no recognizable citation "
+        f"line in any of the bundle's three formats ([P-nn], [S1-nn-X], or "
+        f"'N. Session …') — baseline {UNCITED_ENTITY_BASELINE}: {uncited}"
+    )
+
+
+# --- tier vs. evidence ----------------------------------------------------
+#
+# The 2026-08-29 audit's Question 1 finding: `important: true` is the de
+# facto deep/shallow switch for every type except Character/Deity (see
+# DEEP_MENTION_THRESHOLD, models.py), and it's applied inconsistently in
+# both directions — forced onto barely-attested entities (padding) and
+# withheld from clearly recurring ones (stubs). Both directions measured
+# here so a fix in one direction can't silently regress the other.
+
+_UEBERBLICK_RE = "## Überblick"
+
+
+def test_tier_matches_the_evidence():
+    registry = yaml.safe_load(REGISTRY.read_text(encoding="utf-8")) or {}
+    mention_count = {
+        str(e.get("concept_id", "")).strip(): int(e.get("mention_count") or 0)
+        for e in (registry.get("entities") or [])
+    }
+
+    too_deep, too_shallow = [], []
+    for cid, path, _fm in _entity_files():
+        text = path.read_text(encoding="utf-8")
+        deep = _UEBERBLICK_RE in text
+        mc = mention_count.get(cid, 0)
+        if deep and mc <= 1:
+            too_deep.append(cid)
+        if not deep and mc >= 5:
+            too_shallow.append(cid)
+
+    # "Too deep": a full deep-tier writeup built from essentially one
+    # mention — the padding failure mode. Baseline measured before
+    # `unimportant: deities/akastrale` (entity_rules.yaml) is honoured by a
+    # real `pnp run`.
+    assert len(too_deep) <= 5, (
+        f"{len(too_deep)} concept(s) have full deep-tier structure from "
+        f"<=1 mention (baseline 5): {too_deep}"
+    )
+    # "Too shallow": a recurring entity (>=5 mentions) that never got the
+    # deep tier — the stub failure mode. Baseline measured before
+    # DEEP_MENTION_THRESHOLD (models.py, Fix 2) is honoured by a real
+    # `pnp run`; target is 0 once entities in the 5-7 mention band clear the
+    # lowered threshold.
+    assert len(too_shallow) <= 9, (
+        f"{len(too_shallow)} concept(s) have >=5 mentions but never got a "
+        f"deep-tier writeup (baseline 9): {too_shallow}"
     )

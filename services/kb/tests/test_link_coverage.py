@@ -104,3 +104,80 @@ def test_unlinked_mentions_have_not_grown():
         f"broken links only counts links that were written, not mentions "
         f"that never became one."
     )
+
+
+# --- deep-tier link coverage -------------------------------------------------
+#
+# UNLINKED_MENTION_BASELINE above counts unlinked *name mentions*; it doesn't
+# separate "a stub with one mention has none to link" from "a 1000-word deep
+# entry names half the campaign and links none of it". The second is the
+# 2026-08-29 bundle-quality audit's actual finding: _autolink() (synthesize.py)
+# used to run only on brief-tier bodies, so a deep/standard body relied on the
+# model linking itself — which it mostly didn't. This measures that directly.
+
+_ANY_LINK_RE = re.compile(r"\]\([^)\s]*?\.md\)")
+
+# Deep-tier concepts (body has "## Überblick") with zero outgoing links,
+# measured on this branch before Fix 1 (autolink_prose in synthesize.py) is
+# exercised by a real `pnp run`. Ratchet: may only go down. Target after a
+# rebuild is <=10 — most deep nodes should link at least one other concept.
+DEEP_TIER_NO_LINK_BASELINE = 53
+
+
+def test_deep_tier_nodes_are_linked():
+    entities = _bundle_files()
+    deep = [(cid, body) for cid, _name, body in entities if "## Überblick" in body]
+    unlinked = sorted(cid for cid, body in deep if not _ANY_LINK_RE.search(body))
+    assert len(unlinked) <= DEEP_TIER_NO_LINK_BASELINE, (
+        f"{len(unlinked)} deep-tier concepts (body has '## Überblick') have "
+        f"zero outgoing links (baseline {DEEP_TIER_NO_LINK_BASELINE}). These "
+        f"are the richest entries in the bundle and are invisible to any "
+        f"graph-shaped consumer. Re-run `pnp run` after Fix 1 before raising "
+        f"this number: {unlinked[:10]}{'…' if len(unlinked) > 10 else ''}"
+    )
+
+
+# --- faction <-> character/NPC relation coverage -----------------------------
+#
+# The narrow half of the same defect: even where a deep node does link
+# something, is it linking the *relation* Question 5 of the audit asked
+# about (faction membership, faction<->territory)? Counted separately from
+# test_deep_tier_nodes_are_linked because Fix 1 alone can raise that number
+# without ever producing a single faction<->member edge — this is the
+# quantity that actually proves the Belorius/Zebros and Landra/Cornivum
+# seeds in the audit report got fixed.
+
+_MEMBER_LINK_RE = re.compile(r"\]\(/?(?:\.\./)?(?:characters|npcs)/")
+_FACTION_LINK_RE = re.compile(r"\]\(/?(?:\.\./)?factions/")
+
+# (has-at-least-one-member-link, total) for factions/, and the NPC-side
+# mirror, measured on this branch. Ratchet in the *good* direction: the
+# fraction may only go up (kept as counts, not a percentage, so a change in
+# bundle size can't silently mask a regression).
+FACTIONS_WITH_MEMBER_LINK_BASELINE = 22
+FACTIONS_TOTAL_BASELINE = 42
+NPCS_WITH_FACTION_LINK_BASELINE = 31
+NPCS_TOTAL_BASELINE = 228
+
+
+def test_relation_coverage_has_not_dropped():
+    entities = _bundle_files()
+    factions = [body for cid, _name, body in entities if cid.startswith("factions/")]
+    npcs = [body for cid, _name, body in entities if cid.startswith("npcs/")]
+
+    fac_with_member = sum(1 for body in factions if _MEMBER_LINK_RE.search(body))
+    npc_with_faction = sum(1 for body in npcs if _FACTION_LINK_RE.search(body))
+
+    # A shrinking denominator (e.g. entity_rules.yaml merges/ignores some
+    # factions or NPCs away) is fine and expected from this audit's fixes;
+    # what must not happen is the *numerator* falling below its baseline
+    # while the type still has roughly as many members as before.
+    assert fac_with_member >= min(FACTIONS_WITH_MEMBER_LINK_BASELINE, len(factions)), (
+        f"only {fac_with_member}/{len(factions)} factions link a member "
+        f"(/characters/ or /npcs/), baseline was "
+        f"{FACTIONS_WITH_MEMBER_LINK_BASELINE}/{FACTIONS_TOTAL_BASELINE}"
+    )
+    assert npc_with_faction >= min(NPCS_WITH_FACTION_LINK_BASELINE, len(npcs)), (
+        f"only {npc_with_faction}/{len(npcs)} NPCs link a /factions/, "
+        f"baseline was {NPCS_WITH_FACTION_LINK_BASELINE}/{NPCS_TOTAL_BASELINE}"
+    )
