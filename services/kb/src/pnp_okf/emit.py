@@ -8,7 +8,7 @@ from pathlib import Path
 import yaml
 
 from pnp_okf.episodes import Episodes
-from pnp_okf.links import ConceptIndex, normalize_body
+from pnp_okf.links import ConceptIndex, apply_spellings, normalize_body
 from pnp_okf.models import (
     DIR_TO_TYPE,
     SUBTYPES,
@@ -38,6 +38,7 @@ def _session_concept_id(transcript: SessionTranscript) -> str:
 def build_concept_index(
     entities: list[CanonicalEntity],
     transcripts: dict[str, SessionTranscript],
+    spellings: dict[str, str] | None = None,
 ) -> ConceptIndex:
     """Build a :class:`ConceptIndex` covering all entity and session concepts."""
 
@@ -49,7 +50,7 @@ def build_concept_index(
     for entity in sorted(entities, key=lambda e: len(e.mentions)):
         for name in [entity.canonical_name, *entity.aliases]:
             names[name] = entity.concept_id
-    return ConceptIndex(concept_ids, names)
+    return ConceptIndex(concept_ids, names, spellings)
 
 
 _TYPE_LABEL_DE = {
@@ -514,8 +515,17 @@ def emit_indexes(
     bundle_dir: Path,
     entities: list[CanonicalEntity],
     session_entries: list[tuple[str, str, str]],
+    spellings: dict[str, str] | None = None,
 ) -> None:
-    """Write per-directory ``index.md`` files and the bundle-root index."""
+    """Write per-directory ``index.md`` files and the bundle-root index.
+
+    Each entry's blurb is built straight from the entity's raw first mention
+    note (extraction-stage text), not from its synthesized, already-corrected
+    concept body — so it bypasses ``normalize_body``'s spelling fix entirely.
+    ``spellings`` (``entity_rules.yaml``'s ``spelling:`` map) is applied here
+    too, or the index page keeps showing a mishearing the concept's own file
+    no longer has.
+    """
 
     # Group entities by type/dir.
     by_dir: dict[str, list[CanonicalEntity]] = {}
@@ -537,10 +547,11 @@ def emit_indexes(
     # here a heading, later a query over the subtype label.
     for directory, group in by_dir.items():
         def _entry(e: CanonicalEntity) -> tuple[str, str, str]:
+            note = apply_spellings(e.mentions[0].note, spellings or {}) if e.mentions else ""
             return (
                 e.canonical_name,
                 f"{e.concept_id.split('/', 1)[1]}.md",
-                _short_desc(e.mentions[0].note) if e.mentions else "",
+                _short_desc(note),
             )
 
         ordered = sorted(group, key=lambda e: e.canonical_name.lower())

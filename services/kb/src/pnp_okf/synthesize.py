@@ -54,13 +54,20 @@ def link_targets(entities: list[CanonicalEntity]) -> dict[str, str]:
     return {name: e.concept_id for name, e in best.items()}
 
 
-def _link_first_occurrence(text: str, name: str, concept_id: str) -> str:
+def _link_first_occurrence(
+    text: str, name: str, concept_id: str, known_names: set[str] | None = None
+) -> str:
     """Link the first bare occurrence of ``name`` in ``text``, or return it
     unchanged if there isn't one."""
 
     # German runs names through the genitive ("Lindo Lauts Amulett"), so
-    # allow a trailing -s and keep it inside the link label.
-    tail = "" if name[-1] in "sßxz" else "s?"
+    # allow a trailing -s and keep it inside the link label. Suppressed when
+    # name + "s" is itself a known entity name (e.g. "Vora" / "Voras") --
+    # otherwise the genitive tail lets the shorter name's link consume the
+    # longer name's occurrences, mislinking every "Voras" in the bundle to
+    # the unrelated one-mention concept "Vora".
+    collides = known_names is not None and (name + "s").lower() in known_names
+    tail = "" if name[-1] in "sßxz" or collides else "s?"
     # Not inside a word, not inside an existing link label or url.
     match = re.search(rf"(?<![\w\[/]){re.escape(name)}{tail}(?![\w\]])", text)
     if match is None:
@@ -72,13 +79,14 @@ def _link_first_occurrence(text: str, name: str, concept_id: str) -> str:
 def _autolink(text: str, targets: dict[str, str], skip: str) -> str:
     """Link the first occurrence of each known entity name in ``text``."""
 
+    known_names = {n.lower() for n in targets}
     linked: set[str] = set()
     # Longest names first, so "Lindo Laut" is not pre-empted by "Lindo".
     for name in sorted(targets, key=len, reverse=True):
         concept_id = targets[name]
         if concept_id == skip or concept_id in linked:
             continue
-        new_text = _link_first_occurrence(text, name, concept_id)
+        new_text = _link_first_occurrence(text, name, concept_id, known_names)
         if new_text != text:
             text = new_text
             linked.add(concept_id)
@@ -116,6 +124,7 @@ def autolink_prose(text: str, targets: dict[str, str], skip: str) -> str:
 
     linked = _linked_concept_ids(head, targets) | {skip}
     names = sorted(targets, key=len, reverse=True)
+    known_names = {n.lower() for n in targets}
     lines = head.split("\n")
     for i, line in enumerate(lines):
         if line.lstrip().startswith("#"):
@@ -124,7 +133,7 @@ def autolink_prose(text: str, targets: dict[str, str], skip: str) -> str:
             concept_id = targets[name]
             if concept_id in linked:
                 continue
-            new_line = _link_first_occurrence(line, name, concept_id)
+            new_line = _link_first_occurrence(line, name, concept_id, known_names)
             if new_line != line:
                 line = new_line
                 linked.add(concept_id)

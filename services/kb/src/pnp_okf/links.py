@@ -80,6 +80,7 @@ class ConceptIndex:
         self,
         concept_ids: Iterable[str],
         names: dict[str, str] | None = None,
+        spellings: dict[str, str] | None = None,
     ) -> None:
         """``names`` maps a display name or alias to its concept id.
 
@@ -87,9 +88,14 @@ class ConceptIndex:
         concept id — ``npcs/vasul.md`` for ``deities/vharzul``. Without the
         name map those links are simply dropped, which cost the bundle 161
         edges on the v5 run.
+
+        ``spellings`` is ``entity_rules.yaml``'s ``spelling:`` map (mishearing
+        -> canon text), applied to prose by :func:`normalize_body` — see
+        :func:`apply_spellings`.
         """
 
         self.ids: set[str] = set(concept_ids)
+        self.spellings: dict[str, str] = spellings or {}
         self._by_basename: dict[str, set[str]] = defaultdict(set)
         for cid in self.ids:
             self._by_basename[slugify(cid.rsplit("/", 1)[-1])].add(cid)
@@ -186,6 +192,44 @@ class ConceptIndex:
         return None
 
 
+_BELEGE_HEADING_RE = re.compile(r"^#{1,6}\s*Belege\s*$", re.IGNORECASE | re.MULTILINE)
+_LINK_TARGET_RE = re.compile(r"(\]\([^)\s]*\.md\))")
+
+
+def apply_spellings(body: str, spellings: dict[str, str]) -> str:
+    """Rewrite prose occurrences of a mishearing to its GM-ruled canon text.
+
+    ``entity_rules.yaml``'s ``canonical_name:`` only pins a concept's
+    *title* — nothing otherwise rewrites synthesized body text, so a
+    mishearing that made it into prose survives every re-run untouched even
+    after the title is corrected. This closes that gap deterministically, no
+    LLM call: a word-boundary substitution applied to prose only.
+
+    Never touches a link *target* (the part inside ``(...)`` ) or anything
+    past the ``# Belege`` heading (citations, not prose) — a substitution
+    there could mangle a URL or a slug. A link *label* is prose like any
+    other, so ``[Willoch](/locations/willauch.md)`` becomes
+    ``[Willauch](/locations/willauch.md)``.
+    """
+
+    if not spellings:
+        return body
+
+    match = _BELEGE_HEADING_RE.search(body)
+    head, tail = (body[: match.start()], body[match.start() :]) if match else (body, "")
+
+    # Longer keys first, so a phrase rule ("Festung Zebras") is applied
+    # before a bare-token rule ("Zebras") could partially pre-empt it.
+    rules = sorted(spellings.items(), key=lambda kv: len(kv[0]), reverse=True)
+    # Splitting on link targets keeps every substitution outside `](...)`.
+    parts = _LINK_TARGET_RE.split(head)
+    for old, new in rules:
+        pattern = re.compile(rf"(?<!\w){re.escape(old)}(?!\w)")
+        for i in range(0, len(parts), 2):  # even indices are outside targets
+            parts[i] = pattern.sub(new, parts[i])
+    return "".join(parts) + tail
+
+
 def normalize_body(
     body: str, index: ConceptIndex, *, drop_unresolved: bool = True, self_id: str | None = None
 ) -> tuple[str, list[str]]:
@@ -199,9 +243,14 @@ def normalize_body(
     mention resolving back to the page it's written on) is not a citation,
     it is a self-reference the synthesis should not have produced.
 
+    ``index.spellings`` is applied first (see :func:`apply_spellings`), so
+    every caller of ``normalize_body`` — session emission, entity emission,
+    and ``pnp validate --fix`` — gets prose-spelling fixes for free.
+
     Returns ``(new_body, unresolved_targets)``.
     """
 
+    body = apply_spellings(body, index.spellings)
     unresolved: list[str] = []
 
     def _replace(match: re.Match[str]) -> str:
