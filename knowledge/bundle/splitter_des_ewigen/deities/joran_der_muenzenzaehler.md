@@ -14,17 +14,17 @@ aliases:
 
 ## Überblick
 
-Joran der Münzenzähler ist ein neuer Gott der Welt, die erst seit zwölf Jahren besteht. Er gehört zu den neuen Göttern, die nach der Verbannung der alten Götter versuchen, das Gleichgewicht aufrechtzuerhalten. Über ihn ist nicht allzu viel bekannt; er offenbart sich nur denen, die es verdienen. Sein Zeichen findet sich an einer Statue in Kleinringtal, die dort aufgestellt ist und von seiner Paladin Adelia gehütet wird. Joran ist der Patron und Beschützer Adelias, die in seinem Namen handelt.
+Joran der Münzenzähler ist ein neuer Gott der Welt, die erst seit zwölf Jahren besteht. Er gehört zu den neuen Göttern, die nach der Verbannung der alten Götter versuchen, das Gleichgewicht aufrechtzuerhalten. Über ihn ist nicht allzu viel bekannt; er offenbart sich nur denen, die es verdienen. Sein Zeichen findet sich an einer Statue in [Kleinringtal](/locations/ringtal.md), die dort aufgestellt ist und von seiner Paladin [Adelia](/npcs/adeliga_der_eulenseraph.md) gehütet wird. Joran ist der Patron und Beschützer Adelias, die in seinem Namen handelt.
 
 ## Rolle in der Kampagne
 
-Joran tritt in der Kampagne zunächst als Patron der Paladin Adelia in Erscheinung, die in Kleinringtal an seiner Statue wacht. Die Heldin Saris entdeckt die Statue und beginnt, sie wissenschaftlich zu dokumentieren – sie hat ein Notizbuch mit Zeichnungen, Inschriften und Schätzungen zur Größe der Statue angefertigt. Beim Gespräch mit Adelia erfährt Saris von Joran und seiner Rolle als neuer Gott.
+Joran tritt in der Kampagne zunächst als Patron der Paladin Adelia in Erscheinung, die in Kleinringtal an seiner Statue wacht. Die Heldin [Saris](/characters/saris.md) entdeckt die Statue und beginnt, sie wissenschaftlich zu dokumentieren – sie hat ein [Notizbuch](/items/notizbuch.md) mit Zeichnungen, Inschriften und Schätzungen zur Größe der Statue angefertigt. Beim Gespräch mit Adelia erfährt Saris von Joran und seiner Rolle als neuer Gott.
 
-Die entscheidende Wendung kommt, als Joran den Helden Sange segnet. Dieser Segen löst einen Timer aus und verändert Sanges Blutmagie grundlegend: Die zuvor turbulente, stürmische Magie wird ruhiger, und in dem roten Chaos der Blutmagie erscheint ein kleiner Funke Licht, der dem Chaos entgegenwirkt. Sanges Gefühlslage verändert sich dadurch ebenfalls. Die Heldin Kaya reagiert misstrauisch auf diesen neuen Gott.
+Die entscheidende Wendung kommt, als Joran den Helden [Sange](/characters/sange.md) segnet. Dieser Segen löst einen Timer aus und verändert Sanges [Blutmagie](/domains/blutmagie.md) grundlegend: Die zuvor turbulente, stürmische Magie wird ruhiger, und in dem roten Chaos der Blutmagie erscheint ein kleiner Funke Licht, der dem Chaos entgegenwirkt. Sanges Gefühlslage verändert sich dadurch ebenfalls. Die Heldin [Kaya](/characters/kaya.md) reagiert misstrauisch auf diesen neuen Gott.
 
 ## Wichtige Merkmale
 
-Joran wird als Münzenzähler bezeichnet, was auf eine Verbindung zu Handel, Reichtum oder Abrechnung hindeuten könnte – genauere Informationen darüber liegen nicht vor. Er ist ein neuer Gott, der erst nach der Verbannung der alten Götter in Erscheinung getreten ist. Die neuen Götter versuchen inständig, das Gleichgewicht aufrechtzuerhalten, und sie reden mit denen, die es verdienen.
+Joran wird als Münzenzähler bezeichnet, was auf eine Verbindung zu Handel, Reichtum oder Abrechnung hindeuten könnte – genauere Informationen darüber liegen nicht vor. Er ist ein neuer Gott, der erst nach der Verbannung der alten Götter in Erscheinung getreten ist. [Die neuen Götter](/deities/neue_goetter.md) versuchen inständig, das Gleichgewicht aufrechtzuerhalten, und sie reden mit denen, die es verdienen.
 
 Seine Gnade zeigt sich auf sichtbare Weise: Als Adelia über ihren Gott spricht, leuchten ihre Augen ganz leicht auf, wie mit einem goldenen Film – ein kurzes, magisches Aufleuchten, das wie ein Zauber wirkt. Saris bemerkt dieses Phänomen und fragt nach, ob es Magie sei; Adelia bestätigt, dass es die Gnade ihres Gottes ist.
 

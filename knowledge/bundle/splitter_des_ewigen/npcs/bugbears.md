@@ -9,7 +9,7 @@ timestamp: '2026-07-23T00:00:00Z'
 id: NPC_BUGBEARS
 ---
 
-Bugbears sind größere und stärkere Gegner, die die [Goblins](/factions/goblins.md) anführen. Sie haben ein Lager oben in der [Mine](/locations/kristallmine.md). Sie sind organisiert und tragen bessere Ausrüstung. Zwei werden von [Kaya](/characters/kaya.md) in den Schacht gestoßen, ein weiterer von [Sange](/characters/sange.md) getötet.
+Bugbears sind größere und stärkere Gegner, die die [Goblins](/npcs/pilz_goblins.md) anführen. Sie haben ein Lager oben in der [Mine](/locations/verlassene_mine_an_der_farm.md). Sie sind organisiert und tragen bessere Ausrüstung. Zwei werden von [Kaya](/characters/kaya.md) in den Schacht gestoßen, ein weiterer von [Sange](/characters/sange.md) getötet.
 
 # Belege
 

@@ -10,7 +10,7 @@ id: ITEM_ZEBRAS_ZORN
 subtype: Waffe
 ---
 
-Ein mächtiger Streitkolben, der auf einem Pentagramm in einem Geheimversteck in [Steinbachtal](/locations/steinbachtal.md) schwebt. Er ist durch unsichtbare Ketten gebunden und wird durch ein zwergisches Kommando aktiviert. Die Gruppe erbeutet ihn, indem [Rotunas](/characters/rotunas.md) ihn durch einen Spiegel zieht. Die Waffe erhöht den Schaden um 1w10 und dient als Lichtquelle, wenn man das Kommando spricht.
+Ein mächtiger [Streitkolben](/items/streitkolben_von_dodo.md), der auf einem Pentagramm in einem Geheimversteck in [Steinbachtal](/locations/steinbachtal.md) schwebt. Er ist durch unsichtbare Ketten gebunden und wird durch ein zwergisches Kommando aktiviert. Die Gruppe erbeutet ihn, indem [Rotunas](/characters/rotunas.md) ihn durch einen Spiegel zieht. Die Waffe erhöht den Schaden um 1w10 und dient als Lichtquelle, wenn man das Kommando spricht.
 
 # Belege
 

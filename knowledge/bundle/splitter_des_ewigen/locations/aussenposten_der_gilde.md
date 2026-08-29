@@ -10,7 +10,7 @@ id: LOC_AUSSENPOSTEN_DER_GILDE
 subtype: Gebäude
 ---
 
-Ein abgelegener Trainingsstützpunkt der [Gilde](/factions/gilde_von_ehrenfels.md), umgeben von dichtem Wald. Er verfügt über ein Trainingsgelände mit Ruinen, einem Portal und verschiedenen Verteidigungspositionen. Hier findet der Kampf gegen die beschworenen Kreaturen statt.
+Ein abgelegener Trainingsstützpunkt der [Gilde](/factions/gilde_von_ehrenfels.md), umgeben von dichtem Wald. Er verfügt über ein Trainingsgelände mit Ruinen, einem [Portal](/locations/portal.md) und verschiedenen Verteidigungspositionen. Hier findet der Kampf gegen die beschworenen Kreaturen statt.
 
 # Belege
 

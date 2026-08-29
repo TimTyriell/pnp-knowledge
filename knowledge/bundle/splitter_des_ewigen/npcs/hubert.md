@@ -1,15 +1,15 @@
 ---
 type: NPC
 title: Hubert
-description: Hubert ist der Wirt der Taverne im Dorf Brechka. Er ist seit seinem ganzen
-  Leben Wirt und kennt das Dorf gut. Er gibt der Gruppe Informatio…
+description: Hubert ist der Wirt der Schenke in Brechka. Er ist freundlich und gibt
+  der Gruppe Essen und Trinken. Er erzählt, dass das Dorf schon oft vo…
 tags:
 - npcs
 timestamp: '2025-04-09T00:00:00Z'
 id: NPC_HUBERT
 ---
 
-Hubert ist der Wirt der [Taverne](/locations/taverne.md) im [Dorf](/locations/dorf.md) [Brechka](/locations/breska.md). Er ist seit seinem ganzen Leben Wirt und kennt das Dorf gut. Er gibt der Gruppe Informationen über frühere Angriffe und versorgt sie mit Essen und Getränken. Er ist bereit, bei der Verteidigung zu helfen, indem er die Armbrust benutzt.
+Hubert ist der Wirt der Schenke in [Brechka](/locations/breska.md). Er ist freundlich und gibt der Gruppe Essen und Trinken. Er erzählt, dass das Dorf schon oft von kleinen Angriffen heimgesucht wurde, aber nie von etwas Großem. Er erhält die Armbrust für die Verteidigung.
 
 # Belege
 

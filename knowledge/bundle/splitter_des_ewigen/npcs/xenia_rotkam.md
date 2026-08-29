@@ -13,7 +13,7 @@ aliases:
 
 # Xenia Rotkam
 
-Xenia Rotkam ist die Inhaberin der Taverne Kleinringtal und eine Infernis. Sie führt ihr Etablissement geschäftstüchtig und freundlich: Der Gruppe gewährt sie eine kostenlose Nacht und zeigt sich neugierig auf [Saris](/characters/saris.md) und seine Totenkopf-Gefährten. Als ihre Heimat bedroht wird, erweist sie sich als stolz und entschlossen, weigert sich zunächst zu evakuieren und wird erst durch [Brumas](/characters/bruma_stormrak.md) leidenschaftliche Rede umgestimmt. Nach dem Verlust Kleinringtals lebt sie als Flüchtling in Ringtal.
+Xenia Rotkam ist die Inhaberin der Taverne [Kleinringtal](/locations/ringtal.md) und eine [Infernis](/domains/infernis.md). Sie führt ihr Etablissement geschäftstüchtig und freundlich: Der Gruppe gewährt sie eine kostenlose Nacht und zeigt sich neugierig auf [Saris](/characters/saris.md) und seine Totenkopf-Gefährten. Als ihre Heimat bedroht wird, erweist sie sich als stolz und entschlossen, weigert sich zunächst zu evakuieren und wird erst durch [Brumas](/characters/bruma_stormrak.md) leidenschaftliche Rede umgestimmt. Nach dem Verlust Kleinringtals lebt sie als Flüchtling in Ringtal.
 
 ## Wirtin der Taverne Kleinringtal
 

@@ -9,6 +9,12 @@ timestamp: '2025-06-10T00:00:00Z'
 id: LOC_VERSUNKENE_STADT_DUNGEON
 subtype: Gebäude
 aliases:
+- Raum mit Schlangenglyphen
+- Muschelraum mit Mimic
+- Kaminraum mit grüner Flamme
+- Elektrischer Gang
+- Halle der Seelennetze
+- Labor der Hexe
 - Raum mit Brunnen und Gitter
 ---
 

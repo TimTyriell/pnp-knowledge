@@ -9,7 +9,7 @@ timestamp: '2025-10-14T00:00:00Z'
 id: NPC_LISA
 ---
 
-Einheimische aus [Willau](/locations/willauch.md), die die Gruppe in der [Taverne](/locations/taverne.md) erkennt. Sie war auf diplomatischer Mission in [Ehrenfels](/locations/ehrenfels.md) und gibt Informationen über die Stadt und das Turnier. Sie erwähnt die Lady Lyra und den Lord Kaledan.
+Einheimische aus [Willau](/locations/willauch.md), die die Gruppe in der Taverne erkennt. Sie war auf diplomatischer Mission in [Ehrenfels](/locations/ehrenfels.md) und gibt Informationen über die Stadt und das Turnier. Sie erwähnt die Lady Lyra und den Lord Kaledan.
 
 # Belege
 

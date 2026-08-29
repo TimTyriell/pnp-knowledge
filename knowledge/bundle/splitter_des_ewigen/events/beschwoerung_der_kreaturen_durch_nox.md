@@ -10,7 +10,7 @@ id: EVENT_BESCHWOERUNG_DER_KREATUREN_DURCH_NOX
 subtype: Ritual
 ---
 
-Nox führt ein Ritual durch, um die Kreaturen aus dem Portal zu beschwören. Dies ist der Auslöser für den Kampf.
+Nox führt ein Ritual durch, um die Kreaturen aus dem [Portal](/locations/portal.md) zu beschwören. Dies ist der Auslöser für den Kampf.
 
 # Belege
 

@@ -10,7 +10,7 @@ id: LOC_GOBLIN_LAGER
 subtype: Siedlung
 ---
 
-Das Goblin-Lager ist ein ehemaliges [Dorf](/locations/dorf.md) oder Lager, das von [Goblins](/factions/goblins.md) übernommen wurde. Es besteht aus mehreren Zelten, einem Hauptgebäude und einer Palisade. [Die Goblins](/factions/die_goblins.md) feiern ihren Sieg über die früheren Bewohner. Die Gruppe dringt ein, um den Auftrag zu erfüllen und das Lager zu befreien.
+Das Goblin-Lager ist ein ehemaliges Dorf oder Lager, das von [Goblins](/npcs/pilz_goblins.md) übernommen wurde. Es besteht aus mehreren Zelten, einem Hauptgebäude und einer Palisade. [Die Goblins](/factions/die_goblins.md) feiern ihren Sieg über die früheren Bewohner. Die Gruppe dringt ein, um den Auftrag zu erfüllen und das Lager zu befreien.
 
 # Belege
 

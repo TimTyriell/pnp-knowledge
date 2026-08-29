@@ -1,16 +1,16 @@
 ---
 type: Event
-title: Die Befreiung von Nerash
-description: Esterossa durchtrennt die Ketten von Nerash mit dem Speer, was ihre Befreiung
-  auslöst. Dies führt zu einem Kampf zwischen Nerash und Kol Me…
+title: Befreiung von Nerash
+description: Die Gruppe befreit Nerash, indem Esterossa die Ketten durchtrennt, die
+  sie gefangen halten. Dies führt zu einem Kampf zwischen Nerash und d…
 tags:
 - events
 timestamp: '2025-07-09T00:00:00Z'
 id: EVENT_DIE_BEFREIUNG_VON_NERASH
-subtype: Ritual
+subtype: Kampf
 ---
 
-[Esterossa](/characters/esterossa.md) durchtrennt die Ketten von [Nerash](/deities/nerash.md) mit dem Speer, was ihre Befreiung auslöst. Dies führt zu einem Kampf zwischen Nerash und [Kol Merefs](/deities/kol_merefs.md), bei dem die Festung zerstört wird.
+Die Gruppe befreit [Nerash](/deities/nerash.md), indem [Esterossa](/characters/esterossa.md) die Ketten durchtrennt, die sie gefangen halten. Dies führt zu einem Kampf zwischen Nerash und der Statue von [Kol Merefs](/deities/kollmereth.md), der in einer Explosion endet. Die Gruppe entkommt durch ein [Portal](/locations/portal.md).
 
 # Belege
 

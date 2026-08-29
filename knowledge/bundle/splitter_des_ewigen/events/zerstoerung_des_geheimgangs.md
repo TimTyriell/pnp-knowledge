@@ -10,7 +10,7 @@ id: EVENT_ZERSTOERUNG_DES_GEHEIMGANGS
 subtype: Sonstiges
 ---
 
-Die Gruppe beschließt, den [Geheimgang](/locations/geheimgang.md) zu zerstören, um die Feinde daran zu hindern, das [Dorf](/locations/dorf.md) zu erreichen. Bruma nutzt sein Elementar, um eine Explosion auszulösen.
+Die Gruppe beschließt, den [Geheimgang](/locations/geheimgang.md) zu zerstören, um die Feinde daran zu hindern, das Dorf zu erreichen. Bruma nutzt sein Elementar, um eine Explosion auszulösen.
 
 # Belege
 

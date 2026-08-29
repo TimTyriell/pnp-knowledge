@@ -10,7 +10,7 @@ id: LOC_KATAKOMBE
 subtype: Dungeon
 ---
 
-Eine versteckte Katakombe unter dem [Dorf](/locations/dorf.md), die durch eine Luke zugänglich ist. Sie enthält zwei Särge mit den Namen [Voras](/npcs/voras.md) der Schrecken und Amelia die Heilige. Die Gruppe findet hier [Voras](/npcs/vora.md) und erweckt ihn.
+Eine versteckte Katakombe unter dem Dorf, die durch eine Luke zugänglich ist. Sie enthält zwei Särge mit den Namen [Voras](/npcs/voras.md) der Schrecken und Amelia die Heilige. Die Gruppe findet hier [Voras](/npcs/vora.md) und erweckt ihn.
 
 # Belege
 

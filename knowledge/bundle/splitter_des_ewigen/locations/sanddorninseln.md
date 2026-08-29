@@ -1,89 +1,84 @@
 ---
 type: Location
 title: Sanddorn-Inseln
-description: Die Sanddorn-Inseln sind ein tropisches Inselgebiet, das mehrere Inseln
-  umfasst. Die Hauptinsel trägt den Namen Sanddorn und beherbergt ein…
+description: Die Sanddorn-Inseln sind ein tropisches Inselgebiet, das aus mehreren
+  Inseln besteht. Die Hauptinsel trägt ebenfalls den Namen Sanddorn und…
 tags:
 - locations
 timestamp: '2026-08-12T00:00:00Z'
 id: LOC_SANDDORNINSELN
 subtype: Siedlung
 aliases:
+- Sanddorninseln (Sundown-Inseln)
 - Sanddorninseln
 ---
 
-# Sanddorn-Inseln
-
 ## Überblick
 
-Die Sanddorn-Inseln sind ein tropisches Inselgebiet, das mehrere Inseln umfasst. Die Hauptinsel trägt den Namen Sanddorn und beherbergt ein gleichnamiges Dorf beziehungsweise eine Stadt, in der ein Problem aufgetreten ist, das die Aufmerksamkeit der Gilde auf sich gezogen hat. Die Inselgruppe liegt in der Nähe von Tarkia und ist für ihre Piraten bekannt. Charakteristisch für die Inseln ist eine ungewöhnliche Flora, insbesondere ein vermehrtes Pilzwachstum, das die Region prägt.
-
-Die Sanddorn-Inseln sind der Geburtsort von Lunara Velora und die Heimat von Jorah Vanur, der zumindest über einen Teil der Inseln Herr ist. Damit sind die Inseln mit mehreren wichtigen Figuren der Kampagne verbunden.
+Die [Sanddorn](/locations/sanddorn.md)-Inseln sind ein tropisches Inselgebiet, das aus mehreren Inseln besteht. Die Hauptinsel trägt ebenfalls den Namen Sanddorn und beherbergt die gleichnamige Stadt beziehungsweise das Dorf Sanddorn, in dem ein Problem aufgetreten ist, das die Aufmerksamkeit der [Gilde](/factions/gilde_von_ehrenfels.md) auf sich gezogen hat. Die Inseln liegen in der Nähe von [Tarkia](/locations/tarkia.md) und sind bekannt für ihre Piraten sowie für ihre ungewöhnliche Flora, insbesondere das vermehrte Pilzwachstum. Von den Sanddorn-Inseln werden exotische Waren wie Fische, Muscheln und Austern importiert, die auf dem Festland als Delikatessen gelten.
 
 ## Rolle in der Kampagne
 
-Die Sanddorn-Inseln tauchen in der Kampagne an mehreren Stellen als Handlungsort auf. Bereits einer der ersten Aufträge, den die Gruppe annahm, führte sie auf die Inseln – damals reisten die Helden mit einem Piratenschiff dorthin. Dieser frühe Auftrag wird in der Runde als gemeinsame Erinnerung aufgegriffen, als Lunara später ihre Herkunft offenbart.
+Die Sanddorn-Inseln waren das Ziel eines der ersten Aufträge, die die Gruppe von der Gilde annahm. Die Gilde beauftragte die Gruppe, die Inseln zu erkunden, weil es ein Problem im Dorf Sanddorn gab. Die Gruppe reiste mit dem Gildenschiff unter eigener Flagge, begleitet von fünf NPCs, zu den Inseln. Dieser frühe Auftrag war einer von mehreren, die der Gilde vorlagen; die Alternativen waren ein diplomatischer Besuch beim neuen Vampirfürsten oder eine geheime, nicht von der Gilde stammende Mission, den Vampirfürsten zu beseitigen. Die Gruppe entschied sich gegen die geheime Mission und für die Reise zu den Sanddorn-Inseln.
 
-In der Session vom 30. April 2025 erhalten die Helden von der Gilde den Auftrag, die Sanddorninseln zu erkunden, weil im Dorf von Sanddorn ein Problem stattfindet. Die Gruppe entscheidet sich für diese Mission und bricht mit dem Gildenschiff unter eigener Flagge auf, begleitet von fünf NPCs. Die alternativen Missionen – ein diplomatischer Besuch beim neuen Vampirfürsten sowie eine geheime, nicht von der Gilde stammende Mission zur Ermordung desselben – werden von der Gruppe abgelehnt und sind damit nicht mehr verfügbar.
-
-Später, in der Session vom 12. August 2026, wird die Gruppe erneut mit den Inseln konfrontiert: Sie soll nach Salzbach reisen und von dort aus weiter zu den Sanddorn-Inseln, um Jorah Vanur zu treffen, der sich zu diesem Zeitpunkt allerdings bereits in Ehrenfeld aufhält.
+Später erweist sich die Region als persönlich bedeutsam: Sie ist der Geburtsort von [Lunara Velora](/characters/lunara_velora.md), die in einem Inseldorf auf den Sanddorn-Inseln geboren wurde. Zudem ist [Jorah Vanur](/npcs/joar_vanur.md) der Herr über einen Teil der Inseln, und die Gruppe soll nach [Salzbach](/locations/salzbach.md) reisen und von dort aus weiter zu den Inseln.
 
 ## Wichtige Merkmale
 
 ### Lage und Beschaffenheit
 
-Die Sanddorn-Inseln liegen in der Nähe von Tarkia. Es handelt sich um ein tropisches Inselgebiet mit mehreren Inseln; die Hauptinsel heißt Sanddorn und trägt eine Stadt beziehungsweise ein Dorf gleichen Namens. Die genaue geografische Ausdehnung und die Anzahl der Inseln werden in den Belegen nicht näher ausgeführt.
+Die Sanddorn-Inseln sind ein tropisches Inselgebiet in der Nähe von Tarkia. Sie bestehen aus mehreren Inseln, wobei die Hauptinsel Sanddorn die Stadt beziehungsweise das Dorf Sanddorn trägt. Die Inseln sind bekannt für ihre ungewöhnliche Flora, insbesondere das vermehrte Pilzwachstum, das als Problem im Dorf Sanddorn thematisiert wird.
 
-### Flora
+### Bewohner und Kultur
 
-Auffälligstes natürliches Merkmal der Inseln ist ihre ungewöhnliche Flora, insbesondere das vermehrte Pilzwachstum. Worauf dieses Pilzwachstum zurückzuführen ist und welche Bedeutung es für die Bewohner hat, wird in den vorliegenden Belegen nicht erläutert.
+Die Region ist bekannt für Piraten. Auf den Inseln leben unter anderem Tidekin, wie Lumaras Vater, der ein Tidekin war. Lunara beschreibt, dass sie in einem Inseldorf geboren wurde, aber fern von Städten in einem abgeschotteten Hexenzirkel aufwuchs, was darauf hindeutet, dass die Inseln auch abgelegene, von der städtischen Bevölkerung getrennte Gemeinschaften beherbergen.
 
-### Bewohner und Ruf
+### Wirtschaft und Handel
 
-Die Inseln sind bekannt für Piraten. Zudem leben dort Menschen wie Lunara Velora, die in einem Inseldorf geboren wurde, und Jorah Vanur, der als Herr über einen Teil der Inseln fungiert. Die genaue politische Struktur der Inseln – etwa ob Jorah Vanur ein offizielles Amt innehat oder lediglich als lokaler Machthaber gilt – bleibt in den Belegen offen.
+Von den Sanddorn-Inseln werden exotische Waren importiert, die auf dem Festland als Delikatessen gelten. Ein Händler in [Willauch](/locations/willauch.md) bietet diese Waren an: Fische, Muscheln, Austern und „alles mögliche, was man so halt nicht am Land bekommt“. Ein besonders auffälliges Produkt ist ein „sehr, sehr strange aussehender Fisch“, der gut gekühlt in einer Eisschale präsentiert wird und in Tarkia als Delikatesse gilt. [Dodo](/characters/dodo.md) erkennt diesen Fisch und hat ihn vermutlich schon einmal gegessen oder gefangen.
 
 ## Beziehungen und Verbindungen
 
-### Lunara Velora
+### Zu Tarkia
 
-Lunara Velora wurde in einem Inseldorf auf den Sanddorn-Inseln geboren. Ihr Vater war ein Tidekin, weshalb sie unter Wasser atmen kann. Allerdings betont Lunara selbst, dass sie wenig mit ihrem Vater oder den Inseln gemein habe: Ihre Mutter war Hexe, und Lunara wuchs in einem Hexenzirkel namens Die Nachtwächterinnen auf, der fernab von Städten und abgeschottet lebte und mit Schatten und Mondlicht arbeitete. Vor einigen Monaten wurde der Zirkel aufgelöst, und Lunara musste ihn verlassen. Seitdem ist sie auf Reisen und hat auf diesen Reisen von der Heldengruppe erfahren. Ihre Verbindung zu den Inseln ist also eher eine biografische Herkunft als eine aktive Bindung.
+Die Sanddorn-Inseln liegen in der Nähe von Tarkia. Die Verbindung ist wirtschaftlich bedeutsam: Exotische Waren von den Inseln werden in Städten wie Willauch gehandelt, und der strange aussehende Fisch ist eine bekannte Delikatesse in Tarkia.
 
-### Jorah Vanur
+### Zu Lunara Velora
 
-Jorah Vanur ist der Herr von einem Teil der Sanddorn-Inseln. Er ist eine bekannte Figur für einige Mitglieder der Gruppe: Dodo und Lindo Laut kennen ihn bereits von früheren Begegnungen, und auch Esterossa war bei einem früheren Aufenthalt auf den Inseln dabei. Vanur kennt die Gruppe als „die Freunde von Rotunas, dem Helden des Dorfes“ und begegnet ihnen mit großer Hochachtung. In der Session vom 12. August 2026 trifft die Gruppe ihn in Ehrenfeld, wo er mit Liam an einem Tisch sitzt und enthusiastisch mit ihm spricht. Er begrüßt jeden der Helden persönlich mit Handschlag.
+Lunara Velora wurde in einem Inseldorf auf den Sanddorn-Inseln geboren. Ihr Vater war ein Tidekin, weshalb sie unter Wasser atmen kann. Sie betont jedoch, dass sie „eigentlich nichts mit [ihrem] Vater gemein oder eigentlich auch mit diesen ganzen Inseln“ habe, da sie in einem Hexenzirkel aufwuchs, der fern von Städten lebte. Der Zirkel, die [Nachtwächterinnen](/factions/nachtwaechterinnen.md), wurde vor einigen Monaten aufgelöst, woraufhin Lunara die Inseln verließ.
 
-### Die Gilde
+### Zu Jorah Vanur
 
-Die Gilde vergibt den Auftrag, die Sanddorninseln zu erkunden, nachdem die Gruppe ihre vorherige Mission abgeschlossen hat. Die Mission wird als „etwas sehr Neutrales“ beschrieben, was darauf hindeutet, dass sie weniger gefährlich oder politisch heikel ist als die alternativen Aufträge.
+[Jorah](/deities/jorah.md) Vanur ist der Herr über einen Teil der Sanddorn-Inseln. Er wird als bekanntes Gesicht beschrieben, das die Gruppe in Ehrenfeld trifft. Er kennt Dodo und [Lindo Laut](/characters/lindo_laut.md) bereits von früheren Begegnungen, während Lunara und [Gunther](/characters/gunther.md) ihm nicht bekannt sind. Er bezeichnet die Gruppe als „die Freunde von [Rotunas](/characters/rotunas.md), dem Helden des Dorfes“ und behandelt sie entsprechend respektvoll. Die Gruppe soll nach Salzbach reisen und von dort aus weiter zu den Inseln, was darauf hindeutet, dass eine Reise dorthin ansteht.
 
 ## Chronologie
 
-### Erster Auftrag (vor der dokumentierten Kampagne)
+### Erste Mission (vor Session 2025-04-30)
 
-Einer der ersten Aufträge, die die Gruppe annahm, führte sie auf die Sanddorn-Inseln. Die Helden reisten damals mit einem Piratenschiff dorthin. Bei diesem Aufenthalt waren Dodo, Lindo Laut und Esterossa dabei; Lunara war nicht anwesend. Es ist auch der Zeitpunkt, zu dem Esterossa Ajani aufnahm, wobei die Gruppe dies nicht miterlebte.
+Die Gruppe kehrt von einer abgeschlossenen Mission in die Stadt zurück und wird von der Gilde gefeiert. Die Gilde hat mehrere neue Aufträge erhalten, darunter die Erkundung der Sanddorninseln wegen eines Problems im Dorf Sanddorn. Die Gruppe entscheidet sich für diesen Auftrag und gegen die geheime Mission, den Vampirfürsten zu beseitigen. Sie reist mit dem Gildenschiff, begleitet von fünf NPCs, zu den Inseln.
 
-### Mission der Gilde (Session 2025-04-30)
+### Erwähnung im Gespräch mit Lunara (Session 2025-11-18)
 
-Nach Abschluss einer vorherigen Mission – bei der die Gruppe unter anderem einen Vampir bei Tageslicht besiegte und dafür vier Handvoll Gold erhielt – kehren die Helden zur Gilde zurück und werden gefeiert. Die Gilde hat mehrere neue Aufträge erhalten: die Erkundung der Sanddorninseln wegen eines Problems im Dorf Sanddorn, einen diplomatischen Besuch beim neuen Vampirfürsten und eine geheime Mission zur Ermordung des Vampirfürsten. Die Gruppe entscheidet sich für die Sanddorninseln. Sie reist mit dem Gildenschiff unter eigener Flagge, begleitet von fünf NPCs.
+Lunara erzählt der Gruppe, dass sie in einem Inseldorf auf den Sanddorn-Inseln geboren wurde. Die Gruppe erkennt die Inseln wieder: Der erste Auftrag, den sie angenommen hatten, führte sie dorthin. Dodo ergänzt, dass die Inseln in der Nähe von Tarkia liegen.
 
-### Lunnaras Offenbarung (Session 2025-11-18)
+### Handel in Willauch (Session 2026-03-03)
 
-Lunara Velora, die sich der Gruppe angeschlossen hat, offenbart ihre Herkunft: Sie wurde in einem Inseldorf auf den Sanddorn-Inseln geboren. Die Gruppe erkennt die Inseln wieder, da sie dort bereits ihren ersten Auftrag absolviert hatte. Lunara erzählt von ihrem Vater, einem Tidekin, und ihrer Mutter, einer Hexe, sowie vom aufgelösten Hexenzirkel der Nachtwächterinnen.
+In Willauch bietet ein Händler exotische Waren aus den Sanddorn-Inseln an. Die Gruppe kauft einen strange aussehenden Fisch, den Dodo als Delikatesse aus Tarkia erkennt.
 
 ### Begegnung mit Jorah Vanur (Session 2026-08-12)
 
-Nach dem Aufenthalt in Abyssalis und einem Abend in Ehrenfeld trifft die Gruppe im Wirtshaus auf Liam, der mit Jorah Vanur an einem Tisch sitzt. Vanur erkennt Dodo und Lindo Laut wieder und begrüßt die gesamte Gruppe als Helden und Freunde von Rotunas. Er schüttelt jedem die Hand. Die Gruppe soll laut Auftrag nach Salzbach reisen und von dort aus weiter zu den Sanddorn-Inseln – Vanur ist jedoch bereits in Ehrenfeld angekommen, sodass die Reise möglicherweise nicht mehr nötig ist.
+In Ehrenfeld trifft die Gruppe auf Jorah Vanur, den Herrn über einen Teil der Sanddorn-Inseln, der mit [Liam](/npcs/liam_velora.md) an einem Tisch sitzt. Er begrüßt die Gruppe als Helden und Freunde von Rotunas. Die Gruppe soll nach Salzbach reisen und von dort aus weiter zu den Inseln, was eine bevorstehende Reise dorthin ankündigt.
 
 ## Offene Fragen
 
-- Welches Problem genau im Dorf von Sanddorn die Erkundungsmission der Gilde ausgelöst hat, wird in den Belegen nicht genannt.
-- Worauf das vermehrte Pilzwachstum auf den Inseln zurückzuführen ist, bleibt ungeklärt.
-- Welche Rolle Jorah Vanur als „Herr von einem Teil“ der Inseln genau innehat und wie die politische Struktur der Inselgruppe aussieht, wird nicht ausgeführt.
-- Ob die Gruppe nach der Begegnung mit Vanur in Ehrenfeld tatsächlich noch nach Salzbach und zu den Inseln reisen wird, ist offen.
-- Die genaue Verbindung zwischen dem Piratenruf der Inseln und dem früheren Auftrag der Gruppe (Reise mit einem Piratenschiff) wird nicht erläutert.
+- Welches Problem genau im Dorf Sanddorn die Gilde zur Beauftragung der Gruppe veranlasst hat, wird in den Belegen nicht näher ausgeführt. Der Zusammenhang mit dem vermehrten Pilzwachstum liegt nahe, ist aber nicht explizit belegt.
+- Was die Gruppe bei ihrer ersten Mission auf den Sanddorn-Inseln erlebt hat, ist nicht dokumentiert — die Belege erwähnen nur, dass der Auftrag angenommen und die Reise angetreten wurde.
+- Welche Rolle Jorah Vanur bei der bevorstehenden Reise der Gruppe zu den Inseln spielen wird, ist offen. Die Belege nennen Salzbach als Zwischenstation, aber nicht den Zweck der Reise.
+- Inwiefern Lumaras Herkunft von den Inseln und ihre Verbindung zum aufgelösten Hexenzirkel der Nachtwächterinnen für die Kampagne relevant wird, ist ungeklärt.
 
 ## Belege
 
-1. Session 2025-04-30, 00:03:00 – https://www.youtube.com/watch?v=fsCOiSkKKTE
-2. Session 2025-11-18, 00:35:10 – https://www.youtube.com/watch?v=w__ahowb9p0
-3. Session 2026-08-12, 01:13:33 – https://www.youtube.com/watch?v=piUv11DCwDw
+1. Session 2025-04-30 @ 00:03:00 (https://www.youtube.com/watch?v=fsCOiSkKKTE)
+2. Session 2025-11-18 @ 00:35:10 (https://www.youtube.com/watch?v=w__ahowb9p0)
+3. Session 2026-03-03 @ 00:12:14 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
+4. Session 2026-08-12 @ 01:13:33 (https://www.youtube.com/watch?v=piUv11DCwDw)

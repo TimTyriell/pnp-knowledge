@@ -10,7 +10,7 @@ id: EVENT_NOX_ERKLAERT_DIE_DAEMONEN
 subtype: Entdeckung
 ---
 
-Nach dem Kampf erklärt Nox der Gruppe die Herkunft der [Dämonen](/factions/daemonen.md) und die Bedeutung des Portals. Er erwähnt die alten Götter und die Notwendigkeit, sie zu studieren.
+Nach dem Kampf erklärt Nox der Gruppe die Herkunft der [Dämonen](/factions/daemonen.md) und die Bedeutung des [Portals](/locations/portal.md). Er erwähnt die alten Götter und die Notwendigkeit, sie zu studieren.
 
 # Belege
 

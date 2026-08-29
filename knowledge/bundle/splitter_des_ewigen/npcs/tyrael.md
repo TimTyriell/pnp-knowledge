@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Tyrael
-description: Tyrael ist ein untoter Magier (Lich) und mächtiger Zauberer, der in der
-  Welt der Kampagne als Kämpfer in der Arena von Willock bekannt ist.…
+description: Tyrael ist ein untoter Magier und Lich von beträchtlicher Macht, der
+  in der Welt der Kampagne als eigenwillige und schwer einzuordnende Ges…
 tags:
 - npcs
 timestamp: '2026-06-16T00:00:00Z'
@@ -11,78 +11,57 @@ id: NPC_TYRAEL
 
 ## Überblick
 
-Tyrael ist ein untoter Magier (Lich) und mächtiger Zauberer, der in der Welt der Kampagne als Kämpfer in der Arena von Willock bekannt ist. Er ist ein Freund von Bosa, mit dem er gemeinsam auftritt. Tyrael hat am Krieg der Götter teilgenommen und besitzt dadurch profundes Wissen über die alten Götter, Abyssalis und die Gefängniswelt-Theorie. Er ist zudem der Autor eines Buches über den Gott Vhar'Zul, das er über einen langen Zeitraum verfasst hat. Seine Untoten-Natur macht ihn zu einer außergewöhnlichen Wissensquelle: Da er nicht stirbt, erstreckt sich seine Erinnerung über Jahrzehnte, einschließlich der letzten zwölf Jahre und der Zeit davor.
+Tyrael ist ein untoter Magier und Lich von beträchtlicher Macht, der in der Welt der Kampagne als eigenwillige und schwer einzuordnende Gestalt auftritt. Er ist mit [Bosa](/npcs/bosa.md) befreundet, einem weiteren Magier, und hat am [Krieg](/characters/krieg.md) der Götter teilgenommen. Tyrael verfügt über profundes Wissen über die alten Götter, die Gefängniswelt [Abyssalis](/domains/splitterwelt.md) und die Seelenmagie. Er tritt in der Kampagne als zwiespältige Figur auf: Einerseits warnt er die Gruppe vor einem Dämon in [Lindo Laut](/characters/lindo_laut.md) und bietet Schutz an, andererseits hütet er sein Wissen eifersüchtig und gibt es nur dosiert preis. Er ist der Autor eines Buches über den Gott [Vhar'Zul](/deities/vharzul.md) und ein Anhänger dieses Gottes.
 
 ## Rolle in der Kampagne
 
-Tyrael begegnet der Gruppe erstmals in einer Nacht, als er gemeinsam mit Bosa auftritt. In dieser Begegnung erweist er sich als warnende Stimme: Er spürt den Dämon in Lindo Laut und richtet seinen Stab auf ihn, um die Gruppe auf die Gefahr aufmerksam zu machen. Seine Fähigkeit, den Dämon in Lindo Laut wahrzunehmen, zeigt seine magische Sensibilität und Macht.
+Tyrael begegnet der Gruppe erstmals in einer magischen Arena, wo er gemeinsam mit Bosa an magischen Kämpfen teilnimmt. Bei dieser ersten Begegnung richtet er seinen [Stab](/items/lindo_lauts_stab.md) unvermittelt auf Lindo Laut und hält ihn mit einem Zauber fest, da er den Dämon in ihm spürt. Er warnt die Gruppe vor diesem Dämon und bietet ihnen einen Schutzbrei an, bevor er wieder verschwindet.
 
-Später wird Tyrael von Lindo Laut als mögliche Wissensquelle über die alten Götter und Abyssalis ins Spiel gebracht. Lindo Laut vermutet, dass Tyrael für einen der alten Götter gekämpft hat und dass Abyssalis zu Vhar'Zul gehört. Diese Information wird für die Gruppe relevant, als sie nach Wegen sucht, aus Abyssalis zu entkommen und die Gefängniswelt-Theorie zu überprüfen.
+In der Folge wird Tyrael für die Gruppe zu einer wichtigen potenziellen Wissensquelle. Lindo Laut erwähnt ihn mehrfach als möglichen Ansprechpartner, wenn es um die alten Götter und Abyssalis geht. Da Tyrael untot ist, hat er die letzten zwölf Jahre und die Zeit davor miterlebt und könnte Aufschluss über Ereignisse geben, die anderen Lebenden verborgen sind. Die Gruppe erwägt, über ihn einen Weg aus Abyssalis zu finden.
 
-In einer weiteren Session wird Tyrael als Autor eines Buches über Vhar'Zul identifiziert. Er beschreibt den Gott nicht negativ und hat das Werk über einen langen Zeitraum verfasst. Zudem hat Tyrael Abyssalis persönlich besucht und die Städte dort erkundet, was sein Wissen über die Gefängniswelt besonders wertvoll macht.
+Später stellt sich heraus, dass Tyrael der Autor eines Buches über Vhar'Zul ist, das die Gruppe in die Hände bekommen hat. Er ist damit eine direkte Quelle für das Wissen über diesen alten Gott und die Seelenmagie.
 
 ## Wichtige Merkmale
 
-### Untoter Magier
-Tyrael ist ein Lich, also ein untotes Wesen. Seine Untoten-Natur wird von anderen als "nekrotisches Wesen" beschrieben. Sie ermöglicht ihm, über lange Zeiträume Wissen anzusammeln und Erinnerungen zu bewahren, die lebenden Wesen verwehrt bleiben. Wie ein Gesprächspartner es formuliert: "Er wird sicherlich die letzten zwölf Jahre und davor wissen."
+Tyrael ist ein Lich, also ein untotes Wesen von großer magischer Macht. Er wird als „sehr, sehr mächtiger Zauberer" beschrieben. Seine Fähigkeit, Lindo Laut allein durch eine Geste mit seinem Stab zu immobilisieren, zeigt seine magische Überlegenheit. Er kann Zauber wirken, die andere Wesen vollständig bewegungsunfähig machen, und verfügt über die Gabe, [Dämonen](/factions/daemonen.md) in anderen zu erspüren.
 
-### Mächtiger Zauberer
-Tyrael demonstriert seine magische Macht eindrucksvoll, als er Lindo Laut mit einem einzigen Zauber immobilisiert. Die Gruppe merkt sofort, dass er ein "sehr, sehr mächtiger Zauberer" ist. Er trägt einen Stab, den er als Fokus für seine Magie einsetzt.
+Sein Auftreten ist distanziert und berechnend. Er spricht mit leiser Stimme und beobachtet seine Gegenüber genau. Er ist kein Freund großer Worte, sondern handelt direkt — etwa, indem er Lindo Laut sofort festsetzt, statt lange zu erklären. Gleichzeitig zeigt er sich kooperativ, wenn es ihm nützt: Er warnt die Gruppe vor dem Dämon und bietet Schutz an.
 
-### Wahrnehmungsfähigkeit
-Tyrael kann Dämonen spüren, selbst wenn sie in anderen Wesen verborgen sind. Diese Fähigkeit zeigt sich, als er den Dämon in Lindo Laut erkennt und die Gruppe davor warnt.
-
-### Autor und Gelehrter
-Tyrael hat ein Buch über Vhar'Zul verfasst, das er über einen langen Zeitraum geschrieben hat. Seine Darstellung des Gottes ist nicht negativ, was darauf hindeutet, dass er dem Gott wohlgesonnen oder zumindest neutral gegenübersteht. Er hat Abyssalis besucht und die Städte dort erkundet, was ihn zu einem der wenigen lebenden (oder untoten) Augenzeugen dieser Gefängniswelt macht.
-
-### Auftreten
-Tyrael tritt in Begleitung von Bosa auf, der die Gruppe anspricht und Tyrael vorstellt. Er ist offenbar eine respektierte oder zumindest bekannte Figur, deren Name in bestimmten Kreisen Anerkennung findet.
+Tyrael hütet sein Wissen eifersüchtig. In seinem Buch über Vhar'Zul hat er eine Zutat in einem Rezept absichtlich ausgelassen, um das Wissen für sich zu behalten. Er beschreibt Vhar'Zul aus einer positiven Perspektive und gibt Anleitungen zur Seelenmagie — allerdings offenbar nicht vollständig.
 
 ## Beziehungen und Verbindungen
 
-### Bosa
-Tyrael ist mit Bosa befreundet und tritt gemeinsam mit ihm auf. Bosa stellt Tyrael der Gruppe vor und fungiert offenbar als eine Art Vermittler oder Begleiter.
+**Bosa:** Tyrael ist mit dem Magier Bosa befreundet. Die beiden treten gemeinsam in der magischen Arena auf und werden von der Gruppe als Einheit wahrgenommen („Tyrael und Bosa").
 
-### Lindo Laut
-Lindo Laut kennt Tyrael und erwähnt ihn mehrfach als mögliche Wissensquelle. Er bringt Tyraels Namen ins Gespräch, wenn es um die alten Götter und Abyssalis geht. Lindo Laut scheint Tyrael als vertrauenswürdige Autorität in diesen Fragen zu betrachten.
+**Vhar'Zul:** Tyrael ist ein Anhänger des Gottes Vhar'Zul und hat dessen Buch verfasst. Er kennt Vhar'Zul als bekannten Gott und gibt einige Informationen über ihn preis. Er hat am Krieg der Götter teilgenommen, in dem auch Vhar'Zul eine Rolle gespielt haben dürfte.
 
-### Vhar'Zul
-Tyrael ist ein Anhänger des Gottes Vhar'Zul und hat ein Buch über ihn verfasst. Er beschreibt den Gott nicht negativ und hat offenbar tiefe Einblicke in dessen Wesen und Wirken. Tyrael vermutet, dass Abyssalis zu Vhar'Zul gehört.
+**Lindo Laut:** Tyrael spürt den Dämon in Lindo Laut und warnt die Gruppe davor. Lindo Laut wiederum sieht in Tyrael eine wichtige Wissensquelle und erwähnt ihn mehrfach gegenüber anderen.
 
-### Die alten Götter
-Tyrael hat am Krieg der Götter teilgenommen und für einen der alten Götter gekämpft. Dieses Detail macht ihn zu einer wichtigen Quelle für Informationen über diese längst vergangene Ära.
+**Valsor:** Tyrael kennt Valsor, was auf eine Verbindung oder zumindest Bekanntschaft aus der Zeit des Krieges der Götter hindeutet.
 
-### Valsor
-Tyrael kennt Valsor, was auf eine Verbindung oder zumindest Bekanntschaft mit dieser Figur hindeutet.
-
-### Tatrick
-In einer späteren Begegnung erwähnt Lindo Laut Tyraels Namen gegenüber Tatrick, der sich jedoch nicht an ihn erinnern kann. Ein Wächter kennt Tyrael jedoch als einen Entflohenen, was darauf hindeutet, dass Tyrael aus einer Gefangenschaft oder einem bestimmten Ort entkommen ist.
+**[Tatrick](/npcs/tatrick.md):** [Der Wächter](/npcs/der_waechter.md) Tatrick kennt Tyrael als einen Entflohenen, erinnert sich aber nicht an ihn, als Lindo Laut nachfragt. Diese Bezeichnung als „Entflohener" deutet darauf hin, dass Tyrael aus irgendeiner Gefangenschaft oder einem Gefängnis entkommen ist — möglicherweise aus Abyssalis selbst.
 
 ## Chronologie
 
-### Erste Begegnung (Session 2025-10-14)
-Tyrael erscheint gemeinsam mit Bosa in einer Nacht, als die Gruppe ihr Lager aufschlagen will. Bosa stellt sich und Tyrael vor. Tyrael richtet sofort seinen Stab auf Lindo Laut und immobilisiert ihn mit einem Zauber. Er spricht von einem Dämon in Lindo Laut und lässt den Zauber wieder los. Die Gruppe erkennt seine Macht. Tyrael bietet einen Schutzbrei an und verschwindet später wieder.
+**Session 2025-10-14:** Die Gruppe trifft Tyrael in der magischen Arena, wo er mit Bosa an magischen Kämpfen teilnimmt. Er richtet seinen Stab auf Lindo Laut, hält ihn mit einem Zauber fest und spricht mit leiser Stimme von einem Dämon in ihm. Er lässt den Zauber wieder los und erweist sich als sehr mächtiger Zauberer. Er warnt die Gruppe, bietet einen Schutzbrei an und verschwindet später. Es wird erwähnt, dass er am Krieg der Götter teilgenommen hat und Valsor kennt.
 
-### Erwähnung als Wissensquelle (Session 2026-02-17)
-Lindo Laut erwähnt Tyrael gegenüber einem Gesprächspartner als mögliche Wissensquelle. Er beschreibt ihn als untoten Magier, der in der Arena von Willock gekämpft hat. Lindo Laut vermutet, dass Tyrael für einen der alten Götter gekämpft hat und dass Abyssalis zu Vhar'Zul gehört. Der Gesprächspartner bestätigt, dass Tyrael als untotes Wesen sicherlich Wissen über die letzten zwölf Jahre und die Zeit davor besitzt.
+**Session 2026-02-17:** Lindo Laut fragt in einem Gespräch nach Tyrael. Er wird als untoter Magier beschrieben, der in der Arena von Willock gekämpft hat. Lindo Laut vermutet, dass Tyrael viel Wissen besitzt, da er untot ist und die letzten zwölf Jahre und davor miterlebt hat. Er glaubt, dass Tyrael für einen der alten Götter gekämpft hat und davon ausgeht, dass Abyssalis zu Vhar'Zul gehört. Die Gruppe erwägt, über Tyrael einen Weg aus Abyssalis zu finden.
 
-### Identifizierung als Autor (Session 2026-03-03)
-Tyrael wird als Autor des Buches über Vhar'Zul identifiziert. Er hat das Buch über einen langen Zeitraum verfasst und beschreibt den Gott nicht negativ. Zudem hat Tyrael Abyssalis besucht und die Städte dort erkundet.
+**Session 2026-03-03:** Es stellt sich heraus, dass Tyrael der Autor des Buches über Vhar'Zul ist. Er beschreibt Vhar'Zul aus einer positiven Perspektive und gibt Anleitungen zur Seelenmagie. Er hat das Buch vor kurzem beendet und eine Zutat in einem Rezept absichtlich ausgelassen, um das Wissen für sich zu behalten.
 
-### Erwähnung gegenüber Tatrick (Session 2026-06-16)
-Lindo Laut fragt Tatrick, ob er Tyrael kennt. Tatrick erinnert sich nicht an ihn. Ein Wächter kennt Tyrael jedoch als einen Entflohenen, was neue Fragen über Tyraels Vergangenheit aufwirft.
+**Session 2026-06-16:** Lindo Laut fragt Tatrick, ob er Tyrael kenne. Tatrick erinnert sich nicht an ihn, aber der Wächter kennt Tyrael als einen Entflohenen. Diese Information bleibt vage — es wird nicht klar, woraus oder woran Tyrael entflohen ist.
 
 ## Offene Fragen
 
-- Was genau bedeutet es, dass Tyrael als "Entflohener" bezeichnet wird? Aus welcher Gefangenschaft oder welchem Ort ist er entkommen?
-- Warum erinnert sich Tatrick nicht an Tyrael, obwohl dieser offenbar eine bekannte Figur ist?
-- Welche Informationen über Vhar'Zul enthält Tyraels Buch, und wie verhält sich seine wohlwollende Darstellung zur allgemeinen Wahrnehmung des Gottes?
-- Was hat Tyrael während seines Besuchs in Abyssalis genau gesehen und erfahren?
-- Welche Rolle spielte Tyrael im Krieg der Götter, und für welchen der alten Götter hat er gekämpft?
+- Woraus ist Tyrael entflohen? Die Bezeichnung als „Entflohener" durch den Wächter bleibt ungeklärt.
+- Welche Rolle hat Tyrael im Krieg der Götter gespielt, und für welchen alten Gott hat er gekämpft?
+- Warum hat Tyrael die Zutat in seinem Rezept absichtlich ausgelassen, und was bewirkt das vollständige Rezept?
+- In welchem Verhältnis steht Tyrael zu Vhar'Zul — ist er nur Anhänger oder hat er eine tiefere Verbindung zu dem Gott?
+- Wo hält sich Tyrael derzeit auf, und ist er für die Gruppe erreichbar?
 
 ## Belege
 
-[P-26] Session 2025-10-14 @ 01:24:39 (https://www.youtube.com/watch?v=cUtz87UCHu4) – Erste Begegnung mit Tyrael und Bosa, Tyrael spürt den Dämon in Lindo Laut, warnt die Gruppe, bietet Schutzbrei an.
-[P-37] Session 2026-02-17 @ 01:38:09 (https://www.youtube.com/watch?v=Z2jlzpoTWVw) – Lindo Laut erwähnt Tyrael als untoten Magier und mögliche Wissensquelle über die alten Götter und Abyssalis.
-[P-39] Session 2026-03-03 @ 00:21:46 (https://www.youtube.com/watch?v=BRUNuNKTeOg) – Tyrael wird als Autor des Buches über Vhar'Zul identifiziert, Anhänger des Gottes, hat Abyssalis besucht.
-[P-54] Session 2026-06-16 @ 00:26:41 (https://www.youtube.com/watch?v=qe0ck8hvYpk) – Lindo Laut erwähnt Tyrael gegenüber Tatrick, der sich nicht erinnert; der Wächter kennt Tyrael als Entflohenen.
+[P-26] Session 2025-10-14 @ 01:24:39 (https://www.youtube.com/watch?v=cUtz87UCHu4)
+[P-37] Session 2026-02-17 @ 01:38:09 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
+[P-39] Session 2026-03-03 @ 00:21:46 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
+[P-54] Session 2026-06-16 @ 00:26:41 (https://www.youtube.com/watch?v=qe0ck8hvYpk)

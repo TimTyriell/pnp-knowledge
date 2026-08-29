@@ -10,7 +10,7 @@ id: EVENT_ZERSTOERUNG_DER_STATUE
 subtype: Kampf
 ---
 
-Lunara beschwört Ketten, um die Statue umzuwerfen, was sie in zwei Teile zerbricht. Dabei wird ein grüner [Kristall](/items/kristall.md) freigelegt, der von [Dodo](/characters/dodo.md) zerstört wird, was zu einer Explosion führt.
+Lunara beschwört Ketten, um die Statue umzuwerfen, was sie in zwei Teile zerbricht. Dabei wird ein grüner [Kristall](/items/gruener_kristall.md) freigelegt, der von [Dodo](/characters/dodo.md) zerstört wird, was zu einer Explosion führt.
 
 # Belege
 

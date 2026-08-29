@@ -12,14 +12,14 @@ subtype: Schriftstück
 
 # Buch mit Namen
 
-Das **Buch mit Namen** ist ein Buch, das eine Liste von Namen enthält. Es wurde in einer Krypta entdeckt und gelangte durch [Lindo Laut](/characters/lindo_laut.md), der es aus einer Höhle mitgenommen hatte, in den Besitz der Gruppe. Mithilfe eines Eintrags konnte die Gruppe in einer Krypta den richtigen Sarg identifizieren.
+Das **Buch mit Namen** ist ein Buch, das eine Liste von Namen enthält. Es wurde in einer [Krypta](/locations/krypta.md) entdeckt und gelangte durch [Lindo Laut](/characters/lindo_laut.md), der es aus einer Höhle mitgenommen hatte, in den Besitz der Gruppe. Mithilfe eines Eintrags konnte die Gruppe in einer Krypta den richtigen Sarg identifizieren.
 
 ## Einträge
 
 Das Buch verzeichnet eine Liste von Namen. Belegt sind:
 
-- **Grog** und **Greg** – die letzten beiden Einträge; sie waren frisch.
-- **Voras der Schrecken** (Voras der Schrecken) – dieser Name half der Gruppe, den richtigen Sarg zu bestimmen.
+- **Grog** und **[Greg](/npcs/greg.md)** – die letzten beiden Einträge; sie waren frisch.
+- **[Voras](/npcs/voras.md) der Schrecken** (Voras der Schrecken) – dieser Name half der Gruppe, den richtigen Sarg zu bestimmen.
 
 ## Rolle und Verlauf
 

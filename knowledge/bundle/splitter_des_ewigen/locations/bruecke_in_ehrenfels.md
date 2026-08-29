@@ -10,7 +10,7 @@ id: LOC_BRUECKE_IN_EHRENFELS
 subtype: Sonstiges
 ---
 
-Die Brücke ist ein strategischer Punkt, den die Gruppe überqueren muss, um zum Portal zu gelangen. Sie wird von [Dämonen](/factions/daemonen.md) angegriffen, aber die Gruppe kann sie überqueren.
+Die Brücke ist ein strategischer Punkt, den die Gruppe überqueren muss, um zum [Portal](/locations/portal.md) zu gelangen. Sie wird von [Dämonen](/factions/daemonen.md) angegriffen, aber die Gruppe kann sie überqueren.
 
 # Belege
 

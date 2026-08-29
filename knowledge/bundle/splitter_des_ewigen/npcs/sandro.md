@@ -11,11 +11,11 @@ id: NPC_SANDRO
 
 ## Überblick
 
-Sandro ist ein mächtiger Magier und Verbündeter von [Voras](/npcs/voras.md), der die Gruppe durch die Splitterwelt führt und sie auf ihrem Weg nach Abyssalis begleitet. Er wird als „sehr komische Gestalt“ mit lila Augen beschrieben, die vor der Gruppe steht. Sandro unterstützt die Gruppe mehrfach mit seinen magischen Fähigkeiten, sowohl beim Durchqueren der Splitterwelt als auch im Kampf gegen Dämonen. Er findet schließlich den Tod, als er von [Nerash](/deities/nerash.md) durch die Luft geschleudert wird.
+Sandro ist ein mächtiger Magier und Verbündeter von [Voras](/npcs/voras.md), der die Gruppe durch die [Splitterwelt](/domains/splitterwelt.md) führt und sie auf ihrem Weg nach Abyssalis begleitet. Er wird als „sehr komische Gestalt“ mit lila Augen beschrieben, die vor der Gruppe steht. Sandro unterstützt die Gruppe mehrfach mit seinen magischen Fähigkeiten, sowohl beim Durchqueren der Splitterwelt als auch im Kampf gegen [Dämonen](/factions/daemonen.md). Er findet schließlich den Tod, als er von [Nerash](/deities/nerash.md) durch die Luft geschleudert wird.
 
 ## Rolle in der Kampagne
 
-Sandro dient der Gruppe als Führer und magischer Unterstützer. In der ersten Begegnung führt er die Gruppe durch ein Portal, das sie von der Splitterwelt aus sehr nah nach Abyssalis bringt. Der GM beschreibt: „Dieses Portal bringt euch sehr nah bereits nach Abyssalis. Zumindest auf der Splitterwelt. Wir haben bereits öfter mal einige Exkurse dorthin geleitet, um euch bereits den Weg ein wenig zu ebnen. Aber ihr müsstet letztendlich dort durch. Und wenn ihr bereit seid, dann folgt Sandro durch das Portal.“
+Sandro dient der Gruppe als Führer und magischer Unterstützer. In der ersten Begegnung führt er die Gruppe durch ein [Portal](/locations/portal.md), das sie von der Splitterwelt aus sehr nah nach Abyssalis bringt. Der GM beschreibt: „Dieses Portal bringt euch sehr nah bereits nach Abyssalis. Zumindest auf der Splitterwelt. Wir haben bereits öfter mal einige Exkurse dorthin geleitet, um euch bereits den Weg ein wenig zu ebnen. Aber ihr müsstet letztendlich dort durch. Und wenn ihr bereit seid, dann folgt Sandro durch das Portal.“
 
 Sandro fungiert dabei auch als Garant für die Rückkehr: „Mit Sandro werdet ihr wieder zurückkommen. Das Portal ist in beide Welten offen.“ Er hat also die Aufgabe, die Gruppe sicher durch die Splitterwelt zu führen und ihnen den Weg zu ebnen.
 
@@ -33,8 +33,8 @@ Sein Auftreten wird als ungewöhnlich beschrieben („sehr komische Gestalt“),
 
 ## Beziehungen und Verbindungen
 
-- **[Voras](/npcs/voras.md)**: Sandro ist ein Verbündeter von Voras und arbeitet mit ihm zusammen, um die Gruppe durch die Splitterwelt zu führen.
-- **[Vasul](/deities/vharzul.md)**: Vasul schickt Sandro weg, als er die Gruppe nach Abyssalis führt. Die genaue Natur ihrer Beziehung wird nicht näher ausgeführt.
+- **[Voras](/npcs/voras.md)**: Sandro ist ein Verbündeter von [Voras](/npcs/vora.md) und arbeitet mit ihm zusammen, um die Gruppe durch die Splitterwelt zu führen.
+- **[Vasul](/deities/vharzul.md)**: [Vasul](/deities/vharzul.md) schickt Sandro weg, als er die Gruppe nach Abyssalis führt. Die genaue Natur ihrer Beziehung wird nicht näher ausgeführt.
 - **Die Gruppe**: Sandro zeigt Respekt vor der Gruppe und unterstützt sie mehrfach mit seinen Fähigkeiten. Er gibt [Brim](/characters/brim.md) eine Schriftrolle.
 - **[Nerash](/deities/nerash.md)**: Nerash ist sein Mörder – er schleudert Sandro durch die Luft und tötet ihn damit.
 

@@ -10,11 +10,11 @@ id: FACTION_ASSASSINEN
 subtype: Gilde
 ---
 
-Die Assassinen sind eine der beiden Gilden im Norden. Sie gelten als geheimnisumwobene Gruppe, die heilige Macht in Gefäßen herstellt. Im Gegensatz zu anderen Gilden vertreten sie eine eigene Ansicht über die Mitgliedschaft in mehreren Gilden, handeln wenig mit anderen Städten und nehmen keine Flüchtlinge auf.
+Die Assassinen sind eine der beiden Gilden im Norden. Sie gelten als geheimnisumwobene Gruppe, die heilige Macht in Gefäßen herstellt. Im Gegensatz zu anderen Gilden vertreten sie eine eigene Ansicht über die Mitgliedschaft in mehreren Gilden, handeln wenig mit anderen Städten und nehmen keine [Flüchtlinge](/factions/fluechtlinge_aus_breska.md) auf.
 
 ## Organisation
 
-Die Assassinen sind im Norden ansässig und bilden dort neben einer weiteren Gilde eine der beiden maßgeblichen Gilden. Ihre Haltung zur Mehrfachmitgliedschaft unterscheidet sich von der anderer Gilden; Details zu ihren Regeln sind nicht bekannt. Auffällig ist ihre Abschottung: Sie nehmen keine Flüchtlinge auf und pflegen nur geringen Handel mit anderen Städten. Ihr Handeln ist von Geheimnistuerei geprägt.
+Die Assassinen sind im Norden ansässig und bilden dort neben einer weiteren [Gilde](/factions/gilde_von_ehrenfels.md) eine der beiden maßgeblichen Gilden. Ihre Haltung zur Mehrfachmitgliedschaft unterscheidet sich von der anderer Gilden; Details zu ihren Regeln sind nicht bekannt. Auffällig ist ihre Abschottung: Sie nehmen keine Flüchtlinge auf und pflegen nur geringen Handel mit anderen Städten. Ihr Handeln ist von Geheimnistuerei geprägt.
 
 ## Heilige Macht
 

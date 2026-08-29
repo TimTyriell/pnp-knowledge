@@ -10,7 +10,7 @@ id: EVENT_KAMPF_GEGEN_DIE_SILBERBESTIEN_IN_DER_SILBERGRUFT
 subtype: Kampf
 ---
 
-Die Gruppe wird in der [Silbergruft](/locations/silbergruft.md) von mehreren Silberbestien angegriffen. [Dodo](/characters/dodo.md) stellt sich schützend vor die Gruppe, Lunara nutzt Schattenfeuer, um mehrere Gegner zu treffen, und [Nyrella](/characters/nyrella.md) landet einen kritischen Treffer mit einem Eispfeil. Die Gruppe besiegt die Kreaturen, wobei Dodo einige Treffer einsteckt.
+Die Gruppe wird in der [Silbergruft](/locations/silbergruft.md) von mehreren Silberbestien angegriffen. [Dodo](/characters/dodo.md) stellt sich schützend vor die Gruppe, Lunara nutzt [Schattenfeuer](/items/schattenfeuer.md), um mehrere Gegner zu treffen, und [Nyrella](/characters/nyrella.md) landet einen kritischen Treffer mit einem Eispfeil. Die Gruppe besiegt die Kreaturen, wobei Dodo einige Treffer einsteckt.
 
 # Belege
 

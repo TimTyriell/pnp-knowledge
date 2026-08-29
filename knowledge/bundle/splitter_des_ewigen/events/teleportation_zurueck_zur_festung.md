@@ -10,7 +10,7 @@ id: EVENT_TELEPORTATION_ZURUECK_ZUR_FESTUNG
 subtype: Reise
 ---
 
-[Rotunas](/characters/rotunas.md) teleportiert die Gruppe nach dem Friedensschluss sicher zurück zur Festung, um einer möglichen Gefahr zu entgehen.
+[Rotunas](/characters/rotunas.md) teleportiert die Gruppe nach dem Friedensschluss sicher zurück zur [Festung](/locations/festung.md), um einer möglichen Gefahr zu entgehen.
 
 # Belege
 

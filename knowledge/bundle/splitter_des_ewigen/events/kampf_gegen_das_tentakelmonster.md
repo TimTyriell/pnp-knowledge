@@ -10,7 +10,7 @@ id: EVENT_KAMPF_GEGEN_DAS_TENTAKELMONSTER
 subtype: Kampf
 ---
 
-Der erste Kampf der Gruppe gegen das durch das Ritual beschworene Monster. Die Gruppe siegte, nachdem [Celin](/characters/celin_cookie.md) das Monster ins Auge schoss.
+Der erste Kampf der Gruppe gegen das durch das Ritual beschworene Monster. Die Gruppe siegte, nachdem [Celin](/characters/cookie.md) das Monster ins Auge schoss.
 
 # Belege
 

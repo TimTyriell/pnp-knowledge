@@ -10,7 +10,7 @@ id: EVENT_PORTAL_UNTER_DER_KAPELLE
 subtype: Ritual
 ---
 
-Ein Portal, das durch die [Sumpfhexe](/npcs/lenra.md) geöffnet wurde, als [Rotunas](/characters/rotunas.md) das [Stern-Amulett](/items/stern_amulett.md) in den Brunnen hielt. Es wird von Rotunas, [Lindo Laut](/characters/lindo_laut.md) und dem [Kuatau](/npcs/kuatau.md)-Priester geschlossen.
+Ein [Portal](/locations/portal.md), das durch die [Sumpfhexe](/npcs/lenra.md) geöffnet wurde, als [Rotunas](/characters/rotunas.md) das [Stern-Amulett](/items/stern_amulett.md) in den Brunnen hielt. Es wird von Rotunas, [Lindo Laut](/characters/lindo_laut.md) und dem [Kuatau](/npcs/kuatau.md)-Priester geschlossen.
 
 # Belege
 

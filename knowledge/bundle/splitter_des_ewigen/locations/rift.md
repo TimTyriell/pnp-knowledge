@@ -10,7 +10,7 @@ id: LOC_RIFT
 subtype: Sonstiges
 ---
 
-Ein magisches Portal, das als Verbindung zu anderen Ebenen dient. Es wird von der [Gilde](/factions/gilde_von_ehrenfels.md) bewacht und für Trainingszwecke genutzt, um Kreaturen zu beschwören. Nox kann es mit einem Ritual öffnen und wieder versiegeln.
+Ein magisches [Portal](/locations/portal.md), das als Verbindung zu anderen Ebenen dient. Es wird von der [Gilde](/factions/gilde_von_ehrenfels.md) bewacht und für Trainingszwecke genutzt, um Kreaturen zu beschwören. Nox kann es mit einem Ritual öffnen und wieder versiegeln.
 
 # Belege
 

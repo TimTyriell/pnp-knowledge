@@ -1,27 +1,29 @@
 ---
 type: NPC
 title: Dormak
-description: 'Dormak war ein Diener Vhar''Zuls und Komplize der Hag Lenra. Er trat
-  mehrfach als Gegner der Gruppe auf, verfolgte jedoch eigene Ziele: Geme…'
+description: Dormak ist ein Diener und Komplize der Hag Lenra. Er tritt in der Kapelle
+  auf, wo er die Gruppe zwingen will, sich auf den Thron zu setzen.…
 tags:
 - npcs
 timestamp: '2026-03-31T00:00:00Z'
 id: NPC_DORMAK
+aliases:
+- Dormark
 ---
 
-Dormak war ein Diener [Vhar'Zuls](/deities/vharzul.md) und Komplize der Hag [Lenra](/npcs/lenra.md). Er trat mehrfach als Gegner der Gruppe auf, verfolgte jedoch eigene Ziele: Gemeinsam mit Lenra wollte er Vhar'Zuls ursprünglichen Teil zurückholen, nicht dessen besonnene Persönlichkeit. Als der wiedererstarkte Vhar'Zul die Gestalt von [Tyrex](/deities/thyrex.md) annahm, wurde Dormak zu dessen Feind.
+Dormak ist ein Diener und Komplize der Hag [Lenra](/npcs/lenra.md). Er tritt in der [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) auf, wo er die Gruppe zwingen will, sich auf den Thron zu setzen. Gemeinsam mit Lenra verfolgte er das Ziel, [Vhar'Zul](/deities/vharzul.md) zurückzuholen – allerdings dessen ursprünglichen Teil, nicht seine besonnene Persönlichkeit. Dormak wurde schließlich von Vhar'Zul selbst ausgelöscht.
 
-## Auftreten
+## Rolle und Auftreten
 
-In der Kapelle erschien Dormak als Diener Vhar'Zuls. Arrogant und bedrohlich zwang er die Gruppe, sich auf den Thron zu setzen. Er verschwand, als [Lindo Laut](/characters/lindo_laut.md) die Macht des Throns nutzte, um die anderen Götter zu vernichten. Später überraschte er die Gruppe erneut; Lindo Laut erwähnte ihn als Gegner, der mit Vhar'Zul in Verbindung steht. In einem späteren Konflikt trat Dormak auf, um Vhar'Zul aufzuhalten, und zeigte Sorge: Er bat die Gruppe, Vhar'Zul nicht seine Göttlichkeit zurückerhalten zu lassen. [Dodo](/characters/dodo.md) stellte sich ihm entgegen. Dormaks Tod schwächte die Verteidigung von [Ehrenfels](/locations/ehrenfels.md).
+Dormak erscheint in der Kapelle als Diener Vhar'Zuls und begegnet der Gruppe arrogant und bedrohlich. Er zwingt sie, sich auf den Thron zu setzen, und überrascht sie dabei. Als [Lindo Laut](/characters/lindo_laut.md) die Macht des Throns nutzt, um die anderen Götter zu vernichten, verschwindet Dormak. Die Gruppe stuft ihn als Gegner ein, der mit Vhar'Zul in Verbindung steht.
 
-## Ziele und Verbindungen
+## Bündnis mit Lenra und Ende
 
-Dormak stand im Dienst Vhar'Zuls, war aber zugleich Komplize der Hag Lenra. Beide wollten Vhar'Zul zurückholen – allerdings dessen ursprünglichen Teil, nicht die besonnene Persönlichkeit. Diese Absicht brachte ihn in Gegnerschaft zum wiedererstarkten Vhar'Zul, der die Gestalt von Tyrex angenommen hatte; diese Persönlichkeit war ein Feind Dormaks. Am Ende wurde Dormak von Vhar'Zul selbst ausgelöscht.
+Dormak war mit der Hag [Lenra](/npcs/lenra.md) verbündet. Beide wollten Vhar'Zuls ursprünglichen Teil zurückholen, nicht dessen besonnene Persönlichkeit. Doch der wiedererstarkte Vhar'Zul nahm die Gestalt von [Tyrex](/deities/thyrex.md) an, und [Tyrex](/deities/thyrex.md) war Dormaks Feind. Dormak erschien, um Vhar'Zul aufzuhalten, und bat die Gruppe, ihm nicht seine Göttlichkeit zurückzugeben. Vhar'Zul löschte ihn daraufhin selbst aus. Sein Tod schwächt die Verteidigung von [Ehrenfels](/locations/ehrenfels.md).
 
 # Belege
 
-[P-19] Session 2025-09-02, 01:45:58, https://www.youtube.com/watch?v=TLZOH7TlGhk
-[P-34] Session 2026-01-20, 01:48:29, https://www.youtube.com/watch?v=H3ckYdTv4y8
-[P-44] Session 2026-03-31, 00:33:36, https://www.youtube.com/watch?v=Ee-K84wcxLM
-4. Kanon_Entscheidungen.md, Abschnitt „Dormak"
+[P-19] Session 2025-09-02, 01:45:58 – https://www.youtube.com/watch?v=TLZOH7TlGhk
+[P-34] Session 2026-01-20, 01:48:29 – https://www.youtube.com/watch?v=H3ckYdTv4y8
+[P-44] Session 2026-03-31, 00:33:36 – https://www.youtube.com/watch?v=Ee-K84wcxLM
+4. Kanon_Entscheidungen.md (Spielleitungs-Festlegungen)

@@ -10,7 +10,7 @@ id: ITEM_MECHANISCHER_ARM_VON_ROTUNAS
 subtype: Artefakt
 ---
 
-[Rotunas](/characters/rotunas.md) trägt einen mechanischen Arm aus Metall, der ihm von den Zwergen in der Festung Zinn angefertigt wurde. Er ist ein Ersatz für seinen verlorenen rechten Unterarm und hat ihn einiges an Gold gekostet.
+[Rotunas](/characters/rotunas.md) trägt einen mechanischen Arm aus Metall, der ihm von den Zwergen in der [Festung](/locations/festung.md) Zinn angefertigt wurde. Er ist ein Ersatz für seinen verlorenen rechten Unterarm und hat ihn einiges an Gold gekostet.
 
 # Belege
 

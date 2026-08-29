@@ -10,7 +10,7 @@ id: EVENT_OEFFNUNG_DER_SPLITTERWELT
 subtype: Ritual
 ---
 
-Lunara öffnet mit ihren Runen ein Portal zur [Splitterwelt](/domains/splitterwelt.md), wodurch die Untoten gefangen und vernichtet werden. Dies ist ein entscheidender Wendepunkt in der Schlacht.
+Lunara öffnet mit ihren Runen ein [Portal](/locations/portal.md) zur [Splitterwelt](/domains/splitterwelt.md), wodurch die Untoten gefangen und vernichtet werden. Dies ist ein entscheidender Wendepunkt in der Schlacht.
 
 # Belege
 

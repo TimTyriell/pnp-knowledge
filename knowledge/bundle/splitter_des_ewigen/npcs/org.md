@@ -9,7 +9,7 @@ timestamp: '2025-11-18T00:00:00Z'
 id: NPC_ORG
 ---
 
-Org ist ein Barkeeper in der [Taverne](/locations/taverne.md), der die Gruppe bedient. Er zeigt Mitgefühl für den Verlust von [Cookie](/characters/cookie.md) und ist emotionaler als andere Orks.
+Org ist ein Barkeeper in der Taverne, der die Gruppe bedient. Er zeigt Mitgefühl für den Verlust von [Cookie](/characters/cookie.md) und ist emotionaler als andere Orks.
 
 # Belege
 

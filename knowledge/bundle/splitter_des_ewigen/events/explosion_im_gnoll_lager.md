@@ -10,7 +10,7 @@ id: EVENT_EXPLOSION_IM_GNOLL_LAGER
 subtype: Kampf
 ---
 
-Bruma und [Kaya](/characters/kaya.md) kombinieren ihre Blitz- und Feuermagie, um einen Felsen zu sprengen und viele Gnolle zu töten. Dies ist ein entscheidender Sieg für die Gruppe.
+Bruma und [Kaya](/characters/kaya.md) kombinieren ihre Blitz- und Feuermagie, um einen Felsen zu sprengen und viele [Gnolle](/factions/gnolle.md) zu töten. Dies ist ein entscheidender Sieg für die Gruppe.
 
 # Belege
 

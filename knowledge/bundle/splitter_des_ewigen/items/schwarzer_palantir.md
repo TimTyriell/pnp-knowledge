@@ -18,7 +18,7 @@ Der **Schwarze Palantir** ist eine runde, schwarze Kugel und ein dunkles Artefak
 
 ## Fundort und Aussehen
 
-Der Palantir lag im Labor der Hag, das sich im Sumpf-Dungeon befindet. Dodo entdeckte ihn dort als runde Kugel. Eine genauere Einordnung gelang zunächst nicht; die Gruppe konnte nicht sagen, um was für einen Gegenstand es sich handelte. Dass es sich um ein Artefakt aus der Zeit der Alten handelte, wurde durch die Einschätzung eines Magiers bekannt, der den Palantir als wertvolles Überbleibsel dieser Epoche bezeichnete. Über weitere Eigenschaften des Artefakts ist nichts bekannt; seine Wirkung zeigte sich erst im Zusammenhang mit dem uralten Buch.
+Der Palantir lag im Labor der Hag, das sich im [Sumpf](/locations/sumpf_vor_dem_goblin_dorf.md)-Dungeon befindet. Dodo entdeckte ihn dort als runde Kugel. Eine genauere Einordnung gelang zunächst nicht; die Gruppe konnte nicht sagen, um was für einen Gegenstand es sich handelte. Dass es sich um ein Artefakt aus der Zeit der Alten handelte, wurde durch die Einschätzung eines Magiers bekannt, der den Palantir als wertvolles Überbleibsel dieser Epoche bezeichnete. Über weitere Eigenschaften des Artefakts ist nichts bekannt; seine Wirkung zeigte sich erst im Zusammenhang mit dem uralten Buch.
 
 ## Verwendung und Auflösung
 

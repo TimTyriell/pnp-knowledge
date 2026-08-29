@@ -10,7 +10,7 @@ id: LOC_BUGBEAR_LAGER
 subtype: Gebäude
 ---
 
-Ein Lager oben in der [Mine](/locations/kristallmine.md), wo die [Bugbears](/npcs/bugbears.md) sich ausruhen. Es enthält Betten und Vorräte.
+Ein Lager oben in der [Mine](/locations/verlassene_mine_an_der_farm.md), wo die [Bugbears](/npcs/bugbears.md) sich ausruhen. Es enthält Betten und Vorräte.
 
 # Belege
 

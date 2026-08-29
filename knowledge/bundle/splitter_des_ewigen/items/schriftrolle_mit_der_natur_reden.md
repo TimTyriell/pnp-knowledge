@@ -12,7 +12,7 @@ aliases:
 - Schriftrolle 'Mit der Natur reden'
 ---
 
-Eine Schriftrolle, die es dem Anwender ermöglicht, mit der Natur zu interagieren. Sie wird im ersten [Goblin-Lager](/locations/goblin_lager.md) gefunden, aber [Celin](/characters/celin_cookie.md) hat diese Fähigkeit bereits.
+Eine Schriftrolle, die es dem Anwender ermöglicht, mit der Natur zu interagieren. Sie wird im ersten [Goblin-Lager](/locations/goblin_lager.md) gefunden, aber [Celin](/characters/cookie.md) hat diese Fähigkeit bereits.
 
 # Belege
 

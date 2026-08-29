@@ -9,7 +9,7 @@ timestamp: '2026-08-20T00:00:00Z'
 id: NPC_SIR_TALI_VON_BRANDAU
 ---
 
-Ein hoher Offizier aus [Brandau](/locations/brandau.md), Leibgarde der Prinzessin. Er kommt mit zwei Elitesoldaten und einem Magier in die [Taverne](/locations/taverne.md). [Sage](/characters/sage.md) erkennt ihn und vermutet, dass die Prinzessin noch lebt.
+Ein hoher Offizier aus [Brandau](/locations/brandau.md), Leibgarde der Prinzessin. Er kommt mit zwei Elitesoldaten und einem Magier in die Taverne. [Sage](/characters/sage.md) erkennt ihn und vermutet, dass die Prinzessin noch lebt.
 
 # Belege
 

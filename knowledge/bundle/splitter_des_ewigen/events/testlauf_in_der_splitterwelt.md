@@ -10,7 +10,7 @@ id: EVENT_TESTLAUF_IN_DER_SPLITTERWELT
 subtype: Reise
 ---
 
-[Voras](/npcs/voras.md) schickt die Gruppe durch das Portal in die [Splitterwelt](/domains/splitterwelt.md), um ihre Stärke zu testen. Sie erreichen das Tor zu Abyssalis und besiegen eine Kreatur.
+[Voras](/npcs/voras.md) schickt die Gruppe durch das [Portal](/locations/portal.md) in die [Splitterwelt](/domains/splitterwelt.md), um ihre Stärke zu testen. Sie erreichen das Tor zu Abyssalis und besiegen eine Kreatur.
 
 # Belege
 

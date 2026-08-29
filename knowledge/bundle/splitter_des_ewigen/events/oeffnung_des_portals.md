@@ -10,7 +10,7 @@ id: EVENT_OEFFNUNG_DES_PORTALS
 subtype: Ritual
 ---
 
-Die Kreatur öffnet ein Portal aus [Abyssalis](/domains/splitterwelt.md), durch das die Gruppe entkommen kann.
+Die Kreatur öffnet ein [Portal](/locations/portal.md) aus [Abyssalis](/domains/splitterwelt.md), durch das die Gruppe entkommen kann.
 
 # Belege
 

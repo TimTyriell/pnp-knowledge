@@ -9,7 +9,7 @@ timestamp: '2025-04-30T00:00:00Z'
 id: NPC_GIUSEPPA
 ---
 
-Giuseppa ist eine Frau, die in der [Taverne](/locations/taverne.md) von [Sanddorn](/locations/sanddorn.md) arbeitet und Zimmer vermietet. Sie ist freundlich und bietet der Gruppe eine Übernachtung an.
+Giuseppa ist eine Frau, die in der Taverne von [Sanddorn](/locations/sanddorn.md) arbeitet und Zimmer vermietet. Sie ist freundlich und bietet der Gruppe eine Übernachtung an.
 
 # Belege
 

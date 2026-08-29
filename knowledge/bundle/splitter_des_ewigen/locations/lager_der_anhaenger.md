@@ -10,7 +10,7 @@ id: LOC_LAGER_DER_ANHAENGER
 subtype: Siedlung
 ---
 
-Ein Lager von Anhängern des alten Gottes [Seras](/deities/tarvok_der_erdrichter.md), das die Gruppe auf ihrem Weg zum Tempel findet. Es besteht aus Zelten und einer [Höhle](/locations/hoehle.md), in der die Anhänger Material abbauen. Die Gruppe verbringt dort eine Nacht.
+Ein Lager von Anhängern des alten Gottes [Seras](/deities/tarvok_der_erdrichter.md), das die Gruppe auf ihrem Weg zum Tempel findet. Es besteht aus Zelten und einer Höhle, in der die Anhänger Material abbauen. Die Gruppe verbringt dort eine Nacht.
 
 # Belege
 

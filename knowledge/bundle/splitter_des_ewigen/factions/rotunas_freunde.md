@@ -14,7 +14,7 @@ Die Abenteurergruppe **Rotunas Freunde** wurde in der Session vom 12. August 202
 
 ## Namensgebung
 
-Der Name setzt sich aus dem Personennamen Rotunas und dem Wort *Freunde* zusammen. Er betont eine persönliche Bindung zwischen der Gruppe und Rotunas und weniger eine formelle Organisation wie eine Gilde oder einen Orden. Wer an der Namenswahl beteiligt war und ob Lindo Laut selbst der Gruppe angehört, ist nicht überliefert.
+Der Name setzt sich aus dem Personennamen Rotunas und dem Wort *Freunde* zusammen. Er betont eine persönliche Bindung zwischen der Gruppe und Rotunas und weniger eine formelle Organisation wie eine [Gilde](/factions/gilde_von_ehrenfels.md) oder einen Orden. Wer an der Namenswahl beteiligt war und ob Lindo Laut selbst der Gruppe angehört, ist nicht überliefert.
 
 ## Rotunas
 

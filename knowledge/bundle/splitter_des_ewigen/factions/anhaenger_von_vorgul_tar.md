@@ -10,7 +10,7 @@ id: FACTION_ANHAENGER_VON_VORGUL_TAR
 subtype: Kult
 ---
 
-Die **Anhänger von Vorgul'tar** sind eine Gruppierung, die in [Boragdil](/locations/boragdil.md) aktiv ist und dort Seelen sammelt. Über Organisation, Hintergrund und die genauen Ziele der Fraktion ist aus den bisherigen Belegen kaum etwas bekannt; gesichert ist nur ihre Präsenz in Boragdil und ihre Tätigkeit des Seelensammelns.
+Die **Anhänger von [Vorgul'tar](/deities/vorgul_tar.md)** sind eine Gruppierung, die in [Boragdil](/locations/boragdil.md) aktiv ist und dort Seelen sammelt. Über Organisation, Hintergrund und die genauen Ziele der Fraktion ist aus den bisherigen Belegen kaum etwas bekannt; gesichert ist nur ihre Präsenz in Boragdil und ihre Tätigkeit des Seelensammelns.
 
 ## Auftreten in Boragdil
 

@@ -10,7 +10,7 @@ id: LOC_DAS_HOLZFAELLERLAGER
 subtype: Siedlung
 ---
 
-Ein Holzfällerlager nordwestlich von [Kleinringtal](/locations/ringtal.md), das von [Goblins](/factions/goblins.md) und Gnollen überfallen wurde.
+Ein Holzfällerlager nordwestlich von [Kleinringtal](/locations/ringtal.md), das von [Goblins](/npcs/pilz_goblins.md) und Gnollen überfallen wurde.
 
 # Belege
 

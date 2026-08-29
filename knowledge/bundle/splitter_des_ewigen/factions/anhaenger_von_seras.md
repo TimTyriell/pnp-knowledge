@@ -12,7 +12,7 @@ subtype: Kult
 
 # Anhänger von Seras
 
-Die **Anhänger von Seras** sind eine nomadisch lebende Gruppe, die dem alten Gott Seras dient. Sie leben in den Bergen und bauen dort Eisen ab. Gegenüber Fremden verhalten sie sich misstrauisch; zugleich fürchten sie die Ghule.
+Die **Anhänger von [Seras](/deities/tarvok_der_erdrichter.md)** sind eine nomadisch lebende Gruppe, die dem alten Gott Seras dient. Sie leben in den Bergen und bauen dort Eisen ab. Gegenüber Fremden verhalten sie sich misstrauisch; zugleich fürchten sie die Ghule.
 
 ## Glaube und Lebensweise
 

@@ -12,7 +12,7 @@ aliases:
 - Symbol
 ---
 
-Ein Symbol, das [Dante](/characters/dante.md) auf dem Boden der [Villa](/locations/villa.md) entdeckt. Niemand in der Gruppe kann es zuordnen. [Esterossa](/characters/esterossa.md) versucht, sich zu erinnern, ob sie es schon einmal gesehen hat.
+Ein Symbol, das [Dante](/characters/dante.md) auf dem Boden der [Villa](/locations/villau.md) entdeckt. Niemand in der Gruppe kann es zuordnen. [Esterossa](/characters/esterossa.md) versucht, sich zu erinnern, ob sie es schon einmal gesehen hat.
 
 # Belege
 

@@ -1,15 +1,15 @@
 ---
 type: NPC
 title: Elisa
-description: Elisa ist eine Jägerin im Dorf Brechka. Sie ist eine der wenigen, die
-  mit einem Bogen umgehen kann. Sie ist zunächst besorgt, erklärt sich…
+description: Elisa ist eine Jägerin in Brechka, die mit dem Bogen umgehen kann. Sie
+  ist zunächst unsicher, ob sie gegen eine Horde Goblins kämpfen kann,…
 tags:
 - npcs
 timestamp: '2025-04-09T00:00:00Z'
 id: NPC_ELISA
 ---
 
-Elisa ist eine Jägerin im [Dorf](/locations/dorf.md) [Brechka](/locations/breska.md). Sie ist eine der wenigen, die mit einem Bogen umgehen kann. Sie ist zunächst besorgt, erklärt sich aber bereit, bei der Verteidigung zu helfen und auf dem Dach zu schießen.
+Elisa ist eine Jägerin in [Brechka](/locations/breska.md), die mit dem Bogen umgehen kann. Sie ist zunächst unsicher, ob sie gegen eine Horde [Goblins](/npcs/pilz_goblins.md) kämpfen kann, lässt sich aber von der Gruppe ermutigen. Sie wird auf dem Dach positioniert, um von dort zu schießen.
 
 # Belege
 

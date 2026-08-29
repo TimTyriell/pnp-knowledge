@@ -10,7 +10,7 @@ id: FACTION_DIE_STRIXWOLF_REITER
 subtype: Armee
 ---
 
-Die **Strixwolf-Reiter** sind eine Eliteeinheit aus [Willauch](/locations/willauch.md). Sie werden in den Überlieferungen zu den Kämpfen zwischen Willauch und [Brandau](/locations/brandau.md) als die Einheit genannt, die in der entscheidenden Schlacht den Ausschlag gab. Damit sind sie einer der namentlich bekannten Truppenteile dieses Konflikts. Über ihre Organisation, Bewaffnung, Stärke oder ihre namensgebenden Reittiere ist nichts weiter überliefert; ebenso wenig über ihre Kommandeure oder ihren genauen Auftrag.
+Die **[Strixwolf](/npcs/strixwolf.md)-Reiter** sind eine Eliteeinheit aus [Willauch](/locations/willauch.md). Sie werden in den Überlieferungen zu den Kämpfen zwischen Willauch und [Brandau](/locations/brandau.md) als die Einheit genannt, die in der entscheidenden Schlacht den Ausschlag gab. Damit sind sie einer der namentlich bekannten Truppenteile dieses Konflikts. Über ihre Organisation, Bewaffnung, Stärke oder ihre namensgebenden Reittiere ist nichts weiter überliefert; ebenso wenig über ihre Kommandeure oder ihren genauen Auftrag.
 
 ## Status als Eliteeinheit
 

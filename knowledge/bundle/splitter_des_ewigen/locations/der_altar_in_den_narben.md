@@ -10,7 +10,7 @@ id: LOC_DER_ALTAR_IN_DEN_NARBEN
 subtype: Gebäude
 ---
 
-Ein versteckter [Altar](/items/altar.md), der als Zugang zum Tempel dient. Die Gruppe findet ihn und aktiviert das Portal mit dem Geheimwort.
+Ein versteckter [Altar](/items/altar.md), der als Zugang zum Tempel dient. Die Gruppe findet ihn und aktiviert das [Portal](/locations/portal.md) mit dem Geheimwort.
 
 # Belege
 

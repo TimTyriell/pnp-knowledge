@@ -14,15 +14,15 @@ subtype: Neuer Gott
 
 ## Überblick
 
-Coram Schildbrecher ist einer der neuen Götter dieser Welt. Er steht für Heldenschaft, Zusammenhalt und Gemeinschaft. Seine Verehrung ist in Tiefwasser sichtbar verankert: Auf dem zentralen Platz der Stadt steht eine gut gepflegte Statue zu seinen Ehren, die seinen Namen trägt. Die Inschrift auf dem Sockel nennt ihn ausdrücklich „Coram Schildbrecher“.
+Coram Schildbrecher ist einer der neuen Götter dieser Welt. Er steht für Heldenschaft, Zusammenhalt und Gemeinschaft. Seine Verehrung ist in [Tiefwasser](/locations/tiefwasser.md) sichtbar verankert: Auf dem zentralen Platz der Stadt steht eine gut gepflegte Statue zu seinen Ehren, die seinen Namen trägt. Die Inschrift auf dem Sockel nennt ihn ausdrücklich „Coram Schildbrecher“.
 
-Die Statue ist nicht nur ein Denkmal, sondern spiegelt auch das wider, wofür der Gott steht: Die Menschen, die sich auf dem Platz um die Statue versammeln, sind gemischt – Menschen, ein Elf, ein Tiefling und sogar ein Goblin – und sie scheinen sich gut zu arrangieren. Diese sichtbare Vielfalt und das friedliche Miteinander werden als Ausdruck von Coram Schildbrechers Wesen gedeutet.
+[Die Statue](/items/die_statue.md) ist nicht nur ein Denkmal, sondern spiegelt auch das wider, wofür der Gott steht: Die Menschen, die sich auf dem Platz um die Statue versammeln, sind gemischt – Menschen, ein Elf, ein Tiefling und sogar ein Goblin – und sie scheinen sich gut zu arrangieren. Diese sichtbare Vielfalt und das friedliche Miteinander werden als Ausdruck von Coram Schildbrechers Wesen gedeutet.
 
 ## Rolle in der Kampagne
 
-Coram Schildbrecher begegnet den Helden erstmals in Tiefwasser, als sie auf ihrem Weg zu den Orks durch die Stadt ziehen. Die Gruppe – Lunara Velora, Rotunas, Brim und weitere – betritt den Platz und entdeckt die Statue. Brim tritt näher heran und liest den Namen auf der Aufschrift. Der Spielleiter bietet daraufhin einen Knowledge-Wurf an, um mehr über den Gott zu erfahren.
+Coram Schildbrecher begegnet den Helden erstmals in Tiefwasser, als sie auf ihrem Weg zu den Orks durch die Stadt ziehen. Die Gruppe – [Lunara Velora](/characters/lunara_velora.md), [Rotunas](/characters/rotunas.md), [Brim](/characters/brim.md) und weitere – betritt den Platz und entdeckt die Statue. Brim tritt näher heran und liest den Namen auf der Aufschrift. Der Spielleiter bietet daraufhin einen Knowledge-Wurf an, um mehr über den Gott zu erfahren.
 
-Brim gelingt dieser Wurf mit einem Ergebnis von 23 (gegen eine Schwierigkeit von 4), was ihm umfassende Informationen über Coram Schildbrecher einbringt. Diese Begegnung dient als Einstiegspunkt für die Erkundung der Stadt: Direkt neben der Statue entdeckt Brim ein Schild mit der Aufschrift „Gilde der Schilde“ (eigentlich „Gilde des Schildes“), ein Gildengebäude, das er als vielversprechende Anlaufstelle für Informationen über die Gegend und die Orks identifiziert.
+Brim gelingt dieser Wurf mit einem Ergebnis von 23 (gegen eine Schwierigkeit von 4), was ihm umfassende Informationen über Coram Schildbrecher einbringt. Diese Begegnung dient als Einstiegspunkt für die Erkundung der Stadt: Direkt neben der Statue entdeckt Brim ein Schild mit der Aufschrift „[Gilde der Schilde](/factions/gilde_der_schilde.md)“ (eigentlich „[Gilde](/factions/gilde_von_ehrenfels.md) des Schildes“), ein Gildengebäude, das er als vielversprechende Anlaufstelle für Informationen über die Gegend und die Orks identifiziert.
 
 Die Statue und der Gott selbst sind damit Teil der lokalen Gegebenheiten, die den Helden Orientierung in Tiefwasser bieten. Coram Schildbrecher fungiert hier weniger als aktiver Handlungsträger, sondern vielmehr als kultureller Ankerpunkt der Stadt, der den Helden den Einstieg in die lokale Gemeinschaft und ihre Strukturen ermöglicht.
 
@@ -36,7 +36,7 @@ Coram Schildbrecher gehört zu den neuen Göttern – einer Gruppe von Gottheite
 
 Seine Statue in Tiefwasser ist „recht gut in Stand gehalten“, was auf eine aktive und lebendige Verehrung schließen lässt. Die Tatsache, dass die Statue auf dem zentralen Platz der Stadt steht, deutet auf ihre Bedeutung für das öffentliche Leben hin.
 
-Bemerkenswert ist die Verbindung zwischen dem Gott und der realen Gemeinschaft vor Ort: Die Menschen, die sich um die Statue versammeln, verkörpern genau die Werte, für die Coram Schildbrecher steht. Die Durchmischung verschiedener Völker – Menschen, Elfen, Tieflinge und sogar Goblins – auf dem Platz ist kein Zufall, sondern wird als lebendiges Abbild seines Wirkens beschrieben.
+Bemerkenswert ist die Verbindung zwischen dem Gott und der realen Gemeinschaft vor Ort: Die Menschen, die sich um die Statue versammeln, verkörpern genau die Werte, für die Coram Schildbrecher steht. Die Durchmischung verschiedener Völker – Menschen, Elfen, Tieflinge und sogar [Goblins](/npcs/pilz_goblins.md) – auf dem Platz ist kein Zufall, sondern wird als lebendiges Abbild seines Wirkens beschrieben.
 
 ## Beziehungen und Verbindungen
 
@@ -63,7 +63,7 @@ Weitere Entwicklungen oder spätere Begegnungen mit Coram Schildbrecher sind in 
 
 - Welche Rolle spielen die „neuen Götter“ insgesamt, und wie verhält sich Coram Schildbrecher zu den anderen neuen Göttern?
 - Steht die Gilde der Schilde in einer besonderen Beziehung zu Coram Schildbrecher, oder ist die räumliche Nähe von Statue und Gildengebäude zufällig?
-- Hat Coram Schildbrecher eine aktive Rolle im Geschehen der Kampagne, etwa im Zusammenhang mit dem „Ende“, von dem die Helden auf der Suche nach Informationen sind?
+- Hat Coram Schildbrecher eine aktive Rolle im Geschehen der Kampagne, etwa im Zusammenhang mit dem „[Ende](/locations/ende_jenseits_der_orkgebiete.md)“, von dem die Helden auf der Suche nach Informationen sind?
 - Wie kam es zur Entstehung der neuen Götter, und seit wann genau werden sie verehrt?
 - Gibt es weitere Orte der Verehrung Coram Schildbrechers außerhalb von Tiefwasser?
 

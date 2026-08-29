@@ -1,31 +1,35 @@
 ---
 type: NPC
 title: Harloen
-description: Harloen ist ein Bewohner von Ehrenfels, der in den Aufzeichnungen der
-  Gruppe sowohl als Priester der städtischen Kapelle als auch als Angeh…
+description: 'Harloen ist eine Person aus Ehrenfels, die in den Kampagnenaufzeichnungen
+  in zwei unterschiedlichen Rollen erscheint: als Priester der Kape…'
 tags:
 - npcs
 timestamp: '2026-08-04T00:00:00Z'
 id: NPC_HARLOEN
 aliases:
 - Haloen
+- Harloën
+status: disputed
 ---
 
-Harloen ist ein Bewohner von [Ehrenfels](/locations/ehrenfels.md), der in den Aufzeichnungen der Gruppe sowohl als Priester der städtischen Kapelle als auch als Angehöriger der Elite-Wachen erscheint. Er begegnet den Helden in einer Zeit politischer und religiöser Umbrüche, die durch den neuen Fürsten [Vityus](/npcs/vityus.md) und den Einfluss [Nerashs](/deities/nerash.md) geprägt ist.
-
-## Rolle in Ehrenfels
-
-Harloen ist der Priester der Kapelle in Ehrenfels. Zugleich wird er zu den Elite-Wachen der Stadt gezählt. Welche genauen Aufgaben er in dieser Doppelfunktion wahrnimmt, ist nicht überliefert; die Belege zeigen ihn jedoch als jemanden, der sowohl im religiösen als auch im städtischen Machtgefüge verankert ist. Angesichts der neuen Herrschaft warnt er die Gruppe ausdrücklich vor Fürst Vityus und dem Einfluss von Nerash.
-
-## Glaube und Zweifel
-
-Harloen ist nicht bereit, seinem Gott abzuschwören, und sucht deshalb das Gespräch mit den Helden. Seine Haltung ist dabei nicht einfach dogmatisch: Gegenüber [Lindo](/characters/lindo_laut.md) äußert er flüsternd den Zweifel, dass die neuen Götter vielleicht gar nicht existieren. Das deutet auf eine persönliche, reflektierte Glaubenshaltung in einer Zeit hin, in der die alten wie die neuen Gottheiten um Geltung ringen.
+Harloen ist eine Person aus [Ehrenfels](/locations/ehrenfels.md), die in den Kampagnenaufzeichnungen in zwei unterschiedlichen Rollen erscheint: als Priester der [Kapelle von Ehrenfels](/locations/kapelle_von_ehrenfels.md) und als Elite-Wache der Stadt. Die Belege lassen nicht eindeutig erkennen, ob er beide Ämter innehatte oder ob es sich um einen Rollenwechsel handelt. Über Herkunft und weitere Lebensumstände ist nichts bekannt.
 
 ## Begegnungen mit der Gruppe
 
-Die erste überlieferte Begegnung findet in der Kapelle statt, als Harloen die Helden vor Vityus und Nerash warnt. In einer späteren Begegnung vertraut er Lindo seine Skepsis gegenüber den neuen Göttern an. Weitere Kontakte oder eine engere Zusammenarbeit mit der Gruppe sind nicht belegt.
+Bei der ersten Begegnung in der [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) von Ehrenfels warnt Harloen die Helden vor dem neuen Fürsten [Vityus](/npcs/vityus.md) und dem Einfluss von [Nerash](/deities/nerash.md). Er sucht das Gespräch mit der Gruppe, erklärt aber zugleich, dass er nicht bereit ist, seinem Gott abzuschwören.
+
+In einer späteren Begegnung tritt Harloen als Elite-Wache von Ehrenfels auf. Er flüstert [Lindo](/characters/lindo_laut.md) zu, die neuen Götter existierten vielleicht gar nicht, und geht dann weiter. Nähere Umstände dieser Begegnung werden aus den Belegen nicht deutlich.
+
+## Haltung
+
+Harloen steht den neuen Göttern und der neuen Herrschaft in Ehrenfels kritisch gegenüber: Er warnt vor Vityus und Nerash, bleibt aber seinem eigenen Gott treu. Seine spätere Äußerung gegenüber Lindo, die Existenz der neuen Götter sei ungewiss, fügt sich in diese skeptische Haltung ein.
 
 # Belege
 
-[S1-01-A] Session vom 29.07.2026, 00:31:36, https://www.youtube.com/watch?v=umGyKLkefJI
-[S1-02-A] Session vom 04.08.2026, 02:05:09, https://www.youtube.com/watch?v=qRj2t3wQHfs
+[S1-01-A] Session 2026-07-29, 00:31:36, https://www.youtube.com/watch?v=umGyKLkefJI
+[S1-02-A] Session 2026-08-04, 02:05:09, https://www.youtube.com/watch?v=qRj2t3wQHfs
+
+# Offene Konflikte
+
+- Beleg 1 bezeichnet Harloen als Priester der Kapelle von Ehrenfels; Beleg 2 bezeichnet ihn als Elite-Wache von Ehrenfels. Ob es sich um einen Rollenwechsel handelt oder die Belege unterschiedliche Aspekte derselben Person beschreiben, ist nicht geklärt.

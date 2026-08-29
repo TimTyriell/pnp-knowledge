@@ -10,7 +10,7 @@ id: LOC_FLUECHTLINGSLAGER_VOR_BRESKA
 subtype: Siedlung
 ---
 
-Das Flüchtlingslager liegt außerhalb der Stadtmauer von [Breska](/locations/breska.md). Es beherbergt etwa zwei Dutzend [Flüchtlinge](/factions/fluechtlinge.md), hauptsächlich [Zwerge](/factions/zwerge.md), Gnome, Menschen und Tieflinge. Die Menschen sind ausgehungert und haben wenig Hoffnung.
+Das Flüchtlingslager liegt außerhalb der Stadtmauer von [Breska](/locations/breska.md). Es beherbergt etwa zwei Dutzend [Flüchtlinge](/factions/fluechtlinge_aus_breska.md), hauptsächlich [Zwerge](/factions/zwerge.md), Gnome, Menschen und Tieflinge. Die Menschen sind ausgehungert und haben wenig Hoffnung.
 
 # Belege
 

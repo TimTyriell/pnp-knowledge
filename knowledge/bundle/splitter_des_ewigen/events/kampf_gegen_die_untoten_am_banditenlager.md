@@ -10,7 +10,7 @@ id: EVENT_KAMPF_GEGEN_DIE_UNTOTEN_AM_BANDITENLAGER
 subtype: Kampf
 ---
 
-Ein großer Kampf zwischen der Gruppe und einer Armee von Untoten, die die Karawane angreifen. Die Gruppe verteidigt den [Pass](/locations/pass.md) vor dem [Banditenlager](/locations/banditenlager_der_silberkerne.md). Der Kampf ist noch nicht entschieden.
+Ein großer Kampf zwischen der Gruppe und einer Armee von Untoten, die die Karawane angreifen. Die Gruppe verteidigt den Pass vor dem [Banditenlager](/locations/banditenlager_der_silberkerne.md). Der Kampf ist noch nicht entschieden.
 
 # Belege
 

@@ -10,7 +10,7 @@ id: ITEM_DAS_SCHATTENFEUER
 subtype: Artefakt
 ---
 
-Das Schattenfeuer ist eine Fähigkeit von Lunara, die sie im Kampf einsetzt. Es ist ein schwarzes Feuer, das ihre Feinde verbrennt.
+Das [Schattenfeuer](/items/schattenfeuer.md) ist eine Fähigkeit von Lunara, die sie im Kampf einsetzt. Es ist ein schwarzes Feuer, das ihre Feinde verbrennt.
 
 # Belege
 

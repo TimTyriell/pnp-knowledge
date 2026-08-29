@@ -9,7 +9,7 @@ timestamp: '2025-11-18T00:00:00Z'
 id: NPC_DURCHGRAS
 ---
 
-Durchgras ist einer der Barkeeper in der [Taverne](/locations/taverne.md). Er begrüßt die Gruppe und spendiert eine Runde auf [Cookie](/characters/cookie.md). Er zeigt Mitgefühl und ist Teil des Barpersonals.
+Durchgras ist einer der Barkeeper in der Taverne. Er begrüßt die Gruppe und spendiert eine Runde auf [Cookie](/characters/cookie.md). Er zeigt Mitgefühl und ist Teil des Barpersonals.
 
 # Belege
 

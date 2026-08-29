@@ -10,7 +10,7 @@ id: EVENT_KAMPF_GEGEN_DIE_GOBLIN_WACHEN
 subtype: Kampf
 ---
 
-Die Gruppe lockt zwei Goblin-Wachen in einen Hinterhalt, indem sie [Perry](/npcs/perry_das_schnabeltier.md) als Köder benutzt. Es kommt zu einem Kampf, bei dem die [Goblins](/factions/goblins.md) sich als zäh erweisen und einer von ihnen durch einen Trank wächst. Die Gruppe kann sie schließlich besiegen.
+Die Gruppe lockt zwei Goblin-Wachen in einen Hinterhalt, indem sie [Perry](/npcs/perry_das_schnabeltier.md) als Köder benutzt. Es kommt zu einem Kampf, bei dem die [Goblins](/npcs/pilz_goblins.md) sich als zäh erweisen und einer von ihnen durch einen Trank wächst. Die Gruppe kann sie schließlich besiegen.
 
 # Belege
 

@@ -1,17 +1,18 @@
 ---
 type: Location
 title: Willauch
-description: Willauch ist eine der beiden Großstädte der Region und liegt im Südwesten
-  der bekannten Welt, nahe der südwestlichen Grenze der Zivilisatio…
+description: Willauch ist eine der beiden großen Städte der Region und gilt als die
+  größte Stadt der nördlichen Schneise. Sie ist wohlhabend, gut vertei…
 tags:
 - locations
 timestamp: '2026-08-04T00:00:00Z'
 id: LOC_WILLAUCH
 subtype: Siedlung
 aliases:
+- Vilau (Willau)
 - Willoch
-- Willauch
 - Villauch
+- Willauch
 - Willau
 ---
 
@@ -19,94 +20,92 @@ aliases:
 
 ## Überblick
 
-Willauch ist eine der beiden Großstädte der Region und liegt im Südwesten der bekannten Welt, nahe der südwestlichen Grenze der Zivilisation. Die Stadt ist wohlhabend, gut verteidigt und multikulturell geprägt. Sie wird von Lord Kalidarn regiert, der sich selbst als „Herr und Sieger über Brandau, Herr über Willau und das ganze Reich" bezeichnet. Willauch hat den Krieg gegen die Nachbarstadt Brandau gewonnen und richtet seitdem Arena-Kämpfe aus, die weit über die Stadtgrenzen hinaus bekannt sind. Neben der Arena verfügt die Stadt über eine bedeutende Bibliothek, die von Wüstenwächtern bewacht wird, sowie über einen regen Marktplatz, Tavernen und eine Kaserne.
+Willauch ist eine der beiden großen Städte der Region und gilt als die größte Stadt der nördlichen Schneise. Sie ist wohlhabend, gut verteidigt und multikulturell. [Die Stadt](/locations/ehrenfels.md) hat den [Krieg](/characters/krieg.md) gegen [Brandau](/locations/brandau.md) gewonnen und richtet seitdem Arena-Kämpfe aus, bei denen Kämpfe auf Leben und Tod ausgetragen werden. Willauch wird von Lord Kalidarn regiert, der sich selbst als „Herr und Sieger über Brandau, Herr über Willau und das ganze Reich" bezeichnet.
+
+Die Stadt verfügt über eine große Stadtmauer, die selbst erfahrene Reisende beeindruckt. Im Inneren finden sich ein Marktplatz, zahlreiche Tavernen, eine Kaserne, ein Anwesen des Lords sowie eine große Bibliothek. Die Arena liegt außerhalb der Stadt. Willauch wird als Ort beschrieben, „in dem alles möglich ist — von Handel bis hin zu irgendwelchen Intrigen, bis hin zu Kämpfen, bis hin zu was auch immer".
 
 ## Rolle in der Kampagne
 
-Willauch dient der Gruppe wiederholt als zentraler Anlaufpunkt: Hier nehmen die Helden an den Arena-Kämpfen teil, lösen Kopfgeld für Gefangene ein und erhalten Belohnungen für abgeschlossene Aufträge. Die Stadt ist Ausgangspunkt mehrerer Quests, darunter die Untersuchung eines vermeintlichen Banditenlagers, das sich als Farm der Heinrichs entpuppt. Die Gruppe bringt Gefangene nach Willauch und kassiert dort ihre Belohnung — jeder erhält zwei Säcke Gold, was für einige Charaktere mehr ist, als sie jemals besessen haben. Willauch ist zudem die Heimatstadt von Dante, Miko und Kip, die dort aufgewachsen sind und sich seit früher Kindheit kennen. Auch Gunther hat eine Zeit lang in Willauch verbracht.
+Willauch dient der Gruppe als zentrale Anlaufstelle und Operationsbasis. Die Stadt ist Ausgangspunkt mehrerer Quests: Hier nimmt die Gruppe an den Arena-Kämpfen teil, erhält Aufträge gegen [Banditenlager](/locations/banditenlager_der_silberkerne.md) und treibt Kopfgeld für Gefangene ein. Nach erfolgreichen Missionen kehrt die Gruppe nach Willauch zurück, um Belohnungen einzulösen, darunter zwei Säcke Gold pro Person für die Auslieferung von Gefangenen.
+
+Die Stadt ist zudem ein Ort der Erholung und Versorgung: Die Gruppe verbringt hier mehrere Tage, um Kopfgeld einzulösen, einen Trank zu besorgen und in der Bibliothek zu forschen. Willauch wird als extrem sicher und wohlhabend beschrieben, mit patrouillierenden Wachen und einem regen Marktbetrieb.
+
+Für einige Mitglieder der Gruppe hat Willauch eine persönliche Bedeutung: [Dante](/characters/dante.md), [Miko](/characters/miko.md) und Kip stammen aus Willauch und sind dort seit ihrer Kindheit befreundet. Dante ist Adliger aus Willauch und war dort als Vampirjäger tätig. Auch [Gunther](/characters/gunther.md) hat eine Zeit lang in Willauch verbracht.
 
 ## Wichtige Merkmale
 
-### Lage und Stadtbild
+### Lage und Beschaffenheit
 
-Willauch liegt im Südwesten der Karte und ist einer der südlichsten und westlichsten Orte der gesamten Region. Die Stadt ist von einer gewaltigen Stadtmauer umgeben, die die Gruppe beim ersten Anblick tief beeindruckt — vergleichbare Befestigungen haben die Helden bis dahin nicht gesehen. Die Mauer wird als deutlich massiver beschrieben als die Befestigungen anderer Städte wie Breska, deren Anwesensmauer im Vergleich „ein Witz" ist. Die Stadtmauer ist breit und gut besetzt, was Willauch eine starke Verteidigungsfähigkeit verleiht.
+Willauch liegt im Südwesten der Karte. Die Stadt ist von einer großen, breiten Stadtmauer umgeben, die die Gruppe beim ersten Anblick stark beeindruckt. Die Mauer wird als deutlich massiver beschrieben als die Anwesensmauer von [Breska](/locations/breska.md). Die Tore öffnen sich für die Gruppe ohne Hindernisse, da man von vier Personen offenbar keine Gefahr erwartet.
 
-Das Stadtbild ist das einer typischen Großstadt: Auf dem Marktplatz kaufen die Leute die neuesten Waren, Wachen patrouillieren regelmäßig, und die Stadt wirkt insgesamt „extrem sicher und wohlhabend". Die Stadt verfügt über Tavernen, in denen man guten Wein bekommt, sowie über eine Kaserne. Die Arena liegt außerhalb der Stadtmauern.
+Die Stadt selbst wirkt wie eine typische Großstadt: Menschen sind auf dem Markt und kaufen Waren ein, Wachen patrouillieren regelmäßig. Die Stadt wird als „extrem sicher und wohlhabend" beschrieben.
+
+### Bevölkerung und Kultur
+
+Willauch ist multikulturell und wohlhabend. Die Stadt hat viele Tavernen, in denen man guten Wein bekommt — wie [Nyrella](/characters/nyrella.md) bei einem Besuch feststellt: „lecker, der Wein hier bei euch". Die Stimmung in der Stadt ist geprägt von Selbstbewusstsein und Dominanz nach dem Sieg über Brandau.
 
 ### Die Arena
 
-Die Arena von Willauch ist eine der bekanntesten Einrichtungen der Stadt und zieht große Menschenmengen an. Die Kämpfe werden von Lord Kalidarn persönlich eröffnet, der die Herausforderer mit den Worten begrüßt: „Willkommen in der Arena von Willau. Der Kampf möge in wenigen Augenblicken beginnen. Dieser Kampf ist auf Leben und Tod oder auf meinem Wille zu entscheiden." Die Arena-Kämpfe sind ein zentrales Ereignis, zu dem sich die Gruppe anmeldet und antritt. Nach den Kämpfen wurde in Willauch eine erneute Mobilisierung veranlasst, und die Stadt wächst wieder an Militär.
+Die Arena liegt außerhalb der Stadt und ist Austragungsort von Kämpfen auf Leben und Tod. Lord Kalidarn persönlich eröffnet die Kämpfe mit den Worten: „Willkommen in der [Arena von Willau](/locations/arena_von_willau.md). Der Kampf möge in wenigen Augenblicken beginnen. Dieser Kampf ist auf Leben und Tod oder auf meinem Wille zu entscheiden." Das Publikum reagiert bei seinem Erscheinen mit großer Begeisterung — es werden Fähnchen geworfen, Menschen schreien, einige kippen sogar um.
 
-### Die Bibliothek
+### Militär und Aufrüstung
 
-Willauch verfügt über eine bedeutende Bibliothek, die von Wüstenwächtern bewacht wird. Die Gruppe besucht sie, um Informationen zu beschaffen — etwa über das vermeintliche Banditenlager, das sich später als Farm der Heinrichs herausstellt. In der Bibliothek lassen sich Dokumente einsehen, die Aufschluss über die Region geben.
-
-### Wappen
-
-Das Wappen von Willauch zeigt eine eiserne Faust auf grünem Grund.
+Nach dem Sieg über Brandau rüstet Willauch weiter auf. Direkt nach den Arena-Kämpfen wurde eine Mobilisierung veranlasst, und die Stadt wächst wieder an Militär. Willauch scheint „Macht und Dominanz zeigen zu wollen". Die Stadt sucht zudem nach Überlebenden aus Brandau und hat ein großes Interesse daran, dass sich keine neuen Gruppierungen in der Region etablieren.
 
 ## Beziehungen und Verbindungen
 
 ### Lord Kalidarn
 
-Lord Kalidarn ist der Herrscher von Willauch. Er wird als „Herr und Sieger über Brandau" tituliert und genießt in der Stadt große Verehrung. Bei den Arena-Kämpfen tritt er vor das Publikum, das bei seinem Erscheinen eskaliert — Fähnchen werden geworfen, Menschen schreien, einzelne Zuschauer kippen sogar um. Kalidarn wird von einem seltsamen Gefolgsmann begleitet: einem metallisch wirkenden Konstrukt mit rotem Mantel und magischem Buch, das nüchtern in die Menge blickt. Das Publikum verhält sich diesem Wesen gegenüber eher vorsichtig.
+Lord Kalidarn ist der Herrscher von Willauch. Er wird als charismatische Figur beschrieben, die die Menge zu Begeisterungsstürmen hinreißen kann. Bei den Arena-Kämpfen tritt er zusammen mit einem magisch begabten Berater auf, der als „[Garlin der Weise](/npcs/gralin_der_weise.md)" vorgestellt wird — ein metallisch wirkendes Konstrukt mit rotem Mantel und magischem Buch, das nüchtern in die Menge blickt. Das Publikum verhält sich diesem Wesen gegenüber eher vorsichtig.
 
 ### Brandau
 
-Willauch führt seit längerem einen Konflikt mit der nahegelegenen Stadt Brandau. Die Spannungen zwischen den beiden Städten sind über die Zeit immer weiter gestiegen. Der Krieg begann, weil Brandau die Strixwolf — die weiteren Details des Auslösers bleiben unklar. Willauch hat den Krieg gewonnen und Brandau „sehr demütigend" geschlagen. Seit dem Sieg sucht Willauch nach Überlebenden und Zerstreuten aus Brandau, die nach dem Krieg verstreut sind. Es werden Belohnungen auf die Köpfe bestimmter Personen ausgesetzt, und die Stadt scheint generell neue Leute anwerben zu wollen. Die Propaganda aus Willauch hat dabei auch entlegene Orte wie Kleinringtal erreicht. Willauch zeigt nach dem Sieg über Brandau deutlich Macht und Dominanz — direkt nach den Arena-Kämpfen wurde eine Mobilisierung veranlasst, und die Stadt wächst wieder an Militär.
-
-### Nebelwacht
-
-Willauch unterstützt die Festung Nebelwacht, die etwa einen Tagesmarsch von der Stadt entfernt liegt, mit Gold und Soldaten. Nebelwacht ist eine Festung weit im Süden, die die Welt von den zerstörten Gebieten des Götterkriegs trennt. Die Gruppe kommt aus Willauch, um in Nebelwacht zu kämpfen; wer zur Hilfe eilt, dem wird eine entsprechende Summe Gold zugewiesen, wenn er eine bestimmte Anzahl Monde überlebt.
+Willauch führt einen Krieg gegen die nahegelegene Stadt Brandau und hat diesen Krieg gewonnen. Brandau hat „mies verloren" und wurde demütigend besiegt. Willauch sucht weiterhin nach Zerstreuten des Krieges und hat Verhandlungszettel mit Kopfgeldern ausgesetzt. Der Konflikt begann demnach mit steigenden Spannungen zwischen den beiden nahe beieinanderliegenden Städten.
 
 ### Casa de Cookie
 
-Casa de Cookie liegt westlich von Willauch.
+[Casa de Cookie](/locations/casa_del_cookie.md) liegt westlich von Willauch.
+
+### Kleinringtal
+
+Die Propaganda aus Willauch hat [Kleinringtal](/locations/ringtal.md) erreicht.
 
 ### Breska
 
-Willauch wird als Stadt erwähnt, die keine Truppen nach Breska schicken wird. Über Breska selbst sind nach dem Krieg keine Neuigkeiten bekannt — keiner der Boten kommt durch, und keiner kehrt zurück.
+Willauch wird keine Truppen nach Breska schicken. Breska gilt als abgeschottet — es kommen weder Boten durch noch kehren welche zurück.
 
 ## Chronologie
 
-- **Vor der Kampagne:** Willauch führt Krieg gegen Brandau und gewinnt diesen „sehr demütigend". Die Stadt richtet nach dem Sieg Arena-Kämpfe aus und beginnt, nach Überlebenden aus Brandau zu suchen. Dante, Miko und Kip wachsen in Willauch auf und werden enge Freunde.
+**Erste Ankunft der Gruppe:** Die Gruppe nähert sich Willauch zum ersten Mal und ist von der großen Stadtmauer beeindruckt. Die Stadt wird als Ort beschrieben, in dem alles möglich ist — von Handel über Intrigen bis hin zu Kämpfen. Die Gruppe besucht den Marktplatz, eine Taverne und die Kaserne. Die Arena liegt außerhalb der Stadt.
 
-- **Session 2025-10-14:** Die Gruppe nähert sich erstmals der Stadt Willauch und ist von der gewaltigen Stadtmauer beeindruckt. Die Tore öffnen sich für die vier Reisenden, da man von ihnen keine Gefahr erwartet. Die Stadt wird als Ort beschrieben, „in dem alles möglich ist — von Handel bis hin zu irgendwelchen Intrigen, bis hin zu Kämpfen". Die Gruppe besucht den Marktplatz, eine Taverne und die Kaserne.
+**Arena-Kämpfe:** Die Gruppe nimmt an den Arena-Kämpfen teil. Lord Kalidarn eröffnet die Veranstaltung persönlich. Die Anmeldung zu den Kämpfen ist zu diesem Zeitpunkt noch im Gange, die Stadt ist entsprechend trubelig.
 
-- **Session 2025-10-21:** Die Gruppe ist in Willauch, um an den Arena-Kämpfen teilzunehmen. Lord Kalidarn eröffnet die Kämpfe persönlich. Die Arena liegt außerhalb der Stadt; in der Stadt selbst wimmelt es von Menschen, die zum Zuschauen strömen.
+**Nach den Arena-Kämpfen:** Willauch veranlasst nach den Kämpfen eine erneute Mobilisierung und wächst an Militär. Ein [Marktschreier](/npcs/marktschreier.md) berichtet von den Neuigkeiten: stressige Situation im Süden, Willauch will Macht und Dominanz zeigen. Breska bleibt ohne Neuigkeiten, eine Ehrenfels-Gildengruppe ist bei einem Auftrag gescheitert, und [Untote](/factions/belorus_untotenarmee.md) wurden am Fuße des Berges gesichtet.
 
-- **Session 2025-11-18:** Nach dem Sieg über Brandau zeigt Willauch Macht und Dominanz. Nach den Arena-Kämpfen wird eine Mobilisierung veranlasst, und die Stadt wächst wieder an Militär. Ein Marktschreier berichtet von den Neuigkeiten: stressige Situation im Süden, Breska ohne jegliche Neuigkeiten, Untote am Fuße des Berges.
+**Rückkehr und Kopfgeld:** Die Gruppe kehrt nach Willauch zurück, um das Kopfgeld für [Kronos](/npcs/kronos.md) einzulösen. Die Stadt ist inzwischen wieder ruhiger und wirkt wie eine normale Großstadt. Die Gruppe sucht nach einer Möglichkeit, das Kopfgeld einzutreiben, und erwägt, eine Wache zu fragen oder ein Rathaus aufzusuchen. Sie verbringen mehrere Tage in der Stadt, besorgen einen Trank und forschen in der Bibliothek.
 
-- **Session 2026-01-13:** Willauch wird als Stadt erwähnt, die keine Truppen nach Breska schicken wird. Casa de Cookie liegt westlich von Willauch.
+**Questvergabe:** Willauch erteilt der Gruppe eine Quest gegen ein Banditenlager. [Tibbet](/characters/tibbet.md) hat sich zuvor in Willauch Dokumente besorgt und Informationen eingeholt. Dabei stellt sich heraus, dass das angebliche Banditenlager eigentlich die [Farm der Heinrichs](/locations/farm_der_heinrichs.md) ist — entweder ein Fehler der Scouts oder etwas stimmt nicht. Als Drahtzieher der Bande wird ein gewisser [Floran](/npcs/floran.md) genannt.
 
-- **Session 2026-03-03:** Die Gruppe kehrt nach Willauch zurück, um das Kopfgeld für Kronos einzulösen. Die Stadt wirkt wieder ruhig und wohlhabend — „wie man sich so eine Großstadt vorstellt". Die Gruppe besucht die Bibliothek, die von Wüstenwächtern bewacht wird. Jeder erhält zwei Säcke Gold als Belohnung.
+**Gefangene nach Willauch:** Die Gruppe bringt Gefangene nach Willauch und erhält dort ihre Belohnung: jeder bekommt zwei Säcke Gold, was für [Lunara Velora](/characters/lunara_velora.md) mehr ist, als sie jemals besessen hat.
 
-- **Session 2026-03-23:** Die Gruppe hat die Quest in Willauch erhalten. Tibbet hat sich in der Stadt Dokumente besorgt und Informationen über das vermeintliche Banditenlager eingeholt. Die Gruppe bringt Gefangene nach Willauch und erhält dort ihre Belohnung.
+**Persönliche Verbindungen:** Dante stellt sich als Adliger aus Willauch vor. Er, Miko und Kip sind gute Freunde von früher und stammen alle aus Willauch. Auch Miqo ist in oder um Willauch groß geworden und nach dem frühen Verlust seiner Familie in den Freundeskreis aufgenommen worden.
 
-- **Session 2026-05-06:** Dante stellt sich als Adliger aus Willauch vor. Kip und Miko sind ebenfalls in oder um Willauch aufgewachsen. Die drei sind gute Freunde von früher.
-
-- **Session 2026-05-27:** Willauch unterstützt die Festung Nebelwacht mit Gold und Soldaten. Die Gruppe kommt aus Willauch, um in Nebelwacht zu kämpfen. Das Wappen von Willauch ist eine eiserne Faust auf grünem Grund. Die Stadt wird als einer der größten Orte der Zivilisation bezeichnet, gelegen im südwestlichsten Teil der Region.
-
-- **Session 2026-06-04:** Willauch hat den Krieg gegen Brandau gewonnen und sucht nach Überlebenden und Zerstreuten aus dem Krieg. Es gibt Verhandlungszettel, die auf die Köpfe bestimmter Personen ausgesetzt sind. Die Propaganda aus Willauch hat Kleinringtal erreicht. Der Konflikt mit Brandau begann, weil Brandau die Strixwolf — der Satz bricht ab, der genaue Auslöser bleibt unklar. Willauch scheint generell neue Leute anwerben zu wollen.
-
-- **Session 2026-08-04:** Gunther erinnert sich, dass er früher in Willauch war, aber selbst dort hat er nie von den heiligen Phiolen gehört. Er schätzt, dass diese sehr selten und sehr schwierig herzustellen sind.
+**Gunthers Wissen:** Gunther hat eine Zeit lang in Willauch verbracht, hat dort aber nie von den heiligen Phiolen gehört. Er schätzt, dass diese sehr selten und sehr schwierig herzustellen sind und es sie in Willauch wahrscheinlich nicht gibt.
 
 ## Offene Fragen
 
-- Was genau war der Auslöser des Krieges zwischen Willauch und Brandau? Der Satz „weil Brandau die Strixwolf als..." bricht ab, die Details bleiben unklar.
-- Was ist die Strixwolf, und welche Rolle spielte sie im Konflikt?
-- Wer oder was ist das metallische Konstrukt mit dem roten Mantel, das Lord Kalidarn begleitet?
-- Warum schickt Willauch keine Truppen nach Breska, und was ist dort überhaupt geschehen?
+- Was genau war der Auslöser des Krieges zwischen Willauch und Brandau? Der Knowledge Check deutet an, dass der Kampf „so ein bisschen angefangen hat, weil Brandau die [Strixwolf](/npcs/strixwolf.md) als..." — die Erklärung bricht ab und bleibt unvollständig.
+- Was ist aus der Farm der Heinrichs geworden? Die Gruppe vermutet, dass die Farm übernommen wurde, und hofft, dass es den Heinrichs gut geht — der Ausgang dieser Frage bleibt offen.
+- Welche Rolle spielt Garlin der Weise, das metallische Konstrukt an der Seite von Lord Kalidarn, genau?
 
 # Belege
 
-[P-26] Session 2025-10-14 @ 00:02:32 — https://www.youtube.com/watch?v=cUtz87UCHu4
-[P-27] Session 2025-10-21 @ 00:14:20 — https://www.youtube.com/watch?v=sxFhbtwoefA
-[P-30] Session 2025-11-18 @ 00:57:00 — https://www.youtube.com/watch?v=w__ahowb9p0
-[P-33] Session 2026-01-13 @ 00:41:20 — https://www.youtube.com/watch?v=w4LB1s9_3rs
-[P-39] Session 2026-03-03 @ 00:09:41 — https://www.youtube.com/watch?v=BRUNuNKTeOg
-[P-42] Session 2026-03-23 @ 00:10:51 — https://www.youtube.com/watch?v=niVxKtdQBn0
-[P-48] Session 2026-05-06 @ 00:03:22 — https://www.youtube.com/watch?v=MB4quhDWsQE
-[P-51] Session 2026-05-27 @ 00:04:37 — https://www.youtube.com/watch?v=IYYmgpqsp7E
-[P-52] Session 2026-06-04 @ 01:12:15 — https://www.youtube.com/watch?v=EGNh8O7pE5Q
-[S1-02-A] Session 2026-08-04 @ 02:14:42 — https://www.youtube.com/watch?v=qRj2t3wQHfs
+[P-26] Session 2025-10-14 @ 00:02:32 (https://www.youtube.com/watch?v=cUtz87UCHu4)
+[P-27] Session 2025-10-21 @ 00:14:20 (https://www.youtube.com/watch?v=sxFhbtwoefA)
+[P-30] Session 2025-11-18 @ 00:57:00 (https://www.youtube.com/watch?v=w__ahowb9p0)
+[P-33] Session 2026-01-13 @ 00:41:20 (https://www.youtube.com/watch?v=w4LB1s9_3rs)
+[P-39] Session 2026-03-03 @ 00:09:41 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
+[P-42] Session 2026-03-23 @ 00:10:51 (https://www.youtube.com/watch?v=niVxKtdQBn0)
+[P-48] Session 2026-05-06 @ 00:03:22 (https://www.youtube.com/watch?v=MB4quhDWsQE)
+[P-52] Session 2026-06-04 @ 01:12:15 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
+[S1-02-A] Session 2026-08-04 @ 02:14:42 (https://www.youtube.com/watch?v=qRj2t3wQHfs)

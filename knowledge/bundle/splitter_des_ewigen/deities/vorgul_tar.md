@@ -2,16 +2,19 @@
 type: Deity
 title: Vorgultar, Herr der Tausend Seelen
 description: Vorgultar, Herr der Tausend Seelen, ist einer der vier alten Götter,
-  die in Abyssalis gefangen sind. Er wird als der Sammler der Seelen bes…
+  die in Abyssalis eingesperrt wurden. Er ist der Sammler der Seelen und…
 tags:
 - deities
 timestamp: '2026-07-21T00:00:00Z'
 id: DEITY_VORGUL_TAR
 subtype: Alter Gott
 aliases:
-- Vorgul'tar
 - Volgultar
+- Volgulta
+- Vorgul'tar
+- Vorgul’tar
 - Vorgultar
+- Wargulta / Volgulta
 - Vorgulta
 ---
 
@@ -19,104 +22,94 @@ aliases:
 
 ## Überblick
 
-Vorgultar, Herr der Tausend Seelen, ist einer der vier alten Götter, die in Abyssalis gefangen sind. Er wird als der Sammler der Seelen beschrieben, jener, der die Macht durch das erhält, was die Essenz des Lebens ist. Sein Wesen ist untrennbar mit den Seelen verbunden, die er sammelt und befehligt – sein Schrei ist nicht seine eigene Stimme, sondern das kollektive Schreien der an ihn gebundenen Seelen.
+Vorgultar, Herr der Tausend Seelen, ist einer der vier alten Götter, die in [Abyssalis](/domains/splitterwelt.md) eingesperrt wurden. Er ist der Sammler der Seelen und erhält seine Macht durch das, „was die Essenz des Lebens ist“. Anders als die anderen drei alten Götter, die in Abyssalis ihren Verstand verloren haben, versucht Vorgultar, seinen Verstand zu behalten. Er hat sein Grab in den Lila Bergen in Abyssalis gefunden.
 
-Vorgultar ist eine der zentralen Bedrohungen der Kampagne. Er hält Lunaras Bruder gefangen, was die Gruppe über weite Strecken der Handlung antreibt. Sein Versteck befindet sich in der Narbe, einem Gebiet in Abyssalis, wo er von seinen Anhängern, darunter Seraphen und Goblins, bewacht wird.
+Im großen [Krieg](/characters/krieg.md) hat Vorgultar gefehlt und war in Abyssalis. Laut dem Buch von [Tyrael](/npcs/tyrael.md) wird er nicht negativ beschrieben, sondern als einer, der den Seelen den Übergang in die Circuit Below erleichtert hat. Diese wohlwollende Beschreibung steht in einem gewissen Spannungsverhältnis zu seinem späteren Auftreten als Herrscher von Abyssalis, der Seelen sammelt und gefangen hält.
 
 ## Rolle in der Kampagne
 
-Vorgultar ist das primäre Ziel der Gruppe über mehrere Sessions hinweg. Lunara Velora sucht zunächst nach Anhängern Vorgultars, um Informationen über ihren gefangenen Bruder zu erhalten. Die Gruppe gibt sich zeitweise als Anhänger Vorgultars aus, um Zugang zu Gebieten zu erhalten, die seinen Dienern vorbehalten sind.
+Vorgultar ist eines der zentralen Ziele der Gruppe. Er hält Lunaras Bruder gefangen, was die Gruppe dazu treibt, nach Abyssalis zu reisen und bis zu Vorgultars Versteck in der Narbe vorzudringen. Die Gruppe versucht, zu ihm zu gelangen, um Lunaras Bruder zu befreien.
 
-Die Kreatur, die die Gruppe auf ihrem Weg begleitet, will, dass die Gruppe Vorgultar vernichtet. Dafür übergibt sie der Gruppe ein Schwert, mit dem Vorgultar verletzt werden kann. Die Gruppe kämpft sich durch das Gebiet der Narbe, vorbei an Vorgultars Anhängern, um zu ihm zu gelangen und Lunaras Bruder zu befreien.
+Die Gruppe suchte zunächst nach Anhängern Vorgultars, um mehr Informationen zu erhalten. Lunara gab dabei vor, eine Anhängerin Vorgultars zu sein, doch die Hexe erkannte, dass Lunara keinen der vier Götter spürt. Die Gruppe fand schließlich Anhänger Vorgultars, darunter [Seraphen](/factions/seraphen.md) und [Goblins](/npcs/pilz_goblins.md), die auf dem Berg in der Narbe stationiert sind.
 
-Am Ende der Kampagne erscheint Vorgultar in seiner wahren Gestalt in der Höhle, wird jedoch von Esterossa vertrieben, der den Splitter zerstört hat und sich als entscheidende Kraft gegen Vorgultar erweist.
+Eine Kreatur forderte die Gruppe auf, Vorgultar zu vernichten. Dazu erhielt die Gruppe ein Schwert von [Esterossa](/characters/esterossa.md), mit dem sie Vorgultar verletzen kann. Esterossa sagte: „Damit könnt ihr Vorgulta verletzen. Und noch mehr. Dort findet ihr auch … Euren Bruder.“ Nach der Zerstörung eines Splitters durch Esterossa erscheint Vorgultar in celestischer Gestalt, wird jedoch von Esterossa vertrieben und zieht sich schreiend zurück.
 
 ## Wichtige Merkmale
 
-### Göttliche Stellung
+### Wesen und Auftreten
 
-Vorgultar ist einer der vier alten Götter, die in Abyssalis eingesperrt wurden. Die anderen drei sind:
+Vorgultar ist ein mächtiger und intelligenter alter Gott. Er wird als sturer und älter beschrieben, als [Vasul](/deities/vharzul.md) erwartet hatte. Er haust in der Narbe, einem Gebiet in Abyssalis, und gibt Befehle aus, die die Gruppe zunächst nicht versteht. Seine Stimme erklingt „wie ein Befehl über diese Welt“.
 
-- **Akastrale**, der verrückte Hunger oder dunkle Hunger
-- **Südrawell**, die Fleischweberin, eine federhafte Kreatur, die nur Unheil bringt
-- **Ohoriaks**, Mutter der Schleier, eine beschützende, aber jähzornige Göttin
-
-Vorgultar wird als mächtig und intelligent beschrieben. Er ist der Herr von Abyssalis und wird als Gott verehrt. Seine Anhänger kämpfen an der Oberfläche für ihn.
-
-### Wesen und Erscheinung
-
-Vorgultar erscheint in celestischer Gestalt, nachdem Esterossa den Splitter zerstört hat. Seine Erscheinung ist massiv – die Gruppe beschreibt ihn als "ein bisschen sehr groß". Er hat keine eigene Stimme; wenn er schreit, sind es die Seelen, die aus ihm schreien. Dieser Schrei ist so überwältigend, dass er in den Köpfen der Zuhörer widerhallt und sie zu Boden zwingt.
+Seine Erscheinung ist furchteinflößend: Er hat keine eigene Stimme und kein Echo — „nichts was aus seinem Mund kommt oder seinen Mündern. Sondern es sind Seelen, die schreien.“ Wenn er schreit, schreien alle Seelen, die an ihn gebunden sind oder die er befehligt. Dieser Schrei ist so überwältigend, dass er in den Köpfen der Zuhörer brüllt und diese kaum verarbeiten können; mehrere Gruppenmitglieder gehen dabei zu Boden und halten sich die Ohren fest.
 
 ### Fähigkeiten
 
-- **Seelensammlung**: Vorgultar sammelt Seelen und erhält Macht durch die Essenz des Lebens. Er hat verstanden, dass Kinderseelen etwas Besonderes sind – sie scheinen nicht den Gesetzen von Abyssalis zu unterliegen und nicht von der Welt beeinflusst zu werden. Aus diesem Grund hat er sich Lunaras Bruder, eine Kinderseele, gesichert.
-- **Befehlsgewalt über Seelen**: Er befehligt die an ihn gebundenen Seelen; sein Schrei ist das kollektive Schreien dieser Seelen.
-- **Fernkommunikation**: Vorgultar kann Befehle über weite Distanzen senden, die seine Anhänger verstehen, die Gruppe jedoch zunächst nicht entschlüsseln kann.
-- **Magieresistenz**: Magie, die gegen ihn gerichtet ist, kann auf halber Strecke versagen und sich einfach auflösen, wie es bei Lindo Lauts Versuch zu beobachten war.
+Vorgultar sammelt Seelen und erhält durch sie seine Macht. Er hat die Fähigkeit, Kinderseelen besonders zu behandeln: Kinderseelen scheinen nicht den Gesetzen von Abyssalis zu unterliegen und werden von Abyssalis und ihrer Welt nicht beeinflusst. Vorgultar hat dies erkannt und sich Lunaras Bruder, eine [Kinderseele](/npcs/kinderseele.md), gesichert.
+
+Er kann seine Anhänger über weite Distanzen mit Befehlen erreichen und ruft seinen engsten Vertrauten zu sich, wenn er Angst hat. Er hat Angst vor etwas, das kommen wird.
 
 ## Beziehungen und Verbindungen
 
-### Lunara Velora
+### Die vier alten Götter von Abyssalis
 
-Vorgultar hält Lunaras Bruder gefangen. Diese Gefangenschaft ist der zentrale Antrieb für Lunaras Handeln und das der Gruppe. Lunara gibt sich zeitweise als Anhängerin Vorgultars aus, um an Informationen zu gelangen, wird jedoch von der Hexe entlarvt, die keinen der vier Götter in ihr spürt.
+Vorgultar ist einer der vier alten Götter, die in Abyssalis eingesperrt wurden. Die anderen drei sind:
+
+- **[Akastrale](/deities/akastrale.md)**, der verrückte Hunger oder dunkle Hunger
+- **[Südrawell](/deities/suedrawell.md)**, die Fleischweberin, eine federhafte Kreatur, die nur Unheil bringt
+- **[Ohoriaks](/deities/ohoriaks.md)**, Mutter der Schleier, eine beschützende, aber jähzornige Göttin
+
+Die meisten Seelen, die in Abyssalis enden, werden von Akastrale gefressen, von Ohoriaks aufgenommen oder von Sitravils erfetzt. Vorgultar sammelt dagegen Seelen.
+
+### Lunara und ihr Bruder
+
+Vorgultar hält Lunaras Bruder gefangen. Lunara versucht, ihn zu befreien, und gibt sich zeitweise als Anhängerin Vorgultars aus. Esterossa erklärt Lunara, dass die einzige Möglichkeit, ihren Bruder zu retten, darin besteht, Vorgultar zu vernichten.
 
 ### Esterossa
 
-Esterossa ist der entscheidende Gegenspieler Vorgultars. Nachdem Esterossa den Splitter zerstört hat, erscheint Vorgultar in celestischer Gestalt. Esterossa vertreibt ihn aus der Höhle, wobei sich Teile von Vorgultar ablösen. Esterossa erklärt Lunara, dass dies die einzige Möglichkeit sei, ihren Bruder zu retten.
+Esterossa ist eine zentrale Gegenspielerin Vorgultars. Sie übergibt der Gruppe das Schwert, mit dem sie Vorgultar verletzen können, und zerstört einen Splitter, woraufhin Vorgultar in celestischer Gestalt erscheint. Esterossa vertreibt Vorgultar, der sich daraufhin zurückzieht. Dabei scheint Esterossa eine Verbindung zu Vorgultar zu haben: Zwischen ihr und einem Stein existieren rote Lichtfäden.
 
-### Die Kreatur
+### Ulvanara
 
-Eine Kreatur, die die Gruppe begleitet, will, dass die Gruppe Vorgultar vernichtet. Sie übergibt der Gruppe ein Schwert, mit dem Vorgultar verletzt werden kann, und weist den Weg zu Lunaras Bruder.
+Vorgultar hat Ulvanara unter seiner Kontrolle.
+
+### Der Jen
+
+Ein mysteriöser Diener Vorgultars handelt aus eigenen Interessen. Er ist nicht identisch mit der Schreiberin Jen.
 
 ### Anhänger
 
-Vorgultar hat zahlreiche Anhänger, die an der Oberfläche kämpfen. In der Narbe sind seine Anhänger, darunter Seraphen und Goblins, auf dem Berg stationiert. Seine Diener werden von den Toren bewacht – wer kein Diener Vorgultars ist, kann die Tore nicht passieren.
-
-### Nazirathel
-
-Vorgultar ruft einen Diener namens Nazirathel zu sich zurück, als dieser sich entfernt hat. Die Gruppe vermutet, dass es sich dabei um eine Kreatur handelt, der sie zuvor begegnet ist. In Vorgultars Ruf schwingt Angst mit – er hat Angst vor etwas, das kommen wird.
+Vorgultar hat Anhänger, die an der Oberfläche kämpfen. Dazu gehören Seraphen und Goblins, die auf dem Berg in der Narbe stationiert sind. Seine Anhänger versuchen, die Energie des [Kristalls](/items/gruener_kristall.md) für sich zu nutzen, zu absorbieren oder zu abusen, doch der Kristall ist unnachgiebig.
 
 ## Chronologie
 
-### Session 2026-03-03
+- **Vor der Kampagne:** Vorgultar fehlt im großen Krieg und ist in Abyssalis. Er findet sein Grab in den Lila Bergen und versucht, seinen Verstand zu behalten, während die anderen drei Götter dort ihren Verstand verlieren. Abyssalis, einst eine Bastion der alten Götter, wird in ein Gefängnis umgewandelt; Vorgultar hatte dort vermutlich schon vorher sein Lager.
 
-Vorgultar wird erstmals erwähnt: Er ist ein alter Gott, der im großen Krieg gefehlt hat und in Abyssalis war. Er wird als Herr der Tausend Seelen beschrieben und soll den Seelen den Übergang in die Circuit Below erleichtert haben. Sein Grab befindet sich in den Lila Bergen in Abyssalis.
+- **Session 2026-03-03:** Die Gruppe erfährt durch das Buch von Tyrael von Vorgultar als einem alten Gott, der den Seelen den Übergang in die Circuit Below erleichtert hat und nicht negativ beschrieben wird.
 
-### Session 2026-03-31
+- **Session 2026-03-31:** Die Gruppe erfährt, dass Vorgultar Lunaras Bruder gefangen hält. Er wird als einer der vier alten Götter in Abyssalis beschrieben, der Seelen sammelt, und als mächtig und intelligent charakterisiert.
 
-Die Gruppe erfährt von einem Informanten, dass Vorgultar einer der vier alten Götter in Abyssalis ist, der Seelen sammelt. Er hält Lunaras Bruder gefangen. Er wird als mächtig und intelligent beschrieben.
+- **Session 2026-04-14:** Lunara schlägt vor, Anhänger Vorgultars zu suchen, um mehr Informationen zu erhalten. Sie gibt vor, eine Anhängerin Vorgultars zu sein, doch die Hexe erkennt, dass Lunara keinen der vier Götter spürt.
 
-### Session 2026-04-14
+- **Session 2026-05-13:** Eine Kreatur fordert die Gruppe auf, Vorgultar zu vernichten. Esterossa übergibt der Gruppe ein Schwert, mit dem sie Vorgultar verletzen können, und weist auf Lunaras Bruder hin. Vorgultanhänger sind auf dem Weg zur Schlacht an der Oberfläche.
 
-Lunara schlägt vor, Anhänger Vorgultars zu suchen, um Informationen zu erhalten. Sie gibt vor, eine Anhängerin Vorgultars zu sein, wird aber von der Hexe entlarvt, die keinen der vier Götter in ihr spürt.
+- **Session 2026-05-19:** Die Gruppe bestätigt, dass Vorgultar sein Versteck in der Narbe hat. Lunara erklärt: „Volgulta ist der, der das Versteck hat in der Narbe. Das ist der, wo wir uns am Anfang von dem ausgegeben haben, aber ich glaube, wir haben kein Zeichen von ihm.“ Die Gruppe versucht, zu ihm zu gelangen, um Lunaras Bruder zu befreien.
 
-### Session 2026-05-13
+- **Session 2026-06-10:** Vorgultar gibt Befehle aus, die die Gruppe nicht versteht. Er wird als sturer und älter beschrieben, als Vasul erwartet hatte. Seine Anhänger, darunter Seraphen, sind auf dem Berg stationiert.
 
-Die Kreatur übergibt der Gruppe ein Schwert, mit dem Vorgultar verletzt werden kann. Sie fordert die Gruppe auf, Vorgultar zu vernichten, und weist auf Lunaras Bruder hin. Viele Vorgultanhänger sind auf dem Weg zur Gruppe.
+- **Session 2026-06-16:** Vorgultar hat Angst vor etwas, das kommen wird, und ruft seinen engsten Vertrauten zu sich. Die Gruppe versteht seine Befehle: „[Nazirathel](/npcs/nazirathel.md), komm zurück.“ In seinem Klang liegt Angst. Am [Ende](/locations/ende_jenseits_der_orkgebiete.md) der Session erscheint Vorgultar in celestischer Gestalt, nachdem Esterossa den Splitter zerstört hat.
 
-### Session 2026-05-19
-
-Die Gruppe erreicht den Berg zwischen der Narbe. Vorgultar wird als mächtiger Dämon beschrieben, der in der Narbe haust und Lunaras Bruder gefangen hält. Seine Anhänger, darunter Seraphen und Goblins, sind auf dem Berg stationiert. Die Tore lassen nur Diener Vorgultars passieren.
-
-### Session 2026-06-10
-
-Die Gruppe nähert sich Vorgultars Versteck. Sie hört seine Befehle, versteht sie aber zunächst nicht. Dodo vermutet, dass die Kreaturen, denen sie begegnet sind, Anhänger Vorgultars sind.
-
-### Session 2026-06-16
-
-Vorgultar ruft seinen Diener Nazirathel zu sich zurück. Die Gruppe versteht nun seine Befehle und nimmt in seiner Stimme Angst wahr. Er hat Angst vor etwas, das kommen wird. Am Ende der Session erscheint Vorgultar in celestischer Gestalt, nachdem Esterossa den Splitter zerstört hat.
-
-### Session 2026-07-21
-
-Vorgultar erscheint in der Höhle in seiner wahren, massiven Gestalt. Sein Schrei ist das kollektive Schreien der Seelen und überwältigt die Gruppe. Esterossa tritt ihm entgegen und vertreibt ihn – Teile von Vorgultar lösen sich ab, er schreit und zieht sich zurück. Esterossa erklärt, dies sei die einzige Möglichkeit, Lunaras Bruder zu retten.
+- **Session 2026-07-21:** Vorgultar erscheint in der Höhle und schreit mit den Stimmen der Seelen. Er wird von Esterossa vertrieben und zieht sich schreiend zurück. Esterossa erklärt Lunara, dass dies die einzige Möglichkeit sei, ihren Bruder zu retten.
 
 ## Offene Fragen
 
-- Was genau ist die "Narbe", in der Vorgultar haust, und wie verhält sie sich zu Abyssalis als Gefängnis der alten Götter?
-- Welche Rolle spielte Vorgultar im großen Krieg, in dem er gefehlt hat?
-- Was ist die Natur von Vorgultars Angst vor dem, was kommen wird?
-- Was geschah mit Vorgultar nach seiner Vertreibung durch Esterossa – wurde er vernichtet oder nur zurückgedrängt?
-- Was bedeutet es, dass Vorgultar den Seelen den Übergang in die Circuit Below erleichtert haben soll, und wie verhält sich dies zu seiner Rolle als Sammler?
+- Was ist das, vor dem Vorgultar Angst hat und das „kommen wird“?
+- Wer oder was ist Nazirathel, den Vorgultar zu sich zurückruft?
+- Was genau ist die celestische Gestalt, in der Vorgultar erscheint?
+- Welche Rolle spielt der mysteriöse Diener Vorgultars, der aus eigenen Interessen handelt?
+- Was ist der Splitter, den Esterossa zerstört hat, und welche Bedeutung hat er für Vorgultar?
+- Wie genau hängt Esterossas Verbindung zu Vorgultar zusammen (die roten Lichtfäden zwischen ihr und dem Stein)?
+- Was bedeutet es, dass Vorgultar Ulvanara unter seiner Kontrolle hat?
+- Ist Vorgultar durch die Vertreibung endgültig besiegt oder nur zurückgeschlagen?
 
 ## Belege
 
@@ -125,6 +118,7 @@ Vorgultar erscheint in der Höhle in seiner wahren, massiven Gestalt. Sein Schre
 [P-44b] Session 2026-04-14 @ 00:15:15 (https://www.youtube.com/watch?v=1Jyu92P7_Fg)
 [P-47] Session 2026-05-13 @ 01:36:29 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
 [P-49] Session 2026-05-19 @ 00:24:39 (https://www.youtube.com/watch?v=xEcGJeaNixI)
-[P-50] Session 2026-06-10 @ 00:37:33 (https://www.youtube.com/watch?v=_3tLSiT1tck)
+[P-50] Session 2026-06-10 @ 00:37:47 (https://www.youtube.com/watch?v=_3tLSiT1tck)
 [P-53] Session 2026-06-16 @ 00:38:28 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
 [P-54] Session 2026-07-21 @ 00:14:44 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
+[P-55a] Kanon_Entscheidungen.md (Der Jen)

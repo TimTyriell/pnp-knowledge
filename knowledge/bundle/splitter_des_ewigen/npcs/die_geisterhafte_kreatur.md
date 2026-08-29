@@ -9,7 +9,7 @@ timestamp: '2026-05-13T00:00:00Z'
 id: NPC_DIE_GEISTERHAFTE_KREATUR
 ---
 
-Eine geisterhafte Gestalt, die nach der [Zerstörung des Rings](/events/zerstoerung_des_rings.md) erscheint. Sie bietet der Gruppe an, aus [Abyssalis](/domains/splitterwelt.md) zu entkommen, wenn sie [Vorgul'tar](/deities/vorgul_tar.md) vernichten. Sie öffnet ein Portal und übergibt ein Schwert, das Vorgul'tar verletzen kann. Sie nennt sich [Huludan](/deities/huludan.md).
+Eine geisterhafte Gestalt, die nach der [Zerstörung des Rings](/events/zerstoerung_des_rings.md) erscheint. Sie bietet der Gruppe an, aus [Abyssalis](/domains/splitterwelt.md) zu entkommen, wenn sie [Vorgul'tar](/deities/vorgul_tar.md) vernichten. Sie öffnet ein [Portal](/locations/portal.md) und übergibt ein Schwert, das Vorgul'tar verletzen kann. Sie nennt sich [Huludan](/deities/huludan.md).
 
 # Belege
 

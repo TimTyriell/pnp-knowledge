@@ -9,7 +9,7 @@ timestamp: '2026-02-24T00:00:00Z'
 id: NPC_MARUS
 ---
 
-Marus ist der Bandenleiter der [Silberkornbande](/factions/silberkerne.md), der die Gruppe empfängt. Er ist misstrauisch, aber lässt sie nach einem Vertrauensbeweis ins Lager. Er gibt Informationen über die [Mine](/locations/kristallmine.md) und warnt vor den Kreaturen. Am [Ende](/locations/ende_jenseits_der_orkgebiete.md) lädt er die Gruppe zu einem Bier ein.
+Marus ist der Bandenleiter der [Silberkornbande](/factions/silberkerne.md), der die Gruppe empfängt. Er ist misstrauisch, aber lässt sie nach einem Vertrauensbeweis ins Lager. Er gibt Informationen über die [Mine](/locations/verlassene_mine_an_der_farm.md) und warnt vor den Kreaturen. Am [Ende](/locations/ende_jenseits_der_orkgebiete.md) lädt er die Gruppe zu einem Bier ein.
 
 # Belege
 

@@ -10,7 +10,7 @@ id: EVENT_AUFTRAG_VON_JORAH_VANUR
 subtype: Vertrag
 ---
 
-[Jorah Vanur](/npcs/jorah_vanur.md) bietet der Gruppe an, die Handelswege nach [Salzbach](/locations/salzbach.md) zu sichern. Die Gruppe nimmt an und feiert den Abschluss.
+[Jorah Vanur](/npcs/joar_vanur.md) bietet der Gruppe an, die Handelswege nach [Salzbach](/locations/salzbach.md) zu sichern. Die Gruppe nimmt an und feiert den Abschluss.
 
 # Belege
 

@@ -1,96 +1,138 @@
 ---
 type: Location
 title: Breska
-description: Breska ist eine kleine Siedlung, die im Verlauf der Kampagne eine bemerkenswerte
-  und zugleich tragische Entwicklung durchläuft. Ursprünglic…
+description: Breska ist eine kleine Siedlung, die in einem Tal an einem kleinen Berg
+  liegt und von einer Lichtung umgeben ist. Ursprünglich ein bescheid…
 tags:
 - locations
 timestamp: '2026-08-04T00:00:00Z'
 id: LOC_BRESKA
 subtype: Siedlung
 aliases:
+- Bresca
+- Dorf (Bresca?)
+- Breschka
+- Bereska
 - Breska
 - Brechka
-- Bereska
 ---
 
 # Breska
 
 ## Überblick
 
-Breska ist eine kleine Siedlung, die im Verlauf der Kampagne eine bemerkenswerte und zugleich tragische Entwicklung durchläuft. Ursprünglich ein naturbelassenes Dorf mit zwei großen Bauernhöfen, einer Taverne, einem Friedhof und einem Schmied, wächst es innerhalb eines Jahres zu einer Kleinstadt mit Stadtmauer, Kapelle, Gilde, Lazarett und Gardistenhaus heran – nur um schließlich von einer Armee Untoter vollständig zerstört zu werden. Die Siedlung liegt in einem Tal und ist die Heimat der Gruppe beziehungsweise der Ort, an dem sie ihren ersten großen Auftrag erfüllt. Im Vergleich zu Städten wie Willau wirkt Breska zunächst unbedeutend, gewinnt aber durch die Ereignisse um den Fürsten Voras und die Belagerung durch Untote zentrale Bedeutung für die Kampagne.
+Breska ist eine kleine Siedlung, die in einem Tal an einem kleinen Berg liegt und von einer Lichtung umgeben ist. Ursprünglich ein bescheidenes Dorf mit zwei großen Bauernhöfen, einer Schenke, einem Friedhof und einem Magierhaus, entwickelte sich der Ort innerhalb eines Jahres zu einer Kleinstadt mit Stadtmauer, [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md), [Gilde](/factions/gilde_von_ehrenfels.md), Lazarett, Gardistenhaus und ausgebauter Taverne. [P-03] [P-13] [P-22] Die Siedlung liegt im Vergleich zu größeren Städten wie [Willau](/locations/willauch.md) oder [Ehrenfels](/locations/ehrenfels.md) eher unbedeutend, ist aber über die gesamte Kampagne hinweg ein zentraler Schauplatz geblieben. [P-26]
+
+Die Geschichte Breskas ist von einem bemerkenswerten Aufstieg und einem ebenso dramatischen Niedergang geprägt: Vom bedrohten Dorf zur prosperierenden Stadt, dann zur belagerten [Festung](/locations/festung.md) und schließlich zur zerstörten Ruine. [P-13] [P-33] [P-40] [P-52] [P-55]
 
 ## Rolle in der Kampagne
 
-Breska ist der Schauplatz des ersten großen Auftrags der Gruppe: Sie soll das Dorf vor einem Goblinangriff verteidigen. Der Ort wird damit zum Ausgangspunkt der gemeinsamen Geschichte der Gefährten. In den Schriftrollen, die die Gruppe später findet, wird Breska als Ziel von Angriffen erwähnt; dort soll ein Magier etwas gefunden haben, das für Lanra wichtig ist.
+Breska ist der Ausgangspunkt und wiederkehrende Bezugspunkt der Gruppe. Die Gefährten kamen erstmals mit dem Auftrag dorthin, das Dorf auf einen bevorstehenden Goblinangriff vorzubereiten. [P-03] Die Verteidigung Breskas gegen die Goblinhorde wurde zur ersten großen Schlacht der Gruppe und begründete ihren Ruf als „Retter des Dorfes Breska“. [P-13]
 
-Nach der erfolgreichen Verteidigung entwickelt sich Breska rasant zu einer Kleinstadt, die vom Grafen finanziert wird. Die Gruppe wird als „Retter des Dorfes" gefeiert. Doch die schnelle Entwicklung erweist sich als zwiespältig: Die Stadt verändert sich zum Schlechteren, Flüchtlinge werden nicht hineingelassen, und schließlich wird Breska von einer Armee Untoter unter der Führung von Belorus belagert und zerstört. Die Gruppe erhält den Auftrag, eine wichtige Botschaft von Breska nach Ehrenfels zu bringen. Später wird Breska zum Zufluchtsort nach der Flucht aus Abyssalis – allerdings nur noch als Ruine.
+Über die Kampagne hinweg war Breska mehrfach Ziel von Angriffen und Schauplatz wichtiger Ereignisse:
+
+- Die Gruppe verteidigte das Dorf gegen eine Goblinhorde, die durch einen gefälschten Angriffsplan in einen Hinterhalt gelockt wurde. [P-03] [P-13]
+- Unter dem Friedhof von Breska entdeckte die Gruppe Katakomben und erweckte dort **[Voras](/npcs/voras.md) den Heiligen**, eine vampirhafte Gestalt, die in einem Sarkophag schlief. [P-13]
+- Die Stadt wurde später von Untoten belagert, die Mauern fielen, und die Bevölkerung verhungerte. [P-33]
+- [Belorus](/npcs/belorus.md), ein dunkler Paladin mit einer untoten Armee, zerstörte Breska vollständig. [P-40] [P-52]
+- Nach der Flucht aus [Abyssalis](/domains/splitterwelt.md) kehrte die Gruppe in die Ruinen von Breska zurück; nur das Anwesen von [Voras](/npcs/vora.md) stand noch. [P-55]
 
 ## Wichtige Merkmale
 
 ### Lage und Beschaffenheit
 
-Breska liegt auf einer kleinen Lichtung, umgeben von Bäumen und einem kleinen Berg. Das ursprüngliche Dorf ist naturbelassen und besteht aus wenigen Häusern, zwei großen Bauernhöfen, einer Taverne, einem Friedhof und einem Schmied. Die Fenster sind mit Gittern gesichert, und zwei Wachen schützen den Ort.
+Breska liegt in einem Tal und ist von einem kleinen Berg und Bäumen umgeben. [P-03] [P-40] Die ursprüngliche Siedlung bestand aus zwei großen Bauernhöfen, einer Schenke, einem Friedhof und einem Magierhaus. Die Fenster waren vergittert, und das Dorf wurde von zwei Wachen geschützt. [P-03]
 
-Nach dem Ausbau erhält Breska eine große Stadtmauer (Palisade), eine Kapelle auf dem Hügel, eine ausgebaute Taverne, einen Marktplatz, ein Lazarett, ein Gardistenhaus, eine Gilde und mindestens vier neue Gebäude. Die Stadt wird von Söldnern bewacht.
-
-Nach der Zerstörung durch Belorus liegt Breska in Trümmern. Ein unnatürlicher Nebel umgibt den Ort, die Gebäude sind zerstört – doch das Anwesen von Voras ist noch intakt. Auffällig ist, dass keine Leichen zu finden sind. Später steht nur noch das Anwesen des Fürsten, der Ort ist vollständig verwaist.
+Nach dem Ausbau verfügte Breska über eine große Stadtmauer (ursprünglich eine Palisade), eine Kapelle auf dem Hügel, eine ausgebaute Taverne, einen Marktplatz, ein Lazarett, ein Gardistenhaus, eine Gilde und mindestens vier neue Gebäude. [P-13] [P-22] Die Stadtmauer war im Vergleich zu der von Willau allerdings „ein Witz“ — Willaus Mauer war deutlich beeindruckender. [P-26]
 
 ### Bewohner und Einrichtungen
 
-Die ursprünglichen Bewohner sind einfache Bauern und Handwerker. Der Bürgermeister ist stolz auf die Entwicklung seiner Stadt. Eine Priesterin namens Auraniell (auch Auranie transkribiert) wirkt in der Kapelle; sie wird später aus der Stadt verbannt. Der Magier Leandras lebt in einem Magierturm am Dorfrand und hütet das Geheimnis der Gruft unter dem Friedhof.
+- **[Bürgermeister](/npcs/buergermeister_spitzzahn.md) [Berthold](/npcs/berthold.md)**: Stolz auf die Entwicklung seiner Stadt, zeigte er Besuchern gerne die neuen Gebäude. [P-13]
+- **[Leandras](/npcs/lendras.md) der Magier**: Ein wissbegieriger Zauberer, der im Magierturm am Dorfrand lebte. Er rief während der Gobinschlacht die zweite Schar zur Hilfe und übergab der Gruppe einen schweren, alten [Schlüssel](/items/magischer_schluessel.md), der zu den Katakomben unter dem Friedhof führte. [P-13] [P-16]
+- **[Priesterin Auraniell](/npcs/auranil.md)** (auch Auranie): Eine Priesterin, die in Breska wirkte und später von dort verbannt wurde. [P-13] [P-30]
+- **[Valeria](/characters/valeria.md)**: Eine Magierin in rauchfleckiger Robe, die von der Gilde vorausgeschickt wurde, um das Dorf zu warnen. [P-13]
+- **[Rotunas](/characters/rotunas.md)**: Ein Krieger und Kleriker von wuchtiger Kraft, der mit Eis und Donner zaubern konnte. Er begleitete Valeria zur Warnung Breskas. [P-13]
+- **Voras der Heilige**: Eine uralte, vampirhafte Gestalt, die in einem Sarkophag unter dem Friedhof schlief und von der Gruppe geweckt wurde. Sein Anwesen überstand als einziges Gebäude die Zerstörung Breskas. [P-13] [P-40] [P-55]
 
 ## Beziehungen und Verbindungen
 
-- **Die Gruppe**: Breska ist der Ort, an dem die Gruppe ihren ersten großen Auftrag erfüllt und als Helden gefeiert wird. Die Gefährten kehren mehrfach zurück und erleben den Aufstieg und Fall der Stadt.
-- **Voras der Heilige**: Unter dem Friedhof von Breska liegt die Gruft des Fürsten Voras, der dort seit hundert Jahren schläft. Die Gruppe weckt ihn, um die Gemahlin des Fürsten vor einer Hexe zu schützen. Voras' Anwesen übersteht als einziges Gebäude die Zerstörung.
-- **Leandras**: Der Magier von Breska kennt das Geheimnis der Gruft und übergibt der Gruppe den Schlüssel. Er wird als „Zauberer in Breska" bezeichnet, den die Gruppe zunächst nicht überzeugen konnte.
-- **Belorus**: Der dunkle Paladin führt die Armee der Untoten an, die Breska belagert und schließlich zerstört.
-- **Die Sumpfhexe**: Sie startete einen Angriff auf Breska und jagt die Gemahlin von Voras.
-- **Der Graf**: Finanziert den Ausbau der Stadt.
-- **Willau und Ehrenfels**: Breska steht in Verbindung zu diesen Städten; eine wichtige Botschaft soll von Breska nach Ehrenfels gebracht werden. Willau treibt Handel mit Breska.
-- **Die Assassinen**: Breska wird als eine der Städte genannt, die Handel mit den Assassinen treiben.
+- **Die Gilde**: Breska wurde von der Gilde unterstützt, die sowohl die Verteidigung des Dorfes organisierte als auch später die Stadt finanzierte. Die Gruppe wurde als „Retter des Dorfes“ begrüßt. [P-13]
+- **Der Graf**: Die Stadt wurde vom Grafen finanziert. [P-13]
+- **Willau**: Willau und Breska trieben Handel, unter anderem mit den [Assassinen](/factions/assassinen.md) im Norden. [S1-02-A]
+- **Ehrenfels**: Die Gruppe hatte den Auftrag, eine wichtige Botschaft von Breska nach Ehrenfels zu bringen. [P-32]
+- **Flüchtlinge**: Viele [Flüchtlinge aus Breska](/factions/fluechtlinge_aus_breska.md) wurden im [Banditenlager](/locations/banditenlager_der_silberkerne.md) untergebracht, nachdem sie nicht in die Stadt gelassen worden waren. [P-23] [P-34]
 
 ## Chronologie
 
-- **Erste Ankunft**: Die Gruppe kommt in Breska an, um das Dorf auf einen bevorstehenden Goblinangriff vorzubereiten. Das Dorf ist klein und naturbelassen, mit zwei Bauernhöfen, einer Taverne, einem Friedhof und einem Schmied.
-- **Goblinangriff**: Die Gruppe verteidigt Breska gegen eine Horde Goblins, angeführt von einem Oger, einem Krähenwesen und einem Grottenschrat. Die Gilde hatte die Magier Valeria und Rotunas vorausgeschickt, die den Angriffsplan der Goblins fälschten und eine Falle vorbereiteten. Lindo Laut singt entgegen dem Plan ein lautes Lied, das die Falle verrät, aber die Verteidiger stärkt. Nach dem Sieg führt Leandras die Gruppe zur Gruft unter dem Friedhof.
-- **Weckung von Voras**: Die Gruppe öffnet den Sarkophag von Voras dem Heiligen (einst „Voras der Schrecken" genannt) und weckt ihn. Er zeigt sich höflich, aber unheimlich.
-- **Wiederkehr nach Monaten**: Die Gruppe kehrt nach Breska zurück und findet eine Stadtmauer, eine Kapelle, eine ausgebaute Taverne und neue Gebäude vor. Der Bürgermeister ist stolz; die Gruppe wird als „Retter des Dorfes" begrüßt. Die Stadt wird vom Grafen finanziert, und eine Priesterin namens Auraniell wirkt dort.
-- **Weitere Angriffe**: Breska hat inzwischen zwei Dutzend Angriffe erlebt. Leandras der Magier wird der Gruppe vorgestellt; er hatte sich während des ersten Angriffs in seinem Haus versteckt.
-- **Ein Jahr später**: Breska hat sich zu einer Kleinstadt entwickelt – mit Gilde, Lazarett, Gardistenhaus und größerer Taverne. Die Gruppe stellt fest, dass sich die Stadt zum Schlechteren verändert hat.
-- **Flüchtlinge**: Die Gruppe trifft Flüchtlinge aus Breska, die nicht in die Stadt gelassen wurden. Sie beschließt, ihnen zu helfen und bringt sie zu einer Ruine, wo Banditen sich aufhalten.
-- **Belagerung durch Untote**: Breska wird von Untoten bedroht. Es kommen keine Neuigkeiten aus der Stadt; Boten kehren nicht zurück. Die Priesterin Auranie wird aus der Stadt verbannt.
-- **Hilferuf**: Ein Soldat aus Breska, mit einem Pfeil in der Schulter, bittet die Gruppe um Hilfe. Die Stadt leidet unter Nahrungsmittelknappheit. Die Gruppe erhält den Auftrag, eine wichtige Botschaft von Breska nach Ehrenfels zu bringen.
-- **Fall der Mauern**: Ein Hilferuf von Voras dem Heiligen berichtet, dass die Mauern gefallen sind und die Bevölkerung verhungert. Die Gruppe erwägt, nach Breska zu reisen, entscheidet sich aber zunächst für den Rückzug.
-- **Zerstörung**: Breska wird von Belorus zerstört. Die Gebäude liegen in Trümmern, nur das Anwesen von Voras ist intakt. Es gibt keine Leichen, was ungewöhnlich ist. Ein unnatürlicher Nebel umgibt den Ort.
-- **Endgültige Zerstörung**: Eine Armee von Untoten hat Breska vollständig zerstört; es steht nichts mehr.
-- **Rückkehr als Ruine**: Nach der Flucht aus Abyssalis öffnet die Gruppe ein Portal nach Breska. Das Anwesen des Fürsten steht noch, aber der Ort ist verwaist. Beim späteren Besuch auf dem Rückweg ist Breska nur noch Asche; niemand ist dort, nur Tiere.
+### Die Ankunft und der Goblinangriff
+
+Die Gruppe kam nach einer langen Reise in Breska an, das von einer Goblinhorde bedroht wurde. Die Gilde hatte bereits die Magierin Valeria und den Krieger Rotunas vorausgeschickt, die das Dorf warnten und den Angriffsplan der [Goblins](/npcs/pilz_goblins.md) fälschten, um sie in einen Hinterhalt zwischen einem großen Stein und dem Friedhof zu locken. [P-13]
+
+Die Horde griff in der Dämmerung an — Goblins, ein [Oger](/npcs/oger.md), ein krähengleiches Wesen und ein [Grottenschrat](/npcs/grottenschrat.md). [Lindo Laut](/characters/lindo_laut.md) sang ein Lied, das die Verteidiger stärkte, aber den Hinterhalt verriet. In der Schlacht fiel ein junger Schmied; einen zweiten Verwundeten rettete [Esterossa](/characters/esterossa.md) mit heilender Magie. Rotunas brachte den Oger zu Fall, Valeria tötete ihn mit Wildfeuer. [P-13]
+
+[Leandras](/npcs/lenra.md), der Magier, wurde am Turm von dem Krähenwesen und dem Grottenschrat bedrängt und rief per Horn um Hilfe. Die Gruppe eilte ihm zu Hilfe und rettete ihn. Zum Dank übergab er ihnen einen schweren, alten Schlüssel. [P-13]
+
+### Die Entdeckung der Katakomben
+
+Der Schlüssel passte zu einem verborgenen Tor unter dem ältesten Grab auf dem Friedhof. In der Gruft fanden die Gefährten zwei Sarkophage. Auf einem stand in halb verwitterten Lettern der Name „VORAS DER SCHRECKEN“ — das letzte Wort war mit einem Meißel verändert worden. Die Gruppe öffnete den Sarkophag und erweckte eine bleiche, vampirhafte Gestalt, die sich selbst als „Voras der Heilige“ vorstellte und die Inschrift als Lüge bezeichnete. [P-13]
+
+Leandras erklärte, eine Hexe jage die Gemahlin dessen, der hier unten ruhe. Solange er schlafe, sei sie sicher. Voras, kaum erwacht, tötete die fliehenden Goblins im Alleingang. [P-13]
+
+### Der Wiederaufbau
+
+Monate später kehrte die Gruppe nach Breska zurück und fand eine verwandelte Stadt vor: eine Stadtmauer, eine Kapelle, eine ausgebaute Taverne und neue Gebäude. Der Bürgermeister war stolz auf die Entwicklung. Die Stadt wurde vom Grafen finanziert und hatte eine Priesterin namens Auraniell. Die Gruppe wurde als „Retter des Dorfes Breska“ begrüßt. [P-13]
+
+Ein Jahr nach der Schlacht war Breska zu einer Kleinstadt gewachsen, größer als die Gilde selbst. Die Gruppe stellte jedoch fest, dass sich die Stadt zum Schlechteren verändert hatte. [P-22]
+
+### Die Flüchtlinge
+
+Die Gruppe traf in Breska Flüchtlinge, die nicht in die Stadt gelassen wurden. Der Anführer der Flüchtlingsgruppe sollte beseitigt werden, doch die Gruppe entschied sich, die Flüchtlinge zu schützen und sie zu einer Ruine zu schicken, wo [Banditen](/factions/silberkerne.md) sich aufhielten. [P-23] [P-34]
+
+### Die Belagerung durch Untote
+
+Breska wurde von Untoten bedroht. Es gab keine Neuigkeiten aus der Stadt, und keiner der Boten kam durch oder kehrte zurück. Die Priesterin Auranie wurde von dort verbannt. [P-30]
+
+Ein [Soldat aus Breska](/npcs/hans_soldat_aus_breska.md), der eine wichtige Botschaft nach Ehrenfels bringen sollte, wurde von Untoten angegriffen und starb. Die Gruppe übernahm den Auftrag. [P-32]
+
+Ein Hilferuf von Voras dem Heiligen berichtete, dass die Mauern gefallen seien und die Bevölkerung verhungere. Die Gruppe erwog, nach Breska zu reisen, entschied sich aber zunächst für den Rückzug. [P-33]
+
+### Die Zerstörung
+
+Belorus, ein dunkler Paladin mit einer riesigen untoten Armee, zerstörte Breska vollständig. Das Dorf lag in einem Tal und war von einem unnatürlichen Nebel umgeben. Die Gebäude waren zerstört, aber das Anwesen von Voras war noch intakt. Es gab keine Leichen, was ungewöhnlich war. [P-40]
+
+Später wurde bestätigt: Breska wurde von einer Armee von Untoten zerstört, es stand nichts mehr. [P-52]
+
+### Die Ruine
+
+Nach der Flucht aus Abyssalis öffnete Lindo Laut ein [Portal](/locations/portal.md) nach Breska. Die Gruppe kam in den Ruinen an; nur das Anwesen von Voras stand noch. Der Ort war verwaist — nach dem Tod von Voras dem Heiligen schien niemand mehr dort zu sein. [P-55]
+
+Auf dem Rückweg besuchte die Gruppe Breska erneut, aber die Stadt war nur noch Asche. Niemand war dort, nur Tiere. [S1-01-A]
 
 ## Offene Fragen
 
-- Was genau hat der Magier in Breska gefunden, das für Lanra wichtig ist? Die Schriftrollen deuten darauf hin, aber der Name der gesuchten Person wird nicht genannt.
-- Warum sind nach der Zerstörung durch Belorus keine Leichen in Breska zu finden?
-- Was geschah mit der Bevölkerung von Breska – wurden die Bewohner getötet, vertrieben oder etwas anderem zugeführt?
-- Welche Rolle spielte die verbannte Priesterin Auraniell im Zusammenhang mit dem Untergang der Stadt?
+- Was genau suchte die Zielperson, die in den [Schriftrollen](/items/schriftrollen.md) in Breska verzeichnet war? Der Name wurde nicht bekannt gegeben. [P-04]
+- Was hatte der Magier in Breska gefunden, das für Lanra wichtig war? [P-04]
+- Warum gab es nach der Zerstörung Breskas keine Leichen? [P-40]
+- Was geschah mit der Bevölkerung Breskas nach dem Fall der Mauern? [P-33] [P-40]
 
 ## Belege
 
-[P-03] Session 2025-04-09 @ 00:03:40 (https://www.youtube.com/watch?v=1PWdwvun5ow)
-[P-04] Session 2025-04-15 @ 01:33:07 (https://www.youtube.com/watch?v=YCpAz_syjaY)
-[P-13] Session 2025-06-25 @ 00:04:00 (https://www.youtube.com/watch?v=tpkO9uGw6-I)
-[P-16] Session 2025-07-29 @ 00:08:23 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
-[P-22] Session 2025-09-17 @ 00:08:22 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
-[P-23] Session 2025-09-23 @ 00:21:26 (https://www.youtube.com/watch?v=DGzfqVigS0g)
-[P-26] Session 2025-10-14 @ 00:03:04 (https://www.youtube.com/watch?v=cUtz87UCHu4)
-[P-30] Session 2025-11-18 @ 00:57:00 (https://www.youtube.com/watch?v=w__ahowb9p0)
-[P-32] Session 2026-01-06 @ 00:39:59 (https://www.youtube.com/watch?v=VGw81seFvbo)
-[P-33] Session 2026-01-13 @ 00:38:41 (https://www.youtube.com/watch?v=w4LB1s9_3rs)
-[P-34] Session 2026-01-20 @ 00:06:59 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
-[P-40] Session 2026-03-10 @ 00:03:00 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
-[P-52] Session 2026-06-04 @ 02:12:00 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
-[P-55] Session 2026-07-21 @ 01:47:59 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
-[S1-01-A] Session 2026-07-29 @ 00:03:00 (https://www.youtube.com/watch?v=umGyKLkefJI)
-[S1-02-A] Session 2026-08-04 @ 02:11:28 (https://www.youtube.com/watch?v=qRj2t3wQHfs)
-17. Kapitel 3 — Die Glocken von Breska (aus Der_Splitter_des_Ewigen.md)
-18. Kanon_Entscheidungen.md (ENTSCHEIDUNG zur Schreibweise „Breska")
+[P-03] Session 2025-04-09 @ 00:03:00 — https://www.youtube.com/watch?v=1PWdwvun5ow
+[P-04] Session 2025-04-15 @ 01:33:07 — https://www.youtube.com/watch?v=YCpAz_syjaY
+[P-13] Session 2025-06-25 @ 00:04:00 — https://www.youtube.com/watch?v=tpkO9uGw6-I
+[P-16] Session 2025-07-29 @ 00:08:23 — https://www.youtube.com/watch?v=XXgO5Ht4Q0A
+[P-22] Session 2025-09-17 @ 00:08:22 — https://www.youtube.com/watch?v=AhIT8dcxw2o
+[P-23] Session 2025-09-23 @ 00:21:26 — https://www.youtube.com/watch?v=DGzfqVigS0g
+[P-26] Session 2025-10-14 @ 00:03:04 — https://www.youtube.com/watch?v=cUtz87UCHu4
+[P-30] Session 2025-11-18 @ 00:57:00 — https://www.youtube.com/watch?v=w__ahowb9p0
+[P-32] Session 2026-01-06 @ 00:39:59 — https://www.youtube.com/watch?v=VGw81seFvbo
+[P-33] Session 2026-01-13 @ 00:38:41 — https://www.youtube.com/watch?v=w4LB1s9_3rs
+[P-34] Session 2026-01-20 @ 00:06:59 — https://www.youtube.com/watch?v=H3ckYdTv4y8
+[P-40] Session 2026-03-10 @ 00:03:00 — https://www.youtube.com/watch?v=Kr9_AC2XtOw
+[P-52] Session 2026-06-04 @ 02:12:00 — https://www.youtube.com/watch?v=EGNh8O7pE5Q
+[P-55] Session 2026-07-21 @ 01:47:59 — https://www.youtube.com/watch?v=KNV4oNGJ0tw
+[S1-01-A] Session 2026-07-29 @ 00:03:00 — https://www.youtube.com/watch?v=umGyKLkefJI
+[S1-02-A] Session 2026-08-04 @ 02:11:28 — https://www.youtube.com/watch?v=qRj2t3wQHfs
+17. Der_Splitter_des_Ewigen.md, Kapitel 3 — Die Glocken von Breska
+18. Der_Splitter_des_Ewigen_Buch1.md, Drittes Kapitel: Breschka rüstet sich
+19. Kanon_Entscheidungen.md — Breska (kanonische Schreibweise)

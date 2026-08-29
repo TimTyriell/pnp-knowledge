@@ -15,7 +15,7 @@ aliases:
 
 # Kapelle von Ehrenfels
 
-Die Kapelle von Ehrenfels ist ein heiliger Ort der neuen Götter in der Siedlung Ehrenfels. Sie wird von Harloen betreut und gilt als Ort der Ruhe. Die Kapelle ist eng mit den Ereignissen um die Gruppe verbunden: Sie wird bei der Suche nach einer Unterbringung für Liam erwähnt und ist später Schauplatz einer Begegnung mit Vitius und Nerash, die das Vertrauen der Gruppe in die Kapelle und die neuen Götter erschüttert.
+[Die Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) von [Ehrenfels](/locations/ehrenfels.md) ist ein heiliger Ort der neuen Götter in der Siedlung Ehrenfels. Sie wird von [Harloen](/npcs/harloen.md) betreut und gilt als Ort der Ruhe. Die Kapelle ist eng mit den Ereignissen um die Gruppe verbunden: Sie wird bei der Suche nach einer Unterbringung für [Liam](/npcs/liam_velora.md) erwähnt und ist später Schauplatz einer Begegnung mit [Vitius](/npcs/vitius.md) und [Nerash](/deities/nerash.md), die das Vertrauen der Gruppe in die Kapelle und die neuen Götter erschüttert.
 
 ## Lage und Funktion
 

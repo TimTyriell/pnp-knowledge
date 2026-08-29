@@ -1,117 +1,90 @@
 ---
 type: Deity
 title: Nerash
-description: Nerash ist eine Gottheit, die im Verlauf der Kampagne eine zentrale und
-  zunehmend ambivalente Rolle einnimmt. Sie wird zunächst als gefesse…
+description: Nerash ist eine Gottheit, die im Verlauf der Kampagne mehrfach in Erscheinung
+  tritt und deren Rolle sich dabei grundlegend wandelt. Erstmal…
 tags:
 - deities
 timestamp: '2026-08-12T00:00:00Z'
 id: DEITY_NERASH
 subtype: Halbgott
+aliases:
+- Nehrasch
+- Neiraj
 ---
-
-# Nerash
 
 ## Überblick
 
-Nerash ist eine Gottheit, die im Verlauf der Kampagne eine zentrale und zunehmend ambivalente Rolle einnimmt. Sie wird zunächst als gefesselte Kreatur in einer Kapelle entdeckt und von der Gruppe befreit, wobei sie sich selbst als Demigott bezeichnet [1]. Im weiteren Verlauf offenbart sie sich als eine Gottheit, die einst für die neuen Götter kämpfte, später jedoch in Gefangenschaft geriet [1]. Ihre Natur bleibt über lange Zeit unklar: Sie wird mal als Demigöttin, mal als neue Göttin, mal als engelsgleicher Dämon beschrieben [2][6][8]. Ihre Verbindung zu Vasul, einem zentralen Antagonisten der Kampagne, wird mehrfach angedeutet und bleibt ein wiederkehrendes Thema [5][9][11].
+Nerash ist eine Gottheit, die im Verlauf der Kampagne mehrfach in Erscheinung tritt und deren Rolle sich dabei grundlegend wandelt. Erstmals begegnet die Gruppe ihr als gefesselte Kreatur in einer [Festung](/locations/festung.md), die sie aus einer anderen Dimension befreit. Nerash stellt sich als Demigott beziehungsweise Demigöttin heraus, die einst für die neuen Götter kämpfte, und schenkt der Gruppe nach ihrer Befreiung kleine weiße Totems. [1][2]
 
-Nerash besitzt ein Totem beziehungsweise eine kleine Statue, die die Gruppe bei sich trägt und in Notsituationen berührt, um ihre Aufmerksamkeit zu erlangen [3][4]. Sie erscheint der Gruppe in Träumen und überreicht eine Schriftrolle mit einem Zauberspruch [6]. In der Stadt Ehrenfels errichtet sie eine Kapelle und ihre Diener übernehmen dort die Macht [12][13]. Am Ende der bisherigen Chronologie tritt sie persönlich in Erscheinung, sichtlich geschwächt und verletzt, und offenbart, dass sie die Gruppe vor den neuen Göttern beschützt hat [14].
+Im weiteren Verlauf erweist sich Nerash als zunehmend ambivalente Figur: Sie erscheint der Gruppe in Träumen, überreicht eine Schriftrolle mit einem Zauberspruch gegen [Vasul](/deities/vharzul.md), taucht nach der Zerstörung eines [Portals](/locations/portal.md) als engelsgleicher Dämon auf und tötet dabei [Sandro](/npcs/sandro.md) und [Voras](/npcs/voras.md), bevor [Rotunas](/characters/rotunas.md) sich opfert, um sie zu vernichten. [6][8] Später wird Nerash in [Ehrenfels](/locations/ehrenfels.md) als rettende Gottheit verehrt, deren Diener dort die Macht übernommen haben. [10][12] In der [Kapelle von Ehrenfels](/locations/kapelle_von_ehrenfels.md) erscheint sie schließlich persönlich, sichtlich geschwächt und verletzt, und offenbart, dass sie die Gruppe vor den neuen Göttern beschützt habe. [14]
 
 ## Rolle in der Kampagne
 
-Nerash ist eine der zentralen göttlichen Entitäten der Kampagne. Ihre Rolle wandelt sich im Verlauf der Sessions erheblich:
+Nerash ist über mehrere Handlungsstränge hinweg mit der Gruppe verbunden. Nach ihrer Befreiung aus der Festung erhält jedes Gruppenmitglied ein kleines weißes Totem von ihr, das als Kommunikations- und Hilfsmittel dient. [1][2] [Esterossa](/characters/esterossa.md) trägt zusätzlich eine kleine Statue von Nerash bei sich, die sie im Notfall berühren will. [4] Als die Gruppe auf einen [Seraphen](/factions/seraphen.md) trifft, hält Esterossa ihm die Statue entgegen mit den Worten: „Wir haben deine Gottheit aus ihrem Gefängnis befreit. Willst du uns, die deiner Gottheit schuldig sind, hier richten?" [Der Seraph](/npcs/der_seraph.md) reagiert darauf sichtlich schockiert und geht vor Schmerzen auf ein Knie. [9]
 
-Zunächst ist sie ein Objekt der Befreiung: Die Gruppe findet sie in einer Kapelle gefesselt vor, mit magischen Ketten auch am Mund, und befreit sie [1]. Nach der Befreiung zerstört sie die Statue von Kol Merefs und rettet die Gruppe dadurch vor einer Explosion [1]. Die Gruppe erhält von ihr ein Totem als Zeichen der Verbindung [2].
+In einem Traum erscheint Nerash [Dodo](/characters/dodo.md) und übergibt ihm eine Schriftrolle mit einem Zauberspruch, um den Teil von Vasul aus [Lindo Laut](/characters/lindo_laut.md) zu vertreiben. Der Zauber soll in [Abyssalis](/domains/splitterwelt.md), bei den Szenen des Wahnsinns und den lila Bergen, gewirkt werden. [6] Nox bezweifelt allerdings, dass Nerash uneigennützig handelt, und fragt: „Wenn es ein Gott ist, warum kann er nicht selber das tun, was ihr..." [6]
 
-In der Folgezeit wird Nerash zu einer Art Schutzpatronin der Gruppe. Esterossa trägt eine kleine Statue von ihr bei sich, die sie im Notfall berühren will [4]. Als die Gruppe auf einen Seraphen trifft, hält Esterossa ihm die Statue von Nerash entgegen, was ihn sichtlich schwächt und schockiert [9]. Nerash erscheint Dodo im Traum und übergibt eine Schriftrolle mit einem Zauberspruch, um Vasul aus Lindo Laut zu vertreiben [6].
-
-Gegen Ende der bisherigen Chronologie wird ihre Rolle zunehmend problematischer. In Ehrenfels haben ihre Diener die Macht übernommen, und die Bewohner sind gezwungen, ihr zu huldigen [12]. Die Gruppe erfährt von anderer Seite, dass Nerash erst nach dem Kampf gegen die Dämonen erschien und versuchte, Nox zu töten, woraufhin Rotunas eingriff [13]. Nerash selbst tritt schließlich persönlich in der Kapelle auf, geschwächt und verletzt, und offenbart, dass sie die Gruppe vor den neuen Göttern beschützt hat [14].
+Nach der [Zerstörung des Portals](/events/zerstoerung_des_portals.md) erscheint Nerash als engelsgleicher Dämon, tötet Sandro und [Voras](/npcs/vora.md) und richtet ihr Schwert auf die Gruppe. Rotunas opfert sich, um sie zu vernichten. [8] In Ehrenfels haben in der Folge Diener Nerashs die Macht übernommen; die Bewohner sind gezwungen, ihr zu huldigen. [12] Die Gruppe hat zu diesem Zeitpunkt die [Schriftrolle von Nerash](/items/schriftrolle_von_nerash.md) bereits benutzt, was sich möglicherweise als problematisch erweist. [12]
 
 ## Wichtige Merkmale
 
-### Auftreten und Erscheinungsform
+Nerash wird in den Quellen unterschiedlich beschrieben. Zunächst als gefesselte Kreatur in einer Festung, die sich nach ihrer Befreiung als Demigott herausstellt. [1] Sie kämpft gegen die dunkle Energie einer Statue und zerstört sie. [1] Sie wird als „verlorener Demigott" beschrieben, der einst für die neuen Götter kämpfte, und scheint der Gruppe wohlgesonnen. [1]
 
-Nerash wird in unterschiedlichen Erscheinungsformen beschrieben. Bei ihrer Befreiung ist sie eine gefesselte Kreatur, deren Gesicht hinter einer Maske verborgen ist, die es unmöglich macht, einen Blick von Hoffnung in ihren Augen zu deuten [1]. Bei ihrem Erscheinen nach der Zerstörung des Portals wird sie als dämonenartige Gestalt beschrieben, die aber irgendwie wie ein Engel aussieht [8]. Sie wird als "engelsgleicher Dämon" charakterisiert [8].
+Bei ihrem Erscheinen nach der Zerstörung des Portals wird sie als „dämonenartige Gestalt" beschrieben, „die aber irgendwie ja doch so wie ein Engel aussieht". [8] Sie tötet Sandro, indem sie ihn durch die Luft ins Lichtfeld schleudert, und durchtrennt Voras mit ihrer Klaue, bevor sie ihn ins Nichts schmettert. [8] Engelesgleiche Wesen erscheinen auf dem Portal und lassen nicht zu, dass eine der ekligen Kreaturen in die Nähe ihrer Gottheit kommt. [8]
 
-### Fähigkeiten und Macht
-
-Nerash verfügt über beträchtliche göttliche Kräfte. Sie zerstört die Statue von Kol Merefs und rettet die Gruppe vor der Explosion [1]. Sie kann in Träumen erscheinen und Schriftrollen mit Zaubersprüchen übergeben [6]. Ihr Segen verleiht einen automatischen Krit, wobei er bei Liam keine Wirkung zeigt [13].
-
-Gleichzeitig wird ihre Macht als begrenzt wahrgenommen. Sie wird als weniger mächtig beschrieben, eher wie ein Archmagier oder Paladin [13]. Ihre Essenz ist schwach, und sie wirkt erschöpft [14]. Bei ihrem persönlichen Erscheinen in der Kapelle trägt sie Verletzungen, die schwerer aussehen, als man es erwartet hätte, und die nicht offensichtlich nur mit Magie zu heilen sind [14]. Lunara erkennt mit magischer Wahrnehmung, dass ihre Essenz sehr schwach ist und wie ein Flackern wirkt, das immer wieder ausbricht und sich zusammenzieht [14].
-
-### Wesenszüge
-
-Nerash wird als sympathischer beschrieben als die Wesen im Amulett [2]. Sie zeigt Enttäuschung über das Misstrauen der Gruppe [14]. Sie wirkt erschöpft und ihre Essenz ist schwach [14]. Nox bezweifelt, dass Nerash uneigennützig handelt [6].
+In Ehrenfels wird Nerash von anderen als weniger mächtig wahrgenommen, „eher wie ein Archmagier oder Paladin". [13] Ihr Segen verleiht einen automatischen Krit, zeigt aber bei [Liam](/npcs/liam_velora.md) keine Wirkung. [13] Als sie persönlich in der [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) erscheint, ist sie sichtlich geschwächt und verletzt; ihre Essenz ist schwach und flackert. [14] Lunara erkennt mit magischer Wahrnehmung, dass Nerashs Essenz „sehr schwach" ist und sich wie Energie anfühlt, die „immer so ein bisschen ausbricht und dann wieder sich zusammenzieht". [14]
 
 ## Beziehungen und Verbindungen
 
-### Zur Gruppe
+Nerash steht in Verbindung mit Vasul. Lindo Laut erwähnt, dass die Gruppe Nerash befreit hat, und es scheint, dass Nerash mit Vasul verbunden ist. [5] Später wird Nerash als Verbündeter von Vasul bezeichnet, der bei der Erschaffung des kleinen Splitters half. [11] In einer weiteren Quelle wird Nerash als mit Vasul zusammenarbeitend beschrieben. [9]
 
-Die Gruppe hat Nerash befreit und trägt ein Totem von ihr [2][3]. Esterossa besitzt eine kleine Statue von Nerash, die sie im Notfall berühren will [4]. Die Gruppe hat eine Schriftrolle von Nerash benutzt, was möglicherweise problematisch ist [12]. Nerash offenbart, dass sie die Gruppe vor den neuen Göttern beschützt hat [14].
+Die Gruppe hat ein [Totem von Nerash](/items/totem_von_nerash.md) erhalten und trägt es bei sich. [2][3] Esterossa spürt Nerashs Aufmerksamkeit, als sie das Totem berührt, aber Nerash kann nicht direkt helfen. [3] Esterossa bekennt: „Ich kann um Hilfe bitten, aber beten tue ich nicht, weil ich glaube leider nicht an einen anderen Gott, beziehungsweise wie einem anderen Gott als Nerash, beziehungsweise dem Gott von Nerash." [3]
 
-### Zu Vasul
+In Ehrenfels haben Diener Nerashs die Macht übernommen; die Bewohner sind gezwungen, der neuen Gottheit zu huldigen. [12] Der Priester [Harloen](/npcs/harloen.md) berichtet, dass ein Diener Nerashs sich in der Stadt befindet und dass alle Neuankömmlinge bei ihm vorbeischauen sollen. [12] Nerash hat in Ehrenfels eine Kapelle errichtet. [13]
 
-Die Verbindung zwischen Nerash und Vasul wird mehrfach angedeutet. Lindo Laut erwähnt, dass die Gruppe Nerash befreit hat, und es scheint mit Vasul verbunden zu sein [5]. Nerash wird als Verbündeter von Vasul beschrieben, der bei der Erschaffung des kleinen Splitters half [11]. Nerash scheint mit Vasul zusammenzuarbeiten [9]. Die Schriftrolle, die Nerash Dodo übergibt, enthält einen Zauberspruch, um Vasul aus Lindo Laut zu vertreiben [6].
-
-### Zu den neuen Göttern
-
-Nerash hat einst für die neuen Götter gekämpft [1]. Sie offenbart später, dass sie die Gruppe vor den neuen Göttern beschützt hat [14].
-
-### Zu den Seraphen
-
-Nerash besitzt korrupte Seraphen, für die ein Trank bestimmt ist [14]. Die Gruppe zeigt einem Seraphen die Statue von Nerash, was ihn schwächt [9].
-
-### Zu Ehrenfels
-
-In Ehrenfels haben Nerashs Diener die Macht übernommen [12]. Nerash hat dort eine Kapelle errichtet [13]. Sie wird als Göttin beschrieben, die angeblich die Stadt Ehrenfels vor einer dunklen Kreatur gerettet hat [10].
-
-### Zu Kol Merefs
-
-Nerash zerstört die Statue von Kol Merefs [1]. Kol Merefs versucht, die Gruppe davon abzuhalten, Nerash zu befreien, und bezeichnet sie als dunklen Gott [1].
+[Vitius](/npcs/vitius.md) zufolge wurde Nerash von Nox hinterhältig angegriffen und verletzt, erholt sich aber. Die Gruppe erfährt von anderen, dass Nerash erst nach dem Kampf gegen die [Dämonen](/factions/daemonen.md) erschien und versuchte, Nox zu töten, woraufhin Rotunas eingriff. [13]
 
 ## Chronologie
 
-**Session 2025-07-09:** Die Gruppe findet Nerash in einer Kapelle, gefesselt mit magischen Ketten, auch am Mund. Esterossa zerschlägt die Ketten, woraufhin Kol Merefs' Statue zerstört wird und Nerash spricht: "Ihr habt mich befreit! ... Eilt euch! Eilt euch!" Sie stellt sich als Demigott vor, der einst für die neuen Götter kämpfte. Die Gruppe befreit sie vollständig [1].
+In der Festung entdeckt die Gruppe eine verkehrt herum aufgestellte Statue mit dem Namen Nerash. [1] Die gefesselte Kreatur wird von Esterossa befreit, stellt sich als Demigott heraus, kämpft gegen die dunkle Energie der Statue und zerstört sie. Sie gibt der Gruppe kleine weiße Totems. [1]
 
-**Session 2025-07-22:** Die Gruppe berichtet, dass sie aus einer anderen Dimension eine Demigöttin befreit haben, die sie für Nerash halten. Sie zeigen einem Gildemeister das Totem, das sie erhalten haben. Der Gildemeister ist beeindruckt: "Ich glaube euch, etwas so altes zu besitzen ist praktisch." [2]
+Die Gruppe befreit Nerash aus einer anderen Dimension und erhält ein Totem von ihr. Lindo Laut erklärt gegenüber dem [Gildemeister](/npcs/nox.md): „Wir gehen davon aus, dass es Nerash, die Demigöttin war. Beweisen kann ich es nicht wirklich, aber wir haben lediglich das bekommen" und zeigt das Totem. [2]
 
-**Session 2025-09-02:** Cookie schlägt vor, zum Totem von Nerash zu beten. Esterossa fragt: "Wer ist Nerash?" Cookie erklärt: "Das ist eine Göttin, eine neue, die wir mal befreit haben." Esterossa sagt: "Also ich kann um Hilfe bitten, aber beten tue ich nicht, weil ich glaube leider nicht an einen anderen Gott ... als Nerash, beziehungsweise dem Gott von Nerash." [3]
+Als die Gruppe ein Totem von Nerash bei sich trägt, spürt Esterossa ihre Aufmerksamkeit, als sie es berührt, aber Nerash kann nicht direkt helfen. [3] Esterossa trägt eine kleine Statue von Nerash bei sich, die sie im Notfall berühren will. [4]
 
-**Session 2026-01-13:** Esterossa trägt eine kleine Statue von Nerash bei sich, die sie im Notfall berühren will, als Belorus auf die Gruppe zukommt [4].
+Lindo Laut erzählt: „Zerstörten Col Mereth, befreiten Nerash, aber wurden dann von Dormag überrascht." [5]
 
-**Session 2026-01-20:** Lindo Laut erwähnt gegenüber einem Gesprächspartner: "Zerstörten Col Mereth, befreiten Nerash, aber wurden dann von Dormag überrascht." Es wird deutlich, dass die Befreiung von Nerash mit Vasul in Verbindung gebracht wird [5].
+Dodo berichtet: „Nerash ist uns im Traum begegnet. [...] Ich habe sie gebeten, uns einen Weg zu zeigen, wie wir den Teil von Vasul in dir, von dir trennen können." Die Schriftrolle enthält einen Zauberspruch, der in Abyssalis gewirkt werden soll. [6]
 
-**Session 2026-02-17:** Nerash erscheint Dodo im Traum und übergibt eine Schriftrolle mit einem Zauberspruch, um Vasul aus Lindo Laut zu vertreiben. Der Zauber soll in Abyssalis, zu den Szenen des Wahnsinns, zu den lila Bergen gewirkt werden. Nox bezweifelt ihre Motive: "Vielleicht war meine Theorie auch falsch. Vielleicht sind nicht alle Götter unbrauchbar. Doch sagt mir, wenn es ein Gott ist, warum kann er nicht selber das tun, was ihr..." [6]
+Die Gruppe erhält eine ähnliche Statue wie die von Nerash, die sich jedoch als fremdartig erweist: „Das sieht aus [...] das ist alienhaft. [...] Da kann jemand nicht schnitzen." [7]
 
-**Session 2026-04-07:** Die Gruppe erhält eine ähnliche Statue wie die von Nerash, die jedoch alienhaft und aus unbekanntem Material ist. Esterossa kann sie trotz ihrer Religionskenntnisse nicht einordnen [7].
+Nach der Zerstörung des Portals erscheint Nerash als engelsgleicher Dämon, tötet Sandro und Voras und richtet ihr Schwert auf die Gruppe. Rotunas opfert sich, um sie zu vernichten. [8]
 
-**Session 2026-04-09:** Nach der Zerstörung des Portals erscheint Nerash als engelsgleicher Dämon. Sie tötet Sandro und Voras und richtet ihr Schwert auf die Gruppe. Rotunas opfert sich, um sie zu vernichten [8].
+Esterossa zeigt die Statue von Nerash dem Seraphen, was ihn schwächt. [9]
 
-**Session 2026-05-13:** Esterossa zeigt einem Seraphen die Statue von Nerash: "Wir haben deine Gottheit aus ihrem Gefängnis befreit. Willst du uns, die deiner Gottheit schuldig sind, hier richten?" Der Seraph ist schockiert und geht vor Schmerzen auf ein Knie [9].
+In Ehrenfels wird berichtet, dass Nerash die Stadt vor einer dunklen Kreatur gerettet habe, wobei viele Menschen den Tod fanden. [10]
 
-**Session 2026-06-04:** Ein Informant berichtet: "Die Götte Nerash ist aufgetaucht. Sie hat wohl angeblich die Stadt gerettet, aber zu dem Zeitpunkt waren schon sehr, sehr viele gefallen." [10]
+Nerash wird als Verbündeter von Vasul erwähnt, der bei der Erschaffung des kleinen Splitters half. [11]
 
-**Session 2026-06-16:** Ein Verbündeter von Vasul erwähnt: "Das Werk von Erash und mir. Wir haben es ausgeklügelt verbessert." Nerash wird als Verbündeter von Vasul bei der Erschaffung des kleinen Splitters genannt [11].
+In Ehrenfels haben Diener Nerashs die Macht übernommen; die Bewohner sind gezwungen, ihr zu huldigen. Die Gruppe hat die Schriftrolle von Nerash benutzt, was möglicherweise problematisch ist. [12]
 
-**Session 2026-07-29:** In Ehrenfels haben Nerashs Diener die Macht übernommen. Harloen, der Priester der Kapelle, warnt die Gruppe: "Wir haben einen neuen Fürsten ... Aktuell wird so ein bisschen uns aufgezwungen, dass wir der neuen Gottheit Nerash ... huldigen." Die Gruppe hat eine Schriftrolle von Nerash benutzt, was möglicherweise problematisch ist [12].
+Vitius berichtet, Nerash sei von Nox hinterhältig angegriffen und verletzt worden, erhole sich aber. Andere erzählen, Nerash sei erst nach dem Kampf gegen die Dämonen erschienen und habe versucht, Nox zu töten, woraufhin Rotunas eingriff. Nerash wird als weniger mächtig wahrgenommen, eher wie ein Archmagier oder Paladin. Ihr Segen verleiht einen automatischen Krit, zeigt aber bei Liam keine Wirkung. [13]
 
-**Session 2026-08-04:** Die Gruppe erfährt von Vitius, dass Nerash von Nox hinterhältig angegriffen und verletzt wurde, sich aber erholt. Andere berichten, dass Nerash erst nach dem Kampf gegen die Dämonen erschien und versuchte, Nox zu töten, woraufhin Rotunas eingriff. Sie wird als weniger mächtig wahrgenommen, eher wie ein Archmagier oder Paladin. Ihr Segen verleiht einen automatischen Krit, zeigt aber bei Liam keine Wirkung [13].
-
-**Session 2026-08-12:** Nerash erscheint persönlich in der Kapelle, sichtlich geschwächt und verletzt. Sie offenbart, dass der Trank für ihre korrupten Seraphen ist und dass sie die Gruppe vor den neuen Göttern beschützt hat. Sie ist enttäuscht von ihrem Misstrauen und verschwindet. Ihre Essenz ist schwach [14].
+Nerash erscheint persönlich in der Kapelle, sichtlich geschwächt und verletzt. Sie offenbart, dass der Trank für ihre korrupten Seraphen ist und dass sie die Gruppe vor den neuen Göttern beschützt hat. Sie ist enttäuscht von ihrem Misstrauen und verschwindet. Ihre Essenz ist schwach. [14]
 
 ## Offene Fragen
 
-- Was genau ist Nerashs wahre Natur? Sie wird als Demigott, Demigöttin, neue Göttin und engelsgleicher Dämon beschrieben, ohne dass eine eindeutige Klärung erfolgt [1][2][6][8].
-- Wie ist ihre Beziehung zu Vasul genau? Sie wird sowohl als Verbündete von Vasul beschrieben [11] als auch als diejenige, die einen Zauberspruch gegen Vasul übergibt [6].
-- Was ist mit Rotunas' Opfer geschehen? Rotunas opfert sich, um Nerash zu vernichten [8], doch Nerash erscheint später erneut [13][14].
+- Was genau ist Nerash — Demigott, Göttin, Gott oder engelsgleicher Dämon? Die Quellen verwenden uneinheitliche Bezeichnungen. [1][2][3][8][10]
+- Wie verhält sich Nerashs Rolle als Verbündeter von Vasul zu ihrem Angebot, den Teil von Vasul aus Lindo Laut zu vertreiben? [6][11]
+- Was bedeutet es, dass die Gruppe die Schriftrolle von Nerash benutzt hat — ist das problematisch? [12]
 - Warum zeigt Nerashs Segen bei Liam keine Wirkung? [13]
-- Was ist mit den korrupten Seraphen gemeint, für die der Trank bestimmt ist? [14]
-- Welche Rolle spielt die alienhafte Statue, die der Gruppe in Session 2026-04-07 begegnet und die Ähnlichkeit mit Nerashs Statue aufweist? [7]
+- Was ist mit [Rotunas' Opfer](/events/rotunas_opfer.md) geschehen, und in welchem Verhältnis steht Nerash dazu? [8][13]
+- Was meint Nerash damit, dass sie die Gruppe „vor den neuen Göttern beschützt" hat? [14]
 
 ## Belege
 
-1. Session 2025-07-09 @ 01:14:31 (https://www.youtube.com/watch?v=XOnHa6CmDbo)
+1. Session 2025-07-09 @ 00:41:26 (https://www.youtube.com/watch?v=XOnHa6CmDbo)
 2. Session 2025-07-22 @ 02:48:27 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
 3. Session 2025-09-02 @ 01:25:19 (https://www.youtube.com/watch?v=TLZOH7TlGhk)
 4. Session 2026-01-13 @ 02:10:41 (https://www.youtube.com/watch?v=w4LB1s9_3rs)

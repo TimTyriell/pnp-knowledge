@@ -17,11 +17,11 @@ Die Hexe wird als grüne Dame beschrieben, die in den Gewölben haust. Ihre Stim
 
 ## Rolle und Hintergrund
 
-Die Hexe ist die persönliche Alchemistin von [Lady Kalen](/npcs/lady_kalen.md) und arbeitet im Namen von [Ohoriaks](/deities/ohoriaks.md). Sie hat Zugang zur Festung und weiß viel über die Stadt. Sie verfolgt das Ziel, Seelen zu ernten.
+Die Hexe ist die persönliche Alchemistin von [Lady Kalen](/npcs/lady_kalen.md) und arbeitet im Namen von [Ohoriaks](/deities/ohoriaks.md). Sie hat Zugang zur [Festung](/locations/festung.md) und weiß viel über die Stadt. Sie verfolgt das Ziel, Seelen zu ernten.
 
 ## Begegnungen mit der Gruppe
 
-In den Gewölben greift die Hexe die Gruppe an, nachdem sie erwähnt hat, dass ihnen der [Graf](/npcs/graf_voras.md) im Weg sei; dabei setzt sie ihren lilanen Todesstrahl ein. Bei einer späteren Begegnung greift sie erneut an, weil sie Seelen ernten will. Nach dem Kampf zeigt sie sich eingeschüchtert und bietet der Gruppe Informationen an.
+In den Gewölben greift die Hexe die Gruppe an, nachdem sie erwähnt hat, dass ihnen der Graf im Weg sei; dabei setzt sie ihren lilanen Todesstrahl ein. Bei einer späteren Begegnung greift sie erneut an, weil sie Seelen ernten will. Nach dem Kampf zeigt sie sich eingeschüchtert und bietet der Gruppe Informationen an.
 
 # Belege
 

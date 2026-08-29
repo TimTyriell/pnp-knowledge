@@ -14,11 +14,11 @@ aliases:
 
 # Verhandlung mit Harl
 
-Die **Verhandlung mit Harl** war eine Gruppenverhandlung der [Rotunas-Freunde](/factions/rotunas_freunde.md) mit [Harl](/npcs/hal_harl.md) um die Unterbringung von Flüchtlingen beziehungsweise Dorfbewohnern. Harl erklärte sich grundsätzlich bereit, die Aufnahme zu ermöglichen, verlangte dafür jedoch Gold sowie ein Gespräch mit dem Anführer der Flüchtlinge. Nach einer angespannten Konfrontation einigte man sich auf eine Truhe Gold, die zehn Säcken Gold entspricht.
+Die **Verhandlung mit [Harl](/npcs/hal_harl.md)** war eine Gruppenverhandlung der [Rotunas-Freunde](/factions/rotunas_freunde.md) mit [Harl](/npcs/hal_harl.md) um die Unterbringung von Flüchtlingen beziehungsweise Dorfbewohnern. Harl erklärte sich grundsätzlich bereit, die Aufnahme zu ermöglichen, verlangte dafür jedoch Gold sowie ein Gespräch mit dem Anführer der [Flüchtlinge](/factions/fluechtlinge_aus_breska.md). Nach einer angespannten Konfrontation einigte man sich auf eine Truhe Gold, die zehn Säcken Gold entspricht.
 
 ## Verlauf
 
-Die Verhandlung wurde von den Rotunas-Freunden als Gruppe geführt, wobei [Lindo Laut](/characters/lindo_laut.md) das Wort für sie ergriff. Harl stellte seine Zustimmung unter Bedingungen: Zum einen verlangte er eine Zahlung in Gold, zum anderen ein Gespräch mit dem Anführer der Flüchtlinge. Die Stimmung während der Verhandlung war angespannt, und es kam zu einer Konfrontation, bevor man sich schließlich auf einen Preis einigte: eine Truhe Gold beziehungsweise zehn Säcke Gold.
+Die Verhandlung wurde von den [Rotunas](/characters/rotunas.md)-Freunden als Gruppe geführt, wobei [Lindo Laut](/characters/lindo_laut.md) das Wort für sie ergriff. Harl stellte seine Zustimmung unter Bedingungen: Zum einen verlangte er eine Zahlung in Gold, zum anderen ein Gespräch mit dem Anführer der Flüchtlinge. Die Stimmung während der Verhandlung war angespannt, und es kam zu einer Konfrontation, bevor man sich schließlich auf einen Preis einigte: eine Truhe Gold beziehungsweise zehn Säcke Gold.
 
 ## Beteiligte
 

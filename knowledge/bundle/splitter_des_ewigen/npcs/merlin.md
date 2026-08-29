@@ -1,15 +1,15 @@
 ---
 type: NPC
 title: Merlin
-description: Merlin ist Finns Adlerbegleiter. Er wird zum Spähen eingesetzt und greift
-  im Kampf an. Er zerstört die Illusion von Kalos, indem er sie mit…
+description: Merlin ist Finns Adlerbegleiter, der als Späher dient. Er ist mit Finn
+  verbunden und kann durch einfache Zeichen kommunizieren. Er erschric…
 tags:
 - npcs
 timestamp: '2026-05-27T00:00:00Z'
 id: NPC_MERLIN
 ---
 
-Merlin ist [Finns](/characters/finn.md) Adlerbegleiter. Er wird zum Spähen eingesetzt und greift im Kampf an. Er zerstört die [Illusion von Kalos](/npcs/illusion_von_kalos.md), indem er sie mit seinen Krallen angreift.
+Merlin ist [Finns](/characters/finn.md) Adlerbegleiter, der als Späher dient. Er ist mit Finn verbunden und kann durch einfache Zeichen kommunizieren. Er erschrickt vor den Strixwölfen und erhält einen Stress. Im Kampf gegen [Kalos](/npcs/organisation_der_kalos.md) greift er die Illusion an und zerstört sie.
 
 # Belege
 

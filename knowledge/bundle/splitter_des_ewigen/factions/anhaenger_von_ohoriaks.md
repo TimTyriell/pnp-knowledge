@@ -10,7 +10,7 @@ id: FACTION_ANHAENGER_VON_OHORIAKS
 subtype: Kult
 ---
 
-Die Anhänger von Ohoriaks sind eine Gruppierung, die in der Festung von Boragdil das Tor bewacht. Sie treten als geschlossene Gemeinschaft auf, die ihre Zugehörigkeit zu Ohoriaks als entscheidendes Kriterium für den Zutritt zur Festung verwendet. Außenstehende, die nicht zu ihrer Gemeinschaft gehören, werden abgewiesen.
+Die Anhänger von [Ohoriaks](/deities/ohoriaks.md) sind eine Gruppierung, die in der [Festung](/locations/festung.md) von [Boragdil](/locations/boragdil.md) das Tor bewacht. Sie treten als geschlossene Gemeinschaft auf, die ihre Zugehörigkeit zu Ohoriaks als entscheidendes Kriterium für den Zutritt zur Festung verwendet. Außenstehende, die nicht zu ihrer Gemeinschaft gehören, werden abgewiesen.
 
 ## Auftreten in Boragdil
 

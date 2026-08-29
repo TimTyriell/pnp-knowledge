@@ -10,7 +10,7 @@ id: LOC_HALBLING_MINE
 subtype: Dungeon
 ---
 
-Die verlassene [Mine](/locations/kristallmine.md) der [Halblinge](/factions/halblinge.md) wird von [Goblins](/factions/goblins.md), [Bugbears](/npcs/bugbears.md) und Gnollen als Stützpunkt genutzt. Sie hat mehrere Ebenen, einen Schacht mit Tageslicht und einen [Geheimgang](/locations/geheimgang.md), der zum [Dorf](/locations/dorf.md) führt.
+Die verlassene [Mine](/locations/verlassene_mine_an_der_farm.md) der [Halblinge](/factions/halblinge.md) wird von [Goblins](/npcs/pilz_goblins.md), [Bugbears](/npcs/bugbears.md) und Gnollen als Stützpunkt genutzt. Sie hat mehrere Ebenen, einen Schacht mit Tageslicht und einen [Geheimgang](/locations/geheimgang.md), der zum Dorf führt.
 
 # Belege
 

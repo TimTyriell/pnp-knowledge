@@ -9,6 +9,7 @@ timestamp: '2025-05-06T00:00:00Z'
 id: LOC_KLOSTER_DES_HEILIGEN_DURAN
 subtype: Gebäude
 aliases:
+- Ruine des Heiligen Duran
 - Kapelle des Heiligen Duran
 ---
 

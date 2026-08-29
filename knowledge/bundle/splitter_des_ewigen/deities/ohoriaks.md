@@ -17,28 +17,28 @@ aliases:
 
 ## Überblick
 
-Ohoriaks ist eine der vier alten Götter von Abyssalis, der Unterwelt, in der die Seelen der Toten landen. Sie trägt den Titel **Mutter der Schleier** und wird als beschützende, aber jähzornige Göttin beschrieben. Ihr Wirken ist eng mit der Stadt verbunden, die sie für sich beansprucht hat, sowie mit der dortigen Festung, die ihr geweiht ist. In Boragdil wird sie als Gottheit verehrt, deren Anhänger Zugang zur Festung haben. Ihr Symbol stammt aus einer Zeit weit vor den neuen Göttern und findet sich in alten Dungeons.
+Ohoriaks ist eine der vier alten Götter von [Abyssalis](/domains/splitterwelt.md), der Unterwelt, in der die Seelen der Toten landen. Sie trägt den Titel **Mutter der Schleier** und wird als beschützende, aber jähzornige Göttin beschrieben. Ihr Wirken ist eng mit der Stadt verbunden, die sie für sich beansprucht hat, sowie mit der dortigen [Festung](/locations/festung.md), die ihr geweiht ist. In [Boragdil](/locations/boragdil.md) wird sie als Gottheit verehrt, deren Anhänger Zugang zur Festung haben. Ihr [Symbol](/items/symbol_in_der_villa.md) stammt aus einer Zeit weit vor den neuen Göttern und findet sich in alten Dungeons.
 
 ## Rolle in der Kampagne
 
-Ohoriaks ist eine der zentralen Mächte in Abyssalis, der Unterwelt, in der die Gruppe nach dem Verbleib von Lindo Laus Bruder sucht. Sie ist eine von vier alten Göttern, die in Abyssalis eingesperrt wurden und dort um Einfluss und Seelen konkurrieren. Die Gruppe begegnet ihr zunächst indirekt über ihr Symbol an einem Tor in einem Dungeon, das sich als blutmagisches Artefakt erweist. Später erfährt die Gruppe, dass Ohoriaks eine der vier existierenden Gottheiten in Abyssalis ist, und schließlich stellt sich heraus, dass sie eine ganze Stadt für sich beansprucht hat — inklusive der Festung, die einst ein Vorposten zur Steuerung der Erntefelder war.
+Ohoriaks ist eine der zentralen Mächte in Abyssalis, der Unterwelt, in der die Gruppe nach dem Verbleib von Lindo Laus Bruder sucht. Sie ist eine von vier alten Göttern, die in Abyssalis eingesperrt wurden und dort um Einfluss und Seelen konkurrieren. Die Gruppe begegnet ihr zunächst indirekt über ihr Symbol an einem Tor in einem Dungeon, das sich als blutmagisches Artefakt erweist. Später erfährt die Gruppe, dass Ohoriaks eine der vier existierenden Gottheiten in Abyssalis ist, und schließlich stellt sich heraus, dass sie eine ganze Stadt für sich beansprucht hat — inklusive der Festung, die einst ein Vorposten zur Steuerung der [Erntefelder](/locations/erntefelder.md) war.
 
-Die persönliche Alchemistin der Herren der Stadt, die im Namen von Lady Kalen, der Sprecherin von Ohoriaks, arbeitet, berichtet der Gruppe, dass Ohoriaks den Fall des Schutzzaubers der Festung vorhergesehen habe und ihre Anhänger diesen Augenblick genutzt hätten, um die Stadt für ihre Herrin zu beanspruchen. Damit ist Ohoriaks eine direkte Konkurrentin von Vorgul'tar, dem Herrn der Tausend Seelen, dem Lindo Laus Meisterin Lunara dient.
+Die persönliche Alchemistin der Herren der Stadt, die im Namen von [Lady Kalen](/npcs/lady_kalen.md), der Sprecherin von Ohoriaks, arbeitet, berichtet der Gruppe, dass Ohoriaks den Fall des Schutzzaubers der Festung vorhergesehen habe und ihre Anhänger diesen Augenblick genutzt hätten, um die Stadt für ihre Herrin zu beanspruchen. Damit ist Ohoriaks eine direkte Konkurrentin von [Vorgul'tar](/deities/vorgul_tar.md), dem Herrn der Tausend Seelen, dem Lindo Laus Meisterin Lunara dient.
 
 ## Wichtige Merkmale
 
 Ohoriaks wird als **Mutter der Schleier** bezeichnet — ein Titel, der auf ihre beschützende Natur verweist. Gleichzeitig wird sie als **sehr jähzornig** beschrieben, was auf ein reizbares und möglicherweise rachsüchtiges Wesen hindeutet. In der Begegnung mit der Alchemistin wird sie schlicht als „unsere Mutter“ bezeichnet, was auf eine mütterliche, fürsorgliche Rolle gegenüber ihren Anhängern hindeutet.
 
-Ihr Symbol ist eines der wenigen konkreten Artefakte, das die Gruppe von ihr sieht. Es findet sich an einem Tor in einem Dungeon und stammt aus einer Zeit weit vor den neuen Göttern. Das Tor selbst hat eine unangenehme, fast widerliche Ausstrahlung — die Gruppe spürt, „als würden diese Augen euch anstarren“. Das Symbol ist offenbar mit Blutmagie verbunden: Als Dodo den Ring an dem Tor berührt, wird seine Hand verletzt und das Blut wird vom Tor aufgesaugt, während sich ein Kristall rötlich füllt. Lindo Laut erkennt darin einen „Blutzoll“ — ein Opfer, das die Gottheit fordert.
+Ihr Symbol ist eines der wenigen konkreten Artefakte, das die Gruppe von ihr sieht. Es findet sich an einem Tor in einem Dungeon und stammt aus einer Zeit weit vor den neuen Göttern. [Das Tor](/locations/das_tor.md) selbst hat eine unangenehme, fast widerliche Ausstrahlung — die Gruppe spürt, „als würden diese Augen euch anstarren“. Das Symbol ist offenbar mit [Blutmagie](/domains/blutmagie.md) verbunden: Als [Dodo](/characters/dodo.md) den Ring an dem Tor berührt, wird seine Hand verletzt und das Blut wird vom Tor aufgesaugt, während sich ein [Kristall](/items/gruener_kristall.md) rötlich füllt. [Lindo Laut](/characters/lindo_laut.md) erkennt darin einen „Blutzoll“ — ein Opfer, das die Gottheit fordert.
 
-In Abyssalis selbst ist Ohoriaks eine von vier alten Göttern, die dort eingesperrt wurden. Sie nimmt Seelen auf, die in den Erntefeldern streunern — neben Akastrale, der sie frisst, und Sitravil, der sie zerfetzt. Kinderseelen allerdings scheinen nicht von ihr oder den anderen Göttern beeinflusst zu werden.
+In Abyssalis selbst ist Ohoriaks eine von vier alten Göttern, die dort eingesperrt wurden. Sie nimmt Seelen auf, die in den Erntefeldern streunern — neben [Akastrale](/deities/akastrale.md), der sie frisst, und Sitravil, der sie zerfetzt. Kinderseelen allerdings scheinen nicht von ihr oder den anderen Göttern beeinflusst zu werden.
 
 ## Beziehungen und Verbindungen
 
 Ohoriaks ist eine von **vier alten Göttern in Abyssalis**. Die anderen drei sind:
 
 - **Akastrale**, der verrückte oder dunkle Hunger, der Seelen frisst
-- **Südrawell**, die Fleischweberin, eine federhafte Kreatur, die nur Unheil bringt
+- **[Südrawell](/deities/suedrawell.md)**, die Fleischweberin, eine federhafte Kreatur, die nur Unheil bringt
 - **Vorgul'tar**, Herr der Tausend Seelen, der Sammler der Seelen, der seine Macht aus der Essenz des Lebens zieht
 
 Zu Vorgul'tar besteht eine direkte Rivalität: Während Lindo Laus Meisterin Lunara eine Anhängerin Vorgul'tars ist, hat Ohoriaks die Stadt für sich beansprucht, die Vorgul'tar offenbar ebenfalls für sich wollte. Die Alchemistin stellt dazu trocken fest: „Dann war Vorgul Tar zu spät.“
@@ -49,7 +49,7 @@ In Boragdil wird Ohoriaks als Gottheit verehrt, deren Anhänger Zugang zur Festu
 - Die **persönliche Alchemistin der Herren der Stadt**, die im Namen Lady Kalens spricht
 - Die **Hexe**, die Ohoriaks dient (laut Beleg [P-47])
 
-Die Festung in der Stadt ist Ohoriaks geweiht. Die Stadt selbst war einst ein Vorposten, von dem aus die Erntefelder gesteuert wurden, ist dann aber verwahrlost. Bis vor wenigen Monaten war die Festung durch einen mächtigen Zauber geschützt, der dann vernichtet wurde — ein Ereignis, das Ohoriaks vorhergesehen hatte.
+[Die Festung](/locations/die_festung.md) in der Stadt ist Ohoriaks geweiht. [Die Stadt](/locations/ehrenfels.md) selbst war einst ein Vorposten, von dem aus die Erntefelder gesteuert wurden, ist dann aber verwahrlost. Bis vor wenigen Monaten war die Festung durch einen mächtigen Zauber geschützt, der dann vernichtet wurde — ein Ereignis, das Ohoriaks vorhergesehen hatte.
 
 ## Chronologie
 

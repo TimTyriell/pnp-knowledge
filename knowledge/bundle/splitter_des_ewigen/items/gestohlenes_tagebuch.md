@@ -12,7 +12,7 @@ aliases:
 - Tagebuch
 ---
 
-[Das Tagebuch](/items/das_tagebuch.md) wurde von [Cookie](/characters/cookie.md) und [Dodo](/characters/dodo.md) aus einem Grabhügel gestohlen. [Die Untoten](/factions/die_untoten.md) suchen danach, und die Gruppe vermutet, dass es der gesuchte Gegenstand ist.
+[Das Tagebuch](/items/das_tagebuch.md) wurde von [Cookie](/characters/cookie.md) und [Dodo](/characters/dodo.md) aus einem Grabhügel gestohlen. [Die Untoten](/factions/belorus_untotenarmee.md) suchen danach, und die Gruppe vermutet, dass es der gesuchte Gegenstand ist.
 
 # Belege
 

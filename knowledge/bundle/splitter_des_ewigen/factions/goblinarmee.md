@@ -10,11 +10,11 @@ id: FACTION_GOBLINARMEE
 subtype: Armee
 ---
 
-Die Goblinarmee ist eine Gruppe von Goblins, die das Dorf angriff. Ihr Angriff wurde von der Gruppe und den Dorfbewohnern abgewehrt; die Angreifer wurden besiegt.
+Die Goblinarmee ist eine Gruppe von [Goblins](/npcs/pilz_goblins.md), die das Dorf angriff. Ihr Angriff wurde von der Gruppe und den Dorfbewohnern abgewehrt; die Angreifer wurden besiegt.
 
 ## Angriff auf das Dorf
 
-Die Goblinarmee griff das Dorf an. Der Angriff ging von einer Gruppe aus, die aus Kämpfern, Bogenschützen und einem Oger bestand. Angeführt wurde sie von der Hack.
+Die Goblinarmee griff das Dorf an. Der Angriff ging von einer Gruppe aus, die aus Kämpfern, Bogenschützen und einem [Oger](/npcs/oger.md) bestand. Angeführt wurde sie von der [Hack](/npcs/lenra.md).
 
 ## Niederlage
 

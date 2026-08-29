@@ -9,7 +9,7 @@ timestamp: '2026-04-09T00:00:00Z'
 id: NPC_GROSSER_DAEMON
 ---
 
-Ein riesiges dämonisches Wesen, das am Portal kämpft und von Nox bekämpft wird. Es wird von der Gruppe nicht besiegt, sondern fällt durch das zerstörte Portal zurück.
+Ein riesiges dämonisches Wesen, das am [Portal](/locations/portal.md) kämpft und von Nox bekämpft wird. Es wird von der Gruppe nicht besiegt, sondern fällt durch das zerstörte Portal zurück.
 
 # Belege
 

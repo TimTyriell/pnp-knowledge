@@ -10,7 +10,7 @@ id: EVENT_BEGEGNUNG_MIT_DEM_SPION
 subtype: Entdeckung
 ---
 
-Während der Nachtwache entdeckt [Celin](/characters/celin_cookie.md) eine gehörnte Kreatur, die sich im [Nebel](/locations/nebel.md) versteckt. Sie schickt [Perry](/npcs/perry_das_schnabeltier.md), um die anderen zu wecken, aber die Kreatur verschwindet, als Licht gemacht wird. Die Identität des Spions bleibt unklar.
+Während der Nachtwache entdeckt [Celin](/characters/cookie.md) eine gehörnte Kreatur, die sich im Nebel versteckt. Sie schickt [Perry](/npcs/perry_das_schnabeltier.md), um die anderen zu wecken, aber die Kreatur verschwindet, als Licht gemacht wird. Die Identität des Spions bleibt unklar.
 
 # Belege
 

@@ -10,7 +10,7 @@ id: FACTION_DIE_SERAPHEN
 subtype: Kult
 ---
 
-Die **Seraphen** sind gefallene Engel, die in Diensten von [Vorgul'tar](/deities/vorgul_tar.md) stehen. In der Kampagne treten sie als mächtige Gegner auf, die der Gruppe feindlich gegenüberstehen. Über ihre Herkunft, ihre Anzahl oder ihre Rolle innerhalb von Vorgul'tars Gefolge ist bislang nur wenig bekannt; belegt ist ein einziger Angriff am Fuße eines Berges.
+Die **[Seraphen](/factions/seraphen.md)** sind gefallene Engel, die in Diensten von [Vorgul'tar](/deities/vorgul_tar.md) stehen. In der Kampagne treten sie als mächtige Gegner auf, die der Gruppe feindlich gegenüberstehen. Über ihre Herkunft, ihre Anzahl oder ihre Rolle innerhalb von [Vorgul'tars](/deities/vorgul_tar.md) Gefolge ist bislang nur wenig bekannt; belegt ist ein einziger Angriff am Fuße eines Berges.
 
 ## Erste Begegnung
 

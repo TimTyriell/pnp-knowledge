@@ -1,25 +1,28 @@
 ---
 type: NPC
 title: Kerl
-description: Kerl ist ein Wächter in Brechka. Zunächst gehört er zu den beiden Wachen
-  des Dorfes, später wird er zum Leibwächter des Grafen befördert. G…
+description: Kerl ist ein Wächter aus Brechka, der im Verlauf der Kampagne vom Dorfwächter
+  zum Leibwächter des Grafen aufsteigt. Die Gruppe begegnet ihm…
 tags:
 - npcs
 timestamp: '2025-06-25T00:00:00Z'
 id: NPC_KERL
 ---
 
-Kerl ist ein Wächter in [Brechka](/locations/breska.md). Zunächst gehört er zu den beiden Wachen des Dorfes, später wird er zum Leibwächter des Grafen befördert. Gegenüber der Gruppe tritt er anfangs misstrauisch auf, zeigt sich nach seiner Beförderung jedoch freundlich und stolz auf seine neue Position.
+Kerl ist ein Wächter aus [Brechka](/locations/breska.md), der im Verlauf der Kampagne vom Dorfwächter zum Leibwächter des Grafen aufsteigt. Die Gruppe begegnet ihm zunächst als misstrauischem Wachposten, später als freundlichem Begleiter bei ihrem Abstieg in die Gruft.
 
-## Wache von Brechka
+## Rolle und Werdegang
 
-Als einer der beiden Wachen gehört Kerl zu den wenigen Kämpfern des Dorfes. Er ist Fremden gegenüber misstrauisch, lässt sich aber von [Valeria](/characters/valeria.md) einschüchtern. Als die Gruppe den Bürgermeister aufsuchen will, verweist er sie an [Tindrael](/npcs/tindrael.md), den Grabwächter, um die Erlaubnis zu erhalten, zum Bürgermeister zu gehen.
+- Kerl ist einer der beiden Wachen in [Brechka](/locations/breska.md) und wird als einer der stärksten Nahkämpfer im Dorf beschrieben.
+- Später wird er zum Leibwächter des Grafen befördert.
+- In dieser Funktion begleitet er die Gruppe in die Gruft und öffnet dort Türen mit einem magischen Gegenstand.
 
-## Leibwächter des Grafen
+## Verhalten gegenüber der Gruppe
 
-Zu einem späteren Zeitpunkt wird Kerl zum Leibwächter des Grafen befördert. In dieser Funktion begleitet er die Gruppe in die Gruft, wo er Türen mit einem magischen Gegenstand öffnet. Dabei tritt er freundlich auf und prahlt mit seiner neuen Position.
+- Beim ersten Zusammentreffen ist Kerl misstrauisch gegenüber der Gruppe und hält sie auf. Erst nach [Tindraels](/npcs/tindrael.md) Erlaubnis lässt er sie zum [Bürgermeister](/npcs/buergermeister_spitzzahn.md) durch.
+- Nach seiner Beförderung zeigt er sich der Gruppe gegenüber freundlich und prahlt mit seiner neuen Position als Leibwächter des Grafen.
 
 # Belege
 
-[P-03] Session 2025-04-09 @ 00:17:22 – https://www.youtube.com/watch?v=1PWdwvun5ow
+[P-03] Session 2025-04-09 @ 00:17:25 – https://www.youtube.com/watch?v=1PWdwvun5ow
 [P-13] Session 2025-06-25 @ 00:18:44 – https://www.youtube.com/watch?v=tpkO9uGw6-I

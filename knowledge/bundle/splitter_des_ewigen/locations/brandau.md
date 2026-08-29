@@ -14,15 +14,15 @@ subtype: Siedlung
 
 ## Überblick
 
-Brandau ist eine der beiden großen Städte im nördlichen Gebiet der Welt, neben Willau. Über Jahrhunderte hinweg war Brandau ein ebenbürtiger Rivale Willaus, bis der große Konflikt zwischen den beiden Städten vor etwa einem Jahr mit einem Sieg Willaus endete. Seitdem ist Brandau gefallen und wird in das Lordgebiet von Willau integriert. Die Stadt selbst wurde im Krieg weitgehend zerstört, ihr Fürst ist gefangen oder tot, und viele ehemalige Bewohner Brandaus leben heute als Flüchtlinge in anderen Orten, insbesondere in Kleinringtal.
+Brandau ist eine der beiden großen Städte im nördlichen Gebiet der Welt, neben [Willau](/locations/willauch.md). Über Jahrhunderte hinweg war Brandau ein ebenbürtiger Rivale Willaus, bis der große Konflikt zwischen den beiden Städten vor etwa einem Jahr mit einem Sieg Willaus endete. Seitdem ist Brandau gefallen und wird in das Lordgebiet von Willau integriert. [Die Stadt](/locations/ehrenfels.md) selbst wurde im [Krieg](/characters/krieg.md) weitgehend zerstört, ihr Fürst ist gefangen oder tot, und viele ehemalige Bewohner Brandaus leben heute als [Flüchtlinge](/factions/fluechtlinge_aus_breska.md) in anderen Orten, insbesondere in [Kleinringtal](/locations/ringtal.md).
 
 ## Rolle in der Kampagne
 
 Brandau ist weniger ein Schauplatz, an dem die Helden selbst agieren, sondern vielmehr eine politische und historische Größe, die die Gegenwart der Kampagne prägt. Der Sieg Willaus über Brandau hat die Machtverhältnisse im Norden neu geordnet und bildet den Hintergrund für mehrere Handlungsstränge:
 
 - Die Eingliederung Brandaus in das Lordgebiet von Willau wird mit einem großen Fest und Turnier gefeiert, zu dem die Gruppe in der Session vom 14. Oktober 2025 reist.
-- Ehemalige Brandauer haben sich in der Region verstreut. Einige von ihnen, wie der alte Mann Herakles in Kleinringtal, haben sich dort niedergelassen und versuchen, eine kleine Widerstandsgruppe aufzubauen.
-- Die Familie Heinrich, auf deren Hof die Gruppe in der Session vom 23. März 2026 verweilt, war früher Teil von Brandau und sympathisiert offenbar mit den Banditen, die sich gegen Willau stellen.
+- Ehemalige Brandauer haben sich in der Region verstreut. Einige von ihnen, wie der alte Mann [Herakles](/npcs/herakles.md) in Kleinringtal, haben sich dort niedergelassen und versuchen, eine kleine Widerstandsgruppe aufzubauen.
+- Die Familie Heinrich, auf deren Hof die Gruppe in der Session vom 23. März 2026 verweilt, war früher Teil von Brandau und sympathisiert offenbar mit den [Banditen](/factions/silberkerne.md), die sich gegen Willau stellen.
 - Brandau dient als historisches Beispiel, als Orlanius Schwarzohr darüber spricht, dass sich in anderen Städten wie Willau und Brandau damals neue Götter gezeigt haben.
 
 ## Wichtige Merkmale
@@ -36,7 +36,7 @@ Brandau liegt im nördlichen Gebiet der Welt und war eine der beiden großen St�
 Die ursprüngliche Bevölkerung Brandaus hat sich nach der Niederlage zerstreut. Bekannte ehemalige Brandauer sind:
 
 - **Herakles**: Ein alter Mann, der einst in Brandau lebte und nach dem verlorenen Krieg nach Kleinringtal fliehen musste. Er versucht dort, eine kleine Gruppierung aufzubauen, die den Menschen in der Region helfen soll.
-- **Talron**: Ein ehemaliger Angehöriger der Garde aus Brandau, ebenfalls geflohen. Er dient Herakles als Informant.
+- **[Talron](/npcs/talron.md)**: Ein ehemaliger Angehöriger der Garde aus Brandau, ebenfalls geflohen. Er dient Herakles als Informant.
 - **Familie Heinrich**: Eine Familie, deren Hof früher zu Brandau gehörte und nach dem Krieg an Willau überging. Sie sympathisiert mit den Banditen, die sich gegen die neue Herrschaft stellen.
 
 ## Beziehungen und Verbindungen
@@ -47,11 +47,11 @@ Die zentrale Beziehung Brandaus ist die Rivalität mit Willau. Die beiden Städt
 
 ### Kleinringtal
 
-Viele Flüchtlinge aus Brandau leben nach der Zerstörung ihrer Stadt in Kleinringtal. Herakles ist einer von ihnen und versucht dort, eine kleine Widerstandsgruppe aufzubauen. Er beschreibt die Lage der Flüchtlinge als prekär: Die Gnolle machen den Menschen zunehmend Probleme, und die Gruppierung ist zu klein, um überall helfen zu können.
+Viele Flüchtlinge aus Brandau leben nach der Zerstörung ihrer Stadt in Kleinringtal. Herakles ist einer von ihnen und versucht dort, eine kleine Widerstandsgruppe aufzubauen. Er beschreibt die Lage der Flüchtlinge als prekär: [Die Gnolle](/factions/die_gnolle.md) machen den Menschen zunehmend Probleme, und die Gruppierung ist zu klein, um überall helfen zu können.
 
 ### Götter und neue Gottheiten
 
-In der Session vom 4. August 2026 wird Brandau als Beispiel dafür genannt, dass sich in Städten wie Willau und Brandau damals neue Götter gezeigt haben. Orlanius Schwarzohr führt dies an, als er darüber spricht, dass sich die neue Gottheit Nerash in Ehrenfels noch nicht gezeigt hat. Die genauen Umstände, unter denen sich in Brandau Götter zeigten, werden nicht näher ausgeführt.
+In der Session vom 4. August 2026 wird Brandau als Beispiel dafür genannt, dass sich in Städten wie Willau und Brandau damals neue Götter gezeigt haben. Orlanius Schwarzohr führt dies an, als er darüber spricht, dass sich die neue Gottheit [Nerash](/deities/nerash.md) in Ehrenfels noch nicht gezeigt hat. Die genauen Umstände, unter denen sich in Brandau Götter zeigten, werden nicht näher ausgeführt.
 
 ## Chronologie
 
@@ -61,9 +61,9 @@ In der Session vom 4. August 2026 wird Brandau als Beispiel dafür genannt, dass
 
 **Session 2025-10-14**: Die Gruppe reist nach Willau, wo die Integration Brandaus in das Lordgebiet von Willau mit einem großen Fest und Turnier gefeiert wird. Der GM erläutert den Hintergrund: Willau hat den Konflikt gegen Brandau vor einigen Ingame-Monaten gewonnen, und Brandau wird aktuell in das Lordgebiet integriert.
 
-**Session 2026-03-23**: Die Gruppe trifft auf die Familie Heinrich, deren Hof früher zu Brandau gehörte. Hendrik Heinrich erklärt: „Wir waren mal Teil von Brandau.“ Die Familie sympathisiert offenbar mit den Banditen, die sich gegen Willau stellen. Der GM deutet an, dass es sich um eine Art Underground-Netzwerk gegen die Hauptstadt handeln könnte.
+**Session 2026-03-23**: Die Gruppe trifft auf die Familie Heinrich, deren Hof früher zu Brandau gehörte. [Hendrik Heinrich](/npcs/hendrik_heinrich.md) erklärt: „Wir waren mal Teil von Brandau.“ Die Familie sympathisiert offenbar mit den Banditen, die sich gegen Willau stellen. Der GM deutet an, dass es sich um eine Art Underground-Netzwerk gegen die Hauptstadt handeln könnte.
 
-**Session 2026-06-04**: Herakles offenbart der Gruppe, dass er einst in Brandau lebte und nach dem verlorenen Krieg fliehen musste. Er erzählt von seiner kleinen Gruppierung in Kleinringtal und kündigt an, dass sein Informant Talron, ein ehemaliger Gardist aus Brandau, am nächsten Tag eintreffen werde. Er bittet die Gruppe, Talron bei der Bekämpfung der Gnolle zu helfen.
+**Session 2026-06-04**: Herakles offenbart der Gruppe, dass er einst in Brandau lebte und nach dem verlorenen Krieg fliehen musste. Er erzählt von seiner kleinen Gruppierung in Kleinringtal und kündigt an, dass sein Informant Talron, ein ehemaliger Gardist aus Brandau, am nächsten Tag eintreffen werde. Er bittet die Gruppe, Talron bei der Bekämpfung der [Gnolle](/factions/gnolle.md) zu helfen.
 
 **Session 2026-08-04**: Orlanius Schwarzohr erwähnt Brandau als Beispiel für eine Stadt, in der sich neue Götter gezeigt haben, als er darüber spricht, dass sich Nerash in Ehrenfels noch nicht gezeigt hat.
 

@@ -9,7 +9,7 @@ timestamp: '2025-10-21T00:00:00Z'
 id: NPC_LADY_LYRA_VON_WILLAU
 ---
 
-Lady Lyra von Willau ist eine Adlige und eine der Herrscherinnen von Willau, die gemeinsam das Turnier der Stadt ausrichten. Sie tritt als Zuschauerin bei den Arena-Kämpfen in Erscheinung und verfolgt die Darbietungen der auftretenden Gruppen mit sichtlichem Interesse.
+Lady Lyra von [Willau](/locations/willauch.md) ist eine Adlige und eine der Herrscherinnen von Willau, die gemeinsam das Turnier der Stadt ausrichten. Sie tritt als Zuschauerin bei den Arena-Kämpfen in Erscheinung und verfolgt die Darbietungen der auftretenden Gruppen mit sichtlichem Interesse.
 
 ## Rolle und Herrschaft
 

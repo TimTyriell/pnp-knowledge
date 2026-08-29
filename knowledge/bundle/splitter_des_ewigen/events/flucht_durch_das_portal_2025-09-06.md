@@ -10,7 +10,7 @@ id: EVENT_FLUCHT_DURCH_DAS_PORTAL_2025-09-06
 subtype: Reise
 ---
 
-Die Gruppe flieht durch ein Portal, das sich hinter dem [Ratten-Dämon](/npcs/ratten_daemon.md) öffnet, und gelangt in eine [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md).
+Die Gruppe flieht durch ein [Portal](/locations/portal.md), das sich hinter dem [Ratten-Dämon](/npcs/ratten_daemon.md) öffnet, und gelangt in eine [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md).
 
 # Belege
 

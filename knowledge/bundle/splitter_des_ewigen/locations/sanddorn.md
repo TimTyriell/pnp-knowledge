@@ -10,11 +10,11 @@ id: LOC_SANDDORN
 subtype: Siedlung
 ---
 
-Sanddorn ist die Hauptinsel und zentrale Siedlung einer Inselgruppe. Die Stadt ist wohlhabend und wird von [Joar Vanur](/npcs/joar_vanur.md) regiert, der selbst aus Sanddorn stammt und in die Stadt zurückkehren möchte. Trotz ihres Reichtums ist die Siedlung für ihre Diebe und Schurken bekannt.
+Sanddorn ist die Hauptinsel und zentrale Siedlung einer Inselgruppe. [Die Stadt](/locations/ehrenfels.md) ist wohlhabend und wird von [Joar Vanur](/npcs/joar_vanur.md) regiert, der selbst aus Sanddorn stammt und in die Stadt zurückkehren möchte. Trotz ihres Reichtums ist die Siedlung für ihre Diebe und Schurken bekannt.
 
 ## Rolle und Herrschaft
 
-Als Hauptinsel bildet Sanddorn das Zentrum der Inselgruppe. Die Herrschaft liegt bei Joar Vanur, der hier geboren wurde. Sein erklärtes Ziel ist die Rückkehr nach Sanddorn.
+Als Hauptinsel bildet Sanddorn das Zentrum der Inselgruppe. Die Herrschaft liegt bei [Joar Vanur](/npcs/joar_vanur.md), der hier geboren wurde. Sein erklärtes Ziel ist die Rückkehr nach Sanddorn.
 
 ## Orte und Ruf
 

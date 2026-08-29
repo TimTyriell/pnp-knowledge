@@ -10,7 +10,7 @@ id: EVENT_ZIRKUSVORSTELLUNG_IN_DER_TAVERNE
 subtype: Fest
 ---
 
-Eine spontane Vorstellung von [Nyrella](/characters/nyrella.md) und [Nairuk](/npcs/nyruk.md), unterstützt von [Rotunas](/characters/rotunas.md) und [Esterossa](/characters/esterossa.md), um die Stimmung in der [Taverne](/locations/taverne.md) zu heben. Sie ist erfolgreich und bringt die Gäste zum Feiern.
+Eine spontane Vorstellung von [Nyrella](/characters/nyrella.md) und [Nairuk](/npcs/nyruk.md), unterstützt von [Rotunas](/characters/rotunas.md) und [Esterossa](/characters/esterossa.md), um die Stimmung in der Taverne zu heben. Sie ist erfolgreich und bringt die Gäste zum Feiern.
 
 # Belege
 

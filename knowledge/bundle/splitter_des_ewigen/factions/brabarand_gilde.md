@@ -12,7 +12,7 @@ subtype: Gilde
 
 # Brabarand-Gilde
 
-Die **Brabarand-Gilde** ist eine berüchtigte Auftragskiller-Organisation. Sie ist dafür bekannt, dass man sie anheuern kann, um Leute gezielt auszuschalten. In der Kampagne tritt sie als Gegnerin der Gruppe in Erscheinung, als diese von Mitgliedern der Gilde angegriffen wird.
+Die **Brabarand-[Gilde](/factions/gilde_von_ehrenfels.md)** ist eine berüchtigte Auftragskiller-Organisation. Sie ist dafür bekannt, dass man sie anheuern kann, um Leute gezielt auszuschalten. In der Kampagne tritt sie als Gegnerin der Gruppe in Erscheinung, als diese von Mitgliedern der Gilde angegriffen wird.
 
 ## Auftragsmord und Ruf
 
@@ -20,7 +20,7 @@ Das Geschäft der Brabarand-Gilde sind gedungene Ausschaltungen: Wer die Gilde a
 
 ## Angriff auf die Gruppe
 
-Im Verlauf der Session wird die Gruppe von Angreifern überfallen. [Lindo Laut](/characters/lindo_laut.md) identifiziert die Angreifer als Mitglieder der Brabarand-Gilde. Der Angriff erfolgt, weil ein Kopfgeld auf die Gruppe ausgesetzt ist.
+Im Verlauf der Session wird die Gruppe von Angreifern überfallen. [Lindo Laut](/characters/lindo_laut.md) identifiziert die Angreifer als Mitglieder der Brabarand-Gilde. Der Angriff erfolgt, weil ein [Kopfgeld auf die Gruppe](/events/kopfgeld_auf_die_gruppe.md) ausgesetzt ist.
 
 # Belege
 

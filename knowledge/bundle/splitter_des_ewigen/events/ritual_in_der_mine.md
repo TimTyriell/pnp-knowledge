@@ -10,7 +10,7 @@ id: EVENT_RITUAL_IN_DER_MINE
 subtype: Ritual
 ---
 
-[Saris](/characters/saris.md) führt ein Ritual an einer Leiche in der [Mine](/locations/kristallmine.md) durch, bei dem er einen [Knochendolch](/items/knochendolch.md) erhält. Die Leiche erwacht kurz und kommuniziert mit ihm.
+[Saris](/characters/saris.md) führt ein Ritual an einer Leiche in der [Mine](/locations/verlassene_mine_an_der_farm.md) durch, bei dem er einen [Knochendolch](/items/knochendolch.md) erhält. Die Leiche erwacht kurz und kommuniziert mit ihm.
 
 # Belege
 

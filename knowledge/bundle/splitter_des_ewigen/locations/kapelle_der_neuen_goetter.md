@@ -10,7 +10,7 @@ id: LOC_KAPELLE_DER_NEUEN_GOETTER
 subtype: Gebäude
 ---
 
-Die [Kapelle in Ehrenfels](/locations/kapelle_von_ehrenfels.md) ist ein Gebäude, das [Nerash](/deities/nerash.md) gewidmet ist. Sie enthält zwei Särge und eine Truhe. Die Gruppe besucht sie für einen Gottesdienst, bei dem die [Priesterin Auranie](/npcs/priesterin_auranie.md) den [Segen der neuen Götter](/events/segen_der_neuen_goetter.md) spendet.
+Die [Kapelle in Ehrenfels](/locations/kapelle_von_ehrenfels.md) ist ein Gebäude, das [Nerash](/deities/nerash.md) gewidmet ist. Sie enthält zwei Särge und eine Truhe. Die Gruppe besucht sie für einen Gottesdienst, bei dem die [Priesterin Auranie](/npcs/auranil.md) den [Segen der neuen Götter](/events/segen_der_neuen_goetter.md) spendet.
 
 # Belege
 

@@ -13,13 +13,13 @@ id: CHAR_SANGE
 
 Sange ist ein Katari-Blattjäger (in den Quellen auch als "Katari-Blatthunter" bezeichnet), der sich durch eine elegante, noble und mysteriöse Erscheinung auszeichnet. Sein markantestes äußeres Merkmal ist eine magische Maske, die seine Emotionen widerspiegelt und Magie ausstrahlt. Unter der Maske verbirgt sich ein Katzenwesen mit schwarzem Fell und roten Streifen, das noch deutlich menschliche Züge erkennen lässt.
 
-Sange praktiziert Blutmagie und gehört damit der Klasse der Bloodhunter an. Seine Magie wird als turbulent und chaotisch beschrieben, vergleichbar mit einer stürmischen, rot gefüllten Glaskugel. Durch den Segen eines neuen Gottes hat sich seine Gefühlslage und seine Magie jedoch spürbar verändert.
+Sange praktiziert [Blutmagie](/domains/blutmagie.md) und gehört damit der Klasse der Bloodhunter an. Seine Magie wird als turbulent und chaotisch beschrieben, vergleichbar mit einer stürmischen, rot gefüllten Glaskugel. Durch den Segen eines neuen Gottes hat sich seine Gefühlslage und seine Magie jedoch spürbar verändert.
 
-Ursprünglich stammt Sange aus Brandau, einer Stadt, die den Krieg gegen Willoch verloren hat. Er verließ seine Heimat jedoch schon wesentlich früher, nicht wegen des Krieges, sondern weil er seine Heimat im Sinne seiner Geliebten verloren hat. Vor seiner Zeit als Blattjäger war er ein angesehener Künstler, der in höheren Kreisen verkehrte – ein Leben, das er durch die Blutmagie aufgeben musste.
+Ursprünglich stammt Sange aus [Brandau](/locations/brandau.md), einer Stadt, die den [Krieg](/characters/krieg.md) gegen [Willoch](/locations/willauch.md) verloren hat. Er verließ seine Heimat jedoch schon wesentlich früher, nicht wegen des Krieges, sondern weil er seine Heimat im Sinne seiner Geliebten verloren hat. Vor seiner Zeit als Blattjäger war er ein angesehener Künstler, der in höheren Kreisen verkehrte – ein Leben, das er durch die Blutmagie aufgeben musste.
 
 ## Rolle in der Kampagne
 
-Sange ist eines der Mitglieder der Abenteurergruppe, die sich um die Vorfälle in der Region kümmert. Innerhalb der Gruppe nimmt er eine eher zurückhaltende, beobachtende Rolle ein. Er ist misstrauisch gegenüber mehreren seiner Begleiter – zunächst gegenüber Saris, später auch gegenüber Bruma – und setzt seine Fähigkeiten gezielt ein, um die Wahrheit hinter Ereignissen aufzudecken.
+Sange ist eines der Mitglieder der Abenteurergruppe, die sich um die Vorfälle in der Region kümmert. Innerhalb der Gruppe nimmt er eine eher zurückhaltende, beobachtende Rolle ein. Er ist misstrauisch gegenüber mehreren seiner Begleiter – zunächst gegenüber [Saris](/characters/saris.md), später auch gegenüber Bruma – und setzt seine Fähigkeiten gezielt ein, um die Wahrheit hinter Ereignissen aufzudecken.
 
 Seine Blutmagie verleiht ihm die Fähigkeit, Visionen von vergangenen Ereignissen zu erhalten, etwa indem er einen Schädel untersucht und dadurch die letzten Minuten eines Verstorbenen sieht. Diese Fähigkeit macht ihn zu einem wichtigen Ermittler innerhalb der Gruppe.
 
@@ -37,9 +37,9 @@ Seine Kleidung ist elegant und nobel, was zu seinem Hintergrund als ehemaliger K
 
 Sange ist ein Bloodhunter, der Blutmagie einsetzt. Zu seinen Fähigkeiten gehören:
 
-- **Visionsmagie**: Er kann Visionen von vergangenen Ereignissen erhalten, etwa um die letzten Minuten eines Verstorbenen zu sehen. Dies setzt er ein, um die letzte Gräueltat von Saris zu sehen oder die Umstände des Todes des Grottenschrats aufzuklären.
+- **Visionsmagie**: Er kann Visionen von vergangenen Ereignissen erhalten, etwa um die letzten Minuten eines Verstorbenen zu sehen. Dies setzt er ein, um die letzte Gräueltat von Saris zu sehen oder die Umstände des Todes des [Grottenschrats](/npcs/grottenschrat.md) aufzuklären.
 - **Blutmagie**: Seine Magie wird als turbulent und chaotisch beschrieben, vergleichbar mit einer stürmischen, rot gefüllten Glaskugel.
-- **Unkontrollierte Verwandlung**: Im Kampf gegen Gnolle verwandelt er sich unkontrolliert in eine Halb-Werwolf-Gestalt und tötet den Anführer der Gnolle. An diese Verwandlung kann er sich danach nicht erinnern, was ihm große Sorge bereitet.
+- **Unkontrollierte Verwandlung**: Im Kampf gegen [Gnolle](/factions/gnolle.md) verwandelt er sich unkontrolliert in eine Halb-Werwolf-Gestalt und tötet den Anführer der Gnolle. An diese Verwandlung kann er sich danach nicht erinnern, was ihm große Sorge bereitet.
 
 ### Wesenszüge
 
@@ -57,7 +57,7 @@ Sange ist misstrauisch gegenüber Saris und setzt eine Fähigkeit ein, um dessen
 
 ### Bruma
 
-Auch gegenüber Bruma zeigt Sange zunächst Misstrauen. Dennoch folgt er Bruma in die Mine, getrieben von seinem Blut, das nach Kampf schreit.
+Auch gegenüber Bruma zeigt Sange zunächst Misstrauen. Dennoch folgt er Bruma in die [Mine](/locations/verlassene_mine_an_der_farm.md), getrieben von seinem Blut, das nach Kampf schreit.
 
 ### Die Gruppe
 
@@ -65,13 +65,13 @@ In der Session vom 06.08.2026 offenbart Sange der Gruppe seine wahre Identität,
 
 ### Talron und Raxalis
 
-Sange belauscht ein Gespräch zwischen Talron und Raxalis über eine Person namens Marie. Diese Information hält er geheim.
+Sange belauscht ein Gespräch zwischen [Talron](/npcs/talron.md) und Raxalis über eine Person namens [Marie](/npcs/marie.md). Diese Information hält er geheim.
 
 ## Chronologie
 
 ### Session 2026-06-04
 
-Sange wird als Katari-Blattjäger mit magischer Maske und Blutmagie eingeführt. Er ist elegant, mysteriös und misstrauisch gegenüber Saris. Er setzt seine Fähigkeit ein, um Saris' letzte Gräueltat zu sehen. Er nimmt den Segen von Joran an, was einen inneren Konflikt mit seiner Blutmagie auslöst. Er zeigt Fürsorge, indem er eine Puppe für ein Kind bastelt, die jedoch zerstört wird. Er sucht pragmatisch Informationen über Goblins.
+Sange wird als Katari-Blattjäger mit magischer Maske und Blutmagie eingeführt. Er ist elegant, mysteriös und misstrauisch gegenüber Saris. Er setzt seine Fähigkeit ein, um Saris' letzte Gräueltat zu sehen. Er nimmt den Segen von Joran an, was einen inneren Konflikt mit seiner Blutmagie auslöst. Er zeigt Fürsorge, indem er eine Puppe für ein Kind bastelt, die jedoch zerstört wird. Er sucht pragmatisch Informationen über [Goblins](/npcs/pilz_goblins.md).
 
 ### Session 2026-07-10
 

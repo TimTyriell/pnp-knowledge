@@ -10,7 +10,7 @@ id: LOC_PORTAL_AM_NORDGIPFEL
 subtype: Sonstiges
 ---
 
-[Das Portal](/locations/das_portal.md) am Nordgipfel von [Ehrenfels](/locations/ehrenfels.md) ist die Quelle der dämonischen Invasion. Es wird von der Gruppe zerstört, indem sie die tragenden Säulen zerschlagen. Nach der Zerstörung erscheint [Nerash](/deities/nerash.md).
+Das [Portal](/locations/portal.md) am Nordgipfel von [Ehrenfels](/locations/ehrenfels.md) ist die Quelle der dämonischen Invasion. Es wird von der Gruppe zerstört, indem sie die tragenden Säulen zerschlagen. Nach der Zerstörung erscheint [Nerash](/deities/nerash.md).
 
 # Belege
 

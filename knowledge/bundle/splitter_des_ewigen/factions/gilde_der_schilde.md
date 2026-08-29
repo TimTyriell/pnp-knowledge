@@ -12,7 +12,7 @@ subtype: Gilde
 
 # Gilde der Schilde
 
-Die **Gilde der Schilde** ist eine kleine, aber lukrative Gilde in [Tiefwasser](/locations/tiefwasser.md). Sie bietet Aufträge gegen Orks und andere Bedrohungen an. Trotz ihrer geringen Größe scheint sie einträglich zu sein – zumindest legt ihre Beschreibung als lukrativ nahe, dass ihre Aufträge gut bezahlt sind.
+Die **[Gilde](/factions/gilde_von_ehrenfels.md) der Schilde** ist eine kleine, aber lukrative Gilde in [Tiefwasser](/locations/tiefwasser.md). Sie bietet Aufträge gegen Orks und andere Bedrohungen an. Trotz ihrer geringen Größe scheint sie einträglich zu sein – zumindest legt ihre Beschreibung als lukrativ nahe, dass ihre Aufträge gut bezahlt sind.
 
 ## Aufträge
 

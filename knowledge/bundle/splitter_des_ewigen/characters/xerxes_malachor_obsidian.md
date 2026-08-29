@@ -11,7 +11,7 @@ id: CHAR_XERXES_MALACHOR_OBSIDIAN
 
 # Xerxes Malachor Obsidian
 
-Xerxes Malachor Obsidian ist ein Infernis-Schurke, der sich neu der Gruppe angeschlossen hat. Seine Vergangenheit ist von einer Tragödie geprägt; nähere Umstände sind bislang nicht bekannt. Sein erklärtes Ziel ist der Kampf gegen Dämonen, den er mit einer Kombination aus Schattenmagie und Klingen austrägt.
+Xerxes Malachor Obsidian ist ein [Infernis](/domains/infernis.md)-Schurke, der sich neu der Gruppe angeschlossen hat. Seine Vergangenheit ist von einer Tragödie geprägt; nähere Umstände sind bislang nicht bekannt. Sein erklärtes Ziel ist der Kampf gegen [Dämonen](/factions/daemonen.md), den er mit einer Kombination aus Schattenmagie und Klingen austrägt.
 
 ## Rolle und Fähigkeiten
 

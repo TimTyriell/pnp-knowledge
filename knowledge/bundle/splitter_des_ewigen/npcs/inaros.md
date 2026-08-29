@@ -9,7 +9,7 @@ timestamp: '2026-08-12T00:00:00Z'
 id: NPC_INAROS
 ---
 
-Inaros ist ein Strixwolf und enger Gefährte von [Dodo](/characters/dodo.md). Die Gruppe rettete ihn vor [Willauch](/locations/willauch.md) und versteckte ihn in [Ehrenfels](/locations/ehrenfels.md), wo Dodo ihn versorgte. Später rettete Inaros die Gruppe aus einer Bedrohung durch [Nerash](/deities/nerash.md), verschwand danach und wurde zuletzt in Begleitung von [Nox](/npcs/nox.md) gesehen.
+Inaros ist ein [Strixwolf](/npcs/strixwolf.md) und enger Gefährte von [Dodo](/characters/dodo.md). Die Gruppe rettete ihn vor [Willauch](/locations/willauch.md) und versteckte ihn in [Ehrenfels](/locations/ehrenfels.md), wo Dodo ihn versorgte. Später rettete Inaros die Gruppe aus einer Bedrohung durch [Nerash](/deities/nerash.md), verschwand danach und wurde zuletzt in Begleitung von [Nox](/npcs/nox.md) gesehen.
 
 ## Rettung und Bindung zu Dodo
 

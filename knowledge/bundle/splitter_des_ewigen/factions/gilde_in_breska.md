@@ -10,7 +10,7 @@ id: FACTION_GILDE_IN_BRESKA
 subtype: Gilde
 ---
 
-Die Gilde in Breska ist eine mächtige Organisation in [Breska](/locations/breska.md), die nach Stärke und Reichtum strebt. Wer ihr beitreten will, muss eine Aufnahmeprüfung bestehen; innerhalb der Gilde gilt zudem die Regel, dass Gildenmitglieder nicht ermordet werden dürfen. Die Gilde betrachtet Breska als ihre Stadt und ist bereit, Flüchtlinge zu vertreiben, um sie zu schützen.
+Die [Gilde in Breska](/locations/gilde_in_breska.md) ist eine mächtige Organisation in [Breska](/locations/breska.md), die nach Stärke und Reichtum strebt. Wer ihr beitreten will, muss eine Aufnahmeprüfung bestehen; innerhalb der Gilde gilt zudem die Regel, dass Gildenmitglieder nicht ermordet werden dürfen. [Die Gilde](/factions/gilde_von_ehrenfels.md) betrachtet Breska als ihre Stadt und ist bereit, [Flüchtlinge](/factions/fluechtlinge_aus_breska.md) zu vertreiben, um sie zu schützen.
 
 ## Aufnahmeprüfung und Regeln
 

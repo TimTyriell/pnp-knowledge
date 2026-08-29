@@ -10,7 +10,7 @@ id: ITEM_KNOCHENDOLCH
 subtype: Waffe
 ---
 
-Ein [Dolch](/items/dolch.md), den [Saris](/characters/saris.md) von der wiederbelebten Leiche in der [Mine](/locations/kristallmine.md) erhält. Er wurde aus einer Rippe geformt und scheint eine Antwort auf Saris' Frage nach der Dunkelheit zu sein.
+Ein [Dolch](/items/dolch.md), den [Saris](/characters/saris.md) von der wiederbelebten Leiche in der [Mine](/locations/verlassene_mine_an_der_farm.md) erhält. Er wurde aus einer Rippe geformt und scheint eine Antwort auf Saris' Frage nach der Dunkelheit zu sein.
 
 # Belege
 

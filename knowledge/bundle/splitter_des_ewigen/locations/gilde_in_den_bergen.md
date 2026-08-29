@@ -10,7 +10,7 @@ id: LOC_GILDE_IN_DEN_BERGEN
 subtype: Gebäude
 ---
 
-Die Heimatgilde der Gruppe, die in den Bergen liegt. Sie ist eine von zwei Gilden im Norden und wird von einem [Gildenmeister](/npcs/nox.md) geführt. Die Gruppe will dorthin zurückkehren, um Unterstützung für die [Flüchtlinge](/factions/fluechtlinge.md) zu holen.
+Die Heimatgilde der Gruppe, die in den Bergen liegt. Sie ist eine von zwei Gilden im Norden und wird von einem [Gildenmeister](/npcs/nox.md) geführt. Die Gruppe will dorthin zurückkehren, um Unterstützung für die [Flüchtlinge](/factions/fluechtlinge_aus_breska.md) zu holen.
 
 # Belege
 

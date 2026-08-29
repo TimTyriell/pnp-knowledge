@@ -1,16 +1,16 @@
 ---
 type: Event
 title: Wiederbelebung durch die Feder
-description: Lunara stirbt nach dem Sturz, wird aber durch die silberne Feder wiederbelebt.
-  Die Feder löst sich auf und heilt ihre Wunden. Dies ist ein…
+description: Lunara wird durch die silberne Feder wiederbelebt, nachdem sie in den
+  Abgrund gestürzt ist.
 tags:
 - events
 timestamp: '2026-06-10T00:00:00Z'
 id: EVENT_WIEDERBELEBUNG_DURCH_DIE_FEDER
-subtype: Sonstiges
+subtype: Ritual
 ---
 
-Lunara stirbt nach dem Sturz, wird aber durch die silberne Feder wiederbelebt. Die Feder löst sich auf und heilt ihre Wunden. Dies ist ein entscheidendes Ereignis für Lunara.
+Lunara wird durch die silberne Feder wiederbelebt, nachdem sie in den Abgrund gestürzt ist.
 
 # Belege
 

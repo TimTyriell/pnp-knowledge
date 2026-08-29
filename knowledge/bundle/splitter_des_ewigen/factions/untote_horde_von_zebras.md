@@ -10,7 +10,7 @@ id: FACTION_UNTOTE_HORDE_VON_ZEBRAS
 subtype: Armee
 ---
 
-Die **Untote Horde von Zebras** ist eine große Schar untoter Zebras, die als Bedrohung über der Region liegt. Unter ihrem Druck steht derzeit die Siedlung [Breska](/locations/breska.md), die von der Horde belagert wird. Die Verteidiger, darunter die Heldengruppe der Kampagne, stellen sich den angreifenden Skelett-Soldaten entgegen.
+Die **[Untote Horde](/factions/belorus_untotenarmee.md) von Zebras** ist eine große Schar untoter Zebras, die als Bedrohung über der Region liegt. Unter ihrem Druck steht derzeit die Siedlung [Breska](/locations/breska.md), die von der Horde belagert wird. Die Verteidiger, darunter die Heldengruppe der Kampagne, stellen sich den angreifenden [Skelett](/npcs/skelett_bogenschuetzen.md)-Soldaten entgegen.
 
 ## Belagerung von Breska
 

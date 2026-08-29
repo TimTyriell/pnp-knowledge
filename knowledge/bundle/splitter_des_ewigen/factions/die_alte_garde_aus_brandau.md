@@ -14,7 +14,7 @@ Die **Alte Garde aus Brandau** ist eine Gruppe von Überlebenden, die nach dem U
 
 ## Herkunft und Organisation
 
-Die Mitglieder der Alten Garde stammen aus Brandau und haben dessen Zerstörung überlebt. Der Zusammenschluss kam in Kleinringtal zustande, wo die Gruppe seither aktiv ist und sich um Neuorganisation bemüht. Nähere Angaben zu Größe, Führung oder konkreten Plänen der Gruppe liegen bislang nicht vor. [P-52]
+Die Mitglieder der Alten Garde stammen aus Brandau und haben dessen Zerstörung überlebt. Der Zusammenschluss kam in [Kleinringtal](/locations/ringtal.md) zustande, wo die Gruppe seither aktiv ist und sich um Neuorganisation bemüht. Nähere Angaben zu Größe, Führung oder konkreten Plänen der Gruppe liegen bislang nicht vor. [P-52]
 
 ## Bekannte Mitglieder
 

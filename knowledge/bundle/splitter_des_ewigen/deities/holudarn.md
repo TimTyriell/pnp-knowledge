@@ -12,7 +12,7 @@ subtype: Alter Gott
 
 # Holudarn
 
-Holudarn ist ein alter Gott in der Kampagne. Bekannt ist bislang nur, dass er im Splitter des Ewigen gefangen ist und dass Vasul seine Wiederauferstehung anstrebt, um die Welt neu zu gestalten. Weitere Informationen über sein Wirken, seine Stellung oder seine Anhänger fehlen bislang.
+Holudarn ist ein alter Gott in der Kampagne. Bekannt ist bislang nur, dass er im [Splitter des Ewigen](/items/splitter_des_ewigen.md) gefangen ist und dass [Vasul](/deities/vharzul.md) seine Wiederauferstehung anstrebt, um die Welt neu zu gestalten. Weitere Informationen über sein Wirken, seine Stellung oder seine Anhänger fehlen bislang.
 
 ## Gefangenschaft im Splitter des Ewigen
 

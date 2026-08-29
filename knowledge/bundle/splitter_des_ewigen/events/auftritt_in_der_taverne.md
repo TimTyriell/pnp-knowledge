@@ -10,7 +10,7 @@ id: EVENT_AUFTRITT_IN_DER_TAVERNE
 subtype: Fest
 ---
 
-[Kaya](/characters/kaya.md) singt und spielt in der [Taverne](/locations/taverne.md), verdient sich eine kostenlose Übernachtung und sorgt für ausgelassene Stimmung.
+[Kaya](/characters/kaya.md) singt und spielt in der Taverne, verdient sich eine kostenlose Übernachtung und sorgt für ausgelassene Stimmung.
 
 # Belege
 

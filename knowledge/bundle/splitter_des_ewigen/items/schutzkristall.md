@@ -10,7 +10,7 @@ id: ITEM_SCHUTZKRISTALL
 subtype: Artefakt
 ---
 
-Ein [Kristall](/items/kristall.md), der einen Schutzzauber vor Gutem und Bösem enthält. [Cookie](/characters/cookie.md) aktiviert ihn in der Burg, wodurch [Untote](/factions/belorus_untotenarmee.md) in der Nähe umfallen und [Belorus](/npcs/belorus.md) zurückweicht. Er erzeugt eine Aura, die Untote fernhält, aber keine Fernangriffe blockt.
+Ein [Kristall](/items/gruener_kristall.md), der einen Schutzzauber vor Gutem und Bösem enthält. [Cookie](/characters/cookie.md) aktiviert ihn in der Burg, wodurch [Untote](/factions/belorus_untotenarmee.md) in der Nähe umfallen und [Belorus](/npcs/belorus.md) zurückweicht. Er erzeugt eine Aura, die Untote fernhält, aber keine Fernangriffe blockt.
 
 # Belege
 

@@ -10,7 +10,7 @@ id: EVENT_FRIEDENSVERTRAG_ZWISCHEN_ZWERGEN_UND_GOBLINS
 subtype: Verhandlung
 ---
 
-Der Friedensvertrag wurde zwischen [Lord Harik](/npcs/lord_harik.md) und dem Goblin-Schamanen geschlossen. Er beinhaltet, dass die [Zwerge](/factions/zwerge.md) den [Goblins](/factions/goblins.md) die Schmiedekunst beibringen und die Goblins die [Mine](/locations/kristallmine.md) nicht weiter angreifen.
+Der Friedensvertrag wurde zwischen [Lord Harik](/npcs/lord_harik.md) und dem Goblin-Schamanen geschlossen. Er beinhaltet, dass die [Zwerge](/factions/zwerge.md) den [Goblins](/npcs/pilz_goblins.md) die Schmiedekunst beibringen und die Goblins die [Mine](/locations/verlassene_mine_an_der_farm.md) nicht weiter angreifen.
 
 # Belege
 

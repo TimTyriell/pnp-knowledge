@@ -10,7 +10,7 @@ id: FACTION_KOENIGLICHE_GARDE_VON_ZEBROS
 subtype: Armee
 ---
 
-Die **Königliche Garde von Zebros** war die Elitetruppe des [Königreichs Zebros](/factions/koenigreich_zebros.md). Sie bestand aus den Elite-Soldaten des Reiches und stand im Dienst der Krone. Einziges namentlich bekanntes Mitglied ist [Edmund](/npcs/sir_edmund.md). Im Götterkrieg kämpfte die Garde bis zum Schluss; nach dem Untergang des Königreichs verlieren sich ihre Spuren.
+Die **Königliche Garde von [Zebros](/factions/koenigreich_zebros.md)** war die Elitetruppe des [Königreichs Zebros](/factions/koenigreich_zebros.md). Sie bestand aus den Elite-Soldaten des Reiches und stand im Dienst der Krone. Einziges namentlich bekanntes Mitglied ist [Edmund](/npcs/sir_edmund.md). Im Götterkrieg kämpfte die Garde bis zum Schluss; nach dem Untergang des Königreichs verlieren sich ihre Spuren.
 
 ## Rolle und Stellung
 
@@ -18,7 +18,7 @@ Die **Königliche Garde von Zebros** war die Elitetruppe des [Königreichs Zebro
 
 ## Die Garde im Götterkrieg
 
-Im Götterkrieg kämpfte die Garde aufseiten des Königreichs Zebros — ausdrücklich **bis zum Schluss**. Das Königreich wurde in diesem Krieg zerstört; von ihm sind heute nur noch Ruinen und Relikte erhalten. Über das Schicksal der Garde nach dem Krieg gibt es keine Angaben; angesichts des vollständigen Untergangs des Königreichs ist ein Fortbestand der Einheit nicht ersichtlich.
+Im Götterkrieg kämpfte die Garde aufseiten des Königreichs Zebros — ausdrücklich **bis zum Schluss**. Das Königreich wurde in diesem [Krieg](/characters/krieg.md) zerstört; von ihm sind heute nur noch Ruinen und Relikte erhalten. Über das Schicksal der Garde nach dem Krieg gibt es keine Angaben; angesichts des vollständigen Untergangs des Königreichs ist ein Fortbestand der Einheit nicht ersichtlich.
 
 # Belege
 

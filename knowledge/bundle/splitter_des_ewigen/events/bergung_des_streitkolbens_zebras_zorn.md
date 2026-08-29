@@ -10,7 +10,7 @@ id: EVENT_BERGUNG_DES_STREITKOLBENS_ZEBRAS_ZORN
 subtype: Entdeckung
 ---
 
-Die Gruppe findet den Streitkolben „[Zebras Zorn](/items/zebras_zorn.md)“ auf einem Pentagramm. Nach mehreren fehlgeschlagenen Versuchen gelingt es [Rotunas](/characters/rotunas.md), ihn durch einen Spiegel zu ziehen, wodurch das Pentagramm sich auflöst.
+Die Gruppe findet den [Streitkolben](/items/streitkolben_von_dodo.md) „[Zebras Zorn](/items/zebras_zorn.md)“ auf einem Pentagramm. Nach mehreren fehlgeschlagenen Versuchen gelingt es [Rotunas](/characters/rotunas.md), ihn durch einen Spiegel zu ziehen, wodurch das Pentagramm sich auflöst.
 
 # Belege
 

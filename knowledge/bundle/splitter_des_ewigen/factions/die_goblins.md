@@ -10,7 +10,7 @@ id: FACTION_DIE_GOBLINS
 subtype: Bande
 ---
 
-Die Goblins sind eine Gruppe korrumpierter Kreaturen, die auf einem Berg leben und [Vorgul'tar](/deities/vorgul_tar.md) dienen. Sie verhalten sich feindselig gegenüber Reisenden und greifen an, sobald diese versuchen, den Berg zu überqueren.
+Die [Goblins](/npcs/pilz_goblins.md) sind eine Gruppe korrumpierter Kreaturen, die auf einem Berg leben und [Vorgul'tar](/deities/vorgul_tar.md) dienen. Sie verhalten sich feindselig gegenüber Reisenden und greifen an, sobald diese versuchen, den Berg zu überqueren.
 
 ## Vorgehen und Bewaffnung
 

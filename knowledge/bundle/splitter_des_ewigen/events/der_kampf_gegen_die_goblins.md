@@ -10,7 +10,7 @@ id: EVENT_DER_KAMPF_GEGEN_DIE_GOBLINS
 subtype: Kampf
 ---
 
-Ein Kampf gegen eine Gruppe korrumpierter [Goblins](/factions/goblins.md) auf dem Berg. Die Gruppe besiegt sie mit vereinten Kräften.
+Ein Kampf gegen eine Gruppe korrumpierter [Goblins](/npcs/pilz_goblins.md) auf dem Berg. Die Gruppe besiegt sie mit vereinten Kräften.
 
 # Belege
 

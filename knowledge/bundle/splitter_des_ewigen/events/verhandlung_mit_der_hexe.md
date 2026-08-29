@@ -10,7 +10,7 @@ id: EVENT_VERHANDLUNG_MIT_DER_HEXE
 subtype: Verhandlung
 ---
 
-Nach dem Kampf verhandelt die Gruppe mit der Hexe. Sie erklärt die Situation der Stadt und bietet Informationen an. Die Gruppe erhält wichtige Details über die Festung und die Götter.
+Nach dem Kampf verhandelt die Gruppe mit der Hexe. Sie erklärt die Situation der Stadt und bietet Informationen an. Die Gruppe erhält wichtige Details über die [Festung](/locations/festung.md) und die Götter.
 
 # Belege
 

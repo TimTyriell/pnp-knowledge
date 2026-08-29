@@ -1,68 +1,80 @@
 ---
 type: Deity
 title: Neue Götter
-description: Die Neuen Götter sind die jungen Gottheiten, die vor zwölf Jahren die
-  Alten Götter in einem erbitterten Kampf besiegt und die Welt neu ersc…
+description: Die Neuen Götter sind die jungen Götter, die vor zwölf Jahren die Alten
+  Götter in einem erbitterten Kampf besiegt und die Welt neu erschaff…
 tags:
 - deities
-timestamp: '2026-08-06T00:00:00Z'
+timestamp: '2026-08-12T00:00:00Z'
 id: DEITY_NEUE_GOETTER
 subtype: Neuer Gott
 aliases:
 - Die neuen Götter
+- Die Neuen Götter
 ---
+
+# Die Neuen Götter
 
 ## Überblick
 
-Die Neuen Götter sind die jungen Gottheiten, die vor zwölf Jahren die Alten Götter in einem erbitterten Kampf besiegt und die Welt neu erschaffen haben. Sie sind weniger mächtig als ihre Vorgänger, dafür zahlreicher und den Sterblichen näher. Sie wirken im Verborgenen, gewähren Segen und werden von der Gilde verehrt. Ihr Sieg markiert den Beginn der heutigen Weltordnung und ist zugleich der Ursprung eines tiefgreifenden Gedächtnisverlusts, der alle Bewohner der Welt betrifft.
+Die Neuen Götter sind die jungen Götter, die vor zwölf Jahren die Alten Götter in einem erbitterten Kampf besiegt und die Welt neu erschaffen haben. Sie sind weniger mächtig als ihre Vorgänger, dafür aber zahlreicher und den Sterblichen näher. Sie sind im Verborgenen aktiv und gewähren Segen. Die Neue Götter werden von der [Gilde](/factions/gilde_von_ehrenfels.md) verehrt.
+
+Ihr Sieg über die Alten Götter markiert einen fundamentalen Bruch in der Geschichte der Welt: Seit diesem Ereignis können sich die Sterblichen nicht mehr an die Zeit davor erinnern. Die Erinnerung der Menschen reicht nur zwölf Jahre zurück – alles Frühere ist durch einen sogenannten "Law Drop" ausgelöscht.
 
 ## Rolle in der Kampagne
 
-Die Neuen Götter bilden den religiösen und kosmologischen Hintergrund der Kampagne. Sie sind die aktuelle, verehrte Gottheitengeneration, nachdem die Alten Götter besiegt wurden. Die Gilde verehrt sie, und einzelne Gläubige wie die Pilgerin Adelia widmen ihr Leben der Bewahrung ihres Wissens. Für die Heldengruppe sind sie zunächst eine Randnotiz – weder Kaya noch Sange sind im "Gottkram" drin – doch ihr Sieg vor zwölf Jahren hat direkte Auswirkungen auf das Leben aller: Niemand kann sich an die Zeit vor ihrem Triumph erinnern.
+Die Neuen Götter sind eine zentrale Macht in der Welt der Kampagne. Sie haben die alte Ordnung gestürzt und eine neue Ära eingeläutet, deren Auswirkungen bis in die Gegenwart der Spielhandlung reichen. Die Gruppe begegnet ihnen und ihren Anhängern wiederholt:
 
-Die Neuen Götter sind zudem persönlich relevant für Sange, der sich einem neuen Gott zugewandt hat, um seine Blutmagie zu kontrollieren. Damit werden sie von einem abstrakten Hintergrundfakt zu einer konkreten Kraft im Leben eines der Helden.
+- Die Gilde verehrt die Neuen Götter und handelt in ihrem Namen.
+- Die Pilgerin [Adelia](/npcs/adeliga_der_eulenseraph.md), ein Seraph, reist durch die Welt, um möglichst viel über die Neuen Götter zu erfahren – sie bezeichnet ihre Mission als "die Bewahrung der Neuen".
+- Die Gruppe selbst steht den Neuen Göttern misstrauisch gegenüber. Nach ihrer [Rückkehr aus Abyssalis](/events/rueckkehr_aus_abyssalis.md), dem Gefängnis der Alten Götter, werden sie von einer Priesterin der Neuen Götter konfrontiert, die ihnen vorwirft, Dinge getan zu haben, "vor denen die neuen Götter nur erzittern würden".
+
+Die Neue Götter sind damit eine ambivalente Größe: Für viele sind sie Erlöser, die die Welt von tyrannischen Göttern befreit haben – für die Gruppe sind sie eine unbekannte, potenziell bedrohliche Macht, deren Motive und Handlungen im Dunkeln liegen.
 
 ## Wichtige Merkmale
 
-Die Neuen Götter sind noch nicht sehr mächtig und bauen ihre Kräfte erst aus. Sie sind den Sterblichen näher als die Alten Götter und treten weniger als ferne, übermächtige Wesen auf, sondern eher als aktive, im Verborgenen wirkende Kräfte, die Segen gewähren.
+Die Neuen Götter werden als weniger mächtig beschrieben als die Alten Götter, bauen ihre Kräfte aber aus. Sie sind den Sterblichen näher als ihre Vorgänger und gewähren aktiv Segen – so bietet etwa die Pilgerin Adelia der Gruppe die "Gnade von Joran des Münzenzählers" an, eines der Neuen Götter.
 
-Ein namentlich bekannter Neuer Gott ist **Joran der Münzenzähler**, dessen Gnade Gläubigen angeboten wird. Weitere Namen sind aus den Belegen nicht bekannt.
+Ihr Sieg vor zwölf Jahren wird in der Überlieferung ihrer Anhänger als Erlösungstat gerahmt. Adelia schildert die Zeit davor als Herrschaft "dämonischer, abnormaler Kreaturen", die unterdrückten, folterten, brandschatzten und mordeten. Die Neuen Götter kamen "wie das Licht am Morgen", brachten Leben und Sicherheit und ließen die Sterblichen das Vergessen als Gnade erfahren.
 
-Die Neue Götter werden von ihren Anhängern als Erlöser beschrieben. Die Pilgerin Adelia schildert die Alten Götter als "böse Götter", "dämonische, abnormale Kreaturen", die die Welt "unterdrückt, gefoltert, gebrandschatzt, ermordet" hätten, bis die Neuen Götter kamen: "Sie kamen wie das Licht am Morgen. Sie brachten uns das Leben, die Sicherheit. Und sie ließen uns vergessen, das, was der Tadel der Welt war. Als Gnade für das, was vor uns liegt."
-
-Diese Darstellung ist jedoch die Perspektive der Gläubigen – ob sie der Wahrheit entspricht, lassen die Belege offen.
+Ein zentrales Merkmal ihrer Herrschaft ist eben dieses Vergessen: Niemand kann sich an die Zeit vor ihrem Sieg erinnern. Die Erinnerung der Sterblichen setzt erst vor zwölf Jahren ein.
 
 ## Beziehungen und Verbindungen
 
-**Zu den Alten Göttern:** Die Neuen Götter haben die Alten Götter vor zwölf Jahren besiegt und verdrängt. Der Kampf wird als "erbittert" beschrieben. Die Alten Götter werden von den Anhängern der Neuen als böse, dämonische Kreaturen dargestellt.
+**Zu den Alten Göttern:** Die Neuen Götter haben die Alten Götter vor zwölf Jahren besiegt. Die Alten Götter werden von den Anhängern der Neuen als böse, dämonische Kreaturen beschrieben. [Abyssalis](/domains/splitterwelt.md), das Gefängnis der Alten Götter, existiert weiterhin – die Gruppe kehrte von dort zurück, was bei den Neuen Göttern und ihren Dienern für Unbehagen sorgt.
 
-**Zur Gilde:** Die Gilde verehrt die Neuen Götter. Die genaue Natur dieser Verehrung – ob institutionalisiert, kultisch oder politisch – wird nicht näher ausgeführt.
+**Zur Gilde:** Die Gilde verehrt die Neuen Götter und scheint in ihrem Namen zu handeln. Eine Priesterin der Neuen Götter tritt der Gruppe in einer Begegnung gegenüber und vertritt deren Interessen.
 
-**Zu Adelia:** Die Pilgerin Adelia ist eine hingebungsvolle Verehrerin der Neuen Götter. Sie pilgert, um "so viel über die neuen Götter zu erfahren wie möglich", und beschreibt ihr Anliegen als "die Bewahrung der Neuen". Sie bietet der Gruppe die Gnade von Joran dem Münzenzähler an.
+**Zu [Vasul](/deities/vharzul.md):** Vasul positioniert sich ausdrücklich als neutral: Er sei weder Freund noch Feind der alten noch der neuen Götter. Diese Haltung wird von [Lindo Laut](/characters/lindo_laut.md) hinterfragt, der wissen will, ob Vasul ein Feind der Neuen Götter ist.
 
-**Zu Sange:** Sange hat sich einem neuen Gott zugewandt, um seine Blutmagie zu kontrollieren. Welchem Gott genau und in welcher Form diese Zuwendung geschieht, ist nicht belegt.
+**Zu [Nerash](/deities/nerash.md):** Nerash gehört zu den Neuen Göttern, hat aber einen schlechten Ruf. Die Gruppe misstraut ihm und den Neuen Göttern insgesamt.
 
-**Zu den Helden:** Weder Kaya noch Sange sind in der Götterverehrung aktiv. Die Gruppe insgesamt hat keine enge Bindung an die Neuen Götter, ist aber durch den Gedächtnisverlust von deren Sieg betroffen.
+**Zu [Sange](/characters/sange.md):** Sange hat sich einem neuen Gott zugewandt, um seine [Blutmagie](/domains/blutmagie.md) zu kontrollieren.
 
 ## Chronologie
 
-**Vor zwölf Jahren:** Die Neuen Götter besiegen die Alten Götter in einem erbitterten Kampf. Die Welt wird neu erschaffen. Seit diesem Ereignis kann sich niemand an die Zeit davor erinnern – der Gedächtnisverlust betrifft alle Bewohner der Welt. Die Erinnerung reicht nur zwölf Jahre zurück; was davor geschah, ist für die Menschen nicht mehr zugänglich.
+**Vor zwölf Jahren:** Die Neuen Götter besiegen die Alten Götter in einem erbitterten Kampf und erschaffen die Welt neu. Seit diesem Ereignis können sich die Sterblichen nicht mehr an die Zeit davor erinnern – der "Law Drop" löscht alle Erinnerungen an die Zeit vor dem Sieg der Neuen Götter.
 
-**Session 2026-06-04:** Die Gruppe trifft in der Stadt auf die Pilgerin Adelia, die auf ihrer Pilgerreise Wissen über die Neuen Götter sammelt. Sie erzählt die Geschichte vom Sieg der Neuen über die Alten Götter und bietet der Gruppe die Gnade von Joran des Münzenzählers an. Weder Kaya noch Sange zeigen Interesse an der Götterverehrung.
+**Session 2026-03-31:** Lindo Laut fragt Vasul, ob er ein Feind der Neuen Götter sei. Vasul antwortet, er sei weder Freund noch Feind der alten noch der neuen Götter.
 
-**Session 2026-08-06:** Im Gespräch mit Bruma Stormrak wird das Thema des Gedächtnisverlusts vertieft. Die Gruppe stellt fest, dass sich niemand an die Zeit vor zwölf Jahren erinnern kann – weder an das, was vor 13 oder 14 Jahren geschah, noch an die Zeit davor. Bruma zitiert einen Spruch seiner Familie: "Jeder Regentropfen findet irgendwann seinen Weg nach Hause." Die Gruppe diskutiert, ob es zwölf oder dreizehn Jahre sind, und einigt sich auf zwölf Jahre seit dem Sieg der Neuen über die Alten Götter.
+**Session 2026-06-04:** Die Gruppe trifft die Pilgerin Adelia, einen Seraph, die auf einer Pilgerreise ist, um möglichst viel über die Neuen Götter zu erfahren. Sie erzählt die Geschichte vom Sieg der Neuen Götter über die Alten und bietet der Gruppe die Gnade von Joran des Münzenzählers an.
+
+**Session 2026-08-06:** Im Gespräch mit [Bruma Stormrak](/characters/bruma_stormrak.md) wird deutlich, dass niemand sich an die Zeit vor zwölf Jahren erinnern kann. Die Gruppe stellt fest, dass der "Law Drop" die Erinnerungen an die Zeit vor dem Sieg der Neuen Götter ausgelöscht hat.
+
+**Session 2026-08-12:** Eine Priesterin der Neuen Götter konfrontiert die Gruppe nach deren Rückkehr aus Abyssalis. Sie wirft ihnen vor, Dinge getan zu haben, vor denen die Neuen Götter erzittern würden, und zeigt sich alarmiert darüber, dass die Gruppe unversehrt aus dem Gefängnis der Alten Götter zurückgekehrt ist.
 
 ## Offene Fragen
 
-- **Wer sind die Neuen Götter im Einzelnen?** Außer Joran dem Münzenzähler ist kein Name eines Neuen Gottes bekannt. Wie viele es sind und welche Domänen sie abdecken, bleibt offen.
-- **Was geschah wirklich vor zwölf Jahren?** Die Darstellung der Gläubigen (die Alten als böse Tyrannen, die Neuen als Erlöser) ist die offizielle Erzählung. Ob sie der Wahrheit entspricht, ist ungeklärt.
-- **Warum verursacht der Sieg Gedächtnisverlust?** Die Belege nennen den Effekt, aber nicht den Grund. Adelia deutet an, dass das Vergessen eine "Gnade" der Neuen Götter sei – ob das die tatsächliche Ursache ist, bleibt offen.
-- **Welchem neuen Gott hat sich Sange zugewandt?** Die Belege nennen weder den Namen des Gottes noch die Umstände der Zuwendung.
-- **Welche Rolle spielt die Gilde bei der Verehrung der Neuen Götter?** Dass die Gilde sie verehrt, ist belegt, aber nicht, in welcher Form und mit welcher Intensität.
+- Welche Rolle spielt Nerash unter den Neuen Göttern, und warum hat er einen schlechten Ruf?
+- Was genau geschah beim Sieg der Neuen Götter über die Alten, und warum wurde die Erinnerung der Sterblichen ausgelöscht?
+- Welche Absichten verfolgen die Neuen Götter mit ihrer Herrschaft, und wie mächtig sind sie tatsächlich?
+- Warum reagieren die Neuen Götter und ihre Diener so beunruhigt auf die Rückkehr der Gruppe aus Abyssalis?
 
 ## Belege
 
-[P-09] Session 2025-05-27 @ 00:15:30 – https://www.youtube.com/watch?v=bamCIB_CkR8
-[P-52] Session 2026-06-04 @ 01:23:35 – https://www.youtube.com/watch?v=EGNh8O7pE5Q
-[S1-03-B] Session 2026-08-06 @ 01:59:31 – https://www.youtube.com/watch?v=0HyPHao8s_k
-4. Bekannte_Pantheon_der_Goetter.md – "Sie traten auf, als die Alten schwanden. Weniger mächtig, doch zahlreicher und den Sterblichen näher."
+1. Session 2025-05-27 @ 00:15:30 – https://www.youtube.com/watch?v=bamCIB_CkR8
+2. Session 2026-03-31 @ 01:14:24 – https://www.youtube.com/watch?v=Ee-K84wcxLM
+3. Session 2026-06-04 @ 01:23:35 – https://www.youtube.com/watch?v=EGNh8O7pE5Q
+4. Session 2026-08-06 @ 01:59:31 – https://www.youtube.com/watch?v=0HyPHao8s_k
+5. Session 2026-08-12 @ 00:22:44 – https://www.youtube.com/watch?v=piUv11DCwDw
+6. Bekannte_Pantheon_der_Goetter.md (Kampagnenmaterial)

@@ -10,7 +10,7 @@ id: FACTION_GILDE_VON_RINGTAL
 subtype: Gilde
 ---
 
-Die **Gilde von Ringtal** ist eine alte Gilde in [Ringtal](/locations/ringtal.md). Sie ist fast leer [1].
+Die **[Gilde](/factions/gilde_von_ehrenfels.md) von Ringtal** ist eine alte Gilde in [Ringtal](/locations/ringtal.md). Sie ist fast leer [1].
 
 ## Zustand
 

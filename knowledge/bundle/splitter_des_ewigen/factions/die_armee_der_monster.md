@@ -17,7 +17,7 @@ subtype: Armee
 Die Armee vereint unterschiedliche Völker und Wesen in ihren Reihen. Namentlich gehören zu ihr:
 
 - Gnollen
-- Goblins
+- [Goblins](/npcs/pilz_goblins.md)
 - Trolle
 - Grottenschraten
 - vogelartige Kreaturen
