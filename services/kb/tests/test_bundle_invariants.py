@@ -161,6 +161,33 @@ _CITATION_LINE_RE = re.compile(r"^(\[[^\]]+\]|\d+\.)\s*\[?Session\s", re.MULTILI
 UNCITED_ENTITY_BASELINE = 3
 
 
+def test_emit_entity_backfills_a_missing_belege_section(tmp_path: Path):
+    # The "# Belege" heading is only a prompt instruction (prompts.py) for
+    # standard/deep tiers -- nothing enforced it, so a model that skipped it
+    # shipped an uncited page (npcs/lord_kalidarn_von_willauch). emit_entity
+    # now backfills the section from the entity's own mentions, the same
+    # citation loop render_brief_body uses.
+    from pnp_okf.emit import emit_entity
+    from pnp_okf.models import CanonicalEntity, EntityType, MentionRef
+
+    entity = CanonicalEntity(
+        concept_id="npcs/kalidarn_test",
+        type=EntityType.NPC,
+        canonical_name="Kalidarn Test",
+        mentions=[
+            MentionRef(session_id="s1", date="2025-10-14", url="https://youtu.be/a",
+                       citation_ts="00:37:48", note="Erste Erwähnung."),
+            MentionRef(session_id="s2", date="2025-10-21", url="https://youtu.be/b",
+                       citation_ts="00:14:20", note="Zweite Erwähnung."),
+        ],
+    )
+    emit_entity(tmp_path / "b", entity, "## Überblick\n\nEin Herrscher.\n")
+    doc = (tmp_path / "b" / "npcs" / "kalidarn_test.md").read_text(encoding="utf-8")
+    assert "# Belege" in doc
+    assert "1. Session 2025-10-14 @ 00:37:48 (https://youtu.be/a)" in doc
+    assert "2. Session 2025-10-21 @ 00:14:20 (https://youtu.be/b)" in doc
+
+
 def test_every_entity_node_cites_a_source():
     uncited = sorted(
         cid

@@ -261,9 +261,9 @@ def fix_bundle(bundle_dir: Path, registry_path: Path | None = None) -> tuple[int
 
     files_changed = 0
     links_dropped = 0
-    for path in files:
+    for path, cid in zip(files, concept_ids):
         original = path.read_text(encoding="utf-8")
-        new_text, unresolved = normalize_body(original, index)
+        new_text, unresolved = normalize_body(original, index, self_id=cid)
         if new_text != original:
             links_dropped += len(unresolved)
             path.write_text(new_text, encoding="utf-8")

@@ -165,6 +165,12 @@ merge:
   # "kapelle_in_ehrenfels" or an id that opens with the town.
   kapelle in ehrenfels: locations/kapelle_von_ehrenfels
   taverne in ehrenfels: locations/taverne_von_ehrenfels
+  # 2026-08-30 review fix: the ruling above was stated twice but never
+  # actually applied to these two concepts — the town got its rename
+  # (willauch: locations/willauch above) but the arena and its tournament
+  # kept the old events/turnier_von_willau, locations/arena_von_willau ids.
+  arena von willau: locations/arena_von_willauch
+  turnier von willau: events/turnier_von_willauch
   # One city described twice; the fortress inside it keeps its own node.
   boragdil (ruinenstadt und festung): locations/boragdil
   # "Villauch, eine große Stadt im Südwesten" is Willauch under a misheard name
@@ -972,6 +978,10 @@ canonical_name:
   # the graph reads consistently: the town and every building in it now share
   # one spelling (arena_von_willauch next to willauch, not next to willau).
   locations/willauch: Willauch
+  # 2026-08-30 review fix (§1.6b): the two concepts the ruling above always
+  # meant to cover but the merge: entries never actually renamed.
+  locations/arena_von_willauch: Arena von Willauch
+  events/turnier_von_willauch: Turnier von Willauch
   locations/kapelle_von_ehrenfels: Kapelle von Ehrenfels
   locations/taverne_von_ehrenfels: Taverne von Ehrenfels
   locations/banditenlager_der_silberkerne: Banditenlager der Silberkerne
@@ -1152,6 +1162,12 @@ alias_block:
   # titles linkable and only drops the ambiguous bare name.
   npcs/hans_wirt_zum_gruenen_sichelmond:
   - hans
+  # 2026-08-30 review fix: the block above was only applied to one side of
+  # the split: pair -- the innkeeper's own page still linked "Hans" to the
+  # soldier (link_targets() picked whichever concept had more mentions).
+  # Block the bare name on both members so neither can claim it.
+  npcs/hans_soldat_aus_breska:
+  - hans
   # 2026-08-30 spelling sweep: "Amulett" is a bare generic noun, registered
   # as an alias because someone once called this artefact just "the
   # amulet" — but link_targets() then autolinks *any* mention of the word
@@ -1161,3 +1177,17 @@ alias_block:
   # stay linkable; only the ambiguous bare noun is dropped.
   items/amulett_des_heiligen_duran:
   - amulett
+  # 2026-08-30 review fix (§2.1): "Ende" is the ordinary German noun, not a
+  # name -- link_targets() autolinked "am Ende" on the Kalidarn page to this
+  # location. The qualified name ("Ende (jenseits der Orkgebiete)") isn't a
+  # registered alias so it needs no block; only the two bare-noun aliases do.
+  locations/ende_jenseits_der_orkgebiete:
+  - ende
+  - das ende
+  # 2026-08-30 review fix (§2.1): "Flüchtlinge" is a bare generic noun. It is
+  # also a merge: key (identity-level fold, entity_rules.yaml above) — the
+  # visible defect is a *link*
+  # (events/verhandlung_um_die_aufnahme_der_fluechtlinge_in_ringtal.md), not
+  # a fold, so this blocks linkability only and leaves the merge intact.
+  factions/fluechtlinge_aus_breska:
+  - flüchtlinge

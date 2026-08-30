@@ -113,6 +113,26 @@ def test_fix_bundle_leaves_prose_alone_without_a_registry_path(tmp_path: Path):
     assert "Lanra erschreckt" in (npcs / "landra.md").read_text(encoding="utf-8")
 
 
+def test_fix_bundle_degrades_a_self_link(tmp_path: Path):
+    # fix_bundle computes concept_ids in the same order as files but used to
+    # forget to pass self_id to normalize_body -- so a self-link only got
+    # degraded on a full `pnp run` (emit.py's callers pass self_id), never on
+    # the retro-apply path.
+    bundle = tmp_path / "bundle"
+    npcs = bundle / "npcs"
+    npcs.mkdir(parents=True)
+    (npcs / "foo.md").write_text(
+        "---\ntitle: Foo\n---\n[Foo](/npcs/foo.md) ist wichtig.\n",
+        encoding="utf-8",
+    )
+
+    fix_bundle(bundle)
+
+    text = (npcs / "foo.md").read_text(encoding="utf-8")
+    assert "[Foo](/npcs/foo.md)" not in text
+    assert "Foo ist wichtig." in text
+
+
 def test_load_spellings_reads_the_sibling_rules_file(tmp_path: Path):
     registry_path = _write_registry_and_rules(tmp_path)
     assert load_spellings(registry_path) == {"Lanra": "Landra"}

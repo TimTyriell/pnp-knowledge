@@ -59,10 +59,21 @@ def link_targets(entities: list[CanonicalEntity]) -> dict[str, str]:
 
 
 def _link_first_occurrence(
-    text: str, name: str, concept_id: str, known_names: set[str] | None = None
+    text: str,
+    name: str,
+    concept_id: str,
+    known_names: set[str] | None = None,
+    *,
+    skip_headings: bool = False,
 ) -> str:
     """Link the first bare occurrence of ``name`` in ``text``, or return it
-    unchanged if there isn't one."""
+    unchanged if there isn't one.
+
+    ``skip_headings`` skips a match that falls on a ``#``-heading line (a
+    section title, not prose) without giving up the single whole-text scan —
+    it walks matches in order and takes the first whose own line isn't a
+    heading, rather than splitting the body into lines up front.
+    """
 
     # German runs names through the genitive ("Lindo Lauts Amulett"), so
     # allow a trailing -s and keep it inside the link label. Suppressed when
@@ -73,7 +84,20 @@ def _link_first_occurrence(
     collides = known_names is not None and (name + "s").lower() in known_names
     tail = "" if name[-1] in "sßxz" or collides else "s?"
     # Not inside a word, not inside an existing link label or url.
-    match = re.search(rf"(?<![\w\[/]){re.escape(name)}{tail}(?![\w\]])", text)
+    pattern = re.compile(rf"(?<![\w\[/]){re.escape(name)}{tail}(?![\w\]])")
+
+    match = None
+    if skip_headings:
+        for candidate in pattern.finditer(text):
+            line_start = text.rfind("\n", 0, candidate.start()) + 1
+            line_end = text.find("\n", candidate.end())
+            line = text[line_start : line_end if line_end != -1 else len(text)]
+            if not line.lstrip().startswith("#"):
+                match = candidate
+                break
+    else:
+        match = pattern.search(text)
+
     if match is None:
         return text
     label = match.group(0)
@@ -104,11 +128,25 @@ _LINK_TARGET_RE = re.compile(r"\]\(([^)\s]+?)\.md\)")
 def _linked_concept_ids(text: str, targets: dict[str, str]) -> set[str]:
     """Concept ids already reachable via a markdown link somewhere in
     ``text`` — matched by full path or bare slug, so a link the model wrote
-    itself (or a previous autolink pass) is never linked a second time."""
+    itself (or a previous autolink pass) is never linked a second time.
+
+    A link that names a directory (``/deities/foo.md``) must match that
+    exact concept id — falling back to a bare-slug match there let a linked
+    ``deities/foo`` mark the unrelated ``npcs/foo`` as already-linked too,
+    silently swallowing a real mention (see validate.py's own
+    ``cross_type_slugs`` check, which exists because such collisions are
+    expected). The slug-only fallback stays, but only for links the model
+    wrote without a directory segment at all.
+    """
 
     paths = {m.group(1).lstrip("./").lstrip("/") for m in _LINK_TARGET_RE.finditer(text)}
-    slugs = {p.rsplit("/", 1)[-1] for p in paths}
-    return {cid for cid in set(targets.values()) if cid in paths or cid.rsplit("/", 1)[-1] in slugs}
+    dir_paths = {p for p in paths if "/" in p}
+    bare_slugs = {p for p in paths if "/" not in p}
+    return {
+        cid
+        for cid in set(targets.values())
+        if cid in dir_paths or cid.rsplit("/", 1)[-1] in bare_slugs
+    }
 
 
 def autolink_prose(text: str, targets: dict[str, str], skip: str) -> str:
@@ -129,20 +167,30 @@ def autolink_prose(text: str, targets: dict[str, str], skip: str) -> str:
     linked = _linked_concept_ids(head, targets) | {skip}
     names = sorted(targets, key=len, reverse=True)
     known_names = {n.lower() for n in targets}
-    lines = head.split("\n")
-    for i, line in enumerate(lines):
-        if line.lstrip().startswith("#"):
+    for name in names:
+        concept_id = targets[name]
+        if concept_id in linked:
             continue
-        for name in names:
-            concept_id = targets[name]
-            if concept_id in linked:
-                continue
-            new_line = _link_first_occurrence(line, name, concept_id, known_names)
-            if new_line != line:
-                line = new_line
-                linked.add(concept_id)
-        lines[i] = line
-    return "\n".join(lines) + tail
+        new_head = _link_first_occurrence(head, name, concept_id, known_names, skip_headings=True)
+        if new_head != head:
+            head = new_head
+            linked.add(concept_id)
+    return head + tail
+
+
+def render_belege_section(entity: CanonicalEntity) -> str:
+    """The ``# Belege`` citation list built from ``entity``'s mentions.
+
+    Shared by :func:`render_brief_body` (which always needs one) and
+    ``emit.py::emit_entity`` (which backfills one when the model's own
+    synthesis omitted the section it was asked for).
+    """
+
+    lines = ["# Belege", ""]
+    for i, m in enumerate(entity.mentions, start=1):
+        marker = "" if m.quality == "hoch" else f" [Transkriptqualität: {m.quality}]"
+        lines.append(f"{i}. Session {m.date} @ {m.citation_ts} ({m.url}){marker}")
+    return "\n".join(lines)
 
 
 def render_brief_body(
@@ -161,11 +209,7 @@ def render_brief_body(
     body = "\n\n".join(paragraphs)
     if targets:
         body = _autolink(body, targets, skip=entity.concept_id)
-    lines = [body, "", "# Belege", ""]
-    for i, m in enumerate(entity.mentions, start=1):
-        marker = "" if m.quality == "hoch" else f" [Transkriptqualität: {m.quality}]"
-        lines.append(f"{i}. Session {m.date} @ {m.citation_ts} ({m.url}){marker}")
-    return "\n".join(lines)
+    return f"{body}\n\n{render_belege_section(entity)}"
 
 
 def _cache_key(

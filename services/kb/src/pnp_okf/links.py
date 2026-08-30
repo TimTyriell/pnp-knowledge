@@ -260,6 +260,6 @@ def normalize_body(
             return f"[{label}](/{cid}.md)"
         if cid is None:
             unresolved.append(target)
-        return label if (cid is None and drop_unresolved) or cid == self_id else match.group(0)
+        return label if (cid is None and drop_unresolved) or (cid is not None and cid == self_id) else match.group(0)
 
     return _LINK_RE.sub(_replace, body), unresolved

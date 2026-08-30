@@ -26,6 +26,7 @@ from pnp_okf.okf import (
     write_if_changed,
     write_index,
 )
+from pnp_okf.synthesize import _BELEGE_HEADING_RE, render_belege_section
 
 log = logging.getLogger(__name__)
 
@@ -188,10 +189,9 @@ def emit_sessions(
                 "youtube_title": transcript.title or None,
             }
         write_concept(bundle_dir, concept_id, frontmatter, body)
-        entries.append(
-            (title, f"{date}.md", _short_desc(extraction.recap, 100))
-        )
-    entries += _refresh_orphan_sessions(bundle_dir, transcripts, episodes)
+        blurb = apply_spellings(_short_desc(extraction.recap, 100), index.spellings if index else {})
+        entries.append((title, f"{date}.md", blurb))
+    entries += _refresh_orphan_sessions(bundle_dir, transcripts, episodes, index)
     return entries
 
 
@@ -199,6 +199,7 @@ def _refresh_orphan_sessions(
     bundle_dir: Path,
     transcripts: dict[str, SessionTranscript],
     episodes: Episodes,
+    index: ConceptIndex | None = None,
 ) -> list[tuple[str, str, str]]:
     """Give session files with no transcript their episode identity back.
 
@@ -237,7 +238,8 @@ def _refresh_orphan_sessions(
             "team": episode.get("team"),
         }
         write_concept(bundle_dir, f"sessions/{date}", frontmatter, body)
-        entries.append((title, f"{date}.md", str(frontmatter.get("description") or "")[:100]))
+        blurb = apply_spellings(str(frontmatter.get("description") or ""), index.spellings if index else {})
+        entries.append((title, f"{date}.md", blurb[:100]))
         log.info("[emit] %s has no transcript — refreshed episode identity only", date)
     return entries
 
@@ -298,6 +300,12 @@ def emit_entity(
     if index is not None:
         body, unresolved = normalize_body(body, index, self_id=entity.concept_id)
     body, conflicts = split_conflicts(body)
+    # The "# Belege" section is only a prompt instruction for standard/deep
+    # tiers (prompts.py) -- nothing enforces it, so a model that skips it
+    # ships an uncited page. render_brief_body's citation loop is the only
+    # code-guaranteed source; reuse it here whenever the model didn't comply.
+    if entity.mentions and not _BELEGE_HEADING_RE.search(body):
+        body = f"{body.rstrip()}\n\n{render_belege_section(entity)}"
 
     first = entity.mentions[0] if entity.mentions else None
     last = entity.mentions[-1] if entity.mentions else None
@@ -389,7 +397,11 @@ def prune_conflicts(conflicts_dir: Path, still_open: set[str]) -> int:
         if "type: Conflict" not in head:
             continue
         path.unlink()
-        log.info("[emit] conflict resolved, removed from queue: %s", path.name)
+        # Not necessarily resolved: split_conflicts only finds a "# Offene
+        # Konflikte" heading if the model wrote one this run. A model that
+        # silently stops flagging a real contradiction looks identical here
+        # to one that got fixed -- so this says only what is actually known.
+        log.info("[emit] %s: no longer reported as an open conflict, removed from queue", path.name)
         removed += 1
     return removed
 

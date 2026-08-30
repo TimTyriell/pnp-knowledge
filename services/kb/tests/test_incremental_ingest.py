@@ -21,6 +21,7 @@ from pathlib import Path
 import pytest
 
 from pnp_okf.emit import emit_entity, emit_indexes, emit_log, emit_sessions
+from pnp_okf.links import ConceptIndex
 from pnp_okf.models import EntityMention, EntityType, SessionExtraction, SessionTranscript
 from pnp_okf.okf import write_if_changed
 from pnp_okf.resolve import resolve_entities, write_registry
@@ -247,3 +248,27 @@ def test_reworded_extraction_keeps_the_registry_concept_id(tmp_path: Path):
     assert {e.concept_id for e in entities} == {"characters/cookie"}
     cookie = entities[0]
     assert "Celin (Cookie)" in cookie.aliases
+
+
+# --- session index blurbs must see the spelling map too --------------------
+#
+# emit_indexes only applies apply_spellings inside its own per-type _entry
+# helper; the session blurb is built earlier in emit_sessions and went
+# straight to _short_desc, bypassing the spelling map entirely. Both the
+# with-transcript path and the no-transcript (_refresh_orphan_sessions) path
+# had the same gap.
+
+
+def test_session_blurb_gets_spelling_fixes(tmp_path: Path):
+    bundle = tmp_path / "bundle"
+    t1 = _transcript("2026-01-13_RF_a", "2026-01-13")
+    tmap = {t1.session_id: t1}
+    extractions = {t1.session_id: SessionExtraction(recap="Das Turnier von Willau begann.")}
+    index = ConceptIndex([], spellings={"Willau": "Willauch"})
+
+    entries = emit_sessions(bundle, tmap, extractions, index)
+
+    assert len(entries) == 1
+    _title, _url, blurb = entries[0]
+    assert "Willauch" in blurb
+    assert "Willau " not in blurb + " "

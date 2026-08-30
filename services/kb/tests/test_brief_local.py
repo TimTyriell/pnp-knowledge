@@ -59,10 +59,14 @@ def test_entity_does_not_link_to_itself():
     assert "npcs/auranil.md" not in body
 
 
-def test_better_attested_entity_wins_a_name_collision():
+def test_name_collision_is_dropped_not_arbitrated():
+    # A wrong link is worse than no link -- see synthesize.py::link_targets.
+    # No tiebreak by mention count: a name owned by two concepts is simply
+    # unlinkable, and each concept's own qualified name still resolves.
     big = _entity("npcs/harald_gross", "Harald", ["a", "b", "c"])
     small = _entity("npcs/harald_klein", "Harald", ["d"])
-    assert link_targets([small, big])["Harald"] == "npcs/harald_gross"
+    targets = link_targets([small, big])
+    assert "Harald" not in targets
 
 
 def test_low_quality_transcript_is_marked():
@@ -110,6 +114,17 @@ def test_existing_link_or_url_is_not_relinked():
     linked = autolink_prose(body, _TARGETS, skip="factions/x")
     assert linked.count("belorus.md") == 1  # not linked a second time
     assert "[Lenra](npcs/lenra.md)" in linked  # the real, unlinked mention
+
+
+def test_directory_qualified_link_does_not_shadow_a_cross_type_namesake():
+    # A linked deities/foo must not mark the unrelated npcs/foo as already
+    # linked -- only the bare-slug fallback (a link with no directory
+    # segment at all) may cross concept ids by slug. See synthesize.py's
+    # _linked_concept_ids.
+    body = "[Sanddorn](/locations/sanddorn.md) liegt im Süden. Die Sanddorn kämpft."
+    targets = {"Sanddorn": "factions/sanddorn"}
+    linked = autolink_prose(body, targets, skip="events/x")
+    assert "[Sanddorn](factions/sanddorn.md)" in linked
 
 
 def test_applying_twice_is_the_same_as_once():
