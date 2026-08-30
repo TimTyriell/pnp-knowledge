@@ -153,7 +153,12 @@ def test_no_spelling_rule_is_self_shadowing():
 # spelling-sweep.md's "Excluded" table). This is NOT "0 is the goal" — it is
 # "this number should not silently grow", so a genuinely new mishearing gets
 # noticed even though the noise floor never reaches zero. Measured 2026-08-30.
-SPELLING_DOCTOR_TOTAL_BASELINE = 340
+#
+# 2026-08-30 review-fix branch: tightened 340 -> 305, re-measured after the
+# regeneration. The drop is the arena/turnier_von_willauch renames (1.6b)
+# plus emit_sessions finally running apply_spellings on the session index
+# blurbs, which had bypassed the spelling map entirely.
+SPELLING_DOCTOR_TOTAL_BASELINE = 305
 
 
 def test_spelling_doctor_total_has_not_grown():
@@ -202,8 +207,15 @@ _LINK_RE = re.compile(r"\[([^\]]+)\]\((?!\w+:)([^)\s]*?\.md)\)")
 # locations/berge_von_zebros) — not one is an actual mislink, but it is
 # exactly the shape the Voras/Vora defect had, so it stays watched. Ratchet:
 # may only go down.
-LABEL_TARGET_MISMATCH_BASELINE = 20
-LABEL_TARGET_MISMATCH_OCCURRENCE_BASELINE = 26
+#
+# 2026-08-30 review-fix branch: tightened 20/26 -> 14/23, re-measured after
+# the regeneration. The "Arena von Willauch" -> locations/arena_von_willau
+# case named above is one of the pairs that went away: 1.6b gave that
+# concept (and events/turnier_von_willauch) the canonical_name pin and
+# merge: key the campaign-wide Willauch rename had never actually applied to
+# them, so label and target agree now.
+LABEL_TARGET_MISMATCH_BASELINE = 14
+LABEL_TARGET_MISMATCH_OCCURRENCE_BASELINE = 23
 
 
 def _title_and_aliases_by_concept() -> dict[str, tuple[str, list[str]]]:

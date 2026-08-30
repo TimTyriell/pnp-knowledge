@@ -56,7 +56,19 @@ _MIN_NAME_LEN = 5
 # correct content, most of whose repeat name mentions are un-autolinked by
 # design (autolink_prose only links a name's first occurrence per line). Not
 # a linking regression; a byproduct of removing a duplicate identity.
-UNLINKED_MENTION_BASELINE = 1889
+#
+# 2026-08-30 review-fix branch: tightened 1889 -> 1867, re-measured after the
+# regeneration. The fix plan predicted this would go *up*, because
+# link_targets() now refuses the 12 names owned by two concepts instead of
+# arbitrating them (a wrong link is worse than no link) — that prediction was
+# the sole reason the change was landed as its own revertible commit. It did
+# not materialise: the same run's other fixes added back more links than the
+# ambiguity guard removed — chiefly _linked_concept_ids() no longer letting a
+# directory-qualified link (deities/foo) mark an unrelated cross-type
+# namesake (npcs/foo) as already-linked, plus the arena/turnier_von_willauch
+# renames. Net -22. The one-way ratchet was never actually moved the wrong
+# way, so no exemption is being claimed here.
+UNLINKED_MENTION_BASELINE = 1867
 
 
 def _bundle_files() -> list[tuple[str, str, str]]:
@@ -172,10 +184,21 @@ _FACTION_LINK_RE = re.compile(r"\]\(/?(?:\.\./)?factions/")
 # entity_rules.yaml's "untote horde von zebras" merge key) is gone —
 # genuinely one fewer faction, and it happened to be one of the 31 with a
 # member link. 31/40 -> 30/39, same fraction, not a regression.
+#
+# 2026-08-30 review-fix branch: NPC side 46/218 -> 45/219, re-measured after
+# the regeneration. Accounted for exactly, by diffing the faction-linking NPC
+# set against the previous bundle: three lost a faction link, two gained one.
+# The one deliberate loss is npcs/buergermeister_spitzzahn, which linked
+# "[Flüchtlinge](/factions/fluechtlinge_aus_breska.md)" on the bare generic
+# noun that entity_rules.yaml's alias_block now drops (the merge: key, i.e.
+# identity, is untouched — only linkability). The other two
+# (npcs/joar_vanur "Gnollen", npcs/tyrael "Dämonen") were both resynthesized
+# by DeepSeek in the same run and simply worded it differently; npcs/gorak
+# and npcs/nyruk gained one the same way. Faction side is unchanged at 30/39.
 FACTIONS_WITH_MEMBER_LINK_BASELINE = 30
 FACTIONS_TOTAL_BASELINE = 39
-NPCS_WITH_FACTION_LINK_BASELINE = 46
-NPCS_TOTAL_BASELINE = 218
+NPCS_WITH_FACTION_LINK_BASELINE = 45
+NPCS_TOTAL_BASELINE = 219
 
 
 def test_relation_coverage_has_not_dropped():

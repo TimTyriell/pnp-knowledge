@@ -158,7 +158,25 @@ _CITATION_LINE_RE = re.compile(r"^(\[[^\]]+\]|\d+\.)\s*\[?Session\s", re.MULTILI
 # picking different entities each time) settled at 3. Ratchet: may only go
 # down. Root cause is in extract.py (a mention without a citation_ts), out
 # of scope for this audit's fixes — see docs/audits/2026-08-29-bundle-quality.md.
-UNCITED_ENTITY_BASELINE = 3
+#
+# 2026-08-30 review-fix branch: tightened 3 -> 1 after the regeneration.
+# emit_entity now backfills a missing "# Belege" section from the entity's
+# own mentions (the section was only ever a prompt instruction, never
+# enforced), which repaired the standard-tier pages the model had shipped
+# without one.
+#
+# Correcting the attribution above while here: the single remaining entry,
+# deities/saris_patron, is NOT a missing-citation_ts case and is not in fact
+# uncited. Its page carries a real citation with a real timestamp and URL —
+# "[S1-02-B] Transkript der Session vom 23. Juli 2026, 01:48:07. Online
+# verfügbar unter https://..." — which _CITATION_LINE_RE simply does not
+# match, because the regex wants the literal word "Session" straight after
+# the marker and the model wrote "Transkript der Session vom" instead. So
+# this last 1 is a 5th citation-line variant the detector doesn't know, i.e.
+# a false positive of the measurement, not a defect in the bundle. Left at 1
+# deliberately rather than widening the regex: loosening a detector to reach
+# zero would also blind it to genuinely uncited pages.
+UNCITED_ENTITY_BASELINE = 1
 
 
 def test_emit_entity_backfills_a_missing_belege_section(tmp_path: Path):
