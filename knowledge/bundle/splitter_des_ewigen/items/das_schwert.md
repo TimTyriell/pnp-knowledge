@@ -10,7 +10,7 @@ id: ITEM_DAS_SCHWERT
 subtype: Waffe
 ---
 
-Das Schwert ist eine magische Waffe, die erstmals in Erscheinung tritt, als eine Kreatur der Gruppe ein schwebendes Schwert übergibt, um [Vorgul'tar](/deities/vorgul_tar.md) zu verletzen. [Esterossa](/characters/esterossa.md) nimmt das Schwert an; dabei verändern sich ihre Flügel. In der Folge zeigt sich, dass die Waffe mit den Kristallen des Berges interagiert, eine Verbindung zu Vorgul'tar zu besitzen scheint und auf Esterossas Seele einwirkt.
+Das Schwert ist eine magische Waffe, die erstmals in Erscheinung tritt, als eine Kreatur der Gruppe ein schwebendes Schwert übergibt, um [Vorgul'tar](/deities/vorgul_tar.md) zu verletzen. [Esterossa](/characters/esterossa.md) nimmt das Schwert an; dabei verändern sich ihre Flügel. In der Folge zeigt sich, dass die Waffe mit den Kristallen des Berges interagiert, eine Verbindung zu [Vorgul'tar](/deities/vorgul_tar.md) zu besitzen scheint und auf Esterossas Seele einwirkt.
 
 ## Übergabe und Zweck
 

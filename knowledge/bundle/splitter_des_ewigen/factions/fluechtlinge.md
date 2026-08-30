@@ -12,7 +12,7 @@ subtype: Volk
 
 # Flüchtlinge
 
-Die Flüchtlinge sind Menschen aus verschiedenen Orten, die in einem Lager Zuflucht gefunden haben. Sie sind Teil der dortigen Gemeinschaft und arbeiten mit den Banditen zusammen. Für die Zeit nach dem Winter ist geplant, sie in andere Städte zu vermitteln.
+[Die Flüchtlinge](/factions/fluechtlinge_aus_breska.md) sind Menschen aus verschiedenen Orten, die in einem Lager Zuflucht gefunden haben. Sie sind Teil der dortigen Gemeinschaft und arbeiten mit den [Banditen](/factions/silberkerne.md) zusammen. Für die Zeit nach dem Winter ist geplant, sie in andere Städte zu vermitteln.
 
 ## Rolle im Lager
 

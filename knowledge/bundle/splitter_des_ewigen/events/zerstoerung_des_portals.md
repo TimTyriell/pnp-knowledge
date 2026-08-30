@@ -10,7 +10,7 @@ id: EVENT_ZERSTOERUNG_DES_PORTALS
 subtype: Kampf
 ---
 
-[Otis](/characters/otis.md) und [Rotunas](/characters/rotunas.md) zerschlagen die tragenden Säulen des Portals, wodurch es kollabiert und die Dämoneninvasion gestoppt wird.
+[Otis](/characters/otis.md) und [Rotunas](/characters/rotunas.md) zerschlagen die tragenden Säulen des [Portals](/locations/portal.md), wodurch es kollabiert und die Dämoneninvasion gestoppt wird.
 
 # Belege
 

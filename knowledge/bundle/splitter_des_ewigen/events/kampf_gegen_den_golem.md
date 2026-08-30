@@ -10,7 +10,7 @@ id: EVENT_KAMPF_GEGEN_DEN_GOLEM
 subtype: Kampf
 ---
 
-Der Kampf gegen den Golem findet in der Nähe der [Mine](/locations/kristallmine.md) statt. Die Gruppe zerstört den rechten Arm, und die Magier sprengen die Mine, um den Golem zu stoppen.
+Der Kampf gegen den Golem findet in der Nähe der Mine statt. Die Gruppe zerstört den rechten Arm, und die Magier sprengen die Mine, um den Golem zu stoppen.
 
 # Belege
 

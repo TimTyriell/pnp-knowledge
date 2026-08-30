@@ -1,37 +1,34 @@
 ---
 type: Location
 title: Hartwacht
-description: 'Hartwacht wird in den erhaltenen Aufzeichnungen unterschiedlich beschrieben:
-  In einem älteren Bericht gilt sie als Stadt, die die Magier sc…'
+description: Hartwacht ist eine Stadt, die von den Magiern beschützt werden sollte.
+  Sie liegt hinter einem Pass, der von Vargen und anderen Kreaturen be…
 tags:
 - locations
 timestamp: '2026-03-18T00:00:00Z'
 id: LOC_HARTWACHT
 subtype: Siedlung
-status: disputed
+aliases:
+- Hardwacht
 ---
 
-Hartwacht wird in den erhaltenen Aufzeichnungen unterschiedlich beschrieben: In einem älteren Bericht gilt sie als Stadt, die die Magier schützen wollten, in einer späteren Quelle als uneinnehmbare Orkfestung. Beide Aussagen stehen nebeneinander; ein belegter Übergang zwischen den Zuständen fehlt.
+# Hartwacht
 
-## Rolle und Bedeutung
+Hartwacht ist eine Stadt, die von den Magiern beschützt werden sollte. Sie liegt hinter einem Pass, der von Vargen und anderen Kreaturen bewohnt wird, und wird von einem Golem bedroht, sobald er die Kristalle erreicht. Die Gruppe plante, nach Hartwacht zu reisen, um dort Informationen über das Ende zu erhalten.
 
-Die Magier wollten Hartwacht offenbar vor einer Bedrohung schützen. Konkret wird ein Golem genannt, der die Stadt bedroht, falls er die Kristalle erreicht. Welche Rolle die Kristalle dabei spielen, ist nicht überliefert.
+## Bedrohung durch den Golem
 
-In der jüngeren Quelle wird Hartwacht als uneinnehmbare Orkfestung beschrieben. Die Gruppe plant, dorthin zu reisen, um Informationen über „das Ende“ zu erhalten. Hartwacht scheint also ein Ort zu sein, an dem relevantes Wissen erreichbar ist.
+Die Magier hatten sich den Schutz der Stadt zur Aufgabe gemacht. Die Stadt wird von einem Golem bedroht, sobald er die Kristalle erreicht. Was die Kristalle sind und warum der Golem sie anstrebt, ist nicht bekannt. Hartwacht steht damit im Zentrum einer Gefahr, gegen die die Magier die Stadt zu verteidigen suchten.
 
-## Lage und Umgebung
+## Lage und Erreichbarkeit
 
-Hartwacht liegt hinter einem Pass, der von Vargen und anderen Kreaturen bewohnt wird. Die Umgebung gilt als gefährlich; der Weg dorthin führt durch dieses Gebiet. Die Festung selbst wird als uneinnehmbar bezeichnet, was ihre Verteidigungsfähigkeit betont.
+Hartwacht liegt hinter einem Pass, der von Vargen und anderen Kreaturen bewohnt wird. Der Weg in die Stadt führt damit durch ein von gefährlichen Wesen besiedeltes Gebiet. Nähere Angaben zur geografischen Lage, zur Beschaffenheit des Passes oder zur Umgebung der Stadt liegen nicht vor. Auch über die Stadt selbst, ihre Bewohner oder Bauweise ist nichts bekannt. Der Pass stellt für Reisende ein Hindernis dar.
 
-## Bedrohung und Verlauf
+## Reiseziel der Gruppe
 
-Der Golem bedroht Hartwacht, falls er die Kristalle erreicht. Die genauen Umstände dieser Bedrohung – etwa was die Kristalle sind oder warum der Golem sie sucht – sind nicht dokumentiert. Die Reise der Gruppe nach Hartwacht steht im Zusammenhang mit der Suche nach Informationen über „das Ende“.
+Die Gruppe plante, nach Hartwacht zu reisen, um dort Informationen über das Ende zu erhalten. Was genau das Ende ist und welche Informationen die Gruppe erwartete, ist nicht bekannt. Hartwacht ist dadurch mit der übergeordneten Suche der Gruppe verbunden.
 
 # Belege
 
-[P-25] Session 2025-10-07 @ 00:09:39 (https://www.youtube.com/watch?v=qVAF_54S8Vw)
-[P-41] Session 2026-03-18 @ 00:45:15 (https://www.youtube.com/watch?v=HHXxsASLrbQ)
-
-# Offene Konflikte
-
-- Beleg 1 bezeichnet Hartwacht als Stadt, die die Magier schützen wollten; Beleg 2 bezeichnet Hartwacht als uneinnehmbare Orkfestung. Ein belegter Übergang (etwa eine Eroberung oder ein Besitzerwechsel) wird in den Quellen nicht genannt.
+[P-25] Session 2025-10-07 @ 00:09:39 – https://www.youtube.com/watch?v=qVAF_54S8Vw
+[P-41] Session 2026-03-18 @ 00:45:15 – https://www.youtube.com/watch?v=HHXxsASLrbQ

@@ -1,19 +1,22 @@
 ---
 type: NPC
 title: Landra, die Hag
-description: Landra, in der Kampagne meist als „die Hack“ oder „die Sumpfhexe“ bezeichnet,
-  ist eine mächtige, uralte Hexe und eine der zentralen Antagon…
+description: Landra, in der Welt weithin als die Sumpfhexe oder die Hag bekannt, ist
+  eine der zentralen Antagonistinnen der Kampagne. Sie ist eine uralt…
 tags:
 - npcs
 timestamp: '2026-08-25T00:00:00Z'
 id: NPC_LENRA
 subtype: Bande
 aliases:
-- Die Hack
+- Lenra
+- Moorhexe Hack
 - Hack
-- Sumpfhexe
+- Die Hack
 - Leandra
+- Die Hack (Hexe)
 - Die Sumpfhexe
+- Sumpfhexe
 - Lanra
 ---
 
@@ -21,61 +24,55 @@ aliases:
 
 ## Überblick
 
-Landra, in der Kampagne meist als „die Hack“ oder „die Sumpfhexe“ bezeichnet, ist eine mächtige, uralte Hexe und eine der zentralen Antagonistinnen der Kampagne. Sie wird als bucklige alte Frau mit magischen Fähigkeiten beschrieben und verfügt über eine arrogante, herablassende Art. Sie agiert aus dem Verborgenen, manipuliert andere Wesen und Fraktionen und verfolgt über lange Zeiträume hinweg einen eigenen, undurchsichtigen Plan. Ihre Magie ist von grünen Kristallen und Pilzen geprägt, die als Erkennungszeichen ihrer Einflussnahme gelten.
+Landra, in der Welt weithin als die Sumpfhexe oder die Hag bekannt, ist eine der zentralen Antagonistinnen der Kampagne. Sie ist eine uralte, mächtige Hexe von großer Arroganz und Herablassung, die über weite Strecken hinweg im Verborgenen agiert und die Fäden vieler Ereignisse zieht. Sie haust in einer [Krypta](/locations/krypta.md), von der aus sie ihre Pläne schmiedet, und ist für mehrere Angriffe auf das Dorf [Breska](/locations/breska.md) verantwortlich. Ihr Wirken erstreckt sich über zahlreiche Regionen und bringt sie in Konflikt mit [Goblins](/npcs/pilz_goblins.md), [Kuatau](/npcs/kuatau.md), einem Vampirgrafen und nicht zuletzt der Heldengruppe. Sie ist eine Meisterin der Täuschung und Manipulation, die selbst mächtige Kreaturen für ihre Zwecke einzuspannen versteht.
 
 ## Rolle in der Kampagne
 
-Landra ist die treibende Kraft hinter mehreren zentralen Ereignissen der Kampagne. Sie steckt hinter dem Angriff auf das Dorf Breska, den sie über eine Gruppe von Goblins ausführen lässt. Sie ist die Gegenspielerin, die die Gruppe immer wieder herausfordert und deren Handlungen sich als Teil eines größeren, von ihr kontrollierten Plans entpuppen. Lindo Laut zufolge lenkt sie das Spiel hinter den Kulissen und versucht, die Gruppe zu manipulieren. Sie wird als Bedrohung dargestellt, die die Gruppe besiegen muss, und taucht über viele Sessions hinweg als wiederkehrende Antagonistin auf. In einer späteren Session wird sie als „alte Gegenspielerin“ bezeichnet, die verschwunden ist und nach der ein Auftrag zur Suche ausgeschrieben, aber nie angenommen wurde.
+Landra ist die treibende Kraft hinter mehreren zentralen Konflikten der Kampagne. Sie ist die Anführerin des Goblinangriffs auf das Dorf Breska, den sie von ihrer Krypta aus orchestriert. Die Gruppe erfährt von ihr zunächst als geheimnisvolle "Hag", die hinter den Angriffen steckt. Im weiteren Verlauf entpuppt sie sich als Drahtzieherin, die die Gruppe immer wieder manipuliert und ihre Handlungen lenkt, um ihre eigenen Ziele zu verfolgen.
+
+Sie ist verantwortlich für die Täuschung der Kuatau, denen sie Amulette gab und ein [Portal](/locations/portal.md) unter einer [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) öffnete. Zudem stahl sie Artefakte aus einem Kloster und platzierte einen Palantir, um die Gruppe zu manipulieren. Ihr Ziel scheint unter anderem die Suche nach Voras' Gemahlin zu sein, und sie zeigt ein besonderes Interesse an dem, was [Lindo Laut](/characters/lindo_laut.md) in sich trägt. Sie trägt die Symbole und Zeichen des Gottes [Vasul](/deities/vharzul.md) auf ihrer Haut, was auf eine tiefere Verbindung zu ihm hindeutet. In einer späteren Session wird sie als Gegenspielerin beschrieben, die verschwunden ist und von der Nox vermutet, dass sie Pläne mit Vasul hat und deutlich mehr weiß als alle anderen. Ein Auftrag, im [Sumpf](/locations/sumpf_vor_dem_goblin_dorf.md) nach ihr zu suchen, wurde von niemandem angenommen.
 
 ## Wichtige Merkmale
 
-Landra ist eine Hexe mit beachtlichen magischen Fähigkeiten. Sie kann Kreaturen beschwören, etwa eine Feuerkreatur, und ist in der Lage, Lebewesen zu schrumpfen, wie sie es mit Dodo und Cookie tut. Sie kann durch Altäre verschwinden und nutzt Portale, etwa in Form eines Brunnens oder unter einer Kapelle. Sie beherrscht Illusionsmagie und erscheint der Gruppe am Ende einer Session als Illusion, um ihr zuzuzwinkern. Ihre Magie hinterlässt charakteristische Spuren: grüne Kristalle und Pilze, die an ihre Magie erinnern und an Orten wachsen, an denen sie gewirkt hat.
+Landra ist eine bucklige alte Frau mit magischen Fähigkeiten. Sie beherrscht mächtige Magie, darunter die Fähigkeit, Kreaturen zu beschwören (wie eine [Feuerkreatur](/events/feuerkreatur.md)) und andere Wesen zu schrumpfen. Sie kann durch Altäre und Portale reisen, etwa durch einen Brunnen oder ein Portal unter einer Kapelle. Ihre Magie hinterlässt charakteristische Spuren, wie grüne Kristalle und Pilzgebilde, die an ihre Macht erinnern.
 
-In ihrem Auftreten ist sie arrogant und herablassend. Als sie der Gruppe zum ersten Mal begegnet, begrüßt sie diese mit den Worten: „Nun, es freut mich, dass ihr mich hier besucht. Leider muss ich euch schon sehr bald hier wieder verabschieden.“ Sie verspottet ihre Gegner und zeigt keinerlei Angst oder Hass, sondern eher eine gewisse Sorge, dass ihr Plan nicht aufgehen könnte. Sie trägt die Symbole und Zeichen Vasuls auf ihrer Haut, was auf eine Verbindung zu diesem Gott hindeutet.
+Ihr Auftreten ist von Arroganz und Herablassung geprägt. Sie bezeichnet die Gruppe als "unwürdig" und verspottet sie, bevor sie durch einen [Altar](/items/altar.md) verschwindet. Sie zeigt keine Angst und keinen Hass, sondern eher eine Gelassenheit, die von ihrer Überlegenheit zeugt. Ihre Stimme wird als "ganz alte Stimme, eine ganz verwunschene Stimme" beschrieben, die über weite Kilometer hinweg kommuniziert.
+
+Landra ist eine Meisterin der Täuschung. Sie täuschte die Kuatau, manipulierte die Gruppe durch den platzierten Palantir und erscheint am Ende einer Session als Illusion, um der Gruppe zuzuzwinkern – ein Zeichen dafür, dass sie die Ereignisse kontrolliert hat. Sie droht der Gruppe, falls diese sich ihr in den Weg stellt: "Ich werde nicht dafür sorgen, dass die nächsten Monate eure letzten und grauenvollsten werden. Versprochen. Denkt dran, ich habe immer meine Versprechen gehalten."
 
 ## Beziehungen und Verbindungen
 
-Landra hat Verbindungen zu mehreren Fraktionen und Wesen:
-
-- **Goblins**: Sie führt den Goblinangriff auf Breska an.
-- **Kuatau**: Sie hat die Kuatau getäuscht, indem sie ihnen Amulette gab und ein Portal unter der Kapelle öffnete. Die Gruppe überzeugt die Kuatau später davon, dass sie böse ist.
-- **Voras**: Sie ist auf der Suche nach Voras' Gemahlin.
-- **Lendras**: Sie hat den Magier Lendras angegriffen.
-- **Vasul**: Sie trägt die Zeichen Vasuls auf ihrer Haut und scheint Pläne mit ihm zu haben. Nox vermutet, dass sie mehr über Vasul weiß.
-- **Lindo Laut**: Sie versucht, das zu erhalten, was Lindo Laut in sich trägt, und hat offenbar geplant, dass die Gruppe das Siegel bricht.
-- **Joar**: Sie fordert die Rückgabe eines Artefakts, das Joar gestohlen hat.
+- **Die Heldengruppe**: Landra begegnet der Gruppe zunächst in ihrer Krypta, wo sie [Dodo](/characters/dodo.md) und [Cookie](/characters/cookie.md) schrumpft. Sie sieht die Gruppe als Hindernis auf ihrem Weg und versucht, sie zu manipulieren. Die Gruppe macht es sich zur Aufgabe, sie zu besiegen.
+- **[Die Goblins](/factions/die_goblins.md)**: Landra führt den Goblinangriff auf Breska an. Die Goblins scheinen unter ihrem Einfluss zu handeln.
+- **Die Kuatau**: Landra hat die Kuatau getäuscht, indem sie ihnen Amulette gab und ein [Portal unter der Kapelle](/events/portal_unter_der_kapelle.md) öffnete. Die Gruppe kann die Kuatau später davon überzeugen, dass Landra böse ist.
+- **Voras**: Landra ist auf der Suche nach Voras' Gemahlin. Die genaue Natur dieser Verbindung bleibt unklar.
+- **[Lendras](/npcs/lendras.md)**: Landra hat den Magier Lendras angegriffen.
+- **[Der Graf](/npcs/voras.md) (Vampir)**: Der Vampirgraf steht Landra im Weg, wie die Gruppe herausfindet.
+- **Vasul**: Landra trägt die Zeichen Vasuls auf ihrer Haut und scheint mit ihm verbunden zu sein. Lindo Laut vermutet, dass sie Pläne mit ihm hat.
+- **[Joar](/npcs/joar_vanur.md)**: Landra fordert die Rückgabe eines Artefakts, das Joar gestohlen hat.
 
 ## Chronologie
 
-**Erste Begegnung in der Krypta (Session 2025-04-15):** Landra haust in einer Krypta und begegnet dort Dodo und Cookie. Sie beschwört eine Feuerkreatur, die die Gruppe als unwürdig bezeichnet, schrumpft Dodo und Cookie und stellt sich als Lanra vor. Sie verhält sich arrogant und herablassend, verspottet die Gruppe und verschwindet durch einen Altar. Es wird angedeutet, dass sie hinter den Angriffen auf Breska steckt.
-
-**Goblinangriff auf Breska (Session 2025-04-23):** Landra wird als die Antagonistin identifiziert, die den Goblinangriff auf das Dorf anführt. Sie wird als Moorhexe bezeichnet und ist auf der Suche nach Voras' Gemahlin. Sie hat den Magier Lendras angegriffen.
-
-**Suche in Cornivum (Session 2025-06-03):** Die Gruppe sucht nach Landra. In Cornivum wird sie als Sumpfhexe beschrieben, aber niemand kennt sie. Ein Einheimischer verneint, jemals einen Grottenschrat gesehen zu haben.
-
-**Befragung der Froschwachen (Session 2025-06-10):** Die Gruppe sucht weiter nach Landra und beschreibt sie als bucklige alte Frau mit magischen Fähigkeiten. Die Froschwachen an der Brücke haben keine Informationen über sie. Die Gruppe hofft, im Dungeon Hinweise auf sie zu finden.
-
-**Erkenntnisse aus dem Sumpf-Dungeon (Session 2025-06-25):** Die Gruppe findet heraus, dass Landra mit einer dämonischen Kreatur zusammenarbeitet, die durch ein Portal verschwunden ist. Sie hat ein Portal in Form eines Brunnens benutzt und plant, mit Pilzen eine Armee aufzubauen. Sie hat Artefakte aus einem Kloster gestohlen. Es wird deutlich, dass sie die Gruppe manipuliert hat, indem sie den Palantir platzierte. Am Ende erscheint sie als Illusion und zwinkert der Gruppe zu, was darauf hindeutet, dass sie die Ereignisse kontrolliert hat.
-
-**Täuschung der Kuatau (Session 2025-07-29):** Landra hat die Kuatau getäuscht, indem sie ihnen Amulette gab und ein Portal unter der Kapelle öffnete. Sie ist auch für den Angriff auf Breska verantwortlich. Die Gruppe überzeugt die Kuatau davon, dass Landra böse ist.
-
-**Grüne Kristalle (Session 2025-10-07):** Die Gruppe entdeckt grüne Kristalle, die an die Magie Landras erinnern. Lindo Laut bemerkt, dass die Energie „sehr nach dem Hexending“ aussieht. Die Kristalle pulsieren und sind über Monate gewachsen.
-
-**Enthüllung als Drahtzieherin (Session 2026-01-20):** Lindo Laut erklärt, dass die Hexe wollte, dass die Gruppe das Siegel bricht. Ein anderer Charakter weist darauf hin, dass Landra die Zeichen Vasuls auf ihrer Haut trägt.
-
-**Verschwinden (Session 2026-02-17):** Landra ist verschwunden. Nox vermutet, dass sie Pläne mit Vasul hat und mehr weiß. Es gibt einen Auftrag, nach ihr zu suchen, aber niemand hat ihn angenommen.
-
-**Wiederauftauchen und Drohung (Session 2026-08-25):** Landra kontaktiert die Gruppe über ein Wesen, mit dem sie über weite Kilometer verbunden ist. Sie fordert die Rückgabe eines Artefakts, das Joar gestohlen hat, und droht: „Gebt mir einfach zurück, was mir gehört. Und ich werde nicht dafür sorgen, dass die nächsten Monate eure letzten und grauenvollsten werden. Versprochen. Denkt dran, ich habe immer meine Versprechen gehalten.“ Sie zeigt keine Angst und keinen Hass, sondern Sorge, dass ihr Plan nicht aufgehen könnte.
+- **Session 2025-04-15**: Die Gruppe trifft in einer Krypta auf Landra. Sie beschwört eine Feuerkreatur, schrumpft Dodo und Cookie und stellt sich vor. Sie ist arrogant und herablassend, verspottet die Gruppe und verschwindet durch einen Altar. Die Gruppe vermutet, dass sie hinter den Angriffen auf Breska steckt.
+- **Session 2025-04-23**: Die Gruppe bestätigt, dass die "Hag" die Antagonistin ist, die den Goblinangriff auf Breska anführt. Sie wird als Moorhexe bezeichnet und ist auf der Suche nach Voras' Gemahlin. Sie hat den Magier Lendras angegriffen.
+- **Session 2025-06-03**: Die Gruppe sucht in [Cornivum](/locations/cornivum.md) nach der Sumpfhexe, aber niemand dort kennt sie.
+- **Session 2025-06-10**: Die Gruppe beschreibt Landra als bucklige alte Frau mit magischen Fähigkeiten. Die [Froschwachen](/npcs/froschwachen.md) an der Brücke haben keine Informationen über sie. Die Gruppe hofft, im Dungeon Hinweise zu finden.
+- **Session 2025-06-25**: Die Gruppe findet heraus, dass Landra mit einer dämonischen Kreatur zusammenarbeitet, die durch ein Portal verschwunden ist. Sie hat ein Portal in Form eines Brunnens benutzt und plant, mit Pilzen eine Armee aufzubauen. Sie hat Artefakte aus einem Kloster gestohlen und die Gruppe manipuliert, indem sie den Palantir platzierte. Am Ende erscheint sie als Illusion und zwinkert der Gruppe zu.
+- **Session 2025-07-29**: Die Gruppe erfährt, dass Landra die Kuatau getäuscht hat, indem sie ihnen Amulette gab und ein Portal unter der Kapelle öffnete. Sie ist auch für den Angriff auf Breska verantwortlich. Die Gruppe überzeugt die Kuatau, dass sie böse ist.
+- **Session 2025-10-07**: Die Gruppe entdeckt grüne Kristalle, die an die Magie Landras erinnern. Lindo Laut bemerkt, dass die Energie an die Begegnungen mit der Hag erinnert.
+- **Session 2026-01-20**: Lindo Laut erzählt, dass die Hexe wollte, dass die Gruppe das Siegel bricht. [Der Gildenmeister](/npcs/nox.md) weist darauf hin, dass Landra die Zeichen Vasuls auf ihrer Haut trägt.
+- **Session 2026-02-17**: Die Sumpfhexe ist verschwunden. Nox vermutet, dass sie Pläne mit Vasul hat und mehr weiß. Ein Auftrag, nach ihr zu suchen, wurde von niemandem angenommen.
+- **Session 2026-08-25**: Landra kontaktiert die Gruppe telepathisch durch ein Wesen, das mit ihr verbunden ist. Sie fordert die Rückgabe eines Artefakts, das Joar gestohlen hat, und droht der Gruppe. Sie zeigt Sorge, dass ihr Plan nicht aufgehen könnte.
 
 ## Offene Fragen
 
-- Was genau ist Landras Plan, und welches Ziel verfolgt sie mit den Artefakten und dem, was Lindo Laut in sich trägt?
-- Welche Verbindung hat sie zu Vasul, und was plant sie gemeinsam mit ihm?
-- Was ist mit Voras' Gemahlin, nach der sie sucht?
-- Wo hat sich Landra nach ihrem Verschwinden aufgehalten, und was hat sie in dieser Zeit getan?
+- Was ist Landras genaues Ziel? Sie sucht Voras' Gemahlin, will eine Armee aus Pilzen aufbauen und zeigt Interesse an dem, was Lindo Laut in sich trägt – wie diese Ziele zusammenhängen, bleibt unklar.
+- Welche Verbindung hat sie zu Vasul? Sie trägt seine Symbole auf ihrer Haut, aber die genaue Natur ihrer Beziehung zu ihm ist ungeklärt.
 - Was ist das Artefakt, das Joar gestohlen hat, und warum ist es für Landra so wichtig?
+- Wo ist Landra derzeit? Sie ist seit geraumer Zeit verschwunden, und ihr Aufenthaltsort ist unbekannt.
+- Was genau hat sie mit dem Palantir und den gestohlenen Klosterartefakten vor?
 
-# Belege
+## Belege
 
 1. Session 2025-04-15 @ 01:53:46 (https://www.youtube.com/watch?v=YCpAz_syjaY)
 2. Session 2025-04-23 @ 00:03:07 (https://www.youtube.com/watch?v=z3C-bewKqUs)

@@ -10,7 +10,7 @@ id: EVENT_ZERSTOERUNG_DES_RINGS
 subtype: Sonstiges
 ---
 
-[Dodo](/characters/dodo.md) zerschlägt den Ring mit seinem Streitkolben, was den [Seraphen](/factions/seraphen.md) tötet und die geisterhafte Kreatur freisetzt.
+[Dodo](/characters/dodo.md) zerschlägt den Ring mit seinem [Streitkolben](/items/streitkolben_von_dodo.md), was den [Seraphen](/factions/seraphen.md) tötet und die geisterhafte Kreatur freisetzt.
 
 # Belege
 

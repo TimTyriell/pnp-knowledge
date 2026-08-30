@@ -1,7 +1,7 @@
 ---
 type: Event
 title: Der Segen von Joran
-description: Sange empfängt den Segen von Joran durch Adelia. Dies löst einen Timer
+description: Sange empfängt den Segen von Joran durch Adeliga. Dies löst einen Timer
   aus und verursacht einen inneren Konflikt mit seiner Blutmagie.
 tags:
 - events
@@ -10,7 +10,7 @@ id: EVENT_DER_SEGEN_VON_JORAN
 subtype: Ritual
 ---
 
-[Sange](/characters/sange.md) empfängt den Segen von Joran durch [Adelia](/npcs/adeliga_der_eulenseraph.md). Dies löst einen Timer aus und verursacht einen inneren Konflikt mit seiner [Blutmagie](/domains/blutmagie.md).
+[Sange](/characters/sange.md) empfängt den Segen von Joran durch [Adeliga](/npcs/adeliga_der_eulenseraph.md). Dies löst einen Timer aus und verursacht einen inneren Konflikt mit seiner [Blutmagie](/domains/blutmagie.md).
 
 # Belege
 

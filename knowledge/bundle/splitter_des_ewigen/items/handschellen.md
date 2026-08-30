@@ -10,7 +10,7 @@ id: ITEM_HANDSCHELLEN
 subtype: Artefakt
 ---
 
-Magische Handschellen, die [Lindo Laut](/characters/lindo_laut.md) trägt, um seine Magie zu unterdrücken. Sie verhindern, dass [Slix](/npcs/slix_vasul.md) ausbricht.
+[Magische Handschellen](/items/magische_handschellen.md), die [Lindo Laut](/characters/lindo_laut.md) trägt, um seine Magie zu unterdrücken. Sie verhindern, dass [Slix](/npcs/slix_vasul.md) ausbricht.
 
 # Belege
 

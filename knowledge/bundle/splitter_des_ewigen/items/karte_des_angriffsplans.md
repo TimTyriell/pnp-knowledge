@@ -10,7 +10,7 @@ id: ITEM_KARTE_DES_ANGRIFFSPLANS
 subtype: Schriftstück
 ---
 
-Eine Karte, die einen Angriffsplan auf ein [Dorf](/locations/dorf.md) zeigt, das nicht weit von der Gruppe entfernt ist. Sie wird nach dem Sieg über die [Goblins](/factions/goblins.md) gefunden und ist ein wichtiger Hinweis für zukünftige Bedrohungen.
+Eine Karte, die einen Angriffsplan auf ein Dorf zeigt, das nicht weit von der Gruppe entfernt ist. Sie wird nach dem Sieg über die [Goblins](/npcs/pilz_goblins.md) gefunden und ist ein wichtiger Hinweis für zukünftige Bedrohungen.
 
 # Belege
 

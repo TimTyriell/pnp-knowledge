@@ -31,8 +31,8 @@ from pnp_okf.episodes import Episodes, citation_labels, relabel_citations
 from pnp_okf.extract import extract_session
 from pnp_okf.ingest import load_transcripts
 from pnp_okf.models import CanonicalEntity, SessionExtraction, SessionTranscript
-from pnp_okf.resolve import resolve_entities, write_registry
-from pnp_okf.synthesize import link_targets, render_brief_body, synthesize_entity_body
+from pnp_okf.resolve import load_spellings, require_rules, resolve_entities, write_registry
+from pnp_okf.synthesize import autolink_prose, link_targets, render_brief_body, synthesize_entity_body
 from pnp_okf.validate import fix_bundle, validate_bundle
 
 log = logging.getLogger("pnp_okf")
@@ -131,6 +131,7 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     extractions = _extract_all(transcripts, cfg, paths, args.reextract)
 
     registry_path = paths.registry_path
+    require_rules(registry_path)
     entities = resolve_entities(extractions, tmap, registry_path)
 
     if not partial_run and not check_rename_safety(
@@ -163,7 +164,7 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
         p: p.stat().st_mtime_ns for p in paths.bundle_dir.rglob("*.md")
     } if paths.bundle_dir.exists() else {}
 
-    index = build_concept_index(entities, tmap)
+    index = build_concept_index(entities, tmap, load_spellings(registry_path))
     session_entries = emit_sessions(paths.bundle_dir, tmap, extractions, index, episodes)
     unresolved_total = 0
     conflict_count = 0
@@ -180,7 +181,7 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     def _synth(entity: CanonicalEntity) -> tuple[str, str]:
         if entity.tier == "brief":
             return entity.concept_id, render_brief_body(entity, targets)
-        return entity.concept_id, synthesize_entity_body(
+        body = synthesize_entity_body(
             entity,
             cfg.for_tier(entity.tier),
             paths.cache_dir,
@@ -190,6 +191,11 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
                 excerpts_for(entity, tmap) if entity.tier == "deep" else ""
             ),
         )
+        # The cache stores this body pre-autolink (see synthesize_entity_body),
+        # so linking here runs on every cache hit too — a rebuild after only
+        # entity_rules.yaml or DEEP_MENTION_THRESHOLD changed relinks every
+        # standard/deep entry without a single new model call.
+        return entity.concept_id, autolink_prose(body, targets, skip=entity.concept_id)
 
     bodies: dict[str, str] = {}
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
@@ -242,7 +248,7 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
                 "Pruned %d concept file(s) with no entity behind them any more.", pruned
             )
 
-    emit_indexes(paths.bundle_dir, entities, session_entries)
+    emit_indexes(paths.bundle_dir, entities, session_entries, load_spellings(registry_path))
     emit_log(paths.bundle_dir, tmap)
 
     after_paths = set(paths.bundle_dir.rglob("*.md")) if paths.bundle_dir.exists() else set()
@@ -326,6 +332,7 @@ def cmd_dedup(args: argparse.Namespace) -> int:
     extractions = _extract_all(transcripts, cfg, paths, force=False)
 
     registry_path = paths.registry_path
+    require_rules(registry_path)
     entities = resolve_entities(extractions, tmap, registry_path)
 
     # Screening runs on the fast model: it only narrows ~840 entities down to
@@ -439,7 +446,7 @@ def cmd_validate(args: argparse.Namespace) -> int:
         log.error("Bundle directory not found: %s", paths.bundle_dir)
         return 2
     if args.fix:
-        changed, dropped = fix_bundle(paths.bundle_dir)
+        changed, dropped = fix_bundle(paths.bundle_dir, paths.registry_path)
         print(
             f"Normalized links in {changed} file(s); "
             f"dropped {dropped} unresolvable link(s) to plain text.\n"

@@ -17,11 +17,11 @@ aliases:
 
 ## Überblick
 
-Die Casa del Cookie ist das Anwesen der Heldengruppe, gelegen nordwestlich von Willauch. Ursprünglich als Belohnung für heldenhafte Taten im Turnier von Willauch errungen, wurde das Anwesen nach der verstorbenen Mitstreiterin Cookie benannt. Was als einfaches Herrenhaus begann, hat sich im Laufe der Kampagne zu einer kleinen Siedlung entwickelt, die Flüchtlingen Zuflucht bietet und langsam zu etwas Neuem heranwächst.
+Die Casa del [Cookie](/characters/cookie.md) ist das Anwesen der Heldengruppe, gelegen nordwestlich von [Willauch](/locations/willauch.md). Ursprünglich als Belohnung für heldenhafte Taten im [Turnier von Willauch](/events/turnier_von_willauch.md) errungen, wurde das Anwesen nach der verstorbenen Mitstreiterin Cookie benannt. Was als einfaches Herrenhaus begann, hat sich im Laufe der Kampagne zu einer kleinen Siedlung entwickelt, die Flüchtlingen Zuflucht bietet und langsam zu etwas Neuem heranwächst.
 
 ## Rolle in der Kampagne
 
-Die Casa del Cookie dient der Gruppe als Basis und Rückzugsort. Sie ist das Zuhause, auf das sich die Helden immer wieder zurückziehen können, und wurde mehrfach als strategischer Punkt genutzt. Lindo Laut hielt sich dort auf, während die anderen nach Abyssalis reisten, und spürte dort die Entfernung zu seinem Gefährten Slix. Die Casa del Cookie ist zudem ein Ort der Zuflucht: Nyrella hilft dort Flüchtlingen, eine neue Heimat aufzubauen. Die Gruppe besitzt die Besitzurkunde für das Land, was ihnen das Recht gibt, in dem Umkreis zu roden und zu jagen.
+Die Casa del Cookie dient der Gruppe als Basis und Rückzugsort. Sie ist das Zuhause, auf das sich die Helden immer wieder zurückziehen können, und wurde mehrfach als strategischer Punkt genutzt. [Lindo Laut](/characters/lindo_laut.md) hielt sich dort auf, während die anderen nach [Abyssalis](/domains/splitterwelt.md) reisten, und spürte dort die Entfernung zu seinem Gefährten [Slix](/npcs/slix_vasul.md). Die Casa del Cookie ist zudem ein Ort der Zuflucht: [Nyrella](/characters/nyrella.md) hilft dort Flüchtlingen, eine neue Heimat aufzubauen. Die Gruppe besitzt die Besitzurkunde für das Land, was ihnen das Recht gibt, in dem Umkreis zu roden und zu jagen.
 
 ## Wichtige Merkmale
 
@@ -35,20 +35,20 @@ Das Anwesen umfasst mehr als nur das ursprüngliche Herrenhaus. Im Laufe der Zei
 
 ### Untergeschoss und Dungeon
 
-Unter dem Haus befindet sich ein Untergeschoss mit einem Altar und einem Dungeon, der tief in die Erde führt. Der Eingang wurde entdeckt, als die Gruppe das Anwesen gründlich durchsuchte. Der Dungeon ist feucht, und der Dschungel hat sich in die Tiefen der Gruft und der Felsvorsprünge ausgebreitet. In der Luft liegt ein leicht süßer Geruch, der an einen etwas älteren Blumenstrauß erinnert – nicht unangenehm, aber eigenartig. Der Altar im Keller steht mit Tarvok in Verbindung.
+Unter dem Haus befindet sich ein Untergeschoss mit einem [Altar](/items/altar.md) und einem Dungeon, der tief in die Erde führt. Der Eingang wurde entdeckt, als die Gruppe das Anwesen gründlich durchsuchte. Der Dungeon ist feucht, und der Dschungel hat sich in die Tiefen der Gruft und der Felsvorsprünge ausgebreitet. In der Luft liegt ein leicht süßer Geruch, der an einen etwas älteren Blumenstrauß erinnert – nicht unangenehm, aber eigenartig. [Der Altar](/locations/der_altar.md) im Keller steht mit [Thar'Vok](/deities/tarvok_der_erdrichter.md) in Verbindung.
 
 ### Bewohner
 
-Das Anwesen wurde ursprünglich von Goblins bewohnt. Nachdem die Gruppe das Anwesen übernommen hatte, entwickelte es sich zu einem Zufluchtsort für Flüchtlinge, die dort unter der Mithilfe von Nyrella eine neue Heimat aufbauen.
+Das Anwesen wurde ursprünglich von [Goblins](/npcs/pilz_goblins.md) bewohnt. Nachdem die Gruppe das Anwesen übernommen hatte, entwickelte es sich zu einem Zufluchtsort für [Flüchtlinge](/factions/fluechtlinge.md), die dort unter der Mithilfe von Nyrella eine neue Heimat aufbauen.
 
 ## Beziehungen und Verbindungen
 
 - **Cookie**: Die Namensgeberin des Anwesens. Sie starb während des Turniers von Willauch, bei dem die Gruppe das Anwesen errang. Die Benennung ist ein ehrendes Andenken an die gefallene Mitstreiterin.
-- **Lindo Laut**: Nutzt die Casa del Cookie als Rückzugsort. Er hat dort ein Portal platziert, das als Notfalloption für Flüchtlinge dient. Zudem hat er Lunara einen Samen gegeben, mit dem ein Baum wachsen kann, der zur Casa del Cookie führt – der Baum müsste allerdings 24 Stunden lang beschützt werden.
+- **Lindo Laut**: Nutzt die Casa del Cookie als Rückzugsort. Er hat dort ein [Portal](/locations/portal.md) platziert, das als Notfalloption für Flüchtlinge dient. Zudem hat er Lunara einen Samen gegeben, mit dem ein Baum wachsen kann, der zur Casa del Cookie führt – der Baum müsste allerdings 24 Stunden lang beschützt werden.
 - **Nyrella**: Hält sich an der Casa del Cookie auf und hilft den Flüchtlingen beim Aufbau ihrer neuen Heimat.
-- **Lunara Velora**: Kennt die Casa del Cookie als Ziel des Baumes, der aus dem Samen von Lindo Laut wachsen kann.
-- **Tarvok**: Der Altar im Keller des Anwesens steht mit dieser Entität in Verbindung.
-- **Lord von Willauch**: Vergab das Anwesen als Belohnung an die Gruppe.
+- **[Lunara Velora](/characters/lunara_velora.md)**: Kennt die Casa del Cookie als Ziel des Baumes, der aus dem Samen von Lindo Laut wachsen kann.
+- **Thar'Vok**: Der Altar im Keller des Anwesens steht mit dieser Entität in Verbindung.
+- **[Lord von Willauch](/npcs/lord_kalidarn_von_willauch.md)**: Vergab das Anwesen als Belohnung an die Gruppe.
 
 ## Chronologie
 
@@ -75,7 +75,7 @@ In den folgenden Tagen entwickelte sich die Casa del Cookie weiter. Nyrella half
 ## Offene Fragen
 
 - Was genau geschah mit den ursprünglichen Goblin-Bewohnern des Anwesens, nachdem die Gruppe es übernommen hatte?
-- Welche Bedeutung hat der Altar im Keller, der mit Tarvok in Verbindung steht, und welche Rolle spielt er für den Dungeon?
+- Welche Bedeutung hat der Altar im Keller, der mit Thar'Vok in Verbindung steht, und welche Rolle spielt er für den Dungeon?
 - Wohin führt der Dungeon unter der Casa del Cookie, und welche Geheimnisse birgt er noch?
 - Wie wird sich die Siedlung weiterentwickeln, und werden die Flüchtlinge dort dauerhaft eine Heimat finden?
 

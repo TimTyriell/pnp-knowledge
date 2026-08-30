@@ -11,7 +11,7 @@ id: NPC_HORATIO
 
 # Horatio
 
-Horatio ist der Anführer einer Goblin-Gruppe und ein Jäger. Er hat das Anwesen, auf das die Gruppe bei ihrer Begegnung stößt, selbst aufgebaut. Während er zunächst über eine Urkunde verärgert ist, verhandelt er mit der Gruppe und gewährt ihr das Untergeschoss. In einer späteren Begegnung ist er in Ehrenfels anwesend und tritt als Verbündeter auf.
+Horatio ist der Anführer einer Goblin-Gruppe und ein Jäger. Er hat das Anwesen, auf das die Gruppe bei ihrer Begegnung stößt, selbst aufgebaut. Während er zunächst über eine Urkunde verärgert ist, verhandelt er mit der Gruppe und gewährt ihr das Untergeschoss. In einer späteren Begegnung ist er in [Ehrenfels](/locations/ehrenfels.md) anwesend und tritt als Verbündeter auf.
 
 ## Rolle und Eigenschaften
 
@@ -19,9 +19,9 @@ Horatio führt die Goblin-Gruppe und ist als Jäger tätig. Er hat das Anwesen, 
 
 ## Verlauf und Begegnungen
 
-Bei der ersten Begegnung ist Horatio verärgert über eine Urkunde, verhandelt aber mit der Gruppe: Er schlägt vor, dass sie das Untergeschoss bezieht, während er die Koordination und sein Zimmer behält. Im Zuge dieser Verhandlung übergibt er Rotunas ein Amulett.
+Bei der ersten Begegnung ist Horatio verärgert über eine Urkunde, verhandelt aber mit der Gruppe: Er schlägt vor, dass sie das Untergeschoss bezieht, während er die Koordination und sein Zimmer behält. Im Zuge dieser Verhandlung übergibt er [Rotunas](/characters/rotunas.md) ein Amulett.
 
-In Ehrenfels ist Horatio später als Verbündeter anwesend. Er wird von Vasul weggeschickt, zeigt jedoch Respekt und gehorcht dessen Anweisung.
+In Ehrenfels ist Horatio später als Verbündeter anwesend. Er wird von [Vasul](/deities/vharzul.md) weggeschickt, zeigt jedoch Respekt und gehorcht dessen Anweisung.
 
 # Belege
 

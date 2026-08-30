@@ -10,7 +10,7 @@ id: EVENT_ANKUNFT_IN_BORAGDIL
 subtype: Reise
 ---
 
-Die Gruppe wird von [Vasul](/deities/vharzul.md) nach [Boragdil](/locations/boragdil.md) teleportiert, wo sie auf [Dämonen](/factions/daemonen.md) und Seelen treffen. Sie versuchen, Informationen zu sammeln, werden aber an der Festung abgewiesen.
+Die Gruppe wird von [Vasul](/deities/vharzul.md) nach [Boragdil](/locations/boragdil.md) teleportiert, wo sie auf [Dämonen](/factions/daemonen.md) und Seelen treffen. Sie versuchen, Informationen zu sammeln, werden aber an der [Festung](/locations/festung.md) abgewiesen.
 
 # Belege
 

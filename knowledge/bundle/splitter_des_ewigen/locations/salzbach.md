@@ -18,7 +18,7 @@ Salzbach ist wiederholt das Ziel der Gruppe. Bereits in der ersten Session wird 
 
 ## Bedrohung durch Gnolle und Trolle
 
-Die Bedrohung um Salzbach ist zweifach: Auf den Handelswegen, die zur Siedlung führen, lauern Gnolle. Im Ort selbst machen Gnolle und Trolle das Leben von [Joao Vanur](/npcs/joar_vanur.md) schwer. Damit ist Salzbach sowohl auf den Zufahrtswegen als auch im Dorf von diesen Kreaturen betroffen.
+Die Bedrohung um Salzbach ist zweifach: Auf den Handelswegen, die zur Siedlung führen, lauern [Gnolle](/factions/gnolle.md). Im Ort selbst machen Gnolle und Trolle das Leben von [Joao Vanur](/npcs/joar_vanur.md) schwer. Damit ist Salzbach sowohl auf den Zufahrtswegen als auch im Dorf von diesen Kreaturen betroffen.
 
 ## Verbindung zu Lunara
 

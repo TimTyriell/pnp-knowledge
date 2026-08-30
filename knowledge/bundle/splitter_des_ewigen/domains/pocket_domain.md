@@ -13,11 +13,11 @@ Die **Pocket Domain** ist eine persönliche Dimension von [Lindo Laut](/characte
 
 ## Zugang
 
-Lindo Laut kann die Pocket Domain über einen Ring betreten. Der Ring dient damit als Zugangsweg in die Dimension. [P-36]
+[Lindo Laut](/characters/lindo_laut.md) kann die Pocket Domain über einen Ring betreten. [Der Ring](/items/ring_der_teleportation.md) dient damit als Zugangsweg in die Dimension. [P-36]
 
 ## Inhalt und Ereignisse
 
-Die Pocket Domain ist prunkvoll eingerichtet. Zentral für ihre Bedeutung ist das Splitterkalb, das in ihr aufbewahrt wird und die Seele von Chronos trägt. Die Dimension ist zugleich Schauplatz der Auseinandersetzung mit Slix. [P-36]
+Die Pocket Domain ist prunkvoll eingerichtet. Zentral für ihre Bedeutung ist das [Splitterkalb](/events/splitterkalb.md), das in ihr aufbewahrt wird und die Seele von Chronos trägt. Die Dimension ist zugleich Schauplatz der Auseinandersetzung mit [Slix](/npcs/slix_vasul.md). [P-36]
 
 # Belege
 

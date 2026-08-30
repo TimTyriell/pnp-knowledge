@@ -9,7 +9,7 @@ timestamp: '2026-08-12T00:00:00Z'
 id: NPC_VITIUS
 ---
 
-Vitius ist ein Seraph und die rechte Hand von [Nerash](/deities/nerash.md). Er empfängt die Gruppe in Ehrenfels und erteilt ihr in Nerashs Namen einen Auftrag, den sie nicht ablehnen kann. Sein Auftreten wirkt anfangs freundlich, ist aber von versteckten Drohungen durchzogen. Als Belohnung stellt er die Position des Gildenmeisters von Ehrenfels in Aussicht.
+Vitius ist ein Seraph und die rechte Hand von [Nerash](/deities/nerash.md). Er empfängt die Gruppe in [Ehrenfels](/locations/ehrenfels.md) und erteilt ihr in Nerashs Namen einen Auftrag, den sie nicht ablehnen kann. Sein Auftreten wirkt anfangs freundlich, ist aber von versteckten Drohungen durchzogen. Als Belohnung stellt er die Position des Gildenmeisters von Ehrenfels in Aussicht.
 
 ## Rolle
 
@@ -21,7 +21,7 @@ Vitius zeigt sich anfangs freundlich, doch seine Worte sind voller versteckter D
 
 ## Begegnungen mit der Gruppe
 
-In Ehrenfels empfängt Vitius die Gruppe. Bei einer späteren Begegnung zeigt er ihr die korrupten Seraphen und bietet Informationen über Nox an. Anschließend verlässt er die Kapelle mit den Seraphen und wünscht der Gruppe Glück.
+In Ehrenfels empfängt Vitius die Gruppe. Bei einer späteren Begegnung zeigt er ihr die korrupten [Seraphen](/factions/seraphen.md) und bietet Informationen über Nox an. Anschließend verlässt er die [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) mit den Seraphen und wünscht der Gruppe Glück.
 
 # Belege
 

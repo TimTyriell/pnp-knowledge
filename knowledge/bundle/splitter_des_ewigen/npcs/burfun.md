@@ -9,7 +9,7 @@ timestamp: '2025-11-18T00:00:00Z'
 id: NPC_BURFUN
 ---
 
-Burfun ist ein weiterer Barkeeper in der [Taverne](/locations/taverne.md). Er wird erwähnt, hat aber keine aktive Rolle in der Session.
+Burfun ist ein weiterer Barkeeper in der Taverne. Er wird erwähnt, hat aber keine aktive Rolle in der Session.
 
 # Belege
 

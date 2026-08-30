@@ -10,7 +10,7 @@ id: EVENT_KAMPF_GEGEN_DIE_GHULE_2026-03-10
 subtype: Kampf
 ---
 
-Die Gruppe wird in [Breska](/locations/breska.md) von vier Ghulen angegriffen. Lunara verbrennt drei mit Schattenfeuer, [Dodo](/characters/dodo.md) erledigt den letzten.
+Die Gruppe wird in [Breska](/locations/breska.md) von vier Ghulen angegriffen. Lunara verbrennt drei mit [Schattenfeuer](/items/schattenfeuer.md), [Dodo](/characters/dodo.md) erledigt den letzten.
 
 # Belege
 

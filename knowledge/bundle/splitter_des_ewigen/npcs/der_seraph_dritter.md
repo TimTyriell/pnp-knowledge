@@ -9,7 +9,7 @@ timestamp: '2026-05-19T00:00:00Z'
 id: NPC_DER_SERAPH_DRITTER
 ---
 
-Der dritte Seraph, der gegen [Dodo](/characters/dodo.md) kämpft. Er wird von Dodo mit Feuer und Streitkolben besiegt.
+Der dritte Seraph, der gegen [Dodo](/characters/dodo.md) kämpft. Er wird von Dodo mit Feuer und [Streitkolben](/items/streitkolben_von_dodo.md) besiegt.
 
 # Belege
 

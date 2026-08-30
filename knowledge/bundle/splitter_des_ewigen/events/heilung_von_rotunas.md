@@ -10,7 +10,7 @@ id: EVENT_HEILUNG_VON_ROTUNAS
 subtype: Sonstiges
 ---
 
-[Rotunas](/characters/rotunas.md) wird von dem [Gnoll](/npcs/gnoll.md) mit einer [Tinktur](/items/tinktur.md) behandelt und erwacht aus dem Koma. Die Wunde heilt, hinterlässt aber eine Narbe.
+[Rotunas](/characters/rotunas.md) wird von dem Gnoll mit einer [Tinktur](/items/tinktur.md) behandelt und erwacht aus dem Koma. Die Wunde heilt, hinterlässt aber eine Narbe.
 
 # Belege
 

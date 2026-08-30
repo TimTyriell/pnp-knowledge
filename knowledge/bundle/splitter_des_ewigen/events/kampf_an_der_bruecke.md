@@ -10,7 +10,7 @@ id: EVENT_KAMPF_AN_DER_BRUECKE
 subtype: Kampf
 ---
 
-Die Gruppe wird beim Überqueren der Brücke von Gnollen und Grottenschraten angegriffen. Es entbrennt ein heftiger Kampf, bei dem [Dodo](/characters/dodo.md) und [Esterossa](/characters/esterossa.md) Gegner töten und [Lindo Laut](/characters/lindo_laut.md) sich als [Gnoll](/npcs/gnoll.md) verkleidet.
+Die Gruppe wird beim Überqueren der Brücke von Gnollen und Grottenschraten angegriffen. Es entbrennt ein heftiger Kampf, bei dem [Dodo](/characters/dodo.md) und [Esterossa](/characters/esterossa.md) Gegner töten und [Lindo Laut](/characters/lindo_laut.md) sich als Gnoll verkleidet.
 
 # Belege
 

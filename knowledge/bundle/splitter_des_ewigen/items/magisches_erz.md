@@ -10,7 +10,7 @@ id: ITEM_MAGISCHES_ERZ
 subtype: Artefakt
 ---
 
-Magisches Erz ist ein wertvolles Material, das in der [Mine](/locations/kristallmine.md) abgebaut wird. Es ist stark magisch aufgeladen und kann zur Herstellung von Artefakten und Waffen verwendet werden. Die [Zwerge](/factions/zwerge.md) nutzen es, die [Goblins](/factions/goblins.md) kennen seinen Wert nicht.
+Magisches Erz ist ein wertvolles Material, das in der Mine abgebaut wird. Es ist stark magisch aufgeladen und kann zur Herstellung von Artefakten und Waffen verwendet werden. Die [Zwerge](/factions/zwerge.md) nutzen es, die [Goblins](/npcs/pilz_goblins.md) kennen seinen Wert nicht.
 
 # Belege
 

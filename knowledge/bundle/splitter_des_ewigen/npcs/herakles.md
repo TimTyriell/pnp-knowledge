@@ -11,13 +11,13 @@ id: NPC_HERAKLES
 
 # Herakles
 
-Herakles ist ein älterer Mann aus Brandau, der nach dem verlorenen Krieg nach Kleinringtal geflohen ist. Er führt eine kleine Widerstandsgruppe gegen die Monsterbedrohung.
+Herakles ist ein älterer Mann aus [Brandau](/locations/brandau.md), der nach dem verlorenen [Krieg](/characters/krieg.md) nach [Kleinringtal](/locations/ringtal.md) geflohen ist. Er führt eine kleine Widerstandsgruppe gegen die Monsterbedrohung.
 
 ## Rolle und Widerstand
 
 Herakles organisiert in Kleinringtal den Widerstand gegen die Monsterbedrohung. Ein Treffen mit der Heldengruppe findet am Bogenschießstand statt, wo er sie bittet, seinem Informanten [Talron](/npcs/talron.md) zu helfen und die Bewohner eines Bauernhofs zu überzeugen, sich der Verteidigung anzuschließen.
 
-Später zeigt sich, dass Herakles ein Magier ist und mit Talron und Hauptmann Aaron zusammenarbeitet. Im Gespräch mit [Sage](/characters/saris.md) über die Verteidigung erwähnt er, dass Verstärkung aus Hohenwehr angefordert wurde.
+Später zeigt sich, dass Herakles ein Magier ist und mit Talron und Hauptmann Aaron zusammenarbeitet. Im Gespräch mit [Sage](/characters/saris.md) über die Verteidigung erwähnt er, dass Verstärkung aus [Hohenwehr](/locations/hohenwehr.md) angefordert wurde.
 
 ## Beziehung zur Gruppe und rätselhafte Aura
 

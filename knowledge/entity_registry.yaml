@@ -10,6 +10,10 @@
 #   important: true  forces the deep synthesis tier for entities the
 #                    automatic rules underrate (Characters and
 #                    Deities are always deep anyway)
+#
+# retired: — concepts once live, now absent (renamed or dropped).
+# Kept so a later reword can still reanchor to the same concept_id
+# instead of minting a new one. Generated only; never hand-edit.
 entities:
 - concept_id: characters/brim
   type: Character
@@ -26,12 +30,6 @@ entities:
   canonical_name: Carlos
   aliases: []
   mention_count: 1
-- concept_id: characters/celin_cookie
-  type: Character
-  canonical_name: Celin (Cookie)
-  aliases:
-  - Celin
-  mention_count: 2
 - concept_id: characters/cookie
   type: Character
   canonical_name: Cookie
@@ -39,7 +37,9 @@ entities:
   - Cookie (Ribbit)
   - Kuki
   - Celin's Frosch-Ranger
-  mention_count: 21
+  - Celin
+  - Celin (Cookie)
+  mention_count: 23
 - concept_id: characters/dante
   type: Character
   canonical_name: Dante
@@ -55,20 +55,17 @@ entities:
   canonical_name: Dodo
   aliases:
   - Marco's Guardian
-  mention_count: 51
+  - Marco (Dodo)
+  mention_count: 52
 - concept_id: characters/esterossa
   type: Character
   canonical_name: Esterossa
   aliases:
   - Esterossa Torbhalm
   - Esterossa Torpalm
-  mention_count: 38
+  - Esterossa (Mikasa)
+  mention_count: 39
   important: true
-- concept_id: characters/esterossa_mikasa
-  type: Character
-  canonical_name: Esterossa (Mikasa)
-  aliases: []
-  mention_count: 1
 - concept_id: characters/finn
   type: Character
   canonical_name: Finn
@@ -106,17 +103,13 @@ entities:
   - Lindo Laut (Pedro)
   - Lindo Laut / Pedro
   - Tim's Fairy Bard
-  mention_count: 42
+  - Tim (Lindo Laut)
+  mention_count: 43
 - concept_id: characters/lunara_velora
   type: Character
   canonical_name: Lunara Velora
   aliases: []
   mention_count: 24
-- concept_id: characters/marco_dodo
-  type: Character
-  canonical_name: Marco (Dodo)
-  aliases: []
-  mention_count: 1
 - concept_id: characters/miko
   type: Character
   canonical_name: Miko
@@ -147,6 +140,11 @@ entities:
   canonical_name: Otis
   aliases: []
   mention_count: 2
+- concept_id: characters/pedro_die_katze
+  type: Character
+  canonical_name: Pedro die Katze
+  aliases: []
+  mention_count: 1
 - concept_id: characters/peter_unwichtig_der_grosse
   type: Character
   canonical_name: Peter Unwichtig der Große
@@ -175,21 +173,12 @@ entities:
 - concept_id: characters/saris
   type: Character
   canonical_name: Saris
-  aliases: []
-  mention_count: 4
-- concept_id: characters/saris_bendal
-  type: Character
-  canonical_name: Saris Bendal
-  aliases: []
-  mention_count: 1
+  aliases:
+  - Saris Bendal
+  mention_count: 5
 - concept_id: characters/tibbet
   type: Character
   canonical_name: Tibbet
-  aliases: []
-  mention_count: 1
-- concept_id: characters/tim_lindo_laut
-  type: Character
-  canonical_name: Tim (Lindo Laut)
   aliases: []
   mention_count: 1
 - concept_id: characters/valeria
@@ -207,29 +196,26 @@ entities:
   type: Deity
   canonical_name: Akastrale
   aliases: []
-  mention_count: 1
+  mention_count: 3
   important: true
 - concept_id: deities/alte_goetter
   type: Deity
   canonical_name: Alte Götter
-  aliases: []
-  mention_count: 2
+  aliases:
+  - Die alten Götter
+  mention_count: 3
 - concept_id: deities/bodrak_gott_der_stille
   type: Deity
   canonical_name: Bodrak, Gott der Stille
   aliases: []
   mention_count: 1
+  important: true
 - concept_id: deities/coram_schildbrecher
   type: Deity
   canonical_name: Coram Schildbrecher
   aliases: []
   mention_count: 1
   important: true
-- concept_id: deities/die_alten_goetter
-  type: Deity
-  canonical_name: Die alten Götter
-  aliases: []
-  mention_count: 1
 - concept_id: deities/goblin_gott
   type: Deity
   canonical_name: Goblin-Gott
@@ -243,12 +229,17 @@ entities:
   - Goblin-Götter
   - Goblinsgötter
   mention_count: 5
+- concept_id: deities/gruul
+  type: Deity
+  canonical_name: Gruul
+  aliases: []
+  mention_count: 1
 - concept_id: deities/heiliger_duran
   type: Deity
   canonical_name: Heiliger Duran
   aliases:
   - Duran
-  mention_count: 1
+  mention_count: 2
   important: true
 - concept_id: deities/holudarn
   type: Deity
@@ -284,18 +275,16 @@ entities:
   canonical_name: Kaleandra
   aliases: []
   mention_count: 1
-- concept_id: deities/kol_merefs
-  type: Deity
-  canonical_name: Kol Merefs
-  aliases: []
-  mention_count: 1
+  important: true
 - concept_id: deities/kollmereth
   type: Deity
   canonical_name: Koll'Mereth (die Krone)
   aliases:
   - Koll
   - Kol Meref
-  mention_count: 1
+  - Kol Merefs
+  mention_count: 2
+  important: true
 - concept_id: deities/korn
   type: Deity
   canonical_name: Korn, der Blutgott
@@ -324,7 +313,7 @@ entities:
   aliases:
   - Die neuen Götter
   - Die Neuen Götter
-  mention_count: 3
+  mention_count: 5
 - concept_id: deities/ohoriaks
   type: Deity
   canonical_name: Ohoriaks
@@ -356,7 +345,7 @@ entities:
   type: Deity
   canonical_name: Südrawell
   aliases: []
-  mention_count: 1
+  mention_count: 2
 - concept_id: deities/tarvok_der_erdrichter
   type: Deity
   canonical_name: Thar'Vok, der Erdrichter
@@ -370,12 +359,8 @@ entities:
   - Parfon
   - Seras (Seraph)
   - Seras
-  mention_count: 3
-- concept_id: deities/tavok
-  type: Deity
-  canonical_name: Tavok
-  aliases: []
-  mention_count: 2
+  - Tavok
+  mention_count: 5
 - concept_id: deities/thyrex
   type: Deity
   canonical_name: Thyrex
@@ -430,11 +415,6 @@ entities:
   canonical_name: Circle Below
   aliases: []
   mention_count: 2
-- concept_id: domains/daggerheart
-  type: Domain
-  canonical_name: Daggerheart
-  aliases: []
-  mention_count: 1
 - concept_id: domains/demiplane
   type: Domain
   canonical_name: Demiplane
@@ -467,7 +447,7 @@ entities:
   - Abyssalis
   - Abyssalis (Splitterwelt)
   - Die Splitterwelt
-  mention_count: 24
+  mention_count: 25
 - concept_id: domains/talespire
   type: Domain
   canonical_name: Talespire
@@ -553,11 +533,6 @@ entities:
   canonical_name: Begegnung mit dem Schlangengott
   aliases: []
   mention_count: 1
-- concept_id: events/begegnung_mit_dem_skelettschaedel
-  type: Event
-  canonical_name: Begegnung mit dem Skelettschädel
-  aliases: []
-  mention_count: 1
 - concept_id: events/begegnung_mit_dem_spion
   type: Event
   canonical_name: Begegnung mit dem Spion
@@ -570,8 +545,9 @@ entities:
   mention_count: 1
 - concept_id: events/bergung_des_streitkolbens_zebras_zorn
   type: Event
-  canonical_name: Bergung des Streitkolbens Zebras Zorn
-  aliases: []
+  canonical_name: Bergung des Streitkolbens Zebros Zorn
+  aliases:
+  - Bergung des Streitkolbens Zebras Zorn
   mention_count: 1
 - concept_id: events/beschwoerung_der_kreaturen_durch_nox
   type: Event
@@ -676,7 +652,7 @@ entities:
   mention_count: 1
 - concept_id: events/die_befreiung_von_nerash
   type: Event
-  canonical_name: Die Befreiung von Nerash
+  canonical_name: Befreiung von Nerash
   aliases: []
   mention_count: 1
 - concept_id: events/die_befreiung_von_tatrick
@@ -704,11 +680,6 @@ entities:
   canonical_name: Die Entdeckung des Forschungslabors
   aliases: []
   mention_count: 1
-- concept_id: events/die_falle
-  type: Event
-  canonical_name: Die Falle
-  aliases: []
-  mention_count: 1
 - concept_id: events/die_gerichtsverhandlung_in_willauch
   type: Event
   canonical_name: Die Gerichtsverhandlung in Willauch
@@ -734,11 +705,6 @@ entities:
   canonical_name: Die Rast in der Höhle
   aliases: []
   mention_count: 1
-- concept_id: events/die_rueckkehr_der_gruppe
-  type: Event
-  canonical_name: Die Rückkehr der Gruppe
-  aliases: []
-  mention_count: 1
 - concept_id: events/die_schlacht_von_ehrenfels
   type: Event
   canonical_name: Die Schlacht von Ehrenfels
@@ -752,11 +718,6 @@ entities:
 - concept_id: events/die_vision_von_lunaras_bruder
   type: Event
   canonical_name: Die Vision von Lunaras Bruder
-  aliases: []
-  mention_count: 1
-- concept_id: events/die_zerstoerung_der_festung
-  type: Event
-  canonical_name: Die Zerstörung der Festung
   aliases: []
   mention_count: 1
 - concept_id: events/die_zerstoerung_des_kleinen_splitters
@@ -879,19 +840,14 @@ entities:
   canonical_name: Explosion im Gnoll-Lager
   aliases: []
   mention_count: 1
-- concept_id: events/falle
+- concept_id: events/faelschung_der_goblin_notiz
   type: Event
-  canonical_name: Falle
+  canonical_name: Fälschung der Goblin-Notiz
   aliases: []
   mention_count: 1
 - concept_id: events/feuerkreatur
   type: Event
   canonical_name: Feuerkreatur
-  aliases: []
-  mention_count: 1
-- concept_id: events/feuerwand
-  type: Event
-  canonical_name: Feuerwand
   aliases: []
   mention_count: 1
 - concept_id: events/flucht_aus_der_burg
@@ -917,6 +873,11 @@ entities:
 - concept_id: events/flucht_durch_den_geheimtunnel
   type: Event
   canonical_name: Flucht durch den Geheimtunnel
+  aliases: []
+  mention_count: 1
+- concept_id: events/flucht_in_die_kapelle
+  type: Event
+  canonical_name: Flucht in die Kapelle
   aliases: []
   mention_count: 1
 - concept_id: events/flucht_vor_der_hexe
@@ -989,9 +950,9 @@ entities:
   canonical_name: Kampf gegen das Seelenkalb
   aliases: []
   mention_count: 1
-- concept_id: events/kampf_gegen_das_skelett
+- concept_id: events/kampf_gegen_das_skelett_im_turm
   type: Event
-  canonical_name: Kampf gegen das Skelett
+  canonical_name: Kampf gegen das Skelett im Turm
   aliases: []
   mention_count: 1
 - concept_id: events/kampf_gegen_das_tentakelmonster
@@ -1164,6 +1125,11 @@ entities:
   canonical_name: Kampf gegen die Kultisten
   aliases: []
   mention_count: 1
+- concept_id: events/kampf_gegen_die_magier_an_der_feuerwand
+  type: Event
+  canonical_name: Kampf gegen die Magier an der Feuerwand
+  aliases: []
+  mention_count: 1
 - concept_id: events/kampf_gegen_die_mimik
   type: Event
   canonical_name: Kampf gegen die Mimik
@@ -1180,7 +1146,17 @@ entities:
   canonical_name: Kampf gegen die Pilz-Goblins
   aliases:
   - Kampf gegen die Goblins
-  mention_count: 2
+  mention_count: 1
+- concept_id: events/kampf_gegen_die_pilz_goblins_2025-06-17
+  type: Event
+  canonical_name: Kampf gegen die Pilz-Goblins
+  aliases: []
+  mention_count: 1
+- concept_id: events/kampf_gegen_die_seraphen_am_narbeneingang
+  type: Event
+  canonical_name: Kampf gegen die Seraphen am Narbeneingang
+  aliases: []
+  mention_count: 1
 - concept_id: events/kampf_gegen_die_silberbestien_in_der_silbergruft
   type: Event
   canonical_name: Kampf gegen die Silberbestien in der Silbergruft
@@ -1282,9 +1258,9 @@ entities:
   canonical_name: Kopfgeld auf die Gruppe
   aliases: []
   mention_count: 1
-- concept_id: events/kopfgeld_fuer_kronos
+- concept_id: events/kopfgeld_auf_kronos
   type: Event
-  canonical_name: Kopfgeld für Kronos
+  canonical_name: Kopfgeld auf Kronos
   aliases: []
   mention_count: 1
 - concept_id: events/lanra_schrumpft_dodo_und_cookie
@@ -1325,11 +1301,6 @@ entities:
 - concept_id: events/lunaras_splitter_spruch
   type: Event
   canonical_name: Lunaras Splitter-Spruch
-  aliases: []
-  mention_count: 1
-- concept_id: events/manipulation_der_goblin_notiz
-  type: Event
-  canonical_name: Manipulation der Goblin-Notiz
   aliases: []
   mention_count: 1
 - concept_id: events/mysterioeses_klopfen_an_der_tuer
@@ -1410,11 +1381,6 @@ entities:
 - concept_id: events/rast_im_turm
   type: Event
   canonical_name: Rast im Turm
-  aliases: []
-  mention_count: 1
-- concept_id: events/rekrutierung_durch_kalos
-  type: Event
-  canonical_name: Rekrutierung durch Kalos
   aliases: []
   mention_count: 1
 - concept_id: events/rettung_durch_inaros
@@ -1532,11 +1498,6 @@ entities:
   canonical_name: Tod des Grottenschrats
   aliases: []
   mention_count: 1
-- concept_id: events/tod_des_seraphen
-  type: Event
-  canonical_name: Tod des Seraphen
-  aliases: []
-  mention_count: 1
 - concept_id: events/tod_des_sterbenden_mannes
   type: Event
   canonical_name: Tod des sterbenden Mannes
@@ -1545,11 +1506,6 @@ entities:
 - concept_id: events/treffen_mit_dem_orakel
   type: Event
   canonical_name: Treffen mit dem Orakel
-  aliases: []
-  mention_count: 1
-- concept_id: events/treffen_mit_sys_fizik
-  type: Event
-  canonical_name: Treffen mit Sys Fizik
   aliases: []
   mention_count: 1
 - concept_id: events/trennung_der_gruppe
@@ -1562,10 +1518,11 @@ entities:
   canonical_name: Tunnel der Gnolle
   aliases: []
   mention_count: 1
-- concept_id: events/turnier_von_willau
+- concept_id: events/turnier_von_willauch
   type: Event
-  canonical_name: Turnier von Willau
-  aliases: []
+  canonical_name: Turnier von Willauch
+  aliases:
+  - Turnier von Willau
   mention_count: 1
 - concept_id: events/ueberfall_auf_das_holzfaellerlager
   type: Event
@@ -1590,11 +1547,6 @@ entities:
 - concept_id: events/untersuchung_durch_bosa_und_tyrael
   type: Event
   canonical_name: Untersuchung durch Bosa und Tyrael
-  aliases: []
-  mention_count: 1
-- concept_id: events/vasuls_warnung
-  type: Event
-  canonical_name: Vasuls Warnung
   aliases: []
   mention_count: 1
 - concept_id: events/verbannung_des_ratten_daemons
@@ -1628,6 +1580,11 @@ entities:
   aliases:
   - Verhandlung mit Hal
   mention_count: 2
+- concept_id: events/verhandlung_mit_sys_fizik
+  type: Event
+  canonical_name: Verhandlung mit Sys Fizik
+  aliases: []
+  mention_count: 1
 - concept_id: events/verhandlung_um_die_aufnahme_der_fluechtlinge_in_ringtal
   type: Event
   canonical_name: Verhandlung um die Aufnahme der Flüchtlinge in Ringtal
@@ -1653,6 +1610,11 @@ entities:
   canonical_name: Vernichtung von Esuar und Zytral
   aliases: []
   mention_count: 1
+- concept_id: events/verrat_von_trilo
+  type: Event
+  canonical_name: Verrat von Trilo
+  aliases: []
+  mention_count: 1
 - concept_id: events/versteinerung_von_dodo
   type: Event
   canonical_name: Versteinerung von Dodo
@@ -1673,9 +1635,9 @@ entities:
   canonical_name: Verunreinigung des Amuletts
   aliases: []
   mention_count: 1
-- concept_id: events/verwandlung_in_pedro
+- concept_id: events/verwandlung_von_lindo_laut
   type: Event
-  canonical_name: Verwandlung in Pedro
+  canonical_name: Verwandlung von Lindo Laut
   aliases: []
   mention_count: 1
 - concept_id: events/wiederbelebung_der_gruppe
@@ -1703,14 +1665,14 @@ entities:
   canonical_name: Zähmung des Basilisken Sloppy
   aliases: []
   mention_count: 1
-- concept_id: events/zerstoerung_der_illusion_von_kalos
-  type: Event
-  canonical_name: Zerstörung der Illusion von Kalos
-  aliases: []
-  mention_count: 1
 - concept_id: events/zerstoerung_der_statue
   type: Event
   canonical_name: Zerstörung der Statue
+  aliases: []
+  mention_count: 1
+- concept_id: events/zerstoerung_der_statue_von_kol_merefs
+  type: Event
+  canonical_name: Zerstörung der Statue von Kol Merefs
   aliases: []
   mention_count: 1
 - concept_id: events/zerstoerung_des_geheimgangs
@@ -1765,7 +1727,9 @@ entities:
   - Untote
   - Untotenarmee von Zebros
   - Die Magier von Belorus
-  mention_count: 2
+  - Die Untoten
+  - Untote Horde von Zebras
+  mention_count: 4
 - concept_id: factions/brabarand_gilde
   type: Faction
   canonical_name: Brabarand-Gilde
@@ -1817,11 +1781,6 @@ entities:
   canonical_name: Die Strixwolf-Reiter
   aliases: []
   mention_count: 1
-- concept_id: factions/die_untoten
-  type: Faction
-  canonical_name: Die Untoten
-  aliases: []
-  mention_count: 1
 - concept_id: factions/fluechtlinge
   type: Faction
   canonical_name: Flüchtlinge
@@ -1871,21 +1830,21 @@ entities:
   canonical_name: Gilde von Ringtal
   aliases: []
   mention_count: 1
+- concept_id: factions/gnolle
+  type: Faction
+  canonical_name: Gnolle
+  aliases: []
+  mention_count: 3
 - concept_id: factions/goblinarmee
   type: Faction
   canonical_name: Goblinarmee
   aliases: []
   mention_count: 1
-- concept_id: factions/goblins
+- concept_id: factions/grottenschrate
   type: Faction
-  canonical_name: Goblins
-  aliases:
-  - Goblinhorde
-  - Goblins der Minen
-  - Goblins des Anwesens
-  - Die Goblins der Mine
-  - Goblin-Armee
-  mention_count: 4
+  canonical_name: Grottenschrate
+  aliases: []
+  mention_count: 1
 - concept_id: factions/halblinge
   type: Faction
   canonical_name: Halblinge
@@ -1914,11 +1873,6 @@ entities:
   canonical_name: Nachtwächterinnen
   aliases: []
   mention_count: 1
-- concept_id: factions/neue_goetter
-  type: Faction
-  canonical_name: Neue Götter
-  aliases: []
-  mention_count: 2
 - concept_id: factions/rotunas_freunde
   type: Faction
   canonical_name: Rotunas Freunde
@@ -1965,11 +1919,6 @@ entities:
   canonical_name: Untote Armee von Steinbachtal
   aliases: []
   mention_count: 1
-- concept_id: factions/untote_horde_von_zebras
-  type: Faction
-  canonical_name: Untote Horde von Zebras
-  aliases: []
-  mention_count: 1
 - concept_id: factions/untote_krieger
   type: Faction
   canonical_name: Untote Krieger
@@ -1998,14 +1947,13 @@ entities:
   - Amulett des Lindo Laut
   - Amulett von Lindo Laut
   - Lindo Lauts Amulett
-  - Amulett
   - Amulett des Duran
   - Amulett der Vier
   - Die Geister im Amulett
   - Amulett (Medaillon)
   - Amulett (Stimmen)
   - Lindos Amulett-Stimmen
-  mention_count: 7
+  mention_count: 8
 - concept_id: items/amulett_mit_rabenschaedel
   type: Item
   canonical_name: Amulett mit Rabenschädel
@@ -2076,19 +2024,24 @@ entities:
   canonical_name: Brief von Nox
   aliases: []
   mention_count: 1
+- concept_id: items/buch_flueche_und_das_schweigen
+  type: Item
+  canonical_name: Buch Flüche und das Schweigen
+  aliases: []
+  mention_count: 1
 - concept_id: items/buch_mit_namen
   type: Item
   canonical_name: Buch mit Namen
   aliases: []
   mention_count: 2
+- concept_id: items/buch_ueber_vorgulta
+  type: Item
+  canonical_name: Buch über Vorgulta
+  aliases: []
+  mention_count: 1
 - concept_id: items/buch_von_vasul
   type: Item
   canonical_name: Buch von Vasul
-  aliases: []
-  mention_count: 1
-- concept_id: items/das_amulett_von_lindo_laut
-  type: Item
-  canonical_name: Das Amulett von Lindo Laut
   aliases: []
   mention_count: 1
 - concept_id: items/das_goldene_flaeschchen
@@ -2126,19 +2079,9 @@ entities:
   canonical_name: Der Dolch
   aliases: []
   mention_count: 1
-- concept_id: items/der_speer
-  type: Item
-  canonical_name: Der Speer
-  aliases: []
-  mention_count: 1
 - concept_id: items/der_splitter_spruch
   type: Item
   canonical_name: Der Splitter-Spruch
-  aliases: []
-  mention_count: 1
-- concept_id: items/der_streitkolben
-  type: Item
-  canonical_name: Der Streitkolben
   aliases: []
   mention_count: 1
 - concept_id: items/der_trank_der_hope
@@ -2196,16 +2139,16 @@ entities:
   canonical_name: Die Statue von Joran
   aliases: []
   mention_count: 1
-- concept_id: items/die_statue_von_kol_merefs
-  type: Item
-  canonical_name: Die Statue von Kol Merefs
-  aliases: []
-  mention_count: 1
 - concept_id: items/die_statue_von_nerash
   type: Item
   canonical_name: Die Statue von Nerash
   aliases: []
-  mention_count: 2
+  mention_count: 1
+- concept_id: items/dokument_ueber_rote_magie
+  type: Item
+  canonical_name: Dokument über rote Magie
+  aliases: []
+  mention_count: 1
 - concept_id: items/dolch
   type: Item
   canonical_name: Dolch
@@ -2278,7 +2221,8 @@ entities:
   aliases:
   - Der Kristall
   - Grüner Kristall
-  mention_count: 3
+  - Kristall
+  mention_count: 4
 - concept_id: items/gruener_seelenkristall_von_hans
   type: Item
   canonical_name: Grüner Seelenkristall von Hans
@@ -2362,11 +2306,6 @@ entities:
   canonical_name: Kriegskarte
   aliases: []
   mention_count: 1
-- concept_id: items/kristall
-  type: Item
-  canonical_name: Kristall
-  aliases: []
-  mention_count: 1
 - concept_id: items/lila_kristalle
   type: Item
   canonical_name: Lila Kristalle
@@ -2383,7 +2322,8 @@ entities:
   aliases:
   - Lindo Lauts Stab
   - Stab
-  mention_count: 1
+  - Stab von Lindo Laut
+  mention_count: 3
 - concept_id: items/magisch_versiegeltes_schriftstueck
   type: Item
   canonical_name: Magisch versiegeltes Schriftstück
@@ -2448,6 +2388,11 @@ entities:
   canonical_name: Nachricht am Monster
   aliases: []
   mention_count: 1
+- concept_id: items/nebelschleier
+  type: Item
+  canonical_name: Nebelschleier
+  aliases: []
+  mention_count: 1
 - concept_id: items/nomadentasche
   type: Item
   canonical_name: Nomadentasche
@@ -2490,17 +2435,8 @@ entities:
   - Der Ring
   - Ring der Teleportation
   - Lindo Lauts Ring
-  mention_count: 1
-- concept_id: items/ring_von_lindo_laut
-  type: Item
-  canonical_name: Ring von Lindo Laut
-  aliases: []
-  mention_count: 1
-- concept_id: items/rote_magie
-  type: Item
-  canonical_name: Rote Magie
-  aliases: []
-  mention_count: 1
+  - Ring von Lindo Laut
+  mention_count: 2
 - concept_id: items/runic_lock
   type: Item
   canonical_name: Runic Lock
@@ -2511,6 +2447,11 @@ entities:
   canonical_name: Sack voll Gold
   aliases: []
   mention_count: 1
+- concept_id: items/schattenfeuer
+  type: Item
+  canonical_name: Schattenfeuer
+  aliases: []
+  mention_count: 1
 - concept_id: items/schattenfinger
   type: Item
   canonical_name: Schattenfinger-Klaue
@@ -2518,6 +2459,11 @@ entities:
   - Schattenfinger
   - Schattenfinger (Kenku-Kralle)
   mention_count: 2
+- concept_id: items/schatzkarte_fuer_magisches_material
+  type: Item
+  canonical_name: Schatzkarte für magisches Material
+  aliases: []
+  mention_count: 1
 - concept_id: items/schlachtplaene
   type: Item
   canonical_name: Schlachtpläne
@@ -2597,7 +2543,7 @@ entities:
   type: Item
   canonical_name: Silberne Feder
   aliases: []
-  mention_count: 2
+  mention_count: 1
 - concept_id: items/silbervorkommen_mit_kristallen
   type: Item
   canonical_name: Silbervorkommen mit Kristallen
@@ -2606,6 +2552,11 @@ entities:
 - concept_id: items/skelettschluessel
   type: Item
   canonical_name: Skelettschlüssel
+  aliases: []
+  mention_count: 1
+- concept_id: items/speer
+  type: Item
+  canonical_name: Speer
   aliases: []
   mention_count: 1
 - concept_id: items/spinnenei
@@ -2619,14 +2570,9 @@ entities:
   aliases:
   - Splitter des Ewigen
   mention_count: 2
-- concept_id: items/stab_von_lindo_laut
+- concept_id: items/staerketrank
   type: Item
-  canonical_name: Stab von Lindo Laut
-  aliases: []
-  mention_count: 2
-- concept_id: items/staminatrank
-  type: Item
-  canonical_name: Staminatrank
+  canonical_name: Stärketrank
   aliases: []
   mention_count: 1
 - concept_id: items/statue_von_vasul
@@ -2655,7 +2601,9 @@ entities:
   - Streitkolben von Zebras
   - Der heilige Streitkolben aus Zebras
   - Zebrus Zorn
-  mention_count: 1
+  - Der Streitkolben
+  - Zebras Zorn
+  mention_count: 3
 - concept_id: items/symbol_in_der_villa
   type: Item
   canonical_name: Symbol in der Villa
@@ -2708,9 +2656,9 @@ entities:
   canonical_name: Verbessertes Kurzschwert
   aliases: []
   mention_count: 1
-- concept_id: items/verwandlungstrank
+- concept_id: items/verwandlungstrank_in_katari
   type: Item
-  canonical_name: Verwandlungstrank
+  canonical_name: Verwandlungstrank in Katari
   aliases: []
   mention_count: 1
 - concept_id: items/voodoo_puppe
@@ -2740,7 +2688,7 @@ entities:
   mention_count: 1
 - concept_id: items/wappen_von_villauch
   type: Item
-  canonical_name: Wappen von Villauch
+  canonical_name: Wappen von Villau
   aliases: []
   mention_count: 1
 - concept_id: items/warnungstafel
@@ -2751,11 +2699,6 @@ entities:
 - concept_id: items/weisses_totem
   type: Item
   canonical_name: Weißes Totem
-  aliases: []
-  mention_count: 1
-- concept_id: items/zebras_zorn
-  type: Item
-  canonical_name: Zebras Zorn
   aliases: []
   mention_count: 1
 - concept_id: items/zebrosia
@@ -2798,10 +2741,16 @@ entities:
   canonical_name: Altes Labor
   aliases: []
   mention_count: 1
-- concept_id: locations/arena_von_willau
+- concept_id: locations/anderlingsrad
   type: Location
-  canonical_name: Arena von Willau
+  canonical_name: Anderlingsrad
   aliases: []
+  mention_count: 1
+- concept_id: locations/arena_von_willauch
+  type: Location
+  canonical_name: Arena von Willauch
+  aliases:
+  - Arena von Willau
   mention_count: 1
 - concept_id: locations/aussenposten_der_gilde
   type: Location
@@ -2880,6 +2829,7 @@ entities:
   canonical_name: Burg des Belorus
   aliases: []
   mention_count: 1
+  important: true
 - concept_id: locations/burgruine
   type: Location
   canonical_name: Burgruine
@@ -2909,21 +2859,10 @@ entities:
   canonical_name: Crowfin Manor
   aliases: []
   mention_count: 1
-- concept_id: locations/das_ende
-  type: Location
-  canonical_name: Das Ende
-  aliases: []
-  mention_count: 1
 - concept_id: locations/das_holzfaellerlager
   type: Location
   canonical_name: Das Holzfällerlager
   aliases: []
-  mention_count: 1
-- concept_id: locations/das_portal
-  type: Location
-  canonical_name: Das Portal (Zwergmeistergilde-Gelände / Kapelle)
-  aliases:
-  - Das Portal
   mention_count: 1
 - concept_id: locations/das_tor
   type: Location
@@ -2994,7 +2933,7 @@ entities:
   type: Location
   canonical_name: Die Festung
   aliases: []
-  mention_count: 2
+  mention_count: 1
 - concept_id: locations/die_gewoelbe_der_hexe
   type: Location
   canonical_name: Die Gewölbe der Hexe
@@ -3003,11 +2942,6 @@ entities:
 - concept_id: locations/die_grauen_suempfe
   type: Location
   canonical_name: Die grauen Sümpfe
-  aliases: []
-  mention_count: 1
-- concept_id: locations/die_hoehle
-  type: Location
-  canonical_name: Die Höhle
   aliases: []
   mention_count: 1
 - concept_id: locations/die_huette_am_berghang
@@ -3036,11 +2970,6 @@ entities:
   canonical_name: Die Taverne Kleinringtal
   aliases: []
   mention_count: 1
-- concept_id: locations/dorf
-  type: Location
-  canonical_name: Dorf
-  aliases: []
-  mention_count: 1
 - concept_id: locations/droons_bahn
   type: Location
   canonical_name: Droons Bahn
@@ -3059,9 +2988,8 @@ entities:
 - concept_id: locations/ehrenfels
   type: Location
   canonical_name: Ehrenfels
-  aliases:
-  - Die Stadt
-  mention_count: 17
+  aliases: []
+  mention_count: 18
 - concept_id: locations/eingefrorener_baum
   type: Location
   canonical_name: Eingefrorener Baum
@@ -3070,9 +2998,8 @@ entities:
 - concept_id: locations/ende_jenseits_der_orkgebiete
   type: Location
   canonical_name: Ende (jenseits der Orkgebiete)
-  aliases:
-  - Ende
-  mention_count: 1
+  aliases: []
+  mention_count: 2
 - concept_id: locations/erntefelder
   type: Location
   canonical_name: Erntefelder
@@ -3081,6 +3008,11 @@ entities:
 - concept_id: locations/farm_der_heinrichs
   type: Location
   canonical_name: Farm der Heinrichs
+  aliases: []
+  mention_count: 1
+- concept_id: locations/festung
+  type: Location
+  canonical_name: Festung
   aliases: []
   mention_count: 1
 - concept_id: locations/fluechtlingslager_vor_breska
@@ -3174,11 +3106,6 @@ entities:
   canonical_name: Heiligtum auf dem Berg
   aliases: []
   mention_count: 1
-- concept_id: locations/hoehle
-  type: Location
-  canonical_name: Höhle
-  aliases: []
-  mention_count: 1
 - concept_id: locations/hohenwehr
   type: Location
   canonical_name: Hohenwehr
@@ -3205,6 +3132,11 @@ entities:
   aliases: []
   mention_count: 3
   important: true
+- concept_id: locations/kanalisation_von_willauch
+  type: Location
+  canonical_name: Kanalisation von Willauch
+  aliases: []
+  mention_count: 1
 - concept_id: locations/kapelle_der_neuen_goetter
   type: Location
   canonical_name: Kapelle der neuen Götter
@@ -3255,11 +3187,6 @@ entities:
   aliases:
   - Mine
   - Die Mine
-  mention_count: 2
-- concept_id: locations/kristallturm
-  type: Location
-  canonical_name: Kristallturm
-  aliases: []
   mention_count: 1
 - concept_id: locations/krypta
   type: Location
@@ -3276,16 +3203,6 @@ entities:
   canonical_name: Lager der Gruppe
   aliases: []
   mention_count: 1
-- concept_id: locations/mine_der_zwerge
-  type: Location
-  canonical_name: Mine der Zwerge
-  aliases: []
-  mention_count: 1
-- concept_id: locations/nebel
-  type: Location
-  canonical_name: Nebel
-  aliases: []
-  mention_count: 1
 - concept_id: locations/nebelwacht
   type: Location
   canonical_name: Nebelwacht
@@ -3295,7 +3212,7 @@ entities:
   type: Location
   canonical_name: Nördliche Schneise
   aliases: []
-  mention_count: 1
+  mention_count: 2
 - concept_id: locations/okultes_lager
   type: Location
   canonical_name: Okultes Lager
@@ -3304,8 +3221,9 @@ entities:
 - concept_id: locations/orkgebiet
   type: Location
   canonical_name: Orkgebiet
-  aliases: []
-  mention_count: 1
+  aliases:
+  - Ork-Gebiet
+  mention_count: 2
 - concept_id: locations/parfon_kapelle_auf_dem_berg
   type: Location
   canonical_name: Thar'Vok-Kapelle auf dem Berg
@@ -3313,11 +3231,6 @@ entities:
   - Kapelle
   - Die Kapelle
   mention_count: 2
-- concept_id: locations/pass
-  type: Location
-  canonical_name: Pass
-  aliases: []
-  mention_count: 1
 - concept_id: locations/phipps_turm
   type: Location
   canonical_name: Phipps' Turm
@@ -3326,6 +3239,11 @@ entities:
 - concept_id: locations/pocket_dimension
   type: Location
   canonical_name: Pocket Dimension
+  aliases: []
+  mention_count: 1
+- concept_id: locations/portal
+  type: Location
+  canonical_name: Portal
   aliases: []
   mention_count: 1
 - concept_id: locations/portal_am_nordgipfel
@@ -3375,7 +3293,7 @@ entities:
   aliases:
   - Sanddorninseln
   - Sanddorninseln (Sundown-Inseln)
-  mention_count: 3
+  mention_count: 4
   important: true
 - concept_id: locations/schiffswrack
   type: Location
@@ -3417,18 +3335,12 @@ entities:
   canonical_name: Steinbachtal
   aliases: []
   mention_count: 1
-- concept_id: locations/sumpf_der_sumpfhexe
-  type: Location
-  canonical_name: Sumpf der Sumpfhexe
-  aliases:
-  - Sumpf
-  mention_count: 1
 - concept_id: locations/sumpf_vor_dem_goblin_dorf
   type: Location
   canonical_name: Sumpf vor dem Goblin-Dorf
   aliases:
   - Sumpf
-  mention_count: 1
+  mention_count: 2
 - concept_id: locations/tarkia
   type: Location
   canonical_name: Tarkia
@@ -3440,16 +3352,16 @@ entities:
   aliases:
   - Takir
   mention_count: 3
-- concept_id: locations/taverne
-  type: Location
-  canonical_name: Taverne
-  aliases: []
-  mention_count: 1
 - concept_id: locations/taverne_kyla_von_sanddorn
   type: Location
   canonical_name: Taverne Kyla von Sanddorn
   aliases:
   - Taverne Kyla
+  mention_count: 1
+- concept_id: locations/taverne_neben_der_kirche
+  type: Location
+  canonical_name: Taverne neben der Kirche
+  aliases: []
   mention_count: 1
 - concept_id: locations/taverne_von_ehrenfels
   type: Location
@@ -3495,7 +3407,7 @@ entities:
   aliases:
   - Die Mine
   - Mine
-  mention_count: 1
+  mention_count: 2
 - concept_id: locations/versunkene_stadt
   type: Location
   canonical_name: Versunkene Stadt
@@ -3513,14 +3425,20 @@ entities:
   - Halle der Seelennetze
   - Labor der Hexe
   mention_count: 1
-- concept_id: locations/villa
-  type: Location
-  canonical_name: Villa
-  aliases: []
-  mention_count: 1
 - concept_id: locations/villach
   type: Location
   canonical_name: Villach
+  aliases: []
+  mention_count: 1
+- concept_id: locations/villau
+  type: Location
+  canonical_name: Villau
+  aliases:
+  - Villa
+  mention_count: 2
+- concept_id: locations/wabarask
+  type: Location
+  canonical_name: Wabarask
   aliases: []
   mention_count: 1
 - concept_id: locations/waechterturm
@@ -3546,7 +3464,7 @@ entities:
   - Vilau (Willau)
   - Willoch
   - Villauch
-  mention_count: 10
+  mention_count: 9
 - concept_id: locations/windung
   type: Location
   canonical_name: Windung
@@ -3568,9 +3486,19 @@ entities:
   canonical_name: Zwergenfestung
   aliases: []
   mention_count: 1
+- concept_id: locations/zwergenmine
+  type: Location
+  canonical_name: Mine der Zwerge
+  aliases: []
+  mention_count: 1
 - concept_id: locations/zwischenebene
   type: Location
   canonical_name: Zwischenebene
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/abisalis_harald
+  type: NPC
+  canonical_name: Meister Harald
   aliases: []
   mention_count: 1
 - concept_id: npcs/adeliga_der_eulenseraph
@@ -3584,11 +3512,6 @@ entities:
   canonical_name: Adria
   aliases: []
   mention_count: 1
-- concept_id: npcs/akastrale
-  type: NPC
-  canonical_name: Akastrale
-  aliases: []
-  mention_count: 2
 - concept_id: npcs/anhaenger_von_warzul
   type: NPC
   canonical_name: Anhänger von Warzul
@@ -3621,7 +3544,8 @@ entities:
   - Priesterin Auraniell
   - Auranie
   - Priesterin Auraniel
-  mention_count: 5
+  - Priesterin Auranie
+  mention_count: 6
 - concept_id: npcs/balor
   type: NPC
   canonical_name: Balor
@@ -3698,11 +3622,6 @@ entities:
 - concept_id: npcs/burfun
   type: NPC
   canonical_name: Burfun
-  aliases: []
-  mention_count: 1
-- concept_id: npcs/captain_lobrecht
-  type: NPC
-  canonical_name: Captain Lobrecht
   aliases: []
   mention_count: 1
 - concept_id: npcs/celestials
@@ -3925,22 +3844,12 @@ entities:
   canonical_name: Froschwachen
   aliases: []
   mention_count: 1
-- concept_id: npcs/garlin_der_weise
-  type: NPC
-  canonical_name: Garlin der Weise
-  aliases: []
-  mention_count: 1
-- concept_id: npcs/gefangene_seelen
-  type: NPC
-  canonical_name: Gefangene Seelen
-  aliases: []
-  mention_count: 1
 - concept_id: npcs/geisterhafte_gestalt
   type: NPC
   canonical_name: Geisterhafte Gestalt
   aliases:
   - Die geisterhafte Gestalt
-  mention_count: 2
+  mention_count: 1
 - concept_id: npcs/gerda_heinrich
   type: NPC
   canonical_name: Gerda Heinrich
@@ -3961,11 +3870,6 @@ entities:
   canonical_name: Giuseppa
   aliases: []
   mention_count: 1
-- concept_id: npcs/gnoll
-  type: NPC
-  canonical_name: Gnoll
-  aliases: []
-  mention_count: 1
 - concept_id: npcs/goblin_spaeher
   type: NPC
   canonical_name: Goblin-Späher
@@ -3976,11 +3880,12 @@ entities:
   canonical_name: Gorak
   aliases: []
   mention_count: 1
-- concept_id: npcs/graf_voras
+- concept_id: npcs/gralin_der_weise
   type: NPC
-  canonical_name: Graf Voras
-  aliases: []
-  mention_count: 1
+  canonical_name: Gralin der Weise
+  aliases:
+  - Garlin der Weise
+  mention_count: 2
 - concept_id: npcs/greg
   type: NPC
   canonical_name: Greg
@@ -4018,14 +3923,12 @@ entities:
   type: NPC
   canonical_name: Hans (Soldat aus Breska)
   aliases:
-  - Hans
   - Soldat aus Breska
   mention_count: 1
 - concept_id: npcs/hans_wirt_zum_gruenen_sichelmond
   type: NPC
   canonical_name: Hans (Wirt zum grünen Sichelmond)
-  aliases:
-  - Hans
+  aliases: []
   mention_count: 1
 - concept_id: npcs/harloen
   type: NPC
@@ -4086,6 +3989,11 @@ entities:
   canonical_name: Höllenhunde
   aliases: []
   mention_count: 1
+- concept_id: npcs/holoras
+  type: NPC
+  canonical_name: Holoras
+  aliases: []
+  mention_count: 1
 - concept_id: npcs/horatio
   type: NPC
   canonical_name: Horatio
@@ -4128,12 +4036,8 @@ entities:
   aliases:
   - Joao Vanur
   - Joar
-  mention_count: 3
-- concept_id: npcs/jorah_vanur
-  type: NPC
-  canonical_name: Jorah Vanur
-  aliases: []
-  mention_count: 1
+  - Jorah Vanur
+  mention_count: 4
 - concept_id: npcs/kalec
   type: NPC
   canonical_name: Kalec
@@ -4165,11 +4069,6 @@ entities:
 - concept_id: npcs/kerner
   type: NPC
   canonical_name: Kerner
-  aliases: []
-  mention_count: 1
-- concept_id: npcs/kinder
-  type: NPC
-  canonical_name: Kinder
   aliases: []
   mention_count: 1
 - concept_id: npcs/kinderseele
@@ -4228,11 +4127,12 @@ entities:
   canonical_name: Leandras
   aliases:
   - Lendras
-  mention_count: 3
+  mention_count: 4
 - concept_id: npcs/lenra
   type: NPC
   canonical_name: Landra, die Hag
   aliases:
+  - Lenra
   - Moorhexe Hack
   - Hack
   - Die Hack
@@ -4283,7 +4183,8 @@ entities:
   - Kahnführer Lobrecht
   - Käpt'n Lobrecht
   - Lobrecht
-  mention_count: 6
+  - Captain Lobrecht
+  mention_count: 7
 - concept_id: npcs/loran_silberbart
   type: NPC
   canonical_name: Loran Silberbart
@@ -4294,13 +4195,13 @@ entities:
   canonical_name: Lord Harik
   aliases: []
   mention_count: 1
-- concept_id: npcs/lord_kalidarn_von_willau
+- concept_id: npcs/lord_kalidarn_von_willauch
   type: NPC
-  canonical_name: Lord Kalidarn von Willau
+  canonical_name: Lord Kalidarn von Willauch
   aliases:
-  - Lord Kaledan von Willau
-  - Lord Kalidarn von Willauch
+  - Lord Kalidarn von Willau
   - Lord von Willauch
+  - Lord Kaledan von Willau
   mention_count: 3
 - concept_id: npcs/lukas
   type: NPC
@@ -4335,11 +4236,6 @@ entities:
 - concept_id: npcs/meister_grimm
   type: NPC
   canonical_name: Meister Grimm
-  aliases: []
-  mention_count: 1
-- concept_id: npcs/meister_harald
-  type: NPC
-  canonical_name: Meister Harald
   aliases: []
   mention_count: 1
 - concept_id: npcs/meister_pyrandras
@@ -4464,12 +4360,7 @@ entities:
   canonical_name: Pilz-Goblins
   aliases:
   - Goblins
-  mention_count: 2
-- concept_id: npcs/priesterin_auranie
-  type: NPC
-  canonical_name: Priesterin Auranie
-  aliases: []
-  mention_count: 1
+  mention_count: 6
 - concept_id: npcs/ratten_daemon
   type: NPC
   canonical_name: Ratten-Dämon
@@ -4540,11 +4431,6 @@ entities:
   canonical_name: Schleichfurz
   aliases: []
   mention_count: 1
-- concept_id: npcs/schmied
-  type: NPC
-  canonical_name: Schmied
-  aliases: []
-  mention_count: 1
 - concept_id: npcs/schnueffi
   type: NPC
   canonical_name: Schnüffi
@@ -4581,7 +4467,7 @@ entities:
   canonical_name: Skelett-Bogenschützen
   aliases:
   - Skelett
-  mention_count: 2
+  mention_count: 1
 - concept_id: npcs/slix_vasul
   type: NPC
   canonical_name: Slix
@@ -4613,11 +4499,6 @@ entities:
 - concept_id: npcs/strixwolf
   type: NPC
   canonical_name: Strixwolf
-  aliases: []
-  mention_count: 1
-- concept_id: npcs/suedrawell
-  type: NPC
-  canonical_name: Südrawell
   aliases: []
   mention_count: 1
 - concept_id: npcs/sys_fizik
@@ -4678,7 +4559,7 @@ entities:
   mention_count: 1
 - concept_id: npcs/trillo
   type: NPC
-  canonical_name: Trillo
+  canonical_name: Trilo
   aliases: []
   mention_count: 1
 - concept_id: npcs/troggal
@@ -4760,7 +4641,8 @@ entities:
   - Voras
   - Voras (Voras der Heilige / Voras der Schrecken)
   - Der Graf
-  mention_count: 7
+  - Graf Voras
+  mention_count: 8
   important: true
 - concept_id: npcs/voros
   type: NPC
@@ -4798,3 +4680,299 @@ entities:
   canonical_name: Zytral
   aliases: []
   mention_count: 1
+retired:
+- concept_id: characters/celin_cookie
+  type: Character
+  canonical_name: Celin (Cookie)
+  aliases:
+  - Celin
+- concept_id: characters/esterossa_mikasa
+  type: Character
+  canonical_name: Esterossa (Mikasa)
+  aliases: []
+- concept_id: characters/marco_dodo
+  type: Character
+  canonical_name: Marco (Dodo)
+  aliases: []
+- concept_id: characters/saris_bendal
+  type: Character
+  canonical_name: Saris Bendal
+  aliases: []
+- concept_id: characters/tim_lindo_laut
+  type: Character
+  canonical_name: Tim (Lindo Laut)
+  aliases: []
+- concept_id: deities/die_alten_goetter
+  type: Deity
+  canonical_name: Die alten Götter
+  aliases: []
+- concept_id: deities/kol_merefs
+  type: Deity
+  canonical_name: Kol Merefs
+  aliases: []
+- concept_id: deities/tavok
+  type: Deity
+  canonical_name: Tavok
+  aliases: []
+- concept_id: domains/daggerheart
+  type: Domain
+  canonical_name: Daggerheart
+  aliases: []
+- concept_id: events/befreiung_von_nerash
+  type: Event
+  canonical_name: Befreiung von Nerash
+  aliases: []
+- concept_id: events/begegnung_mit_dem_skelettschaedel
+  type: Event
+  canonical_name: Begegnung mit dem Skelettschädel
+  aliases: []
+- concept_id: events/die_falle
+  type: Event
+  canonical_name: Die Falle
+  aliases: []
+- concept_id: events/die_rueckkehr_der_gruppe
+  type: Event
+  canonical_name: Die Rückkehr der Gruppe
+  aliases: []
+- concept_id: events/die_zerstoerung_der_festung
+  type: Event
+  canonical_name: Die Zerstörung der Festung
+  aliases: []
+- concept_id: events/falle
+  type: Event
+  canonical_name: Falle
+  aliases: []
+- concept_id: events/feuerwand
+  type: Event
+  canonical_name: Feuerwand
+  aliases: []
+- concept_id: events/illusion_von_kalos
+  type: Event
+  canonical_name: Illusion von Kalos
+  aliases: []
+- concept_id: events/kampf_gegen_das_skelett
+  type: Event
+  canonical_name: Kampf gegen das Skelett
+  aliases: []
+- concept_id: events/kopfgeld_fuer_kronos
+  type: Event
+  canonical_name: Kopfgeld für Kronos
+  aliases: []
+- concept_id: events/manipulation_der_goblin_notiz
+  type: Event
+  canonical_name: Manipulation der Goblin-Notiz
+  aliases: []
+- concept_id: events/rekrutierung_durch_kalos
+  type: Event
+  canonical_name: Rekrutierung durch Kalos
+  aliases: []
+- concept_id: events/tod_des_seraphen
+  type: Event
+  canonical_name: Tod des Seraphen
+  aliases: []
+- concept_id: events/treffen_mit_sys_fizik
+  type: Event
+  canonical_name: Treffen mit Sys Fizik
+  aliases: []
+- concept_id: events/turnier_von_willau
+  type: Event
+  canonical_name: Turnier von Willau
+  aliases: []
+- concept_id: events/vasuls_warnung
+  type: Event
+  canonical_name: Vasuls Warnung
+  aliases: []
+- concept_id: events/verwandlung_in_pedro
+  type: Event
+  canonical_name: Verwandlung in Pedro
+  aliases: []
+- concept_id: events/zerstoerung_der_illusion_von_kalos
+  type: Event
+  canonical_name: Zerstörung der Illusion von Kalos
+  aliases: []
+- concept_id: factions/die_untoten
+  type: Faction
+  canonical_name: Die Untoten
+  aliases: []
+- concept_id: factions/goblins
+  type: Faction
+  canonical_name: Goblins
+  aliases:
+  - Goblinhorde
+  - Goblins der Minen
+  - Goblins des Anwesens
+  - Die Goblins der Mine
+  - Goblin-Armee
+- concept_id: factions/neue_goetter
+  type: Faction
+  canonical_name: Neue Götter
+  aliases: []
+- concept_id: factions/untote_horde_von_zebras
+  type: Faction
+  canonical_name: Untote Horde von Zebras
+  aliases: []
+- concept_id: items/das_amulett_von_lindo_laut
+  type: Item
+  canonical_name: Das Amulett von Lindo Laut
+  aliases: []
+- concept_id: items/der_speer
+  type: Item
+  canonical_name: Der Speer
+  aliases: []
+- concept_id: items/der_streitkolben
+  type: Item
+  canonical_name: Der Streitkolben
+  aliases: []
+- concept_id: items/die_statue_von_kol_merefs
+  type: Item
+  canonical_name: Die Statue von Kol Merefs
+  aliases: []
+- concept_id: items/kristall
+  type: Item
+  canonical_name: Kristall
+  aliases: []
+- concept_id: items/ring_von_lindo_laut
+  type: Item
+  canonical_name: Ring von Lindo Laut
+  aliases: []
+- concept_id: items/rote_magie
+  type: Item
+  canonical_name: Rote Magie
+  aliases: []
+- concept_id: items/stab_von_lindo_laut
+  type: Item
+  canonical_name: Stab von Lindo Laut
+  aliases: []
+- concept_id: items/staminatrank
+  type: Item
+  canonical_name: Staminatrank
+  aliases: []
+- concept_id: items/verwandlungstrank
+  type: Item
+  canonical_name: Verwandlungstrank
+  aliases: []
+- concept_id: items/wappen_von_villau
+  type: Item
+  canonical_name: Wappen von Villau
+  aliases: []
+- concept_id: items/zebras_zorn
+  type: Item
+  canonical_name: Zebras Zorn
+  aliases: []
+- concept_id: locations/arena_von_willau
+  type: Location
+  canonical_name: Arena von Willau
+  aliases: []
+- concept_id: locations/das_ende
+  type: Location
+  canonical_name: Das Ende
+  aliases: []
+- concept_id: locations/das_portal
+  type: Location
+  canonical_name: Das Portal (Zwergmeistergilde-Gelände / Kapelle)
+  aliases:
+  - Das Portal
+- concept_id: locations/der_nebel
+  type: Location
+  canonical_name: Der Nebel
+  aliases: []
+- concept_id: locations/die_hoehle
+  type: Location
+  canonical_name: Die Höhle
+  aliases: []
+- concept_id: locations/dorf
+  type: Location
+  canonical_name: Dorf
+  aliases: []
+- concept_id: locations/hoehle
+  type: Location
+  canonical_name: Höhle
+  aliases: []
+- concept_id: locations/kristallturm
+  type: Location
+  canonical_name: Kristallturm
+  aliases: []
+- concept_id: locations/mine_der_zwerge
+  type: Location
+  canonical_name: Mine der Zwerge
+  aliases: []
+- concept_id: locations/nebel
+  type: Location
+  canonical_name: Nebel
+  aliases: []
+- concept_id: locations/pass
+  type: Location
+  canonical_name: Pass
+  aliases: []
+- concept_id: locations/sumpf_der_sumpfhexe
+  type: Location
+  canonical_name: Sumpf der Sumpfhexe
+  aliases:
+  - Sumpf
+- concept_id: locations/taverne
+  type: Location
+  canonical_name: Taverne
+  aliases: []
+- concept_id: locations/villa
+  type: Location
+  canonical_name: Villa
+  aliases: []
+- concept_id: npcs/akastrale
+  type: NPC
+  canonical_name: Akastrale
+  aliases: []
+- concept_id: npcs/captain_lobrecht
+  type: NPC
+  canonical_name: Captain Lobrecht
+  aliases: []
+- concept_id: npcs/garlin_der_weise
+  type: NPC
+  canonical_name: Garlin der Weise
+  aliases: []
+- concept_id: npcs/gefangene_seelen
+  type: NPC
+  canonical_name: Gefangene Seelen
+  aliases: []
+- concept_id: npcs/gnoll
+  type: NPC
+  canonical_name: Gnoll
+  aliases: []
+- concept_id: npcs/graf_voras
+  type: NPC
+  canonical_name: Graf Voras
+  aliases: []
+- concept_id: npcs/jorah_vanur
+  type: NPC
+  canonical_name: Jorah Vanur
+  aliases: []
+- concept_id: npcs/kinder
+  type: NPC
+  canonical_name: Kinder
+  aliases: []
+- concept_id: npcs/lord_kalidarn_von_willau
+  type: NPC
+  canonical_name: Lord Kalidarn von Willau
+  aliases:
+  - Lord Kaledan von Willau
+  - Lord Kalidarn von Willauch
+  - Lord von Willauch
+- concept_id: npcs/meister_harald
+  type: NPC
+  canonical_name: Meister Harald
+  aliases: []
+- concept_id: npcs/priesterin_auranie
+  type: NPC
+  canonical_name: Priesterin Auranie
+  aliases: []
+- concept_id: npcs/schmied
+  type: NPC
+  canonical_name: Schmied
+  aliases: []
+- concept_id: npcs/suedrawell
+  type: NPC
+  canonical_name: Südrawell
+  aliases: []
+- concept_id: npcs/trilo
+  type: NPC
+  canonical_name: Trilo
+  aliases: []

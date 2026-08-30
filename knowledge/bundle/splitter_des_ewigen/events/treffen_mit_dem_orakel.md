@@ -10,7 +10,7 @@ id: EVENT_TREFFEN_MIT_DEM_ORAKEL
 subtype: Verhandlung
 ---
 
-Die Gruppe trifft das Orakel [Relina](/npcs/relina.md) und verhandelt über einen sicheren Geleit nach [Seelenwacht](/locations/seelenwacht.md). [Lindo Laut](/characters/lindo_laut.md) bietet einen [Schattenfinger](/items/schattenfinger.md) als Zahlung an.
+Die Gruppe trifft das Orakel [Relina](/npcs/relina.md) und verhandelt über einen sicheren Geleit nach Seelenwacht. [Lindo Laut](/characters/lindo_laut.md) bietet einen [Schattenfinger](/items/schattenfinger.md) als Zahlung an.
 
 # Belege
 

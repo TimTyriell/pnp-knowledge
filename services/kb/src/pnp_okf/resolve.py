@@ -201,6 +201,38 @@ def rules_path_for(registry_path: Path) -> Path:
     return registry_path.with_name(RULES_FILENAME)
 
 
+def require_rules(registry_path: Path) -> None:
+    """Refuse to resolve identities against a registry with no rules beside it.
+
+    Every knowledge path is derived from the bundle directory, so one wrong
+    ``--bundle`` (or a stale ``PNP_BUNDLE_DIR``) silently relocates the
+    registry, the rules and ``sources/`` together. Nothing downstream can tell
+    that apart from a legitimate first run: ``_registry_data`` reads a missing
+    file as ``{}``, so every merge/never_merge/split/canonical_name/
+    alias_block/spelling/important rule and every GM ruling just isn't there,
+    and the run cheerfully regenerates the whole campaign from scratch. The
+    rename and prune guards cannot catch it either — they diff against the
+    previous registry, which in that scenario is also empty.
+
+    This happened on 2026-08-30 and cost a full run plus 32 unintended LLM
+    calls before anyone noticed. The rules file is the one artefact that is
+    always present for a real campaign, so its absence is the signal.
+    """
+
+    rules = rules_path_for(registry_path)
+    if not rules.is_file():
+        raise FileNotFoundError(
+            f"No {RULES_FILENAME} next to the registry at {registry_path}.\n"
+            f"  expected: {rules}\n"
+            f"Every hand-authored merge, split and GM ruling lives in that "
+            f"file; continuing would regenerate the campaign from scratch "
+            f"with none of them applied. This almost always means the bundle "
+            f"path is wrong — check --bundle and PNP_BUNDLE_DIR. If this "
+            f"really is a brand-new campaign, create an empty {RULES_FILENAME} "
+            f"there first."
+        )
+
+
 def _registry_data(registry_path: Path) -> dict:
     """Registry inventory plus the hand-authored rules beside it.
 
@@ -230,6 +262,31 @@ def _registry_data(registry_path: Path) -> dict:
         else:
             data[key] = value
     return data
+
+
+def _load_preserved_aliases(registry_path: Path) -> dict[str, list[str]]:
+    """``concept_id -> [alias, ...]`` straight from ``entities:``.
+
+    ``_load_alias_overrides`` turns this same data into a name->concept_id
+    table for routing a *mention whose name matches the alias* — but a hand-
+    added alias with no matching raw mention this run (e.g. "Lenra", the
+    concept's own historical slug, when every current transcript mention
+    says "Landra"/"Hack" instead) never reached the entity's own
+    ``aliases`` list, and therefore never reached ``link_targets()``
+    (synthesize.py) either: a name only extraction discovers is linkable,
+    hand-maintaining it in the registry was cosmetic. This seeds a new
+    entity's aliases from the registry so a hand-added spelling is usable
+    for cross-linking immediately, not just preserved in the file.
+    """
+
+    data = _registry_data(registry_path)
+    out: dict[str, list[str]] = {}
+    for entry in data.get("entities") or []:
+        concept_id = str(entry.get("concept_id", "")).strip()
+        aliases = [str(a).strip() for a in (entry.get("aliases") or []) if str(a).strip()]
+        if concept_id and aliases:
+            out[concept_id] = aliases
+    return out
 
 
 def _load_alias_overrides(registry_path: Path) -> dict[str, str]:
@@ -381,6 +438,30 @@ def _load_alias_blocks(registry_path: Path) -> dict[str, set[str]]:
     return out
 
 
+def load_spellings(registry_path: Path) -> dict[str, str]:
+    """``spelling:`` — mishearing -> canon text, applied to synthesized
+    prose (see ``links.py::apply_spellings``).
+
+    A ``canonical_name:`` pin only fixes a concept's *title*; the transcript
+    mishearing that produced it (e.g. "Willoch" for "Willauch") otherwise
+    survives untouched in every body it was ever synthesized into, on every
+    re-run, forever. This is the other half of correcting a name.
+
+    Public (unlike this module's other ``_load_*`` helpers) because it is
+    also needed by ``cli.py`` (to build the emit-time :class:`ConceptIndex`)
+    and ``validate.py`` (so ``pnp validate --fix`` can retro-apply it without
+    a full pipeline run).
+    """
+
+    data = _registry_data(registry_path)
+    out: dict[str, str] = {}
+    for old, new in (data.get("spelling") or {}).items():
+        old, new = str(old).strip(), str(new).strip()
+        if old and new:
+            out[old] = new
+    return out
+
+
 def _load_ignored(registry_path: Path) -> set[str]:
     """Concept ids listed under ``ignore:`` — never become concepts at all.
 
@@ -438,6 +519,7 @@ def resolve_entities(
     """
 
     overrides = _load_alias_overrides(registry_path)
+    preserved_aliases = _load_preserved_aliases(registry_path)
     important = _load_important(registry_path)
     ignored = _load_ignored(registry_path)
     pinned_names = _load_canonical_names(registry_path)
@@ -500,11 +582,15 @@ def resolve_entities(
             )
             entity = entities.get(concept_id)
             if entity is None:
+                seeded_name = mention.name.strip()
+                seeded_aliases = [
+                    a for a in preserved_aliases.get(concept_id, []) if a != seeded_name
+                ]
                 entity = CanonicalEntity(
                     concept_id=concept_id,
                     type=entity_type,
-                    canonical_name=mention.name.strip(),
-                    aliases=[],
+                    canonical_name=seeded_name,
+                    aliases=seeded_aliases,
                     mentions=[],
                     important=concept_id in important,
                     subtype=mention.subtype.strip(),

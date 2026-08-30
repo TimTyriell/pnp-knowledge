@@ -10,7 +10,7 @@ id: ITEM_WANTED_PLAKAT_AUF_GNOLL
 subtype: Schriftstück
 ---
 
-Ein Wanted-Plakat, das [Esterossa](/characters/esterossa.md) in der [Hütte](/locations/huette.md) des [Gnolls](/npcs/gnoll.md) findet. Es zeigt einen Gnoll und bietet eine Belohnung von vier Händen Gold.
+Ein Wanted-Plakat, das [Esterossa](/characters/esterossa.md) in der [Hütte](/locations/huette.md) des Gnolls findet. Es zeigt einen Gnoll und bietet eine Belohnung von vier Händen Gold.
 
 # Belege
 

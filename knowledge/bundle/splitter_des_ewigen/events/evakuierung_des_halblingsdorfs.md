@@ -10,7 +10,7 @@ id: EVENT_EVAKUIERUNG_DES_HALBLINGSDORFS
 subtype: Reise
 ---
 
-Die Entscheidung und Durchführung der Evakuierung des [Halblingsdorfs](/locations/halblingsdorf.md) nach [Kleinringtal](/locations/ringtal.md). Die Gruppe überzeugt die [Halblinge](/factions/halblinge.md) und organisiert den Transport der Tiere. Das [Dorf](/locations/dorf.md) wird später niedergebrannt.
+Die Entscheidung und Durchführung der Evakuierung des [Halblingsdorfs](/locations/halblingsdorf.md) nach [Kleinringtal](/locations/ringtal.md). Die Gruppe überzeugt die [Halblinge](/factions/halblinge.md) und organisiert den Transport der Tiere. Das Dorf wird später niedergebrannt.
 
 # Belege
 

@@ -10,7 +10,7 @@ id: LOC_STEINBACHTAL
 subtype: Siedlung
 ---
 
-Steinbachtal ist ein Minendorf am Fuße des Berges [Zebros](/factions/koenigreich_zebros.md), das von einer Untotenarmee überrannt wurde. Die Stadt ist weitgehend intakt, aber verlassen und in [Nebel](/locations/nebel.md) gehüllt. Es gibt eine [Kathedrale](/locations/kathedrale.md), in der der letzte Kampf stattfand, und ein Geheimversteck mit einem Pentagramm und einem Streitkolben. Die Gruppe findet dort die Waffe „[Zebras Zorn](/items/zebras_zorn.md)“.
+Steinbachtal ist ein Minendorf am Fuße des Berges [Zebros](/factions/koenigreich_zebros.md), das von einer Untotenarmee überrannt wurde. Die Stadt ist weitgehend intakt, aber verlassen und in Nebel gehüllt. Es gibt eine [Kathedrale](/locations/kathedrale.md), in der der letzte Kampf stattfand, und ein Geheimversteck mit einem Pentagramm und einem [Streitkolben](/items/streitkolben_von_dodo.md). Die Gruppe findet dort die Waffe „Zebros Zorn“.
 
 # Belege
 

@@ -10,7 +10,7 @@ id: ITEM_HERZ_DES_BERGES
 subtype: Artefakt
 ---
 
-Das Herz des Berges ist ein legendärer [Kristall](/items/kristall.md), der in jedem Berg existieren soll. [Rotunas](/characters/rotunas.md) erwähnt ihn, aber der Kristall in der Festung ist nur ein gewöhnlicher Erzbrocken.
+Das Herz des Berges ist ein legendärer [Kristall](/items/gruener_kristall.md), der in jedem Berg existieren soll. [Rotunas](/characters/rotunas.md) erwähnt ihn, aber der Kristall in der [Festung](/locations/festung.md) ist nur ein gewöhnlicher Erzbrocken.
 
 # Belege
 

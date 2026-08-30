@@ -9,7 +9,7 @@ timestamp: '2026-04-09T00:00:00Z'
 id: DOMAIN_RUNENSPRACHE
 ---
 
-Die Runensprache ist eine Sprache, die [Rotunas](/characters/rotunas.md) beherrscht und für seine Magie verwendet. Sie dient ihm als Medium, um Runen zu wirken. Über Ursprung, Struktur oder Umfang der Sprache ist aus den bisherigen Belegen nichts bekannt; als einziger Sprecher wird Rotunas genannt.
+Die Runensprache ist eine Sprache, die [Rotunas](/characters/rotunas.md) beherrscht und für seine Magie verwendet. Sie dient ihm als Medium, um Runen zu wirken. Über Ursprung, Struktur oder Umfang der Sprache ist aus den bisherigen Belegen nichts bekannt; als einziger Sprecher wird [Rotunas](/characters/rotunas.md) genannt.
 
 ## Verwendung
 

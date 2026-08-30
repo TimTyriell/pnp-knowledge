@@ -10,7 +10,7 @@ id: LOC_DUNGEON_UNTER_DER_CASA_DE_LA_COOKIE
 subtype: Dungeon
 ---
 
-Ein Dungeon unter dem Haus, der feucht und mit Ranken bewachsen ist. Er enthält eine [Warnungstafel](/items/warnungstafel.md), einen Raum mit Leichen, seltsame Pflanzen, die einen süßen Geruch verbreiten, und einen [Altar](/items/altar.md). Die Gruppe findet hier ein Artefakt, das mit [Tarvok](/deities/tarvok_der_erdrichter.md) verbunden ist.
+Ein Dungeon unter dem Haus, der feucht und mit Ranken bewachsen ist. Er enthält eine [Warnungstafel](/items/warnungstafel.md), einen Raum mit Leichen, seltsame Pflanzen, die einen süßen Geruch verbreiten, und einen [Altar](/items/altar.md). Die Gruppe findet hier ein Artefakt, das mit [Thar'Vok](/deities/tarvok_der_erdrichter.md) verbunden ist.
 
 # Belege
 

@@ -12,7 +12,7 @@ aliases:
 - Seelenstein
 ---
 
-Der Seelenstein des Rotunas ist ein magischer Stein, in dem ein Gesicht glitzert. Lindo Laut übergab ihn Dodo und bezeichnete ihn als nützlich, um Seelen zu manipulieren oder zu sammeln. Bei einem späteren Versuch, mit dem Stein Esterossas Seele zu absorbieren, zerbrach er.
+Der Seelenstein des [Rotunas](/characters/rotunas.md) ist ein magischer Stein, in dem ein Gesicht glitzert. [Lindo Laut](/characters/lindo_laut.md) übergab ihn Dodo und bezeichnete ihn als nützlich, um Seelen zu manipulieren oder zu sammeln. Bei einem späteren Versuch, mit dem Stein [Esterossas](/characters/esterossa.md) Seele zu absorbieren, zerbrach er.
 
 ## Eigenschaften und Funktion
 

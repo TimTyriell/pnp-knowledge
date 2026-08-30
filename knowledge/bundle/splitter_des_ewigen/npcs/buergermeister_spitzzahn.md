@@ -1,27 +1,35 @@
 ---
 type: NPC
 title: Bürgermeister Spitzzahn
-description: Bürgermeister Spitzzahn ist ein selbstsicherer und geschäftstüchtiger
-  Bürgermeister, der in der Kampagne an zwei Orten in Erscheinung tritt…
+description: 'Bürgermeister Spitzzahn ist ein Gemeindevorsteher, der in den Quellen
+  an zwei Orten in Erscheinung tritt: als Bürgermeister von Breska und…'
 tags:
 - npcs
 timestamp: '2026-08-20T00:00:00Z'
 id: NPC_BUERGERMEISTER_SPITZZAHN
 aliases:
+- Bürgermeister Spitzzahn
 - Bürgermeister
+status: disputed
 ---
 
-Bürgermeister Spitzzahn ist ein selbstsicherer und geschäftstüchtiger Bürgermeister, der in der Kampagne an zwei Orten in Erscheinung tritt: zunächst in der Stadt Breska, später in Ringtal. In Breska empfängt er die Gruppe überschwänglich und zeigt sich als begeisterter Förderer der neuen Stadt; in Ringtal verhandelt er dagegen hart um die Aufnahme von Flüchtlingen. Sein Auftreten verbindet öffentliche Gastfreundlichkeit mit nüchternem Geschäftssinn.
+# Bürgermeister Spitzzahn
 
-## Wirken in Breska
+Bürgermeister Spitzzahn ist ein Gemeindevorsteher, der in den Quellen an zwei Orten in Erscheinung tritt: als Bürgermeister von [Breska](/locations/breska.md) und als Bürgermeister von [Ringtal](/locations/ringtal.md). In beiden Begegnungen hat er mit der Gruppe zu tun, zeigt dabei jedoch unterschiedliche Seiten: überschwängliche Gastfreundschaft im einen Fall, verhandlungsorientierte Zurückhaltung im anderen.
 
-Bei seinem ersten Auftreten begrüßt Bürgermeister Spitzzahn die Gruppe überschwänglich. Er ist begeistert von der neuen Stadt und berichtet von laufenden Bauprojekten sowie von einem Goblinangriff. Als Geste der Gastfreundschaft bietet er der Gruppe Bier in der Taverne an.
+## Auftreten in Breska
 
-## Wirken in Ringtal
+In Breska begrüßt er die Gruppe überschwänglich und zeigt sich begeistert von der neuen Stadt. Er berichtet von laufenden Bauprojekten sowie einem Goblinangriff und bietet den Ankömmlingen Bier in der Taverne an. Weitere Aussagen zu seiner Person oder Amtsführung sind aus dieser Begegnung nicht überliefert.
 
-In Ringtal zeigt sich Spitzzahn zunächst zögerlich, als es um die Aufnahme von Flüchtlingen geht. Er verlangt zwei Säcke Gold als Entschädigung, stellt im Gegenzug aber Arbeit und ein leerstehendes Gebäude für ein Etablissement in Aussicht. Dabei tritt er selbstbewusst und geschäftstüchtig auf, was auf ein pragmatisches Amtsverständnis schließen lässt.
+## Auftreten in Ringtal
+
+In Ringtal verhält sich Bürgermeister Spitzzahn deutlich zurückhaltender: Er zögert, [Flüchtlinge](/factions/fluechtlinge.md) aufzunehmen, und verlangt als Entschädigung zwei Säcke Gold. Im Gegenzug ist er bereit, den Flüchtlingen Arbeit zu geben und ein leerstehendes Gebäude für ein Etablissement zur Verfügung zu stellen. Er wirkt selbstsicher und geschäftstüchtig.
 
 # Belege
 
-1. Session 2025-06-25 @ 00:07:00 – https://www.youtube.com/watch?v=tpkO9uGw6-I
-2. Session 2026-08-20 @ 00:11:18 – https://www.youtube.com/watch?v=2EkWrNUfQi0
+1. Session 2025-06-25, 00:07:00: https://www.youtube.com/watch?v=tpkO9uGw6-I
+2. Session 2026-08-20, 00:11:18: https://www.youtube.com/watch?v=2EkWrNUfQi0
+
+# Offene Konflikte
+
+- Beleg [1] bezeichnet Bürgermeister Spitzzahn als Bürgermeister von Breska; Beleg [2] bezeichnet ihn als Bürgermeister von Ringtal. Die Quellen enthalten keinen Hinweis darauf, wie diese unterschiedliche Ortszuordnung zusammenhängt (etwa durch einen Amtswechsel oder eine Umbenennung der Stadt).

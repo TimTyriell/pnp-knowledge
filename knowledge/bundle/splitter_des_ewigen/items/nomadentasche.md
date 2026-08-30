@@ -10,7 +10,7 @@ id: ITEM_NOMADENTASCHE
 subtype: Werkzeug
 ---
 
-Eine Tasche, die [Valeria](/characters/valeria.md) besitzt und in der sie einmal pro Session einen Gegenstand finden kann. Sie nutzt sie, um eine Hammelkeule als Köder für die [Goblins](/factions/goblins.md) zu verwenden.
+Eine Tasche, die [Valeria](/characters/valeria.md) besitzt und in der sie einmal pro Session einen Gegenstand finden kann. Sie nutzt sie, um eine Hammelkeule als Köder für die [Goblins](/npcs/pilz_goblins.md) zu verwenden.
 
 # Belege
 

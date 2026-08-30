@@ -9,7 +9,7 @@ timestamp: '2026-08-06T00:00:00Z'
 id: NPC_KALEC
 ---
 
-Kalec ist ein Zwerg, der in der [Taverne](/locations/taverne.md) anwesend ist. Er zeigt sich beeindruckt von Brumas Rede und verspricht, der Gruppe zur Seite zu stehen, falls es zum Kampf kommt.
+Kalec ist ein Zwerg, der in der Taverne anwesend ist. Er zeigt sich beeindruckt von Brumas Rede und verspricht, der Gruppe zur Seite zu stehen, falls es zum Kampf kommt.
 
 # Belege
 

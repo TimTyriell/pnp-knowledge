@@ -10,7 +10,7 @@ id: LOC_ALTE_FESTE
 subtype: Festung
 ---
 
-Die alte Feste ist eine verfallene Burg, die die Gruppe früher besucht hat. Der [Gildenmeister](/npcs/nox.md) schlägt sie als möglichen Siedlungsort vor.
+Die alte Feste ist eine verfallene Burg, die die Gruppe früher besucht hat. [Der Gildenmeister](/npcs/nox.md) schlägt sie als möglichen Siedlungsort vor.
 
 # Belege
 

@@ -10,7 +10,7 @@ id: EVENT_KAMPF_GEGEN_DORMAK
 subtype: Kampf
 ---
 
-[Dormak](/npcs/dormak.md) greift die Gruppe an, um [Vasul](/deities/vharzul.md) daran zu hindern, seine Göttlichkeit zurückzuerlangen. [Dodo](/characters/dodo.md) tötet Dormak mit einem verstärkten Streitkolben. Der Kampf endet mit Dormaks Tod und Vasuls vollständiger Machtübernahme.
+[Dormak](/npcs/dormak.md) greift die Gruppe an, um [Vasul](/deities/vharzul.md) daran zu hindern, seine Göttlichkeit zurückzuerlangen. [Dodo](/characters/dodo.md) tötet Dormak mit einem verstärkten [Streitkolben](/items/streitkolben_von_dodo.md). Der Kampf endet mit Dormaks Tod und Vasuls vollständiger Machtübernahme.
 
 # Belege
 

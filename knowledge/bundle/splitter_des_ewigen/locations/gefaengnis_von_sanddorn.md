@@ -10,7 +10,7 @@ id: LOC_GEFAENGNIS_VON_SANDDORN
 subtype: Gebäude
 ---
 
-Das Gefängnis von [Sanddorn](/locations/sanddorn.md) befindet sich auf der Insel, wo [Gulrak](/npcs/gulrak.md) festgehalten wird. Es wird von den Wachen Thoran und Lars bewacht, die als sadistisch beschrieben werden.
+Das Gefängnis von Sanddorn befindet sich auf der Insel, wo [Gulrak](/npcs/gulrak.md) festgehalten wird. Es wird von den Wachen Thoran und Lars bewacht, die als sadistisch beschrieben werden.
 
 # Belege
 

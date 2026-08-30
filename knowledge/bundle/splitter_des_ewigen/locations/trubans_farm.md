@@ -10,7 +10,7 @@ id: LOC_TRUBANS_FARM
 subtype: Siedlung
 ---
 
-Kleine Farm zwischen den Bergen, die von [Truban](/npcs/truban.md) und [Gina](/npcs/gina.md) bewirtschaftet wird. Schauplatz des Kampfes gegen die Gnolle und die Schattenhorde.
+Kleine Farm zwischen den Bergen, die von [Truban](/npcs/truban.md) und [Gina](/npcs/gina.md) bewirtschaftet wird. Schauplatz des Kampfes gegen die [Gnolle](/factions/gnolle.md) und die Schattenhorde.
 
 # Belege
 

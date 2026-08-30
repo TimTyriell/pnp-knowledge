@@ -10,7 +10,7 @@ id: EVENT_DAS_PORTAL_ZUM_TEMPEL
 subtype: Reise
 ---
 
-Die Gruppe aktiviert das Portal mit dem Geheimwort und wird zum Tempel teleportiert.
+Die Gruppe aktiviert das [Portal](/locations/portal.md) mit dem Geheimwort und wird zum Tempel teleportiert.
 
 # Belege
 

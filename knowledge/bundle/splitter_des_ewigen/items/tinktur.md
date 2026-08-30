@@ -10,7 +10,7 @@ id: ITEM_TINKTUR
 subtype: Trank
 ---
 
-Eine Tinktur, die der [Gnoll](/npcs/gnoll.md) aus Kräutern und anderen Zutaten herstellt. Sie wird auf [Rotunas](/characters/rotunas.md)' Wunde aufgetragen und heilt die Vergiftung.
+Eine Tinktur, die der Gnoll aus Kräutern und anderen Zutaten herstellt. Sie wird auf [Rotunas](/characters/rotunas.md)' Wunde aufgetragen und heilt die Vergiftung.
 
 # Belege
 

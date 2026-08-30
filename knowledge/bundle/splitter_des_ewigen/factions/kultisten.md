@@ -10,11 +10,11 @@ id: FACTION_KULTISTEN
 subtype: Kult
 ---
 
-Die Kultisten sind Anhänger von [Varsul](/deities/vharzul.md), die im Umfeld der Kapelle aktiv waren. Ihr Ziel war es, die Kapelle umzuwidmen. Bei ihrem Vorgehen trugen sie Roben und Masken und führten zeremonielle Dolche mit sich. Sie wurden von der Gruppe besiegt; einer von ihnen wurde gefangen genommen und später verbrannt.
+Die Kultisten sind Anhänger von [Varsul](/deities/vharzul.md), die im Umfeld der [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) aktiv waren. Ihr Ziel war es, die Kapelle umzuwidmen. Bei ihrem Vorgehen trugen sie Roben und Masken und führten zeremonielle Dolche mit sich. Sie wurden von der Gruppe besiegt; einer von ihnen wurde gefangen genommen und später verbrannt.
 
 ## Auftreten und Absichten
 
-Die Kultisten traten als organisierte Gruppe auf, die erkennbar zu Varsul gehörte. Ihr Vorhaben, die Kapelle umzuwidmen, deutet auf einen religiösen oder rituellen Hintergrund hin. Über ihre genaue Anzahl oder ihre Führungsstruktur ist nichts bekannt.
+Die Kultisten traten als organisierte Gruppe auf, die erkennbar zu [Varsul](/deities/vharzul.md) gehörte. Ihr Vorhaben, die Kapelle umzuwidmen, deutet auf einen religiösen oder rituellen Hintergrund hin. Über ihre genaue Anzahl oder ihre Führungsstruktur ist nichts bekannt.
 
 ## Konfrontation mit der Gruppe
 

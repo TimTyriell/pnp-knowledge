@@ -16,7 +16,7 @@ Die **Gilde der Schilde** ist eine kleine, aber lukrative Gilde in [Tiefwasser](
 
 ## Aufträge
 
-Die Gilde vergibt Aufträge gegen Orks und weitere Gefahren in und um Tiefwasser. Ein konkreter Auftrag, den sie ausschrieb, betraf ein Piratenlager: Die Gruppe wurde von [Lara](/npcs/lara.md) eingeladen, diesen Auftrag anzunehmen und das Lager anzugreifen.
+[Die Gilde](/factions/gilde_von_ehrenfels.md) vergibt Aufträge gegen Orks und weitere Gefahren in und um Tiefwasser. Ein konkreter Auftrag, den sie ausschrieb, betraf ein Piratenlager: Die Gruppe wurde von [Lara](/npcs/lara.md) eingeladen, diesen Auftrag anzunehmen und das Lager anzugreifen.
 
 ## Beziehungen
 

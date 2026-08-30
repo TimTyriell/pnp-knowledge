@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Organisation der Kalos
-description: Kalos ist eine Schattengestalt, die sich als Anführer einer Organisation
-  ausgibt. Er bietet der Gruppe Gold und Land an, wenn sie sich ihm…
+description: Kalos ist eine Schattengestalt, die sich als guter Freund von Trilo vorstellt.
+  Er versucht, die Gruppe für seine Organisation zu rekrutiere…
 tags:
 - npcs
 timestamp: '2026-05-27T00:00:00Z'
@@ -11,7 +11,7 @@ aliases:
 - Kalos
 ---
 
-Kalos ist eine Schattengestalt, die sich als Anführer einer Organisation ausgibt. Er bietet der Gruppe Gold und Land an, wenn sie sich ihm anschließen. Er ist eine Illusion, die von [Trillo](/npcs/trillo.md) kontrolliert wird. Er wird von [Merlin](/npcs/merlin.md) zerstört.
+Kalos ist eine Schattengestalt, die sich als guter Freund von [Trilo](/npcs/trillo.md) vorstellt. Er versucht, die Gruppe für seine Organisation zu rekrutieren, mit dem Ziel, [Villau](/locations/villau.md) zu stürzen. Er bietet Gold und Land an und droht, diejenigen zu opfern, die nicht beitreten. Er erweist sich als Illusion, die von [Merlin](/npcs/merlin.md) zerstört wird.
 
 # Belege
 

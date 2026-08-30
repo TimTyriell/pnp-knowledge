@@ -23,7 +23,10 @@ from pathlib import Path
 import pytest
 import yaml
 
+import re
+
 from pnp_okf.models import TYPE_DIR
+from pnp_okf.okf import slugify
 from pnp_okf.resolve import (
     RULES_FILENAME,
     _load_alias_blocks,
@@ -42,10 +45,12 @@ BUNDLE = KNOWLEDGE / "bundle" / "splitter_des_ewigen"
 pytestmark = pytest.mark.skipif(not REGISTRY.exists(), reason="no bundle checked out")
 
 # Dead rules found when this test was written (services/kb/tests, branch
-# test/okf-bundle-quality). This is a ratchet, not a target: it may only go
-# down as dead rules are repaired by re-running the pipeline or editing
-# entity_rules.yaml, and must never be raised to make a new regression pass.
-DEAD_RULES_BASELINE = 37
+# test/okf-bundle-quality). Was 37; the 2026-08-29 bundle-quality audit's
+# merges/important:-pin fixes plus a real `pnp run` brought it to 15. This
+# is a ratchet, not a target: it may only go down as dead rules are
+# repaired by re-running the pipeline or editing entity_rules.yaml, and
+# must never be raised to make a new regression pass.
+DEAD_RULES_BASELINE = 15
 
 
 def _bundle_concepts() -> set[str]:
@@ -211,4 +216,64 @@ def test_dead_rule_count_has_not_grown():
         f"{dead} dead rules, baseline is {DEAD_RULES_BASELINE} — a rule newly "
         f"lost its target. Investigate before raising the baseline; the fix "
         f"is usually a re-run or an entity_rules.yaml edit, not a bigger number."
+    )
+
+
+# --- article variants slip past ignore:/merge: ---------------------------
+#
+# 2026-08-29 bundle-quality audit's Question 2/3 finding: entity_rules.yaml
+# targets exact strings, so a German article added or dropped produces a
+# second, un-ruled concept living right next to the one a rule already
+# handles — "npcs/kinder" lives on beside the ignored "npcs/die_kinder",
+# "factions/fluechtlinge" beside the merged "die flüchtlinge". This is the
+# structural version of that bug: it doesn't fix today's instances (those are
+# named individually in Teil 2 of the audit and in test_audit_2026_08_29.py),
+# it stops the *next* one from slipping past unnoticed.
+
+_LEADING_ARTICLE_RE = re.compile(r"^(der|die|das|den|dem|des)_(.+)$")
+_GERMAN_ARTICLES = ("der", "die", "das")
+
+# Was 12 before entity_rules.yaml Teil 2 (A/F); after a real `pnp run`
+# re-extraction surfaced 3 *new* instances of the exact same pattern for
+# concepts already ignored bare (der_nebel/die_hoehle/die_falle beside
+# nebel/hoehle/falle) -- folded in too, landing at 5. The remaining 5 are
+# pre-existing and outside this audit's original 22-duplicate list. Ratchet:
+# may only go down.
+ARTICLE_VARIANT_BASELINE = 5
+
+
+def _article_variants(slug: str) -> set[str]:
+    """The other German-article spelling(s) of a concept slug: the article
+    stripped if the slug has a leading one, or each article prefixed if it
+    doesn't — the exact shape of the kinder/die_kinder duplication."""
+
+    m = _LEADING_ARTICLE_RE.match(slug)
+    if m:
+        return {m.group(2)}
+    return {f"{a}_{slug}" for a in _GERMAN_ARTICLES}
+
+
+def test_article_variant_does_not_slip_past_a_rule():
+    concepts = _bundle_concepts()
+    rules = yaml.safe_load(RULES.read_text(encoding="utf-8")) or {} if RULES.exists() else {}
+    merge = rules.get("merge") or {}
+    ignore = rules.get("ignore") or []
+
+    bad = []
+    for name, target_cid in merge.items():
+        etype_dir = target_cid.split("/", 1)[0]
+        for variant in _article_variants(slugify(name)):
+            variant_cid = f"{etype_dir}/{variant}"
+            if variant_cid in concepts and variant_cid != target_cid:
+                bad.append(f"merge {name!r} -> {target_cid}, but {variant_cid} also lives in the bundle")
+    for cid in ignore:
+        etype_dir, slug = cid.split("/", 1)
+        for variant in _article_variants(slug):
+            variant_cid = f"{etype_dir}/{variant}"
+            if variant_cid in concepts and variant_cid != cid:
+                bad.append(f"ignore {cid}, but {variant_cid} also lives in the bundle")
+
+    assert len(bad) <= ARTICLE_VARIANT_BASELINE, (
+        f"{len(bad)} article-variant duplicate(s) slipped past ignore:/merge: "
+        f"(baseline {ARTICLE_VARIANT_BASELINE}): {sorted(bad)}"
     )

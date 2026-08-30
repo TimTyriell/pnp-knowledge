@@ -1,24 +1,24 @@
 ---
 type: Character
 title: Carlos
-description: Carlos ist ein Katari, der sich durch hohe Agilität auszeichnet. Seine
-  Neugier treibt ihn dazu, die Kreaturen seiner Umgebung zu erforschen…
+description: Carlos ist ein Katari, ein katzenartiges Wesen. Er wuchs im Sumpf auf
+  und hat eine enge Verbindung zur Natur. Seine Stärken liegen in Agili…
 tags:
 - characters
 timestamp: '2026-05-27T00:00:00Z'
 id: CHAR_CARLOS
 ---
 
-Carlos ist ein Katari, der sich durch hohe Agilität auszeichnet. Seine Neugier treibt ihn dazu, die Kreaturen seiner Umgebung zu erforschen. Dabei helfen ihm eine ausgeprägte Verbindung zur Natur und besondere Fähigkeiten, die er sowohl beim Spurenlesen als auch im Kampf einsetzt.
+Carlos ist ein Katari, ein katzenartiges Wesen. Er wuchs im [Sumpf](/locations/sumpf_vor_dem_goblin_dorf.md) auf und hat eine enge Verbindung zur Natur. Seine Stärken liegen in Agilität und Naturmagie. Carlos handelt vorsichtig, beobachtet genau und kennt sich mit Kreaturen aus. Im Kampf gegen [Kalos](/npcs/organisation_der_kalos.md) erkennt er, dass dieser nur eine Illusion ist. Carlos ist bereit, für die Wissenschaft zu forschen.
 
-## Persönlichkeit und Forschungsdrang
+## Herkunft und Naturverbundenheit
 
-Carlos ist neugierig und möchte die Kreaturen erforschen, denen er begegnet. Sein Interesse gilt offenbar dem Verständnis dieser Wesen, und er sucht aktiv nach Spuren und Hinweisen, die ihm dabei helfen. Seine Verbindung zur Natur zeigt sich darin, dass er natürliche Materialien wie Käferpanzer als Schutz nutzt – ein Zeichen für ein enges Verhältnis zur Umwelt und ihren Lebewesen.
+Carlos stammt aus dem Sumpf. Dort hat er sich ein Wissen über Kreaturen angeeignet und seine enge Beziehung zur Natur entwickelt. Diese zeigt sich in seiner Naturmagie, mit der er kämpft und sich verteidigt. Sein vorsichtiges Auftreten und seine genaue Beobachtungsgabe machen ihn zu einem aufmerksamen Charakter.
 
-## Fähigkeiten und Kampfweise
+## Fähigkeiten und Kampf gegen Kalos
 
-Durch seine hohe Agilität bewegt sich Carlos wendig und schnell. Mit der Fähigkeit *Gifted Tracker* kann er Spuren lesen und so Hinweise in der Umgebung entdecken. Im Kampf setzt er *Wishes and Tangles* ein, um Gegner zu fesseln und ihnen die Bewegungsfreiheit zu nehmen. Diese Kombination aus Naturverbundenheit, Spurensuche und Kampftechnik macht ihn zu einem vielseitigen Entdecker, der sowohl bei der Erforschung von Kreaturen als auch im Gefecht flexibel agieren kann.
+Im Kampf setzt Carlos auf Agilität und Naturmagie. Zu seinen Fähigkeiten gehören Dornenhaut und [Käferpanzer](/items/kaeferpanzer.md). Gegen [Kalos](/npcs/organisation_der_kalos.md) versucht er, den Gegner mit Ranken zu fesseln. Während des Gefechts erkennt Carlos, dass Kalos eine Illusion ist. Diese Erkenntnis verdankt er seiner genauen Beobachtung, die ihn auch in angespannter Lage nicht verlässt.
 
 # Belege
 
-[P-51] Session 2026-05-27 @ 00:26:27 – https://www.youtube.com/watch?v=IYYmgpqsp7E
+[P-51] Session 2026-05-27, 00:26:27, https://www.youtube.com/watch?v=IYYmgpqsp7E

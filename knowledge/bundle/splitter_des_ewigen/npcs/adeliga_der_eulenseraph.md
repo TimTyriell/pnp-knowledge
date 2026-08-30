@@ -11,7 +11,7 @@ aliases:
 - Adelia
 ---
 
-Adeliga ist ein Eulen-Seraph und Paladin des neuen Gottes [Joran der Münzenzähler](/deities/joran_der_muenzenzaehler.md). Sie ist eine etwa zwei Meter große, geflügelte Gestalt, die zum Leben erwachte und als Seraph der neuen Götter pilgert. Im Ringtal begegnete sie der Gruppe und bot ihr den Segen Jorans an. Sie wird als weise und mystisch beschrieben; ihre Augen leuchten golden, wenn sie von ihrem Gott spricht. In der Kampagnenchronik taucht derselbe Name noch einmal für eine Menschenfrau in Willauch auf; mit dieser hat der Eulen-Seraph jedoch nichts gemein.
+Adeliga ist ein Eulen-Seraph und Paladin des neuen Gottes [Joran der Münzenzähler](/deities/joran_der_muenzenzaehler.md). Sie ist eine etwa zwei Meter große, geflügelte Gestalt, die zum Leben erwachte und als Seraph der neuen Götter pilgert. Im [Ringtal](/locations/ringtal.md) begegnete sie der Gruppe und bot ihr den Segen Jorans an. Sie wird als weise und mystisch beschrieben; ihre Augen leuchten golden, wenn sie von ihrem Gott spricht. In der Kampagnenchronik taucht derselbe Name noch einmal für eine Menschenfrau in [Willauch](/locations/willauch.md) auf; mit dieser hat der Eulen-Seraph jedoch nichts gemein.
 
 ## Erscheinung und Wesen
 
@@ -25,7 +25,7 @@ Beim ersten Zusammentreffen betet Adeliga vor einer Statue Jorans. Sie bietet de
 
 ## Abgrenzung zur Namensvetterin
 
-Der Name Adeliga begegnet in der Kampagne an zwei Stellen: Neben dem Eulen-Seraph gibt es eine menschliche Geschäftsfrau gleichen Namens, die in der Stadt Willauch das Haus des Löwen führt. Sie wird als elegant und kühl beschrieben und hat keinerlei übernatürliche Merkmale. Die beiden Frauen sind nicht identisch und stehen in keinem Zusammenhang.
+Der Name Adeliga begegnet in der Kampagne an zwei Stellen: Neben dem Eulen-Seraph gibt es eine menschliche Geschäftsfrau gleichen Namens, die in der Stadt Willauch das [Haus des Löwen](/locations/haus_des_loewen.md) führt. Sie wird als elegant und kühl beschrieben und hat keinerlei übernatürliche Merkmale. Die beiden Frauen sind nicht identisch und stehen in keinem Zusammenhang.
 
 # Belege
 

@@ -116,7 +116,6 @@ merge:
   ehrenfels-gilde: factions/gilde_von_ehrenfels
   gilde ehrenfels: factions/gilde_von_ehrenfels
   berggilde: factions/gilde_von_ehrenfels
-  die flüchtlinge: factions/fluechtlinge_aus_breska
   goblinhorde: factions/goblins
   goblins der minen: factions/goblins
   die hack: npcs/lenra
@@ -130,12 +129,24 @@ merge:
   amulett (stimmen): items/amulett_des_heiligen_duran
   die geister im amulett: items/amulett_des_heiligen_duran
   cepros’ heiliger streitkolben: items/streitkolben_von_dodo
+  # 2026-08-30 spelling sweep: "Cepros" bare (origin references outside the
+  # weapon phrase above) is the same mishearing of "Zebros" -- GM ruling
+  # 2026-08-29 overturns the prior Kanon_Entscheidungen.md entry that treated
+  # it as a separate origin. See sources/Kanon_Entscheidungen.md.
+  cepros: factions/koenigreich_zebros
+  # items/zebras_zorn duplicates items/streitkolben_von_dodo ("Zebros Zorn")
+  # under a one-letter-off title that dodged validate.py's exact-match
+  # duplicate_titles check. Same weapon, fold it in.
+  zebras zorn: items/streitkolben_von_dodo
   der phönixfeder: items/die_phoenixfeder
   stab (lindos stab): items/lindo_lauts_stab
   stab: items/lindo_lauts_stab
   schattenfinger (kenku-kralle): items/schattenfinger
   schattenfinger-klaue: items/schattenfinger
   der kristall: items/gruener_kristall
+  # 2026-08-29 audit: items/kristall.md (bare, no article) duplicates this —
+  # its own body links "[Der Kristall](/items/gruener_kristall.md)".
+  kristall: items/gruener_kristall
   göttliche handschellen: items/magische_handschellen
   schlüssel: items/magischer_schluessel
   der stab (schlüssel): items/magischer_schluessel
@@ -153,6 +164,12 @@ merge:
   # "kapelle_in_ehrenfels" or an id that opens with the town.
   kapelle in ehrenfels: locations/kapelle_von_ehrenfels
   taverne in ehrenfels: locations/taverne_von_ehrenfels
+  # 2026-08-30 review fix: the ruling above was stated twice but never
+  # actually applied to these two concepts — the town got its rename
+  # (willauch: locations/willauch above) but the arena and its tournament
+  # kept the old events/turnier_von_willau, locations/arena_von_willau ids.
+  arena von willau: locations/arena_von_willauch
+  turnier von willau: events/turnier_von_willauch
   # One city described twice; the fortress inside it keeps its own node.
   boragdil (ruinenstadt und festung): locations/boragdil
   # "Villauch, eine große Stadt im Südwesten" is Willauch under a misheard name
@@ -250,6 +267,12 @@ merge:
   lindo lauts ring: items/ring_der_teleportation
   teleportationsring: items/ring_der_teleportation
   lindos ring: items/ring_der_teleportation
+  # GM-Klarstellung 2026-08-29: "der Ring der Teleportation ist der Ring von
+  # Lindo Laut" — items/ring_von_lindo_laut.md is the same object under its
+  # own stub title, not a second ring. The ring Dodo destroyed (Abisalis,
+  # lila Magie) is a third, unrelated item covered by the "Ringe"
+  # Sammeleintrag per Kanon_Entscheidungen.md, not by this concept.
+  ring von lindo laut: items/ring_der_teleportation
   tyrex: deities/thyrex
   t-rex: deities/thyrex
   tyrex (t-rex): deities/thyrex
@@ -335,6 +358,11 @@ merge:
   untote armee: factions/belorus_untotenarmee
   untotenarmee von zebros: factions/belorus_untotenarmee
   untote horde: factions/belorus_untotenarmee
+  # 2026-08-30 spelling sweep: a second, still-live concept for the same
+  # army under the misread name "Untote Horde von Zebras" (see
+  # sources/Kanon_Entscheidungen.md, ### Belorus) escaped the "untote horde"
+  # key above because its extracted name carried the "von Zebras" suffix.
+  untote horde von zebras: factions/belorus_untotenarmee
   untote: factions/belorus_untotenarmee
 
   # GM ruling: the Goblin gods are gods, not an organisation.
@@ -453,7 +481,107 @@ merge:
   # the Titan; the being that serves him is real but was never named. Both were
   # transcribed "Holodarn", so only the session tells them apart — see split:.
   huludan: deities/huludan
+
+  # --- 2026-08-29 bundle-quality audit --------------------------------------
+  # A session-zero character-creation stub, never folded into the PC it
+  # actually is: same two skulls "Jonathan" and "Samuel", same
+  # Tiefling-Gelehrter/Hexenmeister-aus-dem-Infernis description. No rule
+  # existed for this one at all (unlike cookie/dodo/lindo_laut/esterossa
+  # below, whose *class-label* variant was already merged but not their own
+  # session-zero title).
+  saris bendal: characters/saris
+  # These four PCs' own session-zero stub titles were never merged, only the
+  # VTT default class-label each picked up once (see "celin's frosch-ranger"
+  # etc. above) — same fix as saris bendal, for the remaining four.
+  celin (cookie): characters/cookie
+  celin: characters/cookie
+  marco (dodo): characters/dodo
+  marco: characters/dodo
+  tim (lindo laut): characters/lindo_laut
+  tim: characters/lindo_laut
+  esterossa (mikasa): characters/esterossa
+  mikasa: characters/esterossa
+  # npcs/priesterin_auranie.md links its own subject to npcs/auranil.md
+  # ("[Auranie](/npcs/auranil.md) ist eine Priesterin...") — the pipeline's
+  # own cross-linker already resolved this name to Auranil, the concept
+  # duplicate just never got pruned. "auranie" bare is already merged above;
+  # this is the literal stub title.
+  priesterin auranie: npcs/auranil
+  # npcs/graf_voras.md links its own subject to npcs/voras.md ("[Voras der
+  # Heilige](/npcs/voras.md)"). "der graf voras" is already merged above;
+  # this is the bare title the stub file actually carries.
+  graf voras: npcs/voras
+  # npcs/captain_lobrecht.md links "Captain [Lobrecht](/npcs/lobrecht.md)" —
+  # the English rank is the one spelling the existing
+  # käpt'n/kahnführer/kapitän entries above don't cover.
+  captain lobrecht: npcs/lobrecht
+  # items/das_amulett_von_lindo_laut.md links its own subject to
+  # items/amulett_des_heiligen_duran.md — the leading article "Das" breaks
+  # the plain-string merge match against any existing key.
+  das amulett von lindo laut: items/amulett_des_heiligen_duran
+  # items/der_streitkolben.md duplicates items/streitkolben_von_dodo.md
+  # near-verbatim ("Der Streitkolben von Dodo ist eine Waffe...") — the
+  # bare "streitkolben" key above doesn't cover the article-prefixed form.
+  der streitkolben: items/streitkolben_von_dodo
+  # items/stab_von_lindo_laut.md and items/lindo_lauts_stab.md both describe
+  # Lunara using the staff to open a portal to Abisalis against Vasul's
+  # fragments — same object, near-verbatim body.
+  stab von lindo laut: items/lindo_lauts_stab
+  # factions/die_untoten.md ("Armee von Untoten... haben Breska zerstört und
+  # sich zum Berg Zebros zurückgezogen") is the same force, same route, as
+  # factions/belorus_untotenarmee.md — only the bare article-form title was
+  # never added (only "untote"/"untoten-armee" spellings are, above).
+  die untoten: factions/belorus_untotenarmee
+  # deities/die_alten_goetter.md and deities/alte_goetter.md both describe
+  # the four old gods defeated by the new gods, near-identically — the
+  # textbook German-article-variant duplication this audit's Question 2
+  # found throughout the bundle. "die alten"/"alte götter (old gods)" above
+  # don't cover the bare "die alten götter" the duplicate stub actually uses.
+  die alten götter: deities/alte_goetter
+  # Same zebros-style type-split precedent as the merge above (a concept
+  # existing as both a Deity and separately as an NPC, or Faction, with
+  # verbatim duplicate lore): deities/akastrale and npcs/akastrale both say
+  # "dunkler Hunger... eine der vier alten Götter"; deities/suedrawell and
+  # npcs/suedrawell both say "Fleischweberin"; deities/neue_goetter and
+  # factions/neue_goetter both describe the same pantheon (mirrors the
+  # already-documented "goblin gods are gods, not an organisation" ruling
+  # for goblingoetter above). A merge always adopts its target directory's
+  # type, so pointing the bare name at the Deity concept fixes the type too.
+  akastrale: deities/akastrale
+  südrawell: deities/suedrawell
+  neue götter: deities/neue_goetter
+  # deities/tavok.md duplicates deities/tarvok_der_erdrichter.md — only the
+  # parenthetical "tavok (erdrichter)" form above is covered, not the bare
+  # stub title.
+  tavok: deities/tarvok_der_erdrichter
+  # deities/kol_merefs.md (plural/possessive, the form actually used as this
+  # stub's title) duplicates deities/kollmereth.md — only the singular
+  # "kol meref" above is covered.
+  kol merefs: deities/kollmereth
+  # npcs/jorah_vanur.md and npcs/joar_vanur.md are the same recurring
+  # Sanddorn-Islands noble/merchant "Vanur", a Whisper spelling drift
+  # (Jorah/Joar/Joao) — the registry already carries Joao/Joar as aliases on
+  # the target, this is the one un-merged spelling. Not to be confused with
+  # deities/jorah (a god): see never_merge: below, this merchant was
+  # linking to the god's page by mistake.
+  jorah vanur: npcs/joar_vanur
+  # GM ruling 2026-08-30: the bare noun "Flüchtlinge" is NOT the Breska group.
+  # It used to fold here on the assumption that factions/fluechtlinge.md was a
+  # duplicate stub of the same refugees Roland leads — the GM has since ruled
+  # the Ringtal refugees a different group, and the one bare-noun mention
+  # (2026-01-13) describes its own population: "Die Flüchtlinge aus
+  # verschiedenen Orten haben im Lager Zuflucht gefunden". So the bare noun
+  # resolves to its own concept again and only the qualified forms fold —
+  # "flüchtlinge (gruppe um roland)" above, plus "flüchtlinge aus breska".
+  # never_merge: below stops the fuzzy token-subset pass from re-folding them.
+
 never_merge:
+# GM ruling 2026-08-30: the mixed-origin refugees are not Roland's Breska
+# group. Their names are near-identical and "Flüchtlinge" is a token-subset
+# of "Flüchtlinge aus Breska", so without this the fuzzy pass folds the
+# 1-mention concept straight back into the 2-mention one.
+- - factions/fluechtlinge
+  - factions/fluechtlinge_aus_breska
 - - characters/miko
   - characters/myko
 - - npcs/lobrecht
@@ -495,7 +623,43 @@ never_merge:
   - characters/kipp      # der kleine Frosch, 13 Jahre alt
 - - npcs/miaomani        # Catfolk, Ausguck auf dem Gildenschiff
   - npcs/miyamani        # Halbling in der Zirkusvorführung
+# npcs/joar_vanur (mortal Sanddorn merchant, see merge: above) linked its
+# own subject's first name to deities/jorah (an unrelated god) — the fuzzy
+# pass would refold them on the shared bare name "Jorah".
+- - npcs/joar_vanur
+  - deities/jorah
 ignore:
+# 2026-08-29 bundle-quality audit: bare German common nouns used as a concept
+# title, the same failure mode as the generic-noun entries already ignored
+# below (bruecke/turm/etc.) — each name recurs across a dozen-plus sessions
+# for entirely different, unrelated instances, so a single node under the
+# bare noun is neither a specific referent nor a useful link target.
+# items/kristall is the one exception: it links its own subject to
+# items/gruener_kristall.md ("[Der Kristall](/items/gruener_kristall.md)")
+# — a merge:, not an ignore:, added above ("kristall: items/gruener_kristall",
+# next to the existing article-form "der kristall" key).
+- domains/daggerheart  # the rule system itself, not a place in the campaign world
+- npcs/kinder  # bare form of the already-ignored "npcs/die_kinder" below — the article-variant duplicate this audit's Question 2 found
+- npcs/gefangene_seelen
+- locations/dorf
+- locations/taverne
+- locations/pass
+- locations/nebel
+- locations/hoehle
+- events/falle
+- npcs/gnoll
+# A real `pnp run` re-extracted these same three concepts under their
+# article-prefixed spelling (locations/der_nebel, locations/die_hoehle,
+# events/die_falle) — same content, near-verbatim, confirmed against the
+# bodies above (e.g. der_nebel: "Der Nebel um Nebelwacht ist eine eigene
+# Entität... mentalen Einfluss auf Soldaten... Kreaturen, die die Festung
+# angreifen", identical to what locations/nebel said). Ignoring only the
+# bare form left the article form live — the exact failure mode
+# test_article_variant_does_not_slip_past_a_rule (test_rules_applied.py)
+# now checks for going forward.
+- locations/der_nebel
+- locations/die_hoehle
+- events/die_falle
 - locations/bruecke
 - locations/turm
 # One-off scene dressing, single mention each, no lasting name in the
@@ -777,6 +941,18 @@ split:
 - name: ende
   session: '2026-03-18'
   concept_id: locations/ende_jenseits_der_orkgebiete
+# 2026-08-29 bundle-quality audit: locations/das_ende.md (session 2025-10-07)
+# is the same place — its own body links "Ende" to
+# locations/ende_jenseits_der_orkgebiete.md ("ein Ort im hohen Norden, in
+# dessen Nähe die Kristalle wachsen"). The split above only covers the later
+# 2026-03-18 mention of the bare name "Ende" (see extract cache
+# 2026-03-18_RF_HHXxsASLrbQ.json); this session's own extraction names it
+# "Das Ende" (with article — 2025-10-07_RF_qVAF_54S8Vw.json), and split:
+# matches on the mention's exact lowercased name, not a slug, so the key has
+# to carry the article too.
+- name: das ende
+  session: '2025-10-07'
+  concept_id: locations/ende_jenseits_der_orkgebiete
 # "Die Stadt" is Ehrenfels before the campaign ever says the name out loud:
 # same guild seat, same role as the party's home base, only the session
 # predates the first session that names Ehrenfels outright.
@@ -811,6 +987,10 @@ canonical_name:
   # the graph reads consistently: the town and every building in it now share
   # one spelling (arena_von_willauch next to willauch, not next to willau).
   locations/willauch: Willauch
+  # 2026-08-30 review fix (§1.6b): the two concepts the ruling above always
+  # meant to cover but the merge: entries never actually renamed.
+  locations/arena_von_willauch: Arena von Willauch
+  events/turnier_von_willauch: Turnier von Willauch
   locations/kapelle_von_ehrenfels: Kapelle von Ehrenfels
   locations/taverne_von_ehrenfels: Taverne von Ehrenfels
   locations/banditenlager_der_silberkerne: Banditenlager der Silberkerne
@@ -853,6 +1033,66 @@ canonical_name:
   npcs/hal_harl: Harl
   items/lindo_lauts_stab: Schlüssel von Abisalis
   deities/korn: Korn, der Blutgott
+  # spelling: only rewrites body prose, never a frontmatter title — this
+  # event's own title still said "Zebras Zorn" after the spelling fix below
+  # landed everywhere else.
+  events/bergung_des_streitkolbens_zebras_zorn: Bergung des Streitkolbens Zebros Zorn
+
+# spelling: mishearing -> canon text, applied to synthesized PROSE (not just
+# the title — see canonical_name: above for that). Without this, a title pin
+# never reaches the body: the sentence around a link keeps saying "Willoch"
+# forever, on every re-run, even after the concept's own title says
+# "Willauch". Applied by links.py::apply_spellings via normalize_body, so it
+# reaches session bodies, entity bodies, and `pnp validate --fix` alike.
+#
+# Keys are case-sensitive, word-boundary matched, and never touch a link
+# target or the `# Belege` citation list. Prefer a bare token only once every
+# occurrence in the bundle is confirmed to be the misspelling (see
+# docs/audits/2026-08-30-spelling-sweep.md, Bucket A); a variant that
+# collides with a real word or another meaning needs a phrase key instead
+# (Bucket B) so only the actual mishearing turns, not every occurrence of the
+# common word.
+spelling:
+  # --- Bucket A: bare token, every occurrence confirmed a mishearing -------
+  Willau: Willauch
+  Willoch: Willauch
+  Villauch: Willauch
+  Brechka: Breska
+  Bereska: Breska
+  Bresca: Breska
+  Breschka: Breska
+  Lanra: Landra
+  Leandra: Landra
+  Lenra: Landra
+  Tarvok: Thar'Vok
+  Tavok: Thar'Vok
+  Tarvolk: Thar'Vok
+  Adelia: Adeliga
+  Slicks: Slix
+  Born: Korn
+  Kord: Korn
+  Holodarn: Huludan
+  Zebrus Zorn: Zebros Zorn
+  # --- Bucket B, revised: bare token after all ------------------------------
+  # "Zebras" reads as the animal in isolation, so the original plan scoped
+  # this to a handful of phrases ("Festung Zebras", "Berg Zebras"). That
+  # missed just as many real forms ("aus Zebras", "General von Zebras", a
+  # quoted "Zebras Zorn" in session recaps) as it caught. A full-bundle
+  # check (2026-08-30) turned up zero legitimate zebra-the-animal mentions —
+  # the only surviving "Zebra" text is burg_des_belorus.md's own canon
+  # explanation of this exact mishearing, which the word-boundary match on
+  # "Zebras" (plural) doesn't touch anyway. Bare token confirmed safe.
+  Zebras: Zebros
+  # Same evidence for Cepros: not one occurrence in the bundle means
+  # anything else.
+  Cepros: Zebros
+  # Bare token, not phrase-scoped: a full-bundle check (2026-08-30) found
+  # all 38 word-boundary "Hack" occurrences refer to the hag, and the phrase
+  # key "die Hack" missed the ones spanning a link bracket
+  # ("die [Hack](/npcs/lenra.md)") or a sentence-initial capital ("Die
+  # Hack sucht..."). Bare token confirmed safe the same way Zebras/Cepros
+  # were above; see services/kb/tests/test_spelling_sweep.py.
+  Hack: Hag
 
 # Concepts that force the deep synthesis tier regardless of mention count —
 # the escape hatch for entities the automatic rules underrate. Characters and
@@ -861,22 +1101,32 @@ important:
 - characters/esterossa
 - characters/rotunas
 - deities/akastrale
-- deities/bodrak
+# 2026-08-29 bundle-quality audit: six of these pins named a concept_id that
+# does not (or no longer) exists in the bundle — dead on arrival, and
+# invisible because DEAD_RULES_BASELINE (test_rules_applied.py) only ratchets
+# the *count*, never names them. test_important_pins_name_existing_concepts
+# (test_audit_2026_08_29.py) is now a hard, non-ratcheted check for exactly
+# this. Corrected where the real id was findable in the registry/bundle:
+- deities/bodrak_gott_der_stille  # was "deities/bodrak" — real slug has the epithet
 - deities/coram_schildbrecher
-- deities/gruul
 - deities/heiliger_duran
 - deities/huludan
 - deities/joran_der_muenzenzaehler
-- deities/kaleandra_die_rote
-- deities/kol_meref
-- deities/neiraj
+- deities/kaleandra  # was "deities/kaleandra_die_rote" — real slug is bare
+- deities/kollmereth  # was "deities/kol_meref" — see merge: "kol meref" above
+# "deities/gruul" and "deities/sitravil" matched no concept, alias, or merge
+# key anywhere in the registry or bundle — not a rename, just gone. Dropped
+# rather than guessed at; re-add once a GM ruling identifies what they
+# should point to (see Teil 2 G in the audit report).
+# "deities/neiraj" was never a concept_id at all — it's a merge: key
+# ("neiraj: deities/nerash" above), pinned by mistake. Nerash is a Deity, so
+# it already gets the deep tier once corroborated regardless of this flag.
 - deities/ohoriaks
 - deities/schlangengott
-- deities/sitravil
 - factions/koenigreich_zebros
 - locations/boragdil
 - locations/brandau
-- locations/burg_zebros
+- locations/burg_des_belorus  # was "locations/burg_zebros" — real slug per the merge: comment above ("the mountain and its fortress stay separate real places")
 - locations/casa_del_cookie
 - locations/cornivum
 - locations/jalan
@@ -891,6 +1141,16 @@ important:
 - npcs/tyrael
 - npcs/voras
 
+# unimportant: overrides an `important: true` flag a past run baked straight
+# into entity_registry.yaml, when nothing here un-sets it (see
+# test_rules_pins.py::test_unimportant_overrides_a_registry_preserved_flag).
+unimportant:
+# 2026-08-29 bundle-quality audit: Kanon_Entscheidungen.md's own entry for
+# Akastrale says "vorerst kein umfangreicher Eintrag entstehen soll" — the
+# concept has exactly 1 mention, and the important: flag above is currently
+# forcing a full 6-section, 800-word deep-tier writeup against that ruling.
+- deities/akastrale
+
 # alias_block: Anzeigenamen, die NICHT mehr als Alias eines Konzepts
 # erscheinen sollen. Rein kosmetisch: die Zuordnung (merge/never_merge)
 # bleibt unberuehrt, die Schreibweise verschwindet nur aus Registry,
@@ -900,3 +1160,51 @@ alias_block:
   - cookie und valeria
   items/notiz_von_hal:
   - notiz
+  # 2026-08-29 bundle-quality audit: both npcs/hans_soldat_aus_breska and
+  # npcs/hans_wirt_zum_gruenen_sichelmond carry the bare alias "Hans" (they
+  # are the split: pair above, "two unrelated men") — link_targets()
+  # (synthesize.py) can only map one name to one concept, so it picked
+  # whichever won the mention-count tiebreak, and the soldier's own body
+  # ended up linking "Hans" to the innkeeper's page. Blocking it here (this
+  # filter runs before synthesis, not just cosmetically on the registry —
+  # see resolve.py's per-entity alias_block pass) leaves the qualified
+  # titles linkable and only drops the ambiguous bare name.
+  npcs/hans_wirt_zum_gruenen_sichelmond:
+  - hans
+  # 2026-08-30 review fix: the block above was only applied to one side of
+  # the split: pair -- the innkeeper's own page still linked "Hans" to the
+  # soldier (link_targets() picked whichever concept had more mentions).
+  # Block the bare name on both members so neither can claim it.
+  npcs/hans_soldat_aus_breska:
+  - hans
+  # 2026-08-30 spelling sweep: "Amulett" is a bare generic noun, registered
+  # as an alias because someone once called this artefact just "the
+  # amulet" — but link_targets() then autolinks *any* mention of the word
+  # "Amulett" to this one concept, including Dodo's own unrelated trinket
+  # (characters/dodo.md: "ein Amulett... das sich als einfacher Schmuck
+  # herausstellt"). The qualified aliases ("Amulett des Heiligen Duran" etc.)
+  # stay linkable; only the ambiguous bare noun is dropped.
+  items/amulett_des_heiligen_duran:
+  - amulett
+  # 2026-08-30 review fix (§2.1): "Ende" is the ordinary German noun, not a
+  # name -- link_targets() autolinked "am Ende" on the Kalidarn page to this
+  # location. The qualified name ("Ende (jenseits der Orkgebiete)") isn't a
+  # registered alias so it needs no block; only the two bare-noun aliases do.
+  locations/ende_jenseits_der_orkgebiete:
+  - ende
+  - das ende
+  # 2026-08-30 review fix (§2.1): "Flüchtlinge" is a bare generic noun. It is
+  # also a merge: key (identity-level fold, entity_rules.yaml above) — the
+  # visible defect is a *link*
+  # (events/verhandlung_um_die_aufnahme_der_fluechtlinge_in_ringtal.md), not
+  # a fold, so this blocks linkability only and leaves the merge intact.
+  factions/fluechtlinge_aus_breska:
+  - flüchtlinge
+  # 2026-08-30: "Die Stadt" is registered as an alias of Ehrenfels, so
+  # link_targets() autolinked the ordinary noun to Ehrenfels on 10+ pages —
+  # including locations/sanddorn, locations/seelenwacht, locations/boragdil
+  # and locations/hartwacht, where "die Stadt" means that page's OWN city.
+  # Ehrenfels has 18 mentions and is linked plenty by its real name; only the
+  # generic noun is dropped. Same precedent as amulett/ende/flüchtlinge above.
+  locations/ehrenfels:
+  - die stadt

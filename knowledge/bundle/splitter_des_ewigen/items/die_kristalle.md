@@ -10,7 +10,7 @@ id: ITEM_DIE_KRISTALLE
 subtype: Artefakt
 ---
 
-Die Kristalle in der [Höhle](/locations/hoehle.md) sind mit der Narbe verbunden und strahlen magische Energie aus. Sie beeinflussen [Esterossas](/characters/esterossa.md) Schwert und verursachen Visionen.
+Die Kristalle in der Höhle sind mit der Narbe verbunden und strahlen magische Energie aus. Sie beeinflussen [Esterossas](/characters/esterossa.md) Schwert und verursachen Visionen.
 
 # Belege
 

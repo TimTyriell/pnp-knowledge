@@ -9,7 +9,7 @@ timestamp: '2025-04-01T00:00:00Z'
 id: NPC_SCHLEICHFURZ
 ---
 
-Schleichfurz ist der Anführer der Goblin-Gruppe, die das Lager übernommen hat. Er wird als 'Goblin-Magier' beschrieben und hält eine Ansprache an seine [Goblins](/factions/goblins.md), in der er verkündet, dass sie bald weiterziehen werden. Er verschanzt sich im Hauptgebäude und kämpft mit Feuerzaubern. Er wird von [Esterossa](/characters/esterossa.md) getötet, indem er von der Kante gestoßen wird.
+Schleichfurz ist der Anführer der Goblin-Gruppe, die das Lager übernommen hat. Er wird als 'Goblin-Magier' beschrieben und hält eine Ansprache an seine [Goblins](/npcs/pilz_goblins.md), in der er verkündet, dass sie bald weiterziehen werden. Er verschanzt sich im Hauptgebäude und kämpft mit Feuerzaubern. Er wird von [Esterossa](/characters/esterossa.md) getötet, indem er von der Kante gestoßen wird.
 
 # Belege
 

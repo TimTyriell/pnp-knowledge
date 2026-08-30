@@ -9,7 +9,7 @@ timestamp: '2025-11-18T00:00:00Z'
 id: NPC_IRIS
 ---
 
-Iris ist eine Barkeeperin in der [Taverne](/locations/taverne.md). Sie wird erwähnt, hat aber keine aktive Rolle in der Session.
+Iris ist eine Barkeeperin in der Taverne. Sie wird erwähnt, hat aber keine aktive Rolle in der Session.
 
 # Belege
 

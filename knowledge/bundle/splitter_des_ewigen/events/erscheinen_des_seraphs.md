@@ -10,7 +10,7 @@ id: EVENT_ERSCHEINEN_DES_SERAPHS
 subtype: Sonstiges
 ---
 
-Ein Seraph erscheint in der [Taverne](/locations/taverne.md) und überbringt die Botschaft, dass [Vityus](/npcs/vityus.md) die Gruppe erwartet. Dies setzt die Gruppe unter Druck.
+Ein Seraph erscheint in der Taverne und überbringt die Botschaft, dass [Vityus](/npcs/vityus.md) die Gruppe erwartet. Dies setzt die Gruppe unter Druck.
 
 # Belege
 

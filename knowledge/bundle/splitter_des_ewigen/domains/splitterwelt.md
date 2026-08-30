@@ -10,79 +10,112 @@ id: DOMAIN_SPLITTERWELT
 subtype: Sonstiges
 aliases:
 - Abyssalis
+- Abyssalis (Splitterwelt)
+- Die Splitterwelt
 ---
 
-# Splitterwelt (Abyssalis)
+# Splitterwelt
 
 ## Überblick
 
-Die Splitterwelt ist eine Zwischenwelt, die durch den Krieg zwischen den alten und den neuen Göttern entstanden ist. Sie liegt zwischen den Circles Below und den Hallows Above und ist geprägt von geplagten Seelen und unzähligen Verbindungen. In ihr befindet sich ein Tor zu Abyssalis, einer vergessenen Welt, die einst eine Bastion der alten Götter war. Abyssalis selbst ist eine Demiplane, eine Schattenwelt zur Prime World, die von den neuen Göttern in ein Gefängnis für die alten Götter verwandelt wurde.
+Die Splitterwelt ist eine Zwischenwelt, die durch den [Krieg](/characters/krieg.md) zwischen den alten und den neuen Göttern entstanden ist. Sie liegt zwischen den Circles Below und den Hallows Above und ist geprägt von geplagten Seelen und unzähligen Verbindungen. In den alten Schriften wird sie als eine Welt beschrieben, die sich zwischen den Ebenen abspielt und durch den Konflikt der Götter regelrecht zerbrochen wurde – daher ihr Name. Sie ist die Quelle der Magie in der Welt: Zauberer sind nur Medien, die die Magie filtern und in die Welt bringen; in der Splitterwelt selbst ist die Magie viel stärker als in der normalen Welt.
+
+Innerhalb der Splitterwelt befindet sich ein Tor zu einer vergessenen Welt namens Abyssalis – einer alten Bastion der alten Götter, die später zu deren Gefängnis wurde. Die Splitterwelt ist damit der Zugangspunkt zu einer der gefährlichsten und zentralsten Ebenen der Kampagne.
 
 ## Rolle in der Kampagne
 
-Die Splitterwelt und insbesondere Abyssalis sind zentrale Handlungsorte der Kampagne. Die Gruppe reist mehrfach zwischen der normalen Welt und Abyssalis hin und her, zunächst um Informationen zu sammeln, später um Lunaras Bruder zu retten und die Teile von Vasul zu bekämpfen. Die Reise nach Abyssalis wird von mehreren Fraktionen als äußerst gefährlich eingeschätzt — wer dorthin geht, muss mit schweren Konsequenzen rechnen. Die Rückkehr aus dem Gefängnis der alten Götter gilt als Beweis für die Gefährlichkeit und Entschlossenheit der Gruppe.
+Die Splitterwelt und insbesondere Abyssalis entwickeln sich im Verlauf der Kampagne vom mythologischen Hintergrund zur zentralen Handlungsebene. Zunächst wird sie den Helden als alte Legende und Horrorgeschichte präsentiert – eine Welt, von der man sagt, dass die neuen Götter den Krieg nur gewinnen konnten, weil einige der alten Götter dort gefangen genommen wurden. Wer sie überlebt, kehrt der Legende nach mit sehr viel Macht zurück.
+
+Für die Gruppe wird Abyssalis aus mehreren Gründen zum Ziel: Lunara will ihren Bruder retten, und die Gruppe sucht nach einem Weg, den Teil von Vasul aus [Lindo Laut](/characters/lindo_laut.md) zu vertreiben. [Nerash](/deities/nerash.md) weist ihnen den Weg: Sie müssen nach Abyssalis reisen, zu den Szenen des Wahnsinns, zu den lila Bergen, und dort einen Zauber wirken, um den Teil von Vasul aus Lindo Laut zu vertreiben.
+
+Die Gruppe verbringt mehrere Wochen in Abyssalis, erlebt dort ein Crossover mit einer zweiten Spielgruppe (Kip, [Dante](/characters/dante.md) und [Miko](/characters/miko.md)) und verliert einen ihrer Mitstreiter. Die [Rückkehr aus Abyssalis](/events/rueckkehr_aus_abyssalis.md) wird später von den neuen Göttern als Beweis für die Gefährlichkeit der Gruppe angeführt – sie sind aus dem Gefängnis der alten Götter zurückgekehrt und haben Dinge getan, vor denen die neuen Götter nur erzittern würden.
 
 ## Wichtige Merkmale
 
 ### Die Splitterwelt
 
-Die Splitterwelt ist eine düstere, fremde Ebene, die durch ein Portal in Breska erreichbar ist. Sie beherbergt Kreaturen, die auf Lebendiges reagieren und als äußerst gefährlich gelten. Ein alter Zauber, der durch das Wasser des Waldes fließt, hält diese Kreaturen fern — doch wie lange dieser Schutz hält, ist ungewiss. In der Splitterwelt befindet sich eine alte Festung, in der umherirrende Seelen leben. Diese sind nicht gefährlich, sollten aber nicht zu viel Aufmerksamkeit erregen.
+Die Splitterwelt ist eine düstere, fremde Ebene, die durch ein [Portal](/locations/portal.md) erreichbar ist – unter anderem durch ein Portal in [Breska](/locations/breska.md). Sie ist geprägt von Nebelschwaden, die aufbrechen, wenn sich die Welt der Splitterwelt annähert. In ihr befinden sich alte Festungen, umherirrende Seelen und gefährliche Kreaturen. Die Kreaturen der Splitterwelt sind gefährlich und reagieren auf Lebendiges; sie stellen eine Bedrohung für Reisende dar. Ein alter Zauber, der durch das Wasser eines Waldes fließt, hält diese Kreaturen fern – die Bäume nehmen die Energie aus dem Boden auf und schützen so das Gebiet.
 
-Lunara kann mit ihren Runen die Grenze zur Splitterwelt öffnen. In dieser Welt sind die Untoten gefangen und können vernichtet werden. Die Splitterwelt scheint mit Vasul und der alten Magie verbunden zu sein.
+Die Magie in der Splitterwelt ist deutlich stärker als in der normalen Welt. Lunara kann die Ebene mit ihren Runen öffnen und die Welt in ein neues Licht tauchen, wenn sie ihre gesamte Energie darauf verwendet. In dieser Welt sind [Untote](/factions/belorus_untotenarmee.md) gefangen und können vernichtet werden. Die Splitterwelt scheint mit Vasul und der alten Magie verbunden zu sein.
 
 ### Abyssalis
 
-Abyssalis ist eine Demiplane, die durch ein Tor in der Splitterwelt erreichbar ist. Das Tor kann nur mit einem Schlüssel geöffnet werden, den Lindo Laut besitzt. Von außen kann man hinein, aber ohne den Schlüssel kommt man nicht wieder heraus. Mit dem Schlüssel bleibt das Tor für eine Weile in beide Richtungen offen — wie lange genau, weiß niemand.
+Abyssalis ist eine [Demiplane](/domains/demiplane.md), die durch ein Tor in der Splitterwelt erreichbar ist. [Das Tor](/locations/das_tor.md) kann mit einem [Schlüssel](/items/magischer_schluessel.md) geöffnet werden, den Lindo Laut besitzt – einem [Stab](/items/lindo_lauts_stab.md). Ohne den Stab kann man zwar hinein, aber nicht wieder hinaus; mit dem Stab bleibt das Tor für eine Weile in beide Richtungen offen. Von außen kann man hinein, aber von innen kommt man nicht mehr heraus, wenn das Tor geschlossen ist.
 
-Die Welt selbst ist düster und korrumpiert. Sie ist von einem ewigen Nebel bedeckt, es gibt keine echten Tage oder Nächte. Leuchtende Kreaturen jagen Seelen. Die Bewohner sind Dämonen und Seelen. Die Städte sind karg und trist. Es gibt Erntefelder, auf denen Seelen ankommen, und eine Festung, die von Ohoriak beansprucht wurde.
+Abyssalis war einst die Bastion der alten Götter, wurde aber von den neuen Göttern in ein Gefängnis verwandelt. Es ist eine dämonische Welt, geprägt von Ruinen, Erntefeldern und vier alten Göttern, die dort gefangen sind. Die Welt ist von einem ewigen Nebel bedeckt, es gibt keine echten Tage oder Nächte, und leuchtende Kreaturen jagen Seelen. Die Städte sind karg und trist, die Bewohner sind [Dämonen](/factions/daemonen.md) und Seelen. Es gibt eine [Festung](/locations/festung.md), die von [Ohoriaks](/deities/ohoriaks.md) beansprucht wurde, und die Stadt hat Zugang zu den Erntefeldern, wo Seelen ankommen.
 
-Abyssalis ist geprägt von Ruinen, Kristallen, seltsamen Bäumen und einem Tempel. In den Narben, einem Gebiet mit Kristallen und Statuen, verändert sich die Welt ständig — selbst Vögel fallen von der Decke. Die Welt wird von Vorgul'tar beherrscht.
-
-Die Götter, die in Abyssalis eingesperrt sind, haben ihren Verstand verloren. Die Magie wird aus der Splitterwelt gezogen. Wer sich zu lange in Abyssalis aufhält, spürt den Einfluss der Welt — selbst mit Schutzamuletten, die Vasul der Gruppe gegeben hat.
+Die Götter in Abyssalis haben ihren Verstand verloren. Vorgulta hat dort sein Grab gefunden und versucht, seinen Verstand zu behalten. Die Magie in der Splitterwelt ist stärker, und die Welt zehrt an der Seele – selbst mit dem Schutz von Vasul spürt man nach einer Woche den Einfluss der Welt. [Die Narbe](/locations/die_narbe.md) ist ein trostloser Ort mit Kristallen und magischer Energie, die an der Seele zehrt. Die Welt verändert sich ständig; Vögel fallen von der Decke, und die Landschaft ist geprägt von Kristallen, seltsamen Bäumen und einem Tempel.
 
 ## Beziehungen und Verbindungen
 
-- **Vasul**: Die Splitterwelt scheint mit Vasul und der alten Magie verbunden zu sein. Vasul gibt der Gruppe Schutzamulette für die Reise nach Abyssalis.
-- **Vorgulta/Vorgul'tar**: Einer der alten Götter, der in Abyssalis eingesperrt ist und die Welt beherrscht.
-- **Nerash**: Ein Gott, der der Gruppe den Weg nach Abyssalis weist — zu den Szenen des Wahnsinns, zu den lila Bergen, wo ein Zauber gewirkt werden kann, um den Teil von Vasul aus Lindo Laut zu vertreiben.
-- **Lindo Laut**: Besitzt den Schlüssel zum Tor nach Abyssalis. Sein Dämon (ein Teil von Vasul) stammt aus der Splitterwelt.
-- **Lunara**: Kann mit ihren Runen die Splitterwelt öffnen. Sie will nach Abyssalis reisen, um ihren Bruder zu retten.
-- **Nox**: Erstellt mit Voras ein Portal ins Abyssalis.
-- **Tyrael**: In seinen Gedanken erscheint Abyssalis als Herkunft von Valsor.
-- **Slix**: Erwähnt, dass Lindo Laut die Seele des sterbenden Mannes direkt nach Abyssalis geschickt hat.
+Die Splitterwelt und Abyssalis sind eng mit der Götterwelt der Kampagne verbunden:
+
+- **[Die alten Götter](/deities/alte_goetter.md)**: Abyssalis ist ihr Gefängnis. Sie wurden dort von den neuen Göttern verbannt und haben dort ihren Verstand verloren. Vorgulta ist einer von ihnen und beherrscht die Ebene.
+- **[Die neuen Götter](/deities/neue_goetter.md)**: Sie haben den Krieg gegen die alten Götter nur gewinnen können, weil einige der alten Götter in Abyssalis gefangen genommen wurden. Sie fürchten die Rückkehr der alten Götter und betrachten jeden, der Abyssalis überlebt hat, als Bedrohung.
+- **Vasul**: Die Splitterwelt scheint mit Vasul und der alten Magie verbunden zu sein. Vasul gibt der Gruppe Schutzamulette, um sich vor den Einflüssen von Abyssalis zu schützen.
+- **Nerash**: Sie weist der Gruppe den Weg nach Abyssalis, um den Teil von Vasul aus Lindo Laut zu vertreiben. Sie wirkt instabil und hat kaum noch Kräfte.
+- **Lindo Laut**: Er besitzt den Stab, der das Tor zu Abyssalis öffnet. In seinen Gedanken erscheint der Name Abyssalis als Herkunft von [Valsor](/deities/vharzul.md). Er hat Abyssalis als Sprache, aber nicht als Erfahrung.
+- **Lunara**: Sie will nach Abyssalis reisen, um ihren Bruder zu retten und die Teile von Vasul zu bekämpfen. Beim Berühren des Tors hört sie eine Stimme, die ihren Namen ruft.
+- **[Tyrael](/npcs/tyrael.md)**: Der Name Abyssalis erscheint in Tyraels Gedanken als Herkunft von Valsor.
+- **[Slix](/npcs/slix_vasul.md)**: Er erwähnt, dass Lindo Laut die Seele des sterbenden Mannes direkt nach Abyssalis geschickt hat.
+- **Breska**: Von dort aus ist die Splitterwelt durch ein Portal erreichbar.
 
 ## Chronologie
 
-- **Session 2025-09-30**: Die Gruppe erfährt erstmals von der Splitterwelt als Zwischenwelt zwischen den Circles Below und den Hallows Above, entstanden durch den Krieg der Götter. Es gibt ein Tor zu einer vergessenen Welt namens Abyssalis, einer alten Bastion der alten Götter, in der einige alte Götter gefangen sein sollen.
-- **Session 2025-10-14**: In Tyraels Gedanken erscheint Abyssalis als Herkunft von Valsor.
-- **Session 2025-11-25**: Die Gruppe begegnet einer Kreatur aus der Splitterwelt. Slix erwähnt, dass Lindo Laut die Seele eines sterbenden Mannes direkt nach Abyssalis geschickt hat.
-- **Session 2026-01-20**: Lunara öffnet mit ihren Runen die Splitterwelt. Die Untoten sind dort gefangen und können vernichtet werden.
-- **Session 2026-02-17**: Nerash weist die Gruppe im Traum den Weg nach Abyssalis — zu den Szenen des Wahnsinns, zu den lila Bergen, um den Teil von Vasul aus Lindo Laut zu vertreiben.
-- **Session 2026-03-03**: Abyssalis wird als kosmologische Ebene beschrieben, in der Vorgulta und andere Götter eingesperrt sind. Die Götter dort haben ihren Verstand verloren.
-- **Session 2026-03-10**: Die Gruppe erreicht die Splitterwelt durch ein Portal in Breska. Sie sieht das Tor zu Abyssalis. Lunara hat einen emotionalen Moment, als sie das Tor berührt und eine Stimme ihren Namen ruft.
-- **Session 2026-03-24**: Nox und Voras erstellen ein Portal ins Abyssalis. Lunara will dorthin reisen, um ihren Bruder zu retten und die Teile von Vasul zu bekämpfen.
-- **Session 2026-03-31**: Die Gruppe betritt Abyssalis. Sie erhält von Vasul Schutzamulette. Die Welt ist geprägt von Ruinen, Erntefeldern und vier alten Göttern.
-- **Session 2026-04-07**: Abyssalis wird als Handlungsort erwähnt, wird aber in dieser Session nicht besucht.
-- **Session 2026-04-14**: Die Gruppe ist seit einer Woche in Abyssalis. Die Welt ist von einem ewigen Nebel bedeckt, es gibt keine echten Tage oder Nächte. Die Stadt, in der sie sich aufhalten, ist karg und trist.
-- **Session 2026-05-06**: Die Gruppe ist in Abyssalis gestrandet und sucht nach einem Weg hinaus. Es kommt zu einem Crossover mit einer anderen Gruppe (Kip, Dante und Miko), die ebenfalls in Abyssalis gestrandet ist.
-- **Session 2026-05-13**: Die Gruppe erfährt von der Narbe, einem Gebiet in den Erntefeldern. Eine Kreatur öffnet ein Portal, um Abyssalis zu verlassen.
-- **Session 2026-05-19**: Die Gruppe ist weiterhin in Abyssalis. Die andere Gruppe hat sich entschieden, dem Richter zur Seite zu eilen und sich der Gruppe anzuschließen.
-- **Session 2026-06-10**: Abyssalis wird als Gefängniswelt beschrieben, ein Demiplane, das als Schattenwelt zur Prime World existiert. Die Gruppe ist hier, um Vorgultar zu finden.
-- **Session 2026-06-16**: Die Gruppe befindet sich in den Narben, einem Gebiet mit Kristallen und Statuen. Die Welt verändert sich, Vögel fallen von der Decke.
-- **Session 2026-07-21**: Die Gruppe flieht durch ein Portal nach Breska und verlässt Abyssalis.
-- **Session 2026-07-29**: Die Gruppe ist zurück in der normalen Welt und erleichtert, Abyssalis verlassen zu haben.
-- **Session 2026-08-04**: Die Gruppe ist aus Abyssalis zurückgekehrt. Liam wurde geopfert, um zu überleben. Die Schriftrolle wurde verwendet, um den Teil von Vasul aus Lindo Laut zu vertreiben.
-- **Session 2026-08-12**: Vitius erwähnt Abyssalis als Beweis für die Gefährlichkeit der Gruppe — sie sind aus dem Gefängnis der alten Götter zurückgekehrt.
+- **Session 2025-09-30**: Die Splitterwelt wird erstmals erwähnt. Sie ist eine Zwischenwelt, entstanden durch den Krieg der Götter, und enthält ein Tor zu einer vergessenen Welt namens Abyssalis – einer alten Bastion der alten Götter, in der einige von ihnen gefangen sein sollen. Die neuen Götter haben den Krieg nur gewinnen können, weil einige der alten Götter dort gefangen genommen wurden.
+
+- **Session 2025-10-14**: Der Name Abyssalis erscheint in Tyraels Gedanken als Herkunft von Valsor. Es bleibt unklar, ob es sich um einen Ort oder eine Entität handelt.
+
+- **Session 2025-11-25**: Eine Kreatur aus der Splitterwelt wird in der Nähe von Breska gesichtet. Die Gruppe weiß, dass Splitterwelt-Kreaturen gefährlich sind und auf Lebendiges reagieren. Slix erwähnt, dass Lindo Laut die Seele des sterbenden Mannes direkt nach Abyssalis geschickt hat.
+
+- **Session 2026-01-20**: Lunara öffnet mit ihren Runen die Splitterwelt. Die Welt nähert sich der Splitterwelt an, und die Untoten sind in dieser Welt gefangen und können vernichtet werden. Slix sagt: „Wir sind zu Hause. Nutzt jetzt unsere Macht und wir schnetzeln uns bis zu diesem Verräter."
+
+- **Session 2026-02-17**: Nerash weist die Gruppe den Weg nach Abyssalis: Sie müssen zu den Szenen des Wahnsinns, zu den lila Bergen, und dort einen Zauber wirken, um den Teil von Vasul aus Lindo Laut zu vertreiben. Abyssalis wird als Gefängniswelt beschrieben, in der die alten Götter verbannt wurden. Es ist eine gefährliche Reise dorthin, und es ist unklar, ob man zurückkehren kann.
+
+- **Session 2026-03-03**: Abyssalis wird als kosmologische Ebene beschrieben, in der die alten Götter eingesperrt sind. Vorgulta hat dort sein Grab gefunden und versucht, seinen Verstand zu behalten. Die Magie in der Splitterwelt ist stärker, und die Götter dort haben ihren Verstand verloren. Die Splitterwelt ist die Quelle der Magie in der Welt.
+
+- **Session 2026-03-10**: Die Gruppe erreicht die Splitterwelt durch ein Portal in Breska. Zandro zeigt ihnen das Tor zu Abyssalis. Das Tor kann mit einem Stab geöffnet werden, den Lindo Laut besitzt. Lunara hat einen emotionalen Moment, als sie das Tor berührt und eine Stimme ihren Namen ruft.
+
+- **Session 2026-03-24**: Nox und die Gruppe haben ein Portal ins Abyssalis erstellt. Lunara will dorthin reisen, um ihren Bruder zu retten und die Teile von Vasul zu bekämpfen.
+
+- **Session 2026-03-31**: Die Gruppe betritt Abyssalis. Sie erhält von Vasul Schutzamulette, um sich vor den Einflüssen der Welt zu schützen. Abyssalis ist geprägt von Ruinen, Erntefeldern und vier alten Göttern.
+
+- **Session 2026-04-07**: Abyssalis wird als Handlungsort erwähnt, an dem die Gruppe als nächstes weitermachen möchte. Es wird in dieser Session nicht besucht.
+
+- **Session 2026-04-09**: [Rotunas](/characters/rotunas.md) versucht, das Portal zu verstehen. Er spricht Abyssalis als Sprache, aber nicht als Erfahrung – die Magie des Portals versteht er nicht.
+
+- **Session 2026-04-14**: Die Gruppe ist seit einer Woche in Abyssalis. Die Welt ist von einem ewigen Nebel bedeckt, es gibt keine echten Tage oder Nächte, und leuchtende Kreaturen jagen Seelen. Die Stadt, in der sie sich aufhalten, ist karg und trist, die Bewohner sind Dämonen und Seelen. Es gibt eine Festung, die von Ohoriaks beansprucht wurde, und die Stadt hat Zugang zu den Erntefeldern, wo Seelen ankommen. Selbst mit dem Schutz von Vasul spürt die Gruppe langsam den Einfluss der Welt.
+
+- **Session 2026-05-06**: Die Gruppe ist in Abyssalis gestrandet und sucht nach einem Weg hinaus. Es kommt zu einem Crossover mit einer zweiten Spielgruppe (Kip, Dante und Miko), die ebenfalls in Abyssalis gefangen ist. Abyssalis wird als „abgefuckt" beschrieben, ähnlich wie der Abyss in Made in Abyss.
+
+- **Session 2026-05-13**: Die Gruppe ist in Abyssalis gefangen. Eine Kreatur öffnet ein Portal, um es zu verlassen. Die Narbe wird als Ort in den Erntefeldern beschrieben, links neben [Jalan](/locations/jalan.md), durch einen großen Berg blockiert. Ein Geist erklärt: „Dieser Ort ist ein Gefängnis geworden. Er war einst eine Bastion."
+
+- **Session 2026-05-19**: Die Kampagne spielt weiterhin in Abyssalis. Die Gruppe reist durch diese düstere, korrumpierte Welt, um ihr Ziel zu erreichen. Die andere Gruppe hat sich entschieden, dem Richter zur Seite zu eilen und sich gegen die Rückkehr entschieden.
+
+- **Session 2026-06-10**: Abyssalis wird als Gefängniswelt beschrieben, eine Demiplane auf der Schattenwelt. Die Narbe ist ein trostloser Ort mit Kristallen und magischer Energie, die an der Seele zehrt.
+
+- **Session 2026-06-16**: Die Gruppe befindet sich in den Narben, einem Gebiet mit Kristallen und Statuen. Die Welt verändert sich, und Vögel fallen von der Decke. Abyssalis wird von [Vorgul'tar](/deities/vorgul_tar.md) beherrscht.
+
+- **Session 2026-07-21**: Die Gruppe befindet sich in der Unterwelt von Abyssalis, geprägt von Kristallen, seltsamen Bäumen und einem Tempel. Am Ende flieht die Gruppe durch ein Portal nach Breska.
+
+- **Session 2026-07-29**: Die Gruppe kehrt aus Abyssalis zurück. Sie ist erleichtert, wieder in der normalen Welt zu sein. [Dodo](/characters/dodo.md) fühlt sich in dieser Welt eindeutig wohler und muss nicht mehr die ganze Zeit Sorgen haben, dass alles und jeden ihn plötzlich angreifen könnte.
+
+- **Session 2026-08-04**: [Liam](/npcs/liam_velora.md) ist aus Abyssalis zurückgekehrt. Die Gruppe hat dort eine Schriftrolle verwendet, um zu entkommen. Lindo Laut sagt zum [Seraphen](/factions/seraphen.md): „Eine gewisse Macht ist... Nun nicht mehr existent" – Vasul ist nicht mehr da. Die Gruppe hat einen ihrer vier Mitstreiter verloren.
+
+- **Session 2026-08-12**: [Vitius](/npcs/vitius.md) erwähnt Abyssalis als Beweis für die Gefährlichkeit der Gruppe: „Diese drei waren in Abyssalis. Sie haben Dinge getan, vor denen die neuen Götter nur erzittern würden. Ihr seid aber so zurückgekehrt. Ihr seid aus dem Gefängnis der alten Götter zurückgekehrt."
 
 ## Offene Fragen
 
-- Was genau ist die Narbe in den Erntefeldern, und welche Bedeutung hat sie für die Gruppe?
-- Was ist mit Lunaras Bruder geschehen, und konnte er gerettet werden?
-- Welche Rolle spielen die vier alten Götter in Abyssalis, und was ist mit Vorgulta/Vorgul'tar?
-- Was ist mit den Szenen des Wahnsinns und den lila Bergen gemeint, zu denen Nerash die Gruppe geschickt hat?
-- Was ist mit Liam geschehen, der geopfert wurde, damit die Gruppe überleben konnte?
+- Was genau ist die Natur von Abyssalis – ist es eine Demiplane, eine kosmologische Ebene, eine dämonische Welt oder eine Unterwelt? Die Belege verwenden verschiedene Begriffe.
+- Wer oder was ist Vorgul'tar genau, und welche Rolle spielt er in Abyssalis?
+- Was ist mit den vier alten Göttern in Abyssalis – wer sind sie, und was ist mit ihnen geschehen?
+- Was ist die Narbe genau, und welche Bedeutung hat sie für die Handlung?
+- Welche Verbindung besteht zwischen Abyssalis und Valsor beziehungsweise Vasul?
+- Was geschah mit Lunaras Bruder in Abyssalis – wurde er gerettet?
+- Welche Rolle spielt [der Richter](/npcs/richter_herr_der_seelenwacht.md) in Abyssalis, und was ist mit der zweiten Spielgruppe (Kip, Dante und Miko) geschehen?
+- Was ist mit der außerirdischen Statue, die die Gruppe in einem Dungeon gefunden hat – hat sie eine Verbindung zu Abyssalis?
 
-## Belege
+# Belege
 
 1. Session 2025-09-30 @ 01:50:02 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
 2. Session 2025-09-30 @ 01:50:28 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
@@ -92,19 +125,20 @@ Die Götter, die in Abyssalis eingesperrt sind, haben ihren Verstand verloren. D
 6. Session 2026-01-20 @ 01:34:52 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
 7. Session 2026-02-17 @ 00:57:10 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
 8. Session 2026-03-03 @ 00:41:22 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
-9. Session 2026-03-10 @ 01:23:39 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
-10. Session 2026-03-10 @ 01:29:02 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
-11. Session 2026-03-24 @ 00:37:51 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
-12. Session 2026-03-31 @ 00:06:55 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
-13. Session 2026-04-07 @ 02:01:31 (https://www.youtube.com/watch?v=MAuQPMNY548)
-14. Session 2026-04-09 @ 01:43:36 (https://www.youtube.com/watch?v=vcGkejr8_nI)
-15. Session 2026-04-14 @ 00:03:19 (https://www.youtube.com/watch?v=1Jyu92P7_Fg)
-16. Session 2026-05-06 @ 00:00:23 (https://www.youtube.com/watch?v=MB4quhDWsQE)
-17. Session 2026-05-13 @ 01:07:22 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
-18. Session 2026-05-19 @ 00:00:45 (https://www.youtube.com/watch?v=xEcGJeaNixI)
-19. Session 2026-06-10 @ 00:04:00 (https://www.youtube.com/watch?v=_3tLSiT1tck)
-20. Session 2026-06-16 @ 00:03:15 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
-21. Session 2026-07-21 @ 00:00:42 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
-22. Session 2026-07-29 @ 00:06:27 (https://www.youtube.com/watch?v=umGyKLkefJI)
-23. Session 2026-08-04 @ 00:16:42 (https://www.youtube.com/watch?v=qRj2t3wQHfs)
-24. Session 2026-08-12 @ 00:22:44 (https://www.youtube.com/watch?v=piUv11DCwDw)
+9. Session 2026-03-03 @ 00:42:06 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
+10. Session 2026-03-10 @ 01:23:39 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
+11. Session 2026-03-10 @ 01:29:02 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
+12. Session 2026-03-24 @ 00:37:51 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
+13. Session 2026-03-31 @ 00:06:55 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
+14. Session 2026-04-07 @ 02:01:31 (https://www.youtube.com/watch?v=MAuQPMNY548)
+15. Session 2026-04-09 @ 01:43:36 (https://www.youtube.com/watch?v=vcGkejr8_nI)
+16. Session 2026-04-14 @ 00:03:19 (https://www.youtube.com/watch?v=1Jyu92P7_Fg)
+17. Session 2026-05-06 @ 00:00:23 (https://www.youtube.com/watch?v=MB4quhDWsQE)
+18. Session 2026-05-13 @ 01:07:22 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
+19. Session 2026-05-19 @ 00:00:45 (https://www.youtube.com/watch?v=xEcGJeaNixI)
+20. Session 2026-06-10 @ 00:04:30 (https://www.youtube.com/watch?v=_3tLSiT1tck)
+21. Session 2026-06-16 @ 00:03:15 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
+22. Session 2026-07-21 @ 00:00:42 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
+23. Session 2026-07-29 @ 00:06:27 (https://www.youtube.com/watch?v=umGyKLkefJI)
+24. Session 2026-08-04 @ 00:16:42 (https://www.youtube.com/watch?v=qRj2t3wQHfs)
+25. Session 2026-08-12 @ 00:22:44 (https://www.youtube.com/watch?v=piUv11DCwDw)

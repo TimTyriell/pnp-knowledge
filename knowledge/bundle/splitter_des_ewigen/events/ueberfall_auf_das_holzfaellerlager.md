@@ -10,7 +10,7 @@ id: EVENT_UEBERFALL_AUF_DAS_HOLZFAELLERLAGER
 subtype: Kampf
 ---
 
-Ein Holzfällerlager nordwestlich von [Kleinringtal](/locations/ringtal.md) wurde von [Goblins](/factions/goblins.md) und Gnollen überfallen. Die Hälfte der Bewohner wurde getötet.
+Ein Holzfällerlager nordwestlich von [Kleinringtal](/locations/ringtal.md) wurde von [Goblins](/npcs/pilz_goblins.md) und Gnollen überfallen. Die Hälfte der Bewohner wurde getötet.
 
 # Belege
 

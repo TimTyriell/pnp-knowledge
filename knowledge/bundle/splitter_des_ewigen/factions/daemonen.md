@@ -12,7 +12,7 @@ subtype: Volk
 
 # Dämonen
 
-Die **Dämonen** sind eine feindselige Fraktion dämonischer Kreaturen, die im Verlauf der Kampagne durch ein Portal in die Stadt [Ehrenfels](/locations/ehrenfels.md) eindringen. Sie treten als große Horde auf und kämpfen gegen die Verteidiger der Stadt. Angeführt wird die Horde von einem Magier und einem großen Monster, über deren Identität nichts Näheres bekannt ist.
+Die **Dämonen** sind eine feindselige Fraktion dämonischer Kreaturen, die im Verlauf der Kampagne durch ein [Portal](/locations/portal.md) in die Stadt [Ehrenfels](/locations/ehrenfels.md) eindringen. Sie treten als große Horde auf und kämpfen gegen die Verteidiger der Stadt. Angeführt wird die Horde von einem Magier und einem großen Monster, über deren Identität nichts Näheres bekannt ist.
 
 ## Auftreten in Ehrenfels
 

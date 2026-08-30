@@ -10,7 +10,7 @@ id: EVENT_RUECKKEHR_AUS_ABYSSALIS
 subtype: Reise
 ---
 
-[Die Rückkehr der Gruppe](/events/die_rueckkehr_der_gruppe.md) aus [Abyssalis](/domains/splitterwelt.md) ist das zentrale Ereignis der Session. Sie werden als Helden gefeiert und müssen sich den neuen Gegebenheiten stellen.
+Die Rückkehr der Gruppe aus [Abyssalis](/domains/splitterwelt.md) ist das zentrale Ereignis der Session. Sie werden als Helden gefeiert und müssen sich den neuen Gegebenheiten stellen.
 
 # Belege
 

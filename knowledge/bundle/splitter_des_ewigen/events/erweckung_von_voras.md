@@ -10,7 +10,7 @@ id: EVENT_ERWECKUNG_VON_VORAS
 subtype: Ritual
 ---
 
-[Lendras](/npcs/lendras.md) bricht den Bann über [Voras](/npcs/voras.md) und erweckt ihn aus seinem Sarg. [Voras](/npcs/vora.md) stellt sich als der Heilige vor und bietet seine Hilfe an.
+[Lendras](/npcs/lendras.md) bricht den Bann über [Voras](/npcs/voras.md) und erweckt ihn aus seinem Sarg. Voras stellt sich als der Heilige vor und bietet seine Hilfe an.
 
 # Belege
 

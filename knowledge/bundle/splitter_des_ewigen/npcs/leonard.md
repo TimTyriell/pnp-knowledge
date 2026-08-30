@@ -9,7 +9,7 @@ timestamp: '2026-04-14T00:00:00Z'
 id: NPC_LEONARD
 ---
 
-Ein untoter Dichter, der der Gruppe hilft, indem er sie zum Orakel [Relina](/npcs/relina.md) führt. Er ist freundlich und gibt Informationen über die Stadt und die Festung preis.
+Ein untoter Dichter, der der Gruppe hilft, indem er sie zum Orakel [Relina](/npcs/relina.md) führt. Er ist freundlich und gibt Informationen über die Stadt und die [Festung](/locations/festung.md) preis.
 
 # Belege
 

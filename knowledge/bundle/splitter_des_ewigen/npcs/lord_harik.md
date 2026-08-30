@@ -9,7 +9,7 @@ timestamp: '2026-01-27T00:00:00Z'
 id: NPC_LORD_HARIK
 ---
 
-Lord Harik ist der Fürst der [Zwergenfestung](/locations/zwergenfestung.md). Er wird von Silberbart zu den Verhandlungen gerufen und ist zunächst skeptisch, stimmt aber dem Vorschlag zu, den [Goblins](/factions/goblins.md) die Schmiedekunst beizubringen. Er schließt den Friedensvertrag mit dem Schamanen und belohnt die Abenteurer.
+Lord Harik ist der Fürst der [Zwergenfestung](/locations/zwergenfestung.md). Er wird von Silberbart zu den Verhandlungen gerufen und ist zunächst skeptisch, stimmt aber dem Vorschlag zu, den [Goblins](/npcs/pilz_goblins.md) die Schmiedekunst beizubringen. Er schließt den Friedensvertrag mit dem Schamanen und belohnt die Abenteurer.
 
 # Belege
 

@@ -10,7 +10,7 @@ id: EVENT_DIE_SPOREN
 subtype: Sonstiges
 ---
 
-Grüner [Nebel](/locations/nebel.md) aus Sporen, der die Augen reizt und auf Dauer krank macht. Er greift organisches Material an.
+Grüner Nebel aus Sporen, der die Augen reizt und auf Dauer krank macht. Er greift organisches Material an.
 
 # Belege
 

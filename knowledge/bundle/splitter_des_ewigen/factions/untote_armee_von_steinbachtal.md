@@ -10,7 +10,7 @@ id: FACTION_UNTOTE_ARMEE_VON_STEINBACHTAL
 subtype: Armee
 ---
 
-Die Untote Armee von Steinbachtal ist ein riesiger Heereszug aus Zombies und Skeletten, der das Dorf Steinbachtal überrannt hat. Die Untoten gelten als ungewöhnlich widerstandsfähig und werden von einem schwarzen Ritter angeführt. Die Armee befindet sich auf dem Vormarsch zu einem Ort namens „Droons Bahn“.
+Die [Untote Armee](/factions/belorus_untotenarmee.md) von [Steinbachtal](/locations/steinbachtal.md) ist ein riesiger Heereszug aus Zombies und Skeletten, der das Dorf Steinbachtal überrannt hat. Die Untoten gelten als ungewöhnlich widerstandsfähig und werden von einem schwarzen Ritter angeführt. Die Armee befindet sich auf dem Vormarsch zu einem Ort namens „[Droons Bahn](/locations/droons_bahn.md)“.
 
 ## Aufstellung und Führung
 

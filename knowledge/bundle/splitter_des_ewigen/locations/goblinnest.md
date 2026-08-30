@@ -10,7 +10,7 @@ id: LOC_GOBLINNEST
 subtype: Gebäude
 ---
 
-Ein Bereich in der [Mine](/locations/kristallmine.md), der als Schlaf- und Brutstätte für [Goblins](/factions/goblins.md) dient. Hier finden sie einen Kessel mit Essen, [Handschellen](/items/handschellen.md) und einen [Skelettschlüssel](/items/skelettschluessel.md).
+Ein Bereich in der Mine, der als Schlaf- und Brutstätte für [Goblins](/npcs/pilz_goblins.md) dient. Hier finden sie einen Kessel mit Essen, [Handschellen](/items/handschellen.md) und einen [Skelettschlüssel](/items/skelettschluessel.md).
 
 # Belege
 

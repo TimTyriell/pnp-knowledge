@@ -10,7 +10,7 @@ id: EVENT_EXPLOSION_DER_GNOLLE_UND_ENTSTEHUNG_DER_SCHATTENHORDE
 subtype: Ritual
 ---
 
-Nach dem Tod der Gnolle explodieren ihre Körper und eine Schattenhorde entsteht, die die Gruppe angreift.
+Nach dem Tod der [Gnolle](/factions/gnolle.md) explodieren ihre Körper und eine Schattenhorde entsteht, die die Gruppe angreift.
 
 # Belege
 

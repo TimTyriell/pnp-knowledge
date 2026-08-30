@@ -10,7 +10,7 @@ id: EVENT_TOD_DES_GROTTENSCHRATS
 subtype: Tod
 ---
 
-[Saris](/characters/saris.md) tötet den verwundeten [Grottenschrat](/npcs/grottenschrat.md), indem er ihm das Herz durchsticht. Dies geschieht nach [Sanges](/characters/sange.md) Vision, die die letzten Minuten des [Gnolls](/npcs/gnoll.md) zeigt.
+[Saris](/characters/saris.md) tötet den verwundeten [Grottenschrat](/npcs/grottenschrat.md), indem er ihm das Herz durchsticht. Dies geschieht nach [Sanges](/characters/sange.md) Vision, die die letzten Minuten des Gnolls zeigt.
 
 # Belege
 

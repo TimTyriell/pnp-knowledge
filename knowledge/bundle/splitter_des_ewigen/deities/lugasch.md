@@ -12,11 +12,11 @@ subtype: Neuer Gott
 
 # Lugasch
 
-Lugasch ist ein Trickster-Gott der [Goblins](/factions/goblins.md). Bekannt ist er bislang nur aus einer Begebenheit, in der ein Steinhagel auf die Gruppe niedergeht und [Celin](/characters/celin_cookie.md) sich an seinen Namen erinnert. Lugasch scheint Freude daran zu haben, Unheil zu stiften.
+Lugasch ist ein Trickster-Gott der [Goblins](/npcs/pilz_goblins.md). Bekannt ist er bislang nur aus einer Begebenheit, in der ein Steinhagel auf die Gruppe niedergeht und [Celin](/characters/cookie.md) sich an seinen Namen erinnert. Lugasch scheint Freude daran zu haben, Unheil zu stiften.
 
 ## Rolle und Wesen
 
-Lugasch wird als Trickster-Gott der Goblins beschrieben. Sein Wesen ist vom Schabernack geprägt; er scheint Gefallen daran zu finden, Unheil und Durcheinander zu verursachen. Weitere Eigenschaften, Symbole oder eine ausführlichere Mythologie sind aus den bisherigen Belegen nicht bekannt.
+Lugasch wird als Trickster-Gott der [Goblins](/npcs/pilz_goblins.md) beschrieben. Sein Wesen ist vom Schabernack geprägt; er scheint Gefallen daran zu finden, Unheil und Durcheinander zu verursachen. Weitere Eigenschaften, Symbole oder eine ausführlichere Mythologie sind aus den bisherigen Belegen nicht bekannt.
 
 ## Bezeugtes Wirken
 

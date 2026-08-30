@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Nyruk
-description: Nyruk ist der große Eisbär und treue Begleiter von Nyrella, einer Freeborn-Fairy-Rangerin.
-  Er ist ihr Companion im Sinne der Beastbound-Fäh…
+description: Nyruk ist der große Eisbär und treue Begleiter (Companion) von Nyrella,
+  einer Freeborn-Fairy-Rangerin. Er ist ihr Seelentier und steht in e…
 tags:
 - npcs
 timestamp: '2026-02-24T00:00:00Z'
@@ -10,84 +10,113 @@ id: NPC_NYRUK
 aliases:
 - Nairook
 - Nairuk
+- Naeruk
 - Nayruk
 ---
 
+# Nyruk
+
 ## Überblick
 
-Nyruk ist der große Eisbär und treue Begleiter von [Nyrella](/characters/nyrella.md), einer Freeborn-Fairy-Rangerin. Er ist ihr Companion im Sinne der Beastbound-Fähigkeit und wird von ihr als ihr „Seelentier" bezeichnet. Nyruk ist ein imposantes, weißes Raubtier arktischer Herkunft, das optisch perfekt zu Nyrellas eiselfischem Erscheinungsbild passt. Er ist kein gewöhnliches Tier, sondern ein Wesen mit ausgeprägter Persönlichkeit, eigenen Vorlieben und einer tiefen emotionalen Bindung an seine Gefährtin.
+Nyruk ist der große [Eisbär](/npcs/eisbaer.md) und treue Begleiter (Companion) von [Nyrella](/characters/nyrella.md), einer Freeborn-Fairy-Rangerin. Er ist ihr Seelentier und steht in einer tiefen emotionalen Verbindung zu ihr. Nyruk ist ein imposantes, weißes Tier von beträchtlicher Größe, das überall dort, wo die Gruppe auftaucht, Aufsehen erregt — oft mit Erschrecken und Misstrauen, aber auch mit Begeisterung, etwa bei Kindern. Er ist ein zentraler Bestandteil von [Nyrellas](/characters/nyrella.md) Identität als Beastbound-Rangerin und begleitet die Gruppe „[Rotunas Freunde](/factions/rotunas_freunde.md)" über weite Strecken ihrer Abenteuer.
 
 ## Rolle in der Kampagne
 
-Nyruk begleitet Nyrella als ständiger Begleiter durch die Abenteuer der Gruppe. Er ist weit mehr als ein einfaches Reittier oder Haustier: Er dient als Beschützer, Kampfgefährte, Stimmungsbarometer und emotionaler Anker für Nyrella. In Kämpfen greift er aktiv ein, etwa wenn er einen untoten Tempelritter mit einem Prankenhieb vernichtet oder versucht, Gegner durch Brüllen und Drohgebärden einzuschüchtern. Außerhalb des Kampfes sorgt er für Freude und Unterhaltung, etwa wenn er mit Kindern spielt oder Kunststücke in einer Taverne vorführt. Er ist ein fester Bestandteil von Nyrellas Auftritten und Identität als Rangerin.
+Nyruk ist weit mehr als ein bloßes Reittier oder Haustier: Er ist Nyrellas Partner im wörtlichen Sinne des Beastbound-Konzepts. Gemeinsam mit ihr bildet er ein eingespieltes Duo, wobei Nyruk oft die Rolle des „eigentlichen Rangers" übernimmt — er klettert etwa auf den Ausguck des Schiffs, um Ausschau zu halten, während Nyrella sich zurückhält. In Kämpfen greift er aktiv ein, etwa wenn er einen untoten Tempelritter mit einem Prankenhieb vernichtet oder [Kuatau](/npcs/kuatau.md) angreift. Er dient Nyrella auch als Transportmittel, auf dessen Rücken sie reitet, und als Schutzschild, wenn Gefahr droht.
+
+Gegenüber der Gruppe ist Nyruk loyal und freundlich, besonders zu [Esterossa](/characters/esterossa.md), mit der er eine enge Bindung entwickelt. Er ist ein wichtiger Teil von Nyrellas Auftritten in Tavernen, wo er Kunststücke vorführt und sich sogar von einem Halbling besteigen lässt. In der Gemeinschaft der Geflüchteten und Familien wird er zum „lebenden Rollercoaster" für die Kinder.
 
 ## Wichtige Merkmale
 
-### Äußere Erscheinung
+### Erscheinung und Wesen
 
-Nyruk ist ein großer, weißer Eisbär. Seine schiere Größe und sein tierhaftes Erscheinungsbild rufen bei Menschen, die noch nie einen solchen Bären gesehen haben, Erschrecken und Entsetzen hervor. Als Nyruk einmal in ein Lager der Anhänger gebracht wurde, reagierten die Leute mit den Worten: „Was habt ihr für eine Bestie bei euch?" und „Ich habe noch nie eine so große, tierhafte Gestalt gesehen." Nyrella konterte daraufhin empört: „Das ist ziemlich unhöflich, okay?"
-
-### Wesen und Verhalten
-
-Nyruk zeigt eine bemerkenswerte emotionale Intelligenz. Er ist eng mit Nyrella verbunden und kann ihre Emotionen spüren. Er versteht Kommandos und menschliche Anweisungen erstaunlich gut — so befolgt er etwa Dodos Befehl, einen bestimmten Gegner anzugreifen, nachdem Nyrella erklärt hat: „Der sieht, dass du hier die Kommandos angibst und versteht das recht gut. Wenn du ihm was sagst, dann macht er das."
-
-Er hat einen eigenen Kopf und eigene Vorlieben: Er lässt sich gerne kuscheln (vor allem von [Esterossa](/characters/esterossa.md)), freut sich über Futter und spielt begeistert mit Kindern. In der Taverne führte er Kunststücke auf und ließ sich sogar von einem Halbling besteigen. Nyrella beschreibt ihn als „lebender Rollercoaster für alle Kinder" in einem Lager.
-
-Nyruk zeigt keine Angst vor übernatürlichen Wesen, etwa einem Riesen, dem er furchtlos gegenübertrat. Er kann aber durchaus misstrauisch und schützend sein: Als Nyrella nach einer längeren Trennung wieder auf die Gruppe traf, zeigte Nyruk ein ungewöhnlich argwöhnisches Verhalten, bläkte die Zähne, legte die Ohren an und stellte sich schützend zwischen die Gruppe und Nyrella.
+Nyruk ist ein großer Eisbär mit weißem Fell, das zu Nyrellas arktisch-mystischem Erscheinungsbild passt. Seine schiere Größe flößt Menschen, die noch nie ein solches Tier gesehen haben, Respekt und Furcht ein — die Anhänger eines Lagers bezeichnen ihn zunächst als „Bestie", weil sie „noch nie eine so große, tierhafte Gestalt gesehen" haben. Nyruk selbst ist jedoch kein aggressives Wesen: Er zeigt etwa keine Angst vor einem naturverbundenen Riesen, dem er gelassen gegenübertritt, während andere in Panik geraten.
 
 ### Fähigkeiten
 
-Nyruk ist ein imposanter Kämpfer. Er kann sich aufbäumen und mit seinen riesigen Pranken verheerende Schläge austeilen — so schleuderte er den Kopf eines untoten Tempelritters mit einem einzigen Schlag davon. Er kann durch Brüllen warnen und Gegner einschüchtern, wobei seine Taunt-Versuche nicht immer erfolgreich sind (ein Gegner namens Belorus ignorierte ihn schlichtweg). Er ist robust und übersteht auch Verletzungen im Kampf, wobei er von Nyrella beschützt und von Esterossa geheilt werden kann.
+- **Kampfstärke:** Nyruk ist ein ernstzunehmender Kämpfer. Er greift Gegner wie Kuatau an, vernichtet einen untoten Tempelritter, indem er sich aufbäumt und mit seiner „riesigen Pranke" den Kopf des Untoten wegschleudert, und setzt seinen Körper schützend vor Nyrella ein.
+- **Emotionale Bindung:** Nyruk spürt Nyrellas Emotionen und ist eng mit ihr verbunden. Er ist ihr Seelentier, was über eine rein praktische Begleitung hinausgeht.
+- **Gehorsam:** Er versteht Kommandos gut — etwa wenn [Dodo](/characters/dodo.md) ihm Anweisungen gibt und er diese ausführt. Nyrella bestätigt: „Der sieht, dass du hier die Kommandos angibst und versteht das recht gut. Wenn du ihm was sagst, dann macht er das."
+- **Keine Flugfähigkeit:** Nyruk ist ein reiner Bodenbewohner und kann nicht fliegen.
+
+### Verhalten
+
+Nyruk ist ein treuer, aufmerksamer Begleiter, der Nyrella gegenüber äußerst beschützend ist. Er kann aber auch eigensinnig und misstrauisch sein: In einer späteren Session zeigt er sich gegenüber der Gruppe, insbesondere gegenüber [Lindo Laut](/characters/lindo_laut.md), ungewöhnlich argwöhnisch, bläckt die Zähne und stellt sich schützend zwischen Nyrella und die anderen. Er ist liebebedürftig und unzufrieden, wenn Nyrella sich von ihm entfernt.
 
 ## Beziehungen und Verbindungen
 
-**Nyrella:** Die tiefste Bindung besteht zu seiner Gefährtin Nyrella. Sie bezeichnet ihn als ihr „Seelentier" und erklärt anderen: „Er macht was ich sage, er ist quasi wie mein Seelentier." Die beiden sind emotional so eng verbunden, dass Nyruk Nyrellas Emotionen spürt. Nyrella beschützt ihn im Kampf und verteidigt ihn vehement gegen Beleidigungen — als ein Riese ihn als „Hund" bezeichnete, konterte sie: „Das ist kein Hund, das ist ein Bär und ihr seht beide gleich scheiße aus."
+### Nyrella
 
-**Esterossa:** Nyruk hat eine besondere Zuneigung zu Esterossa entwickelt. Er stürmt auf ihn zu und leckt ihm das Gesicht ab, lässt sich von ihm kuscheln und im Fell kraulen. Esterossa wiederum heilt Nyruk von Stress und genießt die Nähe zu dem Bären: „Der Weg war sehr anstrengend und ich habe mich an das Fell gewöhnt." Nyruk holt sich bei Esterossa sogar Futter ab und lässt sich gegen ein Stück Fleisch bereitwillig kuscheln — allerdings erst, nachdem er kurz zu Nyrella geschaut hat, ob das in Ordnung ist.
+Die zentrale Beziehung in Nyruks Leben ist die zu Nyrella. Sie ist seine Besitzerin, Partnerin und Seelenverwandte. Er gehorcht ihr, sucht ihre Nähe und lässt sich von ihr führen. Nyrella stellt ihn der Gruppe als ihr „Seelentier" vor und betont, dass er tue, was sie sage. Die Bindung ist so eng, dass Nyruk ihre Emotionen spürt und sie in späteren, schwierigen Zeiten kaum noch von seiner Seite weicht.
 
-**Dodo:** Nyruk akzeptiert Dodos Kommandos im Kampf und wird von ihm gelobt, nachdem er einen untoten Tempelritter vernichtet hat.
+### Esterossa
 
-**Cookie:** Nyruk trauerte um Cookie, als dieser verloren ging, und war in dieser Zeit aufgedreht.
+Zu [Esterossa](/characters/esterossa.md) entwickelt Nyruk eine besondere Zuneigung. Sie heilt ihn von Stress, kuschelt mit ihm und verbringt Zeit in seinem Fell. Nyruk lässt sich von ihr streicheln und kuscheln — allerdings erst, nachdem er kurz zu Nyrella geschaut hat, ob das in Ordnung ist. Esterossa genießt diese Nähe sichtlich: „Ich würde das gerne machen, während ich die ganze Zeit im Fell von Nairuk am Buscheln bin."
 
-**Lindo Laut:** Nyruk ist misstrauisch gegenüber Lindo Laut und zeigt ihm gegenüber Aggression.
+### Dodo
+
+[Dodo](/characters/dodo.md) interagiert ebenfalls mit Nyruk, etwa wenn er ihn im Kampf dirigiert und ihm den untoten Tempelritter als Ziel zuweist. Nyruk führt die Anweisung aus und wird dafür von Dodo gelobt.
+
+### Kinder und Gemeinschaft
+
+In der Gemeinschaft der Geflüchteten wird Nyruk zum Publikumsliebling: Er spielt mit den Kindern, lässt sich von ihnen besteigen und sorgt für Freude. Nyrella beobachtet das mit nostalgischer Wehmut, weil sie an ihre eigene verlorene Familie denken muss.
 
 ## Chronologie
 
-**Session 2025-07-29:** Nyruk wird als Nyrellas Eisbär-Companion vorgestellt. Er steht auf dem Schiff im Ausguck und wird von Nyrella als „der eigentliche Ranger von uns beiden" beschrieben. Im Kampf greift er Kuatau an, warnt die Gruppe durch Brüllen und wird dabei verletzt.
+### Erste Begegnung und Vorstellung (Session 2025-07-29)
 
-**Session 2025-08-12:** Nyruk kommt mit Nyrella in ein Lager der Anhänger. Sein Erscheinen löst bei den Leuten Erschrecken und Entsetzen aus; sie bezeichnen ihn als „Bestie". Nyrella stellt ihn als ihr Seelentier vor und erklärt, dass er auf sie hört.
+Nyruk wird erstmals als Nyrellas Eisbär-Companion vorgestellt. Er befindet sich auf dem Schiff der Gruppe, wo er in den Ausguck geklettert ist und als „eigentlicher Ranger" Ausschau hält. Im Kampf greift er Kuatau an, warnt die Gruppe durch Brüllen und wird dabei verletzt.
 
-**Session 2025-08-20:** Nyruk zeigt keine Angst vor einem Riesen, der mit Tieren interagieren will. Nyrella beschützt ihn und stellt sich vor ihn. Esterossa heilt Nyruk von seinem Stress.
+### Begegnung mit den Anhängern (Session 2025-08-12)
 
-**Session 2025-09-09:** Während einer Flucht wird Nyruk durch einen Schacht geschickt und schafft es mit Mühe. Er wird liebevoll „Bärbär" genannt und erweist sich als treuer Begleiter.
+Als Nyruk zu einem [Lager der Anhänger](/locations/lager_der_anhaenger.md) kommt, reagieren die Menschen erschrocken und entsetzt — sie haben noch nie eine so große, tierhafte Gestalt gesehen und fragen: „Was habt ihr für eine Bestie bei euch?" Nyrella stellt ihn als ihr Seelentier vor und beruhigt die Menge. Nyruk zeigt sich folgsam.
 
-**Session 2025-09-17:** Nyruk wird in der Vorstellungsrunde der Gruppe erwähnt. Der GM stellt ihn scherzhaft als Teil der Gruppe vor.
+### Begegnung mit dem Riesen (Session 2025-08-20)
 
-**Session 2025-09-30:** In einem Lager mit Familien und Kindern ist Nyruk „absolut begeistert" und dient als „lebender Rollercoaster" für die Kinder. Nyrella beobachtet ihn voller Glück und Nostalgie.
+Nyruk begegnet einem naturverbundenen Riesen, vor dem er keine Angst zeigt. Der Riese versucht, mit ihm zu interagieren, doch Nyrella greift ein und beschützt ihren Begleiter. Esterossa heilt Nyruk später von seinem Stress.
 
-**Session 2025-11-18:** Nyruk trauert um Cookie und ist aufgedreht. In einer Taverne führt er Kunststücke auf und lässt sich von einem Halbling besteigen. Er stürmt auf Esterossa zu und begrüßt ihn überschwänglich.
+### Flucht durch den Schacht (Session 2025-09-09)
 
-**Session 2026-01-13:** Nyruk lässt sich von Esterossa kuscheln, nachdem dieser ihm ein Stück Fleisch angeboten hat. Er wird von Nyrella im Kampf eingesetzt, um Dodo zu beschützen. Sein Taunt-Versuch wird von Belorus ignoriert.
+Während einer Flucht wird Nyruk durch einen engen Schacht geschickt, den er nur mit Mühe bewältigt. Er wird dabei liebevoll-ironisch als „Bärbär" bezeichnet und erweist sich als treuer Begleiter, der der Gruppe durch die schwierige Situation folgt.
 
-**Session 2026-01-20:** Nyruk greift auf Dodos Kommando hin in den Kampf ein und vernichtet einen untoten Tempelritter, indem er sich aufbäumt und mit seiner Pranke den Kopf des Untoten wegschleudert. Dodo lobt ihn.
+### Vorstellung als „Kobold in Katzenkörper" (Session 2025-09-17)
 
-**Session 2026-02-24:** Nyruk zeigt sich äußerst misstrauisch gegenüber der Gruppe, insbesondere gegenüber Lindo Laut. Er stellt sich schützend vor Nyrella, bläkt die Zähne und zeigt Aggression, wenn sich jemand nähert. Nyrella sitzt nun hauptsächlich auf seinem Rücken und lässt sich tragen; die beiden sind nicht mehr getrennt unterwegs. Als die Gruppe in die Tiefe einer Mine hinabsteigt, bleibt Nyruk an der Oberfläche zurück und ist sichtlich erleichtert, als Nyrella zurückkehrt.
+In einer scherzhaften Vorstellungsrunde wird Nyruk vom Spielleiter als „verlauster kleiner [Kobold](/npcs/kobold.md) in dem Körper einer Katze" bezeichnet — eine humoristische Verwechslung, die zeigt, wie sehr Nyruk inzwischen zur Gruppe gehört. Er wird als Teil der Truppe „[Rotunas](/characters/rotunas.md) Freunde" vorgestellt.
+
+### Freude im Lager (Session 2025-09-30)
+
+Im Lager der Geflüchteten ist Nyruk „absolut begeistert" und wird zum „lebenden Rollercoaster" für die Kinder. Nyrella beobachtet ihn mit Glück und Nostalgie zugleich.
+
+### Wiedersehen in der Taverne (Session 2025-11-18)
+
+Nyruk trifft in einer Taverne auf die Gruppe und stürmt freudig auf Esterossa zu, springt auf sie drauf und leckt ihr das Gesicht ab. Er trauert um den verlorenen [Cookie](/characters/cookie.md) und ist aufgedreht. Er führt Kunststücke in der Taverne auf und lässt sich von einem Halbling besteigen — ein wichtiger Teil von Nyrellas Auftritten.
+
+### Kuscheln und Kampf (Session 2026-01-13)
+
+Esterossa kuschelt ausgiebig mit Nyruk, der sich das nach einem prüfenden Blick zu Nyrella gefallen lässt. Im Kampf setzt Nyrella Nyruk ein, um Dodo zu beschützen. Sein Versuch, [Belorus](/npcs/belorus.md) zu provozieren (Taunt), wird von diesem allerdings ignoriert.
+
+### Vernichtung des Tempelritters (Session 2026-01-20)
+
+Auf Dodos Kommando hin greift Nyruk einen stark angeschlagenen untoten Tempelritter an. Er bäumt sich auf, holt mit seiner riesigen Pranke aus und schleudert den Kopf des Untoten davon. Dodo lobt ihn für seinen treuen Einsatz.
+
+### Misstrauen und Schutz (Session 2026-02-24)
+
+Nyruk zeigt sich ungewöhnlich misstrauisch gegenüber der Gruppe, insbesondere gegenüber [Lindo Laut](/characters/lindo_laut.md). Er bläckt die Zähne, legt die Ohren an und stellt sich schützend vor Nyrella. Er weicht nicht mehr von ihrer Seite, trägt sie auf seinem Rücken und ist unzufrieden, wenn sie sich entfernt. Als die Gruppe in die Tiefe der [Silbergruft](/locations/silbergruft.md)-Mine hinabsteigt, bleibt Nyruk an der Oberfläche zurück und ist sichtlich erleichtert, als Nyrella zurückkehrt.
 
 ## Offene Fragen
 
-- Was genau ist die Natur der Bindung zwischen Nyruk und Nyrella? Nyrella bezeichnet ihn als „Seelentier", was auf eine tiefe magische oder spirituelle Verbindung hindeutet, deren genaue Funktionsweise nicht näher erläutert wird.
-- Warum ist Nyruk in der Session vom 24.02.2026 so ungewöhnlich misstrauisch gegenüber der Gruppe, insbesondere gegenüber Lindo Laut? Die Ursache für sein verändertes Verhalten bleibt ungeklärt.
-- Woher stammt Nyruk ursprünglich? Seine arktische Erscheinung und Nyrellas eiselfische Herkunft legen eine Herkunft aus kalten Regionen nahe, aber seine genaue Geschichte ist nicht bekannt.
+- Was genau ist während der Trennung von Nyrella und der Gruppe passiert, das Nyruks ausgeprägtes Misstrauen gegenüber Lindo Laut und den anderen erklärt? Die Belege zeigen das veränderte Verhalten, lassen aber die Ursache offen.
+- Nyruks Trauer um [Cookie](/characters/cookie.md) wird erwähnt, aber die näheren Umstände seines Verlusts und wie Nyruk damit umgeht, werden nicht ausgeführt.
 
-## Belege
+# Belege
 
-[P-16] Session 2025-07-29 @ 00:00:39 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
-[P-17] Session 2025-08-12 @ 00:43:30 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)
-[P-18] Session 2025-08-20 @ 00:19:20 (https://www.youtube.com/watch?v=-XbO3FLSL_I)
-[P-21] Session 2025-09-09 @ 01:50:05 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
-[P-22] Session 2025-09-17 @ 00:04:51 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
-[P-24] Session 2025-09-30 @ 01:43:07 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
-[P-30] Session 2025-11-18 @ 00:06:45 (https://www.youtube.com/watch?v=w__ahowb9p0)
-[P-33] Session 2026-01-13 @ 00:23:28 (https://www.youtube.com/watch?v=w4LB1s9_3rs)
-[P-34] Session 2026-01-20 @ 01:26:52 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
-[P-38] Session 2026-02-24 @ 00:05:16 (https://www.youtube.com/watch?v=WOFArbwDDIQ)
+1. Session 2025-07-29 @ 00:00:39 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
+2. Session 2025-08-12 @ 00:43:30 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)
+3. Session 2025-08-20 @ 00:19:20 (https://www.youtube.com/watch?v=-XbO3FLSL_I)
+4. Session 2025-09-09 @ 01:50:05 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
+5. Session 2025-09-17 @ 00:04:51 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
+6. Session 2025-09-30 @ 01:43:07 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+7. Session 2025-11-18 @ 00:06:45 (https://www.youtube.com/watch?v=w__ahowb9p0)
+8. Session 2026-01-13 @ 00:23:28 (https://www.youtube.com/watch?v=w4LB1s9_3rs)
+9. Session 2026-01-20 @ 01:26:52 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
+10. Session 2026-02-24 @ 00:05:16 (https://www.youtube.com/watch?v=WOFArbwDDIQ)

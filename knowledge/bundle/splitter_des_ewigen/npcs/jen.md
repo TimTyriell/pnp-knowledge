@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Jen (Schreiberin)
-description: Jen ist ein Mann, den die Gruppe an der Kapelle trifft. Er warnt sie
-  vor dem Tod und sagt, ihre Seelen würden gut aufbewahrt. Er wirkt gehe…
+description: Jen ist ein Gelehrter, der an der Kapelle Notizen macht. Er warnt die
+  Gruppe, dass sie dem Tod entgegenblicken, und verrät seinen Namen, ze…
 tags:
 - npcs
 timestamp: '2026-06-10T00:00:00Z'
@@ -11,7 +11,7 @@ aliases:
 - Jen
 ---
 
-Jen ist ein Mann, den die Gruppe an der [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) trifft. Er warnt sie vor dem Tod und sagt, ihre Seelen würden gut aufbewahrt. Er wirkt geheimnisvoll und schreibt Notizen.
+Jen ist ein Gelehrter, der an der [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) Notizen macht. Er warnt die Gruppe, dass sie dem Tod entgegenblicken, und verrät seinen Namen, zeigt aber keine Feindseligkeit.
 
 # Belege
 

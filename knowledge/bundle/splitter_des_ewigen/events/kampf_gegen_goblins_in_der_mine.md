@@ -12,7 +12,7 @@ aliases:
 - Kampf gegen die Goblins in der Mine
 ---
 
-Der **Kampf gegen Goblins in der Mine** war eine Auseinandersetzung zwischen der Abenteurergruppe und einer Gruppe Goblins, die von einem Bogenschützen unterstützt wurde. Die Überlieferung schildert ihn als kurzen Kampf, der für die Gruppe siegreich endete. In einer späteren Quelle wird er als der erste Kampf der Gruppe bezeichnet.
+Der **Kampf gegen [Goblins](/npcs/pilz_goblins.md) in der Mine** war eine Auseinandersetzung zwischen der Abenteurergruppe und einer Gruppe Goblins, die von einem Bogenschützen unterstützt wurde. Die Überlieferung schildert ihn als kurzen Kampf, der für die Gruppe siegreich endete. In einer späteren Quelle wird er als der erste Kampf der Gruppe bezeichnet.
 
 ## Verlauf
 

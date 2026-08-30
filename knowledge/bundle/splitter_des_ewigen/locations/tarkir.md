@@ -2,29 +2,30 @@
 type: Location
 title: Tarkir
 description: Tarkir ist eine Region, die seit zwölf Jahren von der Außenwelt abgeschottet
-  ist. Sie ist die Heimat von Vargo und Dodo sowie der Ursprung…
+  war. Sie ist die Heimat von Vargo und Dodo sowie der Herkunfts…
 tags:
 - locations
 timestamp: '2026-08-25T00:00:00Z'
 id: LOC_TARKIR
 subtype: Siedlung
 aliases:
+- Tarkir
 - Takir
 ---
 
-Tarkir ist eine Region, die seit zwölf Jahren von der Außenwelt abgeschottet ist. Sie ist die Heimat von [Vargo](/npcs/vargo.md) und [Dodo](/characters/dodo.md) sowie der Ursprung des Obsidians, das in [Edmunds](/npcs/sir_edmund.md) Rüstung verarbeitet ist. Über den von [Jorah Vanur](/npcs/jorah_vanur.md) erschlossenen Hafen zeichnet sich ein Zugang zu der Region ab.
+Tarkir ist eine Region, die seit zwölf Jahren von der Außenwelt abgeschottet war. Sie ist die Heimat von [Vargo](/npcs/vargo.md) und [Dodo](/characters/dodo.md) sowie der Herkunftsort des Obsidians, das in [Edmunds](/npcs/sir_edmund.md) Rüstung verarbeitet ist.
 
-## Abgeschottete Region und Zugang
+## Abschottung und Zugang
 
-Zwölf Jahre lang war Tarkir abgeschottet. [Jorah Vanur](/npcs/jorah_vanur.md) hat einen Hafen erschlossen und bietet der Gruppe an, sie dorthin mitzunehmen.
+Tarkir war zwölf Jahre lang abgeschottet. [Jorah Vanur](/npcs/joar_vanur.md) hat einen Hafen erschlossen, der den Zugang zur Region ermöglicht, und bietet der Gruppe an, sie mitzunehmen.
 
-## Herkunft des Obsidians
+## Bedeutung
 
-Aus Tarkir stammt das Obsidian, das in [Edmunds](/npcs/sir_edmund.md) Rüstung verarbeitet ist. [Joao](/events/joao_faellt_ins_wasser.md) warnt davor, dass der Lord von Willough davon erfahren könnte.
+Aus Tarkir stammt das Obsidian, das in [Edmunds](/npcs/sir_edmund.md) Rüstung verarbeitet ist. [Joao](/events/joao_faellt_ins_wasser.md) warnt davor, dass der Lord von Willough von dieser Herkunft erfahren könnte.
 
-## Heimat von Vargo und Dodo
+## Heimat der Gefährten
 
-Tarkir ist die Heimat von [Vargo](/npcs/vargo.md) und [Dodo](/characters/dodo.md). [Vargo](/npcs/vargo.md) erinnert sich nur vage an die Region.
+[Vargo](/npcs/vargo.md) und [Dodo](/characters/dodo.md) stammen aus Tarkir. [Vargo](/npcs/vargo.md) erinnert sich nur vage an die Region.
 
 # Belege
 

@@ -8,7 +8,9 @@ rejected, the entry says so and why, so it is not re-proposed.
 
 ## I-002 — A ruling should reach every entry that depends on it
 
-**Status:** proposed, 2026-07-27. Not scheduled.
+**Status:** proposed, 2026-07-27. Not scheduled. Planned out 2026-08-29 in
+[PLAN-canon-rulings-routing.md](PLAN-canon-rulings-routing.md), which folds this
+into a wider restructure of `Kanon_Entscheidungen.md` — not yet implemented.
 
 `context.sources_for()` attaches a `knowledge/sources/` section to an entity by
 matching the section heading against that entity's name. So a ruling about

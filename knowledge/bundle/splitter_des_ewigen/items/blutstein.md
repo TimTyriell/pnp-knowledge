@@ -10,7 +10,7 @@ id: ITEM_BLUTSTEIN
 subtype: Artefakt
 ---
 
-Ein magischer Stein, der an einer Waffe befestigt werden kann und ihr die Eigenschaft 'Brutal' verleiht. Bruma findet ihn bei den Überresten des [Gnoll](/npcs/gnoll.md)-Anführers.
+Ein magischer Stein, der an einer Waffe befestigt werden kann und ihr die Eigenschaft 'Brutal' verleiht. Bruma findet ihn bei den Überresten des Gnoll-Anführers.
 
 # Belege
 

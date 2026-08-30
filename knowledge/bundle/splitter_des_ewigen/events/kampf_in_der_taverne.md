@@ -10,7 +10,7 @@ id: EVENT_KAMPF_IN_DER_TAVERNE
 subtype: Kampf
 ---
 
-In der [Taverne](/locations/taverne.md) auf dem gestrandeten Schiff kommt es zu einem Kampf zwischen [Harald](/npcs/freibeuter_harald.md) und den Soldaten von [Willauch](/locations/willauch.md). [Rotunas](/characters/rotunas.md) verschließt die Tür, und Lunara wirkt einen Zauber, der alle in Trance versetzt, wodurch Harald fliehen kann.
+In der Taverne auf dem gestrandeten Schiff kommt es zu einem Kampf zwischen [Harald](/npcs/freibeuter_harald.md) und den Soldaten von [Willauch](/locations/willauch.md). [Rotunas](/characters/rotunas.md) verschließt die Tür, und Lunara wirkt einen Zauber, der alle in Trance versetzt, wodurch Harald fliehen kann.
 
 # Belege
 

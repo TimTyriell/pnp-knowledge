@@ -14,7 +14,7 @@ Die **Gilde von Ringtal** ist eine alte Gilde in [Ringtal](/locations/ringtal.md
 
 ## Zustand
 
-Die Gilde wird als alt beschrieben und ist zum Zeitpunkt der Erwähnung nahezu verwaist [1]. Weitere Details zu ihrer ursprünglichen Funktion, Mitgliedern oder Geschichte sind nicht bekannt.
+[Die Gilde](/factions/gilde_von_ehrenfels.md) wird als alt beschrieben und ist zum Zeitpunkt der Erwähnung nahezu verwaist [1]. Weitere Details zu ihrer ursprünglichen Funktion, Mitgliedern oder Geschichte sind nicht bekannt.
 
 ## Reaktivierungsvorschlag
 

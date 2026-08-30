@@ -1,15 +1,15 @@
 ---
 type: NPC
-title: Trillo
-description: Trillo ist ein Jäger und Ordensbruder, der die Gruppe auf ihrer Expedition
-  begleitet. Er hat Narben im Gesicht und eine vernarbte Hand. Er…
+title: Trilo
+description: Trilo ist der Jäger von Nebelwacht, ein vernarbter Mann mit einem leuchtenden
+  Stab. Er ist Mitglied eines Ordens und auf Schutzmagie spezia…
 tags:
 - npcs
 timestamp: '2026-05-27T00:00:00Z'
 id: NPC_TRILLO
 ---
 
-Trillo ist ein Jäger und Ordensbruder, der die Gruppe auf ihrer Expedition begleitet. Er hat Narben im Gesicht und eine vernarbte Hand. Er ist auf Schutzmagie spezialisiert und kann teleportieren. Er erweist sich als zwielichtig, da er die Gruppe in eine [Falle](/events/falle.md) führt und mit [Kalos](/npcs/organisation_der_kalos.md) zusammenarbeitet. Am [Ende](/locations/ende_jenseits_der_orkgebiete.md) stellt sich heraus, dass er Teil der Illusion ist.
+Trilo ist der Jäger von [Nebelwacht](/locations/nebelwacht.md), ein vernarbter Mann mit einem leuchtenden [Stab](/items/lindo_lauts_stab.md). Er ist Mitglied eines Ordens und auf Schutzmagie spezialisiert. Er führt die Gruppe in den Nebel, gibt aber zu, die vorherige Gruppe im Stich gelassen zu haben. Er stellt sie [Kalos](/npcs/organisation_der_kalos.md) vor und entpuppt sich als Verräter, der mit Kalos zusammenarbeitet. Er teleportiert sich weg, als der Kampf beginnt.
 
 # Belege
 

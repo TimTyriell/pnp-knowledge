@@ -1,32 +1,31 @@
 ---
 type: NPC
 title: Leandras
-description: Leandras ist ein Menschenmagier, der zunächst zurückgezogen in einem
-  kleinen Haus im Dorf Brechka lebt und sich später als zentrale Figur b…
+description: Leandras ist ein Menschenmagier, der zurückgezogen in Breska lebt. Die
+  Gruppe begegnet ihm zunächst abweisend, später wird er zu einem wich…
 tags:
 - npcs
-timestamp: '2025-07-29T00:00:00Z'
+timestamp: '2026-06-10T00:00:00Z'
 id: NPC_LENDRAS
 aliases:
 - Lendras
 ---
 
-Leandras ist ein Menschenmagier, der zunächst zurückgezogen in einem kleinen Haus im Dorf Brechka lebt und sich später als zentrale Figur bei der Verteidigung der Gruppe erweist. Er ist der Magier des Dorfes, wird von der Gruppe gesucht und führt sie schließlich in die Katakombe, in der er den Bann über Voras bricht. Anders als sein anfängliches Verhalten vermuten lässt, unterstützt er die Gruppe später aktiv und verlässt mit ihr die Insel.
+Leandras ist ein Menschenmagier, der zurückgezogen in [Breska](/locations/breska.md) lebt. Die Gruppe begegnet ihm zunächst abweisend, später wird er zu einem wichtigen Verbündeten.
 
-## Rolle und Verlauf
+## Rolle und Wesen
 
-In Brechka begegnet Leandras den Besuchern zunächst unwirsch und verweist sie an den Bürgermeister [Berthold](/npcs/berthold.md). Seine Tür ist magisch mit einer Rune versiegelt, was darauf hindeutet, dass er etwas zu verbergen hat. Er ist zu diesem Zeitpunkt nicht bereit, bei der Verteidigung zu helfen, und bleibt zunächst nicht verfügbar.
+Leandras ist ein Menschenmagier. Er lebt zurückgezogen in einem Haus in Breska; seine Tür ist mit einer magischen Rune gesichert, die auf ein Geheimnis hindeutet. Er ist beschäftigt, und als die Gruppe ihn nach Essen und Zaubersprüchen fragt, weist er sie ab. Er wird als möglicher Verbündeter gehandelt, zunächst aber nicht für den Kampf gewonnen. Später bittet er die Gruppe um Vertrauen und wirkt gestresst und geheimnisvoll. Er ist wissbegierig.
 
-Später wird Leandras von einem Kenku angegriffen, den er mit einem Blitz tötet. Er übergibt [Esterossa](/characters/esterossa.md) einen magischen Schlüssel und führt die Gruppe zu einer Katakombe. Dort bricht er den Bann über [Voras](/npcs/voras.md) und erweckt ihn. Dabei wirkt er gestresst und geheimnisvoll, bittet die Gruppe um Vertrauen und erklärt, dass die Hack nach Voras’ Gemahlin sucht.
+## Begegnungen und Wirken
 
-In einer späteren Begegnung hat Leandras die Gruppe gerufen und hilft bei der Verteidigung. Als [Dranara](/npcs/dranara.md) die Gruppe angreifen will, wirkt er einen Schlafzauber auf sie. Er ist entsetzt über die Ereignisse und verlässt schließlich mit der Gruppe die Insel.
+Bei einem späteren Aufeinandertreffen wird Leandras von einem [Kenku](/npcs/kenku.md) angegriffen und tötet ihn mit einem Blitz. Er übergibt [Esterossa](/characters/esterossa.md) einen magischen [Schlüssel](/items/magischer_schluessel.md) und führt die Gruppe zu einer [Katakombe](/locations/katakombe.md). Dort bricht er den Bann über [Voras](/npcs/voras.md) und erweckt ihn. Er erklärt, dass die [Hag](/npcs/lenra.md) nach Voras' Gemahlin sucht.
 
-## Eigenschaften und Geheimnisse
-
-Leandras zeigt über die Begegnungen hinweg widersprüchliche Züge: zunächst genervt und zurückgezogen, später wissbegierig und hilfsbereit. Seine gestresste, geheimnisvolle Art und die magisch versiegelte Tür deuten auf ein verborgenes Geheimnis hin, das in den Belegen jedoch nicht näher ausgeführt wird. Deutlich wird nur, dass er über magische Fähigkeiten verfügt, die er sowohl als Blitzangriff als auch als Schlafzauber einsetzt, und dass er Zugang zu den Katakomben und deren Bannmechanismen hat.
+In einer weiteren Begegnung ruft er die Gruppe herbei. Er hilft bei der Verteidigung, und als [Dranara](/npcs/dranara.md) die Gruppe angreifen will, wirkt er einen Schlafzauber auf sie. Er ist entsetzt über die Ereignisse und verlässt mit der Gruppe die Insel. [Lunara](/characters/lunara_velora.md) besitzt eine Feder von ihm, die sie einmal geheilt hat.
 
 # Belege
 
 [P-03] Session 2025-04-09 @ 00:08:51 – https://www.youtube.com/watch?v=1PWdwvun5ow
 [P-05] Session 2025-04-23 @ 01:32:25 – https://www.youtube.com/watch?v=z3C-bewKqUs
 [P-16] Session 2025-07-29 @ 00:06:48 – https://www.youtube.com/watch?v=XXgO5Ht4Q0A
+[P-53] Session 2026-06-10 @ 00:14:30 – https://www.youtube.com/watch?v=_3tLSiT1tck

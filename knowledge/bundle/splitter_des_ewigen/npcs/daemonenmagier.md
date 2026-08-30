@@ -9,7 +9,7 @@ timestamp: '2026-04-09T00:00:00Z'
 id: NPC_DAEMONENMAGIER
 ---
 
-Ein mächtiger Magier, der die [Dämonen](/factions/daemonen.md) anführt und die [Kinder](/npcs/kinder.md) angreift. Er wird von [Rotunas](/characters/rotunas.md) getötet, nachdem er mehrere Angriffe überlebt hat.
+Ein mächtiger Magier, der die [Dämonen](/factions/daemonen.md) anführt und die Kinder angreift. Er wird von [Rotunas](/characters/rotunas.md) getötet, nachdem er mehrere Angriffe überlebt hat.
 
 # Belege
 

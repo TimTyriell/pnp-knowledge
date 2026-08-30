@@ -1,67 +1,83 @@
 ---
 type: Character
 title: Valeria
-description: Valeria ist eine Simia (Affenmagierin) aus einem Nomadenvolk, die als
-  Magierin der Gruppe angehört. Sie ist eine Feuermagierin, die mit ein…
+description: Valeria ist eine Magierin vom Nomadenvolk der Simia, die sich auf Feuermagie
+  spezialisiert hat. Sie ist kleinwüchsig und reitet bevorzugt a…
 tags:
 - characters
 timestamp: '2025-11-14T00:00:00Z'
 id: CHAR_VALERIA
+aliases:
+- Valerie
 ---
 
 # Valeria
 
 ## Überblick
 
-Valeria ist eine Simia (Affenmagierin) aus einem Nomadenvolk, die als Magierin der Gruppe angehört. Sie ist eine Feuermagierin, die mit einem Great Staff kämpft und eine Pilotenbrille mit verschiedenen Zaubergläsern trägt. Zu ihren charakteristischen Eigenschaften zählen ihre Neugier, ihr Mitgefühl und ihre entschlossene Art im Kampf. Sie hat ein Flammentier als Begleiter.
+Valeria ist eine Magierin vom Nomadenvolk der Simia, die sich auf Feuermagie spezialisiert hat. Sie ist kleinwüchsig und reitet bevorzugt auf der Schulter ihres Gefährten [Rotunas](/characters/rotunas.md), was ihr den Spitznamen „frecher Größenunterschied“ eingebracht hat. Sie trägt eine Pilotenbrille mit verschiedenen Zaubergläsern und führt ein Flammentier als Begleiter mit sich. Valeria ist neugierig, hungrig und probiert gerne Essen und Trinken, zeigt aber auch Mitgefühl und Hilfsbereitschaft gegenüber Verletzten. Sie ist pragmatisch, entschlossen und mutig im Kampf, dabei aber auch misstrauisch gegenüber Fremden.
 
 ## Rolle in der Kampagne
 
-Valeria ist eine der zentralen Gefährtinnen der Gruppe, die sich durch die Gildenhalle kennengelernt haben. Sie begleitet die Gruppe auf ihrer Reise und übernimmt dabei die Rolle der Magierin und Feuerkämpferin. In Kämpfen ist sie eine der Hauptschadensverursacherinnen: Sie tötet einen Goblin-Späher, einen Oger mit einem Feuerstrahl sowie mehrere Goblins mit Wild Flame. Sie zeigt sich dabei als mutig und entschlossen.
-
-Über ihre Kampfrolle hinaus ist Valeria neugierig und forschend: Sie erkundet das Dorf, klettert durch ein Fenster zum Magier Leandras und forscht in ihren Studien nach, um Rätsel zu lösen. Sie zeigt wiederholt Mitgefühl, etwa indem sie einem betrunkenen Nip hilft oder einen verletzten Bauern heilt.
-
-Im Verlauf der Kampagne verlässt Valeria die Gruppe: Sie schreibt einen Brief, in dem sie sich abmeldet, um in ihrer Heimat ein Kind zu erwarten. Sie schickt der Gruppe zwei Säcke Gold und einen Ring als Abschiedsgeschenk.
+Valeria ist eine zentrale Figur der Gruppe, die sich um Rotunas und seine Gefährten gebildet hat. Sie ist die Magierin des Teams und übernimmt im Kampf die Rolle der Fernkämpferin mit ihren Feuerzaubern. Sie ist eine ehemalige Gefährtin der Gruppe, die sich im Verlauf der Kampagne abmeldet, um in ihrer Heimat ein Kind zu erwarten. Ihr Abschiedsbrief, den sie der Gruppe überbringen lässt, markiert einen Wendepunkt in der Kampagne.
 
 ## Wichtige Merkmale
 
-**Äußere Erscheinung und Ausrüstung:** Valeria ist eine Simia, also eine affenartige Gestalt, was zu einem deutlichen Größenunterschied zu ihren Gefährten führt – sie kann von Rotunas auf die Schulter genommen werden. Sie trägt eine Pilotenbrille beziehungsweise Fliegerbrille mit verschiedenen Zaubergläsern und führt einen Great Staff als Waffe. Zudem besitzt sie eine Nomadentasche, aus der sie etwa eine Hammelkeule als Köder hervorholt.
+### Fähigkeiten
 
-**Magische Fähigkeiten:** Valeria ist eine Feuermagierin, die fast ausschließlich mit Feuer experimentiert. Sie nutzt verschiedene Feuerzauber: einen dünnen Feuerstrahl aus ihrem Stab, Wild Flame gegen mehrere Gegner sowie einen Bannen-Zauber, um Ketten zu lösen. Beim Bannen-Zauber zeigt sich ihre Spezialisierung auf Feuer: Statt die Ketten kalt zu zerbersten, erhitzt sie sie, bis das Metall rotglühend tropft und sich auflöst. Sie beherrscht den Bannen-Zauber nur mit Nachteil, da sie ihn früher gelernt, aber nie gut beherrscht hat und ihn nicht in ihrem täglichen Repertoire führt.
+Valeria ist eine Magierin, die sich fast ausschließlich auf Feuermagie spezialisiert hat. Sie „experimentiert immer gerne viel mit Feuer“, wie sie selbst sagt, und ihre Magie ist „fast immer Feuer“. Sie beherrscht mehrere Feuerzauber:
 
-**Wesenszüge:** Valeria ist neugierig und hungrig, was sich etwa darin zeigt, dass sie das Dorf erkundet und durch ein Fenster zum Magier Leandras klettert. Sie ist misstrauisch gegenüber fremden Magiern und Personen wie Voras, zeigt aber gleichzeitig Hilfsbereitschaft. Im Kampf ist sie entschlossen und mutig. Sie hat ein ausgeprägtes Gespür für magische Gegenstände: Als sie den Speer anfasst, spürt sie eine Kälte, die von ihm ausgeht, und ihre Haare sträuben sich – sie lehnt den Speer daraufhin ab und gibt ihn an Cookie weiter.
+- **Feuerstrahl**: Ein dünner, fokussierter Feuerstrahl, den sie aus ihrem [Stab](/items/lindo_lauts_stab.md) abfeuert. Sie kann damit mehrere Gegner in einer Reihe treffen, wie sie es bei einer Dreier-Goblin-Reihe demonstriert.
+- **Wild Flame**: Ein weiterer Feuerzauber, mit dem sie mehrere [Goblins](/npcs/pilz_goblins.md) gleichzeitig tötet.
+- **Drei Funken**: Ein Zauber, bei dem sie drei Funken auf eine Kreatur abfeuert, der jedoch weniger Schaden anrichtet.
+
+Sie trägt eine Fliegerbrille mit verschiedenen Zaubergläsern, die sie im Kampf nutzt. Zudem besitzt sie eine [Nomadentasche](/items/nomadentasche.md), aus der sie Gegenstände wie eine Hammelkeule als Köder hervorholt. Sie kauft sich eine Armbrust vom [Bürgermeister](/npcs/buergermeister_spitzzahn.md) des Dorfes.
+
+### Auftreten
+
+Valeria ist eine Simia, also ein Mitglied des Nomadenvolks. Sie ist klein genug, um auf Rotunas' Schulter zu reiten, was der Spielleiter als „frechen Größenunterschied“ kommentiert. Sie trägt eine Pilotenbrille und hat ein Flammentier als Begleiter.
+
+### Wesenszüge
+
+Valeria ist neugierig und hungrig, probiert gerne Essen und Trinken. Sie zeigt Mitgefühl, als sie den betrunkenen Nip behandelt, und hilft einem verletzten Bauern, indem sie ihn heilt. Sie ist pragmatisch und sucht nach Auswegen aus schwierigen Situationen, zeigt aber auch Entschlossenheit und Mut im Kampf. Gegenüber Fremden wie dem Magier und [Voras](/npcs/voras.md) ist sie misstrauisch. In gefährlichen Situationen ist sie bereit zu kämpfen, aber auch vorsichtig. Ihre pragmatische Art zeigt sich etwa, als sie in einer bedrohlichen Lage zu [Esterossa](/characters/esterossa.md) sagt: „Das ist dein Problem, wirklich. Das ist dein Problem. Wir sind hier am Abgrund. Hier geht es etwa 3 Millionen Größen von mir nach unten und du hast ein Problem, weil du ein bisschen blass bist.“
 
 ## Beziehungen und Verbindungen
 
-**Zur Gruppe:** Valeria ist eine enge Gefährtin der Gruppe, mit der sie sich durch die Gildenhalle kennengelernt hat. Sie arbeitet eng mit Rotunas zusammen, der sie aufgrund ihrer geringen Größe auf die Schulter nehmen kann. Zu ihren weiteren Gefährten zählen Lindo Laut, Esterossa und Cookie. Ihr Abschiedsbrief ist an „Rotunas und seinen treuen Gefährten“ gerichtet, was ihre besondere Verbindung zu Rotunas unterstreicht.
-
-**Zum Magier Leandras:** Valeria klettert durch ein Fenster zum Magier Leandras, um ihn zu treffen. Sie ist ihm gegenüber misstrauisch.
-
-**Zu Voras:** Valeria ist auch gegenüber Voras misstrauisch.
-
-**Zu Nerash:** Valeria ist neugierig auf Nerash und betet nach der Rückkehr zu ihr, obwohl sie nicht weiß, wie man betet.
-
-**Zum Speer:** Valeria nimmt den Speer an sich, nachdem sie die Ketten gelöst hat, lehnt ihn aber aufgrund der unangenehmen Kälte, die von ihm ausgeht, ab und gibt ihn an Cookie weiter.
+- **Rotunas**: Ihr enger Gefährte, auf dessen Schulter sie reitet. Sie kennt ihn gut genug, um zu wissen, dass er sie auf die Schulter nehmen kann. In ihrem Abschiedsbrief richtet sie sich an „Rotunas und seine treuen Gefährten“.
+- **Esterossa**: Eine Gefährtin, mit der sie sich in angespannten Situationen einen trockenen Schlagabtausch liefert.
+- **[Cookie](/characters/cookie.md)**: Eine Gefährtin, deren Blässe sie in einer bedrohlichen Lage nicht als Problem gelten lässt.
+- **[Lindo Laut](/characters/lindo_laut.md)**: Ein Gefährte, mit dem sie während des Rituals in Kontakt stand und der dadurch offenbar andere in die [Festung](/locations/festung.md) gezogen hat.
+- **[Dodo](/characters/dodo.md)**: Ein Gefährte, der ebenfalls in die Festung gezogen wurde.
+- **[Horatio](/npcs/horatio.md)**: Ein Goblin, der den Abschiedsbrief überbringt und sich an den Goldsäcken bedient.
 
 ## Chronologie
 
-**Session 2025-04-09:** Valeria kommt mit der Gruppe im Dorf an. Sie wird von Rotunas auf die Schulter genommen, da sie deutlich kleiner ist. Sie erkundet das Dorf neugierig und hungrig, klettert durch ein Fenster zum Magier Leandras, schüchtert Wachen ein und überzeugt Tindrael mit einem Knowledge-Wurf. Im Kampf gegen den Goblin-Späher nutzt sie ihren Great Staff für Feuerangriffe und tötet den Goblin schließlich. Sie zeigt Mitgefühl, indem sie dem betrunkenen Nip hilft.
+### Session 2025-04-09: Ankunft im Dorf
 
-**Session 2025-04-23:** Valeria kämpft mit Feuerzaubern und nutzt ihre Fliegerbrille mit verschiedenen Zaubergläsern. Sie tötet den Oger mit einem Feuerstrahl und später mehrere Goblins mit Wild Flame. In einem Kampf gegen eine Dreier-Goblin-Reihe schießt sie einen Feuerstrahl, der zwei der drei Goblins trifft, während der dritte zur Seite springen kann. Sie nutzt ihre Nomadentasche, um eine Hammelkeule als Köder zu verwenden. Sie ist misstrauisch gegenüber dem Magier und Voras, zeigt aber Hilfsbereitschaft, indem sie einen verletzten Bauern heilt.
+Valeria kommt mit der Gruppe im Dorf an, das von einem Goblin-Problem geplagt ist. Sie reitet auf Rotunas' Schulter und erkundet mit ihm das Dorf. Sie behandelt den betrunkenen Nip mit Mitgefühl. Im [Kampf gegen den Goblin-Späher](/events/kampf_gegen_den_goblin_spaeher.md) erweist sie sich als effektiv, indem sie ihn mit einem Feuerstrahl tötet. Sie kauft eine Armbrust vom Bürgermeister und trägt ihre Pilotenbrille. Ihr Flammentier begleitet sie.
 
-**Session 2025-07-09:** Valeria forscht in ihren Studien nach, ob sie einen Öffne-Dich-Zauber kennt. Sie weiß, dass es einen Bannen-Zauberspruch gibt, beherrscht ihn aber nur schlecht und versucht ihn im Nachteil. Sie löst die Ketten um den Speer, indem sie sie mit Hitze zum Schmelzen bringt. Sie pustet die Kerze an der Statue aus, was die Kreatur erscheinen lässt. Sie ist neugierig auf Nerash und betet nach der Rückkehr zu ihr, obwohl sie nicht weiß, wie man betet. Sie nimmt den Speer an sich, spürt die unangenehme Kälte, die von ihm ausgeht, und gibt ihn an Cookie weiter.
+### Session 2025-04-23: Kampf gegen Oger und Goblins
 
-**Session 2025-11-14:** Valeria ist nicht mehr bei der Gruppe. Sie schreibt einen Brief, den ein Rabe überbringt und der Horatio in die Hand gedrückt wird. In dem Brief, der an „Rotunas und seinen treuen Gefährten“ adressiert ist, teilt sie mit, dass sie in ihrer Heimat ein Kind erwartet und sich vorerst von der Gruppe verabschieden muss. Sie hat zwei Säcke Gold geschickt, die sie durch den Verkauf alter Schätze aus ihrem Keller zusammengebracht hat, sowie einen Ring, den sie zwischen Staub und Spinnweben entdeckt hat und von dem sie nicht sagen kann, ob er Glück oder Gefahr bringt. Sie kündigt an, gut auf die Nacht zu geben und den Weiser einzusetzen, wenn die Zeit gekommen ist. Der Goblin, der die Brieftaube entgegengenommen hat, bedient sich an den beiden Goldsäcken, bevor die Gruppe sie erhält.
+Valeria kämpft mit Feuerzaubern gegen den [Oger](/npcs/oger.md) und tötet ihn mit einem Feuerstrahl. Später tötet sie mehrere Goblins mit Wild Flame. Sie nutzt ihre Nomadentasche, um eine Hammelkeule als Köder zu verwenden. Sie ist misstrauisch gegenüber dem Magier und Voras, zeigt aber Hilfsbereitschaft, indem sie einen verletzten Bauern heilt. Im Kampf gegen die Goblin-Reihe demonstriert sie ihre Fähigkeit, mehrere Gegner mit einem Feuerstrahl zu treffen: „Ich finde es sehr cool, dass diese, wenn man von mir aus guckt, dass da genau so eine Dreier-Goblin-Reihe steht. So ziemlich genau entschlussreich. Das heißt, wenn ich den ersten verfehle, dann trifft es vielleicht den zweiten und wenn ich den zweiten verfehle, dann trifft es vielleicht den dritten.“
+
+### Session 2025-07-09: Die Festung und das Ritual
+
+Valeria wird zusammen mit anderen Gefährten in eine fremde Festung gezogen, offenbar durch ein Ritual, das mit [Lindo Lauts Amulett](/items/amulett_des_heiligen_duran.md) zusammenhängt. Sie ist verwirrt über die Situation: „Wo sind wir hier reingeraten? Ich war doch eben noch an der Kirche.“ Sie zeigt Pragmatismus und sucht nach einem Ausweg. Sie zerstört die Ketten, die den [Speer](/items/speer.md) halten, und pustet die Kerze an der Statue von [Nerash](/deities/nerash.md) aus, was die Kreatur freisetzt. Sie ist bereit zu kämpfen, aber auch vorsichtig. Am Ende betet sie zu Nerash und bietet sich als treue Dienerin an.
+
+### Session 2025-11-14: Der Abschiedsbrief
+
+Valeria hat die Gruppe verlassen. Sie schreibt einen [Brief](/items/brief.md), den ein Rabe überbringt und der an Rotunas adressiert ist. In dem Brief teilt sie mit, dass sie in ihre Heimat zurückkehrt, um ein Kind zu erwarten: „Mit schwerem Herzen schreibe ich diese Zeilen. So sehr es mich auch danach drängt, an deiner Seite weiter durch die Lande zu ziehen, muss ich dir mitteilen, dass sich unsere Wege vorerst nicht kreuzen können. In meiner Heimat gibt es viel vorzubereiten.“ Sie schickt zwei Säcke Gold und einen Ring, den sie in ihren alten Gemäuern gefunden hat. Sie schreibt: „Ich kann nicht sagen, ob es Glück bringt oder Gefahr bringt, aber ich spüre, dass er für die Gruppe voll Nutzen sein kann. Ich gebe gut auf die Nacht und setze den Weiser ein, wenn die Zeit gekommen ist.“ Der Goblin Horatio, der den Brief überbringt, bedient sich an den Goldsäcken, bevor er sie der Gruppe übergibt.
 
 ## Offene Fragen
 
-- Was genau bedeutet Valeries Ankündigung, „gut auf die Nacht zu geben und den Weiser einzusetzen, wenn die Zeit gekommen ist“? Welche Rolle spielt der Weiser?
-- Was ist die Natur des Rings, den Valeria der Gruppe geschickt hat – bringt er Glück oder Gefahr?
-- Wird Valeria nach der Geburt ihres Kindes zur Gruppe zurückkehren?
+- Was genau ist mit „Ich gebe gut auf die Nacht und setze den Weiser ein, wenn die Zeit gekommen ist“ gemeint? Welcher „Weiser“ wird hier erwähnt?
+- Welche Bedeutung hat der Ring, den Valeria der Gruppe schickt? Bringt er Glück oder Gefahr?
+- Was ist aus Valerias Flammentier geworden?
+- Wie wird Valerias Kind in die Kampagne hineinspielen, falls es wieder auftaucht?
 
-# Belege
+## Belege
 
 [P-03] Session 2025-04-09 @ 00:04:18 (https://www.youtube.com/watch?v=1PWdwvun5ow)
 [P-05] Session 2025-04-23 @ 00:33:16 (https://www.youtube.com/watch?v=z3C-bewKqUs)
-[P-14] Session 2025-07-09 @ 00:23:08 (https://www.youtube.com/watch?v=XOnHa6CmDbo)
+[P-14] Session 2025-07-09 @ 00:06:12 (https://www.youtube.com/watch?v=XOnHa6CmDbo)
 [P-29] Session 2025-11-14 @ 01:43:18 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)

@@ -10,7 +10,7 @@ id: LOC_TIEFWASSER
 subtype: Siedlung
 ---
 
-Tiefwasser ist eine kleine Hafenstadt, die als letzte menschliche Grenze vor dem Ork-Gebiet gilt. Sie ist wichtig für den Handel mit den [Sanddorninseln](/locations/sanddorninseln.md) und wird von [Willauch](/locations/willauch.md) kontrolliert. Die Stadt hat eine [Gilde der Schilde](/factions/gilde_der_schilde.md), eine [Taverne](/locations/taverne.md) namens „[Zum grünen Sichelmond](/locations/zum_gruenen_sichelmond_von_tiefwasser.md)“ und eine weitere Taverne auf einem gestrandeten Schiff.
+Tiefwasser ist eine kleine Hafenstadt, die als letzte menschliche Grenze vor dem [Ork-Gebiet](/locations/orkgebiet.md) gilt. Sie ist wichtig für den Handel mit den [Sanddorninseln](/locations/sanddorninseln.md) und wird von [Willauch](/locations/willauch.md) kontrolliert. Die Stadt hat eine [Gilde der Schilde](/factions/gilde_der_schilde.md), eine Taverne namens „[Zum grünen Sichelmond](/locations/zum_gruenen_sichelmond_von_tiefwasser.md)“ und eine weitere Taverne auf einem gestrandeten Schiff.
 
 # Belege
 

@@ -12,7 +12,7 @@ aliases:
 - Taverne Kyla
 ---
 
-Die [Taverne](/locations/taverne.md) Kyla ist das Etablissement von [Baran](/npcs/baran.md) auf [Sanddorn](/locations/sanddorn.md). Sie ist gut besucht und beherbergt viele Anderlinge. In einem privaten Raum bewahrt Baran magische Gegenstände und Dokumente auf.
+[Die Taverne](/locations/taverne_von_ehrenfels.md) Kyla ist das Etablissement von [Baran](/npcs/baran.md) auf Sanddorn. Sie ist gut besucht und beherbergt viele Anderlinge. In einem privaten Raum bewahrt Baran magische Gegenstände und Dokumente auf.
 
 # Belege
 

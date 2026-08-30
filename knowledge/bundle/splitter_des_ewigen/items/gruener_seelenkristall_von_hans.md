@@ -9,10 +9,11 @@ timestamp: '2026-01-13T00:00:00Z'
 id: ITEM_GRUENER_SEELENKRISTALL_VON_HANS
 subtype: Artefakt
 aliases:
+- Der grüne Seelenstein
 - Seelenstein
 ---
 
-Ein grüner [Kristall](/items/kristall.md), der als Energiequelle für Teleportation dient. [Hans](/npcs/hans_wirt_zum_gruenen_sichelmond.md) übergibt [Rotunas](/characters/rotunas.md) einen [Seelenstein](/items/seelenstein_des_rotunas.md), der den untoten Krieger beschwört. Rotunas besitzt selbst einen Seelenstein.
+Ein grüner [Kristall](/items/gruener_kristall.md), der als Energiequelle für Teleportation dient. Hans übergibt [Rotunas](/characters/rotunas.md) einen Seelenstein, der den untoten Krieger beschwört. Rotunas besitzt selbst einen Seelenstein.
 
 # Belege
 

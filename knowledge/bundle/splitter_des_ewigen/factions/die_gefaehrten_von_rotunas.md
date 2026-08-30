@@ -12,7 +12,7 @@ aliases:
 - Rotunas Bande
 ---
 
-Die **Gefährten von Rotunas** sind eine Gruppe, die als Team in der Arena antritt. Vom Ansager werden sie als **„Rotunas Bande“** angekündigt. Der Gruppenname verweist auf [Rotunas](/characters/rotunas.md), einen Riesen (Klasse Giant im Daggerheart-Regelwerk).
+Die **Gefährten von [Rotunas](/characters/rotunas.md)** sind eine Gruppe, die als Team in der Arena antritt. Vom Ansager werden sie als **„Rotunas Bande“** angekündigt. Der Gruppenname verweist auf [Rotunas](/characters/rotunas.md), einen Riesen (Klasse Giant im Daggerheart-Regelwerk).
 
 ## Arena-Auftritte
 

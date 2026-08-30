@@ -10,7 +10,7 @@ id: EVENT_SPRENGUNG_DES_GANGS_IN_DER_SILBERGRUFT
 subtype: Sonstiges
 ---
 
-Um die Silberbestien einzusperren und den Zugang zu den tieferen Ebenen zu versiegeln, platziert [Lindo Laut](/characters/lindo_laut.md) zwei Zwergenbomben im Gang und zündet sie. Die Gruppe verlässt die [Mine](/locations/kristallmine.md), bevor die Sprengung erfolgt.
+Um die Silberbestien einzusperren und den Zugang zu den tieferen Ebenen zu versiegeln, platziert [Lindo Laut](/characters/lindo_laut.md) zwei Zwergenbomben im Gang und zündet sie. Die Gruppe verlässt die Mine, bevor die Sprengung erfolgt.
 
 # Belege
 

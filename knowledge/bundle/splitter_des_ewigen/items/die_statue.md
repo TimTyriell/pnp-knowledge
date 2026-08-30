@@ -10,7 +10,7 @@ id: ITEM_DIE_STATUE
 subtype: Artefakt
 ---
 
-Eine mysteriöse Statue, die sich scheinbar von selbst bewegt. Sie ähnelt Statuen, die die Gruppe in früheren Abenteuern gesehen hat. Sie enthält einen grünen [Kristall](/items/kristall.md), der zerstört werden kann. Die Statue scheint von einer fremden Macht gesteuert zu werden.
+Eine mysteriöse Statue, die sich scheinbar von selbst bewegt. Sie ähnelt Statuen, die die Gruppe in früheren Abenteuern gesehen hat. Sie enthält einen grünen [Kristall](/items/gruener_kristall.md), der zerstört werden kann. Die Statue scheint von einer fremden Macht gesteuert zu werden.
 
 # Belege
 

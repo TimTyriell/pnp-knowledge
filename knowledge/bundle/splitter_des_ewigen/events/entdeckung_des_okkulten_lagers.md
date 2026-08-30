@@ -10,7 +10,7 @@ id: EVENT_ENTDECKUNG_DES_OKKULTEN_LAGERS
 subtype: Entdeckung
 ---
 
-Die Gruppe entdeckt ein okkultes Lager mit einem Opferaltar und vielen geopferten Personen. [Lindo Laut](/characters/lindo_laut.md) hört die Stimmen in seinem [Amulett](/items/amulett_des_heiligen_duran.md), die ein Opfer fordern.
+Die Gruppe entdeckt ein okkultes Lager mit einem Opferaltar und vielen geopferten Personen. [Lindo Laut](/characters/lindo_laut.md) hört die Stimmen in seinem Amulett, die ein Opfer fordern.
 
 # Belege
 

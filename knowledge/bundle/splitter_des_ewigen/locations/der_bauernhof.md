@@ -10,7 +10,7 @@ id: LOC_DER_BAUERNHOF
 subtype: Siedlung
 ---
 
-Ein Bauernhof in der Nähe von [Kleinringtal](/locations/ringtal.md), der von einer Horde [Goblins](/factions/goblins.md) bedroht wird. Die Gruppe soll die Bewohner überzeugen, sich der Verteidigung anzuschließen.
+Ein Bauernhof in der Nähe von [Kleinringtal](/locations/ringtal.md), der von einer Horde [Goblins](/npcs/pilz_goblins.md) bedroht wird. Die Gruppe soll die Bewohner überzeugen, sich der Verteidigung anzuschließen.
 
 # Belege
 

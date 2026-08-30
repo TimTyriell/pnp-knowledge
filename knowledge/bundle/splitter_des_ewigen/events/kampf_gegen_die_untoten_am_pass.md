@@ -10,7 +10,7 @@ id: EVENT_KAMPF_GEGEN_DIE_UNTOTEN_AM_PASS
 subtype: Kampf
 ---
 
-Die Gruppe verteidigt den [Pass](/locations/pass.md) gegen eine Armee Untoter unter der Führung eines [Todesritters](/npcs/todesritter.md). Der Kampf endet mit dem Sieg der Gruppe und dem Rückzug der Untoten.
+Die Gruppe verteidigt den Pass gegen eine Armee Untoter unter der Führung eines [Todesritters](/npcs/todesritter.md). Der Kampf endet mit dem Sieg der Gruppe und dem Rückzug der Untoten.
 
 # Belege
 

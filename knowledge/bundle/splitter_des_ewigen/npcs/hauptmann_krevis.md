@@ -9,7 +9,7 @@ timestamp: '2026-01-27T00:00:00Z'
 id: NPC_HAUPTMANN_KREVIS
 ---
 
-Hauptmann Krevis ist der oberste Feldherr der [Zwergenfestung](/locations/zwergenfestung.md). Er ist misstrauisch gegenüber den Abenteurern, akzeptiert sie aber nach einer Prüfung. Er ist unnachgiebig gegenüber den [Goblins](/factions/goblins.md) und droht, die Minen zu säubern, falls [Lord Harik](/npcs/lord_harik.md) nicht zurückkehrt.
+Hauptmann Krevis ist der oberste Feldherr der [Zwergenfestung](/locations/zwergenfestung.md). Er ist misstrauisch gegenüber den Abenteurern, akzeptiert sie aber nach einer Prüfung. Er ist unnachgiebig gegenüber den [Goblins](/npcs/pilz_goblins.md) und droht, die Minen zu säubern, falls [Lord Harik](/npcs/lord_harik.md) nicht zurückkehrt.
 
 # Belege
 

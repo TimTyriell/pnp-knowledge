@@ -1,35 +1,30 @@
 ---
 type: NPC
 title: Kreatur in der Splitterwelt
-description: Die Kreatur in der Splitterwelt (auch Splitterwelt-Kreatur genannt) ist
-  ein aggressives, magieresistentes Wesen, das der Gruppe in zwei Beg…
+description: Die Kreatur in der Splitterwelt ist ein triebgesteuertes Wesen aus der
+  Splitterwelt, das danach verlangt, alles Lebendige zu verzehren. Sie…
 tags:
 - npcs
 timestamp: '2026-03-10T00:00:00Z'
 id: NPC_KREATUR_IN_DER_SPLITTERWELT
 aliases:
+- Kreatur in der Splitterwelt
 - Splitterwelt-Kreatur
 ---
 
-# Kreatur in der Splitterwelt
-
-Die **Kreatur in der Splitterwelt** (auch **Splitterwelt-Kreatur** genannt) ist ein aggressives, magieresistentes Wesen, das der Gruppe in zwei Begegnungen gegenübertrat. Beide Male griff es die Gruppe an und wurde besiegt; ob es sich um dasselbe Individuum handelt, ist nicht belegt.
+Die **Kreatur in der [Splitterwelt](/domains/splitterwelt.md)** ist ein triebgesteuertes Wesen aus der Splitterwelt, das danach verlangt, alles Lebendige zu verzehren. Sie verfügt über eine Barriere, die Magie abwehrt, und ist in den dokumentierten Begegnungen nur durch physische Angriffe zu verletzen. Die Gruppe begegnet ihr zweimal: einmal in einem Wald, ein weiteres Mal am Tor zu [Abyssalis](/domains/splitterwelt.md).
 
 ## Eigenschaften
 
-Die bei der ersten Begegnung beobachtete Kreatur ist triebgesteuert und will alles Lebendige verzehren. Sie besitzt eine Barriere, die Magie abwehrt; physische Angriffe können sie verletzen. Die Berührung mit den Bäumen des Waldes schwächt sie. Die bei der zweiten Begegnung auftretende Kreatur ist gigantisch, immun gegen Schattenmagie und kann Feuerbälle abwehren. Beide Formen zeigen eine ausgeprägte Resistenz gegen magische Angriffe.
+Die Kreatur handelt rein triebgesteuert und versucht, jedes Lebewesen zu verschlingen. Ein magischer Schutz macht sie widerstandsfähig gegen Zauber: Schattenmagie prallt wirkungslos an ihr ab, und Feuerbälle kann sie abwehren. Physische Angriffe hingegen verletzen sie. Die Berührung mit den Bäumen des Waldes schwächt sie spürbar. In der zweiten Begegnung tritt sie in gigantischer Größe auf.
 
 ## Begegnungen
 
-### Erste Begegnung in der Splitterwelt
+Die erste dokumentierte Begegnung ereignet sich in einem Wald. Die Kreatur greift die Gruppe an und kann erst besiegt werden, nachdem die Berührung mit den Bäumen des Waldes sie geschwächt hat. Nach ihrer Niederlage hinterlässt sie einen [Beschwörungsstab](/items/beschwoerungsstab.md).
 
-In der [Splitterwelt](/domains/splitterwelt.md) wird die Gruppe von der Kreatur angegriffen. Durch die Bäume des Waldes geschwächt, gelingt es der Gruppe, sie zu besiegen. Nach der Niederlage hinterlässt die Kreatur einen Beschwörungsstab.
-
-### Zweite Begegnung vor Abyssalis
-
-Am Tor zu [Abyssalis](/domains/splitterwelt.md) greift eine gigantische Kreatur die Gruppe an. Sie wird von [Brim](/characters/brim.md) und [Dodo](/characters/dodo.md) besiegt; ihre Seele wird nach Abyssalis gezogen.
+Am Tor zu Abyssalis greift die Kreatur die Gruppe erneut an. [Brim](/characters/brim.md) und [Dodo](/characters/dodo.md) besiegen sie; ihre Seele wird nach Abyssalis gezogen.
 
 # Belege
 
-[P-31] Session 2025-11-25 @ 00:08:50 – https://www.youtube.com/watch?v=wd5R4fJfngY
-[P-40] Session 2026-03-10 @ 01:31:00 – https://www.youtube.com/watch?v=Kr9_AC2XtOw
+[P-31] Session 2025-11-25 @ 00:08:50 (https://www.youtube.com/watch?v=wd5R4fJfngY)
+[P-40] Session 2026-03-10 @ 01:31:00 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)

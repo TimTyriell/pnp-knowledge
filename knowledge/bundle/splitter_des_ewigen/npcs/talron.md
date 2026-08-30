@@ -13,7 +13,7 @@ Talron ist ein reisender Geschichtenerzähler und Informant, der zu Beginn der b
 
 ## Rollen und Auftreten
 
-Talron reist umher und sammelt Informationen. Nach Kleinringtal bringt er Nachrichten über Untote, die Zerstörung [Breskas](/locations/breska.md) und einen neuen Gott in [Ehrenfels](/locations/ehrenfels.md) mit; zugleich warnt er vor einer großen Armee aus Monstern, die sich nordwestlich sammelt. Anfangs ist er zurückhaltend, gewinnt aber durch ein Gespräch das Vertrauen von [Kaya](/characters/kaya.md). Später begegnet er der Gruppe als fahrender Ritter: Er stellt [Bruma](/characters/bruma_stormrak.md) vor, erläutert die Mission, warnt vor politischen Fragen und wirkt bei der Schilderung einer Hinrichtung wie ein ehemaliger Henker. In der Folge tritt er als Soldat auf, der der Gruppe nahesteht und sie unterstützt.
+Talron reist umher und sammelt Informationen. Nach Kleinringtal bringt er Nachrichten über [Untote](/factions/belorus_untotenarmee.md), die Zerstörung [Breskas](/locations/breska.md) und einen neuen Gott in [Ehrenfels](/locations/ehrenfels.md) mit; zugleich warnt er vor einer großen Armee aus Monstern, die sich nordwestlich sammelt. Anfangs ist er zurückhaltend, gewinnt aber durch ein Gespräch das Vertrauen von [Kaya](/characters/kaya.md). Später begegnet er der Gruppe als fahrender Ritter: Er stellt [Bruma](/characters/bruma_stormrak.md) vor, erläutert die Mission, warnt vor politischen Fragen und wirkt bei der Schilderung einer Hinrichtung wie ein ehemaliger Henker. In der Folge tritt er als Soldat auf, der der Gruppe nahesteht und sie unterstützt.
 
 ## Aktionen und Bündnisse
 

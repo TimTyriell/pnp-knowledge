@@ -15,9 +15,9 @@ Otis ist ein junger Human Ranger, der in einem Steinbruch aufwuchs und dort als 
 
 ## Rolle in der Kampagne
 
-Otis gehört zu einer Gruppe von fünf Abenteurern, die in einem speziellen Abenteuer der Runde *Chip Dice Tavern – Dwarfmasters* zusammenkommen. Die Gruppe besteht neben ihm aus Myko, einem Funk-Rhetoride und ehemaligen Karawanenarzt, Nina, einer Halbling-Bardin in fortgeschrittenem Alter, die wegen Casino-Schulden ihres Mannes Geld verdienen muss, sowie Krall, einem Galapag-Guardian mit Zweihandhammer.
+Otis gehört zu einer Gruppe von fünf Abenteurern, die in einem speziellen Abenteuer der Runde *Chip Dice Tavern – Dwarfmasters* zusammenkommen. Die Gruppe besteht neben ihm aus [Myko](/characters/myko.md), einem Funk-Rhetoride und ehemaligen Karawanenarzt, Nina, einer Halbling-Bardin in fortgeschrittenem Alter, die wegen Casino-Schulden ihres Mannes Geld verdienen muss, sowie [Krall](/characters/krall.md), einem Galapag-Guardian mit Zweihandhammer.
 
-Otis übernimmt innerhalb der Gruppe die Rolle des Beschützers, insbesondere von Nina, die er scherzhaft als seine „Mutter und Ehefrau“ bezeichnet. Er ist bereit, Gefangene in seine Heimatstadt Willauch zu bringen, da er aus dieser Stadt stammt und die Bezahlung akzeptiert. Im Kampfgeschehen agiert er als vorderste Front: Er stürmt Türen ein, zerschmettert Gegner mit seinem Hammer und nutzt seinen Bogen für Fernkampfangriffe. Gemeinsam mit Rotunas zerstört er die Säulen eines Portals und trägt damit entscheidend zum Sieg über die Bedrohung bei.
+Otis übernimmt innerhalb der Gruppe die Rolle des Beschützers, insbesondere von Nina, die er scherzhaft als seine „Mutter und Ehefrau“ bezeichnet. Er ist bereit, Gefangene in seine Heimatstadt [Willauch](/locations/willauch.md) zu bringen, da er aus dieser Stadt stammt und die Bezahlung akzeptiert. Im Kampfgeschehen agiert er als vorderste Front: Er stürmt Türen ein, zerschmettert Gegner mit seinem Hammer und nutzt seinen Bogen für Fernkampfangriffe. Gemeinsam mit [Rotunas](/characters/rotunas.md) zerstört er die Säulen eines [Portals](/locations/portal.md) und trägt damit entscheidend zum Sieg über die Bedrohung bei.
 
 ## Wichtige Merkmale
 
@@ -25,7 +25,7 @@ Otis übernimmt innerhalb der Gruppe die Rolle des Beschützers, insbesondere vo
 
 **Auftreten:** Otis ist ein großer, junger Mensch mit einer pragmatischen und direkten Art. Er zögert nicht, Gewalt anzuwenden, wenn es die Situation erfordert, und scheut auch nicht davor zurück, Kinder unter den Arm zu nehmen und damit in Sicherheit zu bringen. Seine Naivität zeigt sich in Momenten, in denen er Situationen unbedarft angeht, etwa wenn er ohne große Umschweife eine Tür eintritt, ohne vorher zu prüfen, was sich dahinter befindet.
 
-**Wesenszüge:** Otis ist mutig und entschlossen. Er zögert nicht, sich in Gefahr zu begeben, um andere zu retten – so hilft er Brim, als dieser von einer Kreatur gepackt wird. Seine fürsorgliche Seite zeigt sich im Umgang mit Nina, die er beschützt, und mit den Kindern, die er vor Dämonen rettet. Sein Humor ist trocken und selbstironisch, etwa wenn er Nina scherzhaft als seine „Mutter und Ehefrau“ bezeichnet.
+**Wesenszüge:** Otis ist mutig und entschlossen. Er zögert nicht, sich in Gefahr zu begeben, um andere zu retten – so hilft er [Brim](/characters/brim.md), als dieser von einer Kreatur gepackt wird. Seine fürsorgliche Seite zeigt sich im Umgang mit Nina, die er beschützt, und mit den Kindern, die er vor [Dämonen](/factions/daemonen.md) rettet. Sein Humor ist trocken und selbstironisch, etwa wenn er Nina scherzhaft als seine „Mutter und Ehefrau“ bezeichnet.
 
 ## Beziehungen und Verbindungen
 

@@ -10,7 +10,7 @@ id: LOC_DAS_TOR
 subtype: Gebäude
 ---
 
-Das Tor ist ein steinernes Portal, das von den Clangs bewacht wird. Es führt direkt über den Berg und wäre der einfache Weg zur Narbe gewesen, aber die Gruppe erhält keinen Durchgang.
+Das Tor ist ein steinernes [Portal](/locations/portal.md), das von den Clangs bewacht wird. Es führt direkt über den Berg und wäre der einfache Weg zur Narbe gewesen, aber die Gruppe erhält keinen Durchgang.
 
 # Belege
 

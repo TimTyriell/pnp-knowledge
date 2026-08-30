@@ -9,7 +9,7 @@ timestamp: '2026-08-18T00:00:00Z'
 id: NPC_VAREK
 ---
 
-Ein Bewohner der Berge, der mit [Niki](/npcs/niki.md) und dem Hund [Schnüffi](/npcs/schnueffi.md) lebt. Er begegnet der Gruppe am Fluss und warnt sie vor Engpässen und [Goblins](/factions/goblins.md) weiter unten. Er kennt [Edmund](/npcs/sir_edmund.md) und [Vago](/npcs/vago.md).
+Ein Bewohner der Berge, der mit [Niki](/npcs/niki.md) und dem Hund [Schnüffi](/npcs/schnueffi.md) lebt. Er begegnet der Gruppe am Fluss und warnt sie vor Engpässen und [Goblins](/npcs/pilz_goblins.md) weiter unten. Er kennt [Edmund](/npcs/sir_edmund.md) und [Vago](/npcs/vago.md).
 
 # Belege
 

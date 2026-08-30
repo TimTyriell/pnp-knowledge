@@ -10,7 +10,7 @@ id: EVENT_ENTDECKUNG_DES_FANGZAHN_AMULETTS
 subtype: Entdeckung
 ---
 
-[Lindo Laut](/characters/lindo_laut.md) findet ein [Amulett](/items/amulett_des_heiligen_duran.md) mit Fangzähnen hinter einem Gitter in einem Raum mit Brunnen.
+[Lindo Laut](/characters/lindo_laut.md) findet ein Amulett mit Fangzähnen hinter einem Gitter in einem Raum mit Brunnen.
 
 # Belege
 

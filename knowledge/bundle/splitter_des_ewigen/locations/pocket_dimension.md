@@ -10,7 +10,7 @@ id: LOC_POCKET_DIMENSION
 subtype: Sonstiges
 ---
 
-Die Pocket Dimension ist ein Raum, der durch einen [Ring von Lindo Laut](/items/ring_von_lindo_laut.md) aktiviert wird. Sie ist ein leerer Raum, der als sicherer Ort für Gespräche dient, da niemand dort mithören kann.
+Die Pocket Dimension ist ein Raum, der durch einen [Ring von Lindo Laut](/items/ring_der_teleportation.md) aktiviert wird. Sie ist ein leerer Raum, der als sicherer Ort für Gespräche dient, da niemand dort mithören kann.
 
 # Belege
 

@@ -9,7 +9,7 @@ timestamp: '2026-01-27T00:00:00Z'
 id: NPC_LORAN_SILBERBART
 ---
 
-Loran Silberbart ist ein Zwerg und Berater der Festung. Er empfängt die Abenteurer, führt sie durch die Festung und begleitet sie zu den Verhandlungen. Er ist loyal zu [Lord Harik](/npcs/lord_harik.md) und verteidigt ihn gegenüber dem Hauptmann.
+Loran Silberbart ist ein Zwerg und Berater der [Festung](/locations/festung.md). Er empfängt die Abenteurer, führt sie durch die Festung und begleitet sie zu den Verhandlungen. Er ist loyal zu [Lord Harik](/npcs/lord_harik.md) und verteidigt ihn gegenüber dem Hauptmann.
 
 # Belege
 

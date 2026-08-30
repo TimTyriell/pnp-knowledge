@@ -1,7 +1,7 @@
 ---
 type: Event
 title: Lanra schrumpft Dodo und Cookie
-description: Lanra schrumpft Dodo und Cookie auf Winzigkeit, als sie versuchen, sie
+description: Landra schrumpft Dodo und Cookie auf Winzigkeit, als sie versuchen, sie
   einzuschüchtern. Dies zeigt ihre magische Macht.
 tags:
 - events
@@ -10,7 +10,7 @@ id: EVENT_LANRA_SCHRUMPFT_DODO_UND_COOKIE
 subtype: Sonstiges
 ---
 
-[Lanra](/npcs/lenra.md) schrumpft [Dodo](/characters/dodo.md) und [Cookie](/characters/cookie.md) auf Winzigkeit, als sie versuchen, sie einzuschüchtern. Dies zeigt ihre magische Macht.
+[Landra](/npcs/lenra.md) schrumpft [Dodo](/characters/dodo.md) und [Cookie](/characters/cookie.md) auf Winzigkeit, als sie versuchen, sie einzuschüchtern. Dies zeigt ihre magische Macht.
 
 # Belege
 

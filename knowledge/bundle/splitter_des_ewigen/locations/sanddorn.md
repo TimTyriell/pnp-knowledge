@@ -14,7 +14,7 @@ Sanddorn ist die Hauptinsel und zentrale Siedlung einer Inselgruppe. Die Stadt i
 
 ## Rolle und Herrschaft
 
-Als Hauptinsel bildet Sanddorn das Zentrum der Inselgruppe. Die Herrschaft liegt bei Joar Vanur, der hier geboren wurde. Sein erklärtes Ziel ist die Rückkehr nach Sanddorn.
+Als Hauptinsel bildet Sanddorn das Zentrum der Inselgruppe. Die Herrschaft liegt bei [Joar Vanur](/npcs/joar_vanur.md), der hier geboren wurde. Sein erklärtes Ziel ist die Rückkehr nach Sanddorn.
 
 ## Orte und Ruf
 

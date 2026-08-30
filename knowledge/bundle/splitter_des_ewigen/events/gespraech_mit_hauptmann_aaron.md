@@ -10,7 +10,7 @@ id: EVENT_GESPRAECH_MIT_HAUPTMANN_AARON
 subtype: Verhandlung
 ---
 
-Die Gruppe wird [Hauptmann Aaron](/npcs/hauptmann_aaron.md) vorgestellt, der ihre Fähigkeiten prüft und sie mit der Erkundung der [Mine](/locations/kristallmine.md) beauftragt.
+Die Gruppe wird [Hauptmann Aaron](/npcs/hauptmann_aaron.md) vorgestellt, der ihre Fähigkeiten prüft und sie mit der Erkundung der Mine beauftragt.
 
 # Belege
 

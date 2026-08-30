@@ -10,7 +10,7 @@ id: EVENT_ANKUNFT_VON_SIR_TALI_VON_BRANDAU
 subtype: Sonstiges
 ---
 
-[Sir Tali von Brandau](/npcs/sir_tali_von_brandau.md) kommt mit zwei Elitesoldaten und einem Magier in die [Taverne](/locations/taverne.md). [Sage](/characters/sage.md) erkennt ihn und vermutet, dass die Prinzessin noch lebt.
+[Sir Tali von Brandau](/npcs/sir_tali_von_brandau.md) kommt mit zwei Elitesoldaten und einem Magier in die Taverne. [Sage](/characters/sage.md) erkennt ihn und vermutet, dass die Prinzessin noch lebt.
 
 # Belege
 

@@ -1,65 +1,81 @@
 ---
 type: Deity
 title: Thar'Vok, der Erdrichter
-description: Thar'vok, der Erdrichter, ist einer der alten Götter — eine Gottheit
-  aus der Zeit vor dem Götterkrieg, deren Verehrung in der heutigen Zeit…
+description: Thar'Vok, der Erdrichter, ist ein alter Gott, dessen Domänen Berge, Erdbeben
+  und Beständigkeit umfassen. Sein Symbol ist ein Granitblock mi…
 tags:
 - deities
-timestamp: '2026-02-11T00:00:00Z'
+timestamp: '2026-02-17T00:00:00Z'
 id: DEITY_TARVOK_DER_ERDRICHTER
 subtype: Alter Gott
 aliases:
+- Tarvok (Der Erdrichter)
+- Tavok (Erdrichter)
+- Tavok, der Erdrichter
+- Tavok (der Erdrichter)
+- Tarvolk
 - Tarvok
+- Parfon
+- Seras (Seraph)
+- Tavok
 - Seras
 ---
 
+# Thar'Vok, der Erdrichter
+
 ## Überblick
 
-Thar'vok, der Erdrichter, ist einer der alten Götter — eine Gottheit aus der Zeit vor dem Götterkrieg, deren Verehrung in der heutigen Zeit verboten bzw. verpönt ist. Seine Domänen sind Berge, Erdbeben und Beständigkeit. Sein Symbol ist ein Granitblock mit eingeritztem Berggipfel. Als Anhänger gelten Bergarbeiter, Baumeister und standhafte Krieger; Opfergaben sind glatte Steine und Werkzeuge aus Eisen.
+Thar'Vok, der Erdrichter, ist ein alter Gott, dessen Domänen Berge, Erdbeben und Beständigkeit umfassen. Sein [Symbol](/items/symbol_in_der_villa.md) ist ein Granitblock mit eingeritztem Berggipfel. Seine Anhänger waren Bergarbeiter, Baumeister und standhafte Krieger, die ihm glatte Steine und Werkzeuge aus Eisen opferten. Er steht für Standhaftigkeit, das Halten von Eiden und Bauten aus Stein; verabscheut Verrat und unnötige Zerstörung von Bergen.
 
-Thar'vok ist ein Gott der Standhaftigkeit und des Eides. Er schätzt Bauten aus Stein und hasst Verrat sowie unnötige Zerstörung von Bergen. Seine Gebote spiegeln eine erdverbundene, konservative Moral: Treue zum gegebenen Wort und Respekt vor dem gewachsenen Gestein.
+Thar'Vok zählt zu den alten Göttern, deren Verehrung in der Zeit nach dem Götterkrieg verboten beziehungsweise verpönt ist. Die Panik, die seine Anhänger angesichts der Gruppe zeigen, ist kulturell und politisch begründet – nicht etwa eine übernatürliche Gefahr durch das Aussprechen seines Namens.
 
 ## Rolle in der Kampagne
 
-Thar'vok begegnet der Gruppe an mehreren Orten als Spuren eines untergegangenen Kultes. Die erste Begegnung findet bei den Bergnomaden statt, die ihn verehren und deshalb von der Außenwelt misstrauisch beäugt werden. Die Gruppe erfährt dort, dass die Anhänger eines alten Gottes in der heutigen Zeit gesellschaftlich geächtet sind — die Nomaden fürchten, für „Psychos" gehalten zu werden, weil sie einem alten Gott anhängen.
+Thar'Vok zieht sich als roter Faden durch die Kampagne. Die Gruppe begegnet ihm erstmals im Lager der Bergnomaden, die ihn verehren, ohne dass die Gruppe dies zunächst richtig einordnen kann. Später stoßen die Helden auf sein Heiligtum am Berg, das inzwischen von Anhängern [Vhar'Zuls](/deities/vharzul.md) übernommen wurde. In der [Kathedrale](/locations/kathedrale.md), die ursprünglich Thar'Vok geweiht war, wartete der Diener Dormag auf die Gruppe – der Name des Gottes war dort mit Blut übermalt und durch den Vhar'Zuls ersetzt worden.
 
-Später stößt die Gruppe auf die Heilige Kapelle von Thar'vok am Berg, die inzwischen jedoch von Anhängern des Warzul genutzt wird. Die Kapelle selbst ist Thar'vok geweiht, die aktuellen Nutzer dienen einem anderen Herrn.
-
-Schließlich taucht Thar'voks Symbol auf einem gefundenen Umhang und einem Altar im Keller der Casa de la Cookie auf. Es wird angenommen, dass er nicht mehr existiert, aber seine Artefakte könnten Erschaffungsmagie ermöglichen. Die Gruppe zeigt sich entsprechend vorsichtig — Lindo Laut will das gefundene Objekt nicht öffnen, Lunara Velora schlägt vor, es lieber zurückzulassen, „bevor wir unsere Seele ausspalten".
+Die Artefakte Thar'Voks – ein Umhang mit seinem Symbol und ein [Altar](/items/altar.md) im Keller der [Casa de la Cookie](/locations/casa_del_cookie.md) – wecken die Sorge der Gruppe. Es wird angenommen, dass Thar'Vok nicht mehr existiert, doch seine Artefakte könnten Erschaffungsmagie ermöglichen. Ein Informant warnt [Lindo Laut](/characters/lindo_laut.md) eindringlich: Wenn ein alter Gott plötzlich wieder an Macht gewinnt, wäre das „fatal für das gebrechliche Gleichgewicht".
 
 ## Wichtige Merkmale
 
-Thar'vok ist ein alter Gott mit erdverbundenen Domänen: Berge, Erdbeben und Beständigkeit. Sein Wesen ist auf das Feste, Dauerhafte und Unverrückbare ausgerichtet. Seine Anhängerschaft besteht aus Menschen, die mit Stein arbeiten oder für ihre Standhaftigkeit bekannt sind: Bergarbeiter, Baumeister und standhafte Krieger.
+Thar'Vok ist ein alter Gott der Berge und der Beständigkeit. Seine Domänen umfassen Berge, Erdbeben und Standhaftigkeit. Sein Symbol – ein Granitblock mit eingeritztem Berggipfel – taucht an verschiedenen Orten auf: auf einem Umhang, an einem Altar und an der Tür seiner ehemaligen Kathedrale.
 
-Sein Symbol, der Granitblock mit eingeritztem Berggipfel, erscheint auf Artefakten und an geweihten Orten. Die Heilige Kapelle am Berg trägt seinen Namen, und sein Zeichen findet sich auf einem Umhang und einem Altar in der Casa de la Cookie.
+Seine Gebote sind klar umrissen: Er schätzt Standhaftigkeit, das Halten von Eiden und Bauten aus Stein. Er hasst Verrat und unnötige Zerstörung von Bergen. Seine Anhänger – Bergarbeiter, Baumeister und standhafte Krieger – brachten ihm Opfergaben aus glatten Steinen und Eisenwerkzeugen dar.
 
-Die Verehrung Thar'voks ist nach dem Götterkrieg verboten bzw. verpönt. Wer ihm anhängt, gerät gesellschaftlich unter Druck — die Bergnomaden erleben dies unmittelbar, als die Gruppe sie besucht und die Dorfbewohner frostig reagieren. Die Angst der Anhänger ist kulturell und politisch begründet, keine übernatürliche Gefahr durch das Aussprechen des Namens.
+Der Gruß seiner Anhänger lautet „ein flammendes Herz", wie Lindo Laut ihn beim Abschied von den Bergnomaden verwendet. Die Nomaden reagieren frostig, als die Gruppe den Namen ihres Gottes in den Mund nimmt – ein Zeichen dafür, wie sehr die Verehrung alter Götter gesellschaftlich geächtet ist.
 
 ## Beziehungen und Verbindungen
 
-Thar'vok war ein Kampfgefährte Vhar'zuls. Diese Information stammt von Vhar'zul selbst, der als Stimme in Lindo Lauts Amulett spricht. Die beiden waren „keine Freunde, aber Kampfgefährten in den letzten Tagen" — eine Verbindung, die auf gemeinsame Kämpfe in der Zeit vor dem Götterkrieg hindeutet, ohne dass eine enge Freundschaft bestanden hätte.
+Thar'Vok war ein Kampfgefährte Vhar'Zuls – „keine Freunde, aber Kampfgefährten in den letzten Tagen". Diese Information erhält Lindo Laut direkt von Vhar'Zul selbst, der als Stimme in seinem Amulett spricht. Die Beziehung der beiden Götter war also von gemeinsamen Kämpfen geprägt, nicht von Freundschaft.
 
-Die Heilige Kapelle am Berg war ursprünglich Thar'vok geweiht, bevor der Kult des Warzul sie übernahm. Die Gruppe erfährt dies, als sie am Tor auf Anhänger trifft, die Warzul dienen — die Kapelle selbst trägt jedoch noch den Namen Thar'voks auf dem Wegweiser.
+Die Kirche Thar'Voks wurde später von Vhar'Zuls Kult übernommen. In der Kathedrale am Berg wurde der Name des Erdrichters mit Blut übermalt und durch den Vhar'Zuls ersetzt – ein symbolischer Akt der Usurpation. Die Anhänger am Tor der Kathedrale dienen bereits Vhar'Zul, nicht mehr dem Erdrichter.
+
+[König Zebros](/factions/koenigreich_zebros.md) folgte einst Thar'Vok. Diese Verbindung ist jedoch Teil der Vergangenheit, denn Thar'Vok wurde durch eine Explosion vernichtet, die zugleich die Stadt und den Gott der Berge zerstörte.
 
 ## Chronologie
 
-**Session 2025-08-12:** Die Gruppe besucht die Bergnomaden und erfährt, dass diese einem alten Gott anhängen. Lindo Laut verabschiedet sich mit dem Gruß „ein flammendes Herz", woraufhin die Nomaden frostig reagieren. Die Gruppe stellt fest, dass die Anhänger Angst haben, für Anhänger eines alten Gottes gehalten zu werden. Lindo Laut wendet sich an sein Amulett, um herauszufinden, in welcher Verbindung sein altes Ich zu Thar'vok stand.
+Die Gruppe begegnet Thar'Voks Einfluss erstmals im Lager der Bergnomaden. Die Nomaden verehren den Erdrichter, ohne dies offen zu benennen. Als Lindo Laut den Namen des Gottes ausspricht, reagieren die Anwesenden frostig und abweisend. Die Gruppe erkennt, dass die Nomaden Angst davor haben, für Anhänger eines alten Gottes gehalten zu werden. Lindo Laut fragt daraufhin die Stimme in seinem Amulett nach der Verbindung zwischen dessen altem Ich und Thar'Vok – und erfährt, dass die beiden Kampfgefährten waren.
 
-**Session 2025-08-20:** Die Gruppe erreicht einen Wegweiser, der zur „Heiligen Kapelle von Tarvok" führt. Lindo Laut erkennt die Domänen, das Symbol und die Opfergaben des Erdrichters. Die Gruppe macht einen Stärke-Check, als sie sich der Kapelle nähert. Am Tor stellt sich heraus, dass die dortigen Anhänger Warzul dienen — die Kapelle ist Thar'vok geweiht, wird aber von einem anderen Kult genutzt.
+Auf dem Weg zum Berg finden die Helden einen Wegweiser zur „heiligen [Kapelle von Thar'Vok](/locations/kapelle_von_tarvok.md)". Lindo Laut erinnert sich an die Domänen des Gottes: Berge, Erdbeben, Beständigkeit, mit dem Symbol des Granitblocks und dem eingeritzten Berggipfel.
 
-**Session 2026-02-11:** In der Casa de la Cookie findet die Gruppe ein versiegeltes, silbernes Objekt in einem Lederknäuel sowie einen Umhang. Esterossa erkennt das Symbol auf dem Umhang als das Zeichen Thar'voks, des Erdrichters — sie kennt es aus Büchern über Flächenwille oder Ehrenfels. Aus den Schriften weiß sie, dass Thar'vok einer der alten Götter war, der wahrscheinlich nicht mehr existiert. Lindo Laut erinnert sich, dass Thar'vok auch der ursprüngliche Gott der Kathedrale war, wo Dormag der Diener auf die Gruppe gewartet hat. Die Gruppe diskutiert, ob sie das Objekt öffnen oder mitnehmen sollen; Lunara Velora schlägt vor, es lieber zu lassen, „bevor wir unsere Seele ausspalten". Eine magische oder göttliche Aura ist nicht spürbar.
+In der Kathedrale am Berg entdeckt die Gruppe die große, schwer eingelassene Tür, auf der einst „Thar'Vok, der Erdrichter" stand – der Name wurde komplett in Blut übermalt und durch Vhar'Zul ersetzt. Die Tür ist magisch versiegelt, doch Lindo Lauts Magie öffnet sie. Die Gruppe zögert, sich auf diesen Gott einzulassen, doch ein Rückweg scheint nicht mehr möglich.
+
+In der Casa de la [Cookie](/characters/cookie.md) findet die Gruppe einen Umhang mit dem Symbol Thar'Voks sowie einen Altar in einem Versteck im Keller. [Esterossa](/characters/esterossa.md) erkennt das Zeichen aus Büchern, die sie in Flächenwille oder [Ehrenfels](/locations/ehrenfels.md) durchgearbeitet hat. Aus den Schriften weiß sie, dass Thar'Vok einer der älteren Götter war, „der wahrscheinlich nicht mehr existiert". Die Gruppe nimmt den Umhang und den Altar an sich, trotz Lindo Lauts Bedenken, die Artefakte zu öffnen.
+
+Später erfährt die Gruppe, dass Thar'Vok durch eine Explosion vernichtet wurde, die zugleich die Stadt und den Gott der Berge zerstörte. König Zebros folgte einst dem Erdrichter. Ein Informant warnt Lindo Laut, dass das Problem größer werde: Wenn ein alter Gott wieder an Macht gewinne, sei das fatal für das gebrechliche Gleichgewicht der Welt.
 
 ## Offene Fragen
 
-- Was genau verbirgt sich in dem versiegelten Objekt mit Thar'voks Symbol aus der Casa de la Cookie? Die Gruppe hat es nicht geöffnet.
-- Welche Erschaffungsmagie könnten Thar'voks Artefakte ermöglichen? Die Belege deuten dies an, ohne es auszuführen.
-- In welcher Beziehung stand Lindo Lauts altes Ich zu Thar'vok? Die Frage wurde im Amulett-Gespräch aufgeworfen, aber nicht beantwortet.
-- Was geschah mit Thar'vok selbst? Es wird angenommen, dass er nicht mehr existiert, aber die Umstände seines Verschwindens sind unklar.
+- Was genau geschah bei der Explosion, die Thar'Vok vernichtete? Wer oder was löste sie aus, und in welchem Zusammenhang stand sie mit der Zerstörung der Stadt und des Gottes der Berge?
+- Welche Erschaffungsmagie könnten die Artefakte Thar'Voks – der Umhang und der Altar – ermöglichen, und welche Gefahr geht von ihnen aus?
+- In welchem Verhältnis stand Thar'Vok zu König Zebros, und welche Bedeutung hat diese Verbindung für die Gegenwart?
+- Was bedeutet die Warnung, dass ein alter Gott „wieder in die Macht kommen" könnte – steht Thar'Voks Rückkehr unmittelbar bevor?
 
 ## Belege
 
-[P-17] Session 2025-08-12 @ 01:42:58 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)
-[P-18] Session 2025-08-20 @ 01:11:56 (https://www.youtube.com/watch?v=-XbO3FLSL_I)
-[P-36] Session 2026-02-11 @ 00:40:26 (https://www.youtube.com/watch?v=3C8SD-cyNPM)
-4. Bekannte_Pantheon_der_Goetter.md (Kampagnenmaterial)
-5. Kanon_Entscheidungen.md (Kampagnenmaterial)
+[P-17] Session 2025-08-12 @ 01:42:58 – https://www.youtube.com/watch?v=vHIjua0BZ9Y
+[P-18] Session 2025-08-20 @ 01:11:56 – https://www.youtube.com/watch?v=-XbO3FLSL_I
+[P-19] Session 2025-09-02 @ 01:34:11 – https://www.youtube.com/watch?v=TLZOH7TlGhk
+[P-36] Session 2026-02-11 @ 00:40:26 – https://www.youtube.com/watch?v=3C8SD-cyNPM
+[P-37] Session 2026-02-17 @ 00:54:22 – https://www.youtube.com/watch?v=Z2jlzpoTWVw
+6. Bekanntes Pantheon der Götter (Weltmaterial)
+7. Kanon-Entscheidungen (Spielleitungs-Festlegungen)

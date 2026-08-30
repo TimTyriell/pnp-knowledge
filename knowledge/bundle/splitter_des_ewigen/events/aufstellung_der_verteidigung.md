@@ -1,8 +1,8 @@
 ---
 type: Event
 title: Aufstellung der Verteidigung
-description: 'Die Gruppe organisiert die Verteidigung des Dorfes: Sie platziert acht
-  Palisaden zwischen den Häusern und auf dem Steinplateau, legt Bärenf…'
+description: Die Gruppe platziert Palisaden und Bärenfallen zwischen Friedhof und
+  Stein und positioniert die Dorfbewohner für den Kampf. Die Bogenschütz…
 tags:
 - events
 timestamp: '2025-04-09T00:00:00Z'
@@ -10,7 +10,7 @@ id: EVENT_AUFSTELLUNG_DER_VERTEIDIGUNG
 subtype: Sonstiges
 ---
 
-Die Gruppe organisiert die Verteidigung des Dorfes: Sie platziert acht Palisaden zwischen den Häusern und auf dem Steinplateau, legt Bärenfallen im erwarteten Angriffskorridor aus und positioniert die Dorfbewohner, darunter die Jägerin [Elisa](/npcs/elisa.md) auf dem Dach und die Wachen im Nahkampf. Der Plan ist, die [Goblins](/factions/goblins.md) in die [Falle](/events/falle.md) zu locken.
+Die Gruppe platziert Palisaden und Bärenfallen zwischen Friedhof und Stein und positioniert die Dorfbewohner für den Kampf. Die Bogenschützin kommt aufs Dach, die Wachen in den Nahkampf, der Schmied mit Axt und Schild.
 
 # Belege
 

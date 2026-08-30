@@ -10,7 +10,7 @@ id: LOC_HOHENWEHR
 subtype: Festung
 ---
 
-Eine Festung, von der Verstärkung für [Ringtal](/locations/ringtal.md) angefordert wurde. [Herakles](/npcs/herakles.md) erwähnt, dass dort eine Streitmacht versteckt ist.
+Eine [Festung](/locations/festung.md), von der Verstärkung für [Ringtal](/locations/ringtal.md) angefordert wurde. [Herakles](/npcs/herakles.md) erwähnt, dass dort eine Streitmacht versteckt ist.
 
 # Belege
 

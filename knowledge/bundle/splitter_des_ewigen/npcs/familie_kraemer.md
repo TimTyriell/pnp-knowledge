@@ -1,15 +1,15 @@
 ---
 type: NPC
 title: Familie Krämer
-description: Die Familie Krämer ist eine Bauernfamilie im Dorf Brechka, die Kühe und
-  einen Schmied besitzt. Sie sind zunächst verärgert, weil ihre Tocht…
+description: Die Familie Krämer sind Bauern in Breska, die Kühe und einen Schmied
+  haben. Sie sind zunächst verärgert, als die Gruppe ihr Kind erschreckt…
 tags:
 - npcs
 timestamp: '2025-04-09T00:00:00Z'
 id: NPC_FAMILIE_KRAEMER
 ---
 
-Die Familie Krämer ist eine Bauernfamilie im [Dorf](/locations/dorf.md) [Brechka](/locations/breska.md), die Kühe und einen [Schmied](/npcs/schmied.md) besitzt. Sie sind zunächst verärgert, weil ihre Tochter von [Valeria](/characters/valeria.md) erschreckt wird, stellen aber später Tierfallen für die Verteidigung bereit.
+Die Familie Krämer sind Bauern in [Breska](/locations/breska.md), die Kühe und einen Schmied haben. Sie sind zunächst verärgert, als die Gruppe ihr Kind erschreckt, helfen aber bei der Verteidigung. Der Schmied stellt Bärenfallen zur Verfügung.
 
 # Belege
 

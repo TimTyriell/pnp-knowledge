@@ -110,6 +110,26 @@ class Paths:
 
         return self._knowledge_root / "conflicts"
 
+    @staticmethod
+    def _default_bundle() -> str:
+        """The repo's own bundle, found by walking up from the cwd.
+
+        Every other knowledge path is derived from the bundle (see
+        ``_knowledge_root``), so a cwd-relative default silently produces a
+        *different* knowledge root for every directory the CLI is run from —
+        and a wrong root does not fail, it starts an empty registry and
+        regenerates the campaign from scratch with no rules applied. The
+        documented workflow is ``cd services/kb && pnp run``, two levels below
+        the bundle, so anchoring on the repo makes that command correct
+        instead of merely lucky.
+        """
+
+        cwd = Path.cwd()
+        for parent in [cwd, *cwd.parents]:
+            if (parent / "knowledge" / "entity_registry.yaml").is_file():
+                return str(parent / "knowledge" / "bundle" / "splitter_des_ewigen")
+        return "./bundle/splitter_des_ewigen"
+
     @classmethod
     def resolve(
         cls,
@@ -125,7 +145,7 @@ class Paths:
         bundle = (
             bundle_dir
             or os.environ.get("PNP_BUNDLE_DIR")
-            or "./bundle/splitter_des_ewigen"
+            or cls._default_bundle()
         )
         cache = cache_dir or os.environ.get("PNP_CACHE_DIR") or "./.cache"
         return cls(

@@ -1,57 +1,68 @@
 ---
 type: Deity
 title: Akastrale
-description: Akastrale ist eine der vier alten Götter, die in der Unterwelt Abyssalis
-  eingesperrt wurden. Sie ist bekannt als der dunkle Hunger oder der…
+description: Akastrale ist eine der vier alten Götter, die in Abyssalis eingesperrt
+  wurden. Sie trägt den Beinamen der dunkle Hunger und gilt als die st…
 tags:
 - deities
-timestamp: '2026-03-31T00:00:00Z'
+timestamp: '2026-06-16T00:00:00Z'
 id: DEITY_AKASTRALE
 subtype: Alter Gott
 ---
 
 ## Überblick
 
-Akastrale ist eine der vier alten Götter, die in der Unterwelt Abyssalis eingesperrt wurden. Sie ist bekannt als der **dunkle Hunger** oder der **verrückte Hunger** und gilt als die stärkste und gefährlichste der vier alten Götter – zugleich aber auch als wahnsinnig. Ihre Domänen sind Leere, Gier und Verzehr; ihr Symbol ist ein schwarzer Schlund, umgeben von gezackten Zähnen. Akastrale wird selten offen verehrt, doch ihr Einfluss ist überall dort spürbar, wo Hunger nie endet. Ihre Anhänger glauben, dass alles Leben letztlich dazu bestimmt ist, verschlungen zu werden – von Zeit, Dunkelheit oder von ihr selbst. Alte Schriften beschreiben sie als uralten Abgrund, den selbst die Götter fürchten.
+Akastrale ist eine der vier alten Götter, die in [Abyssalis](/domains/splitterwelt.md) eingesperrt wurden. Sie trägt den Beinamen **der dunkle Hunger** und gilt als die stärkste und gefährlichste der vier alten Götter – zugleich aber auch als wahnsinnig. Sie wird als unmittelbare Bedrohung beschrieben, deren Einfluss in der gesamten Unterwelt spürbar ist.
 
-*Dieser Eintrag ist vorläufig und bildet den aktuellen Kenntnisstand der Kampagne ab.*
+Ihre Domänen sind Leere, Gier und Verzehr. Ihr [Symbol](/items/symbol_in_der_villa.md) ist ein schwarzer Schlund, umgeben von gezackten Zähnen. Ihre Anhänger rekrutieren sich aus [Kultisten](/factions/kultisten.md), Wahnsinnigen und Kreaturen der Finsternis. Opfergaben an sie sind Blut, verdorbene Speisen und verbrannte Knochen.
+
+Akastrale wird selten offen verehrt, doch ihr Einfluss ist überall dort spürbar, wo Hunger nie endet. Ihre Anhänger glauben, dass alles Leben letztlich dazu bestimmt ist, verschlungen zu werden – von Zeit, Dunkelheit oder ihr selbst. Alte Schriften beschreiben sie als uralten Abgrund, den selbst die Götter fürchten.
+
+> Hinweis: Dieser Eintrag ist ein vorläufiger Entwurf auf Grundlage des aktuellen Kenntnisstands der Kampagne. Lücken werden bewusst nicht mit Spekulation gefüllt.
 
 ## Rolle in der Kampagne
 
-Akastrale wird erstmals in Session 2026-03-31 erwähnt, als die Gruppe in Abyssalis ankommt und von einem Informanten über die Gegebenheiten der Unterwelt aufgeklärt wird. Sie ist eine von vier alten Göttern, die in Abyssalis gefangen gehalten werden und deren Einfluss die Landschaft der Unterwelt prägt. Konkret wird beschrieben, dass die meisten Seelen, die in Abyssalis enden, in den Erntefeldern umherstreunen und dort von Akastrale gefressen werden.
+Akastrale wird erstmals im Zusammenhang mit dem Schicksal von Seelen in Abyssalis erwähnt. Die meisten Seelen, die in dieser Unterwelt enden, werden nach Aussage eines Informanten entweder von Akastrale gefressen, von [Ohoriaks](/deities/ohoriaks.md) aufgenommen oder von Sitravil erfetzt. Kinderseelen hingegen scheinen nicht den Gesetzen der Natur in Abyssalis zu unterliegen und werden von Akastrale und ihrer Welt nicht beeinflusst.
 
-Die Festung, in der sich die Gruppe aufhält, wird als einer der wenigen Orte beschrieben, an denen man vor den Einflüssen der vier alten Götter einigermaßen sicher ist. Akastrale wird dabei als unmittelbare Bedrohung für die Seelen in Abyssalis dargestellt – und damit auch für die Gruppe, die sich in dieser Unterwelt bewegt.
+In der [Festung](/locations/festung.md), in der sich die Gruppe aufhält, sind die Helden mehr oder weniger sicher vor den Einflüssen der vier alten Götter. Akastrale wird dabei als eine von vier aktuell existierenden Gottheiten in Abyssalis genannt, die dort eingesperrt wurden.
+
+Gegen Ende der bisherigen Ereignisse gerät Akastrale in Panik: Sie rennt nach Süden, in den Süden von Abyssalis. Ihre Macht schwindet – ein Zeichen dafür, dass sich die Kräfteverhältnisse in der Unterwelt gerade grundlegend verschieben.
 
 ## Wichtige Merkmale
 
-**Wesen und Auftreten:** Akastrale wird als wahnsinnig beschrieben – ein Wesen, dessen Gier und Hunger keine Grenzen kennen. Sie ist die stärkste und gefährlichste der vier alten Götter in Abyssalis. Ihr Wesen ist von grenzenlosem Verzehr geprägt: Sie verschlingt Seelen, die in den Erntefeldern von Abyssalis umherstreunen.
+Akastrale wird als **verrückter Hunger** oder **dunkler Hunger** bezeichnet. Sie ist die stärkste und gefährlichste der vier alten Götter, aber auch wahnsinnig. Diese Kombination aus überragender Macht und Wahnsinn macht sie zu einer unberechenbaren Bedrohung.
 
-**Gebote und Werte:** Akastrale mag Wachstum durch Verschlingen, das Brechen von Grenzen und grenzenlose Gier. Sie hasst Maßhalten, Sättigung und freiwilligen Verzicht. Ihre Anhänger rekrutieren sich aus Kultisten, Wahnsinnigen und Kreaturen der Finsternis; ihre Opfergaben sind Blut, verdorbene Speisen und verbrannte Knochen.
+Ihre Domänen – Leere, Gier und Verzehr – prägen ihr Wesen. Sie schätzt Wachstum durch Verschlingen, das Brechen von Grenzen und grenzenlose Gier. Sie hasst Maßhalten, Sättigung und freiwilligen Verzicht. Ihr Hunger ist demnach nicht nur physisch, sondern auch metaphysisch: Er richtet sich gegen jede Form von Begrenzung und Genügsamkeit.
 
-**Domänen und Symbol:** Ihre Domänen sind Leere, Gier und Verzehr. Ihr Symbol ist ein schwarzer Schlund, umgeben von gezackten Zähnen.
+Ihr Symbol, ein schwarzer Schlund mit gezackten Zähnen, verweist auf ihre Natur als verschlingende Macht. Alte Schriften beschreiben sie als uralten Abgrund, den selbst die Götter fürchten.
 
 ## Beziehungen und Verbindungen
 
-Akastrale ist eine von vier alten Göttern, die in Abyssalis eingesperrt wurden. Die anderen drei sind:
+Akastrale ist eine der vier alten Götter in Abyssalis. Die anderen drei sind:
 
-- **Südrawell, die Fleischweberin** – eine federhafte Kreatur, die nur Unheil bringt
-- **Ohoriaks, Mutter der Schleier** – eine beschützende, aber sehr jähzornige Göttin
-- **Vorgutar, Herr der Tausend Seelen** – der Sammler der Seelen, der seine Macht durch das erhält, was die Essenz des Lebens ist
+- **[Südrawell](/deities/suedrawell.md)**, die Fleischweberin, eine federhafte Kreatur, die nur Unheil bringt
+- **Ohoriaks**, Mutter der Schleier, eine beschützende, aber jähzornige Göttin
+- **[Vorgul'tar](/deities/vorgul_tar.md)**, Herr der Tausend Seelen, der Sammler der Seelen, der seine Macht durch die Essenz des Lebens erhält
 
-Die vier alten Götter werden als konkurrierende Mächte in Abyssalis dargestellt, deren Einflüsse die Unterwelt prägen. Akastrale wird dabei als die gefährlichste unter ihnen beschrieben. Der Informant der Gruppe betont, dass er weder an den alten noch an den neuen Göttern Interesse habe – eine Haltung, die die Distanz vieler Bewohner Abyssalis zu den alten Göttern andeutet.
+Akastrale wird als eine der engsten Vertrauten von Vorgul'tar beschrieben. Diese Nähe ist bemerkenswert, da die vier alten Götter ansonsten als rivalisierende Mächte in Abyssalis erscheinen. Die genaue Natur dieser Verbindung ist bislang nicht näher ausgeführt.
 
 ## Chronologie
 
-**Session 2026-03-31:** Die Gruppe befindet sich in einer Festung in Abyssalis. Ein Informant erklärt ihnen die Lage in der Unterwelt: Die meisten Seelen, die hier enden, streunen in den Erntefeldern herum und werden von Akastrale gefressen, von Ohoriaks aufgenommen oder von Sitravils erfetzt. Kinderseelen scheinen jedoch etwas Besonderes zu sein – sie entsprechen nicht ganz den Gesetzen der Natur in Abyssalis und werden nicht von Abyssalis und ihrer Welt beeinflusst. Dies hat auch Vorgul'tar verstanden. Der Informant erwähnt, dass die Festung wahrscheinlich der einzige Ort ist, an dem man vor den Einflüssen der vier alten Götter sicher ist, und stellt Akastrale als den „verrückten Hunger" oder „dunklen Hunger" vor. Er kündigt an, bereits Verbündete gefunden zu haben, die der Gruppe helfen werden.
+**Session 2026-03-31:** Ein Informant in Abyssalis erläutert der Gruppe das Schicksal von Seelen in der Unterwelt. Die meisten Seelen werden von Akastrale gefressen, von Ohoriaks aufgenommen oder von Sitravil erfetzt. Kinderseelen sind davon ausgenommen. Im selben Gespräch werden die vier alten Götter vorgestellt, darunter Akastrale als der verrückte beziehungsweise dunkle Hunger. Sie wird als Bedrohung charakterisiert, vor der die Festung der Gruppe Schutz bietet.
+
+**Session 2026-06-16:** Ein Verbündeter des Wächters berichtet, dass Akastrale in Panik ist und nach Süden rennt. Ihre Macht schwindet, ebenso wie die der anderen Götter. Der Informant deutet an, dass ein großes Ereignis bevorsteht – „es wird Sterne regnen“ – und dass dies seine Möglichkeit sei, aus Abyssalis zu entkommen. Die Gruppe wird gedrängt, sich zu beeilen, während die Götter geschwächt sind.
 
 ## Offene Fragen
 
-- Welche konkrete Rolle Akastrale im weiteren Verlauf der Kampagne spielen wird, ist unklar – insbesondere ob sie der Gruppe direkt begegnen wird oder ob ihr Einfluss nur mittelbar spürbar bleibt.
-- Wie sich Akastrales Wahnsinn konkret äußert und wie sie in Erscheinung tritt, ist nicht beschrieben.
-- Ob Akastrale eine Beziehung zu Vorgul'tar hat – der offenbar ein besonderes Interesse an Kinderseelen hat, die von den Einflüssen der vier alten Götter unberührt bleiben – ist nicht geklärt.
+- Was hat Akastrale derart in Panik versetzt, dass sie nach Süden rennt?
+- Was bedeutet das Schwinden ihrer Macht für das Kräftegleichgewicht in Abyssalis?
+- Welcher Zusammenhang besteht zwischen Akastrales Panik und dem angekündigten Sternenregen?
+- Welche Rolle spielt ihre enge Verbindung zu Vorgul'tar, und wie wirkt sich deren gemeinsame Schwächung aus?
+- Was befindet sich im Süden von Abyssalis, und warum flieht Akastrale dorthin?
 
 ## Belege
 
-[P-44] Session 2026-03-31 @ 01:15:35 (https://www.youtube.com/watch?v=Ee-K84wcxLM) – Erwähnung Akastrales als eine der vier alten Götter in Abyssalis, bekannt als der dunkle Hunger; Beschreibung als stärkste und gefährlichste, aber auch wahnsinnige der vier; Erwähnung als Bedrohung, die Seelen in den Erntefeldern frisst.
-2. Bekannte_Pantheon_der_Goetter.md – Domänen, Symbol, Anhänger, Opfergaben, Gebote und Beschreibung Akastrales.
-3. Kanon_Entscheidungen.md – Festlegung, dass Akastrale eine weibliche alte Gottheit ist; Hinweis, dass vorerst kein umfangreicher Eintrag entstehen soll.
+[P-44a] Session 2026-03-31 @ 01:14:24–01:16:27 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
+[P-44b] Session 2026-06-16 @ 00:50:51–00:53:26 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
+[P-54] Bekanntes Pantheon der Götter (Kampagnenmaterial)
+4. Kanon-Entscheidungen (Spielleitungs-Festlegungen)

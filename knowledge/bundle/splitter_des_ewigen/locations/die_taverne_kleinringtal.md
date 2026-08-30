@@ -10,7 +10,7 @@ id: LOC_DIE_TAVERNE_KLEINRINGTAL
 subtype: Gebäude
 ---
 
-Die [Taverne](/locations/taverne.md) ist das Zentrum des Dorfes und wird von [Xenia](/npcs/xenia_rotkam.md) geführt. Die Gruppe übernachtet hier und erlebt die Geschichten von [Talron](/npcs/talron.md).
+[Die Taverne](/locations/taverne_von_ehrenfels.md) ist das Zentrum des Dorfes und wird von [Xenia](/npcs/xenia_rotkam.md) geführt. Die Gruppe übernachtet hier und erlebt die Geschichten von [Talron](/npcs/talron.md).
 
 # Belege
 

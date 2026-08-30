@@ -10,7 +10,7 @@ id: LOC_SILBERGRUFT
 subtype: Dungeon
 ---
 
-Die Silbergruft ist eine alte Mine südlich der Berge von [Ehrenfels](/locations/ehrenfels.md), die einst ergiebig war, aber nun erschöpft sein soll. Die Gruppe erfährt, dass sich dort Kreaturen eingenistet haben. Im Inneren finden sie eine [Höhle](/locations/hoehle.md) mit lebendem Silber und Kristallen, die eine eigene Lebensform darstellen. [Die Mine](/locations/kristallmine.md) hat mehrere Ebenen, von denen die unteren versiegelt werden, um die Kreaturen einzusperren.
+Die Silbergruft ist eine alte Mine südlich der Berge von [Ehrenfels](/locations/ehrenfels.md), die einst ergiebig war, aber nun erschöpft sein soll. Die Gruppe erfährt, dass sich dort Kreaturen eingenistet haben. Im Inneren finden sie eine Höhle mit lebendem Silber und Kristallen, die eine eigene Lebensform darstellen. Die Mine hat mehrere Ebenen, von denen die unteren versiegelt werden, um die Kreaturen einzusperren.
 
 # Belege
 

@@ -8,6 +8,8 @@ tags:
 timestamp: '2025-06-10T00:00:00Z'
 id: EVENT_KAMPF_GEGEN_DIE_MIMIK
 subtype: Kampf
+aliases:
+- Kampf gegen die Mimic
 ---
 
 Eine Muschel entpuppt sich als [Mimik](/npcs/mimik.md) und greift die Gruppe an. [Cookie](/characters/cookie.md) wird fast getötet, aber [Dodo](/characters/dodo.md) zerschmettert die Kreatur.

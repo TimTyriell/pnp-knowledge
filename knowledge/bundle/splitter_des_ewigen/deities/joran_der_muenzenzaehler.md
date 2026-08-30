@@ -14,43 +14,46 @@ aliases:
 
 ## Überblick
 
-Joran der Münzenzähler ist ein neuer Gott der Welt, die erst seit zwölf Jahren besteht. Er gehört zu den neuen Göttern, die nach der Verbannung der alten Götter versuchen, das Gleichgewicht aufrechtzuerhalten. Über ihn ist nicht allzu viel bekannt; er offenbart sich nur denen, die es verdienen. Sein Zeichen findet sich an einer Statue in Kleinringtal, die dort aufgestellt ist und von seiner Paladin Adelia gehütet wird. Joran ist der Patron und Beschützer Adelias, die in seinem Namen handelt.
+Joran der Münzenzähler ist ein neuer Gott der Welt, die erst seit zwölf Jahren besteht. Er gehört zu den neuen Göttern, die nach der Verbannung der alten Götter versuchen, das Gleichgewicht aufrechtzuerhalten. Sein Wirken in der Welt ist subtil: Es gibt kaum sichtbare Anzeichen seiner Existenz, doch er spricht zu denen, die es verdienen.
+
+In [Kleinringtal](/locations/ringtal.md) steht eine Statue, die Joran dem Münzenzähler gewidmet ist. Sie trägt seinen Namen als Gravur. Die Paladin [Adeliga](/npcs/adeliga_der_eulenseraph.md) verehrt ihn als ihre Gottheit, ihren Patron und Beschützer, und handelt in seinem Namen.
 
 ## Rolle in der Kampagne
 
-Joran tritt in der Kampagne zunächst als Patron der Paladin Adelia in Erscheinung, die in Kleinringtal an seiner Statue wacht. Die Heldin Saris entdeckt die Statue und beginnt, sie wissenschaftlich zu dokumentieren – sie hat ein Notizbuch mit Zeichnungen, Inschriften und Schätzungen zur Größe der Statue angefertigt. Beim Gespräch mit Adelia erfährt Saris von Joran und seiner Rolle als neuer Gott.
+Joran tritt in der Kampagne erstmals in Erscheinung, als er [Sange](/characters/sange.md) segnet. Dieser Segen löst einen Timer aus und verändert Sanges [Blutmagie](/domains/blutmagie.md) spürbar. Seit dem Segen ist Sanges Magie, die zuvor turbulent und stürmisch war wie eine rot gefüllte Glaskugel, deutlich ruhiger geworden. In dem Rot der Blutmagie ist nun ein kleiner Funke Licht enthalten, der dem Chaos der Blutmagie entgegenwirkt.
 
-Die entscheidende Wendung kommt, als Joran den Helden Sange segnet. Dieser Segen löst einen Timer aus und verändert Sanges Blutmagie grundlegend: Die zuvor turbulente, stürmische Magie wird ruhiger, und in dem roten Chaos der Blutmagie erscheint ein kleiner Funke Licht, der dem Chaos entgegenwirkt. Sanges Gefühlslage verändert sich dadurch ebenfalls. Die Heldin Kaya reagiert misstrauisch auf diesen neuen Gott.
+Die Paladin Adeliga ist seine treue Anhängerin. Sie begegnet [Saris](/characters/saris.md) in Kleinringtal an der Statue Jorans und zeigt sich als dessen Dienerin. Als Saris sie nach der Gottheit fragt, erklärt Adeliga, dass nicht allzu viel über Joran bekannt sei.
+
+[Kaya](/characters/kaya.md) steht dem neuen Gott misstrauisch gegenüber.
 
 ## Wichtige Merkmale
 
-Joran wird als Münzenzähler bezeichnet, was auf eine Verbindung zu Handel, Reichtum oder Abrechnung hindeuten könnte – genauere Informationen darüber liegen nicht vor. Er ist ein neuer Gott, der erst nach der Verbannung der alten Götter in Erscheinung getreten ist. Die neuen Götter versuchen inständig, das Gleichgewicht aufrechtzuerhalten, und sie reden mit denen, die es verdienen.
+Über Jorans äußere Erscheinung oder direkte Manifestationen ist aus den Belegen nichts bekannt. Sein Wirken zeigt sich auf indirekte Weise:
 
-Seine Gnade zeigt sich auf sichtbare Weise: Als Adelia über ihren Gott spricht, leuchten ihre Augen ganz leicht auf, wie mit einem goldenen Film – ein kurzes, magisches Aufleuchten, das wie ein Zauber wirkt. Saris bemerkt dieses Phänomen und fragt nach, ob es Magie sei; Adelia bestätigt, dass es die Gnade ihres Gottes ist.
+- **Segen**: Joran segnet diejenigen, die es verdienen. Sein Segen an Sange beruhigt dessen Blutmagie und fügt ihr einen Funken Licht hinzu.
+- **Gnade**: Adeliga kann die Gnade ihres Gottes wirken – als Saris bemerkt, dass Adelias Augen kurz golden aufleuchten, erklärt diese, es sei die Gnade ihres Gottes gewesen.
+- **Statue**: In Kleinringtal existiert eine Statue mit der Gravur „Joran, der Münzenzähler“, die Saris eingehend untersucht und dokumentiert hat.
+- **Name**: Sein Beiname „der Münzenzähler“ deutet auf eine Verbindung zu Münzen, Handel oder Abrechnung hin – Näheres ist aus den Belegen nicht ersichtlich.
 
 ## Beziehungen und Verbindungen
 
-**Adelia:** Sie ist die Paladin Jorans und handelt in seinem Namen. Sie wacht an seiner Statue in Kleinringtal, auch spät in der Nacht. Sie bezeichnet Joran als ihre Gottheit, ihren Patron und Beschützer. Sie ist eine Inferni, wie aus der Begrüßung Saris' hervorgeht.
-
-**Sange:** Er wird von Joran gesegnet. Der Segen beruhigt seine Blutmagie und verändert seine Gefühlslage. Sange ist seitdem im Gefolge des neuen Gottes.
-
-**Kaya:** Sie ist misstrauisch gegenüber Joran und diesem neuen Gott.
-
-**Saris:** Sie zeigt wissenschaftliches Interesse an Jorans Statue und dokumentiert sie in einem Notizbuch. Sie fragt Adelia nach der Gottheit aus.
+- **Adeliga**: Seine Paladin in Kleinringtal. Sie nennt ihn ihre Gottheit, ihren Patron und Beschützer und handelt in seinem Namen. Sie kann seine Gnade wirken.
+- **Sange**: Von Joran gesegnet. Seit dem Segen ist Sanges Blutmagie ruhiger und enthält einen Funken Licht.
+- **Kaya**: Misstrauisch gegenüber dem neuen Gott.
 
 ## Chronologie
 
-**Session 2026-06-04:** Saris ist nachts in Kleinringtal an der Statue, als Adelia sie anspricht. Saris zeigt Adelia ihr Notizbuch mit ihren Aufzeichnungen über die Statue. Adelia liest die Inschrift vor: „Joran, der Münzenzähler." Sie erklärt, dass Joran ihre Gottheit, ihr Patron und Beschützer ist, und dass sie in seinem Namen handelt. Auf Saris' Nachfrage erzählt Adelia, dass die Welt erst seit zwölf Jahren besteht, seit der Verbannung der alten Götter, und dass die neuen Götter das Gleichgewicht aufrechtzuerhalten versuchen. Sie betont, dass die Götter mit denen reden, die es verdienen. Beim Sprechen leuchten Adelias Augen kurz golden auf – die Gnade ihres Gottes, wie sie erklärt. Sange empfängt in dieser Session den Segen Jorans, was einen Timer auslöst.
+**Session 2026-06-04:** In Kleinringtal entdeckt Saris die Statue Jorans, die sie zuvor bereits eingehend untersucht und in ihrem [Notizbuch](/items/notizbuch.md) dokumentiert hat. Die Paladin Adeliga spricht sie an und offenbart, dass Joran der Münzenzähler ihre Gottheit ist. Auf Saris' Nachfrage erklärt Adeliga, dass die Welt erst seit zwölf Jahren besteht und die neuen Götter versuchen, das Gleichgewicht aufrechtzuerhalten. Es gebe kaum Anzeichen von ihnen, aber sie redeten mit denen, die es verdienen. Dabei leuchten Adelias Augen kurz golden auf – die Gnade ihres Gottes. Sange empfängt in dieser Session den Segen Jorans, was einen Timer auslöst.
 
-**Session 2026-07-10:** Sange reflektiert über die Veränderungen seit dem Segen: Seine Blutmagie, die zuvor turbulent und stürmisch war, ist ruhiger geworden. In dem roten Chaos der Blutmagie ist nun ein kleiner Funke Licht, der dem Chaos entgegenwirkt. Auch seine Gefühlslage hat sich verändert. Kaya äußert Misstrauen gegenüber diesem neuen Gott.
+**Session 2026-07-10:** Sange reflektiert die Veränderungen seit dem Segen: Seine Blutmagie ist ruhiger geworden, ein kleiner Funke Licht wirkt dem Chaos entgegen. Seine Gefühlslage hat sich ebenfalls verändert. Kaya äußert Misstrauen gegenüber dem neuen Gott.
 
 ## Offene Fragen
 
-- Was genau bedeutet der Beiname „Münzenzähler"? Welche Domäne oder welches Prinzip verkörpert Joran?
-- Warum hat Joran ausgerechnet Sange gesegnet? Was ist der Zweck dieses Segens?
+- Was genau bedeutet der Beiname „der Münzenzähler“? Welche Domäne oder Werte verkörpert Joran?
+- Welche weiteren Anhänger oder Paladine hat Joran neben Adeliga?
 - Was löst der Timer aus, der durch Sanges Segen gestartet wurde?
-- Welche Rolle spielt Joran im größeren Gefüge der neuen Götter, die das Gleichgewicht aufrechterhalten?
-- Warum ist Kaya misstrauisch gegenüber Joran – gibt es dafür einen konkreten Grund oder ist es allgemeines Misstrauen gegenüber neuen Göttern?
+- Welche Absichten verfolgt Joran mit seinem Segen für Sange?
+- Warum ist Kaya misstrauisch gegenüber Joran?
 
 ## Belege
 

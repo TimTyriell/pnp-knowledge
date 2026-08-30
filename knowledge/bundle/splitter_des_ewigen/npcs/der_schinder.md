@@ -1,25 +1,26 @@
 ---
 type: NPC
 title: Der Schinder
-description: Der Schinder ist eine wichtige Persönlichkeit der Seelenwacht in Jalan
-  und gehört zur Führung der Organisation. Er tritt als Begleiter des…
+description: Der Schinder ist eine wichtige Persönlichkeit der Seelenwacht in Jalan.
+  Er gehört der Führung der Organisation an und begleitet den Richter…
 tags:
 - npcs
 timestamp: '2026-05-13T00:00:00Z'
 id: NPC_DER_SCHINDER
 aliases:
+- Der Schinder
 - Schinder
 ---
 
-Der Schinder ist eine wichtige Persönlichkeit der Seelenwacht in Jalan und gehört zur Führung der Organisation. Er tritt als Begleiter des Richters in Erscheinung und kämpft später an der Oberfläche gegen Anhänger Vorgul'tars. Die Gruppe behandelt ihn als Verbündeten.
+Der Schinder ist eine wichtige Persönlichkeit der [Seelenwacht](/factions/seelenwacht.md) in [Jalan](/locations/jalan.md). Er gehört der Führung der Organisation an und begleitet den [Richter](/npcs/richter_herr_der_seelenwacht.md) bei entscheidenden Gesprächen und Gängen. Im Konflikt mit den Anhängern [Vorgul'tars](/deities/vorgul_tar.md) kämpft er an der Oberfläche und gilt der Gruppe als Verbündeter.
 
-## Rolle bei der Seelenwacht
+## Rolle in der Seelenwacht
 
-Der Schinder zählt zu den führenden Köpfen der Seelenwacht in Jalan. Bei einem Besuch in der Villa begleitet er den Richter und die Gruppe und ist in die Gespräche über die aktuelle Lage eingebunden. Weitere Angaben zu seiner genauen Position oder seinen Aufgaben innerhalb der Seelenwacht sind aus den bisherigen Quellen nicht bekannt.
+Der Schinder wird als Teil der Führungsriege der Seelenwacht beschrieben. Bei einem Gang zur [Villa](/locations/villau.md) ist er an der Seite des Richters und in die Gespräche über die Lage in Jalan eingebunden.
 
-## Verlauf
+## Auftreten im Konflikt
 
-Der Schinder wird erneut erwähnt, als er an der Oberfläche gegen Anhänger Vorgul'tars kämpft. Der Richter will ihn in dieser Situation retten, was darauf hindeutet, dass der Schinder sich im Einsatz befindet und als Verbündeter der Gruppe gilt. Nähere Umstände dieses Kampfes oder sein Verbleib danach sind nicht überliefert.
+Im Kampf gegen die Vorgul'tar-Anhänger hält sich der Schinder an der Oberfläche auf und gerät dort in Bedrängnis. [Der Richter](/npcs/richter_herr_der_seelenwacht.md) strebt seine Rettung an; er steht damit klar auf der Seite der Gruppe.
 
 # Belege
 

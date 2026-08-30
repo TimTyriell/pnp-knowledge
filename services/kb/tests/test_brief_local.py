@@ -5,7 +5,7 @@ reformats. Linking is done against the concept index instead of being invented.
 """
 
 from pnp_okf.models import CanonicalEntity, EntityType, MentionRef
-from pnp_okf.synthesize import link_targets, render_brief_body
+from pnp_okf.synthesize import autolink_prose, link_targets, render_brief_body
 
 
 def _mention(note, ts="00:12:00", quality="hoch"):
@@ -59,10 +59,14 @@ def test_entity_does_not_link_to_itself():
     assert "npcs/auranil.md" not in body
 
 
-def test_better_attested_entity_wins_a_name_collision():
+def test_name_collision_is_dropped_not_arbitrated():
+    # A wrong link is worse than no link -- see synthesize.py::link_targets.
+    # No tiebreak by mention count: a name owned by two concepts is simply
+    # unlinkable, and each concept's own qualified name still resolves.
     big = _entity("npcs/harald_gross", "Harald", ["a", "b", "c"])
     small = _entity("npcs/harald_klein", "Harald", ["d"])
-    assert link_targets([small, big])["Harald"] == "npcs/harald_gross"
+    targets = link_targets([small, big])
+    assert "Harald" not in targets
 
 
 def test_low_quality_transcript_is_marked():
@@ -71,3 +75,60 @@ def test_low_quality_transcript_is_marked():
         mentions=[_mention("Note.", quality="niedrig")],
     )
     assert "[Transkriptqualität: niedrig]" in render_brief_body(entity)
+
+
+# --- autolink_prose: the standard/deep-tier counterpart of render_brief_body's
+# built-in linking (see Fix 1, services/kb/tests — an LLM-synthesized body was
+# never autolinked at all before this, which is why 53/60 deep-tier nodes had
+# zero outgoing links) -------------------------------------------------------
+
+_TARGETS = {"Belorus": "npcs/belorus", "Lenra": "npcs/lenra"}
+
+
+def test_prose_head_gets_linked():
+    body = "Belorus herrscht über die Burg. Lenra lebt im Sumpf.\n\n# Belege\n\n1. x\n"
+    linked = autolink_prose(body, _TARGETS, skip="factions/x")
+    assert "[Belorus](npcs/belorus.md)" in linked
+    assert "[Lenra](npcs/lenra.md)" in linked
+
+
+def test_belege_section_is_never_touched():
+    body = "Siehe Belorus.\n\n# Belege\n\n1. Session x. Auch Lenra kommt vor.\n"
+    linked = autolink_prose(body, _TARGETS, skip="factions/x")
+    assert "[Lenra]" not in linked
+    assert "Auch Lenra kommt vor." in linked
+
+
+def test_heading_line_is_not_linked():
+    body = "## Belorus\n\nEr herrscht über Zebros. Lenra warnt ihn.\n\n# Belege\n\n1. x\n"
+    linked = autolink_prose(body, _TARGETS, skip="factions/x")
+    assert linked.startswith("## Belorus\n")  # heading line untouched
+    assert "[Lenra](npcs/lenra.md)" in linked  # prose line still linked
+
+
+def test_existing_link_or_url_is_not_relinked():
+    body = (
+        "[Belorus](npcs/belorus.md) herrscht. Lenra lebt.\n\n"
+        "# Belege\n\n1. Session x (https://youtu.be/Lenra) — nicht verlinkt.\n"
+    )
+    linked = autolink_prose(body, _TARGETS, skip="factions/x")
+    assert linked.count("belorus.md") == 1  # not linked a second time
+    assert "[Lenra](npcs/lenra.md)" in linked  # the real, unlinked mention
+
+
+def test_directory_qualified_link_does_not_shadow_a_cross_type_namesake():
+    # A linked deities/foo must not mark the unrelated npcs/foo as already
+    # linked -- only the bare-slug fallback (a link with no directory
+    # segment at all) may cross concept ids by slug. See synthesize.py's
+    # _linked_concept_ids.
+    body = "[Sanddorn](/locations/sanddorn.md) liegt im Süden. Die Sanddorn kämpft."
+    targets = {"Sanddorn": "factions/sanddorn"}
+    linked = autolink_prose(body, targets, skip="events/x")
+    assert "[Sanddorn](factions/sanddorn.md)" in linked
+
+
+def test_applying_twice_is_the_same_as_once():
+    body = "Belorus greift an. Später greift Belorus erneut an. Lenra beobachtet.\n\n# Belege\n\n1. x\n"
+    once = autolink_prose(body, _TARGETS, skip="factions/x")
+    twice = autolink_prose(once, _TARGETS, skip="factions/x")
+    assert once == twice

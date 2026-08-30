@@ -10,7 +10,7 @@ id: ITEM_KORNKLATSCHER
 subtype: Trank
 ---
 
-Der Kornklatscher ist ein starkes alkoholisches Getränk, das von [Goblins](/factions/goblins.md) gebraut wird. Es schmeckt wie Putzalkohol und verursacht Blubbern im Magen. Es wird in der [Taverne](/locations/taverne.md) serviert.
+Der Kornklatscher ist ein starkes alkoholisches Getränk, das von [Goblins](/npcs/pilz_goblins.md) gebraut wird. Es schmeckt wie Putzalkohol und verursacht Blubbern im Magen. Es wird in der Taverne serviert.
 
 # Belege
 

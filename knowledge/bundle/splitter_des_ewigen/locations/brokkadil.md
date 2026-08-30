@@ -10,7 +10,7 @@ id: LOC_BROKKADIL
 subtype: Festung
 ---
 
-Brokkadil ist eine Festung, von der aus die Gruppe um [Rotunas](/characters/rotunas.md) ihre Reise begann. Es wird nur kurz erwähnt.
+Brokkadil ist eine [Festung](/locations/festung.md), von der aus die Gruppe um [Rotunas](/characters/rotunas.md) ihre Reise begann. Es wird nur kurz erwähnt.
 
 # Belege
 

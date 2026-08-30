@@ -9,7 +9,7 @@ timestamp: '2026-07-10T00:00:00Z'
 id: NPC_GROTTENSCHRAT
 ---
 
-Verwundeter [Gnoll](/npcs/gnoll.md), der vor der Barrikade liegt und von [Saris](/characters/saris.md) getötet wird. Er wurde von einem Pfeil getroffen und stirbt, nachdem Saris ihm das Herz durchsticht. Seine letzten Momente werden durch [Sanges](/characters/sange.md) Vision enthüllt.
+Verwundeter Gnoll, der vor der Barrikade liegt und von [Saris](/characters/saris.md) getötet wird. Er wurde von einem Pfeil getroffen und stirbt, nachdem Saris ihm das Herz durchsticht. Seine letzten Momente werden durch [Sanges](/characters/sange.md) Vision enthüllt.
 
 # Belege
 

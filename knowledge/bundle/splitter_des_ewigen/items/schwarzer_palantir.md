@@ -2,7 +2,7 @@
 type: Item
 title: Schwärzer Palantir
 description: Der Schwarze Palantir ist eine runde, schwarze Kugel und ein dunkles
-  Artefakt. Er gilt als wertvolles Überbleibsel aus der Zeit der Alten u…
+  Artefakt aus der Zeit der Alten. Dodo entdeckte ihn im Labor der Hag i…
 tags:
 - items
 timestamp: '2025-06-25T00:00:00Z'
@@ -12,20 +12,18 @@ aliases:
 - Schwarzer Palantir
 ---
 
-# Schwarzer Palantir
+Der **Schwarze Palantir** ist eine runde, schwarze Kugel und ein dunkles Artefakt aus der Zeit der Alten. [Dodo](/characters/dodo.md) entdeckte ihn im Labor der Hag im [Sumpf](/locations/sumpf_vor_dem_goblin_dorf.md)-Dungeon. Später wurde das Artefakt verwendet, um ein uraltes Buch zu öffnen; dabei löste es sich auf.
 
-Der **Schwarze Palantir** ist eine runde, schwarze Kugel und ein dunkles Artefakt. Er gilt als wertvolles Überbleibsel aus der Zeit der Alten und wurde von [Dodo](/characters/dodo.md) im Labor der Hag im Sumpf-Dungeon gefunden. Anfangs war der Gegenstand nicht identifizierbar; erst später ordnete ihn ein Magier der Zeit der Alten zu. Der Palantir wurde verwendet, um ein [uraltes Buch](/items/uraltes_buch.md) zu öffnen, und löste sich dabei auf.
+## Herkunft und Fundort
 
-## Fundort und Aussehen
+Die Kugel lag im Labor der Hag, das sich im Sumpf-Dungeon befindet. Dodo fand sie dort während einer früheren Erkundung. Da sich das Objekt keiner bekannten Kategorie zuordnen ließ, konnte es zunächst nicht identifiziert werden; die Bezeichnung als schwarzer Palantir etablierte sich im weiteren Verlauf. In der folgenden Session wurde angedeutet, dass die Hag das Artefakt absichtlich an diesem Ort platziert hatte – bestätigt wurde das jedoch nicht.
 
-Der Palantir lag im Labor der Hag, das sich im Sumpf-Dungeon befindet. Dodo entdeckte ihn dort als runde Kugel. Eine genauere Einordnung gelang zunächst nicht; die Gruppe konnte nicht sagen, um was für einen Gegenstand es sich handelte. Dass es sich um ein Artefakt aus der Zeit der Alten handelte, wurde durch die Einschätzung eines Magiers bekannt, der den Palantir als wertvolles Überbleibsel dieser Epoche bezeichnete. Über weitere Eigenschaften des Artefakts ist nichts bekannt; seine Wirkung zeigte sich erst im Zusammenhang mit dem uralten Buch.
+## Verwendung und Verlust
 
-## Verwendung und Auflösung
-
-Beim Öffnen des uralten Buches kam der Schwarze Palantir zum Einsatz. Dabei verbrauchte sich das Artefakt und löste sich auf. Der Magier bedauerte diesen Verlust ausdrücklich. Es wurde angedeutet, dass der Palantir nicht zufällig im Sumpf-Dungeon lag, sondern absichtlich platziert worden war.
+Beim Öffnen des uralten Buches wurde der Palantir verwendet. Dabei verbrauchte er sich vollständig und löste sich auf. Der Magier der Gruppe bedauerte den Verlust ausdrücklich und nannte das Artefakt ein wertvolles Überbleibsel aus der Zeit der Alten. Seitdem gilt der Palantir als verloren.
 
 # Belege
 
 [P-12] Session 2025-06-17 @ 01:53:33 – https://www.youtube.com/watch?v=tl76B4V0io8
 [P-13] Session 2025-06-25 @ 00:44:00 – https://www.youtube.com/watch?v=tpkO9uGw6-I
-3. Kanon_Entscheidungen.md – Spielleitungs-Entscheidung zum Fundort
+3. Zusätzliche Quelle: *Kanon_Entscheidungen.md* – Festlegung des Fundorts (Labor der Hag im Sumpf-Dungeon)

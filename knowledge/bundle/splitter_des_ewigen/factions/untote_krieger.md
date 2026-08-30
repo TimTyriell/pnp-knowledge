@@ -16,7 +16,7 @@ Die **Untoten Krieger** sind eine Fraktion wiederbelebter Kämpfer, die unter de
 
 ## Rolle im Kampf gegen die Dämonen
 
-Die Untoten Krieger treten als Streitmacht im Konflikt gegen die Dämonen auf. Sie stehen unter Voras' Kommando, der sie gegen die dämonischen Gegner einsetzt. Eigene Ziele oder eine von Voras unabhängige Führung der Untoten sind nicht überliefert; ihre Rolle beschränkt sich auf den Kampf an seiner Seite.
+[Die Untoten](/factions/belorus_untotenarmee.md) Krieger treten als Streitmacht im Konflikt gegen die Dämonen auf. Sie stehen unter Voras' Kommando, der sie gegen die dämonischen Gegner einsetzt. Eigene Ziele oder eine von Voras unabhängige Führung der Untoten sind nicht überliefert; ihre Rolle beschränkt sich auf den Kampf an seiner Seite.
 
 ## Bindung an Voras' Leben
 

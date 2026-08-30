@@ -71,7 +71,9 @@ fülle Lücken nicht mit Spekulation, die wie Tatsache klingt.
 ### Ring der Teleportation
 
 ENTSCHEIDUNG: Der Ring der Teleportation ist ein Gegenstand **von Lindo Laut**
-und wird einmal pro Session aktiviert. Der Ring, den Dodo zerstört hat, ist ein
+und wird einmal pro Session aktiviert. Er ist derselbe Gegenstand, der an
+anderer Stelle als "Lindo Lauts Ring" beschrieben wird — kein zweiter Ring,
+nur ein zweiter Titel dafür. Der Ring, den Dodo zerstört hat, ist ein
 **anderer, nicht verwandter Ring** — er gehört nicht in diesen Eintrag. Führe
 hier ausschließlich Lindos Ring.
 
@@ -81,8 +83,9 @@ ENTSCHEIDUNG: Sammeleintrag. Hier werden die verschiedenen kleineren Ringe der
 Kampagne **nur stichwortartig** aufgelistet — jeweils ein bis zwei Sätze, was
 der Ring ist und wo er auftauchte. Keine ausführlichen Einzelabschnitte, keine
 Chronologie. Diese Ringe waren jeweils nur kurz relevant (etwa der von Dodo
-zerstörte Ring) und verdienen keinen eigenen Eintrag. Lindos **Ring der
-Teleportation** gehört ausdrücklich NICHT hierher, er hat einen eigenen Eintrag.
+zerstörte Ring, assoziiert mit Abisalis und lila Magie) und verdienen keinen
+eigenen Eintrag. Lindos **Ring der Teleportation** gehört ausdrücklich NICHT
+hierher, er hat einen eigenen Eintrag.
 
 ### Schriftrollen
 
@@ -366,6 +369,13 @@ ENTSCHEIDUNG: Belorus ist **keine Gottheit**. Die Beschreibung als „Gottheit,
 die mit Stille assoziiert ist" beruht auf seinem Beinamen *der Stille* und ist
 ein Missverständnis; er ist ein mächtiger NPC, kein göttliches Wesen.
 
+ENTSCHEIDUNG (GM/Noah 2026-08-30): Belorus' Untotenarmee wurde einmal separat
+als „Untote Horde von Zebras" erfasst und dabei falsch verstanden: „Zebras"
+ist hier wieder die Verhörung von **Zebros**, dem gefallenen Königreich — die
+Horde besteht nicht aus untoten *Zebra-Tieren*, sondern zieht aus dem Gebiet
+des früheren Königreichs Zebros ins Tal. Es ist **dieselbe** Armee wie oben,
+kein zweites, eigenständiges Konzept.
+
 ### Hans
 
 ENTSCHEIDUNG: Es gibt **zwei verschiedene Personen namens Hans**. Der Soldat
@@ -459,9 +469,17 @@ Streitkolben aus Zebras" und „Streitkolben von Zebras" bezeichnen alle
 dieselbe. Nicht zu verwechseln mit dem *Morgenstern des Heiligen Duran*, der
 Ritter Brandon gehört.
 
-ENTSCHEIDUNG: Die drei Herkunftsangaben widersprechen sich **nicht**: Dodo zog
-die Waffe **in der Festung Zebras aus einem Spiegel**, und sie stammt
-**ursprünglich von Cepros**. Das sind drei Teile einer Geschichte.
+ENTSCHEIDUNG (überholt, siehe Korrektur 2026-08-29 direkt darunter): Die drei
+Herkunftsangaben widersprechen sich nicht: Dodo zog die Waffe in der Festung
+Zebras aus einem Spiegel, und sie stammt ursprünglich von Cepros. Das sind
+drei Teile einer Geschichte.
+
+KORREKTUR (GM/Noah 2026-08-29): **„Cepros" ist keine dritte, eigenständige
+Herkunft** — es ist dieselbe Verhörung wie „Zebras" für **Zebros**, das
+gefallene Königreich. Die Waffe heißt **Zebros Zorn**, wurde **in der Festung
+Zebros aus einem Spiegel gezogen** und stammt **ursprünglich aus dem
+Königreich Zebros** — eine einzige Herkunft, nicht drei. Jede weitere
+Erwähnung von „Cepros" im Bundle bezeichnet ebenfalls Zebros.
 
 ### Die Hags
 
@@ -582,6 +600,17 @@ Kol Meref und die Kultisten des Varsurs.
 Nicht betroffen: eine Organisation und ihr Sitz bleiben **getrennt**, auch bei
 gleichem Namen. Die *Seelenwacht* ist sowohl ein Orden als auch eine Stadt —
 das sind zwei Dinge mit einer echten Beziehung zwischen ihnen, keine Dublette.
+
+### Hartwacht
+
+ENTSCHEIDUNG: Hartwacht ist eine **Stadt**, keine uneinnehmbare Orkfestung.
+Der Beleg aus Session 2026-03-18 (00:45:15), der sie als "uneinnehmbare
+Orkfestung" bezeichnet, ist ungültig — er beruht auf einer Fehldarstellung am
+Tisch. Gültig bleibt die Beschreibung aus Session 2025-10-07 (00:09:39): eine
+Stadt, die die Magier vor dem Golem schützen wollten. Die Lage hinter einem von
+Vargen bewohnten Pass und das Reiseziel der Gruppe bleiben davon unberührt —
+nur die Einordnung als Festung entfällt. Führe diesen Punkt nicht als offenen
+Konflikt auf.
 
 ---
 

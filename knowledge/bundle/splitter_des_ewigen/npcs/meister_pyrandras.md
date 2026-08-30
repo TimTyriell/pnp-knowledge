@@ -1,39 +1,30 @@
 ---
 type: NPC
 title: Meister Pyrandras
-description: 'Meister Pyrandras ist ein goldener Dragonborn aus Ehrenfels. Er tritt
-  in der Stadt als Meister auf und bekleidet mehrere Funktionen: Als Ko…'
+description: Meister Pyrandras ist ein goldener Dragonborn und eine wiederkehrende
+  Persönlichkeit in Ehrenfels. In den Aufzeichnungen der Gruppe tritt e…
 tags:
 - npcs
 timestamp: '2026-08-12T00:00:00Z'
 id: NPC_MEISTER_PYRANDRAS
 aliases:
+- Meister Pyrandas
 - Meister Pirandras
 ---
 
-**Meister Pyrandras** ist ein goldener Dragonborn aus [Ehrenfels](/locations/ehrenfels.md). Er tritt in der Stadt als Meister auf und bekleidet mehrere Funktionen: Als Kommandant von Ehrenfels führt er die Verteidigung der Stadt an, zugleich ist er der Wirt der örtlichen Taverne. Über die Ereignisse hinweg zeigt er sich als kooperationsbereiter Ansprechpartner, gerät aber auch selbst in angespannte Situationen.
+Meister Pyrandras ist ein goldener Dragonborn und eine wiederkehrende Persönlichkeit in [Ehrenfels](/locations/ehrenfels.md). In den Aufzeichnungen der Gruppe tritt er in mehreren Funktionen auf: als Meister der Stadt, als Kommandant der Stadtverteidigung und schließlich als Wirt der örtlichen Taverne. Seine Auftritte sind geprägt von Kooperation, Entschlossenheit und teils heftigen emotionalen Reaktionen auf die Geschehnisse um die Seraphen.
 
-## Rolle und Auftreten
+## Rollen und Auftreten in Ehrenfels
 
-Pyrandras wird von [Lindo Laut](/characters/lindo_laut.md) alarmiert und führt daraufhin die Verstärkung an. Er ist von der Lage beeindruckt, unterstützt die Gruppe und verhandelt mit dem Gildemeister über die Belohnung. Später, beim Angriff von Dämonen auf Ehrenfels, leitet er als Kommandant die Verteidigung, weist die Gruppe an, zur Brücke zu eilen, und hält trotz schwerer Bedrängnis im Kampf seine Stellung.
+Bei der ersten Begegnung mit der Gruppe wird Pyrandras von [Lindo Laut](/characters/lindo_laut.md) alarmiert und führt die Verstärkung an. Er zeigt sich beeindruckt von der Lage, unterstützt die Gruppe und verhandelt mit dem [Gildemeister](/npcs/nox.md) über die Belohnung. Später ist er als Kommandant von Ehrenfels für die Verteidigung gegen [Dämonen](/factions/daemonen.md) verantwortlich: Er weist die Gruppe an, zur Brücke zu eilen, und hält seine Stellung, obwohl er im Kampf schwer bedrängt wird. In späteren Aufzeichnungen tritt er als Wirt der [Taverne von Ehrenfels](/locations/taverne_von_ehrenfels.md) auf, wo er die Gruppe empfängt.
 
-Als Wirt der Taverne von Ehrenfels erlebt die Gruppe ihn in einer anderen Rolle: Nervös wegen der Vorfälle in der Kapelle zeigt er sich entsetzt, dass die Gruppe eine Göttin gesehen hat, und ist erleichtert, als die Seraphen die Stadt verlassen haben.
+## Verhältnis zu den Seraphen und der Gruppe
 
-## Konflikt mit den Seraphen
+Pyrandras gerät mit den [Seraphen](/factions/seraphen.md) aneinander, als er aufgebracht ist, weil sich [Nerash](/deities/nerash.md) nicht zeigt. Er droht fast mit Gewalt und wird von [Orlanius Schwarzhorn](/npcs/orlanius_schwarzhorn.md) beruhigt. Gegenüber der Gruppe zeigt er sich entsetzt, als diese berichtet, eine Göttin gesehen zu haben. Erleichtert zeigt er sich, als die Seraphen die Stadt verlassen.
 
-Während die Seraphen in Ehrenfels sind, gerät Pyrandras mit ihnen aneinander. Er ist aufgebracht, weil sich Nerash nicht zeigt, und droht beinahe mit Gewalt. [Orlanius Schwarzhorn](/npcs/orlanius_schwarzhorn.md) gelingt es, ihn zu beruhigen.
+# Belege
 
-## Beziehungen
-
-- [Lindo Laut](/characters/lindo_laut.md) alarmiert ihn; daraufhin führt Pyrandras die Verstärkung an.
-- Mit dem **Gildemeister** verhandelt er über die Belohnung für die Gruppe.
-- [Nerash](/deities/nerash.md) bleibt einer Begegnung fern, was Pyrandras erzürnt.
-- [Orlanius Schwarzhorn](/npcs/orlanius_schwarzhorn.md) beruhigt ihn in der Auseinandersetzung mit den [Seraphen](/factions/seraphen.md).
-- Zu den Seraphen hat er ein angespanntes Verhältnis.
-
-## Belege
-
-1. Session 2025-07-22, 02:07:00 – https://www.youtube.com/watch?v=BRRCUgW4xRo
-2. Session 2026-04-09, 00:15:31 – https://www.youtube.com/watch?v=vcGkejr8_nI
-3. Session 2026-08-04, 02:02:21 – https://www.youtube.com/watch?v=qRj2t3wQHfs
-4. Session 2026-08-12, 00:56:36 – https://www.youtube.com/watch?v=piUv11DCwDw
+1. Session 2025-07-22 @ 02:07:00 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
+2. Session 2026-04-09 @ 00:15:31 (https://www.youtube.com/watch?v=vcGkejr8_nI)
+3. Session 2026-08-04 @ 02:02:21 (https://www.youtube.com/watch?v=qRj2t3wQHfs)
+4. Session 2026-08-12 @ 00:56:36 (https://www.youtube.com/watch?v=piUv11DCwDw)

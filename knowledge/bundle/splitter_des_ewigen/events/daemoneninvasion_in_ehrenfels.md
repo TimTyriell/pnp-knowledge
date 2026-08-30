@@ -10,7 +10,7 @@ id: EVENT_DAEMONENINVASION_IN_EHRENFELS
 subtype: Kampf
 ---
 
-Ein massiver Angriff dämonischer Kreaturen auf die Stadt [Ehrenfels](/locations/ehrenfels.md), ausgelöst durch ein Portal. Die Gruppe kämpft sich durch die Stadt, um das Portal zu schließen.
+Ein massiver Angriff dämonischer Kreaturen auf die Stadt [Ehrenfels](/locations/ehrenfels.md), ausgelöst durch ein [Portal](/locations/portal.md). Die Gruppe kämpft sich durch die Stadt, um das Portal zu schließen.
 
 # Belege
 

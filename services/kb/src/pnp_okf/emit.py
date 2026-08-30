@@ -8,7 +8,7 @@ from pathlib import Path
 import yaml
 
 from pnp_okf.episodes import Episodes
-from pnp_okf.links import ConceptIndex, normalize_body
+from pnp_okf.links import ConceptIndex, apply_spellings, normalize_body
 from pnp_okf.models import (
     DIR_TO_TYPE,
     SUBTYPES,
@@ -26,6 +26,7 @@ from pnp_okf.okf import (
     write_if_changed,
     write_index,
 )
+from pnp_okf.synthesize import _BELEGE_HEADING_RE, render_belege_section
 
 log = logging.getLogger(__name__)
 
@@ -38,6 +39,7 @@ def _session_concept_id(transcript: SessionTranscript) -> str:
 def build_concept_index(
     entities: list[CanonicalEntity],
     transcripts: dict[str, SessionTranscript],
+    spellings: dict[str, str] | None = None,
 ) -> ConceptIndex:
     """Build a :class:`ConceptIndex` covering all entity and session concepts."""
 
@@ -49,7 +51,7 @@ def build_concept_index(
     for entity in sorted(entities, key=lambda e: len(e.mentions)):
         for name in [entity.canonical_name, *entity.aliases]:
             names[name] = entity.concept_id
-    return ConceptIndex(concept_ids, names)
+    return ConceptIndex(concept_ids, names, spellings)
 
 
 _TYPE_LABEL_DE = {
@@ -156,7 +158,7 @@ def emit_sessions(
 
         body = "\n".join(body_parts)
         if index is not None:
-            body, unresolved = normalize_body(body, index)
+            body, unresolved = normalize_body(body, index, self_id=concept_id)
             if unresolved:
                 log.debug(
                     "[emit] %s: dropped %d unresolved link(s): %s",
@@ -187,10 +189,9 @@ def emit_sessions(
                 "youtube_title": transcript.title or None,
             }
         write_concept(bundle_dir, concept_id, frontmatter, body)
-        entries.append(
-            (title, f"{date}.md", _short_desc(extraction.recap, 100))
-        )
-    entries += _refresh_orphan_sessions(bundle_dir, transcripts, episodes)
+        blurb = apply_spellings(_short_desc(extraction.recap, 100), index.spellings if index else {})
+        entries.append((title, f"{date}.md", blurb))
+    entries += _refresh_orphan_sessions(bundle_dir, transcripts, episodes, index)
     return entries
 
 
@@ -198,6 +199,7 @@ def _refresh_orphan_sessions(
     bundle_dir: Path,
     transcripts: dict[str, SessionTranscript],
     episodes: Episodes,
+    index: ConceptIndex | None = None,
 ) -> list[tuple[str, str, str]]:
     """Give session files with no transcript their episode identity back.
 
@@ -236,7 +238,8 @@ def _refresh_orphan_sessions(
             "team": episode.get("team"),
         }
         write_concept(bundle_dir, f"sessions/{date}", frontmatter, body)
-        entries.append((title, f"{date}.md", str(frontmatter.get("description") or "")[:100]))
+        blurb = apply_spellings(str(frontmatter.get("description") or ""), index.spellings if index else {})
+        entries.append((title, f"{date}.md", blurb[:100]))
         log.info("[emit] %s has no transcript — refreshed episode identity only", date)
     return entries
 
@@ -295,8 +298,14 @@ def emit_entity(
 
     unresolved: list[str] = []
     if index is not None:
-        body, unresolved = normalize_body(body, index)
+        body, unresolved = normalize_body(body, index, self_id=entity.concept_id)
     body, conflicts = split_conflicts(body)
+    # The "# Belege" section is only a prompt instruction for standard/deep
+    # tiers (prompts.py) -- nothing enforces it, so a model that skips it
+    # ships an uncited page. render_brief_body's citation loop is the only
+    # code-guaranteed source; reuse it here whenever the model didn't comply.
+    if entity.mentions and not _BELEGE_HEADING_RE.search(body):
+        body = f"{body.rstrip()}\n\n{render_belege_section(entity)}"
 
     first = entity.mentions[0] if entity.mentions else None
     last = entity.mentions[-1] if entity.mentions else None
@@ -388,7 +397,11 @@ def prune_conflicts(conflicts_dir: Path, still_open: set[str]) -> int:
         if "type: Conflict" not in head:
             continue
         path.unlink()
-        log.info("[emit] conflict resolved, removed from queue: %s", path.name)
+        # Not necessarily resolved: split_conflicts only finds a "# Offene
+        # Konflikte" heading if the model wrote one this run. A model that
+        # silently stops flagging a real contradiction looks identical here
+        # to one that got fixed -- so this says only what is actually known.
+        log.info("[emit] %s: no longer reported as an open conflict, removed from queue", path.name)
         removed += 1
     return removed
 
@@ -514,8 +527,17 @@ def emit_indexes(
     bundle_dir: Path,
     entities: list[CanonicalEntity],
     session_entries: list[tuple[str, str, str]],
+    spellings: dict[str, str] | None = None,
 ) -> None:
-    """Write per-directory ``index.md`` files and the bundle-root index."""
+    """Write per-directory ``index.md`` files and the bundle-root index.
+
+    Each entry's blurb is built straight from the entity's raw first mention
+    note (extraction-stage text), not from its synthesized, already-corrected
+    concept body — so it bypasses ``normalize_body``'s spelling fix entirely.
+    ``spellings`` (``entity_rules.yaml``'s ``spelling:`` map) is applied here
+    too, or the index page keeps showing a mishearing the concept's own file
+    no longer has.
+    """
 
     # Group entities by type/dir.
     by_dir: dict[str, list[CanonicalEntity]] = {}
@@ -537,10 +559,11 @@ def emit_indexes(
     # here a heading, later a query over the subtype label.
     for directory, group in by_dir.items():
         def _entry(e: CanonicalEntity) -> tuple[str, str, str]:
+            note = apply_spellings(e.mentions[0].note, spellings or {}) if e.mentions else ""
             return (
                 e.canonical_name,
                 f"{e.concept_id.split('/', 1)[1]}.md",
-                _short_desc(e.mentions[0].note) if e.mentions else "",
+                _short_desc(note),
             )
 
         ordered = sorted(group, key=lambda e: e.canonical_name.lower())

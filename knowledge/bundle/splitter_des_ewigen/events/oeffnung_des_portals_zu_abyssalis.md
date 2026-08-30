@@ -10,7 +10,7 @@ id: EVENT_OEFFNUNG_DES_PORTALS_ZU_ABYSSALIS
 subtype: Ritual
 ---
 
-Lunara öffnet mit dem [Stab von Lindo Laut](/items/stab_von_lindo_laut.md) ein Portal zu [Abyssalis](/domains/splitterwelt.md) in [Ehrenfels](/locations/ehrenfels.md). [Vasul](/deities/vharzul.md) tritt heraus und beginnt, seine Göttlichkeit zu absorbieren.
+Lunara öffnet mit dem [Stab von Lindo Laut](/items/lindo_lauts_stab.md) ein [Portal](/locations/portal.md) zu [Abyssalis](/domains/splitterwelt.md) in [Ehrenfels](/locations/ehrenfels.md). [Vasul](/deities/vharzul.md) tritt heraus und beginnt, seine Göttlichkeit zu absorbieren.
 
 # Belege
 

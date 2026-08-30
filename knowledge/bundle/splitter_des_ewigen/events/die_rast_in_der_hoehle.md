@@ -10,7 +10,7 @@ id: EVENT_DIE_RAST_IN_DER_HOEHLE
 subtype: Sonstiges
 ---
 
-Die Gruppe verbringt die Nacht in der [Höhle](/locations/hoehle.md), um sich auszuruhen. Sie schließen den Eingang mit [Esterossas](/characters/esterossa.md) Fähigkeit und überstehen die Nacht.
+Die Gruppe verbringt die Nacht in der Höhle, um sich auszuruhen. Sie schließen den Eingang mit [Esterossas](/characters/esterossa.md) Fähigkeit und überstehen die Nacht.
 
 # Belege
 

@@ -9,7 +9,7 @@ timestamp: '2026-04-14T00:00:00Z'
 id: NPC_RELINA
 ---
 
-Ein Orakel, das in der Stadt lebt und Dinge finden kann. Sie ist freundlich, aber verlangt eine Bezahlung für ihre Dienste. Sie organisiert der Gruppe einen sicheren Geleit nach [Seelenwacht](/locations/seelenwacht.md).
+Ein Orakel, das in der Stadt lebt und Dinge finden kann. Sie ist freundlich, aber verlangt eine Bezahlung für ihre Dienste. Sie organisiert der Gruppe einen sicheren Geleit nach Seelenwacht.
 
 # Belege
 

@@ -1,45 +1,53 @@
 ---
 type: Deity
 title: Alter Schlangengott
-description: Der Alte Schlangengott ist eine übernatürliche Entität, die als fünfköpfige,
-  humanoide Schlange in Erscheinung tritt. Er wird an einem Schr…
+description: Der Alte Schlangengott ist eine Gottheit, die als geisterhaftes, fünfköpfiges
+  Schlangenwesen in Erscheinung tritt. Die Gestalt ist humanoid…
 tags:
 - deities
 timestamp: '2025-06-03T00:00:00Z'
 id: DEITY_SCHLANGENGOTT
 subtype: Alter Gott
 aliases:
+- Schlangengottheit
+- Schlangenfigur (Serpent God)
 - Schlangengott
 ---
 
 ## Überblick
 
-Der Alte Schlangengott ist eine übernatürliche Entität, die als fünfköpfige, humanoide Schlange in Erscheinung tritt. Er wird an einem Schrein verehrt, wo er einen Avatar manifestiert und mit Besuchern kommuniziert. Sein Auftreten wird als geisterhaft und zugleich hypnotisch beschrieben – eine Erscheinung, die zwischen Mensch und Schlange zu tanzen scheint. Der Gott spricht in einer fremden Sprache, die seine Zuhörer dennoch verstehen können. Er bietet Wissen und die Möglichkeit, ihm zu dienen, im Austausch für die Berührung bestimmter Kristalle an seinem Schrein.
+Der Alte Schlangengott ist eine Gottheit, die als geisterhaftes, fünfköpfiges Schlangenwesen in Erscheinung tritt. Die Gestalt ist humanoid, aber zugleich deutlich schlangenartig und wirkt zwischen den Zuständen – halb körperlich, halb geisterhaft – schwebend. Sie erscheint am Schrein, der den [Kristall](/items/gruener_kristall.md) enthält, und tritt dort in Kontakt mit Besuchern.
+
+Die Gottheit spricht eine fremde Sprache, die von den Anwesenden dennoch verstanden wird. Sie bietet Wissen im Austausch für die Berührung der Kristalle an. Ihr Auftreten wird von den Helden nicht als bedrohlich, sondern eher als seltsam und irritierend wahrgenommen – die Reaktionen reichen von Skepsis bis zu ironischen Kommentaren.
 
 ## Rolle in der Kampagne
 
-Der Alte Schlangengott begegnete der Gruppe erstmals am Schrein, als diese auf der Suche nach einer Sumpfhexe war. Sein Avatar trat aus einem Schein hervor und begrüßte die Ankommenden mit den Worten: „Ihr seid hier. Willkommen am Schrein. Was wünscht ihr?“ Er stellte den Helden ein Angebot: Wer dem Gott der Schlangen dienen wolle, solle die Kristalle berühren. Die Gruppe lehnte dieses Angebot jedoch ab – Lindo Laut erklärte, man habe „gerade keine Zeit für Schlangen“, und Cookie ergänzte: „Für alles andere ja, aber für Schlangen heute nicht.“ Stattdessen fragte die Gruppe den Gott direkt, ob er eine Verbindung zu der gesuchten Sumpfhexe habe.
+Der Alte Schlangengott begegnet der Gruppe erstmals am Schrein, als diese auf der Suche nach einer [Sumpfhexe](/npcs/lenra.md) ist. Die Gottheit tritt als potenzieller Wissensgeber auf und stellt die Helden vor die Wahl, ob sie den Kristall berühren und damit einen Pakt eingehen wollen. Die Gruppe lehnt das Angebot jedoch ab, da sie keine Zeit für die Angelegenheiten der Schlangengottheit hat und ihr eigentliches Ziel – die Sumpfhexe zu finden – verfolgt.
+
+Die Begegnung wirft die Frage auf, ob der Gott der Schlangen eine Verbindung zu der gesuchten Sumpfhexe hat. Diese Frage bleibt in den Belegen unbeantwortet.
 
 ## Wichtige Merkmale
 
-Der Alte Schlangengott erscheint als fünfköpfige Schlange mit humanoidem Körperbau. Seine Erscheinung wird als „geisterhaft“ und „geisterschemhaft“ beschrieben, wobei er zwischen verschiedenen Zuständen zu tanzen scheint – wie eine Schlange, die hypnotisiert oder entranst wirkt. Er tritt aus einem Schein hervor, wenn er sich Besuchern zeigt.
-
-Der Gott kommuniziert in einer Sprache, die nicht die der Helden ist, aber von ihnen dennoch verstanden wird. Sein Angebot an die Gruppe bestand darin, ihm zu dienen, indem sie die Kristalle an seinem Schrein berührten – offenbar ein ritueller Akt der Hingabe oder des Bündnisses. Im Gegenzug bietet er offenbar Wissen an, wie seine einleitende Frage „Was wünscht ihr?“ nahelegt.
+- **Erscheinungsform**: Eine fünfköpfige Schlange in humanoider Gestalt, geisterhaft und zwischen den Zuständen schwebend, mit einer hypnotisierenden, entrückten Bewegungsweise.
+- **Sprache**: Spricht eine fremde Sprache, die von den Zuhörern dennoch verstanden wird.
+- **Angebot**: Bietet Wissen im Austausch für die Berührung der Kristalle an.
+- **Auftreten**: Wirkt nicht aggressiv, sondern eher einladend; die Helden reagieren mit Skepsis und Humor.
 
 ## Beziehungen und Verbindungen
 
-Die genaue Natur der Verbindung zwischen dem Alten Schlangengott und der gesuchten Sumpfhexe bleibt ungeklärt. Lindo Laut fragte den Gott direkt: „Hat der Gott der Schlangen eine Verbindung zu dieser… Ey…“ – die Frage wurde jedoch nicht beantwortet, bevor der Beleg endet. Es ist unklar, ob der Gott die Sumpfhexe kennt, mit ihr verbündet ist oder gar selbst mit ihr in Verbindung steht.
+Die Belege lassen eine mögliche Verbindung zwischen dem Alten Schlangengott und der Sumpfhexe vermuten, die die Gruppe sucht. Diese Verbindung wird jedoch nicht bestätigt. Weitere Beziehungen zu anderen Entitäten sind aus den Belegen nicht ersichtlich.
 
 ## Chronologie
 
-**Session 2025-06-03:** Die Gruppe erreicht einen Schrein, an dem der Alte Schlangengott einen Avatar manifestiert. Er erscheint als fünfköpfige, humanoide Schlange in geisterhaftem Zustand und tritt aus einem Schein hervor. Er begrüßt die Helden und bietet ihnen an, ihm zu dienen, indem sie die Kristalle berühren. Die Gruppe lehnt ab – Lindo Laut erklärt, man habe keine Zeit für Schlangen, da man auf der Suche nach einer Sumpfhexe sei. Lindo Laut fragt den Gott, ob er eine Verbindung zu dieser Sumpfhexe habe. Die Antwort bleibt im Beleg offen.
+**Session 2025-06-03**: Die Gruppe erreicht den Schrein und begegnet dem Alten Schlangengott. Die Gottheit erscheint als fünfköpfiges, humanoides Schlangenwesen in geisterhafter Form und spricht die Helden an. Sie bietet Wissen im Austausch für die Berührung der Kristalle an. Die Gruppe lehnt ab – [Lindo Laut](/characters/lindo_laut.md) erklärt, dass sie keine Zeit für Schlangen haben, und fragt stattdessen nach einer Verbindung zur Sumpfhexe. Die Antwort der Gottheit bleibt in den Belegen offen.
 
 ## Offene Fragen
 
-- Hat der Alte Schlangengott eine Verbindung zur gesuchten Sumpfhexe? Die Frage wurde gestellt, aber nicht beantwortet.
-- Was genau bieten die Kristalle am Schrein – welches Wissen oder welche Macht würde der Gott im Austausch für ihre Berührung gewähren?
-- Welche Rolle spielt der Alte Schlangengott in der weiteren Kampagne, nachdem die Gruppe sein Angebot abgelehnt hat?
+- Hat der Alte Schlangengott eine Verbindung zur Sumpfhexe, die die Gruppe sucht?
+- Was für Wissen hätte die Gottheit im Austausch für die Berührung der Kristalle angeboten?
+- Welche Konsequenzen hätte die Berührung der Kristalle gehabt?
+- Warum verstehen die Helden die Sprache der Gottheit, obwohl sie ihnen fremd ist?
 
 ## Belege
 
-[P-10] Session 2025-06-03, 01:42:01–01:44:26, https://www.youtube.com/watch?v=jtYR4Je0a18
+[P-10] Session 2025-06-03, 01:42:01–01:44:26 (https://www.youtube.com/watch?v=jtYR4Je0a18)

@@ -10,7 +10,7 @@ id: EVENT_TRENNUNG_DER_GRUPPE
 subtype: Sonstiges
 ---
 
-Die Gruppe spaltet sich: Drei gehen durch das Portal, drei folgen dem [Richter](/npcs/richter_herr_der_seelenwacht.md), um den [Schinder](/npcs/der_schinder.md) zu retten.
+Die Gruppe spaltet sich: Drei gehen durch das [Portal](/locations/portal.md), drei folgen dem [Richter](/npcs/richter_herr_der_seelenwacht.md), um den [Schinder](/npcs/der_schinder.md) zu retten.
 
 # Belege
 
