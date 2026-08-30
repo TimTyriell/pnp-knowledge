@@ -15,7 +15,7 @@ from pnp_okf.resolve import (
     rules_path_for,
     write_registry,
 )
-from pnp_okf.models import CanonicalEntity, EntityType
+from pnp_okf.models import CanonicalEntity, EntityType, MentionRef
 
 REGISTRY = """\
 entities:
@@ -70,6 +70,31 @@ def test_write_registry_drops_blocked_alias(tmp_path: Path):
     aliases = data["entities"][0]["aliases"]
     assert "Hack" not in aliases
     assert "Sumpfhexe" in aliases
+
+
+def test_link_targets_drops_ambiguous_shared_name():
+    # A name owned by two concepts must be dropped entirely, not resolved by
+    # a tiebreak (better-attested wins) -- see synthesize.py::link_targets.
+    from pnp_okf.synthesize import link_targets
+
+    a = CanonicalEntity(
+        concept_id="npcs/hans_wirt_zum_gruenen_sichelmond",
+        type=EntityType.NPC,
+        canonical_name="Hans, Wirt zum Grünen Sichelmond",
+        aliases=["Hans"],
+        mentions=[],
+    )
+    b = CanonicalEntity(
+        concept_id="npcs/hans_soldat_aus_breska",
+        type=EntityType.NPC,
+        canonical_name="Hans, Soldat aus Breska",
+        aliases=["Hans"],
+        mentions=[MentionRef(session_id="s1", date="2026-01-01", url="u", citation_ts="0", note="n")],
+    )
+    targets = link_targets([a, b])
+    assert "Hans" not in targets
+    assert targets["Hans, Wirt zum Grünen Sichelmond"] == a.concept_id
+    assert targets["Hans, Soldat aus Breska"] == b.concept_id
 
 
 def test_folding_still_works_despite_the_block(tmp_path: Path):

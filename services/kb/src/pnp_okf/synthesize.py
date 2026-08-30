@@ -41,17 +41,21 @@ def _render_mentions(entity: CanonicalEntity) -> str:
 def link_targets(entities: list[CanonicalEntity]) -> dict[str, str]:
     """``display name -> concept_id`` for deterministic cross-linking.
 
-    On a name collision the better-attested entity wins, so a passing mention
-    never steals a link from the concept the campaign actually revolves around.
+    A name claimed by two or more distinct concepts is ambiguous and dropped
+    entirely rather than resolved by any tiebreak — a wrong link (silently
+    picking one concept's page for a mention that meant the other) is worse
+    than no link.
     """
 
-    best: dict[str, CanonicalEntity] = {}
-    for entity in sorted(entities, key=lambda e: len(e.mentions)):
+    owners: dict[str, set[str]] = {}
+    concept_of: dict[str, str] = {}
+    for entity in entities:
         for name in [entity.canonical_name, *entity.aliases]:
             name = name.strip()
             if len(name) >= 4:
-                best[name] = entity
-    return {name: e.concept_id for name, e in best.items()}
+                owners.setdefault(name, set()).add(entity.concept_id)
+                concept_of[name] = entity.concept_id
+    return {name: concept_of[name] for name, ids in owners.items() if len(ids) == 1}
 
 
 def _link_first_occurrence(
