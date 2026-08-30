@@ -201,6 +201,38 @@ def rules_path_for(registry_path: Path) -> Path:
     return registry_path.with_name(RULES_FILENAME)
 
 
+def require_rules(registry_path: Path) -> None:
+    """Refuse to resolve identities against a registry with no rules beside it.
+
+    Every knowledge path is derived from the bundle directory, so one wrong
+    ``--bundle`` (or a stale ``PNP_BUNDLE_DIR``) silently relocates the
+    registry, the rules and ``sources/`` together. Nothing downstream can tell
+    that apart from a legitimate first run: ``_registry_data`` reads a missing
+    file as ``{}``, so every merge/never_merge/split/canonical_name/
+    alias_block/spelling/important rule and every GM ruling just isn't there,
+    and the run cheerfully regenerates the whole campaign from scratch. The
+    rename and prune guards cannot catch it either — they diff against the
+    previous registry, which in that scenario is also empty.
+
+    This happened on 2026-08-30 and cost a full run plus 32 unintended LLM
+    calls before anyone noticed. The rules file is the one artefact that is
+    always present for a real campaign, so its absence is the signal.
+    """
+
+    rules = rules_path_for(registry_path)
+    if not rules.is_file():
+        raise FileNotFoundError(
+            f"No {RULES_FILENAME} next to the registry at {registry_path}.\n"
+            f"  expected: {rules}\n"
+            f"Every hand-authored merge, split and GM ruling lives in that "
+            f"file; continuing would regenerate the campaign from scratch "
+            f"with none of them applied. This almost always means the bundle "
+            f"path is wrong — check --bundle and PNP_BUNDLE_DIR. If this "
+            f"really is a brand-new campaign, create an empty {RULES_FILENAME} "
+            f"there first."
+        )
+
+
 def _registry_data(registry_path: Path) -> dict:
     """Registry inventory plus the hand-authored rules beside it.
 

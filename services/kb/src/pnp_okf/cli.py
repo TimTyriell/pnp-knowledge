@@ -31,7 +31,7 @@ from pnp_okf.episodes import Episodes, citation_labels, relabel_citations
 from pnp_okf.extract import extract_session
 from pnp_okf.ingest import load_transcripts
 from pnp_okf.models import CanonicalEntity, SessionExtraction, SessionTranscript
-from pnp_okf.resolve import load_spellings, resolve_entities, write_registry
+from pnp_okf.resolve import load_spellings, require_rules, resolve_entities, write_registry
 from pnp_okf.synthesize import autolink_prose, link_targets, render_brief_body, synthesize_entity_body
 from pnp_okf.validate import fix_bundle, validate_bundle
 
@@ -131,6 +131,7 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     extractions = _extract_all(transcripts, cfg, paths, args.reextract)
 
     registry_path = paths.registry_path
+    require_rules(registry_path)
     entities = resolve_entities(extractions, tmap, registry_path)
 
     if not partial_run and not check_rename_safety(
@@ -331,6 +332,7 @@ def cmd_dedup(args: argparse.Namespace) -> int:
     extractions = _extract_all(transcripts, cfg, paths, force=False)
 
     registry_path = paths.registry_path
+    require_rules(registry_path)
     entities = resolve_entities(extractions, tmap, registry_path)
 
     # Screening runs on the fast model: it only narrows ~840 entities down to
