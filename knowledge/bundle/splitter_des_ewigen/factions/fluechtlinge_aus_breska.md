@@ -1,30 +1,35 @@
 ---
 type: Faction
 title: Die Flüchtlinge
-description: Die Flüchtlinge sind eine Gruppe vertriebener Zivilisten aus Breska,
-  angeführt von Roland. Auf der Suche nach einer vorübergehenden Bleibe…
+description: Die Flüchtlinge aus Breska sind eine Gruppe von Vertriebenen aus dem
+  Dorf Breska, angeführt von Roland. Sie sind bislang nur durch einen ei…
 tags:
 - factions
-timestamp: '2026-01-13T00:00:00Z'
+timestamp: '2025-09-23T00:00:00Z'
 id: FACTION_FLUECHTLINGE_AUS_BRESKA
 subtype: Volk
 aliases:
-- Die Flüchtlinge aus Breska
+- Die Flüchtlinge aus Bereska
 - Flüchtlinge (Gruppe um Roland)
 - Flüchtlinge aus Breska
 ---
 
-Die Flüchtlinge sind eine Gruppe vertriebener Zivilisten aus [Breska](/locations/breska.md), angeführt von [Roland](/npcs/roland.md). Auf der Suche nach einer vorübergehenden Bleibe wurden sie von der Gruppe zur [Banditenfestung](/locations/banditenlager_der_silberkerne.md) gebracht. Seither hat sich die Zusammensetzung der Geflüchteten erweitert: Im Lager fanden auch Flüchtlinge aus anderen Orten Zuflucht. Gemeinsam mit den [Banditen](/factions/silberkerne.md) bilden sie eine Gemeinschaft; die Flüchtlinge arbeiten im Lager mit und sollen nach dem Winter in andere Städte vermittelt werden.
+Die **[Flüchtlinge](/factions/fluechtlinge.md) aus Breska** sind eine Gruppe von Vertriebenen aus dem Dorf [Breska](/locations/breska.md), angeführt von [Roland](/npcs/roland.md). Sie sind bislang nur durch einen einzigen dokumentierten Vorfall bekannt: Auf der Suche nach einer vorübergehenden Bleibe wurden sie von der Heldengruppe zur [Banditenfestung](/locations/banditenlager_der_silberkerne.md) gebracht. Über ihre genaue Zahl, ihr weiteres Schicksal und die Umstände ihrer Flucht liegen keine Informationen vor.
 
-## Ankunft und erste Unterbringung
+## Auftreten
 
-Die ursprüngliche Gruppe stammte aus Breska und stand unter Rolands Führung. Ihr Ziel war eine vorübergehende Bleibe; die Gruppe brachte sie daraufhin zur [Banditenfestung](/locations/banditenlager_der_silberkerne.md), wo sie zunächst Schutz fanden. Die Unterbringung in der [Festung](/locations/festung.md) war von Anfang an als Übergangslösung angelegt.
+Die Gruppe tauchte erstmals auf, als sie eine vorübergehende Bleibe suchte. Die Heldengruppe brachte sie daraufhin zur [Banditenfestung](/locations/banditenlager_der_silberkerne.md), wo sie zumindest vorübergehend unterkommen sollten. Ob die Flüchtlinge in der [Festung](/locations/festung.md) blieben, ob sie weiterzogen oder ob es dort zu Konflikten kam, ist nicht dokumentiert. Die Banditenfestung stellt damit den einzigen bekannten Aufenthaltsort der Gruppe dar.
 
-## Eingliederung in die Lagergemeinschaft
+## Zusammensetzung und Führung
 
-In der Folgezeit kamen weitere Flüchtlinge aus verschiedenen Orten hinzu und fanden im Lager der Banditenfestung Zuflucht. Die Flüchtlinge sind inzwischen Teil der Gemeinschaft und arbeiten mit den [Banditen](/factions/silberkerne.md) zusammen. Für die Zeit nach dem Winter ist geplant, sie in andere Städte zu vermitteln; die Festung dient ihnen damit als Zwischenstation.
+Angeführt wird die Gruppe von Roland. Wie viele Menschen zu ihr gehören, welche Namen oder Beziehungen die Mitglieder untereinander haben, ist unbekannt. Die Bezeichnung „Flüchtlinge“ verweist lediglich darauf, dass die Gruppe aus Breska stammte und ihre Heimat verlassen hatte; die Gründe dafür werden in den Berichten nicht erwähnt.
+
+## Beziehungen
+
+- **Roland** – Anführer der Flüchtlinge.
+- **Heldengruppe** – Sie brachte die Flüchtlinge zur Banditenfestung und ermöglichte ihnen so eine vorübergehende Bleibe.
+- **Banditenfestung** – Ort, an dem die Gruppe vorübergehend unterkommen sollte.
 
 # Belege
 
-[P-23] Session 2025-09-23, 00:21:26 – https://www.youtube.com/watch?v=DGzfqVigS0g
-[P-33] Session 2026-01-13, 00:14:58 – https://www.youtube.com/watch?v=w4LB1s9_3rs
+[P-23] Session vom 23. September 2025, 00:21:26. YouTube: https://www.youtube.com/watch?v=DGzfqVigS0g

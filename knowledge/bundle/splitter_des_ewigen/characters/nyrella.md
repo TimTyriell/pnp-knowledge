@@ -17,7 +17,7 @@ Nyrella ist eine **Faery** (eine Pixie-Art, jedoch größer als eine gewöhnlich
 
 #### Rolle in der Kampagne
 
-Nyrella ist eine zentrale Spielerfigur der Gruppe. Sie ist die **Fernkämpferin** und **Unterstützerin** im Kampf, die mit präzisen Pfeilen und Rankenzaubern Gegner aufhält und Verbündete rettet. Sie übernimmt wiederholt die Rolle der **Beschützerin der Zivilbevölkerung**: Sie schlägt vor, Dorfbewohner mit dem Schiff zu evakuieren, verteilt Gold an Flüchtlinge, bleibt bei den Dorfbewohnern, um ihre Sicherheit zu gewährleisten, und trägt maßgeblich zur Verbesserung der Stimmung und Zusammenarbeit zwischen Banditen und Flüchtlingen im Lager bei. Sie ist der **moralische Kompass** der Gruppe, der Entscheidungen hinterfragt und Mitgefühl zeigt. Sie ist eine wichtige Stütze im Kampf und wird von der Gruppe wiederholt gelobt.
+Nyrella ist eine zentrale Spielerfigur der Gruppe. Sie ist die **Fernkämpferin** und **Unterstützerin** im Kampf, die mit präzisen Pfeilen und Rankenzaubern Gegner aufhält und Verbündete rettet. Sie übernimmt wiederholt die Rolle der **Beschützerin der Zivilbevölkerung**: Sie schlägt vor, Dorfbewohner mit dem Schiff zu evakuieren, verteilt Gold an [Flüchtlinge](/factions/fluechtlinge.md), bleibt bei den Dorfbewohnern, um ihre Sicherheit zu gewährleisten, und trägt maßgeblich zur Verbesserung der Stimmung und Zusammenarbeit zwischen Banditen und Flüchtlingen im Lager bei. Sie ist der **moralische Kompass** der Gruppe, der Entscheidungen hinterfragt und Mitgefühl zeigt. Sie ist eine wichtige Stütze im Kampf und wird von der Gruppe wiederholt gelobt.
 
 #### Wichtige Merkmale
 

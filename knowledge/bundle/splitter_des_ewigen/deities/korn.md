@@ -10,9 +10,9 @@ id: DEITY_KORN
 subtype: Neuer Gott
 aliases:
 - Korn
-- Korn
+- Born
 - Core
-- Korn
+- Kord
 - Blutgott
 ---
 

@@ -9,15 +9,15 @@ timestamp: '2026-08-25T00:00:00Z'
 id: NPC_LENRA
 subtype: Bande
 aliases:
-- Landra
-- Moorhexe Hag
-- Hag
-- Die Hag
-- Landra
-- Die Hag (Hexe)
+- Lenra
+- Moorhexe Hack
+- Hack
+- Die Hack
+- Leandra
+- Die Hack (Hexe)
 - Die Sumpfhexe
 - Sumpfhexe
-- Landra
+- Lanra
 ---
 
 # Landra, die Hag

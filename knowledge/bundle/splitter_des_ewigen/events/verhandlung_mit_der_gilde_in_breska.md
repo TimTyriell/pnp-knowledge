@@ -10,7 +10,7 @@ id: EVENT_VERHANDLUNG_MIT_DER_GILDE_IN_BRESKA
 subtype: Verhandlung
 ---
 
-Die Gruppe verhandelt mit der Gilde über eine mögliche Mitgliedschaft. [Die Gilde](/factions/gilde_von_ehrenfels.md) bietet an, dass die Gruppe beitreten kann, wenn sie eine Aufnahmeprüfung besteht. Die Gruppe lehnt den Auftrag ab, Flüchtlinge zu vertreiben, und verschiebt die Entscheidung.
+Die Gruppe verhandelt mit der Gilde über eine mögliche Mitgliedschaft. [Die Gilde](/factions/gilde_von_ehrenfels.md) bietet an, dass die Gruppe beitreten kann, wenn sie eine Aufnahmeprüfung besteht. Die Gruppe lehnt den Auftrag ab, [Flüchtlinge](/factions/fluechtlinge.md) zu vertreiben, und verschiebt die Entscheidung.
 
 # Belege
 

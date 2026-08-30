@@ -9,7 +9,7 @@ timestamp: '2025-10-14T00:00:00Z'
 id: EVENT_TURNIER_VON_WILLAUCH
 subtype: Sonstiges
 aliases:
-- Turnier von Willauch
+- Turnier von Willau
 ---
 
 Großes Turnier mit sechs Disziplinen: Solo, Duo, Team, Zauberer, Monster und Jagd. Es gibt vier Tiers mit unterschiedlichen Regeln. Die Gruppe meldet sich für den Monsterkampf auf Tier 3 an.

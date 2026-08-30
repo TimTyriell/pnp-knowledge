@@ -39,7 +39,7 @@ Unter dem Haus befindet sich ein Untergeschoss mit einem [Altar](/items/altar.md
 
 ### Bewohner
 
-Das Anwesen wurde ursprünglich von [Goblins](/npcs/pilz_goblins.md) bewohnt. Nachdem die Gruppe das Anwesen übernommen hatte, entwickelte es sich zu einem Zufluchtsort für Flüchtlinge, die dort unter der Mithilfe von Nyrella eine neue Heimat aufbauen.
+Das Anwesen wurde ursprünglich von [Goblins](/npcs/pilz_goblins.md) bewohnt. Nachdem die Gruppe das Anwesen übernommen hatte, entwickelte es sich zu einem Zufluchtsort für [Flüchtlinge](/factions/fluechtlinge.md), die dort unter der Mithilfe von Nyrella eine neue Heimat aufbauen.
 
 ## Beziehungen und Verbindungen
 

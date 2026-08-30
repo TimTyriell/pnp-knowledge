@@ -601,6 +601,17 @@ Nicht betroffen: eine Organisation und ihr Sitz bleiben **getrennt**, auch bei
 gleichem Namen. Die *Seelenwacht* ist sowohl ein Orden als auch eine Stadt —
 das sind zwei Dinge mit einer echten Beziehung zwischen ihnen, keine Dublette.
 
+### Hartwacht
+
+ENTSCHEIDUNG: Hartwacht ist eine **Stadt**, keine uneinnehmbare Orkfestung.
+Der Beleg aus Session 2026-03-18 (00:45:15), der sie als "uneinnehmbare
+Orkfestung" bezeichnet, ist ungültig — er beruht auf einer Fehldarstellung am
+Tisch. Gültig bleibt die Beschreibung aus Session 2025-10-07 (00:09:39): eine
+Stadt, die die Magier vor dem Golem schützen wollten. Die Lage hinter einem von
+Vargen bewohnten Pass und das Reiseziel der Gruppe bleiben davon unberührt —
+nur die Einordnung als Festung entfällt. Führe diesen Punkt nicht als offenen
+Konflikt auf.
+
 ---
 
 <!-- Vorlage - kopieren und ausfüllen:

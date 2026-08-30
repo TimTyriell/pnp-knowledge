@@ -9,12 +9,12 @@ timestamp: '2026-08-04T00:00:00Z'
 id: LOC_BRESKA
 subtype: Siedlung
 aliases:
+- Bresca
+- Dorf (Bresca?)
+- Breschka
+- Bereska
 - Breska
-- Dorf (Breska?)
-- Breska
-- Breska
-- Breska
-- Breska
+- Brechka
 ---
 
 # Breska
@@ -78,7 +78,7 @@ Ein Jahr später ist Breska zu einer Kleinstadt angewachsen, die größer ist al
 
 ### Flüchtlinge und die Belagerung
 
-Die Gruppe trifft in Breska auf Flüchtlinge, die nicht in die Stadt gelassen werden. Sie beschließen, den Flüchtlingen zu helfen und schicken sie zu einer Ruine, wo [Banditen](/factions/silberkerne.md) sich aufhalten [P-23]. Später stellt sich heraus, dass viele [Flüchtlinge aus Breska](/factions/fluechtlinge_aus_breska.md) stammen und im [Banditenlager](/locations/banditenlager_der_silberkerne.md) untergebracht sind [P-34].
+Die Gruppe trifft in Breska auf [Flüchtlinge](/factions/fluechtlinge.md), die nicht in die Stadt gelassen werden. Sie beschließen, den Flüchtlingen zu helfen und schicken sie zu einer Ruine, wo [Banditen](/factions/silberkerne.md) sich aufhalten [P-23]. Später stellt sich heraus, dass viele [Flüchtlinge aus Breska](/factions/fluechtlinge_aus_breska.md) stammen und im [Banditenlager](/locations/banditenlager_der_silberkerne.md) untergebracht sind [P-34].
 
 Die Nachrichten aus Breska versiegen vollständig: Keine Boten kommen durch, keine kommen zurück [P-30]. Die Stadt wird von Untoten belagert und leidet unter Nahrungsmittelknappheit [P-32]. Ein Hilferuf von Voras dem Heiligen berichtet, dass die Mauern gefallen sind und die Bevölkerung verhungert [P-33]. Die Gruppe erwägt, nach Breska zu reisen, entscheidet sich aber zunächst für den Rückzug [P-33].
 

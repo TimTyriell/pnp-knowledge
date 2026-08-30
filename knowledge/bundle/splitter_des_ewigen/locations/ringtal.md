@@ -24,7 +24,7 @@ Die Siedlung wird als gepflegt, aber schlecht verteidigt beschrieben. Sie besteh
 
 Kleinringtal fungiert als wichtiger Zwischenstopp und Rückzugsort für die Gruppe auf ihrem Weg nach Ringtal. Die Gruppe verbringt hier zwei Nächte, nachdem sie das verwaiste Halblingdorf hinter sich gelassen hat. [1] Der [Talron](/npcs/talron.md), der die Gruppe begleitet, weist die Helden an, sich nicht zu gemütlich einzurichten: „Macht euch nicht zu gemütlich hier. Wir werden vielleicht ein, zwei Tage hier bleiben und dann werden wir direkt nach Ringtal aufbrechen.“ [3]
 
-Die Siedlung wird zum Sammelpunkt für Flüchtlinge: Die Gruppe bringt die [Halblinge](/factions/halblinge.md) aus ihrer zerstörten Siedlung hier unter und überredet später auch die Besitzerin der Taverne, [Xenia](/npcs/xenia_rotkam.md), die Siedlung aufzugeben und sich der Flucht nach Ringtal anzuschließen. [5] Kleinringtal dient damit als letzte Station vor der großen Stadt Ringtal, die von den Monstern bedroht wird. [2]
+Die Siedlung wird zum Sammelpunkt für [Flüchtlinge](/factions/fluechtlinge.md): Die Gruppe bringt die [Halblinge](/factions/halblinge.md) aus ihrer zerstörten Siedlung hier unter und überredet später auch die Besitzerin der Taverne, [Xenia](/npcs/xenia_rotkam.md), die Siedlung aufzugeben und sich der Flucht nach Ringtal anzuschließen. [5] Kleinringtal dient damit als letzte Station vor der großen Stadt Ringtal, die von den Monstern bedroht wird. [2]
 
 ## Wichtige Merkmale
 

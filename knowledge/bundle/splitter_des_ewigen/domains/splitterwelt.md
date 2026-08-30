@@ -84,7 +84,7 @@ Die Splitterwelt und Abyssalis sind eng mit der Götterwelt der Kampagne verbund
 
 - **Session 2026-04-09**: [Rotunas](/characters/rotunas.md) versucht, das Portal zu verstehen. Er spricht Abyssalis als Sprache, aber nicht als Erfahrung – die Magie des Portals versteht er nicht.
 
-- **Session 2026-04-14**: Die Gruppe ist seit einer Woche in Abyssalis. Die Welt ist von einem ewigen Nebel bedeckt, es gibt keine echten Tage oder Nächte, und leuchtende Kreaturen jagen Seelen. [Die Stadt](/locations/ehrenfels.md), in der sie sich aufhalten, ist karg und trist, die Bewohner sind Dämonen und Seelen. Es gibt eine Festung, die von Ohoriaks beansprucht wurde, und die Stadt hat Zugang zu den Erntefeldern, wo Seelen ankommen. Selbst mit dem Schutz von Vasul spürt die Gruppe langsam den Einfluss der Welt.
+- **Session 2026-04-14**: Die Gruppe ist seit einer Woche in Abyssalis. Die Welt ist von einem ewigen Nebel bedeckt, es gibt keine echten Tage oder Nächte, und leuchtende Kreaturen jagen Seelen. Die Stadt, in der sie sich aufhalten, ist karg und trist, die Bewohner sind Dämonen und Seelen. Es gibt eine Festung, die von Ohoriaks beansprucht wurde, und die Stadt hat Zugang zu den Erntefeldern, wo Seelen ankommen. Selbst mit dem Schutz von Vasul spürt die Gruppe langsam den Einfluss der Welt.
 
 - **Session 2026-05-06**: Die Gruppe ist in Abyssalis gestrandet und sucht nach einem Weg hinaus. Es kommt zu einem Crossover mit einer zweiten Spielgruppe (Kip, Dante und Miko), die ebenfalls in Abyssalis gefangen ist. Abyssalis wird als „abgefuckt" beschrieben, ähnlich wie der Abyss in Made in Abyss.
 

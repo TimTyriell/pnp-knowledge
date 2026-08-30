@@ -57,18 +57,30 @@ _MIN_NAME_LEN = 5
 # design (autolink_prose only links a name's first occurrence per line). Not
 # a linking regression; a byproduct of removing a duplicate identity.
 #
-# 2026-08-30 review-fix branch: tightened 1889 -> 1867, re-measured after the
-# regeneration. The fix plan predicted this would go *up*, because
-# link_targets() now refuses the 12 names owned by two concepts instead of
-# arbitrating them (a wrong link is worse than no link) — that prediction was
-# the sole reason the change was landed as its own revertible commit. It did
-# not materialise: the same run's other fixes added back more links than the
-# ambiguity guard removed — chiefly _linked_concept_ids() no longer letting a
-# directory-qualified link (deities/foo) mark an unrelated cross-type
-# namesake (npcs/foo) as already-linked, plus the arena/turnier_von_willauch
-# renames. Net -22. The one-way ratchet was never actually moved the wrong
-# way, so no exemption is being claimed here.
-UNLINKED_MENTION_BASELINE = 1867
+# 2026-08-30 review-fix branch: RAISED 1889 -> 1912. This is the one ratchet
+# move on the branch that goes the wrong way, and it is deliberate; the number
+# was watched across three regenerations rather than set once.
+#
+# Measured 1867 (a *drop* of 22) after the code fixes alone: the ambiguity
+# guard in link_targets() cost 12 names, but _linked_concept_ids() no longer
+# letting a directory-qualified link (deities/foo) shadow an unrelated
+# cross-type namesake (npcs/foo) more than paid for it. So the fix plan's
+# prediction that the guard alone would raise this was wrong.
+#
+# The rise came from the two GM rulings that followed, plus one alias_block,
+# and every point of it is a *wrong* link being refused:
+#   - "Flüchtlinge" (~40 occurrences): the GM ruled the Ringtal refugees a
+#     different group from Roland's, so factions/fluechtlinge exists again as
+#     its own node and its bare generic name is blocked from autolinking.
+#   - "Die Stadt": was an alias of locations/ehrenfels, so the ordinary noun
+#     linked to Ehrenfels on 10+ pages including locations/sanddorn,
+#     seelenwacht, boragdil and hartwacht — pages where it meant that page's
+#     own city. Blocked.
+#   - "Ende", already blocked earlier in the branch, same shape.
+# A generic noun linked to one arbitrary concept is worse than plain text.
+# Do not "fix" this by unblocking those aliases; the links it buys back are
+# the wrong ones.
+UNLINKED_MENTION_BASELINE = 1912
 
 
 def _bundle_files() -> list[tuple[str, str, str]]:
@@ -195,9 +207,13 @@ _FACTION_LINK_RE = re.compile(r"\]\(/?(?:\.\./)?factions/")
 # (npcs/joar_vanur "Gnollen", npcs/tyrael "Dämonen") were both resynthesized
 # by DeepSeek in the same run and simply worded it differently; npcs/gorak
 # and npcs/nyruk gained one the same way. Faction side is unchanged at 30/39.
+#
+# Final numbers after the GM rulings: the NPC side recovered to 46/219 (the
+# resynthesis wording that had cost two links came back), and factions gained
+# a member with the fluechtlinge split, 39 -> 40 total.
 FACTIONS_WITH_MEMBER_LINK_BASELINE = 30
-FACTIONS_TOTAL_BASELINE = 39
-NPCS_WITH_FACTION_LINK_BASELINE = 45
+FACTIONS_TOTAL_BASELINE = 40
+NPCS_WITH_FACTION_LINK_BASELINE = 46
 NPCS_TOTAL_BASELINE = 219
 
 

@@ -18,7 +18,7 @@ Die **Gilde in [Breska](/locations/breska.md)** ist eine mächtige Organisation,
 
 ## Schutz der Stadt
 
-Die Gilde stellt den Schutz von Breska über die Interessen Außenstehender. Deutlich wird das in ihrer Bereitschaft, Flüchtlinge zu vertreiben, wenn dies aus ihrer Sicht notwendig ist, um die Stadt zu sichern. Konkrete Ereignisse, in denen sie diese Haltung umgesetzt hat, sind aus den vorliegenden Belegen nicht bekannt.
+Die Gilde stellt den Schutz von Breska über die Interessen Außenstehender. Deutlich wird das in ihrer Bereitschaft, [Flüchtlinge](/factions/fluechtlinge.md) zu vertreiben, wenn dies aus ihrer Sicht notwendig ist, um die Stadt zu sichern. Konkrete Ereignisse, in denen sie diese Haltung umgesetzt hat, sind aus den vorliegenden Belegen nicht bekannt.
 
 # Belege
 

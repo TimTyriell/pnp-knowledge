@@ -1,6 +1,6 @@
 ---
 type: Location
-title: Kapelle von Thar'Vok
+title: Kapelle von Tarvok
 description: Ein Wegweiser zeigt zur Kapelle von Thar'Vok, die offenbar das Ziel der
   Gruppe ist.
 tags:

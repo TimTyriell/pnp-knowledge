@@ -81,7 +81,7 @@ Dodo ist der unerschütterliche Beschützer und Vorkämpfer der Gruppe. Er posit
 
 **Session 2025-09-09:** Dodo hält die Linie gegen die Untoten, wird von einem [Speer](/items/speer.md) des Minotaurus getroffen, überlebt aber dank seines Schildes. Er zertrümmert das Knie des Minotaurus und besiegt ihn.
 
-**Session 2025-09-17:** Dodo wird als Champion der Arena bekannt. Er verhandelt mit Roland über den Zeitplan und ist besorgt um die Sicherheit der Gruppe und der Flüchtlinge.
+**Session 2025-09-17:** Dodo wird als Champion der Arena bekannt. Er verhandelt mit Roland über den Zeitplan und ist besorgt um die Sicherheit der Gruppe und der [Flüchtlinge](/factions/fluechtlinge.md).
 
 **Session 2025-09-23:** Dodo ist misstrauisch gegenüber dem Gnoll, schlägt vor, die [Banditen](/factions/silberkerne.md) zu bezahlen, und verbrennt im Kampf gegen die Untoten mehrere mit seinem Feueratem. Er erhält einen Stärke-Buff durch einen grünen Blitz.
 

@@ -1,6 +1,6 @@
 ---
 type: Item
-title: Artefakt von Thar'Vok
+title: Artefakt von Tarvok
 description: Ein silbernes, eiförmiges Artefakt, das in einem Umhang mit dem Symbol
   von Thar'Vok gefunden wurde. Es könnte Erschaffungsmagie enthalten u…
 tags:

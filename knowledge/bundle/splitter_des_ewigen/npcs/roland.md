@@ -13,7 +13,7 @@ id: NPC_ROLAND
 
 Roland ist der Älteste und Sprecher der [Flüchtlinge aus Breska](/factions/fluechtlinge_aus_breska.md). Er tritt als zentrale Figur der Flüchtlingsgruppe auf, die vor den Toren der Stadt [Breska](/locations/breska.md) lagert, nachdem diese von [Goblins](/npcs/pilz_goblins.md) bedroht wurde. Er ist kein offizieller Anführer, sondern wird von den anderen als Ältester und Sprecher respektiert: „Ja, Anführer nicht, aber er ist hier der Älteste, praktisch. Der Sprecher? Ja, er spricht für die meisten von uns.“ [P-22]
 
-Roland kennt die Abenteurergruppe von früher, als diese die Stadt vor Goblins verteidigten. [P-22] Er ist über die Wochen hinweg von einem verzweifelten, grimmigen Mann zu einem deutlich entspannteren Wächter geworden, der im ausgebauten Lager der Flüchtlinge lebt. [P-33]
+Roland kennt die Abenteurergruppe von früher, als diese die Stadt vor Goblins verteidigten. [P-22] Er ist über die Wochen hinweg von einem verzweifelten, grimmigen Mann zu einem deutlich entspannteren Wächter geworden, der im ausgebauten Lager der [Flüchtlinge](/factions/fluechtlinge.md) lebt. [P-33]
 
 ## Rolle in der Kampagne
 
@@ -44,7 +44,7 @@ Sein Auftreten verändert sich im Laufe der Kampagne deutlich: Zunächst ist er 
 
 **Session 2025-09-30:** Roland ist der Anführer der Dorfbewohner. Er ist erschöpft, aber dankbar. Am Abend bildet er mit der Gruppe einen kleinen Kreis und erzählt die Geschichte der Splitterwelt. Er offenbart, dass niemand sich an die Zeit vor elf Jahren erinnern kann. Seine Familie war schriftgewandt und hat vieles niedergeschrieben, aber er besitzt keine dieser Schriftstücke mehr. Er weiß nicht, was davon wahr ist oder gelogen, aber er weiß, dass es da draußen noch so viel mehr gibt. [P-24]
 
-**Session 2026-01-13:** Roland ist ein Wächter im Lager, der entspannter wirkt als zuvor. [Die Stadt](/locations/ehrenfels.md) wurde ausgebaut, ein Graben gezogen und Palisaden errichtet. Roland steht ganz oben im Lager und seine grimmige und murrepetige Art ist einer spürbaren Entspannung gewichen. Das Lager ist treibig und die Leute sind glücklich. [P-33]
+**Session 2026-01-13:** Roland ist ein Wächter im Lager, der entspannter wirkt als zuvor. Die Stadt wurde ausgebaut, ein Graben gezogen und Palisaden errichtet. Roland steht ganz oben im Lager und seine grimmige und murrepetige Art ist einer spürbaren Entspannung gewichen. Das Lager ist treibig und die Leute sind glücklich. [P-33]
 
 ## Offene Fragen
 

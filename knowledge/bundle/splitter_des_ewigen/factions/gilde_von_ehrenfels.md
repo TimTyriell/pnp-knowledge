@@ -107,7 +107,7 @@ Die Gilde vergibt wöchentlich Aufträge. Die Gruppe hat sich einen Namen gemach
 
 ### 2026-01-13: Portal zum Trainingsgelände
 
-Die Gilde in Ehrenfels wird als möglicher Zufluchtsort für einige Flüchtlinge erwähnt. Lindo Laut hat ein Portal zum Trainingsgelände der Gilde, das ein großes Stück westlich von Ehrenfels liegt. Man würde sich den Weg an Presca vorbeisparen.
+Die Gilde in Ehrenfels wird als möglicher Zufluchtsort für einige [Flüchtlinge](/factions/fluechtlinge.md) erwähnt. Lindo Laut hat ein Portal zum Trainingsgelände der Gilde, das ein großes Stück westlich von Ehrenfels liegt. Man würde sich den Weg an Presca vorbeisparen.
 
 ### 2026-01-27: Konflikt zwischen Zwergen und Goblins
 

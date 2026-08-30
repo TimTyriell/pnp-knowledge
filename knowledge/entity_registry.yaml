@@ -1781,6 +1781,11 @@ entities:
   canonical_name: Die Strixwolf-Reiter
   aliases: []
   mention_count: 1
+- concept_id: factions/fluechtlinge
+  type: Faction
+  canonical_name: Flüchtlinge
+  aliases: []
+  mention_count: 1
 - concept_id: factions/fluechtlinge_aus_breska
   type: Faction
   canonical_name: Die Flüchtlinge
@@ -1788,7 +1793,7 @@ entities:
   - Flüchtlinge aus Breska
   - Die Flüchtlinge aus Bereska
   - Flüchtlinge (Gruppe um Roland)
-  mention_count: 2
+  mention_count: 1
 - concept_id: factions/garde_von_brandau
   type: Faction
   canonical_name: Garde von Brandau
@@ -2983,8 +2988,7 @@ entities:
 - concept_id: locations/ehrenfels
   type: Location
   canonical_name: Ehrenfels
-  aliases:
-  - Die Stadt
+  aliases: []
   mention_count: 18
 - concept_id: locations/eingefrorener_baum
   type: Location
@@ -4789,10 +4793,6 @@ retired:
 - concept_id: factions/die_untoten
   type: Faction
   canonical_name: Die Untoten
-  aliases: []
-- concept_id: factions/fluechtlinge
-  type: Faction
-  canonical_name: Flüchtlinge
   aliases: []
 - concept_id: factions/goblins
   type: Faction

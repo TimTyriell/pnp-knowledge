@@ -53,7 +53,7 @@ Das Königreich verfügte über Elitesoldaten, deren Rüstungen aus dem Material
 ## Beziehungen und Verbindungen
 
 - **[Alte Götter](/deities/alte_goetter.md)**: Zebros war der stärkste Verbündete der alten Götter in der nördlichen Schneise. Sein Untergang leitete das Ende der alten Götter mit ein.
-- **Steinbachtal**: [Die Stadt](/locations/ehrenfels.md) am Fuße des Berges Zebros hatte eine besondere Verbindung zum König, wie der gefundene Brief belegt. Diese Verbindung könnte erklären, warum das abgelegene Städtchen recht wohlhabend war.
+- **Steinbachtal**: Die Stadt am Fuße des Berges Zebros hatte eine besondere Verbindung zum König, wie der gefundene Brief belegt. Diese Verbindung könnte erklären, warum das abgelegene Städtchen recht wohlhabend war.
 - **[Thar'Vok, der Erdrichter](/deities/tarvok_der_erdrichter.md)**: Thar'Vok war ein Anhänger von König Zebros.
 - **Königsfamilie**: Die gesamte Königsfamilie starb beim Untergang des Königreichs.
 - **General**: Ein oberster General des Königs wird im Brief erwähnt; er hatte „ein Auge auf etwas geworfen“.

@@ -28,7 +28,7 @@ Darüber hinaus wird Brandau im Zusammenhang mit dem Auftreten neuer Götter erw
 
 Brandau wird als eine der beiden großen Städte des nördlichen Gebiets beschrieben, vergleichbar mit Willauch, das „mit Abstand die größte Stadt in dem nördlichen Gebiet“ und der meistbewohnte Ort ist. Über die genaue Beschaffenheit, Architektur oder Geographie Brandaus liegen keine weiteren Belege vor.
 
-Die Stadt hat den Krieg gegen Willauch verloren und wurde dabei zerstört. Viele ehemalige Bewohner sind geflohen, darunter auch Personen, die sich in anderen Orten niedergelassen haben. In [Kleinringtal](/locations/ringtal.md) leben viele Flüchtlinge aus Brandau. Auch der alte Mann [Herakles](/npcs/herakles.md), der in [Kleinringtal](/locations/ringtal.md) eine kleine Gruppierung aufbaut, stammt aus Brandau und musste fliehen, als der Krieg verloren wurde. Sein Informant [Talron](/npcs/talron.md) ist ein ehemaliger Angehöriger der Garde aus Brandau und ebenfalls geflohen.
+Die Stadt hat den Krieg gegen Willauch verloren und wurde dabei zerstört. Viele ehemalige Bewohner sind geflohen, darunter auch Personen, die sich in anderen Orten niedergelassen haben. In [Kleinringtal](/locations/ringtal.md) leben viele [Flüchtlinge](/factions/fluechtlinge.md) aus Brandau. Auch der alte Mann [Herakles](/npcs/herakles.md), der in [Kleinringtal](/locations/ringtal.md) eine kleine Gruppierung aufbaut, stammt aus Brandau und musste fliehen, als der Krieg verloren wurde. Sein Informant [Talron](/npcs/talron.md) ist ein ehemaliger Angehöriger der Garde aus Brandau und ebenfalls geflohen.
 
 ## Beziehungen und Verbindungen
 

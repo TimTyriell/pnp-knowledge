@@ -10,7 +10,7 @@ id: LOC_BERGE_VON_ZEBROS
 subtype: Wildnis
 aliases:
 - Berg von Zebros
-- Berg Zebros
+- Berg Zebras
 ---
 
 Die **Berge von Zebros** sind eine verschneite Bergregion, die nach dem alten [Königreich Zebros](/factions/koenigreich_zebros.md) benannt ist, dessen Hauptstadt ebenfalls diesen Namen trug. Die Region ist das Ziel der Mission: Von hier strömen [Untote](/factions/belorus_untotenarmee.md) ins Tal, und die Gruppe reist her, um die Ursache der Untoten zu finden. In den Bergen liegen verlassene Siedlungen, eine Ruine mit einer Statue von König Zebros, eine intakte Burg und ein großer eingefrorener Baum. Das Gebiet wird von Untoten und Eisbären bevölkert.

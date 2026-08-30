@@ -39,7 +39,7 @@ Bruma ist sturer und wütender Charakter, der schnell angespannt ist. Er ist mis
 - **Kaya**: Er gibt ihr eine Halskette als Dank und kombiniert im Kampf seine Blitzmagie mit ihrer, um eine verheerende Explosion auszulösen. Kayas Lied berührt ihn tief und erinnert ihn an seine Großmutter.
 - **[Sange](/characters/sange.md)**: Mit ihm stimmt er sich bei Verhandlungen ab, etwa als er vor dem Gespräch mit dem Bürgermeister kurz zu ihm hinüberschaut und auf sein Nicken wartet.
 - **[Xenia](/npcs/xenia_rotkam.md)**: Er überzeugt sie mit einer leidenschaftlichen Rede über Heimat und Verlust, die in einem Präsenzwurf von 25 gipfelt.
-- **[Bürgermeister Spitzzahn](/npcs/buergermeister_spitzzahn.md)**: Mit ihm verhandelt Bruma über die Aufnahme der Flüchtlinge und bietet an, ein Grundstück für ein Etablissement zu kaufen.
+- **[Bürgermeister Spitzzahn](/npcs/buergermeister_spitzzahn.md)**: Mit ihm verhandelt Bruma über die Aufnahme der [Flüchtlinge](/factions/fluechtlinge.md) und bietet an, ein Grundstück für ein Etablissement zu kaufen.
 - **[Hauptmann Aaron](/npcs/hauptmann_aaron.md)**: Mit ihm spricht Bruma über die Verteidigung und schlägt vor, die Gilde zu reaktivieren. Er bietet an, einen Sack Gold für die Flüchtlinge zu zahlen, was Aaron ablehnt.
 - **Halblinge**: Zu ihnen hat er ein ambivalentes Verhältnis – er schüchtert sie ein, überzeugt sie aber auch mit Vernunft und erhält von einem Halblingsjungen einen Heiltrank.
 

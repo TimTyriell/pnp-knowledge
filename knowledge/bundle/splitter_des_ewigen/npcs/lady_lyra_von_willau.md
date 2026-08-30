@@ -1,6 +1,6 @@
 ---
 type: NPC
-title: Lady Lyra von Willauch
+title: Lady Lyra von Willau
 description: Lady Lyra von Willauch ist eine Adlige und eine der Herrscherinnen von
   Willauch, die gemeinsam das Turnier der Stadt ausrichten. Sie tritt…
 tags:

@@ -16,7 +16,7 @@ Die **Verhandlung mit [Harl](/npcs/hal_harl.md)** war eine einmalige Gruppenverh
 
 ## Ausgangslage und Forderungen
 
-Die Rotunas-Freunde verhandelten mit Harl über eine Unterkunft für die Flüchtlinge. Harl zeigte sich grundsätzlich einverstanden, verlangte aber ein Entgelt in Gold sowie ein Gespräch mit dem Anführer der Flüchtlinge. An diesen Bedingungen hing seine Zustimmung.
+Die Rotunas-Freunde verhandelten mit Harl über eine Unterkunft für die [Flüchtlinge](/factions/fluechtlinge.md). Harl zeigte sich grundsätzlich einverstanden, verlangte aber ein Entgelt in Gold sowie ein Gespräch mit dem Anführer der Flüchtlinge. An diesen Bedingungen hing seine Zustimmung.
 
 ## Verlauf und Ergebnis
 

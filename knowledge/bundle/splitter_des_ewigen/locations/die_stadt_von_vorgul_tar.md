@@ -10,7 +10,7 @@ id: LOC_DIE_STADT_VON_VORGUL_TAR
 subtype: Siedlung
 ---
 
-[Die Stadt](/locations/ehrenfels.md), die zum Palast von [Vorgul'tar](/deities/vorgul_tar.md) führt. Die Gruppe versuchte, sie zu betreten, wurde aber zurückgeschlagen.
+Die Stadt, die zum Palast von [Vorgul'tar](/deities/vorgul_tar.md) führt. Die Gruppe versuchte, sie zu betreten, wurde aber zurückgeschlagen.
 
 # Belege
 

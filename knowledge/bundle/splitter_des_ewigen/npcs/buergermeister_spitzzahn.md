@@ -23,7 +23,7 @@ In Breska begrüßt er die Gruppe überschwänglich und zeigt sich begeistert vo
 
 ## Auftreten in Ringtal
 
-In Ringtal verhält sich Bürgermeister Spitzzahn deutlich zurückhaltender: Er zögert, Flüchtlinge aufzunehmen, und verlangt als Entschädigung zwei Säcke Gold. Im Gegenzug ist er bereit, den Flüchtlingen Arbeit zu geben und ein leerstehendes Gebäude für ein Etablissement zur Verfügung zu stellen. Er wirkt selbstsicher und geschäftstüchtig.
+In Ringtal verhält sich Bürgermeister Spitzzahn deutlich zurückhaltender: Er zögert, [Flüchtlinge](/factions/fluechtlinge.md) aufzunehmen, und verlangt als Entschädigung zwei Säcke Gold. Im Gegenzug ist er bereit, den Flüchtlingen Arbeit zu geben und ein leerstehendes Gebäude für ein Etablissement zur Verfügung zu stellen. Er wirkt selbstsicher und geschäftstüchtig.
 
 # Belege
 

@@ -9,15 +9,15 @@ timestamp: '2026-02-17T00:00:00Z'
 id: DEITY_TARVOK_DER_ERDRICHTER
 subtype: Alter Gott
 aliases:
-- Thar'Vok (Der Erdrichter)
-- Thar'Vok (Erdrichter)
-- Thar'Vok, der Erdrichter
-- Thar'Vok (der Erdrichter)
-- Thar'Vok
-- Thar'Vok
+- Tarvok (Der Erdrichter)
+- Tavok (Erdrichter)
+- Tavok, der Erdrichter
+- Tavok (der Erdrichter)
+- Tarvolk
+- Tarvok
 - Parfon
 - Seras (Seraph)
-- Thar'Vok
+- Tavok
 - Seras
 ---
 

@@ -53,7 +53,7 @@ Belorus befehligt eine riesige untote Armee. Seine Untoten sind ihm bedingungslo
 - **[Rotunas](/characters/rotunas.md)**: Belorus' Untote zeigen auf Rotunas als „den Mächtigsten" der Gruppe und vermuten in ihm den Anführer.
 - **Hans**: Ein Soldat, den Belorus mit einer Nachricht zu Lindo Laut schickt.
 - **Vasul**: Ein alter Gott, dessen Gefäß Belorus sucht. Belorus will die alten Götter vernichten.
-- **Breska**: [Die Stadt](/locations/ehrenfels.md) wurde von Belorus' Untotenarmee zerstört.
+- **Breska**: Die Stadt wurde von Belorus' Untotenarmee zerstört.
 
 ## Chronologie
 

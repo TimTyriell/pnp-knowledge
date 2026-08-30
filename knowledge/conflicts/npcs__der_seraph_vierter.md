@@ -2,7 +2,7 @@
 type: Conflict
 title: 'Offener Konflikt: Der Seraph (vierter)'
 description: Widersprüchliche Belege — menschliche Entscheidung nötig.
-timestamp: '2026-08-30T17:34:00+00:00'
+timestamp: '2026-08-30T18:35:42+00:00'
 id: CONFLICT_NPC_DER_SERAPH_VIERTER
 status: open
 concept: npcs/der_seraph_vierter

@@ -63,7 +63,13 @@ DUPLICATES_THAT_MUST_BE_GONE = [
     "npcs/graf_voras",
     "npcs/jorah_vanur",
     "npcs/kinder",
-    "factions/fluechtlinge",
+    # factions/fluechtlinge was on this list until 2026-08-30, on the audit's
+    # reading that it duplicated factions/fluechtlinge_aus_breska. The GM has
+    # since ruled the two are different groups (the bare-noun mention from
+    # 2026-01-13 describes refugees "aus verschiedenen Orten", not Roland's
+    # Breska group), so the concept is now supposed to exist and the merge:
+    # key that folded it was removed. A GM ruling outranks an audit guess;
+    # see the never_merge: pair in entity_rules.yaml that now keeps them apart.
     "items/der_streitkolben",
     "items/das_amulett_von_lindo_laut",
     "items/stab_von_lindo_laut",

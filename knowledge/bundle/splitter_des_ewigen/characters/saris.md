@@ -70,7 +70,7 @@ In der Stadt trifft Saris auf den zwergischen Alchemisten [Turbo](/npcs/turbo.md
 
 ### Session 2026-06-04
 
-Saris stellt sich der Gruppe erstmals vor. Er ist nervös und vergisst beinahe seinen eigenen Namen, korrigiert sich dann aber zu "Saris Bendal". Er stellt Jonathan und Samuel vor und erklärt, dass sie ihm bei seinen Tests geholfen haben. Er bezahlt für Flüchtlinge, um Informationen zu erhalten, und besitzt ein goldenes Fläschchen mit einem Mittel gegen Ungeziefer, das er an Gnollen testen will. Er lehnt den Segen Jorans ab, weil Samuel ihn davor warnt. Am Ende zeichnet er ein Bild von [Xenia](/npcs/xenia_rotkam.md) und hinterlässt es ihr.
+Saris stellt sich der Gruppe erstmals vor. Er ist nervös und vergisst beinahe seinen eigenen Namen, korrigiert sich dann aber zu "Saris Bendal". Er stellt Jonathan und Samuel vor und erklärt, dass sie ihm bei seinen Tests geholfen haben. Er bezahlt für [Flüchtlinge](/factions/fluechtlinge.md), um Informationen zu erhalten, und besitzt ein goldenes Fläschchen mit einem Mittel gegen Ungeziefer, das er an Gnollen testen will. Er lehnt den Segen Jorans ab, weil Samuel ihn davor warnt. Am Ende zeichnet er ein Bild von [Xenia](/npcs/xenia_rotkam.md) und hinterlässt es ihr.
 
 ### Session 2026-07-10
 

@@ -116,7 +116,6 @@ merge:
   ehrenfels-gilde: factions/gilde_von_ehrenfels
   gilde ehrenfels: factions/gilde_von_ehrenfels
   berggilde: factions/gilde_von_ehrenfels
-  die flüchtlinge: factions/fluechtlinge_aus_breska
   goblinhorde: factions/goblins
   goblins der minen: factions/goblins
   die hack: npcs/lenra
@@ -566,13 +565,23 @@ merge:
   # deities/jorah (a god): see never_merge: below, this merchant was
   # linking to the god's page by mistake.
   jorah vanur: npcs/joar_vanur
-  # factions/fluechtlinge.md duplicates factions/fluechtlinge_aus_breska.md
-  # (same refugee group Roland leads) — "die flüchtlinge"/"flüchtlinge
-  # (gruppe um roland)" above cover the qualified forms, not the bare noun
-  # the duplicate stub actually uses as its title.
-  flüchtlinge: factions/fluechtlinge_aus_breska
+  # GM ruling 2026-08-30: the bare noun "Flüchtlinge" is NOT the Breska group.
+  # It used to fold here on the assumption that factions/fluechtlinge.md was a
+  # duplicate stub of the same refugees Roland leads — the GM has since ruled
+  # the Ringtal refugees a different group, and the one bare-noun mention
+  # (2026-01-13) describes its own population: "Die Flüchtlinge aus
+  # verschiedenen Orten haben im Lager Zuflucht gefunden". So the bare noun
+  # resolves to its own concept again and only the qualified forms fold —
+  # "flüchtlinge (gruppe um roland)" above, plus "flüchtlinge aus breska".
+  # never_merge: below stops the fuzzy token-subset pass from re-folding them.
 
 never_merge:
+# GM ruling 2026-08-30: the mixed-origin refugees are not Roland's Breska
+# group. Their names are near-identical and "Flüchtlinge" is a token-subset
+# of "Flüchtlinge aus Breska", so without this the fuzzy pass folds the
+# 1-mention concept straight back into the 2-mention one.
+- - factions/fluechtlinge
+  - factions/fluechtlinge_aus_breska
 - - characters/miko
   - characters/myko
 - - npcs/lobrecht
@@ -1191,3 +1200,11 @@ alias_block:
   # a fold, so this blocks linkability only and leaves the merge intact.
   factions/fluechtlinge_aus_breska:
   - flüchtlinge
+  # 2026-08-30: "Die Stadt" is registered as an alias of Ehrenfels, so
+  # link_targets() autolinked the ordinary noun to Ehrenfels on 10+ pages —
+  # including locations/sanddorn, locations/seelenwacht, locations/boragdil
+  # and locations/hartwacht, where "die Stadt" means that page's OWN city.
+  # Ehrenfels has 18 mentions and is linked plenty by its real name; only the
+  # generic noun is dropped. Same precedent as amulett/ende/flüchtlinge above.
+  locations/ehrenfels:
+  - die stadt

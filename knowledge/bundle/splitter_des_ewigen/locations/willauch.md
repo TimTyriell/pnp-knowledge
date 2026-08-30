@@ -9,18 +9,18 @@ timestamp: '2026-08-04T00:00:00Z'
 id: LOC_WILLAUCH
 subtype: Siedlung
 aliases:
-- Vilau (Willauch)
+- Vilau (Willau)
+- Willoch
+- Villauch
 - Willauch
-- Willauch
-- Willauch
-- Willauch
+- Willau
 ---
 
 # Willauch
 
 ## Überblick
 
-Willauch ist eine der beiden großen Städte der Region und liegt im Südwesten der bekannten Lande. [Die Stadt](/locations/ehrenfels.md) hat den [Krieg](/characters/krieg.md) gegen [Brandau](/locations/brandau.md) gewonnen und ist seither eine der mächtigsten und wohlhabendsten Siedlungen weit und breit. Sie wird von Lord Kalidarn regiert, der sich selbst als „Herr und Sieger über Brandau, Herr über Willauch und das ganze Reich“ bezeichnet.
+Willauch ist eine der beiden großen Städte der Region und liegt im Südwesten der bekannten Lande. Die Stadt hat den [Krieg](/characters/krieg.md) gegen [Brandau](/locations/brandau.md) gewonnen und ist seither eine der mächtigsten und wohlhabendsten Siedlungen weit und breit. Sie wird von Lord Kalidarn regiert, der sich selbst als „Herr und Sieger über Brandau, Herr über Willauch und das ganze Reich“ bezeichnet.
 
 Die Stadt ist bekannt für ihre gewaltige Stadtmauer, die selbst erfahrene Reisende beeindruckt. Im Vergleich zu anderen befestigten Orten wie [Breska](/locations/breska.md), dessen Anwesensmauer als „ein Witz“ beschrieben wird, ist Willauchs Befestigung von einer ganz anderen Größenordnung. Die Stadt ist multikulturell, wohlhabend und gilt als extrem sicher — überall patrouillieren Wachen, und die Bewohner gehen auf dem Marktplatz ihren Geschäften nach, als herrschten keine äußeren Bedrohungen.
 

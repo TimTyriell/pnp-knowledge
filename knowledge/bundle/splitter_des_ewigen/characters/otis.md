@@ -35,7 +35,7 @@ Otis übernimmt innerhalb der Gruppe die Rolle des Beschützers, insbesondere vo
 
 **Rotunas:** Gemeinsam mit Rotunas zerstört Otis die Säulen des Portals. Diese Zusammenarbeit deutet auf ein eingespieltes Team hin, auch wenn die näheren Umstände ihrer Beziehung nicht ausgeführt werden.
 
-**Willauch:** Otis stammt aus Willauch und ist bereit, Gefangene dorthin zu bringen. [Die Stadt](/locations/ehrenfels.md) ist ihm vertraut, auch wenn die Belege nicht näher ausführen, was ihn mit ihr verbindet oder warum er sie verlassen hat.
+**Willauch:** Otis stammt aus Willauch und ist bereit, Gefangene dorthin zu bringen. Die Stadt ist ihm vertraut, auch wenn die Belege nicht näher ausführen, was ihn mit ihr verbindet oder warum er sie verlassen hat.
 
 ## Chronologie
 

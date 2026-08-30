@@ -15,7 +15,7 @@ aliases:
 
 ## Überblick
 
-Boragdil ist eine Ruinenstadt in der Region [Abyssalis](/domains/splitterwelt.md), in der die Gruppe nach ihrer Ankunft in dieser düsteren Gegend zuerst ankommt. [Die Stadt](/locations/ehrenfels.md) liegt eingebettet in einer waldreichen Umgebung und ist von einer großen [Festung](/locations/festung.md) geprägt, die zu den größten der Region zählt. Boragdil ist eine verfallene, ruinenhafte Siedlung, die von [Dämonen](/factions/daemonen.md) und Seelen bevölkert wird. Die gesamte Anlage wirkt zerstört und kaputt, was auf eine bewegte und gewaltsame Vergangenheit hindeutet.
+Boragdil ist eine Ruinenstadt in der Region [Abyssalis](/domains/splitterwelt.md), in der die Gruppe nach ihrer Ankunft in dieser düsteren Gegend zuerst ankommt. Die Stadt liegt eingebettet in einer waldreichen Umgebung und ist von einer großen [Festung](/locations/festung.md) geprägt, die zu den größten der Region zählt. Boragdil ist eine verfallene, ruinenhafte Siedlung, die von [Dämonen](/factions/daemonen.md) und Seelen bevölkert wird. Die gesamte Anlage wirkt zerstört und kaputt, was auf eine bewegte und gewaltsame Vergangenheit hindeutet.
 
 Die Gruppe wird von [Vasul](/deities/vharzul.md) (in den Quellen auch als Wasul gehört) mehr oder weniger direkt an die Festung von Boragdil gebracht, die sich östlich des Ankunftspunkts befindet. [Die Festung](/locations/die_festung.md) selbst wird von Anhängern [Ohoriaks](/deities/ohoriaks.md) bewacht, die die Gruppe abweisen.
 

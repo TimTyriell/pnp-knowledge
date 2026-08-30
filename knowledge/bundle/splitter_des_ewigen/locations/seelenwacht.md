@@ -14,7 +14,7 @@ Seelenwacht ist eine Stadt, die die Gruppe besuchen möchte. Sie wird von Siedle
 
 ## Lage und Besiedlung
 
-Seelenwacht liegt mindestens zwei Tagesreisen vom Standort der Gruppe entfernt. [Die Stadt](/locations/ehrenfels.md) wird von Leuten aus Vorkuta besiedelt.
+Seelenwacht liegt mindestens zwei Tagesreisen vom Standort der Gruppe entfernt. Die Stadt wird von Leuten aus Vorkuta besiedelt.
 
 ## Herrschaft und Religion
 

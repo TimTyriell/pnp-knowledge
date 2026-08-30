@@ -48,7 +48,7 @@ Die Silberkerne führen ein Wappen: ein Schild auf grauem Grund mit drei Apfelk�
 - **Floran**: Führt lediglich die Zelle auf der Heinrich-Farm, nicht die gesamte Organisation.
 - **Nyrella**: Hat engen Kontakt zu den Silberkernen, kennt Harl persönlich und besitzt dessen Püppchen als Erkennungszeichen.
 - **Willauch**: Beschuldigt die Silberkerne des Mordes an einem Diplomaten und will sie ausrotten lassen. Verbündete von Willauch sind aufgerufen, gegen die Silberkerne vorzugehen.
-- **Flüchtlinge**: Die Silberkerne arbeiten mit Flüchtlingen zusammen und verteidigen gemeinsam ein Lager.
+- **[Flüchtlinge](/factions/fluechtlinge.md)**: Die Silberkerne arbeiten mit Flüchtlingen zusammen und verteidigen gemeinsam ein Lager.
 
 ## Chronologie
 
