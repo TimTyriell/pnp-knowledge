@@ -10,7 +10,7 @@ id: FACTION_SEELENWACHT
 subtype: Armee
 ---
 
-Die **[Seelenwacht](/locations/seelenwacht.md)** ist eine Organisation, die in [Jalan](/locations/jalan.md) stationiert ist. Als ihre wichtigsten Persönlichkeiten gelten der [Richter](/npcs/richter_herr_der_seelenwacht.md) und der [Schinder](/npcs/der_schinder.md). Die Seelenwacht scheint die Verteidigung von Jalan zu organisieren und verfügt über Informationen über [Vasul](/deities/vharzul.md).
+Die **Seelenwacht** ist eine Organisation, die in [Jalan](/locations/jalan.md) stationiert ist. Als ihre wichtigsten Persönlichkeiten gelten der [Richter](/npcs/richter_herr_der_seelenwacht.md) und der [Schinder](/npcs/der_schinder.md). Die Seelenwacht scheint die Verteidigung von Jalan zu organisieren und verfügt über Informationen über [Vasul](/deities/vharzul.md).
 
 ## Organisation und Rolle
 

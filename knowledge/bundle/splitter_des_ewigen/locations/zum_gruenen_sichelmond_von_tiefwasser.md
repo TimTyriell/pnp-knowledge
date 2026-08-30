@@ -12,7 +12,7 @@ aliases:
 - Zum grünen Sichelmond
 ---
 
-[Die Taverne](/locations/taverne_von_ehrenfels.md) „Zum grünen Sichelmond“ ist eine gut besuchte Taverne in [Tiefwasser](/locations/tiefwasser.md), die von [Hans](/npcs/hans_soldat_aus_breska.md) betrieben wird. Sie ist bekannt für ihr gutes Essen und ihre Informationen.
+[Die Taverne](/locations/taverne_von_ehrenfels.md) „Zum grünen Sichelmond“ ist eine gut besuchte Taverne in [Tiefwasser](/locations/tiefwasser.md), die von Hans betrieben wird. Sie ist bekannt für ihr gutes Essen und ihre Informationen.
 
 # Belege
 

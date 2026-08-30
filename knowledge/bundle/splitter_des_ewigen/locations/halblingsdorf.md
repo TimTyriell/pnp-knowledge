@@ -10,7 +10,7 @@ id: LOC_HALBLINGSDORF
 subtype: Siedlung
 ---
 
-Das Halblingsdorf ist ein abgelegenes Dorf, das von Halblingen bewohnt wird und deren Heimat darstellt. Die Siedlung ist von Gnollen bedroht und wird durch eine Barrikade sowie durch [Hauptmann Aaron](/npcs/hauptmann_aaron.md) und seine Soldaten verteidigt. Zu den dörflichen Anlagen zählen Felder und eine [Mine](/locations/verlassene_mine_an_der_farm.md). Im Verlauf der Ereignisse wird das Dorf evakuiert; nach der Abreise der Gruppe wird es niedergebrannt.
+Das Halblingsdorf ist ein abgelegenes Dorf, das von Halblingen bewohnt wird und deren Heimat darstellt. Die Siedlung ist von Gnollen bedroht und wird durch eine Barrikade sowie durch [Hauptmann Aaron](/npcs/hauptmann_aaron.md) und seine Soldaten verteidigt. Zu den dörflichen Anlagen zählen Felder und eine Mine. Im Verlauf der Ereignisse wird das Dorf evakuiert; nach der Abreise der Gruppe wird es niedergebrannt.
 
 ## Lage und Verteidigung
 

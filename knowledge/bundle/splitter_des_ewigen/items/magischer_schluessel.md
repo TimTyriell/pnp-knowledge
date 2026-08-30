@@ -1,8 +1,8 @@
 ---
 type: Item
 title: Magischer Schlüssel
-description: Der magische Schlüssel ist ein Artefakt, das in mehreren Sitzungen der
-  Kampagne begegnet. Die Aufzeichnungen beschreiben ihn als Schlüssel,…
+description: Der magische Schlüssel ist ein Gegenstand, der in mehreren Sessions der
+  Kampagne auftaucht. Er wird als Schlüssel bezeichnet, hat aber die…
 tags:
 - items
 timestamp: '2025-11-25T00:00:00Z'
@@ -13,18 +13,18 @@ aliases:
 - Der Stab (Schlüssel)
 ---
 
-Der **magische Schlüssel** ist ein Artefakt, das in mehreren Sitzungen der Kampagne begegnet. Die Aufzeichnungen beschreiben ihn als Schlüssel, der die Form eines [Stabs](/items/lindo_lauts_stab.md) besitzt. Er wurde als Portalöffner identifiziert, dient [Lindo Laut](/characters/lindo_laut.md) als Medium für Magie und scheint für die [Katakombe](/locations/katakombe.md) von Bedeutung zu sein. Ob alle Erwähnungen denselben Gegenstand betreffen, lässt sich aus den Belegen nicht eindeutig schließen.
+Der magische Schlüssel ist ein Gegenstand, der in mehreren Sessions der Kampagne auftaucht. Er wird als Schlüssel bezeichnet, hat aber die Form eines [Stabs](/items/lindo_lauts_stab.md) und dient als Medium für Magie. Die Quellen verbinden ihn mit der [Katakombe](/locations/katakombe.md), einem uralten Buch und der Öffnung von Portalen. Im Verlauf der Sessions wird er von verschiedenen Personen besessen oder übergeben: Lendras Esterossa übergibt ihn, [Rotunas](/characters/rotunas.md) besitzt ihn, [Lindo Laut](/characters/lindo_laut.md) besitzt ihn.
+
+## Rolle und Bedeutung
+
+[Lendras](/npcs/lendras.md) [Esterossa](/characters/esterossa.md) übergibt den Schlüssel; er scheint wichtig für die Katakombe zu sein. [Rotunas](/characters/rotunas.md) besitzt den Schlüssel, den er in einem früheren Abenteuer gefunden hat. Mit ihm versucht Rotunas, ein uraltes Buch zu öffnen – der Versuch bleibt jedoch erfolglos. Ein Magier identifiziert den Schlüssel später als Portalöffner, warnt aber davor, ihn unbekannt zu verwenden.
 
 ## Eigenschaften und Verwendung
 
-Der Schlüssel ist kein alltäglicher Gegenstand, sondern ein Stab, den Lindo Laut besitzt und als Medium für seine Magie verwendet. [Slix](/npcs/slix_vasul.md) zufolge kann Lindo Laut mit dem Schlüssel Kreaturen beschwören. Ein Magier identifizierte den Schlüssel als Portalöffner, warnte jedoch vor unbekannter Verwendung. Was genau er öffnet und unter welchen Umständen, ist nicht dokumentiert. Der Versuch, mit dem Schlüssel ein uraltes Buch zu öffnen, schlug fehl.
-
-## Besitz und Stationen
-
-In den Aufzeichnungen erscheint der Schlüssel an mehreren Stationen: Lendras Esterossa übergab einen magischen Schlüssel; wer ihn empfing, ist nicht überliefert. Ausdrücklich vermerkt wird, dass er für die Katakombe wichtig zu sein scheint. [Rotunas](/characters/rotunas.md) besaß einen magischen Schlüssel, den er in einem früheren Abenteuer gefunden hatte. Zuletzt wird der Schlüssel in Stabform Lindo Laut zugeschrieben. Ein durchgehender Besitzerwechsel wird in den Quellen nicht explizit beschrieben.
+Der Schlüssel ist ein Stab, der [Lindo Laut](/characters/lindo_laut.md) als Medium für seine Magie dient. [Slix](/npcs/slix_vasul.md) zufolge kann Lindo Laut mit dem Schlüssel Kreaturen beschwören. Die genaue Funktionsweise des Schlüssels ist offenbar nicht vollständig geklärt: Öffnungsversuche am uralten Buch scheitern, und die Warnung des Magiers deutet auf Risiken bei unbedachter Nutzung hin.
 
 # Belege
 
-[P-05] Session 2025-04-23 @ 01:32:25 (https://www.youtube.com/watch?v=z3C-bewKqUs)
-[P-13] Session 2025-06-25 @ 00:48:17 (https://www.youtube.com/watch?v=tpkO9uGw6-I)
-[P-31] Session 2025-11-25 @ 01:57:13 (https://www.youtube.com/watch?v=wd5R4fJfngY)
+[P-05] Session 2025-04-23 @ 01:32:25 – https://www.youtube.com/watch?v=z3C-bewKqUs
+[P-13] Session 2025-06-25 @ 00:48:17 – https://www.youtube.com/watch?v=tpkO9uGw6-I
+[P-31] Session 2025-11-25 @ 01:57:13 – https://www.youtube.com/watch?v=wd5R4fJfngY

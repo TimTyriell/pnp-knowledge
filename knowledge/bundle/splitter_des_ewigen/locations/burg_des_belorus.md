@@ -39,7 +39,7 @@ Die Burg selbst ist im Gegensatz zur Ruine „sehr intakt". Über ihre genaue Ar
 
 Die Burg ist mehrfach gesichert:
 
-- **[Untote](/factions/belorus_untotenarmee.md) Wachen**: Die Burg ist von untoten Wachen umgeben, die den Zugang bewachen.
+- **Untote Wachen**: Die Burg ist von untoten Wachen umgeben, die den Zugang bewachen.
 - **Fallen**: Im Inneren befinden sich Fallen, darunter nachweislich eine Stichflamme-Falle, die bei unvorsichtigem Vorgehen ausgelöst wird.
 
 ### Bewohner
@@ -54,7 +54,7 @@ Die Burg ist der Wohnsitz von Belorus, dem schwarzen Paladin. Er ist die zentral
 
 ### Die Untote Horde von Zebros
 
-Belorus steht in Verbindung mit einer Armee von Untoten, die aus dem Gebiet des früheren Königreichs Zebros ins Tal zieht. Diese Armee wird gelegentlich als „Untote Horde von Zebros" bezeichnet, was auf einem Missverständnis beruht: „Zebros" ist eine Verhörung von „Zebros", dem gefallenen Königreich. Die Horde besteht nicht aus untoten Zebra-Tieren, sondern ist eine Armee von Untoten aus dem Gebiet des früheren Königreichs. Ob die Burg des Belorus als Ausgangspunkt oder Sammelpunkt dieser Armee dient, ist nicht explizit belegt, doch liegt die Verbindung nahe, da Belorus als Anführer der Untotenarmee gilt.
+Belorus steht in Verbindung mit einer Armee von Untoten, die aus dem Gebiet des früheren Königreichs Zebros ins Tal zieht. Diese Armee wird gelegentlich als „[Untote Horde von Zebros](/factions/belorus_untotenarmee.md)" bezeichnet, was auf einem Missverständnis beruht: „Zebros" ist eine Verhörung von „Zebros", dem gefallenen Königreich. Die Horde besteht nicht aus untoten Zebra-Tieren, sondern ist eine Armee von Untoten aus dem Gebiet des früheren Königreichs. Ob die Burg des Belorus als Ausgangspunkt oder Sammelpunkt dieser Armee dient, ist nicht explizit belegt, doch liegt die Verbindung nahe, da Belorus als Anführer der Untotenarmee gilt.
 
 ### Die benachbarte Ruine
 

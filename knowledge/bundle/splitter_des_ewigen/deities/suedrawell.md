@@ -1,8 +1,8 @@
 ---
 type: Deity
 title: Südrawell
-description: Südrawell ist eine der vier alten Götter, die in der Unterwelt Abyssalis
-  eingesperrt wurden. Sie wird als „die Fleischweberin“ bezeichnet u…
+description: Südrawell ist eine der vier alten Götter in Abyssalis, der Unterwelt
+  dieser Welt. Sie wird als „die Fleischweberin“ bezeichnet und als eine…
 tags:
 - deities
 timestamp: '2026-03-31T00:00:00Z'
@@ -12,49 +12,44 @@ subtype: Alter Gott
 
 ## Überblick
 
-Südrawell ist eine der vier alten Götter, die in der Unterwelt [Abyssalis](/domains/splitterwelt.md) eingesperrt wurden. Sie wird als „die Fleischweberin“ bezeichnet und als eine federhafte Kreatur beschrieben, die nur Unheil bringt. Über ihr genaues Aussehen, ihre Herkunft oder ihre konkreten Fähigkeiten ist bislang wenig bekannt; die Belege beschränken sich auf ihre Einordnung als eine der vier alten Götter und ihre negative Charakterisierung.
+Südrawell ist eine der vier alten Götter in [Abyssalis](/domains/splitterwelt.md), der Unterwelt dieser Welt. Sie wird als „die Fleischweberin“ bezeichnet und als eine federhafte Kreatur beschrieben, die nur Unheil bringt. Sie gehört zu jenen vier alten Göttern, die in Abyssalis eingesperrt wurden und dort bis heute existieren. Über ihr Wesen, ihre Herkunft und ihre genauen Fähigkeiten ist bislang nur wenig bekannt; die Belege beschränken sich auf eine einzige Erwähnung durch den Gott [Vorgul'tar](/deities/vorgul_tar.md), der den Helden die Gegebenheiten in Abyssalis erläutert.
 
 ## Rolle in der Kampagne
 
-Südrawell ist eine von vier alten Göttern, die in Abyssalis existieren und dort eingesperrt wurden. Die Gruppe erfährt von ihr im Rahmen einer Erklärung über die Beschaffenheit der Unterwelt und die Gefahren, die dort lauern. Die vier Götter werden als Bedrohung für die Seelen dargestellt, die in Abyssalis umherstreifen – Südrawell wird dabei als eine von mehreren Gefahrenquellen genannt, neben [Akastrale](/deities/akastrale.md), [Ohoriaks](/deities/ohoriaks.md) und [Vorgul'tar](/deities/vorgul_tar.md).
+Südrawell ist eine von vier Gottheiten, die in Abyssalis gefangen gehalten werden und deren Einflussbereiche die Unterwelt prägen. In der Schilderung Vorgul'tars wird sie als eine der Gefahren benannt, denen die Seelen der Toten in Abyssalis ausgesetzt sind. Während die Seelen der Erwachsenen etwa von [Akastrale](/deities/akastrale.md) gefressen oder von [Ohoriaks](/deities/ohoriaks.md) aufgenommen werden, sind Kinderseelen offenbar von diesen Einflüssen ausgenommen – eine Besonderheit, die auch Südrawell betreffen dürfte, auch wenn die Belege dies nicht ausdrücklich ausführen.
 
-Die Erwähnung Südrawells erfolgt im Kontext einer Sicherheitswarnung: [Die Festung](/locations/die_festung.md), in der sich die Gruppe aufhält, wird als der einzige Ort beschrieben, an dem man vor den Einflüssen der vier Götter einigermaßen sicher sei. Südrawell ist damit Teil des Bedrohungsszenarios, das die Gruppe in Abyssalis erwartet, auch wenn sie bislang nicht direkt mit ihr interagiert hat.
+[Die Festung](/locations/die_festung.md), in der sich die Helden aufhalten, wird als einer der wenigen Orte beschrieben, an denen man vor den Einflüssen der vier Götter – und damit auch vor Südrawell – einigermaßen sicher ist. Südrawell ist damit Teil des Bedrohungsszenarios, das die Reise der Helden durch Abyssalis begleitet. Eine direkte Begegnung oder ein aktives Eingreifen Südrawells in die Handlung ist in den vorliegenden Belegen nicht dokumentiert.
 
 ## Wichtige Merkmale
 
-Die Belege nennen für Südrawell folgende Merkmale:
+Südrawell wird als „federhafte Kreatur“ beschrieben. Dies ist das einzige konkrete äußere Merkmal, das die Belege nennen. Ihr Beiname „die Fleischweberin“ deutet auf eine Fähigkeit oder ein Wirken hin, das mit der Manipulation oder Verarbeitung von Fleisch zu tun hat – Näheres wird jedoch nicht ausgeführt.
 
-- **Titel**: „die Fleischweberin“
-- **Erscheinung**: „eine federhafte Kreatur“
-- **Wesen**: Sie bringt nur Unheil
-
-Weitere Details zu ihren Fähigkeiten, ihrer Machtausübung oder ihrem Einflussbereich sind nicht überliefert. Insbesondere fehlen Angaben darüber, wie sie mit Seelen verfährt, die in Abyssalis umherstreunen – anders als bei den anderen drei Göttern, zu denen jeweils konkrete Handlungsweisen genannt werden (Akastrale frisst Seelen, Ohoriaks nimmt sie auf, Sitravil zerfetzt sie, Vorgul'tar sammelt sie).
+Als eine der vier alten Götter in Abyssalis wird sie als „Unheil bringend“ charakterisiert. Diese Beschreibung steht im Kontrast zu Ohoriaks, der „Mutter der Schleier“, die als beschützend, aber jähzornig gilt. Südrawell wird damit in die Reihe der bedrohlichen Mächte Abyssalis' eingeordnet, ohne dass ihre konkreten Fähigkeiten, ihre Anhänger oder ihr genaues Wirken in den Belegen näher erläutert werden.
 
 ## Beziehungen und Verbindungen
 
-Südrawell wird als eine von vier alten Göttern genannt, die gemeinsam in Abyssalis eingesperrt sind. Die anderen drei sind:
+Südrawell ist eine von vier alten Göttern, die in Abyssalis eingesperrt wurden. Die anderen drei sind:
 
-- **Akastrale**, der „verrückte Hunger“ oder „dunkle Hunger“
+- **Akastrale**, der „verrückte Hunger“ oder „dunkle Hunger“, der Seelen frisst
 - **Ohoriaks**, die „Mutter der Schleier“, eine beschützende, aber jähzornige Göttin
-- **Vorgul'tar**, der „Herr der Tausend Seelen“, der Sammler der Seelen
+- **Vorgul'tar**, der „Herr der Tausend Seelen“, der Sammler der Seelen, der seine Macht aus der Essenz des Lebens bezieht
 
-Über das Verhältnis Südrawells zu den anderen Göttern – ob sie verbündet, verfeindet oder neutral zueinander stehen – ist nichts bekannt. Auch Verbindungen zu anderen Entitäten der Kampagne werden nicht erwähnt.
+Die Beziehung Südrawells zu den anderen drei Göttern wird nicht näher beschrieben. Es ist nicht bekannt, ob sie mit ihnen kooperiert, rivalisiert oder sich neutral verhält. Die Götter werden als parallele Mächte dargestellt, die jeweils eigene Einflüsse auf die Seelen in Abyssalis ausüben. Vorgul'tar, der die Helden über die Götter informiert, scheint zumindest nicht im Bündnis mit Südrawell zu stehen, auch wenn dies nicht ausdrücklich gesagt wird.
 
 ## Chronologie
 
-**Session 2026-03-31:** Die Gruppe befindet sich in einer [Festung](/locations/festung.md) in Abyssalis. Ein Sprecher (vermutlich ein Verbündeter oder Führer) erklärt ihnen die Beschaffenheit der Unterwelt und die dort herrschenden Götter. Er erwähnt, dass die meisten Seelen in den Erntefeldern umherstreunen und von Akastrale gefressen, von Ohoriaks aufgenommen oder von Sitravil zerfetzt werden. Kinderseelen seien besonders, da sie nicht den Gesetzen der Natur in Abyssalis zu entsprechen scheinen. Im Anschluss nennt er die vier alten Götter namentlich, darunter Südrawell als „die Fleischweberin, eine federhafte Kreatur, die nur Unheil bringt“. Er weist darauf hin, dass die Festung der einzige Ort sei, an dem man vor den Einflüssen der vier Götter einigermaßen sicher sei, und kündigt an, bereits Verbündete gefunden zu haben, die der Gruppe helfen werden.
+Die einzige dokumentierte Erwähnung Südrawells erfolgt in der Session vom 31. März 2026. In dieser Szene erklärt Vorgul'tar den Helden die Gegebenheiten in Abyssalis und benennt die vier alten Götter, die dort eingesperrt sind. Er beschreibt Südrawell als die Fleischweberin, eine federhafte Kreatur, die nur Unheil bringt. Im selben Zusammenhang erläutert er, dass Kinderseelen nicht den Gesetzen der Natur in Abyssalis entsprechen und nicht von den Göttern beeinflusst werden – eine Information, die im Kontext der Suche nach dem Bruder eines Helden von Bedeutung ist.
 
-Weitere Auftritte oder Entwicklungen rund um Südrawell sind in den vorliegenden Belegen nicht dokumentiert.
+Weitere Ereignisse, in denen Südrawell eine aktive Rolle spielt, sind in den vorliegenden Belegen nicht dokumentiert.
 
 ## Offene Fragen
 
-- Welche konkreten Fähigkeiten und Machtmechanismen hat Südrawell als „Fleischweberin“? Der Titel deutet auf eine Verbindung zu Fleisch oder Körpern hin, wird aber nicht erläutert.
-- Wie wirkt sich Südrawells Einfluss auf Seelen in Abyssalis aus? Anders als bei den anderen drei Göttern wird für sie keine spezifische Handlungsweise gegenüber den umherstreunenden Seelen genannt.
-- Was genau bedeutet ihre Beschreibung als „federhafte Kreatur“? Handelt es sich um ein gefiedertes Wesen, eine Gestalt aus Federn oder etwas anderes?
+- Welche konkreten Fähigkeiten besitzt Südrawell als „Fleischweberin“? Der Beiname deutet auf eine Manipulation von Fleisch hin, aber die Belege führen dies nicht aus.
+- Was genau bedeutet die Beschreibung als „federhafte Kreatur“? Handelt es sich um ein gefiedertes Wesen, eine Gestalt aus Federn oder etwas anderes?
+- Welche Rolle spielt Südrawell für das Schicksal der Kinderseelen in Abyssalis, die offenbar nicht den Gesetzen der Natur unterliegen?
 - In welchem Verhältnis steht Südrawell zu den anderen drei alten Göttern?
-- Welche Rolle könnte Südrawell für die Handlung der Kampagne spielen, insbesondere im Hinblick auf die Kinderseelen, die von den Gesetzen Abyssalis' ausgenommen zu sein scheinen?
+- Welche Verbündeten hat Vorgul'tar den Helden versprochen, und in welchem Verhältnis stehen diese zu Südrawell?
 
 ## Belege
 
-[P-44a] Session 2026-03-31 @ 01:16:27 (https://www.youtube.com/watch?v=Ee-K84wcxLM) – Südrawell wird als eine der vier alten Götter in Abyssalis genannt, die Fleischweberin, eine federhafte Kreatur, die nur Unheil bringt.
-[P-44b] Session 2026-03-31 @ 01:15:01–01:16:27 (https://www.youtube.com/watch?v=Ee-K84wcxLM) – Erklärung der vier alten Götter in Abyssalis durch den Sprecher, einschließlich der Nennung Südrawells und der Warnung vor den Einflüssen der Götter.
+[P-44a] Session 2026-03-31 @ 01:16:27 – https://www.youtube.com/watch?v=Ee-K84wcxLM

@@ -9,7 +9,7 @@ timestamp: '2025-10-07T00:00:00Z'
 id: NPC_LIA
 ---
 
-Lia ist eine Magierin und Schwester von [Arus](/npcs/arus.md). Sie ist ebenfalls gestresst und erklärt, dass sie den Golem beschworen haben, um gegen [Untote](/factions/belorus_untotenarmee.md) zu helfen. Sie ist beeindruckt von [Dodo](/characters/dodo.md) und zeigt Interesse an ihm. Sie bereitet die Sprengung der [Mine](/locations/verlassene_mine_an_der_farm.md) vor, um den Golem zu stoppen.
+Lia ist eine Magierin und Schwester von [Arus](/npcs/arus.md). Sie ist ebenfalls gestresst und erklärt, dass sie den Golem beschworen haben, um gegen [Untote](/factions/belorus_untotenarmee.md) zu helfen. Sie ist beeindruckt von [Dodo](/characters/dodo.md) und zeigt Interesse an ihm. Sie bereitet die Sprengung der Mine vor, um den Golem zu stoppen.
 
 # Belege
 

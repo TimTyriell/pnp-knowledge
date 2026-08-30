@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Der Seraph (vierter)
-description: Der Seraph (vierter) ist ein Wesen, das bei einer Begegnung am Fuß eines
-  Berges gegen die Gruppe auftritt. Er wird als vierter in einer Rei…
+description: Der Seraph (vierter) ist ein Seraph, der der Gruppe am Fuße des Berges
+  gegenübertrat. Lunara wandte gegen ihn den *Splitter-Spruch* an; die…
 tags:
 - npcs
 timestamp: '2026-05-19T00:00:00Z'
@@ -13,21 +13,21 @@ aliases:
 status: disputed
 ---
 
-[Der Seraph](/npcs/der_seraph.md) (vierter) ist ein Wesen, das bei einer Begegnung am Fuß eines Berges gegen die Gruppe auftritt. Er wird als vierter in einer Reihe von Seraphim genannt, die an diesem Schauplatz erscheinen. Sein Schicksal ist in den Quellen nicht eindeutig überliefert: Die Aussagen reichen von seiner Vernichtung bis zu einem Sturz in die Tiefe.
+[Der Seraph](/npcs/der_seraph.md) (vierter) ist ein Seraph, der der Gruppe am Fuße des Berges gegenübertrat. [Lunara](/characters/lunara_velora.md) wandte gegen ihn den *Splitter-Spruch* an; die Belege schildern den Ausgang der Begegnung unterschiedlich.
 
-## Einordnung
+## Begegnung am Fuße des Berges
 
-Die Belege nennen einen ersten und einen vierten Seraph, was auf mindestens vier dieser Wesen hindeutet. Der erste Seraph konfrontiert die Gruppe und wird von Lunara mit dem Splitter-Spruch vernichtet. Der vierte Seraph gehört derselben Gruppe von Gegnern an; seine Begegnung mit Lunara wird gesondert überliefert.
+Der Seraph konfrontierte die Gruppe am Fuße des Berges. [P-50a] Lunara setzte gegen ihn den *Splitter-Spruch* ein, durch den er laut Beleg vernichtet wurde. [P-50a]
 
-## Konfrontation mit Lunara
+## Sturz in die Tiefe
 
-[Lunara](/characters/lunara_velora.md) spielt in beiden Überlieferungen eine zentrale Rolle. Nach einem Beleg wird der vierte Seraph von Lunara mit dem Splitter-Spruch vernichtet. Nach einem anderen Beleg greift er Lunara an und stürzt mit ihr in die Tiefe; sein Schicksal bleibt dabei ungewiss. Die genaue Abfolge und der Zusammenhang dieser beiden Ereignisse sind nicht geklärt.
+Der Seraph griff Lunara an und stürzte mit ihr in die Tiefe; sein Schicksal ist ungewiss. [P-50b]
 
 # Belege
 
-[P-50a] Session 2026-05-19, 02:15:04 – <https://www.youtube.com/watch?v=xEcGJeaNixI>
-[P-50b] Session 2026-05-19, 02:30:33 – <https://www.youtube.com/watch?v=xEcGJeaNixI>
+[P-50a] Session 2026-05-19, 02:15:04 – https://www.youtube.com/watch?v=xEcGJeaNixI
+[P-50b] Session 2026-05-19, 02:30:33 – https://www.youtube.com/watch?v=xEcGJeaNixI
 
 # Offene Konflikte
 
-- Beleg [P-50a] beschreibt den Seraph als durch den Splitter-Spruch vernichtet; Beleg [P-50b] beschreibt ihn als Angreifer, der mit Lunara in die Tiefe stürzt und dessen Schicksal ungewiss bleibt.
+- Beleg [P-50a] berichtet, dass der Seraph durch Lunaras *Splitter-Spruch* vernichtet wurde; Beleg [P-50b] berichtet, dass er Lunara angriff und mit ihr in die Tiefe stürzte, wobei sein Schicksal ungewiss blieb. Die Belege widersprechen sich darin, ob der Seraph den *Splitter-Spruch* überlebt hat.

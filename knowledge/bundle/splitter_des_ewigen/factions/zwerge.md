@@ -12,7 +12,7 @@ subtype: Volk
 
 # Zwerge
 
-Die Zwerge der [Festung](/locations/festung.md) sind ein stolzes Volk, das die dortige [Mine](/locations/verlassene_mine_an_der_farm.md) wegen der wertvollen Erze für sich beansprucht. Sie befinden sich im Konflikt mit den [Goblins](/npcs/pilz_goblins.md) und suchen eine Lösung, ohne ihr Territorium aufzugeben.
+Die Zwerge der [Festung](/locations/festung.md) sind ein stolzes Volk, das die dortige Mine wegen der wertvollen Erze für sich beansprucht. Sie befinden sich im Konflikt mit den [Goblins](/npcs/pilz_goblins.md) und suchen eine Lösung, ohne ihr Territorium aufzugeben.
 
 ## Konflikt mit den Goblins
 

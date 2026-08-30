@@ -10,7 +10,7 @@ id: EVENT_KAMPF_GEGEN_DEN_UNTOTEN_KRIEGER_UND_DEN_SCHAEDEL
 subtype: Kampf
 ---
 
-Nach der Beschwörung durch [Hans](/npcs/hans_soldat_aus_breska.md) kämpft die Gruppe gegen einen untoten Krieger und einen schwebenden Schädel. Die Gegner sind durch zwei Statuen geschützt, die [Esterossa](/characters/esterossa.md) zerstört. [Dodo](/characters/dodo.md) gelingt es, den Krieger mit seinem [Streitkolben](/items/streitkolben_von_dodo.md) zu besiegen, [Rotunas](/characters/rotunas.md) zerstört den Schädel.
+Nach der Beschwörung durch Hans kämpft die Gruppe gegen einen untoten Krieger und einen schwebenden Schädel. Die Gegner sind durch zwei Statuen geschützt, die [Esterossa](/characters/esterossa.md) zerstört. [Dodo](/characters/dodo.md) gelingt es, den Krieger mit seinem [Streitkolben](/items/streitkolben_von_dodo.md) zu besiegen, [Rotunas](/characters/rotunas.md) zerstört den Schädel.
 
 # Belege
 

@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Harloen
-description: 'Harloen ist eine Person aus Ehrenfels, die in den Kampagnenaufzeichnungen
-  in zwei unterschiedlichen Rollen erscheint: als Priester der Kape…'
+description: 'Harloen ist ein Bewohner von Ehrenfels, der den Helden in zwei verschiedenen
+  Funktionen begegnet: als Priester der Kapelle der Stadt und al…'
 tags:
 - npcs
 timestamp: '2026-08-04T00:00:00Z'
@@ -13,23 +13,23 @@ aliases:
 status: disputed
 ---
 
-Harloen ist eine Person aus [Ehrenfels](/locations/ehrenfels.md), die in den Kampagnenaufzeichnungen in zwei unterschiedlichen Rollen erscheint: als Priester der [Kapelle von Ehrenfels](/locations/kapelle_von_ehrenfels.md) und als Elite-Wache der Stadt. Die Belege lassen nicht eindeutig erkennen, ob er beide Ämter innehatte oder ob es sich um einen Rollenwechsel handelt. Über Herkunft und weitere Lebensumstände ist nichts bekannt.
+Harloen ist ein Bewohner von [Ehrenfels](/locations/ehrenfels.md), der den Helden in zwei verschiedenen Funktionen begegnet: als Priester der [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) der Stadt und als einer ihrer Elite-Wachen. Die Belege lassen offen, wie diese beiden Rollen zusammenhängen oder ob ein Rollenwechsel stattgefunden hat.
 
-## Begegnungen mit der Gruppe
+## Auftreten gegenüber den Helden
 
-Bei der ersten Begegnung in der [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) von Ehrenfels warnt Harloen die Helden vor dem neuen Fürsten [Vityus](/npcs/vityus.md) und dem Einfluss von [Nerash](/deities/nerash.md). Er sucht das Gespräch mit der Gruppe, erklärt aber zugleich, dass er nicht bereit ist, seinem Gott abzuschwören.
+In der ersten bekannten Begegnung tritt Harloen als Priester der [Kapelle von Ehrenfels](/locations/kapelle_von_ehrenfels.md) auf. Er warnt die Helden vor dem neuen Fürsten [Vityus](/npcs/vityus.md) und dem Einfluss von [Nerash](/deities/nerash.md). Er ist nicht bereit, seinem Gott abzuschwören, und sucht das Gespräch mit der Gruppe.
 
-In einer späteren Begegnung tritt Harloen als Elite-Wache von Ehrenfels auf. Er flüstert [Lindo](/characters/lindo_laut.md) zu, die neuen Götter existierten vielleicht gar nicht, und geht dann weiter. Nähere Umstände dieser Begegnung werden aus den Belegen nicht deutlich.
+In einer späteren Begegnung erscheint er dagegen als eine der Elite-Wachen von Ehrenfels. Er flüstert [Lindo](/characters/lindo_laut.md) zu, dass die neuen Götter vielleicht gar nicht existieren, und geht dann weiter.
 
-## Haltung
+## Haltung zu den Göttern
 
-Harloen steht den neuen Göttern und der neuen Herrschaft in Ehrenfels kritisch gegenüber: Er warnt vor Vityus und Nerash, bleibt aber seinem eigenen Gott treu. Seine spätere Äußerung gegenüber Lindo, die Existenz der neuen Götter sei ungewiss, fügt sich in diese skeptische Haltung ein.
+Aus beiden Begegnungen ergibt sich das Bild eines Mannes, der seinem angestammten Gott treu bleibt und die Existenz der neuen Götter anzweifelt. Inwieweit er diese Haltung öffentlich vertritt, ist nicht belegt; die warnenden Worte an die Helden deuten jedoch darauf hin, dass er die Lage in Ehrenfels als bedrohlich einschätzt.
 
 # Belege
 
-[S1-01-A] Session 2026-07-29, 00:31:36, https://www.youtube.com/watch?v=umGyKLkefJI
-[S1-02-A] Session 2026-08-04, 02:05:09, https://www.youtube.com/watch?v=qRj2t3wQHfs
+[S1-01-A] Session 2026-07-29, 00:31:36 — https://www.youtube.com/watch?v=umGyKLkefJI
+[S1-02-A] Session 2026-08-04, 02:05:09 — https://www.youtube.com/watch?v=qRj2t3wQHfs
 
 # Offene Konflikte
 
-- Beleg 1 bezeichnet Harloen als Priester der Kapelle von Ehrenfels; Beleg 2 bezeichnet ihn als Elite-Wache von Ehrenfels. Ob es sich um einen Rollenwechsel handelt oder die Belege unterschiedliche Aspekte derselben Person beschreiben, ist nicht geklärt.
+- Rollenwiderspruch: Beleg [S1-01-A] beschreibt Harloen als Priester der Kapelle von Ehrenfels, Beleg [S1-02-A] als eine der Elite-Wachen von Ehrenfels. Die Quellen bieten keine Erklärung für einen Rollenwechsel oder eine etwaige Doppelfunktion.

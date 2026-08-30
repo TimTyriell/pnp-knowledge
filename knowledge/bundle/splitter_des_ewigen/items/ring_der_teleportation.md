@@ -17,7 +17,7 @@ aliases:
 
 # Ring der Teleportation
 
-Der **Ring der Teleportation**, auch als **Lindo Lauts Ring** bekannt, ist ein magischer Ring im Besitz von [Lindo Laut](/characters/lindo_laut.md). Lindo aktiviert den Ring, um seine Kräfte zu verstärken. Der Ring wird einmal pro Session aktiviert.
+Der **Ring der Teleportation**, auch als **[Lindo Lauts](/characters/lindo_laut.md) Ring** bekannt, ist ein magischer Ring im Besitz von [Lindo Laut](/characters/lindo_laut.md). Lindo aktiviert den Ring, um seine Kräfte zu verstärken. Der Ring wird einmal pro Session aktiviert.
 
 ## Funktionsweise
 

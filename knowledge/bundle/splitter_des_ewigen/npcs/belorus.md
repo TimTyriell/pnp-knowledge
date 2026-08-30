@@ -15,7 +15,7 @@ aliases:
 
 ## Überblick
 
-Belorus der Stille ist ein schwarzer Paladin und ehemaliger General des gefallenen Königreichs Zebros. Einst ein Paladin im Dienst von [König Zebros](/factions/koenigreich_zebros.md), brach er seinen Eid und wurde zum Todespaladin (Death Knight), der über eine Burg in Zebros herrscht und [Untote](/factions/belorus_untotenarmee.md) erhebt. Er führt eine riesige untote Armee an, die aus dem Gebiet des früheren Königreichs Zebros ins Tal zieht. Sein Beiname *der Stille* verweist auf sein lautloses, unheimliches Auftreten — er bewegt sich ohne Geräusche und kommuniziert teils telepathisch.
+Belorus der Stille ist ein schwarzer Paladin und ehemaliger General des gefallenen Königreichs Zebros. Einst ein Paladin im Dienst von König Zebros, brach er seinen Eid und wurde zum Todespaladin (Death Knight), der über eine Burg in Zebros herrscht und Untote erhebt. Er führt eine riesige untote Armee an, die aus dem Gebiet des früheren Königreichs Zebros ins Tal zieht. Sein Beiname *der Stille* verweist auf sein lautloses, unheimliches Auftreten — er bewegt sich ohne Geräusche und kommuniziert teils telepathisch.
 
 Belorus ist kein göttliches Wesen, sondern ein mächtiger NPC und einer der zentralen Gegenspieler der Gruppe. Er sucht nach einem Gefäß für den alten Gott [Vasul](/deities/vharzul.md) und glaubt, dieses in [Lindo Laut](/characters/lindo_laut.md) gefunden zu haben. Sein Ziel ist es, die alten Götter zu vernichten.
 
@@ -51,7 +51,7 @@ Belorus befehligt eine riesige untote Armee. Seine Untoten sind ihm bedingungslo
 - **Lindo Laut**: Belorus' zentrales Ziel. Er glaubt, dass Lindo Laut ein Gefäß für den alten Gott Vasul ist, und stellt ihm ein Ultimatum. Letztlich lässt er sich von Lindo Lauts Rede überzeugen und akzeptiert die Gruppe als nicht korrumpiert.
 - **Cookie und Dodo**: Die beiden haben aus Belorus' Festung ein Tagebuch gestohlen. Belorus sucht nach ihnen und dem gestohlenen Gegenstand.
 - **[Rotunas](/characters/rotunas.md)**: Belorus' Untote zeigen auf Rotunas als „den Mächtigsten" der Gruppe und vermuten in ihm den Anführer.
-- **[Hans](/npcs/hans_soldat_aus_breska.md)**: Ein Soldat, den Belorus mit einer Nachricht zu Lindo Laut schickt.
+- **Hans**: Ein Soldat, den Belorus mit einer Nachricht zu Lindo Laut schickt.
 - **Vasul**: Ein alter Gott, dessen Gefäß Belorus sucht. Belorus will die alten Götter vernichten.
 - **Breska**: [Die Stadt](/locations/ehrenfels.md) wurde von Belorus' Untotenarmee zerstört.
 
@@ -67,7 +67,7 @@ Die Gruppe entkommt aus dem Gebiet von Zebros und glaubt, Belorus dem Stillen �
 
 ### Begegnung mit Belorus' Untoten (Session 2025-09-30)
 
-Belorus' Untote greifen die Gruppe an. Eine Geistergestalt zeigt auf Rotunas und fragt telepathisch: „Seid ihr also der Anführer?" Die Untoten geben sich geschlagen und erklären: „Unser General hat das Zeitliche gesegnet und ihr habt uns und unseren Meister beeindruckt. Wir wollen euch für dieses Mal verschonen." Auf die Frage nach ihrem Meister antworten sie: „Unser Meister ist Belorus der Stille." Belorus sucht zu diesem Zeitpunkt nach zwei Personen und einem gestohlenen Gegenstand — die Gruppe vermutet, dass es sich um Cookie und Dodo handelt.
+Belorus' Untote greifen die Gruppe an. Eine Geistergestalt zeigt auf Rotunas und fragt telepathisch: „Seid ihr also der Anführer?" [Die Untoten](/factions/belorus_untotenarmee.md) geben sich geschlagen und erklären: „Unser General hat das Zeitliche gesegnet und ihr habt uns und unseren Meister beeindruckt. Wir wollen euch für dieses Mal verschonen." Auf die Frage nach ihrem Meister antworten sie: „Unser Meister ist Belorus der Stille." Belorus sucht zu diesem Zeitpunkt nach zwei Personen und einem gestohlenen Gegenstand — die Gruppe vermutet, dass es sich um Cookie und Dodo handelt.
 
 ### Ultimatum an Lindo Laut (Session 2026-01-13)
 
@@ -83,7 +83,7 @@ Belorus' Untotenarmee hat Breska zerstört und die Bewohner getötet. Die Gruppe
 
 ## Offene Fragen
 
-- Was genau geschah mit König Zebros und dem Königreich Zebros, das Belorus' Eidbruch auslöste?
+- Was genau geschah mit König Zebros und dem [Königreich Zebros](/factions/koenigreich_zebros.md), das Belorus' Eidbruch auslöste?
 - Was steht in dem Tagebuch, das Cookie und Dodo aus Belorus' Festung gestohlen haben, und warum ist es ihm so wichtig?
 - Was ist der Schutzkristall, der Belorus in der ersten Begegnung vertrieben hat, und woher stammt seine Macht?
 - Welche Verbindung besteht zwischen Belorus und dem alten Gott Vasul — dient er ihm, oder will er ihn nur als Mittel zum Zweck nutzen, um die alten Götter zu vernichten?

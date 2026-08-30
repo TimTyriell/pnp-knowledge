@@ -28,7 +28,7 @@ Der **Sumpf vor dem Goblin-Dorf** ist das Feuchtgebiet, durch das die Gruppe rei
 
 Die natürlichen Gefahren des Sumpfs sind tückisch: Moderlöcher und unbeständiges Wasser machen die Durchquerung zäh, dazu kommen giftige Kreaturen. Im Sumpf hausen die Goblins: Ihr Außenlager besteht aus Zelten aus Häuten, umgeben von den Leichen überfallener Händler und Reisender. Das eigentliche Dorf liegt dahinter und ist von einer Palisade aus angespitzten Stämmen umgeben.
 
-In einer Nacht zeigt sich Lugasch, der Lügner, ein kleiner Gott der Goblins: Er erschien als hohe, schmale Gestalt mit Ziegenkopf zwischen zwei toten Bäumen am Rand des Feuerscheins und wich erst vor einem brennenden Ast zurück. Er spielt mit denen, die in seinen Wald kommen – so ließ er bei einer eingestürzten Wachturmruine Steine auf [Dodo](/characters/dodo.md) niedergehen.
+In einer Nacht zeigt sich [Lugasch](/deities/lugasch.md), der Lügner, ein kleiner Gott der Goblins: Er erschien als hohe, schmale Gestalt mit Ziegenkopf zwischen zwei toten Bäumen am Rand des Feuerscheins und wich erst vor einem brennenden Ast zurück. Er spielt mit denen, die in seinen Wald kommen – so ließ er bei einer eingestürzten Wachturmruine Steine auf [Dodo](/characters/dodo.md) niedergehen.
 
 ## Rolle im Kampagnenverlauf
 

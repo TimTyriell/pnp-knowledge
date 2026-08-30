@@ -101,7 +101,7 @@ Die Gruppe stellt fest, dass die [Kultisten](/factions/kultisten.md) Anhänger V
 
 ### Wiedererlangung der physischen Form (Session 2025-09-06)
 
-Vhar'Zul offenbart sich der Gruppe. Er hat die Persönlichkeit von Tyrex übernommen und teleportiert die Gruppe in eine Zwischenebene des Circle Below, um die Fähre zu finden und seinen Platz zurückzuerobern. Er benötigt eine physische Form, die er durch Opferung eines lebenden Wesens erhält. Am [Ende](/locations/ende_jenseits_der_orkgebiete.md) verlässt er die Gruppe auf einer Fähre.
+Vhar'Zul offenbart sich der Gruppe. Er hat die Persönlichkeit von Tyrex übernommen und teleportiert die Gruppe in eine Zwischenebene des Circle Below, um die Fähre zu finden und seinen Platz zurückzuerobern. Er benötigt eine physische Form, die er durch Opferung eines lebenden Wesens erhält. Am Ende verlässt er die Gruppe auf einer Fähre.
 
 ### Statuen in Steinbachtal (Session 2025-09-09)
 

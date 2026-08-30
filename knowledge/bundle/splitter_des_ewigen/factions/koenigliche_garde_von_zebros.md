@@ -1,8 +1,8 @@
 ---
 type: Faction
 title: Königliche Garde von Zebros
-description: Die Königliche Garde von Zebros war die Elitetruppe des Königreichs Zebros.
-  Sie bestand aus den Elite-Soldaten des Reiches und stand im Die…
+description: Die Königliche Garde von Zebros war die Elitetruppe des alten Königreichs
+  Zebros. Sie bestand aus den erlesensten Soldaten des Reiches und…
 tags:
 - factions
 timestamp: '2026-08-18T00:00:00Z'
@@ -10,16 +10,17 @@ id: FACTION_KOENIGLICHE_GARDE_VON_ZEBROS
 subtype: Armee
 ---
 
-Die **Königliche Garde von [Zebros](/factions/koenigreich_zebros.md)** war die Elitetruppe des [Königreichs Zebros](/factions/koenigreich_zebros.md). Sie bestand aus den Elite-Soldaten des Reiches und stand im Dienst der Krone. Einziges namentlich bekanntes Mitglied ist [Edmund](/npcs/sir_edmund.md). Im Götterkrieg kämpfte die Garde bis zum Schluss; nach dem Untergang des Königreichs verlieren sich ihre Spuren.
+Die Königliche Garde von Zebros war die Elitetruppe des alten Königreichs Zebros. Sie bestand aus den erlesensten Soldaten des Reiches und kämpfte im [Krieg](/characters/krieg.md) der Götter bis zum Schluss. Ihr Schicksal ist untrennbar mit dem Untergang Zebros' verbunden; ein Fortbestehen über das Ende des Krieges hinaus ist nicht überliefert.
 
-## Rolle und Stellung
+## Im Götterkrieg
 
-Über die Garde ist nur wenig überliefert. Die Belege bezeichnen sie als Elite-Soldaten des Königreichs Zebros; der Name „Königliche Garde" weist sie als dem Herrscherhaus unmittelbar zugeordnete Truppe aus. Ihre genauen Aufgaben, ihre Stärke und ihre Organisation sind nicht bekannt. [Edmund](/npcs/sir_edmund.md) wird als einziger Angehöriger namentlich genannt.
+Die Garde wird ausdrücklich mit dem Krieg der Götter in Verbindung gebracht, in dem das [Königreich Zebros](/factions/koenigreich_zebros.md) zerstört wurde. Die Gardisten kämpften bis zum Schluss und teilten damit das Schicksal ihres Reiches. Vom Königreich selbst, einschließlich seiner Hauptstadt Zebros, blieben nur Ruinen und Relikte erhalten; allein der Berg Zebros überstand den Untergang und steht bis heute. An die Garde erinnert heute vor allem ihre Verbindung zu diesem untergegangenen Reich.
 
-## Die Garde im Götterkrieg
+## Bekannte Angehörige
 
-Im Götterkrieg kämpfte die Garde aufseiten des Königreichs Zebros — ausdrücklich **bis zum Schluss**. Das Königreich wurde in diesem [Krieg](/characters/krieg.md) zerstört; von ihm sind heute nur noch Ruinen und Relikte erhalten. Über das Schicksal der Garde nach dem Krieg gibt es keine Angaben; angesichts des vollständigen Untergangs des Königreichs ist ein Fortbestand der Einheit nicht ersichtlich.
+Als einer ihrer Soldaten wird [Edmund](/npcs/sir_edmund.md) genannt, der in den Reihen der Garde im Götterkrieg kämpfte.
 
 # Belege
 
-1. Session 2026-08-18 @ 01:57:32 – https://www.youtube.com/watch?v=10swvSz6k7U
+1. Session 2026-08-18 @ 01:57:32, https://www.youtube.com/watch?v=10swvSz6k7U
+2. Kanon_Entscheidungen.md (Kampagnen-Unterlage, Festlegung zu Zebros)

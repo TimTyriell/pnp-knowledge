@@ -10,7 +10,7 @@ id: EVENT_BESCHWOERUNG_DES_UNTOTEN_KRIEGERS
 subtype: Ritual
 ---
 
-[Hans](/npcs/hans_soldat_aus_breska.md) übergibt [Rotunas](/characters/rotunas.md) einen [Seelenstein](/items/seelenstein_des_rotunas.md), der explodiert und einen untoten Krieger und einen Schädel beschwört. Dies geschieht, nachdem Rotunas sich als [Lindo Laut](/characters/lindo_laut.md) ausgegeben hat.
+Hans übergibt [Rotunas](/characters/rotunas.md) einen Seelenstein, der explodiert und einen untoten Krieger und einen Schädel beschwört. Dies geschieht, nachdem Rotunas sich als [Lindo Laut](/characters/lindo_laut.md) ausgegeben hat.
 
 # Belege
 

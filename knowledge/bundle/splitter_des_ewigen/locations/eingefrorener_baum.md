@@ -10,7 +10,7 @@ id: LOC_EINGEFRORENER_BAUM
 subtype: Wildnis
 ---
 
-Großer, eisbedeckter Baum in der Ferne, der von der Gruppe gesichtet wird. Am [Ende](/locations/ende_jenseits_der_orkgebiete.md) der Session fallen blaue Tropfen vom Himmel in seine Nähe, was auf ein Ereignis hindeutet, das die Gruppe nicht näher untersucht.
+Großer, eisbedeckter Baum in der Ferne, der von der Gruppe gesichtet wird. Am Ende der Session fallen blaue Tropfen vom Himmel in seine Nähe, was auf ein Ereignis hindeutet, das die Gruppe nicht näher untersucht.
 
 # Belege
 

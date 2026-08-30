@@ -1,8 +1,8 @@
 ---
 type: Item
 title: Schriftrolle von Nerash
-description: 'Die Schriftrolle von Nerash ist ein magisches Artefakt, das im Mittelpunkt
-  zweier Ereignisse stand: ihrer ursprünglichen Bestimmung, Vasul…'
+description: Die Schriftrolle von Nerash ist ein magisches Artefakt, das in der Vergangenheit
+  der Gruppe bereits zum Einsatz kam und offenbar eine zerst…
 tags:
 - items
 timestamp: '2026-07-29T00:00:00Z'
@@ -13,17 +13,17 @@ aliases:
 - Schriftrolle von Nehrasch
 ---
 
-Die **Schriftrolle von Nerash** ist ein magisches Artefakt, das im Mittelpunkt zweier Ereignisse stand: ihrer ursprünglichen Bestimmung, [Vasul](/deities/vharzul.md) aus dem Körper von [Lindo Laut](/characters/lindo_laut.md) zu brennen, und ihrer tatsächlichen Verwendung durch Lindo Laut gegen den [Dämon der Hybris](/npcs/daemon_der_hybris.md). Zudem wurde sie in der Vergangenheit von der Gruppe benutzt, was bei [Lunara](/characters/lunara_velora.md) die Frage nach [Nerashs](/deities/nerash.md) Wissen aufwarf.
+Die **Schriftrolle von [Nerash](/deities/nerash.md)** ist ein magisches Artefakt, das in der Vergangenheit der Gruppe bereits zum Einsatz kam und offenbar eine zerstörerische Wirkung gegen [Dämonen](/factions/daemonen.md) entfaltet. Ursprünglich war sie dazu gedacht, [Vasul](/deities/vharzul.md) aus dem Körper von [Lindo Laut](/characters/lindo_laut.md) zu brennen. [Lindo Laut](/characters/lindo_laut.md) selbst verwendet sie schließlich, um den [Dämon der Hybris](/npcs/daemon_der_hybris.md) zu vernichten.
 
 ## Zweck und Verwendung
 
-Die Schriftrolle war ursprünglich dazu gedacht, den Dämon [Vasul](/deities/vharzul.md) aus dem Körper von Lindo Laut zu brennen. In der tatsächlichen Verwendung setzte Lindo Laut die Schriftrolle jedoch ein, um den Dämon der Hybris zu vernichten.
+Der ursprüngliche Zweck der Schriftrolle war es, [Vasul](/deities/vharzul.md) aus Lindo Laus Körper zu brennen. Dieser Plan wurde jedoch nicht wie vorgesehen umgesetzt: Stattdessen setzt Lindo Laut die Schriftrolle ein, um den Dämon der Hybris zu vernichten. Die genauen Umstände dieser Nutzung sind nicht näher belegt.
 
-## Nutzung durch die Gruppe und Nerashs Wissen
+## Verbindung zu Nerash
 
-Die Schriftrolle wurde in der Vergangenheit von der Gruppe benutzt. Lunara fragt sich, ob Nerash von dieser Nutzung weiß.
+Die Schriftrolle ist nach Nerash benannt, über den ansonsten nichts bekannt ist. Die Gruppe hat die Schriftrolle in der Vergangenheit benutzt; [Lunara](/characters/lunara_velora.md) fragt sich seither, ob Nerash von dieser Verwendung weiß. Ob Nerash der ursprüngliche Besitzer, der Autor oder auf andere Weise mit der Schriftrolle verbunden ist, bleibt offen.
 
 # Belege
 
-[P-55] [Session 2026-07-21 @ 01:33:27](https://www.youtube.com/watch?v=KNV4oNGJ0tw) – Ursprüngliche Bestimmung und tatsächliche Verwendung der Schriftrolle.
-[S1-01-A] [Session 2026-07-29 @ 01:15:41](https://www.youtube.com/watch?v=umGyKLkefJI) – Nutzung durch die Gruppe; Lunaras Frage zu Nerashs Wissen.
+[P-55] Session 2026-07-21 @ 01:33:27 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
+[S1-01-A] Session 2026-07-29 @ 01:15:41 (https://www.youtube.com/watch?v=umGyKLkefJI)

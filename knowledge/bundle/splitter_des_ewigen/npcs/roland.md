@@ -1,70 +1,59 @@
 ---
 type: NPC
 title: Roland
-description: Roland ist der Älteste und Sprecher der Flüchtlinge aus Breska, die sich
-  nach der Zerstörung ihrer Stadt vor den Toren der Stadt versammelt…
+description: Roland ist der Älteste und Sprecher der Flüchtlinge aus Breska. Er tritt
+  als zentrale Figur der Flüchtlingsgruppe auf, die vor den Toren de…
 tags:
 - npcs
 timestamp: '2026-01-13T00:00:00Z'
 id: NPC_ROLAND
 ---
 
-# Roland
-
 ## Überblick
 
-Roland ist der Älteste und Sprecher der [Flüchtlinge aus Breska](/factions/fluechtlinge_aus_breska.md), die sich nach der Zerstörung ihrer Stadt vor den Toren der Stadt versammelt haben. Er ist keine offizielle Autorität — wie er selbst betont: „Anführer nicht, aber er ist hier der Älteste, praktisch. Der Sprecher? Ja, er spricht für die meisten von uns." —, aber er hat sich als die Stimme der Gemeinschaft etabliert, die für die Gruppe der Vertriebenen spricht und Entscheidungen für sie trifft. Die Gruppe kennt ihn von früher, als sie die Stadt vor [Goblins](/npcs/pilz_goblins.md) verteidigten.
+Roland ist der Älteste und Sprecher der [Flüchtlinge aus Breska](/factions/fluechtlinge_aus_breska.md). Er tritt als zentrale Figur der Flüchtlingsgruppe auf, die vor den Toren der Stadt [Breska](/locations/breska.md) lagert, nachdem diese von [Goblins](/npcs/pilz_goblins.md) bedroht wurde. Er ist kein offizieller Anführer, sondern wird von den anderen als Ältester und Sprecher respektiert: „Ja, Anführer nicht, aber er ist hier der Älteste, praktisch. Der Sprecher? Ja, er spricht für die meisten von uns.“ [P-22]
 
-Roland stammt aus einer schriftkundigen Familie, die viele Dinge niedergeschrieben hat. Er selbst besitzt keine dieser Schriftstücke mehr, aber vieles ist in seinen Gedanken geblieben. Diese familiäre Tradition macht ihn zu einer wichtigen Quelle für das Wissen über die alte Welt und die Geschichte der [Splitterwelt](/domains/splitterwelt.md).
+Roland kennt die Abenteurergruppe von früher, als diese die Stadt vor Goblins verteidigten. [P-22] Er ist über die Wochen hinweg von einem verzweifelten, grimmigen Mann zu einem deutlich entspannteren Wächter geworden, der im ausgebauten Lager der Flüchtlinge lebt. [P-33]
 
 ## Rolle in der Kampagne
 
-Roland ist der zentrale Ansprechpartner der Heldengruppe für die Belange der Flüchtlinge aus [Breska](/locations/breska.md). Über mehrere Sessions hinweg begleitet die Gruppe die Entwicklung des Lagers, und Roland ist dabei die Konstante, die die Gemeinschaft zusammenhält.
+Roland ist der wichtigste Ansprechpartner der Gruppe innerhalb der Flüchtlingsgemeinschaft. Er ist es, an den die Gruppe verwiesen wird, wenn es um Lösungen für die Flüchtlinge geht: „Falls ihr eine coole Idee habt, uns irgendwie hier rauszuholen, dann redet doch mal mit Roland. Er ist sicherlich in der Lage, uns irgendwie zu mobilisieren.“ [P-22]
 
-In der ersten Begegnung ist er derjenige, an den die Gruppe verwiesen wird, als es um Lösungen für die verzweifelte Lage der Flüchtlinge geht. Eine Frau aus dem Lager sagt dazu: „Falls ihr eine coole Idee habt, uns irgendwie hier rauszuholen, dann redet doch mal mit Roland. Er ist sicherlich in der Lage, uns irgendwie zu mobilisieren."
+Er lässt sich von [Rotunas](/characters/rotunas.md) überzeugen, mit den Flüchtlingen zum [Banditenlager](/locations/banditenlager_der_silberkerne.md) zu ziehen, und nimmt Gold für Nahrung und Waffen an. Dabei vereinbart er ein Treffen in zehn Tagen. [P-22] Diese Entscheidung führt dazu, dass die Flüchtlinge sich auf den Weg machen und dabei von Untoten angegriffen werden. [P-23]
 
-Als die Gruppe später eine Karawane organisiert, ist Roland derjenige, der sie anführt und verteidigt. Er ist es auch, der nach der Rückkehr ins Lager die Geschichte der Splitterwelt erzählt und damit zentrales Wissen über die Weltordnung der Kampagne vermittelt. Am [Ende](/locations/ende_jenseits_der_orkgebiete.md) der bisherigen Chronologie steht er als entspannter Wächter im ausgebauten Lager, das durch die Bemühungen der Gruppe zu einem geschützten Ort geworden ist.
+Später ist Roland derjenige, der der Gruppe die Geschichte der [Splitterwelt](/domains/splitterwelt.md) erzählt und offenbart, dass niemand sich an die Zeit vor elf Jahren erinnern kann. [P-24] Damit liefert er einen zentralen Hinweis auf die Hintergründe der Welt und ihrer Geschichte.
 
 ## Wichtige Merkmale
 
-Roland ist ein Mann, der unter enormem Druck steht. In der ersten Begegnung wird er als verzweifelt beschrieben, auf der Suche nach einer Lösung für die Flüchtlinge. Seine Stimme hat eine „tiefe Stimmerschwäche". Er ist blutverschmiert und außer Atem, als er nach dem Angriff auf die Karawane die Gruppe erreicht — ein Bild, das seine Rolle als jemand zeigt, der selbst Hand anlegt und nicht nur redet.
+Roland hat eine tiefe Stimmerschwäche, die bei seiner aufgeregten Ansprache der Gruppe auffällt. [P-23] Er ist schriftgewandt, da seine Familie „schon immer sehr schriftgewandt“ war und viele Dinge niedergeschrieben hat. [P-24] Er besitzt zwar keine dieser Schriftstücke mehr, aber vieles ist in seinen Gedanken geblieben. [P-24]
 
-Er ist pragmatisch: Er lässt sich von [Rotunas](/characters/rotunas.md) überzeugen, zum [Banditenlager](/locations/banditenlager_der_silberkerne.md) zu ziehen, und nimmt Gold für Nahrung und Waffen an. Er vereinbart ein Treffen in zehn Tagen — eine Entscheidung, die zeigt, dass er bereit ist, unkonventionelle Wege zu gehen, wenn sie seiner Gemeinschaft helfen.
-
-Roland ist ein Geschichtenerzähler und Bewahrer von Wissen. Seine Familie war „schon immer sehr schriftgewandt", und er hat vieles von ihr übernommen. Auch wenn er die Schriftstücke nicht mehr besitzt, trägt er das Wissen in sich. Er ist sich der Grenzen seines Wissens bewusst — „auch wenn ich nicht weiß, was davon wahr ist oder gelogen" —, aber er teilt es bereitwillig mit der Gruppe.
-
-Gegenüber Fremden ist er zunächst misstrauisch und grimmig. Die Gruppe erlebt ihn über Wochen als „grimmig und murrepetig", eine Haltung, die erst weicht, als sich die Lage des Lagers verbessert. Seine anfängliche Skepsis gegenüber der Gruppe ist verständlich: Die Flüchtlinge sind „schmutzige Leute", die „nichts wert" sind in den Augen der Stadt, und sie müssen gegen die Jagdverbote verstoßen, um zu überleben.
+Sein Auftreten verändert sich im Laufe der Kampagne deutlich: Zunächst ist er verzweifelt und sucht nach einer Lösung für die Flüchtlinge. [P-22] Als er die Gruppe nach dem Angriff auf die Karawane erreicht, ist er blutverschmiert und außer Atem. [P-23] Er lenkt die Wagen und verteidigt sie mit einer Armbrust. [P-23] Nach dem Ausbau des Lagers ist er deutlich entspannter: „Ihr merkt, diese grimmige und murrepetige Art, die er hatte die letzten Wochen, die ist weg. Oder es ist halt so ein bisschen Entspannung gewichen.“ [P-33]
 
 ## Beziehungen und Verbindungen
 
-Die Gruppe kennt Roland von früher, als sie die Stadt vor Goblins verteidigten. Diese gemeinsame Vergangenheit schafft eine Vertrauensbasis, auch wenn die Beziehung anfangs von Rolands Misstrauen geprägt ist.
-
-Zu Rotunas entwickelt sich eine besondere Verbindung: Roland lässt sich von ihm überzeugen, den riskanten Weg zum Banditenlager zu gehen. Diese Entscheidung erweist sich als Wendepunkt für das Lager.
-
-[Nyrella](/characters/nyrella.md) übernimmt später offenbar eine führende Rolle beim Ausbau des Lagers — die Gruppe stellt fest, dass sie „doch einen besseren Job gemacht hat als erwartet" —, während Roland als Wächter oben am Tor steht. Die genaue Arbeitsteilung zwischen den beiden wird aus den Belegen nicht deutlich.
-
-Innerhalb des Lagers ist Roland die zentrale Figur, die die Gemeinschaft repräsentiert. Er bildet mit einer Zwergenfrau und einem weiteren Erwachsenen den Kreis, in dem die Geschichte der Splitterwelt erzählt wird — ein Bild, das seine Rolle als Teil einer Gemeinschaft von Gleichgestellten zeigt, nicht als Herrscher.
+- **Rotunas**: Roland lässt sich von Rotunas überzeugen, zum Banditenlager zu ziehen, und nimmt Gold für Nahrung und Waffen an. [P-22]
+- **[Nyrella](/characters/nyrella.md)**: Sie hat während der Abwesenheit der Gruppe einen besseren Job gemacht als erwartet und das Lager ausgebaut. [P-33]
+- **Die Abenteurergruppe**: Roland kennt sie von früher, als sie die Stadt vor Goblins verteidigten. [P-22] Er ist ihnen dankbar für ihre Hilfe. [P-24]
+- **Die Flüchtlinge aus Breska**: Roland ist ihr Ältester und Sprecher, der für sie spricht und sie mobilisiert. [P-22]
 
 ## Chronologie
 
-**Erste Begegnung (Session 2025-09-17):** Die Gruppe trifft auf die Flüchtlinge vor Breska. Eine Frau verweist sie an Roland als den Ältesten und Sprecher. Roland ist verzweifelt, die Lage der Flüchtlinge ist prekär: wenig Essen, Jagdverbot, Verachtung durch die Stadt. Rotunas überzeugt ihn, zum Banditenlager zu ziehen. Roland nimmt Gold für Nahrung und Waffen an und vereinbart ein Treffen in zehn Tagen.
+**Session 2025-09-17:** Roland ist der Älteste und Sprecher der Flüchtlinge vor Breska. Die Gruppe trifft auf die Flüchtlinge, die wenig zu essen haben und nicht jagen dürfen. Eine Frau der Flüchtlinge verweist die Gruppe an Roland, der sicherlich in der Lage sei, die Flüchtlinge zu mobilisieren. [P-22] Roland lässt sich von Rotunas überzeugen, zum Banditenlager zu ziehen, und nimmt Gold für Nahrung und Waffen an. Er vereinbart ein Treffen in zehn Tagen. [P-22]
 
-**Angriff auf die Karawane (Session 2025-09-23):** Roland rennt blutverschmiert und außer Atem auf die Gruppe zu. Die Karawane wurde von Untoten angegriffen. Roland hat die Wagen gelenkt und sie mit einer Armbrust verteidigt. Er berichtet, dass alle es geschafft haben, aber sie von „einigen Dutzend" Verfolgern gejagt werden. Die Karawane ist auf dem Weg ins Lager und braucht Verteidigung. Nyrella fliegt los, um Hilfe zu holen.
+**Session 2025-09-23:** Roland ist der Anführer der Flüchtlinge aus Breska. Er rennt blutverschmiert und außer Atem auf die Gruppe zu und berichtet, dass die Karawane von Untoten angegriffen wurde. Er hat die Wagen gelenkt und sie mit einer Armbrust verteidigt. Die Karawane ist auf dem Weg nach oben, wird aber von einigen Dutzend Untoten verfolgt. Die Gruppe organisiert daraufhin die Verteidigung. [P-23]
 
-**Die Geschichte der Splitterwelt (Session 2025-09-30):** Am Abend nach der Rückkehr ins Lager bildet sich ein Kreis aus Roland, einer Zwergenfrau, einem weiteren Erwachsenen und der Gruppe. Roland erzählt die Geschichte der Splitterwelt: [Die alten Götter](/deities/alte_goetter.md) haben über diese Lande regiert, dann hat sich die Welt der Götter maßgeblich verändert. Niemand kann sich an die Zeit vor elf Jahren erinnern. Roland berichtet aus dem Wissen seiner schriftkundigen Familie, auch wenn er nicht weiß, was davon wahr ist.
+**Session 2025-09-30:** Roland ist der Anführer der Dorfbewohner. Er ist erschöpft, aber dankbar. Am Abend bildet er mit der Gruppe einen kleinen Kreis und erzählt die Geschichte der Splitterwelt. Er offenbart, dass niemand sich an die Zeit vor elf Jahren erinnern kann. Seine Familie war schriftgewandt und hat vieles niedergeschrieben, aber er besitzt keine dieser Schriftstücke mehr. Er weiß nicht, was davon wahr ist oder gelogen, aber er weiß, dass es da draußen noch so viel mehr gibt. [P-24]
 
-**Rückkehr ins ausgebaute Lager (Session 2026-01-13):** Als die Gruppe zurückkehrt, hat sich das Lager verändert: Es wurde ein Graben gezogen, Palisaden wurden errichtet, Soldaten bewachen das Tor. Roland steht ganz oben und wirkt „deutlich entspannter". Seine grimmige und mürrische Art der letzten Wochen ist einer spürbaren Entspannung gewichen. Das Lager ist „recht treibig", die Leute sind glücklich.
+**Session 2026-01-13:** Roland ist ein Wächter im Lager, der entspannter wirkt als zuvor. [Die Stadt](/locations/ehrenfels.md) wurde ausgebaut, ein Graben gezogen und Palisaden errichtet. Roland steht ganz oben im Lager und seine grimmige und murrepetige Art ist einer spürbaren Entspannung gewichen. Das Lager ist treibig und die Leute sind glücklich. [P-33]
 
 ## Offene Fragen
 
-- Was genau geschah bei der Verteidigung der Stadt vor Goblins, bei der die Gruppe und Roland sich kennenlernten? Die Belege erwähnen nur, dass die Gruppe die Stadt damals verteidigte, ohne Details zu nennen.
-- Welche Rolle spielt Roland nach dem Ausbau des Lagers konkret? Er wird als Wächter beschrieben, aber sein Verhältnis zu Nyrellas offenbarer Führungsrolle bleibt unklar.
-- Welche der Geschichten, die Roland erzählt, sind wahr und welche nicht? Er selbst sagt, er wisse nicht, „was davon wahr ist oder gelogen".
-- Was genau geschah mit seiner Familie und ihren Schriftstücken? Roland erwähnt, dass er „keine dieser Schriftstücke mehr übrig" hat, aber die Umstände ihres Verlusts werden nicht erläutert.
+- Was genau geschah vor elf Jahren, an das sich niemand erinnern kann? Roland erzählt die Geschichte der Splitterwelt, aber es bleibt unklar, was davon wahr ist oder gelogen. [P-24]
+- Welche konkreten Schriftstücke seiner Familie existierten und was stand in ihnen? Roland erwähnt, dass er keine davon mehr besitzt, aber vieles in seinen Gedanken geblieben ist. [P-24]
 
-# Belege
+## Belege
 
-[P-22] Session 2025-09-17 @ 00:58:10–01:00:33 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
-[P-23] Session 2025-09-23 @ 01:16:04–01:18:52 (https://www.youtube.com/watch?v=DGzfqVigS0g)
-[P-24] Session 2025-09-30 @ 01:47:31–01:49:55 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
-[P-33] Session 2026-01-13 @ 00:16:47–00:19:39 (https://www.youtube.com/watch?v=w4LB1s9_3rs)
+[P-22] Session 2025-09-17 @ 00:59:13 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
+[P-23] Session 2025-09-23 @ 01:17:30 (https://www.youtube.com/watch?v=DGzfqVigS0g)
+[P-24] Session 2025-09-30 @ 01:48:27 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[P-33] Session 2026-01-13 @ 00:18:10 (https://www.youtube.com/watch?v=w4LB1s9_3rs)

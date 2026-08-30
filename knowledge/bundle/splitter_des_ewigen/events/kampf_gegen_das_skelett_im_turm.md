@@ -10,7 +10,7 @@ id: EVENT_KAMPF_GEGEN_DAS_SKELETT_IM_TURM
 subtype: Kampf
 ---
 
-Nachdem die Gruppe [Kalos](/npcs/organisation_der_kalos.md)' Angebot ablehnt, beschwört [Trilo](/npcs/trilo.md) ein [Skelett](/npcs/skelett_bogenschuetzen.md), das die Gruppe angreift. [Krieg](/characters/krieg.md) zerstört es mit seinem Hammer, während [Finn](/characters/finn.md) und [Carlos](/characters/carlos.md) gegen die [Illusion von Kalos](/events/illusion_von_kalos.md) kämpfen.
+Nachdem die Gruppe [Kalos](/npcs/organisation_der_kalos.md)' Angebot ablehnt, beschwört [Trilo](/npcs/trillo.md) ein [Skelett](/npcs/skelett_bogenschuetzen.md), das die Gruppe angreift. [Krieg](/characters/krieg.md) zerstört es mit seinem Hammer, während [Finn](/characters/finn.md) und [Carlos](/characters/carlos.md) gegen die [Illusion von Kalos](/npcs/illusion_von_kalos.md) kämpfen.
 
 # Belege
 

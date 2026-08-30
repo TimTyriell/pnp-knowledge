@@ -25,7 +25,7 @@ Voras ist ein Anhänger der alten Götter und dient der Göttin [Kaleandra](/dei
 
 Voras ist eine zentrale Figur, die die Gruppe über mehrere Stationen begleitet. Seine Rolle wandelt sich dabei erheblich:
 
-- **Erwecker und Verbündeter**: Nach seiner Erweckung bietet er der Gruppe seine Hilfe an und wird zu einem wichtigen Ansprechpartner. Die Gruppe sucht ihn mehrfach auf, um Informationen über die [Hag](/npcs/lenra.md) auszutauschen.
+- **Erwecker und Verbündeter**: Nach seiner Erweckung bietet er der Gruppe seine Hilfe an und wird zu einem wichtigen Ansprechpartner. Die Gruppe sucht ihn mehrfach auf, um Informationen über die Hag auszutauschen.
 - **Herrscher von Breska**: Als Graf regiert er über die Stadt Breska und finanziert deren Ausbau. Er plant, den [Berg Zebros](/locations/berge_von_zebros.md) zu kontrollieren, um [Untote](/factions/belorus_untotenarmee.md) zu beherrschen – ein Ziel, das seine Ambitionen über die reine Stadtverwaltung hinaus zeigt.
 - **Unterzeichner des Hilferufs**: Als Breska von Untoten überrannt wird, sendet er einen Hilferuf an alle Richtungen im Land, unterzeichnet mit „Voras dem Heiligen“. In dem Schreiben berichtet er von der gefallenen Stadt, der belagerten Bevölkerung und einer geheimnisvollen Gestalt in schwarzer Rüstung, die Richtung Westen verschwand.
 - **Kämpfer gegen die Dämonen**: In der Schlacht um [Ehrenfels](/locations/ehrenfels.md) kämpft Voras mit seinen Kriegern gegen die Dämonen und belebt gefallene Krieger wieder. Er wird dabei von Nerash angegriffen und getötet.
@@ -68,7 +68,7 @@ Gegenüber denen, die ihn erweckt haben, zeigt er sich zunächst dankbar und hil
 
 **Session 2025-06-25 – Audienz beim Grafen**: Die Gruppe sucht Voras in Breska auf. Er hat eine deutlich mächtigere Aura entwickelt als bei seiner Erweckung. Er finanziert den Ausbau der Stadt und plant, den Berg Zebros zu kontrollieren, um Untote zu beherrschen. Er ist interessiert an den Informationen der Gruppe über die Hag, aber verärgert über das gestohlene Buch. Er gewährt ihnen Zugang zu seiner Bibliothek, wird aber wütend, als sie die Engel vernichten, und verlässt fluchend den Raum.
 
-**Session 2026-01-13 – Der Hilferuf**: Breska ist von Untoten überrannt worden. Voras unterzeichnet einen Hilferuf, der an alle Richtungen im Land verschickt wurde. Er berichtet von der beinahe verhungerten Bevölkerung, den gefallenen Mauern und einer Gestalt in schwarzer Rüstung, die Richtung Westen verschwand. Sein Wappen ist auf dem Soldaten [Hans](/npcs/hans_soldat_aus_breska.md) zu sehen.
+**Session 2026-01-13 – Der Hilferuf**: Breska ist von Untoten überrannt worden. Voras unterzeichnet einen Hilferuf, der an alle Richtungen im Land verschickt wurde. Er berichtet von der beinahe verhungerten Bevölkerung, den gefallenen Mauern und einer Gestalt in schwarzer Rüstung, die Richtung Westen verschwand. Sein Wappen ist auf dem Soldaten Hans zu sehen.
 
 **Session 2026-03-10 – Empfang in der Gruft**: Voras empfängt Dodo in seiner Gruft. Er erklärt die Zerstörung der Stadt, macht zunächst Lunara dafür verantwortlich, entschuldigt sich aber später. Er hat zusammen mit Nox Ringe geschmiedet und ein Portal nach Abyssalis gebaut. Er ist bereit, die Gruppe zu unterstützen, nachdem sie ihre Stärke bewiesen haben.
 
@@ -80,7 +80,7 @@ Gegenüber denen, die ihn erweckt haben, zeigt er sich zunächst dankbar und hil
 
 ## Offene Fragen
 
-- **Die Gemahlin**: Die Hag sucht nach Voras' Gemahlin. Wer ist sie, und was ist aus ihr geworden? Dies wird in den Belegen nicht aufgelöst.
+- **Die Gemahlin**: [Die Hag](/npcs/lenra.md) sucht nach Voras' Gemahlin. Wer ist sie, und was ist aus ihr geworden? Dies wird in den Belegen nicht aufgelöst.
 - **Die Zusammenarbeit mit Nox**: Voras und Nox haben gemeinsam Ringe geschmiedet und ein Portal nach Abyssalis gebaut. Die genauen Details und Ziele dieser Zusammenarbeit bleiben unklar.
 - **[Der Berg](/locations/der_berg.md) Zebros**: Voras plante, den Berg Zebros zu kontrollieren, um Untote zu beherrschen. Was genau hat er dort vor, und wurde dieser Plan je umgesetzt?
 - **Die Gestalt in schwarzer Rüstung**: Voras berichtete von einer Gestalt in schwarzer Rüstung, die vor dem Fall von Breska Richtung Westen verschwand. Wer war diese Gestalt?

@@ -17,7 +17,7 @@ aliases:
 
 ## Überblick
 
-Das Königreich Zebros war ein altes, mächtiges Reich, das einst die gesamte nördliche Schneise der bekannten Welt umfasste. Es wurde nach seinem Herrscherhaus benannt und existierte bis zum [Krieg](/characters/krieg.md) der Götter, in dessen Verlauf es vernichtet wurde. Heute zeugen nur noch Ruinen, Relikte und der nach dem Reich benannte Berg Zebros von seiner einstigen Größe. Das Königreich war der stärkste Verbündete der alten Götter in der nördlichen Schneise; sein Untergang leitete das [Ende](/locations/ende_jenseits_der_orkgebiete.md) der alten Götter mit ein.
+Das Königreich Zebros war ein altes, mächtiges Reich, das einst die gesamte nördliche Schneise der bekannten Welt umfasste. Es wurde nach seinem Herrscherhaus benannt und existierte bis zum [Krieg](/characters/krieg.md) der Götter, in dessen Verlauf es vernichtet wurde. Heute zeugen nur noch Ruinen, Relikte und der nach dem Reich benannte Berg Zebros von seiner einstigen Größe. Das Königreich war der stärkste Verbündete der alten Götter in der nördlichen Schneise; sein Untergang leitete das Ende der alten Götter mit ein.
 
 Die Hauptstadt des Königreichs trug ebenfalls den Namen Zebros, ebenso wie der größte Berg der nördlichen Schneise, der bis heute steht. Vom Königreich selbst sind nur noch Ruinen und Relikte erhalten.
 

@@ -17,7 +17,7 @@ aliases:
 
 ## Überblick
 
-Die Casa del [Cookie](/characters/cookie.md) ist das Anwesen der Heldengruppe, gelegen nordwestlich von [Willauch](/locations/willauch.md). Ursprünglich als Belohnung für heldenhafte Taten im Turnier von Willauch errungen, wurde das Anwesen nach der verstorbenen Mitstreiterin Cookie benannt. Was als einfaches Herrenhaus begann, hat sich im Laufe der Kampagne zu einer kleinen Siedlung entwickelt, die Flüchtlingen Zuflucht bietet und langsam zu etwas Neuem heranwächst.
+Die Casa del [Cookie](/characters/cookie.md) ist das Anwesen der Heldengruppe, gelegen nordwestlich von [Willauch](/locations/willauch.md). Ursprünglich als Belohnung für heldenhafte Taten im [Turnier von Willauch](/events/turnier_von_willauch.md) errungen, wurde das Anwesen nach der verstorbenen Mitstreiterin Cookie benannt. Was als einfaches Herrenhaus begann, hat sich im Laufe der Kampagne zu einer kleinen Siedlung entwickelt, die Flüchtlingen Zuflucht bietet und langsam zu etwas Neuem heranwächst.
 
 ## Rolle in der Kampagne
 
@@ -39,7 +39,7 @@ Unter dem Haus befindet sich ein Untergeschoss mit einem [Altar](/items/altar.md
 
 ### Bewohner
 
-Das Anwesen wurde ursprünglich von [Goblins](/npcs/pilz_goblins.md) bewohnt. Nachdem die Gruppe das Anwesen übernommen hatte, entwickelte es sich zu einem Zufluchtsort für [Flüchtlinge](/factions/fluechtlinge_aus_breska.md), die dort unter der Mithilfe von Nyrella eine neue Heimat aufbauen.
+Das Anwesen wurde ursprünglich von [Goblins](/npcs/pilz_goblins.md) bewohnt. Nachdem die Gruppe das Anwesen übernommen hatte, entwickelte es sich zu einem Zufluchtsort für Flüchtlinge, die dort unter der Mithilfe von Nyrella eine neue Heimat aufbauen.
 
 ## Beziehungen und Verbindungen
 

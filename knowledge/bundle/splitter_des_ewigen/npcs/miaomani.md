@@ -15,7 +15,7 @@ aliases:
 
 ## Überblick
 
-Miaomani ist eine Catfolk, die als enge Begleiterin und Partnerin von [Kapitän Lobrecht](/npcs/lobrecht.md) auftritt. Sie gehört zur [Gilde](/factions/gilde_von_ehrenfels.md) und übernimmt wiederholt Aufgaben, die Umsicht, Flinkheit und einen guten Überblick erfordern — etwa als Ausguck auf Schiffen oder als Späherin in unübersichtlichem Gelände. Sie ist freundlich, eher zurückhaltend und wirkt in gefährlichen Situationen besonnen, aber entschlossen.
+Miaomani ist eine Catfolk, die als enge Begleiterin und Partnerin von Kapitän Lobrecht auftritt. Sie gehört zur Gilde und übernimmt wiederholt Aufgaben, die Umsicht, Flinkheit und einen guten Überblick erfordern — etwa als Ausguck auf Schiffen oder als Späherin in unübersichtlichem Gelände. Sie ist freundlich, eher zurückhaltend und wirkt in gefährlichen Situationen besonnen, aber entschlossen.
 
 ## Rolle in der Kampagne
 
@@ -36,9 +36,9 @@ Im Auftreten ist sie freundlich und zugänglich. Als Esterossa zum Ausguck kommt
 
 ## Beziehungen und Verbindungen
 
-- **Kapitän Lobrecht**: Miaomani ist seine Partnerin. Sie reisen gemeinsam, treten als Paar auf und werden bei der Rückkehr der Helden als „Kahnführer Lobrecht und Miaumani“ mit seiner Partnerin vorgestellt. Lobrecht spricht von ihr als „Miaomani und ich“, wenn er gemeinsame Aktionen ankündigt.
+- **Kapitän Lobrecht**: Miaomani ist seine Partnerin. Sie reisen gemeinsam, treten als Paar auf und werden bei der Rückkehr der Helden als „[Kahnführer Lobrecht](/npcs/lobrecht.md) und Miaumani“ mit seiner Partnerin vorgestellt. Lobrecht spricht von ihr als „Miaomani und ich“, wenn er gemeinsame Aktionen ankündigt.
 - **Die Helden**: Sie begegnet den Helden durchweg freundlich. Mit Esterossa unterhält sie sich auf dem Ausguck, und bei der Rückkehr nach Ehrenfels ist sie sichtlich erfreut, die Helden wiederzusehen.
-- **Die Gilde**: Sie ist Mitglied der Gilde und nimmt an deren Einsätzen teil, etwa an der Verteidigung von Windung und an der Schlacht von Ehrenfels.
+- **[Die Gilde](/factions/gilde_von_ehrenfels.md)**: Sie ist Mitglied der Gilde und nimmt an deren Einsätzen teil, etwa an der Verteidigung von Windung und an der Schlacht von Ehrenfels.
 
 ## Chronologie
 

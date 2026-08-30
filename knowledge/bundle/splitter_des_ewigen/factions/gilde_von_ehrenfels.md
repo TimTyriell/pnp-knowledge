@@ -32,7 +32,7 @@ Die Gilde von [Ehrenfels](/locations/ehrenfels.md) ist eine Organisation, die Ab
 
 Die Gilde ist die Organisation, der die Spielercharaktere angehören und für die sie im Laufe der Kampagne zahlreiche Missionen übernehmen. Sie vergibt Aufträge wie die Warnung [Brechkas](/locations/breska.md) vor dem Goblinangriff, die Säuberung einer [Krypta](/locations/krypta.md), die Erkundung der [Sanddorninseln](/locations/sanddorninseln.md), die Untersuchung der Untoten in den Bergen von [Zebros](/factions/koenigreich_zebros.md), die Suche nach der [Hag](/npcs/lenra.md), das Sammeln von Informationen über die Untotenarmee in [Steinbachtal](/locations/steinbachtal.md) und die Lösung des Konflikts zwischen Zwergen und [Goblins](/npcs/pilz_goblins.md). Die Gruppe kennt sich durch die Gilde, sei es nur flüchtig oder durch gemeinsame Missionen.
 
-Die Gilde stellt der Gruppe ein Haus bereit und versorgt sie mit Aufträgen. Sie schickt einen Raben voraus, um die Ankunft der Gruppe anzukündigen, und der [Gildenmeister](/npcs/nox.md) versorgt die Gruppe mit Informationen, etwa über die Einwohnerzahl von Steinbachtal. Die Gilde profitiert nach Aussage des Grafen von den Informationen, die die Gruppe sammelt.
+Die Gilde stellt der Gruppe ein Haus bereit und versorgt sie mit Aufträgen. Sie schickt einen Raben voraus, um die Ankunft der Gruppe anzukündigen, und der Gildenmeister versorgt die Gruppe mit Informationen, etwa über die Einwohnerzahl von Steinbachtal. Die Gilde profitiert nach Aussage des Grafen von den Informationen, die die Gruppe sammelt.
 
 ## Wichtige Merkmale
 
@@ -91,7 +91,7 @@ Die Gruppe berichtet dem Grafen von ihren Erlebnissen auf dem Berg Zebros, einsc
 
 ### 2025-09-09: Steinbachtal
 
-Die Gilde hat die Gruppe nach Steinbachtal geschickt, um Informationen über die Untotenarmee zu sammeln. Der Gildenmeister hat ihnen Informationen über die Einwohnerzahl gegeben – etwa 100 bis 200 Leute haben dort gelebt. Die Stadt wurde komplett überrannt, mit Kampfspuren an den Wänden und Schwerterabdrücken am Boden, aber keine Leichen.
+Die Gilde hat die Gruppe nach Steinbachtal geschickt, um Informationen über die Untotenarmee zu sammeln. [Der Gildenmeister](/npcs/nox.md) hat ihnen Informationen über die Einwohnerzahl gegeben – etwa 100 bis 200 Leute haben dort gelebt. Die Stadt wurde komplett überrannt, mit Kampfspuren an den Wänden und Schwerterabdrücken am Boden, aber keine Leichen.
 
 ### 2025-09-23: Rückkehr zur Gilde
 
@@ -107,7 +107,7 @@ Die Gilde vergibt wöchentlich Aufträge. Die Gruppe hat sich einen Namen gemach
 
 ### 2026-01-13: Portal zum Trainingsgelände
 
-Die Gilde in Ehrenfels wird als möglicher Zufluchtsort für einige [Flüchtlinge](/factions/fluechtlinge_aus_breska.md) erwähnt. Lindo Laut hat ein Portal zum Trainingsgelände der Gilde, das ein großes Stück westlich von Ehrenfels liegt. Man würde sich den Weg an Presca vorbeisparen.
+Die Gilde in Ehrenfels wird als möglicher Zufluchtsort für einige Flüchtlinge erwähnt. Lindo Laut hat ein Portal zum Trainingsgelände der Gilde, das ein großes Stück westlich von Ehrenfels liegt. Man würde sich den Weg an Presca vorbeisparen.
 
 ### 2026-01-27: Konflikt zwischen Zwergen und Goblins
 

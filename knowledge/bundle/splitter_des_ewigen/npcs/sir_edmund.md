@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Sir Edmund
-description: Sir Edmund ist der alte Wächter eines Turms und etwa achtzig Jahre alt.
-  Er beherbergte die Gruppe für eine Nacht, erzählte ihr Geschichten…
+description: Sir Edmund ist ein etwa achtzigjähriger Wächter eines Turms. Er trägt
+  eine alte, blank polierte Rüstung aus Tarkir. Er ist der Vater von Ve…
 tags:
 - npcs
 timestamp: '2026-08-25T00:00:00Z'
@@ -12,21 +12,21 @@ aliases:
 - Edmund
 ---
 
-Sir Edmund ist der alte Wächter eines Turms und etwa achtzig Jahre alt. Er beherbergte die Gruppe für eine Nacht, erzählte ihr Geschichten und verabschiedete sich herzlich. Zugleich ist er der Vater von [Velorus](/npcs/velorus.md), dem untoten General, gegen den die Gruppe bereits gekämpft hat. Sir Edmund besitzt altes Wissen über Obsidian und dessen Verwendung durch Basilisken.
+Sir Edmund ist ein etwa achtzigjähriger Wächter eines Turms. Er trägt eine alte, blank polierte Rüstung aus [Tarkir](/locations/tarkir.md). Er ist der Vater von [Velorus](/npcs/velorus.md), dem untoten General, den die Gruppe bereits bekämpft hat. Die Gruppe begegnete ihm, als sie an dem von ihm bewachten Turm einkehrte; er nahm sie für eine Nacht auf und zeigte sich als gastfreundlicher Geschichtenerzähler.
 
 ## Wächter und Gastgeber
 
-Sir Edmund trägt eine alte, blank polierte Rüstung aus [Tarkir](/locations/tarkir.md). Er bewacht den Turm, in dem er die Gruppe als Gast empfing. Während der Nacht erzählt er Geschichten und zeigt sich seinen Gästen gegenüber freundlich; der Abschied fällt herzlich aus.
+Sir Edmund ist ein alter Mann, der den Turm bewacht. Trotz seines Alters ist seine Rüstung aus Tarkir blank poliert. Als die Gruppe bei ihm einkehrte, bot er ihr Unterkunft für die Nacht an. Er erzählte Geschichten, darunter die Geschichte von [Zebros](/factions/koenigreich_zebros.md), und verabschiedete sich am Ende herzlich von der Gruppe.
 
 ## Vater von Velorus
 
-Sir Edmund ist der Vater des untoten Generals [Velorus](/npcs/velorus.md), mit dem die Gruppe bereits aneinandergeraten ist. Als er auf seinen Sohn zu sprechen kommt, weint er. Daneben erzählt er die Geschichte von [Zebros](/factions/koenigreich_zebros.md), die ebenfalls Teil seiner Erzählungen ist.
+Sir Edmunds Sohn Velorus ist ein untoter General, gegen den die Gruppe bereits gekämpft hat. Als Sir Edmund über seinen Sohn sprach, weinte er. Die Belege lassen offen, wie er zu Velorus’ Taten steht oder was er über dessen Schicksal weiß.
 
-## Obsidian und Basilisken
+## Interesse an Dodos Obsidian
 
-Sir Edmund interessiert sich für ein Obsidianstück, das [Dodo](/characters/dodo.md) mit sich führt. Er erklärt, dass Basilisken dieses Material für Waffen verwendet haben.
+Während des Zusammentreffens zeigte Sir Edmund Interesse an [Dodos](/characters/dodo.md) Obsidian. Er erklärte der Gruppe, dass Basilisken dieses Material für Waffen verwendet haben.
 
 # Belege
 
-1. Session 2026-08-18 @ 01:47:37 (https://www.youtube.com/watch?v=10swvSz6k7U)
-2. Session 2026-08-25 @ 00:21:32 (https://www.youtube.com/watch?v=1Cjj3OVqiYA)
+1. Session vom 18.08.2026, 01:47:37 – https://www.youtube.com/watch?v=10swvSz6k7U
+2. Session vom 25.08.2026, 00:21:32 – https://www.youtube.com/watch?v=1Cjj3OVqiYA

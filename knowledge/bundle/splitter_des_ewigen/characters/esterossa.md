@@ -1,8 +1,8 @@
 ---
 type: Character
 title: Esterossa
-description: Esterossa ist ein Seraph der Unterklasse Winged Sentinel – ein engelgleiches
-  Wesen mit großen Flügeln und Düsen, das fliegen kann. Er ist e…
+description: Esterossa ist ein Seraph der Unterklasse Winged Sentinel – ein engelgleiches,
+  geflügeltes Wesen mit metallisch schimmernder Haut und großen…
 tags:
 - characters
 timestamp: '2026-07-29T00:00:00Z'
@@ -16,146 +16,102 @@ aliases:
 
 ## Überblick
 
-Esterossa ist ein Seraph der Unterklasse **Winged Sentinel** – ein engelgleiches Wesen mit großen Flügeln und Düsen, das fliegen kann. Er ist ein Kämpfer und Heiler zugleich, der in der Gruppe um [Rotunas](/characters/rotunas.md) als "zweites Schild" und Heiler fungiert. Er trägt eine laute, schwere Rüstung und kämpft mit einer Axt, später mit einem Warhammer und schließlich mit einem magischen Schwert. Esterossa ist ein Loreborn mit umfangreichem Wissen über Kulturen, Geschichte und Religionen. Er betet seit jeher und ausschließlich den neuen Gott **Korn** an, der auch als **[Blutgott](/deities/korn.md)** bezeichnet wird – beide Namen meinen dieselbe Gottheit. Korn zählt zu den *neuen* Göttern, nicht zu den alten.
+Esterossa ist ein Seraph der Unterklasse **Winged Sentinel** – ein engelgleiches, geflügeltes Wesen mit metallisch schimmernder Haut und großen Flügeln, die ihm das Fliegen ermöglichen. Er trägt eine schwere, laute Rüstung und kämpft bevorzugt mit einer Axt, später mit einem Warhammer. In der Gruppe nimmt er die Rolle des zweiten Schildes und Heilers ein: Er steht in der zweiten Reihe direkt hinter [Dodo](/characters/dodo.md) und ist gemeinsam mit ihm für das Militärische zuständig, übernimmt aber auch redegewandt diplomatische Aufgaben, wenn [Lindo Laut](/characters/lindo_laut.md) ausfällt ([P-33] 2026-01-06, [P-22] 2025-09-17).
 
-Esterossa ist männlich. Er ist ein Spielercharakter, gespielt von Basti.
+Esterossa ist ein gläubiger Krieger. Er betet seit jeher und ausschließlich zu **Korn**, dem neuen Gott, der auch als **[Blutgott](/deities/korn.md)** bezeichnet wird – beide Namen meinen dieselbe Gottheit. Seine Gebete und Segnungen sind ein wiederkehrendes Element seines Handelns: Er spricht vor gefährlichen Unternehmungen Schutzsegen, nutzt seine Pray Dice, um Schaden von Verbündeten abzuwenden, und heilt Verwundete mit Mending Touch, Healing Hands oder Seraph Hope ([P-04] 2025-04-15, [P-09] 2025-05-27, [P-16] 2025-07-29).
 
 ## Rolle in der Kampagne
 
-Esterossa ist eines der Gründungsmitglieder der Abenteurergruppe um Rotunas und begleitet diese über den gesamten Verlauf der Kampagne. Er übernimmt in der Gruppe mehrere Rollen:
+Esterossa gehört zur Abenteurergruppe um [Rotunas](/characters/rotunas.md), die sich in der Region um [Ehrenfels](/locations/ehrenfels.md) bewegt. Er ist einer der zentralen Spielercharaktere und über die gesamte Kampagne hinweg präsent – vom ersten Kampf gegen [Goblins](/npcs/pilz_goblins.md) im [Sumpf](/locations/sumpf_vor_dem_goblin_dorf.md) bis zu seinem Tod in der [Schlacht um Ehrenfels](/events/schlacht_um_ehrenfels.md).
 
-- **Heiler und Unterstützer**: Er heilt Verbündete mit Gebeten, *Mending Touch*, *Healing Hands* und *Seraph Hope* und wendet mit seinen *Pray Dice* Schaden von Verbündeten ab.
-- **Zweites Schild**: Neben [Dodo](/characters/dodo.md), dem Tank der Gruppe, ist Esterossa der zweite Beschützer. Er stellt sich Pfeilen entgegen, errichtet Barrieren und Steinwände und verstärkt Tore.
-- **Militärischer Veteran**: Aufgrund seiner Herkunft als Soldat, der in großen Kriegen gekämpft hat, bringt er taktisches Wissen und militärische Erfahrung in die Gruppe ein. Er erkennt herannahende Gegner früh und koordiniert die Verteidigung.
-- **Wissensquelle**: Als Loreborn hat er Zugang zu umfangreichem Wissen über Geschichte, Kulturen und Religionen. Er erkennt den Heiligen [Duran](/deities/heiliger_duran.md) und seine Artefakte, identifiziert Symbole und erinnert sich an Schriften über den unteren Zirkel.
-- **Diplomat**: Wenn [Lindo Laut](/characters/lindo_laut.md) fehlt, übernimmt Esterossa redegewandt die Gespräche – etwa bei Verhandlungen mit [Goblins](/npcs/pilz_goblins.md), in der [Gilde](/factions/gilde_von_ehrenfels.md) oder bei der Vorstellung der Gruppe.
+Seine Rolle innerhalb der Gruppe ist vielschichtig:
+- **Heiler und Beschützer**: Er heilt regelmäßig seine Gefährten – Dodo, Rotunas, Lindo Laut, [Nyrellas](/characters/nyrella.md) Bären und andere – und stellt sich schützend vor sie, etwa indem er mit einer Steinwand Dodo vor [Dormaks](/npcs/dormak.md) Angriff bewahrt ([P-44] 2026-03-31, [P-31] 2025-11-25).
+- **Militärischer Veteran**: Als erfahrener Soldat, der in großen Kriegen gekämpft hat, erkennt er herannahende Gegner früh, warnt seine Gefährten und koordiniert Angriffe ([P-05] 2025-04-23, [P-15] 2025-07-22).
+- **Wissensquelle**: Als Loreborn verfügt er über umfangreiches Wissen über Kulturen, Geschichte und Religionen. Er erkennt den Heiligen [Duran](/deities/heiliger_duran.md) und seine Artefakte, identifiziert Symbole und erinnert sich an Schriften über den unteren Zirkel ([P-07] 2025-05-06, [P-20] 2025-09-06).
+- **Diplomat**: Trotz seiner militärischen Prägung zeigt er sich redegewandt und deeskalierend, etwa beim Vorfall mit dem betrunkenen Gast in der Taverne oder in Verhandlungen mit [Gulrak](/npcs/gulrak.md) und [Joar Vanur](/npcs/joar_vanur.md) ([P-06] 2025-04-30).
 
 ## Wichtige Merkmale
 
 ### Fähigkeiten
 
-- **Flugfähigkeit**: Esterossa kann mit seinen Flügeln und Düsen fliegen. Er nutzt dies im Kampf, um aus der Luft anzugreifen, Positionen zu wechseln, Stürze abzufangen und Gegner zu köpfen.
-- **Heilung**: Er verfügt über mehrere Heilfähigkeiten: *Mending Touch* (Selbstheilung), *Healing Hands*, *Seraph Hope* (Heilung von Verbündeten) und *Restoration*. Er kann mit goldenen Nebelwolken Verbündete heilen.
-- **Pray Dice**: Er kann ein Gebet für die Gruppe sprechen und damit Schaden von Verbündeten abwenden – "wie so ein göttlicher Schutz".
-- **Fearless**: Sein Talent wandelt Stresspunkte in Hope um.
-- **Winged Sentinel**: Seine Unterklassen-Fähigkeit, die er im Kampf einsetzt.
-- **Material formen (Shape Material)**: Er kann Holz in Stahl verwandeln (etwa um ein Tor zu verstärken), Erde zu Steinwänden formen, eine Treppe erschaffen, einen Höhleneingang verschließen oder Fackeln löschen.
-- **Magischer Schaden**: Seine Axt verursacht magischen Schaden; später beschwört er eine magische Axt und kämpft mit einem Warhammer, der durch einen grünen Blitz von Korn verstärkt wird.
-- **Unsichtbarkeit**: Er kann sich unsichtbar machen, etwa um zu erkunden oder sich anzuschleichen.
-- **Wissen**: Als Loreborn ist er im Vorteil bei Wissenstests (Knowledge, History) und kennt sich mit Kulturen, Geschichte und Religionen aus.
+Esterossa verfügt über ein breites Spektrum an Kampf- und Unterstützungsfähigkeiten:
 
-### Auftreten und Wesenszüge
+- **Flugfähigkeit**: Seine großen Flügel und Düsen erlauben ihm zu fliegen. Er nutzt dies, um Gegner aus der Luft anzugreifen, Positionen zu wechseln, Stürze abzufangen und unsichtbar durch die Luft zu gleiten ([P-02] 2025-04-01, [P-09] 2025-05-27, [P-17] 2025-08-12).
+- **Winged Sentinel**: Seine Unterklassen-Fähigkeit, die er im Kampf einsetzt, um sich zu bewegen und Verbündete zu unterstützen ([P-05] 2025-04-23, [P-15] 2025-07-22).
+- **Pray Dice / Seraph Hope**: Er kann göttlichen Schutz gewähren, indem er Schaden von Verbündeten abwendet, und Stresspunkte in Hope umwandeln ([P-09] 2025-05-27, [P-15] 2025-07-22).
+- **Heilung**: Mending Touch, Healing Hands, Seraph Hope und ein Gebets-Skill, mit dem er Schaden negieren und Verwundete heilen kann – vom verwundeten Ritter bis zum vergifteten Rotunas ([P-02] 2025-04-01, [P-07] 2025-05-06, [P-23] 2025-09-23).
+- **Magische Angriffe**: Seine Axt verursacht magischen Schaden; später kämpft er mit einem Warhammer und heiliger Magie. Er kann Gegner köpfen, mit Blitzen angreifen und einen [Kuatau](/npcs/kuatau.md) mit einem Schlag zerteilen ([P-02] 2025-04-01, [P-09] 2025-05-27, [P-16] 2025-07-29).
+- **Material formen (Shape Material)**: Er kann Holz in Stahl verwandeln, um Tore zu verstärken, Steinwände erschaffen, Treppen formen, Höhleneingänge verschließen und Fackeln löschen ([P-34] 2026-01-20, [P-24] 2025-09-30, [P-50] 2026-05-19, [P-45] 2026-04-07).
+- **Unsichtbarkeit**: Er kann sich unsichtbar machen, um zu erkunden oder sich im Kampf zu positionieren ([P-17] 2025-08-12, [P-19] 2025-09-02, [P-31] 2025-11-25).
+- **Wissen**: Als Loreborn ist er bei Wissenstests im Vorteil und kennt sich mit Geschichte, Kulturen und Religionen aus ([P-02] 2025-04-01, [P-07] 2025-05-06).
 
-Esterossa ist ein geflügelter, schwer gepanzerter Kämpfer mit einer "lauten Rüstung". Er ist etwas eitel und will nicht, dass seine Schuhe schmutzig werden. Er hasst Kälte ("Leute, mir ist kalt, meine Flügel frieren ab"). Er schläft wie ein Stein – eine Fähigkeit, die er sich als Militärveteran in vielen Kriegen angeeignet hat.
+### Wesenszüge
 
-Er ist fürsorglich und mitfühlend: Er heilt verwundete Ritter, verneigt sich vor einer Priesterin, stützt Lindo Laut nach dessen [Entfernung von Slix](/events/entfernung_von_slix.md) und verwandelt heimlich [Nyrellas](/characters/nyrella.md) Wein in Traubensaft, um sie zu schützen. Er findet Freude an der Hilfe für andere – eine Seite, die er selbst überraschend an sich entdeckt.
+Esterossa ist ein treuer, fürsorglicher Gefährte, der seine Gruppe beschützt und heilt. Er zeigt Mitgefühl – etwa als er sich vor einer Priesterin verneigt und nach ihrem Befinden fragt oder Nyrellas Wein heimlich in Traubensaft verwandelt, um sie zu schützen ([P-07] 2025-05-06, [P-30] 2025-11-18). Er ist pragmatisch und denkt an den Ausbau des Anwesens, wenn andere sich in Details verlieren ([P-29] 2025-11-14).
 
-Er ist vorsichtig und misstrauisch gegenüber fremden Orten und Wesen, rät zur Vorsicht und warnt vor Konsequenzen. Gleichzeitig ist er mutig und entschlossen, geht Risiken ein und stellt sich Gefahren entgegen. Er ist pragmatisch und denkt an praktische Dinge wie den Ausbau eines Anwesens.
+Gleichzeitig hat er eine eitle Seite: Er will nicht, dass seine Schuhe schmutzig werden ([P-02] 2025-04-01). Er hasst Kälte – „Leute, mir ist kalt, meine Flügel frieren ab“ ([P-30] 2025-11-18) – und schläft als Kriegsveteran tief und fest ([P-15] 2025-07-22). Im Kampf ist er furchtlos und geht lachend in den Kampf, priorisiert aber klug den Magiewirker als Ziel ([P-15] 2025-07-22).
+
+Er ist religiös bewandert und stellt sich als Diener des Blutgottes vor, was Anhänger verunsichert ([P-17] 2025-08-12). Gegenüber fremden Gottheiten – etwa dem [Schlangengott](/deities/schlangengott.md) – zeigt er Skepsis ([P-10] 2025-06-03).
 
 ## Beziehungen und Verbindungen
 
-- **Rotunas**: Esterossa ist Teil der Gruppe um Rotunas und folgt dessen Führung. Er unterstützt Rotunas bei Verhandlungen und wählt als Belohnung Gold statt Erz.
-- **Dodo**: Er ist eng mit Dodo verbunden, kämpft an dessen Seite und beschützt ihn. Er heilt Dodo mehrfach, errichtet Barrieren um ihn und befreit ihn aus Gefangenschaft. Er entschuldigt sich bei Dodo für seine Wortwahl und zeigt Reue.
-- **Lindo Laut**: Er ist misstrauisch gegenüber Lindo Lauts Opfergedanken, unterstützt ihn aber später. Er versucht, Lindo Laut zu retten, als dieser am Herz erstickt, und stützt ihn nach der Entfernung von [Slix](/npcs/slix_vasul.md). Nach einer Pilgerschaft zeigt er sich versöhnlich und unterstützt Lindo Laut in der Aussprache.
-- **Lunara**: Er ist misstrauisch gegenüber Lunara und hält zunächst Distanz zu ihr. Später unterstützt er ihren Plan, obwohl er Bedenken hat, und beschwört eine Steinwand, um Dodo vor [Dormaks](/npcs/dormak.md) Angriff zu schützen.
-- **Nyrella**: Er heilt Nyrellas Bären, verwandelt heimlich ihren Wein in Traubensaft und übergibt ihr Gold für den [Marktschreier](/npcs/marktschreier.md).
-- **[Cookie](/characters/cookie.md)**: Er erhält von Cookie Inspiration und Hope-Punkte.
-- **Korn (Blutgott)**: Sein Gott, zu dem er betet und von dem er einen grünen Blitz erhält, der seine Angriffe verstärkt.
-- **[Belorus](/npcs/belorus.md)**: Erkennt Esterossa als "wahren Krieger" an.
-- **Ajani/Günther**: Eine Katze, die Esterossa findet und die ihm folgt; sie wird später in [Günther](/npcs/katze_ajani_guenther.md) umbenannt.
-- **[Vasul](/deities/vharzul.md)**: Ein Gegner, den Esterossa aufzuhalten versucht. Als Vasul den Splitter aktivieren will, greift Esterossa an und zerstört den Splitter, wird aber von dessen Energie besessen.
+- **Korn (Blutgott)**: Esterossas Gott, ein neuer Gott. Zu ihm betet er, von ihm erhält er Segen und heilige Kraft – etwa einen grünen Blitz, der seine Angriffe verstärkt ([P-27] 2025-10-21).
+- **Dodo**: Sein engster Kampfgefährte, an dessen Seite er in der zweiten Reihe kämpft. Er beschützt Dodo wiederholt, heilt ihn und stellt sich schützend vor ihn ([P-44] 2026-03-31, [P-31] 2025-11-25). Dodo gibt ihm ein Kompliment, das ihm Hope-Punkte bringt ([P-05] 2025-04-23).
+- **Lindo Laut**: Der Sprecher und Diplomat der Gruppe. Esterossa unterstützt ihn, schützt ihn mit einem Lebensschild und versucht, ihn zu retten, als er am Herzen erstickt ([P-34] 2026-01-20, [P-18] 2025-08-20). Er ist zeitweise misstrauisch gegenüber Lindo Lauts Opfergedanken, unterstützt ihn aber später ([P-18] 2025-08-20).
+- **Rotunas**: Der Anführer der Gruppe. Esterossa unterstützt ihn bei Verhandlungen und heilt ihn mehrfach, etwa mit Gegengift und Restoration ([P-22] 2025-09-17, [P-34] 2026-01-20).
+- **Nyrella**: Er heilt ihren Bären und zeigt sich fürsorglich, indem er ihren Wein in Traubensaft verwandelt und ihr Gold für den [Marktschreier](/npcs/marktschreier.md) übergibt ([P-18] 2025-08-20, [P-30] 2025-11-18).
+- **Lunara**: Er ist misstrauisch gegenüber Lunara und hält zunächst Distanz, folgt aber später ihrem Plan ([P-30] 2025-11-18, [P-43] 2026-03-24).
+- **[Cookie](/characters/cookie.md)**: Eine Gefährtin, mit der er sich gut versteht; er fragt sie im Kampf, ob sie etwas tun möchte ([P-19] 2025-09-02).
+- **Ajani/Günther**: Eine Katze, die Esterossa findet und die ihm folgt; sie wird später in [Günther](/npcs/katze_ajani_guenther.md) umbenannt ([P-06] 2025-04-30).
+- **[Belorus](/npcs/belorus.md)**: Erkennt Esterossa als wahren Krieger an ([P-33] 2026-01-13).
 
 ## Chronologie
 
-### Frühe Abenteuer (April–Mai 2025)
-
-Esterossa schließt sich der Gruppe an und zeigt sich als flugfähiger Kämpfer mit Axt. Er tötet einen Goblin-Magier, indem er ihn von einer Kante stößt. In einer [Krypta](/locations/krypta.md) spricht er einen Segen für die Gruppe und opfert sein Blut an einer Statue, was eine [Feuerkreatur](/events/feuerkreatur.md) beschwört. Im Kampf gegen Skelette zeigt er seine Kampfkraft und heilt sich mit *Mending Touch*. Er hat eine Bibliothek auf einem USB-Stick und nutzt sein Wissen, um die Statue zu identifizieren.
-
-Bei der Verteidigung eines Dorfes entdeckt er herannahende Goblins, weicht Pfeilen aus und tötet mehrere Goblins im Flug. Er erhält von Lindo Laut Inspiration und von Dodo ein Kompliment, was ihm Hope-Punkte bringt. Er folgt der Gruppe in eine [Katakombe](/locations/katakombe.md).
-
-### Pirateninseln und Heiliger Duran (Mai–Juni 2025)
-
-Auf dem Weg zu den Pirateninseln geht Esterossa auf den Ausguck und hält Ausschau. Er erkennt den Heiligen Duran und seine Artefakte (ein Amulett und eine magische Keule bzw. ein Morgenstern) und vermutet, dass Duran sich auf den Inseln niedergelassen haben könnte. Im Kampf verwundet er einen Gnoll schwer mit seiner Axt und heilt einen verwundeten Ritter mit einem Gebet. Er schlägt vor, ein [Portal](/locations/portal.md) zur Flucht zu nutzen.
-
-Im [Sumpf](/locations/sumpf_vor_dem_goblin_dorf.md) spricht er ein Gebet zu Korn für kühleres Wetter. Er kauft ein Gegengift und friert eine Kreatur mit Magie ein. Er heilt [Brass](/npcs/brass.md) nach dem Kampf und zeigt sich skeptisch gegenüber dem [Schlangengott](/deities/schlangengott.md).
-
-### Festung und Befreiung einer Kreatur (Juli 2025)
-
-Esterossa versucht, Schutzmagie zu wirken, scheitert aber. Er ist misstrauisch gegenüber der Umgebung und testet eine Barriere mit einem Kieselstein. Er durchtrennt die Kette am Mund einer Kreatur und befreit sie damit – mutig, aber unsicher, ob er das Richtige tut.
-
-In einem Kampf zeigt er sich als furchtloser Kämpfer, der lachend in den Kampf zieht und mit seiner Axt mehrere Gegner tötet. Er priorisiert den Magiewirker als Ziel. Am [Ende](/locations/ende_jenseits_der_orkgebiete.md) unterstützt er die Entscheidung, ein Amulett zu behalten.
-
-### Grabstätte und Blutgott (Juli–August 2025)
-
-Esterossa zerteilt einen [Kuatau](/npcs/kuatau.md) mit einem Schlag und findet das [Stern-Amulett](/items/stern_amulett.md) an einer Grabstätte. Er heilt [Miaomani](/npcs/miaomani.md) und [Lobrecht](/npcs/lobrecht.md) mit *Seraph Hope*.
-
-Er folgt dem Blutgott Korn, wird unsichtbar und fliegt zu einer geisterhaften Gestalt, wird aber entdeckt und stürzt ab. Er erkundet ein Lager von Anhängern, entdeckt Ghule und Zombies. Am Morgen stellt er sich vor, was die Anhänger verunsichert.
-
-### Lindo Lauts Krise und unterer Zirkel (August–September 2025)
-
-Esterossa ist misstrauisch gegenüber Lindo Lauts Opfergedanken, unterstützt ihn aber später. Er versucht, Lindo Laut zu retten, als dieser am Herz erstickt, und macht einen Knowledge-Check, der nichts ergibt. Er schlägt vor, die Gruppe zu führen, und heilt Nyrellas Bären.
-
-Er erinnert sich an ein Buch über den unteren Zirkel und vermutet, dass eine [Fähre](/items/faehre.md) eine Zwischenwelt ist. Er widersteht den Einflüssen der Ebene mit einem Krit und ist dadurch eine Stunde lang unabhängig geschützt. Er schlägt vor, Kreaturen zu opfern, und tötet einen Imp mit einem Schlag.
-
-Er hält eine Grabrede für einen Prinzen und überzeugt [Zwerge](/factions/zwerge.md), mit ihnen zu fliehen. Er nutzt seinen Ring *Sentinel*, um Dodo auf ein Dach zu bringen.
-
-### Gilde und Attentäter (September–Oktober 2025)
-
-In der Gilde stellt sich Esterossa als "Esterossa Torpal" vor und beeindruckt einen Sukkubus mit seinem Auftreten. Er ist skeptisch gegenüber der Entscheidung, Flüchtlingen zu helfen, und warnt vor Konsequenzen. Beim Angriff eines [Attentäters](/npcs/attentaeter.md) verbrennt er dessen Beine mit Magie und macht ihn kampfunfähig. Er versucht, Rotunas mit einem Gegengift zu retten.
-
-Er untersucht Dokumente eines Gnolls und findet ein Wanted-Plakat auf ihn. Er versucht, Rotunas' Wunde zu heilen, kann die Ausbreitung aber nur verlangsamen. Im Kampf gegen [Untote](/factions/belorus_untotenarmee.md) stellt er sich Pfeilen entgegen und erleidet Schaden durch die Welle des Untoten-Anführers.
-
-Er erschafft eine Steinwand mit Guckloch, um einen Pass zu verschmälern, und heilt Dodo. Er zeigt Freude an der Hilfe für andere.
-
-### Arena und Werwolf (Oktober–November 2025)
-
-Esterossa interessiert sich für einen Monsterkampf und berät die Gruppe. Er betet zu Korn und erhält einen grünen Blitz, der seine Angriffe verstärkt. Im Kampf gegen einen Werwolf schlägt er mit seinem Warhammer zu. Bei einer Phasenspinne wird er eingesponnen und vergiftet, befreit sich aber mit Magie und tötet die Spinne mit einem mächtigen Schlag. Die Menge feiert ihn.
-
-### Anwesen und Winter (November 2025)
-
-Esterossa übernimmt die Gespräche mit Goblins und verhandelt mit [Horatio](/npcs/horatio.md). Er erschafft mit Magie einen Schlafraum im Untergeschoss und denkt an den Ausbau des Anwesens. Er hasst die Kälte, ist misstrauisch gegenüber Lunara und verwandelt heimlich Nyrellas Wein in Traubensaft. Er beteiligt sich an einer Zirkusvorstellung mit goldenem Glitzer.
-
-### Splitterwelt und Untote (November 2025 – Januar 2026)
-
-Esterossa verliert Energie durch die Nähe einer [Splitterwelt-Kreatur](/npcs/kreatur_in_der_splitterwelt.md) und wird von Lindo Laut mit dem Ton der Einkehr geheilt. Im Kampf heilt er Dodo mit *Healing Hands*, woraufhin die Kreatur flieht. Er untersucht einen [Beschwörungsstab](/items/beschwoerungsstab.md) und erkennt seine Funktion. Er wird unsichtbar und erkundet Untote, bleibt dabei unsichtbar und heilt Rotunas und Dodo.
-
-Er heilt einen verwundeten Soldaten, indem er den Pfeil entfernt und die Wunde schließt. Im Kampf gegen ein Seelenkalb beschwört er eine magische Axt und verletzt das Biest, wodurch er Dodo befreit. Er ist misstrauisch gegenüber dem Soldaten und schlägt vor, dass Lindo Laut sich unsichtbar macht, um den Kommandanten zu finden.
-
-### Patrouille und Schlacht (Januar–Februar 2026)
-
-Esterossa ist während einer Patrouille unterwegs und kehrt mit der Gruppe zurück. Er versucht, magische Statuen zu verstehen und zu zerstören. Er errichtet eine Barriere um Dodo und zerstört zwei Statuen mit seinem Warhammer, was die Gegner schwächt. Belorus erkennt ihn als wahren Krieger an.
-
-Er verstärkt ein Tor, indem er Holz in Stahl verwandelt, schützt Lindo Laut mit einem Lebensschild und heilt Rotunas mit *Restoration*. Er beschützt [Lord Harik](/npcs/lord_harik.md), tötet einen Goblin und unterstützt Rotunas bei Verhandlungen. Als Belohnung wählt er Gold statt Erz.
-
-Er erkennt eine Warnung auf einer Tafel und identifiziert das [Symbol](/items/symbol_in_der_villa.md) auf einem Umhang als das von [Thar'Vok](/deities/tarvok_der_erdrichter.md), dem Erdrichter. Er versucht, Dodos Bein zu heilen, verursacht aber zunächst mehr Schaden. Im Kampf gegen Lindo Lauts Dämonenform greift er mutig an.
-
-### Pilgerschaft und Rückkehr (März–April 2026)
-
-Esterossa kehrt nach einer Pilgerschaft zurück. Er zeigt sich versöhnlich und unterstützt Lindo Laut in der Aussprache. Er bietet an, mit der Gruppe zu gehen, wenn sie ihm versprechen, vorsichtig zu sein. Er ist bereit, Lunaras Plan zu folgen, obwohl er Bedenken hat.
-
-Er beschwört eine Steinwand, um Dodo vor Dormaks Angriff zu schützen. Er ist misstrauisch gegenüber [Dämonen](/factions/daemonen.md) in [Abyssalis](/domains/splitterwelt.md) und sammelt Informationen. Er stützt Lindo Laut, nachdem Slix entfernt wurde.
-
-### Abyssalis und der Splitter (April–Juni 2026)
-
-Esterossa nutzt *Shape Material*, um Fackeln zu löschen, was ihm Blitze einbringt. Er wirft einen Blob in einen Käfig und sammelt ein Stück des geplatzten Blobs als Kriegsbeute. Er versucht, eine Statue zu identifizieren, scheitert aber.
-
-Er zeigt einem [Seraphen](/factions/seraphen.md) die Statue von [Nerash](/deities/nerash.md), was ihn kurz schwächt. Er versucht, den Seraphen zu heilen, scheitert aber. Er nimmt das Schwert einer Kreatur an, das seine Flügel verändert und ihn mit Kristallen überzieht. Er warnt Lunara vor den alten Göttern, unterstützt aber die Entscheidung, zur Narbe zu gehen.
-
-Er trägt eine beschädigte Rüstung und ein magisches Schwert, das mit den Kristallen des Berges interagiert. Seine Seele scheint an das Schwert gebunden zu sein, und er macht sich Sorgen um seine Zukunft. Er führt die Gruppe durch schwieriges Gelände, erschafft eine Treppe und verschließt einen Höhleneingang.
-
-### Der Kampf gegen Vasul und der Tod (Juni–Juli 2026)
-
-Esterossa ist entschlossen, Vasul aufzuhalten, und greift ihn an, als dieser den Splitter aktivieren will. Er zerstört den Splitter, wird aber von dessen Energie besessen. Sein Schwert absorbiert die Energie von Vasul, und er wird zum Spielball der Mächte.
-
-Esterossa berührt den [Splitter des Ewigen](/items/splitter_des_ewigen.md) und löst die **[Rote Nacht](/events/rote_nacht.md)** aus, wodurch er sich in ein fremdes Wesen verwandelt. Er vertreibt [Vorgultar](/deities/vorgul_tar.md), verliert aber bei jeder Aktion Teile seiner Flügel. Er opfert sich, um die Gruppe zu retten, und stirbt, ohne dass seine Seele aufsteigt. Seine Waffe wird von Lindo Laut mitgenommen.
-
-Sein Tod wird in der Taverne betrauert. Die Menge wird still, als sein Verscheiden bekannt wird, und die Leute nehmen ihre Hüte ab. Dodo erhebt sein Glas und ruft: "Auf Esterossa!"
+- **2025-04-01**: Esterossa wird als Roboter-Engel (Clank) mit Flügeln und Düsen eingeführt. Er kämpft gegen Goblins im Sumpf, tötet den Goblin-Magier, indem er ihn von der Kante stößt ([P-02]).
+- **2025-04-15**: Er spricht einen Segen für die Gruppe vor einer [Krypta](/locations/krypta.md) und opfert sein Blut an einer Statue, was eine [Feuerkreatur](/events/feuerkreatur.md) beschwört. Er identifiziert die Statue mithilfe seiner Bibliothek auf einem USB-Stick ([P-04]).
+- **2025-04-23**: Er verteidigt ein Dorf gegen Goblins, weicht Pfeilen aus, tötet mehrere Goblins im Flug und erhält Inspiration von Lindo Laut und ein Kompliment von Dodo ([P-05]).
+- **2025-04-30**: Er findet die Katze Ajani, verhandelt mit Gulrak und versucht, die Beziehung zu Joar Vanur zu glätten ([P-06]).
+- **2025-05-06**: Er erkennt den Heiligen Duran und dessen Artefakte, kämpft gegen einen Gnoll und heilt einen verwundeten Ritter mit einem Gebet ([P-07]).
+- **2025-05-27**: Er nutzt seine Pray Dice für die Gruppe und zeigt taktisches Geschick im Kampf ([P-09]).
+- **2025-06-03**: Er kauft ein Gegengift, friert eine Kreatur ein und heilt [Brass](/npcs/brass.md). Er zeigt sich skeptisch gegenüber dem Schlangengott ([P-10]).
+- **2025-07-09**: Er versucht Schutzmagie zu wirken (scheitert), untersucht eine Statue und durchtrennt die Kette am Mund einer Kreatur, die er damit befreit ([P-14]).
+- **2025-07-22**: Er schläft tief, kämpft furchtlos, tötet mehrere Gegner und unterstützt die Entscheidung, das Amulett zu behalten ([P-15]).
+- **2025-07-29**: Er zerteilt einen Kuatau mit einem Schlag und findet das [Stern-Amulett](/items/stern_amulett.md) an einer Grabstätte ([P-16]).
+- **2025-08-12**: Er folgt dem Blutgott Korn, wird unsichtbar, erkundet ein Lager und entdeckt Ghule und Zombies ([P-17]).
+- **2025-08-20**: Er ist misstrauisch gegenüber Lindo Lauts Opfergedanken, versucht ihn zu retten und heilt Nyrellas Bären ([P-18]).
+- **2025-09-02**: Er bleibt unsichtbar, schlägt einen Zauberer nieder und fesselt ihn. Er spürt die Aufmerksamkeit von [Nerash](/deities/nerash.md), als er ein Totem berührt ([P-19]).
+- **2025-09-06**: Er erinnert sich an ein Buch über den unteren Zirkel, widersteht den Einflüssen der Ebene mit einem Krit und tötet einen Imp ([P-20]).
+- **2025-09-09**: Er hält eine Grabrede für den Prinzen und überzeugt die [Zwerge](/factions/zwerge.md), mit ihnen zu fliehen ([P-21]).
+- **2025-09-17**: Er stellt sich in der [Gilde](/factions/gilde_von_ehrenfels.md) als „zweites Schild und Heiler“ vor, verbrennt die Beine eines [Attentäters](/npcs/attentaeter.md) und versucht, Rotunas mit einem Gegengift zu retten ([P-22]).
+- **2025-09-23**: Er findet ein Wanted-Plakat auf den Gnoll, kann Rotunas' Wunde nur verlangsamen und stellt sich im Kampf gegen [Untote](/factions/belorus_untotenarmee.md) den Pfeilen entgegen ([P-23]).
+- **2025-09-30**: Er erschafft eine Steinwand mit Guckloch, heilt Dodo und entschuldigt sich bei ihm für seine Wortwahl ([P-24]).
+- **2025-10-07**: Er versucht einen Golem zu befehligen (scheitert), wird gepackt, überlebt aber und koordiniert die Angriffe ([P-25]).
+- **2025-10-14**: Er berät die Gruppe beim Monsterkampf ([P-26]).
+- **2025-10-21**: Er betet zu Korn und erhält einen grünen Blitz, kämpft gegen einen Werwolf und tötet eine Phasenspinne, wird aber eingesponnen und vergiftet ([P-27]).
+- **2025-11-14**: Er verhandelt mit Goblins und [Horatio](/npcs/horatio.md) und erschafft einen Schlafraum im Untergeschoss ([P-29]).
+- **2025-11-18**: Er verwandelt Nyrellas Wein in Traubensaft, beteiligt sich an einer Zirkusvorstellung und übergibt Nyrella Gold für den Marktschreier ([P-30]).
+- **2025-11-25**: Er verliert Energie durch eine [Splitterwelt-Kreatur](/npcs/kreatur_in_der_splitterwelt.md), heilt Dodo und untersucht einen [Beschwörungsstab](/items/beschwoerungsstab.md) ([P-31]).
+- **2026-01-06**: Er heilt einen verwundeten Soldaten, kämpft gegen ein Seelenkalb und schlägt vor, dass Lindo Laut unsichtbar den Kommandanten findet ([P-32]).
+- **2026-01-13**: Er zerstört zwei magische Statuen mit seinem Warhammer und erhält Respekt von Belorus ([P-33]).
+- **2026-01-20**: Er verstärkt ein Tor, indem er Holz in Stahl verwandelt, schützt Lindo Laut mit einem Lebensschild und heilt Rotunas ([P-34]).
+- **2026-01-27**: Er beschützt [Lord Harik](/npcs/lord_harik.md), tötet einen Goblin und wählt Gold statt Erz als Belohnung ([P-35]).
+- **2026-02-11**: Er erkennt eine Warnung auf einer Tafel und das [Symbol](/items/symbol_in_der_villa.md) von [Thar'Vok](/deities/tarvok_der_erdrichter.md), dem Erdrichter. Er greift Lindo Lauts Dämonenform mutig an ([P-36]).
+- **2026-03-24**: Er kehrt von einer Pilgerschaft zurück, zeigt sich versöhnlich und unterstützt Lindo Laut in der Aussprache ([P-43]).
+- **2026-03-31**: Er beschwört eine Steinwand, um Dodo vor Dormaks Angriff zu schützen, und stützt Lindo Laut, nachdem [Slix](/npcs/slix_vasul.md) entfernt wurde ([P-44]).
+- **2026-04-07**: Er löscht Fackeln mit Shape Material, wirft einen Blob in einen Käfig und sammelt ein Stück davon als Kriegsbeute ([P-45]).
+- **2026-05-06**: Er versucht, sich an ein Symbol zu erinnern, das [Dante](/characters/dante.md) gefunden hat ([P-48]).
+- **2026-05-13**: Er zeigt einem [Seraphen](/factions/seraphen.md) die Statue von Nerash, was ihn schwächt. Er nimmt das Schwert der Kreatur an, das seine Flügel verändert und ihn mit Kristallen überzieht ([P-49]).
+- **2026-05-19**: Er trägt eine beschädigte Rüstung und ein magisches Schwert, das mit den Kristallen des Berges interagiert. Seine Seele scheint an das Schwert gebunden zu sein ([P-50]).
+- **2026-06-10**: Die Gruppe sucht nach ihm; er ist vermutlich noch oben am Rand der Schlucht ([P-53]).
+- **2026-06-16**: Er stößt neu zur Gruppe, greift [Vasul](/deities/vharzul.md) an, zerstört den Splitter, wird aber von dessen Energie besessen ([P-54]).
+- **2026-07-21**: Er berührt den [Splitter des Ewigen](/items/splitter_des_ewigen.md) und löst die [Rote Nacht](/events/rote_nacht.md) aus, verwandelt sich in ein fremdes Wesen, vertreibt [Vorgultar](/deities/vorgul_tar.md), verliert aber bei jeder Aktion Teile seiner Flügel. Er opfert sich, um die Gruppe zu retten, und stirbt, ohne dass seine Seele aufsteigt. Seine Waffe wird von Lindo Laut mitgenommen ([P-55]).
+- **2026-07-29**: Sein Tod wird in der Taverne betrauert; die Gruppe gedenkt seiner, und Dodo ruft „Auf Esterossa!“ ([S1-01-A]).
 
 ## Offene Fragen
 
-- Was genau ist mit Esterossas Seele nach seinem Tod geschehen? Die Belege sagen, dass seine Seele nicht aufsteigt, aber nicht, was mit ihr passiert ist.
-- Welche Bedeutung hat das Schwert, das Esterossa angenommen hat und das seine Flügel veränderte und ihn mit Kristallen überzog? Seine Seele schien an das Schwert gebunden zu sein.
-- Was geschah mit Esterossa zwischen der Session vom 10. Juni 2026 (als die Gruppe nach ihm suchte, er aber nicht auftauchte) und seinem Wiederauftauchen in der Session vom 16. Juni 2026?
+- Was genau geschah mit Esterossas Seele, als er starb? Die Belege sagen, dass seine Seele nicht aufstieg ([P-55]) – ob sie an das Schwert gebunden blieb oder anderweitig gefangen ist, bleibt ungeklärt.
+- Welche langfristigen Auswirkungen hatte die Veränderung seiner Flügel und die Kristallüberziehung durch das Schwert der Kreatur ([P-49], [P-50])?
+- Was bedeutete die Aufmerksamkeit von Nerash, die Esterossa beim Berühren des Totems spürte ([P-19])?
 
 ## Belege
 

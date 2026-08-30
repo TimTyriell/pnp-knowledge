@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Tindrael
-description: Tindrael ist der Grabwächter des Dorfes Breska (später Breska genannt)
-  und eine geistliche Autoritätsperson. Nach dem Bürgermeister ist er…
+description: Tindrael ist ein Geistlicher und war lange Zeit eine zentrale Autoritätsperson
+  im Dorf Breska (später auch als Breska bezeichnet). Er fungi…
 tags:
 - npcs
 timestamp: '2026-03-10T00:00:00Z'
@@ -11,43 +11,37 @@ id: NPC_TINDRAEL
 
 ## Überblick
 
-Tindrael ist der Grabwächter des Dorfes [Breska](/locations/breska.md) (später Breska genannt) und eine geistliche Autoritätsperson. Nach dem [Bürgermeister](/npcs/buergermeister_spitzzahn.md) ist er die nächste Autorität im Dorf und hat als Geistlicher einiges zu sagen. Er ist freundlich, hilfsbereit und zeigt sich gegenüber der Gruppe wohlgesonnen, nachdem diese seine Ziege [Bertie](/npcs/bertie.md) zurückbringt. In späteren Ereignissen erweist er sich als einer der wenigen Überlebenden des Untergangs von Breska und dient weiterhin einer höheren Macht – dem Gott [Voras](/npcs/voras.md).
+Tindrael ist ein Geistlicher und war lange Zeit eine zentrale Autoritätsperson im Dorf [Breska](/locations/breska.md) (später auch als Breska bezeichnet). Er fungierte als Grabwächter des Dorfes und war nach dem [Bürgermeister](/npcs/buergermeister_spitzzahn.md) [Berthold](/npcs/berthold.md) die nächste Autoritätsperson. Nach der Zerstörung des Dorfes durch einen Angriff blieb er einer der wenigen Überlebenden und dient seither dem Gott [Voras](/npcs/voras.md) in dessen Gruft. Er ist freundlich, hilfsbereit und respektvoll im Umgang mit der Gruppe, wobei er eine gewisse Würde und Autorität ausstrahlt.
 
 ## Rolle in der Kampagne
 
-Tindrael fungiert als wichtiger Ansprechpartner und Türöffner für die Gruppe in Breska. Als die Abenteurer das Dorf erreichen und mit den Wächtern [Kerl](/npcs/kerl.md) und [Brock](/npcs/brock.md) sprechen, um Zugang zum Bürgermeister [Berthold](/npcs/berthold.md) zu erhalten, verweist man sie an Tindrael. Er ist die erste Autoritätsperson, die der Gruppe gegenübertritt, und erweist sich als kooperativ: Er begleitet die Gruppe zum Bürgermeister und unterstützt sie bei den Vorbereitungen gegen den drohenden Goblin-Angriff.
-
-In der späteren Begegnung übernimmt Tindrael eine andere Rolle: Er ist einer der wenigen Überlebenden des zerstörten Breska und dient nun offenbar Voras. Er begleitet [Dodo](/characters/dodo.md) in der Gruft und stellt ihn Voras persönlich vor, was die Gruppe zu einer Audienz bei dieser höheren Macht führt.
+Tindrael begegnet der Gruppe erstmals, als diese die entlaufene Ziege [Bertie](/npcs/bertie.md) zurückbringt. Er ist zunächst eine wichtige Anlaufstelle für die Gruppe, um Zugang zum Bürgermeister zu erhalten, und unterstützt sie bei den Vorbereitungen gegen den drohenden Goblin-Angriff. In der zweiten Begegnung, nach der Zerstörung Brechkas, führt er [Dodo](/characters/dodo.md) in der Gruft zu Voras und stellt die Verbindung zwischen der Gruppe und dem Gott her. Damit ist er ein wiederkehrender Verbündeter und Wegweiser für die Gruppe.
 
 ## Wichtige Merkmale
 
-Tindrael wird als freundliche und zugängliche Person beschrieben. Als die Gruppe seine Ziege Bertie zurückbringt, reagiert er begeistert: *„Ach, was seid ihr denn so putzig? Ihr habt Bertie gefunden. Wie wundervoll."* Er zeigt sich dankbar für die großzügige Tat und ist der Gruppe gegenüber wohlgesonnen – so sehr, dass die Spieler bei einem Wurf auf seine Gunst einen Vorteil erhalten.
+Tindrael wird als freundliche und hilfsbereite Person beschrieben, die sich über die Rückkehr seiner Ziege Bertie aufrichtig freut: *„Ach, was seid ihr denn so putzig? Ihr habt Bertie gefunden. Wie wundervoll."* Er ist Geistlicher und hat als Grabwächter von Breska einiges im Dorf zu sagen. Als Autoritätsperson nach dem Bürgermeister ist er die erste Anlaufstelle für Fremde, die zum Bürgermeister wollen: *„Nun, ich bin tatsächlich hier nach dem Bürgermeister wahrscheinlich die nächste Autoritätsperson."*
 
-Er ist Geistlicher und hat als solcher im Dorf einiges zu sagen. Seine Position als Grabwächter und Autoritätsperson nach dem Bürgermeister macht ihn zu einem zentralen Ansprechpartner in Breska. Er stellt sich selbst vor mit den Worten: *„Nun, mein Name ist Tindrael. Wie kann ich Ihnen helfen und danken für eure großzügige Tat?"*
-
-In der späteren Begegnung wird er als deutlich gestärkter und kräftiger beschrieben, behält aber seine schmale Gestalt. Er hat sich nicht aus den Diensten von Voras wegbewegt, was darauf hindeutet, dass seine religiöse Bindung an diesen Gott bereits früher bestand oder sich nach dem Untergang Breskas verfestigt hat.
+In der späteren Begegnung wird er als *„deutlich gestärkter und kräftiger, aber immer noch die schmale Gestalt von damals"* beschrieben. Er hat sich nicht aus den Diensten von Voras wegbewegt und wirkt gefestigt in seiner Rolle als Diener des Gottes. Seine Begrüßung gegenüber Dodo ist respektvoll und herzlich zugleich.
 
 ## Beziehungen und Verbindungen
 
-- **Bertie**: Tindraels Ziege, die die Gruppe zurückbringt. Bertie ist normalerweise nicht leicht zu zähmen, was Tindrael bemerkt: *„Ihr müsst etwas einzigartiges an euch haben. Normalerweise ist Bertie nicht so leicht zu zähmen."*
-- **Bürgermeister Berthold**: Tindrael ist nach ihm die nächste Autoritätsperson in Breska. Später bezeichnet er sich als dessen ehemalige rechte Hand. Der Bürgermeister wurde abgeschlachtet und ermordet.
-- **Die Wächter Kerl und Brock**: Diese verweisen die Gruppe an Tindrael, was seine Stellung im Dorf unterstreicht.
-- **Voras**: Tindrael dient diesem Gott und hat sich nicht von dessen Diensten entfernt. Er begleitet Dodo in der Gruft und stellt ihn Voras vor.
-- **Dodo**: Tindrael erkennt Dodo wieder und begrüßt ihn respektvoll mit einer Umarmung. Er erkundigt sich nach Dodos Begleitern [Cookie](/characters/cookie.md) und [Lindo Laut](/characters/lindo_laut.md).
-- **Die Gruppe**: Tindrael ist der Gruppe gegenüber wohlgesonnen und hilfsbereit, sowohl bei der ersten Begegnung in Breska als auch später in der Gruft.
+- **Bertie**: Tindraels Ziege, die entlaufen war und von der Gruppe zurückgebracht wird. Er ist ihr offenbar sehr zugetan und bemerkt, dass Bertie normalerweise nicht leicht zu zähmen ist.
+- **Bürgermeister Berthold**: Tindrael war dessen rechte Hand und die zweite Autoritätsperson im Dorf. Der Bürgermeister wurde beim Angriff auf das Dorf ermordet.
+- **Die Wächter [Kerl](/npcs/kerl.md) und [Brock](/npcs/brock.md)**: Diese beiden Wächter verweisen die Gruppe an Tindrael, wenn sie zum Bürgermeister wollen.
+- **Voras**: Nach der Zerstörung Brechkas dient Tindrael dem Gott Voras in dessen Gruft und stellt Besucher diesem vor.
+- **Die Gruppe**: Tindrael begegnet der Gruppe wohlwollend und hilfsbereit. Besonders zu Dodo scheint er eine vertraute Beziehung zu haben, da er ihn respektvoll umarmt und ihn persönlich zu Voras führt.
 
 ## Chronologie
 
-**Session 2025-04-09**: Die Gruppe erreicht Breska und spricht mit den Wächtern Kerl und Brock, die sie an Tindrael verweisen. Die Gruppe bringt Tindraels Ziege Bertie zurück, die zuvor davongelaufen war und die Gruppe attackiert hatte. Tindrael ist begeistert und dankbar. Die Gruppe stellt sich als Mitglieder der [Gilde](/factions/gilde_von_ehrenfels.md) vor und berichtet von einem bevorstehenden Goblin-Angriff auf das Dorf. Tindrael zeigt Interesse und die Gruppe erhält einen Vorteil bei ihrem Wurf, da Tindrael ihnen wohlgesonnen ist. Er begleitet die Gruppe zum Bürgermeister und unterstützt sie bei den Vorbereitungen gegen den Angriff.
+**Session 2025-04-09:** Die Gruppe bringt die entlaufene Ziege Bertie zu ihrem Besitzer zurück. Tindrael kommt aus einem Gebäude, als die Ziege davor abrupt stoppt, und ist begeistert über die Rückkehr seiner Ziege. Er stellt sich als Tindrael vor und dankt der Gruppe für ihre Tat. Die Gruppe erklärt ihm, dass sie zum Bürgermeister wollen, woraufhin Tindrael sich als die nächste Autoritätsperson nach dem Bürgermeister vorstellt. Die Gruppe nennt ihre Herkunft von der [Gilde](/factions/gilde_von_ehrenfels.md) und warnt vor einem bevorstehenden Goblin-Angriff auf das Dorf. Tindrael begleitet die Gruppe daraufhin zum Bürgermeister und unterstützt sie bei den Vorbereitungen.
 
-**Session 2026-03-10**: Tindrael begegnet der Gruppe erneut, diesmal in der Gruft. Er ist deutlich gestärkter und kräftiger als zuvor, hat aber seine schmale Gestalt behalten. Er stellt sich Dodo vor als die ehemalige rechte Hand des Bürgermeisters von Breska, der nicht mehr existiert – der Bürgermeister wurde abgeschlachtet und ermordet. Tindrael ist einer der wenigen Überlebenden. Er begleitet Dodo in der Gruft und stellt ihn Voras vor, der Dodo empfängt mit den Worten: *„Mein Lord, Dodo ist nun da. Komm her, Dodo."* Tindrael erkundigt sich nach Dodos Begleitern und erfährt, dass Cookie ihr Leben lassen musste, was er bedauerlich findet.
+**Session 2026-03-10:** Tindrael kommt der Gruppe in der Gruft entgegen. Er ist deutlich gestärkter und kräftiger als früher, aber immer noch von schmaler Gestalt. Er erkennt Dodo wieder und begrüßt ihn respektvoll mit einer Umarmung. Er stellt sich erneut vor und erklärt, dass er einst die rechte Hand des Bürgermeisters war, der inzwischen abgeschlachtet und ermordet wurde. Er bestätigt, dass Breska nicht mehr existiert, und führt die Gruppe zu Voras, wobei er Dodo bei diesem ankündigt: *„Mein Lord, Dodo ist nun da."* Auf die Frage nach dem Verbleib der übrigen Gruppenmitglieder erfährt er, dass [Cookie](/characters/cookie.md) ihr Leben lassen musste, was er bedauerlich findet.
 
 ## Offene Fragen
 
-- Welche genaue Rolle spielte Tindrael beim Untergang von Breska, und wie hat er überlebt?
-- War Tindrael bereits vor dem Untergang Breskas ein Diener von Voras, oder hat er sich erst danach diesem Gott zugewandt?
-- Welche Funktion hat Tindrael nun in der Gruft und im Dienst von Voras?
-- Was geschah mit dem Bürgermeister Berthold genau, und welche Verbindung hat Tindrael zu dessen Ermordung?
+- Wie genau Tindrael den Angriff auf Breska überlebt hat und wie er in die Dienste von Voras gelangte, wird in den Belegen nicht ausgeführt.
+- Welche Rolle Tindrael in der Gruft von Voras genau einnimmt, bleibt unklar — ob er nur als Führer dient oder weitere Aufgaben hat.
+- Ob Tindrael auch nach der Begegnung mit Voras eine weitere Rolle in der Kampagne spielen wird, ist offen.
 
 ## Belege
 

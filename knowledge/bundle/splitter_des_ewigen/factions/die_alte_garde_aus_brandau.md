@@ -10,7 +10,7 @@ id: FACTION_DIE_ALTE_GARDE_AUS_BRANDAU
 subtype: Bande
 ---
 
-Die **Alte Garde aus Brandau** ist eine Gruppe von Überlebenden, die nach dem Untergang von [Brandau](/locations/brandau.md) in [Kleinringtal](/locations/ringtal.md) zusammengefunden haben. Die Gruppe versucht, sich neu zu organisieren. [P-52]
+Die **Alte Garde aus [Brandau](/locations/brandau.md)** ist eine Gruppe von Überlebenden, die nach dem Untergang von [Brandau](/locations/brandau.md) in [Kleinringtal](/locations/ringtal.md) zusammengefunden haben. Die Gruppe versucht, sich neu zu organisieren. [P-52]
 
 ## Herkunft und Organisation
 

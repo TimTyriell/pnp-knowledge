@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Kapitän Lobrecht
-description: Kapitän Lobrecht, von der Gruppe auch liebevoll als „Kahnführer Lobrecht"
-  oder „Käpt'n Lobrecht" bezeichnet, ist ein erfahrener Seefahrer u…
+description: Kapitän Lobrecht, von der Gruppe auch liebevoll „Kahnführer Lobrecht“
+  oder „Käpt'n Lobrecht“ genannt, ist ein erfahrener Seefahrer und wied…
 tags:
 - npcs
 timestamp: '2026-08-25T00:00:00Z'
@@ -17,57 +17,51 @@ aliases:
 
 ## Überblick
 
-Kapitän Lobrecht, von der Gruppe auch liebevoll als „Kahnführer Lobrecht" oder „Käpt'n Lobrecht" bezeichnet, ist ein erfahrener Seefahrer und Kapitän des Gildenschiffs. Er ist eine wiederkehrende Begleitfigur der Gruppe und dient ihr über mehrere Reisen hinweg als Kapitän, Informationsquelle und Verbündeter. Lobrecht ist stets mit seiner Partnerin [Miaomani](/npcs/miaomani.md) unterwegs, die ihn auf seinen Fahrten begleitet. Er ist freundlich, hilfsbereit und der Gruppe über die Zeit hinweg freundschaftlich verbunden, auch wenn er sich gelegentlich skeptisch gegenüber neuen Begleitern zeigt.
+Kapitän Lobrecht, von der Gruppe auch liebevoll „Kahnführer Lobrecht“ oder „Käpt'n Lobrecht“ genannt, ist ein erfahrener Seefahrer und wiederkehrender Begleiter der Helden. Er ist Kapitän des Gildenschiffs und späterer Eskortführer, der die Gruppe auf mehreren Reisen über die Inseln begleitet. Lobrecht ist ein freundlicher, hilfsbereiter und pragmatischer Mann, der stets ein offenes Ohr für die Anliegen der Gruppe hat und ihnen regelmäßig als Informationsquelle dient. Er ist eng mit [Miaomani](/npcs/miaomani.md) verbunden, die ihn auf seinen Reisen begleitet.
 
 ## Rolle in der Kampagne
 
-Lobrecht ist der Kapitän des Gildenschiffs, mit dem die Gruppe mehrfach reist. Seine erste dokumentierte Rolle ist die Überfahrt zur Inselgruppe Sanddawn, wo er die Gruppe mit Informationen über die Inseln versorgt und ihr den Auftrag erläutert, zu Jean Vanour, dem Chef der Insel, zu reisen [1]. Er ist dabei nicht nur Transporteur, sondern auch Ratgeber: Er erklärt [Cookie](/characters/cookie.md) die Karte der Inseln und beschreibt Sanddawn als „ein Paradies von Leben", in dem vieles nicht der Norm entspreche [1].
-
-Später bringt er die Gruppe mit der Miaomani zur Verteidigung des Fischerdorfes [Windung](/locations/windung.md) [2]. In der Schlacht von [Ehrenfels](/locations/ehrenfels.md) gehört er zu den wichtigen Persönlichkeiten, die als Verstärkung eintreffen und [Meister Pyrandras](/npcs/meister_pyrandras.md) unterstützen [4]. Nach der Schlacht wird die Gruppe bei ihrer Rückkehr nach Ehrenfels von Lobrecht und Miaomani freudig empfangen; er ist eine zentrale Informationsquelle über die Ereignisse in Ehrenfels und berichtet, dass Nox der Gruppe die Mission erklärt habe [5].
-
-In der späteren Reise begleitet Lobrecht die Gruppe als Teil der Eskorte, kämpft tapfer gegen [Gnolle](/factions/gnolle.md) und wird dabei schwer verletzt, aber von [Lindo Laut](/characters/lindo_laut.md) in dessen [Pocket Domain](/domains/pocket_domain.md) gerettet [7].
+Lobrecht ist ein wiederkehrender Verbündeter und Transporteur der Gruppe. Er bringt die Helden zunächst zum Inselarchipel Sanddawn, wo sie den Auftrag erhalten, zu Jean Vanour zu reisen. Später transportiert er die Gruppe nach [Windung](/locations/windung.md), wo sie ein Fischerdorf gegen Angriffe verteidigen. In der Schlacht von [Ehrenfels](/locations/ehrenfels.md) kämpft er an vorderster Front und trifft als Verstärkung ein. Er dient der Gruppe wiederholt als Informationsquelle über die Lage in verschiedenen Regionen, etwa über die Untoten bei [Breska](/locations/breska.md) oder die Ereignisse in Ehrenfels. In der letzten bekannten Schlacht gegen die [Gnolle](/factions/gnolle.md) kämpft er tapfer an der Seite der Helden und wird dabei schwer verletzt.
 
 ## Wichtige Merkmale
 
-Lobrecht ist ein freundlicher und hilfsbereiter Kapitän. Als Cookie in seiner Kajüte nach einem Stück Kuchen fragt, schneidet er ihr mit einem Messer und einer Serviette ein Stück ab und reicht es ihr — eine Geste, die Cookie so deutet, dass sie und der Kapitän nun „Buddies" seien [1]. Er nimmt sich Zeit, der Gruppe die Karte der Inseln zu erklären und weist sie auf die Besonderheiten Sanddawns hin [1].
+Lobrecht ist ein freundlicher und zuvorkommender Kapitän. Als [Cookie](/characters/cookie.md) in seiner Kajüte nach etwas zu essen fragt, schneidet er ihr ohne Zögern ein Stück Kuchen ab und reicht es ihr mit einer Serviette. Er nimmt sich Zeit, der Gruppe die Karte der Inseln zu erklären und beschreibt Sanddawn als „ein Paradies von Leben“, in dem vieles nicht der Norm entspreche – was er mit einem vielsagenden Blick auf die ungewöhnliche Gruppe kommentiert.
 
-Er ist ein erfahrener Seefahrer, der die Gewässer und Inseln der Region gut kennt. Er weiß um die Gefahren der Umgebung und berichtet von Untoten in der Nähe von [Breska](/locations/breska.md), die die Strecke unpassierbar machen [3]. Dabei zeigt er sich besorgt, aber auch pragmatisch: „Breska wollte schon mal keine Hilfe. Also, naja, sie sind wahrscheinlich gut genug ausgestattet, um sowas zu überleben. Aber befremdlich und vor allem, man sollte sich Sorgen machen" [3].
+Er ist ein erfahrener Seefahrer und zeigt sich auch abseits des Wassers als fähig: Beim Überqueren einer Brücke mit einem Seil beweist er Klettererfahrung, wird dabei jedoch von [Lindo Lauts](/characters/lindo_laut.md) Lawine an der Schulter verletzt. Im Kampf ist er tapfer und wehrhaft: In der Schlacht gegen die Gnolle dreht er sich im letzten Augenblick um, zieht seinen Degen und hält ihn einem angreifenden Gnoll entgegen, der mit einer scharfen Axt auf ihn einschlägt. Er ist „richtig strong“, wie der GM anmerkt, auch wenn er im Nebel im Nachteil kämpft.
 
-Im Kampf zeigt sich Lobrecht als tapferer Kämpfer. In der Schlacht gegen die Gnolle in der Nähe des Hofs von Joao gelingt es ihm, im letzten Augenblick einen Angriff eines Gnolls mit seinem Degen abzuwehren, obwohl er im Nebel nichts sehen kann [7]. Er ist zudem erfahren im Klettern und überquert eine Brücke mit einem Seil [6].
-
-Gegenüber neuen Begleitern zeigt er sich zunächst skeptisch. So ist er gegenüber Joao misstrauisch, der einen unkonventionellen Weg über die Berge vorschlägt: „Nein, wir gehen normalerweise auch nicht hier lang. Der [Kerl](/npcs/kerl.md) hier, Joao, hat diesen Weg wohl irgendwie selbst entdeckt, keine Ahnung. Normalerweise gibt es nur diese zwei Wege runter vom Berg. Aber naja, man lernt doch immer gerne was Neues kennen" [6]. Gegenüber [Dodo](/characters/dodo.md) zeigt er dagegen Anerkennung, als dieser den Basilisken zähmt [6].
+Lobrecht ist zudem pragmatisch und vorsichtig. Beim Abstieg vom Berg lehnt er es ab, vorauszugehen, mit der Begründung: „Ich würde ungern vorausgehen. Vielleicht falle ich runter und ich kann mich einfach niemanden stützen, falls ich falle.“ Er zeigt sich gegenüber Joao zunächst skeptisch, als dieser einen eigenen Weg entdeckt hat, ist aber lernbereit: „Normalerweise gibt es nur diese zwei Wege runter vom Berg. Aber naja, man lernt doch immer gerne was Neues kennen.“ Gegenüber [Dodo](/characters/dodo.md) zeigt er Anerkennung, als dieser den Basilisken zähmt.
 
 ## Beziehungen und Verbindungen
 
-**Miaomani**: Lobrechts ständige Begleiterin und Partnerin. Sie ist bei fast allen seinen Auftritten an seiner Seite, nickt zustimmend zu seinen Aussagen und unterstützt ihn [3][5][6]. In der Schlacht von Ehrenfels kämpfen beide gemeinsam als Teil der Verstärkung [4]. Miaomani musste bei der Passage an Breska vorbei mehrere ihrer „wertvollen Kugeln" verbrauchen, um die Untoten abzuwehren [3].
+**Miaomani**: Lobrechts ständige Begleiterin und Partnerin. Sie reisen gemeinsam, teilen sich ein Zelt und treten stets als Paar auf. Miaomani ist eher zurückhaltend und nickt meist nur zustimmend, während Lobrecht das Reden übernimmt. Sie verfügt über „wertvolle Kugeln“, die sie im Kampf einsetzt – etwa als die beiden durch das von Untoten verseuchte Gebiet bei Breska reisen.
 
-**Die Gruppe**: Lobrecht ist der Gruppe über mehrere Reisen hinweg verbunden. Er begrüßt sie nach der Schlacht von Ehrenfels freudig und umarmt Lindo Laut brüderlich [5]. Die Gruppe wird bei ihrer Rückkehr wie Helden empfangen, und Lobrecht ist sichtlich glücklich, sie wiederzusehen [5].
+**Cookie**: Die beiden verbindet eine frühe freundschaftliche Begegnung, als Lobrecht ihr in seiner Kajüte ein Stück Kuchen gibt. Cookie selbst betrachtet den Kapitän daraufhin als „Buddies“, auch wenn Lobrecht selbst keinen Kuchen gegessen hat.
 
-**Joao**: Lobrecht zeigt sich skeptisch gegenüber Joao, der einen eigenen Weg über die Berge entdeckt hat [6]. In der Schlacht am Hof von Joao verbarrikadiert sich Joao im Haus, während Lobrecht und die Gruppe draußen kämpfen [7].
+**Die Gruppe**: Lobrecht kennt die Helden über mehrere Reisen hinweg und begrüßt sie stets freudig. Beim Wiedersehen in Ehrenfels umarmt er Lindo Laut „brüderlich oder freundschaftlich“, während Miaomani mit verschränkten Armen hinter ihm steht und lächelt. Er ist eine wichtige Informationsquelle für die Gruppe und berichtet ihr etwa von den Ereignissen in Ehrenfels und der Lage bei Breska.
 
-**Nox**: Lobrecht berichtet, dass Nox der Gruppe die Mission erklärt habe [5].
+**Joao**: Lobrecht ist zunächst skeptisch gegenüber Joao und dessen selbst entdecktem Weg, zeigt sich aber lernbereit. In der Schlacht gegen die Gnolle verbarrikadiert sich Joao in einem Haus, während Lobrecht draußen kämpft.
 
 ## Chronologie
 
-**Session 2025-04-30**: Lobrecht ist Kapitän des Gildenschiffs, das die Gruppe nach Sanddawn bringt. Er gibt Cookie ein Stück Kuchen, erklärt ihr die Karte der Inseln und beschreibt Sanddawn als ein Paradies des Lebens. Er erläutert den Auftrag, zu Jean Vanour zu reisen, und bietet an, die Gruppe mit einem Beiboot anlanden zu lassen [1].
+**Reise nach Sanddawn**: Lobrecht ist Kapitän des Gildenschiffs, das die Gruppe zum Inselarchipel Sanddawn bringt. An Bord gibt er Cookie ein Stück Kuchen und erklärt ihr die Karte der Inseln. Er beschreibt Sanddawn als Paradies des Lebens und weist die Gruppe auf ihre Aufgabe hin, zu Jean Vanour, dem Chef der Insel, zu reisen. Er plant, in der Bucht der Inseln anzulegen und der Gruppe ein Beiboot zur Verfügung zu stellen.
 
-**Session 2025-07-29**: Lobrecht bringt die Gruppe mit der Miaomani zur Verteidigung des Fischerdorfes Windung. Er ist überrascht über die ungewöhnliche Ruhe des sonst idyllischen Dorfes und vermutet, dass die Angriffe bereits durch sein könnten. Er vertaut das Schiff und geht mit Miaomani an Land, um die Lage zu sichern [2]. Bei einem Angriff wird er schwer verletzt, aber von [Esterossa](/characters/esterossa.md) geheilt; er organisiert die Evakuierung der Dorfbewohner [2].
+**Reise nach Windung**: Lobrecht bringt die Gruppe mit einem kleineren Schiff nach Windung, einem idyllischen Fischerdorf. Bei der Ankunft wirkt das Dorf überraschend leer, was Lobrecht beunruhigt: „Ich bin überrascht, es ist sehr ruhig. Eigentlich ist es ein sehr idyllisches Fischerdorf.“ Er vermutet, dass die Angriffe bereits durch sein könnten, und sichert zunächst das Schiff, bevor er an Land geht. Bei einem Angriff wird er schwer verletzt, aber von [Esterossa](/characters/esterossa.md) geheilt. Er organisiert die Evakuierung der Dorfbewohner.
 
-**Session 2025-11-18**: Lobrecht und Miaomani treffen die Gruppe wieder. Er berichtet von Untoten in der Nähe von Breska — Skelette, Zombies und ähnliches — die die Strecke unpassierbar machen. Er erwähnt, dass Breska keine Hilfe wollte und dass es vor einigen Wochen ein großes Treffen zwischen dem [Gildenmeister](/npcs/nox.md) und der neuen [Gilde](/factions/gilde_von_ehrenfels.md) gab, das im Fiasko endete. Er erklärt, dass er und Miaomani bis vor kurzem im Hafen von [Sanddorn](/locations/sanddorn.md) waren, aber nun, da das Klima kälter wird, wieder dorthin gehören, wo sie hingehören [3].
+**Bericht über Breska**: Lobrecht und Miaomani sind mit der Gruppe unterwegs, als das Gespräch auf Breska kommt. Lobrecht berichtet, dass sie vor einigen Tagen an Breska vorbeigekommen sind und die Strecke unpassierbar war: „[Untote](/factions/belorus_untotenarmee.md) überall, Skelette, irgendwelche Zombies.“ Miaomani musste mehrere ihrer wertvollen Kugeln verbrauchen. Er erwähnt außerdem, dass Breska keine Hilfe wollte und dass es vor einigen Wochen ein großes Treffen zwischen dem [Gildenmeister](/npcs/nox.md) und der neuen [Gilde](/factions/gilde_von_ehrenfels.md) gab, das im Fiasko endete. Er und Miaomani haben das Schiff im Hafen von Sanddorn vertaut und sind nun wieder dort, „wo wir hingehören“.
 
-**Session 2026-04-09**: In der Schlacht von Ehrenfels gehört Lobrecht zu den wichtigen Persönlichkeiten, die als Verstärkung eintreffen. Zusammen mit Miaomani und anderen Gildenmitgliedern stürmt er von hinten an und hilft Meister Pyrandras, die Stellung zu halten [4].
+**Schlacht von Ehrenfels**: Lobrecht ist eine wichtige Persönlichkeit in Ehrenfels. Am Ende der Schlacht stürmt er zusammen mit Miaomani und anderen wichtigen Persönlichkeiten sowie Gildenmitgliedern von hinten heran, um [Meister Pyrandras](/npcs/meister_pyrandras.md) zu helfen. Er gehört zu den Verstärkungen, die in der Schlacht eintreffen.
 
-**Session 2026-07-29**: Bei der Rückkehr der Gruppe nach Ehrenfels werden diese wie Helden empfangen. Lobrecht und Miaomani kommen der Gruppe entgegen; Lobrecht umarmt Lindo Laut brüderlich, während Miaomani mit verschränkten Armen hinter ihm steht und lächelt. Lobrecht erzählt, dass Nox der Gruppe die Mission erklärt habe, und dient als Informationsquelle über die Ereignisse in Ehrenfels [5].
+**Wiedersehen in Ehrenfels**: Nach der Schlacht werden die Helden wie Helden empfangen. Lobrecht und Miaomani kommen der Gruppe entgegen, umarmen sie freundschaftlich und berichten von den Ereignissen in Ehrenfels. Lobrecht erzählt, dass Nox der Gruppe die Mission erklärt hat. Er ist eine zentrale Informationsquelle für die Gruppe über die Lage in der Stadt.
 
-**Session 2026-08-18**: Lobrecht und Miaomani sind Teil der Reisegruppe, die mit Joao über die Berge zieht. Lobrecht zeigt sich angefressen, als Joao sein Zelt mit einem magischen Trick in Sekundenschnelle abbaut, während er und Miaomani eine halbe Stunde dafür gebraucht haben. Er überquert eine Brücke mit einem Seil und wird dabei von Lindo Lauts Lawine an der Schulter verletzt. Er zeigt sich skeptisch gegenüber Joaos unkonventionellem Weg, aber anerkennend gegenüber Dodo, als dieser den Basilisken zähmt [6].
+**Abstieg vom Berg**: Lobrecht und Miaomani begleiten die Gruppe auf dem Weg vom Berg. Sie brauchen eine halbe Stunde, um ihr Zelt abzubauen, während Joao dies mit einem magischen Zeit-Ei in Sekundenschnelle erledigt – sehr zum Ärgernis der beiden. Lobrecht lehnt es ab, vorauszugehen, und überlässt die Führung der Gruppe. Beim Überqueren einer Brücke mit einem Seil wird er von Lindo Lauts Lawine an der Schulter verletzt. Er zeigt sich skeptisch gegenüber Joao, aber anerkennend gegenüber Dodo, als dieser den Basilisken zähmt.
 
-**Session 2026-08-25**: Lobrecht ist Captain der Eskorte, die den Hof von Joao verteidigt. Im Nebel gelingt es ihm im letzten Augenblick, einen Angriff eines Gnolls mit seinem Degen abzuwehren, obwohl er nichts sehen kann. Er kämpft tapfer gegen die Gnolle, wird aber von der Schattenhorde schwer verletzt und von Lindo Laut in dessen Pocket Domain gerettet [7].
+**Schlacht gegen die Gnolle**: Lobrecht ist Captain der Eskorte und kämpft tapfer gegen die Gnolle. Im Nebel, in dem er nichts sehen kann, dreht er sich im letzten Augenblick um, zieht seinen Degen und hält ihn einem angreifenden Gnoll entgegen, der mit einer scharfen Axt auf ihn einschlägt. Er wird von der Schattenhorde schwer verletzt, aber von Lindo Laut in seine [Pocket Domain](/domains/pocket_domain.md) gerettet.
 
 ## Offene Fragen
 
-- Wie schwer sind Lobrechts Verletzungen aus der Schlacht am Hof von Joao, und welche Folgen haben sie für seine weitere Rolle? [7]
-- Welche genaue Position hat Lobrecht innerhalb der Gilde, und in welchem Verhältnis steht er zum Gildenmeister? [3][4]
-- Was geschah bei dem Treffen zwischen dem Gildenmeister und der neuen Gilde, von dem Lobrecht berichtet, ohne Details zu kennen? [3]
+- Was ist Lobrechts genaue Rolle innerhalb der Gilde? Er wird als „Kapitän des Gildenschiffs“ und später als „Captain der Eskorte“ bezeichnet, aber seine genaue Position und sein Rang innerhalb der Gildenhierarchie bleiben unklar.
+- Wie ist die Beziehung zwischen Lobrecht und Miaomani genau? Sie treten stets als Paar auf, aber ob es sich um eine romantische oder rein partnerschaftliche Beziehung handelt, wird nicht explizit geklärt.
+- Was geschah mit Lobrecht nach der Schlacht gegen die Gnolle? Er wurde schwer verletzt in Lindo Lauts Pocket Domain gerettet, aber sein weiterer Verbleib und seine Genesung sind nicht dokumentiert.
 
 ## Belege
 

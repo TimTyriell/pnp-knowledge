@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Dormak
-description: Dormak ist ein Diener und Komplize der Hag Landra. Er tritt in der Kapelle
-  auf, wo er die Gruppe zwingen will, sich auf den Thron zu setzen…
+description: Dormak war ein Diener Vhar'Zuls und heimlicher Komplize der Hag Landra.
+  Gemeinsam verfolgten sie das Ziel, Vhar'Zuls ursprünglichen Teil zu…
 tags:
 - npcs
 timestamp: '2026-03-31T00:00:00Z'
@@ -11,19 +11,22 @@ aliases:
 - Dormark
 ---
 
-Dormak ist ein Diener und Komplize der Hag [Landra](/npcs/lenra.md). Er tritt in der [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) auf, wo er die Gruppe zwingen will, sich auf den Thron zu setzen. Gemeinsam mit Landra verfolgte er das Ziel, [Vhar'Zul](/deities/vharzul.md) zurückzuholen – allerdings dessen ursprünglichen Teil, nicht seine besonnene Persönlichkeit. Dormak wurde schließlich von Vhar'Zul selbst ausgelöscht.
+Dormak war ein Diener [Vhar'Zuls](/deities/vharzul.md) und heimlicher Komplize der Hag [Landra](/npcs/lenra.md). Gemeinsam verfolgten sie das Ziel, Vhar'Zuls **ursprünglichen Teil** zurückzuholen – nicht die besonnene Persönlichkeit, die später in der Gestalt von [Tyrex](/deities/thyrex.md) wiedererstarkte. Gegenüber der Gruppe trat Dormak arrogant und bedrohlich auf, verschwand jedoch vorübergehend, als [Lindo Laut](/characters/lindo_laut.md) die Macht des Throns nutzte. Am Ende wandte er sich gegen Vhar'Zul und wurde vernichtet.
 
-## Rolle und Auftreten
+## Rolle und Absichten
 
-Dormak erscheint in der Kapelle als Diener Vhar'Zuls und begegnet der Gruppe arrogant und bedrohlich. Er zwingt sie, sich auf den Thron zu setzen, und überrascht sie dabei. Als [Lindo Laut](/characters/lindo_laut.md) die Macht des Throns nutzt, um die anderen Götter zu vernichten, verschwindet Dormak. Die Gruppe stuft ihn als Gegner ein, der mit Vhar'Zul in Verbindung steht.
+Als Diener Vhar'Zuls erschien Dormak in der [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) und versuchte, die Gruppe zu zwingen, sich auf den Thron zu setzen. Er galt als bedrohlicher Gegner, der mit Vhar'Zul in Verbindung stand. Tatsächlich war Dormak mit der Hag Landra verbündet: Beide wollten Vhar'Zul zurückholen, allerdings dessen ursprünglichen Teil, nicht die besonnene Persönlichkeit. Die Persönlichkeit, die der wiedererstarkte Vhar'Zul annahm – die des [Tyrex](/deities/thyrex.md) – war Dormaks Feind.
 
-## Bündnis mit Landra und Ende
+## Begegnungen mit der Gruppe
 
-Dormak war mit der Hag [Landra](/npcs/lenra.md) verbündet. Beide wollten Vhar'Zuls ursprünglichen Teil zurückholen, nicht dessen besonnene Persönlichkeit. Doch der wiedererstarkte Vhar'Zul nahm die Gestalt von [Tyrex](/deities/thyrex.md) an, und [Tyrex](/deities/thyrex.md) war Dormaks Feind. Dormak erschien, um Vhar'Zul aufzuhalten, und bat die Gruppe, ihm nicht seine Göttlichkeit zurückzugeben. Vhar'Zul löschte ihn daraufhin selbst aus. Sein Tod schwächt die Verteidigung von [Ehrenfels](/locations/ehrenfels.md).
+In der Kapelle nutzte Lindo Laut die Macht des Throns, um die anderen Götter zu vernichten; dabei verschwand Dormak. Später, als Vhar'Zul wiedererstarkte, erschien Dormak erneut, nun um Vhar'Zul aufzuhalten. Er zeigte Sorge und bat die Gruppe, Vhar'Zul nicht seine Göttlichkeit zurückerhalten zu lassen.
+
+## Ende
+
+[Dodo](/characters/dodo.md) tötete Dormak im Kampf. Sein Tod schwächte die Verteidigung von [Ehrenfels](/locations/ehrenfels.md). Die endgültige Auslöschung Dormaks vollzog jedoch Vhar'Zul selbst, weil die in Tyrex verkörperte Persönlichkeit Dormaks Feind war.
 
 # Belege
 
-[P-19] Session 2025-09-02, 01:45:58 – https://www.youtube.com/watch?v=TLZOH7TlGhk
-[P-34] Session 2026-01-20, 01:48:29 – https://www.youtube.com/watch?v=H3ckYdTv4y8
-[P-44] Session 2026-03-31, 00:33:36 – https://www.youtube.com/watch?v=Ee-K84wcxLM
-4. Kanon_Entscheidungen.md (Spielleitungs-Festlegungen)
+[P-19] Session 2025-09-02 @ 01:45:58 – https://www.youtube.com/watch?v=TLZOH7TlGhk
+[P-34] Session 2026-01-20 @ 01:48:29 – https://www.youtube.com/watch?v=H3ckYdTv4y8
+[P-44] Session 2026-03-31 @ 00:33:36 – https://www.youtube.com/watch?v=Ee-K84wcxLM

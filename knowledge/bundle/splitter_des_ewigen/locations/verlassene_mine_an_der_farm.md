@@ -21,7 +21,7 @@ Die Mine liegt im Norden des Halblingsdorfs, direkt an dessen Rand. Ihr Name ver
 
 ## Rolle im Konflikt mit den Gnollen
 
-Die Gruppe soll die Mine erkunden, da die Gnolle sie als möglichen Tunnel nutzen könnten, um das Dorf zu überraschen. Die Stollen der Mine würden sich dafür als verdeckter Zugang eignen. Ob die Gnolle bereits tatsächlich Zugang gefunden oder Vorbereitungen getroffen haben, ist nicht belegt.
+Die Gruppe soll die Mine erkunden, da die [Gnolle](/factions/gnolle.md) sie als möglichen Tunnel nutzen könnten, um das Dorf zu überraschen. Die Stollen der Mine würden sich dafür als verdeckter Zugang eignen. Ob die Gnolle bereits tatsächlich Zugang gefunden oder Vorbereitungen getroffen haben, ist nicht belegt.
 
 ## Das Ritual von Saris
 

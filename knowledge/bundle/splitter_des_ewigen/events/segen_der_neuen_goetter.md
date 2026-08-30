@@ -10,7 +10,7 @@ id: EVENT_SEGEN_DER_NEUEN_GOETTER
 subtype: Ritual
 ---
 
-Ein Ritual, das von [Auranie](/npcs/auranil.md) durchgeführt wird. Es verleiht den Empfängern einen automatischen Krit, der bis zum [Ende](/locations/ende_jenseits_der_orkgebiete.md) der nächsten Folge verwendet werden kann. Bei [Liam](/npcs/liam_velora.md) zeigt der Segen keine Wirkung.
+Ein Ritual, das von [Auranie](/npcs/auranil.md) durchgeführt wird. Es verleiht den Empfängern einen automatischen Krit, der bis zum Ende der nächsten Folge verwendet werden kann. Bei [Liam](/npcs/liam_velora.md) zeigt der Segen keine Wirkung.
 
 # Belege
 

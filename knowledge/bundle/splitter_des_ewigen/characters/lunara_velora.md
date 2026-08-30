@@ -15,13 +15,13 @@ id: CHAR_LUNARA_VELORA
 
 Lunara Velora ist eine Hexe mit weißen Haaren, die zu zwei wilden Zöpfen geflochten sind, und weiß-gelblichen Augen, die schimmern, "wie wenn Wasser im Mond spiegelt". Ihre Haut ist blass, aber nicht kränklich, sondern "eher wie so ein bisschen entfärbt". An ihren Händen und Armen trägt sie kleine Runen und Zeichen, die sie selbst nicht lesen kann. Sie ist halb Tidekin und besteht zur Hälfte aus Wasser, wodurch sie unter Wasser atmen kann. Sie stammt aus einem aufgelösten Hexenzirkel und suchte zunächst eine neue Gemeinschaft, bevor sie sich der Gruppe um [Rotunas](/characters/rotunas.md) anschloss.
 
-Im Laufe der Kampagne offenbart sich Lunara als eine Figur mit tiefer, komplexer Vergangenheit: Sie ist eine Dämonin aus der Veloria-Familie, deren Bruder [Liam](/npcs/liam_velora.md) im [Krieg](/characters/krieg.md) verloren ging und der von [Vorgul'tar](/deities/vorgul_tar.md) gefangen gehalten wird. Ihre Runen verbinden sie mit [Abyssalis](/domains/splitterwelt.md), und ein Großteil ihrer Reise dreht sich um den Versuch, ihren Bruder zu retten. Sie wird von der Gruppe als vollwertiges Mitglied akzeptiert und übernimmt zeitweise sogar eine Führungsrolle.
+Im Laufe der Kampagne offenbart sich Lunara als eine Figur mit tiefer, komplexer Vergangenheit: Sie ist eine Dämonin aus der Veloria-Familie, deren Bruder [Liam](/npcs/liam_velora.md) im [Krieg](/characters/krieg.md) verloren ging und der von [Vorgul'tar](/deities/vorgul_tar.md) gefangen gehalten wird. Ihre Runen verbinden sie mit Abyssalis, und ein Großteil ihrer Reise dreht sich um den Versuch, ihren Bruder zu retten. Sie wird von der Gruppe als vollwertiges Mitglied akzeptiert und übernimmt zeitweise sogar eine Führungsrolle.
 
 ## Rolle in der Kampagne
 
-Lunara stößt in der Taverne zur Gruppe, als diese sich auf ein Abenteuer vorbereitet. Sie ist zunächst eine Außenseiterin, die ihren Platz in der [Gilde](/factions/gilde_von_ehrenfels.md) sucht. Über die Sessions hinweg entwickelt sie sich zur treibenden Kraft hinter zentralen Entscheidungen: Sie öffnet das [Portal](/locations/portal.md) zu Abyssalis, führt die Gruppe in die Splitterwelt und ist maßgeblich daran beteiligt, die Untoten zu vernichten. Sie wird von der Gruppe als vollwertiges Mitglied akzeptiert und übernimmt in Abyssalis eine Führungsposition, obwohl sie sich darin unsicher fühlt: "Sonst immer im Abyssalis war sie eher so ein bisschen einer von den Mitläufern und sie hat immer nur das gemacht, was andere gesagt haben. Und jetzt hat sie so eine Führungsposition, irgendwie die Leute respektieren sie."
+Lunara stößt in der Taverne zur Gruppe, als diese sich auf ein Abenteuer vorbereitet. Sie ist zunächst eine Außenseiterin, die ihren Platz in der [Gilde](/factions/gilde_von_ehrenfels.md) sucht. Über die Sessions hinweg entwickelt sie sich zur treibenden Kraft hinter zentralen Entscheidungen: Sie öffnet das [Portal](/locations/portal.md) zu Abyssalis, führt die Gruppe in die [Splitterwelt](/domains/splitterwelt.md) und ist maßgeblich daran beteiligt, die Untoten zu vernichten. Sie wird von der Gruppe als vollwertiges Mitglied akzeptiert und übernimmt in Abyssalis eine Führungsposition, obwohl sie sich darin unsicher fühlt: "Sonst immer im Abyssalis war sie eher so ein bisschen einer von den Mitläufern und sie hat immer nur das gemacht, was andere gesagt haben. Und jetzt hat sie so eine Führungsposition, irgendwie die Leute respektieren sie."
 
-Ihre persönliche Mission – die Rettung ihres Bruders Liam – wird zunehmend zum zentralen Antrieb der Gruppenhandlung. Sie ist es, die die Gruppe zur Narbe führt, um Liam zu retten, und sie ist es, die am [Ende](/locations/ende_jenseits_der_orkgebiete.md) ihren Bruder durch das Portal mitnimmt.
+Ihre persönliche Mission – die Rettung ihres Bruders Liam – wird zunehmend zum zentralen Antrieb der Gruppenhandlung. Sie ist es, die die Gruppe zur Narbe führt, um Liam zu retten, und sie ist es, die am Ende ihren Bruder durch das Portal mitnimmt.
 
 ## Wichtige Merkmale
 
@@ -127,15 +127,15 @@ Lunara steht unter dem Einfluss des Neumonds und ist emotional aufgewühlt. Sie 
 
 ### Plan zur Rettung (Session 2026-03-24)
 
-Lunara offenbart ihren Plan, mit einem [Stab](/items/lindo_lauts_stab.md) ins Abyssalis zu reisen, um [Tyrex](/deities/thyrex.md) zu treffen und die Teile von Vasul zu bekämpfen. Sie zeigt ein Tattoo einer Feder, das sie schützen soll. Sie ist die treibende Kraft hinter der Entscheidung der Gruppe.
+Lunara offenbart ihren Plan, mit einem Stab ins Abyssalis zu reisen, um [Tyrex](/deities/thyrex.md) zu treffen und die Teile von Vasul zu bekämpfen. Sie zeigt ein Tattoo einer Feder, das sie schützen soll. Sie ist die treibende Kraft hinter der Entscheidung der Gruppe.
 
 ### Portal zu Abyssalis (Session 2026-03-31)
 
-Lunara öffnet das Portal zu Abyssalis mit dem Stab von Lindo Laut. Sie zeigt Entschlossenheit, ihren Bruder zu retten, und übernimmt die Führung in [Boragdil](/locations/boragdil.md), indem sie sich als Anhängerin von Vorgul'tar ausgibt. Sie erhält von Vasul Schutzrunen und einen Stein zur Rückkehr. Ihre Emotionen schwanken zwischen Hoffnung und Furcht, aber sie bleibt gefasst.
+Lunara öffnet das Portal zu Abyssalis mit dem [Stab von Lindo Laut](/items/lindo_lauts_stab.md). Sie zeigt Entschlossenheit, ihren Bruder zu retten, und übernimmt die Führung in [Boragdil](/locations/boragdil.md), indem sie sich als Anhängerin von Vorgul'tar ausgibt. Sie erhält von Vasul Schutzrunen und einen Stein zur Rückkehr. Ihre Emotionen schwanken zwischen Hoffnung und Furcht, aber sie bleibt gefasst.
 
 ### Führung in Abyssalis (Session 2026-04-14)
 
-Lunara führt die Gruppe in Abyssalis. Sie fühlt sich in ihrer Führungsrolle unsicher, ist aber entschlossen, ihre Mission zu erfüllen. Sie zeigt wenig Empathie für andere Leben und beansprucht die [Kinderseele](/npcs/kinderseele.md) als ihre Beute. Im [Kampf gegen die Hexe](/events/kampf_gegen_die_hexe.md) setzt sie ihre Fähigkeiten ein, darunter den Schleier des Abyssalis und Eisenketten, um die Hexe zu fesseln. Sie verhandelt geschickt mit der Hexe und dem Orakel und sichert der Gruppe einen sicheren Geleit nach [Seelenwacht](/locations/seelenwacht.md).
+Lunara führt die Gruppe in Abyssalis. Sie fühlt sich in ihrer Führungsrolle unsicher, ist aber entschlossen, ihre Mission zu erfüllen. Sie zeigt wenig Empathie für andere Leben und beansprucht die [Kinderseele](/npcs/kinderseele.md) als ihre Beute. Im [Kampf gegen die Hexe](/events/kampf_gegen_die_hexe.md) setzt sie ihre Fähigkeiten ein, darunter den Schleier des Abyssalis und Eisenketten, um die Hexe zu fesseln. Sie verhandelt geschickt mit der Hexe und dem Orakel und sichert der Gruppe einen sicheren Geleit nach Seelenwacht.
 
 ### Villa-Erkundung (Session 2026-05-06)
 

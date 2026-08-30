@@ -1,8 +1,8 @@
 ---
 type: Location
 title: Hartwacht
-description: Hartwacht ist eine Stadt und uneinnehmbare Orkfestung hinter einem Pass.
-  Sie ist durch einen Golem bedroht; die Gruppe plant, dorthin zu re…
+description: Hartwacht ist eine Siedlung hinter einem Pass, die in den Aufzeichnungen
+  der Gruppe sowohl als Stadt als auch als Orkfestung bezeichnet wir…
 tags:
 - locations
 timestamp: '2026-03-18T00:00:00Z'
@@ -12,17 +12,21 @@ aliases:
 - Hardwacht
 ---
 
-**Hartwacht** ist eine Stadt und uneinnehmbare Orkfestung hinter einem Pass. Sie ist durch einen Golem bedroht; die Gruppe plant, dorthin zu reisen, um Informationen über das [Ende](/locations/ende_jenseits_der_orkgebiete.md) zu erhalten.
+Hartwacht ist eine Siedlung hinter einem Pass, die in den Aufzeichnungen der Gruppe sowohl als Stadt als auch als Orkfestung bezeichnet wird. Sie gilt als uneinnehmbar. Die Magier wollten sie schützen; zugleich ist sie durch einen Golem bedroht, falls dieser die Kristalle erreicht. Die Gruppe plante, nach Hartwacht zu reisen, um dort Informationen über das Ende zu erhalten.
 
-## Charakter und Lage
+## Lage und Wege
 
-Hartwacht liegt hinter einem Pass, der von Vargen und anderen Kreaturen bewohnt wird. Die Siedlung gilt als uneinnehmbare Orkfestung; zugleich wird sie als Stadt beschrieben, die die Magier schützen wollten.
+Hartwacht liegt hinter einem Pass, der von Vargen und anderen Kreaturen bewohnt wird. Der Pass bildet den Zugang zur Siedlung und trägt zu ihrer Abgeschiedenheit bei.
 
-## Bedrohung und Reiseplan der Gruppe
+## Verteidigung und Herrschaft
 
-Falls der Golem die Kristalle erreicht, bedroht er Hartwacht. Die Gruppe plant, nach Hartwacht zu reisen, um dort Informationen über das Ende zu erhalten.
+Die Siedlung wird als uneinnehmbar beschrieben. Frühe Erwähnungen nennen Hartwacht eine Stadt, die die Magier schützen wollten; eine spätere Aufzeichnung nennt sie eine Orkfestung. Die genaue Art der Herrschaft oder der Schutzverhältnisse geht aus den Belegen nicht eindeutig hervor.
+
+## Bedrohung und Bedeutung
+
+Ein Golem bedroht Hartwacht, falls er die Kristalle erreicht. Die Magier wollten die Stadt offenbar vor dieser Bedrohung bewahren. Die Gruppe erhoffte sich in Hartwacht Informationen über das Ende. Ob die Kristalle und das Ende miteinander zusammenhängen, ist nicht überliefert.
 
 # Belege
 
-[P-25] Session 2025-10-07, 00:09:39, https://www.youtube.com/watch?v=qVAF_54S8Vw
-[P-41] Session 2026-03-18, 00:45:15, https://www.youtube.com/watch?v=HHXxsASLrbQ
+[P-25] Session 2025-10-07, 00:09:39 – [YouTube](https://www.youtube.com/watch?v=qVAF_54S8Vw)
+[P-41] Session 2026-03-18, 00:45:15 – [YouTube](https://www.youtube.com/watch?v=HHXxsASLrbQ)

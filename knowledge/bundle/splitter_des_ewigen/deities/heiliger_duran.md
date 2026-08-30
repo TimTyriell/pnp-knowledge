@@ -38,9 +38,9 @@ Die Gottheit reagiert auf Vergehen gegen ihre Ordnung: Das Töten ihrer Engel f�
 
 ## Chronologie
 
-**Session 2025-06-25:** Lindo Laut trägt das [Amulett des Duran](/items/amulett_des_heiligen_duran.md) bei sich. In einem Gespräch mit einer Person, die sich als nicht ganz lebendig zu erkennen gibt und Fähigkeiten jenseits normaler Magie besitzt, zeigt Lindo Laut das Amulett. Die Person erkennt dessen Macht an. Im weiteren Verlauf der Session wird das Amulett verunreinigt und verliert seine Verbindung zu Duran. Ein Magier empfiehlt, bei Duran um Vergebung zu beten.
+**Session 2025-06-25:** Lindo Laut trägt das Amulett des Duran bei sich. In einem Gespräch mit einer Person, die sich als nicht ganz lebendig zu erkennen gibt und Fähigkeiten jenseits normaler Magie besitzt, zeigt Lindo Laut das Amulett. Die Person erkennt dessen Macht an. Im weiteren Verlauf der Session wird das Amulett verunreinigt und verliert seine Verbindung zu Duran. Ein Magier empfiehlt, bei Duran um Vergebung zu beten.
 
-**Session 2025-07-09:** Die Gruppe befindet sich in der Bibliothek des Vampirs Voras. Dort öffnen sie durch Zufall ein Buch und töten dabei versehentlich vier Engel des heiligen Duran. Dadurch verändert sich das Amulett von Lindo Laut: Die vier getöteten Engel hausen nun darin und geben dunkle Magie von sich. Die Priesterin des Dorfes verweigert der Gruppe den Zugang, und alle, die mit Duran in Verbindung stehen, verabscheuen das Amulett. Die Gruppe versucht herauszufinden, was das Amulett von ihnen will. Am nächsten Tag wachen sie an einem schwarzen Abgrund mit schwarzem Wasser auf – ein Ereignis, dessen Zusammenhang mit Duran unklar bleibt.
+**Session 2025-07-09:** Die Gruppe befindet sich in der Bibliothek des Vampirs Voras. Dort öffnen sie durch Zufall ein Buch und töten dabei versehentlich vier Engel des heiligen Duran. Dadurch verändert sich das [Amulett von Lindo Laut](/items/amulett_des_heiligen_duran.md): Die vier getöteten Engel hausen nun darin und geben dunkle Magie von sich. Die Priesterin des Dorfes verweigert der Gruppe den Zugang, und alle, die mit Duran in Verbindung stehen, verabscheuen das Amulett. Die Gruppe versucht herauszufinden, was das Amulett von ihnen will. Am nächsten Tag wachen sie an einem schwarzen Abgrund mit schwarzem Wasser auf – ein Ereignis, dessen Zusammenhang mit Duran unklar bleibt.
 
 ## Offene Fragen
 

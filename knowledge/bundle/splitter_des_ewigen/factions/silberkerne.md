@@ -1,8 +1,8 @@
 ---
 type: Faction
 title: Silberkerne
-description: Die Silberkerne sind eine Organisation von Banditen, die in der Region
-  um die nördliche Schneise operiert. Sie führen ein nomadisches Leben…
+description: 'Die Silberkerne sind eine Organisation von Banditen, die in mehreren
+  Lagern operiert. Sie werden von zwei Personen gemeinsam angeführt: Har…'
 tags:
 - factions
 timestamp: '2026-03-24T00:00:00Z'
@@ -22,59 +22,57 @@ aliases:
 
 ## Überblick
 
-Die Silberkerne sind eine Organisation von Banditen, die in der Region um die nördliche Schneise operiert. Sie führen ein nomadisches Leben mit mehreren Lagern und Verstecken und sind nach ihrem Wappen benannt: ein grauer Schild mit drei Apfelkörnern. Die Organisation wird von zwei Personen gemeinsam angeführt: **[Harl](/npcs/hal_harl.md)** und **[Sarina](/npcs/sarina.md)**. Einzelne Zellen werden von untergeordneten Anführern geleitet; so führt **[Floran](/npcs/floran.md)** die Zelle auf der Heinrich-Farm.
-
-Die Silberkerne sind derzeit massiv unter Druck: Sie werden von der Stadt [Willauch](/locations/willauch.md) für den Mord an einem Diplomaten verantwortlich gemacht und sollen ausgerottet werden. Mehrere ihrer Lager wurden bereits zerstört oder ausgelöscht. Die Gruppe um die Abenteurer hat im Laufe der Kampagne wechselnde Begegnungen mit ihnen — von freundschaftlicher Zusammenarbeit bis hin zu offener Feindschaft.
+Die Silberkerne sind eine Organisation von Banditen, die in mehreren Lagern operiert. Sie werden von zwei Personen gemeinsam angeführt: **[Harl](/npcs/hal_harl.md)** und **[Sarina](/npcs/sarina.md)**. Die Gruppe trägt ein Wappen, das [Nyrella](/characters/nyrella.md) als „grauer Grund, also wie so ein Schild, grauer Grund mit so Apfel, so drei Apfelkörnern“ beschreibt – daher auch der Name Silberkornbande. Die Silberkerne sind in der nördlichen Schneise aktiv und haben Verbindungen bis in die Region um [Willauch](/locations/willauch.md). Ihr Ruf ist zwiespältig: Einerseits arbeiten sie mit Flüchtlingen zusammen und verteidigen ein Lager, andererseits werden sie beschuldigt, einen Diplomaten ermordet zu haben, und gelten in Willauch als „ganz schlimme Banditen“, die „ausgerottet werden“ müssen.
 
 ## Rolle in der Kampagne
 
-Die Silberkerne sind eine wiederkehrende Fraktion, deren Verhältnis zur Abenteurergruppe sich mehrfach wandelt. Zunächst begegnen die Helden ihnen als unbekannte Banditengruppe in der nördlichen Schneise, deren Lager sie auskundschaften. Später arbeiten die Banditen mit Flüchtlingen zusammen und verteidigen gemeinsam ein Dorf, in dem die Gruppe Unterschlupf findet. [Nyrella](/characters/nyrella.md) verbringt dort längere Zeit und freundet sich mit Harl an, der ihr ein selbst geschnitztes Püppchen als Glücksbringer mitgibt — ein Gegenstand, der später als Erkennungszeichen gegenüber anderen Silberkernen dient.
+Die Silberkerne begleiten die Gruppe über mehrere Stationen. Zunächst begegnen die Helden ihnen als geheimnisvolle Banditen in der nördlichen Schneise, deren Lager in einer [Festung](/locations/festung.md) liegt. Später erweist sich, dass dieselbe Gruppe mit Flüchtlingen zusammenarbeitet und ein Dorf verteidigt. Nyrella verbringt Zeit bei ihnen und erhält von Harl ein hölzernes Püppchen als Glücksbringer – ein Andenken aus seinem früheren Leben, das er bei sich trug, bevor er Räuber wurde. Dieses Püppchen dient später als Erkennungszeichen gegenüber der Silberkornbande an der [Silbergruft](/locations/silbergruft.md).
 
-Im weiteren Verlauf wendet sich das Blatt: Die Silberkerne geraten ins Visier von Willauch, das sie für den Mord an einem Diplomaten verantwortlich macht. Die Abenteurer werden mehrfach mit Aufträgen gegen die Banditen konfrontiert, unter anderem sollen sie die Zelle auf der Heinrich-Farm ausschalten. Gleichzeitig gibt es innerhalb der Gruppe Stimmen, die die Silberkerne schützen wollen — so äußert [Rotunas](/characters/rotunas.md) den Wunsch, sie zu beschützen, während andere die Gruppe nicht als Priorität sehen. Die Frage, wie mit den Silberkernen umzugehen ist, wird zu einem wiederkehrenden strategischen Thema der Gruppe.
+Im weiteren Verlauf geraten die Silberkerne unter Druck: Sie werden von Willauch für den Mord an einem Diplomaten verantwortlich gemacht. Ein Lager haben sie bereits verloren, ein weiteres wurde ausgelöscht. Ein Mitglied kontaktiert die Gruppe am Lagerfeuer und überbringt eine Nachricht von Harl, die sie auffordert, einen Sündenbock zu finden. Die Gruppe steht damit vor der Frage, wie sie mit den Silberkernen umgehen soll – zumal Harl ihnen offenbar wohlgesonnen ist und sie sogar eine Münze als Zeichen erhalten haben.
 
 ## Wichtige Merkmale
 
-Die Silberkerne sind eine dezentral organisierte Banditengruppe mit mehreren Lagern und Verstecken. Sie operieren in der nördlichen Schneise und haben sich dort in schwer zugänglichem, gut zu verteidigendem Gelände eingerichtet. Ihr erstes bekanntes Lager befindet sich in einer [Festung](/locations/festung.md) beziehungsweise Ruine am [Ende](/locations/ende_jenseits_der_orkgebiete.md) eines langen, engen Waldes, die nur mit genauer Wegweisung der Dorfbewohner zu finden ist. Ein weiteres Lager schlagen sie in der Nähe der [Silbergruft](/locations/silbergruft.md) auf, wo sie über den Winter bleiben. Später übernehmen sie die [Farm der Heinrichs](/locations/farm_der_heinrichs.md) und nutzen ein unterirdisches Versteck unter dem Anwesen.
+Die Silberkerne sind eine Organisation mit mehreren Lagern. Bekannt sind:
 
-Die Organisation trägt ein Wappen: ein grauer Schild mit drei Apfelkörnern, das auch in persönliche Gegenstände eingeritzt wird. Die Banditen sind misstrauisch gegenüber Fremden, erweisen sich aber als freundlich, sobald Vertrauen aufgebaut ist — etwa wenn die Gruppe beweist, dass sie Harl persönlich kennt.
+- **Ein Lager in einer Festung** in der nördlichen Schneise, das von zwei Anführern geleitet wird, von denen einer Harl ist. Der Ort ist „ultra gut zu verteidigen“ und ohne genaue Wegweisung der Dorfbewohner kaum zu finden.
+- **Ein Lager bei den Flüchtlingen**: Die Banditen haben sich mit Flüchtlingen angefreundet, patrouillieren die Palisade eines befestigten Dorfes und halfen beim Bau von Hütten, einem Graben und einem Aussichtsturm.
+- **Ein Lager an der Silbergruft**: Die Silberkornbande hat sich dort über den Winter aufgehalten und wartet auf Anweisungen von Harl und Sarina. Sie haben die oberen Ebenen der Mine geplündert, sich aber nicht in die Tiefe getraut. Sie sind misstrauisch, aber freundlich, nachdem die Gruppe beweist, dass sie Harl kennen. Sie geben Informationen über die Kreaturen in der Mine und warnen vor dem Gift.
+- **Ein unterirdisches Versteck unter der Heinrich-Farm**, das von [Floran](/npcs/floran.md) angeführt wird. Diese Zelle hat den Diplomaten ermordet, der Willauch zum Vorgehen gegen die Silberkerne veranlasst hat.
 
-In der Nähe der Silbergruft haben die Silberkerne die oberen Ebenen der [Mine](/locations/verlassene_mine_an_der_farm.md) geplündert, sich aber nicht in die Tiefe getraut. Sie warnen vor den Kreaturen in der Mine und vor deren Gift. Die Banditen geben Informationen über die Gefahren der Gegend weiter, wenn man ihr Vertrauen gewonnen hat.
+Die Silberkerne führen ein Wappen: ein Schild auf grauem Grund mit drei Apfelkörnern. Harl hat dieses [Symbol](/items/symbol_in_der_villa.md) in das Püppchen eingeritzt, das er Nyrella mitgab.
 
 ## Beziehungen und Verbindungen
 
-**Harl** ist einer der beiden Anführer der Silberkerne. Er hat Nyrella ein selbst geschnitztes Püppchen geschenkt, das er aus seinem früheren Leben vor seiner Zeit als Räuber bei sich trug. Er erinnert sich selbst nicht mehr genau daran, warum er es besaß, wollte es Nyrella aber als Glücksbringer mitgeben. Harl ist auch derjenige, der später eine Nachricht übermitteln lässt, die die Silberkerne auffordert, einen Sündenbock für die Anschuldigungen zu finden.
-
-**Sarina** ist die zweite Anführerin der Silberkerne und führt die Organisation gemeinsam mit Harl.
-
-**Floran** führt die Zelle der Silberkerne auf der Heinrich-Farm. Er ist kein Anführer der gesamten Organisation, sondern nur dieser einen Zelle.
-
-**Willauch** ist der Gegenspieler der Silberkerne: [Die Stadt](/locations/ehrenfels.md) beschuldigt sie, einen Diplomaten ermordet zu haben, und setzt Kopfgeld beziehungsweise Aufträge gegen sie aus. Die Silberkerne sollen „ausgerottet werden".
-
-**[Die Flüchtlinge](/factions/fluechtlinge_aus_breska.md)**: In einer Phase der Kampagne arbeiten die Silberkerne mit Flüchtlingen zusammen, verteidigen gemeinsam ein Dorf mit Palisade und Graben und bauen Hütten für den Winter. Die Zusammenarbeit kommt den Bewohnern deutlich zugute.
-
-**Die Abenteurergruppe**: Das Verhältnis ist wechselhaft — von freundschaftlicher Verbindung über Harl bis hin zu Aufträgen, die gegen die Silberkerne führen.
+- **Harl**: Einer der beiden Anführer der gesamten Organisation. Er hat Nyrella ein selbst geschnitztes Püppchen geschenkt, das er aus seinem Leben vor der Räuberzeit bei sich trug. Er schickt der Gruppe eine Nachricht mit der Aufforderung, einen Sündenbock zu finden.
+- **Sarina**: Die zweite Anführerin der Silberkerne. Über sie ist bislang wenig bekannt; sie wird gemeinsam mit Harl als Anführerin genannt.
+- **Floran**: Führt lediglich die Zelle auf der Heinrich-Farm, nicht die gesamte Organisation.
+- **Nyrella**: Hat engen Kontakt zu den Silberkernen, kennt Harl persönlich und besitzt dessen Püppchen als Erkennungszeichen.
+- **Willauch**: Beschuldigt die Silberkerne des Mordes an einem Diplomaten und will sie ausrotten lassen. Verbündete von Willauch sind aufgerufen, gegen die Silberkerne vorzugehen.
+- **Flüchtlinge**: Die Silberkerne arbeiten mit Flüchtlingen zusammen und verteidigen gemeinsam ein Lager.
 
 ## Chronologie
 
-**Erste Sichtung (Session 2025-09-23):** Die Gruppe kundschaftet das Gebiet der nördlichen Schneise aus und findet eine gut versteckte Passage, die zu einer Festung beziehungsweise Ruine führt. Es ist klar, dass die Banditen ohne genaue Wegweisung der Dorfbewohner nicht zu finden wären. [Die Festung](/locations/die_festung.md) ist ein extrem gut zu verteidigender Ort.
+**Session 2025-09-23**: Die Gruppe kundschaftet die nördliche Schneise aus und findet eine gut versteckte Passage zu einem erhöhten Felsgebiet. Dort entdecken sie am Ende eines Tals eine Festung, die eher nach Festung als nach Ruine aussieht. Die Banditen sind ohne die Wegweisung der Dorfbewohner kaum zu finden.
 
-**Zusammenarbeit mit Flüchtlingen (Session 2026-01-13):** Die Banditen haben sich mit Flüchtlingen angefreundet und verteidigen gemeinsam ein Dorf. Es wurden Hütten gebaut, ein Graben gezogen, eine Palisade errichtet und ein Aussichtsturm erstellt. Die Banditen patrouillieren überwiegend, ab und zu wechseln sich die Dorfbewohner ab. Nyrellas Arbeit hat maßgeblich zum Zusammenhalt des Dorfes beigetragen.
+**Session 2026-01-13**: Das Dorf hat sich deutlich verbessert. Die Banditen verstehen sich nun viel besser mit den Flüchtlingen, haben gemeinsam Hütten gebaut, einen Graben gezogen und eine Palisade errichtet. Die Banditen patrouillieren überwiegend, ab und zu wechseln sich Dorfbewohner ab. Nyrellas Arbeit hat maßgeblich zur Verbesserung beigetragen.
 
-**Begegnung an der Silbergruft (Session 2026-02-24):** Die Silberkornbande hat sich in der Nähe der Silbergruft über den Winter aufgehalten und wartet auf Anweisungen von Harl und Sarina. Nyrella besitzt ein Püppchen von Harl mit dem eingeritzten Wappen der Bande — grauer Grund mit drei Apfelkörnern — und nutzt es als Beweis, dass die Gruppe Harl kennt. Die Banditen sind zunächst misstrauisch, dann freundlich, und geben Informationen über die Kreaturen in der Mine und warnen vor dem Gift.
+**Session 2026-02-24**: Nyrella erzählt, dass Harl ihr ein Püppchen geschenkt hat, das er aus seinem vergangenen Leben bei sich trug. Sie hat herausgefunden, dass die Bande „Silberkornbande“ heißt. An der Silbergruft trifft die Gruppe auf Mitglieder der Bande, die dort überwintern. Die Banditen sind zunächst misstrauisch, werden aber freundlich, als die Gruppe das Püppchen als Beweis zeigt, dass sie Harl kennen. Sie geben Informationen über die Kreaturen in der Mine und warnen vor dem Gift.
 
-**Anschuldigungen durch Willauch (Session 2026-03-18):** Die Silberkerne werden von Willauch beschuldigt, Diplomaten ermordet zu haben. Ein Lager wurde verloren, ein weiteres ausgelöscht. Ein Mitglied kontaktiert die Gruppe am Lagerfeuer und überbringt eine Nachricht von Harl, die die Silberkerne auffordert, einen Sündenbock zu finden. Rotunas wird bei der Erwähnung des Namens bleich. Ein Söldner wirbt die Gruppe an, gegen die Silberkerne vorzugehen: „Die Silberkerne müssen ausgerottet werden. Das sind wirklich ganz schlimme Banditen und haben irgendwen Wichtiges in Willauch vernichtet."
+**Session 2026-03-18**: In Willauch ist die Stimmung gegen die Silberkerne aufgeheizt: Sie werden beschuldigt, „irgendwen Wichtiges in Willauch vernichtet“ zu haben – einen Diplomaten. Ein Piratenlager in der Nähe soll den Silberkernen gehören und soll „geräumt“ werden. [Rotunas](/characters/rotunas.md) wird bei der Erwähnung des Namens bleich. Ein Mitglied der Silberkerne kontaktiert die Gruppe am Lagerfeuer und überbringt eine Nachricht von Harl, die sie auffordert, einen Sündenbock zu finden. Die Silberkerne haben bereits ein Camp verloren, ein weiteres wurde ausgelöscht.
 
-**Übernahme der Heinrich-Farm (Session 2026-03-23):** Die Silberkerne haben die Farm der Heinrichs übernommen und werden von Floran angeführt. Sie haben einen Diplomaten ermordet. Die Gruppe soll sie ausschalten. Die Banditen haben ein unterirdisches Versteck unter der Farm.
+**Session 2026-03-23**: Die Gruppe nimmt sich der Quest an, die Silberkerne auszuschalten. Sie treffen sich an einem Wasserfall, um das Vorgehen zu besprechen. Die Silberkerne haben die [Farm der Heinrichs](/locations/farm_der_heinrichs.md) übernommen und werden von Floran angeführt. Sie haben ein unterirdisches Versteck unter der Farm.
 
-**Debatte über das Vorgehen (Session 2026-03-24):** Die Gruppe diskutiert, wie sie mit den Silberkernen umgehen soll. Rotunas will sie beschützen, während andere die Gruppe nicht als Priorität sehen. Es wird klargestellt, dass die Banditen, gegen die die Gruppe gemeinsam mit [Belorus](/npcs/belorus.md) gekämpft hat, dieselben sind wie die Silberkerne — und auch die, bei denen die Flüchtlinge untergekommen waren.
+**Session 2026-03-24**: Die Gruppe bespricht ihre Strategie im Umgang mit den Silberkernen. [Lindo Laut](/characters/lindo_laut.md) erinnert daran, dass Harl ihnen etwas geschickt hat – eine Münze, die als Zeichen dient. [Esterossa](/characters/esterossa.md) fragt nach, wer die Silberkerne überhaupt sind, und wird von Lindo Laut und Nyrella aufgeklärt: Es sind die Banditen, gegen die sie bei [Belorus](/npcs/belorus.md) gekämpft haben, und die Banditen, bei denen die Flüchtlinge untergekommen sind.
 
 ## Offene Fragen
 
-- Was genau ist der Mord an dem Diplomaten, der den Silberkernen zur Last gelegt wird? Die Umstände und die Frage, ob die Anschuldigungen berechtigt sind, bleiben unklar.
-- Was ist aus dem Lager an der Silbergruft und der Zusammenarbeit mit den Flüchtlingen geworden? Der weitere Verbleib dieser Gruppe ist ungeklärt.
-- Wie reagieren Harl und Sarina auf die Anschuldigungen und die Zerstörung ihrer Lager? Ihre aktuelle Position und ihr Aufenthaltsort sind unbekannt.
-- Welche weiteren Zellen und Lager der Organisation existieren neben der Heinrich-Farm?
-- Was genau hat es mit der Nachricht von Harl auf sich, einen Sündenbock zu finden — und wer könnte dieser Sündenbock sein?
+- Was genau ist der Inhalt der Nachricht von Harl, die ein Mitglied der Silberkerne der Gruppe überbracht hat? Die Aufforderung, einen Sündenbock zu finden, wirft die Frage auf, wen Harl als Sündenbock vorsieht und was die Gruppe davon hat.
+- Welche Rolle spielt die Münze, die Harl der Gruppe geschickt hat? Ihre genaue Funktion ist bislang unklar.
+- Wie viele Lager hat die Organisation insgesamt? Bekannt sind die Festung in der nördlichen Schneise, das Lager bei den Flüchtlingen, das Lager an der Silbergruft und das Versteck unter der Heinrich-Farm – ob es weitere gibt, ist unklar.
+- Was ist aus dem Lager in der nördlichen Schneise und dem Lager bei den Flüchtlingen geworden, nachdem die Silberkerne unter Druck geraten sind?
+- Welche Verbindung besteht zwischen den Silberkernen und dem Piratenlager, das in Willauch als ihr Lager bezeichnet wird?
+- Wie reagieren Harl und Sarina auf die Anschuldigungen aus Willauch? Harls Nachricht deutet darauf hin, dass er eine Lösung sucht, aber seine genauen Pläne sind unbekannt.
+- Was geschah mit dem Diplomaten, dessen Ermordung den Silberkernen zur Last gelegt wird? Die Umstände des Mordes sind nicht geklärt.
 
 ## Belege
 

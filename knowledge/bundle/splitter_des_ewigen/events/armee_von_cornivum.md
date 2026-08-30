@@ -10,7 +10,7 @@ id: EVENT_ARMEE_VON_CORNIVUM
 subtype: Sonstiges
 ---
 
-Am [Ende](/locations/ende_jenseits_der_orkgebiete.md) der Session marschiert eine riesige Armee aus Gnollen, [Bugbears](/npcs/bugbears.md), [Goblins](/npcs/pilz_goblins.md), Trollen und Ogern aus der [Festung](/locations/festung.md) von [Cornivum](/locations/cornivum.md), angeführt von einem großen Bären.
+Am Ende der Session marschiert eine riesige Armee aus Gnollen, Bugbears, [Goblins](/npcs/pilz_goblins.md), Trollen und Ogern aus der [Festung](/locations/festung.md) von [Cornivum](/locations/cornivum.md), angeführt von einem großen Bären.
 
 # Belege
 

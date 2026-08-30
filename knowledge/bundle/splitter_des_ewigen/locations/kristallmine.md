@@ -13,7 +13,7 @@ aliases:
 - Die Mine
 ---
 
-Eine [Mine](/locations/verlassene_mine_an_der_farm.md) in der Nähe des Zeltes, in der grüne und lila Kristalle wachsen. Sie enthält eine [Kontrollrune](/items/kontrollrune.md), die den Golem steuert.
+Eine Mine in der Nähe des Zeltes, in der grüne und lila Kristalle wachsen. Sie enthält eine [Kontrollrune](/items/kontrollrune.md), die den Golem steuert.
 
 # Belege
 

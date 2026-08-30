@@ -10,7 +10,7 @@ id: LOC_WINTERLAGER
 subtype: Siedlung
 ---
 
-Das Winterlager der Gruppe wurde mit Palisaden, Graben und Aussichtsturm befestigt. Es ist ein Zufluchtsort für [Flüchtlinge](/factions/fluechtlinge_aus_breska.md) und [Banditen](/factions/silberkerne.md), die nun zusammenarbeiten. Die Gruppe diskutiert über die Zukunft des Lagers und plant den Abzug nach dem Winter.
+Das Winterlager der Gruppe wurde mit Palisaden, Graben und Aussichtsturm befestigt. Es ist ein Zufluchtsort für Flüchtlinge und [Banditen](/factions/silberkerne.md), die nun zusammenarbeiten. Die Gruppe diskutiert über die Zukunft des Lagers und plant den Abzug nach dem Winter.
 
 # Belege
 

@@ -57,7 +57,7 @@ Sange ist misstrauisch gegenüber Saris und setzt eine Fähigkeit ein, um dessen
 
 ### Bruma
 
-Auch gegenüber Bruma zeigt Sange zunächst Misstrauen. Dennoch folgt er Bruma in die [Mine](/locations/verlassene_mine_an_der_farm.md), getrieben von seinem Blut, das nach Kampf schreit.
+Auch gegenüber Bruma zeigt Sange zunächst Misstrauen. Dennoch folgt er Bruma in die Mine, getrieben von seinem Blut, das nach Kampf schreit.
 
 ### Die Gruppe
 

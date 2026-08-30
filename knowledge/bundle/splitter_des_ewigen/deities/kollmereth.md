@@ -26,9 +26,9 @@ Im Verlauf der Kampagne wurde Koll'Mereths Seelenstück durch die Handlungen der
 
 Koll'Mereth begegnete der Gruppe auf zwei Wegen: als physische Statue an einem Opferaltar in der oberen Etage einer [Festung](/locations/festung.md) und als eines der vier Seelenstücke im [Amulett von Lindo Laut](/items/amulett_des_heiligen_duran.md).
 
-In der Festung diente seine Statue als Opferaltar, der mit [Nerash](/deities/nerash.md) verbunden war. Die Gruppe erfuhr, dass sie geopfert werden müsste, um weiterzukommen. Durch die [Befreiung von Nerash](/events/befreiung_von_nerash.md) wurde die Statue zerstört – ein Ereignis, das sich später als folgenschwerer herausstellte, als zunächst angenommen.
+In der Festung diente seine Statue als Opferaltar, der mit [Nerash](/deities/nerash.md) verbunden war. Die Gruppe erfuhr, dass sie geopfert werden müsste, um weiterzukommen. Durch die [Befreiung von Nerash](/events/die_befreiung_von_nerash.md) wurde die Statue zerstört – ein Ereignis, das sich später als folgenschwerer herausstellte, als zunächst angenommen.
 
-Am alten Schrein, an dem die Gruppe die vier Seelenstücke untersuchte, symbolisierte eine von vier Statuen Koll'Mereth. Dort erkannte Lindo Laut, dass das Seelenstück, das Nerash ausgelöscht hatte, das von Koll'Mereth war. Seitdem sind von den vier bekannten Seelen nur noch drei im Amulett verblieben.
+Am alten Schrein, an dem die Gruppe die vier Seelenstücke untersuchte, symbolisierte eine von vier Statuen Koll'Mereth. Dort erkannte Lindo Laut, dass das Seelenstück, das [Nerash](/deities/nerash.md) ausgelöscht hatte, das von Koll'Mereth war. Seitdem sind von den vier bekannten Seelen nur noch drei im Amulett verblieben.
 
 ## Wichtige Merkmale
 
@@ -52,7 +52,7 @@ Die Statue in der Festung wies eine spürbare Verbindung zur Lanze auf, die die 
 
 In der ersten Begegnung (Session 2025-07-09) fand die Gruppe in der oberen Etage einer Festung eine Statue mit der Aufschrift „Kol Merefs". Die Kerzen davor waren erloschen, das Amulett von Lindo Laut reagierte kaum – nur ein „landsleichtes Lichtchen" war noch zu vermerken. Die Gruppe vermutete, dass sie durch ihre Handlungen etwas befreit hatten. Cookie spürte beim Berühren der Statue ein Kältegefühl ähnlich wie bei der Lanze. Die Gruppe erfuhr, dass sie geopfert werden müsste, um weiterzukommen. Durch die Befreiung von Nerash wurde die Statue zerstört.
 
-In der zweiten Begegnung (Session 2025-07-22) zeigte Lindo Laut am alten Schrein auf vier Statuen, die die vier Seelenstücke symbolisierten. Über jeder Statue standen Schriftzeichen, die die Namen der Seelen im Amulett kennzeichneten – „angefangen von links mit Koll. Und endet mit dem Glutkollegen ganz rechts." Lindo Laut befürchtete, dass einer der Seelen nicht mehr existierte, und vermutete, dass Nerash ihn ausgelöscht hatte. Der GM bestätigte diese Vermutung als naheliegend: Wenn dem so sei, dann liege die Macht nun auf den drei verbliebenen Seelen. Wer auch immer am [Ende](/locations/ende_jenseits_der_orkgebiete.md) übrig bliebe, wäre in der Lage, den Alten zurückzuholen – wobei Lindo Laut auf [Vortrex](/deities/vortrex.md) verwies. Esterossa betonte, dass man auf jeden Fall verhindern sollte, dass es weniger als drei Seelen würden.
+In der zweiten Begegnung (Session 2025-07-22) zeigte Lindo Laut am alten Schrein auf vier Statuen, die die vier Seelenstücke symbolisierten. Über jeder Statue standen Schriftzeichen, die die Namen der Seelen im Amulett kennzeichneten – „angefangen von links mit Koll. Und endet mit dem Glutkollegen ganz rechts." Lindo Laut befürchtete, dass einer der Seelen nicht mehr existierte, und vermutete, dass Nerash ihn ausgelöscht hatte. Der GM bestätigte diese Vermutung als naheliegend: Wenn dem so sei, dann liege die Macht nun auf den drei verbliebenen Seelen. Wer auch immer am Ende übrig bliebe, wäre in der Lage, den Alten zurückzuholen – wobei Lindo Laut auf [Vortrex](/deities/vortrex.md) verwies. Esterossa betonte, dass man auf jeden Fall verhindern sollte, dass es weniger als drei Seelen würden.
 
 ## Offene Fragen
 

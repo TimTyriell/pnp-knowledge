@@ -10,7 +10,7 @@ id: FACTION_DIE_GNOLLE
 subtype: Volk
 ---
 
-Die [Gnolle](/factions/gnolle.md) sind eine feindliche Fraktion, die die Gegend um das Halblingsdorf bedroht. Sie treten als organisierte Gruppe mit einem großen Lager in Erscheinung und stellen eine unmittelbare Gefahr für die umliegenden Siedlungen dar.
+Die [Gnolle](/factions/gnolle.md) sind eine feindliche Fraktion, die die Gegend um das [Halblingsdorf](/locations/halblingsdorf.md) bedroht. Sie treten als organisierte Gruppe mit einem großen Lager in Erscheinung und stellen eine unmittelbare Gefahr für die umliegenden Siedlungen dar.
 
 ## Bedrohungslage und Angriffspläne
 

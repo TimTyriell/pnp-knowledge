@@ -1,8 +1,8 @@
 ---
 type: Deity
 title: Gruul
-description: Gruul, Herr der Glutbande, ist eine nordische Gottheit, die in der Region
-  der Kampagne nicht verehrt wird. Seine Domänen sind Feuer, Treue…
+description: Gruul, Herr der Glutbande, ist ein Gott des Feuers, der Treue und der
+  Vulkane. Sein Symbol ist ein brennender Ring, und als Opfergaben werd…
 tags:
 - deities
 timestamp: '2026-03-03T00:00:00Z'
@@ -10,23 +10,21 @@ id: DEITY_GRUUL
 subtype: Neuer Gott
 ---
 
-# Gruul
+Gruul, Herr der Glutbande, ist ein Gott des Feuers, der Treue und der Vulkane. Sein [Symbol](/items/symbol_in_der_villa.md) ist ein brennender Ring, und als Opfergaben werden ihm Valuta-Salze und Obsidian dargebracht. In der Bibliothek wird Gruul als neuer Gott erwähnt: Als [Dodo](/characters/dodo.md) dort nach einem Buch über ihn suchte, hatte der Bibliothekar keins vorrätig, da Gruul ein nordischer Gott ist und in dieser Region nicht verehrt wird.
 
-Gruul, Herr der Glutbande, ist eine nordische Gottheit, die in der Region der Kampagne nicht verehrt wird. Seine Domänen sind Feuer, Treue und Vulkane; sein [Symbol](/items/symbol_in_der_villa.md) ist ein brennender Ring. [Goblins](/npcs/pilz_goblins.md), Drachen und Kobolde zählen zu seinen Anhängern, als Opfergaben dienen Valuta-Salze und Obsidian. In der Kampagne wird er als neuer Gott erwähnt, zu dem die Gruppe zunächst kein Buch findet.
+## Rolle und Verehrung
 
-## Domänen und Gebote
+Gruul herrscht über die Domänen Feuer, Treue und Vulkane. Seine Anhänger sind vor allem [Goblins](/npcs/pilz_goblins.md), Drachen und Kobolde. Seine Verehrung ist im Norden beheimatet; in der Region, in der die Gruppe unterwegs ist, ist Gruul dagegen unbekannt und wird nicht angebetet.
 
-Gruul mag Treue, Familie und Leidenschaft. Er hasst Kälte, Verrat und Schwäche. Seine Domänen umfassen Feuer, Treue und Vulkane, was auf eine enge Verbindung zu Glut, natürlicher Gewalt und Loyalität hinweist.
+## Symbole und Opfergaben
 
-## Anhänger und Opfer
+Das Symbol Gruuls ist ein brennender Ring. Seine Verehrer bringen ihm Valuta-Salze und Obsidian dar – beides Gaben, die zur feurigen Natur des Gottes passen.
 
-Zu den Anhängern Gruuls gehören Goblins, Drachen und Kobolde. Opfergaben an ihn sind Valuta-Salze und Obsidian.
+## Gebote
 
-## Erwähnungen
-
-In der Session vom 3. März 2026 sucht [Dodo](/characters/dodo.md) in der Bibliothek nach einem Buch über Gruul, nachdem dieser Gott erwähnt wurde. Der Bibliothekar kann kein solches Buch vorweisen, da Gruul ein nordischer Gott ist und in dieser Region nicht verehrt wird.
+Gruul liebt Treue, Familie und Leidenschaft. Verabscheut werden Kälte, Verrat und Schwäche. Seine Gebote stellen die Bindung an die Gemeinschaft und die eigene Glut über alles.
 
 # Belege
 
-[P-39] Session 2026-03-03 @ 00:23:12 – https://www.youtube.com/watch?v=BRUNuNKTeOg
-2. Weltmaterial: Bekannte_Pantheon_der_Goetter.md (Eintrag „Gruul, Herr der Glutbande")
+[P-39] Session 2026-03-03, 00:23:12 – https://www.youtube.com/watch?v=BRUNuNKTeOg
+2. Kampagnenunterlage „Bekannte Pantheon der Götter“, Eintrag „Gruul, Herr der Glutbande“

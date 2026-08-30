@@ -9,7 +9,7 @@ id: FACTION_SANDDORN
 subtype: Gilde
 ---
 
-**[Sanddorn](/locations/sanddorn.md)** ist eine Handelsorganisation, deren Chef [Joar](/npcs/joar_vanur.md) ist.
+**Sanddorn** ist eine Handelsorganisation, deren Chef [Joar](/npcs/joar_vanur.md) ist.
 
 ## Führung
 

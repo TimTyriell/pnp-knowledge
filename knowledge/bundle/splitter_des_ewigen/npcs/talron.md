@@ -17,7 +17,7 @@ Talron reist umher und sammelt Informationen. Nach Kleinringtal bringt er Nachri
 
 ## Aktionen und Bündnisse
 
-Talron bittet die Gruppe, mit ihm zu einem Bauernhof zu reisen, um die Bewohner für die Verteidigung zu gewinnen. Vor dem Aufbruch in die [Mine](/locations/verlassene_mine_an_der_farm.md) übergibt er Kaya zwei Heiltränke und entsendet die Gruppe. Später koordiniert er die Evakuierung, überbringt Nachrichten und spricht mit Herrn Raxalis über die Bedrohung und die Notwendigkeit, nach [Ringtal](/locations/ringtal.md) zu ziehen. Er verhandelt mit [Hauptmann Aaron](/npcs/hauptmann_aaron.md) und teilt Herakles' Überzeugung, dass Ringtal gehalten werden muss. Außerdem erwähnt er eine Person namens [Marie](/npcs/marie.md), die beschützt werden muss.
+Talron bittet die Gruppe, mit ihm zu einem Bauernhof zu reisen, um die Bewohner für die Verteidigung zu gewinnen. Vor dem Aufbruch in die Mine übergibt er Kaya zwei Heiltränke und entsendet die Gruppe. Später koordiniert er die Evakuierung, überbringt Nachrichten und spricht mit Herrn Raxalis über die Bedrohung und die Notwendigkeit, nach [Ringtal](/locations/ringtal.md) zu ziehen. Er verhandelt mit [Hauptmann Aaron](/npcs/hauptmann_aaron.md) und teilt Herakles' Überzeugung, dass Ringtal gehalten werden muss. Außerdem erwähnt er eine Person namens [Marie](/npcs/marie.md), die beschützt werden muss.
 
 # Belege
 

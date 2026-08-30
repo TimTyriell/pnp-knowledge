@@ -2,7 +2,7 @@
 type: Location
 title: Cornivum
 description: Cornivum ist ein kleines Sumpfdorf, das von Einsiedlern bewohnt wird
-  und als Ausgangspunkt für die Erkundung des umliegenden Sumpfes dient.…
+  und tief im Sumpfgebiet liegt. Es dient als Ausgangspunkt für die Erku…
 tags:
 - locations
 timestamp: '2026-07-21T00:00:00Z'
@@ -14,54 +14,58 @@ subtype: Siedlung
 
 ## Überblick
 
-Cornivum ist ein kleines Sumpfdorf, das von Einsiedlern bewohnt wird und als Ausgangspunkt für die Erkundung des umliegenden Sumpfes dient. Die Siedlung liegt abgeschieden im Sumpfgebiet, fernab der Adelshäuser und ihrer Einflusssphäre. Sie bietet der Gruppe Unterschlupf und Ausrüstung und wird von einem gewissen Rodeck verwaltet, der als Ansprechpartner vor Ort fungiert. Über ein Jahr hinweg wächst das abgeschiedene Dorf stetig und entwickelt sich schließlich zu einer [Festung](/locations/festung.md), aus der eine gigantische Armee aus Gnollen, Waldschraten und Untoten marschiert.
+Cornivum ist ein kleines Sumpfdorf, das von Einsiedlern bewohnt wird und tief im Sumpfgebiet liegt. Es dient als Ausgangspunkt für die Erkundung des umliegenden Sumpfes und bietet Reisenden Unterschlupf und Ausrüstung. Die Abgeschiedenheit des Ortes ist bemerkenswert: Selbst Adelige verirren sich nur selten so tief in die Sümpfe, und die Bewohner begegnen Fremden entsprechend argwöhnisch. Über ein Jahr nach der Ankunft der Gruppe hat sich Cornivum jedoch grundlegend gewandelt: Aus dem kleinen Dorf ist eine [Festung](/locations/festung.md) geworden, aus der eine riesige Armee aus gezüchteten Kreaturen marschiert.
 
 ## Rolle in der Kampagne
 
-Cornivum dient der Gruppe zunächst als sicherer Hafen und Operationsbasis für die Erkundung des Sumpfes. [Die Gilde](/factions/gilde_von_ehrenfels.md) hat die Gruppe nach Cornivum geschickt, was dem Ort eine strategische Bedeutung als [Außenposten der Gilde](/locations/aussenposten_der_gilde.md) im Sumpfgebiet verleiht. Der Empfang durch Rodeck und die Bereitstellung eines Unterschlupfs machen Cornivum zum Ausgangspunkt der Expeditionen der Gruppe.
+Cornivum diente der Gruppe als Stützpunkt und Rückzugsort während ihrer Erkundung des Sumpfes. [Die Gilde](/factions/gilde_von_ehrenfels.md) hatte die Abenteurer nach Cornivum geschickt, und der dort ansässige Rodeck [Brass](/npcs/brass.md) empfing sie als Gäste. Das Dorf bot der Gruppe einen Unterschlupf, wenn auch einen bescheidenen, sowie die Möglichkeit, sich mit Ausrüstung zu versorgen.
 
-Gegen [Ende](/locations/ende_jenseits_der_orkgebiete.md) des Prologs offenbart sich jedoch die wahre Bedeutung Cornivums: Die vermeintlich ruhige Siedlung ist zu einer Festung ausgebaut worden, aus der eine riesige Armee unter der Führung eines großen Bären und weiterer düsterer Gestalten marschiert. Diese Armee wurde gezüchtet für einen einzigen Zweck, wie der GM es formuliert: „Das Leben der Menschheit von Mittelerde zu fegen." Damit wird Cornivum zum Ausgangspunkt der zentralen Bedrohung, die die erste richtige Season der Kampagne prägen wird.
+In der letzten Session des Prologs offenbart sich Cornivums wahre Bedeutung: Die vermeintlich idyllische Siedlung war über die Monate hinweg zu einer Festung ausgebaut worden, aus der eine gigantische Armee aus Gnollen, Bugbears, [Goblins](/npcs/pilz_goblins.md), Trollen und Ogern marschiert. Diese Armee wurde — wie der Spielleiter in der Endszene andeutet — „gezüchtet für nur einen Zweck“. Der Ausmarsch dieser Streitmacht bildet den dramatischen Abschluss des Prologs und setzt die Bedrohung in Szene, die die kommende Kampagne prägen wird.
 
 ## Wichtige Merkmale
 
 ### Lage und Beschaffenheit
 
-Cornivum liegt tief im Sumpfgebiet, so tief, dass es selbst Adelige nicht dorthin schaffen, wie ein Einwohner spöttisch bemerkt: „Sonst schaffen es die Adeligen doch auch nicht so tief hier unten hin." Die Siedlung ist klein und bescheiden; der Unterschlupf, den die Gruppe zugewiesen bekommt, ist „nicht das Größte, aber es bietet ein wenig Ruhe."
+Cornivum liegt tief in den Sümpfen, weit entfernt von den Zentren der Zivilisation. Die Abgeschiedenheit ist so groß, dass die Bewohner überrascht sind, überhaupt Besuch zu erhalten — insbesondere von Außenstehenden, die nicht dem Adel angehören. Die Siedlung ist klein und bescheiden; der Unterschlupf, den die Gruppe zugewiesen bekommt, wird vom Gastgeber selbst als „nicht das Größte“ beschrieben, bietet aber Ruhe.
 
 ### Bewohner
 
-Die Bewohner Cornivums sind Einsiedler, die sich bewusst aus der Gesellschaft zurückgezogen haben. Sie begegnen Außenstehenden mit Argwohn und Misstrauen — ein Dunkelelf, der die Gruppe bei ihrer Ankunft mustert, zeigt sich sichtlich erleichtert, als er erfährt, dass es sich nicht um Adelige handelt, sondern um Gäste der Gilde. Der Blick auf [Esterossa](/characters/esterossa.md) bleibt dabei „ein bisschen länger unsympathisch", da sie prunkvoll gekleidet ist und damit an die verachteten Adeligen erinnert.
+Die ursprünglichen Bewohner Cornivums sind Einsiedler, die bewusst die Abgeschiedenheit des Sumpfes suchen. Sie begegnen Fremden mit Misstrauen und Argwohn. Unter den Bewohnern befinden sich:
 
-Rodeck ist der Verwalter oder Anführer der Siedlung, der die Gruppe empfängt und ihr den Unterschlupf zeigt. Er fungiert als Verbindungsmann zur Gilde.
+- **Rodeck Brass**: Ein Gastgeber und Ansprechpartner der Gruppe, der im Auftrag der Gilde handelt. Er empfängt die Abenteurer, stellt ihnen den Unterschlupf zur Verfügung und beruhigt die anderen Bewohner, dass es sich bei den Neuankömmlingen um Gäste der Gilde handelt.
+- **Ein Dunkelelf**: Ein Bewohner, der die Gruppe bei ihrer Ankunft unsanft zur Seite schubst und sie argwöhnisch mustert. Er zeigt sich zunächst feindselig gegenüber den Fremden, beruhigt sich jedoch, als Rodeck Brass erklärt, dass es sich um Gäste der Gilde handelt. Sein Blick auf [Esterossa](/characters/esterossa.md) bleibt dabei länger unsympathisch.
+- **Zwei [Zwerge](/factions/zwerge.md)**: Sie arbeiten in einem Haus gegenüber dem Unterschlupf der Gruppe.
 
-### Entwicklung zur Festung
+### Die Festung und die Armee
 
-Über die Zeit des Prologs hinweg wächst Cornivum von einem kleinen Dorf zu einer Festung heran. Am Ende des Prologs ist die Siedlung zu einem militärischen Stützpunkt ausgebaut, dessen Stadttor eine gigantische Armee entlässt. Die Ursache dieses Wachstums ist die dunkle Magie der Hag [Landra](/npcs/lenra.md), die das abgelegene Dorf nutzte, um dort eine Armee aus Gnollen, Waldschraten und Untoten zu züchten.
+Über ein Jahr nach der Ankunft der Gruppe ist Cornivum zu einer Festung ausgebaut worden. Aus ihren Stadttoren marschiert eine gigantische Streitmacht, die in ihrer Zusammensetzung keine normale Armee ist: [Gnolle](/factions/gnolle.md), Bugbears, Goblins, Trolle und [Oger](/npcs/oger.md) strömen zu Dutzenden, Hunderten und Tausenden aus der Festung. Angeführt wird die Schar von einem großen Bären und weiteren düsteren Gestalten.
+
+Die Armee wurde offenbar gezielt gezüchtet — die Kreaturen sind keine gewöhnlichen Söldner oder Verbündete, sondern eine eigens für einen Zweck geschaffene Streitmacht. Die dunkle Magie, die hinter dieser Züchtung steht, hat ihren Ursprung in der Hag [Landra](/npcs/lenra.md), die das abgelegene Dorf nutzte, um ihre Armee aus Gnollen, Waldschraten und Untoten heranzuziehen.
 
 ## Beziehungen und Verbindungen
 
-- **Die Gilde**: Cornivum steht in Verbindung mit der Gilde, die die Gruppe nach Cornivum geschickt hat. Rodeck betont, dass die Gruppe als Gäste der Gilde willkommen ist.
-- **Rodeck**: Der Verwalter der Siedlung, der die Gruppe empfängt und ihr Unterkunft gewährt.
-- **Landra**: Die Hag, deren dunkle Magie das Wachstum Cornivums und die Züchtung der Armee verursacht hat.
-- **Die Gruppe**: Cornivum dient der Gruppe als Stützpunkt und Unterschlupf während ihrer Erkundungen im [Sumpf](/locations/sumpf_vor_dem_goblin_dorf.md).
+- **Die Gilde**: Sie hat die Gruppe nach Cornivum geschickt und unterhält offenbar Verbindungen zu Rodeck Brass, der als ihr Ansprechpartner vor Ort fungiert. Die Gilde scheint in der Region Einfluss zu haben, auch wenn Cornivum selbst abseits der großen Handelswege liegt.
+- **Rodeck Brass**: Er ist der Gastgeber der Gruppe und vermittelt zwischen den misstrauischen Bewohnern und den Neuankömmlingen. Seine genaue Rolle und sein Verhältnis zur Gilde bleiben zunächst vage.
+- **Die Hag Landra**: Sie ist die treibende Kraft hinter der Verwandlung Cornivums. Ihre dunkle Magie nutzte das abgelegene Dorf als Brutstätte für ihre Armee. Ob die ursprünglichen Bewohner davon wussten, Opfer oder gar Komplizen wurden, ist nicht überliefert.
+- **Esterossa**: Sie erregt als Einzige der Gruppe das anhaltende Misstrauen des Dunkelelfen, vermutlich wegen ihrer prunkvollen Kleidung, die sie von den schlicht gekleideten Bewohnern unterscheidet.
 
 ## Chronologie
 
-**Session 2025-06-03:** Die Gruppe erreicht Cornivum. Bei ihrer Ankunft wird sie von einem Dunkelelfen argwöhnisch gemustert, der sie zunächst für Adelige hält. Rodeck stellt klar, dass die Gruppe von der Gilde geschickt wurde und als Gast willkommen ist. Die Gruppe erhält einen bescheidenen Unterschlupf. In der Nachbarschaft arbeiten zwei [Zwerge](/factions/zwerge.md). Cornivum präsentiert sich zu diesem Zeitpunkt als kleines, abgeschiedenes Sumpfdorf.
+**Session 2025-06-03 — Ankunft der Gruppe:** Die Abenteurer erreichen Cornivum, nachdem die Gilde sie dorthin geschickt hat. Bei ihrer Ankunft werden sie von einem Dunkelelfen unsanft zur Seite gestoßen und argwöhnisch gemustert. Rodeck Brass stellt die Situation richtig: Die Gruppe sind Gäste der Gilde, keine Adeligen. Er führt sie zu ihrem Unterschlupf, einem bescheidenen Quartier, und weist auf die zwei Zwerge hin, die gegenüber arbeiten. Das Dorf wirkt zu diesem Zeitpunkt klein, abgeschieden und von Einsiedlern bewohnt.
 
-**Zwischenzeit:** Über mehr als ein Jahr hinweg wächst Cornivum stetig. Unter dem Einfluss der dunklen Magie der Hag Landra wird das Dorf zu einer Festung ausgebaut, in der eine Armee aus Gnollen, Waldschraten und Untoten herangezüchtet wird.
+**Zwischenzeit — Über ein Jahr des Wachstums:** In der Zeit nach der Ankunft der Gruppe wächst Cornivum stetig. Das abgeschiedene Dorf wird ausgebaut und befestigt. Die Hag Landra nutzt die Abgeschiedenheit des Ortes, um im Verborgenen eine Armee aus Gnollen, Waldschraten und Untoten zu züchten. Aus dem kleinen Sumpfdorf wird eine Festung.
 
-**Session 2026-07-21:** Am Ende des Prologs zeigt sich die wahre Natur Cornivums: Aus der Festung marschiert eine gigantische Armee — [Gnolle](/factions/gnolle.md), [Bugbears](/npcs/bugbears.md), [Goblins](/npcs/pilz_goblins.md), Trolle und [Oger](/npcs/oger.md) in einer unüberschaubaren Schar. Angeführt wird sie von einem großen Bären und weiteren düsteren Gestalten. Der GM beschreibt die Szene als die Endszene des Prologs und kündigt an, dass dieses Ereignis das Thema der ersten richtigen Season sein wird.
+**Session 2026-07-21 — Der Ausmarsch:** In der Endszene des Prologs zeigt der Spielleiter der Gruppe eine Karte, auf der aus der Festung von Cornivum eine gigantische Armee marschiert. Gnolle, Bugbears, Goblins, Trolle und Oger strömen zu Tausenden aus den Stadttoren, angeführt von einem großen Bären und weiteren düsteren Gestalten. Der Spielleiter betont, dass diese Armee „gezüchtet für nur einen Zweck“ wurde. Damit endet der Prolog der Kampagne; die Bedrohung durch diese Streitmacht wird das Thema der kommenden Season sein.
 
 ## Offene Fragen
 
-- Was genau ist der Zweck der aus Cornivum marschierenden Armee, und gegen wen oder was wird sie ziehen?
-- Welche Rolle spielt der große Bär, der die Armee anführt?
-- Was ist mit [Ehrenfels](/locations/ehrenfels.md) und Will geschehen, die der GM im Zusammenhang mit dem Ausmarsch der Armee erwähnt?
-- Wie konnte Landra die Armee unbemerkt in Cornivum züchten, und welche Rolle spielten die Einsiedler und Rodeck dabei?
+- Was genau ist der „eine Zweck“, für den die Armee gezüchtet wurde?
+- Welche Rolle spielen der große Bär und die „weiteren düsteren Gestalten“, die die Armee anführen?
+- Was ist aus den ursprünglichen Bewohnern Cornivums geworden — insbesondere aus Rodeck Brass, dem Dunkelelfen und den Zwergen?
+- In welchem Verhältnis steht die Gilde zu den Vorgängen in Cornivum? Hat sie die Züchtung der Armee geduldet, unterstützt oder nichts davon gewusst?
+- Wie konnte der Ausbau des Dorfes zur Festung über ein Jahr hinweg unbemerkt bleiben?
 
 ## Belege
 
 [P-10] Session 2025-06-03 @ 00:16:30 (https://www.youtube.com/watch?v=jtYR4Je0a18)
 [P-55] Session 2026-07-21 @ 01:52:39 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
-3. Kanon_Entscheidungen.md: Entscheidungen zu Cornivum (Wachstum über ein Jahr, Ursache durch Lenras dunkle Magie)

@@ -57,7 +57,7 @@ Liam stand unter der Kontrolle des Dämons der Hybris und diente als Wächter de
 
 ### Vasul
 
-[Vasul](/deities/vharzul.md) bestätigt, dass Liam in der Nähe ist, als Lunara die Vision von ihm hat. Er unterstützt die Gruppe bei der Rettungsmission nach Abyssalis.
+Vasul bestätigt, dass Liam in der Nähe ist, als Lunara die Vision von ihm hat. Er unterstützt die Gruppe bei der Rettungsmission nach Abyssalis.
 
 ### Die Gruppe
 
@@ -67,7 +67,7 @@ Liam bittet darum, sich der Gruppe anzuschließen. Er wird von [Gunther](/charac
 
 ### Erste Vision (Session 2026-06-10)
 
-Lunara liegt schwer verletzt in einer Schlucht, nachdem sie mit einem [Seraphen](/factions/seraphen.md) in den Abgrund gestürzt ist. In diesem Moment erscheint ihr Liam in einer Vision. Er streckt ihr die Hand entgegen und sagt: "Lunara, du darfst jetzt nicht sterben." Ein warmer Lichtimpuls durchströmt ihren Körper und reißt sie mit Gewalt ins Leben zurück. Bevor er sich auflöst, flüstert er: "Finde mich." Lunara erwacht, ersticht den bewusstlosen Seraphen und flüstert ihm ins Ohr: "Sag deinem Gott, nach allem, was ich erlebt habe, wird Volgotha nicht mein [Ende](/locations/ende_jenseits_der_orkgebiete.md) sein."
+Lunara liegt schwer verletzt in einer Schlucht, nachdem sie mit einem [Seraphen](/factions/seraphen.md) in den Abgrund gestürzt ist. In diesem Moment erscheint ihr Liam in einer Vision. Er streckt ihr die Hand entgegen und sagt: "Lunara, du darfst jetzt nicht sterben." Ein warmer Lichtimpuls durchströmt ihren Körper und reißt sie mit Gewalt ins Leben zurück. Bevor er sich auflöst, flüstert er: "Finde mich." Lunara erwacht, ersticht den bewusstlosen Seraphen und flüstert ihm ins Ohr: "Sag deinem Gott, nach allem, was ich erlebt habe, wird Volgotha nicht mein Ende sein."
 
 ### Die Reise nach Abyssalis (Session 2026-06-16)
 
@@ -97,7 +97,7 @@ Während eines Kampfes gegen ein riesiges, genollartiges Biest hält Liam das un
 
 - **Liams Zustand:** Wie sehr ist Liam durch seine Zeit in Abyssalis und die Kontrolle durch den [Dämon der Hybris](/npcs/daemon_der_hybris.md) verändert? Sind die kalten, düsteren Momente Teil seiner Persönlichkeit oder Nachwirkungen der Kontrolle?
 - **Die Prophezeiungen:** Was bedeuten seine rätselhaften Worte von einer Flamme, einer eisernen Faust und Masken? Deuten sie auf eine tiefere Verbindung zu den Ereignissen hin?
-- **Vhar'Zuls Aussage:** Vhar'Zul behauptete, Liam existiere nur noch als Seele. Diese Aussage hat sich als falsch erwiesen — ob aus Unwissenheit oder Absicht, ist unklar.
+- **[Vhar'Zuls](/deities/vharzul.md) Aussage:** Vhar'Zul behauptete, Liam existiere nur noch als Seele. Diese Aussage hat sich als falsch erwiesen — ob aus Unwissenheit oder Absicht, ist unklar.
 - **Die Zeit im Tempel:** Was genau ist in den zwölf Jahren im Tempel von Vorgul'tar mit Liam geschehen? Wie wurde er zum Wächter und unter die Kontrolle des Dämons der Hybris gebracht?
 - **Liams Wissen:** Woher kennt Liam die Zauber, mit denen er das Biest bannen kann? Der GM vermutet, dass er dieses Wissen über die Zeit in Abyssalis gesammelt hat.
 

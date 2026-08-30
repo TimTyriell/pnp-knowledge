@@ -20,13 +20,13 @@ aliases:
 
 ## Überblick
 
-Das Banditenlager der [Silberkerne](/factions/silberkerne.md) ist eine befestigte Siedlung in einem Talkessel, etwa drei Tagesreisen von [Breska](/locations/breska.md) entfernt. Es dient als Hauptquartier der Silberkerne, einer organisierten Bande, die Karawanen überfällt. Das Lager ist mit Palisaden und Holzbarrikaden befestigt und beherbergt schätzungsweise drei Dutzend Soldaten. Im Verlauf der Kampagne entwickelt es sich von einem reinen Banditenversteck zu einem Zufluchtsort für [Flüchtlinge aus Breska](/factions/fluechtlinge_aus_breska.md) und schließlich zum Schauplatz einer entscheidenden Schlacht gegen den dunklen Paladin [Belorus](/npcs/belorus.md).
+Das Banditenlager der [Silberkerne](/factions/silberkerne.md) ist eine befestigte Siedlung in einem Talkessel, etwa drei Tagesreisen von Breska entfernt. Es dient als Hauptquartier der Silberkerne, einer organisierten Bande, die Karawanen überfällt. Das Lager ist mit Palisaden und Holzbarrikaden befestigt und beherbergt schätzungsweise drei Dutzend Soldaten. Im Verlauf der Kampagne entwickelt es sich von einem reinen Banditenversteck zu einem Zufluchtsort für [Flüchtlinge aus Breska](/factions/fluechtlinge_aus_breska.md) und schließlich zum Schauplatz einer entscheidenden Schlacht gegen den dunklen Paladin [Belorus](/npcs/belorus.md).
 
 ## Rolle in der Kampagne
 
 Das Banditenlager wird der Gruppe erstmals in Session 2025-09-17 als mögliches Ziel für die Flüchtlinge aus Breska vorgeschlagen. [Roland](/npcs/roland.md), ein Bewohner Breskas, markiert es auf der Karte und beschreibt es als altes Banditenlager, in dem noch Banditen leben, die Karawanen überfallen. Die Gruppe plant zunächst, die Flüchtlinge dorthin zu bringen, wobei unklar ist, ob man die Banditen vertreiben, töten oder sich mit ihnen arrangieren kann. [Nyrella](/characters/nyrella.md) formuliert die Hoffnung: „Vielleicht können wir ja auch erstmal schauen, wie diese Banditen so sind."
 
-In der Folge wird das Lager zum zentralen Operationspunkt der Gruppe: Sie kundschaften es aus, verhandeln mit den Anführern und bringen schließlich Flüchtlinge dort unter. In Session 2026-01-20 ist das Lager das „Hideout der Banditen, wo wir neben den Banditen eben ganz viele Flüchtlinge von Breska untergebracht haben" ([Lindo Laut](/characters/lindo_laut.md)). Es wird zum Schauplatz der [Konfrontation mit Belorus](/events/konfrontation_mit_belorus.md), der das Lager mit seiner untoten Armee belagert.
+In der Folge wird das Lager zum zentralen Operationspunkt der Gruppe: Sie kundschaften es aus, verhandeln mit den Anführern und bringen schließlich Flüchtlinge dort unter. In Session 2026-01-20 ist das Lager das „Hideout der Banditen, wo wir neben den Banditen eben ganz viele Flüchtlinge von [Breska](/locations/breska.md) untergebracht haben" ([Lindo Laut](/characters/lindo_laut.md)). Es wird zum Schauplatz der [Konfrontation mit Belorus](/events/konfrontation_mit_belorus.md), der das Lager mit seiner untoten Armee belagert.
 
 ## Wichtige Merkmale
 

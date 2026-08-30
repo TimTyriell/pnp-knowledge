@@ -10,7 +10,7 @@ id: ITEM_VERWANDLUNGSTRANK_IN_KATARI
 subtype: Trank
 ---
 
-Ein Trank, der von [Sys Fizik](/npcs/sys_fizik.md) hergestellt wurde und [Lindo Laut](/characters/lindo_laut.md) für fast ein Jahr in einen Katari verwandelt. Er kostet zweieinhalb Truhen Gold. Lindo Laut nimmt ihn am [Ende](/locations/ende_jenseits_der_orkgebiete.md) der Session und wird zu Pedro, einem kleinwüchsigen Katari.
+Ein Trank, der von [Sys Fizik](/npcs/sys_fizik.md) hergestellt wurde und [Lindo Laut](/characters/lindo_laut.md) für fast ein Jahr in einen Katari verwandelt. Er kostet zweieinhalb Truhen Gold. Lindo Laut nimmt ihn am Ende der Session und wird zu Pedro, einem kleinwüchsigen Katari.
 
 # Belege
 

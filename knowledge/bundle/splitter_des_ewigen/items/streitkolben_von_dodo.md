@@ -20,11 +20,11 @@ aliases:
 - Zebros Zorn
 ---
 
-[Zebros](/factions/koenigreich_zebros.md) Zorn ist ein mächtiger, heiliger Streitkolben aus dem gefallenen Königreich [Zebros](/factions/koenigreich_zebros.md). Er dient [Dodo](/characters/dodo.md) als aktuelle Hauptwaffe, verursacht magischen Schaden und kann als Lichtquelle dienen. Die Gruppe barg ihn aus einem Geheimversteck in [Steinbachtal](/locations/steinbachtal.md).
+Zebros Zorn ist ein mächtiger, heiliger Streitkolben aus dem gefallenen Königreich [Zebros](/factions/koenigreich_zebros.md). Er dient [Dodo](/characters/dodo.md) als aktuelle Hauptwaffe, verursacht magischen Schaden und kann als Lichtquelle dienen. Die Gruppe barg ihn aus einem Geheimversteck in [Steinbachtal](/locations/steinbachtal.md).
 
 ## Herkunft und Erwerb
 
-Das Königreich Zebros wurde im Götterkrieg zerstört; der Streitkolben ist ein Relikt aus dieser Zeit. Einst wurde er in der [Festung](/locations/festung.md) Zebros aus einem Spiegel gezogen. In einem Geheimversteck in Steinbachtal schwebte er auf einem Pentagramm, gebunden von unsichtbaren Ketten; durch ein zwergisches Kommando ließ er sich aktivieren. [Rotunas](/characters/rotunas.md) zog ihn durch einen Spiegel, um die Waffe zu erbeuten.
+Das [Königreich Zebros](/factions/koenigreich_zebros.md) wurde im Götterkrieg zerstört; der Streitkolben ist ein Relikt aus dieser Zeit. Einst wurde er in der [Festung](/locations/festung.md) Zebros aus einem Spiegel gezogen. In einem Geheimversteck in Steinbachtal schwebte er auf einem Pentagramm, gebunden von unsichtbaren Ketten; durch ein zwergisches Kommando ließ er sich aktivieren. [Rotunas](/characters/rotunas.md) zog ihn durch einen Spiegel, um die Waffe zu erbeuten.
 
 ## Eigenschaften
 

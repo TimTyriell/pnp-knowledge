@@ -10,7 +10,7 @@ id: EVENT_KAMPF_GEGEN_DIE_BUGBEARS
 subtype: Kampf
 ---
 
-Die Gruppe kämpft gegen mehrere [Bugbears](/npcs/bugbears.md), die die [Burgruine](/locations/burgruine.md) bewachen. Der Kampf beginnt mit einem fehlgeschlagenen Schleichen und endet mit dem Sieg der Gruppe. Die [Goblin-Götter](/deities/goblingoetter.md) greifen ein, indem sie einen Bugbear niesen lassen.
+Die Gruppe kämpft gegen mehrere Bugbears, die die [Burgruine](/locations/burgruine.md) bewachen. Der Kampf beginnt mit einem fehlgeschlagenen Schleichen und endet mit dem Sieg der Gruppe. Die [Goblin-Götter](/deities/goblingoetter.md) greifen ein, indem sie einen Bugbear niesen lassen.
 
 # Belege
 

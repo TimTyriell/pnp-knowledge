@@ -1,8 +1,8 @@
 ---
 type: Location
 title: Villau
-description: Villau ist eine Location der Kampagne, die in den bisherigen Sitzungen
-  auf zwei deutlich unterschiedliche Weisen beschrieben wird. In der e…
+description: 'Villau ist eine Ortschaft, deren Darstellung in den vorliegenden Belegen
+  stark auseinandergeht: Ein Beleg beschreibt Villau als altes, besc…'
 tags:
 - locations
 timestamp: '2026-05-27T00:00:00Z'
@@ -13,21 +13,19 @@ aliases:
 status: disputed
 ---
 
-Villau ist eine Location der Kampagne, die in den bisherigen Sitzungen auf zwei deutlich unterschiedliche Weisen beschrieben wird. In der ersten Erwähnung erscheint Villau als altes, beschädigtes Gebäude oberhalb von [Jalan](/locations/jalan.md), das ein wertvolles Objekt enthalten soll. In einer späteren Sitzung wird Villau dagegen als große Stadt bezeichnet, die [Nebelwacht](/locations/nebelwacht.md) mit Gold und Soldaten unterstützt und aus der die Gruppe zur Verteidigung der [Festung](/locations/festung.md) kommt.
+Villau ist eine Ortschaft, deren Darstellung in den vorliegenden Belegen stark auseinandergeht: Ein Beleg beschreibt Villau als altes, beschädigtes Gebäude oberhalb von [Jalan](/locations/jalan.md), ein anderer als große Stadt. Beide Angaben lassen sich aus dem bisherigen Material nicht zu einem stimmigen Bild zusammenführen.
 
-## Das Gebäude oberhalb von Jalan
+## Beschreibung und Rolle
 
-Zu Beginn der Erkundung wird Villau als altes, beschädigtes Gebäude oberhalb von Jalan beschrieben. Es soll ein wertvolles Objekt enthalten, das für die Gruppe wichtig ist. Die Gruppe beginnt an diesem Ort ihre Erkundung; weitere Details zum Aussehen, zur Geschichte oder zu dem gesuchten Objekt sind aus den Belegen nicht bekannt.
+In der ersten bekannten Erwähnung ist Villau – dort als Villa bezeichnet – ein altes, beschädigtes Gebäude oberhalb von [Jalan](/locations/jalan.md). Es soll ein wertvolles Objekt enthalten, das für die Gruppe wichtig ist; ihre Erkundung beginnt an diesem Ort.
 
-## Die Stadt Villau
+Ein späterer Beleg beschreibt Villau dagegen als große Stadt. Diese Stadt unterstützt [Nebelwacht](/locations/nebelwacht.md) mit Gold und Soldaten. Die Gruppe kommt aus Villau, um die [Festung](/locations/festung.md) zu verteidigen. Zudem behauptet [Kalos](/npcs/organisation_der_kalos.md), Villau sei nicht das, was es zu sein scheint.
 
-In der späteren Sitzung wird Villau als große Stadt dargestellt. Sie unterstützt Nebelwacht mit Gold und Soldaten und ist der Herkunftsort der Gruppe, die zur Verteidigung der Festung kommt. Der Charakter [Kalos](/npcs/organisation_der_kalos.md) äußert den Verdacht, dass Villau nicht das ist, was es zu sein scheint; nähere Ausführungen dazu fehlen in den Belegen.
+## Belege
 
-# Belege
+[P-48] Session 2026-05-06 @ 00:11:37 – https://www.youtube.com/watch?v=MB4quhDWsQE
+[P-51] Session 2026-05-27 @ 00:04:30 – https://www.youtube.com/watch?v=IYYmgpqsp7E
 
-[P-48] Session 2026-05-06, 00:11:37 – https://www.youtube.com/watch?v=MB4quhDWsQE
-[P-51] Session 2026-05-27, 00:04:30 – https://www.youtube.com/watch?v=IYYmgpqsp7E
+## Offene Konflikte
 
-# Offene Konflikte
-
-- Villau wird in Beleg [P-48] als altes, beschädigtes Gebäude oberhalb von Jalan beschrieben, in Beleg [P-51] dagegen als große Stadt, die Nebelwacht unterstützt. Die beiden Beschreibungen lassen sich nicht ohne weiteres zu einer einzigen Entität vereinbaren.
+- Beleg [P-48] beschreibt Villau als altes, beschädigtes Gebäude oberhalb von Jalan; Beleg [P-51] beschreibt Villau als große Stadt, die Nebelwacht mit Gold und Soldaten unterstützt. Der Widerspruch ist nicht durch die Chronologie erklärbar.

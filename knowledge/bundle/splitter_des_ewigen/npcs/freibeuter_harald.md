@@ -13,7 +13,7 @@ aliases:
 - Harald
 ---
 
-Harald ist ein Freibeuter-Kapitän in [Tiefwasser](/locations/tiefwasser.md). Er betreibt dort eine heruntergekommene Taverne und verteidigt sich im Kampf mit einem Rapier. Wie die übrigen Freibeuter wird er nach dem [Krieg](/characters/krieg.md) gegen Brandau verfolgt und hat sich nach Tiefwasser zurückgezogen.
+Harald ist ein Freibeuter-Kapitän in [Tiefwasser](/locations/tiefwasser.md). Er betreibt dort eine heruntergekommene Taverne und verteidigt sich im Kampf mit einem Rapier. Wie die übrigen Freibeuter wird er nach dem [Krieg](/characters/krieg.md) gegen [Brandau](/locations/brandau.md) verfolgt und hat sich nach [Tiefwasser](/locations/tiefwasser.md) zurückgezogen.
 
 ## Herkunft und Verfolgung
 
@@ -21,7 +21,7 @@ Die Freibeuter, zu denen Harald gehört, sind ehemalige Kämpfer für [Brandau](
 
 ## Begegnung in Tiefwasser
 
-Harald traf die Gruppe, als er über die Verfolgung und die unbegründeten Vorwürfe sprach. Dabei kam es zu einem Kampf mit Soldaten von Willauch, den [Lunara](/characters/lunara_velora.md) mit einem Zauber beendete. Harald nutzte die Gelegenheit zur Flucht.
+Harald traf die Gruppe, als er über die Verfolgung und die unbegründeten Vorwürfe sprach. Dabei kam es zu einem Kampf mit Soldaten von [Willauch](/locations/willauch.md), den [Lunara](/characters/lunara_velora.md) mit einem Zauber beendete. Harald nutzte die Gelegenheit zur Flucht.
 
 # Belege
 

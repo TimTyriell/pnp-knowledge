@@ -10,7 +10,7 @@ id: EVENT_VERHANDLUNG_MIT_DER_SILBERKORNBANDE
 subtype: Verhandlung
 ---
 
-Die Gruppe trifft auf die [Silberkornbande](/factions/silberkerne.md) und gewinnt ihr Vertrauen, indem sie beweist, dass sie [Harl](/npcs/hal_harl.md) kennen. Sie erhalten Informationen über die [Mine](/locations/verlassene_mine_an_der_farm.md) und die Kreaturen. Nach der Rückkehr täuschen sie vor, nichts gefunden zu haben, und werden zum Bier eingeladen.
+Die Gruppe trifft auf die [Silberkornbande](/factions/silberkerne.md) und gewinnt ihr Vertrauen, indem sie beweist, dass sie [Harl](/npcs/hal_harl.md) kennen. Sie erhalten Informationen über die Mine und die Kreaturen. Nach der Rückkehr täuschen sie vor, nichts gefunden zu haben, und werden zum Bier eingeladen.
 
 # Belege
 

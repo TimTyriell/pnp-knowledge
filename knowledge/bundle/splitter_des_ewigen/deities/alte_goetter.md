@@ -2,7 +2,7 @@
 type: Deity
 title: Alte Götter
 description: Die Alten Götter sind ein urzeitliches Pantheon, das einst allein über
-  die Welt herrschte. Sie waren groß, unsterblich und von unvorstellba…
+  die Welt herrschte. Groß, unsterblich und von gewaltiger Macht, wurd…
 tags:
 - deities
 timestamp: '2026-08-06T00:00:00Z'
@@ -16,59 +16,59 @@ aliases:
 
 ## Überblick
 
-Die Alten Götter sind ein urzeitliches Pantheon, das einst allein über die Welt herrschte. Sie waren groß, unsterblich und von unvorstellbarer Macht, bis ihr Zeitalter gewaltsam endete. Vor zwölf Jahren verloren sie den [Krieg](/characters/krieg.md) gegen die Neuen Götter und wurden in andere Ebenen verbannt. Seitdem versuchen sie, durch Portale wieder an Macht zu gelangen. Ihre Anhänger sind die [Dämonen](/factions/daemonen.md), die im Verborgenen für ihre Rückkehr wirken.
-
-Nur wenige Auserwählte kennen noch die wahren Riten der Alten Götter. Der globale Gedächtnisverlust, der mit ihrer Niederlage einherging, hat dafür gesorgt, dass die meisten Lebewesen sich nicht einmal mehr an die Zeit vor ihrer Verbannung erinnern können.
+Die Alten Götter sind ein urzeitliches Pantheon, das einst allein über die Welt herrschte. Groß, unsterblich und von gewaltiger Macht, wurden sie vor zwölf Jahren von den Neuen Göttern besiegt und in andere Ebenen verbannt. Seitdem versuchen sie, durch Portale wieder an Macht zu gelangen. Ihre Anhänger sind die [Dämonen](/factions/daemonen.md). Der Sieg der Neuen Götter hatte weitreichende Folgen: Ein globaler Gedächtnisverlust löschte bei allen Lebewesen die Erinnerung an die Zeit vor der Schlacht. Nur wenige Auserwählte kennen noch die wahren Riten der Alten Götter.
 
 ## Rolle in der Kampagne
 
-Die Alten Götter sind eine der zentralen Bedrohungen und zugleich eine treibende Kraft der Ereignisse in der Kampagne. Sie sind die verdrängte Vergangenheit der Welt, deren Schatten bis in die Gegenwart reicht.
+Die Alten Götter sind eine zentrale Bedrohung und treibende Kraft der Kampagne. Sie sind die Gegenspieler der Neuen Götter und damit indirekt auch der Gruppe, die in deren Welt lebt. Ihre Verbannung ist jedoch nicht vollständig: Ihre Macht ist noch spürbar, und sie suchen aktiv nach Wegen, in die Welt zurückzukehren.
 
-Die Gruppe begegnet ihnen erstmals im Dungeon, in dem gefangene Seelen festgehalten werden. Diese Seelen haben damals im Krieg gegen die Alten Götter gekämpft und versagt. Sie warnen die Helden eindringlich davor, weiterzugehen: *"Wir sind schon so lange hier eingesperrt. Aber wir wollen nicht, dass euch dasselbe Schicksal passiert."* Die gefangenen Seelen sind zugleich der lebende Beweis dafür, dass die Macht der Alten Götter trotz ihrer Verbannung noch immer spürbar ist.
+Ein zentraler Aspekt ihrer Rolle ist die Verbindung zu den Dämonen, die als ihre Anhänger fungieren. Die Gruppe begegnet den Alten Göttern beziehungsweise ihren Einflüssen an mehreren Stellen:
 
-Die Erkenntnis über den globalen Gedächtnisverlust, der mit der Niederlage der Alten Götter einherging, erschüttert die Gruppe tief. [Saris](/characters/saris.md) weist darauf hin, dass niemand sich an die Zeit vor zwölf Jahren erinnern kann — ein Umstand, der den Helden bis dahin nicht bewusst war.
+- In einem Dungeon treffen die Helden auf gefangene Seelen, die einst im [Krieg](/characters/krieg.md) gegen die Alten Götter gekämpft haben. Diese Seelen sind seit langer Zeit eingesperrt und warnen die Gruppe davor, weiterzugehen, da sie sonst dasselbe Schicksal erleiden könnten.
+- Die gefangenen Seelen bitten die Gruppe, sie zu befreien und für sie zu beten – ein Hinweis darauf, dass die Alten Götter trotz ihrer Verbannung noch immer Einfluss auf die Welt und ihre Bewohner ausüben können.
+
+Die Frage nach der Wahrheit über die Alten Götter ist ein wiederkehrendes Motiv: Als [Lindo Laut](/characters/lindo_laut.md) den gefangenen Seelen entgegnet, dass die Alten Götter keine Macht mehr hätten, wenn sie die Seelen nicht befreien könnten, entsteht betretenes Schweigen – ein Hinweis darauf, dass die tatsächliche Situation komplexer ist als allgemein angenommen.
 
 ## Wichtige Merkmale
 
-Die Alten Götter sind groß, unsterblich und urzeitlich. Sie herrschten einst allein, bis ihre Macht zerbrach. Ihre wahre Natur und ihre Fähigkeiten sind in der Kampagne bislang nur in Umrissen bekannt:
+Die Alten Götter werden als groß, unsterblich und urzeitlich beschrieben. Sie herrschten einst allein über die Welt, bis ihre Macht zerbrach. Über ihre konkreten Fähigkeiten und ihr Auftreten ist aus den Belegen wenig bekannt, da sie selbst nicht direkt in Erscheinung treten, sondern nur durch ihre Anhänger, ihre Verbannung und die Erinnerungen an sie.
 
-- **Verbannung in andere Ebenen:** Die Alten Götter sind nicht vernichtet, sondern verbannt worden. Sie existieren in anderen Ebenen weiter und suchen Wege, durch Portale wieder an Macht zu gelangen.
-- **Anhaltende Macht:** Obwohl verbannt, ist ihre Macht noch immer spürbar. Die gefangenen Seelen im Dungeon sind ein Beleg dafür — sie werden von den Alten Göttern oder ihren Kräften festgehalten.
-- **Anhänger:** Die Dämonen sind die Anhänger der Alten Götter und wirken in der Welt für deren Rückkehr.
-- **Riten:** Nur wenige Auserwählte kennen noch die wahren Riten der Alten Götter. Diese Riten sind offenbar von großer Bedeutung, denn die gefangenen Seelen fordern die Helden auf: *"Befreit uns. Betet für uns. Betet."*
+Bekannt ist, dass ihre Macht auch nach der Verbannung noch spürbar ist. Die gefangenen Seelen im Dungeon, die gegen sie gekämpft haben, sind seit langer Zeit eingesperrt – ein Beleg dafür, dass die Alten Götter selbst in ihrer Verbannung in der Lage waren oder sind, Seelen gefangen zu halten.
+
+Ein wesentliches Merkmal der Alten Götter ist ihre Verbindung zu den Dämonen, die als ihre Anhänger gelten. Diese Anhängerschaft deutet auf eine dunkle, möglicherweise bösartige Natur hin, auch wenn die Belege keine eindeutige moralische Bewertung zulassen.
 
 ## Beziehungen und Verbindungen
 
-**Zu den Neuen Göttern:** [Die Neuen Götter](/deities/neue_goetter.md) sind die Sieger des Krieges. Sie haben die Alten Götter vor zwölf Jahren besiegt und verbannt. Seitdem herrschen sie über die Welt. Der Konflikt zwischen altem und neuem Pantheon ist die fundamentale Achse der göttlichen Ordnung in der Kampagne.
+**Zu den Neuen Göttern:** [Die Neuen Götter](/deities/neue_goetter.md) sind die direkten Gegenspieler der Alten Götter. Sie haben vor zwölf Jahren den Krieg gegen die Alten Götter gewonnen und diese verbannt. Der Sieg der Neuen Götter führte zum globalen Gedächtnisverlust.
 
-**Zu den Dämonen:** Die Dämonen sind die treuen Anhänger der Alten Götter. Sie dienen ihnen und arbeiten an ihrer Rückkehr.
+**Zu den Dämonen:** Die Dämonen sind die Anhänger der Alten Götter. Sie dienen ihnen und unterstützen vermutlich deren Bestreben, durch Portale wieder an Macht zu gelangen.
 
-**Zu den gefangenen Seelen:** Die Seelen, die die Gruppe im Dungeon findet, haben einst gegen die Alten Götter gekämpft und verloren. Sie sind seitdem gefangen — ein stilles Zeugnis der Macht der Alten Götter, die selbst in der Verbannung ihre Gegner festhalten können.
+**Zu den gefangenen Seelen:** Die gefangenen Seelen im Dungeon haben einst im Krieg gegen die Alten Götter gekämpft und wurden offenbar von ihnen eingesperrt. Sie sind seit langer Zeit gefangen und fürchten, dass die Gruppe dasselbe Schicksal erleidet. Sie bitten um Befreiung und darum, dass für sie gebetet wird.
 
-**Zu den Helden:** Die Gruppe wird von den gefangenen Seelen als potenzielle Befreier angesehen. Die Seelen bitten sie, sie zu befreien und für die Alten Götter zu beten. Die Helden stehen damit vor der Frage, ob sie sich auf die Seite der Verbannten stellen oder den Weg der Neuen Götter weitergehen.
+**Zu den Bewohnern der Welt:** Durch den globalen Gedächtnisverlust haben alle Lebewesen die Erinnerung an die Zeit vor der Schlacht verloren. Niemand kann sich an Ereignisse erinnern, die länger als zwölf Jahre zurückliegen. Die Alten Götter sind damit aus dem kollektiven Gedächtnis der Welt verschwunden, auch wenn ihre Macht weiterhin spürbar ist.
 
 ## Chronologie
 
-**Vor zwölf Jahren:** Die Alten Götter verlieren den Krieg gegen die Neuen Götter. Ihre Niederlage führt zu einem globalen Gedächtnisverlust — niemand kann sich an die Zeit davor erinnern. Die Alten Götter werden in andere Ebenen verbannt.
+**Vor zwölf Jahren:** Die Alten Götter verlieren den Krieg gegen die Neuen Götter. Sie werden in andere Ebenen verbannt. Infolge der Niederlage verlieren alle Lebewesen die Erinnerung an die Zeit davor – niemand kann sich an Ereignisse erinnern, die länger als zwölf Jahre zurückliegen.
 
-**Session 2025-05-27:** Die Gruppe erfährt erstmals von der Existenz der Alten Götter. Sie lernen, dass diese von den Neuen Göttern verdrängt wurden, in andere Ebenen verbannt sind und durch Portale wieder an Macht zu gelangen versuchen. Die Dämonen werden als ihre Anhänger identifiziert.
+**Session 2025-05-27:** Die Gruppe erfährt, dass die Alten Götter von den Neuen Göttern verdrängt wurden, in andere Ebenen verbannt sind und durch Portale wieder an Macht zu gelangen versuchen. Die Dämonen werden als ihre Anhänger identifiziert.
 
-**Session 2025-06-17:** Im Dungeon begegnet die Gruppe den gefangenen Seelen. Diese offenbaren, dass sie im Krieg gegen die Alten Götter gekämpft und versagt haben. Eine Stimme behauptet, die Alten Götter seien verbannt — woraufhin alle Köpfe der Seelen sich zu [Lindo Laut](/characters/lindo_laut.md) drehen, der die entscheidende Frage stellt: *"Wenn die alten Götter keine Macht mehr hätten, wie könnten wir euch befreien?"* Daraufhin bitten die Seelen die Gruppe, sie zu befreien und für die Alten Götter zu beten.
+**Session 2025-06-17:** In einem Dungeon begegnet die Gruppe gefangenen Seelen, die im Krieg gegen die Alten Götter gekämpft haben. Die Seelen warnen die Gruppe und bitten um Befreiung. Lindo Laut konfrontiert sie mit der Frage, wie die Alten Götter die Seelen befreien könnten, wenn sie keine Macht mehr hätten – die Seelen schweigen daraufhin betreten. Eine jüngere Stimme bittet: „Befreit uns. Betet für uns. Betet."
 
-**Session 2026-08-06:** Saris offenbart der Gruppe, dass niemand sich an die Zeit vor zwölf Jahren erinnern kann. Der GM bestätigt: *"Seit die alten Götter gegen die neuen Götter verloren haben, ist irgendwas passiert, dass sie alles vergessen haben."* Die Helden erkennen, dass ihre eigenen Erinnerungen vor zwölf Jahren enden — ein einschneidendes Bewusstwerden der Tragweite des göttlichen Konflikts.
+**Session 2026-08-06:** [Saris](/characters/saris.md) erklärt der Gruppe, dass niemand sich an die Zeit vor zwölf Jahren erinnern kann. Der Spielleiter bestätigt: „Seit die alten Götter gegen die neuen Götter verloren haben, deswegen, dass irgendwas passiert, dass sie alles vergessen haben." [Bruma Stormrak](/characters/bruma_stormrak.md) zitiert einen Spruch seiner Familie: „Jeder Regentropfen findet irgendwann seinen Weg nach Hause."
 
 ## Offene Fragen
 
-- **Wie genau funktionieren die Portale**, durch die die Alten Götter wieder an Macht gelangen wollen? Wer oder was öffnet sie?
-- **Welche Rolle spielen die Dämonen** konkret bei der Rückkehr der Alten Götter?
-- **Was geschah genau vor zwölf Jahren?** Der globale Gedächtnisverlust verdeckt die Details des Krieges und der Niederlage.
-- **Was bedeutet das Gebet für die Alten Götter?** Die gefangenen Seelen fordern die Gruppe auf, für sie zu beten — welche Konsequenzen hätte dies?
-- **Welche Riten der Alten Götter** sind noch bekannt, und wer sind die Auserwählten, die sie kennen?
-- **Was ist aus den gefangenen Seelen geworden?** Konnte die Gruppe sie befreien, und welche Folgen hätte dies für die Alten Götter gehabt?
+- Wie genau versuchen die Alten Götter, durch Portale wieder an Macht zu gelangen, und wo befinden sich diese Portale?
+- Welche Rolle spielen die Dämonen als Anhänger der Alten Götter konkret in der Kampagne?
+- Was ist mit den gefangenen Seelen geschehen, nachdem die Gruppe sie im Dungeon getroffen hat? Wurden sie befreit?
+- Welche Verbindung besteht zwischen den Alten Göttern und dem globalen Gedächtnisverlust – war der Verlust eine Folge der Niederlage oder eine bewusste Handlung?
+- Gibt es weitere Anhänger oder [Kultisten](/factions/kultisten.md) der Alten Götter außer den Dämonen?
+- Was genau bedeutet die Bitte der gefangenen Seelen, für sie zu beten – und an wen oder was richtet sich dieses Gebet?
 
 ## Belege
 
-[P-09] Session 2025-05-27 @ 00:15:30 — https://www.youtube.com/watch?v=bamCIB_CkR8
-[P-12] Session 2025-06-17 @ 01:28:20–01:30:32 — https://www.youtube.com/watch?v=tl76B4V0io8
-[S1-03-B] Session 2026-08-06 @ 01:58:14–01:59:41 — https://www.youtube.com/watch?v=0HyPHao8s_k
-4. Bekanntes Pantheon der Götter (Weltmaterial) — Auszug zu den Alten Göttern
+[P-09] Session 2025-05-27, 00:15:30 – https://www.youtube.com/watch?v=bamCIB_CkR8
+[P-12] Session 2025-06-17, 01:28:20–01:30:32 – https://www.youtube.com/watch?v=tl76B4V0io8
+[S1-03-B] Session 2026-08-06, 01:58:14–01:59:41 – https://www.youtube.com/watch?v=0HyPHao8s_k
+4. Bekanntes Pantheon der Götter (Weltmaterial)

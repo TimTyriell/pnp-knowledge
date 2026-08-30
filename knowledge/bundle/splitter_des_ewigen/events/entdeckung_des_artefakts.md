@@ -10,7 +10,7 @@ id: EVENT_ENTDECKUNG_DES_ARTEFAKTS
 subtype: Entdeckung
 ---
 
-[Lindo Laut](/characters/lindo_laut.md) und [Nyrella](/characters/nyrella.md) finden ein Lederbündel mit einem Artefakt in einem toten [Ende](/locations/ende_jenseits_der_orkgebiete.md) des Dungeons. Es ist mit dem [Symbol](/items/symbol_in_der_villa.md) von [Thar'Vok](/deities/tarvok_der_erdrichter.md) versehen.
+[Lindo Laut](/characters/lindo_laut.md) und [Nyrella](/characters/nyrella.md) finden ein Lederbündel mit einem Artefakt in einem toten Ende des Dungeons. Es ist mit dem [Symbol](/items/symbol_in_der_villa.md) von [Thar'Vok](/deities/tarvok_der_erdrichter.md) versehen.
 
 # Belege
 

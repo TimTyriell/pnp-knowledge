@@ -10,7 +10,7 @@ id: EVENT_GESPRAECH_MIT_ROLAND
 subtype: Verhandlung
 ---
 
-Die Gruppe spricht mit [Roland](/npcs/roland.md), dem Anführer der [Flüchtlinge](/factions/fluechtlinge_aus_breska.md), und bietet an, ihnen zu helfen. [Rotunas](/characters/rotunas.md) überzeugt Roland, zum [Banditenlager](/locations/banditenlager_der_silberkerne.md) zu ziehen, und gibt ihm Gold. Sie vereinbaren ein Treffen in 10 Tagen.
+Die Gruppe spricht mit [Roland](/npcs/roland.md), dem Anführer der Flüchtlinge, und bietet an, ihnen zu helfen. [Rotunas](/characters/rotunas.md) überzeugt Roland, zum [Banditenlager](/locations/banditenlager_der_silberkerne.md) zu ziehen, und gibt ihm Gold. Sie vereinbaren ein Treffen in 10 Tagen.
 
 # Belege
 

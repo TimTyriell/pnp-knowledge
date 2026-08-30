@@ -13,7 +13,7 @@ aliases:
 - Seelenstein
 ---
 
-Ein grüner [Kristall](/items/gruener_kristall.md), der als Energiequelle für Teleportation dient. [Hans](/npcs/hans_soldat_aus_breska.md) übergibt [Rotunas](/characters/rotunas.md) einen [Seelenstein](/items/seelenstein_des_rotunas.md), der den untoten Krieger beschwört. Rotunas besitzt selbst einen Seelenstein.
+Ein grüner [Kristall](/items/gruener_kristall.md), der als Energiequelle für Teleportation dient. Hans übergibt [Rotunas](/characters/rotunas.md) einen Seelenstein, der den untoten Krieger beschwört. Rotunas besitzt selbst einen Seelenstein.
 
 # Belege
 

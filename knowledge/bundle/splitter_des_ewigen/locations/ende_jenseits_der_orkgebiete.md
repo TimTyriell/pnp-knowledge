@@ -2,28 +2,25 @@
 type: Location
 title: Ende (jenseits der Orkgebiete)
 description: Das Ende ist eine gefährliche Region im hohen Norden, jenseits der Orkgebiete.
-  Sie ist nach einer alten Bibliothek benannt und wird als vul…
+  Sie ist vulkanisch geprägt, sehr heiß und instabil. In der N…
 tags:
 - locations
 timestamp: '2026-03-18T00:00:00Z'
 id: LOC_ENDE_JENSEITS_DER_ORKGEBIETE
 subtype: Siedlung
-aliases:
-- Ende
-- Das Ende
 ---
 
-Das Ende ist eine gefährliche Region im hohen Norden, jenseits der Orkgebiete. Sie ist nach einer alten Bibliothek benannt und wird als vulkanisch, extrem heiß und instabil beschrieben. In der Nähe der Region wachsen Kristalle. Bislang ist niemand von einer Reise dorthin zurückgekehrt; die Orks gelten als diejenigen mit Erfahrung in der Route dorthin.
+Das Ende ist eine gefährliche Region im hohen Norden, jenseits der Orkgebiete. Sie ist vulkanisch geprägt, sehr heiß und instabil. In der Nähe des Endes wachsen Kristalle. Ihren Namen trägt die Region nach einer alten Bibliothek; bislang ist niemand von dort zurückgekehrt.
 
-## Lage und Erscheinungsbild
-Das Ende liegt im hohen Norden, jenseits der Orkgebiete. Es handelt sich um eine vulkanisch geprägte Gegend, die als sehr heiß und instabil gilt. In der Nähe des Endes wachsen Kristalle; genauere Angaben über ihre Art oder Bedeutung fehlen in den vorliegenden Quellen.
+## Lage und Natur
 
-## Herkunft des Namens
-Der Name „Ende“ geht auf eine alte Bibliothek zurück, nach der die Region benannt ist. Was diese Bibliothek einst beherbergte oder weshalb sie diesen Namen trug, ist aus den Belegen nicht bekannt.
+Das Ende liegt im hohen Norden, jenseits der Orkgebiete. Beide Überlieferungen beschreiben die Gegend übereinstimmend als gefährlich und vulkanisch. Die Hitze und Instabilität der Region machen sie zu einem lebensfeindlichen Ort. In der Nähe des Endes wachsen Kristalle; über deren Art und Bedeutung ist nichts Weiteres bekannt.
 
-## Erfahrung der Orks
-Die Orks haben Erfahrung mit der Route zum Ende. Damit sind sie offenbar die einzige bekannte Gruppe, die den Weg dorthin kennt. Die Quellen lassen offen, ob sie selbst bis zur Region vordringen oder lediglich den Weg dorthin wissen.
+## Name und Zugang
+
+Der Name der Region geht auf eine alte Bibliothek zurück. Einzelheiten über diese Bibliothek sind nicht überliefert. Die Orks haben Erfahrung mit der Route dorthin, kennen also den Weg ins Ende. Trotzdem ist niemand von einer Reise in die Region zurückgekehrt, sodass kaum gesichertes Wissen über das Ende selbst existiert.
 
 # Belege
-[P-25] Session 2025-10-07, 00:09:39 – [YouTube](https://www.youtube.com/watch?v=qVAF_54S8Vw)
-[P-41] Session 2026-03-18, 00:16:32 – [YouTube](https://www.youtube.com/watch?v=HHXxsASLrbQ)
+
+[P-25] Session 2025-10-07, 00:09:39, https://www.youtube.com/watch?v=qVAF_54S8Vw
+[P-41] Session 2026-03-18, 00:16:32, https://www.youtube.com/watch?v=HHXxsASLrbQ

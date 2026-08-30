@@ -96,7 +96,7 @@ Vorgultar hat Anhänger, die an der Oberfläche kämpfen. Dazu gehören Seraphen
 
 - **Session 2026-06-10:** Vorgultar gibt Befehle aus, die die Gruppe nicht versteht. Er wird als sturer und älter beschrieben, als Vasul erwartet hatte. Seine Anhänger, darunter Seraphen, sind auf dem Berg stationiert.
 
-- **Session 2026-06-16:** Vorgultar hat Angst vor etwas, das kommen wird, und ruft seinen engsten Vertrauten zu sich. Die Gruppe versteht seine Befehle: „[Nazirathel](/npcs/nazirathel.md), komm zurück.“ In seinem Klang liegt Angst. Am [Ende](/locations/ende_jenseits_der_orkgebiete.md) der Session erscheint Vorgultar in celestischer Gestalt, nachdem Esterossa den Splitter zerstört hat.
+- **Session 2026-06-16:** Vorgultar hat Angst vor etwas, das kommen wird, und ruft seinen engsten Vertrauten zu sich. Die Gruppe versteht seine Befehle: „[Nazirathel](/npcs/nazirathel.md), komm zurück.“ In seinem Klang liegt Angst. Am Ende der Session erscheint Vorgultar in celestischer Gestalt, nachdem Esterossa den Splitter zerstört hat.
 
 - **Session 2026-07-21:** Vorgultar erscheint in der Höhle und schreit mit den Stimmen der Seelen. Er wird von Esterossa vertrieben und zieht sich schreiend zurück. Esterossa erklärt Lunara, dass dies die einzige Möglichkeit sei, ihren Bruder zu retten.
 

@@ -10,7 +10,7 @@ id: LOC_GEHEIMGANG
 subtype: Sonstiges
 ---
 
-Ein geheimer Durchgang, der von der [Mine](/locations/verlassene_mine_an_der_farm.md) zum Dorf führt. Die Gruppe zerstört ihn am [Ende](/locations/ende_jenseits_der_orkgebiete.md) der Session, um die Feinde aufzuhalten.
+Ein geheimer Durchgang, der von der Mine zum Dorf führt. Die Gruppe zerstört ihn am Ende der Session, um die Feinde aufzuhalten.
 
 # Belege
 

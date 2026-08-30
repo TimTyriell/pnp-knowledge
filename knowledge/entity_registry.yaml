@@ -523,11 +523,6 @@ entities:
   canonical_name: Befreiung von Luli
   aliases: []
   mention_count: 1
-- concept_id: events/befreiung_von_nerash
-  type: Event
-  canonical_name: Befreiung von Nerash
-  aliases: []
-  mention_count: 1
 - concept_id: events/begegnung_mit_dem_eisdaemon
   type: Event
   canonical_name: Begegnung mit dem Eisdämon
@@ -653,6 +648,11 @@ entities:
 - concept_id: events/die_ankunft_von_vorgul_tar
   type: Event
   canonical_name: Die Ankunft von Vorgul'tar
+  aliases: []
+  mention_count: 1
+- concept_id: events/die_befreiung_von_nerash
+  type: Event
+  canonical_name: Befreiung von Nerash
   aliases: []
   mention_count: 1
 - concept_id: events/die_befreiung_von_tatrick
@@ -928,11 +928,6 @@ entities:
 - concept_id: events/hinterhalt_auf_die_bugbears
   type: Event
   canonical_name: Hinterhalt auf die Bugbears
-  aliases: []
-  mention_count: 1
-- concept_id: events/illusion_von_kalos
-  type: Event
-  canonical_name: Illusion von Kalos
   aliases: []
   mention_count: 1
 - concept_id: events/joao_faellt_ins_wasser
@@ -1523,10 +1518,11 @@ entities:
   canonical_name: Tunnel der Gnolle
   aliases: []
   mention_count: 1
-- concept_id: events/turnier_von_willau
+- concept_id: events/turnier_von_willauch
   type: Event
-  canonical_name: Turnier von Willau
-  aliases: []
+  canonical_name: Turnier von Willauch
+  aliases:
+  - Turnier von Willau
   mention_count: 1
 - concept_id: events/ueberfall_auf_das_holzfaellerlager
   type: Event
@@ -1792,7 +1788,6 @@ entities:
   - Flüchtlinge aus Breska
   - Die Flüchtlinge aus Bereska
   - Flüchtlinge (Gruppe um Roland)
-  - Flüchtlinge
   mention_count: 2
 - concept_id: factions/garde_von_brandau
   type: Faction
@@ -2686,7 +2681,7 @@ entities:
   canonical_name: Wanted-Plakat auf Gnoll
   aliases: []
   mention_count: 1
-- concept_id: items/wappen_von_villau
+- concept_id: items/wappen_von_villauch
   type: Item
   canonical_name: Wappen von Villau
   aliases: []
@@ -2746,10 +2741,11 @@ entities:
   canonical_name: Anderlingsrad
   aliases: []
   mention_count: 1
-- concept_id: locations/arena_von_willau
+- concept_id: locations/arena_von_willauch
   type: Location
-  canonical_name: Arena von Willau
-  aliases: []
+  canonical_name: Arena von Willauch
+  aliases:
+  - Arena von Willau
   mention_count: 1
 - concept_id: locations/aussenposten_der_gilde
   type: Location
@@ -2998,9 +2994,7 @@ entities:
 - concept_id: locations/ende_jenseits_der_orkgebiete
   type: Location
   canonical_name: Ende (jenseits der Orkgebiete)
-  aliases:
-  - Ende
-  - Das Ende
+  aliases: []
   mention_count: 2
 - concept_id: locations/erntefelder
   type: Location
@@ -3925,7 +3919,6 @@ entities:
   type: NPC
   canonical_name: Hans (Soldat aus Breska)
   aliases:
-  - Hans
   - Soldat aus Breska
   mention_count: 1
 - concept_id: npcs/hans_wirt_zum_gruenen_sichelmond
@@ -4005,6 +3998,11 @@ entities:
 - concept_id: npcs/hubert
   type: NPC
   canonical_name: Hubert
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/illusion_von_kalos
+  type: NPC
+  canonical_name: Illusion von Kalos
   aliases: []
   mention_count: 1
 - concept_id: npcs/imps
@@ -4555,7 +4553,7 @@ entities:
   canonical_name: Trickler
   aliases: []
   mention_count: 1
-- concept_id: npcs/trilo
+- concept_id: npcs/trillo
   type: NPC
   canonical_name: Trilo
   aliases: []
@@ -4716,13 +4714,13 @@ retired:
   type: Domain
   canonical_name: Daggerheart
   aliases: []
+- concept_id: events/befreiung_von_nerash
+  type: Event
+  canonical_name: Befreiung von Nerash
+  aliases: []
 - concept_id: events/begegnung_mit_dem_skelettschaedel
   type: Event
   canonical_name: Begegnung mit dem Skelettschädel
-  aliases: []
-- concept_id: events/die_befreiung_von_nerash
-  type: Event
-  canonical_name: Befreiung von Nerash
   aliases: []
 - concept_id: events/die_falle
   type: Event
@@ -4743,6 +4741,10 @@ retired:
 - concept_id: events/feuerwand
   type: Event
   canonical_name: Feuerwand
+  aliases: []
+- concept_id: events/illusion_von_kalos
+  type: Event
+  canonical_name: Illusion von Kalos
   aliases: []
 - concept_id: events/kampf_gegen_das_skelett
   type: Event
@@ -4767,6 +4769,10 @@ retired:
 - concept_id: events/treffen_mit_sys_fizik
   type: Event
   canonical_name: Treffen mit Sys Fizik
+  aliases: []
+- concept_id: events/turnier_von_willau
+  type: Event
+  canonical_name: Turnier von Willau
   aliases: []
 - concept_id: events/vasuls_warnung
   type: Event
@@ -4845,13 +4851,17 @@ retired:
   type: Item
   canonical_name: Verwandlungstrank
   aliases: []
-- concept_id: items/wappen_von_villauch
+- concept_id: items/wappen_von_villau
   type: Item
   canonical_name: Wappen von Villau
   aliases: []
 - concept_id: items/zebras_zorn
   type: Item
   canonical_name: Zebras Zorn
+  aliases: []
+- concept_id: locations/arena_von_willau
+  type: Location
+  canonical_name: Arena von Willau
   aliases: []
 - concept_id: locations/das_ende
   type: Location
@@ -4931,10 +4941,6 @@ retired:
   type: NPC
   canonical_name: Graf Voras
   aliases: []
-- concept_id: npcs/illusion_von_kalos
-  type: NPC
-  canonical_name: Illusion von Kalos
-  aliases: []
 - concept_id: npcs/jorah_vanur
   type: NPC
   canonical_name: Jorah Vanur
@@ -4966,7 +4972,7 @@ retired:
   type: NPC
   canonical_name: Südrawell
   aliases: []
-- concept_id: npcs/trillo
+- concept_id: npcs/trilo
   type: NPC
   canonical_name: Trilo
   aliases: []

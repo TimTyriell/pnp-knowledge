@@ -19,7 +19,7 @@ Seine Präsenz wird als „sehr, sehr ruhig“ beschrieben, trägt aber einen �
 
 Bruma schließt sich der Gruppe auf Einladung von [Talron](/npcs/talron.md) an und wird zu einem festen Mitglied des Abenteurer-Trupps. Er übernimmt wiederholt Wache und zeigt taktisches Geschick, etwa als er den [Tunnel der Gnolle](/events/tunnel_der_gnolle.md) entdeckt. In der Gruppe ist er derjenige, der mit seiner Blitzmagie im Kampf große Wirkung erzielt und zugleich durch seine schiere Präsenz einschüchternd wirkt.
 
-Über die Sessions hinweg entwickelt er sich vom misstrauischen Einzelgänger zum engagierten Teil der Gruppe: Er verhandelt mit dem [Bürgermeister](/npcs/buergermeister_spitzzahn.md) über die Aufnahme von Flüchtlingen, bietet an, ein Grundstück zu kaufen, und schlägt vor, die [Gilde](/factions/gilde_von_ehrenfels.md) zu reaktivieren. Er übernimmt damit zunehmend eine vermittelnde und vorausschauende Rolle innerhalb der Gruppe und gegenüber den Ortsansässigen.
+Über die Sessions hinweg entwickelt er sich vom misstrauischen Einzelgänger zum engagierten Teil der Gruppe: Er verhandelt mit dem Bürgermeister über die Aufnahme von Flüchtlingen, bietet an, ein Grundstück zu kaufen, und schlägt vor, die [Gilde](/factions/gilde_von_ehrenfels.md) zu reaktivieren. Er übernimmt damit zunehmend eine vermittelnde und vorausschauende Rolle innerhalb der Gruppe und gegenüber den Ortsansässigen.
 
 ## Wichtige Merkmale
 
@@ -39,13 +39,13 @@ Bruma ist sturer und wütender Charakter, der schnell angespannt ist. Er ist mis
 - **Kaya**: Er gibt ihr eine Halskette als Dank und kombiniert im Kampf seine Blitzmagie mit ihrer, um eine verheerende Explosion auszulösen. Kayas Lied berührt ihn tief und erinnert ihn an seine Großmutter.
 - **[Sange](/characters/sange.md)**: Mit ihm stimmt er sich bei Verhandlungen ab, etwa als er vor dem Gespräch mit dem Bürgermeister kurz zu ihm hinüberschaut und auf sein Nicken wartet.
 - **[Xenia](/npcs/xenia_rotkam.md)**: Er überzeugt sie mit einer leidenschaftlichen Rede über Heimat und Verlust, die in einem Präsenzwurf von 25 gipfelt.
-- **Bürgermeister Spitzzahn**: Mit ihm verhandelt Bruma über die Aufnahme der [Flüchtlinge](/factions/fluechtlinge_aus_breska.md) und bietet an, ein Grundstück für ein Etablissement zu kaufen.
+- **[Bürgermeister Spitzzahn](/npcs/buergermeister_spitzzahn.md)**: Mit ihm verhandelt Bruma über die Aufnahme der Flüchtlinge und bietet an, ein Grundstück für ein Etablissement zu kaufen.
 - **[Hauptmann Aaron](/npcs/hauptmann_aaron.md)**: Mit ihm spricht Bruma über die Verteidigung und schlägt vor, die Gilde zu reaktivieren. Er bietet an, einen Sack Gold für die Flüchtlinge zu zahlen, was Aaron ablehnt.
 - **Halblinge**: Zu ihnen hat er ein ambivalentes Verhältnis – er schüchtert sie ein, überzeugt sie aber auch mit Vernunft und erhält von einem Halblingsjungen einen Heiltrank.
 
 ## Chronologie
 
-**Session 2026-07-10**: Bruma wird am Camp der Gruppe vorgestellt. Er ist ein 2,10 m großer Drakonier mit dunkelblauen Schuppen und einem überdimensionalen metallenen Spulenstab. Er schließt sich der Gruppe auf Talrons Einladung an, hält Wache und entdeckt den Tunnel der Gnolle. Er gibt Kaya eine Halskette als Dank und betritt entschlossen die [Mine](/locations/verlassene_mine_an_der_farm.md).
+**Session 2026-07-10**: Bruma wird am Camp der Gruppe vorgestellt. Er ist ein 2,10 m großer Drakonier mit dunkelblauen Schuppen und einem überdimensionalen metallenen Spulenstab. Er schließt sich der Gruppe auf Talrons Einladung an, hält Wache und entdeckt den Tunnel der Gnolle. Er gibt Kaya eine Halskette als Dank und betritt entschlossen die Mine.
 
 **Session 2026-07-23**: In der Mine zeigt Bruma sich angespannt und macht sich Sorgen um das Dorf. Er kämpft effektiv mit Blitzen, tötet mehrere Gegner und kombiniert seine Magie mit Kaya zu einer Explosion, die viele Gnolle tötet. Er findet eine [Kriegskarte](/items/kriegskarte.md), einen Sack Gold und einen [Blutstein](/items/blutstein.md). Er bleibt misstrauisch gegenüber den anderen und beobachtet sie genau.
 

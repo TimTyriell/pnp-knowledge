@@ -30,7 +30,7 @@ Landra, in der Welt weithin als die Sumpfhexe oder die Hag bekannt, ist eine der
 
 Landra ist die treibende Kraft hinter mehreren zentralen Konflikten der Kampagne. Sie ist die Anführerin des Goblinangriffs auf das Dorf Breska, den sie von ihrer Krypta aus orchestriert. Die Gruppe erfährt von ihr zunächst als geheimnisvolle "Hag", die hinter den Angriffen steckt. Im weiteren Verlauf entpuppt sie sich als Drahtzieherin, die die Gruppe immer wieder manipuliert und ihre Handlungen lenkt, um ihre eigenen Ziele zu verfolgen.
 
-Sie ist verantwortlich für die Täuschung der Kuatau, denen sie Amulette gab und ein [Portal](/locations/portal.md) unter einer [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) öffnete. Zudem stahl sie Artefakte aus einem Kloster und platzierte einen Palantir, um die Gruppe zu manipulieren. Ihr Ziel scheint unter anderem die Suche nach [Voras](/npcs/voras.md)' Gemahlin zu sein, und sie zeigt ein besonderes Interesse an dem, was [Lindo Laut](/characters/lindo_laut.md) in sich trägt. Sie trägt die Symbole und Zeichen des Gottes [Vasul](/deities/vharzul.md) auf ihrer Haut, was auf eine tiefere Verbindung zu ihm hindeutet. In einer späteren Session wird sie als Gegenspielerin beschrieben, die verschwunden ist und von der Nox vermutet, dass sie Pläne mit Vasul hat und deutlich mehr weiß als alle anderen. Ein Auftrag, im [Sumpf](/locations/sumpf_vor_dem_goblin_dorf.md) nach ihr zu suchen, wurde von niemandem angenommen.
+Sie ist verantwortlich für die Täuschung der Kuatau, denen sie Amulette gab und ein [Portal](/locations/portal.md) unter einer [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) öffnete. Zudem stahl sie Artefakte aus einem Kloster und platzierte einen Palantir, um die Gruppe zu manipulieren. Ihr Ziel scheint unter anderem die Suche nach Voras' Gemahlin zu sein, und sie zeigt ein besonderes Interesse an dem, was [Lindo Laut](/characters/lindo_laut.md) in sich trägt. Sie trägt die Symbole und Zeichen des Gottes [Vasul](/deities/vharzul.md) auf ihrer Haut, was auf eine tiefere Verbindung zu ihm hindeutet. In einer späteren Session wird sie als Gegenspielerin beschrieben, die verschwunden ist und von der Nox vermutet, dass sie Pläne mit Vasul hat und deutlich mehr weiß als alle anderen. Ein Auftrag, im [Sumpf](/locations/sumpf_vor_dem_goblin_dorf.md) nach ihr zu suchen, wurde von niemandem angenommen.
 
 ## Wichtige Merkmale
 
@@ -38,7 +38,7 @@ Landra ist eine bucklige alte Frau mit magischen Fähigkeiten. Sie beherrscht m�
 
 Ihr Auftreten ist von Arroganz und Herablassung geprägt. Sie bezeichnet die Gruppe als "unwürdig" und verspottet sie, bevor sie durch einen [Altar](/items/altar.md) verschwindet. Sie zeigt keine Angst und keinen Hass, sondern eher eine Gelassenheit, die von ihrer Überlegenheit zeugt. Ihre Stimme wird als "ganz alte Stimme, eine ganz verwunschene Stimme" beschrieben, die über weite Kilometer hinweg kommuniziert.
 
-Landra ist eine Meisterin der Täuschung. Sie täuschte die Kuatau, manipulierte die Gruppe durch den platzierten Palantir und erscheint am [Ende](/locations/ende_jenseits_der_orkgebiete.md) einer Session als Illusion, um der Gruppe zuzuzwinkern – ein Zeichen dafür, dass sie die Ereignisse kontrolliert hat. Sie droht der Gruppe, falls diese sich ihr in den Weg stellt: "Ich werde nicht dafür sorgen, dass die nächsten Monate eure letzten und grauenvollsten werden. Versprochen. Denkt dran, ich habe immer meine Versprechen gehalten."
+Landra ist eine Meisterin der Täuschung. Sie täuschte die Kuatau, manipulierte die Gruppe durch den platzierten Palantir und erscheint am Ende einer Session als Illusion, um der Gruppe zuzuzwinkern – ein Zeichen dafür, dass sie die Ereignisse kontrolliert hat. Sie droht der Gruppe, falls diese sich ihr in den Weg stellt: "Ich werde nicht dafür sorgen, dass die nächsten Monate eure letzten und grauenvollsten werden. Versprochen. Denkt dran, ich habe immer meine Versprechen gehalten."
 
 ## Beziehungen und Verbindungen
 
@@ -47,7 +47,7 @@ Landra ist eine Meisterin der Täuschung. Sie täuschte die Kuatau, manipulierte
 - **Die Kuatau**: Landra hat die Kuatau getäuscht, indem sie ihnen Amulette gab und ein [Portal unter der Kapelle](/events/portal_unter_der_kapelle.md) öffnete. Die Gruppe kann die Kuatau später davon überzeugen, dass Landra böse ist.
 - **Voras**: Landra ist auf der Suche nach Voras' Gemahlin. Die genaue Natur dieser Verbindung bleibt unklar.
 - **[Lendras](/npcs/lendras.md)**: Landra hat den Magier Lendras angegriffen.
-- **Der Graf (Vampir)**: Der Vampirgraf steht Landra im Weg, wie die Gruppe herausfindet.
+- **[Der Graf](/npcs/voras.md) (Vampir)**: Der Vampirgraf steht Landra im Weg, wie die Gruppe herausfindet.
 - **Vasul**: Landra trägt die Zeichen Vasuls auf ihrer Haut und scheint mit ihm verbunden zu sein. Lindo Laut vermutet, dass sie Pläne mit ihm hat.
 - **[Joar](/npcs/joar_vanur.md)**: Landra fordert die Rückgabe eines Artefakts, das Joar gestohlen hat.
 

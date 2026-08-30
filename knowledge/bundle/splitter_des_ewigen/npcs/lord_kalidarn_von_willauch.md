@@ -23,4 +23,10 @@ Als Herr von Willauch entscheidet Lord Kalidarn über Leben und Tod in der Arena
 
 ## Auftreten und Persönlichkeit
 
-Lord Kalidarn wirkt emotionslos und ist schwer zu beeindrucken. Er verfolgt die Kämpfe bewegungslos und klatscht erst am [Ende](/locations/ende_jenseits_der_orkgebiete.md) kurz. Er ist artefakt-affin und schätzt Kämpfe als Kunst.
+Lord Kalidarn wirkt emotionslos und ist schwer zu beeindrucken. Er verfolgt die Kämpfe bewegungslos und klatscht erst am Ende kurz. Er ist artefakt-affin und schätzt Kämpfe als Kunst.
+
+# Belege
+
+1. Session 2025-10-14 @ 00:37:48 (https://www.youtube.com/watch?v=cUtz87UCHu4)
+2. Session 2025-10-21 @ 00:14:20 (https://www.youtube.com/watch?v=sxFhbtwoefA)
+3. Session 2025-11-14 @ 00:01:38 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)

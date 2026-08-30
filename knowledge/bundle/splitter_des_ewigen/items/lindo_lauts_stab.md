@@ -14,7 +14,7 @@ aliases:
 - Stab von Lindo Laut
 ---
 
-Der [Schlüssel](/items/magischer_schluessel.md) von Abisalis, in der Welt als Lindo Lauts Stab bekannt, ist ein magischer Stab aus dem Besitz Lindo Lauts. Er entpuppt sich als Portalschlüssel, der Reisen zwischen verschiedenen Orten ermöglicht und insbesondere eine Verbindung zur [Splitterwelt](/domains/splitterwelt.md) Abisalis herstellt. Lunara nutzte ihn, um in Ehrenfels ein [Portal](/locations/portal.md) nach Abisalis zu öffnen; anschließend fiel der Stab an [Vasul](/deities/vharzul.md).
+Der [Schlüssel](/items/magischer_schluessel.md) von Abisalis, in der Welt als [Lindo Lauts](/characters/lindo_laut.md) Stab bekannt, ist ein magischer Stab aus dem Besitz Lindo Lauts. Er entpuppt sich als Portalschlüssel, der Reisen zwischen verschiedenen Orten ermöglicht und insbesondere eine Verbindung zur [Splitterwelt](/domains/splitterwelt.md) Abisalis herstellt. Lunara nutzte ihn, um in Ehrenfels ein [Portal](/locations/portal.md) nach Abisalis zu öffnen; anschließend fiel der Stab an [Vasul](/deities/vharzul.md).
 
 ## Funktion und Herkunft
 

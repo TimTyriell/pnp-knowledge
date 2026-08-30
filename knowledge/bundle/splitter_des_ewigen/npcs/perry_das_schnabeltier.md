@@ -47,7 +47,7 @@ Perry ist loyal und beschützt Cookie [P-17]. Er ist ein treuer Begleiter, der v
 - **[Cookie](/characters/cookie.md)**: Perry ist Cookies Begleiter und engster Vertrauter. Sie behandelt ihn liebevoll, streichelt ihn, redet ihm gut zu und sucht in Stresssituationen seine Nähe [P-02][P-18][P-27]. Sie sorgt sich um ihn, als er bei einer Teleportation zurückgelassen wird [P-20], und sucht ihn, als er am Steg vergessen wird [P-16].
 - **[Lunara Velora](/characters/lunara_velora.md)**: Eine bemerkenswerte Verbindung entsteht in der Session vom 18. November 2025: Perry, der normalerweise scheu ist und langsam Vertrauen fasst, bewegt sich sofort auf Lunara zu und lässt sich von ihr streicheln. Die Gruppe beobachtet das verwundert, da Perry bei ihnen allen lange gebraucht hat, um Vertrauen zu fassen [P-30].
 - **[Vasul](/deities/vharzul.md)**: [Vasul](/deities/vharzul.md) lässt Perry bei einer Teleportation zurück, was Cookie verärgert [P-20]. Er begründet dies damit, dass [Nyrella](/characters/nyrella.md) als Aufpasserin bei den Tieren bleibt [P-20].
-- **[Nyrella](/characters/nyrella.md)**: Nyrella übernimmt die Aufsicht über die Tiere, als die Gruppe teleportiert wird und Perry zurückbleibt [P-20].
+- **[Nyrella](/characters/nyrella.md)**: [Nyrella](/characters/nyrella.md) übernimmt die Aufsicht über die Tiere, als die Gruppe teleportiert wird und Perry zurückbleibt [P-20].
 - **Die Gruppe**: Perry wird von den anderen Helden immer wieder wahrgenommen und kommentiert – etwa als er am Steg fast vergessen wird [P-16] oder als der Riese ihn als potenzielle Beute ins Visier nimmt [P-18].
 
 ## Chronologie
@@ -72,7 +72,7 @@ Perry ist loyal und beschützt Cookie [P-17]. Er ist ein treuer Begleiter, der v
 
 **Session 2025-10-21**: Cookie bringt Perry in die Arena mit. Sie streichelt ihn und redet ihm gut zu: „Ich gucke mein Frettchen an, der da, Perry ist da. Den sieht man noch nicht, aber er ist da. Wir gucken uns so tief in die Augen und ich streichel ihn noch so und rede ihm gut zu." [P-27] Im [Kampf gegen die Phasenspinne](/events/kampf_gegen_die_phasenspinne.md) wird Perry von kleinen Spinnen angegriffen und erleidet Stress, überlebt aber [P-27].
 
-**Session 2025-10-28**: Perry ist im Dungeon gestresst und panisch. Er verkriecht sich in Cookies Tasche und ist am [Ende](/locations/ende_jenseits_der_orkgebiete.md) der Session extrem ängstlich [P-28]. Bei der langen Rast klärt der GM, dass auch der Companion von der Stress-Erholung profitiert: „Dein kleiner Parry dann bekommt im Endeffekt. Also don't stress." [P-28]
+**Session 2025-10-28**: Perry ist im Dungeon gestresst und panisch. Er verkriecht sich in Cookies Tasche und ist am Ende der Session extrem ängstlich [P-28]. Bei der langen Rast klärt der GM, dass auch der Companion von der Stress-Erholung profitiert: „Dein kleiner Parry dann bekommt im Endeffekt. Also don't stress." [P-28]
 
 **Session 2025-11-18**: Perry, der die ganze Zeit sehr ruhig war, bewegt sich plötzlich auf Lunara zu. Der GM beschreibt: „Was euch plötzlich auffällt ist, dass tatsächlich Perry, das Schnabeltier, sich irgendwie, der sehr ruhig war die ganze Zeit, dann doch irgendwie zu Lunara bewegt und sie hockt sich mehr oder weniger hin und streichelt so ganz unbedarft diese, ja, ich sag jetzt mal, kleine Gestalt." Die Gruppe beobachtet das verwundert, „weil Perry eigentlich nicht so schnell irgendwie vertraut und auch bei euch hat es allen sehr lange gedauert, bis er sich so ein bisschen an euch geschmust hat, aber irgendwas scheint Perry in Lunara zu sehen" [P-30].
 

@@ -9,7 +9,7 @@ timestamp: '2025-04-30T00:00:00Z'
 id: NPC_ANTON_GROSSWURZ
 ---
 
-Anton Großwurz ist der Heiler der Stadt [Sanddorn](/locations/sanddorn.md). Er schläfert einen betrunkenen Gast ein, der [Esterossa](/characters/esterossa.md) bedroht, und stellt sich als Heiler vor, der gegen Bezahlung hilft.
+Anton Großwurz ist der Heiler der Stadt Sanddorn. Er schläfert einen betrunkenen Gast ein, der [Esterossa](/characters/esterossa.md) bedroht, und stellt sich als Heiler vor, der gegen Bezahlung hilft.
 
 # Belege
 

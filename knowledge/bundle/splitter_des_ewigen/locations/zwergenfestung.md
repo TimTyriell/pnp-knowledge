@@ -10,7 +10,7 @@ id: LOC_ZWERGENFESTUNG
 subtype: Festung
 ---
 
-Die Zwergenfestung liegt in den Bergen nahe [Ehrenfels](/locations/ehrenfels.md). Sie ist stark befestigt und beherbergt eine Werkstatt zur Herstellung magischer Artefakte. [Die Mine](/locations/verlassene_mine_an_der_farm.md) unter der [Festung](/locations/festung.md) ist reich an magischem Erz.
+Die Zwergenfestung liegt in den Bergen nahe [Ehrenfels](/locations/ehrenfels.md). Sie ist stark befestigt und beherbergt eine Werkstatt zur Herstellung magischer Artefakte. Die Mine unter der [Festung](/locations/festung.md) ist reich an magischem Erz.
 
 # Belege
 

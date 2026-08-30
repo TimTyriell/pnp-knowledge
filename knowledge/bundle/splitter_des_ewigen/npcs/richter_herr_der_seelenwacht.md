@@ -13,7 +13,7 @@ aliases:
 - Richter
 ---
 
-Der Richter ist eine wichtige Persönlichkeit der [Seelenwacht](/locations/seelenwacht.md) in [Jalan](/locations/jalan.md). Er tritt als entschlossener Anführer auf, der die Gruppe unter Zeitdruck zur [Villa](/locations/villau.md) führt, und verfügt über Autorität innerhalb der Organisation. Über seine Vergangenheit und genaue Stellung ist wenig bekannt; sein Titel verweist auf eine richterliche oder ordnende Funktion in den Reihen der Seelenwacht.
+Der Richter ist eine wichtige Persönlichkeit der Seelenwacht in [Jalan](/locations/jalan.md). Er tritt als entschlossener Anführer auf, der die Gruppe unter Zeitdruck zur [Villa](/locations/villau.md) führt, und verfügt über Autorität innerhalb der Organisation. Über seine Vergangenheit und genaue Stellung ist wenig bekannt; sein Titel verweist auf eine richterliche oder ordnende Funktion in den Reihen der Seelenwacht.
 
 ## Rolle in Jalan
 

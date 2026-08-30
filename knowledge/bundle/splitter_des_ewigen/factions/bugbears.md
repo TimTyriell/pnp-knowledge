@@ -10,7 +10,7 @@ id: FACTION_BUGBEARS
 subtype: Volk
 ---
 
-Die **[Bugbears](/npcs/bugbears.md)** sind Fellbiester, die eine [Burgruine](/locations/burgruine.md) bewohnen. Bei ihrer Begegnung mit der Gruppe greifen sie diese an und werden besiegt. Die Belege legen eine Verbindung zwischen den Bugbears und [Landra](/npcs/lenra.md) nahe, ohne deren Art näher auszuführen.
+Die **Bugbears** sind Fellbiester, die eine [Burgruine](/locations/burgruine.md) bewohnen. Bei ihrer Begegnung mit der Gruppe greifen sie diese an und werden besiegt. Die Belege legen eine Verbindung zwischen den Bugbears und [Landra](/npcs/lenra.md) nahe, ohne deren Art näher auszuführen.
 
 ## Erscheinung und Verhalten
 

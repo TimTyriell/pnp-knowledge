@@ -10,7 +10,7 @@ id: LOC_ZWERGENMINE
 subtype: Dungeon
 ---
 
-[Die Mine](/locations/verlassene_mine_an_der_farm.md) unter der [Zwergenfestung](/locations/zwergenfestung.md) ist ein weitläufiges Tunnelsystem, das von den Zwergen ausgebaut wurde. Sie enthält einen unterirdischen Fluss und eine Brücke, die die Grenze zum Gebiet der [Goblins](/npcs/pilz_goblins.md) markiert.
+Die Mine unter der [Zwergenfestung](/locations/zwergenfestung.md) ist ein weitläufiges Tunnelsystem, das von den Zwergen ausgebaut wurde. Sie enthält einen unterirdischen Fluss und eine Brücke, die die Grenze zum Gebiet der [Goblins](/npcs/pilz_goblins.md) markiert.
 
 # Belege
 

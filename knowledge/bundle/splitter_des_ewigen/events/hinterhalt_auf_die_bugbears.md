@@ -10,7 +10,7 @@ id: EVENT_HINTERHALT_AUF_DIE_BUGBEARS
 subtype: Kampf
 ---
 
-Die Gruppe lockt die [Bugbears](/npcs/bugbears.md) mit einer Illusion an und tötet sie, indem [Kaya](/characters/kaya.md) zwei mit ihrer magischen Hand in den Schacht stößt und die anderen im Kampf besiegt werden.
+Die Gruppe lockt die Bugbears mit einer Illusion an und tötet sie, indem [Kaya](/characters/kaya.md) zwei mit ihrer magischen Hand in den Schacht stößt und die anderen im Kampf besiegt werden.
 
 # Belege
 

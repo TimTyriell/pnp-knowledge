@@ -11,7 +11,7 @@ aliases:
 - Kalos
 ---
 
-Kalos ist eine Schattengestalt, die sich als guter Freund von [Trilo](/npcs/trilo.md) vorstellt. Er versucht, die Gruppe für seine Organisation zu rekrutieren, mit dem Ziel, [Villau](/locations/villau.md) zu stürzen. Er bietet Gold und Land an und droht, diejenigen zu opfern, die nicht beitreten. Er erweist sich als Illusion, die von [Merlin](/npcs/merlin.md) zerstört wird.
+Kalos ist eine Schattengestalt, die sich als guter Freund von [Trilo](/npcs/trillo.md) vorstellt. Er versucht, die Gruppe für seine Organisation zu rekrutieren, mit dem Ziel, [Villau](/locations/villau.md) zu stürzen. Er bietet Gold und Land an und droht, diejenigen zu opfern, die nicht beitreten. Er erweist sich als Illusion, die von [Merlin](/npcs/merlin.md) zerstört wird.
 
 # Belege
 

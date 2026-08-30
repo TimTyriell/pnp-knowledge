@@ -16,60 +16,52 @@ aliases:
 
 ## Überblick
 
-Kleinringtal ist eine befestigte Tavernensiedlung auf dem Weg nach Ringtal. Sie liegt in der nördlichen Schneise und dient als Zwischenstopp für Reisende, die zwischen den größeren Städten unterwegs sind. Die Siedlung ist wohlhabend und verfügt über eine eigene Mauer, was für eine Tavernensiedlung ungewöhnlich ist. Der Wohlstand rührt daher, dass hier sehr viele Gäste vorbeikommen und ihr Gold lassen – die Stadt hat sich aus Sicherheitsgründen für die Befestigung entschieden, da sie etwas abseits der größeren Städte liegt.
+Kleinringtal ist eine befestigte Tavernensiedlung auf dem Weg nach Ringtal. Sie liegt in der nördlichen Schneise und dient als Zwischenstopp für Reisende zwischen den größeren Städten der Region. Die Siedlung ist wohlhabend und verfügt über eine eigene Mauer – ein ungewöhnliches Merkmal für ein so kleines Dorf. Der Wohlstand rührt daher, dass hier sehr viele Gäste vorbeikommen und ihr Geld lassen; die Stadt hat sich aus Sicherheitsgründen für die Befestigung entschieden, da sie etwas abgelegen von den größeren Städten liegt. [1]
 
-Die Siedlung wird von [Xenia](/npcs/xenia_rotkam.md) geführt, der Besitzerin der Taverne. Sie ist eine wichtige Ansprechpartnerin für die Gruppe und spielt eine zentrale Rolle bei den Verhandlungen um die Evakuierung des Ortes.
+Die Siedlung wird als gepflegt, aber schlecht verteidigt beschrieben. Sie besteht aus Holzmauern und einfachen Gebäuden mit Strohdächern – „keine Großstadt, einfach von Dorf vielleicht ein bisschen aufgestiegen zu einem kleinen, ja, kleineren Städtchen“. [5] Die Mauern bieten zwar Schutz, doch die Stadt ist nicht gut auf eine Belagerung vorbereitet. [3]
 
 ## Rolle in der Kampagne
 
-Kleinringtal dient der Gruppe als Zwischenstation auf ihrem Weg nach Ringtal, der eigentlichen großen Stadt, die das Ziel der Reise ist. Die Gruppe verbringt hier zunächst zwei Nächte, nachdem sie von einem Gewaltmarsch erschöpft ankommt. Die Mauern bieten Schutz vor den Bedrohungen der Umgebung, auch wenn die Siedlung nicht gut auf eine Belagerung vorbereitet ist.
+Kleinringtal fungiert als wichtiger Zwischenstopp und Rückzugsort für die Gruppe auf ihrem Weg nach Ringtal. Die Gruppe verbringt hier zwei Nächte, nachdem sie das verwaiste Halblingdorf hinter sich gelassen hat. [1] Der [Talron](/npcs/talron.md), der die Gruppe begleitet, weist die Helden an, sich nicht zu gemütlich einzurichten: „Macht euch nicht zu gemütlich hier. Wir werden vielleicht ein, zwei Tage hier bleiben und dann werden wir direkt nach Ringtal aufbrechen.“ [3]
 
-Später wird Kleinringtal zum Schauplatz wichtiger Verhandlungen: Nachdem die Gruppe die [Halblinge](/factions/halblinge.md) aus ihrer Siedlung evakuiert hat und diese von den Gnollen zerstört wurde, bringt sie die [Flüchtlinge](/factions/fluechtlinge_aus_breska.md) nach Kleinringtal. Dort gelingt es vor allem Bruma, Xenia zu überzeugen, ebenfalls die Siedlung aufzugeben und sich der Flucht nach Ringtal anzuschließen. Die Siedlung wird damit zur letzten Station vor dem最终 Ziel Ringtal.
+Die Siedlung wird zum Sammelpunkt für Flüchtlinge: Die Gruppe bringt die [Halblinge](/factions/halblinge.md) aus ihrer zerstörten Siedlung hier unter und überredet später auch die Besitzerin der Taverne, [Xenia](/npcs/xenia_rotkam.md), die Siedlung aufzugeben und sich der Flucht nach Ringtal anzuschließen. [5] Kleinringtal dient damit als letzte Station vor der großen Stadt Ringtal, die von den Monstern bedroht wird. [2]
 
 ## Wichtige Merkmale
 
 ### Lage und Beschaffenheit
 
-Kleinringtal liegt in der nördlichen Schneise, auf halbem Weg zwischen den größeren Siedlungen. Die Entfernung zu Ringtal ist beträchtlich – der Weg dorthin ist lang und wird von der Gruppe als beschwerlich beschrieben. Die Siedlung selbst ist gepflegt, aber schlecht verteidigt: Die Mauern bestehen aus Holz und bieten zwar Schutz, aber keine ausreichende Verteidigung gegen eine ernsthafte Belagerung.
+Kleinringtal liegt in der nördlichen Schneise, auf halbem Weg zwischen den größeren Städten. Die Siedlung ist von einer eigenen Mauer umgeben, die sie von einer einfachen Taverne zu einer befestigten Siedlung macht. [1] Die Mauern bestehen aus Holz und bieten Schutz vor äußeren Bedrohungen, sind aber nicht für eine längere Belagerung ausgelegt. [3] [5]
 
-### Die Taverne
+### Bewohner und Wirtschaft
 
-Das Herzstück von Kleinringtal ist die Taverne, die Xenia gehört. Sie ist nicht nur eine einfache Schänke, sondern der zentrale Ort der Siedlung, an dem Reisende unterkommen und die Gruppe während ihrer Aufenthalte verweilt. [Die Taverne](/locations/taverne_von_ehrenfels.md) ist wohlhabend und zieht viele Gäste an, was den Wohlstand der gesamten Siedlung erklärt.
+Die Siedlung ist wohlhabend – ein ungewöhnlicher Umstand für ein so kleines Dorf. Der Reichtum speist sich aus dem Durchreiseverkehr: Viele Gäste kommen vorbei und hinterlassen ihre Goldmünzen. Dieser Überfluss ermöglicht es der Stadt, ihre Einrichtungen zu verbessern und die Befestigung zu finanzieren. [1]
 
-### Bewohner
-
-Die Bewohner von Kleinringtal sind vor allem auf den Durchreiseverkehr ausgerichtet. Neben Xenia als Tavernenbesitzerin gibt es Soldaten, die das Tor bewachen und die Siedlung schützen. Die Stimmung unter den Bewohnern ist eher gestresst als ängstlich, als die Gruppe mit den Flüchtlingen eintrifft – die lange Reise und die Bedrohung durch die [Gnolle](/factions/gnolle.md) haben ihre Spuren hinterlassen.
+Die bekannteste Bewohnerin ist Xenia, der die Taverne von Kleinringtal gehört. Sie spielt eine zentrale Rolle bei der Evakuierung der Siedlung. [5]
 
 ## Beziehungen und Verbindungen
 
-Kleinringtal steht in enger Verbindung zu Ringtal, der größeren Stadt in der Nähe. Die Siedlung ist ein Zwischenstopp auf dem Weg dorthin und wird von Reisenden frequentiert, die zwischen den Orten unterwegs sind. Die Gruppe nutzt Kleinringtal als Ausgangspunkt für ihren最终 Aufbruch nach Ringtal.
+Kleinringtal steht in enger Verbindung zu Ringtal, der größeren Stadt in der Nähe, die das eigentliche Ziel der Reise der Gruppe ist. Ringtal wird von den Monstern bedroht und hat nur etwa 50 Soldaten zur Verteidigung. [2] Kleinringtal dient als Vorposten und letzter befestigter Punkt vor Ringtal.
 
-Zu Xenia, der Tavernenbesitzerin, entwickelt die Gruppe eine besondere Beziehung. Sie wird von Bruma überredet, ihre Taverne und die Siedlung aufzugeben und sich der Flucht nach Ringtal anzuschließen. Xenia plant, in Ringtal provisorisch eine neue Taverne zu eröffnen, sobald sie dort angekommen ist.
+Die Siedlung hat auch eine Verbindung zu den Halblingen: Die Gruppe bringt die Bewohner einer zerstörten Halblingsiedlung nach Kleinringtal, wo sie zunächst untergebracht werden. [5] Die Halblinge waren zuvor von der Gruppe überzeugt worden, ihre Siedlung aufzugeben, bevor diese von den Gnollen zerstört wurde. [6]
 
 ## Chronologie
 
-### Erster Aufenthalt (Session 2026-06-04)
+- **Session 2026-06-04**: Die Gruppe erreicht Kleinringtal und verbringt zwei Nächte in der befestigten Tavernensiedlung. Der GM beschreibt den Ort als „schönes kleines Tavernendörfchen“ mit eigener Mauer, die auf den Wohlstand der Siedlung zurückgeht. [1]
 
-Die Gruppe erreicht Kleinringtal zu Beginn ihrer Reise. Die Siedlung wird als „schönes kleines Tavernendörfchen“ beschrieben, das durch seine eigene Mauer auffällt. Die Gruppe verbringt hier zwei Nächte, bevor sie ihre Reise fortsetzt. Der GM weist darauf hin, dass die eigentliche Stadt Ringtal noch weit entfernt ist und ein langer Weg zwischen den Orten liegt.
+- **Session 2026-08-06**: Nach einem Gewaltmarsch erreicht die Gruppe Kleinringtal erneut. [Das Tor](/locations/das_tor.md) wird zunächst geschlossen, als die große Gruppe von Einheiten gesichtet wird, doch als Aron nach vorne tritt, öffnen die Soldaten das Tor – offenbar erkennt man ihm eine gewisse Autorität an. Der Talron weist die Gruppe an, sich nur kurz auszuruhen und dann direkt nach Ringtal aufzubrechen. Die Gruppe verbringt etwa anderthalb Tage hier. [3]
 
-### Ankunft nach dem Gewaltmarsch (Session 2026-08-06)
-
-Nach einem anstrengenden Gewaltmarsch erreicht die Gruppe Kleinringtal erneut. [Das Tor](/locations/das_tor.md) wird zunächst geschlossen, als die große Menge an Einheiten gesichtet wird, aber nachdem Aron nach vorne tritt, öffnen die Soldaten das Tor – offenbar genießt er eine gewisse Autorität. Der [Talron](/npcs/talron.md) weist die Gruppe an, sich nicht zu gemütlich einzurichten: „Macht euch nicht zu gemütlich hier. Wir werden vielleicht ein, zwei Tage hier bleiben und dann werden wir direkt nach Ringtal aufbrechen.“ Die Gruppe soll nur kurz in Sicherheit ausruhen, bevor es weitergeht.
-
-### Evakuierung und Aufgabe (Session 2026-08-20)
-
-Nachdem die Gruppe die Halblinge aus ihrer Siedlung evakuiert hat und diese von den Gnollen zerstört wurde, bringt sie die Flüchtlinge nach Kleinringtal. Die Siedlung wird zur Unterbringung der Halblinge genutzt, und die Gruppe legt eine Rast ein. In dieser Zeit gelingt es vor allem Bruma, Xenia zu überzeugen, die Siedlung ebenfalls aufzugeben. Die Bewohner bereiten sich vor, packen ihre Sachen und schließen sich der Flucht nach Ringtal an. Vor dem最终 Aufbruch verbringen die Gruppenmitglieder noch Zeit in der Taverne und plaudern über ihre Vergangenheiten.
+- **Session 2026-08-20**: Die Gruppe hat inzwischen die Halblinge aus ihrer zerstörten Siedlung nach Kleinringtal gebracht. Die Siedlung wurde von den Gnollen zerstört, wie am Horizont zu sehen war. [6] In Kleinringtal wird eine Rast eingelegt, und die Gruppe überredet Xenia, die Taverne aufzugeben und sich der Flucht anzuschließen. Die Bewohner bereiten sich vor, packen ihre Sachen und schließen sich der Gruppe an. Bei einem „Tavernenfashion“-Abend plaudern die Gruppenmitglieder über ihre Vergangenheit. [5]
 
 ## Offene Fragen
 
-- Wie viele Einwohner hat Kleinringtal genau, und wie viele davon schließen sich der Evakuierung an?
-- Was geschieht mit der Siedlung nach der Evakuierung – wird sie von den Gnollen zerstört, wie zuvor das Halblingdorf?
-- Welche Rolle spielt Aron in Kleinringtal, und warum genießt er dort so viel Autorität, dass die Soldaten auf sein Zeichen das Tor öffnen?
+- Was wird aus Kleinringtal, nachdem die Bewohner es verlassen haben? Die Siedlung wird evakuiert, aber es bleibt unklar, ob sie von den Gnollen zerstört wird wie die Halblingsiedlung zuvor.
+- Welche Rolle spielt Aron, dessen Autorität die Soldaten von Kleinringtal offenbar anerkennen? Die Belege lassen offen, wer Aron ist und warum ihm die Soldaten salutieren. [3]
 
 # Belege
 
 1. Session 2026-06-04 @ 00:09:21 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
-2. Session 2026-08-06 @ 01:04:05 (https://www.youtube.com/watch?v=0HyPHao8s_k)
-3. Session 2026-08-06 @ 00:17:07 (https://www.youtube.com/watch?v=0HyPHao8s_k)
-4. Session 2026-08-20 @ 00:01:09 (https://www.youtube.com/watch?v=2EkWrNUfQi0)
+2. Session 2026-06-04 @ 00:09:21 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
+3. Session 2026-08-06 @ 01:04:05 (https://www.youtube.com/watch?v=0HyPHao8s_k)
+4. Session 2026-08-06 @ 00:17:07 (https://www.youtube.com/watch?v=0HyPHao8s_k)
 5. Session 2026-08-20 @ 00:07:29 (https://www.youtube.com/watch?v=2EkWrNUfQi0)
+6. Session 2026-08-20 @ 00:01:09 (https://www.youtube.com/watch?v=2EkWrNUfQi0)

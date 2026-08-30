@@ -21,7 +21,7 @@ Slix ist eine teuflische Essenz und der versteckte fünfte Teil [Vhar'Zuls](/dei
 
 ## Rolle in der Kampagne
 
-Slix ist der zentrale Antagonist in Lindo Lauts persönlicher Entwicklung. Er ist die Verkörperung der dunklen Macht, die durch das [Amulett des Heiligen Duran](/items/amulett_des_heiligen_duran.md) in Lindo Laut gelangt ist. Über mehrere Sessions hinweg versucht er, Lindo Laut zu manipulieren und die Kontrolle über ihn zu gewinnen. Er treibt Lindo Laut dazu, seine Kräfte zu nutzen, und fordert von der Gruppe Respekt und Unterwerfung. Sein Einfluss nimmt stetig zu, bis er schließlich offen ausbricht und die Gruppe angreift. Die Gruppe muss sich entscheiden, wie sie mit dieser Bedrohung umgeht — die [Entfernung von Slix](/events/entfernung_von_slix.md) wird zu einem zentralen Ziel, das die Reise ins [Abyssalis](/domains/splitterwelt.md) motiviert.
+Slix ist der zentrale Antagonist in Lindo Lauts persönlicher Entwicklung. Er ist die Verkörperung der dunklen Macht, die durch das [Amulett des Heiligen Duran](/items/amulett_des_heiligen_duran.md) in Lindo Laut gelangt ist. Über mehrere Sessions hinweg versucht er, Lindo Laut zu manipulieren und die Kontrolle über ihn zu gewinnen. Er treibt Lindo Laut dazu, seine Kräfte zu nutzen, und fordert von der Gruppe Respekt und Unterwerfung. Sein Einfluss nimmt stetig zu, bis er schließlich offen ausbricht und die Gruppe angreift. Die Gruppe muss sich entscheiden, wie sie mit dieser Bedrohung umgeht — die [Entfernung von Slix](/events/entfernung_von_slix.md) wird zu einem zentralen Ziel, das die Reise ins Abyssalis motiviert.
 
 ## Wichtige Merkmale
 
@@ -61,7 +61,7 @@ Slix ist der fünfte Teil von Vasul, der in Lindo Laut lebt. Er wird schließlic
 
 ### Erste Begegnung (Session 2025-11-25)
 
-Slix erscheint erstmals am [Ende](/locations/ende_jenseits_der_orkgebiete.md) der Session, als Lindo Laut nach ihm ruft. Er erklärt Lindo Laut, dass die Kreatur aus der Splitterwelt durch die Seelen der Toten beschworen wurde und dass Lindo Laut mit dem [Schlüssel](/items/magischer_schluessel.md) in der Lage ist, solche Kreaturen zu beschwören. Er tritt als Diener auf, der Lindo Laut mit einer Verneigung und einem Kniefall begrüßt.
+Slix erscheint erstmals am Ende der Session, als Lindo Laut nach ihm ruft. Er erklärt Lindo Laut, dass die Kreatur aus der [Splitterwelt](/domains/splitterwelt.md) durch die Seelen der Toten beschworen wurde und dass Lindo Laut mit dem [Schlüssel](/items/magischer_schluessel.md) in der Lage ist, solche Kreaturen zu beschwören. Er tritt als Diener auf, der Lindo Laut mit einer Verneigung und einem Kniefall begrüßt.
 
 ### Das Seelenkalb (Session 2026-01-06)
 

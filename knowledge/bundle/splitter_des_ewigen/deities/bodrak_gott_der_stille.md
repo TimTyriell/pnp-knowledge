@@ -2,7 +2,7 @@
 type: Deity
 title: Bodrak, Gott der Stille
 description: Bodrak, Gott der Stille ist eine Gottheit, deren Statuen am Eingang einer
-  Burg stehen, die die Gruppe während ihrer Reise erreicht. Die Sta…
+  Burg aufgestellt sind, die die Gruppe im Verlauf ihrer Reise erre…
 tags:
 - deities
 timestamp: '2025-05-14T00:00:00Z'
@@ -12,34 +12,37 @@ subtype: Alter Gott
 
 ## Überblick
 
-**Bodrak, Gott der Stille** ist eine Gottheit, deren Statuen am Eingang einer Burg stehen, die die Gruppe während ihrer Reise erreicht. Die Statuen sind nachträglich hinzugefügt worden und bestehen nicht aus demselben Stein wie der Rest der Burg. Bodrak trägt seinen Namen nicht etwa, weil er selbst still ist, sondern weil niemand, der sich jemals gegen ihn gestellt hat, danach noch ein einziges Wort gesprochen hat – so zumindest besagt es die Legende.
+**Bodrak, Gott der Stille** ist eine Gottheit, deren Statuen am Eingang einer Burg aufgestellt sind, die die Gruppe im Verlauf ihrer Reise erreicht. Die Statuen sind nachträglich hinzugefügt worden und bestehen nicht aus demselben Stein wie der Rest der Burg. Bodrak ist eine von mehreren Gottheiten, deren Abbilder die Gruppe auf ihrem Weg antrifft.
+
+Der Name Bodraks ist nicht wörtlich zu verstehen: Er wird nicht wegen seiner eigenen Stille so genannt, sondern wegen des Schicksals, das seine Gegner ereilt. Die Legende besagt, dass niemand, der sich jemals gegen ihn gestellt hat, danach noch ein einziges Wort gesprochen hat.
 
 ## Rolle in der Kampagne
 
-Die Gruppe begegnet Bodrak erstmals indirekt über seine Statuen am Burgtor. Nachdem die Gruppe ein besonders mächtiges Wesen besiegt hat, das offenbar etwas Bedeutendes bewachte, führt ihr Weg an der Burg vorbei. Die [Banditen](/factions/silberkerne.md), die zuvor in der Gegend aktiv waren, sind offenbar nicht weitergekommen – möglicherweise ein Hinweis auf die Gefahr, die von diesem Ort ausgeht.
+Die Gruppe begegnet Bodrak erstmals indirekt über seine Statuen, die am Eingang einer Burg stehen. Die Statuen sind Teil der Umgebung, die die Gruppe erkundet, nachdem sie zuvor ein mächtiges Wesen besiegt hat. Die Gruppe vermutet, dass dieses Wesen etwas Bedeutendes beschützt haben musste, und die Entdeckung der Gottheiten-Statuen am Burgtor scheint diese Vermutung zu bestätigen.
 
-[Cookie](/characters/cookie.md) erkennt die Gottheit dank eines kritischen Erfolgs bei einem Wissens-Check und warnt die Gruppe eindringlich davor, sich mit Bodrak anzulegen. Die Gruppe beschließt daraufhin, die Statuen unberührt zu lassen und sich nicht mit den Göttern anzulegen. Cookie äußert dabei ein ungutes Gefühl: „Ich find's hier ein bisschen gruselig, muss ich ehrlich sagen. Also mit Göttern würde ich mich prinzipiell eh nicht anlegen.“ Die Gruppe vermutet, dass sie sich mit dem Betreten der Burg möglicherweise in Bodraks Revier begeben.
+[Cookie](/characters/cookie.md) erkennt Bodrak anhand eines erfolgreichen Knowledge-Checks und warnt die Gruppe davor, sich mit ihm anzulegen. Die Gruppe beschließt daraufhin, die Statuen unberührt zu lassen und sich nicht mit den Göttern anzulegen. Es besteht die Sorge, dass die Gruppe sich mit dem Betreten des Burgareals in das „Revier“ der Gottheit begibt, auch wenn der Spielleiter anmerkt, dass die Gottheit selbst vermutlich nicht vor Ort anwesend ist.
 
 ## Wichtige Merkmale
 
-- **Name und Bedeutung**: Bodrak wird „Gott der Stille“ genannt – nicht wegen eigener Stille, sondern wegen der Konsequenzen für seine Gegner.
-- **Rache an Gegnern**: Wer sich jemals gegen Bodrak gestellt hat, verlor danach die Fähigkeit zu sprechen. Die Legende besagt, dass niemand, der etwas gegen ihn unternahm, je wieder ein Wort sprach.
-- **Statuen**: Zwei große Statuen stehen links und rechts am Eingang der Burg. Sie wurden nachträglich hinzugefügt und bestehen aus anderen Steinen als der Rest der Burg – ein Hinweis darauf, dass die Verehrung Bodraks oder zumindest die Errichtung dieser Statuen später erfolgte als der Bau der Burg selbst.
+- **Name und Bedeutung**: Bodrak wird als „Gott der Stille“ bezeichnet. Der Name ist jedoch nicht wörtlich zu verstehen – er bezieht sich nicht auf die eigene Stille der Gottheit, sondern auf das Schicksal seiner Gegner.
+- **Legende**: Die Legende besagt, dass niemand, der jemals etwas gegen Bodrak unternommen hat, danach noch ein Wort gesprochen hat. Diese Drohung ist offenbar so abschreckend, dass selbst die bloße Statue der Gottheit von der Gruppe respektvoll behandelt wird.
+- **Statuen**: Am Eingang der Burg stehen zwei große Statuen Bodraks. Sie wurden nachträglich hinzugefügt und bestehen nicht aus demselben Stein wie der Rest der Burg, was darauf hindeutet, dass sie später angebracht wurden oder aus anderem Material gefertigt sind.
+- **Auftreten**: Über das direkte Auftreten Bodraks selbst liegen keine Informationen vor. Die Gruppe begegnet ihm ausschließlich über seine Statuen.
 
 ## Beziehungen und Verbindungen
 
-Die Belege geben keine Auskunft über Beziehungen Bodraks zu anderen Gottheiten, Wesen oder Fraktionen. Es wird lediglich deutlich, dass die Gruppe ihn als gefährlich einschätzt und bewusst Abstand hält. Cookie formuliert die allgemeine Haltung der Gruppe: „Die lassen wir schön in Ruhe. Das Ding ist, wir kommen ja jetzt wahrscheinlich in deren Revier.“
+Über konkrete Beziehungen Bodraks zu anderen Gottheiten, Wesen oder Fraktionen liegen keine Informationen vor. Die Statuen stehen am Eingang einer Burg, die offenbar von [Banditen](/factions/silberkerne.md) nicht weiter passiert werden konnte – möglicherweise ein Hinweis auf eine schützende oder abschreckende Funktion der Gottheit, auch wenn dies Spekulation bleibt. Die Gruppe selbst vermeidet bewusst jede Interaktion mit den Statuen und damit jede mögliche Provokation der Gottheit.
 
 ## Chronologie
 
-**Session 2025-05-14**: Die Gruppe erreicht nach dem Kampf gegen ein mächtiges Wesen eine Burg mit zwei großen Statuen am Eingang. Cookie gelingt ein kritischer Wissens-Check und identifiziert die Gottheit als Bodrak, Gott der Stille. Sie erklärt der Gruppe die Bedeutung seines Namens. Der GM weist darauf hin, dass die Statuen nachträglich hinzugefügt wurden und nicht aus demselben Stein wie die Burg bestehen. Die Gruppe beschließt, die Statuen unberührt zu lassen und sich nicht mit der Gottheit anzulegen. Es bleibt offen, ob die Gruppe die Burg betritt und was sie dort erwartet.
+**Session 2025-05-14**: Die Gruppe erreicht nach dem Kampf gegen ein mächtiges Wesen eine Burg und bewegt sich zur ersten Brücke. Dort entdeckt sie zwei große Statuen am Eingang. Cookie gelingt ein kritischer Knowledge-Check und erkennt die Gottheit als Bodrak, den Gott der Stille. Er erklärt der Gruppe die Bedeutung des Namens. Die Gruppe beschließt, die Statuen unberührt zu lassen und sich nicht mit den Göttern anzulegen. Der Spielleiter weist darauf hin, dass die Statuen nachträglich zur Burg hinzugefügt wurden und nicht aus demselben Stein bestehen wie der Rest der Burg.
 
 ## Offene Fragen
 
-- Was genau bewachte das mächtige Wesen, das die Gruppe besiegte, und in welchem Zusammenhang steht es mit Bodrak oder der Burg?
-- Warum wurden die Statuen Bodraks nachträglich am Burgtor errichtet, und wer hat sie aufgestellt?
-- Befindet sich Bodrak tatsächlich in der Nähe der Burg, oder handelt es sich lediglich um einen Ort seiner Verehrung?
-- Welche Konsequenzen hätte es, wenn die Gruppe sich Bodrak widersetzen würde – ist die Legende über das Verstummen seiner Gegner wörtlich zu nehmen?
+- Welche Rolle spielt Bodrak für die Burg und ihre Geschichte? Warum wurden seine Statuen nachträglich am Eingang aufgestellt?
+- Handelt es sich bei der Burg um ein Heiligtum oder einen Ort, der mit Bodrak in Verbindung steht?
+- Welche konkreten Konsequenzen hätte eine Missachtung oder Provokation Bodraks?
+- Gibt es weitere Gottheiten, deren Statuen oder Einflüsse in der Burg oder ihrer Umgebung zu finden sind?
 
 ## Belege
 

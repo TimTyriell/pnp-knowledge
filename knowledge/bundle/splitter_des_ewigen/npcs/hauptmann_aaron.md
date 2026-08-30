@@ -17,7 +17,7 @@ Aaron begegnet der Gruppe als autoritärer, pragmatischer Befehlshaber. Zu Begin
 
 ## Verlauf
 
-Die Gruppe wird von Aaron zunächst beauftragt, die [Mine](/locations/verlassene_mine_an_der_farm.md) zu erkunden. Als sich die Lage als aussichtslos erweist, beschließt er, das Dorf zu evakuieren und nach [Kleinringtal](/locations/ringtal.md) zu ziehen. Bei den Verhandlungen mit Bürgermeister Spitzzahn übernimmt er die Zahlung der zwei Säcke Gold; Brumas Angebot, sich daran zu beteiligen, lehnt er ab. Stattdessen ist er bereit, Zivilisten auszubilden, und plant eine Ambush-Taktik gegen die [Gnolle](/factions/gnolle.md).
+Die Gruppe wird von Aaron zunächst beauftragt, die Mine zu erkunden. Als sich die Lage als aussichtslos erweist, beschließt er, das Dorf zu evakuieren und nach [Kleinringtal](/locations/ringtal.md) zu ziehen. Bei den Verhandlungen mit Bürgermeister Spitzzahn übernimmt er die Zahlung der zwei Säcke Gold; Brumas Angebot, sich daran zu beteiligen, lehnt er ab. Stattdessen ist er bereit, Zivilisten auszubilden, und plant eine Ambush-Taktik gegen die [Gnolle](/factions/gnolle.md).
 
 # Belege
 

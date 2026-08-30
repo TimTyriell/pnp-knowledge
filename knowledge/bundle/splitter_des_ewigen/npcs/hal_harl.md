@@ -17,7 +17,7 @@ aliases:
 
 ## Überblick
 
-Hal ist der Anführer der [Silberkornbande](/factions/silberkerne.md) und zugleich stellvertretender Anführer des Banditenlagers, in dem die Gruppe und die [Flüchtlinge](/factions/fluechtlinge_aus_breska.md) aus [Rotunas](/characters/rotunas.md) Unterschlupf gefunden haben. Er ist ein Mann mit nordländischem Akzent, der charmant auftritt und geschickt verhandelt. Seine [Banditenfestung](/locations/banditenlager_der_silberkerne.md) erweist sich als ein Lager der Silberkerne, einer [Gilde](/factions/gilde_von_ehrenfels.md), deren Wappen ein grauer Schild mit drei Apfelkörnern zeigt.
+Hal ist der Anführer der [Silberkornbande](/factions/silberkerne.md) und zugleich stellvertretender Anführer des Banditenlagers, in dem die Gruppe und die Flüchtlinge aus [Rotunas](/characters/rotunas.md) Unterschlupf gefunden haben. Er ist ein Mann mit nordländischem Akzent, der charmant auftritt und geschickt verhandelt. Seine [Banditenfestung](/locations/banditenlager_der_silberkerne.md) erweist sich als ein Lager der Silberkerne, einer [Gilde](/factions/gilde_von_ehrenfels.md), deren Wappen ein grauer Schild mit drei Apfelkörnern zeigt.
 
 Hal trägt ein Rüstungsset, führt aber keine offensichtliche Waffe sichtbar bei sich, wenn er Besuchern entgegentritt. Er begegnet Fremden zunächst mit Misstrauen, erweist sich jedoch als pragmatischer und fairer Verhandlungspartner, der sein Wort hält — solange man ihn nicht verrät.
 
