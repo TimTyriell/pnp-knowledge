@@ -8,9 +8,14 @@ rejected, the entry says so and why, so it is not re-proposed.
 
 ## I-002 — A ruling should reach every entry that depends on it
 
-**Status:** proposed, 2026-07-27. Not scheduled. Planned out 2026-08-29 in
-[PLAN-canon-rulings-routing.md](PLAN-canon-rulings-routing.md), which folds this
-into a wider restructure of `Kanon_Entscheidungen.md` — not yet implemented.
+**Status:** done, 2026-08-30. Planned out in
+[PLAN-canon-rulings-routing.md](PLAN-canon-rulings-routing.md) on the
+`feat/canon-rulings-routing` branch: `context.secondary_sources_for` attaches
+a ruling to every entity whose mentions cite the ruled name, capped by
+`SOURCE_BUDGET_CHARS`/`MAX_SECONDARY_SECTIONS` and kept in its own prompt
+block (`SYNTH_SECONDARY_TEMPLATE`) so it never bleeds into the entity's own
+voice. Implemented together with the plan's routing rewrite (explicit
+`<!-- okf: entity=... -->` directives), not alone — see the plan for why.
 
 `context.sources_for()` attaches a `knowledge/sources/` section to an entity by
 matching the section heading against that entity's name. So a ruling about

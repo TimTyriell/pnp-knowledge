@@ -274,3 +274,27 @@ def test_tier_matches_the_evidence():
         f"{len(too_shallow)} concept(s) have >=5 mentions but never got a "
         f"deep-tier writeup (was fixed to 0 by lowering DEEP_MENTION_THRESHOLD): {too_shallow}"
     )
+
+
+# --- canon routing directive must never reach the model --------------------
+#
+# PLAN-canon-rulings-routing.md defect #6, the highest-priority one: an
+# `<!-- okf: entity=... -->` directive is invisible in rendered markdown, so
+# a leak isn't something a human reviewer would spot by reading the bundle.
+# context.load_sources is supposed to strip it before it ever reaches a
+# prompt (test_directive_is_stripped_from_section_text pins that in
+# isolation); this is the second end of the same pipe, checking the actual
+# committed output in case a real file's formatting ever drifts from that
+# test's fixture.
+
+
+def test_no_leaked_okf_directive():
+    leaked = sorted(
+        str(path.relative_to(BUNDLE))
+        for path in BUNDLE.rglob("*.md")
+        if "<!-- okf:" in path.read_text(encoding="utf-8")
+    )
+    assert not leaked, (
+        f"okf routing directive leaked into the generated bundle (should "
+        f"have been stripped by context.load_sources before the prompt): {leaked}"
+    )

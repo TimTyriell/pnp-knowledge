@@ -21,6 +21,7 @@ from pathlib import Path
 
 from pnp_okf.models import CanonicalEntity, SessionTranscript
 from pnp_okf.okf import slugify
+from pnp_okf.synthesize import _render_mentions
 
 log = logging.getLogger(__name__)
 
@@ -30,19 +31,78 @@ EXCERPT_WINDOW_S = 90.0
 # Upper bound on the transcript dialogue handed to one synthesis call.
 EXCERPT_BUDGET_CHARS = 60_000
 
+# Upper bound on the source material (primary + I-002 secondary, each) handed
+# to one synthesis call. Sections beyond this are dropped, longest-match-first
+# for secondary — see secondary_sources_for.
+SOURCE_BUDGET_CHARS = 20_000
+
+# How many I-002 secondary sections one entity may carry. Caps per-entity
+# prompt size regardless of how many other rulings its mentions happen to cite.
+MAX_SECONDARY_SECTIONS = 6
+
 _HEADING_RE = re.compile(r"^(#{2,4})[ \t]+(.+?)[ \t]*$", re.MULTILINE)
+
+# A directive line under a heading: <!-- okf: entity=a,b; mentions=off -->.
+# Parsed and stripped by load_sources so it never reaches a prompt.
+_DIRECTIVE_RE = re.compile(r"<!--\s*okf:\s*(.*?)\s*-->", re.DOTALL)
+
+# Heading text minus a trailing disambiguating parenthetical, e.g.
+# "Harald (Freibeuter)" -> "Harald". Used only for I-002's mention-text scan.
+_PAREN_RE = re.compile(r"\s*\([^()]*\)\s*$")
 
 
 class SourceSection:
     """One ``##``-delimited section of a file in ``knowledge/sources/``."""
 
-    __slots__ = ("origin", "heading", "slug", "text")
+    __slots__ = ("origin", "heading", "slug", "text", "targets", "mentions_ok")
 
-    def __init__(self, origin: str, heading: str, text: str) -> None:
+    def __init__(
+        self,
+        origin: str,
+        heading: str,
+        text: str,
+        *,
+        targets: frozenset[str] = frozenset(),
+        mentions_ok: bool = True,
+    ) -> None:
         self.origin = origin
         self.heading = heading
         self.slug = slugify(heading)
         self.text = text
+        self.targets = targets
+        self.mentions_ok = mentions_ok
+
+
+def _parse_directive(body: str, origin: str, heading: str) -> tuple[str, frozenset[str], bool]:
+    """Extract and strip an ``<!-- okf: ... -->`` directive from a section body.
+
+    Returns the body with the directive removed, the explicit routing
+    targets (empty if none/absent — the caller then falls back to slug
+    matching), and whether I-002 secondary attachment is allowed.
+    """
+
+    m = _DIRECTIVE_RE.search(body)
+    if not m:
+        return body, frozenset(), True
+    body = (body[: m.start()] + body[m.end():]).strip()
+    targets: frozenset[str] = frozenset()
+    mentions_ok = True
+    for pair in m.group(1).split(";"):
+        pair = pair.strip()
+        if not pair:
+            continue
+        key, _, value = pair.partition("=")
+        key, value = key.strip(), value.strip()
+        if key == "entity":
+            targets = frozenset(v.strip() for v in value.split(",") if v.strip())
+        elif key == "mentions":
+            mentions_ok = value.lower() != "off"
+        else:
+            log.warning(
+                "[context] unknown okf directive key %r in %s (%s) — ignored",
+                key, origin, heading,
+            )
+    return body, targets, mentions_ok
 
 
 def load_sources(sources_dir: Path) -> list[SourceSection]:
@@ -57,8 +117,12 @@ def load_sources(sources_dir: Path) -> list[SourceSection]:
         for i, m in enumerate(matches):
             end = matches[i + 1].start() if i + 1 < len(matches) else len(content)
             body = content[m.end():end].strip()
+            heading = m.group(2)
+            body, targets, mentions_ok = _parse_directive(body, path.name, heading)
             if body:
-                sections.append(SourceSection(path.name, m.group(2), body))
+                sections.append(
+                    SourceSection(path.name, heading, body, targets=targets, mentions_ok=mentions_ok)
+                )
     log.info("[context] loaded %d source sections from %s", len(sections), sources_dir)
     return sections
 
@@ -85,25 +149,93 @@ def _matches(name: str, slug: str) -> bool:
     return name in slug.split("_")
 
 
-def sources_for(entity: CanonicalEntity, sections: list[SourceSection]) -> str:
-    """Source sections whose heading names this entity, as markdown.
+def _truncate(text: str, budget: int) -> str:
+    if len(text) <= budget:
+        return text
+    head = text[:budget].rsplit("\n\n", 1)[0]
+    return head + "\n\n[… gekürzt …]"
 
-    Matching is on slugs so punctuation drift between a transcript spelling
-    and the written lore ("Vhar'Zul" vs "Vhar Zul") still lines up.
+
+def _render_hits(hits: list[SourceSection]) -> str:
+    text = "\n\n".join(f"### {s.heading}  (aus {s.origin})\n{s.text}" for s in hits)
+    return _truncate(text, SOURCE_BUDGET_CHARS)
+
+
+def _primary_hits(entity: CanonicalEntity, sections: list[SourceSection]) -> list[SourceSection]:
+    """Sections that ground this entity: explicit ``entity=`` routing when a
+    section carries one, slug matching as the back-compatible fallback when
+    it doesn't. Explicit beats fuzzy — a directive section never also falls
+    back to slug matching, even if the slugs happen to line up too.
+    """
+
+    names = {slugify(n) for n in [entity.canonical_name, *entity.aliases] if n}
+    hits = []
+    for s in sections:
+        if s.targets:
+            if entity.concept_id in s.targets:
+                hits.append(s)
+        elif names and any(_matches(n, s.slug) for n in names):
+            hits.append(s)
+    return hits
+
+
+def sources_for(entity: CanonicalEntity, sections: list[SourceSection]) -> str:
+    """Source sections that ground this entity, as markdown.
+
+    Fallback matching is on slugs so punctuation drift between a transcript
+    spelling and the written lore ("Vhar'Zul" vs "Vhar Zul") still lines up;
+    a section with an explicit ``<!-- okf: entity=... -->`` directive instead
+    matches only the concept id(s) it names.
     """
 
     if not sections:
         return ""
-    names = {slugify(n) for n in [entity.canonical_name, *entity.aliases] if n}
-    if not names:
-        return ""
-
-    hits = [s for s in sections if any(_matches(n, s.slug) for n in names)]
+    hits = _primary_hits(entity, sections)
     if not hits:
         return ""
-    return "\n\n".join(
-        f"### {s.heading}  (aus {s.origin})\n{s.text}" for s in hits
-    )
+    return _render_hits(hits)
+
+
+def secondary_sources_for(
+    entity: CanonicalEntity, sections: list[SourceSection], primary: str
+) -> str:
+    """Rulings that concern OTHER entities this entity's own mentions cite.
+
+    I-002: a ruling about Nyruk should also reach Nyrella's entry, since her
+    mentions are exactly where the settled Nyruk/Nairuk spelling contradiction
+    re-derives itself from the transcripts. Kept in its own prompt block
+    (SYNTH_SECONDARY_TEMPLATE), never merged into ``primary`` — pasting a
+    ruling about a different entity into the same block as this entity's own
+    sources invites the model to write a paragraph about *that* entity here.
+
+    A section opts out with ``mentions=off`` (rulings only meaningful inside
+    their own entry); one already primary for this entity is never repeated
+    as secondary. Ranked by longest matched name, capped to
+    MAX_SECONDARY_SECTIONS.
+    """
+
+    if not sections:
+        return ""
+    mention_text = _render_mentions(entity)
+    if not mention_text:
+        return ""
+
+    ranked: list[tuple[int, SourceSection]] = []
+    for s in sections:
+        if not s.mentions_ok or f"### {s.heading}" in primary:
+            continue
+        name = _PAREN_RE.sub("", s.heading).strip()
+        if not name:
+            continue
+        if not re.search(rf"(?<!\w){re.escape(name)}(?!\w)", mention_text, re.IGNORECASE):
+            continue
+        ranked.append((len(name), s))
+
+    if not ranked:
+        return ""
+    ranked.sort(key=lambda pair: pair[0], reverse=True)
+    hits = [s for _len, s in ranked[:MAX_SECONDARY_SECTIONS]]
+    return _render_hits(hits)
 
 
 def _parse_ts(ts: str) -> float | None:

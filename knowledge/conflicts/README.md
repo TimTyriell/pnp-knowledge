@@ -49,9 +49,25 @@ muss erneut entschieden werden. Beispiel: Myko (Willauch-Gruppe) und Miqo
 → Kanon-Frage, die nur die Spielleitung beantworten kann
 → `knowledge/sources/Kanon_Entscheidungen.md`
 
-Abschnitt `### <Entitätsname>`, Text beginnt mit `ENTSCHEIDUNG:`. Nur dieses
-Schlüsselwort gibt der Festlegung Vorrang vor widersprechenden Session-Belegen
-und nimmt den Punkt aus `# Offene Konflikte` heraus.
+Abschnitt `### <Entitätsname>`, direkt darunter eine Zeile
+`<!-- okf: entity=<concept_id> -->` — das bindet die Festlegung an einen
+konkreten Bundle-Eintrag (mehrere `concept_id`s, kommagetrennt, wenn sie
+mehrere Einträge betrifft). Diese Zeile wird beim Laden entfernt und
+erscheint nie in einem Prompt.
+
+Der Text darunter beginnt mit einem von zwei Schlüsselwörtern:
+- `ENTSCHEIDUNG:` — ein Weltfakt, hat Vorrang vor widersprechenden
+  Session-Belegen und nimmt den Punkt aus `# Offene Konflikte` heraus.
+- `DARSTELLUNG:` — keine Tatsachenfestlegung, sondern eine Anweisung zur
+  Form des Eintrags (Länge, Vorsicht bei Unsicherem, Kennzeichnung als
+  Gerücht).
+
+Eine Festlegung reicht automatisch auch an Einträge weiter, die die
+betroffene Entität nur namentlich erwähnen, nicht nur an ihren eigenen
+Eintrag — dort zählt sie für Schreibweise, Identität und Fakten, aber nicht
+als eigener Abschnitt und nicht als offener Konflikt. Mit
+`<!-- okf: entity=…; mentions=off -->` lässt sich das für eine einzelne
+Festlegung abschalten.
 
 Häufig ist ein „Konflikt" auch gar keiner, sondern **Chronologie** — eine
 Figur wechselt die Waffe, eine Stadt wird zerstört, jemand ändert die Seite.
@@ -79,14 +95,20 @@ bestehen, wurde der Widerspruch also noch nicht wirklich ausgeräumt.
 
 ## Wenn die Entscheidung trotzdem nicht wirkt
 
-`ENTSCHEIDUNG:` erreicht eine Entität nur, wenn der Überschriftentext
-(`### <Name>`) auf ihren canonical_name oder einen Alias matcht
-(`context.sources_for`). Zwei Fallen, beide schon einmal echt aufgetreten:
+Mit einer `<!-- okf: entity=<concept_id> -->`-Zeile erreicht die Festlegung
+genau die genannte(n) `concept_id`(s) — keine Namens-Rätselei mehr. Fehlt die
+Zeile, greift zur Rückwärtskompatibilität die alte Suche: der
+Überschriftentext (`### <Name>`) muss auf `canonical_name` oder einen Alias
+matchen (`context.sources_for`). Drei Fallen, alle schon einmal echt
+aufgetreten:
 
-- Die Entität wurde umbenannt (`canonical_name:`-Pin in `entity_rules.yaml`),
-  aber die Überschrift hier nennt noch den alten Namen — die Entscheidung
-  greift dann für niemanden mehr. `pnp validate` findet das nicht; die Tests
-  unter `services/kb/tests/test_canon_decisions.py` schon.
+- Die `concept_id` in der Direktive existiert nicht (mehr) in
+  `entity_registry.yaml` — meist eine Umbenennung, deren Direktive nicht
+  mitgezogen wurde. Die Tests unter `services/kb/tests/test_canon_decisions.py`
+  finden das; `pnp validate` nicht.
+- Ohne Direktive: die Entität wurde umbenannt (`canonical_name:`-Pin in
+  `entity_rules.yaml`), aber die Überschrift hier nennt noch den alten
+  Namen — die Entscheidung greift dann für niemanden mehr.
 - Zwei Überschriften mit demselben Namen: die zweite ergänzt die erste, statt
   sie zu ersetzen — beide werden injiziert, wo der Name matcht.
 

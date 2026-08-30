@@ -14,7 +14,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from pnp_okf.config import DeepSeekConfig, ConfigError, Paths
-from pnp_okf.context import excerpts_for, load_sources, sources_for
+from pnp_okf.context import excerpts_for, load_sources, secondary_sources_for, sources_for
 from pnp_okf.dedup import load_never_merge, propose, render_report
 from pnp_okf.emit import (
     build_concept_index,
@@ -181,12 +181,14 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     def _synth(entity: CanonicalEntity) -> tuple[str, str]:
         if entity.tier == "brief":
             return entity.concept_id, render_brief_body(entity, targets)
+        primary = sources_for(entity, source_sections)
         body = synthesize_entity_body(
             entity,
             cfg.for_tier(entity.tier),
             paths.cache_dir,
             force=args.force,
-            sources=sources_for(entity, source_sections),
+            sources=primary,
+            secondary=secondary_sources_for(entity, source_sections, primary),
             excerpts=(
                 excerpts_for(entity, tmap) if entity.tier == "deep" else ""
             ),

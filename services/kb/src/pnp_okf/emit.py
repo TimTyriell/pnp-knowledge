@@ -345,9 +345,12 @@ def emit_conflict(
 
     * two things wrongly treated as one (or vice versa) -> fix the merge or
       alias in ``entity_registry.yaml``;
-    * a genuine canon call only the GM can make -> record it under an
-      ``ENTSCHEIDUNG:`` heading in ``knowledge/sources/``, which synthesis
-      treats as overriding the session evidence.
+    * a genuine canon call only the GM can make -> add an ``ENTSCHEIDUNG:``
+      paragraph under a ``### <Entity name>`` heading (with an
+      ``<!-- okf: entity=<concept_id> -->`` directive) in
+      ``knowledge/sources/``, which synthesis treats as overriding the
+      session evidence. A real ``### ENTSCHEIDUNG: ...`` *heading* binds to
+      nothing — ``ENTSCHEIDUNG:`` is a paragraph prefix, not a heading name.
 
     Then re-run and delete this file.
     """
