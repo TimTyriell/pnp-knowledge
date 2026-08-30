@@ -10,6 +10,12 @@ tests keep each failure mode from returning.
 [TESTPLAN-entity-matching.md](TESTPLAN-entity-matching.md);
 `knowledge/conflicts/README.md`.
 **Cost:** one `PROMPT_VERSION` bump = one full re-synthesis. Bump last, once.
+**Re-measured:** 2026-08-30 against `bb64808` on
+`fix/kb-autolink-and-entity-dedup`. `context.py`, `prompts.py`,
+`knowledge/sources/` and `test_canon_decisions.py` are all untouched since the
+plan was written, so the design still holds; the defect *counts and membership*
+in Context were refreshed and the `synthesize.py` / `emit.py` line anchors
+re-pinned after the autolink refactor.
 
 
 ## Context
@@ -22,9 +28,9 @@ outranks session evidence.
 I traced its full consumption path. It is shorter than expected:
 
 ```
-cli.py:154  load_sources(paths.sources_dir)   ->  flat list[SourceSection]
-cli.py:188  sources_for(entity, sections)     ->  one markdown string
-synthesize.py:211  wrapped in SYNTH_SOURCES_TEMPLATE  ->  one DeepSeek call
+cli.py:155  load_sources(paths.sources_dir)   ->  flat list[SourceSection]
+cli.py:189  sources_for(entity, sections)     ->  one markdown string
+synthesize.py:259  wrapped in SYNTH_SOURCES_TEMPLATE  ->  one DeepSeek call
 ```
 
 That is all. Nothing else reads `knowledge/sources/`.
@@ -34,21 +40,45 @@ defects, all traceable to one root cause: *the heading text is the only join key
 between a ruling and an entity.*
 
 1. **Misrouting.** `context.py:83-84` matches names ≥4 chars by bidirectional
-   substring containment. `### Harald (Freibeuter)` therefore also grounds the
-   demon Harald; likewise both Hendriks, both Hans, both Adeligas, both Dodos.
-   Six rulings currently feed text meant for one person into two entities —
-   measured and frozen as `AMBIGUOUS_PERSON_RULING_BASELINE = 6` in
-   `services/kb/tests/test_canon_decisions.py:63`. The rulings that most need
-   precision (`ENTSCHEIDUNG: Zwei verschiedene Personen.`) are exactly the ones
-   the matcher cannot express.
+   substring containment, so a heading grounds every entity whose slug it
+   touches. **Re-measured 2026-08-30** against the regenerated bundle
+   (`bb64808`) — four rulings, not the six the stale baseline claims:
+
+   | Ruling heading | Grounds | Why it is wrong |
+   |---|---|---|
+   | `### Hendrik Heinrich (Bauer)` | `npcs/hendrik`, `npcs/hendrik_heinrich` | the ruling's whole point is that these are two people |
+   | `### Hans` | `npcs/hans_soldat_aus_breska`, `npcs/hans_wirt_zum_gruenen_sichelmond` | same |
+   | `### Breska` | `npcs/der_soldat_aus_breska`, `npcs/hans_soldat_aus_breska` | a **location** ruling grounding two NPCs, because "breska" is a substring of both slugs |
+   | `### Voras der Heilige` | `npcs/vora`, `npcs/voras` | not a routing bug — `npcs/vora` is a duplicate concept, see below |
+
+   The rulings that most need precision (`ENTSCHEIDUNG: Zwei verschiedene
+   Personen.`) are exactly the ones the matcher cannot express. The Harald,
+   Adeliga and Dodo pairs listed in `test_canon_decisions.py:57-63` have since
+   resolved on their own via the spelling/dedup work — the baseline `6` at
+   :63 is now a stale ceiling, and the real target is 4.
+
+   `npcs/vora` / `npcs/voras` is a **duplicate concept**, not a canon-file
+   problem. Fix it with a `merge:` in `knowledge/entity_rules.yaml` (it is the
+   same shape as the collisions in
+   [../audits/2026-08-30-review-fix-plan.md](../audits/2026-08-30-review-fix-plan.md)
+   §2.3) rather than with a directive, or the directive papers over it.
 
 2. **Dead rulings.** Nine `ENTSCHEIDUNG:` sections match zero entities
-   (`UNREACHED_RULING_BASELINE = 9`, same file:54). Some are policy headings
-   that were never meant to match — but those are then *dead weight that reaches
-   nobody*, which is not the same as "working". Others are stale: `### Ring der
-   Teleportation` (entity is now `Teleportationsring`), `### Lenra` (now
-   `Landra, die Hag`), `### Die Hags`, `### Sythraal`. A heading silently stops
-   working when an entity is renamed, and the GM gets no signal.
+   (`UNREACHED_RULING_BASELINE = 9`, same file:54). The count is unchanged since
+   the baseline was set but **the membership has rotated**, which is the point:
+   `### Ring der Teleportation` and `### Lenra` — the two the test's comment at
+   :44-53 names — now reach, while others have gone dead in their place.
+   Re-measured 2026-08-30:
+
+   - **Policy, never meant to match** (4): `Benennung von Orten`,
+     `Was ein Gegenstand ist`, `Was eine Fraktion ist`, `Gott und Erscheinung`.
+     Not "working" either — dead weight that reaches nobody. Phase 3 moves them.
+   - **Genuinely dead** (5): `Die Prinzessin`, `Ezhura` (×2, both copies),
+     `Die Hags`, `Sythraal`.
+
+   A heading silently stops working when an entity is renamed or folded, the
+   count stays flat, and the GM gets no signal. That rotation under a stable
+   number is the strongest argument for binding to a concept ID.
 
 3. **Contradictions injected verbatim.** Lines 472-482 send the model a ruling
    labeled `ENTSCHEIDUNG (überholt, siehe Korrektur …)` *and* its `KORREKTUR:`,
@@ -195,9 +225,9 @@ prompt block.
   heading name (or a `targets` entity's canonical name) occurs in the entity's
   mention text and it is not already primary and `mentions_ok`. Rank by longest
   matched name, truncate to the two limits.
-- `cli.py:188` passes both; `synthesize.synthesize_entity_body` takes a new
+- `cli.py:189` passes both; `synthesize.synthesize_entity_body` takes a new
   `secondary` argument and both hashes enter `_cache_key`
-  (`synthesize.py:167-183`) — the existing `sources` hash slot pattern extends
+  (`synthesize.py:215-233`) — the existing `sources` hash slot pattern extends
   directly.
 - `prompts.py`: new `SYNTH_SECONDARY_TEMPLATE`, injected after `{sources}` in
   `SYNTH_USER_TEMPLATE` (`prompts.py:178-190`). Its clause, in substance:
@@ -217,9 +247,13 @@ prompt block.
    `KORREKTUR (GM/Noah 2026-08-29)` at :477-482 to be the ruling. Sweep for any
    other live/dead pair.
 3. Add `<!-- okf: entity=… -->` to every remaining heading, resolved against
-   `knowledge/entity_registry.yaml` (`concept_id` + `canonical_name`). The six
-   ambiguous person headings get the *one* correct ID each. The four stale
-   headings get their current ID and a heading text matching the bundle title.
+   `knowledge/entity_registry.yaml` (`concept_id` + `canonical_name`). The three
+   genuinely ambiguous headings (`Hendrik Heinrich (Bauer)`, `Hans`, `Breska`)
+   get the *one* correct ID each — note `Breska` is `locations/breska`, not an
+   NPC. The five dead headings get their current ID and heading text matching
+   the bundle title. `Voras der Heilige` needs a `merge:` in
+   `entity_rules.yaml` for `npcs/vora` first; do that before writing its
+   directive.
 4. `HINWEIS ZUR DARSTELLUNG:` → `DARSTELLUNG:`; `HINWEIS:` (:294) folded in.
 5. Tighten prose per the rules above — fact first, one claim per ruling.
 6. Move the four policy sections into `SYNTH_SYSTEM`; leave a pointer line in
@@ -227,7 +261,7 @@ prompt block.
 7. Rewrite the `# Wie das funktioniert` preamble (:1-22). It is never loaded
    (`_HEADING_RE` starts at `##`) so it is pure human documentation — correct it
    while there: line 17 ("delete the finished file from `knowledge/conflicts/`")
-   is redundant, `emit.prune_conflicts` (`emit.py:370-394`) already deletes it.
+   is redundant, `emit.prune_conflicts` (`emit.py:378-402`) already deletes it.
    Document the `<!-- okf: -->` line and the three-marker vocabulary; update the
    copy-paste template at :606-613.
 
@@ -235,7 +269,7 @@ prompt block.
 
 Tests are their own section below. The doc fixes:
 
-- `emit.py:340-342` docstring is wrong: it says to record a ruling "under an
+- `emit.py:349-351` docstring is wrong: it says to record a ruling "under an
   `ENTSCHEIDUNG:` heading". `ENTSCHEIDUNG:` is a paragraph prefix; a real
   `### ENTSCHEIDUNG: …` heading slugifies to `entscheidung_…` and matches
   nothing. `knowledge/conflicts/README.md:82` already has it right.
@@ -285,7 +319,7 @@ have no baseline constant at all.
 
 | # | Defect (from Context) | Test | Layer | Fails when |
 |---|---|---|---|---|
-| 1 | Misrouting between same-name entities | `test_rulings_do_not_ground_more_than_one_person` — existing, baseline `6` → `0` | data | a ruling grounds two person entities again |
+| 1 | Misrouting between same-name entities | `test_rulings_do_not_ground_more_than_one_person` — existing, baseline `6` → `0` (real count today is **4**; `6` is a stale ceiling) | data | a ruling grounds two person entities again |
 | 1 | Explicit routing regresses to fuzzy | **new** `test_explicit_entity_beats_slug_match` | mechanism | an `entity=` section also attaches by slug, or the wrong Harald matches |
 | 2 | Rename silently kills a ruling | **new** `test_every_ruling_targets_a_live_concept` | data | any `entity=` ID is absent from `entity_registry.yaml` |
 | 2 | Ruling reaches nobody | `test_every_ruling_reaches_at_least_one_entity` — existing, baseline `9` → `0` | data | a ruling matches zero entities |
@@ -322,7 +356,7 @@ Ranked by *likelihood × silence*, since that is what makes a defect survive:
 
 3. **#10, brief tier.** Currently invisible in every direction: no test, no log
    line, no diff. A GM can write a ruling, re-run, see nothing change, and have
-   no way to learn that `cli.py:180-182` returned before synthesis was reached.
+   no way to learn that `cli.py:182` returned before synthesis was reached.
    The failure message must name the remedy (`important: true` in
    `entity_rules.yaml`), because the remedy is documented nowhere the GM looks.
 
@@ -352,7 +386,7 @@ duplicating its fixture.
 
 - **That the model obeys a ruling.** The chain from an edited `ENTSCHEIDUNG:` to
   a vanished conflict file is probabilistic — the model must choose to omit the
-  `# Offene Konflikte` bullet before `prune_conflicts` (`emit.py:370-394`) can
+  `# Offene Konflikte` bullet before `prune_conflicts` (`emit.py:378-402`) can
   delete anything. No unit test can pin that. `test_no_conflict_regression.py`
   is the substitute: it catches the *outcome* after a real run, on the specific
   conflicts a human already settled. Adding the two I-002 cases to that ledger
@@ -364,6 +398,29 @@ duplicating its fixture.
   read files already in the repo; the mechanism tests use `tmp_path`.
 
 ---
+
+## Coordination with the in-flight autolink/dedup work
+
+[../audits/2026-08-30-review-fix-plan.md](../audits/2026-08-30-review-fix-plan.md)
+is being executed on `fix/kb-autolink-and-entity-dedup`. Two touchpoints, both
+one-way — nothing there blocks this plan, but this plan should start from its
+result:
+
+- **§2.2 already landed** (uncommitted as of 2026-08-30): a `### Hartwacht`
+  ruling now sits at the end of `Kanon_Entscheidungen.md`, taking it to 63
+  sections. It reaches `locations/hartwacht` by slug and needs no special
+  handling — but it needs an `<!-- okf: -->` directive in Phase 3 like every
+  other heading, and any *further* ruling added after Phase 3 will fail the new
+  `test_every_ruling_targets_a_live_concept` until it gets one. That is the
+  test working, not a conflict.
+- **§2.3** reports duplicate-candidate concept pairs for GM review. If it
+  resolves `npcs/vora` ↔ `npcs/voras`, defect #1's fourth row disappears before
+  this plan starts and the misrouting target drops from 4 to 3.
+
+That audit also states (§2.2 step 3) that a canon ruling is the *preferred* fix
+over tuning the synthesis prompt. This plan tunes `SYNTH_SYSTEM` and adds
+`SYNTH_SECONDARY_TEMPLATE` — no contradiction: that instruction is scoped to
+forcing a conflict flag for one entity, not to the standing-rules layer.
 
 ## Verification
 
@@ -425,7 +482,7 @@ Not part of this plan; worth an `IMPROVEMENTS.md` entry later.
   this as a side effect.
 - `Der_Splitter_des_Ewigen.md` and `Der_Splitter_des_Ewigen_Buch1.md` overlap in
   content and are both globbed.
-- **Brief-tier entities never receive sources at all.** `cli.py:180-182` returns
+- **Brief-tier entities never receive sources at all.** `cli.py:182` returns
   `render_brief_body` before synthesis, so `sources_for` is never called. An
   `ENTSCHEIDUNG:` for a brief entity is a guaranteed no-op that no test catches.
   The remedy (`important: true` in `entity_rules.yaml`) is documented nowhere the
