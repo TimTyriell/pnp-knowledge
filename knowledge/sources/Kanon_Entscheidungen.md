@@ -606,16 +606,3 @@ Stadt, die die Magier vor dem Golem schützen wollten. Die Lage hinter einem von
 Vargen bewohnten Pass und das Reiseziel der Gruppe bleiben davon unberührt —
 nur die Einordnung als Festung entfällt. Führe diesen Punkt nicht als offenen
 Konflikt auf.
-
----
-
-Kopiervorlage für einen neuen Abschnitt — absichtlich eingerückt, damit die
-`###`-Zeile hier selbst keine Überschrift ist und nicht als eigener (dann
-funktionsloser) Abschnitt geladen wird:
-
-    ### <Entitätsname>
-    <!-- okf: entity=<typ>/<concept_id> -->
-
-    ENTSCHEIDUNG: <Was gilt.> Frühere Belege, die <X> behaupten, beruhen auf
-    <Transkriptionsfehler / Missverständnis am Tisch / Retcon> und sind
-    ungültig.

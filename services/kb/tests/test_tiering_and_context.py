@@ -147,6 +147,20 @@ def test_directive_is_stripped_from_section_text(tmp_path: Path):
     assert nerithis.mentions_ok is True
 
 
+def test_all_directives_in_a_section_are_stripped(tmp_path: Path):
+    # A second directive further down a section (a pasted template, a stray
+    # comment) used to survive into the prompt: only the first was removed.
+    (tmp_path / "canon.md").write_text(
+        "### Hartwacht\n<!-- okf: entity=locations/hartwacht -->\n\n"
+        "ENTSCHEIDUNG: Hartwacht ist eine Stadt.\n\n"
+        "<!-- okf: entity=<typ>/<concept_id> -->\n",
+        encoding="utf-8",
+    )
+    section = load_sources(tmp_path)[0]
+    assert "okf:" not in section.text
+    assert section.targets == frozenset({"locations/hartwacht"})
+
+
 def test_explicit_entity_beats_slug_match(tmp_path: Path):
     (tmp_path / "canon.md").write_text(_CANON_FIXTURE, encoding="utf-8")
     sections = load_sources(tmp_path)
@@ -207,7 +221,7 @@ def test_secondary_sources_respect_budget(tmp_path: Path):
     note = "Auf der Reise treffen sie " + ", ".join(names) + "."
     ent = _mentioning_entity("characters/held", "Held", note)
 
-    secondary = secondary_sources_for(ent, sections, primary="")
+    secondary = secondary_sources_for(ent, sections)
     assert secondary
     hit_count = secondary.count("### Randfigur")
     assert hit_count <= MAX_SECONDARY_SECTIONS
@@ -228,12 +242,30 @@ def test_secondary_sections_stay_out_of_primary_block(tmp_path: Path):
         "characters/nyrella", "Nyrella", "Ihr Begleiter ist der Eisbär Nyruk."
     )
     primary = sources_for(nyrella, sections)
-    secondary = secondary_sources_for(nyrella, sections, primary)
+    secondary = secondary_sources_for(nyrella, sections)
 
     assert "Faery" in primary  # Nyrella's own ruling
     assert "Nyruk ist ein Eisbär" not in primary  # Nyruk's ruling, not hers
     assert "Nyruk ist ein Eisbär" in secondary
     assert "Nyrella ist eine Faery" not in secondary  # never repeat the primary
+
+
+def test_secondary_keeps_a_ruling_whose_heading_prefixes_a_primary_one(tmp_path: Path):
+    # "### Dodo" is a substring of "### Dodos heiliger Streitkolben": the old
+    # dedupe compared rendered text and dropped Dodo's own ruling as "already
+    # primary", though it is a different concept.
+    (tmp_path / "canon.md").write_text(
+        "### Dodos heiliger Streitkolben\n<!-- okf: entity=items/streitkolben -->\n\n"
+        "ENTSCHEIDUNG: Der Streitkolben ist geweiht.\n\n"
+        "### Dodo\n<!-- okf: entity=characters/dodo -->\n\n"
+        "ENTSCHEIDUNG: Dodo ist ein Zwerg.\n",
+        encoding="utf-8",
+    )
+    sections = load_sources(tmp_path)
+    hammer = _mentioning_entity(
+        "items/streitkolben", "Streitkolben", "Die Waffe gehoert Dodo."
+    )
+    assert "Dodo ist ein Zwerg" in secondary_sources_for(hammer, sections)
 
 
 def test_secondary_sources_respect_mentions_off(tmp_path: Path):
@@ -244,7 +276,7 @@ def test_secondary_sources_respect_mentions_off(tmp_path: Path):
     )
     sections = load_sources(tmp_path)
     ent = _mentioning_entity("characters/held", "Held", "Erwaehnt wird Randnotiz.")
-    assert secondary_sources_for(ent, sections, primary="") == ""
+    assert secondary_sources_for(ent, sections) == ""
 
 
 if __name__ == "__main__":

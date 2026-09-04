@@ -32,6 +32,7 @@ import yaml
 from pnp_okf.context import _matches, load_sources
 from pnp_okf.models import ALWAYS_DEEP_TYPES, ALWAYS_STANDARD_TYPES, DEEP_MENTION_THRESHOLD, TYPE_DIR
 from pnp_okf.okf import slugify
+from pnp_okf.resolve import _load_important
 
 KNOWLEDGE = Path(__file__).resolve().parents[3] / "knowledge"
 SOURCES_DIR = KNOWLEDGE / "sources"
@@ -138,7 +139,12 @@ def test_every_ruling_reaches_at_least_one_entity():
 
     unreached = sorted(
         s.heading for s in sections
-        if s.heading in ruled and not _reached(s, concept_ids, names)
+        if s.heading in ruled
+        and not _reached(s, concept_ids, names)
+        # Same exemption as test_every_ruling_targets_a_live_concept: a
+        # directive pointing only at ids that were never extracted is
+        # tracked there, by id, and must not be reported twice here.
+        and not (s.targets and s.targets <= KNOWN_UNCREATED_TARGETS)
     )
     assert len(unreached) <= UNREACHED_RULING_BASELINE, (
         f"{len(unreached)} ENTSCHEIDUNG: rulings match zero entities, so "
@@ -183,12 +189,19 @@ def test_no_superseded_rulings():
     overruled" precedence between two conflicting instructions in the same
     prompt (see the plan's Context section, defect #3)."""
 
-    text = _canon_text()
+    # Scoped to heading lines and marker lines ("### Dodo (veraltet)",
+    # "ENTSCHEIDUNG (überholt):") — a file-wide substring scan also fires on
+    # in-world prose, where "die Karte ist veraltet" is a world fact and not
+    # a note about the ruling that carries it.
+    labels = "\n".join(
+        line for line in _canon_text().splitlines()
+        if re.match(r"^(###|[A-ZÄÖÜß]{3,}\b)", line.strip())
+    )
     bad = [
         term for term in ("überholt", "veraltet", "KORREKTUR")
-        if term in text
+        if re.search(rf"(?<!\w){term}(?!\w)", labels, re.IGNORECASE)
     ]
-    if re.search(r"siehe\b.{0,40}darunter", text, re.IGNORECASE):
+    if re.search(r"siehe\b.{0,40}darunter", labels, re.IGNORECASE):
         bad.append("siehe ... darunter")
     assert not bad, (
         f"{CANON_FILE.name} still contains a superseded-ruling marker "
@@ -266,19 +279,22 @@ def test_ruling_targets_are_not_brief_tier():
     called for it. The fix is `important: true` in entity_rules.yaml —
     defect #10."""
 
+    # `important` comes from _load_important, not from the entities[] flag:
+    # that is what resolve_entities() itself calls, so a pin added to
+    # entity_rules.yaml counts immediately, without waiting for the run that
+    # bakes it into the generated registry.
+    important = _load_important(REGISTRY_FILE)
     mention_count = {}
-    important = {}
     etype_by_id = {}
     for e in _registry_entities():
         cid = str(e.get("concept_id", "")).strip()
         mention_count[cid] = int(e.get("mention_count") or 0)
-        important[cid] = bool(e.get("important"))
         etype_by_id[cid] = str(e.get("type") or "")
 
     def _tier(cid: str) -> str:
         n = mention_count.get(cid, 0)
         etype = etype_by_id.get(cid, "")
-        if important.get(cid) or n >= DEEP_MENTION_THRESHOLD:
+        if cid in important or n >= DEEP_MENTION_THRESHOLD:
             return "deep"
         if etype in {t.value for t in ALWAYS_DEEP_TYPES} and n >= 2:
             return "deep"

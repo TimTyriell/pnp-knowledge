@@ -69,6 +69,19 @@ als eigener Abschnitt und nicht als offener Konflikt. Mit
 `<!-- okf: entity=…; mentions=off -->` lässt sich das für eine einzelne
 Festlegung abschalten.
 
+Kopiervorlage für einen neuen Abschnitt (bewusst hier und nicht in
+`Kanon_Entscheidungen.md`: alles in dieser Datei wird geladen und landet im
+Prompt, eine Vorlage mit Platzhaltern also auch — siehe den Abschnitt
+„Hartwacht", der 2026-09 genau daran litt):
+
+```markdown
+### <Entitätsname>
+<!-- okf: entity=<typ>/<concept_id> -->
+
+ENTSCHEIDUNG: <Was gilt.> Frühere Belege, die <X> behaupten, beruhen auf
+<Transkriptionsfehler / Missverständnis am Tisch / Retcon> und sind ungültig.
+```
+
 Häufig ist ein „Konflikt" auch gar keiner, sondern **Chronologie** — eine
 Figur wechselt die Waffe, eine Stadt wird zerstört, jemand ändert die Seite.
 Dann sagt die Entscheidung genau das: *„kein Widerspruch, sondern Abfolge"*.

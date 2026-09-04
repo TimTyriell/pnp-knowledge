@@ -84,7 +84,10 @@ def _parse_directive(body: str, origin: str, heading: str) -> tuple[str, frozens
     m = _DIRECTIVE_RE.search(body)
     if not m:
         return body, frozenset(), True
-    body = (body[: m.start()] + body[m.end():]).strip()
+    # Strip *every* directive in the section, not only the one parsed: a
+    # second one further down (a pasted template, a stray comment) would
+    # otherwise survive verbatim into the prompt.
+    body = _DIRECTIVE_RE.sub("", body).strip()
     targets: frozenset[str] = frozenset()
     mentions_ok = True
     for pair in m.group(1).split(";"):
@@ -197,7 +200,7 @@ def sources_for(entity: CanonicalEntity, sections: list[SourceSection]) -> str:
 
 
 def secondary_sources_for(
-    entity: CanonicalEntity, sections: list[SourceSection], primary: str
+    entity: CanonicalEntity, sections: list[SourceSection]
 ) -> str:
     """Rulings that concern OTHER entities this entity's own mentions cite.
 
@@ -212,6 +215,13 @@ def secondary_sources_for(
     their own entry); one already primary for this entity is never repeated
     as secondary. Ranked by longest matched name, capped to
     MAX_SECONDARY_SECTIONS.
+
+    The "already primary" test runs against the primary *hits*, not the
+    rendered primary block: a heading is a prefix of another heading often
+    enough ("Dodo" inside "Dodos heiliger Streitkolben") that a substring
+    test drops a genuinely different ruling, and a section that only fell
+    off the end of the primary budget would otherwise re-appear here under
+    the "this is about ANOTHER entity" banner.
     """
 
     if not sections:
@@ -220,9 +230,10 @@ def secondary_sources_for(
     if not mention_text:
         return ""
 
+    primary_hits = _primary_hits(entity, sections)
     ranked: list[tuple[int, SourceSection]] = []
     for s in sections:
-        if not s.mentions_ok or f"### {s.heading}" in primary:
+        if not s.mentions_ok or s in primary_hits:
             continue
         name = _PAREN_RE.sub("", s.heading).strip()
         if not name:
