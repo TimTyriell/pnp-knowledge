@@ -279,6 +279,96 @@ def test_secondary_sources_respect_mentions_off(tmp_path: Path):
     assert secondary_sources_for(ent, sections) == ""
 
 
+def test_subsections_inherit_the_entity_they_sit_under(tmp_path: Path):
+    """The harvested-wiki shape: an "## <entity>" anchor with no body of its
+    own, subdivided by "###". Before ancestor-aware slugs the anchor was
+    dropped as empty and every subsection was orphaned under a generic slug
+    ("ueberblick"), so the entity itself got nothing at all."""
+
+    (tmp_path / "wiki.md").write_text(
+        "## Kaya\n"
+        "### Ueberblick\n\nFaun-Bardin.\n\n"
+        "### Chronologie\n\nTritt in Session 1 auf.\n",
+        encoding="utf-8",
+    )
+    sections = load_sources(tmp_path)
+
+    # The heading stays the section's own text; only the slug folds in the anchor.
+    assert [s.heading for s in sections] == ["Ueberblick", "Chronologie"]
+    assert [s.slug for s in sections] == ["kaya_ueberblick", "kaya_chronologie"]
+
+    matched = sources_for(_entity("characters/kaya", EntityType.CHARACTER, "Kaya"), sections)
+    assert "Faun-Bardin" in matched and "Session 1" in matched
+    # ...and it does not spill onto an unrelated entity via the generic subheading.
+    assert sources_for(_entity("characters/sange", EntityType.CHARACTER, "Sange"), sections) == ""
+
+
+def test_subsections_inherit_an_ancestor_directive(tmp_path: Path):
+    (tmp_path / "wiki.md").write_text(
+        "## Lindo Laut\n<!-- okf: entity=characters/lindo_laut -->\n\n"
+        "Aus dem Wiki.\n\n"
+        "### Faehigkeiten\n\nGestaltwandel.\n\n"
+        "### Sonderfall\n<!-- okf: entity=items/amulett -->\n\nGehoert zum Amulett.\n",
+        encoding="utf-8",
+    )
+    by_heading = {s.heading: s for s in load_sources(tmp_path)}
+
+    # Inherited from the anchor...
+    assert by_heading["Faehigkeiten"].targets == frozenset({"characters/lindo_laut"})
+    # ...but a subsection's own directive wins over it.
+    assert by_heading["Sonderfall"].targets == frozenset({"items/amulett"})
+
+    lindo = _entity("characters/lindo_laut", EntityType.CHARACTER, "Lindo Laut")
+    matched = sources_for(lindo, list(by_heading.values()))
+    assert "Gestaltwandel" in matched
+    assert "Gehoert zum Amulett" not in matched
+
+
+def test_belege_sections_are_dropped(tmp_path: Path):
+    """A harvested evidence list is numbered for the wiki page, not for this
+    entity's mentions — injecting it invites citing by the wrong number."""
+
+    (tmp_path / "wiki.md").write_text(
+        "## Kaya\n<!-- okf: entity=characters/kaya -->\n\nFaun-Bardin.\n\n"
+        "### Belege\n\n[1] Session 2026-06-04\n",
+        encoding="utf-8",
+    )
+    assert [s.heading for s in load_sources(tmp_path)] == ["Kaya"]
+
+
+def test_stray_citation_markers_are_stripped(tmp_path: Path):
+    """"[n]" in a prompt means the nth mention of THIS entity, so a number
+    carried in from wiki prose would be relabelled into a wrong episode."""
+
+    (tmp_path / "wiki.md").write_text(
+        "## Kaya\n<!-- okf: entity=characters/kaya -->\n\n"
+        "Sie tritt in der Taverne auf [1] und durchschaut Luegen [2].\n",
+        encoding="utf-8",
+    )
+    sections = load_sources(tmp_path)
+    matched = sources_for(_entity("characters/kaya", EntityType.CHARACTER, "Kaya"), sections)
+    assert "[1]" not in matched and "[2]" not in matched
+    assert "Taverne auf und" in matched  # the space goes with the marker
+
+
+def test_only_rulings_attach_as_secondary(tmp_path: Path):
+    """SYNTH_SECONDARY_TEMPLATE announces the block as "Festlegungen zu
+    ANDEREN Entitaeten". Reference lore is not a Festlegung — and a generic
+    subheading like "Faehigkeiten" outranks real rulings under the
+    longest-name-first cap, taking their slots."""
+
+    (tmp_path / "canon.md").write_text(
+        "### Faehigkeiten\n\nEine lange Liste von Faehigkeiten.\n\n"
+        "### Nyruk\n\nENTSCHEIDUNG: Nyrellas Eisbaer heisst Nyruk.\n",
+        encoding="utf-8",
+    )
+    sections = load_sources(tmp_path)
+    ent = _mentioning_entity("characters/held", "Held", "Zeigt Faehigkeiten und trifft Nyruk.")
+    out = secondary_sources_for(ent, sections)
+    assert "Eisbaer" in out
+    assert "lange Liste" not in out
+
+
 if __name__ == "__main__":
     test_tiers()
     test_sources_match_across_punctuation_drift(Path(__import__("tempfile").mkdtemp()))

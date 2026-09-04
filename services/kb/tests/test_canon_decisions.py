@@ -317,3 +317,81 @@ def test_ruling_targets_are_not_brief_tier():
         f"no LLM call): {briefs} — fix with `important: true` in "
         f"entity_rules.yaml for the target concept"
     )
+
+
+# Sections that reach nobody on purpose, each for a reason a human checked.
+# Like KNOWN_UNCREATED_TARGETS this is not a ratchet: an entry leaves it when
+# the underlying question is answered, never by adding a new one to quiet a
+# failure.
+#
+# "Blutschalen-Statuen" is a DARSTELLUNG: ruling about how cautiously to
+# describe any statue holding a blood bowl. Every statue concept in the
+# registry sits at exactly one mention, i.e. the brief tier, which never
+# reaches synthesis at all — so no target exists that would make the ruling
+# fire. It needs a GM decision (`important: true` on the statue the ruling is
+# really about), not a directive.
+KNOWN_UNROUTABLE_SECTIONS = {
+    "Blutschalen-Statuen",
+}
+
+
+def test_no_source_section_reaches_nobody():
+    """A section matching no entity is never injected anywhere.
+
+    test_every_ruling_reaches_at_least_one_entity is scoped to `_rulings()` —
+    headings whose body contains ENTSCHEIDUNG: — which left two blind spots a
+    2026-09 audit found the hard way: a DARSTELLUNG:-only ruling was never
+    examined, and reference lore in the other source files was not examined at
+    all. 70 of 137 sections (~60% of the folder by size) reached nobody, among
+    them every word of the harvested wiki prose about the four player
+    characters.
+
+    Hard 0, matching this module's other baselines. Prose with no entity to
+    attach to does not belong in sources/ — knowledge/narrative/ is where
+    uncitable material lives.
+    """
+
+    sections = load_sources(SOURCES_DIR)
+    entities = _bundle_entities()
+    concept_ids = {cid for cid, _canonical, _aliases in entities}
+    names = {slugify(n) for _cid, canonical, aliases in entities for n in [canonical, *aliases] if n}
+
+    dead = sorted(
+        f"{s.origin} :: {s.heading}" for s in sections
+        if not _reached(s, concept_ids, names)
+        and s.heading not in KNOWN_UNROUTABLE_SECTIONS
+        and not (s.targets and s.targets <= KNOWN_UNCREATED_TARGETS)
+    )
+    assert not dead, (
+        f"{len(dead)} source section(s) match zero entities, so synthesis "
+        f"never sees them — add an `<!-- okf: entity=... -->` directive, or "
+        f"move the text to knowledge/narrative/ if it has no entity: {dead}"
+    )
+
+
+def test_harvested_wiki_sections_are_directive_routed():
+    """Harvested wiki prose must never route on a name collision.
+
+    services/kb/sync_harvest.py recovers the concept_id from the harvest
+    filename and writes it out as an explicit directive. Doing that step by
+    hand is what broke before: four harvest files were concatenated under
+    plain "## <name>" headings, and an ## heading whose body is empty (a ###
+    follows it directly) is dropped by load_sources, orphaning every
+    subsection under a generic slug like "uberblick". All four player
+    characters lost their grounding silently.
+    """
+
+    live_ids = {str(e.get("concept_id", "")).strip() for e in _registry_entities()}
+    wiki_dir = SOURCES_DIR / "wiki"
+    sections = [s for s in load_sources(SOURCES_DIR) if (wiki_dir / s.origin).exists()]
+    assert sections, "no harvested wiki sections found — run sync_harvest.py"
+
+    problems = sorted(
+        f"{s.origin} :: {s.heading} -> {sorted(s.targets) or 'no directive'}"
+        for s in sections
+        if not s.targets or not (s.targets <= live_ids)
+    )
+    assert not problems, (
+        f"harvested wiki section(s) carry no usable okf directive, so they "
+        f"fall back to name matching: {problems} — re-run sync_harvest.py"
+    )

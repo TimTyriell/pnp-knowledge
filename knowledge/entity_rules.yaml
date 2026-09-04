@@ -476,8 +476,26 @@ merge:
   # describe the same god bound to the amulet and the upper shrine.
   koll: deities/kollmereth
   kol meref: deities/kollmereth
+  kolgath: deities/kollmereth
   koll'mereth: deities/kollmereth
   kollmereth: deities/kollmereth
+
+  # --- Die übrigen zwei der vier Seelen -------------------------------------
+  # Sythraal (der Schleier) and Ezhura (die Glut) round out the four, but no
+  # session has extracted either yet, so neither has a live concept to merge
+  # onto (both are in KNOWN_UNCREATED_TARGETS, test_canon_decisions.py).
+  # Their transcript variants are recorded here rather than as rules: a
+  # merge key pointing at a concept that does not exist is a dead rule, and
+  # these would fire on nothing today. Uncomment the matching pair when a
+  # session first names one and the concept appears.
+  #
+  #   sintra, sithra          -> deities/sythraal
+  #   esua, esoa, ezreal      -> deities/ezhura
+  #
+  # The variants come from the "Namensvarianten" table that used to sit in
+  # Das_Buch_der_vier_Seelen.md as prose — the wrong home twice over: the
+  # synthesis prompt forbids writing transcription variants into an entry,
+  # and prose reaches no resolver at all.
 
   # --- Huludan --------------------------------------------------------------
   # GM ruling: "Holodarn" is not a name, it is a Whisper mishearing. Huludan is
