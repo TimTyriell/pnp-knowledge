@@ -302,6 +302,9 @@ merge:
   nairook: npcs/nyruk
   vilau (willau): locations/willauch
   # Voras is one person: "der Graf" is Voras der Heilige (Kanon_Entscheidungen).
+  # "Vora" (npcs/vora) is the same figure under a dropped final letter, not a
+  # second concept — PLAN-canon-rulings-routing.md defect #1.
+  vora: npcs/voras
   voras: npcs/voras
   voras der heilige: npcs/voras
   graf voras der heilige: npcs/voras
@@ -473,8 +476,26 @@ merge:
   # describe the same god bound to the amulet and the upper shrine.
   koll: deities/kollmereth
   kol meref: deities/kollmereth
+  kolgath: deities/kollmereth
   koll'mereth: deities/kollmereth
   kollmereth: deities/kollmereth
+
+  # --- Die übrigen zwei der vier Seelen -------------------------------------
+  # Sythraal (der Schleier) and Ezhura (die Glut) round out the four, but no
+  # session has extracted either yet, so neither has a live concept to merge
+  # onto (both are in KNOWN_UNCREATED_TARGETS, test_canon_decisions.py).
+  # Their transcript variants are recorded here rather than as rules: a
+  # merge key pointing at a concept that does not exist is a dead rule, and
+  # these would fire on nothing today. Uncomment the matching pair when a
+  # session first names one and the concept appears.
+  #
+  #   sintra, sithra          -> deities/sythraal
+  #   esua, esoa, ezreal      -> deities/ezhura
+  #
+  # The variants come from the "Namensvarianten" table that used to sit in
+  # Das_Buch_der_vier_Seelen.md as prose — the wrong home twice over: the
+  # synthesis prompt forbids writing transcription variants into an entry,
+  # and prose reaches no resolver at all.
 
   # --- Huludan --------------------------------------------------------------
   # GM ruling: "Holodarn" is not a name, it is a Whisper mishearing. Huludan is
@@ -1140,6 +1161,23 @@ important:
 - npcs/tindrael
 - npcs/tyrael
 - npcs/voras
+# PLAN-canon-rulings-routing.md defect #10: each of these carries a
+# Kanon_Entscheidungen.md ruling but has too few mentions to clear brief on
+# its own, so without this pin the ruling is a silent no-op (cli.py renders
+# brief entries locally, no LLM call, so sources_for()/ENTSCHEIDUNG injection
+# never runs for it). The pairs below are exactly the "two different people
+# share a name" rulings this whole file's never_merge: section already keeps
+# apart at the identity layer — the ruling's prose needs to reach both pages
+# too, not just the merge-safety net.
+- npcs/hans_soldat_aus_breska
+- npcs/hans_wirt_zum_gruenen_sichelmond
+- npcs/abisalis_harald
+- npcs/hendrik
+- npcs/hendrik_heinrich
+- npcs/jen
+- items/magischer_ring
+- items/ring_der_pocket_dimension
+- items/schriftrollen
 
 # unimportant: overrides an `important: true` flag a past run baked straight
 # into entity_registry.yaml, when nothing here un-sets it (see

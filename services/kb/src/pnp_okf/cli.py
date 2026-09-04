@@ -14,7 +14,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from pnp_okf.config import DeepSeekConfig, ConfigError, Paths
-from pnp_okf.context import excerpts_for, load_sources, sources_for
+from pnp_okf.context import excerpts_for, load_sources, secondary_sources_for, sources_for
 from pnp_okf.dedup import load_never_merge, propose, render_report
 from pnp_okf.emit import (
     build_concept_index,
@@ -187,6 +187,7 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
             paths.cache_dir,
             force=args.force,
             sources=sources_for(entity, source_sections),
+            secondary=secondary_sources_for(entity, source_sections),
             excerpts=(
                 excerpts_for(entity, tmap) if entity.tier == "deep" else ""
             ),

@@ -21,6 +21,7 @@ from pathlib import Path
 
 from pnp_okf.models import CanonicalEntity, SessionTranscript
 from pnp_okf.okf import slugify
+from pnp_okf.synthesize import _render_mentions
 
 log = logging.getLogger(__name__)
 
@@ -30,35 +31,174 @@ EXCERPT_WINDOW_S = 90.0
 # Upper bound on the transcript dialogue handed to one synthesis call.
 EXCERPT_BUDGET_CHARS = 60_000
 
+# Upper bound on the source material (primary + I-002 secondary, each) handed
+# to one synthesis call. Sections beyond this are dropped, longest-match-first
+# for secondary — see secondary_sources_for.
+SOURCE_BUDGET_CHARS = 20_000
+
+# How many I-002 secondary sections one entity may carry. Caps per-entity
+# prompt size regardless of how many other rulings its mentions happen to cite.
+MAX_SECONDARY_SECTIONS = 6
+
+# The only two paragraph markers prompts.py special-cases (SYNTH_SOURCES_TEMPLATE).
+# A section opening with neither is ordinary reference lore. Also the gate for
+# I-002 secondary attachment — see secondary_sources_for.
+RULING_MARKERS = ("ENTSCHEIDUNG:", "DARSTELLUNG:")
+
+# Section headings that are never grounding, dropped at load. "Belege" is a
+# bundle artefact: harvested wiki prose brings its own numbered evidence list,
+# and in a synthesis prompt "[n]" means the nth mention of *this* entity.
+_SKIP_SLUGS = frozenset({"belege"})
+
+# Files in sources/ that document the folder rather than feed it. Without this
+# a README is ingested like any other source: its headings become sections
+# that ground nobody, and an `<!-- okf: ... -->` shown as an *example* parses
+# as a real directive pointing at a concept that does not exist.
+_SKIP_STEMS = frozenset({"readme"})
+
+# Bare numeric citation markers carried in from harvested wiki prose. They
+# collide with the prompt's own "[n]" evidence numbering, and
+# episodes.relabel_citations then rewrites a copied number into a confidently
+# wrong episode label — so they are stripped before a source reaches a prompt.
+_STRAY_CITE_RE = re.compile(r"[ \t]*\[\d+\]")
+
 _HEADING_RE = re.compile(r"^(#{2,4})[ \t]+(.+?)[ \t]*$", re.MULTILINE)
+
+# A directive line under a heading: <!-- okf: entity=a,b; mentions=off -->.
+# Parsed and stripped by load_sources so it never reaches a prompt.
+_DIRECTIVE_RE = re.compile(r"<!--\s*okf:\s*(.*?)\s*-->", re.DOTALL)
+
+# Heading text minus a trailing disambiguating parenthetical, e.g.
+# "Harald (Freibeuter)" -> "Harald". Used only for I-002's mention-text scan.
+_PAREN_RE = re.compile(r"\s*\([^()]*\)\s*$")
 
 
 class SourceSection:
-    """One ``##``-delimited section of a file in ``knowledge/sources/``."""
+    """One heading-delimited section of a file in ``knowledge/sources/``.
 
-    __slots__ = ("origin", "heading", "slug", "text")
+    ``heading`` is the section's *own* heading text; ``slug`` folds in the
+    enclosing headings as well. The two differ on purpose — see load_sources.
+    """
 
-    def __init__(self, origin: str, heading: str, text: str) -> None:
+    __slots__ = ("origin", "heading", "slug", "text", "targets", "mentions_ok")
+
+    def __init__(
+        self,
+        origin: str,
+        heading: str,
+        text: str,
+        *,
+        slug: str | None = None,
+        targets: frozenset[str] = frozenset(),
+        mentions_ok: bool = True,
+    ) -> None:
         self.origin = origin
         self.heading = heading
-        self.slug = slugify(heading)
+        self.slug = slug or slugify(heading)
         self.text = text
+        self.targets = targets
+        self.mentions_ok = mentions_ok
+
+    def is_ruling(self) -> bool:
+        """Does this section state a GM ruling rather than reference lore?"""
+
+        return self.text.lstrip().startswith(RULING_MARKERS)
+
+
+def _parse_directive(body: str, origin: str, heading: str) -> tuple[str, frozenset[str], bool]:
+    """Extract and strip an ``<!-- okf: ... -->`` directive from a section body.
+
+    Returns the body with the directive removed, the explicit routing
+    targets (empty if none/absent — the caller then falls back to slug
+    matching), and whether I-002 secondary attachment is allowed.
+    """
+
+    m = _DIRECTIVE_RE.search(body)
+    if not m:
+        return body, frozenset(), True
+    # Strip *every* directive in the section, not only the one parsed: a
+    # second one further down (a pasted template, a stray comment) would
+    # otherwise survive verbatim into the prompt.
+    body = _DIRECTIVE_RE.sub("", body).strip()
+    targets: frozenset[str] = frozenset()
+    mentions_ok = True
+    for pair in m.group(1).split(";"):
+        pair = pair.strip()
+        if not pair:
+            continue
+        key, _, value = pair.partition("=")
+        key, value = key.strip(), value.strip()
+        if key == "entity":
+            targets = frozenset(v.strip() for v in value.split(",") if v.strip())
+        elif key == "mentions":
+            mentions_ok = value.lower() != "off"
+        else:
+            log.warning(
+                "[context] unknown okf directive key %r in %s (%s) — ignored",
+                key, origin, heading,
+            )
+    return body, targets, mentions_ok
 
 
 def load_sources(sources_dir: Path) -> list[SourceSection]:
-    """Parse every markdown file in ``sources_dir`` into headed sections."""
+    """Parse every markdown file under ``sources_dir`` into headed sections.
+
+    Headings nest. A file that names an entity once and then subdivides it —
+
+        ## Kaya
+        ### Überblick
+        ### Chronologie
+
+    — used to lose the entity entirely: the levels were treated as peers, so
+    "## Kaya" (no body of its own, a "###" follows immediately) was dropped as
+    empty and its children became free-floating sections slugged ``uberblick``
+    and ``chronologie``, matching nobody. That is the shape harvested wiki
+    prose arrives in, so the whole of it reached zero entities.
+
+    Each section therefore carries two names. ``slug`` folds in the enclosing
+    headings (``kaya_uberblick``), which is what _matches routes on — the
+    entity name "kaya" is a substring of it. ``heading`` stays the section's
+    own text, because secondary_sources_for searches mention prose for it as
+    a literal name and _render_hits prints it; a folded heading would match
+    no mention and read badly in the prompt.
+
+    A directive inherits the same way: "## Kaya"'s ``entity=`` governs every
+    subsection under it, and a subsection carrying its own overrides it.
+    """
 
     if not sources_dir.is_dir():
         return []
     sections: list[SourceSection] = []
-    for path in sorted(sources_dir.glob("*.md")):
+    for path in sorted(sources_dir.rglob("*.md")):
+        if path.stem.lower() in _SKIP_STEMS:
+            continue
         content = path.read_text(encoding="utf-8")
         matches = list(_HEADING_RE.finditer(content))
+        # Enclosing headings still open at this point: level -> (slug, targets).
+        open_headings: dict[int, tuple[str, frozenset[str]]] = {}
         for i, m in enumerate(matches):
+            level, heading = len(m.group(1)), m.group(2)
             end = matches[i + 1].start() if i + 1 < len(matches) else len(content)
             body = content[m.end():end].strip()
-            if body:
-                sections.append(SourceSection(path.name, m.group(2), body))
+            body, targets, mentions_ok = _parse_directive(body, path.name, heading)
+
+            for closed in [lv for lv in open_headings if lv >= level]:
+                del open_headings[closed]
+            if not targets:
+                for lv in sorted(open_headings, reverse=True):
+                    if open_headings[lv][1]:
+                        targets = open_headings[lv][1]
+                        break
+            slug = "_".join(
+                [open_headings[lv][0] for lv in sorted(open_headings)] + [slugify(heading)]
+            )
+            open_headings[level] = (slugify(heading), targets)
+
+            if body and slugify(heading) not in _SKIP_SLUGS:
+                sections.append(SourceSection(
+                    path.name, heading, body,
+                    slug=slug, targets=targets, mentions_ok=mentions_ok,
+                ))
     log.info("[context] loaded %d source sections from %s", len(sections), sources_dir)
     return sections
 
@@ -85,25 +225,109 @@ def _matches(name: str, slug: str) -> bool:
     return name in slug.split("_")
 
 
-def sources_for(entity: CanonicalEntity, sections: list[SourceSection]) -> str:
-    """Source sections whose heading names this entity, as markdown.
+def _truncate(text: str, budget: int) -> str:
+    if len(text) <= budget:
+        return text
+    head = text[:budget].rsplit("\n\n", 1)[0]
+    return head + "\n\n[… gekürzt …]"
 
-    Matching is on slugs so punctuation drift between a transcript spelling
-    and the written lore ("Vhar'Zul" vs "Vhar Zul") still lines up.
+
+def _render_hits(hits: list[SourceSection]) -> str:
+    text = "\n\n".join(f"### {s.heading}  (aus {s.origin})\n{s.text}" for s in hits)
+    return _truncate(_STRAY_CITE_RE.sub("", text), SOURCE_BUDGET_CHARS)
+
+
+def _primary_hits(entity: CanonicalEntity, sections: list[SourceSection]) -> list[SourceSection]:
+    """Sections that ground this entity: explicit ``entity=`` routing when a
+    section carries one, slug matching as the back-compatible fallback when
+    it doesn't. Explicit beats fuzzy — a directive section never also falls
+    back to slug matching, even if the slugs happen to line up too.
+    """
+
+    names = {slugify(n) for n in [entity.canonical_name, *entity.aliases] if n}
+    hits = []
+    for s in sections:
+        if s.targets:
+            if entity.concept_id in s.targets:
+                hits.append(s)
+        elif names and any(_matches(n, s.slug) for n in names):
+            hits.append(s)
+    return hits
+
+
+def sources_for(entity: CanonicalEntity, sections: list[SourceSection]) -> str:
+    """Source sections that ground this entity, as markdown.
+
+    Fallback matching is on slugs so punctuation drift between a transcript
+    spelling and the written lore ("Vhar'Zul" vs "Vhar Zul") still lines up;
+    a section with an explicit ``<!-- okf: entity=... -->`` directive instead
+    matches only the concept id(s) it names.
     """
 
     if not sections:
         return ""
-    names = {slugify(n) for n in [entity.canonical_name, *entity.aliases] if n}
-    if not names:
-        return ""
-
-    hits = [s for s in sections if any(_matches(n, s.slug) for n in names)]
+    hits = _primary_hits(entity, sections)
     if not hits:
         return ""
-    return "\n\n".join(
-        f"### {s.heading}  (aus {s.origin})\n{s.text}" for s in hits
-    )
+    return _render_hits(hits)
+
+
+def secondary_sources_for(
+    entity: CanonicalEntity, sections: list[SourceSection]
+) -> str:
+    """Rulings that concern OTHER entities this entity's own mentions cite.
+
+    I-002: a ruling about Nyruk should also reach Nyrella's entry, since her
+    mentions are exactly where the settled Nyruk/Nairuk spelling contradiction
+    re-derives itself from the transcripts. Kept in its own prompt block
+    (SYNTH_SECONDARY_TEMPLATE), never merged into ``primary`` — pasting a
+    ruling about a different entity into the same block as this entity's own
+    sources invites the model to write a paragraph about *that* entity here.
+
+    Only a *ruling* attaches here, which is what SYNTH_SECONDARY_TEMPLATE
+    already tells the model this block contains ("Festlegungen zu ANDEREN
+    Entitäten"). Reference lore is not a Festlegung, and without the gate a
+    generic subheading behaved like one: "Fähigkeiten" (a character's ability
+    list) matched that word in 27 entities' mention notes, and since ranking
+    is by name length it outranked the real rulings "Dodo", "Slix" and "Nox",
+    taking their slots under a banner claiming it stated facts about them.
+
+    A section opts out with ``mentions=off`` (rulings only meaningful inside
+    their own entry); one already primary for this entity is never repeated
+    as secondary. Ranked by longest matched name, capped to
+    MAX_SECONDARY_SECTIONS.
+
+    The "already primary" test runs against the primary *hits*, not the
+    rendered primary block: a heading is a prefix of another heading often
+    enough ("Dodo" inside "Dodos heiliger Streitkolben") that a substring
+    test drops a genuinely different ruling, and a section that only fell
+    off the end of the primary budget would otherwise re-appear here under
+    the "this is about ANOTHER entity" banner.
+    """
+
+    if not sections:
+        return ""
+    mention_text = _render_mentions(entity)
+    if not mention_text:
+        return ""
+
+    primary_hits = _primary_hits(entity, sections)
+    ranked: list[tuple[int, SourceSection]] = []
+    for s in sections:
+        if not s.mentions_ok or s in primary_hits or not s.is_ruling():
+            continue
+        name = _PAREN_RE.sub("", s.heading).strip()
+        if not name:
+            continue
+        if not re.search(rf"(?<!\w){re.escape(name)}(?!\w)", mention_text, re.IGNORECASE):
+            continue
+        ranked.append((len(name), s))
+
+    if not ranked:
+        return ""
+    ranked.sort(key=lambda pair: pair[0], reverse=True)
+    hits = [s for _len, s in ranked[:MAX_SECONDARY_SECTIONS]]
+    return _render_hits(hits)
 
 
 def _parse_ts(ts: str) -> float | None:

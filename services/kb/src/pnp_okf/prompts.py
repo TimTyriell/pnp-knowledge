@@ -8,7 +8,7 @@ from __future__ import annotations
 
 from pnp_okf.models import SUBTYPES
 
-PROMPT_VERSION = "5"
+PROMPT_VERSION = "6"
 
 
 def _render_subtypes() -> str:
@@ -139,6 +139,34 @@ Regeln:
   Gibt es keine Widersprüche, lasse den Abschnitt komplett weg.
 - Schließe den regulären Teil mit einer Überschrift "# Belege" ab, in der du
   die Quellen nummeriert auflistest (Session-Datum + Zeitstempel + URL).
+
+Kampagnenweite Festlegungen (gelten für jeden Eintrag, unabhängig von den
+Belegen unten):
+- Ein Gebäude oder Gelände innerhalb einer Stadt bekommt einen eigenen
+  Eintrag — die Beziehung zwischen Ort und Stadt wird als Verlinkung
+  gezeigt, nicht durch Verschmelzen verloren. Die Stadt steht im Namen immer
+  am Schluss: „Arena von Willauch", „Kapelle von Ehrenfels", „Gruft von
+  Breska" — nicht „Kapelle in Ehrenfels" und nicht mit der Stadt am Anfang.
+  Räume innerhalb eines Dungeons bekommen dagegen KEINEN eigenen Eintrag —
+  ein Dungeon wird an einem Abend durchquert, seine Räume haben außerhalb
+  davon kein Eigenleben und werden im Eintrag des Dungeons beschrieben. Ein
+  Nachtlager der Gruppe bekommt nur dann einen Eintrag, wenn es dauerhaft und
+  identifizierbar ist (z. B. „Banditenlager der Silberkerne").
+- Nur BESONDERE Gegenstände werden als eigener Eintrag geführt — magische,
+  heilige oder handlungstragende Artefakte. Gewöhnliche Ausrüstung
+  (normale Waffen und Rüstungen, Verbrauchsgüter, Geld) wird nicht getrackt.
+- Eine FRAKTION ist eine Macht, die über eine Stadt und über eine Session
+  hinaus wirkt (Gilden, Silberkerne, Belorus' Untotenarmee, Götterkulte,
+  Zwerge der Festung, Goblins) — plus zwei Ausnahmen aus narrativer Bedeutung:
+  die Flüchtlinge aus Breska und die Gefährten von Rotunas (die Heldengruppe
+  selbst). Eine Handvoll Magier, die Bewohner eines Dorfes oder ein
+  Gnoll-Rudel aus einer Session sind KEINE Fraktion, sondern ein kollektiver
+  Charakter und werden als NPC geführt. Eine Person und die nach ihr benannte
+  Gruppe sind zwei Einträge, nicht einer.
+- Tritt ein Gott körperlich auf, bleibt das ein Knoten vom Typ Deity — die
+  Erscheinung ist ein Ereignis, das auf den Gott verweist, kein zweiter
+  Eintrag. Nicht betroffen: eine Organisation und ihr Sitz bleiben getrennt,
+  auch bei gleichem Namen (die Seelenwacht ist sowohl Orden als auch Stadt).
 """
 
 # Per-tier depth guidance, injected into the synthesis user message.
@@ -185,7 +213,7 @@ Auch bekannt als: {aliases}
 
 Belege aus den Sessions (chronologisch):
 {mentions}
-{sources}{excerpts}
+{sources}{secondary}{excerpts}
 Schreibe den Wiki-Body für diese Entität.
 """
 
@@ -211,7 +239,23 @@ einfach durchgehend die festgelegte Schreibweise.
 
 Eine sachliche Korrektur, die im Spiel selbst stattfand ("die Gruppe hielt ihn
 lange für tot"), ist davon unberührt und darf erzählt werden.
+
+AUSNAHME 2 — Abschnitte, die mit "DARSTELLUNG:" beginnen, sind Anweisungen zur
+FORM des Eintrags (Länge, Vorsicht bei Unsicherem, Kennzeichnung als Gerücht
+o. Ä.), kein Weltwissen. Befolge sie beim Schreiben, ohne sie zu erwähnen oder
+zu zitieren — genau wie bei "ENTSCHEIDUNG:".
 {sources}
+"""
+
+SYNTH_SECONDARY_TEMPLATE = """
+Festlegungen zu ANDEREN Entitäten, die in den Belegen oben namentlich
+vorkommen. Sie betreffen nicht diesen Eintrag selbst — übernimm daraus nur,
+was für DIESEN Eintrag relevant ist: die richtige Schreibweise, Identität und
+Fakten zur erwähnten Person oder Sache, wenn du sie hier nennst. Schreibe
+KEINEN eigenen Abschnitt über die andere Entität, und führe den Punkt NICHT
+unter "# Offene Konflikte" auf — selbst wenn ein Beleg oben ihm zu
+widersprechen scheint.
+{secondary}
 """
 
 SYNTH_EXCERPTS_TEMPLATE = """

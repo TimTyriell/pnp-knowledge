@@ -7,5 +7,14 @@
 # back, test_no_conflict_regression.py names it instead of the queue
 # silently regrowing.
 #
-# Empty on purpose right now: none of the 10 conflicts currently in
-# knowledge/conflicts/ (Aug 2026) have been resolved yet on this branch.
+# characters/nyrella and npcs/tyrael: the I-002 target cases
+# (PLAN-canon-rulings-routing.md, IMPROVEMENTS.md I-002) — the Nyruk/Nairuk
+# and Basul/Vasul spelling conflicts, resolved by the Nyrella/Tyrael
+# ENTSCHEIDUNG rulings reaching these entries once secondary_sources_for()
+# (context.py) attaches a ruling to every entry that mentions the ruled name,
+# not just the ruling's own heading match. Already gone from
+# knowledge/conflicts/ as of the 2026-08-30 pre-plan rebuild (bb64808) —
+# added here so a future regression in the routing (or in entity_rules.yaml)
+# is caught instead of silently reopening the same settled question.
+characters/nyrella
+npcs/tyrael

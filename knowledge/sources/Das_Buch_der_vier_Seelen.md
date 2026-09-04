@@ -6,6 +6,7 @@ gelesen, sondern wachgerufen. Es beschreibt die Zerspaltung Vhar'Zuls und die
 vier Seelen, die aus ihm hervorgingen.
 
 ## Die Zerspaltung Vhar'Zuls
+<!-- okf: entity=deities/vharzul -->
 
 „Und so war es nicht der Tod, der Vhar'Zul, den Geflüsterten Thron, hinwegfegte
 — sondern der Riss. Der Riss durch die Ewigkeit."
@@ -21,6 +22,7 @@ schlafen. Wer sie vereint, erweckt ihn.
 > von fünf Teilen sprechen.
 
 ## Sythraal, der Schleier
+<!-- okf: entity=deities/sythraal -->
 
 Redet von Wahrheit, die zerbrechlich ist: *„Lu-sharr… en kal ve'drim… Lügen,
 die schützen, sind schöner als Wahrheiten, die töten…"* Seine Präsenz ist wie
@@ -29,6 +31,7 @@ verbirgt Absichten, die tödlich enden könnten. In seiner Nähe verlieren Lüge
 und Wahrheiten ihre Form.
 
 ## Ezhura, die Glut
+<!-- okf: entity=deities/ezhura -->
 
 Flüstert in Momenten des Zorns: *„Fühle mich… zwischen deinen Rippen… brenn für
 mich…"* Sie ist der brennende Funke im Herzschlag des Hasses. Ihre Essenz
@@ -36,6 +39,7 @@ entfacht Feuer in Körpern und Köpfen, lässt das Blut kochen und das Denken
 verkohlen. Jedes ihrer Worte ist ein Tropfen glühenden Eisens in der Seele.
 
 ## Koll'Mereth, die Krone
+<!-- okf: entity=deities/kollmereth -->
 
 Sät Ehrgeiz wie ein Gift: *„Ein Schritt noch… dann knien sie vor dir. Und
 nennen dich Herr…"* Seine Stimme ist Honig über rostigem Stahl. Er bietet
@@ -43,6 +47,7 @@ Einfluss, Macht, das Gewicht von Worten, vor denen selbst Könige schweigen.
 Seine Präsenz macht aus Zweiflern Diener und aus Freunden Rivalen.
 
 ## Thyrex, der Sänger
+<!-- okf: entity=deities/thyrex -->
 
 Trägt Ketten aus alten Liedern: *„Sssaa'drin… kel moriath… lass den Gesang
 durch deine Magie wehen…"* Seine Melodien fädeln sich in Zauber ein wie Blut in
@@ -50,6 +55,7 @@ Wasser. Musik wird Magie, Stimme wird Waffe. Wer ihm lauscht, hört in jedem Ton
 Versprechen und Fluch zugleich.
 
 ## Die Warnung am Seitenrand
+<!-- okf: entity=deities/vharzul,deities/sythraal,deities/ezhura,deities/kollmereth,deities/thyrex -->
 
 In seraphischer Sprache, mit hastiger, fremder Handschrift und dunklerer, fast
 eingetrockneter goldener Tinte nachgetragen:
@@ -65,15 +71,3 @@ Darunter, in Zeichen, die sich dem Verstand widersetzen:
 
 > *Khal du'reth, ve'ma'zzor… shial a Vhar'Zul na'them.*
 > Bindet das Echo, oder werdet sein Chor.
-
-## Namensvarianten in den Transkripten
-
-Die vier Seelen erscheinen in den Aufzeichnungen der Sessions unter verzerrten
-Namen. Die Schreibweisen des Buches sind maßgeblich:
-
-| Buch | in Sessions gehört als |
-|---|---|
-| Sythraal, der Schleier | Sintra, Sithra |
-| Ezhura, die Glut | Esua, Esoa, Ezreal |
-| Koll'Mereth, die Krone | Kol Meref, Koll, Kolgath |
-| Thyrex, der Sänger | Tyrex, T-Rex |
