@@ -43,7 +43,7 @@ actually measures.
 
 - `miaomani` / `miyamani` — `never_merge:` blocks them, but the *justification
   comment* is stale (says "Halbling im Zirkus", generated node is a Katari
-  mit Armbrust now). Decision may still be right; comment is wrong. Needs a
+  with a crossbow now). Decision may still be right; comment is wrong. Needs a
   fresh look at both nodes' actual content before touching the rule.
 - `locations/ringtal` — title says "Kleinringtal", body describes a
   different, larger place also called "Ringtal" — one slug, two real places.
@@ -51,8 +51,9 @@ actually measures.
   they're distinct.
 - Confirmed correctly separate (don't touch): `miko`/`myko` (Katzenvolk vs.
   Fungrill), `sage`/`sange`.
-- Full GM-open list is in Teil 2.G of `2026-08-29-bundle-quality.md` — some of
-  those (`vora`/`voras`, `gilde_in_breska`, etc.) are name-variant-shaped too,
+- Full GM-open list is in the "Open GM questions" section of
+  `2026-08-29-bundle-quality.md` — some of those (`vora`/`voras`,
+  `gilde_in_breska`, etc.) are name-variant-shaped too,
   worth re-checking against the "is it spelling or is it two entities"
   question before assuming either way.
 
@@ -73,4 +74,4 @@ tests. Ordered fix plan, verified root causes and re-measurement steps:
 - New branch off `main`: `fix/kb-<short-name>`.
 - Every finding needs both a test (ratchet or hard assertion, your call) and
   a fix — don't leave one without the other, that was the whole point of the
-  last audit's Schritt 0.
+  last audit's step 0.
