@@ -37,6 +37,7 @@ from pnp_okf.synthesize import (
     render_brief_body,
     synthesize_entity_body,
 )
+from pnp_okf.usage import LEDGER
 from pnp_okf.validate import fix_bundle, validate_bundle
 
 log = logging.getLogger("pnp_okf")
@@ -64,17 +65,45 @@ def _extract_all(
     cfg: DeepSeekConfig,
     paths: Paths,
     force: bool,
+    workers: int = 8,
 ) -> dict[str, SessionExtraction]:
-    out: dict[str, SessionExtraction] = {}
-    for t in transcripts:
-        out[t.session_id] = extract_session(
-            t, cfg, paths.cache_dir, force=force
-        )
-    return out
+    """Extract every session, in parallel like synthesis.
+
+    Each session is an independent HTTP round trip, so this was serial for no
+    reason. It stayed invisible because extraction is cached per session and
+    normally only the one or two new sessions miss. A run that invalidates the
+    whole cache -- a PROMPT_VERSION bump or a model change, both of which are
+    in the cache key -- turns that into 66 sequential calls: ~4 hours at ~3.9
+    min each, against ~30 min at 8 workers.
+
+    pool.map keeps input order, so the returned dict is ordered exactly as the
+    sequential loop left it.
+    """
+
+    def _one(t: SessionTranscript) -> tuple[str, SessionExtraction]:
+        return t.session_id, extract_session(t, cfg, paths.cache_dir, force=force)
+
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        return dict(pool.map(_one, transcripts))
 
 
 def _state_dir() -> Path:
     return Path(os.environ.get("PNP_STATE_DIR", "./state")).expanduser()
+
+
+def _duration_s(started_at: str, ended_at: str) -> float | None:
+    """Wall-clock seconds between two ISO-8601 stamps, or None if unparseable.
+
+    Both stamps were already written; only their difference was missing, so
+    every consumer had to subtract them by hand.
+    """
+
+    try:
+        start = datetime.fromisoformat(started_at.replace("Z", "+00:00"))
+        end = datetime.fromisoformat(ended_at.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    return round((end - start).total_seconds(), 1)
 
 
 def _write_run_status(started_at: str, ok: bool, error: str | None, counts: dict) -> None:
@@ -82,6 +111,10 @@ def _write_run_status(started_at: str, ok: bool, error: str | None, counts: dict
 
     No such record existed before this change — a run left only bundle
     diffs and stdout logs behind, nothing a status endpoint could read.
+
+    ``duration_s`` and ``usage`` are additive: services/dashboard reads this
+    file and docs/architecture/status-schema.md documents it as a cross-repo
+    contract, so existing keys keep their meaning.
     """
 
     state_dir = _state_dir()
@@ -92,9 +125,11 @@ def _write_run_status(started_at: str, ok: bool, error: str | None, counts: dict
         "run_id": run_id,
         "started_at": started_at,
         "ended_at": ended_at,
+        "duration_s": _duration_s(started_at, ended_at),
         "ok": ok,
         "error": error,
         "counts": counts,
+        "usage": LEDGER.snapshot(),
     }
     (state_dir / "last_run.json").write_text(
         json.dumps(record, ensure_ascii=False, indent=2), encoding="utf-8"
@@ -132,7 +167,7 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
             "files that carry no new knowledge (see docs/architecture for "
             "the 2026-08 incident this guards against)."
         )
-    extractions = _extract_all(transcripts, cfg, paths, args.reextract)
+    extractions = _extract_all(transcripts, cfg, paths, args.reextract, workers=args.workers)
 
     registry_path = paths.registry_path
     require_rules(registry_path)
@@ -315,7 +350,7 @@ def cmd_extract(args: argparse.Namespace) -> int:
     transcripts = _select(
         load_transcripts(paths.transcript_dir), args.limit, args.session
     )
-    extractions = _extract_all(transcripts, cfg, paths, args.force)
+    extractions = _extract_all(transcripts, cfg, paths, args.force, workers=args.workers)
     for sid, ex in extractions.items():
         log.info("%s: %d entities", sid, len(ex.entities))
     return 0
@@ -334,7 +369,7 @@ def cmd_dedup(args: argparse.Namespace) -> int:
         load_transcripts(paths.transcript_dir), args.limit, args.session
     )
     tmap = {t.session_id: t for t in transcripts}
-    extractions = _extract_all(transcripts, cfg, paths, force=False)
+    extractions = _extract_all(transcripts, cfg, paths, force=False, workers=args.workers)
 
     registry_path = paths.registry_path
     require_rules(registry_path)
