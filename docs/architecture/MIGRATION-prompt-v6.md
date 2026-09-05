@@ -31,6 +31,44 @@ concept(s) (>10%) are absent from this run's resolved entities
 and wrote nothing. This is the second time this has happened; `rules_doctor.py`
 was written for the 2026-08 mass-rename and applies unchanged here.
 
+## What a full rebuild costs
+
+Measured on the 2026-09-05 migration, not estimated.
+
+A rebuild re-derives every session and every non-brief concept, so the bill
+scales with the whole corpus rather than the change:
+
+| | |
+|---|---|
+| Extraction input | 66 sessions x ~30k tokens (~94k chars of German each) |
+| Structured-outputs probe | the **same payload again**, once per uncached session |
+| Synthesis | ~235 calls (deep 73 + standard 162); the 864 brief concepts make no call |
+| Total | **~10.5M tokens**, ~$8 |
+
+DeepSeek bills peak rates 01:00-04:00 and 06:00-10:00 UTC on weekdays and
+off-peak everything else, weekends included -- exactly half. The 2026-09-05
+run was a Saturday, so ~$8 is the *floor*; the same rebuild on a weekday
+morning is ~$15.
+
+Two things follow:
+
+1. **A `PROMPT_VERSION` bump is a budgeted event.** Bumping a one-character
+   constant in `prompts.py` invalidates every cached extraction and synthesis
+   at once. Schedule it off-peak, and batch prompt changes rather than
+   shipping them one at a time -- three separate bumps cost three rebuilds.
+2. **Changing `DEEPSEEK_MODEL` costs the same**, because the model name is in
+   the cache key too. Settle the model *before* starting a rebuild. The
+   2026-09-05 run paid for extraction roughly twice by switching from
+   `deepseek-chat` to `deepseek-v4-pro` at 40% through.
+
+The probe was ~35% of that day's tokens before it was memoised per model
+(`extract.py`, `_NO_STRUCTURED_OUTPUTS`); it now costs at most one probe per
+worker instead of one per session, saving ~1.9M tokens per cold rebuild.
+
+Extraction is also parallel now (`--workers`, default 8). Before that it was
+a serial loop and the same rebuild took ~4 hours of wall clock instead of
+~30 minutes; the cost was unchanged, only the time.
+
 ## Pre-flight (done)
 
 - Working on branch `chore/docs-ci-and-instrumentation`, tree clean.
