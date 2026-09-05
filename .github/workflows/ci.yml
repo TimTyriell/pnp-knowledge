@@ -32,6 +32,29 @@ env:
   PNP_REQUIRE_BUNDLE: "1"
 
 jobs:
+  lint:
+    name: ruff
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      # Config lives in ruff.toml at the repo root, which already excludes
+      # graph/, knowledge/ and reports/. Version is pinned so a new ruff
+      # release cannot turn this red without a deliberate bump.
+      - name: Install ruff
+        run: pip install ruff==0.16.6
+
+      - name: Lint
+        run: ruff check .
+
   kb:
     name: services/kb
     runs-on: ubuntu-latest
