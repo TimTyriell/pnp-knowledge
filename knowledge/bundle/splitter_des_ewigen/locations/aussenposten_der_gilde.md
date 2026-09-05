@@ -1,16 +1,16 @@
 ---
 type: Location
 title: Außenposten der Gilde
-description: Ein abgelegener Trainingsstützpunkt der Gilde, umgeben von dichtem Wald.
-  Er verfügt über ein Trainingsgelände mit Ruinen, einem Portal und…
+description: Der Außenposten ist ein abgelegenes Trainingsgelände der Gilde, umgeben
+  von dichtem, magischem Wald. Er verfügt über Ruinen, Türme, ein zen…
 tags:
 - locations
 timestamp: '2025-05-27T00:00:00Z'
 id: LOC_AUSSENPOSTEN_DER_GILDE
-subtype: Gebäude
+subtype: Festung
 ---
 
-Ein abgelegener Trainingsstützpunkt der [Gilde](/factions/gilde_von_ehrenfels.md), umgeben von dichtem Wald. Er verfügt über ein Trainingsgelände mit Ruinen, einem [Portal](/locations/portal.md) und verschiedenen Verteidigungspositionen. Hier findet der Kampf gegen die beschworenen Kreaturen statt.
+Der Außenposten ist ein abgelegenes Trainingsgelände der [Gilde](/factions/gilde_von_ehrenfels.md), umgeben von dichtem, magischem [Wald](/locations/wald.md). Er verfügt über Ruinen, Türme, ein zentrales Rift und wird zum Kampf gegen beschworene Kreaturen genutzt. Die Gruppe wählt die rechte Ruine als Stellung.
 
 # Belege
 

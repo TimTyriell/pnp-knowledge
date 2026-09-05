@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Leandras
-description: Leandras ist ein Menschenmagier, der zurückgezogen in Breska lebt. Die
-  Gruppe begegnet ihm zunächst abweisend, später wird er zu einem wich…
+description: Leandras ist ein menschlicher Magier. Die Heldengruppe begegnet ihm zunächst
+  in seinem kleinen Haus in Breska; später wird er als der Magie…
 tags:
 - npcs
 timestamp: '2026-06-10T00:00:00Z'
@@ -11,21 +11,23 @@ aliases:
 - Lendras
 ---
 
-Leandras ist ein Menschenmagier, der zurückgezogen in [Breska](/locations/breska.md) lebt. Die Gruppe begegnet ihm zunächst abweisend, später wird er zu einem wichtigen Verbündeten.
+Leandras ist ein menschlicher Magier. Die Heldengruppe begegnet ihm zunächst in seinem kleinen Haus in [Breska](/locations/breska.md); später wird er als der Magier von [Gemata](/locations/gemata.md) bezeichnet, und schließlich tritt er als Auftraggeber der Gruppe auf. [Lunara](/characters/lunara_velora.md), die ihm eine silberne Feder verdankt, denkt nach ihrer Wiederbelebung dankbar an ihn.
 
-## Rolle und Wesen
+## Begegnungen mit der Heldengruppe
 
-Leandras ist ein Menschenmagier. Er lebt zurückgezogen in einem Haus in Breska; seine Tür ist mit einer magischen Rune gesichert, die auf ein Geheimnis hindeutet. Er ist beschäftigt, und als die Gruppe ihn nach Essen und Zaubersprüchen fragt, weist er sie ab. Er wird als möglicher Verbündeter gehandelt, zunächst aber nicht für den Kampf gewonnen. Später bittet er die Gruppe um Vertrauen und wirkt gestresst und geheimnisvoll. Er ist wissbegierig.
+In [Breska](/locations/breska.md) steigt [Valeria](/characters/valeria.md) durch das Fenster seines Hauses ein. Leandras, der seine Ruhe will, reagiert verärgert und verweist die Gruppe an [Bürgermeister Berthold](/npcs/berthold.md). Er weigert sich, Valeria Zaubersprüche beizubringen, und lässt sich am Ende nicht für die Verteidigung gewinnen. Als [Rotunas](/characters/rotunas.md) versucht, die Tür zu verschließen, bemerkt er die magische Rune, mit der sie geschützt ist.
 
-## Begegnungen und Wirken
+Bei einem Goblinangriff wird Leandras in seinem Haus von einer rabenartigen Kreatur ([Kenku](/npcs/kenku_bote.md)) schwer verletzt. Die Gruppe rettet ihn. Er führt sie zu einer versteckten Tür, die in die [Katakomben](/locations/katakomben.md) führt, gibt [Esterossa](/characters/esterossa.md) einen magischen [Schlüssel](/items/magischer_schluessel.md) und schließt sich der Gruppe an. In den Katakomben agiert er als Führer und heilt einen Teil seiner Wunden selbst.
 
-Bei einem späteren Aufeinandertreffen wird Leandras von einem [Kenku](/npcs/kenku.md) angegriffen und tötet ihn mit einem Blitz. Er übergibt [Esterossa](/characters/esterossa.md) einen magischen [Schlüssel](/items/magischer_schluessel.md) und führt die Gruppe zu einer [Katakombe](/locations/katakombe.md). Dort bricht er den Bann über [Voras](/npcs/voras.md) und erweckt ihn. Er erklärt, dass die [Hag](/npcs/lenra.md) nach Voras' Gemahlin sucht.
+In einer späteren Begegnung hat Leandras die Gruppe angeheuert. Er ist von den Ereignissen überrascht, respektiert die Gruppe am Ende aber.
 
-In einer weiteren Begegnung ruft er die Gruppe herbei. Er hilft bei der Verteidigung, und als [Dranara](/npcs/dranara.md) die Gruppe angreifen will, wirkt er einen Schlafzauber auf sie. Er ist entsetzt über die Ereignisse und verlässt mit der Gruppe die Insel. [Lunara](/characters/lunara_velora.md) besitzt eine Feder von ihm, die sie einmal geheilt hat.
+## Magische Fähigkeiten und Ziele
+
+Leandras ist wissbegierig, aber kein Stratege. Er beherrscht Runenmagie, Teleportation und Schlafzauber; zudem kann er sich selbst heilen. Den Dorfbewohnern misstraut er und ist mit „wichtigeren Dingen“ beschäftigt. Sein Ziel in den Katakomben ist es, den [Vampir Voras](/npcs/voras.md) zu erwecken, um die [Hexe Hag](/npcs/lenra.md) zu bekämpfen; dabei wirkt er gestresst, bleibt aber entschlossen.
 
 # Belege
 
-[P-03] Session 2025-04-09 @ 00:08:51 – https://www.youtube.com/watch?v=1PWdwvun5ow
-[P-05] Session 2025-04-23 @ 01:32:25 – https://www.youtube.com/watch?v=z3C-bewKqUs
-[P-16] Session 2025-07-29 @ 00:06:48 – https://www.youtube.com/watch?v=XXgO5Ht4Q0A
-[P-53] Session 2026-06-10 @ 00:14:30 – https://www.youtube.com/watch?v=_3tLSiT1tck
+[P-03] Session 2025-04-09 @ 00:09:00 – https://www.youtube.com/watch?v=1PWdwvun5ow
+[P-05] Session 2025-04-23 @ 01:26:50 – https://www.youtube.com/watch?v=z3C-bewKqUs
+[P-16] Session 2025-07-29 @ 01:27:20 – https://www.youtube.com/watch?v=XXgO5Ht4Q0A
+[P-53] Session 2026-06-10 @ 00:15:21 – https://www.youtube.com/watch?v=_3tLSiT1tck

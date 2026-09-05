@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Meister Pyrandras
-description: Meister Pyrandras ist ein goldener Dragonborn und eine wiederkehrende
-  Persönlichkeit in Ehrenfels. In den Aufzeichnungen der Gruppe tritt e…
+description: Meister Pyrandras ist ein goldener Drachengeborener und der aktuelle
+  Anführer von Ehrenfels. Er gehört der alten Führung der Stadt an, komm…
 tags:
 - npcs
 timestamp: '2026-08-12T00:00:00Z'
@@ -12,19 +12,19 @@ aliases:
 - Meister Pirandras
 ---
 
-Meister Pyrandras ist ein goldener Dragonborn und eine wiederkehrende Persönlichkeit in [Ehrenfels](/locations/ehrenfels.md). In den Aufzeichnungen der Gruppe tritt er in mehreren Funktionen auf: als Meister der Stadt, als Kommandant der Stadtverteidigung und schließlich als Wirt der örtlichen Taverne. Seine Auftritte sind geprägt von Kooperation, Entschlossenheit und teils heftigen emotionalen Reaktionen auf die Geschehnisse um die Seraphen.
+Meister Pyrandras ist ein goldener Drachengeborener und der aktuelle Anführer von [Ehrenfels](/locations/ehrenfels.md). Er gehört der alten Führung der Stadt an, kommandiert die Stadtwache und stellte sich während der Anwesenheit der Seraphen gegen die neuen Götter. Die Heldengruppe traf ihn mehrfach und kämpfte an seiner Seite.
 
-## Rollen und Auftreten in Ehrenfels
+## Verteidigung von Ehrenfels
 
-Bei der ersten Begegnung mit der Gruppe wird Pyrandras von [Lindo Laut](/characters/lindo_laut.md) alarmiert und führt die Verstärkung an. Er zeigt sich beeindruckt von der Lage, unterstützt die Gruppe und verhandelt mit dem [Gildemeister](/npcs/nox.md) über die Belohnung. Später ist er als Kommandant von Ehrenfels für die Verteidigung gegen [Dämonen](/factions/daemonen.md) verantwortlich: Er weist die Gruppe an, zur Brücke zu eilen, und hält seine Stellung, obwohl er im Kampf schwer bedrängt wird. In späteren Aufzeichnungen tritt er als Wirt der [Taverne von Ehrenfels](/locations/taverne_von_ehrenfels.md) auf, wo er die Gruppe empfängt.
+Pyrandras führte die Verteidigung von [Ehrenfels](/locations/ehrenfels.md) gegen einen Dämonenangriff an. Er spaltete einen Dämon, befahl den Helden, zur Brücke weiterzuziehen, und hielt mit seinen Soldaten die Stellung. Bei einer früheren Begegnung trat er als ranghohes Mitglied der [Gilde](/factions/gilde_von_ehrenfels.md) in Erscheinung: Er reagierte auf einen Alarm, stieß zu den Helden und übernahm die Führung. Mit einem Drachenschrei rief er weitere Drachengeborene herbei; im Kampf gegen einen [Kenku](/npcs/kenku_bote.md) richtete er seinen Atemangriff auf diesen. Danach sicherte er die Stadt und begleitete die Gruppe zum [Gildemeister](/npcs/nox.md).
 
-## Verhältnis zu den Seraphen und der Gruppe
+## Widerstand gegen die neuen Götter
 
-Pyrandras gerät mit den [Seraphen](/factions/seraphen.md) aneinander, als er aufgebracht ist, weil sich [Nerash](/deities/nerash.md) nicht zeigt. Er droht fast mit Gewalt und wird von [Orlanius Schwarzhorn](/npcs/orlanius_schwarzhorn.md) beruhigt. Gegenüber der Gruppe zeigt er sich entsetzt, als diese berichtet, eine Göttin gesehen zu haben. Erleichtert zeigt er sich, als die Seraphen die Stadt verlassen.
+Vor der Kapelle von Ehrenfels stellte sich Pyrandras den Seraphen-Wachen entgegen und forderte, dass sich [Nerash](/deities/nerash.md) zeige. In seiner Wut schlugen Flammen aus seinem Mund; erst [Orlanius](/npcs/orlanius_schwarzohr.md) konnte ihn besänftigen und zum Rückzug bewegen. Damit wirkte er wie ein Anführer des Widerstands gegen die neuen Götter. Nach der Rückkehr der Gruppe von einer Begegnung mit einer Göttin reagierte er geschockt, prüfte, ob sie noch lebten, und war erleichtert, dass die Seraphen fort waren. Die Helden berichteten ihm vom Verlust des göttlichen Schutzes und kündigten ihre baldige Abreise an.
 
 # Belege
 
-1. Session 2025-07-22 @ 02:07:00 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
+1. Session 2025-07-22 @ 02:06:20 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
 2. Session 2026-04-09 @ 00:15:31 (https://www.youtube.com/watch?v=vcGkejr8_nI)
 3. Session 2026-08-04 @ 02:02:21 (https://www.youtube.com/watch?v=qRj2t3wQHfs)
 4. Session 2026-08-12 @ 00:56:36 (https://www.youtube.com/watch?v=piUv11DCwDw)

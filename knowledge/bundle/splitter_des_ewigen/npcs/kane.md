@@ -1,15 +1,15 @@
 ---
 type: NPC
 title: Kane
-description: Kane ist ein Ork, der im Turm lebt und die Gruppe belauscht hat. Er bietet
-  an, sie sicher durch das Gebiet der Orks zu führen. Er ist zurüc…
+description: Kane ist ein Ork in schickem Gewand, der im alten Turm lebt. Er erscheint
+  nach Einbruch der Nacht und entschuldigt sich, die Gruppe unterbr…
 tags:
 - npcs
 timestamp: '2026-03-24T00:00:00Z'
 id: NPC_KANE
 ---
 
-Kane ist ein Ork, der im Turm lebt und die Gruppe belauscht hat. Er bietet an, sie sicher durch das Gebiet der Orks zu führen. Er ist zurückhaltend und respektvoll, aber auch vorsichtig. Er verlässt den Turm, als die Gruppe ihn darum bittet, und verschwindet später.
+Kane ist ein Ork in schickem Gewand, der im alten Turm lebt. Er erscheint nach Einbruch der Nacht und entschuldigt sich, die Gruppe unterbrochen zu haben. Er bietet an, sie sicher nach [Hartwacht](/locations/hartwacht.md) zu führen, da er die Orkhauptstadt gut kennt und dort lange gelebt hat. Die Gruppe schickt ihn zunächst nach unten, um ihr privates Gespräch fortzusetzen.
 
 # Belege
 

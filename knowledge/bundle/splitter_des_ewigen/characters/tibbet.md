@@ -1,24 +1,28 @@
 ---
 type: Character
 title: Tibbet
-description: Tibbet ist ein junger Ribbet-Sorcerer, der in der Kampagne auf der Suche
-  nach dem Barbaren Gummo ist. Neugierig und zielstrebig, will er se…
+description: Tibbet ist ein junger Ribbet-Zauberer. Während der Auseinandersetzung
+  mit den Banditen schloss er sich den Gefährten von Rotunas an. Er set…
 tags:
 - characters
 timestamp: '2026-03-23T00:00:00Z'
 id: CHAR_TIBBET
 ---
 
-Tibbet ist ein junger Ribbet-Sorcerer, der in der Kampagne auf der Suche nach dem Barbaren Gummo ist. Neugierig und zielstrebig, will er seine magischen Fähigkeiten ausbauen und seine Mission erfüllen. Im Kampf arbeitet er eng mit seinen Gefährten zusammen.
+Tibbet ist ein junger Ribbet-Zauberer. Während der Auseinandersetzung mit den [Banditen](/factions/silberkerne.md) schloss er sich den Gefährten von Rotunas an. Er setzt seine Magie vielseitig ein: Illusionen und Verwandlungen dienen ihm zur Tarnung und Ablenkung, im Kampf greift er aber auch offensiv ein. Seine Neugier und seine magische Unterstützung erwiesen sich als wichtige Bausteine der Gruppenaktionen.
 
-## Magie und Kampf
+## Magische Fähigkeiten
 
-Tibbet setzt eine Reihe von Zaubern ein, darunter *Arcane Sense*, Illusionen und *Reign of Blades*. Damit unterstützt er seine Gruppe im Kampf und verbindet seine Zauber mit Tag-Team-Angriffen, um Gegner gemeinsam zu stellen. Sein Wunsch, die eigenen Fähigkeiten als Sorcerer weiterzuentwickeln, treibt ihn dabei an.
+Tibbet verfügt über ein breites Spektrum an Zaubern. Um sich zu verstecken, verwandelte er sich in ein Fass; um die Banditen zu verwirren, erzeugte er eine Illusion seiner selbst. Im Gefecht wirkte er den Zauber Reign of Blades und verletzte damit mehrere Gegner gleichzeitig. Vor dem finalen Showdown verstärkte er [Ninas](/characters/nina.md) Bolzen mit Eis; der Schuss wurde zum entscheidenden Treffer auf [Floran](/npcs/floran.md).
 
-## Mission und Begegnung mit Gummo
+## Beitritt und Erkundung
 
-Tibbet sucht Gummo, einen Barbaren, der sein Volk überfallen hat. Die Auseinandersetzung mit ihm ist Teil seiner Mission: Als es um die Übergabe von Gefangenen geht, ist Tibbet bereit, sie zu übergeben, um die Mission zum Abschluss zu bringen.
+Tibbet brachte sich unmittelbar nach seinem Beitritt in die laufenden Aktionen ein. Er unterstützte [Otis](/characters/otis.md) beim Ziehen des Hebels und entdeckte den geheimen Eingang.
+
+## Suche nach Gummo
+
+Tibbet verfolgt ein persönliches Ziel: Er sucht in [Willauch](/locations/willauch.md) einen Barbaren namens Gummo. Aus diesem Grund stimmte auch er zu, die Gefangenen nach [Willauch](/locations/willauch.md) zu bringen.
 
 # Belege
 
-[P-42] Session 2026-03-23, 00:02:28 – [YouTube](https://www.youtube.com/watch?v=niVxKtdQBn0)
+[P-42] Session 2026-03-23 @ 00:02:28 – https://www.youtube.com/watch?v=niVxKtdQBn0

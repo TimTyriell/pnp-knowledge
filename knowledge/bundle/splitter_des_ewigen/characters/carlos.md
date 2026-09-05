@@ -1,24 +1,24 @@
 ---
 type: Character
 title: Carlos
-description: Carlos ist ein Katari, ein katzenartiges Wesen. Er wuchs im Sumpf auf
-  und hat eine enge Verbindung zur Natur. Seine Stärken liegen in Agili…
+description: Carlos ist ein Katari (Katzenwesen) aus den Sümpfen und Beherrscher der
+  Naturmagie. Er tritt als neugieriger, kritischer Geist auf, der unn…
 tags:
 - characters
 timestamp: '2026-05-27T00:00:00Z'
 id: CHAR_CARLOS
 ---
 
-Carlos ist ein Katari, ein katzenartiges Wesen. Er wuchs im [Sumpf](/locations/sumpf_vor_dem_goblin_dorf.md) auf und hat eine enge Verbindung zur Natur. Seine Stärken liegen in Agilität und Naturmagie. Carlos handelt vorsichtig, beobachtet genau und kennt sich mit Kreaturen aus. Im Kampf gegen [Kalos](/npcs/organisation_der_kalos.md) erkennt er, dass dieser nur eine Illusion ist. Carlos ist bereit, für die Wissenschaft zu forschen.
+Carlos ist ein Katari (Katzenwesen) aus den Sümpfen und Beherrscher der Naturmagie. Er tritt als neugieriger, kritischer Geist auf, der unnatürlichen Phänomenen auf den Grund geht, im Kampf aber auch pragmatisch seine Fähigkeiten einsetzt. Anders als manche seiner Begleiter lässt er sich nicht von Gold oder Land ködern; sein Mitgefühl gilt eher Tieren und den Verletzten.
 
-## Herkunft und Naturverbundenheit
+## Fähigkeiten und Magie
 
-Carlos stammt aus dem Sumpf. Dort hat er sich ein Wissen über Kreaturen angeeignet und seine enge Beziehung zur Natur entwickelt. Diese zeigt sich in seiner Naturmagie, mit der er kämpft und sich verteidigt. Sein vorsichtiges Auftreten und seine genaue Beobachtungsgabe machen ihn zu einem aufmerksamen Charakter.
+Carlos verfügt über mehrere übernatürliche Fertigkeiten: Mit **„Wishes and Tangle“** erschafft er Ranken, mit denen er Gegner festzuhalten versucht. **„Insektenrüstung“** lässt ihn sich einen [Käferpanzer](/items/kaeferpanzer.md) erschaffen, wofür er sich im Kampf Stress markiert. Dazu kommt sein **„Feliner Instinkt“**, der ihn als Katari auszeichnet. Seine Naturmagie und seine Beobachtungsgabe machen ihn zu einem wertvollen Untersucher: Er erkennt die unnatürliche Beschaffenheit des Nebels und durchschaut später die Illusion von [Kalos](/npcs/organisation_der_kalos.md).
 
-## Fähigkeiten und Kampf gegen Kalos
+## Begegnung mit Kalos und den verletzten Soldaten
 
-Im Kampf setzt Carlos auf Agilität und Naturmagie. Zu seinen Fähigkeiten gehören Dornenhaut und [Käferpanzer](/items/kaeferpanzer.md). Gegen [Kalos](/npcs/organisation_der_kalos.md) versucht er, den Gegner mit Ranken zu fesseln. Während des Gefechts erkennt Carlos, dass Kalos eine Illusion ist. Diese Erkenntnis verdankt er seiner genauen Beobachtung, die ihn auch in angespannter Lage nicht verlässt.
+In der Untersuchung der verwundeten Soldaten zeigt Carlos seine kritische Ader: Er hinterfragt die Umstände ihrer Verletzungen und das plötzliche Ende des Schutzzaubers. Sein Misstrauen gegenüber dem offensichtlichen Verlauf führt ihn zur Wahrheit hinter der Illusion von [Kalos](/npcs/organisation_der_kalos.md). Im anschließenden Kampf versucht er, Kalos mit Ranken festzuhalten. Als Kalos ihm als Gegenleistung Gold und Land anbietet, lehnt Carlos ab – solche materiellen Güter bedeuten ihm nichts.
 
 # Belege
 
-[P-51] Session 2026-05-27, 00:26:27, https://www.youtube.com/watch?v=IYYmgpqsp7E
+[P-51] Session 2026-05-27 @ 00:20:05 (https://www.youtube.com/watch?v=IYYmgpqsp7E)

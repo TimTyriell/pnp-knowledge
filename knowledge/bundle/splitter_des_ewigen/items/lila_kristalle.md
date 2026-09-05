@@ -1,8 +1,8 @@
 ---
 type: Item
 title: Lila Kristalle
-description: Lila Kristalle sind wachsende Lebensformen, die Feuchtigkeit benötigen.
-  Sie können Lebewesen überwuchern und sind magieresistent. Sie werde…
+description: Die lila Kristalle sind lebende Formen, die im Norden nahe des Endes
+  wachsen. Sie fühlen sich magisch an, sind aber nicht von Natur aus mag…
 tags:
 - items
 timestamp: '2025-10-07T00:00:00Z'
@@ -10,8 +10,8 @@ id: ITEM_LILA_KRISTALLE
 subtype: Artefakt
 ---
 
-Lila Kristalle sind wachsende Lebensformen, die Feuchtigkeit benötigen. Sie können Lebewesen überwuchern und sind magieresistent. Sie werden für die Erschaffung des Golems verwendet.
+Die lila Kristalle sind lebende Formen, die im Norden nahe des Endes wachsen. Sie fühlen sich magisch an, sind aber nicht von Natur aus magisch. Bei Berührung kristallisieren sie Körperteile und breiten sich aus. Sie werden von den Magiern genutzt, um den Golem zu bauen. Sie reagieren empfindlich auf Feuer, solange sie nicht ausgehärtet sind. In der Mine wachsen sie zusammen mit grünen Kristallen.
 
 # Belege
 
-[P-25] Session 2025-10-07 @ 00:11:53 (https://www.youtube.com/watch?v=qVAF_54S8Vw)
+[P-25] Session 2025-10-07 @ 00:13:11 (https://www.youtube.com/watch?v=qVAF_54S8Vw)

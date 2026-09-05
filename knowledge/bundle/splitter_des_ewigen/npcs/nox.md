@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Nox
-description: Nox ist der Gildenmeister von Ehrenfels und damit der Anführer der Gilde
-  in der nördlichen Schneise. Er ist eine weise, geheimnisvolle und…
+description: Nox ist der Gildenmeister der Dwarfmasters-Gilde und leitet den Außenposten
+  mit dem Rift, einem Zugang zu den alten Göttern und ihren Kreat…
 tags:
 - npcs
 timestamp: '2026-08-12T00:00:00Z'
@@ -17,76 +17,61 @@ aliases:
 
 ## Überblick
 
-Nox ist der Gildenmeister von [Ehrenfels](/locations/ehrenfels.md) und damit der Anführer der [Gilde](/factions/gilde_von_ehrenfels.md) in der nördlichen Schneise. Er ist eine weise, geheimnisvolle und mächtige Figur, die die Gruppe seit ihrer Ankunft am Außenposten begleitet, prüft und mit Wissen über die alten Götter, [Dämonen](/factions/daemonen.md) und die Hintergründe der Welt versorgt. Er tritt als väterlicher, aber distanzierter Mentor auf, der stets mehr zu wissen scheint, als er preisgibt. Sein Schicksal nach der [Schlacht um Ehrenfels](/events/schlacht_um_ehrenfels.md) ist ungewiss: Er gilt seitdem als verschollen, wird von den neuen Göttern als Verräter gejagt und von der Gruppe sehnlichst gesucht.
+Nox ist der Gildenmeister der Dwarfmasters-Gilde und leitet den Außenposten mit dem Rift, einem Zugang zu den alten Göttern und ihren Kreaturen. [1] Später wird er als Gildenmeister von [Ehrenfels](/locations/ehrenfels.md) bezeichnet. [11] Nox ist ein mächtiger Magier, der als geheimnisvoll, distanziert und außergewöhnlich gut informiert auftritt. Er gehört zu den wichtigsten Verbündeten der Heldengruppe um [Lindo Laut](/characters/lindo_laut.md). Nach der [Schlacht um Ehrenfels](/events/schlacht_um_ehrenfels.md) gilt er in der Welt als verschollen; sein Tod ist lediglich ein Gerücht. [11][12][13]
 
 ## Rolle in der Kampagne
 
-Nox ist eine der zentralen Bezugspersonen der Gruppe innerhalb der Gilde. Er leitet das Training am Außenposten, bei dem er die Gruppe durch ein Beschwörungsritual auf die Probe stellt ([1]). Nach dem Sieg erklärt er ihr die Hintergründe der Dämonen und die Bedeutung des [Portals](/locations/portal.md) ([1]). Als die Gruppe aus dem Portal zurückkehrt, warnt er sie, über das Erlebte zu schweigen, und offenbart, dass [Nerash](/deities/nerash.md) ein verlorener Demigott ist ([2]).
-
-In Ehrenfels untersucht er nach dem Angriff des [Kenku](/npcs/kenku.md) die Lage, identifiziert das [Kopfgeld auf die Gruppe](/events/kopfgeld_auf_die_gruppe.md) und nimmt den [Dolch](/items/dolch.md) zur Untersuchung an sich ([3]). Er warnt die Gruppe davor, das Amulett in der Stadt zu behalten, und führt sie zum alten Schrein, wo er die Bedeutung der vier Seelenstücke erklärt ([3]).
-
-Später lädt er die Gruppe nach [Crowfin Manor](/locations/crowfin_manor.md) ein, wo er einen Schutzzauber errichtet, der übernatürliche Kräfte unterdrückt, um frei mit [Lindo Laut](/characters/lindo_laut.md) sprechen zu können ([6]). Er sorgt sich um das Gleichgewicht der Götter und schlägt vor, dass die Gruppe nach [Abyssalis](/domains/splitterwelt.md) reisen könnte, um [Vasul](/deities/vharzul.md) zu besiegen ([6]). Zusammen mit [Voras](/npcs/voras.md) schmiedet er die Ringe und entwickelt den Plan für die Reise nach Abyssalis ([7]).
-
-Während der Schlacht um Ehrenfels kämpft er an vorderster Front gegen das riesige Monster am Portal und wird schwer verletzt ([9]). Nach der [Zerstörung des Portals](/events/zerstoerung_des_portals.md) wird er ohnmächtig und von Nerash getötet ([9]) – doch sein Tod erweist sich als nicht endgültig: Er ist seit der Schlacht verschwunden, wird von den neuen Göttern gejagt und von [Vitius](/npcs/vitius.md) als Verräter bezeichnet ([10], [11]). Die Gruppe kennt ihn jedoch als Verbündeten und ist misstrauisch gegenüber den Anschuldigungen ([11]).
+Nox bewacht den Zugang zur [Splitterwelt](/domains/splitterwelt.md) und zu den alten Göttern, studiert die dortigen Kreaturen und versiegelt das Rift nach einem Angriff mit einem starken Bannzauber. [1] Er tritt wiederholt als Warner, Ratgeber und Informant auf: Er mahnt die Gruppe zur Verschwiegenheit, klärt über die alten Götter auf und gibt Hinweise zu Landnahme und Gefahren. [2][3][4] In privaten Gesprächen offenbart er sein Wissen über die Besessenheit [Lindo Lauts](/characters/lindo_laut.md) und entwickelt magische Hilfsmittel wie die [Handschellen](/items/handschellen.md) gegen [Slix](/npcs/slix_vasul.md). [6] Gemeinsam mit dem Vampir [Voras](/npcs/voras.md) arbeitet er an Ringen und einem Plan, um ein Portal nach [Abyssalis](/domains/splitterwelt.md) zu schaffen. [7][8] Während des Angriffs auf [Ehrenfels](/locations/ehrenfels.md) organisiert Nox die Verteidigung, kämpft an vorderster Front und verteidigt das Portal mit mächtiger Magie, bis er schwer verletzt zusammenbricht. [9][10] Nach der Schlacht wird er von den neuen Göttern als Verräter bezeichnet und ist seither verschollen. [11][12][13]
 
 ## Wichtige Merkmale
 
-Nox ist ein mächtiger Magier und Beschwörer. Er führt Rituale durch, um Kreaturen zu beschwören ([1]), und hat einen Zauber entwickelt, der alle übernatürlichen Kräfte für eine Weile unterbindet ([6]). Er kann eine magische Hand beschwören, um Gegenstände zu durchsuchen ([3]). Seine Fähigkeiten im Kampf sind beachtlich, aber nicht unbegrenzt: Gegen das riesige Monster am Portal hat er extreme Schwierigkeiten, die magischen Angriffe abzuwehren ([9]).
-
-Sein Auftreten ist weise, geheimnisvoll und ruhig. Er zeigt eine entspannte [Mimik](/npcs/mimik.md) ([3]) und wirkt auch dann unbedarft und neutral, wenn er blutüberschmiert durch die Straßen läuft ([5]). Er wird als emotionslos beschrieben ([7]). Er spricht in ruhigen, bedachten Worten und neigt dazu, Informationen nur dosiert preiszugeben. Seine Warnung an die Gruppe nach der Rückkehr aus dem Portal ist charakteristisch für seine verschwiegene Art: „Ihr solltet darüber nicht reden. Ihr solltet darüber niemandem erzählen und vor allem solltet ihr damit nicht angeben. Etwas, was ihr für euch behalten solltet. Nur zu eurer Sicherheit. Ich habe nichts gesehen." ([2])
-
-Er ist ein Stratege, der die Gruppe auf die Probe stellt, bevor er ihr Wissen vermittelt. Beim Training am Außenposten kündigt er an: „Keine Sorge, ich werde nichts allzu mächtiges beschwören. Aber etwas, was euch auf Trab halten wird." ([1]) Er beobachtet die Gruppe und schickt ihr Raben hinterher, um Lindo Laut im Auge zu behalten – „Es war wichtig, denn, naja, ich glaube, das muss ich nicht erklären." ([6])
+- **Fähigkeiten:** Nox beherrscht mächtige Magie. Er versiegelt das Rift mit einem starken Bannzauber [1], beschwört eine magische Hand zum Durchsuchen von Inventar [3], erscheint „wie aus dem Nichts“ [2] und verschwindet durch Portale [6]. Er entwickelt einen Schutzzauber, der übernatürliche Kräfte unterdrückt [6], und feuert im Kampf einen letzten Energiestrahl ab, der ein riesiges Monster ins Portal zurückwirft. [10]
+- **Auftreten:** Nox wirkt geheimnisvoll, gut informiert und kontrolliert. Er erscheint oft erst nach Kämpfen oder in entscheidenden Momenten. In einer Begegnung ist er blutverschmiert, zeigt aber eine neutrale Miene und antwortet auf Nachfrage nur: „Alles in Ordnung.“ [5]
+- **Wesenszüge:** Er ist vorsichtig, eindringlich warnend und zurückhaltend mit Informationen. Er stellt die Götter in Frage und denkt über einen „dritten Weg“ nach. [6] Er agiert als Beschützer der [Gilde](/factions/gilde_von_ehrenfels.md) und der Gruppe, trifft aber auch eigenmächtige Entscheidungen, etwa den [Dolch des Kenku](/items/dolch_des_kenku.md) zur Analyse an sich zu nehmen. [3]
 
 ## Beziehungen und Verbindungen
 
-**Zur Gruppe:** Nox ist der Gildenmeister, der die Gruppe seit ihrer Ankunft begleitet. Er weist ihr das Haus zu ([5]) und unterstützt ihre Siedlungspläne, ohne ihnen Vorschriften zu machen ([4]). Er zeigt sich über ihre Taten informiert und lobt ihre Arbeit: „Ihr habt auf jeden Fall gute Arbeit geleistet. Andernfalls hätte ich nicht so viel Positives von euch gehört." ([6]) Gleichzeitig äußern andere Gildenmitglieder Misstrauen gegenüber der Gruppe, was Nox ihnen gegenüber offen anspricht ([6]).
-
-**Zu Voras:** Nox und Voras haben zusammen die Ringe geschmiedet und den Plan für die Reise nach Abyssalis entwickelt ([7]). Nox hat einen [Brief](/items/brief.md) an Voras geschickt ([7]). Nach der Schlacht wird Voras von Vitius getötet ([11]).
-
-**Zu Nerash:** Nox bezeichnet Nerash als „einen verlorenen Demigott", der einst für die neuen Götter kämpfte ([2]). In der Schlacht um Ehrenfels wird Nox von Nerash getötet, als dieser sein Schwert auf ihn richtet ([9]). Später verrät Nerash, dass Nox Richtung Nordwesten unterwegs ist und dass sie einen [Seraphen](/factions/seraphen.md) hinterhergeschickt hat, der ihn jedoch verloren hat ([12]).
-
-**Zu Vitius und den neuen Göttern:** Vitius bezeichnet Nox als Verräter, der mit alten Göttern zusammengearbeitet und die Stadt verraten habe ([11]). Laut Vitius hat Nox gemeinsam mit Voras die Streitkräfte der neuen Götter attackiert ([11]). Nox wird von den neuen Göttern gejagt ([11]).
+- **Zur Heldengruppe:** Nox kennt die Gruppe um [Lindo Laut](/characters/lindo_laut.md), [Rotunas](/characters/rotunas.md), [Esterossa](/characters/esterossa.md), [Dodo](/characters/dodo.md), [Lunara Velora](/characters/lunara_velora.md) und [Nyrella](/characters/nyrella.md). Er beobachtet Lindo Laut heimlich durch Raben [6], warnt die Gruppe mehrfach und unterstützt sie bei Siedlungs- und Reiseplänen.
+- **Zu [Voras](/npcs/voras.md):** Nox arbeitet mit dem Vampir zusammen. Er schickt ihm einen Brief und entwickelt mit ihm Ringe und einen Plan für [Abyssalis](/domains/splitterwelt.md). [7][8] [Die neuen Götter](/deities/neue_goetter.md) bezeichnen ihn deshalb als Verräter und Komplizen Voras'. [12]
+- **Zu [Inaros](/npcs/inaros.md):** Inaros ist Nox' Strixwolf. Er trägt den schwer verletzten Nox in Sicherheit [10]; nach der Schlacht entkommt Nox auf ihm. [12]
+- **Zu [Nerash](/deities/nerash.md) und den neuen Göttern:** [Nerash](/deities/nerash.md) bezeichnet Nox als Feind, der hingerichtet werden soll. [12][13] Überlebende berichten, Nox sei von Nerash hinterrücks angegriffen worden. [12]
+- **Zur Gilde:** Als Gildenmeister leitet er die Dwarfmasters-Gilde bzw. die Abenteurergilde in Ehrenfels. [1][11]
 
 ## Chronologie
 
-**Erstes Treffen am Außenposten:** Nox stellt sich der Gruppe am Außenposten vor und leitet das Training, bei dem er Kreaturen durch ein Ritual beschwört ([1]). Nach dem Sieg erklärt er der Gruppe die Hintergründe der Dämonen und die Bedeutung des Portals ([1]).
-
-**Nach der Rückkehr aus dem Portal:** Nox erscheint, als die Gruppe aus dem Portal tritt, und warnt sie, über das Erlebte zu schweigen ([2]). Er offenbart, dass Nerash ein verlorener Demigott ist ([2]).
-
-**Untersuchung nach dem Kenku-Angriff:** Nox untersucht die Situation nach dem Angriff, findet Dolch, Brief und Ring bei dem Kenku und identifiziert das Kopfgeld auf die Gruppe ([3]). Er nimmt den Dolch zur Untersuchung an sich und warnt die Gruppe vor dem Amulett ([3]). Er führt die Gruppe zum alten Schrein und erklärt die Bedeutung der vier Seelenstücke ([3]).
-
-**Beratung zur Siedlung:** Die Gruppe überbringt Nox die Nachricht vom Attentat ([4]). Er rät, im Norden zu bleiben, erwähnt die alte Feste als möglichen Siedlungsort und warnt vor den Städten [Willauch](/locations/willauch.md) und [Brandau](/locations/brandau.md) im Süden sowie den untoten Armeen im Osten ([4]).
-
-**Blutüberströmt in Ehrenfels:** Die Gruppe sieht Nox blutüberschmiert auf der Straße, sein Gesicht wirkt dabei unbedarft und neutral ([5]). Er hat der Gruppe das Haus zugewiesen ([5]).
-
-**Einladung nach Crowfin Manor:** Nox lädt die Gruppe nach Crowfin Manor ein und errichtet einen Schutzzauber, der übernatürliche Kräfte unterdrückt ([6]). Er schlägt vor, dass die Gruppe nach Abyssalis reisen könnte, um Vasul zu besiegen, und bietet göttliche [Handschellen](/items/handschellen.md) an, um den Dämon zu bannen ([6]). Er verlässt die Gruppe, als der Schutzzauber nachlässt ([6]).
-
-**Plan für die Reise nach Abyssalis:** Nox hat zusammen mit Voras die Ringe geschmiedet und den Plan für die Reise nach Abyssalis entwickelt ([7]). Er hat einen Brief an Voras geschickt ([7]).
-
-**Schlacht um Ehrenfels:** Nox kämpft in Ehrenfels gegen Dämonen und ruft der Gruppe zu, sich zu beeilen ([8]). Er kämpft gegen das riesige Monster am Portal und wird schwer verletzt ([9]). Nach der Zerstörung des Portals ist er ohnmächtig und wird von Nerash getötet ([9]).
-
-**Verschwinden:** Seit der Schlacht um Ehrenfels ist Nox verschwunden ([10]). Die Gruppe erfährt bei ihrer Rückkehr, dass niemand weiß, wo er ist ([10]). Vitius bezeichnet ihn als Verräter und droht, ihn hinzurichten, sollte er zurückkehren ([11]). Laut Vitius ist Nox auf einem [Strixwolf](/npcs/strixwolf.md) geflohen ([11]).
-
-**Letzte bekannte Spur:** Nerash verrät, dass Nox Richtung Nordwesten unterwegs ist ([12]). Lunara hofft, dass er zurückkehren kann ([12]).
+- **Session 2025-05-27:** Nox stellt sich der Gruppe vor und erklärt, dass das Ritual zur Beschwörung von Kreaturen nicht unterbrochen werden kann. Nach dem Kampf versiegelt er das Rift mit einem Bannzauber und erläutert, die Dämonen seien Anhänger der alten Götter; die Gilde bewache den Zugang, um sie zu studieren. Auf [Lindo Lauts](/characters/lindo_laut.md) Frage nach dem [Schattenfinger](/items/schattenfinger.md) antwortet er, dieser stamme von verfluchten Kreaturen dieser Welt, nicht von Dämonen. [1]
+- **Session 2025-07-09:** Nach der Rückkehr der Gruppe erscheint er am Übungsgelände und warnt eindringlich davor, über das Erlebte zu reden. Auf Lindo Lauts Frage erklärt er, [Nerash](/deities/nerash.md) sei eine verlorene Demigöttin, die einst für die neuen Götter gekämpft habe. Er behauptet, nichts gesehen zu haben. [2]
+- **Session 2025-07-22:** Erst nach den Kämpfen erscheint er, untersucht die Leiche des [Kenku](/npcs/kenku_bote.md) und beschlagnahmt den [Dolch](/items/dolch.md) zur Analyse. Er warnt vor den alten Göttern im Amulett, testet Lindo Lauts Widerstandsfähigkeit und rät, das Amulett außerhalb der Stadt zu entsorgen. Am alten Schrein identifiziert er vier Statuen als Seelenstücke alter Götter, darunter [Koll](/deities/kollmereth.md). Danach verschwindet er. [3]
+- **Session 2025-09-23:** Nox gibt Ratschläge zur Landnahme. Er warnt vor dem Süden ([Willauch](/locations/willauch.md), [Brandau](/locations/brandau.md)) und dem Nordosten wegen der untoten Armeen, schlägt die alte Feste vor und berichtet, dass die [Banditen](/factions/silberkerne.md) in der nördlichen Schneise von zwei Anführern geführt werden. Er hat kein Interesse, der Gruppe Vorschriften zu machen, und bietet Unterstützung beim Dorfaufbau an. [4]
+- **Session 2025-11-18:** Am Ende des Abends begegnet die Gruppe Nox blutverschmiert, aber mit neutraler Miene. Auf die Frage, ob alles in Ordnung sei, antwortet er nur knapp und geht weiter. Der Auftritt bleibt ungeklärt. [5]
+- **Session 2026-02-17:** Nox lädt die Gruppe nach [Crowfin Manor](/locations/crowfin_manor.md) ein. Er hat einen Schutzzauber gewirkt, der übernatürliche Kräfte unterdrückt, um offen sprechen zu können. Er offenbart sein Wissen über Lindo Lauts Besessenheit durch [Slix](/npcs/slix_vasul.md), präsentiert magische Handschellen als Option und diskutiert alternative Pläne, darunter die Reise nach Abyssalis. Er liest Lunaras Runen als abyssalische Sprache und gesteht, dass er die Götter in Frage stellt und über einen dritten Weg nachdenkt. Bevor der Schutzzauber nachlässt, verlässt er die Gruppe durch ein Portal. [6]
+- **Session 2026-03-10:** Nox hat den Brief an [Voras](/npcs/voras.md) geschickt und arbeitet mit ihm an Ringen und dem Plan für Abyssalis. Voras äußert sich genervt über Nox' Geheimniskrämerei, erkennt den Plan aber an. [7]
+- **Session 2026-03-24:** Nox nimmt die gerettete [Prinzessin](/npcs/prinzessin_marie.md) in Ehrenfels auf, obwohl er zunächst nicht erfreut war. Gemeinsam mit Voras hat er ein Portal nach Abyssalis geschaffen. [8]
+- **Session 2026-03-31:** Während des Kampfes gegen [Dormak](/npcs/dormak.md) erscheint Nox in Ehrenfels, kämpft gegen Dämonen und ruft der Gruppe zu, sie solle gehen. Er organisiert die Verteidigung. [9]
+- **Session 2026-04-09:** Nox verteidigt das Portal mit mächtiger Magie gegen ein riesiges Monster. Er ist schwer verletzt und ohnmächtig, nachdem er einen letzten Energiestrahl abgibt, der die Kreatur ins Portal zurückwirft. [Rotunas](/characters/rotunas.md) trägt ihn zu [Inaros](/npcs/inaros.md), der ihn in Sicherheit bringt. [10]
+- **Session 2026-07-29:** Seit der Schlacht um Ehrenfels ist Nox seit Monaten verschwunden. Die Wache [Olaf](/npcs/olaf.md) berichtet, es gebe kein Lebenszeichen von ihm. [Lobrecht](/npcs/lobrecht.md) erklärt, Nox habe den Bürgern vor seinem Verschwinden erzählt, die Helden seien auf einer Mission zur Rettung der Welt. Er habe an vorderster Front gekämpft und sei von einer riesigen Dämonengestalt schwer verwundet worden, bevor Chaos ausbrach und Engel erschienen. Sein Verbleib ist ungewiss. [11]
+- **Session 2026-08-04:** Die neuen Götter bezeichnen Nox als Verräter, der mit dem Vampir Voras gemeinsame Sache gemacht habe. Die Helden glauben an seine Unschuld. Überlebende berichten, Nox habe die Dämonen bekämpft und sei von Nerash hinterrücks angegriffen worden; er sei auf seinem Strixwolf Inaros entkommen. Sein Verbleib bleibt unbekannt. [12]
+- **Session 2026-08-12:** [Vitius](/npcs/vitius.md) verrät, dass Nox nach Nordwesten, Richtung End, geflohen ist. [Lunara Velora](/characters/lunara_velora.md) bietet an, einen [Trank für die kranken Seraphen](/items/trank_fuer_die_kranken_seraphen.md) zu holen, wenn Nox dafür wieder in Ehrenfels willkommen ist, doch Vitius hält das für zu spät. Die Gruppe hofft, Nox und Inaros wiederzusehen. [13]
 
 ## Offene Fragen
 
-- Wo genau hält sich Nox auf, und was ist seit der Schlacht um Ehrenfels mit ihm geschehen? Die Gruppe weiß nur, dass er Richtung Nordwesten unterwegs ist ([12]).
-- Was ist der wahre Grund für die Anschuldigungen von Vitius? Die Gruppe kennt Nox als Verbündeten und ist misstrauisch gegenüber der Behauptung, er habe die Stadt verraten ([11]).
-- Was geschah zwischen Nox und Nerash nach der Schlacht? Nerash sagt, sie habe Nox töten wollen, doch Nox konnte entkommen – die genauen Umstände bleiben unklar ([9], [12]).
-- Welche Rolle spielte Nox im Zusammenspiel mit den alten Göttern? Vitius wirft ihm vor, mit ihnen zusammengearbeitet zu haben, doch die Gruppe kennt die Wahrheit nicht ([11]).
+- Was geschah in Session 2025-11-18, als Nox blutverschmiert und mit neutraler Miene angetroffen wurde? Die Belege geben keine Erklärung. [5]
+- Was ist Nox' „dritter Weg“ in Bezug auf die Götter? Er stellt die Götter in Frage, aber die Einzelheiten bleiben offen. [6]
+- Wo genau befindet sich Nox nach seiner Flucht? Vitius nennt nur „Nordwesten, Richtung End“; eine Bestätigung steht aus. [13]
+- Ob Nox nach der Schlacht um Ehrenfels tatsächlich zum Verräter wurde oder ob die Anschuldigungen der neuen Götter falsch sind, ist aus Sicht der Helden ungeklärt. [12]
 
-## Belege
+# Belege
 
-1. Session 2025-05-27 @ 00:28:07 (https://www.youtube.com/watch?v=bamCIB_CkR8)
-2. Session 2025-07-09 @ 01:23:10 (https://www.youtube.com/watch?v=XOnHa6CmDbo)
-3. Session 2025-07-22 @ 02:33:22 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
-4. Session 2025-09-23 @ 00:22:35 (https://www.youtube.com/watch?v=DGzfqVigS0g)
-5. Session 2025-11-18 @ 01:40:34 (https://www.youtube.com/watch?v=w__ahowb9p0)
-6. Session 2026-02-17 @ 00:46:30 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
-7. Session 2026-03-10 @ 00:13:00 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
-8. Session 2026-03-31 @ 00:46:14 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
-9. Session 2026-04-09 @ 01:08:39 (https://www.youtube.com/watch?v=vcGkejr8_nI)
-10. Session 2026-07-29 @ 00:20:54 (https://www.youtube.com/watch?v=umGyKLkefJI)
-11. Session 2026-08-04 @ 00:26:45 (https://www.youtube.com/watch?v=qRj2t3wQHfs)
-12. Session 2026-08-12 @ 00:53:49 (https://www.youtube.com/watch?v=piUv11DCwDw)
+[1] Session 2025-05-27 @ 01:58:09 (https://www.youtube.com/watch?v=bamCIB_CkR8)  
+[2] Session 2025-07-09 @ 01:23:10 (https://www.youtube.com/watch?v=XOnHa6CmDbo)  
+[3] Session 2025-07-22 @ 02:33:47 (https://www.youtube.com/watch?v=BRRCUgW4xRo)  
+[4] Session 2025-09-23 @ 00:22:03 (https://www.youtube.com/watch?v=DGzfqVigS0g)  
+[5] Session 2025-11-18 @ 01:40:34 (https://www.youtube.com/watch?v=w__ahowb9p0)  
+[6] Session 2026-02-17 @ 00:46:30 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)  
+[7] Session 2026-03-10 @ 01:07:16 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)  
+[8] Session 2026-03-24 @ 00:37:53 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)  
+[9] Session 2026-03-31 @ 00:46:14 (https://www.youtube.com/watch?v=Ee-K84wcxLM)  
+[10] Session 2026-04-09 @ 01:08:39 (https://www.youtube.com/watch?v=vcGkejr8_nI)  
+[11] Session 2026-07-29 @ 00:20:54 (https://www.youtube.com/watch?v=umGyKLkefJI)  
+[12] Session 2026-08-04 @ 00:26:45 (https://www.youtube.com/watch?v=qRj2t3wQHfs)  
+[13] Session 2026-08-12 @ 00:50:32 (https://www.youtube.com/watch?v=piUv11DCwDw)

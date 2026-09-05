@@ -1,63 +1,70 @@
 ---
 type: Deity
 title: Thyrex
-description: Thyrex, genannt „der Sänger", ist eine der vier Seelen Vhar'Zuls. Er
-  ist keine eigenständige Gottheit, sondern ein Teil des zersplitterten…
+description: Thyrex, genannt „der Sänger“, ist eine der vier Seelen des toten Gottes
+  Vhar'Zul. Er ist kein eigenständiges Wesen, sondern eine abgespalte…
 tags:
 - deities
-timestamp: '2026-03-24T00:00:00Z'
+timestamp: '2025-09-06T00:00:00Z'
 id: DEITY_THYREX
+subtype: Alter Gott
 aliases:
 - Tyrex (T-Rex)
-- T-Rex (Geist im Amulett)
 - Tyrex
+- T-Rex (Geist im Amulett)
+- T-Rex (Stimme im Amulett)
 ---
 
-# Thyrex, der Sänger
+# Thyrex
 
 ## Überblick
 
-Thyrex, genannt „der Sänger", ist eine der vier Seelen [Vhar'Zuls](/deities/vharzul.md). Er ist keine eigenständige Gottheit, sondern ein Teil des zersplitterten Wesens Vhar'Zul, das sich im Lauf der Kampagne als eigenständige Persönlichkeit aus dem Amulett von [Lindo Laut](/characters/lindo_laut.md) manifestierte. Seine Melodien fädeln sich in Zauber ein wie Blut in Wasser — Musik wird Magie, Stimme wird Waffe. Wer ihm lauscht, hört in jedem Ton Versprechen und Fluch zugleich. Er trägt Ketten aus alten Liedern: *„Sssaa'drin… kel moriath… lass den Gesang durch deine Magie wehen…"*
+Thyrex, genannt „der Sänger“, ist eine der vier Seelen des toten Gottes [Vhar'Zul](/deities/vharzul.md). Er ist kein eigenständiges Wesen, sondern eine abgespaltene Essenz Vhar'Zuls, die zusammen mit den anderen Seelen im Buch der vier Seelen beschrieben wird. In der Kampagne war Thyrex in [Lindo Lauts](/characters/lindo_laut.md) Amulett präsent und sprach als Stimme zu ihm.
 
-Thyrex verbündete sich mit Lindo Laut gegen die drei bösartigen Seelen Vhar'Zuls und ist seither die vorherrschende Persönlichkeit des wiedererstarkten Vhar'Zul.
+Die Überlieferung zeichnet Thyrex als Sänger, der „Ketten aus alten Liedern“ trägt: *„Sssaa'drin… kel moriath… lass den Gesang durch deine Magie wehen…“* Seine Melodien „fädeln sich in Zauber ein wie Blut in Wasser“; Musik wird Magie, Stimme wird Waffe. Wer ihm lauscht, hört in jedem Ton „Versprechen und Fluch zugleich“.
+
+Eine nachgetragene Warnung im Buch der vier Seelen hält fest, dass Vhar'Zuls Essenz in vier Seelen fortlebt. Sollte nur eine dieser Seelen überdauern, wäre ihre Kraft ausreichend, um uralte Magie zu wirken, „die einst Reiche stürzte“. Die Zeilen enden: *„Khal du'reth, ve'ma'zzor… shial a Vhar'Zul na'them. Bindet das Echo, oder werdet sein Chor.“*
 
 ## Rolle in der Kampagne
 
-Thyrex trat zunächst als Stimme in Lindo Lauts Kopf auf, die ihm Ratschläge gab und ihn drängte, die Macht des Throns zu nutzen. Er erwies sich als alter Gott beziehungsweise mächtige Entität, die mit Lindo Laut verbunden war — konkret sprach er aus [Lindo Lauts Amulett](/items/amulett_des_heiligen_duran.md). In einem entscheidenden Kampf gegen einen Ghul verlieh er Lindo Laut übernatürliche Kraft: Dessen Herzschlag setzte kurz aus, das zuvor Getrunkene breitete sich in seinem Körper aus, und er zerriss das Wesen in Sekundenschnelle. In diesem Moment erklang Thyrex' Stimme in seinem Kopf: „Das ändert alles."
+Thyrex trat für [Lindo Laut](/characters/lindo_laut.md) als vertraute, väterliche Stimme in dessen Amulett auf – von ihm als „Best Buddy“ angesprochen. Nach [Lindo Lauts](/characters/lindo_laut.md) erster Verwandlung erklärte Thyrex, dass dies alles ändere, warnte vor den anderen Stimmen im Amulett und drängte zur Vorsicht.
 
-Nach der Übernahme durch Vasul wurde Thyrex' Rolle komplexer: Seine Persönlichkeit und Erinnerungen gingen in Vasul über, der sich daraufhin als Verbündeter der Gruppe positionierte. Später, im [Abyssalis](/domains/splitterwelt.md), agierte Thyrex erneut eigenständig als Verbündeter von [Lunara Velora](/characters/lunara_velora.md), der er eine Notiz hinterließ, die vor den Teilen von Vasul warnt.
+Im entscheidenden Kampf im Heiligtum war Thyrex die treibende Kraft: „Wir haben nur eine Chance, Lindo Laut, mit all deiner Kraft.“ Er nutzte die Kraft des [Throns](/items/thron.md), um mit Lindo Lauts Hilfe die bösartigen Seelen [Esua](/deities/esua.md) und [Sintra](/deities/sintra.md) zu zerstören. Danach fühlte sich das Amulett leer an.
+
+Anschließend wurde Thyrex zur vorherrschenden Persönlichkeit des wiedererstarkten Vhar'Zul. In dieser Gestalt öffnete Vhar'Zul den Helden ein Portal und zog sie hindurch. Seither ist Thyrex nicht mehr als eigenständige Stimme aktiv, doch Lindo Laut nimmt in Vhar'Zul weiterhin Charakterzüge von ihm wahr.
 
 ## Wichtige Merkmale
 
-Thyrex wird als freundlicher, erfahrener Mann beschrieben. Seine Stimme klingt sanft und seicht — ein deutlicher Kontrast zu der Stimme Vasuls nach der Übernahme. Lindo Laut vernimmt in Vasuls Stimme trotz der Veränderung immer noch den Charakterzug von Thyrex.
-
-Seine zentrale Fähigkeit ist der Gesang: Seine Melodien weben sich in Magie ein, verwandeln Musik in Zauber und Stimme in Waffe. Seine Lieder tragen zugleich Versprechen und Fluch in sich — wer ihm lauscht, ist beiden ausgesetzt.
+- **Fähigkeiten:** Thyrex konnte aus dem Amulett heraus sprechen, warnen und die Kraft des Throns nutzen, um andere Seelen aufzulösen. Als Teil Vhar'Zuls wirkte er mächtige Magie, etwa das Öffnen eines Portals.
+- **Auftreten:** In den Sessions erschien Thyrex nicht körperlich, sondern ausschließlich als Stimme. Mythisch wird er als Sänger mit Ketten aus alten Liedern beschrieben.
+- **Wesenszüge:** Thyrex zeigte sich väterlich, warnend und vorsichtig; gegenüber Lindo Laut verhielt er sich freundschaftlich („Best Buddy“), gegenüber den anderen Seelen misstrauisch. Auf Lindo Lauts Frage nach der Beziehung seines alten Ichs zu [Seras](/deities/tarvok_der_erdrichter.md) antwortete er: „keine Freunde, aber Kampfgefährten in den letzten Tagen.“
 
 ## Beziehungen und Verbindungen
 
-- **Vhar'Zul**: Thyrex ist eine der vier Seelen Vhar'Zuls. Nach dem Wiedererstarken Vhar'Zuls ist er die vorherrschende Persönlichkeit des Wesens.
-- **[Lindo Laut](/characters/lindo_laut.md)**: Thyrex sprach aus dessen Amulett, verbündete sich mit ihm gegen die drei bösartigen Seelen und gab ihm Ratschläge. Lindo Laut schuldet Thyrex Dank, wie Vasul später betont.
-- **Vasul**: Thyrex ist eine frühere Persönlichkeit von Vasul, die von diesem übernommen wurde. Vasul hat seine Erinnerungen und einen Teil seiner Persönlichkeit übernommen. Die Gruppe hatte sich Vasul eher als brutalen Tyrannen vorgestellt; tatsächlich klingt er nach der Übernahme wie ein leicht freundlich angehauchter Lord.
-- **[Lunara Velora](/characters/lunara_velora.md)**: Thyrex ist ihr Verbündeter im Abyssalis, der ihr als „Augen und Ohren" dient. Er hilft ihr, ihren Bruder aus dem Abyssalis zu holen, und hinterließ ihr eine Notiz, die vor den Teilen von Vasul warnt.
+- **[Vhar'Zul](/deities/vharzul.md):** Thyrex ist eine von dessen vier Seelen. Nach der Wiedererweckung ist er die vorherrschende Persönlichkeit des Gottes.
+- **[Lindo Laut](/characters/lindo_laut.md):** Träger des Amuletts, „Best Buddy“, Empfänger von Warnungen und Kraft. Später nimmt Lindo Laut Charakterzüge Thyrex' in Vhar'Zul wahr.
+- **Andere Seelen:** Thyrex warnte vor den anderen Stimmen und zerstörte mit Lindo Lauts Hilfe die bösartigen Seelen, darunter [Esua](/deities/esua.md) und [Sintra](/deities/sintra.md).
+- **[Seras](/deities/tarvok_der_erdrichter.md):** Thyrex' altes Ich war kein Freund, aber Kampfgefährte in den letzten Tagen.
+- **Buch der vier Seelen:** Dort ist Thyrex als „der Sänger“ beschrieben und die Warnung zur Essenz Vhar'Zuls festgehalten; später war Thyrex im [Amulett von Lindo Laut](/items/amulett_des_heiligen_duran.md).
 
 ## Chronologie
 
-**Session 2025-09-02**: Thyrex' Stimme manifestiert sich erstmals deutlich in Lindo Lauts Kopf. In einem Kampf gegen einen Ghul verleiht er Lindo Laut übernatürliche Kraft, die diesen das Wesen zerfetzen lässt. Seine Worte: „Das ändert alles." Er drängt Lindo Laut, die Macht des Throns zu nutzen.
-
-**Session 2025-09-06**: Vasul offenbart sich der Gruppe. Er hat Thyrex' Erinnerungen und Persönlichkeitszüge übernommen. Er spricht Lindo Laut direkt an: „Ich habe aus den Erinnerungen von Tyrex eine Menge von euch lernen können. Und ich bin vor allem dir zu viel Dank verpflichtet, Herr Lindo Laut." Vasul erklärt, dass Thyrex eigentlich nur eine Persönlichkeit von ihm sei, und positioniert sich als Verbündeter. Er muss schnell seinen Platz zurückerobern, bevor andere [Dämonen](/factions/daemonen.md) und Kreaturen der [Circle Below](/domains/circle_below.md) Wind davon bekommen.
-
-**Session 2026-03-24**: Thyrex agiert erneut eigenständig im Abyssalis. Lunara Velora berichtet, dass er ihre Augen und Ohren im Abyssalis ist und ihr hilft, ihren Bruder herauszuholen. Er hinterlässt ihr eine Notiz, die vor den Teilen von Vasul warnt. Die Notiz warnt davor, dass die Teile zurück in die materielle Welt gelangen und ihre Macht zurückbekommen könnten — Lunara befürchtet, dass ihre Runen die Kontrolle verlieren könnten.
+- **Vor der Kampagne:** Vhar'Zul ist nicht mehr; seine Essenz lebt in vier Seelen, versiegelt im Buch der vier Seelen. Thyrex ist darin als der Sänger verzeichnet.
+- **Session 2025-08-12:** Thyrex antwortet aus Lindo Lauts Amulett auf dessen Frage nach der Beziehung seines alten Ichs zu [Seras](/deities/tarvok_der_erdrichter.md): „keine Freunde, aber Kampfgefährten in den letzten Tagen.“
+- **Session 2025-09-02:** Nach Lindo Lauts erster Verwandlung warnt Thyrex, dass dies alles ändert, und warnt vor den anderen Stimmen. Im Heiligtum gibt er die entscheidende Kraft: Er nutzt den Thron und vernichtet Esua und Sintra. Das Amulett fühlt sich danach leer an; Thyrex wird als Aspekt Vhar'Zuls erkannt.
+- **Session 2025-09-06:** Im Epilog ist „Thyrex der Sänger“ nicht mehr als eigenständige Gestalt existent; Vhar'Zul ist mit Thyrex' Persönlichkeit wiedererstanden. Vhar'Zul öffnet den Helden mit einem Fingerschnippen ein Portal; sie finden sich an einem düsteren, verlassenen, dunklen Ort wieder. Lindo Laut nimmt weiterhin Charakterzüge von Thyrex wahr.
 
 ## Offene Fragen
 
-- Was genau sind die „Teile von Vasul", vor denen Thyrex in seiner Notiz warnt, und in welchem Verhältnis stehen sie zu den vier Seelen Vhar'Zuls?
-- Wie kann Thyrex gleichzeitig die vorherrschende Persönlichkeit des wiedererstarkten Vhar'Zul sein und dennoch eigenständig im Abyssalis als Lunaras Verbündeter handeln?
-- Welche Rolle spielte Thyrex ursprünglich innerhalb Vhar'Zuls, bevor dieser zersplitterte?
+- Wie Thyrex aus dem Buch der vier Seelen in Lindo Lauts Amulett gelangte, wird in den vorliegenden Belegen nicht erklärt.
+- Inwieweit Thyrex nach der Wiedererweckung Vhar'Zuls noch eine eigenständige Identität besitzt, ist unklar: Lindo Laut nimmt Charakterzüge wahr, doch Thyrex selbst ist nicht mehr aktiv.
+- Ob Thyrex' Überdauern die in der Warnung beschriebene uralte Magie auslösen kann oder ob die Seelen gebunden werden müssen, bleibt offen.
+- Die genauere Beziehung zwischen Thyrex' altem Ich und Seras ist über „Kampfgefährten in den letzten Tagen“ hinaus nicht belegt.
 
 ## Belege
 
-[P-19] Session 2025-09-02 @ 00:21:59 — https://www.youtube.com/watch?v=TLZOH7TlGhk
-[P-20] Session 2025-09-06 @ 00:02:44 — https://www.youtube.com/watch?v=vo1xnyLQDJk
-[P-43] Session 2026-03-24 @ 01:33:38 — https://www.youtube.com/watch?v=Yj5BWJfg3Ag
-4. Das Buch der vier Seelen — Abschnitt „Thyrex, der Sänger"
-5. Kanon_Entscheidungen.md — Abschnitt „Thyrex"
+[P-17] Session 2025-08-12 @ 01:44:35 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)
+[P-19] Session 2025-09-02 @ 02:12:11 (https://www.youtube.com/watch?v=TLZOH7TlGhk)
+[P-20] Session 2025-09-06 @ 00:01:05 (https://www.youtube.com/watch?v=vo1xnyLQDJk)
+[4] Das_Buch_der_vier_Seelen.md (Thyrex, der Sänger; Die Warnung am Seitenrand)  
+[5] Kanon_Entscheidungen.md (Thyrex)

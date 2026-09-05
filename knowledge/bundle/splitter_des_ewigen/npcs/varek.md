@@ -1,15 +1,15 @@
 ---
 type: NPC
 title: Varek
-description: Ein Bewohner der Berge, der mit Niki und dem Hund Schnüffi lebt. Er begegnet
-  der Gruppe am Fluss und warnt sie vor Engpässen und Goblins we…
+description: Varek ist ein Bergbewohner, der zusammen mit Niki und dem Hund Schnuffi
+  in den Bergen lebt. Er stellt sich der Gruppe vor und erklärt, dass…
 tags:
 - npcs
 timestamp: '2026-08-18T00:00:00Z'
 id: NPC_VAREK
 ---
 
-Ein Bewohner der Berge, der mit [Niki](/npcs/niki.md) und dem Hund [Schnüffi](/npcs/schnueffi.md) lebt. Er begegnet der Gruppe am Fluss und warnt sie vor Engpässen und [Goblins](/npcs/pilz_goblins.md) weiter unten. Er kennt [Edmund](/npcs/sir_edmund.md) und [Vago](/npcs/vago.md).
+Varek ist ein Bergbewohner, der zusammen mit [Niki](/npcs/niki.md) und dem Hund Schnuffi in den Bergen lebt. Er stellt sich der Gruppe vor und erklärt, dass sie [Edmund](/npcs/sir_edmund.md) besuchen. Er wirkt respektvoll, aber kennt die Gruppe nicht. Varek warnt vor [Goblins](/npcs/pilz_goblins.md) in den Engpässen, die nicht gefährlich, nur auf Gold aus sind.
 
 # Belege
 

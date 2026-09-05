@@ -1,15 +1,15 @@
 ---
 type: NPC
 title: Tal'kar
-description: Tal'kar ist einer der ältesten Abenteurer in Ehrenfels. Er ist bei der
-  Diskussion vor der Kapelle anwesend, äußert sich aber nicht.
+description: Tal'kar wird als eine der Elite-Wachen oder ältesten Abenteurer von Ehrenfels
+  beschrieben. Er ist bei der Konfrontation vor der Kapelle dab…
 tags:
 - npcs
 timestamp: '2026-08-04T00:00:00Z'
 id: NPC_TAL_KAR
 ---
 
-Tal'kar ist einer der ältesten Abenteurer in [Ehrenfels](/locations/ehrenfels.md). Er ist bei der Diskussion vor der [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) anwesend, äußert sich aber nicht.
+Tal'kar wird als eine der Elite-Wachen oder ältesten Abenteurer von [Ehrenfels](/locations/ehrenfels.md) beschrieben. Er ist bei der [Konfrontation vor der Kapelle](/events/konfrontation_vor_der_kapelle.md) dabei, ergreift aber nicht das Wort.
 
 # Belege
 

@@ -1,17 +1,17 @@
 ---
 type: Item
 title: Spinnenei
-description: Das Spinnenei ist das Objekt, das die Gruppe aus dem Nest der Phasenspinne
-  holen muss. Es ist ein großes, grünes Ei, das in einer Kiste lie…
+description: Das Spinnenei ist ein großes, grünes und schweres Ei, das in einer leuchtenden
+  Kiste im Spinnennest liegt. Es ist das Ziel der zweiten Prüf…
 tags:
 - items
 timestamp: '2025-10-21T00:00:00Z'
 id: ITEM_SPINNENEI
-subtype: Artefakt
+subtype: Sonstiges
 ---
 
-Das Spinnenei ist das Objekt, das die Gruppe aus dem Nest der Phasenspinne holen muss. Es ist ein großes, grünes Ei, das in einer Kiste liegt. [Dodo](/characters/dodo.md) präsentiert es der Menge, und eine Wache nimmt es entgegen.
+Das Spinnenei ist ein großes, grünes und schweres Ei, das in einer leuchtenden Kiste im Spinnennest liegt. Es ist das Ziel der zweiten Prüfung. [Dodo](/characters/dodo.md) hebt es heraus, präsentiert es in der [Arena](/locations/arena.md), und eine Wache nimmt es entgegen.
 
 # Belege
 
-[P-27] Session 2025-10-21 @ 01:51:23 (https://www.youtube.com/watch?v=sxFhbtwoefA)
+[P-27] Session 2025-10-21 @ 01:51:33 (https://www.youtube.com/watch?v=sxFhbtwoefA)

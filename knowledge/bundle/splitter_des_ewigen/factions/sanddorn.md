@@ -1,7 +1,8 @@
 ---
 type: Faction
 title: Sanddorn
-description: Sanddorn ist eine Handelsorganisation, deren Chef Joar ist.
+description: Sanddorn ist eine Handelsgilde, deren Oberhaupt Joar ist. Die Gilde gilt
+  als reich und mächtig.
 tags:
 - factions
 timestamp: '2026-08-25T00:00:00Z'
@@ -9,12 +10,14 @@ id: FACTION_SANDDORN
 subtype: Gilde
 ---
 
-**Sanddorn** ist eine Handelsorganisation, deren Chef [Joar](/npcs/joar_vanur.md) ist.
+# Sanddorn
 
-## Führung
+Sanddorn ist eine Handelsgilde, deren Oberhaupt [Joar](/npcs/joar_vanur.md) ist. [Die Gilde](/factions/gilde_von_ehrenfels.md) gilt als reich und mächtig.
 
-An der Spitze von Sanddorn steht [Joar](/npcs/joar_vanur.md), der in den vorliegenden Belegen als Chef der Organisation genannt wird. Weitere Details zu Mitgliedern, interner Struktur oder den konkreten Geschäftsfeldern der Handelsorganisation sind bislang nicht bekannt.
+## Aktivitäten
+
+[Joar](/npcs/joar_vanur.md) reist im Auftrag von Sanddorn und versucht dabei, einen gestohlenen [Kristall](/items/gruener_kristall.md) zu verkaufen.
 
 # Belege
 
-1. Session 2026-08-25 @ 00:01:00 – https://www.youtube.com/watch?v=1Cjj3OVqiYA
+1. Session 2026-08-25 @ 00:01:42 — https://www.youtube.com/watch?v=1Cjj3OVqiYA

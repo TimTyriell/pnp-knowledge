@@ -1,216 +1,112 @@
 ---
 type: Character
 title: Lunara Velora
-description: Lunara Velora ist eine Hexe mit weißen Haaren, die zu zwei wilden Zöpfen
-  geflochten sind, und weiß-gelblichen Augen, die schimmern, "wie we…
+description: Lunara Velora ist eine junge Hexe, die zu Beginn der Aufzeichnungen neu
+  zur Gruppe um Rotunas stößt. Sie wird als schlankes Mädchen in dunk…
 tags:
 - characters
 timestamp: '2026-08-25T00:00:00Z'
 id: CHAR_LUNARA_VELORA
+status: disputed
 ---
-
-# Lunara Velora
 
 ## Überblick
 
-Lunara Velora ist eine Hexe mit weißen Haaren, die zu zwei wilden Zöpfen geflochten sind, und weiß-gelblichen Augen, die schimmern, "wie wenn Wasser im Mond spiegelt". Ihre Haut ist blass, aber nicht kränklich, sondern "eher wie so ein bisschen entfärbt". An ihren Händen und Armen trägt sie kleine Runen und Zeichen, die sie selbst nicht lesen kann. Sie ist halb Tidekin und besteht zur Hälfte aus Wasser, wodurch sie unter Wasser atmen kann. Sie stammt aus einem aufgelösten Hexenzirkel und suchte zunächst eine neue Gemeinschaft, bevor sie sich der Gruppe um [Rotunas](/characters/rotunas.md) anschloss.
-
-Im Laufe der Kampagne offenbart sich Lunara als eine Figur mit tiefer, komplexer Vergangenheit: Sie ist eine Dämonin aus der Veloria-Familie, deren Bruder [Liam](/npcs/liam_velora.md) im [Krieg](/characters/krieg.md) verloren ging und der von [Vorgul'tar](/deities/vorgul_tar.md) gefangen gehalten wird. Ihre Runen verbinden sie mit Abyssalis, und ein Großteil ihrer Reise dreht sich um den Versuch, ihren Bruder zu retten. Sie wird von der Gruppe als vollwertiges Mitglied akzeptiert und übernimmt zeitweise sogar eine Führungsrolle.
+Lunara Velora ist eine junge Hexe, die zu Beginn der Aufzeichnungen neu zur Gruppe um [Rotunas](/characters/rotunas.md) stößt. Sie wird als schlankes Mädchen in dunklem Stoff beschrieben, mit weißen, zu zwei wilden Zöpfen geflochtenen Haaren, weiß-gelblichen, im Mondlicht schimmernden Augen, blasser, entfärbt wirkender Haut und kleinen Runen an Händen und Armen. Ihre Abstammung wird in den Quellen uneinheitlich angegeben: teils als Halb-Tidekin-Halb-Hexe, teils als Elfe bzw. Elfenhexe, in Abyssalis tritt sie als Dämonin aus der Veloria-Familie auf (siehe „# Offene Konflikte“). Sie wuchs in einem Hexenzirkel namens „[Nachtwächterinnen](/factions/nachtwaechterinnen.md)“ auf, der sich Monate vor ihrem ersten Auftauchen auflöste, und sucht seither eine neue Familie. Lunara ist zunächst kühl, geheimnisvoll und unsicher, entwickelt sich aber im Verlauf der Kampagne zu einer zentralen, zeitweise führenden Figur.
 
 ## Rolle in der Kampagne
 
-Lunara stößt in der Taverne zur Gruppe, als diese sich auf ein Abenteuer vorbereitet. Sie ist zunächst eine Außenseiterin, die ihren Platz in der [Gilde](/factions/gilde_von_ehrenfels.md) sucht. Über die Sessions hinweg entwickelt sie sich zur treibenden Kraft hinter zentralen Entscheidungen: Sie öffnet das [Portal](/locations/portal.md) zu Abyssalis, führt die Gruppe in die [Splitterwelt](/domains/splitterwelt.md) und ist maßgeblich daran beteiligt, die Untoten zu vernichten. Sie wird von der Gruppe als vollwertiges Mitglied akzeptiert und übernimmt in Abyssalis eine Führungsposition, obwohl sie sich darin unsicher fühlt: "Sonst immer im Abyssalis war sie eher so ein bisschen einer von den Mitläufern und sie hat immer nur das gemacht, was andere gesagt haben. Und jetzt hat sie so eine Führungsposition, irgendwie die Leute respektieren sie."
+Lunara beginnt als neue Wundhexe, die ihren Platz in der Gruppe sucht. Schnell zeigt sie sich als vielseitige Magierin, die Gegner festsetzt, Schaden austeilt und Verbündete unterstützt. Beim Kampf gegen [Belorus](/npcs/belorus.md) aktiviert sie erstmals ihre Runen, verschiebt die Umgebung in die [Splitterwelt](/domains/splitterwelt.md) und hilft, die meisten Untoten zu zersplittern; [Dodo](/characters/dodo.md) nennt sie daraufhin die Retterin der Gruppe.
 
-Ihre persönliche Mission – die Rettung ihres Bruders Liam – wird zunehmend zum zentralen Antrieb der Gruppenhandlung. Sie ist es, die die Gruppe zur Narbe führt, um Liam zu retten, und sie ist es, die am Ende ihren Bruder durch das Portal mitnimmt.
+Im weiteren Verlauf wird sie zu einer treibenden Kraft: Sie sammelt Informationen über das Ende, plant die Reise nach Abyssalis, öffnet in [Ehrenfels](/locations/ehrenfels.md) ein Portal mit [Vasuls](/deities/vharzul.md) [Stab](/items/lindo_lauts_stab.md) und übernimmt in Abyssalis faktisch die Führung. Ihr persönliches Ziel, ihren im [Krieg](/characters/krieg.md) verlorenen Bruder [Liam](/npcs/liam_velora.md) zu finden, prägt die Kampagne und macht sie zeitweise „blind für die größeren Konsequenzen“. Nach Liams Rettung richtet sie ihren Fokus auf dessen Genesung und die Unterstützung der Gruppe.
 
 ## Wichtige Merkmale
 
-### Äußere Erscheinung
+### Fähigkeiten
 
-Lunara ist ein schlankes Mädchen in dunklen Klamotten mit weißen Haaren, die zu zwei wilden Zöpfen geflochten sind. Ihre Augen sind weiß-gelblich und schimmern wie Mondlicht auf Wasser. Ihre Haut ist blass und mit Runen und Zeichen an Händen und Armen bedeckt. Ihr Gesicht ist "ruhig und fast sogar gelassen", mit einem Lächeln, das "nicht beruhigend, sondern erleichternd" wirkt.
+Lunara bezieht ihre Energie vom Mond und verbindet Wasser- und Schattenmagie. Sie wirkt Wasserranken, Silberblitze, Eismagie, Nebel, Schattenfeuer (später auch rot gefärbt), Illusionen und kann sich unsichtbar machen. Ihre Schattenmagie war im Kampf gegen eine [Schattenkreatur](/npcs/schattenkreatur.md) wirkungslos, woraufhin sie auf Blitze auswich.
 
-Für den Aufenthalt in [Willauch](/locations/willauch.md) stylt sie sich um: Sie trägt eine einfache Lederrüstung und schminkt ihre Runen mit wasserfestem Make-up über, um nicht als Hexe erkannt zu werden. Sie lehnt es ab, ein Bild von sich aufhängen zu lassen, da sie misstrauisch gegenüber dem [Haus des Löwen](/locations/haus_des_loewen.md) ist.
+Ihre Runen verleihen ihr magische Fähigkeiten und schützen sie vor Einflüssen Abyssalis. Darunter befinden sich versteckte Kontrollrunen, die [Vasul](/deities/vharzul.md) einst eintrichterte und die sie zeitweise loszuwerden versucht. Nach Vasuls Tod verliert die [Kontrollrune](/items/kontrollrune.md) an Macht, was Lunara als befreiend empfindet.
 
-### Magische Fähigkeiten
+Mit ihrer Splitterwelt-Magie kann Lunara die Umgebung in die Splitterwelt verschieben, die reale Welt kurzfristig mit der Splitterwelt verbinden und [Untote](/factions/belorus_untotenarmee.md) zersplittern. Diese Fähigkeit ist mit hohem Einsatz von Hoffnungspunkten verbunden und verschaffte der Gruppe mehrfach entscheidende Vorteile.
 
-Lunara verfügt über ein breites Spektrum an magischen Fähigkeiten:
+Ihre Glamour-Fähigkeit „Knight's Glamour“ erlaubt es ihr, sich in eine Bergziege zu verwandeln; in der Bibliothek von [Willauch](/locations/willauch.md) setzte sie sie erfolglos als Überzeugungsversuch ein. Weitere belegte Fähigkeiten sind Blutkontrolle, mit der sie den [Richter](/npcs/richter_herr_der_seelenwacht.md) zwingt, einen [Ring](/items/ring.md) vom Altar zu ziehen, ein Kontrollzauber, der [Slix](/npcs/slix_vasul.md) niederknien lässt, „Voice of Dread“, der „Schleier des Abyssals“, sowie eine magische Feder, die sie nach dem Sturz in den Abgrund wiederbelebt. Außerdem versteht sie die Sprache der Dämonen und beherrscht eine Herzdruckmassage, obwohl sie sich selbst nur als mäßig medizinisch versiert einschätzt.
 
-- **Runenmagie**: Ihre Runen verbinden sie mit Abyssalis und können aktiviert werden, um die Splitterwelt zu öffnen und [Untote](/factions/belorus_untotenarmee.md) zu vernichten.
-- **[Schattenfeuer](/items/schattenfeuer.md)**: Eine ihrer bevorzugten Kampffähigkeiten, die sie gegen Ghule und andere Gegner einsetzt.
-- **Eisenketten**: Sie beschwört Ketten, um Gegner zu fesseln – etwa die Statue, die sie umwirft, oder die Hexe in Abyssalis.
-- **[Nebelschleier](/items/nebelschleier.md)**: Sie kann einen verwirrenden Nebel erzeugen, um einen Graben zu füllen oder die Gruppe zu verbergen.
-- **Hexenkralle**: Eine Fähigkeit, die sie im Kampf gegen [Belorus](/npcs/belorus.md) einsetzt.
-- **Wasserranken**: Sie kann untote Krieger mit Wasserranken fesseln.
-- **Verwandlung**: Sie kann sich in eine Bergziege verwandeln, um Klippen zu überwinden.
-- **Blitze**: Gegen die [Kreatur in der Splitterwelt](/npcs/kreatur_in_der_splitterwelt.md) stellt sie fest, dass Schattenmagie wirkungslos ist, und nutzt stattdessen Blitze.
-- **Voice of Dread**: Einen Zauber, den sie einsetzt, um Wesen zu verwirren.
-- **Splitter-Spruch**: Sie kann Welten verbinden, um einen Dämon abzulenken.
-- **Eis-Magie**: Sie verwandelt Steine in Eis und friert einen [Fallout-Frosch](/npcs/fallout_frosch.md) ein.
+### Auftreten
+
+In [Willauch](/locations/willauch.md) legt Lunara ihre Gewänder ab, trägt stattdessen einfache Lederrüstung und überschminkt ihre Runen wasserfest, um nicht als Hexe erkannt zu werden. In Abyssalis gibt sie sich als Anhängerin [Vorgul'tars](/deities/vorgul_tar.md) aus; gegenüber leidenden Seelen zeigt sie sich kühl und entschlossen.
 
 ### Wesenszüge
 
-Lunara wird als kühl, geheimnisvoll und tierlieb beschrieben. Sie ist zunächst zurückhaltend und beobachtet andere aufmerksam, bevor sie Vertrauen fasst. Im [Kampf gegen das Seelenkalb](/events/kampf_gegen_das_seelenkalb.md) ist sie zunächst wie erstarrt, zeigt aber später Hass auf die Kreatur. Sie zeigt medizinisches Geschick, als sie einen erstickenden Soldaten mit Herzdruckmassage wiederbelebt.
-
-Sie hat eine starke Bindung zu [Lindo Laut](/characters/lindo_laut.md), die sich zeigt, als sie emotional aufgewühlt ist, als er sich verwandelt, und sie schreit den Dämon an, dass sie ihm nicht dienen wird. Sie nutzt ihre Magie, um Lindo Laut zurückzuholen.
-
-Unter dem Einfluss des Neumonds ist sie emotional aufgeladen und kann ihre Gedanken nicht klar halten. Sie verliert die Kontrolle über einen Zauber, der alle in einer Taverne in Trance versetzt.
-
-Nach dem Tod von [Vasul](/deities/vharzul.md) fühlt sie sich "sehr leer. Also nicht so ein gebrochenes Leer, sondern eher so ein ruhiges". Sie wird ruhiger und weicher, und ein Schleier wird von ihr abgeworfen, da die [Kontrollrune](/items/kontrollrune.md), die sie hatte, nicht mehr so viel Macht über sie hat. Sie ist sich der Opfer bewusst, die sie gebracht hat: "Es sind Leute gestorben, weil sie ihren Bruder gerettet hat. Und da ist dann natürlich auch die Frage, war es das wert? Aber ja, tatsächlich, die beängstigende Antwort ist halt einfach ja, weil der Bruder für sie halt alles war."
+Lunara ist kühl, geheimnisvoll und tierlieb. Anfangs unsicher, sucht sie Anschluss und lässt sich von der Gruppe akzeptieren. Sie zeigt tiefe emotionale Bindung an ihren Bruder Liam, intensive Loyalität zu [Lindo Laut](/characters/lindo_laut.md) und eine starke Schutzbereitschaft gegenüber Verbündeten. Gleichzeitig ist sie von Schuld wegen der Toten [Hope und Fia](/npcs/hope_und_fia.md) geplagt, in Kämpfen wütend und entschlossen, und sie hadert mit ihrer eigenen Macht, wenn Zauber außer Kontrolle geraten.
 
 ## Beziehungen und Verbindungen
 
-### Liam (Bruder)
-
-Liam ist Lunaras Bruder, der im Krieg verloren ging und von Vorgul'tar gefangen gehalten wird. Sie glaubt, seine Stimme im Abyssalis zu hören, und ihre gesamte Reise ist von dem Versuch geprägt, ihn zu retten. In einer Vision sagt er ihr: "Lunara, du darfst jetzt nicht sterben." Am Ende erkennt sie in Ulvanara ihren Bruder und nimmt ihn mit durch das Portal. Nach seiner Rettung bleibt sie bei ihm, als er nicht zum Tempel darf, und zeigt sich fürsorglich. Sie hat ein emotionales Gespräch mit ihm, in dem er sie umarmt und sagt: "Aber egal was kommt, wir stehen das durch."
-
-### Vasul
-
-Vasul ist eine Bezugsperson im Abyssalis, die Lunara Schutzrunen und einen Stein zur Rückkehr gibt. Sie fühlt sich ihm verpflichtet, da er ihr geholfen hat, und ist bereit, ihn zu unterstützen, solange sie ihren Bruder zurückbekommt. Sie stellt kritische Fragen zu seinem Plan. Sein Tod trifft sie schwer: "Sie hat festgestellt, dass Vasul, also sagen wir mal, ihre Bezugsperson im Abyssalis gerade komplett vernichtet worden ist. Beziehungsweise auch der Mensch oder das Wesen, das ihr hätte helfen können, Liam zu finden." Nach seinem Tod fühlt sie sich freier, da die Kontrollrune, die sie hatte, nicht mehr so viel Macht über sie hat.
-
-### Lindo Laut
-
-Lindo Laut ist ein enger Verbündeter und Freund. Er feuerte sie im Kampf an und rief ihr einen Rallye-Point zu: "Ich weiß nicht, was sie genau macht, aber ich bin in letzter Zeit Fan von Lunara und feuer sie an." Sie hat von ihm einen Samen erhalten, der einen Baum wachsen lassen kann, der zu einem Portal nach [Casa de Cookie](/locations/casa_del_cookie.md) führt. Als er sich in einen Dämon verwandelt, ist sie emotional aufgewühlt und schreit den Dämon an, dass sie ihm nicht dienen wird. Sie nutzt ihre Magie, um Lindo Laut zurückzuholen.
-
-### Die Gruppe
-
-Lunara wird von der Gruppe als vollwertiges Mitglied akzeptiert. Sie verteilt selbstgebastelte Fallschutz-Knochen an [Dodo](/characters/dodo.md) und [Nairuk](/npcs/nyruk.md). Sie überzeugt Dodo und [Esterossa](/characters/esterossa.md), der Kreatur zu vertrauen und zur Narbe zu gehen. Sie wird als "Social-Person" der Gruppe bezeichnet, die andere mustert und beobachtet.
-
-### Gunther
-
-[Gunther](/characters/gunther.md) ist ein neues Mitglied, das Lunara zunächst misstrauisch gegenübersteht, sich aber von seinen Worten überzeugen lässt und ihn in die Gruppe einlädt. Sie hat ein emotionales Gespräch mit ihm über Familie.
-
-### Nox
-
-Lunara fragt Nox nach der Bedeutung der Kontrollrunen und schlägt einen Deal vor: den Trank holen, wenn Nox wieder in die Gilde aufgenommen wird.
+- [Rotunas](/characters/rotunas.md): Lunara sucht anfangs Anschluss bei ihm und seinen Freunden; im Kampf gegen Belorus hilft er ihr, die Untoten zu zersplittern. Später bittet sie ihn, ein Portal nach [Ehrenfels](/locations/ehrenfels.md) zu öffnen.
+- [Dodo](/characters/dodo.md): Er würdigt sie als Retterin der Gruppe, fängt Angriffe für sie ab und wird von ihr überzeugt, dem Diener [Huludans](/deities/huludan.md) zu vertrauen.
+- [Esterossa](/characters/esterossa.md): Kamerad und Heiler; Lunara bezieht ihn in Entscheidungen ein und spricht ihn zusammen mit Dodo an, als es um [Huludan](/deities/huludan.md) geht.
+- [Lindo Laut](/characters/lindo_laut.md): Enge emotionale Bindung; Lunara schützt ihn vor Slix, bricht dessen Einfluss und zwingt Slix später nieder. Sie will in Abyssalis auch ihm helfen.
+- [Nyrella](/characters/nyrella.md): Lunara macht sie und Lindo Laut körperlos, damit sie ein Artefakt holen können.
+- [Vasul](/deities/vharzul.md): Ehemaliger Meister Lunars; er trichterte ihr Runen und einen verborgenen Zauberspruch ein und gab ihr nach eigener Aussage eine zweite Chance. Nach seinem Tod fühlt Lunara sich freier.
+- [Liam](/npcs/liam_velora.md) / Ulnavar: Ihr jüngerer Bruder, im Krieg verloren geglaubt, in Abyssalis wiedergefunden. Er ist ihre größte Angst und Stärke zugleich; nach seiner Rettung bleibt sie an seiner Seite.
+- [Gunther](/characters/gunther.md): Neuer Verbündeter, dem Lunara zunächst misstraut; später verwandelt er sich in sie und vertritt sie.
+- [Voras](/npcs/voras.md): Rettete ihr vor zwölf Jahren das Leben; zum Dank gab sie ihm ein Buch, das später Unheil brachte.
+- [Tyrael](/npcs/tyrael.md): Kontakt in Abyssalis, von dem sie eine Notiz erhält, die vor den Vasul-Teilen warnt.
+- [Slix](/npcs/slix_vasul.md): Besetzt Lindo Laut; Lunara vertreibt ihn und zwingt ihn nieder.
+- [Nerash](/deities/nerash.md): Lunara zweifelt an seinen Absichten.
+- [Relina](/npcs/relina.md): Verhandelt mit Lunara über sicheres Geleit nach Seelenwacht.
+- Hope und Fia: Personen, deren Tod Lunara ihren eigenen Entscheidungen zuschreibt; sie trauert um sie und fühlt sich schuldig.
 
 ## Chronologie
 
-### Ankunft in der Gruppe (Session 2025-11-18)
+**Frühe Abenteuer (Session 2025-11-18 bis 2026-03-10):** Lunara tritt im Winter 2025 in einer Taverne auf, schließt sich [Rotunas](/characters/rotunas.md) an, trinkt den starken [Kornklatscher](/items/kornklatscher.md) und übernachtet im Bauernhaus; nachts zeigt sie eine besondere Affinität zu [Perry](/npcs/perry_das_schnabeltier.md), dem Schnabeltier. Als Wundhexe wehrt sie feindliche Pfeile mit Hexenmagie ab, beschwört Ketten, um eine Statue zu Fall zu bringen, und führt eine Herzdruckmassage durch. Beim Anblick des Seelkalbs reagiert sie mit unerklärlich intensivem Hass und erstarrt im Schnee.
 
-Lunara betritt eine Taverne, in der sich die Gruppe versammelt hat. Sie ist eine Hexe mit weißen Haaren und Runen auf der Haut, kommt aus einem aufgelösten Hexenzirkel und sucht eine neue Gemeinschaft. Sie ist halb Tidekin und kann unter Wasser atmen. Sie trinkt [Kornklatscher](/items/kornklatscher.md), zeigt sich als vertrauenswürdig und schließt sich der Gruppe an. Sie übernachtet in ihrem Quartier.
+In den folgenden Sitzungen setzt sie Wasserranken und Silberblitze ein. Beim Kampf gegen Belorus versucht sie kurz zu verhandeln, wird mental angegriffen, erschafft einen verwirrenden Nebel und aktiviert schließlich ihre Runen, um die Umgebung in die Splitterwelt zu verschieben; mit Rotunas’ Hilfe zersplittern sie die meisten Untoten, bis Belorus kapituliert. Danach schützt sie Lindo Laut vor Slix und bricht dessen Einfluss über ihn. In [Crowfin Manor](/locations/crowfin_manor.md) offenbart sie [Nox](/npcs/nox.md) ihre Runen, erklärt, dass sie Vasul brauche, um jemanden aus Abyssalis zurückzuholen, und verbindet im Kampf gegen [Slix](/npcs/slix_vasul.md) die Splitterwelt mit der realen Welt, sodass Rotunas Slix treffen kann; danach löst sie die Verbindung wieder.
 
-### Erste Abenteuer (Session 2026-01-06)
+In Session 2026-02-24 verteilt sie runenverzierte Knochen gegen Fallschaden, verbrennt mit Schattenfeuer drei Silberbiester, erlebt beim Anblick lebender Kristalle Flashbacks an Abyssalis, macht Lindo Laut und Nyrella körperlos und legt eine Illusion über den Zugang zur tieferen Ebene. In [Willauch](/locations/willauch.md) tarnt sie sich, sucht in der Bibliothek nach Werken über Bindungs-, Blut- und Schwurmagie, entdeckt im Buch „[Flüche und das Schweigen](/items/flueche_und_das_schweigen.md)“ einen Fluch und versucht vergeblich, eine Seite über rote Magie zu entziffern. In Session 2026-03-10 erkennt sie in Voras ihren Lebensretter, entschuldigt sich und will Informationen über ein lebendes Erz preisgeben, wird aber gestoppt; im Kampf gegen eine Schattenkreatur weicht sie auf Blitze aus und bricht am Tor von Abyssalis zusammen.
 
-Lunara, eine Wundhexe, ist neu in der Gruppe und sucht ihren Platz. Sie ist tierlieb und kühl. Sie versucht, eine Statue mit ihrem Hexenzirkel zu untersuchen und Kontakt mit ihrer heimlichen Energie aufzunehmen. Sie beschwört Ketten, um die Statue umzuwerfen, was sie zerstört. Sie zeigt medizinisches Geschick, als sie einen erstickenden Soldaten mit Herzdruckmassage wiederbelebt. Im Kampf gegen das Seelenkalb ist sie zunächst wie erstarrt, zeigt aber später Hass auf die Kreatur.
+**Reise nach Abyssalis (Session 2026-03-18 bis 2026-04-14):** Während des Neumonds sammelt sie Informationen über das Ende und verliert in der [Freibeuterkneipe](/locations/freibeuterkneipe.md) die Kontrolle über einen Zauber, der kurzzeitig die Gedanken aller Anwesenden löscht. In Session 2026-03-24 erzählt sie erstmals von Liam, der im Krieg verloren und in Abyssalis wieder gehört wurde, sowie von ihrem Kontakt Tyrael, dessen Notiz vor den Vasul-Teilen warnt. Ihr Plan: mit einem Stab als Energiequelle nach Abyssalis reisen, Tyrael treffen, Liam retten und Lindo Laut helfen. In [Ehrenfels](/locations/ehrenfels.md) öffnet sie mit dem Stab und dem Wort „Öffne“ ein Portal. In Abyssalis versteht sie die Dämonensprache, gibt sich als Anhängerin Vorgul'tars aus und wird in der Festung [Boragdil](/locations/boragdil.md) abgewiesen. In Session 2026-04-14 agiert sie erstmals als Anführerin, beansprucht eine Kinderseele als Beute, schreckt den Dämon [Harald](/npcs/freibeuter_harald.md) ab, setzt den Schleier des Abyssals ein, fesselt eine Hexe mit Eisenketten, weigert sich, Lindo Laut zu bestrafen, und verhandelt mit Relina über sicheres Geleit nach Seelenwacht.
 
-### Im Lager (Session 2026-01-13)
+**Weg zu Liam (Session 2026-05-06 bis 2026-07-21):** Lunara mustert die neuen Verbündeten schweigend; sie war zuvor bei Vasul und hatte dadurch volle Hoffnungspunkte. Durch einen Ring in Trance gefallen, zwingt sie den Richter mit Blutkontrolle, den Ring vom Altar zu ziehen, und erhält eine Vision: Liam ist in den [Narben](/locations/narben.md), und Vorgul'tar ist dort gefangen. Sie will den Ring zerstören, wird aber von [Dante](/characters/dante.md) zurückgehalten; sie überzeugt Dodo und Esterossa, dem Diener Huludans zu vertrauen. In der Kristallhöhle empfängt sie eine Vision von einem Kristallfeld, einer mehrköpfigen Kreatur und der Stimme ihres Bruders; im Kampf zersetzt sie einen Seraphen und stürzt mit ihm in die Tiefe. Nach dem Sturz wird sie durch ihre magische Feder wiederbelebt, sieht Liam in einer Vision, die sagt, sie dürfe nicht sterben, tötet den bewusstlosen Seraphen mit ihrem [Dolch](/items/dolch.md) und schwört, dass [Volgotha](/deities/volgotha.md) nicht ihr Ende sein wird.
 
-Lunara ist neu im Lager und wird von einem [Kobold](/npcs/kobold.md) freundlich begrüßt. Sie hat von Lindo Laut einen Samen erhalten, der einen Baum wachsen lassen kann, der zu einem Portal nach Casa de [Cookie](/characters/cookie.md) führt. Im Kampf versucht sie, den untoten Krieger mit Wasserranken zu fesseln, was gelingt und ihm Stress zufügt. Sie ist verwirrt über die Ereignisse und fragt nach Belorus' Verbleib.
+Nach dem Rückzug will sie vorsichtiger vorgehen; sie glaubt, Vasul halte sein Versprechen, Liam zurückzubringen. In der Konfrontation mit Vorgul'tar hält sie dem Seelenschrei stand, kämpft mit großer Wut, zerteilt die Flammenwand und verbrennt die Seelenhorde mit rot gefärbtem Schattenfeuer. Als sie erkennt, dass Esterossa nicht mehr er selbst ist, wendet sie sich an Ulnavar, nennt ihn Liam und erinnert an ihre Kindheit: „Liam, ich bin’s, deine Schwester Luna.“ Als Ulnavar „Luna“ sagt, bricht sie zusammen. Am Ende trägt sie den ohnmächtigen Liam durch das Portal nach [Breska](/locations/breska.md).
 
-### Kampf gegen Belorus (Session 2026-01-20)
-
-Lunara, eine Schatten-Mondhexe, spielt eine entscheidende Rolle. Sie versucht zunächst, mit Belorus zu verhandeln, wird aber von ihm ignoriert. Sie sagt zu ihm: "Herr, mein Name ist Lunara. Ich habe einige Fragen. Ich meine, du stehst hier mit deiner Armee vor unseren Mauern und wie du schon sagtest, hast du nicht angegriffen. Ich glaube aber, dass du unseren Lindo Laut nicht, also du hältst, ach, jetzt muss ich kutzen. Kein Stress. Lindo Laut ist nicht das, wofür du ihn hältst und sein Tod wird..." Im Kampf nutzt sie ihre Fähigkeiten, um den Graben mit einem verwirrenden Nebel zu füllen und später eine Hexenkralle auf Belorus zu legen. Ihre größte Leistung ist die Aktivierung ihrer Runen, um die Splitterwelt zu öffnen und die Untoten zu vernichten. Sie zeigt sich als mächtige und mutige Kämpferin, die von der Gruppe als vollwertiges Mitglied akzeptiert wird.
-
-### Emotionale Momente (Session 2026-02-11)
-
-Lunara versucht, die Feuchtigkeit aus einer Pflanze zu ziehen, scheitert aber. Sie ist emotional aufgewühlt, als Lindo Laut sich verwandelt, und schreit den Dämon an, dass sie ihm nicht dienen wird. Sie nutzt ihre Magie, um Lindo Laut zurückzuholen, und zeigt dabei eine starke Bindung zu ihm.
-
-### Abyssalis-Verbindung (Session 2026-02-17)
-
-Lunara spürt den Schutzzauber am Tor und erkennt, dass er Unbefugte fernhält. Sie ist besorgt über die Kontrollrunen und fragt Nox nach deren Bedeutung. Im Kampf gegen den Dämon verbindet sie die Welten mit einem Splitter-Spruch, was den Dämon ablenkt und der Gruppe Zeit verschafft. Sie zeigt eine persönliche Verbindung zu Vasul, da sie ihn braucht, um jemanden aus Abyssalis zurückzuholen.
-
-### Silbergruft (Session 2026-02-24)
-
-Lunara zeigt sich vorbereitet: Sie hat Fallschutz-Knochen gebastelt und verteilt sie an Dodo und Nairuk. Sie nutzt ihre Magie (Schattenfeuer, Eisenketten, Illusionen) im Kampf und zur Sicherung des Rückwegs. Sie hat Flashbacks zu Abyssalis, als sie die leuchtenden Kristalle sieht, und erkennt, dass diese eine eigene Lebensform sind. Sie ist entschlossen, die Kristalle in Ruhe zu lassen und die Informationen über das Silbervorkommen geheim zu halten.
-
-### Willauch (Session 2026-03-03)
-
-Lunara hat sich für Willauch umgestylt: Sie trägt eine einfache Lederrüstung und hat ihre Runen mit Make-up überschminkt, um nicht als Hexe erkannt zu werden. Sie ist misstrauisch gegenüber dem Haus des Löwen und lehnt es ab, ein Bild von sich aufhängen zu lassen. In der Bibliothek sucht sie nach Büchern über Blut- und Schwurmagie, findet aber ein Buch voller Flüche, das sie begeistert. Sie versucht, eine Schrift über rote Magie abzuzeichnen, was der Bibliothekar ablehnt. Sie zeigt sich neugierig auf die Reaktion von Lindo Laut auf das Dokument.
-
-### Abyssalis-Tor (Session 2026-03-10)
-
-Lunara erkennt den magischen Nebel und kämpft mit Schattenfeuer gegen die Ghule. Sie hat eine emotionale Reaktion, als sie das Tor zu Abyssalis berührt und die Stimme ihres Bruders hört. Sie erfährt, dass sie [Voras](/npcs/voras.md) vor zwölf Jahren ein Buch gegeben hat, das zu den aktuellen Ereignissen führte. Im [Kampf gegen die Kreatur in der Splitterwelt](/events/kampf_gegen_die_kreatur_in_der_splitterwelt.md) stellt sie fest, dass Schattenmagie wirkungslos ist, und nutzt stattdessen Blitze. Sie zeigt Verletzlichkeit und wird von [Brim](/characters/brim.md) getröstet.
-
-### Neumond (Session 2026-03-18)
-
-Lunara steht unter dem Einfluss des Neumonds und ist emotional aufgewühlt. Sie hat Informationen über das Ende gesammelt und führt die Gruppe zu den Orks. Im Kampf gegen die Soldaten verliert sie die Kontrolle über ihren Zauber, der alle in der Taverne in Trance versetzt. Sie vernichtet die [Nachricht von HAL](/events/nachricht_von_hal.md) und zeigt sich entschlossen, den Schuldigen zu finden.
-
-### Plan zur Rettung (Session 2026-03-24)
-
-Lunara offenbart ihren Plan, mit einem Stab ins Abyssalis zu reisen, um [Tyrex](/deities/thyrex.md) zu treffen und die Teile von Vasul zu bekämpfen. Sie zeigt ein Tattoo einer Feder, das sie schützen soll. Sie ist die treibende Kraft hinter der Entscheidung der Gruppe.
-
-### Portal zu Abyssalis (Session 2026-03-31)
-
-Lunara öffnet das Portal zu Abyssalis mit dem [Stab von Lindo Laut](/items/lindo_lauts_stab.md). Sie zeigt Entschlossenheit, ihren Bruder zu retten, und übernimmt die Führung in [Boragdil](/locations/boragdil.md), indem sie sich als Anhängerin von Vorgul'tar ausgibt. Sie erhält von Vasul Schutzrunen und einen Stein zur Rückkehr. Ihre Emotionen schwanken zwischen Hoffnung und Furcht, aber sie bleibt gefasst.
-
-### Führung in Abyssalis (Session 2026-04-14)
-
-Lunara führt die Gruppe in Abyssalis. Sie fühlt sich in ihrer Führungsrolle unsicher, ist aber entschlossen, ihre Mission zu erfüllen. Sie zeigt wenig Empathie für andere Leben und beansprucht die [Kinderseele](/npcs/kinderseele.md) als ihre Beute. Im [Kampf gegen die Hexe](/events/kampf_gegen_die_hexe.md) setzt sie ihre Fähigkeiten ein, darunter den Schleier des Abyssalis und Eisenketten, um die Hexe zu fesseln. Sie verhandelt geschickt mit der Hexe und dem Orakel und sichert der Gruppe einen sicheren Geleit nach Seelenwacht.
-
-### Villa-Erkundung (Session 2026-05-06)
-
-Lunara ist Teil der Erkundung der [Villa](/locations/villau.md) und beobachtet die anderen aufmerksam. Sie mustert Kip neugierig, sagt aber zunächst nichts.
-
-### Ring-Visionen (Session 2026-05-13)
-
-Lunara berührt den Ring und erhält Visionen, die sie mit Vasul verbinden. Sie kontrolliert den [Richter](/npcs/richter_herr_der_seelenwacht.md), um den Ring zu entfernen, und zerstört ihn später mit einem [Kristall](/items/gruener_kristall.md). Sie überzeugt Dodo und Esterossa, der Kreatur zu vertrauen und zur Narbe zu gehen, um ihren Bruder Liam zu retten. Sie spürt eine Verbindung zu den Kristallen des [Seraphen](/factions/seraphen.md) und glaubt an eine größere Mission.
-
-### Sturz in die Tiefe (Session 2026-05-19)
-
-Lunara nutzt ihre Fähigkeiten, um sich in eine Bergziege zu verwandeln und Schattenfeuer zu wirken. Sie zeigt sich mutig im Kampf, wird aber am Ende der Session von einem Seraphen angegriffen und stürzt in die Tiefe. Ihr Schicksal bleibt ungewiss.
-
-### Wiederbelebung (Session 2026-06-10)
-
-Lunara stürzt in den Abgrund und wird durch die silberne Feder wiederbelebt. Sie sieht eine Vision von Liam, der ihr sagt, sie solle ihn finden. Sie tötet den Seraphen mit ihrer Klinge und spürt, dass die Feder von [Leandras](/npcs/lendras.md) stammt. Sie nutzt Schattenfeuer und ihren Nebelschleier im Kampf. Sie ist nervös und angespannt, als sie sich dem Tempel nähert.
-
-### Vorbereitung (Session 2026-06-16)
-
-Lunara ist entschlossen, ihren Bruder Liam zu retten, und fühlt sich Vasul verpflichtet, da er ihr geholfen hat. Sie ist misstrauisch gegenüber [Tatrick](/npcs/tatrick.md), aber erleichtert, als Vasul erscheint. Sie stellt kritische Fragen zu Vasuls Plan und ist bereit, ihn zu unterstützen, solange sie ihren Bruder zurückbekommt. Sie nutzt ihren Schleier, um die Gruppe zu verbergen, und zeigt taktisches Denken.
-
-### Vasuls Tod (Session 2026-07-21)
-
-Lunara ist fassungslos über Vasuls Tod und die Verwandlung Esterossas. Sie widersteht dem Schrei der Seelen, durchbricht die Feuerwand und kämpft gegen die Wächter. Sie erkennt in Ulvanara ihren Bruder Liam und versucht, ihn zu erreichen. Sie nimmt ihn am Ende mit durch das Portal.
-
-### Nach der Rettung (Session 2026-07-29)
-
-Lunara fühlt sich nach dem Tod von Vasul freier und ruhiger, ist aber belastet von den Opfern, die sie gebracht hat. Sie ist misstrauisch gegenüber Gunther, lässt sich aber von seinen Worten überzeugen und lädt ihn in die Gruppe ein. Sie beschließt, bei ihrem Bruder Liam zu bleiben, als dieser nicht zum Tempel darf, und zeigt sich fürsorglich. Sie trinkt zu viel Wein und wird emotional.
-
-### Gespräch mit Liam (Session 2026-08-04)
-
-Lunara spricht mit ihrem Bruder Liam. Sie ist emotional, aber auch misstrauisch. Sie empfängt den [Segen der neuen Götter](/events/segen_der_neuen_goetter.md) und erhält einen automatischen Krit.
-
-### Nerash-Verhandlung (Session 2026-08-12)
-
-Lunara untersucht [Nerash](/deities/nerash.md) mit Magie und erkennt ihre Schwäche. Sie schlägt einen Deal vor: den Trank holen, wenn Nox wieder in die Gilde aufgenommen wird. Sie hat PTSD-Erinnerungen an [Salzbach](/locations/salzbach.md), ihre Heimat. Sie hat ein emotionales Gespräch mit Gunther über Familie.
-
-### Bergziegen-Abenteuer (Session 2026-08-18)
-
-Lunara nutzt ihre Magie, um die Steine in Eis zu verwandeln und den Fallout-Frosch einzufrieren. Sie wirkt 'Voice of Dread', um das Wesen zu verwirren. Sie verwandelt sich in eine Bergziege, um die Klippen zu überwinden. Sie ist neugierig auf die alte Farm und fragt [Vago](/npcs/vago.md) danach.
-
-### Das Biest (Session 2026-08-25)
-
-Lunara spürt die unheimliche Präsenz und erkennt die Verbindung zwischen dem Biest und dem Schamanen. Sie unterstützt Liam beim Kappen der Verbindung und verhext das Biest.
+**Nach der Rettung (Session 2026-07-29 bis 2026-08-25):** Nach Vasuls Tod und dem Verlust der Kontrollrune fühlt Lunara sich ruhiger und freier, aber von Schuld wegen Hope und Fia geplagt. In Ehrenfels misstraut sie dem neuen Gunther, akzeptiert ihn aber nach Lindos Urteil. Sie bleibt bei Liam, der prophetisch von einer „kleinen Flamme“ spricht und sie „Luni“ nennt; sie beschließt, sich um ihn zu kümmern, und lässt sich von Gunther vertreten. In Session 2026-08-04 besucht sie Liam, nimmt am Gottesdienst teil, erhält den Segen und schützt Liam vor der Priesterin; sie stimmt zu, dass Liam die Gruppe begleitet. In Session 2026-08-12 fordert sie Wahrheit, bietet [Vitius](/npcs/vitius.md) einen Deal an (Trank für kranke Seraphen gegen Nox’ Rückkehr nach Ehrenfels), reagiert emotional auf den Ortsnamen [Salzbach](/locations/salzbach.md), öffnet sich Gunther über ihre Familie und zweifelt an [Nerashs](/deities/nerash.md) Absichten. Auf dem Weg zur alten Farm friert sie ein Froschwesen ein, nutzt „Voice of Dread“, verwandelt sich in eine Bergziege, um über eine Schlucht zu springen, liest das Schild „Zur alten Farm“ und interessiert sich für die Geschichte von [Zebros](/factions/koenigreich_zebros.md); mit Dodo versteckt sie sich vor einer Lawine. In Session 2026-08-25 spürt sie gemeinsam mit Liam die magische Störung, wehrt einen Gnoll ab, verhext den Schatten-Gnoll, entdeckt die Verbindung zum Schamanen und hilft, diese zu kappen.
 
 ## Offene Fragen
 
-- Was geschah mit Liam nach seiner Rettung? Er darf nicht zum Tempel, und Lunara bleibt bei ihm – seine weitere Entwicklung und ob er sich vollständig erholt, bleibt offen.
-- Die silberne Feder, die Lunara wiederbelebt hat, stammt von Leandras – welche Bedeutung hat diese Verbindung und welche Rolle spielt Leandras weiterhin?
-- Lunara hat Voras vor zwölf Jahren ein Buch gegeben, das zu den aktuellen Ereignissen führte – die genauen Umstände und Inhalte dieses Buches bleiben unklar.
-- Die Kontrollrunen, die Lunara mit Vasul verbanden – welche weiteren Auswirkungen haben sie auf sie, nachdem Vasul tot ist?
+- Was genau geschah mit dem Buch, das Lunara Voras gab, und welches Unheil brachte es? Sie deutet es an und will Informationen preisgeben, wird aber am Tisch gestoppt.
+- Wer ist Tyrael genau und welche Ziele verfolgt er? Lunara erwähnt ihn als Kontakt in Abyssalis und erhielt eine Notiz von ihm, aber seine Identität bleibt offen.
+- Wie hängt Lunara mit der Veloria-Familie und Abyssalis zusammen? Die Quellen bezeichnen sie in Abyssalis als Dämonin aus der Veloria-Familie; die Verbindung zu ihrer sonstigen Abstammung bleibt ungeklärt.
+- Welche dauerhaften Folgen hat Abyssalis für Liam/Ulnavar? Sein seltsames Verhalten bleibt ein anhaltendes Rätsel.
 
-## Belege
+# Belege
 
-1. Session 2025-11-18 @ 00:21:17 (https://www.youtube.com/watch?v=w__ahowb9p0)
+1. Session 2025-11-18 @ 00:21:00 (https://www.youtube.com/watch?v=w__ahowb9p0)
 2. Session 2026-01-06 @ 00:11:40 (https://www.youtube.com/watch?v=VGw81seFvbo)
-3. Session 2026-01-13 @ 00:21:35 (https://www.youtube.com/watch?v=w4LB1s9_3rs)
-4. Session 2026-01-20 @ 00:14:30 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
-5. Session 2026-02-11 @ 00:49:16 (https://www.youtube.com/watch?v=3C8SD-cyNPM)
-6. Session 2026-02-17 @ 00:08:14 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
-7. Session 2026-02-24 @ 00:08:44 (https://www.youtube.com/watch?v=WOFArbwDDIQ)
-8. Session 2026-03-03 @ 00:05:43 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
-9. Session 2026-03-10 @ 00:16:36 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
-10. Session 2026-03-18 @ 00:08:11 (https://www.youtube.com/watch?v=HHXxsASLrbQ)
-11. Session 2026-03-24 @ 00:12:24 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
-12. Session 2026-03-31 @ 00:22:05 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
+3. Session 2026-01-13 @ 01:54:30 (https://www.youtube.com/watch?v=w4LB1s9_3rs)
+4. Session 2026-01-20 @ 00:34:24 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
+5. Session 2026-02-11 @ 00:49:01 (https://www.youtube.com/watch?v=3C8SD-cyNPM)
+6. Session 2026-02-17 @ 02:04:50 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
+7. Session 2026-02-24 @ 00:02:57 (https://www.youtube.com/watch?v=WOFArbwDDIQ)
+8. Session 2026-03-03 @ 00:06:14 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
+9. Session 2026-03-10 @ 00:58:35 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
+10. Session 2026-03-18 @ 00:14:53 (https://www.youtube.com/watch?v=HHXxsASLrbQ)
+11. Session 2026-03-24 @ 00:54:40 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
+12. Session 2026-03-31 @ 00:22:20 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
 13. Session 2026-04-14 @ 00:06:26 (https://www.youtube.com/watch?v=1Jyu92P7_Fg)
-14. Session 2026-05-06 @ 00:22:28 (https://www.youtube.com/watch?v=MB4quhDWsQE)
-15. Session 2026-05-13 @ 00:09:46 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
+14. Session 2026-05-06 @ 00:22:10 (https://www.youtube.com/watch?v=MB4quhDWsQE)
+15. Session 2026-05-13 @ 01:08:10 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
 16. Session 2026-05-19 @ 00:03:20 (https://www.youtube.com/watch?v=xEcGJeaNixI)
-17. Session 2026-06-10 @ 00:12:21 (https://www.youtube.com/watch?v=_3tLSiT1tck)
+17. Session 2026-06-10 @ 00:09:16 (https://www.youtube.com/watch?v=_3tLSiT1tck)
 18. Session 2026-06-16 @ 00:07:04 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
-19. Session 2026-07-21 @ 00:06:41 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
+19. Session 2026-07-21 @ 01:26:26 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
 20. Session 2026-07-29 @ 00:12:11 (https://www.youtube.com/watch?v=umGyKLkefJI)
-21. Session 2026-08-04 @ 00:09:56 (https://www.youtube.com/watch?v=qRj2t3wQHfs)
-22. Session 2026-08-12 @ 00:18:19 (https://www.youtube.com/watch?v=piUv11DCwDw)
-23. Session 2026-08-18 @ 00:01:57 (https://www.youtube.com/watch?v=10swvSz6k7U)
-24. Session 2026-08-25 @ 00:42:18 (https://www.youtube.com/watch?v=1Cjj3OVqiYA)
+21. Session 2026-08-04 @ 00:09:58 (https://www.youtube.com/watch?v=qRj2t3wQHfs)
+22. Session 2026-08-12 @ 00:18:26 (https://www.youtube.com/watch?v=piUv11DCwDw)
+23. Session 2026-08-18 @ 00:29:04 (https://www.youtube.com/watch?v=10swvSz6k7U)
+24. Session 2026-08-25 @ 00:42:22 (https://www.youtube.com/watch?v=1Cjj3OVqiYA)
+
+# Offene Konflikte
+
+- **Abstammung:** Beleg [1] beschreibt Lunara als Halb-Tidekin-Halb-Hexe; Beleg [16] nennt sie halb Tidekin; Beleg [13] bezeichnet sie als Dämonin aus der Veloria-Familie; Beleg [21] und [24] bezeichnen sie als Elfe bzw. Elfenhexe.

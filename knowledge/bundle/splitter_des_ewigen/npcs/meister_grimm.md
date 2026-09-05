@@ -1,15 +1,15 @@
 ---
 type: NPC
 title: Meister Grimm
-description: Meister Grimm ist ein Zwerg und Begleiter von Brandoran. Er ist mürrisch
-  und misstrauisch, wird aber durch Rotunas' freundliche Geste (ein…
+description: Meister Grimm, der zweite Zwerg, ist mürrisch und misstrauisch, verteidigt
+  aber tapfer. Er hat die Sprengfalle im Eingang der Kirche gelegt…
 tags:
 - npcs
 timestamp: '2025-09-09T00:00:00Z'
 id: NPC_MEISTER_GRIMM
 ---
 
-Meister Grimm ist ein Zwerg und Begleiter von [Brandoran](/npcs/brandoran.md). Er ist mürrisch und misstrauisch, wird aber durch [Rotunas](/characters/rotunas.md)' freundliche Geste (ein Sandwich) besänftigt. Er ist bereit, mit der Gruppe zu fliehen und hilft, die Sprengfalle zu entschärfen.
+Meister Grimm, der zweite Zwerg, ist mürrisch und misstrauisch, verteidigt aber tapfer. Er hat die Sprengfalle im Eingang der Kirche gelegt und sorgt sich um den Prinzen. Nach anfänglichen Spannungen schließt er sich der Flucht an und hilft bei der Verteidigung.
 
 # Belege
 

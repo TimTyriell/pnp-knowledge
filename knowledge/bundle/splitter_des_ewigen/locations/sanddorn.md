@@ -1,26 +1,17 @@
 ---
 type: Location
 title: Sanddorn
-description: Sanddorn ist die Hauptinsel und zentrale Siedlung einer Inselgruppe.
-  Die Stadt ist wohlhabend und wird von Joar Vanur regiert, der selbst a…
+description: Sanddorn ist die Hauptinsel der Sanddorn-Inseln und Sitz von Joar Vanur.
+  Die Stadt wirkt wohlhabend, mit großen Gebäuden aus Holz und Stein…
 tags:
 - locations
-timestamp: '2026-08-25T00:00:00Z'
+timestamp: '2025-04-30T00:00:00Z'
 id: LOC_SANDDORN
 subtype: Siedlung
 ---
 
-Sanddorn ist die Hauptinsel und zentrale Siedlung einer Inselgruppe. Die Stadt ist wohlhabend und wird von [Joar Vanur](/npcs/joar_vanur.md) regiert, der selbst aus Sanddorn stammt und in die Stadt zurückkehren möchte. Trotz ihres Reichtums ist die Siedlung für ihre Diebe und Schurken bekannt.
-
-## Rolle und Herrschaft
-
-Als Hauptinsel bildet Sanddorn das Zentrum der Inselgruppe. Die Herrschaft liegt bei [Joar Vanur](/npcs/joar_vanur.md), der hier geboren wurde. Sein erklärtes Ziel ist die Rückkehr nach Sanddorn.
-
-## Orte und Ruf
-
-In Sanddorn gibt es eine Taverne, ein Gefängnis und verschiedene weitere Gebäude. Der Wohlstand der Stadt steht in auffälligem Kontrast zu ihrem Ruf als Treffpunkt von Dieben und Schurken.
+Sanddorn ist die Hauptinsel der [Sanddorn-Inseln](/locations/sanddorninseln.md) und Sitz von [Joar Vanur](/npcs/joar_vanur.md). Die Stadt wirkt wohlhabend, mit großen Gebäuden aus Holz und Stein. Es gibt mindestens zwei Tavernen, darunter die [Taverne Kyla](/locations/taverne_kyla_von_sanddorn.md). Die Bewohner sind teils Diebe und Schurken, aber auch einfache Fischer. Die Gruppe wird hier von [Hauptmann Gorman](/npcs/hauptmann_gorman.md) empfangen und verbringt Zeit in der ersten Taverne.
 
 # Belege
 
-1. Session 2025-04-30, 00:17:36 – https://www.youtube.com/watch?v=fsCOiSkKKTE
-2. Session 2026-08-25, 00:01:00 – https://www.youtube.com/watch?v=1Cjj3OVqiYA
+[P-06] Session 2025-04-30 @ 00:31:00 (https://www.youtube.com/watch?v=fsCOiSkKKTE)

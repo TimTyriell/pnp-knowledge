@@ -1,29 +1,30 @@
 ---
 type: NPC
 title: Freibeuter-Harald
-description: Harald ist ein Freibeuter-Kapitän in Tiefwasser. Er betreibt dort eine
-  heruntergekommene Taverne und verteidigt sich im Kampf mit einem Rap…
+description: Harald ist ein Freibeuter-Kapitän in Tiefwasser – kein Pirat. Er hat
+  früher für Brandau gekämpft und ist nach dem Sieg Willauchs in der Sta…
 tags:
 - npcs
-timestamp: '2026-03-18T00:00:00Z'
+timestamp: '2026-04-14T00:00:00Z'
 id: NPC_FREIBEUTER_HARALD
-subtype: Bande
+subtype: Sonstiges
 aliases:
 - Freibeuter
 - Harald
 ---
 
-Harald ist ein Freibeuter-Kapitän in [Tiefwasser](/locations/tiefwasser.md). Er betreibt dort eine heruntergekommene Taverne und verteidigt sich im Kampf mit einem Rapier. Wie die übrigen Freibeuter wird er nach dem [Krieg](/characters/krieg.md) gegen [Brandau](/locations/brandau.md) verfolgt und hat sich nach [Tiefwasser](/locations/tiefwasser.md) zurückgezogen.
+Harald ist ein Freibeuter-Kapitän in [Tiefwasser](/locations/tiefwasser.md) – kein Pirat. Er hat früher für [Brandau](/locations/brandau.md) gekämpft und ist nach dem Sieg [Willauchs](/locations/willauch.md) in der Stadt geblieben. Dort führt er die verbliebenen Freibeuter an und betreibt eine heruntergekommene Taverne. Die Soldaten Willauchs beschuldigen ihn, mit den [Silberkernen](/factions/silberkerne.md) gemeinsame Sache zu machen, was er entschieden bestreitet.
 
-## Herkunft und Verfolgung
+## Hintergrund und Selbstverständnis
 
-Die Freibeuter, zu denen Harald gehört, sind ehemalige Kämpfer für [Brandau](/locations/brandau.md). Nach dem Krieg gegen Brandau werden sie verfolgt und leben versteckt in Tiefwasser. Die Soldaten von [Willauch](/locations/willauch.md) beschuldigen sie, mit den [Silberkernen](/factions/silberkerne.md) zu kooperieren; Harald bestreitet das und erklärte auch der Gruppe ausdrücklich, dass die Freibeuter nichts mit den Silberkernen zu tun hätten.
+Die Freibeuter sind ehemalige Kämpfer für Brandau, die nach dessen Niederlage in Tiefwasser geblieben sind. Nur wenige von ihnen sind noch in der Stadt; Harald ist ihr Anführer. Er grenzt sich ausdrücklich von Piraten ab: Seine Leute rauben niemanden aus. Den Vorwurf, mit den Silberkernen zusammenzuarbeiten, betrachten er und seine Freibeuter als unberechtigt.
 
-## Begegnung in Tiefwasser
+## Eskalation in der Taverne
 
-Harald traf die Gruppe, als er über die Verfolgung und die unbegründeten Vorwürfe sprach. Dabei kam es zu einem Kampf mit Soldaten von [Willauch](/locations/willauch.md), den [Lunara](/characters/lunara_velora.md) mit einem Zauber beendete. Harald nutzte die Gelegenheit zur Flucht.
+In seiner Taverne tritt Harald selbstbewusst auf: Er verpasst einem Soldaten eine Lektion und brüskiert die Obrigkeit. Daraufhin stürmen Soldaten die Taverne. Harald wehrt sich mit seinem Rapier. Nachdem [Lunara](/characters/lunara_velora.md) alle Anwesenden paralysiert hat, entkommt er durch eine Hintertür und verlässt die Stadt zusammen mit seinem Maat.
 
 # Belege
 
-[P-41a] Session 2026-03-18 @ 01:09:46 – https://www.youtube.com/watch?v=HHXxsASLrbQ
+[P-41a] Session 2026-03-18 @ 01:10:55 – https://www.youtube.com/watch?v=HHXxsASLrbQ
 [P-41b] Session 2026-03-18 @ 01:15:08 – https://www.youtube.com/watch?v=HHXxsASLrbQ
+[P-47] Kanon_Entscheidungen.md, Eintrag „Harald (Freibeuter)“ (Kampagnen-Unterlage)

@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Richter (Herr der Seelenwacht)
-description: Der Richter ist eine wichtige Persönlichkeit der Seelenwacht in Jalan.
-  Er tritt als entschlossener Anführer auf, der die Gruppe unter Zeitd…
+description: Der Richter ist der Herr und eine der beiden wichtigsten Persönlichkeiten
+  von Seelenwacht. Er tritt abgebrüht auf und macht keinen Hehl dar…
 tags:
 - npcs
 timestamp: '2026-05-13T00:00:00Z'
@@ -13,17 +13,18 @@ aliases:
 - Richter
 ---
 
-Der Richter ist eine wichtige Persönlichkeit der Seelenwacht in [Jalan](/locations/jalan.md). Er tritt als entschlossener Anführer auf, der die Gruppe unter Zeitdruck zur [Villa](/locations/villau.md) führt, und verfügt über Autorität innerhalb der Organisation. Über seine Vergangenheit und genaue Stellung ist wenig bekannt; sein Titel verweist auf eine richterliche oder ordnende Funktion in den Reihen der Seelenwacht.
+Der Richter ist der Herr und eine der beiden wichtigsten Persönlichkeiten von [Seelenwacht](/locations/seelenwacht.md). Er tritt abgebrüht auf und macht keinen Hehl daraus, dass keine Zeit für Diskussionen bleibt. Ein [Ring](/items/ring.md) kostet ihn einen Finger; im Titanen [Huludan](/deities/huludan.md) erkennt er eine Chance.
 
-## Rolle in Jalan
+## Auftreten und Führung
 
-Der Richter begegnet der Gruppe als Befehlshaber eines Trupps der Seelenwacht. Er drängt zur Eile und macht deutlich, dass keine Zeit für Diskussionen bleibt, während er die Gruppe zur Villa führt. Dabei äußert er die Vermutung, dass [Vasul](/deities/vharzul.md) zurückgekehrt sein könnte, und bezeichnet die [Erntefelder](/locations/erntefelder.md) als nicht idealen Ort – offenbar im Hinblick auf die Gefahr durch Vasuls mögliche Rückkehr. Für die Unterstützung der Gruppe sagt er eine Entlohnung zu, womit er ihre Leistungen anerkennt.
+Dem Richter wird nachgesagt, er habe die Jugendlichen mitgenommen, die den Schutzzauber zerstört hatten. Nach einem Zwischenfall nimmt er [Kip](/characters/kip_ribbit.md), [Dante](/characters/dante.md) und [Miko](/characters/miko.md) beiseite, lobt sie für ihre Leistungen und stellt ihnen eine spätere Belohnung in Aussicht. Er führt die Gruppe zur alten Villa über [Jalan](/locations/jalan.md) und erklärt, dass sich dort etwas Wertvolles befinden müsse. Dabei erwähnt er, dass [Vasul](/deities/vharzul.md) zurückgekehrt sei und dass dies möglicherweise einen Ausweg aus dem [Abyssalis](/domains/splitterwelt.md) eröffnen könnte.
 
-## Der verlorene Finger und die Entscheidung
+## Ring, Vision und Pakt
 
-Während des Einsatzes verliert der Richter durch einen Ring einen Finger. Der Verlust versetzt ihn in einen Zustand, in dem er Visionen erhält; zugleich weist er auf eine Narbe hin, deren Bedeutung unklar bleibt. Nachdem er sich mit [Dante](/characters/dante.md) und [Miko](/characters/miko.md) beraten hat, trifft er eine folgenreiche Entscheidung: Statt durch das [Portal](/locations/portal.md) zu gehen, macht er sich auf die Suche nach dem [Schinder](/npcs/der_schinder.md). Damit trennt sich sein Weg von dem der Gruppe – er verabschiedet sich und zieht allein weiter.
+In der Folge berührt der Richter einen Ring und verliert dabei einen Finger. Er wird von Lunara per Blutkontrolle gezwungen, den Ring erneut zu ziehen. Dabei erhält er eine Vision und flüstert wirre Worte über die [Narben](/locations/narben.md). Er erkennt in Huludan, dem uralten, im [Splitter des Ewigen](/items/splitter_des_ewigen.md) gefangenen Titanen, eine Chance und überzeugt seine Begleiter, einem Pakt zuzustimmen. Am Ende entscheidet er, nicht durch das Portal zu gehen, sondern den [Schinder](/npcs/der_schinder.md) zu holen und alle zu retten, die er kann. Mit einem Salut verabschiedet er sich von der Gruppe und rennt davon.
 
 # Belege
 
+[P-47] Session 2026-04-14 @ 01:44:49 – https://www.youtube.com/watch?v=1Jyu92P7_Fg
 [P-48] Session 2026-05-06 @ 00:14:29 – https://www.youtube.com/watch?v=MB4quhDWsQE
-[P-49] Session 2026-05-13 @ 00:10:24 – https://www.youtube.com/watch?v=4afPD9Q_5AY
+[P-49] Session 2026-05-13 @ 01:38:44 – https://www.youtube.com/watch?v=4afPD9Q_5AY

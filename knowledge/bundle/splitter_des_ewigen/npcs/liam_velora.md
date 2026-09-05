@@ -1,11 +1,11 @@
 ---
 type: NPC
 title: Liam Velora
-description: Liam Velora ist der Bruder von Lunara Velora und stammt aus deren gemeinsamer
-  Vergangenheit. Er verschwand vor langer Zeit und galt lange a…
+description: Liam Velora ist der jüngere Bruder von Lunara Velora und galt seit dem
+  Krieg als verschollen. Lunara hörte im Abyssalis jedoch seine Stimme…
 tags:
 - npcs
-timestamp: '2026-08-25T00:00:00Z'
+timestamp: '2026-09-01T00:00:00Z'
 id: NPC_LIAM_VELORA
 aliases:
 - Ulvanara (Liam)
@@ -13,100 +13,67 @@ aliases:
 - Liam
 ---
 
-# Liam Velora
-
 ## Überblick
 
-Liam Velora ist der Bruder von [Lunara Velora](/characters/lunara_velora.md) und stammt aus deren gemeinsamer Vergangenheit. Er verschwand vor langer Zeit und galt lange als verloren. Wie sich herausstellte, wurde er vor zwölf Jahren in den Tempel von [Vorgul'tar](/deities/vorgul_tar.md) gebracht und geriet dort unter die Kontrolle des Dämons der Hybris. Unter dieser Fremdkontrolle trat er als **Ulvanara** auf, ein junger Wächter mit dem Wappen Vorgul'tars auf der Brust. Die Gruppe konnte ihn aus [Abyssalis](/domains/splitterwelt.md) befreien und zurück nach [Ehrenfels](/locations/ehrenfels.md) bringen, wo er sich langsam von den Einflüssen der anderen Existenzebene erholt. Seit seiner Rückkehr zeigt er Anzeichen von Abyssalis-Einfluss: Er wirkt benebelt, spricht in rätselhaften Prophezeiungen und zeigt eine tiefe Abneigung gegen die neuen Götter.
+**Liam Velora** ist der jüngere Bruder von [Lunara Velora](/characters/lunara_velora.md) und galt seit dem [Krieg](/characters/krieg.md) als verschollen. Lunara hörte im [Abyssalis](/domains/splitterwelt.md) jedoch seine Stimme und suchte ihn über Jahre hinweg. Im [Abyssalis](/domains/splitterwelt.md) begegnete die Gruppe ihm zunächst als **Ulvanara**, einem jungen [Wächter](/npcs/waechter.md) [Vorgul'tars](/deities/vorgul_tar.md); dabei handelt es sich um dieselbe Person unter fremder Kontrolle, nicht um ein zweites Wesen. Nach seiner Befreiung begleitet Liam die Gefährten. Er ist ein junger Magier mit Wissen über abyssale Magie und telepathischen Fähigkeiten, dessen Zustand zwischen Verwirrung, kindlichem Verhalten und düsterer Klarheit schwankt.
 
 ## Rolle in der Kampagne
 
-Liam ist ein zentrales Ziel der Gruppe in der ersten großen Kampagnenphase: Die Helden reisen nach Abyssalis, um ihn zu retten. [Vasul](/deities/vharzul.md), ein Freund der Gruppe und eine Art Gott, unterstützt sie dabei. Die Rettungsmission führt die Gruppe in den Palast von Vorgul'tar, wo es zu einer großen Schlacht kommt. Die Gruppe muss sich zurückziehen und entkommt nur mit Hilfe eines stillen Unterstützers in einen Keller eines alten Turms.
-
-Im Tempel von Vorgul'tar begegnet die Gruppe Liam in seiner kontrollierten Form als Ulvanara. Er bewacht den Tempel und greift die Gruppe an. Lunara erkennt in ihm ihren Bruder, und er erkennt sie kurz als "Luna", bevor er ohnmächtig wird. Nach der [Rückkehr aus Abyssalis](/events/rueckkehr_aus_abyssalis.md) ist Liam zunächst benebelt und abwesend, erholt sich aber zunehmend. Er schließt sich der Gruppe an und begleitet sie auf ihrem weiteren Weg. Beim Kampf gegen ein großes genollartiges Biest in der Eskorte von [Joar](/npcs/joar_vanur.md) zeigt er erstmals wieder seine Fähigkeiten, indem er das Biest mit einem Zauber festhält und Lunara so die Möglichkeit gibt, die Verbindung zu kappen.
+Liam ist zunächst das emotionale Zentrum von Lunaras Reise: Sie will ihn retten, nachdem sie im Abyssalis seine Stimme gehört hat; er ist zugleich ihr Überlebensgrund und ihre größte Angst. [Huludan](/deities/huludan.md) bestätigte, dass Liam sich in den [Narben](/locations/narben.md) befindet. Nach der Befreiung wird Liam von einem passiven Ziel zu einem aktiven, aber unberechenbaren Begleiter. Er bringt Spezialwissen über das Abyssalis mit, greift in Kämpfe ein, stellt düstere Fragen und plädiert zeitweise dafür, die neuen Götter zu stürzen. Seine instabile Verfassung und seine Ablehnung der neuen Götter zwingen die Gruppe wiederholt, sich mit ihm auseinanderzusetzen.
 
 ## Wichtige Merkmale
 
-### Äußeres Erscheinungsbild
-
-Liam wird als junger Mann beschrieben, den man auf etwa 18 bis 20 Jahre schätzen würde. In seiner Zeit als Wächter Vorgul'tars trug er das Wappen des Gottes auf der Brust. Nach seiner Rückkehr aus Abyssalis legte er die Robe des alten Gottes ab und trägt stattdessen einfache Kleidung.
-
-### Wesenszüge und Verhalten
-
-Liams Verhalten ist stark von seinen Erfahrungen in Abyssalis geprägt. Nach seiner Rückkehr wirkt er benebelt und abwesend, kommt nur ab und zu zu sich und stammelt dann Dinge aus seiner Vergangenheit, die zunächst keinen Sinn ergeben. Er spricht in rätselhaften Prophezeiungen von einer Flamme, einer eisernen Faust und Masken.
-
-In klaren Momenten zeigt er sich überraschend direkt und manchmal kalt. Er stellt düstere Fragen wie "Hast du keine Angst?" in einer trockenen, kalten Stimme. Seine Zeit in Abyssalis hat ihn geprägt — er wirkt vorbereitet auf alles, was kommen mag. Gleichzeitig zeigt er Momente der Zuneigung, etwa wenn er Lunara umarmt und sagt: "Aber egal was kommt, wir stehen das durch."
-
-### Fähigkeiten
-
-Liam verfügt über beachtliche magische Fähigkeiten. Beim Kampf gegen das genollartige Biest hält er das riesige, unsichtbare Wesen mit einem Zauber fest, sodass es sich nicht bewegen kann. Dieses Wissen hat er wahrscheinlich über seine Zeit in Abyssalis gesammelt. Der Zauber bindet jedoch seine volle Konzentration — sobald er den Spruch unterbricht, könnte das Biest lospreschen.
-
-### Abneigung gegen die neuen Götter
-
-Liam zeigt eine starke Abneigung gegen die neuen Götter. Beim Gottesdienst in Ehrenfels hat der Segen der Priesterin keine Wirkung auf ihn. Er äußert sich abfällig über sie und schlägt sogar vor, das Dorf von den neuen Göttern zu befreien, wird aber von der Gruppe gebremst. Über den Sieg der neuen Götter gegen die alten kann er es kaum glauben: "Sie sind kaum stärker als ihr."
+- **Alter und Erscheinung:** Liam ist ein junger Mann von etwa 18 bis 20 Jahren. Als Ulvanara trägt er das Wappen [Vorgul'tars](/deities/vorgul_tar.md) und eine Robe des alten Gottes; nach der Rückkehr legt er die Robe ab und nimmt einfache Kleidung an.
+- **Magische Fähigkeiten:** Er ist ein Magier mit abyssaler Magie. Er kann einen großen Schatten-Gnoll mit einem Zauber zurückhalten, was seine volle Konzentration erfordert; er hilft, einen Schamanen zu bannen, wird vor einem Trollkontakt unsichtbar, spürt die uralte Magie eines Hains, liest [Lindo Lauts](/characters/lindo_laut.md) Gedanken und versetzt [Joar](/npcs/joar_vanur.md) mit einer Handbewegung in Schlaf. Er kann offenbar Gespräche mithören, vermutlich durch Magie.
+- **Geistiger Zustand:** Nach der Rückkehr aus dem Abyssalis ist Liam körperlich unversehrt, wirkt aber abwesend und geistig blockiert. Er stammelt Sätze aus seiner Vergangenheit, verhält sich zeitweise verwirrt und kindlich, zeigt dann aber plötzlich bedrohliche Züge. Er stellt düstere Fragen wie „Hast du keine Angst?“, umarmt Lunara dann und versichert: „Egal was kommt, wir stehen das durch.“
+- **Reden und Überzeugungen:** Er spricht in prophetischen Bildern, nennt Lunara „Luni“, erinnert sich an einen nicht mehr existierenden Tempel und an eine „eiserne Faust“. Er lehnt die neuen Götter ab; der Segen der neuen Götter schlägt bei ihm fehl. Er zeigt Genugtuung angesichts einer Statue von [Rotunas](/characters/rotunas.md), hält die neuen Götter für schwach und interessiert sich für korrumpierte Seraphen. Er schlägt vor, die neuen Götter zu stürzen und das Dorf selbst zu befreien, lässt sich jedoch zur Geduld ermahnen.
 
 ## Beziehungen und Verbindungen
 
-### Lunara Velora
-
-Liam ist Lunaras Bruder. Die Bindung zwischen den Geschwistern ist tief: In einer Vision erscheint er Lunara in einem Moment äußerster Gefahr, streckt ihr die Hand entgegen und sagt: "Lunara, du darfst jetzt nicht sterben." Bevor er sich auflöst, flüstert er ihr zu: "Finde mich." Lunara hofft, ihn wiederzusehen, und ist bereit, bis nach Abyssalis zu reisen, um ihn zu retten. Er erkennt sie sowohl als Ulvanara ("Luna") als auch nach der Rückkehr ("Luni") wieder.
-
-### Vorgul'tar
-
-Liam stand unter der Kontrolle des Dämons der Hybris und diente als Wächter des Tempels von Vorgul'tar. Er trug das Wappen des Gottes. Die genauen Umstände seiner Gefangenschaft und Kontrolle sind nicht vollständig geklärt.
-
-### Vasul
-
-Vasul bestätigt, dass Liam in der Nähe ist, als Lunara die Vision von ihm hat. Er unterstützt die Gruppe bei der Rettungsmission nach Abyssalis.
-
-### Die Gruppe
-
-Liam bittet darum, sich der Gruppe anzuschließen. Er wird von [Gunther](/characters/gunther.md) in ein Zimmer der Taverne gebracht, um sich auszuruhen. Die Gruppe bremst ihn, als er vorschlägt, das Dorf von den neuen Göttern zu befreien. Er ist bereit, mit der Gruppe aufzubrechen und begleitet sie als Mitglied der Eskorte von Joar.
+- **Lunara Velora:** Seine Schwester; sie nennt ihn alles, was ihr noch geblieben ist. Liam nennt sie „Luna“ und „Luni“. Lunara betrachtet ihn als wichtigen Teil ihrer Familie und ist stolz auf ihn.
+- **[Dodo](/characters/dodo.md):** Als Dodo die Statue zerstört, klart Liam kurz auf und offenbart seine Identität; Dodo ist unmittelbar an der Rettung beteiligt.
+- **[Gunther](/characters/gunther.md):** Unterrichtet Liam in Tischmanieren und Etikette und ermahnt ihn zur Geduld. Liam teilt Gunthers Einschätzung, dass die neuen Götter schwach seien.
+- **[Lindo Laut](/characters/lindo_laut.md):** Erkennt, dass Liams Seele verloren scheint und nur durch göttliche Magie zurückgeholt werden könnte. Später liest Liam Lindo Lauts Gedanken.
+- **[Auranie](/npcs/auranil.md):** Spürt etwas Dunkles an Liam und warnt, dass er nicht mit dem Seraphen [Vityus](/npcs/vityus.md) mitgehen darf.
+- **[Vasul](/deities/vharzul.md):** Bestätigt, dass Liam in der Nähe ist, und verspricht, ihn wiederherzustellen.
+- **[Tattrick](/npcs/tattrick.md):** Erinnert sich an einen Jungen, der vor etwa zwölf Jahren in den Tempel gebracht und vor den Einflüssen des Abyssalis geschützt wurde.
+- **[Huludan](/deities/huludan.md):** Bestätigt, dass Liam sich in den Narben befindet.
+- **Vorgul'tar:** Der alte Gott, als dessen Wächter Ulvanara auftrat; die genaue Natur der fremden Kontrolle bleibt unklar.
+- **Ehemaliger Meister:** Ein nicht namentlich genannter früherer Meister lehrte ihn, der Körper hindere mehr, als er helfe.
 
 ## Chronologie
 
-### Erste Vision (Session 2026-06-10)
-
-Lunara liegt schwer verletzt in einer Schlucht, nachdem sie mit einem [Seraphen](/factions/seraphen.md) in den Abgrund gestürzt ist. In diesem Moment erscheint ihr Liam in einer Vision. Er streckt ihr die Hand entgegen und sagt: "Lunara, du darfst jetzt nicht sterben." Ein warmer Lichtimpuls durchströmt ihren Körper und reißt sie mit Gewalt ins Leben zurück. Bevor er sich auflöst, flüstert er: "Finde mich." Lunara erwacht, ersticht den bewusstlosen Seraphen und flüstert ihm ins Ohr: "Sag deinem Gott, nach allem, was ich erlebt habe, wird Volgotha nicht mein Ende sein."
-
-### Die Reise nach Abyssalis (Session 2026-06-16)
-
-Die Gruppe befindet sich in Abyssalis, um Liam zu retten. Der GM fasst zusammen: Liam ist der Bruder von Lunara, der schon vor langer, langer Zeit abhanden gekommen ist. Er wurde vor zwölf Jahren in den Tempel gebracht. Die Gruppe steht vor dem Palast von Vorgul'tar, der keine Besucher duldet. Nach einer Schlacht zieht sich die Gruppe in den Keller eines alten Turms zurück. [Lindo Laut](/characters/lindo_laut.md) glaubt, dass Liams Seele verloren ist.
-
-### Begegnung als Ulvanara (Session 2026-07-21)
-
-Im Tempel von Vorgul'tar tritt ein junger Mann mit dem Wappen Vorgul'tars auf der Brust vor die Gruppe und ruft: "Kehrt um! Das ist nicht der Ort für euch!" Er macht sich kampfbereit. Sein Blick wirkt unverkommen — anders als die verendeten Seelen, denen die Gruppe bisher begegnet ist. Lunara erkennt in ihm ihren Bruder Liam, und er erkennt sie kurz als "Luna", bevor er ohnmächtig wird.
-
-### Rückkehr nach Ehrenfels (Session 2026-07-29)
-
-Drei bis vier Tage nach der Rückkehr aus Abyssalis ist Liam immer noch benebelt und abwesend. Er stammelt Dinge aus seiner Vergangenheit, die keinen Sinn ergeben. Er spricht in rätselhaften Prophezeiungen von einer Flamme, einer eisernen Faust und Masken. Er erkennt Lunara und nennt sie "Luni". Gunther bringt ihn in ein Zimmer der Taverne, um sich auszuruhen.
-
-### Erste Gespräche (Session 2026-08-04)
-
-Lunara sucht das Gespräch mit ihrem Bruder, der auf dem Bett sitzt und meditiert. Die Verwirrtheit ist in diesem Moment nicht vorhanden — er antwortet klar, stellt aber düstere Fragen: "Hast du keine Angst?" In seiner trockenen, kalten Stimme warnt er: "Du weißt nicht, was da noch kommt." Dann umarmt er Lunara und sagt: "Aber egal was kommt, wir stehen das durch." Im nächsten Augenblick streift er die Robe des alten Gottes ab und nimmt einfache Kleidung an. Er bittet darum, sich der Gruppe anzuschließen. Beim Gottesdienst zeigt er eine starke Abneigung gegen die neuen Götter; der Segen der Priesterin hat keine Wirkung auf ihn. Er schlägt vor, das Dorf von den neuen Göttern zu befreien, wird aber von der Gruppe gebremst.
-
-### Vor der Statue (Session 2026-08-12)
-
-Liam steht vor der Statue in Ehrenfels und grinst mit Genugtuung zu ihr hoch. Gunther fragt ihn, wie viel er von den Gesprächen in der [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) mitbekommen hat. Liam antwortet: "Alles. Jeden einzelnen Wortlaut." Er zeigt Interesse an den korrupten Seraphen und äußert sich abfällig über die neuen Götter: "[Die neuen Götter](/deities/neue_goetter.md) haben gegen die alten gewonnen. Ich kann es kaum glauben. Immer noch nicht. Wie hätten sie das jemals erreichen können? Also, sie sind so schwach. Sie sind kaum stärker als ihr." Er ist bereit, mit der Gruppe aufzubrechen.
-
-### Eskorte von Joar (Session 2026-08-25)
-
-Während eines Kampfes gegen ein riesiges, genollartiges Biest hält Liam das unsichtbare Wesen mit einem Zauber fest. Lindo Laut nimmt wahr, wie Liam das Biest aktiv zurückhält — es hat glühend rote Augen und ist überall mit Narben bedeckt. Liam ist durch den Zauber komplett fixiert und kann nicht antworten; sobald er den Spruch unterbricht, würde das Biest lospreschen. Seine Augen gucken kurz zu Lindo Laut, dann kommt das Biest ein Stück weiter nach vorne. Liam hilft Lunara, die Verbindung zu kappen, ist dabei aber sichtlich angestrengt.
+- **Vor Beginn der Handlung:** Liam stirbt für Lunara scheinbar im Krieg. Später hört sie im Abyssalis seine Stimme und sucht ihn elf Jahre lang. Tattrick erinnert sich an einen Jungen, der vor etwa zwölf Jahren in den Tempel gebracht und geschützt wurde.
+- **Session 2026-03-24:** Lunara offenbart der Gruppe ihre Suche nach Liam; sie bezeichnet ihn als Grund, warum sie alles überlebt habe, und zugleich als ihre größte Angst.
+- **Session 2026-05-13:** Lunara erklärt nach einer Erleuchtung, die Narbe existiere wirklich; dort befinde sich Liam. [Huludan](/deities/huludan.md) bestätigt, dass er in den Narben ist.
+- **Session 2026-06-10:** Nach ihrem Sturz erscheint Liam Lunara in einer Vision und sagt: „Lunara, du darfst jetzt nicht sterben“ und „Finde mich“. [Vasul](/deities/vharzul.md) bestätigt später, dass Liam ganz in der Nähe ist.
+- **Session 2026-06-16:** Tattrick erinnert sich an den geschützten Jungen. Vasul verspricht, Liam wiederherzustellen; Lindo Laut erkennt jedoch, dass seine Seele bereits verloren ist und nur durch göttliche Magie zurückgeholt werden könnte.
+- **Session 2026-07-21:** Die Gruppe trifft im Abyssalis auf den Wächter Ulvanara. Er befiehlt ihr umzukehren; Lunara bemerkt, dass sein Blick nicht verkommen ist. Lindo fragt ihn nach einem Kind des Abyssalis und erwähnt Liam, worauf er kurz emotional reagiert. Als Dodo die Statue zerstört, klart er auf, nennt Lunara „Luna“, sagt, er habe jemanden gekannt, offenbart sich als Liam, bricht weinend zusammen und wird ohnmächtig. Die Gruppe trägt ihn aus dem Abyssalis.
+- **Session 2026-07-29:** Liam ist körperlich unversehrt, aber geistig blockiert und abwesend. In der Taverne spricht er plötzlich prophetisch: „Das Licht, die kleine Flamme, sie flackert nach weit entfernt... Schwester, ich sehe sie, sehe das Dunkle. Es ist hier nicht viel besser als unten.“ Er warnt, alle trügen Masken. Später nennt er Lunara „Luni“, erinnert sich an einen nicht mehr existierenden Tempel und erwähnt die „eiserne Faust“. [Auranie](/npcs/auranil.md) spürt etwas Dunkles an ihm und warnt, er dürfe nicht mit Vityus mitgehen.
+- **Session 2026-08-04:** Liam wirkt zeitweise verwirrt und kindlich, zeigt aber auch bedrohliche Züge. Er kann offenbar Gespräche mithören und zitiert die Lehre seines früheren Meisters. Beim Gottesdienst verhält er sich gegenüber der Priesterin einschüchternd; der Segen der neuen Götter schlägt bei ihm fehl. Gunther bringt ihm Tischmanieren bei, Liam blockt jedoch bei den neuen Göttern ab und schlägt vor, diese zu stürzen.
+- **Session 2026-08-12:** Liam hat das Gespräch in der [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) mitgehört, zeigt Genugtuung bei der Statue von Rotunas, teilt Gunthers Einschätzung und interessiert sich für korrumpierte Seraphen. Abends wirkt er gelöster und übt weiter Tischmanieren.
+- **Session 2026-08-25:** Während eines Angriffs hält Liam einen großen Schatten-Gnoll magisch zurück, kann dabei nicht sprechen und benötigt volle Konzentration; der Zauber lässt erst nach, als die Verbindung gekappt wird. Lunara fängt ihn auf. Später hilft er, den Schamanen zu bannen.
+- **Session 2026-09-01:** Liam wird unsichtbar, um Trolle zu umgehen, spürt die uralte Magie des Hains und bleibt zurück, um den Rücken freizuhalten. Nach Lindo Lauts Rückkehr liest er dessen Gedanken und lächelt wissend. Als [Joar](/npcs/joar_vanur.md) wütend davonläuft, lässt Liam ihn per Handbewegung in Schlaf fallen.
 
 ## Offene Fragen
 
-- **Liams Zustand:** Wie sehr ist Liam durch seine Zeit in Abyssalis und die Kontrolle durch den [Dämon der Hybris](/npcs/daemon_der_hybris.md) verändert? Sind die kalten, düsteren Momente Teil seiner Persönlichkeit oder Nachwirkungen der Kontrolle?
-- **Die Prophezeiungen:** Was bedeuten seine rätselhaften Worte von einer Flamme, einer eisernen Faust und Masken? Deuten sie auf eine tiefere Verbindung zu den Ereignissen hin?
-- **[Vhar'Zuls](/deities/vharzul.md) Aussage:** Vhar'Zul behauptete, Liam existiere nur noch als Seele. Diese Aussage hat sich als falsch erwiesen — ob aus Unwissenheit oder Absicht, ist unklar.
-- **Die Zeit im Tempel:** Was genau ist in den zwölf Jahren im Tempel von Vorgul'tar mit Liam geschehen? Wie wurde er zum Wächter und unter die Kontrolle des Dämons der Hybris gebracht?
-- **Liams Wissen:** Woher kennt Liam die Zauber, mit denen er das Biest bannen kann? Der GM vermutet, dass er dieses Wissen über die Zeit in Abyssalis gesammelt hat.
+- Was geschah in Liams Zeit im Abyssalis, und wie wurde aus ihm der Wächter Ulvanara?
+- Wer war sein ehemaliger Meister, und welche Lehren oder Ziele verfolgte er?
+- Worauf beziehen sich der nicht mehr existierende Tempel und die „eiserne Faust“?
+- Was bedeuten seine prophetischen Warnungen, insbesondere „alle Masken tragen“ und „das Dunkle“?
+- Warum schlug der Segen der neuen Götter bei ihm fehl, und was genau spürte Auranie an ihm?
+- Wie vollständig ist er von Vorgul'tars Einfluss und den Nachwirkungen des Abyssalis befreit?
+- Die Einschätzung, seine Seele sei bereits verloren und nur durch göttliche Magie zurückzuholen, blieb unbestätigt; die spätere körperliche Rückkehr zeigt, dass er jedenfalls nicht nur noch als Seele existierte. Ob diese falsche Annahme aus Unwissenheit oder Absicht stammte, ist unklar.
 
 ## Belege
 
-1. Session 2026-06-10 @ 00:13:18 (https://www.youtube.com/watch?v=_3tLSiT1tck)
-2. Session 2026-06-16 @ 00:05:00 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
-3. Session 2026-07-21 @ 01:03:07 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
-4. Session 2026-07-29 @ 00:15:04 (https://www.youtube.com/watch?v=umGyKLkefJI)
-5. Session 2026-08-04 @ 00:10:30 (https://www.youtube.com/watch?v=qRj2t3wQHfs)
-6. Session 2026-08-12 @ 01:05:34 (https://www.youtube.com/watch?v=piUv11DCwDw)
-7. Session 2026-08-25 @ 01:14:49 (https://www.youtube.com/watch?v=1Cjj3OVqiYA)
+[1] Session 2026-03-24 @ 00:54:40 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)  
+[2] Session 2026-05-13 @ 01:08:10 (https://www.youtube.com/watch?v=4afPD9Q_5AY)  
+[3] Session 2026-06-10 @ 00:12:21 (https://www.youtube.com/watch?v=_3tLSiT1tck)  
+[4] Session 2026-06-16 @ 00:07:04 (https://www.youtube.com/watch?v=qe0ck8hvYpk)  
+[5] Session 2026-07-21 @ 01:38:24 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)  
+[6] Session 2026-07-29 @ 00:15:04 (https://www.youtube.com/watch?v=umGyKLkefJI)  
+[7] Session 2026-08-04 @ 00:09:58 (https://www.youtube.com/watch?v=qRj2t3wQHfs)  
+[8] Session 2026-08-12 @ 00:09:36 (https://www.youtube.com/watch?v=piUv11DCwDw)  
+[9] Session 2026-08-25 @ 01:15:29 (https://www.youtube.com/watch?v=1Cjj3OVqiYA)  
+[10] Session 2026-09-01 @ 01:56:55 (https://www.youtube.com/watch?v=1E3-Nwv4OEs)

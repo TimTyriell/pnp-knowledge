@@ -1,19 +1,19 @@
 ---
 type: Event
 title: Kampf gegen die Pilz-Goblins
-description: Die Verteidigung des Dorfes gegen die Goblinarmee. Die Gruppe und die
-  Dorfbewohner kämpfen gegen die Angreifer und besiegen sie schließlich.
+description: Der Kampf gegen zwei pilzbewachsene Goblins in einem Gang des Dungeons.
+  Die Goblins greifen mit Äxten und Sporen an, doch die Gruppe kann s…
 tags:
 - events
-timestamp: '2025-04-23T00:00:00Z'
+timestamp: '2025-06-17T00:00:00Z'
 id: EVENT_KAMPF_GEGEN_DIE_PILZ_GOBLINS
 subtype: Kampf
 aliases:
 - Kampf gegen die Goblins
 ---
 
-Die Verteidigung des Dorfes gegen die [Goblinarmee](/factions/goblinarmee.md). Die Gruppe und die Dorfbewohner kämpfen gegen die Angreifer und besiegen sie schließlich.
+Der Kampf gegen zwei pilzbewachsene [Goblins](/npcs/pilz_goblins.md) in einem Gang des Dungeons. Die Goblins greifen mit Äxten und Sporen an, doch die Gruppe kann sie letztlich mit Feuermagie vernichten. [Rotunas](/characters/rotunas.md) schleudert einen gegen die Wand, Lindo verbrennt beide. [Dodo](/characters/dodo.md) und [Cookie](/characters/cookie.md) schützen die Gruppe vor Angriffen.
 
 # Belege
 
-[P-05] Session 2025-04-23 @ 00:00:49 (https://www.youtube.com/watch?v=z3C-bewKqUs)
+[P-12] Session 2025-06-17 @ 00:23:51 (https://www.youtube.com/watch?v=tl76B4V0io8)

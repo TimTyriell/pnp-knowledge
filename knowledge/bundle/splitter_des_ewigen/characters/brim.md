@@ -1,48 +1,63 @@
 ---
 type: Character
 title: Brim
-description: Brim ist ein Zwergenkrieger (Slayer), der sich der Gruppe aus Ehrenfels
-  durch eine Zufallsbegegnung bei einer Mission angeschlossen hat. Er…
+description: Brim ist ein zwergischer Krieger, der die Heldengruppe seit ihrer Begegnung
+  auf dem Schlachtfeld zwischen Willauch und Brandau begleitet. E…
 tags:
 - characters
-timestamp: '2026-04-09T00:00:00Z'
+timestamp: '2026-08-04T00:00:00Z'
 id: CHAR_BRIM
 ---
 
 ## Überblick
 
-Brim ist ein Zwergenkrieger (Slayer), der sich der Gruppe aus [Ehrenfels](/locations/ehrenfels.md) durch eine Zufallsbegegnung bei einer Mission angeschlossen hat. Er ist erst seit kurzer Zeit dabei und begleitet die Gruppe zunächst nur vorübergehend, bis sich die Lage, die sich bei der Mission ergeben hat, beruhigt hat. Er ist keiner [Gilde](/factions/gilde_von_ehrenfels.md) beigetreten, was ihm erlaubt, Missionen freier auszuwählen als fest gebundene Gildenmitglieder. Optisch wird er als gutmuskulöser Zwerg mit einer fetten Axt beschrieben. Sein Spieler Kevin war zum Zeitpunkt seines Einstiegs selbst noch relativ unerfahren mit dem Daggerheart-System und bat die Gruppe scherzhaft um Nachsicht.
+Brim ist ein zwergischer Krieger, der die Heldengruppe seit ihrer Begegnung auf dem [Schlachtfeld](/locations/schlachtfeld.md) zwischen [Willauch](/locations/willauch.md) und [Brandau](/locations/brandau.md) begleitet. Er hat sich bislang keiner [Gilde](/factions/gilde_von_ehrenfels.md) angeschlossen und steht der Gruppe nicht fest zur Seite, sondern begleitet sie vorübergehend und – nach eigener Einschätzung einer Gefährtin – „wahrscheinlich in Zukunft immer mal wieder“. In den Belegen wird er als „einsamer Zwergenkrieger“, als „Zwergenkrieger/Slayer“ und als „zwergischer Kämpfer“ bezeichnet. Über seine Herkunft sagt er selbst, er sei nicht mit den anderen Zwergen aufgewachsen, sondern komme „von außerhalb“.
 
 ## Rolle in der Kampagne
 
-Brim stößt als neuer Begleiter zur Gruppe und übernimmt die Rolle eines verlässlichen Nahkämpfers. Er entdeckt früh die Ghule in der Nebelwand vor [Breska](/locations/breska.md) und warnt die Gruppe. In Kämpfen agiert er als Frontkämpfer, der Gegner fesselt, tötet und die Gruppe tatkräftig unterstützt. Er ist bereit, die Gruppe zu unterstützen, übernimmt aber nicht die Rolle des Anführers. Als Gilde-ungebundener Krieger kann er flexibel an verschiedenen Missionen teilnehmen.
+Brim tritt als kampfstarker Begleiter auf, der in brenzligen Situationen häufig Initiative übernimmt. Er entdeckt Hinterhalte, warnt die Gruppe, stellt Fragen an Fremde und lenkt die Aufmerksamkeit auf mögliche Anlaufstellen. In Kämpfen agiert er als zäher Nahkämpfer, der Schaden einsteckt und zugleich großen Schaden austeilt. Mehrfach hat er entscheidenden Anteil am Erfolg: So zieht er eine [Schattenkreatur](/npcs/schattenkreatur.md) mit seinen Ketten zu Boden, sodass [Dodo](/characters/dodo.md) den Todesstoß führen kann, und unterbricht ein Ritual, indem er Adern und Knotenpunkte durchtrennt.
+
+Brim ist noch neu in der Gruppe und wirkt in der Gefahrenlage verunsichert. Er fragt ausdrücklich, ob jede Mission so gefährlich sei, und gesteht, mehr Aufklärung zu benötigen. Seine Rolle ist damit sowohl die eines verlässlichen Kämpfers als auch die eines noch nicht vollständig in die Zusammenhänge eingeweihten Begleiters.
 
 ## Wichtige Merkmale
 
-Brim ist ein pragmatischer und mutiger Kämpfer, der aber auch etwas impulsiv handelt. Er zeigt taktisches Denken: So schlägt er vor, die [Gilde der Schilde](/factions/gilde_der_schilde.md) aufzusuchen, und hat die Idee, eine Flüssigkeit zu nutzen, um eine unsichtbare Brücke zu markieren. Im Kampf nutzt er seine Ketten, um Kreaturen zu fesseln, und kämpft mit einer Axt. Er ist von der [Splitterwelt](/domains/splitterwelt.md) überwältigt und markiert Stresspunkte. Seine Stärke beeindruckt [Lara](/npcs/lara.md). Gegenüber [Trickler](/npcs/trickler.md) zeigt er sich misstrauisch. Im [Kampf gegen die Fleischkreatur](/events/kampf_gegen_die_fleischkreatur.md) wird er verschluckt, aber von [Dodo](/characters/dodo.md) und [Esterossa](/characters/esterossa.md) befreit; anschließend tritt er den rosa Blob in die Grube und durchtrennt die Knotenpunkte der Adern. Er zeigt sich als zuverlässiger Kämpfer, der die Gruppe unterstützt, und beweist im Kampf gegen die [Dämonen](/factions/daemonen.md) Tapferkeit, wobei er mehrere Gegner tötet und von [Otis](/characters/otis.md) vor dem Absturz gerettet wird.
+Brim kämpft mit einer schweren Waffe, deren Gewicht ihm im Kampf Vorteile verschafft. Er nutzt außerdem Ketten, mit denen er Gegner zu Boden ziehen kann. Seine Rüstung verfügt über Rüstungsslots, die er einsetzt, um Schaden zu absorbieren; nach einem gefährlichen Einsatz ist er trotzdem nur leicht verletzt. Seine Stärke wird von einer anderen Figur ausdrücklich gelobt.
+
+Sein Auftreten ist vorsichtig und kampferprobt: Er beobachtet seine Umgebung, prüft nach Kämpfen, ob „die Luft rein ist“, und schlägt taktische Schritte vor. Zugleich zeigt er eine pragmatische, direkte Seite. Als eine Fremde anmerkt, [Zwerge](/factions/zwerge.md) sehe man selten und er möge doch zeigen, was er könne, spannt er seinen Oberarm an, um das Argument zu unterstreichen. Er sagt von sich, er sei nicht mit anderen Zwergen aufgewachsen, und wird dennoch von Außenstehenden mit der Stärke der Zwerge in Verbindung gebracht.
+
+Wesenszüge, die wiederholt sichtbar werden, sind Neugier, Wachsamkeit und ein gewisser Ehrgeiz, sich zu beweisen. Er bringt sich aktiv in Gespräche ein und scheut auch vor unbekannten Situationen nicht zurück, verlangt aber gelegentlich nach Erklärungen, wenn ihm Gefahren oder Hintergründe unklar sind.
 
 ## Beziehungen und Verbindungen
 
-Brim ist durch eine Zufallsbegegnung bei einer Mission auf die Gildenmitglieder gestoßen und begleitet sie seitdem. Er ist keiner Gilde beigetreten. Zu den Gruppenmitgliedern zählen Dodo, Lunara, [Lindo Laut](/characters/lindo_laut.md), Esterossa, [Rotunas](/characters/rotunas.md) und Otis. Im Kampf koordiniert er sich mit Rotunas, dem er zuruft: „Rotunas, kümmer du dich um den Magier, wir beschäftigen das Fußvolk.“ Er tröstet Lunara und zeigt sich als verlässlicher Kämpfer. Lara ist von seiner Stärke beeindruckt.
+- **[Dodo](/characters/dodo.md):** Brim arbeitet im Kampf eng mit Dodo zusammen. Er zieht die Schattenkreatur zu Boden, was Dodo den tödlichen Schlag ermöglicht.
+- **[Rotunas](/characters/rotunas.md):** In der Dämonenschlacht gibt Brim Rotunas die taktische Anweisung, sich um den Magier zu kümmern: „Rotunas, kümmer du dich um den Magier, wir beschäftigen das Fußvolk.“
+- **[Otis](/characters/otis.md):** Als Brim im Kampf gegen fliegende Kreaturen beinahe in die Tiefe gerissen wird, rettet Otis ihn.
+- **[Silberkerne](/factions/silberkerne.md):** In der [Freibeuterkneipe](/locations/freibeuterkneipe.md) bringt Brim das Gespräch auf die Silberkerne und zeigt damit Interesse an der Organisation.
+- **[Freibeuter](/npcs/freibeuter_harald.md)-Kapitän Harald:** In der Freibeuterkneipe prostet Brim Harald zu.
+- **[Coram Schildbrecher](/deities/coram_schildbrecher.md):** Brim erkennt die Statue [Coram Schildbrechers](/deities/coram_schildbrecher.md) und ordnet den Gott mithilfe eines Knowledge-Wurfs als einen der neuen Götter ein, der für Heldenschaft, Zusammenhalt und Gemeinschaft steht.
+- **Gildenhaus:** Brim weist seine Gefährten auf ein Gildengebäude hin und schlägt es als erste Anlaufstelle vor, um Informationen einzuholen.
 
 ## Chronologie
 
-**Session 2026-03-10:** Brim ist als neuer Begleiter dabei, ein Zwergenkrieger, der seit ein paar Tagen durch eine Zufallsbegegnung mit der Gilde „am Umdümpeln“ ist. Die Gruppe ist auf dem Weg nach Breska, das von einer unnatürlichen Nebelwand überzogen ist. Brim entdeckt die Ghule und warnt die Gruppe. Im Kampf zeigt er Stärke und nutzt seine Ketten, um die [Kreatur in der Splitterwelt](/npcs/kreatur_in_der_splitterwelt.md) zu fesseln. Er ist von der Splitterwelt überwältigt und markiert Stresspunkte. Er tröstet Lunara.
-
-**Session 2026-03-18:** Brim ist weiterhin dabei, noch keiner Gilde beigetreten. Er zeigt sich als taktischer Denker, der vorschlägt, die Gilde der Schilde aufzusuchen. Er beeindruckt Lara mit seiner Stärke und ist misstrauisch gegenüber Trickler. Er ist bereit, die Gruppe zu unterstützen, aber nicht als Anführer.
-
-**Session 2026-04-07:** Brim kämpft mit einer Axt. Er hat die Idee, die Flüssigkeit zu nutzen, um die unsichtbare Brücke zu markieren. Im Kampf gegen die [Fleischkreatur](/npcs/fleischkreatur.md) wird er verschluckt, aber von Dodo und Esterossa befreit. Er tritt den rosa Blob in die Grube und durchtrennt die Knotenpunkte der Adern. Er wählt bei einer Tür links, weil er „links immer ein gutes Gefühl“ hat.
-
-**Session 2026-04-09:** Brim kämpft tapfer gegen die Dämonen, tötet mehrere Gegner und wird von Otis vor dem Absturz gerettet. Er zeigt sich als zuverlässiger Kämpfer, der die Gruppe unterstützt. Im Kampf gegen einen größeren Dämonen verfehlt er seinen Angriff, wehrt aber den Gegenangriff mit Leichtigkeit ab. Er koordiniert das Vorgehen mit Rotunas.
+- **Vor oder während der ersten belegten Session:** Brim wird auf dem Schlachtfeld zwischen [Willauch](/locations/willauch.md) und [Brandau](/locations/brandau.md) kennengelernt. Eine Gefährtin hält fest, er werde die Gruppe „wahrscheinlich in Zukunft immer mal wieder begleiten“.
+- **Session 2026-03-10:** Brim ist als neuer Zwergenkrieger/Slayer bei der Gruppe. Er entdeckt vier im Hinterhalt lauernde Ghule und warnt: „Leute, wir haben Gesellschaft. Rechts eins, links drei, irgendwas. Macht euch bereit.“ Im Kampf gegen eine Schattenkreatur zieht er sie mit seinen Ketten zu Boden und ermöglicht Dodo den Todesstoß. Er ist von der [Splitterwelt](/domains/splitterwelt.md) sichtlich beeindruckt, benötigt nach eigener Aussage mehr Aufklärung und fragt, ob jede Mission so gefährlich sei.
+- **Session 2026-03-18:** Brim begleitet die Gruppe vorübergehend. Er erkennt die Statue Coram Schildbrechers, weist auf das Gildenhaus hin und empfiehlt es als Anlaufstelle. In der Freibeuterkneipe prostet er Harald zu und bringt das Gespräch auf die Silberkerne. Nach einem Kampf prüft er, ob die Luft rein ist, und schlägt vor, die Freibeuter zu befragen.
+- **Session 2026-04-07:** Brim agiert als Tank. Er schlägt mit der Axt zu, durchtrennt Adern und Knotenpunkte und trägt so dazu bei, ein Ritual zu stoppen. Er wird von einer Fleischkreatur verschluckt und später in einen Käfig teleportiert, kann aber befreit werden. Sein Vorschlag, einen rosa Klumpen in die Grube zu stoßen, erweist sich als entscheidend. Er nutzt Rüstungsslots, um Schaden zu absorbieren, und bleibt am Ende nur leicht verletzt. Zudem hilft er, eine Statue zu fischen.
+- **Session 2026-04-09:** Brim schlägt sich als „einsamer Zwergenkrieger“ durch die Dämonenhorden. Er greift einen größeren Dämon an, verfehlt zunächst, hält aber die Stellung. An einer Brücke unterstützt er die Verteidiger und tötet zwei Dämonen, indem er einen auf den anderen spießt. Beim Kampf gegen fliegende Kreaturen wird er beinahe in die Tiefe gerissen; Otis rettet ihn. Er überlebt die Schlacht und flieht auf [Inaros](/npcs/inaros.md).
+- **Session 2026-08-04:** Brim wird nur kurz als weiterer Held erwähnt, der in der Schlacht gegen die Dämonen mitkämpfte.
 
 ## Offene Fragen
 
-- Wie lange Brim die Gruppe noch begleiten wird, ist unklar — er ist ursprünglich nur vorübergehend dabei, bis sich die Lage von der Mission, bei der er dazugestoßen ist, beruhigt hat.
-- Ob Brim sich einer Gilde anschließen wird, ist offen.
+- Brims genaue Herkunft bleibt ungeklärt; er gibt lediglich an, nicht mit anderen Zwergen aufgewachsen zu sein und „von außerhalb“ zu kommen.
+- Ob und wann er sich einer Gilde anschließen wird, ist offen.
+- Die Dauer und Verbindlichkeit seiner Begleitung sind unklar; bislang heißt es nur, er werde die Gruppe „gelegentlich“ begleiten.
+- Seine Aussage, mehr Aufklärung über die Splitterwelt zu benötigen, deutet auf offene Wissenslücken hin, die in den Belegen nicht aufgelöst werden.
 
-## Belege
+# Belege
 
-[P-40] Session 2026-03-10 @ 00:00:35 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
-[P-41] Session 2026-03-18 @ 00:05:39 (https://www.youtube.com/watch?v=HHXxsASLrbQ)
-[P-45] Session 2026-04-07 @ 00:11:22 (https://www.youtube.com/watch?v=MAuQPMNY548)
-[P-46] Session 2026-04-09 @ 00:35:57 (https://www.youtube.com/watch?v=vcGkejr8_nI)
+[P-40] Session 2026-03-10 @ 00:20:50, https://www.youtube.com/watch?v=Kr9_AC2XtOw
+[P-41] Session 2026-03-18 @ 00:26:31, https://www.youtube.com/watch?v=HHXxsASLrbQ
+[P-43] Session 2026-03-24 @ 00:27:03, https://www.youtube.com/watch?v=Yj5BWJfg3Ag
+[P-45] Session 2026-04-07 @ 00:11:22, https://www.youtube.com/watch?v=MAuQPMNY548
+[P-46] Session 2026-04-09 @ 00:36:08, https://www.youtube.com/watch?v=vcGkejr8_nI
+[S1-02-A] Session 2026-08-04 @ 00:03:11, https://www.youtube.com/watch?v=qRj2t3wQHfs

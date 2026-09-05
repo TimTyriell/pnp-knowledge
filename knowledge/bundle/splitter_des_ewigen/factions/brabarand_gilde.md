@@ -1,8 +1,8 @@
 ---
 type: Faction
 title: Brabarand-Gilde
-description: Die Brabarand-Gilde ist eine berüchtigte Auftragskiller-Organisation.
-  Sie ist dafür bekannt, dass man sie anheuern kann, um Leute gezielt a…
+description: Die Brabarand-Gilde ist eine bekannte Assassinen-Gilde, deren Mitglieder
+  als Auftragskiller agieren. Über ihre Organisation, ihren Sitz ode…
 tags:
 - factions
 timestamp: '2025-07-22T00:00:00Z'
@@ -10,18 +10,16 @@ id: FACTION_BRABARAND_GILDE
 subtype: Gilde
 ---
 
-# Brabarand-Gilde
+Die **Brabarand-Gilde** ist eine bekannte [Assassinen](/factions/assassinen.md)-Gilde, deren Mitglieder als Auftragskiller agieren. Über ihre Organisation, ihren Sitz oder ihre Führungsstruktur ist bislang wenig bekannt; öffentlich kursiert vor allem ihr Ruf als gefährliche und gut ausgestattete Killerorganisation.
 
-Die **Brabarand-[Gilde](/factions/gilde_von_ehrenfels.md)** ist eine berüchtigte Auftragskiller-Organisation. Sie ist dafür bekannt, dass man sie anheuern kann, um Leute gezielt auszuschalten. In der Kampagne tritt sie als Gegnerin der Gruppe in Erscheinung, als diese von Mitgliedern der Gilde angegriffen wird.
+## Auftrag gegen die Heldengruppe
 
-## Auftragsmord und Ruf
+[Die Gilde](/factions/gilde_von_ehrenfels.md) wurde von einem unbekannten Auftraggeber angeheuert, um die Heldengruppe auszuschalten. Im Zuge dieses Auftrags versuchten mehrere ihrer Mitglieder, die Helden in einer Taverne zu ermorden. Das Attentat schlug fehl. Im Nachgang lud der [Gildemeister](/npcs/nox.md) die Gilde ein, die Überreste ihrer gefallenen Leute abzuholen – ein Hinweis darauf, dass die Gilde ihr Scheitern nicht ohne Weiteres auf sich beruhen lässt.
 
-Das Geschäft der Brabarand-Gilde sind gedungene Ausschaltungen: Wer die Gilde anheuert, kann über sie gezielt Personen aus dem Weg räumen lassen. Ihr Ruf als berüchtigte Organisation gründet auf dieser Tätigkeit.
+## Vorgehensweise und Ausrüstung
 
-## Angriff auf die Gruppe
-
-Im Verlauf der Session wird die Gruppe von Angreifern überfallen. [Lindo Laut](/characters/lindo_laut.md) identifiziert die Angreifer als Mitglieder der Brabarand-Gilde. Der Angriff erfolgt, weil ein [Kopfgeld auf die Gruppe](/events/kopfgeld_auf_die_gruppe.md) ausgesetzt ist.
+Die Attentäter der Brabarand-Gilde gingen bei ihrem Anschlag arbeitsteilig und mit verdeckten Methoden vor. Sie trugen Masken und setzten Gift, Armbrüste und Dolche ein, was auf eine Ausbildung in lautlosem und hinterhältigem Kampf schließen lässt. Nähere Details zu Hierarchie, Rekrutierung oder internen Bräuchen der Gilde sind aus den bisherigen Ereignissen nicht bekannt.
 
 # Belege
 
-[P-15] Session 2025-07-22 @ 01:14:00 – https://www.youtube.com/watch?v=BRRCUgW4xRo
+[P-15] Session 2025-07-22 @ 01:14:50 – https://www.youtube.com/watch?v=BRRCUgW4xRo

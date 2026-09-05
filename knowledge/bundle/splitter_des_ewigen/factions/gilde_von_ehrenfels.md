@@ -1,8 +1,8 @@
 ---
 type: Faction
 title: Die Gilde von Ehrenfels
-description: Die Gilde von Ehrenfels ist eine Organisation, die Abenteuer und Aufträge
-  vergibt und als Heimatbasis der Heldengruppe dient. Sie ist der z…
+description: Die Gilde von Ehrenfels ist eine Abenteurergilde mit Sitz in Ehrenfels.
+  Sie nimmt gefährliche Aufträge an, verteilt sie an ihre Mitglieder…
 tags:
 - factions
 timestamp: '2026-08-12T00:00:00Z'
@@ -22,135 +22,68 @@ aliases:
 - Gilde
 ---
 
-# Die Gilde von Ehrenfels
+# Überblick
 
-## Überblick
+Die Gilde von [Ehrenfels](/locations/ehrenfels.md) ist eine Abenteurergilde mit Sitz in [Ehrenfels](/locations/ehrenfels.md). Sie nimmt gefährliche Aufträge an, verteilt sie an ihre Mitglieder und fungiert für die Heldengruppe über weite Teile der Kampagne als Arbeitgeberin, Heimatbasis und organisatorisches Zentrum. Zu ihren Mitgliedern gehören oder gehörten unter anderem [Rotunas](/characters/rotunas.md), [Valeria](/characters/valeria.md), [Cookie](/characters/cookie.md), [Dodo](/characters/dodo.md), [Esterossa](/characters/esterossa.md), [Lindo Laut](/characters/lindo_laut.md), [Nyrella](/characters/nyrella.md) und [Lunara Velora](/characters/lunara_velora.md). Die Gilde unterhält eine Gildenhalle, ein Auftragsbrett, eine Taverne, Heiler, ein Gildenschiff samt Crew sowie einen Außenposten mit einem Rift.
 
-Die Gilde von [Ehrenfels](/locations/ehrenfels.md) ist eine Organisation, die Abenteuer und Aufträge vergibt und als Heimatbasis der Heldengruppe dient. Sie ist der zentrale Grundpfeiler der Geschichte: In der Gilde werden wöchentlich Aufträge verteilt, aus denen die Spieler wählen können; manchmal gibt es auch Zeitquests oder Hauptquests. Die Gilde hat ihren Hauptsitz in Ehrenfels, einem Bergdorf auf den Eulenbergen, und besitzt darüber hinaus Außenposten, ein Trainingsgelände und ein Gildenschiff. Sie bildet Krieger aus, bewacht ein [Portal](/locations/portal.md) und studiert [Dämonen](/factions/daemonen.md), um ihre Feinde zu verstehen.
+# Rolle in der Kampagne
 
-## Rolle in der Kampagne
+Die Gilde ist das organisatorische Zentrum, von dem die meisten Missionen ausgehen. Bereits zu Beginn erfährt sie von einem geplanten Goblin-Angriff auf [Breska](/locations/breska.md) und entsendet [Rotunas](/characters/rotunas.md) und [Valeria](/characters/valeria.md), um das Dorf zu warnen und zu verteidigen; die Gruppe beruft sich dabei auf das Siegel der Gilde als Legitimation ([1]). In den folgenden Sessions tritt die Gilde immer wieder als Auftraggeberin auf: Sie vergibt die Säuberung einer Krypta ([2]), die Erkundung der [Sanddorn-Inseln](/locations/sanddorninseln.md) ([3]), eine Mission in die Berge von [Zebros](/factions/koenigreich_zebros.md) ([5]), die Suche nach der „[Hag](/npcs/lenra.md)“ ([7]), einen Auftrag in [Steinbachtal](/locations/steinbachtal.md) ([11]), die Vernichtung eines Golems ([13]) und die Erkundung von [Breska](/locations/breska.md) ([16]). Sie stellt Heiler und Informationen bereit ([12]) und dient den Charakteren als Heimatbasis, in die sie nach abgeschlossenen Missionen zurückkehren ([8]). Nach Verlusten organisiert die Gilde Trauer und Zusammenhalt ([14], [19]).
 
-Die Gilde ist die Organisation, der die Spielercharaktere angehören und für die sie im Laufe der Kampagne zahlreiche Missionen übernehmen. Sie vergibt Aufträge wie die Warnung [Brechkas](/locations/breska.md) vor dem Goblinangriff, die Säuberung einer [Krypta](/locations/krypta.md), die Erkundung der [Sanddorninseln](/locations/sanddorninseln.md), die Untersuchung der Untoten in den Bergen von [Zebros](/factions/koenigreich_zebros.md), die Suche nach der [Hag](/npcs/lenra.md), das Sammeln von Informationen über die Untotenarmee in [Steinbachtal](/locations/steinbachtal.md) und die Lösung des Konflikts zwischen Zwergen und [Goblins](/npcs/pilz_goblins.md). Die Gruppe kennt sich durch die Gilde, sei es nur flüchtig oder durch gemeinsame Missionen.
+# Wichtige Merkmale
 
-Die Gilde stellt der Gruppe ein Haus bereit und versorgt sie mit Aufträgen. Sie schickt einen Raben voraus, um die Ankunft der Gruppe anzukündigen, und der Gildenmeister versorgt die Gruppe mit Informationen, etwa über die Einwohnerzahl von Steinbachtal. Die Gilde profitiert nach Aussage des Grafen von den Informationen, die die Gruppe sammelt.
+- **Sitz:** Die Gilde hat ihren Sitz in [Ehrenfels](/locations/ehrenfels.md), einem Bergdorf auf einem großen Berg in den [Eulenbergen](/locations/eulenbergen.md). Die Stadt ist klein, aber schwer zu erreichen; eine Armee würde „niemals hier hochkommen“ oder nur unter großen Verlusten ([18]). Innerhalb der Stadt gibt es eine Gildenhalle ([8]), ein Auftragsbrett und eine Taverne ([14]) sowie ein Übungsgelände ([10]).
+- **Führung:** An der Spitze steht ein Gildenmeister. Über weite Strecken ist dies [Nox](/npcs/nox.md), der sich der Gruppe an einem Außenposten vorstellt: „mein Name ist Nox“ ([6]). Nach Nox’ Vertreibung hat Meister Pirandras das Sagen ([20]).
+- **Infrastruktur:** Die Gilde verfügt über ein Gildenschiff samt Crew, zu der Kapitän [Lobrecht](/npcs/lobrecht.md) und [Miaomani](/npcs/miaomani.md) gehören ([3]), sowie über einen Außenposten mit einem Rift, das zu Trainingszwecken genutzt wird. [Nox](/npcs/nox.md) bewacht dort den Zugang, um die Kreaturen der Alten Götter zu studieren ([6]).
+- **Arbeitsweise:** Die Gilde nimmt gefährliche Aufträge an und verteilt sie wöchentlich an ihre Mitglieder ([15]). Sie kommuniziert per Raben, kündigt die Ankunft ihrer Gruppen an und bezahlt Unterkünfte ([7]). Ihre Aufträge gelten als „high-value-Target-Aufträge“ ([18]). In der Zeit der Verteidigung von [Ehrenfels](/locations/ehrenfels.md) ruft sie Abenteurer herbei, die für bloße Anwesenheit bezahlt werden – ein laut Beleg „noch nie vorgekommener“ Vorgang ([18]).
+- **Ruf und Zustand:** Die Ehrenfels-Gilde ist bekannt für hochwertige Aufträge ([18]). Nach den späteren Ereignissen ist sie geschwächt, aber die Mitglieder halten zusammen ([19]). Die Helden gelten als Erben von [Rotunas](/characters/rotunas.md) und werden von der Stadtbevölkerung respektiert; über eine Umbenennung in „Rotunas Erben“ wird nachgedacht ([19]).
 
-## Wichtige Merkmale
+# Beziehungen und Verbindungen
 
-### Sitz und Lage
+- **[Nox](/npcs/nox.md):** langjähriger Gildenmeister, bewacht das Rift, führt die Verteidigung von [Ehrenfels](/locations/ehrenfels.md) und wird später vertrieben ([6], [18], [20]).
+- **Pirandras:** übernimmt nach Nox’ Vertreibung die Leitung ([20]).
+- **Gefährten von Rotunas:** Die Gilde ist ihre Arbeitgeberin und Heimatbasis; die Gruppe agiert im Auftrag der Gilde und nimmt als Gildenmitglieder Aufträge an ([1]–[16], [20]).
+- **[Joar Vanur](/npcs/joar_vanur.md):** sucht die Gilde auf, um Hilfe gegen die Überfälle auf [Salzbach](/locations/salzbach.md) zu erhalten; die Gruppe nimmt den Auftrag als Gildenmitglieder an ([20]).
+- **[Voras](/npcs/voras.md) und [Abyssalis](/domains/splitterwelt.md):** Die Gilde hat offenbar Verbindungen zu Voras und plant Aktivitäten in [Abyssalis](/domains/splitterwelt.md) ([16]).
+- **[Flüchtlinge](/factions/fluechtlinge.md):** Der Gildenmeister unterstützt die Gruppe bei der Landnahme, ist aber nicht bereit, viele Flüchtlinge dauerhaft aufzunehmen ([12]).
+- **[Ehrenfels](/locations/ehrenfels.md):** Sitz und Verteidigungsort; viele Mitglieder kämpfen in der Schlacht um die Stadt ([18]).
 
-Der Hauptsitz der Gilde befindet sich in Ehrenfels, einem kleinen Dorf auf einem großen Berg in den Eulenbergen. Die Stadt ist gut bewacht und schwer zu erreichen – eine Armee würde niemals hier hochkommen, oder zumindest nur unter großen Verlusten. In Ehrenfels leben Menschen und Anderlinge sehr friedlich miteinander zusammen. Die Stadt liegt in den Bergen, sodass im Winter Schnee liegt und der Fluss langsam zu gefrieren beginnt. Die Gilde verfügt über eine Krankenstation, eine Taverne und ein Trainingsgelände. [Lindo Laut](/characters/lindo_laut.md) kann mit seinem [Stab](/items/lindo_lauts_stab.md) ein Portal zum Trainingsgelände der Gilde öffnen, das ein großes Stück westlich von Ehrenfels liegt.
+# Chronologie
 
-### Auftragsvergabe
+- **Frühjahr/Sommer 2025:** Die Gilde erfährt von einem Goblin-Angriff auf [Breska](/locations/breska.md) und entsendet [Rotunas](/characters/rotunas.md) und [Valeria](/characters/valeria.md) ([1]). Sie vergibt die Krypta-Mission und organisiert anschließend die Verteidigung von [Breska](/locations/breska.md) ([2]). Nach der Rückkehr der Gruppe werden neue Aufträge vergeben, darunter die Erkundung der Sanddorn-Inseln; das Gildenschiff wird genutzt ([3]). [Auranil](/npcs/auranil.md) kündigt an, einen Brief an die Gilde zu schreiben ([4]). Es folgt die Mission in die Berge von [Zebros](/factions/koenigreich_zebros.md) ([5]).
+- **Mai–Juni 2025:** An einem Außenposten mit Rift begegnet die Gruppe erstmals Gildenmeister [Nox](/npcs/nox.md), der ein Trainingsritual vorbereitet und den Zugang zum Rift bewacht ([6]). Die Gilde beauftragt die Gruppe, die „Hag“ zu finden, und kündigt sie in [Cornivum](/locations/cornivum.md) per Raben an ([7]). Die Gildenhalle wird als Heimatbasis erwähnt ([8]). Ein Graf erwähnt, die Gilde würde von einer Kontrolle über [Zebros](/factions/koenigreich_zebros.md) profitieren ([9]).
+- **Juli 2025:** Nach dem Portal-Erlebnis erscheint der Gildenmeister und warnt die Gruppe, über das Erlebte zu schweigen: „Ihr solltet darüber nicht reden. Ihr solltet darüber niemandem erzählen“ ([10]).
+- **September–November 2025:** Die Gilde hat ihren Sitz in [Ehrenfels](/locations/ehrenfels.md) und schickt die Gruppe nach [Steinbachtal](/locations/steinbachtal.md) ([11]). Sie stellt Heiler und Informationen bereit; der Gildenmeister unterstützt die Landnahme, will aber nicht viele Flüchtlinge dauerhaft aufnehmen ([12]). Sie erteilt den Auftrag zur Vernichtung des Golems ([13]). In der Gildentaverne wird um [Cookie](/characters/cookie.md) getrauert; eine andere Gildengruppe ist bei einem Auftrag ums Leben gekommen, und der Gildenmeister erscheint am Ende blutverschmiert ([14]).
+- **Januar–April 2026:** Die Gilde tritt bei Bürokratieaufgaben nur indirekt auf ([15]). Sie hat weiterhin Sitz in [Ehrenfels](/locations/ehrenfels.md) und erteilt den Auftrag, [Breska](/locations/breska.md) zu erkunden; [Nox](/npcs/nox.md) ist Gildenmeister, und es gibt Verbindungen zu [Voras](/npcs/voras.md) sowie Pläne in [Abyssalis](/domains/splitterwelt.md) ([16]). Die Existenz der Gilde hängt laut Spielleiter möglicherweise von einem kleinen Wesen aus einem Portal ab ([17]). Die Ehrenfels-Gilde ruft viele Abenteurer nach [Ehrenfels](/locations/ehrenfels.md), die für bloße Anwesenheit bezahlt werden; [Nox](/npcs/nox.md) führt die Verteidigung, und viele Mitglieder kämpfen in der Schlacht ([18]).
+- **August 2026:** Die Gilde ist durch die Ereignisse geschwächt, aber die Mitglieder halten zusammen; die Helden gelten als Erben von [Rotunas](/characters/rotunas.md), und eine Umbenennung in „Rotunas Erben“ wird erwogen ([19]). [Nox](/npcs/nox.md) ist inzwischen vertrieben, und Meister Pirandras hat das Sagen; [Joar Vanur](/npcs/joar_vanur.md) sucht die Gilde wegen der Überfälle auf [Salzbach](/locations/salzbach.md) auf ([20]).
 
-Die Ehrenfels-Gilde ist sehr gut dafür bekannt, dass sie High-Value-Target-Aufträge hat. Die Aufträge werden wöchentlich verteilt, und die Spieler können wählen, welchen Auftrag sie annehmen. In den letzten Wochen vor der Dämonenbedrohung haben sich die Quests verdichtet, und es gab einen Aufruf, Leute nach Ehrenfels zu rufen – mit der ungewöhnlichen Aufgabe, einfach nur für einige Wochen in Ehrenfels zu verweilen und dafür bezahlt zu werden. Dies war ein Novum und kam zuvor noch nie vor.
+# Offene Fragen
 
-### Bewachung und Verteidigung
+- Was genau hat es mit dem kleinen Wesen aus dem Portal auf sich, von dem laut Spielleiter die weitere Existenz der Gilde abhängen könnte? ([17])
+- Welche Aktivitäten plant die Gilde in [Abyssalis](/domains/splitterwelt.md), und wie ist ihre Verbindung zu [Voras](/npcs/voras.md)? ([16])
+- Warum wurde [Nox](/npcs/nox.md) vertrieben, und wo befindet er sich? Gerüchte, er sei tot oder verschwunden, sind unbestätigt. ([20])
+- Warum verhängte der Gildenmeister nach dem Portal-Erlebnis ein so striktes Schweigegebot? ([10])
+- Warum wurden kurz vor der Schlacht zahlreiche Abenteurer für bloße Anwesenheit in [Ehrenfels](/locations/ehrenfels.md) bezahlt – ein Vorgang, der „noch nie vorgekommen“ ist? ([18])
 
-Die Gilde besitzt Außenposten und bildet Krieger aus. Sie bewacht ein Portal und studiert die Dämonen, um ihre Feinde zu verstehen. Die Stadt Ehrenfels wird von Soldaten bewacht, die die Gruppe fast alle per Du kennen. Die Gilde verteidigt die Stadt gegen die Dämonen.
+# Belege
 
-## Beziehungen und Verbindungen
-
-### Der Gildenmeister Nox
-
-Nox ist der Gildenmeister der Gilde von Ehrenfels. Er ist ein wichtiger Förderer der Gruppe und hat ein persönliches Interesse an ihr. Er schickt Raben hinter der Gruppe her, um Lindo Laut im Auge zu behalten, und hat einen Zauber entwickelt, der für eine Weile alle übernatürlichen Kräfte unterbindet. Einige Mitglieder der Gilde haben Misstrauen gegenüber der Gruppe geäußert, insbesondere wegen Lindo Lauts Zustand – sie halten den aktuellen Stand der Gruppe für ein instabiles Modell. Nox selbst verteidigt die Gruppe und lobt ihre Arbeit: „Ihr habt auf jeden Fall gute Arbeit geleistet. Andernfalls hätte ich nicht so viel Positives von euch gehört."
-
-Gerüchten zufolge ist Nox tot oder verschwunden. In der Session vom 29. Juli 2026 berichtet die Gruppe, dass sie nach Ehrenfels zurückkehrt, um Nox wiederzusehen, „einen unserer wichtigsten Förderer, den Gildenmeister unserer Gilde". In der Session vom 12. August 2026 wird berichtet, dass Nox verscheucht wurde und die Gruppe nach einem neuen Auftrag sucht. Ein Händler berichtet, er habe den Gildenmeister gesucht, ihn aber nicht gefunden: „Scheinbar ist er nicht da, wurde mir gesagt." Wer aktuell das Sagen hat, ist [Meister Pyrandras](/npcs/meister_pyrandras.md).
-
-### Weitere Verbindungen
-
-- **[Joar Vanur](/npcs/joar_vanur.md)**: Erweitert die Gilde um einen neuen Auftrag.
-- **Meister Pyrandras**: Übernimmt die Führung der Gilde, nachdem Nox verschwunden ist.
-- **Lindo Laut**: Mitglied der Gruppe, der ein Portal zum Trainingsgelände der Gilde öffnen kann.
-- **[Der Graf](/npcs/voras.md)**: Erwähnt, dass die Gilde von den Informationen der Gruppe profitieren würde.
-
-## Chronologie
-
-### 2025-04-09: Warnung Brechkas
-
-Die Gruppe gehört zur Gilde und wurde beauftragt, Breska vor dem Goblinangriff zu warnen. Sie haben ein Gildensiegel als Nachweis. Die Gruppe kennt sich durch die Gildenhalle und kann ohne große Bedenken als Team agieren. Sie haben den Auftrag angenommen, den eine andere Gruppe kurz zuvor erledigt hatte – praktisch die Fortsetzung davon.
-
-### 2025-04-15: Krypta-Säuberung
-
-Die Gilde beauftragt die Gruppe, die Krypta zu finden und zu säubern, in der sich scheinbar etwas verstecken soll – im Sinne von bösen Energien loszuwerden. Die Gruppe kennt sich alle, sei es nur flüchtig durch die Gilde oder durch die letzte Mission.
-
-### 2025-04-30: Rückkehr und neue Aufträge
-
-Die Gruppe kehrt zur Gilde zurück und wird für ihre abgeschlossene Mission gefeiert. Die Gilde hat mehrere Aufträge erhalten: die Erkundung der Sanddorninseln, einen diplomatischen Besuch beim neuen Vampirfürsten und eine geheime Mission, die nicht von der Gilde stammte und die Ermordung des Vampirfürsten vorsah. Die Gruppe entscheidet sich gegen die geheime Mission. Sie reisen mit dem Gildenschiff unter ihrer Flagge zu den Sanddorninseln, begleitet von fünf NPCs.
-
-### 2025-05-14: Untote in den Bergen von Zebros
-
-Die Gruppe soll herausfinden, warum es in den Bergen von Zebros [Untote](/factions/belorus_untotenarmee.md) gibt. Die Gilde vergibt Missionen und ist die Heimatbasis der Charaktere.
-
-### 2025-06-03: Suche nach der Hag
-
-Die Gilde hat die Gruppe ausgesandt, um die Hag zu finden. Sie hat einen Raben nach [Cornivum](/locations/cornivum.md) geschickt, um die Ankunft anzukündigen. Der Älteste des Dorfes, [Rodek](/npcs/rodek.md), begrüßt die Gruppe: „Die Gilde hatte bereits einen Raben vorausgeschickt und hatte gesagt, dass ihr kommen würdet."
-
-### 2025-06-25: Informationen über den dunklen Paladin
-
-Die Gruppe berichtet dem Grafen von ihren Erlebnissen auf dem Berg Zebros, einschließlich der Begegnung mit dem dunklen Paladin. Der Graf bemerkt: „Die Gilde würde ebenfalls davon profitieren." Die Gruppe hat gegen den dunklen Paladin und seine Bande von Untoten gekämpft und überlebt, was der Graf als wahrhaftig beeindruckend bezeichnet.
-
-### 2025-09-09: Steinbachtal
-
-Die Gilde hat die Gruppe nach Steinbachtal geschickt, um Informationen über die Untotenarmee zu sammeln. [Der Gildenmeister](/npcs/nox.md) hat ihnen Informationen über die Einwohnerzahl gegeben – etwa 100 bis 200 Leute haben dort gelebt. Die Stadt wurde komplett überrannt, mit Kampfspuren an den Wänden und Schwerterabdrücken am Boden, aber keine Leichen.
-
-### 2025-09-23: Rückkehr zur Gilde
-
-Die Gruppe kehrt zum Gildenhauptsitz zurück, um [Rotunas](/characters/rotunas.md) zu heilen. Die Gilde ist ein kleines Dorf auf einem Berg, gut bewacht. Der Gildenmeister hat seinen Sitz hier. Rotunas verbringt einige Zeit auf der Krankenstation in der Gilde.
-
-### 2025-11-18: Haus der Gruppe
-
-Die Gilde hat ein Haus für die Gruppe bereitgestellt. Ehrenfels liegt in den Bergen, und im Winter liegt Schnee. Die Gruppe kommt an der Taverne an, wo die Stimmung innerhalb des Gebäudes stattfindet.
-
-### 2026-01-06: Wöchentliche Aufträge
-
-Die Gilde vergibt wöchentlich Aufträge. Die Gruppe hat sich einen Namen gemacht und ist bekannt. Die Heldengruppe wird von einer großen untoten Horde von Zebros bedroht, die sich über die Lande erstreckt. Die Helden haben einer großen Truppe von Flüchtlingen geholfen, sicher den Winter zu überwintern.
-
-### 2026-01-13: Portal zum Trainingsgelände
-
-Die Gilde in Ehrenfels wird als möglicher Zufluchtsort für einige [Flüchtlinge](/factions/fluechtlinge.md) erwähnt. Lindo Laut hat ein Portal zum Trainingsgelände der Gilde, das ein großes Stück westlich von Ehrenfels liegt. Man würde sich den Weg an Presca vorbeisparen.
-
-### 2026-01-27: Konflikt zwischen Zwergen und Goblins
-
-Die Gilde hat die Abenteurer mit der Mission beauftragt, den Konflikt zwischen Zwergen und Goblins zu lösen. Die Gruppe stellt sich als „von der Gilde entsandt" vor und wird in die [Festung](/locations/festung.md) der [Zwerge](/factions/zwerge.md) eingelassen.
-
-### 2026-02-17: Audienz beim Gildenmeister
-
-Nox empfängt die Gruppe und lobt ihre Arbeit. Er hat Raben hinter der Gruppe hergeschickt, um Lindo Laut im Auge zu behalten. Einige Mitglieder der Gilde haben Misstrauen geäußert und halten den aktuellen Zustand der Gruppe für instabil. Nox hat einen Zauber entwickelt, der für eine Weile alle übernatürlichen Kräfte unterbindet.
-
-### 2026-04-09: Verteidigung gegen Dämonen
-
-Die Ehrenfels-Gilde wird von Nox angeführt und verteidigt die Stadt gegen die Dämonen. Die Gilde hat High-Value-Target-Aufträge, und in den letzten Wochen haben sich die Quests verdichtet. Es gab einen Aufruf, Leute nach Ehrenfels zu rufen – mit der Aufgabe, einfach nur für einige Wochen zu verweilen. Die Leute werden mehr oder weniger bezahlt fürs Dasein, was es zuvor noch nie gegeben hat.
-
-### 2026-07-29: Rückkehr nach Ehrenfels
-
-Die Gruppe kehrt nach Ehrenfels zurück, weil sie dort am meisten Support vermutet und Nox wiedersehen will, „einen unserer wichtigsten Förderer, den Gildenmeister unserer Gilde". Die Stadt war wie leergefegt, und die Gruppe hat sich auf den direkten Weg nach Ehrenfels gemacht. Die Wachen begrüßen die Gruppe freudig: „Ihr lebt! Ihr lebt! Wahnsinn! Ich hätte niemals gedacht, euch wiederzusehen!"
-
-### 2026-08-12: Nox verschwunden
-
-Nox ist als Gildenmeister verscheucht worden. Die Gruppe sucht nach einem neuen Auftrag. Ein Händler berichtet, dass er den Gildenmeister gesucht, aber nicht gefunden hat. Meister Pyrandras hat aktuell das Sagen. Die Gruppe kann als Mitglieder der Gilde auch gewisse Aufträge direkt annehmen.
-
-## Offene Fragen
-
-- Was ist mit Nox geschehen? Gerüchten zufolge ist er tot oder verschwunden, aber die Gruppe hofft, ihn wiederzusehen. Sein Verbleib ist ungeklärt.
-- Wer ist der Zwischenmann, von dem der Händler spricht? Er wollte sich mit ihm treffen und hat bereits „einige wichtige Dinge in die Wege geleitet", aber sein Name und seine Identität sind unbekannt.
-- Was ist der genaue Zweck des Portals, das die Gilde bewacht, und welche Rolle spielen die Dämonen, die die Gilde studiert?
-
-## Belege
-
-1. Session 2025-04-09 @ 00:02:59 (https://www.youtube.com/watch?v=1PWdwvun5ow)
-2. Session 2025-04-15 @ 00:02:20 (https://www.youtube.com/watch?v=YCpAz_syjaY)
-3. Session 2025-04-30 @ 00:03:00 (https://www.youtube.com/watch?v=fsCOiSkKKTE)
-4. Session 2025-05-14 @ 00:01:30 (https://www.youtube.com/watch?v=5eAEDN5ra-4)
-5. Session 2025-05-27 @ 00:15:30 (https://www.youtube.com/watch?v=bamCIB_CkR8)
-6. Session 2025-06-03 @ 00:07:30 (https://www.youtube.com/watch?v=jtYR4Je0a18)
-7. Session 2025-06-25 @ 00:38:00 (https://www.youtube.com/watch?v=tpkO9uGw6-I)
-8. Session 2025-09-09 @ 00:29:31 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
-9. Session 2025-09-23 @ 00:13:03 (https://www.youtube.com/watch?v=DGzfqVigS0g)
-10. Session 2025-11-18 @ 00:00:00 (https://www.youtube.com/watch?v=w__ahowb9p0)
-11. Session 2026-01-06 @ 00:12:18 (https://www.youtube.com/watch?v=VGw81seFvbo)
-12. Session 2026-01-13 @ 00:45:25 (https://www.youtube.com/watch?v=w4LB1s9_3rs)
-13. Session 2026-01-27 @ 00:03:54 (https://www.youtube.com/watch?v=9RzvnnWzV7E)
-14. Session 2026-02-17 @ 00:46:30 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
-15. Session 2026-04-09 @ 00:07:00 (https://www.youtube.com/watch?v=vcGkejr8_nI)
-16. Session 2026-07-29 @ 00:17:53 (https://www.youtube.com/watch?v=umGyKLkefJI)
-17. Session 2026-08-12 @ 01:20:27 (https://www.youtube.com/watch?v=piUv11DCwDw)
+1. Session 2025-04-09 @ 00:02:36 (https://www.youtube.com/watch?v=1PWdwvun5ow)
+2. Session 2025-04-15 @ 00:01:53 (https://www.youtube.com/watch?v=YCpAz_syjaY)
+3. Session 2025-04-30 @ 00:02:58 (https://www.youtube.com/watch?v=fsCOiSkKKTE)
+4. Session 2025-05-06 @ 01:58:11 (https://www.youtube.com/watch?v=e0v6AFGd4mE)
+5. Session 2025-05-14 @ 00:00:01 (https://www.youtube.com/watch?v=5eAEDN5ra-4)
+6. Session 2025-05-27 @ 00:28:07 (https://www.youtube.com/watch?v=bamCIB_CkR8)
+7. Session 2025-06-03 @ 00:07:40 (https://www.youtube.com/watch?v=jtYR4Je0a18)
+8. Session 2025-06-10 @ 00:09:07 (https://www.youtube.com/watch?v=cLkCu3Iq3y8)
+9. Session 2025-06-25 @ 00:38:04 (https://www.youtube.com/watch?v=tpkO9uGw6-I)
+10. Session 2025-07-09 @ 01:23:10 (https://www.youtube.com/watch?v=XOnHa6CmDbo)
+11. Session 2025-09-09 @ 00:06:22 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
+12. Session 2025-09-23 @ 00:20:06 (https://www.youtube.com/watch?v=DGzfqVigS0g)
+13. Session 2025-10-07 @ 00:04:25 (https://www.youtube.com/watch?v=qVAF_54S8Vw)
+14. Session 2025-11-18 @ 00:13:16 (https://www.youtube.com/watch?v=w__ahowb9p0)
+15. Session 2026-01-06 @ 00:12:18 (https://www.youtube.com/watch?v=VGw81seFvbo)
+16. Session 2026-03-10 @ 00:14:01 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
+17. Session 2026-04-07 @ 02:03:22 (https://www.youtube.com/watch?v=MAuQPMNY548)
+18. Session 2026-04-09 @ 00:06:50 (https://www.youtube.com/watch?v=vcGkejr8_nI)
+19. Session 2026-08-04 @ 00:03:11 (https://www.youtube.com/watch?v=qRj2t3wQHfs)
+20. Session 2026-08-12 @ 01:20:27 (https://www.youtube.com/watch?v=piUv11DCwDw)

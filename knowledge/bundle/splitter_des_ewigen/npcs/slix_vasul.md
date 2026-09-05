@@ -1,107 +1,75 @@
 ---
 type: NPC
 title: Slix
-description: Slix ist eine teuflische Essenz und der versteckte fünfte Teil Vhar'Zuls.
-  Im *Buch der vier Seelen* ist er nicht verzeichnet, weshalb dort…
+description: Slix ist ein mächtiger, bösartiger Splitter des alten Gottes Vhar'Zul.
+  Er ist der versteckte fünfte Teil Vhar'Zuls – im *Buch der vier Seel…
 tags:
 - npcs
-timestamp: '2026-03-31T00:00:00Z'
+timestamp: '2026-08-12T00:00:00Z'
 id: NPC_SLIX_VASUL
-subtype: Alter Gott
+subtype: Sonstiges
 aliases:
 - Slix/Vasul
 - Slicks
 ---
 
-# Slix
-
 ## Überblick
 
-Slix ist eine teuflische Essenz und der versteckte fünfte Teil [Vhar'Zuls](/deities/vharzul.md). Im *Buch der vier Seelen* ist er nicht verzeichnet, weshalb dort nur von vier Seelen die Rede ist — er gehört jedoch zu den vier bösartigen Anteilen des alten Gottes. Er lebt als eigenständige, bösartige Persönlichkeit in [Lindo Laut](/characters/lindo_laut.md) und kann dessen Körper zeitweise vollständig übernehmen. Nach außen tritt er als Diener Lindo Lauts auf, in Wahrheit verfolgt er jedoch eigene, zerstörerische Ziele.
+Slix ist ein mächtiger, bösartiger Splitter des alten Gottes [Vhar'Zul](/deities/vharzul.md). Er ist der versteckte fünfte Teil [Vhar'Zuls](/deities/vharzul.md) – im *Buch der vier Seelen* nicht verzeichnet, weshalb dort nur von vier Seelen die Rede ist – und gehört zu den vier bösartigen Anteilen des alten Gottes. Über weite Strecken der Kampagne wohnt Slix in [Lindo Laut](/characters/lindo_laut.md), zunächst getarnt als ergebener Diener, später offen als kontrollierende zweite Persönlichkeit. Er tritt als unheimliche Gestalt in Kapuze mit Totenschädeln und Knochen auf, zeigt sich arrogant und gewalttätig und ist in der Lage, Lindos Körper zeitweise vollständig zu übernehmen. Nach mehreren Ausbrüchen wird er von Vhar'Zul aus Lindo herausgelöst und endgültig vernichtet.
 
 ## Rolle in der Kampagne
 
-Slix ist der zentrale Antagonist in Lindo Lauts persönlicher Entwicklung. Er ist die Verkörperung der dunklen Macht, die durch das [Amulett des Heiligen Duran](/items/amulett_des_heiligen_duran.md) in Lindo Laut gelangt ist. Über mehrere Sessions hinweg versucht er, Lindo Laut zu manipulieren und die Kontrolle über ihn zu gewinnen. Er treibt Lindo Laut dazu, seine Kräfte zu nutzen, und fordert von der Gruppe Respekt und Unterwerfung. Sein Einfluss nimmt stetig zu, bis er schließlich offen ausbricht und die Gruppe angreift. Die Gruppe muss sich entscheiden, wie sie mit dieser Bedrohung umgeht — die [Entfernung von Slix](/events/entfernung_von_slix.md) wird zu einem zentralen Ziel, das die Reise ins Abyssalis motiviert.
+Slix ist ein zentraler innerer Antagonist der Gruppe. Anfangs erscheint er Lindo Laut als „ehrenvoller Diener“ und berät ihn in Fragen der Magie und der Zwischenwelt. Schon früh drängt er Lindo, seine Macht aktiv zu nutzen; später entpuppt er sich als eigenständige, bösartige Präsenz, die Lindos Körper übernehmen und die Gefährten bedrohen kann. Er tötet Lionel, kostet Rotunas einen Arm und zwingt die Gruppe, sich mit Lindos innerem Dämon auseinanderzusetzen. Die Angst vor einem erneuten Ausbruch motiviert die Suche nach Wegen, Slix zu entfernen oder zu kontrollieren – darunter einen Ausflug ins Abyssalis. Seine Zerstörung durch Vhar'Zul ist zugleich Teil der Rückkehr des alten Gottes und beendet die akute Bedrohung durch Slix.
 
 ## Wichtige Merkmale
 
-### Äußere Erscheinung
+Slix besitzt zwei deutlich unterscheidbare Erscheinungsformen. Als „Diener“ taucht er aus dem Nichts auf, tief in eine Kapuze gehüllt, mit vielen Accessoires am Körper: kleine Totenschädel, Rattenschädel, Knochen, teilweise blutverschmiert und dreckig. Von ihm geht ein bitterer Geruch aus, den Lindo Laut als „eher sympathisch als unangenehm“ empfindet. Er begrüßt Lindo mit Verneigung und Kniefall und nennt ihn „Meister“. In seiner dämonischen Form schwebt er mit auf dem Rücken verkreuzten Händen in einen Raum, grinst frech und spricht herablassend.
 
-Slix erscheint als in eine Kapuze gehüllte Gestalt, die mit Totenschädeln, Rattenschädeln und Knochen behängt ist. Er ist blutverschmiert und dreckig, und ein bitterer Geruch geht von ihm aus. Er begrüßt Lindo Laut mit einer Verneigung und einem Kniefall. In der [Pocket Domain](/domains/pocket_domain.md) schwebt er mit auf dem Rücken verkreuzten Händen und flachen Füßen in den Raum hinein.
+Sein Wesen ist bösartig, arrogant, gewalttätig und fordernd. Er brüllt Kreaturen an, befiehlt anderen niederzuknien und droht mit Qualen. Gleichzeitig zeigt er am Ende Angst vor Vhar'Zul: Als der alte Gott zurückkehrt, schreit Slix in Lindo auf und versucht verzweifelt, seine Ketten zu sprengen. Gegenüber Lindo tritt er lange als unterwürfiger Diener auf, übernimmt aber zunehmend die Kontrolle und kehrt das Herrschaftsverhältnis um.
 
-### Wesen und Verhalten
-
-Slix ist arrogant, grausam und fordernd. Er bezeichnet sich selbst als „erhabenen Diener“ Lindo Lauts, verfolgt aber eigene Ziele. Er ist manipulativ und versucht, Lindo Laut zu kontrollieren, indem er ihm schmeichelt und ihn zu Machtnutzung ermutigt. Gleichzeitig ist er respektvoll gegenüber Lindo Laut, solange dieser seinen Anweisungen folgt. Er fordert von der Gruppe Respekt und Unterwerfung und droht mit Gewalt, wenn ihm dieser verweigert wird.
-
-Slix zeigt auch eine verletzliche Seite: Als er spürt, dass seine Vernichtung droht, schreit er und versucht verzweifelt, gegen die [Handschellen](/items/handschellen.md) anzukämpfen, die seine Macht unterdrücken. In diesem Moment wird deutlich, dass auch er Angst hat — vor dem, was kommen mag.
-
-### Fähigkeiten
-
-Slix kann in Lindo Lauts Innerem leben und dessen Körper kontrollieren. Er kommuniziert telepathisch mit Lindo Laut und gibt ihm Ratschläge. Er kann die Gruppe angreifen und hat bereits fast Lionel und [Rotunas](/characters/rotunas.md) getötet. Seine Macht wird durch die von [Tyrael](/npcs/tyrael.md) gebrachten Armringe und später durch Handschellen unterdrückt.
+Zu seinen Fähigkeiten gehören das Erscheinen auf Ruf, das Sprechen in Lindos Gedanken, das Erkennen von Kreaturen der Zwischenwelt – etwa des Seelenkalbs – und das Übernehmen von Lindos Körper. Er kann andere gewaltsam zu Boden zwingen und töten, indem er Lionel das Herz herausreißt. Magieunterdrückende [Handschellen](/items/handschellen.md) und Schutzzauber wie der von Nox können ihn zeitweise unterdrücken. Seine Macht wird rückblickend als so groß eingeschätzt, dass er im Vergleich zur geschwächten Göttin [Nerash](/deities/nerash.md) als „potenzieller Gamechanger“ gilt; Lindo Laut beschreibt seine Anwesenheit als eine Zeit, in der er „Teil dieser Macht war“.
 
 ## Beziehungen und Verbindungen
 
-### Lindo Laut
-
-Slix ist der fünfte Teil Vhar'Zuls und lebt in Lindo Laut. Er ist die zweite, bösartige Persönlichkeit Lindo Lauts und kann dessen Körper übernehmen, wenn der Schutzzauber nachlässt. Lindo Laut ruft ihn als Diener, ist sich aber lange nicht über dessen wahre Natur im Klaren. Erst in der Pocket Domain erkennt er: „Das ist der böse Teil von mir, in mir, der mich vielleicht auch kontrollieren könnte.“
-
-### Lunara Velora
-
-Lunara erkennt Slix und kann ihn mit einem Splitter-Spruch ablenken. Sie spielt eine zentrale Rolle bei seiner Kontrolle und schließlich seiner Vernichtung.
-
-### Die Gruppe
-
-Slix greift die Gruppe an und tötet fast Lionel und Rotunas. Die Gruppe will ihn loswerden. [Dodo](/characters/dodo.md) formuliert es deutlich: „Ich will nicht, dass Slix noch einmal herausbricht und nochmal versucht, einen von uns zu töten. Wir haben Rotunas fast verloren.“
-
-### Vasul
-
-Slix ist der fünfte Teil von Vasul, der in Lindo Laut lebt. Er wird schließlich von Vasul entfernt und vernichtet.
+- **[Lindo Laut](/characters/lindo_laut.md):** Slix wohnt in Lindo, spricht zu ihm und übernimmt zeitweise die Kontrolle über dessen Körper. Anfangs nennt Slix ihn „Meister“ und „Lord“, nutzt diese Fassade aber, um Lindo zur Nutzung seiner Macht zu drängen. Lindo trägt später aus Angst vor Slix’ Ausbrüchen magieunterdrückende Handschellen.
+- **[Vhar'Zul](/deities/vharzul.md):** Slix ist der versteckte fünfte Teil des alten Gottes und einer seiner vier bösartigen Anteile. Bei Vhar'Zuls Rückkehr wird Slix aus Lindo herausgelöst, niedergezwungen und mit dem [Stab](/items/lindo_lauts_stab.md) vernichtet; seine Essenz wird von Vhar'Zul absorbiert.
+- **[Lunara Velora](/characters/lunara_velora.md):** Slix zwingt Lunara gewaltsam zu Boden, als sie sich widersetzt. Später lenkt sie ihn mit dem Thema der [Splitterwelt](/domains/splitterwelt.md) ab, und bei der Befreiung hält sie ihn mit einem Kontrollzauber fest, sodass Vhar'Zul ihn vernichten kann.
+- **[Rotunas](/characters/rotunas.md):** Bei einem früheren Ausbruch kostet Slix Rotunas den Arm. Rotunas versetzt Slix später einen heftigen Schlag, der ihn wegschleudert.
+- **Lionel:** Slix tötet Lionel, indem er ihm das Herz herausreißt.
+- **Gruppe:** Er befiehlt allen Anwesenden niederzuknien, droht Rotunas und behandelt die Gefährten als Untertanen.
+- **[Belorus](/npcs/belorus.md):** Slix erklärt gegenüber Lindo, dass sie Belorus schaden können, und drängt Lindo kurz vor Belorus’ Abzug zu einem Angriff.
 
 ## Chronologie
 
-### Erste Begegnung (Session 2025-11-25)
+**Session 2025-11-25:** Slix erscheint erstmals auf Lindo Lauts Rufen als „ehrenvoller Diener“. Er tritt unheimlich auf, wird von Lindo aber als sympathisch empfunden. Er erklärt den Schutzzauber des Waldes, der durch Wasser fließt und die Bäume mit Energie versorgt, aber nicht ewig halten wird. Zudem bestätigt er, dass Lindo die Seele eines Sterbenden nach Abyssalis geschickt hat und mit dem [Schlüssel](/items/magischer_schluessel.md) Kreaturen aus anderen Reichen beschwören kann, diese aber erst transformieren müsse.
 
-Slix erscheint erstmals am Ende der Session, als Lindo Laut nach ihm ruft. Er erklärt Lindo Laut, dass die Kreatur aus der [Splitterwelt](/domains/splitterwelt.md) durch die Seelen der Toten beschworen wurde und dass Lindo Laut mit dem [Schlüssel](/items/magischer_schluessel.md) in der Lage ist, solche Kreaturen zu beschwören. Er tritt als Diener auf, der Lindo Laut mit einer Verneigung und einem Kniefall begrüßt.
+**Session 2026-01-06:** Slix erscheint erneut auf Lindos Ruf, erkennt sofort das Seelenkalb und zeigt eine respektvolle, aber fordernde Haltung. Er brüllt die Kreatur an und verschreckt sie dadurch. Er erklärt, dass das Seelenkalb nicht von Lindo beschworen wurde und dass jemand anderes sich der Mächte der Zwischenwelt bedient. Slix drängt Lindo lautstark, seine Kraft einzusetzen, und verschwindet mit dem Hinweis, dass Lindo seine Erinnerungen nur durch die Nutzung seiner Macht zurückerlangen könne.
 
-### Das Seelenkalb (Session 2026-01-06)
+**Session 2026-01-20:** Slix spricht als Präsenz in Lindos Gedanken: „Nutzt mich, Meister. Nutzt eure Kraft.“ Er drängt Lindo erneut, seine Macht zu nutzen, und erklärt, dass sie Belorus schaden können. Als die Splitterwelt naht, sagt er: „Wir sind zu Hause.“ Kurz vor Belorus’ Abzug versucht er, Lindo zu einem Angriff zu bewegen, was beinahe eskaliert.
 
-Slix erscheint erneut, als Lindo Laut ihn ruft. Er erkennt das Seelenkalb und ist entsetzt, dass jemand es beschworen hat. Er schreit „Warum? Warum? Wagt es jemand?“ und stürmt in den Wald, verschreckt die Kreatur aber damit. Er verschwindet wieder, nachdem er Lindo Laut geraten hat, seine Macht zu nutzen.
+**Session 2026-02-11:** Slix erscheint in der [Pocket Domain](/domains/pocket_domain.md), schwebt mit auf dem Rücken verkreuzten Händen herein und stellt sich vor: „Ich bin Slix, der erhabene Diener von meinem Lord Lindo Laut.“ Er spricht herablassend, befiehlt den anderen niederzuknien und zwingt Lunara gewaltsam zu Boden, als sie sich widersetzt. Nach Lindos Verwandlung übernimmt Slix kurz die Kontrolle, wird aber durch Lunaras Eingreifen vertrieben und verschwindet, als Lindo die Kontrolle zurückgewinnt.
 
-### Die Stimme im Kopf (Session 2026-01-20)
+**Session 2026-02-17:** Nachdem der Schutzzauber von Nox nachlässt, bricht Slix aus. Er ist wütend, dass er während des Schutzzaubers nichts mitbekommen hat, und zeigt sich offen gewalttätig: Er tötet Lionel, indem er ihm das Herz herausreißt, und droht, Rotunas zu töten. Er verlangt, dass die Gruppe das [Schwert](/items/schwert.md) [Zebrosia](/items/zebrosia.md) berührt, um ihre Würdigkeit zu testen. Lunara lenkt ihn mit der Verbindung zur Splitterwelt ab, und Rotunas versetzt ihm einen heftigen Schlag, der ihn wegschleudert. Lindo gewinnt kurz die Kontrolle zurück und legt die magieunterdrückenden Handschellen an, wodurch Slix vorerst unterdrückt wird.
 
-Slix wird zu einer Stimme in Lindo Lauts Kopf, die ihm Ratschläge gibt. Er ermutigt Lindo Laut, seine Kraft zu nutzen, und warnt vor [Belorus](/npcs/belorus.md). Er scheint eine Verbindung zu Vasul zu haben.
+**Session 2026-03-24:** Lindo trägt aus Angst vor einem erneuten Ausbruch magieunterdrückende Handschellen. Die Gruppe will verhindern, dass Slix wieder ausbricht, und sucht nach Wegen, ihn zu entfernen oder zu kontrollieren. [Dodo](/characters/dodo.md) plädiert dafür, ins Abyssalis zu gehen, um „den Teil von Lindo Laut zu entfernen“.
 
-### Die Pocket Domain (Session 2026-02-11)
+**Session 2026-03-31:** Als Vhar'Zul zurückkehrt, schreit Slix in Lindo voller Angst und versucht, die Ketten zu sprengen. Er brüllt: „Lindo Laut, er kommt uns vernichten. Ihr müsst schreien, ihr müsst fliehen.“ Bei der Befreiung wird Slix von Vhar'Zul aus Lindo herausgelöst, von Lunara mit einem Kontrollzauber festgehalten und niedergezwungen. Vhar'Zul vernichtet ihn mit dem Stab; seine Essenz löst sich auf und wird absorbiert. Slix ist damit endgültig zerstört.
 
-Slix erscheint in der Pocket Domain und spricht mit der Gruppe. Er fordert Respekt und bezeichnet sich als „erhabenen Diener“ Lindo Lauts. Er ist der Antagonist in [Lindo Lauts Verwandlung](/events/lindo_lauts_verwandlung.md) und wird von Lunara zurückgedrängt. Lindo Laut erkennt, dass Slix der böse Teil von ihm ist.
-
-### Der Ausbruch (Session 2026-02-17)
-
-Slix übernimmt die Kontrolle, als der Schutzzauber nachlässt, und greift die Gruppe an. Er ist arrogant und grausam, tötet fast Lionel und Rotunas. Lunara kann ihn mit einem Splitter-Spruch ablenken, und Lindo Laut legt die Handschellen an, um ihn zu bannen.
-
-### Die Entscheidung (Session 2026-03-24)
-
-Die Gruppe beschließt, ins Abyssalis zu gehen, um Slix aus Lindo Laut zu entfernen. Dodo macht deutlich, dass die Gefahr zu groß geworden ist.
-
-### Die Vernichtung (Session 2026-03-31)
-
-Slix wird von Vasul entfernt und vernichtet. Er schreit und wehrt sich, wird aber von Lunara kontrolliert und schließlich vernichtet. Seine Entfernung schwächt Lindo Laut, befreit ihn aber von der Bedrohung. In seinem letzten Moment zeigt Slix Angst: „Lindo Laut, er kommt uns vernichten. Ihr müsst schreien, ihr müsst fliehen.“
+**Session 2026-08-12:** Rückblickend ist Slix nicht mehr Teil der Gruppe. Lindo und Dodo vergleichen seine einstige Macht mit der geschwächten Nerash und kommen zu dem Schluss, dass alte Götter viel mächtiger waren. Slix wird als potenzieller Gamechanger betrachtet, ist aber nicht mehr verfügbar. Lindo denkt: „Boah, wenn Slix da gewesen wären, ne? Das wäre anders ausgegangen.“ Lunara entgegnet: „Gott sei Dank ist der nicht mehr da.“
 
 ## Offene Fragen
 
-- Was genau ist die Verbindung zwischen Slix und Vasul? Slix wird als „fünfter Teil von Vasul“ beschrieben, aber auch als „fünfter Teil Vhar'Zuls“ — wie diese beiden Aspekte zusammenhängen, bleibt unklar.
-- Welche Rolle spielt der Schlüssel, mit dem Lindo Laut Kreaturen beschwören kann, in Bezug auf Slix?
-- Was war Slix' ursprüngliches Ziel, bevor er in Lindo Laut gefangen wurde?
+- Wie Slix ursprünglich in Lindo Laut gelangte, wird in den Belegen nicht erklärt.
+- Warum er sich zunächst als ergebener Diener präsentierte, statt offen als bösartiger Anteil Vhar'Zuls zu handeln, bleibt unklar.
+- Das genaue Verhältnis zu den anderen Teilen Vhar'Zuls – abgesehen von seiner Zugehörigkeit zu den vier bösartigen Anteilen – wird nicht näher ausgeführt.
 
-# Belege
+## Belege
 
-[P-31] Session 2025-11-25 @ 01:53:10 (https://www.youtube.com/watch?v=wd5R4fJfngY)
-[P-32] Session 2026-01-06 @ 01:39:37 (https://www.youtube.com/watch?v=VGw81seFvbo)
-[P-34] Session 2026-01-20 @ 00:41:35 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
-[P-36] Session 2026-02-11 @ 01:33:20 (https://www.youtube.com/watch?v=3C8SD-cyNPM)
-[P-37] Session 2026-02-17 @ 00:50:39 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
-[P-43] Session 2026-03-24 @ 01:43:45 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
-[P-44a] Session 2026-03-31 @ 00:48:45 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
-[P-44b] Session 2026-03-31 @ 00:48:45 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
-9. Kanon_Entscheidungen.md — „Slix“
-10. Wiki_Team_Text.md — „Das Amulett und Slicks“
+[1] Session 2025-11-25 @ 01:53:10 (https://www.youtube.com/watch?v=wd5R4fJfngY)  
+[2] Session 2026-01-06 @ 01:39:37 (https://www.youtube.com/watch?v=VGw81seFvbo)  
+[3] Session 2026-01-20 @ 00:41:35 (https://www.youtube.com/watch?v=H3ckYdTv4y8)  
+[4] Session 2026-02-11 @ 01:33:40 (https://www.youtube.com/watch?v=3C8SD-cyNPM)  
+[5] Session 2026-02-17 @ 01:50:40 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)  
+[6] Session 2026-03-24 @ 01:43:45 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)  
+[7] Session 2026-03-31 @ 00:48:45 (https://www.youtube.com/watch?v=Ee-K84wcxLM)  
+[8] Session 2026-08-12 @ 01:00:30 (https://www.youtube.com/watch?v=piUv11DCwDw)

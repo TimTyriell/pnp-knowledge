@@ -1,29 +1,30 @@
 ---
 type: Domain
 title: Circle Below
-description: Der Circle Below ist eine verbotene, abgründige Ebene, die in den Aufzeichnungen
-  und Überlieferungen der Kampagne als Ort des Verbotenen un…
+description: Der Circle Below, auch als Abyss bekannt, ist eine verbotene Ebene. In
+  den Überlieferungen der Kampagne gilt sie als Verbannungsort der Alt…
 tags:
 - domains
-timestamp: '2025-09-06T00:00:00Z'
+timestamp: '2026-08-12T00:00:00Z'
 id: DOMAIN_CIRCLE_BELOW
 ---
 
-Der **Circle Below** ist eine verbotene, abgründige Ebene, die in den Aufzeichnungen und Überlieferungen der Kampagne als Ort des Verbotenen und Verbannten beschrieben wird. Sie steht in direktem Zusammenhang mit dem uralten Buch, dessen Wissen aus dieser Ebene stammt, und mit den Alten, die dorthin verbannt wurden. Der Circle Below ist keine gewöhnliche Welt, sondern ein Abyss – eine tiefe, abgeschlossene Sphäre, deren bloße Existenz als Bedrohung oder zumindest als Gefahrenzone wahrgenommen wird.
+Der **Circle Below**, auch als **[Abyss](/domains/abyss.md)** bekannt, ist eine verbotene Ebene. In den Überlieferungen der Kampagne gilt sie als Verbannungsort der Alten sowie als Ursprung verbotenen Wissens und dämonischer Kreaturen. Die Gruppe ist der Ebene bislang nicht unmittelbar begegnet; bekannt wurde sie ihr durch ein versiegeltes Buch, durch den Aufenthalt in einer Vorebene des Circle Below und durch Wesen, die aus ihr stammen sollen.
 
-## Herkunft und Natur
+## Natur und Herkunft
 
-Der Circle Below wird als Ebene beschrieben, aus der das Wissen im uralten Buch stammt. Dieses Wissen ist offenbar nicht neutral: Es ist an eine verbotene Sphäre gebunden, und der Kontakt mit dem Buch kann fatale Folgen haben. So wird die Gruppe durch das Buch in eine Dimension gerissen, die möglicherweise mit dem Circle Below verbunden ist. Der Circle Below selbst wird als Abyss charakterisiert – ein Bild, das sowohl seine Tiefe als auch seine Abgetrenntheit von der normalen Welt betont. Er ist keine einladende, sondern eine verfemte Ebene, deren bloße Erwähnung mit Verboten belegt ist.
+[Rotunas](/characters/rotunas.md) erkannte, dass das Wissen in einem versiegelten Buch aus dem Circle Below stammt [1]. Damit wird die Ebene als Quelle von Kenntnissen markiert, die offenbar als so heikel gelten, dass sie versiegelt wurden. Zugleich ist der Circle Below die Ebene, in die die Alten verbannt wurden [2]. Was unter den „Alten" zu verstehen ist, geht aus den vorliegenden Belegen nicht hervor.
 
-## Die Alten und die Verbannung
+Die Gruppe hielt sich zeitweise in der Vorebene des Circle Below auf, also in einem Bereich, der der eigentlichen Ebene vorgelagert ist, ohne diese selbst zu betreten [2].
 
-Der Circle Below ist zugleich der Ort, an den die Alten verbannt wurden. Damit ist er nicht nur eine abstrakte Sphäre des Wissens, sondern auch ein Gefängnis für ein uraltes, mächtiges Gegenüber. Die Verbannung der Alten in diese Ebene deutet darauf hin, dass der Circle Below als sichere Verwahrung für etwas galt, das nicht in der normalen Welt bleiben durfte. Die Gruppe wird in eine Vorebene dieser Verbannungsebene teleportiert, die als düster und verlassen beschrieben wird – ein karger, unwirtlicher Vorraum, der den Eintritt in den eigentlichen Circle Below zu markieren scheint.
+## Begegnungen und Wirkung
 
-## Zugang und Begegnungen
+[Vasul](/deities/vharzul.md) muss in den Circle Below zurückkehren, um dort seinen Platz einzunehmen [2]. Worin dieser Platz besteht und warum [Vasul](/deities/vharzul.md) die Ebene verlassen hat, wird in den Belegen nicht ausgeführt.
 
-Es gibt mindestens zwei Wege, mit dem Circle Below in Berührung zu kommen: zum einen über das uralte Buch, das die Gruppe in eine damit verbundene Dimension reißt, zum anderen über eine direkte Teleportation in eine Vorebene des Circle Below. Beide Zugänge erfolgen gegen den Willen der Gruppe und führen in eine Umgebung, die feindselig oder zumindest verlassen wirkt. Ob der Circle Below selbst jemals betreten wurde oder nur seine Vorebene und eine verbundene Dimension, bleibt in den Belegen offen.
+[Nerash](/deities/nerash.md) zufolge stammen die Kreaturen, die [Ehrenfels](/locations/ehrenfels.md) angegriffen haben, aus dem Circle Below. Sie kämen immer wieder, und allein [Nerashs](/deities/nerash.md) Anwesenheit habe das Dorf vor ihnen geschützt [3]. [Liam](/npcs/liam_velora.md) erklärte dazu, dass die dämonischen Kreaturen der Ebene eigentlich gefallene Seraphen seien [3]. Damit ist der Circle Below nicht nur mit Dämonen verbunden, sondern aus [Liams](/npcs/liam_velora.md) Sicht mit gefallenen himmlischen Wesen.
 
 # Belege
 
-[P-13] Session 2025-06-25 @ 00:49:19 – https://www.youtube.com/watch?v=tpkO9uGw6-I
-[P-20] Session 2025-09-06 @ 00:09:10 – https://www.youtube.com/watch?v=vo1xnyLQDJk
+1. Session 2025-06-25, 00:49:34: https://www.youtube.com/watch?v=tpkO9uGw6-I
+2. Session 2025-09-06, 00:09:10: https://www.youtube.com/watch?v=vo1xnyLQDJk
+3. Session 2026-08-12, 00:36:32: https://www.youtube.com/watch?v=piUv11DCwDw

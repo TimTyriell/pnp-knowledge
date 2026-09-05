@@ -1,15 +1,16 @@
 ---
 type: Location
 title: Tarkia
-description: Tarkia ist die Insel, von der Dodo stammt. Yoda kennt sie.
+description: Tarkia (auch Tarkir) ist Dodos Heimatinsel mit einem Vulkan und Goblins.
+  Dodo erwähnt sie bei der Vorstellung gegenüber den Goblins und dem…
 tags:
 - locations
 timestamp: '2025-11-14T00:00:00Z'
 id: LOC_TARKIA
-subtype: Siedlung
+subtype: Wildnis
 ---
 
-Tarkia ist die Insel, von der [Dodo](/characters/dodo.md) stammt. [Yoda](/npcs/yoda.md) kennt sie.
+Tarkia (auch [Tarkir](/locations/tarkir.md)) ist [Dodos](/characters/dodo.md) Heimatinsel mit einem Vulkan und [Goblins](/npcs/pilz_goblins.md). Dodo erwähnt sie bei der Vorstellung gegenüber den Goblins und dem Hexenmeister.
 
 # Belege
 

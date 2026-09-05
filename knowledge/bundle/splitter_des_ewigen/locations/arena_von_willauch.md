@@ -1,8 +1,8 @@
 ---
 type: Location
 title: Arena von Willauch
-description: Die Arena von Willauch ist der Schauplatz der Kämpfe. Sie ist groß und
-  von Zuschauern umgeben. Es gibt mehrere Arenen, die für verschiedene…
+description: Die große Arena der Stadt Willauch ist Schauplatz der Monsterkämpfe.
+  Sie bietet Platz für tausende Zuschauer und hat einen Thronsaal für Lo…
 tags:
 - locations
 timestamp: '2025-10-21T00:00:00Z'
@@ -12,8 +12,8 @@ aliases:
 - Arena von Willau
 ---
 
-Die Arena von [Willauch](/locations/willauch.md) ist der Schauplatz der Kämpfe. Sie ist groß und von Zuschauern umgeben. Es gibt mehrere Arenen, die für verschiedene Kämpfe genutzt werden. Die Gruppe kämpft in der ersten Arena gegen den Werwolf und in einer zweiten, mit Netzen übersäten Arena gegen die Phasenspinne.
+Die große [Arena](/locations/arena.md) der Stadt [Willauch](/locations/willauch.md) ist Schauplatz der Monsterkämpfe. Sie bietet Platz für tausende Zuschauer und hat einen Thronsaal für Lord und Lady. Die Helden kämpfen hier in der ersten Prüfung und kehren nach der zweiten zurück.
 
 # Belege
 
-[P-27] Session 2025-10-21 @ 00:03:31 (https://www.youtube.com/watch?v=sxFhbtwoefA)
+[P-27] Session 2025-10-21 @ 00:12:45 (https://www.youtube.com/watch?v=sxFhbtwoefA)

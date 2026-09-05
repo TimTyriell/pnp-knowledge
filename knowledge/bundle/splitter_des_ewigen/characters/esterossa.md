@@ -1,156 +1,147 @@
 ---
 type: Character
 title: Esterossa
-description: Esterossa ist ein Seraph der Unterklasse Winged Sentinel – ein engelgleiches,
-  geflügeltes Wesen mit metallisch schimmernder Haut und großen…
+description: Esterossa ist ein geflügelter Seraph und Mitglied der Gefährten von Rotunas.
+  Er stammt aus dem Norden und ist von adeliger Herkunft; selbst…
 tags:
 - characters
-timestamp: '2026-07-29T00:00:00Z'
+timestamp: '2026-08-12T00:00:00Z'
 id: CHAR_ESTEROSSA
 aliases:
 - Esterossa Torbhalm
 - Esterossa Torpalm
-- Esterossa
 - Esterossa (Mikasa)
 ---
 
 ## Überblick
 
-Esterossa ist ein Seraph der Unterklasse **Winged Sentinel** – ein engelgleiches, geflügeltes Wesen mit metallisch schimmernder Haut und großen Flügeln, die ihm das Fliegen ermöglichen. Er trägt eine schwere, laute Rüstung und kämpft bevorzugt mit einer Axt, später mit einem Warhammer. In der Gruppe nimmt er die Rolle des zweiten Schildes und Heilers ein: Er steht in der zweiten Reihe direkt hinter [Dodo](/characters/dodo.md) und ist gemeinsam mit ihm für das Militärische zuständig, übernimmt aber auch redegewandt diplomatische Aufgaben, wenn [Lindo Laut](/characters/lindo_laut.md) ausfällt ([P-33] 2026-01-06, [P-22] 2025-09-17).
+Esterossa ist ein geflügelter [Seraph](/npcs/seraph.md) und Mitglied der Gefährten von Rotunas. Er stammt aus dem Norden und ist von adeliger Herkunft; selbst sagt er, er sei „nur Paläste gewöhnt“. Innerhalb der Gruppe nimmt er die Rolle des Heilers, Unterstützers und Luftspähers ein. Er kämpft mit Axt, [Schwert](/items/schwert.md) oder Hammer, trägt eine glänzende Rüstung und setzt heilige Magie sowie Blitz- und Eismagie ein.
 
-Esterossa ist ein gläubiger Krieger. Er betet seit jeher und ausschließlich zu **Korn**, dem neuen Gott, der auch als **[Blutgott](/deities/korn.md)** bezeichnet wird – beide Namen meinen dieselbe Gottheit. Seine Gebete und Segnungen sind ein wiederkehrendes Element seines Handelns: Er spricht vor gefährlichen Unternehmungen Schutzsegen, nutzt seine Pray Dice, um Schaden von Verbündeten abzuwenden, und heilt Verwundete mit Mending Touch, Healing Hands oder Seraph Hope ([P-04] 2025-04-15, [P-09] 2025-05-27, [P-16] 2025-07-29).
+Esterossa verehrt ausschließlich den neuen Gott Korn, den er auch als [Blutgott](/deities/korn.md) anspricht. Sein Glaube ist kriegerisch und blutig, prägt aber auch fürsorgliche und beschützende Seiten. Sein ständiger Begleiter ist die Katze [Ajani](/npcs/nairog_peri_ajani.md), die später von den Goblin-Göttern in [Günther](/npcs/katze_ajani_guenther.md) umbenannt wird. Im Verlauf der Kampagne übernimmt er das [Schwert von Huludan](/items/schwert_von_huludan.md), woraufhin seine Flügel eine lila Färbung annehmen und Kristalle wachsen. Am Ende wird er im Kampf gegen [Vasul](/deities/vharzul.md) zum Kanal des Splitters des Ewigen und stirbt.
 
 ## Rolle in der Kampagne
 
-Esterossa gehört zur Abenteurergruppe um [Rotunas](/characters/rotunas.md), die sich in der Region um [Ehrenfels](/locations/ehrenfels.md) bewegt. Er ist einer der zentralen Spielercharaktere und über die gesamte Kampagne hinweg präsent – vom ersten Kampf gegen [Goblins](/npcs/pilz_goblins.md) im [Sumpf](/locations/sumpf_vor_dem_goblin_dorf.md) bis zu seinem Tod in der [Schlacht um Ehrenfels](/events/schlacht_um_ehrenfels.md).
+Esterossa ist von Beginn an ein zentrales Mitglied der Heldengruppe. Seine Hauptaufgabe ist die Heilung und der Schutz der Gefährten: Immer wieder bringt er [Dodo](/characters/dodo.md), [Rotunas](/characters/rotunas.md), [Cookie](/characters/cookie.md) oder andere durch Heilzauber zurück in den Kampf. Durch seine Flugfähigkeit späht er aus der Luft, klärt Feindstellungen auf und trägt Verbündete über Hindernisse. In Verhandlungen übernimmt er mehrfach das Wort, etwa gegenüber [Joar Vanur](/npcs/joar_vanur.md) oder später bei diplomatischen Missionen.
 
-Seine Rolle innerhalb der Gruppe ist vielschichtig:
-- **Heiler und Beschützer**: Er heilt regelmäßig seine Gefährten – Dodo, Rotunas, Lindo Laut, [Nyrellas](/characters/nyrella.md) Bären und andere – und stellt sich schützend vor sie, etwa indem er mit einer Steinwand Dodo vor [Dormaks](/npcs/dormak.md) Angriff bewahrt ([P-44] 2026-03-31, [P-31] 2025-11-25).
-- **Militärischer Veteran**: Als erfahrener Soldat, der in großen Kriegen gekämpft hat, erkennt er herannahende Gegner früh, warnt seine Gefährten und koordiniert Angriffe ([P-05] 2025-04-23, [P-15] 2025-07-22).
-- **Wissensquelle**: Als Loreborn verfügt er über umfangreiches Wissen über Kulturen, Geschichte und Religionen. Er erkennt den Heiligen [Duran](/deities/heiliger_duran.md) und seine Artefakte, identifiziert Symbole und erinnert sich an Schriften über den unteren Zirkel ([P-07] 2025-05-06, [P-20] 2025-09-06).
-- **Diplomat**: Trotz seiner militärischen Prägung zeigt er sich redegewandt und deeskalierend, etwa beim Vorfall mit dem betrunkenen Gast in der Taverne oder in Verhandlungen mit [Gulrak](/npcs/gulrak.md) und [Joar Vanur](/npcs/joar_vanur.md) ([P-06] 2025-04-30).
+Im späteren Kampagnenverlauf rückt seine religiöse und mythologische Bedeutung stärker in den Vordergrund: Er befreit [Nerash](/deities/nerash.md) aus der [Zwischenebene](/domains/zwischenebenen.md), misstraut den alten Göttern, sucht Rat bei Korn, versöhnt sich mit [Lindo Laut](/characters/lindo_laut.md) und wird schließlich zentral für das Finale um den [Splitter des Ewigen](/items/splitter_des_ewigen.md). Sein Opfergang und Tod markieren das Ende der [Abyssalis](/domains/splitterwelt.md)-Mission und werden von der Gruppe und der Bevölkerung betrauert.
 
 ## Wichtige Merkmale
 
 ### Fähigkeiten
 
-Esterossa verfügt über ein breites Spektrum an Kampf- und Unterstützungsfähigkeiten:
+Esterossa beherrscht als [Seraph](/npcs/seraph.md) der Unterklasse Winged Sentinel den Flug. Im Kampf setzt er heilige Magie ein, darunter Heilzauber wie Mending Touch, Healing Hands, goldenen Nebel und Life Guard. Er kann Blitze wirken (Thunderbolt, Bolt Beacon) und seinen Lichtzauber mit Frost modifizieren, etwa um eine nasse Amphibienkreatur erstarren zu lassen. Mit Shape Material formt er Stein, Holz oder Metall um: Er verstärkt Tore mit Stahl, erschafft Steinwände, Türen, Treppen, Schlafräume und verengt Pässe. Weitere genannte Fähigkeiten sind Winged Sentinel beziehungsweise [Ring](/items/ring.md) Sentinel, Fearless, Second Wind und Ready-Dive.
 
-- **Flugfähigkeit**: Seine großen Flügel und Düsen erlauben ihm zu fliegen. Er nutzt dies, um Gegner aus der Luft anzugreifen, Positionen zu wechseln, Stürze abzufangen und unsichtbar durch die Luft zu gleiten ([P-02] 2025-04-01, [P-09] 2025-05-27, [P-17] 2025-08-12).
-- **Winged Sentinel**: Seine Unterklassen-Fähigkeit, die er im Kampf einsetzt, um sich zu bewegen und Verbündete zu unterstützen ([P-05] 2025-04-23, [P-15] 2025-07-22).
-- **Pray Dice / Seraph Hope**: Er kann göttlichen Schutz gewähren, indem er Schaden von Verbündeten abwendet, und Stresspunkte in Hope umwandeln ([P-09] 2025-05-27, [P-15] 2025-07-22).
-- **Heilung**: Mending Touch, Healing Hands, Seraph Hope und ein Gebets-Skill, mit dem er Schaden negieren und Verwundete heilen kann – vom verwundeten Ritter bis zum vergifteten Rotunas ([P-02] 2025-04-01, [P-07] 2025-05-06, [P-23] 2025-09-23).
-- **Magische Angriffe**: Seine Axt verursacht magischen Schaden; später kämpft er mit einem Warhammer und heiliger Magie. Er kann Gegner köpfen, mit Blitzen angreifen und einen [Kuatau](/npcs/kuatau.md) mit einem Schlag zerteilen ([P-02] 2025-04-01, [P-09] 2025-05-27, [P-16] 2025-07-29).
-- **Material formen (Shape Material)**: Er kann Holz in Stahl verwandeln, um Tore zu verstärken, Steinwände erschaffen, Treppen formen, Höhleneingänge verschließen und Fackeln löschen ([P-34] 2026-01-20, [P-24] 2025-09-30, [P-50] 2026-05-19, [P-45] 2026-04-07).
-- **Unsichtbarkeit**: Er kann sich unsichtbar machen, um zu erkunden oder sich im Kampf zu positionieren ([P-17] 2025-08-12, [P-19] 2025-09-02, [P-31] 2025-11-25).
-- **Wissen**: Als Loreborn ist er bei Wissenstests im Vorteil und kennt sich mit Geschichte, Kulturen und Religionen aus ([P-02] 2025-04-01, [P-07] 2025-05-06).
+Sein Gebet zu Korn ist ein aktiver Teil seines Kampfstils. Er verwendet Prayer Dice oder Prey Dice, um Schaden zu reduzieren, Heilung zu wirken oder andere zu unterstützen. Ein überliefertes Gebet lautet:
 
-### Wesenszüge
+> „Blut für den Blutgott, Ehre im Kampf und möge mein Feind zuerst fallen. Korn führe meine Hand, stärke mein Herz und trinke vom Blut der Gefallenen. Kein Frieden, nur [Krieg](/characters/krieg.md), auf das mein Stahl deine Gunst verdient.“
 
-Esterossa ist ein treuer, fürsorglicher Gefährte, der seine Gruppe beschützt und heilt. Er zeigt Mitgefühl – etwa als er sich vor einer Priesterin verneigt und nach ihrem Befinden fragt oder Nyrellas Wein heimlich in Traubensaft verwandelt, um sie zu schützen ([P-07] 2025-05-06, [P-30] 2025-11-18). Er ist pragmatisch und denkt an den Ausbau des Anwesens, wenn andere sich in Details verlieren ([P-29] 2025-11-14).
+Daneben führt er Blutopfer durch: In der Krypta schneidet er sich in die Hand und beschwört mit dem Blut eine Feuerkreatur. Im Kampf ruft er „Blut für meinen Blutgott“ und opfert Blut für seine Gottheit.
 
-Gleichzeitig hat er eine eitle Seite: Er will nicht, dass seine Schuhe schmutzig werden ([P-02] 2025-04-01). Er hasst Kälte – „Leute, mir ist kalt, meine Flügel frieren ab“ ([P-30] 2025-11-18) – und schläft als Kriegsveteran tief und fest ([P-15] 2025-07-22). Im Kampf ist er furchtlos und geht lachend in den Kampf, priorisiert aber klug den Magiewirker als Ziel ([P-15] 2025-07-22).
+### Auftreten und Wesen
 
-Er ist religiös bewandert und stellt sich als Diener des Blutgottes vor, was Anhänger verunsichert ([P-17] 2025-08-12). Gegenüber fremden Gottheiten – etwa dem [Schlangengott](/deities/schlangengott.md) – zeigt er Skepsis ([P-10] 2025-06-03).
+Esterossa ist geflügelt und trägt weißes Haar. Seine Rüstung wird als glänzend und imposant beschrieben. Er gilt als charismatisch und übernimmt häufig soziale Führung, ist aber anfangs distanziert, bisweilen leicht arrogant und auf Etikette bedacht. Im Verlauf zeigt er eine weichere Seite: Beim Fest unter den Flüchtlingen wird er angesichts der zufriedenen Gesichter hoffnungsvoller, obwohl er durch seine Anbetung an Korn „bisher nur den Krieg gewohnt“ war.
+
+Gegenüber alten Göttern ist er misstrauisch. Über die alten Götter sagt er: „Alte Götter, die sind dir gefallen, gibt's nicht mehr.“ Gleichzeitig ist er fromm, experimentierfreudig und ein Veteran, der nach eigener Aussage als Militär-Experte in vielen Kriegen mitgekämpft hat. Seine Grausamkeit im Namen des Blutgottes zeigt sich unter anderem im Umgang mit [Goblins](/npcs/pilz_goblins.md); dennoch wächst im Laufe der Kampagne seine Loyalität zur Gruppe, besonders zu Dodo, den er als Bruder ansieht.
+
+Nach der Übernahme des Schwerts von [Huludan](/deities/huludan.md) verändern sich seine Flügel: Sie verfärben sich lila, Kristalle wachsen, und der weiße Glanz weicht einem trüben Lila. Er kann weiterhin fliegen und fühlt sich „leichter denn je“. Im Finale verliert sein Körper die Farbe, nur ein roter Schimmer bleibt, und rote Lichtfäden verbinden ihn mit dem [Kristall](/items/gruener_kristall.md).
+
+### Begleiter
+
+Esterossas treuer Begleiter ist die Katze Ajani. Er freundet sich in einer Taverne mit ihr an, später wird sie von den Goblin-Göttern in Günther umbenannt. Er kümmert sich um sie, lässt sie vor dem Gildenhaus warten und versöhnt sich mit ihr beim Fest. In einer späteren Situation verwandelt er heimlich Nyrellas Wein in Traubensaft, was seine Fürsorge für Gefährten unterstreicht.
 
 ## Beziehungen und Verbindungen
 
-- **Korn (Blutgott)**: Esterossas Gott, ein neuer Gott. Zu ihm betet er, von ihm erhält er Segen und heilige Kraft – etwa einen grünen Blitz, der seine Angriffe verstärkt ([P-27] 2025-10-21).
-- **Dodo**: Sein engster Kampfgefährte, an dessen Seite er in der zweiten Reihe kämpft. Er beschützt Dodo wiederholt, heilt ihn und stellt sich schützend vor ihn ([P-44] 2026-03-31, [P-31] 2025-11-25). Dodo gibt ihm ein Kompliment, das ihm Hope-Punkte bringt ([P-05] 2025-04-23).
-- **Lindo Laut**: Der Sprecher und Diplomat der Gruppe. Esterossa unterstützt ihn, schützt ihn mit einem Lebensschild und versucht, ihn zu retten, als er am Herzen erstickt ([P-34] 2026-01-20, [P-18] 2025-08-20). Er ist zeitweise misstrauisch gegenüber Lindo Lauts Opfergedanken, unterstützt ihn aber später ([P-18] 2025-08-20).
-- **Rotunas**: Der Anführer der Gruppe. Esterossa unterstützt ihn bei Verhandlungen und heilt ihn mehrfach, etwa mit Gegengift und Restoration ([P-22] 2025-09-17, [P-34] 2026-01-20).
-- **Nyrella**: Er heilt ihren Bären und zeigt sich fürsorglich, indem er ihren Wein in Traubensaft verwandelt und ihr Gold für den [Marktschreier](/npcs/marktschreier.md) übergibt ([P-18] 2025-08-20, [P-30] 2025-11-18).
-- **Lunara**: Er ist misstrauisch gegenüber Lunara und hält zunächst Distanz, folgt aber später ihrem Plan ([P-30] 2025-11-18, [P-43] 2026-03-24).
-- **[Cookie](/characters/cookie.md)**: Eine Gefährtin, mit der er sich gut versteht; er fragt sie im Kampf, ob sie etwas tun möchte ([P-19] 2025-09-02).
-- **Ajani/Günther**: Eine Katze, die Esterossa findet und die ihm folgt; sie wird später in [Günther](/npcs/katze_ajani_guenther.md) umbenannt ([P-06] 2025-04-30).
-- **[Belorus](/npcs/belorus.md)**: Erkennt Esterossa als wahren Krieger an ([P-33] 2026-01-13).
+- **[Dodo](/characters/dodo.md):** Esterossa und Dodo verbindet eine brüderliche Bindung. Esterossa rettet oder heilt Dodo mehrfach, trägt ihn über Dächer und schützt ihn mit Wänden oder goldenen Schilden. Dodo begleitet Esterossa im Sterben und sagt später, er sei „an Ordnung“, obwohl Dodo sonst religiöse Menschen nicht mag.
+
+- **[Lindo Laut](/characters/lindo_laut.md):** Die Beziehung ist wechselhaft. Esterossa misstraut Lindo Laut zeitweise, fordert Erklärungen, versöhnt sich aber nach seiner Pilgerschaft: Er kniet symbolisch nieder, gelobt ihm Schild und Schwert und vergibt ihm. Lindo Laut versucht später, Esterossas Seele mit einem Seelenstein zu fangen, doch der Stein zerbricht.
+
+- **[Rotunas](/characters/rotunas.md):** Esterossa gehört zu den Gefährten von Rotunas, unterstützt ihn diplomatisch und heilt ihn nach Angriffen. Beim Turnier und in Verhandlungen agieren sie gemeinsam.
+
+- **[Cookie](/characters/cookie.md):** Gemeinsame Kämpfe und Sammlungen prägen die Beziehung. Nach Cookies Tod schlägt Esterossa vor, das Anwesen zu Ehren von Cookie zu benennen, und bezahlt später einen [Marktschreier](/npcs/marktschreier.md) dafür, Cookies Heldentod und den Sieg der Gruppe in der [Arena](/locations/arena.md) zu verbreiten.
+
+- **[Lunara Velora](/characters/lunara_velora.md):** Zunächst misstrauisch gegenüber der neuen Hexe, stellt er gezielte Fragen und hält Distanz. Später vertraut er ihr, folgt ihrer Führung und hilft ihr, ihren Bruder zu retten.
+
+- **[Nyrella](/characters/nyrella.md):** Esterossa heilt ihren Eisbären [Nyruk](/npcs/nyruk.md) und sorgt sich um Nyrella, indem er sie vor zu viel Alkohol bewahrt.
+
+- **[Landra](/npcs/lenra.md):** Esterossa erhält von Landra einen magischen [Schlüssel](/items/magischer_schluessel.md).
+
+- **[Joar Vanur](/npcs/joar_vanur.md):** Esterossa verhandelt mit Joar Vanur und handelt einen Deal zur Freilassung Guldraks aus, hält dabei Informationen zurück.
+
+- **[Korn](/deities/korn.md):** Esterossas ausschließlicher Gott, der Blutgott. Er betet zu Korn, erhält blutige Zeichen und Euphorie im Kampf. In der Zwischenebene kann er keine Verbindung zu Korn herstellen, was ihn verunsichert.
+
+- **[Vasul](/deities/vharzul.md):** In der Zwischenebene befreit Esterossa Nerash und theoretisiert, Vasul sei der Herrscher der Zwischenebene und der Fährmann. Später stellt er sich gegen Vasul, durchschlägt dessen Kristall und wird selbst zum Kanal des Splitters.
+
+- **[Nerash](/deities/nerash.md):** Esterossa befreit Nerash in der Zwischenebene, trägt später ein Totem oder eine kleine Statue von ihr bei sich und bittet sie im Kampf um Hilfe.
+
+- **[Huludan](/deities/huludan.md):** Esterossa übernimmt das Schwert von Huludan, das seine Flügel verändert und später zum leeren Schwert wird, aus dem seine Waffe entsteht.
 
 ## Chronologie
 
-- **2025-04-01**: Esterossa wird als Roboter-Engel (Clank) mit Flügeln und Düsen eingeführt. Er kämpft gegen Goblins im Sumpf, tötet den Goblin-Magier, indem er ihn von der Kante stößt ([P-02]).
-- **2025-04-15**: Er spricht einen Segen für die Gruppe vor einer [Krypta](/locations/krypta.md) und opfert sein Blut an einer Statue, was eine [Feuerkreatur](/events/feuerkreatur.md) beschwört. Er identifiziert die Statue mithilfe seiner Bibliothek auf einem USB-Stick ([P-04]).
-- **2025-04-23**: Er verteidigt ein Dorf gegen Goblins, weicht Pfeilen aus, tötet mehrere Goblins im Flug und erhält Inspiration von Lindo Laut und ein Kompliment von Dodo ([P-05]).
-- **2025-04-30**: Er findet die Katze Ajani, verhandelt mit Gulrak und versucht, die Beziehung zu Joar Vanur zu glätten ([P-06]).
-- **2025-05-06**: Er erkennt den Heiligen Duran und dessen Artefakte, kämpft gegen einen Gnoll und heilt einen verwundeten Ritter mit einem Gebet ([P-07]).
-- **2025-05-27**: Er nutzt seine Pray Dice für die Gruppe und zeigt taktisches Geschick im Kampf ([P-09]).
-- **2025-06-03**: Er kauft ein Gegengift, friert eine Kreatur ein und heilt [Brass](/npcs/brass.md). Er zeigt sich skeptisch gegenüber dem Schlangengott ([P-10]).
-- **2025-07-09**: Er versucht Schutzmagie zu wirken (scheitert), untersucht eine Statue und durchtrennt die Kette am Mund einer Kreatur, die er damit befreit ([P-14]).
-- **2025-07-22**: Er schläft tief, kämpft furchtlos, tötet mehrere Gegner und unterstützt die Entscheidung, das Amulett zu behalten ([P-15]).
-- **2025-07-29**: Er zerteilt einen Kuatau mit einem Schlag und findet das [Stern-Amulett](/items/stern_amulett.md) an einer Grabstätte ([P-16]).
-- **2025-08-12**: Er folgt dem Blutgott Korn, wird unsichtbar, erkundet ein Lager und entdeckt Ghule und Zombies ([P-17]).
-- **2025-08-20**: Er ist misstrauisch gegenüber Lindo Lauts Opfergedanken, versucht ihn zu retten und heilt Nyrellas Bären ([P-18]).
-- **2025-09-02**: Er bleibt unsichtbar, schlägt einen Zauberer nieder und fesselt ihn. Er spürt die Aufmerksamkeit von [Nerash](/deities/nerash.md), als er ein Totem berührt ([P-19]).
-- **2025-09-06**: Er erinnert sich an ein Buch über den unteren Zirkel, widersteht den Einflüssen der Ebene mit einem Krit und tötet einen Imp ([P-20]).
-- **2025-09-09**: Er hält eine Grabrede für den Prinzen und überzeugt die [Zwerge](/factions/zwerge.md), mit ihnen zu fliehen ([P-21]).
-- **2025-09-17**: Er stellt sich in der [Gilde](/factions/gilde_von_ehrenfels.md) als „zweites Schild und Heiler“ vor, verbrennt die Beine eines [Attentäters](/npcs/attentaeter.md) und versucht, Rotunas mit einem Gegengift zu retten ([P-22]).
-- **2025-09-23**: Er findet ein Wanted-Plakat auf den Gnoll, kann Rotunas' Wunde nur verlangsamen und stellt sich im Kampf gegen [Untote](/factions/belorus_untotenarmee.md) den Pfeilen entgegen ([P-23]).
-- **2025-09-30**: Er erschafft eine Steinwand mit Guckloch, heilt Dodo und entschuldigt sich bei ihm für seine Wortwahl ([P-24]).
-- **2025-10-07**: Er versucht einen Golem zu befehligen (scheitert), wird gepackt, überlebt aber und koordiniert die Angriffe ([P-25]).
-- **2025-10-14**: Er berät die Gruppe beim Monsterkampf ([P-26]).
-- **2025-10-21**: Er betet zu Korn und erhält einen grünen Blitz, kämpft gegen einen Werwolf und tötet eine Phasenspinne, wird aber eingesponnen und vergiftet ([P-27]).
-- **2025-11-14**: Er verhandelt mit Goblins und [Horatio](/npcs/horatio.md) und erschafft einen Schlafraum im Untergeschoss ([P-29]).
-- **2025-11-18**: Er verwandelt Nyrellas Wein in Traubensaft, beteiligt sich an einer Zirkusvorstellung und übergibt Nyrella Gold für den Marktschreier ([P-30]).
-- **2025-11-25**: Er verliert Energie durch eine [Splitterwelt-Kreatur](/npcs/kreatur_in_der_splitterwelt.md), heilt Dodo und untersucht einen [Beschwörungsstab](/items/beschwoerungsstab.md) ([P-31]).
-- **2026-01-06**: Er heilt einen verwundeten Soldaten, kämpft gegen ein Seelenkalb und schlägt vor, dass Lindo Laut unsichtbar den Kommandanten findet ([P-32]).
-- **2026-01-13**: Er zerstört zwei magische Statuen mit seinem Warhammer und erhält Respekt von Belorus ([P-33]).
-- **2026-01-20**: Er verstärkt ein Tor, indem er Holz in Stahl verwandelt, schützt Lindo Laut mit einem Lebensschild und heilt Rotunas ([P-34]).
-- **2026-01-27**: Er beschützt [Lord Harik](/npcs/lord_harik.md), tötet einen Goblin und wählt Gold statt Erz als Belohnung ([P-35]).
-- **2026-02-11**: Er erkennt eine Warnung auf einer Tafel und das [Symbol](/items/symbol_in_der_villa.md) von [Thar'Vok](/deities/tarvok_der_erdrichter.md), dem Erdrichter. Er greift Lindo Lauts Dämonenform mutig an ([P-36]).
-- **2026-03-24**: Er kehrt von einer Pilgerschaft zurück, zeigt sich versöhnlich und unterstützt Lindo Laut in der Aussprache ([P-43]).
-- **2026-03-31**: Er beschwört eine Steinwand, um Dodo vor Dormaks Angriff zu schützen, und stützt Lindo Laut, nachdem [Slix](/npcs/slix_vasul.md) entfernt wurde ([P-44]).
-- **2026-04-07**: Er löscht Fackeln mit Shape Material, wirft einen Blob in einen Käfig und sammelt ein Stück davon als Kriegsbeute ([P-45]).
-- **2026-05-06**: Er versucht, sich an ein Symbol zu erinnern, das [Dante](/characters/dante.md) gefunden hat ([P-48]).
-- **2026-05-13**: Er zeigt einem [Seraphen](/factions/seraphen.md) die Statue von Nerash, was ihn schwächt. Er nimmt das Schwert der Kreatur an, das seine Flügel verändert und ihn mit Kristallen überzieht ([P-49]).
-- **2026-05-19**: Er trägt eine beschädigte Rüstung und ein magisches Schwert, das mit den Kristallen des Berges interagiert. Seine Seele scheint an das Schwert gebunden zu sein ([P-50]).
-- **2026-06-10**: Die Gruppe sucht nach ihm; er ist vermutlich noch oben am Rand der Schlucht ([P-53]).
-- **2026-06-16**: Er stößt neu zur Gruppe, greift [Vasul](/deities/vharzul.md) an, zerstört den Splitter, wird aber von dessen Energie besessen ([P-54]).
-- **2026-07-21**: Er berührt den [Splitter des Ewigen](/items/splitter_des_ewigen.md) und löst die [Rote Nacht](/events/rote_nacht.md) aus, verwandelt sich in ein fremdes Wesen, vertreibt [Vorgultar](/deities/vorgul_tar.md), verliert aber bei jeder Aktion Teile seiner Flügel. Er opfert sich, um die Gruppe zu retten, und stirbt, ohne dass seine Seele aufsteigt. Seine Waffe wird von Lindo Laut mitgenommen ([P-55]).
-- **2026-07-29**: Sein Tod wird in der Taverne betrauert; die Gruppe gedenkt seiner, und Dodo ruft „Auf Esterossa!“ ([S1-01-A]).
+Esterossa tritt von Beginn an an der Seite der Gefährten von Rotunas auf. In frühen Kämpfen agiert er aus der Luft, nutzt Axt und heilige Magie und zeigt erste Blutrituale gegenüber Korn. Bei Verhandlungen auf den [Sandhorn-Inseln](/locations/sandhorn_inseln.md) übernimmt er soziale Führung, verhandelt mit Joar Vanur und handelt die Freilassung Guldraks gegen Informationen aus. Dabei hält er gegenüber Joar Vanur bewusst Informationen zurück, insbesondere die Kirche betreffend.
+
+In den folgenden Sessions vertieft sich sein religiöses Profil: Er kennt die Geschichte des heiligen [Duran](/deities/heiliger_duran.md), packt eine alte Bibel vorsichtig ein, betet zu Korn und zeigt Misstrauen gegenüber den alten Göttern. In der Zwischenebene kann er keine Verbindung zu Korn herstellen. Er rät zunächst vom Berühren dunkler Gegenstände ab, ergreift dann jedoch den Speer und zerschlägt Ketten, um Nerash zu befreien. Er vertraut dabei auf sein Herz, obwohl [Lindo Laut](/characters/lindo_laut.md) zögert.
+
+Während der Verteidigung eines Passes formt er eine Steinwand, verengt den Pass und legt Dodo einen Ward auf. Beim anschließenden Fest zeigt er eine weichere Seite und versöhnt sich mit seiner Katze Ajani. Beim Kampf gegen einen Golem übernimmt er taktische Führung und schlägt vor, den Golem mit grünen Kristallen zu bewerfen. Im Turnier betet er zu Korn, erhält einen Blutrausch und wird als „der geflügelte Schrecken“ bekannt. Er tötet eine Phasenspinne, wird jedoch von Säure vergiftet und kann am folgenden Dungeon nicht teilnehmen.
+
+Nach Cookies Tod fliegt er voraus und nimmt Kontakt zu Goblins auf; er schlägt vor, das Anwesen zu Ehren von Cookie zu benennen, und erschafft mit Shape Material einen Schlafraum. Gegenüber der neuen Hexe [Lunara Velora](/characters/lunara_velora.md) bleibt er zunächst misstrauisch. In Kämpfen gegen Schattenkreaturen, ein Seelenkalb und untote Armeen agiert er als Heiler und Späher. Er entdeckt eine Armee im Rückzug, heilt Dodo und Rotunas mehrfach und stabilisiert später einen Soldaten, der eine [Schriftrolle](/items/schriftrollen.md) stehlen will.
+
+In den Kämpfen um die Verteidigung von [Ehrenfels](/locations/ehrenfels.md) zerstört er magische Statuen, verstärkt Tore mit Stahl, befreit Rotunas aus einer Schädelhorde und stellt sich schützend vor die Gruppe. Danach ist er laut Dodo zeitweise in Ehrenfels, wo er auf einen neuen Freund aufpasst. Er kehrt nach wochenlanger Pilgerschaft zurück, hat aber nur vage Antworten von Korn erhalten. Er versöhnt sich mit Lindo Laut, kniet symbolisch nieder und gelobt ihm Schild und Schwert.
+
+In Abyssalis kämpft er gegen [Dormak](/npcs/dormak.md), zieht Steinwände hoch und heilt. Im weiteren Verlauf zerstört er einen Altar und hilft bei der Bergung einer Statue. Als er einem Seraphen die [Statue von Nerash](/items/statue_von_nerash.md) zeigt, erkennt er, dass Nerash und Vasul zusammengearbeitet haben. Er übernimmt das Schwert von Huludan; seine Flügel verfärben sich lila, Kristalle wachsen, aber er kann noch fliegen.
+
+Nach einem Kampf gegen Seraphen gilt er kurzzeitig als verschwunden, kehrt aber vom Raben Vasuls geweckt zurück. Im Finale entscheidet er sich gegen Vasul, zerschlägt den Kristall in dessen Hand und saugt dessen Energie in sein Schwert. Der Hauptsplitter des Ewigen ergreift Besitz von ihm; er wird zum Kanal für das weltverändernde Ereignis.
+
+In der letzten Schlacht berührt er den Splitter, verliert seine Körperfarbe und kämpft geschwächt gegen [Vorgultars](/deities/vorgul_tar.md) Kreaturen. Er kappt die Verbindung, die Ulnavar kontrolliert, und stirbt schließlich in Dodos Armen. [Lindo Laut](/characters/lindo_laut.md) versucht, seine Seele mit einem Seelenstein zu fangen, doch der Stein zerbricht, und nur ein Lachen ertönt. Später gedenkt die Menge seiner still, und Dodo erhebt sein Glas „auf Esterossa“.
 
 ## Offene Fragen
 
-- Was genau geschah mit Esterossas Seele, als er starb? Die Belege sagen, dass seine Seele nicht aufstieg ([P-55]) – ob sie an das Schwert gebunden blieb oder anderweitig gefangen ist, bleibt ungeklärt.
-- Welche langfristigen Auswirkungen hatte die Veränderung seiner Flügel und die Kristallüberziehung durch das Schwert der Kreatur ([P-49], [P-50])?
-- Was bedeutete die Aufmerksamkeit von Nerash, die Esterossa beim Berühren des Totems spürte ([P-19])?
+- Was genau mit Esterossa nach der Berührung des Splitters des Ewigen geschah, bleibt unklar. Seine Seele war nicht fassbar; der Seelenstein zerbrach, und nur ein Lachen ertönte.
+- Warum Esterossa in der Zwischenebene keine Verbindung zu Korn herstellen konnte, wird nicht erklärt.
+- Der Inhalt seiner Pilgerschaft bleibt vage: Er suchte Rat bei Korn und erhielt nur vage Antworten.
 
-## Belege
+# Belege
 
-[P-02] Session 2025-04-01 @ 00:03:25 (https://www.youtube.com/watch?v=LZIuUzc3F18)
-[P-04] Session 2025-04-15 @ 00:07:21 (https://www.youtube.com/watch?v=YCpAz_syjaY)
-[P-05] Session 2025-04-23 @ 00:13:40 (https://www.youtube.com/watch?v=z3C-bewKqUs)
-[P-06] Session 2025-04-30 @ 00:10:23 (https://www.youtube.com/watch?v=fsCOiSkKKTE)
-[P-07] Session 2025-05-06 @ 00:14:08 (https://www.youtube.com/watch?v=e0v6AFGd4mE)
-[P-09] Session 2025-05-27 @ 00:26:31 (https://www.youtube.com/watch?v=bamCIB_CkR8)
-[P-10] Session 2025-06-03 @ 00:02:50 (https://www.youtube.com/watch?v=jtYR4Je0a18)
-[P-14] Session 2025-07-09 @ 00:07:03 (https://www.youtube.com/watch?v=XOnHa6CmDbo)
-[P-15] Session 2025-07-22 @ 00:09:00 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
-[P-16] Session 2025-07-29 @ 00:51:27 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
-[P-17] Session 2025-08-12 @ 00:15:21 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)
-[P-18] Session 2025-08-20 @ 00:40:36 (https://www.youtube.com/watch?v=-XbO3FLSL_I)
-[P-19] Session 2025-09-02 @ 00:13:38 (https://www.youtube.com/watch?v=TLZOH7TlGhk)
-[P-20] Session 2025-09-06 @ 00:07:34 (https://www.youtube.com/watch?v=vo1xnyLQDJk)
-[P-21] Session 2025-09-09 @ 00:17:14 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
-[P-22] Session 2025-09-17 @ 00:13:15 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
-[P-23] Session 2025-09-23 @ 00:05:51 (https://www.youtube.com/watch?v=DGzfqVigS0g)
-[P-24] Session 2025-09-30 @ 00:07:27 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
-[P-25] Session 2025-10-07 @ 00:04:30 (https://www.youtube.com/watch?v=qVAF_54S8Vw)
-[P-26] Session 2025-10-14 @ 00:56:23 (https://www.youtube.com/watch?v=cUtz87UCHu4)
-[P-27] Session 2025-10-21 @ 00:05:01 (https://www.youtube.com/watch?v=sxFhbtwoefA)
-[P-29] Session 2025-11-14 @ 00:06:11 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)
-[P-30] Session 2025-11-18 @ 00:02:14 (https://www.youtube.com/watch?v=w__ahowb9p0)
-[P-31] Session 2025-11-25 @ 00:17:11 (https://www.youtube.com/watch?v=wd5R4fJfngY)
-[P-32] Session 2026-01-06 @ 00:10:34 (https://www.youtube.com/watch?v=VGw81seFvbo)
-[P-33] Session 2026-01-13 @ 00:02:29 (https://www.youtube.com/watch?v=w4LB1s9_3rs)
-[P-34] Session 2026-01-20 @ 00:13:00 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
-[P-35] Session 2026-01-27 @ 00:01:51 (https://www.youtube.com/watch?v=9RzvnnWzV7E)
-[P-36] Session 2026-02-11 @ 00:06:35 (https://www.youtube.com/watch?v=3C8SD-cyNPM)
-[P-43] Session 2026-03-24 @ 00:07:48 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
-[P-44] Session 2026-03-31 @ 00:34:07 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
-[P-45] Session 2026-04-07 @ 00:08:17 (https://www.youtube.com/watch?v=MAuQPMNY548)
-[P-48] Session 2026-05-06 @ 00:23:42 (https://www.youtube.com/watch?v=MB4quhDWsQE)
-[P-49] Session 2026-05-13 @ 00:34:38 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
-[P-50] Session 2026-05-19 @ 00:01:54 (https://www.youtube.com/watch?v=xEcGJeaNixI)
-[P-53] Session 2026-06-10 @ 00:23:08 (https://www.youtube.com/watch?v=_3tLSiT1tck)
-[P-54] Session 2026-06-16 @ 00:11:31 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
-[P-55] Session 2026-07-21 @ 00:12:24 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
-[S1-01-A] Session 2026-07-29 @ 01:08:38 (https://www.youtube.com/watch?v=umGyKLkefJI)
+[1] Session 2025-03-26 @ 01:46:53 (https://www.youtube.com/watch?v=ROCKGeeRUFw)  
+[2] Session 2025-04-01 @ 00:03:25 (https://www.youtube.com/watch?v=LZIuUzc3F18)  
+[3] Session 2025-04-15 @ 01:13:27 (https://www.youtube.com/watch?v=YCpAz_syjaY)  
+[4] Session 2025-04-23 @ 00:53:43 (https://www.youtube.com/watch?v=z3C-bewKqUs)  
+[5] Session 2025-04-30 @ 01:25:43 (https://www.youtube.com/watch?v=fsCOiSkKKTE)  
+[6] Session 2025-05-06 @ 00:14:33 (https://www.youtube.com/watch?v=e0v6AFGd4mE)  
+[7] Session 2025-05-27 @ 00:56:20 (https://www.youtube.com/watch?v=bamCIB_CkR8)  
+[8] Session 2025-06-03 @ 00:54:02 (https://www.youtube.com/watch?v=jtYR4Je0a18)  
+[9] Session 2025-07-09 @ 01:12:00 (https://www.youtube.com/watch?v=XOnHa6CmDbo)  
+[10] Session 2025-07-22 @ 00:09:00 (https://www.youtube.com/watch?v=BRRCUgW4xRo)  
+[11] Session 2025-07-29 @ 00:51:27 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)  
+[12] Session 2025-08-12 @ 00:17:22 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)  
+[13] Session 2025-08-20 @ 00:40:36 (https://www.youtube.com/watch?v=-XbO3FLSL_I)  
+[14] Session 2025-09-02 @ 00:52:19 (https://www.youtube.com/watch?v=TLZOH7TlGhk)  
+[15] Session 2025-09-06 @ 00:07:34 (https://www.youtube.com/watch?v=vo1xnyLQDJk)  
+[16] Session 2025-09-09 @ 00:17:14 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)  
+[17] Session 2025-09-17 @ 01:51:45 (https://www.youtube.com/watch?v=AhIT8dcxw2o)  
+[18] Session 2025-09-23 @ 01:36:23 (https://www.youtube.com/watch?v=DGzfqVigS0g)  
+[19] Session 2025-09-30 @ 00:07:27 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)  
+[20] Session 2025-10-07 @ 01:08:47 (https://www.youtube.com/watch?v=qVAF_54S8Vw)  
+[21] Session 2025-10-14 @ 00:56:23 (https://www.youtube.com/watch?v=cUtz87UCHu4)  
+[22] Session 2025-10-21 @ 00:05:23 (https://www.youtube.com/watch?v=sxFhbtwoefA)  
+[23] Session 2025-10-28 @ 00:00:03 (https://www.youtube.com/watch?v=V6NzNakqxXM)  
+[24] Session 2025-11-14 @ 01:23:35 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)  
+[25] Session 2025-11-18 @ 00:02:14 (https://www.youtube.com/watch?v=w__ahowb9p0)  
+[26] Session 2025-11-25 @ 00:18:36 (https://www.youtube.com/watch?v=wd5R4fJfngY)  
+[27] Session 2026-01-06 @ 00:10:34 (https://www.youtube.com/watch?v=VGw81seFvbo)  
+[28] Session 2026-01-13 @ 01:49:35 (https://www.youtube.com/watch?v=w4LB1s9_3rs)  
+[29] Session 2026-01-20 @ 00:13:00 (https://www.youtube.com/watch?v=H3ckYdTv4y8)  
+[30] Session 2026-01-27 @ 00:23:34 (https://www.youtube.com/watch?v=9RzvnnWzV7E)  
+[31] Session 2026-02-11 @ 00:06:53 (https://www.youtube.com/watch?v=3C8SD-cyNPM)  
+[32] Session 2026-03-03 @ 01:00:26 (https://www.youtube.com/watch?v=BRUNuNKTeOg)  
+[33] Session 2026-03-24 @ 01:08:12 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)  
+[34] Session 2026-03-31 @ 00:34:07 (https://www.youtube.com/watch?v=Ee-K84wcxLM)  
+[35] Session 2026-04-07 @ 00:04:03 (https://www.youtube.com/watch?v=MAuQPMNY548)  
+[36] Session 2026-05-06 @ 00:23:42 (https://www.youtube.com/watch?v=MB4quhDWsQE)  
+[37] Session 2026-05-13 @ 01:40:26 (https://www.youtube.com/watch?v=4afPD9Q_5AY)  
+[38] Session 2026-05-19 @ 00:09:34 (https://www.youtube.com/watch?v=xEcGJeaNixI)  
+[39] Session 2026-06-10 @ 00:23:23 (https://www.youtube.com/watch?v=_3tLSiT1tck)  
+[40] Session 2026-06-16 @ 00:11:31 (https://www.youtube.com/watch?v=qe0ck8hvYpk)  
+[41] Session 2026-07-21 @ 01:41:56 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)  
+[42] Session 2026-07-29 @ 01:07:31 (https://www.youtube.com/watch?v=umGyKLkefJI)  
+[43] Session 2026-08-04 @ 00:39:38 (https://www.youtube.com/watch?v=qRj2t3wQHfs)  
+[44] Session 2026-08-12 @ 01:14:10 (https://www.youtube.com/watch?v=piUv11DCwDw)

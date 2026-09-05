@@ -1,14 +1,14 @@
 ---
 type: NPC
 title: Nairo
-description: Nairo wird erwähnt als eines der Tiere, die nicht mitteleportiert wurden.
+description: Nairo ist ein Tier, das wie Perry und Nyrella nicht mitgenommen wurde.
 tags:
 - npcs
 timestamp: '2025-09-06T00:00:00Z'
 id: NPC_NAIRO
 ---
 
-Nairo wird erwähnt als eines der Tiere, die nicht mitteleportiert wurden.
+Nairo ist ein Tier, das wie [Perry](/npcs/perry_das_schnabeltier.md) und [Nyrella](/characters/nyrella.md) nicht mitgenommen wurde.
 
 # Belege
 

@@ -1,8 +1,8 @@
 ---
 type: Item
 title: Außerirdische Statue
-description: Die Statue wird aus dem toten Gewebe im zweiten Raum gefischt. Sie ist
-  aus unbekanntem Material und hat ein alienhaftes Aussehen. Niemand k…
+description: Eine kleine Statue, die aus einem unbekannten, alienartigen Material
+  gefertigt ist. Sie wurde aus der Grube geborgen, nachdem die Tentakel-…
 tags:
 - items
 timestamp: '2026-04-07T00:00:00Z'
@@ -10,8 +10,8 @@ id: ITEM_AUSSERIRDISCHE_STATUE
 subtype: Artefakt
 ---
 
-[Die Statue](/items/die_statue.md) wird aus dem toten Gewebe im zweiten Raum gefischt. Sie ist aus unbekanntem Material und hat ein alienhaftes Aussehen. Niemand kann sie identifizieren. Sie wird von [Lindo Laut](/characters/lindo_laut.md) aufbewahrt und könnte in zukünftigen Sessions eine Rolle spielen.
+Eine kleine Statue, die aus einem unbekannten, alienartigen Material gefertigt ist. Sie wurde aus der Grube geborgen, nachdem die Tentakel-Knotenpunkte zerstört wurden. [Lindo Laut](/characters/lindo_laut.md) zog sie mit einem [Deathkiss-Tentakel](/items/deathkiss_tentakel.md) heraus. [Esterossa](/characters/esterossa.md) konnte sie nicht identifizieren, und der GM verriet, dass ihr Name noch nicht genannt werden darf. Sie ist möglicherweise mit einer ähnlichen Statue verbunden, die die Gruppe von [Nerash](/deities/nerash.md) erhalten hat.
 
 # Belege
 
-[P-45] Session 2026-04-07 @ 01:54:51 (https://www.youtube.com/watch?v=MAuQPMNY548)
+[P-45] Session 2026-04-07 @ 01:54:35 (https://www.youtube.com/watch?v=MAuQPMNY548)

@@ -1,11 +1,11 @@
 ---
 type: Item
 title: Teleportationsring
-description: Der Ring der Teleportation, auch als Lindo Lauts Ring bekannt, ist ein
-  magischer Ring im Besitz von Lindo Laut. Lindo aktiviert den Ring, u…
+description: Der Ring, den Lindo Laut an seinem Mittelfinger trägt, wurde bisher nicht
+  aktiviert. In der finalen Konfrontation nutzt er ihn, um sich auf…
 tags:
 - items
-timestamp: '2026-05-13T00:00:00Z'
+timestamp: '2025-09-02T00:00:00Z'
 id: ITEM_RING_DER_TELEPORTATION
 subtype: Schmuck
 aliases:
@@ -15,19 +15,8 @@ aliases:
 - Ring von Lindo Laut
 ---
 
-# Ring der Teleportation
-
-Der **Ring der Teleportation**, auch als **[Lindo Lauts](/characters/lindo_laut.md) Ring** bekannt, ist ein magischer Ring im Besitz von [Lindo Laut](/characters/lindo_laut.md). Lindo aktiviert den Ring, um seine Kräfte zu verstärken. Der Ring wird einmal pro Session aktiviert.
-
-## Funktionsweise
-
-Der Ring wird von Lindo Laut aktiviert. Im aktiven Zustand verstärkt er Lindos Kräfte deutlich. Zusätzlich ermöglicht er eine Teleportation an einen anderen Ort.
-
-## Bekannte Einsätze
-
-- Mit aktiviertem Ring zerreißt Lindo Laut einen Ghul.
-- Lindo Laut teleportiert sich mithilfe des Rings auf einen Thron.
+Der [Ring](/items/ring.md), den [Lindo Laut](/characters/lindo_laut.md) an seinem Mittelfinger trägt, wurde bisher nicht aktiviert. In der finalen Konfrontation nutzt er ihn, um sich auf den [Thron](/items/thron.md) zu teleportieren. Der Ring scheint durch die neue Form zusätzlich verstärkt zu sein.
 
 # Belege
 
-[P-19] Session 2025-09-02, 00:20:25 – https://www.youtube.com/watch?v=TLZOH7TlGhk
+[P-19] Session 2025-09-02 @ 02:11:18 (https://www.youtube.com/watch?v=TLZOH7TlGhk)

@@ -1,16 +1,16 @@
 ---
 type: NPC
 title: Gulrak
-description: Gulrak ist ein Kenku, der im Gefängnis von Sanddorn festgehalten wird.
-  Er behauptet, dass die Inseln einst seiner Familie gehörten und dass…
+description: Gulrak ist ein Kenku, der nach einem versuchten Diebstahl bei Baran gefangen
+  gehalten wird. Er behauptet, die Insel habe früher seiner Fami…
 tags:
 - npcs
 timestamp: '2025-04-30T00:00:00Z'
 id: NPC_GULRAK
 ---
 
-Gulrak ist ein [Kenku](/npcs/kenku.md), der im [Gefängnis von Sanddorn](/locations/gefaengnis_von_sanddorn.md) festgehalten wird. Er behauptet, dass die Inseln einst seiner Familie gehörten und dass er ein magisches Erbstück, ein Amulett mit einem Rabenschädel, zurückholen wollte, das sich im Besitz von [Baran](/npcs/baran.md) befindet. Er ist verschlagen und versucht, mit der Gruppe zu verhandeln. Er wird von [Esterossa](/characters/esterossa.md) zurück in die Zelle getreten und von [Rotunas](/characters/rotunas.md) magisch eingeschlossen.
+Gulrak ist ein [Kenku](/npcs/kenku_bote.md), der nach einem versuchten Diebstahl bei [Baran](/npcs/baran.md) gefangen gehalten wird. Er behauptet, die Insel habe früher seiner Familie gehört und die Piraten hätten sie übernommen; er wollte ein magisches Familienerbstück (ein [Amulett mit Krähenschädel](/items/amulett_mit_kraehenschaedel.md)) zurückholen. Er bietet der Gruppe Informationen an, wenn sie ihn freilässt. Nachdem sie einwilligen und ihn herauslassen, versucht er zu fliehen, wird aber von [Cookie](/characters/cookie.md) mit der Zunge zurück in die Zelle geschleudert. Er ist geschunden, aber immer noch verschlagen und versucht, die Gruppe zu manipulieren.
 
 # Belege
 
-[P-06] Session 2025-04-30 @ 01:14:11 (https://www.youtube.com/watch?v=fsCOiSkKKTE)
+[P-06] Session 2025-04-30 @ 01:37:37 (https://www.youtube.com/watch?v=fsCOiSkKKTE)

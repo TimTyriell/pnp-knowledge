@@ -1,29 +1,25 @@
 ---
 type: NPC
 title: Kronos
-description: Kronos ist ein toter Schamane, der zu Lebzeiten als meistgesuchter Verbrecher
-  der nördlichen Schneise galt. Seine Seele wurde von Lindo Lau…
+description: Kronos war der meistgesuchte Verbrecher der Nördlichen Schneise. Auf
+  ihn war ein Kopfgeld ausgesetzt; eingelöst wurde es schließlich mit de…
 tags:
 - npcs
 timestamp: '2026-03-03T00:00:00Z'
 id: NPC_KRONOS
 ---
 
-# Kronos
+Kronos war der meistgesuchte Verbrecher der [Nördlichen Schneise](/locations/noerdliche_schneise.md). Auf ihn war ein Kopfgeld ausgesetzt; eingelöst wurde es schließlich mit der Übergabe seines Leichnams.
 
-Kronos ist ein toter Schamane, der zu Lebzeiten als meistgesuchter Verbrecher der nördlichen Schneise galt. Seine Seele wurde von [Lindo Laut](/characters/lindo_laut.md) gefangen; seine Leiche wurde von der Gruppe geborgen und im [Haus des Löwen](/locations/haus_des_loewen.md) übergeben.
+## Fahndung und Kopfgeld
 
-## Hintergrund und Rolle
+Ein Plakat im [Gildenhaus](/locations/gildenhaus_in_breska.md) suchte nach Kronos und versprach eine Belohnung von vier Truhen Gold.
 
-Kronos war ein Schamane, auf den ein Kopfgeld ausgesetzt war. Im Haus des Löwen identifizierten ihn der Ifrit Halonas und eine unbekannte Dame eindeutig als meistgesuchten Verbrecher der nördlichen Schneise. Die Leiche war zu diesem Zeitpunkt bereits verwesend, aber noch erkennbar.
+## Leichnam und Übergabe
 
-Darüber hinaus wird Kronos potenzielles Wissen über die südlichen Lande und die [Splitterwelt](/domains/splitterwelt.md) zugeschrieben.
-
-## Verbleib
-
-Die Gruppe bewahrte Kronos’ Leiche in einer Taschen-Dimension auf und übergab sie im Haus des Löwen. Seine Seele ist jedoch nicht frei: Sie wird von [Lindo Laut](/characters/lindo_laut.md) gefangen gehalten. [Nox](/npcs/nox.md) schlug vor, Kronos zu befragen, warnte aber zugleich, dass dies riskant sei.
+Der Leichnam von Kronos wurde in der Taschendimension von [Lindo Laut](/characters/lindo_laut.md) aufbewahrt. Bei der Übergabe im [Haus des Löwen](/locations/haus_des_loewen.md) von [Willauch](/locations/willauch.md) fehlte dem Körper der Kopf; deshalb wurde die Belohnung von den ursprünglich geforderten Summen auf zwei Truhen und fünf Säcke Gold heruntergehandelt. [Haloras](/npcs/haloras.md) materialisierte die ausgezahlte Belohnung. Der Leichnam hatte zu diesem Zeitpunkt bereits Farbe verloren; auf seiner grünen Haut hatten sich neue Farbtöne entwickelt.
 
 # Belege
 
-[P-37] Session 2026-02-17 @ 01:32:46 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
-[P-39] Session 2026-03-03 @ 00:23:08 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
+[P-22] Session 2025-09-17 @ 00:24:13 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
+[P-39] Session 2026-03-03 @ 00:23:47 (https://www.youtube.com/watch?v=BRUNuNKTeOg)

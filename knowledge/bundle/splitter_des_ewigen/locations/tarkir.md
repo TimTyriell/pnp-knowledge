@@ -1,34 +1,29 @@
 ---
 type: Location
 title: Tarkir
-description: Tarkir ist eine Region, die seit zwölf Jahren von der Außenwelt abgeschottet
-  war. Sie ist die Heimat von Vargo und Dodo sowie der Herkunfts…
+description: Tarkir ist die ursprüngliche Heimat von Dodo und Vargo. Beide verließen
+  die Region vor zwölf Jahren. Tarkir war zwölf Jahre lang von der Au…
 tags:
 - locations
 timestamp: '2026-08-25T00:00:00Z'
 id: LOC_TARKIR
 subtype: Siedlung
 aliases:
-- Tarkir
 - Takir
 ---
 
-Tarkir ist eine Region, die seit zwölf Jahren von der Außenwelt abgeschottet war. Sie ist die Heimat von [Vargo](/npcs/vargo.md) und [Dodo](/characters/dodo.md) sowie der Herkunftsort des Obsidians, das in [Edmunds](/npcs/sir_edmund.md) Rüstung verarbeitet ist.
+Tarkir ist die ursprüngliche Heimat von [Dodo](/characters/dodo.md) und [Vargo](/npcs/vargo.md). Beide verließen die Region vor zwölf Jahren. Tarkir war zwölf Jahre lang von der Außenwelt abgeschottet; inzwischen wurde dort ein Hafen erschlossen und der Handel belebt sich wieder. Bekannt ist die Region für ihr magieresistentes Obsidian und als Herkunftsort zahlreicher seltsamer Kreaturen.
 
-## Abschottung und Zugang
+## Geographie und Bewohner
 
-Tarkir war zwölf Jahre lang abgeschottet. [Jorah Vanur](/npcs/joar_vanur.md) hat einen Hafen erschlossen, der den Zugang zur Region ermöglicht, und bietet der Gruppe an, sie mitzunehmen.
+Ob Tarkir einen Kontinent oder eine kleinere Region bezeichnet, ist nicht überliefert. In einem Vulkan der Gegend lebten [Goblins](/npcs/pilz_goblins.md). Viele ungewöhnliche Kreaturen sollen aus Tarkir stammen, darunter Basilisken und möglicherweise die Strixwölfe. Das dort gewonnene Obsidian wird zu Waffen und Rüstungen verarbeitet und bietet starken Schutz vor Magie.
 
-## Bedeutung
+## Geschichte und Herkunft der Helden
 
-Aus Tarkir stammt das Obsidian, das in [Edmunds](/npcs/sir_edmund.md) Rüstung verarbeitet ist. [Joao](/events/joao_faellt_ins_wasser.md) warnt davor, dass der Lord von Willough von dieser Herkunft erfahren könnte.
-
-## Heimat der Gefährten
-
-[Vargo](/npcs/vargo.md) und [Dodo](/characters/dodo.md) stammen aus Tarkir. [Vargo](/npcs/vargo.md) erinnert sich nur vage an die Region.
+Dodo und [Vargo](/npcs/vargo.md) verließen Tarkir vor zwölf Jahren; ihre Erinnerungen an die Zeit vor dem Verlassen sind verloren. Dodo wuchs in Tarkir auf, weiß aber nichts über seine Eltern. [Joar Vanur](/npcs/joar_vanur.md) berichtet, dass nach der langen Abschottung ein Hafen erschlossen wurde und der Handel wieder auflebt. Zugleich warnt er: Der [Lord von Willauch](/npcs/lord_kalidarn_von_willauch.md) dürfe niemals von Tarkir erfahren.
 
 # Belege
 
-1. Session 2026-08-12 @ 01:18:23 (https://www.youtube.com/watch?v=piUv11DCwDw)
-2. Session 2026-08-18 @ 02:12:01 (https://www.youtube.com/watch?v=10swvSz6k7U)
-3. Session 2026-08-25 @ 00:10:02 (https://www.youtube.com/watch?v=1Cjj3OVqiYA)
+1. Session 2026-08-12 @ 01:16:20 – https://www.youtube.com/watch?v=piUv11DCwDw
+2. Session 2026-08-18 @ 02:12:01 – https://www.youtube.com/watch?v=10swvSz6k7U
+3. Session 2026-08-25 @ 00:10:02 – https://www.youtube.com/watch?v=1Cjj3OVqiYA

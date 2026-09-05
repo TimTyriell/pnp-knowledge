@@ -1,8 +1,8 @@
 ---
 type: Item
 title: Goldenes Amulett
-description: Ein goldenes Amulett, das Dodo in der Ruine findet. Es stellt sich als
-  einfacher Schmuck heraus, der die Insignie von Duran trägt.
+description: Ein goldenes Amulett mit dem Symbol des heiligen Duran, das Dodo in der
+  Ruine findet. Es ist laut Auranil nur Schmuck und nicht magisch.
 tags:
 - items
 timestamp: '2025-05-06T00:00:00Z'
@@ -10,7 +10,7 @@ id: ITEM_GOLDENES_AMULETT
 subtype: Schmuck
 ---
 
-Ein goldenes Amulett, das [Dodo](/characters/dodo.md) in der Ruine findet. Es stellt sich als einfacher Schmuck heraus, der die Insignie von [Duran](/deities/heiliger_duran.md) trägt.
+Ein goldenes Amulett mit dem Symbol des heiligen [Duran](/deities/heiliger_duran.md), das [Dodo](/characters/dodo.md) in der Ruine findet. Es ist laut [Auranil](/npcs/auranil.md) nur Schmuck und nicht magisch.
 
 # Belege
 

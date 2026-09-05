@@ -1,8 +1,8 @@
 ---
 type: Item
 title: Kornklatscher
-description: Der Kornklatscher ist ein starkes alkoholisches Getränk, das von Goblins
-  gebraut wird. Es schmeckt wie Putzalkohol und verursacht Blubbern…
+description: Der Kornklatscher ist ein starkes alkoholisches Getränk, gebraut von
+  Goblins, das wie Putzalkohol schmeckt und doppelt so stark ist. Nyrell…
 tags:
 - items
 timestamp: '2025-11-18T00:00:00Z'
@@ -10,8 +10,8 @@ id: ITEM_KORNKLATSCHER
 subtype: Trank
 ---
 
-Der Kornklatscher ist ein starkes alkoholisches Getränk, das von [Goblins](/npcs/pilz_goblins.md) gebraut wird. Es schmeckt wie Putzalkohol und verursacht Blubbern im Magen. Es wird in der Taverne serviert.
+Der Kornklatscher ist ein starkes alkoholisches Getränk, gebraut von [Goblins](/npcs/pilz_goblins.md), das wie Putzalkohol schmeckt und doppelt so stark ist. [Nyrella](/characters/nyrella.md), Lunara, [Dodo](/characters/dodo.md) und [Esterossa](/characters/esterossa.md) trinken ihn in mehreren Runden, was zu Trunkenheit und einem kurzen Schock bei Nyrella führt.
 
 # Belege
 
-[P-30] Session 2025-11-18 @ 00:26:53 (https://www.youtube.com/watch?v=w__ahowb9p0)
+[P-30] Session 2025-11-18 @ 00:26:56 (https://www.youtube.com/watch?v=w__ahowb9p0)

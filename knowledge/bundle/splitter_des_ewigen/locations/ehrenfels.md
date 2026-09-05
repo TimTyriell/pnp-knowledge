@@ -1,157 +1,99 @@
 ---
 type: Location
 title: Ehrenfels
-description: Ehrenfels ist eine Stadt in den Bergen, genauer gesagt auf den Eulenbergen
-  angesiedelt, und dient als Hauptquartier der Ehrenfels-Gilde. Di…
+description: Ehrenfels ist eine kleine, schwer erreichbare Bergstadt in den Eulenbergen
+  und Heimat der Ehrenfels-Gilde. Die Siedlung liegt auf einem Ber…
 tags:
 - locations
-timestamp: '2026-08-18T00:00:00Z'
+timestamp: '2026-08-25T00:00:00Z'
 id: LOC_EHRENFELS
 subtype: Siedlung
 ---
 
 ## Überblick
 
-Ehrenfels ist eine Stadt in den Bergen, genauer gesagt auf den Eulenbergen angesiedelt, und dient als Hauptquartier der [Ehrenfels-Gilde](/factions/gilde_von_ehrenfels.md). Die Stadt ist in eine Senke im Berg eingearbeitet und liegt weit oben auf einem großen Berg. Sie ist die Heimatstadt der Gruppe und Ausgangspunkt der meisten Missionen. Die Stadt ist nicht groß, aber sehr schwer zu erreichen – eine Armee würde niemals hier hochkommen, da es keinen Sinn ergeben würde, oder zumindest nur unter großen Verlusten. Ehrenfels wird als weniger wohlhabend als [Willauch](/locations/willauch.md) beschrieben; die Gruppe hätte dort für den Körper des gesuchten Verbrechers [Kronos](/npcs/kronos.md) weniger Gold erhalten als in der prunkvolleren Stadt.
+Ehrenfels ist eine kleine, schwer erreichbare Bergstadt in den [Eulenbergen](/locations/eulenbergen.md) und Heimat der [Ehrenfels-Gilde](/factions/gilde_von_ehrenfels.md). Die Siedlung liegt auf einem Berg, teils in eine Senke eingearbeitet, und besitzt zwei große Eingänge. Menschen und Anderlinge leben dort friedlich zusammen ([1], [13], [3]). Innerhalb der Stadt gibt es eine wohlhabendere rechte Seite mit Schmiede, Handelsmarkt, Kampfplatz und dem Gebäude des Gildemeisters sowie eine linke Seite, die vor allem Ankömmlingen dient und in der die in den Berg eingebaute Kathedrale liegt. Außerdem steht dort ein altes, leerstehendes Gebäude einer früheren Adelsfamilie ([1]). Ehrenfels ist die Heimatbasis der Heldengruppe und Ausgangspunkt vieler Aufträge. Nach einer Dämonenschlacht ist die Stadt geschwächt, existiert aber weiter; inzwischen haben Anhänger [Nerashs](/deities/nerash.md) die Führung übernommen ([15], [16], [17]).
 
 ## Rolle in der Kampagne
 
-Ehrenfels ist der zentrale Stützpunkt der Gruppe. Von hier aus starten die meisten Missionen, hier kehren die Helden nach ihren Abenteuern zurück und hier befindet sich das Trainingsgelände der Gilde. Die Stadt ist das Gilden-Hauptquartier und wird von einem Gildenmeister geführt. Die Gruppe genießt in Ehrenfels Vertrauen und hat Zugang zu den alten Tempeln, die sie bisher nur von der Ferne sahen.
-
-Die Stadt spielt eine zentrale Rolle im Konflikt um [Vasul](/deities/vharzul.md): Ein fünfter Teil von Vasuls Kraft liegt in Ehrenfels verborgen, bewacht vom Gildenmeister. Dies macht die Stadt zu einem strategischen Ziel sowohl für die Gruppe als auch für ihre Gegner. Für [Lindo Laut](/characters/lindo_laut.md) ist Ehrenfels gefährlich, da der Rest von Vasuls Kraft dort liegt.
+Ehrenfels ist zentraler Ausgangs- und Rückzugsort der Gefährten von Rotunas. Die [Ehrenfels-Gilde](/factions/gilde_von_ehrenfels.md) entsendet von hier aus Abenteurer, etwa zu den Zwergen, und nimmt hochkarätige Aufträge an ([7], [13]). Eine versiegelte Botschaft, die die Gruppe überbringt, muss dringend nach Ehrenfels; sie enthält Voras’ Erkenntnis und weist auf einen fünften Teil [Vasuls](/deities/vharzul.md) hin, der vom [Gildenmeister](/npcs/nox.md) bewacht wird ([4], [6]). Ehrenfels wird zum Ort, an dem das Portal nach [Abyssalis](/domains/splitterwelt.md) geöffnet wird, und zum Schauplatz der anschließenden Verteidigung gegen die Restmacht [Vasuls](/deities/vharzul.md), aus der die Stadt geschwächt hervorgeht ([12], [14], [15]). In der jüngeren Handlung kehrt die Gruppe nach Ehrenfels zurück, wird als Retter gefeiert, sammelt Informationen und nimmt neue Aufträge an ([16], [17], [19]).
 
 ## Wichtige Merkmale
 
 ### Lage und Beschaffenheit
 
-Ehrenfels liegt auf einem großen Berg in den Eulenbergen, in eine Senke im Berg eingearbeitet. Die Stadt ist von Schnee bedeckt, wenn Winter herrscht; die Straßen werden dann freigekratzt und der Fluss beginnt langsam zu gefrieren. Es gibt zwei große Eingänge zur Stadt. Die Stadt ist in zwei Teile aufgeteilt: Der rechte Teil beherbergt die Schmiede, den großen Handelsmarkt, den Kampfplatz beziehungsweise das Gebäude des Gildemeisters und die Wohnstätten der höherrangigen Mitglieder (meist Tier 3), die sich einen Namen gemacht haben. Der linke Teil ist eher für Ankömmlinge gedacht, für Leute, die etwas kaufen wollen oder zur [Kathedrale](/locations/kathedrale.md) wollen, die im Berg eingebaut ist.
-
-### Bauwerke
-
-- **Taverne**: Zentraler Treffpunkt der Stadt, in der die Gruppe regelmäßig verkehrt und wo sie auch mit Bekannten wie [Lisa](/npcs/lisa.md) zusammengetroffen ist.
-- **Kathedrale**: Im Berg eingebaut, ein bedeutendes Bauwerk der Stadt.
-- **Altes heruntergekommenes Gebäude**: Einst Sitz einer Adelsfamilie, die ihren Ruf verloren hat; das Haus steht seither leer und wäre potenziell abzukaufen.
-- **[Kapelle](/locations/parfon_kapelle_auf_dem_berg.md)**: Ein Ort des Gottesdienstes, der später eine Rolle in der Konfrontation mit den neuen Göttern spielt.
-- **[Tempel auf dem Berg](/locations/tempel_auf_dem_berg.md)**: Ein weiteres religiöses Bauwerk.
-- **Trainingsgelände der Gilde**: Befindet sich in Ehrenfels.
-- **[Statue von Rotunas](/locations/statue_von_rotunas.md)**: Eine Statue zu Ehren des Gottes [Rotunas](/characters/rotunas.md).
+- Bergstadt bzw. Gildensiedlung in den Eulenbergen, auf einem Berg und teils in eine Senke eingearbeitet ([1], [13], [3]).
+- Im Winter liegt Schnee, und der Fluss beginnt zuzufrieren ([3]).
+- Schwer erreichbar; eine Armee könnte kaum oder nur unter großen Verlusten hinaufgelangen ([13], [3]).
+- Zwei große Eingänge ([1]).
+- Zweiteilung: rechts das wohlhabendere Viertel mit Schmiede, Handelsmarkt, Kampfplatz und dem Gebäude des Gildemeisters; links das Ankömmlingviertel mit der in den Berg eingebauten Kathedrale ([1]).
+- Ein altes, heruntergekommenes Gebäude einer Adelsfamilie, das leersteht und potenziell gekauft werden kann ([1]).
+- Bekannte Statuen mit Krähenschädeln ([12]).
+- Das [Trainingsgelände der Gilde von Ehrenfels](/locations/trainingsgelaende_von_ehrenfels.md) ist per Portal erreichbar ([5], [12]).
+- Das Portal nach [Abyssalis](/domains/splitterwelt.md) befindet sich am Berggipfel bzw. an der oberen Spitze der Stadt ([12], [13]).
+- Ein Schutzschild der Stadt wird von [Dormak](/npcs/dormak.md) zerstört ([12]).
+- Gebäude wurden bei der Dämonenschlacht kaum beschädigt ([16]).
+- Zwei Kapellen: die alte Kapelle von Ehrenfels für alle Glaubensrichtungen und eine neue, von [Nerash](/deities/nerash.md) errichtete [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) ([17]).
+- Eine Taverne und eine große Statue von [Rotunas](/characters/rotunas.md) sind vorhanden ([18]).
 
 ### Bewohner
 
-In Ehrenfels leben Menschen und Anderlinge sehr friedlich miteinander zusammen. Die Stadt wird von der Ehrenfels-Gilde dominiert, die für ihre High-Value-Target-Aufträge bekannt ist. [Der Gildenmeister](/npcs/nox.md) führt die Stadt und bewacht den fünften Teil von Vasul. Die Stadt hat Soldaten und Wachmänner, die die Tore bewachen und die Gruppe persönlich kennen.
+Menschen und Anderlinge leben in Ehrenfels friedlich zusammen ([13]). Die Stadt beherbergt viele Abenteurer und Gildenmitglieder; zeitweise wurden Leute sogar dafür bezahlt, einige Wochen in Ehrenfels zu verbringen ([13]). Nach der Dämonenschlacht sind viele Bewohner und Abenteurer gestorben; die Stadt ist geschwächt, existiert aber noch ([15], [16]). Inzwischen haben Anhänger [Nerashs](/deities/nerash.md) die Führung übernommen. Die Stadtbewohner sind misstrauisch und sehnen sich nach der alten Führung ([16], [17]). Die Bewohner haben unter den Seraphen und den neuen Göttern gelitten; nach dem Fortgang der Seraphen bleibt die Stadt ohne göttlichen Schutz zurück ([18]).
 
 ## Beziehungen und Verbindungen
 
-- **Ehrenfels-Gilde**: Die Stadt ist das Hauptquartier der Gilde. Die Gilde vergibt Aufträge, hat ein Trainingsgelände und einen Gildenmeister. Die Gruppe gehört zur Gilde und genießt deren Vertrauen.
-- **[Brabarand-Gilde](/factions/brabarand_gilde.md)**: Greift die Stadt an, was zu Chaos führt. Der Gildemeister betont, dass die Stadt unbescholten bleiben soll.
-- **[Breska](/locations/breska.md)**: Eine Stadt, in der die Gruppe viele Abenteuer erlebt hat. [Die Botschaft](/items/die_botschaft.md) von Breska sollte nach Ehrenfels gebracht werden. Die Städte liegen in relativer Nähe zueinander.
-- **[Zwergenfestung](/locations/zwergenfestung.md)**: Ehrenfels profitiert von den Artefakten und Materialien aus der Zwergenfestung.
-- **Willauch**: Wird als wohlhabendere Stadt im Vergleich zu Ehrenfels beschrieben.
-- **Nox**: Ein Verbündeter der Gruppe, der plante, einen Schutzzauber um Ehrenfels zu legen, um den Dämon fernzuhalten. Er ist Gerüchten zufolge tot oder verschwunden.
-- **Vasul**: Ein fünfter Teil von Vasuls Kraft liegt in Ehrenfels verborgen, bewacht vom Gildenmeister.
-- **[Vityus](/npcs/vityus.md)**: Kontrolliert die Stadt zu einem späteren Zeitpunkt.
-- **[Nerash](/deities/nerash.md)**: Die Stadt steht unter dem Einfluss von Nerash, einer Göttin, die die Stadt angeblich gerettet hat.
-- **Rotunas**: Eine Statue von Rotunas steht in der Stadt; die Gruppe wurde in Ehrenfels als „Rotunas“ erkannt.
+Ehrenfels ist untrennbar mit der [Ehrenfels-Gilde](/factions/gilde_von_ehrenfels.md) verbunden, deren Sitz und Heimat es ist ([10], [13]). Die Gefährten von Rotunas — darunter [Rotunas](/characters/rotunas.md), [Dodo](/characters/dodo.md), [Lindo Laut](/characters/lindo_laut.md), [Lunara Velora](/characters/lunara_velora.md) und [Esterossa](/characters/esterossa.md) — haben dort ihre Unterkunft und erhalten von der Gilde Aufträge ([3], [7], [19]). [Nox](/npcs/nox.md) hält Ehrenfels für [Lindo Laut](/characters/lindo_laut.md) für gefährlich, weil sich dort die restliche Macht [Vasuls](/deities/vharzul.md) befindet; er plant einen Schutzzauber, um [Lindo Laut](/characters/lindo_laut.md) fernzuhalten ([8]). [Voras](/npcs/voras.md) äußert sich ablehnend und sagt, er „tanzt nur nach Ehrenfels, wenn man es ihm sagt“ ([10]). Die [Zwerge](/factions/zwerge.md) der Festung versorgen die Stadt mit handwerklichen Erzeugnissen, von denen Ehrenfels stark profitiert ([7]). Im Vergleich zu [Willauch](/locations/willauch.md) gilt Ehrenfels als trister und ruhiger; für [Kronos](/npcs/kronos.md) hätte die Gruppe dort weniger Geld erhalten ([9]). Die Stadt liegt westlich von [Breska](/locations/breska.md) und ist über Portale bzw. das [Trainingsgelände der Gilde von Ehrenfels](/locations/trainingsgelaende_von_ehrenfels.md) erreichbar ([5], [12]). Nach der Dämonenschlacht steht sie unter dem Einfluss [Nerashs](/deities/nerash.md) und ihrer Anhänger ([15], [16], [17]).
 
 ## Chronologie
 
-### Frühe Zeit (bis Session 2025-07-22)
-
-Die Gruppe hält sich in der Gildenhauptstadt auf, die in zwei Teile geteilt ist, mit Schmieden, einem Handelsmarkt und einem alten Schrein. Die Stadt wird von der Brabarand-Gilde angegriffen, was zu Chaos führt. Der Gildemeister betont, dass die Stadt unbescholten bleiben soll.
-
-### Rückkehr und Missionen (Session 2025-09-09)
-
-Die Gruppe kehrt nach ihrem Abenteuer nach Ehrenfels zurück, wo die Gilde ihren Sitz hat. Nach einigen Tagen Ruhe entscheiden sie sich für eine neue Mission nach [Steinbachtal](/locations/steinbachtal.md). Die Stadt dient als Ausgangspunkt für Missionen; von hier aus starten die meisten Aufträge.
-
-### Begegnung mit Lisa (Session 2025-10-14)
-
-In einer Taverne außerhalb von Ehrenfels trifft die Gruppe auf Lisa, die sie aus Ehrenfels kennt. Sie erinnert sich an ein gemeinsames Trinken in der [Taverne von Ehrenfels](/locations/taverne_von_ehrenfels.md), bei dem Lindo Laut mit seiner „genateten Stimme“ ein Spanferkel-Stück abgehalten habe. Lisa erwähnt, dass sie aus Ehrenfels stammt und auf diplomatischer Mission war.
-
-### Winter in Ehrenfels (Session 2025-11-18)
-
-Es ist Winter in Ehrenfels, die Stadt ist von Schnee bedeckt. Die Straßen wurden freigekratzt, der Fluss beginnt langsam zu gefrieren. Die Gruppe kommt in der Taverne zusammen, wo die Stimmung innerhalb des Gebäudes stattfindet.
-
-### Botschaft nach Ehrenfels (Session 2026-01-06)
-
-Ein Soldat erwähnt, dass eine wichtige Botschaft von Breska nach Ehrenfels gebracht werden muss. Die Gruppe hatte den Auftrag, ein wichtiges Dokument zu überbringen.
-
-### Trainingsgelände und Portal (Session 2026-01-13)
-
-Die Gruppe erwähnt, dass Lindo Laut ein [Portal](/locations/portal.md) nach Ehrenfels öffnen könnte, um den Weg an Breska vorbei zu sparen. Das Trainingsgelände der Gilde befindet sich in Ehrenfels.
-
-### Der fünfte Teil von Vasul (Session 2026-01-20)
-
-In der Notiz von [Vora](/npcs/vora.md) wird erwähnt, dass ein fünfter Teil von Vasul in Ehrenfels verborgen liegt, bewacht vom Gildenmeister. [Die Hexe](/npcs/die_hexe.md) wollte, dass jemand aus der Gilde, der das Vertrauen der Gilde genießt und Zugang zu den alten Tempeln hat, Vasul dorthin bringt.
-
-### Zwergenfestung (Session 2026-01-27)
-
-Die Gruppe wird von Ehrenfels aus zur Zwergenfestung entsandt. Die Stadt profitiert von den Artefakten und Materialien aus der [Festung](/locations/festung.md).
-
-### Gefahr durch Vasul (Session 2026-02-17)
-
-Ehrenfels ist für Lindo Laut gefährlich, da der Rest von Vasuls Kraft dort liegt. Nox plant, einen Schutzzauber um Ehrenfels zu legen, um den Dämon fernzuhalten. Die Gruppe soll sich von Ehrenfels fernhalten, um Zeit zu gewinnen.
-
-### Vergleich mit Willauch (Session 2026-03-03)
-
-Ehrenfels wird als weniger wohlhabend als Willauch beschrieben. Die Gruppe hätte dort weniger Gold für den Körper von Kronos bekommen.
-
-### Prinzessin und Inaros (Session 2026-03-24)
-
-Die Prinzessin ist in Ehrenfels untergebracht, wo [Inaros](/npcs/inaros.md) versteckt ist. Die Gruppe will dorthin reisen, um Lunaras Plan umzusetzen. Nox war nicht ganz erfreut, aber die Prinzessin wird in Ehrenfels aufgenommen und ist erstmal sicher.
-
-### Portal zu Abyssalis (Session 2026-03-31)
-
-Die Gruppe begibt sich zur oberen Spitze von Ehrenfels, wo sie das Portal zu [Abyssalis](/domains/splitterwelt.md) öffnet. Sie vermuten, dass hier das versteckt ist, was alle suchen – der schlechte Teil von Vasul. Die Stadt wird von [Dämonen](/factions/daemonen.md) angegriffen, nachdem [Dormak](/npcs/dormak.md) getötet wurde. Die Verteidigung wird von Nox und anderen organisiert.
-
-### Dämonische Invasion (Session 2026-04-09)
-
-Ehrenfels wird von einer dämonischen Invasion heimgesucht, die durch ein [Portal am Nordgipfel](/locations/portal_am_nordgipfel.md) ausgelöst wird. Die Stadt wird schwer verwüstet, und viele Soldaten fallen. Die Ehrenfels-Gilde hatte zuvor einen Aufruf gestartet und Leute hierher gerufen; die einzige Aufgabe war, in Ehrenfels zu verweilen – ein ungewöhnlicher Move, der sich wie Ruhe vor dem Sturm anfühlt.
-
-### Nach der Schlacht (Session 2026-06-04)
-
-Ehrenfels wurde von einer dunklen Kreatur angegriffen, aber von einem neuen Gott gerettet. Die Stadt ist stark geschwächt, der Gildenmeister ist ermordet worden. Viele Dorfbewohner und Abenteurer haben ihr Ende gefunden. Die Göttin Nerash ist aufgetaucht und hat angeblich die Stadt gerettet, aber zu dem Zeitpunkt waren schon sehr viele gefallen. Die Stadt existiert noch.
-
-### Rückkehr der Gruppe (Session 2026-07-29)
-
-Die Gruppe kehrt nach Ehrenfels zurück. Die Stadt ist von Trauer und Unterdrückung gezeichnet, aber die Gebäude sind weitgehend intakt. Es gibt eine Taverne, eine Kapelle und einen Tempel auf dem Berg. Die Stadt wird von Vityus kontrolliert. Die Wachmänner, die die Gruppe kennen, sind überrascht und erfreut, sie wiederzusehen – es sind einige Monate vergangen, seitdem die Gruppe durch das Portal gegangen ist.
-
-### Unter dem Einfluss von Nerash (Session 2026-08-04)
-
-Ehrenfels dient als Gildenhauptquartier. Die Stadt hat eine Kapelle für die neuen Götter und eine Statue von Rotunas. Die Gruppe erfährt, dass die Stadt unter dem Einfluss von Nerash steht und dass es Spannungen mit den Einwohnern gibt.
-
-### Konfrontation mit Vitius (Session 2026-08-12)
-
-Die [Kapelle von Ehrenfels](/locations/kapelle_von_ehrenfels.md) ist der Ort der [Konfrontation mit Vitius](/events/konfrontation_mit_vitius.md) und Nerash. Die Gruppe plant, am nächsten Morgen aufzubrechen. In der Kapelle findet ein Gottesdienst statt, bei dem nur der Wirt der Taverne anwesend ist, der anscheinend etwas mit der Priesterin hat. [Liam](/npcs/liam_velora.md), Lunaras Bruder, reagiert nicht gut auf die neuen Götter – der Segen der Priesterin wirkt nicht bei ihm. [Vitius](/npcs/vitius.md), der Seraph, gibt der Gruppe den Auftrag, einen Trank im Nordosten der nördlichen Schneise in [Valuna](/locations/valuna.md) zu stehlen.
-
-### Aufbruch (Session 2026-08-18)
-
-Die Gruppe verlässt Ehrenfels. Joao erwähnt ein magisches Gerät aus Ehrenfels, eine Art magische Kamera, die siebenmal benutzt werden kann und ein magisches Abbild erzeugt. Es gibt normalerweise nur zwei Wege runter vom Berg, aber Joao hat einen dritten Weg entdeckt.
+- **2025-07-22:** Die Gruppe lernt Ehrenfels als Gildenhauptstadt kennen. Die Stadt ist friedlich, hat zwei große Eingänge und ein leerstehendes ehemaliges Adelshaus. Der [Gildenmeister](/npcs/nox.md) betont am Ende, Ehrenfels solle unbescholten bleiben ([1]).
+- **2025-10-14:** In einer Taverne begegnet die Gruppe einer Frau, die sie aus Ehrenfels kennt; dort lernte sie zuvor auch [Lisa](/npcs/lisa.md) kennen ([2]).
+- **2025-11-18:** Winter in Ehrenfels: Es liegt Schnee, der Fluss friert zu. Die Gruppe hat eine Unterkunft und ist Teil der Gilde. Am Fuß des Berges werden [Untote](/factions/belorus_untotenarmee.md) gesichtet ([3]).
+- **2026-01-06:** Ein wiederbelebter Soldat stellt klar, dass die versiegelte Botschaft dringend nach Ehrenfels muss, um [Lord Voras](/npcs/lord_voras.md)’ Erkenntnis zu überbringen ([4]).
+- **2026-01-13:** Ehrenfels wird als Stadt im Westen mit einem Trainingsgelände der Gilde bezeichnet; [Dodo](/characters/dodo.md) schlägt vor, per Portal dorthin zu reisen, um den Weg an [Breska](/locations/breska.md) vorbei zu sparen ([5]).
+- **2026-01-20:** Voras’ Notiz nennt Ehrenfels als Ort, an dem ein fünfter Teil Vasuls liegt, bewacht vom Gildenmeister; weitere Details sind unbekannt ([6]).
+- **2026-01-27:** Ehrenfels ist die Herkunftsstadt der Abenteurer. [Die Gilde](/factions/gilde_von_ehrenfels.md) entsandte sie, um den Zwergen zu helfen. Die Stadt profitiert stark von deren handwerklichen Erzeugnissen ([7]).
+- **2026-02-17:** [Nox](/npcs/nox.md) hält Ehrenfels für [Lindo Laut](/characters/lindo_laut.md) für gefährlich und plant einen Schutzzauber; die Gruppe meidet den Ort ([8]).
+- **2026-03-03:** Ehrenfels wird als Heimatstadt beschrieben, „trister und ruhiger als Willauch“; für [Kronos](/npcs/kronos.md) hätte die Gruppe dort weniger Geld erhalten. [Esterossa](/characters/esterossa.md) befindet sich gerade dort ([9]).
+- **2026-03-10:** Ehrenfels ist Sitz der Gilde und Heimatbasis; von dort stammen [Ser Eulenweiss](/npcs/ser_eulenweiss.md) und der Auftrag. [Voras](/npcs/voras.md) will nicht nach Ehrenfels ([10]).
+- **2026-03-24:** Die Gruppe plant, nach Ehrenfels zu reisen, um [Lunara Velora](/characters/lunara_velora.md) den Weg ins [Abyssalis](/domains/splitterwelt.md) zu ermöglichen. [Nox](/npcs/nox.md) und die [Prinzessin](/npcs/prinzessin_marie.md) sollen dort untergebracht sein; [Lindo Laut](/characters/lindo_laut.md) bleibt zurück ([11]).
+- **2026-03-31:** Am Berggipfel von Ehrenfels öffnet die Gruppe das Portal nach [Abyssalis](/domains/splitterwelt.md). [Vasul](/deities/vharzul.md) absorbiert seine Macht, und [Dormak](/npcs/dormak.md) zerstört den Schutzschild der Stadt. Später führt ein Portal zum [Trainingsgelände der Gilde von Ehrenfels](/locations/trainingsgelaende_von_ehrenfels.md) ([12]).
+- **2026-04-09:** Ehrenfels wird als friedliche Bergstadt auf den Eulenbergen beschrieben. In derselben Session wird sie von einer magischen Welle und einem Dämonenangriff heimgesucht, der große Teile der Stadt in Mitleidenschaft zieht; das Portal am Berggipfel ist das Zentrum des Angriffs ([13]).
+- **2026-04-14:** [Rotunas](/characters/rotunas.md) verteidigt die Gildestadt gegen die Restmacht Vasuls, während die Gruppe das Portal geöffnet hat ([14]).
+- **2026-06-04:** Die Stadt wird von einer dunklen Kreatur angegriffen und von [Nerash](/deities/nerash.md) gerettet. Viele Bewohner und Abenteurer sterben, der Gildenmeister wird ermordet oder gilt zumindest als nicht mehr existent. Die Stadt ist geschwächt, existiert aber noch ([15]).
+- **2026-07-29:** Die Helden kehren zurück. Die Gebäude sind kaum beschädigt, aber viele Bewohner starben; laut Recap wurde auch [Rotunas](/characters/rotunas.md), der Anführer der Heldengruppe, verloren. Anhänger Nerashs haben die Führung übernommen; die Helden werden als Retter gefeiert ([16]).
+- **2026-08-04:** Ehrenfels erholt sich und steht unter der Kontrolle der neuen Götter unter Nerash. Die Bewohner sind misstrauisch und sehnen sich nach der alten Führung. Es gibt die alte Kapelle von Ehrenfels und eine neue, von Nerash errichtete Kapelle ([17]).
+- **2026-08-12:** Die Session spielt überwiegend in Ehrenfels. Zu sehen sind die alte Kapelle, eine Taverne und eine große Rotunas-Statue. Die Bewohner haben unter den Seraphen und den neuen Göttern gelitten; nach dem Fortgang der Seraphen bleibt die Stadt ohne göttlichen Schutz zurück ([18]).
+- **2026-08-18:** Ehrenfels ist Ausgangsstadt für den Auftrag von [Joar Vanur](/npcs/joar_vanur.md); die Gruppe besucht dort das Gildenhauptquartier ([19]).
+- **2026-08-25:** Die Gruppe erwägt, in der Nähe eines Bergpasses einen Teleportbaum zu pflanzen, verwirft den Ort aber, weil er zu nahe an Ehrenfels liegt. Der Platz wird als geschützt und versteckt beschrieben ([20]).
 
 ## Offene Fragen
 
-- Was genau ist mit dem Gildenmeister geschehen? Er wurde ermordet oder ist „zumindest nicht mehr existent“ – die genauen Umstände sind unklar.
-- Was ist aus Nox geworden? Er gilt Gerüchten zufolge als tot oder verschwunden, aber die Gruppe hat ihn zuletzt in Ehrenfels gesehen, als er die Verteidigung organisierte.
-- Welche Rolle spielt der fünfte Teil von Vasul, der in Ehrenfels verborgen liegt und vom Gildenmeister bewacht wurde? Was ist nach dem Tod des Gildenmeisters mit diesem Teil geschehen?
-- Wie genau konnte Nerash die Stadt „retten“ und welche Absichten verfolgt sie mit Ehrenfels?
-- Was ist aus der Prinzessin geworden, die in Ehrenfels untergebracht war?
+- Ob die [Prinzessin](/npcs/prinzessin_marie.md) tatsächlich nach Ehrenfels gelangte und wo sie sich derzeit aufhält, ist unklar; ihr Aufenthaltsort gilt als unbekannt ([11]).
+- Was genau mit dem fünften Teil Vasuls in Ehrenfels geschah und ob der Gildenmeister ihn tatsächlich bewachte, ist offen ([6]).
+- Wie sich die Herrschaft der neuen Götter unter [Nerash](/deities/nerash.md) und das Misstrauen der Bewohner langfristig entwickeln, ist ungeklärt ([17], [18]).
+- Der Zustand des Portals bzw. der Schutzvorrichtungen nach dem Angriff und dem Eingriff [Dormaks](/npcs/dormak.md) bleibt unklar ([12], [13]).
+- Ob Ehrenfels nach dem Fortgang der Seraphen wieder einen göttlichen Schutz erhält, ist nicht beantwortet ([18]).
 
-## Belege
+# Belege
 
-1. Session 2025-07-22 @ 00:02:06 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
-2. Session 2025-09-09 @ 00:07:30 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
-3. Session 2025-10-14 @ 00:32:38 (https://www.youtube.com/watch?v=cUtz87UCHu4)
-4. Session 2025-11-18 @ 00:00:00 (https://www.youtube.com/watch?v=w__ahowb9p0)
-5. Session 2026-01-06 @ 01:25:36 (https://www.youtube.com/watch?v=VGw81seFvbo)
-6. Session 2026-01-13 @ 00:24:42 (https://www.youtube.com/watch?v=w4LB1s9_3rs)
-7. Session 2026-01-20 @ 02:04:06 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
-8. Session 2026-01-27 @ 00:00:59 (https://www.youtube.com/watch?v=9RzvnnWzV7E)
-9. Session 2026-02-17 @ 00:05:28 (https://www.youtube.com/watch?v=Z2jlzpoTWVw)
-10. Session 2026-03-03 @ 00:27:11 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
-11. Session 2026-03-24 @ 00:38:19 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
-12. Session 2026-03-31 @ 00:10:08 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
-13. Session 2026-04-09 @ 00:06:50 (https://www.youtube.com/watch?v=vcGkejr8_nI)
-14. Session 2026-06-04 @ 02:37:01 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
-15. Session 2026-07-29 @ 00:18:45 (https://www.youtube.com/watch?v=umGyKLkefJI)
-16. Session 2026-08-04 @ 00:06:00 (https://www.youtube.com/watch?v=qRj2t3wQHfs)
-17. Session 2026-08-12 @ 00:10:08 (https://www.youtube.com/watch?v=piUv11DCwDw)
-18. Session 2026-08-18 @ 00:17:00 (https://www.youtube.com/watch?v=10swvSz6k7U)
+1. Session 2025-07-22 @ 00:02:06 — https://www.youtube.com/watch?v=BRRCUgW4xRo
+2. Session 2025-10-14 @ 00:32:38 — https://www.youtube.com/watch?v=cUtz87UCHu4
+3. Session 2025-11-18 @ 00:00:04 — https://www.youtube.com/watch?v=w__ahowb9p0
+4. Session 2026-01-06 @ 01:37:56 — https://www.youtube.com/watch?v=VGw81seFvbo
+5. Session 2026-01-13 @ 00:45:40 — https://www.youtube.com/watch?v=w4LB1s9_3rs
+6. Session 2026-01-20 @ 02:05:00 — https://www.youtube.com/watch?v=H3ckYdTv4y8
+7. Session 2026-01-27 @ 00:03:54 — https://www.youtube.com/watch?v=9RzvnnWzV7E
+8. Session 2026-02-17 @ 01:05:00 — https://www.youtube.com/watch?v=Z2jlzpoTWVw
+9. Session 2026-03-03 @ 00:27:11 — https://www.youtube.com/watch?v=BRUNuNKTeOg
+10. Session 2026-03-10 @ 00:52:45 — https://www.youtube.com/watch?v=Kr9_AC2XtOw
+11. Session 2026-03-24 @ 00:37:53 — https://www.youtube.com/watch?v=Yj5BWJfg3Ag
+12. Session 2026-03-31 @ 00:10:08 — https://www.youtube.com/watch?v=Ee-K84wcxLM
+13. Session 2026-04-09 @ 00:06:50 — https://www.youtube.com/watch?v=vcGkejr8_nI
+14. Session 2026-04-14 @ 00:01:15 — https://www.youtube.com/watch?v=1Jyu92P7_Fg
+15. Session 2026-06-04 @ 02:37:26 — https://www.youtube.com/watch?v=EGNh8O7pE5Q
+16. Session 2026-07-29 @ 00:00:01 — https://www.youtube.com/watch?v=umGyKLkefJI
+17. Session 2026-08-04 @ 00:03:11 — https://www.youtube.com/watch?v=qRj2t3wQHfs
+18. Session 2026-08-12 @ 00:10:03 — https://www.youtube.com/watch?v=piUv11DCwDw
+19. Session 2026-08-18 @ 00:06:17 — https://www.youtube.com/watch?v=10swvSz6k7U
+20. Session 2026-08-25 @ 00:25:40 — https://www.youtube.com/watch?v=1Cjj3OVqiYA

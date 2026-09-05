@@ -1,8 +1,8 @@
 ---
 type: Location
 title: Salzbach
-description: 'Salzbach ist ein Dorf mit Hafen, das für den Handel von Bedeutung ist.
-  Die Siedlung ist das Reiseziel der Gruppe: Sie soll die Handelswege…'
+description: Salzbach ist eine Hafenstadt an der Rotaugenbucht. Der Ort ist der einzige
+  Hafen, über den die Sandhorn-Inseln ihre Waren auf das Festland…
 tags:
 - locations
 timestamp: '2026-08-25T00:00:00Z'
@@ -10,22 +10,17 @@ id: LOC_SALZBACH
 subtype: Siedlung
 ---
 
-Salzbach ist ein Dorf mit Hafen, das für den Handel von Bedeutung ist. Die Siedlung ist das Reiseziel der Gruppe: Sie soll die Handelswege dorthin sichern. Salzbach ist zudem die Heimat von [Lunara](/characters/lunara_velora.md), die PTSD-Erinnerungen mit dem Ort verbindet.
+Salzbach ist eine Hafenstadt an der [Rotaugenbucht](/locations/rotaugenbucht_tiefwasser.md). Der Ort ist der einzige Hafen, über den die [Sandhorn-Inseln](/locations/sandhorn_inseln.md) ihre Waren auf das Festland bringen können; dadurch kommt ihm eine zentrale Bedeutung für den Handel zwischen den Inseln und dem Festland zu.
 
-## Rolle in der Kampagne
+## Belagerung und gefährliche Anreise
 
-Salzbach ist wiederholt das Ziel der Gruppe. Bereits in der ersten Session wird der Auftrag formuliert, die Handelswege nach Salzbach zu sichern. Auch in der Session vom 25. August ist Salzbach noch das Reiseziel, doch die Gruppe erreicht den Ort nicht; die Ankunft bleibt aus.
+[Joar Vanur](/npcs/joar_vanur.md) berichtet, der Hafen werde von Gnollen, [Goblins](/npcs/pilz_goblins.md) und anderen Kreaturen belagert. Dadurch sind die Handelsrouten unsicher geworden. Der Weg nach Salzbach führt durch die Berge und ist wegen der Gnoll-Überfälle gefährlich.
 
-## Bedrohung durch Gnolle und Trolle
+## Rolle in der Reise der Gruppe
 
-Die Bedrohung um Salzbach ist zweifach: Auf den Handelswegen, die zur Siedlung führen, lauern [Gnolle](/factions/gnolle.md). Im Ort selbst machen Gnolle und Trolle das Leben von [Joao Vanur](/npcs/joar_vanur.md) schwer. Damit ist Salzbach sowohl auf den Zufahrtswegen als auch im Dorf von diesen Kreaturen betroffen.
-
-## Verbindung zu Lunara
-
-Lunara stammt aus Salzbach. Sie hat PTSD-Erinnerungen an den Ort, da er ihre Heimat ist.
+Salzbach ist die Zielstadt der Reise, auf der Joar Vanur die Gruppe eskortiert, und liegt damit auf deren Weg nach Norden. Die Gruppe hat den Auftrag angenommen, das Problem der Belagerung zu lösen.
 
 # Belege
 
 1. Session 2026-08-12 @ 01:21:07 – https://www.youtube.com/watch?v=piUv11DCwDw
-2. Session 2026-08-18 @ 00:07:00 – https://www.youtube.com/watch?v=10swvSz6k7U
-3. Session 2026-08-25 @ 00:01:00 – https://www.youtube.com/watch?v=1Cjj3OVqiYA
+2. Session 2026-08-25 @ 00:00:35 – https://www.youtube.com/watch?v=1Cjj3OVqiYA

@@ -1,83 +1,62 @@
 ---
 type: Location
 title: Sanddorn-Inseln
-description: Die Sanddorn-Inseln sind ein tropisches Inselgebiet, das aus mehreren
-  Inseln besteht. Die Hauptinsel trägt ebenfalls den Namen Sanddorn und…
+description: Die Sanddorn-Inseln, auch als Sundown-Inseln bekannt, sind eine Inselgruppe
+  in der Nähe von Tarkia. Sie sind die Heimat von Lunara Velora u…
 tags:
 - locations
-timestamp: '2026-08-12T00:00:00Z'
+timestamp: '2026-08-06T00:00:00Z'
 id: LOC_SANDDORNINSELN
-subtype: Siedlung
+subtype: Wildnis
 aliases:
 - Sanddorninseln (Sundown-Inseln)
 - Sanddorninseln
+- Sanddorn-Insel
 ---
-
-# Sanddorn-Inseln
 
 ## Überblick
 
-Die Sanddorn-Inseln sind ein tropisches Inselgebiet, das aus mehreren Inseln besteht. Die Hauptinsel trägt ebenfalls den Namen Sanddorn und beherbergt ein Dorf beziehungsweise eine Stadt, die als Ziel der Erkundungsmission der Gruppe diente. Die Inseln liegen in der Nähe von [Tarkia](/locations/tarkia.md) und sind bekannt für ihre ungewöhnliche Flora, insbesondere das vermehrte Pilzwachstum. Darüber hinaus sind die Sanddorn-Inseln für Piraten bekannt.
-
-Die Region ist für ihre exotischen Waren berühmt, insbesondere für kulinarische Spezialitäten aus dem Meer. Ein Händler in [Willauch](/locations/willauch.md) bietet Waren von den Sanddorn-Inseln an, darunter Fische, Muscheln und Austern, die man am Land nicht bekommt. Die Inseln sind zudem der Geburtsort von [Lunara Velora](/characters/lunara_velora.md) und die Heimat von [Jorah Vanur](/npcs/joar_vanur.md), der über einen Teil der Inseln herrscht.
+Die Sanddorn-Inseln, auch als Sundown-Inseln bekannt, sind eine Inselgruppe in der Nähe von [Tarkia](/locations/tarkia.md). Sie sind die Heimat von [Lunara Velora](/characters/lunara_velora.md) und wurden von der Heldengruppe bereits im Rahmen eines ihrer ersten Aufträge besucht. In der Nähe der Inseln liegt zudem eine weitere Insel, die [Bruma Stormrak](/characters/bruma_stormrak.md) als seine Heimat bezeichnet.
 
 ## Rolle in der Kampagne
 
-Die Sanddorn-Inseln spielten in mehreren Phasen der Kampagne eine Rolle. Der erste dokumentierte Kontakt der Gruppe mit den Inseln erfolgte im Rahmen eines frühen Gildenauftrags: Die Gruppe sollte die Sanddorninseln erkunden, weil es ein Problem im Dorf von Sanddorn gab. Dieser Auftrag gehörte zu den ersten Missionen, die die Gruppe annahm, und führte sie unter anderem auf ein Piratenschiff.
+Die Sanddorn-Inseln bilden den Herkunftsort von [Lunara Velora](/characters/lunara_velora.md). Sie wurde dort geboren, wuchs in einem Hexenzirkel auf und verließ die Inseln, nachdem sich dieser Zirkel auflöste. Über ihre Herkunft stellt sich Lunara der Gruppe in Session 2025-11-18 vor.
 
-Später wurden die Inseln erneut relevant, als Lunara Velora der Gruppe von ihrer Herkunft erzählte: Sie wurde in einem Inseldorf auf den Sanddorn-Inseln geboren. Damit wurden die Inseln zu einem persönlichen Bezugspunkt für ein Mitglied der Gruppe.
+Für [Bruma Stormrak](/characters/bruma_stormrak.md) ist eine Insel in der Nähe der Sanddorn-Inseln die verlorene Heimat. Er wurde dort nach eigener Aussage als Werkzeug benutzt und gezwungen, die Insel zu verlassen. Seit Jahren verfolgt er eine Gefahr, die seine Heimat zu zerstören droht.
 
-In einer späteren Session stellte sich heraus, dass [Jorah](/deities/jorah.md) Vanur, der Herr über einen Teil der Sanddorn-Inseln, ein Bekannter der Gruppe ist. Die Gruppe soll nach [Salzbach](/locations/salzbach.md) reisen und von dort aus weiter zu den Inseln, was auf eine bevorstehende Reise dorthin hindeutet.
+Die Heldengruppe hatte die Sanddorn-Inseln bereits vor Lunara Veloras Beitritt bei einem ihrer ersten Aufträge besucht. Damit sind die Inseln ein früher Schauplatz der Kampagne, der zunächst nur rückblickend erwähnt wird.
 
 ## Wichtige Merkmale
 
-### Lage und Beschaffenheit
-
-Die Sanddorn-Inseln sind ein tropisches Inselgebiet, das aus mehreren Inseln besteht. Die Hauptinsel Sanddorn beherbergt die namensgebende Stadt beziehungsweise das Dorf. Die Inseln liegen in der Nähe von Tarkia.
-
-### Flora
-
-Die Inseln sind bekannt für ihre ungewöhnliche Flora, insbesondere für das vermehrte Pilzwachstum. Dieses Detail wurde als Besonderheit der Region hervorgehoben, ohne dass weitere Einzelheiten zu den Pilzen oder ihrer Bedeutung bekannt sind.
-
-### Bewohner und Kultur
-
-Die Sanddorn-Inseln sind für Piraten bekannt. Die Bevölkerung umfasst unter anderem Tidekin, wie Lunara Veloras Vater, der ein Tidekin war und dessen Fähigkeit, unter Wasser zu atmen, an seine Tochter weitergegeben wurde. Lunara selbst betont jedoch, dass sie wenig mit den Inseln oder ihrem Vater gemein habe, da sie in einem Hexenzirkel aufwuchs, der fernab von Städten lebte.
-
-### Wirtschaft und Handel
-
-Von den Sanddorn-Inseln werden exotische Waren importiert, insbesondere kulinarische Spezialitäten. Ein Händler in Willauch bietet diese an: Fische, Muscheln, Austern und „alles mögliche, was man so halt nicht am Land bekommt“. Eine besondere Delikatesse von den Inseln ist ein „sehr, sehr strange aussehender Fisch“, der in einer Eisschale gekühlt serviert wird und in Tarkia als Delikatesse gilt.
-
-### Herrschaft
-
-Jorah Vanur ist der Herr über einen Teil der Sanddorn-Inseln. Er wird als bekannte Persönlichkeit beschrieben, die die Gruppe bereits von früheren Begegnungen kennt.
+- **Lage:** Die Inselgruppe liegt in der Nähe von Tarkia. Die Gruppe reiste früher per Piratenschiff dorthin.
+- **Beschaffenheit:** Auf den Sanddorn-Inseln gibt es mindestens ein Inseldorf. Der Hexenzirkel der [Nachtwächterinnen](/factions/nachtwaechterinnen.md) lebte dort „relativ fern von Städten“ und „ziemlich abgeschottet“.
+- **Bewohner:** Lunara Velora wurde in einem Inseldorf auf den Sanddorn-Inseln geboren. Ihre Mutter war eine Hexe, ihr Vater ein Tidekin. Lunara wuchs bei den [Nachtwächterinnen](/factions/nachtwaechterinnen.md) auf, einem Hexenzirkel, der mit Schatten und Mondlicht arbeitete.
+- **Benachbarte Insel:** Bruma Stormrak wurde auf einer Insel in der Nähe der Sanddorn-Inseln geboren. Er beschreibt, dass er dort „ein Werkzeug von vielen Leuten“ gewesen sei und benutzt wurde, um die Gefahr seiner Heimat abzuwehren. Die Insel wurde laut seiner Schilderung von einem Sturm heimgesucht.
 
 ## Beziehungen und Verbindungen
 
-- **Lunara Velora**: Geboren in einem Inseldorf auf den Sanddorn-Inseln. Ihr Vater war ein Tidekin von den Inseln; ihre Mutter war eine Hexe. Lunara wuchs jedoch nicht auf den Inseln auf, sondern in einem Hexenzirkel namens [Nachtwächterinnen](/factions/nachtwaechterinnen.md), der abgeschottet von Städten lebte. Sie betont, dass sie wenig mit den Inseln oder ihrem Vater gemein habe.
-- **Jorah Vanur**: Herr über einen Teil der Sanddorn-Inseln. Er kennt [Dodo](/characters/dodo.md) und [Lindo Laut](/characters/lindo_laut.md) von früheren Begegnungen und bezeichnet die Gruppe als „die Freunde von [Rotunas](/characters/rotunas.md), dem Helden des Dorfes“. Er ist mit [Liam](/npcs/liam_velora.md) bekannt, der ihn der Gruppe vorstellt.
-- **Tarkia**: Die Inseln liegen in der Nähe von Tarkia. Ein Fisch von den Inseln gilt in Tarkia als Delikatesse.
-- **Willauch**: Ein Händler in Willauch importiert und verkauft Waren von den Sanddorn-Inseln.
-- **[Die Gilde](/factions/gilde_von_ehrenfels.md)**: Die Gruppe erhielt von der Gilde den Auftrag, die Sanddorninseln zu erkunden, weil es ein Problem im Dorf von Sanddorn gab.
-- **Rotunas**: Wird von Jorah Vanur als „der Held des Dorfes“ bezeichnet; die Gruppe wird als seine Freunde angesehen.
+- **[Lunara Velora](/characters/lunara_velora.md):** wurde auf den Sanddorn-Inseln geboren und wuchs dort im Hexenzirkel der Nachtwächterinnen auf. Nach dessen Auflösung musste sie die Inseln verlassen.
+- **[Nachtwächterinnen](/factions/nachtwaechterinnen.md):** Hexenzirkel, der auf den Sanddorn-Inseln fernab von Städten lebte und mit Schatten und Mondlicht arbeitete. Der Zirkel wurde vor einigen Monaten aufgelöst.
+- **[Bruma Stormrak](/characters/bruma_stormrak.md):** stammt von einer Insel in der Nähe der Sanddorn-Inseln. Er wurde dort als Werkzeug benutzt und musste seine Heimat verlassen.
+- **Gefährten von Rotunas:** besuchten die Sanddorn-Inseln bereits im Rahmen eines ihrer ersten Aufträge, als Lunara Velora noch nicht zur Gruppe gehörte.
+- **[Tarkia](/locations/tarkia.md):** liegt in der Nähe der Sanddorn-Inseln.
 
 ## Chronologie
 
-- **Frühe Mission (vor Session 2025-04-30)**: Die Gruppe nahm einen der ersten Gildenaufträge an, der sie zu den Sanddorn-Inseln führte. Dabei waren sie unter anderem auf einem Piratenschiff unterwegs. Der Auftrag wurde erfolgreich abgeschlossen; die Gruppe wurde dafür gefeiert und erhielt Gold.
-- **Session 2025-04-30**: Die Gilde vergibt erneut einen Auftrag zur Erkundung der Sanddorninseln, da es ein Problem im Dorf von Sanddorn gibt. Die Gruppe entscheidet sich für diese Mission und macht sich mit dem Gildenschiff und einer kleinen Crew auf den Weg.
-- **Session 2025-11-18**: Lunara Velora erzählt der Gruppe von ihrer Herkunft: Sie wurde in einem Inseldorf auf den Sanddorn-Inseln geboren. Ihr Vater war ein Tidekin, ihre Mutter eine Hexe. Sie wuchs im Hexenzirkel der Nachtwächterinnen auf, fernab von Städten.
-- **Session 2026-03-03**: Ein Händler in Willauch bietet Waren von den Sanddorn-Inseln an, darunter exotische Fische und Meeresfrüchte. Dodo erkennt einen Fisch als Delikatesse aus Tarkia.
-- **Session 2026-08-12**: Die Gruppe trifft in einer Taverne auf Jorah Vanur, den Herrn über einen Teil der Sanddorn-Inseln, der mit Liam bekannt ist. Er begrüßt die Gruppe als Freunde von Rotunas. Die Gruppe soll nach Salzbach reisen und von dort aus weiter zu den Inseln.
+- **Vor Lunara Veloras Beitritt zur Gruppe:** [Die Gefährten von Rotunas](/factions/die_gefaehrten_von_rotunas.md) besuchen die Sanddorn-Inseln bei einem ihrer ersten Aufträge.
+- **Zu einem nicht näher datierten Zeitpunkt:** Bruma Stormrak wird auf einer Insel in der Nähe der Sanddorn-Inseln geboren. Er wird dort als Werkzeug benutzt und später gezwungen, die Insel zu verlassen.
+- **Vor einigen Monaten aus Sicht der Session 2025-11-18:** Der Hexenzirkel der Nachtwächterinnen wird aufgelöst. Lunara Velora verlässt daraufhin die Sanddorn-Inseln.
+- **Session 2025-11-18:** Lunara Velora stellt sich der Gruppe vor und berichtet von ihrer Herkunft von den Sanddorn-Inseln. Dabei wird auch der frühere Besuch der Gruppe auf den Sundown-Inseln erwähnt.
+- **Session 2026-08-06:** Bruma Stormrak offenbart in einer Auseinandersetzung über Heimat, dass seine Heimat eine Insel in der Nähe der Sanddorn-Inseln ist und er sie verlassen musste.
 
 ## Offene Fragen
 
-- Welches Problem im Dorf von Sanddorn war der Anlass für den Erkundungsauftrag der Gilde, und wurde es gelöst?
-- Was hat es mit dem vermehrten Pilzwachstum auf den Inseln auf sich?
-- Welche Verbindung hat Jorah Vanur zu Dodo und Lindo Laut aus früheren Begegnungen?
-- Was erwartet die Gruppe bei ihrer geplanten Reise zu den Sanddorn-Inseln über Salzbach?
+- Welche Gefahr Brumas Heimatinsel droht zu zerstören, wird nicht benannt.
+- Warum der Hexenzirkel der Nachtwächterinnen aufgelöst wurde und was aus den übrigen Mitgliedern wurde, bleibt offen.
+- Ob Brumas Heimatinsel zur Inselgruppe der Sanddorn-Inseln gehört oder nur in deren Nähe liegt, geht aus den Belegen nicht eindeutig hervor.
+- Was die Gruppe bei ihrem frühen Auftrag auf den Sanddorn-Inseln genau erlebt hat, wird nicht beschrieben.
 
 ## Belege
 
-1. Session 2025-04-30, 00:03:00 – https://www.youtube.com/watch?v=fsCOiSkKKTE
-2. Session 2025-11-18, 00:35:10 – https://www.youtube.com/watch?v=w__ahowb9p0
-3. Session 2026-03-03, 00:12:14 – https://www.youtube.com/watch?v=BRUNuNKTeOg
-4. Session 2026-08-12, 01:13:33 – https://www.youtube.com/watch?v=piUv11DCwDw
+[P-30] Session 2025-11-18 @ 00:35:10 (https://www.youtube.com/watch?v=w__ahowb9p0)
+[S1-03-B] Session 2026-08-06 @ 01:39:06 (https://www.youtube.com/watch?v=0HyPHao8s_k)

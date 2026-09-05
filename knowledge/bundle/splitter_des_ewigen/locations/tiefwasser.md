@@ -1,8 +1,8 @@
 ---
 type: Location
 title: Tiefwasser
-description: Tiefwasser ist eine kleine Hafenstadt, die als letzte menschliche Grenze
-  vor dem Ork-Gebiet gilt. Sie ist wichtig für den Handel mit den Sa…
+description: Tiefwasser ist eine kleine, aber wichtige nördliche Handelsstadt, die
+  zu Willauch gehört. Sie verfügt über einen Hafen, durch den Waren zu…
 tags:
 - locations
 timestamp: '2026-03-18T00:00:00Z'
@@ -10,7 +10,7 @@ id: LOC_TIEFWASSER
 subtype: Siedlung
 ---
 
-Tiefwasser ist eine kleine Hafenstadt, die als letzte menschliche Grenze vor dem [Ork-Gebiet](/locations/orkgebiet.md) gilt. Sie ist wichtig für den Handel mit den [Sanddorninseln](/locations/sanddorninseln.md) und wird von [Willauch](/locations/willauch.md) kontrolliert. Die Stadt hat eine [Gilde der Schilde](/factions/gilde_der_schilde.md), eine Taverne namens „[Zum grünen Sichelmond](/locations/zum_gruenen_sichelmond_von_tiefwasser.md)“ und eine weitere Taverne auf einem gestrandeten Schiff.
+Tiefwasser ist eine kleine, aber wichtige nördliche Handelsstadt, die zu [Willauch](/locations/willauch.md) gehört. Sie verfügt über einen Hafen, durch den Waren zu den [Sanddorninseln](/locations/sanddorninseln.md) gelangen. Die Stadt hat eine Statue des Gottes [Coram Schildbrecher](/deities/coram_schildbrecher.md), eine Kirche, eine Schule und mehrere Tavernen, darunter eine in einem auf Grund gelaufenen Schiff. Im Verlauf der Session wird die Stadt nach dem Vorfall in der [Freibeuterkneipe](/locations/freibeuterkneipe.md) abgeriegelt, sodass die Gruppe sie verlassen muss.
 
 # Belege
 

@@ -1,8 +1,8 @@
 ---
 type: Location
 title: Villach
-description: Villach ist eine mächtige Stadt, die von Liam erwähnt wird. Er schlägt
-  vor, dass Ehrenfels unter den Schutz von Villach gestellt werden kön…
+description: Villach ist eine große Stadt, die von Liam als mögliche Schutzmacht für
+  Ehrenfels vorgeschlagen wird, falls die neuen Götter gestürzt werde…
 tags:
 - locations
 timestamp: '2026-08-04T00:00:00Z'
@@ -10,7 +10,7 @@ id: LOC_VILLACH
 subtype: Siedlung
 ---
 
-Villach ist eine mächtige Stadt, die von [Liam](/npcs/liam_velora.md) erwähnt wird. Er schlägt vor, dass [Ehrenfels](/locations/ehrenfels.md) unter den Schutz von Villach gestellt werden könnte.
+Villach ist eine große Stadt, die von [Liam](/npcs/liam_velora.md) als mögliche Schutzmacht für [Ehrenfels](/locations/ehrenfels.md) vorgeschlagen wird, falls die neuen Götter gestürzt werden. Sie wird als mächtigste Stadt mit eigenem Glauben beschrieben.
 
 # Belege
 

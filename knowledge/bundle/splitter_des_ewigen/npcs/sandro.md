@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Sandro
-description: Sandro ist ein mächtiger Magier und Verbündeter von Voras, der die Gruppe
-  durch die Splitterwelt führt und sie auf ihrem Weg nach Abyssalis…
+description: Sandro ist ein Vampirmagier in Diensten von Voras. In der Kampagne tritt
+  er als wiederkehrender magischer Verbündeter der Heldengruppe auf:…
 tags:
 - npcs
 timestamp: '2026-04-09T00:00:00Z'
@@ -11,44 +11,44 @@ id: NPC_SANDRO
 
 ## Überblick
 
-Sandro ist ein mächtiger Magier und Verbündeter von [Voras](/npcs/voras.md), der die Gruppe durch die [Splitterwelt](/domains/splitterwelt.md) führt und sie auf ihrem Weg nach Abyssalis begleitet. Er ist eine auffällige Gestalt mit lila Augen, die bereits seit Monaten mit Voras an der Vorbereitung des Weges für die Gruppe arbeitet. Sandro unterstützt die Helden mehrfach im Kampf gegen dämonische Kreaturen, sowohl mit offensiven Zaubern als auch mit magischen Gefängnissen, um Gegner aufzuhalten. Sein Schicksal besiegelt sich in der [Schlacht um Ehrenfels](/events/schlacht_um_ehrenfels.md), als er von [Nerash](/deities/nerash.md) getötet wird.
+Sandro ist ein Vampirmagier in Diensten von [Voras](/npcs/voras.md). In der Kampagne tritt er als wiederkehrender magischer Verbündeter der Heldengruppe auf: Zuerst geleitet er sie durch ein Portal in die [Splitterwelt](/domains/splitterwelt.md) und kämpft an ihrer Seite gegen eine [Schattenkreatur](/npcs/schattenkreatur.md), später verteidigt er [Ehrenfels](/locations/ehrenfels.md) an der Seite von [Nox](/npcs/nox.md). In der Session vom 2026-04-09 wird er von [Nerash](/deities/nerash.md) getötet.
 
 ## Rolle in der Kampagne
 
-Sandro fungiert als Führer und Wegbereiter der Gruppe. Er ist Teil des Netzwerks um Voras, das die Helden auf ihrem Weg in die Splitterwelt und weiter nach Abyssalis vorbereitet hat. Gemeinsam mit Voras hat er über mehrere Monate hinweg ein Konstrukt mit einem großen flüssigen [Portal](/locations/portal.md) errichtet, das die Gruppe sehr nah an Abyssalis heranbringt – zumindest auf der Splitterwelt. Sandro ist es, der die Gruppe durch dieses Portal führt und ihnen den Weg ebnet.
+Sandro handelt im Umfeld von Voras und unterstützt die Helden mehrfach mit Magie. Bei seinem ersten belegten Auftritt am 2026-03-10 begleitet er die Gruppe durch das Portal in die [Splitterwelt](/domains/splitterwelt.md) und führt sie zum Tor von Abyssalis. Im Kampf gegen die Schattenkreatur übernimmt er aktive Feuerunterstützung: Er zieht eine heilige Schriftrolle hervor, spricht einen Spruch, und eine „gleißend helle Kugel“ fährt in die Kreatur und verursacht 25 Schaden. Die Kreatur antwortet mit einem lila Blitz, der Sandro schwer trifft. Trotz seiner Verletzungen lobt Sandro die Gruppe und verneigt sich vor ihr. [Lindo Laut](/characters/lindo_laut.md) erhält von ihm eine weitere [Schriftrolle](/items/schriftrollen.md). Am Ende kehrt Sandro verletzt zurück; Voras zeigt sich mit dem Ausgang zufrieden.
 
-In der Schlacht um [Ehrenfels](/locations/ehrenfels.md) kämpft Sandro an der Seite der Verteidiger gegen eindringende [Dämonen](/factions/daemonen.md). Er greift den Dämon [Dormak](/npcs/dormak.md) mit einem Lichtblitz an, bleibt dabei jedoch wirkungslos. Später unterstützt er die Gruppe erneut, indem er ein magisches Gefängnis auf Kreaturen schleudert, um ihnen den Weg freizuhalten. Sein Tod durch [Nerash](/deities/nerash.md) markiert einen Wendepunkt in der Konfrontation mit den dämonischen Mächten.
+Beim zweiten Auftritt am 2026-03-31 ist Sandro während der Kämpfe um Ehrenfels an der Seite von Nox zu sehen. Nox brüllt den Helden zu: „Geht! Wir kümmern uns!“ Sandro feuert einen Lichtblitz auf einen Dämon. Der Blitz trifft, hinterlässt bei dem Dämon aber „nicht mal ein Kratzer“. Während sich unten Soldaten zur Verteidigung Ehrenfels’ formieren, wird ein Tor geöffnet; die Gruppe flieht, während Sandro mit den Verteidigern zurückbleibt.
+
+Sein letzter belegter Auftritt ist der 2026-04-09: Sandro schleudert ein „magisches Gefängnis“ auf Dämonen, sodass diese für einen Augenblick nicht passieren können und den Helden den Weg freimacht. Kurz darauf wird er von Nerash durch die Luft geschleudert und getötet.
 
 ## Wichtige Merkmale
 
-Sandro ist ein mächtiger Magier mit einer auffälligen Erscheinung: Er hat lila Augen, die ihn als außergewöhnliche, "sehr komische Gestalt" kennzeichnen. Seine magischen Fähigkeiten umfassen offensive Zauber wie Lichtblitze sowie defensive und kontrollierende Magie wie magische Käfige, mit denen er Gegner einschließen und aufhalten kann.
+Sandro wird als Vampirmagier beschrieben und kämpft vor allem mit Magie. Belegt sind drei unterschiedliche magische Wirkungen: eine heilige Schriftrolle, deren Effekt als gleißend helle Kugel 25 Schaden gegen eine Schattenkreatur verursacht; ein Lichtblitz, der einem Dämon in Ehrenfels keinen erkennbaren Schaden zufügt; sowie ein magisches Gefängnis, das Dämonen kurzzeitig am Durchkommen hindert.
 
-Seine Rolle als Wegbereiter zeigt, dass er über tiefgehende Kenntnisse der Splitterwelt und der Verbindungen zu Abyssalis verfügt. Er ist Teil der Vorbereitungen, die über Monate hinweg getroffen wurden, um der Gruppe den Weg zu ebnen. Sandro zeigt Respekt vor der Gruppe und vertraut ihr – er übergibt [Brim](/characters/brim.md) eine Schriftrolle, was auf eine gewisse Verbundenheit oder ein gemeinsames Ziel hindeutet.
+Seine Vampirnatur hat eine konkrete Konsequenz: Heilzauber wirken bei ihm nicht. Dies wird im Kampf in der Splitterwelt festgehalten, als Lindo Laut ihm beistehen will. Nach dem lila Blitz der Schattenkreatur, der 54 Schaden verursacht, „sieht [Sandro] gar nicht mehr gut aus“; er zieht sich auf Lindo Lauts Drängen hin in Deckung zurück. Wie er sich von diesen Verletzungen erholt, ist aus den Belegen nicht ersichtlich.
+
+Im Auftreten gegenüber der Heldengruppe zeigt sich Sandro anerkennend: Er lobt sie und verneigt sich vor ihr. In keinem der Belege agiert er gegen die Helden.
 
 ## Beziehungen und Verbindungen
 
-Sandro ist ein Verbündeter von Voras und arbeitet eng mit ihm zusammen. Die beiden haben gemeinsam das Portal-Konstrukt vorbereitet, das die Gruppe in die Splitterwelt führt. Sandro agiert als Voras' rechte Hand bei der Führung der Gruppe.
-
-Zu den Helden der Gruppe hat Sandro ein respektvolles Verhältnis. Er führt sie durch das Portal und zeigt Vertrauen in ihre Fähigkeiten. Die Übergabe einer Schriftrolle an Brim deutet auf eine besondere Verbindung oder eine konkrete Aufgabe hin, die er Brim anvertraut.
-
-In der Schlacht um Ehrenfels kämpft Sandro an der Seite von [Nox](/npcs/nox.md) und weiteren Verteidigern. Er wird von [Vasul](/deities/vharzul.md) weggeschickt, als dieser die Gruppe durch ein Tor nach Abyssalis führt – [Vasul](/deities/vharzul.md) übernimmt an diesem Punkt die Führung, während Sandro zurückbleibt, um sich weiterhin dem Kampf gegen die Dämonen zu widmen.
+- [Voras](/npcs/voras.md): Sandro ist ausdrücklich ein Vampirmagier in Voras’ Diensten. Sein erster Auftritt endet mit der Bemerkung, dass Voras trotz Sandros Verletzungen zufrieden ist.
+- [Lindo Laut](/characters/lindo_laut.md): Nach dem Kampf in der Splitterwelt erhält Lindo Laut von Sandro eine weitere Schriftrolle.
+- [Nox](/npcs/nox.md): In Ehrenfels erscheint Sandro an Nox’ Seite; Nox befiehlt den Helden zu gehen, während Sandro den Dämon beschießt.
+- [Nerash](/deities/nerash.md): Nerash tötet Sandro, indem er ihn durch die Luft schleudert.
 
 ## Chronologie
 
-**Session 2026-03-10:** Sandro wird der Gruppe erstmals vorgestellt. Voras erklärt, dass er und Sandro das Portal-Konstrukt bereits seit Monaten vorbereitet haben, um der Gruppe den Weg nach Abyssalis zu ebnen. Sandro steht mit lila Augen vor dem Portal und führt die Gruppe hindurch. Er versichert, dass das Portal in beide Welten offen ist und die Gruppe mit ihm zurückkehren kann. Sandro übergibt Brim eine Schriftrolle. Im Kampf gegen eine Kreatur wird Sandro schwer verletzt, zeigt aber weiterhin Respekt vor der Gruppe.
-
-**Session 2026-03-31:** Sandro kämpft in Ehrenfels gegen Dämonen. Er schickt einen Lichtblitz in Richtung des Dämons Dormak, der jedoch keinerlei Wirkung zeigt – "das juckt den 0,0. Den hat das nicht mal ein Kratzer gemacht." Als Vasul ein Tor öffnet, um die Gruppe nach Abyssalis zu führen, wird Sandro weggeschickt; er bleibt zurück, um sich weiterhin der Verteidigung von Ehrenfels zu widmen. Die Soldaten formieren sich unterdessen zur Verteidigung der Stadt.
-
-**Session 2026-04-09:** Sandro unterstützt die Gruppe erneut im Kampf gegen dämonische Kreaturen. Er schleudert ein magisches Gefängnis auf die Gegner, das sie für einen Augenblick aufhält und der Gruppe den Weg freimacht. In diesem Gefecht wird Sandro von Nerash getötet, der ihn durch die Luft schleudert. Sein Tod geschieht unmittelbar, während die Gruppe weiter nach oben flieht.
+- **2026-03-10:** Sandro führt die Gruppe durch das Portal in die Splitterwelt und zum Tor von Abyssalis. Im Kampf gegen die Schattenkreatur verursacht er mit einer heiligen Schriftrolle Schaden, wird selbst schwer getroffen, lobt die Gruppe, verneigt sich und gibt Lindo Laut eine Schriftrolle. Er kehrt verletzt zurück; Voras ist zufrieden.
+- **2026-03-31:** Sandro steht während der Kämpfe um Ehrenfels an Nox’ Seite. Sein Lichtblitz trifft einen Dämon, zeigt aber keine Wirkung; die Helden fliehen durch ein Tor, Sandro bleibt bei den Verteidigern zurück.
+- **2026-04-09:** Sandro schleudert ein magisches Gefängnis auf Dämonen und macht den Helden den Weg frei. Kurz darauf wird er von Nerash durch die Luft geschleudert und getötet.
 
 ## Offene Fragen
 
-- Welche Aufgabe war mit der Schriftrolle verbunden, die Sandro Brim übergab? Die Belege nennen die Übergabe, aber nicht ihren Inhalt oder Zweck.
-- Welche Verbindung hatte Sandro zu Brim, die diese Übergabe motivierte?
-- Wie genau war Sandro in die Verteidigung von Ehrenfels eingebunden, nachdem Vasul die Gruppe durch das Tor geführt hatte? Die Belege zeigen seinen Kampfeinsatz, aber nicht seine Position oder Rolle in der Verteidigungsstrategie.
+- Warum Heilzauber bei Sandro nicht wirken, wird in den Belegen nicht erklärt; ob das mit seiner Vampirnatur zusammenhängt, bleibt offen.
+- Wie er von den schweren Verletzungen aus der Splitterwelt genesen konnte, wird nicht gezeigt oder erklärt.
 
-## Belege
+# Belege
 
-[P-40] Session 2026-03-10 @ 01:19:15 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
+[P-40] Session 2026-03-10 @ 01:37:43 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
 [P-44] Session 2026-03-31 @ 00:46:14 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
 [P-46] Session 2026-04-09 @ 01:28:05 (https://www.youtube.com/watch?v=vcGkejr8_nI)

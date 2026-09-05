@@ -1,8 +1,8 @@
 ---
 type: Location
 title: Crowfin Manor
-description: Crowfin Manor ist eine alte Villa, die der Gilde gehört und als Rückzugsort
-  für Helden dienen sollte. Sie ist mit einem Schutzzauber verseh…
+description: Crowfin Manor ist ein altes, gut erhaltenes Anwesen, das einst die königliche
+  Residenz der Familie Zebros war. Es steht seit Jahrhunderten…
 tags:
 - locations
 timestamp: '2026-02-17T00:00:00Z'
@@ -10,7 +10,7 @@ id: LOC_CROWFIN_MANOR
 subtype: Gebäude
 ---
 
-Crowfin Manor ist eine alte [Villa](/locations/villau.md), die der [Gilde](/factions/gilde_von_ehrenfels.md) gehört und als Rückzugsort für Helden dienen sollte. Sie ist mit einem Schutzzauber versehen, der Unbefugte fernhält und übernatürliche Kräfte unterdrückt. Das Anwesen ist gepflegt, aber alt, und enthält viele Gravuren von [Zebros](/factions/koenigreich_zebros.md). Im Garten steckt das Schwert [Zebrosia](/items/zebrosia.md) in einem Stein.
+Crowfin Manor ist ein altes, gut erhaltenes Anwesen, das einst die königliche Residenz der Familie [Zebros](/factions/koenigreich_zebros.md) war. Es steht seit Jahrhunderten und ist mit Magie vor dem Verfall geschützt. Das Anwesen verfügt über viele Zimmer, einen Garten mit dem [Schwert](/items/schwert.md) [Zebrosia](/items/zebrosia.md) und eine Bibliothek. Ein starker Schutzzauber verhindert das Eindringen Unbefugter und unterdrückt übernatürliche Kräfte. Die Gruppe verbringt den Großteil der Session hier.
 
 # Belege
 

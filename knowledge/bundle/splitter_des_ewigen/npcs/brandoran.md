@@ -1,15 +1,15 @@
 ---
 type: NPC
 title: Brandoran
-description: Brandoran ist ein Zwerg und Prinz, der die Belagerung von Steinbachtal
-  überlebt hat. Er ist zunächst misstrauisch gegenüber der Gruppe, wir…
+description: Brandoran ist einer von zwei überlebenden Zwergen in Steinbachtal. Er
+  ist zunächst verbittert über die verspätete Rettung, taut aber auf, n…
 tags:
 - npcs
 timestamp: '2025-09-09T00:00:00Z'
 id: NPC_BRANDORAN
 ---
 
-Brandoran ist ein Zwerg und Prinz, der die Belagerung von [Steinbachtal](/locations/steinbachtal.md) überlebt hat. Er ist zunächst misstrauisch gegenüber der Gruppe, wird aber durch [Esterossas](/characters/esterossa.md) Grabrede für seinen gefallenen Prinzen besänftigt. Er führt die Gruppe zum Geheimversteck und hilft ihnen, das Siegel zu öffnen. Er ist bereit, mit der Gruppe zu fliehen und zeigt Mut, als er sich den Untoten entgegenstellt.
+Brandoran ist einer von zwei überlebenden Zwergen in [Steinbachtal](/locations/steinbachtal.md). Er ist zunächst verbittert über die verspätete Rettung, taut aber auf, nachdem die Gruppe Mitgefühl zeigt. Er trägt einen [Streitkolben](/items/streitkolben_von_dodo.md) und berichtet vom Tod des Prinzen Bran. Er kennt den geheimen Keller und führt die Gruppe dorthin. Beim Kampf und der Flucht zeigt er Mut und kämpft an der Seite der Helden.
 
 # Belege
 

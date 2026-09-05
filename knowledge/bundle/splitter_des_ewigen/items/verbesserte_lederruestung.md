@@ -1,8 +1,8 @@
 ---
 type: Item
 title: Verbesserte Lederrüstung
-description: Sage kauft eine verbesserte Lederrüstung von einem Waffenhändler in Ringtal
-  für einen Sack Gold.
+description: Sange kauft diese verbesserte Lederrüstung für einen Sack Gold beim Waffenhändler
+  auf dem Markt von Ringtal.
 tags:
 - items
 timestamp: '2026-08-20T00:00:00Z'
@@ -10,8 +10,8 @@ id: ITEM_VERBESSERTE_LEDERRUESTUNG
 subtype: Rüstung
 ---
 
-[Sage](/characters/sage.md) kauft eine verbesserte Lederrüstung von einem Waffenhändler in [Ringtal](/locations/ringtal.md) für einen Sack Gold.
+[Sange](/characters/sange.md) kauft diese verbesserte Lederrüstung für einen Sack Gold beim Waffenhändler auf dem Markt von [Ringtal](/locations/ringtal.md).
 
 # Belege
 
-1. Session 2026-08-20 @ 01:29:48 (https://www.youtube.com/watch?v=2EkWrNUfQi0)
+1. Session 2026-08-20 @ 01:29:52 (https://www.youtube.com/watch?v=2EkWrNUfQi0)

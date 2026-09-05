@@ -1,16 +1,16 @@
 ---
 type: NPC
 title: Floran
-description: Floran ist der Anführer der Silberkerne, die die Farm der Heinrichs übernommen
-  haben. Er wird als Drahtzieher der Banditen beschrieben. Im…
+description: Floran ist der Anführer der Silberkerne und Drahtzieher im Banditenlager.
+  Er taucht erst im finalen Kampf auf, als er über den Abgrund spri…
 tags:
 - npcs
 timestamp: '2026-03-23T00:00:00Z'
 id: NPC_FLORAN
 ---
 
-Floran ist der Anführer der [Silberkerne](/factions/silberkerne.md), die die [Farm der Heinrichs](/locations/farm_der_heinrichs.md) übernommen haben. Er wird als Drahtzieher der Banditen beschrieben. Im Kampf wird er von der Gruppe schwer verletzt und gefangen genommen. Er beteuert, den Diplomaten nicht ermordet zu haben, und bittet um Gnade. Er zeigt eine liebevolle Beziehung zu [Adria](/npcs/adria.md), seiner Gefährtin. Er wird nach [Willauch](/locations/willauch.md) gebracht, wo ihm vermutlich die Hinrichtung droht.
+Floran ist der Anführer der [Silberkerne](/factions/silberkerne.md) und Drahtzieher im [Banditenlager](/locations/banditenlager_der_silberkerne.md). Er taucht erst im finalen Kampf auf, als er über den Abgrund springt und von [Otis](/characters/otis.md) mit einem Sparta-Tritt in die Grube befördert wird. Nach dem Kampf beteuert er, dass die Gruppe den Mord am Diplomaten nicht begangen hat und dass alles auf einer Lüge aufgebaut sei. Trotz seiner Beteuerungen entscheidet die Gruppe, ihn und [Adria](/npcs/adria.md) nach [Willauch](/locations/willauch.md) auszuliefern, da ihnen die Belohnung wichtiger ist als die Wahrheit. Er wird gefesselt und abtransportiert.
 
 # Belege
 
-[P-42] Session 2026-03-23 @ 00:10:51 (https://www.youtube.com/watch?v=niVxKtdQBn0)
+[P-42] Session 2026-03-23 @ 02:51:51 (https://www.youtube.com/watch?v=niVxKtdQBn0)

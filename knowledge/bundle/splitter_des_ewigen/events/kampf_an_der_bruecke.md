@@ -1,17 +1,17 @@
 ---
 type: Event
 title: Kampf an der Brücke
-description: Die Gruppe wird beim Überqueren der Brücke von Gnollen und Grottenschraten
-  angegriffen. Es entbrennt ein heftiger Kampf, bei dem Dodo und E…
+description: An der Brücke liefern sich Ehrenfelser Soldaten und Dämonen ein grausames
+  Gemetzel. Die Helden überqueren sie und werden dabei beinahe von…
 tags:
 - events
-timestamp: '2025-05-06T00:00:00Z'
+timestamp: '2026-04-09T00:00:00Z'
 id: EVENT_KAMPF_AN_DER_BRUECKE
 subtype: Kampf
 ---
 
-Die Gruppe wird beim Überqueren der Brücke von Gnollen und Grottenschraten angegriffen. Es entbrennt ein heftiger Kampf, bei dem [Dodo](/characters/dodo.md) und [Esterossa](/characters/esterossa.md) Gegner töten und [Lindo Laut](/characters/lindo_laut.md) sich als Gnoll verkleidet.
+An der Brücke liefern sich Ehrenfelser Soldaten und Dämonen ein grausames Gemetzel. Die Helden überqueren sie und werden dabei beinahe von Feuerbällen getroffen.
 
 # Belege
 
-[P-07] Session 2025-05-06 @ 00:49:13 (https://www.youtube.com/watch?v=e0v6AFGd4mE)
+[P-46] Session 2026-04-09 @ 00:59:07 (https://www.youtube.com/watch?v=vcGkejr8_nI)

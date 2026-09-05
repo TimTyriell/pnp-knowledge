@@ -1,8 +1,8 @@
 ---
 type: Item
 title: Schriftrolle „Mit der Natur reden“
-description: Eine Schriftrolle, die es dem Anwender ermöglicht, mit der Natur zu interagieren.
-  Sie wird im ersten Goblin-Lager gefunden, aber Celin hat…
+description: Gefunden im Zelt, erlaubt dem Anwender, mit Pflanzen/Bäumen über Bewegungen
+  oder Windgeflüster zu kommunizieren. Celin besitzt diese Fähigk…
 tags:
 - items
 timestamp: '2025-04-01T00:00:00Z'
@@ -12,8 +12,8 @@ aliases:
 - Schriftrolle 'Mit der Natur reden'
 ---
 
-Eine Schriftrolle, die es dem Anwender ermöglicht, mit der Natur zu interagieren. Sie wird im ersten [Goblin-Lager](/locations/goblin_lager.md) gefunden, aber [Celin](/characters/cookie.md) hat diese Fähigkeit bereits.
+Gefunden im Zelt, erlaubt dem Anwender, mit Pflanzen/Bäumen über Bewegungen oder Windgeflüster zu kommunizieren. [Celin](/characters/cookie.md) besitzt diese Fähigkeit bereits, daher redundant, aber behalten.
 
 # Belege
 
-[P-02] Session 2025-04-01 @ 00:20:00 (https://www.youtube.com/watch?v=LZIuUzc3F18)
+[P-02] Session 2025-04-01 @ 00:19:48 (https://www.youtube.com/watch?v=LZIuUzc3F18)

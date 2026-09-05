@@ -1,33 +1,34 @@
 ---
 type: Location
 title: Taverne von Ehrenfels
-description: Die Taverne von Ehrenfels ist der zentrale Treffpunkt und wiederkehrende
-  Hauptschauplatz der Gruppe in der Ortschaft Ehrenfels. Sie dient a…
+description: Die Taverne von Ehrenfels ist ein Gasthaus nahe dem Westen der Stadt
+  Ehrenfels. Der Holzbau dient als Schänke und Herberge und wird im Lauf…
 tags:
 - locations
 timestamp: '2026-07-29T00:00:00Z'
 id: LOC_TAVERNE_VON_EHRENFELS
 subtype: Gebäude
 aliases:
+- Taverne in Ehrenfels
 - Die Taverne
 - Taverne (ungenannt)
-- Taverne in Ehrenfels
+- Taverne (in Ehrenfels)
 ---
 
-Die **Taverne von [Ehrenfels](/locations/ehrenfels.md)** ist der zentrale Treffpunkt und wiederkehrende Hauptschauplatz der Gruppe in der Ortschaft Ehrenfels. Sie dient als Ort des Zusammenkommens, der Trauer und der Feiern und steht damit sowohl für ruhige als auch für ausgelassene Stunden.
+Die **Taverne von Ehrenfels** ist ein Gasthaus nahe dem Westen der Stadt [Ehrenfels](/locations/ehrenfels.md). Der Holzbau dient als Schänke und Herberge und wird im Lauf der Ereignisse mehrfach zum Schauplatz zentraler Begebenheiten: eines Überfalls, geselliger Zusammenkünfte und des Empfangs der zurückkehrenden Helden.
+
+## Gebäude und Betrieb
+
+Die Taverne ist aus Holz errichtet; eine Treppe knarrt bei Belastung. Neben der Schankstube, die als warm und gut besucht beschrieben wird, bietet das Haus Übernachtungsmöglichkeiten. Der [Wirt](/npcs/wirt.md) ist ein Ork; gemeinsam mit den Barkeepern Durchgras, Burfun und Iris führt er die Schankstube.
 
 ## Rolle und Ereignisse
 
-- Bei einem Treffen ist die Taverne der Hauptschauplatz des Abends: Die Gruppe trifft sich, trinkt, trauert und feiert.
-- Bei einem weiteren Treffen bemerkt die Gruppe von der Taverne aus eine magische Welle. Die Taverne wird daraufhin zum Schauplatz der ersten Kämpfe.
-- Bei einer späteren Gelegenheit ist sie der zentrale Ort der Feierlichkeiten zu Ehren der Helden. [Gunther](/characters/gunther.md) wartet dort auf die Gruppe.
+In der Taverne ereignet sich ein Überfall; dabei bricht in der Schankstube ein kleines Feuer aus, das [Cookie](/characters/cookie.md) und [Parry](/npcs/perry_das_schnabeltier.md) löschen. Die Helden haben zu diesem Zeitpunkt ein Zimmer in der Taverne gemietet.
 
-## Betrieb und Atmosphäre
-
-Geführt wird die Taverne von [Durchgras](/npcs/durchgras.md), [Burfun](/npcs/burfun.md), [Iris](/npcs/iris.md) und [Org](/npcs/org.md). Der Wirt empfängt die Gäste freundlich und bietet ihnen Essen und Trinken an.
+Darüber hinaus erweist sich die Taverne als sozialer Mittelpunkt der Stadt: Hier finden Gespräche, Trauer, Trinkspiele und eine Zirkus-Performance statt. Bei einem Empfang zu Ehren der zurückgekehrten Helden versammeln sich die Bürger in der Taverne, und der Wirt schenkt großzügig aus. Die Helden erfahren dabei wichtige Neuigkeiten von [Lobrecht](/npcs/lobrecht.md), [Harloen](/npcs/harloen.md) und [Auranie](/npcs/auranil.md) und treffen auf [Gunther](/characters/gunther.md).
 
 # Belege
 
-[P-30] Session 2025-11-18, 00:02:24 – https://www.youtube.com/watch?v=w__ahowb9p0
-[P-46] Session 2026-04-09, 00:08:36 – https://www.youtube.com/watch?v=vcGkejr8_nI
-[S1-01-A] Session 2026-07-29, 00:51:47 – https://www.youtube.com/watch?v=umGyKLkefJI
+[P-15] Session 2025-07-22 @ 00:06:33 – https://www.youtube.com/watch?v=BRRCUgW4xRo
+[P-30] Session 2025-11-18 @ 00:02:24 – https://www.youtube.com/watch?v=w__ahowb9p0
+[S1-01-A] Session 2026-07-29 @ 00:28:56 – https://www.youtube.com/watch?v=umGyKLkefJI

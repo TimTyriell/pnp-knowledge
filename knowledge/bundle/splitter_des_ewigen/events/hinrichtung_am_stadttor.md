@@ -1,16 +1,16 @@
 ---
 type: Event
 title: Hinrichtung am Stadttor
-description: Ein Bandit wird am Stadttor von Willauch hingerichtet. Die Gruppe ist
-  Zeuge, wie der Kopf fällt.
+description: Beim Eintreffen in Willauch erlebt die Gruppe eine öffentliche Hinrichtung
+  eines Banditen. Ein goldener Wächter und ein Ausrufer heizen die…
 tags:
 - events
 timestamp: '2025-10-14T00:00:00Z'
 id: EVENT_HINRICHTUNG_AM_STADTTOR
-subtype: Sonstiges
+subtype: Tod
 ---
 
-Ein Bandit wird am Stadttor von [Willauch](/locations/willauch.md) hingerichtet. Die Gruppe ist Zeuge, wie der Kopf fällt.
+Beim Eintreffen in [Willauch](/locations/willauch.md) erlebt die Gruppe eine öffentliche Hinrichtung eines [Banditen](/factions/silberkerne.md). Ein goldener [Wächter](/npcs/waechter.md) und ein Ausrufer heizen die Menge an, die den Tod bejubelt.
 
 # Belege
 

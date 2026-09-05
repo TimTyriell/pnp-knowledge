@@ -1,16 +1,16 @@
 ---
 type: Event
 title: Zähmung des Basilisken Sloppy
-description: Dodo beruhigt den Basilisken mit einem Hühnerbein und reitet auf ihm.
-  Er bringt ihn zu Vago zurück.
+description: Dodo zähmt den Basilisken Sloppy, der zunächst von Joar provoziert wird.
+  Durch Kraulen und Hühnchenschenkel gewinnt Dodo das Vertrauen des…
 tags:
 - events
 timestamp: '2026-08-18T00:00:00Z'
 id: EVENT_ZAEHMUNG_DES_BASILISKEN_SLOPPY
-subtype: Sonstiges
+subtype: Entdeckung
 ---
 
-[Dodo](/characters/dodo.md) beruhigt den Basilisken mit einem Hühnerbein und reitet auf ihm. Er bringt ihn zu [Vago](/npcs/vago.md) zurück.
+[Dodo](/characters/dodo.md) zähmt den Basilisken [Sloppy](/npcs/basilisk_sloppy.md), der zunächst von [Joar](/npcs/joar_vanur.md) provoziert wird. Durch Kraulen und Hühnchenschenkel gewinnt Dodo das Vertrauen des Tieres und reitet es schließlich. Sloppy entpuppt sich als entlaufenes Haustier mit einer Affenpfoten-Gravur.
 
 # Belege
 

@@ -1,8 +1,8 @@
 ---
 type: Item
 title: Der Splitter des Ewigen
-description: Der Splitter des Ewigen ist ein uraltes, mächtiges Objekt, das die Schöpfungskraft
-  in sich trägt. Er wurde von Vorgultar behütet, bevor Est…
+description: Der Splitter des Ewigen war ein uralter, mächtiger Kristall und trug
+  den Beinamen Schöpfungsjuwel. Er wurde in einem Tempel aufbewahrt und…
 tags:
 - items
 timestamp: '2026-07-21T00:00:00Z'
@@ -12,19 +12,19 @@ aliases:
 - Splitter des Ewigen
 ---
 
-Der **Splitter des Ewigen** ist ein uraltes, mächtiges Objekt, das die Schöpfungskraft in sich trägt. Er wurde von [Vorgultar](/deities/vorgul_tar.md) behütet, bevor [Esterossa](/characters/esterossa.md) ihn berührte und dadurch die [Rote Nacht](/events/rote_nacht.md) auslöste. Im weiteren Verlauf löste sich der Splitter nach dieser Berührung auf. Zuvor war bereits ein kleinerer Splitter zerstört worden, während der große [Kristall](/items/gruener_kristall.md) bestehen blieb. [Vasul](/deities/vharzul.md) beabsichtigte, die im Kristall enthaltene Schöpfungskraft zu nutzen, um die Welt neu zu gestalten.
+Der Splitter des Ewigen war ein uralter, mächtiger Kristall und trug den Beinamen Schöpfungsjuwel. Er wurde in einem Tempel aufbewahrt und von [Vorgul'tar](/deities/vorgul_tar.md) behütet, der ihn jedoch nicht nutzen konnte; [Vasul](/deities/vharzul.md) wollte den Splitter für [Huludan](/deities/huludan.md) gewinnen. Entscheidend wurde die Berührung durch [Esterossa](/characters/esterossa.md): [Der Kristall](/items/gruener_kristall.md) reagierte darauf, nahm Besitz von Esterossa und löste sich anschließend auf, als hätte er nie existiert. Seine Energie floss vollständig in Esterossas neue Waffe über.
 
-## Rolle und Bedeutung
+## Eigenschaften und Wirkung
 
-Der Splitter des Ewigen gilt als Träger von Schöpfungskraft – eine Macht, die weit über gewöhnliche Magie hinausgeht. [Vasul](/deities/vharzul.md) strebte danach, diese Kraft für sich zu beanspruchen, um die Welt nach seinen Vorstellungen neu zu erschaffen. Das Objekt war kein einfacher magischer Gegenstand, sondern ein Relikt von uraltem Rang, das von [Vorgultar](/deities/vorgul_tar.md) bewacht wurde. Die Berührung durch [Esterossa](/characters/esterossa.md) zeigt, dass der Splitter nicht nur passives Werkzeug war, sondern unmittelbar auf seinen Träger und die Umgebung einwirken konnte.
+Der Splitter erwies sich als berührungsempfindlich. Bei Esterossas Berührung füllte roter Nebel die Höhle, und rote Lichtfäden bildeten sich zwischen ihm und dem Kristall. Die Berührung ging mit einer Besitznahme einher – der Splitter „besaß“ Esterossa.
 
-## Verlauf
+Der Kristall stand außerdem im Zusammenhang mit einem Wunsch: Die Community-Abstimmung hatte als Effekt die Rote Nacht gewählt, während Esterossas eigener Wunsch etwas war, das sich über Zeit aufbaut. Nicht jeder konnte den Splitter für sich nutzen; Vorgul'tar blieb die Nutzung versagt.
 
-In einer ersten Auseinandersetzung zerstörte Esterossa einen kleinen Splitter des Kristalls, während der große Kristall unversehrt blieb. Zu diesem Zeitpunkt war Vasuls Plan, die Schöpfungskraft für eine Neugestaltung der Welt zu nutzen, noch nicht vereitelt.
+## Geschichte und Verbleib
 
-Später, am Ort seiner Aufbewahrung, berührte Esterossa den Splitter des Ewigen selbst. Diese Berührung hatte weitreichende Folgen: Sie löste die Rote Nacht aus und verwandelte Esterossa. Anschließend löste sich der Splitter auf – das Objekt, das zuvor die Schöpfungskraft bewahrt hatte, war damit nicht mehr vorhanden.
+Vorgul'tar behütete den Splitter, konnte dessen Macht aber nicht einsetzen. Vasul begehrte den Kristall, um ihn für Huludan zu gewinnen. Nach der Berührung durch Esterossa verschwand der Splitter vollständig – als hätte er nie existiert. Seine Energie ging in Esterossas neue Waffe über; als eigenständiger Kristall blieb er nicht zurück.
 
-## Belege
+# Belege
 
-[P-54] Session 2026-06-16 @ 00:28:36 (https://www.youtube.com/watch?v=qe0ck8hvYpk)
-[P-55] Session 2026-07-21 @ 00:00:42 (https://www.youtube.com/watch?v=KNV4oNGJ0tw)
+[P-54] Session 2026-06-16 @ 01:28:36 – https://www.youtube.com/watch?v=qe0ck8hvYpk
+[P-55] Session 2026-07-21 @ 00:20:08 – https://www.youtube.com/watch?v=KNV4oNGJ0tw

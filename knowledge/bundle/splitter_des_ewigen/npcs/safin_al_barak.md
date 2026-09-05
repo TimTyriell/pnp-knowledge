@@ -1,16 +1,16 @@
 ---
 type: NPC
 title: Safin Al Barak
-description: Safin Al Barak ist der Hüter der Schriften in der Bibliothek von Willauch.
-  Er ist ein Gelehrter aus Wabarask und sehr vorsichtig mit dem Wi…
+description: Safin Al Barak ist Hüter der Schriften und Bibliothekar der einzigen
+  öffentlichen Bibliothek in Willauch; er stammt aus Wabarask. Er gewähr…
 tags:
 - npcs
 timestamp: '2026-03-03T00:00:00Z'
 id: NPC_SAFIN_AL_BARAK
 ---
 
-Safin Al Barak ist der Hüter der Schriften in der [Bibliothek von Willauch](/locations/bibliothek_von_willauch.md). Er ist ein Gelehrter aus [Wabarask](/locations/wabarask.md) und sehr vorsichtig mit dem Wissen, das er bewacht. Er gewährt der Gruppe Einlass, weil [Dodo](/characters/dodo.md) ein Champion der Arena ist. Er stellt Bücher über [Vorgulta](/deities/vorgul_tar.md), Flüche und eine Schatzkarte zur Verfügung. Er wird misstrauisch, als [Lindo Laut](/characters/lindo_laut.md) auf das Dokument mit roter Magie reagiert, und bewahrt es sicher auf.
+Safin Al Barak ist Hüter der Schriften und Bibliothekar der einzigen öffentlichen Bibliothek in [Willauch](/locations/willauch.md); er stammt aus [Wabarask](/locations/wabarask.md). Er gewährt der Gruppe als Champions der [Arena](/locations/arena.md) Einlass und beobachtet sie während der gesamten Recherche genau. Er händigt [Lindo Laut](/characters/lindo_laut.md) das Buch über [Vorgulta](/deities/vorgul_tar.md) aus, Lunara das Fluchbuch und [Dodo](/characters/dodo.md) ein [Buch über magieresistente Materialien](/items/buch_ueber_magieresistente_materialien.md). Als Lunara die rote Magie-Seite kopieren möchte, verweigert er dies; als Lindo Laut darauf seltsam reagiert, nimmt er das Pergament an sich und wird misstrauisch.
 
 # Belege
 
-[P-39] Session 2026-03-03 @ 00:16:39 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
+[P-39] Session 2026-03-03 @ 01:17:14 (https://www.youtube.com/watch?v=BRUNuNKTeOg)

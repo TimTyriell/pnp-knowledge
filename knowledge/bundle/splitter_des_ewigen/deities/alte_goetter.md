@@ -1,74 +1,69 @@
 ---
 type: Deity
 title: Alte Götter
-description: Die Alten Götter sind ein urzeitliches Pantheon, das einst allein über
-  die Welt herrschte. Groß, unsterblich und von gewaltiger Macht, wurd…
+description: Die Alten Götter sind ein Pantheon großer, unsterblicher und urzeitlicher
+  Mächte. Sie herrschten einst allein über die Welt, bis ihre Macht…
 tags:
 - deities
-timestamp: '2026-08-06T00:00:00Z'
+timestamp: '2026-08-18T00:00:00Z'
 id: DEITY_ALTE_GOETTER
 subtype: Alter Gott
 aliases:
 - Die alten Götter
 ---
 
-# Die Alten Götter
-
 ## Überblick
 
-Die Alten Götter sind ein urzeitliches Pantheon, das einst allein über die Welt herrschte. Groß, unsterblich und von gewaltiger Macht, wurden sie vor zwölf Jahren von den Neuen Göttern besiegt und in andere Ebenen verbannt. Seitdem versuchen sie, durch Portale wieder an Macht zu gelangen. Ihre Anhänger sind die [Dämonen](/factions/daemonen.md). Der Sieg der Neuen Götter hatte weitreichende Folgen: Ein globaler Gedächtnisverlust löschte bei allen Lebewesen die Erinnerung an die Zeit vor der Schlacht. Nur wenige Auserwählte kennen noch die wahren Riten der Alten Götter.
+Die Alten Götter sind ein Pantheon großer, unsterblicher und urzeitlicher Mächte. Sie herrschten einst allein über die Welt, bis ihre Macht zerbrach. In der Überlieferung wird ihnen nachgesagt, dass nur noch wenige Auserwählte ihre wahren Riten kennen.
+
+Im Götterkrieg wurden die Alten Götter von den Neuen Göttern besiegt, verdrängt und in eine dunkle Welt – den [Abyss](/domains/abyss.md) – verbannt. Seither streben sie danach, ihre Macht zurückzuerlangen. Ihre Anhänger versuchen, durch Risse in die Welt einzudringen; als Beispiel dafür wird ein beschworener [Miner-Dämon](/npcs/miner_daemon.md) genannt [1]. In den Erzählungen aus der Zeit des Königreichs Zebros heißt es, dass die Alten Götter vor einer kommenden Gefahr warnten, bevor die Neuen Götter erschienen [2].
 
 ## Rolle in der Kampagne
 
-Die Alten Götter sind eine zentrale Bedrohung und treibende Kraft der Kampagne. Sie sind die Gegenspieler der Neuen Götter und damit indirekt auch der Gruppe, die in deren Welt lebt. Ihre Verbannung ist jedoch nicht vollständig: Ihre Macht ist noch spürbar, und sie suchen aktiv nach Wegen, in die Welt zurückzukehren.
+Die Alten Götter wirken vor allem als bedrohlicher Hintergrund und als Quelle gegenwärtiger Gefahren. Sie sind nicht mehr unmittelbar präsent, doch ihre Verbannung ist offenbar nicht endgültig: Durch Rifts versuchen Wesen aus ihrem Umfeld, in die Welt zu gelangen. Dies zeigt sich in der Beschwörung des Miner-Dämons, der als Anhänger der Alten Götter gilt [1].
 
-Ein zentraler Aspekt ihrer Rolle ist die Verbindung zu den Dämonen, die als ihre Anhänger fungieren. Die Gruppe begegnet den Alten Göttern beziehungsweise ihren Einflüssen an mehreren Stellen:
-
-- In einem Dungeon treffen die Helden auf gefangene Seelen, die einst im [Krieg](/characters/krieg.md) gegen die Alten Götter gekämpft haben. Diese Seelen sind seit langer Zeit eingesperrt und warnen die Gruppe davor, weiterzugehen, da sie sonst dasselbe Schicksal erleiden könnten.
-- Die gefangenen Seelen bitten die Gruppe, sie zu befreien und für sie zu beten – ein Hinweis darauf, dass die Alten Götter trotz ihrer Verbannung noch immer Einfluss auf die Welt und ihre Bewohner ausüben können.
-
-Die Frage nach der Wahrheit über die Alten Götter ist ein wiederkehrendes Motiv: Als [Lindo Laut](/characters/lindo_laut.md) den gefangenen Seelen entgegnet, dass die Alten Götter keine Macht mehr hätten, wenn sie die Seelen nicht befreien könnten, entsteht betretenes Schweigen – ein Hinweis darauf, dass die tatsächliche Situation komplexer ist als allgemein angenommen.
+Zugleich sind die Alten Götter Teil der Vorgeschichte, die die Heldengruppe im Zusammenhang mit dem [Königreich Zebros](/factions/koenigreich_zebros.md) aufarbeitet. In den Aufzeichnungen der Familie von [Lunara Velora](/characters/lunara_velora.md) werden sie als Mächte beschrieben, die einst mit den Reichen der Sterblichen in Kontakt standen und vor einem dunklen Feind warnten, ehe die Neuen Götter kamen [2]. Dies macht die Alten Götter zu einer ambivalenten Größe: Sie sind besiegte, verdrängte Wesen, aber ihre Warnung deutet darauf hin, dass sie vor dem eigenen Sturz noch eine andere Bedrohung wahrnahmen.
 
 ## Wichtige Merkmale
 
-Die Alten Götter werden als groß, unsterblich und urzeitlich beschrieben. Sie herrschten einst allein über die Welt, bis ihre Macht zerbrach. Über ihre konkreten Fähigkeiten und ihr Auftreten ist aus den Belegen wenig bekannt, da sie selbst nicht direkt in Erscheinung treten, sondern nur durch ihre Anhänger, ihre Verbannung und die Erinnerungen an sie.
+Die Alten Götter werden als groß, unsterblich und urzeitlich beschrieben. Ihre Macht zerbrach im Götterkrieg; nur wenige Auserwählte kennen heute noch ihre wahren Riten. Nach ihrer Niederlage wurden sie in den Abyss verbannt, eine dunkle Welt, aus der heraus sie offenbar weiterhin Einfluss zu nehmen versuchen.
 
-Bekannt ist, dass ihre Macht auch nach der Verbannung noch spürbar ist. Die gefangenen Seelen im Dungeon, die gegen sie gekämpft haben, sind seit langer Zeit eingesperrt – ein Beleg dafür, dass die Alten Götter selbst in ihrer Verbannung in der Lage waren oder sind, Seelen gefangen zu halten.
+Zu den überlieferten Mächten des alten Pantheons gehören:
 
-Ein wesentliches Merkmal der Alten Götter ist ihre Verbindung zu den Dämonen, die als ihre Anhänger gelten. Diese Anhängerschaft deutet auf eine dunkle, möglicherweise bösartige Natur hin, auch wenn die Belege keine eindeutige moralische Bewertung zulassen.
+- **[Akastrale](/deities/akastrale.md), der dunkle Hunger** – Domänen: Leere, Gier, Verzehr; ein uralter Abgrund, der selbst die Götter fürchten soll.
+- **Sythra'Vell, die Fleischweberin** – Domänen: Fleisch, Veränderung, Geburt von Kreaturen; gilt als Erschafferin der ersten Monster.
+- **Thar'vok, der [Erdrichter](/deities/erdrichter.md)** – Domänen: Berge, Erdbeben, Beständigkeit; verbunden mit Standhaftigkeit, Eiden und Bauten aus Stein.
+- **Uhoriax, Mutter der Schleier** – Domänen: Geheimnisse, Träume, Übergänge; Hüterin der Grenze zwischen Welt und Traum.
+- **Vorgul'Thar, Herr der Tausend Seelen** – Domänen: Tod, Erinnerung, Geister; Bewahrer der Seelen, der keine Toten vergessen will.
+- **Vhar Zul, der Gerissene** – Domänen: List, Intrigen, Handel; Gott der klugen Worte und scharfen Verhandlungen.
+- **Nerithis, Mutter der Fluten** – Domänen: Ozeane, Stürme, Erneuerung; verlangt Respekt vor dem Meer.
+- **Zeyrath, Herr der Flammen** – Domänen: Feuer, [Krieg](/characters/krieg.md), Schöpfung; verbunden mit Tapferkeit, Schmiedekunst und Ehrkampf.
 
 ## Beziehungen und Verbindungen
 
-**Zu den Neuen Göttern:** [Die Neuen Götter](/deities/neue_goetter.md) sind die direkten Gegenspieler der Alten Götter. Sie haben vor zwölf Jahren den Krieg gegen die Alten Götter gewonnen und diese verbannt. Der Sieg der Neuen Götter führte zum globalen Gedächtnisverlust.
+Die wichtigste Gegnerschaft der Alten Götter sind die [Neuen Götter](/deities/neue_goetter.md), die sie im Götterkrieg besiegten und in den Abyss verbannten [1][2].
 
-**Zu den Dämonen:** Die Dämonen sind die Anhänger der Alten Götter. Sie dienen ihnen und unterstützen vermutlich deren Bestreben, durch Portale wieder an Macht zu gelangen.
+Das Königreich [Zebros](/factions/koenigreich_zebros.md) war im Götterkrieg der stärkste Verbündete der Alten Götter; sein Untergang trug zum Ende der Alten Götter bei [2]. Der Beleg, der Zebros anhand einer Inschrift als „ehemaligen Eigentümer“ und Erdgott führt, ist insofern zu lesen, dass dort wohl ein Relikt oder eine Ruine aus der Zeit des Königreichs gemeint ist – nicht eine Gottheit.
 
-**Zu den gefangenen Seelen:** Die gefangenen Seelen im Dungeon haben einst im Krieg gegen die Alten Götter gekämpft und wurden offenbar von ihnen eingesperrt. Sie sind seit langer Zeit gefangen und fürchten, dass die Gruppe dasselbe Schicksal erleidet. Sie bitten um Befreiung und darum, dass für sie gebetet wird.
+Gegenüber den Sterblichen traten die Alten Götter in der Vorgeschichte als warnende Mächte auf: Sie berichteten von einer kommenden Gefahr und einem dunklen Feind, ehe die Neuen Götter die Welt überfielen [2]. Diese Verbindung ist nicht abschließend geklärt; der dunkle Feind und die Neuen Götter werden in den Aufzeichnungen nicht eindeutig gleichgesetzt.
 
-**Zu den Bewohnern der Welt:** Durch den globalen Gedächtnisverlust haben alle Lebewesen die Erinnerung an die Zeit vor der Schlacht verloren. Niemand kann sich an Ereignisse erinnern, die länger als zwölf Jahre zurückliegen. Die Alten Götter sind damit aus dem kollektiven Gedächtnis der Welt verschwunden, auch wenn ihre Macht weiterhin spürbar ist.
+In der Gegenwart äußert sich die Verbindung der Alten Götter zu ihren Anhängern vor allem durch beschworene Wesen und Kultisten, die über Risse in die Welt einzudringen versuchen [1].
 
 ## Chronologie
 
-**Vor zwölf Jahren:** Die Alten Götter verlieren den Krieg gegen die Neuen Götter. Sie werden in andere Ebenen verbannt. Infolge der Niederlage verlieren alle Lebewesen die Erinnerung an die Zeit davor – niemand kann sich an Ereignisse erinnern, die länger als zwölf Jahre zurückliegen.
-
-**Session 2025-05-27:** Die Gruppe erfährt, dass die Alten Götter von den Neuen Göttern verdrängt wurden, in andere Ebenen verbannt sind und durch Portale wieder an Macht zu gelangen versuchen. Die Dämonen werden als ihre Anhänger identifiziert.
-
-**Session 2025-06-17:** In einem Dungeon begegnet die Gruppe gefangenen Seelen, die im Krieg gegen die Alten Götter gekämpft haben. Die Seelen warnen die Gruppe und bitten um Befreiung. Lindo Laut konfrontiert sie mit der Frage, wie die Alten Götter die Seelen befreien könnten, wenn sie keine Macht mehr hätten – die Seelen schweigen daraufhin betreten. Eine jüngere Stimme bittet: „Befreit uns. Betet für uns. Betet."
-
-**Session 2026-08-06:** [Saris](/characters/saris.md) erklärt der Gruppe, dass niemand sich an die Zeit vor zwölf Jahren erinnern kann. Der Spielleiter bestätigt: „Seit die alten Götter gegen die neuen Götter verloren haben, deswegen, dass irgendwas passiert, dass sie alles vergessen haben." [Bruma Stormrak](/characters/bruma_stormrak.md) zitiert einen Spruch seiner Familie: „Jeder Regentropfen findet irgendwann seinen Weg nach Hause."
+1. **Urzeitliche Herrschaft:** Die Alten Götter herrschen allein, groß und unsterblich. Nur wenige kennen ihre wahren Riten [Z].
+2. **Warnung vor einem dunklen Feind:** Nach den Erzählungen der Familie Velora beunruhigt die Alten Götter etwas, bevor ein dunkler Feind kommen soll. Sie erzählen den Menschen von dieser Gefahr und kündigen an, dass er alles, wie man es kennt, wieder machen würde [2].
+3. **Götterkrieg und Fall:** Die Neuen Götter erscheinen „von heute auf morgen“, überfallen die Landstriche und vernichten die größten Städte. Das Königreich Zebros hält sich zunächst wacker, wird aber letztlich zerstört. Die Alten Götter werden besiegt und in den Abyss verbannt [1][2].
+4. **Gegenwart:** Aus dem Abyss heraus streben die Alten Götter nach einer Rückkehr. Anhänger wie der beschworene Miner-Dämon versuchen, durch Rifts in die Welt zu gelangen [1].
 
 ## Offene Fragen
 
-- Wie genau versuchen die Alten Götter, durch Portale wieder an Macht zu gelangen, und wo befinden sich diese Portale?
-- Welche Rolle spielen die Dämonen als Anhänger der Alten Götter konkret in der Kampagne?
-- Was ist mit den gefangenen Seelen geschehen, nachdem die Gruppe sie im Dungeon getroffen hat? Wurden sie befreit?
-- Welche Verbindung besteht zwischen den Alten Göttern und dem globalen Gedächtnisverlust – war der Verlust eine Folge der Niederlage oder eine bewusste Handlung?
-- Gibt es weitere Anhänger oder [Kultisten](/factions/kultisten.md) der Alten Götter außer den Dämonen?
-- Was genau bedeutet die Bitte der gefangenen Seelen, für sie zu beten – und an wen oder was richtet sich dieses Gebet?
+- Die Natur des **dunklen Feindes**, vor dem die Alten Götter warnten, bleibt unklar; es ist nicht belegt, ob er mit den Neuen Göttern identisch ist oder eine separate Bedrohung darstellte.
+- Es ist offen, auf welchem Wege die Alten Götter selbst zurückkehren könnten und ob die Rifts allein ihren Anhängern dienen oder irgendwann auch ihnen selbst den Durchgang ermöglichen.
+- Die Überlieferung besagt, dass nur wenige Auserwählte noch die wahren Riten der Alten Götter kennen; wer diese Auserwählten in der Gegenwart sind, ist nicht belegt.
 
 ## Belege
 
-[P-09] Session 2025-05-27, 00:15:30 – https://www.youtube.com/watch?v=bamCIB_CkR8
-[P-12] Session 2025-06-17, 01:28:20–01:30:32 – https://www.youtube.com/watch?v=tl76B4V0io8
-[S1-03-B] Session 2026-08-06, 01:58:14–01:59:41 – https://www.youtube.com/watch?v=0HyPHao8s_k
-4. Bekanntes Pantheon der Götter (Weltmaterial)
+[1] Session 2025-05-27 @ 00:17:33 (https://www.youtube.com/watch?v=bamCIB_CkR8)  
+[2] Session 2026-08-18 @ 01:59:25 (https://www.youtube.com/watch?v=10swvSz6k7U)  
+[Z] Bekannte_Pantheon_der_Goetter.md (zusätzliche Quelle, Weltmaterial)

@@ -1,8 +1,8 @@
 ---
 type: Item
 title: Schlüsselbund
-description: Ein Schlüsselbund, der einem getöteten Banditen abgenommen wird. Er enthält
-  zwei Schlüssel, mit denen die Gruppe die Tür zum Versteck öffne…
+description: Ein Schlüsselbund fällt dem getöteten Wächter in den Matsch, Myko hebt
+  ihn auf und gibt ihn Otis. Mit einem Schlüssel öffnet die Gruppe die…
 tags:
 - items
 timestamp: '2026-03-23T00:00:00Z'
@@ -10,7 +10,7 @@ id: ITEM_SCHLUESSELBUND
 subtype: Werkzeug
 ---
 
-Ein Schlüsselbund, der einem getöteten [Banditen](/factions/silberkerne.md) abgenommen wird. Er enthält zwei [Schlüssel](/items/magischer_schluessel.md), mit denen die Gruppe die Tür zum Versteck öffnet und später den Gefangenen [Kerner](/npcs/kerner.md) befreit.
+Ein Schlüsselbund fällt dem getöteten [Wächter](/npcs/waechter.md) in den Matsch, [Myko](/characters/myko.md) hebt ihn auf und gibt ihn [Otis](/characters/otis.md). Mit einem [Schlüssel](/items/magischer_schluessel.md) öffnet die Gruppe die Tür zum Geheimgang, mit dem zweiten befreit sie später [Kerner](/npcs/kerner.md) aus der Zelle.
 
 # Belege
 

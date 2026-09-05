@@ -1,18 +1,18 @@
 ---
 type: Item
 title: Hope Hold Flare
-description: Die Hope-Hold-Flare ist ein magisches Feuerwerk, das Lindo Laut bei ihrer
-  Ankunft in Ehrenfels aktiviert, um ihre Rückkehr zu inszenieren.
+description: Die Hope Hold Flare ist ein magischer Gegenstand, den Lindo Laut besitzt.
+  Eigentlich für Kämpfe gedacht, setzt er sie beim Empfang in Ehren…
 tags:
 - items
 timestamp: '2026-07-29T00:00:00Z'
 id: ITEM_HOPE_HOLD_FLARE
-subtype: Werkzeug
+subtype: Sonstiges
 aliases:
 - Hope-Hold-Flare
 ---
 
-Die Hope-Hold-Flare ist ein magisches Feuerwerk, das [Lindo Laut](/characters/lindo_laut.md) bei ihrer Ankunft in [Ehrenfels](/locations/ehrenfels.md) aktiviert, um ihre Rückkehr zu inszenieren.
+Die Hope Hold Flare ist ein magischer Gegenstand, den [Lindo Laut](/characters/lindo_laut.md) besitzt. Eigentlich für Kämpfe gedacht, setzt er sie beim Empfang in [Ehrenfels](/locations/ehrenfels.md) ein, um ein beeindruckendes Feuerwerk zu erzeugen und die Ankunft der Helden noch epischer zu inszenieren.
 
 # Belege
 

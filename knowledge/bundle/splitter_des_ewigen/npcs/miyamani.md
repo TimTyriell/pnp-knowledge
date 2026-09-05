@@ -1,16 +1,16 @@
 ---
 type: NPC
 title: Miyamani
-description: Miyamani ist eine Katari und Begleiterin von Joao. Sie springt elegant
-  über die Brücke und schießt mit einer Armbrust auf den Fallout-Frosc…
+description: Miyamani ist eine Begleiterin des Kapitäns Lobrecht. Sie erscheint am
+  Ende des Abends und bestätigt, dass die Strecke nach Breska unpassier…
 tags:
 - npcs
-timestamp: '2026-08-18T00:00:00Z'
+timestamp: '2025-11-18T00:00:00Z'
 id: NPC_MIYAMANI
 ---
 
-Miyamani ist eine Katari und Begleiterin von Joao. Sie springt elegant über die Brücke und schießt mit einer Armbrust auf den [Fallout-Frosch](/npcs/fallout_frosch.md). Sie ist wortkarg, aber aufmerksam und zeigt Anerkennung für [Dodo](/characters/dodo.md), als er den Basilisken zähmt.
+Miyamani ist eine Begleiterin des Kapitäns [Lobrecht](/npcs/lobrecht.md). Sie erscheint am Ende des Abends und bestätigt, dass die Strecke nach [Breska](/locations/breska.md) unpassierbar ist und sie mehrere wertvolle Kugeln gegen [Untote](/factions/belorus_untotenarmee.md) verbraucht hat. Sie wirkt bedrückt.
 
 # Belege
 
-1. Session 2026-08-18 @ 00:15:26 (https://www.youtube.com/watch?v=10swvSz6k7U)
+[P-30] Session 2025-11-18 @ 01:28:51 (https://www.youtube.com/watch?v=w__ahowb9p0)

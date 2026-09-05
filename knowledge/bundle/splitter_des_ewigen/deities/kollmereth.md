@@ -1,70 +1,65 @@
 ---
 type: Deity
 title: Koll'Mereth (die Krone)
-description: Koll'Mereth, genannt „die Krone", ist eines der vier Seelenstücke, die
-  im Amulett von Lindo Laut gefangen sind. Er gehört zu den alten Gött…
+description: Koll'Mereth, genannt „die Krone“, ist eines der vier Seelenstücke des
+  toten Gottes Vhar'Zul und keine eigenständige Gottheit – auch wenn er…
 tags:
 - deities
 timestamp: '2025-07-22T00:00:00Z'
 id: DEITY_KOLLMERETH
-subtype: Alter Gott
+subtype: Sonstiges
 aliases:
 - Koll
-- Kol Meref
 - Kol Merefs
+- Kol Meref
 ---
 
-## Überblick
+# Überblick
 
-Koll'Mereth, genannt „die Krone", ist eines der vier Seelenstücke, die im Amulett von [Lindo Laut](/characters/lindo_laut.md) gefangen sind. Er gehört zu den alten Göttern und ist eine der Stimmen, die aus dem Amulett zu Lindo Laut sprechen. Anders als eine eigenständige Gottheit ist Koll'Mereth eine der Seelen [Vhar'Zuls](/deities/vharzul.md) – ein Fragment des zerfallenen alten Gottes, das in dem Amulett bewahrt wird.
+Koll'Mereth, genannt „die Krone“, ist eines der vier Seelenstücke des toten Gottes [Vhar'Zul](/deities/vharzul.md) und keine eigenständige Gottheit – auch wenn er in den Aufzeichnungen der Sterblichen mitunter als „alter Gott“ bezeichnet wird. Er verkörpert Ehrgeiz, Einfluss und das Versprechen von Macht. Das Buch der vier Seelen beschreibt seine Stimme als „Honig über rostigem Stahl“; er flüstert von einem Aufstieg, bei dem andere vor dem Träger niederknien und ihn „Herr“ nennen. Koll'Mereth war eine von vier Stimmen, die in [Lindo Lauts](/characters/lindo_laut.md) Amulett gefangen waren, bevor sein Seelenstück ausgelöscht wurde.
 
-Sein Wesen wird im Buch der vier Seelen als verführerisch und machthungrig beschrieben: Er sät Ehrgeiz wie ein Gift. Seine Stimme ist „Honig über rostigem Stahl", er bietet Einfluss, Macht und „das Gewicht von Worten, vor denen selbst Könige schweigen". Seine Präsenz macht aus Zweiflern Diener und aus Freunden Rivalen. Sein Leitsatz lautet: *„Ein Schritt noch… dann knien sie vor dir. Und nennen dich Herr…"*
+# Rolle in der Kampagne
 
-Im Verlauf der Kampagne wurde Koll'Mereths Seelenstück durch die Handlungen der Gruppe ausgelöscht. Von den vier im Amulett bekannten Seelen sind seither nur noch drei übrig.
+Koll'Mereth trat erstmals in einer [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) in Erscheinung, die die Gruppe erkundete: Auf einer Statue im oberen Schrein stand sein Name. Die Statue zeigte eine hockende, krähenartige Gestalt und übte einen starken Drang auf [Lindo Laut](/characters/lindo_laut.md) aus; aus ihr sprach eine Stimme, die ihn rief. Als die Gruppe [Nerash](/deities/nerash.md) befreite, warnte die Statue: „Haltet ein, bevor ihr den dunklen Gott befreit!“ Kurz darauf wurde die [Statue von Nerash](/items/statue_von_nerash.md) mit einem weißen [Schwert](/items/schwert.md) zerschmettert und in einer Explosion zerstört. Nach dieser Zerstörung verstummte in [Lindo Lauts Amulett](/items/amulett_des_heiligen_duran.md) die vierte Stimme; die übrigen drei lachten hämisch, leise und kaum wahrnehmbar.
 
-## Rolle in der Kampagne
+Später, im alten Heiligtum, identifizierte der [Gildemeister](/npcs/nox.md) vier Statuen als Symbole der vier Seelenstücke – „angefangen von links mit Koll“. [Lindo Laut](/characters/lindo_laut.md) stellte fest, dass eines davon nicht mehr in seinem Amulett ist; der [Gildemeister](/npcs/nox.md) vermutete, dass die Macht des Ausgelöschten nun auf den drei verbliebenen Seelen liegt und dass derjenige, der am Ende übrig bleibt, in der Lage wäre, „den Alten zurückzuholen“.
 
-Koll'Mereth begegnete der Gruppe auf zwei Wegen: als physische Statue an einem Opferaltar in der oberen Etage einer [Festung](/locations/festung.md) und als eines der vier Seelenstücke im [Amulett von Lindo Laut](/items/amulett_des_heiligen_duran.md).
+# Wichtige Merkmale
 
-In der Festung diente seine Statue als Opferaltar, der mit [Nerash](/deities/nerash.md) verbunden war. Die Gruppe erfuhr, dass sie geopfert werden müsste, um weiterzukommen. Durch die [Befreiung von Nerash](/events/die_befreiung_von_nerash.md) wurde die Statue zerstört – ein Ereignis, das sich später als folgenschwerer herausstellte, als zunächst angenommen.
+Koll'Mereth verkörpert Ehrgeiz und Herrschaftsanspruch. Sein Beiname „die Krone“ verweist auf sein Versprechen von Macht und Überlegenheit. Das Buch der vier Seelen zitiert sein Flüstern:
 
-Am alten Schrein, an dem die Gruppe die vier Seelenstücke untersuchte, symbolisierte eine von vier Statuen Koll'Mereth. Dort erkannte Lindo Laut, dass das Seelenstück, das [Nerash](/deities/nerash.md) ausgelöscht hatte, das von Koll'Mereth war. Seitdem sind von den vier bekannten Seelen nur noch drei im Amulett verblieben.
+> „Ein Schritt noch… dann knien sie vor dir. Und nennen dich Herr…“
 
-## Wichtige Merkmale
+Er bietet Einfluss und das Gewicht von Worten, vor denen selbst Könige schweigen; seine Präsenz macht aus Zweiflern Diener und aus Freunden Rivalen.
 
-Koll'Mereths Statue in der Festung wird als „abstruse Gestalt" beschrieben, die in einer Hock-Position sitzt – „ein bisschen wie so eine Krähe, vielleicht aber eher so wie so ein Totem". Über der Statue stand sein Name in einer Schrift, die Lindo Laut lesen konnte, [Esterossa](/characters/esterossa.md) jedoch nicht. Die Kerzen vor der Statue waren alle erloschen, als die Gruppe sie fand.
+Als Seelenstück ist er Teil der Essenz [Vhar'Zuls](/deities/vharzul.md), die im Buch der vier Seelen versiegelt wurde. Eine nachgetragene Warnung erklärt, dass Vhar'Zul nicht mehr ist, seine Essenz jedoch in den vier Seelen weiterlebt; sollte nur eine dieser Seelen überdauern, reiche ihre Kraft für uralte Magie, die einst Reiche stürzte. Wer [Dunkelheit](/deities/dunkelheit.md) sucht, erhält mit ihnen „eine Stimme, die selbst die Stille beherrscht“.
 
-[Cookie](/characters/cookie.md), die die Statue berührte, spürte ein ähnliches Kältegefühl wie zuvor bei der Lanze – ein Hinweis auf eine Verbindung zwischen Koll'Mereth und dieser Waffe. [Die Statue](/items/die_statue.md) gab eine ähnliche Vibration und ein ähnliches Gefühl her. Für Cookie, die mit der Natur verbunden ist, war das Wesen Koll'Mereths nicht naturgebunden; sie konnte nicht recht verstehen, was es damit auf sich hatte.
+In der physischen Darstellung der Kapelle erschien er als hockende, krähenartige Gestalt. Die Statue war der Auslöser für Lindo Lauts Drang; sie rief ihn und warnte vor [Nerashs](/deities/nerash.md) Befreiung. Nach ihrer Zerstörung blieb von Koll'Mereth keine Stimme mehr im Amulett zurück.
 
-Esterossa erkannte aus altem Wissen oder alten Geschichten, um wen es sich bei Koll'Mereth handelte, auch wenn die Transkripte die Details dieser Erkenntnis nicht ausführen.
+# Beziehungen und Verbindungen
 
-Im Buch der vier Seelen wird Koll'Mereths Charakter als manipulativ und ambitioniert beschrieben. Er spricht in verführerischem Ton, verspricht Macht und Einfluss und vergiftet Beziehungen, indem er aus Freunden Rivalen macht.
+- [Vhar'Zul](/deities/vharzul.md): Koll'Mereth ist eines seiner vier Seelenstücke; seine Kraft ist ein Teil von Vhar'Zuls Essenz, nicht die eines eigenständigen Gottes.
+- [Lindo Laut](/characters/lindo_laut.md): Träger des Amuletts, in dem Koll'Mereth gefangen war; wurde von der Statue gerufen und hörte seine Stimme, bis Nerash das Seelenstück auslöschte.
+- [Nerash](/deities/nerash.md): Von Koll'Mereths Statue als „dunkler Gott“ bezeichnet; zerstörte die Statue mit einem weißen Schwert und löschte damit das Seelenstück aus.
+- [Gildemeister](/npcs/nox.md): Erklärte die vier Statuen als Symbole der Seelenstücke und nannte Koll'Mereth als die linke; stellte die Vermutung über die Machtverschiebung auf die verbliebenen drei an.
+- [Esterossa](/characters/esterossa.md): Warnte, dass es nicht weniger als drei werden sollten, weil die Seelen stärker werden, je weniger von ihnen übrig sind.
+- Die übrigen Seelenstücke im Amulett: Nach dem Verstummen Koll'Mereths lachten die drei verbliebenen Stimmen hämisch, leise und kaum wahrnehmbar.
 
-## Beziehungen und Verbindungen
+# Chronologie
 
-Koll'Mereth ist eines der vier Seelenstücke im Amulett von Lindo Laut. Die anderen drei Seelen sind nicht namentlich bekannt, abgesehen von einem „Glutkollegen", dessen Statue ganz rechts am Schrein stand – vermutlich ein Wesen, das mit Feuer oder Glut assoziiert wird.
+- Vor der Kampagne wurde Koll'Mereth zusammen mit den anderen drei Seelenstücken im Buch der vier Seelen versiegelt; später gelangte er als eine der Stimmen in Lindo Lauts Amulett.
+- **Session 2025-07-09:** In der Kapelle stand sein Name auf der oberen Statue, die Lindo Laut rief. Die Statue warnte vor der Befreiung Nerashs und wurde von Nerash zerschmettert. Unmittelbar danach war Koll'Mereths Stimme im Amulett verstummt.
+- **Session 2025-07-22:** Im alten Heiligtum identifizierte der Gildemeister Koll'Mereth als die linke der vier Statuen. Lindo Laut bestätigte, dass dieses Seelenstück nicht mehr im Amulett ist; der Gildemeister vermutete, dass die Macht auf die drei verbliebenen Seelen übergeht.
 
-Seine Statue in der Festung war mit Nerash verbunden, der Demigöttin. Die genaue Natur dieser Verbindung bleibt unklar, aber die Gruppe ging davon aus, dass Nerash für die Auslöschung von Koll'Mereths Seelenstück verantwortlich war. Lindo Laut formulierte es so: „Nerash schien ihn ausgelöscht zu haben."
+# Offene Fragen
 
-Die Statue in der Festung wies eine spürbare Verbindung zur Lanze auf, die die Gruppe zuvor gefunden hatte – beide lösten bei Cookie dasselbe Kältegefühl aus.
+- Ob die Vermutung des Gildemeisters zutrifft, dass die Macht des Ausgelöschten vollständig auf die drei verbliebenen Seelen übergeht und der letzte Überlebende Vhar'Zul zurückholen kann, ist nicht bestätigt; er selbst bezeichnete es als Vermutung.
+- Was „der Alte“ genau ist, bleibt unausgesprochen – der Kontext legt Vhar'Zul nahe, doch der Name wird nicht genannt.
+- Ob Koll'Mereth durch die Zerstörung der Statue endgültig vernichtet ist oder nur aus dem Amulett verschwunden ist, geht aus den Belegen nicht eindeutig hervor; die Quellen sprechen von „ausgelöscht“, aber die tieferen Konsequenzen sind offen.
 
-## Chronologie
+# Belege
 
-In der ersten Begegnung (Session 2025-07-09) fand die Gruppe in der oberen Etage einer Festung eine Statue mit der Aufschrift „Kol Merefs". Die Kerzen davor waren erloschen, das Amulett von Lindo Laut reagierte kaum – nur ein „landsleichtes Lichtchen" war noch zu vermerken. Die Gruppe vermutete, dass sie durch ihre Handlungen etwas befreit hatten. Cookie spürte beim Berühren der Statue ein Kältegefühl ähnlich wie bei der Lanze. Die Gruppe erfuhr, dass sie geopfert werden müsste, um weiterzukommen. Durch die Befreiung von Nerash wurde die Statue zerstört.
-
-In der zweiten Begegnung (Session 2025-07-22) zeigte Lindo Laut am alten Schrein auf vier Statuen, die die vier Seelenstücke symbolisierten. Über jeder Statue standen Schriftzeichen, die die Namen der Seelen im Amulett kennzeichneten – „angefangen von links mit Koll. Und endet mit dem Glutkollegen ganz rechts." Lindo Laut befürchtete, dass einer der Seelen nicht mehr existierte, und vermutete, dass Nerash ihn ausgelöscht hatte. Der GM bestätigte diese Vermutung als naheliegend: Wenn dem so sei, dann liege die Macht nun auf den drei verbliebenen Seelen. Wer auch immer am Ende übrig bliebe, wäre in der Lage, den Alten zurückzuholen – wobei Lindo Laut auf [Vortrex](/deities/vortrex.md) verwies. Esterossa betonte, dass man auf jeden Fall verhindern sollte, dass es weniger als drei Seelen würden.
-
-## Offene Fragen
-
-- Die genaue Natur der Verbindung zwischen Koll'Mereth und Nerash bleibt unklar: War Nerash die Ursache seiner Auslöschung, oder war die Verbindung eine andere?
-- Welche Bedeutung hatte die Verbindung zwischen Koll'Mereths Statue und der Lanze, die Cookie spürte?
-- Was genau bedeutet es, dass Koll'Mereth eine der Seelen Vhar'Zuls ist – und welche Rolle spielt er im größeren Zusammenhang der Rückholung des Alten?
-- Wer sind die übrigen drei Seelen im Amulett, abgesehen vom „Glutkollegen"?
-- Welche Konsequenzen hat die Auslöschung von Koll'Mereth für das Gleichgewicht der Kräfte im Amulett und für Lindo Laut selbst?
-
-## Belege
-
-[P-14] Session 2025-07-09 @ 00:52:18 (https://www.youtube.com/watch?v=XOnHa6CmDbo)
-[P-15] Session 2025-07-22 @ 02:49:55 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
-3. Das Buch der vier Seelen (Weltmaterial)
-4. Kanon-Entscheidungen (Weltmaterial)
+[P-14] Session 2025-07-09 @ 01:14:03, https://www.youtube.com/watch?v=XOnHa6CmDbo
+[P-15] Session 2025-07-22 @ 02:50:23, https://www.youtube.com/watch?v=BRRCUgW4xRo
+[3] Das Buch der vier Seelen (Kampagnenmaterial)  
+[4] Kanonische Festlegungen der Spielleitung (Kampagnenmaterial)

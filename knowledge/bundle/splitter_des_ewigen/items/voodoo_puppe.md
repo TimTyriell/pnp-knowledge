@@ -1,8 +1,8 @@
 ---
 type: Item
 title: Voodoo-Puppe
-description: Die Voodoo-Puppe ist eine kleine hölzerne Figur, die Cookie im Bauernhaus
-  findet. Sie scheint magisch zu sein, da sie verwendet werden kann…
+description: Eine kleine, aus Holz geflochtene Figur, die Cookie im alten Bauernhaus
+  findet. Sie nimmt sie an sich. Später, während der Begegnung mit La…
 tags:
 - items
 timestamp: '2025-04-15T00:00:00Z'
@@ -10,7 +10,7 @@ id: ITEM_VOODOO_PUPPE
 subtype: Artefakt
 ---
 
-Die Voodoo-Puppe ist eine kleine hölzerne Figur, die [Cookie](/characters/cookie.md) im Bauernhaus findet. Sie scheint magisch zu sein, da sie verwendet werden kann, um Schaden auf eine Person zu übertragen. Cookie versucht, sie gegen [Landra](/npcs/lenra.md) einzusetzen, aber der Schaden wird auf sie selbst umgelenkt.
+Eine kleine, aus Holz geflochtene Figur, die [Cookie](/characters/cookie.md) im alten Bauernhaus findet. Sie nimmt sie an sich. Später, während der [Begegnung mit Landra](/events/begegnung_mit_lanra.md), versucht Cookie, die Puppe mit einem Pfeil zu durchbohren, um [Landra](/npcs/lenra.md) zu schaden, aber der Schaden wird auf Cookie selbst übertragen. Die Puppe scheint mit Voodoo-Magie verbunden zu sein.
 
 # Belege
 

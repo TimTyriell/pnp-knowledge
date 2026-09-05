@@ -1,89 +1,107 @@
 ---
 type: Character
 title: Nyrella
-description: Nyrella ist eine Faery (eine Pixie-Art, jedoch größer als eine gewöhnliche
-  Pixie) und eine Rangerin mit einem Eisbären namens Nyruk als Com…
+description: Nyrella ist eine Faery – nach dem Daggerheart-Regelwerk eher eine Pixie
+  als eine Elfe, aber nicht so klein wie eine gewöhnliche Pixie. Sie…
 tags:
 - characters
 timestamp: '2026-08-04T00:00:00Z'
 id: CHAR_NYRELLA
 ---
 
-### Nyrella
+## Überblick
 
-#### Überblick
+Nyrella ist eine **Faery** – nach dem Daggerheart-Regelwerk eher eine Pixie als eine Elfe, aber nicht so klein wie eine gewöhnliche Pixie. Sie tritt als kleine geflügelte Fee mit schönen, aber nicht zerbrechlichen Flügeln auf und bewegt sich oft auf dem Rücken ihres Eisbären-Begleiters **[Nyruk](/npcs/nyruk.md)** fort. Sie ist eine **Waldläuferin** (Rangerin) und Naturmagierin, die vor allem mit Bögen und Eismagie kämpft und sich immer wieder als aufmerksame Späherin der Gruppe nützlich macht. In den Sessions wird sie mehrfach als Fee, Waldläuferin, Fernkämpferin und Naturmagierin beschrieben; die Kampagnen-Festlegung grenzt sie klar von einer Elfe ab.
 
-Nyrella ist eine **Faery** (eine Pixie-Art, jedoch größer als eine gewöhnliche Pixie) und eine **Rangerin** mit einem **Eisbären namens [Nyruk](/npcs/nyruk.md)** als Companion. Sie ist eine Freeborn-Fairy-Rangerin, die mit ihrem Eisbären als unzertrennliches Duo unterwegs ist. Ihr Einfluss ist die „Eiselfe": Sie sieht cool und mystisch aus, als stamme sie aus der Arktis, und wird von Schneeflocken umgeben, die um sie herumwirbeln. Sie kämpft mit einem Bogen, einer Handcrossbow und Eispfeilen und nutzt den Zauber *Vicious Entangle*, um Gegner mit Ranken zu fesseln. Nyrella ist naturverbunden, neugierig, emotional und zeigt eine ausgeprägte Fürsorge für ihre Mitstreiter und die Schwachen.
+Nyrella gehört zur Heldengruppe um Rotunas und entwickelt im Verlauf der Kampagne eine starke Bindung sowohl zur Gruppe als auch zu den Flüchtlingen im Lager. Ihre Persönlichkeit wandelt sich von einer anfangs schnippischen, neugierigen Fee zu einer empathischen, aber später sichtlich mitgenommenen Kämpferin, die mit Verlusten und Traumata ringt.
 
-#### Rolle in der Kampagne
+## Rolle in der Kampagne
 
-Nyrella ist eine zentrale Spielerfigur der Gruppe. Sie ist die **Fernkämpferin** und **Unterstützerin** im Kampf, die mit präzisen Pfeilen und Rankenzaubern Gegner aufhält und Verbündete rettet. Sie übernimmt wiederholt die Rolle der **Beschützerin der Zivilbevölkerung**: Sie schlägt vor, Dorfbewohner mit dem Schiff zu evakuieren, verteilt Gold an [Flüchtlinge](/factions/fluechtlinge.md), bleibt bei den Dorfbewohnern, um ihre Sicherheit zu gewährleisten, und trägt maßgeblich zur Verbesserung der Stimmung und Zusammenarbeit zwischen Banditen und Flüchtlingen im Lager bei. Sie ist der **moralische Kompass** der Gruppe, der Entscheidungen hinterfragt und Mitgefühl zeigt. Sie ist eine wichtige Stütze im Kampf und wird von der Gruppe wiederholt gelobt.
+Nyrella ist eine zentrale Spielerfigur und nimmt in vielen Kämpfen die Rolle der **Fernkämpferin und Naturmagierin** ein. Sie fliegt als Späherin voraus, verschafft der Gruppe Lagebilder und schaltet Gegner aus der Distanz aus. Mit ihrem Bogen, ihrer Handarmbrust und ihrer Eismagie unterstützt sie die Gruppe in nahezu allen größeren Auseinandersetzungen.
 
-#### Wichtige Merkmale
+Daneben übernimmt sie wiederholt die Aufgabe, Schwächere zu schützen: Sie schlägt schon früh vor, Dorfbewohner zu evakuieren, verteilt später Gold an [Flüchtlinge](/factions/fluechtlinge.md), errichtet schützende Ranken-Barrieren und bleibt zeitweise sogar mit Nyruk bei den Flüchtlingen, um deren Sicherheit zu gewährleisten. Sie trägt aktiv zur Gemeinschaft im Lager bei und hadert später mit der Frage, wo sie hingehört – zur Gruppe oder zu den Menschen, die sie zurücklassen müsste.
 
-**Fähigkeiten:**
-- **Fernkampf:** Nyrella kämpft mit einem Bogen und einer Handcrossbow. Sie schießt präzise Pfeile und erzielt kritische Treffer mit Eispfeilen.
-- **Magie:** Sie nutzt den Zauber *Vicious Entangle*, um Gegner mit Ranken zu fesseln, Brücken zu stützen oder Verbündete aus Gefahren zu ziehen. Sie kann eiserne Ranken erschaffen, um den Vormarsch von Untoten zu stoppen. Sie setzt Eiszapfen ein, um mehrere Ghule festzusetzen.
-- **Rangers Hope:** Sie nutzt diesen Fähigkeitswert für Mehrfachangriffe.
-- **Naturverbundenheit:** Sie spricht mit Pflanzen und versucht, die Natur zu verstehen.
-- **Artefakt:** Sie nimmt ein Artefakt, eine schwebende Kugel, an sich und entdeckt, dass es Illusionen erzeugen kann.
+Emotional ist Nyrella eine der Figuren, die am stärksten sichtbar unter den Ereignissen leidet. Nach dem Verlust von Cookie trauert sie tief, entwickelt später posttraumatische Symptome und spricht ihre Angst aus, ihre neue Familie zu verlieren. Zugleich ist sie eine moralische Stimme in der Gruppe, die Konflikte offen anspricht und ihre eigenen Zerrissenheit benennt.
 
-**Auftreten und Wesenszüge:**
-- **Äußeres:** Nyrella hat zerbrechlich wirkende Flügel, die aber nicht zerbrechlich sind. Sie wird von Schneeflocken umgeben, die sich auch auf die Schultern anderer legen können. Sie ist eine Fee, aber nicht so klein wie eine gewöhnliche Pixie.
-- **Wesen:** Sie ist neugierig, emotional und fürsorglich. Sie zeigt Mitgefühl mit Flüchtlingen und ist besorgt um ihre Kameraden. Sie ist misstrauisch gegenüber Fremden wie [Hendrik](/npcs/hendrik.md) oder der [Gilde](/factions/gilde_von_ehrenfels.md). Sie ist lernfähig und zeigt sich als mutig, wenn sie ihren Bären verteidigt oder sich einem Riesen entgegenstellt.
-- **Trauma:** Sie leidet unter PTSD, was sich in emotionalen Ausbrüchen und Tränen während der Schlacht äußert. Ihre Tränen gefrieren zu Schneeflocken, die sich um ihren Pfeil legen.
-- **Persönliche Entwicklung:** Sie ist zunächst quirky und fröhlich, wird aber nach den Ereignissen um [Lindo Laut](/characters/lindo_laut.md) zurückgezogen und distanziert. Sie zeigt sich als verletzlich, wenn sie um ihre neue Familie fürchtet.
+## Wichtige Merkmale
 
-#### Beziehungen und Verbindungen
+### Fähigkeiten und Kampfstil
 
-- **Nyruk ([Eisbär](/npcs/eisbaer.md)):** Ihr treuer Companion und Seelentier. Er ist ihr ständiger Begleiter, der sie beschützt und auf dem sie reitet. Er ist sehr liebebedürftig und verteidigt sie, indem er sich zwischen sie und andere stellt.
-- **Lindo Laut:** Sie hat eine enge, aber komplizierte Beziehung zu ihm. Sie versucht, ihn zu retten, und ist später schockiert über seine Verwandlung, fühlt sich betrogen und stellt die Gruppe zur Rede. Sie zeigt aber auch Mitgefühl für sein Opfer und wird von ihm beruhigt, wenn sie um ihre neue Familie fürchtet.
-- **[Dodo](/characters/dodo.md):** Sie rettet ihn mit einem Rankenzauber aus einer Grube und besprüht dabei versehentlich die Gruppe mit Schlamm.
-- **[Rotunas](/characters/rotunas.md):** Sie ist misstrauisch gegenüber dem Gnoll, der Rotunas behandelt, und fragt ihn nach seinen Erfahrungen mit dem Zurücklassen von Menschen. Sie freut sich, ihn wiederzusehen, und bemerkt seine Veränderung.
-- **Lunara:** Sie freundet sich schnell mit Lunara an und nimmt sie unter ihre Fittiche.
-- **[Cookie](/characters/cookie.md):** Sie trauert um Cookie, der gestorben ist.
-- **Flüchtlinge:** Sie hat eine enge Bindung zu den Flüchtlingen, denen die Gruppe geholfen hat. Sie verteilt Gold an sie, erhält dafür einen Glücksbringer mit einer Lebensrune und hilft ihnen in der [Casa de la Cookie](/locations/casa_del_cookie.md). Sie verabschiedet sich von ihnen, um sich auf die Gruppe zu konzentrieren.
-- **Hal:** Sie beschützte die Dorfbewohner mit einem Rankenzauber, als Hal drohte.
+Nyrellas Markenzeichen sind ihre **Eis- und Naturmagie**, besonders der Zauber **Vicious Entangle**. Sie nutzt ihn in unterschiedlichen Situationen:
 
-#### Chronologie
+- auf dem [Schlachtfeld](/locations/schlachtfeld.md), um mehrere Gegner gleichzeitig mit Eisranken zu fesseln und zu zerschmettern,
+- zum Schutz von Dorfbewohnern, indem sie Dornenranken als Deckung vor Pfeilen errichtet,
+- zum Stabilisieren einer Brücke,
+- um Verbündete aus Gefahr zu ziehen, etwa als sie Dodo mit Ranken aus einer Grube rettet,
+- später als „eiserne Ranken“, die sie als Barriere zwischen Untoten und den Verteidigern entstehen lässt.
 
-- **Session 2025-07-29:** Nyrella wird als Freeborn-Fairy-Rangerin mit ihrem Eisbären Nyruk vorgestellt. Sie wirkt *Vicious Entangle*, um Gegner zu fesseln, und schlägt vor, die Dorfbewohner mit dem Schiff zu evakuieren.
-- **Session 2025-08-12:** Sie ist misstrauisch gegenüber Hendrik und beobachtet die Frau, um deren Stress zu erkennen. Sie setzt Eiszapfen ein, um mehrere Ghule festzusetzen, und nutzt ihre Erfahrung als Frostkind. Sie ist neugierig und spricht die geisterhafte Kreatur an, obwohl Hendrik es verbietet.
-- **Session 2025-08-20:** Sie verteidigt ihren Bären Nyruk gegenüber dem Riesen und zeigt keine Angst vor Lindo Laut. Sie versucht, Lindo Laut zu retten, indem sie einen Heiltrank einsetzt, der jedoch absorbiert wird. Sie nutzt ihren Zauber *Vicious Entangle*, um die Brücke zu stützen.
-- **Session 2025-09-02:** Sie kämpft mit ihrer Handcrossbow und nutzt Rangers Hope für Mehrfachangriffe. Sie wird von einem mächtigen Gegner angegriffen und in die Flammen gestoßen, überlebt aber schwer verletzt. Sie ist emotional und besorgt um ihre Kameraden.
-- **Session 2025-09-06:** Sie wird nicht mitteleportiert und kümmert sich um die Tiere. Am Ende der Session wird sie auf der anderen Seite des [Portals](/locations/portal.md) gesehen.
-- **Session 2025-09-09:** Sie schießt präzise Pfeile und versucht, die Untoten mit Eis zu entangeln, was aber nicht funktioniert. Sie entdeckt die Statuen und die [Zwerge](/factions/zwerge.md) in der [Kathedrale](/locations/kathedrale.md). Sie belauscht die Zwerge und erfährt von der Sprengfalle. Sie hilft, die Untoten während der Flucht mit Pfeilen zurückzuhalten.
-- **Session 2025-09-17:** Sie ist misstrauisch gegenüber der Gilde und zeigt Mitgefühl mit den Flüchtlingen. Sie verteilt Gold an die Flüchtlinge und erhält dafür einen Glücksbringer mit einer Lebensrune. Sie ist aufgeregt über die Idee, eine eigene Siedlung zu gründen.
-- **Session 2025-09-23:** Sie ist misstrauisch gegenüber dem Gnoll, der Rotunas behandelt. Sie kundschaftet mit Cookie das [Banditenlager](/locations/banditenlager_der_silberkerne.md) aus und beobachtet einen Raben, der die Burg verlässt. Sie schreibt eine Nachricht und schickt sie mit [Günther](/npcs/katze_ajani_guenther.md). Im Kampf gegen die Untoten tötet sie mehrere mit ihrem Bogen und wirkt *Vicious Entangle*. Sie versucht, den Anführer der Untoten mit einem Pfeil zu treffen, scheitert aber zunächst, trifft ihn dann aber mit Unterstützung von Lindo Laut.
-- **Session 2025-09-30:** Sie beschützte die Dorfbewohner mit einem Rankenzauber, als Hal drohte. Sie bietet an, mit Nyruk bei den Dorfbewohnern zu bleiben, um ihre Sicherheit zu gewährleisten. Sie ist emotional berührt von der Feier und vermisst ihre Familie.
-- **Session 2025-11-18:** Sie trauert um Cookie und ist betrunken. Sie freundet sich schnell mit Lunara an und nimmt sie unter ihre Fittiche. Sie führt eine Zirkusvorstellung mit Nyruk auf, um die Stimmung zu heben. Sie ist eine anerkannte Trinkerin und trinkt [Kornklatscher](/items/kornklatscher.md).
-- **Session 2026-01-13:** Sie ist im Lager geblieben und hat maßgeblich zur Verbesserung der Stimmung und Zusammenarbeit zwischen Banditen und Flüchtlingen beigetragen. Sie ist besorgt, das Lager zu verlassen, und fragt Rotunas nach seinen Erfahrungen mit dem Zurücklassen von Menschen. Im Kampf unterstützt sie aus der Ferne mit Eispfeilen und lässt ihren Bären Nyruk taunten, was jedoch ignoriert wird.
-- **Session 2026-01-20:** Sie leidet unter PTSD, kämpft aber dennoch tapfer. Sie erschafft eiserne Ranken, um den Vormarsch der Untoten zu stoppen, und feuert einen astralen Pfeil auf [Belorus](/npcs/belorus.md), der dessen Rüstung beschädigt. Sie zeigt große emotionale Verletzlichkeit, als sie um ihre neue Familie fürchtet, und wird von Lindo Laut beruhigt. Sie ist eine wichtige Unterstützung im Kampf und wird von der Gruppe gelobt.
-- **Session 2026-02-11:** Sie rettet Dodo mit einem Rankenzauber aus einer Grube und besprüht dabei versehentlich die Gruppe mit Schlamm. Sie ist schockiert über [Lindo Lauts Verwandlung](/events/lindo_lauts_verwandlung.md) und stellt die Gruppe zur Rede, da sie sich betrogen fühlt. Sie zeigt sich als moralischer Kompass der Gruppe.
-- **Session 2026-02-24:** Sie ist zurückgezogen und distanziert, da sie von Lindo Lauts Taten verletzt wurde. Sie zeigt Mitgefühl für Lindo Lauts Opfer und versucht, die Natur zu verstehen, indem sie mit Pflanzen spricht. Im Kampf erweist sie sich als stark, indem sie einen kritischen Treffer mit einem Eispfeil landet. Sie nimmt das Artefakt, eine schwebende Kugel, an sich und entdeckt, dass es Illusionen erzeugen kann. Sie ist besorgt um die Sicherheit der Gruppe und stimmt zu, den Gang zu sprengen, um die Kreaturen einzusperren.
-- **Session 2026-03-24:** Sie hat sich von den Flüchtlingen verabschiedet, um sich auf die Gruppe zu konzentrieren. Sie verteidigt die Entscheidungen der Gruppe und kritisiert Rotunas für seine Vorwürfe. Sie ist bereit, Lunaras Plan zu unterstützen, hat aber moralische Bedenken wegen der [Silberkerne](/factions/silberkerne.md).
-- **Session 2026-08-04:** Sie hilft in der Casa de la Cookie den Flüchtlingen. Es geht ihr gut und sie baut die Siedlung aus.
+Ihre Eismagie zeigt sich auch in **Eispfeilen**, die sie mit ihrem Bogen verschießt. Ein besonders wirkungsvoller Angriff ist ein **astraler Pfeil**, den sie im Kampf gegen Belorus einsetzt; er schwächt dessen Rüstung und senkt die Schwierigkeit für die Gruppe. Zusätzlich verfügt sie über ein **Lackbänder-Feature**, mit dem sie verbündete Bogenschützen unterstützt.
 
-#### Offene Fragen
+Nyrella kann **fliegen** und wird deshalb regelmäßig als Späherin eingesetzt. Sie nutzt **Ranger’s Hope** für einen Multishot und hat die Erfahrung **Frostkind**, mit der sie ihre Angriffswürfe verbessert. Die Eigenschaft **„Wut der Unterdrückten“** prägt ihre Entscheidungen und erklärt ihr starkes Mitgefühl für die Schwächeren.
 
-- Es ist unklar, was genau mit ihrer Familie passiert ist, die sie vermisst.
-- Die Natur und Herkunft des Artefakts (die schwebende Kugel), das Illusionen erzeugen kann, sind noch nicht vollständig geklärt.
+Ihr Begleiter **Nyruk** ist ein Eisbär, mit dem sie eine enge Verbindung teilt. Sie reitet auf ihm, spürt mit seiner Hilfe Gefahren auf und setzt ihn im Kampf gezielt ein, etwa um Gegner zu packen oder als Ablenkung. Nyruk beschützt Nyrella besonders dann, wenn sie emotional labil ist, und stellt sich in solchen Phasen immer wieder schützend zwischen sie und andere.
 
-#### Belege
+### Auftreten
 
-[P-16] Session 2025-07-29 @ 00:00:39 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
-[P-17] Session 2025-08-12 @ 00:12:09 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)
-[P-18] Session 2025-08-20 @ 00:19:20 (https://www.youtube.com/watch?v=-XbO3FLSL_I)
-[P-19] Session 2025-09-02 @ 00:09:27 (https://www.youtube.com/watch?v=TLZOH7TlGhk)
+Nyrella wird als kleine Fee mit **Schneeflocken-Motiv** beschrieben. Ihre Flügel sind schön, aber ausdrücklich nicht zerbrechlich. Sie trägt Bögen und eine Handarmbrust, fliegt im Kampf oft hoch über das Geschehen und sitzt in ruhigeren Momenten häufig auf Nyruks Rücken. In besonders belastenden Momenten **werden ihre Tränen zu kleinen Schneeflocken**, bevor sie den Boden erreichen – ein Detail, das ihre Verbindung zur Kälte unterstreicht.
+
+### Wesenszüge
+
+Zu Beginn der Kampagne wirkt Nyrella **friedlich gestimmt**, oft **schnippisch** und **neckisch**. Sie ist neugierig, misstrauisch gegenüber Fremden und beobachtet Mimik genau, etwa bei [Hendrik](/npcs/hendrik.md), dem Anführer der Bergnomaden. Mit der Zeit zeigt sie immer mehr **Empathie**: Sie tröstet Flüchtlinge, verteilt Gold, wird von Kindern bewundert und nimmt Lunara Velora unter ihre Obhut, weil beide ihre Familien verloren haben.
+
+Nach mehreren schweren Verlusten verändert sich ihr Auftreten. Sie zieht sich emotional zurück, wirkt distanziert und in sich gekehrt. In der Schlacht gegen Belorus zeigt sie Symptome einer **posttraumatischen Belastung**; ihr Blick wandert fassungslos zwischen Dorfbewohnern und Kampfgeschehen hin und her. Sie spricht offen von ihrer Angst, ihre neue Familie zu verlieren, und stellt später die Frage, ob die Gruppe überhaupt noch eine Familie ist.
+
+## Beziehungen und Verbindungen
+
+- **Nyruk**: Nyrellas ständiger Begleiter und engster tierischer Gefährte. Er trägt sie, kämpft an ihrer Seite, erspürt Gefahren und beschützt sie in emotional schwierigen Phasen.
+- **[Cookie](/characters/cookie.md)**: Nyrella verehrt Cookie als starke Kriegerin und versucht, deren Eiszauber nachzuahmen. Nach Cookies Tod trauert sie tief und behält ihr Andenken in Ehren.
+- **[Dodo](/characters/dodo.md)**: Nyrella rettet Dodo mit Ranken aus einer Grube und vertraut auf seine Anweisungen. Die beiden arbeiten im Kampf mehrfach zusammen.
+- **[Esterossa](/characters/esterossa.md)**: Nyrella zeigt großes Vertrauen in Esterossa, auch wenn sie der neuen [Gilde](/factions/gilde_von_ehrenfels.md) misstraut. Esterossa heilt später den gestressten Nyruk.
+- **[Lindo Laut](/characters/lindo_laut.md)**: Anfangs neckt Nyrella Lindo Laut, unterstützt ihn aber im Ernstfall. Sie fliegt gemeinsam mit ihm und hilft ihm im Kampf. Als sie von seiner Verwandlung und den damit verbundenen Gefahren erfährt, bricht sie emotional in Panik aus.
+- **[Rotunas](/characters/rotunas.md)**: Nyrella unterstützt Rotunas’ Idee einer eigenen Siedlung, gerät jedoch später mit ihm aneinander, weil sie seinen Vorwurf als unfair empfindet. Sie fragt ihn persönlich, ob er schon einmal Menschen zurücklassen musste, die ihm wichtig waren.
+- **[Lunara Velora](/characters/lunara_velora.md)**: Da beide ihre Familien verloren haben, nimmt Nyrella Lunara unter ihre Obhut und bietet später auch Verständnis und Hilfe für Lunaras Bruder an.
+- **Flüchtlinge und Lagerbewohner**: Nyrella zeigt große Empathie für die Flüchtlinge, verteilt Gold und erhält von einer [Zwergin](/npcs/zwergin.md) einen [Glücksbringer-Stein](/items/gluecksbringer_stein.md) mit der Rune für „Leben“. Sie baut enge Bindungen auf, fühlt sich dem Lager zugehörig und hadert mit der Entscheidung, es wieder zu verlassen. Gegenüber [Roland](/npcs/roland.md), dem Sprecher des Lagers, ist sie freundlich und respektvoll.
+- **Silberkerne und Hal**: Nyrella gerät in einen moralischen Konflikt, als die Gruppe erwägt, die [Silberkerne](/factions/silberkerne.md) zu unterstützen. Ihr Freund **Hal** liegt ihr sehr am Herzen und ist Teil der Silberkerne; sie wollte sich aus dem Konflikt eigentlich heraushalten, stimmt aber schließlich dem [Abyssalis](/domains/splitterwelt.md)-Plan zu.
+- **[Hendrik](/npcs/hendrik.md)**: Dem älteren Anführer der Bergnomaden begegnet Nyrella zu Beginn mit Misstrauen und beobachtet seine Mimik aufmerksam.
+- **[Belorus](/npcs/belorus.md)**: Im Kampf gegen den schwarzen Paladin schießt Nyrella einen astralen Pfeil auf ihn und trägt so dazu bei, seine Verteidigung zu schwächen.
+- **[Dormak](/npcs/dormak.md)**: Dormak packt Nyrella in einem Kampf magisch, quetscht sie zusammen und stößt sie durch eine Flammenwand, was sie fast das Leben kostet.
+- **[Ajani](/npcs/nairog_peri_ajani.md)**: Die Katze von Esterossa, mit der Nyrella spricht und deren wahren Namen sie erfährt.
+- **[Vasul](/deities/vharzul.md)**: [Vasul](/deities/vharzul.md) kann Nyrella bei einem Teleport nicht mitnehmen, weshalb sie als Aufpasserin für die Tiere in der normalen Welt zurückbleibt.
+- **[Casa de la Cookie](/locations/casa_del_cookie.md)**: Nach dem Tod von Cookie hilft Nyrella beim Wiederaufbau der „Casa de la Cookie“ für Flüchtlinge mit.
+
+## Chronologie
+
+**Frühe Sessions (Juli/August 2025):** Nyrella erscheint als friedliche Fee und Waldläuferin mit dem Eisbären Nyruk. Sie warnt die Gruppe vor der okkulten Anziehung, die die als [Kuatau](/npcs/kuatau_anfuehrer_priester.md) bezeichneten Fischwesen auszeichnet, und schlägt vor, die Dorfbewohner zu evakuieren. Beim Aufeinandertreffen mit Hendrik bleibt sie misstrauisch und beobachtet ihn genau. Im Kampf ahmt sie erstmals Cookies Eiszauber nach und schafft es, alle vier angreifenden Kreaturen gleichzeitig zu fesseln. Wenig später hält sie einen zweiköpfigen Riesen mit Eismagie fest und stabilisiert eine [Brücke vor der Kapelle](/locations/bruecke_vor_der_kapelle.md). Ihr Bär Nyruk wird während des Aufstiegs gestresst, wird aber von Esterossa geheilt.
+
+**September 2025:** Während eines Kampfes wird Nyrella von Dormak magisch gepackt, zusammengequetscht und durch Lindo Lauts Flammenwand gestoßen. Sie kann nicht mehr fliegen und liegt schwer verletzt am Boden; nach der Explosion ist sie reglos, wird aber durch einen Wunsch geheilt. Als Vasul die Gruppe in eine andere Welt mitnimmt, bleibt Nyrella als Aufpasserin für die Tiere zurück. Später fliegt sie als Späherin voraus, entdeckt [Zwerge](/factions/zwerge.md) in einer Kirche und kämpft mit Bogen und Eismagie; ihre Entangle-Zauber wirken bei Untoten jedoch nicht. Im Flüchtlingslager zeigt sie große Empathie, verteilt Gold, erhält einen Glücksbringer-Stein und unterstützt Rotunas’ Siedlungsidee. Bei der Verteidigung eines Wagens erschießt sie einen Untoten mit einem präzisen Pfeil und hält die Verbindung zur Gruppe, indem sie [Günther](/npcs/katze_ajani_guenther.md) eine Nachricht schickt. Schließlich beschließt sie, mit Nyruk für einige Zeit bei den Flüchtlingen zu bleiben, um deren Sicherheit zu gewährleisten.
+
+**November 2025 bis Januar 2026:** Nyrella trifft die Gruppe überraschend wieder und trauert tief um Cookie. Sie trinkt mehrere [Kornklatscher](/items/kornklatscher.md), nimmt Lunara Velora unter ihre Obhut und führt mit Nyruk eine Zirkus-Performance auf, die die Stimmung hebt. In den folgenden Wochen bleibt sie im Lager, trägt zur Gemeinschaft bei und ist hin- und hergerissen zwischen ihrer Zugehörigkeit zur Gruppe und den Bindungen im Camp. In der Schlacht gegen Belorus zeigt sie starke posttraumatische Symptome; ihre Tränen werden zu Schneeflocken. Sie errichtet eiserne Ranken als Barriere und schießt einen astralen Pfeil auf Belorus, der dessen Rüstung schwächt.
+
+**Februar bis August 2026:** Nyrella rettet Dodo mit Ranken aus einer Grube und bricht emotional in Panik aus, als sie von Lindo Lauts Verwandlung erfährt. Sie stellt die Frage, ob die Gruppe noch eine Familie ist. Kurz darauf wirkt sie emotional distanziert; Nyruk beschützt sie misstrauisch. Sie schleicht sich an Banditen heran, tötet den Anführer der Silberbiester mit einem kritischen Eispfeil und kommuniziert mit Pflanzen und einem großen Muttertier, um zu verstehen, dass die Biester nur ihre Jungen beschützen. Dabei nimmt sie ein Artefakt an sich und aktiviert es versehentlich, wodurch sie drei Kopien von sich selbst erschafft. In der folgenden Session ist sie nicht anwesend. Ende März hat sie sich von Flüchtlingen und Räubern zurückgezogen, um sich stärker auf die Gruppe zu konzentrieren; sie gerät mit Rotunas aneinander, zeigt Verständnis für Lunaras Bruder und stimmt schließlich dem Abyssalis-Plan zu. Im August 2026 geht es ihr gut; sie hilft bei der Casa de la Cookie beim Wiederaufbau für Flüchtlinge.
+
+## Offene Fragen
+
+- Worum handelt es sich bei dem **Artefakt**, das Nyrella in der [Silbergruft](/locations/silbergruft.md) an sich nahm und versehentlich aktivierte, wodurch sie drei Kopien von sich erschuf? Die Belege geben keine Auskunft über Herkunft, Namen oder Verbleib des Artefakts.
+- Was geschah mit den **drei Kopien**, die Nyrella durch die versehentliche Aktivierung erschuf? Ihr weiteres Schicksal wird in den Belegen nicht thematisiert.
+- Wer oder was genau war der **Wunsch**, durch den Nyrella nach der Explosion im September 2025 geheilt wurde? Die Belege nennen nur „den Wunsch“, ohne die Quelle oder die genauen Umstände zu erklären.
+- Nyrella erwähnt mehrfach ihre **verlorene Familie**, doch konkrete Angaben zu deren Identität, Schicksal oder Verlust bleiben in den Belegen aus.
+
+# Belege
+
+[P-16] Session 2025-07-29 @ 00:28:40 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
+[P-17] Session 2025-08-12 @ 01:19:04 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)
+[P-18] Session 2025-08-20 @ 00:21:36 (https://www.youtube.com/watch?v=-XbO3FLSL_I)
+[P-19] Session 2025-09-02 @ 02:03:13 (https://www.youtube.com/watch?v=TLZOH7TlGhk)
 [P-20] Session 2025-09-06 @ 00:05:52 (https://www.youtube.com/watch?v=vo1xnyLQDJk)
-[P-21] Session 2025-09-09 @ 00:19:41 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
-[P-22] Session 2025-09-17 @ 00:21:34 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
-[P-23] Session 2025-09-23 @ 00:04:02 (https://www.youtube.com/watch?v=DGzfqVigS0g)
-[P-24] Session 2025-09-30 @ 00:49:23 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[P-21] Session 2025-09-09 @ 00:19:56 (https://www.youtube.com/watch?v=Zl0qfuI6Goc)
+[P-22] Session 2025-09-17 @ 01:00:00 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
+[P-23] Session 2025-09-23 @ 01:30:24 (https://www.youtube.com/watch?v=DGzfqVigS0g)
+[P-24] Session 2025-09-30 @ 00:50:38 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
 [P-30] Session 2025-11-18 @ 00:06:45 (https://www.youtube.com/watch?v=w__ahowb9p0)
-[P-33] Session 2026-01-13 @ 00:12:17 (https://www.youtube.com/watch?v=w4LB1s9_3rs)
+[P-33] Session 2026-01-13 @ 00:31:07 (https://www.youtube.com/watch?v=w4LB1s9_3rs)
 [P-34] Session 2026-01-20 @ 00:23:48 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
 [P-36] Session 2026-02-11 @ 00:23:34 (https://www.youtube.com/watch?v=3C8SD-cyNPM)
 [P-38] Session 2026-02-24 @ 00:05:16 (https://www.youtube.com/watch?v=WOFArbwDDIQ)
-[P-43] Session 2026-03-24 @ 00:09:29 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
+[P-39] Session 2026-03-03 @ 00:02:28 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
+[P-43] Session 2026-03-24 @ 01:54:02 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)
 [S1-02-A] Session 2026-08-04 @ 01:44:16 (https://www.youtube.com/watch?v=qRj2t3wQHfs)

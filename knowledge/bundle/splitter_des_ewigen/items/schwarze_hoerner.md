@@ -1,8 +1,8 @@
 ---
 type: Item
 title: Schwarze Hörner
-description: Zwei schwarze Hörner, die von der besiegten Kreatur in der Splitterwelt
-  zurückbleiben. Sie werden von Dodo und Brim aufgenommen und könnten…
+description: Nach dem Sieg über die Schattenkreatur bleiben zwei schwarze Hörner zurück.
+  Dodo und Brim stecken sich jeweils eines ein. Sie könnten als T…
 tags:
 - items
 timestamp: '2026-03-10T00:00:00Z'
@@ -10,8 +10,8 @@ id: ITEM_SCHWARZE_HOERNER
 subtype: Sonstiges
 ---
 
-Zwei schwarze Hörner, die von der besiegten [Kreatur in der Splitterwelt](/npcs/kreatur_in_der_splitterwelt.md) zurückbleiben. Sie werden von [Dodo](/characters/dodo.md) und [Brim](/characters/brim.md) aufgenommen und könnten als Trophäe oder für Rüstungsverbesserungen dienen.
+Nach dem Sieg über die [Schattenkreatur](/npcs/schattenkreatur.md) bleiben zwei schwarze Hörner zurück. [Dodo](/characters/dodo.md) und [Brim](/characters/brim.md) stecken sich jeweils eines ein. Sie könnten als Trophäe oder Material dienen.
 
 # Belege
 
-[P-40] Session 2026-03-10 @ 01:52:00 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)
+[P-40] Session 2026-03-10 @ 01:55:02 (https://www.youtube.com/watch?v=Kr9_AC2XtOw)

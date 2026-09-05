@@ -1,15 +1,15 @@
 ---
 type: NPC
 title: Stavre
-description: Stavre ist ein Soldat, der die Gruppe zum Dungeon begleitet. Er gibt
-  Informationen über den Dungeon und frühere Gruppen und öffnet das Tor.…
+description: 'Stavre, ein Soldat und Führer, begleitet die Gruppe zum Dungeon und
+  beantwortet Fragen: Es gibt zwei Wege, den Dungeon zu schaffen (Überleb…'
 tags:
 - npcs
 timestamp: '2025-10-28T00:00:00Z'
 id: NPC_STAVRE
 ---
 
-Stavre ist ein Soldat, der die Gruppe zum Dungeon begleitet. Er gibt Informationen über den Dungeon und frühere Gruppen und öffnet das Tor. Er zeigt Respekt vor der Gruppe.
+Stavre, ein Soldat und Führer, begleitet die Gruppe zum Dungeon und beantwortet Fragen: Es gibt zwei Wege, den Dungeon zu schaffen (Überleben oder Vernichtung der Kreatur), und frühere Gruppen sind gescheitert. Er öffnet das Tor mit einem merkwürdigen [Schlüssel](/items/magischer_schluessel.md) und verneigt sich respektvoll, bevor er es hinter ihnen schließt.
 
 # Belege
 

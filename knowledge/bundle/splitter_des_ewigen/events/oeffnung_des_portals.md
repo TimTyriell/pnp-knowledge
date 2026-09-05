@@ -1,8 +1,8 @@
 ---
 type: Event
 title: Öffnung des Portals
-description: Die Kreatur öffnet ein Portal aus Abyssalis, durch das die Gruppe entkommen
-  kann.
+description: Huludan öffnet ein Portal zur materiellen Ebene, nachdem er den Stein
+  aktiviert. Das Portal erscheint als helle Platte im Nebenraum. Er öff…
 tags:
 - events
 timestamp: '2026-05-13T00:00:00Z'
@@ -10,7 +10,7 @@ id: EVENT_OEFFNUNG_DES_PORTALS
 subtype: Ritual
 ---
 
-Die Kreatur öffnet ein [Portal](/locations/portal.md) aus [Abyssalis](/domains/splitterwelt.md), durch das die Gruppe entkommen kann.
+[Huludan](/deities/huludan.md) öffnet ein Portal zur materiellen Ebene, nachdem er den Stein aktiviert. Das Portal erscheint als helle Platte im Nebenraum. Er öffnet auch ein dunkles Portal zu seinem Meister. Das Portal bleibt am Ende offen.
 
 # Belege
 
