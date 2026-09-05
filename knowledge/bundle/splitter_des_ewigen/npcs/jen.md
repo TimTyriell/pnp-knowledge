@@ -1,11 +1,11 @@
 ---
 type: NPC
 title: Jen (Schreiberin)
-description: Jen ist eine menschliche Schreiberin, der die Gruppe nahe der Kapelle
-  begegnet. Sie hält sich im Reich eines Gottes auf und macht dort Aufz…
+description: Jen ist eine menschliche Schreiberin, die die Gruppe in Session 2026-06-10
+  nahe einer Kapelle an einem Tempeleingang antrifft. Sie macht si…
 tags:
 - npcs
-timestamp: '2026-06-16T00:00:00Z'
+timestamp: '2026-06-10T00:00:00Z'
 id: NPC_JEN
 aliases:
 - Jen
@@ -13,43 +13,45 @@ aliases:
 
 ## Überblick
 
-Jen ist eine menschliche Schreiberin, der die Gruppe nahe der [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) begegnet. Sie hält sich im Reich eines Gottes auf und macht dort Aufzeichnungen. Sie zeigt sich distanziert, warnt die Gruppe vor dem nahen Tod und nennt auf Nachfrage ihren Namen.
+Jen ist eine menschliche Schreiberin, die die Gruppe in Session 2026-06-10 nahe einer [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) an einem Tempeleingang antrifft. Sie macht sich Notizen, mustert die Ankömmlinge und warnt sie vor dem Tod, verweigert jedoch jede Hilfe.
 
 ## Rolle in der Kampagne
 
-Jen begegnet der Gruppe einmalig am Tempeleingang. Sie macht sich Notizen und schenkt den Ankommenden zunächst keine Beachtung, mustert sie aber auf Ansprache hin von oben bis unten. Auf die Suche nach einem Bruder reagiert sie mit Unverständnis:
-
-> „Wenn ihr den Bruder von irgendwem sucht, keine Ahnung, wer das sein soll. Ihr seid ja ganz schön weit in das Reich eines Gottes vorgedrungen.“
-
-Sie verweigert jede Hilfe, warnt die Gruppe stattdessen, dass sie „hier direkt um die Ecke dem Tod entgegenblickt“, und wendet sich wieder ihren Aufzeichnungen zu. Ihre Rolle ist die einer distanzierten Beobachterin oder Protokollantin an einem gefährlichen Ort, nicht die einer Verbündeten.
+Jens Rolle bleibt auf diese eine Begegnung beschränkt. Sie liefert keine Informationen, hilft nicht bei der Suche nach dem Bruder von [Lunara Velora](/characters/lunara_velora.md) und wird nicht erneut erwähnt. Ihre Bedeutung liegt in der unheilvollen Warnung, mit der sie die Gruppe auf die Gefahr des Ortes hinweist.
 
 ## Wichtige Merkmale
 
-- menschliche Schreiberin
-- macht Notizen und beachtet die Gruppe zunächst nicht
-- mustert die Gruppe eingehend
-- wirkt kühl und ungerührt
-- spricht vom Tod als nahe bevorstehend und unausweichlich
-- äußert: „Viel Glück bei eurem Tod. Eure Seele wird sicherlich gut aufbewahrt.“
-- scheint über das Reich, in dem sie sich befindet, Bescheid zu wissen
-- nennt sich auf Nachfrage „Jen“
+Jen wird als schreibende, distanzierte Figur eingeführt: Sie macht Notizen und schenkt der Gruppe zunächst keine Beachtung. Auf Ansprache dreht sie sich sofort um, mustert alle „von oben bis unten“ und fragt nach ihrem Begehr.
+
+Ihr Auftreten ist fatalistisch und zynisch. Auf die Suche nach dem Bruder entgegnet sie:
+
+> „Wenn ihr den Bruder von irgendwem sucht, keine Ahnung, wer das sein soll.“
+
+Sie warnt die Gruppe:
+
+> „Ihr seid ja ganz schön weit in das Reich eines Gottes vorgedrungen. Wisst ihr denn nicht, dass ihr hier direkt um die Ecke dem Tod entgegenblickt?“
+
+Den Abschied kommentiert sie mit:
+
+> „Viel Glück bei eurem Tod. Eure Seele wird sicherlich gut aufbewahrt.“
+
+Danach wendet sie sich wieder ihren Aufzeichnungen zu. Weitere Fähigkeiten oder eine genauere Tätigkeit sind nicht belegt.
 
 ## Beziehungen und Verbindungen
 
-- **Zur Gruppe:** begegnet ihr, verweigert Hilfe, teilt auf Nachfrage ihren Namen mit.
-- **Zum Ort:** hält sich nahe der Kapelle im Reich eines Gottes auf; sie beschreibt den Ort als weit in das Reich eines Gottes vorgedrungen.
-- Weitere Verbindungen sind nicht bekannt.
+- **[Lindo Laut](/characters/lindo_laut.md):** spricht Jen an und fragt später nach ihrem Namen.
+- **[Lunara Velora](/characters/lunara_velora.md):** sucht ihren Bruder; Jen gibt an, nicht zu wissen, wer dieser sein soll.
+- Zur Kapelle beziehungsweise zum Tempel, an dem sie sich aufhält, ist keine konkrete institutionelle Verbindung belegt.
 
 ## Chronologie
 
-- **Session 2026-06-10:** Die Gruppe trifft Jen am Tempeleingang. Sie dreht sich auf [Lindo Lauts](/characters/lindo_laut.md) Ansprache um und mustert die Gruppe. Auf die Suche nach einem Bruder reagiert sie mit Unverständnis. Sie warnt vor dem nahen Tod; in der Ferne kreischt eine Krähe. Sie will sich wieder ihren Schreibereien widmen. Auf die Nachfrage nach ihrem Namen antwortet sie: „Jen.“ Danach tritt sie nicht mehr in Erscheinung.
+Session 2026-06-10: Die Gruppe erreicht den Tempeleingang. Jen macht abseits Notizen. [Lindo Laut](/characters/lindo_laut.md) spricht sie an, woraufhin sie sich umdreht und die Gruppe mustert. Sie fragt, wer sie seien, reagiert auf die Suche nach [Lunara Veloras](/characters/lunara_velora.md) Bruder mit Unverständnis und warnt vor dem nahen Tod. Während ihrer Worte krechzt in der Ferne eine Krähe. Auf Lindo Lauts Bitte verrät sie ihren Namen: „Jen.“ Danach widmet sie sich wieder ihren Schreibereien.
 
 ## Offene Fragen
 
-- Welche Aufgabe hat Jen als Schreiberin, und für wen macht sie Aufzeichnungen?
-- Um welchen Gott handelt es sich bei dem „Reich eines Gottes“?
-- Wohin geht sie nach der Begegnung, und begegnet sie der Gruppe erneut?
+- Was genau Jen aufzeichnet und in wessen Auftrag sie sich an dem Ort aufhält, bleibt ungeklärt.
+- Auch, was sie mit „Eure Seele wird sicherlich gut aufbewahrt“ meint, wird nicht ausgeführt.
 
-# Belege
+## Belege
 
-[P-53] Session 2026-06-10, 01:11:13, https://www.youtube.com/watch?v=_3tLSiT1tck
+[P-53] Session 2026-06-10 @ 01:11:13 (https://www.youtube.com/watch?v=_3tLSiT1tck)

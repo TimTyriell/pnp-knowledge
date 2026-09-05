@@ -43,7 +43,7 @@ Ihr Auftreten ist selbstsicher, spöttisch und herablassend. Sie nennt die Grupp
 - [Kuatau](/npcs/kuatau_anfuehrer_priester.md): Sie gab ihnen Amulette, die angeblich ein Portal öffnen sollten, und täuschte sie damit.
 - [Breska](/locations/breska.md): Der Angriff auf das Dorf wird mit Landra in Verbindung gebracht; sie hinterließ Schriftrollen mit Hinweisen auf einen Magier in Breska.
 - [Gemata](/locations/gemata.md): Als Auftraggeberin des Goblinangriffs auf Gemata identifiziert; vermutlich zielte sie auf die Katakomben ab.
-- Abisalis: In der [Splitterwelt](/domains/splitterwelt.md) kommuniziert Landra durch einen Schamanen und fordert die Kristallkugel zurück.
+- [Abisalis](/npcs/abisalis_harald.md): In der [Splitterwelt](/domains/splitterwelt.md) kommuniziert Landra durch einen Schamanen und fordert die Kristallkugel zurück.
 
 ## Chronologie
 - **2025-04-15 – Krypta:** Landra erscheint im hinteren Teil einer Krypta, stellt sich vor, schrumpft Dodo und verschwindet, nachdem sie den Altar berührt hat. Sie hinterlässt Schriftrollen mit Hinweisen auf einen gesuchten Magier in Breska.
@@ -61,10 +61,10 @@ Ihr Auftreten ist selbstsicher, spöttisch und herablassend. Sie nennt die Grupp
 - Woher stammt Landra, und was ist ihre genaue Natur als Hexe oder Hag?
 
 ## Belege
-- [1] Session 2025-04-15 @ 01:53:46 (https://www.youtube.com/watch?v=YCpAz_syjaY)
-- [2] Session 2025-04-23 @ 00:04:04 (https://www.youtube.com/watch?v=z3C-bewKqUs)
-- [3] Session 2025-05-14 @ 00:54:14 (https://www.youtube.com/watch?v=5eAEDN5ra-4)
-- [4] Session 2025-06-10 @ 00:31:47 (https://www.youtube.com/watch?v=cLkCu3Iq3y8)
-- [5] Session 2025-07-29 @ 01:50:30 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
-- [6] Session 2026-01-20 @ 01:44:36 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
-- [7] Session 2026-08-25 @ 02:09:55 (https://www.youtube.com/watch?v=1Cjj3OVqiYA)
+[1] Session 2025-04-15 @ 01:53:46 (https://www.youtube.com/watch?v=YCpAz_syjaY)
+[2] Session 2025-04-23 @ 00:04:04 (https://www.youtube.com/watch?v=z3C-bewKqUs)
+[3] Session 2025-05-14 @ 00:54:14 (https://www.youtube.com/watch?v=5eAEDN5ra-4)
+[4] Session 2025-06-10 @ 00:31:47 (https://www.youtube.com/watch?v=cLkCu3Iq3y8)
+[5] Session 2025-07-29 @ 01:50:30 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
+[6] Session 2026-01-20 @ 01:44:36 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
+[7] Session 2026-08-25 @ 02:09:55 (https://www.youtube.com/watch?v=1Cjj3OVqiYA)

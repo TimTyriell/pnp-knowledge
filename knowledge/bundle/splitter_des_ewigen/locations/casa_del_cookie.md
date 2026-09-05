@@ -1,8 +1,8 @@
 ---
 type: Location
 title: Casa del Cookie
-description: Die Casa del Cookie ist ein Anwesen – und inzwischen ein wachsendes kleines
-  Dorf – im Besitz der Heldengruppe. Der Name erinnert an die ver…
+description: Die Casa del Cookie ist das Anwesen der Heldengruppe und dient über weite
+  Strecken der Kampagne als Rückzugsort, später auch als Unterkunft…
 tags:
 - locations
 timestamp: '2026-08-04T00:00:00Z'
@@ -15,60 +15,67 @@ aliases:
 
 ## Überblick
 
-Die Casa del Cookie ist ein Anwesen – und inzwischen ein wachsendes kleines Dorf – im Besitz der Heldengruppe. Der Name erinnert an die verstorbene Gefährtin [Cookie](/characters/cookie.md), die bei dem Turnier ums Leben kam, in dem die Gruppe das Anwesen errang. Die feste Lage ist nordwestlich von [Willauch](/locations/willauch.md). In späteren Berichten wird der Ort zudem als nahe [Ehrenfels](/locations/ehrenfels.md) beschrieben; beide Verortungen gelten in der Kampagne als zutreffend, weil sich die Casa del Cookie innerhalb weniger Monate stark verändert hat – vermutlich unter dem Einfluss dunkler Magie der Hag.
+Die Casa del Cookie ist das Anwesen der Heldengruppe und dient über weite Strecken der Kampagne als Rückzugsort, später auch als Unterkunft für eine gemischte Lagergemeinschaft. Der Name gedenkt der verstorbenen Gefährtin Cookie, die bei dem Turnier, durch das die Gruppe das Anwesen errang, ums Leben kam. Kanonisch liegt die Casa del Cookie nordwestlich von Willauch.
 
-Ursprünglich als einzelnes Anwesen mit einem darunterliegenden Dungeon bekannt, entwickelt sich die Casa del Cookie zu einem beengten, aber wachsenden Zufluchtsort für [Flüchtlinge](/factions/fluechtlinge.md).
+Unter dem Anwesen befindet sich ein Zugang zu einem Dungeon, der von der Gruppe erkundet wird. Im Keller ist ein Schrein des [Thar'Vok](/deities/tarvok_der_erdrichter.md) eingerichtet. Im Lauf der Zeit verändert sich der Ort deutlich: Aus dem zunächst als reines Anwesen beschriebenen Besitz entwickelt sich eine kleine, beengte Siedlung mit mindestens einem zweiten Haus, in der [Flüchtlinge](/factions/fluechtlinge.md) unterkommen und aushelfen. Die Helden besitzen die [Besitzurkunde](/items/besitzurkunde.md) für das dazugehörige Landstück und damit verbundene Nutzungsrechte.
 
 ## Rolle in der Kampagne
 
-Die Casa del Cookie dient der Heldengruppe als Heimatbasis und Rückzugsort. Nach dem Verlust von Cookie ist der Name zugleich ein dauerhaftes Andenken; die Gruppe hat das Anwesen ausdrücklich nach ihr benannt. In der Rückschau betont [Lindo Laut](/characters/lindo_laut.md), das Anwesen sei „ein ganz, ganz wichtiger und tiefer Bestandteil unseres Abenteuers“ – nicht etwas, das die Gruppe einfach bekommen habe.
+Die Casa del Cookie ist ein zentraler Bezugspunkt der Heldengruppe. Sie symbolisiert sowohl Verlust als auch Beständigkeit: Lindo Laut betont ausdrücklich, dass das Anwesen nicht einfach geschenkt wurde, sondern durch heldenhafte Taten in einem schweren Turnier errungen wurde – und dass dabei Cookie, eine der liebsten Mitstreiterinnen, starb. Der Ort trägt ihren Namen und ist damit emotional aufgeladen.
 
-Nach einer vorübergehenden Trennung der Gefährten nutzt Lindo Laut die Casa del Cookie als Rückzugs- und Meditationsstätte. Später wird der Ort zu einem Zufluchtsort für Flüchtlinge, an dem [Nyrella](/characters/nyrella.md) beim Aufbau hilft. Die Helden besitzen die [Besitzurkunde](/items/besitzurkunde.md) für das zugehörige Landstück und haben damit das Recht, in dessen Umkreis Holz zu schlagen und zu jagen.
+Nach dem Rückzug aus dem unter dem Anwesen liegenden Dungeon kehrt die Gruppe hierher zurück und nutzt den Ort als Ausgangs- und Ruhepunkt. Während einer Trennung der Gruppe hält sich Lindo Laut in der Casa del Cookie auf, meditiert dort und empfängt eine bedrohliche Warnung durch [Slix](/npcs/slix_vasul.md). Später wird der Ort zum Schauplatz von Wiederaufbau und Hilfe: Nyrella unterstützt die Flüchtlinge beim Errichten neuer Unterkünfte, und die Casa del Cookie entwickelt sich schrittweise zu einer kleinen, wenn auch beengten Siedlung.
 
 ## Wichtige Merkmale
 
-**Lage und Umgebung:** Die Casa del Cookie liegt nordwestlich von Willauch. In jüngeren Beschreibungen wird sie auch als nahe Ehrenfels bezeichnet. Das Gelände umfasst ein Tal mit Felsvorsprüngen; vom Anwesen aus blickt man ins Tal.
+### Lage und Umgebung
 
-**Beschaffenheit:** Ursprünglich handelte es sich um ein einzelnes Anwesen. Bis zum August 2026 ist ein weiteres Haus errichtet worden. Dennoch schlafen weiterhin viele Bewohner im Freien, und die Unterbringung ist beengt – „zumindest alle sich sehr quetschen“.
+Die Casa del Cookie liegt nordwestlich von Willauch. Einzelne spätere Berichte verorten sie in der Nähe von Ehrenfels; diese abweichende Ortsangabe wird als Teil einer tiefgreifenden Verwandlung des Ortes über die Zeit verstanden. Der Blick von einem Aussichtspunkt fällt in ein Tal; Lindo Laut stützt sich dort an einem Stein ab und schaut hinab. Die Umgebung scheint erhöht zu sein.
 
-**Dungeon:** Unter dem Anwesen befindet sich ein Eingang, der tief in die Erde führt. Der Dungeon ist feucht; der Dschungel hat sich dort ausgebreitet, und in der Luft liegt ein leicht süßlicher, an ältere Blumensträuße erinnernder Geruch, der nicht unangenehm wirkt.
+### Beschaffenheit
 
-**Keller:** Im Keller des Anwesens befindet sich ein Schrein des [Thar'Vok](/deities/tarvok_der_erdrichter.md).
+Das Anwesen verfügt über einen Keller mit einem Schrein des Thar'Vok. Unterhalb des Hauses beginnt ein feuchter Dungeon, in den der Dschungel hineingewachsen ist; die Luft dort ist süßlich, erinnert an einen älteren Blumenstrauß, ohne unangenehm zu wirken.
 
-**Bewohner und Helfer:** Zeitweise lebt die Heldengruppe dort. Lindo Laut meditiert in der Casa del Cookie. Nyrella hilft beim Aufbau und unterstützt die Flüchtlinge, die im Ort untergebracht sind.
+Im späteren Verlauf steht ein weiteres Haus auf dem Gelände, das gemeinsam mit den Flüchtlingen errichtet wurde. Viele von ihnen müssen weiterhin im Freien schlafen und sich beengen. Die Helden besitzen die Besitzurkunde für das Landstück und haben dadurch das Recht, im Umkreis abzuholzen und zu jagen.
+
+### Bewohner
+
+Zunächst ist die Casa del Cookie vor allem das Anwesen der Heldengruppe. Während einer Phase der Trennung hält sich Lindo Laut hier auf. Später kommen Flüchtlinge einer gemischten Lagergemeinschaft hinzu, die beim Aufbau mithelfen; Nyrella unterstützt sie dabei.
 
 ## Beziehungen und Verbindungen
 
-- [Cookie](/characters/cookie.md): Die verstorbene Gefährtin ist Namensgeberin des Ortes.
-- **Die Heldengruppe:** Sie ist Eigentümerin des Anwesens und des Landstücks, benennt den Ort und nutzt ihn als Basis.
-- [Lindo Laut](/characters/lindo_laut.md): Hält sich während der Trennung dort auf, meditiert und empfängt eine bedrohliche Wahrnehmung von [Slix](/npcs/slix_vasul.md), dem versteckten fünften Teil von [Vhar'Zul](/deities/vharzul.md). [Slix](/npcs/slix_vasul.md) schreit in ihm vor Angst und warnt, dass jemand komme, um sie zu vernichten. Danach steigt Lindo Laut hinab und blickt ins Tal.
-- [Nyrella](/characters/nyrella.md): Hilft beim Aufbau der Casa del Cookie und kümmert sich um die Flüchtlinge.
-- **Flüchtlinge:** Sie sind in der Casa del Cookie untergebracht und beteiligen sich am Aufbau; viele leben beengt.
-- [Willauch](/locations/willauch.md): Die Stadt, deren Turnier der Gruppe das Anwesen einbrachte; der Ort liegt nordwestlich der Stadt.
-- [Ehrenfels](/locations/ehrenfels.md): Wird in späteren Quellen als nahegelegene Stadt genannt.
-- [Thar'Vok](/deities/tarvok_der_erdrichter.md): In seinem Namen besteht ein Schrein im Keller.
-- **Dungeon unter dem Anwesen:** Er ist noch nicht abschließend erforscht.
+- **[Cookie](/characters/cookie.md):** Namensgeberin der Casa del Cookie. Sie starb beim Turnier, durch das die Gruppe das Anwesen errang.
+- **Heldengruppe:** Besitzer des Anwesens und Inhaber der Besitzurkunde.
+- **[Lindo Laut](/characters/lindo_laut.md):** Nutzt den Ort während der Trennung als Rückzugs- und Meditationsort. Von hier aus nimmt er Slix’ Angst wahr.
+- **[Slix](/npcs/slix_vasul.md):** Warnt Lindo Laut in der Casa del Cookie vor der Rückkehr von [Vasul](/deities/vharzul.md).
+- **[Thar'Vok](/deities/tarvok_der_erdrichter.md):** Ihm ist ein Schrein im Keller des Anwesens gewidmet.
+- **[Nyrella](/characters/nyrella.md):** Hilft beim Aufbau der Flüchtlingsunterkünfte auf dem Gelände.
+- **Flüchtlinge:** Eine gemischte Lagergemeinschaft, die auf dem Gelände unterkommt und am Ausbau mitwirkt.
+- **[Willauch](/locations/willauch.md):** Die kanonische Lage der Casa del Cookie liegt nordwestlich dieser Stadt.
+- **[Ehrenfels](/locations/ehrenfels.md):** Wird in späteren Berichten als Ortsbezug genannt, was die Verwandlung des Ortes widerspiegelt.
 
 ## Chronologie
 
-**Erwerb und Benennung:** Noch vor Februar 2026 erringt die Gruppe das Anwesen bei einem schweren Turnier in Willauch; Cookie stirbt dabei. Die Überlebenden nennen das Anwesen Casa del Cookie.
+### Session 2026-02-11
 
-**Februar 2026:** Das Anwesen dient als Ausgangspunkt für die Erkundung des darunterliegenden Dungeons. Die Gruppe dringt tiefer vor; der Gang ist feucht, der Dschungel hat sich ausgebreitet, und ein süßlicher Geruch liegt in der Luft. Nach einem Rückzug kehrt die Gruppe in die Casa del Cookie zurück. Zu diesem Zeitpunkt ist der Keller mit dem [Thar'Vok](/deities/tarvok_der_erdrichter.md)-Schrein bekannt.
+Die Gruppe besitzt bereits die Casa del Cookie, benannt nach der verstorbenen Cookie. Beim Durchsuchen des Anwesens wurde ein Zugang zu einem Dungeon entdeckt, der tief in die Erde führt. Die Gruppe kehrt nach einem [Rückzug aus dem Dungeon](/events/rueckzug_aus_dem_dungeon.md) hierher zurück. Im Keller wird ein Schrein des Thar'Vok erwähnt. Der Dungeon wird als feucht beschrieben, und der Dschungel hat sich bis in die Tiefe ausgebreitet.
 
-**März 2026:** Während der Trennung der Gruppe hält sich Lindo Laut in der Casa del Cookie auf. Er meditiert – für ihn ungewöhnlich, da er nervös ist und mit seiner Musik hadert. Dabei spürt er plötzlich Gänsehaut und hört Slix in sich schreien; dieser kämpft gegen Ketten an Handgelenken an und warnt voller Angst: „Er kommt uns vernichten. Ihr müsst schreien, ihr müsst fliehen.“ Lindo Laut gelingt es, den Zauber wieder zu unterdrücken. Anschließend geht er hinunter, hält sich an einem Stein fest und blickt zitternd ins Tal.
+### Session 2026-03-31
 
-**August 2026:** Die Casa del Cookie hat sich weiterentwickelt. Ein weiteres Haus ist errichtet worden. Die Helden besitzen die Besitzurkunde für das Landstück und damit verbundene Rechte. Inzwischen sind Flüchtlinge dort untergebracht; Nyrella hilft beim Aufbau. Trotz des neuen Hauses schlafen weiterhin viele draußen, und die Menschen sind beengt untergebracht. In dieser Zeit wird der Ort als nahe Ehrenfels beschrieben – ein weiteres Zeichen dafür, dass sich die Casa del Cookie in kurzer Zeit stark verändert hat.
+Während der Trennung hält sich Lindo Laut in der Casa del Cookie auf. Er meditiert dort und spürt plötzlich, wie Slix in ihm schreit und gegen die Ketten an seinen Handgelenken ankämpft. Slix warnt: „Lindo Laut, er kommt uns vernichten. Ihr müsst schreien, ihr müsst fliehen.“ Danach verstummt die Stimme. Lindo Laut geht nach draußen, hält sich an einem Stein fest und blickt zitternd in das Tal. Er verbindet die Angst, die er spürt, mit der Rückkehr von Vasul.
 
-Die starke Veränderung des Ortes über die Monate wird in den vorliegenden Unterlagen mit der dunklen Magie der Hag in Verbindung gebracht; dies gilt als wahrscheinliche Erklärung, nicht als bestätigte Tatsache.
+### Session 2026-08-04
+
+Die Casa del Cookie hat sich weiterentwickelt. Die Gruppe erfährt, dass Nyrella bei den Flüchtlingen ist und beim Aufbau hilft. Auf dem Gelände steht inzwischen ein weiteres Haus. Viele Flüchtlinge schlafen noch draußen, alle beengen sich. Die Helden besitzen die Besitzurkunde für das Landstück und haben Rechte zum Abholzen und Jagen im Umkreis. In dieser Phase wird der Ort in der Nähe von Ehrenfels verortet – eine Beschreibung, die mit der fortschreitenden Verwandlung der Casa del Cookie zusammenhängt.
 
 ## Offene Fragen
 
-- Die Tiefe und das Schicksal des Dungeons unter der Casa del Cookie sind aus den Belegen nicht abschließend geklärt; ebenso die Bedeutung des Thar'Vok-Schreins im Keller.
-- Die genaue Ursache der raschen Verwandlung – insbesondere die Rolle der Hag – bleibt unbestätigt.
-- Die Beziehung zwischen der festgelegten Lage nordwestlich von Willauch und der späteren Beschreibung „nahe Ehrenfels“ wird durch die Verwandlung des Ortes erklärt; die genauen Umstände dieser veränderten Wahrnehmung oder Verschiebung sind offen.
+- Der genaue Umfang und Inhalt des unter der Casa del Cookie liegenden Dungeons ist bisher nur angeschnitten und nicht vollständig erkundet.
+- Die Bedeutung des Schreins des Thar'Vok im Keller bleibt unklar.
+- Die Ursache der tiefgreifenden Verwandlung des Ortes wird vermutet, aber nicht sicher benannt; es wird dunkle Magie als möglicher Auslöser in Betracht gezogen.
+- Die weitere Entwicklung der Flüchtlingsunterkunft und der Ausbau zu einer dauerhaften Siedlung sind offen.
 
 ## Belege
 
-[P-36] Session 2026-02-11, 00:03:29, https://www.youtube.com/watch?v=3C8SD-cyNPM
-[P-44] Session 2026-03-31, 00:48:20, https://www.youtube.com/watch?v=Ee-K84wcxLM
-[S1-02-A] Session 2026-08-04, 01:44:16, https://www.youtube.com/watch?v=qRj2t3wQHfs
+[P-36] Session 2026-02-11 @ 00:03:29 (https://www.youtube.com/watch?v=3C8SD-cyNPM)
+[P-44] Session 2026-03-31 @ 00:48:20 (https://www.youtube.com/watch?v=Ee-K84wcxLM)
+[S1-02-A] Session 2026-08-04 @ 01:44:16 (https://www.youtube.com/watch?v=qRj2t3wQHfs)

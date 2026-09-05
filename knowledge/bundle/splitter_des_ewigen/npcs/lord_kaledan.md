@@ -9,7 +9,7 @@ timestamp: '2025-10-14T00:00:00Z'
 id: NPC_LORD_KALEDAN
 ---
 
-Lord Kaledan ist der Herr von [Willauch](/locations/willauch.md). Er und [Lady Lyra](/npcs/lady_lyra_von_willau.md) schätzen Kämpfe als Kunstform und belohnen besonders stilvolle Darbietungen.
+Lord Kaledan ist der Herr von [Willauch](/locations/willauch.md). Er und [Lady Lyra](/npcs/lady_lyra_von_willauch.md) schätzen Kämpfe als Kunstform und belohnen besonders stilvolle Darbietungen.
 
 # Belege
 

@@ -10,7 +10,7 @@ id: ITEM_HARALDS_SEELENSTEIN
 subtype: Artefakt
 ---
 
-Ein Seelenstein wird verwendet, um Seelen einzufangen. [Harald](/npcs/freibeuter_harald.md) holt einen hervor, um die Kinderseele zu beanspruchen; die Gruppe besitzt ebenfalls einen.
+Ein Seelenstein wird verwendet, um Seelen einzufangen. [Harald](/npcs/abisalis_harald.md) holt einen hervor, um die Kinderseele zu beanspruchen; die Gruppe besitzt ebenfalls einen.
 
 # Belege
 

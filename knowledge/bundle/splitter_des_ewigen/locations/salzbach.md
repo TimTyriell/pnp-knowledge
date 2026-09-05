@@ -10,7 +10,7 @@ id: LOC_SALZBACH
 subtype: Siedlung
 ---
 
-Salzbach ist eine Hafenstadt an der [Rotaugenbucht](/locations/rotaugenbucht_tiefwasser.md). Der Ort ist der einzige Hafen, über den die [Sandhorn-Inseln](/locations/sandhorn_inseln.md) ihre Waren auf das Festland bringen können; dadurch kommt ihm eine zentrale Bedeutung für den Handel zwischen den Inseln und dem Festland zu.
+Salzbach ist eine Hafenstadt an der [Rotaugenbucht](/locations/rotaugenbucht_tiefwasser.md). Der Ort ist der einzige Hafen, über den die [Sandhorn-Inseln](/locations/sanddorninseln.md) ihre Waren auf das Festland bringen können; dadurch kommt ihm eine zentrale Bedeutung für den Handel zwischen den Inseln und dem Festland zu.
 
 ## Belagerung und gefährliche Anreise
 

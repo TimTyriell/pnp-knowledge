@@ -20,7 +20,7 @@ Pyrandras führte die Verteidigung von [Ehrenfels](/locations/ehrenfels.md) gege
 
 ## Widerstand gegen die neuen Götter
 
-Vor der Kapelle von Ehrenfels stellte sich Pyrandras den Seraphen-Wachen entgegen und forderte, dass sich [Nerash](/deities/nerash.md) zeige. In seiner Wut schlugen Flammen aus seinem Mund; erst [Orlanius](/npcs/orlanius_schwarzohr.md) konnte ihn besänftigen und zum Rückzug bewegen. Damit wirkte er wie ein Anführer des Widerstands gegen die neuen Götter. Nach der Rückkehr der Gruppe von einer Begegnung mit einer Göttin reagierte er geschockt, prüfte, ob sie noch lebten, und war erleichtert, dass die Seraphen fort waren. Die Helden berichteten ihm vom Verlust des göttlichen Schutzes und kündigten ihre baldige Abreise an.
+Vor der Kapelle von Ehrenfels stellte sich Pyrandras den Seraphen-Wachen entgegen und forderte, dass sich [Nerash](/deities/nerash.md) zeige. In seiner Wut schlugen Flammen aus seinem Mund; erst [Orlanius](/npcs/orlanius_schwarzhorn.md) konnte ihn besänftigen und zum Rückzug bewegen. Damit wirkte er wie ein Anführer des Widerstands gegen die neuen Götter. Nach der Rückkehr der Gruppe von einer Begegnung mit einer Göttin reagierte er geschockt, prüfte, ob sie noch lebten, und war erleichtert, dass die Seraphen fort waren. Die Helden berichteten ihm vom Verlust des göttlichen Schutzes und kündigten ihre baldige Abreise an.
 
 # Belege
 

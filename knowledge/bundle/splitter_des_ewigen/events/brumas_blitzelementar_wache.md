@@ -10,7 +10,7 @@ id: EVENT_BRUMAS_BLITZELEMENTAR_WACHE
 subtype: Ritual
 ---
 
-Bruma beschwört vor der Nacht einen [Blitzelementar](/npcs/blitzelementar.md), der die Gruppe bewacht; er selbst bleibt trotzdem wach und nimmt einen Stresspunkt.
+Bruma beschwört vor der Nacht einen [Blitzelementar](/items/blitzelementar.md), der die Gruppe bewacht; er selbst bleibt trotzdem wach und nimmt einen Stresspunkt.
 
 # Belege
 

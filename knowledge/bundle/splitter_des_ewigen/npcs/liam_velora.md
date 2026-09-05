@@ -36,14 +36,14 @@ Liam ist zunächst das emotionale Zentrum von Lunaras Reise: Sie will ihn retten
 - **[Lindo Laut](/characters/lindo_laut.md):** Erkennt, dass Liams Seele verloren scheint und nur durch göttliche Magie zurückgeholt werden könnte. Später liest Liam Lindo Lauts Gedanken.
 - **[Auranie](/npcs/auranil.md):** Spürt etwas Dunkles an Liam und warnt, dass er nicht mit dem Seraphen [Vityus](/npcs/vityus.md) mitgehen darf.
 - **[Vasul](/deities/vharzul.md):** Bestätigt, dass Liam in der Nähe ist, und verspricht, ihn wiederherzustellen.
-- **[Tattrick](/npcs/tattrick.md):** Erinnert sich an einen Jungen, der vor etwa zwölf Jahren in den Tempel gebracht und vor den Einflüssen des Abyssalis geschützt wurde.
+- **[Tattrick](/npcs/tatrick.md):** Erinnert sich an einen Jungen, der vor etwa zwölf Jahren in den Tempel gebracht und vor den Einflüssen des Abyssalis geschützt wurde.
 - **[Huludan](/deities/huludan.md):** Bestätigt, dass Liam sich in den Narben befindet.
 - **Vorgul'tar:** Der alte Gott, als dessen Wächter Ulvanara auftrat; die genaue Natur der fremden Kontrolle bleibt unklar.
 - **Ehemaliger Meister:** Ein nicht namentlich genannter früherer Meister lehrte ihn, der Körper hindere mehr, als er helfe.
 
 ## Chronologie
 
-- **Vor Beginn der Handlung:** Liam stirbt für Lunara scheinbar im Krieg. Später hört sie im Abyssalis seine Stimme und sucht ihn elf Jahre lang. Tattrick erinnert sich an einen Jungen, der vor etwa zwölf Jahren in den Tempel gebracht und geschützt wurde.
+- **Vor Beginn der Handlung:** Liam stirbt für Lunara scheinbar im Krieg. Später hört sie im Abyssalis seine Stimme und sucht ihn elf Jahre lang. [Tattrick](/npcs/tatrick.md) erinnert sich an einen Jungen, der vor etwa zwölf Jahren in den Tempel gebracht und geschützt wurde.
 - **Session 2026-03-24:** Lunara offenbart der Gruppe ihre Suche nach Liam; sie bezeichnet ihn als Grund, warum sie alles überlebt habe, und zugleich als ihre größte Angst.
 - **Session 2026-05-13:** Lunara erklärt nach einer Erleuchtung, die Narbe existiere wirklich; dort befinde sich Liam. [Huludan](/deities/huludan.md) bestätigt, dass er in den Narben ist.
 - **Session 2026-06-10:** Nach ihrem Sturz erscheint Liam Lunara in einer Vision und sagt: „Lunara, du darfst jetzt nicht sterben“ und „Finde mich“. [Vasul](/deities/vharzul.md) bestätigt später, dass Liam ganz in der Nähe ist.

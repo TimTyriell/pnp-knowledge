@@ -1,52 +1,58 @@
 ---
 type: NPC
 title: Hendrik (Nomadenführer)
-description: Während des nächtlichen Angriffs bleibt Hendrik auf seinem Stuhl sitzen
-  und zeigt keine Furcht. Am Morgen danach erscheint er gut gelaunt u…
+description: Hendrik ist der Anführer des Lagers der Alten, eines Nomadenlagers in
+  den Bergen. Er tritt der Gruppe als alter, abgemagerter Mann entgegen…
 tags:
 - npcs
-timestamp: '2026-03-23T00:00:00Z'
+timestamp: '2025-08-12T00:00:00Z'
 id: NPC_HENDRIK
-aliases:
-- Hendrik
 ---
 
 ## Überblick
-Hendrik ist der Anführer des Lagers der Alten auf dem Berg. Er ist ein alter, abgemagerter Mann, der der Heldengruppe zunächst abweisend begegnet, sie aber später einlädt, die Nacht in seinem Lager zu verbringen. Er warnt vor Ghulen und dem Sturm und verbietet den Zutritt zur Höhle. Auffällig ist sein zeitweilig entrücktes Verhalten: Als er [Lindo Laut](/characters/lindo_laut.md) anspricht, scheint nicht er selbst zu sprechen, sondern eine fremde Macht aus ihm. Während eines nächtlichen Angriffs bleibt er ruhig auf seinem Stuhl sitzen und zeigt keine Furcht. Am nächsten Morgen wirkt er gut gelaunt und verabschiedet die Gruppe.
+
+[Hendrik](/npcs/hendrik_heinrich.md) ist der Anführer des [Lagers der Alten](/locations/lager_der_alten.md), eines Nomadenlagers in den Bergen. Er tritt der Gruppe als alter, abgemagerter Mann entgegen, zunächst abweisend, später gastfreundlich. Während der Begegnung warnt er vor Ghulen und einem Sturm, verbietet den Zutritt zu einer Höhle und wirkt zeitweise nicht Herr seiner selbst. Beim nächtlichen Angriff bleibt er gelassen, am Morgen verabschiedet er die Gruppe gut gelaunt. Er ist nicht identisch mit dem Bauern Hendrik Heinrich.
 
 ## Rolle in der Kampagne
-Hendrik begegnet der Heldengruppe, als sie in die Berge zum [Lager der Alten](/locations/lager_der_alten.md) kommt. Die Bewohner blicken erwartungsvoll auf ihn, was ihn als Dreh- und Angelpunkt des Lagers ausweist. Er verlangt von den Fremden zu wissen, wer sie sind und was sie dort tun. Seine erste Reaktion ist Ablehnung: Er sagt zu [Lindo Laut](/characters/lindo_laut.md), dass es nicht von dessen Belangen sei, und fordert die Gruppe auf weiterzuziehen, weil die Stürme in den Bergen kalt sein können. Später gewährt er der Gruppe Gastfreundschaft, warnt sie vor Ghulen und dem Sturm und verbietet ausdrücklich den Zutritt zur Höhle.
 
-Während des nächtlichen Angriffs bleibt Hendrik auf seinem Stuhl sitzen und zeigt keine Furcht. Am Morgen danach erscheint er gut gelaunt und verabschiedet die Gruppe. Seine Rolle ist die eines ambivalenten Gastgebers und Hüters eines Ortes mit einem Geheimnis, der die Gruppe warnt und ihr Schutz gewährt, zugleich aber von etwas Fremdem berührt zu sein scheint.
+Hendrik ist in der Session vom 12. August 2025 die erste Autoritätsperson, auf welche die Gruppe im [Lager der Alten](/locations/lager_der_alten.md) trifft. Für die Bewohner des Lagers ist er der erkennbare Dreh- und Angelpunkt: Sie blicken während der Begegnung erwartungsvoll auf ihn. Er kontrolliert zunächst den Zugang, weist die Fremden ab und entscheidet später, sie für die Nacht aufzunehmen. Seine Warnungen, seine Verbote und sein unheimliches Verhalten machen ihn zu einer rätselhaften Figur, deren wahre Rolle offen bleibt.
 
 ## Wichtige Merkmale
-- **Auftreten:** alter, abgemagerter Mann; Anführer des Lagers der Alten.
-- **Anfängliche Abweisung:** Er nutzt schroffe Worte: „Das ist nicht von eurem Belangen, mein kleiner Herr.“
-- **Gastfreundschaft:** Er lädt die Gruppe ein, die Nacht zu verbringen, und warnt vor Gefahren.
-- **Fremdartiges Verhalten:** Er wirkt zeitweise wie besessen oder von einer fremden Macht durchdrungen; als er [Lindo Laut](/characters/lindo_laut.md) anspricht, „scheint nicht er selbst zu sprechen“.
+
+- **Erscheinung und Auftreten:** Hendrik ist ein alter, abgemagerter Mann. Er spricht schroff und bestimmt; [Lindo Laut](/characters/lindo_laut.md) bezeichnet er herablassend als „mein kleiner Herr“.
+- **Autorität:** Die Leute des Lagers schauen erwartungsvoll auf ihn. Er bestimmt, ob die Gruppe bleiben darf oder weiterziehen muss.
+- **Besonderes Verhalten:** Zeitweise wirkt Hendrik, als sei er „wie besessen oder von einer fremden Macht durchdrungen“. Als er Lindo Laut anspricht, scheint nicht er selbst zu sprechen, sondern etwas durch ihn.
 - **Furchtlosigkeit:** Während des nächtlichen Angriffs bleibt er ruhig auf seinem Stuhl sitzen und zeigt keine Furcht.
-- **Gute Laune am Morgen:** Am nächsten Tag erscheint er gut gelaunt und verabschiedet die Gruppe.
+- **Stimmungswandel:** Am Morgen nach dem Angriff erscheint er gut gelaunt und verabschiedet die Gruppe.
 
 ## Beziehungen und Verbindungen
-- **Zum Lager der Alten:** Hendrik ist der Anführer; die Bewohner schauen erwartungsvoll auf ihn, er ist Dreh- und Angelpunkt des Lagers.
-- **Zu [Lindo Laut](/characters/lindo_laut.md):** In der direkten Ansprache scheint eine fremde Macht durch Hendrik zu sprechen.
-- **Zur Heldengruppe:** Er begegnet ihr zunächst feindselig, gewährt dann Unterkunft, warnt vor Ghulen und dem Sturm und verabschiedet sie am Morgen.
-- **Zur Höhle:** Er verbietet der Gruppe ausdrücklich den Zutritt zur Höhle, was auf ein Geheimnis oder eine Gefahr hindeutet.
-- **Zu [Dodo](/characters/dodo.md), [Nyrella](/characters/nyrella.md) und [Cookie](/characters/cookie.md):** Sie sind Teil der Gruppe, die Hendrik begegnet.
+
+- **Anführer des [Lagers der Alten](/locations/lager_der_alten.md):** Die Bewohner orientieren sich an ihm; er ist der zentrale Ansprechpartner und Entscheider.
+- **[Lindo Laut](/characters/lindo_laut.md):** Hendrik spricht ihn in einer unheimlichen Weise an, bei der er nicht er selbst zu sein scheint. Dies ist eine der auffälligsten und rätselhaftesten Interaktionen der Begegnung.
+- **[Nyrella](/characters/nyrella.md):** Auch ihr gegenüber tritt er abweisend auf; er lässt sich von ihrer fordernden Art nicht beeindrucken.
+- **Lagerbewohner:** Sie beobachten Hendrik erwartungsvoll und behandeln ihn als richtungsweisend.
+- **Höhle:** Hendrik verbietet der Gruppe den Zutritt zu einer nahegelegenen Höhle. Die Natur seiner Verbindung zu diesem Ort bleibt unklar.
+- **[Bauer](/npcs/bauer.md) Hendrik Heinrich:** Mit ihm besteht keine Verbindung; Hendrik der Nomadenführer ist eine eigenständige Person.
 
 ## Chronologie
-- **Ankunft:** Die Heldengruppe erreicht das Lager. Hendrik tritt ihr entgegen: „Wer seid ihr? Was macht ihr hier? Ihr solltet nicht hier sein.“ [Lindo Laut](/characters/lindo_laut.md) antwortet, sie seien Wanderer und hätten sich verirrt. Hendrik stellt klar: „Das ist kein Dorf. Das ist unser Lager.“
-- **Abweisung:** Hendrik verweigert Auskünfte und fordert die Gruppe auf weiterzuziehen, weil die Stürme in den Bergen kalt sein können.
-- **Einladung und Warnung:** Hendrik lädt die Gruppe ein, die Nacht zu verbringen. Er warnt vor Ghulen und dem Sturm und verbietet den Zutritt zur Höhle.
-- **Fremde Macht:** Als Hendrik [Lindo Laut](/characters/lindo_laut.md) anspricht, scheint nicht er selbst zu sprechen, sondern eine fremde Macht durch ihn.
-- **Nächtlicher Angriff:** Während des Angriffs bleibt Hendrik ruhig auf seinem Stuhl sitzen und zeigt keine Furcht.
-- **Morgen:** Am nächsten Morgen erscheint er gut gelaunt und verabschiedet die Gruppe.
+
+**Session vom 12. August 2025:**
+
+- Zwei Mitglieder der Gruppe, [Lindo Laut](/characters/lindo_laut.md) und [Nyrella](/characters/nyrella.md), treten zunächst vor Hendrik, während die übrigen zurückbleiben. Hendrik konfrontiert sie: „Wer seid ihr? Was macht ihr hier? Ihr solltet nicht hier sein.“
+- Auf Lindos Frage, ob es sich um ein Dorf handelt, entgegnet Hendrik: „Das ist kein Dorf. Das ist unser Lager.“ Er verweigert weitere Auskünfte: „Das ist nicht von eurem Belangen, mein kleiner Herr.“ Nyrella fordert dennoch Antworten, doch Hendrik bleibt ablehnend: „Herzlichen Glückwunsch. Natürlich nicht. Ihr solltet weiterziehen. Die Stürme hier oben in den Bergen können sehr kalt sein.“
+- Lindo beobachtet, dass die Lagerbewohner erwartungsvoll auf Hendrik schauen; er ist der Dreh- und Angelpunkt des Geschehens.
+- Später lädt Hendrik die Gruppe ein, die Nacht im Lager zu verbringen. Er warnt vor Ghulen und dem Sturm und verbietet den Zutritt zur Höhle.
+- Hendrik wirkt zeitweise wie besessen oder von einer fremden Macht durchdrungen; als er Lindo Laut anspricht, scheint nicht er selbst zu sprechen.
+- Während des nächtlichen Angriffs bleibt Hendrik ruhig auf seinem Stuhl sitzen und zeigt keine Furcht.
+- Am Morgen erscheint er gut gelaunt und verabschiedet die Gruppe.
 
 ## Offene Fragen
-- Welche fremde Macht spricht durch Hendrik?
-- Was verbirgt sich in der Höhle, zu der Hendrik den Zutritt verbietet?
-- Warum zeigt Hendrik während des nächtlichen Angriffs keine Furcht?
-- Was geschieht mit dem Lager der Alten nach der Abreise der Gruppe?
+
+- Welche fremde Macht spricht aus oder durch Hendrik?
+- Warum verbietet er den Zutritt zur Höhle?
+- Warum bleibt er während des Angriffs furchtlos und ruhig?
+- Ist er dauerhaft der Anführer des [Lagers der Alten](/locations/lager_der_alten.md) oder nur ein Medium oder [Wächter](/npcs/waechter.md)?
 
 ## Belege
-- [P-17] Session 2025-08-12 @ 00:34:16 (https://www.youtube.com/watch?v=vHIjua0BZ9Y)
+
+[P-17] Session 2025-08-12 @ 00:34:16 — https://www.youtube.com/watch?v=vHIjua0BZ9Y

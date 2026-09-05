@@ -10,7 +10,7 @@ id: ITEM_COOKIES_KURZBOGEN
 subtype: Waffe
 ---
 
-[Cookie](/characters/cookie.md) führt einen Kurzbogen, mit dem sie zu Beginn des Kampfes nur geringen Schaden anrichtet, weil Skelette gegen Stichwaffen resistent erscheinen. Am Ende tötet sie den [Miner-Dämon](/npcs/miner_daemon.md) mit einem gezielten Pfeil in den Nacken. Der Bogen ist ihre bevorzugte Fernkampfwaffe.
+[Cookie](/characters/cookie.md) führt einen Kurzbogen, mit dem sie zu Beginn des Kampfes nur geringen Schaden anrichtet, weil Skelette gegen Stichwaffen resistent erscheinen. Am Ende tötet sie den [Miner-Dämon](/npcs/minen_daemon.md) mit einem gezielten Pfeil in den Nacken. Der Bogen ist ihre bevorzugte Fernkampfwaffe.
 
 # Belege
 

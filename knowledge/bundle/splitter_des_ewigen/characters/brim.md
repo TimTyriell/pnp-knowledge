@@ -33,7 +33,7 @@ Wesenszüge, die wiederholt sichtbar werden, sind Neugier, Wachsamkeit und ein g
 - **[Rotunas](/characters/rotunas.md):** In der Dämonenschlacht gibt Brim Rotunas die taktische Anweisung, sich um den Magier zu kümmern: „Rotunas, kümmer du dich um den Magier, wir beschäftigen das Fußvolk.“
 - **[Otis](/characters/otis.md):** Als Brim im Kampf gegen fliegende Kreaturen beinahe in die Tiefe gerissen wird, rettet Otis ihn.
 - **[Silberkerne](/factions/silberkerne.md):** In der [Freibeuterkneipe](/locations/freibeuterkneipe.md) bringt Brim das Gespräch auf die Silberkerne und zeigt damit Interesse an der Organisation.
-- **[Freibeuter](/npcs/freibeuter_harald.md)-Kapitän Harald:** In der Freibeuterkneipe prostet Brim Harald zu.
+- **[Freibeuter](/npcs/freibeuter_harald.md)-Kapitän Harald:** In der Freibeuterkneipe prostet Brim [Harald](/npcs/abisalis_harald.md) zu.
 - **[Coram Schildbrecher](/deities/coram_schildbrecher.md):** Brim erkennt die Statue [Coram Schildbrechers](/deities/coram_schildbrecher.md) und ordnet den Gott mithilfe eines Knowledge-Wurfs als einen der neuen Götter ein, der für Heldenschaft, Zusammenhalt und Gemeinschaft steht.
 - **Gildenhaus:** Brim weist seine Gefährten auf ein Gildengebäude hin und schlägt es als erste Anlaufstelle vor, um Informationen einzuholen.
 

@@ -29,7 +29,7 @@ Während der Verhandlungen mit dem [Kenku](/npcs/kenku_bote.md)-Boten auf der Pa
 
 # Belege
 
-- [1] Session 2026-06-04 @ 02:36:35 – https://www.youtube.com/watch?v=EGNh8O7pE5Q
-- [2] Session 2026-07-10 @ 00:29:32 – https://www.youtube.com/watch?v=H-eHSlfxUAg
-- [3] Session 2026-08-20 @ 01:01:28 – https://www.youtube.com/watch?v=2EkWrNUfQi0
-- [4] Session 2026-09-03 @ 01:05:30 – https://www.youtube.com/watch?v=bl-hX87_EC8
+[1] Session 2026-06-04 @ 02:36:35 – https://www.youtube.com/watch?v=EGNh8O7pE5Q
+[2] Session 2026-07-10 @ 00:29:32 – https://www.youtube.com/watch?v=H-eHSlfxUAg
+[3] Session 2026-08-20 @ 01:01:28 – https://www.youtube.com/watch?v=2EkWrNUfQi0
+[4] Session 2026-09-03 @ 01:05:30 – https://www.youtube.com/watch?v=bl-hX87_EC8

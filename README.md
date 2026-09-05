@@ -1,7 +1,7 @@
 # pnp-knowledge
 
-**A knowledge base for contested, multi-source narrative data.** 868 entity
-concepts extracted from 64 sessions of recorded German speech, held as markdown
+**A knowledge base for contested, multi-source narrative data.** 1092 entity
+concepts extracted from 66 sessions of recorded German speech, held as markdown
 in git, with quality gates that are not allowed to silently regress.
 
 ```
@@ -56,10 +56,10 @@ was a deliberate decision, not an omission —
 
 | | |
 |---|---|
-| Entity concepts | 868 |
-| Sessions ingested | 64 |
+| Entity concepts | 1092 |
+| Sessions ingested | 66 |
 | Entity types | 8 (Character, Deity, Domain, Event, Faction, Item, Location, NPC) |
-| Largest types | 247 events, 219 NPCs, 146 items, 146 locations |
+| Largest types | 300 events, 253 NPCs, 210 items, 203 locations |
 | Open conflicts | tracked as first-class artifacts in `knowledge/conflicts/` |
 | Tests | 46 files in `services/kb` alone |
 

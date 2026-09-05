@@ -30,7 +30,7 @@ Besonders eng ist seine Verbindung zu [Lindo Laut](/characters/lindo_laut.md). Z
 
 Dodo ist ein kräftiger, schuppiger Kämpfer mit Halbdrachen- und Goblinmerkmalen. Er trägt schwere Rüstung, einen Turmschild und einen Umhang. Sein Schild ist im späteren Verlauf mit den Namen seiner Freunde versehen, die er sich vor dem Schlafengehen ansieht – ein Zeichen seiner tiefen Loyalität. An seinem Körper trägt er einen [Obsidianring](/items/obsidianring.md) aus seiner Heimat Tarkia, dessen Wirkung ihm selbst unklar ist.
 
-Seine Bewaffnung entwickelte sich über die Kampagne: Zuerst führte er ein Breitschwert, auf Tier 2 kaufte er einen Streitkolben. In der Seelenwacht-Session erhielt die Gruppe den heiligen Streitkolben **Zebros Zorn**, den Dodo seither als Hauptwaffe führt. Zwischenzeitlich trug er auch einen [Dolch](/items/dolch.md), eine [Spitzhacke](/items/spitzhacke.md) und andere Fundstücke.
+Seine Bewaffnung entwickelte sich über die Kampagne: Zuerst führte er ein Breitschwert, auf Tier 2 kaufte er einen Streitkolben. In der Seelenwacht-Session erhielt die Gruppe den heiligen Streitkolben **Zebros Zorn**, den Dodo seither als Hauptwaffe führt. Zwischenzeitlich trug er auch einen [Dolch](/items/dolch.md), eine Spitzhacke und andere Fundstücke.
 
 ### Fähigkeiten
 

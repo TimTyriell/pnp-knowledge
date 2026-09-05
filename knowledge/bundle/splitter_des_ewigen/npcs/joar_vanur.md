@@ -79,8 +79,8 @@ Joar ist in den [heiligen Hain](/locations/heiliger_hain.md) geflohen. Der dorti
 
 ## Belege
 
-- [1] [Session 2025-04-30 @ 01:03:46](https://www.youtube.com/watch?v=fsCOiSkKKTE)
-- [2] [Session 2026-08-12 @ 01:14:06](https://www.youtube.com/watch?v=piUv11DCwDw)
-- [3] [Session 2026-08-18 @ 00:10:22](https://www.youtube.com/watch?v=10swvSz6k7U)
-- [4] [Session 2026-08-25 @ 00:53:16](https://www.youtube.com/watch?v=1Cjj3OVqiYA)
-- [5] [Session 2026-09-01 @ 01:26:04](https://www.youtube.com/watch?v=1E3-Nwv4OEs)
+[1] [Session 2025-04-30 @ 01:03:46](https://www.youtube.com/watch?v=fsCOiSkKKTE)
+[2] [Session 2026-08-12 @ 01:14:06](https://www.youtube.com/watch?v=piUv11DCwDw)
+[3] [Session 2026-08-18 @ 00:10:22](https://www.youtube.com/watch?v=10swvSz6k7U)
+[4] [Session 2026-08-25 @ 00:53:16](https://www.youtube.com/watch?v=1Cjj3OVqiYA)
+[5] [Session 2026-09-01 @ 01:26:04](https://www.youtube.com/watch?v=1E3-Nwv4OEs)

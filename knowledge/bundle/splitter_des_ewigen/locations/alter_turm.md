@@ -18,7 +18,7 @@ Errichtet wurde der Turm in der Zeit der alten Götter; sein Mauerwerk ist inzwi
 
 ## Begegnungen und Rolle
 
-[Rodek](/npcs/rodek.md) und die [Zwerge](/factions/zwerge.md) weisen die Gruppe auf den Turm hin, als die nächtliche Flut das Wasser ansteigen lässt; er wird zum Unterschlupf. Bei einem späteren Aufenthalt verbringen die Gefährten die Nacht in dem Turm, finden eine [Thar'Vok](/deities/tarvok_der_erdrichter.md)-Statue und im Keller einen Goldkessel; der Ort wird zum Schauplatz einer emotionalen Aussprache. In einer weiteren Expedition steuert [Trilo](/npcs/trilo.md) den Turm an; zu dieser Zeit dient er [Kalos](/npcs/organisation_der_kalos.md) als Versteck und wird zum Schauplatz von Verrat und Kampf.
+[Rodek](/npcs/rodek.md) und die [Zwerge](/factions/zwerge.md) weisen die Gruppe auf den Turm hin, als die nächtliche Flut das Wasser ansteigen lässt; er wird zum Unterschlupf. Bei einem späteren Aufenthalt verbringen die Gefährten die Nacht in dem Turm, finden eine [Thar'Vok](/deities/tarvok_der_erdrichter.md)-Statue und im Keller einen Goldkessel; der Ort wird zum Schauplatz einer emotionalen Aussprache. In einer weiteren Expedition steuert [Trilo](/npcs/trillo.md) den Turm an; zu dieser Zeit dient er [Kalos](/npcs/organisation_der_kalos.md) als Versteck und wird zum Schauplatz von Verrat und Kampf.
 
 # Belege
 

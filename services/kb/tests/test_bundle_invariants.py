@@ -258,11 +258,24 @@ def test_tier_matches_the_evidence():
     # the automatic rules underrate"), so a pin finally working is not a
     # new defect -- akastrale, the one case with a directly contradicting
     # GM ruling ("kein umfangreicher Eintrag"), is the only one that was
-    # ever a real bug, and it's already fixed via unimportant:. Ratchet
-    # against these 6 going forward: may only go down.
-    assert len(too_deep) <= 6, (
+    # ever a real bug, and it's already fixed via unimportant:.
+    #
+    # 2026-09-05 v6 identity cleanup raised this from 6 to 16, same
+    # mechanism: prompt-v6 folded several never-merge-protected/canon-ruled
+    # concepts into a sibling with the same name (abisalis_harald,
+    # hendrik_heinrich, der_jen -- restored via split: rules), left three
+    # canon-ruled entities at brief tier (der_schinder,
+    # ring_der_teleportation, verhandlung_mit_harl), bled the Breska group's
+    # identity into factions/fluechtlinge, and reworded four deity/location
+    # slugs (bodrak, coram_schildbrecher, schlangengott_schlangenpraesenz,
+    # burg_des_belorus -- the last already counted before this migration).
+    # Each got a fresh important: pin so its Kanon_Entscheidungen.md ruling
+    # or restored identity actually reaches synthesis -- see
+    # docs/audits/2026-09-05-v6-identity-cleanup-handoff.md. Ratchet against
+    # these 16 going forward: may only go down.
+    assert len(too_deep) <= 16, (
         f"{len(too_deep)} concept(s) have full deep-tier structure from "
-        f"<=1 mention (baseline 6): {too_deep}"
+        f"<=1 mention (baseline 16): {too_deep}"
     )
     # "Too shallow": a recurring entity (>=5 mentions) that never got the
     # deep tier -- the stub failure mode. Confirmed 0 after DEEP_MENTION_

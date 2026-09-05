@@ -49,7 +49,7 @@ Nach ihrer Befreiung ruft sie: „Ihr habt mich befreit! … Eilt euch!“ und s
 Nerash wurde von der Heldengruppe befreit. Jedes Mitglied besitzt ein Totem von ihr. In der Gruppe gilt sie zeitweise als sympathischer als die alten Götter. Esterossa trägt eine kleine Statue Nerashs bei sich und zeigt sie, um einen Seraphen zu beeinflussen; eine Verbindung zu Nerash kann er dabei jedoch nicht herstellen. Die Gruppe versucht mehrfach, Nerash um Hilfe zu bitten. Im Umgang mit [Vitius](/npcs/vitius.md) erklärt Dodo später: „Wir haben kein böses Blut mit Nerash, wir haben schon …“ – zugleich fordert er die Wahrheit über Nerash und die Ereignisse in Ehrenfels.
 
 ### Zu Vasul
-Laut [Tattrick](/npcs/tattrick.md) ist Nerash der ehemalige Partner Vasuls, mit dem er das Werk schuf, um den Schutz Vorgul‘tars zu brechen. Nox vermutet, Nerash wolle Vasul nicht zurückkehren lassen. Nerashs Traum-Schriftrolle zielt darauf ab, Vasul aus Lindo Laut zu vertreiben. [Der Richter](/npcs/richter_herr_der_seelenwacht.md) berichtet, Nerash und Vasul hätten koexistiert und zusammengearbeitet.
+Laut [Tattrick](/npcs/tatrick.md) ist Nerash der ehemalige Partner Vasuls, mit dem er das Werk schuf, um den Schutz Vorgul‘tars zu brechen. Nox vermutet, Nerash wolle Vasul nicht zurückkehren lassen. Nerashs Traum-Schriftrolle zielt darauf ab, Vasul aus Lindo Laut zu vertreiben. [Der Richter](/npcs/richter_herr_der_seelenwacht.md) berichtet, Nerash und Vasul hätten koexistiert und zusammengearbeitet.
 
 ### Zu Varsu
 In einer Session wird vermutet, dass Nerash im Konflikt mit [Varsu](/deities/varsu.md) steht.

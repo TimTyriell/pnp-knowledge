@@ -58,15 +58,15 @@ Single campaign scale (hundreds of concepts, not millions); temporal as-of reads
 ## Revisit trigger (any one of these reopens the decision)
 
 1. Real usage produces relationship/discovery queries ("all NPCs hostile to FACTION_X ever", multi-hop) more than ~weekly that link-walking + grep can't answer → build the **derived** graph index from the bundle.
-2. Bundle grows past ~1,500 concepts or per-ingest review diffs stop being humanly reviewable. — *Not fired. 868 entity concepts + 64 session concepts as of 2026-09-05 (`services/kb/state/history.jsonl`, run `20260830T183406Z`), i.e. ~58% of the threshold. Per-ingest diffs are still path-scoped to `knowledge/` and reviewed as PRs.*
+2. Bundle grows past ~1,500 concepts or per-ingest review diffs stop being humanly reviewable. — *Not fired. 1092 entity concepts + 66 session concepts as of 2026-09-05 (`services/kb/state/history.jsonl`, run `20260905T164205Z`, post prompt-v6 regeneration and identity cleanup — see [MIGRATION-prompt-v6.md](MIGRATION-prompt-v6.md)), i.e. ~73% of the threshold. Per-ingest diffs are still path-scoped to `knowledge/` and reviewed as PRs.*
 3. As-of correctness bugs traced to prose-state ambiguity that structured edges would have prevented.
 4. The GM in practice never hand-edits the bundle for two months — the editability argument then carried less weight than assumed.
 
 ## Outcome (2026-09-05)
 
 Accepted retroactively: the system has been running on this decision since
-2026-07-22 and the decision held. 64 sessions are ingested into
-`knowledge/bundle/splitter_des_ewigen/`, producing 868 entity concepts across
+2026-07-22 and the decision held. 66 sessions are ingested into
+`knowledge/bundle/splitter_des_ewigen/`, producing 1092 entity concepts across
 the eight types, every one citing `Session YYYY-MM-DD @ HH:MM:SS` with a URL.
 
 What the decision actually bought, against what it predicted:

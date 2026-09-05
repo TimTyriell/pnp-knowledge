@@ -15,7 +15,7 @@ Der **Abyss** ist die dunkle Welt, in der Dämonen und die verbannten [Alten Gö
 
 ## Bewohner
 
-Die Quellen nennen Dämonen und verbannte Alte Götter gemeinsam als Bewohner des Abyss, ohne ihr Verhältnis zueinander zu erläutern. Aus dem Abyss stammt zudem der [Miner-Dämon](/npcs/miner_daemon.md), der durch das [Rift](/locations/rift_portal.md) beschworen wurde.
+Die Quellen nennen Dämonen und verbannte Alte Götter gemeinsam als Bewohner des Abyss, ohne ihr Verhältnis zueinander zu erläutern. Aus dem Abyss stammt zudem der [Miner-Dämon](/npcs/minen_daemon.md), der durch das [Rift](/locations/rift_portal.md) beschworen wurde.
 
 # Belege
 

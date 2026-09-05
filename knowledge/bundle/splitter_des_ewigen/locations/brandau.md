@@ -1,8 +1,8 @@
 ---
 type: Location
 title: Brandau
-description: Brandau ist eine große Stadt im Süden der bekannten Welt, südöstlich
-  des Berges Zebros und in relativer Nähe zu Willauch. Vor dem Krieg war…
+description: Brandau ist eine ehemalige Großstadt und ein ehemaliges Fürstentum im
+  Süden, südöstlich des Berges Zebros [1]. Es war neben Willauch eine d…
 tags:
 - locations
 timestamp: '2026-09-03T00:00:00Z'
@@ -10,68 +10,76 @@ id: LOC_BRANDAU
 subtype: Siedlung
 ---
 
-# Überblick
+## Überblick
 
-Brandau ist eine große Stadt im Süden der bekannten Welt, südöstlich des [Berges Zebros](/factions/koenigreich_zebros.md) und in relativer Nähe zu [Willauch](/locations/willauch.md). Vor dem [Krieg](/characters/krieg.md) war Brandau ein eigenständiges, technologisch überlegenes Fürstentum und wurde von einem Lord bzw. Fürsten beherrscht. Brandau unterlag im Krieg gegen Willauch und gilt seither als besiegte und schwer beschädigte Stadt, die in das Herrschaftsgebiet von Willauch integriert wird. Die Adelsfamilie galt weithin als ausgelöscht; die überlebende [Prinzessin Marie](/npcs/prinzessin_marie.md) besitzt jedoch einen Anspruch auf Brandau, ihr Aufenthaltsort ist unbekannt. Viele Brandauer haben ihre Heimat verloren und sind als [Flüchtlinge](/factions/fluechtlinge.md) in der Gegend um [Kleinringtal](/locations/ringtal.md) und [Ringtal](/locations/ringtal.md) untergekommen. Willauch hat ein Kopfgeld auf Brandauer ausgesetzt.
+Brandau ist eine ehemalige Großstadt und ein ehemaliges Fürstentum im Süden, südöstlich des Berges [Zebros](/factions/koenigreich_zebros.md) [1]. Es war neben [Willauch](/locations/willauch.md) eine der beiden großen Städte der Region [2][4] und galt vor dem [Krieg](/characters/krieg.md) als technologisch überlegen [6]. Im Krieg gegen Willauch unterlag Brandau, wurde zerstört bzw. schwer beschädigt und wird seither in das Herrschaftsgebiet Willauchs integriert [3][6][10]. Die überlebende [Prinzessin Marie](/npcs/prinzessin_marie.md) macht Brandau weiterhin zu einem politischen Faktor [5][10].
 
-# Rolle in der Kampagne
+## Rolle in der Kampagne
 
-Brandau ist vor allem als Verliererstadt des großen Südkonflikts und als politischer Unruheherd von Bedeutung. Schon früh diente die Stadt als abschreckendes Beispiel für Flüchtlinge und Siedler: Eine Zwergenfrau aus der Wildnis rechnete nicht damit, dass man sie in Brandau oder Willauch aufnehmen würde, und der Gildenmeister warnte die Heldengruppe davor, im Süden in Richtung Willauch und Brandau zu siedeln, weil die beiden großen Städte neue Dörfer sofort unter Kontrolle bringen oder zerstören würden [1][2]. Nach dem Sieg Willauchs reiste die Gruppe zu einem Fest nach Willauch, bei dem Brandau als integrierte Verliererstadt thematisiert wurde [3].
+Brandau tritt zunächst als ferne südliche Macht auf, die für [Flüchtlinge](/factions/fluechtlinge.md) unerreichbar scheint: Im Lager vor [Breska](/locations/breska.md) glaubt eine Zwergenfrau nicht, dass man ihre Gruppe in Brandau oder Willauch aufnehmen würde [1]. [Der Gildenmeister](/npcs/nox.md) warnt die Gruppe davor, im Süden Richtung Willauch und Brandau eine neue Siedlung zu errichten, weil die großen Städte solche Gründungen mit Abgaben belegen oder niederwerfen könnten [2].
 
-Später wurde Brandau zum persönlichen Hintergrund mehrerer Figuren: Hendrik Heinrichs Hof gehörte früher zu Brandau, die [Silberkerne](/factions/silberkerne.md) unterstützen offenbar die Brandauer Seite [4], und [Sange](/characters/sange.md), Sir Tali sowie [Herr Raxlis](/npcs/herr_raxlis.md) stammen aus Brandau [7][9]. Prinzessin Marie gilt als mögliche Galionsfigur für einen Wiederaufstieg Brandaus [5][10]. Damit zieht sich Brandau als offene politische Wunde durch die Kampagne: Die Stadt ist besiegt, aber nicht vollständig befriedet.
+Nach dem Krieg wird Brandau zum Inbegriff der Niederlage: eine zerstörte Stadt, eine verstreute Bevölkerung, von Willauch mit Kopfgeld belegte Brandauer und eine verschwundene Erbin, deren bloßes Überleben die politische Ordnung gefährden kann [6][10]. Mehrere Figuren der Kampagne stammen aus Brandau oder sind mit der Stadt verbunden, darunter [Sange](/characters/sange.md), Sir Tali und [Herr Raxlis](/npcs/herr_raxlis.md) [7][9]. Brandau ist damit Herkunftsort und fortwirkender Konfliktgegenstand zugleich.
 
-# Wichtige Merkmale
+## Wichtige Merkmale
 
-## Lage und Beschaffenheit
-Brandau liegt südöstlich des Berges [Zebros](/factions/koenigreich_zebros.md) und in relativer Nähe zu Willauch; eine genauere geografische Beschreibung geben die Belege nicht her. In den Quellen erscheint Brandau als große Stadt bzw. ehemaliges Fürstentum im Süden. Nach dem Krieg wird sie als zerstörte oder zumindest schwer beschädigte Stadt beschrieben [6][10]. Vor dem Konflikt besaß Brandau gegenüber Willauch eine technologische Überlegenheit, die als ein Grund für die Eifersucht Willauchs genannt wird [6].
+**Lage:** Brandau liegt im Süden, südöstlich des Berges Zebros [1]. Die Stadt und Willauch werden als sehr nah beieinanderliegend beschrieben; zwischen ihnen stiegen die Spannungen über längere Zeit an [6].
 
-## Regierung und politische Lage
-Brandau wurde von einem Lord bzw. Fürsten beherrscht; die Quellen verwenden beide Titel [1][6]. Nach der Niederlage ist der Fürst in Gefangenschaft oder tot. Die Erbin galt zunächst als verschollen oder tot [6]. Später verdichten sich die Hinweise, dass Prinzessin Marie lebt und damit einen Anspruch auf Brandau erheben könnte; ihr Tod gilt als Gerücht [5][9][10]. Willauch ist bestrebt, verbliebene wichtige Brandauer Persönlichkeiten zu ergreifen, und hat Kopfgeld auf Brandauer ausgesetzt [6][10].
+**Beschaffenheit:** Brandau war eine große Stadt und ein Fürstentum [1][6]. Es besaß eine technologische Überlegenheit gegenüber Willauch, was laut [Kaya](/characters/kaya.md) die Eifersucht Willauchs auslöste [6]. Die letzte Schlacht des Krieges fand auf einem großen Feld statt und wird als grausam beschrieben: Die Brandauer wurden von Willaucher Soldaten in die Enge getrieben, anschließend räumten Strixwolf-Reiter unter ihnen auf [6]. Die Stadt ist zerstört bzw. schwer beschädigt [6][10].
 
-## Bewohner
-Mehrere Personen werden als Brandauer Herkunft beschrieben: Sange stammt aus Brandau und war dort nach eigener Aussage ein angesehener Künstler, der in höheren Kreisen verkehrte; er verließ die Stadt jedoch deutlich vor dem Krieg, als seine Blutmagie erwachte [7]. Inzwischen trägt er eine Maske, um seine Herkunft zu verbergen [10]. [Sir Tali von Brandau](/npcs/sir_tali_von_brandau.md) war einer der höchsten Soldaten der Stadt und Leibgarde der Prinzessin; Herr Raxlis hatte früher ebenfalls eine bedeutende Stellung in Brandau, auch wenn Sange sich nicht an dessen genaue Aufgabe erinnern kann [9]. Nach der Niederlage sind viele Brandauer als Flüchtlinge in der Umgebung von Kleinringtal und Ringtal untergekommen [6].
+**Herrschaft:** Brandau wurde von einem Lord bzw. Fürsten beherrscht [1][6]. Nach dem Krieg ist der Fürst in Gefangenschaft oder tot [6]. Die Familie des Fürsten galt als ausgelöscht, doch Prinzessin Marie hat überlebt [5][10].
 
-# Beziehungen und Verbindungen
+**Bewohner:** Viele Brandauer sind als Flüchtlinge in der Gegend um [Kleinringtal](/locations/ringtal.md) und [Ringtal](/locations/ringtal.md) untergekommen [6]. Willauch hat Kopfgeld auf Brandauer ausgesetzt [6]. [Sange](/characters/sange.md) beschreibt sich als ehemaligen angesehenen Künstler aus höheren Kreisen Brandaus, der die Stadt nach dem Erwachen seiner Blutmagie verließ und seine Herkunft unter einer Maske verbirgt [7][10].
 
-- **[Willauch](/locations/willauch.md)**: Kriegsgegner und Sieger. Willauch integriert Brandau in sein Herrschaftsgebiet, setzt Kopfgeld auf Brandauer aus und ist darauf erpicht, die Prinzessin zu fassen [3][6][10].
-- **[Prinzessin Marie](/npcs/prinzessin_marie.md)**: Überlebende Erbin Brandaus. Ihr wird zugetraut, das verstreute Brandauer Volk wieder zu vereinen und eine Gefahr für Willauch zu werden [5][9][10].
-- **[Silberkerne](/factions/silberkerne.md)**: Unterstützen offenbar die Seite Brandaus bzw. ein Netzwerk gegen Willauch [4].
-- **Hendrik Heinrich**: Sein Hof gehörte früher zu Brandau; er sagt „Wir waren mal Teil von Brandau“ [4].
-- **[Velor](/locations/velor.md)**: Brandau war laut [Joar Vanur](/npcs/joar_vanur.md) Schauplatz eines früheren Konflikts mit Velor; Velor hat an dieser Geschichte noch „ein paar Wunden zu lecken“ [8].
-- **[Berg Zebros](/factions/koenigreich_zebros.md)**: Dient als geografische Verortung Brandaus südöstlich des Berges [1].
-- **[Kleinringtal](/locations/ringtal.md) und [Ringtal](/locations/ringtal.md)**: Auffangorte für Brandauer Flüchtlinge [6].
-- **[Sange](/characters/sange.md), Sir Tali, [Herr Raxlis](/npcs/herr_raxlis.md), [Coralius](/npcs/coralius.md)**: Personen mit biografischem oder fachlichem Bezug zu Brandau. Coralius, ein ehemaliger Lehrling des Obersten Markus, verfügt über Wissen zu Brandau und dessen Magie [9][10].
+## Beziehungen und Verbindungen
 
-# Chronologie
+- **[Willauch](/locations/willauch.md):** Kriegsgegner und Sieger; Brandau wird in das Herrschaftsgebiet Willauchs integriert [3]. Willauch glich die technologische Überlegenheit Brandaus durch schiere Masse und den Einsatz von Strixwolf-Reitern aus [6].
+- **Prinzessin Marie:** überlebende Erbin Brandaus. Ihr Anspruch auf die Stadt macht Brandau zu einem bedeutenden politischen Faktor [5][10]. Ihr Tod war ein Gerücht; ihr Aufenthaltsort ist unbekannt [6].
+- **Sir Tali:** ehemals einer der höchsten Soldaten Brandaus und Leibgarde der Prinzessin; am Ende des Krieges war er in ihrer Nähe [9].
+- **[Herr Raxlis](/npcs/herr_raxlis.md):** stammt ebenfalls aus Brandau und muss dort eine wichtige Stellung bekleidet haben, auch wenn sich Sange an seine genaue Aufgabe nicht erinnert [9].
+- **Sange:** Brandau ist seine Heimatstadt, die den Krieg gegen Willauch verloren hat [7]. Er verließ die Stadt bereits vor dem Ende, nachdem seine Blutmagie erwacht war [7][10].
+- **[Coralius](/npcs/coralius.md):** ehemaliger Lehrling des Obersten Markus, verfügt über Wissen zu Brandau und dessen Magie [10].
+- **[Silberkerne](/factions/silberkerne.md):** unterstützten offenbar die Seite Brandaus [4].
+- **[Velor](/locations/velor.md):** Brandau war Schauplatz eines früheren Konflikts mit Velor; [Joar Vanur](/npcs/joar_vanur.md) erwähnt dies, um die politische Lage zu illustrieren [8].
+- **Hof im Umland:** Ein Hof, den die Gruppe aufsuchte, war früher Teil von Brandau und ging nach dem Krieg an Willauch über; der Bewohner erklärte dazu: „Wir waren mal Teil von Brandau." [4]
 
-- **Session 2025-09-17**: Brandau wird erstmals erwähnt. Flüchtlinge vor [Breska](/locations/breska.md) rechnen nicht damit, dort oder in Willauch aufgenommen zu werden; weiter südlich komme man ins „Einschlagsgebiet des Lordes von Brandau“ [1].
-- **Session 2025-09-23**: [Der Gildenmeister](/npcs/nox.md) warnt die Gruppe davor, im Süden in Richtung Willauch und Brandau zu siedeln, da die beiden großen Städte neue Dörfer nicht dulden würden [2].
-- **Session 2025-10-14**: Die Gruppe reist nach Willauch zum Fest anlässlich des Sieges über Brandau. Brandau wird als besiegte Stadt beschrieben, die in das Herrschaftsgebiet von Willauch integriert wird [3].
-- **Session 2026-03-23**: Auf [Hendrik](/npcs/hendrik.md) Heinrichs Hof erfahren die Helden, dass der Hof früher zu Brandau gehörte. Die Silberkerne unterstützen offenbar die Brandauer Seite [4].
-- **Session 2026-03-24**: In einem Rückblick wird das [Schlachtfeld](/locations/schlachtfeld.md) zwischen Willauch und Brandau erwähnt. Brandau gilt als Verliererstadt, die Königsfamilie als ausgelöscht; die überlebende Prinzessin hat nun Anspruch auf die Stadt [5].
-- **Session 2026-06-04**: Der Konflikt wird genauer eingeordnet: Willauch war eifersüchtig auf Brandaus technologische Überlegenheit und nutzte seine massenmäßige Überlegenheit, als Brandau verwundbar war. Die letzte Schlacht fand auf dem großen Feld statt, wo Strixwolf-Reiter den Ausschlag gaben. Der Fürst ist in Gefangenschaft oder tot, die Erbin verschollen oder tot; viele Brandauer fliehen in die Gegend um Kleinringtal und Ringtal, Willauch setzt Kopfgeld aus [6].
-- **Session 2026-08-06**: Sange offenbart, dass er aus Brandau stammt, dort ein angesehener Künstler war, die Stadt aber deutlich vor dem Krieg verließ, als seine Blutmagie erwachte [7].
-- **Session 2026-08-12**: Joar Vanur erwähnt Brandau als früheren Konflikt mit Velor; Velor hat die Wunden daraus noch nicht vergessen [8].
-- **Session 2026-08-20**: Sange erkennt Sir Tali von Brandau, einen ehemaligen hohen Soldaten und Leibgarde der Prinzessin. Dessen Wappen ist überzeichnet. Herr Raxlis entpuppt sich ebenfalls als Brandauer mit früherer Bedeutung. Sange schließt daraus, dass die Prinzessin zu leben scheint oder im Hintergrund etwas geplant wird [9].
-- **Session 2026-09-03**: Brandau wird als zerstörte Stadt beschrieben. Sange trägt seine Maske, um seine Herkunft zu verbergen. Prinzessin Marie könnte einen Anspruch auf Brandau erheben und wäre ein wichtiger politischer Faktor; Willauch ist begierig, sie zu fassen. Coralius hat als ehemaliger Lehrling des Obersten Markus Wissen über Brandau und dessen Magie [10].
+## Chronologie
 
-# Offene Fragen
+**2025-09-17:** Im [Flüchtlingslager vor Breska](/locations/fluechtlingslager_vor_breska.md) wird Brandau als große Stadt erwähnt, die Flüchtlinge vermutlich nicht aufnehmen würde [1].
 
-- Der Aufenthaltsort von Prinzessin Marie ist unbekannt; die Belege schwanken zwischen „lebt“, „verschollen“ und „tot“, wobei der Tod ausdrücklich als Gerücht gilt [5][6][9][10].
-- Das Schicksal des Fürsten von Brandau ist ungeklärt: Er sitzt möglicherweise in Willauch in Gefangenschaft oder ist tot [6].
-- Die genaue Natur des früheren Konflikts zwischen Brandau und Velor wird nicht ausgeführt [8].
-- Unklar ist, ob und wie Brandau als Stadt oder Fürstentum wiedererrichtet werden soll; die Quellen sprechen nur von Integration, Zerstörung und einem möglichen Anspruch der Prinzessin [3][6][10].
-- Welches Wissen Coralius genau über Brandau und dessen Magie besitzt, bleibt offen [10].
+**2025-09-23:** Der Gildenmeister nennt Willauch und Brandau als Gefahr für neue Siedlungen im Süden [2].
 
-# Belege
+**2025-10-14:** Der Krieg ist entschieden: Willauch hat Brandau besiegt und ist dabei, die Stadt in sein Herrschaftsgebiet zu integrieren. Aus diesem Anlass findet in Willauch ein großes Fest bzw. Turnier statt [3].
 
-1. Session 2025-09-17, 00:54:49, https://www.youtube.com/watch?v=AhIT8dcxw2o  
-2. Session 2025-09-23, 00:22:35, https://www.youtube.com/watch?v=DGzfqVigS0g  
-3. Session 2025-10-14, 00:00:32, https://www.youtube.com/watch?v=cUtz87UCHu4  
-4. Session 2026-03-23, 01:35:00, https://www.youtube.com/watch?v=niVxKtdQBn0  
-5. Session 2026-03-24, 00:27:20, https://www.youtube.com/watch?v=Yj5BWJfg3Ag  
-6. Session 2026-06-04, 01:14:39, https://www.youtube.com/watch?v=EGNh8O7pE5Q  
-7. Session 2026-08-06, 01:52:27, https://www.youtube.com/watch?v=0HyPHao8s_k  
-8. Session 2026-08-12, 01:25:54, https://www.youtube.com/watch?v=piUv11DCwDw  
-9. Session 2026-08-20, 01:42:20, https://www.youtube.com/watch?v=2EkWrNUfQi0  
-10. Session 2026-09-03, 00:22:12, https://www.youtube.com/watch?v=bl-hX87_EC8
+**2026-03-23:** Die Gruppe erfährt von einem Hof, der früher zu Brandau gehörte; in diesem Zusammenhang wird deutlich, dass die Silberkerne offenbar Brandaus Seite unterstützen [4].
+
+**2026-03-24:** Im Rückblick erwähnt Lunara, dass die Gruppe auf dem [Schlachtfeld](/locations/schlachtfeld.md) zwischen Willauch und Brandau war und dort [Brim](/characters/brim.md) kennengelernt hat. Brandau ist zu diesem Zeitpunkt die Verliererstadt, deren Herrscherfamilie als ausgelöscht galt, während die überlebende Prinzessin Anspruch auf die Stadt hat [5].
+
+**2026-06-04:** Kaya erinnert sich an die Hintergründe: Willauch war eifersüchtig auf Brandaus technologische Überlegenheit und nutzte die eigene Masse sowie die Strixwolf-Reiter, als Brandau verwundbar war. Der Fürst ist vermutlich in Gefangenschaft oder tot; die Erbin galt als verschollen oder tot. Viele Brandauer sind in der Gegend um Kleinringtal und Ringtal untergekommen, und Willauch hat Kopfgeld auf Brandauer ausgesetzt [6].
+
+**2026-08-06:** Sange offenbart, dass er aus Brandau stammt und die Stadt den Krieg gegen Willauch verloren hat [7].
+
+**2026-08-12:** Joar Vanur erwähnt, dass Velor nach der „Geschichte mit Brandau" noch Wunden zu lecken habe [8].
+
+**2026-08-20:** Sange erkennt [Sir Tali von Brandau](/npcs/sir_tali_von_brandau.md), die ehemalige Leibgarde der Prinzessin, und begreift, dass auch Herr Raxlis eine wichtige Persönlichkeit Brandaus gewesen sein muss [9].
+
+**2026-09-03:** Sange berichtet den Gefährten von der Prinzessin Marie, deren Familie vor dem Krieg über Brandau herrschte. Die Gruppe wird sich der politischen Tragweite bewusst: Ein lebender Anspruch auf Brandau kann das verstreute Volk vereinen oder zur Gefahr für Willauch werden; Willauch ist erpicht darauf, wichtige Brandauer zu fassen. Coralius verfügt über Wissen zu Brandau und dessen Magie [10].
+
+## Offene Fragen
+
+- Der Aufenthaltsort von Prinzessin Marie ist unbekannt; ihr Tod war ein Gerücht, keine bestätigte Tatsache [6][10].
+- Ob der Fürst von Brandau in Gefangenschaft sitzt oder tot ist, bleibt offen [6].
+- Die Einzelheiten des früheren Konflikts zwischen Brandau und Velor werden nicht genannt [8].
+- Was Coralius konkret über Brandau und dessen Magie weiß, ist bislang nicht ausgeführt [10].
+
+## Belege
+
+[1] Session 2025-09-17 @ 00:54:49 (https://www.youtube.com/watch?v=AhIT8dcxw2o)  
+[2] Session 2025-09-23 @ 00:22:35 (https://www.youtube.com/watch?v=DGzfqVigS0g)  
+[3] Session 2025-10-14 @ 00:00:32 (https://www.youtube.com/watch?v=cUtz87UCHu4)  
+[4] Session 2026-03-23 @ 01:35:00 (https://www.youtube.com/watch?v=niVxKtdQBn0)  
+[5] Session 2026-03-24 @ 00:27:20 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)  
+[6] Session 2026-06-04 @ 01:14:39 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)  
+[7] Session 2026-08-06 @ 01:52:27 (https://www.youtube.com/watch?v=0HyPHao8s_k)  
+[8] Session 2026-08-12 @ 01:25:54 (https://www.youtube.com/watch?v=piUv11DCwDw)  
+[9] Session 2026-08-20 @ 01:42:20 (https://www.youtube.com/watch?v=2EkWrNUfQi0)  
+[10] Session 2026-09-03 @ 00:22:12 (https://www.youtube.com/watch?v=bl-hX87_EC8)

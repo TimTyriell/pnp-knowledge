@@ -18,4 +18,4 @@ Die Gruppe ist zu klein, um überall helfen zu können, und sucht deshalb Verbü
 
 ## Belege
 
-[P-52] Daggerheart-Kampagne, Session vom 04.06.2026, 01:09:10 – [YouTube-Aufzeichnung](https://www.youtube.com/watch?v=EGNh8O7pE5Q)
+[P-52] Session vom 04.06.2026, 01:09:10 (Daggerheart-Kampagne) – [YouTube-Aufzeichnung](https://www.youtube.com/watch?v=EGNh8O7pE5Q)

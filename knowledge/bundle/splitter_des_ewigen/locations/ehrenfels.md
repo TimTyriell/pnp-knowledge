@@ -49,7 +49,7 @@ Ehrenfels ist untrennbar mit der [Ehrenfels-Gilde](/factions/gilde_von_ehrenfels
 - **2025-07-22:** Die Gruppe lernt Ehrenfels als Gildenhauptstadt kennen. Die Stadt ist friedlich, hat zwei große Eingänge und ein leerstehendes ehemaliges Adelshaus. Der [Gildenmeister](/npcs/nox.md) betont am Ende, Ehrenfels solle unbescholten bleiben ([1]).
 - **2025-10-14:** In einer Taverne begegnet die Gruppe einer Frau, die sie aus Ehrenfels kennt; dort lernte sie zuvor auch [Lisa](/npcs/lisa.md) kennen ([2]).
 - **2025-11-18:** Winter in Ehrenfels: Es liegt Schnee, der Fluss friert zu. Die Gruppe hat eine Unterkunft und ist Teil der Gilde. Am Fuß des Berges werden [Untote](/factions/belorus_untotenarmee.md) gesichtet ([3]).
-- **2026-01-06:** Ein wiederbelebter Soldat stellt klar, dass die versiegelte Botschaft dringend nach Ehrenfels muss, um [Lord Voras](/npcs/lord_voras.md)’ Erkenntnis zu überbringen ([4]).
+- **2026-01-06:** Ein wiederbelebter Soldat stellt klar, dass die versiegelte Botschaft dringend nach Ehrenfels muss, um Lord Voras’ Erkenntnis zu überbringen ([4]).
 - **2026-01-13:** Ehrenfels wird als Stadt im Westen mit einem Trainingsgelände der Gilde bezeichnet; [Dodo](/characters/dodo.md) schlägt vor, per Portal dorthin zu reisen, um den Weg an [Breska](/locations/breska.md) vorbei zu sparen ([5]).
 - **2026-01-20:** Voras’ Notiz nennt Ehrenfels als Ort, an dem ein fünfter Teil Vasuls liegt, bewacht vom Gildenmeister; weitere Details sind unbekannt ([6]).
 - **2026-01-27:** Ehrenfels ist die Herkunftsstadt der Abenteurer. [Die Gilde](/factions/gilde_von_ehrenfels.md) entsandte sie, um den Zwergen zu helfen. Die Stadt profitiert stark von deren handwerklichen Erzeugnissen ([7]).

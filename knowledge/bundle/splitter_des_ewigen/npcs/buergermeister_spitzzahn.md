@@ -1,34 +1,32 @@
 ---
 type: NPC
 title: Bürgermeister Spitzzahn
-description: Bürgermeister Spitzzahn ist ein Halbling, den die Gruppe in Ringtal als
-  Stadtoberhaupt antrifft. In den Verhandlungen mit ihr erweist er si…
+description: Spitzzahn ist ein Halbling und Bürgermeister. Die Quellen bezeichnen
+  ihn namentlich als Bürgermeister von Ringtal; zwei ältere Erwähnungen,…
 tags:
 - npcs
 timestamp: '2026-09-03T00:00:00Z'
 id: NPC_BUERGERMEISTER_SPITZZAHN
 aliases:
+- Spitzzahn
 - Bürgermeister Spitzzahn
 - Bürgermeister
-- Spitzzahn
 status: disputed
 ---
 
-Bürgermeister Spitzzahn ist ein Halbling, den die Gruppe in [Ringtal](/locations/ringtal.md) als Stadtoberhaupt antrifft. In den Verhandlungen mit ihr erweist er sich als Pragmatiker: Die Verteidigung der Stadt hat für ihn Vorrang vor den Wünschen der Ankömmlinge, und er knüpft Zugeständnisse an klare Bedingungen.
+Spitzzahn ist ein Halbling und Bürgermeister. Die Quellen bezeichnen ihn namentlich als Bürgermeister von [Ringtal](/locations/ringtal.md); zwei ältere Erwähnungen, die nur allgemein von einem Bürgermeister in [Gemata](/locations/gemata.md) beziehungsweise [Breska](/locations/breska.md) handeln, lassen sich nicht sicher mit ihm gleichsetzen (siehe [Offene Konflikte](#offene-konflikte)). Sein Auftreten ist pragmatisch und auf die Interessen seiner Stadt bedacht: Er fordert Gegenleistungen, ist aber zu Absprachen bereit, sobald die Bedingungen erfüllt sind.
 
-## Verhandlungen um die Aufnahme der Flüchtlinge
+## Verhandlungen mit der Heldengruppe
 
-Als die Gruppe mit einer großen Flüchtlingskarawane in Ringtal eintrifft, begegnet Spitzzahn ihr zunächst misstrauisch. Von den Ankömmlingen verlangt er Arbeit und zwei Säcke Gold als Entschädigung. Als [Sange](/characters/sange.md) die Forderung als unfair bezeichnet, verfinstert sich seine Miene, und er droht, die Gruppe draußen zu lassen. Erst nachdem Aaron die Zahlung übernimmt, akzeptiert er den Handel.
+Vor Ringtal trifft Spitzzahn auf die Gruppe, die eine große Flüchtlingskarawane begleitet. Er begegnet ihr misstrauisch und verlangt als Bedingung für die Aufnahme Arbeit und zwei Säcke Gold. Als [Sange](/characters/sange.md) die Forderung als unfair bezeichnet, verfinstert sich seine Miene; er droht, die Gruppe draußen zu lassen. Erst nachdem Aaron die Zahlung übernimmt, akzeptiert Spitzzahn den Deal.
 
-## Zugeständnisse an die Gruppe
-
-Später zeigt er sich gegenüber Brumas Vorschlag, ein Stück Land für ein Etablissement zu kaufen, aufgeschlossen und bietet das leerstehende Gebäude an, sofern die [Halblinge](/factions/halblinge.md) zustimmen. Die Wiederbelebung der alten [Gilde](/factions/gilde_von_ehrenfels.md) erlaubt er, warnt aber davor, eine zweite Taverne zu eröffnen. Für die Gründung einer Gilde ohne hohe Kosten stellt er die Bedingung, dass die Stadt überlebt; die Verteidigung Ringtals hat für ihn dabei Vorrang.
+Gegenüber [Bruma](/characters/bruma_stormrak.md) zeigt er sich später aufgeschlossen: Für dessen Vorschlag, ein Stück Land für ein Etablissement zu kaufen, bietet Spitzzahn das leerstehende Gebäude an, sofern die [Halblinge](/factions/halblinge.md) zustimmen. Die Wiederbelebung der alten [Gilde](/factions/gilde_von_ehrenfels.md) erlaubt er, warnt jedoch davor, eine zweite Taverne zu eröffnen. Eine Rückblende ergänzt, dass Spitzzahn angeboten hatte, eine Gilde ohne hohe Kosten aufzubauen, falls die Stadt überlebt; die Verteidigung Ringtals war seine Bedingung für die Gildengründung.
 
 # Belege
-1. Session 2025-04-23, 01:34:20 – https://www.youtube.com/watch?v=z3C-bewKqUs
-2. Session 2025-06-25, 00:05:10 – https://www.youtube.com/watch?v=tpkO9uGw6-I
-3. Session 2026-08-20, 00:11:18 – https://www.youtube.com/watch?v=2EkWrNUfQi0
-4. Session 2026-09-03, 00:09:36 – https://www.youtube.com/watch?v=bl-hX87_EC8
+1. Session 2025-04-23 @ 01:34:20 (https://www.youtube.com/watch?v=z3C-bewKqUs)
+2. Session 2025-06-25 @ 00:05:10 (https://www.youtube.com/watch?v=tpkO9uGw6-I)
+3. Session 2026-08-20 @ 00:11:18 (https://www.youtube.com/watch?v=2EkWrNUfQi0)
+4. Session 2026-09-03 @ 00:09:36 (https://www.youtube.com/watch?v=bl-hX87_EC8)
 
 # Offene Konflikte
-- Die Beleglage zum Amtssitz ist nicht eindeutig: [1] erwähnt den Bürgermeister von Gemata, [2] den Bürgermeister von Breska, jeweils ohne Namensnennung. [3] und [4] behandeln Spitzzahn als Bürgermeister von Ringtal. Ob die früheren namenlosen Bürgermeister mit Spitzzahn identisch sind, bleibt offen.
+- Beleg [1] nennt einen Bürgermeister von Gemata, der während einer Schlacht in seinem Haus bleibt; Beleg [2] schildert den Bürgermeister von Breska, der die Gruppe überschwänglich empfängt; Beleg [4] bezeichnet Spitzzahn als Bürgermeister von Ringtal. Ob Spitzzahn nacheinander in mehreren Orten amtierte oder ob [1] und [2] eine andere Person meinen, ist aus den Belegen nicht aufzulösen.

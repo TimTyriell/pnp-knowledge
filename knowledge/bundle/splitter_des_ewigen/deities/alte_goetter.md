@@ -16,7 +16,7 @@ aliases:
 
 Die Alten Götter sind ein Pantheon großer, unsterblicher und urzeitlicher Mächte. Sie herrschten einst allein über die Welt, bis ihre Macht zerbrach. In der Überlieferung wird ihnen nachgesagt, dass nur noch wenige Auserwählte ihre wahren Riten kennen.
 
-Im Götterkrieg wurden die Alten Götter von den Neuen Göttern besiegt, verdrängt und in eine dunkle Welt – den [Abyss](/domains/abyss.md) – verbannt. Seither streben sie danach, ihre Macht zurückzuerlangen. Ihre Anhänger versuchen, durch Risse in die Welt einzudringen; als Beispiel dafür wird ein beschworener [Miner-Dämon](/npcs/miner_daemon.md) genannt [1]. In den Erzählungen aus der Zeit des Königreichs Zebros heißt es, dass die Alten Götter vor einer kommenden Gefahr warnten, bevor die Neuen Götter erschienen [2].
+Im Götterkrieg wurden die Alten Götter von den Neuen Göttern besiegt, verdrängt und in eine dunkle Welt – den [Abyss](/domains/abyss.md) – verbannt. Seither streben sie danach, ihre Macht zurückzuerlangen. Ihre Anhänger versuchen, durch Risse in die Welt einzudringen; als Beispiel dafür wird ein beschworener [Miner-Dämon](/npcs/minen_daemon.md) genannt [1]. In den Erzählungen aus der Zeit des Königreichs Zebros heißt es, dass die Alten Götter vor einer kommenden Gefahr warnten, bevor die Neuen Götter erschienen [2].
 
 ## Rolle in der Kampagne
 

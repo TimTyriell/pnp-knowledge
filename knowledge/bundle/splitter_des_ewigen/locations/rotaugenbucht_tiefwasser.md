@@ -10,7 +10,7 @@ id: LOC_ROTAUGENBUCHT_TIEFWASSER
 subtype: Siedlung
 ---
 
-[Tiefwasser](/locations/tiefwasser.md) in der Rotaugenbucht ist ein weiterer Hafen, den die [Sandhorn-Inseln](/locations/sandhorn_inseln.md) nutzen. Im Gegensatz zu [Salzbach](/locations/salzbach.md) sind die Routen von dort aus sehr sicher. [Joar Vanur](/npcs/joar_vanur.md) nennt ihn als Alternative.
+[Tiefwasser](/locations/tiefwasser.md) in der Rotaugenbucht ist ein weiterer Hafen, den die [Sandhorn-Inseln](/locations/sanddorninseln.md) nutzen. Im Gegensatz zu [Salzbach](/locations/salzbach.md) sind die Routen von dort aus sehr sicher. [Joar Vanur](/npcs/joar_vanur.md) nennt ihn als Alternative.
 
 # Belege
 

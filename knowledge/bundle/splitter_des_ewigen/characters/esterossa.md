@@ -1,8 +1,8 @@
 ---
 type: Character
 title: Esterossa
-description: Esterossa ist ein geflügelter Seraph und Mitglied der Gefährten von Rotunas.
-  Er stammt aus dem Norden und ist von adeliger Herkunft; selbst…
+description: Esterossa ist ein männlicher Seraph der Unterklasse „Winged Sentinel“
+  und gehört zur Heldengruppe um Rotunas, Dodo und Lindo Laut. Er ist e…
 tags:
 - characters
 timestamp: '2026-08-12T00:00:00Z'
@@ -15,89 +15,67 @@ aliases:
 
 ## Überblick
 
-Esterossa ist ein geflügelter [Seraph](/npcs/seraph.md) und Mitglied der Gefährten von Rotunas. Er stammt aus dem Norden und ist von adeliger Herkunft; selbst sagt er, er sei „nur Paläste gewöhnt“. Innerhalb der Gruppe nimmt er die Rolle des Heilers, Unterstützers und Luftspähers ein. Er kämpft mit Axt, [Schwert](/items/schwert.md) oder Hammer, trägt eine glänzende Rüstung und setzt heilige Magie sowie Blitz- und Eismagie ein.
-
-Esterossa verehrt ausschließlich den neuen Gott Korn, den er auch als [Blutgott](/deities/korn.md) anspricht. Sein Glaube ist kriegerisch und blutig, prägt aber auch fürsorgliche und beschützende Seiten. Sein ständiger Begleiter ist die Katze [Ajani](/npcs/nairog_peri_ajani.md), die später von den Goblin-Göttern in [Günther](/npcs/katze_ajani_guenther.md) umbenannt wird. Im Verlauf der Kampagne übernimmt er das [Schwert von Huludan](/items/schwert_von_huludan.md), woraufhin seine Flügel eine lila Färbung annehmen und Kristalle wachsen. Am Ende wird er im Kampf gegen [Vasul](/deities/vharzul.md) zum Kanal des Splitters des Ewigen und stirbt.
+Esterossa ist ein männlicher [Seraph](/npcs/seraph.md) der Unterklasse „Winged Sentinel“ und gehört zur Heldengruppe um [Rotunas](/characters/rotunas.md), [Dodo](/characters/dodo.md) und [Lindo Laut](/characters/lindo_laut.md). Er ist ein geflügelter Kämpfer und Heiler, der schwere Rüstung trägt und im Kampf Axt, Hammer, [Schwert](/items/schwert.md) und Schild führt. Seine göttliche Bindung gilt seit jeher ausschließlich dem neuen Gott [Korn](/deities/korn.md), der auch als [Blutgott](/deities/korn.md) bezeichnet wird. Esterossa verehrt ihn mit Gebeten, Blutopfern und der Überzeugung, dass [Krieg](/characters/krieg.md) und Kampf seinen Segen verdienen. Sein Begleiter ist eine Katze, die zunächst Adjani hieß und später in [Günther](/npcs/katze_ajani_guenther.md) umbenannt wurde; im Verlauf der Kampagne bezeichnet er [Ajani](/npcs/nairog_peri_ajani.md) als ihren wahren Namen.
 
 ## Rolle in der Kampagne
 
-Esterossa ist von Beginn an ein zentrales Mitglied der Heldengruppe. Seine Hauptaufgabe ist die Heilung und der Schutz der Gefährten: Immer wieder bringt er [Dodo](/characters/dodo.md), [Rotunas](/characters/rotunas.md), [Cookie](/characters/cookie.md) oder andere durch Heilzauber zurück in den Kampf. Durch seine Flugfähigkeit späht er aus der Luft, klärt Feindstellungen auf und trägt Verbündete über Hindernisse. In Verhandlungen übernimmt er mehrfach das Wort, etwa gegenüber [Joar Vanur](/npcs/joar_vanur.md) oder später bei diplomatischen Missionen.
-
-Im späteren Kampagnenverlauf rückt seine religiöse und mythologische Bedeutung stärker in den Vordergrund: Er befreit [Nerash](/deities/nerash.md) aus der [Zwischenebene](/domains/zwischenebenen.md), misstraut den alten Göttern, sucht Rat bei Korn, versöhnt sich mit [Lindo Laut](/characters/lindo_laut.md) und wird schließlich zentral für das Finale um den [Splitter des Ewigen](/items/splitter_des_ewigen.md). Sein Opfergang und Tod markieren das Ende der [Abyssalis](/domains/splitterwelt.md)-Mission und werden von der Gruppe und der Bevölkerung betrauert.
+Esterossa ist über weite Strecken der zentrale Heiler und mobile Beschützer der Gruppe. In den frühen Abenteuern übernimmt er oft die Rolle des Spähers und Nahkämpfers, der aus der Luft angreift und Gegner ausschaltet. Später tritt er zunehmend als frommer Unterstützer auf, der Verbündete heilt, Schaden abwendet und mit Magie das [Schlachtfeld](/locations/schlachtfeld.md) formt. Er zeigt militärisches Denken, taktisches Geschick und eine tiefe Loyalität zu seinen Gefährten. In Verhandlungen tritt er mehrfach als redegewandter Vertreter auf, bleibt aber stets kampfbereit. Im Finale opfert er sich, um den [Splitter des Ewigen](/items/splitter_des_ewigen.md) zu berühren, kämpft gegen [Vorgultars](/deities/vorgul_tar.md) Kreaturen und stirbt in [Dodo](/characters/dodo.md) Armen. Sein Tod wird von der Gruppe und der Bevölkerung betrauert.
 
 ## Wichtige Merkmale
 
 ### Fähigkeiten
 
-Esterossa beherrscht als [Seraph](/npcs/seraph.md) der Unterklasse Winged Sentinel den Flug. Im Kampf setzt er heilige Magie ein, darunter Heilzauber wie Mending Touch, Healing Hands, goldenen Nebel und Life Guard. Er kann Blitze wirken (Thunderbolt, Bolt Beacon) und seinen Lichtzauber mit Frost modifizieren, etwa um eine nasse Amphibienkreatur erstarren zu lassen. Mit Shape Material formt er Stein, Holz oder Metall um: Er verstärkt Tore mit Stahl, erschafft Steinwände, Türen, Treppen, Schlafräume und verengt Pässe. Weitere genannte Fähigkeiten sind Winged Sentinel beziehungsweise [Ring](/items/ring.md) Sentinel, Fearless, Second Wind und Ready-Dive.
+- **Flug**: Esterossa besitzt große Flügel, mit denen er vorausfliegt, Gegner aus der Luft angreift und Gefährten trägt.
+- **Heilung**: Er wirkt Mending Touch, Healing Hands, Life Guard und goldenen Nebel, um Verbündete zu heilen oder vor Schaden zu schützen.
+- **Blitz- und Donnermagie**: Er setzt Bolt Beacon und Thunderbolt ein; mit einem kritischen Thunderbolt verbrennt er einem Attentäter beide Beine unterhalb der Knie.
+- **Eis- und Frostmagie**: Er kanalisiert Kälte, um Gegner zu verlangsamen oder festzusetzen, etwa gegen eine Wasseramphibie.
+- **Shape Material**: Er formt Steinwände, Türen, Treppen und verstärkt Barrikaden mit Stahl.
+- **Winged Sentinel**: Seine Unterklassenfähigkeit setzt er für zusätzlichen Schaden und Schutz ein.
+- **Fearless und Second Wind**: Er tauscht Würfel für Hope-Punkte und erholt sich im Kampf.
+- **Prey Dice und Gebet**: Durch Gebete zu Korn erhält er Prey Dice, kann Schaden von Verbündeten abwenden und sich in einen euphorischen Blutrausch versetzen.
 
-Sein Gebet zu Korn ist ein aktiver Teil seines Kampfstils. Er verwendet Prayer Dice oder Prey Dice, um Schaden zu reduzieren, Heilung zu wirken oder andere zu unterstützen. Ein überliefertes Gebet lautet:
+### Auftreten
 
-> „Blut für den Blutgott, Ehre im Kampf und möge mein Feind zuerst fallen. Korn führe meine Hand, stärke mein Herz und trinke vom Blut der Gefallenen. Kein Frieden, nur [Krieg](/characters/krieg.md), auf das mein Stahl deine Gunst verdient.“
+Esterossa erscheint als geflügelter Krieger mit weißem Haar und glänzender Rüstung. Seine Flügel sind zunächst von hellem Glanz, verfärben sich jedoch später lila, als er das Schwert von [Huludan](/deities/huludan.md) übernimmt; dabei wachsen Kristalle an den Flügeln, ohne dass er die Flugfähigkeit verliert. Nach der Berührung des Splitters des Ewigen verliert sein Körper die Farbe, nur ein roter Schimmer bleibt, und rote Lichtfäden verbinden ihn mit dem [Kristall](/items/gruener_kristall.md).
 
-Daneben führt er Blutopfer durch: In der Krypta schneidet er sich in die Hand und beschwört mit dem Blut eine Feuerkreatur. Im Kampf ruft er „Blut für meinen Blutgott“ und opfert Blut für seine Gottheit.
+### Wesenszüge
 
-### Auftreten und Wesen
-
-Esterossa ist geflügelt und trägt weißes Haar. Seine Rüstung wird als glänzend und imposant beschrieben. Er gilt als charismatisch und übernimmt häufig soziale Führung, ist aber anfangs distanziert, bisweilen leicht arrogant und auf Etikette bedacht. Im Verlauf zeigt er eine weichere Seite: Beim Fest unter den Flüchtlingen wird er angesichts der zufriedenen Gesichter hoffnungsvoller, obwohl er durch seine Anbetung an Korn „bisher nur den Krieg gewohnt“ war.
-
-Gegenüber alten Göttern ist er misstrauisch. Über die alten Götter sagt er: „Alte Götter, die sind dir gefallen, gibt's nicht mehr.“ Gleichzeitig ist er fromm, experimentierfreudig und ein Veteran, der nach eigener Aussage als Militär-Experte in vielen Kriegen mitgekämpft hat. Seine Grausamkeit im Namen des Blutgottes zeigt sich unter anderem im Umgang mit [Goblins](/npcs/pilz_goblins.md); dennoch wächst im Laufe der Kampagne seine Loyalität zur Gruppe, besonders zu Dodo, den er als Bruder ansieht.
-
-Nach der Übernahme des Schwerts von [Huludan](/deities/huludan.md) verändern sich seine Flügel: Sie verfärben sich lila, Kristalle wachsen, und der weiße Glanz weicht einem trüben Lila. Er kann weiterhin fliegen und fühlt sich „leichter denn je“. Im Finale verliert sein Körper die Farbe, nur ein roter Schimmer bleibt, und rote Lichtfäden verbinden ihn mit dem [Kristall](/items/gruener_kristall.md).
-
-### Begleiter
-
-Esterossas treuer Begleiter ist die Katze Ajani. Er freundet sich in einer Taverne mit ihr an, später wird sie von den Goblin-Göttern in Günther umbenannt. Er kümmert sich um sie, lässt sie vor dem Gildenhaus warten und versöhnt sich mit ihr beim Fest. In einer späteren Situation verwandelt er heimlich Nyrellas Wein in Traubensaft, was seine Fürsorge für Gefährten unterstreicht.
+Esterossa ist fromm, experimentierfreudig und pragmatisch. Er zeigt Initiative und Kampfstärke, handelt jedoch auch vorsichtig und taktisch. Gegenüber Fremden kann er distanziert oder leicht arrogant wirken, entwickelt aber tiefe brüderliche Bindungen, besonders zu Dodo. Er ist loyal und opferbereit, stellt sich schützend vor Gefährten und zögert nicht, sein eigenes Leben einzusetzen. Wiederholt zeigt er Mitgefühl, etwa als er um die verstorbene [Cookie](/characters/cookie.md) trauert oder verwundete Gegner stabilisiert.
 
 ## Beziehungen und Verbindungen
 
-- **[Dodo](/characters/dodo.md):** Esterossa und Dodo verbindet eine brüderliche Bindung. Esterossa rettet oder heilt Dodo mehrfach, trägt ihn über Dächer und schützt ihn mit Wänden oder goldenen Schilden. Dodo begleitet Esterossa im Sterben und sagt später, er sei „an Ordnung“, obwohl Dodo sonst religiöse Menschen nicht mag.
-
-- **[Lindo Laut](/characters/lindo_laut.md):** Die Beziehung ist wechselhaft. Esterossa misstraut Lindo Laut zeitweise, fordert Erklärungen, versöhnt sich aber nach seiner Pilgerschaft: Er kniet symbolisch nieder, gelobt ihm Schild und Schwert und vergibt ihm. Lindo Laut versucht später, Esterossas Seele mit einem Seelenstein zu fangen, doch der Stein zerbricht.
-
-- **[Rotunas](/characters/rotunas.md):** Esterossa gehört zu den Gefährten von Rotunas, unterstützt ihn diplomatisch und heilt ihn nach Angriffen. Beim Turnier und in Verhandlungen agieren sie gemeinsam.
-
-- **[Cookie](/characters/cookie.md):** Gemeinsame Kämpfe und Sammlungen prägen die Beziehung. Nach Cookies Tod schlägt Esterossa vor, das Anwesen zu Ehren von Cookie zu benennen, und bezahlt später einen [Marktschreier](/npcs/marktschreier.md) dafür, Cookies Heldentod und den Sieg der Gruppe in der [Arena](/locations/arena.md) zu verbreiten.
-
-- **[Lunara Velora](/characters/lunara_velora.md):** Zunächst misstrauisch gegenüber der neuen Hexe, stellt er gezielte Fragen und hält Distanz. Später vertraut er ihr, folgt ihrer Führung und hilft ihr, ihren Bruder zu retten.
-
-- **[Nyrella](/characters/nyrella.md):** Esterossa heilt ihren Eisbären [Nyruk](/npcs/nyruk.md) und sorgt sich um Nyrella, indem er sie vor zu viel Alkohol bewahrt.
-
-- **[Landra](/npcs/lenra.md):** Esterossa erhält von Landra einen magischen [Schlüssel](/items/magischer_schluessel.md).
-
-- **[Joar Vanur](/npcs/joar_vanur.md):** Esterossa verhandelt mit Joar Vanur und handelt einen Deal zur Freilassung Guldraks aus, hält dabei Informationen zurück.
-
-- **[Korn](/deities/korn.md):** Esterossas ausschließlicher Gott, der Blutgott. Er betet zu Korn, erhält blutige Zeichen und Euphorie im Kampf. In der Zwischenebene kann er keine Verbindung zu Korn herstellen, was ihn verunsichert.
-
-- **[Vasul](/deities/vharzul.md):** In der Zwischenebene befreit Esterossa Nerash und theoretisiert, Vasul sei der Herrscher der Zwischenebene und der Fährmann. Später stellt er sich gegen Vasul, durchschlägt dessen Kristall und wird selbst zum Kanal des Splitters.
-
-- **[Nerash](/deities/nerash.md):** Esterossa befreit Nerash in der Zwischenebene, trägt später ein Totem oder eine kleine Statue von ihr bei sich und bittet sie im Kampf um Hilfe.
-
-- **[Huludan](/deities/huludan.md):** Esterossa übernimmt das Schwert von Huludan, das seine Flügel verändert und später zum leeren Schwert wird, aus dem seine Waffe entsteht.
+- **[Dodo](/characters/dodo.md)**: Esterossa bezeichnet Dodo als Bruder. Die beiden kämpfen Seite an Seite; Esterossa rettet Dodo mehrfach mit Heilung, Wards und goldenem Schild. In seinem letzten Moment reicht er Dodo die Hand, und Dodo spricht ihm den Abschied: „Du bist der Stärkste, den ich kenne. Ich werde nie wieder so einen tollen Kampfpartner haben wie dich.“
+- **[Lindo Laut](/characters/lindo_laut.md)**: Anfangs misstrauisch gegenüber [Lindo Lauts](/characters/lindo_laut.md) Geheimnissen, später kniet er symbolisch vor ihm nieder, gelobt Schild und Schwert und vergibt ihm. Er unterstützt Lindo mit Schutzzaubern und Heilung.
+- **[Cookie](/characters/cookie.md)**: Esterossa heilt Cookie mehrfach und zeigt sich nach ihrem Tod tief betroffen. Er schlägt vor, das Anwesen zu Ehren von Cookie zu benennen, und bezahlt später einen [Marktschreier](/npcs/marktschreier.md), um Cookies heldenhaften Tod und den Sieg der Gruppe zu verbreiten.
+- **[Rotunas](/characters/rotunas.md)**: Esterossa heilt Rotunas’ Verletzungen, leiht ihm ein [Goblin-Buch](/items/goblin_buch.md) und kämpft an seiner Seite. Er betont, dass das Leben des Zwergenlords oberste Priorität habe.
+- **[Nyrella](/characters/nyrella.md)**: Er heilt Nyrellas gestressten Eisbären [Nyruk](/npcs/nyruk.md) und erhält über Günther eine Nachricht von Nyrella.
+- **[Lunara Velora](/characters/lunara_velora.md)**: Anfangs misstrauisch und mit gezielten Fragen, entwickelt er später Vertrauen und folgt ihrer Führung, insbesondere in [Abyssalis](/domains/splitterwelt.md) und an der [Narbe](/locations/narben.md).
+- **Günther / Adjani**: Seine Katze ist sein Begleiter; er lässt sie vor dem Gildenhaus warten und kümmert sich um sie.
+- **[Korn](/deities/korn.md) / Blutgott**: Esterossa betet regelmäßig zu Korn, opfert Blut und erhält dafür göttliche Unterstützung. Sein Gebet lautet: „Blut für den Blutgott, Ehre im Kampf und möge mein Feind zuerst fallen. Korn führe meine Hand, stärke mein Herz und trinke vom Blut der Gefallenen. Kein Frieden, nur Krieg, auf das mein Stahl deine Gunst verdient.“
+- **[Nerash](/deities/nerash.md)**: Er trägt eine kleine [Statue von Nerash](/items/statue_von_nerash.md) bei sich, betet in kritischen Momenten zu ihr und versucht, ihre Hilfe zu erbitten.
+- **[Huludan](/deities/huludan.md)**: Nach der [Zerstörung des Rings](/events/zerstoerung_des_rings.md) übernimmt er das [Schwert von Huludan](/items/schwert_von_huludan.md); seine Flügel verfärben sich lila und Kristalle wachsen.
+- **[Vasul](/deities/vharzul.md)**: Er misstraut [Vasul](/deities/vharzul.md) zunächst, erkennt später dessen Plan als Bedrohung und zerschlägt im Finale den Kristall in Vasuls Hand.
+- **[Vorgultar](/deities/vorgul_tar.md)**: Im Finale kämpft er gegen Vorgultars Kreaturen und verliert dabei Stücke seiner Flügel.
 
 ## Chronologie
 
-Esterossa tritt von Beginn an an der Seite der Gefährten von Rotunas auf. In frühen Kämpfen agiert er aus der Luft, nutzt Axt und heilige Magie und zeigt erste Blutrituale gegenüber Korn. Bei Verhandlungen auf den [Sandhorn-Inseln](/locations/sandhorn_inseln.md) übernimmt er soziale Führung, verhandelt mit Joar Vanur und handelt die Freilassung Guldraks gegen Informationen aus. Dabei hält er gegenüber Joar Vanur bewusst Informationen zurück, insbesondere die Kirche betreffend.
+In den frühen Abenteuern kämpft Esterossa gegen ein Monster im [Sumpf](/locations/sumpf_vor_dem_goblin_dorf.md), tötet das Goblin-Kind durch Genickbruch und führt in der Krypta ein Blutopfer durch, um eine Feuerkreatur zu beschwören. In der Burg von [Ehrenfels](/locations/ehrenfels.md) entdeckt er als Erster die [Goblins](/npcs/pilz_goblins.md), ruft „Blut für meinen Blutgott“ und tötet zwei Gegner mit einem Doppelangriff. In der Taverne freundet er sich mit der Katze Adjani an und verhandelt mit [Joar Vanur](/npcs/joar_vanur.md) sowie [Gulrak](/npcs/gulrak.md). An der Schlucht wird er von einem Gnollpfeil getroffen, fängt sich aber mit den Flügeln; in der [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) heilt er den verwundeten Ritter [Brandon](/npcs/brandon.md) und packt die alte Bibel ein.
 
-In den folgenden Sessions vertieft sich sein religiöses Profil: Er kennt die Geschichte des heiligen [Duran](/deities/heiliger_duran.md), packt eine alte Bibel vorsichtig ein, betet zu Korn und zeigt Misstrauen gegenüber den alten Göttern. In der Zwischenebene kann er keine Verbindung zu Korn herstellen. Er rät zunächst vom Berühren dunkler Gegenstände ab, ergreift dann jedoch den Speer und zerschlägt Ketten, um Nerash zu befreien. Er vertraut dabei auf sein Herz, obwohl [Lindo Laut](/characters/lindo_laut.md) zögert.
+In den folgenden Kämpfen vernichtet er [Skelett-Bogenschützen](/npcs/skelett_bogenschuetzen.md) mit einem Blitz, übersteht den Feuerregen eines Dämons, indem er sein heiliges Emblem ergreift, und spaltet ein Skelett mit seiner magischen Axt. Er kanalisiert Eismagie gegen eine Wasseramphibie und heilt den verletzten [Brass](/npcs/brass.md). In der [Zwischenebene](/domains/zwischenebenen.md) kann er keine Verbindung zu Korn herstellen, rät von dunklen Gegenständen ab, ergreift aber den Speer, um die gefangene [Nerash](/deities/nerash.md) zu befreien. Im Kampf gegen einen [Kenku](/npcs/kenku_bote.md) lacht er die Gegner aus und verwundet den Kenku entscheidend, bevor Dodo den Todesstoß ausführt.
 
-Während der Verteidigung eines Passes formt er eine Steinwand, verengt den Pass und legt Dodo einen Ward auf. Beim anschließenden Fest zeigt er eine weichere Seite und versöhnt sich mit seiner Katze Ajani. Beim Kampf gegen einen Golem übernimmt er taktische Führung und schlägt vor, den Golem mit grünen Kristallen zu bewerfen. Im Turnier betet er zu Korn, erhält einen Blutrausch und wird als „der geflügelte Schrecken“ bekannt. Er tötet eine Phasenspinne, wird jedoch von Säure vergiftet und kann am folgenden Dungeon nicht teilnehmen.
+Während der Verhandlungen mit [Harl](/npcs/hal_harl.md) beteiligt er sich an der Verteidigung des Passes, formt eine Steinwand mit Guckloch und legt Dodo einen Ward auf. Beim Fest zeigt er eine weichere Seite und versöhnt sich mit seiner Katze. Beim Kampf gegen den Golem agiert er taktisch, konzentriert sich auf die Gliedmaßen und schlägt vor, den Golem mit grünen Kristallen feueranfällig zu machen. Im Turnier kämpft er gegen einen Werwolf und eine Phasenspinne, wird von Säure getroffen und bleibt vergiftet zurück, weshalb er den nächsten Dungeon nicht betreten kann.
 
-Nach Cookies Tod fliegt er voraus und nimmt Kontakt zu Goblins auf; er schlägt vor, das Anwesen zu Ehren von Cookie zu benennen, und erschafft mit Shape Material einen Schlafraum. Gegenüber der neuen Hexe [Lunara Velora](/characters/lunara_velora.md) bleibt er zunächst misstrauisch. In Kämpfen gegen Schattenkreaturen, ein Seelenkalb und untote Armeen agiert er als Heiler und Späher. Er entdeckt eine Armee im Rückzug, heilt Dodo und Rotunas mehrfach und stabilisiert später einen Soldaten, der eine [Schriftrolle](/items/schriftrollen.md) stehlen will.
+Später erkundet er ein Anwesen, schlägt vor, es zu Ehren der verstorbenen Cookie zu benennen, und erschafft im Untergeschoss einen Schlafraum. Er begegnet der neuen Hexe Lunara zunächst misstrauisch, bezahlt aber später einen Marktschreier für Cookies Ruhm. Nach einer Pilgerschaft, bei der er Rat bei Korn sucht, kehrt er zurück, kniet vor Lindo Laut nieder und unterstützt den Plan, nach [Ehrenfels](/locations/ehrenfels.md) zu reisen. In Abyssalis agiert er vorsichtig und will unauffällig bleiben.
 
-In den Kämpfen um die Verteidigung von [Ehrenfels](/locations/ehrenfels.md) zerstört er magische Statuen, verstärkt Tore mit Stahl, befreit Rotunas aus einer Schädelhorde und stellt sich schützend vor die Gruppe. Danach ist er laut Dodo zeitweise in Ehrenfels, wo er auf einen neuen Freund aufpasst. Er kehrt nach wochenlanger Pilgerschaft zurück, hat aber nur vage Antworten von Korn erhalten. Er versöhnt sich mit Lindo Laut, kniet symbolisch nieder und gelobt ihm Schild und Schwert.
+In der Narbe trägt er Dodo und Lunara über den Geisterfluss, erschafft eine Treppe mit Shape Material und kämpft gegen die Horde. Sein magisches Schwert reagiert auf die Kristalle in der Höhle und lädt sich auf; später durchschlägt es die heilige Waffe eines Seraphen. Nach dem Kampf gegen die Seraphen verschwindet er zeitweise; die Gruppe hält ihn für möglicherweise gefallen, doch er stößt nach seinem Zusammenbruch am Pass wieder zur Gruppe, vom Raben Vasuls geweckt.
 
-In Abyssalis kämpft er gegen [Dormak](/npcs/dormak.md), zieht Steinwände hoch und heilt. Im weiteren Verlauf zerstört er einen Altar und hilft bei der Bergung einer Statue. Als er einem Seraphen die [Statue von Nerash](/items/statue_von_nerash.md) zeigt, erkennt er, dass Nerash und Vasul zusammengearbeitet haben. Er übernimmt das Schwert von Huludan; seine Flügel verfärben sich lila, Kristalle wachsen, aber er kann noch fliegen.
-
-Nach einem Kampf gegen Seraphen gilt er kurzzeitig als verschwunden, kehrt aber vom Raben Vasuls geweckt zurück. Im Finale entscheidet er sich gegen Vasul, zerschlägt den Kristall in dessen Hand und saugt dessen Energie in sein Schwert. Der Hauptsplitter des Ewigen ergreift Besitz von ihm; er wird zum Kanal für das weltverändernde Ereignis.
-
-In der letzten Schlacht berührt er den Splitter, verliert seine Körperfarbe und kämpft geschwächt gegen [Vorgultars](/deities/vorgul_tar.md) Kreaturen. Er kappt die Verbindung, die Ulnavar kontrolliert, und stirbt schließlich in Dodos Armen. [Lindo Laut](/characters/lindo_laut.md) versucht, seine Seele mit einem Seelenstein zu fangen, doch der Stein zerbricht, und nur ein Lachen ertönt. Später gedenkt die Menge seiner still, und Dodo erhebt sein Glas „auf Esterossa“.
+Im Finale entscheidet er sich gegen Vasul, fliegt zu ihm und zerschlägt den kleinen Kristall in dessen Hand. Vasuls Energie wird in das Schwert gesogen. Als der Hauptsplitter versucht, von ihm Besitz zu ergreifen, widersteht er nicht dauerhaft: Seine Augen werden lila, er grinst und berührt den Kristall. Er wird zum Kanal für das weltverändernde Ereignis. Später berührt er den Splitter des Ewigen, sein Körper verliert die Farbe, und er kämpft gegen Vorgultars Kreaturen. Vor dem Tempel kappt er die Verbindung, die Ulnavar kontrolliert, und ermöglicht dessen Befreiung. Er stirbt in Dodos Armen; sein Lächeln erstarrt, seine Hand erschlafft. Lindo Laut versucht, seine Seele mit dem Seelenstein zu fangen, aber der Stein zerbricht, und nur ein Lachen ertönt. Seine Waffe, die aus dem leeren Schwert von [Huludan](/deities/huludan.md) entstanden ist, wird von Lindo mitgenommen. In der Folge wird Esterossa in Reden und Trinksprüchen als gefallener Held geehrt.
 
 ## Offene Fragen
 
-- Was genau mit Esterossa nach der Berührung des Splitters des Ewigen geschah, bleibt unklar. Seine Seele war nicht fassbar; der Seelenstein zerbrach, und nur ein Lachen ertönte.
-- Warum Esterossa in der Zwischenebene keine Verbindung zu Korn herstellen konnte, wird nicht erklärt.
-- Der Inhalt seiner Pilgerschaft bleibt vage: Er suchte Rat bei Korn und erhielt nur vage Antworten.
+- Das Schicksal von Esterossas Seele nach dem Zerbrechen des Seelensteins ist ungeklärt; nur ein Lachen ist zu hören.
+- Die genaue Natur seiner Verwandlung durch den Splitter des Ewigen und die Folgen für die von Lindo mitgenommene Waffe bleiben offen.
+- Was Esterossa während seiner Pilgerschaft von Korn erfuhr, blieb vage; er selbst erhielt nur unklare Antworten.
 
 # Belege
 

@@ -1,29 +1,31 @@
 ---
 type: NPC
 title: Herr Raxlis
-description: Herr Raxlis ist ein älterer, einflussreicher Mann aus Kleinringtal. Er
-  wird in der Bedrohung durch die heranrückende Armee als Gesprächspar…
+description: Herr Raxlis ist ein älterer, einflussreicher Mann aus Ringtal, der in
+  den Wirren um die anrückende Bedrohung mehrfach in Erscheinung tritt.…
 tags:
 - npcs
 timestamp: '2026-09-03T00:00:00Z'
 id: NPC_HERR_RAXLIS
 aliases:
-- Herr Raxalis
 - Raxlis
+- Herr Raxalis
 ---
 
-Herr Raxlis ist ein älterer, einflussreicher Mann aus [Kleinringtal](/locations/ringtal.md). Er wird in der Bedrohung durch die heranrückende Armee als Gesprächspartner von [Tyron](/npcs/tyron.md) sichtbar und taucht später in [Hohenwehr](/locations/hohenwehr.md) sowie im Kriegsrat wieder auf. Sein genauer Titel oder seine Funktion werden in den Belegen nicht genannt.
+**Herr Raxlis** ist ein älterer, einflussreicher Mann aus [Ringtal](/locations/ringtal.md), der in den Wirren um die anrückende Bedrohung mehrfach in Erscheinung tritt. Er wird als alter bzw. älterer Herr beschrieben, der die Lage mit Galgenhumor nimmt und offenbar über gewissen Einfluss verfügt: Er beteiligt sich an strategischen Überlegungen, nimmt an einem Kriegsrat teil und begegnet dem Adligen Sir Tali mit tiefer Verbeugung, was auf einen großen Rangunterschied hindeutet.
 
-## Rolle in der Verteidigungsplanung
+## Rolle und Auftreten
 
-Raxlis hält [Kleinringtal](/locations/ringtal.md) für nicht verteidigungsfähig. Im Gespräch mit Tyron erwägt er deshalb, [Marie](/npcs/prinzessin_marie.md) in Sicherheit zu bringen und sich stattdessen in Hohenwehr zu sammeln. In Hohenwehr erläutert er [Sange](/characters/sange.md) die Lage: Dort seien genügend Leute versteckt, aber nicht genug für eine offene Feldschlacht gegen tausend [Gnolle](/factions/gnolle.md). Ringtal dürfe auf keinen Fall fallen, da sonst die Verbindung zu den Häfen und zur Insel [Entlegen](/locations/entlegen.md) abgeschnitten wäre. Ein Bote zur Verstärkung sei bereits entsandt worden. Später ist Raxlis im Kriegsrat anwesend und lächelt die anwesenden Helden an.
+Herr Raxlis agiert weniger als Kämpfer denn als Ratgeber und Organisator. Gegenüber [Tyron](/npcs/tyron.md) äußert er, dass Ringtal nicht verteidigungsfähig sei; gemeinsam erwägen die beiden, [Marie](/npcs/prinzessin_marie.md) in Sicherheit zu bringen und sich stattdessen in [Hohenwehr](/locations/hohenwehr.md) zu sammeln. Bei dieser Gelegenheit stellt er sich Bruma als Herr Raxlis vor.
 
-## Auftreten und Beziehungen
+Später kampiert er zusammen mit [Talron](/npcs/talron.md) in einem kleinen Zelt und nimmt die angespannte Situation mit Galgenhumor. Als Sir Tali mit seiner Begleitung eintrifft, verneigt sich Herr Raxlis tief – ein Zeichen für einen großen Rangunterschied zwischen ihm und dem Adligen. Bei einem Kriegsrat ist er ebenfalls anwesend und lächelt die versammelten Helden glücklich an; über seine genaue Rolle dort ist nichts weiter bekannt.
 
-Raxlis kampiert mit [Talron](/npcs/talron.md) in einem kleinen Zelt und begegnet der angespannten Situation mit Galgenhumor. [Bruma](/characters/bruma_stormrak.md) gegenüber stellt er sich als Herr Raxlis vor. Als Sir Tali mit seiner Begleitung eintrifft, verneigt er sich tief, was auf einen großen Rangunterschied zwischen den beiden hindeutet.
+## Strategische Einschätzung
+
+Im Gespräch mit [Sange](/characters/sange.md) erläutert Herr Raxlis die militärische Lage: In Hohenwehr seien genügend Leute versteckt, aber nicht genug, um gegen tausend [Gnolle](/factions/gnolle.md) eine offene Feldschlacht zu wagen. Ringtal dürfe auf keinen Fall fallen, da sonst die Verbindung zu den Häfen und zur Insel [Entlegen](/locations/entlegen.md) abgeschnitten wäre. Er berichtet außerdem, dass bereits ein Bote zur Verstärkung entsandt worden sei.
 
 # Belege
 
-1. Session vom 06.08.2026, 01:16:39 – [YouTube-Aufzeichnung](https://www.youtube.com/watch?v=0HyPHao8s_k)
-2. Session vom 20.08.2026, 01:02:28 – [YouTube-Aufzeichnung](https://www.youtube.com/watch?v=2EkWrNUfQi0)
-3. Session vom 03.09.2026, 03:08:48 – [YouTube-Aufzeichnung](https://www.youtube.com/watch?v=bl-hX87_EC8)
+1. Session 2026-08-06, 01:16:39 – https://www.youtube.com/watch?v=0HyPHao8s_k
+2. Session 2026-08-20, 01:02:28 – https://www.youtube.com/watch?v=2EkWrNUfQi0
+3. Session 2026-09-03, 03:08:48 – https://www.youtube.com/watch?v=bl-hX87_EC8

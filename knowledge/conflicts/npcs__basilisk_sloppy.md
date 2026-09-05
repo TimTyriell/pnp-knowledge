@@ -2,7 +2,7 @@
 type: Conflict
 title: 'Offener Konflikt: Basilisk Sloppy'
 description: Widersprüchliche Belege — menschliche Entscheidung nötig.
-timestamp: '2026-09-05T11:30:33+00:00'
+timestamp: '2026-09-05T16:46:10+00:00'
 id: CONFLICT_NPC_BASILISK_SLOPPY
 status: open
 concept: npcs/basilisk_sloppy

@@ -10,7 +10,7 @@ id: LOC_FREIBEUTERKNEIPE
 subtype: Gebäude
 ---
 
-Die zweite Taverne ist ein auf Grund gelaufenes Schiff und hat einen schlechteren Ruf. Hier verkehren [Freibeuter](/npcs/freibeuter_harald.md) und andere zwielichtige Gestalten. Die Gruppe trifft dort auf Harald und wird Zeuge eines Kampfes zwischen ihm und Soldaten [Willauchs](/locations/willauch.md).
+Die zweite Taverne ist ein auf Grund gelaufenes Schiff und hat einen schlechteren Ruf. Hier verkehren [Freibeuter](/npcs/freibeuter_harald.md) und andere zwielichtige Gestalten. Die Gruppe trifft dort auf [Harald](/npcs/abisalis_harald.md) und wird Zeuge eines Kampfes zwischen ihm und Soldaten [Willauchs](/locations/willauch.md).
 
 # Belege
 

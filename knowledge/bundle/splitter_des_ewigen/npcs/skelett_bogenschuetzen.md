@@ -17,11 +17,11 @@ Die Skelett-Bogenschützen sind untote Fernkämpfer, die der Gruppe in zwei getr
 
 - Als die Gruppe floh, beschossen zwergenartige Skelett-Bogenschützen sie von erhöhter Position mit Feuerpfeilen. [Cookie](/characters/cookie.md) und [Dodo](/characters/dodo.md) wurden mehrfach getroffen; die Angriffe ließen sich abwehren, und die Gruppe entkam dem Wirkungsbereich der Schützen.
 
-- Fünf Skelett-Bogenschützen erschienen aus einem Rift und gingen taktisch klug vor, indem sie Deckung suchten und aus der Ferne angriffen. [Esterossa](/characters/esterossa.md) und Cookie schalteten einen Teil von ihnen aus; die verbleibenden Skelette kollabierten, sobald der [Miner-Dämon](/npcs/miner_daemon.md) starb.
+- Fünf Skelett-Bogenschützen erschienen aus einem Rift und gingen taktisch klug vor, indem sie Deckung suchten und aus der Ferne angriffen. [Esterossa](/characters/esterossa.md) und Cookie schalteten einen Teil von ihnen aus; die verbleibenden Skelette kollabierten, sobald der [Miner-Dämon](/npcs/minen_daemon.md) starb.
 
 ## Kampfweise
 
-Die Skelett-Bogenschützen nutzten konsequent Distanz und Gelände: Sie schossen aus erhöhter Position beziehungsweise aus der Deckung und mieden den Nahkampf. Ihre Fernkampfangriffe zwangen die Gruppe in die Defensive und konnten einzelne Gefährten mehrfach treffen, erwiesen sich aber als abwehrbar. Als einzelne Gegner waren sie leicht zu besiegen. In der zweiten Begegnung war ihr Fortbestand an den Miner-Dämon gebunden: Mit dessen Tod fielen die übrig gebliebenen Skelette in sich zusammen.
+Die Skelett-Bogenschützen nutzten konsequent Distanz und Gelände: Sie schossen aus erhöhter Position beziehungsweise aus der Deckung und mieden den Nahkampf. Ihre Fernkampfangriffe zwangen die Gruppe in die Defensive und konnten einzelne Gefährten mehrfach treffen, erwiesen sich aber als abwehrbar. Als einzelne Gegner waren sie leicht zu besiegen. In der zweiten Begegnung war ihr Fortbestand an den [Miner-Dämon](/npcs/minen_daemon.md) gebunden: Mit dessen Tod fielen die übrig gebliebenen Skelette in sich zusammen.
 
 # Belege
 

@@ -10,7 +10,7 @@ id: EVENT_KAMPF_GEGEN_DIE_ROTE_ECHSE_VOR_DEM_TOR
 subtype: Kampf
 ---
 
-Eine große rote Echse stürmt auf das Tor der [Nebelwacht](/locations/nebelwacht.md) zu, während die Bogenschützen erfolglos Pfeile abfeuern. [Finn](/characters/finn.md) klettert auf die Mauer, lädt eine Balliste und tötet das Biest mit einem Schuss durch den Kopf. Dieser Erfolg beeindruckt [Trilo](/npcs/trilo.md) und führt dazu, dass die Gruppe für die Forschungsexpedition ausgewählt wird.
+Eine große rote Echse stürmt auf das Tor der [Nebelwacht](/locations/nebelwacht.md) zu, während die Bogenschützen erfolglos Pfeile abfeuern. [Finn](/characters/finn.md) klettert auf die Mauer, lädt eine Balliste und tötet das Biest mit einem Schuss durch den Kopf. Dieser Erfolg beeindruckt [Trilo](/npcs/trillo.md) und führt dazu, dass die Gruppe für die Forschungsexpedition ausgewählt wird.
 
 # Belege
 

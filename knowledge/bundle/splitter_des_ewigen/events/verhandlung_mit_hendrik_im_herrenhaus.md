@@ -10,7 +10,7 @@ id: EVENT_VERHANDLUNG_MIT_HENDRIK_IM_HERRENHAUS
 subtype: Verhandlung
 ---
 
-Im [Herrenhaus](/locations/herrenhaus.md) konfrontiert die Gruppe Gerda und [Hendrik](/npcs/hendrik.md). Nach einer emotionalen Rede von [Nina](/characters/nina.md) gibt Hendrik den Widerstand auf und verrät die Zahl der [Banditen](/factions/silberkerne.md), den Namen des Anführers und den geheimen Zugang. Er stimmt zu, die Familie im Schlafzimmer einzuschließen, um eine neutrale Zeugenrolle zu wahren.
+Im [Herrenhaus](/locations/herrenhaus.md) konfrontiert die Gruppe Gerda und [Hendrik](/npcs/hendrik_heinrich.md). Nach einer emotionalen Rede von [Nina](/characters/nina.md) gibt Hendrik den Widerstand auf und verrät die Zahl der [Banditen](/factions/silberkerne.md), den Namen des Anführers und den geheimen Zugang. Er stimmt zu, die Familie im Schlafzimmer einzuschließen, um eine neutrale Zeugenrolle zu wahren.
 
 # Belege
 

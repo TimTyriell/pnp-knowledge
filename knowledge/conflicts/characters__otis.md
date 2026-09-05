@@ -2,7 +2,7 @@
 type: Conflict
 title: 'Offener Konflikt: Otis'
 description: Widersprüchliche Belege — menschliche Entscheidung nötig.
-timestamp: '2026-09-05T11:30:32+00:00'
+timestamp: '2026-09-05T16:46:09+00:00'
 id: CONFLICT_CHAR_OTIS
 status: open
 concept: characters/otis

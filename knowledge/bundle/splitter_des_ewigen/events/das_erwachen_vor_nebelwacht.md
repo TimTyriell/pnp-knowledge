@@ -10,7 +10,7 @@ id: EVENT_DAS_ERWACHEN_VOR_NEBELWACHT
 subtype: Sonstiges
 ---
 
-Nach dem Kampf blinzelt die Gruppe und findet sich unversehrt am Eingang der [Nebelwacht](/locations/nebelwacht.md) wieder. [Trilo](/npcs/trilo.md) begrüßt sie erneut, als sei nichts geschehen, was auf eine Zeitschleife, Vision oder Illusion hindeutet. Der Spielleiter bestätigt, dass dies ein Foreshadowing war, und beendet die Session mit diesem Cliffhanger.
+Nach dem Kampf blinzelt die Gruppe und findet sich unversehrt am Eingang der [Nebelwacht](/locations/nebelwacht.md) wieder. [Trilo](/npcs/trillo.md) begrüßt sie erneut, als sei nichts geschehen, was auf eine Zeitschleife, Vision oder Illusion hindeutet. Der Spielleiter bestätigt, dass dies ein Foreshadowing war, und beendet die Session mit diesem Cliffhanger.
 
 # Belege
 

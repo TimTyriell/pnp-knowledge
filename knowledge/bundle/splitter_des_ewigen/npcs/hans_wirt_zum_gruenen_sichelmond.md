@@ -35,7 +35,7 @@ Hans tritt als lokaler Informationsgeber auf. Als die Gruppe ihn nach dem Weg na
 
 ## Chronologie
 
-- **Session 2026-03-18**: Die Gruppe kehrt in der Taverne „Zum grünen Sichelmond“ ein. Hans serviert Essen und Bier. Auf Lunara Veloras Frage, ob er den Weg nach Hartwacht kenne, gibt er eine ausführliche Wegbeschreibung: Man müsse an einem der Camps von Willauch vorbei (er rät zu Bucht), dann über einen gefährlichen Pass, in dem [Orks](/factions/orks.md), Varge und andere Kreaturen lauern; ein orkischer Führer sei dringend zu empfehlen. Außerdem erwähnt er die beiden Freibeuter Harald und dessen Maat.
+- **Session 2026-03-18**: Die Gruppe kehrt in der Taverne „Zum grünen Sichelmond“ ein. Hans serviert Essen und Bier. Auf Lunara Veloras Frage, ob er den Weg nach Hartwacht kenne, gibt er eine ausführliche Wegbeschreibung: Man müsse an einem der Camps von Willauch vorbei (er rät zu Bucht), dann über einen gefährlichen Pass, in dem [Orks](/factions/orks.md), Varge und andere Kreaturen lauern; ein orkischer Führer sei dringend zu empfehlen. Außerdem erwähnt er die beiden Freibeuter [Harald](/npcs/abisalis_harald.md) und dessen Maat.
 
 ## Offene Fragen
 

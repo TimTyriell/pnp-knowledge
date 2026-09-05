@@ -18,7 +18,7 @@ Sintra war im Amulett präsent und machte sich dort akustisch bemerkbar. Wie auc
 
 ## Vernichtung
 
-Am Ende der Begegnung wurde Sintra gemeinsam mit [Esua](/deities/esua.md) zerstört. Damit endete ihre Existenz im Amulett.
+Am Ende der Begegnung wurde Sintra gemeinsam mit [Esua](/npcs/esua.md) zerstört. Damit endete ihre Existenz im Amulett.
 
 # Belege
 

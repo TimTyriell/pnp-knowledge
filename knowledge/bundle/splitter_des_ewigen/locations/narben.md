@@ -16,7 +16,7 @@ aliases:
 
 ## Geografie und Zugang
 
-Die Narben liegen links von [Jalan](/locations/jalan.md) im Gebiet der [Erntefelder](/locations/erntefelder.md) von [Abyssalis](/domains/splitterwelt.md); [Kristallfelder](/locations/kristallfelder.md) durchziehen die Landschaft. Ein großer Berg versperrt den Zugang zu den Narben. In der Region liegen die Orte [Vorgulta](/deities/vorgul_tar.md) und [Liam](/npcs/liam_velora.md). [Tattrick](/npcs/tattrick.md) lebt dort in einem alten Turm.
+Die Narben liegen links von [Jalan](/locations/jalan.md) im Gebiet der [Erntefelder](/locations/erntefelder.md) von [Abyssalis](/domains/splitterwelt.md); [Kristallfelder](/locations/kristallfelder.md) durchziehen die Landschaft. Ein großer Berg versperrt den Zugang zu den Narben. In der Region liegen die Orte [Vorgulta](/deities/vorgul_tar.md) und [Liam](/npcs/liam_velora.md). [Tattrick](/npcs/tatrick.md) lebt dort in einem alten Turm.
 
 ## Ereignisse um den Splitter des Ewigen
 

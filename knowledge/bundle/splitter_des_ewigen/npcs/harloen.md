@@ -20,7 +20,7 @@ Als die Gruppe die [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) aufsucht
 
 ## Offene Skepsis
 
-Bei einer späteren Begegnung stellt sich Harloen gemeinsam mit Pyrandras und [Orlanius](/npcs/orlanius_schwarzohr.md) der Kapelle entgegen. Im Vorbeigehen flüstert er Lindo zu: „Gibt's die überhaupt?“ – offenbar bezogen auf die neuen Götter. Die Bemerkung bestätigt seine ablehnende Haltung gegenüber der von den neuen Machthabern verordneten Nerash-Verehrung.
+Bei einer späteren Begegnung stellt sich Harloen gemeinsam mit Pyrandras und [Orlanius](/npcs/orlanius_schwarzhorn.md) der Kapelle entgegen. Im Vorbeigehen flüstert er Lindo zu: „Gibt's die überhaupt?“ – offenbar bezogen auf die neuen Götter. Die Bemerkung bestätigt seine ablehnende Haltung gegenüber der von den neuen Machthabern verordneten Nerash-Verehrung.
 
 # Belege
 

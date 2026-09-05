@@ -43,7 +43,7 @@ Tindrael tritt in zwei klar getrennten Phasen der Kampagne auf. Zunächst begegn
 
 # Chronologie
 
-- **Session 2025-04-09**: Die Heldengruppe findet die entlaufene [Ziege Bertie](/npcs/ziege_bertie.md) und bringt sie zu Tindrael, der sich als Autoritätsperson vorstellt. Er bürgt für die Helden gegenüber Wachen und Bürgermeister [Berthold](/npcs/berthold.md), begleitet sie ins [Wirtshaus](/locations/wirtshaus.md) und unterstützt die Verteidigung von Breska bis zum Ende ([P-03]).
+- **Session 2025-04-09**: Die Heldengruppe findet die entlaufene [Ziege Bertie](/npcs/ziege_bertie.md) und bringt sie zu Tindrael, der sich als Autoritätsperson vorstellt. Er bürgt für die Helden gegenüber Wachen und Bürgermeister [Berthold](/npcs/berthold.md), begleitet sie ins Wirtshaus und unterstützt die Verteidigung von Breska bis zum Ende ([P-03]).
 
 - **Zwischen den Begegnungen**: Breska wird zerstört; der Bürgermeister wird ermordet. Tindrael überlebt und wird zu einem Vampir, der in der Gruft dient; er ist körperlich nun deutlich kräftiger, behält aber seine schmale Gestalt ([P-40]).
 

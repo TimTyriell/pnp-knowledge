@@ -17,11 +17,11 @@ Hans ist ein menschlicher, schwer gepanzerter Soldat aus [Breska](/locations/bre
 
 ## Rolle in der Kampagne
 
-Hans dient in beiden Sessions als Auslöser für zentrale Konflikte. Bei der ersten Begegnung führt seine Rettung die Gruppe zu einer verlorenen Botschaft und einer Schriftrolle, die er schließlich an sich reißen will. Bei der zweiten Begegnung ist er selbst der Überbringer einer [Botschaft von Belorus](/items/botschaft_von_belorus.md); sein grüner Kristall setzt den Schreckensritter und den Schädel frei. Durch seine Aussagen und sein Auftreten wird die Verbindung zwischen [Breska](/locations/breska.md), [Lord Voras](/npcs/lord_voras.md), Belorus und der Bedrohung durch die Untoten für die Gruppe greifbar.
+Hans dient in beiden Sessions als Auslöser für zentrale Konflikte. Bei der ersten Begegnung führt seine Rettung die Gruppe zu einer verlorenen Botschaft und einer Schriftrolle, die er schließlich an sich reißen will. Bei der zweiten Begegnung ist er selbst der Überbringer einer [Botschaft von Belorus](/items/botschaft_von_belorus.md); sein grüner Kristall setzt den Schreckensritter und den Schädel frei. Durch seine Aussagen und sein Auftreten wird die Verbindung zwischen [Breska](/locations/breska.md), [Lord Voras](/npcs/voras.md), Belorus und der Bedrohung durch die Untoten für die Gruppe greifbar.
 
 ## Wichtige Merkmale
 
-- Mensch, schwer gepanzert, Soldat aus Breska; in der zweiten Begegnung trägt er das Wappen von [Voras](/npcs/voras.md).
+- Mensch, schwer gepanzert, Soldat aus Breska; in der zweiten Begegnung trägt er das Wappen von Voras.
 - Wirkt nervös und panisch; spricht mit zittriger Stimme, mehr flüsternd als sprechend.
 - Nach einer Wiederbelebung durch [Lunara Velora](/characters/lunara_velora.md) zeigt er Gedächtnisverlust und eine veränderte Wesensart; er erinnert sich nur noch an ein Festmahl, bevor alles dunkel wurde.
 - Vor seinem Beinahe-Tod erbricht er grüne Fetzen, was auf eine unnatürliche Ursache hindeutet.

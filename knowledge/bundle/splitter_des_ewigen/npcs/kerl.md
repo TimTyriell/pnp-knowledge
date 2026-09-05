@@ -21,5 +21,5 @@ Später ist Kerl nicht mehr Wache des Bürgermeisters, sondern Leibgarde des Gra
 
 # Belege
 
-- Session 2025-04-09 @ 00:17:25: https://www.youtube.com/watch?v=1PWdwvun5ow
-- Session 2025-06-25 @ 00:18:44: https://www.youtube.com/watch?v=tpkO9uGw6-I
+[1] Session 2025-04-09 @ 00:17:25: https://www.youtube.com/watch?v=1PWdwvun5ow
+[2] Session 2025-06-25 @ 00:18:44: https://www.youtube.com/watch?v=tpkO9uGw6-I

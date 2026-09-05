@@ -10,7 +10,7 @@ id: ITEM_KAYAS_PEITSCHE
 subtype: Waffe
 ---
 
-[Kayas](/characters/kaya.md) Peitsche hat einen aufschreckenden Effekt (Startling), mit dem sie Gegner erschrecken und zurückdrängen kann. Kaya setzt sie über ihre magische Hand aus dem Unterholz ein, um mehrere Feinde gleichzeitig von der [Klippe](/locations/klippe.md) zu stoßen. Die Peitsche erweist sich als effektive Waffe gegen Gruppen, wenn sie aus dem Hinterhalt eingesetzt wird.
+[Kayas](/characters/kaya.md) Peitsche hat einen aufschreckenden Effekt (Startling), mit dem sie Gegner erschrecken und zurückdrängen kann. Kaya setzt sie über ihre magische Hand aus dem Unterholz ein, um mehrere Feinde gleichzeitig von der Klippe zu stoßen. Die Peitsche erweist sich als effektive Waffe gegen Gruppen, wenn sie aus dem Hinterhalt eingesetzt wird.
 
 # Belege
 

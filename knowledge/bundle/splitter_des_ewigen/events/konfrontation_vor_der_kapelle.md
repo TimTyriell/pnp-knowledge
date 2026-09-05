@@ -10,7 +10,7 @@ id: EVENT_KONFRONTATION_VOR_DER_KAPELLE
 subtype: Verhandlung
 ---
 
-Vor der neuen [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) kommt es zu einer Auseinandersetzung zwischen den alten Gardisten [Meister Pyrandras](/npcs/meister_pyrandras.md), [Orlanius Schwarzohr](/npcs/orlanius_schwarzohr.md) und anderen mit den Seraphen-Wachen. Die Gardisten fordern die Anwesenheit von [Nerash](/deities/nerash.md), werden aber von einem Seraphen bedroht. Die Situation eskaliert beinahe.
+Vor der neuen [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) kommt es zu einer Auseinandersetzung zwischen den alten Gardisten [Meister Pyrandras](/npcs/meister_pyrandras.md), [Orlanius Schwarzohr](/npcs/orlanius_schwarzhorn.md) und anderen mit den Seraphen-Wachen. Die Gardisten fordern die Anwesenheit von [Nerash](/deities/nerash.md), werden aber von einem Seraphen bedroht. Die Situation eskaliert beinahe.
 
 # Belege
 

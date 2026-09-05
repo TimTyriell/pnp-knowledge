@@ -10,7 +10,7 @@ id: ITEM_VOODOO_PUPPE
 subtype: Artefakt
 ---
 
-Eine kleine, aus Holz geflochtene Figur, die [Cookie](/characters/cookie.md) im alten Bauernhaus findet. Sie nimmt sie an sich. Später, während der [Begegnung mit Landra](/events/begegnung_mit_lanra.md), versucht Cookie, die Puppe mit einem Pfeil zu durchbohren, um [Landra](/npcs/lenra.md) zu schaden, aber der Schaden wird auf Cookie selbst übertragen. Die Puppe scheint mit Voodoo-Magie verbunden zu sein.
+Eine kleine, aus Holz geflochtene Figur, die [Cookie](/characters/cookie.md) im alten Bauernhaus findet. Sie nimmt sie an sich. Später, während der [Begegnung mit Landra](/events/begegnung_mit_landra.md), versucht Cookie, die Puppe mit einem Pfeil zu durchbohren, um [Landra](/npcs/lenra.md) zu schaden, aber der Schaden wird auf Cookie selbst übertragen. Die Puppe scheint mit Voodoo-Magie verbunden zu sein.
 
 # Belege
 

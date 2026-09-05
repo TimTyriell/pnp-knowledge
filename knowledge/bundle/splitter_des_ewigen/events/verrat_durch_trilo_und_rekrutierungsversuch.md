@@ -10,7 +10,7 @@ id: EVENT_VERRAT_DURCH_TRILO_UND_REKRUTIERUNGSVERSUCH
 subtype: Verhandlung
 ---
 
-Im alten Turm offenbart [Trilo](/npcs/trilo.md), dass er nicht mehr [Vilaux](/locations/vilaux.md) dient, und stellt die Gruppe [Kalos](/npcs/organisation_der_kalos.md) vor. Kalos bietet ihnen Gold und Land, wenn sie sich seiner Organisation anschließen; andernfalls droht er mit Opferung. Die Gruppe lehnt ab, Trilo teleportiert sich weg, und Kalos beschwört Kampfverstärkung. Dieses Ereignis markiert den Wendepunkt der Session und deckt die Illoyalität des Jägers auf.
+Im alten Turm offenbart [Trilo](/npcs/trillo.md), dass er nicht mehr [Vilaux](/locations/vilaux.md) dient, und stellt die Gruppe [Kalos](/npcs/organisation_der_kalos.md) vor. Kalos bietet ihnen Gold und Land, wenn sie sich seiner Organisation anschließen; andernfalls droht er mit Opferung. Die Gruppe lehnt ab, Trilo teleportiert sich weg, und Kalos beschwört Kampfverstärkung. Dieses Ereignis markiert den Wendepunkt der Session und deckt die Illoyalität des Jägers auf.
 
 # Belege
 

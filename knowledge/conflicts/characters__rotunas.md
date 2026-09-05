@@ -2,7 +2,7 @@
 type: Conflict
 title: 'Offener Konflikt: Rotunas'
 description: Widersprüchliche Belege — menschliche Entscheidung nötig.
-timestamp: '2026-09-05T11:30:32+00:00'
+timestamp: '2026-09-05T16:46:09+00:00'
 id: CONFLICT_CHAR_ROTUNAS
 status: open
 concept: characters/rotunas
@@ -12,4 +12,4 @@ Betrifft: `characters/rotunas` (CHAR_ROTUNAS)
 
 # Offene Konflikte
 
-- Rotunas’ Todesumstände: In der direkten Spielhandlung (Beleg 30) packt Rotunas Nerash und entfesselt eine Implosion aus allen ihm bekannten Magiearten, die ihn selbst und Nerash in den Tod reißt. Die spätere offizielle Version der Stadt (Beleg 33) spricht dagegen davon, er sei im Kampf gegen eine Dämonenhorde gefallen und mit vielen Freunden gestorben. Überlebende berichten wiederum, Rotunas habe sich geopfert, um Nox vor Nerash zu beschützen, und sei von ihr ausgelöscht worden; seine Leiche wurde nie gefunden (Beleg 34). Nerash selbst behauptet, sie habe Rotunas getötet; er sei ein heiliger Vampir gewesen (Beleg 35).
+- Die Darstellung von Rotunas’ Tod widerspricht sich in den Belegen: Beleg 30 beschreibt, dass er Nerash packt und mit einer Implosion aus allen Magiearten mit in den Tod reißt. Beleg 34 berichtet, er habe sich geopfert, um Nox vor Nerash zu beschützen, und sei von ihr ausgelöscht worden; seine Leiche wurde nie gefunden. Beleg 35 zufolge sei Rotunas ein heiliger Vampir gewesen, der vor Nerash hätte fliehen können, und sie habe ihn getötet. Welche Version zutrifft, ist unklar.

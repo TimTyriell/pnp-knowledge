@@ -2,7 +2,7 @@
 type: Conflict
 title: 'Offener Konflikt: Schriftrolle von Nerash'
 description: Widersprüchliche Belege — menschliche Entscheidung nötig.
-timestamp: '2026-09-05T11:30:33+00:00'
+timestamp: '2026-09-05T16:46:10+00:00'
 id: CONFLICT_ITEM_SCHRIFTROLLE_VON_NERASH
 status: open
 concept: items/schriftrolle_von_nerash

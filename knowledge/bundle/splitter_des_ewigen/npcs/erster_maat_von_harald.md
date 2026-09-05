@@ -9,7 +9,7 @@ timestamp: '2026-03-18T00:00:00Z'
 id: NPC_ERSTER_MAAT_VON_HARALD
 ---
 
-Die namenlose erste Maatin von [Harald](/npcs/freibeuter_harald.md) ist eine fähige Kämpferin. Sie wird im Kampf an der Schulter verletzt, kämpft aber weiter. Nach [Lunaras Gedanken-Zauber](/events/lunaras_gedanken_zauber.md) flieht sie zusammen mit Harald durch die Hintertür.
+Die namenlose erste Maatin von [Harald](/npcs/abisalis_harald.md) ist eine fähige Kämpferin. Sie wird im Kampf an der Schulter verletzt, kämpft aber weiter. Nach [Lunaras Gedanken-Zauber](/events/lunaras_gedanken_zauber.md) flieht sie zusammen mit Harald durch die Hintertür.
 
 # Belege
 

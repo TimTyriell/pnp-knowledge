@@ -9,7 +9,7 @@ timestamp: '2026-05-27T00:00:00Z'
 id: NPC_TARA
 ---
 
-Tara ist die Verwalterin der Festung [Nebelwacht](/locations/nebelwacht.md), eine grimmige Priesterin oder Magierin. Sie führt die Rekruten durch die Festung, stellt ihnen [Trilo](/npcs/trilo.md) als Jäger vor und versorgt sie mit Tränken und Rauchbomben.
+Tara ist die Verwalterin der Festung [Nebelwacht](/locations/nebelwacht.md), eine grimmige Priesterin oder Magierin. Sie führt die Rekruten durch die Festung, stellt ihnen [Trilo](/npcs/trillo.md) als Jäger vor und versorgt sie mit Tränken und Rauchbomben.
 
 # Belege
 

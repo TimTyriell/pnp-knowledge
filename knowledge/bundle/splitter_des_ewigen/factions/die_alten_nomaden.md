@@ -18,7 +18,7 @@ Im Zentrum ihres Daseins steht der Dienst an [Seras](/deities/tarvok_der_erdrich
 
 ## Führung und Umgang mit Fremden
 
-[Hendrik](/npcs/hendrik.md) ist der Anführer der Nomaden; die übrigen Mitglieder gehorchen ihm. Gegenüber Außenstehenden zeigt sich die Gruppe verschlossen: Als eine ältere Dame in Gegenwart Fremder zu viel zu verraten droht, schreiten die anderen ein und bringen sie zum Schweigen.
+[Hendrik](/npcs/hendrik_heinrich.md) ist der Anführer der Nomaden; die übrigen Mitglieder gehorchen ihm. Gegenüber Außenstehenden zeigt sich die Gruppe verschlossen: Als eine ältere Dame in Gegenwart Fremder zu viel zu verraten droht, schreiten die anderen ein und bringen sie zum Schweigen.
 
 # Belege
 [P-17] Session 2025-08-12, 00:34:16 – https://www.youtube.com/watch?v=vHIjua0BZ9Y

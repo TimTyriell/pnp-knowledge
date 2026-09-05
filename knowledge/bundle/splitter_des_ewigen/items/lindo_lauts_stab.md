@@ -14,7 +14,7 @@ aliases:
 - Stab von Lindo Laut
 ---
 
-Der **[Schlüssel](/items/magischer_schluessel.md) von Abisalis**, auch **[Lindo Lauts](/characters/lindo_laut.md) Stab** genannt, ist ein mächtiger Portalschlüssel in Gestalt eines plumpen Granitsteins. Ursprünglich gehörte er Lindo Laut, gelangte später zu Lunara und wurde schließlich von [Vhar'Zul](/deities/vharzul.md) übernommen. Seine zentrale Funktion ist das Öffnen von Portalen nach Abisalis; zugleich vermag er Energie aufzunehmen.
+Der **[Schlüssel](/items/magischer_schluessel.md) von Abisalis**, auch **[Lindo Lauts](/characters/lindo_laut.md) Stab** genannt, ist ein mächtiger Portalschlüssel in Gestalt eines plumpen Granitsteins. Ursprünglich gehörte er Lindo Laut, gelangte später zu Lunara und wurde schließlich von [Vhar'Zul](/deities/vharzul.md) übernommen. Seine zentrale Funktion ist das Öffnen von Portalen nach [Abisalis](/npcs/abisalis_harald.md); zugleich vermag er Energie aufzunehmen.
 
 ## Aussehen und Fähigkeiten
 

@@ -9,11 +9,11 @@ timestamp: '2026-01-13T00:00:00Z'
 id: DOMAIN_VOID
 ---
 
-Das Void ist eine dunkle Ebene. In den bisherigen Belegen taucht es ausschließlich im Zusammenhang mit dem Splitterkalb auf: Das Void gilt als dessen Herkunftsort. Näheres über Beschaffenheit, Grenzen oder mögliche Bewohner dieser Ebene ist nicht dokumentiert; der Wissensstand beschränkt sich auf diese eine Nennung.
+Das Void ist eine dunkle Ebene. In den bisherigen Belegen taucht es ausschließlich im Zusammenhang mit dem [Splitterkalb](/events/splitterkalb.md) auf: Das Void gilt als dessen Herkunftsort. Näheres über Beschaffenheit, Grenzen oder mögliche Bewohner dieser Ebene ist nicht dokumentiert; der Wissensstand beschränkt sich auf diese eine Nennung.
 
 ## Herkunft des Splitterkalbs
 
-Das Splitterkalb stammt einer Erwähnung zufolge aus dem Void. Wie das Wesen von dort in die bekannte Welt gelangte oder ob es weitere Verbindungen zwischen dem Void und anderen Ebenen gibt, ist nicht überliefert.
+Das [Splitterkalb](/events/splitterkalb.md) stammt einer Erwähnung zufolge aus dem Void. Wie das Wesen von dort in die bekannte Welt gelangte oder ob es weitere Verbindungen zwischen dem Void und anderen Ebenen gibt, ist nicht überliefert.
 
 # Belege
 

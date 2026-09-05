@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Harl
-description: Harl ist der charismatische Anführer der Silberkerne und leitet die Banditenfestung,
-  ein Lager der Silberkerne. Er begegnet der Heldengrupp…
+description: Harl ist der charismatische Anführer der Silberkerne, einer organisierten
+  Banditengruppe mit mehreren Lagern, die er gemeinsam mit Sarina l…
 tags:
 - npcs
 timestamp: '2026-03-24T00:00:00Z'
@@ -15,61 +15,50 @@ aliases:
 
 ## Überblick
 
-Harl ist der charismatische Anführer der [Silberkerne](/factions/silberkerne.md) und leitet die [Banditenfestung](/locations/banditenlager_der_silberkerne.md), ein Lager der Silberkerne. Er begegnet der Heldengruppe zunächst als freundlicher, aber harter Verhandlungsführer, der für die Winterbleibe der [Flüchtlinge](/factions/fluechtlinge.md) aus Breska eine hohe Zahlung verlangt. Im Verlauf der Kampagne wird er zu einem verlässlichen Verbündeten der Gruppe. Sein wahrer Name ist den meisten nicht bekannt; die Wachen des Lagers dürfen ihn nicht nennen.
+Harl ist der charismatische Anführer der [Silberkerne](/factions/silberkerne.md), einer organisierten Banditengruppe mit mehreren Lagern, die er gemeinsam mit [Sarina](/npcs/sarina.md) leitet. Innerhalb der [Banditenfestung](/locations/banditenlager_der_silberkerne.md), einem Lager der Silberkerne, tritt er als Führungsperson auf und wird in den Quellen oft schlicht als Anführer der Banditen bezeichnet. Sein wahrer Name ist den meisten nicht bekannt; die Wachen der Festung dürfen ihn nicht nennen. Gegenüber der Gruppe zeigt er sich zunächst freundlich und verhandlungsbereit, später entwickelt sich ein belastbares Bündnis. Harl ist für die Kampagne ein zentraler Verbündeter, dessen Entscheidungen den Aufenthalt der Gefährten und der Flüchtlinge maßgeblich prägen.
 
 ## Rolle in der Kampagne
 
-Harl ist die zentrale Kontaktperson der Gruppe in der [Banditenfestung](/locations/banditenlager_der_silberkerne.md). Er verhandelt über die Aufnahme der Flüchtlinge, verlangt Gold und droht bei Widerstand mit Gewalt. Später ruft er die Gruppe zu sich, um einen Hilferuf aus Breska zu besprechen, und organisiert die Verteidigung des Lagers gegen heranrückende [Untote](/factions/belorus_untotenarmee.md). Nach der Schlacht dankt er der Gruppe. Nach dem Winter lässt er der Gruppe eine Notiz mit der Bitte zukommen, einen Sündenbock für den Mord an einem Diplomaten zu finden.
+Harl kontrolliert die [Banditenfestung](/locations/banditenlager_der_silberkerne.md), in der die [Flüchtlinge](/factions/fluechtlinge.md) den Winter verbringen. Zunächst verlangt er für deren Unterbringung eine hohe Goldsumme, später gewährt er ihnen jedoch Schutz und behandelt sie als Gäste. Er kämpft an der Seite der Gruppe gegen die Untoten und erklärt die [Banditengilde](/factions/banditengilde.md) anschließend für immer in ihrer Schuld. Nach dem Winter agiert er aus dem Hintergrund, während die Silberkerne zunehmend unter Druck geraten: Sie werden des Mordes an einem Diplomaten beschuldigt, und Harl bittet die Gruppe brieflich, einen Sündenbock zu finden. Die Beziehung zu Harl ist damit nicht nur persönlicher Natur, sondern auch strategisch bedeutsam für das weitere Vorgehen der Gefährten.
 
 ## Wichtige Merkmale
 
-Harl tritt bei der ersten Begegnung ausgesprochen herzlich und charismatisch auf. Er trägt ein Rüstungsset, aber keine offen sichtbare Waffe, und stellt sich mit den Worten vor: „Mein Name ist Harl. Mit H, nicht mit K.“ Er begrüßt die Gruppe, insbesondere [Dodo](/characters/dodo.md), freundlich und mit Handschlag.
+Harl tritt äußerlich herzlich, freundlich und charismatisch auf. Beim ersten Treffen trägt er ein Rüstungsset, aber keine sichtbare Waffe, und reicht den Gefährten die Hand. In Verhandlungen kann er jedoch eine Drohkulisse aufbauen: Als die Gruppe den geforderten Goldpreis nicht sofort zahlt, lässt er Bogenschützen auf die Dorfbewohner zielen und droht, die Flüchtlinge „direkt aufspießen“ zu lassen. [Lindo Laut](/characters/lindo_laut.md) liest seine Gedanken und erkennt, dass Harl vor allem um sein Ansehen bei seinen Männern fürchtet und „nicht wirklich so gewalttätig“ ist. Nach Zahlung von zehn Säcken Gold beruhigt er sich und verspricht, die Flüchtlinge als Gäste zu behandeln. Er zeigt Respekt für [Nyrella](/characters/nyrella.md) und lobt die Stärke der Gruppe. Nach der Verteidigungsschlacht verneigt er sich und gesteht öffentlich ein, dass es in Ordnung sein kann, falsch zu liegen und den eigenen Stolz zu schlucken.
 
-Sein Auftreten wirkt zunächst harmlos, doch als er von der Verfolgung der Gruppe erfährt, zeigt sich ein verfinsterter Blick. In Verhandlungen verlangt er zunächst eine Truhe Gold für die Winterbleibe der Flüchtlinge und erhöht den Preis später, als die Untoten auftauchen. Gegenüber [Lindo Laut](/characters/lindo_laut.md) droht er offen: Sollte die Gruppe ihn verraten, werde der nächste Pfeilhagel die Dorfbewohner „direkt aufspießen“. Dabei lässt er Bogenschützen auf die Flüchtlinge zielen. Lindo Laut liest seine Gedanken und erkennt, dass Harl vor allem um sein Ansehen bei seinen Männern fürchtet und „nicht wirklich so gewalttätig ist“, wie er sich gibt.
-
-Harl besitzt militärische Autorität: Er erläutert Verteidigungsmöglichkeiten, befehligt die Balliste, lässt die Brücke sprengen, um die erste Angriffswelle aufzuhalten, und bläst zum Rückzug, als die Verluste zu groß werden.
+In militärischer Hinsicht beweist Harl taktisches Geschick: Er leitet die Verteidigung des Banditenverstecks, befehligt die Balliste, lässt die Brücke sprengen, um die erste Welle aufzuhalten, und ordnet den Rückzug an, als die Verluste zu groß werden. Er übernimmt Verantwortung, bleibt aber pragmatisch genug, einen geordneten Rückzug zu befehlen.
 
 ## Beziehungen und Verbindungen
 
-### Silberkerne
-
-Harl ist gemeinsam mit [Sarina](/npcs/sarina.md) Anführer der Silberkerne, einer Organisation mit mehreren Lagern. In der Banditenfestung, einem Lager der Silberkerne, amtiert Harl als stellvertretender Anführer und zugleich als Anführer der gesamten Silberkerne. Nach der Schlacht gegen die Untoten nennt er die Organisation „[Banditengilde](/factions/banditengilde.md)“ und erklärt, sie werde für immer in der Schuld der Gruppe stehen.
-
-### Heldengruppe
-
-Harl begegnet der Gruppe zunächst als Verhandlungsführer, entwickelt aber Respekt für sie. Er zeigt Respekt für [Nyrella](/characters/nyrella.md), schenkt ihr ein selbstgemachtes Püppchen als Glücksbringer, lobt die Stärke der Gruppe und verneigt sich nach der Schlacht vor [Rotunas](/characters/rotunas.md), [Lunara Velora](/characters/lunara_velora.md), [Esterossa](/characters/esterossa.md), [Brim](/characters/brim.md) und den anderen. Später bittet er die Gruppe um einen Gefallen: Sie soll einen Sündenbock finden, um den Vorwurf des Diplomatenmordes von den Silberkernen abzulenken.
-
-### Flüchtlinge aus Breska
-
-Harl verhandelt über die Winterbleibe der Flüchtlinge und verlangt dafür Gold. Nach der Zahlung von zehn Säcken Gold beruhigt er sich und verspricht, die Flüchtlinge als Gäste zu behandeln. Er schlägt vor, nach dem Winter mit ihnen zu einer „Hauptstreitmacht“ zurückzukehren.
-
-### Weitere Verbindungen
-
-Harl offenbart, dass er in [Willauch](/locations/willauch.md) und [Brandau](/locations/brandau.md) zum Tode verurteilt ist und mit seiner Bande ausgestoßen wurde. Er dient einer geheimnisvollen Elbin, deren Namen er nicht preisgibt. Er warnt die Gruppe vor einer Hexe im Osten. Aus [Breska](/locations/breska.md) erhält er einen Hilferuf, den er mit der Gruppe bespricht.
+- **Silberkerne:** Harl ist gemeinsam mit [Sarina](/npcs/sarina.md) Anführer der [Silberkerne](/factions/silberkerne.md). Die [Banditenfestung](/locations/banditenlager_der_silberkerne.md) ist eines ihrer Lager; er spricht von der „Banditengilde“, die der Gruppe für immer verpflichtet sei – offenbar dieselbe Organisation.
+- **Sarina:** Die andere Anführerin der Silberkerne. Harl handelt nicht allein; später warten die Banditen vergeblich auf Befehle von beiden.
+- **Gefährten der Gruppe:** Harl begegnet [Dodo](/characters/dodo.md), [Lindo Laut](/characters/lindo_laut.md), [Nyrella](/characters/nyrella.md), [Rotunas](/characters/rotunas.md), [Lunara Velora](/characters/lunara_velora.md), [Esterossa](/characters/esterossa.md) und [Brim](/characters/brim.md) mit zunehmendem Vertrauen. Er schenkt Nyrella ein selbstgemachtes Püppchen als Glücksbringer. Nach der Schlacht dankt er der gesamten Gruppe und erklärt, die Banditengilde stehe für immer in ihrer Schuld.
+- **Flüchtlinge:** Harl nimmt die [Flüchtlinge](/factions/fluechtlinge.md) gegen Bezahlung auf, behandelt sie nach der Einigung als Gäste und plant, nach dem Winter mit ihnen zur „Hauptstreitmacht“ zurückzukehren.
+- **Breska und [Voras](/npcs/voras.md):** Über die Lage in [Breska](/locations/breska.md) zeigt er sich besorgt, aber auch distanziert („Jetzt braucht der alte Sack Hilfe. Ganz bestimmt nicht.“). Er hält eine Rückkehr zur Hauptstreitmacht für notwendig.
+- **Willauch und Brandau:** Harl offenbart, in [Willauch](/locations/willauch.md) und [Brandau](/locations/brandau.md) zum Tode verurteilt und mit seiner Bande ausgestoßen worden zu sein.
 
 ## Chronologie
 
-**Session 2025-09-23:** Harl empfängt die Gruppe freundlich in der Banditenfestung, verlangt für die Winterbleibe der Flüchtlinge eine Truhe Gold und erhöht den Preis später, als die Untoten auftauchen. Er lässt die Gruppe im Vorhof kampieren und besteht darauf, dass sie nicht näher an die Burg herantreten. Als er von der Verfolgung erfährt, zeigt er einen verfinsterten Blick.
+**Erste Begegnung (Session 2025-09-23):** Harl empfängt die Gruppe freundlich vor der Banditenfestung. Er fordert für die Winterbleibe der Flüchtlinge eine Truhe Gold und erhöht den Preis später, als [Untote](/factions/belorus_untotenarmee.md) auftauchen. Bei der Erwähnung der Verfolgung zeigt er einen verfinsterten Blick. Er lässt die Gruppe im Vorhof kampieren und verbietet, näher an die Burg heranzutreten.
 
-**Session 2025-09-30:** In den fortgesetzten Verhandlungen verlangt Harl acht Säcke Gold. Als die Gruppe nur vier anbietet, droht er, die Dorfbewohner erschießen zu lassen, und Bogenschützen zielen auf die Flüchtlinge. Nach Lindo Lauts Gedankenlesen wird klar, dass Harl vor allem um sein Ansehen fürchtet. Nach Zahlung von zehn Säcken Gold beruhigt er sich und verspricht, die Flüchtlinge als Gäste zu behandeln. Am nächsten Morgen offenbart er seine Verurteilungen in Willauch und Brandau, den Ausschluss seiner Bande und den Dienst an einer geheimnisvollen Elbin. Er warnt vor einer Hexe im Osten und lobt die Stärke der Gruppe.
+**Zweite Begegnung (Session 2025-09-30):** Harl verhandelt erneut über Gold und droht, die Dorfbewohner erschießen zu lassen, falls die Gruppe ihn verrät. [Lindo Laut](/characters/lindo_laut.md) liest seine Gedanken und erkennt, dass Harl vor allem um sein Ansehen bei seinen Männern fürchtet und nicht wirklich gewalttätig ist. Nach Zahlung von zehn Säcken Gold beruhigt er sich und verspricht, die Flüchtlinge als Gäste zu behandeln. Am nächsten Morgen offenbart er, dass er in Willauch und Brandau zum Tode verurteilt ist, dass er und seine Bande ausgestoßen sind und dass er einer geheimnisvollen Elbin dient. Er warnt vor einer Hexe im Osten und lobt die Stärke der Gruppe.
 
-**Session 2026-01-13:** Harl hat eine Nachricht aus Breska erhalten und ruft die Gruppe zu sich. Er ist besorgt um die Sicherheit, zeigt Respekt für Nyrella und schlägt vor, nach dem Winter mit den Flüchtlingen zur Hauptstreitmacht zurückzukehren. Während eines Teleports gibt er das Zeichen, das Tor zu schließen.
+**Winter und Nachricht aus Breska (Session 2026-01-13):** Harl ruft die Gruppe zu sich, nachdem eine Nachricht aus [Breska](/locations/breska.md) eingetroffen ist. Er ist besorgt um die Sicherheit und schlägt vor, nach Ende des Winters mit den Flüchtlingen zur Hauptstreitmacht zurückzukehren. Er zeigt Respekt für Nyrella. Während des Teleports gibt er das Zeichen, das Tor zu schließen.
 
-**Session 2026-01-20:** Bei der Verteidigung der Banditenfestung erläutert Harl die Verteidigungsmöglichkeiten und befehligt die Balliste. Er lässt die Brücke sprengen, um die erste Welle aufzuhalten. Als die Verluste zu groß werden, bläst er zum Rückzug. Nach der Schlacht dankt er der Gruppe: „Die Banditengilde wird auf immer in eurer Schuld stehen.“
+**Verteidigung des Banditenverstecks (Session 2026-01-20):** Harl erläutert die Verteidigungsmöglichkeiten, befehligt die Balliste und lässt die Brücke sprengen, um die erste Welle aufzuhalten. Als die Verluste zu groß werden, bläst er zum Rückzug. Nach der Schlacht dankt er der Gruppe und erklärt, die Banditengilde werde für immer in ihrer Schuld stehen.
 
-**Session 2026-02-24:** Die Gruppe trifft auf Banditen, die von Harl und Sarina sprechen; es heißt, von Harl seien schon lange keine Befehle mehr gekommen. Nyrella besitzt ein selbstgemachtes Püppchen von Harl als Glücksbringer.
+**Nach dem Winter (Session 2026-02-24):** Harl ist nicht persönlich anwesend. Nyrella trägt ein selbstgemachtes Püppchen von ihm als Glücksbringer bei sich. Banditen der Silberkerne erwähnen, dass von Harl und Sarina schon lange keine Befehle mehr gekommen seien. Harl gilt der Gruppe weiterhin als Verbündeter.
 
-**Session 2026-03-18:** Harl tritt nicht persönlich auf, schickt der Gruppe aber einen Boten mit einer kleinen Notiz. Darin steht: „Findet einen Sündenbock“, unterzeichnet mit „H-Punkt“. Hintergrund ist, dass die Silberkerne beschuldigt werden, Diplomaten ermordet zu haben, und Willauch ein Kopfgeld ausgesetzt hat.
+**Silberkerne in Bedrängnis (Session 2026-03-18):** Harl schickt der Gruppe eine kurze Notiz mit der Aufforderung, einen Sündenbock zu finden, unterschrieben mit „H-Punkt“. Hintergrund ist, dass die Silberkerne des Mordes an einem Diplomaten beschuldigt werden; auf Harl und Sarina ist eine hohe Summe ausgesetzt. Die Gruppe diskutiert die Nachricht und vernichtet den Zettel.
 
-**Session 2026-03-24:** In der Reflexion der Gruppe wird erneut erwähnt, dass Harl offenbar etwas geschickt habe; [Lindo Laut](/characters/lindo_laut.md) will später darauf zurückkommen. Genaue Details werden in dieser Sitzung nicht geklärt.
+**Aktueller Stand (Session 2026-03-24):** [Lindo Laut](/characters/lindo_laut.md) erwähnt Harl als jemanden, der etwas geschickt hat; genauere Details werden nicht geklärt. Die Gruppe will später auf Harl und den Umgang mit den Silberkernen zurückkommen.
 
 ## Offene Fragen
 
-- Harls wahrer Name ist unbekannt; warum die Wachen ihn nicht nennen dürfen, bleibt offen.
-- Die Identität der geheimnisvollen Elbin, der Harl dient, wird nicht preisgegeben.
-- Was mit der „Hauptstreitmacht“ gemeint ist, zu der Harl nach dem Winter zurückkehren will, wird nicht erläutert.
-- Die „Hexe im Osten“, vor der Harl warnt, wird nirgends genauer benannt.
-- Harls genauer Aufenthaltsort und seine Handlungsfähigkeit seit dem Winter sind unklar: [Die Banditen](/factions/die_banditen.md) sagen, von Harl seien lange keine Befehle mehr gekommen, obwohl er später eine Notiz schickt.
+- Wer ist die geheimnisvolle Elbin, der Harl nach eigener Aussage dient? (Session 2025-09-30)
+- Was ist mit Harl und Sarina geschehen, dass seit längerem keine Befehle mehr von ihnen eintreffen? (Session 2026-02-24)
+- Worauf bezieht sich die Bitte, einen Sündenbock zu finden, im Detail? Die genauen Umstände der Anschuldigung gegen die Silberkerne sind nur teilweise bekannt. (Session 2026-03-18)
+- Was verbirgt sich hinter Harls wahrem Namen, den die Wachen nicht nennen dürfen? (Session 2025-09-23)
+- Was ist die „Hauptstreitmacht“ bzw. „unsere Herren“, zu der Harl zurückkehren will? (Session 2026-01-13)
 
 ## Belege
 

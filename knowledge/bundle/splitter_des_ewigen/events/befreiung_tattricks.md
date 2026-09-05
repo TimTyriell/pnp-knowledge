@@ -10,7 +10,7 @@ id: EVENT_BEFREIUNG_TATTRICKS
 subtype: Ritual
 ---
 
-[Esterossa](/characters/esterossa.md) brennt das Kontrollsymbol auf [Tattricks](/npcs/tattrick.md) Hinterkopf aus, wodurch dieser seine freie Persönlichkeit zurückerlangt.
+[Esterossa](/characters/esterossa.md) brennt das Kontrollsymbol auf [Tattricks](/npcs/tatrick.md) Hinterkopf aus, wodurch dieser seine freie Persönlichkeit zurückerlangt.
 
 # Belege
 
