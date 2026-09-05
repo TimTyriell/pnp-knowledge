@@ -24,6 +24,15 @@ from pnp_okf.prompts import (
 
 log = logging.getLogger(__name__)
 
+# Models whose endpoint has already answered "no" to structured outputs.
+# The probe in _call_llm costs a full transcript upload and is rejected at
+# validation, and an endpoint's answer cannot change mid-run -- so learning it
+# once per process turns one wasted round trip per uncached session into at
+# most one per worker. Not locked: a lock here would serialise the first call
+# of every worker to save a handful of probes on a run that makes hundreds of
+# real calls. Keyed by model because for_tier() swaps the model per tier.
+_NO_STRUCTURED_OUTPUTS: set[str] = set()
+
 
 def _cache_key(transcript: SessionTranscript, cfg: DeepSeekConfig) -> str:
     payload = "\n".join(
@@ -144,11 +153,16 @@ def _call_llm(client, cfg: DeepSeekConfig, transcript: SessionTranscript) -> Ses
             ),
         },
     ]
+    if cfg.model in _NO_STRUCTURED_OUTPUTS:
+        return _call_llm_json_prompt(client, cfg, messages)
     try:
         return _call_llm_structured(client, cfg, messages)
     except Exception as exc:
+        _NO_STRUCTURED_OUTPUTS.add(cfg.model)
         log.info(
-            "[extract] structured-outputs not available (%s); falling back to JSON prompt",
+            "[extract] structured-outputs not available for %s (%s); using the "
+            "JSON prompt for the rest of this run",
+            cfg.model,
             type(exc).__name__,
         )
         return _call_llm_json_prompt(client, cfg, messages)
