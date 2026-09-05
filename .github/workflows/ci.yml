@@ -1,0 +1,107 @@
+name: Continuous Integration
+
+# Scope: the live services only (services/kb, services/dashboard, services/summary).
+#
+# graph/ is deliberately excluded. It is the frozen Neo4j GraphRAG pipeline
+# (ADR-002): reference material and a possible future derived index, with no
+# active work. Its golden test is knowingly stale against commit 750d6f1, so a
+# repo-wide job would paint this repo permanently red for a failure nobody
+# intends to fix. When graph/ is thawed, unfreeze it here too.
+#
+# The checkout is deliberately NOT shallow: knowledge/ (the OKF bundle) is
+# tracked, and the bundle tests skip themselves when it is absent.
+# PNP_REQUIRE_BUNDLE=1 (see services/kb/tests/conftest.py) turns that skip into
+# a hard error, so a partial checkout fails loudly instead of passing by not
+# running.
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  PNP_REQUIRE_BUNDLE: "1"
+
+jobs:
+  kb:
+    name: services/kb
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: services/kb
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -e ".[dev]"
+
+      # No DeepSeek key, no network, no Neo4j: the suite is offline by design.
+      # It does shell out to the git binary, which ubuntu-latest ships.
+      - name: Run tests
+        run: python -m pytest
+
+  dashboard:
+    name: services/dashboard
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    defaults:
+      run:
+        working-directory: services/dashboard
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -e ".[dev]"
+
+      # app.py does a bare `import glossary`, so the tests only resolve from
+      # inside services/dashboard (set via defaults.run.working-directory).
+      - name: Run tests
+        run: python -m pytest
+
+  summary:
+    name: services/summary
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    defaults:
+      run:
+        working-directory: services/summary
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      # No pyproject.toml here; summary.py needs only httpx.
+      - name: Install dependencies
+        run: pip install pytest httpx
+
+      - name: Run tests
+        run: python -m pytest
