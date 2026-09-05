@@ -18,6 +18,7 @@ from pnp_okf.models import (
     SessionExtraction,
     SessionTranscript,
 )
+from pnp_okf.links import apply_spellings
 from pnp_okf.okf import slugify
 
 log = logging.getLogger(__name__)
@@ -26,7 +27,27 @@ log = logging.getLogger(__name__)
 FUZZY_RATIO = 0.9
 
 
-def _default_concept_id(entity_type: EntityType, name: str) -> str:
+def _default_concept_id(
+    entity_type: EntityType, name: str, spellings: dict[str, str] | None = None
+) -> str:
+    """Derive a concept id from an extracted name, spelling-corrected first.
+
+    ``spelling:`` used to reach only synthesized prose (links.py), which meant
+    a mishearing the GM had already ruled on could still mint its own node: the
+    rule said Willau -> Willauch, and the bundle still grew
+    locations/taverne_in_willau beside locations/taverne_in_willauch. ``merge:``
+    did not catch it either, because merge matches a whole name and the model
+    had coined a *compound* ("Taverne in Willau") that was not in the table.
+
+    Applying the same map here closes that: identity is derived from the
+    corrected name, so a known mishearing can no longer split a concept no
+    matter what compound the model wraps it in. Only the fallback id is
+    normalised -- an explicit split/override/merge still wins on the raw name,
+    so no existing rule changes meaning.
+    """
+
+    if spellings:
+        name = apply_spellings(name, spellings)
     return f"{TYPE_DIR[entity_type]}/{slugify(name)}"
 
 
@@ -525,6 +546,7 @@ def resolve_entities(
     splits = _load_splits(registry_path)
     retired = _load_retired(registry_path)
     never_merge_pairs = _load_never_merge_pairs(registry_path)
+    spellings = load_spellings(registry_path)
     dropped = 0
     # Also match registry keys after slugification, so "Lindo  Laut" folds
     # into a registry entry written as "lindo laut".
@@ -547,7 +569,7 @@ def resolve_entities(
                 or slug_overrides.get(slugify(mention.name))
             )
             if concept_id is None:
-                default_id = _default_concept_id(mention.type, mention.name)
+                default_id = _default_concept_id(mention.type, mention.name, spellings)
                 concept_id = (
                     _reanchor_to_retired(
                         default_id, mention.type, retired, never_merge_pairs

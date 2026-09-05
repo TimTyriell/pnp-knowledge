@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 import json
 import logging
+import os
 import re
 from pathlib import Path
 
@@ -34,10 +35,41 @@ log = logging.getLogger(__name__)
 _NO_STRUCTURED_OUTPUTS: set[str] = set()
 
 
+def _frozen_prompt_version(transcript: SessionTranscript) -> str:
+    """Prompt version this session's cache key should use.
+
+    A PROMPT_VERSION bump invalidates every cached extraction at once, so
+    editing one constant re-derives the whole back catalogue: ~10M tokens and
+    ~$8 on a 66-session corpus (docs/architecture/MIGRATION-prompt-v6.md).
+    Worse, re-extraction resamples entity *names*, and names derive concept
+    ids -- so the back catalogue's ids churn even though its transcripts have
+    not changed by a word.
+
+    Freezing pins already-ingested sessions to the version they were built
+    with, so a bump only re-extracts sessions recorded after the cutoff:
+
+        PNP_EXTRACT_FREEZE_BEFORE=2026-09-06   # session date, exclusive
+        PNP_EXTRACT_FREEZE_VERSION=6           # version they are pinned to
+
+    Both must be set; either alone is ignored, so the default stays
+    "re-extract everything" and freezing is always a deliberate act.
+
+    Caveat: this pins the prompt only. ``cfg.model`` is still in the key, so
+    changing the model re-extracts frozen sessions too -- deliberately, since a
+    new model rewords names and the frozen ids would not match what it makes.
+    """
+
+    before = os.environ.get("PNP_EXTRACT_FREEZE_BEFORE", "").strip()
+    version = os.environ.get("PNP_EXTRACT_FREEZE_VERSION", "").strip()
+    if not before or not version:
+        return PROMPT_VERSION
+    return version if str(transcript.date) < before else PROMPT_VERSION
+
+
 def _cache_key(transcript: SessionTranscript, cfg: DeepSeekConfig) -> str:
     payload = "\n".join(
         [
-            PROMPT_VERSION,
+            _frozen_prompt_version(transcript),
             cfg.model,
             transcript.session_id,
             transcript.render_dialogue(),
