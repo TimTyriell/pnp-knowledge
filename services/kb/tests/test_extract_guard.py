@@ -9,7 +9,6 @@ noticed. The guard turns it into an exception the existing retry can act on.
 import json
 
 import pytest
-
 from pnp_okf.config import DeepSeekConfig
 from pnp_okf.extract import _call_llm_json_prompt
 

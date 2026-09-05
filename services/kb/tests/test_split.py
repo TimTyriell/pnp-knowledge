@@ -11,7 +11,6 @@ back together. Hence the ``<qualifier>_harald`` naming.
 from pathlib import Path
 
 import yaml
-
 from pnp_okf.models import (
     EntityMention,
     EntityType,

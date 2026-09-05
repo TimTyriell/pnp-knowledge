@@ -9,7 +9,7 @@ pure function, so it's testable without a filesystem or network.
 from __future__ import annotations
 
 import json
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
@@ -20,7 +20,7 @@ STALE_AFTER_H = 48
 
 
 def _now() -> datetime:
-    return datetime.now(timezone.utc)
+    return datetime.now(UTC)
 
 
 def _parse_iso(ts: str | None) -> datetime | None:

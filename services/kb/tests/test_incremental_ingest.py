@@ -19,7 +19,6 @@ import time
 from pathlib import Path
 
 import pytest
-
 from pnp_okf.emit import emit_entity, emit_indexes, emit_log, emit_sessions
 from pnp_okf.links import ConceptIndex
 from pnp_okf.models import EntityMention, EntityType, SessionExtraction, SessionTranscript

@@ -7,7 +7,6 @@ from pathlib import Path
 
 import pytest
 from fastapi.testclient import TestClient
-
 from pnp_okf.api import create_app
 
 

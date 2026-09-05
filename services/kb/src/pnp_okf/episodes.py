@@ -73,7 +73,7 @@ class Episodes:
         return entry.get("id") if entry else None
 
     @classmethod
-    def load(cls, path: Path) -> "Episodes":
+    def load(cls, path: Path) -> Episodes:
         """Read *path*; an absent or broken file yields an empty list.
 
         Missing episode data must not stop a run: the pipeline then emits what

@@ -17,7 +17,6 @@ from pathlib import Path
 
 import pytest
 import yaml
-
 from pnp_okf.models import ID_PREFIX, TYPE_DIR
 
 KNOWLEDGE = Path(__file__).resolve().parents[3] / "knowledge"

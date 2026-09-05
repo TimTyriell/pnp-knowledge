@@ -3,7 +3,6 @@ from __future__ import annotations
 from pathlib import Path
 
 import yaml
-
 from pnp_okf.emit import emit_entity, emit_indexes, emit_log, emit_sessions
 from pnp_okf.models import (
     EntityMention,

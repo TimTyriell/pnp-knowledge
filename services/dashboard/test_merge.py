@@ -2,12 +2,12 @@
 
 from __future__ import annotations
 
-from datetime import datetime, timedelta, timezone
+from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
 import merge
 
-NOW = datetime(2026, 8, 9, 12, 0, 0, tzinfo=timezone.utc)
+NOW = datetime(2026, 8, 9, 12, 0, 0, tzinfo=UTC)
 
 
 def _iso(dt: datetime) -> str:

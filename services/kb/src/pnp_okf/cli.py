@@ -7,13 +7,12 @@ import os
 import shutil
 import subprocess
 import sys
-import time
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
-from pnp_okf.config import DeepSeekConfig, ConfigError, Paths
+from pnp_okf.config import ConfigError, DeepSeekConfig, Paths
 from pnp_okf.context import excerpts_for, load_sources, secondary_sources_for, sources_for
 from pnp_okf.dedup import load_never_merge, propose, render_report
 from pnp_okf.emit import (
@@ -32,7 +31,12 @@ from pnp_okf.extract import extract_session
 from pnp_okf.ingest import load_transcripts
 from pnp_okf.models import CanonicalEntity, SessionExtraction, SessionTranscript
 from pnp_okf.resolve import load_spellings, require_rules, resolve_entities, write_registry
-from pnp_okf.synthesize import autolink_prose, link_targets, render_brief_body, synthesize_entity_body
+from pnp_okf.synthesize import (
+    autolink_prose,
+    link_targets,
+    render_brief_body,
+    synthesize_entity_body,
+)
 from pnp_okf.validate import fix_bundle, validate_bundle
 
 log = logging.getLogger("pnp_okf")
@@ -82,7 +86,7 @@ def _write_run_status(started_at: str, ok: bool, error: str | None, counts: dict
 
     state_dir = _state_dir()
     state_dir.mkdir(parents=True, exist_ok=True)
-    ended_at = datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
+    ended_at = datetime.now(UTC).isoformat(timespec="seconds").replace("+00:00", "Z")
     run_id = started_at.replace(":", "").replace("-", "")
     record = {
         "run_id": run_id,
@@ -102,7 +106,7 @@ def _write_run_status(started_at: str, ok: bool, error: str | None, counts: dict
 def cmd_run(args: argparse.Namespace) -> int:
     """Full pipeline: ingest -> extract -> resolve -> synthesize -> emit."""
 
-    started_at = datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
+    started_at = datetime.now(UTC).isoformat(timespec="seconds").replace("+00:00", "Z")
     try:
         return _run_pipeline(args, started_at)
     except Exception as exc:
@@ -371,7 +375,7 @@ def cmd_check(args: argparse.Namespace) -> int:
         cfg = DeepSeekConfig.from_env()
         print(f"  base_url: {cfg.base_url}")
         print(f"  model:    {cfg.model}")
-        print(f"  auth:     API key")
+        print("  auth:     API key")
     except ConfigError as exc:
         print(f"  ERROR: {exc}")
         print("  -> Copy .env.example to .env and fill in your DeepSeek settings.")

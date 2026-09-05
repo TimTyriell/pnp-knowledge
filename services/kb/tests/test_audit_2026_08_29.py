@@ -21,7 +21,6 @@ from pathlib import Path
 
 import pytest
 import yaml
-
 from pnp_okf.models import TYPE_DIR
 from pnp_okf.resolve import RULES_FILENAME
 

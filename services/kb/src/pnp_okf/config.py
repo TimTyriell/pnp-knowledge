@@ -34,7 +34,7 @@ class DeepSeekConfig:
     light_model: str = DEFAULT_LIGHT_MODEL
 
     @classmethod
-    def from_env(cls) -> "DeepSeekConfig":
+    def from_env(cls) -> DeepSeekConfig:
         base_url = os.environ.get("DEEPSEEK_BASE_URL", "https://api.deepseek.com").strip()
         model = os.environ.get("DEEPSEEK_MODEL", DEFAULT_MODEL).strip()
         light = os.environ.get("DEEPSEEK_LIGHT_MODEL", DEFAULT_LIGHT_MODEL).strip()
@@ -44,7 +44,7 @@ class DeepSeekConfig:
             raise ConfigError("Missing required environment variable: DEEPSEEK_API_KEY")
         return cls(base_url=base_url, model=model, api_key=api_key, light_model=light)
 
-    def for_tier(self, tier: str) -> "DeepSeekConfig":
+    def for_tier(self, tier: str) -> DeepSeekConfig:
         """Config for one synthesis tier — the strong model only where it pays."""
 
         if tier == "deep" or self.model == self.light_model:
@@ -136,7 +136,7 @@ class Paths:
         transcript_dir: str | os.PathLike[str] | None = None,
         bundle_dir: str | os.PathLike[str] | None = None,
         cache_dir: str | os.PathLike[str] | None = None,
-    ) -> "Paths":
+    ) -> Paths:
         transcripts = (
             transcript_dir
             or os.environ.get("PNP_TRANSCRIPT_DIR")

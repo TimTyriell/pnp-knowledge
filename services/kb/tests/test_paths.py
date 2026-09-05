@@ -18,11 +18,9 @@ registry raises instead of proceeding.
 
 from __future__ import annotations
 
-import os
 from pathlib import Path
 
 import pytest
-
 from pnp_okf.config import Paths
 from pnp_okf.resolve import require_rules
 

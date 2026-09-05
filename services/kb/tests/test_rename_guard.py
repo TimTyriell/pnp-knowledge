@@ -13,7 +13,6 @@ comparing the freshly resolved concept ids against the *previous* registry's
 from pathlib import Path
 
 import yaml
-
 from pnp_okf.emit import check_rename_safety
 from pnp_okf.models import CanonicalEntity, EntityType
 

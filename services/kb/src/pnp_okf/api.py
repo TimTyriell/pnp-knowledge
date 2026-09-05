@@ -15,11 +15,10 @@ import json
 import os
 import re
 import subprocess
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from functools import lru_cache
 from pathlib import Path
 
-import yaml
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -112,7 +111,7 @@ class BundleReader:
             except HTTPException:
                 raise HTTPException(
                     status_code=404, detail=f"No concept {concept_path} at {ref}"
-                )
+                ) from None
         return _split_frontmatter(text)
 
     # -- typed-id resolution --
@@ -124,7 +123,11 @@ class BundleReader:
             return self._id_index_at_ref(ref)
         return self._build_id_index(None)
 
-    @lru_cache(maxsize=32)  # refs are immutable; the worktree is never cached
+    # ruff: B019 (lru_cache on a method) is accepted here. The cache keys on
+    # ``self``, so it pins the instance — harmless because exactly one
+    # long-lived instance exists per app process. Refs are immutable; the
+    # worktree is never cached.
+    @lru_cache(maxsize=32)  # noqa: B019
     def _id_index_at_ref(self, ref: str) -> dict[str, str]:
         return self._build_id_index(ref)
 
@@ -310,7 +313,7 @@ def create_app(bundle_dir: Path | None = None) -> FastAPI:
         if _status_cache["key"] == fingerprint:
             cached = dict(_status_cache["value"])
             cached["generated_at"] = (
-                datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
+                datetime.now(UTC).isoformat(timespec="seconds").replace("+00:00", "Z")
             )
             return cached
 
@@ -361,7 +364,7 @@ def create_app(bundle_dir: Path | None = None) -> FastAPI:
         value = {
             "schema": 1,
             "service": "pnp-kb",
-            "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
+            "generated_at": datetime.now(UTC).isoformat(timespec="seconds").replace("+00:00", "Z"),
             "last_run": _load_last_run(),
             "head": head,
             "session_tags": sorted(tags),

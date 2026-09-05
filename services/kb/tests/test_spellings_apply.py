@@ -9,7 +9,6 @@ from __future__ import annotations
 from pathlib import Path
 
 import yaml
-
 from pnp_okf.links import apply_spellings
 from pnp_okf.resolve import load_spellings
 from pnp_okf.synthesize import _link_first_occurrence

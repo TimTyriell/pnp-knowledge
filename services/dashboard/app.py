@@ -19,17 +19,16 @@ from __future__ import annotations
 
 import json
 import os
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
-
-import uvicorn
-import yaml
-from fastapi import FastAPI, HTTPException, Request
-from fastapi.staticfiles import StaticFiles
 
 import glossary
 import merge
 import rules_edit
+import uvicorn
+import yaml
+from fastapi import FastAPI, HTTPException, Request
+from fastapi.staticfiles import StaticFiles
 
 REPO_ROOT = Path(__file__).resolve().parents[2]  # .../pnp-knowledge/services/dashboard -> pnp-knowledge/
 
@@ -86,7 +85,7 @@ def history(days: int = 90) -> dict:
     not exposed over HTTP yet — left out here rather than reaching into
     another service's filesystem state directly.
     """
-    cutoff = datetime.now(timezone.utc).timestamp() - days * 86400
+    cutoff = datetime.now(UTC).timestamp() - days * 86400
 
     def _recent(path: Path) -> list[dict]:
         out = []

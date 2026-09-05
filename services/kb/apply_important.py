@@ -126,7 +126,7 @@ def main() -> int:
 
     # 2. important flags
     flagged, missing = [], []
-    for group, ids in IMPORTANT.items():
+    for _group, ids in IMPORTANT.items():
         for cid in ids:
             (flagged if cid in by_id else missing).append(cid)
     print(f"\nimportant: {len(flagged)} found, {len(missing)} not present")

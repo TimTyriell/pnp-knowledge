@@ -1,7 +1,8 @@
 # ADR-001: Knowledge layer — OKF bundle in git as system of record; graph as optional derived index
 
-**Status:** Proposed (needs user confirmation)
+**Status:** Accepted
 **Date:** 2026-07-22
+**Accepted:** 2026-09-05
 **Deciders:** Noah + Claude (architecture session)
 
 ## Context
@@ -57,6 +58,38 @@ Single campaign scale (hundreds of concepts, not millions); temporal as-of reads
 ## Revisit trigger (any one of these reopens the decision)
 
 1. Real usage produces relationship/discovery queries ("all NPCs hostile to FACTION_X ever", multi-hop) more than ~weekly that link-walking + grep can't answer → build the **derived** graph index from the bundle.
-2. Bundle grows past ~1,500 concepts or per-ingest review diffs stop being humanly reviewable.
+2. Bundle grows past ~1,500 concepts or per-ingest review diffs stop being humanly reviewable. — *Not fired. 868 entity concepts + 64 session concepts as of 2026-09-05 (`services/kb/state/history.jsonl`, run `20260830T183406Z`), i.e. ~58% of the threshold. Per-ingest diffs are still path-scoped to `knowledge/` and reviewed as PRs.*
 3. As-of correctness bugs traced to prose-state ambiguity that structured edges would have prevented.
 4. The GM in practice never hand-edits the bundle for two months — the editability argument then carried less weight than assumed.
+
+## Outcome (2026-09-05)
+
+Accepted retroactively: the system has been running on this decision since
+2026-07-22 and the decision held. 64 sessions are ingested into
+`knowledge/bundle/splitter_des_ewigen/`, producing 868 entity concepts across
+the eight types, every one citing `Session YYYY-MM-DD @ HH:MM:SS` with a URL.
+
+What the decision actually bought, against what it predicted:
+
+- **Git as the temporal model works as designed.** Ingest arrives on
+  `ingest/s<NN>` branches touching only `knowledge/`, tagged per session; the
+  read-only API serves `?as_of=<ref>` straight from a git ref (`api.py`) and
+  change sets from `git diff`. No bitemporal edges were needed.
+- **Hand-editability is the load-bearing part, and it is used heavily.** The
+  hand-authored rules did not stay in the generated registry: they moved to
+  `entity_rules.yaml` (which nothing ever writes) because `write_registry`'s
+  YAML dump was erasing the comments explaining the rules — "rules are input,
+  the inventory is output". That file now carries 615 rules, plus GM
+  `ENTSCHEIDUNG:` rulings routed from `knowledge/sources/` into synthesis.
+  Revisit trigger 4 is comprehensively not fired.
+- **The identity discipline ported from the graph project was the right
+  borrow, and needed more.** ADR-001 §2 fixed the duplicate-concept failures it
+  named, but re-extraction non-determinism produced failure modes the original
+  analysis did not anticipate — dead rules, mass renames, article-variant
+  duplicates — now guarded by explicit run-refusal checks and the measured
+  baselines in [QUALITY.md](../QUALITY.md).
+- **The derived graph was never built** (revisit trigger 1 not fired), and
+  freezing it under `graph/` rather than deleting it (ADR-002) cost nothing.
+- **The consumer story held.** `pnp-export-data` runs as a pure API client and
+  never touches the bundle; [ADR-003](ADR-003-no-llm-downstream.md) makes that
+  boundary explicit.

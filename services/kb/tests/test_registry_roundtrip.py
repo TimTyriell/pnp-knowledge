@@ -9,7 +9,6 @@ re-proposes rejected merges.
 from pathlib import Path
 
 import yaml
-
 from pnp_okf.models import CanonicalEntity, EntityType
 from pnp_okf.resolve import write_registry
 

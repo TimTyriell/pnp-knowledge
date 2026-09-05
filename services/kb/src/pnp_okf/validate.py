@@ -16,7 +16,7 @@ from pathlib import Path
 
 import yaml
 
-from pnp_okf.links import ConceptIndex, _LINK_RE, normalize_body
+from pnp_okf.links import _LINK_RE, ConceptIndex, normalize_body
 from pnp_okf.resolve import load_spellings
 
 log = logging.getLogger(__name__)
@@ -142,7 +142,7 @@ def validate_bundle(bundle_dir: Path) -> ValidationReport:
     person_slugs: list[str] = []
     titles_by_type: dict[str, list[tuple[str, str]]] = defaultdict(list)
 
-    for path, cid in zip(files, concept_ids):
+    for path, cid in zip(files, concept_ids, strict=True):
         text = path.read_text(encoding="utf-8")
         for match in _LINK_RE.finditer(text):
             report.link_count += 1
@@ -261,7 +261,7 @@ def fix_bundle(bundle_dir: Path, registry_path: Path | None = None) -> tuple[int
 
     files_changed = 0
     links_dropped = 0
-    for path, cid in zip(files, concept_ids):
+    for path, cid in zip(files, concept_ids, strict=True):
         original = path.read_text(encoding="utf-8")
         new_text, unresolved = normalize_body(original, index, self_id=cid)
         if new_text != original:

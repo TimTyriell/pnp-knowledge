@@ -3,7 +3,6 @@
 from pathlib import Path
 
 import yaml
-
 from pnp_okf.models import EntityMention, EntityType, SessionExtraction, SessionTranscript
 from pnp_okf.resolve import resolve_entities
 

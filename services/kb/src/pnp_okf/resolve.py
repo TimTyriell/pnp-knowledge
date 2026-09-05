@@ -7,18 +7,16 @@ from pathlib import Path
 import yaml
 
 from pnp_okf.models import (
+    DIR_TO_TYPE,
+    MAX_EVENT_SESSION_SPAN,
+    PERSON_TYPES,
+    SESSION_SCOPED_TYPES,
+    TYPE_DIR,
     CanonicalEntity,
     EntityType,
     MentionRef,
     SessionExtraction,
     SessionTranscript,
-)
-from pnp_okf.models import (
-    DIR_TO_TYPE,
-    PERSON_TYPES,
-    MAX_EVENT_SESSION_SPAN,
-    SESSION_SCOPED_TYPES,
-    TYPE_DIR,
 )
 from pnp_okf.okf import slugify
 

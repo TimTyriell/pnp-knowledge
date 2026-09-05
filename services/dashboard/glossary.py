@@ -10,6 +10,7 @@ from __future__ import annotations
 import json
 import re
 from collections import Counter
+from datetime import UTC
 from pathlib import Path
 from typing import Any
 
@@ -190,9 +191,9 @@ def build(knowledge_dir: Path, crawl_dir: Path) -> dict[str, Any]:
     def _iso(ts: float | None) -> str | None:
         if ts is None:
             return None
-        from datetime import datetime, timezone
+        from datetime import datetime
 
-        return datetime.fromtimestamp(ts, tz=timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
+        return datetime.fromtimestamp(ts, tz=UTC).isoformat(timespec="seconds").replace("+00:00", "Z")
 
     return {
         "stale": stale,

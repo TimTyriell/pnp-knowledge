@@ -6,7 +6,6 @@ from __future__ import annotations
 from pathlib import Path
 
 import yaml
-
 from pnp_okf.emit import emit_conflict, emit_entity, split_conflicts
 from pnp_okf.models import (
     CanonicalEntity,

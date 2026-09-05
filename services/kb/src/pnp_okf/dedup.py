@@ -18,7 +18,6 @@ regenerated output.
 
 from __future__ import annotations
 
-import json
 import logging
 from difflib import SequenceMatcher
 from pathlib import Path
@@ -27,7 +26,7 @@ from pydantic import BaseModel, Field
 
 from pnp_okf.config import DeepSeekConfig
 from pnp_okf.llm_client import build_client
-from pnp_okf.models import PERSON_TYPES, CanonicalEntity, EntityType
+from pnp_okf.models import PERSON_TYPES, CanonicalEntity
 from pnp_okf.okf import slugify
 
 log = logging.getLogger(__name__)

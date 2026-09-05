@@ -13,8 +13,8 @@ from tenacity import (
     wait_exponential,
 )
 
-from pnp_okf.llm_client import build_client
 from pnp_okf.config import DeepSeekConfig
+from pnp_okf.llm_client import build_client
 from pnp_okf.models import SessionExtraction, SessionTranscript
 from pnp_okf.prompts import (
     EXTRACT_SYSTEM,

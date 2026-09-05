@@ -28,9 +28,13 @@ from pathlib import Path
 
 import pytest
 import yaml
-
 from pnp_okf.context import _matches, load_sources
-from pnp_okf.models import ALWAYS_DEEP_TYPES, ALWAYS_STANDARD_TYPES, DEEP_MENTION_THRESHOLD, TYPE_DIR
+from pnp_okf.models import (
+    ALWAYS_DEEP_TYPES,
+    ALWAYS_STANDARD_TYPES,
+    DEEP_MENTION_THRESHOLD,
+    TYPE_DIR,
+)
 from pnp_okf.okf import slugify
 from pnp_okf.resolve import _load_important
 
