@@ -23,6 +23,7 @@ from pnp_okf.emit import (
     emit_indexes,
     emit_log,
     emit_sessions,
+    mention_concept_index,
     prune_conflicts,
     prune_orphans,
 )
@@ -255,7 +256,10 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     } if paths.bundle_dir.exists() else {}
 
     index = build_concept_index(entities, tmap, load_spellings(registry_path))
-    session_entries = emit_sessions(paths.bundle_dir, tmap, extractions, index, episodes)
+    session_entries = emit_sessions(
+        paths.bundle_dir, tmap, extractions, index, episodes,
+        mention_concept_ids=mention_concept_index(entities),
+    )
     unresolved_total = 0
     conflict_count = 0
     open_conflicts: set[str] = set()

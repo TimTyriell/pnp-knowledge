@@ -3,7 +3,13 @@ from __future__ import annotations
 from pathlib import Path
 
 import yaml
-from pnp_okf.emit import emit_entity, emit_indexes, emit_log, emit_sessions
+from pnp_okf.emit import (
+    emit_entity,
+    emit_indexes,
+    emit_log,
+    emit_sessions,
+    mention_concept_index,
+)
 from pnp_okf.models import (
     EntityMention,
     EntityType,
@@ -110,3 +116,32 @@ def test_registry_merge_override(tmp_path: Path):
     ids = {e.concept_id for e in entities}
     assert "locations/taverne_zum_zwerg" not in ids
     assert "characters/lindo_laut" in ids
+
+
+def test_session_bullet_links_to_merge_target_not_raw_slug(tmp_path: Path):
+    """A merge:d mention must link to the merge target, not slugify(raw name).
+
+    Regression for emit.py's session bullet builder re-slugifying the raw
+    extracted name instead of using the concept_id resolve_entities actually
+    assigned -- see PIPELINE.md section 7.
+    """
+
+    tmap, extractions = _fixture()
+    bundle = tmp_path / "bundle" / "campaign"
+    registry = bundle.parent / "entity_registry.yaml"
+    registry.parent.mkdir(parents=True, exist_ok=True)
+    # Same merge override as test_registry_merge_override: the location
+    # mention folds into the character concept.
+    registry.write_text(
+        yaml.safe_dump({"merge": {"taverne zum zwerg": "characters/lindo_laut"}}),
+        encoding="utf-8",
+    )
+
+    entities = resolve_entities(extractions, tmap, registry)
+    mention_map = mention_concept_index(entities)
+
+    emit_sessions(bundle, tmap, extractions, mention_concept_ids=mention_map)
+
+    session_doc = (bundle / "sessions" / "2025-03-26.md").read_text(encoding="utf-8")
+    assert "/characters/lindo_laut.md" in session_doc
+    assert "/locations/taverne_zum_zwerg.md" not in session_doc

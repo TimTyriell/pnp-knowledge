@@ -54,6 +54,37 @@ def build_concept_index(
     return ConceptIndex(concept_ids, names, spellings)
 
 
+def mention_concept_index(
+    entities: list[CanonicalEntity],
+) -> dict[tuple[str, str, str], str]:
+    """Invert resolved entities into ``(session_id, citation_ts, note) -> concept_id``.
+
+    ``resolve_entities`` decides identity (split/merge/ignore/spelling/fuzzy
+    fold) but its signature stays untouched -- this walks its *output* back
+    into a per-mention lookup so ``emit_sessions`` can point a session bullet
+    at the concept id the resolver actually assigned, instead of re-deriving
+    one from the raw extracted name (see PIPELINE.md section 7).
+
+    The triple identifies a mention on both sides: ``EntityMention`` (the
+    extraction) carries ``note``/``citation_ts``, ``MentionRef`` (the resolved
+    entity) carries the same plus ``session_id``.
+
+    An ``ignore:``d mention never reaches here at all -- ``resolve_entities``
+    drops it before a ``CanonicalEntity`` exists for it -- so it naturally has
+    no entry. A key two different entities both claim is ambiguous: mapped to
+    ``None`` rather than guessed, so a caller can tell "unresolved" apart from
+    "never happened".
+    """
+
+    index: dict[tuple[str, str, str], str | None] = {}
+    for entity in entities:
+        for mention in entity.mentions:
+            key = (mention.session_id, mention.citation_ts, mention.note)
+            existing = index.get(key, entity.concept_id)
+            index[key] = existing if existing == entity.concept_id else None
+    return {k: v for k, v in index.items() if v is not None}
+
+
 _TYPE_LABEL_DE = {
     EntityType.CHARACTER: "Charaktere",
     EntityType.NPC: "NPCs",
@@ -109,11 +140,21 @@ def emit_sessions(
     extractions: dict[str, SessionExtraction],
     index: ConceptIndex | None = None,
     episodes: Episodes | None = None,
+    mention_concept_ids: dict[tuple[str, str, str], str] | None = None,
 ) -> list[tuple[str, str, str]]:
     """Write one ``sessions/<date>.md`` concept per session.
 
     When ``index`` is given, cross-links inside the recap are normalized
     against the concept set. Returns index entries ``(title, url, description)``.
+
+    ``mention_concept_ids`` (from :func:`mention_concept_index`) is the
+    resolved concept id for each mention, keyed by ``(session_id,
+    citation_ts, note)``. When given, the "Auftretende Entitäten" bullet
+    targets that id directly instead of re-slugifying the raw extracted name
+    -- see PIPELINE.md section 7. A mention with no entry (``ignore:``d, or
+    ambiguous between two entities) is left out of the list entirely rather
+    than guessed. Omitting the argument keeps the pre-fix behaviour
+    (slugify the raw name) for callers that have not resolved entities yet.
     """
 
     episodes = episodes or Episodes()
@@ -136,8 +177,14 @@ def emit_sessions(
 
         intro_lines: list[str] = []
         for mention in extraction.entities:
-            slug = slugify(mention.name)
-            path = f"{TYPE_DIR[mention.type]}/{slug}"
+            if mention_concept_ids is None:
+                path = f"{TYPE_DIR[mention.type]}/{slugify(mention.name)}"
+            else:
+                key = (session_id, mention.citation_ts, mention.note)
+                resolved = mention_concept_ids.get(key)
+                if resolved is None:
+                    continue  # ignore:d or ambiguous -- no line, not a guess
+                path = resolved
             intro_lines.append(
                 f"* [{mention.name}](/{path}.md) — {mention.note} [{mention.citation_ts}]"
             )
