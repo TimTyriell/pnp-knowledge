@@ -2,7 +2,7 @@
 
 **Audience: an LLM agent about to change something in `services/kb`.** Read this
 before touching the pipeline. Every line number and number below was verified
-against the working tree on 2026-09-06; if a line number is off by a few, the
+against the working tree on 2026-09-07; if a line number is off by a few, the
 anchor name (`def …`) is authoritative.
 
 > **Why this file exists.** Agents keep re-deriving the same five facts —
@@ -19,7 +19,7 @@ anchor name (`def …`) is authoritative.
 | Package | `services/kb/src/pnp_okf` |
 | Venv | `services/kb/.venv/Scripts/python.exe` — **not** the repo-root `.venv`, which belongs to frozen `graph/` |
 | Run tests from | `services/kb` (`pyproject.toml` sets `pythonpath = ["src"]`) |
-| Suite | 254 passed, 1 xfailed (~67 s; the churn test alone is ~37 s) |
+| Suite | 259 passed, 1 xfailed (~68 s; the churn test alone is ~37 s) |
 | System of record | `knowledge/bundle/splitter_des_ewigen/` — 1158 concept files, 6382 internal links |
 | Registry | `knowledge/entity_registry.yaml` — **generated**, 1092 concept ids + a `retired:` ledger |
 | Rules | `knowledge/entity_rules.yaml` — **hand-written, never rewritten by code** |
@@ -55,20 +55,25 @@ so **any concept_id rename is a cross-repo break.** Remember this in §4.
 
 | # | Stage | Anchor | Notes |
 |---|---|---|---|
-| 0 | mark run in flight | `cli.py:109` `_begin_run` | writes `state/run_in_progress.json`; if one already exists the previous run was killed, and that gets recorded to `history.jsonl` |
+| 0 | mark run in flight | `cli.py:109` `_begin_run` | writes `state/run_in_progress.json`; finding one at startup means the previous run was killed, and that gets recorded to `history.jsonl` |
 | 1 | load transcripts | `cli.py:206` | `--limit` / `--session` make it a *partial run*, which **disables the rename guard** |
 | 2 | **extract** | `cli.py:221` `_extract_all` | 1 LLM call per uncached session, `ThreadPoolExecutor`, `--workers` default 8 |
 | 3 | **resolve** | `cli.py:225` `resolve_entities` | pure function; no LLM. §4 |
-| 4 | rename guard | `cli.py:227` `check_rename_safety` | refuses if >2% of registry ids vanish. Returns exit 2 |
-| 5 | write registry | `cli.py:238` `write_registry` | ⚠ happens *before* everything else |
-| 6 | optional wipe | `cli.py:241` `shutil.rmtree` | only with `--clean` |
-| 7 | **emit sessions** | `cli.py:258` `emit_sessions` | writes all `sessions/*.md`, **with links to entity pages** |
-| 8 | **synthesize** | `cli.py:292` | 1 LLM call per non-brief entity. **25–95 min. Every network failure lives here.** |
-| 9 | emit entities | `cli.py:307` `emit_entity` | the link targets from step 7 finally appear |
-| 10 | prune conflicts | `cli.py:325` | |
-| 11 | prune orphans | `cli.py:336` | deletes files; guarded at 2% |
-| 12 | indexes + log | `cli.py:342-343` | |
-| 13 | **validate** | `cli.py:372` `validate_bundle` | gates the exit code — §9 |
+| 4 | rename guard | `cli.py:228` `check_rename_safety` | refuses if >2% of registry ids vanish. Exit 2. Reads the *previous* registry |
+| 5 | optional wipe | `cli.py:239` `shutil.rmtree` | only with `--clean` |
+| 6 | build link index | `cli.py:256` `build_concept_index` | in-memory only |
+| 7 | **synthesize** | `cli.py:290` | 1 LLM call per non-brief entity. **25–95 min. Every network failure lives here. Nothing is written yet.** |
+| 8 | emit entities | `cli.py:305` `emit_entity` | first bundle write of the run |
+| 9 | emit sessions | `cli.py:330` `emit_sessions` | **after** their link targets exist — see §7 |
+| 10 | prune conflicts / orphans | `cli.py:339`, `cli.py:346` | orphan prune deletes files; guarded at 2% |
+| 11 | write registry | `cli.py:359` `write_registry` | deliberately late, next to the indexes |
+| 12 | indexes + log | `cli.py:360-361` | |
+| 13 | **validate** | `cli.py:390` `validate_bundle` | gates the exit code — §9 |
+
+> **The ordering is load-bearing, not incidental.** Everything expensive and
+> failure-prone (step 7) happens before the first durable write (step 8), and
+> each write depends only on what is already on disk. Preserve that property
+> if you touch this function: sessions after entities, registry last.
 
 **Subcommands** (`_build_parser`, `cli.py:601`): `run`, `extract`, `dedup`,
 `check`, `visualize`, `validate`. **There is no emit-only subcommand** — `run`
@@ -233,22 +238,34 @@ synthesized **body prose**. `emit_sessions` logs its own unresolved links at
 `log.debug` and counts them nowhere. Do not read that number as a session-link
 metric — an earlier version of this document did, and it was wrong.
 
-### The crash window
+### The crash window (closed 2026-09-07)
 
-Sessions are written at step 7; their link targets only at step 9, with the
-25–95 minute synthesis phase in between. A kill in that window leaves new
-sessions + new registry + old entities — i.e. links to files that were never
-written. **This happened on 2026-09-05 and left 54 dangling links.**
+Until `8159eb2` the order was: registry → **sessions** → synthesis (25–95 min)
+→ entities. A kill in the synthesis window left new session files linking to
+entity pages that were never written, plus a registry naming concept ids with
+no files. **That happened on 2026-09-05 and left 54 dangling links.**
 
-Every write is a bare `Path.write_text` (`okf.py:61` `write_if_changed`). No
-temp+rename, no staging, no rollback. Note: **a whole-directory atomic swap is
-not possible** — POSIX `rename(2)` needs an empty destination and Windows
-`MoveFileEx` is not atomic for directories. Real "atomic swaps" flip a symlink,
-which does not compose with a git working tree. Per-file `os.replace` is the
-available upgrade.
+Now nothing is written until synthesis has completed, and each write happens
+after what it references: entities → sessions → registry. A kill during
+synthesis leaves the previous bundle untouched and self-consistent.
 
-Mitigation in place: `_begin_run` (§3 step 0) makes a hard kill visible to the
-*next* run.
+⚠ Moving `emit_sessions` merely past the `ThreadPoolExecutor` join is **not
+sufficient** — `emit_entity` writes the link targets in the loop that follows
+the join, so sessions would still land first. It must come after that loop.
+
+**Residual risk, stated plainly.** Every write is still a bare
+`Path.write_text` (`okf.py:61` `write_if_changed`) — no temp+rename, no
+staging, no rollback. A kill *inside* the now-seconds-long write phase
+reproduces the same class of breakage, just far less likely. That is the
+honest cost of shrinking the window rather than protecting it. The available
+upgrade is per-file `os.replace`; note a whole-**directory** atomic swap is
+not possible — POSIX `rename(2)` needs an empty destination and Windows
+`MoveFileEx` is not atomic for directories. Real "atomic swaps" flip a
+symlink, which does not compose with a git working tree.
+
+Detection, since prevention is partial: `_begin_run` (step 0) makes a hard
+kill visible to the next run, and `validate_bundle` (step 13) now gates the
+exit code.
 
 ---
 
