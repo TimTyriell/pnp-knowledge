@@ -7,6 +7,7 @@ import os
 import re
 from pathlib import Path
 
+import openai
 from tenacity import (
     retry,
     retry_if_exception_type,
@@ -189,6 +190,20 @@ def _call_llm(client, cfg: DeepSeekConfig, transcript: SessionTranscript) -> Ses
         return _call_llm_json_prompt(client, cfg, messages)
     try:
         return _call_llm_structured(client, cfg, messages)
+    except (openai.APIConnectionError, openai.APITimeoutError) as exc:
+        # A dropped connection or timeout says nothing about whether the
+        # model supports structured outputs -- unlike a real capability
+        # rejection it can succeed on the very next attempt, so it must not
+        # poison _NO_STRUCTURED_OUTPUTS for the rest of the process. The
+        # fallback below still has its own retry/backoff to ride this out.
+        log.info(
+            "[extract] structured-outputs probe hit a transient network "
+            "error for %s (%s); falling back to the JSON prompt for this "
+            "call only",
+            cfg.model,
+            type(exc).__name__,
+        )
+        return _call_llm_json_prompt(client, cfg, messages)
     except Exception as exc:
         _NO_STRUCTURED_OUTPUTS.add(cfg.model)
         log.info(

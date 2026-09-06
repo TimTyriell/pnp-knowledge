@@ -9,6 +9,8 @@ wasted round trips.
 
 import json
 
+import httpx
+import openai
 import pytest
 from pnp_okf.config import DeepSeekConfig
 from pnp_okf import extract as extract_mod
@@ -83,3 +85,33 @@ def test_memo_is_per_model():
     # for_tier() swaps the model, and a different endpoint/model may well
     # support what this one does not.
     assert client.probes == 2
+
+
+class _ConnErrorClient(_FakeClient):
+    """Structured-outputs probe fails with a transient network error, not a
+    real "unsupported" response."""
+
+    def parse(self, **kwargs):
+        self.probes += 1
+        raise openai.APIConnectionError(
+            request=httpx.Request("POST", "https://example.invalid")
+        )
+
+
+def test_connection_error_does_not_poison_the_memo():
+    """A dropped connection during the probe says nothing about whether the
+    model supports structured outputs -- unlike a real capability rejection,
+    it can succeed on the very next attempt. Memoising it anyway would
+    silently degrade every remaining session in the run to the JSON-prompt
+    path for no reason."""
+
+    client, cfg, t = _ConnErrorClient(), _cfg(), _transcript()
+    _call_llm(client, cfg, t)
+    assert cfg.model not in extract_mod._NO_STRUCTURED_OUTPUTS
+    assert client.json_calls == 1, "the call itself should still fall back and succeed"
+
+
+def test_capability_error_still_populates_the_memo():
+    client, cfg, t = _FakeClient(), _cfg(), _transcript()
+    _call_llm(client, cfg, t)
+    assert cfg.model in extract_mod._NO_STRUCTURED_OUTPUTS

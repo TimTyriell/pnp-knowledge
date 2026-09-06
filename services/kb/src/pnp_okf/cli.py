@@ -236,8 +236,6 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
         )
         return 2
 
-    write_registry(entities, registry_path)
-
     if args.clean and paths.bundle_dir.exists():
         shutil.rmtree(paths.bundle_dir)
 
@@ -256,10 +254,6 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     } if paths.bundle_dir.exists() else {}
 
     index = build_concept_index(entities, tmap, load_spellings(registry_path))
-    session_entries = emit_sessions(
-        paths.bundle_dir, tmap, extractions, index, episodes,
-        mention_concept_ids=mention_concept_index(entities),
-    )
     unresolved_total = 0
     conflict_count = 0
     open_conflicts: set[str] = set()
@@ -326,6 +320,18 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
             unlabelled,
             paths.episodes_path,
         )
+
+    # Sessions link to entity concept pages ("Auftretende Entitäten"), so they
+    # must not be written until the pages they link to actually exist on
+    # disk. Emitting them only now -- after every entity file above -- means
+    # a kill during the (25-95 min) synthesis window above leaves no new
+    # session file at all, instead of one that links to entities that were
+    # never written (PIPELINE.md section 7; 54 dangling links on 2026-09-05).
+    session_entries = emit_sessions(
+        paths.bundle_dir, tmap, extractions, index, episodes,
+        mention_concept_ids=mention_concept_index(entities),
+    )
+
     settled = prune_conflicts(paths.conflicts_dir, open_conflicts)
     if settled:
         log.info("Cleared %d resolved conflict(s) from the queue.", settled)
@@ -343,6 +349,14 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
                 "Pruned %d concept file(s) with no entity behind them any more.", pruned
             )
 
+    # Written here, next to the bundle's own indexes/log rather than at the
+    # top of the run: nothing between the old resolve() call and here reads
+    # the freshly-written file back (the only downstream reader is
+    # load_spellings, and write_registry never touches the `spelling:`
+    # family -- see PIPELINE.md section 7 / Task 2's investigation notes).
+    # Writing it first used to mean a kill during synthesis left an
+    # entity_registry.yaml naming concept ids whose files were never written.
+    write_registry(entities, registry_path)
     emit_indexes(paths.bundle_dir, entities, session_entries, load_spellings(registry_path))
     emit_log(paths.bundle_dir, tmap)
 
