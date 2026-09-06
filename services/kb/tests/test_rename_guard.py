@@ -42,14 +42,31 @@ def test_mass_rename_is_refused(tmp_path: Path):
 
 def test_normal_growth_is_allowed(tmp_path: Path):
     registry = tmp_path / "entity_registry.yaml"
-    old_ids = [f"npcs/c{i}" for i in range(40)]
+    # 100, not 40: at the tightened 2% ratio even a single abandoned id out
+    # of 40 (2.5%) would refuse, so the "normal growth" scenario needs more
+    # room to stay under the ratio while still exercising a rename.
+    old_ids = [f"npcs/c{i}" for i in range(100)]
     _write_registry(registry, old_ids)
 
-    # 38 survive untouched, 1 renamed, 5 brand new -> well under 10%.
-    resolved = [_ent(cid) for cid in old_ids[:38]]
-    resolved.append(_ent("npcs/c39_renamed"))
+    # 98 survive untouched, 1 renamed, 5 brand new -> 1/100 = 1%, under 2%.
+    resolved = [_ent(cid) for cid in old_ids[:99]]
+    resolved.append(_ent("npcs/c99_renamed"))
     resolved.extend(_ent(f"npcs/new_{i}") for i in range(5))
     assert check_rename_safety(registry, resolved) is True
+
+
+def test_a_three_percent_rename_is_now_refused(tmp_path: Path):
+    """0.1 permitted ~115 silent renames on the real 1158-concept bundle --
+    tightened to 0.02 so a much smaller rename is caught. 3% comfortably
+    passed the old 10% floor but must now refuse."""
+
+    registry = tmp_path / "entity_registry.yaml"
+    old_ids = [f"npcs/c{i}" for i in range(100)]
+    _write_registry(registry, old_ids)
+
+    resolved = [_ent(cid) for cid in old_ids[:97]]
+    resolved.extend(_ent(f"npcs/renamed_{i}") for i in range(3))
+    assert check_rename_safety(registry, resolved) is False
 
 
 def test_guard_is_off_below_the_size_floor(tmp_path: Path):

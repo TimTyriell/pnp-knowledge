@@ -413,7 +413,7 @@ def check_rename_safety(
     registry_path: Path,
     entities: list[CanonicalEntity],
     *,
-    max_ratio: float = 0.1,
+    max_ratio: float = 0.02,
     allow: bool = False,
 ) -> bool:
     """Refuse a run that abandons most of the previous registry's concept ids.
@@ -460,7 +460,7 @@ def prune_orphans(
     bundle_dir: Path,
     entities: list[CanonicalEntity],
     *,
-    max_ratio: float = 0.1,
+    max_ratio: float = 0.02,
     allow: bool = False,
 ) -> int:
     """Delete concept files whose entity no longer exists. Returns the count.
