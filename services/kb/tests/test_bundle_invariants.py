@@ -310,3 +310,24 @@ def test_no_leaked_okf_directive():
         f"okf routing directive leaked into the generated bundle (should "
         f"have been stripped by context.load_sources before the prompt): {leaked}"
     )
+
+
+def test_no_link_in_the_bundle_names_a_file_that_does_not_exist():
+    """Every href must resolve to a real file. Hard 0, never a ratchet.
+
+    On 2026-09-05 a run was killed mid-synthesis. It had already written every
+    sessions/*.md with links to entity pages whose files were only written
+    after the 25-95 minute synthesis phase, so the tree it left behind carried
+    54 links to files nobody ever wrote. A human noticed; no test did. The
+    post-emit validator computed exactly this and its result was discarded.
+
+    Measured 0 across 6382 links at the time this was written, so 0 is what it
+    was, not an aspiration -- per test_canon_decisions.py:48-51, a baseline
+    that can be raised is an invitation to raise it.
+    """
+
+    from pnp_okf.validate import validate_bundle
+
+    report = validate_bundle(BUNDLE)
+    assert report.dangling_links == []
+    assert report.broken_links == []

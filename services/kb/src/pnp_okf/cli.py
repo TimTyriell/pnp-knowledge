@@ -106,6 +106,55 @@ def _duration_s(started_at: str, ended_at: str) -> float | None:
     return round((end - start).total_seconds(), 1)
 
 
+def _begin_run(started_at: str) -> None:
+    """Mark a run as in flight, and record the previous one if it never ended.
+
+    _write_run_status only fires at the end of a run, so a SIGKILL, a power
+    loss or a laptop sleeping mid-synthesis wrote nothing at all -- the run
+    simply left no row. This marker is the trace: it is written before the
+    first bundle write and removed on completion, so finding one at startup
+    means the previous run died without finishing.
+
+    Deliberately a separate file rather than a status field on last_run.json:
+    that file is a cross-repo contract (docs/architecture/status-schema.md,
+    services/dashboard, api.py) whose consumers read ``ok`` as a bool.
+    """
+
+    state_dir = _state_dir()
+    state_dir.mkdir(parents=True, exist_ok=True)
+    marker = state_dir / "run_in_progress.json"
+    if marker.exists():
+        try:
+            stale = json.loads(marker.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            stale = {}
+        _append_history(
+            {
+                "started_at": stale.get("started_at"),
+                "ended_at": None,
+                "duration_s": None,
+                "ok": False,
+                "error": "killed before finishing (no run status was written)",
+                "counts": {},
+            }
+        )
+        log.error(
+            "Previous run (%s) never finished -- it was killed mid-flight. Its "
+            "bundle writes may be half-applied; check `pnp validate` before "
+            "committing anything from that tree.",
+            stale.get("started_at", "unknown"),
+        )
+    marker.write_text(
+        json.dumps({"started_at": started_at}, ensure_ascii=False), encoding="utf-8"
+    )
+
+
+def _append_history(record: dict) -> None:
+    ts = datetime.now(UTC).isoformat(timespec="seconds").replace("+00:00", "Z")
+    with open(_state_dir() / "history.jsonl", "a", encoding="utf-8") as f:
+        f.write(json.dumps({"ts": ts, **record}, ensure_ascii=False) + "\n")
+
+
 def _write_run_status(started_at: str, ok: bool, error: str | None, counts: dict) -> None:
     """Persist last-run metadata for the dashboard's GET /status endpoint.
 
@@ -136,12 +185,14 @@ def _write_run_status(started_at: str, ok: bool, error: str | None, counts: dict
     )
     with open(state_dir / "history.jsonl", "a", encoding="utf-8") as f:
         f.write(json.dumps({"ts": ended_at, **record}, ensure_ascii=False) + "\n")
+    (state_dir / "run_in_progress.json").unlink(missing_ok=True)
 
 
 def cmd_run(args: argparse.Namespace) -> int:
     """Full pipeline: ingest -> extract -> resolve -> synthesize -> emit."""
 
     started_at = datetime.now(UTC).isoformat(timespec="seconds").replace("+00:00", "Z")
+    _begin_run(started_at)
     try:
         return _run_pipeline(args, started_at)
     except Exception as exc:
@@ -320,6 +371,23 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
 
     report = validate_bundle(paths.bundle_dir)
     log.info("Validation:\n%s", report.summary())
+    if not report.integrity_ok:
+        log.error(
+            "Validation found %d broken and %d dangling link(s), %d concept(s) "
+            "without a type and %d duplicate id(s). Refusing to report success "
+            "-- this bundle must not be committed.",
+            len(report.broken_links),
+            len(report.dangling_links),
+            len(report.missing_type),
+            len(report.duplicate_ids),
+        )
+        _write_run_status(
+            started_at,
+            ok=False,
+            error="bundle failed post-emit validation (see log)",
+            counts={},
+        )
+        return 3
 
     log.info(
         "Visualize with the okf package:\n"

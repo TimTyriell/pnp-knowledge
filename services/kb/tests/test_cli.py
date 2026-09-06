@@ -66,3 +66,46 @@ def test_run_allow_rename_flag_defaults_off():
     assert parser.parse_args(["run", "--allow-rename"]).allow_rename is True
 
 
+
+
+def test_a_killed_run_leaves_a_trace_the_next_run_records(tmp_path: Path, monkeypatch):
+    """A hard kill must not vanish.
+
+    _write_run_status only runs at the end of a run, so a SIGKILL or a machine
+    sleeping mid-synthesis wrote nothing at all. On 2026-09-05 that is exactly
+    what happened: a run died at ~15:37 leaving a half-written bundle, and
+    history.jsonl has no row for it -- the failure was discovered days later by
+    reading link targets. The marker written at start is the trace.
+    """
+
+    from pnp_okf.cli import _begin_run, _write_run_status
+
+    monkeypatch.setenv("PNP_STATE_DIR", str(tmp_path))
+
+    _begin_run("2026-09-05T15:37:00Z")          # this run gets killed
+    _begin_run("2026-09-05T18:00:00Z")          # the next run notices
+
+    rows = [
+        json.loads(line)
+        for line in (tmp_path / "history.jsonl").read_text(encoding="utf-8").splitlines()
+    ]
+    assert len(rows) == 1
+    assert rows[0]["started_at"] == "2026-09-05T15:37:00Z"
+    assert rows[0]["ok"] is False
+    assert "killed" in rows[0]["error"]
+
+
+def test_a_finished_run_leaves_no_stale_marker(tmp_path: Path, monkeypatch):
+    from pnp_okf.cli import _begin_run, _write_run_status
+
+    monkeypatch.setenv("PNP_STATE_DIR", str(tmp_path))
+
+    _begin_run("2026-09-05T18:00:00Z")
+    _write_run_status("2026-09-05T18:00:00Z", ok=True, error=None, counts={})
+    _begin_run("2026-09-05T19:00:00Z")
+
+    rows = [
+        json.loads(line)
+        for line in (tmp_path / "history.jsonl").read_text(encoding="utf-8").splitlines()
+    ]
+    assert [r["ok"] for r in rows] == [True]

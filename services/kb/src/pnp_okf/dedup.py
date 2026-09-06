@@ -213,12 +213,14 @@ def load_never_merge(registry_path) -> list[set[str]]:
     repeated sweep expensive.
     """
 
-    import yaml  # local: keeps the module importable without a registry
+    # The rules live beside the registry in entity_rules.yaml, which nothing
+    # ever rewrites; reading only the registry hid every group kept there.
+    from pnp_okf.resolve import _registry_data
 
     path = Path(registry_path)
     if not path.exists():
         return []
-    data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    data = _registry_data(path)
     out: list[set[str]] = []
     for group in data.get("never_merge") or []:
         ids = {str(c).strip() for c in group if str(c).strip()}

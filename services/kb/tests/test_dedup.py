@@ -158,3 +158,26 @@ if __name__ == "__main__":
     test_llm_group_survives_but_hallucinated_ids_are_dropped()
     test_to_registry_merges_points_losers_at_the_survivor()
     print("all checks passed")
+
+
+def test_never_merge_rules_from_the_rules_file_are_honoured(tmp_path: Path):
+    """`pnp dedup` must see the rules file, not just the generated registry.
+
+    never_merge: moved into entity_rules.yaml because write_registry rewrites
+    entity_registry.yaml through a YAML dump and strips every comment -- the
+    reasons for a GM ruling would be erased by the tool that enforces it. But
+    load_never_merge kept reading only the registry, so all 18 groups living in
+    the rules file were invisible here and dedup re-proposed pairs a human had
+    already ruled distinct.
+    """
+
+    from pnp_okf.dedup import load_never_merge
+
+    (tmp_path / "entity_registry.yaml").write_text("entities: []\n", encoding="utf-8")
+    (tmp_path / "entity_rules.yaml").write_text(
+        "never_merge:\n  - [npcs/myko, npcs/miqo]\n", encoding="utf-8"
+    )
+
+    assert load_never_merge(tmp_path / "entity_registry.yaml") == [
+        {"npcs/myko", "npcs/miqo"}
+    ]
