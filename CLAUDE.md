@@ -45,7 +45,7 @@ Two systems live here, and the top level keeps them apart:
   repo, a pure client of the KB API. Don't re-add wiki code here.
 - Each active service has its own venv. The repo-root `.venv` belongs to the
   frozen `graph/` pipeline.
-- Before touching `services/*` or `knowledge/`, read the architecture docs.
+- **Before touching `services/kb` or `knowledge/`, read [docs/architecture/PIPELINE.md](docs/architecture/PIPELINE.md)** -- how `pnp run` works stage by stage, how concept ids are derived, what keys the caches, where the money goes, and the traps that have already bitten. It exists because those facts get re-derived (wrongly) every session.
   Before touching `graph/`, read `graph/CLAUDE.md`.
 - Known issue (pre-existing, out of scope for the layout move):
   `graph/tests/test_golden.py` is red — its golden file is stale relative to the
