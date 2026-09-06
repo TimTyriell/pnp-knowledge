@@ -201,24 +201,37 @@ required**; comparison is lexicographic on the ISO date, cutoff exclusive.
 
 ## 7. Emit, links, and the crash window
 
-### How session links are built (`emit.py:139`)
+### How session links are built (`emit.py:177`)
 
-```python
-for mention in extraction.entities:
-    slug = slugify(mention.name)          # <-- RAW LLM name, NOT the resolved id
-    path = f"{TYPE_DIR[mention.type]}/{slug}"
-```
+Session pages carry an "Auftretende Entitäten" bullet list. Each bullet targets
+the concept id that `resolve_entities` actually assigned, looked up through
+`mention_concept_index` (`emit.py:57`) — a `(session_id, citation_ts, note) →
+concept_id` map built by walking the resolved entities back to their mentions.
+`resolve_entities`' own signature is untouched; it has 25+ call sites.
 
-**Session pages re-slugify the raw mention name instead of using the resolved
-concept_id.** Every split/merge/ignore/spelling decision is discarded here, and
-`normalize_body` then *fuzzy-resolves* the result via `ConceptIndex.resolve`
-(`links.py:123`). That produces `dropped_links: ~137` per run and can silently
-repoint a link at a different entity. **Known defect; fix is to thread the
-mention→concept_id map from resolve into `emit_sessions`.**
+A mention with no entry — `ignore:`d, or ambiguous between two entities — is
+**left out of the list** rather than guessed.
 
-`ConceptIndex.resolve` matches, in order: exact id → slugified basename →
-name/compact/prefix tables → naive singularization. `_by_prefix` maps a **short
-href onto a longer concept slug**, not the reverse.
+> **Before 2026-09-07 this re-slugified the raw LLM name** (`slugify(mention.name)`),
+> discarding every split/merge/ignore/spelling decision, with `normalize_body`
+> fuzzy-rescuing the wreckage afterwards. Measured over 1846 mentions in the
+> real corpus: 1475 landed correctly by luck, **320 only via the fuzzy rescue**,
+> 7 pointed at the *wrong* concept and 4 were dropped to plain text. Now 100%
+> exact by construction.
+
+`ConceptIndex.resolve` (`links.py:123`) matches, in order: exact id → slugified
+basename → name/compact/prefix tables → naive singularization. `_by_prefix` maps
+a **short href onto a longer concept slug**, not the reverse. Session bullets now
+hit its first (exact) branch every time; **prose autolinking in entity bodies
+still genuinely needs the name/alias tables** — "Vasul" in German prose has to
+reach `deities/vharzul`. Do not delete it.
+
+⚠ **`dropped_links` in `last_run.json` does NOT count session bullets.** It is
+`unresolved_total`, incremented only inside the *entity* emit loop
+(`cli.py:312`, from `emit_entity`), so it measures unresolved links in
+synthesized **body prose**. `emit_sessions` logs its own unresolved links at
+`log.debug` and counts them nowhere. Do not read that number as a session-link
+metric — an earlier version of this document did, and it was wrong.
 
 ### The crash window
 
