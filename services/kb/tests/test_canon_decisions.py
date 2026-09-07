@@ -28,9 +28,13 @@ from pathlib import Path
 
 import pytest
 import yaml
-
 from pnp_okf.context import _matches, load_sources
-from pnp_okf.models import ALWAYS_DEEP_TYPES, ALWAYS_STANDARD_TYPES, DEEP_MENTION_THRESHOLD, TYPE_DIR
+from pnp_okf.models import (
+    ALWAYS_DEEP_TYPES,
+    ALWAYS_STANDARD_TYPES,
+    DEEP_MENTION_THRESHOLD,
+    TYPE_DIR,
+)
 from pnp_okf.okf import slugify
 from pnp_okf.resolve import _load_important
 
@@ -332,6 +336,15 @@ def test_ruling_targets_are_not_brief_tier():
 # really about), not a directive.
 KNOWN_UNROUTABLE_SECTIONS = {
     "Blutschalen-Statuen",
+    # 2026-09-05 v6 identity cleanup: "Nicht in dieser Schrift verzeichnet"
+    # (Bekannte_Pantheon_der_Goetter.md) is a bookkeeping note, not a ruling
+    # about one entity -- it names deities that appear in sessions but have
+    # no pantheon-list entry (Kol Meref, Nerash, Korn, all already linked
+    # inline in its own body) plus the genuinely-uncreated ones tracked in
+    # KNOWN_UNCREATED_TARGETS. No single concept_id fits a directive; the
+    # heading text itself is prose, not an entity name, so the fallback
+    # slug match can never fire either.
+    "Nicht in dieser Schrift verzeichnet",
 }
 
 

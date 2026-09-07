@@ -18,19 +18,15 @@ the YAML line exists.
 
 from __future__ import annotations
 
+import re
 from pathlib import Path
 
 import pytest
 import yaml
-
-import re
-
-from pnp_okf.models import TYPE_DIR
 from pnp_okf.okf import slugify
 from pnp_okf.resolve import (
     RULES_FILENAME,
     _load_alias_blocks,
-    _load_canonical_names,
     _load_ignored,
     _load_important,
     _load_never_merge_pairs,
@@ -133,7 +129,6 @@ def test_split_targets_exist():
 
 
 def test_canonical_names_are_applied():
-    names = _load_canonical_names(REGISTRY)
     # Values sourced from `entities:` are the generated inventory's own
     # recollection of itself, so they trivially match; only rules that came
     # from entity_rules.yaml (the hand-authored pins) can meaningfully fail.

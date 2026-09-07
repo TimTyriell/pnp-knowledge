@@ -1,0 +1,149 @@
+# Ground truth for 2026-01-20 -- AI draft, adjudicated by the GM.
+#
+# Drafted by Claude (Opus) against the raw transcript, not against the
+# extraction's own output -- every `ok` below means the entity was found in
+# the spoken text at or near its cited timestamp.
+#
+# WHERE THIS DRAFT IS STRONG: precision. Each extracted name was checked
+# against the transcript, so `wrong` and `rename` verdicts are evidence-based.
+#
+# WHERE IT IS WEAK, AND WHY YOUR PASS MATTERS: recall. Finding what the model
+# MISSED means independently extracting the session, which is the same task
+# the model performed -- so a second model agreeing proves less than it looks.
+# I scanned for frequent capitalised nouns absent from the extraction and
+# added what survived, but treat the `missed` entries as the least reliable
+# part of this file. If you add even a couple I overlooked, the recall number
+# becomes yours rather than mine.
+#
+# Verdicts: ok / wrong / rename (+should_be) / missed
+#
+# Source: https://www.youtube.com/watch?v=H3ckYdTv4y8
+
+reviewed: true
+
+session_id: 2026-01-20_RF_H3ckYdTv4y8
+date: '2026-01-20'
+entities:
+  - name: 'Lindo Laut'
+    type: Character
+    citation_ts: '00:33:33'
+    verdict: ok
+  - name: 'Rotunas'
+    type: Character
+    citation_ts: '00:31:34'
+    verdict: ok
+  - name: 'Esterossa'
+    type: Character
+    citation_ts: '00:13:00'
+    verdict: ok
+  - name: 'Lunara Velora'
+    type: Character
+    citation_ts: '00:34:24'
+    verdict: ok
+  - name: 'Nyrella'
+    type: Character
+    citation_ts: '00:23:48'
+    verdict: ok
+  - name: 'Dodo'
+    type: Character
+    citation_ts: '00:55:20'
+    verdict: ok
+  - name: 'Belorus'
+    type: NPC
+    citation_ts: '00:09:02'
+    verdict: ok
+  - name: 'Hal'
+    type: NPC
+    citation_ts: '01:57:57'
+    verdict: ok
+    # Spoken as "Nairuk"; campaign canon is Nyruk. The model faithfully
+    # reported the transcript, which is what was asked of it -- the
+    # spelling is a rules-layer concern, not an extraction error.
+  - name: 'Nairuk'
+    type: NPC
+    citation_ts: '00:27:08'
+    verdict: ok
+    # A voice offering power ("Nutzt mich, Meister"). Deity is defensible
+    # for a disembodied power; NPC would be too. Lowest confidence call in
+    # this file.
+  - name: 'Slicks'
+    type: Deity
+    citation_ts: '00:41:35'
+    verdict: ok
+  - name: 'Vasul'
+    type: Deity
+    citation_ts: '00:17:11'
+    verdict: ok
+  - name: 'Leandra'
+    type: NPC
+    citation_ts: '01:44:36'
+    verdict: ok
+  - name: 'Dormak'
+    type: NPC
+    citation_ts: '01:44:36'
+    verdict: ok
+    # Neither half is spoken, and the slash makes it two names in one
+    # field. GM ruled it fitting anyway; it already resolves to the single
+    # concept id locations/banditenversteck_fluechtlingslager, so the slash
+    # is a style question, not a correctness one.
+  - name: 'Banditenversteck / Flüchtlingslager'
+    type: Location
+    citation_ts: '00:06:33'
+    verdict: ok
+    # Spoken as "Bereska"; canon is Breska. Same reasoning as Nairuk.
+  - name: 'Bereska'
+    type: Location
+    citation_ts: '00:06:33'
+    verdict: ok
+  - name: 'Splitterwelt'
+    type: Domain
+    citation_ts: '00:34:52'
+    verdict: ok
+  - name: 'Abyssalis'
+    type: Domain
+    citation_ts: '00:39:46'
+    verdict: ok
+  - name: 'Ehrenfels'
+    type: Location
+    citation_ts: '02:05:00'
+    verdict: ok
+  - name: 'Vasuls Buch'
+    type: Item
+    citation_ts: '01:48:29'
+    verdict: ok
+  - name: 'Notiz von Vora'
+    type: Item
+    citation_ts: '02:03:43'
+    verdict: ok
+  - name: "Belorus' Kristall"
+    type: Item
+    citation_ts: '00:54:40'
+    verdict: ok
+  - name: 'Belagerung des Banditenverstecks'
+    type: Event
+    citation_ts: '00:17:38'
+    verdict: ok
+  - name: 'Lunara verschiebt die Welt in die Splitterwelt'
+    type: Event
+    citation_ts: '00:42:12'
+    verdict: ok
+  - name: "Belorus' Kapitulation und Abzug"
+    type: Event
+    citation_ts: '01:43:20'
+    verdict: ok
+  - name: 'Lektüre der Notiz von Vora'
+    type: Event
+    citation_ts: '02:03:43'
+    verdict: ok
+  - name: 'Banditengilde'
+    type: Faction
+    citation_ts: '01:59:50'
+    verdict: ok
+    # The besieging force is undead -- "Untoten" 35x, "Skelette" 11x --
+    # and Belorus commands it, but no faction was extracted for them while
+    # the defending Banditengilde was. My judgement call; drop it if you
+    # think the army is adequately covered by npcs/belorus.
+  - name: 'Untotenarmee des Belorus'
+    type: Faction
+    citation_ts: '00:00:00'
+    verdict: missed

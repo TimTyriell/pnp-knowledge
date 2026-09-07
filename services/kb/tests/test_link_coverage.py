@@ -24,7 +24,6 @@ from pathlib import Path
 
 import pytest
 import yaml
-
 from pnp_okf.models import TYPE_DIR
 
 KNOWLEDGE = Path(__file__).resolve().parents[3] / "knowledge"
@@ -119,7 +118,7 @@ def _count_unlinked_mentions() -> int:
     pattern = _name_pattern(list(name_to_cid))
 
     total = 0
-    for cid, own_name, body in entities:
+    for _cid, own_name, body in entities:
         stripped = _LINK_RE.sub("", body)
         for match in pattern.finditer(stripped):
             name = match.group(1)

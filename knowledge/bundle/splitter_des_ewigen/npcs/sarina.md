@@ -1,15 +1,15 @@
 ---
 type: NPC
 title: Sarina
-description: Sarina ist die Anführerin der Silberkornbande, von der die Banditen seit
-  langem keine Anweisungen mehr erhalten haben. Ihr Name dient als P…
+description: Sarina ist die Anführerin der Silberkornbande, deren Namen die Banditen
+  als Erkennungszeichen abfragen. Sie hat sich schon lange nicht mehr…
 tags:
 - npcs
 timestamp: '2026-02-24T00:00:00Z'
 id: NPC_SARINA
 ---
 
-Sarina ist die Anführerin der [Silberkornbande](/factions/silberkerne.md), von der die Banditen seit langem keine Anweisungen mehr erhalten haben. Ihr Name dient als Passwort, um das Vertrauen der Banditen zu gewinnen.
+Sarina ist die Anführerin der [Silberkornbande](/factions/silberkerne.md), deren Namen die Banditen als Erkennungszeichen abfragen. Sie hat sich schon lange nicht mehr bei den Banditen gemeldet.
 
 # Belege
 

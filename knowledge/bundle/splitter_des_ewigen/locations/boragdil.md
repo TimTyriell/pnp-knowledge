@@ -1,11 +1,11 @@
 ---
 type: Location
 title: Boragdil
-description: Boragdil ist eine Ruinenstadt in der Region Abyssalis, in der die Gruppe
-  nach ihrer Ankunft in dieser düsteren Gegend zuerst ankommt. Die S…
+description: Boragdil (auch Borakdil genannt) ist eine Ruinenstadt mit einer großen
+  Festung, die einst einen Schutzzauber hatte. Der Zauber wurde zerstö…
 tags:
 - locations
-timestamp: '2026-03-31T00:00:00Z'
+timestamp: '2026-04-14T00:00:00Z'
 id: LOC_BORAGDIL
 subtype: Siedlung
 aliases:
@@ -13,58 +13,35 @@ aliases:
 - Boragdil (Ruinenstadt und Festung)
 ---
 
+# Boragdil
+
 ## Überblick
-
-Boragdil ist eine Ruinenstadt in der Region [Abyssalis](/domains/splitterwelt.md), in der die Gruppe nach ihrer Ankunft in dieser düsteren Gegend zuerst ankommt. Die Stadt liegt eingebettet in einer waldreichen Umgebung und ist von einer großen [Festung](/locations/festung.md) geprägt, die zu den größten der Region zählt. Boragdil ist eine verfallene, ruinenhafte Siedlung, die von [Dämonen](/factions/daemonen.md) und Seelen bevölkert wird. Die gesamte Anlage wirkt zerstört und kaputt, was auf eine bewegte und gewaltsame Vergangenheit hindeutet.
-
-Die Gruppe wird von [Vasul](/deities/vharzul.md) (in den Quellen auch als Wasul gehört) mehr oder weniger direkt an die Festung von Boragdil gebracht, die sich östlich des Ankunftspunkts befindet. [Die Festung](/locations/die_festung.md) selbst wird von Anhängern [Ohoriaks](/deities/ohoriaks.md) bewacht, die die Gruppe abweisen.
+Boragdil ist eine Ruinenstadt mit einer großen Festung. Die Festung war einst durch einen Schutzzauber gesichert, der inzwischen zerstört ist; heute ist sie von Anhängern Ohoriaks besetzt. Die Stadt selbst liegt hinter einem kleinen Abgrund und wirkt karg und trist.
 
 ## Rolle in der Kampagne
-
-Boragdil ist der erste Ort, an dem die Gruppe nach ihrer Ankunft in Abyssalis ankommt. Der GM beschreibt, dass die Gruppe "mehr oder weniger vor einer riesigen Stadt" spawnet und dass Vasul sie "mehr oder weniger direkt an eine Festung gebracht" hat. Die Stadt dient damit als Einstiegspunkt in die Region Abyssalis und konfrontiert die Gruppe unmittelbar mit den lokalen Machtverhältnissen: Die Festung von Boragdil wird von Anhängern Ohoriaks bewacht, die die Gruppe abweisen.
-
-Die Abweisung durch die Wächter der Festung etabliert die feindselige Umgebung von Abyssalis und die Gegnerschaft der Anhänger Ohoriaks gegenüber der Gruppe. Boragdil ist damit nicht nur ein Schauplatz, sondern auch ein erster Konfliktpunkt, der die weitere Richtung der Kampagne in dieser Region vorgibt.
+Boragdil ist ein wiederkehrendes Ziel der Gruppe. Der Zugang zur Festung blieb ihr bislang verwehrt: Beim ersten Versuch wurde sie abgewiesen, bei der späteren Rückkehr an den Stadtrand trifft sie auf weitgehend unveränderte Verhältnisse.
 
 ## Wichtige Merkmale
-
-### Lage und Umgebung
-
-Boragdil liegt in Abyssalis, umgeben von Wald. Der GM beschreibt: "um euch herum ist der Wald, also ihr könnt auch nach links gehen gleich". Die Stadt ist über eine Karte markiert, wobei der Bereich der Stadt grün markiert ist. In Richtung Osten ist eine große Festung zu sehen.
-
-### Beschaffenheit
-
-Die Stadt ist stark verfallen. Der GM beschreibt die Umgebung als "sehr ruinenhaft" und "irgendwie, ja, kaputt". Die gesamte Anlage macht einen zerstörten Eindruck, was auf eine gewaltsame Vergangenheit oder einen langanhaltenden Verfall hindeutet.
-
-### Die Festung
-
-Die Festung von Boragdil ist eine der größten Festungen in der Region. Der GM sagt: "Das ist eine der größten Festungen hier in... Wie heißt das Laden hier?" Die Festung wird von Anhängern Ohoriaks bewacht, die die Gruppe abweisen.
-
-### Bewohner
-
-Boragdil ist von Dämonen und Seelen bevölkert. Die Bewacher der Festung sind Anhänger Ohoriaks, die der Gruppe den Zutritt verwehren.
+- **Lage und Zugang:** Auf dem Weg nach Boragdil liegt ein „kleiner Abgrund“, den die Gruppe überwinden muss.
+- **Beschaffenheit:** Die Stadt ist eine karge, triste Ruinenstadt. Bei der Rückkehr hat sich „nicht viel verändert“; sie ist „immer noch so karg und trist […] wie noch vor einer Woche oder vor den letzten Tagen“.
+- **Festung:** Boragdil besitzt eine große Festung. Ihr früherer Schutzzauber ist zerstört; die Festung wird nun von Anhängern Ohoriaks besetzt.
+- **Bewohner/Wesen:** In der Stadt halten sich Wesen auf, die beim ersten Besuch stärker auf die Gruppe reagierten. Bei der Rückkehr ignorieren sie die Anwesenheit der Gruppe weitgehend oder meiden die Nähe [Lunara Veloras](/characters/lunara_velora.md).
 
 ## Beziehungen und Verbindungen
-
-- **Ohoriak und seine Anhänger**: Die Festung von Boragdil wird von Anhängern Ohoriaks bewacht. Diese sind der Gruppe gegenüber feindselig eingestellt und weisen sie ab.
-- **Vasul**: Vasul hat die Gruppe mehr oder weniger direkt an die Festung von Boragdil gebracht. Die genaue Natur dieser Führung – ob absichtlich oder zufällig – bleibt unklar.
-- **Abyssalis**: Boragdil ist eine Stadt innerhalb der Region Abyssalis und dient als erster Anlaufpunkt der Gruppe in dieser Gegend.
+- Die Besatzer der Festung sind Anhänger Ohoriaks.
+- Die Wesen in der Stadt nehmen die Gruppe wahr, scheinen aber besonders auf [Lunara Velora](/characters/lunara_velora.md) zu reagieren; sie halten sich in ihrer Nähe nicht mehr auf.
 
 ## Chronologie
-
-### Session vom 31. März 2026
-
-Die Gruppe wird von Vasul an die Festung von Boragdil gebracht. Sie spawnen vor einer riesigen Stadt, die der GM als Boragdil identifiziert. Die Umgebung ist waldreich, die Stadt selbst ist ruinenhaft und zerstört. In Richtung Osten ist eine große Festung sichtbar. Die Gruppe wird von den Anhängern Ohoriaks, die die Festung bewachen, abgewiesen. Dies ist der erste dokumentierte Kontakt der Gruppe mit Boragdil und der Region Abyssalis.
+- **Vor den Sessions:** Die Festung von Boragdil hatte einen Schutzzauber. Dieser wurde zerstört, danach wurde die Festung von Anhängern [Ohoriaks](/deities/ohoriaks.md) besetzt.
+- **Session 2026-03-31:** Die Gruppe versucht, in die Festung zu gelangen, wird jedoch abgewiesen.
+- **Session 2026-04-14:** Nach einem Kampf bricht die Gruppe Richtung Boragdil auf. Sie überquert einen kleinen Abgrund und erreicht erneut den Rand der Stadt. Die Umgebung ist weiterhin karg und trist, die Stadt hat sich in den vergangenen Tagen kaum verändert. Die Wesen reagieren diesmal weniger auf die Gruppe und halten sich von Lunara Velora fern.
 
 ## Offene Fragen
-
-- Welche Bedeutung hat die Festung von Boragdil für die Anhänger Ohoriaks, und warum weisen sie die Gruppe ab?
-- Was ist aus der ursprünglichen Stadt Boragdil geworden, dass sie heute nur noch eine Ruine ist?
-- Welche Rolle spielen die Dämonen und Seelen, die die Stadt bevölkern, für die Handlung?
-- Warum hat Vasul die Gruppe ausgerechnet an diese Festung gebracht – war dies beabsichtigt oder Zufall?
+- Welche Funktion der frühere Schutzzauber genau hatte und wie er zerstört wurde, ist nicht überliefert.
+- Warum die Anhänger Ohoriaks die Festung besetzt halten, bleibt unklar.
+- Welches Ziel die Gruppe in der Festung verfolgt, ist aus den Belegen nicht ersichtlich.
+- Was es mit den „Wesen“ in der Stadt auf sich hat, wird nicht näher beschrieben.
 
 ## Belege
-
-[P-44] Session 2026-03-31 @ 01:35:51 (https://www.youtube.com/watch?v=Ee-K84wcxLM) – Boragdil ist eine Ruinenstadt in Abyssalis, in der die Gruppe ankommt. Sie ist von Dämonen und Seelen bevölkert. Die Festung von Boragdil wird von Anhängern Ohoriaks bewacht, die die Gruppe abweisen.
-2. Session 2026-03-31 @ 01:35:14–01:35:40 (https://www.youtube.com/watch?v=Ee-K84wcxLM) – Der GM benennt die Stadt als Boragdil, nachdem die Gruppe vor einer riesigen Stadt gespawnt ist.
-3. Session 2026-03-31 @ 01:36:00–01:36:09 (https://www.youtube.com/watch?v=Ee-K84wcxLM) – Die Gruppe ist von Wald umgeben; Vasul hat sie mehr oder weniger direkt an eine Festung gebracht.
-4. Session 2026-03-31 @ 01:37:18 (https://www.youtube.com/watch?v=Ee-K84wcxLM) – Die Festung ist eine der größten in der Region; in Richtung Osten ist eine große Festung sichtbar; die Umgebung ist ruinenhaft und kaputt.
+[P-44] Session 2026-03-31, 00:35:51, https://www.youtube.com/watch?v=Ee-K84wcxLM
+[P-47] Session 2026-04-14, 00:35:01, https://www.youtube.com/watch?v=1Jyu92P7_Fg

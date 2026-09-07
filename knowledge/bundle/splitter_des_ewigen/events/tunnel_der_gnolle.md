@@ -1,17 +1,17 @@
 ---
 type: Event
 title: Tunnel der Gnolle
-description: Bruma entdeckt, dass die Gnolle einen Tunnel graben, um das Dorf zu überraschen.
-  Diese Information wird an Hauptmann Aaron weitergegeben un…
+description: Ein von den Gnollen gegrabener enger Tunnel, der zur Mine der Halblinge
+  führen soll; Bruma hat davon erfahren.
 tags:
 - events
 timestamp: '2026-07-10T00:00:00Z'
 id: EVENT_TUNNEL_DER_GNOLLE
-subtype: Entdeckung
+subtype: Dungeon
 ---
 
-Bruma entdeckt, dass die [Gnolle](/factions/gnolle.md) einen Tunnel graben, um das Dorf zu überraschen. Diese Information wird an [Hauptmann Aaron](/npcs/hauptmann_aaron.md) weitergegeben und führt zum Auftrag, die Mine zu erkunden.
+Ein von den Gnollen gegrabener enger Tunnel, der zur [Mine der Halblinge](/locations/mine_der_halblinge.md) führen soll; Bruma hat davon erfahren.
 
 # Belege
 
-[S1-01-B] Session 2026-07-10 @ 00:35:51 (https://www.youtube.com/watch?v=H-eHSlfxUAg)
+[S1-01-B] Session 2026-07-10 @ 01:34:25 (https://www.youtube.com/watch?v=H-eHSlfxUAg)

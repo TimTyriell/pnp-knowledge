@@ -1,25 +1,23 @@
 ---
 type: Faction
 title: Grottenschrate
-description: Die Grottenschrate sind eine Kreaturenart, die im Bündnis mit den Gnollen
-  auftritt. Gemeinsam mit ihnen gehören sie zu den Kräften des Krie…
+description: Die Grottenschrate sind eine feindliche Kreaturenart. Sie traten neben
+  Gnolle als weitere angreifende Kreaturenart bei einem Angriff auf di…
 tags:
 - factions
 timestamp: '2025-05-06T00:00:00Z'
 id: FACTION_GROTTENSCHRATE
-subtype: Volk
+subtype: Bande
 ---
 
-Die **Grottenschrate** sind eine Kreaturenart, die im Bündnis mit den Gnollen auftritt. Gemeinsam mit ihnen gehören sie zu den Kräften des [Kriegslagers](/locations/kriegslager.md) und beteiligen sich an dessen Angriff auf die [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md). Ihr einzig dokumentiertes Auftreten endet damit, dass sie im Kampf getötet werden.
+# Grottenschrate
 
-## Rolle und Beziehungen
+Die **Grottenschrate** sind eine feindliche Kreaturenart. Sie traten neben [Gnolle](/factions/gnolle.md) als weitere angreifende Kreaturenart bei einem Angriff auf die [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) in Erscheinung. Sie scheinen im Dienste derselben dunklen Macht zu stehen wie die [Gnolle](/factions/gnolle.md).
 
-Die Grottenschrate arbeiten mit den Gnollen zusammen. Sie treten nicht eigenständig auf, sondern als Teil der gemeinsamen Truppen im Kriegslager. Über ihre sonstige Organisation, Herkunft oder Eigenschaften ist aus den bisherigen Ereignissen nichts bekannt.
+## Angriff auf die Kapelle
 
-## Verlauf
-
-Beim Angriff auf die Kapelle kämpfen die Grottenschrate an der Seite der Gnollen. In dieser Auseinandersetzung werden sie im Kampf getötet; ein weiteres Auftreten ist nicht belegt.
+Beim Angriff auf die Kapelle schoss einer der Grottenschrate mit einer Armbrust auf die Verteidiger.
 
 # Belege
 
-[P-07] Session 2025-05-06 @ 00:13:48 (https://www.youtube.com/watch?v=e0v6AFGd4mE)
+[P-07] Session 2025-05-06 @ 01:13:40 – https://www.youtube.com/watch?v=e0v6AFGd4mE

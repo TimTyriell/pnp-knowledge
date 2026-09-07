@@ -1,27 +1,26 @@
 ---
 type: Deity
 title: Lugasch
-description: Lugasch ist ein Trickster-Gott der Goblins. Bekannt ist er bislang nur
-  aus einer Begebenheit, in der ein Steinhagel auf die Gruppe niederge…
+description: Lugasch ist ein Goblin-Trickstergott. Er gehört zu den Goblin-Göttern,
+  einer Gruppe von Gottheiten, die unmittelbar in das Weltgeschehen ei…
 tags:
 - deities
 timestamp: '2025-04-01T00:00:00Z'
 id: DEITY_LUGASCH
-subtype: Neuer Gott
+subtype: Sonstiges
 ---
 
-# Lugasch
-
-Lugasch ist ein Trickster-Gott der [Goblins](/npcs/pilz_goblins.md). Bekannt ist er bislang nur aus einer Begebenheit, in der ein Steinhagel auf die Gruppe niedergeht und [Celin](/characters/cookie.md) sich an seinen Namen erinnert. Lugasch scheint Freude daran zu haben, Unheil zu stiften.
+**Lugasch** ist ein Goblin-Trickstergott. Er gehört zu den Goblin-Göttern, einer Gruppe von Gottheiten, die unmittelbar in das Weltgeschehen eingreifen. Wie die [Goblin-Götter](/deities/goblingoetter.md) insgesamt gilt auch Lugasch als chaotisch und wechselhaft, nicht als bösartig. Bislang ist nur ein einziges Wirken von ihm belegt: Er soll die Steine ausgelöst haben, die beinahe auf den Helden [Dodo](/characters/dodo.md) fielen.
 
 ## Rolle und Wesen
 
-Lugasch wird als Trickster-Gott der [Goblins](/npcs/pilz_goblins.md) beschrieben. Sein Wesen ist vom Schabernack geprägt; er scheint Gefallen daran zu finden, Unheil und Durcheinander zu verursachen. Weitere Eigenschaften, Symbole oder eine ausführlichere Mythologie sind aus den bisherigen Belegen nicht bekannt.
+Lugasch wird in den Aufzeichnungen als Trickster geführt. In den vorliegenden Belegen tritt er nicht persönlich in Erscheinung; er wird ausschließlich als unsichtbare Ursache eines Geschehens benannt. Nähere Angaben zu seinen Fähigkeiten oder der Reichweite seines Eingreifens fehlen.
 
-## Bezeugtes Wirken
+## Wirken in der Kampagne
 
-Lugasch wird namentlich erwähnt, als ein Steinhagel auf die Gruppe fällt. Ob der Steinhagel unmittelbar auf sein Wirken zurückgeht oder ob sein Name in diesem Zusammenhang nur aufgerufen wird, lassen die Belege offen.
+In der Session vom 1. April 2025 wurde Lugasch als Verursacher von Steinen genannt, die beinahe auf Dodo fielen. Es handelt sich um den bislang einzigen dokumentierten Eingriff; Umstände und Absicht dahinter sind nicht überliefert.
 
 # Belege
 
-[P-02] Session 2025-04-01, 00:54:51 – [YouTube](https://www.youtube.com/watch?v=LZIuUzc3F18)
+[P-02] Session 2025-04-01, 00:54:37 — https://www.youtube.com/watch?v=LZIuUzc3F18
+2. Kanon_Entscheidungen.md — Festlegung zu den Goblin-Göttern: chaotisch und wechselhaft, nicht bösartig.

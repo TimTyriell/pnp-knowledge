@@ -1,8 +1,8 @@
 ---
 type: Faction
 title: Die Gefährten von Rotunas
-description: Die Gefährten von Rotunas sind eine Gruppe, die als Team in der Arena
-  antritt. Vom Ansager werden sie als „Rotunas Bande“ angekündigt. Der…
+description: Die Gefährten von Rotunas treten in der Arena von Willauch unter dem
+  Namen Rotunas Bande als Monsterjäger auf. Benannt ist die Gruppe nach…
 tags:
 - factions
 timestamp: '2025-10-21T00:00:00Z'
@@ -12,16 +12,17 @@ aliases:
 - Rotunas Bande
 ---
 
-Die **Gefährten von [Rotunas](/characters/rotunas.md)** sind eine Gruppe, die als Team in der Arena antritt. Vom Ansager werden sie als **„Rotunas Bande“** angekündigt. Der Gruppenname verweist auf [Rotunas](/characters/rotunas.md), einen Riesen (Klasse Giant im Daggerheart-Regelwerk).
+Die Gefährten von [Rotunas](/characters/rotunas.md) treten in der [Arena von Willauch](/locations/arena_von_willauch.md) unter dem Namen Rotunas Bande als Monsterjäger auf. Benannt ist die Gruppe nach dem Riesen [Rotunas](/characters/rotunas.md); zu ihren Mitgliedern zählen [Dodo](/characters/dodo.md), [Cookie](/characters/cookie.md) und [Esterossa](/characters/esterossa.md).
 
-## Arena-Auftritte
+## Auftreten in der Arena von Willauch
 
-Bislang ist nur ein einziger Auftritt belegt: Die Gruppe wird vom Ansager als „Rotunas Bande“ bezeichnet und tritt als geschlossenes Team in der Arena an. Zusammensetzung, Herkunft und weitere Einsätze sind nicht dokumentiert.
+Die Gefährten bestreiten in der [Arena](/locations/arena.md) Kämpfe als Monsterjäger. Das Publikum feiert sie für diese Auftritte.
 
-## Verbindung zu Rotunas
+## Mitglieder
 
-Die Gruppe ist nach Rotunas benannt, einem Riesen. Ob Rotunas selbst Teil der Gruppe ist, sie anführt oder nur als Namensgeber dient, geht aus den vorhandenen Quellen nicht hervor.
+Dodo, Cookie und Esterossa sind die namentlich bekannten Mitglieder der Gruppe. Dodo kämpfte zunächst mit einem Breitschwert, stieg später auf einen [Streitkolben](/items/streitkolben_von_dodo.md) um; die Gruppe erhielt schließlich den heiligen Streitkolben [Zebros Zorn](/items/streitkolben_von_dodo.md), der seither Dodos Hauptwaffe ist. Esterossa ist ein männlicher [Seraph](/npcs/seraph.md) der Unterklasse Winged Sentinel und Anhänger des neuen Gottes [Korn](/deities/korn.md), der auch als Blutgott bezeichnet wird.
 
 # Belege
 
-[P-27] Session 2025-10-21, 00:49:40 – https://www.youtube.com/watch?v=sxFhbtwoefA
+[P-27] Session 2025-10-21, 00:49:40 (https://www.youtube.com/watch?v=sxFhbtwoefA)
+2. Kanon_Entscheidungen.md (interne Projektdatei der Kampagne)

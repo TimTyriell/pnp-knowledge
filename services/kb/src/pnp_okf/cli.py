@@ -7,16 +7,17 @@ import os
 import shutil
 import subprocess
 import sys
-import time
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
-from pnp_okf.config import DeepSeekConfig, ConfigError, Paths
+from pnp_okf.config import ConfigError, DeepSeekConfig, Paths
 from pnp_okf.context import excerpts_for, load_sources, secondary_sources_for, sources_for
 from pnp_okf.dedup import load_never_merge, propose, render_report
 from pnp_okf.emit import (
+    MAX_PRUNE_RATIO,
+    MAX_RENAME_RATIO,
     build_concept_index,
     check_rename_safety,
     emit_conflict,
@@ -24,15 +25,28 @@ from pnp_okf.emit import (
     emit_indexes,
     emit_log,
     emit_sessions,
+    mention_concept_index,
     prune_conflicts,
     prune_orphans,
 )
 from pnp_okf.episodes import Episodes, citation_labels, relabel_citations
-from pnp_okf.extract import extract_session
+from pnp_okf.extract import extract_session, load_cached_extraction
 from pnp_okf.ingest import load_transcripts
 from pnp_okf.models import CanonicalEntity, SessionExtraction, SessionTranscript
 from pnp_okf.resolve import load_spellings, require_rules, resolve_entities, write_registry
-from pnp_okf.synthesize import autolink_prose, link_targets, render_brief_body, synthesize_entity_body
+from pnp_okf.synthesize import (
+    _cache_key as synth_cache_key,
+)
+from pnp_okf.synthesize import (
+    _cache_path as synth_cache_path,
+)
+from pnp_okf.synthesize import (
+    autolink_prose,
+    link_targets,
+    render_brief_body,
+    synthesize_entity_body,
+)
+from pnp_okf.usage import LEDGER, _price
 from pnp_okf.validate import fix_bundle, validate_bundle
 
 log = logging.getLogger("pnp_okf")
@@ -60,17 +74,94 @@ def _extract_all(
     cfg: DeepSeekConfig,
     paths: Paths,
     force: bool,
+    workers: int = 8,
 ) -> dict[str, SessionExtraction]:
-    out: dict[str, SessionExtraction] = {}
-    for t in transcripts:
-        out[t.session_id] = extract_session(
-            t, cfg, paths.cache_dir, force=force
-        )
-    return out
+    """Extract every session, in parallel like synthesis.
+
+    Each session is an independent HTTP round trip, so this was serial for no
+    reason. It stayed invisible because extraction is cached per session and
+    normally only the one or two new sessions miss. A run that invalidates the
+    whole cache -- a PROMPT_VERSION bump or a model change, both of which are
+    in the cache key -- turns that into 66 sequential calls: ~4 hours at ~3.9
+    min each, against ~30 min at 8 workers.
+
+    pool.map keeps input order, so the returned dict is ordered exactly as the
+    sequential loop left it.
+    """
+
+    def _one(t: SessionTranscript) -> tuple[str, SessionExtraction]:
+        return t.session_id, extract_session(t, cfg, paths.cache_dir, force=force)
+
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        return dict(pool.map(_one, transcripts))
 
 
 def _state_dir() -> Path:
     return Path(os.environ.get("PNP_STATE_DIR", "./state")).expanduser()
+
+
+def _duration_s(started_at: str, ended_at: str) -> float | None:
+    """Wall-clock seconds between two ISO-8601 stamps, or None if unparseable.
+
+    Both stamps were already written; only their difference was missing, so
+    every consumer had to subtract them by hand.
+    """
+
+    try:
+        start = datetime.fromisoformat(started_at.replace("Z", "+00:00"))
+        end = datetime.fromisoformat(ended_at.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    return round((end - start).total_seconds(), 1)
+
+
+def _begin_run(started_at: str) -> None:
+    """Mark a run as in flight, and record the previous one if it never ended.
+
+    _write_run_status only fires at the end of a run, so a SIGKILL, a power
+    loss or a laptop sleeping mid-synthesis wrote nothing at all -- the run
+    simply left no row. This marker is the trace: it is written before the
+    first bundle write and removed on completion, so finding one at startup
+    means the previous run died without finishing.
+
+    Deliberately a separate file rather than a status field on last_run.json:
+    that file is a cross-repo contract (docs/architecture/status-schema.md,
+    services/dashboard, api.py) whose consumers read ``ok`` as a bool.
+    """
+
+    state_dir = _state_dir()
+    state_dir.mkdir(parents=True, exist_ok=True)
+    marker = state_dir / "run_in_progress.json"
+    if marker.exists():
+        try:
+            stale = json.loads(marker.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            stale = {}
+        _append_history(
+            {
+                "started_at": stale.get("started_at"),
+                "ended_at": None,
+                "duration_s": None,
+                "ok": False,
+                "error": "killed before finishing (no run status was written)",
+                "counts": {},
+            }
+        )
+        log.error(
+            "Previous run (%s) never finished -- it was killed mid-flight. Its "
+            "bundle writes may be half-applied; check `pnp validate` before "
+            "committing anything from that tree.",
+            stale.get("started_at", "unknown"),
+        )
+    marker.write_text(
+        json.dumps({"started_at": started_at}, ensure_ascii=False), encoding="utf-8"
+    )
+
+
+def _append_history(record: dict) -> None:
+    ts = datetime.now(UTC).isoformat(timespec="seconds").replace("+00:00", "Z")
+    with open(_state_dir() / "history.jsonl", "a", encoding="utf-8") as f:
+        f.write(json.dumps({"ts": ts, **record}, ensure_ascii=False) + "\n")
 
 
 def _write_run_status(started_at: str, ok: bool, error: str | None, counts: dict) -> None:
@@ -78,31 +169,168 @@ def _write_run_status(started_at: str, ok: bool, error: str | None, counts: dict
 
     No such record existed before this change — a run left only bundle
     diffs and stdout logs behind, nothing a status endpoint could read.
+
+    ``duration_s`` and ``usage`` are additive: services/dashboard reads this
+    file and docs/architecture/status-schema.md documents it as a cross-repo
+    contract, so existing keys keep their meaning.
     """
 
     state_dir = _state_dir()
     state_dir.mkdir(parents=True, exist_ok=True)
-    ended_at = datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
+    ended_at = datetime.now(UTC).isoformat(timespec="seconds").replace("+00:00", "Z")
     run_id = started_at.replace(":", "").replace("-", "")
     record = {
         "run_id": run_id,
         "started_at": started_at,
         "ended_at": ended_at,
+        "duration_s": _duration_s(started_at, ended_at),
         "ok": ok,
         "error": error,
         "counts": counts,
+        "usage": LEDGER.snapshot(),
     }
     (state_dir / "last_run.json").write_text(
         json.dumps(record, ensure_ascii=False, indent=2), encoding="utf-8"
     )
     with open(state_dir / "history.jsonl", "a", encoding="utf-8") as f:
         f.write(json.dumps({"ts": ended_at, **record}, ensure_ascii=False) + "\n")
+    (state_dir / "run_in_progress.json").unlink(missing_ok=True)
+
+
+def _avg_tokens_per_call() -> dict[str, tuple[float, float]]:
+    """(prompt, completion) per call, by model, from past successful runs.
+
+    Measured history beats a hard-coded guess: the numbers already sit in
+    state/history.jsonl, written by every run since usage accounting landed.
+    """
+
+    totals: dict[str, list[float]] = {}
+    path = _state_dir() / "history.jsonl"
+    if not path.exists():
+        return {}
+    for line in path.read_text(encoding="utf-8").splitlines():
+        try:
+            rec = json.loads(line)
+        except ValueError:
+            continue
+        for model, u in ((rec.get("usage") or {}).get("by_model") or {}).items():
+            calls = u.get("calls") or 0
+            if not calls:
+                continue
+            acc = totals.setdefault(model, [0.0, 0.0, 0.0])
+            acc[0] += u.get("prompt_tokens") or 0
+            acc[1] += u.get("completion_tokens") or 0
+            acc[2] += calls
+    return {m: (p / c, q / c) for m, (p, q, c) in totals.items() if c}
+
+
+def _estimate_run(args: argparse.Namespace) -> int:
+    """Report what a run would cost, then exit without calling the model.
+
+    Every input already exists: which sessions are cached is decidable from
+    the cache alone, the tier split falls out of a resolve (a pure function),
+    and per-call token averages come from history.jsonl. The ~$6.50 rebuild
+    figure was originally learned by paying it; this is so the next one is
+    known in advance.
+    """
+
+    paths = Paths.resolve(args.transcripts, args.bundle, args.cache)
+    cfg = DeepSeekConfig.from_env().for_tier("extract")
+    transcripts = _select(
+        load_transcripts(paths.transcript_dir), args.limit, args.session
+    )
+
+    # The flags are part of the price. --reextract ignores the extract cache
+    # and --force ignores the synth cache, so pricing either against a warm
+    # cache reports a free run for one that re-buys the whole corpus.
+    cached, missing = [], []
+    for t in transcripts:
+        hit = not args.reextract and load_cached_extraction(paths.cache_dir, t, cfg) is not None
+        (cached if hit else missing).append(t)
+
+    print(f"extract:  {len(cached)} cached, {len(missing)} to call  [{cfg.model}]")
+
+    synth_calls: Counter[str] = Counter()
+    if missing:
+        # Re-extraction resamples every entity name, so which concepts exist --
+        # and therefore how many synth calls -- is not knowable from here.
+        print("synth:    unknown until those sessions are extracted")
+    else:
+        extractions = {
+            t.session_id: load_cached_extraction(paths.cache_dir, t, cfg)
+            for t in transcripts
+        }
+        tmap = {t.session_id: t for t in transcripts}
+        entities = resolve_entities(extractions, tmap, paths.registry_path)
+        base = DeepSeekConfig.from_env()
+        # The synth cache has to be consulted or the number is useless: a warm
+        # re-emit is ~$0.05 against a ~$6.50 cold rebuild, and an estimate that
+        # overshoots by two orders of magnitude just teaches you to ignore it.
+        # Every input here is a pure function -- no model call.
+        source_sections = load_sources(paths.sources_dir)
+        warm = 0
+        for entity in entities:
+            if entity.tier == "brief":
+                continue           # rendered locally, no call ever
+            tier_cfg = base.for_tier(entity.tier)
+            key = synth_cache_key(
+                entity,
+                tier_cfg,
+                sources_for(entity, source_sections),
+                excerpts_for(entity, tmap) if entity.tier == "deep" else "",
+                secondary_sources_for(entity, source_sections),
+            )
+            path = synth_cache_path(paths.cache_dir, entity, key)
+            if path.exists() and not args.force:
+                warm += 1
+            else:
+                synth_calls[tier_cfg.model] += 1
+        total = sum(synth_calls.values())
+        detail = ", ".join(f"{m} {n}" for m, n in sorted(synth_calls.items()))
+        print(f"synth:    {warm} cached, {total} to call"
+              + (f" ({detail})" if detail else ""))
+
+    per_call = _avg_tokens_per_call()
+    calls: Counter[str] = Counter(synth_calls)
+    calls[cfg.model] += len(missing)
+
+    prompt = completion = 0.0
+    cost, priced = 0.0, True
+    for model, n in calls.items():
+        avg_p, avg_c = per_call.get(model, (0.0, 0.0))
+        if not (avg_p or avg_c):
+            priced = False
+            continue
+        prompt += avg_p * n
+        completion += avg_c * n
+        p_in, p_out = _price("IN", model), _price("OUT", model)
+        if p_in is None or p_out is None:
+            priced = False
+        else:
+            cost += (avg_p * n * p_in + avg_c * n * p_out) / 1_000_000
+
+    tokens = prompt + completion
+    if not calls.total():
+        print("estimate: no model calls needed -- this run is free")
+        return 0
+    line = f"estimate: ~{tokens / 1_000_000:.2f}M tokens"
+    if priced and cost:
+        cur = os.environ.get("PNP_PRICE_CURRENCY", "USD")
+        line += f", ~{cost:.2f} {cur} at off-peak rates (double at peak)"
+    else:
+        line += " (unpriced: set PNP_PRICE_IN_/OUT_<MODEL>, or no history yet)"
+    print(line)
+    return 0
 
 
 def cmd_run(args: argparse.Namespace) -> int:
     """Full pipeline: ingest -> extract -> resolve -> synthesize -> emit."""
 
-    started_at = datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
+    if getattr(args, "estimate", False):
+        return _estimate_run(args)
+
+    started_at = datetime.now(UTC).isoformat(timespec="seconds").replace("+00:00", "Z")
+    _begin_run(started_at)
     try:
         return _run_pipeline(args, started_at)
     except Exception as exc:
@@ -128,7 +356,10 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
             "files that carry no new knowledge (see docs/architecture for "
             "the 2026-08 incident this guards against)."
         )
-    extractions = _extract_all(transcripts, cfg, paths, args.reextract)
+    extractions = _extract_all(
+        transcripts, cfg.for_tier("extract"), paths, args.reextract,
+        workers=args.workers,
+    )
 
     registry_path = paths.registry_path
     require_rules(registry_path)
@@ -144,8 +375,6 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
             counts={},
         )
         return 2
-
-    write_registry(entities, registry_path)
 
     if args.clean and paths.bundle_dir.exists():
         shutil.rmtree(paths.bundle_dir)
@@ -165,7 +394,6 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     } if paths.bundle_dir.exists() else {}
 
     index = build_concept_index(entities, tmap, load_spellings(registry_path))
-    session_entries = emit_sessions(paths.bundle_dir, tmap, extractions, index, episodes)
     unresolved_total = 0
     conflict_count = 0
     open_conflicts: set[str] = set()
@@ -232,6 +460,18 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
             unlabelled,
             paths.episodes_path,
         )
+
+    # Sessions link to entity concept pages ("Auftretende Entitäten"), so they
+    # must not be written until the pages they link to actually exist on
+    # disk. Emitting them only now -- after every entity file above -- means
+    # a kill during the (25-95 min) synthesis window above leaves no new
+    # session file at all, instead of one that links to entities that were
+    # never written (PIPELINE.md section 7; 54 dangling links on 2026-09-05).
+    session_entries = emit_sessions(
+        paths.bundle_dir, tmap, extractions, index, episodes,
+        mention_concept_ids=mention_concept_index(entities),
+    )
+
     settled = prune_conflicts(paths.conflicts_dir, open_conflicts)
     if settled:
         log.info("Cleared %d resolved conflict(s) from the queue.", settled)
@@ -249,6 +489,14 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
                 "Pruned %d concept file(s) with no entity behind them any more.", pruned
             )
 
+    # Written here, next to the bundle's own indexes/log rather than at the
+    # top of the run: nothing between the old resolve() call and here reads
+    # the freshly-written file back (the only downstream reader is
+    # load_spellings, and write_registry never touches the `spelling:`
+    # family -- see PIPELINE.md section 7 / Task 2's investigation notes).
+    # Writing it first used to mean a kill during synthesis left an
+    # entity_registry.yaml naming concept ids whose files were never written.
+    write_registry(entities, registry_path)
     emit_indexes(paths.bundle_dir, entities, session_entries, load_spellings(registry_path))
     emit_log(paths.bundle_dir, tmap)
 
@@ -281,6 +529,23 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
 
     report = validate_bundle(paths.bundle_dir)
     log.info("Validation:\n%s", report.summary())
+    if not report.integrity_ok:
+        log.error(
+            "Validation found %d broken and %d dangling link(s), %d concept(s) "
+            "without a type and %d duplicate id(s). Refusing to report success "
+            "-- this bundle must not be committed.",
+            len(report.broken_links),
+            len(report.dangling_links),
+            len(report.missing_type),
+            len(report.duplicate_ids),
+        )
+        _write_run_status(
+            started_at,
+            ok=False,
+            error="bundle failed post-emit validation (see log)",
+            counts={},
+        )
+        return 3
 
     log.info(
         "Visualize with the okf package:\n"
@@ -307,11 +572,13 @@ def cmd_extract(args: argparse.Namespace) -> int:
     """Run only the extraction stage (populates the cache)."""
 
     paths = Paths.resolve(args.transcripts, args.bundle, args.cache)
-    cfg = DeepSeekConfig.from_env()
+    # for_tier, exactly as _run_pipeline does -- the model is in the cache key,
+    # so an untiered cfg here fills a cache `pnp run` would never read.
+    cfg = DeepSeekConfig.from_env().for_tier("extract")
     transcripts = _select(
         load_transcripts(paths.transcript_dir), args.limit, args.session
     )
-    extractions = _extract_all(transcripts, cfg, paths, args.force)
+    extractions = _extract_all(transcripts, cfg, paths, args.force, workers=args.workers)
     for sid, ex in extractions.items():
         log.info("%s: %d entities", sid, len(ex.entities))
     return 0
@@ -330,7 +597,11 @@ def cmd_dedup(args: argparse.Namespace) -> int:
         load_transcripts(paths.transcript_dir), args.limit, args.session
     )
     tmap = {t.session_id: t for t in transcripts}
-    extractions = _extract_all(transcripts, cfg, paths, force=False)
+    # for_tier("extract") or this misses every cached extraction and pays for a
+    # full re-extraction -- the opposite of what the docstring promises.
+    extractions = _extract_all(
+        transcripts, cfg.for_tier("extract"), paths, force=False, workers=args.workers
+    )
 
     registry_path = paths.registry_path
     require_rules(registry_path)
@@ -371,7 +642,7 @@ def cmd_check(args: argparse.Namespace) -> int:
         cfg = DeepSeekConfig.from_env()
         print(f"  base_url: {cfg.base_url}")
         print(f"  model:    {cfg.model}")
-        print(f"  auth:     API key")
+        print("  auth:     API key")
     except ConfigError as exc:
         print(f"  ERROR: {exc}")
         print("  -> Copy .env.example to .env and fill in your DeepSeek settings.")
@@ -508,14 +779,22 @@ def _build_parser() -> argparse.ArgumentParser:
     )
     run.add_argument(
         "--allow-prune", action="store_true",
-        help="Allow pruning more than 10%% of existing concept files in one "
-        "run. Orphan pruning is skipped entirely on a --limit/--session run.",
+        # %% because argparse %-formats help strings before printing them.
+        help=f"Allow pruning more than {MAX_PRUNE_RATIO * 100:.0f}%% of existing "
+        "concept files in one run. Orphan pruning is skipped entirely on a "
+        "--limit/--session run.",
+    )
+    run.add_argument(
+        "--estimate",
+        action="store_true",
+        help="Report what this run would cost and exit without calling the model",
     )
     run.add_argument(
         "--allow-rename", action="store_true",
-        help="Allow more than 10%% of the previous registry's concept ids to "
-        "go missing from a resolved run (e.g. after a deliberate registry "
-        "cleanup). The check is skipped entirely on a --limit/--session run.",
+        help=f"Allow more than {MAX_RENAME_RATIO * 100:.0f}%% of the previous "
+        "registry's concept ids to go missing from a resolved run (e.g. after a "
+        "deliberate registry cleanup). The check is skipped entirely on a "
+        "--limit/--session run.",
     )
     run.set_defaults(func=cmd_run)
 

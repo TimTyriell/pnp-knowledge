@@ -1,16 +1,16 @@
 ---
 type: NPC
 title: Trilo
-description: Trilo ist der Jäger von Nebelwacht, ein vernarbter Mann mit einem leuchtenden
-  Stab. Er ist Mitglied eines Ordens und auf Schutzmagie spezia…
+description: Trilo ist ein Jäger und Ordensbruder mit einem leuchtenden Stab, Narben
+  im Gesicht und fehlendem Finger. Er verfügt über Schutzmagie, Heilu…
 tags:
 - npcs
 timestamp: '2026-05-27T00:00:00Z'
 id: NPC_TRILLO
 ---
 
-Trilo ist der Jäger von [Nebelwacht](/locations/nebelwacht.md), ein vernarbter Mann mit einem leuchtenden [Stab](/items/lindo_lauts_stab.md). Er ist Mitglied eines Ordens und auf Schutzmagie spezialisiert. Er führt die Gruppe in den Nebel, gibt aber zu, die vorherige Gruppe im Stich gelassen zu haben. Er stellt sie [Kalos](/npcs/organisation_der_kalos.md) vor und entpuppt sich als Verräter, der mit Kalos zusammenarbeitet. Er teleportiert sich weg, als der Kampf beginnt.
+Trilo ist ein Jäger und Ordensbruder mit einem leuchtenden [Stab](/items/lindo_lauts_stab.md), [Narben](/locations/narben.md) im Gesicht und fehlendem Finger. Er verfügt über Schutzmagie, Heilung und Teleportation. Zunächst wirkt er loyal zu [Vilaux](/locations/vilaux.md) und führt die Gruppe auf eine Expedition, warnt aber vor hoher Sterblichkeit. Im Verlauf wird deutlich, dass er die Gruppe belügt: Er lässt den Schutzzauber im Turm fallen und stellt sie [Kalos](/npcs/organisation_der_kalos.md) als 'gutes Material' vor. Er bietet ihnen an, sich der Organisation anzuschließen, und teleportiert sich davon, als sie ablehnen. Seine wahren Motive bleiben teilweise unklar, aber er ist ein Verräter, der die Gruppe in eine Falle lockt.
 
 # Belege
 
-[P-51] Session 2026-05-27 @ 00:34:34 (https://www.youtube.com/watch?v=IYYmgpqsp7E)
+[P-51] Session 2026-05-27 @ 00:34:29 (https://www.youtube.com/watch?v=IYYmgpqsp7E)

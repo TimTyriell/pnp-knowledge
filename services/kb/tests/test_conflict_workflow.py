@@ -3,7 +3,6 @@
 from pathlib import Path
 
 import yaml
-
 from pnp_okf.dedup import MergeGroup, load_never_merge, propose
 from pnp_okf.emit import prune_conflicts
 from pnp_okf.models import CanonicalEntity, EntityType
@@ -43,8 +42,11 @@ def test_rejected_merge_is_not_proposed_again(tmp_path: Path):
             class completions:
                 @staticmethod
                 def create(**_):
-                    class M: content = '{"groups": []}'
-                    class C: message = M()
+                    class M:
+                        content = '{"groups": []}'
+
+                    class C:
+                        message = M()
                     return type("R", (), {"choices": [C()]})()
 
     # Myko/Miko score as a near-identical pair forever; the rejection sticks.

@@ -8,12 +8,11 @@ pipeline runs. The split keeps input and output apart for real.
 from pathlib import Path
 
 import yaml
-
 from pnp_okf.models import CanonicalEntity, EntityType, MentionRef
 from pnp_okf.resolve import (
+    _load_alias_overrides,
     _load_ignored,
     _load_never_merge_pairs,
-    _load_alias_overrides,
     rules_path_for,
     write_registry,
 )

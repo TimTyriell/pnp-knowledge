@@ -1,70 +1,86 @@
 ---
 type: Character
 title: Kaya
-description: Kaya ist eine Faunen-Bardin, die als Teil einer Abenteurergruppe durch
-  die Welt zieht. Sie ist lebenslustig, frech und sorglos, musiziert m…
+description: Kaya ist eine lebenslustige Faun-Bardin, die sich ihren Lebensunterhalt
+  mit abendlichen Auftritten in Tavernen verdient. Sie trägt eine Lau…
 tags:
 - characters
-timestamp: '2026-08-20T00:00:00Z'
+timestamp: '2026-09-03T00:00:00Z'
 id: CHAR_KAYA
 ---
 
-# Kaya
-
 ## Überblick
 
-Kaya ist eine Faunen-Bardin, die als Teil einer Abenteurergruppe durch die Welt zieht. Sie ist lebenslustig, frech und sorglos, musiziert mit einer Laute und verdient sich mit ihrer Musik ihren Lebensunterhalt. Hinter ihrer unbeschwerten Fassade verbirgt sich jedoch eine bewegte Vergangenheit: Sie ist eine Nomadin, die nach dem Tod ihrer Mutter ihre Gruppe verließ und in [Ringtal](/locations/ringtal.md) bereits zwei ihr liebgewonnene Menschen durch eine Krankheit verloren hat. Ihre erste längere Kampagne spielt sie als Charakter, wobei sie sich als vorsichtige und misstrauische Persönlichkeit zeigt, die Göttern gegenüber skeptisch eingestellt ist.
+Kaya ist eine lebenslustige Faun-Bardin, die sich ihren Lebensunterhalt mit abendlichen Auftritten in Tavernen verdient. Sie trägt eine Laute bei sich, mit der sie nicht nur das Publikum begeistert, sondern auch Gefährten motiviert und Tiere beruhigt. Trotz ihrer nach außen getragenen Sorglosigkeit ist sie ein wachsamer und mitfühlender Charakter, der vor allem neuen göttlichen Einflüssen mit tiefem Misstrauen begegnet. Ihre Musik ist für sie Broterwerb, Werkzeug und emotionaler Anker zugleich.
 
 ## Rolle in der Kampagne
 
-Kaya ist Mitglied der Abenteurergruppe, die sich um [Bruma Stormrak](/characters/bruma_stormrak.md) und [Sange](/characters/sange.md) formiert. Sie übernimmt innerhalb der Gruppe die Rolle der Musikerin und Stimmungsmacherin: Sie hält die Gruppe bei längeren Wanderpassagen mit Musik bei Laune, beruhigt Tiere und Menschen mit ihrem Spiel und versucht, die Gruppe zusammenzuhalten. Im Kampf ist sie zunächst zögerlich, erweist sich aber als effektiv, wenn sie sich überwindet. Sie setzt dabei Feuermagie und eine magische Hand ein, mit der sie Gegner in Schächte stoßen kann.
+Kaya fungiert als das emotionale Zentrum und die diplomatische Vermittlerin der Gruppe. Sie setzt ihre Musik gezielt ein, um Spannungen abzubauen, die Moral auf langen Wanderpassagen hochzuhalten und in Kampfsituationen Hoffnung zu spenden. Ihr ausgeprägter Instinkt für Wahrheit macht sie zu einem wichtigen Korrektiv, wenn andere Gruppenmitglieder zu ungestüm handeln oder sich von Fremden blenden lassen. Sie verhindert etwa, dass [Saris](/characters/saris.md) eine Fremde aufdringlich analysiert, und durchschaut die Lügen von [Talron](/npcs/talron.md) mühelos.
 
-Bei diplomatischen Anlässen versucht sie, mit sanften Worten zu überzeugen, bleibt dabei jedoch oft erfolglos und überlässt das Überzeugen dann anderen – etwa Bruma, der mit einschüchternder Präsenz mehr erreicht. Sie hält sich in solchen Situationen eher im Hintergrund, zeigt aber Mitgefühl und versucht, auf die Menschen zuzugehen.
+Besonders deutlich zeigt sich ihre Rolle im Umgang mit [Sanges](/characters/sange.md) neuem Gott [Joran](/deities/joran.md). Kaya lehnt den Segen für sich selbst explizit ab und beobachtet Sange seit der Segnung misstrauisch auf Veränderungen. Ihre Fürsorge und Skepsis machen sie zu einer Art moralischem Frühwarnsystem der Gruppe, das eine konservativere Linie vertritt als etwa Sange. Im Kampf unterstützt sie die Gefährten nicht nur durch Musik, sondern auch mit Feuermagie, ihrer magischen Hand und später einer Peitsche mit aufschreckender Wirkung.
 
 ## Wichtige Merkmale
 
-**Musik und Laute:** Kayas zentrales Merkmal ist ihre Musik. Sie spielt Laute, singt in Tavernen und verdient sich damit Gold und Unterkunft. Ihre Musik hat dabei durchaus magische Wirkung: Auf dem Friedhof von Ringtal lässt ihr Spiel magische Blumen erblühen. Sie beruhigt mit ihrer Musik sowohl ein Kind als auch den Hund Nepp.
+### Fähigkeiten
 
-**Magische Fähigkeiten:** Neben ihrer Musik verfügt Kaya über Feuermagie und eine magische Hand, die sie im Kampf einsetzt. Sie zögert zunächst, ist aber im Kampf effektiv und nutzt ihre magische Hand, um Gegner in einen Schacht zu stoßen.
+- **Musikalische Begabung:** Kaya verdient ihren Lebensunterhalt als Bardin in der Taverne und nutzt Musik aktiv, um Tiere zu beruhigen, Eindrücke poetisch festzuhalten und die Gruppe bei längeren Wanderpassagen zu unterhalten. Ihr Spiel kann Stimmungen heben und sogar magische Effekte auslösen – auf dem [Friedhof](/locations/friedhof.md) erblühen Samen sofort, als sie ein Lied anstimmt.
+- **Instinkt für Wahrheit:** Sie durchschaut mühelos, wenn jemand lügt, etwa bei [Talron](/npcs/talron.md).
+- **Feuermagie (Wild Flame):** In Kämpfen setzt sie mehrfach Feuermagie ein, um Goblinhunde und [Goblins](/npcs/pilz_goblins.md) zu verbrennen.
+- **Magische Hand:** Kaya beschwört eine magische Hand, mit der sie Gegner in Schächte stößt, den Gnoll-Anführer ins Feuer zieht und später ihre Peitsche führt, um Feinde von Klippen zu stoßen.
+- **Gruppenführung und Motivation:** Vor dem Aufbruch zur Mine leitet sie die Gruppe zu Dehnübungen an und gewährt ihnen einen Rally-D6. Sie trägt durch Lieder und Ansprachen entscheidend zur Moral bei.
+- **Peitsche mit „Startling“-Effekt:** In der Schlacht setzt sie eine Peitsche ein, die mehrere Gegner gleichzeitig zu Fall bringen kann.
 
-**Persönlichkeit:** Kaya tritt selbstbewusst und frech auf, ist lebenslustig und versucht, ihr sorgloses Selbst zu bewahren. Gleichzeitig ist sie vorsichtig und ängstlich, misstrauisch gegenüber den übernatürlichen Fähigkeiten ihrer Gefährten und skeptisch gegenüber Göttern. Sie lehnt den Segen Jorans ab und warnt Sange davor, sich zu sehr auf neue Götter zu verlassen. Sie tut gerne so, als würde sie die Schädel von [Saris](/characters/saris.md) hören, obwohl sie sie nicht hören kann – ein kleines Spiel, das sie sich angewöhnt hat.
+### Auftreten und Wesenszüge
 
-**Vergangenheit:** Kaya ist eine Nomadin, die nach dem Tod ihrer Mutter ihre Gruppe verließ. In Ringtal verlor sie durch eine Krankheit zwei ihr liebgewonnene Menschen. Diese Geschichte hat sie ihren Gefährten zunächst nicht erzählt, überlegt aber, ob sie es wagen sollte.
+Kayas dominantes Wesensmerkmal ist eine demonstrative Sorglosigkeit. Sie hüpft, tanzt und unterhält die Gruppe, selbst bei langen Fußmärschen, und gibt sich nach außen unbeschwert. Doch unter dieser Fassade verbirgt sich eine tiefe Besorgnis – insbesondere um [Sanges](/characters/sange.md) Verbindung zu [Joran](/deities/joran.md). Sie beäugt Sange immer wieder, „so als ob da jetzt irgendwas passieren könnte, wie Münzen die aus den Ohren quellen“. Ihre Vorsicht gegenüber unbekannten Göttern ist eine Grundhaltung, die sie auch vor der Warnung Samuels hat.
+
+Ihr Mitgefühl zeigt sich im Umgang mit Schwächeren: Sie beruhigt Hunde, versorgt [Flüchtlinge](/factions/fluechtlinge.md) und spricht [Sange](/characters/sange.md) nach dessen Verwandlung gut zu. Gleichzeitig ist sie neugierig und verspielt – etwa wenn sie mit [Saris'](/characters/saris.md) sprechenden Schädeln [Jonathan](/npcs/jonathan.md) und [Samuel](/npcs/samuel.md) so tut, als könnte sie sie hören, obwohl sie es nicht kann.
+
+### Besondere Gegenstände
+
+- **Laute:** Kayas wertvollster Besitz, geerbt von ihrer Mutter. Sie ist zugleich ihr wichtigstes Arbeitsmittel und ein emotionales Erinnerungsstück.
+- **Umhang von Bruma:** Kaya trägt einen Umhang, den sie von [Bruma](/characters/bruma_stormrak.md) erhalten hat. Er versetzt ihr am Ende eines Abends einen kleinen elektrischen Schock – ein Hinweis auf eine besondere, möglicherweise magische Natur.
+- **Peitsche:** Waffe mit aufschreckender („Startling“) Wirkung, die Kaya im Kampf einsetzt.
 
 ## Beziehungen und Verbindungen
 
-**Saris:** Kaya freundet sich langsam mit Saris an, bleibt ihm gegenüber jedoch misstrauisch. Sie ist besorgt um sein Verhalten, insbesondere im Zusammenhang mit den Schädeln Jonathan und Samuel, die er mit sich führt. Sie tut so, als würde sie die Schädel hören, und hat von Jonathan die Warnung übernommen, einen Gott anzunehmen.
-
-**Sange:** Sie ist besorgt um Sange und versucht, ihn zu beruhigen. Sie zeigt Mitgefühl für seine Geschichte und warnt ihn davor, sich zu sehr auf neue Götter zu verlassen.
-
-**Bruma Stormrak:** Sie begrüßt Bruma freundlich und erhält von ihm eine [Halskette](/items/halskette.md). Sie stimmt ein Lied für ihn an und unterstützt ihn bei der [Überzeugung von Xenia](/events/ueberzeugung_von_xenia.md), bleibt dabei aber im Hintergrund.
-
-**[Talron](/npcs/talron.md):** Sie fragt Talron nach der früheren Gruppe und zeigt Interesse an dessen Vergangenheit.
-
-**Ihre Mutter:** Kayas Mutter liegt auf dem Friedhof von Ringtal begraben. Kaya besucht ihr Grab, legt die Hand auf den Grabstein und sucht dort Trost, obwohl sie keine betende oder götteranrufende Faun ist.
+- **[Sange](/characters/sange.md):** Ihre engste Beziehung in der Gruppe. Kaya hilft Sange aktiv, die Wahrheit über eine Puppe zu vertuschen, ist aber zutiefst misstrauisch gegenüber dessen neuem Gott [Joran](/deities/joran.md). Sie beobachtet Sange genau auf Veränderungen und notiert sich poetische Worte von ihm für ein späteres Lied – ein Zeichen enger, liebevoll-ironischer Verbundenheit.
+- **[Saris](/characters/saris.md):** Kaya ist neugierig auf Saris und seine sprechenden Schädel [Jonathan](/npcs/jonathan.md) und [Samuel](/npcs/samuel.md). Sie tut manchmal aus Spielerei so, als könnte sie die Schädel hören. Als Saris eine Fremde aufdringlich analysieren will, greift sie ein und stellt sich selbst vor, um die Situation zu entschärfen.
+- **[Talron](/npcs/talron.md):** Kaya durchschaut seine Lügen und erhält von ihm zwei Heiltränke sowie eine düstere Antwort auf ihre Frage nach der früheren, gescheiterten Gruppe. Das Verhältnis ist von pragmatischer Zusammenarbeit und einer gewissen Vorsicht geprägt.
+- **[Bruma](/characters/bruma_stormrak.md):** Bei der ersten Begegnung stoppt Kaya Saris’ aufdringliches Verhalten und stellt sich selbst vor. Bruma überreicht ihr daraufhin einen Schutzgegenstand (laut Hintergrundwissen eine Halskette), und später trägt Kaya Brumas Umhang. Nach Brumas Ausbruch dankt sie ihm, wirkt aber deprimiert.
+- **Mutter:** Kayas Mutter starb, vermutlich an einer Krankheit. Ihr Grab auf dem Friedhof von [Ringtal](/locations/ringtal.md) ist mit einem „G“ und einer Laute markiert. Die Mutter hinterließ Kaya die Laute und einen Brief des Vaters, den Kaya nie geöffnet hat.
+- **Vater:** Kaya kennt ihren Vater nicht. Sie erzählt wechselnde Geschichten über ihn – mal sei er Seemann, mal Händler, mal Drachentöter –, weiß aber in Wirklichkeit nicht, wer er ist. Ihre Gefühle ihm gegenüber sind von Wut und Verlassenheit geprägt.
+- **Ehemalige Künstlergruppe:** Kaya wuchs als Nomadin in einer wandernden Künstlertruppe auf, die sie als Familie betrachtete. Nach dem Tod ihrer Mutter verließ sie die Gruppe ohne Abschied, weil sie sich durch die Verschwiegenheit bezüglich ihres Vaters ausgegrenzt fühlte. Dafür empfindet sie bis heute Schuld.
+- **[Xenia](/npcs/xenia_rotkam.md):** In [Kleinringtal](/locations/ringtal.md) erkennt Kaya [Xenia](/npcs/xenia_rotkam.md) aus früheren Tagen wieder und versucht vergeblich, sie zur Evakuierung zu überreden.
+- **[Borkus](/npcs/borkus.md):** In der Taverne handelt Kaya mit dem [Wirt](/npcs/wirt.md) aus, dass sie für Musik eine kostenlose Übernachtung bekommt.
+- **[Greg](/npcs/greg.md):** Der Friedhofsgärtner in [Ringtal](/locations/ringtal.md) spricht Kaya am Grab ihrer Mutter an und bietet an, neue Blumen zu pflanzen.
 
 ## Chronologie
 
-**Session 2026-06-04:** Kaya wird als Faunen-Bardin vorgestellt, die ihre erste längere Kampagne spielt. Sie tritt in einer Taverne auf, spielt und verdient Gold. Sie lehnt den Segen Jorans ab, zeigt Mitgefühl bei der Beruhigung eines Kindes und unterstützt die Gruppe mit Musik und Charme. Sie freundet sich langsam mit Saris an, bleibt aber misstrauisch.
+**Session 2026-06-04:** Kaya tritt abends in der Taverne auf, begeistert das Publikum mit Gesang, Lautenspiel und Stepptanz und sammelt dabei sieben Goldmünzen. Sie lehnt den Segen [Jorans](/deities/joran.md) ab, nachdem [Samuel](/npcs/samuel.md) gewarnt hat, und bleibt misstrauisch gegenüber Göttern. Sie lockt [Talron](/npcs/talron.md) mit Charme Informationen heraus und überzeugt [Gerhard Schanz](/npcs/gerhard_schanz.md), dass sie nichts mit der Puppe zu tun hatte. Gemeinsam mit [Sange](/characters/sange.md) und [Saris](/characters/saris.md) zieht sie zum Bauernhof.
 
-**Session 2026-07-10:** Kaya ist weiterhin sorglos und musikalisch unterwegs und versucht, die Gruppe zusammenzuhalten. Sie beruhigt den Hund Nepp mit Musik und begrüßt Bruma freundlich, von dem sie eine Halskette erhält. Sie fragt Talron nach der früheren Gruppe und zeigt sich besorgt um Saris' Verhalten. Sie macht sich Sorgen wegen des neuen Gottes, den Sange angenommen hat, und beobachtet ihn misstrauisch. Sie tut so, als würde sie die Schädel von Saris hören, und hat die Warnung Jonathans übernommen, keinen Gott anzunehmen.
+**Session 2026-07-10:** Kaya hält die Gruppe mit Musik und guter Laune bei Stimmung, macht sich aber innerlich Sorgen um [Sanges](/characters/sange.md) neuen Gott. Sie stellt sich [Bruma](/characters/bruma_stormrak.md) freundlich vor und verhindert, dass [Saris](/characters/saris.md) zu aufdringlich wird. Während der Reise leitet sie Dehnübungen an und motiviert die Gruppe mit einem Rally-D6. Im Dorf beruhigt sie den Hund [Nepp](/npcs/nepp.md) mit Musik, nachdem Saris ihn erschreckt hat. Sie spricht mit [Hauptmann Aaron](/npcs/hauptmann_aaron.md) und erhält von Talron zwei Heiltränke.
 
-**Session 2026-07-23:** Kaya zeigt sich vorsichtig und ängstlich, setzt aber im Kampf Feuermagie und ihre magische Hand effektiv ein. Sie nutzt ihre magische Hand, um Gegner in einen Schacht zu stoßen. Sie ist besorgt um Sange und versucht, ihn zu beruhigen. Sie bleibt misstrauisch gegenüber den übernatürlichen Fähigkeiten der anderen.
+**Session 2026-07-23:** Kaya zeigt sich ängstlich, gewinnt aber zunehmend an Selbstvertrauen. Sie nutzt ihre Feuermagie Wild Flame, um Goblinhunde und später mehrere Goblins zu verbrennen. Mit ihrer magischen Hand stößt sie zwei [Bugbären](/factions/bugbaeren.md) in einen Schacht und zieht später den Gnoll-Anführer ins Feuer. Nach [Sanges](/characters/sange.md) Verwandlung spricht sie ihm gut zu und zeigt Mitgefühl. Gemeinsam mit Saris findet sie [Handschellen](/items/handschellen.md) und einen Skelettschlüssel.
 
-**Session 2026-08-06:** Kaya versucht, die [Halblinge](/factions/halblinge.md) mit sanften Worten zu überzeugen, mit der Gruppe zu kommen, scheitert jedoch mit ihrem Presence-Check (Ergebnis 9). Ihre Worte treffen auf taube Ohren. Sie unterstützt Bruma später bei der Überzeugung von [Xenia](/npcs/xenia_rotkam.md), bleibt aber im Hintergrund. Sie zeigt Mitgefühl für Sanges Geschichte und teilt am Ende ihre eigene bewegte Vergangenheit. Sie warnt Sange davor, sich zu sehr auf neue Götter zu verlassen.
+**Session 2026-08-06:** Kaya versucht zunächst, die [Halblinge](/factions/halblinge.md) mit sanften Worten zur Evakuierung zu bewegen, scheitert jedoch. Sie zeigt Verständnis für Brumas Einschüchterung und hilft später, die Flüchtlinge zu versorgen. In [Kleinringtal](/locations/ringtal.md) erkennt sie [Xenia](/npcs/xenia_rotkam.md) aus früheren Tagen wieder und versucht erneut erfolglos, sie zu überzeugen. Nach Brumas Ausbruch dankt sie ihm und wirkt deprimiert. In der Taverne offenbart sie ihre nomadische Vergangenheit: Ihre Mutter starb, über ihren Vater erzählt sie wechselnde Geschichten, zuletzt die eines Seemanns, und die Gruppe zerfiel, woraufhin sie allein loszog. Sie trägt Brumas Umhang, der ihr am Ende einen kleinen elektrischen Schock versetzt.
 
-**Session 2026-08-20:** Kaya besucht den Friedhof von Ringtal und findet das Grab ihrer Mutter. Sie wird von [Greg](/npcs/greg.md) angesprochen und spielt ein Lied, das magische Blumen erblühen lässt. In der Taverne singt sie und verdient sich eine kostenlose Übernachtung. Sie stimmt ein Lied für Bruma an und beobachtet später die geheimnisvollen Besucher, wobei sie ein Getränk über [Herakles](/npcs/herakles.md) verschüttet.
+**Session 2026-08-20:** Kaya besucht auf dem Friedhof von [Ringtal](/locations/ringtal.md) das Grab ihrer Mutter, das mit einem „G“ und einer Laute markiert ist. Der Friedhofsgärtner [Greg](/npcs/greg.md) spricht sie an und bietet an, neue Blumen zu pflanzen. Als Kaya ein Lied auf ihrer Laute spielt, erblühen die magischen Samen sofort, was sie tief berührt. In der Taverne handelt sie mit dem Wirt [Borkus](/npcs/borkus.md) aus, dass sie für Musik eine kostenlose Übernachtung bekommt. Sie spielt „Diggy Diggy Hole“ und später ein episches Lied für Bruma, erntet dafür Gold und Begeisterung. Beim Versuch, das Gespräch von Sir Tali und seinen Begleitern zu belauschen, stolpert sie und verschüttet ihr Getränk über [Herrn Raxlis](/npcs/herr_raxlis.md). Sie bespricht mit Saris die seltsame Ausstrahlung des Magiers und schläft in der Taverne.
+
+**Session 2026-09-03:** Vor der Schlacht besucht Kaya erneut das Grab ihrer Mutter und sorgt mit Liedern für Einkommen. Während der Schlacht spendet sie Hoffnung, feuert die Verteidiger an und setzt ihre magische Hand zusammen mit der Peitsche ein, um Gegner von der Klippe zu stoßen. Sie zeigt Mitgefühl, verteidigt Saris gegen abfällige Blicke und ermutigt Sange. Ihre Peitsche hat einen aufschreckenden Effekt, mit dem sie mehrere Feinde gleichzeitig zu Fall bringt. Anfangs ängstlich, gewinnt sie im Kampf zunehmend an Selbstvertrauen und trägt entscheidend zur Moral der Verteidiger bei.
 
 ## Offene Fragen
 
-- Wird Kaya ihren Gefährten von ihrer Vergangenheit und dem Verlust ihrer Mutter erzählen? Sie ist am Überlegen, ob sie es wagen sollte, hat es aber noch nicht getan.
-- Was genau geschah mit ihrer Mutter und den zwei Menschen, die sie in Ringtal durch eine Krankheit verloren hat?
-- Warum verließ Kaya nach dem Tod ihrer Mutter ihre Gruppe?
+- Inwieweit sich Kayas Misstrauen gegenüber [Joran](/deities/joran.md) als berechtigt erweist und ob ihre Fürsorge für [Sange](/characters/sange.md) in einen offenen Konflikt mit dessen wachsender Götterbindung mündet, ist nicht geklärt.
+- Wer Kayas Vater ist, bleibt unbekannt. Sie selbst weiß es nicht und erzählt wechselnde Geschichten; der Brief ihres Vaters ist ungelesen.
+- Warum die ehemalige Künstlergruppe und ihre Mutter ihr die Wahrheit über den Vater verschwiegen, ist offen.
+- Welche Bewandtnis es mit Brumas Umhang und dem elektrischen Schock hat, ist nicht näher erklärt.
 
-# Belege
+## Belege
 
-1. Session 2026-06-04 @ 00:06:41 – https://www.youtube.com/watch?v=EGNh8O7pE5Q
+1. Session 2026-06-04 @ 00:58:18 – https://www.youtube.com/watch?v=EGNh8O7pE5Q
 2. Session 2026-07-10 @ 00:07:51 – https://www.youtube.com/watch?v=H-eHSlfxUAg
-3. Session 2026-07-23 @ 00:00:27 – https://www.youtube.com/watch?v=Gb-TEbCFF0M
-4. Session 2026-08-06 @ 00:33:45 – https://www.youtube.com/watch?v=0HyPHao8s_k
-5. Session 2026-08-20 @ 00:42:22 – https://www.youtube.com/watch?v=2EkWrNUfQi0
+3. Session 2026-07-23 @ 00:56:25 – https://www.youtube.com/watch?v=Gb-TEbCFF0M
+4. Session 2026-08-06 @ 00:32:46 – https://www.youtube.com/watch?v=0HyPHao8s_k
+5. Session 2026-08-20 @ 00:43:21 – https://www.youtube.com/watch?v=2EkWrNUfQi0
+6. Session 2026-09-03 @ 02:03:07 – https://www.youtube.com/watch?v=bl-hX87_EC8

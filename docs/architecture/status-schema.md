@@ -15,9 +15,11 @@ only reads and merges — it never re-derives service-internal state.
     "run_id": "20260805T212123Z-25696",
     "started_at": "2026-08-05T21:21:23Z",
     "ended_at": "2026-08-05T21:45:01Z",
+    "duration_s": 1418.0,              // optional; null if timestamps unparseable
     "ok": true,
     "error": null,                     // set when ok=false
-    "counts": { }                      // service-specific, see below
+    "counts": { },                     // service-specific, see below
+    "usage": { }                       // optional; LLM token accounting, see below
   },
   "items": [ ],                        // service-specific rows, see below
   "actions": [                         // things waiting on a human
@@ -63,6 +65,31 @@ consumers; the KB also persists `services/kb/state/last_run.json` +
 
 `last_run.counts`: `{"entities_by_type": {...}, "conflicts_open": N,
 "sessions_ingested": N}`.
+
+`last_run.usage` (pnp-kb only, added 2026-09-05): LLM token accounting for the
+run, from the `usage` block the API returns on every completion.
+
+```jsonc
+"usage": {
+  "llm_calls": 412,
+  "tokens": { "prompt": 1840233, "completion": 233911 },
+  "by_model": {
+    "deepseek-v4-pro":   { "calls": 96,  "prompt_tokens": 812004, "completion_tokens": 150221 },
+    "deepseek-v4-flash": { "calls": 316, "prompt_tokens": 1028229, "completion_tokens": 83690 }
+  }
+  // "cost" and "cost_currency" appear ONLY when prices are configured
+}
+```
+
+Token counts are facts reported by the API and are always present. **Cost is
+opt-in and never estimated**: a `cost` key appears for a model only when both
+`PNP_PRICE_IN_<MODEL>` and `PNP_PRICE_OUT_<MODEL>` are set (price per 1M
+tokens; `<MODEL>` uppercased with non-alphanumerics as underscores). Absent
+cost therefore means "not priced", never "free" — consumers must not default it
+to zero.
+
+Both `duration_s` and `usage` are additive; every pre-existing key keeps its
+meaning, so an older consumer is unaffected.
 
 `items[]`: one row per session concept —
 `{concept, id, video_id, date, title, quality, unsicher_ratio, committed_at}`.

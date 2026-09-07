@@ -3,9 +3,12 @@ from __future__ import annotations
 import hashlib
 import json
 import logging
+import os
 import re
+import threading
 from pathlib import Path
 
+import openai
 from tenacity import (
     retry,
     retry_if_exception_type,
@@ -13,8 +16,8 @@ from tenacity import (
     wait_exponential,
 )
 
-from pnp_okf.llm_client import build_client
 from pnp_okf.config import DeepSeekConfig
+from pnp_okf.llm_client import build_client
 from pnp_okf.models import SessionExtraction, SessionTranscript
 from pnp_okf.prompts import (
     EXTRACT_SYSTEM,
@@ -24,11 +27,56 @@ from pnp_okf.prompts import (
 
 log = logging.getLogger(__name__)
 
+# Models whose endpoint has already answered "no" to structured outputs.
+# The probe in _call_llm costs a full transcript upload and is rejected at
+# validation, and an endpoint's answer cannot change mid-run -- so learning it
+# once per process turns one wasted round trip per uncached session into at
+# most one for the whole run. Keyed by model because for_tier() swaps the
+# model per tier.
+_NO_STRUCTURED_OUTPUTS: set[str] = set()
+# Models whose structured-outputs capability has been settled this process.
+_PROBED: set[str] = set()
+# Held for the probe only -- see _call_llm. The first call for a model doubles
+# as the probe, and the probe uploads the whole transcript; without this every
+# worker thread pays that upload to learn the same one-bit answer.
+_PROBE_LOCK = threading.Lock()
+
+
+def _frozen_prompt_version(transcript: SessionTranscript) -> str:
+    """Prompt version this session's cache key should use.
+
+    A PROMPT_VERSION bump invalidates every cached extraction at once, so
+    editing one constant re-derives the whole back catalogue: ~10M tokens and
+    ~$8 on a 66-session corpus (docs/architecture/MIGRATION-prompt-v6.md).
+    Worse, re-extraction resamples entity *names*, and names derive concept
+    ids -- so the back catalogue's ids churn even though its transcripts have
+    not changed by a word.
+
+    Freezing pins already-ingested sessions to the version they were built
+    with, so a bump only re-extracts sessions recorded after the cutoff:
+
+        PNP_EXTRACT_FREEZE_BEFORE=2026-09-06   # session date, exclusive
+        PNP_EXTRACT_FREEZE_VERSION=6           # version they are pinned to
+
+    Both must be set; either alone is ignored, so the default stays
+    "re-extract everything" and freezing is always a deliberate act.
+
+    Caveat: this pins the prompt only. ``cfg.model`` is still in the key, so
+    changing the model re-extracts frozen sessions too -- deliberately, since a
+    new model rewords names and the frozen ids would not match what it makes.
+    """
+
+    before = os.environ.get("PNP_EXTRACT_FREEZE_BEFORE", "").strip()
+    version = os.environ.get("PNP_EXTRACT_FREEZE_VERSION", "").strip()
+    if not before or not version:
+        return PROMPT_VERSION
+    return version if str(transcript.date) < before else PROMPT_VERSION
+
 
 def _cache_key(transcript: SessionTranscript, cfg: DeepSeekConfig) -> str:
     payload = "\n".join(
         [
-            PROMPT_VERSION,
+            _frozen_prompt_version(transcript),
             cfg.model,
             transcript.session_id,
             transcript.render_dialogue(),
@@ -37,8 +85,17 @@ def _cache_key(transcript: SessionTranscript, cfg: DeepSeekConfig) -> str:
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()[:16]
 
 
-def _cache_path(cache_dir: Path, transcript: SessionTranscript) -> Path:
-    return cache_dir / "extract" / f"{transcript.session_id}.json"
+def _cache_path(cache_dir: Path, transcript: SessionTranscript, key: str) -> Path:
+    """One file per (session, key), not one per session.
+
+    The key already covers PROMPT_VERSION and the model, but the path used to
+    ignore it -- so bumping either overwrote the only copy of an extraction
+    that cost real money, and changing your mind cost a second full rebuild
+    (~$6.50). Keeping each key at its own path makes the experiment
+    reversible for nothing; the cost is a few MB of disk.
+    """
+
+    return cache_dir / "extract" / transcript.session_id / f"{key}.json"
 
 
 def _load_cached(path: Path, key: str) -> SessionExtraction | None:
@@ -51,6 +108,22 @@ def _load_cached(path: Path, key: str) -> SessionExtraction | None:
     if blob.get("_key") != key:
         return None
     return SessionExtraction.model_validate(blob["extraction"])
+
+
+def load_cached_extraction(
+    cache_dir: Path, transcript: SessionTranscript, cfg: DeepSeekConfig
+) -> SessionExtraction | None:
+    """This session's cached extraction, or None if it must be re-called.
+
+    Deriving the key and the path is one operation: ``_cache_path`` needs the
+    key, and ``_load_cached`` re-checks it against the stored ``_key``. Spelled
+    out at each call site it drifted -- when the path gained the key segment,
+    two of the six callers were left on the old two-argument form and died with
+    a TypeError on their first transcript.
+    """
+
+    key = _cache_key(transcript, cfg)
+    return _load_cached(_cache_path(cache_dir, transcript, key), key)
 
 
 def _store_cache(path: Path, key: str, extraction: SessionExtraction) -> None:
@@ -144,14 +217,76 @@ def _call_llm(client, cfg: DeepSeekConfig, transcript: SessionTranscript) -> Ses
             ),
         },
     ]
+    if cfg.model in _NO_STRUCTURED_OUTPUTS:
+        return _call_llm_json_prompt(client, cfg, messages)
+
+    # Serialise the *probe*, and nothing else. The first call for a model
+    # doubles as the probe and uploads the whole transcript, so letting
+    # `--workers` threads race past the memo pays that upload N times over to
+    # learn one boolean. But the guard has to be re-tested after acquisition:
+    # every thread that was already queued chose the lock while the memo was
+    # still empty, and if it then ran its own extraction while holding it, the
+    # first `--workers` sessions of a cold run would extract one at a time.
+    if cfg.model not in _PROBED:
+        with _PROBE_LOCK:
+            if cfg.model not in _PROBED:
+                return _probe_structured_outputs(client, cfg, messages)
+
+    # Settled while we queued, and the lock is released: fully parallel again.
+    if cfg.model in _NO_STRUCTURED_OUTPUTS:
+        return _call_llm_json_prompt(client, cfg, messages)
     try:
         return _call_llm_structured(client, cfg, messages)
     except Exception as exc:
+        # The capability is already settled, so a failure here is about this
+        # call, not the endpoint -- fall back for it alone and leave the memo
+        # as the probe found it.
         log.info(
-            "[extract] structured-outputs not available (%s); falling back to JSON prompt",
+            "[extract] structured call failed for %s (%s) after the "
+            "capability was settled; falling back to the JSON prompt for "
+            "this call only",
+            cfg.model,
             type(exc).__name__,
         )
         return _call_llm_json_prompt(client, cfg, messages)
+
+
+def _probe_structured_outputs(client, cfg: DeepSeekConfig, messages: list) -> SessionExtraction:
+    """The one call per model that learns whether structured outputs work.
+
+    Runs under ``_PROBE_LOCK`` so exactly one transcript is uploaded to settle
+    the question, and does double duty as that session's real extraction.
+    """
+
+    try:
+        parsed = _call_llm_structured(client, cfg, messages)
+    except (openai.APIConnectionError, openai.APITimeoutError) as exc:
+        # A dropped connection or timeout says nothing about whether the
+        # model supports structured outputs -- unlike a real capability
+        # rejection it can succeed on the very next attempt, so it must
+        # not poison the memo, and the capability stays unsettled: the next
+        # thread to arrive probes instead. The fallback has its own
+        # retry/backoff to ride this out.
+        log.info(
+            "[extract] structured-outputs probe hit a transient network "
+            "error for %s (%s); falling back to the JSON prompt for this "
+            "call only",
+            cfg.model,
+            type(exc).__name__,
+        )
+        return _call_llm_json_prompt(client, cfg, messages)
+    except Exception as exc:
+        _NO_STRUCTURED_OUTPUTS.add(cfg.model)
+        _PROBED.add(cfg.model)
+        log.info(
+            "[extract] structured-outputs not available for %s (%s); "
+            "using the JSON prompt for the rest of this run",
+            cfg.model,
+            type(exc).__name__,
+        )
+        return _call_llm_json_prompt(client, cfg, messages)
+    _PROBED.add(cfg.model)
+    return parsed
 
 
 def extract_session(
@@ -165,7 +300,7 @@ def extract_session(
     """Extract a recap + entity mentions for one session (cached)."""
 
     key = _cache_key(transcript, cfg)
-    path = _cache_path(cache_dir, transcript)
+    path = _cache_path(cache_dir, transcript, key)
     if not force:
         cached = _load_cached(path, key)
         if cached is not None:

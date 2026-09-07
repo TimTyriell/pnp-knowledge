@@ -1,17 +1,17 @@
 ---
 type: Item
 title: Dolch
-description: Ein langer, spitzer Dolch mit einem Siegel an der Spitze, der von dem
-  Kenku getragen wurde. Der Gildemeister nimmt ihn zur Untersuchung an…
+description: Unter einem der Strohbetten im Obergeschoss der Scheune findet Otis einen
+  Dolch. Er steckt ihn ein. Der Dolch ist ein einfacher Dagger und…
 tags:
 - items
-timestamp: '2025-07-22T00:00:00Z'
+timestamp: '2026-03-23T00:00:00Z'
 id: ITEM_DOLCH
 subtype: Waffe
 ---
 
-Ein langer, spitzer Dolch mit einem Siegel an der Spitze, der von dem [Kenku](/npcs/kenku.md) getragen wurde. Der [Gildemeister](/npcs/nox.md) nimmt ihn zur Untersuchung an sich.
+Unter einem der Strohbetten im Obergeschoss der Scheune findet [Otis](/characters/otis.md) einen Dolch. Er steckt ihn ein. Der Dolch ist ein einfacher Dagger und ein Hinweis darauf, dass die Bewohner keine gewöhnlichen Bauern sind.
 
 # Belege
 
-[P-15] Session 2025-07-22 @ 02:33:47 (https://www.youtube.com/watch?v=BRRCUgW4xRo)
+[P-42] Session 2026-03-23 @ 00:38:00 (https://www.youtube.com/watch?v=niVxKtdQBn0)

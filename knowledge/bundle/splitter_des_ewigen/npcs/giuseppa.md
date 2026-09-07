@@ -1,15 +1,15 @@
 ---
 type: NPC
 title: Giuseppa
-description: Giuseppa ist eine Frau, die in der Taverne von Sanddorn arbeitet und
-  Zimmer vermietet. Sie ist freundlich und bietet der Gruppe eine Überna…
+description: Giuseppa arbeitet im Empfang der ersten Taverne und bietet der Gruppe
+  Zimmer zur Übernachtung an. Sie erwähnt, dass Joar Vanur erst am näch…
 tags:
 - npcs
 timestamp: '2025-04-30T00:00:00Z'
 id: NPC_GIUSEPPA
 ---
 
-Giuseppa ist eine Frau, die in der Taverne von Sanddorn arbeitet und Zimmer vermietet. Sie ist freundlich und bietet der Gruppe eine Übernachtung an.
+Giuseppa arbeitet im Empfang der ersten Taverne und bietet der Gruppe Zimmer zur Übernachtung an. Sie erwähnt, dass [Joar Vanur](/npcs/joar_vanur.md) erst am nächsten Morgen zu sprechen sei.
 
 # Belege
 

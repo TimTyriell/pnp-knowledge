@@ -1,8 +1,8 @@
 ---
 type: Event
 title: Kampf gegen das Seelenkalb
-description: Die Gruppe wird von einem Seelenkalb angegriffen, das Dodo verschlingt.
-  Esterossa und Lindo Laut kämpfen gegen die Kreatur, die schließlich…
+description: Während der Rückkehr zur Hütte greift das Seelenkalb die Gruppe an. Es
+  verfolgt die Fliehenden, packt Dodo und verschlingt ihn; Esterossa b…
 tags:
 - events
 timestamp: '2026-01-06T00:00:00Z'
@@ -10,8 +10,8 @@ id: EVENT_KAMPF_GEGEN_DAS_SEELENKALB
 subtype: Kampf
 ---
 
-Die Gruppe wird von einem Seelenkalb angegriffen, das [Dodo](/characters/dodo.md) verschlingt. [Esterossa](/characters/esterossa.md) und [Lindo Laut](/characters/lindo_laut.md) kämpfen gegen die Kreatur, die schließlich flieht, nachdem sie schwer verletzt wurde.
+Während der Rückkehr zur [Hütte](/locations/huette.md) greift das Seelenkalb die Gruppe an. Es verfolgt die Fliehenden, packt [Dodo](/characters/dodo.md) und verschlingt ihn; [Esterossa](/characters/esterossa.md) befreit Dodo mit heiliger Magie und verletzt die Kreatur schwer, woraufhin sie flieht.
 
 # Belege
 
-[P-32] Session 2026-01-06 @ 01:47:50 (https://www.youtube.com/watch?v=VGw81seFvbo)
+[P-32] Session 2026-01-06 @ 01:51:00 (https://www.youtube.com/watch?v=VGw81seFvbo)

@@ -2,23 +2,23 @@ from __future__ import annotations
 
 import logging
 from difflib import SequenceMatcher
+from functools import lru_cache
 from pathlib import Path
 
 import yaml
 
+from pnp_okf.links import apply_spellings
 from pnp_okf.models import (
+    DIR_TO_TYPE,
+    MAX_EVENT_SESSION_SPAN,
+    PERSON_TYPES,
+    SESSION_SCOPED_TYPES,
+    TYPE_DIR,
     CanonicalEntity,
     EntityType,
     MentionRef,
     SessionExtraction,
     SessionTranscript,
-)
-from pnp_okf.models import (
-    DIR_TO_TYPE,
-    PERSON_TYPES,
-    MAX_EVENT_SESSION_SPAN,
-    SESSION_SCOPED_TYPES,
-    TYPE_DIR,
 )
 from pnp_okf.okf import slugify
 
@@ -28,7 +28,52 @@ log = logging.getLogger(__name__)
 FUZZY_RATIO = 0.9
 
 
-def _default_concept_id(entity_type: EntityType, name: str) -> str:
+@lru_cache(maxsize=8192)
+def _sorted_slug(concept_id: str) -> str:
+    """Slug with its tokens sorted -- the form the fuzzy pass compares.
+
+    Cached because merge_near_duplicates restarts its whole O(n^2) scan after
+    every merge, so on the ~1100-entity registry the same handful of strings
+    is re-split, re-sorted and re-joined across roughly a million comparisons.
+    Keyed on the string, not the entity, so it survives those restarts.
+    """
+
+    return "_".join(sorted(concept_id.rsplit("/", 1)[-1].split("_")))
+
+
+@lru_cache(maxsize=8192)
+def _slugified(text: str) -> str:
+    """slugify() memoised for the reanchor scan.
+
+    _reanchor_to_live_alias re-slugifies every alias of every candidate
+    concept for every mention -- the same few thousand strings, once per
+    (mention x concept x alias) triple.
+    """
+
+    return slugify(text)
+
+
+def _default_concept_id(
+    entity_type: EntityType, name: str, spellings: dict[str, str] | None = None
+) -> str:
+    """Derive a concept id from an extracted name, spelling-corrected first.
+
+    ``spelling:`` used to reach only synthesized prose (links.py), which meant
+    a mishearing the GM had already ruled on could still mint its own node: the
+    rule said Willau -> Willauch, and the bundle still grew
+    locations/taverne_in_willau beside locations/taverne_in_willauch. ``merge:``
+    did not catch it either, because merge matches a whole name and the model
+    had coined a *compound* ("Taverne in Willau") that was not in the table.
+
+    Applying the same map here closes that: identity is derived from the
+    corrected name, so a known mishearing can no longer split a concept no
+    matter what compound the model wraps it in. Only the fallback id is
+    normalised -- an explicit split/override/merge still wins on the raw name,
+    so no existing rule changes meaning.
+    """
+
+    if spellings:
+        name = apply_spellings(name, spellings)
     return f"{TYPE_DIR[entity_type]}/{slugify(name)}"
 
 
@@ -52,8 +97,11 @@ def _tokens(entity: CanonicalEntity) -> set[str]:
 
 
 def _fuzzy_match(a: CanonicalEntity, b: CanonicalEntity) -> bool:
-    slug_a = a.concept_id.rsplit("/", 1)[-1]
-    slug_b = b.concept_id.rsplit("/", 1)[-1]
+    # Tokens sorted before comparing: a character-level ratio on the raw slug
+    # is blind to word reordering ("harald_der_alte" vs "der_alte_harald"),
+    # scoring the same entity as unrelated.
+    slug_a = _sorted_slug(a.concept_id)
+    slug_b = _sorted_slug(b.concept_id)
     return SequenceMatcher(None, slug_a, slug_b).ratio() >= FUZZY_RATIO
 
 
@@ -86,9 +134,53 @@ def _reanchor_to_retired(
     return None
 
 
+def _reanchor_to_live_alias(
+    name: str,
+    entity_type: EntityType,
+    preserved_aliases: dict[str, list[str]],
+    spellings: dict[str, str] | None = None,
+) -> str | None:
+    """Fuzzy-match a mention against aliases already recorded on a *live*
+    concept, before a brand-new default id is even computed.
+
+    ``_reanchor_to_retired`` only reanchors a reword of a concept that has
+    gone missing; a reword of one that is still live had nowhere to reanchor
+    at all, which is the dominant identity-churn mode (the LLM rewords an
+    already-known entity and its derived concept_id moves). ``preserved_
+    aliases`` already accumulates every distinct wording ever extracted for
+    a concept (write_registry appends, never clobbers), so a new wording
+    close to one of them is very likely the same being reworded again.
+
+    Similarity picks the winner, not iteration order. Returning on the first
+    alias over the bar meant registry file order decided between two concepts
+    that both cleared it, and the mention was then bound to the wrong one for
+    good -- that id goes on to feed ``merge_near_duplicates``' incumbency
+    preference. Ties break on the lowest concept_id, so the result does not
+    depend on how the registry happens to be sorted.
+    """
+
+    slug = slugify(apply_spellings(name, spellings) if spellings else name)
+    person = entity_type in PERSON_TYPES
+    best: tuple[float, str] | None = None
+    for concept_id, aliases in preserved_aliases.items():
+        rtype = DIR_TO_TYPE.get(concept_id.split("/", 1)[0])
+        if rtype is None or (
+            entity_type != rtype and not (person and rtype in PERSON_TYPES)
+        ):
+            continue
+        for alias in aliases:
+            ratio = SequenceMatcher(None, slug, _slugified(alias)).ratio()
+            if ratio < FUZZY_RATIO:
+                continue
+            if best is None or ratio > best[0] or (ratio == best[0] and concept_id < best[1]):
+                best = (ratio, concept_id)
+    return best[1] if best else None
+
+
 def merge_near_duplicates(
     entities: list[CanonicalEntity],
     never_merge: list[set[str]] | None = None,
+    known_ids: set[str] | None = None,
 ) -> list[CanonicalEntity]:
     """Second resolution pass: fold near-duplicate entities together.
 
@@ -102,14 +194,18 @@ def merge_near_duplicates(
        candidates ("Esterossa" -> "Esterossa Torbhalm"). A name with several
        supersets stays unmerged — ambiguity is for the registry/human.
 
-    The entity with more mentions survives; the other's name and aliases
-    become aliases. Every auto-merge is logged so review can catch misfolds;
-    hand-maintained registry merges always run first and win.
+    The survivor is whichever id ``known_ids`` (the registry's existing
+    concept ids) already recognises, so a fuzzy fold cannot rename a stable
+    concept to a freshly-invented one; only when neither or both ids are
+    already known does mention count decide. The loser's name and aliases
+    become aliases of the survivor. Every auto-merge is logged so review can
+    catch misfolds; hand-maintained registry merges always run first and win.
     """
 
     survivors: list[CanonicalEntity] = list(entities)
     merged_away: dict[str, str] = {}
     blocked = never_merge or []
+    known = known_ids or set()
 
     def _forbidden(a: CanonicalEntity, b: CanonicalEntity) -> bool:
         # A human ruling that two things are distinct must also stop the
@@ -149,7 +245,12 @@ def merge_near_duplicates(
                     continue
                 if _fuzzy_match(a, b):
                     loser, winner = sorted(
-                        (a, b), key=lambda e: (len(e.mentions), e.concept_id)
+                        (a, b),
+                        key=lambda e: (
+                            e.concept_id in known,
+                            len(e.mentions),
+                            e.concept_id,
+                        ),
                     )
                     _merge(loser, winner, "fuzzy")
                     changed = True
@@ -527,6 +628,14 @@ def resolve_entities(
     splits = _load_splits(registry_path)
     retired = _load_retired(registry_path)
     never_merge_pairs = _load_never_merge_pairs(registry_path)
+    spellings = load_spellings(registry_path)
+    # Every concept_id the registry already carries, so the live-alias
+    # reanchor below only ever fires for a wording the registry has never
+    # produced before -- see its call site for why.
+    known_ids = {
+        str(e.get("concept_id", "")).strip()
+        for e in _registry_data(registry_path).get("entities") or []
+    } - {""}
     dropped = 0
     # Also match registry keys after slugification, so "Lindo  Laut" folds
     # into a registry entry written as "lindo laut".
@@ -540,6 +649,7 @@ def resolve_entities(
         transcript = transcripts[session_id]
         for mention in extraction.entities:
             name_key = mention.name.strip().lower()
+            default_id = _default_concept_id(mention.type, mention.name, spellings)
             # A per-session split wins over every name-based rule: it is the
             # only signal that separates two beings sharing one name.
             concept_id = (
@@ -548,8 +658,22 @@ def resolve_entities(
                 or overrides.get(name_key)
                 or slug_overrides.get(slugify(mention.name))
             )
+            # Live-alias reanchor only when this wording would otherwise mint
+            # an id the registry has never seen: if default_id already names
+            # an established concept, that concept's own identity is the
+            # answer, not a fuzzy guess against an unrelated one's alias.
+            # Without this guard a short, common name can fuzzy-collide with
+            # someone else's alias by coincidence (a PC "Gunther" folding into
+            # an NPC cat nicknamed "Günther") or re-fold two concepts a human
+            # already kept apart (locations/berg_zebros next to
+            # locations/berge_von_zebros -- mountain vs. fortress ruin, see
+            # apply_merges.py's REJECTED_NOTES) -- both measured regressions
+            # on the real bundle during development of this check.
+            if concept_id is None and default_id not in known_ids:
+                concept_id = _reanchor_to_live_alias(
+                    mention.name, mention.type, preserved_aliases, spellings
+                )
             if concept_id is None:
-                default_id = _default_concept_id(mention.type, mention.name)
                 concept_id = (
                     _reanchor_to_retired(
                         default_id, mention.type, retired, never_merge_pairs
@@ -631,7 +755,9 @@ def resolve_entities(
         if blocked:
             entity.aliases = [a for a in entity.aliases if a.lower() not in blocked]
 
-    resolved = merge_near_duplicates(list(entities.values()), never_merge_pairs)
+    resolved = merge_near_duplicates(
+        list(entities.values()), never_merge_pairs, known_ids
+    )
     log.info(
         "[resolve] %d mentions -> %d canonical entities",
         sum(len(e.entities) for e in extractions.values()),

@@ -1,15 +1,15 @@
 ---
 type: NPC
-title: Minen-Dämon
-description: Ein mächtiger Dämon, der aus dem Portal beschworen wird. Er ist intelligent,
-  nutzt Feuerangriffe wie Hellfire und hat eine Aura der Furcht.…
+title: Miner-Dämon
+description: Der Miner-Dämon ist eine große, intelligente Kreatur, die aus dem Rift
+  tritt und die Skelett-Bogenschützen befehligt. Er setzt Feuerregen e…
 tags:
 - npcs
 timestamp: '2025-05-27T00:00:00Z'
 id: NPC_MINEN_DAEMON
 ---
 
-Ein mächtiger Dämon, der aus dem [Portal](/locations/portal.md) beschworen wird. Er ist intelligent, nutzt Feuerangriffe wie Hellfire und hat eine Aura der Furcht. Er kämpft mit einer Axt und kann zwei Angriffe pro Zug ausführen. Er wird von der Gruppe schwer verwundet, aber erst durch [Cookies](/characters/cookie.md) gezielten Pfeil endgültig besiegt. Seine Essenz wird zurück ins Portal gesaugt.
+Der Miner-Dämon ist eine große, intelligente Kreatur, die aus dem Rift tritt und die [Skelett-Bogenschützen](/npcs/skelett_bogenschuetzen.md) befehligt. Er setzt Feuerregen ein, der das Gelände in Brand setzt und fast die Gruppe überwältigt. Trotz massiven Schadens durch [Lindo Lauts](/characters/lindo_laut.md) Akan Barrage steht er wieder auf und attackiert [Dodo](/characters/dodo.md) und Lindo. Schließlich wird er von [Cookie](/characters/cookie.md) mit einem Pfeil in den Nacken getötet, woraufhin seine Skelette kollabieren. Sein Körper löst sich danach in Energie auf und wird ins Portal zurückgesaugt. Er dient den Alten Göttern und symbolisiert die Bedrohung aus dem [Abyss](/domains/abyss.md).
 
 # Belege
 

@@ -1,15 +1,15 @@
 ---
 type: NPC
 title: Balor
-description: Ein großer Dämon, der die Gruppe verfolgt. Er wird von Lindo Lauts Musik
-  kurz betäubt und später von Lindo Lauts Strahl geschwächt, regener…
+description: Der Balor ist ein großer, geflügelter Dämon, der die Gruppe in der Zwischenebene
+  verfolgt. Er scheint Vasul zu suchen und wird von Lindo La…
 tags:
 - npcs
 timestamp: '2025-09-06T00:00:00Z'
 id: NPC_BALOR
 ---
 
-Ein großer Dämon, der die Gruppe verfolgt. Er wird von [Lindo Lauts](/characters/lindo_laut.md) Musik kurz betäubt und später von Lindo Lauts Strahl geschwächt, regeneriert sich aber.
+Der Balor ist ein großer, geflügelter Dämon, der die Gruppe in der [Zwischenebene](/domains/zwischenebenen.md) verfolgt. Er scheint [Vasul](/deities/vharzul.md) zu suchen und wird von [Lindo Lauts](/characters/lindo_laut.md) Stabstrahl getroffen, der seine Kräfte absorbiert, sodass er auf ein Knie fällt, aber sich regeneriert. Er ist eine ständige Bedrohung während der Flucht.
 
 # Belege
 

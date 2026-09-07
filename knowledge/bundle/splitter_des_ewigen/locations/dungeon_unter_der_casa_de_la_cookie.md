@@ -1,8 +1,8 @@
 ---
 type: Location
 title: Dungeon unter der Casa de la Cookie
-description: Ein Dungeon unter dem Haus, der feucht und mit Ranken bewachsen ist.
-  Er enthält eine Warnungstafel, einen Raum mit Leichen, seltsame Pflanz…
+description: Der Dungeon ist feucht, von Dschungelpflanzen durchzogen und enthält
+  tödliche Gase, Skelette, duftende Pflanzen und mysteriöse Artefakte. D…
 tags:
 - locations
 timestamp: '2026-02-11T00:00:00Z'
@@ -10,8 +10,8 @@ id: LOC_DUNGEON_UNTER_DER_CASA_DE_LA_COOKIE
 subtype: Dungeon
 ---
 
-Ein Dungeon unter dem Haus, der feucht und mit Ranken bewachsen ist. Er enthält eine [Warnungstafel](/items/warnungstafel.md), einen Raum mit Leichen, seltsame Pflanzen, die einen süßen Geruch verbreiten, und einen [Altar](/items/altar.md). Die Gruppe findet hier ein Artefakt, das mit [Thar'Vok](/deities/tarvok_der_erdrichter.md) verbunden ist.
+Der Dungeon ist feucht, von Dschungelpflanzen durchzogen und enthält tödliche Gase, Skelette, duftende Pflanzen und mysteriöse Artefakte. Die Gruppe dringt ein, stößt auf Hindernisse und zieht sich zurück. Es ist ein alter Komplex mit Verbindung zu [Thar'Vok](/deities/tarvok_der_erdrichter.md).
 
 # Belege
 
-[P-36] Session 2026-02-11 @ 00:04:45 (https://www.youtube.com/watch?v=3C8SD-cyNPM)
+[P-36] Session 2026-02-11 @ 00:02:12 (https://www.youtube.com/watch?v=3C8SD-cyNPM)

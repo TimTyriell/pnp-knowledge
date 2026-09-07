@@ -1,15 +1,15 @@
 ---
 type: NPC
 title: Lilly
-description: Lilly ist ein Sukkubus, der die Gruppe in der Gilde empfängt. Sie ist
-  verführerisch und beeindruckt von Esterossas Auftreten. Sie führt die…
+description: Lilly ist eine Sukkubus, die in der neuen Gilde als Empfangsdame arbeitet.
+  Sie begrüßt die Gruppe freundlich, flirtet mit Esterossa und kün…
 tags:
 - npcs
 timestamp: '2025-09-17T00:00:00Z'
 id: NPC_LILLY
 ---
 
-Lilly ist ein Sukkubus, der die Gruppe in der [Gilde](/factions/gilde_von_ehrenfels.md) empfängt. Sie ist verführerisch und beeindruckt von [Esterossas](/characters/esterossa.md) Auftreten. Sie führt die Gruppe zu [Gorak](/npcs/gorak.md) und den Gildenführern.
+Lilly ist eine Sukkubus, die in der neuen [Gilde](/factions/gilde_von_ehrenfels.md) als Empfangsdame arbeitet. Sie begrüßt die Gruppe freundlich, flirtet mit [Esterossa](/characters/esterossa.md) und kündigt sie bei den Anführern an.
 
 # Belege
 

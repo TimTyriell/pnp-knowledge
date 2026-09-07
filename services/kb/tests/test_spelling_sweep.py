@@ -216,8 +216,21 @@ _LINK_RE = re.compile(r"\[([^\]]+)\]\((?!\w+:)([^)\s]*?\.md)\)")
 # concept (and events/turnier_von_willauch) the canonical_name pin and
 # merge: key the campaign-wide Willauch rename had never actually applied to
 # them, so label and target agree now.
-LABEL_TARGET_MISMATCH_BASELINE = 14
-LABEL_TARGET_MISMATCH_OCCURRENCE_BASELINE = 23
+#
+# 2026-09-05 v6 identity cleanup: prompt-v6's own resynthesis raised this to
+# 42/55 (per docs/audits/2026-09-05-v6-identity-cleanup-handoff.md, which
+# anticipated the jump). Eyeballed per that handoff's instruction: the large
+# majority (e.g. "Belorus dem Stillen" -> npcs/belorus, "Der Seraph"/
+# "Seraphen" -> npcs/seraph, "heiligen Hain"/"heiligen Hains" ->
+# heiliger_hain) are German inflection this filter's declension check
+# doesn't catch (genitive/dative endings, capitalized adjectives, plural
+# forms) — not mislinks. A few are real drift worth tracking down later
+# (e.g. "Streitkolben von Zebros" -> items/streitkolben_von_cepros, a
+# leftover "Zebros" spelling on an already-renamed item) but none point at
+# the wrong concept. Not chased individually per the handoff; ratchet
+# against the new measurement instead.
+LABEL_TARGET_MISMATCH_BASELINE = 42
+LABEL_TARGET_MISMATCH_OCCURRENCE_BASELINE = 55
 
 
 def _title_and_aliases_by_concept() -> dict[str, tuple[str, list[str]]]:

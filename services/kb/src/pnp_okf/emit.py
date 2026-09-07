@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import logging
 import re
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 import yaml
@@ -30,6 +30,14 @@ from pnp_okf.synthesize import _BELEGE_HEADING_RE, render_belege_section
 
 log = logging.getLogger(__name__)
 
+# How much of the previous corpus one run may abandon before it refuses.
+# Named, and exported, because --help and the docs describe these thresholds
+# to the user: when they were tightened from 0.10 the two argparse help
+# strings, README.md and ARCHITECTURE.md were left saying 10%, so the CLI told
+# you a 5% rename was safe while the code exited 2 at 2%.
+MAX_RENAME_RATIO = 0.02
+MAX_PRUNE_RATIO = 0.02
+
 
 def _session_concept_id(transcript: SessionTranscript) -> str:
     date = transcript.date or transcript.session_id[:10]
@@ -54,6 +62,39 @@ def build_concept_index(
     return ConceptIndex(concept_ids, names, spellings)
 
 
+def mention_concept_index(
+    entities: list[CanonicalEntity],
+) -> dict[tuple[str, str, str], str]:
+    """Invert resolved entities into ``(session_id, citation_ts, note) -> concept_id``.
+
+    ``resolve_entities`` decides identity (split/merge/ignore/spelling/fuzzy
+    fold) but its signature stays untouched -- this walks its *output* back
+    into a per-mention lookup so ``emit_sessions`` can point a session bullet
+    at the concept id the resolver actually assigned, instead of re-deriving
+    one from the raw extracted name (see PIPELINE.md section 7).
+
+    The triple identifies a mention on both sides: ``EntityMention`` (the
+    extraction) carries ``note``/``citation_ts``, ``MentionRef`` (the resolved
+    entity) carries the same plus ``session_id``.
+
+    An ``ignore:``d mention never reaches here at all -- ``resolve_entities``
+    drops it before a ``CanonicalEntity`` exists for it -- so it has no entry.
+    A key two different entities both claim is ambiguous: present, mapped to
+    ``None`` rather than guessed. The two cases are kept apart on purpose, so
+    a caller can tell "unresolved" from "never happened" -- dropping the
+    ``None`` entries here collapsed them again and made an ambiguous mention
+    disappear as quietly as a decided one.
+    """
+
+    index: dict[tuple[str, str, str], str | None] = {}
+    for entity in entities:
+        for mention in entity.mentions:
+            key = (mention.session_id, mention.citation_ts, mention.note)
+            existing = index.get(key, entity.concept_id)
+            index[key] = existing if existing == entity.concept_id else None
+    return index
+
+
 _TYPE_LABEL_DE = {
     EntityType.CHARACTER: "Charaktere",
     EntityType.NPC: "NPCs",
@@ -67,7 +108,7 @@ _TYPE_LABEL_DE = {
 
 
 def _now_iso() -> str:
-    return datetime.now(timezone.utc).replace(microsecond=0).isoformat()
+    return datetime.now(UTC).replace(microsecond=0).isoformat()
 
 
 def _short_desc(text: str, limit: int = 140) -> str:
@@ -109,11 +150,21 @@ def emit_sessions(
     extractions: dict[str, SessionExtraction],
     index: ConceptIndex | None = None,
     episodes: Episodes | None = None,
+    mention_concept_ids: dict[tuple[str, str, str], str] | None = None,
 ) -> list[tuple[str, str, str]]:
     """Write one ``sessions/<date>.md`` concept per session.
 
     When ``index`` is given, cross-links inside the recap are normalized
     against the concept set. Returns index entries ``(title, url, description)``.
+
+    ``mention_concept_ids`` (from :func:`mention_concept_index`) is the
+    resolved concept id for each mention, keyed by ``(session_id,
+    citation_ts, note)``. When given, the "Auftretende Entitäten" bullet
+    targets that id directly instead of re-slugifying the raw extracted name
+    -- see PIPELINE.md section 7. A mention with no entry (``ignore:``d, or
+    ambiguous between two entities) is left out of the list entirely rather
+    than guessed. Omitting the argument keeps the pre-fix behaviour
+    (slugify the raw name) for callers that have not resolved entities yet.
     """
 
     episodes = episodes or Episodes()
@@ -135,11 +186,32 @@ def emit_sessions(
             title = transcript.title or f"Session {date}"
 
         intro_lines: list[str] = []
+        ambiguous: list[str] = []
         for mention in extraction.entities:
-            slug = slugify(mention.name)
-            path = f"{TYPE_DIR[mention.type]}/{slug}"
+            if mention_concept_ids is None:
+                path = f"{TYPE_DIR[mention.type]}/{slugify(mention.name)}"
+            else:
+                key = (session_id, mention.citation_ts, mention.note)
+                if key not in mention_concept_ids:
+                    continue  # ignore:d -- a decision already taken, not a loss
+                resolved = mention_concept_ids[key]
+                if resolved is None:
+                    # Two entities claim this mention; the resolver refuses to
+                    # guess, which is right, but both then vanish from the page
+                    # with the reader and every test none the wiser.
+                    ambiguous.append(mention.name)
+                    continue
+                path = resolved
             intro_lines.append(
                 f"* [{mention.name}](/{path}.md) — {mention.note} [{mention.citation_ts}]"
+            )
+        if ambiguous:
+            log.warning(
+                "[emit] %s: %d mention(s) left out of the entity list -- "
+                "ambiguous, two concepts claim the same (timestamp, note): %s",
+                session_id,
+                len(ambiguous),
+                ", ".join(sorted(ambiguous)),
             )
 
         body_parts = [
@@ -413,7 +485,7 @@ def check_rename_safety(
     registry_path: Path,
     entities: list[CanonicalEntity],
     *,
-    max_ratio: float = 0.1,
+    max_ratio: float = MAX_RENAME_RATIO,
     allow: bool = False,
 ) -> bool:
     """Refuse a run that abandons most of the previous registry's concept ids.
@@ -460,7 +532,7 @@ def prune_orphans(
     bundle_dir: Path,
     entities: list[CanonicalEntity],
     *,
-    max_ratio: float = 0.1,
+    max_ratio: float = MAX_PRUNE_RATIO,
     allow: bool = False,
 ) -> int:
     """Delete concept files whose entity no longer exists. Returns the count.

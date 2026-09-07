@@ -8,7 +8,6 @@ must not be folded into the first one.
 from pathlib import Path
 
 import yaml
-
 from pnp_okf.models import (
     EntityMention,
     EntityType,

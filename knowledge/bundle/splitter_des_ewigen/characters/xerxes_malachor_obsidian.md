@@ -1,26 +1,23 @@
 ---
 type: Character
 title: Xerxes Malachor Obsidian
-description: Xerxes Malachor Obsidian ist ein Infernis-Schurke, der sich neu der Gruppe
-  angeschlossen hat. Seine Vergangenheit ist von einer Tragödie ge…
+description: Xerxes Malachor Obsidian ist ein Infernis-Schurke, der sich in der Session
+  vom 9. April 2026 der Gruppe anschließt. Er trägt eine tragische…
 tags:
 - characters
 timestamp: '2026-04-09T00:00:00Z'
 id: CHAR_XERXES_MALACHOR_OBSIDIAN
 ---
 
-# Xerxes Malachor Obsidian
+Xerxes Malachor Obsidian ist ein Infernis-Schurke, der sich in der Session vom 9. April 2026 der Gruppe anschließt. Er trägt eine tragische Vergangenheit als ehemaliger Diener eines Königs mit sich. Im Kampf gegen Dämonen zeigt er sich als waghalsiger Kämpfer mit Schattenmagie und Dolchen.
 
-Xerxes Malachor Obsidian ist ein [Infernis](/domains/infernis.md)-Schurke, der sich neu der Gruppe angeschlossen hat. Seine Vergangenheit ist von einer Tragödie geprägt; nähere Umstände sind bislang nicht bekannt. Sein erklärtes Ziel ist der Kampf gegen [Dämonen](/factions/daemonen.md), den er mit einer Kombination aus Schattenmagie und Klingen austrägt.
+## Kampf und Verlauf
 
-## Rolle und Fähigkeiten
+Obwohl die Schatten gestört sind, teleportiert sich Xerxes per Shadow Step mitten zwischen die Dämonen und tötet einen großen Dämon mit zwei Dolchen. Mit einem an einem Seil befestigten [Dolch](/items/dolch.md) pinnt er einen weiteren Dämon fest, sodass die Gruppe ihn umstoßen kann. Xerxes bewegt sich wiederholt am Rand seiner Belastungsgrenze: Er ist oft knapp an Stress und muss eine Erholung nutzen. Am Ende der Session flieht er auf [Inaros](/npcs/inaros.md).
 
-Xerxes tritt als effektiver Kämpfer gegen dämonische Bedrohungen auf. Seine Kampfweise verbindet Schattenmagie mit Klingenwaffen, und er beherrscht Teleportation, um sich blitzschnell ins Gefecht zu bewegen. Im ersten dokumentierten Einsatz zeigte er seine Fähigkeiten gleich mehrfach: Einen großen Dämon tötete er mit einem Doppelklingenangriff, eine fliegende Kreatur erledigte er mit einem gezielten Dolchwurf.
+## Hintergrund
 
-## Verlauf
-
-Über Xerxes' Hintergrund und seine Beweggründe ist bisher wenig bekannt. Fest steht, dass er sich der Gruppe kürzlich angeschlossen hat und sich bereits im ersten gemeinsamen Kampf als wertvolle Verstärkung erwies.
+Vor seiner Zeit in der Gruppe diente Xerxes einem König. Die genauen Umstände dieser Vergangenheit sind tragisch, werden im bisherigen Verlauf aber nicht näher ausgeführt.
 
 # Belege
-
-[P-46] Session 2026-04-09 @ 00:01:10 – https://www.youtube.com/watch?v=vcGkejr8_nI
+[P-46] Session vom 9. April 2026, 00:30:05 Uhr: https://www.youtube.com/watch?v=vcGkejr8_nI

@@ -1,16 +1,16 @@
 ---
 type: Event
 title: Vertrag des Ratten-Dämons
-description: Ein Vertrag, den der Ratten-Dämon der Gruppe vorlegt, um ihre Seelen
-  zu knechten. Lindo Laut kann ihn lesen und erkennt die Bedingungen.
+description: Der Ratten-Dämon legt einen Vertrag vor, der Seelenknechtschaft bedeutet.
+  Die Gruppe weigert sich zu unterschreiben.
 tags:
 - events
 timestamp: '2025-09-06T00:00:00Z'
 id: EVENT_VERTRAG_DES_RATTEN_DAEMONS
-subtype: Vertrag
+subtype: Schriftstück
 ---
 
-Ein Vertrag, den der [Ratten-Dämon](/npcs/ratten_daemon.md) der Gruppe vorlegt, um ihre Seelen zu knechten. [Lindo Laut](/characters/lindo_laut.md) kann ihn lesen und erkennt die Bedingungen.
+Der Ratten-Dämon legt einen Vertrag vor, der Seelenknechtschaft bedeutet. Die Gruppe weigert sich zu unterschreiben.
 
 # Belege
 

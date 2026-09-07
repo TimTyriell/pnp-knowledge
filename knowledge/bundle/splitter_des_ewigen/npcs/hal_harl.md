@@ -1,11 +1,11 @@
 ---
 type: NPC
 title: Harl
-description: Hal ist der Anführer der Silberkornbande und zugleich stellvertretender
-  Anführer des Banditenlagers, in dem die Gruppe und die Flüchtlinge…
+description: Harl ist der charismatische Anführer der Silberkerne, einer organisierten
+  Banditengruppe mit mehreren Lagern, die er gemeinsam mit Sarina l…
 tags:
 - npcs
-timestamp: '2026-02-24T00:00:00Z'
+timestamp: '2026-03-24T00:00:00Z'
 id: NPC_HAL_HARL
 aliases:
 - HAL
@@ -13,68 +13,59 @@ aliases:
 - Hal
 ---
 
-# Hal
-
 ## Überblick
 
-Hal ist der Anführer der [Silberkornbande](/factions/silberkerne.md) und zugleich stellvertretender Anführer des Banditenlagers, in dem die Gruppe und die [Flüchtlinge](/factions/fluechtlinge.md) aus [Rotunas](/characters/rotunas.md) Unterschlupf gefunden haben. Er ist ein Mann mit nordländischem Akzent, der charmant auftritt und geschickt verhandelt. Seine [Banditenfestung](/locations/banditenlager_der_silberkerne.md) erweist sich als ein Lager der Silberkerne, einer [Gilde](/factions/gilde_von_ehrenfels.md), deren Wappen ein grauer Schild mit drei Apfelkörnern zeigt.
-
-Hal trägt ein Rüstungsset, führt aber keine offensichtliche Waffe sichtbar bei sich, wenn er Besuchern entgegentritt. Er begegnet Fremden zunächst mit Misstrauen, erweist sich jedoch als pragmatischer und fairer Verhandlungspartner, der sein Wort hält — solange man ihn nicht verrät.
+Harl ist der charismatische Anführer der [Silberkerne](/factions/silberkerne.md), einer organisierten Banditengruppe mit mehreren Lagern, die er gemeinsam mit [Sarina](/npcs/sarina.md) leitet. Innerhalb der [Banditenfestung](/locations/banditenlager_der_silberkerne.md), einem Lager der Silberkerne, tritt er als Führungsperson auf und wird in den Quellen oft schlicht als Anführer der Banditen bezeichnet. Sein wahrer Name ist den meisten nicht bekannt; die Wachen der Festung dürfen ihn nicht nennen. Gegenüber der Gruppe zeigt er sich zunächst freundlich und verhandlungsbereit, später entwickelt sich ein belastbares Bündnis. Harl ist für die Kampagne ein zentraler Verbündeter, dessen Entscheidungen den Aufenthalt der Gefährten und der Flüchtlinge maßgeblich prägen.
 
 ## Rolle in der Kampagne
 
-Hal ist der zentrale Ansprechpartner der Gruppe im Banditenlager. Er gewährt den Flüchtlingen aus Rotunas gegen Bezahlung Unterschlupf für die Wintermonate und koordiniert die Verteidigung des Lagers, als es von [Belorus](/npcs/belorus.md) und seiner Armee der Untoten angegriffen wird.
-
-Bei der ersten Begegnung besteht er darauf, mit dem Anführer der Flüchtlinge zu sprechen, und warnt, dass er bei Problemen den Preis erhöhen werde. Er droht, die Dorfbewohner zu töten, falls die Gruppe ihn verrät. Im Laufe der Zeit entwickelt sich aus dem misstrauischen Geschäftspartner ein respektvoller Verbündeter, der die Gruppe nach dem Sieg über Belorus anerkennt und bereit ist, die Flüchtlinge mitzunehmen, wenn das Lager nach dem Winter abgezogen wird.
-
-Hal informiert die Gruppe über wichtige Entwicklungen, darunter den Hilferuf aus [Breska](/locations/breska.md) und die Nachricht von Belorus. Er sorgt sich um die Sicherheit des Lagers und schlägt vor, nach dem Winter abzuziehen.
+Harl kontrolliert die [Banditenfestung](/locations/banditenlager_der_silberkerne.md), in der die [Flüchtlinge](/factions/fluechtlinge.md) den Winter verbringen. Zunächst verlangt er für deren Unterbringung eine hohe Goldsumme, später gewährt er ihnen jedoch Schutz und behandelt sie als Gäste. Er kämpft an der Seite der Gruppe gegen die Untoten und erklärt die [Banditengilde](/factions/banditengilde.md) anschließend für immer in ihrer Schuld. Nach dem Winter agiert er aus dem Hintergrund, während die Silberkerne zunehmend unter Druck geraten: Sie werden des Mordes an einem Diplomaten beschuldigt, und Harl bittet die Gruppe brieflich, einen Sündenbock zu finden. Die Beziehung zu Harl ist damit nicht nur persönlicher Natur, sondern auch strategisch bedeutsam für das weitere Vorgehen der Gefährten.
 
 ## Wichtige Merkmale
 
-Hal ist ein charismatischer Anführer mit nordländischem Akzent. Er tritt freundlich und herzlich auf, streckt Besuchern offen die Hand entgegen und wirkt zunächst unbewaffnet. Sein Auftreten ist von Selbstbewusstsein geprägt — er verhandelt aus einer Position der Stärke, bleibt dabei aber fair.
+Harl tritt äußerlich herzlich, freundlich und charismatisch auf. Beim ersten Treffen trägt er ein Rüstungsset, aber keine sichtbare Waffe, und reicht den Gefährten die Hand. In Verhandlungen kann er jedoch eine Drohkulisse aufbauen: Als die Gruppe den geforderten Goldpreis nicht sofort zahlt, lässt er Bogenschützen auf die Dorfbewohner zielen und droht, die Flüchtlinge „direkt aufspießen“ zu lassen. [Lindo Laut](/characters/lindo_laut.md) liest seine Gedanken und erkennt, dass Harl vor allem um sein Ansehen bei seinen Männern fürchtet und „nicht wirklich so gewalttätig“ ist. Nach Zahlung von zehn Säcken Gold beruhigt er sich und verspricht, die Flüchtlinge als Gäste zu behandeln. Er zeigt Respekt für [Nyrella](/characters/nyrella.md) und lobt die Stärke der Gruppe. Nach der Verteidigungsschlacht verneigt er sich und gesteht öffentlich ein, dass es in Ordnung sein kann, falsch zu liegen und den eigenen Stolz zu schlucken.
 
-Sein Misstrauen gegenüber Fremden ist ausgeprägt. Er fordert Sicherheiten und besteht darauf, die Rahmenbedingungen eines Deals genau zu kennen. Gleichzeitig zeigt er sich dankbar für geleistete Arbeit und erkennt Leistungen an.
-
-Hal fürchtet um sein Gesicht vor seinen Männern. Diese Sorge wird deutlich, als [Lindo Laut](/characters/lindo_laut.md) seine Gedanken liest. Sie erklärt auch, warum er bei Verhandlungen so sehr auf Respekt und die Einhaltung von Hierarchien bedacht ist.
-
-Als Kämpfer erweist er sich als pragmatisch und mutig. Bei der Verteidigung des Lagers gegen Belorus bietet er an, die Balliste auf den Gegner abzufeuern, sobald die Gruppe ihm ein Zeichen gibt. Er koordiniert die Verteidigung und gibt Befehle an seine Leute.
-
-Hal trägt ein kleines Püppchen bei sich, das er selbst gefertigt hat. Es stammt aus seinem vergangenen Leben, aus der Zeit vor seiner Karriere als Räuber, und gehörte zu seiner Familie. Er erinnert sich selbst nicht mehr genau daran, warum er es bei sich trägt — wie viele andere hat auch er Teile seiner Erinnerung verloren. Dieses Püppchen gibt er [Nyrella](/characters/nyrella.md) als Glücksbringer mit.
+In militärischer Hinsicht beweist Harl taktisches Geschick: Er leitet die Verteidigung des Banditenverstecks, befehligt die Balliste, lässt die Brücke sprengen, um die erste Welle aufzuhalten, und ordnet den Rückzug an, als die Verluste zu groß werden. Er übernimmt Verantwortung, bleibt aber pragmatisch genug, einen geordneten Rückzug zu befehlen.
 
 ## Beziehungen und Verbindungen
 
-**Zur Gruppe:** Hal begegnet der Gruppe zunächst mit Misstrauen, entwickelt aber im Laufe der Zeit Respekt für sie. Er verhandelt vor allem mit Lindo Laut, der die Gruppe bei der Verhandlung vertritt. Zu Nyrella entwickelt er eine besondere Verbindung: Er schenkt ihr sein persönliches Erinnerungsstück, das Püppchen aus seiner Vergangenheit, als Glücksbringer. Für ihre Arbeit im Lager zeigt er sich ausdrücklich dankbar.
-
-**Zu den Flüchtlingen:** Hal gewährt den Flüchtlingen aus Rotunas gegen Bezahlung Unterschlupf. Er ist bereit, sie mitzunehmen, wenn das Lager nach dem Winter aufgelöst wird.
-
-**Zu seinen Männern:** Hal führt die Silberkornbande und legt großen Wert auf Respekt und Autorität. Er fürchtet, vor seinen Männern das Gesicht zu verlieren, was seine vorsichtige und fordernde Art in Verhandlungen erklärt.
-
-**Zu [Sarina](/npcs/sarina.md):** In der Silberkornbande wird neben Hal auch eine Person namens Sarina erwähnt, über die jedoch keine weiteren Details bekannt sind.
-
-**Zu Belorus:** Hal ist über die Nachricht von Belorus informiert und fürchtet um die Sicherheit des Lagers. Bei der Schlacht bietet er an, die Balliste auf Belorus abzufeuern.
+- **Silberkerne:** Harl ist gemeinsam mit [Sarina](/npcs/sarina.md) Anführer der [Silberkerne](/factions/silberkerne.md). Die [Banditenfestung](/locations/banditenlager_der_silberkerne.md) ist eines ihrer Lager; er spricht von der „Banditengilde“, die der Gruppe für immer verpflichtet sei – offenbar dieselbe Organisation.
+- **Sarina:** Die andere Anführerin der Silberkerne. Harl handelt nicht allein; später warten die Banditen vergeblich auf Befehle von beiden.
+- **Gefährten der Gruppe:** Harl begegnet [Dodo](/characters/dodo.md), [Lindo Laut](/characters/lindo_laut.md), [Nyrella](/characters/nyrella.md), [Rotunas](/characters/rotunas.md), [Lunara Velora](/characters/lunara_velora.md), [Esterossa](/characters/esterossa.md) und [Brim](/characters/brim.md) mit zunehmendem Vertrauen. Er schenkt Nyrella ein selbstgemachtes Püppchen als Glücksbringer. Nach der Schlacht dankt er der gesamten Gruppe und erklärt, die Banditengilde stehe für immer in ihrer Schuld.
+- **Flüchtlinge:** Harl nimmt die [Flüchtlinge](/factions/fluechtlinge.md) gegen Bezahlung auf, behandelt sie nach der Einigung als Gäste und plant, nach dem Winter mit ihnen zur „Hauptstreitmacht“ zurückzukehren.
+- **Breska und [Voras](/npcs/voras.md):** Über die Lage in [Breska](/locations/breska.md) zeigt er sich besorgt, aber auch distanziert („Jetzt braucht der alte Sack Hilfe. Ganz bestimmt nicht.“). Er hält eine Rückkehr zur Hauptstreitmacht für notwendig.
+- **Willauch und Brandau:** Harl offenbart, in [Willauch](/locations/willauch.md) und [Brandau](/locations/brandau.md) zum Tode verurteilt und mit seiner Bande ausgestoßen worden zu sein.
 
 ## Chronologie
 
-**Erste Begegnung (Herbst):** Hal empfängt die Gruppe am Rand des Banditenlagers. Er tritt charismatisch auf, stellt sich mit den Worten „Ich grüße euch. Mein Name ist Harl. Mit H, nicht mit K." vor und begrüßt [Dodo](/characters/dodo.md) namentlich. Er hat bereits von der Gruppe gehört. Bei der Verhandlung über die Unterbringung der Flüchtlinge besteht er darauf, mit deren Anführer zu sprechen. Er warnt, dass er bei Problemen den Preis erhöhen werde.
+**Erste Begegnung (Session 2025-09-23):** Harl empfängt die Gruppe freundlich vor der Banditenfestung. Er fordert für die Winterbleibe der Flüchtlinge eine Truhe Gold und erhöht den Preis später, als [Untote](/factions/belorus_untotenarmee.md) auftauchen. Bei der Erwähnung der Verfolgung zeigt er einen verfinsterten Blick. Er lässt die Gruppe im Vorhof kampieren und verbietet, näher an die Burg heranzutreten.
 
-**Rückkehr der Gruppe:** Als die Gruppe nach einem gefährlichen Einsatz ins Lager zurückkehrt, empfängt Hal sie an der Vorbarrikade. Er zeigt sich überrascht, dass sie überlebt haben: „Ah, ihr habt es ja tatsächlich geschafft. Ich hätte nicht gedacht, dass ihr das überlebt." Er erinnert an die Rahmenbedingungen des Deals und nennt als Preis eine Truhe und zwei Säcke Gold für die Versorgung der Flüchtlinge bis zum Frühling. Lindo Laut liest seine Gedanken und erkennt, dass Hal um sein Gesicht vor seinen Männern fürchtet. Hal akzeptiert die Gruppe und warnt sie vor einer Hexe im Osten.
+**Zweite Begegnung (Session 2025-09-30):** Harl verhandelt erneut über Gold und droht, die Dorfbewohner erschießen zu lassen, falls die Gruppe ihn verrät. [Lindo Laut](/characters/lindo_laut.md) liest seine Gedanken und erkennt, dass Harl vor allem um sein Ansehen bei seinen Männern fürchtet und nicht wirklich gewalttätig ist. Nach Zahlung von zehn Säcken Gold beruhigt er sich und verspricht, die Flüchtlinge als Gäste zu behandeln. Am nächsten Morgen offenbart er, dass er in Willauch und Brandau zum Tode verurteilt ist, dass er und seine Bande ausgestoßen sind und dass er einer geheimnisvollen Elbin dient. Er warnt vor einer Hexe im Osten und lobt die Stärke der Gruppe.
 
-**Nachricht aus Breska (Winter):** Hal bittet die Gruppe zu einem Gespräch in sein Zelt. Er informiert sie über schlechte Neuigkeiten: die Situation um Breska ist angespannt, es gibt einen Hilferuf aus der Stadt und eine Nachricht von Belorus. Er sorgt sich um die Sicherheit des Lagers und schlägt vor, nach dem Winter abzuziehen. Er zeigt sich dankbar für Nyrellas Arbeit und ist bereit, die Flüchtlinge mitzunehmen.
+**Winter und Nachricht aus Breska (Session 2026-01-13):** Harl ruft die Gruppe zu sich, nachdem eine Nachricht aus [Breska](/locations/breska.md) eingetroffen ist. Er ist besorgt um die Sicherheit und schlägt vor, nach Ende des Winters mit den Flüchtlingen zur Hauptstreitmacht zurückzukehren. Er zeigt Respekt für Nyrella. Während des Teleports gibt er das Zeichen, das Tor zu schließen.
 
-**Schlacht gegen Belorus:** Hal koordiniert die Verteidigung des Lagers. Als Belorus vor den Toren erscheint und die Auslieferung von Lindo Laut fordert, bietet Hal an, die Balliste auf ihn abzufeuern. Nach dem Sieg erkennt er die Gruppe respektvoll an.
+**Verteidigung des Banditenverstecks (Session 2026-01-20):** Harl erläutert die Verteidigungsmöglichkeiten, befehligt die Balliste und lässt die Brücke sprengen, um die erste Welle aufzuhalten. Als die Verluste zu groß werden, bläst er zum Rückzug. Nach der Schlacht dankt er der Gruppe und erklärt, die Banditengilde werde für immer in ihrer Schuld stehen.
 
-**Spätere Erwähnung:** Die Banditen der Silberkornbande erwähnen, dass sie lange nichts von Hal gehört haben. Er hatte Probleme mit der Armee der Untoten, die jedoch gelöst wurden. Nyrella besitzt noch immer das Püppchen, das Hal ihr als Glücksbringer gegeben hat, und nutzt es als Beweis ihrer Verbindung zur Bande.
+**Nach dem Winter (Session 2026-02-24):** Harl ist nicht persönlich anwesend. Nyrella trägt ein selbstgemachtes Püppchen von ihm als Glücksbringer bei sich. Banditen der Silberkerne erwähnen, dass von Harl und Sarina schon lange keine Befehle mehr gekommen seien. Harl gilt der Gruppe weiterhin als Verbündeter.
+
+**Silberkerne in Bedrängnis (Session 2026-03-18):** Harl schickt der Gruppe eine kurze Notiz mit der Aufforderung, einen Sündenbock zu finden, unterschrieben mit „H-Punkt“. Hintergrund ist, dass die Silberkerne des Mordes an einem Diplomaten beschuldigt werden; auf Harl und Sarina ist eine hohe Summe ausgesetzt. Die Gruppe diskutiert die Nachricht und vernichtet den Zettel.
+
+**Aktueller Stand (Session 2026-03-24):** [Lindo Laut](/characters/lindo_laut.md) erwähnt Harl als jemanden, der etwas geschickt hat; genauere Details werden nicht geklärt. Die Gruppe will später auf Harl und den Umgang mit den Silberkernen zurückkommen.
 
 ## Offene Fragen
 
-- Was geschah mit Hal nach dem Abzug aus dem Lager? Die Banditen haben lange nichts von ihm gehört.
-- Welche Rolle spielt Sarina in der Silberkornbande, und in welchem Verhältnis steht sie zu Hal?
-- Was genau verbirgt sich hinter Hals vergangenem Leben, aus dem das Püppchen stammt, und welche Erinnerungen hat er verloren?
+- Wer ist die geheimnisvolle Elbin, der Harl nach eigener Aussage dient? (Session 2025-09-30)
+- Was ist mit Harl und Sarina geschehen, dass seit längerem keine Befehle mehr von ihnen eintreffen? (Session 2026-02-24)
+- Worauf bezieht sich die Bitte, einen Sündenbock zu finden, im Detail? Die genauen Umstände der Anschuldigung gegen die Silberkerne sind nur teilweise bekannt. (Session 2026-03-18)
+- Was verbirgt sich hinter Harls wahrem Namen, den die Wachen nicht nennen dürfen? (Session 2025-09-23)
+- Was ist die „Hauptstreitmacht“ bzw. „unsere Herren“, zu der Harl zurückkehren will? (Session 2026-01-13)
 
 ## Belege
 
-[P-23] Session 2025-09-23 @ 01:10:12 — https://www.youtube.com/watch?v=DGzfqVigS0g
-[P-24] Session 2025-09-30 @ 01:02:14 — https://www.youtube.com/watch?v=bUT7Mc2hjUY
-[P-33] Session 2026-01-13 @ 00:36:24 — https://www.youtube.com/watch?v=w4LB1s9_3rs
-[P-34] Session 2026-01-20 @ 00:09:00 — https://www.youtube.com/watch?v=H3ckYdTv4y8
-[P-38] Session 2026-02-24 @ 00:38:12 — https://www.youtube.com/watch?v=WOFArbwDDIQ
+[P-23] Session 2025-09-23 @ 01:10:12 (https://www.youtube.com/watch?v=DGzfqVigS0g)
+[P-24] Session 2025-09-30 @ 01:19:38 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)
+[P-33] Session 2026-01-13 @ 00:37:52 (https://www.youtube.com/watch?v=w4LB1s9_3rs)
+[P-34] Session 2026-01-20 @ 01:57:57 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
+[P-38] Session 2026-02-24 @ 00:36:41 (https://www.youtube.com/watch?v=WOFArbwDDIQ)
+[P-41] Session 2026-03-18 @ 01:45:21 (https://www.youtube.com/watch?v=HHXxsASLrbQ)
+[P-43] Session 2026-03-24 @ 00:35:22 (https://www.youtube.com/watch?v=Yj5BWJfg3Ag)

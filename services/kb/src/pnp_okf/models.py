@@ -14,7 +14,11 @@ def format_timestamp(seconds: float) -> str:
     return f"{hours:02d}:{minutes:02d}:{secs:02d}"
 
 
-class EntityType(str, Enum):
+# ruff: UP042 declined. StrEnum changes __str__ from 'EntityType.NPC' to
+# 'NPC'. These values become bundle directory names and frontmatter, so a
+# silent change in interpolation could rename concept files en masse — the
+# exact failure documented in INCIDENT-2026-08-mass-rename.md.
+class EntityType(str, Enum):  # noqa: UP042
     """OKF concept types used for the campaign bundle.
 
     Values double as the frontmatter ``type`` and the bundle subdirectory

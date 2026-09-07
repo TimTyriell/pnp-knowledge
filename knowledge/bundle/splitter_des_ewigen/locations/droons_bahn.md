@@ -1,8 +1,8 @@
 ---
 type: Location
 title: Droons Bahn
-description: Droons Bahn wird von den Zwergen als Ziel der Untotenarmee erwähnt. Es
-  ist ein Ort, den die Zwerge schützen wollen, aber sie sind zu wenige…
+description: Droons Bahn ist ein Ort oder Weg, den Brandoran erwähnt, als er befürchtet,
+  dass die Untoten dorthin unterwegs sein könnten. Es scheint ein…
 tags:
 - locations
 timestamp: '2025-09-09T00:00:00Z'
@@ -10,7 +10,7 @@ id: LOC_DROONS_BAHN
 subtype: Sonstiges
 ---
 
-Droons Bahn wird von den Zwergen als Ziel der Untotenarmee erwähnt. Es ist ein Ort, den die [Zwerge](/factions/zwerge.md) schützen wollen, aber sie sind zu wenige, um etwas auszurichten.
+Droons Bahn ist ein Ort oder Weg, den [Brandoran](/npcs/brandoran.md) erwähnt, als er befürchtet, dass die Untoten dorthin unterwegs sein könnten. Es scheint ein wichtiger strategischer Punkt der [Zwerge](/factions/zwerge.md) zu sein.
 
 # Belege
 

@@ -1,17 +1,17 @@
 ---
 type: Item
 title: Käferpanzer
-description: Cookie aktiviert ihren Käferpanzer, der sie mit einer Schicht aus Insekten
-  umgibt und Schutz bietet. Sie nutzt ihn vor beiden Kämpfen.
+description: Der Käferpanzer ist eine temporäre Rüstung, die Cookie aus Insekten erschafft.
+  Er ist getarnt und passt sich der Umgebung an. Cookie trägt…
 tags:
 - items
-timestamp: '2025-10-21T00:00:00Z'
+timestamp: '2025-09-30T00:00:00Z'
 id: ITEM_KAEFERPANZER
 subtype: Rüstung
 ---
 
-[Cookie](/characters/cookie.md) aktiviert ihren Käferpanzer, der sie mit einer Schicht aus Insekten umgibt und Schutz bietet. Sie nutzt ihn vor beiden Kämpfen.
+Der Käferpanzer ist eine temporäre Rüstung, die [Cookie](/characters/cookie.md) aus Insekten erschafft. Er ist getarnt und passt sich der Umgebung an. Cookie trägt ihn während des Kampfes, aber er wird nicht wirklich gebraucht. Am nächsten Morgen ist er verschwunden.
 
 # Belege
 
-[P-27] Session 2025-10-21 @ 00:08:04 (https://www.youtube.com/watch?v=sxFhbtwoefA)
+[P-24] Session 2025-09-30 @ 00:03:00 (https://www.youtube.com/watch?v=bUT7Mc2hjUY)

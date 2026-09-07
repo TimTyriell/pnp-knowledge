@@ -1,24 +1,20 @@
 ---
 type: Domain
 title: Pocket Domain
-description: Die Pocket Domain ist eine persönliche Dimension von Lindo Laut. Sie
-  ist prunkvoll eingerichtet und beherbergt ein Splitterkalb, das die Se…
+description: Die Pocket Domain ist ein persönlicher Raum im Besitz von Lindo Laut.
+  Sie dient als Aufbewahrungsort, in den Lindo Laut Gegenstände hineinl…
 tags:
 - domains
-timestamp: '2026-02-11T00:00:00Z'
+timestamp: '2026-08-18T00:00:00Z'
 id: DOMAIN_POCKET_DOMAIN
 ---
 
-Die **Pocket Domain** ist eine persönliche Dimension von [Lindo Laut](/characters/lindo_laut.md). Sie ist prunkvoll eingerichtet und beherbergt ein [Splitterkalb](/events/splitterkalb.md), das die Seele von Chronos ist. In ihr kommt es zum Kampf gegen [Slix](/npcs/slix_vasul.md). [P-36]
+Die **Pocket Domain** ist ein persönlicher Raum im Besitz von [Lindo Laut](/characters/lindo_laut.md). Sie dient als Aufbewahrungsort, in den Lindo Laut Gegenstände hineinlegen und später wieder hervorholen kann. Nähere Informationen zu ihrer Beschaffenheit, Herkunft oder Funktionsweise sind nicht bekannt.
 
-## Zugang
+## Bekannte Nutzung
 
-[Lindo Laut](/characters/lindo_laut.md) kann die Pocket Domain über einen Ring betreten. [Der Ring](/items/ring_der_teleportation.md) dient damit als Zugangsweg in die Dimension. [P-36]
-
-## Inhalt und Ereignisse
-
-Die Pocket Domain ist prunkvoll eingerichtet. Zentral für ihre Bedeutung ist das [Splitterkalb](/events/splitterkalb.md), das in ihr aufbewahrt wird und die Seele von Chronos trägt. Die Dimension ist zugleich Schauplatz der Auseinandersetzung mit [Slix](/npcs/slix_vasul.md). [P-36]
+Lindo Laut nutzt die Pocket Domain, um die Leiche des mutierten Froschwesens aus dem Fluss zu entfernen: Er packt die Leiche in den Raum und schafft sie so fort. Später holt er die Leiche wieder heraus, um den Basilisken abzulenken.
 
 # Belege
 
-[P-36] Session 2026-02-11 @ 01:27:03 (https://www.youtube.com/watch?v=3C8SD-cyNPM)
+1. Session 2026-08-18 @ 00:52:22 (https://www.youtube.com/watch?v=10swvSz6k7U)

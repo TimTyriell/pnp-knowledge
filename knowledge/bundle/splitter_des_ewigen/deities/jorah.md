@@ -1,27 +1,25 @@
 ---
 type: Deity
 title: Jorah
-description: 'Jorah ist eine Gottheit, die von Sange verehrt wird. Er ist bislang
-  nur durch ein einzelnes Ereignis bekannt: Sanges Gebet zu ihm wurde mit…'
+description: Jorah ist eine Gottheit, zu der Sange betet. Er wird als Gott der Münzen
+  und des Lichts angerufen. Herkunft, Gestalt, ein organisierter Kul…
 tags:
 - deities
 timestamp: '2026-07-23T00:00:00Z'
 id: DEITY_JORAH
-subtype: Neuer Gott
+subtype: Sonstiges
 ---
 
-# Jorah
+Jorah ist eine Gottheit, zu der [Sange](/characters/sange.md) betet. Er wird als Gott der Münzen und des Lichts angerufen. Herkunft, Gestalt, ein organisierter Kult oder weitere Verehrer Jorahs sind aus den bisherigen Ereignissen nicht belegt.
 
-**Jorah** ist eine Gottheit, die von [Sange](/characters/sange.md) verehrt wird. Er ist bislang nur durch ein einzelnes Ereignis bekannt: Sanges Gebet zu ihm wurde mit einer Vision beantwortet.
+## Domänen
 
-## Rolle und Verehrung
+Sange wendet sich in seinem Gebet an Jorah als Gott der Münzen und des Lichts. Über eine darüber hinausgehende Mythologie, heilige Stätten oder besondere Zeichen dieser Gottheit ist nichts bekannt.
 
-Jorah ist Gegenstand von Sanges Anbetung. Die genaue Form des Kultes, sein Zuständigkeitsbereich oder seine Stellung unter den Gottheiten sind nicht überliefert. Belegt ist lediglich, dass Sange zu Jorah betet und dass dieses Gebet eine übernatürliche Antwort findet.
+## Erhörung von Sanges Gebet
 
-## Vision und Werwolf-Verwandlung
-
-Während seines Gebets erhält Sange eine Vision von Jorah, die ihm Hinweise auf seine Werwolf-Verwandlung gibt. Die Vision liefert damit direkte Orientierung für Sanges Situation, lässt aber offen, ob Jorah aktiv in das Weltgeschehen eingreift, ob er Sange persönlich führt oder ob er generell auf die Nöte seiner Verehrer reagiert.
+Jorah erhört Sanges Gebet und greift damit erstmals und bislang einmalig in das Geschehen der Kampagne ein: Er gibt Sange die Erinnerung an seine unfreiwillige Verwandlung zurück. Worin diese Verwandlung bestand und aus welchem Grund Jorah die Erinnerung zurückgibt, ist nicht überliefert.
 
 # Belege
 
-[S1-02-B] Session 2026-07-23 @ 01:55:06 – https://www.youtube.com/watch?v=Gb-TEbCFF0M
+[S1-02-B] Session 2026-07-23, 01:55:06 – https://www.youtube.com/watch?v=Gb-TEbCFF0M

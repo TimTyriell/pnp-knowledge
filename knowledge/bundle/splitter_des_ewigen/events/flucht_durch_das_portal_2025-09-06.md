@@ -1,17 +1,17 @@
 ---
 type: Event
 title: Flucht durch das Portal
-description: Die Gruppe flieht durch ein Portal, das sich hinter dem Ratten-Dämon
-  öffnet, und gelangt in eine Kapelle.
+description: Nachdem Nerash die Kol-Meref-Statue zerstört hat, explodiert die Festung.
+  Die Gruppe rennt zum Ausgang und springt durch ein Portal, das si…
 tags:
 - events
-timestamp: '2025-09-06T00:00:00Z'
+timestamp: '2025-07-09T00:00:00Z'
 id: EVENT_FLUCHT_DURCH_DAS_PORTAL_2025-09-06
 subtype: Reise
 ---
 
-Die Gruppe flieht durch ein [Portal](/locations/portal.md), das sich hinter dem [Ratten-Dämon](/npcs/ratten_daemon.md) öffnet, und gelangt in eine [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md).
+Nachdem [Nerash](/deities/nerash.md) die Kol-Meref-Statue zerstört hat, explodiert die Festung. Die Gruppe rennt zum Ausgang und springt durch ein Portal, das sie zurück zum [Übungsgelände der Gilde](/locations/uebungsgelaende_der_gilde.md) bringt. Das Portal flackert noch kurz und erlischt dann.
 
 # Belege
 
-[P-20] Session 2025-09-06 @ 00:49:13 (https://www.youtube.com/watch?v=vo1xnyLQDJk)
+[P-14] Session 2025-07-09 @ 01:20:10 (https://www.youtube.com/watch?v=XOnHa6CmDbo)

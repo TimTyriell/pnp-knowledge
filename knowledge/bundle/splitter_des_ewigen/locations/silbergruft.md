@@ -1,8 +1,8 @@
 ---
 type: Location
 title: Silbergruft
-description: Die Silbergruft ist eine alte Mine südlich der Berge von Ehrenfels, die
-  einst ergiebig war, aber nun erschöpft sein soll. Die Gruppe erfähr…
+description: Die Silbergruft ist eine alte Silbermine südlich der Berge von Ehrenfels,
+  die schon lange erschöpft sein soll. Im Inneren gibt es mehrere E…
 tags:
 - locations
 timestamp: '2026-02-24T00:00:00Z'
@@ -10,7 +10,7 @@ id: LOC_SILBERGRUFT
 subtype: Dungeon
 ---
 
-Die Silbergruft ist eine alte Mine südlich der Berge von [Ehrenfels](/locations/ehrenfels.md), die einst ergiebig war, aber nun erschöpft sein soll. Die Gruppe erfährt, dass sich dort Kreaturen eingenistet haben. Im Inneren finden sie eine Höhle mit lebendem Silber und Kristallen, die eine eigene Lebensform darstellen. Die Mine hat mehrere Ebenen, von denen die unteren versiegelt werden, um die Kreaturen einzusperren.
+Die Silbergruft ist eine alte Silbermine südlich der Berge von [Ehrenfels](/locations/ehrenfels.md), die schon lange erschöpft sein soll. Im Inneren gibt es mehrere Ebenen: einen geplünderten Vorraum, einen Minenhof mit leerer Mine, eine tiefere Ebene mit einem riesigen Block aus Silber und lebenden Kristallen sowie eine noch tiefere [Brutstätte der Silberbiester](/locations/brutstaette_der_silberbiester.md). Die Natur hat die Anlage teilweise zurückerobert.
 
 # Belege
 

@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Sir Edmund
-description: Sir Edmund ist ein etwa achtzigjähriger Wächter eines Turms. Er trägt
-  eine alte, blank polierte Rüstung aus Tarkir. Er ist der Vater von Ve…
+description: Sir Edmund ist ein sehr alter Wächter, der einen verfallenen Turm in
+  den Bergen bewohnt, der als Wachposten dient. Er gehört der Zeit des g…
 tags:
 - npcs
 timestamp: '2026-08-25T00:00:00Z'
@@ -12,21 +12,21 @@ aliases:
 - Edmund
 ---
 
-Sir Edmund ist ein etwa achtzigjähriger Wächter eines Turms. Er trägt eine alte, blank polierte Rüstung aus [Tarkir](/locations/tarkir.md). Er ist der Vater von [Velorus](/npcs/velorus.md), dem untoten General, den die Gruppe bereits bekämpft hat. Die Gruppe begegnete ihm, als sie an dem von ihm bewachten Turm einkehrte; er nahm sie für eine Nacht auf und zeigte sich als gastfreundlicher Geschichtenerzähler.
+Sir Edmund ist ein sehr alter [Wächter](/npcs/waechter.md), der einen verfallenen Turm in den Bergen bewohnt, der als Wachposten dient. Er gehört der Zeit des gefallenen Königreichs an: Edmund diente einst in der königlichen Garde von [Zebros](/factions/koenigreich_zebros.md) und ist der Vater von [Belorus](/npcs/belorus.md). Die Gruppe kehrte bei ihm ein; er blieb am Turm zurück.
 
-## Wächter und Gastgeber
+## Wächter des Turms
 
-Sir Edmund ist ein alter Mann, der den Turm bewacht. Trotz seines Alters ist seine Rüstung aus Tarkir blank poliert. Als die Gruppe bei ihm einkehrte, bot er ihr Unterkunft für die Nacht an. Er erzählte Geschichten, darunter die Geschichte von [Zebros](/factions/koenigreich_zebros.md), und verabschiedete sich am Ende herzlich von der Gruppe.
+Edmund trägt eine polierte Rüstung aus [Tarkir](/locations/tarkir.md)-Obsidian, ein Überbleibsel aus seiner Zeit als Gardist von [Zebros](/factions/koenigreich_zebros.md). Er lebt auf dem Wachposten in den Bergen zusammen mit [Vago](/npcs/vago.md) und [Sloppy](/npcs/basilisk_sloppy.md). Den fortschreitenden Verfall des Turms konnte er nicht verhindern, bleibt aber an seinem Platz.
 
-## Vater von Velorus
+## Vergangenheit und Familie
 
-Sir Edmunds Sohn Velorus ist ein untoter General, gegen den die Gruppe bereits gekämpft hat. Als Sir Edmund über seinen Sohn sprach, weinte er. Die Belege lassen offen, wie er zu Velorus’ Taten steht oder was er über dessen Schicksal weiß.
+Aus seiner Zeit bei der königlichen Garde weiß Edmund ausführlich vom Untergang des Königreichs Zebros zu berichten; viele Aufzeichnungen aus jener Zeit bewahrt er auf. Sein Sohn Belorus diente als General und starb. Edmund ist stolz auf seinen Sohn; als die Gruppe erwähnt, von Belorus gehört zu haben, bricht er in Tränen aus.
 
-## Interesse an Dodos Obsidian
+## Begegnung mit der Gruppe
 
-Während des Zusammentreffens zeigte Sir Edmund Interesse an [Dodos](/characters/dodo.md) Obsidian. Er erklärte der Gruppe, dass Basilisken dieses Material für Waffen verwendet haben.
+Als die Gruppe den Wachposten erreicht, bewirtet Edmund sie und erzählt Geschichten. [Joar](/npcs/joar_vanur.md) bietet ihm Gold als Entschädigung an, doch Edmund lehnt ab. Er verabschiedet die Gruppe mit einem Händedruck und bleibt auf dem Turm zurück.
 
 # Belege
 
-1. Session vom 18.08.2026, 01:47:37 – https://www.youtube.com/watch?v=10swvSz6k7U
-2. Session vom 25.08.2026, 00:21:32 – https://www.youtube.com/watch?v=1Cjj3OVqiYA
+1. Session 2026-08-18, 01:47:50 – https://www.youtube.com/watch?v=10swvSz6k7U
+2. Session 2026-08-25, 00:18:08 – https://www.youtube.com/watch?v=1Cjj3OVqiYA

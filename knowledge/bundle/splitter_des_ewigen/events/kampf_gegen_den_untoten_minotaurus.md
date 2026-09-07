@@ -1,8 +1,8 @@
 ---
 type: Event
 title: Kampf gegen den untoten Minotaurus
-description: Die Gruppe wird von einem gigantischen untoten Minotaurus mit Speeren
-  angegriffen. Dodo und Rotunas werden verletzt, aber Dodo zertrümmert…
+description: Der untote Minotaurus greift aus dem Hinterhalt mit riesigen Speeren
+  an und verletzt Dodo und Rotunas schwer. Nachdem Esterossa sie heilt,…
 tags:
 - events
 timestamp: '2025-09-09T00:00:00Z'
@@ -10,7 +10,7 @@ id: EVENT_KAMPF_GEGEN_DEN_UNTOTEN_MINOTAURUS
 subtype: Kampf
 ---
 
-Die Gruppe wird von einem gigantischen untoten Minotaurus mit Speeren angegriffen. [Dodo](/characters/dodo.md) und [Rotunas](/characters/rotunas.md) werden verletzt, aber Dodo zertrümmert das Knie des Minotaurus und besiegt ihn.
+Der untote Minotaurus greift aus dem Hinterhalt mit riesigen Speeren an und verletzt [Dodo](/characters/dodo.md) und [Rotunas](/characters/rotunas.md) schwer. Nachdem [Esterossa](/characters/esterossa.md) sie heilt, tragen sie einen koordinierten Angriff vor: Esterossa fliegt Dodo auf das Dach, und Dodo zerschmettert den Minotaurus mit einem Schlag.
 
 # Belege
 

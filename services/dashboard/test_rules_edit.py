@@ -9,8 +9,6 @@ right before a later top-level key.
 from __future__ import annotations
 
 import yaml
-
-import rules_edit
 from rules_edit import EditConflict, apply_edits, block_bounds, validate
 
 FIXTURE = """\
@@ -104,7 +102,7 @@ def test_conflicting_add_alias_raises():
         apply_edits(
             FIXTURE, [{"op": "add_alias", "concept_id": "npcs/lenra", "alias": "Cookie"}], _rules(), _sources()
         )
-        assert False, "expected EditConflict"
+        raise AssertionError("expected EditConflict")
     except EditConflict:
         pass
 
@@ -147,7 +145,10 @@ def test_set_important_false_adds_to_unimportant_not_just_removes():
 def test_set_important_true_undoes_a_prior_suppression():
     suppressed = FIXTURE + "unimportant:\n- npcs/lenra\n"
     new_text, _ = apply_edits(
-        suppressed, [{"op": "set_important", "concept_id": "npcs/lenra", "important": True}], yaml.safe_load(suppressed), _sources()
+        suppressed,
+        [{"op": "set_important", "concept_id": "npcs/lenra", "important": True}],
+        yaml.safe_load(suppressed),
+        _sources(),
     )
     data = yaml.safe_load(new_text)
     assert "npcs/lenra" in data["important"]

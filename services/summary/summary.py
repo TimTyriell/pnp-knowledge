@@ -21,6 +21,13 @@ import sys
 
 import httpx
 
+try:  # optional convenience: load a .env if python-dotenv is present
+    from dotenv import load_dotenv
+
+    load_dotenv()
+except Exception:  # pragma: no cover - dotenv is optional at runtime
+    pass
+
 KB_URL_DEFAULT = os.environ.get("PNP_KB_URL", "http://127.0.0.1:8070")
 
 SYSTEM_PROMPT = """\
@@ -109,7 +116,7 @@ def call_llm(messages: list[dict]) -> str:
         base_url=os.environ.get("DEEPSEEK_BASE_URL", "https://api.deepseek.com"),
     )
     completion = client.chat.completions.create(
-        model=os.environ.get("DEEPSEEK_MODEL", "deepseek-chat"),
+        model=os.environ.get("DEEPSEEK_MODEL", "deepseek-v4-pro"),
         messages=messages,
         temperature=0.4,
     )

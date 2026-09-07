@@ -35,7 +35,6 @@ def test_unrelated_nickname_does_not_look_like_a_mishearing():
 
 def test_unpinned_concept_is_not_checked_at_all(tmp_path: Path):
     import yaml
-
     from spelling_doctor import pinned_concept_ids
 
     rules = tmp_path / "entity_rules.yaml"

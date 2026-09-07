@@ -1,15 +1,15 @@
 ---
 type: NPC
 title: Ser Eulenweiss
-description: Ser Eulenweiss ist ein Ritter aus Ehrenfels, der die Gruppe begleitet.
-  Er übergibt Dodo die Führung und erwähnt einen Brief von Nox. Er ble…
+description: Ser Eulenweiss ist ein Ritter der Gilde, der die Eskorte anführt. Er
+  ist misstrauisch gegenüber Vampiren und warnt die Gruppe, Silber mitzu…
 tags:
 - npcs
 timestamp: '2026-03-10T00:00:00Z'
 id: NPC_SER_EULENWEISS
 ---
 
-Ser Eulenweiss ist ein Ritter aus [Ehrenfels](/locations/ehrenfels.md), der die Gruppe begleitet. Er übergibt [Dodo](/characters/dodo.md) die Führung und erwähnt einen [Brief von Nox](/items/brief_von_nox.md). Er bleibt draußen, als Dodo in die Gruft geht, und ist misstrauisch gegenüber [Voras](/npcs/voras.md). Er bietet an, die Gruppe zu unterstützen, falls es Probleme gibt.
+Ser Eulenweiss ist ein Ritter der [Gilde](/factions/gilde_von_ehrenfels.md), der die Eskorte anführt. Er ist misstrauisch gegenüber Vampiren und warnt die Gruppe, Silber mitzunehmen. Er trägt einen [Brief von Nox](/items/brief_von_nox.md) bei sich, den er [Voras](/npcs/voras.md) übergeben soll. Während der Audienz bleibt er mit seinen Leuten draußen und bietet an, die Gruppe notfalls herauszuholen. Er wird von Voras als nervig empfunden, bleibt aber loyal. Am Ende wird die Scharade aufrechterhalten, dass der Brief zufriedenstellend war.
 
 # Belege
 

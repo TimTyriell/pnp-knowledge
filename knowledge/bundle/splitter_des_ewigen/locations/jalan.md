@@ -1,8 +1,8 @@
 ---
 type: Location
 title: Jalan
-description: Jalan ist eine Siedlung im Abyssalis, die aus einer Untergrundfestung
-  und einem darüberliegenden Dorf besteht. Die Anlage dient als wichtig…
+description: Jalan ist eine Untergrundfestung mit einem Dorf darüber, in der sich
+  die beiden Gruppen treffen. Sie hat einen Portaleingang und ist durch…
 tags:
 - locations
 timestamp: '2026-05-19T00:00:00Z'
@@ -11,45 +11,37 @@ subtype: Festung
 ---
 
 ## Überblick
-
-Jalan ist eine Siedlung im [Abyssalis](/domains/splitterwelt.md), die aus einer Untergrundfestung und einem darüberliegenden Dorf besteht. Die Anlage dient als wichtiger Stützpunkt der Seelenwacht und war für die Gruppe der Ausgangspunkt ihrer Reise zur Narbe. Über der [Festung](/locations/festung.md) befindet sich eine große, alte [Villa](/locations/villau.md), die beim ersten Eindruck nur kaputt wirkte, in der sich aber etwas von großem Wert verbergen soll.
+Jalan ist eine Siedlung in [Abyssalis](/domains/splitterwelt.md). Sie wird als Untergrundfestung mit einem Dorf darüber beschrieben, besitzt einen Portaleingang und liegt in der Nähe der [Narben](/locations/narben.md). [Die Narbe](/locations/die_narbe.md) befindet sich „ein bisschen weiter links in den Erntefeldern, links neben Jalan“, etwa zwei Targa Smash entfernt, wobei ein großer Berg den Zugang blockiert. Jalan wurde vor einigen Stunden angegriffen und durch einen Zwischenfall geschwächt; viele Verteidiger sind ausgefallen. Oberhalb auf einem Hügel liegt eine große alte Villa, die untersucht werden soll.
 
 ## Rolle in der Kampagne
-
-Jalan war für die Gruppe ein zentraler Anlaufpunkt im Abyssalis. Hier traf sich die Gruppe, um die Erkundung der Villa oberhalb der Festung zu beginnen. Der Richter und der [Schinder](/npcs/der_schinder.md) führten die Gruppe zur Villa, da sich in der Anlage etwas von großem Wert befinden soll – möglicherweise für [Rotunas](/characters/rotunas.md) und seine Freunde von Bedeutung, die auf Informationssuche sind. Die Gruppe vermutete, dass die Angreifer von Jalan nicht nur die Eroberung der Siedlung im Sinn hatten, sondern auch Zugang zu dem verborgenen Wert in der Anlage suchten.
-
-Jalan diente zudem als Ausgangspunkt der Reise zur Narbe. Nachdem die andere Gruppe sich entschieden hatte, dem Richter zur Seite zu eilen und das Abyssalis nicht zu verlassen, entfernte sich die Gruppe schnellstmöglich von Jalan, um nicht in den kriegerischen Akt hineinzugeraten, da die Zeit knapp war.
+Jalan ist der Treffpunkt der beiden Heldengruppen. Nach der Ankunft werden [der Richter](/npcs/richter_herr_der_seelenwacht.md) und der Schinder kurz mit Kip, [Dante](/characters/dante.md) und [Miko](/characters/miko.md) wegen eines Zwischenfalls weggerufen. Die Gruppe wird für ihre Leistung gelobt, doch die Zeit ist knapp, weil Jalan viele Verteidigungsmöglichkeiten verloren hat und dadurch geschwächt ist. Der Richter macht klar, dass keine Zeit für Diskussionen bleibt; die Anwesenden steigen gemeinsam zur alten Villa oberhalb von Jalan auf, weil sich in der Festung etwas von großem Wert befinden soll. Später ist Jalan der Ausgangspunkt, von dem aus die Gruppe schnell aufbricht, um zur Narbe zu gelangen beziehungsweise einem kriegerischen Akt zu entgehen.
 
 ## Wichtige Merkmale
-
-Jalan liegt im Abyssalis und besteht aus einer Untergrundfestung mit einem Dorf darüber. Die Gruppe befand sich auf einem Berg beziehungsweise Hügel hinter Jalan, von dem aus sie einen Blick auf die Anlage hatte. Dort unten rechts befand sich ein kleiner Portaleingang. Oberhalb der gesamten Anlage liegt eine große, alte Villa, die zunächst nur kaputt wirkte.
-
-[Die Festung](/locations/die_festung.md) ist ein Stützpunkt der Seelenwacht, die jedoch nicht viele Soldaten in Jalan stationiert. Durch einen Zwischenfall verlor Jalan viele Verteidigungsmöglichkeiten an Soldaten und Menschen, was die Siedlung geschwächt hat. Die Zeit ist knapp, und die Verteidigungsfähigkeit von Jalan ist angeschlagen.
+- **Lage:** Jalan liegt in Abyssalis, nahe der Narben. Die Narbe ist auf einer Karte links von Jalan in den Erntefeldern eingezeichnet, etwa zwei Targa Smash entfernt. Ein großer Berg blockiert den Zugang.
+- **Struktur:** Jalan ist „so ein bisschen so eine Untergrundfestung, beziehungsweise das Dorf darüber“. Es besitzt einen Portaleingang.
+- **Zustand:** Durch einen „kleinen Zwischenfall“ hat Jalan viele Soldaten und andere Verteidiger verloren. Die Seelenwacht wird nur wenige oder gar keine Soldaten abstellen.
+- **Oberhalb:** Auf dem Hügel über Jalan befindet sich eine große alte Villa, die beim ersten Eindruck „einfach nur kaputt“ wirkt.
+- **Verborgenes:** In der Festung beziehungsweise der Anlage soll sich etwas von großem Wert befinden. Es könnte sich um Informationen handeln, die für die Gefährten von [Rotunas](/characters/rotunas.md) wichtig sind.
 
 ## Beziehungen und Verbindungen
-
-Jalan ist mit der Seelenwacht verbunden, die hier einen Stützpunkt unterhält, aber nur wenige Soldaten abstellen kann. Der Richter und der Schinder sind zentrale Figuren in Jalan und führten die Gruppe zur Villa oberhalb der Festung. Sie machten klar, dass keine Zeit für Diskussionen oder Auseinandersetzungen sei, da noch etwas erledigt werden müsse.
-
-Die Siedlung wurde von Anhängern [Vorgul'tars](/deities/vorgul_tar.md) angegriffen. Der Angriff erfolgte wenige Stunden vor den Ereignissen in der Villa, und [der Richter](/npcs/richter_herr_der_seelenwacht.md) äußerte die Hoffnung, dass der Schinder genug Zeit schindet, um aus der Anlage wieder herauszukommen.
+- [Der Schinder](/npcs/der_schinder.md) hält die Stellung in Jalan.
+- [Der Richter](/npcs/richter_herr_der_seelenwacht.md) und der Schinder führen die Gruppe zur Villa und drängen zur Eile.
+- Die [Seelenwacht](/factions/seelenwacht.md) wird nicht viele Soldaten in Jalan abstellen.
+- Die Gefährten von Rotunas könnten in der Festung nach Informationen suchen; es besteht das Gefühl, dass es bei dem Angriff nicht nur um die Eroberung Jalans ging, sondern auch um das, was in der Anlage verborgen ist.
+- Die Narbe ist in der Nähe, links von Jalan in den Erntefeldern.
 
 ## Chronologie
-
-In der fünften Session der Kampagne traf sich die Gruppe in Jalan. Der Richter und der Schinder waren kurzzeitig mit Kip, [Dante](/characters/dante.md) und [Miko](/characters/miko.md) weg, da es einen Zwischenfall gab und man sich beraten musste. Die Gruppe wurde für ihre Leistungen gelobt und sollte entlohnt werden, doch die Zeit war knapp, da durch den Zwischenfall viele Verteidigungsmöglichkeiten verloren gingen.
-
-Der Richter und der Schinder führten die Gruppe zur Villa oberhalb der Festung, wo sich etwas von großem Wert befinden sollte. Die Gruppe vermutete, dass die Angreifer von Jalan nicht nur die Eroberung der Siedlung im Sinn hatten, sondern auch Zugang zu dem verborgenen Wert in der Anlage suchten.
-
-Wenige Stunden später wurden die Ereignisse in der Villa von einem Angriff auf Jalan begleitet. Der Richter äußerte die Hoffnung, dass der Schinder genug Zeit schindet, um aus der Anlage wieder herauszukommen. Die Gruppe diskutierte, ob man dem Wesen vertrauen und es danach vernichten oder es erst nach dem Besuch in der Narbe verraten sollte, um einen langwierigen [Krieg](/characters/krieg.md) in den Erntefeldern zu vermeiden.
-
-In der darauffolgenden Session hatte sich die andere Gruppe entschieden, dem Richter zur Seite zu eilen und das Abyssalis nicht zu verlassen. Die Gruppe entfernte sich schnellstmöglich von Jalan, um nicht in den kriegerischen Akt hineinzugeraten, da die Zeit knapp war. Jalan diente als Ausgangspunkt der Reise zur Narbe.
+- **Session 2026-05-06:** Die Gruppe erreicht Jalan. Nach kurzer Zeit sind der Richter und der Schinder mit Kip, Dante und Miko wegen eines Zwischenfalls weg; anschließend wird die Gruppe gelobt. Jalan hat viele Verteidiger verloren und ist geschwächt. Die Seelenwacht wird kaum Soldaten abstellen. Die Gruppe steigt zur alten Villa auf dem Hügel über Jalan hinauf, um die dortige Anlage zu untersuchen.
+- **Session 2026-05-13:** Jalan wurde vor einigen Stunden angegriffen. [Der Schinder](/npcs/der_schinder.md) hält die Stellung. Auf einer Karte des Richters und des Schinders ist die Narbe links neben Jalan in den Erntefeldern eingezeichnet.
+- **Session 2026-05-19:** Die Gruppe verlässt Jalan mit einem „Fast Travel Move“ – nicht geflüchtet, aber schnellstmöglich entfernt, um nicht in den kriegerischen Akt hineingezogen zu werden. Die Zeit ist knapp.
 
 ## Offene Fragen
+- Was genau sich in der Festung beziehungsweise der Villa verbirgt und warum es für die Gefährten von Rotunas wichtig sein könnte.
+- Was der Zwischenfall war, der Jalan geschwächt und viele Verteidiger gekostet hat.
+- Wer Jalan angegriffen hat und welche Absichten hinter dem Angriff stehen; es gibt das Gefühl, dass es nicht nur um die Eroberung Jalans ging.
+- Ob die Gruppe später nach Jalan zurückkehrt und was aus dem Ort wird.
 
-- Was genau verbirgt sich in der Anlage unter der Villa, das von großem Wert sein soll?
-- Welche Rolle spielt der Wert für Rotunas und seine Freunde, die auf Informationssuche sind?
-- Wie entwickelt sich die Lage in Jalan nach dem Angriff der Vorgul'tar-Anhänger und dem Abzug der Gruppe?
-
-## Belege
-
+# Belege
 [P-48] Session 2026-05-06 @ 00:11:37 (https://www.youtube.com/watch?v=MB4quhDWsQE)
-[P-49] Session 2026-05-13 @ 01:12:51 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
-[P-50] Session 2026-05-19 @ 00:00:45 (https://www.youtube.com/watch?v=xEcGJeaNixI)
+[P-49] Session 2026-05-13 @ 01:06:11 (https://www.youtube.com/watch?v=4afPD9Q_5AY)
+[P-50] Session 2026-05-19 @ 00:01:45 (https://www.youtube.com/watch?v=xEcGJeaNixI)

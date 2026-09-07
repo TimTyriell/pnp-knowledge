@@ -1,72 +1,62 @@
 ---
 type: Deity
 title: Goblingötter
-description: 'Die Goblingötter sind eine Gruppe von Gottheiten, die in der Kampagne
-  eine besondere Rolle spielen: Sie werden von den Zuschauern des Strea…'
+description: Die Goblingötter sind eine Gruppe chaotischer und wechselhafter Gottheiten,
+  die vor allem mit den Goblins verbunden sind. Sie treten nicht…
 tags:
 - deities
-timestamp: '2025-10-21T00:00:00Z'
+timestamp: '2026-09-01T00:00:00Z'
 id: DEITY_GOBLINGOETTER
-subtype: Neuer Gott
+subtype: Sonstiges
 aliases:
 - Goblin-Gott (Dodos Gott)
 - Goblinsgötter
+- Goblingötter
 - Goblin-Götter
 ---
 
-# Goblingötter
-
 ## Überblick
 
-Die Goblingötter sind eine Gruppe von Gottheiten, die in der Kampagne eine besondere Rolle spielen: Sie werden von den Zuschauern des Streams gespielt und greifen aktiv in das Spielgeschehen ein. Sie sind eine Meta-Ebene, die das Geschehen beeinflusst, ohne selbst als physische Figuren in der Welt aufzutreten. Ihre Macht zeigt sich vor allem darin, dass sie [Goblins](/npcs/pilz_goblins.md) wiederbeleben, ihnen Schaden zufügen oder sie auf andere Weise stärken oder schwächen können. Die Gruppe der Goblingötter ist chaotisch und wechselhaft, aber nicht bösartig — ihre Absichten sind oft unklar, und ihre Eingriffe helfen der Gruppe mal direkt, mal indirekt.
+Die Goblingötter sind eine Gruppe chaotischer und wechselhafter Gottheiten, die vor allem mit den [Goblins](/npcs/pilz_goblins.md) verbunden sind. Sie treten nicht persönlich in Erscheinung, sondern wirken durch plötzliche, häufig grüne Blitze und unvorhersehbare Ereignisse in das Geschehen ein. Ihr Eingreifen ist launisch: Mal unterstützt es die Heldengruppe, mal wirkt es hinderlich oder verfolgt eine undurchsichtige Absicht. Bösartig sind die Goblingötter nicht; sie handeln unberechenbar und spielerisch.
 
 ## Rolle in der Kampagne
 
-Die Goblingötter wurden von der Spielleitung zu Beginn der Kampagne eingeführt, als die Gruppe auf eine Gruppe toter Goblins stieß. Seitdem sind sie eine wiederkehrende Präsenz, die vor allem in Kampfsituationen eingreift. Sie agieren als eine Art unsichtbare Schutzmacht oder Schicksalsmacht, die über den Goblins wacht und gelegentlich auch den Helden hilft.
-
-Ihre Eingriffe sind vielfältig: Sie können Goblins ein zusätzliches Leben geben, ohne dass dafür ein Würfelwurf nötig wäre, oder sie können Schaden verursachen. In der Praxis haben sie sich jedoch meist als hilfreich für die Gruppe erwiesen. So ließen sie etwa einen Eisbären ausrutschen, vereisten Wurzeln, die einen Gegner festhielten, und stärkten [Esterossa](/characters/esterossa.md) mit einem grünen Blitz. Die Spielleitung betont dabei immer wieder, dass die Zuschauer im Chat die Goblingötter spielen dürfen, aber nicht übertreiben sollen — etwa keine "Denki Dama" (Energiebälle) einsetzen.
-
-Ein besonders markanter Moment war die Benennung der Katze: Die Gruppe rief die Goblingötter an, um den Namen für eine Katze zu bestimmen, und die Götter tauften sie auf den Namen [Günther](/npcs/katze_ajani_guenther.md).
+Die Goblingötter sind ein wiederkehrendes chaotisches Element. Sie greifen bevorzugt in Kampfsituationen ein und sorgen für plötzliche Wendungen: Sie lassen Gegner stürzen, stärken Kämpfende, verleihen zusätzliche Zauber oder blockieren Fluchtwege. Ihre Gunst gilt nicht nur den Goblins, sondern gelegentlich auch der Heldengruppe. In den Sessions wird deutlich, dass die Eingriffe der Goblingötter von den Zuschauern beeinflusst werden können, was ihr sprunghaftes Verhalten zusätzlich erklärt.
 
 ## Wichtige Merkmale
 
-Die Goblingötter sind keine einzelnen, klar umrissenen Gottheiten mit Namen und Persönlichkeit, sondern eine kollektive Macht. Sie werden von den Zuschauern des Streams gespielt, die im Chat Eingaben machen, welche die Spielleitung dann in das Spielgeschehen übersetzt. Ihre Eingriffe äußern sich typischerweise in Form von Blitzen, die vom Himmel kommen:
-
-- **Grüne Blitze** wirken stärkend oder unterstützend — etwa wenn Esterossa von einem grünen Blitz getroffen und gestärkt wird, oder wenn ein grüner Blitz die Wurzeln vereist, die einen Gegner festhalten.
-- **Blaue Blitze** können ebenfalls hilfreich sein, etwa wenn ein blauer Blitz einen Eisbären ausrutschen lässt.
-
-Die Götter werden als "gnädig" bezeichnet, wenn sie den Goblins helfen. Ihre Absichten sind jedoch nicht immer eindeutig: In einer Session versuchte ein [Goblin-Gott](/deities/goblin_gott.md) namens [Lugasch](/deities/lugasch.md), einen Steinhagel auf die Gruppe zu werfen. Die Spielleitung kommentierte einen solchen Eingriff mit den Worten: "Nice try, Goblin-Gott. Die Goblingötter wollten euch gar nichts Gutes, aber es hat nicht genau so funktioniert wie er auch." Dies zeigt, dass die Götter durchaus auch schaden wollen können, ihre Versuche aber nicht immer gelingen.
-
-Insgesamt sind die Goblingötter chaotisch und wechselhaft in ihrem Verhalten — mal helfen sie, mal versuchen sie zu schaden, und ihre Eingriffe sind nicht immer vorhersehbar.
+- **Auftreten und Wirken:** Die Goblingötter erscheinen nicht selbst, sondern manifestieren sich meist als grüner Blitz; gelegentlich verfärben sich Gewitterwolken kurz grünlich. Ihr Einfluss äußert sich in plötzlichen Effekten wie heftigem Niesen, Stärkung, Vereisung oder herabstürzenden Felsbrocken.
+- **Wesen:** Sie sind chaotisch und wechselhaft, nicht bösartig. Ihre Handlungen sind unberechenbar und können für die Beteiligten hilfreich, hinderlich oder schlicht verwirrend sein.
+- **Fähigkeiten:** Sie können Kreaturen stärken — etwa Goblins durch einen Blitz —, einem Charakter kurzzeitig einen zusätzlichen Zauber wie Holy Arrows gewähren, Wurzeln vereisen, eine Katze per Blitz umbenennen und möglicherweise Tiere als Boten lenken.
+- **Verehrung:** Goblins rufen sie im Kampf an. Ein gestärkter Goblin verkündet: „Die Goblingötter sind uns gnädig."
 
 ## Beziehungen und Verbindungen
 
-Die Goblingötter stehen in erster Linie in Beziehung zu den Goblins, über die sie Macht haben. Sie können Goblins wiederbeleben oder ihnen Schaden zufügen. In der Praxis haben sie jedoch auch mehrfach den Helden der Gruppe geholfen, insbesondere Esterossa, die mehrfach von ihren Blitzen gestärkt wurde.
-
-Die Gruppe hat eine pragmatische Beziehung zu den Goblingöttern: Sie rufen sie an, wenn sie etwas von ihnen wollen — etwa bei der Namensgebung der Katze — und nehmen ihre Hilfe dankend an, wenn sie kommt. Esterossa bedankte sich etwa mit den Worten: "Dankeschön, Koblen-Götter. Das fühlt sich prima an."
+- **Goblins:** Die Goblingötter sind die Gottheiten der Goblins und stehen ihnen im Kampf bei. In einer Auseinandersetzung stärkt ein Blitz vier Goblins, woraufhin diese die Gnade der Götter verkünden.
+- **Heldengruppe:** Die Götter greifen wiederholt in Kämpfe der Gruppe ein. Sie lassen einen [Bugbären](/factions/bugbaeren.md) von einer Mauer stürzen, erleichtern die Flucht vor einem Eisbären und segnen [Cookie](/characters/cookie.md) mit einem zusätzlichen Zauber. Auch die Katze der Gruppe wird von einem Blitz getroffen und in [Günther](/npcs/katze_ajani_guenther.md) umbenannt.
+- **[Valeria](/characters/valeria.md):** Möglicherweise haben die Goblingötter den Raben oder die Taube mit Valerias Brief zur Gruppe geführt, sodass die Nachricht die richtige Person erreichte.
+- **Naturgewalten:** In einer Höhlenszene erscheinen die Goblingötter mit dem Berg verbunden, als ein grüner Blitz einen Felsbrocken herabstürzen lässt.
 
 ## Chronologie
 
-**Session 2025-04-01:** Die Goblingötter werden erstmals eingeführt. Nach einem Kampf gegen einen Goblin, der von [Cookie](/characters/cookie.md) schwer verletzt wurde, erklärt die Spielleitung den Zuschauern im Chat: "Ihr seid ab sofort die Goblin-Götter. Das heißt, ihr habt die Möglichkeit, den Goblins eventuell mal ein Leben mehr zu geben, ohne einen Würfel mehr zu geben als Schaden oder sowas." Die Zuschauer dürfen fortan Einfluss auf Goblins nehmen. In dieser Session wird auch ein Goblin-Gott namens Lugasch erwähnt, der einen Steinhagel auf die Gruppe wirft.
-
-**Session 2025-04-23:** Die Spielleitung erinnert die Zuschauer daran, dass sie heute besonders die Goblingötter spielen dürfen: "Ihr dürft im Chat reinschreiben, was passieren könnte." Die Götter greifen in einen Kampf ein, indem sie Blitze schleudern, die die Goblins stärken oder schwächen. Sie werden als "gnädig" bezeichnet, wenn sie den Goblins helfen.
-
-**Session 2025-04-30:** Die Gruppe ruft die Goblingötter an, um den Namen für eine Katze zu bestimmen. Esterossa schlägt vor: "Die Goblin Götter dürfen entscheiden wie sie heißen." Die Spielleitung fragt daraufhin im Chat: "Goblin Götter, falls ihr einen besseren Namen habt als Ajani, dann gerne raus damit." Die Götter tauften die Katze auf den Namen Günther.
-
-**Session 2025-05-14:** Während eines Kampfes gegen einen Eisbären greifen die Goblingötter ein: Ein grüner Blitz trifft die Wurzeln, die den Bären festhalten, und vereist sie zusätzlich. Die Spielleitung kommentiert: "Nice try, Goblin-Gott. Die Goblingötter wollten euch gar nichts Gutes, aber es hat nicht genau so funktioniert wie er auch." Dies deutet darauf hin, dass ein Goblin-Gott versucht hatte, der Gruppe zu schaden, der Eingriff aber letztlich half.
-
-**Session 2025-10-21:** Esterossa wird erneut von einem grünen Blitz getroffen und gestärkt. Sie bedankt sich bei den Göttern. Die Götter scheinen die Gruppe weiterhin zu unterstützen.
+- **2025-04-15:** Im Kampf gegen Bugbären färben sich die Gewitterwolken kurz grünlich, und einer der Bugbären muss so heftig niesen, dass er von der Mauer fällt und stirbt. Die Spielleitung kommentiert, die Goblingötter hätten die Gruppe „ein wenig supported".
+- **2025-04-23:** Ein Blitz trifft vier Goblins und stärkt sie. Einer ruft: „Die Goblingötter sind uns gnädig. Nun werden wir euch zerfleischen."
+- **2025-04-30:** Ein Blitz trifft die Katze der Gruppe; sie wird in [Günther](/npcs/katze_ajani_guenther.md) umbenannt. Die Szene unterstreicht den spielerischen, chaotischen Charakter der Götter.
+- **2025-05-14:** Ein grüner Blitz trifft die Wurzeln, mit denen ein Eisbär festgehalten wird, und lässt sie vereisen, sodass das Tier nicht schnell freikommt. Die Absicht der Götter bleibt unklar: Der Effekt hilft der Gruppe, die Spielleitung merkt jedoch an, die Goblingötter hätten der Gruppe „gar nichts Gutes" gewollt, es sei aber nicht wie beabsichtigt verlaufen.
+- **2025-09-23:** Während eines Kampfes gegen eine Horde erhält [Cookie](/characters/cookie.md) durch einen grünen Blitz kurzzeitig die Fähigkeit, zusätzlich den Zauber Holy Arrows zu wirken. Die Spielleitung beschreibt: „Ein grüner Blitz trifft dich und unheimliche Macht umgreift dich."
+- **2025-11-14:** Die Goblingötter haben möglicherweise den Raben oder die Taube mit Valerias Brief zur Gruppe geführt. Die Gruppe erhält auf diese Weise Nachricht von [Valeria](/characters/valeria.md).
+- **2026-09-01:** In einer Höhle lässt ein grüner Blitz einen großen Felsbrocken herabstürzen, der den Ausgang versperrt. Dazu fällt der Ausspruch: „Die Goblingötter haben gesprochen." Unklar bleibt, ob dies tatsächliches göttliches Eingreifen oder nur eine Redewendung war.
 
 ## Offene Fragen
 
-- Die genaue Natur und Herkunft der Goblingötter bleibt unklar: Sind sie tatsächlich die Götter aller Goblins oder nur einer bestimmten Gruppe? Haben sie eine eigene Agenda oder reagieren sie nur spontan auf die Ereignisse?
-- Die Beziehung zwischen den Goblingöttern und anderen Gottheiten der Welt ist nicht bekannt.
-- Ob die Goblingötter auch außerhalb des Einflusses auf Goblins Macht haben — etwa über andere Wesen — ist ungeklärt.
+- Ob es sich bei den Goblingöttern um tatsächliche, eigenständige Gottheiten handelt oder ob ihr Name nur für unberechenbare Naturereignisse verwendet wird, bleibt nach dem Felssturz in der Höhle offen.
 
 ## Belege
 
-[P-02] Session 2025-04-01 @ 00:17:50 (https://www.youtube.com/watch?v=LZIuUzc3F18)
-[P-05] Session 2025-04-23 @ 00:12:00 (https://www.youtube.com/watch?v=z3C-bewKqUs)
-[P-06] Session 2025-04-30 @ 00:57:36 (https://www.youtube.com/watch?v=fsCOiSkKKTE)
-[P-08] Session 2025-05-14 @ 00:32:26 (https://www.youtube.com/watch?v=5eAEDN5ra-4)
-[P-27] Session 2025-10-21 @ 00:20:53 (https://www.youtube.com/watch?v=sxFhbtwoefA)
+1. Session 2025-04-15 @ 01:01:34 (https://www.youtube.com/watch?v=YCpAz_syjaY)
+2. Session 2025-04-23 @ 01:12:39 (https://www.youtube.com/watch?v=z3C-bewKqUs)
+3. Session 2025-04-30 @ 00:59:18 (https://www.youtube.com/watch?v=fsCOiSkKKTE)
+4. Session 2025-05-14 @ 00:32:26 (https://www.youtube.com/watch?v=5eAEDN5ra-4)
+5. Session 2025-09-23 @ 01:40:09 (https://www.youtube.com/watch?v=DGzfqVigS0g)
+6. Session 2025-11-14 @ 01:46:18 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)
+7. Session 2026-09-01 @ 00:24:53 (https://www.youtube.com/watch?v=1E3-Nwv4OEs)

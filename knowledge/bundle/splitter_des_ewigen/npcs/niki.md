@@ -1,15 +1,15 @@
 ---
 type: NPC
 title: Niki
-description: Eine Bewohnerin der Berge, die mit Varek und dem Hund Schnüffi lebt.
-  Sie ist neugierig auf die Gruppe und den Basilisken. Sie erwähnt die a…
+description: Niki ist eine Bergbewohnerin, die zusammen mit Varek und dem Hund Schnuffi
+  unterwegs ist. Sie zeigt auf den Basilisken und ruft, dass es ei…
 tags:
 - npcs
 timestamp: '2026-08-18T00:00:00Z'
 id: NPC_NIKI
 ---
 
-Eine Bewohnerin der Berge, die mit [Varek](/npcs/varek.md) und dem Hund [Schnüffi](/npcs/schnueffi.md) lebt. Sie ist neugierig auf die Gruppe und den Basilisken. Sie erwähnt die alte Farm.
+Niki ist eine Bergbewohnerin, die zusammen mit [Varek](/npcs/varek.md) und dem Hund Schnuffi unterwegs ist. Sie zeigt auf den Basilisken und ruft, dass es ein Basilisk ist. Sie lebt in den Bergen und besucht gelegentlich [Edmund](/npcs/sir_edmund.md). Niki ist freundlich und gibt der Gruppe Auskunft über den Weg zum Wächterturm.
 
 # Belege
 

@@ -1,16 +1,17 @@
 ---
 type: NPC
 title: Esua
-description: Esua ist eine der Stimmen im Amulett von Lindo Laut. Sie beschimpft ihn
-  als erbärmlich und Feigling, als er sich weigert, ein Tier zu opfer…
+description: Esua ist eine weitere Stimme im Amulett, die Lindo Laut mit Versprechungen
+  von Macht verführt und ihn drängt, sich auf den Thron zu setzen.…
 tags:
 - npcs
-timestamp: '2025-08-20T00:00:00Z'
+timestamp: '2025-09-02T00:00:00Z'
 id: NPC_ESUA
+subtype: Sonstiges
 ---
 
-Esua ist eine der Stimmen im [Amulett von Lindo Laut](/items/amulett_des_heiligen_duran.md). Sie beschimpft ihn als erbärmlich und Feigling, als er sich weigert, ein Tier zu opfern.
+Esua ist eine weitere Stimme im Amulett, die [Lindo Laut](/characters/lindo_laut.md) mit Versprechungen von Macht verführt und ihn drängt, sich auf den [Thron](/items/thron.md) zu setzen. Sie lacht gemeinsam mit [Sintra](/deities/sintra.md), als die Gruppe dem Thron näherkommt. Am Ende wird sie zusammen mit Sintra durch [Tyrex](/deities/thyrex.md)' Kraft zerstört.
 
 # Belege
 
-[P-18] Session 2025-08-20 @ 00:07:34 (https://www.youtube.com/watch?v=-XbO3FLSL_I)
+[P-19] Session 2025-09-02 @ 01:41:58 (https://www.youtube.com/watch?v=TLZOH7TlGhk)

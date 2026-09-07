@@ -115,6 +115,16 @@ ausdrücklich als Vermutung** (z. B. "vermutlich", "den Belegen zufolge",
 "bislang unbestätigt"). Ein lückenhafter Eintrag ist hier korrekt; fülle
 Lücken nicht mit Spekulation, die wie Tatsache klingt.
 
+### Flüchtlinge
+<!-- okf: entity=factions/fluechtlinge -->
+
+ENTSCHEIDUNG: Dies ist die **gemischte Lagergemeinschaft** (Session
+2026-01-13), **nicht** die Flüchtlinge aus Breska unter Roland — die beiden
+Gruppen sind namensähnlich, aber unterschiedlicher Herkunft
+(`never_merge:` in entity_rules.yaml, GM-Ruling 2026-08-30). Die
+prompt-v6-Regeneration (2026-09-05) hat die Beschreibung dieses Eintrags
+fälschlich mit "aus Breska" eingefärbt; das ist zu korrigieren.
+
 ### Ring der Teleportation
 <!-- okf: entity=items/ring_der_teleportation -->
 
@@ -126,7 +136,7 @@ nur ein zweiter Titel dafür. Der Ring, den Dodo zerstört hat, ist ein
 hier ausschließlich Lindos Ring.
 
 ### Ringe
-<!-- okf: entity=items/ring_der_pocket_dimension,items/magischer_ring -->
+<!-- okf: entity=items/ring_der_pocket_dimension,items/magischer_ring_teleportationsring -->
 
 ENTSCHEIDUNG: Sammeleintrag. Hier werden die verschiedenen kleineren Ringe der
 Kampagne **nur stichwortartig** aufgelistet — jeweils ein bis zwei Sätze, was
@@ -293,7 +303,7 @@ auftritt. Er ist **nicht** identisch mit dem Freibeuter-Kapitän Harald und
 trägt den Namen nur zufällig gleich. Eine Nebenfigur.
 
 ### Stiller Gott
-<!-- okf: entity=deities/bodrak_gott_der_stille -->
+<!-- okf: entity=deities/bodrak -->
 
 DARSTELLUNG: Wie bei Akastrale — vorerst nur ein knapper Entwurf des aktuellen
 Wissensstandes, ausdrücklich als vorläufig gekennzeichnet.

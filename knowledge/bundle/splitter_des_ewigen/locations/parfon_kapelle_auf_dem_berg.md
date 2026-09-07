@@ -1,35 +1,31 @@
 ---
 type: Location
 title: Thar'Vok-Kapelle auf dem Berg
-description: Die Thar'Vok-Kapelle auf dem Berg ist ein altes Heiligtum am Berg, das
-  einst von einer alten Gottheit genutzt wurde. Das Bauwerk ist schwer…
+description: Die Thar'Vok-Kapelle auf dem Berg ist eine Kapelle auf einem Berg, die
+  auch als Kapelle des heiligen Duran bezeichnet wird. Sie liegt an de…
 tags:
 - locations
-timestamp: '2025-09-06T00:00:00Z'
+timestamp: '2026-07-29T00:00:00Z'
 id: LOC_PARFON_KAPELLE_AUF_DEM_BERG
 subtype: Gebäude
 aliases:
-- Kapelle
 - Die Kapelle
+- Kapelle
 ---
 
-Die Thar'Vok-Kapelle auf dem Berg ist ein altes Heiligtum am Berg, das einst von einer alten Gottheit genutzt wurde. Das Bauwerk ist schwer beschädigt und soll von [Varsul](/deities/vharzul.md) übernommen werden. Im Inneren befinden sich ein Thron, ein Grab und verstreute Papiere. Nach der Flucht durch ein [Portal](/locations/portal.md) erreicht die Gruppe die Kapelle und findet dort den [Thron des Dämonenlords](/items/thron_des_daemonenlords.md).
+Die Thar'Vok-Kapelle auf dem Berg ist eine Kapelle auf einem Berg, die auch als Kapelle des heiligen [Duran](/deities/heiliger_duran.md) bezeichnet wird. Sie liegt an der linken Seite des Weges und dient den Dorfbewohnern als zentraler Versammlungsort. Unter der Kapelle befindet sich eine Höhle mit einem Brunnen voller magischer Energie; im Inneren steht ein Schrein für die verstorbenen Eltern von [Dranara](/npcs/dranara_asleina.md). Die Kapelle war mehrfach Schauplatz zentraler Ereignisse: eines Gnollen-Überfalls, des Fundes des sternförmigen Amuletts und der Entdeckung eines [Throns](/items/thron.md) nach einer Reise durch ein Rift.
 
-## Beschaffenheit und Inventar
+## Bau und Ausstattung
 
-Die Kapelle ist stark beschädigt, bleibt aber zugänglich. Ihr Inventar umfasst:
+Die Kapelle liegt auf einem Berg und ist vom Weg aus auf der linken Seite erreichbar. Unter ihr befindet sich eine Höhle; dort liegt ein Brunnen, der magische Energie enthält. Im Inneren der Kapelle steht ein Schrein für die verstorbenen Eltern von [Dranara](/npcs/dranara_asleina.md). An diesem Ort fanden die Helden das sternförmige Amulett.
 
-- **Thron des Dämonenlords**: Ein Thron, den die Gruppe bei ihrer Ankunft als den Thron des Dämonenlords erkennt.
-- **Grab**: Ein Grab, dessen Identität nicht überliefert ist.
-- **Verstreute Papiere**: Lose Blätter, deren Inhalt und Bedeutung nicht bekannt sind.
+## Ereignisse und Begegnungen
 
-## Bedeutung und Verlauf
-
-Die Kapelle diente einst einer alten Gottheit als Heiligtum; deren Name wird in den Belegen nicht genannt. Zu nicht näher dokumentierten Umständen soll [Varsul](/deities/vharzul.md) die Kapelle übernehmen.
-
-Im Verlauf der Ereignisse flieht die Gruppe durch ein Portal und gelangt an die Kapelle. Sie dient damit als Ankunftsort nach der Flucht.
+Der Priester [Harloen](/npcs/harloen.md) dient in der Kapelle. Auf dem Weg zur Taverne begegneten ihm die Helden an der Kapelle, und er warnte sie vor der neuen Macht von [Nerash](/deities/nerash.md). In einer früheren Auseinandersetzung wurde die Kapelle von Gnollen überrannt, wobei viele Verteidiger starben. Die Gruppe kämpfte sich in das Gebäude hinein und traf dort auf [Auranil](/npcs/auranil.md), [Baran](/npcs/baran.md) und [Brandon](/npcs/brandon.md). Nach dem Durchqueren eines Rifts erreichten die Helden die Kapelle erneut; der Ort kam ihnen nicht allzu vertraut vor, und dort stand der Thron, den sie mitnehmen sollten.
 
 # Belege
 
-[P-19] Session 2025-09-02 @ 01:14:16 (https://www.youtube.com/watch?v=TLZOH7TlGhk)
+[P-07] Session 2025-05-06 @ 01:23:29 (https://www.youtube.com/watch?v=e0v6AFGd4mE)
+[P-16] Session 2025-07-29 @ 00:15:19 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
 [P-20] Session 2025-09-06 @ 00:50:04 (https://www.youtube.com/watch?v=vo1xnyLQDJk)
+[S1-01-A] Session 2026-07-29 @ 00:28:38 (https://www.youtube.com/watch?v=umGyKLkefJI)

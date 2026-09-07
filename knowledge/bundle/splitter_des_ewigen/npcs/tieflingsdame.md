@@ -1,16 +1,16 @@
 ---
 type: NPC
 title: Tieflingsdame
-description: Eine Tieflingsdame, die an der Tafel sitzt und der Gruppe freundlich
-  zuwinkt. Sie beobachtet die Gruppe kühl und prüfend, besonders Nyrella.
+description: Eine nicht namentlich genannte Tieflingsdame sitzt bei den Anführern.
+  Esterossa schätzt sie als kühl, distanziert und prüfend ein; sie must…
 tags:
 - npcs
 timestamp: '2025-09-17T00:00:00Z'
 id: NPC_TIEFLINGSDAME
 ---
 
-Eine Tieflingsdame, die an der Tafel sitzt und der Gruppe freundlich zuwinkt. Sie beobachtet die Gruppe kühl und prüfend, besonders [Nyrella](/characters/nyrella.md).
+Eine nicht namentlich genannte Tieflingsdame sitzt bei den Anführern. [Esterossa](/characters/esterossa.md) schätzt sie als kühl, distanziert und prüfend ein; sie mustert besonders [Nyrella](/characters/nyrella.md) herablassend.
 
 # Belege
 
-[P-22] Session 2025-09-17 @ 00:27:30 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
+[P-22] Session 2025-09-17 @ 00:44:39 (https://www.youtube.com/watch?v=AhIT8dcxw2o)

@@ -1,0 +1,85 @@
+# Ground truth for 2025-03-26 -- AI draft, adjudicated by the GM.
+#
+# Drafted by Claude (Opus) against the raw transcript, not against the
+# extraction's own output -- every `ok` below means the entity was found in
+# the spoken text at or near its cited timestamp.
+#
+# WHERE THIS DRAFT IS STRONG: precision. Each extracted name was checked
+# against the transcript, so `wrong` and `rename` verdicts are evidence-based.
+#
+# WHERE IT IS WEAK, AND WHY YOUR PASS MATTERS: recall. Finding what the model
+# MISSED means independently extracting the session, which is the same task
+# the model performed -- so a second model agreeing proves less than it looks.
+# I scanned for frequent capitalised nouns absent from the extraction and
+# added what survived, but treat the `missed` entries as the least reliable
+# part of this file. If you add even a couple I overlooked, the recall number
+# becomes yours rather than mine.
+#
+# Verdicts: ok / wrong / rename (+should_be) / missed
+#
+# Source: https://www.youtube.com/watch?v=ROCKGeeRUFw
+
+reviewed: true
+
+session_id: 2025-03-26_RF_ROCKGeeRUFw
+date: '2025-03-26'
+entities:
+  - name: 'Lindo Laut'
+    type: Character
+    citation_ts: '01:27:14'
+    verdict: ok
+  - name: 'Esterossa'
+    type: Character
+    citation_ts: '01:46:53'
+    verdict: ok
+  - name: 'Dodo'
+    type: Character
+    citation_ts: '01:36:17'
+    verdict: ok
+  - name: 'Tentakelmonster'
+    type: NPC
+    citation_ts: '01:46:53'
+    verdict: ok
+    # Transcript says "Parry" (4x, Whisper mishearing); the model
+    # normalised to Perry, the Phineas-and-Ferb reference Celin clearly
+    # intended. Counted as correct -- override if you would rather score
+    # the literal spoken form.
+  - name: 'Perry das Schnabeltier'
+    type: NPC
+    citation_ts: '00:29:12'
+    verdict: ok
+    # Name is never spoken (GM says "das Versteck des Monsters"), but the
+    # GM ruled it fitting: a descriptive name the model coins for a real,
+    # otherwise-unnamed place is wanted, not a defect.
+  - name: 'Ritualplatz'
+    type: Location
+    citation_ts: '01:10:39'
+    verdict: ok
+  - name: 'Beschwörungskessel'
+    type: Item
+    citation_ts: '01:23:03'
+    verdict: ok
+  - name: 'Beschwörungsformel-Schriftrolle'
+    type: Item
+    citation_ts: '01:20:17'
+    verdict: ok
+  - name: 'Nachricht am Monster'
+    type: Item
+    citation_ts: '01:48:26'
+    verdict: ok
+  - name: 'Halsband des Monsters'
+    type: Item
+    citation_ts: '01:47:59'
+    verdict: ok
+  - name: 'Froschhausen'
+    type: Location
+    citation_ts: '01:21:58'
+    verdict: ok
+  - name: 'Kampf gegen das tentakelige Monster'
+    type: Event
+    citation_ts: '01:28:52'
+    verdict: ok
+  - name: 'Beschwörungsritual am Kessel'
+    type: Event
+    citation_ts: '01:27:14'
+    verdict: ok

@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Kapitän Lobrecht
-description: Kapitän Lobrecht, von der Gruppe auch liebevoll „Kahnführer Lobrecht“
-  oder „Käpt'n Lobrecht“ genannt, ist ein erfahrener Seefahrer und wied…
+description: Kapitän Lobrecht ist der Kahnführer des Gildenschiffs, mit dem die Gefährten
+  von Rotunas zu den Sanddorn-Inseln reisen. Er ist ein erfahren…
 tags:
 - npcs
 timestamp: '2026-08-25T00:00:00Z'
@@ -17,58 +17,51 @@ aliases:
 
 ## Überblick
 
-Kapitän Lobrecht, von der Gruppe auch liebevoll „Kahnführer Lobrecht“ oder „Käpt'n Lobrecht“ genannt, ist ein erfahrener Seefahrer und wiederkehrender Begleiter der Helden. Er ist Kapitän des Gildenschiffs und späterer Eskortführer, der die Gruppe auf mehreren Reisen über die Inseln begleitet. Lobrecht ist ein freundlicher, hilfsbereiter und pragmatischer Mann, der stets ein offenes Ohr für die Anliegen der Gruppe hat und ihnen regelmäßig als Informationsquelle dient. Er ist eng mit [Miaomani](/npcs/miaomani.md) verbunden, die ihn auf seinen Reisen begleitet.
+Kapitän Lobrecht ist der Kahnführer des Gildenschiffs, mit dem die Gefährten von Rotunas zu den [Sanddorn-Inseln](/locations/sanddorninseln.md) reisen. Er ist ein erfahrener Seefahrer und Kapitän, der in den Quellen wiederholt als Transporteur der Heldengruppe auftritt, später aber auch als Begleiter und Eskortführer von [Joar](/npcs/joar_vanur.md). Lobrecht wirkt freundlich und zuvorkommend, bleibt in brenzligen Situationen jedoch pragmatisch und entschlossen.
 
 ## Rolle in der Kampagne
 
-Lobrecht ist ein wiederkehrender Verbündeter und Transporteur der Gruppe. Er bringt die Helden zunächst zum Inselarchipel Sanddawn, wo sie den Auftrag erhalten, zu Jean Vanour zu reisen. Später transportiert er die Gruppe nach [Windung](/locations/windung.md), wo sie ein Fischerdorf gegen Angriffe verteidigen. In der Schlacht von [Ehrenfels](/locations/ehrenfels.md) kämpft er an vorderster Front und trifft als Verstärkung ein. Er dient der Gruppe wiederholt als Informationsquelle über die Lage in verschiedenen Regionen, etwa über die Untoten bei [Breska](/locations/breska.md) oder die Ereignisse in Ehrenfels. In der letzten bekannten Schlacht gegen die [Gnolle](/factions/gnolle.md) kämpft er tapfer an der Seite der Helden und wird dabei schwer verletzt.
+Lobrecht ist zunächst der Kapitän des Gildenschiffs, das die Gruppe zu den [Sanddorn-Inseln](/locations/sanddorninseln.md) bringt. Er empfängt [Cookie](/characters/cookie.md) in seiner Kajüte, gibt ihr Kuchen, erklärt ihr die Inselwelt und steht für Fragen zur Verfügung. Dabei beschreibt er die Sanddorn-Inseln als einen Ort mit vielen kleinen Inseln und einem „Paradies von Leben“; zugleich kündigt er an, in der Bucht der Inseln anzulegen und ein Beiboot auszusetzen. Als Ziel der Reise nennt er Jean Vanour, den Chef der Insel (Beleg [1]).
+
+Anschließend setzt Lobrecht die Gruppe mit einem Beiboot ab und mahnt sie, sich vorsichtig fortzubewegen und keine voreiligen Schlüsse zu ziehen (Beleg [2]). Später bringt er die Gruppe nach [Windung](/locations/windung.md). Dort wird er im Kampf am Dock von Bolzen getroffen, aber von [Esterossa](/characters/esterossa.md) geheilt. Danach organisiert er die Evakuierung der Dorfbewohner und macht das Schiff klar (Beleg [3]).
+
+Später begegnet die Gruppe ihm erneut, als er mit [Miyamani](/npcs/miyamani.md) unterwegs ist. Er berichtet, dass sie kürzlich an [Breska](/locations/breska.md) vorbeigekommen seien und wegen Untoter nicht durchkamen; die Strecke sei unpassierbar gewesen. Er zeigt sich besorgt über das Dorf, das keine Hilfe wollte (Beleg [4]). In den Sessions des Jahres 2026 ist Lobrecht schließlich Begleiter von [Joar](/npcs/joar_vanur.md) und führt dessen Eskorte an (Belege [5], [6]).
 
 ## Wichtige Merkmale
 
-Lobrecht ist ein freundlicher und zuvorkommender Kapitän. Als [Cookie](/characters/cookie.md) in seiner Kajüte nach etwas zu essen fragt, schneidet er ihr ohne Zögern ein Stück Kuchen ab und reicht es ihr mit einer Serviette. Er nimmt sich Zeit, der Gruppe die Karte der Inseln zu erklären und beschreibt Sanddawn als „ein Paradies von Leben“, in dem vieles nicht der Norm entspreche – was er mit einem vielsagenden Blick auf die ungewöhnliche Gruppe kommentiert.
+Lobrecht wird als freundlich und entgegenkommend beschrieben. In seiner Kajüte schneidet er Cookie ein Stück Kuchen ab und bietet seine Hilfe an; er zeigt ihr die große Inselkarte und erläutert die Sanddorn-Inseln (Beleg [1]). Cookie sieht ihn nach dieser Begegnung als „Buddy“, obwohl Lobrecht selbst keinen Kuchen isst und ihr lediglich ein Stück abgibt (Beleg [1], Transkript).
 
-Er ist ein erfahrener Seefahrer und zeigt sich auch abseits des Wassers als fähig: Beim Überqueren einer Brücke mit einem Seil beweist er Klettererfahrung, wird dabei jedoch von [Lindo Lauts](/characters/lindo_laut.md) Lawine an der Schulter verletzt. Im Kampf ist er tapfer und wehrhaft: In der Schlacht gegen die Gnolle dreht er sich im letzten Augenblick um, zieht seinen Degen und hält ihn einem angreifenden Gnoll entgegen, der mit einer scharfen Axt auf ihn einschlägt. Er ist „richtig strong“, wie der GM anmerkt, auch wenn er im Nebel im Nachteil kämpft.
+Zugleich wirkt Lobrecht ruhig und gelassen. Bei einer späteren Begegnung nickt er nur zu Miyamanis Einschätzungen und ist nicht überrascht von Joars Verhalten (Beleg [5]). In Windung erweist er sich als pragmatisch und drängt zum zügigen Aufbruch: „Meine Herren, ich würde behaupten, wir sollten den Abzug machen. Ich mache das Schiff klar. Der Rest, der mitkommen will, ist in 15 Minuten am Dock. Ansonsten lege ich ohne euch ab.“ (Beleg [3], Transkript).
 
-Lobrecht ist zudem pragmatisch und vorsichtig. Beim Abstieg vom Berg lehnt er es ab, vorauszugehen, mit der Begründung: „Ich würde ungern vorausgehen. Vielleicht falle ich runter und ich kann mich einfach niemanden stützen, falls ich falle.“ Er zeigt sich gegenüber Joao zunächst skeptisch, als dieser einen eigenen Weg entdeckt hat, ist aber lernbereit: „Normalerweise gibt es nur diese zwei Wege runter vom Berg. Aber naja, man lernt doch immer gerne was Neues kennen.“ Gegenüber [Dodo](/characters/dodo.md) zeigt er Anerkennung, als dieser den Basilisken zähmt.
+Körperlich ist Lobrecht geschickt: Er wirft ein großes Seil über eine Schlucht und klettert geschickt (Beleg [5]). Im Kampf führt er einen Degen und schafft es, einen Gnoll zu töten (Beleg [6]).
 
 ## Beziehungen und Verbindungen
 
-**Miaomani**: Lobrechts ständige Begleiterin und Partnerin. Sie reisen gemeinsam, teilen sich ein Zelt und treten stets als Paar auf. Miaomani ist eher zurückhaltend und nickt meist nur zustimmend, während Lobrecht das Reden übernimmt. Sie verfügt über „wertvolle Kugeln“, die sie im Kampf einsetzt – etwa als die beiden durch das von Untoten verseuchte Gebiet bei Breska reisen.
-
-**Cookie**: Die beiden verbindet eine frühe freundschaftliche Begegnung, als Lobrecht ihr in seiner Kajüte ein Stück Kuchen gibt. Cookie selbst betrachtet den Kapitän daraufhin als „Buddies“, auch wenn Lobrecht selbst keinen Kuchen gegessen hat.
-
-**Die Gruppe**: Lobrecht kennt die Helden über mehrere Reisen hinweg und begrüßt sie stets freudig. Beim Wiedersehen in Ehrenfels umarmt er Lindo Laut „brüderlich oder freundschaftlich“, während Miaomani mit verschränkten Armen hinter ihm steht und lächelt. Er ist eine wichtige Informationsquelle für die Gruppe und berichtet ihr etwa von den Ereignissen in Ehrenfels und der Lage bei Breska.
-
-**Joao**: Lobrecht ist zunächst skeptisch gegenüber Joao und dessen selbst entdecktem Weg, zeigt sich aber lernbereit. In der Schlacht gegen die Gnolle verbarrikadiert sich Joao in einem Haus, während Lobrecht draußen kämpft.
+- **Zu den Gefährten von [Rotunas](/characters/rotunas.md):** Lobrecht transportiert die Heldengruppe, warnt sie vor Gefahren und hilft bei der Evakuierung in Windung. Cookie verbindet ihn mit der Kuchepisode; Lobrecht bleibt dabei freundlich, aber sachlich (Beleg [1], Transkript).
+- **Zu Esterossa:** Nach dem Bolzentreffer am Dock von Windung wird Lobrecht von Esterossa geheilt (Beleg [3]).
+- **Zu Miyamani:** Lobrecht reist wiederholt mit Miyamani. Sie verbraucht wertvolle Kugeln, um den Weg durch untote Gebiete zu sichern (Beleg [4]). In den Sessions 2026 agieren beide als Begleiter von Joar (Belege [5], [6]).
+- **Zu Joar:** Lobrecht begleitet Joar und führt dessen Eskorte an (Beleg [6]). Wie genau er zu Joar steht oder in wessen Auftrag er handelt, bleibt unklar.
+- **Zu Lindo Laut:** Nach der [Explosion der Gnoll-Leichen](/events/explosion_der_gnoll_leichen.md) wird Lobrecht in ein Gebüsch geschleudert und von der Schattenhorde angegriffen. [Lindo Laut](/characters/lindo_laut.md) rettet ihn mit Arcane Deflection (Beleg [6]).
+- **Zu Breska:** Lobrecht berichtet, mit Miyamani vor einigen Tagen an Breska vorbeigekommen zu sein. Wegen Untoter, Skelette und Zombies sei die Strecke unpassierbar gewesen; Breska habe aber keine Hilfe gewollt (Beleg [4]).
 
 ## Chronologie
 
-**Reise nach Sanddawn**: Lobrecht ist Kapitän des Gildenschiffs, das die Gruppe zum Inselarchipel Sanddawn bringt. An Bord gibt er Cookie ein Stück Kuchen und erklärt ihr die Karte der Inseln. Er beschreibt Sanddawn als Paradies des Lebens und weist die Gruppe auf ihre Aufgabe hin, zu Jean Vanour, dem Chef der Insel, zu reisen. Er plant, in der Bucht der Inseln anzulegen und der Gruppe ein Beiboot zur Verfügung zu stellen.
-
-**Reise nach Windung**: Lobrecht bringt die Gruppe mit einem kleineren Schiff nach Windung, einem idyllischen Fischerdorf. Bei der Ankunft wirkt das Dorf überraschend leer, was Lobrecht beunruhigt: „Ich bin überrascht, es ist sehr ruhig. Eigentlich ist es ein sehr idyllisches Fischerdorf.“ Er vermutet, dass die Angriffe bereits durch sein könnten, und sichert zunächst das Schiff, bevor er an Land geht. Bei einem Angriff wird er schwer verletzt, aber von [Esterossa](/characters/esterossa.md) geheilt. Er organisiert die Evakuierung der Dorfbewohner.
-
-**Bericht über Breska**: Lobrecht und Miaomani sind mit der Gruppe unterwegs, als das Gespräch auf Breska kommt. Lobrecht berichtet, dass sie vor einigen Tagen an Breska vorbeigekommen sind und die Strecke unpassierbar war: „[Untote](/factions/belorus_untotenarmee.md) überall, Skelette, irgendwelche Zombies.“ Miaomani musste mehrere ihrer wertvollen Kugeln verbrauchen. Er erwähnt außerdem, dass Breska keine Hilfe wollte und dass es vor einigen Wochen ein großes Treffen zwischen dem [Gildenmeister](/npcs/nox.md) und der neuen [Gilde](/factions/gilde_von_ehrenfels.md) gab, das im Fiasko endete. Er und Miaomani haben das Schiff im Hafen von Sanddorn vertaut und sind nun wieder dort, „wo wir hingehören“.
-
-**Schlacht von Ehrenfels**: Lobrecht ist eine wichtige Persönlichkeit in Ehrenfels. Am Ende der Schlacht stürmt er zusammen mit Miaomani und anderen wichtigen Persönlichkeiten sowie Gildenmitgliedern von hinten heran, um [Meister Pyrandras](/npcs/meister_pyrandras.md) zu helfen. Er gehört zu den Verstärkungen, die in der Schlacht eintreffen.
-
-**Wiedersehen in Ehrenfels**: Nach der Schlacht werden die Helden wie Helden empfangen. Lobrecht und Miaomani kommen der Gruppe entgegen, umarmen sie freundschaftlich und berichten von den Ereignissen in Ehrenfels. Lobrecht erzählt, dass Nox der Gruppe die Mission erklärt hat. Er ist eine zentrale Informationsquelle für die Gruppe über die Lage in der Stadt.
-
-**Abstieg vom Berg**: Lobrecht und Miaomani begleiten die Gruppe auf dem Weg vom Berg. Sie brauchen eine halbe Stunde, um ihr Zelt abzubauen, während Joao dies mit einem magischen Zeit-Ei in Sekundenschnelle erledigt – sehr zum Ärgernis der beiden. Lobrecht lehnt es ab, vorauszugehen, und überlässt die Führung der Gruppe. Beim Überqueren einer Brücke mit einem Seil wird er von Lindo Lauts Lawine an der Schulter verletzt. Er zeigt sich skeptisch gegenüber Joao, aber anerkennend gegenüber Dodo, als dieser den Basilisken zähmt.
-
-**Schlacht gegen die Gnolle**: Lobrecht ist Captain der Eskorte und kämpft tapfer gegen die Gnolle. Im Nebel, in dem er nichts sehen kann, dreht er sich im letzten Augenblick um, zieht seinen Degen und hält ihn einem angreifenden Gnoll entgegen, der mit einer scharfen Axt auf ihn einschlägt. Er wird von der Schattenhorde schwer verletzt, aber von Lindo Laut in seine [Pocket Domain](/domains/pocket_domain.md) gerettet.
+- **2025-04-30:** Lobrecht empfängt Cookie in seiner Kajüte, gibt ihr Kuchen und erklärt die Sanddorn-Inseln. Er kündigt an, in der Bucht der Inseln anzulegen und ein Beiboot auszusetzen (Beleg [1]).
+- **2025-05-06:** Das Schiff hat die Gruppe zur Insel gebracht. Lobrecht setzt sie mit einem Beiboot ab und mahnt zur Vorsicht (Beleg [2]).
+- **2025-07-29:** In Windung wird Lobrecht am Dock von Bolzen getroffen und von Esterossa geheilt. Er organisiert die Evakuierung der Dorfbewohner und drängt auf einen Abzug binnen 15 Minuten (Beleg [3]).
+- **2025-11-18:** Lobrecht und Miyamani kommen zur Gruppe. Er berichtet, vor einigen Tagen an Breska vorbeigefahren zu sein, wegen Untoter aber nicht durchgekommen zu sein (Beleg [4]).
+- **2026-08-18:** Als Begleiter von Joar wirft Lobrecht ein Seil über eine Schlucht und klettert geschickt. Er wird von einer Lawine getroffen und an der Schulter verletzt (Beleg [5]).
+- **2026-08-25:** Lobrecht führt die Eskorte von Joar an, kämpft mit einem Degen und tötet einen Gnoll. Bei der Explosion der Gnoll-Leichen wird er verletzt und ins Gebüsch geschleudert. Lindo Laut rettet ihn vor der Schattenhorde (Beleg [6]).
 
 ## Offene Fragen
 
-- Was ist Lobrechts genaue Rolle innerhalb der Gilde? Er wird als „Kapitän des Gildenschiffs“ und später als „Captain der Eskorte“ bezeichnet, aber seine genaue Position und sein Rang innerhalb der Gildenhierarchie bleiben unklar.
-- Wie ist die Beziehung zwischen Lobrecht und Miaomani genau? Sie treten stets als Paar auf, aber ob es sich um eine romantische oder rein partnerschaftliche Beziehung handelt, wird nicht explizit geklärt.
-- Was geschah mit Lobrecht nach der Schlacht gegen die Gnolle? Er wurde schwer verletzt in Lindo Lauts Pocket Domain gerettet, aber sein weiterer Verbleib und seine Genesung sind nicht dokumentiert.
+- Warum Lobrecht Joar eskortiert und in wessen Auftrag diese Eskorte steht, wird in den Belegen nicht erläutert.
 
 ## Belege
 
-1. Session 2025-04-30 @ 00:13:45 (https://www.youtube.com/watch?v=fsCOiSkKKTE)
-2. Session 2025-07-29 @ 00:04:00 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
-3. Session 2025-11-18 @ 01:29:00 (https://www.youtube.com/watch?v=w__ahowb9p0)
-4. Session 2026-04-09 @ 00:57:10 (https://www.youtube.com/watch?v=vcGkejr8_nI)
-5. Session 2026-07-29 @ 00:46:59 (https://www.youtube.com/watch?v=umGyKLkefJI)
-6. Session 2026-08-18 @ 00:15:26 (https://www.youtube.com/watch?v=10swvSz6k7U)
-7. Session 2026-08-25 @ 01:02:47 (https://www.youtube.com/watch?v=1Cjj3OVqiYA)
+[1] Session 2025-04-30, 00:13:38, https://www.youtube.com/watch?v=fsCOiSkKKTE  
+[2] Session 2025-05-06, 00:03:04, https://www.youtube.com/watch?v=e0v6AFGd4mE  
+[3] Session 2025-07-29, 01:56:58, https://www.youtube.com/watch?v=XXgO5Ht4Q0A  
+[4] Session 2025-11-18, 01:28:51, https://www.youtube.com/watch?v=w__ahowb9p0  
+[5] Session 2026-08-18, 00:24:13, https://www.youtube.com/watch?v=10swvSz6k7U  
+[6] Session 2026-08-25, 01:33:16, https://www.youtube.com/watch?v=1Cjj3OVqiYA

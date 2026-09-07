@@ -1,8 +1,8 @@
 ---
 type: Item
-title: Amulett mit Rabenschädel
-description: Das Amulett mit Rabenschädel ist ein magisches Erbstück, das Gulrak zurückholen
-  wollte. Es befindet sich angeblich im Besitz von Baran, wir…
+title: Amulett mit Krähenschädel
+description: Gulrak behauptet, dieses magische Familienerbstück sei im Besitz von
+  Baran und er habe versucht, es zurückzustehlen. Das Amulett soll einen…
 tags:
 - items
 timestamp: '2025-04-30T00:00:00Z'
@@ -10,7 +10,7 @@ id: ITEM_AMULETT_MIT_RABENSCHAEDEL
 subtype: Artefakt
 ---
 
-Das Amulett mit Rabenschädel ist ein magisches Erbstück, das [Gulrak](/npcs/gulrak.md) zurückholen wollte. Es befindet sich angeblich im Besitz von [Baran](/npcs/baran.md), wird aber nicht gefunden.
+[Gulrak](/npcs/gulrak.md) behauptet, dieses magische Familienerbstück sei im Besitz von [Baran](/npcs/baran.md) und er habe versucht, es zurückzustehlen. Das Amulett soll einen Krähenschädel darstellen und von Gulraks Urgroßvater stammen. Es wird in dieser Session nicht gesehen.
 
 # Belege
 

@@ -1,8 +1,8 @@
 ---
 type: Deity
 title: Joran der Münzenzähler
-description: Joran der Münzenzähler ist ein neuer Gott der Welt, die erst seit zwölf
-  Jahren besteht. Er gehört zu den neuen Göttern, die nach der Verban…
+description: In der Folgesession am 10. Juli 2026 zeigt sich die anhaltende Wirkung.
+  Sanges Blutmagie, die er sich bildlich als rote, turbulente Glaskug…
 tags:
 - deities
 timestamp: '2026-07-10T00:00:00Z'
@@ -13,49 +13,37 @@ aliases:
 ---
 
 ## Überblick
-
-Joran der Münzenzähler ist ein neuer Gott der Welt, die erst seit zwölf Jahren besteht. Er gehört zu den neuen Göttern, die nach der Verbannung der alten Götter versuchen, das Gleichgewicht aufrechtzuerhalten. Sein Wirken in der Welt ist subtil: Es gibt kaum sichtbare Anzeichen seiner Existenz, doch er spricht zu denen, die es verdienen.
-
-In [Kleinringtal](/locations/ringtal.md) steht eine Statue, die Joran dem Münzenzähler gewidmet ist. Sie trägt seinen Namen als Gravur. Die Paladin [Adeliga](/npcs/adeliga_der_eulenseraph.md) verehrt ihn als ihre Gottheit, ihren Patron und Beschützer, und handelt in seinem Namen.
+[Joran](/deities/joran.md) der Münzenzähler ist ein neuer Gott, dessen Statue einen jungen Burschen mit einem Sack voll Gold und einer Münze darstellt. Er gehört zu den „neuen Göttern“, deren Licht der [Dunkelheit](/deities/dunkelheit.md) entgegengesetzt wird. In der Kampagne tritt Joran als segnende Gottheit in Erscheinung: Er bietet [Sange](/characters/sange.md) eine Vision und einen Segen an, woraufhin sich Sanges Blutmagie verändert. Joran ist außerdem der Patron von [Adeliga](/npcs/adeliga_der_eulenseraph.md).
 
 ## Rolle in der Kampagne
+Joran wird erstmals in der Session vom 4. Juni 2026 für die Gruppe bedeutsam, als Sange in einer Situation innerer Dunkelheit steckt. Eine Stimme bietet Sange den Segen Jorans an und verweist auf die neuen Götter, ohne deren Licht nichts sein könne. Sange nimmt den Segen an und verpflichtet sich Joran. Der Segen wirkt unmittelbar: Sange empfindet Ruhe und Gelassenheit, und seine Gefährten sehen, wie er zu leuchten beginnt. Die dabei wirkende Magie wird als anders als alle den Helden bekannte Magie beschrieben und stellt für die Gruppe ein erstes eindeutiges Zeichen für die Existenz der neuen Götter dar.
 
-Joran tritt in der Kampagne erstmals in Erscheinung, als er [Sange](/characters/sange.md) segnet. Dieser Segen löst einen Timer aus und verändert Sanges [Blutmagie](/domains/blutmagie.md) spürbar. Seit dem Segen ist Sanges Magie, die zuvor turbulent und stürmisch war wie eine rot gefüllte Glaskugel, deutlich ruhiger geworden. In dem Rot der Blutmagie ist nun ein kleiner Funke Licht enthalten, der dem Chaos der Blutmagie entgegenwirkt.
+In der Folgesession am 10. Juli 2026 zeigt sich die anhaltende Wirkung. Sanges Blutmagie, die er sich bildlich als rote, turbulente Glaskugel vorstellt, ist ruhiger geworden; in dem Rot befindet sich nun ein kleiner Lichtfunke, der dem Chaos der Blutmagie entgegenwirkt. [Kaya](/characters/kaya.md) beobachtet Sange besorgt und testet, ob Münzen aus seinen Ohren kommen – ein Hinweis auf mögliche körperliche Manifestationen des Segens, dessen Ausgang nicht überliefert ist.
 
-Die Paladin Adeliga ist seine treue Anhängerin. Sie begegnet [Saris](/characters/saris.md) in Kleinringtal an der Statue Jorans und zeigt sich als dessen Dienerin. Als Saris sie nach der Gottheit fragt, erklärt Adeliga, dass nicht allzu viel über Joran bekannt sei.
-
-[Kaya](/characters/kaya.md) steht dem neuen Gott misstrauisch gegenüber.
+Joran fungiert damit als Auslöser einer inneren Veränderung Sanges und als konkreter Beleg für die Macht der neuen Götter.
 
 ## Wichtige Merkmale
-
-Über Jorans äußere Erscheinung oder direkte Manifestationen ist aus den Belegen nichts bekannt. Sein Wirken zeigt sich auf indirekte Weise:
-
-- **Segen**: Joran segnet diejenigen, die es verdienen. Sein Segen an Sange beruhigt dessen Blutmagie und fügt ihr einen Funken Licht hinzu.
-- **Gnade**: Adeliga kann die Gnade ihres Gottes wirken – als Saris bemerkt, dass Adelias Augen kurz golden aufleuchten, erklärt diese, es sei die Gnade ihres Gottes gewesen.
-- **Statue**: In Kleinringtal existiert eine Statue mit der Gravur „Joran, der Münzenzähler“, die Saris eingehend untersucht und dokumentiert hat.
-- **Name**: Sein Beiname „der Münzenzähler“ deutet auf eine Verbindung zu Münzen, Handel oder Abrechnung hin – Näheres ist aus den Belegen nicht ersichtlich.
+- **Darstellung:** Die Statue Jorans zeigt einen jungen Burschen mit einem Sack voll Gold und einer Münze. Weitere bildliche Darstellungen sind nicht bekannt.
+- **Zugehörigkeit:** Joran wird als „neuer Gott“ bezeichnet und gehört zu den „neuen Göttern“, deren Licht als notwendig für das Sein beschrieben wird.
+- **Fähigkeiten:** Joran kann Visionen und Segen verleihen. Sein Segen erzeugt ein Gefühl von Ruhe und Gelassenheit, lässt den Gesegneten sichtbar leuchten und beruhigt Sanges Blutmagie, der er einen Lichtfunken hinzufügt. Die dabei wirkende Magie unterscheidet sich von der den Helden bekannten Magie.
+- **Begleiterscheinung:** Während der Segnung erscheint in der Vision eine Eule oder eine Hand, die Sanges Maske berührt. Ob es sich dabei um Joran selbst, ein Symbol oder einen Boten handelt, bleibt unklar.
 
 ## Beziehungen und Verbindungen
-
-- **Adeliga**: Seine Paladin in Kleinringtal. Sie nennt ihn ihre Gottheit, ihren Patron und Beschützer und handelt in seinem Namen. Sie kann seine Gnade wirken.
-- **Sange**: Von Joran gesegnet. Seit dem Segen ist Sanges Blutmagie ruhiger und enthält einen Funken Licht.
-- **Kaya**: Misstrauisch gegenüber dem neuen Gott.
+- **[Sange](/characters/sange.md):** Sange hat sich Joran verpflichtet und wurde von ihm gesegnet. Der Segen verändert Sanges Blutmagie dauerhaft.
+- **[Adeliga](/npcs/adeliga_der_eulenseraph.md):** Joran ist ihr Patron. Nähere Umstände dieser Beziehung sind nicht bekannt.
+- **[Kaya](/characters/kaya.md):** Beobachtet Sange nach dem Segen mit Sorge und testet dessen Auswirkungen.
+- **[Neue Götter](/deities/neue_goetter.md):** Joran ist einer der „neuen Götter“, einer Gruppe von Gottheiten, deren Licht der Dunkelheit entgegenwirkt. Die genaue Zusammensetzung oder Organisation dieser Gruppe bleibt unklar.
 
 ## Chronologie
-
-**Session 2026-06-04:** In Kleinringtal entdeckt Saris die Statue Jorans, die sie zuvor bereits eingehend untersucht und in ihrem [Notizbuch](/items/notizbuch.md) dokumentiert hat. Die Paladin Adeliga spricht sie an und offenbart, dass Joran der Münzenzähler ihre Gottheit ist. Auf Saris' Nachfrage erklärt Adeliga, dass die Welt erst seit zwölf Jahren besteht und die neuen Götter versuchen, das Gleichgewicht aufrechtzuerhalten. Es gebe kaum Anzeichen von ihnen, aber sie redeten mit denen, die es verdienen. Dabei leuchten Adelias Augen kurz golden auf – die Gnade ihres Gottes. Sange empfängt in dieser Session den Segen Jorans, was einen Timer auslöst.
-
-**Session 2026-07-10:** Sange reflektiert die Veränderungen seit dem Segen: Seine Blutmagie ist ruhiger geworden, ein kleiner Funke Licht wirkt dem Chaos entgegen. Seine Gefühlslage hat sich ebenfalls verändert. Kaya äußert Misstrauen gegenüber dem neuen Gott.
+- **Session am 4. Juni 2026:** Sange wird in einer Vision der Segen Jorans angeboten. Die Worte des Anbieters lauten: „Ihr seid der Dunkelheit näher, als man das von einem Gläubigen wünschen würde. Doch wo Dunkelheit ist, da ist immer ein Funklicht, denn nichts kann sein ohne das Licht der neuen Götter.“ Sange nimmt an und verpflichtet sich Joran. Er beschreibt seine Empfindung mit den Worten: „Ich spüre ein Gefühl der Ruhe, der Gelassenheit, wie ich es schon lange nicht mehr verspürt habe.“ Die anderen sehen, wie Sange zu leuchten beginnt. Eine Eule oder Hand berührt Sanges Maske.
+- **Zwischen den Sessions:** Der Segen entfaltet seine Wirkung; Sanges Blutmagie verändert sich.
+- **Session am 10. Juli 2026:** Sange berichtet, dass seine Blutmagie – bildlich eine rote, turbulente Glaskugel – seit dem Segen viel ruhiger ist und nun einen kleinen Lichtfunken enthält, der dem Chaos entgegenwirkt. Kaya testet, ob Münzen aus seinen Ohren kommen; das Ergebnis ist nicht überliefert.
 
 ## Offene Fragen
+- Die Natur der „neuen Götter“ und Jorans Stellung in diesem Pantheon sind unklar.
+- Die langfristigen Auswirkungen des Segens auf Sange sind offen; insbesondere bleibt ungeklärt, ob körperliche Manifestationen wie Münzen aus den Ohren auftreten.
+- Die Rolle Jorans als Patron von [Adeliga](/npcs/adeliga_der_eulenseraph.md) wird erwähnt, aber nicht näher ausgeführt.
 
-- Was genau bedeutet der Beiname „der Münzenzähler“? Welche Domäne oder Werte verkörpert Joran?
-- Welche weiteren Anhänger oder Paladine hat Joran neben Adeliga?
-- Was löst der Timer aus, der durch Sanges Segen gestartet wurde?
-- Welche Absichten verfolgt Joran mit seinem Segen für Sange?
-- Warum ist Kaya misstrauisch gegenüber Joran?
-
-## Belege
-
-[P-52] Session 2026-06-04 @ 01:19:18 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
+# Belege
+[P-52] Session 2026-06-04 @ 01:31:44 (https://www.youtube.com/watch?v=EGNh8O7pE5Q)
 [S1-01-B] Session 2026-07-10 @ 00:06:19 (https://www.youtube.com/watch?v=H-eHSlfxUAg)

@@ -1,15 +1,15 @@
 ---
 type: NPC
-title: Tatrick
-description: Tatrick ist ein Demilich, der seit Jahrhunderten im Keller eines Turms
-  in Abyssalis gefangen ist. Er hat sein Gedächtnis teilweise verloren…
+title: Tattrick
+description: Der uralte Demilich Tattrick lebt im Keller eines Turms in der Narbe.
+  Er hat einen Teil seines Verstands verloren, erinnert sich aber an ei…
 tags:
 - npcs
 timestamp: '2026-06-16T00:00:00Z'
 id: NPC_TATRICK
 ---
 
-Tatrick ist ein Demilich, der seit Jahrhunderten im Keller eines Turms in [Abyssalis](/domains/splitterwelt.md) gefangen ist. Er hat sein Gedächtnis teilweise verloren, erinnert sich aber an ein Kind, das vor zwölf Jahren in den Tempel gebracht wurde. Er wird von [Vorgul'tar](/deities/vorgul_tar.md) kontrolliert, aber [Esterossa](/characters/esterossa.md) befreit ihn, indem er das Kontrollsymbol zerstört. Er verrät der Gruppe das Geheimwort für das [Portal](/locations/portal.md) und bleibt zurück, um das Biest aufzuhalten.
+Der uralte Demilich Tattrick lebt im Keller eines Turms in der [Narbe](/locations/narben.md). Er hat einen Teil seines Verstands verloren, erinnert sich aber an ein Kind, das vor etwa zwölf Jahren zum [Tempel des Herrn der Schleier](/locations/tempel_des_herrn_der_schleier.md) gebracht wurde und von der Umgebung geschützt war. Er kennt den versteckten Altar und das Geheimwort "[Splitter des Ewigen](/items/splitter_des_ewigen.md)", mit dem man hineinkommt. Im Verlauf wird offenbart, dass er einst von [Vorgul'tar](/deities/vorgul_tar.md) getötet wurde, als dieser den Splitter nicht nutzen konnte, aber der Ort ließ ihn nicht sterben. Er trägt ein Kontrollsymbol am Hinterkopf, das von Jen aktiviert wird und ihn kurzzeitig zur Marionette macht. [Esterossa](/characters/esterossa.md) brennt dieses Symbol mit heiliger Magie aus und befreit ihn; danach verrät er das Passwort und hält die herannahenden Feinde auf.
 
 # Belege
 

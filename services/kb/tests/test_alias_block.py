@@ -11,7 +11,7 @@ from pathlib import Path
 
 import pytest
 import yaml
-
+from pnp_okf.models import CanonicalEntity, EntityType, MentionRef
 from pnp_okf.resolve import (
     _load_alias_blocks,
     _load_alias_overrides,
@@ -20,7 +20,6 @@ from pnp_okf.resolve import (
     rules_path_for,
     write_registry,
 )
-from pnp_okf.models import CanonicalEntity, EntityType, MentionRef
 
 KNOWLEDGE = Path(__file__).resolve().parents[3] / "knowledge"
 REAL_REGISTRY = KNOWLEDGE / "entity_registry.yaml"
@@ -72,7 +71,6 @@ def test_write_registry_drops_blocked_alias(tmp_path: Path):
     )
     write_registry([entity], registry)
 
-    import yaml
 
     data = yaml.safe_load(registry.read_text(encoding="utf-8"))
     aliases = data["entities"][0]["aliases"]

@@ -1,83 +1,58 @@
 ---
 type: Character
 title: Valeria
-description: Valeria ist eine Magierin vom Nomadenvolk der Simia, die sich auf Feuermagie
-  spezialisiert hat. Sie ist kleinwüchsig und reitet bevorzugt a…
+description: 'Als Feuermagierin nutzt sie verschiedene Feuerzauber: Feuerstrahlen,
+  Feuerbolzen und komprimierte Feuerstöße. Einen Gegner tötet sie, indem…'
 tags:
 - characters
-timestamp: '2025-11-14T00:00:00Z'
+timestamp: '2026-02-11T00:00:00Z'
 id: CHAR_VALERIA
 aliases:
 - Valerie
 ---
 
-# Valeria
-
 ## Überblick
-
-Valeria ist eine Magierin vom Nomadenvolk der Simia, die sich auf Feuermagie spezialisiert hat. Sie ist kleinwüchsig und reitet bevorzugt auf der Schulter ihres Gefährten [Rotunas](/characters/rotunas.md), was ihr den Spitznamen „frecher Größenunterschied“ eingebracht hat. Sie trägt eine Pilotenbrille mit verschiedenen Zaubergläsern und führt ein Flammentier als Begleiter mit sich. Valeria ist neugierig, hungrig und probiert gerne Essen und Trinken, zeigt aber auch Mitgefühl und Hilfsbereitschaft gegenüber Verletzten. Sie ist pragmatisch, entschlossen und mutig im Kampf, dabei aber auch misstrauisch gegenüber Fremden.
+Valeria ist eine weibliche Simja-Magierin und Feuermagierin, klein und affenartig. Sie gehört zur Gruppe um [Rotunas](/characters/rotunas.md) und reitet ihm häufig auf der Schulter. In den frühen Sitzungen ist sie eine aktive und impulsive Gefährtin; später wird sie schwanger, verlässt die Gruppe vorübergehend und hält per Brief Kontakt.
 
 ## Rolle in der Kampagne
-
-Valeria ist eine zentrale Figur der Gruppe, die sich um Rotunas und seine Gefährten gebildet hat. Sie ist die Magierin des Teams und übernimmt im Kampf die Rolle der Fernkämpferin mit ihren Feuerzaubern. Sie ist eine ehemalige Gefährtin der Gruppe, die sich im Verlauf der Kampagne abmeldet, um in ihrer Heimat ein Kind zu erwarten. Ihr Abschiedsbrief, den sie der Gruppe überbringen lässt, markiert einen Wendepunkt in der Kampagne.
+Valeria prägt die ersten Abenteuer der Gruppe durch ihre Neugier und Risikobereitschaft. Sie verschafft der Gruppe Zugang zu [Leandras](/npcs/lendras.md), kämpft mit Feuerzaubern gegen [Goblins](/npcs/pilz_goblins.md) und einen [Oger](/npcs/oger.md), verändert in einer [Katakombe](/locations/katakomben.md) eigenmächtig eine Sarginschrift und löst durch das Ausblasen einer Kerze an einer Nerash-Statue eine Ereigniskette aus, die zur Befreiung einer gefangenen Kreatur führt. Nach ihrer Abreise bleibt sie im Hintergrund präsent: Sie schickt Gold und einen [Ring](/items/ring.md), kündigt eine spätere Rückkehr an und wird von den verbliebenen Gefährten weiter als Teil der Gruppe betrachtet.
 
 ## Wichtige Merkmale
+Valeria ist klein und affenartig, reitet auf [Rotunas'](/characters/rotunas.md) Schulter und trägt eine Fliegerbrille mit farbigen Gläsern, die ihr als Zauberbuch dient. Ihr Hauptwerkzeug ist ein [Great Staff](/items/great_staff.md), mit dem sie magische Bolzen verschießt; außerdem besitzt sie ein kleines Flammentier, das auf ihrer Schulter sitzt, sowie eine Armbrust, die [Rotunas](/characters/rotunas.md) für sie trägt.
 
-### Fähigkeiten
+Als Feuermagierin nutzt sie verschiedene Feuerzauber: Feuerstrahlen, Feuerbolzen und komprimierte Feuerstöße. Einen Gegner tötet sie, indem sie eine Flamme aus ihrem [Stab](/items/lindo_lauts_stab.md) zieht, sie in der Hand komprimiert und dem Feind in den Hinterkopf wirft, sodass sie vorne aus dem Maul wieder austritt. Ihre eigene Beschreibung dafür lautet, sie ziehe „die Flamme raus, komprimiere die in meiner Hand und schmeiße die so gesehen in den Hinterkopf, sodass die dann vorne aus dem Maul wieder rausfliegt“. Sie kann außerdem mit Hitze Metallketten schmelzen; einen Bannzauber hat sie nach eigener Aussage früher gelernt, war darin aber immer schlecht und hat ihn nicht im täglichen Repertoire. Zusätzlich verfügt sie über die Heilfähigkeit Mending Touch, setzt sie bei [Nip](/npcs/nip.md) jedoch nicht ein.
 
-Valeria ist eine Magierin, die sich fast ausschließlich auf Feuermagie spezialisiert hat. Sie „experimentiert immer gerne viel mit Feuer“, wie sie selbst sagt, und ihre Magie ist „fast immer Feuer“. Sie beherrscht mehrere Feuerzauber:
-
-- **Feuerstrahl**: Ein dünner, fokussierter Feuerstrahl, den sie aus ihrem [Stab](/items/lindo_lauts_stab.md) abfeuert. Sie kann damit mehrere Gegner in einer Reihe treffen, wie sie es bei einer Dreier-Goblin-Reihe demonstriert.
-- **Wild Flame**: Ein weiterer Feuerzauber, mit dem sie mehrere [Goblins](/npcs/pilz_goblins.md) gleichzeitig tötet.
-- **Drei Funken**: Ein Zauber, bei dem sie drei Funken auf eine Kreatur abfeuert, der jedoch weniger Schaden anrichtet.
-
-Sie trägt eine Fliegerbrille mit verschiedenen Zaubergläsern, die sie im Kampf nutzt. Zudem besitzt sie eine [Nomadentasche](/items/nomadentasche.md), aus der sie Gegenstände wie eine Hammelkeule als Köder hervorholt. Sie kauft sich eine Armbrust vom [Bürgermeister](/npcs/buergermeister_spitzzahn.md) des Dorfes.
-
-### Auftreten
-
-Valeria ist eine Simia, also ein Mitglied des Nomadenvolks. Sie ist klein genug, um auf Rotunas' Schulter zu reiten, was der Spielleiter als „frechen Größenunterschied“ kommentiert. Sie trägt eine Pilotenbrille und hat ein Flammentier als Begleiter.
-
-### Wesenszüge
-
-Valeria ist neugierig und hungrig, probiert gerne Essen und Trinken. Sie zeigt Mitgefühl, als sie den betrunkenen Nip behandelt, und hilft einem verletzten Bauern, indem sie ihn heilt. Sie ist pragmatisch und sucht nach Auswegen aus schwierigen Situationen, zeigt aber auch Entschlossenheit und Mut im Kampf. Gegenüber Fremden wie dem Magier und [Voras](/npcs/voras.md) ist sie misstrauisch. In gefährlichen Situationen ist sie bereit zu kämpfen, aber auch vorsichtig. Ihre pragmatische Art zeigt sich etwa, als sie in einer bedrohlichen Lage zu [Esterossa](/characters/esterossa.md) sagt: „Das ist dein Problem, wirklich. Das ist dein Problem. Wir sind hier am Abgrund. Hier geht es etwa 3 Millionen Größen von mir nach unten und du hast ein Problem, weil du ein bisschen blass bist.“
+Ihr Wesen ist impulsiv, ständig hungrig und neugierig. Sie klettert durchs Fenster zu [Leandras](/npcs/lendras.md), fragt ihn, ob er der Koch sei, und sagt „Ich hab Hunger“. Sie versucht, dessen Kiste zu öffnen, isst eine Karotte vom Krämer-Hof und ist freundlich, aber auch frech; oft versucht sie, andere einzuschüchtern oder zu bezirzen. Ihre Risikofreude zeigt sich, als sie trotz Warnung ein Bild einer dämonischen Kreatur in der Katakombe berührt und später eigenmächtig die Sarginschrift ändert.
 
 ## Beziehungen und Verbindungen
-
-- **Rotunas**: Ihr enger Gefährte, auf dessen Schulter sie reitet. Sie kennt ihn gut genug, um zu wissen, dass er sie auf die Schulter nehmen kann. In ihrem Abschiedsbrief richtet sie sich an „Rotunas und seine treuen Gefährten“.
-- **Esterossa**: Eine Gefährtin, mit der sie sich in angespannten Situationen einen trockenen Schlagabtausch liefert.
-- **[Cookie](/characters/cookie.md)**: Eine Gefährtin, deren Blässe sie in einer bedrohlichen Lage nicht als Problem gelten lässt.
-- **[Lindo Laut](/characters/lindo_laut.md)**: Ein Gefährte, mit dem sie während des Rituals in Kontakt stand und der dadurch offenbar andere in die [Festung](/locations/festung.md) gezogen hat.
-- **[Dodo](/characters/dodo.md)**: Ein Gefährte, der ebenfalls in die Festung gezogen wurde.
-- **[Horatio](/npcs/horatio.md)**: Ein Goblin, der den Abschiedsbrief überbringt und sich an den Goldsäcken bedient.
+- [Rotunas](/characters/rotunas.md): Valeria reitet auf seiner Schulter; er hebt sie ins Fenster und trägt ihre Armbrust. Ihr späterer Brief ist an Rotunas und seine Gefährten adressiert.
+- [Leandras](/npcs/lendras.md): Durch das Fenster dringt sie bei ihm ein und hält ihn zunächst für den Koch.
+- [Berthold](/npcs/berthold.md): Von ihm kauft Valeria eine Armbrust.
+- [Cookie](/characters/cookie.md): Nachdem Valeria den Speer nicht behalten will, überlässt sie ihn [Cookie](/characters/cookie.md) mit den Worten „Ja klar, nimm mal“, obwohl sie zunächst „Dips, meiner!“ gerufen hatte.
+- [Dodo](/characters/dodo.md), [Lindo Laut](/characters/lindo_laut.md) und [Cookie](/characters/cookie.md) werden in Dodos Aufzählung als Gruppenmitglieder genannt, mit denen man später gemeinsam eine Prüfung machen sollte.
+- [Esterossa](/characters/esterossa.md): Er zeigt später Valerias Brief und erklärt ihre Abwesenheit; Valeria gehe es gut und erwarte „eine kleine Valeria“.
+- [Nerash](/deities/nerash.md): Nachdem die gefangene Kreatur befreit wurde, betet Valeria spontan zu Nerash und erklärt sich zu ihrer ersten Dienerin.
+- [Voras der Heilige](/npcs/voras.md): In der Katakombe ändert sie die Inschrift auf dessen Sarg von „Voras der Schrecken“ zu „[Voras der Heilige](/npcs/voras.md)“.
 
 ## Chronologie
-
-### Session 2025-04-09: Ankunft im Dorf
-
-Valeria kommt mit der Gruppe im Dorf an, das von einem Goblin-Problem geplagt ist. Sie reitet auf Rotunas' Schulter und erkundet mit ihm das Dorf. Sie behandelt den betrunkenen Nip mit Mitgefühl. Im [Kampf gegen den Goblin-Späher](/events/kampf_gegen_den_goblin_spaeher.md) erweist sie sich als effektiv, indem sie ihn mit einem Feuerstrahl tötet. Sie kauft eine Armbrust vom Bürgermeister und trägt ihre Pilotenbrille. Ihr Flammentier begleitet sie.
-
-### Session 2025-04-23: Kampf gegen Oger und Goblins
-
-Valeria kämpft mit Feuerzaubern gegen den [Oger](/npcs/oger.md) und tötet ihn mit einem Feuerstrahl. Später tötet sie mehrere Goblins mit Wild Flame. Sie nutzt ihre Nomadentasche, um eine Hammelkeule als Köder zu verwenden. Sie ist misstrauisch gegenüber dem Magier und Voras, zeigt aber Hilfsbereitschaft, indem sie einen verletzten Bauern heilt. Im Kampf gegen die Goblin-Reihe demonstriert sie ihre Fähigkeit, mehrere Gegner mit einem Feuerstrahl zu treffen: „Ich finde es sehr cool, dass diese, wenn man von mir aus guckt, dass da genau so eine Dreier-Goblin-Reihe steht. So ziemlich genau entschlussreich. Das heißt, wenn ich den ersten verfehle, dann trifft es vielleicht den zweiten und wenn ich den zweiten verfehle, dann trifft es vielleicht den dritten.“
-
-### Session 2025-07-09: Die Festung und das Ritual
-
-Valeria wird zusammen mit anderen Gefährten in eine fremde Festung gezogen, offenbar durch ein Ritual, das mit [Lindo Lauts Amulett](/items/amulett_des_heiligen_duran.md) zusammenhängt. Sie ist verwirrt über die Situation: „Wo sind wir hier reingeraten? Ich war doch eben noch an der Kirche.“ Sie zeigt Pragmatismus und sucht nach einem Ausweg. Sie zerstört die Ketten, die den [Speer](/items/speer.md) halten, und pustet die Kerze an der Statue von [Nerash](/deities/nerash.md) aus, was die Kreatur freisetzt. Sie ist bereit zu kämpfen, aber auch vorsichtig. Am Ende betet sie zu Nerash und bietet sich als treue Dienerin an.
-
-### Session 2025-11-14: Der Abschiedsbrief
-
-Valeria hat die Gruppe verlassen. Sie schreibt einen [Brief](/items/brief.md), den ein Rabe überbringt und der an Rotunas adressiert ist. In dem Brief teilt sie mit, dass sie in ihre Heimat zurückkehrt, um ein Kind zu erwarten: „Mit schwerem Herzen schreibe ich diese Zeilen. So sehr es mich auch danach drängt, an deiner Seite weiter durch die Lande zu ziehen, muss ich dir mitteilen, dass sich unsere Wege vorerst nicht kreuzen können. In meiner Heimat gibt es viel vorzubereiten.“ Sie schickt zwei Säcke Gold und einen Ring, den sie in ihren alten Gemäuern gefunden hat. Sie schreibt: „Ich kann nicht sagen, ob es Glück bringt oder Gefahr bringt, aber ich spüre, dass er für die Gruppe voll Nutzen sein kann. Ich gebe gut auf die Nacht und setze den Weiser ein, wenn die Zeit gekommen ist.“ Der Goblin Horatio, der den Brief überbringt, bedient sich an den Goldsäcken, bevor er sie der Gruppe übergibt.
+- **Session 2025-04-09:** Valeria klettert durchs Fenster zu [Leandras](/npcs/lendras.md), stillt ihren Hunger, kauft eine Armbrust bei [Berthold](/npcs/berthold.md) und kämpft gegen einen Goblin-Späher. Sie setzt magische Bolzen und einen Feuerbolzen ein und tötet den Goblin.
+- **Session 2025-04-23:** In einer Katakombe tötet sie mehrere Goblins und einen gefangenen Oger, heilt einen verletzten Bauern mit Mending Touch, berührt trotz Warnung ein dämonisches Bild und ändert die Sarginschrift von „Voras der Schrecken“ zu „Voras der Heilige“.
+- **Session 2025-07-09:** Valeria schmilzt die roten Ketten, die einen Speer festhalten, mit Hitze. Sie bläst die Kerze an der Nerash-Statue aus, wodurch die magische Barriere fällt und die gefangene Kreatur erscheint; sie stimmt schließlich der Befreiung zu. Nach der Rückkehr betet sie spontan zu Nerash und erklärt sich zu deren erster Dienerin.
+- **Session 2025-09-17:** Valeria ist nicht anwesend; [Dodo](/characters/dodo.md) nennt sie in einer Aufzählung von Gruppenmitgliedern, mit denen man später eine Prüfung machen könnte.
+- **Session 2025-11-14:** Valeria schreibt einen Brief: Sie erwartet ein Kind und kann vorerst nicht zurückkehren. Sie hat ihren Keller durchstöbert, Dinge verkauft und schickt zwei Säcke Gold sowie einen Ring. Sie kündigt an, aus der Ferne zu beobachten und später wieder zur Gruppe zu stoßen.
+- **Session 2025-11-18:** [Esterossa](/characters/esterossa.md) zeigt den Brief und erklärt, Valeria sei wohlauf und erwarte ein Kind; sie sei für die nächste Zeit unpässlich.
+- **Session 2026-02-11:** Valeria wird als frühere Gefährtin erwähnt, die auf Reisen ging und der Gruppe ein Item hinterlassen hat. Es wird diskutiert, ob es sich um die Maske handelt, mit der man mit Toten sprechen kann; [Esterossa](/characters/esterossa.md) verneint.
 
 ## Offene Fragen
+- Welches Item Valeria der Gruppe hinterlassen hat, bleibt unklar; [Esterossa](/characters/esterossa.md) sagt, es war nicht die Maske, mit der man mit Toten sprechen kann.
+- Was Valerias Erklärung zur ersten Dienerin Nerashs langfristig bedeutet, ist offen.
+- Ob und wann sie nach der Geburt zur Gruppe zurückkehrt, ist offen.
 
-- Was genau ist mit „Ich gebe gut auf die Nacht und setze den Weiser ein, wenn die Zeit gekommen ist“ gemeint? Welcher „Weiser“ wird hier erwähnt?
-- Welche Bedeutung hat der Ring, den Valeria der Gruppe schickt? Bringt er Glück oder Gefahr?
-- Was ist aus Valerias Flammentier geworden?
-- Wie wird Valerias Kind in die Kampagne hineinspielen, falls es wieder auftaucht?
-
-## Belege
-
-[P-03] Session 2025-04-09 @ 00:04:18 (https://www.youtube.com/watch?v=1PWdwvun5ow)
-[P-05] Session 2025-04-23 @ 00:33:16 (https://www.youtube.com/watch?v=z3C-bewKqUs)
-[P-14] Session 2025-07-09 @ 00:06:12 (https://www.youtube.com/watch?v=XOnHa6CmDbo)
+# Belege
+[P-03] Session 2025-04-09 @ 00:08:48 (https://www.youtube.com/watch?v=1PWdwvun5ow)
+[P-05] Session 2025-04-23 @ 01:06:33 (https://www.youtube.com/watch?v=z3C-bewKqUs)
+[P-14] Session 2025-07-09 @ 00:23:18 (https://www.youtube.com/watch?v=XOnHa6CmDbo)
+[P-22] Session 2025-09-17 @ 00:39:05 (https://www.youtube.com/watch?v=AhIT8dcxw2o)
 [P-29] Session 2025-11-14 @ 01:43:18 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)
+[P-30] Session 2025-11-18 @ 00:16:21 (https://www.youtube.com/watch?v=w__ahowb9p0)
+[P-36] Session 2026-02-11 @ 01:00:36 (https://www.youtube.com/watch?v=3C8SD-cyNPM)

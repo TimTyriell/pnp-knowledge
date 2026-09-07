@@ -16,8 +16,8 @@ from pathlib import Path
 
 import yaml
 
-from pnp_okf.links import ConceptIndex, _LINK_RE, normalize_body
-from pnp_okf.resolve import load_spellings
+from pnp_okf.links import _LINK_RE, ConceptIndex, normalize_body
+from pnp_okf.resolve import FUZZY_RATIO, load_spellings
 
 log = logging.getLogger(__name__)
 
@@ -52,6 +52,7 @@ class ValidationReport:
     concept_count: int = 0
     link_count: int = 0
     broken_links: list[tuple[str, str]] = field(default_factory=list)
+    dangling_links: list[tuple[str, str]] = field(default_factory=list)
     duplicate_titles: dict[str, list[str]] = field(default_factory=dict)
     cross_type_slugs: dict[str, list[str]] = field(default_factory=dict)
     missing_type: list[str] = field(default_factory=list)
@@ -63,12 +64,31 @@ class ValidationReport:
     def ok(self) -> bool:
         return not (
             self.broken_links
+            or self.dangling_links
             or self.duplicate_titles
             or self.cross_type_slugs
             or self.missing_type
             or self.duplicate_ids
             or self.suspected_person_dups
             or self.suspected_title_dups
+        )
+
+    @property
+    def integrity_ok(self) -> bool:
+        """True unless the bundle is structurally broken.
+
+        Narrower than :attr:`ok` on purpose: this is what gates ``pnp run``.
+        The duplicate-title / cross-type-slug / suspected-duplicate findings are
+        fuzzy heuristics a human triages, and a healthy bundle carries some at
+        all times -- gating a run on those would fail every run, and a gate that
+        always fails gets switched off. These four mean the corpus is wrong.
+        """
+
+        return not (
+            self.broken_links
+            or self.dangling_links
+            or self.missing_type
+            or self.duplicate_ids
         )
 
     def summary(self) -> str:
@@ -98,6 +118,13 @@ class ValidationReport:
             )
             for slug, ids in self.cross_type_slugs.items():
                 lines.append(f"  {slug}: {', '.join(ids)}")
+        if self.dangling_links:
+            lines.append(
+                f"\nDangling links ({len(self.dangling_links)})"
+                " — the href names no file in the bundle:"
+            )
+            for cid, target in self.dangling_links:
+                lines.append(f"  {cid} -> {target}")
         if self.missing_type:
             lines.append(f"\nMissing 'type' ({len(self.missing_type)}):")
             for cid in self.missing_type:
@@ -125,6 +152,26 @@ class ValidationReport:
         return "\n".join(lines)
 
 
+def _href_exists(bundle_dir: Path, source: Path, href: str) -> bool:
+    """Does this href name a file that exists, read from ``source``'s directory?
+
+    _LINK_RE matches three shapes (links.py): bundle-absolute ``/dir/x.md``,
+    document-relative ``../npcs/x.md`` or ``./x.md``, and bare ``x.md``. Only
+    the first is rooted at the bundle; joining the other two onto the bundle
+    root sent ``..`` outside it and looked for a bare name in the wrong
+    directory, so links to files that exist were reported as dangling. A
+    target outside the bundle stays a failure -- it cannot ship either.
+    """
+
+    raw = href.strip()
+    if not raw.endswith(".md"):
+        return True             # not a concept file; the resolver's problem
+    root = bundle_dir.resolve()
+    target = (root / raw.lstrip("/")) if raw.startswith("/") else (source.parent / raw)
+    target = target.resolve()
+    return target.is_relative_to(root) and target.exists()
+
+
 def validate_bundle(bundle_dir: Path) -> ValidationReport:
     """Scan ``bundle_dir`` and return a :class:`ValidationReport`."""
 
@@ -142,12 +189,16 @@ def validate_bundle(bundle_dir: Path) -> ValidationReport:
     person_slugs: list[str] = []
     titles_by_type: dict[str, list[tuple[str, str]]] = defaultdict(list)
 
-    for path, cid in zip(files, concept_ids):
+    for path, cid in zip(files, concept_ids, strict=True):
         text = path.read_text(encoding="utf-8")
         for match in _LINK_RE.finditer(text):
             report.link_count += 1
             if index.resolve(match.group(2)) is None:
                 report.broken_links.append((cid, match.group(2)))
+            # resolve() only ever returns an id that exists, so it can rescue
+            # an href that names no file at all. The href is what ships.
+            if not _href_exists(bundle_dir, path, match.group(2)):
+                report.dangling_links.append((cid, match.group(2)))
 
         fm = _split_frontmatter(text)
         ctype = str(fm.get("type") or "").strip()
@@ -203,7 +254,7 @@ def _suspect_person_dups(person_cids: list[str]) -> list[tuple[str, str]]:
             slug_b = b.rsplit("/", 1)[-1]
             tokens_b = set(slug_b.split("_"))
             if (
-                SequenceMatcher(None, slug_a, slug_b).ratio() >= 0.9
+                SequenceMatcher(None, slug_a, slug_b).ratio() >= FUZZY_RATIO
                 or tokens_a < tokens_b
                 or tokens_b < tokens_a
             ):
@@ -230,7 +281,7 @@ def _suspect_title_dups(items: list[tuple[str, str]]) -> list[tuple[str, str]]:
         for cid_b, title_b in items[i + 1 :]:
             if title_a.lower() == title_b.lower():
                 continue  # already reported by duplicate_titles
-            if SequenceMatcher(None, title_a.lower(), title_b.lower()).ratio() >= 0.9:
+            if SequenceMatcher(None, title_a.lower(), title_b.lower()).ratio() >= FUZZY_RATIO:
                 suspects.append((cid_a, cid_b))
     return suspects
 
@@ -261,7 +312,7 @@ def fix_bundle(bundle_dir: Path, registry_path: Path | None = None) -> tuple[int
 
     files_changed = 0
     links_dropped = 0
-    for path, cid in zip(files, concept_ids):
+    for path, cid in zip(files, concept_ids, strict=True):
         original = path.read_text(encoding="utf-8")
         new_text, unresolved = normalize_body(original, index, self_id=cid)
         if new_text != original:

@@ -1,16 +1,16 @@
 ---
 type: Item
 title: Herz im Brunnen
-description: Ein pochendes Herz, das in der süßen Flüssigkeit im Brunnen liegt. Lindo
-  Laut beißt hinein und wird fast getötet.
+description: Im Eimer des Brunnens findet Lindo Laut ein pochendes, fleischiges Herz.
+  Auf Befehl der Stimmen beißt er hinein, woraufhin das Herz in sein…
 tags:
 - items
 timestamp: '2025-08-20T00:00:00Z'
 id: ITEM_HERZ_IM_BRUNNEN
-subtype: Artefakt
+subtype: Sonstiges
 ---
 
-Ein pochendes Herz, das in der süßen Flüssigkeit im Brunnen liegt. [Lindo Laut](/characters/lindo_laut.md) beißt hinein und wird fast getötet.
+Im Eimer des Brunnens findet [Lindo Laut](/characters/lindo_laut.md) ein pochendes, fleischiges Herz. Auf Befehl der Stimmen beißt er hinein, woraufhin das Herz in seinen Mund gleitet und einen Belag bildet, der ihn ersticken lässt. Die rote Phiole löst den Belag auf. Das Herz ist Teil der göttlichen Prüfung.
 
 # Belege
 

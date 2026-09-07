@@ -1,8 +1,8 @@
 ---
 type: Item
 title: Karte des Angriffsplans
-description: Eine Karte, die einen Angriffsplan auf ein Dorf zeigt, das nicht weit
-  von der Gruppe entfernt ist. Sie wird nach dem Sieg über die Goblins…
+description: Im eroberten Goblin-Dorf gefunden; zeigt einen Plan für einen Angriff
+  auf ein nahe gelegenes Dorf (den Heimatort der Gruppe). Wichtige Info…
 tags:
 - items
 timestamp: '2025-04-01T00:00:00Z'
@@ -10,8 +10,8 @@ id: ITEM_KARTE_DES_ANGRIFFSPLANS
 subtype: Schriftstück
 ---
 
-Eine Karte, die einen Angriffsplan auf ein Dorf zeigt, das nicht weit von der Gruppe entfernt ist. Sie wird nach dem Sieg über die [Goblins](/npcs/pilz_goblins.md) gefunden und ist ein wichtiger Hinweis für zukünftige Bedrohungen.
+Im eroberten [Goblin-Dorf](/locations/goblin_dorf.md) gefunden; zeigt einen Plan für einen Angriff auf ein nahe gelegenes Dorf (den Heimatort der Gruppe). Wichtige Information für die Zukunft.
 
 # Belege
 
-[P-02] Session 2025-04-01 @ 01:59:30 (https://www.youtube.com/watch?v=LZIuUzc3F18)
+[P-02] Session 2025-04-01 @ 01:59:22 (https://www.youtube.com/watch?v=LZIuUzc3F18)

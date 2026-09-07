@@ -1,11 +1,11 @@
 ---
 type: Faction
 title: Belorus’ Untotenarmee
-description: Belorus’ Untotenarmee ist eine Armee untoter Kreaturen, die von Belorus,
-  einem schwarzen Paladin, angeführt wird. Sie stammt aus dem Gebiet…
+description: Belorus' Untotenarmee ist eine Streitmacht aus Skeletten und weiteren
+  untoten Kreaturen im Dienst von Belorus dem Stillen, einem schwarzen…
 tags:
 - factions
-timestamp: '2026-06-04T00:00:00Z'
+timestamp: '2025-11-25T00:00:00Z'
 id: FACTION_BELORUS_UNTOTENARMEE
 subtype: Armee
 aliases:
@@ -21,27 +21,18 @@ aliases:
 - Untote Armee
 ---
 
-Belorus’ Untotenarmee ist eine Armee untoter Kreaturen, die von [Belorus](/npcs/belorus.md), einem schwarzen Paladin, angeführt wird. Sie stammt aus dem Gebiet des gefallenen Königreichs [Zebros](/factions/koenigreich_zebros.md) und bedroht die Region um die Stadt [Breska](/locations/breska.md). Die Armee griff wiederholt Karawanen und Reisegruppen an, belagerte Breska und zerstörte die Stadt schließlich. Nach der Zerstörung zog sie sich zum Berg [Zebros](/factions/koenigreich_zebros.md) zurück, von wo aus sie weiterhin eine Bedrohung darstellt.
+Belorus' Untotenarmee ist eine Streitmacht aus Skeletten und weiteren untoten Kreaturen im Dienst von [Belorus dem Stillen](/npcs/belorus.md), einem schwarzen Paladin. Die Armee zieht aus dem Gebiet des gefallenen Königreichs [Zebros](/factions/koenigreich_zebros.md) ins Tal und sucht dort zwei Personen sowie einen Gegenstand. Ihre Angriffe richten sich gegen Karawanen, Pässe und Reisegruppen.
 
-## Herkunft
+## Zusammensetzung und Anführung
 
-Die Armee hat ihren Ursprung im Gebiet des früheren Königreichs Zebros, das im Götterkrieg zerstört wurde. Vom Königreich sind nur noch Ruinen und Relikte erhalten; der Berg Zebros steht weiterhin. Aus diesen Ruinen zieht die Armee ins Tal hinaus. Wegen ihrer Herkunft wird sie auch als Untotenarmee von Zebros bezeichnet.
+Die Armee tritt in unterschiedlicher Stärke auf: Bei einem Angriff auf eine Karawane besteht sie aus Dutzenden Skeletten, in späteren Gefechten aus größeren, gemischten Verbänden mit Bogenschützen, Schwertkämpfern und Kriegern. Diese Verbände agieren koordiniert und unterstehen einem Anführer. Bei einem der Gefechte führt ein mächtiger Untoter mit großem [Schwert](/items/schwert.md) die Horde an und kann gefallene Untote wiederbeleben. In einer späteren Schlacht kommandiert ein [Death Knight](/npcs/death_knight.md) die Armee; die Belege bezeichnen ihn als ihren General. Die Untoten rücken unaufhaltsam vor, meiden aber offenbar Wälder.
 
-## Führung und Zusammensetzung
+## Verlauf
 
-Belorus führt die Armee persönlich an. Er trägt ein großes Schwert und kann gefallene Untote wiederbeleben, sodass Verluste der Armee im Kampf immer wieder aufgefüllt werden. Die Truppe besteht aus untoten [Skelett](/npcs/skelett_bogenschuetzen.md)-Soldaten. In einem Gefecht übernahmen ein General und ein Magier die Führung der angreifenden Armee; nach diesem Kampf zog sich die Armee zurück, anstatt das Feld zu behaupten.
-
-## Bekannte Gefechte
-
-- Angriff auf eine Karawane, angeführt von Belorus.
-- Angriff auf eine Reisegruppe, angeführt von einem General und einem Magier; anschließender Rückzug.
-- Belagerung von Breska: Während der Belagerung verteidigten sich die Eingeschlossenen gegen angreifende Skelett-Soldaten.
-- Zerstörung von Breska und Rückzug zum Berg Zebros.
+Die Begegnungen mit der Heldengruppe folgen einem Muster: Zuerst greift die Armee eine Karawane an; [Rotunas](/characters/rotunas.md) dezimiert die angreifende Horde mit einem Feuerball, doch der Anführer kann Gefallene wieder auferstehen lassen. Später stürmt die Armee unter dem Kommando ihres Death-Knight-Generals einen Pass; erst als dieser General fällt, kapitulieren die Untoten und ziehen sich zurück. Nach einem Hornstoß greift erneut eine größere Gruppe Untoter an, die ihr Feuer auf Rotunas konzentriert; [Dodo](/characters/dodo.md) und Rotunas töten viele, woraufhin die Überlebenden sich nach Nordosten zurückziehen.
 
 # Belege
 
-[P-23] Session 2025-09-23, 01:28:20, https://www.youtube.com/watch?v=DGzfqVigS0g
-[P-31] Session 2025-11-25, 00:59:49, https://www.youtube.com/watch?v=wd5R4fJfngY
-[P-32] Session 2026-01-06, 00:13:00, https://www.youtube.com/watch?v=VGw81seFvbo
-[P-52] Session 2026-06-04, 02:12:00, https://www.youtube.com/watch?v=EGNh8O7pE5Q
-5. Kanon_Entscheidungen.md (GM-Festlegungen zu Belorus und Zebros, 2026-08-30)
+[P-23] Session 2025-09-23 @ 01:31:51 — https://www.youtube.com/watch?v=DGzfqVigS0g
+[P-24] Session 2025-09-30 @ 00:10:20 — https://www.youtube.com/watch?v=bUT7Mc2hjUY
+[P-31] Session 2025-11-25 @ 00:59:49 — https://www.youtube.com/watch?v=wd5R4fJfngY

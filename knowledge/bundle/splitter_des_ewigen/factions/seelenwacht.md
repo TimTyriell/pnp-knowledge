@@ -1,8 +1,8 @@
 ---
 type: Faction
 title: Seelenwacht
-description: Die Seelenwacht ist eine Organisation, die in Jalan stationiert ist.
-  Als ihre wichtigsten Persönlichkeiten gelten der Richter und der Schin…
+description: Die Seelenwacht ist eine Organisation, der Richter und Schinder angehören.
+  Neben diesen Mitgliedern umfasst sie Soldaten; ihre Anführer tre…
 tags:
 - factions
 timestamp: '2026-05-06T00:00:00Z'
@@ -10,18 +10,13 @@ id: FACTION_SEELENWACHT
 subtype: Armee
 ---
 
-Die **Seelenwacht** ist eine Organisation, die in [Jalan](/locations/jalan.md) stationiert ist. Als ihre wichtigsten Persönlichkeiten gelten der [Richter](/npcs/richter_herr_der_seelenwacht.md) und der [Schinder](/npcs/der_schinder.md). Die Seelenwacht scheint die Verteidigung von Jalan zu organisieren und verfügt über Informationen über [Vasul](/deities/vharzul.md).
+Die **Seelenwacht** ist eine Organisation, [der Richter](/npcs/richter_herr_der_seelenwacht.md) und [Schinder](/npcs/der_schinder.md) angehören. Neben diesen Mitgliedern umfasst sie Soldaten; ihre Anführer treten gegenüber Außenstehenden als Entscheidungsträger der Organisation auf.
 
-## Organisation und Rolle
+## Militärische Präsenz
+Die Seelenwacht stellt für Verteidigungsaufgaben normalerweise nur wenige Soldaten ab. Solche Kräfte schützen Orte wie [Jalan](/locations/jalan.md).
 
-Der Seelenwacht kommt in Jalan offenbar eine zentrale sicherheitspolitische Rolle zu: Sie organisiert die Verteidigung der Stadt. Ihre genaue Struktur, Mitgliederzahl und Befugnisse sind aus den vorliegenden Belegen nicht ersichtlich.
-
-Die einzigen namentlich bekannten Persönlichkeiten der Organisation sind [der Richter](/npcs/richter_herr_der_seelenwacht.md) und der [Schinder](/npcs/der_schinder.md). Nähere Angaben zu ihren Aufgaben oder ihrer Stellung innerhalb der Seelenwacht fehlen bislang.
-
-## Verbindung zu Vasul
-
-Die Seelenwacht besitzt Informationen über [Vasul](/deities/vharzul.md). Worin diese Informationen bestehen, wie sie erlangt wurden und in welchem Verhältnis die Organisation zu Vasul steht, ist nicht belegt.
+## Beziehung zur Heldengruppe
+Die Anführer der Seelenwacht begegneten der Heldengruppe im Verlauf der Ereignisse und übernahmen dabei die Führung über die Gruppe.
 
 # Belege
-
-[P-48] Session 2026-05-06, 00:06:11 — https://www.youtube.com/watch?v=MB4quhDWsQE
+[P-48] Session 2026-05-06, 00:06:11 – https://www.youtube.com/watch?v=MB4quhDWsQE

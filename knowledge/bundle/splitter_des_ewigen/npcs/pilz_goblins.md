@@ -1,13 +1,13 @@
 ---
 type: NPC
 title: Pilz-Goblins
-description: Die Pilz-Goblins sind eine wiederkehrende Bedrohung in der Kampagne.
-  Es handelt sich um goblinartige Kreaturen, die in sumpfigen Gebieten u…
+description: Die Goblinarmee, die im Auftrag der Hack Gemata angreift. Sie wird von
+  einem Oger und einem Anführer unterstützt. Die Goblins sind in Falle…
 tags:
 - npcs
 timestamp: '2026-07-23T00:00:00Z'
 id: NPC_PILZ_GOBLINS
-subtype: Volk
+subtype: Armee
 aliases:
 - Pilz-Goblins
 - Goblins
@@ -16,53 +16,45 @@ aliases:
 # Pilz-Goblins
 
 ## Überblick
-
-Die Pilz-Goblins sind eine wiederkehrende Bedrohung in der Kampagne. Es handelt sich um goblinartige Kreaturen, die in sumpfigen Gebieten und Minen leben und sich durch ihre Fähigkeit auszeichnen, Sporen zu werfen und sich zu regenerieren, solange sie nicht mit Feuer vernichtet werden. Sie treten meist in Gruppen auf und sind einzeln nicht besonders gefährlich, können aber in der Überzahl zur ernsthaften Bedrohung werden. Im Verlauf der Kampagne begegnen die Helden mehreren verschiedenen Gruppen von Pilz-Goblins an unterschiedlichen Orten, die jeweils eigene Anführer und Eigenheiten aufweisen.
+Die Pilz-Goblins sind ein kollektiver NPC der Kampagne. Sie treten als kleine, hinterhältige Wesen auf, die in den unteren Bereichen einer Mine leben und diesen Teil als ihr angestammtes Zuhause betrachten. Besonders markant sind Exemplare, die mit Pilzen überwuchert sind, fast vollständig aus Pilzstrukturen bestehen und sich durch die Pilze regenerieren; nur Feuermagie tötet sie dauerhaft. Die Pilz-Goblins besitzen eine eigene Hierarchie mit einem Schamanen als spirituellem Oberhaupt und dem militärischen Anführer Lurk. Sie erscheinen sowohl als feindliche Bedrohung als auch als misstrauische, aber verhandlungsbereite Partei.
 
 ## Rolle in der Kampagne
-
-Die Pilz-Goblins fungieren in mehreren Handlungssträngen als Gegner. Zunächst übernehmen sie ein Lager und töten dessen frühere Bewohner, später planen sie einen Angriff auf das Dorf [Breska](/locations/breska.md). In einer Mine werden sie zur Hauptbedrohung, nachdem sie die dort ansässigen [Zwerge](/factions/zwerge.md) vertrieben haben. Die Gruppe begegnet ihnen aber auch in friedlicheren Kontexten, etwa als Bewohner eines Anwesens, die dieses instand halten.
+Die Pilz-Goblins begleiten die Kampagne über mehrere Sessions hinweg in unterschiedlichen Rollen. Zunächst begegnet die Gruppe einer feindlichen Goblinarmee, die im Auftrag von Hag Gemata angreift und nach schweren Verlusten flieht. Später treffen die Helden auf zwei pilzüberwucherte Goblins, die einen Gang bewachen und sich als besonders zähe Gegner erweisen. In der Mine der Zwerge der Festung sind die Pilz-Goblins ein andauernder Konfliktpartner, mit dem die Gruppe jedoch ein Friedensabkommen aushandelt. Danach werden goblinische Alchemisten als mögliche Helfer bei der Analyse eines Gases erwähnt. In der jüngsten dokumentierten Begegnung greifen die Wesen die Gruppe erneut an und werden größtenteils vernichtet.
 
 ## Wichtige Merkmale
-
-Die Pilz-Goblins besitzen die Fähigkeit, Sporen zu werfen, und können sich regenerieren, wenn sie nicht mit Feuer vernichtet werden. Sie sind einzeln nicht gefährlich, aber in der Gruppe können sie gefährlich werden. Sie sind angetrunken und in Feierlaune, wenn sie ein Lager übernommen haben. In den Minen züchten sie Hundewesen und sind relativ schwach, aber zahlenmäßig überlegen. Sie werden von den Bugbears und Gnollen angeführt. In einem anderen Kontext werden sie von einem Schamanen angeführt und sind zahlreich.
+- **Lebensraum:** Die Pilz-Goblins leben in den unteren Bereichen der Mine und betrachten diesen Teil als ihr angestammtes Zuhause. Laut der Beschreibung von [Krevis](/npcs/krevis.md) haben sie die [Zwerge](/factions/zwerge.md) aus ihrer Mine vertrieben und greifen jeden Zwerg an, den sie sehen.
+- **Erscheinung und Kampfweise:** Sie werden als kleine, hinterhältige Wesen beschrieben. In der Begegnung im Gang hinter der elektrischen Falle tragen sie Äxte und Schilde, setzen eine Sporenwolke ein und stoßen einen markerschütternden Schrei aus, der allen Stresspunkte gibt.
+- **Pilzüberwucherung:** Zwei Exemplare sind mit Pilzen überwuchert und bestehen fast vollständig aus Pilzstrukturen. Diese Pilze verleihen regenerative Fähigkeiten; nur Feuermagie kann sie dauerhaft töten, da sie sonst wieder auferstehen würden.
+- **Regeneration und Tod:** Die Leichen der getöteten Pilz-Goblins bestätigen, dass sie fast vollständig aus Pilzstrukturen bestanden.
+- **Gesellschaft:** Die Pilz-Goblins sind zahlreich. Sie haben einen Schamanen als spirituelles Oberhaupt und Lurk als militärischen Anführer. Sie verfügen selbst über reichlich magisches Erz und fordern stattdessen die Weitergabe von Schmiedewissen.
+- **Alchemisten:** Oben im Haus gibt es goblinische Alchemisten, die möglicherweise bei der Analyse eines Gases helfen können. Die Gruppe hält sie für intelligent: „Haben doch oben Alchemisten. Goblins. Und die sind intelligent.“
+- **Verhalten:** Sie sind misstrauisch, aber nach einigem Zögern bereit, ein Friedensabkommen mit den Zwergen einzugehen. In Kämpfen weichen sie aus, greifen mit Dolchen an und rufen per Hilfeschrei Verstärkung.
 
 ## Beziehungen und Verbindungen
-
-Die Pilz-Goblins haben verschiedene Anführer: [Schleichfurz](/npcs/schleichfurz.md) und einen Magier bei der Gruppe, die das Lager übernommen hat, sowie einen Schamanen bei der Gruppe in den Minen. Sie stehen in Feindschaft zu den Zwergen, die sie aus der Mine vertrieben haben, und planen Angriffe auf menschliche Siedlungen wie Breska. Eine andere Gruppe von Goblins bewohnt ein Anwesen und hält es instand, ist aber misstrauisch gegenüber Fremden.
+- **Hag Gemata:** Eine Goblinarmee greift 2025-04-23 im Auftrag von [Hag](/npcs/lenra.md) [Gemata](/locations/gemata.md) an.
+- **Zwerge der Festung:** Die Pilz-Goblins haben die Zwerge aus der Mine vertrieben und greifen jeden Zwerg an. Unter Beteiligung der Gruppe kommt es 2026-01-27 zu einem Friedensabkommen.
+- **[Lurk](/npcs/lurk.md):** Militärischer Anführer der Pilz-Goblins in der Mine.
+- **Schamane:** Spirituelles Oberhaupt der Mine; seine Autorität stützt das Friedensabkommen.
+- **[Rotunas](/characters/rotunas.md) und [Lindo Laut](/characters/lindo_laut.md):** Sie schalten 2025-06-17 die zwei pilzüberwucherten Goblins aus; Rotunas schleudert einen gegen die Wand, Lindo Laut verbrennt beide.
+- **[Dodo](/characters/dodo.md):** Wird beim Betreten des Raums von den ersten Axthieben der Pilz-Goblins angegriffen, kann diese jedoch mit Schild und Schuppen abfangen.
+- **[Voras](/npcs/voras.md):** Tötet 2025-04-23 den Anführer der Goblinarmee, woraufhin die Überlebenden fliehen.
 
 ## Chronologie
-
-### Session 2025-04-01: Übernahme eines Lagers
-Die Helden entdecken ein kleines Lager in einem sumpfigen Gebiet. Das Feuer brennt und es liegt ein ekelhafter Geruch in der Luft. Bei näherer Betrachtung erkennen sie, dass dort Leichen liegen, die erst vor kurzem getötet wurden. [Die Goblins](/factions/die_goblins.md) haben das Lager übernommen, sind in Feierlaune und angetrunken. Sie haben einen Anführer namens Schleichfurz und einen Magier. Sie planen, weiterzuziehen und ein Dorf anzugreifen.
-
-### Session 2025-04-09: Bedrohung für Breska
-Die Goblins planen einen Angriff auf das Dorf Breska. Eine Gruppe von Goblins hatte ein Camp, das von anderen Gildenmitgliedern ausgeräuchert wurde. Ein Späher wurde getötet, aber der Angriff steht noch bevor. Die Helden erhalten den Auftrag, das Dorf auf den eventuellen Angriff vorzubereiten.
-
-### Session 2025-06-17: Kampf mit Pilz-Goblins
-Zwei pilzartige Goblin-Kreaturen greifen die Gruppe an, als diese einen Raum betritt. Sie haben die Fähigkeit, Sporen zu werfen und sich zu regenerieren, wenn sie nicht mit Feuer vernichtet werden. Einer wird von [Rotunas](/characters/rotunas.md) gegen die Wand geschleudert, der andere von [Lindo Laut](/characters/lindo_laut.md) verbrannt.
-
-### Session 2025-11-14: Bewohner eines Anwesens
-Eine Gruppe von Goblins bewohnt ein Anwesen und hält es instand. Die Wege sind gecleant und die Blätter wurden zur Seite gewischt. Es gibt eine kleine Auslage mit Nahrungsmitteln. Die Goblins sind freundlich, aber misstrauisch gegenüber Fremden. Als [Esterossa](/characters/esterossa.md) nach oben fliegt, erschrecken sich zwei kleine Goblins, einer rennt in das Gebäude, der andere sprintet nach vorne. Sie bezeichnen das Anwesen als "unsere [Villa](/locations/villau.md)" und fragen, was die Helden wollen.
-
-### Session 2026-01-27: Konflikt in der Mine
-Die Goblins leben in einer großen Mine und wurden von den Zwergen vertrieben. Sie sind zahlreich und werden von einem Schamanen angeführt. Sie greifen jeden Zwerg an, den sie sehen. Der [Hauptmann Krevis](/npcs/hauptmann_krevis.md) berichtet: "Wir hatten allerdings einige Auseinandersetzungen mit Goblins. Und diese Goblins haben uns aus unserer Mine vertrieben." Die Goblins sind zunächst unnachgiebig, stimmen aber einem Friedensvertrag zu.
-
-### Session 2026-07-23: Hauptgegner in der Mine
-Die Goblins sind die Hauptgegner in der Mine. Sie haben ein Lager eingerichtet und züchten Hundewesen. Sie sind relativ schwach, aber zahlenmäßig überlegen. Sie werden von den Bugbears und Gnollen angeführt. Die Helden hören Goblins, die miteinander reden und darüber quatschen, was es als nächstes zu essen gibt. [Bruma Stormrak](/characters/bruma_stormrak.md) bemerkt: "Denkt dran, dass nur die, die wir hören, die könnten auch in anderen Richtungen sich verstecken."
+- **2025-04-23:** Eine Goblinarmee greift im Auftrag von Hag Gemata an. Sie wird von einem [Oger](/npcs/oger.md) und einem Anführer unterstützt, gerät in Fallen und erleidet schwere Verluste. Nachdem [Voras](/npcs/voras.md) den Anführer tötet, fliehen die Überlebenden.
+- **2025-06-17:** Zwei mit Pilzen überwucherte Goblins bewachen den Gang hinter der elektrischen Falle. Beim Betreten des Raums fliegen zwei Äxte auf Dodo zu. Die Wesen greifen mit Äxten und einer Sporenwolke an; ein Schrei verursacht Stresspunkte. Sie besitzen Schilde und regenerative Fähigkeiten durch die Pilze. Rotunas schleudert einen gegen die Wand, Lindo Laut verbrennt beide dauerhaft. Die Leichen bestätigen die fast vollständige Pilzstruktur.
+- **2026-01-27:** Die Pilz-Goblins leben in den unteren Bereichen der Mine und betrachten diesen Teil als ihr angestammtes Zuhause. Sie sind zahlreich, haben einen Schamanen als spirituelles Oberhaupt und Lurk als militärischen Anführer. Sie lehnen das Angebot von magischem Erz ab, da sie selbst reichlich davon haben, fordern aber die Weitergabe von Schmiedewissen. Nach einigem Misstrauen willigen sie in ein Friedensabkommen mit den Zwergen ein, unterstützt durch die Autorität des Schamanen.
+- **2026-02-11:** Oben im Haus gibt es goblinische Alchemisten, die möglicherweise bei der Analyse eines Gases helfen können.
+- **2026-07-23:** Kleine, hinterhältige Wesen, die in der Mine leben und sich offenbar mit Hunden gepaart haben, singen Essenslieder. Sie greifen die Gruppe an und werden größtenteils vernichtet.
 
 ## Offene Fragen
+- Wie sich die Goblinarmee aus dem Auftrag von Hag Gemata zu den Pilz-Goblins der Mine verhält, geht aus den Belegen nicht hervor.
+- Ursprung und Verbreitung der Pilzüberwucherung innerhalb der Mine sind unklar.
+- Ob das Friedensabkommen mit den Zwergen nach der feindlichen Begegnung 2026-07-23 weiterhin Bestand hat, wird nicht berichtet.
+- Die Bedeutung der Beobachtung, dass sich die Wesen „offenbar mit Hunden gepaart“ haben, bleibt offen.
 
-- Was ist aus der Gruppe von Goblins geworden, die das Anwesen bewohnte? Handelt es sich um dieselben Goblins, die später in der Mine angetroffen wurden, oder um eine separate Gruppe?
-- Welche Verbindung besteht zwischen den pilzartigen Goblin-Kreaturen aus der Session vom 17. Juni und den anderen Goblin-Gruppen? Sind sie dieselbe Spezies oder eine Unterart?
-- Was geschah mit dem geplanten Angriff auf Breska? Wurde er abgewendet oder fand er statt?
-- Welche Rolle spielen die Bugbears und Gnollen, die die Goblins in der Mine anführen?
-
-# Belege
-
-[P-02] Session 2025-04-01 @ 00:05:20 (https://www.youtube.com/watch?v=LZIuUzc3F18)
-[P-03] Session 2025-04-09 @ 00:02:59 (https://www.youtube.com/watch?v=1PWdwvun5ow)
-[P-12] Session 2025-06-17 @ 00:24:00 (https://www.youtube.com/watch?v=tl76B4V0io8)
-[P-29] Session 2025-11-14 @ 00:06:51 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)
-[P-35] Session 2026-01-27 @ 00:15:00 (https://www.youtube.com/watch?v=9RzvnnWzV7E)
-[S1-02-B] Session 2026-07-23 @ 00:13:35 (https://www.youtube.com/watch?v=Gb-TEbCFF0M)
+## Belege
+[P-05] Session 2025-04-23 @ 00:12:00 (https://www.youtube.com/watch?v=z3C-bewKqUs)
+[P-12] Session 2025-06-17 @ 00:23:51 (https://www.youtube.com/watch?v=tl76B4V0io8)
+[P-35] Session 2026-01-27 @ 00:14:52 (https://www.youtube.com/watch?v=9RzvnnWzV7E)
+[P-36] Session 2026-02-11 @ 01:11:13 (https://www.youtube.com/watch?v=3C8SD-cyNPM)
+[S1-02-B] Session 2026-07-23 @ 00:18:02 (https://www.youtube.com/watch?v=Gb-TEbCFF0M)

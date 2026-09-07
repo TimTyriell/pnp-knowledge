@@ -1,8 +1,8 @@
 ---
 type: Item
 title: Kriegskarte
-description: Eine strategische Karte, die Bruma bei den Gnollen findet. Sie zeigt
-  möglicherweise die Positionen der Feinde.
+description: Strategische Utensilien und Karten, gefunden bei den Überresten des Gnoll-Kommandanten.
+  Bruma nimmt sie an sich, um mehr über den Feind zu…
 tags:
 - items
 timestamp: '2026-07-23T00:00:00Z'
@@ -10,8 +10,8 @@ id: ITEM_KRIEGSKARTE
 subtype: Schriftstück
 ---
 
-Eine strategische Karte, die Bruma bei den Gnollen findet. Sie zeigt möglicherweise die Positionen der Feinde.
+Strategische Utensilien und Karten, gefunden bei den Überresten des Gnoll-Kommandanten. Bruma nimmt sie an sich, um mehr über den Feind zu erfahren.
 
 # Belege
 
-[S1-02-B] Session 2026-07-23 @ 01:57:00 (https://www.youtube.com/watch?v=Gb-TEbCFF0M)
+[S1-02-B] Session 2026-07-23 @ 01:56:17 (https://www.youtube.com/watch?v=Gb-TEbCFF0M)

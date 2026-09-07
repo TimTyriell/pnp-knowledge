@@ -1,25 +1,25 @@
 ---
 type: NPC
 title: Tolga
-description: 'Tolga ist ein älterer Halbling. Die Begegnungen mit der Gruppe zeichnen
-  ein zwiespältiges Bild: Bei der ersten Begegnung zeigt er sich fein…'
+description: Tolga ist ein alter, grantiger Halbling. Er stammt aus einem Dorf, das
+  er auf Anstoß seines Freundes Bruma verließ; mit seiner Gruppe lebt…
 tags:
 - npcs
 timestamp: '2026-08-20T00:00:00Z'
 id: NPC_TOLGA
 ---
 
-Tolga ist ein älterer Halbling. Die Begegnungen mit der Gruppe zeichnen ein zwiespältiges Bild: Bei der ersten Begegnung zeigt er sich feindselig und greift Sange wegen seiner Maske an; später wird er als bester Freund von Bruma beschrieben, der sich für dessen Neuanfang in [Ringtal](/locations/ringtal.md) begeistert.
+Tolga ist ein alter, grantiger Halbling. Er stammt aus einem Dorf, das er auf Anstoß seines Freundes [Bruma](/characters/bruma_stormrak.md) verließ; mit seiner Gruppe lebt er inzwischen in [Ringtal](/locations/ringtal.md), wo die Gruppe ein Haus bekommen hat. Während er Bruma loyal und dankbar verbunden ist, begegnet er Fremden mit Misstrauen und unverblümter Schärfe.
 
-## Begegnung mit der Gruppe
+## Misstrauen gegenüber Neuankömmlingen
 
-Tolga empfängt die Gruppe feindselig. Besonders [Sange](/characters/sange.md) bekommt seinen Unmut zu spüren, den er wegen seiner Maske anfeindet. Im Gespräch erwähnt Tolga, dass eine frühere Gruppe von Abenteurern gescheitert sei; diese Bemerkung verärgert [Talron](/npcs/talron.md).
+Als die Neuankömmlinge in Ringtal eintrafen, beäugte Tolga sie argwöhnisch. Insbesondere [Sange](/characters/sange.md) lehnte er wegen der Maske ab, die dieser trug. Seine Ablehnung formulierte er unverblümt: Spöttisch bemerkte er, dass das letzte Team umgekommen sei – eine Bemerkung, die die Neuankömmlinge kaum willkommen hieß.
 
-## Beziehung zu Bruma
+## Freundschaft zu Bruma und die alte Gilde
 
-In einer späteren Begegnung wird Tolga als [Brumas](/characters/bruma_stormrak.md) bester Freund bezeichnet. Er freut sich über das neue Haus in Ringtal und zeigt sich interessiert an Brumas Vorschlag, ein Etablissement zu gründen. Den Goldsäcken, die versteckt werden, wirft er einen bösen Blick zu.
+Bei einem Zusammentreffen in Ringtal zeigte Tolga sich als enger Freund Brumas. Er bedankte sich bei ihm für den Anstoß, das Dorf zu verlassen, und sprach stolz davon, dass seine Gruppe ein Haus bekommen hatte. Als Bruma vorschlug, die alte [Gilde](/factions/gilde_von_ehrenfels.md) wiederzubeleben und [Xenia](/npcs/xenia_rotkam.md) als Geschäftspartnerin einzubeziehen, griff Tolga die Idee begeistert auf und kündigte an, mit [Xenia](/npcs/xenia_rotkam.md) zu sprechen. Seine Verbundenheit brachte er auf scherzhafte Weise zum Ausdruck, indem er Bruma eine seiner Töchter zur Verheiratung anbot; Bruma lehnte das Angebot höflich ab.
 
 # Belege
 
-1. Session 2026-07-10, 00:28:28 – https://www.youtube.com/watch?v=H-eHSlfxUAg
-2. Session 2026-08-20, 01:21:52 – https://www.youtube.com/watch?v=2EkWrNUfQi0
+1. Session vom 10. Juli 2026, 01:27:23 – https://www.youtube.com/watch?v=H-eHSlfxUAg
+2. Session vom 20. August 2026, 01:22:02 – https://www.youtube.com/watch?v=2EkWrNUfQi0

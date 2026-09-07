@@ -49,3 +49,95 @@ if __name__ == "__main__":
     test_cache_key_stable_when_secondary_unchanged()
     test_cache_key_defaults_secondary_to_empty()
     print("all checks passed")
+
+
+def test_a_second_key_does_not_destroy_the_first(tmp_path):
+    """Both caches must be content-addressed, not overwritten in place.
+
+    The cache key includes PROMPT_VERSION and the model, but the cache *path*
+    did not -- so bumping either overwrote the only copy of ~$6.50 of paid-for
+    LLM output, and reverting the change cost a second full rebuild. Keeping
+    each key at its own path makes an experiment reversible for nothing.
+    """
+
+    import json
+
+    from pnp_okf.synthesize import _cache_path
+
+    ent = _entity()
+    a, b = "aaaaaaaaaaaaaaaa", "bbbbbbbbbbbbbbbb"
+    path_a, path_b = _cache_path(tmp_path, ent, a), _cache_path(tmp_path, ent, b)
+
+    assert path_a != path_b, "a different key must not reuse the same file"
+
+    for path, key, body in ((path_a, a, "body under A"), (path_b, b, "body under B")):
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps({"_key": key, "body": body}), encoding="utf-8")
+
+    assert json.loads(path_a.read_text(encoding="utf-8"))["body"] == "body under A"
+    assert json.loads(path_b.read_text(encoding="utf-8"))["body"] == "body under B"
+
+
+def test_extract_cache_survives_a_model_switch(tmp_path):
+    """Same invariant on the extraction side, where the money actually is."""
+
+    from pnp_okf.extract import _cache_path as extract_path
+    from pnp_okf.extract import _load_cached, _store_cache
+    from pnp_okf.models import SessionExtraction, SessionTranscript
+
+    transcript = SessionTranscript(
+        session_id="2026-01-01_X_abc",
+        date="2026-01-01",
+        url="https://youtu.be/x",
+        title="T",
+        segments=[],
+    )
+    pro = SessionExtraction(recap="unter pro", entities=[])
+    flash = SessionExtraction(recap="unter flash", entities=[])
+
+    _store_cache(extract_path(tmp_path, transcript, "pro_key_00000000"), "pro_key_00000000", pro)
+    _store_cache(extract_path(tmp_path, transcript, "fla_key_00000000"), "fla_key_00000000", flash)
+
+    back = _load_cached(extract_path(tmp_path, transcript, "pro_key_00000000"), "pro_key_00000000")
+    assert back is not None and back.recap == "unter pro", (
+        "switching model and switching back must not cost a re-extraction"
+    )
+
+
+def test_load_cached_extraction_round_trips_and_is_keyed_on_the_model(tmp_path):
+    """The one entry point every caller outside extract.py uses.
+
+    Deriving key and path separately at each call site is what let two of the
+    six drift onto a stale signature; this covers the shared path they now all
+    take, including that a different model reads as a miss rather than
+    returning another model's extraction.
+    """
+
+    from pnp_okf.config import DeepSeekConfig
+    from pnp_okf.extract import _cache_key, _cache_path, _store_cache, load_cached_extraction
+    from pnp_okf.models import SessionExtraction, SessionTranscript
+
+    transcript = SessionTranscript(
+        session_id="2026-01-01_X_abc",
+        date="2026-01-01",
+        url="https://youtu.be/x",
+        title="T",
+        segments=[],
+    )
+    pro = DeepSeekConfig(api_key="x", model="deepseek-v4-pro", base_url="https://e.invalid")
+    flash = DeepSeekConfig(api_key="x", model="deepseek-v4-flash", base_url="https://e.invalid")
+
+    assert load_cached_extraction(tmp_path, transcript, pro) is None
+
+    key = _cache_key(transcript, pro)
+    _store_cache(
+        _cache_path(tmp_path, transcript, key), key,
+        SessionExtraction(recap="unter pro", entities=[]),
+    )
+
+    hit = load_cached_extraction(tmp_path, transcript, pro)
+    assert hit is not None and hit.recap == "unter pro"
+    assert load_cached_extraction(tmp_path, transcript, flash) is None, (
+        "the model is in the cache key -- a different tier must not read "
+        "another model's extraction back"
+    )

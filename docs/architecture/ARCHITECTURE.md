@@ -207,7 +207,47 @@ sequenceDiagram
     end
 ```
 
-### 6.3 New-transcript ingestion
+### 6.3 New-transcript ingestion — as built
+
+This is what `pnp run` does today. The two caches are why a re-run after a rules
+or threshold change costs one LLM call rather than a full rebuild, and the
+identity guard is drawn as a terminal abort because that is what it is: over
+2% of known concepts missing and the run writes nothing at all.
+
+```mermaid
+flowchart TB
+    classDef llm fill:#4a148c,stroke:#ba68c8,color:#fff
+    classDef cache fill:#0d47a1,stroke:#64b5f6,color:#fff
+    classDef guard fill:#b71c1c,stroke:#ef9a9a,color:#fff
+    classDef human fill:#e65100,stroke:#ffb74d,color:#fff
+
+    T["transcripts/<br/>one JSON per session"] --> EXC{{"extract cache hit?<br/>.cache/extract/"}}:::cache
+    EXC -->|miss| EX["extract — LLM<br/>entities: name, type, note, citation_ts"]:::llm
+    EXC -->|hit| RES
+    EX --> RES["resolve<br/>entity_rules.yaml: merge / never_merge / split / ignore"]
+    RES --> GUARD{{">2% of known concepts missing?"}}:::guard
+    GUARD -->|yes| ABORT["ABORT — write nothing,<br/>record the run as failed"]:::guard
+    GUARD -->|no| TIER{{"tier?"}}
+    TIER -->|"deep (>=5 mentions)"| SYP["synthesize — deepseek-v4-pro"]:::llm
+    TIER -->|"standard / stub"| SYF["synthesize — deepseek-v4-flash"]:::llm
+    SYP --> SYC{{"synth cache<br/>.cache/synth/"}}:::cache
+    SYF --> SYC
+    SYC --> LINK["autolink + relabel citations<br/>runs on cache hits too — no model call"]
+    LINK --> CONF{{"contradiction across sessions?"}}
+    CONF -->|yes| CQ["conflicts/&lt;id&gt;.md<br/>both claims + citations"]
+    CONF -->|no| EMIT
+    CQ --> EMIT["emit concepts + indexes + log"]
+    EMIT --> BUNDLE[("knowledge/ — commit, tag s&lt;NN&gt;")]
+    BUNDLE --> GM{{"GM reviews the diff,<br/>edits files, adds rules"}}:::human
+    GM -.->|"next run"| RES
+```
+
+### 6.3b New-transcript ingestion — target design, **not built**
+
+The service API below (`POST /ingest/transcript`, branch-per-session) is the
+intended shape, not the current one. Today ingestion is a local CLI run against
+a working tree. Kept here as design intent; see §9 for the phase that would
+build it.
 
 ```mermaid
 sequenceDiagram

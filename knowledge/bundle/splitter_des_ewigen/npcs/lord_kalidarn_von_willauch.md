@@ -1,32 +1,29 @@
 ---
 type: NPC
 title: Lord Kalidarn von Willauch
-description: Lord Kalidarn von Willauch ist der Herrscher über die Stadt Willauch
-  im Südwesten der bekannten Lande. Er richtet das Turnier in der Arena…
+description: Lord Kalidarn von Willauch ist der Herrscher der Stadt Willauch. Er ist
+  die höchste Autorität der Stadt und tritt in den Quellen vor allem…
 tags:
 - npcs
 timestamp: '2025-11-14T00:00:00Z'
 id: NPC_LORD_KALIDARN_VON_WILLAUCH
 aliases:
-- Lord Kalidarn von Willau
 - Lord von Willauch
 - Lord Kaledan von Willau
+- Lord Kalidarn von Willau
 ---
 
-# Lord Kalidarn von Willauch
+Lord Kalidarn von Willauch ist der Herrscher der Stadt [Willauch](/locations/willauch.md). Er ist die höchste Autorität der Stadt und tritt in den Quellen vor allem bei den Arenakämpfen in Erscheinung, bei denen er auf dem [Thron](/items/thron.md) Platz nimmt. Sein Auftreten wirkt kühl und emotionslos; der Heldengruppe begegnet er mit Distanz, stellt ihr aber nach ihrem Sieg über den Lich eine Urkunde über ein Anwesen aus.
 
-Lord Kalidarn von [Willauch](/locations/willauch.md) ist der Herrscher über die Stadt Willauch im Südwesten der bekannten Lande. Er richtet das Turnier in der Arena aus und hat dort die letzte Entscheidungsgewalt. Der Abenteurergruppe übergab er die Urkunde für ein Anwesen.
+## Herrschaft und öffentliches Auftreten
 
-## Rolle und Herrschaft
+Bei den Arenakämpfen von Willauch verfolgt Lord Kalidarn die Kämpfe vom Thron aus. Er wirkt kühl und emotionslos, und von den Darbietungen der Gruppe ist er kaum beeindruckt: Sein Applaus beschränkt sich auf ein einziges kurzes Klatschen. Seine Entscheidungsgewalt zeigt sich beim ersten Kampf, als er mit einem Daumen-nach-unten das Zeichen zur [Hinrichtung des Werwolfs](/events/hinrichtung_des_werwolfs.md) gibt.
 
-Als Herr von Willauch entscheidet Lord Kalidarn über Leben und Tod in der Arena. Beim Turnier beobachtet er die Kämpfe und befiehlt die Hinrichtung des Werwolfs. Im Rahmen der Ereignisse um die Gruppe übergab er ihr eine Urkunde für ein Anwesen; bei dieser Übergabe trat er nicht persönlich in Erscheinung.
+## Verhältnis zur Heldengruppe
 
-## Auftreten und Persönlichkeit
-
-Lord Kalidarn wirkt emotionslos und ist schwer zu beeindrucken. Er verfolgt die Kämpfe bewegungslos und klatscht erst am Ende kurz. Er ist artefakt-affin und schätzt Kämpfe als Kunst.
+Lord Kalidarn ist der Urheber des Besitzanspruchs der Gruppe auf das Anwesen: Als Belohnung für den Sieg über den Lich stellt er die entsprechende Urkunde aus. Persönlich tritt er in diesem Zusammenhang nicht in Erscheinung; die Urkunde nennt ihn jedoch als Aussteller.
 
 # Belege
 
-1. Session 2025-10-14 @ 00:37:48 (https://www.youtube.com/watch?v=cUtz87UCHu4)
-2. Session 2025-10-21 @ 00:14:20 (https://www.youtube.com/watch?v=sxFhbtwoefA)
-3. Session 2025-11-14 @ 00:01:38 (https://www.youtube.com/watch?v=8Khb-Y8XbKY)
+[P-27] Session 2025-10-21 @ 00:41:06 – https://www.youtube.com/watch?v=sxFhbtwoefA
+[P-29] Session 2025-11-14 @ 00:01:38 – https://www.youtube.com/watch?v=8Khb-Y8XbKY

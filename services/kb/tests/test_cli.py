@@ -66,3 +66,230 @@ def test_run_allow_rename_flag_defaults_off():
     assert parser.parse_args(["run", "--allow-rename"]).allow_rename is True
 
 
+
+
+def test_the_guard_help_text_states_the_threshold_the_code_enforces():
+    """--help must not name a threshold the guards do not use.
+
+    max_ratio was tightened from 0.10 to 0.02, but both --allow-* help strings
+    still said 10%%, so a user reading --help budgeted a 5%% rename as safe and
+    got exit 2 after the run had already done its work. The help now
+    interpolates the constants the guards default to, so the two cannot drift
+    apart again.
+    """
+
+    import contextlib
+    import io
+
+    import pytest
+    from pnp_okf.emit import MAX_PRUNE_RATIO, MAX_RENAME_RATIO
+
+    buf = io.StringIO()
+    with contextlib.redirect_stdout(buf), pytest.raises(SystemExit):
+        _build_parser().parse_args(["run", "--help"])
+    text = buf.getvalue()
+
+    assert "--allow-prune" in text and "--allow-rename" in text
+    assert f"{MAX_PRUNE_RATIO:.0%}" in text
+    assert f"{MAX_RENAME_RATIO:.0%}" in text
+    assert "10%" not in text, "the help still quotes the pre-tightening threshold"
+
+
+def test_a_killed_run_leaves_a_trace_the_next_run_records(tmp_path: Path, monkeypatch):
+    """A hard kill must not vanish.
+
+    _write_run_status only runs at the end of a run, so a SIGKILL or a machine
+    sleeping mid-synthesis wrote nothing at all. On 2026-09-05 that is exactly
+    what happened: a run died at ~15:37 leaving a half-written bundle, and
+    history.jsonl has no row for it -- the failure was discovered days later by
+    reading link targets. The marker written at start is the trace.
+    """
+
+    from pnp_okf.cli import _begin_run, _write_run_status
+
+    monkeypatch.setenv("PNP_STATE_DIR", str(tmp_path))
+
+    _begin_run("2026-09-05T15:37:00Z")          # this run gets killed
+    _begin_run("2026-09-05T18:00:00Z")          # the next run notices
+
+    rows = [
+        json.loads(line)
+        for line in (tmp_path / "history.jsonl").read_text(encoding="utf-8").splitlines()
+    ]
+    assert len(rows) == 1
+    assert rows[0]["started_at"] == "2026-09-05T15:37:00Z"
+    assert rows[0]["ok"] is False
+    assert "killed" in rows[0]["error"]
+
+
+def test_a_finished_run_leaves_no_stale_marker(tmp_path: Path, monkeypatch):
+    from pnp_okf.cli import _begin_run, _write_run_status
+
+    monkeypatch.setenv("PNP_STATE_DIR", str(tmp_path))
+
+    _begin_run("2026-09-05T18:00:00Z")
+    _write_run_status("2026-09-05T18:00:00Z", ok=True, error=None, counts={})
+    _begin_run("2026-09-05T19:00:00Z")
+
+    rows = [
+        json.loads(line)
+        for line in (tmp_path / "history.jsonl").read_text(encoding="utf-8").splitlines()
+    ]
+    assert [r["ok"] for r in rows] == [True]
+
+
+def test_extraction_model_is_selectable_and_defaults_to_the_strong_model(monkeypatch):
+    """Extraction routes through the tier system like synthesis does.
+
+    It always used the strong model because cli.py handed _extract_all the raw
+    cfg and never called for_tier(). Extraction is ~a quarter of a rebuild's
+    bill, so whether it can be moved should be a config decision, not a code
+    change -- but the default must not shift underneath anyone.
+    """
+
+    from pnp_okf.config import DeepSeekConfig
+
+    for var in ("DEEPSEEK_MODEL", "DEEPSEEK_LIGHT_MODEL", "DEEPSEEK_EXTRACT_MODEL"):
+        monkeypatch.delenv(var, raising=False)
+    monkeypatch.setenv("DEEPSEEK_API_KEY", "x")
+
+    cfg = DeepSeekConfig.from_env()
+    assert cfg.for_tier("extract").model == "deepseek-v4-pro", "default must not move"
+    assert cfg.for_tier("deep").model == "deepseek-v4-pro"
+    assert cfg.for_tier("standard").model == "deepseek-v4-flash"
+
+    monkeypatch.setenv("DEEPSEEK_EXTRACT_MODEL", "deepseek-v4-flash")
+    assert DeepSeekConfig.from_env().for_tier("extract").model == "deepseek-v4-flash"
+
+
+def test_estimate_makes_no_llm_call(tmp_path: Path, monkeypatch, capsys):
+    """--estimate must price the run without spending anything.
+
+    The ~$6.50 rebuild cost was learned by paying it. The whole point of this
+    flag is that the number arrives before the money leaves, so the one thing
+    it must never do is call the model. base_url points at an unroutable host,
+    so any real call fails loudly rather than silently succeeding.
+    """
+
+    _make_transcript(tmp_path, "2025-03-26_RF_abc")
+    monkeypatch.setenv("DEEPSEEK_API_KEY", "x")
+    monkeypatch.setenv("DEEPSEEK_BASE_URL", "https://example.invalid")
+    monkeypatch.setenv("PNP_PRICE_IN_DEEPSEEK_V4_PRO", "0.66")
+    monkeypatch.setenv("PNP_PRICE_OUT_DEEPSEEK_V4_PRO", "1.98")
+    monkeypatch.setenv("PNP_STATE_DIR", str(tmp_path / "state"))
+
+    ret = main([
+        "run", "--estimate",
+        "--transcripts", str(tmp_path),
+        "--bundle", str(tmp_path / "bundle"),
+        "--cache", str(tmp_path / "cache"),
+    ])
+
+    assert ret == 0
+    out = capsys.readouterr().out
+    assert "extract" in out.lower()
+    assert "estimate" in out.lower()
+    # It must not have written a run record either -- nothing happened.
+    assert not (tmp_path / "state" / "run_in_progress.json").exists()
+
+
+def _seed_extract_cache(tmp_path: Path, stem: str) -> None:
+    """Put one session in the cache the way a real run would leave it."""
+
+    from pnp_okf.config import DeepSeekConfig
+    from pnp_okf.extract import _cache_key, _cache_path, _store_cache
+    from pnp_okf.ingest import load_transcripts
+    from pnp_okf.models import SessionExtraction
+
+    cfg = DeepSeekConfig.from_env().for_tier("extract")
+    (transcript,) = [t for t in load_transcripts(tmp_path) if t.session_id == stem]
+    key = _cache_key(transcript, cfg)
+    _store_cache(
+        _cache_path(tmp_path / "cache", transcript, key), key,
+        SessionExtraction(recap="Eine Sitzung.", entities=[]),
+    )
+
+
+def _estimate(tmp_path: Path, *extra: str) -> int:
+    return main([
+        "run", "--estimate",
+        "--transcripts", str(tmp_path),
+        "--bundle", str(tmp_path / "bundle"),
+        "--cache", str(tmp_path / "cache"),
+        *extra,
+    ])
+
+
+def test_estimate_prices_the_flags_it_was_given(tmp_path: Path, monkeypatch, capsys):
+    """--reextract and --force must show up in the number, not be ignored.
+
+    _estimate_run walked the cache and never looked at either flag, so
+    `run --estimate --reextract` reported a warm cache and printed "this run
+    is free" for a run that re-extracts every session at full price. That is
+    exactly the combination whose cost the flag exists to reveal.
+    """
+
+    _make_transcript(tmp_path, "2025-03-26_RF_abc")
+    monkeypatch.setenv("DEEPSEEK_API_KEY", "x")
+    monkeypatch.setenv("DEEPSEEK_BASE_URL", "https://example.invalid")
+    monkeypatch.setenv("PNP_STATE_DIR", str(tmp_path / "state"))
+    _seed_extract_cache(tmp_path, "2025-03-26_RF_abc")
+
+    assert _estimate(tmp_path) == 0
+    assert "1 cached, 0 to call" in capsys.readouterr().out
+
+    assert _estimate(tmp_path, "--reextract") == 0
+    out = capsys.readouterr().out
+    assert "0 cached, 1 to call" in out, (
+        "--reextract ignores the extract cache, so every session is a call"
+    )
+    assert "this run is free" not in out
+
+
+def _capture_extract_model(monkeypatch) -> dict:
+    """Record the model _extract_all is actually handed, without calling out."""
+
+    from pnp_okf.models import SessionExtraction
+
+    seen: dict[str, str] = {}
+
+    def _fake(transcript, cfg, cache_dir, *, client=None, force=False):
+        seen["model"] = cfg.model
+        return SessionExtraction(recap="r", entities=[])
+
+    monkeypatch.setattr("pnp_okf.cli.extract_session", _fake)
+    return seen
+
+
+def test_extract_and_dedup_use_the_same_tier_as_run(tmp_path: Path, monkeypatch):
+    """All three commands must agree on the extraction model.
+
+    cmd_extract and cmd_dedup handed _extract_all the untiered cfg while
+    _run_pipeline passed for_tier("extract"), so with DEEPSEEK_EXTRACT_MODEL
+    set they keyed the cache on a different model: `pnp extract` populated a
+    cache `pnp run` never reads, and `pnp dedup` -- documented as running on
+    cached extractions and never re-reading transcripts -- silently paid for
+    a complete re-extraction.
+    """
+
+    _make_transcript(tmp_path, "2025-03-26_RF_abc")
+    monkeypatch.setenv("DEEPSEEK_API_KEY", "x")
+    monkeypatch.setenv("DEEPSEEK_BASE_URL", "https://example.invalid")
+    monkeypatch.setenv("DEEPSEEK_EXTRACT_MODEL", "deepseek-v4-flash")
+    monkeypatch.setattr("pnp_okf.cli.propose", lambda *a, **k: [])
+
+    common = [
+        "--transcripts", str(tmp_path),
+        "--bundle", str(tmp_path / "bundle"),
+        "--cache", str(tmp_path / "cache"),
+    ]
+
+    seen = _capture_extract_model(monkeypatch)
+    assert main(["extract", *common]) == 0
+    assert seen["model"] == "deepseek-v4-flash", "pnp extract ignored the extract tier"
+
+    (tmp_path / "bundle").mkdir(exist_ok=True)
+    (tmp_path / "bundle" / "entity_rules.yaml").write_text("merge: []\n", encoding="utf-8")
+    seen = _capture_extract_model(monkeypatch)
+    main(["dedup", *common])
+    assert seen["model"] == "deepseek-v4-flash", "pnp dedup ignored the extract tier"

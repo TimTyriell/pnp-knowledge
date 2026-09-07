@@ -1,8 +1,8 @@
 ---
 type: NPC
 title: Gralin der Weise
-description: Gralin der Weise ist der königliche Magier von Willauch und gilt als
-  der bewandteste Magier der Stadt.
+description: Gralin der Weise ist ein Warforged-Magier, der in der Stadt als königlicher
+  Magier und Berater des Lords wirkt. Er gilt als der bewandteste…
 tags:
 - npcs
 timestamp: '2026-03-03T00:00:00Z'
@@ -11,21 +11,19 @@ aliases:
 - Garlin der Weise
 ---
 
-**Gralin der Weise** ist der königliche Magier von [Willauch](/locations/willauch.md) und gilt als der bewandteste Magier der Stadt.
+Gralin der Weise ist ein Warforged-Magier, der in der Stadt als königlicher Magier und Berater des Lords wirkt. Er gilt als der bewandteste Magier der Stadt und tritt in einem roten Mantel mit einem magischen Buch auf. Den Helden begegnet er zunächst als Auftraggeber; später wird er ihnen als Ansprechpartner empfohlen.
 
-## Rolle in Willauch
+## Rolle und Erscheinungsbild
 
-Als königlicher Magier berät Gralin den Lord. Er beobachtet die Kämpfe, die in der Stadt ausgetragen werden, und ist magieaffin: So beschwört er die lila Wolken, die die zweite Arena überwachen.
+Gralin der Weise ist ein Warforged-Magier und bekleidet die Stellung des königlichen Magiers. Zugleich tritt er als Berater des Lords auf. Ein Zwerg in einer Taverne beschreibt ihn als den bewandtesten Magier der Stadt. Sein Erscheinungsbild umfasst einen roten Mantel und ein magisches Buch, das er bei sich führt. Er verlässt nach diesen Schilderungen nur gelegentlich das Anwesen, auf dem er wirkt.
 
-## Erscheinungsbild
+## Begegnungen und Aufträge
 
-Gralin wird als Warforge-ähnliches Konstrukt beschrieben. Er trägt einen roten Mantel und führt ein magisches Buch mit sich.
+In einer ersten Begegnung erzeugt Gralin der Weise eine magische Wolke, um die ferne [Arena](/locations/arena.md) zu beobachten. In dieser Situation spricht er die Helden an und stellt ihnen die Aufgabe, das Monster in der Arena zu besiegen und etwas aus dessen Nest zu holen.
 
-## Erreichbarkeit
-
-Gralin lebt in einem Anwesen. Ab und zu kommt er heraus und beantwortet dann Fragen.
+Zu einem späteren Zeitpunkt erhalten die Helden den Hinweis, sich an ihn zu wenden, um weitere Auskünfte zu erhalten; zu einem direkten Kontakt kommt es in diesem Zusammenhang jedoch nicht.
 
 # Belege
 
-[P-27] Session 2025-10-21 @ 00:14:00 (https://www.youtube.com/watch?v=sxFhbtwoefA)
-[P-39] Session 2026-03-03 @ 00:49:06 (https://www.youtube.com/watch?v=BRUNuNKTeOg)
+[P-27] Session 2025-10-21, 00:58:11 – https://www.youtube.com/watch?v=sxFhbtwoefA
+[P-39] Session 2026-03-03, 00:48:50 – https://www.youtube.com/watch?v=BRUNuNKTeOg

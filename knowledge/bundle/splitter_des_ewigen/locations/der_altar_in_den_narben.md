@@ -1,16 +1,16 @@
 ---
 type: Location
-title: Der Altar in den Narben
-description: Ein versteckter Altar, der als Zugang zum Tempel dient. Die Gruppe findet
-  ihn und aktiviert das Portal mit dem Geheimwort.
+title: Altar in den Narben
+description: Ein kleiner Altar in den Narben, der als Eingang zum Tempel dient. Aktivierung
+  durch das Geheimwort "Der Splitter des Ewigen".
 tags:
 - locations
 timestamp: '2026-06-16T00:00:00Z'
 id: LOC_DER_ALTAR_IN_DEN_NARBEN
-subtype: Gebäude
+subtype: Sonstiges
 ---
 
-Ein versteckter [Altar](/items/altar.md), der als Zugang zum Tempel dient. Die Gruppe findet ihn und aktiviert das [Portal](/locations/portal.md) mit dem Geheimwort.
+Ein kleiner Altar in den [Narben](/locations/narben.md), der als Eingang zum Tempel dient. Aktivierung durch das Geheimwort "[Der Splitter des Ewigen](/items/splitter_des_ewigen.md)".
 
 # Belege
 

@@ -2,7 +2,7 @@
 type: Faction
 title: Gilde der Schilde
 description: Die Gilde der Schilde ist eine kleine, aber lukrative Gilde in Tiefwasser.
-  Sie bietet Aufträge gegen Orks und andere Bedrohungen an. Trotz…
+  Sie übernimmt Aufträge für Willauch; belegt ist dabei ihr Vorgeh…
 tags:
 - factions
 timestamp: '2026-03-18T00:00:00Z'
@@ -10,18 +10,20 @@ id: FACTION_GILDE_DER_SCHILDE
 subtype: Gilde
 ---
 
-# Gilde der Schilde
+Die **Gilde der Schilde** ist eine kleine, aber lukrative Gilde in [Tiefwasser](/locations/tiefwasser.md). Sie übernimmt Aufträge für [Willauch](/locations/willauch.md); belegt ist dabei ihr Vorgehen gegen die [Silberkerne](/factions/silberkerne.md). [P-41]
 
-Die **Gilde der Schilde** ist eine kleine, aber lukrative Gilde in [Tiefwasser](/locations/tiefwasser.md). Sie bietet Aufträge gegen Orks und andere Bedrohungen an. Trotz ihrer geringen Größe scheint sie einträglich zu sein – zumindest legt ihre Beschreibung als lukrativ nahe, dass ihre Aufträge gut bezahlt sind.
+## Aufträge für Willauch
 
-## Aufträge
+[Die Gilde](/factions/gilde_von_ehrenfels.md) tritt als Auftragnehmerin Willauchs auf. Das einzige bisher dokumentierte Auftragsbeispiel ist eine Unternehmung gegen die Silberkerne; ob die Gilde dauerhaft für Willauch arbeitet oder nur fallweise beauftragt wird, ist nicht überliefert. [P-41]
 
-[Die Gilde](/factions/gilde_von_ehrenfels.md) vergibt Aufträge gegen Orks und weitere Gefahren in und um Tiefwasser. Ein konkreter Auftrag, den sie ausschrieb, betraf ein Piratenlager: Die Gruppe wurde von [Lara](/npcs/lara.md) eingeladen, diesen Auftrag anzunehmen und das Lager anzugreifen.
+## Stellung in Tiefwasser
 
-## Beziehungen
+Fast alle Einheimischen von Tiefwasser gehören der Gilde an. Trotz dieser breiten Verankerung in der Bevölkerung wird die Gilde als klein beschrieben; zugleich gilt ihr Geschäft als lukrativ. [P-41]
 
-[Lara](/npcs/lara.md) ist Mitglied der Gilde der Schilde. Über sie entstand der Kontakt zwischen der Gruppe und der Gilde; Lara warb die Gruppe persönlich für den Auftrag gegen das Piratenlager an. Weitere Mitglieder sind aus den vorliegenden Belegen nicht bekannt.
+## Anwerbung der Gruppe
+
+[Lara](/npcs/lara.md) lädt die Gruppe ein, sich der Gilde anzuschließen. Ob die Gruppe die Einladung annimmt, ist nicht überliefert. [P-41]
 
 # Belege
 
-[P-41] Session 2026-03-18 @ 00:26:31 – https://www.youtube.com/watch?v=HHXxsASLrbQ
+[P-41] Session 2026-03-18 @ 00:28:33 – https://www.youtube.com/watch?v=HHXxsASLrbQ

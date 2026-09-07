@@ -1,55 +1,74 @@
 ---
 type: Character
 title: Otis
-description: Otis ist ein junger Human Ranger, der in einem Steinbruch aufwuchs und
-  dort als Steinklopper arbeitete, bevor er sich als Söldner verdingte…
+description: Otis ist ein menschlicher Abenteurer, der in einem Steinbruch aufgewachsen
+  ist und sich der Heldengruppe um Rotunas anschließt – vor allem…
 tags:
 - characters
 timestamp: '2026-04-09T00:00:00Z'
 id: CHAR_OTIS
+status: disputed
 ---
 
 ## Überblick
 
-Otis ist ein junger Human Ranger, der in einem Steinbruch aufwuchs und dort als Steinklopper arbeitete, bevor er sich als Söldner verdingte. Seine eigene Charakterisierung bringt es auf den Punkt: Er ist in einem Steinbruch aufgewachsen und hat nun vor, „was anderes zu kloppen außer Steine“. Er ist pragmatisch, gewaltbereit und im Kampf ebenso effektiv mit Hammer wie mit Bogen. Trotz seiner rauen Schale zeigt er eine gewisse Naivität und eine fürsorgliche Seite, die sich vor allem im Umgang mit seiner Gefährtin Nina und mit geretteten Kindern zeigt.
+Otis ist ein menschlicher Abenteurer, der in einem Steinbruch aufgewachsen ist und sich der Heldengruppe um [Rotunas](/characters/rotunas.md) anschließt – vor allem aus Geldnot, wie die Quellen betonen. In seiner ersten Vorstellung bezeichnet er sich selbst als „Human Ranger“, in einer späteren Session wird er als Kämpfer mit Hammer und Bogen beschrieben. Er ist großgewachsen, körperlich außergewöhnlich stark und kämpft brutal und direkt. Trotz anfänglichen Misstrauens entwickelt er Loyalität gegenüber seinen Gefährten und setzt seine Stärke wiederholt zu deren Schutz ein.
 
 ## Rolle in der Kampagne
 
-Otis gehört zu einer Gruppe von fünf Abenteurern, die in einem speziellen Abenteuer der Runde *Chip Dice Tavern – Dwarfmasters* zusammenkommen. Die Gruppe besteht neben ihm aus [Myko](/characters/myko.md), einem Funk-Rhetoride und ehemaligen Karawanenarzt, Nina, einer Halbling-Bardin in fortgeschrittenem Alter, die wegen Casino-Schulden ihres Mannes Geld verdienen muss, sowie [Krall](/characters/krall.md), einem Galapag-Guardian mit Zweihandhammer.
+Otis ist ein zentrales Mitglied der Heldengruppe. Er übernimmt häufig die Rolle des robusten Nahkämpfers, der aber auch mit dem Bogen auf Distanz agiert. Seine Motive sind zunächst finanzieller Natur: Er schließt sich der Gruppe an, weil er Geld braucht. Dennoch zeigt er im Verlauf der Abenteuer wiederholt Einsatz für seine Gefährten und trägt maßgeblich zum Erfolg der Gruppe bei.
 
-Otis übernimmt innerhalb der Gruppe die Rolle des Beschützers, insbesondere von Nina, die er scherzhaft als seine „Mutter und Ehefrau“ bezeichnet. Er ist bereit, Gefangene in seine Heimatstadt [Willauch](/locations/willauch.md) zu bringen, da er aus dieser Stadt stammt und die Bezahlung akzeptiert. Im Kampfgeschehen agiert er als vorderste Front: Er stürmt Türen ein, zerschmettert Gegner mit seinem Hammer und nutzt seinen Bogen für Fernkampfangriffe. Gemeinsam mit [Rotunas](/characters/rotunas.md) zerstört er die Säulen eines [Portals](/locations/portal.md) und trägt damit entscheidend zum Sieg über die Bedrohung bei.
+In den [Katakomben](/locations/katakomben.md) kämpft er gegen [Banditen](/factions/silberkerne.md) und trägt entscheidend zum Sieg bei, indem er den Anführer [Floran](/npcs/floran.md) kurzerhand in eine Grube stößt. In [Ehrenfels](/locations/ehrenfels.md) rettet er zwei Kinder, bekämpft einen feindlichen Magier, erschlägt mehrere Dämonen, rettet [Brim](/characters/brim.md) vor dem Absturz und zerschlägt zusammen mit [Rotunas](/characters/rotunas.md) die Portalsäulen. Seine Taten zeigen eine Mischung aus Pragmatismus, Rauheit und Loyalität.
 
 ## Wichtige Merkmale
 
-**Fähigkeiten:** Otis ist ein vielseitiger Kämpfer. Er beherrscht den Kampf mit dem Hammer, den er als ehemaliger Steinklopper effektiv einsetzt, um Wände einzureißen und Gegner zu zerschmettern. Zusätzlich nutzt er einen Bogen für den Fernkampf. Seine Erfahrung als Steinklopper macht ihn besonders wertvoll, wenn es darum geht, strukturelle Hindernisse wie Türen oder Wände zu überwinden – so tritt er etwa eine Tür ein, um in ein Lagerhaus zu stürmen, und zerstört zusammen mit Rotunas die Säulen eines Portals.
+### Fähigkeiten und Kampfstil
 
-**Auftreten:** Otis ist ein großer, junger Mensch mit einer pragmatischen und direkten Art. Er zögert nicht, Gewalt anzuwenden, wenn es die Situation erfordert, und scheut auch nicht davor zurück, Kinder unter den Arm zu nehmen und damit in Sicherheit zu bringen. Seine Naivität zeigt sich in Momenten, in denen er Situationen unbedarft angeht, etwa wenn er ohne große Umschweife eine Tür eintritt, ohne vorher zu prüfen, was sich dahinter befindet.
+- **Waffen:** Otis führt einen Hammer für den Nahkampf und einen Bogen für den Fernkampf. Den Hammer nutzt er nicht nur offensiv, sondern auch als Werkzeug – etwa als Anker, um sich und [Brim](/characters/brim.md) bei einer Rettung zu sichern.
+- **Körperliche Stärke:** Er reißt die Wand einer brennenden Scheune ein, trägt zwei Kinder problemlos unter dem Arm und hält [Brim](/characters/brim.md) an den Beinen fest, während sein Hammer als Anker dient.
+- **Kampfverhalten:** Otis agiert brutal und direkt. Er tötet mehrere Gegner, darunter einen [Wächter](/npcs/waechter.md) am Geheimgang, und zögert nicht, den Anführer in eine Grube zu stoßen. Gleichzeitig markiert er den feindlichen Magier als Fokus, um die Angriffe der Gruppe zu koordinieren.
 
-**Wesenszüge:** Otis ist mutig und entschlossen. Er zögert nicht, sich in Gefahr zu begeben, um andere zu retten – so hilft er [Brim](/characters/brim.md), als dieser von einer Kreatur gepackt wird. Seine fürsorgliche Seite zeigt sich im Umgang mit Nina, die er beschützt, und mit den Kindern, die er vor [Dämonen](/factions/daemonen.md) rettet. Sein Humor ist trocken und selbstironisch, etwa wenn er Nina scherzhaft als seine „Mutter und Ehefrau“ bezeichnet.
+### Auftreten
+
+Otis ist menschlich und großgewachsen. In seiner ersten Vorstellung beschreibt er sich als „Human Ranger“; in späteren Quellen wird er als Kämpfer bezeichnet (siehe [Offene Konflikte](#offene-konflikte)). Sein Äußeres wird nicht näher beschrieben, aber seine Statur und Kraft werden mehrfach hervorgehoben.
+
+### Wesenszüge
+
+- Zunächst misstrauisch gegenüber der Gruppe, taut aber auf und unterstützt andere – etwa hilft er [Tibbet](/characters/tibbet.md) beim Klettern.
+- Loyal und beschützend: Er bringt Kinder in Sicherheit und rettet [Brim](/characters/brim.md) unter Einsatz seines eigenen Lebens.
+- Pragmatisch und auf Geld bedacht: Er akzeptiert die Entscheidung, [Floran](/npcs/floran.md) und [Adria](/npcs/adria.md) nach [Willauch](/locations/willauch.md) zu bringen, weil er für die Belohnung bezahlt wurde – ein deutliches Zeichen seiner finanziellen Motivation.
+- Seine raue, aber loyale Art zeigt sich auch in seiner widersprüchlich beschriebenen Beziehung zu [Nina](/characters/nina.md).
 
 ## Beziehungen und Verbindungen
 
-**Nina:** Otis hat eine enge, wenn auch scherzhaft formulierte Bindung zu Nina. Er bezeichnet sie als seine „Mutter und Ehefrau“ und übernimmt in der Gruppe die Rolle ihres Beschützers. Die genaue Natur ihrer Beziehung – ob familiär, romantisch oder rein freundschaftlich – wird in den Belegen nicht näher ausgeführt.
-
-**Brim:** Otis hilft Brim im Kampf, als dieser von einer Kreatur gepackt wird. Die genaue Art ihrer Verbindung ist nicht näher beschrieben, aber die Rettungsaktion zeigt, dass Otis bereit ist, für seine Mitstreiter einzustehen.
-
-**Rotunas:** Gemeinsam mit Rotunas zerstört Otis die Säulen des Portals. Diese Zusammenarbeit deutet auf ein eingespieltes Team hin, auch wenn die näheren Umstände ihrer Beziehung nicht ausgeführt werden.
-
-**Willauch:** Otis stammt aus Willauch und ist bereit, Gefangene dorthin zu bringen. Die Stadt ist ihm vertraut, auch wenn die Belege nicht näher ausführen, was ihn mit ihr verbindet oder warum er sie verlassen hat.
+- **[Rotunas](/characters/rotunas.md):** Gemeinsam zerschlagen sie die Portalsäulen in [Ehrenfels](/locations/ehrenfels.md). Rotunas ist ein zentraler Gefährte, mit dem Otis offenbar vertrauensvoll zusammenarbeitet.
+- **[Tibbet](/characters/tibbet.md):** Otis hilft ihm beim Klettern – ein frühes Beispiel für seine unterstützende Art innerhalb der Gruppe.
+- **[Brim](/characters/brim.md):** Otis rettet Brim vor dem Absturz, indem er ihn an den Beinen packt und seinen Hammer als Anker nutzt. Diese Tat unterstreicht seine Loyalität und körperliche Stärke.
+- **[Nina](/characters/nina.md):** Seine Beziehung zu [Nina](/characters/nina.md) ist widersprüchlich beschrieben: Er bezeichnet sie gleichzeitig als Ex-Frau und Mutter. Was genau damit gemeint ist, bleibt unklar.
+- **[Floran](/npcs/floran.md) und [Adria](/npcs/adria.md):** Otis stößt Floran in eine Grube und trägt so zum Sieg bei. Trotzdem akzeptiert er die Entscheidung, beide nach [Willauch](/locations/willauch.md) zu bringen, weil er dafür bezahlt wurde – ein Hinweis auf seinen Pragmatismus.
+- **[Ehrenfels](/locations/ehrenfels.md):** In dieser Stadt rettet Otis zwei Kinder und kämpft gegen Magier und Dämonen. Am Ende verlässt er die Stadt auf [Inaros](/npcs/inaros.md).
 
 ## Chronologie
 
-**Session 2026-03-23:** Otis wird als Human Ranger vorgestellt, der in einem Steinbruch aufgewachsen ist und nun als Söldner arbeitet. Er schließt sich einer Gruppe von Abenteurern an, die ein spezielles Abenteuer bestreiten. Er übernimmt die Rolle des Beschützers von Nina und erklärt sich bereit, Gefangene nach Willauch zu bringen, da er aus dieser Stadt stammt und die Bezahlung akzeptiert. Seine pragmatische und gewaltbereite Art wird deutlich, ebenso wie seine Naivität.
+### Session 2026-03-23
 
-**Session 2026-04-09:** Otis zeigt sich im Kampf gegen Dämonen als mutig und entschlossen. Er rettet Kinder vor den Dämonen, indem er sie unter den Arm nimmt und in Sicherheit bringt. Er stürmt eine Tür ein, um ein Lagerhaus zu betreten, und nutzt dabei seine Stärke. Im Kampf hilft er Brim, als dieser von einer Kreatur gepackt wird, und zerstört zusammen mit Rotunas die Säulen des Portals. Seine Fähigkeiten mit Bogen und Hammer kommen dabei zum Einsatz.
+Otis stellt sich als menschlicher Waldläufer aus einem Steinbruch vor und schließt sich der Gruppe aus Geldnot an. Anfangs misstrauisch, hilft er [Tibbet](/characters/tibbet.md) beim Klettern und reißt später die Wand einer brennenden Scheune ein, um zu helfen. Im Kampf gegen Banditen agiert er mit seinem Hammer brutal und direkt, tötet mehrere Gegner, darunter einen Wächter am Geheimgang. Als die Gruppe in den Katakomben auf [Floran](/npcs/floran.md) trifft, stößt Otis den Anführer kurzerhand in die Grube und trägt so zum Sieg bei. Er akzeptiert die Entscheidung, [Floran](/npcs/floran.md) und [Adria](/npcs/adria.md) nach [Willauch](/locations/willauch.md) zu bringen, weil er für die Belohnung bezahlt wurde. In dieser Session zeigt sich auch seine raue, aber loyale Art; seine Beziehung zu [Nina](/characters/nina.md) beschreibt er als die zu Ex-Frau und Mutter.
+
+### Session 2026-04-09
+
+Otis – nun als großgewachsener menschlicher Kämpfer mit Hammer und Bogen beschrieben – bringt zu Beginn zwei Kinder in einem Lagerhaus in Sicherheit. Dazu tritt er eine Tür ein und nimmt die Kinder unter den Arm; wörtlich beschreibt er es so: „Ne, ich nehm die so unter den Arm. Ja. Ist ja kein Problem für Otis.“ Er schießt mit dem Bogen auf den feindlichen Magier und markiert ihn als Fokus. Im späteren Verlauf erschlägt er mehrere Dämonen und rettet [Brim](/characters/brim.md) vor dem Absturz, indem er ihn an den Beinen packt und seinen Hammer als Anker nutzt. Zusammen mit [Rotunas](/characters/rotunas.md) zerschlägt er die Portalsäulen. Am Ende verlässt er [Ehrenfels](/locations/ehrenfels.md) auf [Inaros](/npcs/inaros.md).
 
 ## Offene Fragen
 
-- Die genaue Natur der Beziehung zwischen Otis und Nina bleibt unklar – die scherzhafte Bezeichnung als „Mutter und Ehefrau“ lässt Raum für Interpretationen, die die Belege nicht auflösen.
-- Was Otis dazu bewogen hat, den Steinbruch zu verlassen und als Söldner zu arbeiten, wird nicht näher ausgeführt.
-- Welche Verbindung Otis zu Willauch hat und warum er bereit ist, Gefangene dorthin zu bringen, bleibt offen.
+- Das genaue Verhältnis zu [Nina](/characters/nina.md) bleibt unklar: Die Quellen beschreiben sie zugleich als Ex-Frau und Mutter. Ob es sich um eine einzige Person handelt oder um zwei getrennte Beziehungen, geht aus den Belegen nicht hervor.
+- Otis' langfristige Motivation jenseits der Geldnot wird nicht thematisiert. Die Quellen betonen den finanziellen Anreiz, lassen aber offen, ob er weitere Ziele verfolgt.
+- Was nach dem Verlassen von [Ehrenfels](/locations/ehrenfels.md) mit [Inaros](/npcs/inaros.md) geschieht, ist nicht belegt.
 
 ## Belege
 
 [P-42] Session 2026-03-23 @ 00:00:44 (https://www.youtube.com/watch?v=niVxKtdQBn0)
 [P-46] Session 2026-04-09 @ 00:33:50 (https://www.youtube.com/watch?v=vcGkejr8_nI)
+
+## Offene Konflikte
+
+- Otis' Klasse: Beleg [P-42] beschreibt ihn als menschlichen Waldläufer, Beleg [P-46] als menschlichen Kämpfer. Die Quellen widersprechen sich hier, ohne dass eine Erklärung (z. B. Klassenwechsel) erkennbar ist.

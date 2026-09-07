@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import yaml
-
 from pnp_okf.okf import render_document, slugify, write_index
 
 

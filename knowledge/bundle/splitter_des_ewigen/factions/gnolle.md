@@ -1,27 +1,32 @@
 ---
 type: Faction
 title: Gnolle
-description: Die Gnolle sind humanoide Kreaturen, die in der Region wiederholt als
-  aggressive Feindgruppe in Erscheinung treten. Sie kämpfen mit Bögen u…
+description: Gnolle sind kriegerische, hyänenartige Humanoide, die in Gruppen auftreten
+  und eine Bedrohung für die Region darstellen. Sie sammeln sich i…
 tags:
 - factions
 timestamp: '2026-08-25T00:00:00Z'
 id: FACTION_GNOLLE
-subtype: Volk
+subtype: Bande
 ---
 
-Die **Gnolle** sind humanoide Kreaturen, die in der Region wiederholt als aggressive Feindgruppe in Erscheinung treten. Sie kämpfen mit Bögen und Schwertern und gehen offen gegen Siedlungen, Einrichtungen und Reisende vor. Ihr Verhalten ist durch einen ausgeprägten Angriffsdrang gekennzeichnet, weshalb Begegnungen mit ihnen regelmäßig in offene Gefechte münden.
+Gnolle sind kriegerische, hyänenartige Humanoide, die in Gruppen auftreten und eine Bedrohung für die Region darstellen. Sie sammeln sich in den [Grauen Sümpfen](/locations/graue_suempfe.md), überfallen Siedlungen und Karawanen und belagern Bauwerke. Ob alle beobachteten Gnolle einer einzigen Streitmacht angehören, ist nicht bekannt. Einige Verbände stehen zudem unter dem Einfluss externer Kräfte.
 
-## Auftreten und Vorgehen
+## Erscheinungsbild und Kampfweise
 
-[Die Gnolle](/factions/die_gnolle.md) bewohnen ein [Kriegslager](/locations/kriegslager.md), von dem aus sie Angriffe durchführen. So griffen sie eine [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) an und wurden dabei von der Gruppe bekämpft, wobei viele von ihnen getötet wurden. Neben solchen direkten Attacken gehen sie auch verdeckter vor: Bei einem geplanten Angriff auf ein Dorf gruben sie einen Tunnel, um sich Zugang zu verschaffen. Darüber hinaus überfallen sie Karawanen in der Region, was sie zu einer allgemeinen Bedrohung für den Reiseweg macht.
+Gnolle sind zähe, aggressive Kämpfer, die in Gruppen vorgehen. Sie führen unter anderem Langbögen mit enormer Durchschlagskraft. Sie gelten als nicht sonderlich intelligent, lassen sich aber von fähigen Anführern strategisch lenken. Einige Gnolle beherrschen Nebelmagie und verbergen sich im Nebel. Nach ihrem Tod können sich ihre Leichen in dunkle Kreaturen verwandeln.
 
-## Führung und Kontrolle
+## Organisation und Führung
 
-Die Gnolle agieren nicht führungslos. Bei ihrem Angriff auf das Dorf wurden sie von einem unbekannten Anführer geführt, der eine pfeilartige Nase und entstellte Hände hatte; bei ihm könnte es sich um einen Pfeiltroll gehandelt haben. Bei den Karawanenüberfällen hingegen wurden sie von einem Schamanen angeführt. Darüber hinaus stehen sie unter dem Einfluss der Hexe [Landra](/npcs/lenra.md), die die Gnolle kontrolliert. Inwieweit Schamane, unbekannter Anführer und [Leandras](/npcs/lendras.md) Kontrolle zusammenhängen, ist aus den vorliegenden Belegen nicht ersichtlich.
+Mehrere organisierte Gnoll-Verbände sind beobachtet worden. Eine Gruppe, die eine [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) belagert, wird zum Teil von einer mysteriösen schwarzen Magierin kontrolliert. In den Grauen Sümpfen führt ein Wesen mit pfeilartiger Nase und entstellten Händen die Gnolle an; wegen dieser Merkmale wird es für einen [Pfeiltroll](/npcs/pfeiltroll.md) gehalten. Ein eigener [Kommandant](/npcs/gnoll_kommandant.md) führt die in einer Mine und einem Hauptlager hausende Gruppe. Eine weitere, mit [Landra](/npcs/lenra.md) verbundene Bande wird von einem Schamanen angeführt und sucht eine gestohlene Kristallkugel.
+
+## Aktivitäten
+
+Die Gnolle gehen von ihrer Ansammlung in den Sümpfen aus gegen Siedlungen vor. Sie versuchen, eine von Halblingen bewirtschaftete Farm einzunehmen, belagern eine Kapelle und graben einen Tunnel zu einer Mine. Eine Bande überfällt seit Wochen Karawanen auf dem Weg nach [Salzbach](/locations/salzbach.md) und nutzt dabei ihre Nebelmagie. Mehrere Gnolle sterben bei einer Sprengung in der Mine; ihr Kommandant wird im Hauptlager getötet.
 
 # Belege
 
-1. Session 2025-05-06 @ 00:48:47 (https://www.youtube.com/watch?v=e0v6AFGd4mE)
-2. Session 2026-07-10 @ 00:11:03 (https://www.youtube.com/watch?v=H-eHSlfxUAg)
-3. Session 2026-08-25 @ 00:01:00 (https://www.youtube.com/watch?v=1Cjj3OVqiYA)
+1. Session 2025-05-06 @ 00:48:12 – https://www.youtube.com/watch?v=e0v6AFGd4mE
+2. Session 2026-07-10 @ 00:11:03 – https://www.youtube.com/watch?v=H-eHSlfxUAg
+3. Session 2026-07-23 @ 01:20:00 – https://www.youtube.com/watch?v=Gb-TEbCFF0M
+4. Session 2026-08-25 @ 00:00:35 – https://www.youtube.com/watch?v=1Cjj3OVqiYA
