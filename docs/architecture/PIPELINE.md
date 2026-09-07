@@ -19,7 +19,7 @@ anchor name (`def …`) is authoritative.
 | Package | `services/kb/src/pnp_okf` |
 | Venv | `services/kb/.venv/Scripts/python.exe` — **not** the repo-root `.venv`, which belongs to frozen `graph/` |
 | Run tests from | `services/kb` (`pyproject.toml` sets `pythonpath = ["src"]`) |
-| Suite | 259 passed, 1 xfailed (~68 s; the churn test alone is ~37 s) |
+| Suite | 266 passed, 1 xfailed (~68 s; the churn test alone is ~37 s) |
 | System of record | `knowledge/bundle/splitter_des_ewigen/` — 1158 concept files, 6382 internal links |
 | Registry | `knowledge/entity_registry.yaml` — **generated**, 1092 concept ids + a `retired:` ledger |
 | Rules | `knowledge/entity_rules.yaml` — **hand-written, never rewritten by code** |
@@ -126,8 +126,10 @@ concept_id detaches: rules, and `wiki_pages.toml` downstream.
 
 The proper fix (assign a stable opaque id once; treat the name as a mutable
 label) is what Graphiti/Zep, Cognee, Wikidata QIDs and Docusaurus `id`-vs-`slug`
-all do. **Not implemented here.** Until it is, treat every re-extraction as a
-rename event and run the churn test (§10) before emitting.
+all do. **Not implemented here** — the decision, its cheap hybrid form, and the
+four triggers that should reverse it are written up in
+[ADR-004](ADR-004-identity-primitive.md). Until then, treat every re-extraction
+as a rename event and run the churn test (§10) before emitting.
 
 ---
 
@@ -165,10 +167,10 @@ ignored all 18 `never_merge:` groups.
 ### Cache keys
 
 ```python
-# extract.py:69
-key = sha256(PROMPT_VERSION + cfg.model + session_id + dialogue)[:16]
-# extract.py:81
-path = cache_dir / "extract" / f"{session_id}.json"
+# extract.py -- the key
+key  = sha256(PROMPT_VERSION + cfg.model + session_id + dialogue)[:16]
+# extract.py -- the path is now content-addressed (changed 2026-09-07)
+path = cache_dir / "extract" / session_id / f"{key}.json"
 ```
 
 ```python
@@ -179,7 +181,7 @@ key = sha256({v: PROMPT_VERSION, model, entity.model_dump(), tier,
 
 **Four consequences you must internalise:**
 
-1. **The key is versioned; the path is not.** A `PROMPT_VERSION` or model change *overwrites* the old entry — reverting costs a second full rebuild.
+1. ~~The key is versioned; the path is not.~~ **Fixed 2026-09-07.** Each key now lives at its own path, so a `PROMPT_VERSION` or model change no longer overwrites the previous entry and reverting one is free. ⚠ `.cache/` is gitignored — a machine holding a pre-2026-09-07 flat cache must migrate it (read each blob's `_key`, move to `<session>/<key>.json`) or it re-extracts at full price.
 2. **The prompt *text* is not in the key**, only its version number. Change prompt content without bumping `PROMPT_VERSION` and the cache silently serves stale results.
 3. **Changing `DEEPSEEK_MODEL` costs a full rebuild**, same as a prompt bump. Settle the model before starting one.
 4. **Synthesis re-runs on any change to the entity** — a new mention note, a reordered alias, an `important:` flip, a tier change.
@@ -289,8 +291,10 @@ Context budgets (`context.py`): `EXCERPT_BUDGET_CHARS = 60_000` (deep only),
 > population × 60 KB of excerpts × $1.98/MTok output is the bill. Measure the
 > deep/standard/brief split before reaching for a cheaper model.
 
-Routing: `for_tier` (`config.py:47`). **Extraction does not use it** — it always
-passes raw `cfg`, i.e. always pro.
+Routing: `for_tier` (`config.py`). Extraction routes through
+`for_tier("extract")`, overridable with `DEEPSEEK_EXTRACT_MODEL`; the default
+is unchanged (`DEEPSEEK_MODEL`, i.e. pro). Changing it resamples every entity
+name, so it is a **budgeted event**, not a config tweak — see §6 and ADR-004.
 
 ---
 
@@ -329,9 +333,23 @@ Key files: `test_bundle_invariants.py`, `test_link_coverage.py`,
 `test_identity_churn.py` (churn baseline 35 — see its header for why that
 number is *pending rule work*, not LLM churn).
 
-**No test measures whether the extraction is correct.** There is no labelled
-gold set; everything measures the *shape* of the emitted corpus. This is the
-largest known gap.
+**Nothing yet measures whether the extraction is *correct*** — every other test
+measures the shape of the emitted corpus. The harness exists
+(`tests/test_extraction_quality.py`, precision/recall) but **skips until
+`tests/data/gold/` holds hand-labelled sessions**, and it says so in its skip
+reason rather than passing silently. Produce a label file with:
+
+```bash
+python make_gold_stub.py 2025-03-26 > tests/data/gold/2025-03-26.yaml
+```
+
+then correct the draft by hand (`wrong` / `rename` / `missed`). 3-5 sessions
+clears the ~30-example floor; ~100 labels still carries about ±8pp of noise, so
+the result is directional, not an SLA.
+
+This is also the gate for any cheaper extraction model: small models do not
+omit entity names, they **invent** them, so "can extraction move to flash" is a
+precision question and unanswerable without these labels.
 
 ---
 
@@ -358,6 +376,9 @@ cd services/kb
 PNP_REQUIRE_BUNDLE=1 .venv/Scripts/python.exe -m pytest  # CI mode: no silent skips
 
 .venv/Scripts/python.exe -m pnp_okf.cli check            # config + transcript count, no LLM
+.venv/Scripts/python.exe -m pnp_okf.cli run --estimate \
+    --transcripts ../../../pnp-crawl/transcripts_final \
+    --bundle ../../knowledge/bundle/splitter_des_ewigen   # the bill, before you pay it
 .venv/Scripts/python.exe -m pnp_okf.cli validate --bundle ../../knowledge/bundle/splitter_des_ewigen
 .venv/Scripts/python.exe rules_doctor.py                 # dead rules
 .venv/Scripts/python.exe spelling_doctor.py              # name-drift sweep
