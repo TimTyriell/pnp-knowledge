@@ -53,12 +53,20 @@ TRANSCRIPT_DIR = Path(__file__).resolve().parents[4] / "pnp-crawl" / "transcript
 
 GOLD_FILES = sorted(GOLD_DIR.glob("*.yaml")) if GOLD_DIR.is_dir() else []
 
-pytestmark = pytest.mark.skipif(
-    not GOLD_FILES or not TRANSCRIPT_DIR.is_dir(),
+# Only the scoring test needs the corpus; it is a decorator rather than a
+# module-level pytestmark so the truth-set unit test below still runs in CI,
+# where pnp-crawl and .cache are absent. The two reasons are separate because
+# they call for different responses: write the labels, vs check out the corpus.
+needs_labels = pytest.mark.skipif(
+    not GOLD_FILES,
     reason=(
         "no hand-labelled sessions in tests/data/gold -- run make_gold_stub.py "
         "and correct the output. This is a missing measurement, not a passing test."
     ),
+)
+needs_corpus = pytest.mark.skipif(
+    not TRANSCRIPT_DIR.is_dir(),
+    reason="no local transcript corpus (pnp-crawl is a separate repo, absent in CI)",
 )
 
 # Measured 2026-09-07 over 3 labelled sessions, 71 entities:
@@ -147,6 +155,8 @@ def _truth_names(gold: dict, where: str) -> set[str]:
     return names
 
 
+@needs_labels
+@needs_corpus
 def test_extraction_precision_and_recall_have_not_regressed():
     tp = fp = fn = 0
     scored = 0

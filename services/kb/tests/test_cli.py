@@ -105,7 +105,7 @@ def test_a_killed_run_leaves_a_trace_the_next_run_records(tmp_path: Path, monkey
     reading link targets. The marker written at start is the trace.
     """
 
-    from pnp_okf.cli import _begin_run, _write_run_status
+    from pnp_okf.cli import _begin_run
 
     monkeypatch.setenv("PNP_STATE_DIR", str(tmp_path))
 

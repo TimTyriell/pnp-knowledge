@@ -35,10 +35,23 @@ TRANSCRIPT_DIR = (
     Path(__file__).resolve().parents[4] / "pnp-crawl" / "transcripts_final"
 )
 
-pytestmark = pytest.mark.skipif(
-    not REGISTRY.exists() or not TRANSCRIPT_DIR.is_dir(),
-    reason="no bundle checked out",
-)
+# Two separate guards, because they mean different things to CI (conftest.py).
+# The bundle is tracked in this repo, so its absence is a broken checkout and
+# must stay a hard error under PNP_REQUIRE_BUNDLE=1. The transcripts and the
+# extraction cache are not in this repo at all -- pnp-crawl is a separate
+# remote and .cache/ is gitignored -- so CI legitimately has neither, and
+# folding them into the bundle reason made this file fail the whole kb job
+# instead of skipping.
+pytestmark = [
+    pytest.mark.skipif(not REGISTRY.exists(), reason="no bundle checked out"),
+    pytest.mark.skipif(
+        not TRANSCRIPT_DIR.is_dir() or not CACHE_DIR.is_dir(),
+        reason=(
+            "no local transcript corpus or extraction cache (pnp-crawl is a "
+            "separate repo and .cache/ is gitignored -- neither exists in CI)"
+        ),
+    ),
+]
 
 # Measured 2026-09-06 against the real 66-session corpus (entity_registry.yaml
 # as last written by `pnp run` at 2026-09-05T16:42Z, extractions from
