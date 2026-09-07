@@ -5,6 +5,8 @@ import json
 import logging
 import os
 import re
+import threading
+from contextlib import nullcontext
 from pathlib import Path
 
 import openai
@@ -34,6 +36,12 @@ log = logging.getLogger(__name__)
 # of every worker to save a handful of probes on a run that makes hundreds of
 # real calls. Keyed by model because for_tier() swaps the model per tier.
 _NO_STRUCTURED_OUTPUTS: set[str] = set()
+# Models whose structured-outputs capability has been settled this process.
+_PROBED: set[str] = set()
+# The first call for a model doubles as the probe, and the probe uploads the
+# whole transcript. Without this, every worker thread races past the memo and
+# pays that upload to learn the same one-bit answer.
+_PROBE_LOCK = threading.Lock()
 
 
 def _frozen_prompt_version(transcript: SessionTranscript) -> str:
@@ -197,31 +205,44 @@ def _call_llm(client, cfg: DeepSeekConfig, transcript: SessionTranscript) -> Ses
     ]
     if cfg.model in _NO_STRUCTURED_OUTPUTS:
         return _call_llm_json_prompt(client, cfg, messages)
-    try:
-        return _call_llm_structured(client, cfg, messages)
-    except (openai.APIConnectionError, openai.APITimeoutError) as exc:
-        # A dropped connection or timeout says nothing about whether the
-        # model supports structured outputs -- unlike a real capability
-        # rejection it can succeed on the very next attempt, so it must not
-        # poison _NO_STRUCTURED_OUTPUTS for the rest of the process. The
-        # fallback below still has its own retry/backoff to ride this out.
-        log.info(
-            "[extract] structured-outputs probe hit a transient network "
-            "error for %s (%s); falling back to the JSON prompt for this "
-            "call only",
-            cfg.model,
-            type(exc).__name__,
-        )
-        return _call_llm_json_prompt(client, cfg, messages)
-    except Exception as exc:
-        _NO_STRUCTURED_OUTPUTS.add(cfg.model)
-        log.info(
-            "[extract] structured-outputs not available for %s (%s); using the "
-            "JSON prompt for the rest of this run",
-            cfg.model,
-            type(exc).__name__,
-        )
-        return _call_llm_json_prompt(client, cfg, messages)
+
+    # Serialise only while the capability is still unknown. The first call for
+    # a model doubles as the probe and uploads the whole transcript, so
+    # letting `--workers` threads race past the memo pays that upload N times
+    # over to learn one boolean. Once settled, later calls take nullcontext()
+    # and run fully parallel -- the cost is one un-parallelised session.
+    guard = nullcontext() if cfg.model in _PROBED else _PROBE_LOCK
+    with guard:
+        if cfg.model in _NO_STRUCTURED_OUTPUTS:
+            return _call_llm_json_prompt(client, cfg, messages)
+        try:
+            parsed = _call_llm_structured(client, cfg, messages)
+        except (openai.APIConnectionError, openai.APITimeoutError) as exc:
+            # A dropped connection or timeout says nothing about whether the
+            # model supports structured outputs -- unlike a real capability
+            # rejection it can succeed on the very next attempt, so it must
+            # not poison the memo, and the capability stays unsettled. The
+            # fallback has its own retry/backoff to ride this out.
+            log.info(
+                "[extract] structured-outputs probe hit a transient network "
+                "error for %s (%s); falling back to the JSON prompt for this "
+                "call only",
+                cfg.model,
+                type(exc).__name__,
+            )
+            return _call_llm_json_prompt(client, cfg, messages)
+        except Exception as exc:
+            _NO_STRUCTURED_OUTPUTS.add(cfg.model)
+            _PROBED.add(cfg.model)
+            log.info(
+                "[extract] structured-outputs not available for %s (%s); "
+                "using the JSON prompt for the rest of this run",
+                cfg.model,
+                type(exc).__name__,
+            )
+            return _call_llm_json_prompt(client, cfg, messages)
+        _PROBED.add(cfg.model)
+        return parsed
 
 
 def extract_session(

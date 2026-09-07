@@ -115,3 +115,44 @@ def test_capability_error_still_populates_the_memo():
     client, cfg, t = _FakeClient(), _cfg(), _transcript()
     _call_llm(client, cfg, t)
     assert cfg.model in extract_mod._NO_STRUCTURED_OUTPUTS
+
+
+def test_concurrent_workers_probe_only_once(monkeypatch):
+    """Parallel extraction must not upload N transcripts to learn one boolean.
+
+    The probe IS the first real call, so with --workers 8 up to eight threads
+    raced past the memo and each uploaded a whole ~30k-token transcript before
+    the first rejection landed. Measured at ~35% of a cold rebuild's tokens
+    before the memo existed at all; the race is what is left of it.
+    """
+
+    import threading
+
+    from pnp_okf.models import SessionTranscript
+
+    extract_mod._PROBED.clear()
+    client = _FakeClient()
+    cfg = _cfg()
+    transcript = SessionTranscript(
+        session_id="2026-01-01_X_a", date="2026-01-01",
+        url="https://youtu.be/x", title="T", segments=[],
+    )
+
+    barrier = threading.Barrier(8)
+
+    def worker():
+        barrier.wait()
+        _call_llm(client, cfg, transcript)
+
+    threads = [threading.Thread(target=worker) for _ in range(8)]
+    for t in threads:
+        t.start()
+    for t in threads:
+        t.join()
+
+    assert client.probes == 1, (
+        f"{client.probes} threads each uploaded a full transcript to discover "
+        "the same unsupported-capability answer"
+    )
+    assert client.json_calls == 8
+    extract_mod._PROBED.clear()

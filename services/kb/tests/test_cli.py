@@ -109,3 +109,58 @@ def test_a_finished_run_leaves_no_stale_marker(tmp_path: Path, monkeypatch):
         for line in (tmp_path / "history.jsonl").read_text(encoding="utf-8").splitlines()
     ]
     assert [r["ok"] for r in rows] == [True]
+
+
+def test_extraction_model_is_selectable_and_defaults_to_the_strong_model(monkeypatch):
+    """Extraction routes through the tier system like synthesis does.
+
+    It always used the strong model because cli.py handed _extract_all the raw
+    cfg and never called for_tier(). Extraction is ~a quarter of a rebuild's
+    bill, so whether it can be moved should be a config decision, not a code
+    change -- but the default must not shift underneath anyone.
+    """
+
+    from pnp_okf.config import DeepSeekConfig
+
+    for var in ("DEEPSEEK_MODEL", "DEEPSEEK_LIGHT_MODEL", "DEEPSEEK_EXTRACT_MODEL"):
+        monkeypatch.delenv(var, raising=False)
+    monkeypatch.setenv("DEEPSEEK_API_KEY", "x")
+
+    cfg = DeepSeekConfig.from_env()
+    assert cfg.for_tier("extract").model == "deepseek-v4-pro", "default must not move"
+    assert cfg.for_tier("deep").model == "deepseek-v4-pro"
+    assert cfg.for_tier("standard").model == "deepseek-v4-flash"
+
+    monkeypatch.setenv("DEEPSEEK_EXTRACT_MODEL", "deepseek-v4-flash")
+    assert DeepSeekConfig.from_env().for_tier("extract").model == "deepseek-v4-flash"
+
+
+def test_estimate_makes_no_llm_call(tmp_path: Path, monkeypatch, capsys):
+    """--estimate must price the run without spending anything.
+
+    The ~$6.50 rebuild cost was learned by paying it. The whole point of this
+    flag is that the number arrives before the money leaves, so the one thing
+    it must never do is call the model. base_url points at an unroutable host,
+    so any real call fails loudly rather than silently succeeding.
+    """
+
+    _make_transcript(tmp_path, "2025-03-26_RF_abc")
+    monkeypatch.setenv("DEEPSEEK_API_KEY", "x")
+    monkeypatch.setenv("DEEPSEEK_BASE_URL", "https://example.invalid")
+    monkeypatch.setenv("PNP_PRICE_IN_DEEPSEEK_V4_PRO", "0.66")
+    monkeypatch.setenv("PNP_PRICE_OUT_DEEPSEEK_V4_PRO", "1.98")
+    monkeypatch.setenv("PNP_STATE_DIR", str(tmp_path / "state"))
+
+    ret = main([
+        "run", "--estimate",
+        "--transcripts", str(tmp_path),
+        "--bundle", str(tmp_path / "bundle"),
+        "--cache", str(tmp_path / "cache"),
+    ])
+
+    assert ret == 0
+    out = capsys.readouterr().out
+    assert "extract" in out.lower()
+    assert "estimate" in out.lower()
+    # It must not have written a run record either -- nothing happened.
+    assert not (tmp_path / "state" / "run_in_progress.json").exists()

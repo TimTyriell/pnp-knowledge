@@ -28,17 +28,19 @@ from pnp_okf.emit import (
     prune_orphans,
 )
 from pnp_okf.episodes import Episodes, citation_labels, relabel_citations
-from pnp_okf.extract import extract_session
+from pnp_okf.extract import _cache_key, _cache_path, _load_cached, extract_session
 from pnp_okf.ingest import load_transcripts
 from pnp_okf.models import CanonicalEntity, SessionExtraction, SessionTranscript
 from pnp_okf.resolve import load_spellings, require_rules, resolve_entities, write_registry
 from pnp_okf.synthesize import (
+    _cache_key as synth_cache_key,
+    _cache_path as synth_cache_path,
     autolink_prose,
     link_targets,
     render_brief_body,
     synthesize_entity_body,
 )
-from pnp_okf.usage import LEDGER
+from pnp_okf.usage import LEDGER, _price
 from pnp_okf.validate import fix_bundle, validate_bundle
 
 log = logging.getLogger("pnp_okf")
@@ -189,8 +191,135 @@ def _write_run_status(started_at: str, ok: bool, error: str | None, counts: dict
     (state_dir / "run_in_progress.json").unlink(missing_ok=True)
 
 
+def _avg_tokens_per_call() -> dict[str, tuple[float, float]]:
+    """(prompt, completion) per call, by model, from past successful runs.
+
+    Measured history beats a hard-coded guess: the numbers already sit in
+    state/history.jsonl, written by every run since usage accounting landed.
+    """
+
+    totals: dict[str, list[float]] = {}
+    path = _state_dir() / "history.jsonl"
+    if not path.exists():
+        return {}
+    for line in path.read_text(encoding="utf-8").splitlines():
+        try:
+            rec = json.loads(line)
+        except ValueError:
+            continue
+        for model, u in ((rec.get("usage") or {}).get("by_model") or {}).items():
+            calls = u.get("calls") or 0
+            if not calls:
+                continue
+            acc = totals.setdefault(model, [0.0, 0.0, 0.0])
+            acc[0] += u.get("prompt_tokens") or 0
+            acc[1] += u.get("completion_tokens") or 0
+            acc[2] += calls
+    return {m: (p / c, q / c) for m, (p, q, c) in totals.items() if c}
+
+
+def _estimate_run(args: argparse.Namespace) -> int:
+    """Report what a run would cost, then exit without calling the model.
+
+    Every input already exists: which sessions are cached is decidable from
+    the cache alone, the tier split falls out of a resolve (a pure function),
+    and per-call token averages come from history.jsonl. The ~$6.50 rebuild
+    figure was originally learned by paying it; this is so the next one is
+    known in advance.
+    """
+
+    paths = Paths.resolve(args.transcripts, args.bundle, args.cache)
+    cfg = DeepSeekConfig.from_env().for_tier("extract")
+    transcripts = _select(
+        load_transcripts(paths.transcript_dir), args.limit, args.session
+    )
+
+    cached, missing = [], []
+    for t in transcripts:
+        key = _cache_key(t, cfg)
+        (cached if _load_cached(_cache_path(paths.cache_dir, t, key), key) is not None
+         else missing).append(t)
+
+    print(f"extract:  {len(cached)} cached, {len(missing)} to call  [{cfg.model}]")
+
+    synth_calls: Counter[str] = Counter()
+    if missing:
+        print("synth:    unknown until those sessions are extracted")
+    else:
+        extractions = {
+            t.session_id: _load_cached(
+                _cache_path(paths.cache_dir, t, _cache_key(t, cfg)), _cache_key(t, cfg)
+            )
+            for t in transcripts
+        }
+        tmap = {t.session_id: t for t in transcripts}
+        entities = resolve_entities(extractions, tmap, paths.registry_path)
+        base = DeepSeekConfig.from_env()
+        # The synth cache has to be consulted or the number is useless: a warm
+        # re-emit is ~$0.05 against a ~$6.50 cold rebuild, and an estimate that
+        # overshoots by two orders of magnitude just teaches you to ignore it.
+        # Every input here is a pure function -- no model call.
+        source_sections = load_sources(paths.sources_dir)
+        warm = 0
+        for entity in entities:
+            if entity.tier == "brief":
+                continue           # rendered locally, no call ever
+            tier_cfg = base.for_tier(entity.tier)
+            key = synth_cache_key(
+                entity,
+                tier_cfg,
+                sources_for(entity, source_sections),
+                excerpts_for(entity, tmap) if entity.tier == "deep" else "",
+                secondary_sources_for(entity, source_sections),
+            )
+            path = synth_cache_path(paths.cache_dir, entity, key)
+            if path.exists():
+                warm += 1
+            else:
+                synth_calls[tier_cfg.model] += 1
+        total = sum(synth_calls.values())
+        detail = ", ".join(f"{m} {n}" for m, n in sorted(synth_calls.items()))
+        print(f"synth:    {warm} cached, {total} to call"
+              + (f" ({detail})" if detail else ""))
+
+    per_call = _avg_tokens_per_call()
+    calls: Counter[str] = Counter(synth_calls)
+    calls[cfg.model] += len(missing)
+
+    prompt = completion = 0.0
+    cost, priced = 0.0, True
+    for model, n in calls.items():
+        avg_p, avg_c = per_call.get(model, (0.0, 0.0))
+        if not (avg_p or avg_c):
+            priced = False
+            continue
+        prompt += avg_p * n
+        completion += avg_c * n
+        p_in, p_out = _price("IN", model), _price("OUT", model)
+        if p_in is None or p_out is None:
+            priced = False
+        else:
+            cost += (avg_p * n * p_in + avg_c * n * p_out) / 1_000_000
+
+    tokens = prompt + completion
+    if not calls.total():
+        print("estimate: no model calls needed -- this run is free")
+        return 0
+    line = f"estimate: ~{tokens / 1_000_000:.2f}M tokens"
+    if priced and cost:
+        cur = os.environ.get("PNP_PRICE_CURRENCY", "USD")
+        line += f", ~{cost:.2f} {cur} at off-peak rates (double at peak)"
+    else:
+        line += " (unpriced: set PNP_PRICE_IN_/OUT_<MODEL>, or no history yet)"
+    print(line)
+    return 0
+
+
 def cmd_run(args: argparse.Namespace) -> int:
     """Full pipeline: ingest -> extract -> resolve -> synthesize -> emit."""
+
+    if getattr(args, "estimate", False):
+        return _estimate_run(args)
 
     started_at = datetime.now(UTC).isoformat(timespec="seconds").replace("+00:00", "Z")
     _begin_run(started_at)
@@ -219,7 +348,10 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
             "files that carry no new knowledge (see docs/architecture for "
             "the 2026-08 incident this guards against)."
         )
-    extractions = _extract_all(transcripts, cfg, paths, args.reextract, workers=args.workers)
+    extractions = _extract_all(
+        transcripts, cfg.for_tier("extract"), paths, args.reextract,
+        workers=args.workers,
+    )
 
     registry_path = paths.registry_path
     require_rules(registry_path)
@@ -635,6 +767,11 @@ def _build_parser() -> argparse.ArgumentParser:
         "--allow-prune", action="store_true",
         help="Allow pruning more than 10%% of existing concept files in one "
         "run. Orphan pruning is skipped entirely on a --limit/--session run.",
+    )
+    run.add_argument(
+        "--estimate",
+        action="store_true",
+        help="Report what this run would cost and exit without calling the model",
     )
     run.add_argument(
         "--allow-rename", action="store_true",

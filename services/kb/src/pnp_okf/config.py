@@ -32,21 +32,39 @@ class DeepSeekConfig:
     model: str
     api_key: str
     light_model: str = DEFAULT_LIGHT_MODEL
+    extract_model: str = DEFAULT_MODEL
 
     @classmethod
     def from_env(cls) -> DeepSeekConfig:
         base_url = os.environ.get("DEEPSEEK_BASE_URL", "https://api.deepseek.com").strip()
         model = os.environ.get("DEEPSEEK_MODEL", DEFAULT_MODEL).strip()
         light = os.environ.get("DEEPSEEK_LIGHT_MODEL", DEFAULT_LIGHT_MODEL).strip()
+        extract = os.environ.get("DEEPSEEK_EXTRACT_MODEL", model).strip()
         api_key = os.environ.get("DEEPSEEK_API_KEY", "").strip()
 
         if not api_key:
             raise ConfigError("Missing required environment variable: DEEPSEEK_API_KEY")
-        return cls(base_url=base_url, model=model, api_key=api_key, light_model=light)
+        return cls(
+            base_url=base_url,
+            model=model,
+            api_key=api_key,
+            light_model=light,
+            extract_model=extract,
+        )
 
     def for_tier(self, tier: str) -> DeepSeekConfig:
-        """Config for one synthesis tier — the strong model only where it pays."""
+        """Config for one pipeline tier — the strong model only where it pays.
 
+        ``extract`` defaults to the strong model (``DEEPSEEK_MODEL``) and is
+        overridable on its own via ``DEEPSEEK_EXTRACT_MODEL``. Extraction is
+        roughly a quarter of a rebuild's bill, so whether it can run cheaper
+        should be a configuration decision rather than a code change --  but
+        moving it also resamples every entity name, so treat a change here as
+        a budgeted event (docs/architecture/PIPELINE.md section 6).
+        """
+
+        if tier == "extract":
+            return replace(self, model=self.extract_model)
         if tier == "deep" or self.model == self.light_model:
             return self
         return replace(self, model=self.light_model)
