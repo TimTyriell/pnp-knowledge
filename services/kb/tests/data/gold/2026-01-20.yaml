@@ -1,0 +1,126 @@
+# Hand-labelled ground truth for 2026-01-20.
+#
+# Prefilled from the cached extraction -- CORRECT IT, do not trust it.
+# For each entity set verdict to one of:
+#   ok      - the model was right (name and type both)
+#   wrong   - hallucinated, or not actually an entity  -> counts against precision
+#   rename  - real entity, wrong name; put the right one in `should_be`
+# Then ADD any entity the model missed with `verdict: missed`,
+# which is what makes recall measurable. Missing entities are the
+# half no amount of output-shape checking can see.
+#
+# Source: https://www.youtube.com/watch?v=H3ckYdTv4y8
+
+# Flip this to true once you have actually been through the list.
+# While it is false the quality test refuses to score this file --
+# an unreviewed stub is all 'ok', which would report perfect
+# precision and recall from labels nobody checked.
+reviewed: false
+
+session_id: 2026-01-20_RF_H3ckYdTv4y8
+date: '2026-01-20'
+entities:
+  - name: 'Lindo Laut'
+    type: Character
+    citation_ts: '00:33:33'
+    verdict: ok
+  - name: 'Rotunas'
+    type: Character
+    citation_ts: '00:31:34'
+    verdict: ok
+  - name: 'Esterossa'
+    type: Character
+    citation_ts: '00:13:00'
+    verdict: ok
+  - name: 'Lunara Velora'
+    type: Character
+    citation_ts: '00:34:24'
+    verdict: ok
+  - name: 'Nyrella'
+    type: Character
+    citation_ts: '00:23:48'
+    verdict: ok
+  - name: 'Dodo'
+    type: Character
+    citation_ts: '00:55:20'
+    verdict: ok
+  - name: 'Belorus'
+    type: NPC
+    citation_ts: '00:09:02'
+    verdict: ok
+  - name: 'Hal'
+    type: NPC
+    citation_ts: '01:57:57'
+    verdict: ok
+  - name: 'Nairuk'
+    type: NPC
+    citation_ts: '00:27:08'
+    verdict: ok
+  - name: 'Slicks'
+    type: Deity
+    citation_ts: '00:41:35'
+    verdict: ok
+  - name: 'Vasul'
+    type: Deity
+    citation_ts: '00:17:11'
+    verdict: ok
+  - name: 'Leandra'
+    type: NPC
+    citation_ts: '01:44:36'
+    verdict: ok
+  - name: 'Dormak'
+    type: NPC
+    citation_ts: '01:44:36'
+    verdict: ok
+  - name: 'Banditenversteck / Flüchtlingslager'
+    type: Location
+    citation_ts: '00:06:33'
+    verdict: ok
+  - name: 'Bereska'
+    type: Location
+    citation_ts: '00:06:33'
+    verdict: ok
+  - name: 'Splitterwelt'
+    type: Domain
+    citation_ts: '00:34:52'
+    verdict: ok
+  - name: 'Abyssalis'
+    type: Domain
+    citation_ts: '00:39:46'
+    verdict: ok
+  - name: 'Ehrenfels'
+    type: Location
+    citation_ts: '02:05:00'
+    verdict: ok
+  - name: 'Vasuls Buch'
+    type: Item
+    citation_ts: '01:48:29'
+    verdict: ok
+  - name: 'Notiz von Vora'
+    type: Item
+    citation_ts: '02:03:43'
+    verdict: ok
+  - name: "Belorus' Kristall"
+    type: Item
+    citation_ts: '00:54:40'
+    verdict: ok
+  - name: 'Belagerung des Banditenverstecks'
+    type: Event
+    citation_ts: '00:17:38'
+    verdict: ok
+  - name: 'Lunara verschiebt die Welt in die Splitterwelt'
+    type: Event
+    citation_ts: '00:42:12'
+    verdict: ok
+  - name: "Belorus' Kapitulation und Abzug"
+    type: Event
+    citation_ts: '01:43:20'
+    verdict: ok
+  - name: 'Lektüre der Notiz von Vora'
+    type: Event
+    citation_ts: '02:03:43'
+    verdict: ok
+  - name: 'Banditengilde'
+    type: Faction
+    citation_ts: '01:59:50'
+    verdict: ok

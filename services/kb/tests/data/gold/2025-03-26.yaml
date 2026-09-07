@@ -1,0 +1,74 @@
+# Hand-labelled ground truth for 2025-03-26.
+#
+# Prefilled from the cached extraction -- CORRECT IT, do not trust it.
+# For each entity set verdict to one of:
+#   ok      - the model was right (name and type both)
+#   wrong   - hallucinated, or not actually an entity  -> counts against precision
+#   rename  - real entity, wrong name; put the right one in `should_be`
+# Then ADD any entity the model missed with `verdict: missed`,
+# which is what makes recall measurable. Missing entities are the
+# half no amount of output-shape checking can see.
+#
+# Source: https://www.youtube.com/watch?v=ROCKGeeRUFw
+
+# Flip this to true once you have actually been through the list.
+# While it is false the quality test refuses to score this file --
+# an unreviewed stub is all 'ok', which would report perfect
+# precision and recall from labels nobody checked.
+reviewed: false
+
+session_id: 2025-03-26_RF_ROCKGeeRUFw
+date: '2025-03-26'
+entities:
+  - name: 'Lindo Laut'
+    type: Character
+    citation_ts: '01:27:14'
+    verdict: ok
+  - name: 'Esterossa'
+    type: Character
+    citation_ts: '01:46:53'
+    verdict: ok
+  - name: 'Dodo'
+    type: Character
+    citation_ts: '01:36:17'
+    verdict: ok
+  - name: 'Tentakelmonster'
+    type: NPC
+    citation_ts: '01:46:53'
+    verdict: ok
+  - name: 'Perry das Schnabeltier'
+    type: NPC
+    citation_ts: '00:29:12'
+    verdict: ok
+  - name: 'Ritualplatz'
+    type: Location
+    citation_ts: '01:10:39'
+    verdict: ok
+  - name: 'Beschwörungskessel'
+    type: Item
+    citation_ts: '01:23:03'
+    verdict: ok
+  - name: 'Beschwörungsformel-Schriftrolle'
+    type: Item
+    citation_ts: '01:20:17'
+    verdict: ok
+  - name: 'Nachricht am Monster'
+    type: Item
+    citation_ts: '01:48:26'
+    verdict: ok
+  - name: 'Halsband des Monsters'
+    type: Item
+    citation_ts: '01:47:59'
+    verdict: ok
+  - name: 'Froschhausen'
+    type: Location
+    citation_ts: '01:21:58'
+    verdict: ok
+  - name: 'Kampf gegen das tentakelige Monster'
+    type: Event
+    citation_ts: '01:28:52'
+    verdict: ok
+  - name: 'Beschwörungsritual am Kessel'
+    type: Event
+    citation_ts: '01:27:14'
+    verdict: ok

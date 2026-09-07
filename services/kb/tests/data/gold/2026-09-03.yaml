@@ -1,0 +1,146 @@
+# Hand-labelled ground truth for 2026-09-03.
+#
+# Prefilled from the cached extraction -- CORRECT IT, do not trust it.
+# For each entity set verdict to one of:
+#   ok      - the model was right (name and type both)
+#   wrong   - hallucinated, or not actually an entity  -> counts against precision
+#   rename  - real entity, wrong name; put the right one in `should_be`
+# Then ADD any entity the model missed with `verdict: missed`,
+# which is what makes recall measurable. Missing entities are the
+# half no amount of output-shape checking can see.
+#
+# Source: https://www.youtube.com/watch?v=bl-hX87_EC8
+
+# Flip this to true once you have actually been through the list.
+# While it is false the quality test refuses to score this file --
+# an unreviewed stub is all 'ok', which would report perfect
+# precision and recall from labels nobody checked.
+reviewed: false
+
+session_id: 2026-09-03_Team-B_bl-hX87_EC8
+date: '2026-09-03'
+entities:
+  - name: 'Bruma Stormrak'
+    type: Character
+    citation_ts: '00:07:46'
+    verdict: ok
+  - name: 'Saris'
+    type: Character
+    citation_ts: '01:22:05'
+    verdict: ok
+  - name: 'Kaya'
+    type: Character
+    citation_ts: '02:03:07'
+    verdict: ok
+  - name: 'Sange'
+    type: Character
+    citation_ts: '02:56:11'
+    verdict: ok
+  - name: 'Hauptmann Aaron'
+    type: NPC
+    citation_ts: '00:52:06'
+    verdict: ok
+  - name: 'Talron'
+    type: NPC
+    citation_ts: '01:05:30'
+    verdict: ok
+  - name: 'Coralius'
+    type: NPC
+    citation_ts: '03:10:43'
+    verdict: ok
+  - name: 'Sir Tali von Brandau'
+    type: NPC
+    citation_ts: '03:08:48'
+    verdict: ok
+  - name: 'Kenku-Bote'
+    type: NPC
+    citation_ts: '01:02:30'
+    verdict: ok
+  - name: 'Dame aus dem grünen Sumpf'
+    type: NPC
+    citation_ts: '01:03:20'
+    verdict: ok
+  - name: 'Prinzessin Marie'
+    type: NPC
+    citation_ts: '00:22:12'
+    verdict: ok
+  - name: 'Spitzzahn'
+    type: NPC
+    citation_ts: '00:09:36'
+    verdict: ok
+  - name: 'Gerhard Schanz'
+    type: NPC
+    citation_ts: '00:33:22'
+    verdict: ok
+  - name: 'Raxlis'
+    type: NPC
+    citation_ts: '03:08:48'
+    verdict: ok
+  - name: 'Herakles'
+    type: NPC
+    citation_ts: '03:08:48'
+    verdict: ok
+  - name: 'Margus'
+    type: NPC
+    citation_ts: '03:24:04'
+    verdict: ok
+  - name: 'Ringtal'
+    type: Location
+    citation_ts: '00:08:33'
+    verdict: ok
+  - name: 'Brandau'
+    type: Location
+    citation_ts: '00:22:12'
+    verdict: ok
+  - name: 'Willau'
+    type: Location
+    citation_ts: '00:42:03'
+    verdict: ok
+  - name: 'Gnoll-Armee'
+    type: Faction
+    citation_ts: '00:18:40'
+    verdict: ok
+  - name: 'Ringtaler Verteidiger'
+    type: Faction
+    citation_ts: '00:20:56'
+    verdict: ok
+  - name: 'Jorans Münze'
+    type: Item
+    citation_ts: '00:12:30'
+    verdict: ok
+  - name: 'Kayas Peitsche'
+    type: Item
+    citation_ts: '01:47:50'
+    verdict: ok
+  - name: "Saris' Zepter"
+    type: Item
+    citation_ts: '01:20:09'
+    verdict: ok
+  - name: 'Joran'
+    type: Deity
+    citation_ts: '02:56:11'
+    verdict: ok
+  - name: 'Schlacht um Ringtal (erste Welle)'
+    type: Event
+    citation_ts: '03:03:48'
+    verdict: ok
+  - name: 'Verhandlungsversuch der Gnolle'
+    type: Event
+    citation_ts: '01:02:30'
+    verdict: ok
+  - name: 'Attentat auf Talron'
+    type: Event
+    citation_ts: '01:05:30'
+    verdict: ok
+  - name: 'Vision von Joran'
+    type: Event
+    citation_ts: '00:12:30'
+    verdict: ok
+  - name: 'Kriegsrat nach der ersten Welle'
+    type: Event
+    citation_ts: '03:08:48'
+    verdict: ok
+  - name: 'Göttliche Segnung Sanges durch Joran'
+    type: Event
+    citation_ts: '02:56:11'
+    verdict: ok

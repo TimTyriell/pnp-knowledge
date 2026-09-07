@@ -100,18 +100,37 @@ def _score(gold: dict) -> tuple[int, int, int]:
 
 def test_extraction_precision_and_recall_have_not_regressed():
     tp = fp = fn = 0
+    scored = 0
+    unreviewed = []
     for path in GOLD_FILES:
         gold = _gold(path)
+        # A freshly generated stub marks every entity `ok`, so scoring one
+        # would report perfect precision and recall from labels nobody has
+        # read -- the same failure as an eval suite that passes by skipping.
+        if not gold.get("reviewed"):
+            unreviewed.append(path.name)
+            continue
         _extracted_names(gold["session_id"])  # asserts the session is still cached
         a, b, c = _score(gold)
         tp, fp, fn = tp + a, fp + b, fn + c
+        scored += 1
+
+    if not scored:
+        pytest.skip(
+            "no reviewed gold files yet ("
+            + ", ".join(unreviewed)
+            + " are unreviewed stubs). Correct them by hand, then set "
+            "`reviewed: true`."
+        )
+    if unreviewed:
+        print(f"\nnote: skipping unreviewed stub(s): {', '.join(unreviewed)}")
 
     assert tp + fp, "no labelled entities -- the gold files are empty"
     precision = tp / (tp + fp)
     recall = tp / (tp + fn) if (tp + fn) else 1.0
 
     print(
-        f"\nlabelled sessions: {len(GOLD_FILES)} | entities: {tp + fp + fn}"
+        f"\nscored sessions: {scored} of {len(GOLD_FILES)} | entities: {tp + fp + fn}"
         f"\nprecision: {precision:.3f}  recall: {recall:.3f}"
     )
     assert precision >= PRECISION_BASELINE

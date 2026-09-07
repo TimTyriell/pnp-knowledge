@@ -34,6 +34,10 @@ def main(argv: list[str]) -> int:
         return 2
     wanted = argv[1]
 
+    # Entity names are German. Redirecting stdout on Windows otherwise encodes
+    # them in the console codepage and the YAML comes back undecodable.
+    sys.stdout.reconfigure(encoding="utf-8")
+
     cfg = DeepSeekConfig.from_env()
     matches = [
         t
@@ -67,6 +71,12 @@ def main(argv: list[str]) -> int:
     print("# half no amount of output-shape checking can see.")
     print("#")
     print(f"# Source: {transcript.url}")
+    print()
+    print("# Flip this to true once you have actually been through the list.")
+    print("# While it is false the quality test refuses to score this file --")
+    print("# an unreviewed stub is all 'ok', which would report perfect")
+    print("# precision and recall from labels nobody checked.")
+    print("reviewed: false")
     print()
     print(f"session_id: {transcript.session_id}")
     print(f"date: '{transcript.date}'")
