@@ -14,18 +14,23 @@ directly from the real corpus, using the cache (no LLM calls, no `pnp run`).
 
 from __future__ import annotations
 
+import os
 from pathlib import Path
 
 import pytest
 import yaml
 from pnp_okf.config import DeepSeekConfig
-from pnp_okf.extract import _cache_key, _cache_path, _load_cached
+from pnp_okf.extract import load_cached_extraction
 from pnp_okf.ingest import load_transcripts
 from pnp_okf.resolve import resolve_entities
 
 KNOWLEDGE = Path(__file__).resolve().parents[3] / "knowledge"
 REGISTRY = KNOWLEDGE / "entity_registry.yaml"
-CACHE_DIR = Path(__file__).resolve().parents[1] / ".cache"
+# PNP_CACHE_DIR wins, as it does for the pipeline; the fallback is anchored on
+# this file rather than the CWD, because pytest runs from the repo root.
+CACHE_DIR = Path(
+    os.environ.get("PNP_CACHE_DIR") or Path(__file__).resolve().parents[1] / ".cache"
+)
 TRANSCRIPT_DIR = (
     Path(__file__).resolve().parents[4] / "pnp-crawl" / "transcripts_final"
 )
@@ -72,13 +77,16 @@ CHURN_BASELINE = 35
 
 
 def _fresh_concept_ids() -> set[str]:
-    cfg = DeepSeekConfig.from_env()
+    # for_tier("extract"), or DEEPSEEK_EXTRACT_MODEL changes the cache key and
+    # every session reads as uncached -- the churn number would then be
+    # measured over an empty resolve.
+    cfg = DeepSeekConfig.from_env().for_tier("extract")
     transcripts = load_transcripts(TRANSCRIPT_DIR)
     tmap = {t.session_id: t for t in transcripts}
     extractions = {
         t.session_id: c
         for t in transcripts
-        if (c := _load_cached(_cache_path(CACHE_DIR, t, _cache_key(t, cfg)), _cache_key(t, cfg)))
+        if (c := load_cached_extraction(CACHE_DIR, t, cfg))
     }
     entities = resolve_entities(extractions, tmap, REGISTRY)
     return {e.concept_id for e in entities}

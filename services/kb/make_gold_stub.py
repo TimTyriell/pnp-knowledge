@@ -17,15 +17,19 @@ Read docs/architecture/PIPELINE.md section 10 before using the result.
 """
 from __future__ import annotations
 
+import os
 import sys
 from pathlib import Path
 
 from pnp_okf.config import DeepSeekConfig
-from pnp_okf.extract import _cache_key, _cache_path, _load_cached
+from pnp_okf.extract import load_cached_extraction
 from pnp_okf.ingest import load_transcripts
 
 HERE = Path(__file__).resolve().parent
 TRANSCRIPTS = HERE.parents[2] / "pnp-crawl" / "transcripts_final"
+# PNP_CACHE_DIR wins, as it does for the pipeline; the fallback is anchored on
+# this file so the script works from any working directory.
+CACHE_DIR = Path(os.environ.get("PNP_CACHE_DIR") or HERE / ".cache")
 
 
 def main(argv: list[str]) -> int:
@@ -38,7 +42,9 @@ def main(argv: list[str]) -> int:
     # them in the console codepage and the YAML comes back undecodable.
     sys.stdout.reconfigure(encoding="utf-8")
 
-    cfg = DeepSeekConfig.from_env()
+    # Must match what `pnp run` used, or a cached session reads as uncached:
+    # the tier picks DEEPSEEK_EXTRACT_MODEL, and the model is in the cache key.
+    cfg = DeepSeekConfig.from_env().for_tier("extract")
     matches = [
         t
         for t in load_transcripts(TRANSCRIPTS)
@@ -49,8 +55,7 @@ def main(argv: list[str]) -> int:
         return 1
     transcript = matches[0]
 
-    key = _cache_key(transcript, cfg)
-    extraction = _load_cached(_cache_path(HERE / ".cache", transcript, key), key)
+    extraction = load_cached_extraction(CACHE_DIR, transcript, cfg)
     if extraction is None:
         print(
             f"No cached extraction for {transcript.session_id}. Extract it first "

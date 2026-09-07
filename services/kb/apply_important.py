@@ -20,7 +20,7 @@ import yaml
 sys.path.insert(0, str(Path(__file__).parent / "src"))
 
 from pnp_okf.config import DeepSeekConfig, Paths  # noqa: E402
-from pnp_okf.extract import _cache_key, _cache_path, _load_cached  # noqa: E402
+from pnp_okf.extract import load_cached_extraction  # noqa: E402
 from pnp_okf.ingest import load_transcripts  # noqa: E402
 from pnp_okf.resolve import resolve_entities  # noqa: E402
 
@@ -101,7 +101,7 @@ def main() -> int:
     extractions = {
         t.session_id: c
         for t in transcripts
-        if (c := _load_cached(_cache_path(paths.cache_dir, t), _cache_key(t, cfg)))
+        if (c := load_cached_extraction(paths.cache_dir, t, cfg))
     }
     entities = resolve_entities(
         extractions, {t.session_id: t for t in transcripts}, paths.registry_path

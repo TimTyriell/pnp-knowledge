@@ -8,13 +8,16 @@ wasted round trips.
 """
 
 import json
+import threading
+import time
 
 import httpx
 import openai
 import pytest
-from pnp_okf.config import DeepSeekConfig
 from pnp_okf import extract as extract_mod
+from pnp_okf.config import DeepSeekConfig
 from pnp_okf.extract import _call_llm
+from pnp_okf.models import SessionExtraction
 
 PAYLOAD = {
     "recap": "Eine Sitzung.",
@@ -50,9 +53,13 @@ class _FakeClient:
 
 @pytest.fixture(autouse=True)
 def _clear_memo():
+    # Both memos, or a test that settles _PROBED leaks it into every later
+    # file in the session -- the capability would read as already known.
     extract_mod._NO_STRUCTURED_OUTPUTS.clear()
+    extract_mod._PROBED.clear()
     yield
     extract_mod._NO_STRUCTURED_OUTPUTS.clear()
+    extract_mod._PROBED.clear()
 
 
 def _cfg(model="deepseek-v4-pro"):
@@ -155,4 +162,65 @@ def test_concurrent_workers_probe_only_once(monkeypatch):
         "the same unsupported-capability answer"
     )
     assert client.json_calls == 8
-    extract_mod._PROBED.clear()
+
+
+class _SupportedClient(_FakeClient):
+    """An endpoint that *supports* structured outputs, and takes a moment.
+
+    _FakeClient rejects the capability, so every thread after the first
+    returns at the ``_NO_STRUCTURED_OUTPUTS`` check -- before reaching the
+    code the probe lock actually guards. Only a supported endpoint runs that
+    code, which is why the serialisation below is invisible to the rejection
+    path's test.
+    """
+
+    def __init__(self, delay: float = 0.05):
+        super().__init__()
+        self.delay = delay
+        self._lock = threading.Lock()
+        self._inflight = 0
+        self.max_inflight = 0
+
+    def parse(self, **kwargs):
+        with self._lock:
+            self.probes += 1
+            self._inflight += 1
+            self.max_inflight = max(self.max_inflight, self._inflight)
+        try:
+            time.sleep(self.delay)
+        finally:
+            with self._lock:
+                self._inflight -= 1
+        message = type("m", (), {"parsed": SessionExtraction.model_validate(PAYLOAD)})()
+        return type("c", (), {"choices": [type("ch", (), {"message": message})()]})()
+
+
+def test_a_settled_capability_does_not_serialise_the_remaining_workers():
+    """Only the probe may hold the lock -- not a full extraction.
+
+    ``guard`` is chosen *before* the lock is taken, so with --workers 8 all
+    eight threads commit to _PROBE_LOCK while the memo is still empty. The
+    first probes and settles it; the rest then acquire in turn and, on the
+    success path, run their whole structured call inside the lock, because
+    nothing re-checks _PROBED after acquisition. The first eight sessions of
+    a cold run extract strictly one at a time.
+    """
+
+    client, cfg, transcript = _SupportedClient(), _cfg(), _transcript()
+    barrier = threading.Barrier(8)
+
+    def worker():
+        barrier.wait()
+        _call_llm(client, cfg, transcript)
+
+    threads = [threading.Thread(target=worker) for _ in range(8)]
+    for t in threads:
+        t.start()
+    for t in threads:
+        t.join()
+
+    assert client.probes == 8, "every worker still gets a real extraction"
+    assert client.max_inflight > 1, (
+        "the workers ran one at a time: after the probe settled the capability, "
+        "the waiting threads still held _PROBE_LOCK for a full extraction"
+    )

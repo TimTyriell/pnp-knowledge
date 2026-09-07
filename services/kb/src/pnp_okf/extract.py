@@ -6,7 +6,6 @@ import logging
 import os
 import re
 import threading
-from contextlib import nullcontext
 from pathlib import Path
 
 import openai
@@ -32,15 +31,14 @@ log = logging.getLogger(__name__)
 # The probe in _call_llm costs a full transcript upload and is rejected at
 # validation, and an endpoint's answer cannot change mid-run -- so learning it
 # once per process turns one wasted round trip per uncached session into at
-# most one per worker. Not locked: a lock here would serialise the first call
-# of every worker to save a handful of probes on a run that makes hundreds of
-# real calls. Keyed by model because for_tier() swaps the model per tier.
+# most one for the whole run. Keyed by model because for_tier() swaps the
+# model per tier.
 _NO_STRUCTURED_OUTPUTS: set[str] = set()
 # Models whose structured-outputs capability has been settled this process.
 _PROBED: set[str] = set()
-# The first call for a model doubles as the probe, and the probe uploads the
-# whole transcript. Without this, every worker thread races past the memo and
-# pays that upload to learn the same one-bit answer.
+# Held for the probe only -- see _call_llm. The first call for a model doubles
+# as the probe, and the probe uploads the whole transcript; without this every
+# worker thread pays that upload to learn the same one-bit answer.
 _PROBE_LOCK = threading.Lock()
 
 
@@ -110,6 +108,22 @@ def _load_cached(path: Path, key: str) -> SessionExtraction | None:
     if blob.get("_key") != key:
         return None
     return SessionExtraction.model_validate(blob["extraction"])
+
+
+def load_cached_extraction(
+    cache_dir: Path, transcript: SessionTranscript, cfg: DeepSeekConfig
+) -> SessionExtraction | None:
+    """This session's cached extraction, or None if it must be re-called.
+
+    Deriving the key and the path is one operation: ``_cache_path`` needs the
+    key, and ``_load_cached`` re-checks it against the stored ``_key``. Spelled
+    out at each call site it drifted -- when the path gained the key segment,
+    two of the six callers were left on the old two-argument form and died with
+    a TypeError on their first transcript.
+    """
+
+    key = _cache_key(transcript, cfg)
+    return _load_cached(_cache_path(cache_dir, transcript, key), key)
 
 
 def _store_cache(path: Path, key: str, extraction: SessionExtraction) -> None:
@@ -206,43 +220,73 @@ def _call_llm(client, cfg: DeepSeekConfig, transcript: SessionTranscript) -> Ses
     if cfg.model in _NO_STRUCTURED_OUTPUTS:
         return _call_llm_json_prompt(client, cfg, messages)
 
-    # Serialise only while the capability is still unknown. The first call for
-    # a model doubles as the probe and uploads the whole transcript, so
-    # letting `--workers` threads race past the memo pays that upload N times
-    # over to learn one boolean. Once settled, later calls take nullcontext()
-    # and run fully parallel -- the cost is one un-parallelised session.
-    guard = nullcontext() if cfg.model in _PROBED else _PROBE_LOCK
-    with guard:
-        if cfg.model in _NO_STRUCTURED_OUTPUTS:
-            return _call_llm_json_prompt(client, cfg, messages)
-        try:
-            parsed = _call_llm_structured(client, cfg, messages)
-        except (openai.APIConnectionError, openai.APITimeoutError) as exc:
-            # A dropped connection or timeout says nothing about whether the
-            # model supports structured outputs -- unlike a real capability
-            # rejection it can succeed on the very next attempt, so it must
-            # not poison the memo, and the capability stays unsettled. The
-            # fallback has its own retry/backoff to ride this out.
-            log.info(
-                "[extract] structured-outputs probe hit a transient network "
-                "error for %s (%s); falling back to the JSON prompt for this "
-                "call only",
-                cfg.model,
-                type(exc).__name__,
-            )
-            return _call_llm_json_prompt(client, cfg, messages)
-        except Exception as exc:
-            _NO_STRUCTURED_OUTPUTS.add(cfg.model)
-            _PROBED.add(cfg.model)
-            log.info(
-                "[extract] structured-outputs not available for %s (%s); "
-                "using the JSON prompt for the rest of this run",
-                cfg.model,
-                type(exc).__name__,
-            )
-            return _call_llm_json_prompt(client, cfg, messages)
+    # Serialise the *probe*, and nothing else. The first call for a model
+    # doubles as the probe and uploads the whole transcript, so letting
+    # `--workers` threads race past the memo pays that upload N times over to
+    # learn one boolean. But the guard has to be re-tested after acquisition:
+    # every thread that was already queued chose the lock while the memo was
+    # still empty, and if it then ran its own extraction while holding it, the
+    # first `--workers` sessions of a cold run would extract one at a time.
+    if cfg.model not in _PROBED:
+        with _PROBE_LOCK:
+            if cfg.model not in _PROBED:
+                return _probe_structured_outputs(client, cfg, messages)
+
+    # Settled while we queued, and the lock is released: fully parallel again.
+    if cfg.model in _NO_STRUCTURED_OUTPUTS:
+        return _call_llm_json_prompt(client, cfg, messages)
+    try:
+        return _call_llm_structured(client, cfg, messages)
+    except Exception as exc:
+        # The capability is already settled, so a failure here is about this
+        # call, not the endpoint -- fall back for it alone and leave the memo
+        # as the probe found it.
+        log.info(
+            "[extract] structured call failed for %s (%s) after the "
+            "capability was settled; falling back to the JSON prompt for "
+            "this call only",
+            cfg.model,
+            type(exc).__name__,
+        )
+        return _call_llm_json_prompt(client, cfg, messages)
+
+
+def _probe_structured_outputs(client, cfg: DeepSeekConfig, messages: list) -> SessionExtraction:
+    """The one call per model that learns whether structured outputs work.
+
+    Runs under ``_PROBE_LOCK`` so exactly one transcript is uploaded to settle
+    the question, and does double duty as that session's real extraction.
+    """
+
+    try:
+        parsed = _call_llm_structured(client, cfg, messages)
+    except (openai.APIConnectionError, openai.APITimeoutError) as exc:
+        # A dropped connection or timeout says nothing about whether the
+        # model supports structured outputs -- unlike a real capability
+        # rejection it can succeed on the very next attempt, so it must
+        # not poison the memo, and the capability stays unsettled: the next
+        # thread to arrive probes instead. The fallback has its own
+        # retry/backoff to ride this out.
+        log.info(
+            "[extract] structured-outputs probe hit a transient network "
+            "error for %s (%s); falling back to the JSON prompt for this "
+            "call only",
+            cfg.model,
+            type(exc).__name__,
+        )
+        return _call_llm_json_prompt(client, cfg, messages)
+    except Exception as exc:
+        _NO_STRUCTURED_OUTPUTS.add(cfg.model)
         _PROBED.add(cfg.model)
-        return parsed
+        log.info(
+            "[extract] structured-outputs not available for %s (%s); "
+            "using the JSON prompt for the rest of this run",
+            cfg.model,
+            type(exc).__name__,
+        )
+        return _call_llm_json_prompt(client, cfg, messages)
+    _PROBED.add(cfg.model)
+    return parsed
 
 
 def extract_session(

@@ -28,13 +28,17 @@ from pnp_okf.emit import (
     prune_orphans,
 )
 from pnp_okf.episodes import Episodes, citation_labels, relabel_citations
-from pnp_okf.extract import _cache_key, _cache_path, _load_cached, extract_session
+from pnp_okf.extract import extract_session, load_cached_extraction
 from pnp_okf.ingest import load_transcripts
 from pnp_okf.models import CanonicalEntity, SessionExtraction, SessionTranscript
 from pnp_okf.resolve import load_spellings, require_rules, resolve_entities, write_registry
 from pnp_okf.synthesize import (
     _cache_key as synth_cache_key,
+)
+from pnp_okf.synthesize import (
     _cache_path as synth_cache_path,
+)
+from pnp_okf.synthesize import (
     autolink_prose,
     link_targets,
     render_brief_body,
@@ -236,9 +240,8 @@ def _estimate_run(args: argparse.Namespace) -> int:
 
     cached, missing = [], []
     for t in transcripts:
-        key = _cache_key(t, cfg)
-        (cached if _load_cached(_cache_path(paths.cache_dir, t, key), key) is not None
-         else missing).append(t)
+        hit = load_cached_extraction(paths.cache_dir, t, cfg) is not None
+        (cached if hit else missing).append(t)
 
     print(f"extract:  {len(cached)} cached, {len(missing)} to call  [{cfg.model}]")
 
@@ -247,9 +250,7 @@ def _estimate_run(args: argparse.Namespace) -> int:
         print("synth:    unknown until those sessions are extracted")
     else:
         extractions = {
-            t.session_id: _load_cached(
-                _cache_path(paths.cache_dir, t, _cache_key(t, cfg)), _cache_key(t, cfg)
-            )
+            t.session_id: load_cached_extraction(paths.cache_dir, t, cfg)
             for t in transcripts
         }
         tmap = {t.session_id: t for t in transcripts}
