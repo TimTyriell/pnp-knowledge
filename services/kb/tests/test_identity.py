@@ -423,3 +423,33 @@ def test_integrity_ok_separates_hard_breakage_from_advisory_findings():
     broken = ValidationReport()
     broken.dangling_links = [("sessions/2026-01-01", "/npcs/nobody.md")]
     assert not broken.integrity_ok
+
+
+def test_live_alias_reanchor_picks_the_best_match_not_the_first():
+    """Similarity decides, not registry file order.
+
+    _reanchor_to_live_alias returned on the first alias clearing FUZZY_RATIO
+    while walking preserved_aliases in insertion order -- i.e. the order the
+    registry happens to list concepts in. With two live concepts both above
+    the bar, the closer one lost purely on position, and the mention was then
+    bound to the wrong concept for good: that id feeds merge_near_duplicates'
+    survivor preference on the next pass.
+    """
+
+    from pnp_okf.resolve import _reanchor_to_live_alias
+
+    # "Harald Wirt" is a near-perfect match for the second concept and a
+    # weaker (but still >= 0.9) match for the first.
+    aliases = {
+        "npcs/harald_wirtz": ["Harald Wirtz"],
+        "npcs/harald_wirt": ["Harald Wirt"],
+    }
+
+    got = _reanchor_to_live_alias("Harald Wirt", EntityType.NPC, aliases)
+    assert got == "npcs/harald_wirt", (
+        "an exact alias match lost to a weaker one listed first"
+    )
+
+    # ...and the answer must not depend on how the registry orders them.
+    reversed_order = dict(reversed(list(aliases.items())))
+    assert _reanchor_to_live_alias("Harald Wirt", EntityType.NPC, reversed_order) == got

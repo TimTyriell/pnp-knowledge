@@ -2,10 +2,12 @@ from __future__ import annotations
 
 import logging
 from difflib import SequenceMatcher
+from functools import lru_cache
 from pathlib import Path
 
 import yaml
 
+from pnp_okf.links import apply_spellings
 from pnp_okf.models import (
     DIR_TO_TYPE,
     MAX_EVENT_SESSION_SPAN,
@@ -18,13 +20,37 @@ from pnp_okf.models import (
     SessionExtraction,
     SessionTranscript,
 )
-from pnp_okf.links import apply_spellings
 from pnp_okf.okf import slugify
 
 log = logging.getLogger(__name__)
 
 # Same bar as pnp_graph.resolve: stdlib difflib, no extra dependency.
 FUZZY_RATIO = 0.9
+
+
+@lru_cache(maxsize=8192)
+def _sorted_slug(concept_id: str) -> str:
+    """Slug with its tokens sorted -- the form the fuzzy pass compares.
+
+    Cached because merge_near_duplicates restarts its whole O(n^2) scan after
+    every merge, so on the ~1100-entity registry the same handful of strings
+    is re-split, re-sorted and re-joined across roughly a million comparisons.
+    Keyed on the string, not the entity, so it survives those restarts.
+    """
+
+    return "_".join(sorted(concept_id.rsplit("/", 1)[-1].split("_")))
+
+
+@lru_cache(maxsize=8192)
+def _slugified(text: str) -> str:
+    """slugify() memoised for the reanchor scan.
+
+    _reanchor_to_live_alias re-slugifies every alias of every candidate
+    concept for every mention -- the same few thousand strings, once per
+    (mention x concept x alias) triple.
+    """
+
+    return slugify(text)
 
 
 def _default_concept_id(
@@ -74,8 +100,8 @@ def _fuzzy_match(a: CanonicalEntity, b: CanonicalEntity) -> bool:
     # Tokens sorted before comparing: a character-level ratio on the raw slug
     # is blind to word reordering ("harald_der_alte" vs "der_alte_harald"),
     # scoring the same entity as unrelated.
-    slug_a = "_".join(sorted(a.concept_id.rsplit("/", 1)[-1].split("_")))
-    slug_b = "_".join(sorted(b.concept_id.rsplit("/", 1)[-1].split("_")))
+    slug_a = _sorted_slug(a.concept_id)
+    slug_b = _sorted_slug(b.concept_id)
     return SequenceMatcher(None, slug_a, slug_b).ratio() >= FUZZY_RATIO
 
 
@@ -124,10 +150,18 @@ def _reanchor_to_live_alias(
     aliases`` already accumulates every distinct wording ever extracted for
     a concept (write_registry appends, never clobbers), so a new wording
     close to one of them is very likely the same being reworded again.
+
+    Similarity picks the winner, not iteration order. Returning on the first
+    alias over the bar meant registry file order decided between two concepts
+    that both cleared it, and the mention was then bound to the wrong one for
+    good -- that id goes on to feed ``merge_near_duplicates``' incumbency
+    preference. Ties break on the lowest concept_id, so the result does not
+    depend on how the registry happens to be sorted.
     """
 
     slug = slugify(apply_spellings(name, spellings) if spellings else name)
     person = entity_type in PERSON_TYPES
+    best: tuple[float, str] | None = None
     for concept_id, aliases in preserved_aliases.items():
         rtype = DIR_TO_TYPE.get(concept_id.split("/", 1)[0])
         if rtype is None or (
@@ -135,9 +169,12 @@ def _reanchor_to_live_alias(
         ):
             continue
         for alias in aliases:
-            if SequenceMatcher(None, slug, slugify(alias)).ratio() >= FUZZY_RATIO:
-                return concept_id
-    return None
+            ratio = SequenceMatcher(None, slug, _slugified(alias)).ratio()
+            if ratio < FUZZY_RATIO:
+                continue
+            if best is None or ratio > best[0] or (ratio == best[0] and concept_id < best[1]):
+                best = (ratio, concept_id)
+    return best[1] if best else None
 
 
 def merge_near_duplicates(

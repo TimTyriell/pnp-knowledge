@@ -211,22 +211,19 @@ def load_never_merge(registry_path) -> list[set[str]]:
     match forever. Without a memory of the rejection each run re-proposes
     them and the reviewer re-decides the same cases, which is what makes a
     repeated sweep expensive.
+
+    The resolver applies the same groups in its own automatic passes and had
+    a byte-identical copy of this parsing. Two copies of one rule format
+    diverge on the next change to it -- which is the failure this function
+    was written to prevent, one level up.
+
+    The rules live beside the registry in entity_rules.yaml, which nothing
+    ever rewrites; reading only the registry hid every group kept there.
     """
 
-    # The rules live beside the registry in entity_rules.yaml, which nothing
-    # ever rewrites; reading only the registry hid every group kept there.
-    from pnp_okf.resolve import _registry_data
+    from pnp_okf.resolve import _load_never_merge_pairs
 
-    path = Path(registry_path)
-    if not path.exists():
-        return []
-    data = _registry_data(path)
-    out: list[set[str]] = []
-    for group in data.get("never_merge") or []:
-        ids = {str(c).strip() for c in group if str(c).strip()}
-        if len(ids) >= 2:
-            out.append(ids)
-    return out
+    return _load_never_merge_pairs(Path(registry_path))
 
 
 def propose(
