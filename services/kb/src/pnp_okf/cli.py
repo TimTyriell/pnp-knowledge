@@ -16,6 +16,8 @@ from pnp_okf.config import ConfigError, DeepSeekConfig, Paths
 from pnp_okf.context import excerpts_for, load_sources, secondary_sources_for, sources_for
 from pnp_okf.dedup import load_never_merge, propose, render_report
 from pnp_okf.emit import (
+    MAX_PRUNE_RATIO,
+    MAX_RENAME_RATIO,
     build_concept_index,
     check_rename_safety,
     emit_conflict,
@@ -777,8 +779,10 @@ def _build_parser() -> argparse.ArgumentParser:
     )
     run.add_argument(
         "--allow-prune", action="store_true",
-        help="Allow pruning more than 10%% of existing concept files in one "
-        "run. Orphan pruning is skipped entirely on a --limit/--session run.",
+        # %% because argparse %-formats help strings before printing them.
+        help=f"Allow pruning more than {MAX_PRUNE_RATIO * 100:.0f}%% of existing "
+        "concept files in one run. Orphan pruning is skipped entirely on a "
+        "--limit/--session run.",
     )
     run.add_argument(
         "--estimate",
@@ -787,9 +791,10 @@ def _build_parser() -> argparse.ArgumentParser:
     )
     run.add_argument(
         "--allow-rename", action="store_true",
-        help="Allow more than 10%% of the previous registry's concept ids to "
-        "go missing from a resolved run (e.g. after a deliberate registry "
-        "cleanup). The check is skipped entirely on a --limit/--session run.",
+        help=f"Allow more than {MAX_RENAME_RATIO * 100:.0f}%% of the previous "
+        "registry's concept ids to go missing from a resolved run (e.g. after a "
+        "deliberate registry cleanup). The check is skipped entirely on a "
+        "--limit/--session run.",
     )
     run.set_defaults(func=cmd_run)
 

@@ -68,6 +68,33 @@ def test_run_allow_rename_flag_defaults_off():
 
 
 
+def test_the_guard_help_text_states_the_threshold_the_code_enforces():
+    """--help must not name a threshold the guards do not use.
+
+    max_ratio was tightened from 0.10 to 0.02, but both --allow-* help strings
+    still said 10%%, so a user reading --help budgeted a 5%% rename as safe and
+    got exit 2 after the run had already done its work. The help now
+    interpolates the constants the guards default to, so the two cannot drift
+    apart again.
+    """
+
+    import contextlib
+    import io
+
+    import pytest
+    from pnp_okf.emit import MAX_PRUNE_RATIO, MAX_RENAME_RATIO
+
+    buf = io.StringIO()
+    with contextlib.redirect_stdout(buf), pytest.raises(SystemExit):
+        _build_parser().parse_args(["run", "--help"])
+    text = buf.getvalue()
+
+    assert "--allow-prune" in text and "--allow-rename" in text
+    assert f"{MAX_PRUNE_RATIO:.0%}" in text
+    assert f"{MAX_RENAME_RATIO:.0%}" in text
+    assert "10%" not in text, "the help still quotes the pre-tightening threshold"
+
+
 def test_a_killed_run_leaves_a_trace_the_next_run_records(tmp_path: Path, monkeypatch):
     """A hard kill must not vanish.
 

@@ -30,6 +30,14 @@ from pnp_okf.synthesize import _BELEGE_HEADING_RE, render_belege_section
 
 log = logging.getLogger(__name__)
 
+# How much of the previous corpus one run may abandon before it refuses.
+# Named, and exported, because --help and the docs describe these thresholds
+# to the user: when they were tightened from 0.10 the two argparse help
+# strings, README.md and ARCHITECTURE.md were left saying 10%, so the CLI told
+# you a 5% rename was safe while the code exited 2 at 2%.
+MAX_RENAME_RATIO = 0.02
+MAX_PRUNE_RATIO = 0.02
+
 
 def _session_concept_id(transcript: SessionTranscript) -> str:
     date = transcript.date or transcript.session_id[:10]
@@ -477,7 +485,7 @@ def check_rename_safety(
     registry_path: Path,
     entities: list[CanonicalEntity],
     *,
-    max_ratio: float = 0.02,
+    max_ratio: float = MAX_RENAME_RATIO,
     allow: bool = False,
 ) -> bool:
     """Refuse a run that abandons most of the previous registry's concept ids.
@@ -524,7 +532,7 @@ def prune_orphans(
     bundle_dir: Path,
     entities: list[CanonicalEntity],
     *,
-    max_ratio: float = 0.02,
+    max_ratio: float = MAX_PRUNE_RATIO,
     allow: bool = False,
 ) -> int:
     """Delete concept files whose entity no longer exists. Returns the count.
