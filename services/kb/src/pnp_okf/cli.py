@@ -238,15 +238,20 @@ def _estimate_run(args: argparse.Namespace) -> int:
         load_transcripts(paths.transcript_dir), args.limit, args.session
     )
 
+    # The flags are part of the price. --reextract ignores the extract cache
+    # and --force ignores the synth cache, so pricing either against a warm
+    # cache reports a free run for one that re-buys the whole corpus.
     cached, missing = [], []
     for t in transcripts:
-        hit = load_cached_extraction(paths.cache_dir, t, cfg) is not None
+        hit = not args.reextract and load_cached_extraction(paths.cache_dir, t, cfg) is not None
         (cached if hit else missing).append(t)
 
     print(f"extract:  {len(cached)} cached, {len(missing)} to call  [{cfg.model}]")
 
     synth_calls: Counter[str] = Counter()
     if missing:
+        # Re-extraction resamples every entity name, so which concepts exist --
+        # and therefore how many synth calls -- is not knowable from here.
         print("synth:    unknown until those sessions are extracted")
     else:
         extractions = {
@@ -274,7 +279,7 @@ def _estimate_run(args: argparse.Namespace) -> int:
                 secondary_sources_for(entity, source_sections),
             )
             path = synth_cache_path(paths.cache_dir, entity, key)
-            if path.exists():
+            if path.exists() and not args.force:
                 warm += 1
             else:
                 synth_calls[tier_cfg.model] += 1
@@ -565,7 +570,9 @@ def cmd_extract(args: argparse.Namespace) -> int:
     """Run only the extraction stage (populates the cache)."""
 
     paths = Paths.resolve(args.transcripts, args.bundle, args.cache)
-    cfg = DeepSeekConfig.from_env()
+    # for_tier, exactly as _run_pipeline does -- the model is in the cache key,
+    # so an untiered cfg here fills a cache `pnp run` would never read.
+    cfg = DeepSeekConfig.from_env().for_tier("extract")
     transcripts = _select(
         load_transcripts(paths.transcript_dir), args.limit, args.session
     )
@@ -588,7 +595,11 @@ def cmd_dedup(args: argparse.Namespace) -> int:
         load_transcripts(paths.transcript_dir), args.limit, args.session
     )
     tmap = {t.session_id: t for t in transcripts}
-    extractions = _extract_all(transcripts, cfg, paths, force=False, workers=args.workers)
+    # for_tier("extract") or this misses every cached extraction and pays for a
+    # full re-extraction -- the opposite of what the docstring promises.
+    extractions = _extract_all(
+        transcripts, cfg.for_tier("extract"), paths, force=False, workers=args.workers
+    )
 
     registry_path = paths.registry_path
     require_rules(registry_path)
