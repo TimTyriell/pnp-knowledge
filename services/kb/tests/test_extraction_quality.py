@@ -17,25 +17,38 @@ To produce a label file:
     python make_gold_stub.py 2025-03-26 > tests/data/gold/2025-03-26.yaml
 
 then correct it by hand -- mark hallucinations `wrong`, fix names with
-`rename`, and add what the model missed with `missed`. Around 3-5 sessions
-clears the ~30-example floor that makes a precision/recall number meaningful
-at all; note even ~100 labels carries roughly +-8pp of noise, so treat the
-result as directional, not as an SLA.
+`rename` (and give the corrected name in `should_be:`), and add what the model
+missed with `missed`. Around 3-5 sessions clears the ~30-example floor that
+makes a precision/recall number meaningful at all; note even ~100 labels
+carries roughly +-8pp of noise, so treat the result as directional, not as an
+SLA.
+
+The score is a set comparison between the labels and the *current* cached
+extraction, not a tally of the verdict column: a number derived from the
+labels alone cannot move when the extractor moves, which would leave the
+model question it exists to answer unanswerable. The corollary is that the
+labels have to come from somewhere other than the extraction -- a stub the
+model graded for itself agrees with itself by construction.
 """
 
 from __future__ import annotations
 
+import os
 from pathlib import Path
 
 import pytest
 import yaml
 from pnp_okf.config import DeepSeekConfig
-from pnp_okf.extract import _cache_key, _cache_path, _load_cached
+from pnp_okf.extract import load_cached_extraction
 from pnp_okf.ingest import load_transcripts
 from pnp_okf.okf import slugify
 
 GOLD_DIR = Path(__file__).resolve().parent / "data" / "gold"
-CACHE_DIR = Path(__file__).resolve().parents[1] / ".cache"
+# PNP_CACHE_DIR wins, as it does for the pipeline; the fallback is anchored on
+# this file rather than the CWD, because pytest runs from the repo root.
+CACHE_DIR = Path(
+    os.environ.get("PNP_CACHE_DIR") or Path(__file__).resolve().parents[1] / ".cache"
+)
 TRANSCRIPT_DIR = Path(__file__).resolve().parents[4] / "pnp-crawl" / "transcripts_final"
 
 GOLD_FILES = sorted(GOLD_DIR.glob("*.yaml")) if GOLD_DIR.is_dir() else []
@@ -65,21 +78,37 @@ pytestmark = pytest.mark.skipif(
 # a regression: re-measure and re-set both baselines when the labels change,
 # and say so in the commit. Growing the label set is the main way these
 # numbers get more trustworthy.
+#
+# ⚠⚠ The current labels were AI-drafted from the same extraction they score
+# (de135e1, marked `reviewed: true` by 2af4886). A model checking its own
+# output agrees with itself by construction, so precision 1.000 is what that
+# arrangement has to produce and carries no information about the extractor.
+# Until a human has actually read these files, treat both numbers as evidence
+# that the harness RUNS, not as a quality result -- and expect the first
+# human-reviewed measurement to be lower. That is the ratchet finally being
+# set from reality, not a regression.
 PRECISION_BASELINE = 0.96
 RECALL_BASELINE = 0.95
 
 
 def _gold(path: Path) -> dict:
-    return yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    try:
+        return yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    except yaml.YAMLError as exc:
+        # Hand-edited labels; a stray comma or a missing space after a colon
+        # should name the file, not surface as a composer traceback.
+        pytest.fail(f"{path.name} is not valid YAML: {exc}")
 
 
 def _extracted_names(session_id: str) -> set[str]:
-    cfg = DeepSeekConfig.from_env()
+    # for_tier("extract"), or DEEPSEEK_EXTRACT_MODEL changes the cache key and
+    # every session reads as uncached -- and the model swap is the question
+    # this test exists to answer.
+    cfg = DeepSeekConfig.from_env().for_tier("extract")
     for t in load_transcripts(TRANSCRIPT_DIR):
         if t.session_id != session_id:
             continue
-        key = _cache_key(t, cfg)
-        extraction = _load_cached(_cache_path(CACHE_DIR, t, key), key)
+        extraction = load_cached_extraction(CACHE_DIR, t, cfg)
         if extraction is None:
             pytest.skip(f"no cached extraction for {session_id}")
         return {slugify(m.name) for m in extraction.entities}
@@ -87,29 +116,35 @@ def _extracted_names(session_id: str) -> set[str]:
     return set()
 
 
-def _score(gold: dict) -> tuple[int, int, int]:
-    """(true positives, false positives, false negatives) for one session."""
+def _truth_names(gold: dict, where: str) -> set[str]:
+    """Slugified names the extraction *should* have produced for one session.
 
-    tp = fp = fn = 0
+    ``wrong`` is deliberately absent: a hallucination belongs in neither the
+    truth set nor the score's numerator, and if the extractor still emits it,
+    the set difference puts it in fp on its own. ``rename`` contributes the
+    corrected name, which is what makes ``should_be:`` load-bearing rather
+    than a comment.
+    """
+
+    names: set[str] = set()
     for entity in gold.get("entities") or []:
         verdict = str(entity.get("verdict", "ok")).strip().lower()
-        if verdict == "ok":
-            tp += 1
-        elif verdict == "wrong":
-            fp += 1
+        name = str(entity.get("name") or "").strip()
+        if verdict in ("ok", "missed"):
+            names.add(slugify(name))
         elif verdict == "rename":
-            # The model found a real entity but named it wrongly: it is both a
-            # miss of the right name and a spurious emission of the wrong one.
-            fp += 1
-            fn += 1
-        elif verdict == "missed":
-            fn += 1
-        else:
+            should_be = str(entity.get("should_be") or "").strip()
+            assert should_be, (
+                f"{where}: {name!r} is marked `rename` but carries no "
+                "`should_be:` -- the corrected name is what gets scored"
+            )
+            names.add(slugify(should_be))
+        elif verdict != "wrong":
             raise AssertionError(
-                f"{gold.get('date')}: unknown verdict {verdict!r} -- use "
+                f"{where}: unknown verdict {verdict!r} -- use "
                 "ok / wrong / rename / missed"
             )
-    return tp, fp, fn
+    return names
 
 
 def test_extraction_precision_and_recall_have_not_regressed():
@@ -124,9 +159,14 @@ def test_extraction_precision_and_recall_have_not_regressed():
         if not gold.get("reviewed"):
             unreviewed.append(path.name)
             continue
-        _extracted_names(gold["session_id"])  # asserts the session is still cached
-        a, b, c = _score(gold)
-        tp, fp, fn = tp + a, fp + b, fn + c
+        # The score is a comparison, not a tally of the labels: the number has
+        # to move when the extraction moves, or it cannot answer whether the
+        # extractor may change.
+        actual = _extracted_names(gold["session_id"])
+        truth = _truth_names(gold, path.name)
+        tp += len(actual & truth)
+        fp += len(actual - truth)
+        fn += len(truth - actual)
         scored += 1
 
     if not scored:
@@ -149,3 +189,36 @@ def test_extraction_precision_and_recall_have_not_regressed():
     )
     assert precision >= PRECISION_BASELINE
     assert recall >= RECALL_BASELINE
+
+
+def test_the_truth_set_is_what_should_have_been_extracted():
+    """The verdicts have to mean something against a real extraction.
+
+    Scoring used to add up the verdict column, so the result was a property of
+    the label file: change the extractor and the number did not move. It is a
+    set comparison now, and this pins what each verdict contributes -- in
+    particular that `wrong` is *absent* from the truth set (so an extractor
+    still emitting it scores a false positive) and that `rename` contributes
+    `should_be`, not the name the model produced.
+    """
+
+    gold = {
+        "entities": [
+            {"name": "Lindo Laut", "verdict": "ok"},
+            {"name": "Ritualplatz", "should_be": "Ritualplatz im Wald", "verdict": "rename"},
+            {"name": "Der Erzähler", "verdict": "wrong"},
+            {"name": "Beschwörungskessel", "verdict": "missed"},
+        ]
+    }
+
+    assert _truth_names(gold, "x.yaml") == {
+        "lindo_laut",
+        "ritualplatz_im_wald",
+        "beschwoerungskessel",
+    }
+
+    with pytest.raises(AssertionError, match="should_be"):
+        _truth_names({"entities": [{"name": "A", "verdict": "rename"}]}, "x.yaml")
+
+    with pytest.raises(AssertionError, match="unknown verdict"):
+        _truth_names({"entities": [{"name": "A", "verdict": "vielleicht"}]}, "x.yaml")
