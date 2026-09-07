@@ -23,6 +23,18 @@ class _CountingCompletions:
         LEDGER.record(kwargs.get("model"), getattr(completion, "usage", None))
         return completion
 
+    def parse(self, *args, **kwargs):
+        """Structured-outputs path. Counted for the same reason ``create`` is.
+
+        The extraction probe calls this with the whole transcript in the
+        prompt, so leaving it uncounted made every recorded cost an
+        undercount -- silently, and in the flattering direction.
+        """
+
+        completion = self._inner.parse(*args, **kwargs)
+        LEDGER.record(kwargs.get("model"), getattr(completion, "usage", None))
+        return completion
+
     def __getattr__(self, name: str):
         return getattr(self._inner, name)
 
@@ -36,16 +48,31 @@ class _CountingChat:
         return getattr(self._inner, name)
 
 
+class _CountingBeta:
+    """``client.beta`` with its chat namespace counted, everything else passed on."""
+
+    def __init__(self, inner: object) -> None:
+        self._inner = inner
+        self.chat = _CountingChat(inner.chat)
+
+    def __getattr__(self, name: str):
+        return getattr(self._inner, name)
+
+
 class CountingClient:
     """OpenAI client that records token usage into the process-wide ledger.
 
-    Everything except ``.chat`` is delegated untouched, so this stays a
-    drop-in for the real client.
+    Everything except ``.chat`` and ``.beta`` is delegated untouched, so this
+    stays a drop-in for the real client.
     """
 
     def __init__(self, inner: OpenAI) -> None:
         self._inner = inner
         self.chat = _CountingChat(inner.chat)
+        # Optional: test doubles and older clients need not carry `.beta`.
+        beta = getattr(inner, "beta", None)
+        if beta is not None and hasattr(beta, "chat"):
+            self.beta = _CountingBeta(beta)
 
     def __getattr__(self, name: str):
         return getattr(self._inner, name)

@@ -79,8 +79,17 @@ def _cache_key(transcript: SessionTranscript, cfg: DeepSeekConfig) -> str:
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()[:16]
 
 
-def _cache_path(cache_dir: Path, transcript: SessionTranscript) -> Path:
-    return cache_dir / "extract" / f"{transcript.session_id}.json"
+def _cache_path(cache_dir: Path, transcript: SessionTranscript, key: str) -> Path:
+    """One file per (session, key), not one per session.
+
+    The key already covers PROMPT_VERSION and the model, but the path used to
+    ignore it -- so bumping either overwrote the only copy of an extraction
+    that cost real money, and changing your mind cost a second full rebuild
+    (~$6.50). Keeping each key at its own path makes the experiment
+    reversible for nothing; the cost is a few MB of disk.
+    """
+
+    return cache_dir / "extract" / transcript.session_id / f"{key}.json"
 
 
 def _load_cached(path: Path, key: str) -> SessionExtraction | None:
@@ -226,7 +235,7 @@ def extract_session(
     """Extract a recap + entity mentions for one session (cached)."""
 
     key = _cache_key(transcript, cfg)
-    path = _cache_path(cache_dir, transcript)
+    path = _cache_path(cache_dir, transcript, key)
     if not force:
         cached = _load_cached(path, key)
         if cached is not None:

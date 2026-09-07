@@ -237,9 +237,11 @@ def _cache_key(
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()[:16]
 
 
-def _cache_path(cache_dir: Path, entity: CanonicalEntity) -> Path:
+def _cache_path(cache_dir: Path, entity: CanonicalEntity, key: str) -> Path:
+    """One file per (concept, key) -- see extract._cache_path for why."""
+
     safe = entity.concept_id.replace("/", "__")
-    return cache_dir / "synth" / f"{safe}.json"
+    return cache_dir / "synth" / safe / f"{key}.json"
 
 
 @retry(
@@ -302,7 +304,7 @@ def synthesize_entity_body(
     """
 
     key = _cache_key(entity, cfg, sources, excerpts, secondary)
-    path = _cache_path(cache_dir, entity)
+    path = _cache_path(cache_dir, entity, key)
     if not force and path.exists():
         blob = json.loads(path.read_text(encoding="utf-8"))
         if blob.get("_key") == key:

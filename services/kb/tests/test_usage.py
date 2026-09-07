@@ -84,3 +84,40 @@ def test_client_wrapper_counts_without_call_site_changes():
     snap = LEDGER.snapshot()
     assert snap["by_model"]["deepseek-v4-flash"]["prompt_tokens"] == 11
     LEDGER.reset()
+
+
+def test_the_structured_outputs_probe_is_counted():
+    """`.beta.chat.completions.parse` must reach the ledger too.
+
+    CountingClient wrapped only `.chat`, so the structured-outputs probe --
+    which goes through `.beta.chat.completions.parse` and uploads the entire
+    transcript -- resolved via __getattr__ to the raw client and spent tokens
+    the ledger never saw. Every cost in last_run.json was therefore an
+    undercount, silently, in the direction that flatters the number.
+    """
+
+    completion = SimpleNamespace(usage=_usage(30_000, 900), choices=["ok"])
+    inner = SimpleNamespace(
+        chat=SimpleNamespace(completions=SimpleNamespace(create=lambda **kw: completion)),
+        beta=SimpleNamespace(
+            chat=SimpleNamespace(completions=SimpleNamespace(parse=lambda **kw: completion))
+        ),
+    )
+    LEDGER.reset()
+    client = CountingClient(inner)
+
+    got = client.beta.chat.completions.parse(model="deepseek-v4-pro", messages=[])
+
+    assert got is completion
+    snap = LEDGER.snapshot()
+    assert snap["by_model"]["deepseek-v4-pro"]["prompt_tokens"] == 30_000
+    LEDGER.reset()
+
+
+def test_client_without_a_beta_namespace_still_constructs():
+    """Fakes and older clients need not carry `.beta`."""
+
+    inner = SimpleNamespace(
+        chat=SimpleNamespace(completions=SimpleNamespace(create=lambda **kw: None))
+    )
+    CountingClient(inner)  # must not raise

@@ -78,7 +78,7 @@ def _fresh_concept_ids() -> set[str]:
     extractions = {
         t.session_id: c
         for t in transcripts
-        if (c := _load_cached(_cache_path(CACHE_DIR, t), _cache_key(t, cfg)))
+        if (c := _load_cached(_cache_path(CACHE_DIR, t, _cache_key(t, cfg)), _cache_key(t, cfg)))
     }
     entities = resolve_entities(extractions, tmap, REGISTRY)
     return {e.concept_id for e in entities}
