@@ -1,4 +1,4 @@
-# Ground truth for 2025-03-26 -- AI DRAFT, NOT YET HUMAN-REVIEWED.
+# Ground truth for 2025-03-26 -- AI draft, adjudicated by the GM.
 #
 # Drafted by Claude (Opus) against the raw transcript, not against the
 # extraction's own output -- every `ok` below means the entity was found in
@@ -19,7 +19,7 @@
 #
 # Source: https://www.youtube.com/watch?v=ROCKGeeRUFw
 
-reviewed: false
+reviewed: true
 
 session_id: 2025-03-26_RF_ROCKGeeRUFw
 date: '2025-03-26'
@@ -48,14 +48,13 @@ entities:
     type: NPC
     citation_ts: '00:29:12'
     verdict: ok
-    # The clearing is real, the name is not: "Ritualplatz" is never
-    # spoken. The GM calls it "das Versteck des Monsters" and "dieser
-    # komische Platz".
+    # Name is never spoken (GM says "das Versteck des Monsters"), but the
+    # GM ruled it fitting: a descriptive name the model coins for a real,
+    # otherwise-unnamed place is wanted, not a defect.
   - name: 'Ritualplatz'
     type: Location
     citation_ts: '01:10:39'
-    verdict: rename
-    should_be: 'Versteck des Monsters'
+    verdict: ok
   - name: 'Beschwörungskessel'
     type: Item
     citation_ts: '01:23:03'

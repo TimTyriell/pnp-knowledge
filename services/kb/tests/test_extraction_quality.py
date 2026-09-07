@@ -48,11 +48,25 @@ pytestmark = pytest.mark.skipif(
     ),
 )
 
-# Measured against the labelled sessions. Ratchets: they may only go up.
-# Set them from the first real run rather than guessing -- an aspirational
-# baseline that does not match reality stops being read.
-PRECISION_BASELINE = 0.0
-RECALL_BASELINE = 0.0
+# Measured 2026-09-07 over 3 labelled sessions, 71 entities:
+#   precision 1.000  (70 true positives, 0 hallucinated)
+#   recall    0.986  (one miss: no faction for the besieging undead on 2026-01-20)
+#
+# The baselines sit BELOW those measurements on purpose, and not out of
+# timidity. With 71 samples and zero precision errors, the rule of three puts
+# the 95% upper bound on the true error rate near 3/71 ~ 4%, so the honest
+# floor is ~0.96, not 1.00. Pinning a baseline to a point estimate that the
+# sample size cannot support produces a test that fails on noise, and a test
+# that fails on noise gets deleted.
+#
+# ⚠ These numbers are only valid for THIS label set. Recall is a function of
+# how complete the labels are, so ADDING a `missed` entry lowers measured
+# recall without the pipeline having changed. That is a label improvement, not
+# a regression: re-measure and re-set both baselines when the labels change,
+# and say so in the commit. Growing the label set is the main way these
+# numbers get more trustworthy.
+PRECISION_BASELINE = 0.96
+RECALL_BASELINE = 0.95
 
 
 def _gold(path: Path) -> dict:

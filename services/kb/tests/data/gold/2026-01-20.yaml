@@ -1,4 +1,4 @@
-# Ground truth for 2026-01-20 -- AI DRAFT, NOT YET HUMAN-REVIEWED.
+# Ground truth for 2026-01-20 -- AI draft, adjudicated by the GM.
 #
 # Drafted by Claude (Opus) against the raw transcript, not against the
 # extraction's own output -- every `ok` below means the entity was found in
@@ -19,7 +19,7 @@
 #
 # Source: https://www.youtube.com/watch?v=H3ckYdTv4y8
 
-reviewed: false
+reviewed: true
 
 session_id: 2026-01-20_RF_H3ckYdTv4y8
 date: '2026-01-20'
@@ -82,14 +82,14 @@ entities:
     type: NPC
     citation_ts: '01:44:36'
     verdict: ok
-    # Real location, but neither half of the name is spoken and the slash
-    # makes it two names in one field -- it becomes a single concept id
-    # downstream.
+    # Neither half is spoken, and the slash makes it two names in one
+    # field. GM ruled it fitting anyway; it already resolves to the single
+    # concept id locations/banditenversteck_fluechtlingslager, so the slash
+    # is a style question, not a correctness one.
   - name: 'Banditenversteck / Flüchtlingslager'
     type: Location
     citation_ts: '00:06:33'
-    verdict: rename
-    should_be: 'Banditenversteck'
+    verdict: ok
     # Spoken as "Bereska"; canon is Breska. Same reasoning as Nairuk.
   - name: 'Bereska'
     type: Location

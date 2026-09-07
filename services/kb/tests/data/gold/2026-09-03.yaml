@@ -1,4 +1,4 @@
-# Ground truth for 2026-09-03 -- AI DRAFT, NOT YET HUMAN-REVIEWED.
+# Ground truth for 2026-09-03 -- AI draft, adjudicated by the GM.
 #
 # Drafted by Claude (Opus) against the raw transcript, not against the
 # extraction's own output -- every `ok` below means the entity was found in
@@ -19,7 +19,7 @@
 #
 # Source: https://www.youtube.com/watch?v=bl-hX87_EC8
 
-reviewed: false
+reviewed: true
 
 session_id: 2026-09-03_Team-B_bl-hX87_EC8
 date: '2026-09-03'
