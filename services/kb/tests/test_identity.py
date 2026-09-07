@@ -352,6 +352,59 @@ def test_validate_flags_a_link_whose_target_file_does_not_exist(tmp_path: Path):
     assert not report.ok
 
 
+def test_a_relative_href_to_a_real_file_is_not_dangling(tmp_path: Path):
+    """The dangling check must resolve an href the way a reader would.
+
+    _LINK_RE deliberately matches document-relative (`../npcs/x.md`, `./x.md`)
+    and bare (`x.md`) hrefs, but the check joined every one of them onto the
+    bundle root: `../npcs/x.md` escaped the bundle and a bare `x.md` looked in
+    the wrong directory, so a link pointing at a file that exists was reported
+    as dangling. dangling_links feeds integrity_ok, which makes `pnp run`
+    return 3 after the bundle is already written -- and there is no
+    --allow-dangling to get past it. One hand-edited relative link would have
+    failed every future run.
+    """
+
+    bundle = tmp_path / "campaign"
+    _write_concept(bundle, "npcs/harald_der_alte", {"type": "NPC"})
+    _write_concept(bundle, "npcs/greta", {"type": "NPC"})
+    _write_concept(
+        bundle,
+        "sessions/2026-01-01",
+        {"type": "Session"},
+        "Siehe [Harald](../npcs/harald_der_alte.md) und [Greta](./../npcs/greta.md).",
+    )
+    _write_concept(
+        bundle,
+        "npcs/bertram",
+        {"type": "NPC"},
+        "Neben [Greta](greta.md) und [Harald](./harald_der_alte.md).",
+    )
+
+    report = validate_bundle(bundle)
+
+    assert report.dangling_links == [], (
+        "every href above names a file that exists, from its own directory"
+    )
+
+
+def test_a_relative_href_that_escapes_the_bundle_is_dangling(tmp_path: Path):
+    """Leaving the bundle is breakage, not a rescue -- it cannot ship."""
+
+    bundle = tmp_path / "campaign"
+    (tmp_path / "outside.md").write_text("nicht im Bundle", encoding="utf-8")
+    _write_concept(
+        bundle,
+        "sessions/2026-01-01",
+        {"type": "Session"},
+        "Siehe [draussen](../../outside.md).",
+    )
+
+    report = validate_bundle(bundle)
+
+    assert report.dangling_links == [("sessions/2026-01-01", "../../outside.md")]
+
+
 def test_integrity_ok_separates_hard_breakage_from_advisory_findings():
     """The run gate must fire on breakage, not on heuristics.
 

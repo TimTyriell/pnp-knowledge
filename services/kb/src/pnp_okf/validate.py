@@ -152,6 +152,26 @@ class ValidationReport:
         return "\n".join(lines)
 
 
+def _href_exists(bundle_dir: Path, source: Path, href: str) -> bool:
+    """Does this href name a file that exists, read from ``source``'s directory?
+
+    _LINK_RE matches three shapes (links.py): bundle-absolute ``/dir/x.md``,
+    document-relative ``../npcs/x.md`` or ``./x.md``, and bare ``x.md``. Only
+    the first is rooted at the bundle; joining the other two onto the bundle
+    root sent ``..`` outside it and looked for a bare name in the wrong
+    directory, so links to files that exist were reported as dangling. A
+    target outside the bundle stays a failure -- it cannot ship either.
+    """
+
+    raw = href.strip()
+    if not raw.endswith(".md"):
+        return True             # not a concept file; the resolver's problem
+    root = bundle_dir.resolve()
+    target = (root / raw.lstrip("/")) if raw.startswith("/") else (source.parent / raw)
+    target = target.resolve()
+    return target.is_relative_to(root) and target.exists()
+
+
 def validate_bundle(bundle_dir: Path) -> ValidationReport:
     """Scan ``bundle_dir`` and return a :class:`ValidationReport`."""
 
@@ -177,8 +197,7 @@ def validate_bundle(bundle_dir: Path) -> ValidationReport:
                 report.broken_links.append((cid, match.group(2)))
             # resolve() only ever returns an id that exists, so it can rescue
             # an href that names no file at all. The href is what ships.
-            href = match.group(2).strip().lstrip("/")
-            if href.endswith(".md") and not (bundle_dir / href).exists():
+            if not _href_exists(bundle_dir, path, match.group(2)):
                 report.dangling_links.append((cid, match.group(2)))
 
         fm = _split_frontmatter(text)
