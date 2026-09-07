@@ -21,7 +21,15 @@ from pnp_okf.models import SessionExtraction
 
 PAYLOAD = {
     "recap": "Eine Sitzung.",
-    "entities": [{"name": "Lindo Laut", "type": "Character", "note": "Ein Barde.", "citation_ts": "00:12:34", "subtype": ""}],
+    "entities": [
+        {
+            "name": "Lindo Laut",
+            "type": "Character",
+            "note": "Ein Barde.",
+            "citation_ts": "00:12:34",
+            "subtype": "",
+        }
+    ],
 }
 MESSAGES = [{"role": "system", "content": "s"}, {"role": "user", "content": "u"}]
 

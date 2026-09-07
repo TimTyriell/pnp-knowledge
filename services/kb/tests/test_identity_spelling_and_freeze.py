@@ -11,7 +11,6 @@
    re-naming) the entire back catalogue.
 """
 
-import os
 
 import pytest
 from pnp_okf.extract import _frozen_prompt_version

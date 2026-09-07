@@ -4,9 +4,9 @@ import argparse
 import json
 from pathlib import Path
 
-import yaml
 import pnp_okf.cli as cli
 import pnp_okf.emit as emit_mod
+import yaml
 from pnp_okf.emit import (
     emit_entity,
     emit_indexes,
