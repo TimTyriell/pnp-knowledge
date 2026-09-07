@@ -151,6 +151,95 @@ def test_session_bullet_links_to_merge_target_not_raw_slug(tmp_path: Path):
     assert "/locations/taverne_zum_zwerg.md" not in session_doc
 
 
+def _ambiguous_fixture():
+    """Two entities whose mentions collide on (session, citation_ts, note).
+
+    MentionRef carries no name, so the LLM reusing one note for two entities
+    in the same beat is enough to land them on the same key. Different
+    identity spaces here (NPC vs Location), or the fuzzy pass would fold them
+    into one concept and there would be nothing ambiguous left.
+    """
+
+    t = SessionTranscript(
+        session_id="2025-03-26_RF_a", date="2025-03-26",
+        url="https://youtu.be/a", title="Session 1",
+    )
+    extraction = SessionExtraction(
+        recap="Harald taucht am Tor auf.",
+        entities=[
+            EntityMention(
+                name="Harald", type=EntityType.NPC,
+                note="Taucht am Tor auf.", citation_ts="00:08:25",
+            ),
+            EntityMention(
+                name="Tor von Belorus", type=EntityType.LOCATION,
+                note="Taucht am Tor auf.", citation_ts="00:08:25",
+            ),
+        ],
+    )
+    return {t.session_id: t}, {t.session_id: extraction}
+
+
+def test_an_ambiguous_mention_is_reported_not_silently_dropped(tmp_path: Path, caplog):
+    """Dropping both entities from a session must leave a trace.
+
+    mention_concept_index maps an ambiguous key to None and then stripped it,
+    so emit_sessions could not tell "ambiguous" from "ignore:d" -- both hit
+    `resolved is None` and were skipped. Two real entities vanished from
+    "Auftretende Entitäten" with nothing counting it, and if every mention in
+    a session collided the heading was simply not emitted. The resolver
+    refusing to guess is correct; doing it invisibly is not.
+    """
+
+    import logging
+
+    tmap, extractions = _ambiguous_fixture()
+    bundle = tmp_path / "bundle" / "campaign"
+    registry = bundle.parent / "entity_registry.yaml"
+    registry.parent.mkdir(parents=True, exist_ok=True)
+    registry.write_text(yaml.safe_dump({"merge": {}}), encoding="utf-8")
+
+    entities = resolve_entities(extractions, tmap, registry)
+    mention_map = mention_concept_index(entities)
+
+    with caplog.at_level(logging.WARNING, logger="pnp_okf.emit"):
+        emit_sessions(bundle, tmap, extractions, mention_concept_ids=mention_map)
+
+    session_doc = (bundle / "sessions" / "2025-03-26.md").read_text(encoding="utf-8")
+    assert "Auftretende Entitäten" not in session_doc, (
+        "both entities are genuinely unresolvable; the bullet list stays empty"
+    )
+    messages = [r.getMessage() for r in caplog.records]
+    assert any(
+        "2025-03-26_RF_a" in m and "ambiguous" in m and "Harald" in m for m in messages
+    ), f"the drop was silent; log was {messages}"
+
+
+def test_an_ignored_mention_does_not_warn(tmp_path: Path, caplog):
+    """`ignore:` is a decision already taken -- it is not a dropped mention."""
+
+    import logging
+
+    tmap, extractions = _fixture()
+    bundle = tmp_path / "bundle" / "campaign"
+    registry = bundle.parent / "entity_registry.yaml"
+    registry.parent.mkdir(parents=True, exist_ok=True)
+    registry.write_text(
+        yaml.safe_dump({"ignore": ["locations/taverne_zum_zwerg"]}), encoding="utf-8"
+    )
+
+    entities = resolve_entities(extractions, tmap, registry)
+    mention_map = mention_concept_index(entities)
+
+    with caplog.at_level(logging.WARNING, logger="pnp_okf.emit"):
+        emit_sessions(bundle, tmap, extractions, mention_concept_ids=mention_map)
+
+    session_doc = (bundle / "sessions" / "2025-03-26.md").read_text(encoding="utf-8")
+    assert "/locations/taverne_zum_zwerg.md" not in session_doc
+    assert "/characters/lindo_laut.md" in session_doc
+    assert not [r for r in caplog.records if "ambiguous" in r.getMessage()]
+
+
 # --- crash safety: write ordering in _run_pipeline --------------------------
 #
 # PIPELINE.md section 7, the 2026-09-05 incident: emit_sessions used to run

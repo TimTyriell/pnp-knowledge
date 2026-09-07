@@ -70,10 +70,12 @@ def mention_concept_index(
     entity) carries the same plus ``session_id``.
 
     An ``ignore:``d mention never reaches here at all -- ``resolve_entities``
-    drops it before a ``CanonicalEntity`` exists for it -- so it naturally has
-    no entry. A key two different entities both claim is ambiguous: mapped to
-    ``None`` rather than guessed, so a caller can tell "unresolved" apart from
-    "never happened".
+    drops it before a ``CanonicalEntity`` exists for it -- so it has no entry.
+    A key two different entities both claim is ambiguous: present, mapped to
+    ``None`` rather than guessed. The two cases are kept apart on purpose, so
+    a caller can tell "unresolved" from "never happened" -- dropping the
+    ``None`` entries here collapsed them again and made an ambiguous mention
+    disappear as quietly as a decided one.
     """
 
     index: dict[tuple[str, str, str], str | None] = {}
@@ -82,7 +84,7 @@ def mention_concept_index(
             key = (mention.session_id, mention.citation_ts, mention.note)
             existing = index.get(key, entity.concept_id)
             index[key] = existing if existing == entity.concept_id else None
-    return {k: v for k, v in index.items() if v is not None}
+    return index
 
 
 _TYPE_LABEL_DE = {
@@ -176,17 +178,32 @@ def emit_sessions(
             title = transcript.title or f"Session {date}"
 
         intro_lines: list[str] = []
+        ambiguous: list[str] = []
         for mention in extraction.entities:
             if mention_concept_ids is None:
                 path = f"{TYPE_DIR[mention.type]}/{slugify(mention.name)}"
             else:
                 key = (session_id, mention.citation_ts, mention.note)
-                resolved = mention_concept_ids.get(key)
+                if key not in mention_concept_ids:
+                    continue  # ignore:d -- a decision already taken, not a loss
+                resolved = mention_concept_ids[key]
                 if resolved is None:
-                    continue  # ignore:d or ambiguous -- no line, not a guess
+                    # Two entities claim this mention; the resolver refuses to
+                    # guess, which is right, but both then vanish from the page
+                    # with the reader and every test none the wiser.
+                    ambiguous.append(mention.name)
+                    continue
                 path = resolved
             intro_lines.append(
                 f"* [{mention.name}](/{path}.md) — {mention.note} [{mention.citation_ts}]"
+            )
+        if ambiguous:
+            log.warning(
+                "[emit] %s: %d mention(s) left out of the entity list -- "
+                "ambiguous, two concepts claim the same (timestamp, note): %s",
+                session_id,
+                len(ambiguous),
+                ", ".join(sorted(ambiguous)),
             )
 
         body_parts = [
