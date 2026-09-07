@@ -49,6 +49,32 @@ number.
 The distinction matters more than the numbers themselves. Each metric is
 classified by whether its defect shape has a known, complete fix.
 
+```mermaid
+flowchart TB
+    classDef hard fill:#b71c1c,stroke:#ef9a9a,color:#fff
+    classDef ratchet fill:#e65100,stroke:#ffb74d,color:#fff
+    classDef floor fill:#1b5e20,stroke:#81c784,color:#fff
+    classDef guard fill:#4a148c,stroke:#ba68c8,color:#fff
+
+    RUN["pnp run → bundle on disk"] --> SUITE["pytest over the real bundle<br/>services/kb/tests/"]
+
+    SUITE --> H[/"HARD CEILING — must stay 0<br/>complete fix known and applied<br/>non-zero = a fix regressed"/]:::hard
+    SUITE --> R{{"RATCHET — must not grow<br/>fuzzy signal, no complete fix<br/>a rise needs a written reason"}}:::ratchet
+    SUITE --> F["FLOOR — must not drop<br/>coverage, measured as a share"]:::floor
+
+    H --> V{"count vs baseline"}
+    R --> V
+    F --> V
+    V -->|"moved the wrong way"| FAIL["FAIL — merge blocked"]:::hard
+    V -->|"held or improved"| PASS["PASS"]:::floor
+    V -->|"moved the right way"| TIGHTEN["tighten the baseline<br/>in the same commit"]:::floor
+
+    NOBUNDLE{{"bundle missing?<br/>shallow or partial checkout"}}:::guard
+    SUITE -.-> NOBUNDLE
+    NOBUNDLE -->|"local dev"| SKIP["skip — correct"]
+    NOBUNDLE -->|"CI: PNP_REQUIRE_BUNDLE=1"| HARDFAIL["ERROR — the suite may not<br/>pass by vanishing"]:::guard
+```
+
 ### Hard ceilings — must stay 0
 
 A pattern whose complete fix is known and has been applied. Zero is a fact about

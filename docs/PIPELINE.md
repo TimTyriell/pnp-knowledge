@@ -28,6 +28,43 @@ stage is idempotent — already-processed files are skipped — so re-running af
 adding sessions is always safe. `run_pipeline.py` chains all three *per video*,
 so each recording completes end to end before the next begins.
 
+The data-classification decision is easier to see than to read. Nothing inside
+the dashed boundary has an outgoing edge:
+
+```mermaid
+flowchart LR
+    classDef public fill:#0d47a1,stroke:#64b5f6,color:#fff
+    classDef derived fill:#b71c1c,stroke:#ef9a9a,color:#fff
+    classDef crosses fill:#1b5e20,stroke:#81c784,color:#fff
+
+    YT["YouTube VOD<br/>publicly streamed — the source is not secret"]:::public
+
+    subgraph LOCAL ["stays on the local machine — never a public repo"]
+        direction TB
+        AUD["audio/*.mp3"]
+        DIA["pyannote diarization<br/>SPEAKER_00, SPEAKER_01, …"]
+        EMB["groups/voices.json<br/>voice embeddings — biometric templates<br/>tied to 16 named people · GDPR Art. 9"]:::derived
+        ROSTER["roster: person ↔ character ↔ session"]:::derived
+        AUD --> DIA --> EMB
+        EMB --> ROSTER
+    end
+
+    ASR["faster-whisper transcription"]
+    YT --> AUD
+    AUD --> ASR
+    ASR --> MERGE["merge: greatest time overlap<br/>— the acknowledged weak point"]
+    DIA --> MERGE
+    MERGE --> MAP["03_speaker_mapping<br/>below threshold → stays SPEAKER_XX,<br/>never guessed"]
+    ROSTER -.->|"lookup only"| MAP
+    MAP --> OUT["transcripts_final/<br/>text + speaker names"]:::crosses
+    OUT ==>|"the only thing that crosses"| KB["pnp-knowledge"]:::crosses
+```
+
+The public source is drawn as public on purpose. Claiming the recordings are
+private would be disprovable in one search; the defensible claim is the narrower
+and more interesting one — a template derived from public audio is new data, and
+its sensitivity is not inherited from the source.
+
 ## Design decisions worth naming
 
 ### Crash-safety at chunk granularity, not file granularity

@@ -15,6 +15,39 @@ speech, dozens of speakers, entities that change name mid-story, facts that
 contradict each other across sessions, and a human authority whose corrections
 must outrank the model's output permanently.
 
+```mermaid
+flowchart TB
+    classDef private fill:#4a148c,stroke:#ce93d8,color:#fff,stroke-dasharray: 5 3
+    classDef core fill:#1b5e20,stroke:#81c784,color:#fff
+    classDef client fill:#0d47a1,stroke:#64b5f6,color:#fff
+    classDef human fill:#e65100,stroke:#ffb74d,color:#fff
+
+    YT["public stream<br/>66 sessions of German audio"]
+
+    subgraph S1 ["pnp-crawl — private, see below"]
+        CRAWL["Whisper + pyannote<br/>derives voice embeddings<br/>(GDPR Art. 9) — stays local"]:::private
+    end
+
+    subgraph S2 ["pnp-knowledge — this repo, system of record"]
+        KB["ingest: extract → resolve → synthesize"]:::core
+        BUNDLE[("OKF bundle in git<br/>1092 concepts · tag per session")]:::core
+        API["read-only API :8070"]:::core
+        KB --> BUNDLE --> API
+    end
+
+    subgraph S3 ["pnp-export-data — pure client"]
+        WIKI["deterministic publisher<br/>no LLM anywhere"]:::client
+    end
+
+    GM{{"game master<br/>edits a markdown file"}}:::human
+
+    YT --> CRAWL
+    CRAWL -->|"transcript only"| KB
+    API -->|"GET only — no write path"| WIKI
+    WIKI --> FANDOM["Fandom / MediaWiki"]
+    GM -->|"corrections outrank the model"| BUNDLE
+```
+
 ---
 
 ## What makes this more than an ingestion script
@@ -39,7 +72,7 @@ consciously loosened once, with the reason written down. See
 **Identity is guarded against the model.** Concept ids are derived from
 extracted entity names, which couples identity to model output: a resample that
 rewords a name moves the file. That has caused two production incidents. The
-system now refuses to write when more than 10% of known concepts go missing in a
+system now refuses to write when more than 2% of known concepts go missing in a
 single run — a guard that fired for real in September 2026, on 432 of 868
 concepts, and wrote nothing. See
 [INCIDENT-2026-08-mass-rename.md](docs/architecture/INCIDENT-2026-08-mass-rename.md).

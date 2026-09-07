@@ -14,6 +14,34 @@ while they were destroying the thing they were maintaining.
 The first was caused by the LLM; the second by a path. The second is the more
 interesting one, because it defeated the guard written for the first.
 
+```mermaid
+flowchart TB
+    classDef cause fill:#4a148c,stroke:#ba68c8,color:#fff
+    classDef damage fill:#b71c1c,stroke:#ef9a9a,color:#fff
+    classDef guard fill:#1b5e20,stroke:#81c784,color:#fff
+
+    ROOT["ROOT CAUSE — identity is derived from model output<br/>concept_id = slugify(extracted name)"]:::cause
+
+    ROOT --> T1["trigger 1: re-extraction resampled the LLM<br/>'Die Hexe vom Turm' → 'Hexe'"]:::cause
+    ROOT --> T2["trigger 2: a wrong bundle path<br/>the registry read as empty"]:::cause
+
+    T1 --> MOVE["ids move — same entity, different file"]:::damage
+    T2 --> MOVE
+    MOVE --> DMG["432 of 868 concepts vanish from the registry<br/>identity work discarded, run looks normal"]:::damage
+
+    DMG --> G1["GUARD 1 · check_rename_safety<br/>emit.py — refuse the write when >2% go missing"]:::guard
+    DMG --> G2["GUARD 2 · path assertion<br/>an empty registry is an error, not a fresh start"]:::guard
+    DMG --> G3["GUARD 3 · --reextract warns and points here"]:::guard
+    DMG --> G4["GUARD 4 · entity_rules.yaml pins<br/>human-authored identity outranks the model"]:::guard
+
+    G1 --> OUT["2026-09, prompt v6: the guard fired for real.<br/>Run aborted, nothing written."]:::guard
+    G2 --> OUT
+```
+
+**Reading the diagram:** every guard hangs off the *damage* node, not off its own
+trigger. That is the lesson — guard 2 exists because guard 1 was written against
+one trigger and a different trigger walked straight past it.
+
 ## Why this class of failure is dangerous here
 
 Concept ids are *derived* from extracted entity names. That is a deliberate
@@ -89,7 +117,7 @@ Incident 2's root cause.
 **`check_rename_safety()` moved the check one stage earlier.** Same shape as the
 prune guard, but it runs against the freshly resolved entity set before a single
 file is written — the point at which the damage is still fully preventable rather
-than merely detectable. It refuses when more than 10% of previously known concept
+than merely detectable. It refuses when more than 2% of previously known concept
 ids are absent, skips below a 20-concept floor and on first run, and offers
 `--allow-rename` for deliberate cleanups.
 
