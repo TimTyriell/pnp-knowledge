@@ -7,6 +7,7 @@ from pathlib import Path
 
 import yaml
 
+from pnp_okf import __version__
 from pnp_okf.episodes import Episodes
 from pnp_okf.links import ConceptIndex, apply_spellings, normalize_body
 from pnp_okf.models import (
@@ -359,6 +360,8 @@ def emit_entity(
     entity: CanonicalEntity,
     body: str,
     index: ConceptIndex | None = None,
+    *,
+    verified: bool = False,
 ) -> tuple[list[str], str | None]:
     """Write a single canonical-entity concept document.
 
@@ -366,6 +369,8 @@ def emit_entity(
     the concept set. Returns ``(unresolved_link_targets, conflict_section)``
     — the latter is the ``# Offene Konflikte`` content when the synthesis
     flagged an unresolvable contradiction, else ``None``.
+
+    (Later phases add ``labels=`` and ``relationships=`` here.)
     """
 
     unresolved: list[str] = []
@@ -386,6 +391,7 @@ def emit_entity(
         description = _short_desc(lead)
     else:
         description = _short_desc(first.note) if first else entity.canonical_name
+    ts = f"{last.date}T00:00:00Z" if last and last.date else _now_iso()
     frontmatter = {
         "type": entity.type.value,
         "id": entity.entity_id,
@@ -393,10 +399,20 @@ def emit_entity(
         "description": description,
         "tags": [TYPE_DIR[entity.type]],
         **({"subtype": entity.subtype} if entity.subtype else {}),
-        "timestamp": f"{last.date}T00:00:00Z" if last and last.date else _now_iso(),
+        "timestamp": ts,
+        # NOTE: bumping __version__ rewrites `generated.by` -- and therefore
+        # the file content -- of every concept in the bundle (~1159 files).
+        "generated": {"by": f"pnp_okf/{__version__}", "at": ts},
     }
     if entity.aliases:
         frontmatter["aliases"] = entity.aliases
+    if verified:
+        # Deliberately no "at": spec §5.3 derives the trust tier purely from
+        # the "human:" prefix on "by", and the reference implementation's
+        # trust_tier() never reads "at". We have no honest date for a GM
+        # ruling -- inventing one from the entity's last mention would assert
+        # something that isn't true.
+        frontmatter["verified"] = {"by": "human:gm"}
     if conflicts:
         # Not "status": OKF v0.2 SPEC.md §5.4 reserves that key for
         # draft|stable|deprecated (absent => stable). Our disputed/undisputed
