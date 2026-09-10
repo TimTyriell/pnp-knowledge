@@ -398,7 +398,11 @@ def emit_entity(
     if entity.aliases:
         frontmatter["aliases"] = entity.aliases
     if conflicts:
-        frontmatter["status"] = "disputed"
+        # Not "status": OKF v0.2 SPEC.md §5.4 reserves that key for
+        # draft|stable|deprecated (absent => stable). Our disputed/undisputed
+        # axis is a review state, not a lifecycle state, so it gets its own key
+        # and leaves "status" free to mean what the spec says it means.
+        frontmatter["review_status"] = "disputed"
     write_concept(bundle_dir, entity.concept_id, frontmatter, body)
     return unresolved, conflicts
 

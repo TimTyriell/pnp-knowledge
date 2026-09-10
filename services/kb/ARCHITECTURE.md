@@ -95,7 +95,7 @@ VIZGEN --> HTML
 
 ---
 
-## Concept model (OKF v0.1)
+## Concept model (OKF v0.2)
 
 ```
 splitter_des_ewigen/          (bundle root)

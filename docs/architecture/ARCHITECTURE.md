@@ -10,10 +10,10 @@ Companion to [ADR-001](ADR-001-knowledge-layer.md) (OKF bundle in git = system o
 | Session reports | `pnp-report` | 26 curated German reports + roll CSVs, typed-ID vocabulary (`CHAR_/NPC_/LOC_/…`) — becomes the KB's canonical ID vocabulary. |
 | KB — GraphRAG candidate | `pnp-graph-service` | Mature: resolver/alias registry, bitemporal edges, vector retrieval, report reconciliation. Per ADR-001: source of the identity-layer design + future derived index; not the system of record. |
 | KB — OKF candidate | `okf-experiments-main` | Full-campaign bundle generated (42 sessions). Pipeline becomes the core of the KB service after porting the identity layer. ⚠ housekeeping: it's an unzipped `-main` drop (nested dir, committed `.venv`, a real `.env` with Azure credentials sitting in it) — make it a proper repo, never commit `.env`. |
-| OKF spec + tooling | `knowledge-catalog` | Vendored Google reference (spec v0.1, viz, reference agent). Read-only dependency. |
+| OKF spec + tooling | `knowledge-catalog` | Vendored Google reference (spec v0.2, viz, reference agent). Read-only dependency. |
 | Wiki agent | `pnp-fandom-service` | Skeleton: MediaWiki client + inventory stage + DRY_RUN/draft-namespace write gate built; extract/generate stages are stubs. Re-target them to read from the KB API instead of `reports/`. |
-| Summary/outlook service | — | Missing entirely. |
-| KB service API layer | — | Missing (prototypes are batch CLIs, no APIs). |
+| Summary/outlook service | `services/summary` | Built. Pre-session recap + ephemeral outlook CLI, grounded in the KB API. |
+| KB service API layer | `services/kb` (`pnp_okf.api`) | Built. Read-only HTTP API on 127.0.0.1:8070 (`/concepts`, `/changes`, `/conflicts`, `/status`). |
 
 ## 2. Context diagram
 
