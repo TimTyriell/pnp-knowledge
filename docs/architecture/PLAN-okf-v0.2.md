@@ -1,7 +1,10 @@
 # Plan — OKF v0.2: trust tiers, structured sources, and relationship edges
 
-**Status:** planned, 2026-09-05. Nothing implemented; no code changes on this
-branch. Implementation belongs on its own branch.
+**Status:** phases 0–3 **implemented** 2026-09-10 on `feat/okf-v0.2`
+(`445547c`, `e8d9c09`, `9fefa64`, `1ded552`). 306 tests green, ruff clean, $0
+spent. **The bundle has not been regenerated** — see "Implementation notes"
+below for why, and for the line references in this document that went stale
+before the work started.
 **Decides:** which OKF v0.2 frontmatter families the emitter adopts, how the
 `status` key collision is resolved, and what shape a relationship edge takes in
 the bundle — now and at full build-out.
@@ -41,6 +44,68 @@ Three gaps, all in `services/kb/src/pnp_okf/`:
 Outcome: concepts carry `generated`, `verified`, `sources[]` and
 `relationships[]`; `status` stops colliding with the spec; no LLM re-run and no
 new prose parsing.
+
+## Implementation notes (2026-09-10)
+
+### What shipped
+
+| Phase | Commit | Effect |
+|---|---|---|
+| 0 | `445547c` | `status: disputed` → `review_status`; three stale "spec v0.1" mentions; two stale inventory rows |
+| 1 | `e8d9c09` | `generated: {by, at}` on every concept; `verified: {by: human:gm}` on the 50 ruling-grounded ones |
+| 2 | `9fefa64` | `sources[]` keyed by the inline `[P-08]` marker; the relabel/backfill bug killed |
+| 3 | `1ded552` | untyped reciprocal `relationships[]`; two advisory `validate.py` checks |
+
+Measured on the current bundle: **1159** concepts, **15** `status: disputed`
+(not 12), **87** pages with a `Beziehung*` heading and **503** bullets (not
+73/459), **405** resolving to **704** edges across **162** concepts, **53**
+`ENTSCHEIDUNG:` sections → **55** targets → **50** live.
+
+### Corrections to this document
+
+- **§ numbering was off by one.** §12 is *Versioning*; §13 is *Changes from
+  v0.1*. §13.1 does not "prescribe emitting both" `timestamp` and
+  `generated.at` — it says consumers **MAY** fall back to a legacy `timestamp`.
+  Keeping ours is our own call, justified by `pnp-export-data`, not the spec.
+- **`verified` is a *list* of `{by, at}`** (§5.2), not a bare mapping. A bare
+  mapping is legal — consumers MUST normalize it — and the reference
+  `trust_tier()` ignores `at` entirely, so the no-`at` form works. Deviation,
+  now documented in `emit.py`.
+- **Every line reference here predates `76d02c0`** and had moved. Notably
+  `emit_sessions` now runs *after* the entity loop, not before, so Phase 3's
+  stated reason for dropping session edge targets was wrong (the filter is
+  still right; `emit_sessions` takes no `relationships` kwarg).
+- **The mirroring design was incomplete.** Mutual assertion is the common case
+  — 40 of 162 concepts name each other — and mirroring unconditionally gave
+  both sides two entries for the same target. One edge per target per side; the
+  concept's own prose wins, the mirror fills a silent side.
+
+### Why the bundle is not regenerated
+
+`pnp run --estimate` confirms the run is free (66 + 241 cache entries warm, zero
+model calls), but the run itself exits 2 on `check_rename_safety`: **35 of 1092**
+registry concept ids (3.2%, over the 2% guard) are no longer produced by
+`resolve`.
+
+This is **not** caused by the v0.2 work — no commit on this branch touches
+`resolve.py`, `extract.py`, `models.py`, `entity_rules.yaml` or the registry. It
+is the registry lagging `entity_rules.yaml` by one run, exactly as
+[the 2026-09-07 hardening handoff](../audits/2026-09-07-pipeline-hardening-handoff.md)
+§7 claim 1 predicted, down to its worked example (`items/notiz_von_tyrex` →
+`items/notiz_von_tyrael`). 35 abandoned ids map near-1:1 onto 34 new ones.
+
+It is deliberately **not** forced past with `--allow-rename`, because some of
+those renames are contested canon rather than drift: `resolve` now mints
+`locations/taverne_in_willau`, `locations/kapelle_des_tavok_varsu` and
+`items/streitkolben_von_cepros`, while
+[the v6 identity-cleanup handoff](../audits/2026-09-05-v6-identity-cleanup-handoff.md)
+§3 asks for `Willauch`, `Thar'Vok` and `Zebros` and marks the canonical form as
+a **GM ruling**. An OKF-v0.2 PR is the wrong place to settle campaign spelling.
+
+**Consequence:** the new frontmatter families exist in code and in tests, but not
+yet in `knowledge/`. They appear on the first clean `pnp run` after the identity
+debt is settled — that run produces exactly the union diff, which is what
+`write_if_changed` was for. Nothing else is needed to collect it.
 
 ## Constraints that shape every phase
 
