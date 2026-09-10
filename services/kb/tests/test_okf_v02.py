@@ -88,3 +88,71 @@ def test_trust_tier_matches_reference_implementation(tmp_path: Path):
 
     assert module.trust_tier(_frontmatter(tmp_path)) == "unverified"
     assert module.trust_tier(_frontmatter(tmp_path, verified=True)) == "human-reviewed"
+
+
+# --- sources[] frontmatter (OKF v0.2 SPEC.md §5.1) --------------------------
+#
+# Deliberately lean (id/resource/last_modified only) and deliberately not the
+# spec's `[^footnote]` syntax -- pnp-export-data/md2wiki.py's `_CITE_ID`
+# parses exactly `P-\d+|S\d+-\d+-[A-Za-z]+`, so the marker stays the keyed
+# `[P-08]` form cli.py's citation_labels/relabel_citations already produce.
+
+
+def test_sources_id_matches_inline_citation_marker(tmp_path: Path):
+    # The id in sources[] has to be the same token the body's inline marker
+    # uses, or a reader following [P-08] into sources[] finds nothing.
+    body = "# Überblick\n\nErwähnt in [P-08].\n\n# Belege\n\n[P-08] Session 2026-01-01 @ 00:01:00 (http://x)"
+    emit_entity(tmp_path, _entity(), body, labels=["P-08"])
+    doc = (tmp_path / "npcs" / "testo.md").read_text(encoding="utf-8")
+    frontmatter, rendered_body = split_document(doc)
+    marker = re.search(r"\[([^\]]+)\]", rendered_body).group(1)
+    assert frontmatter["sources"][0]["id"] == marker
+    assert re.match(r"^(P-\d+|S\d+-\d+-[A-Za-z]+)$", marker)
+
+
+def test_sources_fall_back_to_positional_when_labels_is_none(tmp_path: Path):
+    # citation_labels is all-or-nothing: ~122 concepts have at least one
+    # mention URL missing from episodes.yaml and get None back, never a
+    # partially-filled list. sources[] must fall back the same way, not call
+    # episodes.id_for_url per mention to paper over the gap.
+    fm = _frontmatter(tmp_path, labels=None)
+    assert fm["sources"] == [
+        {"id": "1", "resource": "http://x", "last_modified": "2026-01-01T00:00:00Z"}
+    ]
+
+
+def test_sources_last_modified_and_resource_from_mention(tmp_path: Path):
+    fm = _frontmatter(tmp_path, labels=["P-08"])
+    source = fm["sources"][0]
+    assert source["resource"] == "http://x"
+    assert source["last_modified"] == "2026-01-01T00:00:00Z"
+
+
+def test_belege_backfill_uses_labels_so_body_and_sources_agree(tmp_path: Path):
+    # Step 1 regression: cli.py relabels the body's inline numeric citation
+    # markers to episode ids ("[3]" -> "[P-08]") *before* calling emit_entity.
+    # But a model body that omits its own "# Belege" section gets one
+    # backfilled from render_belege_section -- and until this fix, that
+    # backfill was always the unlabelled "1. Session ..." form, so a body
+    # marker like "[P-08]" cited against a list that never says "P-08"
+    # anywhere. Zero occurrences in the current bundle, but it fired
+    # historically (see test_bundle_invariants.py's
+    # test_emit_entity_backfills_a_missing_belege_section).
+    entity = _entity()
+    body = "# Überblick\n\nErwähnt in [P-08].\n"  # no "# Belege" section
+    emit_entity(tmp_path, entity, body, labels=["P-08"])
+    doc = (tmp_path / "npcs" / "testo.md").read_text(encoding="utf-8")
+    assert "[P-08] Session 2026-01-01 @ 00:01:00 (http://x)" in doc
+
+
+def test_belege_citation_line_still_matches_ratchet_and_session_date(tmp_path: Path):
+    # Two independent regexes must keep matching the labelled form:
+    # test_bundle_invariants.py's citation-coverage ratchet, and
+    # pnp-export-data/02_extract.py's `Session (\d{4}-\d{2}-\d{2})` extraction
+    # that gates wiki page creation on MIN_SESSIONS.
+    ratchet = re.compile(r"^(\[[^\]]+\]|\d+\.)\s*\[?Session\s", re.MULTILINE)
+    count_sessions = re.compile(r"Session (\d{4}-\d{2}-\d{2})")
+    emit_entity(tmp_path, _entity(), "# Überblick\n\nText.\n", labels=["P-08"])
+    doc = (tmp_path / "npcs" / "testo.md").read_text(encoding="utf-8")
+    assert ratchet.search(doc)
+    assert count_sessions.search(doc).group(1) == "2026-01-01"

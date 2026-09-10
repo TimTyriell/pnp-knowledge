@@ -355,12 +355,39 @@ def split_conflicts(body: str) -> tuple[str, str | None]:
     return body, section or None
 
 
+def _source_entries(entity: CanonicalEntity, labels: list[str] | None) -> list[dict]:
+    """Frontmatter ``sources[]`` entries per OKF SPEC.md §5.1.
+
+    Three keys, deliberately lean: the spec makes everything but ``resource``
+    optional, ``title`` would just duplicate the label already in the Belege
+    list, and ``author`` buys nothing today.
+
+    ``labels`` (from ``episodes.citation_labels``, index-aligned with
+    ``entity.mentions``) is ``None`` whenever any mention's URL is missing
+    from episodes.yaml (~122 concepts) -- falls back to positional "1".."n"
+    to match the unlabelled Belege list ``render_belege_section`` emits in
+    that same case, rather than resolving episode ids one mention at a time.
+
+    Deliberately not the spec's `[^footnote]` syntax: pnp-export-data's
+    md2wiki.py parses citation ids matching exactly
+    ``P-\\d+|S\\d+-\\d+-[A-Za-z]+``, so the id here has to be that same keyed
+    (not positional) marker used inline in the body.
+    """
+
+    ids = labels or [str(i) for i in range(1, len(entity.mentions) + 1)]
+    return [
+        {"id": sid, "resource": m.url, "last_modified": f"{m.date}T00:00:00Z"}
+        for sid, m in zip(ids, entity.mentions, strict=True)
+    ]
+
+
 def emit_entity(
     bundle_dir: Path,
     entity: CanonicalEntity,
     body: str,
     index: ConceptIndex | None = None,
     *,
+    labels: list[str] | None = None,
     verified: bool = False,
 ) -> tuple[list[str], str | None]:
     """Write a single canonical-entity concept document.
@@ -370,7 +397,13 @@ def emit_entity(
     — the latter is the ``# Offene Konflikte`` content when the synthesis
     flagged an unresolvable contradiction, else ``None``.
 
-    (Later phases add ``labels=`` and ``relationships=`` here.)
+    ``labels`` is the same episode-id list (or ``None``) cli.py already
+    computes via ``episodes.citation_labels`` to relabel the body's inline
+    citation markers -- passed through so a backfilled ``# Belege`` section
+    and the ``sources[]`` frontmatter agree with those markers instead of
+    each defaulting independently.
+
+    (Later phases add ``relationships=`` here.)
     """
 
     unresolved: list[str] = []
@@ -382,7 +415,7 @@ def emit_entity(
     # ships an uncited page. render_brief_body's citation loop is the only
     # code-guaranteed source; reuse it here whenever the model didn't comply.
     if entity.mentions and not _BELEGE_HEADING_RE.search(body):
-        body = f"{body.rstrip()}\n\n{render_belege_section(entity)}"
+        body = f"{body.rstrip()}\n\n{render_belege_section(entity, labels)}"
 
     first = entity.mentions[0] if entity.mentions else None
     last = entity.mentions[-1] if entity.mentions else None
@@ -419,6 +452,10 @@ def emit_entity(
         # axis is a review state, not a lifecycle state, so it gets its own key
         # and leaves "status" free to mean what the spec says it means.
         frontmatter["review_status"] = "disputed"
+    if entity.mentions:
+        # By far the longest block -- last so it doesn't push shorter,
+        # more-often-scanned keys further down the rendered file.
+        frontmatter["sources"] = _source_entries(entity, labels)
     write_concept(bundle_dir, entity.concept_id, frontmatter, body)
     return unresolved, conflicts
 

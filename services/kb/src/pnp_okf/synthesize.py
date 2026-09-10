@@ -179,18 +179,29 @@ def autolink_prose(text: str, targets: dict[str, str], skip: str) -> str:
     return head + tail
 
 
-def render_belege_section(entity: CanonicalEntity) -> str:
+def render_belege_section(
+    entity: CanonicalEntity, labels: list[str] | None = None
+) -> str:
     """The ``# Belege`` citation list built from ``entity``'s mentions.
 
     Shared by :func:`render_brief_body` (which always needs one) and
     ``emit.py::emit_entity`` (which backfills one when the model's own
     synthesis omitted the section it was asked for).
+
+    ``labels`` (index-aligned with ``entity.mentions``, from
+    ``episodes.citation_labels``) swaps the plain ``1.``/``2.`` markers for
+    the same episode-id markers ("[P-08]") used inline in the body, so a
+    backfilled list still lines up with the body's own citations instead of
+    joining against nothing. ``None`` (all-or-nothing: any mention with an
+    unknown episode) keeps today's numbered form. Deliberately still not the
+    OKF spec's `[^footnote]` syntax -- see emit.py's ``_source_entries``.
     """
 
     lines = ["# Belege", ""]
     for i, m in enumerate(entity.mentions, start=1):
         marker = "" if m.quality == "hoch" else f" [Transkriptqualität: {m.quality}]"
-        lines.append(f"{i}. Session {m.date} @ {m.citation_ts} ({m.url}){marker}")
+        prefix = f"[{labels[i - 1]}]" if labels else f"{i}."
+        lines.append(f"{prefix} Session {m.date} @ {m.citation_ts} ({m.url}){marker}")
     return "\n".join(lines)
 
 

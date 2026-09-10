@@ -472,6 +472,7 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
             unlabelled += 1
         unresolved, conflicts = emit_entity(
             paths.bundle_dir, entity, body, index,
+            labels=labels,
             verified=entity.concept_id in verified_ids,
         )
         unresolved_total += len(unresolved)
