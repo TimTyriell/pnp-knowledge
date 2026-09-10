@@ -389,6 +389,7 @@ def emit_entity(
     *,
     labels: list[str] | None = None,
     verified: bool = False,
+    relationships: list[dict] | None = None,
 ) -> tuple[list[str], str | None]:
     """Write a single canonical-entity concept document.
 
@@ -403,7 +404,11 @@ def emit_entity(
     and the ``sources[]`` frontmatter agree with those markers instead of
     each defaulting independently.
 
-    (Later phases add ``relationships=`` here.)
+    ``relationships`` is ``links.relationship_edges``'s per-concept edge
+    list, or ``None``/missing for a concept with no edges -- written into the
+    frontmatter only when truthy (see the guard below): ``_order_frontmatter``
+    drops ``None``/``""`` but keeps ``[]``, so an untruthy ``[]`` would render
+    as an empty ``relationships: []`` on every concept with no edges.
     """
 
     unresolved: list[str] = []
@@ -452,6 +457,11 @@ def emit_entity(
         # axis is a review state, not a lifecycle state, so it gets its own key
         # and leaves "status" free to mean what the spec says it means.
         frontmatter["review_status"] = "disputed"
+    if relationships:
+        # Guarded, not `relationships or None`: _order_frontmatter (okf.py)
+        # drops None/"" but keeps [], so an untruthy [] here would render as
+        # an empty `relationships: []` on every concept with no edges.
+        frontmatter["relationships"] = relationships
     if entity.mentions:
         # By far the longest block -- last so it doesn't push shorter,
         # more-often-scanned keys further down the rendered file.

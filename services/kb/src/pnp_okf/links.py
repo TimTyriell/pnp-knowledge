@@ -263,3 +263,118 @@ def normalize_body(
         return label if (cid is None and drop_unresolved) or (cid is not None and cid == self_id) else match.group(0)
 
     return _LINK_RE.sub(_replace, body), unresolved
+
+
+# --- relationship edges (frontmatter `relationships[]`) ---------------------
+#
+# Deliberately untyped -- no `kind` field. A German keyword table measured
+# against these bullets classified 87% as generic, with false positives that
+# would poison the system of record (mislabeling direction, or a "member_of"
+# pointing at a person). The one free, correct signal is *which section the
+# link came from* -- not what the prose says about it -- so an edge is just
+# ``{"target": concept_id, "note": bullet prose}``.
+
+# Prefix match, not exact: the bundle carries four heading variants
+# ("## Beziehungen und Verbindungen", "# Beziehungen und Verbindungen",
+# "## Beziehung zur Heldengruppe", "## Beziehungen") and an exact string
+# would silently miss the ones that aren't the first, most common form.
+_RELATIONSHIP_HEADING_RE = re.compile(r"^#{1,6}[ \t]+.*Beziehung", re.MULTILINE)
+_NEXT_HEADING_RE = re.compile(r"^#{1,6} ", re.MULTILINE)
+_BULLET_RE = re.compile(r"^[ \t]*[-*][ \t]+(.+)$", re.MULTILINE)
+_BOLD_HEAD_RE = re.compile(r"^\*\*(.+?)\*\*")
+# The prose writes "**Zur Gilde:**", "**Zum Orden:**" -- the relation is
+# always to something, so the head is what follows, not the preposition.
+_ZU_PREFIX_RE = re.compile(r"^Zu[rm]?\s+")
+_NOTE_LIMIT = 200
+
+
+def _bullet_head(text: str) -> str:
+    """The bold span if the bullet has one, else the text before the first ``:``."""
+
+    bold = _BOLD_HEAD_RE.match(text)
+    head = bold.group(1) if bold else text.split(":", 1)[0]
+    return _ZU_PREFIX_RE.sub("", head)
+
+
+def _sanitize_note(text: str, limit: int = _NOTE_LIMIT) -> str:
+    """Collapse to one line and cap the length.
+
+    okf.py::split_document (and its copies in validate.py and
+    test_bundle_invariants.py) splits frontmatter on the literal ``"---\\n"``
+    -- a multi-line YAML value whose continuation line happened to start with
+    ``---`` would truncate that concept's frontmatter. This is the only
+    free-text field the pipeline writes into frontmatter, so it is the only
+    one that needs this.
+    """
+
+    collapsed = " ".join(text.split())
+    return collapsed if len(collapsed) <= limit else collapsed[: limit - 1].rstrip() + "…"
+
+
+def relationship_edges(
+    bodies: dict[str, str], index: ConceptIndex, live: set[str]
+) -> dict[str, list[dict]]:
+    """Derive untyped, reciprocal ``relationships[]`` edges from concept bodies.
+
+    Per body: find the relationships heading, slice to the next heading (or
+    end of body), and read each bullet's head (see :func:`_bullet_head`) --
+    resolved as a markdown link target first, else as a plain name, both via
+    ``index.resolve`` (the same resolution :func:`normalize_body` uses; these
+    bodies are pre-normalization, which is fine). A bullet whose head resolves
+    to no concept, to the concept's own page, or to a concept outside
+    ``live`` (a session id, most likely -- ``build_concept_index`` seeds those
+    too, and nothing emits a ``relationships`` kwarg for a session page) is
+    dropped.
+
+    A second pass then writes the mirror edge onto every target, so both
+    endpoints of a relationship agree it exists, and each concept's edge list
+    is sorted by target -- otherwise dict/set iteration order would leak into
+    the written file and defeat ``write_if_changed``'s no-op detection.
+    """
+
+    edges: dict[str, list[dict]] = defaultdict(list)
+    for concept_id, body in bodies.items():
+        heading = _RELATIONSHIP_HEADING_RE.search(body)
+        if not heading:
+            continue
+        next_heading = _NEXT_HEADING_RE.search(body, heading.end())
+        section = body[heading.end() : next_heading.start() if next_heading else len(body)]
+        for bullet in _BULLET_RE.finditer(section):
+            text = bullet.group(1).strip()
+            if not text:
+                continue
+            head = _bullet_head(text)
+            link = _LINK_RE.search(head)
+            target = link.group(2) if link else head
+            cid = index.resolve(target)
+            if cid is None or cid == concept_id or cid not in live:
+                continue
+            # One edge per target. A page may name the same concept in two
+            # bullets ("**Zur Gilde:**" and "**Gildenmeister:**"); the first
+            # bullet is the one whose prose is about the relationship itself.
+            if any(e["target"] == cid for e in edges[concept_id]):
+                continue
+            edges[concept_id].append({"target": cid, "note": _sanitize_note(text)})
+
+    # Second pass: mirror onto the target, from a stable snapshot of the
+    # primary edges only -- mutating `edges` while walking it here would let
+    # a mirrored edge get re-mirrored for any pair that references itself
+    # from both sides.
+    #
+    # A mirror is skipped when the target already asserted the edge from its
+    # own side, which 40 of 162 concepts do -- the party members all name each
+    # other. Without this the pair yields *two* entries for the same target,
+    # differing only in which page's prose the note came from. A concept's own
+    # prose is the better note for its own page, so the primary edge wins and
+    # the mirror is what fills in the side that stayed silent.
+    asserted = {(cid, e["target"]) for cid, lst in edges.items() for e in lst}
+    mirrored: dict[str, list[dict]] = defaultdict(list)
+    for source_cid, source_edges in edges.items():
+        for edge in source_edges:
+            if (edge["target"], source_cid) in asserted:
+                continue
+            mirrored[edge["target"]].append({"target": source_cid, "note": edge["note"]})
+    for target_cid, extra in mirrored.items():
+        edges[target_cid].extend(extra)
+
+    return {cid: sorted(lst, key=lambda e: e["target"]) for cid, lst in edges.items()}
