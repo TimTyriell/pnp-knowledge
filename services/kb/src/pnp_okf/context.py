@@ -255,6 +255,21 @@ def _primary_hits(entity: CanonicalEntity, sections: list[SourceSection]) -> lis
     return hits
 
 
+def ruling_targets(
+    entities: list[CanonicalEntity], sections: list[SourceSection]
+) -> set[str]:
+    """Concept ids grounded by an ENTSCHEIDUNG: section (spec §5.3 human tier).
+
+    Deliberately checks the literal ``"ENTSCHEIDUNG:"`` prefix, NOT
+    ``SourceSection.is_ruling()``: that also matches ``DARSTELLUNG:`` via
+    RULING_MARKERS, and a DARSTELLUNG is a *presentation* instruction, not a
+    GM decision -- it must never confer a trust tier.
+    """
+
+    rulings = [s for s in sections if s.text.lstrip().startswith("ENTSCHEIDUNG:")]
+    return {e.concept_id for e in entities if _primary_hits(e, rulings)}
+
+
 def sources_for(entity: CanonicalEntity, sections: list[SourceSection]) -> str:
     """Source sections that ground this entity, as markdown.
 

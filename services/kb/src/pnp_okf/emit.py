@@ -7,6 +7,7 @@ from pathlib import Path
 
 import yaml
 
+from pnp_okf import __version__
 from pnp_okf.episodes import Episodes
 from pnp_okf.links import ConceptIndex, apply_spellings, normalize_body
 from pnp_okf.models import (
@@ -354,11 +355,41 @@ def split_conflicts(body: str) -> tuple[str, str | None]:
     return body, section or None
 
 
+def _source_entries(entity: CanonicalEntity, labels: list[str] | None) -> list[dict]:
+    """Frontmatter ``sources[]`` entries per OKF SPEC.md §5.1.
+
+    Three keys, deliberately lean: the spec makes everything but ``resource``
+    optional, ``title`` would just duplicate the label already in the Belege
+    list, and ``author`` buys nothing today.
+
+    ``labels`` (from ``episodes.citation_labels``, index-aligned with
+    ``entity.mentions``) is ``None`` whenever any mention's URL is missing
+    from episodes.yaml (~122 concepts) -- falls back to positional "1".."n"
+    to match the unlabelled Belege list ``render_belege_section`` emits in
+    that same case, rather than resolving episode ids one mention at a time.
+
+    Deliberately not the spec's `[^footnote]` syntax: pnp-export-data's
+    md2wiki.py parses citation ids matching exactly
+    ``P-\\d+|S\\d+-\\d+-[A-Za-z]+``, so the id here has to be that same keyed
+    (not positional) marker used inline in the body.
+    """
+
+    ids = labels or [str(i) for i in range(1, len(entity.mentions) + 1)]
+    return [
+        {"id": sid, "resource": m.url, "last_modified": f"{m.date}T00:00:00Z"}
+        for sid, m in zip(ids, entity.mentions, strict=True)
+    ]
+
+
 def emit_entity(
     bundle_dir: Path,
     entity: CanonicalEntity,
     body: str,
     index: ConceptIndex | None = None,
+    *,
+    labels: list[str] | None = None,
+    verified: bool = False,
+    relationships: list[dict] | None = None,
 ) -> tuple[list[str], str | None]:
     """Write a single canonical-entity concept document.
 
@@ -366,6 +397,18 @@ def emit_entity(
     the concept set. Returns ``(unresolved_link_targets, conflict_section)``
     — the latter is the ``# Offene Konflikte`` content when the synthesis
     flagged an unresolvable contradiction, else ``None``.
+
+    ``labels`` is the same episode-id list (or ``None``) cli.py already
+    computes via ``episodes.citation_labels`` to relabel the body's inline
+    citation markers -- passed through so a backfilled ``# Belege`` section
+    and the ``sources[]`` frontmatter agree with those markers instead of
+    each defaulting independently.
+
+    ``relationships`` is ``links.relationship_edges``'s per-concept edge
+    list, or ``None``/missing for a concept with no edges -- written into the
+    frontmatter only when truthy (see the guard below): ``_order_frontmatter``
+    drops ``None``/``""`` but keeps ``[]``, so an untruthy ``[]`` would render
+    as an empty ``relationships: []`` on every concept with no edges.
     """
 
     unresolved: list[str] = []
@@ -377,7 +420,7 @@ def emit_entity(
     # ships an uncited page. render_brief_body's citation loop is the only
     # code-guaranteed source; reuse it here whenever the model didn't comply.
     if entity.mentions and not _BELEGE_HEADING_RE.search(body):
-        body = f"{body.rstrip()}\n\n{render_belege_section(entity)}"
+        body = f"{body.rstrip()}\n\n{render_belege_section(entity, labels)}"
 
     first = entity.mentions[0] if entity.mentions else None
     last = entity.mentions[-1] if entity.mentions else None
@@ -386,6 +429,7 @@ def emit_entity(
         description = _short_desc(lead)
     else:
         description = _short_desc(first.note) if first else entity.canonical_name
+    ts = f"{last.date}T00:00:00Z" if last and last.date else _now_iso()
     frontmatter = {
         "type": entity.type.value,
         "id": entity.entity_id,
@@ -393,12 +437,35 @@ def emit_entity(
         "description": description,
         "tags": [TYPE_DIR[entity.type]],
         **({"subtype": entity.subtype} if entity.subtype else {}),
-        "timestamp": f"{last.date}T00:00:00Z" if last and last.date else _now_iso(),
+        "timestamp": ts,
+        # NOTE: bumping __version__ rewrites `generated.by` -- and therefore
+        # the file content -- of every concept in the bundle (~1159 files).
+        "generated": {"by": f"pnp_okf/{__version__}", "at": ts},
     }
     if entity.aliases:
         frontmatter["aliases"] = entity.aliases
+    if verified:
+        # Deliberately no "at": spec §5.3 derives the trust tier purely from
+        # the "human:" prefix on "by", and the reference implementation's
+        # trust_tier() never reads "at". We have no honest date for a GM
+        # ruling -- inventing one from the entity's last mention would assert
+        # something that isn't true.
+        frontmatter["verified"] = {"by": "human:gm"}
     if conflicts:
-        frontmatter["status"] = "disputed"
+        # Not "status": OKF v0.2 SPEC.md §5.4 reserves that key for
+        # draft|stable|deprecated (absent => stable). Our disputed/undisputed
+        # axis is a review state, not a lifecycle state, so it gets its own key
+        # and leaves "status" free to mean what the spec says it means.
+        frontmatter["review_status"] = "disputed"
+    if relationships:
+        # Guarded, not `relationships or None`: _order_frontmatter (okf.py)
+        # drops None/"" but keeps [], so an untruthy [] here would render as
+        # an empty `relationships: []` on every concept with no edges.
+        frontmatter["relationships"] = relationships
+    if entity.mentions:
+        # By far the longest block -- last so it doesn't push shorter,
+        # more-often-scanned keys further down the rendered file.
+        frontmatter["sources"] = _source_entries(entity, labels)
     write_concept(bundle_dir, entity.concept_id, frontmatter, body)
     return unresolved, conflicts
 

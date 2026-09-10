@@ -1,7 +1,7 @@
 """Minimal, self-contained Open Knowledge Format (OKF) writer.
 
 Emits concept documents and ``index.md`` files that conform to okf/SPEC.md
-v0.1. The output bundle is data-compatible with the ``okf`` reference
+v0.2. The output bundle is data-compatible with the ``okf`` reference
 package, so its ``visualize`` CLI can render ``viz.html`` directly.
 """
 
