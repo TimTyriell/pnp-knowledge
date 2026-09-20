@@ -326,13 +326,16 @@ def test_no_session_file_is_written_before_entity_files(
     )
 
     order: list[str] = []
-    original_write_concept = emit_mod.write_concept
+    # write_concept_text, not write_concept: it is the single write path for
+    # concept files (okf.py), so spying it catches both the pre-rendered
+    # writes emit.py makes and anything still going through write_concept.
+    original_write_concept = emit_mod.write_concept_text
 
-    def spy_write_concept(bundle_dir, concept_id, frontmatter, body):
+    def spy_write_concept(bundle_dir, concept_id, rendered, current=None):
         order.append(concept_id)
-        return original_write_concept(bundle_dir, concept_id, frontmatter, body)
+        return original_write_concept(bundle_dir, concept_id, rendered, current)
 
-    monkeypatch.setattr(emit_mod, "write_concept", spy_write_concept)
+    monkeypatch.setattr(emit_mod, "write_concept_text", spy_write_concept)
 
     ret = cli._run_pipeline(args, "2026-09-07T00:00:00Z")
     assert ret == 0
@@ -361,13 +364,16 @@ def test_registry_is_written_after_the_bundle_it_describes(
     )
 
     order: list[str] = []
-    original_write_concept = emit_mod.write_concept
+    # write_concept_text, not write_concept: it is the single write path for
+    # concept files (okf.py), so spying it catches both the pre-rendered
+    # writes emit.py makes and anything still going through write_concept.
+    original_write_concept = emit_mod.write_concept_text
 
-    def spy_write_concept(bundle_dir, concept_id, frontmatter, body):
+    def spy_write_concept(bundle_dir, concept_id, rendered, current=None):
         order.append(concept_id)
-        return original_write_concept(bundle_dir, concept_id, frontmatter, body)
+        return original_write_concept(bundle_dir, concept_id, rendered, current)
 
-    monkeypatch.setattr(emit_mod, "write_concept", spy_write_concept)
+    monkeypatch.setattr(emit_mod, "write_concept_text", spy_write_concept)
 
     original_write_registry = cli.write_registry
 

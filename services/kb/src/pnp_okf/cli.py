@@ -13,7 +13,13 @@ from datetime import UTC, datetime
 from pathlib import Path
 
 from pnp_okf.config import ConfigError, DeepSeekConfig, Paths
-from pnp_okf.context import excerpts_for, load_sources, secondary_sources_for, sources_for
+from pnp_okf.context import (
+    excerpts_for,
+    load_sources,
+    ruling_targets,
+    secondary_sources_for,
+    sources_for,
+)
 from pnp_okf.dedup import load_never_merge, propose, render_report
 from pnp_okf.emit import (
     MAX_PRUNE_RATIO,
@@ -32,6 +38,7 @@ from pnp_okf.emit import (
 from pnp_okf.episodes import Episodes, citation_labels, relabel_citations
 from pnp_okf.extract import extract_session, load_cached_extraction
 from pnp_okf.ingest import load_transcripts
+from pnp_okf.links import relationship_edges
 from pnp_okf.models import CanonicalEntity, SessionExtraction, SessionTranscript
 from pnp_okf.resolve import load_spellings, require_rules, resolve_entities, write_registry
 from pnp_okf.synthesize import (
@@ -432,17 +439,67 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
             concept_id, body = future.result()
             bodies[concept_id] = body
 
+    # Ground the OKF v0.2 trust tier in ENTSCHEIDUNG: rulings (spec §5.3).
+    # This doubles as a diagnostic: an explicit `entity=` directive can name a
+    # concept_id that no longer exists (a rename, a merge) and silently
+    # ground nobody -- surface that instead of just emitting fewer tiers than
+    # the source file promises.
+    verified_ids = ruling_targets(entities, source_sections)
+    ruling_directive_targets = {
+        target
+        for section in source_sections
+        if section.text.lstrip().startswith("ENTSCHEIDUNG:")
+        for target in section.targets
+    }
+    unmatched_targets = ruling_directive_targets - verified_ids
+    log.info("[cli] %d concept(s) carry a verified ENTSCHEIDUNG: ruling", len(verified_ids))
+    # verified_ids only covers this run's (possibly partial) entities, while
+    # ruling_directive_targets spans every ENTSCHEIDUNG: in source_sections --
+    # so a --limit/--session run "unmatches" most of the corpus by
+    # construction, not because anything is actually missing.
+    if unmatched_targets and not partial_run:
+        log.warning(
+            "[cli] %d ENTSCHEIDUNG: directive target(s) matched no live entity "
+            "(pre-existing identity debt, not introduced by this run): %s",
+            len(unmatched_targets),
+            ", ".join(sorted(unmatched_targets)),
+        )
+
+    # Citation relabeling ("[3]" -> "[S1-01-A]") has to happen before
+    # relationship_edges reads `bodies` below -- otherwise a note copied from
+    # a bullet whose body gets relabeled afterwards keeps the stale numeric
+    # marker forever (links.py's "pre-normalization is fine" doesn't cover
+    # this: relabeling isn't part of normalize_body).
     unlabelled = 0
+    labels_by_id: dict[str, list[str]] = {}
     for entity in entities:
-        body = bodies[entity.concept_id]
         # "[3]" -> "[S1-01-A]". The model numbers its evidence list; which
         # episode each number stands for is known here, not there.
         labels = citation_labels([m.url for m in entity.mentions], episodes)
+        labels_by_id[entity.concept_id] = labels
         if labels:
-            body = relabel_citations(body, labels)
+            bodies[entity.concept_id] = relabel_citations(bodies[entity.concept_id], labels)
         elif entity.mentions:
             unlabelled += 1
-        unresolved, conflicts = emit_entity(paths.bundle_dir, entity, body, index)
+
+    # A partial run sees only part of the corpus, so the edge map would be
+    # missing every relationship whose other endpoint wasn't loaded. It
+    # therefore passes `None` (not `{}`) for `relationships` below --
+    # emit_entity treats `None` as "leave relationships[] on disk alone" and
+    # only an explicit list (always the case on a full run) as authoritative,
+    # so a partial run can no longer erase real edges by omission. Nothing
+    # reads `edges` on that path, so it isn't computed there either.
+    edges: dict[str, list[dict]] = {}
+    if not partial_run:
+        edges = relationship_edges(bodies, index, {e.concept_id for e in entities})
+
+    for entity in entities:
+        unresolved, conflicts = emit_entity(
+            paths.bundle_dir, entity, bodies[entity.concept_id], index,
+            labels=labels_by_id[entity.concept_id],
+            verified=entity.concept_id in verified_ids,
+            relationships=(None if partial_run else edges.get(entity.concept_id, [])),
+        )
         unresolved_total += len(unresolved)
         if conflicts:
             conflict_path = emit_conflict(paths.conflicts_dir, entity, conflicts)

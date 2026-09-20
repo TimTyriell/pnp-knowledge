@@ -1,7 +1,7 @@
 """Minimal, self-contained Open Knowledge Format (OKF) writer.
 
 Emits concept documents and ``index.md`` files that conform to okf/SPEC.md
-v0.1. The output bundle is data-compatible with the ``okf`` reference
+v0.2. The output bundle is data-compatible with the ``okf`` reference
 package, so its ``visualize`` CLI can render ``viz.html`` directly.
 """
 
@@ -16,7 +16,11 @@ import yaml
 _SLUG_RE = re.compile(r"[^a-z0-9]+")
 
 # Frontmatter key order preferred by the OKF spec (type is required first).
-_FRONTMATTER_ORDER = ["type", "title", "description", "resource", "tags", "timestamp"]
+# "generated" sits next to the "timestamp" it supersedes (SPEC §13.1) --
+# emit.py computes it last (it has to see every other key to tell a real
+# content change from a no-op), which would otherwise bury it under the
+# long "sources" block.
+_FRONTMATTER_ORDER = ["type", "title", "description", "resource", "tags", "timestamp", "generated"]
 
 
 def slugify(value: str) -> str:
@@ -58,20 +62,44 @@ def render_document(frontmatter: dict[str, object], body: str) -> str:
     return f"---\n{yaml_block}\n---\n\n{body.strip()}\n"
 
 
-def write_if_changed(path: Path, content: str) -> bool:
+def write_if_changed(path: Path, content: str, current: str | None = None) -> bool:
     """Write ``content`` to ``path`` only if it differs. Returns whether it wrote.
 
     A run that touches nothing still overwrites every file with byte-identical
     content, which erases mtimes as a signal of what a run actually changed
     and makes an accidental mass-rewrite indistinguishable from a real one in
     ``git status``. Skipping identical writes makes both observable again.
+
+    ``current`` is the file's existing text when the caller has already read it
+    (emit.py reads every concept to compute ``generated.at``), saving a second
+    read of every file in the bundle. Omitted, it is read here as before; a
+    file that does not exist has no text either way.
     """
 
-    if path.exists() and path.read_text(encoding="utf-8") == content:
+    if current is None and path.exists():
+        current = path.read_text(encoding="utf-8")
+    if current == content:
         return False
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content, encoding="utf-8")
     return True
+
+
+def write_concept_text(
+    bundle_dir: Path, concept_id: str, rendered: str, current: str | None = None
+) -> Path:
+    """Write an already-rendered ``<bundle_dir>/<concept_id>.md`` and return its path.
+
+    The single write path for concept files -- :func:`write_concept` renders
+    and delegates here, and emit.py calls it directly with the document
+    :func:`emit._stamp_generated` already rendered, rather than rendering the
+    same frontmatter twice. ``current`` is the file's existing text when the
+    caller has it (see :func:`write_if_changed`).
+    """
+
+    path = bundle_dir / f"{concept_id}.md"
+    write_if_changed(path, rendered, current)
+    return path
 
 
 def write_concept(
@@ -79,9 +107,30 @@ def write_concept(
 ) -> Path:
     """Write ``<bundle_dir>/<concept_id>.md`` (skipping an unchanged write) and return its path."""
 
-    path = bundle_dir / f"{concept_id}.md"
-    write_if_changed(path, render_document(frontmatter, body))
-    return path
+    return write_concept_text(bundle_dir, concept_id, render_document(frontmatter, body))
+
+
+def split_raw(text: str) -> tuple[str, str]:
+    """Textual ``(frontmatter_block, body)`` split: the two halves always
+    concatenate back to ``text`` byte-for-byte.
+
+    Same ``"---\\n"`` convention as :func:`split_document`, but the frontmatter
+    half comes back raw instead of parsed, for a caller that rewrites the body
+    and must leave the YAML exactly as it found it (``validate.fix_bundle``).
+    No frontmatter, or a delimiter this split cannot trust, comes back as
+    ``("", text)`` -- the whole file is then the body, which is the safe
+    reading for both a rewriter and a scanner.
+    """
+
+    if not text.startswith("---"):
+        return "", text
+    parts = text.split("---\n", 2)
+    # A non-empty parts[0] means the opening delimiter isn't "---\n" (a CRLF
+    # file, say) and the split landed somewhere in the body -- rebuilding from
+    # parts[1:] would silently drop parts[0].
+    if len(parts) < 3 or parts[0]:
+        return "", text
+    return f"---\n{parts[1]}---\n", parts[2]
 
 
 def split_document(text: str) -> tuple[dict, str]:

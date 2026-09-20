@@ -14,9 +14,8 @@ from dataclasses import dataclass, field
 from difflib import SequenceMatcher
 from pathlib import Path
 
-import yaml
-
 from pnp_okf.links import _LINK_RE, ConceptIndex, normalize_body
+from pnp_okf.okf import split_document, split_raw
 from pnp_okf.resolve import FUZZY_RATIO, load_spellings
 
 log = logging.getLogger(__name__)
@@ -30,19 +29,6 @@ def _iter_concept_files(bundle_dir: Path) -> list[Path]:
         for p in sorted(bundle_dir.rglob("*.md"))
         if p.name not in _RESERVED
     ]
-
-
-def _split_frontmatter(text: str) -> dict[str, object]:
-    if not text.startswith("---"):
-        return {}
-    parts = text.split("---\n", 2)
-    if len(parts) < 3:
-        return {}
-    try:
-        data = yaml.safe_load(parts[1])
-    except yaml.YAMLError:
-        return {}
-    return data if isinstance(data, dict) else {}
 
 
 @dataclass
@@ -59,6 +45,8 @@ class ValidationReport:
     duplicate_ids: dict[str, list[str]] = field(default_factory=dict)
     suspected_person_dups: list[tuple[str, str]] = field(default_factory=list)
     suspected_title_dups: list[tuple[str, str]] = field(default_factory=list)
+    bad_relationship_targets: list[tuple[str, str]] = field(default_factory=list)
+    asymmetric_relationships: list[tuple[str, str]] = field(default_factory=list)
 
     @property
     def ok(self) -> bool:
@@ -71,6 +59,8 @@ class ValidationReport:
             or self.duplicate_ids
             or self.suspected_person_dups
             or self.suspected_title_dups
+            or self.bad_relationship_targets
+            or self.asymmetric_relationships
         )
 
     @property
@@ -82,6 +72,17 @@ class ValidationReport:
         fuzzy heuristics a human triages, and a healthy bundle carries some at
         all times -- gating a run on those would fail every run, and a gate that
         always fails gets switched off. These four mean the corpus is wrong.
+
+        ``bad_relationship_targets`` and ``asymmetric_relationships`` (the
+        v0.2 ``relationships[]`` checks) are deliberately left out too, but for
+        a different reason than the fuzzy heuristics above: they are new and
+        have never been observed passing on a real bundle. A brand-new check
+        must run clean at least once before it is allowed to fail a build --
+        promote ``bad_relationship_targets`` into this gate once it has (it is
+        the same class of finding as ``dangling_links``, just for a different
+        field). ``asymmetric_relationships`` stays advisory regardless: two
+        independent emits can legitimately observe only one side of a
+        relationship at different times on a partial run.
         """
 
         return not (
@@ -147,6 +148,20 @@ class ValidationReport:
             )
             for a, b in self.suspected_title_dups:
                 lines.append(f"  {a} <-> {b}")
+        if self.bad_relationship_targets:
+            lines.append(
+                f"\nBad relationship targets ({len(self.bad_relationship_targets)})"
+                " — relationships[].target names no concept in the bundle:"
+            )
+            for cid, target in self.bad_relationship_targets:
+                lines.append(f"  {cid} -> {target}")
+        if self.asymmetric_relationships:
+            lines.append(
+                f"\nAsymmetric relationships ({len(self.asymmetric_relationships)})"
+                " — one side lists the other, but not vice versa:"
+            )
+            for a, b in self.asymmetric_relationships:
+                lines.append(f"  {a} -> {b}")
         if self.ok:
             lines.append("\nOK — no data-quality issues found.")
         return "\n".join(lines)
@@ -188,10 +203,18 @@ def validate_bundle(bundle_dir: Path) -> ValidationReport:
     entity_ids: dict[str, list[str]] = defaultdict(list)
     person_slugs: list[str] = []
     titles_by_type: dict[str, list[tuple[str, str]]] = defaultdict(list)
+    # Collected here, checked in a second pass below once every concept's
+    # edges are known -- symmetry can't be judged one file at a time.
+    relationships: dict[str, list[dict]] = {}
 
     for path, cid in zip(files, concept_ids, strict=True):
         text = path.read_text(encoding="utf-8")
-        for match in _LINK_RE.finditer(text):
+        # Body only, the same half fix_bundle rewrites. Scanning the whole file
+        # counted a link inside frontmatter that --fix could then never reach,
+        # so `pnp validate --fix` would not converge: the report stayed red
+        # forever and cli.py treats that as "do not commit this bundle".
+        fm, body = split_document(text)
+        for match in _LINK_RE.finditer(body):
             report.link_count += 1
             if index.resolve(match.group(2)) is None:
                 report.broken_links.append((cid, match.group(2)))
@@ -200,7 +223,6 @@ def validate_bundle(bundle_dir: Path) -> ValidationReport:
             if not _href_exists(bundle_dir, path, match.group(2)):
                 report.dangling_links.append((cid, match.group(2)))
 
-        fm = _split_frontmatter(text)
         ctype = str(fm.get("type") or "").strip()
         if not ctype:
             report.missing_type.append(cid)
@@ -215,6 +237,9 @@ def validate_bundle(bundle_dir: Path) -> ValidationReport:
             entity_ids[eid].append(cid)
         if cid.split("/", 1)[0] in ("characters", "npcs"):
             person_slugs.append(cid)
+        rel = fm.get("relationships")
+        if isinstance(rel, list):
+            relationships[cid] = rel
 
     report.duplicate_titles = {
         key.split("::", 1)[1]: sorted(ids)
@@ -234,6 +259,19 @@ def validate_bundle(bundle_dir: Path) -> ValidationReport:
     report.suspected_person_dups = _suspect_person_dups(person_slugs)
     for items in titles_by_type.values():
         report.suspected_title_dups.extend(_suspect_title_dups(items))
+
+    # Second pass: every concept's edges are known now, so symmetry (and a
+    # target naming no concept at all) can actually be checked.
+    concept_id_set = set(concept_ids)
+    for cid, edges in relationships.items():
+        for edge in edges:
+            target = str(edge.get("target") or "")
+            if target not in concept_id_set:
+                report.bad_relationship_targets.append((cid, target))
+                continue
+            back = relationships.get(target, [])
+            if not any(e.get("target") == cid for e in back):
+                report.asymmetric_relationships.append((cid, target))
     return report
 
 
@@ -314,7 +352,14 @@ def fix_bundle(bundle_dir: Path, registry_path: Path | None = None) -> tuple[int
     links_dropped = 0
     for path, cid in zip(files, concept_ids, strict=True):
         original = path.read_text(encoding="utf-8")
-        new_text, unresolved = normalize_body(original, index, self_id=cid)
+        # Frontmatter is excluded from normalize_body: apply_spellings
+        # (links.py) only protects a `](...)` link target, not a bare URL, so
+        # a `spelling:` rule could otherwise rewrite a `resource:` value --
+        # e.g. matching a `\w`-bounded run inside a YouTube video id -- and
+        # silently break the citation it sits in.
+        frontmatter, body = split_raw(original)
+        new_body, unresolved = normalize_body(body, index, self_id=cid)
+        new_text = frontmatter + new_body
         if new_text != original:
             links_dropped += len(unresolved)
             path.write_text(new_text, encoding="utf-8")

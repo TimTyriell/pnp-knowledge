@@ -28,12 +28,15 @@ from pathlib import Path
 
 import pytest
 import yaml
-from pnp_okf.context import _matches, load_sources
+from pnp_okf.context import SourceSection, _matches, load_sources, ruling_targets
 from pnp_okf.models import (
     ALWAYS_DEEP_TYPES,
     ALWAYS_STANDARD_TYPES,
     DEEP_MENTION_THRESHOLD,
     TYPE_DIR,
+    CanonicalEntity,
+    EntityType,
+    MentionRef,
 )
 from pnp_okf.okf import slugify
 from pnp_okf.resolve import _load_important
@@ -408,3 +411,61 @@ def test_harvested_wiki_sections_are_directive_routed():
         f"harvested wiki section(s) carry no usable okf directive, so they "
         f"fall back to name matching: {problems} — re-run sync_harvest.py"
     )
+
+
+def _fixture_entity(concept_id: str, name: str) -> CanonicalEntity:
+    return CanonicalEntity(
+        concept_id=concept_id,
+        type=EntityType.NPC,
+        canonical_name=name,
+        mentions=[
+            MentionRef(
+                session_id="s1", date="2025-01-01", url="http://x",
+                citation_ts="00:01:00", note="n",
+            )
+        ],
+    )
+
+
+def test_ruling_targets_routes_only_entscheidung_sections():
+    """OKF v0.2 §5.3 human tier: only an ENTSCHEIDUNG: section may ground a
+    ``verified`` concept. A DARSTELLUNG: section is a *presentation*
+    instruction, not a GM ruling — even though ``is_ruling()`` matches both
+    (RULING_MARKERS), ``ruling_targets`` must not, or a stage direction would
+    silently earn the same trust tier as an actual canon decision."""
+
+    entities = [
+        _fixture_entity("npcs/harald_freibeuter", "Harald"),
+        _fixture_entity("npcs/dodo", "Dodo"),
+    ]
+    sections = [
+        SourceSection(
+            "test.md", "Harald", "ENTSCHEIDUNG: Freibeuter-Kapitän mit Rapier.",
+            targets=frozenset({"npcs/harald_freibeuter"}),
+        ),
+        SourceSection(
+            "test.md", "Dodo", "DARSTELLUNG: Immer als Schatten beschreiben.",
+            targets=frozenset({"npcs/dodo"}),
+        ),
+    ]
+    assert ruling_targets(entities, sections) == {"npcs/harald_freibeuter"}
+
+
+def test_ruling_targets_ignores_fuzzy_slug_match_without_directive():
+    """A no-directive ENTSCHEIDUNG: section must ground nobody, even when its
+    slug fuzzily contains an entity name (context._matches accepts `name in
+    slug` for 4+ char names). That fallback is fine for prompt grounding
+    (sources_for/secondary_sources_for) -- a false positive there costs a few
+    tokens -- but ruling_targets feeds `verified: {by: human:gm}`, OKF's
+    highest trust tier, so it must require the explicit `entity=` directive
+    and nothing looser."""
+
+    entities = [_fixture_entity("npcs/willa", "Willa")]
+    sections = [
+        SourceSection(
+            "test.md", "Willauch", "ENTSCHEIDUNG: Das ist eine Festung, keine Person.",
+            # No targets= -- the slug "willauch" contains "willa" and would
+            # match under the old _primary_hits fallback.
+        ),
+    ]
+    assert ruling_targets(entities, sections) == set()

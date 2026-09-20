@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pnp-okf"
-version = "0.1.0"
+version = "0.2.0"
 description = "Distill Pen & Paper actual-play transcripts into an Open Knowledge Format (OKF) campaign bundle using the DeepSeek API"
 requires-python = ">=3.11"
 dependencies = [

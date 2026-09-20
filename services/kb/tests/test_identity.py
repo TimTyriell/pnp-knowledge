@@ -269,7 +269,9 @@ def test_emit_entity_flags_disputed_and_queues_conflict(tmp_path: Path):
     doc = (bundle / "characters" / "lindo_laut.md").read_text(encoding="utf-8")
     fm = yaml.safe_load(doc.split("---\n")[1])
     assert fm["id"] == "CHAR_LINDO_LAUT"
-    assert fm["status"] == "disputed"
+    # SPEC.md §5.4 reserves "status" for draft|stable|deprecated.
+    assert fm["review_status"] == "disputed"
+    assert "status" not in fm
 
     conflict_path = emit_conflict(tmp_path / "conflicts", entity, conflicts)
     text = conflict_path.read_text(encoding="utf-8")

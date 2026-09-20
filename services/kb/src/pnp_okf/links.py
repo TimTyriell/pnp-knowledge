@@ -263,3 +263,179 @@ def normalize_body(
         return label if (cid is None and drop_unresolved) or (cid is not None and cid == self_id) else match.group(0)
 
     return _LINK_RE.sub(_replace, body), unresolved
+
+
+# --- relationship edges (frontmatter `relationships[]`) ---------------------
+#
+# Deliberately untyped -- no `kind` field. A German keyword table measured
+# against these bullets classified 87% as generic, with false positives that
+# would poison the system of record (mislabeling direction, or a "member_of"
+# pointing at a person). The one free, correct signal is *which section the
+# link came from* -- not what the prose says about it -- so an edge is just
+# ``{"target": concept_id, "note": bullet prose}``.
+
+# Prefix match, not exact: the bundle carries four heading variants
+# ("## Beziehungen und Verbindungen", "# Beziehungen und Verbindungen",
+# "## Beziehung zur Heldengruppe", "## Beziehungen") and an exact string
+# would silently miss the ones that aren't the first, most common form.
+_RELATIONSHIP_HEADING_RE = re.compile(r"^#{1,6}[ \t]+.*Beziehung", re.MULTILINE)
+_NEXT_HEADING_RE = re.compile(r"^#{1,6}[ \t]+", re.MULTILINE)
+_BULLET_RE = re.compile(r"^[ \t]*[-*][ \t]+(.+)$", re.MULTILINE)
+_BOLD_HEAD_RE = re.compile(r"^\*\*(.+?)\*\*")
+# The prose writes "**Zur Gilde:**", "**Zum Orden:**" -- the relation is
+# always to something, so the head is what follows, not the preposition.
+_ZU_PREFIX_RE = re.compile(r"^Zu[rm]?\s+")
+# Fallback separator when the bullet marks no head of its own: a colon, or a
+# dash *surrounded by whitespace* ("Hans - kennt ihn gut."). The whitespace is
+# load-bearing -- a bare "-" also sits inside German compound names
+# ("Sanddorn-Gilde", "Freibeuter-Kapitän Harald"), and cutting there both lost
+# real edges and truncated a name onto a different concept's prefix.
+_HEAD_SEP_RE = re.compile(r":|\s[–-]\s")
+_HEAD_WORD_LIMIT = 6
+_NOTE_LIMIT = 200
+
+
+def _first_sep(text: str) -> int | None:
+    """Index of the first head separator that is not inside a markdown link.
+
+    Skipping over links by position, rather than starting the search past the
+    first link's end, keeps a separator that appears *before* a link (the
+    common "Gilde: … kennt [Hans](…)" shape) while still ignoring the ``-``
+    inside a link's own target (``/sessions/2026-08-12.md``).
+    """
+
+    spans = [m.span() for m in _LINK_RE.finditer(text)]
+    for sep in _HEAD_SEP_RE.finditer(text):
+        if not any(start <= sep.start() < end for start, end in spans):
+            return sep.start()
+    return None
+
+
+def _bullet_head(text: str) -> str:
+    """What the bullet names as the other end of the relationship, or ``""``
+    when it names nothing in particular (the caller skips a ``""`` head).
+
+    A bold span or a leading link is the prose marking its own head, so it is
+    taken as-is however long it runs. Everything else falls back to the text
+    up to the first separator, capped at :data:`_HEAD_WORD_LIMIT` words:
+    without a cap, a bullet with neither marker nor separator handed the
+    *whole sentence* on as "the head", and a link search over it then matched
+    whichever link happened to appear anywhere in the prose -- or, with no
+    link, a slugified sentence fragment could still hit the fuzzy name tables.
+    Applying that cap to an explicit head instead dropped real edges.
+    """
+
+    bold = _BOLD_HEAD_RE.match(text)
+    if bold:
+        return _ZU_PREFIX_RE.sub("", bold.group(1))
+    leading_link = _LINK_RE.match(text)
+    if leading_link:
+        return leading_link.group(0)
+    sep = _first_sep(text)
+    head = _ZU_PREFIX_RE.sub("", text if sep is None else text[:sep])
+    if len(_LINK_RE.sub(r"\1", head).split()) > _HEAD_WORD_LIMIT:
+        return ""
+    return head
+
+
+def _sanitize_note(text: str, limit: int = _NOTE_LIMIT) -> str:
+    """Collapse to one line and cap the length.
+
+    okf.py::split_document (and its copies in validate.py and
+    test_bundle_invariants.py) splits frontmatter on the literal ``"---\\n"``
+    -- a multi-line YAML value whose continuation line happened to start with
+    ``---`` would truncate that concept's frontmatter. This is the only
+    free-text field the pipeline writes into frontmatter, so it is the only
+    one that needs this.
+    """
+
+    collapsed = " ".join(text.split())
+    return collapsed if len(collapsed) <= limit else collapsed[: limit - 1].rstrip() + "…"
+
+
+def relationship_edges(
+    bodies: dict[str, str], index: ConceptIndex, live: set[str]
+) -> dict[str, list[dict]]:
+    """Derive untyped, reciprocal ``relationships[]`` edges from concept bodies.
+
+    Per body: find every relationships heading (a page can carry more than
+    one, e.g. both "## Beziehungen" and "## Beziehung zur Heldengruppe"),
+    slice each to its own next heading (or end of body), and read each
+    bullet's head (see :func:`_bullet_head`) -- resolved as a markdown link
+    target first, else as a plain name, both via ``index.resolve`` (the same
+    resolution :func:`normalize_body` uses; these bodies are
+    pre-normalization, which is fine for *resolving* -- but the note text
+    that gets stored is still run through :func:`apply_spellings` and has its
+    links reduced to label text, or a mishearing fixed elsewhere or a raw
+    link would survive uncorrected in frontmatter). A bullet whose head
+    resolves to no concept, to the concept's own page, or to a concept
+    outside ``live`` (a session id, most likely -- ``build_concept_index``
+    seeds those too, and nothing emits a ``relationships`` kwarg for a
+    session page) is dropped.
+
+    A second pass then writes the mirror edge onto every target, so both
+    endpoints of a relationship agree it exists (with no ``note`` -- the
+    source page's prose is about the source concept, not the mirrored one),
+    and each concept's edge list is sorted by target -- otherwise dict/set
+    iteration order would leak into the written file and defeat
+    ``write_if_changed``'s no-op detection.
+    """
+
+    edges: dict[str, list[dict]] = defaultdict(list)
+    for concept_id, body in bodies.items():
+        # finditer, not search: a body with more than one matching heading
+        # used to contribute only the first section, the rest dropped silently.
+        for heading in _RELATIONSHIP_HEADING_RE.finditer(body):
+            next_heading = _NEXT_HEADING_RE.search(body, heading.end())
+            section = body[heading.end() : next_heading.start() if next_heading else len(body)]
+            for bullet in _BULLET_RE.finditer(section):
+                text = bullet.group(1).strip()
+                if not text:
+                    continue
+                head = _bullet_head(text)
+                if not head:
+                    continue
+                link = _LINK_RE.search(head)
+                target = link.group(2) if link else head
+                cid = index.resolve(target)
+                if cid is None or cid == concept_id or cid not in live:
+                    continue
+                # One edge per target. A page may name the same concept in two
+                # bullets ("**Zur Gilde:**" and "**Gildenmeister:**"); the first
+                # bullet is the one whose prose is about the relationship itself.
+                if any(e["target"] == cid for e in edges[concept_id]):
+                    continue
+                # Spelling fixes land in the body via normalize_body, which
+                # runs after this -- reapply here or a mishearing corrected in
+                # prose survives uncorrected in the note. Links are reduced to
+                # their label: a raw markdown link in the note landed in
+                # frontmatter, where validate.py's link regex (whole file, not
+                # just the body) counted it as broken/dangling.
+                note = _LINK_RE.sub(r"\1", apply_spellings(text, index.spellings))
+                edges[concept_id].append({"target": cid, "note": _sanitize_note(note)})
+
+    # Second pass: mirror onto the target, from a stable snapshot of the
+    # primary edges only -- mutating `edges` while walking it here would let
+    # a mirrored edge get re-mirrored for any pair that references itself
+    # from both sides.
+    #
+    # A mirror is skipped when the target already asserted the edge from its
+    # own side, which 40 of 162 concepts do -- the party members all name each
+    # other. Without this the pair yields *two* entries for the same target,
+    # differing only in which page's prose the note came from. A concept's own
+    # prose is the better note for its own page, so the primary edge wins and
+    # the mirror is what fills in the side that stayed silent.
+    asserted = {(cid, e["target"]) for cid, lst in edges.items() for e in lst}
+    mirrored: dict[str, list[dict]] = defaultdict(list)
+    for source_cid, source_edges in edges.items():
+        for edge in source_edges:
+            if (edge["target"], source_cid) in asserted:
+                continue
+            # No note: the source page's prose is about the source concept,
+            # not this one -- Greta's "- [Hans](...): Kennt ihn gut." mirrored
+            # onto Hans would read as if Hans knows himself well.
+            mirrored[edge["target"]].append({"target": source_cid})
+    for target_cid, extra in mirrored.items():
+        edges[target_cid].extend(extra)
+
+    return {cid: sorted(lst, key=lambda e: e["target"]) for cid, lst in edges.items()}
