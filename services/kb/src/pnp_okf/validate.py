@@ -45,6 +45,27 @@ def _split_frontmatter(text: str) -> dict[str, object]:
     return data if isinstance(data, dict) else {}
 
 
+def _split_frontmatter_raw(text: str) -> tuple[str, str]:
+    """Textual ``(frontmatter_block, body)`` split -- ``frontmatter + body ==
+    text`` always, byte-for-byte. Same ``"---\\n"`` convention as
+    ``okf.split_document``, but the frontmatter half is returned raw instead
+    of parsed+re-rendered: ``fix_bundle`` must normalize prose only and never
+    reformat/reorder a concept's YAML. No frontmatter (or malformed) comes
+    back as ``("", text)``, so that file is still normalized whole.
+    """
+
+    if not text.startswith("---"):
+        return "", text
+    parts = text.split("---\n", 2)
+    if len(parts) < 3 or parts[0]:
+        # A non-empty parts[0] means the opening delimiter isn't "---\n" (a
+        # CRLF file, say) and the split landed somewhere in the body --
+        # rebuilding from parts[1:] would silently drop parts[0]. fix_bundle
+        # *writes* what this returns, so fall back to "no frontmatter".
+        return "", text
+    return f"---\n{parts[1]}---\n", parts[2]
+
+
 @dataclass
 class ValidationReport:
     """Aggregated data-quality findings for a bundle."""
@@ -362,13 +383,14 @@ def fix_bundle(bundle_dir: Path, registry_path: Path | None = None) -> tuple[int
     links_dropped = 0
     for path, cid in zip(files, concept_ids, strict=True):
         original = path.read_text(encoding="utf-8")
-        # NOT a fix, just a note: this passes the whole file (frontmatter
-        # included) to normalize_body, and _LINK_TARGET_RE only protects a
-        # `](...)` link target, not a bare URL -- so a `spelling:` rule could
-        # in principle rewrite a `resource:` value. Pre-existing (a session's
-        # `resource:` was already exposed); `sources[].resource` (OKF v0.2)
-        # multiplies that surface ~1800x (one per mention, across the bundle).
-        new_text, unresolved = normalize_body(original, index, self_id=cid)
+        # Frontmatter is excluded from normalize_body: apply_spellings
+        # (links.py) only protects a `](...)` link target, not a bare URL, so
+        # a `spelling:` rule could otherwise rewrite a `resource:` value --
+        # e.g. matching a `\w`-bounded run inside a YouTube video id -- and
+        # silently break the citation it sits in.
+        frontmatter, body = _split_frontmatter_raw(original)
+        new_body, unresolved = normalize_body(body, index, self_id=cid)
+        new_text = frontmatter + new_body
         if new_text != original:
             links_dropped += len(unresolved)
             path.write_text(new_text, encoding="utf-8")

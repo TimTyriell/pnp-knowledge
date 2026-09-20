@@ -112,6 +112,27 @@ def _now_iso() -> str:
     return datetime.now(UTC).replace(microsecond=0).isoformat()
 
 
+def _generated_block(existing_frontmatter: dict, existing_text: str | None, frontmatter: dict, body: str) -> dict:
+    """``generated`` frontmatter (SPEC.md §5.2): ``at`` is the content's last
+    *meaningful* change, not the moment this run happened to touch the file.
+
+    Reusing the previous ``at`` when the rendered document is otherwise
+    unchanged keeps ``write_if_changed``'s no-op signal (okf.py) meaningful --
+    stamping ``_now_iso()`` unconditionally would rewrite every concept on
+    every run. Bumping ``__version__`` still changes ``generated.by`` (and
+    therefore the render), so a version bump advances ``at`` too, same as any
+    other content change.
+    """
+
+    prev_at = (existing_frontmatter.get("generated") or {}).get("at")
+    at = prev_at or _now_iso()
+    if prev_at:
+        candidate = {**frontmatter, "generated": {"by": f"pnp_okf/{__version__}", "at": at}}
+        if render_document(candidate, body) != existing_text:
+            at = _now_iso()
+    return {"by": f"pnp_okf/{__version__}", "at": at}
+
+
 def _short_desc(text: str, limit: int = 140) -> str:
     one_line = " ".join(text.split())
     return one_line if len(one_line) <= limit else one_line[: limit - 1].rstrip() + "…"
@@ -261,6 +282,16 @@ def emit_sessions(
                 "team": episode.get("team"),
                 "youtube_title": transcript.title or None,
             }
+        # v0.2 provenance (finding 4): the session's own VOD as its one source,
+        # same id as the "# Belege" line above so the two agree.
+        source_entry = {"id": episode.get("id") or "1", "resource": transcript.url}
+        if date:
+            source_entry["last_modified"] = f"{date}T00:00:00Z"
+        frontmatter["sources"] = [source_entry]
+        concept_path = bundle_dir / f"{concept_id}.md"
+        existing_text = concept_path.read_text(encoding="utf-8") if concept_path.exists() else None
+        existing_frontmatter = split_document(existing_text)[0] if existing_text else {}
+        frontmatter["generated"] = _generated_block(existing_frontmatter, existing_text, frontmatter, body)
         write_concept(bundle_dir, concept_id, frontmatter, body)
         blurb = apply_spellings(_short_desc(extraction.recap, 100), index.spellings if index else {})
         entries.append((title, f"{date}.md", blurb))
@@ -299,6 +330,11 @@ def _refresh_orphan_sessions(
         episode = episodes.for_url(str(frontmatter.get("resource") or ""))
         if not episode or not episode.get("id"):
             continue
+        # Snapshot before the `|=` below mutates frontmatter in place -- an
+        # orphan session predating v0.2 has no "generated"/"sources" yet and
+        # would otherwise stay stuck at v0.1 forever (its transcript is gone,
+        # so the main loop above never touches it again).
+        existing_frontmatter = dict(frontmatter)
         name = (episode.get("title") or "").strip()
         title = f"Folge {episode['id']} – {name}" if name else f"Folge {episode['id']}"
         frontmatter |= {
@@ -310,6 +346,11 @@ def _refresh_orphan_sessions(
             "season_label": episodes.season_label(episode.get("season")),
             "team": episode.get("team"),
         }
+        source_entry = {"id": episode["id"], "resource": frontmatter.get("resource")}
+        if date:
+            source_entry["last_modified"] = f"{date}T00:00:00Z"
+        frontmatter["sources"] = [source_entry]
+        frontmatter["generated"] = _generated_block(existing_frontmatter, text, frontmatter, body)
         write_concept(bundle_dir, f"sessions/{date}", frontmatter, body)
         blurb = apply_spellings(str(frontmatter.get("description") or ""), index.spellings if index else {})
         entries.append((title, f"{date}.md", blurb[:100]))
@@ -375,10 +416,15 @@ def _source_entries(entity: CanonicalEntity, labels: list[str] | None) -> list[d
     """
 
     ids = labels or [str(i) for i in range(1, len(entity.mentions) + 1)]
-    return [
-        {"id": sid, "resource": m.url, "last_modified": f"{m.date}T00:00:00Z"}
-        for sid, m in zip(ids, entity.mentions, strict=True)
-    ]
+    entries = []
+    for sid, m in zip(ids, entity.mentions, strict=True):
+        entry = {"id": sid, "resource": m.url}
+        if m.date:
+            # MentionRef.date can be empty (transcript.date fallback, emit.py:44)
+            # -- omit rather than invent a date via the invalid "T00:00:00Z".
+            entry["last_modified"] = f"{m.date}T00:00:00Z"
+        entries.append(entry)
+    return entries
 
 
 def emit_entity(
@@ -405,10 +451,10 @@ def emit_entity(
     each defaulting independently.
 
     ``relationships`` is ``links.relationship_edges``'s per-concept edge
-    list, or ``None``/missing for a concept with no edges -- written into the
-    frontmatter only when truthy (see the guard below): ``_order_frontmatter``
-    drops ``None``/``""`` but keeps ``[]``, so an untruthy ``[]`` would render
-    as an empty ``relationships: []`` on every concept with no edges.
+    list. ``None`` means this run did not recompute edges (a partial run,
+    cli.py) -- the existing file's ``relationships`` block, if any, is
+    preserved rather than wiped. An explicit list, including ``[]``, is
+    authoritative: it replaces the block, and ``[]`` clears it.
     """
 
     unresolved: list[str] = []
@@ -430,6 +476,11 @@ def emit_entity(
     else:
         description = _short_desc(first.note) if first else entity.canonical_name
     ts = f"{last.date}T00:00:00Z" if last and last.date else _now_iso()
+    # Read once, reused below for both the `generated.at` change check
+    # (finding 2) and the `relationships=None` passthrough (finding 3).
+    path = bundle_dir / f"{entity.concept_id}.md"
+    existing_text = path.read_text(encoding="utf-8") if path.exists() else None
+    existing_frontmatter = split_document(existing_text)[0] if existing_text else {}
     frontmatter = {
         "type": entity.type.value,
         "id": entity.entity_id,
@@ -438,9 +489,6 @@ def emit_entity(
         "tags": [TYPE_DIR[entity.type]],
         **({"subtype": entity.subtype} if entity.subtype else {}),
         "timestamp": ts,
-        # NOTE: bumping __version__ rewrites `generated.by` -- and therefore
-        # the file content -- of every concept in the bundle (~1159 files).
-        "generated": {"by": f"pnp_okf/{__version__}", "at": ts},
     }
     if entity.aliases:
         frontmatter["aliases"] = entity.aliases
@@ -457,15 +505,26 @@ def emit_entity(
         # axis is a review state, not a lifecycle state, so it gets its own key
         # and leaves "status" free to mean what the spec says it means.
         frontmatter["review_status"] = "disputed"
-    if relationships:
+    if relationships is None:
+        # Partial run (cli.py) -- edges weren't recomputed, so keep whatever
+        # the file on disk already has instead of silently wiping it.
+        existing_relationships = existing_frontmatter.get("relationships")
+        if existing_relationships:
+            frontmatter["relationships"] = existing_relationships
+    elif relationships:
         # Guarded, not `relationships or None`: _order_frontmatter (okf.py)
         # drops None/"" but keeps [], so an untruthy [] here would render as
-        # an empty `relationships: []` on every concept with no edges.
+        # an empty `relationships: []` on every concept with no edges. An
+        # explicit [] is authoritative (finding 3) and clears the key by
+        # simply not setting it here.
         frontmatter["relationships"] = relationships
     if entity.mentions:
         # By far the longest block -- last so it doesn't push shorter,
         # more-often-scanned keys further down the rendered file.
         frontmatter["sources"] = _source_entries(entity, labels)
+    # generated.at is "last meaningful change" (SPEC §5.2), not the in-world
+    # mention date -- see _generated_block for why it reuses the prior value.
+    frontmatter["generated"] = _generated_block(existing_frontmatter, existing_text, frontmatter, body)
     write_concept(bundle_dir, entity.concept_id, frontmatter, body)
     return unresolved, conflicts
 

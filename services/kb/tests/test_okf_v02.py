@@ -10,8 +10,14 @@ import sys
 from pathlib import Path
 
 import pytest
-from pnp_okf.emit import emit_entity
-from pnp_okf.models import CanonicalEntity, EntityType, MentionRef
+from pnp_okf.emit import emit_entity, emit_sessions
+from pnp_okf.models import (
+    CanonicalEntity,
+    EntityType,
+    MentionRef,
+    SessionExtraction,
+    SessionTranscript,
+)
 from pnp_okf.okf import split_document
 
 # knowledge-catalog is a sibling repo (vendored OKF spec + reference tooling),
@@ -22,34 +28,54 @@ _REFERENCE_DOCUMENT = (
     / "knowledge-catalog" / "okf" / "src" / "reference_agent" / "bundle" / "document.py"
 )
 
+_DEFAULT_BODY = "# Überblick\n\nText.\n\n# Belege\n\n[1] x"
 
-def _entity() -> CanonicalEntity:
+
+def _entity(*, date: str = "2026-01-01") -> CanonicalEntity:
     return CanonicalEntity(
         concept_id="npcs/testo",
         type=EntityType.NPC,
         canonical_name="Testo",
         mentions=[
             MentionRef(
-                session_id="s1", date="2026-01-01", url="http://x",
+                session_id="s1", date=date, url="http://x",
                 citation_ts="00:01:00", note="Ein Testling.",
             )
         ],
     )
 
 
-def _frontmatter(tmp_path: Path, **emit_kwargs) -> dict:
-    emit_entity(
-        tmp_path, _entity(), "# Überblick\n\nText.\n\n# Belege\n\n[1] x",
-        **emit_kwargs,
-    )
+def _frontmatter(tmp_path: Path, body: str = _DEFAULT_BODY, **emit_kwargs) -> dict:
+    emit_entity(tmp_path, _entity(), body, **emit_kwargs)
     doc = (tmp_path / "npcs" / "testo.md").read_text(encoding="utf-8")
     frontmatter, _body = split_document(doc)
     return frontmatter
 
 
-def test_generated_at_matches_timestamp(tmp_path: Path):
+def test_generated_at_no_longer_duplicates_timestamp(tmp_path: Path):
+    # `timestamp` is the entity's last in-world mention date; `generated.at`
+    # is when the pipeline produced the content (SPEC §5.2) -- on a first
+    # emit (no prior file to reuse an `at` from) that's "now", which for this
+    # fixture's fixed 2026-01-01 mention date is never the same value.
     fm = _frontmatter(tmp_path)
-    assert fm["generated"]["at"] == fm["timestamp"]
+    assert fm["generated"]["at"] != fm["timestamp"]
+
+
+def test_generated_at_stable_across_unchanged_reemit(tmp_path: Path):
+    fm1 = _frontmatter(tmp_path)
+    fm2 = _frontmatter(tmp_path)
+    assert fm2["generated"]["at"] == fm1["generated"]["at"]
+
+
+def test_generated_at_advances_when_body_changes(tmp_path: Path, monkeypatch):
+    # Both emits can land in the same wall-clock second, which would make a
+    # bare "second call's _now_iso() != first call's" comparison flaky -- pin
+    # the second call's clock to something unmistakably different instead.
+    fm1 = _frontmatter(tmp_path)
+    monkeypatch.setattr("pnp_okf.emit._now_iso", lambda: "2099-01-01T00:00:00+00:00")
+    fm2 = _frontmatter(tmp_path, body="# Überblick\n\nAnderer Text.\n\n# Belege\n\n[1] x")
+    assert fm2["generated"]["at"] == "2099-01-01T00:00:00+00:00"
+    assert fm2["generated"]["at"] != fm1["generated"]["at"]
 
 
 def test_generated_by_matches_actor_convention(tmp_path: Path):
@@ -90,6 +116,27 @@ def test_trust_tier_matches_reference_implementation(tmp_path: Path):
     assert module.trust_tier(_frontmatter(tmp_path, verified=True)) == "human-reviewed"
 
 
+# --- relationships[] passthrough contract (finding 3) ------------------------
+#
+# cli.py passes `None` for a partial run (edges weren't recomputed) and an
+# explicit list -- including `[]` -- otherwise. `None` must not wipe an
+# existing block; an explicit list, empty or not, is authoritative.
+
+
+def test_relationships_none_preserves_existing_block(tmp_path: Path):
+    edges = [{"target": "npcs/other", "note": "Kennt sich."}]
+    _frontmatter(tmp_path, relationships=edges)
+    fm = _frontmatter(tmp_path, relationships=None)
+    assert fm["relationships"] == edges
+
+
+def test_relationships_empty_list_clears_existing_block(tmp_path: Path):
+    edges = [{"target": "npcs/other", "note": "Kennt sich."}]
+    _frontmatter(tmp_path, relationships=edges)
+    fm = _frontmatter(tmp_path, relationships=[])
+    assert "relationships" not in fm
+
+
 # --- sources[] frontmatter (OKF v0.2 SPEC.md §5.1) --------------------------
 #
 # Deliberately lean (id/resource/last_modified only) and deliberately not the
@@ -128,6 +175,16 @@ def test_sources_last_modified_and_resource_from_mention(tmp_path: Path):
     assert source["last_modified"] == "2026-01-01T00:00:00Z"
 
 
+def test_sources_last_modified_omitted_when_mention_date_empty(tmp_path: Path):
+    # MentionRef.date can be empty; "T00:00:00Z" is not a valid datetime on
+    # its own (SPEC §5 requires ISO 8601 with an explicit UTC offset), so an
+    # empty date must drop the key rather than invent one.
+    emit_entity(tmp_path, _entity(date=""), _DEFAULT_BODY, labels=["P-08"])
+    doc = (tmp_path / "npcs" / "testo.md").read_text(encoding="utf-8")
+    frontmatter, _body = split_document(doc)
+    assert "last_modified" not in frontmatter["sources"][0]
+
+
 def test_belege_backfill_uses_labels_so_body_and_sources_agree(tmp_path: Path):
     # Step 1 regression: cli.py relabels the body's inline numeric citation
     # markers to episode ids ("[3]" -> "[P-08]") *before* calling emit_entity.
@@ -156,3 +213,25 @@ def test_belege_citation_line_still_matches_ratchet_and_session_date(tmp_path: P
     doc = (tmp_path / "npcs" / "testo.md").read_text(encoding="utf-8")
     assert ratchet.search(doc)
     assert count_sessions.search(doc).group(1) == "2026-01-01"
+
+
+# --- session concepts get the same v0.2 provenance (finding 4) --------------
+
+
+def test_session_concept_carries_generated_and_sources(tmp_path: Path):
+    transcript = SessionTranscript(
+        session_id="2026-02-01_x", date="2026-02-01",
+        url="https://youtu.be/x", title="Session",
+    )
+    tmap = {transcript.session_id: transcript}
+    extractions = {transcript.session_id: SessionExtraction(recap="Es geschah etwas.")}
+    emit_sessions(tmp_path, tmap, extractions)
+    doc = (tmp_path / "sessions" / "2026-02-01.md").read_text(encoding="utf-8")
+    frontmatter, _body = split_document(doc)
+    assert re.match(r"^\S+/\S+$", frontmatter["generated"]["by"])
+    assert frontmatter["sources"] == [
+        {"id": "1", "resource": "https://youtu.be/x", "last_modified": "2026-02-01T00:00:00Z"}
+    ]
+    # timestamp/resource are unchanged v0.1 keys, kept alongside generated/sources.
+    assert frontmatter["timestamp"] == "2026-02-01T00:00:00Z"
+    assert frontmatter["resource"] == "https://youtu.be/x"

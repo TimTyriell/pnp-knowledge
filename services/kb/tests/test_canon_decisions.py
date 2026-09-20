@@ -449,3 +449,23 @@ def test_ruling_targets_routes_only_entscheidung_sections():
         ),
     ]
     assert ruling_targets(entities, sections) == {"npcs/harald_freibeuter"}
+
+
+def test_ruling_targets_ignores_fuzzy_slug_match_without_directive():
+    """A no-directive ENTSCHEIDUNG: section must ground nobody, even when its
+    slug fuzzily contains an entity name (context._matches accepts `name in
+    slug` for 4+ char names). That fallback is fine for prompt grounding
+    (sources_for/secondary_sources_for) -- a false positive there costs a few
+    tokens -- but ruling_targets feeds `verified: {by: human:gm}`, OKF's
+    highest trust tier, so it must require the explicit `entity=` directive
+    and nothing looser."""
+
+    entities = [_fixture_entity("npcs/willa", "Willa")]
+    sections = [
+        SourceSection(
+            "test.md", "Willauch", "ENTSCHEIDUNG: Das ist eine Festung, keine Person.",
+            # No targets= -- the slug "willauch" contains "willa" and would
+            # match under the old _primary_hits fallback.
+        ),
+    ]
+    assert ruling_targets(entities, sections) == set()

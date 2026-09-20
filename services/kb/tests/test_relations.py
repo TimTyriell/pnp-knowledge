@@ -38,8 +38,10 @@ def _index() -> ConceptIndex:
 def test_markdown_link_head_resolves():
     body = "## Beziehungen und Verbindungen\n\n- [Hans](/npcs/hans.md): Kennt ihn gut.\n"
     edges = relationship_edges({"npcs/greta": body}, _index(), LIVE)
+    # Note text has its link reduced to the label -- a raw markdown link in
+    # frontmatter would count as broken/dangling to validate.py's link regex.
     assert edges["npcs/greta"] == [
-        {"target": "npcs/hans", "note": "[Hans](/npcs/hans.md): Kennt ihn gut."}
+        {"target": "npcs/hans", "note": "Hans: Kennt ihn gut."}
     ]
 
 
@@ -64,6 +66,20 @@ def test_all_four_heading_variants_are_matched(heading: str):
     assert edges["npcs/greta"][0]["target"] == "npcs/hans"
 
 
+def test_second_relationship_heading_section_is_not_dropped():
+    # A page carrying both "## Beziehungen und Verbindungen" and "##
+    # Beziehung zur Heldengruppe" used to contribute only the first section's
+    # bullets -- the second heading's section was silently dropped.
+    body = (
+        "## Beziehungen und Verbindungen\n\n"
+        "- [Hans](/npcs/hans.md): Text.\n\n"
+        "## Beziehung zur Heldengruppe\n\n"
+        "- [Gilde](/factions/gilde.md): Text.\n"
+    )
+    edges = relationship_edges({"npcs/greta": body}, _index(), LIVE)
+    assert {e["target"] for e in edges["npcs/greta"]} == {"npcs/hans", "factions/gilde"}
+
+
 def test_zu_prefix_is_stripped_before_resolving():
     body = "## Beziehungen und Verbindungen\n\n- **Zur Gilde:** Handelt mit ihr.\n"
     edges = relationship_edges({"npcs/greta": body}, _index(), LIVE)
@@ -76,6 +92,19 @@ def test_self_edge_is_dropped():
     assert edges == {}
 
 
+def test_long_headless_bullet_is_skipped():
+    # No bold span and no short separator before the link -- the old fallback
+    # handed the whole sentence on as "the head", so a link search over it
+    # matched Hans regardless of what the sentence was actually about.
+    body = (
+        "## Beziehungen und Verbindungen\n\n"
+        "- Nach dem großen Streit auf dem Marktplatz erwähnte jemand "
+        "beiläufig [Hans](/npcs/hans.md) im Vorbeigehen.\n"
+    )
+    edges = relationship_edges({"npcs/greta": body}, _index(), LIVE)
+    assert edges == {}
+
+
 def test_session_target_is_dropped():
     body = "## Beziehungen und Verbindungen\n\n- [Session](/sessions/2025-04-09.md): Erwähnt.\n"
     edges = relationship_edges({"npcs/hans": body}, _index(), LIVE)
@@ -83,11 +112,12 @@ def test_session_target_is_dropped():
 
 
 def test_mirror_edge_is_produced_on_target():
+    # A mirrored edge carries no note: Greta's page says "[Hans](...): Text.",
+    # which is prose about Hans, not about Greta -- copying it onto Hans's own
+    # page would read as if Hans said that about himself.
     body = "## Beziehungen und Verbindungen\n\n- [Hans](/npcs/hans.md): Text.\n"
     edges = relationship_edges({"npcs/greta": body}, _index(), LIVE)
-    assert edges["npcs/hans"] == [
-        {"target": "npcs/greta", "note": "[Hans](/npcs/hans.md): Text."}
-    ]
+    assert edges["npcs/hans"] == [{"target": "npcs/greta"}]
 
 
 def test_mutual_assertion_yields_one_edge_per_side_not_two():
@@ -101,10 +131,10 @@ def test_mutual_assertion_yields_one_edge_per_side_not_two():
     hans = "## Beziehungen und Verbindungen\n\n- [Greta](/npcs/greta.md): Hans' Sicht.\n"
     edges = relationship_edges({"npcs/greta": greta, "npcs/hans": hans}, _index(), LIVE)
     assert edges["npcs/greta"] == [
-        {"target": "npcs/hans", "note": "[Hans](/npcs/hans.md): Gretas Sicht."}
+        {"target": "npcs/hans", "note": "Hans: Gretas Sicht."}
     ]
     assert edges["npcs/hans"] == [
-        {"target": "npcs/greta", "note": "[Greta](/npcs/greta.md): Hans' Sicht."}
+        {"target": "npcs/greta", "note": "Greta: Hans' Sicht."}
     ]
 
 
@@ -128,6 +158,20 @@ def test_edges_are_sorted_by_target():
     edges = relationship_edges({"characters/lindo_laut": body}, _index(), LIVE)
     targets = [e["target"] for e in edges["characters/lindo_laut"]]
     assert targets == ["factions/gilde", "npcs/hans"]  # not insertion order
+
+
+def test_note_strips_a_second_link_to_its_label():
+    # Only the head link decides the target; any other link inside the same
+    # bullet's prose still has to lose its markdown syntax before it lands in
+    # frontmatter, or it counts as a broken/dangling link to validate.py.
+    body = (
+        "## Beziehungen und Verbindungen\n\n"
+        "- [Hans](/npcs/hans.md): Kennt auch [Greta](/npcs/greta.md) gut.\n"
+    )
+    edges = relationship_edges({"factions/gilde": body}, _index(), LIVE)
+    assert edges["factions/gilde"] == [
+        {"target": "npcs/hans", "note": "Hans: Kennt auch Greta gut."}
+    ]
 
 
 def test_note_is_single_line_and_capped():

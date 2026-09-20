@@ -453,7 +453,11 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     }
     unmatched_targets = ruling_directive_targets - verified_ids
     log.info("[cli] %d concept(s) carry a verified ENTSCHEIDUNG: ruling", len(verified_ids))
-    if unmatched_targets:
+    # verified_ids only covers this run's (possibly partial) entities, while
+    # ruling_directive_targets spans every ENTSCHEIDUNG: in source_sections --
+    # so a --limit/--session run "unmatches" most of the corpus by
+    # construction, not because anything is actually missing.
+    if unmatched_targets and not partial_run:
         log.warning(
             "[cli] %d ENTSCHEIDUNG: directive target(s) matched no live entity "
             "(pre-existing identity debt, not introduced by this run): %s",
@@ -461,29 +465,40 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
             ", ".join(sorted(unmatched_targets)),
         )
 
+    # Citation relabeling ("[3]" -> "[S1-01-A]") has to happen before
+    # relationship_edges reads `bodies` below -- otherwise a note copied from
+    # a bullet whose body gets relabeled afterwards keeps the stale numeric
+    # marker forever (links.py's "pre-normalization is fine" doesn't cover
+    # this: relabeling isn't part of normalize_body).
+    unlabelled = 0
+    labels_by_id: dict[str, list[str]] = {}
+    for entity in entities:
+        # "[3]" -> "[S1-01-A]". The model numbers its evidence list; which
+        # episode each number stands for is known here, not there.
+        labels = citation_labels([m.url for m in entity.mentions], episodes)
+        labels_by_id[entity.concept_id] = labels
+        if labels:
+            bodies[entity.concept_id] = relabel_citations(bodies[entity.concept_id], labels)
+        elif entity.mentions:
+            unlabelled += 1
+
     # A partial run sees only part of the corpus, so the edge map would be
-    # missing every relationship whose other endpoint wasn't loaded -- and
-    # emitting it would strip real edges from the files this run touches.
+    # missing every relationship whose other endpoint wasn't loaded. Below,
+    # a partial run passes `None` (not `{}`) for `relationships` --
+    # emit_entity treats `None` as "leave relationships[] on disk alone" and
+    # only an explicit list (always the case on a full run) as authoritative,
+    # so a partial run can no longer erase real edges by omission.
     edges = (
         {} if partial_run
         else relationship_edges(bodies, index, {e.concept_id for e in entities})
     )
 
-    unlabelled = 0
     for entity in entities:
-        body = bodies[entity.concept_id]
-        # "[3]" -> "[S1-01-A]". The model numbers its evidence list; which
-        # episode each number stands for is known here, not there.
-        labels = citation_labels([m.url for m in entity.mentions], episodes)
-        if labels:
-            body = relabel_citations(body, labels)
-        elif entity.mentions:
-            unlabelled += 1
         unresolved, conflicts = emit_entity(
-            paths.bundle_dir, entity, body, index,
-            labels=labels,
+            paths.bundle_dir, entity, bodies[entity.concept_id], index,
+            labels=labels_by_id[entity.concept_id],
             verified=entity.concept_id in verified_ids,
-            relationships=edges.get(entity.concept_id),
+            relationships=(None if partial_run else edges.get(entity.concept_id, [])),
         )
         unresolved_total += len(unresolved)
         if conflicts:

@@ -264,10 +264,19 @@ def ruling_targets(
     ``SourceSection.is_ruling()``: that also matches ``DARSTELLUNG:`` via
     RULING_MARKERS, and a DARSTELLUNG is a *presentation* instruction, not a
     GM decision -- it must never confer a trust tier.
+
+    Also deliberately explicit ``s.targets`` only -- NOT ``_primary_hits``,
+    whose slug fallback accepts ``name in slug or slug in name`` for any
+    4+-char name. That heuristic exists for prompt grounding, where a false
+    positive costs a few extra tokens; here a false positive mints
+    ``verified: {by: human:gm}`` on a concept no GM ruling ever named. A
+    section with no ``<!-- okf: entity=... -->`` directive must ground
+    nobody, however well its heading happens to fuzzy-match a name.
     """
 
-    rulings = [s for s in sections if s.text.lstrip().startswith("ENTSCHEIDUNG:")]
-    return {e.concept_id for e in entities if _primary_hits(e, rulings)}
+    live_ids = {e.concept_id for e in entities}
+    rulings = (s for s in sections if s.text.lstrip().startswith("ENTSCHEIDUNG:"))
+    return {target for s in rulings for target in s.targets if target in live_ids}
 
 
 def sources_for(entity: CanonicalEntity, sections: list[SourceSection]) -> str:

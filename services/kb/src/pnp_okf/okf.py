@@ -16,7 +16,11 @@ import yaml
 _SLUG_RE = re.compile(r"[^a-z0-9]+")
 
 # Frontmatter key order preferred by the OKF spec (type is required first).
-_FRONTMATTER_ORDER = ["type", "title", "description", "resource", "tags", "timestamp"]
+# "generated" sits next to the "timestamp" it supersedes (SPEC §13.1) --
+# emit.py computes it last (it has to see every other key to tell a real
+# content change from a no-op), which would otherwise bury it under the
+# long "sources" block.
+_FRONTMATTER_ORDER = ["type", "title", "description", "resource", "tags", "timestamp", "generated"]
 
 
 def slugify(value: str) -> str:
