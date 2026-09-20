@@ -15,12 +15,25 @@ from difflib import SequenceMatcher
 from pathlib import Path
 
 from pnp_okf.links import _LINK_RE, ConceptIndex, normalize_body
+from pnp_okf.models import DIR_TO_TYPE, SUBTYPES, EntityType
 from pnp_okf.okf import split_document, split_raw
 from pnp_okf.resolve import FUZZY_RATIO, load_spellings
 
 log = logging.getLogger(__name__)
 
 _RESERVED = {"index.md", "log.md"}
+
+# Frontmatter keys every entity concept's emit_entity() writes unconditionally
+# (emit.py:522-530). Identical across all eight types today -- kept per-type
+# (like ID_PREFIX/SUBTYPES in models.py) so a future type-specific
+# requirement doesn't need a new table -- but this table has no consumer
+# outside this QA pass, unlike those two, so it lives here rather than in
+# models.py.
+_CONCEPT_FIELDS: tuple[str, ...] = ("type", "id", "title", "description", "tags", "timestamp")
+REQUIRED_FIELDS: dict[EntityType, tuple[str, ...]] = {t: _CONCEPT_FIELDS for t in EntityType}
+
+# Sessions (emit.py:299-325) carry no `id` -- same fields minus that one.
+_SESSION_FIELDS: tuple[str, ...] = tuple(f for f in _CONCEPT_FIELDS if f != "id")
 
 
 def _iter_concept_files(bundle_dir: Path) -> list[Path]:
@@ -47,6 +60,9 @@ class ValidationReport:
     suspected_title_dups: list[tuple[str, str]] = field(default_factory=list)
     bad_relationship_targets: list[tuple[str, str]] = field(default_factory=list)
     asymmetric_relationships: list[tuple[str, str]] = field(default_factory=list)
+    missing_required_fields: dict[str, list[str]] = field(default_factory=dict)
+    type_dir_mismatches: list[tuple[str, str]] = field(default_factory=list)
+    invalid_subtypes: list[tuple[str, str]] = field(default_factory=list)
 
     @property
     def ok(self) -> bool:
@@ -61,6 +77,9 @@ class ValidationReport:
             or self.suspected_title_dups
             or self.bad_relationship_targets
             or self.asymmetric_relationships
+            or self.missing_required_fields
+            or self.type_dir_mismatches
+            or self.invalid_subtypes
         )
 
     @property
@@ -162,6 +181,24 @@ class ValidationReport:
             )
             for a, b in self.asymmetric_relationships:
                 lines.append(f"  {a} -> {b}")
+        if self.missing_required_fields:
+            lines.append(
+                f"\nMissing required field(s) ({len(self.missing_required_fields)}):"
+            )
+            for cid, fields_ in self.missing_required_fields.items():
+                lines.append(f"  {cid}: {', '.join(fields_)}")
+        if self.type_dir_mismatches:
+            lines.append(
+                f"\nType/directory/tags disagreement ({len(self.type_dir_mismatches)}):"
+            )
+            for cid, detail in self.type_dir_mismatches:
+                lines.append(f"  {cid}: {detail}")
+        if self.invalid_subtypes:
+            lines.append(
+                f"\nSubtype outside its type's vocabulary ({len(self.invalid_subtypes)}):"
+            )
+            for cid, subtype in self.invalid_subtypes:
+                lines.append(f"  {cid}: {subtype!r}")
         if self.ok:
             lines.append("\nOK — no data-quality issues found.")
         return "\n".join(lines)
@@ -223,6 +260,8 @@ def validate_bundle(bundle_dir: Path) -> ValidationReport:
             if not _href_exists(bundle_dir, path, match.group(2)):
                 report.dangling_links.append((cid, match.group(2)))
 
+        dirname = cid.split("/", 1)[0]
+        etype = DIR_TO_TYPE.get(dirname)
         ctype = str(fm.get("type") or "").strip()
         if not ctype:
             report.missing_type.append(cid)
@@ -235,11 +274,34 @@ def validate_bundle(bundle_dir: Path) -> ValidationReport:
         eid = str(fm.get("id") or "").strip()
         if eid:
             entity_ids[eid].append(cid)
-        if cid.split("/", 1)[0] in ("characters", "npcs"):
+        if dirname in ("characters", "npcs"):
             person_slugs.append(cid)
         rel = fm.get("relationships")
         if isinstance(rel, list):
             relationships[cid] = rel
+
+        # "Present" must mean non-empty, not merely a key in fm: emit.py's
+        # writer (okf._order_frontmatter) drops None/"" before a normal emit
+        # ever reaches disk, so a hand-edited file is the only way a required
+        # key survives with an empty value -- `f in fm` alone would miss it.
+        required = REQUIRED_FIELDS[etype] if etype else _SESSION_FIELDS
+        missing = [f for f in required if not fm.get(f)]
+        if missing:
+            report.missing_required_fields[cid] = missing
+
+        if etype is not None:
+            tags = fm.get("tags")
+            tag0 = tags[0] if isinstance(tags, list) and tags else None
+            if ctype != etype.value or tag0 != dirname:
+                report.type_dir_mismatches.append(
+                    (cid, f"type={ctype!r} dir={dirname!r} tags[0]={tag0!r}")
+                )
+
+        subtype = str(fm.get("subtype") or "").strip()
+        if subtype:
+            vocab = SUBTYPES.get(etype) if etype else None
+            if not vocab or subtype not in vocab:
+                report.invalid_subtypes.append((cid, subtype))
 
     report.duplicate_titles = {
         key.split("::", 1)[1]: sorted(ids)
