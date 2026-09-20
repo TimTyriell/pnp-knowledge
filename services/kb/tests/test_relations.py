@@ -20,6 +20,8 @@ IDS = [
     "npcs/hans",
     "npcs/greta",
     "factions/gilde",
+    "factions/sanddorn_gilde",
+    "npcs/freibeuter_harald",
     "characters/lindo_laut",
     "sessions/2025-04-09",
 ]
@@ -28,7 +30,14 @@ NAMES = {"Hans": "npcs/hans", "Greta": "npcs/greta", "Gilde": "factions/gilde"}
 # Sessions are seeded into the index (a real link to one must still resolve)
 # but excluded from `live` -- emit_sessions takes no `relationships` kwarg, so
 # a reciprocal edge onto a session page would be silently dropped.
-LIVE = {"npcs/hans", "npcs/greta", "factions/gilde", "characters/lindo_laut"}
+LIVE = {
+    "npcs/hans",
+    "npcs/greta",
+    "factions/gilde",
+    "factions/sanddorn_gilde",
+    "npcs/freibeuter_harald",
+    "characters/lindo_laut",
+}
 
 
 def _index() -> ConceptIndex:
@@ -103,6 +112,68 @@ def test_long_headless_bullet_is_skipped():
     )
     edges = relationship_edges({"npcs/greta": body}, _index(), LIVE)
     assert edges == {}
+
+
+def test_leading_link_is_a_head_however_long_the_bullet():
+    # The word cap exists for a bullet that names nobody in particular. A
+    # bullet that opens with a link names its target outright, so the cap
+    # must not apply -- it dropped 15 real edges when it did.
+    body = (
+        "## Beziehungen und Verbindungen\n\n"
+        "- [Hans](/npcs/hans.md) hält die Stellung in der Taverne am Markt.\n"
+    )
+    edges = relationship_edges({"npcs/greta": body}, _index(), LIVE)
+    assert edges["npcs/greta"][0]["target"] == "npcs/hans"
+
+
+def test_bold_head_is_a_head_however_long_the_bullet():
+    # Same for an explicit bold span: the prose marked the head itself, so
+    # its length is not evidence of anything.
+    body = (
+        "## Beziehungen und Verbindungen\n\n"
+        "- **[Hans](/npcs/hans.md), [Greta](/npcs/greta.md), Hauptmann Aaron, "
+        "der Wirt und sein Bruder**: Die Stammrunde.\n"
+    )
+    edges = relationship_edges({"factions/gilde": body}, _index(), LIVE)
+    assert edges["factions/gilde"][0]["target"] == "npcs/hans"
+
+
+def test_hyphenated_name_is_not_cut_at_the_hyphen():
+    # "Sanddorn-Gilde" is one name. Treating a bare "-" as a head separator
+    # truncated it to "Sanddorn", which resolves to nothing.
+    body = "## Beziehungen und Verbindungen\n\n- Sanddorn-Gilde: Joar ist ihr Anführer.\n"
+    edges = relationship_edges({"npcs/hans": body}, _index(), LIVE)
+    assert edges["npcs/hans"][0]["target"] == "factions/sanddorn_gilde"
+
+
+def test_hyphen_truncation_does_not_mint_a_wrong_target():
+    # The same truncation turned "Freibeuter-Kapitän Harald" into
+    # "Freibeuter", which the prefix table maps onto npcs/freibeuter_harald
+    # -- an edge asserted from prose that explicitly denies it.
+    body = (
+        "## Beziehungen und Verbindungen\n\n"
+        "- Freibeuter-Kapitän Harald: Nicht mit diesem Dämon identisch; "
+        "lediglich Namensgleichheit.\n"
+    )
+    edges = relationship_edges({"npcs/greta": body}, _index(), LIVE)
+    assert edges == {}
+
+
+def test_separator_before_a_link_still_ends_the_head():
+    # The separator search used to start past the first link's end, so a
+    # colon *before* the link was skipped and the head ran on past the cap.
+    body = (
+        "## Beziehungen und Verbindungen\n\n"
+        "- Gilde: Ihr Auftragnehmer; er kennt [Hans](/npcs/hans.md) gut.\n"
+    )
+    edges = relationship_edges({"npcs/greta": body}, _index(), LIVE)
+    assert edges["npcs/greta"][0]["target"] == "factions/gilde"
+
+
+def test_spaced_dash_still_separates_a_head():
+    body = "## Beziehungen und Verbindungen\n\n- Hans - kennt ihn gut.\n"
+    edges = relationship_edges({"npcs/greta": body}, _index(), LIVE)
+    assert edges["npcs/greta"][0]["target"] == "npcs/hans"
 
 
 def test_session_target_is_dropped():

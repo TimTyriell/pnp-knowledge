@@ -23,7 +23,7 @@ from pnp_okf.okf import (
     render_document,
     slugify,
     split_document,
-    write_concept,
+    write_concept_text,
     write_if_changed,
     write_index,
 )
@@ -109,34 +109,69 @@ _TYPE_LABEL_DE = {
 
 
 def _now_iso() -> str:
-    return datetime.now(UTC).replace(microsecond=0).isoformat()
+    # "Z", not "+00:00": every other timestamp the bundle carries (`timestamp`,
+    # `sources[].last_modified`) and every one the API emits uses the Z form,
+    # and a consumer comparing or regexing them should not have to handle two
+    # spellings of the same instant.
+    return datetime.now(UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
 
-def _generated_block(existing_frontmatter: dict, existing_text: str | None, frontmatter: dict, body: str) -> dict:
-    """``generated`` frontmatter (SPEC.md §5.2): ``at`` is the content's last
-    *meaningful* change, not the moment this run happened to touch the file.
+def _existing_document(path: Path) -> tuple[str | None, dict]:
+    """The concept's current text and parsed frontmatter, or ``(None, {})``.
 
-    Reusing the previous ``at`` when the rendered document is otherwise
-    unchanged keeps ``write_if_changed``'s no-op signal (okf.py) meaningful --
-    stamping ``_now_iso()`` unconditionally would rewrite every concept on
-    every run. Bumping ``__version__`` still changes ``generated.by`` (and
-    therefore the render), so a version bump advances ``at`` too, same as any
-    other content change.
+    One read, two consumers: :func:`_stamp_generated` needs the text to tell a
+    real content change from a no-op, and ``emit_entity`` needs the frontmatter
+    to carry a partial run's ``relationships`` forward.
     """
 
-    prev_at = (existing_frontmatter.get("generated") or {}).get("at")
-    at = prev_at or _now_iso()
+    if not path.exists():
+        return None, {}
+    text = path.read_text(encoding="utf-8")
+    return text, split_document(text)[0]
+
+
+def _stamp_generated(
+    frontmatter: dict, body: str, existing_text: str | None, existing_frontmatter: dict
+) -> str:
+    """Set ``generated`` (SPEC.md §5.2) and return the rendered document.
+
+    ``at`` is the content's last *meaningful* change, not the moment this run
+    happened to touch the file: the previous value is reused when the render
+    is otherwise unchanged, which keeps ``write_if_changed``'s no-op signal
+    (okf.py) meaningful -- stamping ``_now_iso()`` unconditionally would
+    rewrite every concept on every run. Bumping ``__version__`` changes
+    ``generated.by`` and therefore the render, so a version bump advances
+    ``at`` too, same as any other content change.
+
+    Returning the render (rather than just the block) lets the caller hand it
+    straight to ``write_if_changed`` instead of rendering the same document a
+    second time.
+    """
+
+    by = f"pnp_okf/{__version__}"
+    # A hand-edited or foreign file can carry anything here; every other reader
+    # in this package tolerates a malformed file rather than killing a run that
+    # is 25+ minutes in, and so does this one.
+    prev = existing_frontmatter.get("generated")
+    prev_at = prev.get("at") if isinstance(prev, dict) else None
     if prev_at:
-        candidate = {**frontmatter, "generated": {"by": f"pnp_okf/{__version__}", "at": at}}
-        if render_document(candidate, body) != existing_text:
-            at = _now_iso()
-    return {"by": f"pnp_okf/{__version__}", "at": at}
+        frontmatter["generated"] = {"by": by, "at": prev_at}
+        rendered = render_document(frontmatter, body)
+        if rendered == existing_text:
+            return rendered
+    frontmatter["generated"] = {"by": by, "at": _now_iso()}
+    return render_document(frontmatter, body)
 
 
 def _short_desc(text: str, limit: int = 140) -> str:
     one_line = " ".join(text.split())
     return one_line if len(one_line) <= limit else one_line[: limit - 1].rstrip() + "…"
 
+
+# The citation marker on a session's one "# Belege" line, as emit_sessions
+# writes it. Matched so _refresh_orphan_sessions can relabel a body that was
+# written before episodes.yaml knew this VOD's id.
+_VOD_CITE_RE = re.compile(r"^\[[^\]]+\](?= \[Vollständige Session \(VOD\)\])", re.MULTILINE)
 
 _MD_LINK = re.compile(r"\[([^\]]+)\]\([^)]*\)")
 # A list marker needs the space after it — otherwise "**Huludan** ist …" reads
@@ -289,10 +324,9 @@ def emit_sessions(
             source_entry["last_modified"] = f"{date}T00:00:00Z"
         frontmatter["sources"] = [source_entry]
         concept_path = bundle_dir / f"{concept_id}.md"
-        existing_text = concept_path.read_text(encoding="utf-8") if concept_path.exists() else None
-        existing_frontmatter = split_document(existing_text)[0] if existing_text else {}
-        frontmatter["generated"] = _generated_block(existing_frontmatter, existing_text, frontmatter, body)
-        write_concept(bundle_dir, concept_id, frontmatter, body)
+        existing_text, existing_frontmatter = _existing_document(concept_path)
+        rendered = _stamp_generated(frontmatter, body, existing_text, existing_frontmatter)
+        write_concept_text(bundle_dir, concept_id, rendered, existing_text)
         blurb = apply_spellings(_short_desc(extraction.recap, 100), index.spellings if index else {})
         entries.append((title, f"{date}.md", blurb))
     entries += _refresh_orphan_sessions(bundle_dir, transcripts, episodes, index)
@@ -311,8 +345,9 @@ def _refresh_orphan_sessions(
     concept file — the recap in it is knowledge, and pruning it would destroy
     the only record of that evening. But the loop above never sees it, so it
     would keep a raw YouTube title and no episode id, and drop out of the
-    episode overview downstream. This pass touches only the frontmatter, never
-    the body, and only for files the run did not already write.
+    episode overview downstream. This pass rewrites the frontmatter and the one
+    citation marker that has to agree with it, nothing else in the body, and
+    only for files the run did not already write.
     """
 
     sessions_dir = bundle_dir / "sessions"
@@ -346,12 +381,18 @@ def _refresh_orphan_sessions(
             "season_label": episodes.season_label(episode.get("season")),
             "team": episode.get("team"),
         }
+        # The "# Belege" marker and sources[].id have to name the same id or
+        # nothing downstream can join them (pnp-export-data's md2wiki resolves
+        # body markers against the episode map). This body was written while
+        # episodes.yaml still had no id for the VOD, so it cites "[1]" --
+        # relabel it rather than stamping a frontmatter id the body contradicts.
+        body = _VOD_CITE_RE.sub(f"[{episode['id']}]", body, count=1)
         source_entry = {"id": episode["id"], "resource": frontmatter.get("resource")}
         if date:
             source_entry["last_modified"] = f"{date}T00:00:00Z"
         frontmatter["sources"] = [source_entry]
-        frontmatter["generated"] = _generated_block(existing_frontmatter, text, frontmatter, body)
-        write_concept(bundle_dir, f"sessions/{date}", frontmatter, body)
+        rendered = _stamp_generated(frontmatter, body, text, existing_frontmatter)
+        write_concept_text(bundle_dir, f"sessions/{date}", rendered, text)
         blurb = apply_spellings(str(frontmatter.get("description") or ""), index.spellings if index else {})
         entries.append((title, f"{date}.md", blurb[:100]))
         log.info("[emit] %s has no transcript — refreshed episode identity only", date)
@@ -476,11 +517,8 @@ def emit_entity(
     else:
         description = _short_desc(first.note) if first else entity.canonical_name
     ts = f"{last.date}T00:00:00Z" if last and last.date else _now_iso()
-    # Read once, reused below for both the `generated.at` change check
-    # (finding 2) and the `relationships=None` passthrough (finding 3).
     path = bundle_dir / f"{entity.concept_id}.md"
-    existing_text = path.read_text(encoding="utf-8") if path.exists() else None
-    existing_frontmatter = split_document(existing_text)[0] if existing_text else {}
+    existing_text, existing_frontmatter = _existing_document(path)
     frontmatter = {
         "type": entity.type.value,
         "id": entity.entity_id,
@@ -523,9 +561,9 @@ def emit_entity(
         # more-often-scanned keys further down the rendered file.
         frontmatter["sources"] = _source_entries(entity, labels)
     # generated.at is "last meaningful change" (SPEC §5.2), not the in-world
-    # mention date -- see _generated_block for why it reuses the prior value.
-    frontmatter["generated"] = _generated_block(existing_frontmatter, existing_text, frontmatter, body)
-    write_concept(bundle_dir, entity.concept_id, frontmatter, body)
+    # mention date -- see _stamp_generated for why it reuses the prior value.
+    rendered = _stamp_generated(frontmatter, body, existing_text, existing_frontmatter)
+    write_concept_text(bundle_dir, entity.concept_id, rendered, existing_text)
     return unresolved, conflicts
 
 

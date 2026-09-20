@@ -285,36 +285,54 @@ _BOLD_HEAD_RE = re.compile(r"^\*\*(.+?)\*\*")
 # The prose writes "**Zur Gilde:**", "**Zum Orden:**" -- the relation is
 # always to something, so the head is what follows, not the preposition.
 _ZU_PREFIX_RE = re.compile(r"^Zu[rm]?\s+")
-# Fallback separator when there's no bold span: a bare colon, en-dash or
-# hyphen used the same way ("Hans - kennt ihn gut."). Searched only past any
-# link's own end (see below) -- a slug/date target routinely contains "-",
-# which would otherwise cut a link in half.
-_HEAD_SEP_RE = re.compile(r"[:–-]")
+# Fallback separator when the bullet marks no head of its own: a colon, or a
+# dash *surrounded by whitespace* ("Hans - kennt ihn gut."). The whitespace is
+# load-bearing -- a bare "-" also sits inside German compound names
+# ("Sanddorn-Gilde", "Freibeuter-Kapitän Harald"), and cutting there both lost
+# real edges and truncated a name onto a different concept's prefix.
+_HEAD_SEP_RE = re.compile(r":|\s[–-]\s")
 _HEAD_WORD_LIMIT = 6
 _NOTE_LIMIT = 200
 
 
-def _bullet_head(text: str) -> str:
-    """The bold span if the bullet has one, else the text up to the first
-    ``:``/``–``/``-`` separator -- or ``""`` when the result is too long to
-    be a head at all (the caller skips a ``""`` head).
+def _first_sep(text: str) -> int | None:
+    """Index of the first head separator that is not inside a markdown link.
 
-    Without the length cap, a bullet with neither a bold span nor a
-    separator handed the *whole sentence* on as "the head": a link search
-    over it then matched whichever link happened to appear anywhere in the
-    prose (not necessarily the one the sentence is about), and with no link
-    either, a slugified sentence fragment could still hit the fuzzy name
-    tables and mint an edge from a bullet that names nobody in particular.
+    Skipping over links by position, rather than starting the search past the
+    first link's end, keeps a separator that appears *before* a link (the
+    common "Gilde: … kennt [Hans](…)" shape) while still ignoring the ``-``
+    inside a link's own target (``/sessions/2026-08-12.md``).
+    """
+
+    spans = [m.span() for m in _LINK_RE.finditer(text)]
+    for sep in _HEAD_SEP_RE.finditer(text):
+        if not any(start <= sep.start() < end for start, end in spans):
+            return sep.start()
+    return None
+
+
+def _bullet_head(text: str) -> str:
+    """What the bullet names as the other end of the relationship, or ``""``
+    when it names nothing in particular (the caller skips a ``""`` head).
+
+    A bold span or a leading link is the prose marking its own head, so it is
+    taken as-is however long it runs. Everything else falls back to the text
+    up to the first separator, capped at :data:`_HEAD_WORD_LIMIT` words:
+    without a cap, a bullet with neither marker nor separator handed the
+    *whole sentence* on as "the head", and a link search over it then matched
+    whichever link happened to appear anywhere in the prose -- or, with no
+    link, a slugified sentence fragment could still hit the fuzzy name tables.
+    Applying that cap to an explicit head instead dropped real edges.
     """
 
     bold = _BOLD_HEAD_RE.match(text)
     if bold:
-        head = bold.group(1)
-    else:
-        link = _LINK_RE.search(text)
-        sep = _HEAD_SEP_RE.search(text, link.end() if link else 0)
-        head = text[: sep.start()] if sep else text
-    head = _ZU_PREFIX_RE.sub("", head)
+        return _ZU_PREFIX_RE.sub("", bold.group(1))
+    leading_link = _LINK_RE.match(text)
+    if leading_link:
+        return leading_link.group(0)
+    sep = _first_sep(text)
+    head = _ZU_PREFIX_RE.sub("", text if sep is None else text[:sep])
     if len(_LINK_RE.sub(r"\1", head).split()) > _HEAD_WORD_LIMIT:
         return ""
     return head

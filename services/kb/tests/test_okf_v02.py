@@ -72,10 +72,35 @@ def test_generated_at_advances_when_body_changes(tmp_path: Path, monkeypatch):
     # bare "second call's _now_iso() != first call's" comparison flaky -- pin
     # the second call's clock to something unmistakably different instead.
     fm1 = _frontmatter(tmp_path)
-    monkeypatch.setattr("pnp_okf.emit._now_iso", lambda: "2099-01-01T00:00:00+00:00")
+    monkeypatch.setattr("pnp_okf.emit._now_iso", lambda: "2099-01-01T00:00:00Z")
     fm2 = _frontmatter(tmp_path, body="# Überblick\n\nAnderer Text.\n\n# Belege\n\n[1] x")
-    assert fm2["generated"]["at"] == "2099-01-01T00:00:00+00:00"
+    assert fm2["generated"]["at"] == "2099-01-01T00:00:00Z"
     assert fm2["generated"]["at"] != fm1["generated"]["at"]
+
+
+def test_generated_at_uses_the_z_suffix_like_every_other_timestamp(tmp_path: Path):
+    # `timestamp` and `sources[].last_modified` are Z-suffixed, and so is every
+    # timestamp the API emits. Two spellings of UTC in one frontmatter block
+    # silently breaks a consumer matching on `...Z`.
+    fm = _frontmatter(tmp_path)
+    assert fm["generated"]["at"].endswith("Z")
+    assert "+00:00" not in fm["generated"]["at"]
+
+
+def test_a_malformed_generated_key_does_not_kill_the_run(tmp_path: Path):
+    # A hand edit (or any other writer) can leave a scalar here. Reading it as
+    # a mapping raised AttributeError out of emit_entity, and cli.py's emit
+    # loop has no try/except -- one bad file would abort a 25+ minute run.
+    _frontmatter(tmp_path)
+    path = tmp_path / "npcs" / "testo.md"
+    path.write_text(
+        path.read_text(encoding="utf-8").replace(
+            "generated:\n  by:", "generated: pnp_okf/0.1.0\nignored_by:"
+        ),
+        encoding="utf-8",
+    )
+    fm = _frontmatter(tmp_path)
+    assert fm["generated"]["by"].startswith("pnp_okf/")
 
 
 def test_generated_by_matches_actor_convention(tmp_path: Path):
@@ -87,6 +112,37 @@ def test_generated_by_matches_actor_convention(tmp_path: Path):
 def test_verified_absent_by_default(tmp_path: Path):
     fm = _frontmatter(tmp_path)
     assert "verified" not in fm
+
+
+def test_orphan_session_relabels_the_citation_its_source_id_now_names(tmp_path: Path):
+    """A session whose transcript is gone gets its episode id late.
+
+    Its body was written while episodes.yaml had no id for the VOD, so it
+    cites "[1]". Stamping `sources: [{id: P-56}]` onto it and leaving the body
+    alone puts two different ids on the same citation, and pnp-export-data's
+    md2wiki joins body markers to sources[].id.
+    """
+
+    from pnp_okf.emit import _refresh_orphan_sessions
+    from pnp_okf.episodes import Episodes
+
+    url = "https://www.youtube.com/watch?v=umGyKLkefJI"
+    sessions = tmp_path / "sessions"
+    sessions.mkdir(parents=True)
+    (sessions / "2026-01-13.md").write_text(
+        "---\ntype: Session\ntitle: Alt\nresource: " + url + "\n---\n\n"
+        "# Zusammenfassung\n\nEtwas geschah.\n\n"
+        f"# Belege\n\n[1] [Vollständige Session (VOD)]({url})\n",
+        encoding="utf-8",
+    )
+    episodes = Episodes([{"video_id": "umGyKLkefJI", "id": "P-56", "title": "Spät", "season": "P"}])
+
+    _refresh_orphan_sessions(tmp_path, {}, episodes)
+
+    frontmatter, body = split_document((sessions / "2026-01-13.md").read_text(encoding="utf-8"))
+    assert frontmatter["sources"][0]["id"] == "P-56"
+    assert f"[P-56] [Vollständige Session (VOD)]({url})" in body
+    assert "[1] [Vollständige" not in body
 
 
 def test_verified_present_when_flagged(tmp_path: Path):

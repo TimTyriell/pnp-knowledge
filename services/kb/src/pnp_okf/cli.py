@@ -483,15 +483,15 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
             unlabelled += 1
 
     # A partial run sees only part of the corpus, so the edge map would be
-    # missing every relationship whose other endpoint wasn't loaded. Below,
-    # a partial run passes `None` (not `{}`) for `relationships` --
+    # missing every relationship whose other endpoint wasn't loaded. It
+    # therefore passes `None` (not `{}`) for `relationships` below --
     # emit_entity treats `None` as "leave relationships[] on disk alone" and
     # only an explicit list (always the case on a full run) as authoritative,
-    # so a partial run can no longer erase real edges by omission.
-    edges = (
-        {} if partial_run
-        else relationship_edges(bodies, index, {e.concept_id for e in entities})
-    )
+    # so a partial run can no longer erase real edges by omission. Nothing
+    # reads `edges` on that path, so it isn't computed there either.
+    edges: dict[str, list[dict]] = {}
+    if not partial_run:
+        edges = relationship_edges(bodies, index, {e.concept_id for e in entities})
 
     for entity in entities:
         unresolved, conflicts = emit_entity(

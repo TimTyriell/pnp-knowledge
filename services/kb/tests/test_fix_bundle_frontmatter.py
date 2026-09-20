@@ -16,7 +16,7 @@ from __future__ import annotations
 from pathlib import Path
 
 import yaml
-from pnp_okf.validate import fix_bundle
+from pnp_okf.validate import fix_bundle, validate_bundle
 
 
 def test_fix_bundle_does_not_rewrite_a_resource_url(tmp_path: Path):
@@ -41,3 +41,35 @@ def test_fix_bundle_does_not_rewrite_a_resource_url(tmp_path: Path):
     text = (sessions / "2025-04-09.md").read_text(encoding="utf-8")
     assert "resource: https://www.youtube.com/watch?v=xYz-Lanra-123" in text
     assert "Landra erschreckt" in text  # the body fix still happens
+
+
+def test_validate_and_fix_agree_on_which_half_carries_links(tmp_path: Path):
+    """`pnp validate --fix` has to converge.
+
+    validate_bundle scanned the whole file for links while fix_bundle rewrites
+    only the body, so a link-shaped string in frontmatter was reported on every
+    run and fixable on none -- leaving integrity_ok false forever, which cli.py
+    treats as "this bundle must not be committed".
+    """
+
+    bundle = tmp_path / "bundle"
+    (bundle / "npcs").mkdir(parents=True)
+    # A note quoting a bullet is how one of these ends up in frontmatter.
+    (bundle / "npcs" / "hans.md").write_text(
+        "---\ntype: NPC\ntitle: Hans\n"
+        'relationships:\n- target: npcs/greta\n  note: "[Greta](/npcs/ghost.md): kennt ihn."\n'
+        "---\n\nHans lebt hier.\n",
+        encoding="utf-8",
+    )
+    (bundle / "npcs" / "greta.md").write_text(
+        "---\ntype: NPC\ntitle: Greta\nrelationships:\n- target: npcs/hans\n---\n\nGreta auch.\n",
+        encoding="utf-8",
+    )
+
+    before = validate_bundle(bundle)
+    fix_bundle(bundle)
+    after = validate_bundle(bundle)
+
+    assert before.broken_links == [] and before.dangling_links == []
+    assert after.broken_links == [] and after.dangling_links == []
+    assert after.integrity_ok

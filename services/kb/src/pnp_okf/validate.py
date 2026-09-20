@@ -14,9 +14,8 @@ from dataclasses import dataclass, field
 from difflib import SequenceMatcher
 from pathlib import Path
 
-import yaml
-
 from pnp_okf.links import _LINK_RE, ConceptIndex, normalize_body
+from pnp_okf.okf import split_document, split_raw
 from pnp_okf.resolve import FUZZY_RATIO, load_spellings
 
 log = logging.getLogger(__name__)
@@ -30,40 +29,6 @@ def _iter_concept_files(bundle_dir: Path) -> list[Path]:
         for p in sorted(bundle_dir.rglob("*.md"))
         if p.name not in _RESERVED
     ]
-
-
-def _split_frontmatter(text: str) -> dict[str, object]:
-    if not text.startswith("---"):
-        return {}
-    parts = text.split("---\n", 2)
-    if len(parts) < 3:
-        return {}
-    try:
-        data = yaml.safe_load(parts[1])
-    except yaml.YAMLError:
-        return {}
-    return data if isinstance(data, dict) else {}
-
-
-def _split_frontmatter_raw(text: str) -> tuple[str, str]:
-    """Textual ``(frontmatter_block, body)`` split -- ``frontmatter + body ==
-    text`` always, byte-for-byte. Same ``"---\\n"`` convention as
-    ``okf.split_document``, but the frontmatter half is returned raw instead
-    of parsed+re-rendered: ``fix_bundle`` must normalize prose only and never
-    reformat/reorder a concept's YAML. No frontmatter (or malformed) comes
-    back as ``("", text)``, so that file is still normalized whole.
-    """
-
-    if not text.startswith("---"):
-        return "", text
-    parts = text.split("---\n", 2)
-    if len(parts) < 3 or parts[0]:
-        # A non-empty parts[0] means the opening delimiter isn't "---\n" (a
-        # CRLF file, say) and the split landed somewhere in the body --
-        # rebuilding from parts[1:] would silently drop parts[0]. fix_bundle
-        # *writes* what this returns, so fall back to "no frontmatter".
-        return "", text
-    return f"---\n{parts[1]}---\n", parts[2]
 
 
 @dataclass
@@ -244,7 +209,12 @@ def validate_bundle(bundle_dir: Path) -> ValidationReport:
 
     for path, cid in zip(files, concept_ids, strict=True):
         text = path.read_text(encoding="utf-8")
-        for match in _LINK_RE.finditer(text):
+        # Body only, the same half fix_bundle rewrites. Scanning the whole file
+        # counted a link inside frontmatter that --fix could then never reach,
+        # so `pnp validate --fix` would not converge: the report stayed red
+        # forever and cli.py treats that as "do not commit this bundle".
+        fm, body = split_document(text)
+        for match in _LINK_RE.finditer(body):
             report.link_count += 1
             if index.resolve(match.group(2)) is None:
                 report.broken_links.append((cid, match.group(2)))
@@ -253,7 +223,6 @@ def validate_bundle(bundle_dir: Path) -> ValidationReport:
             if not _href_exists(bundle_dir, path, match.group(2)):
                 report.dangling_links.append((cid, match.group(2)))
 
-        fm = _split_frontmatter(text)
         ctype = str(fm.get("type") or "").strip()
         if not ctype:
             report.missing_type.append(cid)
@@ -388,7 +357,7 @@ def fix_bundle(bundle_dir: Path, registry_path: Path | None = None) -> tuple[int
         # a `spelling:` rule could otherwise rewrite a `resource:` value --
         # e.g. matching a `\w`-bounded run inside a YouTube video id -- and
         # silently break the citation it sits in.
-        frontmatter, body = _split_frontmatter_raw(original)
+        frontmatter, body = split_raw(original)
         new_body, unresolved = normalize_body(body, index, self_id=cid)
         new_text = frontmatter + new_body
         if new_text != original:
