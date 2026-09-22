@@ -88,6 +88,28 @@ seven rule fixes that will hold for every future run.
 diffing the resolved concept ids against `entity_registry.yaml`'s `entities:`
 keys — no LLM call is involved on that path.
 
+## It recurs on every run — measured, not predicted
+
+The override was used, the bundle was written, and the registry was rewritten
+with the resolved ids. A **second** run over the identical corpus, cache and
+rules was then refused again: **27 of 1107**, same shape — 26 single-mention
+concepts and one with two, 6 of them type moves, every one surviving under a
+near-identical id.
+
+So this is not a one-off migration cost that the override pays down. Resolution
+and the registry disagree by ~2.5% *every run*, and each one needs the same
+triage and the same flag. That moves [[I-004]] from "a cleanup worth doing" to
+the thing that makes `check_rename_safety` unusable as a gate: a guard that
+must be overridden on every routine run is a guard that will eventually be
+overridden on the run that mattered. That is the 2026-08 incident's own lesson
+5 arriving from the opposite direction.
+
+The root cause is in [IMPROVEMENTS.md](../architecture/IMPROVEMENTS.md) I-004:
+a live registry entry with `aliases: []` whose `canonical_name` no longer
+slugifies to its `concept_id` has no reanchor candidate, so the next run mints
+a fresh id and abandons the old one. Fixing it should collapse this to zero,
+and the `--allow-rename` habit should end with it.
+
 ## What this does not settle
 
 Why a fresh resolve picks a different representative than the run that wrote

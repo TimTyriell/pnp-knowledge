@@ -398,3 +398,27 @@ def test_subtype_in_its_own_type_vocabulary_is_not_flagged(tmp_path: Path):
     )
     report = validate_bundle(tmp_path)
     assert report.invalid_subtypes == []
+
+
+def test_lead_text_survives_a_heading_glued_to_its_paragraph():
+    """The synthesis prompt emits "## Überblick" with the prose on the next
+    line, no blank between. Splitting on "\n\n" then made heading+paragraph one
+    block, _NOT_PROSE matched the heading, and the paragraph was dropped with
+    it -- so description fell back to a raw mention note, the exact failure
+    _lead_text was written to prevent.
+    """
+
+    from pnp_okf.emit import _lead_text
+
+    assert _lead_text("## Überblick\nLiam ist der jüngere Bruder.") == (
+        "Liam ist der jüngere Bruder."
+    )
+    assert _lead_text("# Lindo\n## Überblick\nLindo ist ein Feenbarde.") == (
+        "Lindo ist ein Feenbarde."
+    )
+    # Blank-separated bodies keep working, and a heading over a list is still
+    # not prose -- the guard must not be loosened into accepting markup.
+    assert _lead_text("# Dodo\n\n## Überblick\n\nDodo ist ein Halb-Goblin.") == (
+        "Dodo ist ein Halb-Goblin."
+    )
+    assert _lead_text("## Nur Heading\n\n- eine Liste") == ""
