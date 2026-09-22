@@ -1,15 +1,15 @@
 ---
-type: Event
+type: Location
 title: Tunnel der Gnolle
 description: Ein von den Gnollen gegrabener enger Tunnel, der zur Mine der Halblinge
   führen soll; Bruma hat davon erfahren.
 tags:
-- events
+- locations
 timestamp: '2026-07-10T00:00:00Z'
 generated:
   by: pnp_okf/0.2.0
-  at: '2026-09-22T22:10:09Z'
-id: EVENT_TUNNEL_DER_GNOLLE
+  at: '2026-09-22T23:02:22Z'
+id: LOC_TUNNEL_DER_GNOLLE
 subtype: Dungeon
 sources:
 - id: S1-01-B

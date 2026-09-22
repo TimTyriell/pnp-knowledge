@@ -8,8 +8,8 @@ tags:
 timestamp: '2025-08-12T00:00:00Z'
 generated:
   by: pnp_okf/0.2.0
-  at: '2026-09-22T22:10:09Z'
-id: EVENT_ENTDECKUNG_DES_OKKULTEN_LAGERS
+  at: '2026-09-22T23:02:20Z'
+id: EVENT_ENTDECKUNG_DES_OKKULTEN_OPFERLAGERS
 subtype: Entdeckung
 sources:
 - id: P-17

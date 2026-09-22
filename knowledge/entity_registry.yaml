@@ -190,6 +190,11 @@ entities:
   canonical_name: Alte Gottheit (Schlangenfigur)
   aliases: []
   mention_count: 1
+- concept_id: deities/alter_schlangengott
+  type: Deity
+  canonical_name: Alter Schlangengott
+  aliases: []
+  mention_count: 1
 - concept_id: deities/bodrak
   type: Deity
   canonical_name: Bodrak
@@ -215,6 +220,11 @@ entities:
 - concept_id: deities/erdrichter
   type: Deity
   canonical_name: Erdrichter
+  aliases: []
+  mention_count: 1
+- concept_id: deities/esua
+  type: Deity
+  canonical_name: Esua
   aliases: []
   mention_count: 1
 - concept_id: deities/goblingoetter
@@ -322,11 +332,6 @@ entities:
   - Uhoriaks
   mention_count: 3
   important: true
-- concept_id: deities/schlangengott
-  type: Deity
-  canonical_name: Alter Schlangengott
-  aliases: []
-  mention_count: 1
 - concept_id: deities/schlangengott_schlangenpraesenz
   type: Deity
   canonical_name: Schlangengott / Schlangenpräsenz
@@ -362,6 +367,7 @@ entities:
   - Seras (Seraph)
   - Seras
   - Tavok
+  - Thar'Vok, der Erdrichter
   mention_count: 5
 - concept_id: deities/thyrex
   type: Deity
@@ -391,6 +397,7 @@ entities:
   - Valsor
   - Varsurs
   - Varzul
+  - Vhar'Zul
   mention_count: 20
 - concept_id: deities/volgotha
   type: Deity
@@ -671,7 +678,8 @@ entities:
 - concept_id: events/begegnung_mit_landra
   type: Event
   canonical_name: Begegnung mit Lanra
-  aliases: []
+  aliases:
+  - Begegnung mit Lanra
   mention_count: 1
 - concept_id: events/begegnung_mit_leonard
   type: Event
@@ -753,11 +761,6 @@ entities:
   canonical_name: Blutopfer und Beschwörung des Feuerwesens
   aliases: []
   mention_count: 1
-- concept_id: events/brief_von_valeria
-  type: Event
-  canonical_name: Brief von Valeria
-  aliases: []
-  mention_count: 2
 - concept_id: events/brumas_blitzelementar_wache
   type: Event
   canonical_name: Brumas Blitzelementar-Wache
@@ -828,7 +831,7 @@ entities:
   canonical_name: Entdeckung des gestohlenen Kristalls
   aliases: []
   mention_count: 1
-- concept_id: events/entdeckung_des_okkulten_lagers
+- concept_id: events/entdeckung_des_okkulten_opferlagers
   type: Event
   canonical_name: Entdeckung des okkulten Opferlagers
   aliases: []
@@ -990,7 +993,7 @@ entities:
   canonical_name: Flucht der dunklen Kreatur
   aliases: []
   mention_count: 1
-- concept_id: events/flucht_durch_das_portal_2025-09-06
+- concept_id: events/flucht_durch_das_portal
   type: Event
   canonical_name: Flucht durch das Portal
   aliases: []
@@ -1146,7 +1149,7 @@ entities:
   canonical_name: Kampf gegen das Skelettmonster
   aliases: []
   mention_count: 1
-- concept_id: events/kampf_gegen_das_tentakelmonster
+- concept_id: events/kampf_gegen_das_tentakelige_monster
   type: Event
   canonical_name: Kampf gegen das tentakelige Monster
   aliases: []
@@ -1277,7 +1280,7 @@ entities:
   aliases:
   - Kampf gegen die Mimic
   mention_count: 1
-- concept_id: events/kampf_gegen_die_pilz_goblins_2025-06-17
+- concept_id: events/kampf_gegen_die_pilz_goblins
   type: Event
   canonical_name: Kampf gegen die Pilz-Goblins
   aliases: []
@@ -1643,11 +1646,6 @@ entities:
   canonical_name: Sieg über die Goblins und Befreiung des Dorfes
   aliases: []
   mention_count: 1
-- concept_id: events/splitterkalb
-  type: Event
-  canonical_name: Splitterkalb
-  aliases: []
-  mention_count: 2
 - concept_id: events/sprengung_des_felsens_und_massaker_an_gnollen
   type: Event
   canonical_name: Sprengung des Felsens und Massaker an Gnollen
@@ -1771,11 +1769,6 @@ entities:
 - concept_id: events/treffen_mit_der_gilde
   type: Event
   canonical_name: Treffen mit der Gilde
-  aliases: []
-  mention_count: 1
-- concept_id: events/tunnel_der_gnolle
-  type: Event
-  canonical_name: Tunnel der Gnolle
   aliases: []
   mention_count: 1
 - concept_id: events/ueberfall_auf_die_taverne
@@ -1913,11 +1906,6 @@ entities:
 - concept_id: events/versuch_des_soldaten_die_schriftrolle_zu_entwenden
   type: Event
   canonical_name: Versuch des Soldaten, die Schriftrolle zu entwenden
-  aliases: []
-  mention_count: 1
-- concept_id: events/vertrag_des_ratten_daemons
-  type: Event
-  canonical_name: Vertrag des Ratten-Dämons
   aliases: []
   mention_count: 1
 - concept_id: events/vertrag_zwischen_der_gruppe_und_horatio
@@ -2173,6 +2161,7 @@ entities:
   - Gilde Ehrenfels
   - Gilde in Ehrenfels
   - Die Gilde in Ehrenfels
+  - Die Gilde von Ehrenfels
   mention_count: 21
 - concept_id: factions/gnoll_armee
   type: Faction
@@ -2279,11 +2268,6 @@ entities:
   canonical_name: Seelenwacht
   aliases: []
   mention_count: 1
-- concept_id: factions/seraphen_von_volgotha
-  type: Faction
-  canonical_name: Seraphen von Volgotha
-  aliases: []
-  mention_count: 1
 - concept_id: factions/silberkerne
   type: Faction
   canonical_name: Silberkerne
@@ -2310,7 +2294,7 @@ entities:
   canonical_name: Untote (Armee von Belorus)
   aliases: []
   mention_count: 1
-- concept_id: factions/untote_armee_von_steinbachtal
+- concept_id: factions/untotenarmee_von_steinbachtal
   type: Faction
   canonical_name: Untotenarmee von Steinbachtal
   aliases: []
@@ -2401,11 +2385,6 @@ entities:
   canonical_name: Arkanes Prisma
   aliases: []
   mention_count: 1
-- concept_id: items/armringe_von_lindo_laut
-  type: Item
-  canonical_name: Armringe von Lindo Laut
-  aliases: []
-  mention_count: 1
 - concept_id: items/artefakt_silberkugel_orb
   type: Item
   canonical_name: Artefakt (Silberkugel/Orb)
@@ -2461,11 +2440,6 @@ entities:
   canonical_name: Betäubungspfeile (10 Sumpf-Hype-Pfeile)
   aliases: []
   mention_count: 1
-- concept_id: items/blitzelementar
-  type: Item
-  canonical_name: Blitzelementar
-  aliases: []
-  mention_count: 1
 - concept_id: items/bloodstone
   type: Item
   canonical_name: Bloodstone
@@ -2491,6 +2465,11 @@ entities:
   canonical_name: Brief von Nox
   aliases: []
   mention_count: 1
+- concept_id: items/brief_von_valeria
+  type: Item
+  canonical_name: Brief von Valeria
+  aliases: []
+  mention_count: 2
 - concept_id: items/buch_der_namen
   type: Item
   canonical_name: Buch der Namen
@@ -2730,6 +2709,7 @@ entities:
   - Der Kristall
   - Grüner Kristall
   - Kristall
+  - Grüne Kristalle
   mention_count: 2
 - concept_id: items/gruener_kristall_seelenstein
   type: Item
@@ -2780,11 +2760,6 @@ entities:
 - concept_id: items/heilige_pfeile
   type: Item
   canonical_name: Heilige Pfeile
-  aliases: []
-  mention_count: 1
-- concept_id: items/heiliger_streitkolben_aus_zebros
-  type: Item
-  canonical_name: Heiliger Streitkolben (aus Zebras)
   aliases: []
   mention_count: 1
 - concept_id: items/heiliges_oel
@@ -3027,7 +3002,8 @@ entities:
 - concept_id: items/notiz_von_tyrex
   type: Item
   canonical_name: Notiz von Tyrael
-  aliases: []
+  aliases:
+  - Notiz von Tyrael
   mention_count: 1
 - concept_id: items/notiz_von_vora
   type: Item
@@ -3101,6 +3077,11 @@ entities:
   - Ring von Lindo Laut
   mention_count: 1
   important: true
+- concept_id: items/ring_von_lindo_laut
+  type: Item
+  canonical_name: Armringe von Lindo Laut
+  aliases: []
+  mention_count: 1
 - concept_id: items/ring_von_valeria
   type: Item
   canonical_name: Ring von Valeria
@@ -3208,6 +3189,7 @@ entities:
   canonical_name: Schwärzer Palantir
   aliases:
   - Schwarzer Palantir
+  - Schwärzer Palantir
   mention_count: 2
 - concept_id: items/schwert
   type: Item
@@ -3255,6 +3237,7 @@ entities:
   canonical_name: Der Splitter des Ewigen
   aliases:
   - Splitter des Ewigen
+  - Der Splitter des Ewigen
   mention_count: 2
 - concept_id: items/stab_des_gnoll_schamanen
   type: Item
@@ -3266,10 +3249,11 @@ entities:
   canonical_name: Stab des Vasul
   aliases: []
   mention_count: 1
-- concept_id: items/stamina_trank
+- concept_id: items/staminatrank
   type: Item
   canonical_name: Stamina-Trank
-  aliases: []
+  aliases:
+  - Stamina-Trank
   mention_count: 1
 - concept_id: items/statue_des_nerash
   type: Item
@@ -3310,12 +3294,9 @@ entities:
   - Der Streitkolben
   - Zebras Zorn
   - Dodos Streitkolben
-  mention_count: 6
-- concept_id: items/streitkolben_von_zebros
-  type: Item
-  canonical_name: Streitkolben von Cepros
-  aliases: []
-  mention_count: 1
+  - Heiliger Streitkolben (aus Zebras)
+  - Streitkolben von Cepros
+  mention_count: 8
 - concept_id: items/stress_potion
   type: Item
   canonical_name: Stress-Potion
@@ -3405,6 +3386,11 @@ entities:
 - concept_id: items/versiegeltes_schriftstueck
   type: Item
   canonical_name: Versiegeltes Schriftstück
+  aliases: []
+  mention_count: 1
+- concept_id: items/vertrag_des_ratten_daemons
+  type: Item
+  canonical_name: Vertrag des Ratten-Dämons
   aliases: []
   mention_count: 1
 - concept_id: items/verwandlungstrank_von_sys_fizik
@@ -3807,6 +3793,7 @@ entities:
   canonical_name: Dorf Breschka
   aliases:
   - Dorf Brechka
+  - Dorf Breschka
   mention_count: 2
 - concept_id: locations/droons_bahn
   type: Location
@@ -4447,6 +4434,11 @@ entities:
   canonical_name: Treffpunkt am Wasserfall
   aliases: []
   mention_count: 1
+- concept_id: locations/tunnel_der_gnolle
+  type: Location
+  canonical_name: Tunnel der Gnolle
+  aliases: []
+  mention_count: 1
 - concept_id: locations/turm_aussichtsturm
   type: Location
   canonical_name: Turm (Aussichtsturm)
@@ -4659,6 +4651,11 @@ entities:
   canonical_name: Berthold
   aliases: []
   mention_count: 1
+- concept_id: npcs/blitzelementar
+  type: NPC
+  canonical_name: Blitzelementar
+  aliases: []
+  mention_count: 1
 - concept_id: npcs/borkus
   type: NPC
   canonical_name: Borkus
@@ -4869,11 +4866,6 @@ entities:
 - concept_id: npcs/erster_maat_von_harald
   type: NPC
   canonical_name: Erster Maat von Harald
-  aliases: []
-  mention_count: 1
-- concept_id: npcs/esua
-  type: NPC
-  canonical_name: Esua
   aliases: []
   mention_count: 1
 - concept_id: npcs/eulenartige_waechterin
@@ -5257,6 +5249,7 @@ entities:
   canonical_name: Lady Lyra von Willau
   aliases:
   - Lady Lyra
+  - Lady Lyra von Willau
   mention_count: 2
 - concept_id: npcs/lara
   type: NPC
@@ -5273,6 +5266,7 @@ entities:
   canonical_name: Leandras
   aliases:
   - Lendras
+  - Leandras
   mention_count: 4
 - concept_id: npcs/lenra
   type: NPC
@@ -5537,7 +5531,8 @@ entities:
 - concept_id: npcs/orlanius_schwarzhorn
   type: NPC
   canonical_name: Orlanius Schwarzohr
-  aliases: []
+  aliases:
+  - Orlanius Schwarzohr
   mention_count: 1
 - concept_id: npcs/perry_begleiter_von_cookie
   type: NPC
@@ -5701,6 +5696,11 @@ entities:
   canonical_name: Seraph
   aliases: []
   mention_count: 1
+- concept_id: npcs/seraphen_von_volgotha
+  type: NPC
+  canonical_name: Seraphen von Volgotha
+  aliases: []
+  mention_count: 1
 - concept_id: npcs/serrava
   type: NPC
   canonical_name: Serrava
@@ -5769,7 +5769,8 @@ entities:
 - concept_id: npcs/tatrick
   type: NPC
   canonical_name: Tattrick
-  aliases: []
+  aliases:
+  - Tattrick
   mention_count: 1
 - concept_id: npcs/tavernenwirt_ork
   type: NPC
@@ -5810,7 +5811,8 @@ entities:
 - concept_id: npcs/trillo
   type: NPC
   canonical_name: Trilo
-  aliases: []
+  aliases:
+  - Trilo
   mention_count: 1
 - concept_id: npcs/trolle_im_hain
   type: NPC
@@ -6007,10 +6009,6 @@ retired:
   type: Character
   canonical_name: Tim (Lindo Laut)
   aliases: []
-- concept_id: deities/alter_schlangengott
-  type: Deity
-  canonical_name: Alter Schlangengott
-  aliases: []
 - concept_id: deities/bodrak_gott_der_stille
   type: Deity
   canonical_name: Bodrak, Gott der Stille
@@ -6018,10 +6016,6 @@ retired:
 - concept_id: deities/die_alten_goetter
   type: Deity
   canonical_name: Die alten Götter
-  aliases: []
-- concept_id: deities/esua
-  type: Deity
-  canonical_name: Esua
   aliases: []
 - concept_id: deities/goblin_gott
   type: Deity
@@ -6047,6 +6041,10 @@ retired:
 - concept_id: deities/schlangenfigur
   type: Deity
   canonical_name: Schlangenfigur
+  aliases: []
+- concept_id: deities/schlangengott
+  type: Deity
+  canonical_name: Alter Schlangengott
   aliases: []
 - concept_id: deities/tavok
   type: Deity
@@ -6205,6 +6203,10 @@ retired:
   type: Event
   canonical_name: Brand des Halblingsdorfs
   aliases: []
+- concept_id: events/brief_von_valeria
+  type: Event
+  canonical_name: Brief von Valeria
+  aliases: []
 - concept_id: events/cookies_entscheidender_pfeil
   type: Event
   canonical_name: Cookies entscheidender Pfeil
@@ -6350,7 +6352,7 @@ retired:
   type: Event
   canonical_name: Entdeckung des Notizbuchs
   aliases: []
-- concept_id: events/entdeckung_des_okkulten_opferlagers
+- concept_id: events/entdeckung_des_okkulten_lagers
   type: Event
   canonical_name: Entdeckung des okkulten Opferlagers
   aliases: []
@@ -6438,7 +6440,7 @@ retired:
   type: Event
   canonical_name: Flucht der dunklen Gestalt
   aliases: []
-- concept_id: events/flucht_durch_das_portal
+- concept_id: events/flucht_durch_das_portal_2025-09-06
   type: Event
   canonical_name: Flucht durch das Portal
   aliases: []
@@ -6506,7 +6508,7 @@ retired:
   type: Event
   canonical_name: Kampf gegen das Skelett im Turm
   aliases: []
-- concept_id: events/kampf_gegen_das_tentakelige_monster
+- concept_id: events/kampf_gegen_das_tentakelmonster
   type: Event
   canonical_name: Kampf gegen das tentakelige Monster
   aliases: []
@@ -6638,7 +6640,7 @@ retired:
   type: Event
   canonical_name: Kampf gegen die Phasenspinne
   aliases: []
-- concept_id: events/kampf_gegen_die_pilz_goblins
+- concept_id: events/kampf_gegen_die_pilz_goblins_2025-06-17
   type: Event
   canonical_name: Kampf gegen die Pilz-Goblins
   aliases: []
@@ -6871,6 +6873,10 @@ retired:
   type: Event
   canonical_name: Segen der neuen Götter
   aliases: []
+- concept_id: events/splitterkalb
+  type: Event
+  canonical_name: Splitterkalb
+  aliases: []
 - concept_id: events/sprengung_des_gangs_in_der_silbergruft
   type: Event
   canonical_name: Sprengung des Gangs in der Silbergruft
@@ -6914,6 +6920,10 @@ retired:
 - concept_id: events/trennung_der_gruppe
   type: Event
   canonical_name: Trennung der Gruppe
+  aliases: []
+- concept_id: events/tunnel_der_gnolle
+  type: Event
+  canonical_name: Tunnel der Gnolle
   aliases: []
 - concept_id: events/turnier_von_willau
   type: Event
@@ -6979,6 +6989,10 @@ retired:
 - concept_id: events/versteinerung_von_dodo
   type: Event
   canonical_name: Versteinerung von Dodo
+  aliases: []
+- concept_id: events/vertrag_des_ratten_daemons
+  type: Event
+  canonical_name: Vertrag des Ratten-Dämons
   aliases: []
 - concept_id: events/vertrag_mit_horatio
   type: Event
@@ -7132,9 +7146,17 @@ retired:
   type: Faction
   canonical_name: Seraphen
   aliases: []
+- concept_id: factions/seraphen_von_volgotha
+  type: Faction
+  canonical_name: Seraphen von Volgotha
+  aliases: []
 - concept_id: factions/shima_stamm
   type: Faction
   canonical_name: Shima-Stamm
+  aliases: []
+- concept_id: factions/untote_armee_von_steinbachtal
+  type: Faction
+  canonical_name: Untotenarmee von Steinbachtal
   aliases: []
 - concept_id: factions/untote_horde_von_zebras
   type: Faction
@@ -7143,10 +7165,6 @@ retired:
 - concept_id: factions/untote_krieger
   type: Faction
   canonical_name: Untote Krieger
-  aliases: []
-- concept_id: factions/untotenarmee_von_steinbachtal
-  type: Faction
-  canonical_name: Untotenarmee von Steinbachtal
   aliases: []
 - concept_id: items/alchemistische_fluessigkeit
   type: Item
@@ -7163,6 +7181,10 @@ retired:
 - concept_id: items/arcane_door
   type: Item
   canonical_name: Arcane Door
+  aliases: []
+- concept_id: items/armringe_von_lindo_laut
+  type: Item
+  canonical_name: Armringe von Lindo Laut
   aliases: []
 - concept_id: items/artefakt_schwebende_kugel
   type: Item
@@ -7184,6 +7206,10 @@ retired:
   type: Item
   canonical_name: Betäubungspfeile
   aliases: []
+- concept_id: items/blitzelementar
+  type: Item
+  canonical_name: Blitzelementar
+  aliases: []
 - concept_id: items/blutstein
   type: Item
   canonical_name: Blutstein
@@ -7195,10 +7221,6 @@ retired:
 - concept_id: items/brief_von_koenig_zebros
   type: Item
   canonical_name: Brief von König Zebros
-  aliases: []
-- concept_id: items/brief_von_valeria
-  type: Item
-  canonical_name: Brief von Valeria
   aliases: []
 - concept_id: items/buch_mit_namen
   type: Item
@@ -7354,6 +7376,10 @@ retired:
   type: Item
   canonical_name: Heiliger Streitkolben (aus Zebras)
   aliases: []
+- concept_id: items/heiliger_streitkolben_aus_zebros
+  type: Item
+  canonical_name: Heiliger Streitkolben (aus Zebras)
+  aliases: []
 - concept_id: items/herz_des_berges
   type: Item
   canonical_name: Herz des Berges
@@ -7432,10 +7458,6 @@ retired:
   type: Item
   canonical_name: Rangers Focus
   aliases: []
-- concept_id: items/ring_von_lindo_laut
-  type: Item
-  canonical_name: Armringe von Lindo Laut
-  aliases: []
 - concept_id: items/rote_magie
   type: Item
   canonical_name: Rote Magie
@@ -7512,7 +7534,7 @@ retired:
   type: Item
   canonical_name: Stärketrank
   aliases: []
-- concept_id: items/staminatrank
+- concept_id: items/stamina_trank
   type: Item
   canonical_name: Stamina-Trank
   aliases: []
@@ -7525,6 +7547,10 @@ retired:
   canonical_name: Stern-Amulett
   aliases: []
 - concept_id: items/streitkolben_von_cepros
+  type: Item
+  canonical_name: Streitkolben von Cepros
+  aliases: []
+- concept_id: items/streitkolben_von_zebros
   type: Item
   canonical_name: Streitkolben von Cepros
   aliases: []
@@ -7560,10 +7586,6 @@ retired:
 - concept_id: items/verbessertes_kurzschwert
   type: Item
   canonical_name: Verbessertes Kurzschwert
-  aliases: []
-- concept_id: items/vertrag_des_ratten_daemons
-  type: Item
-  canonical_name: Vertrag des Ratten-Dämons
   aliases: []
 - concept_id: items/verwandlungstrank
   type: Item
@@ -7994,10 +8016,6 @@ retired:
   type: Location
   canonical_name: Trubans Farm
   aliases: []
-- concept_id: locations/tunnel_der_gnolle
-  type: Location
-  canonical_name: Tunnel der Gnolle
-  aliases: []
 - concept_id: locations/turm_von_sir_edmund
   type: Location
   canonical_name: Turm von Sir Edmund
@@ -8078,10 +8096,6 @@ retired:
 - concept_id: npcs/bertie
   type: NPC
   canonical_name: Bertie
-  aliases: []
-- concept_id: npcs/blitzelementar
-  type: NPC
-  canonical_name: Blitzelementar
   aliases: []
 - concept_id: npcs/buffon
   type: NPC
@@ -8215,6 +8229,10 @@ retired:
 - concept_id: npcs/eisdaemon
   type: NPC
   canonical_name: Eisdämon
+  aliases: []
+- concept_id: npcs/esua
+  type: NPC
+  canonical_name: Esua
   aliases: []
 - concept_id: npcs/esuar
   type: NPC
@@ -8404,10 +8422,6 @@ retired:
 - concept_id: npcs/schnueffi
   type: NPC
   canonical_name: Schnüffi
-  aliases: []
-- concept_id: npcs/seraphen_von_volgotha
-  type: NPC
-  canonical_name: Seraphen von Volgotha
   aliases: []
 - concept_id: npcs/sloppy
   type: NPC

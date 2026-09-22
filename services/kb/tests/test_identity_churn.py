@@ -103,7 +103,20 @@ pytestmark = [
 # (events/splitterkalb), and 6 are identity pairs held for a GM ruling in
 # docs/architecture/DECISION-identity-pairs.md. Ruling those 6 should take
 # this under the guard's 2% ceiling (22 of 1117) without an override.
-CHURN_BASELINE = 23
+# 2026-09-23, after the re-emit: tightened 23 -> 14. This is the measurement
+# that closes I-004 rather than just arguing for it. With write_registry now
+# recording a drifted canonical_name, the census of "drifted id, no aliases,
+# above the FUZZY_RATIO bar" went 17 -> 0: every concept that could lose its
+# reanchor candidate now keeps one, and keeps it automatically on each write.
+# The 9 still drifted-with-no-aliases are all BELOW the bar, which is the set
+# that must stay excluded -- "Harald" for npcs/abisalis_harald, "Jen" for
+# npcs/der_jen, "Seelenstein" for items/haralds_seelenstein. Recording those
+# would misroute a mention the split rules exist to keep apart.
+#
+# The remaining 14 are not I-004: type corrections, the ignore list, and the
+# two identity pairs deliberately left split. The re-emit that produced this
+# needed no --allow-rename and no --allow-prune, which is the real proof.
+CHURN_BASELINE = 14
 
 
 def _fresh_concept_ids() -> set[str]:

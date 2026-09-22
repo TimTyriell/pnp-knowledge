@@ -2,7 +2,7 @@
 type: Conflict
 title: 'Offener Konflikt: Verlassene Mine an der Farm'
 description: Widersprüchliche Belege — menschliche Entscheidung nötig.
-timestamp: '2026-09-22T22:10:10Z'
+timestamp: '2026-09-22T23:02:22Z'
 id: CONFLICT_LOC_VERLASSENE_MINE_AN_DER_FARM
 status: open
 concept: locations/verlassene_mine_an_der_farm

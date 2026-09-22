@@ -8,7 +8,7 @@ tags:
 timestamp: '2025-11-14T00:00:00Z'
 generated:
   by: pnp_okf/0.2.0
-  at: '2026-09-22T22:10:09Z'
+  at: '2026-09-22T23:02:21Z'
 id: ITEM_AMULETT_DES_HEILIGEN_DURAN
 subtype: Artefakt
 aliases:
@@ -75,7 +75,7 @@ Das Amulett des Heiligen [Duran](/deities/heiliger_duran.md) ist ein handlungstr
 
 ## Rolle in der Kampagne
 
-Das Amulett des Heiligen Duran ist ein zentraler Gegenstand, der über viele Sessions hinweg Lindo Laut begleitet und die Gruppe mehrfach beeinflusst. Es wird erstmals als mächtiges Belohnungs-Artefakt eingeführt und rettet die Gruppe durch die Öffnung eines Portals zum Schiff ([P-07]). Danach dient es als Zeichen göttlicher Macht und als Kommunikationsmedium zu den darin enthaltenen Wesen. Eine Stimme aus dem Amulett zieht Lindo Laut in die [Zwischenebene](/domains/zwischenebenen.md) zur Festung ([P-14]); im Heiligtum gewinnen die Kräfte an Stärke und die Stimmen fordern ein Opfer ([P-17]). Später drängt das Amulett Lindo Laut dazu, in ein Herz zu beißen ([P-18]). Nach der Einnahme der roten Phiole hört Lindo Laut keine Stimmen mehr, doch das Amulett bleibt in der Handlung präsent. Im Heiligtum von 2025-09-02 ermöglicht es die Kommunikation mit den Seelen; am Ende fühlt es sich nach der Zerstörung von [Esua](/npcs/esua.md) und [Sintra](/deities/sintra.md) leer an ([P-19]). In der Folge wird es nur beiläufig erwähnt ([P-20]). Schließlich übergibt Horatio am 2025-11-14 ein gefundenes Amulett an [Rotunas](/characters/rotunas.md), das die Tore zum Untergeschoss und zum Dungeon öffnet ([P-29]).
+Das Amulett des Heiligen Duran ist ein zentraler Gegenstand, der über viele Sessions hinweg Lindo Laut begleitet und die Gruppe mehrfach beeinflusst. Es wird erstmals als mächtiges Belohnungs-Artefakt eingeführt und rettet die Gruppe durch die Öffnung eines Portals zum Schiff ([P-07]). Danach dient es als Zeichen göttlicher Macht und als Kommunikationsmedium zu den darin enthaltenen Wesen. Eine Stimme aus dem Amulett zieht Lindo Laut in die [Zwischenebene](/domains/zwischenebenen.md) zur Festung ([P-14]); im Heiligtum gewinnen die Kräfte an Stärke und die Stimmen fordern ein Opfer ([P-17]). Später drängt das Amulett Lindo Laut dazu, in ein Herz zu beißen ([P-18]). Nach der Einnahme der roten Phiole hört Lindo Laut keine Stimmen mehr, doch das Amulett bleibt in der Handlung präsent. Im Heiligtum von 2025-09-02 ermöglicht es die Kommunikation mit den Seelen; am Ende fühlt es sich nach der Zerstörung von [Esua](/deities/esua.md) und [Sintra](/deities/sintra.md) leer an ([P-19]). In der Folge wird es nur beiläufig erwähnt ([P-20]). Schließlich übergibt Horatio am 2025-11-14 ein gefundenes Amulett an [Rotunas](/characters/rotunas.md), das die Tore zum Untergeschoss und zum Dungeon öffnet ([P-29]).
 
 ## Wichtige Merkmale
 

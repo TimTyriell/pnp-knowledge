@@ -8,8 +8,8 @@ tags:
 timestamp: '2025-04-01T00:00:00Z'
 generated:
   by: pnp_okf/0.2.0
-  at: '2026-09-22T22:10:09Z'
-id: ITEM_STAMINA_TRANK
+  at: '2026-09-22T23:02:21Z'
+id: ITEM_STAMINATRANK
 subtype: Trank
 sources:
 - id: P-02

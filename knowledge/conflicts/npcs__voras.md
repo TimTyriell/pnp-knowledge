@@ -2,7 +2,7 @@
 type: Conflict
 title: 'Offener Konflikt: Voras der Heilige'
 description: Widersprüchliche Belege — menschliche Entscheidung nötig.
-timestamp: '2026-09-22T22:10:11Z'
+timestamp: '2026-09-22T23:02:22Z'
 id: CONFLICT_NPC_VORAS
 status: open
 concept: npcs/voras

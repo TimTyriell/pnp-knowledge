@@ -8,8 +8,8 @@ tags:
 timestamp: '2025-03-26T00:00:00Z'
 generated:
   by: pnp_okf/0.2.0
-  at: '2026-09-22T22:10:09Z'
-id: EVENT_KAMPF_GEGEN_DAS_TENTAKELMONSTER
+  at: '2026-09-22T23:02:20Z'
+id: EVENT_KAMPF_GEGEN_DAS_TENTAKELIGE_MONSTER
 subtype: Kampf
 sources:
 - id: P-01

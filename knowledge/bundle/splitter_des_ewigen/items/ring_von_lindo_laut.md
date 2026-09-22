@@ -8,8 +8,8 @@ tags:
 timestamp: '2026-03-03T00:00:00Z'
 generated:
   by: pnp_okf/0.2.0
-  at: '2026-09-22T22:10:09Z'
-id: ITEM_ARMRINGE_VON_LINDO_LAUT
+  at: '2026-09-22T23:02:21Z'
+id: ITEM_RING_VON_LINDO_LAUT
 subtype: Schmuck
 sources:
 - id: P-39

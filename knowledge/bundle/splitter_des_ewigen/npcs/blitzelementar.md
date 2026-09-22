@@ -1,15 +1,15 @@
 ---
-type: Item
+type: NPC
 title: Blitzelementar
 description: Ein von Bruma beschworener Elementargeist in Gestalt einer Blitzform,
   der als Wache am Lagerausgang postiert wird. Er verschwindet, als die…
 tags:
-- items
+- npcs
 timestamp: '2026-07-10T00:00:00Z'
 generated:
   by: pnp_okf/0.2.0
-  at: '2026-09-22T22:10:09Z'
-id: ITEM_BLITZELEMENTAR
+  at: '2026-09-22T23:02:22Z'
+id: NPC_BLITZELEMENTAR
 sources:
 - id: S1-01-B
   resource: https://www.youtube.com/watch?v=H-eHSlfxUAg
