@@ -6,9 +6,28 @@ description: Leandras ist ein menschlicher Magier. Die Heldengruppe begegnet ihm
 tags:
 - npcs
 timestamp: '2026-06-10T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_LENDRAS
 aliases:
 - Lendras
+relationships:
+- target: characters/valeria
+- target: npcs/voras
+sources:
+- id: P-03
+  resource: https://www.youtube.com/watch?v=1PWdwvun5ow
+  last_modified: '2025-04-09T00:00:00Z'
+- id: P-05
+  resource: https://www.youtube.com/watch?v=z3C-bewKqUs
+  last_modified: '2025-04-23T00:00:00Z'
+- id: P-16
+  resource: https://www.youtube.com/watch?v=XXgO5Ht4Q0A
+  last_modified: '2025-07-29T00:00:00Z'
+- id: P-53
+  resource: https://www.youtube.com/watch?v=_3tLSiT1tck
+  last_modified: '2026-06-10T00:00:00Z'
 ---
 
 Leandras ist ein menschlicher Magier. Die Heldengruppe begegnet ihm zunächst in seinem kleinen Haus in [Breska](/locations/breska.md); später wird er als der Magier von [Gemata](/locations/gemata.md) bezeichnet, und schließlich tritt er als Auftraggeber der Gruppe auf. [Lunara](/characters/lunara_velora.md), die ihm eine silberne Feder verdankt, denkt nach ihrer Wiederbelebung dankbar an ihn.

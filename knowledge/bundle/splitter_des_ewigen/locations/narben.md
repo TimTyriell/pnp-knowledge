@@ -6,10 +6,23 @@ description: Die Narben sind eine Region in Abyssalis. Bekannt wurden sie als Or
 tags:
 - locations
 timestamp: '2026-07-21T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T22:10:10Z'
 id: LOC_NARBEN
 subtype: Wildnis
 aliases:
 - Narbe
+sources:
+- id: P-49
+  resource: https://www.youtube.com/watch?v=4afPD9Q_5AY
+  last_modified: '2026-05-13T00:00:00Z'
+- id: P-54
+  resource: https://www.youtube.com/watch?v=qe0ck8hvYpk
+  last_modified: '2026-06-16T00:00:00Z'
+- id: P-55
+  resource: https://www.youtube.com/watch?v=KNV4oNGJ0tw
+  last_modified: '2026-07-21T00:00:00Z'
 ---
 
 [Die Narben](/locations/die_narbe.md) sind eine Region in [Abyssalis](/domains/splitterwelt.md). Bekannt wurden sie als Ort, an dem der [Splitter des Ewigen](/items/splitter_des_ewigen.md) aufbewahrt wurde; für die Gruppe waren sie das Ziel der Suche nach einem Altar.

@@ -6,8 +6,15 @@ description: Xerxes wirft einen mit einem Seil verbundenen Dolch auf einen Dämo
 tags:
 - items
 timestamp: '2026-04-09T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: ITEM_DOLCH_MIT_SEIL_VON_XERXES
 subtype: Waffe
+sources:
+- id: P-46
+  resource: https://www.youtube.com/watch?v=vcGkejr8_nI
+  last_modified: '2026-04-09T00:00:00Z'
 ---
 
 Xerxes wirft einen mit einem Seil verbundenen [Dolch](/items/dolch.md) auf einen Dämon, pinnt ihn fest und zieht ihn zu Boden. Später trifft er damit eine fliegende Kreatur und reißt ihr den Flügel ab.

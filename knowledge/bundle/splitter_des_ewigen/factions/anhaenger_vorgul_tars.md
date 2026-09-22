@@ -6,8 +6,17 @@ description: Die Anhänger Vorgul'tars sind eine in Abyssalis weitverbreitete Gr
 tags:
 - factions
 timestamp: '2026-05-19T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_ANHAENGER_VORGUL_TARS
 subtype: Kult
+relationships:
+- target: deities/ohoriaks
+sources:
+- id: P-50
+  resource: https://www.youtube.com/watch?v=xEcGJeaNixI
+  last_modified: '2026-05-19T00:00:00Z'
 ---
 
 Die Anhänger Vorgul'tars sind eine in [Abyssalis](/domains/splitterwelt.md) weitverbreitete Gruppe, die im Namen von [Vorgul'tar](/deities/vorgul_tar.md) die Tore zur [Narbe](/locations/narben.md) bewacht. Ihr Kennzeichen ist weniger ein einheitliches Auftreten als ihre Forderung an Fremde: absolute Treue zu Vorgul'tar. Auffällig ist, dass sich die Gruppe nicht als organisierte Anhängerschaft Vorgul'tars zu erkennen gibt; gerade diese Heimlichtuerei führt wiederholt zu Konflikten.

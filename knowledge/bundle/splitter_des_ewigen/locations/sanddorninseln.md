@@ -6,6 +6,9 @@ description: Die Sanddorn-Inseln – im Spiel auch als Sundown-Inseln bekannt �
 tags:
 - locations
 timestamp: '2026-08-12T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:16Z'
 id: LOC_SANDDORNINSELN
 subtype: Wildnis
 aliases:
@@ -13,6 +16,32 @@ aliases:
 - Sanddorn-Insel
 - Sandhorn-Inseln
 - Sanddorninseln
+relationships:
+- target: characters/bruma_stormrak
+  note: '**Zu Bruma Stormrak:** Seine Heimat liegt auf einer Insel in der Nähe von
+    Sanddorn. Er wurde dort als Werkzeug benutzt und musste die Insel verlassen. Gegenüber
+    Saris schildert er: „Ich musste meine…'
+- target: characters/lunara_velora
+  note: '**Zu Lunara Velora:** Die Sanddorn-Inseln sind ihre Heimat. Sie wurde dort
+    geboren und von ihrer Mutter im Hexenzirkel der Nachtwächterinnen großgezogen.
+    Die Auflösung des Zirkels zwang sie, die Inse…'
+- target: locations/tarkia
+  note: '**Zu Tarkia:** Die Inseln liegen in der Nähe von Tarkia, was die Handelsbedeutung
+    der Region unterstreicht.'
+- target: npcs/joar_vanur
+  note: '**Zu Joar Vanur:** Joar Vanur ist Herr über einen Teil der Sanddorn-Inseln
+    und tritt als Repräsentant der Region auf. Er bietet der Gruppe kostenlose Überfahrt
+    dorthin und weitere Vergünstigungen an…'
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=w__ahowb9p0
+  last_modified: '2025-11-18T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=0HyPHao8s_k
+  last_modified: '2026-08-06T00:00:00Z'
+- id: '3'
+  resource: https://www.youtube.com/watch?v=piUv11DCwDw
+  last_modified: '2026-08-12T00:00:00Z'
 ---
 
 # Überblick

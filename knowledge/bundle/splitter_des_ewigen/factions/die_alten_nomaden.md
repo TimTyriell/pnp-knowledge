@@ -6,8 +6,15 @@ description: Die Alten sind eine Gemeinschaft von Nomaden, die seit vielen Gener
 tags:
 - factions
 timestamp: '2025-08-12T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_DIE_ALTEN_NOMADEN
 subtype: Kult
+sources:
+- id: P-17
+  resource: https://www.youtube.com/watch?v=vHIjua0BZ9Y
+  last_modified: '2025-08-12T00:00:00Z'
 ---
 
 Die Alten sind eine Gemeinschaft von Nomaden, die seit vielen Generationen in den Bergen lebt. Sie dienen dem alten Gott [Seras](/deities/tarvok_der_erdrichter.md) und stehen unter der Führung von [Hendrik](/npcs/hendrik.md). Ihr Erscheinungsbild ist von Entbehrung geprägt: Die Mitglieder sind abgemagert, tragen alte Kleidung und sprechen einen alten Dialekt. Fremden gegenüber verhalten sie sich misstrauisch und halten ihre religiösen Praktiken geheim.

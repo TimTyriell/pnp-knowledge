@@ -6,6 +6,9 @@ description: Die Taverne von Ehrenfels ist ein Gasthaus nahe dem Westen der Stad
 tags:
 - locations
 timestamp: '2026-07-29T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:16Z'
 id: LOC_TAVERNE_VON_EHRENFELS
 subtype: Gebäude
 aliases:
@@ -13,6 +16,16 @@ aliases:
 - Die Taverne
 - Taverne (ungenannt)
 - Taverne (in Ehrenfels)
+sources:
+- id: P-15
+  resource: https://www.youtube.com/watch?v=BRRCUgW4xRo
+  last_modified: '2025-07-22T00:00:00Z'
+- id: P-30
+  resource: https://www.youtube.com/watch?v=w__ahowb9p0
+  last_modified: '2025-11-18T00:00:00Z'
+- id: S1-01-A
+  resource: https://www.youtube.com/watch?v=umGyKLkefJI
+  last_modified: '2026-07-29T00:00:00Z'
 ---
 
 Die **Taverne von Ehrenfels** ist ein Gasthaus nahe dem Westen der Stadt [Ehrenfels](/locations/ehrenfels.md). Der Holzbau dient als Schänke und Herberge und wird im Lauf der Ereignisse mehrfach zum Schauplatz zentraler Begebenheiten: eines Überfalls, geselliger Zusammenkünfte und des Empfangs der zurückkehrenden Helden.

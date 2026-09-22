@@ -6,8 +6,81 @@ description: Ehrenfels ist eine kleine, schwer erreichbare Bergstadt in den Eule
 tags:
 - locations
 timestamp: '2026-08-25T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: LOC_EHRENFELS
 subtype: Siedlung
+verified:
+  by: human:gm
+relationships:
+- target: characters/otis
+- target: deities/neue_goetter
+- target: locations/breska
+- target: locations/casa_del_cookie
+- target: npcs/auranil
+- target: npcs/inaros
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=BRRCUgW4xRo
+  last_modified: '2025-07-22T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=cUtz87UCHu4
+  last_modified: '2025-10-14T00:00:00Z'
+- id: '3'
+  resource: https://www.youtube.com/watch?v=w__ahowb9p0
+  last_modified: '2025-11-18T00:00:00Z'
+- id: '4'
+  resource: https://www.youtube.com/watch?v=VGw81seFvbo
+  last_modified: '2026-01-06T00:00:00Z'
+- id: '5'
+  resource: https://www.youtube.com/watch?v=w4LB1s9_3rs
+  last_modified: '2026-01-13T00:00:00Z'
+- id: '6'
+  resource: https://www.youtube.com/watch?v=H3ckYdTv4y8
+  last_modified: '2026-01-20T00:00:00Z'
+- id: '7'
+  resource: https://www.youtube.com/watch?v=9RzvnnWzV7E
+  last_modified: '2026-01-27T00:00:00Z'
+- id: '8'
+  resource: https://www.youtube.com/watch?v=Z2jlzpoTWVw
+  last_modified: '2026-02-17T00:00:00Z'
+- id: '9'
+  resource: https://www.youtube.com/watch?v=BRUNuNKTeOg
+  last_modified: '2026-03-03T00:00:00Z'
+- id: '10'
+  resource: https://www.youtube.com/watch?v=Kr9_AC2XtOw
+  last_modified: '2026-03-10T00:00:00Z'
+- id: '11'
+  resource: https://www.youtube.com/watch?v=Yj5BWJfg3Ag
+  last_modified: '2026-03-24T00:00:00Z'
+- id: '12'
+  resource: https://www.youtube.com/watch?v=Ee-K84wcxLM
+  last_modified: '2026-03-31T00:00:00Z'
+- id: '13'
+  resource: https://www.youtube.com/watch?v=vcGkejr8_nI
+  last_modified: '2026-04-09T00:00:00Z'
+- id: '14'
+  resource: https://www.youtube.com/watch?v=1Jyu92P7_Fg
+  last_modified: '2026-04-14T00:00:00Z'
+- id: '15'
+  resource: https://www.youtube.com/watch?v=EGNh8O7pE5Q
+  last_modified: '2026-06-04T00:00:00Z'
+- id: '16'
+  resource: https://www.youtube.com/watch?v=umGyKLkefJI
+  last_modified: '2026-07-29T00:00:00Z'
+- id: '17'
+  resource: https://www.youtube.com/watch?v=qRj2t3wQHfs
+  last_modified: '2026-08-04T00:00:00Z'
+- id: '18'
+  resource: https://www.youtube.com/watch?v=piUv11DCwDw
+  last_modified: '2026-08-12T00:00:00Z'
+- id: '19'
+  resource: https://www.youtube.com/watch?v=10swvSz6k7U
+  last_modified: '2026-08-18T00:00:00Z'
+- id: '20'
+  resource: https://www.youtube.com/watch?v=1Cjj3OVqiYA
+  last_modified: '2026-08-25T00:00:00Z'
 ---
 
 ## Überblick

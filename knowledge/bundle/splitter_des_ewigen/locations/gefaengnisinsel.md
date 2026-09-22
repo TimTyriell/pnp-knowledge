@@ -6,8 +6,15 @@ description: Auf einer Nachbarinsel befindet sich das Gefängnis, in dem Gulrak 
 tags:
 - locations
 timestamp: '2025-04-30T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:16Z'
 id: LOC_GEFAENGNISINSEL
 subtype: Gebäude
+sources:
+- id: P-06
+  resource: https://www.youtube.com/watch?v=fsCOiSkKKTE
+  last_modified: '2025-04-30T00:00:00Z'
 ---
 
 Auf einer Nachbarinsel befindet sich das Gefängnis, in dem [Gulrak](/npcs/gulrak.md) festgehalten wird. Es wird von den Wachen [Lars und Toran](/npcs/lars_und_toran.md) bewacht. Die Gruppe verhört Gulrak dort in seiner Zelle. [Rotunas](/characters/rotunas.md) versiegelt später die Tür mit einem Runenschloss.

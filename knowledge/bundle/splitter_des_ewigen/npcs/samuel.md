@@ -6,7 +6,14 @@ description: Samuel ist der gutartige Totenschädel auf Saris' rechter Schulter.
 tags:
 - npcs
 timestamp: '2026-06-04T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_SAMUEL
+sources:
+- id: P-52
+  resource: https://www.youtube.com/watch?v=EGNh8O7pE5Q
+  last_modified: '2026-06-04T00:00:00Z'
 ---
 
 Samuel ist der gutartige Totenschädel auf [Saris](/characters/saris.md)' rechter Schulter. Er rät Saris, den Segen [Jorans](/deities/joran.md) nicht anzunehmen, weil die Eule Lügen erzählt. Er war einst ein Untoter, der sich Saris freiwillig anschloss, und wird von [Kaya](/characters/kaya.md) als 'der Gute' bezeichnet.

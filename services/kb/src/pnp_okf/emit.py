@@ -190,7 +190,14 @@ def _lead_text(body: str) -> str:
     """
 
     for block in body.split("\n\n"):
-        line = block.strip()
+        # A heading glued to its paragraph by a missing blank line ("## Ueberblick"
+        # then the text on the next line) was skipped whole, taking the paragraph
+        # with it -- so the concept fell through to the raw mention note this
+        # function exists to avoid.
+        lines = block.strip().splitlines()
+        while lines and lines[0].lstrip().startswith("#"):
+            lines.pop(0)
+        line = chr(10).join(lines).strip()
         if not line or _NOT_PROSE.match(line):
             continue
         line = _MD_LINK.sub(r"\1", line)

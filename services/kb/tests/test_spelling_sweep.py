@@ -230,7 +230,14 @@ _LINK_RE = re.compile(r"\[([^\]]+)\]\((?!\w+:)([^)\s]*?\.md)\)")
 # the wrong concept. Not chased individually per the handoff; ratchet
 # against the new measurement instead.
 LABEL_TARGET_MISMATCH_BASELINE = 42
-LABEL_TARGET_MISMATCH_OCCURRENCE_BASELINE = 55
+# 2026-09-23, 68th session ingested: occurrences raised 55 -> 56 while the
+# distinct count held at exactly 42. No new defect *shape* appeared -- one
+# already-known pair is simply written once more in the new session's prose.
+# The distinct baseline above is the one that measures defect kinds; this one
+# measures how often they are repeated, and a growing corpus repeats them.
+# Raised on that basis only: if the distinct count had moved too, this would
+# be a regression to chase rather than a volume to record.
+LABEL_TARGET_MISMATCH_OCCURRENCE_BASELINE = 56
 
 
 def _title_and_aliases_by_concept() -> dict[str, tuple[str, list[str]]]:

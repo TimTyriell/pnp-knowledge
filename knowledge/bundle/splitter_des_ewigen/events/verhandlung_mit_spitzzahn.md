@@ -6,8 +6,15 @@ description: Die Verhandlung zwischen den Anführern der Karawane und Bürgermei
 tags:
 - events
 timestamp: '2026-08-20T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_VERHANDLUNG_MIT_SPITZZAHN
 subtype: Verhandlung
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=2EkWrNUfQi0
+  last_modified: '2026-08-20T00:00:00Z'
 ---
 
 Die Verhandlung zwischen den Anführern der Karawane und [Bürgermeister Spitzzahn](/npcs/buergermeister_spitzzahn.md) über die Einlassbedingungen nach [Ringtal](/locations/ringtal.md). Spitzzahn fordert Arbeitsleistung und zwei Säcke Gold; [Hauptmann Aaron](/npcs/hauptmann_aaron.md) willigt ein, die Summe zu zahlen. Bruma und [Sange](/characters/sange.md) beteiligen sich an der Diskussion und sorgen für eine faire Behandlung der [Flüchtlinge](/factions/fluechtlinge.md).

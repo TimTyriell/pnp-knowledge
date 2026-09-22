@@ -6,7 +6,14 @@ description: 'Abyssalis ist eine vergessene Welt und alte Bastion der alten Göt
 tags:
 - domains
 timestamp: '2025-09-30T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DOMAIN_ABYSSALIS_ABYSSARES
+sources:
+- id: P-24
+  resource: https://www.youtube.com/watch?v=bUT7Mc2hjUY
+  last_modified: '2025-09-30T00:00:00Z'
 ---
 
 # Abyssalis

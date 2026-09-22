@@ -6,8 +6,15 @@ description: Die Brabarand-Gilde ist eine bekannte Assassinen-Gilde, deren Mitgl
 tags:
 - factions
 timestamp: '2025-07-22T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_BRABARAND_GILDE
 subtype: Gilde
+sources:
+- id: P-15
+  resource: https://www.youtube.com/watch?v=BRRCUgW4xRo
+  last_modified: '2025-07-22T00:00:00Z'
 ---
 
 Die **Brabarand-Gilde** ist eine bekannte [Assassinen](/factions/assassinen.md)-Gilde, deren Mitglieder als Auftragskiller agieren. Über ihre Organisation, ihren Sitz oder ihre Führungsstruktur ist bislang wenig bekannt; öffentlich kursiert vor allem ihr Ruf als gefährliche und gut ausgestattete Killerorganisation.

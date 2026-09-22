@@ -6,8 +6,17 @@ description: Crowfin Manor ist ein altes, gut erhaltenes Anwesen, das einst die 
 tags:
 - locations
 timestamp: '2026-02-17T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: LOC_CROWFIN_MANOR
 subtype: Gebäude
+relationships:
+- target: factions/koenigreich_zebros
+sources:
+- id: P-37
+  resource: https://www.youtube.com/watch?v=Z2jlzpoTWVw
+  last_modified: '2026-02-17T00:00:00Z'
 ---
 
 Crowfin Manor ist ein altes, gut erhaltenes Anwesen, das einst die königliche Residenz der Familie [Zebros](/factions/koenigreich_zebros.md) war. Es steht seit Jahrhunderten und ist mit Magie vor dem Verfall geschützt. Das Anwesen verfügt über viele Zimmer, einen Garten mit dem [Schwert](/items/schwert.md) [Zebrosia](/items/zebrosia.md) und eine Bibliothek. Ein starker Schutzzauber verhindert das Eindringen Unbefugter und unterdrückt übernatürliche Kräfte. Die Gruppe verbringt den Großteil der Session hier.

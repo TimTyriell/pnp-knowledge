@@ -6,8 +6,15 @@ description: Eine Brücke auf dem Weg zum Heiligtum, die beim Überqueren eine l
 tags:
 - locations
 timestamp: '2025-08-12T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:17Z'
 id: LOC_ZWEITE_BRUECKE
 subtype: Sonstiges
+sources:
+- id: P-17
+  resource: https://www.youtube.com/watch?v=vHIjua0BZ9Y
+  last_modified: '2025-08-12T00:00:00Z'
 ---
 
 Eine Brücke auf dem Weg zum Heiligtum, die beim Überqueren eine lähmende Wirkung entfaltet. [Dodo](/characters/dodo.md) verliert vier Stresspunkte und fühlt sich hoffnungslos; auch [Cookie](/characters/cookie.md) und [Nyrella](/characters/nyrella.md) bemerken die Kraft, können aber widerstehen. [Esterossa](/characters/esterossa.md) wird durch sein Gebet geschützt. Die Brücke scheint eine Prüfung oder Barriere des Berges zu sein.

@@ -6,10 +6,17 @@ description: Die große Arena der Stadt Willauch ist Schauplatz der Monsterkämp
 tags:
 - locations
 timestamp: '2025-10-21T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: LOC_ARENA_VON_WILLAUCH
 subtype: Gebäude
 aliases:
 - Arena von Willau
+sources:
+- id: P-27
+  resource: https://www.youtube.com/watch?v=sxFhbtwoefA
+  last_modified: '2025-10-21T00:00:00Z'
 ---
 
 Die große [Arena](/locations/arena.md) der Stadt [Willauch](/locations/willauch.md) ist Schauplatz der Monsterkämpfe. Sie bietet Platz für tausende Zuschauer und hat einen Thronsaal für Lord und Lady. Die Helden kämpfen hier in der ersten Prüfung und kehren nach der zweiten zurück.

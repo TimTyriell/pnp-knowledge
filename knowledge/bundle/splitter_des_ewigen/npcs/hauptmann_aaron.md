@@ -6,7 +6,25 @@ description: Hauptmann Aaron ist ein kriegserfahrener Veteran in schwerer, besch
 tags:
 - npcs
 timestamp: '2026-09-03T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:17Z'
 id: NPC_HAUPTMANN_AARON
+relationships:
+- target: characters/bruma_stormrak
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=H-eHSlfxUAg
+  last_modified: '2026-07-10T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=0HyPHao8s_k
+  last_modified: '2026-08-06T00:00:00Z'
+- id: '3'
+  resource: https://www.youtube.com/watch?v=2EkWrNUfQi0
+  last_modified: '2026-08-20T00:00:00Z'
+- id: '4'
+  resource: https://www.youtube.com/watch?v=bl-hX87_EC8
+  last_modified: '2026-09-03T00:00:00Z'
 ---
 
 Hauptmann Aaron ist ein kriegserfahrener Veteran in schwerer, beschädigter Rüstung ohne Wappen. Er führt die Söldner, die eine Halblingsiedlung bewachen, und organisiert später als [Kommandant](/npcs/gnoll_kommandant.md) der Garde von [Ringtal](/locations/ringtal.md) die Verteidigung der Stadt. Er wird als misstrauisch und pragmatisch beschrieben; im Angesicht der Schlacht gilt er trotz Erschöpfung als gefasst und für die Verteidigung [Ringtals](/locations/ringtal.md) als unverzichtbar.

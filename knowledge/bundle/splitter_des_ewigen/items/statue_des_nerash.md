@@ -6,8 +6,15 @@ description: Die kleine Götzenstatue von Nerash wird von Esterossa hervorgeholt
 tags:
 - items
 timestamp: '2026-05-13T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: ITEM_STATUE_DES_NERASH
 subtype: Artefakt
+sources:
+- id: P-49
+  resource: https://www.youtube.com/watch?v=4afPD9Q_5AY
+  last_modified: '2026-05-13T00:00:00Z'
 ---
 
 Die kleine Götzenstatue von [Nerash](/deities/nerash.md) wird von [Esterossa](/characters/esterossa.md) hervorgeholt und dem Seraphen vorgehalten, woraufhin dieser zusammenbricht. Sie zeigt, dass die Gruppe Nerash befreit hat.

@@ -6,7 +6,33 @@ description: Roland ist der Sprecher und Älteste der Flüchtlinge aus Breska un
 tags:
 - npcs
 timestamp: '2026-01-13T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T22:10:10Z'
 id: NPC_ROLAND
+relationships:
+- target: characters/dodo
+- target: characters/rotunas
+  note: '**Rotunas und die Heldengruppe:** Roland kennt sie aus der Goblin-Schlacht
+    und nennt sie „Rotunas-Bande“. Er arbeitet eng mit ihnen zusammen, vertraut ihnen
+    nach der Offenbarung des Mordplans und bed…'
+- target: npcs/buergermeister_spitzzahn
+  note: '**Bürgermeister von Breska:** Roland sagt von sich, er sei „eigentlich befreundet
+    mit dem Bürgermeister“, aber sein Einfluss sinke mit der Zeit.'
+- target: npcs/nyruk
+sources:
+- id: P-22
+  resource: https://www.youtube.com/watch?v=AhIT8dcxw2o
+  last_modified: '2025-09-17T00:00:00Z'
+- id: P-23
+  resource: https://www.youtube.com/watch?v=DGzfqVigS0g
+  last_modified: '2025-09-23T00:00:00Z'
+- id: P-24
+  resource: https://www.youtube.com/watch?v=bUT7Mc2hjUY
+  last_modified: '2025-09-30T00:00:00Z'
+- id: P-33
+  resource: https://www.youtube.com/watch?v=w4LB1s9_3rs
+  last_modified: '2026-01-13T00:00:00Z'
 ---
 
 ## Überblick

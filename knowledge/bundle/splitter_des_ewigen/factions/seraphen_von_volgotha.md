@@ -6,7 +6,14 @@ description: Die Seraphen von Volgotha sind geflügelte Diener Volgothas. Sie be
 tags:
 - factions
 timestamp: '2026-06-10T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T22:10:09Z'
 id: FACTION_SERAPHEN_VON_VOLGOTHA
+sources:
+- id: P-53
+  resource: https://www.youtube.com/watch?v=_3tLSiT1tck
+  last_modified: '2026-06-10T00:00:00Z'
 ---
 
 Die **Seraphen von Volgotha** sind geflügelte Diener [Volgothas](/deities/volgotha.md). Sie begegneten der Heldengruppe zuerst als zwei einzelne Gegner und später als großer Verband, der das [Kristall-Biest](/npcs/kristall_biest.md) angriff.

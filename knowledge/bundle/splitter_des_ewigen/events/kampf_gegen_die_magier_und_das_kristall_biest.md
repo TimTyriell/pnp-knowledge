@@ -6,8 +6,15 @@ description: Nach dem Aussprechen des Namens Huludan greift ein Kristall-Biest d
 tags:
 - events
 timestamp: '2026-06-10T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:11Z'
 id: EVENT_KAMPF_GEGEN_DIE_MAGIER_UND_DAS_KRISTALL_BIEST
 subtype: Kampf
+sources:
+- id: P-53
+  resource: https://www.youtube.com/watch?v=_3tLSiT1tck
+  last_modified: '2026-06-10T00:00:00Z'
 ---
 
 Nach dem Aussprechen des Namens [Huludan](/deities/huludan.md) greift ein [Kristall-Biest](/npcs/kristall_biest.md) die feindlichen Magier an. Die Gruppe unterstützt das Biest, indem sie Magier in seine Reichweite wirft. Seraphen erscheinen und beschießen das Biest. Durch das Chaos gelingt der Gruppe die Flucht in den Tempel.

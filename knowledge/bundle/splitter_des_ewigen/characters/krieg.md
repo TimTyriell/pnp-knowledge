@@ -6,7 +6,14 @@ description: Krieg ist ein Goblin-Krieger, der mit einem Wurfhammer kämpft und 
 tags:
 - characters
 timestamp: '2026-05-27T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:09Z'
 id: CHAR_KRIEG
+sources:
+- id: P-51
+  resource: https://www.youtube.com/watch?v=IYYmgpqsp7E
+  last_modified: '2026-05-27T00:00:00Z'
 ---
 
 Krieg ist ein Goblin-Krieger, der mit einem Wurfhammer kämpft und sich selbst als „Meisterstratege“ bezeichnet – ein Titel, den der Paladin der Gruppe spöttisch aufgreift. Er stammt aus [Tarkia](/locations/tarkia.md) und wurde gesegnet, sodass er länger lebt als gewöhnliche [Goblins](/npcs/pilz_goblins.md). Krieg gehört zu einer Abenteuergruppe und fügt sich deren Entscheidungen, auch wenn er eigene Vorlieben deutlich zeigt.

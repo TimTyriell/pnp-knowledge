@@ -6,8 +6,15 @@ description: Nach dem Friedensabkommen erscheint plötzlich eine große Anzahl G
 tags:
 - events
 timestamp: '2026-01-27T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_TELEPORTATION_ZUR_FESTUNG
 subtype: Reise
+sources:
+- id: P-35
+  resource: https://www.youtube.com/watch?v=9RzvnnWzV7E
+  last_modified: '2026-01-27T00:00:00Z'
 ---
 
 Nach dem Friedensabkommen erscheint plötzlich eine große Anzahl [Goblins](/npcs/pilz_goblins.md), die die Gruppe einschüchtern. [Lord Harik](/npcs/lord_harik.md) bittet [Rotunas](/characters/rotunas.md), die Gruppe sicher herauszubringen. Rotunas wirkt erfolgreich einen Teleportationszauber, bei dem Runen unter allen Personen erscheinen und sie in einem Lichtblitz verschwinden lässt. Die Gruppe kehrt unversehrt zur [Zwergenfestung](/locations/zwergenfestung.md) zurück.

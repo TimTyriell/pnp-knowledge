@@ -6,8 +6,15 @@ description: Ein Goblin springt aus einem Zelt und greift an. Dodo und Esterossa
 tags:
 - events
 timestamp: '2025-04-01T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:11Z'
 id: EVENT_KAMPF_GEGEN_DEN_GOBLIN_SPAEHER_IM_ZELTLAGER
 subtype: Kampf
+sources:
+- id: P-02
+  resource: https://www.youtube.com/watch?v=LZIuUzc3F18
+  last_modified: '2025-04-01T00:00:00Z'
 ---
 
 Ein Goblin springt aus einem Zelt und greift an. [Dodo](/characters/dodo.md) und [Esterossa](/characters/esterossa.md) kämpfen, aber [Perry](/npcs/perry_das_schnabeltier.md) tötet ihn mit einem Stich ins Auge. Die Gruppe durchsucht danach das Lager.

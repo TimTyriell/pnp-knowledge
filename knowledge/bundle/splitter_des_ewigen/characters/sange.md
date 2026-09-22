@@ -1,12 +1,60 @@
 ---
 type: Character
 title: Sange
-description: 'Auftreten: Sange trägt stets eine magische Maske, deren Mimik sich verändern
-  kann und seine Emotionen spiegelt. Als er Bruma kennenlernt, z…'
+description: Sange ist ein Katari-Blood-Hunter, der eine magische Maske trägt, deren
+  Mimik sich verändern und Emotionen spiegeln kann. Er kleidet sich e…
 tags:
 - characters
 timestamp: '2026-09-03T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:11:53Z'
 id: CHAR_SANGE
+relationships:
+- target: characters/bruma_stormrak
+  note: '**Bruma:** Sange folgt Bruma begeistert in die Mine, beobachtet ihn anfangs
+    misstrauisch und teilt später ein Zelt mit ihm. Enge Kampfgefährtenschaft.'
+- target: characters/kaya
+  note: '**Kaya:** Enge Beziehung; Kaya beruhigt ihn nach der unfreiwilligen Verwandlung.'
+- target: characters/saris
+  note: '**Saris:** Sange ist Saris gegenüber skeptisch, untersucht dessen Vergangenheit
+    mit seiner Vision und entfernt später Saris'' Blut von dessen Kleidung.'
+- target: deities/joran
+  note: '**Joran, der Münzenzähler:** Segnete Sange, was dessen Blutmagie beruhigte
+    und einen Lichtfunken im roten Chaos entzündete. Die Verbindung zeigt sich im
+    Timer mit einem Strich, in Visionen (eine gefl…'
+- target: deities/joran_der_muenzenzaehler
+- target: locations/brandau
+- target: npcs/adeliga_der_eulenseraph
+  note: '**Adeliga:** Vermittelt Jorans Segen; Sange flüstert ihr seinen wahren Namen
+    zu.'
+- target: npcs/eulenartige_waechterin
+  note: '**Eulenartige Wächterin:** Wird von Sange nach Adeliga befragt, reagiert
+    feindselig und bedroht ihn mit Dolchen.'
+- target: npcs/grottenschrat
+  note: '**Grottenschrat:** Sange sieht mit seiner Magie dessen letzte erlittene Gewalt.'
+- target: npcs/talron
+  note: '**Talron, Herr Raxlis, Hauptmann Aaron, Xenia, Sir Tali von Brandau, Spitzzahn:**
+    Interaktionen in Ringtal (Verhandlung, Verteidigung, Beunruhigung).'
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=EGNh8O7pE5Q
+  last_modified: '2026-06-04T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=H-eHSlfxUAg
+  last_modified: '2026-07-10T00:00:00Z'
+- id: '3'
+  resource: https://www.youtube.com/watch?v=Gb-TEbCFF0M
+  last_modified: '2026-07-23T00:00:00Z'
+- id: '4'
+  resource: https://www.youtube.com/watch?v=0HyPHao8s_k
+  last_modified: '2026-08-06T00:00:00Z'
+- id: '5'
+  resource: https://www.youtube.com/watch?v=2EkWrNUfQi0
+  last_modified: '2026-08-20T00:00:00Z'
+- id: '6'
+  resource: https://www.youtube.com/watch?v=bl-hX87_EC8
+  last_modified: '2026-09-03T00:00:00Z'
 ---
 
 ## Überblick

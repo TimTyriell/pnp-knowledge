@@ -6,7 +6,14 @@ description: Finn ist ein Waldläufer, der ruhig und besonnen wirkt, im Kampf ab
 tags:
 - characters
 timestamp: '2026-05-27T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:09Z'
 id: CHAR_FINN
+sources:
+- id: P-51
+  resource: https://www.youtube.com/watch?v=IYYmgpqsp7E
+  last_modified: '2026-05-27T00:00:00Z'
 ---
 
 Finn ist ein Waldläufer, der ruhig und besonnen wirkt, im Kampf aber entschlossen vorgeht. Sein ständiger Begleiter ist der Adler [Merlin](/npcs/merlin.md), den er sowohl als Späher als auch als Kampfgefährten einsetzt. Mit Tieren verständigt er sich über einfache Zeichen; zu Merlin hat er eine starke Bindung.

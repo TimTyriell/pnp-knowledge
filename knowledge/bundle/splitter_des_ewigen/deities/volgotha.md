@@ -6,8 +6,15 @@ description: Volgotha ist der Gott, dem die Seraphen dienen. In den bisherigen B
 tags:
 - deities
 timestamp: '2026-06-10T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T22:10:08Z'
 id: DEITY_VOLGOTHA
 subtype: Alter Gott
+sources:
+- id: P-53
+  resource: https://www.youtube.com/watch?v=_3tLSiT1tck
+  last_modified: '2026-06-10T00:00:00Z'
 ---
 
 Volgotha ist der Gott, dem die [Seraphen](/factions/seraphen_von_volgotha.md) dienen. In den bisherigen Belegen steht weniger Volgotha selbst als vielmehr das Wirken seiner Diener und ein Schwur [Lunaras](/characters/lunara_velora.md) im Vordergrund.

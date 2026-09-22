@@ -6,7 +6,14 @@ description: Der Golem ist ein Koloss, der aus sechs lila Kristallen erschaffen 
 tags:
 - npcs
 timestamp: '2025-10-07T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:17Z'
 id: NPC_GOLEM_KOLOSS
+sources:
+- id: P-25
+  resource: https://www.youtube.com/watch?v=qVAF_54S8Vw
+  last_modified: '2025-10-07T00:00:00Z'
 ---
 
 Der Golem ist ein Koloss, der aus sechs lila Kristallen erschaffen wurde, die Körperteilen entsprechen. Er ist riesig, bewegt sich langsam, wirft Steine und versucht, Kreaturen zu greifen. Sein Kopf ist immun gegen Schaden, solange man nicht auf ihn klettert; die Gliedmaßen können einzeln zerstört werden. Im Kampf verliert er zuerst ein Bein, dann einen Arm, fällt und kriecht weiter. Er wird schließlich vernichtet, als die Gruppe den Torso zerstört. Nach dem Kampf stellt sich heraus, dass sein Torsokristall grünlich ist und eine [Kontrollrune](/items/kontrollrune.md) trägt. Er war vermutlich von außen manipuliert.

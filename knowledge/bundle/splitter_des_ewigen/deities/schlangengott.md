@@ -6,8 +6,15 @@ description: 'Der Alte Schlangengott ist eine Gottheit, deren Verehrung bislang 
 tags:
 - deities
 timestamp: '2025-06-10T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T22:10:08Z'
 id: DEITY_SCHLANGENGOTT
 subtype: Alter Gott
+sources:
+- id: P-11
+  resource: https://www.youtube.com/watch?v=cLkCu3Iq3y8
+  last_modified: '2025-06-10T00:00:00Z'
 ---
 
 Der **Alte Schlangengott** ist eine Gottheit, deren Verehrung bislang nur indirekt bezeugt ist: durch Schlangenkopf-Runen in einem Dungeon, den die Gruppe erkundete. Einen direkten Kontakt zu ihm oder zu Anhängern seines Kults gab es nicht. Sein tatsächlicher Name, sein Wesen und seine Bedeutung in der Welt sind unbekannt; alles Wissen über ihn stammt aus der Deutung der Runen durch [Dodo](/characters/dodo.md).

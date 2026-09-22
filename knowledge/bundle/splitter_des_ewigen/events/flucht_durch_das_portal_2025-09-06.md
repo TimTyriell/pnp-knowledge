@@ -6,8 +6,15 @@ description: Nachdem Nerash die Kol-Meref-Statue zerstört hat, explodiert die F
 tags:
 - events
 timestamp: '2025-07-09T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T22:10:09Z'
 id: EVENT_FLUCHT_DURCH_DAS_PORTAL_2025-09-06
 subtype: Reise
+sources:
+- id: P-14
+  resource: https://www.youtube.com/watch?v=XOnHa6CmDbo
+  last_modified: '2025-07-09T00:00:00Z'
 ---
 
 Nachdem [Nerash](/deities/nerash.md) die Kol-Meref-Statue zerstört hat, explodiert die Festung. Die Gruppe rennt zum Ausgang und springt durch ein Portal, das sie zurück zum [Übungsgelände der Gilde](/locations/uebungsgelaende_der_gilde.md) bringt. Das Portal flackert noch kurz und erlischt dann.

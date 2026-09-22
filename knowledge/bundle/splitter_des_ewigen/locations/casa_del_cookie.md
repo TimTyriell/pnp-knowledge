@@ -6,11 +6,48 @@ description: Die Casa del Cookie ist das Anwesen der Heldengruppe und dient übe
 tags:
 - locations
 timestamp: '2026-08-04T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: LOC_CASA_DEL_COOKIE
 subtype: Gebäude
 aliases:
 - Casa de Cookie
 - Casa de la Cookie
+verified:
+  by: human:gm
+relationships:
+- target: characters/cookie
+  note: '**Cookie:** Namensgeberin der Casa del Cookie. Sie starb beim Turnier, durch
+    das die Gruppe das Anwesen errang.'
+- target: characters/lindo_laut
+  note: '**Lindo Laut:** Nutzt den Ort während der Trennung als Rückzugs- und Meditationsort.
+    Von hier aus nimmt er Slix’ Angst wahr.'
+- target: characters/nyrella
+  note: '**Nyrella:** Hilft beim Aufbau der Flüchtlingsunterkünfte auf dem Gelände.'
+- target: deities/tarvok_der_erdrichter
+  note: '**Thar''Vok:** Ihm ist ein Schrein im Keller des Anwesens gewidmet.'
+- target: factions/fluechtlinge
+  note: '**Flüchtlinge:** Eine gemischte Lagergemeinschaft, die auf dem Gelände unterkommt
+    und am Ausbau mitwirkt.'
+- target: locations/ehrenfels
+  note: '**Ehrenfels:** Wird in späteren Berichten als Ortsbezug genannt, was die
+    Verwandlung des Ortes widerspiegelt.'
+- target: locations/willauch
+  note: '**Willauch:** Die kanonische Lage der Casa del Cookie liegt nordwestlich
+    dieser Stadt.'
+- target: npcs/slix_vasul
+  note: '**Slix:** Warnt Lindo Laut in der Casa del Cookie vor der Rückkehr von Vasul.'
+sources:
+- id: P-36
+  resource: https://www.youtube.com/watch?v=3C8SD-cyNPM
+  last_modified: '2026-02-11T00:00:00Z'
+- id: P-44
+  resource: https://www.youtube.com/watch?v=Ee-K84wcxLM
+  last_modified: '2026-03-31T00:00:00Z'
+- id: S1-02-A
+  resource: https://www.youtube.com/watch?v=qRj2t3wQHfs
+  last_modified: '2026-08-04T00:00:00Z'
 ---
 
 ## Überblick

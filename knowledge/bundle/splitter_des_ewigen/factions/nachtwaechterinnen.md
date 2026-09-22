@@ -6,8 +6,15 @@ description: Die Nachtwächterinnen sind ein Hexenzirkel, in dem Lunara Velora a
 tags:
 - factions
 timestamp: '2025-11-18T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_NACHTWAECHTERINNEN
 subtype: Kult
+sources:
+- id: P-30
+  resource: https://www.youtube.com/watch?v=w__ahowb9p0
+  last_modified: '2025-11-18T00:00:00Z'
 ---
 
 Die **Nachtwächterinnen** sind ein Hexenzirkel, in dem [Lunara Velora](/characters/lunara_velora.md) aufgewachsen ist. Der Zirkel lebte abgeschottet und arbeitete mit Schatten und Mondlicht. Vor einigen Monaten wurde er aufgelöst; seitdem ist Lunara allein unterwegs.

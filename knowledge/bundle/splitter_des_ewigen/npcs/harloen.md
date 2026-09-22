@@ -6,10 +6,22 @@ description: Harloen ist ein Priester der Kapelle von Ehrenfels in der Stadt Ehr
 tags:
 - npcs
 timestamp: '2026-08-04T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T22:10:10Z'
 id: NPC_HARLOEN
 aliases:
 - Haloen
 - Harloën
+relationships:
+- target: npcs/inaros
+sources:
+- id: S1-01-A
+  resource: https://www.youtube.com/watch?v=umGyKLkefJI
+  last_modified: '2026-07-29T00:00:00Z'
+- id: S1-02-A
+  resource: https://www.youtube.com/watch?v=qRj2t3wQHfs
+  last_modified: '2026-08-04T00:00:00Z'
 ---
 
 Harloen ist ein Priester der Kapelle von Ehrenfels in der Stadt [Ehrenfels](/locations/ehrenfels.md). Für die Heldengruppe ist er ein vertrautes Gesicht. Seit ein Diener [Nerashs](/deities/nerash.md) die Macht in der Stadt übernommen hat, gehört er zu den Bewohnern, die der neuen Gottheit nicht huldigen wollen und ihrem alten Gott treu bleiben.

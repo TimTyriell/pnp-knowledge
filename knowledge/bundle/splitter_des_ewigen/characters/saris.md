@@ -6,9 +6,34 @@ description: Saris Bendal ist ein tieflingischer Wissenschaftler und Hexenmeiste
 tags:
 - characters
 timestamp: '2026-09-03T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: CHAR_SARIS
 aliases:
 - Saris Bendal
+relationships:
+- target: characters/kaya
+- target: characters/sange
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=EGNh8O7pE5Q
+  last_modified: '2026-06-04T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=H-eHSlfxUAg
+  last_modified: '2026-07-10T00:00:00Z'
+- id: '3'
+  resource: https://www.youtube.com/watch?v=Gb-TEbCFF0M
+  last_modified: '2026-07-23T00:00:00Z'
+- id: '4'
+  resource: https://www.youtube.com/watch?v=0HyPHao8s_k
+  last_modified: '2026-08-06T00:00:00Z'
+- id: '5'
+  resource: https://www.youtube.com/watch?v=2EkWrNUfQi0
+  last_modified: '2026-08-20T00:00:00Z'
+- id: '6'
+  resource: https://www.youtube.com/watch?v=bl-hX87_EC8
+  last_modified: '2026-09-03T00:00:00Z'
 ---
 
 ## Überblick

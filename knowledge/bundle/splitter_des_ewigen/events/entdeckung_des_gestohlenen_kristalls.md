@@ -6,8 +6,15 @@ description: Dodo durchschaut Joar und zwingt ihn, den gestohlenen lila Kristall
 tags:
 - events
 timestamp: '2026-08-25T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:11Z'
 id: EVENT_ENTDECKUNG_DES_GESTOHLENEN_KRISTALLS
 subtype: Entdeckung
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=1Cjj3OVqiYA
+  last_modified: '2026-08-25T00:00:00Z'
 ---
 
 [Dodo](/characters/dodo.md) durchschaut [Joar](/npcs/joar_vanur.md) und zwingt ihn, den gestohlenen lila [Kristall](/items/gruener_kristall.md) zu zeigen. Die Gruppe erkennt die Magie und dass die [Gnolle](/factions/gnolle.md) Joar deshalb verfolgen.

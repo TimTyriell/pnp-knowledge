@@ -6,8 +6,15 @@ description: Vor der neuen Kapelle kommt es zu einer Auseinandersetzung zwischen
 tags:
 - events
 timestamp: '2026-08-04T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T22:10:09Z'
 id: EVENT_KONFRONTATION_VOR_DER_KAPELLE
 subtype: Verhandlung
+sources:
+- id: S1-02-A
+  resource: https://www.youtube.com/watch?v=qRj2t3wQHfs
+  last_modified: '2026-08-04T00:00:00Z'
 ---
 
 Vor der neuen [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) kommt es zu einer Auseinandersetzung zwischen den alten Gardisten [Meister Pyrandras](/npcs/meister_pyrandras.md), [Orlanius Schwarzohr](/npcs/orlanius_schwarzhorn.md) und anderen mit den Seraphen-Wachen. Die Gardisten fordern die Anwesenheit von [Nerash](/deities/nerash.md), werden aber von einem Seraphen bedroht. Die Situation eskaliert beinahe.

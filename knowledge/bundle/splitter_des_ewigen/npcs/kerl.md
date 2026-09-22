@@ -6,7 +6,17 @@ description: Kerl ist ein Wächter, der der Heldengruppe im Verlauf der Kampagne
 tags:
 - npcs
 timestamp: '2025-06-25T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_KERL
+sources:
+- id: P-03
+  resource: https://www.youtube.com/watch?v=1PWdwvun5ow
+  last_modified: '2025-04-09T00:00:00Z'
+- id: P-13
+  resource: https://www.youtube.com/watch?v=tpkO9uGw6-I
+  last_modified: '2025-06-25T00:00:00Z'
 ---
 
 Kerl ist ein [Wächter](/npcs/waechter.md), der der Heldengruppe im Verlauf der Kampagne in zwei verschiedenen Funktionen gegenübertritt. Beim ersten Mal gehört er als einer von zwei Dorfwächtern zur Wache des [Bürgermeisters](/npcs/buergermeister_spitzzahn.md); später hat er sich zur Leibgarde des Grafen hochgearbeitet. In beiden Rollen ist er für den Zugang zu seinem Dienstherrn zuständig.
@@ -21,5 +31,5 @@ Später ist Kerl nicht mehr Wache des Bürgermeisters, sondern Leibgarde des Gra
 
 # Belege
 
-[1] Session 2025-04-09 @ 00:17:25: https://www.youtube.com/watch?v=1PWdwvun5ow
-[2] Session 2025-06-25 @ 00:18:44: https://www.youtube.com/watch?v=tpkO9uGw6-I
+- Session 2025-04-09 @ 00:17:25: https://www.youtube.com/watch?v=1PWdwvun5ow
+- Session 2025-06-25 @ 00:18:44: https://www.youtube.com/watch?v=tpkO9uGw6-I

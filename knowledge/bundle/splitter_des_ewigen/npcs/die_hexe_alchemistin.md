@@ -6,7 +6,14 @@ description: Die alte Hexe ist die persönliche Alchemistin der Herrin der Stadt
 tags:
 - npcs
 timestamp: '2026-04-14T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:17Z'
 id: NPC_DIE_HEXE_ALCHEMISTIN
+sources:
+- id: P-47
+  resource: https://www.youtube.com/watch?v=1Jyu92P7_Fg
+  last_modified: '2026-04-14T00:00:00Z'
 ---
 
 Die alte Hexe ist die persönliche Alchemistin der Herrin der Stadt und arbeitet im Namen von [Lady Kalen](/npcs/lady_kalen.md), der Sprecherin von [Ohoriaks](/deities/ohoriaks.md). Sie versucht, Mutter- und Kinderseele zu ernten, wird aber von der Gruppe gestoppt. Im Kampf wird sie gefesselt und von [Lindo Laut](/characters/lindo_laut.md) gedanklich ausgelesen. Sie verrät, dass die Stadt ein Vorposten der [Erntefelder](/locations/erntefelder.md) war und die Festung [Brocadil](/locations/brocadil.md) von Ohoriaks übernommen wurde. Nach der Verbannung ihres Sohnes zeigt sie Respekt und beantwortet Fragen.

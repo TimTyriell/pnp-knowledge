@@ -1,13 +1,26 @@
 ---
 type: Deity
 title: Coram Schildbrecher
-description: Coram Schildbrecher ist einer der neuen Götter und steht für Heldenschaft,
-  Zusammenhalt und Gemeinschaft. In Tiefwasser steht eine gut gepf…
+description: Coram Schildbrecher ist einer der neuen Götter. Er steht für Heldenschaft,
+  Zusammenhalt und Gemeinschaft. In Tiefwasser steht auf einem Pla…
 tags:
 - deities
 timestamp: '2026-03-18T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:11:53Z'
 id: DEITY_CORAM_SCHILDBRECHER
 subtype: Neuer Gott
+relationships:
+- target: characters/brim
+- target: factions/gilde_der_schilde
+  note: 'Gilde der Schilde: In unmittelbarer Nähe der Statue liegt das Gebäude der
+    Gilde. Eine direkte inhaltliche Verbindung zwischen dem Gott und der Gilde ist
+    aus den Belegen nicht ersichtlich.'
+sources:
+- id: P-41
+  resource: https://www.youtube.com/watch?v=HHXxsASLrbQ
+  last_modified: '2026-03-18T00:00:00Z'
 ---
 
 ## Überblick

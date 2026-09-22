@@ -6,9 +6,31 @@ description: Dormak war ein Gegner der Heldengruppe, der anfangs als Diener beze
 tags:
 - npcs
 timestamp: '2026-03-31T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T22:10:10Z'
 id: NPC_DORMAK
 aliases:
 - Dormark
+verified:
+  by: human:gm
+relationships:
+- target: characters/dodo
+- target: deities/vharzul
+- target: npcs/lenra
+sources:
+- id: P-19
+  resource: https://www.youtube.com/watch?v=TLZOH7TlGhk
+  last_modified: '2025-09-02T00:00:00Z'
+- id: P-34
+  resource: https://www.youtube.com/watch?v=H3ckYdTv4y8
+  last_modified: '2026-01-20T00:00:00Z'
+- id: P-43
+  resource: https://www.youtube.com/watch?v=Yj5BWJfg3Ag
+  last_modified: '2026-03-24T00:00:00Z'
+- id: P-44
+  resource: https://www.youtube.com/watch?v=Ee-K84wcxLM
+  last_modified: '2026-03-31T00:00:00Z'
 ---
 
 Dormak war ein Gegner der Heldengruppe, der anfangs als Diener bezeichnet wurde und sich später als mächtiger Dämon erwies. Er suchte die [Prinzessin](/npcs/prinzessin_marie.md), stellte sich der Gruppe mehrfach entgegen und war als Komplize der Hag [Landra](/npcs/lenra.md) in die Ränke um [Vhar'Zuls](/deities/vharzul.md) Wiederkehr verstrickt. Sein Ende fand er in [Ehrenfels](/locations/ehrenfels.md).

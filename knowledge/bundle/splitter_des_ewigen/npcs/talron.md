@@ -6,7 +6,27 @@ description: Talron ist ein Geschichtenerzähler und ehemaliger Gardist aus Bran
 tags:
 - npcs
 timestamp: '2026-09-03T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_TALRON
+relationships:
+- target: characters/bruma_stormrak
+- target: characters/kaya
+- target: characters/sange
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=EGNh8O7pE5Q
+  last_modified: '2026-06-04T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=H-eHSlfxUAg
+  last_modified: '2026-07-10T00:00:00Z'
+- id: '3'
+  resource: https://www.youtube.com/watch?v=2EkWrNUfQi0
+  last_modified: '2026-08-20T00:00:00Z'
+- id: '4'
+  resource: https://www.youtube.com/watch?v=bl-hX87_EC8
+  last_modified: '2026-09-03T00:00:00Z'
 ---
 
 Talron ist ein [Geschichtenerzähler](kategorie) und ehemaliger Gardist aus [Brandau](/locations/brandau.md), der als fahrender Ritter sowie später als Ritter beziehungsweise Offizier der Verteidiger von [Ringtal](/locations/ringtal.md) in Erscheinung tritt. Er arbeitet zeitweise als Informant für [Heraxles](/npcs/heraxles.md) und begegnet der Heldengruppe erstmals in der Gegend von [Kleinringtal](/locations/ringtal.md), wo er vor einer nahenden Bedrohung warnt.
@@ -29,7 +49,7 @@ Während der Verhandlungen mit dem [Kenku](/npcs/kenku_bote.md)-Boten auf der Pa
 
 # Belege
 
-[1] Session 2026-06-04 @ 02:36:35 – https://www.youtube.com/watch?v=EGNh8O7pE5Q
-[2] Session 2026-07-10 @ 00:29:32 – https://www.youtube.com/watch?v=H-eHSlfxUAg
-[3] Session 2026-08-20 @ 01:01:28 – https://www.youtube.com/watch?v=2EkWrNUfQi0
-[4] Session 2026-09-03 @ 01:05:30 – https://www.youtube.com/watch?v=bl-hX87_EC8
+- [1] Session 2026-06-04 @ 02:36:35 – https://www.youtube.com/watch?v=EGNh8O7pE5Q
+- [2] Session 2026-07-10 @ 00:29:32 – https://www.youtube.com/watch?v=H-eHSlfxUAg
+- [3] Session 2026-08-20 @ 01:01:28 – https://www.youtube.com/watch?v=2EkWrNUfQi0
+- [4] Session 2026-09-03 @ 01:05:30 – https://www.youtube.com/watch?v=bl-hX87_EC8

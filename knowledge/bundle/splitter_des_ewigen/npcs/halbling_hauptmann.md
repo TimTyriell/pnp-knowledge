@@ -6,7 +6,14 @@ description: Der Anführer der Halblinge weigert sich zunächst, das Dorf zu ver
 tags:
 - npcs
 timestamp: '2026-08-06T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:17Z'
 id: NPC_HALBLING_HAUPTMANN
+sources:
+- id: S1-03-B
+  resource: https://www.youtube.com/watch?v=0HyPHao8s_k
+  last_modified: '2026-08-06T00:00:00Z'
 ---
 
 Der Anführer der [Halblinge](/factions/halblinge.md) weigert sich zunächst, das Dorf zu verlassen, da es seit 30 Jahren ihre Heimat ist. Erst Brumas Einschüchterung bringt ihn dazu, in vier Stunden abmarschbereit zu sein.

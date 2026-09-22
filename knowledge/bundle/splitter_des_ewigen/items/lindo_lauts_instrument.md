@@ -6,8 +6,15 @@ description: Lindo Laut nutzt ein kleines Pfeifinstrument, um ein hoffnungsvolle
 tags:
 - items
 timestamp: '2025-05-27T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:14Z'
 id: ITEM_LINDO_LAUTS_INSTRUMENT
 subtype: Werkzeug
+sources:
+- id: P-09
+  resource: https://www.youtube.com/watch?v=bamCIB_CkR8
+  last_modified: '2025-05-27T00:00:00Z'
 ---
 
 [Lindo Laut](/characters/lindo_laut.md) nutzt ein kleines Pfeifinstrument, um ein hoffnungsvolles Lied zu spielen, das den Verbündeten einen Hope-Punkt gibt. Später setzt er eine magische kleine Laute als Hintergrundmusik für seinen Schmähgesang gegen den Dämon ein. Das Instrument ist Teil seiner bardischen Fähigkeiten.

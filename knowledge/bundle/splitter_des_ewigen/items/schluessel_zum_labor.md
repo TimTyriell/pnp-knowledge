@@ -6,8 +6,15 @@ description: Baran zeigt der Gruppe eine kleine Schatulle mit einem Schlüssel z
 tags:
 - items
 timestamp: '2025-04-30T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:14Z'
 id: ITEM_SCHLUESSEL_ZUM_LABOR
 subtype: Werkzeug
+sources:
+- id: P-06
+  resource: https://www.youtube.com/watch?v=fsCOiSkKKTE
+  last_modified: '2025-04-30T00:00:00Z'
 ---
 
 [Baran](/npcs/baran.md) zeigt der Gruppe eine kleine Schatulle mit einem [Schlüssel](/items/magischer_schluessel.md) zu einem alten [Labor im Westen](/locations/labor_im_westen.md). Er besitzt diesen Schlüssel und bietet an, ihn später zur Verfügung zu stellen.

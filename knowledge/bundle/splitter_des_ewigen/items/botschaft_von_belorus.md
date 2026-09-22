@@ -6,8 +6,15 @@ description: 'Ein versiegeltes Schriftstück von Belorus, adressiert an Lindo La
 tags:
 - items
 timestamp: '2026-01-13T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: ITEM_BOTSCHAFT_VON_BELORUS
 subtype: Schriftstück
+sources:
+- id: P-33
+  resource: https://www.youtube.com/watch?v=w4LB1s9_3rs
+  last_modified: '2026-01-13T00:00:00Z'
 ---
 
 Ein versiegeltes Schriftstück von [Belorus](/npcs/belorus.md), adressiert an [Lindo Laut](/characters/lindo_laut.md). Es wird von Hans überbracht. Der Inhalt: Belorus kennt Lindo Lauts Natur, behauptet, er dürfe nicht existieren, und bietet an, im Austausch für Lindo Laut die Städte zu verschonen. [Dodo](/characters/dodo.md) liest es zweimal.

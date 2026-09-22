@@ -6,8 +6,15 @@ description: Lunara aktiviert ihre Runen und verschiebt die Umgebung in die Spli
 tags:
 - events
 timestamp: '2026-01-20T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_LUNARA_VERSCHIEBT_DIE_WELT_IN_DIE_SPLITTERWELT
 subtype: Ritual
+sources:
+- id: P-34
+  resource: https://www.youtube.com/watch?v=H3ckYdTv4y8
+  last_modified: '2026-01-20T00:00:00Z'
 ---
 
 Lunara aktiviert ihre Runen und verschiebt die Umgebung in die [Splitterwelt](/domains/splitterwelt.md). Mit [Rotunas](/characters/rotunas.md)' Unterstützung gelingt es ihr, fast alle Untoten zu zersplittern. Dieses Ereignis wendet die Schlacht und zwingt [Belorus](/npcs/belorus.md) zur Kapitulation.

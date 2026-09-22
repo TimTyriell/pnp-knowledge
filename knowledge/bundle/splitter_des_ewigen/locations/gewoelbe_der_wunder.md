@@ -6,8 +6,15 @@ description: Ein modulare Dungeon, der von Hacarus gehütet wird. Die Gruppe wä
 tags:
 - locations
 timestamp: '2026-04-07T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:16Z'
 id: LOC_GEWOELBE_DER_WUNDER
 subtype: Dungeon
+sources:
+- id: P-45
+  resource: https://www.youtube.com/watch?v=MAuQPMNY548
+  last_modified: '2026-04-07T00:00:00Z'
 ---
 
 Ein modulare Dungeon, der von [Hacarus](/npcs/hacarus.md) gehütet wird. Die Gruppe wählte die mittlere Tür und betrat einen Gang mit Spiegeln und Totenschädeln. Der Dungeon bestand aus mehreren Räumen: einem Raum mit Vasen voller schwarzer Flüssigkeit, einer Grube mit unsichtbarem Pfad und Tentakeln, einem organischen Tor, das durch Vibration geöffnet wurde, einem Altarraum mit Flammen und einer Fleischkreatur, und einem Raum mit Käfigen, Pool und einer brennenden Zelle. Nach Erfüllung des Ziels (Bergung der Statue) konnten sie entkommen.

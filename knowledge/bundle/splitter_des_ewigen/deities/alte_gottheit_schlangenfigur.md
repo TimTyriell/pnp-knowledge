@@ -6,8 +6,15 @@ description: Die Alte Gottheit (Schlangenfigur), auch die Schlangengottheit gena
 tags:
 - deities
 timestamp: '2025-06-17T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DEITY_ALTE_GOTTHEIT_SCHLANGENFIGUR
 subtype: Alter Gott
+sources:
+- id: P-12
+  resource: https://www.youtube.com/watch?v=tl76B4V0io8
+  last_modified: '2025-06-17T00:00:00Z'
 ---
 
 Die **Alte Gottheit (Schlangenfigur)**, auch die Schlangengottheit genannt, ist eine uralte Gottheit, die in enger Verbindung zu [Dodo](/characters/dodo.md) steht. Sie zählt zu den alten Göttern, gegen die nach Aussage gefangener Seelen einst ein [Krieg](/characters/krieg.md) geführt wurde, und besitzt Macht über Seelen.

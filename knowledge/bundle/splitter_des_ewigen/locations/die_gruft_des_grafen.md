@@ -6,8 +6,15 @@ description: Die Gruft des Grafen unterhalb von Breska ist prunkvoll ausgestatte
 tags:
 - locations
 timestamp: '2025-06-25T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: LOC_DIE_GRUFT_DES_GRAFEN
 subtype: Dungeon
+sources:
+- id: P-13
+  resource: https://www.youtube.com/watch?v=tpkO9uGw6-I
+  last_modified: '2025-06-25T00:00:00Z'
 ---
 
 Die Gruft des Grafen unterhalb von [Breska](/locations/breska.md) ist prunkvoll ausgestattet, mit Statuen vergessener Götter, Rüstungen und magischen Toren. Sie enthält auch die Bibliothek, in der das versiegelte Buch gelagert ist.

@@ -1,13 +1,39 @@
 ---
 type: Faction
 title: Flüchtlinge
-description: Die Flüchtlinge leben im Lager und haben Freundschaften mit den Banditen
-  geschlossen. Sie sind verängstigt, aber hoffnungsvoll. Sie wollen…
+description: Die Flüchtlinge sind eine Lagergemeinschaft von etwa zwei Dutzend Personen,
+  die in einem Lager leben und dort Freundschaften mit den ansäss…
 tags:
 - factions
 timestamp: '2026-01-13T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:11:54Z'
 id: FACTION_FLUECHTLINGE
 subtype: Sonstiges
+verified:
+  by: human:gm
+relationships:
+- target: characters/bruma_stormrak
+- target: characters/lindo_laut
+  note: '**Lindo Laut**: Hatte vor vielen Monaten die Idee, die Flüchtlinge auf Städte
+    zu verteilen, je nachdem, was sie können.'
+- target: characters/nyrella
+- target: factions/gilde_von_ehrenfels
+  note: '**Gilde**: Könnte für eine größere Anzahl, aber nicht für alle Platz bereitstellen;
+    für die „Überbleibsel“ wäre sie eine Option.'
+- target: factions/silberkerne
+- target: locations/casa_del_cookie
+  note: '**Casa de Cookie**: Eine Notfalloption im Süden; dort werden tatkräftige
+    Arbeitskräfte gebraucht, um die Residenz auszubauen.'
+- target: locations/willauch
+- target: npcs/hal_harl
+  note: '**HAL**: Bietet an, dass ein Teil der Flüchtlinge mit ihm zieht; die Helden
+    sehen darin eine Möglichkeit, zumindest einige zu schützen.'
+sources:
+- id: P-33
+  resource: https://www.youtube.com/watch?v=w4LB1s9_3rs
+  last_modified: '2026-01-13T00:00:00Z'
 ---
 
 ## Überblick

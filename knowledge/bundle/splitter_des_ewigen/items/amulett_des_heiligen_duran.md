@@ -6,6 +6,9 @@ description: Das Amulett des Heiligen Duran ist ein handlungstragendes Artefakt 
 tags:
 - items
 timestamp: '2025-11-14T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T22:10:09Z'
 id: ITEM_AMULETT_DES_HEILIGEN_DURAN
 subtype: Artefakt
 aliases:
@@ -21,6 +24,49 @@ aliases:
 - Lindos Amulett-Stimmen
 - Das Amulett von Lindo Laut
 - Amulett des heiligen Duran
+relationships:
+- target: characters/lindo_laut
+  note: '**Lindo Laut:** Träger und Besitzer des Amuletts. Er hört die Stimmen, wird
+    von ihnen beeinflusst, kann mit ihnen kommunizieren und wird mehrfach in die Zwischenebene
+    gezogen oder zu Taten gedrängt.'
+- target: deities/vharzul
+  note: '**Varzul:** Gott, dessen vier Seelen laut [P-18] in dem Amulett enthalten
+    sind.'
+- target: npcs/auranil
+  note: '**Auranil:** Holt das Amulett aus einer Schatulle und überreicht es Lindo
+    Laut ([P-07]).'
+- target: npcs/hendrik
+  note: '**Hendrik:** Das Amulett vibriert, als Hendrik in einer unbekannten Sprache
+    spricht; im Umfeld des Heiligtums werden die Kräfte im Amulett stärker ([P-17]).'
+- target: npcs/horatio
+  note: '**Horatio:** Übergibt am 2025-11-14 ein gefundenes Amulett an Rotunas als
+    Zeichen der Zusammenarbeit; ob es sich dabei um das Amulett des Heiligen Duran
+    handelt, bleibt offen ([P-29]).'
+sources:
+- id: P-07
+  resource: https://www.youtube.com/watch?v=e0v6AFGd4mE
+  last_modified: '2025-05-06T00:00:00Z'
+- id: P-13
+  resource: https://www.youtube.com/watch?v=tpkO9uGw6-I
+  last_modified: '2025-06-25T00:00:00Z'
+- id: P-14
+  resource: https://www.youtube.com/watch?v=XOnHa6CmDbo
+  last_modified: '2025-07-09T00:00:00Z'
+- id: P-17
+  resource: https://www.youtube.com/watch?v=vHIjua0BZ9Y
+  last_modified: '2025-08-12T00:00:00Z'
+- id: P-18
+  resource: https://www.youtube.com/watch?v=-XbO3FLSL_I
+  last_modified: '2025-08-20T00:00:00Z'
+- id: P-19
+  resource: https://www.youtube.com/watch?v=TLZOH7TlGhk
+  last_modified: '2025-09-02T00:00:00Z'
+- id: P-20
+  resource: https://www.youtube.com/watch?v=vo1xnyLQDJk
+  last_modified: '2025-09-06T00:00:00Z'
+- id: P-29
+  resource: https://www.youtube.com/watch?v=8Khb-Y8XbKY
+  last_modified: '2025-11-14T00:00:00Z'
 ---
 
 ## Überblick

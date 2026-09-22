@@ -6,8 +6,15 @@ description: Der Walschrat ist eine Gottheit oder ein übernatürliches Wesen, d
 tags:
 - deities
 timestamp: '2026-09-01T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DEITY_WALSCHRAT
 subtype: Sonstiges
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=1E3-Nwv4OEs
+  last_modified: '2026-09-01T00:00:00Z'
 ---
 
 Der Walschrat ist eine Gottheit oder ein übernatürliches Wesen, das in der Kampagne bislang nur am Rande erwähnt wurde. Die einzige überlieferte Aussage über ihn stammt von [Gunther](/characters/gunther.md), der Raben als Zeichen des Walschrats deutet. Eine genauere Beschreibung seiner Natur, Herkunft oder Verehrung ist nicht bekannt.

@@ -6,7 +6,14 @@ description: Die Daggerheart-Reiche umfassen die vier kosmologischen Ebenen, aus
 tags:
 - domains
 timestamp: '2025-06-03T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DOMAIN_DAGGERHEART_REICHE
+sources:
+- id: P-10
+  resource: https://www.youtube.com/watch?v=jtYR4Je0a18
+  last_modified: '2025-06-03T00:00:00Z'
 ---
 
 Die **Daggerheart-Reiche** umfassen die vier kosmologischen Ebenen, aus denen sich die Welt im Setting der Kampagne zusammensetzt. Der Spielleiter stellte sie zu Beginn der ersten Session als Rahmen vor, in dem die Handlung spielt.

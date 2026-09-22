@@ -6,8 +6,15 @@ description: Der Brief wird beim toten Kenku gefunden und enthält den Auftrag z
 tags:
 - items
 timestamp: '2025-07-22T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: ITEM_AUFTRAGSBRIEF
 subtype: Schriftstück
+sources:
+- id: P-15
+  resource: https://www.youtube.com/watch?v=BRRCUgW4xRo
+  last_modified: '2025-07-22T00:00:00Z'
 ---
 
 Der Brief wird beim toten [Kenku](/npcs/kenku_bote.md) gefunden und enthält den Auftrag zur Ermordung von [Lindo Laut](/characters/lindo_laut.md), [Esterossa](/characters/esterossa.md), [Rotunas](/characters/rotunas.md), [Dodo](/characters/dodo.md) und [Cookie](/characters/cookie.md). Als Belohnung ist eine Truhe voll Gold ausgesetzt. Der Brief beweist, dass jemand gezielt die Helden töten lassen will. Er bleibt im Besitz der Gruppe.

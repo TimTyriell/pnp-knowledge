@@ -6,7 +6,14 @@ description: Die Pocket Domain von Lindo Laut ist eine persönliche Taschendimen
 tags:
 - domains
 timestamp: '2026-02-11T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DOMAIN_POCKET_DOMAIN_VON_LINDO_LAUT
+sources:
+- id: P-36
+  resource: https://www.youtube.com/watch?v=3C8SD-cyNPM
+  last_modified: '2026-02-11T00:00:00Z'
 ---
 
 # Pocket Domain von Lindo Laut

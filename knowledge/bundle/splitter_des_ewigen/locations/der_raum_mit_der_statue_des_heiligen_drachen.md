@@ -6,8 +6,15 @@ description: Dieser Raum ist frei von Sporen und bietet einen Moment der Ruhe; d
 tags:
 - locations
 timestamp: '2025-10-28T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: LOC_DER_RAUM_MIT_DER_STATUE_DES_HEILIGEN_DRACHEN
 subtype: Dungeon
+sources:
+- id: P-28
+  resource: https://www.youtube.com/watch?v=V6NzNakqxXM
+  last_modified: '2025-10-28T00:00:00Z'
 ---
 
 Dieser Raum ist frei von Sporen und bietet einen Moment der Ruhe; die Gruppe entfernt einen Stresspunkt. Eine Statue trägt die Inschrift 'Das Blut des Heiligen Drachen', was [Dodos](/characters/dodo.md) Blut als [Schlüssel](/items/magischer_schluessel.md) vermuten lässt. [Der intelligente Untote](/npcs/der_intelligente_untote.md) versucht, die Gruppe zu zwingen, die Statue zu zerstören.

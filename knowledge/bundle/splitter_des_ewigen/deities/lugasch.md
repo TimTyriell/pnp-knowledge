@@ -6,8 +6,15 @@ description: Lugasch ist ein Goblin-Trickstergott. Er gehört zu den Goblin-Göt
 tags:
 - deities
 timestamp: '2025-04-01T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DEITY_LUGASCH
 subtype: Sonstiges
+sources:
+- id: P-02
+  resource: https://www.youtube.com/watch?v=LZIuUzc3F18
+  last_modified: '2025-04-01T00:00:00Z'
 ---
 
 **Lugasch** ist ein Goblin-Trickstergott. Er gehört zu den Goblin-Göttern, einer Gruppe von Gottheiten, die unmittelbar in das Weltgeschehen eingreifen. Wie die [Goblin-Götter](/deities/goblingoetter.md) insgesamt gilt auch Lugasch als chaotisch und wechselhaft, nicht als bösartig. Bislang ist nur ein einziges Wirken von ihm belegt: Er soll die Steine ausgelöst haben, die beinahe auf den Helden [Dodo](/characters/dodo.md) fielen.

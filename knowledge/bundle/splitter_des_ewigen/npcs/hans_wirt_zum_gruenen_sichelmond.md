@@ -6,7 +6,27 @@ description: Hans ist ein Tiefling und Wirt der Taverne Zum grünen Sichelmond. 
 tags:
 - npcs
 timestamp: '2026-03-18T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:17Z'
 id: NPC_HANS_WIRT_ZUM_GRUENEN_SICHELMOND
+verified:
+  by: human:gm
+relationships:
+- target: locations/hartwacht
+  note: '**Hartwacht**: Die Orkstadt ist ihm ein Begriff; er bezeichnet sie als „unannehmbare
+    Festung“, von der selbst die Soldaten erzählen.'
+- target: locations/willauch
+  note: '**Willauch**: Hans kennt die Camps der Stadt und empfiehlt den Weg über das
+    Camp Bucht, weil die Gruppe dort näher dran sei.'
+- target: npcs/freibeuter_harald
+  note: '**Freibeuter**: Hans erwähnt beiläufig, dass es in der Stadt zwei Freibeuter
+    gebe – Harald und dessen Maat. Ob eine engere Verbindung zu ihnen besteht, ist
+    unbekannt.'
+sources:
+- id: P-41
+  resource: https://www.youtube.com/watch?v=HHXxsASLrbQ
+  last_modified: '2026-03-18T00:00:00Z'
 ---
 
 ## Überblick

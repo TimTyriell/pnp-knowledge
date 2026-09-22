@@ -6,8 +6,15 @@ description: Sir Tali von Brandau betritt mit zwei Elite-Soldaten und einem Magi
 tags:
 - events
 timestamp: '2026-08-20T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: EVENT_ANKUNFT_VON_SIR_TALI
 subtype: Sonstiges
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=2EkWrNUfQi0
+  last_modified: '2026-08-20T00:00:00Z'
 ---
 
 [Sir Tali von Brandau](/npcs/sir_tali_von_brandau.md) betritt mit zwei Elite-Soldaten und einem Magier die Taverne. [Sange](/characters/sange.md) erkennt ihn als Leibgarde der [Prinzessin](/npcs/prinzessin_marie.md), während [Saris](/characters/saris.md) eine unheimliche Energie an dem Magier wahrnimmt. Die Gruppe setzt sich zu Herrn [Raxlis](/npcs/herr_raxlis.md), und [Hauptmann Aaron](/npcs/hauptmann_aaron.md) verneigt sich tief.

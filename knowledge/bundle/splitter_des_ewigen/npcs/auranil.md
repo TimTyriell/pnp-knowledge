@@ -6,6 +6,9 @@ description: Auranil ist eine Halbling-Priesterin, die den Helden erstmals als P
 tags:
 - npcs
 timestamp: '2026-08-04T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:17Z'
 id: NPC_AURANIL
 aliases:
 - Priesterin Auraniell
@@ -13,6 +16,40 @@ aliases:
 - Priesterin Auraniel
 - Priesterin Auranie
 - Auraniel
+relationships:
+- target: characters/lindo_laut
+  note: '**Zu Lindo Laut:** Überreicht ihm in der Not das Amulett des heiligen Duran,
+    damit er ein Portal zum Schiff öffnen kann.'
+- target: characters/lunara_velora
+  note: '**Zu Lunara und Liam:** Segnet Lunara während des Gottesdienstes; wird zuvor
+    von Liam eingeschüchtert, was sie zittern lässt.'
+- target: items/amulett_des_heiligen_duran
+- target: locations/breska
+  note: '**Zu Breska:** Arbeitete in der Kapelle von Breska, wurde aber vor knapp
+    einem Monat aus ihrer Tätigkeit gedrängt, als eine neue Religion Einzug hielt.'
+- target: locations/ehrenfels
+  note: '**Zu Ehrenfels:** Übernahm die kleine Kapelle am Hügel wieder und hält dort
+    Gottesdienste.'
+- target: npcs/bufrun
+  note: '**Zu Bufrun:** Der Wirt erscheint als einziger regelmäßig zu ihren Gottesdiensten;
+    die Belegstelle deutet eine romantische Verbindung an.'
+- target: npcs/liam_velora
+sources:
+- id: P-07
+  resource: https://www.youtube.com/watch?v=e0v6AFGd4mE
+  last_modified: '2025-05-06T00:00:00Z'
+- id: P-13
+  resource: https://www.youtube.com/watch?v=tpkO9uGw6-I
+  last_modified: '2025-06-25T00:00:00Z'
+- id: P-30
+  resource: https://www.youtube.com/watch?v=w__ahowb9p0
+  last_modified: '2025-11-18T00:00:00Z'
+- id: P-46
+  resource: https://www.youtube.com/watch?v=vcGkejr8_nI
+  last_modified: '2026-04-09T00:00:00Z'
+- id: S1-02-A
+  resource: https://www.youtube.com/watch?v=qRj2t3wQHfs
+  last_modified: '2026-08-04T00:00:00Z'
 ---
 
 ## Überblick

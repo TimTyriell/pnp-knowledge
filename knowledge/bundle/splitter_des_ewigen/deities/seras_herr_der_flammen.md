@@ -6,8 +6,15 @@ description: 'Seras, Herr der Flammen, ist ein alter Gott. Die Gruppe begegnet s
 tags:
 - deities
 timestamp: '2025-08-12T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DEITY_SERAS_HERR_DER_FLAMMEN
 subtype: Alter Gott
+sources:
+- id: P-17
+  resource: https://www.youtube.com/watch?v=vHIjua0BZ9Y
+  last_modified: '2025-08-12T00:00:00Z'
 ---
 
 [Seras](/deities/tarvok_der_erdrichter.md), Herr der Flammen, ist ein alter Gott. Die Gruppe begegnet seiner Verehrung in einem abgelegenen Lager auf einem Berg: Eine ältere Bewohnerin vertraut ihr an, dass sie „für Seras" hier seien. [Esterossa](/characters/esterossa.md) erkennt in dem Verehrten einen alten Gott und vermutet, dass die Bewohner sich abseits halten, weil sie fürchten, als Anhänger alter Götter verurteilt zu werden. Über Herkunft, Erscheinung oder Mythen Seras' ist aus dieser Begegnung nichts weiter bekannt.

@@ -6,8 +6,15 @@ description: Jorah ist eine Gottheit, zu der Sange betet. Er wird als Gott der M
 tags:
 - deities
 timestamp: '2026-07-23T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DEITY_JORAH
 subtype: Sonstiges
+sources:
+- id: S1-02-B
+  resource: https://www.youtube.com/watch?v=Gb-TEbCFF0M
+  last_modified: '2026-07-23T00:00:00Z'
 ---
 
 Jorah ist eine Gottheit, zu der [Sange](/characters/sange.md) betet. Er wird als Gott der Münzen und des Lichts angerufen. Herkunft, Gestalt, ein organisierter Kult oder weitere Verehrer Jorahs sind aus den bisherigen Ereignissen nicht belegt.

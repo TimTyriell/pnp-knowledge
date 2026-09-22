@@ -6,8 +6,18 @@ description: Der Wald ist in den Aufzeichnungen der Gruppe mehrfach Schauplatz v
 tags:
 - locations
 timestamp: '2026-01-06T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:16Z'
 id: LOC_WALD
 subtype: Wildnis
+sources:
+- id: P-03
+  resource: https://www.youtube.com/watch?v=1PWdwvun5ow
+  last_modified: '2025-04-09T00:00:00Z'
+- id: P-32
+  resource: https://www.youtube.com/watch?v=VGw81seFvbo
+  last_modified: '2026-01-06T00:00:00Z'
 ---
 
 Der Wald ist in den Aufzeichnungen der Gruppe mehrfach Schauplatz von Verfolgung, Kämpfen und Patrouillen. Die früheste Notiz beschreibt ihn als Wald in der Nähe des Dorfes, in den sich die Tochter des Krämers flüchtet; die spätere Notiz als verschneiten Wald um eine [Hütte](/locations/huette.md). Ob es sich dabei um denselben Wald handelt, lassen die Belege offen.

@@ -2,7 +2,7 @@
 type: Conflict
 title: 'Offener Konflikt: Schlangengott / Schlangenpräsenz'
 description: Widersprüchliche Belege — menschliche Entscheidung nötig.
-timestamp: '2026-09-05T16:46:09+00:00'
+timestamp: '2026-09-22T22:10:08Z'
 id: CONFLICT_DEITY_SCHLANGENGOTT_SCHLANGENPRAESENZ
 status: open
 concept: deities/schlangengott_schlangenpraesenz

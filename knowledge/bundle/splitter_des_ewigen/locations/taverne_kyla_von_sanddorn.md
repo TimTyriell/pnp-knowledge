@@ -6,10 +6,17 @@ description: Die Taverne Kyla ist das große Gebäude auf der anderen Seite der 
 tags:
 - locations
 timestamp: '2025-04-30T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:16Z'
 id: LOC_TAVERNE_KYLA_VON_SANDDORN
 subtype: Gebäude
 aliases:
 - Taverne Kyla
+sources:
+- id: P-06
+  resource: https://www.youtube.com/watch?v=fsCOiSkKKTE
+  last_modified: '2025-04-30T00:00:00Z'
 ---
 
 [Die Taverne](/locations/taverne_von_ehrenfels.md) Kyla ist das große Gebäude auf der anderen Seite der Hauptinsel und gehört [Baran](/npcs/baran.md). Es ist deutlich besser besucht und beherbergt viele Anderlinge. Im Obergeschoss zeigt Baran der Gruppe einen Raum voller magischer Gegenstände und Dokumente. Hier erfahren sie von einem Labor und einer alten Kirche.

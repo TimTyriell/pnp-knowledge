@@ -6,8 +6,19 @@ description: Kaleandra die Rote ist eine eher unbekannte Göttin aus dem Kreis d
 tags:
 - deities
 timestamp: '2026-03-10T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DEITY_KALEANDRA_DIE_ROTE
 subtype: Neuer Gott
+relationships:
+- target: npcs/voras
+  note: '**Voras:** dient Kaleandra der Roten. Er bezeichnet sie als seine Göttin
+    und berichtet, dass sie ihm bei seinen Zielen hilft.'
+sources:
+- id: P-40
+  resource: https://www.youtube.com/watch?v=Kr9_AC2XtOw
+  last_modified: '2026-03-10T00:00:00Z'
 ---
 
 # Überblick
@@ -51,4 +62,4 @@ Dies ist bislang der einzige chronologisch belegte Moment, in dem Kaleandra die 
 
 # Belege
 
-[P-40] Session 2026-03-10 @ 02:03:55, https://www.youtube.com/watch?v=Kr9_AC2XtOw
+- [P-40] Session 2026-03-10 @ 02:03:55, https://www.youtube.com/watch?v=Kr9_AC2XtOw

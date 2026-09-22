@@ -6,7 +6,14 @@ description: 'Das Void ist eine dunkle Ebene. In den bisherigen Belegen taucht e
 tags:
 - domains
 timestamp: '2026-01-13T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T22:10:08Z'
 id: DOMAIN_VOID
+sources:
+- id: P-33
+  resource: https://www.youtube.com/watch?v=w4LB1s9_3rs
+  last_modified: '2026-01-13T00:00:00Z'
 ---
 
 Das Void ist eine dunkle Ebene. In den bisherigen Belegen taucht es ausschließlich im Zusammenhang mit dem [Splitterkalb](/events/splitterkalb.md) auf: Das Void gilt als dessen Herkunftsort. Näheres über Beschaffenheit, Grenzen oder mögliche Bewohner dieser Ebene ist nicht dokumentiert; der Wissensstand beschränkt sich auf diese eine Nennung.

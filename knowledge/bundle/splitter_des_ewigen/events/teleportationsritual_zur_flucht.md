@@ -6,8 +6,15 @@ description: Als die Hexe erscheint und Rotunas' Eiswand zerstört, gelingt Lind
 tags:
 - events
 timestamp: '2025-06-17T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_TELEPORTATIONSRITUAL_ZUR_FLUCHT
 subtype: Ritual
+sources:
+- id: P-12
+  resource: https://www.youtube.com/watch?v=tl76B4V0io8
+  last_modified: '2025-06-17T00:00:00Z'
 ---
 
 Als die Hexe erscheint und [Rotunas](/characters/rotunas.md)' Eiswand zerstört, gelingt [Lindo Laut](/characters/lindo_laut.md) in letzter Sekunde das Teleportationsritual. Die gesamte Gruppe wird zurück zum Eingang des Dungeons versetzt und entkommt so einem direkten Kampf mit der Hexe.

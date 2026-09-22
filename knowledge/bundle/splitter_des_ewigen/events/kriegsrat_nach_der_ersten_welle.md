@@ -6,8 +6,15 @@ description: Nach der ersten Welle versammeln sich die Helden mit Talron, Hauptm
 tags:
 - events
 timestamp: '2026-09-03T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_KRIEGSRAT_NACH_DER_ERSTEN_WELLE
 subtype: Verhandlung
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=bl-hX87_EC8
+  last_modified: '2026-09-03T00:00:00Z'
 ---
 
 Nach der ersten Welle versammeln sich die Helden mit [Talron](/npcs/talron.md), [Hauptmann Aaron](/npcs/hauptmann_aaron.md), [Coralius](/npcs/coralius.md), [Sir Tali von Brandau](/npcs/sir_tali_von_brandau.md) und anderen im Hauptgebäude, um einen Plan für die kommenden Tage zu schmieden. Coralius bietet Strixwölfe als Luftunterstützung an, Sir Tali schlägt riskante Angriffe auf die feindliche Führung vor, und die Gruppe einigt sich auf eine defensive Strategie: Mauer reparieren, Ölfässer und Baumstämme als Fallen. [Sange](/characters/sange.md) erhält währenddessen den Segen [Jorans](/deities/joran.md). Der Rat endet mit der Aussicht auf die nächste, intensivere Schlacht.

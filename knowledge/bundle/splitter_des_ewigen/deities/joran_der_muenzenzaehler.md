@@ -1,15 +1,38 @@
 ---
 type: Deity
 title: Joran der Münzenzähler
-description: In der Folgesession am 10. Juli 2026 zeigt sich die anhaltende Wirkung.
-  Sanges Blutmagie, die er sich bildlich als rote, turbulente Glaskug…
+description: Joran der Münzenzähler ist ein neuer Gott, dessen Statue einen jungen
+  Burschen mit einem Sack voll Gold und einer Münze darstellt. Er gehör…
 tags:
 - deities
 timestamp: '2026-07-10T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:11:53Z'
 id: DEITY_JORAN_DER_MUENZENZAEHLER
 subtype: Neuer Gott
 aliases:
 - Joran, der Münzenzähler
+relationships:
+- target: characters/kaya
+  note: '**Kaya:** Beobachtet Sange nach dem Segen mit Sorge und testet dessen Auswirkungen.'
+- target: characters/sange
+  note: '**Sange:** Sange hat sich Joran verpflichtet und wurde von ihm gesegnet.
+    Der Segen verändert Sanges Blutmagie dauerhaft.'
+- target: deities/neue_goetter
+  note: '**Neue Götter:** Joran ist einer der „neuen Götter“, einer Gruppe von Gottheiten,
+    deren Licht der Dunkelheit entgegenwirkt. Die genaue Zusammensetzung oder Organisation
+    dieser Gruppe bleibt unklar.'
+- target: npcs/adeliga_der_eulenseraph
+  note: '**Adeliga:** Joran ist ihr Patron. Nähere Umstände dieser Beziehung sind
+    nicht bekannt.'
+sources:
+- id: P-52
+  resource: https://www.youtube.com/watch?v=EGNh8O7pE5Q
+  last_modified: '2026-06-04T00:00:00Z'
+- id: S1-01-B
+  resource: https://www.youtube.com/watch?v=H-eHSlfxUAg
+  last_modified: '2026-07-10T00:00:00Z'
 ---
 
 ## Überblick

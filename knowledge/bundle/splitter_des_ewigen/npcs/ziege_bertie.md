@@ -6,10 +6,20 @@ description: 'Bertie ist eine Figur, zu der die Quellen zwei unvereinbare Rollen
 tags:
 - npcs
 timestamp: '2025-09-17T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:19Z'
 id: NPC_ZIEGE_BERTIE
 aliases:
 - Berti
-status: disputed
+review_status: disputed
+sources:
+- id: P-03
+  resource: https://www.youtube.com/watch?v=1PWdwvun5ow
+  last_modified: '2025-04-09T00:00:00Z'
+- id: P-22
+  resource: https://www.youtube.com/watch?v=AhIT8dcxw2o
+  last_modified: '2025-09-17T00:00:00Z'
 ---
 
 Bertie ist eine Figur, zu der die Quellen zwei unvereinbare Rollen überliefern: Ein Beleg beschreibt sie als zahme Ziege im Besitz [Tindraels](/npcs/tindrael.md), ein anderer nennt Bertie den [Bürgermeister](/npcs/buergermeister_spitzzahn.md) von [Breska](/locations/breska.md). Die Aufzeichnungen stellen keine Verbindung zwischen diesen Angaben her und lassen offen, ob es sich um dasselbe Wesen oder um zwei gleichnamige Individuen handelt. Beide Darstellungen werden daher im Folgenden mit ihrem jeweiligen Beleg wiedergegeben.

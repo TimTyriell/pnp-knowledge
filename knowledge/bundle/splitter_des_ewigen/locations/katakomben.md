@@ -6,10 +6,20 @@ description: 'Die Bezeichnung Katakomben wird in der Kampagne für zwei verschie
 tags:
 - locations
 timestamp: '2026-03-23T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:16Z'
 id: LOC_KATAKOMBEN
 subtype: Dungeon
 aliases:
 - Katakombe
+sources:
+- id: P-05
+  resource: https://www.youtube.com/watch?v=z3C-bewKqUs
+  last_modified: '2025-04-23T00:00:00Z'
+- id: P-42
+  resource: https://www.youtube.com/watch?v=niVxKtdQBn0
+  last_modified: '2026-03-23T00:00:00Z'
 ---
 
 Die Bezeichnung **Katakomben** wird in der Kampagne für zwei verschiedene unterirdische Anlagen verwendet: die kleine Katakombe von [Gemata](/locations/gemata.md) und die katakombenartigen Gänge unter der [Heinrich-Farm](/locations/heinrich_farm.md). Beide Anlagen sind über versteckte Zugänge erreichbar und waren Schauplatz entscheidender Begegnungen: In der Katakombe von Gemata wurde der Vampir [Voras](/npcs/voras.md) erweckt, in den Gängen unter der [Heinrich-Farm](/locations/heinrich_farm.md) fand der finale Kampf gegen [Floran](/npcs/floran.md) und [Adria](/npcs/adria.md) statt. Ob die beiden Anlagen miteinander verbunden sind, ist nicht bekannt.

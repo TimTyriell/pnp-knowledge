@@ -6,8 +6,15 @@ description: Eine Welle magischer Energie erfasst Ehrenfels und entzieht der Umg
 tags:
 - events
 timestamp: '2026-04-09T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_MAGISCHE_WELLE_UEBER_EHRENFELS
 subtype: Sonstiges
+sources:
+- id: P-46
+  resource: https://www.youtube.com/watch?v=vcGkejr8_nI
+  last_modified: '2026-04-09T00:00:00Z'
 ---
 
 Eine Welle magischer Energie erfasst [Ehrenfels](/locations/ehrenfels.md) und entzieht der Umgebung alle Farben außer Rot. Kurz darauf ertönt ein Knall und Dämonen greifen an.

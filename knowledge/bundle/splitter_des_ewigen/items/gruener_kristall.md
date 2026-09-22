@@ -6,12 +6,22 @@ description: Die Grünen Kristalle sind ein magisch aktiver Kristalltyp, der in 
 tags:
 - items
 timestamp: '2026-05-13T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:14Z'
 id: ITEM_GRUENER_KRISTALL
 subtype: Artefakt
 aliases:
 - Der Kristall
 - Grüner Kristall
 - Kristall
+sources:
+- id: P-25
+  resource: https://www.youtube.com/watch?v=qVAF_54S8Vw
+  last_modified: '2025-10-07T00:00:00Z'
+- id: P-49
+  resource: https://www.youtube.com/watch?v=4afPD9Q_5AY
+  last_modified: '2026-05-13T00:00:00Z'
 ---
 
 Die **Grünen Kristalle** sind ein magisch aktiver Kristalltyp, der in der Kampagne mehrfach in Erscheinung tritt. Sie können lilafarbene Kristalle in ihre grüne Variante umwandeln und tragen eine [Kontrollrune](/items/kontrollrune.md), was auf eine absichtliche Platzierung durch jemanden hindeutet [P-25]. Die Kristalle sind magisch aktiv, weisen einen Herzschlag auf und sind feueranfällig [P-25]. Neben einer großen grünen Struktur und einem großen Kristall in einer Mine ist ein einzelner grüner Kristall als Artefakt in den Händen von [Lunara](/characters/lunara_velora.md) dokumentiert [P-49].

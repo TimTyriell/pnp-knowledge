@@ -6,8 +6,15 @@ description: Die kleine Vorbarrikade ist das befestigte Lager der Banditen unter
 tags:
 - locations
 timestamp: '2025-09-30T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: LOC_BANDITENLAGER_KLEINE_VORBARRIKADE
 subtype: Siedlung
+sources:
+- id: P-24
+  resource: https://www.youtube.com/watch?v=bUT7Mc2hjUY
+  last_modified: '2025-09-30T00:00:00Z'
 ---
 
 Die kleine Vorbarrikade ist das befestigte Lager der [Banditen](/factions/silberkerne.md) unter Hal, in dem die [Flüchtlinge](/factions/fluechtlinge.md) untergebracht werden. Sie ist stark verteidigt, hat Holzpalisaden und ein Tor. Die Gruppe verhandelt hier mit Hal und feiert später mit den Geretteten.

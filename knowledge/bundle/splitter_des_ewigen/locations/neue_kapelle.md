@@ -6,8 +6,15 @@ description: Die neue Kapelle ist ein kleines, in den Berg gebautes Gebäude, da
 tags:
 - locations
 timestamp: '2026-08-04T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:16Z'
 id: LOC_NEUE_KAPELLE
 subtype: Gebäude
+sources:
+- id: S1-02-A
+  resource: https://www.youtube.com/watch?v=qRj2t3wQHfs
+  last_modified: '2026-08-04T00:00:00Z'
 ---
 
 Die neue [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) ist ein kleines, in den Berg gebautes Gebäude, das von [Nerash](/deities/nerash.md) errichtet wurde. Hier empfängt der [Seraph](/npcs/seraph.md) [Vitius](/npcs/vitius.md) die Helden und erteilt ihnen den Auftrag. Sie enthält zwei Särge und eine Truhe. Der Eingang wird von Seraphen-Wachen bewacht.

@@ -1,11 +1,14 @@
 ---
 type: NPC
 title: Landra, die Hag
-description: In der Folge wird sie als Drahtzieherin des Goblinangriffs auf Gemata
-  identifiziert. Die Gruppe vermutet, dass sie es auf etwas in den Kata…
+description: Landra, die Hag – auch die Sumpfhexe, die Moorhexe oder schlicht die
+  Hag genannt – ist eine buckelige alte Frau mit bedeutenden magischen F…
 tags:
 - npcs
 timestamp: '2026-08-25T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T22:10:10Z'
 id: NPC_LENRA
 subtype: Sonstiges
 aliases:
@@ -18,6 +21,56 @@ aliases:
 - Die Sumpfhexe
 - Sumpfhexe
 - Lanra
+verified:
+  by: human:gm
+relationships:
+- target: characters/dodo
+  note: 'Dodo: Landra schrumpfte ihn in der Krypta; er fürchtet und verabscheut sie
+    und hat später keine Lust auf die Hag.'
+- target: characters/lindo_laut
+  note: 'Lindo Laut: Sie forderte ihn in der Krypta zu einem Lied auf; später spricht
+    er von Lenras Spielplatz.'
+- target: deities/vharzul
+- target: locations/breska
+  note: 'Breska: Der Angriff auf das Dorf wird mit Landra in Verbindung gebracht;
+    sie hinterließ Schriftrollen mit Hinweisen auf einen Magier in Breska.'
+- target: locations/cornivum
+- target: locations/gemata
+  note: 'Gemata: Als Auftraggeberin des Goblinangriffs auf Gemata identifiziert; vermutlich
+    zielte sie auf die Katakomben ab.'
+- target: npcs/abisalis_harald
+  note: 'Abisalis: In der Splitterwelt kommuniziert Landra durch einen Schamanen und
+    fordert die Kristallkugel zurück.'
+- target: npcs/belorus
+  note: 'Belorus: In der Burg des schwarzen Paladins Belorus stand eine Statue, durch
+    die Landra wirkte.'
+- target: npcs/dormak
+  note: 'Dormak: Lenras Komplize; beide wollten Vhar''Zul zurückholen.'
+- target: npcs/kuatau_anfuehrer_priester
+  note: 'Kuatau: Sie gab ihnen Amulette, die angeblich ein Portal öffnen sollten,
+    und täuschte sie damit.'
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=YCpAz_syjaY
+  last_modified: '2025-04-15T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=z3C-bewKqUs
+  last_modified: '2025-04-23T00:00:00Z'
+- id: '3'
+  resource: https://www.youtube.com/watch?v=5eAEDN5ra-4
+  last_modified: '2025-05-14T00:00:00Z'
+- id: '4'
+  resource: https://www.youtube.com/watch?v=cLkCu3Iq3y8
+  last_modified: '2025-06-10T00:00:00Z'
+- id: '5'
+  resource: https://www.youtube.com/watch?v=XXgO5Ht4Q0A
+  last_modified: '2025-07-29T00:00:00Z'
+- id: '6'
+  resource: https://www.youtube.com/watch?v=H3ckYdTv4y8
+  last_modified: '2026-01-20T00:00:00Z'
+- id: '7'
+  resource: https://www.youtube.com/watch?v=1Cjj3OVqiYA
+  last_modified: '2026-08-25T00:00:00Z'
 ---
 
 ## Überblick
@@ -61,10 +114,10 @@ Ihr Auftreten ist selbstsicher, spöttisch und herablassend. Sie nennt die Grupp
 - Woher stammt Landra, und was ist ihre genaue Natur als Hexe oder Hag?
 
 ## Belege
-[1] Session 2025-04-15 @ 01:53:46 (https://www.youtube.com/watch?v=YCpAz_syjaY)
-[2] Session 2025-04-23 @ 00:04:04 (https://www.youtube.com/watch?v=z3C-bewKqUs)
-[3] Session 2025-05-14 @ 00:54:14 (https://www.youtube.com/watch?v=5eAEDN5ra-4)
-[4] Session 2025-06-10 @ 00:31:47 (https://www.youtube.com/watch?v=cLkCu3Iq3y8)
-[5] Session 2025-07-29 @ 01:50:30 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
-[6] Session 2026-01-20 @ 01:44:36 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
-[7] Session 2026-08-25 @ 02:09:55 (https://www.youtube.com/watch?v=1Cjj3OVqiYA)
+- [1] Session 2025-04-15 @ 01:53:46 (https://www.youtube.com/watch?v=YCpAz_syjaY)
+- [2] Session 2025-04-23 @ 00:04:04 (https://www.youtube.com/watch?v=z3C-bewKqUs)
+- [3] Session 2025-05-14 @ 00:54:14 (https://www.youtube.com/watch?v=5eAEDN5ra-4)
+- [4] Session 2025-06-10 @ 00:31:47 (https://www.youtube.com/watch?v=cLkCu3Iq3y8)
+- [5] Session 2025-07-29 @ 01:50:30 (https://www.youtube.com/watch?v=XXgO5Ht4Q0A)
+- [6] Session 2026-01-20 @ 01:44:36 (https://www.youtube.com/watch?v=H3ckYdTv4y8)
+- [7] Session 2026-08-25 @ 02:09:55 (https://www.youtube.com/watch?v=1Cjj3OVqiYA)

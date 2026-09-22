@@ -6,11 +6,201 @@ description: Esterossa ist ein männlicher Seraph der Unterklasse „Winged Sent
 tags:
 - characters
 timestamp: '2026-08-12T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:09Z'
 id: CHAR_ESTEROSSA
 aliases:
 - Esterossa Torbhalm
 - Esterossa Torpalm
 - Esterossa (Mikasa)
+verified:
+  by: human:gm
+relationships:
+- target: characters/cookie
+  note: '**Cookie**: Esterossa heilt Cookie mehrfach und zeigt sich nach ihrem Tod
+    tief betroffen. Er schlägt vor, das Anwesen zu Ehren von Cookie zu benennen, und
+    bezahlt später einen Marktschreier, um Cooki…'
+- target: characters/dodo
+  note: '**Dodo**: Esterossa bezeichnet Dodo als Bruder. Die beiden kämpfen Seite
+    an Seite; Esterossa rettet Dodo mehrfach mit Heilung, Wards und goldenem Schild.
+    In seinem letzten Moment reicht er Dodo die H…'
+- target: characters/lindo_laut
+  note: '**Lindo Laut**: Anfangs misstrauisch gegenüber Lindo Lauts Geheimnissen,
+    später kniet er symbolisch vor ihm nieder, gelobt Schild und Schwert und vergibt
+    ihm. Er unterstützt Lindo mit Schutzzaubern u…'
+- target: characters/lunara_velora
+  note: '**Lunara Velora**: Anfangs misstrauisch und mit gezielten Fragen, entwickelt
+    er später Vertrauen und folgt ihrer Führung, insbesondere in Abyssalis und an
+    der Narbe.'
+- target: characters/nyrella
+  note: '**Nyrella**: Er heilt Nyrellas gestressten Eisbären Nyruk und erhält über
+    Günther eine Nachricht von Nyrella.'
+- target: characters/rotunas
+  note: '**Rotunas**: Esterossa heilt Rotunas’ Verletzungen, leiht ihm ein Goblin-Buch
+    und kämpft an seiner Seite. Er betont, dass das Leben des Zwergenlords oberste
+    Priorität habe.'
+- target: characters/valeria
+- target: deities/huludan
+  note: '**Huludan**: Nach der Zerstörung des Rings übernimmt er das Schwert von Huludan;
+    seine Flügel verfärben sich lila und Kristalle wachsen.'
+- target: deities/kollmereth
+- target: deities/korn
+  note: '**Korn / Blutgott**: Esterossa betet regelmäßig zu Korn, opfert Blut und
+    erhält dafür göttliche Unterstützung. Sein Gebet lautet: „Blut für den Blutgott,
+    Ehre im Kampf und möge mein Feind zuerst fall…'
+- target: deities/nerash
+  note: '**Nerash**: Er trägt eine kleine Statue von Nerash bei sich, betet in kritischen
+    Momenten zu ihr und versucht, ihre Hilfe zu erbitten.'
+- target: deities/vharzul
+  note: '**Vasul**: Er misstraut Vasul zunächst, erkennt später dessen Plan als Bedrohung
+    und zerschlägt im Finale den Kristall in Vasuls Hand.'
+- target: deities/vorgul_tar
+  note: '**Vorgultar**: Im Finale kämpft er gegen Vorgultars Kreaturen und verliert
+    dabei Stücke seiner Flügel.'
+- target: domains/splitterwelt
+- target: items/seelenstein_des_rotunas
+- target: npcs/hans_soldat_aus_breska
+- target: npcs/katze_ajani_guenther
+  note: '**Günther / Adjani**: Seine Katze ist sein Begleiter; er lässt sie vor dem
+    Gildenhaus warten und kümmert sich um sie.'
+- target: npcs/lobrecht
+- target: npcs/miaomani
+- target: npcs/nyruk
+- target: npcs/perry_das_schnabeltier
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=ROCKGeeRUFw
+  last_modified: '2025-03-26T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=LZIuUzc3F18
+  last_modified: '2025-04-01T00:00:00Z'
+- id: '3'
+  resource: https://www.youtube.com/watch?v=YCpAz_syjaY
+  last_modified: '2025-04-15T00:00:00Z'
+- id: '4'
+  resource: https://www.youtube.com/watch?v=z3C-bewKqUs
+  last_modified: '2025-04-23T00:00:00Z'
+- id: '5'
+  resource: https://www.youtube.com/watch?v=fsCOiSkKKTE
+  last_modified: '2025-04-30T00:00:00Z'
+- id: '6'
+  resource: https://www.youtube.com/watch?v=e0v6AFGd4mE
+  last_modified: '2025-05-06T00:00:00Z'
+- id: '7'
+  resource: https://www.youtube.com/watch?v=bamCIB_CkR8
+  last_modified: '2025-05-27T00:00:00Z'
+- id: '8'
+  resource: https://www.youtube.com/watch?v=jtYR4Je0a18
+  last_modified: '2025-06-03T00:00:00Z'
+- id: '9'
+  resource: https://www.youtube.com/watch?v=XOnHa6CmDbo
+  last_modified: '2025-07-09T00:00:00Z'
+- id: '10'
+  resource: https://www.youtube.com/watch?v=BRRCUgW4xRo
+  last_modified: '2025-07-22T00:00:00Z'
+- id: '11'
+  resource: https://www.youtube.com/watch?v=XXgO5Ht4Q0A
+  last_modified: '2025-07-29T00:00:00Z'
+- id: '12'
+  resource: https://www.youtube.com/watch?v=vHIjua0BZ9Y
+  last_modified: '2025-08-12T00:00:00Z'
+- id: '13'
+  resource: https://www.youtube.com/watch?v=-XbO3FLSL_I
+  last_modified: '2025-08-20T00:00:00Z'
+- id: '14'
+  resource: https://www.youtube.com/watch?v=TLZOH7TlGhk
+  last_modified: '2025-09-02T00:00:00Z'
+- id: '15'
+  resource: https://www.youtube.com/watch?v=vo1xnyLQDJk
+  last_modified: '2025-09-06T00:00:00Z'
+- id: '16'
+  resource: https://www.youtube.com/watch?v=Zl0qfuI6Goc
+  last_modified: '2025-09-09T00:00:00Z'
+- id: '17'
+  resource: https://www.youtube.com/watch?v=AhIT8dcxw2o
+  last_modified: '2025-09-17T00:00:00Z'
+- id: '18'
+  resource: https://www.youtube.com/watch?v=DGzfqVigS0g
+  last_modified: '2025-09-23T00:00:00Z'
+- id: '19'
+  resource: https://www.youtube.com/watch?v=bUT7Mc2hjUY
+  last_modified: '2025-09-30T00:00:00Z'
+- id: '20'
+  resource: https://www.youtube.com/watch?v=qVAF_54S8Vw
+  last_modified: '2025-10-07T00:00:00Z'
+- id: '21'
+  resource: https://www.youtube.com/watch?v=cUtz87UCHu4
+  last_modified: '2025-10-14T00:00:00Z'
+- id: '22'
+  resource: https://www.youtube.com/watch?v=sxFhbtwoefA
+  last_modified: '2025-10-21T00:00:00Z'
+- id: '23'
+  resource: https://www.youtube.com/watch?v=V6NzNakqxXM
+  last_modified: '2025-10-28T00:00:00Z'
+- id: '24'
+  resource: https://www.youtube.com/watch?v=8Khb-Y8XbKY
+  last_modified: '2025-11-14T00:00:00Z'
+- id: '25'
+  resource: https://www.youtube.com/watch?v=w__ahowb9p0
+  last_modified: '2025-11-18T00:00:00Z'
+- id: '26'
+  resource: https://www.youtube.com/watch?v=wd5R4fJfngY
+  last_modified: '2025-11-25T00:00:00Z'
+- id: '27'
+  resource: https://www.youtube.com/watch?v=VGw81seFvbo
+  last_modified: '2026-01-06T00:00:00Z'
+- id: '28'
+  resource: https://www.youtube.com/watch?v=w4LB1s9_3rs
+  last_modified: '2026-01-13T00:00:00Z'
+- id: '29'
+  resource: https://www.youtube.com/watch?v=H3ckYdTv4y8
+  last_modified: '2026-01-20T00:00:00Z'
+- id: '30'
+  resource: https://www.youtube.com/watch?v=9RzvnnWzV7E
+  last_modified: '2026-01-27T00:00:00Z'
+- id: '31'
+  resource: https://www.youtube.com/watch?v=3C8SD-cyNPM
+  last_modified: '2026-02-11T00:00:00Z'
+- id: '32'
+  resource: https://www.youtube.com/watch?v=BRUNuNKTeOg
+  last_modified: '2026-03-03T00:00:00Z'
+- id: '33'
+  resource: https://www.youtube.com/watch?v=Yj5BWJfg3Ag
+  last_modified: '2026-03-24T00:00:00Z'
+- id: '34'
+  resource: https://www.youtube.com/watch?v=Ee-K84wcxLM
+  last_modified: '2026-03-31T00:00:00Z'
+- id: '35'
+  resource: https://www.youtube.com/watch?v=MAuQPMNY548
+  last_modified: '2026-04-07T00:00:00Z'
+- id: '36'
+  resource: https://www.youtube.com/watch?v=MB4quhDWsQE
+  last_modified: '2026-05-06T00:00:00Z'
+- id: '37'
+  resource: https://www.youtube.com/watch?v=4afPD9Q_5AY
+  last_modified: '2026-05-13T00:00:00Z'
+- id: '38'
+  resource: https://www.youtube.com/watch?v=xEcGJeaNixI
+  last_modified: '2026-05-19T00:00:00Z'
+- id: '39'
+  resource: https://www.youtube.com/watch?v=_3tLSiT1tck
+  last_modified: '2026-06-10T00:00:00Z'
+- id: '40'
+  resource: https://www.youtube.com/watch?v=qe0ck8hvYpk
+  last_modified: '2026-06-16T00:00:00Z'
+- id: '41'
+  resource: https://www.youtube.com/watch?v=KNV4oNGJ0tw
+  last_modified: '2026-07-21T00:00:00Z'
+- id: '42'
+  resource: https://www.youtube.com/watch?v=umGyKLkefJI
+  last_modified: '2026-07-29T00:00:00Z'
+- id: '43'
+  resource: https://www.youtube.com/watch?v=qRj2t3wQHfs
+  last_modified: '2026-08-04T00:00:00Z'
+- id: '44'
+  resource: https://www.youtube.com/watch?v=piUv11DCwDw
+  last_modified: '2026-08-12T00:00:00Z'
 ---
 
 ## Überblick

@@ -1,11 +1,14 @@
 ---
 type: Item
 title: Teleportationsring
-description: Der Ring, den Lindo Laut an seinem Mittelfinger trägt, wurde bisher nicht
-  aktiviert. In der finalen Konfrontation nutzt er ihn, um sich auf…
+description: Der Teleportationsring ist ein magischer Ring, der von Lindo Laut an
+  dessen Mittelfinger getragen wird. Er erlaubt dem Träger, sich an eine…
 tags:
 - items
 timestamp: '2025-09-02T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:11:55Z'
 id: ITEM_RING_DER_TELEPORTATION
 subtype: Schmuck
 aliases:
@@ -13,6 +16,12 @@ aliases:
 - Ring der Teleportation
 - Lindo Lauts Ring
 - Ring von Lindo Laut
+verified:
+  by: human:gm
+sources:
+- id: P-19
+  resource: https://www.youtube.com/watch?v=TLZOH7TlGhk
+  last_modified: '2025-09-02T00:00:00Z'
 ---
 
 ## Überblick

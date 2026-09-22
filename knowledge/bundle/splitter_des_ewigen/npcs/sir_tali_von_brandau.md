@@ -6,7 +6,17 @@ description: Sir Tali von Brandau ist ein Ritter und Angehöriger der Leibgarde 
 tags:
 - npcs
 timestamp: '2026-09-03T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_SIR_TALI_VON_BRANDAU
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=2EkWrNUfQi0
+  last_modified: '2026-08-20T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=bl-hX87_EC8
+  last_modified: '2026-09-03T00:00:00Z'
 ---
 
 Sir Tali von Brandau ist ein Ritter und Angehöriger der Leibgarde der [Prinzessin Marie](/npcs/prinzessin_marie.md). Im Kriegsrat stellt ihn [Talron](/npcs/talron.md) den Helden als „unsere Rettung“ vor. Sein Überleben gilt als entscheidend, weil er ein Symbol des Widerstands gegen [Willauch](/locations/willauch.md) darstellt.

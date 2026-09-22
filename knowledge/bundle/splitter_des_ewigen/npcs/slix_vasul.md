@@ -6,11 +6,66 @@ description: Slix ist ein mächtiger, bösartiger Splitter des alten Gottes Vhar
 tags:
 - npcs
 timestamp: '2026-08-12T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_SLIX_VASUL
 subtype: Sonstiges
 aliases:
 - Slix/Vasul
 - Slicks
+verified:
+  by: human:gm
+relationships:
+- target: characters/lindo_laut
+  note: '**Lindo Laut:** Slix wohnt in Lindo, spricht zu ihm und übernimmt zeitweise
+    die Kontrolle über dessen Körper. Anfangs nennt Slix ihn „Meister“ und „Lord“,
+    nutzt diese Fassade aber, um Lindo zur Nutzu…'
+- target: characters/lunara_velora
+  note: '**Lunara Velora:** Slix zwingt Lunara gewaltsam zu Boden, als sie sich widersetzt.
+    Später lenkt sie ihn mit dem Thema der Splitterwelt ab, und bei der Befreiung
+    hält sie ihn mit einem Kontrollzauber…'
+- target: characters/rotunas
+  note: '**Rotunas:** Bei einem früheren Ausbruch kostet Slix Rotunas den Arm. Rotunas
+    versetzt Slix später einen heftigen Schlag, der ihn wegschleudert.'
+- target: deities/vharzul
+  note: '**Vhar''Zul:** Slix ist der versteckte fünfte Teil des alten Gottes und einer
+    seiner vier bösartigen Anteile. Bei Vhar''Zuls Rückkehr wird Slix aus Lindo herausgelöst,
+    niedergezwungen und mit dem Stab…'
+- target: factions/gruppe_rotunas_freunde
+  note: '**Gruppe:** Er befiehlt allen Anwesenden niederzuknien, droht Rotunas und
+    behandelt die Gefährten als Untertanen.'
+- target: locations/casa_del_cookie
+- target: npcs/belorus
+  note: '**Belorus:** Slix erklärt gegenüber Lindo, dass sie Belorus schaden können,
+    und drängt Lindo kurz vor Belorus’ Abzug zu einem Angriff.'
+- target: npcs/lionel_magno
+  note: '**Lionel:** Slix tötet Lionel, indem er ihm das Herz herausreißt.'
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=wd5R4fJfngY
+  last_modified: '2025-11-25T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=VGw81seFvbo
+  last_modified: '2026-01-06T00:00:00Z'
+- id: '3'
+  resource: https://www.youtube.com/watch?v=H3ckYdTv4y8
+  last_modified: '2026-01-20T00:00:00Z'
+- id: '4'
+  resource: https://www.youtube.com/watch?v=3C8SD-cyNPM
+  last_modified: '2026-02-11T00:00:00Z'
+- id: '5'
+  resource: https://www.youtube.com/watch?v=Z2jlzpoTWVw
+  last_modified: '2026-02-17T00:00:00Z'
+- id: '6'
+  resource: https://www.youtube.com/watch?v=Yj5BWJfg3Ag
+  last_modified: '2026-03-24T00:00:00Z'
+- id: '7'
+  resource: https://www.youtube.com/watch?v=Ee-K84wcxLM
+  last_modified: '2026-03-31T00:00:00Z'
+- id: '8'
+  resource: https://www.youtube.com/watch?v=piUv11DCwDw
+  last_modified: '2026-08-12T00:00:00Z'
 ---
 
 ## Überblick

@@ -6,8 +6,15 @@ description: Gildenmeister Nox führt ein Ritual durch, das das Rift öffnet und
 tags:
 - events
 timestamp: '2025-05-27T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_TRAININGSBESCHWOERUNG_AM_RIFT
 subtype: Ritual
+sources:
+- id: P-09
+  resource: https://www.youtube.com/watch?v=bamCIB_CkR8
+  last_modified: '2025-05-27T00:00:00Z'
 ---
 
 [Gildenmeister Nox](/npcs/nox.md) führt ein Ritual durch, das das Rift öffnet und fünf [Skelett-Bogenschützen](/npcs/skelett_bogenschuetzen.md) sowie einen [Miner-Dämon](/npcs/minen_daemon.md) auf das Trainingsgelände bringt. Das Ritual kann nach Beginn nicht mehr unterbrochen werden. Es dient der [Gilde](/factions/gilde_von_ehrenfels.md) als Trainingsmethode für ihre Krieger.

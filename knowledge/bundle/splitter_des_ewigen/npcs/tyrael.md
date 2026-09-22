@@ -6,7 +6,41 @@ description: Tyrael ist ein untoter Lich und außerordentlich mächtiger Magier,
 tags:
 - npcs
 timestamp: '2026-03-24T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:19Z'
 id: NPC_TYRAEL
+verified:
+  by: human:gm
+relationships:
+- target: characters/lindo_laut
+  note: '**Lindo Laut**: Tyrael erkennt zwei Wesen in ihm, hält ihn zunächst fest,
+    gibt ihm das vergorene Fleisch und warnt vor dem baldigen Erwachen des Dämons.
+    Lindo Laut liest Tyraels Gedanken und erfährt…'
+- target: characters/lunara_velora
+  note: '**Lunara Velora**: Tyrael ist ihr Kontakt im Abyssalis, ihre Augen und Ohren
+    dort. Er hilft ihr, ihren Bruder herauszuholen, und schickt ihr Notizen mit Warnungen.
+    Lunara plant, ihm den Stab zu überg…'
+- target: deities/tarvok_der_erdrichter
+  note: '**Thar''Vok und Vorgutar**: Lindo Laut beschreibt Tyrael als Anhänger dieser
+    beiden Gottheiten, betont aber seine taktische Eigenständigkeit.'
+- target: deities/vharzul
+  note: '**Vhar''Zul**: Tyrael besitzt Wissen über diesen Herrn der Seelen, dessen
+    Ursprung im Abyssalis liegt. Er warnt vor den erstarkenden Teilen Vhar''Zuls.'
+- target: deities/vorgul_tar
+- target: domains/splitterwelt
+  note: '**Abyssalis**: Tyraels Aufenthaltsort und Wirkungsbereich; von hier aus beobachtet
+    er Vhar''Zul und hält Kontakt zu Lunara.'
+- target: npcs/bosa
+  note: '**Bosa**: Bosa stellt Tyrael bei der ersten Begegnung vor; die beiden treten
+    gemeinsam auf, ohne dass ihre Beziehung näher erläutert wird.'
+sources:
+- id: P-26
+  resource: https://www.youtube.com/watch?v=cUtz87UCHu4
+  last_modified: '2025-10-14T00:00:00Z'
+- id: P-43
+  resource: https://www.youtube.com/watch?v=Yj5BWJfg3Ag
+  last_modified: '2026-03-24T00:00:00Z'
 ---
 
 # Tyrael

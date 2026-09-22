@@ -6,7 +6,14 @@ description: Die junge Tochter der Familie Krämer nähert sich neugierig der Gr
 tags:
 - npcs
 timestamp: '2025-04-09T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_TOCHTER_DER_FAMILIE_KRAEMER
+sources:
+- id: P-03
+  resource: https://www.youtube.com/watch?v=1PWdwvun5ow
+  last_modified: '2025-04-09T00:00:00Z'
 ---
 
 Die junge Tochter der Familie Krämer nähert sich neugierig der Gruppe, wird aber von [Valerias](/characters/valeria.md) lauter Vorstellung erschreckt und rennt in den [Wald](/locations/wald.md). Dort wird sie von einem Goblin-Späher verfolgt, bis die Helden sie retten. Sie wird zu ihrem Vater zurückgebracht.

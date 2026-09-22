@@ -6,8 +6,15 @@ description: Lionel, der Hausmeister von Crowfin Manor, wird von Slix getötet, 
 tags:
 - events
 timestamp: '2026-02-17T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_TOD_VON_LIONEL_MAGNO
 subtype: Tod
+sources:
+- id: P-37
+  resource: https://www.youtube.com/watch?v=Z2jlzpoTWVw
+  last_modified: '2026-02-17T00:00:00Z'
 ---
 
 Lionel, der Hausmeister von [Crowfin Manor](/locations/crowfin_manor.md), wird von [Slix](/npcs/slix_vasul.md) getötet, als er sich freiwillig meldet, das [Schwert](/items/schwert.md) [Zebrosia](/items/zebrosia.md) zu berühren. Slix reißt ihm das Herz heraus. Sein Tod ist ein tragischer Verlust und zeigt die Brutalität von Slix.

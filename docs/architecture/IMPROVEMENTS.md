@@ -6,6 +6,79 @@ rejected, the entry says so and why, so it is not re-proposed.
 
 ---
 
+## I-004 — A live registry entry with no aliases has no anchor
+
+**Status:** proposed, 2026-09-22. Found by I-003's sample review, not by its
+metrics. Not scheduled; wants its own measured run.
+
+`_load_preserved_aliases` (`resolve.py:388`) skips any registry entry whose
+`aliases` list is empty:
+
+```python
+if concept_id and aliases:
+    out[concept_id] = aliases
+```
+
+So a concept whose alias list is empty **and** whose `canonical_name` no longer
+slugifies to its own `concept_id` is unreachable by the reanchor path.
+`_reanchor_to_retired` does not cover it either — that one only considers the
+`retired:` ledger, and this concept is live. The next run mints a fresh id from
+the raw extracted name, and the corrected id reads as abandoned:
+
+```yaml
+- concept_id: locations/taverne_in_willauch   # corrected at some point
+  canonical_name: Taverne in Willau           # the mishearing, never fixed
+  aliases: []                                 # nothing to match on
+```
+
+This is what produced the 35-concept refusal on the 2026-09-22 v0.2 re-emit
+(see [the override record](../audits/2026-09-22-rename-guard-override.md)) and
+it recurs on every run until fixed — each one needing the same manual triage.
+
+**Sketch:** seed the reanchor candidates from `canonical_name` as well as
+`aliases`. One line. The reason it is filed rather than done: it changes
+resolution for all 1092 entities at once, so it needs a measured run and a
+ratchet re-read, not a drive-by edit. Note it would also have prevented most of
+the seven `merge:` rules added in `0e90b31`, which are a workaround for this.
+
+**Also open, and human-only:** nine identity pairs the same episode surfaced —
+Raben/Krähen-schädel, Tyrex/Tyrael, Schwarzhorn/Schwarzohr, Landra/Lanra,
+Tatrick/Tattrick, Trillo/Trilo, Armringe/Ring, and the two Zebros/Cepros maces
+that may both be `items/streitkolben_von_dodo`. These are GM rulings; no
+matcher decides them.
+
+---
+
+## I-003 — Entity matching: measured, and the string path is at its ceiling
+
+**Status:** done, 2026-09-22. Verdict from
+[TESTPLAN-entity-matching.md](TESTPLAN-entity-matching.md), run at `0e90b31`
+via `services/kb/eval_matching.py`.
+
+The question was how many of the hand-written `merge:` rules a better matcher
+would have found on its own. Answer: **not enough to justify replacing the
+current one.**
+
+- Alias closure (V1) lifts live `recall@3` +21.9 points over the shipped
+  matcher — but only at t=0.60, where it makes 12 hard-negative false links
+  against the ≤2 the acceptance criterion allows. At every threshold that *is*
+  safe, it is no better than V0 and usually worse. The lift and the safety
+  never coexist, so acceptance criterion 1 fails for all five variants.
+- Criterion 3 therefore fires as written: **embeddings over mention notes move
+  ahead of alias closure and phonetic normalisation** in the phase-2 order.
+- Kölner Phonetik (V2) behaved exactly as the testplan predicted and is not
+  worth its hand-written lines.
+- E2's parent heuristic scored **6.7%** against a 70% bar — rejected. Three
+  misses are structural: the parent is a *person*, not a place.
+
+Incidentally measured and worth knowing: the shipped `FUZZY_RATIO = 0.9` makes
+0 false links but **2 split violations**, so the automatic pass is less
+conservative than criterion 2 asks for.
+
+The real find was not in the metrics — see [[I-004]] above.
+
+---
+
 ## I-002 — A ruling should reach every entry that depends on it
 
 **Status:** done, 2026-08-30. Planned out in

@@ -6,7 +6,14 @@ description: Die Pocket Domain ist ein persönlicher Raum im Besitz von Lindo La
 tags:
 - domains
 timestamp: '2026-08-18T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DOMAIN_POCKET_DOMAIN
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=10swvSz6k7U
+  last_modified: '2026-08-18T00:00:00Z'
 ---
 
 Die **Pocket Domain** ist ein persönlicher Raum im Besitz von [Lindo Laut](/characters/lindo_laut.md). Sie dient als Aufbewahrungsort, in den Lindo Laut Gegenstände hineinlegen und später wieder hervorholen kann. Nähere Informationen zu ihrer Beschaffenheit, Herkunft oder Funktionsweise sind nicht bekannt.

@@ -2,7 +2,7 @@
 type: Conflict
 title: 'Offener Konflikt: Inaros'
 description: Widersprüchliche Belege — menschliche Entscheidung nötig.
-timestamp: '2026-09-05T16:46:10+00:00'
+timestamp: '2026-09-22T22:10:10Z'
 id: CONFLICT_NPC_INAROS
 status: open
 concept: npcs/inaros

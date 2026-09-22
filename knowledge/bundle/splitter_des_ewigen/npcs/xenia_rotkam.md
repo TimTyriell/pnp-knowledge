@@ -6,9 +6,26 @@ description: Xenia Rotkam ist eine infernale Gastwirtin aus Kleinringtal. Sie be
 tags:
 - npcs
 timestamp: '2026-08-20T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:19Z'
 id: NPC_XENIA_ROTKAM
 aliases:
 - Xenia
+relationships:
+- target: characters/bruma_stormrak
+- target: characters/kaya
+- target: locations/ringtal
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=EGNh8O7pE5Q
+  last_modified: '2026-06-04T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=0HyPHao8s_k
+  last_modified: '2026-08-06T00:00:00Z'
+- id: '3'
+  resource: https://www.youtube.com/watch?v=2EkWrNUfQi0
+  last_modified: '2026-08-20T00:00:00Z'
 ---
 
 Xenia Rotkam ist eine infernale Gastwirtin aus [Kleinringtal](/locations/ringtal.md). Sie besaß und betrieb die Taverne von Kleinringtal und hatte großen Einfluss im Ort. Nach der Evakuierung vor einer heranrückenden Armee gab sie die Taverne auf; seither führt sie die Tavernenleute an.

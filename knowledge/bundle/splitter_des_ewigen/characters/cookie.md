@@ -6,6 +6,9 @@ description: Cookie war eine froschartige Abenteurerin (Ribbit) und langjährige
 tags:
 - characters
 timestamp: '2026-03-03T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:09Z'
 id: CHAR_COOKIE
 aliases:
 - Cookie (Ribbit)
@@ -15,7 +18,124 @@ aliases:
 - Celin (Cookie)
 - Cookie
 - Ribbit
-status: disputed
+review_status: disputed
+relationships:
+- target: characters/dodo
+  note: '**Dodo:** Enge Verbindung. Dodo rettete Cookie mehrfach, gab ihr Tränke,
+    schützte sie im Kampf und zog sie vor dem Altar und bei mentaler Kontrolle zurück.
+    Er begrub sie gemeinsam mit Lindo Laut und…'
+- target: characters/esterossa
+  note: '**Esterossa:** Sie heilte ihn nach einem Absturz und sammelte mit ihm Flüssigkeit
+    aus einer Vulkanpflanze.'
+- target: characters/lindo_laut
+  note: '**Lindo Laut:** Freundschaftliches Verhältnis. Cookie tröstete ihn, flößte
+    ihm eine rote Phiole ein und wurde ihrerseits nach dem Attentat von ihm mit dunkler
+    Magie gerettet. Später ging er noch einm…'
+- target: characters/nyrella
+  note: '**Nyrella:** Mit Nyrella erkundete sie nachts die Banditenfestung.'
+- target: characters/rotunas
+  note: '**Rotunas:** Sie zeigte sich beeindruckt von Rotunas’ riesigem Feuerball.'
+- target: characters/valeria
+- target: deities/goblingoetter
+  note: '**Goblin-Götter:** In einem Kampf traf sie ein grüner Blitz der Goblin-Götter
+    und verlieh ihr kurzzeitig *Holy Arrows*.'
+- target: deities/nerash
+  note: '**Nerash:** Sie erhielt einen kleinen weißen Totem der Nerash, hielt ihn
+    in der Kapelle und schlug vor, zu Nerash zu beten.'
+- target: locations/casa_del_cookie
+- target: npcs/belorus
+  note: '**Belorus:** In der Burg des Belorus nahm sie dessen Buch an sich. Dodo vermutete
+    später, dass dies Belorus’ Zorn erregt haben könnte.'
+- target: npcs/gulrak
+  note: '**Gulrak:** Den fliehenden Kenku fing sie mit ihrer Zunge, hatte aber Mitleid
+    mit ihm und äußerte Zweifel an der eigenen Handlung.'
+- target: npcs/kuatau_anfuehrer_priester
+  note: '**Kuatau:** Sie kommunizierte mit den Kuatau in ihrer Sprache, übersetzte
+    für die Gruppe und verhandelte um eine friedliche Lösung.'
+- target: npcs/lobrecht
+- target: npcs/luli
+  note: '**Luli:** Das Pilzkind befreite sie aus dem Gefängnis und versuchte es zu
+    beschützen; sie trauerte, als es entkam und gefressen wurde.'
+- target: npcs/perry_das_schnabeltier
+  note: '**Perry:** Ihr Begleiter, ein Schnabeltier, diente als Ablenkung, Angreifer
+    und emotionaler Halt. Cookie vermisste Perry, wenn er nicht dabei war, und suchte
+    bei ihm Beruhigung.'
+sources:
+- id: P-02
+  resource: https://www.youtube.com/watch?v=LZIuUzc3F18
+  last_modified: '2025-04-01T00:00:00Z'
+- id: P-04
+  resource: https://www.youtube.com/watch?v=YCpAz_syjaY
+  last_modified: '2025-04-15T00:00:00Z'
+- id: P-06
+  resource: https://www.youtube.com/watch?v=fsCOiSkKKTE
+  last_modified: '2025-04-30T00:00:00Z'
+- id: P-08
+  resource: https://www.youtube.com/watch?v=5eAEDN5ra-4
+  last_modified: '2025-05-14T00:00:00Z'
+- id: P-09
+  resource: https://www.youtube.com/watch?v=bamCIB_CkR8
+  last_modified: '2025-05-27T00:00:00Z'
+- id: P-10
+  resource: https://www.youtube.com/watch?v=jtYR4Je0a18
+  last_modified: '2025-06-03T00:00:00Z'
+- id: P-11
+  resource: https://www.youtube.com/watch?v=cLkCu3Iq3y8
+  last_modified: '2025-06-10T00:00:00Z'
+- id: P-12
+  resource: https://www.youtube.com/watch?v=tl76B4V0io8
+  last_modified: '2025-06-17T00:00:00Z'
+- id: P-13
+  resource: https://www.youtube.com/watch?v=tpkO9uGw6-I
+  last_modified: '2025-06-25T00:00:00Z'
+- id: P-14
+  resource: https://www.youtube.com/watch?v=XOnHa6CmDbo
+  last_modified: '2025-07-09T00:00:00Z'
+- id: P-15
+  resource: https://www.youtube.com/watch?v=BRRCUgW4xRo
+  last_modified: '2025-07-22T00:00:00Z'
+- id: P-16
+  resource: https://www.youtube.com/watch?v=XXgO5Ht4Q0A
+  last_modified: '2025-07-29T00:00:00Z'
+- id: P-17
+  resource: https://www.youtube.com/watch?v=vHIjua0BZ9Y
+  last_modified: '2025-08-12T00:00:00Z'
+- id: P-18
+  resource: https://www.youtube.com/watch?v=-XbO3FLSL_I
+  last_modified: '2025-08-20T00:00:00Z'
+- id: P-19
+  resource: https://www.youtube.com/watch?v=TLZOH7TlGhk
+  last_modified: '2025-09-02T00:00:00Z'
+- id: P-20
+  resource: https://www.youtube.com/watch?v=vo1xnyLQDJk
+  last_modified: '2025-09-06T00:00:00Z'
+- id: P-22
+  resource: https://www.youtube.com/watch?v=AhIT8dcxw2o
+  last_modified: '2025-09-17T00:00:00Z'
+- id: P-23
+  resource: https://www.youtube.com/watch?v=DGzfqVigS0g
+  last_modified: '2025-09-23T00:00:00Z'
+- id: P-24
+  resource: https://www.youtube.com/watch?v=bUT7Mc2hjUY
+  last_modified: '2025-09-30T00:00:00Z'
+- id: P-25
+  resource: https://www.youtube.com/watch?v=qVAF_54S8Vw
+  last_modified: '2025-10-07T00:00:00Z'
+- id: P-27
+  resource: https://www.youtube.com/watch?v=sxFhbtwoefA
+  last_modified: '2025-10-21T00:00:00Z'
+- id: P-28
+  resource: https://www.youtube.com/watch?v=V6NzNakqxXM
+  last_modified: '2025-10-28T00:00:00Z'
+- id: P-30
+  resource: https://www.youtube.com/watch?v=w__ahowb9p0
+  last_modified: '2025-11-18T00:00:00Z'
+- id: P-36
+  resource: https://www.youtube.com/watch?v=3C8SD-cyNPM
+  last_modified: '2026-02-11T00:00:00Z'
+- id: P-39
+  resource: https://www.youtube.com/watch?v=BRUNuNKTeOg
+  last_modified: '2026-03-03T00:00:00Z'
 ---
 
 ## Überblick

@@ -6,7 +6,14 @@ description: Die Immortal Plane ist die Hauptebene, auf der das Geschehen der Ka
 tags:
 - domains
 timestamp: '2025-05-27T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DOMAIN_IMMORTAL_PLANE
+sources:
+- id: P-09
+  resource: https://www.youtube.com/watch?v=bamCIB_CkR8
+  last_modified: '2025-05-27T00:00:00Z'
 ---
 
 Die Immortal Plane ist die Hauptebene, auf der das Geschehen der Kampagne stattfindet. Sie wird als die Welt beschrieben, in der die Helden leben, und bildet damit den zentralen Schauplatz aller Ereignisse.

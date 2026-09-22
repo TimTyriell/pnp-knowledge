@@ -6,8 +6,15 @@ description: Die Flüchtlinge aus dem Holzfäller-Camp sind eine Gruppe Schutzsu
 tags:
 - factions
 timestamp: '2026-06-04T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_FLUECHTLINGE_AUS_DEM_HOLZFAELLER_CAMP
 subtype: Bande
+sources:
+- id: P-52
+  resource: https://www.youtube.com/watch?v=EGNh8O7pE5Q
+  last_modified: '2026-06-04T00:00:00Z'
 ---
 
 # Flüchtlinge aus dem Holzfäller-Camp

@@ -6,7 +6,56 @@ description: Kaya ist eine lebenslustige Faun-Bardin, die sich ihren Lebensunter
 tags:
 - characters
 timestamp: '2026-09-03T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:09Z'
 id: CHAR_KAYA
+relationships:
+- target: characters/bruma_stormrak
+  note: '**Bruma:** Bei der ersten Begegnung stoppt Kaya Saris’ aufdringliches Verhalten
+    und stellt sich selbst vor. Bruma überreicht ihr daraufhin einen Schutzgegenstand
+    (laut Hintergrundwissen eine Halskett…'
+- target: characters/sange
+  note: '**Sange:** Ihre engste Beziehung in der Gruppe. Kaya hilft Sange aktiv, die
+    Wahrheit über eine Puppe zu vertuschen, ist aber zutiefst misstrauisch gegenüber
+    dessen neuem Gott Joran. Sie beobachtet Sa…'
+- target: characters/saris
+  note: '**Saris:** Kaya ist neugierig auf Saris und seine sprechenden Schädel Jonathan
+    und Samuel. Sie tut manchmal aus Spielerei so, als könnte sie die Schädel hören.
+    Als Saris eine Fremde aufdringlich anal…'
+- target: deities/joran_der_muenzenzaehler
+- target: npcs/borkus
+  note: '**Borkus:** In der Taverne handelt Kaya mit dem Wirt aus, dass sie für Musik
+    eine kostenlose Übernachtung bekommt.'
+- target: npcs/greg
+  note: '**Greg:** Der Friedhofsgärtner in Ringtal spricht Kaya am Grab ihrer Mutter
+    an und bietet an, neue Blumen zu pflanzen.'
+- target: npcs/talron
+  note: '**Talron:** Kaya durchschaut seine Lügen und erhält von ihm zwei Heiltränke
+    sowie eine düstere Antwort auf ihre Frage nach der früheren, gescheiterten Gruppe.
+    Das Verhältnis ist von pragmatischer Zus…'
+- target: npcs/xenia_rotkam
+  note: '**Xenia:** In Kleinringtal erkennt Kaya Xenia aus früheren Tagen wieder und
+    versucht vergeblich, sie zur Evakuierung zu überreden.'
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=EGNh8O7pE5Q
+  last_modified: '2026-06-04T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=H-eHSlfxUAg
+  last_modified: '2026-07-10T00:00:00Z'
+- id: '3'
+  resource: https://www.youtube.com/watch?v=Gb-TEbCFF0M
+  last_modified: '2026-07-23T00:00:00Z'
+- id: '4'
+  resource: https://www.youtube.com/watch?v=0HyPHao8s_k
+  last_modified: '2026-08-06T00:00:00Z'
+- id: '5'
+  resource: https://www.youtube.com/watch?v=2EkWrNUfQi0
+  last_modified: '2026-08-20T00:00:00Z'
+- id: '6'
+  resource: https://www.youtube.com/watch?v=bl-hX87_EC8
+  last_modified: '2026-09-03T00:00:00Z'
 ---
 
 ## Überblick

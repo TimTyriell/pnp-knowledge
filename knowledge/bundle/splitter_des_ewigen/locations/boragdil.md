@@ -1,16 +1,26 @@
 ---
 type: Location
 title: Boragdil
-description: Boragdil (auch Borakdil genannt) ist eine Ruinenstadt mit einer großen
-  Festung, die einst einen Schutzzauber hatte. Der Zauber wurde zerstö…
+description: Boragdil ist eine Ruinenstadt mit einer großen Festung. Die Festung war
+  einst durch einen Schutzzauber gesichert, der inzwischen zerstört i…
 tags:
 - locations
 timestamp: '2026-04-14T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:11:55Z'
 id: LOC_BORAGDIL
 subtype: Siedlung
 aliases:
 - Boragdil / Brocadil
 - Boragdil (Ruinenstadt und Festung)
+sources:
+- id: P-44
+  resource: https://www.youtube.com/watch?v=Ee-K84wcxLM
+  last_modified: '2026-03-31T00:00:00Z'
+- id: P-47
+  resource: https://www.youtube.com/watch?v=1Jyu92P7_Fg
+  last_modified: '2026-04-14T00:00:00Z'
 ---
 
 # Boragdil

@@ -6,8 +6,15 @@ description: Gulrak behauptet, dieses magische Familienerbstück sei im Besitz v
 tags:
 - items
 timestamp: '2025-04-30T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T22:10:09Z'
 id: ITEM_AMULETT_MIT_RABENSCHAEDEL
 subtype: Artefakt
+sources:
+- id: P-06
+  resource: https://www.youtube.com/watch?v=fsCOiSkKKTE
+  last_modified: '2025-04-30T00:00:00Z'
 ---
 
 [Gulrak](/npcs/gulrak.md) behauptet, dieses magische Familienerbstück sei im Besitz von [Baran](/npcs/baran.md) und er habe versucht, es zurückzustehlen. Das Amulett soll einen Krähenschädel darstellen und von Gulraks Urgroßvater stammen. Es wird in dieser Session nicht gesehen.

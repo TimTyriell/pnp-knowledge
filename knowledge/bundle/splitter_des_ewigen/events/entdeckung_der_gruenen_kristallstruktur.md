@@ -6,8 +6,15 @@ description: Lindo Laut bemerkt eine seltsame Energie und die Gruppe findet eine
 tags:
 - events
 timestamp: '2025-10-07T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:11Z'
 id: EVENT_ENTDECKUNG_DER_GRUENEN_KRISTALLSTRUKTUR
 subtype: Entdeckung
+sources:
+- id: P-25
+  resource: https://www.youtube.com/watch?v=qVAF_54S8Vw
+  last_modified: '2025-10-07T00:00:00Z'
 ---
 
 [Lindo Laut](/characters/lindo_laut.md) bemerkt eine seltsame Energie und die Gruppe findet einen Haufen aus grünen Kristallen, Wurzeln und Pilzen, der an die [Hag](/npcs/lenra.md) erinnert. [Cookie](/characters/cookie.md) empfindet ihn als vergiftet. Die Gruppe untersucht die Struktur und stellt fest, dass die Kristalle das Wachstum verursachen.

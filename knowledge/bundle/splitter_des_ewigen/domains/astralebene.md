@@ -6,7 +6,14 @@ description: Die Astralebene ist eine eigene kosmologische Ebene, getrennt von d
 tags:
 - domains
 timestamp: '2026-09-01T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DOMAIN_ASTRALEBENE
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=1E3-Nwv4OEs
+  last_modified: '2026-09-01T00:00:00Z'
 ---
 
 Die **Astralebene** ist eine eigene kosmologische Ebene, getrennt von der materiellen Welt. Sie gehört zu den anderen Ebenen der Wirklichkeit und steht mit der materiellen Welt über den Weltenbaum in Verbindung: Der Baum dient als Übergang zwischen den Ebenen und kann als Nebelschritt dorthin genutzt werden. Die bisherigen Kenntnisse über die Astralebene stammen aus der Begegnung der Gruppe am Weltenbaum; der dort gesichtete Durchgang ließ sich allerdings nicht eindeutig der Astralebene zuordnen.

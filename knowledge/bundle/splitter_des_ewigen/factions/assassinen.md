@@ -6,8 +6,15 @@ description: Die Assassinen sind eine geheimnisvolle Gruppierung im Norden, dere
 tags:
 - factions
 timestamp: '2026-08-04T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_ASSASSINEN
 subtype: Bande
+sources:
+- id: S1-02-A
+  resource: https://www.youtube.com/watch?v=qRj2t3wQHfs
+  last_modified: '2026-08-04T00:00:00Z'
 ---
 
 Die **Assassinen** sind eine geheimnisvolle Gruppierung im Norden, deren Zentrum in [Valuna](/locations/valuna.md) liegt. Über ihre Organisation, ihre Mitglieder und ihre Absichten ist öffentlich kaum etwas bekannt; die Quellen schweigen weitgehend über sie.

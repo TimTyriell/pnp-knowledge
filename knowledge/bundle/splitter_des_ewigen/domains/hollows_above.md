@@ -6,7 +6,14 @@ description: Hollows Above ist der Ort, an den Seelen Verstorbener normalerweise
 tags:
 - domains
 timestamp: '2025-11-25T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DOMAIN_HOLLOWS_ABOVE
+sources:
+- id: P-31
+  resource: https://www.youtube.com/watch?v=wd5R4fJfngY
+  last_modified: '2025-11-25T00:00:00Z'
 ---
 
 Hollows Above ist der Ort, an den Seelen Verstorbener normalerweise nach dem Tod gelangen – im Sprachgebrauch der Lebenden der Himmel. Er ist damit das reguläre Ziel der Seelenreise ins Jenseits.

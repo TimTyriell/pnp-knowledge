@@ -6,8 +6,15 @@ description: Heraxles’ Widerstandsgruppe ist eine kleine Gruppe ehemaliger Bra
 tags:
 - factions
 timestamp: '2026-06-04T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_HERAXLES_WIDERSTANDSGRUPPE
 subtype: Bande
+sources:
+- id: P-52
+  resource: https://www.youtube.com/watch?v=EGNh8O7pE5Q
+  last_modified: '2026-06-04T00:00:00Z'
 ---
 
 Heraxles’ Widerstandsgruppe ist eine kleine Gruppe ehemaliger Brandauer, die nach dem [Krieg](/characters/krieg.md) flohen. Sie versucht, gegen die Stadt [Willauch](/locations/willauch.md) eine Widerstandsbewegung aufzubauen. Angeführt wird die Gruppe von [Heraxles](/npcs/heraxles.md).
@@ -18,4 +25,4 @@ Die Gruppe ist zu klein, um überall helfen zu können, und sucht deshalb Verbü
 
 ## Belege
 
-[P-52] Session vom 04.06.2026, 01:09:10 (Daggerheart-Kampagne) – [YouTube-Aufzeichnung](https://www.youtube.com/watch?v=EGNh8O7pE5Q)
+[P-52] Daggerheart-Kampagne, Session vom 04.06.2026, 01:09:10 – [YouTube-Aufzeichnung](https://www.youtube.com/watch?v=EGNh8O7pE5Q)

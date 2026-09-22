@@ -6,6 +6,9 @@ description: Thyrex, genannt „der Sänger“, ist eine der vier Seelen des tot
 tags:
 - deities
 timestamp: '2025-09-06T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T22:10:08Z'
 id: DEITY_THYREX
 subtype: Alter Gott
 aliases:
@@ -13,6 +16,28 @@ aliases:
 - Tyrex
 - T-Rex (Geist im Amulett)
 - T-Rex (Stimme im Amulett)
+verified:
+  by: human:gm
+relationships:
+- target: characters/lindo_laut
+  note: '**Lindo Laut:** Träger des Amuletts, „Best Buddy“, Empfänger von Warnungen
+    und Kraft. Später nimmt Lindo Laut Charakterzüge Thyrex'' in Vhar''Zul wahr.'
+- target: deities/tarvok_der_erdrichter
+  note: '**Seras:** Thyrex'' altes Ich war kein Freund, aber Kampfgefährte in den
+    letzten Tagen.'
+- target: deities/vharzul
+  note: '**Vhar''Zul:** Thyrex ist eine von dessen vier Seelen. Nach der Wiedererweckung
+    ist er die vorherrschende Persönlichkeit des Gottes.'
+sources:
+- id: P-17
+  resource: https://www.youtube.com/watch?v=vHIjua0BZ9Y
+  last_modified: '2025-08-12T00:00:00Z'
+- id: P-19
+  resource: https://www.youtube.com/watch?v=TLZOH7TlGhk
+  last_modified: '2025-09-02T00:00:00Z'
+- id: P-20
+  resource: https://www.youtube.com/watch?v=vo1xnyLQDJk
+  last_modified: '2025-09-06T00:00:00Z'
 ---
 
 # Thyrex

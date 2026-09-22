@@ -6,8 +6,18 @@ description: Die Orks sind ein Volk, in dessen Siedlungsgebiet ein Teil der Hand
 tags:
 - factions
 timestamp: '2026-03-18T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_ORKS
 subtype: Volk
+sources:
+- id: P-25
+  resource: https://www.youtube.com/watch?v=qVAF_54S8Vw
+  last_modified: '2025-10-07T00:00:00Z'
+- id: P-41
+  resource: https://www.youtube.com/watch?v=HHXxsASLrbQ
+  last_modified: '2026-03-18T00:00:00Z'
 ---
 
 Die **Orks** sind ein Volk, in dessen Siedlungsgebiet ein Teil der Handlung spielt. Sie gelten als stürmisch, aber nicht feindlich gesinnt; empfindlich reagieren sie auf Anfeindungen. Zwischen [Willauch](/locations/willauch.md) und den Orks besteht eine angespannte Lage, jedoch kein offener [Krieg](/characters/krieg.md).

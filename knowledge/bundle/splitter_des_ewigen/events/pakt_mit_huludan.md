@@ -6,8 +6,15 @@ description: 'Die Gruppe schließt einen Pakt mit Huludan: Sie erhalten ein Port
 tags:
 - events
 timestamp: '2026-05-13T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_PAKT_MIT_HULUDAN
 subtype: Vertrag
+sources:
+- id: P-49
+  resource: https://www.youtube.com/watch?v=4afPD9Q_5AY
+  last_modified: '2026-05-13T00:00:00Z'
 ---
 
 Die Gruppe schließt einen Pakt mit [Huludan](/deities/huludan.md): Sie erhalten ein Portal und das [Schwert](/items/schwert.md), im Gegenzug sollen sie [Vorgulta](/deities/vorgul_tar.md) vernichten. Lunara überzeugt [Dodo](/characters/dodo.md) und [Esterossa](/characters/esterossa.md), der Pakt wird angenommen. [Der Richter](/npcs/richter_herr_der_seelenwacht.md) stimmt zu, bleibt aber zurück, um den [Schinder](/npcs/der_schinder.md) zu holen.

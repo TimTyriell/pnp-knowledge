@@ -6,11 +6,27 @@ description: 'Die Schattenfinger-Klaue, kurz der Schattenfinger, ist die Kralle 
 tags:
 - items
 timestamp: '2026-04-14T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:14Z'
 id: ITEM_SCHATTENFINGER
 subtype: Werkzeug
 aliases:
 - Schattenfinger
 - Schattenfinger (Kenku-Kralle)
+sources:
+- id: P-07
+  resource: https://www.youtube.com/watch?v=e0v6AFGd4mE
+  last_modified: '2025-05-06T00:00:00Z'
+- id: P-09
+  resource: https://www.youtube.com/watch?v=bamCIB_CkR8
+  last_modified: '2025-05-27T00:00:00Z'
+- id: P-10
+  resource: https://www.youtube.com/watch?v=jtYR4Je0a18
+  last_modified: '2025-06-03T00:00:00Z'
+- id: P-47
+  resource: https://www.youtube.com/watch?v=1Jyu92P7_Fg
+  last_modified: '2026-04-14T00:00:00Z'
 ---
 
 Die **Schattenfinger-Klaue**, kurz der **Schattenfinger**, ist die Kralle eines gleichnamigen Wesens: eines seltenen [Kenku](/npcs/kenku_bote.md), dessen Klaue dunkle Magie ausstrahlt. Die Gruppe fand sie in einer Ruine, wo sie in einem Tisch steckte, und nahm sie in Stoff gewickelt mit. Später führte [Lindo Laut](/characters/lindo_laut.md) sie bei sich und zeigte sie mehreren Gefährten.

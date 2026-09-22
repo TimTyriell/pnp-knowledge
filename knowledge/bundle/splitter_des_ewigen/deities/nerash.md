@@ -1,16 +1,76 @@
 ---
 type: Deity
 title: Nerash
-description: 'Später zeigt sich Nerash als zwiespältige Figur: Sie erscheint in Ehrenfels,
-  wird dort als Retterin verehrt, ist aber zugleich in einen töd…'
+description: Nerash ist eine verlorene Demigöttin bzw. neue Gottheit, die die Heldengruppe
+  in einer Festung in der Zwischenebene befreit hat. Sie war do…
 tags:
 - deities
 timestamp: '2026-08-12T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T22:10:08Z'
 id: DEITY_NERASH
 subtype: Halbgott
 aliases:
 - Nehrasch
 - Neiraj
+relationships:
+- target: characters/cookie
+- target: characters/dodo
+- target: characters/esterossa
+- target: characters/gunther
+- target: characters/valeria
+- target: deities/kollmereth
+- target: deities/neue_goetter
+- target: deities/vharzul
+- target: domains/splitterwelt
+- target: npcs/inaros
+- target: npcs/nox
+- target: npcs/sandro
+- target: npcs/voras
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=XOnHa6CmDbo
+  last_modified: '2025-07-09T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=BRRCUgW4xRo
+  last_modified: '2025-07-22T00:00:00Z'
+- id: '3'
+  resource: https://www.youtube.com/watch?v=TLZOH7TlGhk
+  last_modified: '2025-09-02T00:00:00Z'
+- id: '4'
+  resource: https://www.youtube.com/watch?v=cUtz87UCHu4
+  last_modified: '2025-10-14T00:00:00Z'
+- id: '5'
+  resource: https://www.youtube.com/watch?v=w4LB1s9_3rs
+  last_modified: '2026-01-13T00:00:00Z'
+- id: '6'
+  resource: https://www.youtube.com/watch?v=Z2jlzpoTWVw
+  last_modified: '2026-02-17T00:00:00Z'
+- id: '7'
+  resource: https://www.youtube.com/watch?v=vcGkejr8_nI
+  last_modified: '2026-04-09T00:00:00Z'
+- id: '8'
+  resource: https://www.youtube.com/watch?v=4afPD9Q_5AY
+  last_modified: '2026-05-13T00:00:00Z'
+- id: '9'
+  resource: https://www.youtube.com/watch?v=EGNh8O7pE5Q
+  last_modified: '2026-06-04T00:00:00Z'
+- id: '10'
+  resource: https://www.youtube.com/watch?v=_3tLSiT1tck
+  last_modified: '2026-06-10T00:00:00Z'
+- id: '11'
+  resource: https://www.youtube.com/watch?v=qe0ck8hvYpk
+  last_modified: '2026-06-16T00:00:00Z'
+- id: '12'
+  resource: https://www.youtube.com/watch?v=umGyKLkefJI
+  last_modified: '2026-07-29T00:00:00Z'
+- id: '13'
+  resource: https://www.youtube.com/watch?v=qRj2t3wQHfs
+  last_modified: '2026-08-04T00:00:00Z'
+- id: '14'
+  resource: https://www.youtube.com/watch?v=piUv11DCwDw
+  last_modified: '2026-08-12T00:00:00Z'
 ---
 
 # Nerash

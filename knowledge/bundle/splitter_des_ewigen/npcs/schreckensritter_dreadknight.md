@@ -6,7 +6,14 @@ description: Der Schreckensritter ist ein untoter Krieger in schwarzer Rüstung 
 tags:
 - npcs
 timestamp: '2026-01-13T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_SCHRECKENSRITTER_DREADKNIGHT
+sources:
+- id: P-33
+  resource: https://www.youtube.com/watch?v=w4LB1s9_3rs
+  last_modified: '2026-01-13T00:00:00Z'
 ---
 
 Der Schreckensritter ist ein untoter Krieger in schwarzer Rüstung mit Maske, beschworen aus dem grünen [Kristall](/items/gruener_kristall.md). Er ist ein mächtiger Gegner mit großem [Schwert](/items/schwert.md) und wird von einem magischen Schild geschützt, der von Statuen auf den Hügeln gespeist wird. Er greift [Dodo](/characters/dodo.md) mehrfach an und verursacht schweren magischen Schaden. Er wird durch den heiligen [Streitkolben von Dodo](/items/streitkolben_von_dodo.md) getötet, nachdem [Esterossa](/characters/esterossa.md) die Statuen zerstört und Lunara ihn gefesselt hat.

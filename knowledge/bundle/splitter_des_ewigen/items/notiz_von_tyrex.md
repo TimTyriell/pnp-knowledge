@@ -6,8 +6,15 @@ description: Lunara liest eine Notiz ihres Kontakts Tyrael vor, die vor den erst
 tags:
 - items
 timestamp: '2026-03-24T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T22:10:09Z'
 id: ITEM_NOTIZ_VON_TYREX
 subtype: Schriftstück
+sources:
+- id: P-43
+  resource: https://www.youtube.com/watch?v=Yj5BWJfg3Ag
+  last_modified: '2026-03-24T00:00:00Z'
 ---
 
 Lunara liest eine Notiz ihres Kontakts [Tyrael](/npcs/tyrael.md) vor, die vor den erstarkenden [Vasul](/deities/vharzul.md)-Teilen im [Abyssalis](/domains/splitterwelt.md) warnt und zum Handeln auffordert. Die Notiz wurde beim Nekromanten gefunden und zunächst für unwichtig gehalten.

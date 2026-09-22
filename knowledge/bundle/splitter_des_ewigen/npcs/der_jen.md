@@ -6,7 +6,32 @@ description: Jen ist ein mysteriöser Diener Vorgul'tars, der in der Stadt Abyss
 tags:
 - npcs
 timestamp: '2026-06-16T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T22:10:10Z'
 id: NPC_DER_JEN
+verified:
+  by: human:gm
+relationships:
+- target: deities/vorgul_tar
+  note: '**Vorgul''tar:** Jen bezeichnet Vorgul''tar als „Herr und Meister“ und ist
+    einer seiner Ängsten. Gleichzeitig sagt er, Vorgul''tar habe Angst und seine Macht
+    schwinde, und er handelt aus eigenen Interes…'
+- target: factions/aengste
+  note: '**Die Ängste:** Jen ist Teil dieser Gruppe von Dienern Vorgul''tars, von
+    denen es heißt, nur sie wüssten von dem Jungen. Näheres zur Organisation oder
+    Hierarchie der Ängste geht aus den Belegen nicht…'
+- target: npcs/das_kind
+  note: '**Das Kind von damals:** Jen kennt offenbar das Schicksal eines Jungen, von
+    dem die Gruppe weiß. Er gibt jedoch keine konkrete Antwort auf die Frage, was
+    mit dem Kind geschehen ist.'
+- target: npcs/tatrick
+  note: '**Tattrick:** Jen aktiviert Tattricks Kontrollsymbol, um ihn zu testen. Die
+    genaue Natur dieses Symbols und der Grund des Tests bleiben unklar.'
+sources:
+- id: P-54
+  resource: https://www.youtube.com/watch?v=qe0ck8hvYpk
+  last_modified: '2026-06-16T00:00:00Z'
 ---
 
 ## Überblick

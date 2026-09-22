@@ -6,8 +6,15 @@ description: Der heilige Hain ist eine riesige unterirdische Höhle mit Gras, B�
 tags:
 - locations
 timestamp: '2026-09-01T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:16Z'
 id: LOC_HEILIGER_HAIN
 subtype: Wildnis
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=1E3-Nwv4OEs
+  last_modified: '2026-09-01T00:00:00Z'
 ---
 
 Der heilige Hain ist eine riesige unterirdische Höhle mit Gras, Bäumen, Büschen und Krähenschwärmen – ein unberührter, uralter Ort voller Naturmagie. Er wird von Astralelfen, Trollen und einem Druiden bewohnt bzw. beschützt. Die Magie ist hier so stark, dass selbst die Stalagmiten auf Musik reagieren. In den Felsspalten lauern fleischfressende Pflanzen. Der Hain ist ein Überbleibsel aus einer Zeit, als Elfen und Feenwesen noch präsenter waren; er gilt als heiliger Rückzugsort der Natur. Wer den Hain betritt, muss einen Schwur leisten, sein Geheimnis zu wahren.

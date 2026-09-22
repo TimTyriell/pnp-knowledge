@@ -6,9 +6,48 @@ description: Hans ist ein menschlicher, schwer gepanzerter Soldat aus Breska, de
 tags:
 - npcs
 timestamp: '2026-01-13T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:17Z'
 id: NPC_HANS_SOLDAT_AUS_BRESKA
 aliases:
 - Soldat aus Breska
+verified:
+  by: human:gm
+relationships:
+- target: characters/dodo
+  note: '**Dodo:** Erkennt den grünen Kristall als Seelenstein.'
+- target: characters/esterossa
+  note: '**Esterossa:** Stabilisiert Hans nach dessen Verletzung durch Lindo Laut
+    mit heiliger Magie.'
+- target: characters/lindo_laut
+  note: '**Lindo Laut:** Empfänger der Botschaft in der zweiten Begegnung; in der
+    ersten Begegnung verletzt er Hans am Fuß, als dieser die Schriftrolle entreißen
+    will.'
+- target: characters/lunara_velora
+  note: '**Lunara Velora:** Wehrt Pfeile ab, die Hans in der ersten Begegnung tödlich
+    getroffen hätten, und belebt ihn später nach seinem Beinahe-Tod wieder.'
+- target: characters/rotunas
+  note: '**Rotunas:** Wird in der zweiten Begegnung von Hans als möglicher Lord Lindo
+    Laut angesprochen; Rotunas zögert, den Kristall entgegenzunehmen.'
+- target: npcs/belorus
+  note: '**Belorus:** In der zweiten Begegnung ist Belorus der Auftraggeber der versiegelten
+    Botschaft, die Hans überbringt.'
+- target: npcs/gnoll_kommandant
+  note: '**Gefallener Kommandant:** Ein ungenannter Kommandant aus Hans’ Gruppe ist
+    gefallen; Hans besteht darauf, dessen Leichnam zu finden, um die verlorene Schriftrolle
+    zu bergen.'
+- target: npcs/voras
+  note: '**Lord Voras:** Hans gehört in der ersten Begegnung zu einer Gruppe unter
+    Lord Voras; in der zweiten trägt er das Wappen von Voras und überbringt eine Botschaft
+    von Belorus.'
+sources:
+- id: P-32
+  resource: https://www.youtube.com/watch?v=VGw81seFvbo
+  last_modified: '2026-01-06T00:00:00Z'
+- id: P-33
+  resource: https://www.youtube.com/watch?v=w4LB1s9_3rs
+  last_modified: '2026-01-13T00:00:00Z'
 ---
 
 ## Überblick

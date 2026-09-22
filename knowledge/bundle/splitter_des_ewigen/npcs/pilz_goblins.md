@@ -1,16 +1,48 @@
 ---
 type: NPC
 title: Pilz-Goblins
-description: Die Goblinarmee, die im Auftrag der Hack Gemata angreift. Sie wird von
-  einem Oger und einem Anführer unterstützt. Die Goblins sind in Falle…
+description: Die Pilz-Goblins sind ein kollektiver NPC der Kampagne. Sie treten als
+  kleine, hinterhältige Wesen auf, die in den unteren Bereichen einer…
 tags:
 - npcs
 timestamp: '2026-07-23T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:11:56Z'
 id: NPC_PILZ_GOBLINS
 subtype: Armee
 aliases:
 - Pilz-Goblins
 - Goblins
+relationships:
+- target: characters/dodo
+  note: '**Dodo:** Wird beim Betreten des Raums von den ersten Axthieben der Pilz-Goblins
+    angegriffen, kann diese jedoch mit Schild und Schuppen abfangen.'
+- target: characters/rotunas
+  note: '**Rotunas und Lindo Laut:** Sie schalten 2025-06-17 die zwei pilzüberwucherten
+    Goblins aus; Rotunas schleudert einen gegen die Wand, Lindo Laut verbrennt beide.'
+- target: deities/goblingoetter
+- target: npcs/lurk
+  note: '**Lurk:** Militärischer Anführer der Pilz-Goblins in der Mine.'
+- target: npcs/voras
+  note: '**Voras:** Tötet 2025-04-23 den Anführer der Goblinarmee, woraufhin die Überlebenden
+    fliehen.'
+sources:
+- id: P-05
+  resource: https://www.youtube.com/watch?v=z3C-bewKqUs
+  last_modified: '2025-04-23T00:00:00Z'
+- id: P-12
+  resource: https://www.youtube.com/watch?v=tl76B4V0io8
+  last_modified: '2025-06-17T00:00:00Z'
+- id: P-35
+  resource: https://www.youtube.com/watch?v=9RzvnnWzV7E
+  last_modified: '2026-01-27T00:00:00Z'
+- id: P-36
+  resource: https://www.youtube.com/watch?v=3C8SD-cyNPM
+  last_modified: '2026-02-11T00:00:00Z'
+- id: S1-02-B
+  resource: https://www.youtube.com/watch?v=Gb-TEbCFF0M
+  last_modified: '2026-07-23T00:00:00Z'
 ---
 
 # Pilz-Goblins

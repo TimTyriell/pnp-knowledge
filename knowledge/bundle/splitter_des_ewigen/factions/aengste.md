@@ -6,8 +6,17 @@ description: Die Ängste sind eine Gruppe enger Diener Vorgul'tars. Sie kennen d
 tags:
 - factions
 timestamp: '2026-06-16T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_AENGSTE
 subtype: Kult
+relationships:
+- target: npcs/der_jen
+sources:
+- id: P-54
+  resource: https://www.youtube.com/watch?v=qe0ck8hvYpk
+  last_modified: '2026-06-16T00:00:00Z'
 ---
 
 Die **Ängste** sind eine Gruppe enger Diener [Vorgul'tars](/deities/vorgul_tar.md). Sie kennen den Weg zum Tempel und verfügen über besondere Kräfte.

@@ -6,7 +6,109 @@ description: Nyrella ist eine Faery und Waldläuferin, die gemeinsam mit ihrem E
 tags:
 - characters
 timestamp: '2026-08-04T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: CHAR_NYRELLA
+verified:
+  by: human:gm
+relationships:
+- target: characters/cookie
+  note: '**Cookie:** Nyrella bewundert Cookies Eiszauber und ahmt ihn nach. Als Cookie
+    stirbt, trauert Nyrella tief.'
+- target: characters/dodo
+  note: '**Dodo:** Sie rettet ihn mit Ranken aus einer Grube und vertraut zuvor auf
+    seine Anweisung, als er versteinert wird.'
+- target: characters/esterossa
+  note: '**Esterossa:** Nyrella vertraut ihm ausdrücklich, auch wenn sie einer neuen
+    Gilde misstraut. Nyruk stürmt auf ihn zu und leckt ihm das Gesicht. Später spricht
+    Nyrella mit seiner Katze Ajani und erfäh…'
+- target: characters/lindo_laut
+  note: '**Lindo Laut:** Anfangs neckisch, später unterstützend. Sie hilft ihm im
+    Kampf, fliegt mit ihm beim Erkunden und ist emotional tief betroffen von seiner
+    Verwandlung.'
+- target: characters/lunara_velora
+  note: '**Lunara:** Nyrella nimmt sie unter ihre Obhut, da beide ihre Familie verloren
+    haben.'
+- target: characters/rotunas
+  note: '**Rotunas:** Sie unterstützt seine Idee einer eigenen Siedlung. Später gerät
+    sie mit ihm aneinander, weil sie einen seiner Vorwürfe als unfair empfindet, bleibt
+    aber der Gruppe verpflichtet.'
+- target: factions/fluechtlinge
+  note: '**Flüchtlinge / Lagergemeinschaft:** Nyrella baut enge Bindungen zu den Menschen
+    im Lager auf, bleibt zeitweise mit Nyruk zu ihrem Schutz dort und fühlt sich später
+    zwischen Lager und Gruppe zerrisse…'
+- target: factions/silberkerne
+  note: '**Silberkerne:** Nyrella hat dort mit Hal einen guten Freund. Der Konflikt
+    bringt sie in einen moralischen Zwiespalt, weil sie sich eigentlich heraushalten
+    wollte.'
+- target: locations/casa_del_cookie
+- target: npcs/belorus
+  note: '**Belorus:** Sie schießt einen astralen Pfeil auf ihn, der seine Rüstung
+    schwächt, und äußert in der Schlacht Angst, ihre neue Familie zu verlieren.'
+- target: npcs/hendrik
+  note: '**Hendrik:** Sie begegnet dem Nomadenführer mit Misstrauen und beobachtet
+    ihn genau.'
+- target: npcs/kuatau_anfuehrer_priester
+  note: '**Kuatau:** Nyrella kennt die Fischwesen der Kuatau und warnt vor deren Anziehung
+    zu Okkultem.'
+- target: npcs/nyruk
+  note: '**Nyruk:** Ihr Eisbär, zugleich Reittier, Beschützer und engster Gefährte.
+    Nyruk spürt Gefahren, greift im Kampf an und bleibt in Krisenzeiten auffallend
+    nah bei Nyrella.'
+- target: npcs/perry_das_schnabeltier
+sources:
+- id: P-16
+  resource: https://www.youtube.com/watch?v=XXgO5Ht4Q0A
+  last_modified: '2025-07-29T00:00:00Z'
+- id: P-17
+  resource: https://www.youtube.com/watch?v=vHIjua0BZ9Y
+  last_modified: '2025-08-12T00:00:00Z'
+- id: P-18
+  resource: https://www.youtube.com/watch?v=-XbO3FLSL_I
+  last_modified: '2025-08-20T00:00:00Z'
+- id: P-19
+  resource: https://www.youtube.com/watch?v=TLZOH7TlGhk
+  last_modified: '2025-09-02T00:00:00Z'
+- id: P-20
+  resource: https://www.youtube.com/watch?v=vo1xnyLQDJk
+  last_modified: '2025-09-06T00:00:00Z'
+- id: P-21
+  resource: https://www.youtube.com/watch?v=Zl0qfuI6Goc
+  last_modified: '2025-09-09T00:00:00Z'
+- id: P-22
+  resource: https://www.youtube.com/watch?v=AhIT8dcxw2o
+  last_modified: '2025-09-17T00:00:00Z'
+- id: P-23
+  resource: https://www.youtube.com/watch?v=DGzfqVigS0g
+  last_modified: '2025-09-23T00:00:00Z'
+- id: P-24
+  resource: https://www.youtube.com/watch?v=bUT7Mc2hjUY
+  last_modified: '2025-09-30T00:00:00Z'
+- id: P-30
+  resource: https://www.youtube.com/watch?v=w__ahowb9p0
+  last_modified: '2025-11-18T00:00:00Z'
+- id: P-33
+  resource: https://www.youtube.com/watch?v=w4LB1s9_3rs
+  last_modified: '2026-01-13T00:00:00Z'
+- id: P-34
+  resource: https://www.youtube.com/watch?v=H3ckYdTv4y8
+  last_modified: '2026-01-20T00:00:00Z'
+- id: P-36
+  resource: https://www.youtube.com/watch?v=3C8SD-cyNPM
+  last_modified: '2026-02-11T00:00:00Z'
+- id: P-38
+  resource: https://www.youtube.com/watch?v=WOFArbwDDIQ
+  last_modified: '2026-02-24T00:00:00Z'
+- id: P-39
+  resource: https://www.youtube.com/watch?v=BRUNuNKTeOg
+  last_modified: '2026-03-03T00:00:00Z'
+- id: P-43
+  resource: https://www.youtube.com/watch?v=Yj5BWJfg3Ag
+  last_modified: '2026-03-24T00:00:00Z'
+- id: S1-02-A
+  resource: https://www.youtube.com/watch?v=qRj2t3wQHfs
+  last_modified: '2026-08-04T00:00:00Z'
 ---
 
 ## Überblick

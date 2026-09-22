@@ -609,6 +609,24 @@ merge:
   # same name, same place, no never_merge ruling them apart.
   lord voras: npcs/voras
 
+  # 2026-09-22 v0.2 re-emit: the rename guard refused a run because these
+  # concept ids were absent from a fresh resolve. Their registry entries
+  # already carry the *mis-heard* canonical_name (e.g. taverne_in_willauch
+  # stores "Taverne in Willau"), so the id was corrected at some point but
+  # the name it derives from never was -- and a fresh resolve therefore
+  # rebuilds the id from the mishearing. Same shape as the `slicks:` rule
+  # above and fixed the same way: pin the raw name to the corrected id.
+  # Only spellings entity_rules already rules on are listed here; the
+  # semantic pairs (Raben/Krähen, Tyrex/Tyrael, Schwarzhorn/Schwarzohr)
+  # are GM calls and stay open.
+  taverne in willau: locations/taverne_in_willauch
+  heimkehr nach willoch und belohnung: events/heimkehr_nach_willauch_und_belohnung
+  konfrontation mit slicks im garten von crowfin manor: events/konfrontation_mit_slix_im_garten_von_crowfin_manor
+  miner-dämon: npcs/minen_daemon
+  kapelle von tarvok: locations/kapelle_von_thar_vok
+  schrein des tarvok im keller: locations/schrein_des_thar_vok_im_keller
+  kapelle des tavok/varsu: locations/kapelle_des_thar_vok_varsu
+
 never_merge:
 # GM ruling 2026-08-30: the mixed-origin refugees are not Roland's Breska
 # group. Their names are near-identical and "Flüchtlinge" is a token-subset

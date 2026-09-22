@@ -6,8 +6,15 @@ description: Nachdem die Schattenkreatur sich auflöst, fällt ein Gegenstand au
 tags:
 - events
 timestamp: '2025-11-25T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:11Z'
 id: EVENT_ENTDECKUNG_DES_BESCHWOERUNGSSTABS
 subtype: Entdeckung
+sources:
+- id: P-31
+  resource: https://www.youtube.com/watch?v=wd5R4fJfngY
+  last_modified: '2025-11-25T00:00:00Z'
 ---
 
 Nachdem die [Schattenkreatur](/npcs/schattenkreatur.md) sich auflöst, fällt ein Gegenstand auf den Boden. [Lindo Laut](/characters/lindo_laut.md) identifiziert ihn als [Beschwörungsstab](/items/beschwoerungsstab.md) und nimmt ihn an sich. Er spürt dessen Macht.

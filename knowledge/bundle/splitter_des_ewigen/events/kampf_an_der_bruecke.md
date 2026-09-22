@@ -6,8 +6,15 @@ description: An der Brücke liefern sich Ehrenfelser Soldaten und Dämonen ein g
 tags:
 - events
 timestamp: '2026-04-09T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:11Z'
 id: EVENT_KAMPF_AN_DER_BRUECKE
 subtype: Kampf
+sources:
+- id: P-46
+  resource: https://www.youtube.com/watch?v=vcGkejr8_nI
+  last_modified: '2026-04-09T00:00:00Z'
 ---
 
 An der Brücke liefern sich Ehrenfelser Soldaten und Dämonen ein grausames Gemetzel. Die Helden überqueren sie und werden dabei beinahe von Feuerbällen getroffen.

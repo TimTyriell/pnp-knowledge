@@ -6,8 +6,15 @@ description: Kaya tritt in der Taverne von Ringtal auf und spielt zunächst 'Dig
 tags:
 - events
 timestamp: '2026-08-20T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_KAYAS_AUFTRITT_IN_DER_TAVERNE
 subtype: Sonstiges
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=2EkWrNUfQi0
+  last_modified: '2026-08-20T00:00:00Z'
 ---
 
 [Kaya](/characters/kaya.md) tritt in der Taverne von [Ringtal](/locations/ringtal.md) auf und spielt zunächst 'Diggy Diggy Hole', was die [Zwerge](/factions/zwerge.md) begeistert, und später ein episches Lied für Bruma. Sie verdient damit zwei Handvoll Gold und erhält eine kostenlose Übernachtung.

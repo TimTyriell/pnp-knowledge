@@ -6,8 +6,15 @@ description: Die Untotenarmee von Steinbachtal hat die Stadt Steinbachtal überr
 tags:
 - factions
 timestamp: '2025-09-09T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T22:10:09Z'
 id: FACTION_UNTOTE_ARMEE_VON_STEINBACHTAL
 subtype: Armee
+sources:
+- id: P-21
+  resource: https://www.youtube.com/watch?v=Zl0qfuI6Goc
+  last_modified: '2025-09-09T00:00:00Z'
 ---
 
 Die **Untotenarmee von Steinbachtal** hat die Stadt [Steinbachtal](/locations/steinbachtal.md) überrannt und hält sie besetzt. Sie besteht aus Hunderten von Zombies und Skeletten und wird von einem schwarzen Ritter angeführt. Ihrem Vorgehen nach scheint sie über eine gewisse Intelligenz zu verfügen.

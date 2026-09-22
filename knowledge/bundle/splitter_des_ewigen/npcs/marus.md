@@ -6,9 +6,21 @@ description: Marus ist der örtliche Anführer der Silberkerne in der Gegend um 
 tags:
 - npcs
 timestamp: '2026-09-03T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T22:10:10Z'
 id: NPC_MARUS
 aliases:
 - Margus
+relationships:
+- target: characters/dodo
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=WOFArbwDDIQ
+  last_modified: '2026-02-24T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=bl-hX87_EC8
+  last_modified: '2026-09-03T00:00:00Z'
 ---
 
 **Marus** ist der örtliche Anführer der [Silberkerne](/factions/silberkerne.md) in der Gegend um eine Mine. Die Heldengruppe begegnet ihm, als sie sich mit dieser Mine beschäftigt. In einer späteren Session wird er außerdem im Dienst von [Coralius](/npcs/coralius.md) erwähnt.

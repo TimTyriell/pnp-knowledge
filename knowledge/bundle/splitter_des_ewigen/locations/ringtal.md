@@ -6,10 +6,43 @@ description: Kleinringtal ist ein kleines, ummauertes Tavernendorf auf dem Weg n
 tags:
 - locations
 timestamp: '2026-09-03T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:16Z'
 id: LOC_RINGTAL
 subtype: Siedlung
 aliases:
 - Ringtal
+relationships:
+- target: locations/entlegen
+  note: 'Entlegen und Trost: Kleinringtal lebt in Symbiose mit der Insel Entlegen
+    und mit Trost.'
+- target: locations/willauch
+  note: 'Willauch und Brandau: haben in Kleinringtal keinen Einfluss.'
+- target: npcs/xenia_rotkam
+  note: 'Xenia: Anführerin der Tavernenleute und zentrale Figur bei der Evakuierung.'
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=EGNh8O7pE5Q
+  last_modified: '2026-06-04T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=EGNh8O7pE5Q
+  last_modified: '2026-06-04T00:00:00Z'
+- id: '3'
+  resource: https://www.youtube.com/watch?v=0HyPHao8s_k
+  last_modified: '2026-08-06T00:00:00Z'
+- id: '4'
+  resource: https://www.youtube.com/watch?v=0HyPHao8s_k
+  last_modified: '2026-08-06T00:00:00Z'
+- id: '5'
+  resource: https://www.youtube.com/watch?v=2EkWrNUfQi0
+  last_modified: '2026-08-20T00:00:00Z'
+- id: '6'
+  resource: https://www.youtube.com/watch?v=2EkWrNUfQi0
+  last_modified: '2026-08-20T00:00:00Z'
+- id: '7'
+  resource: https://www.youtube.com/watch?v=bl-hX87_EC8
+  last_modified: '2026-09-03T00:00:00Z'
 ---
 
 ## Überblick

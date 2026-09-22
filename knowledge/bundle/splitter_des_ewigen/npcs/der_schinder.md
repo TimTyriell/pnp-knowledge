@@ -6,9 +6,21 @@ description: Der Schinder ist neben dem Richter eine der wichtigsten Persönlich
 tags:
 - npcs
 timestamp: '2026-05-06T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:17Z'
 id: NPC_DER_SCHINDER
 aliases:
 - Schinder
+verified:
+  by: human:gm
+relationships:
+- target: characters/dante
+- target: locations/jalan
+sources:
+- id: P-48
+  resource: https://www.youtube.com/watch?v=MB4quhDWsQE
+  last_modified: '2026-05-06T00:00:00Z'
 ---
 
 ## Überblick

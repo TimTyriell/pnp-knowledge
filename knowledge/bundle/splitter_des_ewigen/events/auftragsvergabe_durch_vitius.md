@@ -6,8 +6,15 @@ description: Am dritten Abend ruft Vitius die Helden in die Kapelle und erteilt 
 tags:
 - events
 timestamp: '2026-08-04T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: EVENT_AUFTRAGSVERGABE_DURCH_VITIUS
 subtype: Verhandlung
+sources:
+- id: S1-02-A
+  resource: https://www.youtube.com/watch?v=qRj2t3wQHfs
+  last_modified: '2026-08-04T00:00:00Z'
 ---
 
 Am dritten Abend ruft [Vitius](/npcs/vitius.md) die Helden in die [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) und erteilt ihnen den Auftrag, aus [Valuna](/locations/valuna.md) eine heilige Fiole zu holen. Er verspricht eine große Belohnung und macht klar, dass der Auftrag dringend ist. Die Helden reagieren skeptisch und stellen Fragen, treffen aber keine Entscheidung.

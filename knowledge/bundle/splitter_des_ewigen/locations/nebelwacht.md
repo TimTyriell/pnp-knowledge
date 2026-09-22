@@ -6,8 +6,15 @@ description: Nebelwacht ist eine Festung weit im Süden, nahe der Stadt Vilaux, 
 tags:
 - locations
 timestamp: '2026-05-27T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:16Z'
 id: LOC_NEBELWACHT
 subtype: Festung
+sources:
+- id: P-51
+  resource: https://www.youtube.com/watch?v=IYYmgpqsp7E
+  last_modified: '2026-05-27T00:00:00Z'
 ---
 
 Nebelwacht ist eine Festung weit im Süden, nahe der Stadt [Vilaux](/locations/vilaux.md), die als Bollwerk gegen die Kreaturen aus dem Nebel dient. Sie ist ständig in Beschlag: Karawanen liefern Nachschub, die Mauern werden repariert, und immer wieder greifen Viecher an. Innerhalb gibt es ein Strategium, eine Taverne, Reparaturmaterialien und eine Seitentür für Ausflüge. Die Festung ist das einzige Bollwerk, das die Zivilisation vor dem unnatürlichen Nebel schützt. In dieser Session wird sie zum Ausgangspunkt der Expedition.

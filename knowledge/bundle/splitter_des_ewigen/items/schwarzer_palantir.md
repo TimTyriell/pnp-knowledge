@@ -6,10 +6,22 @@ description: Der Schwarze Palantir war eine kleine, runde, schwarze Kugel, die �
 tags:
 - items
 timestamp: '2025-06-25T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:14Z'
 id: ITEM_SCHWARZER_PALANTIR
 subtype: Artefakt
 aliases:
 - Schwarzer Palantir
+verified:
+  by: human:gm
+sources:
+- id: P-12
+  resource: https://www.youtube.com/watch?v=tl76B4V0io8
+  last_modified: '2025-06-17T00:00:00Z'
+- id: P-13
+  resource: https://www.youtube.com/watch?v=tpkO9uGw6-I
+  last_modified: '2025-06-25T00:00:00Z'
 ---
 
 Der Schwarze Palantir war eine kleine, runde, schwarze Kugel, die äußerlich an einen Palantir erinnerte. [Dodo](/characters/dodo.md) fand sie im [Sumpf](/locations/sumpf_vor_dem_goblin_dorf.md)-Dungeon und konnte sie zunächst nicht identifizieren. Die Gruppe warnte ihn davor, in die Kugel hineinzuschauen. Später öffnete der Schwarze Palantir in der Bibliothek des Grafen ein versiegeltes Buch und löste sich dabei auf. [Der Graf](/npcs/voras.md) bezeichnete ihn als ein Werk der [Dunkelheit](/deities/dunkelheit.md).

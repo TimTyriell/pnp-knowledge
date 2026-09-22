@@ -6,8 +6,15 @@ description: Die Vorgultanhänger sind eine große Anzahl von Anhängern Vorgult
 tags:
 - factions
 timestamp: '2026-05-13T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_VORGULTANHAENGER
 subtype: Kult
+sources:
+- id: P-49
+  resource: https://www.youtube.com/watch?v=4afPD9Q_5AY
+  last_modified: '2026-05-13T00:00:00Z'
 ---
 
 Die **Vorgultanhänger** sind eine große Anzahl von Anhängern [Vorgultas](/deities/vorgul_tar.md). Sie werden als Feinde der Gruppe beschrieben und befanden sich auf dem Weg zum Ort des Geschehens, als sie vom [Schinder](/npcs/der_schinder.md) aufgehalten wurden.[P-49]

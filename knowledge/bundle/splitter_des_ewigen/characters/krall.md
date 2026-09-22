@@ -6,7 +6,14 @@ description: Krall ist ein älterer Galapag-Guardian und Beschützer der Gruppe.
 tags:
 - characters
 timestamp: '2026-03-23T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:09Z'
 id: CHAR_KRALL
+sources:
+- id: P-42
+  resource: https://www.youtube.com/watch?v=niVxKtdQBn0
+  last_modified: '2026-03-23T00:00:00Z'
 ---
 
 Krall ist ein älterer Galapag-Guardian und Beschützer der Gruppe. Er zeichnet sich durch eine stoische Art und einen ausgeprägten Schutzinstinkt aus: Im Kampf nimmt er regelmäßig viel Schaden auf sich, um seine Gefährten zu decken, und ist dadurch ein zentraler Anker für den Gruppenzusammenhalt.

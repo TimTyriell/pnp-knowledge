@@ -6,11 +6,27 @@ description: Nairog, Peri und Ajani sind drei NPCs, die mit den Gefährten von R
 tags:
 - npcs
 timestamp: '2026-08-12T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_NAIROG_PERI_AJANI
 aliases:
 - Ajani
 - Nairog, Peri, Ajani
 - Peri
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=TLZOH7TlGhk
+  last_modified: '2025-09-02T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=bUT7Mc2hjUY
+  last_modified: '2025-09-30T00:00:00Z'
+- id: '3'
+  resource: https://www.youtube.com/watch?v=3C8SD-cyNPM
+  last_modified: '2026-02-11T00:00:00Z'
+- id: '4'
+  resource: https://www.youtube.com/watch?v=piUv11DCwDw
+  last_modified: '2026-08-12T00:00:00Z'
 ---
 
 Nairog, Peri und Ajani sind drei NPCs, die mit den Gefährten von Rotunas in Verbindung stehen. Peri und Ajani treten als tierische Begleiter zweier Gefährten auf, während Nairog kaum in Erscheinung tritt.

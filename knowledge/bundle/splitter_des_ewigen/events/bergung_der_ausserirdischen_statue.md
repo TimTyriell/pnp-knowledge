@@ -6,8 +6,15 @@ description: Nachdem die Tentakel-Knotenpunkte durchtrennt waren, gelang es Lind
 tags:
 - events
 timestamp: '2026-04-07T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:11Z'
 id: EVENT_BERGUNG_DER_AUSSERIRDISCHEN_STATUE
 subtype: Entdeckung
+sources:
+- id: P-45
+  resource: https://www.youtube.com/watch?v=MAuQPMNY548
+  last_modified: '2026-04-07T00:00:00Z'
 ---
 
 Nachdem die Tentakel-Knotenpunkte durchtrennt waren, gelang es [Lindo Laut](/characters/lindo_laut.md) mit einem [Deathkiss-Tentakel](/items/deathkiss_tentakel.md), die Statue aus dem Pool zu ziehen. Die Gruppe konnte die Statue nicht identifizieren und nahm sie mit. Die Bergung war das Ziel des Dungeons und ermöglichte das Öffnen der Türen.

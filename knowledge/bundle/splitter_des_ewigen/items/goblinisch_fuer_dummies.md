@@ -6,8 +6,15 @@ description: Ein Buch im Gemeinschaftsraum, das Grundkenntnisse der Goblin-Sprac
 tags:
 - items
 timestamp: '2025-11-14T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:14Z'
 id: ITEM_GOBLINISCH_FUER_DUMMIES
 subtype: Schriftstück
+sources:
+- id: P-29
+  resource: https://www.youtube.com/watch?v=8Khb-Y8XbKY
+  last_modified: '2025-11-14T00:00:00Z'
 ---
 
 Ein Buch im Gemeinschaftsraum, das Grundkenntnisse der Goblin-Sprache vermittelt. [Esterossa](/characters/esterossa.md) bemerkt es; [Dodo](/characters/dodo.md) stellt fest, dass es sich um einen anderen Dialekt handelt als seinen eigenen.

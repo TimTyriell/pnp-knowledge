@@ -6,8 +6,15 @@ description: Die Gruppe bittet die Stein-Clangs, das Kristalltor passieren zu d�
 tags:
 - events
 timestamp: '2026-05-19T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: EVENT_VERWEIGERUNG_AM_KRISTALLTOR
 subtype: Verhandlung
+sources:
+- id: P-50
+  resource: https://www.youtube.com/watch?v=xEcGJeaNixI
+  last_modified: '2026-05-19T00:00:00Z'
 ---
 
 Die Gruppe bittet die Stein-Clangs, das Kristalltor passieren zu dürfen, wird aber abgewiesen, weil sie keine Diener [Vorgul'tars](/deities/vorgul_tar.md) sind. Zuvor durfte ein Dämon passieren. Die Gruppe entscheidet sich, den Berg zu Fuß zu überqueren.

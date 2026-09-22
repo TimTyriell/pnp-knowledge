@@ -6,6 +6,9 @@ description: Die Goblingötter sind eine Gruppe chaotischer und wechselhafter Go
 tags:
 - deities
 timestamp: '2026-09-01T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DEITY_GOBLINGOETTER
 subtype: Sonstiges
 aliases:
@@ -13,6 +16,40 @@ aliases:
 - Goblinsgötter
 - Goblingötter
 - Goblin-Götter
+verified:
+  by: human:gm
+relationships:
+- target: characters/cookie
+- target: characters/valeria
+  note: '**Valeria:** Möglicherweise haben die Goblingötter den Raben oder die Taube
+    mit Valerias Brief zur Gruppe geführt, sodass die Nachricht die richtige Person
+    erreichte.'
+- target: npcs/pilz_goblins
+  note: '**Goblins:** Die Goblingötter sind die Gottheiten der Goblins und stehen
+    ihnen im Kampf bei. In einer Auseinandersetzung stärkt ein Blitz vier Goblins,
+    woraufhin diese die Gnade der Götter verkünden.'
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=YCpAz_syjaY
+  last_modified: '2025-04-15T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=z3C-bewKqUs
+  last_modified: '2025-04-23T00:00:00Z'
+- id: '3'
+  resource: https://www.youtube.com/watch?v=fsCOiSkKKTE
+  last_modified: '2025-04-30T00:00:00Z'
+- id: '4'
+  resource: https://www.youtube.com/watch?v=5eAEDN5ra-4
+  last_modified: '2025-05-14T00:00:00Z'
+- id: '5'
+  resource: https://www.youtube.com/watch?v=DGzfqVigS0g
+  last_modified: '2025-09-23T00:00:00Z'
+- id: '6'
+  resource: https://www.youtube.com/watch?v=8Khb-Y8XbKY
+  last_modified: '2025-11-14T00:00:00Z'
+- id: '7'
+  resource: https://www.youtube.com/watch?v=1E3-Nwv4OEs
+  last_modified: '2026-09-01T00:00:00Z'
 ---
 
 ## Überblick

@@ -6,8 +6,15 @@ description: Das versiegelte Buch stammt aus dem Circle Below und enthält uralt
 tags:
 - items
 timestamp: '2025-06-25T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: ITEM_DAS_VERSIEGELTE_BUCH
 subtype: Schriftstück
+sources:
+- id: P-13
+  resource: https://www.youtube.com/watch?v=tpkO9uGw6-I
+  last_modified: '2025-06-25T00:00:00Z'
 ---
 
 Das versiegelte Buch stammt aus dem [Circle Below](/domains/circle_below.md) und enthält uraltes, verbotenes Wissen. Es kann nur mit Magie geöffnet werden. Nachdem es mit dem schwarzen Palantir geöffnet wird, reißt es die Seelen der Helden in einen Kampf gegen himmlische [Wächter](/npcs/waechter.md) und zerfällt anschließend zu Staub.

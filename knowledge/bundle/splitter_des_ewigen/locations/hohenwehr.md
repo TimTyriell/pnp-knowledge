@@ -6,8 +6,18 @@ description: Hohenwehr ist ein Ort, der in den Gesprächen der Gruppe als mögli
 tags:
 - locations
 timestamp: '2026-08-20T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:16Z'
 id: LOC_HOHENWEHR
 subtype: Siedlung
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=0HyPHao8s_k
+  last_modified: '2026-08-06T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=2EkWrNUfQi0
+  last_modified: '2026-08-20T00:00:00Z'
 ---
 
 Hohenwehr ist ein Ort, der in den Gesprächen der Gruppe als möglicher Versammlungsort genannt wird, falls [Ringtal](/locations/ringtal.md) belagert werden sollte. Genaueres über Lage oder Erscheinungsbild ist aus den Belegen nicht bekannt.

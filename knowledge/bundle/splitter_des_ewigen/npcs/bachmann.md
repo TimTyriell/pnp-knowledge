@@ -6,7 +6,14 @@ description: Bachmann wurde in früheren Sitzungen gerettet und war von einem gr
 tags:
 - npcs
 timestamp: '2026-01-13T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:17Z'
 id: NPC_BACHMANN
+sources:
+- id: P-33
+  resource: https://www.youtube.com/watch?v=w4LB1s9_3rs
+  last_modified: '2026-01-13T00:00:00Z'
 ---
 
 Bachmann wurde in früheren Sitzungen gerettet und war von einem grünen [Kristall](/items/gruener_kristall.md) infiziert, was zu Gedächtnisverlust führte. Er wird in der Zusammenfassung erwähnt, spielt aber in dieser Session keine aktive Rolle.

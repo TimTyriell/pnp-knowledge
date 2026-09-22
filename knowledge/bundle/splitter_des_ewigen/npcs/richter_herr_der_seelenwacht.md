@@ -6,11 +6,27 @@ description: Der Richter ist der Herr und eine der beiden wichtigsten Persönlic
 tags:
 - npcs
 timestamp: '2026-05-13T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_RICHTER_HERR_DER_SEELENWACHT
 aliases:
 - der Richter
 - Der Richter
 - Richter
+relationships:
+- target: characters/dante
+- target: locations/jalan
+sources:
+- id: P-47
+  resource: https://www.youtube.com/watch?v=1Jyu92P7_Fg
+  last_modified: '2026-04-14T00:00:00Z'
+- id: P-48
+  resource: https://www.youtube.com/watch?v=MB4quhDWsQE
+  last_modified: '2026-05-06T00:00:00Z'
+- id: P-49
+  resource: https://www.youtube.com/watch?v=4afPD9Q_5AY
+  last_modified: '2026-05-13T00:00:00Z'
 ---
 
 Der Richter ist der Herr und eine der beiden wichtigsten Persönlichkeiten von [Seelenwacht](/locations/seelenwacht.md). Er tritt abgebrüht auf und macht keinen Hehl daraus, dass keine Zeit für Diskussionen bleibt. Ein [Ring](/items/ring.md) kostet ihn einen Finger; im Titanen [Huludan](/deities/huludan.md) erkennt er eine Chance.

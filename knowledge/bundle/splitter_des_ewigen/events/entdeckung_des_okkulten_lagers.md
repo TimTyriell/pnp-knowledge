@@ -6,8 +6,15 @@ description: Die Gruppe stößt auf ein okkultes Lager mit geopferten Personen u
 tags:
 - events
 timestamp: '2025-08-12T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T22:10:09Z'
 id: EVENT_ENTDECKUNG_DES_OKKULTEN_LAGERS
 subtype: Entdeckung
+sources:
+- id: P-17
+  resource: https://www.youtube.com/watch?v=vHIjua0BZ9Y
+  last_modified: '2025-08-12T00:00:00Z'
 ---
 
 Die Gruppe stößt auf ein okkultes Lager mit geopferten Personen und einem primitiven Opferaltar. Die Stimmen in [Lindo Lauts Amulett](/items/amulett_des_heiligen_duran.md) werden aktiv und fordern ein Opfer. Eine Stimme drängt [Lindo Laut](/characters/lindo_laut.md), vor der Gruppe Dominanz zu zeigen. Lindo Laut widersteht dem Drang. Die Session endet an diesem Punkt.

@@ -6,12 +6,31 @@ description: Spitzzahn ist ein Halbling und Bürgermeister. Die Quellen bezeichn
 tags:
 - npcs
 timestamp: '2026-09-03T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:17Z'
 id: NPC_BUERGERMEISTER_SPITZZAHN
 aliases:
 - Spitzzahn
 - Bürgermeister Spitzzahn
 - Bürgermeister
-status: disputed
+review_status: disputed
+relationships:
+- target: characters/bruma_stormrak
+- target: npcs/roland
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=z3C-bewKqUs
+  last_modified: '2025-04-23T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=tpkO9uGw6-I
+  last_modified: '2025-06-25T00:00:00Z'
+- id: '3'
+  resource: https://www.youtube.com/watch?v=2EkWrNUfQi0
+  last_modified: '2026-08-20T00:00:00Z'
+- id: '4'
+  resource: https://www.youtube.com/watch?v=bl-hX87_EC8
+  last_modified: '2026-09-03T00:00:00Z'
 ---
 
 Spitzzahn ist ein Halbling und Bürgermeister. Die Quellen bezeichnen ihn namentlich als Bürgermeister von [Ringtal](/locations/ringtal.md); zwei ältere Erwähnungen, die nur allgemein von einem Bürgermeister in [Gemata](/locations/gemata.md) beziehungsweise [Breska](/locations/breska.md) handeln, lassen sich nicht sicher mit ihm gleichsetzen (siehe [Offene Konflikte](#offene-konflikte)). Sein Auftreten ist pragmatisch und auf die Interessen seiner Stadt bedacht: Er fordert Gegenleistungen, ist aber zu Absprachen bereit, sobald die Bedingungen erfüllt sind.

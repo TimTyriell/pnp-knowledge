@@ -6,6 +6,9 @@ description: Voras der Heilige, oft auch nur Voras oder der Graf genannt, ist ei
 tags:
 - npcs
 timestamp: '2026-08-04T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:19Z'
 id: NPC_VORAS
 subtype: Sonstiges
 aliases:
@@ -15,7 +18,77 @@ aliases:
 - Der Graf
 - Graf Voras
 - Lord Voras
-status: disputed
+verified:
+  by: human:gm
+review_status: disputed
+relationships:
+- target: characters/lindo_laut
+  note: '**Lindo Laut:** Er besänftigt Voras, als dieser verärgert über die Gruppe
+    ist, und hilft, die Wogen zu glätten. Voras zahlt später viel Geld für Lindos
+    Handschellen.'
+- target: characters/lunara_velora
+  note: '**Lunara Velora:** Voras rettete ihr vor zwölf Jahren das Leben; zum Dank
+    erhielt er von ihr das Buch, das er nicht öffnen konnte.'
+- target: characters/rotunas
+  note: '**Die Helden (Rotunas, Dodo, Esterossa, Valeria, Nyrella u. a.):** Anfangs
+    skeptisch, werden sie zu Verbündeten; Voras testet ihre Stärke und sichert ihnen
+    schließlich volle Unterstützung zu.'
+- target: characters/valeria
+- target: deities/heiliger_duran
+- target: deities/kaleandra_die_rote
+- target: deities/nerash
+  note: '**Nerash:** Voras betrachtet Nerash als Feind und will dessen Tod rächen,
+    nachdem Nerash Sandro getötet hat. Nerash tötet schließlich auch Voras.'
+- target: locations/breska
+- target: npcs/belorus
+  note: '**Belorus:** Der schwarze Paladin greift Breska an und bringt Voras um fast
+    alles. Voras ist ein Gegenspieler von Belorus.'
+- target: npcs/hal_harl
+- target: npcs/hans_soldat_aus_breska
+- target: npcs/lendras
+  note: '**Lendras:** Der Magier erweckt Voras aus dem Schlaf und bittet ihn um Hilfe.'
+- target: npcs/nox
+  note: '**Nox:** Voras arbeitet mit Nox zusammen; gemeinsam erschaffen sie ein Portal
+    ins Abyssalis und kämpfen in der Schlacht um Ehrenfels an vorderster Front. Nox
+    gilt seit der Schlacht um Ehrenfels als v…'
+- target: npcs/pilz_goblins
+- target: npcs/sandro
+  note: '**Sandro:** Ein Kämpfer an Voras‘ Seite; Nerash tötet ihn, was Voras‘ Rache
+    motiviert.'
+- target: npcs/tindrael
+- target: npcs/vitius
+  note: '**Vitius:** Bezeichnet Voras als Abscheulichkeit und bestätigt seinen Tod.'
+sources:
+- id: P-05
+  resource: https://www.youtube.com/watch?v=z3C-bewKqUs
+  last_modified: '2025-04-23T00:00:00Z'
+- id: P-13
+  resource: https://www.youtube.com/watch?v=tpkO9uGw6-I
+  last_modified: '2025-06-25T00:00:00Z'
+- id: P-15
+  resource: https://www.youtube.com/watch?v=BRRCUgW4xRo
+  last_modified: '2025-07-22T00:00:00Z'
+- id: P-32
+  resource: https://www.youtube.com/watch?v=VGw81seFvbo
+  last_modified: '2026-01-06T00:00:00Z'
+- id: P-33
+  resource: https://www.youtube.com/watch?v=w4LB1s9_3rs
+  last_modified: '2026-01-13T00:00:00Z'
+- id: P-40
+  resource: https://www.youtube.com/watch?v=Kr9_AC2XtOw
+  last_modified: '2026-03-10T00:00:00Z'
+- id: P-43
+  resource: https://www.youtube.com/watch?v=Yj5BWJfg3Ag
+  last_modified: '2026-03-24T00:00:00Z'
+- id: P-46
+  resource: https://www.youtube.com/watch?v=vcGkejr8_nI
+  last_modified: '2026-04-09T00:00:00Z'
+- id: S1-01-A
+  resource: https://www.youtube.com/watch?v=umGyKLkefJI
+  last_modified: '2026-07-29T00:00:00Z'
+- id: S1-02-A
+  resource: https://www.youtube.com/watch?v=qRj2t3wQHfs
+  last_modified: '2026-08-04T00:00:00Z'
 ---
 
 ## Überblick

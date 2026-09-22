@@ -6,8 +6,15 @@ description: Belorus' Armee – auch als Belorus' Untotenarmee bekannt – ist d
 tags:
 - factions
 timestamp: '2026-03-10T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_BELORUS_ARMEE
 subtype: Armee
+sources:
+- id: P-40
+  resource: https://www.youtube.com/watch?v=Kr9_AC2XtOw
+  last_modified: '2026-03-10T00:00:00Z'
 ---
 
 Belorus' Armee – auch als Belorus' Untotenarmee bekannt – ist die untote Streitmacht des schwarzen Paladins [Belorus](/npcs/belorus.md). Sie stammt aus dem Gebiet des gefallenen Königreichs [Zebros](/factions/koenigreich_zebros.md) und zieht von dort ins Tal. Bislang bekannt wurde sie vor allem durch die Belagerung und Zerstörung des Dorfes [Breska](/locations/breska.md).

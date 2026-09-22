@@ -6,8 +6,15 @@ description: Der Stein, den Dodo von Cookie erhalten hat, wird Lunara gegeben, d
 tags:
 - items
 timestamp: '2025-11-18T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: ITEM_STEIN_VON_COOKIE
 subtype: Artefakt
+sources:
+- id: P-30
+  resource: https://www.youtube.com/watch?v=w__ahowb9p0
+  last_modified: '2025-11-18T00:00:00Z'
 ---
 
 Der Stein, den [Dodo](/characters/dodo.md) von [Cookie](/characters/cookie.md) erhalten hat, wird Lunara gegeben, damit sie mit [Perry](/npcs/perry_das_schnabeltier.md), dem Schnabeltier, sprechen kann. Er zeigt das Vertrauen, das Dodo in Lunara setzt.

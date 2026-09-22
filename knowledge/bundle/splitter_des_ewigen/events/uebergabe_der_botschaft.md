@@ -6,8 +6,15 @@ description: Am Lagerfeuer erscheint ein Bote der Silberkerne und übergibt Dodo
 tags:
 - events
 timestamp: '2026-03-18T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_UEBERGABE_DER_BOTSCHAFT
 subtype: Sonstiges
+sources:
+- id: P-41
+  resource: https://www.youtube.com/watch?v=HHXxsASLrbQ
+  last_modified: '2026-03-18T00:00:00Z'
 ---
 
 Am Lagerfeuer erscheint ein [Bote der Silberkerne](/npcs/bote_der_silberkerne.md) und übergibt [Dodo](/characters/dodo.md) eine [Notiz von HAL](/items/notiz_von_hal.md). Darin wird die Gruppe aufgefordert, einen Sündenbock zu finden. Nach der Übergabe verschwindet der Bote sofort. Lunara zerstört die Notiz magisch.

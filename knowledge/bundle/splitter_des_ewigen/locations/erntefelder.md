@@ -6,8 +6,24 @@ description: Die Erntefelder sind eine gefährliche Region in Abyssalis nahe der
 tags:
 - locations
 timestamp: '2026-05-13T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: LOC_ERNTEFELDER
 subtype: Wildnis
+sources:
+- id: P-44
+  resource: https://www.youtube.com/watch?v=Ee-K84wcxLM
+  last_modified: '2026-03-31T00:00:00Z'
+- id: P-47
+  resource: https://www.youtube.com/watch?v=1Jyu92P7_Fg
+  last_modified: '2026-04-14T00:00:00Z'
+- id: P-48
+  resource: https://www.youtube.com/watch?v=MB4quhDWsQE
+  last_modified: '2026-05-06T00:00:00Z'
+- id: P-49
+  resource: https://www.youtube.com/watch?v=4afPD9Q_5AY
+  last_modified: '2026-05-13T00:00:00Z'
 ---
 
 **Die Erntefelder** sind eine gefährliche Region in [Abyssalis](/domains/splitterwelt.md) nahe der Stadt [Boragdil](/locations/boragdil.md). Sie sind der Ort, an dem die meisten Seelen nach ihrer Ankunft in [Abyssalis](/domains/splitterwelt.md) landen – und zugleich ein Jagdrevier: Dämonen jagen die ankommenden Seelen, die Felder sind voller Seelenjäger. [Vasul](/deities/vharzul.md) teleportierte die Heldengruppe in dieses Gebiet.

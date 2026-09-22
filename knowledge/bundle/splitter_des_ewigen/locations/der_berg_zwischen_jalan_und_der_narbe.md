@@ -6,8 +6,15 @@ description: Ein nicht allzu hoher, aber nebliger Berg, der den Weg von Jalan zu
 tags:
 - locations
 timestamp: '2026-05-19T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: LOC_DER_BERG_ZWISCHEN_JALAN_UND_DER_NARBE
 subtype: Wildnis
+sources:
+- id: P-50
+  resource: https://www.youtube.com/watch?v=xEcGJeaNixI
+  last_modified: '2026-05-19T00:00:00Z'
 ---
 
 Ein nicht allzu hoher, aber nebliger Berg, der den Weg von [Jalan](/locations/jalan.md) zur [Narbe](/locations/narben.md) versperrt. Auf ihm gibt es dichte Wälder, Klippen, Höhlen, einen Fluss und ein Kristalltor. Er wird von korrumpierten [Goblins](/npcs/pilz_goblins.md), Harpyien und Seraphen bevölkert. Die Gruppe muss ihn überqueren, weil ihr der Durchgang durch das Kristalltor verweigert wird. Der Aufstieg ist windig und gefährlich, und die Gruppe wird mehrfach beobachtet.

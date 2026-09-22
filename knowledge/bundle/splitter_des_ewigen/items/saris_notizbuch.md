@@ -6,8 +6,15 @@ description: Saris führt ein kleines Handnotizbuch, in das er akribisch alle In
 tags:
 - items
 timestamp: '2026-06-04T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:14Z'
 id: ITEM_SARIS_NOTIZBUCH
 subtype: Schriftstück
+sources:
+- id: P-52
+  resource: https://www.youtube.com/watch?v=EGNh8O7pE5Q
+  last_modified: '2026-06-04T00:00:00Z'
 ---
 
 [Saris](/characters/saris.md) führt ein kleines Handnotizbuch, in das er akribisch alle Informationen einträgt, etwa die Aussagen der [Flüchtlinge](/factions/fluechtlinge.md) und die Statue von [Joran](/deities/joran.md). Er nutzt es, um später nachzulesen und Details zu recherchieren.

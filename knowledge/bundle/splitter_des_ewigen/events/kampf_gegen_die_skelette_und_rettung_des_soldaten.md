@@ -6,8 +6,15 @@ description: Der verwundete Soldat wird von Untoten (Skeletten) verfolgt; die Gr
 tags:
 - events
 timestamp: '2026-01-06T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:11Z'
 id: EVENT_KAMPF_GEGEN_DIE_SKELETTE_UND_RETTUNG_DES_SOLDATEN
 subtype: Kampf
+sources:
+- id: P-32
+  resource: https://www.youtube.com/watch?v=VGw81seFvbo
+  last_modified: '2026-01-06T00:00:00Z'
 ---
 
 Der verwundete Soldat wird von Untoten (Skeletten) verfolgt; die Gruppe greift ein, wehrt Pfeile ab und kämpft gegen mehrere Skelette. [Dodo](/characters/dodo.md) zerschmettert einen, [Lindo Laut](/characters/lindo_laut.md) errichtet eine Feuerwand, und die Gruppe flieht zurück zur [Hütte](/locations/huette.md).

@@ -6,8 +6,15 @@ description: Eine verzauberte Rüstung, die sich bei Gefahr automatisch aktivier
 tags:
 - items
 timestamp: '2026-08-25T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:14Z'
 id: ITEM_JOARS_MAGISCHE_RUESTUNG
 subtype: Rüstung
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=1Cjj3OVqiYA
+  last_modified: '2026-08-25T00:00:00Z'
 ---
 
 Eine verzauberte Rüstung, die sich bei Gefahr automatisch aktiviert und [Joar](/npcs/joar_vanur.md) in eine Art Warforged-Clank-Rüstung verwandelt. Sie wird ausgelöst, als [Gunther](/characters/gunther.md) Joar den Arm abtrennt, und ermöglicht Joar die Flucht.

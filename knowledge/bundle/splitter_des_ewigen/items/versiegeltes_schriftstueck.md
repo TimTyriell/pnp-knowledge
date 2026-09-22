@@ -6,8 +6,15 @@ description: Ein magisch versiegeltes Schreiben der neuen Gilde, das Esterossa �
 tags:
 - items
 timestamp: '2025-09-17T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: ITEM_VERSIEGELTES_SCHRIFTSTUECK
 subtype: Schriftstück
+sources:
+- id: P-22
+  resource: https://www.youtube.com/watch?v=AhIT8dcxw2o
+  last_modified: '2025-09-17T00:00:00Z'
 ---
 
 Ein magisch versiegeltes Schreiben der neuen [Gilde](/factions/gilde_von_ehrenfels.md), das [Esterossa](/characters/esterossa.md) übergeben wird. Es enthält die Bitte um eine Zusammenkunft zwischen den Gilden und soll dem [Gildenmeister](/npcs/nox.md) der Heimatgilde überbracht werden.

@@ -6,8 +6,15 @@ description: Die neue Gilde bietet der Gruppe als Aufnahmeprüfung an, den Anfü
 tags:
 - events
 timestamp: '2025-09-17T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: EVENT_AUFTRAG_GEGEN_ROLAND
 subtype: Verhandlung
+sources:
+- id: P-22
+  resource: https://www.youtube.com/watch?v=AhIT8dcxw2o
+  last_modified: '2025-09-17T00:00:00Z'
 ---
 
 Die neue [Gilde](/factions/gilde_von_ehrenfels.md) bietet der Gruppe als Aufnahmeprüfung an, den Anführer des Flüchtlingslagers, [Roland](/npcs/roland.md), zu töten oder zu vertreiben. Die Gruppe lehnt ab, will aber das Angebot mit [Lindo Laut](/characters/lindo_laut.md) und ihrem [Gildenmeister](/npcs/nox.md) besprechen.

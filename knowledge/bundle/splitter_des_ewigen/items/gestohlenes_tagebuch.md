@@ -6,10 +6,17 @@ description: Das Tagebuch ist ein gestohlenes Buch, das Cookie und Dodo bei eine
 tags:
 - items
 timestamp: '2025-09-30T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:14Z'
 id: ITEM_GESTOHLENES_TAGEBUCH
 subtype: Schriftstück
 aliases:
 - Tagebuch
+sources:
+- id: P-24
+  resource: https://www.youtube.com/watch?v=bUT7Mc2hjUY
+  last_modified: '2025-09-30T00:00:00Z'
 ---
 
 Das Tagebuch ist ein gestohlenes Buch, das [Cookie](/characters/cookie.md) und [Dodo](/characters/dodo.md) bei einer früheren Mission entwendet haben. Es wird als möglicher Grund für die Verfolgung durch die Untoten vermutet, da [Belorus](/npcs/belorus.md) zwei Personen und etwas Entrissenes sucht. Die Gruppe ist sich unsicher, ob es tatsächlich das Tagebuch ist.

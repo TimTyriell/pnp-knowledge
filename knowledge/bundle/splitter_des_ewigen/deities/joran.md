@@ -6,8 +6,17 @@ description: Joran, genannt der Münzzähler, ist einer der neuen Götter. Er tr
 tags:
 - deities
 timestamp: '2026-09-03T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DEITY_JORAN
 subtype: Neuer Gott
+relationships:
+- target: characters/sange
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=bl-hX87_EC8
+  last_modified: '2026-09-03T00:00:00Z'
 ---
 
 Joran, genannt der Münzzähler, ist einer der neuen Götter. Er trat erstmals durch eine Vision in Erscheinung, in der er [Sange](/characters/sange.md) eine Münze zuwarf, und griff später aktiv in die Schlacht um [Ringtal](/locations/ringtal.md) ein. Für die Verteidiger Ringtals wurde er damit zum Symbol göttlicher Unterstützung.

@@ -6,8 +6,17 @@ description: Zebrosia, die Klinge des Königs, ist ein legendäres Schwert, das 
 tags:
 - items
 timestamp: '2026-02-17T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: ITEM_ZEBROSIA
 subtype: Waffe
+relationships:
+- target: factions/koenigreich_zebros
+sources:
+- id: P-37
+  resource: https://www.youtube.com/watch?v=Z2jlzpoTWVw
+  last_modified: '2026-02-17T00:00:00Z'
 ---
 
 Zebrosia, die Klinge des Königs, ist ein legendäres [Schwert](/items/schwert.md), das in einem Stein im Garten von [Crowfin Manor](/locations/crowfin_manor.md) steckt. Es wird gesagt, dass es in der Lage war, neue Götter zu besiegen. Nur ein würdiger Nachfahre der Zebros kann es ziehen; wer unwürdig ist, zerfällt zu Asche. Die Gruppe erfährt, dass viele es versucht haben, aber keiner Erfolg hatte. [Slix](/npcs/slix_vasul.md) interessiert sich für das Schwert und fordert die Gruppe auf, es zu berühren, um zu sehen, ob sie würdig sind.

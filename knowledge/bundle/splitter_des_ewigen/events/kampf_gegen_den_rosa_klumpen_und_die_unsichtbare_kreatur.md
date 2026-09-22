@@ -6,8 +6,15 @@ description: Die Gruppe bekämpfte zuerst den pinken Klumpen, der Dodo übernahm
 tags:
 - events
 timestamp: '2026-04-07T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:11Z'
 id: EVENT_KAMPF_GEGEN_DEN_ROSA_KLUMPEN_UND_DIE_UNSICHTBARE_KREATUR
 subtype: Kampf
+sources:
+- id: P-45
+  resource: https://www.youtube.com/watch?v=MAuQPMNY548
+  last_modified: '2026-04-07T00:00:00Z'
 ---
 
 Die Gruppe bekämpfte zuerst den pinken Klumpen, der [Dodo](/characters/dodo.md) übernahm, und entdeckte dann die unsichtbare Kreatur in den Flammen. [Brim](/characters/brim.md) stieß den Klumpen in die Grube, und die unsichtbare Kreatur wurde durch einen kombinierten Angriff getötet. Der Kampf wurde durch ein paralleles Ritual erschwert, das nach 10 Runden eine mächtige Kraft entfesselt hätte.

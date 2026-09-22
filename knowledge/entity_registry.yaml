@@ -52,7 +52,7 @@ entities:
   aliases:
   - Marco's Guardian
   - Marco (Dodo)
-  mention_count: 53
+  mention_count: 55
 - concept_id: characters/esterossa
   type: Character
   canonical_name: Esterossa
@@ -71,7 +71,7 @@ entities:
   type: Character
   canonical_name: Gunther
   aliases: []
-  mention_count: 6
+  mention_count: 8
 - concept_id: characters/kaya
   type: Character
   canonical_name: Kaya
@@ -100,12 +100,12 @@ entities:
   - Lindo Laut / Pedro
   - Tim's Fairy Bard
   - Tim (Lindo Laut)
-  mention_count: 45
+  mention_count: 47
 - concept_id: characters/lunara_velora
   type: Character
   canonical_name: Lunara Velora
   aliases: []
-  mention_count: 24
+  mention_count: 26
 - concept_id: characters/miko
   type: Character
   canonical_name: Miko
@@ -391,7 +391,7 @@ entities:
   - Valsor
   - Varsurs
   - Varzul
-  mention_count: 19
+  mention_count: 20
 - concept_id: deities/volgotha
   type: Deity
   canonical_name: Volgotha
@@ -408,7 +408,7 @@ entities:
   - Vorgultar
   - Wargulta / Volgulta
   - Vorgulta
-  mention_count: 8
+  mention_count: 9
 - concept_id: deities/vorgutar
   type: Deity
   canonical_name: Vorgutar
@@ -443,7 +443,7 @@ entities:
   type: Domain
   canonical_name: Circle Below
   aliases: []
-  mention_count: 3
+  mention_count: 4
 - concept_id: domains/circuit_below
   type: Domain
   canonical_name: Circuit Below
@@ -486,7 +486,7 @@ entities:
   - Abyssalis
   - Abyssalis (Splitterwelt)
   - Die Splitterwelt
-  mention_count: 33
+  mention_count: 35
 - concept_id: domains/void
   type: Domain
   canonical_name: Void
@@ -1083,6 +1083,16 @@ entities:
   canonical_name: Gunther trennt Joar den Arm ab
   aliases: []
   mention_count: 1
+- concept_id: events/gunthers_opfer_im_lila_blitz
+  type: Event
+  canonical_name: Gunthers Opfer im lila Blitz
+  aliases: []
+  mention_count: 1
+- concept_id: events/heilung_der_verwandelten_dorfbewohner
+  type: Event
+  canonical_name: Heilung der verwandelten Dorfbewohner
+  aliases: []
+  mention_count: 1
 - concept_id: events/heilung_joars_durch_den_druiden
   type: Event
   canonical_name: Heilung Joars durch den Druiden
@@ -1238,6 +1248,11 @@ entities:
   canonical_name: Kampf gegen die Goblin-Horde am Berghang
   aliases: []
   mention_count: 1
+- concept_id: events/kampf_gegen_die_grotesken_wesen
+  type: Event
+  canonical_name: Kampf gegen die grotesken Wesen
+  aliases: []
+  mention_count: 1
 - concept_id: events/kampf_gegen_die_hexe_und_ihren_sohn
   type: Event
   canonical_name: Kampf gegen die Hexe und ihren Sohn
@@ -1384,6 +1399,11 @@ entities:
   canonical_name: Konfrontation mit Nerash in der Kapelle
   aliases: []
   mention_count: 1
+- concept_id: events/konfrontation_mit_roberto_veloria
+  type: Event
+  canonical_name: Konfrontation mit Roberto Veloria
+  aliases: []
+  mention_count: 1
 - concept_id: events/konfrontation_mit_slix
   type: Event
   canonical_name: Konfrontation mit Slix
@@ -1427,6 +1447,11 @@ entities:
 - concept_id: events/lindo_lauts_traum_von_vasul
   type: Event
   canonical_name: Lindo Lauts Traum von Vasul
+  aliases: []
+  mention_count: 1
+- concept_id: events/lunara_schleudert_den_priester_gegen_den_kamin
+  type: Event
+  canonical_name: Lunara schleudert den Priester gegen den Kamin
   aliases: []
   mention_count: 1
 - concept_id: events/lunara_verschiebt_die_welt_in_die_splitterwelt
@@ -1799,6 +1824,11 @@ entities:
   canonical_name: Verbannung des Ratten-Dämons
   aliases: []
   mention_count: 1
+- concept_id: events/verhaftung_von_dodo_und_lindo_laut
+  type: Event
+  canonical_name: Verhaftung von Dodo und Lindo Laut
+  aliases: []
+  mention_count: 1
 - concept_id: events/verhandlung_am_grab
   type: Event
   canonical_name: Verhandlung am Grab
@@ -1911,6 +1941,11 @@ entities:
   canonical_name: Verweigerung am Kristalltor
   aliases: []
   mention_count: 1
+- concept_id: events/vision_an_der_vasulstatue
+  type: Event
+  canonical_name: Vision an der Vasulstatue
+  aliases: []
+  mention_count: 1
 - concept_id: events/vision_von_joran
   type: Event
   canonical_name: Vision von Joran
@@ -1951,6 +1986,11 @@ entities:
   canonical_name: Zerstörung der Kol-Meref-Statue
   aliases: []
   mention_count: 1
+- concept_id: events/zerstoerung_der_roberto_veloria_statue
+  type: Event
+  canonical_name: Zerstörung der Roberto-Veloria-Statue
+  aliases: []
+  mention_count: 1
 - concept_id: events/zerstoerung_der_schild_statuen_durch_esterossa
   type: Event
   canonical_name: Zerstörung der Schild-Statuen durch Esterossa
@@ -1969,6 +2009,11 @@ entities:
 - concept_id: events/zerstoerung_des_gruenen_kristalls
   type: Event
   canonical_name: Zerstörung des grünen Kristalls
+  aliases: []
+  mention_count: 1
+- concept_id: events/zerstoerung_des_kristallmagiers
+  type: Event
+  canonical_name: Zerstörung des Kristallmagiers
   aliases: []
   mention_count: 1
 - concept_id: events/zerstoerung_des_portals
@@ -2215,6 +2260,11 @@ entities:
   canonical_name: Ringtaler Verteidiger
   aliases: []
   mention_count: 1
+- concept_id: factions/salzbacher_stadtwache
+  type: Faction
+  canonical_name: Salzbacher Stadtwache
+  aliases: []
+  mention_count: 1
 - concept_id: factions/sanddorn
   type: Faction
   canonical_name: Sanddorn
@@ -2244,6 +2294,11 @@ entities:
 - concept_id: factions/soldaten_von_voras
   type: Faction
   canonical_name: Soldaten von Voras
+  aliases: []
+  mention_count: 1
+- concept_id: factions/stadtwache_von_salzbach
+  type: Faction
+  canonical_name: Stadtwache von Salzbach
   aliases: []
   mention_count: 1
 - concept_id: factions/untote_armee_von_belorus
@@ -2487,6 +2542,11 @@ entities:
   canonical_name: Das Buch (Lunaras Buch)
   aliases: []
   mention_count: 1
+- concept_id: items/das_schwarze_buch_mit_dem_auge
+  type: Item
+  canonical_name: Das schwarze Buch mit dem Auge
+  aliases: []
+  mention_count: 1
 - concept_id: items/das_tagebuch_von_voras
   type: Item
   canonical_name: Das Tagebuch von Voras
@@ -2510,6 +2570,11 @@ entities:
 - concept_id: items/devouring_dagger
   type: Item
   canonical_name: Devouring Dagger
+  aliases: []
+  mention_count: 1
+- concept_id: items/die_kugel
+  type: Item
+  canonical_name: Die Kugel
   aliases: []
   mention_count: 1
 - concept_id: items/die_ringe
@@ -2753,6 +2818,11 @@ entities:
   aliases:
   - Hope-Hold-Flare
   mention_count: 1
+- concept_id: items/joars_amulett
+  type: Item
+  canonical_name: Joars Amulett
+  aliases: []
+  mention_count: 1
 - concept_id: items/joars_amulett_ruestungsmechanismus
   type: Item
   canonical_name: Joars Amulett (Rüstungsmechanismus)
@@ -2843,6 +2913,11 @@ entities:
   canonical_name: Lila Kugel
   aliases: []
   mention_count: 1
+- concept_id: items/lindo_lauts_armbrust
+  type: Item
+  canonical_name: Lindo Lauts Armbrust
+  aliases: []
+  mention_count: 1
 - concept_id: items/lindo_lauts_instrument
   type: Item
   canonical_name: Lindo Lauts Instrument
@@ -2859,6 +2934,11 @@ entities:
 - concept_id: items/lindos_stab_schluessel
   type: Item
   canonical_name: Lindos Stab (Schlüssel)
+  aliases: []
+  mention_count: 1
+- concept_id: items/lunara_veloras_stab
+  type: Item
+  canonical_name: Lunara Veloras Stab
   aliases: []
   mention_count: 1
 - concept_id: items/lunaras_feder
@@ -2993,6 +3073,11 @@ entities:
 - concept_id: items/ring
   type: Item
   canonical_name: Ring
+  aliases: []
+  mention_count: 1
+- concept_id: items/ring_der_mutter
+  type: Item
+  canonical_name: Ring der Mutter
   aliases: []
   mention_count: 1
 - concept_id: items/ring_der_pocket_dimension
@@ -3219,7 +3304,8 @@ entities:
   - Zebrus Zorn
   - Der Streitkolben
   - Zebras Zorn
-  mention_count: 4
+  - Dodos Streitkolben
+  mention_count: 6
 - concept_id: items/streitkolben_von_zebros
   type: Item
   canonical_name: Streitkolben von Cepros
@@ -3826,6 +3912,11 @@ entities:
   canonical_name: Gasthaus in Ehrenfels
   aliases: []
   mention_count: 1
+- concept_id: locations/gefaengnis_von_salzbach
+  type: Location
+  canonical_name: Gefängnis von Salzbach
+  aliases: []
+  mention_count: 1
 - concept_id: locations/gefaengnisinsel
   type: Location
   canonical_name: Gefängnisinsel
@@ -3973,9 +4064,19 @@ entities:
   aliases: []
   mention_count: 3
   important: true
+- concept_id: locations/kanalisation_unter_salzbach
+  type: Location
+  canonical_name: Kanalisation unter Salzbach
+  aliases: []
+  mention_count: 1
 - concept_id: locations/kapelle_des_thar_vok_varsu
   type: Location
   canonical_name: Kapelle des Tavok/Varsu
+  aliases: []
+  mention_count: 1
+- concept_id: locations/kapelle_in_salzbach
+  type: Location
+  canonical_name: Kapelle in Salzbach
   aliases: []
   mention_count: 1
 - concept_id: locations/kapelle_von_thar_vok
@@ -4149,6 +4250,11 @@ entities:
   canonical_name: Ritualplatz
   aliases: []
   mention_count: 1
+- concept_id: locations/robertos_anwesen
+  type: Location
+  canonical_name: Robertos Anwesen
+  aliases: []
+  mention_count: 1
 - concept_id: locations/rotaugenbucht_tiefwasser
   type: Location
   canonical_name: Rotaugenbucht Tiefwasser
@@ -4168,7 +4274,7 @@ entities:
   type: Location
   canonical_name: Salzbach
   aliases: []
-  mention_count: 2
+  mention_count: 4
 - concept_id: locations/sanddorn
   type: Location
   canonical_name: Sanddorn
@@ -4657,6 +4763,11 @@ entities:
   aliases: []
   mention_count: 1
   important: true
+- concept_id: npcs/der_kristallmagier
+  type: NPC
+  canonical_name: Der Kristallmagier
+  aliases: []
+  mention_count: 1
 - concept_id: npcs/der_namenlose
   type: NPC
   canonical_name: Der Namenlose
@@ -5040,7 +5151,7 @@ entities:
   - Joao Vanur
   - Joar
   - Jorah Vanur
-  mention_count: 5
+  mention_count: 7
 - concept_id: npcs/jonathan
   type: NPC
   canonical_name: Jonathan
@@ -5185,7 +5296,7 @@ entities:
   - Ulvanara (Liam)
   - Ulnavar (Liam)
   - Liam
-  mention_count: 10
+  mention_count: 12
 - concept_id: npcs/lilly
   type: NPC
   canonical_name: Lilly
@@ -5209,7 +5320,8 @@ entities:
   - Käpt'n Lobrecht
   - Lobrecht
   - Captain Lobrecht
-  mention_count: 6
+  - Kranführer Lobrecht
+  mention_count: 8
 - concept_id: npcs/loran_silberbart
   type: NPC
   canonical_name: Loran Silberbart
@@ -5241,6 +5353,11 @@ entities:
 - concept_id: npcs/luli
   type: NPC
   canonical_name: Luli
+  aliases: []
+  mention_count: 1
+- concept_id: npcs/lunaras_mutter_verwandelt
+  type: NPC
+  canonical_name: Lunaras Mutter (verwandelt)
   aliases: []
   mention_count: 1
 - concept_id: npcs/lurk
@@ -5291,7 +5408,7 @@ entities:
   canonical_name: Miaomani
   aliases:
   - Miamani
-  mention_count: 6
+  mention_count: 7
 - concept_id: npcs/mill
   type: NPC
   canonical_name: Mill
@@ -5312,7 +5429,7 @@ entities:
   type: NPC
   canonical_name: Miyamani
   aliases: []
-  mention_count: 1
+  mention_count: 2
 - concept_id: npcs/mutierter_frosch_gribbit
   type: NPC
   canonical_name: mutierter Frosch (Gribbit)
@@ -5445,6 +5562,11 @@ entities:
   canonical_name: Pip
   aliases: []
   mention_count: 1
+- concept_id: npcs/priester_von_salzbach
+  type: NPC
+  canonical_name: Priester von Salzbach
+  aliases: []
+  mention_count: 1
 - concept_id: npcs/prinz_bran
   type: NPC
   canonical_name: Prinz Bran
@@ -5480,6 +5602,11 @@ entities:
   - der Richter
   - Der Richter
   mention_count: 3
+- concept_id: npcs/roberto_veloria
+  type: NPC
+  canonical_name: Roberto Veloria
+  aliases: []
+  mention_count: 1
 - concept_id: npcs/rodek
   type: NPC
   canonical_name: Rodek

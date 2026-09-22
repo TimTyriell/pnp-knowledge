@@ -6,8 +6,15 @@ description: Das Amulett ist ein uraltes Artefakt, das eine metallene Rüstung u
 tags:
 - items
 timestamp: '2026-09-01T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:14Z'
 id: ITEM_JOARS_AMULETT_RUESTUNGSMECHANISMUS
 subtype: Artefakt
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=1E3-Nwv4OEs
+  last_modified: '2026-09-01T00:00:00Z'
 ---
 
 Das Amulett ist ein uraltes Artefakt, das eine metallene Rüstung um seinen Träger erzeugt. Es war die Quelle des Fluchs, der [Joars](/npcs/joar_vanur.md) Arm übernahm und ihn zu einer Art Konstrukt machte. Der Druide des Hains zieht die Rüstung in das Amulett zurück, nachdem [Lindo Laut](/characters/lindo_laut.md) mit Timelock die Energie stilllegt. Das Amulett wird Lindo Laut übergeben; es pulsiert und ist in seiner mentalen Bibliothek nicht verzeichnet – scheinbar einzigartig. Es hat eine schützende Hülle und enthält eine Energiequelle, möglicherweise einen magischen [Kristall](/items/gruener_kristall.md).

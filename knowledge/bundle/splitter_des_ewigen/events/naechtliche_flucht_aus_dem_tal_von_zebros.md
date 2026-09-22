@@ -6,8 +6,15 @@ description: Als die Nacht hereinbricht und Schreie aus dem Nebel ertönen, ents
 tags:
 - events
 timestamp: '2025-05-14T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_NAECHTLICHE_FLUCHT_AUS_DEM_TAL_VON_ZEBROS
 subtype: Reise
+sources:
+- id: P-08
+  resource: https://www.youtube.com/watch?v=5eAEDN5ra-4
+  last_modified: '2025-05-14T00:00:00Z'
 ---
 
 Als die Nacht hereinbricht und Schreie aus dem Nebel ertönen, entscheiden sich [Cookie](/characters/cookie.md) und [Dodo](/characters/dodo.md) zur sofortigen Flucht durch den Pass zurück zur [Gilde](/factions/gilde_von_ehrenfels.md), um nicht überrannt zu werden.

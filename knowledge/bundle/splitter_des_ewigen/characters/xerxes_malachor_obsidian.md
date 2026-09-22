@@ -6,7 +6,14 @@ description: Xerxes Malachor Obsidian ist ein Infernis-Schurke, der sich in der 
 tags:
 - characters
 timestamp: '2026-04-09T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: CHAR_XERXES_MALACHOR_OBSIDIAN
+sources:
+- id: P-46
+  resource: https://www.youtube.com/watch?v=vcGkejr8_nI
+  last_modified: '2026-04-09T00:00:00Z'
 ---
 
 Xerxes Malachor Obsidian ist ein Infernis-Schurke, der sich in der Session vom 9. April 2026 der Gruppe anschließt. Er trägt eine tragische Vergangenheit als ehemaliger Diener eines Königs mit sich. Im Kampf gegen Dämonen zeigt er sich als waghalsiger Kämpfer mit Schattenmagie und Dolchen.

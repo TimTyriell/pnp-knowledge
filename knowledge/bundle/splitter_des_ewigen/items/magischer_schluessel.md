@@ -6,11 +6,24 @@ description: Der magische Schlüssel ist ein wiederkehrendes Artefakt in den Erl
 tags:
 - items
 timestamp: '2025-06-25T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:14Z'
 id: ITEM_MAGISCHER_SCHLUESSEL
 subtype: Artefakt
 aliases:
 - Schlüssel
 - Der Stab (Schlüssel)
+sources:
+- id: P-05
+  resource: https://www.youtube.com/watch?v=z3C-bewKqUs
+  last_modified: '2025-04-23T00:00:00Z'
+- id: P-12
+  resource: https://www.youtube.com/watch?v=tl76B4V0io8
+  last_modified: '2025-06-17T00:00:00Z'
+- id: P-13
+  resource: https://www.youtube.com/watch?v=tpkO9uGw6-I
+  last_modified: '2025-06-25T00:00:00Z'
 ---
 
 Der **magische Schlüssel** ist ein wiederkehrendes Artefakt in den Erlebnissen der Gruppe um [Rotunas](/characters/rotunas.md) und [Esterossa](/characters/esterossa.md). Er sieht nicht wie ein gewöhnlicher Schlüssel aus; der Magier Jeronimo Röder hält ihn nach dem Studium einer Zeichnung für einen möglichen **Portalschlüssel** mit unbekanntem Ziel. Ob die unterschiedlichen Erwähnungen denselben Gegenstand beschreiben oder ob mehrere ähnliche Schlüssel im Spiel sind, ist aus den vorliegenden Belegen nicht eindeutig zu klären.

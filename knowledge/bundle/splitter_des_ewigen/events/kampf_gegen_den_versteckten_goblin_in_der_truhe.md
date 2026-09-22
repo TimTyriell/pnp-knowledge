@@ -6,8 +6,15 @@ description: Ein Goblin versteckt sich in einer Truhe, greift Dodo an, wird aber
 tags:
 - events
 timestamp: '2025-04-01T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:11Z'
 id: EVENT_KAMPF_GEGEN_DEN_VERSTECKTEN_GOBLIN_IN_DER_TRUHE
 subtype: Kampf
+sources:
+- id: P-02
+  resource: https://www.youtube.com/watch?v=LZIuUzc3F18
+  last_modified: '2025-04-01T00:00:00Z'
 ---
 
 Ein Goblin versteckt sich in einer Truhe, greift [Dodo](/characters/dodo.md) an, wird aber abgewehrt. [Esterossa](/characters/esterossa.md) verwundet ihn schwer, Dodo tötet ihn mit der Keule. In der Truhe findet sich nur eine Hühnerkeule für [Perry](/npcs/perry_das_schnabeltier.md).

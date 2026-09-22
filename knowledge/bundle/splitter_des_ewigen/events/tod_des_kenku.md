@@ -6,8 +6,15 @@ description: Der Kenku wird im finalen Kampf von Esterossa mit einem mächtigen 
 tags:
 - events
 timestamp: '2025-07-22T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_TOD_DES_KENKU
 subtype: Tod
+sources:
+- id: P-15
+  resource: https://www.youtube.com/watch?v=BRRCUgW4xRo
+  last_modified: '2025-07-22T00:00:00Z'
 ---
 
 Der [Kenku](/npcs/kenku_bote.md) wird im finalen Kampf von [Esterossa](/characters/esterossa.md) mit einem mächtigen Angriff verwundet und schließlich von [Dodo](/characters/dodo.md) mit einem geworfenen [Dolch](/items/dolch.md) in den Hinterkopf getötet. Sein Tod beendet die akute Bedrohung. Der [Gildemeister](/npcs/nox.md) untersucht seine Leiche und findet wichtige Hinweise.

@@ -6,8 +6,15 @@ description: Auf dem Weg zur Brutstätte bricht unter Lunara eine brüchige Plat
 tags:
 - events
 timestamp: '2026-02-24T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:11Z'
 id: EVENT_FAST_ABSTURZ_VON_LUNARA
 subtype: Sonstiges
+sources:
+- id: P-38
+  resource: https://www.youtube.com/watch?v=WOFArbwDDIQ
+  last_modified: '2026-02-24T00:00:00Z'
 ---
 
 Auf dem Weg zur Brutstätte bricht unter Lunara eine brüchige Platte ein und sie stürzt in die Tiefe. [Lindo Laut](/characters/lindo_laut.md) fliegt hinterher und zieht sie mit einem Stärke-Check wieder hoch.

@@ -6,8 +6,15 @@ description: Die Gnoll- und Goblin-Armee ist ein großer Kriegsverband, der sich
 tags:
 - factions
 timestamp: '2026-06-04T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_GNOLL_UND_GOBLIN_ARMEE
 subtype: Armee
+sources:
+- id: P-52
+  resource: https://www.youtube.com/watch?v=EGNh8O7pE5Q
+  last_modified: '2026-06-04T00:00:00Z'
 ---
 
 Die **Gnoll- und Goblin-Armee** ist ein großer Kriegsverband, der sich nordwestlich von [Kleinringtal](/locations/ringtal.md) sammelt und die Dörfer der Gegend bedroht. Sie hat bereits das [Holzfäller-Camp](/locations/holzfaeller_camp.md) überfallen und bereitet einen größeren Angriff vor, der sich vermutlich gegen [Ringtal](/locations/ringtal.md) richten wird.

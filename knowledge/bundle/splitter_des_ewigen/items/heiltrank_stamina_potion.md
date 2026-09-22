@@ -6,8 +6,15 @@ description: Dodo nutzt während des Kampfes eine Stamina Potion, um sich zu hei
 tags:
 - items
 timestamp: '2025-07-22T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:14Z'
 id: ITEM_HEILTRANK_STAMINA_POTION
 subtype: Trank
+sources:
+- id: P-15
+  resource: https://www.youtube.com/watch?v=BRRCUgW4xRo
+  last_modified: '2025-07-22T00:00:00Z'
 ---
 
 [Dodo](/characters/dodo.md) nutzt während des Kampfes eine Stamina Potion, um sich zu heilen. [Esterossa](/characters/esterossa.md) bietet ihm später seinen Heiltrank an, den Dodo jedoch nicht benötigt. Diese Tränke sind Standard-Heilmittel der Gruppe.

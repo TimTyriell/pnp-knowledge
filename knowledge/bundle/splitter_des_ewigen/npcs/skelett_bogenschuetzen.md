@@ -6,9 +6,19 @@ description: Die Skelett-Bogenschützen sind untote Fernkämpfer, die der Gruppe
 tags:
 - npcs
 timestamp: '2025-05-27T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_SKELETT_BOGENSCHUETZEN
 aliases:
 - Skelett
+sources:
+- id: P-08
+  resource: https://www.youtube.com/watch?v=5eAEDN5ra-4
+  last_modified: '2025-05-14T00:00:00Z'
+- id: P-09
+  resource: https://www.youtube.com/watch?v=bamCIB_CkR8
+  last_modified: '2025-05-27T00:00:00Z'
 ---
 
 Die Skelett-Bogenschützen sind untote Fernkämpfer, die der Gruppe in zwei getrennten Gefechten begegnet sind. Der erste Auftritt zeigte zwergenartige Skelette, die von erhöhter Position aus mit Feuerpfeilen schossen; der zweite bestand aus fünf Skelett-Bogenschützen, die aus einem Rift kamen. Beide Male griffen sie aus der Distanz an und setzten die Gruppe unter Druck, obwohl sie als einfache Gegner galten. Ob es sich um dieselben untoten Individuen handelte, ist nicht belegt.

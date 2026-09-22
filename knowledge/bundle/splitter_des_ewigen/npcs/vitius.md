@@ -6,7 +6,21 @@ description: Vitius ist ein Seraph (Engel) im Dienst der neuen Göttin Nerash. E
 tags:
 - npcs
 timestamp: '2026-08-12T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T22:10:11Z'
 id: NPC_VITIUS
+relationships:
+- target: characters/dodo
+- target: deities/vharzul
+- target: npcs/voras
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=qRj2t3wQHfs
+  last_modified: '2026-08-04T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=piUv11DCwDw
+  last_modified: '2026-08-12T00:00:00Z'
 ---
 
 Vitius ist ein [Seraph](/npcs/seraph.md) (Engel) im Dienst der neuen Göttin [Nerash](/deities/nerash.md). Er hat die Geschäfte in [Ehrenfels](/locations/ehrenfels.md) übernommen und empfängt die Heldengruppe in der Kapelle von Ehrenfels. Bei den Begegnungen mit der Gruppe wandelt sich sein Auftreten von der anfänglich unnachgiebigen Vertretung der offiziellen Linie hin zu einer Kooperation mit den Helden.

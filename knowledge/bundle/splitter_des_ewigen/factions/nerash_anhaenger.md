@@ -6,8 +6,15 @@ description: Die Nerash-Anhänger sind die Gefolgschaft der Gottheit Nerash. In 
 tags:
 - factions
 timestamp: '2026-07-29T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_NERASH_ANHAENGER
 subtype: Kult
+sources:
+- id: S1-01-A
+  resource: https://www.youtube.com/watch?v=umGyKLkefJI
+  last_modified: '2026-07-29T00:00:00Z'
 ---
 
 Die **Nerash-Anhänger** sind die Gefolgschaft der Gottheit [Nerash](/deities/nerash.md). In [Ehrenfels](/locations/ehrenfels.md) haben sie an Einfluss gewonnen; ihre Präsenz drückt die Stimmung der Stadt.

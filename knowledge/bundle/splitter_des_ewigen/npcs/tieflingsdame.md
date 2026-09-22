@@ -6,7 +6,14 @@ description: Eine nicht namentlich genannte Tieflingsdame sitzt bei den Anführe
 tags:
 - npcs
 timestamp: '2025-09-17T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_TIEFLINGSDAME
+sources:
+- id: P-22
+  resource: https://www.youtube.com/watch?v=AhIT8dcxw2o
+  last_modified: '2025-09-17T00:00:00Z'
 ---
 
 Eine nicht namentlich genannte Tieflingsdame sitzt bei den Anführern. [Esterossa](/characters/esterossa.md) schätzt sie als kühl, distanziert und prüfend ein; sie mustert besonders [Nyrella](/characters/nyrella.md) herablassend.

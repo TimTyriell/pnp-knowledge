@@ -6,8 +6,15 @@ description: Richter und Schinder führen die sechs Charaktere zu der alten Vill
 tags:
 - events
 timestamp: '2026-05-06T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_UNTERSUCHUNG_DER_VILLA_UEBER_JALAN
 subtype: Entdeckung
+sources:
+- id: P-48
+  resource: https://www.youtube.com/watch?v=MB4quhDWsQE
+  last_modified: '2026-05-06T00:00:00Z'
 ---
 
 [Richter](/npcs/richter_herr_der_seelenwacht.md) und [Schinder](/npcs/der_schinder.md) führen die sechs Charaktere zu der alten Villa oberhalb von [Jalan](/locations/jalan.md), um herauszufinden, was sich darin verbirgt. Die Gruppe betritt das Gebäude und beginnt mit der Erkundung, wobei sie auf ein unbekanntes Symbol stößt.

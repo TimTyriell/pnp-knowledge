@@ -6,8 +6,15 @@ description: Am Trainingsgelände hält Lunara Lindo Laut fest, Vasul löst Slix
 tags:
 - events
 timestamp: '2026-03-31T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_VERNICHTUNG_VON_SLIX
 subtype: Ritual
+sources:
+- id: P-44
+  resource: https://www.youtube.com/watch?v=Ee-K84wcxLM
+  last_modified: '2026-03-31T00:00:00Z'
 ---
 
 Am Trainingsgelände hält Lunara [Lindo Laut](/characters/lindo_laut.md) fest, [Vasul](/deities/vharzul.md) löst [Slix](/npcs/slix_vasul.md) heraus. Lunara befiehlt Slix niederzuknien, und Vasul vernichtet den Dämon mit dem [Stab](/items/lindo_lauts_stab.md). Slix' Essenz wird aufgelöst und von Vasul aufgenommen.

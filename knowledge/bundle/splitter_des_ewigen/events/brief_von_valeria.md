@@ -6,8 +6,18 @@ description: Der Brief von Valeria ist ein Schreiben, das der Gruppe per Raben z
 tags:
 - events
 timestamp: '2025-11-18T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T22:10:09Z'
 id: EVENT_BRIEF_VON_VALERIA
 subtype: Schriftstück
+sources:
+- id: P-29
+  resource: https://www.youtube.com/watch?v=8Khb-Y8XbKY
+  last_modified: '2025-11-14T00:00:00Z'
+- id: P-30
+  resource: https://www.youtube.com/watch?v=w__ahowb9p0
+  last_modified: '2025-11-18T00:00:00Z'
 ---
 
 Der **Brief von [Valeria](/characters/valeria.md)** ist ein Schreiben, das der Gruppe per Raben zugestellt wird und die vorübergehende Abwesenheit von [Valeria](/characters/valeria.md) ankündigt. Der Brief wird in der Gruppe verlesen und später als Beleg für Valerias Lage verwendet.

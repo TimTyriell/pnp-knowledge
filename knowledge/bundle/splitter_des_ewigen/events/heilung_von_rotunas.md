@@ -6,8 +6,15 @@ description: Der Gnoll behandelte Rotunas mit seiner Tinktur, woraufhin der Zwer
 tags:
 - events
 timestamp: '2025-09-23T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:11Z'
 id: EVENT_HEILUNG_VON_ROTUNAS
 subtype: Sonstiges
+sources:
+- id: P-23
+  resource: https://www.youtube.com/watch?v=DGzfqVigS0g
+  last_modified: '2025-09-23T00:00:00Z'
 ---
 
 Der Gnoll behandelte [Rotunas](/characters/rotunas.md) mit seiner Tinktur, woraufhin der Zwerg in Ohnmacht fiel und ins Koma glitt. Nach einigen Stunden besserte sich die Wunde und die Vergiftung klang ab. Rotunas erwachte in der [Gilde](/factions/gilde_von_ehrenfels.md) mit Gedächtnisverlust und einer bleibenden [Narbe](/locations/narben.md).

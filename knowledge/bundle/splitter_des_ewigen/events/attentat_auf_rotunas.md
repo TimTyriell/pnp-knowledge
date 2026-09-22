@@ -6,8 +6,15 @@ description: W채hrend der R체ckreise wird die Gruppe von einem Dunkelelb-Attent�
 tags:
 - events
 timestamp: '2025-09-17T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: EVENT_ATTENTAT_AUF_ROTUNAS
 subtype: Kampf
+sources:
+- id: P-22
+  resource: https://www.youtube.com/watch?v=AhIT8dcxw2o
+  last_modified: '2025-09-17T00:00:00Z'
 ---
 
 W채hrend der R체ckreise wird die Gruppe von einem [Dunkelelb-Attent채ter](/npcs/dunkelelb_attentaeter.md) 체berfallen. [Rotunas](/characters/rotunas.md) wird vergiftet und bricht zusammen; [Esterossa](/characters/esterossa.md) verst체mmelt den Angreifer mit einem kritischen Thunderbolt und findet einen [Mordauftrag auf Rotunas](/items/mordauftrag_auf_rotunas.md).

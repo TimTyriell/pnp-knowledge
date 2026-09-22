@@ -6,7 +6,14 @@ description: Lukas (auch Link genannt) ist ein Goblin-Alchemist, der die Gruppe 
 tags:
 - npcs
 timestamp: '2025-11-14T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_LUKAS
+sources:
+- id: P-29
+  resource: https://www.youtube.com/watch?v=8Khb-Y8XbKY
+  last_modified: '2025-11-14T00:00:00Z'
 ---
 
 Lukas (auch Link genannt) ist ein Goblin-Alchemist, der die Gruppe durch das Anwesen führt. Er ist stolz auf seine Fähigkeiten, stellt einen Heiltrank und das süße Sekret aus einem Pilzfass vor. Er erklärt, dass [Goblins](/npcs/pilz_goblins.md) in Menschenstädten oft ausgegrenzt werden, aber hier in Frieden leben können. Er erwähnt den "Zyklus", verweist aber für Details an [Horatio](/npcs/horatio.md). Er ist freundlich, aber nervös, und bittet die Gruppe, Waffen draußen zu lassen.

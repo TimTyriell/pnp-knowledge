@@ -6,8 +6,15 @@ description: In dieser kleinen Schmiede liegen Materialien und eine Anleitung de
 tags:
 - locations
 timestamp: '2025-10-28T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: LOC_DIE_SCHMIEDE
 subtype: Dungeon
+sources:
+- id: P-28
+  resource: https://www.youtube.com/watch?v=V6NzNakqxXM
+  last_modified: '2025-10-28T00:00:00Z'
 ---
 
 In dieser kleinen Schmiede liegen Materialien und eine Anleitung des Zwergs, um eine Waffe gegen die Kreatur zu schmieden. [Dodo](/characters/dodo.md) nutzt sie, um eine Spitze an seinen [Streitkolben](/items/streitkolben_von_dodo.md) zu bauen.

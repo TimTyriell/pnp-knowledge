@@ -6,8 +6,15 @@ description: Adeliga bietet der Gruppe den Segen Jorans an. Kaya und Saris lehne
 tags:
 - events
 timestamp: '2026-06-04T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_SEGNUNG_DES_SANGE_DURCH_JORAN
 subtype: Ritual
+sources:
+- id: P-52
+  resource: https://www.youtube.com/watch?v=EGNh8O7pE5Q
+  last_modified: '2026-06-04T00:00:00Z'
 ---
 
 [Adeliga](/npcs/adeliga_der_eulenseraph.md) bietet der Gruppe den Segen [Jorans](/deities/joran.md) an. [Kaya](/characters/kaya.md) und [Saris](/characters/saris.md) lehnen ab, aber [Sange](/characters/sange.md) kniet nieder, flüstert seinen wahren Namen und nimmt den Segen an. Dabei leuchten Adeliga und Sange golden, er erhält eine Vision von Blut und [Dunkelheit](/deities/dunkelheit.md), und eine neue Energie erfüllt ihn. Sange fühlt einen inneren Konflikt mit seiner Blutmagie, schläft danach aber zum ersten Mal seit langem ruhig.

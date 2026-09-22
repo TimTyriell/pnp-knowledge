@@ -6,12 +6,22 @@ description: Die Verlassene Mine an der Farm ist ein weitläufiges Stollensystem
 tags:
 - locations
 timestamp: '2026-08-06T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:16Z'
 id: LOC_VERLASSENE_MINE_AN_DER_FARM
 subtype: Dungeon
 aliases:
 - Mine
 - Die Mine
-status: disputed
+review_status: disputed
+sources:
+- id: P-35
+  resource: https://www.youtube.com/watch?v=9RzvnnWzV7E
+  last_modified: '2026-01-27T00:00:00Z'
+- id: S1-03-B
+  resource: https://www.youtube.com/watch?v=0HyPHao8s_k
+  last_modified: '2026-08-06T00:00:00Z'
 ---
 
 Die Verlassene Mine an der Farm ist ein weitläufiges Stollensystem, das in den bisherigen Belegen uneinheitlich erscheint. Die Aufzeichnungen beschreiben zum einen eine Mine unter einer Festung, die von Zwergen aktiv ausgebaut wird, zum anderen eine Mine nahe dem Halblingdorf. Ob beide Quellen dasselbe Bauwerk meinen, ist nicht gesichert; ebenso wenig erklärt sich aus ihnen, worauf sich der Namensbestandteil „verlassen“ bezieht.

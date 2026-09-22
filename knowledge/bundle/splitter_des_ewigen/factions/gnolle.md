@@ -6,8 +6,24 @@ description: Gnolle sind kriegerische, hyänenartige Humanoide, die in Gruppen a
 tags:
 - factions
 timestamp: '2026-08-25T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_GNOLLE
 subtype: Bande
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=e0v6AFGd4mE
+  last_modified: '2025-05-06T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=H-eHSlfxUAg
+  last_modified: '2026-07-10T00:00:00Z'
+- id: '3'
+  resource: https://www.youtube.com/watch?v=Gb-TEbCFF0M
+  last_modified: '2026-07-23T00:00:00Z'
+- id: '4'
+  resource: https://www.youtube.com/watch?v=1Cjj3OVqiYA
+  last_modified: '2026-08-25T00:00:00Z'
 ---
 
 Gnolle sind kriegerische, hyänenartige Humanoide, die in Gruppen auftreten und eine Bedrohung für die Region darstellen. Sie sammeln sich in den [Grauen Sümpfen](/locations/graue_suempfe.md), überfallen Siedlungen und Karawanen und belagern Bauwerke. Ob alle beobachteten Gnolle einer einzigen Streitmacht angehören, ist nicht bekannt. Einige Verbände stehen zudem unter dem Einfluss externer Kräfte.

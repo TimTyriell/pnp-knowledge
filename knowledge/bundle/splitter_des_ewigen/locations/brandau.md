@@ -6,8 +6,67 @@ description: Brandau ist eine ehemalige Großstadt und ein ehemaliges Fürstentu
 tags:
 - locations
 timestamp: '2026-09-03T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: LOC_BRANDAU
 subtype: Siedlung
+relationships:
+- target: characters/sange
+  note: '**Sange:** Brandau ist seine Heimatstadt, die den Krieg gegen Willauch verloren
+    hat [7]. Er verließ die Stadt bereits vor dem Ende, nachdem seine Blutmagie erwacht
+    war [7][10].'
+- target: factions/silberkerne
+  note: '**Silberkerne:** unterstützten offenbar die Seite Brandaus [4].'
+- target: locations/velor
+  note: '**Velor:** Brandau war Schauplatz eines früheren Konflikts mit Velor; Joar
+    Vanur erwähnt dies, um die politische Lage zu illustrieren [8].'
+- target: locations/willauch
+  note: '**Willauch:** Kriegsgegner und Sieger; Brandau wird in das Herrschaftsgebiet
+    Willauchs integriert [3]. Willauch glich die technologische Überlegenheit Brandaus
+    durch schiere Masse und den Einsatz von…'
+- target: npcs/coralius
+  note: '**Coralius:** ehemaliger Lehrling des Obersten Markus, verfügt über Wissen
+    zu Brandau und dessen Magie [10].'
+- target: npcs/herr_raxlis
+  note: '**Herr Raxlis:** stammt ebenfalls aus Brandau und muss dort eine wichtige
+    Stellung bekleidet haben, auch wenn sich Sange an seine genaue Aufgabe nicht erinnert
+    [9].'
+- target: npcs/prinzessin_marie
+  note: '**Prinzessin Marie:** überlebende Erbin Brandaus. Ihr Anspruch auf die Stadt
+    macht Brandau zu einem bedeutenden politischen Faktor [5][10]. Ihr Tod war ein
+    Gerücht; ihr Aufenthaltsort ist unbekannt […'
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=AhIT8dcxw2o
+  last_modified: '2025-09-17T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=DGzfqVigS0g
+  last_modified: '2025-09-23T00:00:00Z'
+- id: '3'
+  resource: https://www.youtube.com/watch?v=cUtz87UCHu4
+  last_modified: '2025-10-14T00:00:00Z'
+- id: '4'
+  resource: https://www.youtube.com/watch?v=niVxKtdQBn0
+  last_modified: '2026-03-23T00:00:00Z'
+- id: '5'
+  resource: https://www.youtube.com/watch?v=Yj5BWJfg3Ag
+  last_modified: '2026-03-24T00:00:00Z'
+- id: '6'
+  resource: https://www.youtube.com/watch?v=EGNh8O7pE5Q
+  last_modified: '2026-06-04T00:00:00Z'
+- id: '7'
+  resource: https://www.youtube.com/watch?v=0HyPHao8s_k
+  last_modified: '2026-08-06T00:00:00Z'
+- id: '8'
+  resource: https://www.youtube.com/watch?v=piUv11DCwDw
+  last_modified: '2026-08-12T00:00:00Z'
+- id: '9'
+  resource: https://www.youtube.com/watch?v=2EkWrNUfQi0
+  last_modified: '2026-08-20T00:00:00Z'
+- id: '10'
+  resource: https://www.youtube.com/watch?v=bl-hX87_EC8
+  last_modified: '2026-09-03T00:00:00Z'
 ---
 
 ## Überblick

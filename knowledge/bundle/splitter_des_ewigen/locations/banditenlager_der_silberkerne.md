@@ -6,6 +6,9 @@ description: Das Banditenlager der Silberkerne ist ein befestigter Stützpunkt i
 tags:
 - locations
 timestamp: '2025-11-25T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: LOC_BANDITENLAGER_DER_SILBERKERNE
 subtype: Wildnis
 aliases:
@@ -14,6 +17,16 @@ aliases:
 - Das Banditenlager (im Wald)
 - Altes Banditenlager
 - Banditenlager
+sources:
+- id: P-22
+  resource: https://www.youtube.com/watch?v=AhIT8dcxw2o
+  last_modified: '2025-09-17T00:00:00Z'
+- id: P-23
+  resource: https://www.youtube.com/watch?v=DGzfqVigS0g
+  last_modified: '2025-09-23T00:00:00Z'
+- id: P-31
+  resource: https://www.youtube.com/watch?v=wd5R4fJfngY
+  last_modified: '2025-11-25T00:00:00Z'
 ---
 
 Das Banditenlager der [Silberkerne](/factions/silberkerne.md) ist ein befestigter Stützpunkt in einem engen Tal. Die aus einer Ruine wiederaufgebaute Anlage, zeitweise von Banditen genutzt, war für die Heldengruppe zunächst als möglicher Zufluchtsort für eine Flüchtlingsgruppe von Bedeutung; später wurde sie zum Ziel, um den dortigen Bewohnern vor den Untoten zu helfen.

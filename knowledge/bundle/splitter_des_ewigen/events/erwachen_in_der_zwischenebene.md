@@ -6,8 +6,15 @@ description: Die Gruppe wacht ohne Erinnerung gleichzeitig in einer fremden, far
 tags:
 - events
 timestamp: '2025-07-09T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:11Z'
 id: EVENT_ERWACHEN_IN_DER_ZWISCHENEBENE
 subtype: Sonstiges
+sources:
+- id: P-14
+  resource: https://www.youtube.com/watch?v=XOnHa6CmDbo
+  last_modified: '2025-07-09T00:00:00Z'
 ---
 
 Die Gruppe wacht ohne Erinnerung gleichzeitig in einer fremden, farblosen [Zwischenebene](/domains/zwischenebenen.md) auf. [Lindo Laut](/characters/lindo_laut.md) vermutet, dass sein Amulett sie dorthin gezogen hat. Dieses Ereignis markiert den Beginn des Abenteuers.

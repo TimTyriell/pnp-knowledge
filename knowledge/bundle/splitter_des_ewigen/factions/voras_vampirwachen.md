@@ -6,8 +6,15 @@ description: Voras' Vampirwachen sind eine Gruppe von Vampiren im Dienst von Vor
 tags:
 - factions
 timestamp: '2026-03-10T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_VORAS_VAMPIRWACHEN
 subtype: Bande
+sources:
+- id: P-40
+  resource: https://www.youtube.com/watch?v=Kr9_AC2XtOw
+  last_modified: '2026-03-10T00:00:00Z'
 ---
 
 **Voras' Vampirwachen** sind eine Gruppe von Vampiren im Dienst von [Voras](/npcs/voras.md). Sie bewachen das Anwesen und das Grab, treten Fremden gegenüber misstrauisch auf und sind mit [Silberfläschchen](/items/silberflaeschchen.md) ausgerüstet. Sie befolgen die Befehle von Voras.

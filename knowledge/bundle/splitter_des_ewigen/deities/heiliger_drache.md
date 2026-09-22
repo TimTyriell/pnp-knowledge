@@ -6,8 +6,15 @@ description: 'Der Heilige Drache ist eine Gottheit, von der bislang nur ein einz
 tags:
 - deities
 timestamp: '2025-10-28T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DEITY_HEILIGER_DRACHE
 subtype: Alter Gott
+sources:
+- id: P-28
+  resource: https://www.youtube.com/watch?v=V6NzNakqxXM
+  last_modified: '2025-10-28T00:00:00Z'
 ---
 
 Der Heilige Drache ist eine Gottheit, von der bislang nur ein einziges Zeugnis bekannt ist: In einem sauberen Raum steht eine Statue mit der Inschrift „Das Blut des Heiligen Drachen“. Über Wesen, Herkunft, Gestalt oder Rolle des Heiligen Drachen selbst ist nichts weiter bekannt; auch das genaue Ziel der Inschrift bleibt unklar.

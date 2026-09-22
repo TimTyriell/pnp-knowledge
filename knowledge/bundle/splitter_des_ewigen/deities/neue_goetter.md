@@ -6,11 +6,39 @@ description: Die Neuen Götter sind die aktuellen Herrscher des Pantheons und we
 tags:
 - deities
 timestamp: '2026-08-18T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DEITY_NEUE_GOETTER
 subtype: Neuer Gott
 aliases:
 - Die neuen Götter
 - Die Neuen Götter
+relationships:
+- target: deities/joran_der_muenzenzaehler
+- target: deities/nerash
+  note: '**Nerash:** Nerash gehört offenbar zu den Neuen Göttern, hat aber einen schlechten
+    Ruf bei den übrigen Neuen Göttern. Er behauptet, die Heldengruppe vor ihnen geschützt
+    zu haben – eine unbestätigte A…'
+- target: factions/koenigreich_zebros
+  note: '**Zebros:** Der Aufstieg der Neuen Götter führte das Ende des alten Königreichs
+    Zebros herbei.'
+- target: locations/ehrenfels
+  note: '**Ehrenfels:** In Ehrenfels werden die Neuen Götter verehrt; die Gruppe erlebt
+    dort einen Gottesdienst und einen wirkungslosen Segen bei Liam.'
+- target: npcs/nox
+  note: '**Nox:** Nox vermittelt der Gruppe Grundwissen über die Neuen Götter: den
+    Sieg über die Alten Götter und ihren noch jungen, wachsenden Machtstatus.'
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=bamCIB_CkR8
+  last_modified: '2025-05-27T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=piUv11DCwDw
+  last_modified: '2026-08-12T00:00:00Z'
+- id: '3'
+  resource: https://www.youtube.com/watch?v=10swvSz6k7U
+  last_modified: '2026-08-18T00:00:00Z'
 ---
 
 ## Überblick

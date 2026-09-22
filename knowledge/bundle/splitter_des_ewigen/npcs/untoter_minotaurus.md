@@ -6,7 +6,14 @@ description: Ein untoter Minotaurus bewacht Steinbachtal und greift die Gruppe m
 tags:
 - npcs
 timestamp: '2025-09-09T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:19Z'
 id: NPC_UNTOTER_MINOTAURUS
+sources:
+- id: P-21
+  resource: https://www.youtube.com/watch?v=Zl0qfuI6Goc
+  last_modified: '2025-09-09T00:00:00Z'
 ---
 
 Ein untoter Minotaurus bewacht [Steinbachtal](/locations/steinbachtal.md) und greift die Gruppe mit riesigen Speeren an. Er ist zäh, klettert auf Gebäude und verursacht schwere Verletzungen. [Dodo](/characters/dodo.md) und [Esterossa](/characters/esterossa.md) besiegen ihn schließlich, indem Esterossa Dodo auf das Dach trägt und Dodo ihn in einem Schlag zerschmettert.

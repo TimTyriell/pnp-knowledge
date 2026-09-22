@@ -6,8 +6,15 @@ description: Der Kult des Varzul ist eine Gruppierung von Varzul-Verehrern, die 
 tags:
 - factions
 timestamp: '2025-08-20T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_KULT_DES_VARZUL
 subtype: Kult
+sources:
+- id: P-18
+  resource: https://www.youtube.com/watch?v=-XbO3FLSL_I
+  last_modified: '2025-08-20T00:00:00Z'
 ---
 
 Der Kult des [Varzul](/deities/vharzul.md) ist eine Gruppierung von Varzul-Verehrern, die sich ausdrücklich von [Thar'Vok](/deities/tarvok_der_erdrichter.md) abgrenzt. Bekannt ist der Kult bislang nur aus einer Begegnung nahe der [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md). Dort traten die Kultisten als geschlossene, feindselige Gruppe auf: Sie erwarteten von Fremden ein Codewort oder eine Begrüßung und griffen ohne diese zur Magie. Mindestens eines ihrer Mitglieder beherrscht einen Versteinerungszauber.

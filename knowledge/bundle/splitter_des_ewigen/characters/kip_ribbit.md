@@ -6,7 +6,16 @@ description: Kip, von seinen Gefährten Ribbit genannt, ist ein kleiner Froschju
 tags:
 - characters
 timestamp: '2026-05-06T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:09Z'
 id: CHAR_KIP_RIBBIT
+relationships:
+- target: characters/dante
+sources:
+- id: P-48
+  resource: https://www.youtube.com/watch?v=MB4quhDWsQE
+  last_modified: '2026-05-06T00:00:00Z'
 ---
 
 Kip, von seinen Gefährten [Ribbit](/characters/cookie.md) genannt, ist ein kleiner Froschjunge von etwa 13 Jahren und gehört zur Gruppe mit [Dante](/characters/dante.md) und [Miko](/characters/miko.md), deren Anführer er gilt. Sein rechter Arm wurde zerfleddert und durch einen Ork-Arm ersetzt; inzwischen ist Kip untot, sein Körper leicht verfault und nur von ein paar Fäden zusammengehalten.

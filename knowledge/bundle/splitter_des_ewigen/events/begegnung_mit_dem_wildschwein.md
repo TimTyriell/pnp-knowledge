@@ -6,8 +6,15 @@ description: Ein panisches Wildschwein rennt auf die Gruppe zu, prallt gegen ein
 tags:
 - events
 timestamp: '2025-04-01T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: EVENT_BEGEGNUNG_MIT_DEM_WILDSCHWEIN
 subtype: Entdeckung
+sources:
+- id: P-02
+  resource: https://www.youtube.com/watch?v=LZIuUzc3F18
+  last_modified: '2025-04-01T00:00:00Z'
 ---
 
 Ein panisches Wildschwein rennt auf die Gruppe zu, prallt gegen einen Baum und ist bewusstlos. [Celin](/characters/cookie.md) beruhigt es, aber es schließt sich nicht an und verschwindet.

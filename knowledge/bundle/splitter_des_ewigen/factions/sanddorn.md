@@ -6,8 +6,15 @@ description: Sanddorn ist eine Handelsgilde, deren Oberhaupt Joar ist. Die Gilde
 tags:
 - factions
 timestamp: '2026-08-25T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_SANDDORN
 subtype: Gilde
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=1Cjj3OVqiYA
+  last_modified: '2026-08-25T00:00:00Z'
 ---
 
 # Sanddorn

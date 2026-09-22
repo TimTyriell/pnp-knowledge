@@ -6,7 +6,19 @@ description: Tolga ist ein alter, grantiger Halbling. Er stammt aus einem Dorf, 
 tags:
 - npcs
 timestamp: '2026-08-20T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:19Z'
 id: NPC_TOLGA
+relationships:
+- target: characters/bruma_stormrak
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=H-eHSlfxUAg
+  last_modified: '2026-07-10T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=2EkWrNUfQi0
+  last_modified: '2026-08-20T00:00:00Z'
 ---
 
 Tolga ist ein alter, grantiger Halbling. Er stammt aus einem Dorf, das er auf Anstoß seines Freundes [Bruma](/characters/bruma_stormrak.md) verließ; mit seiner Gruppe lebt er inzwischen in [Ringtal](/locations/ringtal.md), wo die Gruppe ein Haus bekommen hat. Während er Bruma loyal und dankbar verbunden ist, begegnet er Fremden mit Misstrauen und unverblümter Schärfe.

@@ -6,8 +6,15 @@ description: Der Soldat erstickt fast an seinem eigenen Erbrochenen, das grüne 
 tags:
 - events
 timestamp: '2026-01-06T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_TOD_UND_WIEDERBELEBUNG_DES_SOLDATEN
 subtype: Tod
+sources:
+- id: P-32
+  resource: https://www.youtube.com/watch?v=VGw81seFvbo
+  last_modified: '2026-01-06T00:00:00Z'
 ---
 
 Der Soldat erstickt fast an seinem eigenen Erbrochenen, das grüne phosphoreszierende Fetzen enthält. Lunara führt eine Herzdruckmassage durch und setzt Hope ein, um ihn erfolgreich wiederzubeleben. Nach der Wiederbelebung zeigt er eine veränderte Persönlichkeit und Gedächtnislücken.

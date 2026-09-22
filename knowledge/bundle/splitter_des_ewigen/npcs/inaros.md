@@ -6,8 +6,60 @@ description: Inaros ist ein männlicher Strixwolf, eine greifenartige, flugfähi
 tags:
 - npcs
 timestamp: '2026-08-12T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:17Z'
 id: NPC_INAROS
-status: disputed
+review_status: disputed
+relationships:
+- target: characters/dodo
+  note: '**Dodo:** Dodo bezeichnet Inaros als „meinen Strixwolf“ und als engen Gefährten.
+    Er rettete ihn vor Willauch, brachte ihn in Ehrenfels unter und plante, sich dauerhaft
+    um ihn zu kümmern. Nach Inaros’…'
+- target: characters/lindo_laut
+  note: '**Lindo Laut:** Er hatte Inaros nie persönlich kennengelernt („Ich habe dementsprechend
+    ja Inaros auch nie kennenlernen können“). Auf seine Initiative hin besuchte er
+    mit Dodo das alte Nest auf dem v…'
+- target: characters/lunara_velora
+  note: '**Lunara Velora:** Gemeinsam mit Dodo wollte sie sich über die Aufzucht und
+    das Training von Strixwölfen informieren.'
+- target: characters/rotunas
+  note: '**Rotunas:** Sein Opfer während der Konfrontation mit Nerash verschaffte
+    Inaros die nötige Zeit zur Flucht.'
+- target: deities/nerash
+  note: '**Nerash:** Sie richtete ihr Schwert auf Inaros, nachdem dieser die Gruppe
+    davontrug; die Bedrohung durch sie war der Auslöser für Inaros’ Rettungseinsatz.'
+- target: locations/ehrenfels
+  note: '**Ehrenfels:** Inaros war dort versteckt und stadtbekannt, weil er gelegentlich
+    Nahrungsmittel stibitzte. Nach der Krise um Nerash blieb er offenbar zunächst
+    in der Stadt zurück, bevor er zusammen mi…'
+- target: locations/willauch
+  note: '**Willauch:** Von dort stammt die Bedrohung für die Strixwölfe. Inaros wurde
+    laut Dodo „vor Willauch gerettet“, weil Willauch Jagd auf Strixwölfe machte.'
+- target: npcs/harloen
+  note: '**Harloen:** Dodo hatte Inaros Harloen anvertraut („Euch habe ich das doch
+    anvertraut“). Harloen konnte später keine Auskunft über seinen Verbleib geben,
+    betonte aber, dass keine Leiche gefunden wurd…'
+- target: npcs/nox
+  note: '**Nox:** Während der Rettung vor Nerash lag Inaros’ Fokus auf Nox; er schnappte
+    sich Nox und flog mit ihm davon. Später floh Nox gemeinsam mit Inaros. Eine Quelle
+    bezeichnet Inaros ausdrücklich als „…'
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=Yj5BWJfg3Ag
+  last_modified: '2026-03-24T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=vcGkejr8_nI
+  last_modified: '2026-04-09T00:00:00Z'
+- id: '3'
+  resource: https://www.youtube.com/watch?v=umGyKLkefJI
+  last_modified: '2026-07-29T00:00:00Z'
+- id: '4'
+  resource: https://www.youtube.com/watch?v=qRj2t3wQHfs
+  last_modified: '2026-08-04T00:00:00Z'
+- id: '5'
+  resource: https://www.youtube.com/watch?v=piUv11DCwDw
+  last_modified: '2026-08-12T00:00:00Z'
 ---
 
 ## Überblick

@@ -6,7 +6,17 @@ description: Nina ist eine ältere Halbling-Bardin und Teil der Heldengruppe. In
 tags:
 - characters
 timestamp: '2026-03-23T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: CHAR_NINA
+relationships:
+- target: characters/otis
+- target: npcs/hendrik_heinrich
+sources:
+- id: P-42
+  resource: https://www.youtube.com/watch?v=niVxKtdQBn0
+  last_modified: '2026-03-23T00:00:00Z'
 ---
 
 Nina ist eine ältere Halbling-Bardin und Teil der Heldengruppe. In der getarnten Gruppe übernimmt sie die Rolle der Mutter beziehungsweise Ehefrau. Sie setzt den Eintopf an und verschafft der Gruppe damit einen Rally-Würfel. Ihr Auftreten wird als pragmatisch und bisweilen zynisch beschrieben.

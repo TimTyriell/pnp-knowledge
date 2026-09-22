@@ -6,8 +6,15 @@ description: Ein kleines Püppchen, das Hal für Nyrella gemacht hat und das das
 tags:
 - items
 timestamp: '2026-02-24T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:14Z'
 id: ITEM_PUEPPCHEN_VON_HAL
 subtype: Schmuck
+sources:
+- id: P-38
+  resource: https://www.youtube.com/watch?v=WOFArbwDDIQ
+  last_modified: '2026-02-24T00:00:00Z'
 ---
 
 Ein kleines Püppchen, das Hal für [Nyrella](/characters/nyrella.md) gemacht hat und das das Symbol der [Silberkornbande](/factions/silberkerne.md) eingeritzt trägt. Es dient als Beweis der Freundschaft mit der Bande.

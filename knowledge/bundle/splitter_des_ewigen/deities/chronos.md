@@ -6,8 +6,15 @@ description: Chronos ist eine Gottheit, über die in der Kampagne bislang kaum e
 tags:
 - deities
 timestamp: '2026-02-11T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T22:10:08Z'
 id: DEITY_CHRONOS
 subtype: Alter Gott
+sources:
+- id: P-36
+  resource: https://www.youtube.com/watch?v=3C8SD-cyNPM
+  last_modified: '2026-02-11T00:00:00Z'
 ---
 
 Chronos ist eine Gottheit, über die in der Kampagne bislang kaum etwas bekannt ist. Es wird vermutet, dass seine Seele im [Splitterkalb](/events/splitterkalb.md) gefangen ist, das von [Lindo Laut](/characters/lindo_laut.md) kontrolliert wird.

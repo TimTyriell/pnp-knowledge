@@ -6,8 +6,15 @@ description: Ein okkultistischer Stab, den der Schamane benutzt, um seine dunkle
 tags:
 - items
 timestamp: '2026-08-25T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: ITEM_STAB_DES_GNOLL_SCHAMANEN
 subtype: Artefakt
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=1Cjj3OVqiYA
+  last_modified: '2026-08-25T00:00:00Z'
 ---
 
 Ein okkultistischer [Stab](/items/lindo_lauts_stab.md), den der Schamane benutzt, um seine dunkle Magie zu verstärken und über große Entfernungen zu wirken. Die Gruppe findet ihn nach dem Kampf und nimmt ihn mit; seine magische Präsenz ist erloschen.

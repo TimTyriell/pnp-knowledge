@@ -6,7 +6,16 @@ description: Sys Fizik ist ein zwielichtiger Goblin-Alchemist, der in Willauch K
 tags:
 - npcs
 timestamp: '2026-03-03T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_SYS_FIZIK
+relationships:
+- target: characters/lindo_laut
+sources:
+- id: P-39
+  resource: https://www.youtube.com/watch?v=BRUNuNKTeOg
+  last_modified: '2026-03-03T00:00:00Z'
 ---
 
 Sys Fizik ist ein zwielichtiger Goblin-Alchemist, der in [Willauch](/locations/willauch.md) Kontakte für Schmuggel und Verwandlung anbietet. Er trifft die Gruppe abends und führt sie in ein unterirdisches Gewölbe. Für [Lindo Laut](/characters/lindo_laut.md) stellt er einen Trank her, der ihn für drei Monate in einen kleinen Katari verwandelt; Kostenpunkt: zwei Truhen und zwei Säcke Gold, eine Anzahlung wird sofort fällig. Er bemerkt [Dodos](/characters/dodo.md) fey-artige Abstammung ('Fährenverwandt') und verspricht Diskretion. Bei der Übergabe liefert er zwei Phiolen: eine für die Verwandlung und eine für vorzeitiges Beenden; der Effekt kann bis zu einem Jahr halten.

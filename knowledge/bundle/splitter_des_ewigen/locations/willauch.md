@@ -6,6 +6,9 @@ description: Willauch ist die größte Stadt der bekannten Welt und liegt im Sü
 tags:
 - locations
 timestamp: '2026-09-03T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T22:10:10Z'
 id: LOC_WILLAUCH
 subtype: Siedlung
 aliases:
@@ -15,6 +18,85 @@ aliases:
 - Will auch
 - Willauch
 - Willoch
+verified:
+  by: human:gm
+relationships:
+- target: characters/dante
+- target: factions/fluechtlinge
+  note: '**Flüchtlinge:** Zwerge aus der Wildnis äußerten, dass man sie in Willauch
+    vermutlich nicht aufnehmen würde.'
+- target: factions/silberkerne
+  note: '**Silberkerne:** Willauch macht die Organisation für den Mord an einem Diplomaten
+    verantwortlich und hat eine hohe Belohnung für ihre Ergreifung ausgesetzt, besonders
+    wenn die Anführer lebend abgelie…'
+- target: locations/brandau
+  note: '**Brandau:** Willauch hat den Krieg gegen Brandau gewonnen. Die Stadt war
+    „eifersüchtig auf die technologische Überlegenheit von Brandau“ und nutzte ihre
+    Massen und die Strixwolf-Reiter, um die Brand…'
+- target: locations/breska
+- target: locations/casa_del_cookie
+- target: locations/ringtal
+- target: locations/tiefwasser
+  note: '**Tiefwasser:** Gehört zu Willauch und ist einer der letzten nördlichen Städte
+    der Menschen. Willauch kontrolliert Tiefwasser, Soldaten sind vor Ort und führen
+    Kontrollen durch. Nach einem Vorfall ri…'
+- target: npcs/hans_wirt_zum_gruenen_sichelmond
+- target: npcs/inaros
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=AhIT8dcxw2o
+  last_modified: '2025-09-17T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=DGzfqVigS0g
+  last_modified: '2025-09-23T00:00:00Z'
+- id: '3'
+  resource: https://www.youtube.com/watch?v=cUtz87UCHu4
+  last_modified: '2025-10-14T00:00:00Z'
+- id: '4'
+  resource: https://www.youtube.com/watch?v=sxFhbtwoefA
+  last_modified: '2025-10-21T00:00:00Z'
+- id: '5'
+  resource: https://www.youtube.com/watch?v=8Khb-Y8XbKY
+  last_modified: '2025-11-14T00:00:00Z'
+- id: '6'
+  resource: https://www.youtube.com/watch?v=w__ahowb9p0
+  last_modified: '2025-11-18T00:00:00Z'
+- id: '7'
+  resource: https://www.youtube.com/watch?v=w4LB1s9_3rs
+  last_modified: '2026-01-13T00:00:00Z'
+- id: '8'
+  resource: https://www.youtube.com/watch?v=3C8SD-cyNPM
+  last_modified: '2026-02-11T00:00:00Z'
+- id: '9'
+  resource: https://www.youtube.com/watch?v=BRUNuNKTeOg
+  last_modified: '2026-03-03T00:00:00Z'
+- id: '10'
+  resource: https://www.youtube.com/watch?v=HHXxsASLrbQ
+  last_modified: '2026-03-18T00:00:00Z'
+- id: '11'
+  resource: https://www.youtube.com/watch?v=niVxKtdQBn0
+  last_modified: '2026-03-23T00:00:00Z'
+- id: '12'
+  resource: https://www.youtube.com/watch?v=Yj5BWJfg3Ag
+  last_modified: '2026-03-24T00:00:00Z'
+- id: '13'
+  resource: https://www.youtube.com/watch?v=MB4quhDWsQE
+  last_modified: '2026-05-06T00:00:00Z'
+- id: '14'
+  resource: https://www.youtube.com/watch?v=EGNh8O7pE5Q
+  last_modified: '2026-06-04T00:00:00Z'
+- id: '15'
+  resource: https://www.youtube.com/watch?v=qRj2t3wQHfs
+  last_modified: '2026-08-04T00:00:00Z'
+- id: '16'
+  resource: https://www.youtube.com/watch?v=0HyPHao8s_k
+  last_modified: '2026-08-06T00:00:00Z'
+- id: '17'
+  resource: https://www.youtube.com/watch?v=piUv11DCwDw
+  last_modified: '2026-08-12T00:00:00Z'
+- id: '18'
+  resource: https://www.youtube.com/watch?v=bl-hX87_EC8
+  last_modified: '2026-09-03T00:00:00Z'
 ---
 
 ## Überblick

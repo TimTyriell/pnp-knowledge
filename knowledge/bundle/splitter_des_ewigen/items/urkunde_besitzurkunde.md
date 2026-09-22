@@ -6,8 +6,15 @@ description: Die Urkunde vom Lord von Willauch bestätigt der Gruppe das Eigentu
 tags:
 - items
 timestamp: '2025-11-14T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: ITEM_URKUNDE_BESITZURKUNDE
 subtype: Schriftstück
+sources:
+- id: P-29
+  resource: https://www.youtube.com/watch?v=8Khb-Y8XbKY
+  last_modified: '2025-11-14T00:00:00Z'
 ---
 
 Die Urkunde vom [Lord von Willauch](/npcs/lord_kalidarn_von_willauch.md) bestätigt der Gruppe das Eigentum am Anwesen. [Dodo](/characters/dodo.md) zeigt sie [Horatio](/npcs/horatio.md), um den Anspruch zu belegen. Sie ist Auslöser der Verhandlungen und wird später durch einen neuen Vertrag ergänzt.

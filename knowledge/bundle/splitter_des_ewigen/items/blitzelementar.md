@@ -6,7 +6,14 @@ description: Ein von Bruma beschworener Elementargeist in Gestalt einer Blitzfor
 tags:
 - items
 timestamp: '2026-07-10T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T22:10:09Z'
 id: ITEM_BLITZELEMENTAR
+sources:
+- id: S1-01-B
+  resource: https://www.youtube.com/watch?v=H-eHSlfxUAg
+  last_modified: '2026-07-10T00:00:00Z'
 ---
 
 Ein von Bruma beschworener Elementargeist in Gestalt einer Blitzform, der als Wache am Lagerausgang postiert wird. Er verschwindet, als die Gruppe das Dorf betritt.

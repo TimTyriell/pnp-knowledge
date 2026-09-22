@@ -6,10 +6,23 @@ description: Die Gnoll-Armee ist ein großes Heer aus Gnollen, Goblins und Bugbe
 tags:
 - factions
 timestamp: '2026-09-03T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_GNOLL_ARMEE
 subtype: Armee
 aliases:
 - Gnolle-Armee
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=0HyPHao8s_k
+  last_modified: '2026-08-06T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=2EkWrNUfQi0
+  last_modified: '2026-08-20T00:00:00Z'
+- id: '3'
+  resource: https://www.youtube.com/watch?v=bl-hX87_EC8
+  last_modified: '2026-09-03T00:00:00Z'
 ---
 
 Die **Gnoll-Armee** ist ein großes Heer aus Gnollen, [Goblins](/npcs/pilz_goblins.md) und Bugbears, das sich vor der Stadt Ringtal sammelt und diese belagert. Erste Schätzungen gehen von 100 bis 200 Kämpfern aus, später wird mit etwa 200 Gnollen oder mehr gerechnet. Die Armee hat bereits ein verlassenes Halblingdorf niedergebrannt und gilt der Verteidigung von Ringtal als klar überlegen. Ihre Anführerin, die „Dame aus dem grünen [Sumpf](/locations/sumpf_vor_dem_goblin_dorf.md)“, wurde bislang nicht gesehen.

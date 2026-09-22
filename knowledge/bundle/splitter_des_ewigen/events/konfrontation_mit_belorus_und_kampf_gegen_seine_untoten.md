@@ -6,8 +6,15 @@ description: In der Burg stellt Belorus die Eindringlinge zur Rede, Dodo versuch
 tags:
 - events
 timestamp: '2025-05-14T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_KONFRONTATION_MIT_BELORUS_UND_KAMPF_GEGEN_SEINE_UNTOTEN
 subtype: Kampf
+sources:
+- id: P-08
+  resource: https://www.youtube.com/watch?v=5eAEDN5ra-4
+  last_modified: '2025-05-14T00:00:00Z'
 ---
 
 In der Burg stellt [Belorus](/npcs/belorus.md) die Eindringlinge zur Rede, [Dodo](/characters/dodo.md) versucht ihn einzuschüchtern, scheitert. Belorus beschwört nacheinander untote Diener. Dodo kämpft, während [Cookie](/characters/cookie.md) den [Schutzzauber-Kristall](/items/schutzzauber_kristall.md) aktiviert, woraufhin die Untoten fallen und Belorus wütend verschwindet.

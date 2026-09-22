@@ -18,7 +18,8 @@ from pnp_okf.models import (
     SessionExtraction,
     SessionTranscript,
 )
-from pnp_okf.okf import split_document
+from pnp_okf.okf import split_document, write_concept
+from pnp_okf.validate import validate_bundle
 
 # knowledge-catalog is a sibling repo (vendored OKF spec + reference tooling),
 # not a dependency of this one -- see CLAUDE.md's repo table. It may not be
@@ -291,3 +292,133 @@ def test_session_concept_carries_generated_and_sources(tmp_path: Path):
     # timestamp/resource are unchanged v0.1 keys, kept alongside generated/sources.
     assert frontmatter["timestamp"] == "2026-02-01T00:00:00Z"
     assert frontmatter["resource"] == "https://youtu.be/x"
+
+
+# --- required-field / type-dir / subtype-vocabulary checks (validate.py) ----
+#
+# All three are advisory (ValidationReport.ok) and deliberately never join
+# integrity_ok -- see its docstring's house rule.
+
+_FULL_NPC_FM = {
+    "type": "NPC", "id": "NPC_HANS", "title": "Hans", "description": "d",
+    "tags": ["npcs"], "timestamp": "2026-01-01T00:00:00Z",
+}
+
+
+def test_missing_required_fields_are_flagged(tmp_path: Path):
+    write_concept(tmp_path, "npcs/hans", {"type": "NPC", "title": "Hans"}, "Body.")
+    report = validate_bundle(tmp_path)
+    assert report.missing_required_fields["npcs/hans"] == [
+        "id", "description", "tags", "timestamp"
+    ]
+    assert not report.ok
+    assert report.integrity_ok  # advisory only, never gates the build
+
+
+def test_session_is_exempt_from_missing_id_only(tmp_path: Path):
+    write_concept(
+        tmp_path, "sessions/2026-01-01",
+        {"type": "Session", "title": "S1", "description": "d", "tags": ["session"],
+         "timestamp": "2026-01-01T00:00:00Z"},
+        "Body.",
+    )
+    report = validate_bundle(tmp_path)
+    assert "sessions/2026-01-01" not in report.missing_required_fields
+
+
+def test_empty_string_field_counts_as_missing_not_present(tmp_path: Path):
+    # A hand-edited file can carry a literal "" that a normal emit never
+    # produces -- okf._order_frontmatter drops None/"" before writing, so
+    # "key in fm" alone would call this present.
+    path = tmp_path / "npcs" / "hans.md"
+    path.parent.mkdir(parents=True)
+    path.write_text(
+        '---\ntype: NPC\nid: ""\ntitle: Hans\ndescription: d\ntags: [npcs]\n'
+        "timestamp: 2026-01-01T00:00:00Z\n---\n\nBody.\n",
+        encoding="utf-8",
+    )
+    report = validate_bundle(tmp_path)
+    assert report.missing_required_fields["npcs/hans"] == ["id"]
+
+
+def test_type_dir_mismatch_is_flagged(tmp_path: Path):
+    write_concept(
+        tmp_path, "npcs/hans", {**_FULL_NPC_FM, "type": "Faction"}, "Body."
+    )
+    report = validate_bundle(tmp_path)
+    assert report.type_dir_mismatches == [
+        ("npcs/hans", "type='Faction' dir='npcs' tags[0]='npcs'")
+    ]
+
+
+def test_tags_mismatch_is_flagged_even_when_type_matches(tmp_path: Path):
+    write_concept(
+        tmp_path, "npcs/hans", {**_FULL_NPC_FM, "tags": ["factions"]}, "Body."
+    )
+    report = validate_bundle(tmp_path)
+    assert report.type_dir_mismatches == [
+        ("npcs/hans", "type='NPC' dir='npcs' tags[0]='factions'")
+    ]
+
+
+def test_consistent_type_dir_tags_is_not_flagged(tmp_path: Path):
+    write_concept(tmp_path, "npcs/hans", _FULL_NPC_FM, "Body.")
+    report = validate_bundle(tmp_path)
+    assert report.type_dir_mismatches == []
+
+
+def test_subtype_on_a_type_with_no_vocabulary_is_flagged(tmp_path: Path):
+    # NPC has no SUBTYPES entry at all -- any subtype is invalid.
+    write_concept(
+        tmp_path, "npcs/hans", {**_FULL_NPC_FM, "subtype": "Armee"}, "Body."
+    )
+    report = validate_bundle(tmp_path)
+    assert report.invalid_subtypes == [("npcs/hans", "Armee")]
+
+
+def test_subtype_outside_its_own_type_vocabulary_is_flagged(tmp_path: Path):
+    write_concept(
+        tmp_path, "locations/foo",
+        {"type": "Location", "id": "LOC_FOO", "title": "Foo", "description": "d",
+         "tags": ["locations"], "timestamp": "2026-01-01T00:00:00Z",
+         "subtype": "Nichtvorhanden"},
+        "Body.",
+    )
+    report = validate_bundle(tmp_path)
+    assert report.invalid_subtypes == [("locations/foo", "Nichtvorhanden")]
+
+
+def test_subtype_in_its_own_type_vocabulary_is_not_flagged(tmp_path: Path):
+    write_concept(
+        tmp_path, "locations/foo",
+        {"type": "Location", "id": "LOC_FOO", "title": "Foo", "description": "d",
+         "tags": ["locations"], "timestamp": "2026-01-01T00:00:00Z",
+         "subtype": "Siedlung"},
+        "Body.",
+    )
+    report = validate_bundle(tmp_path)
+    assert report.invalid_subtypes == []
+
+
+def test_lead_text_survives_a_heading_glued_to_its_paragraph():
+    """The synthesis prompt emits "## Überblick" with the prose on the next
+    line, no blank between. Splitting on "\n\n" then made heading+paragraph one
+    block, _NOT_PROSE matched the heading, and the paragraph was dropped with
+    it -- so description fell back to a raw mention note, the exact failure
+    _lead_text was written to prevent.
+    """
+
+    from pnp_okf.emit import _lead_text
+
+    assert _lead_text("## Überblick\nLiam ist der jüngere Bruder.") == (
+        "Liam ist der jüngere Bruder."
+    )
+    assert _lead_text("# Lindo\n## Überblick\nLindo ist ein Feenbarde.") == (
+        "Lindo ist ein Feenbarde."
+    )
+    # Blank-separated bodies keep working, and a heading over a list is still
+    # not prose -- the guard must not be loosened into accepting markup.
+    assert _lead_text("# Dodo\n\n## Überblick\n\nDodo ist ein Halb-Goblin.") == (
+        "Dodo ist ein Halb-Goblin."
+    )
+    assert _lead_text("## Nur Heading\n\n- eine Liste") == ""

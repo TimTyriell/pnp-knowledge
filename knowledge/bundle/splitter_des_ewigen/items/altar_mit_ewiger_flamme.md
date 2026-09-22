@@ -6,8 +6,15 @@ description: Im Untergeschoss steht ein Altar mit einer Flamme, die nicht erlisc
 tags:
 - items
 timestamp: '2025-11-14T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: ITEM_ALTAR_MIT_EWIGER_FLAMME
 subtype: Artefakt
+sources:
+- id: P-29
+  resource: https://www.youtube.com/watch?v=8Khb-Y8XbKY
+  last_modified: '2025-11-14T00:00:00Z'
 ---
 
 Im Untergeschoss steht ein Altar mit einer Flamme, die nicht erlischt. Sie reagiert auf Berührung mit Blitzen und einem Brummen, besonders nachts. Die Gruppe vermutet einen Opfer- oder Nekromantenaltar, kann aber die Funktion nicht entschlüsseln. [Rotunas](/characters/rotunas.md) opfert Blut, ohne dass etwas passiert.

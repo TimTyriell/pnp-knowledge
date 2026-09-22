@@ -6,8 +6,15 @@ description: Der Dolch ist lang, spitz und trägt ein Siegel an der Spitze. Er g
 tags:
 - items
 timestamp: '2025-07-22T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: ITEM_DOLCH_DES_KENKU
 subtype: Waffe
+sources:
+- id: P-15
+  resource: https://www.youtube.com/watch?v=BRRCUgW4xRo
+  last_modified: '2025-07-22T00:00:00Z'
 ---
 
 Der [Dolch](/items/dolch.md) ist lang, spitz und trägt ein Siegel an der Spitze. Er gehört dem toten [Kenku](/npcs/kenku_bote.md) und wird vom [Gildemeister](/npcs/nox.md) zur Untersuchung einbehalten. Der Gildemeister vermutet, dass der Dolch aus einem speziellen Material besteht. Er ist ein wichtiger Hinweis auf den Auftraggeber.

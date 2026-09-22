@@ -6,8 +6,15 @@ description: Der Erdrichter ist der alte Gott Thar'vok. Im Pantheon der bekannte
 tags:
 - deities
 timestamp: '2026-08-04T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DEITY_ERDRICHTER
 subtype: Alter Gott
+sources:
+- id: S1-02-A
+  resource: https://www.youtube.com/watch?v=qRj2t3wQHfs
+  last_modified: '2026-08-04T00:00:00Z'
 ---
 
 Der **Erdrichter** ist der alte Gott Thar'vok. Im Pantheon der bekannten Götter wird er den Domänen Berge, Erdbeben und Beständigkeit zugeordnet; er steht für das Feste und Unverrückbare – für Felsen, die der Zeit trotzen, für gehaltene Eide und für Bauten aus Stein. Ein persönliches Auftreten wurde bislang nicht berichtet; bekannt ist nur eine beiläufige Erwähnung seines Kults im Kampagnenverlauf.

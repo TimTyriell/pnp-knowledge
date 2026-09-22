@@ -6,8 +6,15 @@ description: Das Nomadenvolk ist ein Volk, dem Valeria angehört. Weitere Angeh�
 tags:
 - factions
 timestamp: '2025-04-23T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_NOMADENVOLK
 subtype: Volk
+sources:
+- id: P-05
+  resource: https://www.youtube.com/watch?v=z3C-bewKqUs
+  last_modified: '2025-04-23T00:00:00Z'
 ---
 
 Das Nomadenvolk ist ein Volk, dem [Valeria](/characters/valeria.md) angehört. Weitere Angehörige oder genauere Angaben zu Herkunft, Lebensweise oder Organisation des Volkes sind aus den bisherigen Sitzungen nicht belegt; bekannt ist neben Valerias Zugehörigkeit vor allem die nach dem Volk benannte Nomadentasche.

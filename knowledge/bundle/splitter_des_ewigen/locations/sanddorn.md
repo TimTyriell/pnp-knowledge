@@ -6,8 +6,15 @@ description: Sanddorn ist die Hauptinsel der Sanddorn-Inseln und Sitz von Joar V
 tags:
 - locations
 timestamp: '2025-04-30T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:16Z'
 id: LOC_SANDDORN
 subtype: Siedlung
+sources:
+- id: P-06
+  resource: https://www.youtube.com/watch?v=fsCOiSkKKTE
+  last_modified: '2025-04-30T00:00:00Z'
 ---
 
 Sanddorn ist die Hauptinsel der [Sanddorn-Inseln](/locations/sanddorninseln.md) und Sitz von [Joar Vanur](/npcs/joar_vanur.md). Die Stadt wirkt wohlhabend, mit großen Gebäuden aus Holz und Stein. Es gibt mindestens zwei Tavernen, darunter die [Taverne Kyla](/locations/taverne_kyla_von_sanddorn.md). Die Bewohner sind teils Diebe und Schurken, aber auch einfache Fischer. Die Gruppe wird hier von [Hauptmann Gorman](/npcs/hauptmann_gorman.md) empfangen und verbringt Zeit in der ersten Taverne.
