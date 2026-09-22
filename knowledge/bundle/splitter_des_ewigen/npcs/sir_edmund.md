@@ -6,10 +6,23 @@ description: Sir Edmund ist ein sehr alter Wächter, der einen verfallenen Turm 
 tags:
 - npcs
 timestamp: '2026-08-25T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_SIR_EDMUND
 aliases:
 - Sir Edmund
 - Edmund
+relationships:
+- target: characters/gunther
+- target: factions/koenigreich_zebros
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=10swvSz6k7U
+  last_modified: '2026-08-18T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=1Cjj3OVqiYA
+  last_modified: '2026-08-25T00:00:00Z'
 ---
 
 Sir Edmund ist ein sehr alter [Wächter](/npcs/waechter.md), der einen verfallenen Turm in den Bergen bewohnt, der als Wachposten dient. Er gehört der Zeit des gefallenen Königreichs an: Edmund diente einst in der königlichen Garde von [Zebros](/factions/koenigreich_zebros.md) und ist der Vater von [Belorus](/npcs/belorus.md). Die Gruppe kehrte bei ihm ein; er blieb am Turm zurück.

@@ -6,7 +6,14 @@ description: Merlin ist Finns Adler (zunächst als Falke bezeichnet), der als Be
 tags:
 - npcs
 timestamp: '2026-05-27T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_MERLIN
+sources:
+- id: P-51
+  resource: https://www.youtube.com/watch?v=IYYmgpqsp7E
+  last_modified: '2026-05-27T00:00:00Z'
 ---
 
 Merlin ist [Finns](/characters/finn.md) Adler (zunächst als Falke bezeichnet), der als Begleiter dient. Er erkundet das Gelände aus der Luft, wird von vorbeifliegenden Strixwölfen erschreckt und erhält einen Stresspunkt. Im Turmkampf stürzt er sich auf [Kalos](/npcs/organisation_der_kalos.md)' Illusion und zerstört sie mit seinen Krallen, wodurch der Kampf entschieden wird.

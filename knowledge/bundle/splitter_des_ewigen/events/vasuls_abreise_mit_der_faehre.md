@@ -6,8 +6,15 @@ description: Nachdem Vasul seine Form erhalten hat, erscheint die Fähre. Er ste
 tags:
 - events
 timestamp: '2025-09-06T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_VASULS_ABREISE_MIT_DER_FAEHRE
 subtype: Reise
+sources:
+- id: P-20
+  resource: https://www.youtube.com/watch?v=vo1xnyLQDJk
+  last_modified: '2025-09-06T00:00:00Z'
 ---
 
 Nachdem [Vasul](/deities/vharzul.md) seine Form erhalten hat, erscheint die Fähre. Er steigt ein, bedankt sich, verspricht eine Belohnung und verschwindet im Nebel.

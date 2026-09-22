@@ -6,8 +6,17 @@ description: Die Farm der Familie Heinrich ist der Schauplatz der Haupthandlung.
 tags:
 - locations
 timestamp: '2026-03-23T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:16Z'
 id: LOC_HEINRICH_FARM
 subtype: Siedlung
+relationships:
+- target: factions/silberkerne
+sources:
+- id: P-42
+  resource: https://www.youtube.com/watch?v=niVxKtdQBn0
+  last_modified: '2026-03-23T00:00:00Z'
 ---
 
 Die Farm der Familie Heinrich ist der Schauplatz der Haupthandlung. Sie liegt wenige Stunden vom Treffpunkt entfernt, besteht aus Feldern, Scheune und [Herrenhaus](/locations/herrenhaus.md). Die Gruppe erkennt schnell, dass hier etwas nicht stimmt: zu viele Strohbetten, bewaffnete Wachen. Später stellt sich heraus, dass die [Silberkerne](/factions/silberkerne.md) den Hof übernommen haben und die Familie als Geiseln halten. Durch die Kämpfe wird die Scheune in Brand gesetzt und stürzt teilweise ein.

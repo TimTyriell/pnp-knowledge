@@ -6,7 +6,54 @@ description: Bruma Stormrak ist ein Drakoner (Drachenblütiger) mit blauen Schup
 tags:
 - characters
 timestamp: '2026-09-03T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:19:06Z'
 id: CHAR_BRUMA_STORMRAK
+relationships:
+- target: characters/kaya
+  note: '**Kaya:** Bruma schenkt ihr die Spulen-Halskette. Als sie ihm in der Taverne
+    ein Lied widmet, ist er sichtlich verlegen, wippt aber mit dem Fuß mit.'
+- target: characters/sange
+- target: factions/fluechtlinge
+  note: '**Flüchtlinge / Halblinge:** Bruma setzt sich für die gemischte Lagergemeinschaft
+    ein, droht den Halblingen bei Weigerung mit Blitzen, gibt später einem Jungen
+    eine Holzfigur zurück und erhält dafür…'
+- target: locations/sanddorninseln
+- target: npcs/buergermeister_spitzzahn
+  note: '**Bürgermeister Spitzzahn:** Er verhandelt mit ihm über die Aufnahme der
+    Flüchtlinge, den Kauf eines Grundstücks und wirtschaftliche Perspektiven.'
+- target: npcs/familie_schmid
+  note: '**Familie:** Bruma vermisst seine Familie und weiß nicht, ob sie noch lebt.'
+- target: npcs/hauptmann_aaron
+  note: '**Hauptmann Aaron:** Er informiert ihn über den Tunnel und versucht später,
+    ihn für die Zollzahlung mit einem Sack Gold zu entschädigen; Aaron lehnt ab.'
+- target: npcs/talron
+  note: '**Talron:** Bruma teilt mit ihm die Information über den Geheimtunnel der
+    Gnolle.'
+- target: npcs/tolga
+  note: '**Tolga:** Ein alter Freund, den Bruma bei den Halblingen trifft. Bruma schlägt
+    vor, die alte Gilde wiederzubeleben; Tolga zeigt sich interessiert.'
+- target: npcs/xenia_rotkam
+  note: '**Xenia:** In der Taverne gerät er mit ihr aneinander; seine Offenbarung
+    über seine verlorene Heimat und seine Einsamkeit bewegt sie zur Evakuierung. Später
+    setzt er sich gegenüber Spitzzahn für ihre…'
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=H-eHSlfxUAg
+  last_modified: '2026-07-10T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=Gb-TEbCFF0M
+  last_modified: '2026-07-23T00:00:00Z'
+- id: '3'
+  resource: https://www.youtube.com/watch?v=0HyPHao8s_k
+  last_modified: '2026-08-06T00:00:00Z'
+- id: '4'
+  resource: https://www.youtube.com/watch?v=2EkWrNUfQi0
+  last_modified: '2026-08-20T00:00:00Z'
+- id: '5'
+  resource: https://www.youtube.com/watch?v=bl-hX87_EC8
+  last_modified: '2026-09-03T00:00:00Z'
 ---
 
 ## Überblick
@@ -29,7 +76,7 @@ In der Schlacht um [Ringtal](/locations/ringtal.md) tritt Bruma als entschlossen
 
 **Ausrüstung:** Sein auffälligstes Stück ist ein überdimensionierter Metallstab von etwa 230 Zentimetern Länge, der aus Spulen aufgebaut ist und eher wie ein Wanderstab als eine Waffe wirkt. Eine kleine, ähnliche Spulen-Halskette trägt er anfangs selbst und schenkt sie später [Kaya](/characters/kaya.md).
 
-**Fähigkeiten:** Bruma beherrscht mächtige Blitzmagie. Er kann Blitze aus seiner Handfläche entladen, mehrere Ziele gleichzeitig treffen und einen [Blitzelementar](/items/blitzelementar.md) als Wache beschwören. Außerdem kann er eine Blitz-Kopie erschaffen, die als Träger oder Sprengsatz dient, und Illusionen einsetzen. Sein stärkster Einsatz ist ein Blitzsturm, für den er seine gesamte Kraft opfert; danach ist er erschöpft, kann sich aber langsam wieder aufladen.
+**Fähigkeiten:** Bruma beherrscht mächtige Blitzmagie. Er kann Blitze aus seiner Handfläche entladen, mehrere Ziele gleichzeitig treffen und einen [Blitzelementar](/npcs/blitzelementar.md) als Wache beschwören. Außerdem kann er eine Blitz-Kopie erschaffen, die als Träger oder Sprengsatz dient, und Illusionen einsetzen. Sein stärkster Einsatz ist ein Blitzsturm, für den er seine gesamte Kraft opfert; danach ist er erschöpft, kann sich aber langsam wieder aufladen.
 
 **Wesen:** Er zeigt sich entschlossen und taktisch, kann einschüchtern, aber auch Mitgefühl empfinden. In der Auseinandersetzung mit Xenia offenbart er eine verletzliche Seite: Er sagt, er sei allein und wisse nicht, wie es seiner Familie geht. In diesem Moment beruhigt er sich selbst mit einem drakonischen Wort und stellt sich dann mit Stolz vor: „Mein Name ist Bruma Stormrak. Und mit Stolz trage ich diesen Namen.“
 

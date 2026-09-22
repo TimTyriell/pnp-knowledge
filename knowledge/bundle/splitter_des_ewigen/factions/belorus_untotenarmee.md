@@ -6,6 +6,9 @@ description: Belorus' Untotenarmee ist eine Streitmacht aus Skeletten und weiter
 tags:
 - factions
 timestamp: '2025-11-25T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_BELORUS_UNTOTENARMEE
 subtype: Armee
 aliases:
@@ -19,6 +22,19 @@ aliases:
 - Die Untoten
 - Untote Horde von Zebras
 - Untote Armee
+relationships:
+- target: events/verhandlung_mit_harl
+- target: locations/burg_des_belorus
+sources:
+- id: P-23
+  resource: https://www.youtube.com/watch?v=DGzfqVigS0g
+  last_modified: '2025-09-23T00:00:00Z'
+- id: P-24
+  resource: https://www.youtube.com/watch?v=bUT7Mc2hjUY
+  last_modified: '2025-09-30T00:00:00Z'
+- id: P-31
+  resource: https://www.youtube.com/watch?v=wd5R4fJfngY
+  last_modified: '2025-11-25T00:00:00Z'
 ---
 
 Belorus' Untotenarmee ist eine Streitmacht aus Skeletten und weiteren untoten Kreaturen im Dienst von [Belorus dem Stillen](/npcs/belorus.md), einem schwarzen Paladin. Die Armee zieht aus dem Gebiet des gefallenen Königreichs [Zebros](/factions/koenigreich_zebros.md) ins Tal und sucht dort zwei Personen sowie einen Gegenstand. Ihre Angriffe richten sich gegen Karawanen, Pässe und Reisegruppen.

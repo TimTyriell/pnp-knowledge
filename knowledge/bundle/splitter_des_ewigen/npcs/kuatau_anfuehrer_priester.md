@@ -6,10 +6,24 @@ description: Der Anführer und Priester der Kuatau ist ein großer Fischmensch m
 tags:
 - npcs
 timestamp: '2025-07-29T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_KUATAU_ANFUEHRER_PRIESTER
 subtype: Volk
 aliases:
 - Kuatau
+relationships:
+- target: characters/cookie
+- target: characters/nyrella
+- target: npcs/lenra
+sources:
+- id: P-16a
+  resource: https://www.youtube.com/watch?v=XXgO5Ht4Q0A
+  last_modified: '2025-07-29T00:00:00Z'
+- id: P-16b
+  resource: https://www.youtube.com/watch?v=XXgO5Ht4Q0A
+  last_modified: '2025-07-29T00:00:00Z'
 ---
 
 Der Anführer und Priester der Kuatau ist ein großer Fischmensch mit einem magischen [Stab](/items/lindo_lauts_stab.md). Er spricht die Handelssprache nur gebrochen, tritt aber als Wortführer seines Volkes auf. Gegenüber der Heldengruppe zeigt er sich verständigungsbereit und trägt maßgeblich zu einer friedlichen Lösung des Konflikts bei.

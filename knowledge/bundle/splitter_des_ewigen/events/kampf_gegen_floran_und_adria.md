@@ -6,8 +6,15 @@ description: Am Abgrund in der Haupthöhle kommt es zum Showdown. Nina und Tibbe
 tags:
 - events
 timestamp: '2026-03-23T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_KAMPF_GEGEN_FLORAN_UND_ADRIA
 subtype: Kampf
+sources:
+- id: P-42
+  resource: https://www.youtube.com/watch?v=niVxKtdQBn0
+  last_modified: '2026-03-23T00:00:00Z'
 ---
 
 Am Abgrund in der Haupthöhle kommt es zum Showdown. [Nina](/characters/nina.md) und [Tibbet](/characters/tibbet.md) führen einen kombinierten Angriff aus, der [Floran](/npcs/floran.md) schwer verletzt. [Otis](/characters/otis.md) stößt Floran in die Tiefe, während [Krall](/characters/krall.md) und [Myko](/characters/myko.md) unten kämpfen. [Adria](/npcs/adria.md) wirft eine Fiole und verwundet Nina, wird dann aber zur Aufgabe überredet. Der Kampf endet mit der Gefangennahme beider Anführer.

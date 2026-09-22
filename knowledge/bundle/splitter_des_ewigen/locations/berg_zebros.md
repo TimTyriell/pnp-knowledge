@@ -6,8 +6,18 @@ description: Der Berg Zebros liegt oberhalb von Steinbachtal und ist die Heimat 
 tags:
 - locations
 timestamp: '2025-09-09T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: LOC_BERG_ZEBROS
 subtype: Wildnis
+sources:
+- id: P-13
+  resource: https://www.youtube.com/watch?v=tpkO9uGw6-I
+  last_modified: '2025-06-25T00:00:00Z'
+- id: P-21
+  resource: https://www.youtube.com/watch?v=Zl0qfuI6Goc
+  last_modified: '2025-09-09T00:00:00Z'
 ---
 
 # Berg Zebros

@@ -6,7 +6,14 @@ description: 'Lia ist eine Magierin und Schwester von Arus. Sie begrüßt die Gr
 tags:
 - npcs
 timestamp: '2025-10-07T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_LIA
+sources:
+- id: P-25
+  resource: https://www.youtube.com/watch?v=qVAF_54S8Vw
+  last_modified: '2025-10-07T00:00:00Z'
 ---
 
 Lia ist eine Magierin und Schwester von [Arus](/npcs/arus.md). Sie begrüßt die Gruppe und erklärt den Auftrag: Der Golem muss zerstört werden. Sie ist von [Rotunas](/characters/rotunas.md) als 'Trollschlechter' beeindruckt und zeigt Interesse an [Dodo](/characters/dodo.md). Sie warnt vor den Kristallen und zeigt die Mine. Am Ende bedankt sie sich und verabschiedet sich. Sie scheint die treibende Kraft bei der Kommunikation zu sein.

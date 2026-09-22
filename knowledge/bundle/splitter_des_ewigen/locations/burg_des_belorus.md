@@ -1,13 +1,27 @@
 ---
 type: Location
 title: Burg des Belorus
-description: Eine intakte Burg, in der Belorus der Stille haust. Sie ist mit Statuen,
-  Fallen und untoten Dienern gesichert. Im Inneren gibt es eine Klin…
+description: Die Burg des Belorus ist eine intakte Festungsanlage, die als Aufenthaltsort
+  und Stützpunkt des Belorus, genannt „der Stille“, dient. Die B…
 tags:
 - locations
 timestamp: '2025-05-14T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:11:55Z'
 id: LOC_BURG_DES_BELORUS
 subtype: Festung
+relationships:
+- target: factions/belorus_untotenarmee
+  note: '**Untote Diener**: Sie gehören zu den Sicherungsmaßnahmen der Burg und damit
+    zur Sphäre des Belorus. [P-08]'
+- target: npcs/belorus
+  note: '**Belorus der Stille**: Die Burg ist sein Aufenthaltsort; er wird ausdrücklich
+    als in ihr hausend beschrieben. [P-08]'
+sources:
+- id: P-08
+  resource: https://www.youtube.com/watch?v=5eAEDN5ra-4
+  last_modified: '2025-05-14T00:00:00Z'
 ---
 
 ## Überblick

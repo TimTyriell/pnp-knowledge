@@ -6,6 +6,9 @@ description: Korn, auch Blutgott genannt, ist ein neuer Gott. Er ist die Gotthei
 tags:
 - deities
 timestamp: '2026-05-19T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DEITY_KORN
 subtype: Sonstiges
 aliases:
@@ -14,6 +17,50 @@ aliases:
 - Core
 - Kord
 - Blutgott
+verified:
+  by: human:gm
+relationships:
+- target: characters/dodo
+  note: Dodo erwähnt in der Götterfrage, dass Esterossa dem neuen Gott Korn sehr zugewandt
+    ist und auf jeden Fall für die neuen Götter sein wird.
+- target: characters/esterossa
+  note: Esterossa ist der einzige namentlich bekannte Anhänger Korns in der Gruppe.
+    Er betet seit jeher und ausschließlich zu Korn. Er ruft ihn im Kampf an, bittet
+    um Schutz und bringt ihm Opfer dar.
+- target: characters/lindo_laut
+  note: Lindo Laut zeigt Interesse an Esterossas Glauben, kann sich den Namen des
+    Gottes aber zunächst nicht merken. Esterossa bietet an, ihm den Glauben näherzubringen.
+sources:
+- id: P-05
+  resource: https://www.youtube.com/watch?v=z3C-bewKqUs
+  last_modified: '2025-04-23T00:00:00Z'
+- id: P-09
+  resource: https://www.youtube.com/watch?v=bamCIB_CkR8
+  last_modified: '2025-05-27T00:00:00Z'
+- id: P-14
+  resource: https://www.youtube.com/watch?v=XOnHa6CmDbo
+  last_modified: '2025-07-09T00:00:00Z'
+- id: P-17
+  resource: https://www.youtube.com/watch?v=vHIjua0BZ9Y
+  last_modified: '2025-08-12T00:00:00Z'
+- id: P-27
+  resource: https://www.youtube.com/watch?v=sxFhbtwoefA
+  last_modified: '2025-10-21T00:00:00Z'
+- id: P-32
+  resource: https://www.youtube.com/watch?v=VGw81seFvbo
+  last_modified: '2026-01-06T00:00:00Z'
+- id: P-33
+  resource: https://www.youtube.com/watch?v=w4LB1s9_3rs
+  last_modified: '2026-01-13T00:00:00Z'
+- id: P-37
+  resource: https://www.youtube.com/watch?v=Z2jlzpoTWVw
+  last_modified: '2026-02-17T00:00:00Z'
+- id: P-45
+  resource: https://www.youtube.com/watch?v=MAuQPMNY548
+  last_modified: '2026-04-07T00:00:00Z'
+- id: P-50
+  resource: https://www.youtube.com/watch?v=xEcGJeaNixI
+  last_modified: '2026-05-19T00:00:00Z'
 ---
 
 ## Überblick

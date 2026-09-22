@@ -6,8 +6,15 @@ description: Ein Buch, das in der Krypta gefunden wird und eine Liste von Namen 
 tags:
 - items
 timestamp: '2025-04-15T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: ITEM_BUCH_MIT_NAMENSLISTE
 subtype: Schriftstück
+sources:
+- id: P-04
+  resource: https://www.youtube.com/watch?v=YCpAz_syjaY
+  last_modified: '2025-04-15T00:00:00Z'
 ---
 
 Ein Buch, das in der Krypta gefunden wird und eine Liste von Namen enthält. Die Tinte der letzten beiden Namen, Grog und [Greg](/npcs/greg.md), ist noch sehr frisch. Die Gruppe nimmt das Buch an sich. Es könnte mit der Beschwörung oder den Vorgängen in der Krypta zusammenhängen.

@@ -6,8 +6,15 @@ description: Am Ende der Session sprengt die Gruppe den Geheimgang, den die Fein
 tags:
 - events
 timestamp: '2026-07-23T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: EVENT_ZERSTOERUNG_DES_GEHEIMGANGS
 subtype: Sonstiges
+sources:
+- id: S1-02-B
+  resource: https://www.youtube.com/watch?v=Gb-TEbCFF0M
+  last_modified: '2026-07-23T00:00:00Z'
 ---
 
 Am Ende der Session sprengt die Gruppe den Geheimgang, den die Feinde benutzt haben, mit Brumas Blitz-Elementar. Damit verhindern sie weitere Verstärkung und ziehen sich zum Dorf zurück.

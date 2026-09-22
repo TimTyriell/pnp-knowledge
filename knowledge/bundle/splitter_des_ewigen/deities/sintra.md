@@ -6,8 +6,17 @@ description: Sintra ist eine Gottheit, die während der Begegnung am 2. Septembe
 tags:
 - deities
 timestamp: '2025-09-02T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:19:07Z'
 id: DEITY_SINTRA
 subtype: Sonstiges
+relationships:
+- target: deities/esua
+sources:
+- id: P-19
+  resource: https://www.youtube.com/watch?v=TLZOH7TlGhk
+  last_modified: '2025-09-02T00:00:00Z'
 ---
 
 Sintra ist eine Gottheit, die während der Begegnung am 2. September 2025 als dritte Stimme aus einem Amulett hervortrat. Sie wirkte gemeinsam mit den anderen im Amulett verborgenen Stimmen auf die Umgebung ein, bis sie am Ende der Ereignisse vernichtet wurde.
@@ -18,7 +27,7 @@ Sintra war im Amulett präsent und machte sich dort akustisch bemerkbar. Wie auc
 
 ## Vernichtung
 
-Am Ende der Begegnung wurde Sintra gemeinsam mit [Esua](/npcs/esua.md) zerstört. Damit endete ihre Existenz im Amulett.
+Am Ende der Begegnung wurde Sintra gemeinsam mit [Esua](/deities/esua.md) zerstört. Damit endete ihre Existenz im Amulett.
 
 # Belege
 

@@ -6,6 +6,9 @@ description: Thar'Vok, der Erdrichter, ist einer der alten Götter. Seine Domän
 tags:
 - deities
 timestamp: '2026-03-24T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DEITY_TARVOK_DER_ERDRICHTER
 subtype: Alter Gott
 aliases:
@@ -19,6 +22,37 @@ aliases:
 - Seras
 - Tavok
 - Tarvok
+verified:
+  by: human:gm
+relationships:
+- target: deities/thyrex
+- target: deities/vharzul
+  note: '**Vhar''Zul**: Thar''Vok war ein Kampfgefährte Vhar''Zuls in den letzten
+    Tagen des Götterkrieges – „keine Freunde, aber Kampfgefährten“. Diesen Hinweis
+    gab Vhar''Zul selbst durch die Stimme Thyrex in Lin…'
+- target: factions/koenigreich_zebros
+  note: '**Zebros**: Das alte Königreich Zebros folgte Thar''Vok. Der Fall des Gottes
+    und die Zerstörung der Stadt werden mit dem Ende des Königreichs im Götterkrieg
+    in Verbindung gebracht.'
+- target: locations/casa_del_cookie
+- target: npcs/tyrael
+  note: '**Tyrael**: Tyrael wird als Anhänger genannt, der auf Thar''Vok schwört.'
+sources:
+- id: P-18
+  resource: https://www.youtube.com/watch?v=-XbO3FLSL_I
+  last_modified: '2025-08-20T00:00:00Z'
+- id: P-19
+  resource: https://www.youtube.com/watch?v=TLZOH7TlGhk
+  last_modified: '2025-09-02T00:00:00Z'
+- id: P-36
+  resource: https://www.youtube.com/watch?v=3C8SD-cyNPM
+  last_modified: '2026-02-11T00:00:00Z'
+- id: P-37
+  resource: https://www.youtube.com/watch?v=Z2jlzpoTWVw
+  last_modified: '2026-02-17T00:00:00Z'
+- id: P-43
+  resource: https://www.youtube.com/watch?v=Yj5BWJfg3Ag
+  last_modified: '2026-03-24T00:00:00Z'
 ---
 
 ## Überblick

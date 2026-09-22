@@ -6,8 +6,15 @@ description: Lendras bricht in den Katakomben den magischen Bann, der den Vampir
 tags:
 - events
 timestamp: '2025-04-23T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:11Z'
 id: EVENT_ERWECKUNG_DES_VORAS
 subtype: Ritual
+sources:
+- id: P-05
+  resource: https://www.youtube.com/watch?v=z3C-bewKqUs
+  last_modified: '2025-04-23T00:00:00Z'
 ---
 
 [Lendras](/npcs/lendras.md) bricht in den [Katakomben](/locations/katakomben.md) den magischen Bann, der den Vampir Voras in seinem Sarg gefangen hält. Der Vampir erwacht und stellt sich als „[Voras der Heilige](/npcs/voras.md)“ vor. Dieses Ritual ist ein zentraler Moment, der die Gruppe mit einem mächtigen Verbündeten versorgt.

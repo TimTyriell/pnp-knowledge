@@ -6,9 +6,24 @@ description: Jen ist eine menschliche Schreiberin, die die Gruppe in Session 202
 tags:
 - npcs
 timestamp: '2026-06-10T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:17Z'
 id: NPC_JEN
 aliases:
 - Jen
+verified:
+  by: human:gm
+relationships:
+- target: characters/lindo_laut
+  note: '**Lindo Laut:** spricht Jen an und fragt später nach ihrem Namen.'
+- target: characters/lunara_velora
+  note: '**Lunara Velora:** sucht ihren Bruder; Jen gibt an, nicht zu wissen, wer
+    dieser sein soll.'
+sources:
+- id: P-53
+  resource: https://www.youtube.com/watch?v=_3tLSiT1tck
+  last_modified: '2026-06-10T00:00:00Z'
 ---
 
 ## Überblick

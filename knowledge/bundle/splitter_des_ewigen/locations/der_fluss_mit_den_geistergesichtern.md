@@ -6,8 +6,15 @@ description: Ein Fluss am Fuß des Berges, dessen Wasser leicht lila schimmert u
 tags:
 - locations
 timestamp: '2026-05-19T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: LOC_DER_FLUSS_MIT_DEN_GEISTERGESICHTERN
 subtype: Wildnis
+sources:
+- id: P-50
+  resource: https://www.youtube.com/watch?v=xEcGJeaNixI
+  last_modified: '2026-05-19T00:00:00Z'
 ---
 
 Ein Fluss am Fuß des Berges, dessen Wasser leicht lila schimmert und nicht berührt werden darf, da es Seelen aussaugen kann. Von oben erkennt man die Gesichter gefangener Seelen, die nach Westen gezogen werden. Die Gruppe überquert ihn, indem [Esterossa](/characters/esterossa.md) [Dodo](/characters/dodo.md) und Lunara hinüberträgt.

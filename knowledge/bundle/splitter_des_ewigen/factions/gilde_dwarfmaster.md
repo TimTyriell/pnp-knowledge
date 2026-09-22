@@ -6,8 +6,15 @@ description: Die Gilde ist eine Organisation mit Hauptquartier in Ehrenfels, der
 tags:
 - factions
 timestamp: '2025-07-22T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_GILDE_DWARFMASTER
 subtype: Gilde
+sources:
+- id: P-15
+  resource: https://www.youtube.com/watch?v=BRRCUgW4xRo
+  last_modified: '2025-07-22T00:00:00Z'
 ---
 
 Die **Gilde** ist eine Organisation mit Hauptquartier in [Ehrenfels](/locations/ehrenfels.md), deren Einfluss in die gesamte Region reicht. In Ehrenfels stellt sie die Stadtwachen; der [Gildemeister](/npcs/nox.md) und Meister Pyrandras treten als ihre Vertreter auf.

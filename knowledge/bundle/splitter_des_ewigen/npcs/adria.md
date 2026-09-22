@@ -6,7 +6,14 @@ description: Adria, Florans Partnerin, kämpft an seiner Seite mit einem Bogen u
 tags:
 - npcs
 timestamp: '2026-03-23T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:17Z'
 id: NPC_ADRIA
+sources:
+- id: P-42
+  resource: https://www.youtube.com/watch?v=niVxKtdQBn0
+  last_modified: '2026-03-23T00:00:00Z'
 ---
 
 Adria, [Florans](/npcs/floran.md) Partnerin, kämpft an seiner Seite mit einem Bogen und wirft im Kampf eine Fiole, die [Nina](/characters/nina.md) verletzt. Nachdem Floran in die Grube stürzt, fleht sie um sein Leben und bittet die Gruppe, ihn zu retten. Als sie erkennt, dass die Gruppe nicht nachgeben wird, ergibt sie sich und lässt ihren Bogen fallen. Sie beteuert ebenfalls die Unschuld der [Silberkerne](/factions/silberkerne.md) und fleht, sie nicht nach [Willauch](/locations/willauch.md) zu bringen, weil sie dort gefoltert und hingerichtet würden. Die Gruppe ignoriert ihre Bitten weitgehend.

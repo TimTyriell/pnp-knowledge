@@ -6,8 +6,15 @@ description: Die Hexe greift die Gruppe mit Nebel und einem magischen Strahl an.
 tags:
 - events
 timestamp: '2026-04-14T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:11Z'
 id: EVENT_KAMPF_GEGEN_DIE_HEXE_UND_IHREN_SOHN
 subtype: Kampf
+sources:
+- id: P-47
+  resource: https://www.youtube.com/watch?v=1Jyu92P7_Fg
+  last_modified: '2026-04-14T00:00:00Z'
 ---
 
 Die Hexe greift die Gruppe mit Nebel und einem magischen Strahl an. [Dodo](/characters/dodo.md) wird getroffen, Lunara fesselt die Hexe mit Ketten, [Lindo Laut](/characters/lindo_laut.md) liest ihre Gedanken. Als die Hexe ihren Sohn (einen großen Kämpfer) ruft, nimmt Dodo doppelten Schaden, bevor Lindo Laut den Sohn ins Wasser teleportiert.

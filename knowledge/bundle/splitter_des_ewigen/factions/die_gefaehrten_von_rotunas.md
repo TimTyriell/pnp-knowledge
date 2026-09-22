@@ -6,10 +6,17 @@ description: Die Gefährten von Rotunas treten in der Arena von Willauch unter d
 tags:
 - factions
 timestamp: '2025-10-21T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_DIE_GEFAEHRTEN_VON_ROTUNAS
 subtype: Bande
 aliases:
 - Rotunas Bande
+sources:
+- id: P-27
+  resource: https://www.youtube.com/watch?v=sxFhbtwoefA
+  last_modified: '2025-10-21T00:00:00Z'
 ---
 
 Die Gefährten von [Rotunas](/characters/rotunas.md) treten in der [Arena von Willauch](/locations/arena_von_willauch.md) unter dem Namen Rotunas Bande als Monsterjäger auf. Benannt ist die Gruppe nach dem Riesen [Rotunas](/characters/rotunas.md); zu ihren Mitgliedern zählen [Dodo](/characters/dodo.md), [Cookie](/characters/cookie.md) und [Esterossa](/characters/esterossa.md).

@@ -6,8 +6,15 @@ description: Die Soldaten von Voras sind eine Streitmacht, deren Name auf Voras 
 tags:
 - factions
 timestamp: '2026-01-13T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_SOLDATEN_VON_VORAS
 subtype: Armee
+sources:
+- id: P-33
+  resource: https://www.youtube.com/watch?v=w4LB1s9_3rs
+  last_modified: '2026-01-13T00:00:00Z'
 ---
 
 Die **Soldaten von [Voras](/npcs/voras.md)** sind eine Streitmacht, deren Name auf Voras den Heiligen zurückgeht. Sie treten als Verteidiger des Dorfes [Breska](/locations/breska.md) auf.

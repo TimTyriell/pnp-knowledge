@@ -6,7 +6,14 @@ description: Miko ist ein katzen- und löwenartiger Kämpfer aus Willauch. Er ve
 tags:
 - characters
 timestamp: '2026-05-06T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: CHAR_MIKO
+sources:
+- id: P-48
+  resource: https://www.youtube.com/watch?v=MB4quhDWsQE
+  last_modified: '2026-05-06T00:00:00Z'
 ---
 
 Miko ist ein katzen- und löwenartiger Kämpfer aus [Willauch](/locations/willauch.md). Er verlor früh seine Familie und sieht seither in [Dante](/characters/dante.md), [Kip](/characters/kip_ribbit.md) und den übrigen Gefährten eine neue Familie, die er beschützen will. Auffälligstes körperliches Merkmal ist seine linke Pfote, die durch eine Wolfsklaue ersetzt wurde.

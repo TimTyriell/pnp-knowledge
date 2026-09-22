@@ -2,12 +2,22 @@
 type: Location
 title: Magierturm
 description: Der Magierturm ist ein alter Turm im Norden am Rande von Gemata. Er ist
-  das Haus des Magiers Lendras und soll mächtiges Wissen bergen.
+  das Haus des Magiers Lendras und soll mächtiges Wissen bergen. [P-0…
 tags:
 - locations
 timestamp: '2026-03-24T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:16Z'
 id: LOC_MAGIERTURM
 subtype: Gebäude
+sources:
+- id: P-05
+  resource: https://www.youtube.com/watch?v=z3C-bewKqUs
+  last_modified: '2025-04-23T00:00:00Z'
+- id: P-43
+  resource: https://www.youtube.com/watch?v=Yj5BWJfg3Ag
+  last_modified: '2026-03-24T00:00:00Z'
 ---
 
 Der **Magierturm** ist ein alter Turm im Norden am Rande von [Gemata](/locations/gemata.md). Er ist das Haus des Magiers [Lendras](/npcs/lendras.md) und soll mächtiges Wissen bergen. [P-05] [P-43]

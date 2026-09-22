@@ -6,6 +6,9 @@ description: Thyrex, genannt „der Sänger“, ist eine der vier Seelen des tot
 tags:
 - deities
 timestamp: '2025-09-06T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:19:07Z'
 id: DEITY_THYREX
 subtype: Alter Gott
 aliases:
@@ -13,6 +16,29 @@ aliases:
 - Tyrex
 - T-Rex (Geist im Amulett)
 - T-Rex (Stimme im Amulett)
+verified:
+  by: human:gm
+relationships:
+- target: characters/lindo_laut
+  note: '**Lindo Laut:** Träger des Amuletts, „Best Buddy“, Empfänger von Warnungen
+    und Kraft. Später nimmt Lindo Laut Charakterzüge Thyrex'' in Vhar''Zul wahr.'
+- target: deities/esua
+- target: deities/tarvok_der_erdrichter
+  note: '**Seras:** Thyrex'' altes Ich war kein Freund, aber Kampfgefährte in den
+    letzten Tagen.'
+- target: deities/vharzul
+  note: '**Vhar''Zul:** Thyrex ist eine von dessen vier Seelen. Nach der Wiedererweckung
+    ist er die vorherrschende Persönlichkeit des Gottes.'
+sources:
+- id: P-17
+  resource: https://www.youtube.com/watch?v=vHIjua0BZ9Y
+  last_modified: '2025-08-12T00:00:00Z'
+- id: P-19
+  resource: https://www.youtube.com/watch?v=TLZOH7TlGhk
+  last_modified: '2025-09-02T00:00:00Z'
+- id: P-20
+  resource: https://www.youtube.com/watch?v=vo1xnyLQDJk
+  last_modified: '2025-09-06T00:00:00Z'
 ---
 
 # Thyrex
@@ -29,7 +55,7 @@ Eine nachgetragene Warnung im Buch der vier Seelen hält fest, dass Vhar'Zuls Es
 
 Thyrex trat für [Lindo Laut](/characters/lindo_laut.md) als vertraute, väterliche Stimme in dessen Amulett auf – von ihm als „Best Buddy“ angesprochen. Nach [Lindo Lauts](/characters/lindo_laut.md) erster Verwandlung erklärte Thyrex, dass dies alles ändere, warnte vor den anderen Stimmen im Amulett und drängte zur Vorsicht.
 
-Im entscheidenden Kampf im Heiligtum war Thyrex die treibende Kraft: „Wir haben nur eine Chance, Lindo Laut, mit all deiner Kraft.“ Er nutzte die Kraft des [Throns](/items/thron.md), um mit Lindo Lauts Hilfe die bösartigen Seelen [Esua](/npcs/esua.md) und [Sintra](/deities/sintra.md) zu zerstören. Danach fühlte sich das Amulett leer an.
+Im entscheidenden Kampf im Heiligtum war Thyrex die treibende Kraft: „Wir haben nur eine Chance, Lindo Laut, mit all deiner Kraft.“ Er nutzte die Kraft des [Throns](/items/thron.md), um mit Lindo Lauts Hilfe die bösartigen Seelen [Esua](/deities/esua.md) und [Sintra](/deities/sintra.md) zu zerstören. Danach fühlte sich das Amulett leer an.
 
 Anschließend wurde Thyrex zur vorherrschenden Persönlichkeit des wiedererstarkten Vhar'Zul. In dieser Gestalt öffnete Vhar'Zul den Helden ein Portal und zog sie hindurch. Seither ist Thyrex nicht mehr als eigenständige Stimme aktiv, doch Lindo Laut nimmt in Vhar'Zul weiterhin Charakterzüge von ihm wahr.
 
@@ -43,7 +69,7 @@ Anschließend wurde Thyrex zur vorherrschenden Persönlichkeit des wiedererstark
 
 - **[Vhar'Zul](/deities/vharzul.md):** Thyrex ist eine von dessen vier Seelen. Nach der Wiedererweckung ist er die vorherrschende Persönlichkeit des Gottes.
 - **[Lindo Laut](/characters/lindo_laut.md):** Träger des Amuletts, „Best Buddy“, Empfänger von Warnungen und Kraft. Später nimmt Lindo Laut Charakterzüge Thyrex' in Vhar'Zul wahr.
-- **Andere Seelen:** Thyrex warnte vor den anderen Stimmen und zerstörte mit Lindo Lauts Hilfe die bösartigen Seelen, darunter [Esua](/npcs/esua.md) und [Sintra](/deities/sintra.md).
+- **Andere Seelen:** Thyrex warnte vor den anderen Stimmen und zerstörte mit Lindo Lauts Hilfe die bösartigen Seelen, darunter [Esua](/deities/esua.md) und [Sintra](/deities/sintra.md).
 - **[Seras](/deities/tarvok_der_erdrichter.md):** Thyrex' altes Ich war kein Freund, aber Kampfgefährte in den letzten Tagen.
 - **Buch der vier Seelen:** Dort ist Thyrex als „der Sänger“ beschrieben und die Warnung zur Essenz Vhar'Zuls festgehalten; später war Thyrex im [Amulett von Lindo Laut](/items/amulett_des_heiligen_duran.md).
 

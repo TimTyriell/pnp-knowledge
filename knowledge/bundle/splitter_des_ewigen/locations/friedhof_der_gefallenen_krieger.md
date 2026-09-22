@@ -6,8 +6,15 @@ description: Vor der Kapelle liegt ein edler Kriegerfriedhof mit aufwendigen Gra
 tags:
 - locations
 timestamp: '2025-09-02T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:16Z'
 id: LOC_FRIEDHOF_DER_GEFALLENEN_KRIEGER
 subtype: Sonstiges
+sources:
+- id: P-19
+  resource: https://www.youtube.com/watch?v=TLZOH7TlGhk
+  last_modified: '2025-09-02T00:00:00Z'
 ---
 
 Vor der [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) liegt ein edler Kriegerfriedhof mit aufwendigen Grabstelen und Obelisken. Die Gräber sind sehr alt und zugeschneit. Im Endkampf erheben sich aus diesen Gräbern die Untoten.

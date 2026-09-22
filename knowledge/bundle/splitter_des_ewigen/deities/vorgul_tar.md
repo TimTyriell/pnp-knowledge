@@ -6,6 +6,9 @@ description: Vorgultar, Herr der Tausend Seelen, ist ein alter Gott von Abyssali
 tags:
 - deities
 timestamp: '2026-07-21T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:19:07Z'
 id: DEITY_VORGUL_TAR
 subtype: Alter Gott
 aliases:
@@ -16,6 +19,58 @@ aliases:
 - Vorgultar
 - Wargulta / Volgulta
 - Vorgulta
+relationships:
+- target: characters/esterossa
+  note: '**Esterossa**: Widersteht Vorgultars Seelenangriff in außergewöhnlicher Weise
+    und zwingt den Gott zum Rückzug. Auf Lunara wirkt er in diesem Moment fremd und
+    nicht wie der bekannte Esterossa.'
+- target: characters/lunara_velora
+  note: '**Lunara Velora**: Erklärte Feindin; ihr Bruder Liam ist als Seele in Vorgultars
+    Gewalt. Sie wird mehrfach als Anhängerin Vorgultars ausgegeben, besitzt jedoch
+    kein Zeichen von ihm.'
+- target: deities/huludan
+  note: '**Huludan bzw. dessen Diener**: Der Diener übergibt der Gruppe das Schwert,
+    mit dem Vorgultar verletzt werden kann, und scheint persönliche Motive für die
+    Vernichtung Vorgultars zu haben.'
+- target: deities/ohoriaks
+- target: deities/vharzul
+- target: npcs/der_jen
+  note: '**Der Jen**: Ein mysteriöser Diener Vorgultars mit eigener, neutraler Agenda.
+    Er zeigt der Gruppe Seelen in einer Flamme und offenbart Vorgultars Angst. Er
+    verfolgt eigene Interessen und ist der Grup…'
+- target: npcs/liam_velora
+- target: npcs/tattrick
+  note: '**Tattrick**: Uralter Diener, der Vorgultars Zeichen auf dem Hinterkopf trägt
+    und darüber ferngesteuert werden kann; er fühlt sich von Vorgultar verraten.'
+- target: npcs/tyrael
+  note: '**Tyrael**: Verfasser eines Buches über Seelenmagie, das Vorgultar wohlwollend
+    beschreibt und Anleitungen zur Seelenmagie enthält. Tyrael scheint Vorgultar entkommen
+    zu sein; ein Diener Vorgultars be…'
+sources:
+- id: P-39
+  resource: https://www.youtube.com/watch?v=BRUNuNKTeOg
+  last_modified: '2026-03-03T00:00:00Z'
+- id: P-44
+  resource: https://www.youtube.com/watch?v=Ee-K84wcxLM
+  last_modified: '2026-03-31T00:00:00Z'
+- id: P-47
+  resource: https://www.youtube.com/watch?v=1Jyu92P7_Fg
+  last_modified: '2026-04-14T00:00:00Z'
+- id: P-49
+  resource: https://www.youtube.com/watch?v=4afPD9Q_5AY
+  last_modified: '2026-05-13T00:00:00Z'
+- id: P-50
+  resource: https://www.youtube.com/watch?v=xEcGJeaNixI
+  last_modified: '2026-05-19T00:00:00Z'
+- id: P-53
+  resource: https://www.youtube.com/watch?v=_3tLSiT1tck
+  last_modified: '2026-06-10T00:00:00Z'
+- id: P-54
+  resource: https://www.youtube.com/watch?v=qe0ck8hvYpk
+  last_modified: '2026-06-16T00:00:00Z'
+- id: P-55
+  resource: https://www.youtube.com/watch?v=KNV4oNGJ0tw
+  last_modified: '2026-07-21T00:00:00Z'
 ---
 
 ## Überblick
@@ -28,7 +83,7 @@ In der [Narbe](/locations/narben.md), einem tiefen Taleinschnitt in Abyssalis, h
 
 Vorgultar ist das zentrale Ziel der Mission von [Lunara Velora](/characters/lunara_velora.md) und ihrer Gruppe. Er hält die Seele von [Liam](/npcs/liam_velora.md), Lunaras Bruder, in seinem Besitz; Kinderseelen unterliegen in Abyssalis besonderen Gesetzen und werden nicht von der Umwelt beeinflusst. Die Gruppe – Lunara, [Lindo Laut](/characters/lindo_laut.md), [Esterossa](/characters/esterossa.md) und [Dodo](/characters/dodo.md) – dringt in sein Versteck in der Narbe vor, um Liam zu befreien. Das [Schwert](/items/schwert.md) von [Huludan](/deities/huludan.md), übergeben von einem Diener Huludans, ist dazu geeignet, Vorgultar zu verletzen.
 
-Mehrfach gibt sich die Gruppe in Abyssalis als Anhänger Vorgultars aus, um in der Dämonengesellschaft zu bestehen und Informationen zu sammeln. Vorgultar verfügt über zahlreiche Diener: Stein-Clangs, [Seraphen](/factions/seraphen_von_volgotha.md), [Goblins](/npcs/pilz_goblins.md), Kultisten und gefallene Seraphen. Seine Anhänger verlangen bedingungslose Treue; die Gruppe selbst besitzt kein Zeichen von ihm. Vorgultar hat zudem Anhänger in der [Seelenwacht](/factions/seelenwacht.md).
+Mehrfach gibt sich die Gruppe in Abyssalis als Anhänger Vorgultars aus, um in der Dämonengesellschaft zu bestehen und Informationen zu sammeln. Vorgultar verfügt über zahlreiche Diener: Stein-Clangs, [Seraphen](/npcs/seraphen_von_volgotha.md), [Goblins](/npcs/pilz_goblins.md), Kultisten und gefallene Seraphen. Seine Anhänger verlangen bedingungslose Treue; die Gruppe selbst besitzt kein Zeichen von ihm. Vorgultar hat zudem Anhänger in der [Seelenwacht](/factions/seelenwacht.md).
 
 ## Wichtige Merkmale
 
@@ -38,7 +93,7 @@ Der Gott verfügt über telepathische Fähigkeiten: Er erteilt über große Entf
 
 Sein Zeichen ist ein Totenschädel mit einer Flamme oder Seele. Es erscheint auf den Hinterköpfen seiner Diener und brennt auf der Brust von Ultanar. Das Symbol dient der Kommunikation und offenbar auch der Kontrolle seiner Vasallen. In der Narbe durchdringen Kristalle den Berg und können magische Energie absorbieren oder nutzen; seine Festung besteht aus purer Magie und verstärkt alle Zauber.
 
-Vorgultar wird als kontrollsüchtig beschrieben: Er wacht über Diener wie [Tattrick](/npcs/tatrick.md) über Jahrtausende. Trotz dieser Kontrolle zeigt er in Situationen existenzieller Bedrohung unerwartete Verwundbarkeit – etwa als er nach seinem Begleiter ruft oder als Esterossa ihn zum Rückzug zwingt.
+Vorgultar wird als kontrollsüchtig beschrieben: Er wacht über Diener wie [Tattrick](/npcs/tattrick.md) über Jahrtausende. Trotz dieser Kontrolle zeigt er in Situationen existenzieller Bedrohung unerwartete Verwundbarkeit – etwa als er nach seinem Begleiter ruft oder als Esterossa ihn zum Rückzug zwingt.
 
 ## Beziehungen und Verbindungen
 
@@ -47,10 +102,10 @@ Vorgultar wird als kontrollsüchtig beschrieben: Er wacht über Diener wie [Tatt
 - **[Esterossa](/characters/esterossa.md)**: Widersteht Vorgultars Seelenangriff in außergewöhnlicher Weise und zwingt den Gott zum Rückzug. Auf Lunara wirkt er in diesem Moment fremd und nicht wie der bekannte Esterossa.
 - **[Huludan](/deities/huludan.md) bzw. dessen Diener**: Der Diener übergibt der Gruppe das Schwert, mit dem Vorgultar verletzt werden kann, und scheint persönliche Motive für die Vernichtung Vorgultars zu haben.
 - **[Der Jen](/npcs/der_jen.md)**: Ein mysteriöser Diener Vorgultars mit eigener, neutraler Agenda. Er zeigt der Gruppe Seelen in einer Flamme und offenbart Vorgultars Angst. Er verfolgt eigene Interessen und ist der Gruppe gegenüber weder feindselig noch wohlwollend.
-- **[Tattrick](/npcs/tatrick.md)**: Uralter Diener, der Vorgultars Zeichen auf dem Hinterkopf trägt und darüber ferngesteuert werden kann; er fühlt sich von Vorgultar verraten.
+- **[Tattrick](/npcs/tattrick.md)**: Uralter Diener, der Vorgultars Zeichen auf dem Hinterkopf trägt und darüber ferngesteuert werden kann; er fühlt sich von Vorgultar verraten.
 - **Ultanar** und der [Dämon der Hybris](/npcs/daemon_der_hybris.md): Werden als Meister und Patron von Vorgultar bezeichnet; Ultanar trägt sein Zeichen auf der Brust.
 - **Die anderen alten Götter**: [Akastrale](/deities/akastrale.md), Sitravil und [Ohoriaks](/deities/ohoriaks.md) sind Rivalen mit eigenen Domänen und Anhängern. In einer Stadt wird berichtet, Ohoriaks habe die Stadt übernommen, während Vorgultar „zu spät“ gewesen sei.
-- **Dienergruppen**: Stein-Clangs, [Seraphen](/factions/seraphen_von_volgotha.md), Goblins, Kultisten und gefallene Seraphen dienen Vorgultar und bewachen die Narbe und ihre Tore. Sie verlangen bedingungslose Treue.
+- **Dienergruppen**: Stein-Clangs, [Seraphen](/npcs/seraphen_von_volgotha.md), Goblins, Kultisten und gefallene Seraphen dienen Vorgultar und bewachen die Narbe und ihre Tore. Sie verlangen bedingungslose Treue.
 
 ## Chronologie
 

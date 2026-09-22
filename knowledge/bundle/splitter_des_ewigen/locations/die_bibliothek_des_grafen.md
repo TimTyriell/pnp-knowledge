@@ -6,8 +6,15 @@ description: 'Die Bibliothek des Grafen ist ein Raum voller Schätze: mächtige 
 tags:
 - locations
 timestamp: '2025-06-25T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: LOC_DIE_BIBLIOTHEK_DES_GRAFEN
 subtype: Gebäude
+sources:
+- id: P-13
+  resource: https://www.youtube.com/watch?v=tpkO9uGw6-I
+  last_modified: '2025-06-25T00:00:00Z'
 ---
 
 [Die Bibliothek](/locations/bibliothek_von_willauch.md) des Grafen ist ein Raum voller Schätze: mächtige Tränke, Zauberbücher, ein Drachenei und magische Utensilien. Hier finden die Helden das versiegelte Buch und öffnen es mit dem schwarzen Palantir, was den Seelenkampf auslöst.

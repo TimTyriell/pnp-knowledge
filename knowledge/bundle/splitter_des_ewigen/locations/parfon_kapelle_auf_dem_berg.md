@@ -6,11 +6,27 @@ description: Die Thar'Vok-Kapelle auf dem Berg ist eine Kapelle auf einem Berg, 
 tags:
 - locations
 timestamp: '2026-07-29T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:16Z'
 id: LOC_PARFON_KAPELLE_AUF_DEM_BERG
 subtype: Gebäude
 aliases:
 - Die Kapelle
 - Kapelle
+sources:
+- id: P-07
+  resource: https://www.youtube.com/watch?v=e0v6AFGd4mE
+  last_modified: '2025-05-06T00:00:00Z'
+- id: P-16
+  resource: https://www.youtube.com/watch?v=XXgO5Ht4Q0A
+  last_modified: '2025-07-29T00:00:00Z'
+- id: P-20
+  resource: https://www.youtube.com/watch?v=vo1xnyLQDJk
+  last_modified: '2025-09-06T00:00:00Z'
+- id: S1-01-A
+  resource: https://www.youtube.com/watch?v=umGyKLkefJI
+  last_modified: '2026-07-29T00:00:00Z'
 ---
 
 Die Thar'Vok-Kapelle auf dem Berg ist eine Kapelle auf einem Berg, die auch als Kapelle des heiligen [Duran](/deities/heiliger_duran.md) bezeichnet wird. Sie liegt an der linken Seite des Weges und dient den Dorfbewohnern als zentraler Versammlungsort. Unter der Kapelle befindet sich eine Höhle mit einem Brunnen voller magischer Energie; im Inneren steht ein Schrein für die verstorbenen Eltern von [Dranara](/npcs/dranara_asleina.md). Die Kapelle war mehrfach Schauplatz zentraler Ereignisse: eines Gnollen-Überfalls, des Fundes des sternförmigen Amuletts und der Entdeckung eines [Throns](/items/thron.md) nach einer Reise durch ein Rift.

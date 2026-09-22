@@ -6,7 +6,14 @@ description: Ein pinker, süßer Klumpen, der aus dem Pool in der Mitte entspran
 tags:
 - npcs
 timestamp: '2026-04-07T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_ROSA_KLUMPEN
+sources:
+- id: P-45
+  resource: https://www.youtube.com/watch?v=MAuQPMNY548
+  last_modified: '2026-04-07T00:00:00Z'
 ---
 
 Ein pinker, süßer Klumpen, der aus dem Pool in der Mitte entsprang. Er konnte Säure versprühen und Gegner übernehmen, wie bei [Dodo](/characters/dodo.md). Er wurde von [Esterossa](/characters/esterossa.md) in einen Käfig geworfen, wo er wuchs. [Brim](/characters/brim.md) schubste ihn schließlich in die Grube, wo er von den Tentakeln zerstückelt wurde. Er diente als Ablenkung für die unsichtbare Kreatur.

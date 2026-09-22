@@ -6,7 +6,19 @@ description: Baran ist der Schankwirt der Taverne Kyla und ein Verbündeter der 
 tags:
 - npcs
 timestamp: '2025-05-06T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:17Z'
 id: NPC_BARAN
+relationships:
+- target: npcs/joar_vanur
+sources:
+- id: P-06
+  resource: https://www.youtube.com/watch?v=fsCOiSkKKTE
+  last_modified: '2025-04-30T00:00:00Z'
+- id: P-07
+  resource: https://www.youtube.com/watch?v=e0v6AFGd4mE
+  last_modified: '2025-05-06T00:00:00Z'
 ---
 
 Baran ist der Schankwirt der [Taverne Kyla](/locations/taverne_kyla_von_sanddorn.md) und ein Verbündeter der Gruppe aus einem früheren Abenteuer. Er begegnete ihr zunächst, als [Gulrak](/npcs/gulrak.md) einen Diebstahl an ihm versuchte; später kämpfte er an ihrer Seite gegen die [Gnolle](/factions/gnolle.md). Er begegnet den Helden freundlich und respektvoll, ist jedoch zugleich in die Ereignisse verwickelt, ohne dass seine genaue Motivation bisher klar wäre.

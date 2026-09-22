@@ -6,8 +6,15 @@ description: Lunara spricht das Wort "Öffne" mit dem Stab, woraufhin sich das P
 tags:
 - events
 timestamp: '2026-03-31T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_OEFFNUNG_DES_PORTALS_NACH_ABYSSALIS_IN_EHRENFELS
 subtype: Ritual
+sources:
+- id: P-44
+  resource: https://www.youtube.com/watch?v=Ee-K84wcxLM
+  last_modified: '2026-03-31T00:00:00Z'
 ---
 
 Lunara spricht das Wort "Öffne" mit dem [Stab](/items/lindo_lauts_stab.md), woraufhin sich das Portal öffnet und [Vasul](/deities/vharzul.md) herauskommt. Die Statuen verlieren ihre Farbe und Vasul absorbiert die restliche Göttlichkeit.

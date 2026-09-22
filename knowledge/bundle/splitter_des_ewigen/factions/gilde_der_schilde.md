@@ -6,8 +6,17 @@ description: Die Gilde der Schilde ist eine kleine, aber lukrative Gilde in Tief
 tags:
 - factions
 timestamp: '2026-03-18T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_GILDE_DER_SCHILDE
 subtype: Gilde
+relationships:
+- target: deities/coram_schildbrecher
+sources:
+- id: P-41
+  resource: https://www.youtube.com/watch?v=HHXxsASLrbQ
+  last_modified: '2026-03-18T00:00:00Z'
 ---
 
 Die **Gilde der Schilde** ist eine kleine, aber lukrative Gilde in [Tiefwasser](/locations/tiefwasser.md). Sie übernimmt Aufträge für [Willauch](/locations/willauch.md); belegt ist dabei ihr Vorgehen gegen die [Silberkerne](/factions/silberkerne.md). [P-41]

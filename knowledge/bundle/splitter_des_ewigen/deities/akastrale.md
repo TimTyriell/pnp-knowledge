@@ -6,8 +6,17 @@ description: Vorläufiger Eintrag. Akastrale ist eine weibliche Gottheit und ein
 tags:
 - deities
 timestamp: '2026-03-31T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DEITY_AKASTRALE
 subtype: Alter Gott
+verified:
+  by: human:gm
+sources:
+- id: P-44
+  resource: https://www.youtube.com/watch?v=Ee-K84wcxLM
+  last_modified: '2026-03-31T00:00:00Z'
 ---
 
 **Vorläufiger Eintrag.** Akastrale ist eine weibliche Gottheit und eine der vier alten Götter in [Abyssalis](/domains/splitterwelt.md). Sie trägt den Beinamen „der Verrückte Hunger“ oder „der Dunkle Hunger“ und gilt als die stärkste und gefährlichste ihres Pantheons, zugleich aber als wahnsinnig. Die Gruppe weiß, dass Akastrale sich im [Wald](/locations/wald.md) aufhält, und meidet jede Begegnung mit ihr.

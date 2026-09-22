@@ -6,8 +6,15 @@ description: Die lila Kristalle sind lebende Formen, die im Norden nahe des Ende
 tags:
 - items
 timestamp: '2025-10-07T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:14Z'
 id: ITEM_LILA_KRISTALLE
 subtype: Artefakt
+sources:
+- id: P-25
+  resource: https://www.youtube.com/watch?v=qVAF_54S8Vw
+  last_modified: '2025-10-07T00:00:00Z'
 ---
 
 Die lila Kristalle sind lebende Formen, die im Norden nahe des Endes wachsen. Sie fühlen sich magisch an, sind aber nicht von Natur aus magisch. Bei Berührung kristallisieren sie Körperteile und breiten sich aus. Sie werden von den Magiern genutzt, um den Golem zu bauen. Sie reagieren empfindlich auf Feuer, solange sie nicht ausgehärtet sind. In der Mine wachsen sie zusammen mit grünen Kristallen.

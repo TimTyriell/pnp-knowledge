@@ -6,9 +6,27 @@ description: Adeliga ist ein Eulen-Seraph und Paladin des neuen Gottes Joran der
 tags:
 - npcs
 timestamp: '2026-08-06T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:17Z'
 id: NPC_ADELIGA_DER_EULENSERAPH
 aliases:
 - Adelia
+verified:
+  by: human:gm
+relationships:
+- target: characters/sange
+- target: deities/joran_der_muenzenzaehler
+sources:
+- id: P-52
+  resource: https://www.youtube.com/watch?v=EGNh8O7pE5Q
+  last_modified: '2026-06-04T00:00:00Z'
+- id: S1-01-B
+  resource: https://www.youtube.com/watch?v=H-eHSlfxUAg
+  last_modified: '2026-07-10T00:00:00Z'
+- id: S1-03-B
+  resource: https://www.youtube.com/watch?v=0HyPHao8s_k
+  last_modified: '2026-08-06T00:00:00Z'
 ---
 
 Adeliga ist ein Eulen-[Seraph](/npcs/seraph.md) und Paladin des neuen Gottes [Joran der Münzenzähler](/deities/joran_der_muenzenzaehler.md). Die etwa zwei Meter große Pilgerin durchzieht das [Ringtal](/locations/ringtal.md), um Wissen über die neuen Götter zu sammeln und in [Jorans](/deities/joran.md) Namen Segen zu erteilen. Mit der gleichnamigen Wirtin aus [Willauch](/locations/willauch.md) ist sie nicht identisch; beide Frauen haben nichts miteinander zu tun.

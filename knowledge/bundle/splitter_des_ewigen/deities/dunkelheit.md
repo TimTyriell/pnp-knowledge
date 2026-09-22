@@ -6,8 +6,15 @@ description: Dunkelheit ist eine bedrohliche Macht, die in den Quellen als gött
 tags:
 - deities
 timestamp: '2026-08-06T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DEITY_DUNKELHEIT
 subtype: Sonstiges
+sources:
+- id: S1-03-B
+  resource: https://www.youtube.com/watch?v=0HyPHao8s_k
+  last_modified: '2026-08-06T00:00:00Z'
 ---
 
 Dunkelheit ist eine bedrohliche Macht, die in den Quellen als göttliche Entität geführt wird. Bisher ist sie nur durch ein einziges Ereignis hervorgetreten: Sie belebte einen besiegten Anführer und entfernte sich mit ihm. Ihr Wesen, ihre Herkunft und ihre Absichten sind unbekannt; ein direkter Dialog oder eine Offenbarung ist nicht überliefert.

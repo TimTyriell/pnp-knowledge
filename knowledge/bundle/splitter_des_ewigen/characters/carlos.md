@@ -6,7 +6,14 @@ description: Carlos ist ein Katari (Katzenwesen) aus den Sümpfen und Beherrsche
 tags:
 - characters
 timestamp: '2026-05-27T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:09Z'
 id: CHAR_CARLOS
+sources:
+- id: P-51
+  resource: https://www.youtube.com/watch?v=IYYmgpqsp7E
+  last_modified: '2026-05-27T00:00:00Z'
 ---
 
 Carlos ist ein Katari (Katzenwesen) aus den Sümpfen und Beherrscher der Naturmagie. Er tritt als neugieriger, kritischer Geist auf, der unnatürlichen Phänomenen auf den Grund geht, im Kampf aber auch pragmatisch seine Fähigkeiten einsetzt. Anders als manche seiner Begleiter lässt er sich nicht von Gold oder Land ködern; sein Mitgefühl gilt eher Tieren und den Verletzten.

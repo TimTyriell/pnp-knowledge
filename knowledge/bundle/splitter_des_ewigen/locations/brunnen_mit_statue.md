@@ -6,8 +6,15 @@ description: Der Brunnen mit einer Statue ähnelt einem früher gesehenen Blutop
 tags:
 - locations
 timestamp: '2025-08-20T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: LOC_BRUNNEN_MIT_STATUE
 subtype: Gebäude
+sources:
+- id: P-18
+  resource: https://www.youtube.com/watch?v=-XbO3FLSL_I
+  last_modified: '2025-08-20T00:00:00Z'
 ---
 
 Der Brunnen mit einer Statue ähnelt einem früher gesehenen Blutopferplatz. [Lindo Laut](/characters/lindo_laut.md) opfert Blut, woraufhin der Eimer automatisch eine dickflüssige, süße Flüssigkeit heraufbringt und die Farben der Umgebung verblassen. Der Ort ist offenbar mit der göttlichen Prüfung verbunden.

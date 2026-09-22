@@ -6,8 +6,15 @@ description: In der Pocket Domain erscheint Slix, zwingt Lunara zu Boden, Lindo 
 tags:
 - events
 timestamp: '2026-02-11T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_KONFRONTATION_MIT_SLIX
 subtype: Kampf
+sources:
+- id: P-36
+  resource: https://www.youtube.com/watch?v=3C8SD-cyNPM
+  last_modified: '2026-02-11T00:00:00Z'
 ---
 
 In der [Pocket Domain](/domains/pocket_domain.md) erscheint [Slix](/npcs/slix_vasul.md), zwingt Lunara zu Boden, [Lindo Laut](/characters/lindo_laut.md) verwandelt sich in eine Dämonenform, [Dodo](/characters/dodo.md) und [Esterossa](/characters/esterossa.md) greifen an, Lunara bricht die Kontrolle.

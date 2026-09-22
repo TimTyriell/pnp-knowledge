@@ -6,8 +6,15 @@ description: Am Bergpass pflanzt die Gruppe einen Teleportbaum-Samen, der zu ein
 tags:
 - events
 timestamp: '2026-08-25T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_PFLANZUNG_DES_TELEPORTBAUMS
 subtype: Ritual
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=1Cjj3OVqiYA
+  last_modified: '2026-08-25T00:00:00Z'
 ---
 
 Am Bergpass pflanzt die Gruppe einen [Teleportbaum-Samen](/items/teleportbaum_samen.md), der zu einem Baum wächst und das Teleportnetzwerk erweitert. Dies geschieht heimlich im Gebüsch neben dem Tor.

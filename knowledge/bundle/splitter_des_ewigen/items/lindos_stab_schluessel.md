@@ -6,8 +6,15 @@ description: Lindo Lauts persönlicher Stab, der als Schlüssel zur Splitterwelt
 tags:
 - items
 timestamp: '2025-11-25T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:14Z'
 id: ITEM_LINDOS_STAB_SCHLUESSEL
 subtype: Artefakt
+sources:
+- id: P-31
+  resource: https://www.youtube.com/watch?v=wd5R4fJfngY
+  last_modified: '2025-11-25T00:00:00Z'
 ---
 
 [Lindo Lauts](/characters/lindo_laut.md) persönlicher [Stab](/items/lindo_lauts_stab.md), der als [Schlüssel](/items/magischer_schluessel.md) zur [Splitterwelt](/domains/splitterwelt.md) dient. Er nutzt ihn, um Energie zu fokussieren, die [Schattenkreatur](/npcs/schattenkreatur.md) aufzuspüren und Portale zu öffnen (scheitert). Nach [Slix](/npcs/slix_vasul.md)' Worten trägt Lindo den Schlüssel bei sich und kann damit Kreaturen beschwören.

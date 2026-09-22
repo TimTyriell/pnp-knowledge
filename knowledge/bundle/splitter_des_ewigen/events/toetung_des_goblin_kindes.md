@@ -6,8 +6,15 @@ description: Esterossa schleicht sich an ein betrunkenes Goblin-Kind an und bric
 tags:
 - events
 timestamp: '2025-04-01T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_TOETUNG_DES_GOBLIN_KINDES
 subtype: Tod
+sources:
+- id: P-02
+  resource: https://www.youtube.com/watch?v=LZIuUzc3F18
+  last_modified: '2025-04-01T00:00:00Z'
 ---
 
 [Esterossa](/characters/esterossa.md) schleicht sich an ein betrunkenes Goblin-Kind an und bricht ihm das Genick; er behält den Kopf. Diese brutale Tat hat keine unmittelbaren Konsequenzen.

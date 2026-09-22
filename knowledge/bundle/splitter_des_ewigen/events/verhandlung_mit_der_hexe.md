@@ -6,8 +6,15 @@ description: Nach der Verbannung ihres Sohnes ist die Hexe eingeschüchtert und 
 tags:
 - events
 timestamp: '2026-04-14T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_VERHANDLUNG_MIT_DER_HEXE
 subtype: Verhandlung
+sources:
+- id: P-47
+  resource: https://www.youtube.com/watch?v=1Jyu92P7_Fg
+  last_modified: '2026-04-14T00:00:00Z'
 ---
 
 Nach der Verbannung ihres Sohnes ist die Hexe eingeschüchtert und verrät Informationen über die Festung [Brocadil](/locations/brocadil.md), die [Erntefelder](/locations/erntefelder.md) und die Machtübernahme durch [Ohoriaks](/deities/ohoriaks.md). Sie bestätigt, dass wichtige Seelen in die Festung gebracht werden.

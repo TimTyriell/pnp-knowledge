@@ -6,8 +6,15 @@ description: Lindo Laut liest in Tyraels Gedanken und entdeckt, dass die dämoni
 tags:
 - events
 timestamp: '2025-10-14T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:11Z'
 id: EVENT_ENTHUELLUNG_UEBER_VALSOR
 subtype: Entdeckung
+sources:
+- id: P-26
+  resource: https://www.youtube.com/watch?v=cUtz87UCHu4
+  last_modified: '2025-10-14T00:00:00Z'
 ---
 
 [Lindo Laut](/characters/lindo_laut.md) liest in [Tyraels](/npcs/tyrael.md) Gedanken und entdeckt, dass die dämonische Präsenz in ihm mit [Valsor](/deities/vharzul.md)/Basul, einem Herrn der Seelen, verbunden ist. Dessen Herkunft ist '[Abyssalis](/domains/splitterwelt.md)'.

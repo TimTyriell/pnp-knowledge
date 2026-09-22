@@ -6,8 +6,15 @@ description: Die Zwerge sind ein stolzes Volk, das in den Bergen lebt und dort e
 tags:
 - factions
 timestamp: '2026-01-27T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_ZWERGE
 subtype: Volk
+sources:
+- id: P-35
+  resource: https://www.youtube.com/watch?v=9RzvnnWzV7E
+  last_modified: '2026-01-27T00:00:00Z'
 ---
 
 Die Zwerge sind ein stolzes Volk, das in den Bergen lebt und dort eine Festung bewohnt. Sie beuten die örtliche Mine aus, um daraus magische Artefakte herzustellen, und geben ihr handwerkliches Wissen nur zögernd weiter. Im Verhältnis zu den [Goblins](/npcs/pilz_goblins.md) steht die Gemeinschaft nach bereits geführten, verlustreichen Kämpfen vor einer Richtungsentscheidung.

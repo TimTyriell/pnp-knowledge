@@ -1,13 +1,29 @@
 ---
 type: Item
 title: Ring der Pocket Dimension
-description: Lindo Laut besitzt einen Ring, der eine Pocket Dimension öffnet, eine
-  kleine, von den Ebenen losgelöste Taschendimension. Er hat ihn von ei…
+description: Der Ring der Pocket Dimension ist ein magischer Ring im Besitz von Lindo
+  Laut. Er öffnet eine kleine, von den Ebenen losgelöste Taschendime…
 tags:
 - items
 timestamp: '2026-08-04T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:11:55Z'
 id: ITEM_RING_DER_POCKET_DIMENSION
 subtype: Artefakt
+verified:
+  by: human:gm
+relationships:
+- target: characters/gunther
+  note: 'Gunther und Lunara Velora: Werden von Lindo in die Pocket Dimension mitgenommen,
+    um dort ungestört zu beraten.'
+- target: characters/lindo_laut
+  note: 'Lindo Laut: Besitzer und Nutzer des Rings; er hat ihn von einem übernatürlichen
+    Wesen erhalten.'
+sources:
+- id: S1-02-A
+  resource: https://www.youtube.com/watch?v=qRj2t3wQHfs
+  last_modified: '2026-08-04T00:00:00Z'
 ---
 
 ## Überblick

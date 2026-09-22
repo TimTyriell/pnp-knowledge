@@ -6,8 +6,15 @@ description: Die Gruppe kehrt zu Marus zurück und behauptet, nichts gefunden zu
 tags:
 - events
 timestamp: '2026-02-24T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_TAEUSCHUNG_DER_BANDITEN
 subtype: Verhandlung
+sources:
+- id: P-38
+  resource: https://www.youtube.com/watch?v=WOFArbwDDIQ
+  last_modified: '2026-02-24T00:00:00Z'
 ---
 
 Die Gruppe kehrt zu [Marus](/npcs/marus.md) zurück und behauptet, nichts gefunden zu haben, die Biester seien zu gefährlich gewesen und der Gang sei gesprengt worden, um sie einzuschließen. [Dodo](/characters/dodo.md) gewinnt ein Blickduell, und Marus glaubt die Geschichte. Das Silber und das Artefakt bleiben geheim.

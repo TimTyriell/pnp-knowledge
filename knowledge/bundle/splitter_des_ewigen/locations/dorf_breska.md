@@ -6,10 +6,20 @@ description: Breska ist ein kleines, naturnahes Dorf und der Schauplatz der erst
 tags:
 - locations
 timestamp: '2025-04-15T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: LOC_DORF_BRESKA
 subtype: Siedlung
 aliases:
 - Dorf Brechka
+sources:
+- id: P-03
+  resource: https://www.youtube.com/watch?v=1PWdwvun5ow
+  last_modified: '2025-04-09T00:00:00Z'
+- id: P-04
+  resource: https://www.youtube.com/watch?v=YCpAz_syjaY
+  last_modified: '2025-04-15T00:00:00Z'
 ---
 
 [Breska](/locations/breska.md) ist ein kleines, naturnahes Dorf und der Schauplatz der ersten Begegnung der Gruppe mit der Bedrohung durch einen erwarteten Angriff. Die Siedlung umfasst zwei Bauernhöfe, einen [Friedhof](/locations/friedhof.md), ein Wirtshaus und ein Bürgermeisterhaus. Auffällig sind die vergitterten Fenster der meisten Gebäude, die auf frühere, kleinere Überfälle zurückgeführt werden. Aufgrund dieser Gefahrenlage soll die Gruppe das Dorf auf einen bevorstehenden Angriff vorbereiten; in einer Krypta gefundene Unterlagen erhärten schließlich, dass Breska das Ziel eines größeren Angriffs ist.

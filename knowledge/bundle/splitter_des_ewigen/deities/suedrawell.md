@@ -6,8 +6,15 @@ description: Südrawell ist eine der vier alten Götter. Vasul erwähnt sie als 
 tags:
 - deities
 timestamp: '2026-03-31T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DEITY_SUEDRAWELL
 subtype: Alter Gott
+sources:
+- id: P-44
+  resource: https://www.youtube.com/watch?v=Ee-K84wcxLM
+  last_modified: '2026-03-31T00:00:00Z'
 ---
 
 **Südrawell** ist eine der vier alten Götter. [Vasul](/deities/vharzul.md) erwähnt sie als „die Fleischweberin“ und beschreibt sie dabei als federhafte Kreatur, die Unheil bringt.

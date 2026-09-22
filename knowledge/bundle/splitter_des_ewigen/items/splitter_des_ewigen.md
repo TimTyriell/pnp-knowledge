@@ -6,10 +6,22 @@ description: Der Splitter des Ewigen war ein uralter, mächtiger Kristall und tr
 tags:
 - items
 timestamp: '2026-07-21T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: ITEM_SPLITTER_DES_EWIGEN
 subtype: Artefakt
 aliases:
 - Splitter des Ewigen
+relationships:
+- target: deities/huludan
+sources:
+- id: P-54
+  resource: https://www.youtube.com/watch?v=qe0ck8hvYpk
+  last_modified: '2026-06-16T00:00:00Z'
+- id: P-55
+  resource: https://www.youtube.com/watch?v=KNV4oNGJ0tw
+  last_modified: '2026-07-21T00:00:00Z'
 ---
 
 Der Splitter des Ewigen war ein uralter, mächtiger Kristall und trug den Beinamen Schöpfungsjuwel. Er wurde in einem Tempel aufbewahrt und von [Vorgul'tar](/deities/vorgul_tar.md) behütet, der ihn jedoch nicht nutzen konnte; [Vasul](/deities/vharzul.md) wollte den Splitter für [Huludan](/deities/huludan.md) gewinnen. Entscheidend wurde die Berührung durch [Esterossa](/characters/esterossa.md): [Der Kristall](/items/gruener_kristall.md) reagierte darauf, nahm Besitz von Esterossa und löste sich anschließend auf, als hätte er nie existiert. Seine Energie floss vollständig in Esterossas neue Waffe über.

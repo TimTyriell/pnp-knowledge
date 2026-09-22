@@ -6,8 +6,15 @@ description: Nach dem Tod von Rotunas konnte Nox auf seinem Strixwolf Inaros fli
 tags:
 - events
 timestamp: '2026-08-04T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:11Z'
 id: EVENT_FLUCHT_VON_NOX_AUF_STRIXWOLF
 subtype: Flucht
+sources:
+- id: S1-02-A
+  resource: https://www.youtube.com/watch?v=qRj2t3wQHfs
+  last_modified: '2026-08-04T00:00:00Z'
 ---
 
 Nach dem [Tod von Rotunas](/events/tod_von_rotunas.md) konnte Nox auf seinem Strixwolf [Inaros](/npcs/inaros.md) fliehen. Er wird von den neuen Göttern als Feigling bezeichnet, aber die Helden glauben, dass er zu Unrecht verfolgt wurde.

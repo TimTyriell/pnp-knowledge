@@ -6,8 +6,15 @@ description: Die Kontrollrune ist ein magisches Zeichen, das unter dem großen g
 tags:
 - items
 timestamp: '2025-10-07T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:14Z'
 id: ITEM_KONTROLLRUNE
 subtype: Schriftstück
+sources:
+- id: P-25
+  resource: https://www.youtube.com/watch?v=qVAF_54S8Vw
+  last_modified: '2025-10-07T00:00:00Z'
 ---
 
 Die Kontrollrune ist ein magisches Zeichen, das unter dem großen grünen [Kristall](/items/gruener_kristall.md) in der Mine gefunden wurde. [Rotunas](/characters/rotunas.md) erkennt sie als Kontrollzauber, aber bei dem Versuch, sie zu analysieren, löst sie sich auf. Eine ähnliche Rune wird später im Torso des Golems gefunden, was auf Sabotage hindeutet. Die Rune scheint die Kristalle und den Golem zu kontrollieren.

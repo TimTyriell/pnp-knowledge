@@ -6,8 +6,15 @@ description: Reagiert auf Huludan und den Splitter, giert nach Energie. Es absor
 tags:
 - items
 timestamp: '2026-06-16T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:14Z'
 id: ITEM_ESTEROSSAS_SCHWERT
 subtype: Waffe
+sources:
+- id: P-54
+  resource: https://www.youtube.com/watch?v=qe0ck8hvYpk
+  last_modified: '2026-06-16T00:00:00Z'
 ---
 
 Reagiert auf [Huludan](/deities/huludan.md) und den Splitter, giert nach Energie. Es absorbiert [Vasuls](/deities/vharzul.md) Kraft, als [Esterossa](/characters/esterossa.md) Vasul trifft.

@@ -6,8 +6,15 @@ description: Die Kirche von Steinbachtal diente den letzten Überlebenden als Zu
 tags:
 - locations
 timestamp: '2025-09-09T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:16Z'
 id: LOC_KIRCHE_VON_STEINBACHTAL
 subtype: Gebäude
+sources:
+- id: P-21
+  resource: https://www.youtube.com/watch?v=Zl0qfuI6Goc
+  last_modified: '2025-09-09T00:00:00Z'
 ---
 
 Die Kirche von [Steinbachtal](/locations/steinbachtal.md) diente den letzten Überlebenden als Zuflucht. Hier fand das letzte Gefecht statt, und die gefallenen Verteidiger sowie [Prinz Bran](/npcs/prinz_bran.md) sind begraben. Die [Zwerge](/factions/zwerge.md) haben eine Sprengfalle im Eingang installiert. In der oberen Etage brannte ein Licht.

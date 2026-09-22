@@ -6,7 +6,14 @@ description: Olaf ist ein Wachmann am Tor von Ehrenfels und kennt die Helden per
 tags:
 - npcs
 timestamp: '2026-07-29T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_OLAF
+sources:
+- id: S1-01-A
+  resource: https://www.youtube.com/watch?v=umGyKLkefJI
+  last_modified: '2026-07-29T00:00:00Z'
 ---
 
 Olaf ist ein Wachmann am Tor von [Ehrenfels](/locations/ehrenfels.md) und kennt die Helden persönlich. Er erkennt [Dodo](/characters/dodo.md) sofort, öffnet das Tor und begrüßt die Gruppe überschwänglich: 'Ihr lebt! Ihr lebt!' Er berichtet, dass einiges passiert sei und sie zur Taverne gehen sollten. Auf Dodos Frage nach Nox reagiert er betroffen und erklärt, Nox sei seit der Schlacht verschwunden und [Voras](/npcs/voras.md) sowie [Rotunas](/characters/rotunas.md) seien gestorben. Seine Energie verlässt ihn fast, bis ein anderer Wachmann ihn stützt.

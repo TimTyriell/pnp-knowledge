@@ -6,7 +6,14 @@ description: Ein astraler Elfengeist, der den Hain bewacht. Als Dodo die fleisch
 tags:
 - npcs
 timestamp: '2026-09-01T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:17Z'
 id: NPC_ASTRALER_ELF
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=1E3-Nwv4OEs
+  last_modified: '2026-09-01T00:00:00Z'
 ---
 
 Ein astraler Elfengeist, der den Hain bewacht. Als [Dodo](/characters/dodo.md) die fleischfressende Pflanze verbrennt, taucht er auf und schießt mit magischen Pfeilen auf Dodo, verursacht 21 und später 47 Schaden. Ein zweiter Geist erscheint und beobachtet. Nachdem [Gunther](/characters/gunther.md) in gebrochenem Elfisch beteuert, sie seien Freunde, und Dodo seine Waffen senkt, verschwinden beide Geister. Die Krähen im Hain sind ebenfalls astrale Geister, die den Ort beschützen.

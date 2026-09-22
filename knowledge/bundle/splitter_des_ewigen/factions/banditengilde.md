@@ -6,8 +6,15 @@ description: Die Banditengilde ist eine Gruppierung, die ein Versteck kontrollie
 tags:
 - factions
 timestamp: '2026-01-20T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_BANDITENGILDE
 subtype: Bande
+sources:
+- id: P-34
+  resource: https://www.youtube.com/watch?v=H3ckYdTv4y8
+  last_modified: '2026-01-20T00:00:00Z'
 ---
 
 Die **Banditengilde** ist eine Gruppierung, die ein Versteck kontrolliert und dort mit den Flüchtlingen zusammenlebt. Angeführt wird sie von [Hal](/npcs/hal_harl.md).

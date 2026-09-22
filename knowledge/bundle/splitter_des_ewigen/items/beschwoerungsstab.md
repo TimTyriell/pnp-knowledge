@@ -6,8 +6,15 @@ description: Ein Stab, der von der Schattenkreatur zurückbleibt. Lindo erkennt,
 tags:
 - items
 timestamp: '2025-11-25T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: ITEM_BESCHWOERUNGSSTAB
 subtype: Artefakt
+sources:
+- id: P-31
+  resource: https://www.youtube.com/watch?v=wd5R4fJfngY
+  last_modified: '2025-11-25T00:00:00Z'
 ---
 
 Ein [Stab](/items/lindo_lauts_stab.md), der von der [Schattenkreatur](/npcs/schattenkreatur.md) zurückbleibt. Lindo erkennt, dass er früher benutzt wurde, um Kreaturen aus [Abyssalis](/domains/splitterwelt.md), der Schattenwelt und anderen Reichen der alten Götter zu beschwören. [Die neuen Götter](/deities/neue_goetter.md) haben solche Stäbe vernichtet oder verbannt. Lindo kann ihn gefahrlos aufheben, weil er weiß, wie er die Magie umlenkt. Er spürt das Pulsieren des Objekts; es ist ein mächtiges Artefakt.

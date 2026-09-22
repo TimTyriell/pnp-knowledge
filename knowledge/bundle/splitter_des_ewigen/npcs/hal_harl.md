@@ -6,11 +6,56 @@ description: Harl ist der charismatische Anführer der Silberkerne, einer organi
 tags:
 - npcs
 timestamp: '2026-03-24T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:17Z'
 id: NPC_HAL_HARL
 aliases:
 - HAL
 - Hal (Harl)
 - Hal
+verified:
+  by: human:gm
+relationships:
+- target: characters/dodo
+- target: events/verhandlung_mit_harl
+- target: factions/fluechtlinge
+  note: '**Flüchtlinge:** Harl nimmt die Flüchtlinge gegen Bezahlung auf, behandelt
+    sie nach der Einigung als Gäste und plant, nach dem Winter mit ihnen zur „Hauptstreitmacht“
+    zurückzukehren.'
+- target: factions/silberkerne
+  note: '**Silberkerne:** Harl ist gemeinsam mit Sarina Anführer der Silberkerne.
+    Die Banditenfestung ist eines ihrer Lager; er spricht von der „Banditengilde“,
+    die der Gruppe für immer verpflichtet sei – off…'
+- target: npcs/sarina
+  note: '**Sarina:** Die andere Anführerin der Silberkerne. Harl handelt nicht allein;
+    später warten die Banditen vergeblich auf Befehle von beiden.'
+- target: npcs/voras
+  note: '**Breska und Voras:** Über die Lage in Breska zeigt er sich besorgt, aber
+    auch distanziert („Jetzt braucht der alte Sack Hilfe. Ganz bestimmt nicht.“).
+    Er hält eine Rückkehr zur Hauptstreitmacht für…'
+sources:
+- id: P-23
+  resource: https://www.youtube.com/watch?v=DGzfqVigS0g
+  last_modified: '2025-09-23T00:00:00Z'
+- id: P-24
+  resource: https://www.youtube.com/watch?v=bUT7Mc2hjUY
+  last_modified: '2025-09-30T00:00:00Z'
+- id: P-33
+  resource: https://www.youtube.com/watch?v=w4LB1s9_3rs
+  last_modified: '2026-01-13T00:00:00Z'
+- id: P-34
+  resource: https://www.youtube.com/watch?v=H3ckYdTv4y8
+  last_modified: '2026-01-20T00:00:00Z'
+- id: P-38
+  resource: https://www.youtube.com/watch?v=WOFArbwDDIQ
+  last_modified: '2026-02-24T00:00:00Z'
+- id: P-41
+  resource: https://www.youtube.com/watch?v=HHXxsASLrbQ
+  last_modified: '2026-03-18T00:00:00Z'
+- id: P-43
+  resource: https://www.youtube.com/watch?v=Yj5BWJfg3Ag
+  last_modified: '2026-03-24T00:00:00Z'
 ---
 
 ## Überblick

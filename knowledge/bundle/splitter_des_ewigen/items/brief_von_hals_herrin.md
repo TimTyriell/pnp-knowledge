@@ -6,8 +6,15 @@ description: Der Brief von Hals Herrin ist ein Schriftstück, das Hal der Gruppe
 tags:
 - items
 timestamp: '2025-09-30T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: ITEM_BRIEF_VON_HALS_HERRIN
 subtype: Schriftstück
+sources:
+- id: P-24
+  resource: https://www.youtube.com/watch?v=bUT7Mc2hjUY
+  last_modified: '2025-09-30T00:00:00Z'
 ---
 
 Der Brief von [Hals Herrin](/npcs/hals_herrin.md) ist ein Schriftstück, das Hal der Gruppe zeigt. Darin stimmt die geheimnisvolle Elbin zu, die [Flüchtlinge](/factions/fluechtlinge.md) aufzunehmen, und kündigt an, die Gruppe treffen zu wollen. Hal betont, dass keine Adresse enthalten ist.

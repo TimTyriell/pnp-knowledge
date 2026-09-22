@@ -6,8 +6,15 @@ description: Die alte Burg mit darunterliegender Krypta ist das Ziel der Mission
 tags:
 - locations
 timestamp: '2025-04-15T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:16Z'
 id: LOC_KRYPTA_BURGRUINE
 subtype: Dungeon
+sources:
+- id: P-04
+  resource: https://www.youtube.com/watch?v=YCpAz_syjaY
+  last_modified: '2025-04-15T00:00:00Z'
 ---
 
 Die alte Burg mit darunterliegender Krypta ist das Ziel der Mission. Sie ist von [Bugbären](/factions/bugbaeren.md) besetzt und enthält eine Statue mit Blutopfer, eine versteckte Schatzkammer mit Gold, Skelette und einen Raum mit Altar, in dem [Landra](/npcs/lenra.md) erscheint. Die Gruppe kämpft sich durch und findet Hinweise auf eine Bedrohung des Dorfes [Breska](/locations/breska.md). Am Ende gilt die Krypta als gereinigt, obwohl Landra entkommen ist.

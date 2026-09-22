@@ -6,8 +6,15 @@ description: Rotunas' Metallarm ist seine Hauptwaffe im Nahkampf. Mit ihm schlä
 tags:
 - items
 timestamp: '2026-04-09T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:14Z'
 id: ITEM_METALLARM_VON_ROTUNAS
 subtype: Waffe
+sources:
+- id: P-46
+  resource: https://www.youtube.com/watch?v=vcGkejr8_nI
+  last_modified: '2026-04-09T00:00:00Z'
 ---
 
 [Rotunas](/characters/rotunas.md)' Metallarm ist seine Hauptwaffe im Nahkampf. Mit ihm schlägt er den feindlichen Magier zu Boden und packt später [Nerash](/deities/nerash.md).

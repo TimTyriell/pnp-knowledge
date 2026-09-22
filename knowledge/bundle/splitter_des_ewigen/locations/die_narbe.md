@@ -6,10 +6,20 @@ description: Die Narbe ist ein von Kristallen durchzogener Bereich in Abyssalis,
 tags:
 - locations
 timestamp: '2026-06-10T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: LOC_DIE_NARBE
 subtype: Wildnis
 aliases:
 - Die Narben
+sources:
+- id: P-50
+  resource: https://www.youtube.com/watch?v=xEcGJeaNixI
+  last_modified: '2026-05-19T00:00:00Z'
+- id: P-53
+  resource: https://www.youtube.com/watch?v=_3tLSiT1tck
+  last_modified: '2026-06-10T00:00:00Z'
 ---
 
 Die **[Narbe](/locations/narben.md)** ist ein von Kristallen durchzogener Bereich in [Abyssalis](/domains/splitterwelt.md), in dem sich [Vorgul'tar](/deities/vorgul_tar.md) versteckt. Das Tal ist von roten und lilafarbenen Lichtern erleuchtet und von starker Magie erfüllt, die [Lunara](/characters/lunara_velora.md) bereits aus der Ferne spürte. [Anhänger Vorgul'tars](/factions/anhaenger_vorgul_tars.md) bewachen den Ort. Die Gruppe zog in die Narbe, um dort Lunaras Bruder zu suchen.

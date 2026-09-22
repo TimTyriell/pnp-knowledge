@@ -6,9 +6,19 @@ description: Die geisterhafte Gestalt ist eine astral projizierte, schemenhafte 
 tags:
 - npcs
 timestamp: '2025-09-30T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:17Z'
 id: NPC_GEISTERHAFTE_GESTALT
 aliases:
 - Die geisterhafte Gestalt
+sources:
+- id: P-17
+  resource: https://www.youtube.com/watch?v=vHIjua0BZ9Y
+  last_modified: '2025-08-12T00:00:00Z'
+- id: P-24
+  resource: https://www.youtube.com/watch?v=bUT7Mc2hjUY
+  last_modified: '2025-09-30T00:00:00Z'
 ---
 
 Die **geisterhafte Gestalt** ist eine astral projizierte, schemenhafte Erscheinung mit Kronenansatz und langem Mantel. Sie fungiert als Wächterin des Berges, überwacht die Passage an der letzten Grenze und tritt im Dienst von [Belorus](/npcs/belorus.md) auf. Der Gruppe um [Rotunas](/characters/rotunas.md) begegnet sie in zwei Situationen: beim Versuch, die Grenze zu passieren, und nach dem Tod des Generals.

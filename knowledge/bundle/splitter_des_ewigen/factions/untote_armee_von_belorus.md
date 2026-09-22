@@ -6,8 +6,15 @@ description: Die Untote Armee von Belorus ist die Kriegsmacht des schwarzen Pala
 tags:
 - factions
 timestamp: '2026-01-13T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_UNTOTE_ARMEE_VON_BELORUS
 subtype: Armee
+sources:
+- id: P-33
+  resource: https://www.youtube.com/watch?v=w4LB1s9_3rs
+  last_modified: '2026-01-13T00:00:00Z'
 ---
 
 Die **Untote [Armee von Belorus](/factions/belorus_untotenarmee.md)** ist die Kriegsmacht des schwarzen Paladins [Belorus](/npcs/belorus.md). Sie besteht aus einer großen Zahl untoter Kreaturen und tritt als zentrale Bedrohung der Kampagne in Erscheinung, indem sie das Dorf [Breska](/locations/breska.md) belagert. Belorus selbst ist weder ein Lich noch eine Gottheit, sondern ein mächtiger schwarzer Paladin, der die Armee anführt.

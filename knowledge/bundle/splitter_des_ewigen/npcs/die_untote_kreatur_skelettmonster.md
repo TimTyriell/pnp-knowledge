@@ -6,7 +6,14 @@ description: Diese groteske untote Gestalt mit langen Armen und schwarzer, klebr
 tags:
 - npcs
 timestamp: '2025-10-28T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:17Z'
 id: NPC_DIE_UNTOTE_KREATUR_SKELETTMONSTER
+sources:
+- id: P-28
+  resource: https://www.youtube.com/watch?v=V6NzNakqxXM
+  last_modified: '2025-10-28T00:00:00Z'
 ---
 
 Diese groteske untote Gestalt mit langen Armen und schwarzer, klebriger Flüssigkeit greift die Gruppe mehrfach an. [Cookie](/characters/cookie.md) vernichtet sie zunächst mit 'Wishes in Tangle', aber sie regeneriert sich und kehrt zurück. Später wird sie von [Lindo Laut](/characters/lindo_laut.md) mit 'Mythic Setter' (Ketten) an der Wand festgehalten, während [Dodo](/characters/dodo.md) die flammende Waffe fertigstellt. Dodos Treffer mit dem brennenden [Dolch](/items/dolch.md) lässt sie zu Staub zerfallen. Ihre Asche/schwarze Essenz wird eingesammelt.

@@ -6,7 +6,14 @@ description: Ein menschlicher Mann, schwer verletzt, mit schwarzer Flüssigkeit 
 tags:
 - npcs
 timestamp: '2025-11-25T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:19Z'
 id: NPC_VERWUNDETER_BOTE
+sources:
+- id: P-31
+  resource: https://www.youtube.com/watch?v=wd5R4fJfngY
+  last_modified: '2025-11-25T00:00:00Z'
 ---
 
 Ein menschlicher Mann, schwer verletzt, mit schwarzer Flüssigkeit in den Wunden. Er liegt im Schnee und blutet stark. Bevor er stirbt, zeigt Lindo per Gedankenlesen eine Vision: Er war Gefangener von Untoten, ein untoter General und ein untoter Magier waren anwesend. Der Magier flüsterte: „Wir sind im [Wald](/locations/wald.md) am Ende der Route und warten auf sie.“ Der Mann wiederholt diese Botschaft. [Esterossa](/characters/esterossa.md) versucht ihn zu heilen, aber er stirbt; seine Seele wird in die [Splitterwelt](/domains/splitterwelt.md) gezogen. Lindo versucht, den Fluch aufzusaugen, beschwört aber schwarze Ranken.

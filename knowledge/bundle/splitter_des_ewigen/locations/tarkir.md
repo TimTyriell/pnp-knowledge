@@ -6,10 +6,23 @@ description: Tarkir ist die ursprüngliche Heimat von Dodo und Vargo. Beide verl
 tags:
 - locations
 timestamp: '2026-08-25T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:16Z'
 id: LOC_TARKIR
 subtype: Siedlung
 aliases:
 - Takir
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=piUv11DCwDw
+  last_modified: '2026-08-12T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=10swvSz6k7U
+  last_modified: '2026-08-18T00:00:00Z'
+- id: '3'
+  resource: https://www.youtube.com/watch?v=1Cjj3OVqiYA
+  last_modified: '2026-08-25T00:00:00Z'
 ---
 
 Tarkir ist die ursprüngliche Heimat von [Dodo](/characters/dodo.md) und [Vargo](/npcs/vargo.md). Beide verließen die Region vor zwölf Jahren. Tarkir war zwölf Jahre lang von der Außenwelt abgeschottet; inzwischen wurde dort ein Hafen erschlossen und der Handel belebt sich wieder. Bekannt ist die Region für ihr magieresistentes Obsidian und als Herkunftsort zahlreicher seltsamer Kreaturen.

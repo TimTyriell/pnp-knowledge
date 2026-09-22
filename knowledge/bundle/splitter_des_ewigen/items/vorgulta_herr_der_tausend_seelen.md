@@ -6,8 +6,15 @@ description: Das Buch 'Vorgulta, Herr der Tausend Seelen' wurde von Tyrael gesch
 tags:
 - items
 timestamp: '2026-03-03T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: ITEM_VORGULTA_HERR_DER_TAUSEND_SEELEN
 subtype: Schriftstück
+sources:
+- id: P-39
+  resource: https://www.youtube.com/watch?v=BRUNuNKTeOg
+  last_modified: '2026-03-03T00:00:00Z'
 ---
 
 Das Buch '[Vorgulta](/deities/vorgul_tar.md), Herr der Tausend Seelen' wurde von [Tyrael](/npcs/tyrael.md) geschrieben, einem Anhänger Vorgultas. Es ist relativ neu und unbeschädigt, beschreibt Vorgulta, [Abyssalis](/domains/splitterwelt.md) und Seelenmagie. [Lindo Laut](/characters/lindo_laut.md) liest darin, dass sieben Rezeptpunkte für Seelenmagie genannt werden, der letzte jedoch absichtlich ausgelassen wurde.

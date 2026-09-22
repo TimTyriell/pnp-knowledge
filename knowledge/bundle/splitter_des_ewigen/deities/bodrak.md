@@ -6,8 +6,20 @@ description: Bodrak ist der Gott der Stille. Der folgende Eintrag hält den bish
 tags:
 - deities
 timestamp: '2025-05-14T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DEITY_BODRAK
 subtype: Sonstiges
+relationships:
+- target: factions/gruppe_rotunas_freunde
+  note: '**Zur Gruppe:** Celin erkennt die Statuen und kennt die Legende zumindest
+    in Grundzügen. Dodo hat keinerlei religiöses Wissen über Bodrak. Die Gruppe entscheidet
+    sich dafür, Bodrak und seine Statuen…'
+sources:
+- id: P-08
+  resource: https://www.youtube.com/watch?v=5eAEDN5ra-4
+  last_modified: '2025-05-14T00:00:00Z'
 ---
 
 ## Überblick

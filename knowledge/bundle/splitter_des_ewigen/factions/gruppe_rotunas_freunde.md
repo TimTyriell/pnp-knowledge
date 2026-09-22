@@ -6,8 +6,18 @@ description: Rotunas Freunde ist eine Abenteurergruppe, die sich den Namen bei e
 tags:
 - factions
 timestamp: '2025-08-12T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_GRUPPE_ROTUNAS_FREUNDE
 subtype: Gilde
+relationships:
+- target: deities/bodrak
+- target: npcs/slix_vasul
+sources:
+- id: P-17
+  resource: https://www.youtube.com/watch?v=vHIjua0BZ9Y
+  last_modified: '2025-08-12T00:00:00Z'
 ---
 
 **[Rotunas](/characters/rotunas.md) Freunde** ist eine Abenteurergruppe, die sich den Namen bei einem Tavernenbesuch selbst gab. Sie besteht aus mehreren Gefährten und ist zum Heiligtum unterwegs, um dort Ruhm und Erfahrung zu sammeln.

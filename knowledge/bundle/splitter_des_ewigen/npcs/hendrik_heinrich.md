@@ -1,12 +1,38 @@
 ---
 type: NPC
 title: Hendrik
-description: 'Auf Nachfragen der Gruppe präzisiert er: Die Zahl von zwei Dutzend entspricht
-  24 Personen; der größte Teil der Banditen ist zu diesem Zeitp…'
+description: Hendrik Heinrich, meist Hendrik genannt, ist Bauer und Besitzer der Heinrich-Farm
+  und arbeitet als Schmied. Er ist mit Gerda verheiratet. D…
 tags:
 - npcs
 timestamp: '2026-03-23T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:11:56Z'
 id: NPC_HENDRIK_HEINRICH
+verified:
+  by: human:gm
+relationships:
+- target: characters/nina
+  note: '**Nina**: Ihre Rede beeinflusst Hendrik so stark, dass er die Seiten wechselt
+    und die Banditen verrät (Beleg 1).'
+- target: factions/silberkerne
+  note: '**Silberkerne**: Die Organisation nutzt die Heinrich-Farm als Unterschlupf.
+    Hendrik ist ihr widerwilliger Kollaborateur und beherbergt die Zelle unter Florans
+    Führung (Beleg 1).'
+- target: npcs/familie_schmid
+  note: '**Familie**: Zur Familie gehört mindestens ein Sohn; dieser wirkt während
+    der Begegnung als Einziger noch kampfbereit, während der Rest hoffnungslos ist
+    (Beleg 1).'
+- target: npcs/floran
+  note: '**Floran**: Führt die Silberkerne-Zelle auf der Heinrich-Farm an und hält
+    sich laut Hendrik im Untergrund auf (Beleg 1).'
+- target: npcs/gerda_heinrich
+  note: '**Gerda**: Hendriks Ehefrau (Beleg 1).'
+sources:
+- id: P-42
+  resource: https://www.youtube.com/watch?v=niVxKtdQBn0
+  last_modified: '2026-03-23T00:00:00Z'
 ---
 
 ## Überblick

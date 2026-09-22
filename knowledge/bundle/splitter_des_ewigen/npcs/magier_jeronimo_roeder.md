@@ -6,7 +6,14 @@ description: Jeronimo Röder ist ein alter Magier, der in einem Haus in Breska l
 tags:
 - npcs
 timestamp: '2025-06-25T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_MAGIER_JERONIMO_ROEDER
+sources:
+- id: P-13
+  resource: https://www.youtube.com/watch?v=tpkO9uGw6-I
+  last_modified: '2025-06-25T00:00:00Z'
 ---
 
 Jeronimo Röder ist ein alter Magier, der in einem Haus in [Breska](/locations/breska.md) lebt. Er erkennt die Verderbnis des Amuletts des [Duran](/deities/heiliger_duran.md) sofort und warnt [Lindo Laut](/characters/lindo_laut.md) eindringlich davor, es zu benutzen. Er bietet sogar an, das Amulett zu kaufen, wird aber abgewiesen. Er schenkt der Gruppe einen [Rabenstein](/items/rabenstein.md) zur Kommunikation und identifiziert [Rotunas](/characters/rotunas.md)' [Schlüssel](/items/magischer_schluessel.md) als Portalschlüssel. Er ist überrascht von der Menge einzigartiger Artefakte, die die Gruppe bei sich trägt.

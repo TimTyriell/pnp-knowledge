@@ -6,8 +6,15 @@ description: An der Brücke traf die Gruppe auf zwei Froschwächter, die einen W
 tags:
 - events
 timestamp: '2025-06-10T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: EVENT_BEGEGNUNG_MIT_FROSCHWAECHTERN
 subtype: Verhandlung
+sources:
+- id: P-11
+  resource: https://www.youtube.com/watch?v=cLkCu3Iq3y8
+  last_modified: '2025-06-10T00:00:00Z'
 ---
 
 An der Brücke traf die Gruppe auf zwei [Froschwächter](/npcs/froschwaechter.md), die einen Wegzoll forderten. Durch das Anbieten von Fliegen mit magischer Hand konnten sie die [Wächter](/npcs/waechter.md) ablenken und passieren, ohne zu kämpfen oder zu zahlen.

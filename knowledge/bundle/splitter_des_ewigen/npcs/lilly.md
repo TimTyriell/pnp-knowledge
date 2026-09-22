@@ -6,7 +6,14 @@ description: Lilly ist eine Sukkubus, die in der neuen Gilde als Empfangsdame ar
 tags:
 - npcs
 timestamp: '2025-09-17T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_LILLY
+sources:
+- id: P-22
+  resource: https://www.youtube.com/watch?v=AhIT8dcxw2o
+  last_modified: '2025-09-17T00:00:00Z'
 ---
 
 Lilly ist eine Sukkubus, die in der neuen [Gilde](/factions/gilde_von_ehrenfels.md) als Empfangsdame arbeitet. Sie begrüßt die Gruppe freundlich, flirtet mit [Esterossa](/characters/esterossa.md) und kündigt sie bei den Anführern an.

@@ -6,10 +6,42 @@ description: Huludan ist ein Titan – ein uraltes Wesen, das im Splitter des Ew
 tags:
 - deities
 timestamp: '2026-06-16T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DEITY_HULUDAN
 subtype: Sonstiges
 aliases:
 - Holodarn
+verified:
+  by: human:gm
+relationships:
+- target: characters/dante
+- target: characters/esterossa
+- target: deities/vharzul
+  note: '**Vhar''Zul:** Vhar''Zul will Huludan befreien und sieht in ihm den Schlüssel,
+    um die Welt ohne Götter neu zu gestalten. Er spricht Huludans Namen aus, um dessen
+    Macht zu beschwören. (Beleg [P-54])'
+- target: deities/vorgul_tar
+  note: '**Vorgulta:** Huludan lässt durch seinen Diener die Vernichtung Vorgultas
+    fordern; das übergebene Schwert ist speziell dazu geeignet, Vorgulta zu verletzen.
+    (Beleg [P-49])'
+- target: items/splitter_des_ewigen
+  note: '**Splitter des Ewigen:** Der Ort, an dem Huludan gefangen ist; Huludans Name
+    bringt die Höhle zum Leuchten. (Beleg [P-54])'
+- target: npcs/liam_velora
+  note: '**Liam:** Huludans Diener weiß, dass Liam in den Narben ist, und gibt diese
+    Information an die Gefährten weiter. (Beleg [P-49])'
+sources:
+- id: P-49
+  resource: https://www.youtube.com/watch?v=4afPD9Q_5AY
+  last_modified: '2026-05-13T00:00:00Z'
+- id: P-53
+  resource: https://www.youtube.com/watch?v=_3tLSiT1tck
+  last_modified: '2026-06-10T00:00:00Z'
+- id: P-54
+  resource: https://www.youtube.com/watch?v=qe0ck8hvYpk
+  last_modified: '2026-06-16T00:00:00Z'
 ---
 
 ## Überblick

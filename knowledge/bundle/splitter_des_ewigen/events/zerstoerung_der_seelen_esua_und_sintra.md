@@ -6,11 +6,18 @@ description: Nachdem Lindo Laut auf dem Thron Platz genommen hat, nutzt Tyrex di
 tags:
 - events
 timestamp: '2025-09-02T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:19:07Z'
 id: EVENT_ZERSTOERUNG_DER_SEELEN_ESUA_UND_SINTRA
 subtype: Ritual
+sources:
+- id: P-19
+  resource: https://www.youtube.com/watch?v=TLZOH7TlGhk
+  last_modified: '2025-09-02T00:00:00Z'
 ---
 
-Nachdem [Lindo Laut](/characters/lindo_laut.md) auf dem [Thron](/items/thron.md) Platz genommen hat, nutzt [Tyrex](/deities/thyrex.md) die Macht des Throns, um die Seelen [Esua](/npcs/esua.md) und [Sintra](/deities/sintra.md) im Amulett endgültig zu zerstören. [Dormak](/npcs/dormak.md) flieht daraufhin entsetzt.
+Nachdem [Lindo Laut](/characters/lindo_laut.md) auf dem [Thron](/items/thron.md) Platz genommen hat, nutzt [Tyrex](/deities/thyrex.md) die Macht des Throns, um die Seelen [Esua](/deities/esua.md) und [Sintra](/deities/sintra.md) im Amulett endgültig zu zerstören. [Dormak](/npcs/dormak.md) flieht daraufhin entsetzt.
 
 # Belege
 

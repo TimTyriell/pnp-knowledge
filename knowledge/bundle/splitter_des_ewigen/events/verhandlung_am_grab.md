@@ -6,8 +6,15 @@ description: Vor dem Eingang zum Grab steht ein Soldat von Belorus. Dodo geht vo
 tags:
 - events
 timestamp: '2026-03-10T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_VERHANDLUNG_AM_GRAB
 subtype: Verhandlung
+sources:
+- id: P-40
+  resource: https://www.youtube.com/watch?v=Kr9_AC2XtOw
+  last_modified: '2026-03-10T00:00:00Z'
 ---
 
 Vor dem Eingang zum Grab steht ein Soldat von [Belorus](/npcs/belorus.md). [Dodo](/characters/dodo.md) geht vor und verhandelt. Der Soldat erkennt Dodo als 'Trollschlechter' und erlaubt ihm, allein zu [Voras](/npcs/voras.md) zu gehen. Die anderen müssen draußen bleiben oder Waffen abgeben. [Ser Eulenweiss](/npcs/ser_eulenweiss.md) bietet an, draußen zu warten.

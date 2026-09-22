@@ -6,8 +6,15 @@ description: Nach einem Hornstoß greifen koordinierte Untote die Gruppe an. Die
 tags:
 - events
 timestamp: '2025-11-25T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:11Z'
 id: EVENT_KAMPF_GEGEN_DIE_UNTOTENHORDE
 subtype: Kampf
+sources:
+- id: P-31
+  resource: https://www.youtube.com/watch?v=wd5R4fJfngY
+  last_modified: '2025-11-25T00:00:00Z'
 ---
 
 Nach einem Hornstoß greifen koordinierte Untote die Gruppe an. Die Bogenschützen konzentrieren sich auf [Rotunas](/characters/rotunas.md), die Krieger auf [Dodo](/characters/dodo.md). Dodo tötet mit einem 360-Grad-Feueratem sechs Skelette. Rotunas setzt eine massive Ice-Spikes-Attacke ein und vernichtet die restlichen sichtbaren Gegner. [Die Untoten](/factions/belorus_untotenarmee.md) ziehen sich daraufhin nach Nordosten zurück.

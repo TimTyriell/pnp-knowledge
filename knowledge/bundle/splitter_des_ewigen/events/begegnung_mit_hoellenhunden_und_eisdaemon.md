@@ -6,8 +6,15 @@ description: In der Nähe des Turms treffen Dodo, Lunara und Lindo Laut auf drei
 tags:
 - events
 timestamp: '2026-04-14T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: EVENT_BEGEGNUNG_MIT_HOELLENHUNDEN_UND_EISDAEMON
 subtype: Kampf
+sources:
+- id: P-47
+  resource: https://www.youtube.com/watch?v=1Jyu92P7_Fg
+  last_modified: '2026-04-14T00:00:00Z'
 ---
 
 In der Nähe des Turms treffen [Dodo](/characters/dodo.md), Lunara und [Lindo Laut](/characters/lindo_laut.md) auf drei Höllenhunde und einen dämonischen Kämpfer mit Axt. Dodo schüchtert die Hunde mit Flammen ein, tötet einen, und Lunara bringt den Dämon durch ihre Präsenz dazu, sich zurückzuziehen.

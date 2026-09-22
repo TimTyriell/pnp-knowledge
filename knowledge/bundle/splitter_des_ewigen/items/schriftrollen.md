@@ -6,10 +6,34 @@ description: Der Eintrag „Schriftrollen“ bündelt verschiedene, für sich ge
 tags:
 - items
 timestamp: '2026-08-04T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:14Z'
 id: ITEM_SCHRIFTROLLEN
 subtype: Schriftstück
 aliases:
 - Schriftrolle
+verified:
+  by: human:gm
+relationships:
+- target: characters/lindo_laut
+  note: 'Lindo Laut: Empfing die letzte heilige Schriftrolle, setzte sie aber nicht
+    ein.'
+- target: locations/breska
+  note: 'Breska: Die Altar-Schriftrollen nennen Breska als Aufenthaltsort des gesuchten
+    Magiers.'
+- target: npcs/sandro
+  note: 'Sandro: Nutzer der heiligen Schriftrollen im Kampf.'
+sources:
+- id: P-04
+  resource: https://www.youtube.com/watch?v=YCpAz_syjaY
+  last_modified: '2025-04-15T00:00:00Z'
+- id: P-40
+  resource: https://www.youtube.com/watch?v=Kr9_AC2XtOw
+  last_modified: '2026-03-10T00:00:00Z'
+- id: S1-02-A
+  resource: https://www.youtube.com/watch?v=qRj2t3wQHfs
+  last_modified: '2026-08-04T00:00:00Z'
 ---
 
 ## Überblick

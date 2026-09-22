@@ -6,10 +6,32 @@ description: Die Verhandlung mit Harl war eine einmalige, gemeinsame Unterredung
 tags:
 - events
 timestamp: '2025-09-23T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_VERHANDLUNG_MIT_HARL
 subtype: Verhandlung
 aliases:
 - Verhandlung mit Hal
+verified:
+  by: human:gm
+relationships:
+- target: characters/dodo
+  note: '**Dodo und Esterossa:** Nahmen an der Gruppenverhandlung teil; Esterossa
+    brachte eine alternative Einschätzung zu Harls Herkunft ein.'
+- target: characters/lindo_laut
+  note: '**Lindo Laut:** Vertrat die Gruppe in der Verhandlung und versuchte, den
+    geforderten Preis hinsichtlich des Goldwertes einzuschätzen.'
+- target: factions/belorus_untotenarmee
+  note: '**Untote:** Ihr Angriff führte zur nachträglichen Erhöhung des Preises durch
+    Harl.'
+- target: npcs/hal_harl
+  note: '**Harl:** Verhandlungspartner der Gruppe. Er forderte die Truhe Gold und
+    erhöhte später den Preis.'
+sources:
+- id: P-23
+  resource: https://www.youtube.com/watch?v=DGzfqVigS0g
+  last_modified: '2025-09-23T00:00:00Z'
 ---
 
 ## Überblick

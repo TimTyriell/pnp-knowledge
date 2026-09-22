@@ -6,8 +6,15 @@ description: Die Grottenschrate sind eine feindliche Kreaturenart. Sie traten ne
 tags:
 - factions
 timestamp: '2025-05-06T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_GROTTENSCHRATE
 subtype: Bande
+sources:
+- id: P-07
+  resource: https://www.youtube.com/watch?v=e0v6AFGd4mE
+  last_modified: '2025-05-06T00:00:00Z'
 ---
 
 # Grottenschrate

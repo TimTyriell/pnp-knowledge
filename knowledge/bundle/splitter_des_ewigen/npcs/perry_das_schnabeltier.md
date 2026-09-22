@@ -6,13 +6,68 @@ description: Perry das Schnabeltier ist ein tierischer Begleiter in der Kampagne
 tags:
 - npcs
 timestamp: '2025-11-18T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_PERRY_DAS_SCHNABELTIER
 aliases:
 - Parry
 - Parry das Schnabeltier
 - Perry
 - Perry das Schnabeltier
-status: disputed
+verified:
+  by: human:gm
+review_status: disputed
+relationships:
+- target: characters/cookie
+  note: '**Cookie:** Perry wird überwiegend als ihr Begleiter geführt; er folgt ihr,
+    bleibt bei ihr, wird von ihr gesucht und beruhigt.'
+- target: characters/esterossa
+  note: '**Esterossa:** Eine frühe Belegstelle nennt ihn als dessen Begleiter; in
+    späteren Sessions tritt Perry an Cookies Seite auf (siehe „# Offene Konflikte“).'
+- target: characters/lunara_velora
+  note: '**Lunara Velora:** In einer späteren Session nähert Perry sich ihr unaufgefordert
+    und lässt sich streicheln; die Gruppe wertet das als untypisch und als gutes Zeichen.'
+- target: characters/nyrella
+  note: '**Nyrella:** Als die Gruppe in die Zwischenebene teleportiert wird, bleibt
+    Perry bei Nyrella.'
+sources:
+- id: P-01
+  resource: https://www.youtube.com/watch?v=ROCKGeeRUFw
+  last_modified: '2025-03-26T00:00:00Z'
+- id: P-02
+  resource: https://www.youtube.com/watch?v=LZIuUzc3F18
+  last_modified: '2025-04-01T00:00:00Z'
+- id: P-08
+  resource: https://www.youtube.com/watch?v=5eAEDN5ra-4
+  last_modified: '2025-05-14T00:00:00Z'
+- id: P-09
+  resource: https://www.youtube.com/watch?v=bamCIB_CkR8
+  last_modified: '2025-05-27T00:00:00Z'
+- id: P-15
+  resource: https://www.youtube.com/watch?v=BRRCUgW4xRo
+  last_modified: '2025-07-22T00:00:00Z'
+- id: P-18
+  resource: https://www.youtube.com/watch?v=-XbO3FLSL_I
+  last_modified: '2025-08-20T00:00:00Z'
+- id: P-20
+  resource: https://www.youtube.com/watch?v=vo1xnyLQDJk
+  last_modified: '2025-09-06T00:00:00Z'
+- id: P-24
+  resource: https://www.youtube.com/watch?v=bUT7Mc2hjUY
+  last_modified: '2025-09-30T00:00:00Z'
+- id: P-25
+  resource: https://www.youtube.com/watch?v=qVAF_54S8Vw
+  last_modified: '2025-10-07T00:00:00Z'
+- id: P-27
+  resource: https://www.youtube.com/watch?v=sxFhbtwoefA
+  last_modified: '2025-10-21T00:00:00Z'
+- id: P-28
+  resource: https://www.youtube.com/watch?v=V6NzNakqxXM
+  last_modified: '2025-10-28T00:00:00Z'
+- id: P-30
+  resource: https://www.youtube.com/watch?v=w__ahowb9p0
+  last_modified: '2025-11-18T00:00:00Z'
 ---
 
 ## Überblick

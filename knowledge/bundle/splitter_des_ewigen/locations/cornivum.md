@@ -1,13 +1,33 @@
 ---
 type: Location
 title: Cornivum
-description: Cornivum ist ein kleines Sumpfdorf im Nordwesten des Sumpfes, das als
-  Außenposten dient. Die Häuser stehen auf Stelzen, und es gibt ein Lag…
+description: Cornivum ist ein Sumpfdorf im Nordwesten des Sumpfes, das als abgeschiedener
+  Außenposten dient. Die Häuser stehen auf Stelzen, und es gibt…
 tags:
 - locations
 timestamp: '2025-06-10T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:11:55Z'
 id: LOC_CORNIVUM
 subtype: Siedlung
+verified:
+  by: human:gm
+relationships:
+- target: factions/gilde_von_ehrenfels
+  note: 'Die Gilde: kündigte den Besuch der Gruppe per Rabe an.'
+- target: npcs/lenra
+  note: 'Landra: nutzte Cornivum für ihre dunkle Magie, verursachte das Wachstum des
+    Dorfes und züchtete dort eine Armee aus Gnollen, Waldschraten und Untoten.'
+- target: npcs/rodek
+  note: 'Rodek: Ältester des Dorfes, empfing die Heldengruppe.'
+sources:
+- id: P-10
+  resource: https://www.youtube.com/watch?v=jtYR4Je0a18
+  last_modified: '2025-06-03T00:00:00Z'
+- id: P-11
+  resource: https://www.youtube.com/watch?v=cLkCu3Iq3y8
+  last_modified: '2025-06-10T00:00:00Z'
 ---
 
 ## Überblick

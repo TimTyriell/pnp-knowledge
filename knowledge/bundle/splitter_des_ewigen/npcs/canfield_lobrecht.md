@@ -6,7 +6,14 @@ description: Kahnführer Lobrecht ist ein alter Freund der Helden und kommt ihne
 tags:
 - npcs
 timestamp: '2026-07-29T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:17Z'
 id: NPC_CANFIELD_LOBRECHT
+sources:
+- id: S1-01-A
+  resource: https://www.youtube.com/watch?v=umGyKLkefJI
+  last_modified: '2026-07-29T00:00:00Z'
 ---
 
 [Kahnführer Lobrecht](/npcs/lobrecht.md) ist ein alter Freund der Helden und kommt ihnen in der Taverne zusammen mit seiner Partnerin [Miamani](/npcs/miaomani.md) entgegen. Er begrüßt sie herzlich und erklärt auf [Dodos](/characters/dodo.md) Frage, warum sie als Helden gefeiert werden: Nox habe vor seinem Verschwinden verkündet, dass die Gruppe auf eine Mission zur Rettung der Welt sei. Lobrecht berichtet auch, dass er Nox schwer verwundet gesehen habe, bevor Engel erschienen. Er wirkt gezeichnet von den Ereignissen, ist aber erleichtert über die Rückkehr.

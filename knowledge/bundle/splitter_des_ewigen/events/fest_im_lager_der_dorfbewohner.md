@@ -6,8 +6,15 @@ description: Am Abend feiern die geretteten Dorfbewohner die Gruppe trotz der An
 tags:
 - events
 timestamp: '2025-09-30T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:11Z'
 id: EVENT_FEST_IM_LAGER_DER_DORFBEWOHNER
 subtype: Fest
+sources:
+- id: P-24
+  resource: https://www.youtube.com/watch?v=bUT7Mc2hjUY
+  last_modified: '2025-09-30T00:00:00Z'
 ---
 
 Am Abend feiern die geretteten Dorfbewohner die Gruppe trotz der Anspannung. Die Kinder tanzen, [Nairuk](/npcs/nyruk.md) spielt mit ihnen, und die Charaktere reflektieren ihre Gefühle. [Roland](/npcs/roland.md) erzählt eine Geschichte, und alle genießen einen Moment der Ruhe.

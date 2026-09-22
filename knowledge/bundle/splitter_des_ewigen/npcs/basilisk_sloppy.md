@@ -6,10 +6,22 @@ description: Sloppy ist ein junger, noch nicht ausgewachsener Basilisk mit einer
 tags:
 - npcs
 timestamp: '2026-08-25T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:17Z'
 id: NPC_BASILISK_SLOPPY
 aliases:
 - Sloppy
-status: disputed
+review_status: disputed
+relationships:
+- target: characters/dodo
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=10swvSz6k7U
+  last_modified: '2026-08-18T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=1Cjj3OVqiYA
+  last_modified: '2026-08-25T00:00:00Z'
 ---
 
 Sloppy ist ein junger, noch nicht ausgewachsener Basilisk mit einer Affenpfoten-Gravur auf der Schulter. Die Gefährten um [Dodo](/characters/dodo.md) treffen auf ihn, als er seinem Besitzer entlaufen ist. Die erste Begegnung ist angespannt, doch Dodo gewinnt das Vertrauen des Tiers; am Ende kehrt Sloppy zu seinem Besitzer zurück.

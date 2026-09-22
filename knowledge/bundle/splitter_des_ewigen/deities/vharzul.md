@@ -1,11 +1,14 @@
 ---
 type: Deity
 title: Vhar'Zul
-description: 'In der Kampagne weicht das tatsächliche Auftreten Vhar''Zuls deutlich
-  von diesem Bild ab: Er erscheint als machthungriger, körperbesetzender…'
+description: Vhar'Zul, „der Gerissene“ und „der Geflüsterte Thron“, ist ein alter
+  Gott, der in der Überlieferung als Gott der List, der Intrigen und des…
 tags:
 - deities
 timestamp: '2026-08-12T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:19:07Z'
 id: DEITY_VHARZUL
 subtype: Alter Gott
 aliases:
@@ -19,6 +22,112 @@ aliases:
 - Valsor
 - Varsurs
 - Varzul
+verified:
+  by: human:gm
+relationships:
+- target: characters/dante
+- target: characters/dodo
+  note: '**Dodo:** Vhar''Zul verleiht Dodos Streitkolben Energie, damit Dodo den Dämon
+    töten kann; sein Wunchangebot an Dodo ist „Handel“ [10][15].'
+- target: characters/esterossa
+  note: '**Esterossa:** Esterossa zerschlägt Vhar''Zuls kleinen Kristall mit dem leeren
+    Schwert und absorbiert seine Energie; er ist derjenige, der Vhar''Zul vernichtet
+    [15][16].'
+- target: characters/lindo_laut
+  note: '**Lindo Laut:** Lindo trug zunächst einen Teil Vhar''Zuls in seinem Amulett;
+    die beiden verband eine enge Beziehung, insbesondere über Thyrex. Vhar''Zul versprach
+    Lindo später die „rechte Hand“ und ber…'
+- target: characters/lunara_velora
+  note: '**Lunara Velora:** Vhar''Zul war ihre Bezugsperson und ihr Meister in Abyssalis;
+    er gab ihr eine zweite Chance, Heilung und Hoffnung [7][12][16]. Nach seinem Tod
+    verlor die Kontrollrune, die sie trug,…'
+- target: deities/huludan
+  note: '**Huludan:** Vhar''Zuls eigentliches Ziel ist Holodarns Befreiung, um die
+    Welt ohne Götter neu zu gestalten [15].'
+- target: deities/kollmereth
+- target: deities/nerash
+  note: '**Nerash:** Nerash stellt eine magische Schriftrolle her, die bei Vhar''Zuls
+    Vernichtung eine Rolle spielt; Vitius nennt Vhar''Zul als Beispiel für Nerashs
+    frühere Hilfe [19]. Die genaue Funktion der S…'
+- target: deities/tarvok_der_erdrichter
+- target: deities/thyrex
+  note: '**Tyrex:** Vhar''Zul übernimmt Tyrex'' Körper und formt sich eine ähnliche
+    Gestalt; in Vhar''Zuls Stimme ist der Charakterzug von Tyrex wiedererkennbar [2].'
+- target: deities/vorgul_tar
+  note: '**Vorgultar:** Vhar''Zul warnt vor Vorgultar und gesteht, dessen Gegenwehr
+    unterschätzt zu haben [14].'
+- target: items/amulett_des_heiligen_duran
+- target: npcs/belorus
+  note: '**Belorus:** Belorus fürchtet, dass Vhar''Zul wieder an Macht gewinnen könnte;
+    er warnt, dann würden sich die alten Götter erheben [6].'
+- target: npcs/dormak
+  note: '**Dormak:** Dormak, Komplize der Hag Landra, wollte Vhar''Zuls ursprünglichen
+    Teil zurückholen, nicht die besonnene Persönlichkeit; der wiedererstarkte Vhar''Zul
+    löschte ihn aus.'
+- target: npcs/liam_velora
+- target: npcs/nox
+  note: '**Nox:** Nox vermutet, dass Vhar''Zul in Abyssalis gefangen ist und keinen
+    Ausweg hat [7].'
+- target: npcs/slix_vasul
+- target: npcs/tyrael
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=-XbO3FLSL_I
+  last_modified: '2025-08-20T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=vo1xnyLQDJk
+  last_modified: '2025-09-06T00:00:00Z'
+- id: '3'
+  resource: https://www.youtube.com/watch?v=Zl0qfuI6Goc
+  last_modified: '2025-09-09T00:00:00Z'
+- id: '4'
+  resource: https://www.youtube.com/watch?v=bUT7Mc2hjUY
+  last_modified: '2025-09-30T00:00:00Z'
+- id: '5'
+  resource: https://www.youtube.com/watch?v=w4LB1s9_3rs
+  last_modified: '2026-01-13T00:00:00Z'
+- id: '6'
+  resource: https://www.youtube.com/watch?v=H3ckYdTv4y8
+  last_modified: '2026-01-20T00:00:00Z'
+- id: '7'
+  resource: https://www.youtube.com/watch?v=Z2jlzpoTWVw
+  last_modified: '2026-02-17T00:00:00Z'
+- id: '8'
+  resource: https://www.youtube.com/watch?v=Kr9_AC2XtOw
+  last_modified: '2026-03-10T00:00:00Z'
+- id: '9'
+  resource: https://www.youtube.com/watch?v=Yj5BWJfg3Ag
+  last_modified: '2026-03-24T00:00:00Z'
+- id: '10'
+  resource: https://www.youtube.com/watch?v=Ee-K84wcxLM
+  last_modified: '2026-03-31T00:00:00Z'
+- id: '11'
+  resource: https://www.youtube.com/watch?v=1Jyu92P7_Fg
+  last_modified: '2026-04-14T00:00:00Z'
+- id: '12'
+  resource: https://www.youtube.com/watch?v=MB4quhDWsQE
+  last_modified: '2026-05-06T00:00:00Z'
+- id: '13'
+  resource: https://www.youtube.com/watch?v=4afPD9Q_5AY
+  last_modified: '2026-05-13T00:00:00Z'
+- id: '14'
+  resource: https://www.youtube.com/watch?v=_3tLSiT1tck
+  last_modified: '2026-06-10T00:00:00Z'
+- id: '15'
+  resource: https://www.youtube.com/watch?v=qe0ck8hvYpk
+  last_modified: '2026-06-16T00:00:00Z'
+- id: '16'
+  resource: https://www.youtube.com/watch?v=KNV4oNGJ0tw
+  last_modified: '2026-07-21T00:00:00Z'
+- id: '17'
+  resource: https://www.youtube.com/watch?v=umGyKLkefJI
+  last_modified: '2026-07-29T00:00:00Z'
+- id: '18'
+  resource: https://www.youtube.com/watch?v=qRj2t3wQHfs
+  last_modified: '2026-08-04T00:00:00Z'
+- id: '19'
+  resource: https://www.youtube.com/watch?v=piUv11DCwDw
+  last_modified: '2026-08-12T00:00:00Z'
 ---
 
 ## Überblick
@@ -36,13 +145,13 @@ Vhar'Zul ist eine der zentralen Gottheiten der Kampagne. Anfangs begegnet er der
 
 **Auftreten:** Vhar'Zul erscheint in mehreren Formen: als Stimme, in Tyrex' Körper (mit Maske), später als Rabe und schließlich leibhaftig am Altar. Seine Präsenz wird anfangs als schwaches Licht beschrieben, nach seiner Rückkehr in [Ehrenfels](/locations/ehrenfels.md) jedoch als überwältigende „pure Power“; er unterdrückt seine Macht, um nicht aufzufallen [10]. Er ist elegant, mächtig, intelligent, aber nicht allmächtig; er zeigt Dankbarkeit, aber auch enorme Wut, wenn er provoziert wird („Verrätergott“), und lässt sich von Lindo Lauts Musik beruhigen [15].
 
-**Fähigkeiten:** Teleportation in die Zwischenebene, Schutz vor den Einflüssen der Ebene, Gedankenverbindungen, Abwehr von Namensenthüllungen, Energieverleihung an Waffen (etwa [Dodo](/characters/dodo.md)s [Streitkolben](/items/streitkolben_von_dodo.md)), Absorption göttlicher Macht und Essenzen, Austeilen von Schutzamuletten sowie das Anbieten von Wünschen [2][10][14][15].
+**Fähigkeiten:** Teleportation in die Zwischenebene, Schutz vor den Einflüssen der Ebene, Gedankenverbindungen, Abwehr von Namensenthüllungen, Energieverleihung an Waffen (etwa [Dodo](/characters/dodo.md)s Streitkolben), Absorption göttlicher Macht und Essenzen, Austeilen von Schutzamuletten sowie das Anbieten von Wünschen [2][10][14][15].
 
 ## Beziehungen und Verbindungen
 - **[Lindo Laut](/characters/lindo_laut.md):** Lindo trug zunächst einen Teil Vhar'Zuls in seinem Amulett; die beiden verband eine enge Beziehung, insbesondere über Thyrex. Vhar'Zul versprach Lindo später die „rechte Hand“ und beruhigte sich durch Lindos Musik [1][9][15]. Nach Vhar'Zuls Tod bestätigt Vitius, dass Vhar'Zul nicht mehr in Lindo ist [18].
 - **[Lunara Velora](/characters/lunara_velora.md):** Vhar'Zul war ihre Bezugsperson und ihr Meister in Abyssalis; er gab ihr eine zweite Chance, Heilung und Hoffnung [7][12][16]. Nach seinem Tod verlor die [Kontrollrune](/items/kontrollrune.md), die sie trug, ihre Macht; Lunara fühlt seitdem Freiheit, aber auch den hohen Preis [17].
 - **[Esterossa](/characters/esterossa.md):** Esterossa zerschlägt Vhar'Zuls kleinen [Kristall](/items/gruener_kristall.md) mit dem leeren Schwert und absorbiert seine Energie; er ist derjenige, der Vhar'Zul vernichtet [15][16].
-- **[Dodo](/characters/dodo.md):** Vhar'Zul verleiht Dodos Streitkolben Energie, damit Dodo den Dämon töten kann; sein Wunchangebot an Dodo ist „Handel“ [10][15].
+- **[Dodo](/characters/dodo.md):** Vhar'Zul verleiht [Dodos Streitkolben](/items/streitkolben_von_dodo.md) Energie, damit Dodo den Dämon töten kann; sein Wunchangebot an Dodo ist „Handel“ [10][15].
 - **[Belorus](/npcs/belorus.md):** Belorus fürchtet, dass Vhar'Zul wieder an Macht gewinnen könnte; er warnt, dann würden sich die alten Götter erheben [6].
 - **[Nox](/npcs/nox.md):** Nox vermutet, dass Vhar'Zul in Abyssalis gefangen ist und keinen Ausweg hat [7].
 - **[Nerash](/deities/nerash.md):** Nerash stellt eine magische [Schriftrolle](/items/schriftrollen.md) her, die bei Vhar'Zuls Vernichtung eine Rolle spielt; Vitius nennt Vhar'Zul als Beispiel für Nerashs frühere Hilfe [19]. Die genaue Funktion der Schriftrolle ist strittig (siehe Offene Fragen).
@@ -68,7 +177,7 @@ Vhar'Zul ist eine der zentralen Gottheiten der Kampagne. Anfangs begegnet er der
 - **2026-05-06:** [Der Richter](/npcs/richter_herr_der_seelenwacht.md) deutet an, Vhar'Zuls Rückkehr könnte den Weg aus Abyssalis ebnen; Lunara war bei Vhar'Zul und erhielt Heilung und volle Hoffnung [12].
 - **2026-05-13:** Ein [Seraph](/npcs/seraph.md) nennt Vhar'Zul eine „kleine elende Ausgeburt“; Lunara verteidigt ihn. Es wird vermutet, dass er mit Nerash zusammengearbeitet hat [13].
 - **2026-06-10:** Vhar'Zul kommuniziert als Rabe und über Gedankenverbindung zu Lindo, warnt vor Biestern, bestätigt, dass Lunaras Bruder in der Nähe ist. Er wehrt einen Totenschädel ab, der seinen Namen enthüllen will, und gesteht, Vorgultars Gegenwehr unterschätzt zu haben [14].
-- **2026-06-16:** Vhar'Zul offenbart seine wahre Absicht: Er erscheint aus dem Raben am Altar, fasziniert vom [Splitter des Ewigen](/items/splitter_des_ewigen.md), und bietet jedem Gruppenmitglied einen Wunsch an (Lunara ihren Bruder, Dodo Handel, Esterossa Gottgleichheit, Lindo die rechte Hand). Sein Ziel ist, Huludan zu befreien, um die Welt ohne Götter neu zu gestalten. Er zeigt Wut, als [Tattrick](/npcs/tatrick.md) ihn „Verrätergott“ nennt, will ihn vernichten, wird aber von Lindos Musik beruhigt. Esterossa zerschlägt seinen kleinen Kristall; die Energie wird vom Schwert absorbiert [15].
+- **2026-06-16:** Vhar'Zul offenbart seine wahre Absicht: Er erscheint aus dem Raben am Altar, fasziniert vom [Splitter des Ewigen](/items/splitter_des_ewigen.md), und bietet jedem Gruppenmitglied einen Wunsch an (Lunara ihren Bruder, Dodo Handel, Esterossa Gottgleichheit, Lindo die rechte Hand). Sein Ziel ist, Huludan zu befreien, um die Welt ohne Götter neu zu gestalten. Er zeigt Wut, als [Tattrick](/npcs/tattrick.md) ihn „Verrätergott“ nennt, will ihn vernichten, wird aber von Lindos Musik beruhigt. Esterossa zerschlägt seinen kleinen Kristall; die Energie wird vom Schwert absorbiert [15].
 - **2026-07-21:** Vhar'Zul wurde in der vorherigen Session von Esterossa mit dem leeren Schwert vernichtet; seine Essenz wurde absorbiert. Sein Tod prägt Lunaras Wut und Trauer [16].
 - **2026-07-29:** Vhar'Zuls Kräfte waren von den Helden befreit worden; er ist inzwischen gestorben. Seit seinem Tod ist ein Schleier von Lunara abgeworfen und ihre Kontrollrune hat die Macht verloren [17].
 - **2026-08-04:** [Vitius](/npcs/vitius.md) bestätigt, dass Vhar'Zul nicht mehr in Lindo ist; er wird als schwach beschrieben, da er nie wie ein richtiger Gott wirkte [18].

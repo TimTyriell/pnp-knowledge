@@ -6,7 +6,34 @@ description: Sandro ist ein Vampirmagier in Diensten von Voras. In der Kampagne 
 tags:
 - npcs
 timestamp: '2026-04-09T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_SANDRO
+relationships:
+- target: characters/lindo_laut
+  note: 'Lindo Laut: Nach dem Kampf in der Splitterwelt erhält Lindo Laut von Sandro
+    eine weitere Schriftrolle.'
+- target: deities/nerash
+  note: 'Nerash: Nerash tötet Sandro, indem er ihn durch die Luft schleudert.'
+- target: items/schriftrollen
+- target: npcs/nox
+  note: 'Nox: In Ehrenfels erscheint Sandro an Nox’ Seite; Nox befiehlt den Helden
+    zu gehen, während Sandro den Dämon beschießt.'
+- target: npcs/voras
+  note: 'Voras: Sandro ist ausdrücklich ein Vampirmagier in Voras’ Diensten. Sein
+    erster Auftritt endet mit der Bemerkung, dass Voras trotz Sandros Verletzungen
+    zufrieden ist.'
+sources:
+- id: P-40
+  resource: https://www.youtube.com/watch?v=Kr9_AC2XtOw
+  last_modified: '2026-03-10T00:00:00Z'
+- id: P-44
+  resource: https://www.youtube.com/watch?v=Ee-K84wcxLM
+  last_modified: '2026-03-31T00:00:00Z'
+- id: P-46
+  resource: https://www.youtube.com/watch?v=vcGkejr8_nI
+  last_modified: '2026-04-09T00:00:00Z'
 ---
 
 ## Überblick

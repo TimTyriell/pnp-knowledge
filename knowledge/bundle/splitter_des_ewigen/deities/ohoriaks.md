@@ -6,10 +6,40 @@ description: Ohoriaks ist eine uralte Gottheit aus der Zeit vor den neuen Götte
 tags:
 - deities
 timestamp: '2026-04-14T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DEITY_OHORIAKS
 subtype: Alter Gott
 aliases:
 - Uhoriaks
+relationships:
+- target: characters/dodo
+  note: '**Dodo:** Die innere Stimme, die Lindo Laut hört, verlangt, Dodo zu opfern.'
+- target: characters/lindo_laut
+  note: '**Lindo Laut:** In der Dungeon-Session hört er eine innere Stimme, die Ohoriaks
+    als „Vernichterin“ bezeichnet und ein Blutopfer fordert. Die Stimme verlangt,
+    Dodo zu opfern. Später sagt Lindo Laut ge…'
+- target: deities/vorgul_tar
+  note: '**Vorgul Tar:** Eine andere Gottheit. In der von Ohoriaks beanspruchten Stadt
+    kam Vorgul Tar laut Aussage einer Dienerin Ohoriaks „zu spät“.'
+- target: factions/anhaenger_vorgul_tars
+  note: '**Anhänger:** Die Anhänger Ohoriaks bewachen die Festung Boragdil und verweigern
+    der Gruppe den Eintritt. Nach der vorhergesehenen Zerstörung der Festung übernehmen
+    sie die Kontrolle über die Stadt.'
+- target: npcs/lady_kalen
+  note: '**Lady Kalen:** Sprecherin von Ohoriaks. In ihrem Namen arbeitet die Alchemistin,
+    auf die die Gruppe in der Stadt trifft.'
+sources:
+- id: P-28
+  resource: https://www.youtube.com/watch?v=V6NzNakqxXM
+  last_modified: '2025-10-28T00:00:00Z'
+- id: P-44
+  resource: https://www.youtube.com/watch?v=Ee-K84wcxLM
+  last_modified: '2026-03-31T00:00:00Z'
+- id: P-47
+  resource: https://www.youtube.com/watch?v=1Jyu92P7_Fg
+  last_modified: '2026-04-14T00:00:00Z'
 ---
 
 ## Überblick

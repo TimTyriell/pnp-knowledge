@@ -6,11 +6,21 @@ description: Lord Kalidarn von Willauch ist der Herrscher der Stadt Willauch. Er
 tags:
 - npcs
 timestamp: '2025-11-14T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_LORD_KALIDARN_VON_WILLAUCH
 aliases:
 - Lord von Willauch
 - Lord Kaledan von Willau
 - Lord Kalidarn von Willau
+sources:
+- id: P-27
+  resource: https://www.youtube.com/watch?v=sxFhbtwoefA
+  last_modified: '2025-10-21T00:00:00Z'
+- id: P-29
+  resource: https://www.youtube.com/watch?v=8Khb-Y8XbKY
+  last_modified: '2025-11-14T00:00:00Z'
 ---
 
 Lord Kalidarn von Willauch ist der Herrscher der Stadt [Willauch](/locations/willauch.md). Er ist die höchste Autorität der Stadt und tritt in den Quellen vor allem bei den Arenakämpfen in Erscheinung, bei denen er auf dem [Thron](/items/thron.md) Platz nimmt. Sein Auftreten wirkt kühl und emotionslos; der Heldengruppe begegnet er mit Distanz, stellt ihr aber nach ihrem Sieg über den Lich eine Urkunde über ein Anwesen aus.

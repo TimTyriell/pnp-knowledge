@@ -6,8 +6,15 @@ description: 'Nachdem der Schutzzauber nachlässt, übernimmt Slix die Kontrolle
 tags:
 - events
 timestamp: '2026-02-17T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_KONFRONTATION_MIT_SLIX_IM_GARTEN_VON_CROWFIN_MANOR
 subtype: Kampf
+sources:
+- id: P-37
+  resource: https://www.youtube.com/watch?v=Z2jlzpoTWVw
+  last_modified: '2026-02-17T00:00:00Z'
 ---
 
 Nachdem der Schutzzauber nachlässt, übernimmt [Slix](/npcs/slix_vasul.md) die Kontrolle über [Lindo Laut](/characters/lindo_laut.md). Im Garten kommt es zum Kampf: Slix tötet Lionel, Lunara verbindet die Welten, [Rotunas](/characters/rotunas.md) opfert seinen Arm, um Slix zu verletzen, und Lindo Laut legt die [Handschellen](/items/handschellen.md) an. Der Kampf endet, als Slix vorübergehend verschwindet und Lindo Laut wieder die Kontrolle hat.

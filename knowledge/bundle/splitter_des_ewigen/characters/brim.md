@@ -6,7 +6,53 @@ description: Brim ist ein zwergischer Krieger, der die Heldengruppe seit ihrer B
 tags:
 - characters
 timestamp: '2026-08-04T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:09Z'
 id: CHAR_BRIM
+relationships:
+- target: characters/dodo
+  note: '**Dodo:** Brim arbeitet im Kampf eng mit Dodo zusammen. Er zieht die Schattenkreatur
+    zu Boden, was Dodo den tödlichen Schlag ermöglicht.'
+- target: characters/otis
+  note: '**Otis:** Als Brim im Kampf gegen fliegende Kreaturen beinahe in die Tiefe
+    gerissen wird, rettet Otis ihn.'
+- target: characters/rotunas
+  note: '**Rotunas:** In der Dämonenschlacht gibt Brim Rotunas die taktische Anweisung,
+    sich um den Magier zu kümmern: „Rotunas, kümmer du dich um den Magier, wir beschäftigen
+    das Fußvolk.“'
+- target: deities/coram_schildbrecher
+  note: '**Coram Schildbrecher:** Brim erkennt die Statue Coram Schildbrechers und
+    ordnet den Gott mithilfe eines Knowledge-Wurfs als einen der neuen Götter ein,
+    der für Heldenschaft, Zusammenhalt und Gemeins…'
+- target: factions/silberkerne
+  note: '**Silberkerne:** In der Freibeuterkneipe bringt Brim das Gespräch auf die
+    Silberkerne und zeigt damit Interesse an der Organisation.'
+- target: locations/gildenhaus_in_breska
+  note: '**Gildenhaus:** Brim weist seine Gefährten auf ein Gildengebäude hin und
+    schlägt es als erste Anlaufstelle vor, um Informationen einzuholen.'
+- target: npcs/freibeuter_harald
+  note: '**Freibeuter-Kapitän Harald:** In der Freibeuterkneipe prostet Brim Harald
+    zu.'
+sources:
+- id: P-40
+  resource: https://www.youtube.com/watch?v=Kr9_AC2XtOw
+  last_modified: '2026-03-10T00:00:00Z'
+- id: P-41
+  resource: https://www.youtube.com/watch?v=HHXxsASLrbQ
+  last_modified: '2026-03-18T00:00:00Z'
+- id: P-43
+  resource: https://www.youtube.com/watch?v=Yj5BWJfg3Ag
+  last_modified: '2026-03-24T00:00:00Z'
+- id: P-45
+  resource: https://www.youtube.com/watch?v=MAuQPMNY548
+  last_modified: '2026-04-07T00:00:00Z'
+- id: P-46
+  resource: https://www.youtube.com/watch?v=vcGkejr8_nI
+  last_modified: '2026-04-09T00:00:00Z'
+- id: S1-02-A
+  resource: https://www.youtube.com/watch?v=qRj2t3wQHfs
+  last_modified: '2026-08-04T00:00:00Z'
 ---
 
 ## Überblick

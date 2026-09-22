@@ -6,8 +6,15 @@ description: Ein Schlüsselbund fällt dem getöteten Wächter in den Matsch, My
 tags:
 - items
 timestamp: '2026-03-23T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:14Z'
 id: ITEM_SCHLUESSELBUND
 subtype: Werkzeug
+sources:
+- id: P-42
+  resource: https://www.youtube.com/watch?v=niVxKtdQBn0
+  last_modified: '2026-03-23T00:00:00Z'
 ---
 
 Ein Schlüsselbund fällt dem getöteten [Wächter](/npcs/waechter.md) in den Matsch, [Myko](/characters/myko.md) hebt ihn auf und gibt ihn [Otis](/characters/otis.md). Mit einem [Schlüssel](/items/magischer_schluessel.md) öffnet die Gruppe die Tür zum Geheimgang, mit dem zweiten befreit sie später [Kerner](/npcs/kerner.md) aus der Zelle.

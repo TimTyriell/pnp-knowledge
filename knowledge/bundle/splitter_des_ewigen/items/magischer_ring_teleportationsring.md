@@ -6,8 +6,21 @@ description: Der Magische Ring (Teleportationsring), auch als Lindos Ring der Te
 tags:
 - items
 timestamp: '2025-07-22T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:14Z'
 id: ITEM_MAGISCHER_RING_TELEPORTATIONSRING
 subtype: Artefakt
+verified:
+  by: human:gm
+relationships:
+- target: characters/lindo_laut
+  note: '**Lindo Laut:** Er identifizierte die Teleportationsmagie des Rings und war
+    zunächst unsicher, ob er ihn selbst tragen solle.'
+sources:
+- id: P-15
+  resource: https://www.youtube.com/watch?v=BRRCUgW4xRo
+  last_modified: '2025-07-22T00:00:00Z'
 ---
 
 ## Überblick

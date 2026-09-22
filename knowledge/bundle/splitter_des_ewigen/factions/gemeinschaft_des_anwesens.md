@@ -6,8 +6,15 @@ description: Die Gemeinschaft des Anwesens ist eine gemischte Siedlergemeinschaf
 tags:
 - factions
 timestamp: '2025-11-14T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_GEMEINSCHAFT_DES_ANWESENS
 subtype: Bande
+sources:
+- id: P-29
+  resource: https://www.youtube.com/watch?v=8Khb-Y8XbKY
+  last_modified: '2025-11-14T00:00:00Z'
 ---
 
 Die **Gemeinschaft des Anwesens** ist eine gemischte Siedlergemeinschaft aus [Goblins](/npcs/pilz_goblins.md) und Menschen. Sie hat eine verfallene Ruine zu einem bewohnbaren Anwesen wieder aufgebaut und lebt dort friedlich. Zur Gemeinschaft gehören mehrere Goblins, der menschliche Jäger [Horatio](/npcs/horatio.md) sowie ein weiterer menschlicher Bewohner.

@@ -6,7 +6,17 @@ description: Der Seraph tritt aus dem Stein, zerstört die Pentagramm-Struktur u
 tags:
 - npcs
 timestamp: '2026-05-13T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_SERAPH
+relationships:
+- target: characters/dante
+- target: items/streitkolben_von_dodo
+sources:
+- id: P-49
+  resource: https://www.youtube.com/watch?v=4afPD9Q_5AY
+  last_modified: '2026-05-13T00:00:00Z'
 ---
 
 Der Seraph tritt aus dem Stein, zerstört die Pentagramm-Struktur und offenbart goldene Rüstung, [Schwert](/items/schwert.md) und Schild. Er erklärt, die Anhänger von [Vasul](/deities/vharzul.md) auslöschen zu wollen, und greift die Gruppe an. Er ist extrem stark, verursacht hohen Schaden und wird wütend, als [Dodo](/characters/dodo.md) seine Rüstung zerkratzt. Die [Statue von Nerash](/items/statue_von_nerash.md) verursacht ihm Schmerzen, und nach der [Zerstörung des Rings](/events/zerstoerung_des_rings.md) absorbieren die Kristalle an seinem Körper seine Essenz; er altert um tausend Jahre und löst sich auf. Sein Tod wird durch die Zerstörung des [Rings](/items/ring.md) herbeigeführt.

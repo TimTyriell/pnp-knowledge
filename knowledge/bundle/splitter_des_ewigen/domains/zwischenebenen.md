@@ -6,10 +6,20 @@ description: Die Zwischenebenen sind eine Vorebene des Circle Below. Sie wurden 
 tags:
 - domains
 timestamp: '2026-01-06T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DOMAIN_ZWISCHENEBENEN
 aliases:
 - Zwischenebenen
 - Zwischenebene
+sources:
+- id: P-20
+  resource: https://www.youtube.com/watch?v=vo1xnyLQDJk
+  last_modified: '2025-09-06T00:00:00Z'
+- id: P-32
+  resource: https://www.youtube.com/watch?v=VGw81seFvbo
+  last_modified: '2026-01-06T00:00:00Z'
 ---
 
 Die **Zwischenebenen** sind eine Vorebene des [Circle Below](/domains/circle_below.md). Sie wurden als düstere, tote Landschaft geschildert und stehen in der Kampagne vor allem mit übernatürlichen Wesen sowie mit der Gewinnung von Seelen in Verbindung.

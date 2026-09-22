@@ -6,8 +6,15 @@ description: Nach dem Vorfall in der Freibeuterkneipe riegeln Soldaten Willauchs
 tags:
 - events
 timestamp: '2026-03-18T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: EVENT_ABRIEGELUNG_VON_TIEFWASSER
 subtype: Sonstiges
+sources:
+- id: P-41
+  resource: https://www.youtube.com/watch?v=HHXxsASLrbQ
+  last_modified: '2026-03-18T00:00:00Z'
 ---
 
 Nach dem Vorfall in der [Freibeuterkneipe](/locations/freibeuterkneipe.md) riegeln Soldaten [Willauchs](/locations/willauch.md) die Stadt [Tiefwasser](/locations/tiefwasser.md) ab. Die Gruppe kann nicht mehr hinein und muss ihr Lager abbrechen. Sie entscheidet sich, nach Norden weiterzuziehen und später die anderen zu informieren.

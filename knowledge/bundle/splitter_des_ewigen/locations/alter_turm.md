@@ -6,8 +6,21 @@ description: Der Alte Turm ist ein uralter, beschädigter Aussichtsturm, der Rei
 tags:
 - locations
 timestamp: '2026-05-27T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:19:08Z'
 id: LOC_ALTER_TURM
 subtype: Gebäude
+sources:
+- id: P-10
+  resource: https://www.youtube.com/watch?v=jtYR4Je0a18
+  last_modified: '2025-06-03T00:00:00Z'
+- id: P-43
+  resource: https://www.youtube.com/watch?v=Yj5BWJfg3Ag
+  last_modified: '2026-03-24T00:00:00Z'
+- id: P-51
+  resource: https://www.youtube.com/watch?v=IYYmgpqsp7E
+  last_modified: '2026-05-27T00:00:00Z'
 ---
 
 Der **Alte Turm** ist ein uralter, beschädigter Aussichtsturm, der Reisenden als Unterschlupf dient. Die Gruppe erreicht ihn zunächst nordöstlich von [Cornivum](/locations/cornivum.md); eine spätere Expedition findet ihn im Nebelsumpf. Im Lauf der Kampagne wird er mehrfach zum Schauplatz wichtiger Begegnungen.
@@ -18,7 +31,7 @@ Errichtet wurde der Turm in der Zeit der alten Götter; sein Mauerwerk ist inzwi
 
 ## Begegnungen und Rolle
 
-[Rodek](/npcs/rodek.md) und die [Zwerge](/factions/zwerge.md) weisen die Gruppe auf den Turm hin, als die nächtliche Flut das Wasser ansteigen lässt; er wird zum Unterschlupf. Bei einem späteren Aufenthalt verbringen die Gefährten die Nacht in dem Turm, finden eine [Thar'Vok](/deities/tarvok_der_erdrichter.md)-Statue und im Keller einen Goldkessel; der Ort wird zum Schauplatz einer emotionalen Aussprache. In einer weiteren Expedition steuert [Trilo](/npcs/trillo.md) den Turm an; zu dieser Zeit dient er [Kalos](/npcs/organisation_der_kalos.md) als Versteck und wird zum Schauplatz von Verrat und Kampf.
+[Rodek](/npcs/rodek.md) und die [Zwerge](/factions/zwerge.md) weisen die Gruppe auf den Turm hin, als die nächtliche Flut das Wasser ansteigen lässt; er wird zum Unterschlupf. Bei einem späteren Aufenthalt verbringen die Gefährten die Nacht in dem Turm, finden eine [Thar'Vok](/deities/tarvok_der_erdrichter.md)-Statue und im Keller einen Goldkessel; der Ort wird zum Schauplatz einer emotionalen Aussprache. In einer weiteren Expedition steuert [Trilo](/npcs/trilo.md) den Turm an; zu dieser Zeit dient er [Kalos](/npcs/organisation_der_kalos.md) als Versteck und wird zum Schauplatz von Verrat und Kampf.
 
 # Belege
 

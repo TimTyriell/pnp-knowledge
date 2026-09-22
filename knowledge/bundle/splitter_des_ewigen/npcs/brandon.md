@@ -6,7 +6,14 @@ description: Brandon ist ein Ritter und einer der letzten Verteidiger der Kapell
 tags:
 - npcs
 timestamp: '2025-05-06T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:17Z'
 id: NPC_BRANDON
+sources:
+- id: P-07
+  resource: https://www.youtube.com/watch?v=e0v6AFGd4mE
+  last_modified: '2025-05-06T00:00:00Z'
 ---
 
 Brandon ist ein Ritter und einer der letzten Verteidiger der [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md). Er kämpfte schon lange gegen die [Gnolle](/factions/gnolle.md) und war schwer verwundet, als die Gruppe eintrifft. [Esterossa](/characters/esterossa.md) heilt ihn, woraufhin er sich mit einem Handschlag bei [Dodo](/characters/dodo.md) bedankt. Später stellt sich heraus, dass er den [Morgenstern des heiligen Duran](/items/morgenstern_des_heiligen_duran.md) trägt, was ihn so stark gemacht hat.

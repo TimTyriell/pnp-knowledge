@@ -6,8 +6,15 @@ description: Das Schwert wurde als Preis im Arena-Turnier am Vortag gewonnen, ve
 tags:
 - items
 timestamp: '2026-06-04T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: ITEM_TIER_2_SCHWERT
 subtype: Waffe
+sources:
+- id: P-52
+  resource: https://www.youtube.com/watch?v=EGNh8O7pE5Q
+  last_modified: '2026-06-04T00:00:00Z'
 ---
 
 Das [Schwert](/items/schwert.md) wurde als Preis im [Arena](/locations/arena.md)-Turnier am Vortag gewonnen, vermutlich von [Mesul](/npcs/mesul.md) oder [Sange](/characters/sange.md). Es ist eine Tier-2-Waffe und wird als Gewinn erwähnt.

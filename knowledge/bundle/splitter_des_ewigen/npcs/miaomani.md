@@ -1,14 +1,51 @@
 ---
 type: NPC
 title: Miaomani
-description: Miaomani ist eine Katzenvolk-Späherin auf dem Gildenschiff. Sie hält
-  im Ausguck Ausschau und bestätigt, dass keine Piraten in Sicht sind. S…
+description: Miaomani ist eine Angehörige des Katzenvolks (Catfolk) aus dem Umfeld
+  von Kahnführer Lobrecht. Sie dient als Späherin und Kämpferin, hält a…
 tags:
 - npcs
 timestamp: '2026-08-25T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:11:56Z'
 id: NPC_MIAOMANI
 aliases:
 - Miamani
+relationships:
+- target: characters/dodo
+  note: '**Dodo:** Miaomani reagiert anerkennend auf Dodos Ritt auf einem Basilisken.'
+- target: characters/esterossa
+  note: '**Esterossa:** In Session 2025-04-30 trifft Esterossa im Ausguck auf Miaomani.
+    Sie begrüßt ihn mit „Oh, Esterossa! Was gibt''s?" In Session 2025-07-29 wird Miaomani
+    am Dock schwer verletzt und von Est…'
+- target: npcs/joar_vanur
+  note: '**Joar:** In Session 2026-08-18 wird Miaomani als katzenartige Begleiterin
+    von Joar beschrieben. Sie springt voraus, verdreht über Joars Verhalten die Augen
+    und passt auf ihn auf.'
+- target: npcs/lobrecht
+  note: '**Kahnführer Lobrecht:** Miaomani ist Lobrechts Partnerin. In Session 2026-07-29
+    kommt er „mit seiner Partnerin" auf die Helden zu; sie steht lächelnd mit verschränkten
+    Armen hinter ihm. Bereits in S…'
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=fsCOiSkKKTE
+  last_modified: '2025-04-30T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=e0v6AFGd4mE
+  last_modified: '2025-05-06T00:00:00Z'
+- id: '3'
+  resource: https://www.youtube.com/watch?v=XXgO5Ht4Q0A
+  last_modified: '2025-07-29T00:00:00Z'
+- id: '4'
+  resource: https://www.youtube.com/watch?v=umGyKLkefJI
+  last_modified: '2026-07-29T00:00:00Z'
+- id: '5'
+  resource: https://www.youtube.com/watch?v=10swvSz6k7U
+  last_modified: '2026-08-18T00:00:00Z'
+- id: '6'
+  resource: https://www.youtube.com/watch?v=1Cjj3OVqiYA
+  last_modified: '2026-08-25T00:00:00Z'
 ---
 
 ## Überblick

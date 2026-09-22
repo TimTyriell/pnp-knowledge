@@ -6,8 +6,15 @@ description: An der Brücke vor dem Tor von Abyssalis greift eine gigantische Sc
 tags:
 - events
 timestamp: '2026-03-10T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:11Z'
 id: EVENT_KAMPF_GEGEN_DIE_SCHATTENKREATUR_2026-03-10
 subtype: Kampf
+sources:
+- id: P-40
+  resource: https://www.youtube.com/watch?v=Kr9_AC2XtOw
+  last_modified: '2026-03-10T00:00:00Z'
 ---
 
 An der Brücke vor dem Tor von [Abyssalis](/domains/splitterwelt.md) greift eine gigantische [Schattenkreatur](/npcs/schattenkreatur.md) an. [Sandro](/npcs/sandro.md) erleidet schwere Verletzungen durch einen Heiligen Zauber. Lunara stellt fest, dass ihre Schattenmagie wirkungslos ist. [Brim](/characters/brim.md) gelingt es, die Kreatur mit seinen Ketten zu Boden zu ziehen, und [Dodo](/characters/dodo.md) erschlägt sie mit seinem [Streitkolben](/items/streitkolben_von_dodo.md). Die Seele der Kreatur wird nach Abyssalis gezogen, und es bleiben zwei schwarze Hörner zurück.

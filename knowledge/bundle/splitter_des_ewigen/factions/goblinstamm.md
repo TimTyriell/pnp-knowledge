@@ -6,8 +6,15 @@ description: Der Goblinstamm ist eine Gruppe von Goblins, die in der Session vom
 tags:
 - factions
 timestamp: '2025-04-01T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_GOBLINSTAMM
 subtype: Bande
+sources:
+- id: P-02
+  resource: https://www.youtube.com/watch?v=LZIuUzc3F18
+  last_modified: '2025-04-01T00:00:00Z'
 ---
 
 Der **Goblinstamm** ist eine Gruppe von [Goblins](/npcs/pilz_goblins.md), die in der Session vom 1. April 2025 ein Dorf besetzt hielt. Angeführt wurde der Stamm von [Schleichfurz](/npcs/schleichfurz.md). Die Goblins waren zu diesem Zeitpunkt betrunken und feierten. Die Gruppe hatte den Auftrag, den Stamm zu eliminieren.

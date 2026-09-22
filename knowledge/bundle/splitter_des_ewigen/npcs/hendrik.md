@@ -6,7 +6,31 @@ description: Hendrik ist der Anführer des Lagers der Alten, eines Nomadenlagers
 tags:
 - npcs
 timestamp: '2025-08-12T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:17Z'
 id: NPC_HENDRIK
+verified:
+  by: human:gm
+relationships:
+- target: characters/lindo_laut
+  note: '**Lindo Laut:** Hendrik spricht ihn in einer unheimlichen Weise an, bei der
+    er nicht er selbst zu sein scheint. Dies ist eine der auffälligsten und rätselhaftesten
+    Interaktionen der Begegnung.'
+- target: characters/nyrella
+  note: '**Nyrella:** Auch ihr gegenüber tritt er abweisend auf; er lässt sich von
+    ihrer fordernden Art nicht beeindrucken.'
+- target: items/amulett_des_heiligen_duran
+- target: locations/lager_der_alten
+  note: '**Anführer des Lagers der Alten:** Die Bewohner orientieren sich an ihm;
+    er ist der zentrale Ansprechpartner und Entscheider.'
+- target: npcs/bauer
+  note: '**Bauer Hendrik Heinrich:** Mit ihm besteht keine Verbindung; Hendrik der
+    Nomadenführer ist eine eigenständige Person.'
+sources:
+- id: P-17
+  resource: https://www.youtube.com/watch?v=vHIjua0BZ9Y
+  last_modified: '2025-08-12T00:00:00Z'
 ---
 
 ## Überblick

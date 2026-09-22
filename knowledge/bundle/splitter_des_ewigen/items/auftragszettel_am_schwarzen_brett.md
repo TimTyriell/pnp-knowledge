@@ -6,8 +6,15 @@ description: Am schwarzen Brett in Kleinringtal hängt ein neuer Auftrag, der dr
 tags:
 - items
 timestamp: '2026-06-04T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: ITEM_AUFTRAGSZETTEL_AM_SCHWARZEN_BRETT
 subtype: Schriftstück
+sources:
+- id: P-52
+  resource: https://www.youtube.com/watch?v=EGNh8O7pE5Q
+  last_modified: '2026-06-04T00:00:00Z'
 ---
 
 Am schwarzen Brett in [Kleinringtal](/locations/ringtal.md) hängt ein neuer Auftrag, der dringend Hilfe für einen nahegelegenen Bauernhof sucht, der von einer Horde [Goblins](/npcs/pilz_goblins.md) und [Gnolle](/factions/gnolle.md) attackiert werden könnte. [Saris](/characters/saris.md) reißt den Zettel an sich, obwohl ein anderer Interessent ihn zuerst gesehen hatte.

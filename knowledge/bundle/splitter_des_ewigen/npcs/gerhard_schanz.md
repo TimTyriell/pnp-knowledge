@@ -6,7 +6,17 @@ description: Gerhard Schanz ist Wächter und Trainer in Kleinringtal; in der Sch
 tags:
 - npcs
 timestamp: '2026-09-03T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:17Z'
 id: NPC_GERHARD_SCHANZ
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=EGNh8O7pE5Q
+  last_modified: '2026-06-04T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=bl-hX87_EC8
+  last_modified: '2026-09-03T00:00:00Z'
 ---
 
 Gerhard Schanz ist [Wächter](/npcs/waechter.md) und Trainer in [Kleinringtal](/locations/ringtal.md); in der Schlacht führt er als Hauptmann die wenigen Soldaten des Ortes an. Sein Auftreten wird als autoritär beschrieben.

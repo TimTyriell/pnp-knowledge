@@ -6,9 +6,24 @@ description: Lady Lyra von Willauch ist die Herrscherin von Willauch — gemeins
 tags:
 - npcs
 timestamp: '2025-10-21T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_LADY_LYRA_VON_WILLAUCH
 aliases:
 - Lady Lyra
+relationships:
+- target: npcs/lord_kaledan
+  note: '**Lord Kaledan**: Ihr Mitherrscher über Willauch. Über die genaue Natur ihrer
+    gemeinsamen Herrschaft — etwa, ob es sich um Eheleute, Geschwister oder Amtskollegen
+    handelt — ist aus den Belegen nichts…'
+sources:
+- id: P-26
+  resource: https://www.youtube.com/watch?v=cUtz87UCHu4
+  last_modified: '2025-10-14T00:00:00Z'
+- id: P-27
+  resource: https://www.youtube.com/watch?v=sxFhbtwoefA
+  last_modified: '2025-10-21T00:00:00Z'
 ---
 
 # Lady Lyra von Willauch

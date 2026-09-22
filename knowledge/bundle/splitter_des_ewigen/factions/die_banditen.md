@@ -6,8 +6,15 @@ description: Die Banditen sind eine Gruppe ausgestoßener Söldner und Banditen 
 tags:
 - factions
 timestamp: '2025-09-30T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_DIE_BANDITEN
 subtype: Bande
+sources:
+- id: P-24
+  resource: https://www.youtube.com/watch?v=bUT7Mc2hjUY
+  last_modified: '2025-09-30T00:00:00Z'
 ---
 
 Die **[Banditen](/factions/silberkerne.md)** sind eine Gruppe ausgestoßener Söldner und Banditen unter der Führung von [Hal](/npcs/hal_harl.md). Sie leben in der Vorbarrikade.

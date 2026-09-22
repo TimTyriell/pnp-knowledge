@@ -6,16 +6,37 @@ description: Dormak war ein Gegner der Heldengruppe, der anfangs als Diener beze
 tags:
 - npcs
 timestamp: '2026-03-31T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:19:08Z'
 id: NPC_DORMAK
 aliases:
 - Dormark
+verified:
+  by: human:gm
+relationships:
+- target: deities/vharzul
+- target: npcs/lenra
+sources:
+- id: P-19
+  resource: https://www.youtube.com/watch?v=TLZOH7TlGhk
+  last_modified: '2025-09-02T00:00:00Z'
+- id: P-34
+  resource: https://www.youtube.com/watch?v=H3ckYdTv4y8
+  last_modified: '2026-01-20T00:00:00Z'
+- id: P-43
+  resource: https://www.youtube.com/watch?v=Yj5BWJfg3Ag
+  last_modified: '2026-03-24T00:00:00Z'
+- id: P-44
+  resource: https://www.youtube.com/watch?v=Ee-K84wcxLM
+  last_modified: '2026-03-31T00:00:00Z'
 ---
 
 Dormak war ein Gegner der Heldengruppe, der anfangs als Diener bezeichnet wurde und sich später als mächtiger Dämon erwies. Er suchte die [Prinzessin](/npcs/prinzessin_marie.md), stellte sich der Gruppe mehrfach entgegen und war als Komplize der Hag [Landra](/npcs/lenra.md) in die Ränke um [Vhar'Zuls](/deities/vharzul.md) Wiederkehr verstrickt. Sein Ende fand er in [Ehrenfels](/locations/ehrenfels.md).
 
 ## Rolle und Auftritte
 
-Erstmals trat Dormak am [Thron](/items/thron.md) einer [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) auf. Er stellte sich als Diener vor und forderte [Lindo Laut](/characters/lindo_laut.md) auf, sich auf den Thron zu setzen und die Macht des Gottes [Varsu](/deities/varsu.md) anzunehmen. Als die Gruppe sich widersetzte, beschwor er eine Armee von Untoten aus den Gräbern und drohte, sie zu vernichten. Im Kampf packte er [Nyrella](/characters/nyrella.md), quetschte sie magisch und stieß sie durch eine Flammenwand. Erst als Lindo Laut die Seelen [Esua](/npcs/esua.md) und [Sintra](/deities/sintra.md) zerstörte, ergriff Dormak entsetzt die Flucht und verschwand mit einer Handbewegung.
+Erstmals trat Dormak am [Thron](/items/thron.md) einer [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md) auf. Er stellte sich als Diener vor und forderte [Lindo Laut](/characters/lindo_laut.md) auf, sich auf den Thron zu setzen und die Macht des Gottes [Varsu](/deities/varsu.md) anzunehmen. Als die Gruppe sich widersetzte, beschwor er eine Armee von Untoten aus den Gräbern und drohte, sie zu vernichten. Im Kampf packte er [Nyrella](/characters/nyrella.md), quetschte sie magisch und stieß sie durch eine Flammenwand. Erst als Lindo Laut die Seelen [Esua](/deities/esua.md) und [Sintra](/deities/sintra.md) zerstörte, ergriff Dormak entsetzt die Flucht und verschwand mit einer Handbewegung.
 
 Bei einer Verhandlung mit [Belorus](/npcs/belorus.md) nannte Lindo Laut Dormak später zusammen mit Landra als möglichen Strippenzieher. Während Dormaks Suche nach der Prinzessin schlug die Gruppe ihn in die Flucht; diese Niederlage trug zur Rettung der Prinzessin bei.
 

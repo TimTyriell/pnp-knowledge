@@ -6,11 +6,21 @@ description: 'Der Kenku-Bote ist eine vogelartige, rabenähnliche Kreatur, die i
 tags:
 - npcs
 timestamp: '2026-09-03T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_KENKU_BOTE
 aliases:
 - Kenku-Bote
 - Kenku
-status: disputed
+review_status: disputed
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=z3C-bewKqUs
+  last_modified: '2025-04-23T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=bl-hX87_EC8
+  last_modified: '2026-09-03T00:00:00Z'
 ---
 
 Der Kenku-Bote ist eine vogelartige, rabenähnliche Kreatur, die in den Belegen der Kampagne zweimal in Erscheinung tritt: als Angreifer auf den Magier Lendras und als Bote der Gnoll-Armee, der der Stadt Ringtal ein Ultimatum stellt. Beide Begegnungen enden für ihn tödlich.

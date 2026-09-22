@@ -6,8 +6,15 @@ description: Beim Verlassen der Burg werden die Abenteurer von zwergenartigen Sk
 tags:
 - events
 timestamp: '2025-05-14T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:11Z'
 id: EVENT_FLUCHT_VOR_DEN_SKELETT_BOGENSCHUETZEN
 subtype: Kampf
+sources:
+- id: P-08
+  resource: https://www.youtube.com/watch?v=5eAEDN5ra-4
+  last_modified: '2025-05-14T00:00:00Z'
 ---
 
 Beim Verlassen der Burg werden die Abenteurer von zwergenartigen [Skelett-Bogenschützen](/npcs/skelett_bogenschuetzen.md) beschossen. Sie fliehen über die Brücke, wehren weitere [Untote](/factions/belorus_untotenarmee.md) ab und entkommen schließlich dem Radius der Schützen.

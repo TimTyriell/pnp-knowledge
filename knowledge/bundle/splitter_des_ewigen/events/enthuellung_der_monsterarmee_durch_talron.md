@@ -6,8 +6,15 @@ description: Talron offenbart im vertraulichen Gespräch, dass sich nordwestlich
 tags:
 - events
 timestamp: '2026-06-04T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:11Z'
 id: EVENT_ENTHUELLUNG_DER_MONSTERARMEE_DURCH_TALRON
 subtype: Entdeckung
+sources:
+- id: P-52
+  resource: https://www.youtube.com/watch?v=EGNh8O7pE5Q
+  last_modified: '2026-06-04T00:00:00Z'
 ---
 
 [Talron](/npcs/talron.md) offenbart im vertraulichen Gespräch, dass sich nordwestlich eine Armee von mindestens 200 Gnollen, [Goblins](/npcs/pilz_goblins.md), Trollen und anderen Kreaturen sammelt, möglicherweise doppelt so viele. Er warnt, dass [Ringtal](/locations/ringtal.md) nicht standhalten könne, und bittet, die Panik zu vermeiden. Dies führt zum Plan, den Bauernhof zu warnen.

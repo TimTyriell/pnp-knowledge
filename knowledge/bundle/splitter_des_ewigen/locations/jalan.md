@@ -1,13 +1,31 @@
 ---
 type: Location
 title: Jalan
-description: Jalan ist eine Untergrundfestung mit einem Dorf darüber, in der sich
-  die beiden Gruppen treffen. Sie hat einen Portaleingang und ist durch…
+description: Jalan ist eine Siedlung in Abyssalis. Sie wird als Untergrundfestung
+  mit einem Dorf darüber beschrieben, besitzt einen Portaleingang und li…
 tags:
 - locations
 timestamp: '2026-05-19T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:11:55Z'
 id: LOC_JALAN
 subtype: Festung
+relationships:
+- target: npcs/der_schinder
+  note: Der Schinder hält die Stellung in Jalan.
+- target: npcs/richter_herr_der_seelenwacht
+  note: Der Richter und der Schinder führen die Gruppe zur Villa und drängen zur Eile.
+sources:
+- id: P-48
+  resource: https://www.youtube.com/watch?v=MB4quhDWsQE
+  last_modified: '2026-05-06T00:00:00Z'
+- id: P-49
+  resource: https://www.youtube.com/watch?v=4afPD9Q_5AY
+  last_modified: '2026-05-13T00:00:00Z'
+- id: P-50
+  resource: https://www.youtube.com/watch?v=xEcGJeaNixI
+  last_modified: '2026-05-19T00:00:00Z'
 ---
 
 ## Überblick

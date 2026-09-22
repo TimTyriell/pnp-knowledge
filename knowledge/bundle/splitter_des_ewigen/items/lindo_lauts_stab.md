@@ -6,12 +6,28 @@ description: Der Schlüssel von Abisalis, auch Lindo Lauts Stab genannt, ist ein
 tags:
 - items
 timestamp: '2026-04-14T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:14Z'
 id: ITEM_LINDO_LAUTS_STAB
 subtype: Artefakt
 aliases:
 - Lindo Lauts Stab
 - Stab
 - Stab von Lindo Laut
+sources:
+- id: P-20
+  resource: https://www.youtube.com/watch?v=vo1xnyLQDJk
+  last_modified: '2025-09-06T00:00:00Z'
+- id: P-43
+  resource: https://www.youtube.com/watch?v=Yj5BWJfg3Ag
+  last_modified: '2026-03-24T00:00:00Z'
+- id: P-44
+  resource: https://www.youtube.com/watch?v=Ee-K84wcxLM
+  last_modified: '2026-03-31T00:00:00Z'
+- id: P-47
+  resource: https://www.youtube.com/watch?v=1Jyu92P7_Fg
+  last_modified: '2026-04-14T00:00:00Z'
 ---
 
 Der **[Schlüssel](/items/magischer_schluessel.md) von Abisalis**, auch **[Lindo Lauts](/characters/lindo_laut.md) Stab** genannt, ist ein mächtiger Portalschlüssel in Gestalt eines plumpen Granitsteins. Ursprünglich gehörte er Lindo Laut, gelangte später zu Lunara und wurde schließlich von [Vhar'Zul](/deities/vharzul.md) übernommen. Seine zentrale Funktion ist das Öffnen von Portalen nach [Abisalis](/npcs/abisalis_harald.md); zugleich vermag er Energie aufzunehmen.

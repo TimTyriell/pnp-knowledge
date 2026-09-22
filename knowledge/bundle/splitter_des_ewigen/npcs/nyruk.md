@@ -6,12 +6,65 @@ description: Nyruk ist ein großer Eisbär und der treue Begleiter der Faery Nyr
 tags:
 - npcs
 timestamp: '2026-03-24T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_NYRUK
 aliases:
 - Nairook
 - Nairuk
 - Naeruk
 - Nayruk
+verified:
+  by: human:gm
+relationships:
+- target: characters/dodo
+  note: '**Dodo:** Setzt Nyruk im Kampf auf einen großen Untoten an. Nyruk enthauptet
+    die Kreatur mit einem Prankenhieb.'
+- target: characters/esterossa
+  note: '**Esterossa:** Heilt Nyruk beim Aufstieg von seinem Stress. Nyruk bedankt
+    sich, indem er sein Gesicht an Esterossas Brust stößt.'
+- target: characters/lindo_laut
+  note: '**Lindo Laut:** Nyruk zeigt ihm die Zähne, als Lindo Laut über Opfer spricht
+    – ein Ausdruck von Nyruks Schutzinstinkt.'
+- target: characters/nyrella
+  note: '**Nyrella:** Nyruks engste Bindung und Gefährtin. Die beiden teilen eine
+    Zirkusvergangenheit und eine empathische Verbindung, über die Nyrella Nyruks Schmerz
+    und Berührungen wahrnimmt. Nyruk ist ihr…'
+- target: npcs/kane
+  note: '**Kane:** Streichelt Nyruk, was Nyrella über die Verbindung spürt, bevor
+    der Ork auftaucht.'
+- target: npcs/roland
+  note: '**Roland:** Nyruk wartet bei der Karawane auf Nyrella, als Roland blutverschmiert
+    und außer Atem ankommt.'
+sources:
+- id: P-16
+  resource: https://www.youtube.com/watch?v=XXgO5Ht4Q0A
+  last_modified: '2025-07-29T00:00:00Z'
+- id: P-18
+  resource: https://www.youtube.com/watch?v=-XbO3FLSL_I
+  last_modified: '2025-08-20T00:00:00Z'
+- id: P-19
+  resource: https://www.youtube.com/watch?v=TLZOH7TlGhk
+  last_modified: '2025-09-02T00:00:00Z'
+- id: P-22
+  resource: https://www.youtube.com/watch?v=AhIT8dcxw2o
+  last_modified: '2025-09-17T00:00:00Z'
+- id: P-23
+  resource: https://www.youtube.com/watch?v=DGzfqVigS0g
+  last_modified: '2025-09-23T00:00:00Z'
+- id: P-24
+  resource: https://www.youtube.com/watch?v=bUT7Mc2hjUY
+  last_modified: '2025-09-30T00:00:00Z'
+- id: P-30
+  resource: https://www.youtube.com/watch?v=w__ahowb9p0
+  last_modified: '2025-11-18T00:00:00Z'
+- id: P-34
+  resource: https://www.youtube.com/watch?v=H3ckYdTv4y8
+  last_modified: '2026-01-20T00:00:00Z'
+- id: P-43
+  resource: https://www.youtube.com/watch?v=Yj5BWJfg3Ag
+  last_modified: '2026-03-24T00:00:00Z'
 ---
 
 ## Überblick

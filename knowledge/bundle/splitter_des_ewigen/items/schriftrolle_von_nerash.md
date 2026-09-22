@@ -6,12 +6,25 @@ description: Die Schriftrolle von Nerash ist ein mächtiges Artefakt. Die Götti
 tags:
 - items
 timestamp: '2026-07-21T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:14Z'
 id: ITEM_SCHRIFTROLLE_VON_NERASH
 subtype: Schriftstück
 aliases:
 - Schriftrolle (von Nerash)
 - Schriftrolle von Nehrasch
-status: disputed
+review_status: disputed
+sources:
+- id: P-37
+  resource: https://www.youtube.com/watch?v=Z2jlzpoTWVw
+  last_modified: '2026-02-17T00:00:00Z'
+- id: P-44
+  resource: https://www.youtube.com/watch?v=Ee-K84wcxLM
+  last_modified: '2026-03-31T00:00:00Z'
+- id: P-55
+  resource: https://www.youtube.com/watch?v=KNV4oNGJ0tw
+  last_modified: '2026-07-21T00:00:00Z'
 ---
 
 Die **[Schriftrolle](/items/schriftrollen.md) von Nerash** ist ein mächtiges Artefakt. Die Göttin [Nerash](/deities/nerash.md) übergab sie [Lindo Laut](/characters/lindo_laut.md) und [Dodo](/characters/dodo.md). Sie enthält einen Zauberspruch, der selbst einem Gott oder seinen Dienern gravierenden Schaden zufügen kann, und galt der Gruppe als ihr mächtigstes Artefakt. Trotz dieses Potenzials blieb sie lange unbenutzt und wurde als Waffe aufbewahrt.

@@ -6,7 +6,17 @@ description: Ein Eigenname des Wirts ist nicht überliefert. Die Belege beschrei
 tags:
 - npcs
 timestamp: '2026-07-29T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:19Z'
 id: NPC_WIRT
+sources:
+- id: P-05
+  resource: https://www.youtube.com/watch?v=z3C-bewKqUs
+  last_modified: '2025-04-23T00:00:00Z'
+- id: S1-01-A
+  resource: https://www.youtube.com/watch?v=umGyKLkefJI
+  last_modified: '2026-07-29T00:00:00Z'
 ---
 
 Ein Eigenname des Wirts ist nicht überliefert. Die Belege beschreiben einen Wirt in [Gemata](/locations/gemata.md), der die Verteidigung des Dorfes unterstützte, und einen Gastwirt in [Ehrenfels](/locations/ehrenfels.md), der die Heldengruppe bewirtete. Ob es sich um dieselbe Person handelt, bleibt unklar.

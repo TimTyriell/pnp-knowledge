@@ -6,8 +6,15 @@ description: Die Schlacht um Ehrenfels war ein dramatischer Kampf, bei dem knapp
 tags:
 - events
 timestamp: '2026-07-29T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_SCHLACHT_UM_EHRENFELS
 subtype: Kampf
+sources:
+- id: S1-01-A
+  resource: https://www.youtube.com/watch?v=umGyKLkefJI
+  last_modified: '2026-07-29T00:00:00Z'
 ---
 
 Die Schlacht um [Ehrenfels](/locations/ehrenfels.md) war ein dramatischer Kampf, bei dem knapp hundert dämonenartige Kreaturen die Stadt angriffen. [Rotunas](/characters/rotunas.md) und viele Verteidiger fielen, darunter auch [Voras](/npcs/voras.md). Nox kämpfte an vorderster Front und wurde schwer verwundet, bevor Engel erschienen. Die Stadt überlebte, aber die Hälfte der Bewohner verlor ihr Leben.

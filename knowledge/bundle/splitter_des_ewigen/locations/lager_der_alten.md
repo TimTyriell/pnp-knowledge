@@ -6,8 +6,17 @@ description: Ein abgelegenes Lager auf dem Berg, bewohnt von einer Gruppe alter,
 tags:
 - locations
 timestamp: '2025-08-12T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:16Z'
 id: LOC_LAGER_DER_ALTEN
 subtype: Siedlung
+relationships:
+- target: npcs/hendrik
+sources:
+- id: P-17
+  resource: https://www.youtube.com/watch?v=vHIjua0BZ9Y
+  last_modified: '2025-08-12T00:00:00Z'
 ---
 
 Ein abgelegenes Lager auf dem Berg, bewohnt von einer Gruppe alter, abgemagerter Nomaden. Es besteht aus Zelten und einem Höhleneingang, der tabu ist. Die Bewohner sprechen einen alten Dialekt und arbeiten angeblich an einer Eisenader. Hier übernachtet die Gruppe und erlebt den nächtlichen Angriff sowie die Begegnung mit dem Hass-Spirit.

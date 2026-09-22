@@ -6,9 +6,16 @@ description: Der Schlangengott ist ein alter Gott, der mit den alten Göttern ve
 tags:
 - deities
 timestamp: '2025-06-03T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DEITY_SCHLANGENGOTT_SCHLANGENPRAESENZ
 subtype: Alter Gott
-status: disputed
+review_status: disputed
+sources:
+- id: P-10
+  resource: https://www.youtube.com/watch?v=jtYR4Je0a18
+  last_modified: '2025-06-03T00:00:00Z'
 ---
 
 ## Überblick

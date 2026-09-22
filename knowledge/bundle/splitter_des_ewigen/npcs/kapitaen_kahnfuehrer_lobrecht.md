@@ -6,7 +6,14 @@ description: Kapitän Kahnführer Lobrecht gehört zu den Ehrenfelser Offizieren
 tags:
 - npcs
 timestamp: '2026-04-09T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_KAPITAEN_KAHNFUEHRER_LOBRECHT
+sources:
+- id: P-46
+  resource: https://www.youtube.com/watch?v=vcGkejr8_nI
+  last_modified: '2026-04-09T00:00:00Z'
 ---
 
 Kapitän [Kahnführer Lobrecht](/npcs/lobrecht.md) gehört zu den Ehrenfelser Offizieren, die [Meister Pyrandras](/npcs/meister_pyrandras.md) zur Verstärkung eilen.

@@ -6,12 +6,41 @@ description: Koll'Mereth, genannt „die Krone“, ist eines der vier Seelenstü
 tags:
 - deities
 timestamp: '2025-07-22T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DEITY_KOLLMERETH
 subtype: Sonstiges
 aliases:
 - Koll
 - Kol Merefs
 - Kol Meref
+verified:
+  by: human:gm
+relationships:
+- target: characters/esterossa
+  note: 'Esterossa: Warnte, dass es nicht weniger als drei werden sollten, weil die
+    Seelen stärker werden, je weniger von ihnen übrig sind.'
+- target: characters/lindo_laut
+  note: 'Lindo Laut: Träger des Amuletts, in dem Koll''Mereth gefangen war; wurde
+    von der Statue gerufen und hörte seine Stimme, bis Nerash das Seelenstück auslöschte.'
+- target: deities/nerash
+  note: 'Nerash: Von Koll''Mereths Statue als „dunkler Gott“ bezeichnet; zerstörte
+    die Statue mit einem weißen Schwert und löschte damit das Seelenstück aus.'
+- target: deities/vharzul
+  note: 'Vhar''Zul: Koll''Mereth ist eines seiner vier Seelenstücke; seine Kraft ist
+    ein Teil von Vhar''Zuls Essenz, nicht die eines eigenständigen Gottes.'
+- target: npcs/nox
+  note: 'Gildemeister: Erklärte die vier Statuen als Symbole der Seelenstücke und
+    nannte Koll''Mereth als die linke; stellte die Vermutung über die Machtverschiebung
+    auf die verbliebenen drei an.'
+sources:
+- id: P-14
+  resource: https://www.youtube.com/watch?v=XOnHa6CmDbo
+  last_modified: '2025-07-09T00:00:00Z'
+- id: P-15
+  resource: https://www.youtube.com/watch?v=BRRCUgW4xRo
+  last_modified: '2025-07-22T00:00:00Z'
 ---
 
 # Überblick

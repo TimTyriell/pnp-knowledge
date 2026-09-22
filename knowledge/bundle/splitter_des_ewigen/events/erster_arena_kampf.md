@@ -6,8 +6,15 @@ description: In der ersten Arena kämpfen Dodo, Cookie und Esterossa gegen den H
 tags:
 - events
 timestamp: '2025-10-21T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:11Z'
 id: EVENT_ERSTER_ARENA_KAMPF
 subtype: Kampf
+sources:
+- id: P-27
+  resource: https://www.youtube.com/watch?v=sxFhbtwoefA
+  last_modified: '2025-10-21T00:00:00Z'
 ---
 
 In der ersten [Arena](/locations/arena.md) kämpfen [Dodo](/characters/dodo.md), [Cookie](/characters/cookie.md) und [Esterossa](/characters/esterossa.md) gegen den Hörigen, der sich in einen Werwolf verwandelt. Die Gruppe nutzt Ranken, Provokation und schwere Treffer, um ihn zu besiegen. Der Lord entscheidet, dass er sterben muss, und Dodo führt die Hinrichtung aus.

@@ -1,11 +1,14 @@
 ---
 type: Faction
 title: Silberkerne
-description: 'Später wird die Fraktion zum Auslöser einer längeren Handlungskette:
-  Ein Bote der Silberkerne bittet die Gefährten um Hilfe, weil Willauch…'
+description: Die Silberkerne sind eine Banditenorganisation mit mehreren Lagern, die
+  von Harl und Sarina gemeinsam angeführt wird. Sie treten zunächst a…
 tags:
 - factions
 timestamp: '2026-03-24T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:11:54Z'
 id: FACTION_SILBERKERNE
 subtype: Bande
 aliases:
@@ -16,6 +19,47 @@ aliases:
 - Banditen (im Banditenlager)
 - Silberkerne
 - Banditen
+verified:
+  by: human:gm
+relationships:
+- target: characters/brim
+- target: characters/nyrella
+- target: factions/fluechtlinge
+  note: '**Flüchtlinge:** Die Silberkerne arrangierten sich mit den Flüchtlingen,
+    halfen beim Bau des Lagers und waren bereit, die Flüchtlinge bei einem Abzug mitzunehmen.
+    Die Zusammenarbeit wird als deutlich…'
+- target: locations/brandau
+- target: locations/heinrich_farm
+  note: '**Heinrich-Farm:** Eine Zelle der Silberkerne nutzt das Anwesen der Heinrichs
+    als Basis; sie wird von Floran geführt.'
+- target: locations/silbergruft
+  note: '**Silbergruft:** Nahe der Silbergruft kampierten Silberkerne und hatten dort
+    mit Kreaturen aus der Mine zu kämpfen.'
+- target: locations/willauch
+  note: '**Willauch:** Die Stadt setzt ein hohes Kopfgeld auf die Silberkerne aus,
+    nachdem ein wichtiger Diplomat in Willauch ermordet wurde. Die Silberkerne bestreiten
+    die Tat und deuten die Verfolgung als S…'
+- target: npcs/hal_harl
+- target: npcs/hendrik_heinrich
+sources:
+- id: P-23
+  resource: https://www.youtube.com/watch?v=DGzfqVigS0g
+  last_modified: '2025-09-23T00:00:00Z'
+- id: P-33
+  resource: https://www.youtube.com/watch?v=w4LB1s9_3rs
+  last_modified: '2026-01-13T00:00:00Z'
+- id: P-38
+  resource: https://www.youtube.com/watch?v=WOFArbwDDIQ
+  last_modified: '2026-02-24T00:00:00Z'
+- id: P-41
+  resource: https://www.youtube.com/watch?v=HHXxsASLrbQ
+  last_modified: '2026-03-18T00:00:00Z'
+- id: P-42
+  resource: https://www.youtube.com/watch?v=niVxKtdQBn0
+  last_modified: '2026-03-23T00:00:00Z'
+- id: P-43
+  resource: https://www.youtube.com/watch?v=Yj5BWJfg3Ag
+  last_modified: '2026-03-24T00:00:00Z'
 ---
 
 # Silberkerne

@@ -6,7 +6,43 @@ description: Dante ist ein Adliger aus Willauch und ehemaliger Vampirjäger. Er 
 tags:
 - characters
 timestamp: '2026-05-13T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:09Z'
 id: CHAR_DANTE
+relationships:
+- target: characters/kip_ribbit
+  note: '**Kip:** Dante nimmt Kip in seiner Selbstbeschreibung als Anführer aus; Kip
+    hat für ihn offenbar eine Sonderstellung innerhalb der Gruppe.'
+- target: characters/miqo
+  note: '**Miqo:** Miqo nennt Dante ausdrücklich als Teil des Willocher Freundeskreises,
+    zu dem auch Miko und andere gehören; diese Gruppe wurde für Miqo zur neuen Familie.
+    Gemeinsam mit Miqo und dem Richter…'
+- target: deities/huludan
+  note: '**Huludan:** Nach dem Pakt mit Huludan trifft Dante seine Entscheidung, mit
+    dem Richter und Miqo zu gehen. Huludan ist ein Titan.'
+- target: deities/vharzul
+  note: '**Vasul:** Vom Seraphen wird Dante mit Vasul in Verbindung gebracht; Dante
+    selbst bleibt distanziert und warnt Lunara ausdrücklich davor, Vasul zu sehr zu
+    vertrauen.'
+- target: locations/willauch
+  note: '**Willauch:** Dantes Herkunft und der Ort der früheren Freundschaften.'
+- target: npcs/der_schinder
+  note: '**Der Schinder:** Dante will ihn gemeinsam mit dem Richter und Miqo unterstützen.'
+- target: npcs/richter_herr_der_seelenwacht
+  note: '**Der Richter:** Der Richter bemerkt im Kampf Auffälligkeiten an Ring und
+    Stein; Dante schließt sich ihm und Miqo für die Unterstützung des Schinders an.'
+- target: npcs/seraph
+  note: '**Der Seraph:** Der Seraph greift Dante als angeblichen Anhänger von Vasul
+    an und fügt ihm 17 Punkte Heiligen Schaden zu. Dante diskutiert mit ihm über seine
+    Vergangenheit und entgegnet auf den Vorwu…'
+sources:
+- id: P-48
+  resource: https://www.youtube.com/watch?v=MB4quhDWsQE
+  last_modified: '2026-05-06T00:00:00Z'
+- id: P-49
+  resource: https://www.youtube.com/watch?v=4afPD9Q_5AY
+  last_modified: '2026-05-13T00:00:00Z'
 ---
 
 ## Überblick

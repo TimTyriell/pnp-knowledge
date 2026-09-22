@@ -1,14 +1,65 @@
 ---
 type: Character
 title: Valeria
-description: 'Als Feuermagierin nutzt sie verschiedene Feuerzauber: Feuerstrahlen,
-  Feuerbolzen und komprimierte Feuerstöße. Einen Gegner tötet sie, indem…'
+description: Valeria ist eine weibliche Simja-Magierin und Feuermagierin, klein und
+  affenartig. Sie gehört zur Gruppe um Rotunas und reitet ihm häufig a…
 tags:
 - characters
 timestamp: '2026-02-11T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:11:53Z'
 id: CHAR_VALERIA
 aliases:
 - Valerie
+relationships:
+- target: characters/cookie
+  note: 'Cookie: Nachdem Valeria den Speer nicht behalten will, überlässt sie ihn
+    Cookie mit den Worten „Ja klar, nimm mal“, obwohl sie zunächst „Dips, meiner!“
+    gerufen hatte.'
+- target: characters/dodo
+  note: Dodo, Lindo Laut und Cookie werden in Dodos Aufzählung als Gruppenmitglieder
+    genannt, mit denen man später gemeinsam eine Prüfung machen sollte.
+- target: characters/esterossa
+  note: 'Esterossa: Er zeigt später Valerias Brief und erklärt ihre Abwesenheit; Valeria
+    gehe es gut und erwarte „eine kleine Valeria“.'
+- target: characters/rotunas
+  note: 'Rotunas: Valeria reitet auf seiner Schulter; er hebt sie ins Fenster und
+    trägt ihre Armbrust. Ihr späterer Brief ist an Rotunas und seine Gefährten adressiert.'
+- target: deities/goblingoetter
+- target: deities/nerash
+  note: 'Nerash: Nachdem die gefangene Kreatur befreit wurde, betet Valeria spontan
+    zu Nerash und erklärt sich zu ihrer ersten Dienerin.'
+- target: npcs/berthold
+  note: 'Berthold: Von ihm kauft Valeria eine Armbrust.'
+- target: npcs/lendras
+  note: 'Leandras: Durch das Fenster dringt sie bei ihm ein und hält ihn zunächst
+    für den Koch.'
+- target: npcs/voras
+  note: 'Voras der Heilige: In der Katakombe ändert sie die Inschrift auf dessen Sarg
+    von „Voras der Schrecken“ zu „Voras der Heilige“.'
+sources:
+- id: P-03
+  resource: https://www.youtube.com/watch?v=1PWdwvun5ow
+  last_modified: '2025-04-09T00:00:00Z'
+- id: P-05
+  resource: https://www.youtube.com/watch?v=z3C-bewKqUs
+  last_modified: '2025-04-23T00:00:00Z'
+- id: P-14
+  resource: https://www.youtube.com/watch?v=XOnHa6CmDbo
+  last_modified: '2025-07-09T00:00:00Z'
+- id: P-22
+  resource: https://www.youtube.com/watch?v=AhIT8dcxw2o
+  last_modified: '2025-09-17T00:00:00Z'
+- id: P-29
+  resource: https://www.youtube.com/watch?v=8Khb-Y8XbKY
+  last_modified: '2025-11-14T00:00:00Z'
+- id: P-30
+  resource: https://www.youtube.com/watch?v=w__ahowb9p0
+  last_modified: '2025-11-18T00:00:00Z'
+- id: P-36
+  resource: https://www.youtube.com/watch?v=3C8SD-cyNPM
+  last_modified: '2026-02-11T00:00:00Z'
 ---
 
 ## Überblick

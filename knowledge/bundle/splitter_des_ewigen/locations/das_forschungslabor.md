@@ -6,8 +6,15 @@ description: Ein Forschungslabor mit alter Technologie und Dokumenten in uralter
 tags:
 - locations
 timestamp: '2025-10-28T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: LOC_DAS_FORSCHUNGSLABOR
 subtype: Dungeon
+sources:
+- id: P-28
+  resource: https://www.youtube.com/watch?v=V6NzNakqxXM
+  last_modified: '2025-10-28T00:00:00Z'
 ---
 
 Ein Forschungslabor mit alter Technologie und Dokumenten in uralter Sprache. [Lindo Laut](/characters/lindo_laut.md) liest, dass dort vor Jahrzehnten etwas gefertigt wurde, das Leben befällt und vernichten kann. [Cookie](/characters/cookie.md) nimmt drei unbeschriftete Fläschchen mit.

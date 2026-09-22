@@ -6,8 +6,15 @@ description: 'Die Statue wird im Wald entdeckt und fällt durch ihre Bewegung au
 tags:
 - items
 timestamp: '2026-01-06T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: ITEM_STATUE_MIT_GRUENEM_KRISTALL
 subtype: Artefakt
+sources:
+- id: P-32
+  resource: https://www.youtube.com/watch?v=VGw81seFvbo
+  last_modified: '2026-01-06T00:00:00Z'
 ---
 
 Die Statue wird im [Wald](/locations/wald.md) entdeckt und fällt durch ihre Bewegung auf: Sie verschiebt sich, wenn niemand hinsieht, und hinterlässt Spuren im Schnee. Lunara sieht in einer Vision, dass sie sich bewegt hat, ohne dass eine Person anwesend war. Die Gruppe zerstört die Statue, indem Lunara Ketten darum schlingt und sie auseinanderbricht; im Inneren kommt ein grüner [Kristall](/items/gruener_kristall.md) zum Vorschein. [Dodo](/characters/dodo.md) zerstört den Kristall mit Feuer, was eine Explosion auslöst und ihm eine Vision eines Labors mit einem großen hängenden grünen Kristall und einer Person gewährt. Nach der Zerstörung bleibt nur noch Stein und der Kristall ist vernichtet.

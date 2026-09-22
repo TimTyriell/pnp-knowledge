@@ -6,8 +6,18 @@ description: Valuna ist eine Stadt im Norden, die als heilige Stadt gilt und mit
 tags:
 - locations
 timestamp: '2026-08-12T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:16Z'
 id: LOC_VALUNA
 subtype: Siedlung
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=qRj2t3wQHfs
+  last_modified: '2026-08-04T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=piUv11DCwDw
+  last_modified: '2026-08-12T00:00:00Z'
 ---
 
 **Valuna** ist eine Stadt im Norden, die als heilige Stadt gilt und mit den [Assassinen](/factions/assassinen.md) in Verbindung gebracht wird. Sie wird als weit entfernt beschrieben; die Gruppe war zum Zeitpunkt ihrer Erwähnung noch nie dort.

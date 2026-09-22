@@ -6,7 +6,25 @@ description: Harald ist ein Magier-Dämon in Abyssalis, der im Verlauf der Kampa
 tags:
 - npcs
 timestamp: '2026-04-14T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:17Z'
 id: NPC_ABISALIS_HARALD
+verified:
+  by: human:gm
+relationships:
+- target: characters/dodo
+  note: 'Dodo: Fragt nach der Sprache Haralds.'
+- target: characters/lindo_laut
+  note: 'Lindo Laut: Tritt vor und fordert Harald auf, sich vorzustellen.'
+- target: characters/lunara_velora
+  note: 'Lunara Velora: Harald versucht sie einzuschüchtern, wird aber von ihr eingeschüchtert
+    und gibt seinen Anspruch auf.'
+- target: npcs/lenra
+sources:
+- id: P-47
+  resource: https://www.youtube.com/watch?v=1Jyu92P7_Fg
+  last_modified: '2026-04-14T00:00:00Z'
 ---
 
 ## Überblick

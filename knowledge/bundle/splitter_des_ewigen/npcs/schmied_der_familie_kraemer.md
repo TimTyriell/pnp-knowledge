@@ -6,9 +6,19 @@ description: Der Schmied der Familie Krämer ist ein Handwerker im Dorf Gemata u
 tags:
 - npcs
 timestamp: '2025-04-23T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_SCHMIED_DER_FAMILIE_KRAEMER
 aliases:
 - Schmied
+sources:
+- id: P-03
+  resource: https://www.youtube.com/watch?v=1PWdwvun5ow
+  last_modified: '2025-04-09T00:00:00Z'
+- id: P-05
+  resource: https://www.youtube.com/watch?v=z3C-bewKqUs
+  last_modified: '2025-04-23T00:00:00Z'
 ---
 
 Der Schmied der Familie Krämer ist ein Handwerker im Dorf Gemata und Mitglied der dort ansässigen Familie Krämer. Er tritt im Zusammenhang mit der Verteidigung des Dorfes in Erscheinung. Zunächst ist er verärgert über das Chaos, das die Gruppe in Gemata ausgelöst hat, und verlangt von ihr, seine Tochter zurückzubringen. Später stellt er sich jedoch hinter die Verteidigung des Ortes: Er stellt drei Bärenfallen und spitze Barrieren für den Kampf bereit und kämpft selbst mit einer großen Axt und einem Schild.

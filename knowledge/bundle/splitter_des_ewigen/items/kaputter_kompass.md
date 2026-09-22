@@ -6,8 +6,15 @@ description: Cookie besitzt einen kaputten Kompass, der in der normalen Welt nic
 tags:
 - items
 timestamp: '2025-09-06T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:14Z'
 id: ITEM_KAPUTTER_KOMPASS
 subtype: Werkzeug
+sources:
+- id: P-20
+  resource: https://www.youtube.com/watch?v=vo1xnyLQDJk
+  last_modified: '2025-09-06T00:00:00Z'
 ---
 
 [Cookie](/characters/cookie.md) besitzt einen kaputten Kompass, der in der normalen Welt nichts anzeigt. In der [Zwischenebene](/domains/zwischenebenen.md) hofft sie, dass er funktioniert, aber er bietet keine Orientierung.

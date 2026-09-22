@@ -6,7 +6,17 @@ description: Brock ist eine Wache im Dorf Breska. Er tritt als Wachpartner von K
 tags:
 - npcs
 timestamp: '2025-06-25T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:17Z'
 id: NPC_BROCK
+sources:
+- id: P-03
+  resource: https://www.youtube.com/watch?v=1PWdwvun5ow
+  last_modified: '2025-04-09T00:00:00Z'
+- id: P-13
+  resource: https://www.youtube.com/watch?v=tpkO9uGw6-I
+  last_modified: '2025-06-25T00:00:00Z'
 ---
 
 **Brock** ist eine Wache im Dorf [Breska](/locations/breska.md). Er tritt als Wachpartner von [Kerl](/npcs/kerl.md) auf und begleitet in einem weiteren Auftritt den [Bürgermeister](/npcs/buergermeister_spitzzahn.md); dabei hat er einen kleinen Hund bei sich. Die Quellen beschreiben ihn als Nebenfigur mit untergeordneter Rolle.

@@ -6,8 +6,18 @@ description: Die Alten Götter sind eine Gruppe mächtiger Wesen, die einst herr
 tags:
 - factions
 timestamp: '2026-08-12T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_ALTE_GOETTER
 subtype: Sonstiges
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=tl76B4V0io8
+  last_modified: '2025-06-17T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=piUv11DCwDw
+  last_modified: '2026-08-12T00:00:00Z'
 ---
 
 Die Alten Götter sind eine Gruppe mächtiger Wesen, die einst herrschten. Sie wurden von den neuen Göttern besiegt und verbannt, haben aber offenbar immer noch Einfluss. Sie gelten als mächtig, aber verloren: ihre Macht wird nicht bestritten, ihre Herrschaftszeit ist jedoch beendet.

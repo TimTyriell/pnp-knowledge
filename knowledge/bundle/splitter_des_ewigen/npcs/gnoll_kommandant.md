@@ -6,11 +6,23 @@ description: Der Gnoll-Kommandant ist ein Oberbefehlshaber der Gnolle in einem M
 tags:
 - npcs
 timestamp: '2026-07-23T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:17Z'
 id: NPC_GNOLL_KOMMANDANT
 aliases:
 - Gnoll-Kommandant
 - Kommandant
-status: disputed
+review_status: disputed
+relationships:
+- target: npcs/hans_soldat_aus_breska
+sources:
+- id: P-32
+  resource: https://www.youtube.com/watch?v=VGw81seFvbo
+  last_modified: '2026-01-06T00:00:00Z'
+- id: S1-02-B
+  resource: https://www.youtube.com/watch?v=Gb-TEbCFF0M
+  last_modified: '2026-07-23T00:00:00Z'
 ---
 
 Der **Gnoll-Kommandant** ist ein Oberbefehlshaber der [Gnolle](/factions/gnolle.md) in einem Minenabschnitt. Er tritt dort als Anführer der gegnerischen Gnoll-Truppen auf und wird von Mitgliedern der Heldengruppe gestellt. Sein Tod führt nicht zu einer gewöhnlichen Leiche: Sein Körper verwandelt sich in eine dunkle Kreatur, die entkommt.

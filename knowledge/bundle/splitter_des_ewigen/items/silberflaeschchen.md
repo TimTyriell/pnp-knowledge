@@ -6,8 +6,15 @@ description: Die Soldaten von Ser Eulenweiss haben Silberfläschchen dabei, die 
 tags:
 - items
 timestamp: '2026-03-10T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:14Z'
 id: ITEM_SILBERFLAESCHCHEN
 subtype: Trank
+sources:
+- id: P-40
+  resource: https://www.youtube.com/watch?v=Kr9_AC2XtOw
+  last_modified: '2026-03-10T00:00:00Z'
 ---
 
 Die Soldaten von [Ser Eulenweiss](/npcs/ser_eulenweiss.md) haben Silberfläschchen dabei, die sie öffnen, als [Voras](/npcs/voras.md) erscheint. Vermutlich enthalten sie Weihwasser oder ähnliches, um sich gegen Vampire zu schützen. Voras bemerkt, dass sie keine Macht haben.

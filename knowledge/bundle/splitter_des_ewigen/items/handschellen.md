@@ -6,8 +6,18 @@ description: 'Die Handschellen sind göttliche Artefakte, die von Nox bereitgest
 tags:
 - items
 timestamp: '2026-07-23T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:14Z'
 id: ITEM_HANDSCHELLEN
 subtype: Artefakt
+sources:
+- id: P-37
+  resource: https://www.youtube.com/watch?v=Z2jlzpoTWVw
+  last_modified: '2026-02-17T00:00:00Z'
+- id: S1-02-B
+  resource: https://www.youtube.com/watch?v=Gb-TEbCFF0M
+  last_modified: '2026-07-23T00:00:00Z'
 ---
 
 Die **Handschellen** sind göttliche Artefakte, die von [Nox](/npcs/nox.md) bereitgestellt werden. Sie dienen dazu, sehr mächtige Wesen zu bannen: Wer sie trägt, dessen magische Fähigkeiten werden vollständig unterdrückt. Die Belege nennen zwei Vorkommen – den Einsatz durch [Lindo Laut](/characters/lindo_laut.md) sowie einen Fund durch [Kaya](/characters/kaya.md) im Goblin-Lager; ob es sich dabei um dasselbe Paar handelt, ist nicht belegt.

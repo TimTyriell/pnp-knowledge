@@ -6,8 +6,15 @@ description: Nach dem Kampf kehren die Helden durch das Portal zurück. Voras em
 tags:
 - events
 timestamp: '2026-03-10T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_RUECKKEHR_UND_ANERKENNUNG_DURCH_VORAS
 subtype: Sonstiges
+sources:
+- id: P-40
+  resource: https://www.youtube.com/watch?v=Kr9_AC2XtOw
+  last_modified: '2026-03-10T00:00:00Z'
 ---
 
 Nach dem Kampf kehren die Helden durch das Portal zurück. [Voras](/npcs/voras.md) empfängt sie und ist beeindruckt von ihrem Erfolg. Er entschuldigt sich für seine anfängliche Skepsis und sichert volle Unterstützung zu. Er betont, dass die Scharade vor den Soldaten aufrechterhalten werden soll. Die Gruppe erhält die Hörner als Trophäen und plant die nächsten Schritte.

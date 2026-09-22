@@ -6,10 +6,27 @@ description: Hartwacht ist die Hauptstadt der Orks. Die Stadt liegt südlich des
 tags:
 - locations
 timestamp: '2026-03-24T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:16Z'
 id: LOC_HARTWACHT
 subtype: Siedlung
 aliases:
 - Hardwacht
+verified:
+  by: human:gm
+relationships:
+- target: npcs/hans_wirt_zum_gruenen_sichelmond
+sources:
+- id: P-25
+  resource: https://www.youtube.com/watch?v=qVAF_54S8Vw
+  last_modified: '2025-10-07T00:00:00Z'
+- id: P-41
+  resource: https://www.youtube.com/watch?v=HHXxsASLrbQ
+  last_modified: '2026-03-18T00:00:00Z'
+- id: P-43
+  resource: https://www.youtube.com/watch?v=Yj5BWJfg3Ag
+  last_modified: '2026-03-24T00:00:00Z'
 ---
 
 **Hartwacht** ist die Hauptstadt der [Orks](/factions/orks.md). Die Stadt liegt südlich des [Orkgebiets](/locations/orkgebiet.md), hinter einem von Vargen bewohnten Pass.

@@ -6,7 +6,14 @@ description: Ein Halblingjunge, der eine geschnitzte Figur seines Hundes Nepp be
 tags:
 - npcs
 timestamp: '2026-08-06T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_JUNGER_HALBLING
+sources:
+- id: S1-03-B
+  resource: https://www.youtube.com/watch?v=0HyPHao8s_k
+  last_modified: '2026-08-06T00:00:00Z'
 ---
 
 Ein Halblingjunge, der eine geschnitzte Figur seines Hundes [Nepp](/npcs/nepp.md) besitzt. Bruma gibt ihm die gefundene Holzfigur zurück und erhält dafür einen Heiltrank.

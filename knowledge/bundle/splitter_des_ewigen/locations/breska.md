@@ -6,6 +6,9 @@ description: Breska begann als kleines Bauerndorf und entwickelte sich innerhalb
 tags:
 - locations
 timestamp: '2026-07-29T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: LOC_BRESKA
 subtype: Siedlung
 aliases:
@@ -14,6 +17,78 @@ aliases:
 - Breschka
 - Brechka
 - Bereska
+verified:
+  by: human:gm
+relationships:
+- target: factions/gilde_von_ehrenfels
+  note: '**Die Gilde:** Breska war in seiner Blüte größer als die alte Gilde. Die
+    Gilde beauftragte die Helden, nach dem Winter in Breska nach dem Rechten zu sehen.'
+- target: factions/koenigreich_zebros
+  note: '**Zebros:** Die Untoten, die Breska zerstörten, zogen sich anschließend zum
+    Berg Zebros zurück, der nach dem alten Königreich Zebros benannt ist.'
+- target: items/schriftrollen
+- target: locations/ehrenfels
+  note: '**Ehrenfels:** Nach der Zerstörung zog die Gruppe von Breska weiter nach
+    Ehrenfels. Auch die Gilde, die später den Auftrag zur Erkundung Bresskas gab,
+    ist mit Ehrenfels verbunden.'
+- target: locations/willauch
+  note: '**Willauch:** Breska wirkte im Vergleich zu Willauch mit seiner Mauer winzig.
+    Nach dem Fall Bresskas wurde nicht erwartet, dass Willauch Truppen zur Hilfe schicken
+    würde.'
+- target: npcs/auranil
+- target: npcs/belorus
+  note: '**Belorus:** Führte die Untotenarmee, die Breska belagerte, überrannte und
+    plünderte. Belorus ist ein schwarzer Paladin, kein Lich und keine Gottheit.'
+- target: npcs/lenra
+- target: npcs/lobrecht
+- target: npcs/tindrael
+- target: npcs/voras
+  note: '**Voras der Heilige:** Finanzierte den Ausbau Bresskas und galt als treibende
+    Kraft hinter dem schnellen Wachstum. Er besaß ein Anwesen in der Stadt. Als die
+    Untoten die Stadt belagerten, sandte er e…'
+sources:
+- id: P-13
+  resource: https://www.youtube.com/watch?v=tpkO9uGw6-I
+  last_modified: '2025-06-25T00:00:00Z'
+- id: P-22
+  resource: https://www.youtube.com/watch?v=AhIT8dcxw2o
+  last_modified: '2025-09-17T00:00:00Z'
+- id: P-23
+  resource: https://www.youtube.com/watch?v=DGzfqVigS0g
+  last_modified: '2025-09-23T00:00:00Z'
+- id: P-24
+  resource: https://www.youtube.com/watch?v=bUT7Mc2hjUY
+  last_modified: '2025-09-30T00:00:00Z'
+- id: P-26
+  resource: https://www.youtube.com/watch?v=cUtz87UCHu4
+  last_modified: '2025-10-14T00:00:00Z'
+- id: P-30
+  resource: https://www.youtube.com/watch?v=w__ahowb9p0
+  last_modified: '2025-11-18T00:00:00Z'
+- id: P-32
+  resource: https://www.youtube.com/watch?v=VGw81seFvbo
+  last_modified: '2026-01-06T00:00:00Z'
+- id: P-33
+  resource: https://www.youtube.com/watch?v=w4LB1s9_3rs
+  last_modified: '2026-01-13T00:00:00Z'
+- id: P-34
+  resource: https://www.youtube.com/watch?v=H3ckYdTv4y8
+  last_modified: '2026-01-20T00:00:00Z'
+- id: P-40
+  resource: https://www.youtube.com/watch?v=Kr9_AC2XtOw
+  last_modified: '2026-03-10T00:00:00Z'
+- id: P-43
+  resource: https://www.youtube.com/watch?v=Yj5BWJfg3Ag
+  last_modified: '2026-03-24T00:00:00Z'
+- id: P-52
+  resource: https://www.youtube.com/watch?v=EGNh8O7pE5Q
+  last_modified: '2026-06-04T00:00:00Z'
+- id: P-55
+  resource: https://www.youtube.com/watch?v=KNV4oNGJ0tw
+  last_modified: '2026-07-21T00:00:00Z'
+- id: S1-01-A
+  resource: https://www.youtube.com/watch?v=umGyKLkefJI
+  last_modified: '2026-07-29T00:00:00Z'
 ---
 
 ## Überblick

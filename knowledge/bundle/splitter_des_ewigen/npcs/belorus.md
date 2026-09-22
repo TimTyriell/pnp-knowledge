@@ -6,9 +6,63 @@ description: Belorus der Stille ist ein untoter schwarzer Paladin und Kriegsherr
 tags:
 - npcs
 timestamp: '2026-03-10T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:17Z'
 id: NPC_BELORUS
 aliases:
 - Belorus
+verified:
+  by: human:gm
+relationships:
+- target: characters/cookie
+- target: characters/dodo
+  note: '**Dodo:** Belorus erinnert sich an Dodo, spricht ihn mit Respekt an und erkennt
+    ihn als ehrenhaft. Bereits in der ersten Begegnung fordert er Dodo auf, einen
+    Grund zu liefern, nicht in seine Armee ei…'
+- target: characters/lindo_laut
+  note: '**Lindo Laut:** Belorus verlangt wiederholt dessen Auslieferung. Er begründet
+    dies damit, dass Lindo Laut „nicht existieren dürfe“. In der Verhandlung lässt
+    er sich jedoch überzeugen, dass Lindos Tod…'
+- target: characters/nyrella
+- target: characters/rotunas
+  note: '**Rotunas:** Belorus versucht, Rotunas’ Teleport zu kontern, scheitert aber.
+    Rotunas wird von untoten Dienern Belorus’ als möglicher Anführer der Gruppe angesprochen.'
+- target: deities/vharzul
+  note: '**Vasul:** Belorus will verhindern, dass Vasul durch Lindo Lauts Tod gestärkt
+    wird. In der Verhandlung ist dies das entscheidende Argument, ihn zum Abzug zu
+    bewegen.'
+- target: factions/koenigreich_zebros
+  note: '**Zebros:** Belorus war einst General im alten Königreich Zebros. Seine Untotenarmee
+    zieht aus dem Gebiet des früheren Königreichs ins Tal.'
+- target: items/streitkolben_von_dodo
+- target: locations/breska
+  note: '**Breska:** Belorus führt die Belagerung des Ortes an. Er betont, keinen
+    Groll gegen Dorf oder Lager zu hegen, er verlange nur Lindo Laut.'
+- target: locations/burg_des_belorus
+- target: npcs/hans_soldat_aus_breska
+- target: npcs/lenra
+- target: npcs/slix_vasul
+- target: npcs/voras
+sources:
+- id: P-08
+  resource: https://www.youtube.com/watch?v=5eAEDN5ra-4
+  last_modified: '2025-05-14T00:00:00Z'
+- id: P-21
+  resource: https://www.youtube.com/watch?v=Zl0qfuI6Goc
+  last_modified: '2025-09-09T00:00:00Z'
+- id: P-24
+  resource: https://www.youtube.com/watch?v=bUT7Mc2hjUY
+  last_modified: '2025-09-30T00:00:00Z'
+- id: P-33
+  resource: https://www.youtube.com/watch?v=w4LB1s9_3rs
+  last_modified: '2026-01-13T00:00:00Z'
+- id: P-34
+  resource: https://www.youtube.com/watch?v=H3ckYdTv4y8
+  last_modified: '2026-01-20T00:00:00Z'
+- id: P-40
+  resource: https://www.youtube.com/watch?v=Kr9_AC2XtOw
+  last_modified: '2026-03-10T00:00:00Z'
 ---
 
 ## Überblick

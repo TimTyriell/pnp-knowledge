@@ -6,8 +6,15 @@ description: Der Kult des Ohoriaks ist eine Gruppe von Kultisten, deren Bezeichn
 tags:
 - factions
 timestamp: '2026-04-14T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_KULT_DES_OHORIAKS
 subtype: Kult
+sources:
+- id: P-47
+  resource: https://www.youtube.com/watch?v=1Jyu92P7_Fg
+  last_modified: '2026-04-14T00:00:00Z'
 ---
 
 Der **Kult des [Ohoriaks](/deities/ohoriaks.md)** ist eine Gruppe von Kultisten, deren Bezeichnung auf die Verehrung einer Entität namens Ohoriak schließen lässt. In der dokumentierten Begegnung treten ihre Mitglieder als Diener [Relinas](/npcs/relina.md) auf und bewachen das Orakel. Sie zeigen sich unterwürfig und unterstützen laufende Verhandlungen. Über Ohoriak selbst sowie über Struktur, Riten und weitergehende Ziele des Kultes ist nichts bekannt.

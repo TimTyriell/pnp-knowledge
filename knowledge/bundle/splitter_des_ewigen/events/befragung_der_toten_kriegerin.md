@@ -6,8 +6,15 @@ description: Rotunas nutzt die Schriftrolle mit Totensprechen, um eine tote Vert
 tags:
 - events
 timestamp: '2025-09-09T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: EVENT_BEFRAGUNG_DER_TOTEN_KRIEGERIN
 subtype: Sonstiges
+sources:
+- id: P-21
+  resource: https://www.youtube.com/watch?v=Zl0qfuI6Goc
+  last_modified: '2025-09-09T00:00:00Z'
 ---
 
 [Rotunas](/characters/rotunas.md) nutzt die [Schriftrolle mit Totensprechen](/items/schriftrolle_mit_totensprechen.md), um eine tote Verteidigerin zu befragen. Sie berichtet, dass die Untoten das Tor überwältigt haben, von einem schwarzen Ritter angeführt wurden und dass sich die Verteidiger selbst töteten, um nicht verwandelt zu werden. Diese Informationen helfen der Gruppe, die Bedrohung besser zu verstehen.

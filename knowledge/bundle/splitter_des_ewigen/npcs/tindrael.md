@@ -6,7 +6,34 @@ description: Tindrael tritt in zwei klar getrennten Phasen der Kampagne auf. Zun
 tags:
 - npcs
 timestamp: '2026-03-10T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_TINDRAEL
+relationships:
+- target: characters/dodo
+  note: 'Dodo, Cookie und Lindo Laut: Ehemalige Weggefährten, nach denen er sich 2026
+    ausdrücklich erkundigt. Von Cookies Tod zeigt er sich betroffen ([P-40]).'
+- target: factions/gilde_von_ehrenfels
+  note: 'Die Gilde: In der ersten Begegnung erwähnt die Gruppe, von der Gilde zu kommen;
+    Tindrael zeigt sich hilfsbereit (vgl. [P-03]).'
+- target: locations/breska
+  note: 'Breska: Sein Herkunftsort; er trauert um dessen Untergang und sagt, der Ort
+    existiere nicht mehr.'
+- target: npcs/berthold
+  note: 'Bürgermeister Berthold von Breska: Tindrael war dessen rechte Hand und nach
+    ihm die wichtigste Autorität im Ort. Der Bürgermeister wird 2026 als „abgeschlachtet
+    und ermordet“ beschrieben ([P-40]).'
+- target: npcs/voras
+  note: 'Voras: Sein Lord in der Gruft, zu dem Tindrael Dodo führt und dem er den
+    Besucher mit „Mein Lord, Dodo ist nun da“ ankündigt ([P-40]).'
+sources:
+- id: P-03
+  resource: https://www.youtube.com/watch?v=1PWdwvun5ow
+  last_modified: '2025-04-09T00:00:00Z'
+- id: P-40
+  resource: https://www.youtube.com/watch?v=Kr9_AC2XtOw
+  last_modified: '2026-03-10T00:00:00Z'
 ---
 
 # Überblick

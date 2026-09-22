@@ -6,10 +6,46 @@ description: Der Seelenstein ist ein magischer Gegenstand, der eine Seele in sic
 tags:
 - items
 timestamp: '2026-07-21T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:14Z'
 id: ITEM_SEELENSTEIN_DES_ROTUNAS
 subtype: Artefakt
 aliases:
 - Seelenstein
+relationships:
+- target: characters/dodo
+  note: '**Dodo:** Träger des zweiten Seelensteins, nachdem Lindo Laut ihn ihm gegeben
+    hatte.'
+- target: characters/esterossa
+  note: '**Esterossa:** Ziel von Lindo Lauts Versuch, eine Seele im Seelenstein zu
+    speichern. Der Versuch scheiterte.'
+- target: characters/lindo_laut
+  note: '**Lindo Laut:** Besitzer des zweiten dokumentierten Seelensteins. Er gab
+    ihn zeitweise an Dodo, wollte ihn am Kristallturm aufladen und versuchte zuletzt,
+    Esterossas Seele damit zu fangen.'
+- target: characters/rotunas
+  note: '**Rotunas:** Erster Finder und Besitzer des zuerst dokumentierten Seelensteins.
+    Er setzte ihn im Kampf gegen den vierten Celestial ein und verlor ihn dabei.'
+- target: locations/kristallturm
+  note: '**Kristallturm:** Magischer Ort, an dem Lindo Laut überlegte, den Seelenstein
+    mit mehr Macht zu füllen.'
+sources:
+- id: P-12
+  resource: https://www.youtube.com/watch?v=tl76B4V0io8
+  last_modified: '2025-06-17T00:00:00Z'
+- id: P-13
+  resource: https://www.youtube.com/watch?v=tpkO9uGw6-I
+  last_modified: '2025-06-25T00:00:00Z'
+- id: P-44
+  resource: https://www.youtube.com/watch?v=Ee-K84wcxLM
+  last_modified: '2026-03-31T00:00:00Z'
+- id: P-53
+  resource: https://www.youtube.com/watch?v=_3tLSiT1tck
+  last_modified: '2026-06-10T00:00:00Z'
+- id: P-55
+  resource: https://www.youtube.com/watch?v=KNV4oNGJ0tw
+  last_modified: '2026-07-21T00:00:00Z'
 ---
 
 ## Überblick

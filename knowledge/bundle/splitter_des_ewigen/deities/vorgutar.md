@@ -6,8 +6,15 @@ description: Vorgutar ist ein alter Gott, der im Abyssalis gefangen ist. Als sei
 tags:
 - deities
 timestamp: '2026-03-24T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DEITY_VORGUTAR
 subtype: Alter Gott
+sources:
+- id: P-43
+  resource: https://www.youtube.com/watch?v=Yj5BWJfg3Ag
+  last_modified: '2026-03-24T00:00:00Z'
 ---
 
 Vorgutar ist ein alter Gott, der im [Abyssalis](/domains/splitterwelt.md) gefangen ist. Als sein Anhänger gilt [Tyrael](/npcs/tyrael.md), der ihm jedoch nicht blind ergeben ist, sondern taktisch handelt.

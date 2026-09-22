@@ -6,10 +6,20 @@ description: 'Das Totem von Nerash ist ein Artefakt, das als Verbindung zur Demi
 tags:
 - items
 timestamp: '2025-09-02T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: ITEM_TOTEM_VON_NERASH
 subtype: Artefakt
 aliases:
 - Totems der Nerash
+sources:
+- id: P-15
+  resource: https://www.youtube.com/watch?v=BRRCUgW4xRo
+  last_modified: '2025-07-22T00:00:00Z'
+- id: P-19
+  resource: https://www.youtube.com/watch?v=TLZOH7TlGhk
+  last_modified: '2025-09-02T00:00:00Z'
 ---
 
 Das **Totem von Nerash** ist ein Artefakt, das als Verbindung zur Demigöttin [Nerash](/deities/nerash.md) dient. Es existiert nicht in einem einzelnen Exemplar: Nachdem die Gruppe Nerash aus einer anderen Dimension befreit hatte, wurde jedes Gruppenmitglied mit einem eigenen Totem ausgestattet. Über das eigene Totem können die Träger versuchen, Nerash um Hilfe zu bitten.

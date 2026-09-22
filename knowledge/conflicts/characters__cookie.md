@@ -2,7 +2,7 @@
 type: Conflict
 title: 'Offener Konflikt: Cookie'
 description: Widersprüchliche Belege — menschliche Entscheidung nötig.
-timestamp: '2026-09-05T16:46:09+00:00'
+timestamp: '2026-09-22T21:19:06Z'
 id: CONFLICT_CHAR_COOKIE
 status: open
 concept: characters/cookie

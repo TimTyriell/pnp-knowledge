@@ -6,8 +6,15 @@ description: Die Gruppe reist auf dem Gildenschiff unter Kapitän Lobrecht von d
 tags:
 - events
 timestamp: '2025-04-30T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_REISE_ZU_DEN_SANDDORN_INSELN
 subtype: Reise
+sources:
+- id: P-06
+  resource: https://www.youtube.com/watch?v=fsCOiSkKKTE
+  last_modified: '2025-04-30T00:00:00Z'
 ---
 
 Die Gruppe reist auf dem Gildenschiff unter [Kapitän Lobrecht](/npcs/lobrecht.md) von der Stadt zur Sanddorn-Bucht. Die Überfahrt dauert mehrere Stunden. Unterwegs unterhalten sie sich mit der Crew und bereiten sich vor.

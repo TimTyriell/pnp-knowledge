@@ -6,11 +6,26 @@ description: Prinzessin Marie ist die Erbin von Brandau und die zentrale Figur d
 tags:
 - npcs
 timestamp: '2026-09-03T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:18Z'
 id: NPC_PRINZESSIN_MARIE
 aliases:
 - Marie
 - Prinzessin Marie
 - Prinzessin
+relationships:
+- target: locations/brandau
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=Yj5BWJfg3Ag
+  last_modified: '2026-03-24T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=0HyPHao8s_k
+  last_modified: '2026-08-06T00:00:00Z'
+- id: '3'
+  resource: https://www.youtube.com/watch?v=bl-hX87_EC8
+  last_modified: '2026-09-03T00:00:00Z'
 ---
 
 Prinzessin Marie ist die Erbin von [Brandau](/locations/brandau.md) und die zentrale Figur der Widerstandsbewegung gegen [Willauch](/locations/willauch.md). Nach dem [Krieg](/characters/krieg.md) wurde sie vielerorts für tot gehalten – tatsächlich hat sie überlebt. Ihr Anspruch auf Brandau und ihre Fähigkeit, das verstreute Volk hinter einer Flagge zu vereinen, machen sie zu einer Schlüsselfigur des Konflikts.

@@ -6,8 +6,15 @@ description: Alte Bücher, die vermutlich von Kultisten der alten Götter stamme
 tags:
 - items
 timestamp: '2025-11-14T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: ITEM_BUECHER_IN_UNBEKANNTER_SPRACHE
 subtype: Schriftstück
+sources:
+- id: P-29
+  resource: https://www.youtube.com/watch?v=8Khb-Y8XbKY
+  last_modified: '2025-11-14T00:00:00Z'
 ---
 
 Alte Bücher, die vermutlich von Kultisten der alten Götter stammen. Sie sind in einer unbekannten Sprache verfasst. [Horatio](/npcs/horatio.md) hat versucht, sie zu lesen, aber nichts verstanden. Die Gruppe plant, sie später zu studieren.

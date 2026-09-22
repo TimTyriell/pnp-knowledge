@@ -6,8 +6,39 @@ description: Otis ist ein menschlicher Abenteurer, der in einem Steinbruch aufge
 tags:
 - characters
 timestamp: '2026-04-09T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: CHAR_OTIS
-status: disputed
+review_status: disputed
+relationships:
+- target: characters/brim
+  note: '**Brim:** Otis rettet Brim vor dem Absturz, indem er ihn an den Beinen packt
+    und seinen Hammer als Anker nutzt. Diese Tat unterstreicht seine Loyalität und
+    körperliche Stärke.'
+- target: characters/nina
+  note: '**Nina:** Seine Beziehung zu Nina ist widersprüchlich beschrieben: Er bezeichnet
+    sie gleichzeitig als Ex-Frau und Mutter. Was genau damit gemeint ist, bleibt unklar.'
+- target: characters/rotunas
+  note: '**Rotunas:** Gemeinsam zerschlagen sie die Portalsäulen in Ehrenfels. Rotunas
+    ist ein zentraler Gefährte, mit dem Otis offenbar vertrauensvoll zusammenarbeitet.'
+- target: characters/tibbet
+  note: '**Tibbet:** Otis hilft ihm beim Klettern – ein frühes Beispiel für seine
+    unterstützende Art innerhalb der Gruppe.'
+- target: locations/ehrenfels
+  note: '**Ehrenfels:** In dieser Stadt rettet Otis zwei Kinder und kämpft gegen Magier
+    und Dämonen. Am Ende verlässt er die Stadt auf Inaros.'
+- target: npcs/floran
+  note: '**Floran und Adria:** Otis stößt Floran in eine Grube und trägt so zum Sieg
+    bei. Trotzdem akzeptiert er die Entscheidung, beide nach Willauch zu bringen,
+    weil er dafür bezahlt wurde – ein Hinweis auf…'
+sources:
+- id: P-42
+  resource: https://www.youtube.com/watch?v=niVxKtdQBn0
+  last_modified: '2026-03-23T00:00:00Z'
+- id: P-46
+  resource: https://www.youtube.com/watch?v=vcGkejr8_nI
+  last_modified: '2026-04-09T00:00:00Z'
 ---
 
 ## Überblick

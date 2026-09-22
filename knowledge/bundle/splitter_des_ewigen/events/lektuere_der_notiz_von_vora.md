@@ -6,8 +6,15 @@ description: Lindo Laut liest die zuvor erhaltene Notiz vor. Sie enthüllt, dass
 tags:
 - events
 timestamp: '2026-01-20T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_LEKTUERE_DER_NOTIZ_VON_VORA
 subtype: Entdeckung
+sources:
+- id: P-34
+  resource: https://www.youtube.com/watch?v=H3ckYdTv4y8
+  last_modified: '2026-01-20T00:00:00Z'
 ---
 
 [Lindo Laut](/characters/lindo_laut.md) liest die zuvor erhaltene Notiz vor. Sie enthüllt, dass ein fünfter Teil [Vasuls](/deities/vharzul.md) in [Ehrenfels](/locations/ehrenfels.md) liegt, bewacht vom [Gildenmeister](/npcs/nox.md). Dies wirft einen Schatten auf den Sieg.

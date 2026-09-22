@@ -6,8 +6,15 @@ description: Varsu ist eine Gottheit, der die Kultisten in der Kapelle folgen un
 tags:
 - deities
 timestamp: '2025-09-02T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DEITY_VARSU
 subtype: Sonstiges
+sources:
+- id: P-19
+  resource: https://www.youtube.com/watch?v=TLZOH7TlGhk
+  last_modified: '2025-09-02T00:00:00Z'
 ---
 
 Varsu ist eine Gottheit, der die Kultisten in der Kapelle folgen und deren Statue dort aufgestellt ist. Die Gruppe begegnet ihr im Verlauf der Erkundung als bedrohliche, mächtige Erscheinung; der Eindruck speist sich vor allem aus der düsteren Umwidmung der Kapelle und dem unheimlichen Verhalten der Statue.

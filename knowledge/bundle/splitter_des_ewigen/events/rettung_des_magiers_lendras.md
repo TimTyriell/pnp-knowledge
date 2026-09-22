@@ -6,8 +6,15 @@ description: Die Gruppe eilt Lendras zu Hilfe, der in seinem Haus von einer rabe
 tags:
 - events
 timestamp: '2025-04-23T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_RETTUNG_DES_MAGIERS_LENDRAS
 subtype: Kampf
+sources:
+- id: P-05
+  resource: https://www.youtube.com/watch?v=z3C-bewKqUs
+  last_modified: '2025-04-23T00:00:00Z'
 ---
 
 Die Gruppe eilt [Lendras](/npcs/lendras.md) zu Hilfe, der in seinem Haus von einer rabenartigen Kreatur ([Kenku](/npcs/kenku_bote.md)) angegriffen wird. [Dodo](/characters/dodo.md) stürmt hinein und wird verwundet, doch Lendras tötet die Kreatur mit einem Blitz. Der Magier ist gerettet und schließt sich der Gruppe an.

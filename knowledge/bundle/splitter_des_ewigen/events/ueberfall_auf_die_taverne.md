@@ -6,8 +6,15 @@ description: In der Nacht werden die Helden in ihrer Taverne von mehreren vermum
 tags:
 - events
 timestamp: '2025-07-22T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_UEBERFALL_AUF_DIE_TAVERNE
 subtype: Kampf
+sources:
+- id: P-15
+  resource: https://www.youtube.com/watch?v=BRRCUgW4xRo
+  last_modified: '2025-07-22T00:00:00Z'
 ---
 
 In der Nacht werden die Helden in ihrer Taverne von mehreren vermummten [Assassinen](/factions/assassinen.md) der [Brabarand-Gilde](/factions/brabarand_gilde.md) angegriffen. Der Überfall beginnt mit Geräuschen vor der Tür, dann greifen die Attentäter mit Dolchen, Armbrüsten und Gift an. Die Gruppe wehrt sich, spaltet sich auf und kämpft im Gebäude und im Freien. Der Kampf endet mit dem Tod der meisten Angreifer, darunter auch des [Kenku](/npcs/kenku_bote.md)-Hexenmeisters.

@@ -6,8 +6,15 @@ description: Die Goblins (Angreifer) sind eine Gruppe von Goblins, die das Dorf 
 tags:
 - factions
 timestamp: '2025-04-09T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_GOBLINS_ANGREIFER
 subtype: Bande
+sources:
+- id: P-03
+  resource: https://www.youtube.com/watch?v=1PWdwvun5ow
+  last_modified: '2025-04-09T00:00:00Z'
 ---
 
 Die **[Goblins](/npcs/pilz_goblins.md) (Angreifer)** sind eine Gruppe von Goblins, die das Dorf [Breska](/locations/breska.md) angreifen will. Sie stellen eine unmittelbare Bedrohung für den Ort dar. Weder die genaue Anzahl der Angreifer noch ihr Anführer sind bekannt.

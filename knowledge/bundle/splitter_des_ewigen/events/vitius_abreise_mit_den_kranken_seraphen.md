@@ -6,8 +6,15 @@ description: Nachdem Vitius den Wächtern das Bewusstsein genommen und die krank
 tags:
 - events
 timestamp: '2026-08-12T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: EVENT_VITIUS_ABREISE_MIT_DEN_KRANKEN_SERAPHEN
 subtype: Sonstiges
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=piUv11DCwDw
+  last_modified: '2026-08-12T00:00:00Z'
 ---
 
 Nachdem [Vitius](/npcs/vitius.md) den Wächtern das Bewusstsein genommen und die kranken Seraphen gezeigt hat, verlässt er die [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md). Zuvor wünscht er der Gruppe Glück und warnt sie vor [Nerash](/deities/nerash.md). Er nimmt die beiden Kranken mit und lässt die [Wächter](/npcs/waechter.md) zurück. Die Gruppe schließt daraus, dass die Seraphen [Ehrenfels](/locations/ehrenfels.md) endgültig verlassen haben.

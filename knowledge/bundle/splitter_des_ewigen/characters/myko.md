@@ -6,7 +6,14 @@ description: Myko ist eine Fungus-Rhetoride und ehemaliger Karawanenarzt. Sie ve
 tags:
 - characters
 timestamp: '2026-03-23T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: CHAR_MYKO
+sources:
+- id: P-42
+  resource: https://www.youtube.com/watch?v=niVxKtdQBn0
+  last_modified: '2026-03-23T00:00:00Z'
 ---
 
 Myko ist eine Fungus-Rhetoride und ehemaliger Karawanenarzt. Sie verfügt über die Fähigkeit, sich in einen Wolf zu verwandeln, und setzt diese Gestalt im Kampf für überraschende Nahkampfangriffe ein. In der Session vom 23. März 2026 begleitet Myko die Gruppe in die [Katakomben](/locations/katakomben.md), kämpft nach einem Sturz in eine Grube weiter und erklärt sich anschließend bereit, Gefangene nach [Willauch](/locations/willauch.md) zu bringen.

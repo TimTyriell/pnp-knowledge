@@ -6,10 +6,25 @@ description: Freibeuter-Harald ist ein Freibeuter-Kapitän in Tiefwasser. Er und
 tags:
 - npcs
 timestamp: '2026-03-18T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:17Z'
 id: NPC_FREIBEUTER_HARALD
 subtype: Sonstiges
 aliases:
 - Freibeuter
+verified:
+  by: human:gm
+relationships:
+- target: characters/brim
+- target: npcs/hans_wirt_zum_gruenen_sichelmond
+sources:
+- id: P-41a
+  resource: https://www.youtube.com/watch?v=HHXxsASLrbQ
+  last_modified: '2026-03-18T00:00:00Z'
+- id: P-41b
+  resource: https://www.youtube.com/watch?v=HHXxsASLrbQ
+  last_modified: '2026-03-18T00:00:00Z'
 ---
 
 Freibeuter-[Harald](/npcs/abisalis_harald.md) ist ein Freibeuter-Kapitän in [Tiefwasser](/locations/tiefwasser.md). Er und seine Leute sind ehemalige Kämpfer für [Brandau](/locations/brandau.md), die nach dem Sieg [Willauchs](/locations/willauch.md) in Tiefwasser geblieben sind. Harald besteht darauf, kein Pirat zu sein, und verteidigt sich im Konflikt mit den Soldaten Willauchs mit einem Rapier.

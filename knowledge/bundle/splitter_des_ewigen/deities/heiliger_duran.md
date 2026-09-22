@@ -6,10 +6,31 @@ description: Duran ist ein als heilig verehrter Gott. In den Belegen tritt er ni
 tags:
 - deities
 timestamp: '2025-07-22T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DEITY_HEILIGER_DURAN
 subtype: Neuer Gott
 aliases:
 - Duran
+relationships:
+- target: characters/lindo_laut
+  note: '**Lindo Laut:** Trägt das Amulett Durans, das als ehemaliges heiliges Amulett
+    Durans bezeichnet wird. Das Amulett und seine Veränderung sind eng mit Lindo verbunden.'
+- target: npcs/voras
+  note: '**Voras:** In dessen Bibliothek wurde das Buch gefunden bzw. geöffnet, durch
+    das die vier Engel getötet und die dunklen Gestalten in das Amulett beschworen
+    wurden. Damit besteht eine indirekte Verbin…'
+sources:
+- id: P-13
+  resource: https://www.youtube.com/watch?v=tpkO9uGw6-I
+  last_modified: '2025-06-25T00:00:00Z'
+- id: P-14
+  resource: https://www.youtube.com/watch?v=XOnHa6CmDbo
+  last_modified: '2025-07-09T00:00:00Z'
+- id: P-15
+  resource: https://www.youtube.com/watch?v=BRRCUgW4xRo
+  last_modified: '2025-07-22T00:00:00Z'
 ---
 
 ## Überblick

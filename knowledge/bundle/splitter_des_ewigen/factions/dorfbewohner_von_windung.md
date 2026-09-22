@@ -6,8 +6,15 @@ description: Die Dorfbewohner von Windung sind die einfachen Bewohner des Dorfes
 tags:
 - factions
 timestamp: '2025-07-29T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_DORFBEWOHNER_VON_WINDUNG
 subtype: Volk
+sources:
+- id: P-16
+  resource: https://www.youtube.com/watch?v=XXgO5Ht4Q0A
+  last_modified: '2025-07-29T00:00:00Z'
 ---
 
 Die Dorfbewohner von [Windung](/locations/windung.md) sind die einfachen Bewohner des Dorfes Windung. Als Zivilbevölkerung des Ortes wurden sie zur leidtragenden Partei der Ereignisse, die die Gruppe nach Windung führten.

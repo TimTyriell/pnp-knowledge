@@ -6,7 +6,14 @@ description: Das Zwischenreich ist eine parallele Dimension, die von der realen 
 tags:
 - domains
 timestamp: '2025-07-22T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DOMAIN_ZWISCHENREICH
+sources:
+- id: P-15
+  resource: https://www.youtube.com/watch?v=BRRCUgW4xRo
+  last_modified: '2025-07-22T00:00:00Z'
 ---
 
 Das Zwischenreich ist eine parallele Dimension, die von der realen Welt getrennt ist. In der bislang dokumentierten Begegnung wurden [Dodo](/characters/dodo.md) und [Esterossa](/characters/esterossa.md) während eines Kampfes in das Zwischenreich gezogen. Die wenigen bekannten Informationen stammen aus der Schilderung dieses Vorfalls sowie aus Aussagen einer Stadtmagierin und eines [Gildemeisters](/npcs/nox.md).

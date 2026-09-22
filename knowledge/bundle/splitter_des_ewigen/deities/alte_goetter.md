@@ -6,10 +6,22 @@ description: Die Alten Götter sind ein Pantheon großer, unsterblicher und urze
 tags:
 - deities
 timestamp: '2026-08-18T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: DEITY_ALTE_GOETTER
 subtype: Alter Gott
 aliases:
 - Die alten Götter
+relationships:
+- target: domains/splitterwelt
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=bamCIB_CkR8
+  last_modified: '2025-05-27T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=10swvSz6k7U
+  last_modified: '2026-08-18T00:00:00Z'
 ---
 
 ## Überblick

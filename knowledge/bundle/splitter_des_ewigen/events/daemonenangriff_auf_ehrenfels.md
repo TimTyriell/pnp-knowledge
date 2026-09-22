@@ -6,8 +6,15 @@ description: Unmittelbar nach der magischen Welle stürmen dämonische Kreaturen
 tags:
 - events
 timestamp: '2026-04-09T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:11Z'
 id: EVENT_DAEMONENANGRIFF_AUF_EHRENFELS
 subtype: Kampf
+sources:
+- id: P-46
+  resource: https://www.youtube.com/watch?v=vcGkejr8_nI
+  last_modified: '2026-04-09T00:00:00Z'
 ---
 
 Unmittelbar nach der magischen Welle stürmen dämonische Kreaturen aus dem Portal und attackieren die Stadt. Die Gruppe kämpft auf dem Marktplatz und rettet Kinder, während [Meister Pyrandras](/npcs/meister_pyrandras.md) die Verteidigung organisiert.

@@ -6,8 +6,15 @@ description: Die versiegelte Schriftrolle wird beim toten Kommandanten gefunden,
 tags:
 - items
 timestamp: '2026-01-06T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: ITEM_VERSIEGELTE_SCHRIFTROLLE
 subtype: Schriftstück
+sources:
+- id: P-32
+  resource: https://www.youtube.com/watch?v=VGw81seFvbo
+  last_modified: '2026-01-06T00:00:00Z'
 ---
 
 Die versiegelte [Schriftrolle](/items/schriftrollen.md) wird beim toten Kommandanten gefunden, versteckt unter dessen Plattenrüstung. Sie trägt ein ungebrochenes Siegel und soll die wichtige Erkenntnis von [Lord Voras](/npcs/voras.md) nach [Ehrenfels](/locations/ehrenfels.md) bringen. Der Soldat besteht darauf, dass sie auf keinen Fall nach [Willauch](/locations/willauch.md) gelangen darf. Später versucht er, die Schriftrolle an sich zu nehmen, wird aber von [Lindo Laut](/characters/lindo_laut.md) gestoppt.

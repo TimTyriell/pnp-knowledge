@@ -6,12 +6,48 @@ description: Das Königreich Zebros war ein mächtiges Reich der alten Zeit, das
 tags:
 - factions
 timestamp: '2026-08-25T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:13Z'
 id: FACTION_KOENIGREICH_ZEBROS
 subtype: Sonstiges
 aliases:
 - Zebros
 - Königreich von Zebras
 - König Zebros
+verified:
+  by: human:gm
+relationships:
+- target: deities/neue_goetter
+- target: deities/tarvok_der_erdrichter
+  note: '**Thar''Vok:** Der König bzw. die Zebros-Linie folgte dem Erdrichter'
+- target: items/streitkolben_von_dodo
+- target: items/zebrosia
+  note: '**Zebrosia:** Das mächtige Schwert Zebrosia ist mit'
+- target: locations/breska
+- target: locations/crowfin_manor
+  note: '**Crowfin Manor:** Die Familie von Zebros bewohnte einst'
+- target: locations/silbergruft
+  note: '**Silbergruft:** Die Gruft trägt die Aufschrift „Silbergruft, Eigentum von'
+- target: npcs/belorus
+- target: npcs/sir_edmund
+  note: '**Edmund und Vago:** Sie sind Überlebende dieser Zeit.'
+sources:
+- id: '1'
+  resource: https://www.youtube.com/watch?v=5eAEDN5ra-4
+  last_modified: '2025-05-14T00:00:00Z'
+- id: '2'
+  resource: https://www.youtube.com/watch?v=Z2jlzpoTWVw
+  last_modified: '2026-02-17T00:00:00Z'
+- id: '3'
+  resource: https://www.youtube.com/watch?v=WOFArbwDDIQ
+  last_modified: '2026-02-24T00:00:00Z'
+- id: '4'
+  resource: https://www.youtube.com/watch?v=10swvSz6k7U
+  last_modified: '2026-08-18T00:00:00Z'
+- id: '5'
+  resource: https://www.youtube.com/watch?v=1Cjj3OVqiYA
+  last_modified: '2026-08-25T00:00:00Z'
 ---
 
 ## Überblick

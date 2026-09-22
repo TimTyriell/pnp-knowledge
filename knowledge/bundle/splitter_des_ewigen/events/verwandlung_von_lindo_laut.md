@@ -6,8 +6,15 @@ description: 'Lindo Laut wird nach dem Angriff des Ghuls durch einen zuvor getru
 tags:
 - events
 timestamp: '2025-09-02T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_VERWANDLUNG_VON_LINDO_LAUT
 subtype: Sonstiges
+sources:
+- id: P-19
+  resource: https://www.youtube.com/watch?v=TLZOH7TlGhk
+  last_modified: '2025-09-02T00:00:00Z'
 ---
 
 [Lindo Laut](/characters/lindo_laut.md) wird nach dem Angriff des Ghuls durch einen zuvor getrunkenen Trank erstmals teilweise verwandelt: Er erhält dämonische Flügel und zerstört den Ghul. Später, in der [Kapelle](/locations/parfon_kapelle_auf_dem_berg.md), verwandelt er sich vollständig, wobei sein Körper sich verändert und er bei vollem Verstand bleibt. Die Verwandlung ist für die Gruppe erschreckend, aber Lindo Laut behält die Kontrolle.

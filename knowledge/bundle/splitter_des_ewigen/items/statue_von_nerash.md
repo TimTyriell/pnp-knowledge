@@ -6,8 +6,15 @@ description: Esterossa trägt eine kleine Statue von Nerash, die sie während de
 tags:
 - items
 timestamp: '2026-01-13T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:15Z'
 id: ITEM_STATUE_VON_NERASH
 subtype: Artefakt
+sources:
+- id: P-33
+  resource: https://www.youtube.com/watch?v=w4LB1s9_3rs
+  last_modified: '2026-01-13T00:00:00Z'
 ---
 
 [Esterossa](/characters/esterossa.md) trägt eine kleine Statue von [Nerash](/deities/nerash.md), die sie während des Auftritts von [Belorus](/npcs/belorus.md) berührt, als mögliche letzte Reserve. Sie scheint mit ihrem Glauben verbunden zu sein.

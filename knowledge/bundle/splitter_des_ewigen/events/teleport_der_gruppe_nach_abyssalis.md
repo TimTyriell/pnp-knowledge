@@ -6,8 +6,15 @@ description: Vasul öffnet ein Portal vom Trainingsgelände Ehrenfels direkt nac
 tags:
 - events
 timestamp: '2026-03-31T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:12Z'
 id: EVENT_TELEPORT_DER_GRUPPE_NACH_ABYSSALIS
 subtype: Reise
+sources:
+- id: P-44
+  resource: https://www.youtube.com/watch?v=Ee-K84wcxLM
+  last_modified: '2026-03-31T00:00:00Z'
 ---
 
 [Vasul](/deities/vharzul.md) öffnet ein Portal vom Trainingsgelände [Ehrenfels](/locations/ehrenfels.md) direkt nach [Abyssalis](/domains/splitterwelt.md) zur [Festung von Vasul](/locations/festung_von_vasul.md). Die Gruppe reist hindurch und beginnt dort die Suche nach Lunaras Bruder.

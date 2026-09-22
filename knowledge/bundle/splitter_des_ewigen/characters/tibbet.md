@@ -6,7 +6,16 @@ description: Tibbet ist ein junger Ribbet-Zauberer. Während der Auseinandersetz
 tags:
 - characters
 timestamp: '2026-03-23T00:00:00Z'
+generated:
+  by: pnp_okf/0.2.0
+  at: '2026-09-22T21:02:10Z'
 id: CHAR_TIBBET
+relationships:
+- target: characters/otis
+sources:
+- id: P-42
+  resource: https://www.youtube.com/watch?v=niVxKtdQBn0
+  last_modified: '2026-03-23T00:00:00Z'
 ---
 
 Tibbet ist ein junger Ribbet-Zauberer. Während der Auseinandersetzung mit den [Banditen](/factions/silberkerne.md) schloss er sich den Gefährten von Rotunas an. Er setzt seine Magie vielseitig ein: Illusionen und Verwandlungen dienen ihm zur Tarnung und Ablenkung, im Kampf greift er aber auch offensiv ein. Seine Neugier und seine magische Unterstützung erwiesen sich als wichtige Bausteine der Gruppenaktionen.
