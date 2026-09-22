@@ -8,7 +8,7 @@ tags:
 timestamp: '2026-05-27T00:00:00Z'
 generated:
   by: pnp_okf/0.2.0
-  at: '2026-09-22T21:19:07Z'
+  at: '2026-09-22T22:10:09Z'
 id: EVENT_DAS_ERWACHEN_VOR_NEBELWACHT
 subtype: Sonstiges
 sources:
@@ -17,7 +17,7 @@ sources:
   last_modified: '2026-05-27T00:00:00Z'
 ---
 
-Nach dem Kampf blinzelt die Gruppe und findet sich unversehrt am Eingang der [Nebelwacht](/locations/nebelwacht.md) wieder. [Trilo](/npcs/trilo.md) begrüßt sie erneut, als sei nichts geschehen, was auf eine Zeitschleife, Vision oder Illusion hindeutet. Der Spielleiter bestätigt, dass dies ein Foreshadowing war, und beendet die Session mit diesem Cliffhanger.
+Nach dem Kampf blinzelt die Gruppe und findet sich unversehrt am Eingang der [Nebelwacht](/locations/nebelwacht.md) wieder. [Trilo](/npcs/trillo.md) begrüßt sie erneut, als sei nichts geschehen, was auf eine Zeitschleife, Vision oder Illusion hindeutet. Der Spielleiter bestätigt, dass dies ein Foreshadowing war, und beendet die Session mit diesem Cliffhanger.
 
 # Belege
 

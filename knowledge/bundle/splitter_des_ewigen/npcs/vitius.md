@@ -8,11 +8,11 @@ tags:
 timestamp: '2026-08-12T00:00:00Z'
 generated:
   by: pnp_okf/0.2.0
-  at: '2026-09-22T21:02:19Z'
+  at: '2026-09-22T22:10:11Z'
 id: NPC_VITIUS
 relationships:
 - target: characters/dodo
-- target: characters/lindo_laut
+- target: deities/vharzul
 - target: npcs/voras
 sources:
 - id: '1'

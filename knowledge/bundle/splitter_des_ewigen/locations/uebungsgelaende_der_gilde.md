@@ -8,7 +8,7 @@ tags:
 timestamp: '2025-07-09T00:00:00Z'
 generated:
   by: pnp_okf/0.2.0
-  at: '2026-09-22T21:19:08Z'
+  at: '2026-09-22T22:10:10Z'
 id: LOC_UEBUNGSGELAENDE_DER_GILDE
 subtype: Gebäude
 sources:
@@ -17,7 +17,7 @@ sources:
   last_modified: '2025-07-09T00:00:00Z'
 ---
 
-Das Übungsgelände ist der Ort, an dem die Gruppe nach der [Flucht durch das Portal](/events/flucht_durch_das_portal.md) wieder auftaucht. Es ist ein vertrauter Ort innerhalb der Gildeninfrastruktur. Hier erscheint der [Gildenmeister](/npcs/nox.md) und warnt die Gruppe.
+Das Übungsgelände ist der Ort, an dem die Gruppe nach der [Flucht durch das Portal](/events/flucht_durch_das_portal_2025-09-06.md) wieder auftaucht. Es ist ein vertrauter Ort innerhalb der Gildeninfrastruktur. Hier erscheint der [Gildenmeister](/npcs/nox.md) und warnt die Gruppe.
 
 # Belege
 

@@ -8,8 +8,10 @@ tags:
 timestamp: '2026-07-29T00:00:00Z'
 generated:
   by: pnp_okf/0.2.0
-  at: '2026-09-22T21:02:18Z'
+  at: '2026-09-22T22:10:10Z'
 id: NPC_OLAF
+relationships:
+- target: characters/dodo
 sources:
 - id: S1-01-A
   resource: https://www.youtube.com/watch?v=umGyKLkefJI

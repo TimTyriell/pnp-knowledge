@@ -1,43 +1,42 @@
 ---
 type: Character
 title: Gunther
-description: Gunther ist ein Halbling-Goblin in adliger Kleidung, der sich der Heldengruppe
-  als Beobachter und Vermittler nähert. Er tritt zunächst als…
+description: Gunther ist ein adliger Halb-Halbing-Goblin, der sich der Heldengruppe
+  um Dodo, Lindo Laut und Lunara Velora anschließt. Er wurde von einer…
 tags:
 - characters
-timestamp: '2026-09-08T00:00:00Z'
+timestamp: '2026-09-22T00:00:00Z'
 generated:
   by: pnp_okf/0.2.0
-  at: '2026-09-22T21:02:09Z'
+  at: '2026-09-22T22:10:08Z'
 id: CHAR_GUNTHER
 relationships:
 - target: characters/dodo
-  note: '**Dodo:** Dodo rettet Gunther beim Überqueren der Felsplattformen, als dieser
-    ausrutscht. Gunther heilt Dodo mit Inspirational Word.'
+  note: '**Dodo:** Wird von Gunther mit „Inspirational Word“ geheilt; Dodo rettet
+    ihn seinerseits auf den Felsplattformen vor dem Absturz.'
 - target: characters/lindo_laut
-  note: '**Lindo Laut:** Lindo bezeichnet Gunther als „gefährlich gut informiert“.
-    Die beiden fliehen gemeinsam vor einer Lawine, wobei sich Gunther an Lindos Füßen
-    festhält. Später ist Lindo an der Löschung…'
+  note: '**Lindo Laut:** Flieht gemeinsam mit Gunther vor einer Lawine; Gunther hält
+    sich an dessen Füßen fest.'
 - target: characters/lunara_velora
-  note: '**Lunara Velora:** Gunther verwandelt sich in sie, um sie in der Öffentlichkeit
-    zu vertreten. Er führt mit ihr ein tiefgründiges Gespräch über Familie und Vertrauen.
-    Beim Angriff eines Priesters wirf…'
+  note: '**Lunara Velora:** Gunther vertritt sie in ihrer Abwesenheit, verkleidet
+    sich als sie, warnt sie vor Voreiligkeit und rettet ihr das Leben.'
 - target: deities/nerash
-  note: '**Nerash:** Gunther kniet vor Nerash nieder und beobachtet aufmerksam die
-    Reaktionen der Seraphen.'
+  note: '**Nerash:** Gunther kniet vor ihm nieder und beobachtet aufmerksam die Reaktionen
+    der Seraphen.'
 - target: items/ring_der_pocket_dimension
+- target: items/streitkolben_von_dodo
 - target: npcs/joar_vanur
-  note: '**Joar Vanur:** Gunther verhandelt zunächst mit Joar und holt bessere Konditionen
-    heraus. Später trennt er ihm den Arm ab, um eine Kristallkugel zu sichern. Danach
-    entschuldigt er sich ernsthaft, bes…'
+  note: '**Joar Vanur:** Gunther verhandelt mit ihm und holt bessere Konditionen heraus.
+    Nachdem er Joar im Affekt den Arm abtrennt, um eine Kristallkugel zu sichern,
+    entschuldigt er sich und nennt ihn später…'
 - target: npcs/liam_velora
-  note: '**Liam:** Gunther übernimmt Liams Erziehung in Etikette und bringt ihm Grundmanieren
-    bei. Bei den Themen der neuen Götter scheitert er. Später organisiert er gemeinsam
-    mit Liam die Bergung der Waffen…'
+  note: '**Liam:** Gunther übernimmt seine Erziehung in Etikette, bringt ihm Grundmanieren
+    bei, scheitert jedoch bei Themen der neuen Götter. Er zeigt tiefes Vertrauen und
+    organisiert mit Liam nach einer Verh…'
 - target: npcs/sir_edmund
   note: '**Edmund:** Dessen Erzählungen bewegen Gunther emotional.'
 - target: npcs/truban
-  note: '**Truban:** Gunther bemerkt ein frisches Loch in dessen Schild.'
+  note: '**Truban:** Gunther bemerkt mit „Observer“ ein frisches Loch in dessen Schild.'
 sources:
 - id: '1'
   resource: https://www.youtube.com/watch?v=umGyKLkefJI
@@ -60,73 +59,80 @@ sources:
 - id: '7'
   resource: https://www.youtube.com/watch?v=EswuiEiZZEc
   last_modified: '2026-09-08T00:00:00Z'
+- id: '8'
+  resource: https://www.youtube.com/watch?v=zXVsTYYR8M4
+  last_modified: '2026-09-22T00:00:00Z'
 ---
 
 ## Überblick
 
-Gunther ist ein Halbling-Goblin in adliger Kleidung, der sich der Heldengruppe als Beobachter und Vermittler nähert. Er tritt zunächst als „gefährlich gut informiert“ auf, weil er deutlich mehr weiß, als er preisgibt. Sein Ziel ist es, den Gefährten Kontakte zu Adelshäusern zu eröffnen und sie zu „Helden von Ländern“ zu machen. Im Verlauf der Kampagne wird er vom mysteriösen Informanten zu einem festen Mitglied der Gruppe, das diplomatische, ausbildende und kämpferische Aufgaben übernimmt. Sein Handeln ist dabei stets von einer Mischung aus Etikette, Wissensdurst und der Bereitschaft geprägt, für andere erhebliche Risiken einzugehen.
+Gunther ist ein adliger Halb-Halbing-Goblin, der sich der Heldengruppe um [Dodo](/characters/dodo.md), [Lindo Laut](/characters/lindo_laut.md) und [Lunara Velora](/characters/lunara_velora.md) anschließt. Er wurde von einer bislang unbekannten Organisation ausgesandt, um die Gefährten zu beobachten und ihnen Kontakte zu Adelshäusern zu eröffnen, damit sie zu „Helden von Ländern“ werden. Er tritt in feiner Kleidung auf, zeigt überraschend viel Etikette und wird von [Lindo Laut](/characters/lindo_laut.md) als „gefährlich gut informiert“ bezeichnet. Informationen sind für ihn die zentrale Währung. Im Verlauf der Kampagne agiert er als Spion, Diplomat und Kämpfer, übernimmt die Erziehung von [Liam](/npcs/liam_velora.md) und opfert sich schließlich, um [Lunara Velora](/characters/lunara_velora.md) vor einem magischen Angriff zu bewahren.
 
 ## Rolle in der Kampagne
 
-Gunther tritt in einer Taverne auf, als die Gruppe nach [Ehrenfels](/locations/ehrenfels.md) zurückkehrt. Er stellt sich als adliger Halbling-Goblin vor und bietet seine Dienste an. Schnell wird klar, dass er im Auftrag einer nicht genannten Organisation unterwegs ist, um die Helden zu beobachten und ihnen Zugang zu Adelshäusern zu verschaffen. Er betont, dass Informationen seine Währung sind, und hält seine eigene Herkunft zunächst geheim.
-
-Spätestens ab der Begegnung mit den Seraphen übernimmt er aktivere Aufgaben. Er begleitet die Gruppe, verhandelt, erzieht [Liam](/npcs/liam_velora.md) und kämpft an ihrer Seite. Seine Rolle wandelt sich vom distanzierten Beobachter zum engagierten Teil der Heldengruppe. Besonders deutlich wird das, als er sich beim Angriff eines Priesters bewusst in einen lila Blitz wirft, um [Lunara Velora](/characters/lunara_velora.md) zu retten.
+Gunther stößt früh zur Gruppe und bietet seine Dienste an. Sein Auftraggeber – eine Organisation, deren Name er lange verschweigt – hat ihn geschickt, um die Helden zu beobachten und ihnen den Weg in Adelskreise zu ebnen. Neben dieser diplomatischen und nachrichtendienstlichen Rolle übernimmt er praktische Aufgaben: Er verkleidet sich als [Lunara Velora](/characters/lunara_velora.md), um die Gruppe bei der Begegnung mit einem Seraphen zu vervollständigen, erzieht [Liam](/npcs/liam_velora.md) in Etikette, verhandelt mit [Joar Vanur](/npcs/joar_vanur.md) und unterstützt die Gruppe im Kampf. Sein Handeln gipfelt in der bewussten Selbstopferung, als er sich in einen lila Blitz wirft, um [Lunara Velora](/characters/lunara_velora.md) zu retten – ein Ereignis, das ihn dauerhaft zeichnet. Gegenüber [Joar Vanur](/npcs/joar_vanur.md) bezeichnet er diesen später als „besten Auftraggeber“ und zeigt damit tiefe Loyalität.
 
 ## Wichtige Merkmale
 
 ### Auftreten
 
-Gunther trägt feine adlige Kleidung, darüber einen passgenauen Ledermantel, und an seinem rechten Daumen einen großen Siegelring. Sein Aussehen ist sehr gepflegt. Um größer zu wirken, trägt er Stöckelschuhe. Bewaffnet ist er mit einer Schleuder beziehungsweise Steinschleuder sowie mehreren Dolchen, darunter zwei Silberdolche und ein bläulicher Wurfdolch.
+Gunther erscheint als Halb-Halbing-Goblin – er sieht nach eigenen Worten wie ein Goblin aus, besitzt aber Eigenschaften eines Halblings. Er trägt feine adlige Kleidung, einen passgenauen Ledermantel und einen großen Siegelring am rechten Daumen; sein Äußeres ist sehr gepflegt. Um größer zu wirken, nutzt er Stöckelschuhe. Seine typische Bewaffnung umfasst eine Steinschleuder, mehrere Dolche, darunter zwei Silberdolche, sowie einen bläulichen Wurfdolch. Mit der Fähigkeit „Uncanny Disguise“ kann er sich nach kurzer Vorbereitung in beliebige Humanoide verwandeln – so tritt er etwa als [Lunara Velora](/characters/lunara_velora.md) oder als alter menschlicher Mann auf.
 
 ### Fähigkeiten
 
-- **Uncanny Disguise:** Mit ein paar Minuten Vorbereitung kann Gunther Stress markieren und sich in einen beliebigen Humanoiden verwandeln. Während der Verkleidung hat er Vorteil auf Present Rolls; auf der Fähigkeitskarte liegen Tokens in Höhe seiner Finesse (4), die bei Aktionen verbraucht werden. Er nutzt diese Fähigkeit, um sich als [Lunara Velora](/characters/lunara_velora.md) auszugeben und sie zu vertreten.
-- **Unsichtbarkeit:** Gunther kann sich unsichtbar machen und schleicht damit beispielsweise zur Quelle eines Konflikts.
-- **Experience Observer / Observer:** Er erkennt feine Details und Veränderungen, etwa ein frisches Loch in [Trubans](/npcs/truban.md) Schild.
-- **Dark Whisper:** Er kann mit Personen sprechen, die er einmal körperlich berührt hat. Zusätzlich kann er Stress markieren und per Spellcast-Draw eine Frage stellen, etwa nach dem Aufenthaltsort einer Person.
-- **Sneak Attack:** Im Kampf setzt er hinterhältige Dolchangriffe ein und tötet damit einen Gnoll.
-- **Shadowbind:** Mit dieser Fähigkeit hält er einen Schamanen fest.
-- **Inspirational Word:** Er heilt [Dodo](/characters/dodo.md) mit dieser Fähigkeit.
-- **Wissen und Einschätzung:** Er zeigt großes Wissen über alte Kreaturen und Zeichen. So erkennt er einen mutierten Frosch als Gribbit und das Zeichen der Affenpfote als Shima-Stammeszeichen. Außerdem nutzt er Sprachkenntnisse und Überzeugungskraft in Verhandlungen.
+Gunther ist Experte für Tarnung und Einschätzung. Er beherrscht:
+
+- **Uncanny Disguise:** Verwandlung in Humanoide mit Tokens und Vorteil auf Presence Rolls.
+- **Observer:** Scharfe Wahrnehmung; bemerkt etwa ein frisches Loch in [Trubans](/npcs/truban.md) Schild.
+- **Dark Whisper:** Kommunikation über Distanz sowie orakelhafte Ortung von Personen, die er zuvor berührt hat.
+- **Shadowbind:** Festsetzen von Gegnern.
+- **Sneak Attack:** Hinterhältige Angriffe, etwa mit Dolchen.
+- **Unsichtbarkeit:** Kann sich selbst unsichtbar machen.
+- **Inspirational Word:** Heilung anderer.
+- **Through Your Eyes:** Beobachtung durch die Augen anderer.
+
+Zudem verfügt er über umfangreiches Wissen über alte Kreaturen: Er erkennt einen mutierten Frosch als Gribbit und ein Zeichen der Affenpfote als Shima-Stammeszeichen. Er besitzt ausgeprägte Sprachkenntnisse und Überzeugungskraft, die er etwa in Verhandlungen mit [Joar Vanur](/npcs/joar_vanur.md) einsetzt.
 
 ### Wesenszüge
 
-Gunther ist informationsorientiert und verschwiegen über seine eigene Herkunft. Er legt großen Wert auf Etikette und respektiert den Glauben anderer. Alte Geschichten bewegen ihn emotional, etwa bei [Edmunds](/npcs/sir_edmund.md) Erzählungen. Er ist bereit, harte Entscheidungen zu treffen: So trennt er [Joar Vanur](/npcs/joar_vanur.md) den Arm ab, um eine Kristallkugel zu sichern, und opfert sich später selbst, um Lunara zu schützen. Gegenüber [Joar](/npcs/joar_vanur.md) zeigt er später ernsthafte Reue und ist bereit, eine öffentliche Entschuldigung zu leisten. Gleichzeitig macht er gelegentlich passiv-aggressive Bemerkungen über die Elfen.
+Gunther zeigt überraschend viel Etikette und gepflegte Ausdrucksweise, was ihm den Ruf einbringt, „gefährlich gut informiert“ zu sein. Er hält Informationen für seine Währung und gibt seine Herkunft zunächst nicht preis. Gegenüber dem Glauben anderer ist er respektvoll und versucht, [Liam](/npcs/liam_velora.md) zu selbstständigem Denken zu bewegen. Er reagiert emotional, etwa auf alte Geschichten oder wenn verwandelte Wesen durch seinen Glauben zurückverwandelt werden. Nachdem er [Joar Vanur](/npcs/joar_vanur.md) den Arm abgetrennt hat, entschuldigt er sich ernsthaft und zeigt Bereitschaft zu einer öffentlichen Entschuldigung. Er neigt zu passiv-aggressiven Bemerkungen, etwa über Elfen, und beweist zugleich tiefes Vertrauen, besonders gegenüber [Liam](/npcs/liam_velora.md). Sein Mut äußert sich in der bewussten Selbstopferung: „Ich würde mich tatsächlich absichtlich in den Blitz werfen, damit Lunara nicht getroffen wird.“
 
 ## Beziehungen und Verbindungen
 
-- **Unbenannte Organisation:** Gunther wurde von einer Organisation geschickt, um die Helden zu beobachten und ihnen Kontakte zu Adelshäusern zu eröffnen. Um welche Organisation es sich handelt, bleibt unklar.
-- **[Lunara Velora](/characters/lunara_velora.md):** Gunther verwandelt sich in sie, um sie in der Öffentlichkeit zu vertreten. Er führt mit ihr ein tiefgründiges Gespräch über Familie und Vertrauen. Beim Angriff eines Priesters wirft er sich in einen lila Blitz, um sie zu retten, und wird dabei schwer getroffen.
-- **[Liam](/npcs/liam_velora.md):** Gunther übernimmt Liams Erziehung in Etikette und bringt ihm Grundmanieren bei. Bei den Themen der neuen Götter scheitert er. Später organisiert er gemeinsam mit Liam die Bergung der Waffen nach der Verhaftung der Gefährten und ruft ihm zu: „Liam, du musst jetzt die Waffen nehmen“.
-- **[Lindo Laut](/characters/lindo_laut.md):** Lindo bezeichnet Gunther als „gefährlich gut informiert“. Die beiden fliehen gemeinsam vor einer Lawine, wobei sich Gunther an Lindos Füßen festhält. Später ist Lindo an der Löschung von Gunthers Erinnerung an den Hain beteiligt.
-- **[Dodo](/characters/dodo.md):** Dodo rettet Gunther beim Überqueren der Felsplattformen, als dieser ausrutscht. Gunther heilt Dodo mit Inspirational Word.
-- **[Joar Vanur](/npcs/joar_vanur.md):** Gunther verhandelt zunächst mit Joar und holt bessere Konditionen heraus. Später trennt er ihm den Arm ab, um eine Kristallkugel zu sichern. Danach entschuldigt er sich ernsthaft, besteht aber darauf, aus besten Absichten gehandelt zu haben, und kümmert sich später um Joar.
-- **[Nerash](/deities/nerash.md):** Gunther kniet vor [Nerash](/deities/nerash.md) nieder und beobachtet aufmerksam die Reaktionen der Seraphen.
-- **[Truban](/npcs/truban.md):** Gunther bemerkt ein frisches Loch in dessen Schild.
+- **Unbekannte Organisation:** Hat Gunther ausgesandt, um die Helden zu beobachten und ihnen Kontakte zu Adelshäusern zu verschaffen. Gunther verrät zunächst weder Namen noch Herkunft.
+- **[Lunara Velora](/characters/lunara_velora.md):** Gunther vertritt sie in ihrer Abwesenheit, verkleidet sich als sie, warnt sie vor Voreiligkeit und rettet ihr das Leben.
+- **[Liam](/npcs/liam_velora.md):** Gunther übernimmt seine Erziehung in Etikette, bringt ihm Grundmanieren bei, scheitert jedoch bei Themen der neuen Götter. Er zeigt tiefes Vertrauen und organisiert mit [Liam](/npcs/liam_velora.md) nach einer Verhaftung die Bergung der Waffen.
+- **[Joar Vanur](/npcs/joar_vanur.md):** Gunther verhandelt mit ihm und holt bessere Konditionen heraus. Nachdem er [Joar](/npcs/joar_vanur.md) im Affekt den Arm abtrennt, um eine Kristallkugel zu sichern, entschuldigt er sich und nennt ihn später den besten Auftraggeber.
+- **[Dodo](/characters/dodo.md):** Wird von Gunther mit „Inspirational Word“ geheilt; Dodo rettet ihn seinerseits auf den Felsplattformen vor dem Absturz.
+- **[Lindo Laut](/characters/lindo_laut.md):** Flieht gemeinsam mit Gunther vor einer Lawine; Gunther hält sich an dessen Füßen fest.
+- **[Nerash](/deities/nerash.md):** Gunther kniet vor ihm nieder und beobachtet aufmerksam die Reaktionen der Seraphen.
+- **[Truban](/npcs/truban.md):** Gunther bemerkt mit „Observer“ ein frisches Loch in dessen Schild.
 - **[Edmund](/npcs/sir_edmund.md):** Dessen Erzählungen bewegen Gunther emotional.
 
 ## Chronologie
 
-- **Session 2026-07-29:** Gunther stellt sich in einer Taverne vor. Er trägt adlige Kleidung, Ledermantel und Siegelring. [Lindo Laut](/characters/lindo_laut.md) nennt ihn „gefährlich gut informiert“. Gunther offenbart, dass er die Gruppe beobachtet und Kontakte zu Adelshäusern eröffnen will. Er sagt, Informationen seien seine Währung, und verrät seine Herkunft nicht. Als die Gruppe zum Tempel aufbricht, wirkt er Uncanny Disguise, um sich in [Lunara Velora](/characters/lunara_velora.md) zu verwandeln, damit er als Fremder nicht erkannt wird.
-- **Session 2026-08-04:** Gunther nutzt Uncanny Disguise, um die Gruppe bei der Begegnung mit den Seraphen zu vervollständigen. Er schätzt die Stärke der Seraphen ein und warnt vor deren Flugfähigkeiten. In den folgenden Tagen übernimmt er die Erziehung Liams in Etikette und scheitert bei den Themen der neuen Götter. Er schlägt vor, einen neuen Gruppennamen wie „[Rotunas](/characters/rotunas.md) Erben“ anzunehmen, überlässt die Entscheidung aber der Gruppe. Er zeigt sich respektvoll gegenüber dem Glauben anderer und versucht, Liam zu selbstständigem Denken zu bewegen.
-- **Session 2026-08-12:** Gunther kniet vor [Nerash](/deities/nerash.md) nieder und beobachtet die Reaktionen der Seraphen. Er stellt kritische Fragen zu den kranken Seraphen und sorgt sich um eine mögliche Ausbreitung der Korruption. Bei den Verhandlungen mit [Joar Vanur](/npcs/joar_vanur.md) setzt er Sprachkenntnisse und Überzeugungskraft ein, um bessere Konditionen herauszuholen. Er kümmert sich um Liams Tischmanieren und führt ein tiefgründiges Gespräch mit Lunara über Familie und Vertrauen.
-- **Session 2026-08-18:** Gunther trägt Stöckelschuhe, um größer zu wirken. Er erkennt den mutierten Frosch als Gribbit und das Zeichen der Affenpfote als Shima-Stammeszeichen. Er heilt [Dodo](/characters/dodo.md) mit Inspirational Word und erzählt eine Geschichte, um Joar eine Lektion zu erteilen. Er reagiert emotional auf [Edmunds](/npcs/sir_edmund.md) Erzählungen, überquert die Schlucht auf Joars schwebenden Steinen mit Mühe und flieht mit [Lindo Laut](/characters/lindo_laut.md) vor der Lawine, indem er sich an dessen Füßen festhält.
-- **Session 2026-08-25:** Gunther wird als Goblin-Schurke mit zwei Silberdolchen und einer Steinschleuder beschrieben. Er bemerkt mit Experience Observer das frische Loch in Trubans Schild, findet aber nichts Auffälliges. Im Kampf tötet er einen Gnoll mit einem hinterhältigen Dolchangriff und feuert mit der Steinschleuder auf den Schatten-Gnoll. Unsichtbar schleicht er zur Quelle, entdeckt den Schamanen und hält ihn mit Shadowbind fest. Am Ende trennt er [Joar Vanur](/npcs/joar_vanur.md) den Arm ab, um die Kristallkugel zu sichern, was Joars Rüstung aktiviert und zu dessen Flucht führt.
-- **Session 2026-09-01:** Gunther nutzt Observer und Dark Whisper, um Joars Spur zu verfolgen und seinen Aufenthaltsort zu lokalisieren. Beim Überqueren der Felsplattformen rutscht er aus, wird von [Dodo](/characters/dodo.md) gerettet und verliert seine Unsichtbarkeit. Am Weltenbaum wird er ohnmächtig, nachdem [Lindo Laut](/characters/lindo_laut.md) zustimmt, seine Erinnerung an den Hain zu löschen. Später erwacht er, untersucht Joar und macht passiv-aggressive Bemerkungen über die Elfen. Während der Rast kontaktiert er [Lunara Velora](/characters/lunara_velora.md) per Dark Whisper und kümmert sich um Joar.
-- **Session 2026-09-08:** Gunther entschuldigt sich bei [Joar Vanur](/npcs/joar_vanur.md) in ernstem Ton, besteht aber darauf, dass seine Tat aus besten Absichten geschah. Er bietet mehrfach an, Verbündete unsichtbar zu machen, und warnt Lunara vor übereiltem Handeln. Nach der Verhaftung seiner Gefährten organisiert er mit [Liam](/npcs/liam_velora.md) die Bergung der Waffen und verkleidet sich unauffällig. Als ein Priester einen lila Blitz abfeuert, wirft er sich bewusst in den Strahl, um Lunara zu retten, und wird schwer getroffen.
+- **Session 2026-07-29:** Gunther stellt sich in einer Taverne als adliger Halb-Halbing-Goblin vor und bietet der Gruppe seine Dienste an. Er offenbart, von einer Organisation geschickt worden zu sein, und betont, Informationen seien seine Währung. Er verwandelt sich mit „Uncanny Disguise“ in [Lunara Velora](/characters/lunara_velora.md), um beim Tempel nicht als Fremder erkannt zu werden.
+- **Session 2026-08-04:** Als Lunara verkleidet begleitet er die Gruppe zu den Seraphen, schätzt deren Stärke ein und warnt vor Flugfähigkeiten. Er beginnt mit der Erziehung [Liams](/npcs/liam_velora.md), scheitert bei den neuen Göttern, schlägt den Gruppennamen „[Rotunas](/characters/rotunas.md) Erben“ vor und zeigt Respekt für den Glauben anderer.
+- **Session 2026-08-12:** Gunther kniet vor [Nerash](/deities/nerash.md) nieder, beobachtet die Seraphen und stellt kritische Fragen zur möglichen Ausbreitung der Korruption. Bei Verhandlungen mit [Joar Vanur](/npcs/joar_vanur.md) setzt er Sprachkenntnisse und Überzeugungskraft ein und erzielt bessere Konditionen. Er kümmert sich um Liams Tischmanieren und führt ein tiefgründiges Gespräch mit [Lunara Velora](/characters/lunara_velora.md) über Familie und Vertrauen.
+- **Session 2026-08-18:** Er trägt Stöckelschuhe, erkennt den mutierten Frosch als Gribbit und das Zeichen der Affenpfote als Shima-Stammeszeichen. Er heilt [Dodo](/characters/dodo.md) mit „Inspirational Word“, erzählt [Joar Vanur](/npcs/joar_vanur.md) eine lehrreiche Geschichte und ist von [Edmunds](/npcs/sir_edmund.md) Erzählungen emotional berührt. Er überquert die Schlucht auf Joars schwebenden Steinen mit Mühe und flieht vor einer Lawine, indem er sich an [Lindo Lauts](/characters/lindo_laut.md) Füßen festhält.
+- **Session 2026-08-25:** Mit „Observer“ bemerkt er das frische Loch in [Trubans](/npcs/truban.md) Schild. Im Kampf tötet er einen Gnoll mit hinterhältigem Dolchangriff, beschießt den Schatten-Gnoll mit der Steinschleuder, schleicht unsichtbar zur Quelle, entdeckt den Schamanen und setzt „Shadowbind“ ein. Schließlich trennt er [Joar Vanur](/npcs/joar_vanur.md) den Arm ab, um die Kristallkugel zu sichern; Joars Rüstung aktiviert sich und trägt ihn fort.
+- **Session 2026-09-01:** Gunther nutzt „Observer“ und „Dark Whisper“, um Joars Spur zu verfolgen und seinen Aufenthaltsort zu orten. Beim Überqueren der Felsplattformen rutscht er aus, wird von [Dodo](/characters/dodo.md) gerettet und verliert seine Unsichtbarkeit. Am Weltenbaum wird er ohnmächtig, nachdem [Lindo Laut](/characters/lindo_laut.md) zustimmt, seine Erinnerung an den Hain zu löschen. Nach dem Erwachen untersucht er Joar, äußert sich passiv-aggressiv über Elfen, kontaktiert [Lunara Velora](/characters/lunara_velora.md) per „Dark Whisper“ und kümmert sich um Joar.
+- **Session 2026-09-08:** Er entschuldigt sich ernsthaft bei [Joar Vanur](/npcs/joar_vanur.md), besteht aber darauf, aus besten Absichten gehandelt zu haben, und zeigt sich bereit zu einer öffentlichen Entschuldigung. Während der Stadterkundung warnt er [Lunara Velora](/characters/lunara_velora.md) vor Voreiligkeit und bietet mehrfach an, Verbündete unsichtbar zu machen. Nach der Verhaftung seiner Gefährten organisiert er mit [Liam](/npcs/liam_velora.md) die Bergung der Waffen und verkleidet sich unauffällig. Als ein Priester einen lila Blitz abfeuert, wirft er sich bewusst in den Strahl, um Lunara zu retten, und wird schwer getroffen.
+- **Session 2026-09-22:** Er erleidet schwere Verbrennungen im Gesicht und am Körper, sein rechtes Bein ist gelähmt, und er trägt eine bleibende [Narbe](/locations/narben.md); permanentes Hope wurde gestrichen. Vorübergehend verliert er seine menschliche Gestalt. Trotz der Schmerzen setzt er „Through Your Eyes“ ein, um Wachen zu beobachten, und „Shadowbind“, um Gegner festzusetzen. Gegenüber [Liam](/npcs/liam_velora.md) zeigt er tiefes Vertrauen; sein Glaube hilft, verwandelte Wesen zurückzuverwandeln, was ihn zu Tränen rührt. Er verbeugt sich tief vor [Joar Vanur](/npcs/joar_vanur.md) und nennt ihn den besten Auftraggeber.
 
 ## Offene Fragen
 
-- Welche Organisation Gunther geschickt hat und woher er selbst stammt, wird nicht enthüllt.
-- Was nach dem schweren Treffer durch den lila Blitz mit Gunther geschieht, ist offen.
-- Welche Folgen die Erinnerungslöschung am Weltenbaum genau hat, bleibt unklar.
+- Die Identität und das Ziel der Organisation, die Gunther ausgesandt hat, bleiben in den Belegen ungenannt.
+- Gunthers genaue Herkunft bleibt offen; er verrät zunächst nicht, woher er stammt.
+- Die Quelle seines umfangreichen Wissens über alte Kreaturen wird nicht näher erklärt.
 
 # Belege
 
-[1] Session 2026-07-29 @ 00:07:58 (https://www.youtube.com/watch?v=umGyKLkefJI)  
-[2] Session 2026-08-04 @ 00:23:04 (https://www.youtube.com/watch?v=qRj2t3wQHfs)  
-[3] Session 2026-08-12 @ 00:10:03 (https://www.youtube.com/watch?v=piUv11DCwDw)  
-[4] Session 2026-08-18 @ 00:26:30 (https://www.youtube.com/watch?v=10swvSz6k7U)  
-[5] Session 2026-08-25 @ 02:15:31 (https://www.youtube.com/watch?v=1Cjj3OVqiYA)  
-[6] Session 2026-09-01 @ 00:42:37 (https://www.youtube.com/watch?v=1E3-Nwv4OEs)  
-[7] Session 2026-09-08 @ 01:54:07 (https://www.youtube.com/watch?v=EswuiEiZZEc)
+1. Session 2026-07-29 @ 00:07:58 (https://www.youtube.com/watch?v=umGyKLkefJI)
+2. Session 2026-08-04 @ 00:23:04 (https://www.youtube.com/watch?v=qRj2t3wQHfs)
+3. Session 2026-08-12 @ 00:10:03 (https://www.youtube.com/watch?v=piUv11DCwDw)
+4. Session 2026-08-18 @ 00:26:30 (https://www.youtube.com/watch?v=10swvSz6k7U)
+5. Session 2026-08-25 @ 02:15:31 (https://www.youtube.com/watch?v=1Cjj3OVqiYA)
+6. Session 2026-09-01 @ 00:42:37 (https://www.youtube.com/watch?v=1E3-Nwv4OEs)
+7. Session 2026-09-08 @ 01:54:07 (https://www.youtube.com/watch?v=EswuiEiZZEc)
+8. Session 2026-09-22 @ 00:07:17 (https://www.youtube.com/watch?v=zXVsTYYR8M4)

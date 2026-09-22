@@ -8,11 +8,12 @@ tags:
 timestamp: '2025-08-12T00:00:00Z'
 generated:
   by: pnp_okf/0.2.0
-  at: '2026-09-22T21:02:17Z'
+  at: '2026-09-22T22:10:10Z'
 id: NPC_HENDRIK
 verified:
   by: human:gm
 relationships:
+- target: characters/dodo
 - target: characters/lindo_laut
   note: '**Lindo Laut:** Hendrik spricht ihn in einer unheimlichen Weise an, bei der
     er nicht er selbst zu sein scheint. Dies ist eine der auffälligsten und rätselhaftesten

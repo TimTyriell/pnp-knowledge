@@ -8,9 +8,10 @@ tags:
 timestamp: '2026-01-13T00:00:00Z'
 generated:
   by: pnp_okf/0.2.0
-  at: '2026-09-22T21:02:18Z'
+  at: '2026-09-22T22:10:10Z'
 id: NPC_ROLAND
 relationships:
+- target: characters/dodo
 - target: characters/rotunas
   note: '**Rotunas und die Heldengruppe:** Roland kennt sie aus der Goblin-Schlacht
     und nennt sie „Rotunas-Bande“. Er arbeitet eng mit ihnen zusammen, vertraut ihnen

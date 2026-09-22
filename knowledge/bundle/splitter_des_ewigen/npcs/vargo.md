@@ -8,8 +8,10 @@ tags:
 timestamp: '2026-08-25T00:00:00Z'
 generated:
   by: pnp_okf/0.2.0
-  at: '2026-09-22T21:02:19Z'
+  at: '2026-09-22T22:10:11Z'
 id: NPC_VARGO
+relationships:
+- target: characters/dodo
 sources:
 - id: '1'
   resource: https://www.youtube.com/watch?v=1Cjj3OVqiYA

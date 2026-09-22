@@ -8,7 +8,7 @@ tags:
 timestamp: '2026-06-16T00:00:00Z'
 generated:
   by: pnp_okf/0.2.0
-  at: '2026-09-22T21:19:08Z'
+  at: '2026-09-22T22:10:10Z'
 id: NPC_DER_JEN
 verified:
   by: human:gm
@@ -25,7 +25,7 @@ relationships:
   note: '**Das Kind von damals:** Jen kennt offenbar das Schicksal eines Jungen, von
     dem die Gruppe weiß. Er gibt jedoch keine konkrete Antwort auf die Frage, was
     mit dem Kind geschehen ist.'
-- target: npcs/tattrick
+- target: npcs/tatrick
   note: '**Tattrick:** Jen aktiviert Tattricks Kontrollsymbol, um ihn zu testen. Die
     genaue Natur dieses Symbols und der Grund des Tests bleiben unklar.'
 sources:
@@ -48,7 +48,7 @@ Er warnt die Gruppe vor dem baldigen Eintreffen eines ängsten Begleiters Vorgul
 
 ## Wichtige Merkmale
 
-Jen tritt als einer der Ängsten Vorgul'tars auf – er selbst bestätigt auf Nachfrage: „Ich bin einer der Ängsten.“ Er ist in der Lage, das Kontrollsymbol von [Tattrick](/npcs/tattrick.md) zu aktivieren, um diesen zu testen, was auf magische oder technische Fähigkeiten im Umgang mit solchen Symbolen hindeutet.
+Jen tritt als einer der Ängsten Vorgul'tars auf – er selbst bestätigt auf Nachfrage: „Ich bin einer der Ängsten.“ Er ist in der Lage, das Kontrollsymbol von [Tattrick](/npcs/tatrick.md) zu aktivieren, um diesen zu testen, was auf magische oder technische Fähigkeiten im Umgang mit solchen Symbolen hindeutet.
 
 Sein Auftreten ist ruhig und selbstbewusst, aber nicht bedrohlich. Er spricht von Vorgul'tars Angst und schwindender Macht mit einer Distanz, die eigene Motive erkennen lässt. Im Gespräch mit der Gruppe zeigt er sich überrascht, dass jemand von einem bestimmten „Kind von damals“ weiß:
 
@@ -62,7 +62,7 @@ Jen sieht nach eigener Aussage „Sterne regnen“ und möchte deshalb der Stadt
 
 - **Vorgul'tar:** Jen bezeichnet Vorgul'tar als „Herr und Meister“ und ist einer seiner Ängsten. Gleichzeitig sagt er, Vorgul'tar habe Angst und seine Macht schwinde, und er handelt aus eigenen Interessen – er warnt die Gruppe und plant selbst die Flucht. Das Verhältnis ist also von Distanz und heimlicher Abkehr geprägt.
 - **Die [Ängste](/factions/aengste.md):** Jen ist Teil dieser Gruppe von Dienern Vorgul'tars, von denen es heißt, nur sie wüssten von dem Jungen. Näheres zur Organisation oder Hierarchie der Ängste geht aus den Belegen nicht hervor.
-- **[Tattrick](/npcs/tattrick.md):** Jen aktiviert [Tattricks](/npcs/tattrick.md) Kontrollsymbol, um ihn zu testen. Die genaue Natur dieses Symbols und der Grund des Tests bleiben unklar.
+- **[Tattrick](/npcs/tatrick.md):** Jen aktiviert [Tattricks](/npcs/tatrick.md) Kontrollsymbol, um ihn zu testen. Die genaue Natur dieses Symbols und der Grund des Tests bleiben unklar.
 - **Die Gefährten von Rotunas:** Jen begegnet der Heldengruppe, warnt sie vor dem kommenden Begleiter und rät zur Flucht. Er gibt Hinweise, ohne sich auf eine Seite zu stellen.
 - **[Das Kind](/npcs/das_kind.md) von damals:** Jen kennt offenbar das Schicksal eines Jungen, von dem die Gruppe weiß. Er gibt jedoch keine konkrete Antwort auf die Frage, was mit dem Kind geschehen ist.
 - **Schreiberin Jen:** Trotz des gleichen Namens besteht keine Identität zwischen den beiden Personen. Die Namensgleichheit ist an dieser Stelle lediglich eine Verwechslungsgefahr und wird nicht weiter erklärt.

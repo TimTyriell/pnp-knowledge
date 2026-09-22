@@ -8,7 +8,7 @@ tags:
 timestamp: '2026-07-10T00:00:00Z'
 generated:
   by: pnp_okf/0.2.0
-  at: '2026-09-22T21:19:07Z'
+  at: '2026-09-22T22:10:09Z'
 id: EVENT_BRUMAS_BLITZELEMENTAR_WACHE
 subtype: Ritual
 sources:
@@ -17,7 +17,7 @@ sources:
   last_modified: '2026-07-10T00:00:00Z'
 ---
 
-Bruma beschwört vor der Nacht einen [Blitzelementar](/npcs/blitzelementar.md), der die Gruppe bewacht; er selbst bleibt trotzdem wach und nimmt einen Stresspunkt.
+Bruma beschwört vor der Nacht einen [Blitzelementar](/items/blitzelementar.md), der die Gruppe bewacht; er selbst bleibt trotzdem wach und nimmt einen Stresspunkt.
 
 # Belege
 

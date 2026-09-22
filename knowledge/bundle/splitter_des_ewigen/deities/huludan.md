@@ -8,7 +8,7 @@ tags:
 timestamp: '2026-06-16T00:00:00Z'
 generated:
   by: pnp_okf/0.2.0
-  at: '2026-09-22T21:02:10Z'
+  at: '2026-09-22T22:10:08Z'
 id: DEITY_HULUDAN
 subtype: Sonstiges
 aliases:
@@ -18,6 +18,7 @@ verified:
 relationships:
 - target: characters/dante
 - target: characters/esterossa
+- target: characters/lunara_velora
 - target: deities/vharzul
   note: '**Vhar''Zul:** Vhar''Zul will Huludan befreien und sieht in ihm den Schlüssel,
     um die Welt ohne Götter neu zu gestalten. Er spricht Huludans Namen aus, um dessen

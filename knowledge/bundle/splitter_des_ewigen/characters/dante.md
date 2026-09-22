@@ -8,9 +8,10 @@ tags:
 timestamp: '2026-05-13T00:00:00Z'
 generated:
   by: pnp_okf/0.2.0
-  at: '2026-09-22T21:02:09Z'
+  at: '2026-09-22T22:10:08Z'
 id: CHAR_DANTE
 relationships:
+- target: characters/dodo
 - target: characters/kip_ribbit
   note: '**Kip:** Dante nimmt Kip in seiner Selbstbeschreibung als Anführer aus; Kip
     hat für ihn offenbar eine Sonderstellung innerhalb der Gruppe.'

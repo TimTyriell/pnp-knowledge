@@ -1,5 +1,8 @@
 # Update Log
 
+## 2026-09-22
+* **Session**: [Daggerheart - DSdE | Season 1 Folge 8 | Team A](/sessions/2026-09-22.md)
+
 ## 2026-09-08
 * **Session**: [Daggerheart - DSdE | Season 1 Folge 7 | Team A](/sessions/2026-09-08.md)
 

@@ -8,7 +8,7 @@ tags:
 timestamp: '2025-04-30T00:00:00Z'
 generated:
   by: pnp_okf/0.2.0
-  at: '2026-09-22T21:19:08Z'
+  at: '2026-09-22T22:10:10Z'
 id: NPC_GULRAK
 relationships:
 - target: characters/cookie
@@ -19,7 +19,7 @@ sources:
   last_modified: '2025-04-30T00:00:00Z'
 ---
 
-Gulrak ist ein [Kenku](/npcs/kenku_bote.md), der nach einem versuchten Diebstahl bei [Baran](/npcs/baran.md) gefangen gehalten wird. Er behauptet, die Insel habe früher seiner Familie gehört und die Piraten hätten sie übernommen; er wollte ein magisches Familienerbstück (ein [Amulett mit Krähenschädel](/items/amulett_mit_kraehenschaedel.md)) zurückholen. Er bietet der Gruppe Informationen an, wenn sie ihn freilässt. Nachdem sie einwilligen und ihn herauslassen, versucht er zu fliehen, wird aber von [Cookie](/characters/cookie.md) mit der Zunge zurück in die Zelle geschleudert. Er ist geschunden, aber immer noch verschlagen und versucht, die Gruppe zu manipulieren.
+Gulrak ist ein [Kenku](/npcs/kenku_bote.md), der nach einem versuchten Diebstahl bei [Baran](/npcs/baran.md) gefangen gehalten wird. Er behauptet, die Insel habe früher seiner Familie gehört und die Piraten hätten sie übernommen; er wollte ein magisches Familienerbstück (ein [Amulett mit Krähenschädel](/items/amulett_mit_rabenschaedel.md)) zurückholen. Er bietet der Gruppe Informationen an, wenn sie ihn freilässt. Nachdem sie einwilligen und ihn herauslassen, versucht er zu fliehen, wird aber von [Cookie](/characters/cookie.md) mit der Zunge zurück in die Zelle geschleudert. Er ist geschunden, aber immer noch verschlagen und versucht, die Gruppe zu manipulieren.
 
 # Belege
 

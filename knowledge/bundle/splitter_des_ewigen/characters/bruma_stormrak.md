@@ -8,7 +8,7 @@ tags:
 timestamp: '2026-09-03T00:00:00Z'
 generated:
   by: pnp_okf/0.2.0
-  at: '2026-09-22T21:19:06Z'
+  at: '2026-09-22T22:10:08Z'
 id: CHAR_BRUMA_STORMRAK
 relationships:
 - target: characters/kaya
@@ -76,7 +76,7 @@ In der Schlacht um [Ringtal](/locations/ringtal.md) tritt Bruma als entschlossen
 
 **Ausrüstung:** Sein auffälligstes Stück ist ein überdimensionierter Metallstab von etwa 230 Zentimetern Länge, der aus Spulen aufgebaut ist und eher wie ein Wanderstab als eine Waffe wirkt. Eine kleine, ähnliche Spulen-Halskette trägt er anfangs selbst und schenkt sie später [Kaya](/characters/kaya.md).
 
-**Fähigkeiten:** Bruma beherrscht mächtige Blitzmagie. Er kann Blitze aus seiner Handfläche entladen, mehrere Ziele gleichzeitig treffen und einen [Blitzelementar](/npcs/blitzelementar.md) als Wache beschwören. Außerdem kann er eine Blitz-Kopie erschaffen, die als Träger oder Sprengsatz dient, und Illusionen einsetzen. Sein stärkster Einsatz ist ein Blitzsturm, für den er seine gesamte Kraft opfert; danach ist er erschöpft, kann sich aber langsam wieder aufladen.
+**Fähigkeiten:** Bruma beherrscht mächtige Blitzmagie. Er kann Blitze aus seiner Handfläche entladen, mehrere Ziele gleichzeitig treffen und einen [Blitzelementar](/items/blitzelementar.md) als Wache beschwören. Außerdem kann er eine Blitz-Kopie erschaffen, die als Träger oder Sprengsatz dient, und Illusionen einsetzen. Sein stärkster Einsatz ist ein Blitzsturm, für den er seine gesamte Kraft opfert; danach ist er erschöpft, kann sich aber langsam wieder aufladen.
 
 **Wesen:** Er zeigt sich entschlossen und taktisch, kann einschüchtern, aber auch Mitgefühl empfinden. In der Auseinandersetzung mit Xenia offenbart er eine verletzliche Seite: Er sagt, er sei allein und wisse nicht, wie es seiner Familie geht. In diesem Moment beruhigt er sich selbst mit einem drakonischen Wort und stellt sich dann mit Stolz vor: „Mein Name ist Bruma Stormrak. Und mit Stolz trage ich diesen Namen.“
 

@@ -8,7 +8,7 @@ tags:
 timestamp: '2026-09-08T00:00:00Z'
 generated:
   by: pnp_okf/0.2.0
-  at: '2026-09-22T21:02:13Z'
+  at: '2026-09-22T22:10:09Z'
 id: FACTION_SALZBACHER_STADTWACHE
 subtype: Armee
 sources:
@@ -17,7 +17,7 @@ sources:
   last_modified: '2026-09-08T00:00:00Z'
 ---
 
-Die Stadtwache von [Salzbach](/locations/salzbach.md) ist eine aus Elite-Söldnern bestehende Ordnungsmacht der Stadt. Sie besetzt die Tore, sorgt innerhalb der Mauern für Ordnung und tritt als bewaffnete Exekutive auf, die im Zweifel auch gegen die Heldengruppe vorgeht.
+Die [Stadtwache von Salzbach](/factions/stadtwache_von_salzbach.md) ist eine aus Elite-Söldnern bestehende Ordnungsmacht der Stadt. Sie besetzt die Tore, sorgt innerhalb der Mauern für Ordnung und tritt als bewaffnete Exekutive auf, die im Zweifel auch gegen die Heldengruppe vorgeht.
 
 ## Rolle und Auftreten
 

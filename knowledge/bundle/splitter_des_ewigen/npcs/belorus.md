@@ -8,7 +8,7 @@ tags:
 timestamp: '2026-03-10T00:00:00Z'
 generated:
   by: pnp_okf/0.2.0
-  at: '2026-09-22T21:02:17Z'
+  at: '2026-09-22T22:10:10Z'
 id: NPC_BELORUS
 aliases:
 - Belorus
@@ -24,6 +24,7 @@ relationships:
   note: '**Lindo Laut:** Belorus verlangt wiederholt dessen Auslieferung. Er begründet
     dies damit, dass Lindo Laut „nicht existieren dürfe“. In der Verhandlung lässt
     er sich jedoch überzeugen, dass Lindos Tod…'
+- target: characters/lunara_velora
 - target: characters/nyrella
 - target: characters/rotunas
   note: '**Rotunas:** Belorus versucht, Rotunas’ Teleport zu kontern, scheitert aber.

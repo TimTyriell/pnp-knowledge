@@ -2,7 +2,7 @@
 type: Conflict
 title: 'Offener Konflikt: Lunara Velora'
 description: Widersprüchliche Belege — menschliche Entscheidung nötig.
-timestamp: '2026-09-22T21:19:06Z'
+timestamp: '2026-09-22T22:10:08Z'
 id: CONFLICT_CHAR_LUNARA_VELORA
 status: open
 concept: characters/lunara_velora
@@ -12,7 +12,7 @@ Betrifft: `characters/lunara_velora` (CHAR_LUNARA_VELORA)
 
 # Offene Konflikte
 
-- Lunas Spezies bzw. Abstammung wird unterschiedlich angegeben: [1] nennt sie Halb-Tidekin-Halb-Hexe, [13] Dämonin aus der Veloria-Familie, [21] Elfe und [24] Elfenhexe. Diese Angaben widersprechen einander.
+- Lianas Herkunft wird in den Quellen widersprüchlich dargestellt: als Halb-Tidekin-Halb-Hexe ([1], [16]), als Dämon aus der Veloria-Familie ([13]) und als Elfe bzw. Elfenhexe ([21], [24]). Die Belege klären nicht, welche Zuordnung zutrifft.
 
 ## Belege
 
@@ -40,4 +40,5 @@ Betrifft: `characters/lunara_velora` (CHAR_LUNARA_VELORA)
 [22] Session 2026-08-12 @ 00:18:26 (https://www.youtube.com/watch?v=piUv11DCwDw)  
 [23] Session 2026-08-18 @ 00:29:04 (https://www.youtube.com/watch?v=10swvSz6k7U)  
 [24] Session 2026-08-25 @ 00:42:22 (https://www.youtube.com/watch?v=1Cjj3OVqiYA)  
-[25] Session 2026-09-08 @ 01:48:45 (https://www.youtube.com/watch?v=EswuiEiZZEc)
+[25] Session 2026-09-08 @ 01:48:45 (https://www.youtube.com/watch?v=EswuiEiZZEc)  
+[26] Session 2026-09-22 @ 00:10:02 (https://www.youtube.com/watch?v=zXVsTYYR8M4)

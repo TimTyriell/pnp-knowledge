@@ -8,7 +8,7 @@ tags:
 timestamp: '2026-08-25T00:00:00Z'
 generated:
   by: pnp_okf/0.2.0
-  at: '2026-09-22T21:11:56Z'
+  at: '2026-09-22T22:10:10Z'
 id: NPC_LENRA
 subtype: Sonstiges
 aliases:
@@ -30,6 +30,7 @@ relationships:
 - target: characters/lindo_laut
   note: 'Lindo Laut: Sie forderte ihn in der Krypta zu einem Lied auf; später spricht
     er von Lenras Spielplatz.'
+- target: deities/vharzul
 - target: locations/breska
   note: 'Breska: Der Angriff auf das Dorf wird mit Landra in Verbindung gebracht;
     sie hinterließ Schriftrollen mit Hinweisen auf einen Magier in Breska.'

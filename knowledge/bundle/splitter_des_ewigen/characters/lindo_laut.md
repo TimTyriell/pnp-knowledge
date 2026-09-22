@@ -1,14 +1,14 @@
 ---
 type: Character
 title: Lindo Laut
-description: Lindo Laut, gespielt von Tim, ist ein Feenbarde (Troubadour) mit Highborn-Herkunft
-  und der Erfahrung „Friend to all“. Zu Beginn der Kampagn…
+description: Lindo Laut ist ein geflügelter Feenbarde aus einem fernen Königreich,
+  der als Troubadour mit Highborn-Herkunft und der Erfahrung „Friend to…
 tags:
 - characters
-timestamp: '2026-09-08T00:00:00Z'
+timestamp: '2026-09-22T00:00:00Z'
 generated:
   by: pnp_okf/0.2.0
-  at: '2026-09-22T21:19:06Z'
+  at: '2026-09-22T22:10:08Z'
 id: CHAR_LINDO_LAUT
 aliases:
 - Lindo Laut (Pedro)
@@ -17,38 +17,37 @@ aliases:
 - Tim (Lindo Laut)
 relationships:
 - target: characters/cookie
-  note: '**Cookie:** Emotionale Stütze. Ihre Phiole rettet Lindo Laut nach dem Herz-Biss.
-    Später heilt er sie mit dem Totem der Nerash. Nach ihrem Tod besucht er ihr Grab.'
+  note: '**Cookie:** Emotionale Stütze; ihre Phiole rettet Lindo nach dem Herzbiss
+    ([14]). Lindo heilt sie später mit dunkler Kraft ([11]). Nach ihrem Tod geht er
+    zu ihrem Grab, um sich zu verabschieden ([23]…'
 - target: characters/dodo
-  note: '**Dodo:** Enge Kampf- und Vertrauensgemeinschaft. Dodo rettet ihn mehrfach
-    vor Kontrollverlust und schenkt ihm die Armbrust. Lindo Laut vertraut Dodo bedingungslos.'
+  note: '**Dodo:** Enge Freundschaft und Kampfpartner. Dodo hält Lindo bei Kontrollverlusten
+    zurück, schenkt ihm eine Armbrust, und Lindo vertraut ihm bedingungslos ([27],
+    [30], [33]). In [42] sprechen beide…'
 - target: characters/esterossa
-  note: '**Esterossa:** Lindo Laut bittet ihn, ihn magisch zu fesseln, falls er die
-    Kontrolle verliert. Nach der Befreiung von Slix stützt Esterossa ihn.'
+  note: '**Esterossa:** Lindo bittet ihn, ihn zu fesseln, falls er die Kontrolle verliert
+    ([29] in späteren Berichten). Nach Esterossas Tod versucht Lindo, dessen Seele
+    mit einem Seelenstein einzufangen; der…'
 - target: characters/gunther
+  note: '**Gunther:** Lindo ist zunächst misstrauisch, lädt ihn dann aber in die Gruppe
+    ein ([40]).'
 - target: characters/lunara_velora
-  note: '**Lunara Velora:** Er erhält von ihr einen Samen für einen Portalbaum. In
-    Abyssalis unterstützt er sie, mahnt zur Vorsicht und teilt ihre Trauer um Liam.'
+  note: '**Lunara Velora:** Lindo gibt ihr einen Samen, aus dem ein Portalbaum wachsen
+    könnte ([26]). Er unterstützt sie in Abyssalis, spricht in Seelenwacht für sie
+    und respektiert ihre Entscheidung, bei Lia…'
 - target: characters/nyrella
-  note: '**Nyrella:** Gemeinsame Erkundung; Lindo Laut entschuldigt sich bei ihr für
-    frühere Vorfälle.'
+  note: '**Nyrella:** Lindo entschuldigt sich später für Vorfälle, in denen er sie
+    bedrohte ([30]). Er arbeitet mit ihr bei der Erkundung zusammen ([30]).'
 - target: characters/rotunas
-  note: '**Rotunas:** Magische Zusammenarbeit (kombinierter Feuerangriff). Der Vorfall,
-    bei dem Slix Rotunas’ Arm zerstört, belastet Lindo Laut schwer und treibt ihn
-    dazu, die Handschellen anzulegen.'
-- target: deities/esua
+  note: '**Rotunas:** Magische Zusammenarbeit, etwa ein kombinierter Feuerangriff
+    ([19]). Der tragische Vorfall, bei dem Lindo unter Slix’ Einfluss Rotunas’ Arm
+    zerstört, belastet ihn schwer und treibt ihn da…'
 - target: deities/heiliger_duran
 - target: deities/kollmereth
 - target: deities/korn
-- target: deities/nerash
-  note: '**Nerash:** Ihre Befreiung löst die roten Strahlen und Stimmen im Amulett
-    aus.'
 - target: deities/ohoriaks
 - target: deities/thyrex
 - target: deities/vharzul
-  note: '**Vasul:** Zentrale, parasitäre Beziehung. Die innere Präsenz verleiht Macht,
-    verlangt aber Opfer und droht, die Kontrolle zu übernehmen. Lindo Laut widersteht
-    und stellt sich in Abyssalis gegen Vasu…'
 - target: domains/splitterwelt
 - target: events/verhandlung_mit_harl
 - target: factions/fluechtlinge
@@ -61,42 +60,43 @@ relationships:
 - target: npcs/abisalis_harald
 - target: npcs/auranil
 - target: npcs/belorus
-  note: '**Belorus:** Fordert Lindo Lauts Auslieferung wegen des Götterfragments.
-    Lindo Laut überzeugt ihn mit einer Rede und dem Buch Vasuls.'
-- target: npcs/gorak
-  note: '**Gorak:** Gildenmeister, der Lindo Laut vermisst und ihn als „den Guten“
-    bezeichnet.'
 - target: npcs/hans_soldat_aus_breska
 - target: npcs/hendrik
+  note: '**Hendrik:** Lindo führt Gespräche mit dem älteren Anführer der Bergnomaden
+    und zeigt Respekt gegenüber den alten Göttern ([13]).'
 - target: npcs/inaros
 - target: npcs/jen
 - target: npcs/joar_vanur
-  note: '**Joar Vanur:** Lindo Laut verhandelt mit ihm, gibt ihm das Amulett zurück
-    und nimmt sein Angebot an.'
+  note: '**Joar Vanur:** Lindo nimmt mit Dodo dessen Angebot an ([42]); später verhandelt
+    er mit ihm und gibt ihm ein Amulett zurück ([45], [46]).'
 - target: npcs/lenra
+- target: npcs/liam_velora
 - target: npcs/lobrecht
 - target: npcs/nox
-  note: '**Nox:** Wirkt einen Schutzzauber, der Slix’ Verwandlung blockiert. Lindo
-    Laut diskutiert mit ihm Optionen und legt sich schließlich die Handschellen an.'
+  note: '**Nox:** Gildenmeister, der einen Schutzzauber wirkt, um Lindos Verwandlung
+    und die Kommunikation mit Slix zu blockieren ([29]).'
 - target: npcs/nyruk
 - target: npcs/sandro
 - target: npcs/slix_vasul
-  note: '**Slix:** Dämonische Persönlichkeit in ihm, die nach Dominanz strebt und
-    ihn kontrollieren will. Wird schließlich auf Lindo Lauts Entscheidung hin vernichtet.'
+  note: '**Vasul/Slix/Slix:** Die zentrale, parasitäre Beziehung. Vasul nennt Lindo
+    „Freund“, Slix nennt ihn „Meister“ und droht, die Kontrolle zu übernehmen ([9],
+    [16], [28]). Lindo widersteht, lässt Slix ve…'
 - target: npcs/sys_fizik
-  note: '**Sys Fizik:** Stellt den Verwandlungstrank her, der Lindo Laut in Pedro
-    die Katze verwandelt.'
+  note: '**Sys Fizik:** Goblin, der den Verwandlungstrank herstellt, aus dem Pedro
+    die Katze wird ([31]).'
 - target: npcs/tyrael
-  note: '**Tyrael:** Erkennt die dämonische Präsenz in Lindo Laut und gibt ihm ein
-    Stück vergorenes Fleisch zum Schutz.'
+  note: '**Tyrael:** Der Lich untersucht Lindo und bestätigt, dass zwei Wesen in ihm
+    sind; er gibt ihm ein Stück Fleisch, das Slix vorübergehend stillt ([21]).'
 - target: npcs/velorus
-  note: '**Velorus:** Sein Name wird als Unterschrift unter der Botschaft an Lindo
-    Laut genannt; später erkennt Lindo Laut in ihm Edmunds Sohn.'
-- target: npcs/vitius
-  note: '**Vitius:** Lindo Laut erkennt durch Thoughts Delver, dass der Seraph lügt,
-    und bringt ihn dazu, die kranken Seraphen zu zeigen.'
+  note: '**Belorus/Velorus:** Lindo ist Ziel von Belorus’ Botschaft, konfrontiert
+    Belorus und überzeugt ihn, dass die Gruppe nicht Vasul dient ([26], [27]). Später
+    erfährt er von Edmund, dass der untote Gener…'
+- target: npcs/vityus
+  note: '**Vityus:** Lindo erkennt durch Gedankenlesen, dass der Seraph lügt, und
+    bringt ihn später mit einem Presence-Check dazu, die kranken Seraphen zu zeigen
+    ([41], [42]).'
 - target: npcs/voras
-  note: '**Voras:** Lindo Laut beruhigt den Vampir mit einer emotionalen Rede.'
+  note: '**Voras:** Lindo beruhigt den Vampir und nimmt ihm Schuldgefühle ([32]).'
 sources:
 - id: '1'
   resource: https://www.youtube.com/watch?v=ROCKGeeRUFw
@@ -236,77 +236,101 @@ sources:
 - id: '46'
   resource: https://www.youtube.com/watch?v=EswuiEiZZEc
   last_modified: '2026-09-08T00:00:00Z'
+- id: '47'
+  resource: https://www.youtube.com/watch?v=zXVsTYYR8M4
+  last_modified: '2026-09-22T00:00:00Z'
 ---
 
-# Lindo Laut
-
 ## Überblick
-Lindo Laut, gespielt von Tim, ist ein Feenbarde (Troubadour) mit Highborn-Herkunft und der Erfahrung „Friend to all“. Zu Beginn der Kampagne ist er ein kleiner, geflügelter Musiker mit piepsiger Stimme, der seine Musik zur Unterstützung der Gruppe nutzt. Er ist selbstverliebt, freundlich und neugierig, zeigt aber im Verlauf zunehmend Führungsstärke und moralische Standhaftigkeit. Durch das [Amulett des heiligen Duran](/items/amulett_des_heiligen_duran.md) wird er zum unfreiwilligen Träger der zersplitterten Seelen alter Götter, insbesondere des toten Gottes [Vasul](/deities/vharzul.md). Daraus entwickelt sich eine dämonische Persönlichkeit namens [Slix](/npcs/slix_vasul.md), die nach Kontrolle strebt und Lindo Laut wiederholt zu Opfern drängt. Lindo Laut widersteht, verliert zeitweise seine Magie, lebt unter dem Decknamen „Pedro die Katze“ als Katari, lässt Slix schließlich vernichten und stellt sich in [Abyssalis](/domains/splitterwelt.md) gegen Vasuls Weltenende-Plan. Nach der Rückkehr agiert er wieder als Barde und Diplomat.
+
+Lindo Laut ist ein geflügelter Feenbarde aus einem fernen Königreich, der als Troubadour mit Highborn-Herkunft und der Erfahrung „Friend to all“ beschrieben wird ([1]). Er nutzt Musik, Pfeifen, Gesang und später Geige als Waffe, Inspiration und Heilmittel. Im Verlauf der Kampagne wird aus dem selbstverliebten, aber freundlichen Unterstützer eine der komplexesten Figuren der Gruppe: Er erhält das [Amulett des heiligen Duran](/items/amulett_des_heiligen_duran.md) ([4]), das die zersplitterte Essenz des alten Gottes [Vasul](/deities/vharzul.md) trägt, wird zum unfreiwilligen Gefäß göttlicher und dämonischer Macht, kämpft gegen die innere Präsenz [Slix](/npcs/slix_vasul.md), verliert und gewinnt seine Magie, lebt zeitweise als Katari namens Pedro die Katze und stellt sich in [Abyssalis](/domains/splitterwelt.md) schließlich offen gegen Vasuls Plan, die Welt zu beenden ([38], [39]).
 
 ## Rolle in der Kampagne
-Lindo Laut durchläuft mehrere Rollenwechsel. Zu Beginn ist er der unterstützende Barde, der die Gruppe mit Reden, Liedern und Hope-Punkten stärkt, feindliche Lager als Eule auskundschaftet und mit Portalzaubern Fluchten ermöglicht. Als Träger des Amuletts wird er zur zentralen Figur im Konflikt um die alten Götter und dient als moralischer Kompass, der Versuchungen der Macht wiederholt widersteht. In diplomatischen und kriegerischen Situationen übernimmt er oft die Führung: Er verhandelt mit [Phipps](/npcs/phipps.md), [Hendrik](/npcs/hendrik_heinrich.md), [Harl](/npcs/hal_harl.md), Hal und Belorus, hält Ansprachen und entscheidet taktisch. Nach dem Verlust seiner Magie durch die [Handschellen](/items/handschellen.md) agiert er als magieloser Stratege, der mit Armbrust und Zwergenbomben kämpft, die Gruppe aber weiter mit Worten motiviert. In Abyssalis stellt er sich klar gegen Vasuls Plan und ist bereit, sein Leben zu geben, um das Ende der bekannten Welt zu verhindern.
+
+Lindo Laut durchläuft mehrere deutlich unterscheidbare Rollen.
+
+**Unterstützender Barde:** In den frühen Sessions motiviert er die Gruppe mit Reden, Tänzen, Liedern und Rallye-Würfeln, heilt Verbündete mit inspirierenden Worten und erkundet als Eule feindliche Lager ([1]–[6]). Seine Auftritte, etwa der Regentanz vor dem Ritual ([1]) oder die Motivationsrede vor dem Endkampf ([7]), machen ihn zum emotionalen Taktgeber der Gruppe.
+
+**Träger göttlicher Essenz:** Mit dem Amulett des heiligen [Duran](/deities/heiliger_duran.md) wird Lindo zum Zentrum alter Mächte. Er hört Stimmen, die ihn „Meister“ und „Vollstrecker, der Engel von Durin“ nennen ([9]), widersteht mehrfach den Versuchungen des Amuletts und trägt zeitweise die Seelen mehrerer alter Götter in sich ([10], [11], [14], [15]).
+
+**Moralischer Kompass und Diplomat:** Er verhandelt mit Wachen, Flüchtlingen, [Harl](/npcs/hal_harl.md), Hal, [Hendrik](/npcs/hendrik_heinrich.md) und vielen anderen, liest Gedanken und versucht Gewalt zu vermeiden ([12], [13], [18], [19], [32]). In der Konfrontation mit [Belorus](/npcs/belorus.md) überzeugt er den Widersacher, dass die Gruppe nicht Vasul dient ([27]). Später stellt er sich in Abyssalis weinend und entschlossen gegen Vasul selbst ([38]).
+
+**Magieloser Stratege und erneuter Magier:** Nachdem er Slix durch [Handschellen](/items/handschellen.md) unterdrückt, verliert er vorübergehend Musik und Magie, kämpft mit Armbrust und Bomben und agiert als verunsicherter, aber loyaler Stratege ([30], [31]). Nach der Vernichtung von Slix kehrt seine Magie zurück, und er wird erneut zum Barden, der Verbündete stärkt, Gegner schwächt und Informationen sammelt ([35], [36], [37]).
 
 ## Wichtige Merkmale
+
 ### Fähigkeiten
-Lindo Laut verfügt über ein breites Repertoire bardischer und arkaner Fähigkeiten:
-- **Musikmagie:** Pfeifen, Geigenspiel und inspirierende Worte stärken Verbündete, entfernen Stress, schläfern Gegner ein oder machen sie verwundbar. Er vergibt Rallye-Würfel und Hope-Punkte.
-- **Illusionen und Verwandlung:** Er kann sich in eine Eule oder Hage verwandeln, sich und andere unsichtbar machen und mit Auftreten und Gestalt täuschen.
-- **Portalmagie:** Arcane Door ermöglicht Teleportation, dazu kommen Teleportationsrituale, eine [Pocket Domain](/domains/pocket_domain.md) und der [Ring](/items/ring.md) of Teleportation.
-- **Gedankenmagie:** Telepathie mit Verbündeten und Gegnern, Gedankenlesen (Thoughts Delver, Deep Connection) und Eindringen in fremde Geister.
-- **Offensive Zauber:** Feuerball, Arkane Barrage, Feuerwand, kombinierte Feuerangriffe mit Rotunas, Energiekugeln und eine Gewitterwolke.
-- **Schutz- und Kontrollzauber:** Mystic Tether, Time Lock, Arcane Deflection, Schlafzauber und Bannzauber.
-- **Heilung:** Inspiring Words, das Totem der [Nerash](/deities/nerash.md) und zuletzt widerwillig eine dunkle Kraft aus dem Amulett.
 
-Durch einen Trank oder den Einfluss von Slix kann er eine Dämonengestalt annehmen, in der ihm größere Flügel wachsen und er physisch gefährlicher wird. Später verliert er durch magieunterdrückende Handschellen sämtliche Magie und musikalische Magie, erhält dann aber einen Verwandlungstrank, der ihn in einen Katari namens Pedro die Katze verwandelt. Nach der Befreiung von Slix kehrt seine Magie zurück.
+Lindo Lauts Repertoire ist breit:
 
-### Auftreten
-Lindo Laut ist klein, geflügelt und hat zunächst eine piepsige Stimme. Nach dem Biss in das Herz am Schrein erwachen seine Augen rot leuchtend, seine roten Haare verlieren zuvor ihre Farbe. In der Dämonengestalt wirken seine Flügel größer und dämonisch. Als Pedro die Katze tritt er in Katzengestalt mit Degen auf. Nach dem Verlust der Magie wirkt er leiser und weniger strahlend, fügt sich stärker in die Umgebung ein.
+- **Musikmagie:** Er kann durch Pfeifen, Gesang und Geigenspiel Verbündete stärken, Gegner verwundbar machen, einschläfern oder beruhigen ([1], [5], [24], [35]). Seine Lieder und Reden verleihen Rallye-Würfel oder Hope-Punkte ([3], [5], [7], [12]).
+- **Illusionen und Verwandlung:** Er wechselt Gestalt in eine Eule oder eine Hage, macht sich und andere unsichtbar und nutzt Selbstbeschwörung ([4], [11], [13], [25]).
+- **Portalmagie:** Mit Arkane Tür teleportiert er sich über kurze Distanzen, öffnet Portale zurück zum Schiff oder aus Dungeons und führt entscheidende Teleportationsrituale durch ([4], [8], [15], [22], [39]). Später besitzt er einen [Ring der Teleportation](/items/ring_der_teleportation.md) und eine [Pocket Domain](/domains/pocket_domain.md) ([28], [41]).
+- **Gedankenmagie:** Er kommuniziert telepathisch, liest Gedanken und dringt in fremde Geister ein ([5], [18], [19], [32], [35], [36], [41], [46]).
+- **Offensive Magie:** Dazu zählen Arkane Barrage (29 Schaden gegen einen Dämon, [5]), Feuerball, Feuerwand, Feueratem, Energiekugeln und kombinierte Angriffe mit [Rotunas](/characters/rotunas.md) ([8], [13], [19], [20], [25], [35]).
+- **Schutz und Kontrolle:** Er setzt Mystic Tether ein, um Gegner zu fesseln ([6], [9]), wirkt Arcane Deflection, um Verbündete zu schützen ([20], [44]), und nutzt Time Lock, um Objekte oder Pfeile anzuhalten ([19], [20]).
+- **Heilung:** Inspiring Words heilt Verbündete ([1]), und später verwendet er das Totem der [Nerash](/deities/nerash.md) oder dunkle Kraft aus dem Amulett, um [Cookie](/characters/cookie.md) zu heilen ([11]).
 
-### Wesenszüge
-Lindo Laut ist selbstverliebt, freundlich, neugierig, impulsiv und vorlaut. Er zeigt Mitgefühl, sucht Verwundete, motiviert seine Gefährten und hadert emotional mit innerer Schuld. Er definiert sich stark über seine Musik; deren Verlust trifft ihn tief. In kritischen Momenten beweist er Führungsstärke, diplomatisches Geschick und moralische Standhaftigkeit, widersteht wiederholt den Stimmen im Amulett und stellt den Schutz seiner Freunde über die Verlockung der Macht.
+### Das Amulett und Slix
+
+Das Amulett des heiligen Duran, das Lindo von [Auranil](/npcs/auranil.md) erhält ([4]), enthält zersplitterte Seelen alter Götter, insbesondere Vasuls. Es spricht in Lindos Kopf, fordert Opfer, bietet Macht an und nennt ihn „Meister“ ([9], [10], [13], [14]). Nachdem er am Schrein in ein pochendes Herz beißt, erwacht er mit rot leuchtenden Augen, fühlt sich mächtig, hört aber zunächst keine Stimmen mehr; seine Haare verlieren zuvor ihre Farbe ([14]). Später wird die Präsenz als eigenständige Persönlichkeit namens Slix fassbar, die Lindo in eine Dämonengestalt zwingen und die Kontrolle übernehmen kann ([15], [28], [29]). Slix manifestiert sich zeitweise auch als Diener Slix, der bestätigt, dass Lindo Seelen nach Abyssalis schicken kann ([24], [25]). Die Armringe von [Tyrael](/npcs/tyrael.md) und später die Handschellen unterdrücken diese Macht vorübergehend ([21], [29]). In einem Ritual mit Vasuls Hilfe wird Slix schließlich entfernt und auf Lindos Entscheidung hin vernichtet ([34]).
+
+### Auftreten und Persönlichkeit
+
+Lindo Laut ist klein, geflügelt, hibbelig und hat eine piepsige Stimme ([3]). Er ist selbstverliebt, aber freundlich, neugierig, vorlaut und mitfühlend ([2], [3], [6], [22]). Er zeigt Mitgefühl für Verwundete und getötete Wesen ([3], [7], [43]). Nach dem Anlegen der Handschellen wird er leiser, unsicherer und weniger der „helle Strahl“ der Gruppe ([30]). Er ist emotional verletzlich, weint in entscheidenden Momenten und gesteht, dass ihm die Gruppe wichtiger ist als seine Musik ([33], [38]). Gleichzeitig ist er impulsiv und einfallsreich, etwa wenn er mit Jonglage und Musik Gegner ablenkt ([6], [45]).
+
+### Gestaltwandel
+
+- **Feengestalt:** klein, geflügelt, charmant.
+- **Tiergestalten:** Eule zur Aufklärung, Hage zur Täuschung von Gnollen ([4]).
+- **Dämonengestalt:** Nach einem Trank oder unter Slix’ Einfluss wachsen ihm größere, dämonische Flügel; er zerfetzt einen Ghul und greift später sogar die eigene Gruppe an, bevor er befreit wird ([15], [28]).
+- **Pedro die Katze:** Durch einen Trank von [Sys Fizik](/npcs/sys_fizik.md) verwandelt er sich für etwa drei Monate in einen kleinwüchsigen Katari, legt seine Flügel an und nimmt den Namen Pedro die Katze an, um unerkannt zu bleiben ([31], [36]).
 
 ## Beziehungen und Verbindungen
-- **[Dodo](/characters/dodo.md):** Enge Kampf- und Vertrauensgemeinschaft. Dodo rettet ihn mehrfach vor Kontrollverlust und schenkt ihm die Armbrust. Lindo Laut vertraut Dodo bedingungslos.
-- **[Cookie](/characters/cookie.md):** Emotionale Stütze. Ihre Phiole rettet Lindo Laut nach dem Herz-Biss. Später heilt er sie mit dem Totem der Nerash. Nach ihrem Tod besucht er ihr Grab.
-- **[Rotunas](/characters/rotunas.md):** Magische Zusammenarbeit (kombinierter Feuerangriff). Der Vorfall, bei dem Slix Rotunas’ Arm zerstört, belastet Lindo Laut schwer und treibt ihn dazu, die Handschellen anzulegen.
-- **[Esterossa](/characters/esterossa.md):** Lindo Laut bittet ihn, ihn magisch zu fesseln, falls er die Kontrolle verliert. Nach der Befreiung von Slix stützt Esterossa ihn.
-- **[Lunara Velora](/characters/lunara_velora.md):** Er erhält von ihr einen Samen für einen Portalbaum. In Abyssalis unterstützt er sie, mahnt zur Vorsicht und teilt ihre Trauer um [Liam](/npcs/liam_velora.md).
-- **[Nyrella](/characters/nyrella.md):** Gemeinsame Erkundung; Lindo Laut entschuldigt sich bei ihr für frühere Vorfälle.
-- **[Vasul](/deities/vharzul.md):** Zentrale, parasitäre Beziehung. Die innere Präsenz verleiht Macht, verlangt aber Opfer und droht, die Kontrolle zu übernehmen. Lindo Laut widersteht und stellt sich in Abyssalis gegen Vasul.
-- **Slix:** Dämonische Persönlichkeit in ihm, die nach Dominanz strebt und ihn kontrollieren will. Wird schließlich auf Lindo Lauts Entscheidung hin vernichtet.
-- **[Nox](/npcs/nox.md):** Wirkt einen Schutzzauber, der Slix’ Verwandlung blockiert. Lindo Laut diskutiert mit ihm Optionen und legt sich schließlich die Handschellen an.
-- **[Gorak](/npcs/gorak.md):** Gildenmeister, der Lindo Laut vermisst und ihn als „den Guten“ bezeichnet.
-- **[Tyrael](/npcs/tyrael.md):** Erkennt die dämonische Präsenz in Lindo Laut und gibt ihm ein Stück vergorenes Fleisch zum Schutz.
-- **[Nerash](/deities/nerash.md):** Ihre Befreiung löst die roten Strahlen und Stimmen im Amulett aus.
-- **[Belorus](/npcs/belorus.md):** Fordert Lindo Lauts Auslieferung wegen des Götterfragments. Lindo Laut überzeugt ihn mit einer Rede und dem Buch Vasuls.
-- **[Velorus](/npcs/velorus.md):** Sein Name wird als Unterschrift unter der Botschaft an Lindo Laut genannt; später erkennt Lindo Laut in ihm [Edmunds](/npcs/sir_edmund.md) Sohn.
-- **[Voras](/npcs/voras.md):** Lindo Laut beruhigt den Vampir mit einer emotionalen Rede.
-- **[Sys Fizik](/npcs/sys_fizik.md):** Stellt den Verwandlungstrank her, der Lindo Laut in Pedro die Katze verwandelt.
-- **Harl und Hal:** Verhandlungen mit Gold, Musik und Telepathie; Lindo Laut liest Hals Gedanken und gibt schließlich nach.
-- **[Joar Vanur](/npcs/joar_vanur.md):** Lindo Laut verhandelt mit ihm, gibt ihm das Amulett zurück und nimmt sein Angebot an.
-- **[Vitius](/npcs/vitius.md):** Lindo Laut erkennt durch Thoughts Delver, dass der [Seraph](/npcs/seraph.md) lügt, und bringt ihn dazu, die kranken Seraphen zu zeigen.
+
+- **[Dodo](/characters/dodo.md):** Enge Freundschaft und Kampfpartner. Dodo hält Lindo bei Kontrollverlusten zurück, schenkt ihm eine Armbrust, und Lindo vertraut ihm bedingungslos ([27], [30], [33]). In [42] sprechen beide über den Verlust von Träumen und Sternen.
+- **Cookie:** Emotionale Stütze; ihre Phiole rettet Lindo nach dem Herzbiss ([14]). Lindo heilt sie später mit dunkler Kraft ([11]). Nach ihrem Tod geht er zu ihrem Grab, um sich zu verabschieden ([23]).
+- **Rotunas:** Magische Zusammenarbeit, etwa ein kombinierter Feuerangriff ([19]). Der tragische Vorfall, bei dem Lindo unter Slix’ Einfluss Rotunas’ Arm zerstört, belastet ihn schwer und treibt ihn dazu, die Handschellen anzulegen ([29], [33]).
+- **[Esterossa](/characters/esterossa.md):** Lindo bittet ihn, ihn zu fesseln, falls er die Kontrolle verliert ([29] in späteren Berichten). Nach Esterossas Tod versucht Lindo, dessen Seele mit einem Seelenstein einzufangen; der Stein zerbricht ([39]).
+- **[Nyrella](/characters/nyrella.md):** Lindo entschuldigt sich später für Vorfälle, in denen er sie bedrohte ([30]). Er arbeitet mit ihr bei der Erkundung zusammen ([30]).
+- **[Lunara Velora](/characters/lunara_velora.md):** Lindo gibt ihr einen Samen, aus dem ein Portalbaum wachsen könnte ([26]). Er unterstützt sie in Abyssalis, spricht in Seelenwacht für sie und respektiert ihre Entscheidung, bei [Liam](/npcs/liam_velora.md) zu bleiben ([36], [39], [40]).
+- **Vasul/Slix/Slix:** Die zentrale, parasitäre Beziehung. Vasul nennt Lindo „Freund“, Slix nennt ihn „Meister“ und droht, die Kontrolle zu übernehmen ([9], [16], [28]). Lindo widersteht, lässt Slix vernichten und stellt sich in Abyssalis gegen Vasul ([34], [38]).
+- **Tyrael:** Der Lich untersucht Lindo und bestätigt, dass zwei Wesen in ihm sind; er gibt ihm ein Stück Fleisch, das Slix vorübergehend stillt ([21]).
+- **Nox:** [Gildenmeister](/npcs/nox.md), der einen Schutzzauber wirkt, um Lindos Verwandlung und die Kommunikation mit Slix zu blockieren ([29]).
+- **Sys Fizik:** Goblin, der den Verwandlungstrank herstellt, aus dem Pedro die Katze wird ([31]).
+- **[Voras](/npcs/voras.md):** Lindo beruhigt den Vampir und nimmt ihm Schuldgefühle ([32]).
+- **Belorus/Velorus:** Lindo ist Ziel von Belorus’ Botschaft, konfrontiert Belorus und überzeugt ihn, dass die Gruppe nicht Vasul dient ([26], [27]). Später erfährt er von [Edmund](/npcs/sir_edmund.md), dass der untote General [Velorus](/npcs/velorus.md) dessen Sohn ist ([43]).
+- **[Gunther](/characters/gunther.md):** Lindo ist zunächst misstrauisch, lädt ihn dann aber in die Gruppe ein ([40]).
+- **[Joar Vanur](/npcs/joar_vanur.md):** Lindo nimmt mit Dodo dessen Angebot an ([42]); später verhandelt er mit ihm und gibt ihm ein Amulett zurück ([45], [46]).
+- **Harl und Hal:** Verhandlungen mit Gold und Telepathie ([18], [19]).
+- **Hendrik:** Lindo führt Gespräche mit dem älteren Anführer der Bergnomaden und zeigt Respekt gegenüber den alten Göttern ([13]).
+- **[Vityus](/npcs/vityus.md):** Lindo erkennt durch Gedankenlesen, dass der [Seraph](/npcs/seraph.md) lügt, und bringt ihn später mit einem Presence-Check dazu, die kranken Seraphen zu zeigen ([41], [42]).
 
 ## Chronologie
-In den frühen Sessions (2025-03-26 bis 2025-06-03) agiert Lindo Laut als klassischer Feenbarde. Er hält Motivationsreden, führt einen Regentanz auf, macht das Monster mit einem provozierenden Lied verwundbar und heilt Marco mit „Inspiring Words“. Er spricht als Erster mit Phipps, schleudert einen [Bugbären](/factions/bugbaeren.md) von der Mauer, springt aus Übermut ins Gold und stellt sich [Landra](/npcs/lenra.md) selbstbewusst vor. Er hält eine Motivationsrede, verteilt Rallye-Würfel, wirkt Zauber wie Parallela und Selbstbeschwörung und trägt mit seinem Buch zur Identifizierung von Voras bei. Als Eule erkundet er ein feindliches Lager, erhält von [Auranil](/npcs/auranil.md) das Amulett des heiligen [Duran](/deities/heiliger_duran.md) und öffnet nach mehreren Fehlschlägen ein Portal zurück zum Schiff. Gegen den [Miner-Dämon](/npcs/minen_daemon.md) verhöhnt er ihn mit einem Schmähgesang und verursacht mit einer Arkane Barrage massiven Schaden. Beim Kampf gegen die Kreatur am Schrein zeigt er den [Schattenfinger](/items/schattenfinger.md), beeindruckt Bogenschützen mit Jonglage und erhält den [Devouring Dagger](/items/devouring_dagger.md).
 
-Mit dem Amulett (Sessions 2025-06-10 bis 2025-08-12) beginnen die Stimmen. Lindo Laut erhält ein [Arkanes Prisma](/items/arkanes_prisma.md), findet ein [Fangzahn-Amulett](/items/fangzahn_amulett.md) und spendet der Gruppe einen Rallye-Würfel. Im [Kampf gegen die Pilz-Goblins](/events/kampf_gegen_die_pilz_goblins.md) setzt er feurige Magie ein, befreit Rotunas aus den Ketten des Geistes und führt am Ende das Teleportationsritual durch, das die Gruppe vor der Hexe rettet. Das Amulett des Duran ist korrumpiert und zeigt einen dunkelroten Punkt; die Kultistenstimmen nennen ihn „Meister“ und „Vollstrecker, der Engel von Durin“. In der [Zwischenebene](/domains/zwischenebenen.md) hört er eine grollende Stimme, die ihn zum Schrein des [Kol Meref](/deities/kollmereth.md) führt, widersteht aber dem Machtangebot. Er setzt mehrfach Unsichtbarkeit, Telepathie, Schlafzauber und Mystic Tether ein, heilt Cookie mit einer dunklen Kraft aus dem Amulett und widersteht im Gespräch mit dem Gildemeister den Stimmen, die ihn zur Vernichtung drängen.
+**Frühjahr und Sommer 2025:** Lindo tritt erstmals als Feenbarde in Erscheinung, der den Kessel untersucht, die Beschwörungsformel aus seinem alten Königreich erkennt und mit einem Regentanz motiviert ([1]). Er gewinnt das Vertrauen von [Phipps](/npcs/phipps.md), springt aus Übermut ins Gold, kämpft gegen [Bugbären](/factions/bugbaeren.md) und stellt sich [Landra](/npcs/lenra.md) vor ([2]). Er hält Motivationsreden, verteilt Rallye-Würfel und trägt mit seinem Namensbuch zur Identifizierung von Voras bei ([3]). Er teleportiert sich in einen Baum, erkundet als Eule das feindliche Lager und öffnet nach mehreren Fehlschlägen ein Portal zurück zum Schiff ([4]). Gegen einen [Miner-Dämon](/npcs/minen_daemon.md) setzt er eine telepathische Verbindung und eine schwere Arkane Barrage ein ([5]). Er beeindruckt Bogenschützen mit Jonglage, fesselt eine Kreatur mit Mystic Tether und erhält den [Devouring Dagger](/items/devouring_dagger.md) ([6]). Während einer Rast repariert er seine Lederrüstung, findet in der Brunnengrotte ein [Fangzahn-Amulett](/items/fangzahn_amulett.md) und spendet der Gruppe vor dem Endkampf einen Rallye-Würfel ([7]). Im Dungeon der Hexe verbrennt er [Pilz-Goblins](/npcs/pilz_goblins.md), befreit Rotunas aus Ketten und führt das entscheidende Teleportationsritual aus ([8]).
 
-Am Berg und am Schrein (Sessions 2025-08-20 bis 2025-09-06) weigert sich Lindo Laut, ein Tier zu opfern, wird von der Stimme [Esua](/deities/esua.md) als schwach verspottet, bringt aber am Brunnen ein Blutopfer dar. Er kostet die dickflüssige Flüssigkeit, findet ein pochendes Herz und beißt auf Befehl der Stimmen hinein. Das Herz verschließt seine Atemwege; er wird durch Cookies rote Phiole gerettet, erwacht mit rot leuchtenden Augen und fühlt sich mächtig. Später aktiviert ein Trank seine Dämonengestalt; er zerfetzt einen Ghul, täuscht [Dormak](/npcs/dormak.md), teleportiert sich mit seinem Ring auf den [Thron](/items/thron.md) und lässt [Tyrex](/deities/thyrex.md) die Seelen Esua und [Sintra](/deities/sintra.md) vernichten. Er spricht einen göttlichen Wunsch und belebt alle Gefallenen; danach ist das Amulett leer. Danach kommuniziert er mit Vasul, verbannt einen Ratten-Dämon und öffnet ein Rift, um den Thron zu bergen.
+**Sommer und Herbst 2025 – Amulett und Innere Mächte:** Lindo erhält das Amulett des heiligen Duran, hört die Stimmen der Kultisten, die ihn „Meister“ und „Vollstrecker“ nennen, und spürt, dass das Amulett korrumpiert ist ([9]). Er wird vom Amulett in die [Zwischenebene](/domains/zwischenebenen.md) gezogen und erfährt, dass Nerash eine verlorene Demigöttin ist ([10]). Beim Überfall heilt er Cookie mit dunkler Kraft aus dem Amulett und widersteht den Stimmen, die ihn zur Vernichtung des Gildemeisters drängen ([11]). Er übernimmt zunehmend Führungsaufgaben und verhandelt mit dem [Kuatau](/npcs/kuatau_anfuehrer_priester.md)-Anführer ([12]). Am Berg begegnet er Hendrik und widersteht den Stimmen, die ein Opfer fordern ([13]). Am Schrein opfert er Blut, beißt in ein pochendes Herz und überlebt nur durch Cookies Phiole; er erwacht mit roten Augen und fühlt sich mächtig ([14]). Im Thronsaal verwandelt ihn ein Trank in eine Dämonengestalt, er zerfetzt einen Ghul, und auf dem [Thron](/items/thron.md) vernichtet [Tyrex](/deities/thyrex.md) durch ihn die Seelen [Esua](/npcs/esua.md) und [Sintra](/deities/sintra.md); anschließend spricht Lindo einen göttlichen Wunsch, der alle Gefährten wiederbelebt ([15]). Er kommuniziert mit Vasul, verbannt einen Ratten-Dämon und öffnet ein Rift, um einen Thron zu bergen ([16]).
 
-In der ersten Hälfte des Jahres 2026 (Sessions 2026-01-06 bis 2026-03-24) übernimmt Lindo Laut diplomatische Führung, verhandelt mit Wachen, Harl und Hal, spielt Musik zur Beruhigung der [Flüchtlinge](/factions/fluechtlinge.md) und entscheidet, den Pass zu halten. Er liest Hals Gedanken und erkennt dessen Angst um sein Ansehen. Nachts träumt er von Vasul. Er entdeckt eine grüne Struktur, verbrennt sie, beschwört eine Gewitterwolke und schützt Rotunas mit Arcane Deflection. Tyrael bestätigt, dass zwei Wesen in ihm sind. Er springt für Esterossa ein, umgeht eine Stachelfalle mit Arcane Door und liest in einem Labor alte Texte. Sein inneres Wesen verlangt Blutopfer für [Ohoriaks](/deities/ohoriaks.md) und übernimmt fast die Kontrolle, aber Lindo Laut lenkt den Angriff um. Nach einer Session, in der er abwesend ist (am Grab von Cookie), spürt er eine [Schattenkreatur](/npcs/schattenkreatur.md) auf, nimmt einen [Beschwörungsstab](/items/beschwoerungsstab.md) an sich und spricht mit seinem Diener Slix, der bestätigt, dass er Seelen nach Abyssalis schicken kann. Als Belorus die Auslieferung fordert, teleportiert sich Lindo Laut zur Schlacht, liest Belorus die Leviten, zeigt ihm das Buch Vasuls und überzeugt ihn, dass sein Tod Vasul nur stärken würde. Er verspricht, nie einem Gott nachzugeben. Kurz darauf greift Slix in seiner Dämonengestalt die Gruppe an; Lunara befreit ihn. Mit Handschellen unterdrückt er seine Kräfte und seine Magie erlischt.
+**Herbst und Winter 2025/2026 – Slix, Verhandlungen und Kämpfe:** Lindo fehlt bei einer [Gilde](/factions/gilde_von_ehrenfels.md)-Besprechung, da er anderweitig beschäftigt ist ([17]). Er übernimmt die diplomatische Führung bei den Flüchtlingen, verhandelt mit Harl und misstraut nach dem Alarm der Situation ([18]). Er spielt Geige, liest Hals Gedanken, zahlt zehn Säcke Gold und träumt nachts von Vasul, woraufhin er Hal vor den Untoten warnt ([19]). Er reagiert auf Kristalle, verbrennt eine grüne Struktur, beschwört eine Gewitterwolke und schützt Rotunas mit Arcane Deflection vor dem Golem ([20]). Eine dämonische Präsenz in ihm wird sichtbar; Tyrael untersucht ihn, und Lindo erfährt, dass die Entität mit [Valsor](/deities/vharzul.md)/Basul verbunden ist und aus Abyssalis stammt ([21]). Im Dungeon springt er für den verletzten Esterossa ein, umgeht eine tödliche Stachelfalle mit Arkane Door und kämpft gegen den inneren Drang, Blutopfer zu bringen ([22]). Nach Cookies Tod geht er an ihr Grab, um sich zu verabschieden ([23]). Er spürt eine [Schattenkreatur](/npcs/schattenkreatur.md) auf, erkennt, dass sie ihm nichts Böses will, und spricht mit seinem Diener Slix über Seelen ([24]). Bei den Ermittlungen führt er die Gruppe, wird von Slix gedrängt, seine Macht zu nutzen, und hadert mit dem Verlust seiner Erinnerungen ([25]).
 
-Unter dem Decknamen Pedro die Katze (Sessions 2026-03-03 bis 2026-06-10) verhandelt Lindo Laut das Kopfgeld für [Kronos](/npcs/kronos.md), beauftragt Sys Fizik mit einem Verwandlungstrank und liest in der Bibliothek von [Vorgulta](/deities/vorgul_tar.md). Er nimmt die Gestalt eines Katers an, bleibt aber emotional belastet und hadert mit dem Verlust seiner Musik. Er beruhigt Voras, offenbart seine Ringe und plädiert für Lunaras riskanten Plan. Schließlich lässt er Slix endgültig vernichten und ist danach erschöpft, aber frei.
+**Jahreswechsel 2026 – Belorus-Konfrontation und Handschellen:** Lindo ist Ziel von Belorus’ Botschaft, weil er ein Fragment eines Gottes trägt ([26]). Während der Schlacht teleportiert er sich mit der Macht seines Stabes ins Lager, wird von zwei Blitzen getroffen, liest Belorus die Leviten und überzeugt ihn, dass sein Tod Vasul nur stärken würde; Dodo hält ihn kurz vor einem Kontrollverlust fest ([27]). In seiner Pocket Domain offenbart er, dass er ein [Splitterkalb](/events/splitterkalb.md) mit der Seele von [Chronos](/deities/chronos.md) kontrolliert, und verwandelt sich in eine Dämonenform, aus der Lunara ihn befreit ([28]). Unter Nox’ Schutzzauber stehen ihm Verwandlung und Slix-Kontakt zunächst nicht zur Verfügung; als Slix die Kontrolle übernimmt, gelingt es Lindo, sich die Handschellen anzulegen und seine Kräfte zu unterdrücken ([29]). Er verliert daraufhin Magie und Musik, wird leiser, erhält von Dodo eine Armbrust und zeigt Reue für frühere Vorfälle ([30]). Er verhandelt das Kopfgeld für [Kronos](/npcs/kronos.md) kritisch, liest ein Buch über [Vorgulta](/deities/vorgul_tar.md) und trinkt einen Trank, der ihn in Pedro die Katze verwandelt ([31]). Als Pedro warnt er vor übereilten Handlungen gegen Vampire und beruhigt Voras; er ist emotional stark belastet, weil Slix Rotunas den Arm kostete, und fühlt sich verletzt, weil Dodo ihn nicht vor Sir Eilenweiss verteidigte ([32], [33]).
 
-In Abyssalis (Sessions 2026-07-21 bis 2026-08-04) steht Lindo Laut unter Schock, nachdem Esterossa Vasul getötet hat. Er erkundet ein hypermodernes Labor, teleportiert sich hinter den [Dämon der Hybris](/npcs/daemon_der_hybris.md) und wirkt eine [Schriftrolle](/items/schriftrollen.md). Nach Esterossas Tod versucht er, dessen Seele einzufangen, aber der Seelenstein zerbricht. Er schließt das Portal nach [Breska](/locations/breska.md). Zurück in der Welt hält er eine flammende Rede, gedenkt Esterossas und lädt [Gunther](/characters/gunther.md) ein, sich der Gruppe anzuschließen.
+**Frühjahr 2026 – Befreiung von Slix und Rückkehr:** Während die anderen nach [Ehrenfels](/locations/ehrenfels.md) gehen, bleibt Lindo in der [Casa de la Cookie](/locations/casa_del_cookie.md) zurück und spürt Slix’ panische Angst vor Vasuls Rückkehr. Später lässt er sich von Vasul Slix entfernen und entscheidet sich, Slix endgültig vernichten zu lassen; er ist erschöpft, aber frei ([34]). Er hat wieder Zugang zu bardischen Fähigkeiten, spielt Lieder, liest die Gedanken einer unsichtbaren Kreatur und hilft Dodo bei dessen Befreiung ([35]). Als Pedro kehrt er in Katzengestalt zurück und hat seine Magie wieder; er rät Lunara, die Gruppe als Sklaven oder Untertanen zu präsentieren, und bietet [Relina](/npcs/relina.md) den [Schattenfinger](/items/schattenfinger.md) als Bezahlung an ([36]).
 
-In den jüngsten Sessions (2026-08-04 bis 2026-09-08) erkennt Lindo Laut durch Thoughts Delver, dass Vitius lügt, unterstützt Dodo, reflektiert seine Machtlosigkeit und nimmt das Angebot von Joar Vanur an. Er springt über eine alte Brücke, rettet Joar mit Teleportationsmagie und erkennt, dass Velorus Edmunds Sohn ist. Im Hain des Weltenbaums ist er als Einziger immun gegen die gedankenauslöschende Wirkung, bürgt für Dodo und erhält ein Amulett vom Druiden, der ihn vor der [Dunkelheit](/deities/dunkelheit.md) in ihm warnt. Zuletzt verhandelt er mit Joar, wird verhaftet und nutzt Thought Delver, um die Emotionen von Robertos Gemahlin zu lesen.
+**Sommer 2026 – Abyssalis und der Kampf gegen Vasul:** Lindo kehrt aus [Jalan](/locations/jalan.md) und Seelenwacht zurück, stellt eine Gedankenverbindung zu Vasul her und ruft den Namen [Huludan](/deities/huludan.md), um Kristalle zu aktivieren ([37]). Er widerspricht Vasuls Plan offen, spielt ein Lied, um Vasul zu beruhigen, und weint, als ihm klar wird, dass Liams Seele verloren ist und der Preis für die Rettung das Ende der Welt wäre ([38]). Nach Esterossas Tod versucht er, dessen Seele mit einem Seelenstein einzufangen; der Stein zerbricht. Er erkundet das geheimnisvolle Labor, trinkt einen Trank, um in seine Feenform zu wechseln, teleportiert sich hinter den [Dämon der Hybris](/npcs/daemon_der_hybris.md) und wirkt die [Schriftrolle](/items/schriftrollen.md); danach schließt er das Portal nach [Breska](/locations/breska.md) ([39]). Zurück in Ehrenfels inszeniert er die Ankunft der Helden mit der [Hope Hold Flare](/items/hope_hold_flare.md), hält eine flammende Rede, beklagt den Verlust Esterossas und lädt Gunther ein ([40]).
+
+**Herbst 2026 – Nach dem Abyssalis-Aufenthalt:** Lindo erkennt, dass Vityus lügt, initiiert eine Beratung in der Pocket Dimension und verdient auf dem Marktplatz durch Musik Geld ([41]). Er unterstützt Dodo, zeigt Vityus die kranken Seraphen und reflektiert, wie mächtig Slix im Vergleich zu Nerash war; er nimmt mit Dodo das Angebot von Joar Vanur an ([42]). Er stürzt zunächst von einer Brücke, rettet sich mit den Flügeln, packt die Leiche des Froschwesens in seine Pocket Domain und zeigt Mitgefühl; er rettet Joar und erfährt von Edmund, dass Velorus dessen Sohn ist ([43]). Er pflanzt einen [Teleportbaum-Samen](/items/teleportbaum_samen.md), wirkt Wall of Fire auf einen Schatten-Gnoll und rettet [Lobrecht](/npcs/lobrecht.md) mit Arcane Deflection in die Pocket Domain ([44]). Im Hain ist er als Einziger immun gegen die gedankenauslöschende Wirkung des Weltenbaums, kommuniziert mit diesem und bürgt für Dodo; er erhält ein Amulett vom Druiden und sieht eine Vision von Abyssalis ([45]). Er verhandelt mit Joar, wird verhaftet und im Gefängnis verprügelt; er trauert um die beschlagnahmte Armbrust, ein Geschenk Dodos ([46]). In der letzten dokumentierten Szene lenkt er den Kristallmagier mit einer Melodie ab, macht Dodo unsichtbar, aber sein eigener Angriff wird abgeblockt; sein Verbleib nach dem Kampf bleibt ungewiss ([47]).
 
 ## Offene Fragen
-- Welche langfristigen Folgen die Vernichtung von Slix für Lindo Lauts Magie und Musik hat, ist nicht vollständig geklärt. Zwar verfügt er später wieder über Magie, doch bleibt unklar, ob die Verbindung zur Musik dauerhaft unbeschadet ist.
-- Die genaue Natur der verlorenen Erinnerung, die Slix erwähnt, wird in den Belegen nicht aufgelöst.
-- Wie sich sein Verhältnis zur Musik nach dem Verlust und der Rückkehr seiner Magie entwickelt, ist offen.
+
+- Wo befindet sich Lindo Laut nach dem Kampf gegen den Kristallmagier, und ob er zur Gruppe zurückkehrt, ist ungewiss ([47]).
+- Der Verlust von Erinnerungen, den Slix mehrfach erwähnt, bleibt unaufgeklärt ([25]).
+- Welche langfristigen Spuren die Zeit als Vasuls Gefäß in Lindo hinterlassen hat, ist offen; der Druide warnt ihn vor der [Dunkelheit](/deities/dunkelheit.md) in ihm und rät ihm, den heilenden Pfad zu betreten ([45]).
+- Wie sich sein Verhältnis zu Musik und Magie nach der Trennung von Slix dauerhaft entwickeln wird, ist nicht abschließend geklärt ([30], [34]).
 
 # Belege
+
 [1] Session 2025-03-26 @ 01:27:14 (https://www.youtube.com/watch?v=ROCKGeeRUFw)  
 [2] Session 2025-04-15 @ 00:13:35 (https://www.youtube.com/watch?v=YCpAz_syjaY)  
 [3] Session 2025-04-23 @ 00:15:07 (https://www.youtube.com/watch?v=z3C-bewKqUs)  
@@ -350,6 +374,7 @@ In den jüngsten Sessions (2026-08-04 bis 2026-09-08) erkennt Lindo Laut durch T
 [41] Session 2026-08-04 @ 00:26:21 (https://www.youtube.com/watch?v=qRj2t3wQHfs)  
 [42] Session 2026-08-12 @ 00:21:27 (https://www.youtube.com/watch?v=piUv11DCwDw)  
 [43] Session 2026-08-18 @ 00:22:55 (https://www.youtube.com/watch?v=10swvSz6k7U)  
-[44] Session 2026-08-25 @ 01:16:36 (https://www.youtube.com/watch?v=1Cjj3QV9YA)  
+[44] Session 2026-08-25 @ 01:16:36 (https://www.youtube.com/watch?v=1Cjj3OVqiYA)  
 [45] Session 2026-09-01 @ 01:17:26 (https://www.youtube.com/watch?v=1E3-Nwv4OEs)  
-[46] Session 2026-09-08 @ 01:36:29 (https://www.youtube.com/watch?v=EswuiEiZZEc)
+[46] Session 2026-09-08 @ 01:36:29 (https://www.youtube.com/watch?v=EswuiEiZZEc)  
+[47] Session 2026-09-22 @ 00:22:18 (https://www.youtube.com/watch?v=zXVsTYYR8M4)

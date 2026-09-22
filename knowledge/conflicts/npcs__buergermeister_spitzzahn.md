@@ -2,7 +2,7 @@
 type: Conflict
 title: 'Offener Konflikt: Bürgermeister Spitzzahn'
 description: Widersprüchliche Belege — menschliche Entscheidung nötig.
-timestamp: '2026-09-22T21:19:08Z'
+timestamp: '2026-09-22T22:10:10Z'
 id: CONFLICT_NPC_BUERGERMEISTER_SPITZZAHN
 status: open
 concept: npcs/buergermeister_spitzzahn

@@ -8,7 +8,7 @@ tags:
 timestamp: '2026-09-03T00:00:00Z'
 generated:
   by: pnp_okf/0.2.0
-  at: '2026-09-22T21:02:17Z'
+  at: '2026-09-22T22:10:10Z'
 id: LOC_WILLAUCH
 subtype: Siedlung
 aliases:
@@ -22,7 +22,6 @@ verified:
   by: human:gm
 relationships:
 - target: characters/dante
-- target: characters/dodo
 - target: factions/fluechtlinge
   note: '**Flüchtlinge:** Zwerge aus der Wildnis äußerten, dass man sie in Willauch
     vermutlich nicht aufnehmen würde.'

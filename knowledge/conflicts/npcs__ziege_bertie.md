@@ -2,7 +2,7 @@
 type: Conflict
 title: 'Offener Konflikt: Ziege Bertie'
 description: Widersprüchliche Belege — menschliche Entscheidung nötig.
-timestamp: '2026-09-22T21:19:09Z'
+timestamp: '2026-09-22T22:10:11Z'
 id: CONFLICT_NPC_ZIEGE_BERTIE
 status: open
 concept: npcs/ziege_bertie
