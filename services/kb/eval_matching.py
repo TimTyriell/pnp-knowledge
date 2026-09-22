@@ -395,7 +395,12 @@ def sample_unruled_links(
 # --- E2: generic-noun parent heuristic --------------------------------------
 
 
-def predict_parent(session: str, cache_dir: Path, name_to_concept: dict[str, str], mention_counts: dict[str, int]) -> str | None:
+def predict_parent(
+    session: str,
+    cache_dir: Path,
+    name_to_concept: dict[str, str],
+    mention_counts: dict[str, int],
+) -> str | None:
     session_dir = next((p for p in sorted(cache_dir.iterdir()) if p.name.startswith(session + "_")), None)
     if session_dir is None:
         return None
@@ -472,7 +477,11 @@ def main() -> int:
         rows = sweep(variant, merge, live_names, never_merge, split_names, ctx, THRESHOLDS)
         all_rows[variant] = rows
         print(f"=== {variant} ===")
-        header = f"{'t':>5} {'live@1':>7} {'live@3':>7} {'stale@1':>8} {'stale@3':>8} {'all@1':>6} {'all@3':>6} {'false':>6} {'splitviol':>9}"
+        header = (
+            f"{'t':>5} {'live@1':>7} {'live@3':>7} {'stale@1':>8} "
+            f"{'stale@3':>8} {'all@1':>6} {'all@3':>6} "
+            f"{'false':>6} {'splitviol':>9}"
+        )
         print(header)
         for r in rows:
             print(
