@@ -941,7 +941,8 @@ entities:
 - concept_id: events/evakuierung_des_halblingsdorfs
   type: Event
   canonical_name: Evakuierung des Halblingdorfs
-  aliases: []
+  aliases:
+  - Evakuierung des Halblingdorfs
   mention_count: 1
 - concept_id: events/explosion_der_gnoll_leichen
   type: Event
@@ -951,7 +952,8 @@ entities:
 - concept_id: events/faelschung_der_goblin_notiz
   type: Event
   canonical_name: Fälschung der Goblin-Notizen
-  aliases: []
+  aliases:
+  - Fälschung der Goblin-Notizen
   mention_count: 1
 - concept_id: events/fast_absturz_von_lunara
   type: Event
@@ -1106,7 +1108,8 @@ entities:
 - concept_id: events/heimkehr_nach_willauch_und_belohnung
   type: Event
   canonical_name: Heimkehr nach Willoch und Belohnung
-  aliases: []
+  aliases:
+  - Heimkehr nach Willoch und Belohnung
   mention_count: 1
 - concept_id: events/herstellung_und_entzuendung_der_waffe
   type: Event
@@ -1412,7 +1415,8 @@ entities:
 - concept_id: events/konfrontation_mit_slix_im_garten_von_crowfin_manor
   type: Event
   canonical_name: Konfrontation mit Slicks im Garten von Crowfin Manor
-  aliases: []
+  aliases:
+  - Konfrontation mit Slicks im Garten von Crowfin Manor
   mention_count: 1
 - concept_id: events/konfrontation_vor_der_kapelle
   type: Event
@@ -2500,7 +2504,8 @@ entities:
 - concept_id: items/buch_flueche_und_das_schweigen
   type: Item
   canonical_name: Flüche und das Schweigen
-  aliases: []
+  aliases:
+  - Flüche und das Schweigen
   mention_count: 1
 - concept_id: items/buch_mit_namensliste
   type: Item
@@ -3728,7 +3733,8 @@ entities:
 - concept_id: locations/der_altar_in_den_narben
   type: Location
   canonical_name: Altar in den Narben
-  aliases: []
+  aliases:
+  - Altar in den Narben
   mention_count: 1
 - concept_id: locations/der_altarraum
   type: Location
@@ -3996,7 +4002,8 @@ entities:
 - concept_id: locations/heilige_treppen
   type: Location
   canonical_name: Heilige Treppe
-  aliases: []
+  aliases:
+  - Heilige Treppe
   mention_count: 1
 - concept_id: locations/heiliger_hain
   type: Location
@@ -4082,7 +4089,8 @@ entities:
 - concept_id: locations/kapelle_von_thar_vok
   type: Location
   canonical_name: Kapelle von Tarvok
-  aliases: []
+  aliases:
+  - Kapelle von Tarvok
   mention_count: 1
 - concept_id: locations/katakomben
   type: Location
@@ -4313,7 +4321,8 @@ entities:
 - concept_id: locations/schrein_des_thar_vok_im_keller
   type: Location
   canonical_name: Schrein des Tarvok im Keller
-  aliases: []
+  aliases:
+  - Schrein des Tarvok im Keller
   mention_count: 1
 - concept_id: locations/seelenwacht
   type: Location
@@ -4385,7 +4394,8 @@ entities:
 - concept_id: locations/taverne_in_willauch
   type: Location
   canonical_name: Taverne in Willau
-  aliases: []
+  aliases:
+  - Taverne in Willau
   mention_count: 1
 - concept_id: locations/taverne_kyla_von_sanddorn
   type: Location
@@ -5423,7 +5433,8 @@ entities:
 - concept_id: npcs/minen_daemon
   type: NPC
   canonical_name: Miner-Dämon
-  aliases: []
+  aliases:
+  - Miner-Dämon
   mention_count: 1
 - concept_id: npcs/miyamani
   type: NPC
