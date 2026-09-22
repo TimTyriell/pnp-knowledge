@@ -8,8 +8,8 @@ tags:
 timestamp: '2025-06-17T00:00:00Z'
 generated:
   by: pnp_okf/0.2.0
-  at: '2026-09-22T22:10:09Z'
-id: EVENT_KAMPF_GEGEN_DIE_PILZ_GOBLINS_2025-06-17
+  at: '2026-09-22T23:02:20Z'
+id: EVENT_KAMPF_GEGEN_DIE_PILZ_GOBLINS
 subtype: Kampf
 sources:
 - id: P-12

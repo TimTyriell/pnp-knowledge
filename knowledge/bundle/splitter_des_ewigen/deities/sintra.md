@@ -8,9 +8,11 @@ tags:
 timestamp: '2025-09-02T00:00:00Z'
 generated:
   by: pnp_okf/0.2.0
-  at: '2026-09-22T22:10:08Z'
+  at: '2026-09-22T23:02:20Z'
 id: DEITY_SINTRA
 subtype: Sonstiges
+relationships:
+- target: deities/esua
 sources:
 - id: P-19
   resource: https://www.youtube.com/watch?v=TLZOH7TlGhk
@@ -25,7 +27,7 @@ Sintra war im Amulett präsent und machte sich dort akustisch bemerkbar. Wie auc
 
 ## Vernichtung
 
-Am Ende der Begegnung wurde Sintra gemeinsam mit [Esua](/npcs/esua.md) zerstört. Damit endete ihre Existenz im Amulett.
+Am Ende der Begegnung wurde Sintra gemeinsam mit [Esua](/deities/esua.md) zerstört. Damit endete ihre Existenz im Amulett.
 
 # Belege
 

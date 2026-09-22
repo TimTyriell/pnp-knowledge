@@ -8,9 +8,11 @@ tags:
 timestamp: '2026-09-22T00:00:00Z'
 generated:
   by: pnp_okf/0.2.0
-  at: '2026-09-22T22:10:10Z'
+  at: '2026-09-22T23:02:21Z'
 id: LOC_SALZBACH
 subtype: Siedlung
+relationships:
+- target: npcs/lobrecht
 sources:
 - id: '1'
   resource: https://www.youtube.com/watch?v=piUv11DCwDw

@@ -2,7 +2,7 @@
 type: Conflict
 title: 'Offener Konflikt: Rotunas'
 description: Widersprüchliche Belege — menschliche Entscheidung nötig.
-timestamp: '2026-09-22T22:10:08Z'
+timestamp: '2026-09-22T23:02:20Z'
 id: CONFLICT_CHAR_ROTUNAS
 status: open
 concept: characters/rotunas

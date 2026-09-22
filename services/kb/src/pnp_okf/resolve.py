@@ -828,6 +828,21 @@ def write_registry(entities: list[CanonicalEntity], registry_path: Path) -> None
                 and alias.lower() not in blocked
             ):
                 aliases.append(alias)
+        # Normally the canonical name is redundant with the id it derives. When it
+        # stops deriving it -- a corrected id, a canonical_name: pin -- it is the one
+        # wording nothing else records, and the concept has no reanchor candidate
+        # left: the next run re-mints it under the old spelling (I-004). Gated on the
+        # same bar _reanchor_to_live_alias uses, because an alias below that bar could
+        # never fire the reanchor anyway, and a generic shortening ("Harald" for
+        # npcs/abisalis_harald) would only misroute a mention the split rules exist
+        # to keep apart.
+        slug = e.concept_id.rsplit("/", 1)[-1]
+        if slugify(e.canonical_name) != slug and e.canonical_name not in aliases:
+            ratio = SequenceMatcher(
+                None, _sorted_slug(slugify(e.canonical_name)), _sorted_slug(slug)
+            ).ratio()
+            if ratio >= FUZZY_RATIO and e.canonical_name.lower() not in blocked:
+                aliases.append(e.canonical_name)
         entry = {
             "concept_id": e.concept_id,
             "type": e.type.value,

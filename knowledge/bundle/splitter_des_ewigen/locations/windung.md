@@ -8,9 +8,11 @@ tags:
 timestamp: '2025-07-29T00:00:00Z'
 generated:
   by: pnp_okf/0.2.0
-  at: '2026-09-22T21:02:17Z'
+  at: '2026-09-22T23:02:22Z'
 id: LOC_WINDUNG
 subtype: Siedlung
+relationships:
+- target: npcs/lobrecht
 sources:
 - id: P-16
   resource: https://www.youtube.com/watch?v=XXgO5Ht4Q0A

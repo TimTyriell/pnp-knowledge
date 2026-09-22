@@ -16,7 +16,7 @@ from pnp_okf.models import (
     SessionExtraction,
     SessionTranscript,
 )
-from pnp_okf.resolve import merge_near_duplicates, resolve_entities
+from pnp_okf.resolve import merge_near_duplicates, resolve_entities, write_registry
 from pnp_okf.validate import ValidationReport, validate_bundle
 
 
@@ -179,6 +179,125 @@ def test_reword_of_a_live_concept_reanchors_to_its_existing_id(tmp_path: Path):
     )
     entities = resolve_entities({"s1": extraction}, {"s1": transcript}, registry_path)
     assert [e.concept_id for e in entities] == ["npcs/harald"]
+
+
+# --- canonical-name reanchor (I-004) -----------------------------------------
+
+
+def test_write_registry_records_a_drifted_canonical_name_as_an_alias(tmp_path: Path):
+    """A concept_id that no longer derives from its canonical_name (a
+    corrected id, a canonical_name: pin) leaves the canonical wording with no
+    reanchor candidate of its own -- the next run re-mints it under the old
+    spelling (I-004). write_registry must record it as an alias once it
+    drifts."""
+
+    registry_path = tmp_path / "entity_registry.yaml"
+    entity = _entity(
+        "locations/taverne_in_willauch", "Taverne in Willau", EntityType.LOCATION
+    )
+    write_registry([entity], registry_path)
+    written = yaml.safe_load(registry_path.read_text(encoding="utf-8"))
+    assert written["entities"][0]["aliases"] == ["Taverne in Willau"]
+
+
+def test_write_registry_does_not_alias_a_canonical_name_that_still_derives_its_id(
+    tmp_path: Path,
+):
+    """The uncluttered-file property is load-bearing: a canonical_name that
+    still slugifies to its own concept_id is redundant with the id and must
+    not be duplicated into aliases."""
+
+    registry_path = tmp_path / "entity_registry.yaml"
+    entity = _entity("npcs/hexe", "Hexe", EntityType.NPC)
+    write_registry([entity], registry_path)
+    written = yaml.safe_load(registry_path.read_text(encoding="utf-8"))
+    assert written["entities"][0]["aliases"] == []
+
+
+def test_write_registry_does_not_alias_a_drifted_name_below_the_similarity_bar(
+    tmp_path: Path,
+):
+    """A drifted canonical_name only qualifies when it clears the same fuzzy
+    bar _reanchor_to_live_alias uses. Below the bar it is not a spelling
+    drift of the id but a generic shortening -- "Harald" for the real
+    npcs/abisalis_harald (ratio ~0.57) -- and recording it as an alias would
+    misroute mentions the split rules exist to keep apart."""
+
+    registry_path = tmp_path / "entity_registry.yaml"
+    entity = _entity("npcs/abisalis_harald", "Harald", EntityType.NPC)
+    write_registry([entity], registry_path)
+    written = yaml.safe_load(registry_path.read_text(encoding="utf-8"))
+    assert written["entities"][0]["aliases"] == []
+
+
+def test_alias_block_still_suppresses_a_drifted_canonical_name(tmp_path: Path):
+    registry_path = tmp_path / "entity_registry.yaml"
+    registry_path.write_text(
+        yaml.safe_dump(
+            {
+                "alias_block": {
+                    "locations/taverne_in_willauch": ["Taverne in Willau"]
+                },
+                "entities": [],
+            }
+        ),
+        encoding="utf-8",
+    )
+    entity = _entity(
+        "locations/taverne_in_willauch", "Taverne in Willau", EntityType.LOCATION
+    )
+    write_registry([entity], registry_path)
+    written = yaml.safe_load(registry_path.read_text(encoding="utf-8"))
+    assert written["entities"][0]["aliases"] == []
+
+
+def test_write_registry_then_resolve_reanchors_a_drifted_canonical_name(
+    tmp_path: Path,
+):
+    """The round trip that proves I-004 closed: a registry entry with a
+    drifted canonical_name and empty aliases gets the alias filled in by
+    write_registry, and a fresh resolve_entities run then reanchors a mention
+    of that old wording to the existing id instead of minting a new one."""
+
+    registry_path = tmp_path / "entity_registry.yaml"
+    registry_path.write_text(
+        yaml.safe_dump(
+            {
+                "entities": [
+                    {
+                        "concept_id": "locations/taverne_in_willauch",
+                        "type": "LOCATION",
+                        "canonical_name": "Taverne in Willau",
+                        "aliases": [],
+                    }
+                ]
+            }
+        ),
+        encoding="utf-8",
+    )
+    entity = _entity(
+        "locations/taverne_in_willauch", "Taverne in Willau", EntityType.LOCATION
+    )
+    write_registry([entity], registry_path)
+    written = yaml.safe_load(registry_path.read_text(encoding="utf-8"))
+    assert written["entities"][0]["aliases"] == ["Taverne in Willau"]
+
+    transcript = SessionTranscript(
+        session_id="s1", date="2026-01-01", url="https://x", segments=[]
+    )
+    extraction = SessionExtraction(
+        recap="",
+        entities=[
+            EntityMention(
+                name="Taverne in Willau",
+                type=EntityType.LOCATION,
+                note="n",
+                citation_ts="00:00:00",
+            )
+        ],
+    )
+    resolved = resolve_entities({"s1": extraction}, {"s1": transcript}, registry_path)
+    assert [e.concept_id for e in resolved] == ["locations/taverne_in_willauch"]
 
 
 # --- transcript quality ------------------------------------------------------

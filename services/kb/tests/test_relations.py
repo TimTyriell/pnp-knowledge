@@ -4,7 +4,9 @@
 Deliberately no `kind` field -- see links.py's module-level comment. This
 covers the extraction heuristic (bullet head -> resolved target), the four
 filters (self-edge, non-live target, mirroring, sort-for-determinism), note
-sanitization, and the two new advisory validate.py checks.
+sanitization, and the two new validate.py checks -- bad_relationship_targets
+(promoted into integrity_ok 2026-09-23) and asymmetric_relationships
+(advisory only).
 """
 
 from __future__ import annotations
@@ -293,6 +295,7 @@ def test_bad_relationship_target_is_flagged(tmp_path):
     )
     report = validate_bundle(tmp_path)
     assert report.bad_relationship_targets == [("npcs/hans", "npcs/ghost")]
+    assert not report.integrity_ok  # promoted 2026-09-23: gates the build now
 
 
 def test_asymmetric_relationship_is_flagged(tmp_path):
@@ -305,3 +308,4 @@ def test_asymmetric_relationship_is_flagged(tmp_path):
     report = validate_bundle(tmp_path)
     assert report.asymmetric_relationships == [("npcs/hans", "npcs/greta")]
     assert report.bad_relationship_targets == []
+    assert report.integrity_ok  # advisory only, never gates the build

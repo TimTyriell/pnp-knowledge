@@ -627,6 +627,54 @@ merge:
   schrein des tarvok im keller: locations/schrein_des_thar_vok_im_keller
   kapelle des tavok/varsu: locations/kapelle_des_thar_vok_varsu
 
+  # 2026-09-23 identity pairs, ruled from the extraction cache rather than at
+  # the table -- see docs/architecture/DECISION-identity-pairs.md for the
+  # evidence sheet behind each. The shared pattern: one spelling of the pair
+  # has ZERO attestation across all 69 cached sessions, while every real
+  # mention uses the other and the surviving concept body is that mention
+  # verbatim. That is a concept id that drifted away from its own content
+  # (I-004), not two separate things. Each rule routes the attested wording to
+  # the existing id, which is also what stops the id being abandoned on every
+  # run.
+
+  # "Rabenschaedel" is unattested; the sole source (2025-04-30) is a
+  # Kraehenschaedel note and items/amulett_mit_rabenschaedel.md is that note
+  # word for word.
+  amulett mit krähenschädel: items/amulett_mit_rabenschaedel
+  # "Notiz von Tyrex" is unattested. The one item mention (2026-03-24) names
+  # the sender "Tyrael (auch als Tyrex bezeichnet)", so the fiction itself
+  # bridges the two spellings for THIS NOTE. Deliberately narrow: deities/thyrex
+  # and npcs/tyrael remain distinct beings and the `tyrex:` merge above is
+  # untouched.
+  notiz von tyrael: items/notiz_von_tyrex
+  # "Schwarzhorn" is unattested; both real mentions say "Schwarzohr" and both
+  # describe a companion of Meister Pyrandras. They disagree on the first name,
+  # so both attested forms are routed.
+  orlanius schwarzohr: npcs/orlanius_schwarzhorn
+  # NOT routing the second attested form, "Olanio Schwarzohr": Olanio vs
+  # Orlanius is a different first name, not a spelling slip, and folding
+  # npcs/olanio_schwarzohr in would be an identity claim this evidence does
+  # not carry. Left split, tracked in DECISION-identity-pairs.md.
+  # The NPC half was already settled (`lanra: npcs/lenra` above); this is the
+  # event id catching up. The surviving file's own title reads "Begegnung mit
+  # Lanra" under the `landra` id.
+  begegnung mit lanra: events/begegnung_mit_landra
+  tattrick: npcs/tatrick
+  trilo: npcs/trillo
+  # Zebros/Zebras/Cepros are all mishearings of one weapon. entity_rules
+  # already folds `zebros zorn`, `zebras zorn`, `zebrus zorn` and
+  # `cepros' heiliger streitkolben` into items/streitkolben_von_dodo; these are
+  # two further spellings of the same mace, so they fold there too rather than
+  # into each other. The 2026-08-30 spelling sweep flagged the Cepros gap
+  # explicitly.
+  heiliger streitkolben (aus zebras): items/streitkolben_von_dodo
+  streitkolben von cepros: items/streitkolben_von_dodo
+  # Pair 7 (Armringe vs Ring von Lindo Laut) is deliberately NOT merged: the
+  # 2026-08-29 GM-Klarstellung above already routes `ring von lindo laut` to
+  # items/ring_der_teleportation, and the armringe are glowing bracelets, not
+  # that ring. Folding them would collapse three items into fewer and
+  # contradict a standing ruling.
+
 never_merge:
 # GM ruling 2026-08-30: the mixed-origin refugees are not Roland's Breska
 # group. Their names are near-identical and "Flüchtlinge" is a token-subset

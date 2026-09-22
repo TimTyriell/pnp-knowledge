@@ -90,18 +90,16 @@ class ValidationReport:
         The duplicate-title / cross-type-slug / suspected-duplicate findings are
         fuzzy heuristics a human triages, and a healthy bundle carries some at
         all times -- gating a run on those would fail every run, and a gate that
-        always fails gets switched off. These four mean the corpus is wrong.
+        always fails gets switched off. These five mean the corpus is wrong.
 
-        ``bad_relationship_targets`` and ``asymmetric_relationships`` (the
-        v0.2 ``relationships[]`` checks) are deliberately left out too, but for
-        a different reason than the fuzzy heuristics above: they are new and
-        have never been observed passing on a real bundle. A brand-new check
-        must run clean at least once before it is allowed to fail a build --
-        promote ``bad_relationship_targets`` into this gate once it has (it is
-        the same class of finding as ``dangling_links``, just for a different
-        field). ``asymmetric_relationships`` stays advisory regardless: two
-        independent emits can legitimately observe only one side of a
-        relationship at different times on a partial run.
+        ``bad_relationship_targets`` was promoted into this gate on 2026-09-23:
+        it ran clean (0 findings) across the 162 relationship-bearing concepts
+        of the real bundle, satisfying the house rule that a brand-new check
+        must run clean at least once before it is allowed to fail a build. It
+        is the same class of finding as ``dangling_links``, just for a
+        different field. ``asymmetric_relationships`` stays advisory
+        regardless: two independent emits can legitimately observe only one
+        side of a relationship at different times on a partial run.
         """
 
         return not (
@@ -109,6 +107,7 @@ class ValidationReport:
             or self.dangling_links
             or self.missing_type
             or self.duplicate_ids
+            or self.bad_relationship_targets
         )
 
     def summary(self) -> str:

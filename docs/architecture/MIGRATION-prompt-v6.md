@@ -1,6 +1,6 @@
 # Migration: prompt v5 → v6 bundle regeneration
 
-**Status:** in progress
+**Status:** done (2026-09-23)
 **Trigger:** `b0ba16b` ("Enhance synthesis context with secondary sources and routing directives") bumped `PROMPT_VERSION` `"5"` → `"6"` in `services/kb/src/pnp_okf/prompts.py`.
 **Pre-migration commit:** `b93c0c3` (bundle as built under prompt v5)
 
@@ -80,7 +80,7 @@ a serial loop and the same rebuild took ~4 hours of wall clock instead of
 
 ## Steps
 
-### 1. Regenerate (running)
+### 1. Regenerate
 
 ```bash
 cd services/kb
@@ -93,6 +93,9 @@ Both guards must be released: `--allow-rename` for the >10% missing-id check,
 `--allow-prune` because the orphaned v5 files then exceed the 10% prune
 ceiling. Run detached — this re-synthesises every standard/deep concept, so it
 is the expensive call-heavy path, not a warm re-emit.
+
+**Closed 2026-09-23.** Ran under `deepseek-v4-pro`; committed as `9ca1d77`
+("regenerate bundle under prompt v6 / deepseek-v4-pro").
 
 ### 2. Build the rename map
 
@@ -114,6 +117,11 @@ Titles that appear in only one side are genuine drops/additions, not renames —
 list those separately and eyeball them. A dropped title with real content is
 the failure mode to catch here.
 
+**Closed 2026-09-23.** Rename map built and tracked in
+`docs/audits/2026-09-05-v6-identity-cleanup-handoff.md` (`renamed.tsv`,
+`dropped.tsv`, `added.tsv`, `kept.tsv` — 18 renamed / 524 dropped / 757 added /
+399 kept).
+
 ### 3. Fix dead rules
 
 `entity_rules.yaml` pins target concept ids, and a renamed id silently
@@ -128,6 +136,11 @@ dead target to the new id from the rename map. Do **not** delete a dead rule
 without checking the map — a rule pointing at a renamed concept is still
 wanted, just misaddressed. `test_rules_applied.py` ratchets this
 (`DEAD_RULES_BASELINE`), so the number is measurable before and after.
+
+**Closed 2026-09-23.** Repointed per
+`docs/audits/2026-09-05-v6-identity-cleanup-handoff.md` Task 2 (54 dead →
+repointed or escalated); `0e90b31` additionally pinned the seven mis-heard
+names back to their corrected ids.
 
 ### 4. Re-measure every ratchet
 
@@ -152,6 +165,14 @@ For each failure, decide deliberately — the existing comments in
   *"A baseline that can be raised is an invitation to raise it; this is a fact
   about the file, not a ceiling to negotiate."*
 
+**Closed 2026-09-23**, later than the rest of this migration. Finished on the
+`docs/audits/2026-09-22-rename-guard-override.md` branch, which re-measured
+`check_rename_safety` itself (35/1092 → 28, then 27/1107 on a second run) and
+led to the I-004 fix; several `docs/QUALITY.md` baselines carry 2026-09-22
+dated comments as a result (e.g. `UNCITED_ENTITY_BASELINE` raised 1 → 5,
+diagnosed as detector false positives rather than fixed by widening the
+regex). All hard `0`s held.
+
 ### 5. Re-check name-spelling drift
 
 `canonical_name:` pins a title only; nothing rewrites prose, so a mishearing
@@ -161,8 +182,12 @@ baked into v5 bodies is re-derived fresh under v6 and the drift set changes.
 cd services/kb && python spelling_doctor.py
 ```
 
-Compare against `SPELLING_DOCTOR_TOTAL_BASELINE` (307) and the
-label/target mismatch baselines (14 distinct / 23 occurrences).
+Compare against `SPELLING_DOCTOR_TOTAL_BASELINE` and the
+label/target mismatch baselines (see `docs/QUALITY.md` for current numbers).
+
+**Closed 2026-09-23.** Missing spelling rules added per
+`docs/audits/2026-09-05-v6-identity-cleanup-handoff.md` Task 3
+(Breschka/Cepros/Willau/Willoch/Tavok/Tarvok variants).
 
 ### 6. Re-check duplicates
 
@@ -178,6 +203,11 @@ flagged cross-type collisions worth re-confirming: `factions/sanddorn` vs
 `locations/sanddorn`, `deities/heiliger_duran` vs `npcs/heiliger_duran`, and
 `npcs/der_seraph` vs its three ordinals.
 
+**Closed 2026-09-23.** Duplicate persons merged per
+`docs/audits/2026-09-05-v6-identity-cleanup-handoff.md` Task 5 (cookie/perry,
+canfield_lobrecht/lobrecht/kapitaen, voras, waechter trio, wirt, die_gilde,
+sanddorninseln).
+
 ### 7. Validate the emitted bundle
 
 ```bash
@@ -187,6 +217,11 @@ cd services/kb && pnp validate --bundle ../../knowledge/bundle/splitter_des_ewig
 Broken links should be 0. Note this only checks links that were *written* —
 `test_link_coverage.py` measures the mentions that never became links, which
 is the number that actually moves under a resynthesis.
+
+**Closed 2026-09-23.** `pnp validate` writes no artifact by design, so there
+is no file to point to; the evidence is the guard/validator output recorded
+in `docs/audits/2026-09-22-rename-guard-override.md` (35/1092 abandoned ids
+→ 28 after triage, 27/1107 on a repeat run — the trail that led to I-004).
 
 ### 8. Reconcile the downstream wiki page map
 
@@ -209,6 +244,13 @@ python 01_inventory.py && python 02_extract.py && python 03_generate.py
 Stage 3 is dry-run by default and writes to `proposals/` only. Do not run
 stage 4 as part of this migration.
 
+**Closed 2026-09-23, differently than written above.** No inventory/extract/
+generate dry run was recorded; `pnp-export-data/wiki_pages.toml` was instead
+edited directly (`deities/ezhura` removed, reconciliation comment at lines
+34-37, dated 2026-09-05) per
+`docs/audits/2026-09-05-v6-identity-cleanup-handoff.md` Task 6. It now
+references 5 concept ids, 0 dangling.
+
 ### 9. Commit
 
 Bundle content and the tests that measure it must land together — a commit
@@ -222,6 +264,10 @@ Re-extraction under PROMPT_VERSION 6 renamed N of 868 concept ids.
 Rename map in docs/architecture/MIGRATION-prompt-v6.md.
 Ratchet baselines re-measured; <list any raised, with reason>.
 ```
+
+**Closed 2026-09-23.** Bundle regeneration landed as `9ca1d77`; identity
+cleanup as `b3f1af3` and `0e90b31`; the later ratchet re-measurement and
+I-004 fix as `0c4e7a0` / `9261d79` on this branch.
 
 ## Rollback
 

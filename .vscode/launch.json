@@ -33,22 +33,64 @@
       "request": "launch",
       "python": "${workspaceFolder}/services/kb/.venv/Scripts/python.exe",
       "module": "pnp_okf.cli",
-      "args": ["check", "--transcripts", "${input:transcriptDir}", "--cache", "${input:cacheDir}"],
+      "args": [
+        "check",
+        "--transcripts",
+        "${input:transcriptDir}",
+        "--cache",
+        "${input:cacheDir}"
+      ],
       "cwd": "${workspaceFolder}/services/kb",
-      "env": { "PYTHONPATH": "${workspaceFolder}/services/kb/src" },
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/services/kb/src"
+      },
       "envFile": "${workspaceFolder}/services/kb/.env",
       "console": "integratedTerminal",
       "justMyCode": false
     },
     {
-      "name": "KB: Run pipeline (full)",
+      "name": "KB: Estimate run cost (no writes)",
       "type": "debugpy",
       "request": "launch",
       "python": "${workspaceFolder}/services/kb/.venv/Scripts/python.exe",
       "module": "pnp_okf.cli",
-      "args": ["run", "--transcripts", "${input:transcriptDir}", "--bundle", "${input:bundleDir}", "--cache", "${input:cacheDir}"],
+      "args": [
+        "run",
+        "--transcripts",
+        "${input:transcriptDir}",
+        "--bundle",
+        "${input:bundleDir}",
+        "--cache",
+        "${input:cacheDir}",
+        "--estimate"
+      ],
       "cwd": "${workspaceFolder}/services/kb",
-      "env": { "PYTHONPATH": "${workspaceFolder}/services/kb/src" },
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/services/kb/src"
+      },
+      "envFile": "${workspaceFolder}/services/kb/.env",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "KB: Run pipeline (WRITES the real bundle)",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "${workspaceFolder}/services/kb/.venv/Scripts/python.exe",
+      "module": "pnp_okf.cli",
+      "args": [
+        "run",
+        "--transcripts",
+        "${input:transcriptDir}",
+        "--bundle",
+        "${input:bundleDir}",
+        "--cache",
+        "${input:cacheDir}"
+      ],
+      "cwd": "${workspaceFolder}/services/kb",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/services/kb/src"
+      },
       "envFile": "${workspaceFolder}/services/kb/.env",
       "console": "integratedTerminal",
       "justMyCode": false
@@ -59,9 +101,22 @@
       "request": "launch",
       "python": "${workspaceFolder}/services/kb/.venv/Scripts/python.exe",
       "module": "pnp_okf.cli",
-      "args": ["run", "--transcripts", "${input:transcriptDir}", "--bundle", "${workspaceFolder}/services/kb/.test-bundle", "--cache", "${workspaceFolder}/services/kb/.test-cache", "--limit", "${input:limit}", "--force"],
+      "args": [
+        "run",
+        "--transcripts",
+        "${input:transcriptDir}",
+        "--bundle",
+        "${workspaceFolder}/services/kb/.test-bundle",
+        "--cache",
+        "${workspaceFolder}/services/kb/.test-cache",
+        "--limit",
+        "${input:limit}",
+        "--force"
+      ],
       "cwd": "${workspaceFolder}/services/kb",
-      "env": { "PYTHONPATH": "${workspaceFolder}/services/kb/src" },
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/services/kb/src"
+      },
       "envFile": "${workspaceFolder}/services/kb/.env",
       "console": "integratedTerminal",
       "justMyCode": false
@@ -72,9 +127,57 @@
       "request": "launch",
       "python": "${workspaceFolder}/services/kb/.venv/Scripts/python.exe",
       "module": "pnp_okf.cli",
-      "args": ["validate", "--bundle", "${input:bundleDir}"],
+      "args": [
+        "validate",
+        "--bundle",
+        "${input:bundleDir}"
+      ],
       "cwd": "${workspaceFolder}/services/kb",
-      "env": { "PYTHONPATH": "${workspaceFolder}/services/kb/src" },
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/services/kb/src"
+      },
+      "envFile": "${workspaceFolder}/services/kb/.env",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "KB: Rules doctor (read-only)",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "${workspaceFolder}/services/kb/.venv/Scripts/python.exe",
+      "program": "${workspaceFolder}/services/kb/rules_doctor.py",
+      "cwd": "${workspaceFolder}/services/kb",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/services/kb/src"
+      },
+      "envFile": "${workspaceFolder}/services/kb/.env",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "KB: Spelling doctor (read-only)",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "${workspaceFolder}/services/kb/.venv/Scripts/python.exe",
+      "program": "${workspaceFolder}/services/kb/spelling_doctor.py",
+      "cwd": "${workspaceFolder}/services/kb",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/services/kb/src"
+      },
+      "envFile": "${workspaceFolder}/services/kb/.env",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "KB: Matcher eval (read-only)",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "${workspaceFolder}/services/kb/.venv/Scripts/python.exe",
+      "program": "${workspaceFolder}/services/kb/eval_matching.py",
+      "cwd": "${workspaceFolder}/services/kb",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/services/kb/src"
+      },
       "envFile": "${workspaceFolder}/services/kb/.env",
       "console": "integratedTerminal",
       "justMyCode": false
@@ -86,7 +189,9 @@
       "python": "${workspaceFolder}/services/kb/.venv/Scripts/python.exe",
       "module": "pnp_okf.api",
       "cwd": "${workspaceFolder}/services/kb",
-      "env": { "PYTHONPATH": "${workspaceFolder}/services/kb/src" },
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/services/kb/src"
+      },
       "envFile": "${workspaceFolder}/services/kb/.env",
       "console": "integratedTerminal",
       "justMyCode": false
@@ -112,11 +217,18 @@
   "compounds": [
     {
       "name": "Dashboard: Start Backend + Frontend",
-      "configurations": ["Dashboard: Start Backend", "Dashboard: Start Frontend (Vite dev)"]
+      "configurations": [
+        "Dashboard: Start Backend",
+        "Dashboard: Start Frontend (Vite dev)"
+      ]
     },
     {
       "name": "Dashboard: Full stack (KB API + Backend + Frontend)",
-      "configurations": ["KB: Start API", "Dashboard: Start Backend", "Dashboard: Start Frontend (Vite dev)"]
+      "configurations": [
+        "KB: Start API",
+        "Dashboard: Start Backend",
+        "Dashboard: Start Frontend (Vite dev)"
+      ]
     }
   ]
 }

@@ -2,7 +2,7 @@
 type: Conflict
 title: 'Offener Konflikt: Kenku-Bote'
 description: Widersprüchliche Belege — menschliche Entscheidung nötig.
-timestamp: '2026-09-22T22:10:10Z'
+timestamp: '2026-09-22T23:02:22Z'
 id: CONFLICT_NPC_KENKU_BOTE
 status: open
 concept: npcs/kenku_bote
