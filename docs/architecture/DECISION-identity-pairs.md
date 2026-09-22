@@ -18,6 +18,15 @@ already deleted from disk, kept there with their canonical name and
 aliases). Where one half of a pair still has a file in
 `knowledge/bundle/splitter_des_ewigen/`, its current body is summarized.
 
+> **Ruled 2026-09-23, not at the table.** The campaign owner delegated these
+> calls, so they were made from the extraction-cache evidence below and
+> encoded in `knowledge/entity_rules.yaml` (commit `b9a7d71`). That evidence
+> can show which spellings were *spoken*; it cannot show what they referred
+> to. Every ruling is one line to reverse, with its reasoning beside it in
+> the rules file. Pair 3 is only half-ruled and pair 7 was left alone
+> because a standing GM ruling already covers it -- those two are the ones
+> worth a second look.
+
 **How to fill this in:** for each pair, replace `<same entity | distinct
 entities | fold both into X>` with your ruling and write the reason — a
 sentence is enough, but it's the part that gets kept. If you know something
@@ -62,7 +71,9 @@ are about the *Krähenschädel* — despite living under the `rabenschaedel` id,
 the file contains no mention of a raven at all; it is word-for-word the
 Krähenschädel note above.
 
-**Ruling:** <same entity | distinct entities | fold both into X>
+**Ruling:** same entity
+**Reason:** "Rabenschaedel" has no attestation in any of the 69 cached sessions; the one real source (2025-04-30) is a Kraehenschaedel note and items/amulett_mit_rabenschaedel.md is that note word for word. One amulet whose id drifted from its own content.
+**Rule added:** `amulett mit krähenschädel: items/amulett_mit_rabenschaedel`
 **Reason:**
 
 ---
@@ -140,7 +151,9 @@ Tyrael" mention below.
 title and body are entirely the Tyrael note (links to `/npcs/tyrael.md`) —
 nothing about the amulet-voice Tyrex survives on it.
 
-**Ruling:** <same entity | distinct entities | fold both into X>
+**Ruling:** same entity, for this item only
+**Reason:** "Notiz von Tyrex" is unattested. The sole item mention (2026-03-24) names the sender "Tyrael (auch als Tyrex bezeichnet)", so the fiction itself bridges the two spellings for this note. Deliberately narrow: deities/thyrex and npcs/tyrael remain distinct beings and the existing `tyrex:` merge is untouched. This rules on the note, not on who wrote it.
+**Rule added:** `notiz von tyrael: items/notiz_von_tyrex`
 **Reason:**
 
 ---
@@ -183,7 +196,9 @@ kind of read this document is not supposed to make on its own.
 file's title and body are entirely the "Orlanius Schwarzohr" note from
 2026-08-04 (the "Ohr" spelling) — no "Schwarzhorn" content survives on it.
 
-**Ruling:** <same entity | distinct entities | fold both into X>
+**Ruling:** same entity (one form only)
+**Reason:** "Schwarzhorn" is unattested; both real mentions say "Schwarzohr" and both describe a companion of Meister Pyrandras. **But only "Orlanius Schwarzohr" is routed.** The second attested form, "Olanio Schwarzohr", is left split: Olanio vs Orlanius is a different first name, not a spelling slip, and folding npcs/olanio_schwarzohr in would be an identity claim this evidence does not carry. That merge was made, measured, and then withdrawn -- it cleared the rename guard one id sooner but created a new abandonment as a side effect of the guess.
+**Rule added:** `orlanius schwarzohr: npcs/orlanius_schwarzhorn` -- and deliberately NOT `olanio schwarzohr`
 **Reason:**
 
 ---
@@ -236,7 +251,9 @@ or two.
 file's title is "Begegnung mit Lanra" and its body is the Event note quoted
 above (using "Landra" in running prose, linked to `npcs/lenra`).
 
-**Ruling:** <same entity | distinct entities | fold both into X>
+**Ruling:** same entity
+**Reason:** The event spelling "Landra" is unattested; the sole Event-type mention is "Begegnung mit Lanra" and the surviving file's own title reads that way under the `landra` id. The NPC half was already settled by the existing `lanra: npcs/lenra` merge, so only the event id needed to catch up.
+**Rule added:** `begegnung mit lanra: events/begegnung_mit_landra`
 **Reason:**
 
 ---
@@ -272,7 +289,9 @@ No mention under the single-t spelling was found anywhere in the cache.
 **What the surviving concept currently claims:** the `tatrick` file's title
 and full body are this same Tattrick (double-t) note verbatim.
 
-**Ruling:** <same entity | distinct entities | fold both into X>
+**Ruling:** same entity
+**Reason:** "Tatrick" unattested, "Tattrick" attested once (2026-06-16), surviving file is that note verbatim. Clean id drift.
+**Rule added:** `tattrick: npcs/tatrick`
 **Reason:**
 
 ---
@@ -316,7 +335,9 @@ No mention under the double-l spelling was found anywhere in the cache.
 **What the surviving concept currently claims:** the `trillo` file's title
 and body are this same "Trilo" NPC note verbatim.
 
-**Ruling:** <same entity | distinct entities | fold both into X>
+**Ruling:** same entity
+**Reason:** "Trillo" unattested, "Trilo" attested twice in one session, surviving file is that note verbatim. Clean id drift.
+**Rule added:** `trilo: npcs/trillo`
 **Reason:**
 
 ---
@@ -365,7 +386,9 @@ objects" reading, but is not conclusive on its own.
 file's title and body are the "Armringe" (plural) note from 2026-03-03,
 matching its id.
 
-**Ruling:** <same entity | distinct entities | fold both into X>
+**Ruling:** distinct entities -- and already ruled
+**Reason:** Both spellings are attested once each and describe materially different objects: glowing bracelets versus a ring that teleports. Decisively, `entity_rules.yaml` already carries a 2026-08-29 GM-Klarstellung routing `ring von lindo laut` to items/ring_der_teleportation, with the ring Dodo destroyed noted as a third unrelated item. Merging this pair would collapse three items into fewer and contradict a standing ruling.
+**Rule added:** none -- no new rule. The existing GM ruling stands.
 **Reason:**
 
 ---
@@ -428,7 +451,9 @@ aus_zebros` file's body describes Dodo's glowing holy mace piercing a magic
 shield and killing the Schreckensritter, and already links the word
 "Streitkolben" to `/items/streitkolben_von_dodo.md`.
 
-**Ruling:** <same entity | distinct entities | fold both into X>
+**Ruling:** fold both into `items/streitkolben_von_dodo`
+**Reason:** "aus Zebros" is unattested; "aus Zebras" is attested once (2026-01-13, Dodo's glowing mace). entity_rules already folds `zebros zorn`, `zebras zorn`, `zebrus zorn` and `cepros' heiliger streitkolben` into items/streitkolben_von_dodo, and QUALITY.md records items/zebras_zorn as the same weapon. This is a further mishearing of that one mace, so it folds there rather than into its pair.
+**Rule added:** `heiliger streitkolben (aus zebras): items/streitkolben_von_dodo`
 **Reason:**
 
 ---
@@ -482,5 +507,7 @@ fourth ("Zebros"/"Cepros", in the "von X" phrasing rather than "X Zorn").
 zebros` file's body is the Cepros-battle note quoted above, and already
 links "Streitkolben" to `/items/streitkolben_von_dodo.md`.
 
-**Ruling:** <same entity | distinct entities | fold both into X>
+**Ruling:** fold both into `items/streitkolben_von_dodo`
+**Reason:** Same weapon family as pair 8. "von Zebros" is unattested, "von Cepros" attested once (2026-03-10). The 2026-08-30 spelling sweep flagged this exact gap -- Cepros never reached the registry as an alias of the mace. The existing bare `cepros:` key covers Cepros-as-kingdom, not this weapon phrase.
+**Rule added:** `streitkolben von cepros: items/streitkolben_von_dodo`
 **Reason:**
