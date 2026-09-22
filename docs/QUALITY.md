@@ -31,15 +31,15 @@ counts are dominated by known, triaged false positives:
   62 hits on its own. Those are triaged by hand in
   `docs/audits/2026-08-30-spelling-sweep.md`. The noise floor is watched so that
   a *new* mishearing cannot hide inside it.
-- **Uncited entity concepts (1).** The last remaining one is a false positive of
-  the citation regex, diagnosed and then deliberately left in place rather than
-  fixed by loosening the regex — see
-  [The uncited 1 is a detector false positive](#the-uncited-1-is-a-detector-false-positive).
+- **Uncited entity concepts (5).** All five are false positives of the citation
+  regex, individually verified and deliberately left in place rather than fixed
+  by loosening the regex — see
+  [The uncited 5 are detector false positives](#the-uncited-5-are-detector-false-positives).
 
 Two more are non-zero because the underlying behaviour is *designed*:
 `important: true` is documented as the escape hatch that forces a deep-tier
-writeup onto a low-mention but pivotal entity, so six such entries are the
-feature working, not six defects. And 15 dead `entity_rules.yaml` entries are
+writeup onto a low-mention but pivotal entity, so 16 such entries are the
+feature working, not 16 defects. And 15 dead `entity_rules.yaml` entries are
 rules whose target dropped out of a non-deterministic re-extraction — real debt,
 tracked as debt, repaid by re-running or editing the rules, never by raising the
 number.
@@ -107,12 +107,23 @@ comment beside it.
 | --- | --- | --- |
 | Plain-text mentions not linked | 1912 | `services/kb/tests/test_link_coverage.py:83` |
 | Raw spelling-doctor hits | 307 | `services/kb/tests/test_spelling_sweep.py:163` |
-| Distinct label/target link mismatches | 14 | `services/kb/tests/test_spelling_sweep.py:219` |
-| Occurrences of those mismatches | 23 | `services/kb/tests/test_spelling_sweep.py:220` |
+| Distinct label/target link mismatches | 42 | `services/kb/tests/test_spelling_sweep.py:232` |
+| Occurrences of those mismatches | 56 | `services/kb/tests/test_spelling_sweep.py:240` |
 | Dead `entity_rules.yaml` entries | 15 | `services/kb/tests/test_rules_applied.py:53` |
 | German article-variant duplicate slugs | 5 | `services/kb/tests/test_rules_applied.py:234` |
-| Deep-tier writeups built from <=1 mention | 6 | `services/kb/tests/test_bundle_invariants.py:264` |
-| Entity concepts with no citation line | 1 | `services/kb/tests/test_bundle_invariants.py:179` |
+| Deep-tier writeups built from <=1 mention | 16 | `services/kb/tests/test_bundle_invariants.py:293` |
+| Entity concepts with no citation line | 5 | `services/kb/tests/test_bundle_invariants.py:195` |
+| Identity churn: registry ids a fresh resolve abandons | 23 | `services/kb/tests/test_identity_churn.py:106` |
+
+The churn row is a different kind of measurement from the rest of this table:
+it counts how many previously-known `concept_id`s a fresh `resolve_entities`
+run, over the *same* cached extractions and the *same* registry, fails to
+reproduce — identity stability, not prose quality. It is the quantity
+`check_rename_safety` (`emit.py`) gates `--allow-rename` on, so this baseline
+is a standing rehearsal of that guard. Tightened 35 → 23 by the I-004 fix
+(`entity_registry.yaml` write path now keeps `canonical_name` in a concept's
+aliases even after its id stops deriving from it, giving a drifted id a
+wording to reanchor against).
 
 ### Floors — must not drop
 
@@ -186,13 +197,13 @@ wrong.
 UNLINKED_MENTION_BASELINE = 1912
 ```
 
-## The uncited 1 is a detector false positive
+## The uncited 5 are detector false positives
 
-The other half of the same discipline: the last remaining defect was
-investigated until it was understood, and then *not* fixed, because the only
+The other half of the same discipline: the remaining defects were each
+investigated until understood, and then *not* fixed, because the only
 available fix was to blunt the measurement.
 
-`services/kb/tests/test_bundle_invariants.py:156-179`:
+`services/kb/tests/test_bundle_invariants.py:155-195`:
 
 ```python
 # Entity concepts with zero recognizable citation line in any of the four
@@ -218,7 +229,24 @@ available fix was to blunt the measurement.
 # a false positive of the measurement, not a defect in the bundle. Left at 1
 # deliberately rather than widening the regex: loosening a detector to reach
 # zero would also blind it to genuinely uncited pages.
-UNCITED_ENTITY_BASELINE = 1
+#
+# 2026-09-22 OKF v0.2 re-emit: RAISED 1 -> 5. Every one of the five is a
+# detector false positive of the same kind as the saris_patron case above,
+# verified individually: each carries a '# Belege' section and between 2 and
+# 14 timestamped YouTube source URLs in its body. Nothing lost a citation.
+# What changed is the number of citation *line formats* in the corpus after
+# the v0.2 resynthesis -- e.g. factions/heraxles_widerstandsgruppe writes
+# '[P-52] Daggerheart-Kampagne, Session vom 04.06.2026, 01:09:10', which the
+# regex misses only because it demands 'Session' immediately after the
+# bracket, and npcs/kerl's backfilled Belege writes '- Session <date> @ <ts>:
+# <url>' with no [n] marker at all.
+#
+# Raised rather than fixed by widening _CITATION_LINE_RE, on this file's own
+# stated precedent: loosening the detector to reach a number would also blind
+# it to genuinely uncited pages. The real repair is to make emit's Belege
+# backfill and this regex agree on one format; until then the honest record
+# is a measured 5 with the reason written down.
+UNCITED_ENTITY_BASELINE = 5
 ```
 
 ## Running them
@@ -257,7 +285,7 @@ Honest limits, so the numbers are not read as more than they are.
   semantics.
 - **Recall.** There is no measurement of what extraction missed. Every count is
   taken over what was extracted; a character never mentioned in any extraction
-  pass is invisible to all fifteen numbers.
+  pass is invisible to all sixteen numbers.
 - **The composition of the noise floor.** The spelling ratchet notices that the
   total grew; it does not say which hit is new. Identifying that is a manual
   triage step by design (`spelling_doctor.py` plus the audit document).
