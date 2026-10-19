@@ -7,7 +7,9 @@ from pathlib import Path
 
 import pytest
 from fastapi.testclient import TestClient
-from pnp_okf.api import create_app
+from pnp_okf.api import _CONCEPT_PATH_RE, create_app
+
+_BUNDLE = Path(__file__).resolve().parents[3] / "knowledge" / "bundle" / "splitter_des_ewigen"
 
 
 def _git(repo: Path, *args: str) -> None:
@@ -147,3 +149,31 @@ def test_conflicts_queue(client: TestClient):
 
 def test_unknown_id_404(client: TestClient):
     assert client.get("/concepts/NPC_NIEMAND").status_code == 404
+
+
+def test_traversal_in_concept_path_is_rejected(client: TestClient):
+    for bad in ("../README", "npcs/../../x", "npcs/..%2F..%2Fx"):
+        r = client.get(f"/concepts/{bad}")
+        assert r.status_code in (400, 404), (bad, r.status_code)
+
+
+def test_ref_starting_with_dash_is_rejected(client: TestClient):
+    assert client.get("/changes", params={"since": "--output=x"}).status_code == 400
+    assert client.get("/concepts/npcs/hexe", params={"as_of": "-p"}).status_code == 400
+    assert client.get("/concepts", params={"as_of": "s01..s02"}).status_code == 400
+
+
+def test_valid_refs_still_work(client: TestClient):
+    assert client.get("/concepts/npcs/hexe", params={"as_of": "s01"}).status_code == 200
+    assert client.get("/changes", params={"since": "s01", "until": "HEAD"}).status_code == 200
+
+
+@pytest.mark.skipif(not _BUNDLE.exists(), reason="no bundle checked out")
+def test_every_real_concept_path_passes_the_validator():
+    bad = [
+        p.relative_to(_BUNDLE).with_suffix("").as_posix()
+        for p in _BUNDLE.rglob("*.md")
+        if p.name not in ("index.md", "log.md")
+        and not _CONCEPT_PATH_RE.match(p.relative_to(_BUNDLE).with_suffix("").as_posix())
+    ]
+    assert not bad, bad[:10]

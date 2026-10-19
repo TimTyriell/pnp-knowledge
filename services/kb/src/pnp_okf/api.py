@@ -26,6 +26,29 @@ from pnp_okf.okf import split_document
 
 _RESERVED = {"index.md", "log.md"}
 _VIDEO_ID_RE = re.compile(r"(?:v=|youtu\.be/)([A-Za-z0-9_-]{6,})")
+# A concept path is "<dir>/<slug>": one directory, one file stem, nothing that
+# can climb out of the bundle. Slugs are slugify() output (okf.py) plus the
+# session dates ("sessions/2026-01-20"), so this is the whole alphabet.
+_CONCEPT_PATH_RE = re.compile(r"^[a-z]+/[a-z0-9][a-z0-9_-]*$")
+# A git ref as a user may pass it: a tag (s26), a branch, a sha, HEAD~3. It
+# must never start with "-" -- git would read it as an option (git diff
+# --output=<file> writes a file). ".." is rejected because callers build the
+# range themselves.
+_REF_RE = re.compile(r"^(?!-)[A-Za-z0-9._/~^-]{1,100}$")
+
+
+def _check_concept_path(cid: str) -> str:
+    if not _CONCEPT_PATH_RE.match(cid):
+        raise HTTPException(status_code=400, detail=f"Invalid concept path {cid!r}")
+    return cid
+
+
+def _check_ref(ref: str | None) -> str | None:
+    if ref is None:
+        return None
+    if ".." in ref or not _REF_RE.match(ref):
+        raise HTTPException(status_code=400, detail=f"Invalid git ref {ref!r}")
+    return ref
 
 
 # --- git plumbing ------------------------------------------------------------
@@ -74,6 +97,7 @@ class BundleReader:
     def concept_paths(self, ref: str | None) -> list[str]:
         """Concept ids (bundle-relative, no .md) at ``ref`` or the worktree."""
 
+        ref = _check_ref(ref)
         if ref is None:
             files = [
                 p.relative_to(self.bundle_dir).as_posix()
@@ -99,10 +123,14 @@ class BundleReader:
     def read(self, concept_path: str, ref: str | None) -> tuple[dict, str]:
         """Frontmatter + body for one concept id, or raise 404."""
 
+        concept_path = _check_concept_path(concept_path)
+        ref = _check_ref(ref)
         rel = f"{self.rel_bundle}/{concept_path}.md"
         if ref is None:
             path = self.repo_root / rel
             if not path.is_file():
+                raise HTTPException(status_code=404, detail=f"No concept {concept_path}")
+            if not path.resolve().is_relative_to(self.bundle_dir):
                 raise HTTPException(status_code=404, detail=f"No concept {concept_path}")
             text = path.read_text(encoding="utf-8")
         else:
@@ -144,7 +172,7 @@ class BundleReader:
         """Accept a concept path (npcs/hexe) or a typed id (NPC_HEXE)."""
 
         if "/" in cid:
-            return cid
+            return _check_concept_path(cid)
         resolved = self.id_index(ref).get(cid)
         if resolved is None:
             raise HTTPException(status_code=404, detail=f"Unknown id {cid}")
@@ -155,6 +183,8 @@ class BundleReader:
     def changes(
         self, since: str, until: str = "HEAD", include_diff: bool = False
     ) -> list[dict]:
+        since = _check_ref(since)
+        until = _check_ref(until)
         out = _git(
             self.repo_root,
             "diff", "--name-status", f"{since}..{until}", "--", self.rel_bundle,
