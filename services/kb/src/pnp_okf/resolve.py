@@ -539,6 +539,18 @@ def _load_alias_blocks(registry_path: Path) -> dict[str, set[str]]:
     return out
 
 
+def load_autolink_block(registry_path: Path) -> set[str]:
+    """``autolink_block:`` -- names never autolinked (lowercased).
+
+    Common nouns that are also entity names ("Krieg" the PC vs. "Krieg" the
+    war) mislink every prose occurrence. Explicit links the model wrote are
+    unaffected; this only stops the deterministic first-occurrence linker.
+    """
+
+    data = _registry_data(registry_path)
+    return {str(n).strip().lower() for n in (data.get("autolink_block") or [])} - {""}
+
+
 def load_spellings(registry_path: Path) -> dict[str, str]:
     """``spelling:`` — mishearing -> canon text, applied to synthesized
     prose (see ``links.py::apply_spellings``).
