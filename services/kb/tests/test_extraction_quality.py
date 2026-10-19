@@ -38,7 +38,7 @@ from pathlib import Path
 
 import pytest
 import yaml
-from pnp_okf.config import DeepSeekConfig
+from pnp_okf.config import DeepSeekConfig, default_transcript_dir
 from pnp_okf.extract import load_cached_extraction
 from pnp_okf.ingest import load_transcripts
 from pnp_okf.okf import slugify
@@ -49,7 +49,7 @@ GOLD_DIR = Path(__file__).resolve().parent / "data" / "gold"
 CACHE_DIR = Path(
     os.environ.get("PNP_CACHE_DIR") or Path(__file__).resolve().parents[1] / ".cache"
 )
-TRANSCRIPT_DIR = Path(__file__).resolve().parents[4] / "pnp-crawl" / "transcripts_final"
+TRANSCRIPT_DIR = default_transcript_dir()
 
 GOLD_FILES = sorted(GOLD_DIR.glob("*.yaml")) if GOLD_DIR.is_dir() else []
 
