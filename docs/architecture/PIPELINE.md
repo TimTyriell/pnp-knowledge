@@ -168,21 +168,21 @@ ignored all 18 `never_merge:` groups.
 
 ```python
 # extract.py -- the key
-key  = sha256(PROMPT_VERSION + cfg.model + session_id + dialogue)[:16]
+key  = sha256(EXTRACT_PROMPT_VERSION + cfg.model + session_id + dialogue)[:16]
 # extract.py -- the path is now content-addressed (changed 2026-09-07)
 path = cache_dir / "extract" / session_id / f"{key}.json"
 ```
 
 ```python
 # synthesize.py:216 — the WHOLE serialized entity
-key = sha256({v: PROMPT_VERSION, model, entity.model_dump(), tier,
+key = sha256({v: SYNTH_PROMPT_VERSION, model, entity.model_dump(), tier,
               sha(sources), sha(excerpts), sha(secondary)})
 ```
 
 **Four consequences you must internalise:**
 
-1. ~~The key is versioned; the path is not.~~ **Fixed 2026-09-07.** Each key now lives at its own path, so a `PROMPT_VERSION` or model change no longer overwrites the previous entry and reverting one is free. ⚠ `.cache/` is gitignored — a machine holding a pre-2026-09-07 flat cache must migrate it (read each blob's `_key`, move to `<session>/<key>.json`) or it re-extracts at full price.
-2. **The prompt *text* is not in the key**, only its version number. Change prompt content without bumping `PROMPT_VERSION` and the cache silently serves stale results.
+1. ~~The key is versioned; the path is not.~~ **Fixed 2026-09-07.** Each key now lives at its own path, so a `*_PROMPT_VERSION` or model change no longer overwrites the previous entry and reverting one is free. ⚠ `.cache/` is gitignored — a machine holding a pre-2026-09-07 flat cache must migrate it (read each blob's `_key`, move to `<session>/<key>.json`) or it re-extracts at full price.
+2. **The prompt *text* is not in the key**, only its version number. Change prompt content without bumping its version (`EXTRACT_PROMPT_VERSION` or `SYNTH_PROMPT_VERSION`) and the cache silently serves stale results. This is now caught by `tests/test_prompt_pins.py`, which pins a hash of each prompt's text and schema to its version. Its failure message is the trap the test exists for.
 3. **Changing `DEEPSEEK_MODEL` costs a full rebuild**, same as a prompt bump. Settle the model before starting one.
 4. **Synthesis re-runs on any change to the entity** — a new mention note, a reordered alias, an `important:` flip, a tier change.
 
@@ -402,7 +402,8 @@ time, it does not close the gap.
 | If you are about to… | Read first |
 |---|---|
 | touch naming, merging, splitting | §4, §5 |
-| bump `PROMPT_VERSION` or change a prompt | §6 — this is a **budgeted event**, ~$6.5 |
+| bump `EXTRACT_PROMPT_VERSION` or change an extraction prompt | §6 — this is a **budgeted event**, ~$6.5 (re-extraction + id churn) |
+| change a synthesis prompt (`SYNTH_*`) | §6 — bump `SYNTH_PROMPT_VERSION` only: re-synthesis, no re-extraction, no id churn |
 | change the model | §6 — same cost as a prompt bump |
 | reorder or add an emit step | §7 |
 | add a quality check | §9, §10 — and decide hard-0 vs ratchet *by measuring* |

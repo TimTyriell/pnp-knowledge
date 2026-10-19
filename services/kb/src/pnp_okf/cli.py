@@ -88,7 +88,7 @@ def _extract_all(
     Each session is an independent HTTP round trip, so this was serial for no
     reason. It stayed invisible because extraction is cached per session and
     normally only the one or two new sessions miss. A run that invalidates the
-    whole cache -- a PROMPT_VERSION bump or a model change, both of which are
+    whole cache -- an EXTRACT_PROMPT_VERSION bump or a model change, both of which are
     in the cache key -- turns that into 66 sequential calls: ~4 hours at ~3.9
     min each, against ~30 min at 8 workers.
 

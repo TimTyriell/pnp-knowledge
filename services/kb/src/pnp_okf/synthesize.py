@@ -17,8 +17,8 @@ from pnp_okf.config import DeepSeekConfig
 from pnp_okf.llm_client import EmptyModelOutput, build_client, is_retryable
 from pnp_okf.models import CanonicalEntity
 from pnp_okf.prompts import (
-    PROMPT_VERSION,
     SYNTH_EXCERPTS_TEMPLATE,
+    SYNTH_PROMPT_VERSION,
     SYNTH_SECONDARY_TEMPLATE,
     SYNTH_SOURCES_TEMPLATE,
     SYNTH_SYSTEM,
@@ -233,7 +233,7 @@ def _cache_key(
 ) -> str:
     payload = json.dumps(
         {
-            "v": PROMPT_VERSION,
+            "v": SYNTH_PROMPT_VERSION,
             "model": cfg.model,
             "entity": entity.model_dump(mode="json"),
             "tier": entity.tier,
