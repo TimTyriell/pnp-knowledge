@@ -221,7 +221,13 @@ def test_sources_fall_back_to_positional_when_labels_is_none(tmp_path: Path):
     # episodes.id_for_url per mention to paper over the gap.
     fm = _frontmatter(tmp_path, labels=None)
     assert fm["sources"] == [
-        {"id": "1", "resource": "http://x", "last_modified": "2026-01-01T00:00:00Z"}
+        {
+            "id": "1",
+            "resource": "http://x",
+            "at": "00:01:00",
+            "url_at": "http://x?t=60s",
+            "last_modified": "2026-01-01T00:00:00Z",
+        }
     ]
 
 
@@ -240,6 +246,42 @@ def test_sources_last_modified_omitted_when_mention_date_empty(tmp_path: Path):
     doc = (tmp_path / "npcs" / "testo.md").read_text(encoding="utf-8")
     frontmatter, _body = split_document(doc)
     assert "last_modified" not in frontmatter["sources"][0]
+
+
+def test_sources_carry_the_citation_timestamp(tmp_path: Path):
+    source = _frontmatter(tmp_path, labels=["P-08"])["sources"][0]
+    assert source["at"] == "00:01:00"
+    assert source["url_at"] == "http://x?t=60s"
+
+
+def test_url_at_appends_to_an_existing_query(tmp_path: Path):
+    entity = _entity()
+    entity.mentions[0].url = "https://www.youtube.com/watch?v=abc"
+    entity.mentions[0].citation_ts = "01:46:53"
+    emit_entity(tmp_path, entity, _DEFAULT_BODY, labels=["P-08"])
+    doc = (tmp_path / "npcs" / "testo.md").read_text(encoding="utf-8")
+    source = split_document(doc)[0]["sources"][0]
+    assert source["url_at"] == "https://www.youtube.com/watch?v=abc&t=6413s"
+
+
+def test_unparseable_timestamp_omits_at_and_url_at(tmp_path: Path):
+    entity = _entity()
+    entity.mentions[0].citation_ts = "irgendwann"
+    emit_entity(tmp_path, entity, _DEFAULT_BODY, labels=["P-08"])
+    doc = (tmp_path / "npcs" / "testo.md").read_text(encoding="utf-8")
+    source = split_document(doc)[0]["sources"][0]
+    assert "at" not in source and "url_at" not in source
+
+
+def test_validate_counts_positional_source_ids(tmp_path: Path):
+    emit_entity(tmp_path, _entity(), _DEFAULT_BODY, labels=None)
+    report = validate_bundle(tmp_path)
+    assert report.positional_source_ids == ["npcs/testo"]
+
+
+def test_validate_ignores_keyed_source_ids(tmp_path: Path):
+    emit_entity(tmp_path, _entity(), _DEFAULT_BODY, labels=["P-08"])
+    assert validate_bundle(tmp_path).positional_source_ids == []
 
 
 def test_belege_backfill_uses_labels_so_body_and_sources_agree(tmp_path: Path):

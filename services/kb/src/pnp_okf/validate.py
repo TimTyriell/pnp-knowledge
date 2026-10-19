@@ -63,6 +63,7 @@ class ValidationReport:
     missing_required_fields: dict[str, list[str]] = field(default_factory=dict)
     type_dir_mismatches: list[tuple[str, str]] = field(default_factory=list)
     invalid_subtypes: list[tuple[str, str]] = field(default_factory=list)
+    positional_source_ids: list[str] = field(default_factory=list)
 
     @property
     def ok(self) -> bool:
@@ -198,6 +199,12 @@ class ValidationReport:
             )
             for cid, subtype in self.invalid_subtypes:
                 lines.append(f"  {cid}: {subtype!r}")
+        if self.positional_source_ids:
+            # One counter line, not a list: ~170 concepts today, and the
+            # ratchet test already names the first few.
+            lines.append(
+                f"\nPositional source ids: {len(self.positional_source_ids)}"
+            )
         if self.ok:
             lines.append("\nOK — no data-quality issues found.")
         return "\n".join(lines)
@@ -301,6 +308,12 @@ def validate_bundle(bundle_dir: Path) -> ValidationReport:
             vocab = SUBTYPES.get(etype) if etype else None
             if not vocab or subtype not in vocab:
                 report.invalid_subtypes.append((cid, subtype))
+
+        sources = fm.get("sources")
+        if etype is not None and isinstance(sources, list) and sources:
+            ids = [str(s.get("id", "")) for s in sources if isinstance(s, dict)]
+            if ids and all(i.isdigit() for i in ids):
+                report.positional_source_ids.append(cid)
 
     report.duplicate_titles = {
         key.split("::", 1)[1]: sorted(ids)

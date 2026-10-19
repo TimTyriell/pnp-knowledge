@@ -8,6 +8,7 @@ from pathlib import Path
 import yaml
 
 from pnp_okf import __version__
+from pnp_okf.context import _parse_ts
 from pnp_okf.episodes import Episodes
 from pnp_okf.links import ConceptIndex, apply_spellings, normalize_body
 from pnp_okf.models import (
@@ -444,12 +445,24 @@ def split_conflicts(body: str) -> tuple[str, str | None]:
     return body, section or None
 
 
+def _url_at(url: str, seconds: float) -> str:
+    """``url`` opened at ``seconds`` -- YouTube honours ``t=<n>s``.
+
+    The VOD link alone makes a reader scrub a three-hour stream for the one
+    line a claim rests on; the timestamp is already known per mention.
+    """
+
+    sep = "&" if "?" in url else "?"
+    return f"{url}{sep}t={int(seconds)}s"
+
+
 def _source_entries(entity: CanonicalEntity, labels: list[str] | None) -> list[dict]:
     """Frontmatter ``sources[]`` entries per OKF SPEC.md §5.1.
 
     Three keys, deliberately lean: the spec makes everything but ``resource``
     optional, ``title`` would just duplicate the label already in the Belege
-    list, and ``author`` buys nothing today.
+    list, and ``author`` buys nothing today. ``at``/``url_at`` (T1) carry the
+    mention's citation timestamp so every source opens at the moment it cites.
 
     ``labels`` (from ``episodes.citation_labels``, index-aligned with
     ``entity.mentions``) is ``None`` whenever any mention's URL is missing
@@ -467,6 +480,11 @@ def _source_entries(entity: CanonicalEntity, labels: list[str] | None) -> list[d
     entries = []
     for sid, m in zip(ids, entity.mentions, strict=True):
         entry = {"id": sid, "resource": m.url}
+        seconds = _parse_ts(m.citation_ts)
+        if seconds is not None:
+            entry["at"] = m.citation_ts.strip()
+            if m.url:
+                entry["url_at"] = _url_at(m.url, seconds)
         if m.date:
             # MentionRef.date can be empty (transcript.date fallback, emit.py:44)
             # -- omit rather than invent a date via the invalid "T00:00:00Z".
