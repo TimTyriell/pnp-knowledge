@@ -6,7 +6,7 @@
    locations/taverne_in_willau anyway. `merge:` did not catch it either --
    merge matches a whole name, and the model had coined a compound.
 
-2. Extraction can be frozen per session, so a PROMPT_VERSION bump only
+2. Extraction can be frozen per session, so an EXTRACT_PROMPT_VERSION bump only
    re-extracts sessions recorded after a cutoff instead of re-deriving (and
    re-naming) the entire back catalogue.
 """
@@ -15,7 +15,7 @@
 import pytest
 from pnp_okf.extract import _frozen_prompt_version
 from pnp_okf.models import EntityType
-from pnp_okf.prompts import PROMPT_VERSION
+from pnp_okf.prompts import EXTRACT_PROMPT_VERSION
 from pnp_okf.resolve import _default_concept_id
 
 SPELLINGS = {"Willau": "Willauch", "Willoch": "Willauch", "Zebras": "Zebros"}
@@ -59,8 +59,8 @@ def test_sessions_before_the_cutoff_are_frozen(_freeze):
 
 def test_sessions_from_the_cutoff_onward_use_the_live_version(_freeze):
     # Cutoff is exclusive: a session dated exactly on it is NOT frozen.
-    assert _frozen_prompt_version(_T("2026-09-06")) == PROMPT_VERSION
-    assert _frozen_prompt_version(_T("2026-10-01")) == PROMPT_VERSION
+    assert _frozen_prompt_version(_T("2026-09-06")) == EXTRACT_PROMPT_VERSION
+    assert _frozen_prompt_version(_T("2026-10-01")) == EXTRACT_PROMPT_VERSION
 
 
 def test_half_configured_freeze_is_ignored(monkeypatch):
@@ -68,7 +68,7 @@ def test_half_configured_freeze_is_ignored(monkeypatch):
     # "re-extract", so a typo cannot silently pin the corpus forever.
     monkeypatch.setenv("PNP_EXTRACT_FREEZE_BEFORE", "2026-09-06")
     monkeypatch.delenv("PNP_EXTRACT_FREEZE_VERSION", raising=False)
-    assert _frozen_prompt_version(_T("2025-03-26")) == PROMPT_VERSION
+    assert _frozen_prompt_version(_T("2025-03-26")) == EXTRACT_PROMPT_VERSION
     monkeypatch.delenv("PNP_EXTRACT_FREEZE_BEFORE")
     monkeypatch.setenv("PNP_EXTRACT_FREEZE_VERSION", "FROZEN")
-    assert _frozen_prompt_version(_T("2025-03-26")) == PROMPT_VERSION
+    assert _frozen_prompt_version(_T("2025-03-26")) == EXTRACT_PROMPT_VERSION

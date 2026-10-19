@@ -1,14 +1,19 @@
 """German prompts for the extraction and synthesis stages.
 
-Bump ``PROMPT_VERSION`` whenever a prompt changes so cached LLM outputs are
-invalidated automatically.
+Two versions, because the two stages invalidate very different things.
+Bumping EXTRACT_PROMPT_VERSION re-extracts every session (~$6.50) and
+resamples entity names, which moves concept ids (PIPELINE.md §4). Bumping
+SYNTH_PROMPT_VERSION only re-synthesises entity prose. A prose tweak must
+not be an identity event. tests/test_prompt_pins.py fails when a prompt's
+text changes without its version moving.
 """
 
 from __future__ import annotations
 
 from pnp_okf.models import SUBTYPES
 
-PROMPT_VERSION = "6"
+EXTRACT_PROMPT_VERSION = "6"
+SYNTH_PROMPT_VERSION = "6"
 
 
 def _render_subtypes() -> str:

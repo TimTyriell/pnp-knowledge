@@ -130,7 +130,7 @@ pnp-okf/
 │   ├── emit.py          # Stage 5: write OKF .md bundle
 │   ├── okf.py           # OKF writer helpers (no external deps)
 │   ├── llm_client.py    # DeepSeek OpenAI-compatible client factory
-│   └── prompts.py       # German system/user prompts (bump PROMPT_VERSION to invalidate cache)
+│   └── prompts.py       # German system/user prompts (bump the stage's *_PROMPT_VERSION to invalidate cache)
 ├── tests/
 ├── ARCHITECTURE.md      # Full pipeline diagram (PlantUML)
 ├── .env.example
@@ -145,6 +145,9 @@ pnp-okf/
 pytest              # offline tests (no DeepSeek required)
 ```
 
-Prompts live in `src/pnp_okf/prompts.py`. Bump `PROMPT_VERSION` whenever you
-change a prompt — this invalidates the cache automatically so stale responses
-are never reused.
+Prompts live in `src/pnp_okf/prompts.py`. Each stage has its own version:
+bump `EXTRACT_PROMPT_VERSION` for extraction (re-extracts every session, a
+budgeted event) or `SYNTH_PROMPT_VERSION` for synthesis (re-synthesises entity
+prose only) whenever you change that stage's prompt. This invalidates the cache
+automatically so stale responses are never reused; `tests/test_prompt_pins.py`
+fails if a prompt changes without its version moving.

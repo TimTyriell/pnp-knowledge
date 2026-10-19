@@ -20,9 +20,9 @@ from pnp_okf.config import DeepSeekConfig
 from pnp_okf.llm_client import build_client
 from pnp_okf.models import SessionExtraction, SessionTranscript
 from pnp_okf.prompts import (
+    EXTRACT_PROMPT_VERSION,
     EXTRACT_SYSTEM,
     EXTRACT_USER_TEMPLATE,
-    PROMPT_VERSION,
 )
 
 log = logging.getLogger(__name__)
@@ -45,7 +45,7 @@ _PROBE_LOCK = threading.Lock()
 def _frozen_prompt_version(transcript: SessionTranscript) -> str:
     """Prompt version this session's cache key should use.
 
-    A PROMPT_VERSION bump invalidates every cached extraction at once, so
+    An EXTRACT_PROMPT_VERSION bump invalidates every cached extraction at once, so
     editing one constant re-derives the whole back catalogue: ~10M tokens and
     ~$8 on a 66-session corpus (docs/architecture/MIGRATION-prompt-v6.md).
     Worse, re-extraction resamples entity *names*, and names derive concept
@@ -69,8 +69,8 @@ def _frozen_prompt_version(transcript: SessionTranscript) -> str:
     before = os.environ.get("PNP_EXTRACT_FREEZE_BEFORE", "").strip()
     version = os.environ.get("PNP_EXTRACT_FREEZE_VERSION", "").strip()
     if not before or not version:
-        return PROMPT_VERSION
-    return version if str(transcript.date) < before else PROMPT_VERSION
+        return EXTRACT_PROMPT_VERSION
+    return version if str(transcript.date) < before else EXTRACT_PROMPT_VERSION
 
 
 def _cache_key(transcript: SessionTranscript, cfg: DeepSeekConfig) -> str:
@@ -88,7 +88,7 @@ def _cache_key(transcript: SessionTranscript, cfg: DeepSeekConfig) -> str:
 def _cache_path(cache_dir: Path, transcript: SessionTranscript, key: str) -> Path:
     """One file per (session, key), not one per session.
 
-    The key already covers PROMPT_VERSION and the model, but the path used to
+    The key already covers EXTRACT_PROMPT_VERSION and the model, but the path used to
     ignore it -- so bumping either overwrote the only copy of an extraction
     that cost real money, and changing your mind cost a second full rebuild
     (~$6.50). Keeping each key at its own path makes the experiment

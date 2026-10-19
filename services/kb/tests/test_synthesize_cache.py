@@ -54,7 +54,7 @@ if __name__ == "__main__":
 def test_a_second_key_does_not_destroy_the_first(tmp_path):
     """Both caches must be content-addressed, not overwritten in place.
 
-    The cache key includes PROMPT_VERSION and the model, but the cache *path*
+    The cache key includes SYNTH_PROMPT_VERSION and the model, but the cache *path*
     did not -- so bumping either overwrote the only copy of ~$6.50 of paid-for
     LLM output, and reverting the change cost a second full rebuild. Keeping
     each key at its own path makes an experiment reversible for nothing.
