@@ -382,6 +382,8 @@ PNP_REQUIRE_BUNDLE=1 .venv/Scripts/python.exe -m pytest  # CI mode: no silent sk
 .venv/Scripts/python.exe -m pnp_okf.cli validate --bundle ../../knowledge/bundle/splitter_des_ewigen
 .venv/Scripts/python.exe rules_doctor.py                 # dead rules
 .venv/Scripts/python.exe spelling_doctor.py              # name-drift sweep
+.venv/Scripts/python.exe autolink_doctor.py              # likely noun collisions in autolinks -> autolink_block: candidates (read-only)
+.venv/Scripts/python.exe dup_doctor.py                   # merge: candidates from "(auch [...])" / similar-title first-paragraph links (read-only)
 
 # COSTS MONEY -- only with a budget and a reason:
 .venv/Scripts/python.exe -m pnp_okf.cli run --transcripts ../../../pnp-crawl/transcripts_final \
