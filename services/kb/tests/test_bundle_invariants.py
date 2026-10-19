@@ -348,3 +348,22 @@ def test_no_link_in_the_bundle_names_a_file_that_does_not_exist():
     report = validate_bundle(BUNDLE)
     assert report.dangling_links == []
     assert report.broken_links == []
+
+
+# Ratchet (PIPELINE.md §10): concepts whose sources[] ids are all positional
+# ("1", "2", ...) because a cited session is missing from episodes.yaml.
+# Measured 2026-10-19: 170 (8 sessions from 2026-08-12 on had no episode id).
+# Target 0 once pnp-crawl/sync_episodes.py --write has run; only ever lower it.
+POSITIONAL_SOURCE_BASELINE = 170
+
+
+def test_positional_source_ids_only_go_down():
+    from pnp_okf.validate import validate_bundle
+
+    found = validate_bundle(BUNDLE).positional_source_ids
+    assert len(found) <= POSITIONAL_SOURCE_BASELINE, (
+        f"{len(found)} concept(s) cite only positional source ids (baseline "
+        f"{POSITIONAL_SOURCE_BASELINE}); first few: {found[:5]}. A cited "
+        f"session is missing from knowledge/episodes.yaml -- run "
+        f"pnp-crawl/sync_episodes.py --write."
+    )
