@@ -87,6 +87,37 @@ def test_an_explicit_bundle_still_wins(tmp_path: Path, monkeypatch):
     assert paths.bundle_dir == elsewhere
 
 
+# --- transcript dir -------------------------------------------------------
+
+
+def test_default_transcript_dir_env_wins(monkeypatch, tmp_path):
+    from pnp_okf.config import default_transcript_dir
+
+    monkeypatch.setenv("PNP_TRANSCRIPT_DIR", str(tmp_path))
+    assert default_transcript_dir() == tmp_path
+
+
+def test_default_transcript_dir_is_the_sibling_checkout(monkeypatch):
+    from pnp_okf.config import default_transcript_dir
+
+    monkeypatch.delenv("PNP_TRANSCRIPT_DIR", raising=False)
+    got = default_transcript_dir()
+    assert got.parts[-2:] == ("pnp-crawl", "transcripts_final")
+
+
+def test_no_machine_specific_paths_in_scripts():
+    # The scripts used to hardcode a checkout path that exists on no machine
+    # that runs them; this grep is the regression guard. The prefix is split
+    # so this file does not match its own search.
+    kb = Path(__file__).resolve().parents[1]
+    needle = "C:/dev/" "pnp/"
+    offenders = [
+        p.name for p in kb.glob("*.py")
+        if needle in p.read_text(encoding="utf-8")
+    ]
+    assert not offenders, offenders
+
+
 if __name__ == "__main__":
     import sys
     import tempfile
@@ -100,7 +131,7 @@ if __name__ == "__main__":
             continue  # pytest-only fixture
         try:
             with tempfile.TemporaryDirectory() as d:
-                fn(Path(d))
+                fn(*[Path(d)][: len(args)])
             print(f"ok    {name}")
         except AssertionError as exc:
             failures += 1

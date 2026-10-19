@@ -5,6 +5,8 @@ lists are explicit: nothing is inferred, so re-running is idempotent.
 
     python apply_important.py            # dry run
     python apply_important.py --write    # update knowledge/entity_registry.yaml
+
+Run from services/kb (the cache and bundle defaults are cwd-anchored).
 """
 
 from __future__ import annotations
@@ -19,7 +21,7 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).parent / "src"))
 
-from pnp_okf.config import DeepSeekConfig, Paths  # noqa: E402
+from pnp_okf.config import DeepSeekConfig, Paths, default_transcript_dir  # noqa: E402
 from pnp_okf.extract import load_cached_extraction  # noqa: E402
 from pnp_okf.ingest import load_transcripts  # noqa: E402
 from pnp_okf.resolve import resolve_entities  # noqa: E402
@@ -91,11 +93,9 @@ def main() -> int:
     args = ap.parse_args()
     logging.disable(logging.WARNING)
 
-    paths = Paths.resolve(
-        "C:/dev/pnp/pnp-crawl/transcripts_final",
-        "C:/dev/pnp/pnp-knowledge/knowledge/bundle/splitter_des_ewigen",
-        "C:/dev/pnp/pnp-knowledge/services/kb/.cache",
-    )
+    # Run from services/kb: the cache falls back to ./.cache there, and the
+    # bundle is found by walking up to the repo's knowledge/.
+    paths = Paths.resolve(default_transcript_dir(), None, None)
     cfg = DeepSeekConfig.from_env()
     transcripts = load_transcripts(paths.transcript_dir)
     extractions = {

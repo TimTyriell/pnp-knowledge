@@ -171,3 +171,17 @@ class Paths:
             bundle_dir=Path(bundle).expanduser(),
             cache_dir=Path(cache).expanduser(),
         )
+
+
+def default_transcript_dir() -> Path:
+    """pnp-crawl's transcripts, as a sibling checkout of this repo.
+
+    ``PNP_TRANSCRIPT_DIR`` wins. The fallback is anchored on this file, not
+    the cwd: services/kb/src/pnp_okf/config.py -> parents[5] is the folder
+    holding pnp-knowledge and pnp-crawl side by side.
+    """
+
+    env = os.environ.get("PNP_TRANSCRIPT_DIR")
+    if env:
+        return Path(env).expanduser()
+    return Path(__file__).resolve().parents[5] / "pnp-crawl" / "transcripts_final"

@@ -32,6 +32,9 @@ from fastapi.staticfiles import StaticFiles
 
 REPO_ROOT = Path(__file__).resolve().parents[2]  # .../pnp-knowledge/services/dashboard -> pnp-knowledge/
 
+# Sibling checkouts: REPO_ROOT is the repo root, so parent is the folder that
+# holds pnp-crawl and pnp-export-data side by side (same convention as
+# pnp_okf.config.default_transcript_dir). The env vars win.
 CRAWL_DIR = Path(os.environ.get("PNP_CRAWL_DIR", REPO_ROOT.parent / "pnp-crawl")).expanduser()
 EXPORT_DIR = Path(os.environ.get("PNP_EXPORT_DIR", REPO_ROOT.parent / "pnp-export-data")).expanduser()
 KB_URL = os.environ.get("PNP_KB_URL", "http://127.0.0.1:8070")
