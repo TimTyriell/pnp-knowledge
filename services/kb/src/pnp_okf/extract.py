@@ -11,13 +11,13 @@ from pathlib import Path
 import openai
 from tenacity import (
     retry,
-    retry_if_exception_type,
+    retry_if_exception,
     stop_after_attempt,
     wait_exponential,
 )
 
 from pnp_okf.config import DeepSeekConfig
-from pnp_okf.llm_client import build_client
+from pnp_okf.llm_client import EmptyModelOutput, build_client, is_retryable
 from pnp_okf.models import SessionExtraction, SessionTranscript
 from pnp_okf.prompts import (
     EXTRACT_SYSTEM,
@@ -161,7 +161,7 @@ def _call_llm_structured(client, cfg: DeepSeekConfig, messages: list) -> Session
     )
     parsed = completion.choices[0].message.parsed
     if parsed is None:
-        raise RuntimeError("Model returned no parsed extraction")
+        raise EmptyModelOutput("Model returned no parsed extraction")
     return parsed
 
 
@@ -169,7 +169,7 @@ def _call_llm_structured(client, cfg: DeepSeekConfig, messages: list) -> Session
     reraise=True,
     stop=stop_after_attempt(4),
     wait=wait_exponential(multiplier=2, min=2, max=30),
-    retry=retry_if_exception_type(Exception),
+    retry=retry_if_exception(is_retryable),
 )
 def _call_llm_json_prompt(client, cfg: DeepSeekConfig, messages: list) -> SessionExtraction:
     """JSON-prompt fallback for models that don't support structured outputs.
@@ -198,7 +198,7 @@ def _call_llm_json_prompt(client, cfg: DeepSeekConfig, messages: list) -> Sessio
     # Raising here lets the retry above take another sample instead of caching
     # a hole in the bundle.
     if parsed.recap.strip() and not parsed.entities:
-        raise RuntimeError("Extraction returned a recap but zero entities")
+        raise EmptyModelOutput("Extraction returned a recap but zero entities")
     return parsed
 
 
