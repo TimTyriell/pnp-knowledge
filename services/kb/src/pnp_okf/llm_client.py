@@ -1,9 +1,47 @@
 from __future__ import annotations
 
+import json
+
+import openai
+import pydantic
 from openai import OpenAI
 
 from pnp_okf.config import DeepSeekConfig
 from pnp_okf.usage import LEDGER
+
+
+class EmptyModelOutput(RuntimeError):
+    """The model answered, but with nothing usable (no body, no entities).
+
+    A RuntimeError subclass so existing ``pytest.raises(RuntimeError)``
+    callers keep working; its own type so the retry predicate can tell it
+    apart from a real bug.
+    """
+
+
+_TRANSIENT = (
+    openai.APIConnectionError,
+    openai.APITimeoutError,
+    openai.RateLimitError,
+    openai.InternalServerError,
+)
+
+
+def is_retryable(exc: BaseException) -> bool:
+    """True for failures a second attempt can plausibly fix.
+
+    Retrying everything (the old catch-all ``Exception`` predicate)
+    also retried a bad API key or a 400, four times each, with backoff --
+    and a 400 for an oversized request is billed every time.
+    """
+
+    # Unpacked rather than `_TRANSIENT | EmptyModelOutput`: a tuple has no `|`,
+    # so that form raises TypeError on the first retryable check.
+    if isinstance(exc, (*_TRANSIENT, EmptyModelOutput)):
+        return True
+    if isinstance(exc, openai.APIStatusError):
+        return exc.status_code >= 500
+    return isinstance(exc, pydantic.ValidationError | json.JSONDecodeError)
 
 
 class _CountingCompletions:

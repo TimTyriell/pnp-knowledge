@@ -8,13 +8,13 @@ from pathlib import Path
 
 from tenacity import (
     retry,
-    retry_if_exception_type,
+    retry_if_exception,
     stop_after_attempt,
     wait_exponential,
 )
 
 from pnp_okf.config import DeepSeekConfig
-from pnp_okf.llm_client import build_client
+from pnp_okf.llm_client import EmptyModelOutput, build_client, is_retryable
 from pnp_okf.models import CanonicalEntity
 from pnp_okf.prompts import (
     PROMPT_VERSION,
@@ -259,7 +259,7 @@ def _cache_path(cache_dir: Path, entity: CanonicalEntity, key: str) -> Path:
     reraise=True,
     stop=stop_after_attempt(4),
     wait=wait_exponential(multiplier=2, min=2, max=30),
-    retry=retry_if_exception_type(Exception),
+    retry=retry_if_exception(is_retryable),
 )
 def _call_llm(
     client,
@@ -290,7 +290,7 @@ def _call_llm(
     )
     body = completion.choices[0].message.content
     if not body:
-        raise RuntimeError("Model returned empty synthesis body")
+        raise EmptyModelOutput("Model returned empty synthesis body")
     return body.strip()
 
 
