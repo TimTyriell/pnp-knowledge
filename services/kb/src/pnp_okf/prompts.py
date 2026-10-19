@@ -87,6 +87,36 @@ Wichtige Regeln:
 
 EXTRACT_SYSTEM = _EXTRACT_SYSTEM_TEMPLATE.replace("{subtypes}", _render_subtypes())
 
+# Daggerheart mechanics, so a model reading a table transcript stops turning
+# rules talk into world facts ("überlebt mit einem Hitpoint" was a damage
+# roll; "Heiltrank (1w4)" is a stat, not a name). Every line is checked
+# against the SRD -- see docs/plans/T3-rules-glossary.md for the sources.
+# Used by the state pass (T5) now; extraction picks it up at the next
+# budgeted re-extraction (B2), synthesis at its next version bump.
+RULES_GLOSSARY = """\
+Regelbegriffe (Daggerheart) -- das ist Spielmechanik, KEIN Weltgeschehen:
+- Hit Points (HP) werden bei Schaden MARKIERT (je nach Schwelle 1 bis 3 HP).
+  Wer seinen LETZTEN HP markiert, fällt und macht einen Todeszug (death move).
+- Schadensschwellen: unter Major = 1 HP, ab Major = 2 HP, ab Severe = 3 HP.
+- Stress wird ebenfalls markiert (Anstrengung, Kosten von Fähigkeiten). Letzter
+  Stress markiert = verwundbar (Vulnerable).
+- Rüstungsplätze (Armor Slots) können markiert werden, um den Schaden um eine
+  Schwelle zu senken.
+- Duality Dice: zwei W12, Hoffnung (Hope) und Furcht (Fear). "Mit Hope" /
+  "mit Fear" beschreibt nur, welcher Würfel höher war.
+- Hope ist eine Ressource der Spieler (max. 6), Fear eine der Spielleitung
+  (max. 12). Sie sind keine Gegenstände und keine Gefühle der Figuren.
+- Evasion ist der Verteidigungswert; "Difficulty" ist die Schwierigkeit eines
+  Wurfs.
+- "Domains" der Regeln (Arcana, Blade, Bone, Codex, Grace, Midnight, Sage,
+  Splendor, Valor) sind Kartenstapel für Fähigkeiten -- KEINE Reiche oder
+  Ebenen der Spielwelt.
+- Tier 1-4 sind Stufen (Tier 1 = Level 1, Tier 2 = Level 2-4, Tier 3 = Level 5-7,
+  Tier 4 = Level 8-10) für Spielercharaktere, Gegner, Umgebungen und Waffen.
+- Spotlight, Downtime, Rast, Countdown, Tag-Team-Wurf sind Spielleitungs- und
+  Tischbegriffe.
+"""
+
 EXTRACT_USER_TEMPLATE = """\
 Session-ID: {session_id}
 Datum: {date}
