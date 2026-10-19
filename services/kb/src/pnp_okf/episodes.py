@@ -48,9 +48,11 @@ class Episodes:
         self,
         entries: list[dict[str, Any]] | None = None,
         seasons: dict[str, Any] | None = None,
+        teams: dict[str, Any] | None = None,
     ) -> None:
         self._by_video = {e["video_id"]: e for e in (entries or []) if e.get("video_id")}
         self._seasons = {str(k): v for k, v in (seasons or {}).items()}
+        self._teams = {str(k): str(v) for k, v in (teams or {}).items()}
 
     def __len__(self) -> int:
         return len(self._by_video)
@@ -72,6 +74,17 @@ class Episodes:
         entry = self.for_url(url)
         return entry.get("id") if entry else None
 
+    def team_letter_for_url(self, url: str) -> str | None:
+        """Team letter ("A") of the session at *url*, or None.
+
+        episodes.yaml stores the pnp-crawl group name per episode ("Team-A")
+        and maps it to a letter under ``teams:``. An episode with no team, or
+        a team with no letter, yields None rather than a guess.
+        """
+        entry = self.for_url(url)
+        team = (entry or {}).get("team")
+        return self._teams.get(str(team)) if team else None
+
     @classmethod
     def load(cls, path: Path) -> Episodes:
         """Read *path*; an absent or broken file yields an empty list.
@@ -89,7 +102,7 @@ class Episodes:
         except (OSError, yaml.YAMLError) as exc:
             log.warning("Could not read %s (%s) — continuing without episode ids.", path, exc)
             return cls()
-        return cls(data.get("episodes"), data.get("seasons"))
+        return cls(data.get("episodes"), data.get("seasons"), data.get("teams"))
 
 
 def citation_labels(urls: list[str], episodes: Episodes) -> list[str] | None:
@@ -118,6 +131,16 @@ def citation_labels(urls: list[str], episodes: Episodes) -> list[str] | None:
         seen[i] = seen.get(i, 0) + 1
         labels.append(f"{i}{chr(ord('a') + seen[i] - 1)}")
     return labels
+
+
+def teams_for(urls: list[str], episodes: Episodes) -> list[str]:
+    """Sorted distinct team letters across *urls* (sessions an entity cites).
+
+    Unlike citation_labels this is not all-or-nothing: a session without a
+    team contributes nothing, and the others still count -- "seen by Team A"
+    stays true even if one citing session is unlabelled.
+    """
+    return sorted({t for u in urls if (t := episodes.team_letter_for_url(u))})
 
 
 def relabel_citations(body: str, labels: list[str]) -> str:

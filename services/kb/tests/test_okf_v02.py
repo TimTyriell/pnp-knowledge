@@ -464,3 +464,11 @@ def test_lead_text_survives_a_heading_glued_to_its_paragraph():
         "Dodo ist ein Halb-Goblin."
     )
     assert _lead_text("## Nur Heading\n\n- eine Liste") == ""
+
+
+def test_teams_written_when_given(tmp_path: Path):
+    assert _frontmatter(tmp_path, labels=["P-08"], teams=["A", "B"])["teams"] == ["A", "B"]
+
+
+def test_teams_omitted_when_empty(tmp_path: Path):
+    assert "teams" not in _frontmatter(tmp_path, labels=["P-08"], teams=[])

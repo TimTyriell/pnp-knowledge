@@ -35,7 +35,7 @@ from pnp_okf.emit import (
     prune_conflicts,
     prune_orphans,
 )
-from pnp_okf.episodes import Episodes, citation_labels, relabel_citations
+from pnp_okf.episodes import Episodes, citation_labels, relabel_citations, teams_for
 from pnp_okf.extract import extract_session, load_cached_extraction
 from pnp_okf.ingest import load_transcripts
 from pnp_okf.links import relationship_edges
@@ -499,6 +499,7 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
             labels=labels_by_id[entity.concept_id],
             verified=entity.concept_id in verified_ids,
             relationships=(None if partial_run else edges.get(entity.concept_id, [])),
+            teams=teams_for([m.url for m in entity.mentions], episodes),
         )
         unresolved_total += len(unresolved)
         if conflicts:
