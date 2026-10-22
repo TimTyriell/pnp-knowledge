@@ -92,3 +92,46 @@ def test_load_reads_the_real_campaign_list():
     # or badly truncated, not track the exact count as the campaign grows.
     assert len(episodes) >= 60
     assert episodes.id_for_url("https://www.youtube.com/watch?v=ROCKGeeRUFw") == "P-01"
+
+
+TEAM_EPISODES = Episodes(
+    [
+        {"video_id": "umGyKLkefJI", "id": "S1-01-A", "team": "Team-A"},
+        {"video_id": "0HyPHao8s_k", "id": "S1-03-B", "team": "Team-B"},
+        {"video_id": "zzzzzzzzzzz", "id": "S1-09-X", "team": "Unbekannt"},
+    ],
+    teams={"Team-A": "A", "Team-B": "B"},
+)
+
+
+def test_team_letter_for_url():
+    assert TEAM_EPISODES.team_letter_for_url(URL_A) == "A"
+    assert TEAM_EPISODES.team_letter_for_url(URL_B) == "B"
+    # A team with no letter in the map yields None, not the raw name.
+    assert TEAM_EPISODES.team_letter_for_url(URL_UNKNOWN) is None
+
+
+def test_teams_for_is_sorted_distinct_and_tolerates_gaps():
+    from pnp_okf.episodes import teams_for
+
+    urls = [URL_B, URL_A, URL_B, "https://www.youtube.com/watch?v=nope"]
+    assert teams_for(urls, TEAM_EPISODES) == ["A", "B"]
+    assert teams_for([], TEAM_EPISODES) == []
+
+
+def test_load_reads_the_teams_map(tmp_path):
+    path = tmp_path / "episodes.yaml"
+    path.write_text(
+        textwrap.dedent(
+            """\
+            teams:
+              Team-A: A
+            episodes:
+              - video_id: umGyKLkefJI
+                id: S1-01-A
+                team: Team-A
+            """
+        ),
+        encoding="utf-8",
+    )
+    assert Episodes.load(path).team_letter_for_url(URL_A) == "A"
