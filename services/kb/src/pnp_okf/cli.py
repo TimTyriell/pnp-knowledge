@@ -40,7 +40,13 @@ from pnp_okf.extract import extract_session, load_cached_extraction
 from pnp_okf.ingest import load_transcripts
 from pnp_okf.links import relationship_edges
 from pnp_okf.models import CanonicalEntity, SessionExtraction, SessionTranscript
-from pnp_okf.resolve import load_spellings, require_rules, resolve_entities, write_registry
+from pnp_okf.resolve import (
+    load_autolink_block,
+    load_spellings,
+    require_rules,
+    resolve_entities,
+    write_registry,
+)
 from pnp_okf.synthesize import (
     _cache_key as synth_cache_key,
 )
@@ -409,7 +415,7 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
         "Synthesis tiers: %s (brief is rendered locally, no LLM call)",
         ", ".join(f"{t}={tier_counts[t]}" for t in ("deep", "standard", "brief")),
     )
-    targets = link_targets(entities)
+    targets = link_targets(entities, load_autolink_block(registry_path))
     # Synthesis is one independent network call per entity; run them
     # concurrently or a full rebuild takes hours. Emit stays sequential so
     # file writes and the conflict queue keep a deterministic order.

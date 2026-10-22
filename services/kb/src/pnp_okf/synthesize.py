@@ -39,13 +39,16 @@ def _render_mentions(entity: CanonicalEntity) -> str:
     return "\n".join(lines)
 
 
-def link_targets(entities: list[CanonicalEntity]) -> dict[str, str]:
+def link_targets(
+    entities: list[CanonicalEntity], blocked: set[str] | frozenset[str] = frozenset()
+) -> dict[str, str]:
     """``display name -> concept_id`` for deterministic cross-linking.
 
     A name claimed by two or more distinct concepts is ambiguous and dropped
     entirely rather than resolved by any tiebreak — a wrong link (silently
     picking one concept's page for a mention that meant the other) is worse
-    than no link.
+    than no link. ``blocked`` (lowercased ``autolink_block:`` names) are never
+    linked at all, for common nouns that collide with an entity name.
     """
 
     owners: dict[str, set[str]] = {}
@@ -53,6 +56,8 @@ def link_targets(entities: list[CanonicalEntity]) -> dict[str, str]:
     for entity in entities:
         for name in [entity.canonical_name, *entity.aliases]:
             name = name.strip()
+            if name.lower() in blocked:
+                continue
             if len(name) >= 4:
                 owners.setdefault(name, set()).add(entity.concept_id)
                 concept_of[name] = entity.concept_id
