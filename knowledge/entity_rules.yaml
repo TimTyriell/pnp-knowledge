@@ -675,6 +675,21 @@ merge:
   # that ring. Folding them would collapse three items into fewer and
   # contradict a standing ruling.
 
+  # T4 GM review 2026-10-26: the three event arcs that span sessions. Each
+  # folds into an existing event id (so no merge rule is dead before the
+  # re-emit) and is listed under event_concepts: below.
+  # Fall of Ehrenfels: Team A plays it (P-46), Team B hears it retold in
+  # S1-01/S1-02 -- one battle, not three.
+  dämonenangriff auf ehrenfels: events/schlacht_um_ehrenfels
+  schlacht gegen die dämonen in ehrenfels: events/schlacht_um_ehrenfels
+  # The Willauch arena tournament: fights one and two (P-27) and the recap
+  # of the whole tournament (P-30). "Will auch" is a Whisper split.
+  erster arena-kampf: events/arena_kaempfe_in_will_auch
+  zweiter arena-kampf: events/arena_kaempfe_in_will_auch
+  # Belorus' siege of the camp: raised as the P-33 cliffhanger, ended by his
+  # capitulation in P-34.
+  belorus' kapitulation und abzug: events/belorus_auftritt_und_erhebung_der_untoten
+
 never_merge:
 # GM ruling 2026-08-30: the mixed-origin refugees are not Roland's Breska
 # group. Their names are near-identical and "Flüchtlinge" is a token-subset
@@ -1379,39 +1394,31 @@ alias_block:
 # Event is a scene anchor in its session note (docs/plans/T4-event-anchors.md).
 # Add an id here when an event spans sessions (an arc -- fold its pieces with
 # merge:), is a turning point other pages link to, or has a wiki page.
-# PENDING GM APPROVAL (T4 step 3): proposed from the candidates report
-# (docs/audits/2026-10-26-event-candidates.md). events/tod_von_rotunas is left
-# out by default: an NPC's retelling, so it stays a scene anchor.
+# GM review 2026-10-26 (docs/audits/2026-10-26-event-candidates.md): kept are
+# the wiki page, the three arcs, deaths of player characters and of NPCs whose
+# death moves the plot, and the pacts/rituals later sessions refer to. Dropped
+# are single scenes (fights, travel, dungeon rooms) and deaths of minor or
+# unnamed NPCs -- an NPC's death belongs on that NPC's page (T7
+# world_status), not on a page of its own. NPC retellings (tod_von_rotunas,
+# zerstoerung_von_voras_durch_nerash, tod_von_nifty_und_hellum) stay anchors
+# so a claim never outranks the scene that was actually played.
 event_concepts:
+# wiki page
 - events/verhandlung_mit_harl
+# arcs (see merge:)
 - events/schlacht_um_ehrenfels
+- events/arena_kaempfe_in_will_auch
+- events/belorus_auftritt_und_erhebung_der_untoten
+# turning points
 - events/zerstoerung_des_rings
-- events/hinrichtung_des_werwolfs
 - events/tod_des_seraphen
-- events/angriff_der_untoten_auf_die_karawane
-- events/begegnung_mit_landra
-- events/erkundung_des_dungeons
-- events/explosion_der_gnoll_leichen
-- events/flucht_durch_das_portal
-- events/kampf_gegen_dormak
-- events/konfrontation_vor_der_kapelle
-- events/lunaras_gedanken_zauber
 - events/pakt_mit_huludan
-- events/reise_zu_den_sanddorn_inseln
-- events/rueckzug_aus_dem_dungeon
-- events/verhandlung_mit_spitzzahn
+- events/kampf_gegen_dormak
+- events/vernichtung_von_slix
 - events/vision_von_joran
-- events/hinrichtung_am_stadttor
-- events/lunaras_sturz_und_wiederbelebung
-- events/tod_des_grottenschrats
-- events/tod_des_kenku
-- events/tod_des_verwundeten_boten
-- events/tod_und_wiederbelebung_des_soldaten
-- events/tod_von_esterossa
-- events/tod_von_lionel_magno
-- events/tod_von_luli
-- events/tod_von_nifty_und_hellum
+# deaths that change the cast
+- events/opfertod_von_rotunas
 - events/tod_von_sandro_und_voras
-- events/toetung_des_goblin_kindes
-- events/zerstoerung_des_kristallmagiers
-- events/zerstoerung_von_voras_durch_nerash
+- events/tod_von_esterossa
+- events/lunaras_sturz_und_wiederbelebung
+- events/tod_von_lionel_magno
