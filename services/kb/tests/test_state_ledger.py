@@ -4,13 +4,21 @@ Threads keep their identity through the fold: a thread minted once keeps its
 id no matter how the model words it later (T00 §4.5).
 """
 
+from pathlib import Path
+
+import yaml
 from pnp_okf.state import (
+    GLOSSARY_FILENAME,
     AttitudeChange,
     Ledger,
     SessionState,
     StatusChange,
     ThreadUpdate,
+    build_glossary,
+    load_glossary,
+    render_glossary,
     render_open_threads,
+    write_glossary,
 )
 
 
@@ -80,3 +88,45 @@ def test_involves_is_deduplicated_in_first_seen_order():
     led.apply("s1", "d", "u", SessionState(threads=[_t(involves=["Xenia", "Hof"])]))
     led.apply("s2", "d", "u", SessionState(threads=[_t("threads/evakuierung", involves=["Hof", "Brim"])]))
     assert led.threads["threads/evakuierung"].involves == ["Xenia", "Hof", "Brim"]
+
+
+# --- frozen glossary (commit 2) -------------------------------------------
+
+def _registry(tmp_path: Path, entities: list[dict]) -> Path:
+    path = tmp_path / "entity_registry.yaml"
+    path.write_text(yaml.safe_dump({"entities": entities}, allow_unicode=True), encoding="utf-8")
+    return path
+
+
+def test_build_glossary_excludes_events_caps_aliases_and_sorts(tmp_path):
+    reg = _registry(tmp_path, [
+        {"type": "Event", "canonical_name": "Schlacht", "aliases": []},
+        {"type": "NPC", "canonical_name": "Xenia", "aliases": ["a", "b", "c", "d", "e"]},
+        {"type": "Character", "canonical_name": "Zed", "aliases": []},
+        {"type": "Character", "canonical_name": "Abel", "aliases": []},
+        {"type": "Location", "canonical_name": "Hof", "aliases": ["", "Halbling"]},
+    ])
+    rows = build_glossary(reg)
+    assert [r["name"] for r in rows] == ["Abel", "Zed", "Xenia", "Hof"]
+    assert rows[2]["aliases"] == ["a", "b", "c"]
+    assert rows[3]["aliases"] == ["Halbling"]
+
+
+def test_write_then_load_roundtrips_and_keeps_header(tmp_path):
+    rows = [{"type": "NPC", "name": "Xenia", "aliases": ["Xen"]}]
+    path = write_glossary(tmp_path, rows)
+    assert path.name == GLOSSARY_FILENAME
+    assert path.read_text(encoding="utf-8").startswith("# Frozen name list")
+    assert load_glossary(tmp_path) == rows
+
+
+def test_load_glossary_missing_file_is_empty(tmp_path):
+    assert load_glossary(tmp_path) == []
+
+
+def test_render_glossary_is_byte_identical_across_calls():
+    rows = [{"type": "NPC", "name": "Xenia", "aliases": ["Xen", "X"]},
+            {"type": "Item", "name": "Schwert", "aliases": []}]
+    first, second = render_glossary(rows), render_glossary(rows)
+    assert first == second
+    assert first == "- NPC: Xenia (auch: Xen, X)\n- Item: Schwert"

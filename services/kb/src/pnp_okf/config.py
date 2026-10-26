@@ -91,6 +91,10 @@ class Paths:
         return self.bundle_dir.parent
 
     @property
+    def knowledge_root(self) -> Path:
+        return self._knowledge_root
+
+    @property
     def registry_path(self) -> Path:
         """Entity registry — the durable record of merges and importance.
 
