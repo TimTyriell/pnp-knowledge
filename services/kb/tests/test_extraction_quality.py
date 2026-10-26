@@ -232,3 +232,33 @@ def test_the_truth_set_is_what_should_have_been_extracted():
 
     with pytest.raises(AssertionError, match="unknown verdict"):
         _truth_names({"entities": [{"name": "A", "verdict": "vielleicht"}]}, "x.yaml")
+
+
+# Citation grounding (A5): share of scorable mentions whose name occurs within
+# +-120 s of the cited timestamp. Measured 2026-10-19 over 70 cached sessions,
+# 1925 scorable mentions: 76.1% overall, 63.5% for Events; nowhere in the
+# session at all: 4.4% overall, 10.5% for Events. A ratchet -- only ever raise
+# the near share and lower the nowhere ceiling, with a comment for each move.
+# Grounding cannot prove a note true; it flags citations the transcript does
+# not support. See grounding.py and docs/architecture/PIPELINE.md section 10.
+GROUNDED_NEAR_BASELINE = 0.751
+GROUNDED_NOWHERE_CEILING = 0.0536
+
+
+@needs_corpus
+def test_citations_are_grounded_in_their_window():
+    from pnp_okf.grounding import GroundingCounts, ground_session
+
+    cfg = DeepSeekConfig.from_env().for_tier("extract")
+    total = GroundingCounts()
+    for t in load_transcripts(TRANSCRIPT_DIR):
+        ex = load_cached_extraction(CACHE_DIR, t, cfg)
+        if ex is None:
+            continue
+        c = ground_session(t, ex)["all"]
+        total.near += c.near
+        total.elsewhere += c.elsewhere
+        total.nowhere += c.nowhere
+    assert total.scored > 1000, "too few cached mentions -- wrong cache or model?"
+    assert total.near_ratio >= GROUNDED_NEAR_BASELINE
+    assert total.nowhere / total.scored <= GROUNDED_NOWHERE_CEILING
