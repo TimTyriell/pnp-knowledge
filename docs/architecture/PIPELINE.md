@@ -374,6 +374,19 @@ This is also the gate for any cheaper extraction model: small models do not
 omit entity names, they **invent** them, so "can extraction move to flash" is a
 precision question and unanswerable without these labels.
 
+**Three measures, three blind spots.** *Name-level gold* (`test_extraction_quality.py`)
+asks whether the right entities were extracted; it cannot see whether a sentence
+about them is true. *Citation grounding* (`grounding.py`, A5) asks whether an
+entity's name is spoken near the cited timestamp; it cannot see whether what is
+said about it is right, and a name said in the wrong context still passes. *Claim-level
+eval* (`claim_sampler.py` + `pnp_okf/claims.py`, `test_claim_eval.py`, B3) asks whether a
+sampled sentence of the bundle is supported by the transcript window around its
+citation; it sees misattribution and retold-as-fact errors that the other two miss, but
+only as far as a human labeller reads it, and n=60 carries roughly ±12pp of noise.
+Draw a sample with `python claim_sampler.py --n 60 --seed 1234` (reads the cached
+extraction and transcripts, no model call). Committed claim files are scrubbed of
+player first names; the sampler refuses to write one that is not.
+
 ---
 
 ## 11. Traps that have actually bitten
