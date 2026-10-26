@@ -1,0 +1,1421 @@
+seed: 1234
+drawn: '2026-10-26'
+pool_size: 3638
+claims:
+- id: c001
+  concept: characters/finn
+  type: Character
+  tier: standard
+  claim: Die Verständigung zwischen den beiden läuft über einfache Zeichen und beruht auf einer engen Vertrautheit.
+  session: 2026-05-27_RF_IYYmgpqsp7E
+  at: 00:20:12
+  url_at: https://www.youtube.com/watch?v=IYYmgpqsp7E&t=1212s
+  window: |-
+    --- Session 2026-05-27 ---
+    [00:18:51] Spieler (GM): Weil die kriegen ja nur Stress, wenn die Damage kriegen. Ja, ja, ich weiß. Aber die haben ja keine andere Ressource.
+    [00:18:59] Spieler (Lunara Velora): Sind gerade frontal gegen deinen Atmer gefahren. Gefahren vor allem.
+    [00:19:03] Spieler (GM): Stellst dir von mir aus, der Windschuss war so stark, dass er ein paar Federn verloren hat.
+    [00:19:10] Spieler (GM): Guck mal, wie der andere Dungeon Master mich hier direkt im Anzweifeln ist. Ne, ne, ne, alles gut. Ja, alles gut, ja, valide. Ich schicke Merlin auf einen dieser Spitze der Türme, dass er sich da hinsetzen soll. Wir
+    [00:19:30] Spieler (Lunara Velora): würden uns gerne anmelden.
+    [00:19:32] Spieler (GM): Genau, als ihr näher kommt, spricht euch auch eine sehr grimmige Frau an, scheint irgendwie eine Priesterin, vielleicht eine Magierin zu sein, irgendwas in die Richtung. Und die steppt so eine Einstellung mal nach vorne. Seid gegrüßt! Mein Name ist Tara! Ihr seid neue Rekruten, richtig? Das ist richtig. Das, was der Goblin sagt. Ja, nennt mir eure Namen. Ich bin Krieg. Krieg. Zwei I und K am Ende. Und ihr seid? Ich bin Carlos mit C. Carlos, verstehe. Und ihr dort hinten? Ich bin einfach nur Finn. Einfallsreich. Nun, ihr seid wohl eine sehr bunte Bande. Seid wohl irgendwo ausgebrochen oder kommt aus einem Lande weit weg von hier, richtig? Richtig. Ich war schon überall. Ich komme von überall. Nun, ihr seht auch ein bisschen ungezähmt aus, aber keine Sorge. Die Nebelwacht wird euch lehren, was es bedeutet, sich zu pflegen. Nun, wie dem auch sei. Gut, tretet ein und folgt mir. Und die dreht sich um und geht voran in die Festung. Und die dreht sich so irgendwann um, um so ein bisschen wie eine Rundführung euch so ein bisschen was zu erklären. Nun gut, das hier ist wie gesagt Festung Nebelwacht. Das einzige Bollwerk, was euch alle noch abends ruhig schlafen lässt. Denn alles was weiter südlich...
+  verdict: ''
+  note: ''
+- id: c002
+  concept: characters/finn
+  type: Character
+  tier: standard
+  claim: Finn klettert auf eine Mauer, lädt eine Balliste und tötet mit ihr die rote Echse.
+  session: 2026-05-27_RF_IYYmgpqsp7E
+  at: 00:20:12
+  url_at: https://www.youtube.com/watch?v=IYYmgpqsp7E&t=1212s
+  window: |-
+    --- Session 2026-05-27 ---
+    [00:18:51] Spieler (GM): Weil die kriegen ja nur Stress, wenn die Damage kriegen. Ja, ja, ich weiß. Aber die haben ja keine andere Ressource.
+    [00:18:59] Spieler (Lunara Velora): Sind gerade frontal gegen deinen Atmer gefahren. Gefahren vor allem.
+    [00:19:03] Spieler (GM): Stellst dir von mir aus, der Windschuss war so stark, dass er ein paar Federn verloren hat.
+    [00:19:10] Spieler (GM): Guck mal, wie der andere Dungeon Master mich hier direkt im Anzweifeln ist. Ne, ne, ne, alles gut. Ja, alles gut, ja, valide. Ich schicke Merlin auf einen dieser Spitze der Türme, dass er sich da hinsetzen soll. Wir
+    [00:19:30] Spieler (Lunara Velora): würden uns gerne anmelden.
+    [00:19:32] Spieler (GM): Genau, als ihr näher kommt, spricht euch auch eine sehr grimmige Frau an, scheint irgendwie eine Priesterin, vielleicht eine Magierin zu sein, irgendwas in die Richtung. Und die steppt so eine Einstellung mal nach vorne. Seid gegrüßt! Mein Name ist Tara! Ihr seid neue Rekruten, richtig? Das ist richtig. Das, was der Goblin sagt. Ja, nennt mir eure Namen. Ich bin Krieg. Krieg. Zwei I und K am Ende. Und ihr seid? Ich bin Carlos mit C. Carlos, verstehe. Und ihr dort hinten? Ich bin einfach nur Finn. Einfallsreich. Nun, ihr seid wohl eine sehr bunte Bande. Seid wohl irgendwo ausgebrochen oder kommt aus einem Lande weit weg von hier, richtig? Richtig. Ich war schon überall. Ich komme von überall. Nun, ihr seht auch ein bisschen ungezähmt aus, aber keine Sorge. Die Nebelwacht wird euch lehren, was es bedeutet, sich zu pflegen. Nun, wie dem auch sei. Gut, tretet ein und folgt mir. Und die dreht sich um und geht voran in die Festung. Und die dreht sich so irgendwann um, um so ein bisschen wie eine Rundführung euch so ein bisschen was zu erklären. Nun gut, das hier ist wie gesagt Festung Nebelwacht. Das einzige Bollwerk, was euch alle noch abends ruhig schlafen lässt. Denn alles was weiter südlich...
+  verdict: ''
+  note: ''
+- id: c003
+  concept: characters/krieg
+  type: Character
+  tier: standard
+  claim: Krieg zeigt eine deutliche Abneigung gegen Festungen und bevorzugt den Wald, stellt diese Vorliebe aber hinter die Notwendigkeiten der Gruppe zurück.
+  session: 2026-05-27_RF_IYYmgpqsp7E
+  at: 00:19:57
+  url_at: https://www.youtube.com/watch?v=IYYmgpqsp7E&t=1197s
+  window: |-
+    --- Session 2026-05-27 ---
+    [00:18:29] Spieler (GM): darfst deinem Greifen einen Stress aufschreiben. Adler, Entschuldigung.
+    [00:18:38] Spieler (GM): Weißt du, wie Companions funktionieren? Fragezeichen GM? Ja, das ist das Leben, aber die verschwinden ja, wenn sie full sind. Ja.
+    [00:18:51] Spieler (GM): Weil die kriegen ja nur Stress, wenn die Damage kriegen. Ja, ja, ich weiß. Aber die haben ja keine andere Ressource.
+    [00:18:59] Spieler (Lunara Velora): Sind gerade frontal gegen deinen Atmer gefahren. Gefahren vor allem.
+    [00:19:03] Spieler (GM): Stellst dir von mir aus, der Windschuss war so stark, dass er ein paar Federn verloren hat.
+    [00:19:10] Spieler (GM): Guck mal, wie der andere Dungeon Master mich hier direkt im Anzweifeln ist. Ne, ne, ne, alles gut. Ja, alles gut, ja, valide. Ich schicke Merlin auf einen dieser Spitze der Türme, dass er sich da hinsetzen soll. Wir
+    [00:19:30] Spieler (Lunara Velora): würden uns gerne anmelden.
+    [00:19:32] Spieler (GM): Genau, als ihr näher kommt, spricht euch auch eine sehr grimmige Frau an, scheint irgendwie eine Priesterin, vielleicht eine Magierin zu sein, irgendwas in die Richtung. Und die steppt so eine Einstellung mal nach vorne. Seid gegrüßt! Mein Name ist Tara! Ihr seid neue Rekruten, richtig? Das ist richtig. Das, was der Goblin sagt. Ja, nennt mir eure Namen. Ich bin Krieg. Krieg. Zwei I und K am Ende. Und ihr seid? Ich bin Carlos mit C. Carlos, verstehe. Und ihr dort hinten? Ich bin einfach nur Finn. Einfallsreich. Nun, ihr seid wohl eine sehr bunte Bande. Seid wohl irgendwo ausgebrochen oder kommt aus einem Lande weit weg von hier, richtig? Richtig. Ich war schon überall. Ich komme von überall. Nun, ihr seht auch ein bisschen ungezähmt aus, aber keine Sorge. Die Nebelwacht wird euch lehren, was es bedeutet, sich zu pflegen. Nun, wie dem auch sei. Gut, tretet ein und folgt mir. Und die dreht sich um und geht voran in die Festung. Und die dreht sich so irgendwann um, um so ein bisschen wie eine Rundführung euch so ein bisschen was zu erklären. Nun gut, das hier ist wie gesagt Festung Nebelwacht. Das einzige Bollwerk, was euch alle noch abends ruhig schlafen lässt. Denn alles was weiter südlich...
+  verdict: ''
+  note: ''
+- id: c004
+  concept: characters/miqo
+  type: Character
+  tier: standard
+  claim: Später verwandelte er sich in einen Bären und versetzte dem Seraphen einen Prankenhieb.
+  session: 2026-05-13_RF_4afPD9Q_5AY
+  at: 00:45:26
+  url_at: https://www.youtube.com/watch?v=4afPD9Q_5AY&t=2726s
+  window: |-
+    --- Session 2026-05-13 ---
+    [00:43:57] Spieler (GM): kriegst 6 HP Schaden und wirst... Ja, wir machen das aber nicht bei sowas. Nein, nein. Du kriegst die 6 HP Schaden. Weil das ist so eine... Ist okay? Du wirst so enorm von dieser Wucht getroffen.
+    [00:44:43] Spieler (GM): Better not be a fear. Hello Spieler. Das ist ein 4. Aber es trifft, wir füllen den Damage.
+    [00:44:55] Spieler (Miqo): Und 21, ja, okay. Ich sag nur von vornherein, also das ist jetzt ein, also ich würde, weil ich ihn getroffen habe, ihn für Marked for Death machen. Also das macht jetzt für den Schaden aktuell noch keinen Unterschied. Okay. Dann mach ich später mehr Schaden und das ist gleich Double Damage, weil es mein First Strike ist in der Szene. Okay. Das heißt, ich roll jetzt erstmal den Schaden. Gerne, gerne. 2d6.
+    [00:45:26] Spieler (Miqo): So, das sind gleich bis 4 ab 15, also 30, aber magischen Schaden. Wie viel? 30, wegen dem Double Damage. Oh,
+    [00:45:35] Spieler (GM): damn. Und ihr seht, wie, also ihr von vorne seht, wie der Pfeil sich mehr oder weniger durch den Flügel bohrt von dem Seraphen. Und der schreit vor Wut auf. Es war mit 4 leider. Der dreht sich um und schmeißt sein Schwert nach dir. Und... Der wirft das weg. Der wirft das weg. Trifft dich eine Zehn. Dann beschreib mir, wie du diesem Schwert ausweichst, was einmal an dir vorbeigescheppert kommt.
+    [00:46:08] Spieler (Miqo): Ja, ich hechte so. Ich stehe ja da auf den Kisten und ich würde einfach nach links auf den Haufen von Skeletten, weil die schön weich aussehen, so zur Seite hechten.
+    [00:46:16] Spieler (GM): Okay, bewegt deine Figur gern zur Seite. Ihr seid wieder dran. Fokus ist gerade auf Miko.
+    [00:46:26] Spieler (Dante): Ich würde gerne angreifen.
+    [00:46:29] Spieler (Dodo): Sollen wir den
+    [00:46:29] Spieler (Dante): Ring zerstören oder wollt ihr weiterhin angreifen auf den Seraphen? Zerstören, zerstören. Zerstören, unbedingt zerstören. Dann willst du es nochmal versuchen, Dodo?
+    [00:46:41] Spieler (Dodo): Ja, ihr habt hoffentlich, ihr wart ja während ich hier den einen Angriff noch getankt habe, habt ihr hoffentlich den Ring schon irgendwo auf den Boden gelegt. Jaja, das wurde gelegt. Okay, ich mache noch einmal so eine Handbewegung. Verpisst euch! Nimmt Schritt zurück und würde schon ausholen mit meinem Streitkolben. Du
+  verdict: ''
+  note: ''
+- id: c005
+  concept: characters/tibbet
+  type: Character
+  tier: standard
+  claim: Tibbet verfügt über ein breites Spektrum an Zaubern.
+  session: 2026-03-23_RF_niVxKtdQBn0
+  at: 00:02:28
+  url_at: https://www.youtube.com/watch?v=niVxKtdQBn0&t=148s
+  window: |-
+    --- Session 2026-03-23 ---
+    [00:01:00] Spieler (GM): Sehr cool, vielen Dank. Myko, tell us more.
+    [00:01:05] Spieler (Myko): Ja, ich bin Spieler, ich spiele heute Myko, das ist halt eine Funk-Rhetoride und der ist mit einer Karawane durchs Land gezogen, war da der Karawanenarzt. Deswegen versuche ich auch so ein bisschen die heile Rolle zu übernehmen.
+    [00:01:20] Spieler (GM): Alright, topi. Dann Nina.
+    [00:01:25] Spieler (Oma): Hallo, ich bin der Spieler und ich bin auch dabei. Nein, ich spiele eine Halbling-Baden, die schon ein bisschen in die Jahre gekommen ist und versuche hier dann nochmal ein bisschen was zu reißen, weil mein Mann hat mich einfach stehen lassen mit den ganzen Casino-Schulden und jetzt muss ich hier noch irgendwie im hohen Alter noch ein bisschen Geld verdienen. Oma braucht Mula. Ist
+    [00:01:49] Spieler (GM): die Frage, ob der Mann stehen gelassen wurde oder die Armbrust dafür gesorgt hat, dass er stehen geblieben ist? Ja. Okay, cool. Vielen Dank. Qual? Krall? Krall. Ich bin
+    [00:02:00] Spieler (Krall): Spieler, ich spiele Krall, eine Guardian, ein Galapag-Guardian. Genau, eine Schildkröte, ist generell so meeresaffin, ist auch schon ein bisschen in die Jahre gekommen und kämpft mit dem großen Zweihandhammer und möchte diese Welt besser verlassen, weil er sie vorgefunden hat und ist auch das Herz am rechten Fleck und versucht seine Gruppe zum Sieg zu führen.
+    [00:02:24] Spieler (GM): Alright, sehr cool, vielen Dank. Tibbet!
+    [00:02:28] Spieler (Tibbet): Ja, ich bin Spieler, ich spiele heute den kleinen Tibbet, einen kleinen Ribbet Sorcerer. Und ja, er ist noch relativ jung, ich bin frisch in diese Gruppe mit eingestiegen und möchte meine Fähigkeiten ausbauen und mein Schicksal neu schmieden.
+    [00:02:50] Spieler (GM): Alright, sehr cool, vielen Dank. Ja, für die da draußen, die noch gar keine Ahnung haben, was wir hier tun. Wir spielen mehr oder weniger so eine, ja, früher hieß es noch Megakampagne, jetzt ist es nochmal so ein größeres Level geworden. Und zwar, was ist es? Wir spielen eine Kampagne mit sehr, sehr vielen Gruppen. Und das heißt nicht nur, wir spielen am Tisch, sondern wir spielen auch online, wir spielen auch auf Events. Das heißt, diese Gruppe ist wirklich das erste Mal sehr zusammengewürfelt und wir werden... Sowohl hier spielen als auch mal auf irgendwelchen Events. Das heißt, wenn ihr Bock habt, auch mal mitzuzocken, dann kommt zum Beispiel zur Dokomi oder zu unserem Daggerheart-Event am 20.06. Genau, ja, und seid Teil dieser Kampagne. Und was das bedeutet, ist, dass ihr mehr oder weniger Einfluss auf die Kampagne habt. Das heißt, wenn jetzt zum Beispiel Gruppe A irgendwie ein Schloss niederbrennt und Gruppe B kommt dran vorbei auf der Dokomi, dann sehen sie, der Laden ist niedergebrannt. Alright, ja, ihr seid einer Gilde beigetreten und ihr hattet aus verschiedenen Gründen einfach Not am Geldbeutel oder sonstige Nöte und habt euch dafür entschieden, eine Quest anzunehmen. Und seit kurzem wird tatsächlich von Will auch eine sehr besondere Quest ausgeschrieben. Und zwar soll es ein Banditencamp irgendwo geben, das sich sehr versteckt hält. Man weiß nicht so ganz genau, wo sie sich aufhalten, aber man hat es auf so ein ganz kleines Gebiet eingegrenzt. Denn ein wichtiger Diplomat wurde brutalst ermordet und man vermutet sehr stark, dass die Silberkerne, also so nennt sich die Banditentruppe, dahinter steckt.
+  verdict: ''
+  note: ''
+- id: c006
+  concept: deities/dunkelheit
+  type: Deity
+  tier: standard
+  claim: Die bislang einzige dokumentierte Handlung der Dunkelheit ereignete sich im Zusammenhang mit einer Mine.
+  session: 2026-08-06_Team-B_0HyPHao8s_k
+  at: 00:44:16
+  url_at: https://www.youtube.com/watch?v=0HyPHao8s_k&t=2656s
+  window: |-
+    --- Session 2026-08-06 ---
+    [00:42:52] Spieler (Bruma Stormrak): Ich weiß nicht, wie ich damit umgehen soll. Und diese... Die Leute hören nicht zu. Sie wissen nicht, dass das... Warum sollen wir unnötige Tiere hier verwandeln? Warum sollen wir die Gegner unterstützen? Ich weiß nicht. Ich bin verwirrt. Aber ich habe neues Wissen für euch. Und ich fange an, an die Karte zu denken, die ich gesehen habe. Diese Schlachtpläne. Und mir das im Kopf so vorzustellen, was ich da gesehen habe.
+    [00:43:26] Spieler (Bruma Stormrak): Ich habe gesehen, ja.
+    [00:44:04] Spieler (GM): platzen so ein paar Wunden auf und du hörst plötzlich, als würde der Körper wieder atmen, so ein Röcheln. Aber er hört nur zu, er redet nicht. Erzähl erstmal weiter.
+    [00:44:16] Spieler (Bruma Stormrak): Wir haben ein Lager, ihr habt es ja mitbekommen. Ich weiß, dass ihr es wart. Ich habe eure Stimme empfangen. Ich weiß, ich höre sie nicht häufig, aber ich weiß, wenn ich euch höre. Und ihr habt mich, ich weiß nicht, gewarnt. oder was auch immer das war. Aber ihr habt mir was von der Dunkelheit erzählt und ich will wissen, wie man sie besiegt. Oder zumindest, wie ich diese Kraft mein eigen nennen kann. Hauptsache, ich kann mehr erforschen, mehr herausfinden über neue Wesen. Ja, und die Schlachtpläne, genau. Wir haben gesehen, dass da eine große Armee war und wir haben ihren Vorstoß... Borschturstrupp schon ausgeschaltet. Und dann gibt es mehr Tote.
+    [00:45:14] Spieler (GM): Der antwortet nicht, der fängt nicht mit dir an zu reden oder sonstiges. Du siehst, wie der seine Hand nimmt und dann in seine Brust rammt. Du hörst es knacken, grausam. Und du siehst, wie der eine Rippe rauszieht. Wirklich, es ist ein brutal ekliger Anblick, aber für dich nichts Neues. Und du siehst, wie dieses Wesen einfach nur mit beiden Händen diese Rippe umfasst. Dann siehst du, wie die Enden so ein bisschen verschwinden, spitz werden. Und dann hast du einfach nur so einen Knochendolch. Es ist literally ein großer Zahnstocher, aber hat so ein bisschen eine Formung wie ein Dolch. Und der eröffnet die Hand und hält den so vor dich. Und du siehst so ganz kurz die Augen wieder so twitchen und so ein kleines Leuchten ganz kurz über die Augen wandern. So nach dem Motto. Das ist deine Antwort auf deine Frage.
+  verdict: ''
+  note: ''
+- id: c007
+  concept: deities/joranja
+  type: Deity
+  tier: standard
+  claim: In Kleinringtal steht eine Joranja gewidmete Statue.
+  session: 2026-08-06_Team-B_0HyPHao8s_k
+  at: 01:11:07
+  url_at: https://www.youtube.com/watch?v=0HyPHao8s_k&t=4267s
+  window: |-
+    --- Session 2026-08-06 ---
+    [01:09:47] Spieler (GM): Und der reicht dir so ein kleines Fläschchen. Falls es dir mal irgendwann schlecht gehen sollte, das hilft dir ganz bestimmt. Das ist ein Stress Potion und das ist ein W6 plus 1. W6 plus 1. Danke.
+    [01:10:11] Spieler (Bruma Stormrak): Holzwert gegen einen Haltrank. Danke und... Wenn du in Zukunft mehr von diesen Figuren schnittst, dann würde ich dir vielleicht auch gerne eine abkaufen.
+    [01:10:23] Spieler (GM): Das klingt fair.
+    [01:10:37] Spieler (Kaya): Wollen wir uns zusammen in die Taverne begeben? Also Kaya hat bisher die ganze Zeit nur versucht, die Halblinge noch ein bisschen aufzumuntern. Beziehungsweise ihnen zu helfen, sich da ein bisschen zu setteln.
+    [01:10:49] Spieler (Sange): Wenn wir uns Richtung Taverne begeben, kommen wir an der Statue von Joranja vorbei. Richtig. Ich würde einmal... Adelia grüßen, mich verbeugen und dann würde ich auf den Sockel der Statue eine Handvoll Münzen legen.
+    [01:11:07] Spieler (GM): Du tust das? Eine Handvoll? Okay, eine Handvoll. Und tatsächlich siehst du, wie die Eule auf dich zukommt und ihre Hand vor dein Gesicht so schweben lässt und ein kurzes Gebet ausspricht. Ihr wart seins, richtig?
+    [01:11:31] Spieler (Sange): Das ist korrekt, Meisterin Adelia.
+    [01:12:08] Spieler (GM): auf deiner sehr beschwerlichen Reise bescheren. Und du fühlst dich sehr beflügelt und du darfst deinen nächsten Rally Die als Crit verwenden. Du rechnest einfach keinen extra Die drauf, du rechnest einfach Autocrit.
+    [01:12:35] Spieler (Sange): Ach so, jetzt, okay. Aber der
+  verdict: ''
+  note: ''
+- id: c008
+  concept: deities/kaleandra_die_rote
+  type: Deity
+  tier: deep
+  claim: Sie selbst tritt nicht in Erscheinung.
+  session: 2026-03-10_RF_Kr9_AC2XtOw
+  at: 02:03:55
+  url_at: https://www.youtube.com/watch?v=Kr9_AC2XtOw&t=7435s
+  window: |-
+    --- Session 2026-03-10 ---
+    [02:02:28] Spieler (Dodo): Wie ist es jetzt mit dem sehr Freudentweis?
+    [02:02:33] Spieler (GM): Nun, ihr tut einfach so, als hätten wir uns irgendwie geeinigt. Und der Brief von Nox konnte mich zufriedenstellen. Ist das ein Deal? Auch wenn Nox... überwiegend all seinen Leuten von Ehrenfels vertraut. Wir können nie wissen, wer doch auf der Seite des Gegners spielt. Alles klar. Lindo Laut noch eine Frage? Lindo Laut schaut die ganze Zeit ein bisschen grimmiger rein. Schaut woraus so ein bisschen an. Zu viele Fragen, um sie jetzt alle zu stellen, doch am wichtigsten wäre mir aktuell... Was ist euer Bezug zu den Göttern überhaupt? Und der Blick zur Statue, die neben euch steht? Nun, ich habe immer schon einem neuen Gott gedient. Schon viel, viel länger. Zumindest meinen Aufzeichnungen zu urteilen. Eine eher unbekannte Göttin, aber Kaleandra, die Rote, ist eine der Vampirgötter. Und...
+    [02:03:55] Spieler (GM): Sie hat mir, soweit ich weiß, immer sehr gut geholfen, was meine Ziele anging. Allerdings ist sie nicht so zimperlich mit lebenden Wesen,
+    [02:04:12] Spieler (Lindo Laut): aber ein
+    [02:04:16] Spieler (GM): neuer Eintrag für den Pokedex. Ich verstehe. Alright, dann würde ich sagen, für heute beenden wir die Session. Vielen Dank fürs Zocken. Danke an die Zuschauer da draußen, die dabei waren.
+    [02:04:41] Spieler (GM): Ciao! Ciao!
+  verdict: ''
+  note: ''
+- id: c009
+  concept: deities/kaleandra_die_rote
+  type: Deity
+  tier: deep
+  claim: In der Kampagne wird sie bislang ausschließlich durch die Aussage ihres Dieners Voras eingeführt, der erklärt, dass er ihr dient und von ihr bei der Verfolgung seiner Ziele unterstützt wird.
+  session: 2026-03-10_RF_Kr9_AC2XtOw
+  at: 02:03:55
+  url_at: https://www.youtube.com/watch?v=Kr9_AC2XtOw&t=7435s
+  window: |-
+    --- Session 2026-03-10 ---
+    [02:02:28] Spieler (Dodo): Wie ist es jetzt mit dem sehr Freudentweis?
+    [02:02:33] Spieler (GM): Nun, ihr tut einfach so, als hätten wir uns irgendwie geeinigt. Und der Brief von Nox konnte mich zufriedenstellen. Ist das ein Deal? Auch wenn Nox... überwiegend all seinen Leuten von Ehrenfels vertraut. Wir können nie wissen, wer doch auf der Seite des Gegners spielt. Alles klar. Lindo Laut noch eine Frage? Lindo Laut schaut die ganze Zeit ein bisschen grimmiger rein. Schaut woraus so ein bisschen an. Zu viele Fragen, um sie jetzt alle zu stellen, doch am wichtigsten wäre mir aktuell... Was ist euer Bezug zu den Göttern überhaupt? Und der Blick zur Statue, die neben euch steht? Nun, ich habe immer schon einem neuen Gott gedient. Schon viel, viel länger. Zumindest meinen Aufzeichnungen zu urteilen. Eine eher unbekannte Göttin, aber Kaleandra, die Rote, ist eine der Vampirgötter. Und...
+    [02:03:55] Spieler (GM): Sie hat mir, soweit ich weiß, immer sehr gut geholfen, was meine Ziele anging. Allerdings ist sie nicht so zimperlich mit lebenden Wesen,
+    [02:04:12] Spieler (Lindo Laut): aber ein
+    [02:04:16] Spieler (GM): neuer Eintrag für den Pokedex. Ich verstehe. Alright, dann würde ich sagen, für heute beenden wir die Session. Vielen Dank fürs Zocken. Danke an die Zuschauer da draußen, die dabei waren.
+    [02:04:41] Spieler (GM): Ciao! Ciao!
+  verdict: ''
+  note: ''
+- id: c010
+  concept: deities/schlangengott_schlangenpraesenz
+  type: Deity
+  tier: deep
+  claim: Die Belege enden vor einer Entscheidung.
+  session: 2025-06-03_RF_jtYR4Je0a18
+  at: 01:42:46
+  url_at: https://www.youtube.com/watch?v=jtYR4Je0a18&t=6166s
+  window: |-
+    --- Session 2025-06-03 ---
+    [01:42:01] Spieler (GM): Ihr seht eine Art fünfköpfige Schlange, humanoid, aber dann doch Schlange. Die dazwischen steht, aber so geisterhaft, geisterschemhaft. Und so ein bisschen dazwischen am Tanzen ist. Also wirklich wie so eine Schlange, die so... Wie sagt man das? Hypnotisiert? Entranst? Entranst ist vielleicht, ja.
+    [01:42:28] Spieler (Rotunas): Mehr macht sie ja nicht. In dem Augenblick,
+    [01:42:30] Spieler (GM): als ihr halt alle jetzt den Blick wahrscheinlich darauf werft, weil ihr erschrocken seid, kommt sie so ein bisschen aus diesem Schein heraus. Und ihr hört so eine Art Stimme.
+    [01:42:46] Spieler (GM): Ist nicht eure Sprache, aber ihr versteht sie trotzdem, warum auch immer.
+    [01:42:59] Spieler (Rotunas): Ich glaube er flüstert, aber sein Mikrofon nimmt das nicht auf. Ah, das kann
+    [01:43:02] Spieler (GM): sein. Okay, ich sag mal auf Deutsch hier. Es ist schwierig das nachts mal ohne zu flüstern. Okay, ich mach auf Deutsch.
+    [01:43:15] Spieler (Lindo Laut): Ihr seid hier. Willkommen am Schrein. Was wünscht ihr?
+    [01:43:29] Spieler (GM): Vielleicht hat das andere Mikro das gehört und mein Headset-Mikro nicht. Headset ist mit Discord, richtiges Mikro ist mit euch.
+    [01:43:46] Spieler (Lindo Laut): Wollt ihr dem Gott der Schlangen dienen, dann berührt die Kristalle. Ich
+    [01:43:58] Spieler (Esterossa): hätte eher mehr Bock auf einen Schlangen-Jazz.
+    [01:44:01] Spieler (Lindo Laut): Dann trete ich wieder von meinem Schock hervor und bin so, wir haben gerade keine Zeit. Für Schlangen. Für Schlangen haben wir jetzt keine Zeit.
+  verdict: ''
+  note: ''
+- id: c011
+  concept: domains/abyssalis_abyssares
+  type: Domain
+  tier: standard
+  claim: Ihr Ruf gründet auf der Verheißung großer Macht für alle, die die Schrecken dieser Welt überstehen; was dort droht oder welche Prüfungen Überlebende erwarten, ist nicht bekannt.
+  session: 2025-09-30_RF_bUT7Mc2hjUY
+  at: 01:50:28
+  url_at: https://www.youtube.com/watch?v=bUT7Mc2hjUY&t=6628s
+  window: |-
+    --- Session 2025-09-30 ---
+    [01:49:55] Spieler (Esterossa): wäre mir nicht in den alten Schriften geläufig gewesen, die ich gelesen habe. Nun,
+    [01:50:01] Spieler (Rotunas): die
+    [01:50:02] Spieler (GM): Splitterwelt ist mehr oder weniger durch den Krieg entstanden zwischen den alten und den neuen Göttern. Eine Art Zwischenwelt mit geplagten Seelen und unzähligen Verbindungen. Eine Welt, die sich zwischen den Circle Below und den Hallows Above abspielt.
+    [01:50:28] Spieler (GM): und dazwischen gibt es ein Tor, so die Schriften. Das führt in eine vergessene Welt, eine alte Bastion der alten Götter. Der Name dieser Welt ist, ich weiß, Abyssalis oder Abyssares, irgendwie in sowas in die Richtung. Es ist eine Welt des Schreckens. Es ist eine Horrorgeschichte, die erzählt worden ist. Doch dort, wer dort... überlebt, kommt meistens mit sehr viel Macht zurück. Und so sagt man, dass die neuen Götter den Krieg damals nur gewonnen haben, weil einige der alten Götter in dieser Welt gefangen genommen worden sind. Von was genau, weiß man nicht. Aber nur so konnten die neuen Götter knapp den Sieg erringen. Vielleicht ist es nur eine Geschichte. Vielleicht ist es aber auch die Wahrheit. Wer weiß. Ich weiß nur...
+  verdict: ''
+  note: ''
+- id: c012
+  concept: domains/celestische_ebene
+  type: Domain
+  tier: standard
+  claim: Weiterführende Angaben zu ihrer Beschaffenheit, Zugänglichkeit oder Rolle in der Kampagne sind aus den bisherigen Belegen nicht ableitbar.
+  session: 2025-05-27_RF_bamCIB_CkR8
+  at: 00:17:33
+  url_at: https://www.youtube.com/watch?v=bamCIB_CkR8&t=1053s
+  window: |-
+    --- Session 2025-05-27 ---
+    [00:17:14] Spieler (Dodo): Nochmal ganz kurz. Gerne. Spielen wir jetzt heute mit Level 1?
+    [00:17:18] Spieler (GM): Wir spielen am besten, weil das zeitlich passt, mit Level 1 Charakteren.
+    [00:17:23] Spieler (Cookie): Aber ich bin noch nicht fertig. Immer
+    [00:17:27] Spieler (GM): noch nicht? Was brauchst du denn noch?
+    [00:17:31] Spieler (Cookie): Heritage und Experience.
+    [00:17:33] Spieler (GM): Heritage ist ja deine... Also es ist ja beides. Es ist ja Community und Ancestry. Das heißt, deine Rasse... Du wolltest ja den Frosch spielen, richtig? Oder wolltest du wieder was Gemischtes nehmen?
+    [00:17:46] Spieler (Cookie): Oh, ich hatte... Jonas schreibt,
+    [00:17:59] Spieler (GM): random Rekruten gegen zufällige Dämonen antreten lassen. Klingt vernünftig, finde ich auch. Dankeschön. Einer, der es erkennt und anerkennt. Das ist doch mal was Schönes. Das ist
+    [00:18:11] Spieler (Cookie): einfach nur
+    [00:18:14] Spieler (GM): deine Rasse und woher du kommst, aus welcher Community, aus welchem. Dann müsstest du fertig sein. Nicht vergessen, bitte auf eure... Inventar gehen oder auf eure Items und die immer auswählen, damit auch alles aktiv funktioniert.
+    [00:18:30] Spieler (Cookie): Und ich war im Untergrund. Genau. Das heißt, ich kann im Dunkeln gut sehen. Könnt ihr mal bitte aufhören zu schreiben, das ploppt mir die ganze Zeit auf und ich muss das immer wegdrücken.
+    [00:18:42] Spieler (GM): Hat sie sogar tatsächlich. Okay,
+    [00:18:51] Spieler (Cookie): äh, ja. So, dann hab ich das hier und Experience. Was war das nochmal? Ich
+    [00:19:00] Spieler (GM): bin weg. Euch noch viel Spaß. Danke, Baba. Schönen Abend noch. Wir telefonieren später oder morgen.
+  verdict: ''
+  note: ''
+- id: c013
+  concept: domains/hollows_above
+  type: Domain
+  tier: standard
+  claim: Die Gruppe erkennt daran, dass seine Seele verloren ist und ihr der gewöhnliche Weg ins Jenseits versperrt bleibt.
+  session: 2025-11-25_RF_wd5R4fJfngY
+  at: 01:46:26
+  url_at: https://www.youtube.com/watch?v=wd5R4fJfngY&t=6386s
+  window: |-
+    --- Session 2025-11-25 ---
+    [01:45:03] Spieler (Dodo): Das heißt, wir können davon ausgehen, dass es auf Untote auch nicht reagiert, weil die sind ja auch nicht lebendig. Durchaus eine gute Vermutung.
+    [01:45:17] Spieler (Rotunas): Kannst du das aufhören lassen zu wachsen?
+    [01:45:53] Spieler (Rotunas): aufhören lassen. Tatsächlich. Ist
+    [01:45:54] Spieler (Esterossa): ja tot.
+    [01:45:59] Spieler (Rotunas): Warte mal, ist er tot?
+    [01:46:01] Spieler (GM): Nee, ist sowas von tot. Oh, Lindo Laut und Rotunas, ihr dürft gerne mal zusammenwürfeln auf Knowledge. Ihr addiert euren Knowledge-Wert.
+    [01:46:11] Spieler (Rotunas): Okay, lass mal Knowledge.
+    [01:46:14] Spieler (GM): 15. 15 plus... 9,5.
+    [01:46:26] Spieler (GM): Ihr kommt gemeinsam auf den Gedanken, dass die Seele von dieser armen Gestalt auch nicht mehr Teil irgendwie des Himmels werden kann, beziehungsweise der Hollows Above, sondern diese Seele wurde zwungenermaßen in die Splitterwelt gezogen. Ey, lol. Welche Tür bist du denn gerannt? Ihr rennt hier einfach vor. Ja, aber wir machen eine Side-Mission. Side-Quest, ich merke es schon. Aber ja, jetzt darfst du gerne angreifen, wenn du möchtest. Aber was heißt, also mit einem Crit weiß ich dann jetzt noch genauer, wie ich den vielleicht doch wieder in die Hollows above kriegen kann? Nein, du kriegst den nicht mehr. Der ist weg. Die Seele ist weg. Okay. Wir wissen es beide jetzt. Ihr wisst es beide jetzt, genau. Die Seele ist lost. Die Leiche verbrennen nennt man Wikingerbegleitung. Das ist eine Ehre. Aber eine Ehre für wen Fremdes? Gar nichts gemacht. Gar nichts. Nur einmal gezogen.
+    [01:47:32] Spieler (Esterossa): Dieses Licht, das sieht so aus wie Disco Disco Party Party.
+    [01:47:36] Spieler (GM): Disco Disco. Okay, ich bin bei 18. Und du schleuderst Flammen, wirklich wie so, wie Avatar, nicht Avatar Roku, wie
+  verdict: ''
+  note: ''
+- id: c014
+  concept: domains/pocket_domain
+  type: Domain
+  tier: standard
+  claim: Später holt er die Leiche wieder heraus, um den Basilisken abzulenken.
+  session: 2026-08-18_Team-A_10swvSz6k7U
+  at: 00:52:22
+  url_at: https://www.youtube.com/watch?v=10swvSz6k7U&t=3142s
+  window: |-
+    --- Session 2026-08-18 ---
+    [00:50:57] Spieler (Gunther): Lassen wir den
+    [00:50:58] Spieler (Lunara Velora): da jetzt liegen? Das
+    [00:51:02] Spieler (GM): tote Viech?
+    [00:51:04] Spieler (Lunara Velora): Ja, der bleibt da jetzt liegen. In diese idyllische Landschaft lassen wir jetzt so die Fichte einfach.
+    [00:51:09] Spieler (Gunther): Na, ich verstehe Lunaras Argumentation. Er liegt sehr nah am Fluss. Wenn er anfängt irgendwie zu rotten, dann könnte es tatsächlich ein Problem mit der Trinkwasserversorgung geben. Weiter flussabwärts.
+    [00:51:25] Spieler (Lunara Velora): Genau das habe ich mir auch gedacht.
+    [00:51:27] Spieler (GM): Das ist für einen Premium-Arroganz-Agenöse. Vielleicht. Ich würde davor noch kurz zu Gunther sagen, by the way, amazing performance, du darfst dir anstresst hier. Ich
+    [00:51:40] Spieler (Gunther): nicker anerkennt, ich nicker anerkennt.
+    [00:51:42] Spieler (GM): Und ich würde einfach halt mit meiner Feuermagie diesen Korpus verbrennen. Du merkst, das hat keine Wirkung. Magie...
+    [00:51:54] Spieler (Lunara Velora): Der ist nicht magieresistent,
+    [00:51:58] Spieler (GM): nein. Girls, Feuer bringt irgendwie nichts. Er hat keine Feuerresistenz. Also...
+    [00:52:04] Spieler (Lunara Velora): Wie wir rausgefunden haben, ist das ein Viech von vor dem Götterkrieg, also... Oder währenddessen.
+    [00:52:10] Spieler (GM): Maybe? Okay, ich habe jetzt gerade keine Zeit dafür. Und wenn euch der Fluss wichtig ist, ich würde das Ding in meine Pocket Domain packen, damit es erstmal aufgeräumt ist. Und ihr seht, wie dieser Leichnam verschwindet. Und ich bin so, ich wusste nicht, also von Dämonen im Avisalis besiegen zu... und sagst nur so ein bisschen zu mir selber, zum Müllabfuhr im Felstal spielen. Weiß ich nicht, wie das passiert ist.
+    [00:52:38] Spieler (Lindo Laut): Ihr seht das einfach nur als, ich sag mal, sehr naturbewusste kleine Fee. Finde ich sehr gut.
+    [00:52:48] Spieler (Lunara Velora): Aber lasst uns weiter. Ich sag so ein bisschen vor mich hin, boah, ich hätte auch einfach seine Seele verschwinden lassen können.
+    [00:52:56] Spieler (GM): Das flüsterst du wie laut. Du bist so eine Ziege, keiner hört dich.
+    [00:53:02] Spieler (Lunara Velora): Ich hab's mir so richtig gesagt. Ich hab's vielleicht so ein bisschen die Lippen dabei bewegt.
+    [00:53:10] Spieler (Lindo Laut): Dodo, ich will nur sagen, dort ist weiter
+    [00:53:14] Spieler (GM): Klippe das Thema. Vielleicht sollten wir es hier versuchen. Außer ihr wollt das gleiche sehen, wie ihr nochmal in die Tiefe fallt. Nichts für ungut. Und der da... Oh
+    [00:53:25] Spieler (Lindo Laut): ja, einmal bin ich auch da lang gelangt. Aber beim letzten Mal bin ich über diesen... Der Weg ist ein bisschen verschüttet. Aber Lindo Laut sagt
+    [00:53:35] Spieler (GM): uns, kann man dort weitergehen. Ich habe das Gefühl, wir sind schon, man kann hier gut drauf treten und springt so gegen so einen Stein und so. Der wirkt auch fest. Ich nutze einen 4-Point und dieser kleine Stein löst eine kleine Lawine aus, nichts Großes, aber der rollt entgegen. Miaomani springt wirklich wie so eine losgewordene Katze oben auf diesem Ding und der Lobrecht wirft einen Rettungswurf, beziehungsweise eine Reaction-Roll. und schafft es nicht und kriegt so einen von diesen Steinen so ein bisschen an der Schulter ab und brüllt einfach nur vor Schmerz. Ah, Lindo Laut, pass doch auf! Sorry, sorry. Meiner, äh, ja, passt, ja, ist doch, vielleicht paar sind locker, paar sind nicht so fest.
+  verdict: ''
+  note: ''
+- id: c015
+  concept: domains/zwischenreich
+  type: Domain
+  tier: standard
+  claim: 'Der Übertritt in das Zwischenreich erfolgte nicht freiwillig: Dodo und Esterossa wurden mitten im Kampf hineingezogen.'
+  session: 2025-07-22_RF_BRRCUgW4xRo
+  at: 02:40:44
+  url_at: https://www.youtube.com/watch?v=BRRCUgW4xRo&t=9644s
+  window: |-
+    --- Session 2025-07-22 ---
+    [02:39:17] Spieler (Lindo Laut): im Vorteil wegen. Weil? Und consort with nobles or high. Okay, fair.
+    [02:39:29] Spieler (GM): Ja, okay. Der Dragonborn nickt dir zu. Ich habe nicht viel mitbekommen, was passiert ist. Dementsprechend habe ich nur das wahrgenommen, was ich gesehen habe. Von mir aus lasst es vier für euch sein und ich behalte einen für die Umkosten der Stadt. So sei es. Ich danke euch auf jeden Fall für eure Mühen. Wenn ihr etwas braucht, sagt mir Bescheid und lasst es mich wissen. Ansonsten, Herr Gildemeister, ich werde nun an die Arbeit gehen und die Problematik hier ein bisschen weiter zu untersuchen. Sehr wohl, Meister Pyrandras. Und der Meister verschwindet wieder Richtung Stadtkern. Und der Gildemeister kommt auf euch zu. Ihr seid wahrhaftig in irgendwelchen Schlamasseln drin, die nun auch weitere Kreise ziehen. Ihr seid ja erst vor kurzem aus dem Zwischenreich wieder aufgetaucht. Bekommt Cookie auch was davon? Wichtig und richtig, schreibt Cookie im Chat.
+    [02:40:44] Spieler (GM): Nun, wer auch immer oder wem auch immer ihr ans Bein gepinkelt habt, ihr solltet euch vielleicht damit befassen, entweder weniger Lärm zu machen oder diesem mysteriösen Auftraggeber auf die Schliche zu finden. Mein Tipp? Entweder ihr versucht irgendwie eine magische Spur aufwendig zu machen, was nicht ganz so einfach wird, aber anhand des Ringes oder vielleicht auch des Briefes lässt sich da etwas tun. Ansonsten, wie gesagt, werde ich den Dolch ein wenig untersuchen. Er scheint ein ganz spezielles Material zu sein. Oder ihr versucht es in der Hauptstadt von Brabarand. Doch... Dort könntet ihr sicherlich auch weitere Attentäter treffen, wenn die Bezahlung immer noch aussteht.
+  verdict: ''
+  note: ''
+- id: c016
+  concept: events/gebet_an_die_schlangengottheit_und_zerstoerung_der_seelen
+  type: Event
+  tier: brief
+  claim: Die Gruppe diskutiert, ob dies eine Erlösung oder Zerstörung war.
+  session: 2025-06-17_RF_tl76B4V0io8
+  at: 01:32:30
+  url_at: https://www.youtube.com/watch?v=tl76B4V0io8&t=5550s
+  window: |-
+    --- Session 2025-06-17 ---
+    [01:31:13] Spieler (Cookie): Also du weißt schon, dass die alten Götter noch gut viel Macht haben, obwohl die nicht mehr da sind. Also das haben die uns schon ein paar Mal gut gezeigt. Und du willst jetzt trotzdem riskieren, dass deine Seele hier... immer festhängt. Befreit uns! Bete für uns! Können wir nicht einfach beten und gehen?
+    [01:31:38] Spieler (Dodo): Also ich würde es probieren. Ich würde auf ein Knie runter gehen, mein Schild auf dem Boden abstellen und so in mich gehen. Ich würde halt ein stilles Gebet machen. Ich würde so ein bisschen versuchen, ob ich eine Connection herstellen kann zu der Schlangenfigur. Die, mit der ich ja schon connected habe, mehr oder weniger. Aber das ist ja ein alter Gott.
+    [01:32:03] Spieler (Lindo Laut): Das ist ja ein alter Gott.
+    [01:32:07] Spieler (Dodo): Aber das Gebet würdest du ja wahrscheinlich... Du hau das Gebet mal raus.
+    [01:32:13] Spieler (GM): Gib mir mal so zwei, drei Sätze.
+    [01:32:17] Spieler (Dodo): Ich würde sagen, diese gefallenen Krieger scheinen lang genug gelitten zu haben. Bitte, ja, bitte erlöse sie.
+    [01:32:30] Spieler (GM): Und ihr hört eine Stimme. Wer denn? und ihr seht nur, die ganzen Köpfe in diesem Netz, die schreien vor Brutalität, vor Schmerzen und ihr seht einfach nur, wie diese Köpfe vor euch, also nur dieser Bereich vor euch zur Asche zerfällt.
+    [01:32:53] Spieler (Rotunas): Was hast du getan? Den
+    [01:32:55] Spieler (Dodo): Weg freigemacht. Den Weg freigemacht, let's go. Ich weiß
+    [01:32:58] Spieler (Lindo Laut): das gut fand, aber effektiv. Du hast
+    [01:33:01] Spieler (Cookie): dafür gerade einfach irgendwelche Seelen verbrannt, aber okay.
+    [01:33:05] Spieler (Dodo): Wir haben sie befreit. Ich glaube nicht. Ich glaube nicht. Ich glaube nicht. Ich glaube nicht. Ich glaube nicht. Ich glaube nicht. Ich glaube nicht. Ich glaube nicht. Ich glaube nicht.
+    [01:33:32] Spieler (Lindo Laut): Ja, man sieht trotzdem, aber der Effekt, dass die im Nachteil dich angreifen, ist glaube ich trotzdem aktiv.
+    [01:33:37] Spieler (Rotunas): Achso, jaja, klar, okay.
+    [01:33:38] Spieler (GM): Ihr seht wieder einen großen Berg von Wertgegenständen und allerhand Schätzen. Und in diesem kleinen Gefängnis seht ihr auch jemanden. Wo ist das hier hin? Rechts oder links? In dem da, wo Lindo Laut gerade ist. Warte, ich habe sie scheinbar nicht reingesteckt. Kriege ich da rein? Okay, ich krieg sie grad nicht rein, aber ich grusel mal einfach oben drauf.
+  verdict: ''
+  note: ''
+- id: c017
+  concept: events/kampf_gegen_den_mutierten_frosch
+  type: Event
+  tier: brief
+  claim: Lunara friert es ein, Gunther und Lindo Laut fügen ihm Wunden zu, und Lunara belegt es mit Voice of Dread.
+  session: 2026-08-18_Team-A_10swvSz6k7U
+  at: 00:29:04
+  url_at: https://www.youtube.com/watch?v=10swvSz6k7U&t=1744s
+  window: |-
+    --- Session 2026-08-18 ---
+    [00:27:48] Spieler (Gunther): Mit wenig Range und Geschick.
+    [00:27:53] Spieler (Gunther): Achtung Leute, ich sehe da unten einen Gribbit. Das ist ein Gribbit der alten Zeit. Kategorie Gollum.
+    [00:28:02] Spieler (Lindo Laut): Gribbit habe ich noch nie gehört.
+    [00:28:03] Spieler (Gunther): Ja, leg da dran, weil ich das mir gerade ausgedacht habe. Stell dir vor, Dodo.
+    [00:28:07] Spieler (Dodo): Ah, Gribbit sagt mir was, aber was ist ein Gollum? Das ist eine
+    [00:28:12] Spieler (Gunther): Kategorie. Das ist verflucht. Leute, Leute, Leute. Verstehe. Du hast eine Rasse und die ist verflucht.
+    [00:28:20] Spieler (GM): Ich hab's voll vergessen, aber wir sind ja im Deutschen hier. Sorry, das ist ein Quark.
+    [00:28:27] Spieler (Gunther): Ich wusste, dass du dich darüber lustig machst. Ich wusste, dass du dich darüber lustig machst.
+    [00:28:33] Spieler (GM): Ein Fallout-Frosch, yes. Ja, was macht ihr? Sonst mach ich gleich was.
+    [00:28:40] Spieler (Lunara Velora): Ich mach was.
+    [00:28:43] Spieler (Lunara Velora): Ich sehe das und der steht so im Fluss drin, oder? Der
+    [00:28:47] Spieler (GM): klettert hier gerade diese Säule hoch und ich höre es auch ganz kurz ein bisschen knacken, so als wenn so Steine rausgezogen werden aus Versehen.
+    [00:28:54] Spieler (Lunara Velora): Würdest du sagen, die sind glitschig, also sind nass die? Ja, definitiv. Die Steine?
+    [00:29:01] Spieler (GM): Moßig und nass.
+    [00:29:04] Spieler (Lunara Velora): Ich probiere... Ich weiß nicht, ob es funktioniert. Ich probiere es jetzt einfach. Das ist mir einfach gerade eingefallen. Ich würde das musikglitschige in Eis verwandeln, sodass er sich da quasi nicht mehr dran festkrallen kann. Oh, das ist clever. Würde dafür ein Spellcast rollen. Wenn
+    [00:29:24] Spieler (Lindo Laut): ich das sehe... Ich kann nichts dazu machen. Warte kurz, Lindo Laut. Lass kurz Lunara. Achso, okay. Ich würde ihre Magie versuchen zu verstärken und ein Hope dafür geben. Okay, gerne. Wie würdest du sie supporten? Also ich sehe, dass sie sich gerade konzentriert und ich würde einfach so ein bisschen Magie von mir einfach an sie abgeben. Wie so ein kleines Geschenk an Magie. Ihr
+    [00:29:51] Spieler (GM): seht, wie so ein paar magische Funken so über Lunara weben und deinen Zauber umso stärker machen. Würfel gerne im Vorteil.
+    [00:30:01] Spieler (Lunara Velora): Den habe ich jetzt vergessen. Warte, hat er den jetzt gemacht?
+    [00:30:06] Spieler (GM): 14 hast du, 15 und plus 3?
+    [00:30:08] Spieler (Lunara Velora): 15 und plus 4 sind 19. Habe ich mit Hope oder mit 4 gewürfelt? Hope war das. Das nehme ich doch gerne mit.
+    [00:30:18] Spieler (GM): Ihr seht tatsächlich, wie das Ding an der Wand, ich mache mal den fliegend, damit das so ein bisschen aussieht, als würde er hochklettern. Ihr seht, wie das Biest tatsächlich einfriert und sich nicht losreißen kann im ersten Augenblick. Ihr seid noch dran.
+  verdict: ''
+  note: ''
+- id: c018
+  concept: events/kampf_gegen_die_banditen_in_den_katakomben
+  type: Event
+  tier: brief
+  claim: In einem kurzen, brutalen Kampf töten sie mehrere Gegner, darunter einen Armbrustschützen.
+  session: 2026-03-23_RF_niVxKtdQBn0
+  at: 02:08:00
+  url_at: https://www.youtube.com/watch?v=niVxKtdQBn0&t=7680s
+  window: |-
+    --- Session 2026-03-23 ---
+    [02:06:31] Spieler (Tibbet): Also eine 9.
+    [02:06:32] Spieler (GM): Eine 9, Arbeit 4. Ich schreibe mir den Punkt mal auf. Vielen Dank, vielen Dank. Oh, Entschuldigung. Ich hab die Tür aufgemacht. Du guckst dir die Türe an. Die hat kein Schloss. Kein Schloss oder sonstiges und du guckst auch so ein bisschen, da scheint auf jeden Fall keine Falle oder irgendwie ein Mechanismus zu sein, der irgendwas ausschlüsseln könnte.
+    [02:06:50] Spieler (Tibbet): Ja, dann drück ich die Tür mal auf, ne? Ja,
+    [02:06:52] Spieler (GM): die Türe schwingt auf und bumm, nein Spaß, es passiert nichts.
+    [02:07:01] Spieler (Tibbet): Ja, ich hab die Tür aufgemacht, komm mal rein, hier ist ein Gang. Sei bitte noch ein Liebling und
+    [02:07:08] Spieler (Oma): mach die Tür hinter dir zu, bevor du da auch mit rein...
+    [02:07:12] Spieler (Krall): Geh hier hinten, okay. Ich mache die Tür hinten zur Stube zu. Ich weiß nicht genau warum, aber...
+    [02:07:21] Spieler (Oma): Damit das hier nicht so aussieht, als wäre hier jemand gewesen. Wenn hier jemand runterkommt, dann denken die erstmal, die liegen alle in ihren Bettchen.
+    [02:07:29] Spieler (GM): Und stopp, alle bitte die Figuren stehen lassen.
+    [02:07:33] Spieler (Krall): Ja, die Blutlachen werden auch gar nichts verraten. Die sind bestimmt geschlafen gegangen.
+    [02:07:37] Spieler (GM): Als Tibbet mehr oder weniger durch den Gang läuft, in dem Augenblick schwingt die Tür auf. Ich nutze drei meiner vier Points. und auf dich stürmen bereits vorbereitet, oh das Ausrufezeichen war sehr cool by the way, sehr passend, stürmen Soldaten zu und hinten zwei Bogenschützen. Ich nutze erstmal die beiden Banditen, oh das ist ein Crit, das ist insgesamt kriegst du, das sind 19 physischer Schaden und die bekommst du ja. und die beiden Bogenschützen schießen ebenfalls auf den kleinen Ribbit. Ich würde beim Nachteil würfeln, weil du sehr klein bist und die beiden Soldaten jetzt davor stehen. Und die beiden Pfeile verfehlen dich um Längen.
+    [02:08:31] Spieler (Oma): Ähm... Ist das richtig, dass Tibbet nur einen von den Bogenschützen sieht?
+    [02:08:39] Spieler (GM): Nee, ihr müsstet da beide sehen können. Wir sehen nur hier den. Dann mach ich mal ganz kurz so. Ja.
+    [02:08:47] Spieler (Tibbet): Okay, dann sehen wir noch einen, den wir nicht sehen sollen.
+    [02:08:50] Spieler (GM): Ja, genau. Sehr gut. Aber gut, eure Augen waren so perfekt, dass ihr den, der sich da versteckt hat, ganz kurz mit so ein bisschen Stoff gesehen habt. Die Bogenschützen, wenn ihr gleich auf die zukommt, die stehen eigentlich hier hinten. Just in case.
+    [02:09:13] Spieler (Tibbet): Ja, ich bin ja da noch direkt in der Front. Ich würde jetzt einfach aus... Lieber Spieler? Reflex, weil ich auch angegriffen wurde, meinen Zauberkasten und zwar Reign of Blades. Oh ja. Ich hatte mir eigentlich überlegt, dass das so ein bisschen mit Wasser funktioniert, aber hier ist keine Wasserquelle in der Nähe, darum würde ich so vielleicht aus meinem Trinkschlauch da so Wasser rausbeschwören und die würden dann so so eine Art Eishaften werden und dann so auf die zufliegen. Ich würde
+  verdict: ''
+  note: ''
+- id: c019
+  concept: events/kampf_gegen_die_bugbaeren_an_der_burgmauer
+  type: Event
+  tier: brief
+  claim: Die Gruppe wird vor der Burg von Armbrustschützen angegriffen.
+  session: 2025-04-15_RF_YCpAz_syjaY
+  at: 00:48:00
+  url_at: https://www.youtube.com/watch?v=YCpAz_syjaY&t=2880s
+  window: |-
+    --- Session 2025-04-15 ---
+    [00:46:38] Spieler (Rotunas): Okay, dann...
+    [00:46:40] Spieler (Lindo Laut): Wieso? Was gibt's?
+    [00:46:43] Spieler (GM): Nö, ich dachte du wolltest es leiser machen, aber wenn du den da mit der Schockwelle durch die Gegend yeetest, dann schreit er wahrscheinlich... Nee, nee, nee,
+    [00:46:49] Spieler (Lindo Laut): ich mach schon so ein dickes Ding. Okay,
+    [00:46:52] Spieler (GM): dann hast du dann Wert für Magie oder sowas? Spellcast... Genau, das musst du würfeln. Also du würfelst praktisch 2w12 plus diesen Wert. Back to...
+    [00:47:13] Spieler (Lindo Laut): On a success, they have blasted back to far range and take 10 plus 2 damage. Wenn er
+    [00:47:19] Spieler (GM): da runterfliegt, ist er tot, keine Sorge. Ja, okay. Also du...
+    [00:47:30] Spieler (Lindo Laut): Ich glaube, ich mache hier... Du machst so deine
+    [00:47:34] Spieler (GM): Jiu-Jitsu-Moves und willst so eine Druckwelle nach vorne produzieren, aber irgendwie kommt da nur so ein kleiner Huster, so ein Niesen praktisch an und in dem Augenblick... dreht er sich um, weil er nur so ein wirklich so ein Millimeter nach vorne beschoben worden und brüllt ALARM!
+    [00:47:55] Spieler (Rotunas): Er hat ein Mikro, wir haben es nicht gehört. Und
+    [00:47:58] Spieler (GM): er brüllt Alarm.
+    [00:48:00] Spieler (Lindo Laut): Also, mäßig gut muss ich
+    [00:48:01] Spieler (Esterossa): zugeben. Okay, dann letztes Witz. Ja, ich muss kurz den Mutgewinn ändern.
+    [00:48:13] Spieler (Dodo): Da haben wir doch unseren YouTube-Short. Ja.
+    [00:48:18] Spieler (GM): Okay, aber trotzdem, ihr dürft gerne beginnen. Okay.
+    [00:48:25] Spieler (Rotunas): Ich habe ja bei meinem Background, dass ich gar kein Problem habe mit schwerem Terrain, weil ich in den Bergen und so aufgewachsen bin. Also springe ich und durch meine Größe springe ich einfach hier über die Mauer. So hoch, für mich ist die ja nicht, du kannst ja sehen, wie groß ich bin. Du kannst auch hoch springen, ja, ist gut. Und dann, wie weit der Typ da hinten, also ich weiß nicht, wie pinge ich jemanden, den da am Tor, siehst du den? Hier am Tor, ja. Was ist das für eine Range?
+    [00:48:56] Spieler (GM): Ich würde sagen, es ist Far Range. Far Range? Ja. Okay.
+    [00:49:02] Spieler (Rotunas): Far Range ist okay. Weil der hat das ja auch mitbekommen mit Alarm, nehme ich an, oder?
+    [00:49:10] Spieler (GM): Die Mauern haben das ganz gut wieder geschaltet. Okay,
+    [00:49:14] Spieler (Rotunas): also ich habe ja meinen Stab in der Hand. Yes. Und ich halte meinen Stab nach vorne, halte dann meine Hand und dann... Und dann fangen bei mir einige Runen am Arm an zu leuchten und so eine Art Blitzschlager, so ein langer Blitz geht auf ihn drauf.
+  verdict: ''
+  note: ''
+- id: c020
+  concept: events/konfrontation_mit_nerash_in_der_kapelle
+  type: Event
+  tier: brief
+  claim: Als die Gruppe weiter auf Informationen besteht, wird sie wütend und verschwindet.
+  session: 2026-08-12_Team-A_piUv11DCwDw
+  at: 00:27:53
+  url_at: https://www.youtube.com/watch?v=piUv11DCwDw&t=1673s
+  window: |-
+    --- Session 2026-08-12 ---
+    [00:26:23] Spieler (GM): guck dich an. Ihr habt es nicht verdient, das zu tragen. Das wisst ihr. Aber das kann nur Nerash entscheiden. Zwei Minuten sind vergangen mittlerweile.
+    [00:26:35] Spieler (Gunther): Sag mal, nur so aus Interesse, wie lange dauert das ungefähr?
+    [00:26:41] Spieler (GM): Nun, das kann... Zwei Sekunden dauern. Ein paar Minuten oder Stunden. Oder sie kommt gar nicht, wenn sie es nicht will.
+    [00:26:51] Spieler (Gunther): Okay, ähm, bei der Gelegenheit habt ihr vielleicht einen Besen. Ich fühle mich schlecht wegen den Krümeln.
+    [00:26:56] Spieler (GM): Keine Sorge, das erledigen wir schon. Denn wir sind ja nichts besseres als ein Interplacement zum Verköstigen, richtig? Verstehe ich schon. Das Zeichen ist angekommen, Gunther. Fünf Minuten sind vergangen.
+    [00:27:20] Spieler (Gunther): Ich würde sagen, es gibt zwei Möglichkeiten. Entweder wir sind nicht wichtig genug oder, tja, so oder so, ich würde sagen, wir sind an den Stillstand gekommen. Dodo, wie seht ihr das?
+    [00:27:37] Spieler (Dodo): Hm, ich hätte das eigentlich schon gern geklärt gehabt, weil die Situation hier zwischen den Bewohnern und den drei Herren hier scheint sehr angespannt zu sein. Ich würde ungern jedenfalls verlassen, ohne dass... In dem Augenblick
+    [00:27:53] Spieler (GM): ein heller Blitz hinter euch und ihr seht Lady Nerash vor euch stehen. Ich würde sagen, Lunara und Gunther macht meinen Instinct-Check. Hast du zuerst? Jawohl. Das ist sehr gut. Du erkennst, du blickst sie direkt an, du kennst sie nämlich nicht und du siehst, die hat Verletzungen, die schwerer aussehen, als man das erwartet hätte. Das sind keine Wunden, die offensichtlich nur mit Magie zu heilen sind.
+    [00:28:32] Spieler (Gunther): Erkenne ich sie auch als Nerash?
+    [00:28:34] Spieler (GM): Du kennst Nerash nicht.
+    [00:28:36] Spieler (Gunther): Ja. Okay, dann schaue ich tatsächlich den Seraph an und die beiden Wächter an, wie die reagieren auf das Erscheinen dieser Gestalt.
+    [00:28:46] Spieler (GM): Die knien nieder, zumindest die beiden links und rechts.
+    [00:28:49] Spieler (Gunther): Dann tue ich das tatsächlich auch.
+    [00:28:51] Spieler (GM): Alright. Lunara?
+    [00:29:01] Spieler (Lunara Velora): Das ist eine 23.
+    [00:29:05] Spieler (GM): Du schaust mit Magie auf sie. und du merkst, ihre Essenz ist schwach, sehr schwach, aber auch ein bisschen so wie so ein Flackern ist in ihr, also fühlt sich an wie so Energie, die immer so ein bisschen ausbricht und dann wieder sich zusammenzieht. Ich meine, ihr erinnert euch vielleicht, du und Dodo, ihr habt sie schon mal wahrgenommen und da war sie auch schon sehr am Ende, sage ich mal, aber du merkst, sie ist jetzt noch viel schwächer als sowieso schon. In dem Augenblick...
+  verdict: ''
+  note: ''
+- id: c021
+  concept: events/naechtliche_reaktion_des_altars
+  type: Event
+  tier: brief
+  claim: Dodo wacht auf und berührt die Flamme, worauf die Reaktion stärker wird.
+  session: 2025-11-14_RF_8Khb-Y8XbKY
+  at: 01:34:08
+  url_at: https://www.youtube.com/watch?v=8Khb-Y8XbKY&t=5648s
+  window: |-
+    --- Session 2025-11-14 ---
+    [01:33:14] Spieler (Dodo): Die Goblins schlafen alle auf, Rotunas, die passen ja bestimmt alle zusammen.
+    [01:33:20] Spieler (GM): Während ihr schon schlaft, muss ich sagen, ihr seid natürlich ein bisschen besseres gewohnt, aber schon nicht so verkehrt. Ihr dürft mal alle ein W12 würfeln.
+    [01:33:33] Spieler (Dodo): Ich hätte vor dem Schlafen gehen auch Esterossa den Premium Schlafsack gegeben. Okay.
+    [01:33:53] Spieler (GM): Dodo, du erwachst in der Nacht wieder. Du merkst, wie dein Schädel so ein bisschen dieses Brummen hört. Du hörst dieses Brummen die ganze Zeit. Okay,
+    [01:34:08] Spieler (Dodo): dann würde ich mal in die Richtung laufen.
+    [01:34:13] Spieler (GM): Ja, als du wieder in diesen Raum kommst, merkst du, wie von hier aus mehr oder weniger die ganze Zeit so Leichte Blitze in die Ecken schießen, also so wie so ein Kegel. Alter, nicht das, sondern das. Wie könnte man denn den Kegel breiter machen?
+    [01:34:34] Spieler (Esterossa): Linksklick jetzt und dann nochmal ziehen. Linksklick? Ah, okay.
+    [01:34:39] Spieler (GM): Jetzt. So in die Richtung, so blitzt das Ding.
+    [01:34:44] Spieler (Dodo): Okay. Das hattest du davor aber nicht gemacht.
+    [01:34:47] Spieler (GM): Nee. Das Brummen ist auf jeden Fall durchgängig gerade, aber nur du hörst es gerade präsent. Die anderen scheinen das nicht so beim Schlafen zu stören.
+    [01:35:02] Spieler (Dodo): Ich schieb das, also Dodo schaut sich das an und denkt, okay, Zyklus, vielleicht hat das einfach was mit der Uhrzeit zu tun. Dass das hier jetzt gerade nachts so blitzt und tagsüber einfach ruhiger ist. Und denkt sich daran nichts weiter dabei. Ja, auf den ersten Blick denkt sich Dodo das.
+    [01:35:31] Spieler (GM): Okay, ja, vollkommen fein. Du kannst dich über hier schlafen legen, wenn du möchtest.
+  verdict: ''
+  note: ''
+- id: c022
+  concept: events/rueckkehr_und_anerkennung_durch_voras
+  type: Event
+  tier: brief
+  claim: Die Gruppe erhält die Hörner als Trophäen und plant die nächsten Schritte.
+  session: 2026-03-10_RF_Kr9_AC2XtOw
+  at: 01:56:19
+  url_at: https://www.youtube.com/watch?v=Kr9_AC2XtOw&t=6979s
+  window: |-
+    --- Session 2026-03-10 ---
+    [01:54:50] Spieler (Dodo): Wir hätten eine Nacht überschlafen müssen, mindestens.
+    [01:55:02] Spieler (GM): Können uns die Hörner mitnehmen? Ihr könnt euch die Hörner einstecken. Ich schätze mal, dass Dodo und Brim sich jeweils einen eingesteckt haben.
+    [01:55:12] Spieler (Brim): Wieder eins? Ja.
+    [01:55:15] Spieler (GM): Alright, ihr zieht euch zurück und wir switchen wieder.
+    [01:55:22] Spieler (Brim): Während wir zurücklaufen, Brim, wichtig außer Atem, erstes Mal in dieser komischen Welt, so ein fettes Monster. Ist jede Mission mit euch eigentlich... Direkt so... Ja.
+    [01:55:41] Spieler (Dodo): Ja, darauf musst du dich einstellen.
+    [01:55:45] Spieler (Brim): Dann benötige ich das nächste Mal aber, glaube ich, ein bisschen mehr Aufklärung. Mehr Vorbereitung. Das wollen wir auch. Das wollen wir auch. Nein, Vorbereitung im Sinne von Informationen, die Brim einfach fehlen. Mehr kennen die Truppe ja noch nicht so lange. Die wollen wir auch. Ach so. Brim ist sichtlich verwirrt, weil er... Lindo Laut den Namen davor noch nicht gehört hatte, als er das letzte Mal mit der Grunde unterwegs war. Und auch alles, was gerade so Voras erzählt hat und so, war ja eigentlich auch alles komplett neu für ihn.
+    [01:56:19] Spieler (GM): Ihr kehrt zurück auf die materielle Ebene und Voras erwartet euch schon sehr neugierig. Und als ihr aus dem Portal tretet, klatscht er einfach nur und sieht euch so an. Tatsächlich! Sorry, falsche Stimme. Tatsächlich, überraschend, nur
+    [01:56:44] Spieler (Lindo Laut): ihr Sandro seht aus, als hättet ihr ganz schön gelitten.
+    [01:56:48] Spieler (GM): Und ihr seht halt diesen Sandro, der hinter euch steht, so wirklich ziemlich lidiert, so wirklich einige klaffende Wunden und ihr tatsächlich recht unbeschadet aus dem Portal treten. Nur ein bisschen gestresst. Nox hat wohl mehr Recht gehabt, als ich vermutet hatte. Ich war der Kritik wohl ein wenig zu übereifrig. Nun gut. Ihr habt auch meinen Segen und auch meinen vollsten Support. Ihr habt mich überzeugt. Und es tut mir leid, wie ich euch zunächst behandelt habe. Ich hatte gedacht, es ist eine sinnlose und aussichtslose Aktion. Und deswegen wollte Nox, dass ihr beweist, oder zumindest mir beweist, dass ihr in der Lage seid, dieser Challenge gewachsen zu sein. Ich
+    [01:57:43] Spieler (Dodo): würde auf Voras zugehen.
+  verdict: ''
+  note: ''
+- id: c023
+  concept: events/rueckkehr_und_anerkennung_durch_voras
+  type: Event
+  tier: brief
+  claim: Er entschuldigt sich für seine anfängliche Skepsis und sichert volle Unterstützung zu.
+  session: 2026-03-10_RF_Kr9_AC2XtOw
+  at: 01:56:19
+  url_at: https://www.youtube.com/watch?v=Kr9_AC2XtOw&t=6979s
+  window: |-
+    --- Session 2026-03-10 ---
+    [01:54:50] Spieler (Dodo): Wir hätten eine Nacht überschlafen müssen, mindestens.
+    [01:55:02] Spieler (GM): Können uns die Hörner mitnehmen? Ihr könnt euch die Hörner einstecken. Ich schätze mal, dass Dodo und Brim sich jeweils einen eingesteckt haben.
+    [01:55:12] Spieler (Brim): Wieder eins? Ja.
+    [01:55:15] Spieler (GM): Alright, ihr zieht euch zurück und wir switchen wieder.
+    [01:55:22] Spieler (Brim): Während wir zurücklaufen, Brim, wichtig außer Atem, erstes Mal in dieser komischen Welt, so ein fettes Monster. Ist jede Mission mit euch eigentlich... Direkt so... Ja.
+    [01:55:41] Spieler (Dodo): Ja, darauf musst du dich einstellen.
+    [01:55:45] Spieler (Brim): Dann benötige ich das nächste Mal aber, glaube ich, ein bisschen mehr Aufklärung. Mehr Vorbereitung. Das wollen wir auch. Das wollen wir auch. Nein, Vorbereitung im Sinne von Informationen, die Brim einfach fehlen. Mehr kennen die Truppe ja noch nicht so lange. Die wollen wir auch. Ach so. Brim ist sichtlich verwirrt, weil er... Lindo Laut den Namen davor noch nicht gehört hatte, als er das letzte Mal mit der Grunde unterwegs war. Und auch alles, was gerade so Voras erzählt hat und so, war ja eigentlich auch alles komplett neu für ihn.
+    [01:56:19] Spieler (GM): Ihr kehrt zurück auf die materielle Ebene und Voras erwartet euch schon sehr neugierig. Und als ihr aus dem Portal tretet, klatscht er einfach nur und sieht euch so an. Tatsächlich! Sorry, falsche Stimme. Tatsächlich, überraschend, nur
+    [01:56:44] Spieler (Lindo Laut): ihr Sandro seht aus, als hättet ihr ganz schön gelitten.
+    [01:56:48] Spieler (GM): Und ihr seht halt diesen Sandro, der hinter euch steht, so wirklich ziemlich lidiert, so wirklich einige klaffende Wunden und ihr tatsächlich recht unbeschadet aus dem Portal treten. Nur ein bisschen gestresst. Nox hat wohl mehr Recht gehabt, als ich vermutet hatte. Ich war der Kritik wohl ein wenig zu übereifrig. Nun gut. Ihr habt auch meinen Segen und auch meinen vollsten Support. Ihr habt mich überzeugt. Und es tut mir leid, wie ich euch zunächst behandelt habe. Ich hatte gedacht, es ist eine sinnlose und aussichtslose Aktion. Und deswegen wollte Nox, dass ihr beweist, oder zumindest mir beweist, dass ihr in der Lage seid, dieser Challenge gewachsen zu sein. Ich
+    [01:57:43] Spieler (Dodo): würde auf Voras zugehen.
+  verdict: ''
+  note: ''
+- id: c024
+  concept: events/sanges_verwandlung_in_halb_werwolf_gestalt
+  type: Event
+  tier: brief
+  claim: Mit erhöhter Mobilität springt er zum Turm und tötet den Gnoll.
+  session: 2026-07-23_Team-B_Gb-TEbCFF0M
+  at: 01:34:13
+  url_at: https://www.youtube.com/watch?v=Gb-TEbCFF0M&t=5653s
+  window: |-
+    --- Session 2026-07-23 ---
+    [01:33:23] Spieler (GM): Das trifft. Öffnen den Damage. Okay. Die Flammen spreaden so ein bisschen, aber der eine oder andere kann das so ein bisschen dodgen, indem er sich so duckt oder ein bisschen ausweicht, aber einer verliert dabei trotzdem sein Leben. Status knocked. Das war mit Hope. Ihr seid noch dran. Sehr gut.
+    [01:34:06] Spieler (Saris): Sage, willst du ihn nicht schnell töten? Der da steht.
+    [01:34:09] Spieler (Bruma Stormrak): Geht's euch gut, Sage?
+    [01:34:13] Spieler (Sange): Ich würde was anderes machen tatsächlich. Meine Sicht verschwimmt kurz. Ich nehme nur noch das Pochen von den ganzen Herzen wahr. Ich markiere mir einen Stress und ihr seht, wie Zange kurz auf die Knie fällt vor Anstrengung. und anfängt zu krampfen. Ihr seht, wie die Klauen an den Händen länger werden. Die Muskeln werden oder die Spannen an werden ein bisschen größer. Die Mähne wird ein bisschen länger und ich verwandle mich in so eine Art Halb-Werwolf-Gestalt. Das ist neu. Kaya springt auch
+    [01:35:04] Spieler (Kaya): erstmal kurz erschrocken zurück.
+    [01:35:06] Spieler (Sange): Und dann... würde ich versuchen, quasi von Fels zu Fels, wo ich gerade markiert habe, auf den Knoll oben zuzuspringen. Einfach durch meine erhöhte Mobilität jetzt durch die neue Gestalt.
+    [01:35:23] Spieler (GM): Alright, ich will dir trotzdem, da würde ich einen Stress von dir abverlangen, aber dann würdest du das schaffen, weil ich gebe dir noch eben eine Form, was passend ist. Wir machen mal ganz kurz Ditty hier in der Branch. Alright.
+  verdict: ''
+  note: ''
+- id: c025
+  concept: events/schlacht_um_ehrenfels
+  type: Event
+  tier: brief
+  claim: Nox kämpfte an vorderster Front und wurde schwer verwundet, bevor Engel erschienen.
+  session: 2026-07-29_Team-A_umGyKLkefJI
+  at: 00:00:01
+  url_at: https://www.youtube.com/watch?v=umGyKLkefJI&t=1s
+  window: |-
+    --- Session 2026-07-29 ---
+    [00:00:01] Spieler (GM): Live! Was geht meine Freunde? Herzlich willkommen zurück zu Dwarfmasters. Wie immer pünktlich, fünf Minuten zu spät. Das ist richtig, also ich bin ja halb Türk, deswegen darf ich das ein bisschen, Leute. Also logisch. Ja, ihr seht, wir haben ein neues Gesicht am Start, beziehungsweise ein neues altes Gesicht. Den Spieler kennt ihr schon unter anderem. Und der wird uns heute... Aiden und wer weiß, was daraus wird. Also sind wir gespannt. Ja, aber ganz kurz erstmal ein bisschen Recap. Wo sind wir hier eigentlich? Wir sind in Ehrenfeld. Der ein oder andere mag sich daran erinnern, was hier zuletzt passiert ist. Denn Ehrenfeld, das war ja so mehr oder weniger der letzte Punkt, den die Gruppe hier erreichen musste, um die Kräfte Von Vasul zu Chesra, danke für den Follow, um halt die Kräfte von Vasul zu befreien. Und dadurch haben sie leider auch direkt eine Tür aufgelassen, den Kellereingang einfach aufgemacht und dann kamen da halt ein paar große Ratten raus. Naja, es waren Monster und Dämonen. Und Ehrenfels musste sich dann damit, ich sag mal... Rumschlagen, denn unsere Helden sind zu dem Zeitpunkt schon wieder weitergereist und Richtung Abyssalis gegangen. Und ja, Rotunas, der da zurückgeblieben ist tatsächlich in Ehrenfels, der hat sich dieser Aufgabe angenommen und hat mit einigen tapferen Kriegerinnen diese Stadt verteidigt. Ja, der eine oder andere wird es wissen. Es war ein sehr, sehr dramatischer Kampf und der ging nicht so gut aus. Denn zu jedem Tag haben wir unseren geliebten Anführer von Rotunas und seinen Freunden leider verloren. Nun, das wissen unsere Helden aber IT eigentlich noch gar nicht. Das ist alles noch etwas, was passiert ist, während die in Abyssalis waren. Das heißt, wenn die jetzt hier hinkommen, Werden die erstmal wissen, was überhaupt passiert ist. Was mit Ehrenfels passiert ist. Zum Glück kein großer Damage an den Gebäuden, sondern sonst hätte es diese Stadt nicht mehr geben können. Kurzer Funfact, was wir hier machen ist, es ist immer, jede Entscheidung, die die SpielerInnen treffen, die hat Konsequenzen, nicht nur für ihre Charaktere, sondern auch für die Welt. Das heißt, wenn Rotunas und die Bande diese Stadt nicht verteidigt hätten, dann wäre Ehrenfels auch nicht mehr da. Das heißt, ihr würdet jetzt in eine Ruinenstadt kommen. Hätte ich dann soweit vorbereitet. Aber dem ist nicht so. Spieler, du wirst gleich eingeleitet. Du wirst jetzt hier nochmal ganz kurz 5 Minütchen oder vielleicht 10, ne? Ein bisschen ein paar Töffelchen hüten müssen. Aber, ja. Ihr seid gerade erst aus Abyssalis zurück. Zeit in Breska rausgekommen und da war ich schon überrascht, dass Breska einfach nur noch ein Haufen Asche war. Niemand war da, kein Vampir, kein Wohas, der Heilige. Niemand war anzufinden. Vielleicht ein paar Tiere, die sich langsam wieder so durch die Ruinen gewagt hatten, aber nichts Kommunikatives, was in der Lage war mit euch zu interagieren. Die einzige... Sinnvolle Option, die ihr euch dabei gedacht hattet, war, okay, Ehrenfels ist so mehr oder weniger der nächste Anlaufpunkt. Gehen wir dahin und hoffen einfach, dass uns da jemand erklären kann, was passiert ist. Und dementsprechend seid ihr aufgebrochen. Einige Tage gereist, habt euch erholt, eure Wunden versorgt, eure geistigen Zustände wieder ein bisschen besänftigt. Und als ihr den schwierigen Anstieg gegen
+  verdict: ''
+  note: ''
+- id: c026
+  concept: events/schwur_am_weltenbaum
+  type: Event
+  tier: brief
+  claim: Daraufhin wird Gunther ohnmächtig; Dodo erhält einen Blick auf eine andere Ebene.
+  session: 2026-09-01_Team-A_1E3-Nwv4OEs
+  at: 01:19:09
+  url_at: https://www.youtube.com/watch?v=1E3-Nwv4OEs&t=4749s
+  window: |-
+    --- Session 2026-09-01 ---
+    [01:18:09] Spieler (Lunara Velora): Er darf den Hain nicht verlassen, wenn er weiß, was hier liegt. Das gilt auch für deine Freunde. Lindo Laut Gibt
+    [01:18:30] Spieler (Lindo Laut): es einen Weg, dass wir uns und dass sie sich als würdig erweisen dürfen?
+    [01:18:41] Spieler (Lunara Velora): Ihr müsst schwören, ihr müsst schwören, schwören, schwören, schwören, dass ihr ihre Erinnerung
+    [01:19:09] Spieler (Lunara Velora): Es gibt keinen
+    [01:19:18] Spieler (GM): anderen Weg. Und in dem Augenblick blätterst du wieder in diesem Buch, als würde es alles simultaneous passieren.
+    [01:19:32] Spieler (GM): Zlix hat wohl mal darüber geforscht eine Weile oder halt eher der Vasul und in den letzten Seiten steht so ein bisschen was diese Verbindung zu diesen Welten angeht und du bist in der Lage als Fee die Erlaubnis einzufordern. Aber sowas soll wohl mit einem Preis kommen. Nichts im Sinne von du verlierst was, aber die Erlaubnis, dass sie es wissen. Dass sie es wissen dürfen. Du bist praktisch ein Teil der Welt und du darfst es einfordern für sie. Du bürgst dann aber mehr oder weniger für sie. Das scheint wohl da zu stehen. So in der Wortlaut. Das muss nicht unbedingt eins zu eins so stimmen. Das ist aber die Vermutung von Basul gewesen.
+    [01:20:23] Spieler (Lindo Laut): Ja. Ich schaue so die anderen an. Ich verbürge mich für den Drachen für mein Leben. Dass er das Geheimnis wahren wird. Und schaue Gunther so ein bisschen an.
+  verdict: ''
+  note: ''
+- id: c027
+  concept: events/verhandlung_mit_harl
+  type: Event
+  tier: deep
+  claim: Die Verhandlung markiert den Versuch der Gruppe, einer größeren Gemeinschaft einen sicheren Überwinterungsplatz vor der Festung zu verschaffen.
+  session: 2025-09-23_RF_DGzfqVigS0g
+  at: 01:12:18
+  url_at: https://www.youtube.com/watch?v=DGzfqVigS0g&t=4338s
+  window: |-
+    --- Session 2025-09-23 ---
+    [01:11:38] Spieler (GM): Ich bin mir
+    [01:11:46] Spieler (Lindo Laut): bei der Anzahl besonders wie viele Jetzt überlebt haben, nicht mehr sicher, deswegen ist es vielleicht sinnvoller, das zu beurteilen, sobald sie da sind.
+    [01:11:55] Spieler (GM): Ihr müsst verstehen, zwei Dutzend. Das klingt nach einem Preis von... Wie lange sollen sie hier bleiben?
+    [01:12:05] Spieler (Lindo Laut): In meinem Kopf hatte ich im Kopf, dass sie vielleicht über den Winter vor eurem Lager kampieren können.
+    [01:12:18] Spieler (GM): Dann würde ich eine Summe von, sagen wir...
+    [01:12:54] Spieler (Lindo Laut): Ich lächle ihn so ein bisschen an und wenn so...
+    [01:12:58] Spieler (GM): Machen wir einen Knowledge-Check?
+    [01:13:02] Spieler (Lindo Laut): Ist auch 0 Grad einzuschätzen, wie viel Natur Gold. Also ich bin Highborn, kann ich ihn besser einschätzen durch Verhandlungen mit Nobles? Das
+    [01:13:11] Spieler (GM): ist kein Noble.
+    [01:13:14] Spieler (Esterossa): Das wäre eher Slayborn, das Gegengesetzte wahrscheinlich.
+    [01:13:18] Spieler (GM): Wahrscheinlich passt. Es ist ein Underborn. Was hast du gewürfelt insgesamt? Knowledge.
+    [01:13:27] Spieler (Lindo Laut): Ich habe nur 13 gewürfelt, also 12.
+    [01:13:31] Spieler (GM): Du bist dir auch nicht so ganz sicher, ihr habt relativ... Esterossa aka Esterossa aka Esterossa Wenn man immer noch eine Summe on top rechnen würde, die fair wäre, dann vielleicht nochmal drei oder vier Säcke. Das heißt, acht Säcke ist das absolute oberste Maximum, was für dich für sinnvoller klingt. Also noch die zwei Säcke obendrauf für die Truhe insgesamt, das wäre schon übermäßig großzügig. Spieler, der Sack ist schon längst im Gruppengold gelandet, keine Sorge.
+  verdict: ''
+  note: ''
+- id: c028
+  concept: events/verhandlung_mit_harl
+  type: Event
+  tier: deep
+  claim: 'Verhandlungsführung: Lindo Laut trat als Sprecher der Gruppe auf und führte die Unterredung.'
+  session: 2025-09-23_RF_DGzfqVigS0g
+  at: 01:12:18
+  url_at: https://www.youtube.com/watch?v=DGzfqVigS0g&t=4338s
+  window: |-
+    --- Session 2025-09-23 ---
+    [01:11:38] Spieler (GM): Ich bin mir
+    [01:11:46] Spieler (Lindo Laut): bei der Anzahl besonders wie viele Jetzt überlebt haben, nicht mehr sicher, deswegen ist es vielleicht sinnvoller, das zu beurteilen, sobald sie da sind.
+    [01:11:55] Spieler (GM): Ihr müsst verstehen, zwei Dutzend. Das klingt nach einem Preis von... Wie lange sollen sie hier bleiben?
+    [01:12:05] Spieler (Lindo Laut): In meinem Kopf hatte ich im Kopf, dass sie vielleicht über den Winter vor eurem Lager kampieren können.
+    [01:12:18] Spieler (GM): Dann würde ich eine Summe von, sagen wir...
+    [01:12:54] Spieler (Lindo Laut): Ich lächle ihn so ein bisschen an und wenn so...
+    [01:12:58] Spieler (GM): Machen wir einen Knowledge-Check?
+    [01:13:02] Spieler (Lindo Laut): Ist auch 0 Grad einzuschätzen, wie viel Natur Gold. Also ich bin Highborn, kann ich ihn besser einschätzen durch Verhandlungen mit Nobles? Das
+    [01:13:11] Spieler (GM): ist kein Noble.
+    [01:13:14] Spieler (Esterossa): Das wäre eher Slayborn, das Gegengesetzte wahrscheinlich.
+    [01:13:18] Spieler (GM): Wahrscheinlich passt. Es ist ein Underborn. Was hast du gewürfelt insgesamt? Knowledge.
+    [01:13:27] Spieler (Lindo Laut): Ich habe nur 13 gewürfelt, also 12.
+    [01:13:31] Spieler (GM): Du bist dir auch nicht so ganz sicher, ihr habt relativ... Esterossa aka Esterossa aka Esterossa Wenn man immer noch eine Summe on top rechnen würde, die fair wäre, dann vielleicht nochmal drei oder vier Säcke. Das heißt, acht Säcke ist das absolute oberste Maximum, was für dich für sinnvoller klingt. Also noch die zwei Säcke obendrauf für die Truhe insgesamt, das wäre schon übermäßig großzügig. Spieler, der Sack ist schon längst im Gruppengold gelandet, keine Sorge.
+  verdict: ''
+  note: ''
+- id: c029
+  concept: events/zerstoerung_des_ratten_daemons
+  type: Event
+  tier: brief
+  claim: Der Ratten-Dämon kehrt größer zurück und verlangt die Unterschrift.
+  session: 2025-09-06_RF_vo1xnyLQDJk
+  at: 00:47:43
+  url_at: https://www.youtube.com/watch?v=vo1xnyLQDJk&t=2863s
+  window: |-
+    --- Session 2025-09-06 ---
+    [00:46:15] Spieler (GM): Kannst du gerne machen. Du liest auf jeden Fall Seelenknechtschaft. Du verkaufst deine Seele.
+    [00:46:23] Spieler (Cookie): Kann ich da nicht mehr rausfinden?
+    [00:46:25] Spieler (GM): Ne, das hat Lindo dort rausgefunden. Nur der kann das lesen.
+    [00:46:30] Spieler (Cookie): Ja, aber ich habe einen Zauberspruch, der das eventuell in einem Tagebuch gelesen hat.
+    [00:46:34] Spieler (GM): Achso, aber du hast jetzt nicht die Zeit. Der sagt euch das, du kannst ja nicht anfangen einen Zauer zu wirken und dann erstmal das Ding zu übersetzen. Also, wie schaut's aus, Freunde?
+    [00:46:49] Spieler (Dodo): Ich unterschreib gar nichts, also ich sag das nicht laut, ich verschränk so meine Arme und schau Lindo laut an.
+    [00:46:56] Spieler (Cookie): Ich guck einfach nur mit ganz vielen Fragezeichen. Kann ich mir einen
+    [00:46:59] Spieler (Lindo Laut): Inspect-Check machen auf den? Was hat der jetzt hier?
+    [00:47:02] Spieler (GM): Also, du hörst noch ein letztes Mal Vasuls Stimme in deinem Kopf, so aus lauter Ferne. Nutze ihn, Lindo Laut!
+    [00:47:43] Spieler (Esterossa): Schieb ihn, wir müssen einfach nur durch das Loch dahinter, schieb den beiseite, dass wir durchrennen. Oh, close one.
+    [00:47:48] Spieler (GM): Du merkst ganz kurz, wie die Kraft durch dich fließt und du dich nicht verwandelst, aber die Kraft erhältst. Du merkst plötzlich, wie diese dämonischen oder diese komischen Kräfte durch deinen Körper fließen, aber deine Form bleibt dieselbe. Ja genau, von der Verwandlung. Und du merkst auch, wie dieser Stab, du riechst es einfach nur. mit, wie sagt man das, wie so aus Reaktion deinen Stab hoch und ihr hört Lindo Laut sagen, stirb, niedere Kreatur! Und ein heller Blitz erscheint an diesem Granitstein. Dieser Balor hinter euch will gerade seine Peitsche heben und euch vernichten, aber in dem Augenblick schießt dieser Strahl, so einen ganz hellen Strahl durch diese Ratte durch. und absorbiert, während der Stab das tut, diese Kräfte von diesem Balor hinter dir und ihr seht einfach nur, wie diese Ratte, geschockt von der Situation, so ganz wütend wird und schnipst und sich auflöst.
+    [00:48:52] Spieler (Lindo Laut): Was ist ein Balor? Das ist so Balrog gemäßig.
+    [00:48:55] Spieler (GM): Hat der hinter uns? Den hab ich grad zerstört. Nee, hast nicht zerstört, aber du siehst, wie der kraftlos auf ein Knie fällt, aber wie schon wieder dabei ist, zu regenerieren. Und... Du einfach, ohne weiter zu zögern, durch das Portal gehst.
+    [00:49:11] Spieler (Lindo Laut): Ja, ich sprint sofort durch das Portal.
+    [00:49:13] Spieler (GM): Ja, warte. Ein letztes Mal switchen, dann sind wir fertig heute. Warte, ich muss die Musik schnell anpassen. Oh, es gibt mehr Musik. Warte, ich hab's sofort, ich hab's sofort. Und ihr kommt an einem nicht allzu vertrauten Ort hinein. Ja, beim Stuhl.
+  verdict: ''
+  note: ''
+- id: c030
+  concept: factions/fluechtlinge
+  type: Faction
+  tier: deep
+  claim: Ob Casa de Cookie als Ziel genutzt wird, wurde nicht abschließend geklärt.
+  session: 2026-01-13_RF_w4LB1s9_3rs
+  at: 00:48:53
+  url_at: https://www.youtube.com/watch?v=w4LB1s9_3rs&t=2933s
+  window: |-
+    --- Session 2026-01-13 ---
+    [00:47:24] Spieler (Rotunas): Okay, okay,
+    [00:47:26] Spieler (Lunara Velora): krass. Das ging schnell, unerwartet schnell. Mit diesem Samen könnte man eventuell einen Baum pflanzen. Den müsste man halt irgendwie 24 Stunden lang beschützen. Und dieser Baum würde uns...
+    [00:47:46] Spieler (Lunara Velora): zum... zu unserem Haus in... in den Ort ein.
+    [00:47:53] Spieler (GM): In, äh, wie heißt da, ähm... Cookies Casa. La Casa de Cookie. La
+    [00:47:59] Spieler (Rotunas): Casa de Cookie, ja.
+    [00:48:01] Spieler (Lunara Velora): Da hat nämlich Lindo Laut ein Portal platziert und dieser Baum würde da hinführen. Wenn das eventuell eine Lösung wäre.
+    [00:48:11] Spieler (Rotunas): Wie können wir vielleicht eine Karte hier besorgen, um zu gucken, wo die Standorte sind und wie weit zum Beispiel der Marsch von der Gilde zu eurer Siedlung wäre oder von unserer neuen Siedlung zu eurer wirtschaftlichen Siedlung?
+    [00:48:30] Spieler (Esterossa): Casa de Kuki ist sehr weit im Süden, links von Willoch. Das wäre eine notfallende Option, aber dort will ja jetzt zumindestens... Die Gruppe, die hier aktuelle Zuflucht sucht und zu Hause ist ja nicht hin. Die wollen ja zu ihrer... Sie
+    [00:48:53] Spieler (Nyrella): wollen nach Hause, was auch immer das bedeutet. Zumindest die Geflüchteten. Die wollen endlich ein Zuhause finden. Ich glaube, dass die Idee von HAL nicht schlecht ist, dass zumindest die, die wollen und können... mit ihnen ziehen, dann sind sie zumindest geschützt. Und für die anderen würde noch in Betracht kommen die Idee, die Lindo Laut vor vielen Monaten hatte, dass wir sie vielleicht aufteilen, dass wir gucken, dass wir sie irgendwie in Städte vermittelt bekommen, je nachdem was sie können. Vielleicht finden wir für ein Paar einen Platz in der Gilde, aber das sollten wir auf jeden Fall mit ihnen besprechen.
+    [00:49:32] Spieler (Esterossa): Das ist, wenn es, ja, die werden sich ja jetzt nicht in der Zeit rasant vermehrt haben und wenn ich mich recht entsinne, sind es ja, glaube ich, nur um die zwei Dutzend Leute und für eine große Anzahl oder zumindest eine nicht kleine Anzahl konnte die Gilde ja Platz bereitstellen und nicht für alle. Und wenn die Mehrheit der Leute dafür ist, unter dem Namen des netten Herrn hier mitzureisen, dann sollte die Gilde für den Rest auf jeden Fall Platz haben. Für die Überbleibsel sollte das den Leuten nicht passen. Haben wir immer noch Casa de Cookie, wo wir auf jeden Fall tatkräftige Mannesstärke brauchen, um die Residenz ausbaufähig zu machen.
+    [00:50:16] Spieler (GM): In dem Augenblick ertönt am Tor ein Horn. Das Horn bedeutet ein Ankömmling. Hal, unterbricht euch auf jeden Fall ganz kurz. So spät zu der Zeit, das sollten wir uns vielleicht anschauen. Unterbrechen wir unser kurzes Gespräch. Lasst uns gleich weiter reden. Und ihr geht Richtung Turm. Oben auf dem Turm könnt ihr euch hinstellen, wer Platz hat.
+  verdict: ''
+  note: ''
+- id: c031
+  concept: factions/fluechtlinge
+  type: Faction
+  tier: deep
+  claim: 'HAL: Bietet an, dass ein Teil der Flüchtlinge mit ihm zieht; die Helden sehen darin eine Möglichkeit, zumindest einige zu schützen.'
+  session: 2026-01-13_RF_w4LB1s9_3rs
+  at: 00:48:53
+  url_at: https://www.youtube.com/watch?v=w4LB1s9_3rs&t=2933s
+  window: |-
+    --- Session 2026-01-13 ---
+    [00:47:24] Spieler (Rotunas): Okay, okay,
+    [00:47:26] Spieler (Lunara Velora): krass. Das ging schnell, unerwartet schnell. Mit diesem Samen könnte man eventuell einen Baum pflanzen. Den müsste man halt irgendwie 24 Stunden lang beschützen. Und dieser Baum würde uns...
+    [00:47:46] Spieler (Lunara Velora): zum... zu unserem Haus in... in den Ort ein.
+    [00:47:53] Spieler (GM): In, äh, wie heißt da, ähm... Cookies Casa. La Casa de Cookie. La
+    [00:47:59] Spieler (Rotunas): Casa de Cookie, ja.
+    [00:48:01] Spieler (Lunara Velora): Da hat nämlich Lindo Laut ein Portal platziert und dieser Baum würde da hinführen. Wenn das eventuell eine Lösung wäre.
+    [00:48:11] Spieler (Rotunas): Wie können wir vielleicht eine Karte hier besorgen, um zu gucken, wo die Standorte sind und wie weit zum Beispiel der Marsch von der Gilde zu eurer Siedlung wäre oder von unserer neuen Siedlung zu eurer wirtschaftlichen Siedlung?
+    [00:48:30] Spieler (Esterossa): Casa de Kuki ist sehr weit im Süden, links von Willoch. Das wäre eine notfallende Option, aber dort will ja jetzt zumindestens... Die Gruppe, die hier aktuelle Zuflucht sucht und zu Hause ist ja nicht hin. Die wollen ja zu ihrer... Sie
+    [00:48:53] Spieler (Nyrella): wollen nach Hause, was auch immer das bedeutet. Zumindest die Geflüchteten. Die wollen endlich ein Zuhause finden. Ich glaube, dass die Idee von HAL nicht schlecht ist, dass zumindest die, die wollen und können... mit ihnen ziehen, dann sind sie zumindest geschützt. Und für die anderen würde noch in Betracht kommen die Idee, die Lindo Laut vor vielen Monaten hatte, dass wir sie vielleicht aufteilen, dass wir gucken, dass wir sie irgendwie in Städte vermittelt bekommen, je nachdem was sie können. Vielleicht finden wir für ein Paar einen Platz in der Gilde, aber das sollten wir auf jeden Fall mit ihnen besprechen.
+    [00:49:32] Spieler (Esterossa): Das ist, wenn es, ja, die werden sich ja jetzt nicht in der Zeit rasant vermehrt haben und wenn ich mich recht entsinne, sind es ja, glaube ich, nur um die zwei Dutzend Leute und für eine große Anzahl oder zumindest eine nicht kleine Anzahl konnte die Gilde ja Platz bereitstellen und nicht für alle. Und wenn die Mehrheit der Leute dafür ist, unter dem Namen des netten Herrn hier mitzureisen, dann sollte die Gilde für den Rest auf jeden Fall Platz haben. Für die Überbleibsel sollte das den Leuten nicht passen. Haben wir immer noch Casa de Cookie, wo wir auf jeden Fall tatkräftige Mannesstärke brauchen, um die Residenz ausbaufähig zu machen.
+    [00:50:16] Spieler (GM): In dem Augenblick ertönt am Tor ein Horn. Das Horn bedeutet ein Ankömmling. Hal, unterbricht euch auf jeden Fall ganz kurz. So spät zu der Zeit, das sollten wir uns vielleicht anschauen. Unterbrechen wir unser kurzes Gespräch. Lasst uns gleich weiter reden. Und ihr geht Richtung Turm. Oben auf dem Turm könnt ihr euch hinstellen, wer Platz hat.
+  verdict: ''
+  note: ''
+- id: c032
+  concept: factions/fluechtlinge
+  type: Faction
+  tier: deep
+  claim: Sie sind verängstigt, aber hoffnungsvoll, und suchen dringend ein dauerhaftes Zuhause.
+  session: 2026-01-13_RF_w4LB1s9_3rs
+  at: 00:48:53
+  url_at: https://www.youtube.com/watch?v=w4LB1s9_3rs&t=2933s
+  window: |-
+    --- Session 2026-01-13 ---
+    [00:47:24] Spieler (Rotunas): Okay, okay,
+    [00:47:26] Spieler (Lunara Velora): krass. Das ging schnell, unerwartet schnell. Mit diesem Samen könnte man eventuell einen Baum pflanzen. Den müsste man halt irgendwie 24 Stunden lang beschützen. Und dieser Baum würde uns...
+    [00:47:46] Spieler (Lunara Velora): zum... zu unserem Haus in... in den Ort ein.
+    [00:47:53] Spieler (GM): In, äh, wie heißt da, ähm... Cookies Casa. La Casa de Cookie. La
+    [00:47:59] Spieler (Rotunas): Casa de Cookie, ja.
+    [00:48:01] Spieler (Lunara Velora): Da hat nämlich Lindo Laut ein Portal platziert und dieser Baum würde da hinführen. Wenn das eventuell eine Lösung wäre.
+    [00:48:11] Spieler (Rotunas): Wie können wir vielleicht eine Karte hier besorgen, um zu gucken, wo die Standorte sind und wie weit zum Beispiel der Marsch von der Gilde zu eurer Siedlung wäre oder von unserer neuen Siedlung zu eurer wirtschaftlichen Siedlung?
+    [00:48:30] Spieler (Esterossa): Casa de Kuki ist sehr weit im Süden, links von Willoch. Das wäre eine notfallende Option, aber dort will ja jetzt zumindestens... Die Gruppe, die hier aktuelle Zuflucht sucht und zu Hause ist ja nicht hin. Die wollen ja zu ihrer... Sie
+    [00:48:53] Spieler (Nyrella): wollen nach Hause, was auch immer das bedeutet. Zumindest die Geflüchteten. Die wollen endlich ein Zuhause finden. Ich glaube, dass die Idee von HAL nicht schlecht ist, dass zumindest die, die wollen und können... mit ihnen ziehen, dann sind sie zumindest geschützt. Und für die anderen würde noch in Betracht kommen die Idee, die Lindo Laut vor vielen Monaten hatte, dass wir sie vielleicht aufteilen, dass wir gucken, dass wir sie irgendwie in Städte vermittelt bekommen, je nachdem was sie können. Vielleicht finden wir für ein Paar einen Platz in der Gilde, aber das sollten wir auf jeden Fall mit ihnen besprechen.
+    [00:49:32] Spieler (Esterossa): Das ist, wenn es, ja, die werden sich ja jetzt nicht in der Zeit rasant vermehrt haben und wenn ich mich recht entsinne, sind es ja, glaube ich, nur um die zwei Dutzend Leute und für eine große Anzahl oder zumindest eine nicht kleine Anzahl konnte die Gilde ja Platz bereitstellen und nicht für alle. Und wenn die Mehrheit der Leute dafür ist, unter dem Namen des netten Herrn hier mitzureisen, dann sollte die Gilde für den Rest auf jeden Fall Platz haben. Für die Überbleibsel sollte das den Leuten nicht passen. Haben wir immer noch Casa de Cookie, wo wir auf jeden Fall tatkräftige Mannesstärke brauchen, um die Residenz ausbaufähig zu machen.
+    [00:50:16] Spieler (GM): In dem Augenblick ertönt am Tor ein Horn. Das Horn bedeutet ein Ankömmling. Hal, unterbricht euch auf jeden Fall ganz kurz. So spät zu der Zeit, das sollten wir uns vielleicht anschauen. Unterbrechen wir unser kurzes Gespräch. Lasst uns gleich weiter reden. Und ihr geht Richtung Turm. Oben auf dem Turm könnt ihr euch hinstellen, wer Platz hat.
+  verdict: ''
+  note: ''
+- id: c033
+  concept: factions/gnoll_und_goblin_armee
+  type: Faction
+  tier: standard
+  claim: Sie hat bereits das Holzfäller-Camp überfallen und bereitet einen größeren Angriff vor, der sich vermutlich gegen Ringtal richten wird.
+  session: 2026-06-04_RF_EGNh8O7pE5Q
+  at: 02:36:35
+  url_at: https://www.youtube.com/watch?v=EGNh8O7pE5Q&t=9395s
+  window: |-
+    --- Session 2026-06-04 ---
+    [02:36:35] Spieler (Kaya): Wir behalten es erstmal für uns. Das tut den Leuten hier glaube ich gerade nicht gut. Danke euch. Aber ich bedanke mich für eure Ehrlichkeit, für eure offenen Worte.
+    [02:36:50] Spieler (GM): Ja, sehr gerne. Ihr hört von hinten so ein paar Schritte langsam. Was ist
+    [02:36:57] Spieler (Saris): denn mit Ehrenfels? Kann denn Ehrenfels nicht helfen? Habt ihr versucht Ehrenfels zu erreichen?
+    [02:37:01] Spieler (GM): Ich weiß nicht, was genau in Ehrenfels abgelaufen ist, bin ich ganz ehrlich. Ich hab nur die Gerüchte mitbekommen und einige Lichtblitze wurden gesehen von Leuten, die in der Nähe waren. Ich hab nur die Geschichten weitergetragen. Ich war nicht selbst bei der Schlacht anwesend, aber sobald ich weiß, ist Ehrenfels sehr stark geschwächt. Sie haben es wohl gerade so eben geschafft, aber... Ich glaube, es haben sehr, sehr viele den Tod gefunden. Aber
+    [02:37:26] Spieler (Saris): ihr habt gesagt, einer der Götter ist aufgetaucht.
+    [02:37:28] Spieler (GM): Ja, ich glaube, lass mich überlegen. Der Name, der Name. Irgendwer wusste den Namen. Schauen wir mal kurz. Nerash. Die Götte Nerash ist aufgetaucht. Sie hat wohl angeblich die Stadt gerettet, aber zu dem Zeitpunkt waren schon sehr, sehr viele gefallen. Der Gildenmeister ist wohl ermordet worden oder zumindest nicht mehr existent. Und viele Dorfbewohner haben ebenfalls ihr Ende gefunden. Beziehungsweise Abenteurer. Aber die Stadt existiert noch, soweit ich weiß.
+    [02:38:05] Spieler (Saris): Ja, ich war einst mal da. Vor langer, langer Zeit. War noch so ein kleines Dorf. Ja,
+  verdict: ''
+  note: ''
+- id: c034
+  concept: factions/zwerge
+  type: Faction
+  tier: standard
+  claim: Die Zwerge sind ein stolzes Volk, das in den Bergen lebt und dort eine Festung bewohnt.
+  session: 2026-01-27_RF_9RzvnnWzV7E
+  at: 00:14:52
+  url_at: https://www.youtube.com/watch?v=9RzvnnWzV7E&t=892s
+  window: |-
+    --- Session 2026-01-27 ---
+    [00:13:53] Spieler (GM): Das hier ist Krevis, der Wächter. Er ist praktisch unser oberster Feldherr, was die Besatzung der Stadt angeht. Er ist Hauptmann und kontrolliert somit die Soldaten hier. Und der nickt einfach nur so, grüßt euch. Mein Herr, wir müssten tatsächlich tiefer, das sind unsere Gehilfen aus Ehrenfels. Verstehe. und er kommt so bis auf euch zu. Seid ihr denn auch aus anstrengendem Holz geschnitzt? Keine Weicheier, keine Holzhosen und vor allem keine Musiker. Sehen wir aus wie Musiker? Nein, ihr seht wahrhaftig nicht aus wie Musiker. Das freut mein Herz und meine Augen. Der analysiert erst dich, Esterossa, und nach nur kurzer Zeit nickt er so sehr, wie sagt man das, zuversichtlich oder zufrieden. und kommt dann zu Rotunas und der guckt halt wirklich nach oben ein Stück und blickt dich einfach so ab und auch der so die Lippe so nach dem Motto sehr zustimmend für deine Größe. Das sollte es tun. Ja, sehr gut. Gut, ich weise euch einmal ganz kurz ein, wenn das in Ordnung ist. Wir haben eine große Mine hier drunter, die sich, sagen wir, sehr, sehr weit zieht. Wir hatten allerdings einige... und Auseinandersetzungen mit Goblins. Und diese Goblins haben uns aus unserer Mine vertrieben. Wir sind nun mal nicht so viele hier oben und wollten es nicht riskieren, dass sie uns hier überrennen. Es gibt nur einen kleinen schmalen Schacht, über den man die Mine betreten kann. Es ist also praktisch kaum möglich für die Goblins, die Festung hier einzunehmen. Allerdings... Ja, bei ihrer Anzahl ist es trotzdem nervig. Wir haben jetzt schon einige Wochen Dispute mit ihnen und der letzte ist ein wenig blutig ausgegangen. Sowohl sie als auch wir haben einige Leute verloren und... Ja, wir haben keine Zeit für so ein Schwachsinn. Am liebsten würde ich ein Gesuch bei unserem Lord einfordern und noch mehr Zwerge abstellen, um diese Ratten aus unseren Löchern zu vertreiben. Naja, aber die Zeit, es ist Winter und andere Dinge sind genauso wichtig. Außerdem habe ich gehört, irgendwelche Untoten treiben ihr Unwesen irgendwo auf der östlichen Seite der Lande. Dementsprechend, ja. Sind wir darauf angewiesen, dass wir vielleicht von euch Hilfe bekommen? Wir können uns da aktuell nicht blicken lassen. Sie greifen jeden Zwerg an, den sie sehen. Vielleicht seid ihr ja bewandter. Mir egal, wie ihr es tut. Hauptsache, diese kleinen Ratten verziehen sich. Alles klar. Habt ihr noch irgendwelche Fragen?
+  verdict: ''
+  note: ''
+- id: c035
+  concept: items/botschaft_von_belorus
+  type: Item
+  tier: brief
+  claim: 'Der Inhalt: Belorus kennt Lindo Lauts Natur, behauptet, er dürfe nicht existieren, und bietet an, im Austausch für Lindo Laut die Städte zu verschonen.'
+  session: 2026-01-13_RF_w4LB1s9_3rs
+  at: 01:03:44
+  url_at: https://www.youtube.com/watch?v=w4LB1s9_3rs&t=3824s
+  window: |-
+    --- Session 2026-01-13 ---
+    [01:02:18] Spieler (GM): als du die Schrift, wo stehst du gerade? Ah, da hinten, okay. Du öffnest vorsichtig die Schriftrolle und ein... Ziemlich langer Text steht da drauf. Wie gesagt, nichts magisches, es explodiert auch nichts oder keine irgendwelche tödlichen Zauber schießen dir entgegen. Du siehst da einen ganz langen Text und der ist an Lindo Laut gerichtet. Und da steht, Guten Tag, Herr Lindo Laut. Ich habe nun herausgefunden, was oder wer ihr seid. Ich habe ebenfalls herausgefunden, wer oder was euch dazu gemacht hat. Und ich weiß auch, oder vermute es zumindest, dass ich weiß, warum das passiert. Ihr dürft nicht existieren. Ihr könnt nicht existieren. Ich habe es erlebt. Ich habe erlebt, wie all das hier nur der Grund der Götter war, weil sie sich bekriegt haben. Und ich werde sicherlich keinen zweiten Krieg miterleben. Ich werde es mit all meiner Macht verhindern. Also. Ich gebe euch eine Möglichkeit. Tretet heraus aus der Stadt. Und ich verspreche euch, ich werde euch und ich werde Breska und alle Städte verschonen. Aber ihr dürft nicht existieren. Gezeichnet Velorus. Das weißt gerade nur du. Das heißt, du sagst, du teilst das den anderen mit. Da steht gar nichts drin.
+    [01:04:16] Spieler (Rotunas): Da ist ein Mittelfinger
+    [01:04:17] Spieler (GM): gezeichnet. Ich kann übrigens nicht lesen.
+    [01:04:19] Spieler (Rotunas): Ich kann nicht lesen. Über 300.000 Bewohner der Degga-Halbwelt kann nicht richtig lesen und schreiben. Ja, wirklich. Werbung.
+    [01:04:38] Spieler (Dodo): Dodo lest sich das tatsächlich zweimal durch und überlegt, übelst so ein bisschen.
+    [01:05:00] Spieler (Dodo): Und? Was steht drinne? Sag, sag, sag, sag, sag! Ich komme, aber ich komme nicht.
+  verdict: ''
+  note: ''
+- id: c036
+  concept: items/buch_des_belorus
+  type: Item
+  tier: brief
+  claim: Ein selbst geschriebenes Buch, das Belorus dem Stillen gehört und im Raum des Burgherrn gefunden wird.
+  session: 2025-05-14_RF_5eAEDN5ra-4
+  at: 01:16:06
+  url_at: https://www.youtube.com/watch?v=5eAEDN5ra-4&t=4566s
+  window: |-
+    --- Session 2025-05-14 ---
+    [01:14:54] Spieler (Cookie): Ich dachte, dass du lang... Hier der DM und dieses Viech. Abgelenkt ist, bin ich hier mal in den Raum gesteppt. Oh
+    [01:15:03] Spieler (GM): ja, ich seh's. Du bist da schon... Guck mir
+    [01:15:05] Spieler (Cookie): hier Sachen an.
+    [01:15:06] Spieler (GM): Ja, ich seh's. Ja, du hörst aber auch hier, du kannst jetzt die Zeit nehmen und ganz gemütlich erst den Raum durchsuchen oder du gehst in Richtung Kampfgeräusche.
+    [01:15:18] Spieler (Cookie): Ja, das Ding ist, wir haben ja immer noch eine Motion herauszufinden.
+    [01:15:24] Spieler (Dodo): Ja, mach mal ruhig. Ich
+    [01:15:26] Spieler (Cookie): dachte mir so, wie gesagt, wenn alle abgelenkt sind... Ja. Besuche ich hier Informationen zu sammeln, weil der Raum sah recht interessant aus.
+    [01:15:35] Spieler (GM): Dann machen wir gerne einen Instinktwurf. Oder Knowledge, was dir besser passt.
+    [01:15:42] Spieler (Cookie): Ich habe beides, habe ich plus eins, ist egal. Ah,
+    [01:15:51] Spieler (GM): Krit. Wo denn los? Ja, du durchsuchst halt hastig, weil du hast jetzt nicht die Zeit, alles perfekt zu durchsuchen. Und durchforstest halt ein bisschen. Und das scheint hier so ein bisschen, dass, ich sag jetzt mal...
+    [01:16:06] Spieler (GM): Der Raum des Lords dieser Burg zu sein und du findest eine Art selbst geschriebenes Buch und dort steht, dass dieses Buch dem lieben Belorus dem Stillen gehört und er ist der ehemalige General von Zebros und der ist tatsächlich in seinem Dienst mehr oder weniger gefallen. Er ist ein Paladin. und er hat sein Eid gebrochen und wurde verflucht und ist seither ein Death Knight, also ein Todespaladin. Du weißt, Death Knights kann man nicht einfach so töten. Vielleicht mit so einem Pfeil. Okay, wir switchen. Cookie, willst du noch was sagen oder sonst switchen wir kurz wieder zum Kampf?
+    [01:17:01] Spieler (Cookie): Darf ich das Buch mitnehmen?
+    [01:17:02] Spieler (GM): Du darfst dich ja einstecken. Da sind auf jeden Fall noch mehr Informationen drin, aber du schaffst es jetzt nicht alles, weil du hast jetzt die Zeit.
+    [01:17:08] Spieler (Cookie): Ich bin hier ja auch, ich hab ja auch nicht die Zeit. Nee, dann bin ich fertig und würd mich so langsam Richtung Kampfort, ich hab meine Figur schon wieder verloren.
+    [01:17:16] Spieler (GM): Ich bin immer noch im Raum, oder? Dann Dodo, du darfst. Nee,
+    [01:17:22] Spieler (Cookie): ich glaub ich bin irgendwo runtergefallen. Ich
+    [01:17:26] Spieler (Dodo): würd gern den Hund einschalten oder das hundähnliche Ding. Da bist du, warte. Warte kurz, die Pucki eben zurück.
+  verdict: ''
+  note: ''
+- id: c037
+  concept: items/gluecksbringer_stein
+  type: Item
+  tier: brief
+  claim: Eine Zwergin schenkt Nyrella einen hübschen, gekerbten Stein mit einer Rune, die für 'Leben' steht.
+  session: 2025-09-17_RF_AhIT8dcxw2o
+  at: 01:03:07
+  url_at: https://www.youtube.com/watch?v=AhIT8dcxw2o&t=3787s
+  window: |-
+    --- Session 2025-09-17 ---
+    [01:01:51] Spieler (Rotunas): viel? Alle Säcke! Wo finden wir diesen Roland?
+    [01:01:59] Spieler (GM): Roland ist dort auf der Kutsche. Er ist im Grübeln wie immer. Alles klar. Tatsächlich du, Rotunas, oder Dodo, weiß ich gar nicht. Ich glaube, ihr erkennt den tatsächlich. Wir haben den
+    [01:02:11] Spieler (Dodo): schon mal gesehen.
+    [01:02:12] Spieler (GM): Ihr habt den schon mal gesehen. Schon vor langer, langer Zeit, da war Breska noch weitaus nicht so groß wie jetzt. Der hat euch damals auch, glaube ich, geholfen bei der Schlacht.
+    [01:02:23] Spieler (Rotunas): Achso, so lange noch. Okay. Ich erinnere mich nicht an ihn. Also an dieses... An diesen Charakter erinnere ich mich wirklich nicht. An das Aussehen. Vielleicht hast du das Aussehen geändert oder so?
+    [01:02:34] Spieler (GM): Ne, ist die gleiche Figur, die stand da schon seit Tag 1 gefühlt.
+    [01:02:38] Spieler (Dodo): Okay. Die stand das letzte Mal auch an der Kapelle.
+    [01:02:41] Spieler (GM): Genau. Genau, ja genau, das ist der. Okay,
+    [01:02:46] Spieler (Rotunas): wir gehen mal zu Oron. Einen schönen Tag
+    [01:02:47] Spieler (GM): euch noch. Vielen lieben Dank. Und tatsächlich, Nyrella, bevor du wegfliegst, die Dame, die Zwergin, die gibt dir noch was Kleines. Hier gibt es so einen Stein, der ist so ein bisschen gekarft und sehr hübsch angerichtet. Es ist so ein kleiner Glücksbringer. Mit so einer kleinen Rune drauf.
+    [01:03:07] Spieler (Nyrella): Im Weggehen sage ich ihr noch so, ja, das
+    [01:03:09] Spieler (GM): steht für Leben.
+    [01:03:13] Spieler (Nyrella): Danke euch, haltet durch, ich gebe mein Bestes, um eure Situation zu verbessern.
+    [01:03:18] Spieler (GM): Habt ihr schon, vielen lieben Dank. Und als ihr so zwischen diesen Leuten durchlauft, seht ihr, die meisten sind halt ausgemergelt, hungrig. Auch die Pferde sehen alle so aus, als hätten sie schon... Immer mal wieder so eine Nahrung skippen müssen oder nur sich von einfachem Gras ernähren müssen, was hier so schon gefühlt überall abgesnackt worden ist. Überwiegend Zwerge, einige Gnome seht ihr, Menschen ein paar und hinten in der Ecke seht ihr sogar ein paar Tieflinge. Kurz auf dem Weg möchte ich nur sagen, wir haben nicht viel Zeit, bitte haltet euch so kurz wie möglich.
+    [01:04:02] Spieler (Rotunas): Wofür haben wir nicht viel Zeit?
+    [01:04:04] Spieler (Esterossa): Für das Gespräch jetzt.
+    [01:04:06] Spieler (Rotunas): Welches? Aber wieso haben wir nicht viel Zeit?
+    [01:04:10] Spieler (Esterossa): Wir haben nur noch zwei Stunden bis es dunkel wird und wir müssen noch zurück. OT, du hast noch 16 Minuten Zeit bevor wir zurück porten müssen.
+    [01:04:21] Spieler (Rotunas): Ich muss nicht zurück.
+    [01:04:23] Spieler (GM): Diese Gilde
+    [01:04:25] Spieler (Rotunas): ist mir egal. Mir sind diese Flüchtlinge gerade wichtiger als die Gilde, die da drinnen sitzt. Ob ich die Botschaft jetzt... Welches große Ganze? Ich gehöre weder einem Land noch einer spezifischen Gruppierung an. Ihr seid meine Gruppe, mehr nicht. Was wir als Gruppe entscheiden, gilt. Wenn ich gegen diese ganze Stadt antreten muss mit euch, dann ist das so. Was Rotunas sagen würde, ich bin der Rotunas, ihr macht was ich sage. Ich bin der Rotunas und ihr seid meine Freunde. Das
+  verdict: ''
+  note: ''
+- id: c038
+  concept: items/magischer_ring_teleportationsring
+  type: Item
+  tier: deep
+  claim: 'Die Gruppe: Die Gefährten von Rotunas behielten den Ring zunächst als gemeinsamen Besitz, bevor die Zuordnung zu Lindo Laut festgelegt wurde.'
+  session: 2025-07-22_RF_BRRCUgW4xRo
+  at: 02:37:04
+  url_at: https://www.youtube.com/watch?v=BRRCUgW4xRo&t=9424s
+  window: |-
+    --- Session 2025-07-22 ---
+    [02:35:37] Spieler (Esterossa): Potseit, aber es sollte vielleicht geprüft werden, ob es weitere Verletzte gab, denn wir hörten noch in der Nacht einen Schrei, der uns weckte. Und ich habe die Befürchtung, dass nicht wir die einzigen Opfer waren an diesem Abend.
+    [02:35:53] Spieler (GM): Möglich. Doch bis jetzt wurde schon irgendwie anders entdeckt? Nein, nur tote Brabarant-Gildenmitglieder. Ich werde einen Brief fertig machen. Ich werde dem Herren der Gilde eine kleine Nachricht zukommen lassen, dass er seine Überreste hier abholen darf. Es ist wahrscheinlich nichts Persönliches gewesen. Wer auch immer sie beauftragt hat, wird einen Groll gegen euch hegen und deswegen diese beauftragt haben.
+    [02:36:29] Spieler (Lindo Laut): Sonst noch etwas? Gibt es eine Möglichkeit herauszufinden, wer hinter so etwas steckt?
+    [02:36:36] Spieler (GM): Ich werde auf jeden Fall diesen Dolch untersuchen und es euch wissen lassen. Ansonsten, vielleicht könnt ihr mit dem Brief oder dem Ring irgendwas anfangen. Kann ich den Ring anschauen? Du nimmst dir den Ring in die Hand und du merkst, das ist ein magisches Ding. Das wird wahrscheinlich von irgendwem an ihn übergeben. Und, machen wir einen Knowledge Check? Darf
+    [02:37:04] Spieler (Esterossa): ich mich überhaupt unterstützen? Gerne. Das ist, äh, kickt ja eine Automatik.
+    [02:37:13] Spieler (GM): Das wären dann insgesamt, das waren 7, das sind 10. 10 reicht gerade so eben. Du glaubst, dass die Teleportationsmagie damit zusammenhängt. Das heißt, er konnte sich teleportieren mit diesem Ring. Schreib dir auf, du darfst dich einmal pro kurze Rast teleportieren, wenn du den Ring trägst. In einer Range von bis zu very far. Also
+    [02:37:52] Spieler (Lindo Laut): ich weiß gar nicht, ob ich den Ring dann nehme, aber wir haben den Ring erstmal als Gruppe.
+    [02:37:56] Spieler (Esterossa): Schreib dir das mal auf, können wir später erörtern.
+    [02:38:28] Spieler (GM): Das Chaos, was verursacht wurde, zu beseitigen.
+  verdict: ''
+  note: ''
+- id: c039
+  concept: items/ring
+  type: Item
+  tier: brief
+  claim: Der Ring wurde in einem Schatüll gefunden und auf den Altar gelegt.
+  session: 2026-05-13_RF_4afPD9Q_5AY
+  at: 00:47:40
+  url_at: https://www.youtube.com/watch?v=4afPD9Q_5AY&t=2860s
+  window: |-
+    --- Session 2026-05-13 ---
+    [00:46:16] Spieler (GM): Okay, bewegt deine Figur gern zur Seite. Ihr seid wieder dran. Fokus ist gerade auf Miko.
+    [00:46:26] Spieler (Dante): Ich würde gerne angreifen.
+    [00:46:29] Spieler (Dodo): Sollen wir den
+    [00:46:29] Spieler (Dante): Ring zerstören oder wollt ihr weiterhin angreifen auf den Seraphen? Zerstören, zerstören. Zerstören, unbedingt zerstören. Dann willst du es nochmal versuchen, Dodo?
+    [00:46:41] Spieler (Dodo): Ja, ihr habt hoffentlich, ihr wart ja während ich hier den einen Angriff noch getankt habe, habt ihr hoffentlich den Ring schon irgendwo auf den Boden gelegt. Jaja, das wurde gelegt. Okay, ich mache noch einmal so eine Handbewegung. Verpisst euch! Nimmt Schritt zurück und würde schon ausholen mit meinem Streitkolben. Du
+    [00:47:02] Spieler (GM): stehst, wenn das wieder auf ist, Esterossa. Ja, der Richter sollte sich auch noch irgendwo hin verpissen. Ja, ja, der springt auch so einen guten zwei Meter nach hinten. Mach einen Angriffswurf.
+    [00:47:17] Spieler (Dodo): Ich gebe sicher als halber noch einen Haupt aus für
+    [00:47:22] Spieler (GM): meinen Explosion. Aloha, Makak. Oh, ich dachte, ich habe zwei Zwölfen gesehen. Das
+    [00:47:27] Spieler (Dodo): wäre jetzt mit Haupt, aber ich kann ja immer noch keinen Haupt generieren, oder? Du kannst keinen
+    [00:47:31] Spieler (GM): Haupt generieren, nein.
+    [00:47:33] Spieler (Dodo): Okay, jetzt habe ich vergessen, was es war. Das sind 16. Plus 4 und nochmal plus 2, also 22.
+    [00:47:40] Spieler (GM): Und tatsächlich, du schlägst mit diesem heiligen Kolben auf den Ring und der zerspringt in tausend kleine Splitter. Und ihr seht, in dem Augenblick leuchtet dieses ganze Gestein auf und das Symbol brennt einmal mit so einer Intensität. und ihr seht dann die ganzen Kristalle, die auf dem Seraphen so ein bisschen angesiedelt sind, die leuchten auch enorm hell auf und der Schmerz muss enorm vernichtend sein, denn der Seraph krümmt sich vor Schmerzen und fällt erneut zu Boden und ihr seht, wie diese Kristalle jetzt komplett seine Essenz absorbieren und ihr seht wirklich, wie Huludan, der diesem Menschen die Seele so aussaugt und dann so einfällt.
+    [00:48:34] Spieler (GM): Und er schreit nur und schreit. Ist
+    [00:48:44] Spieler (Lunara Velora): er jetzt tot oder müssen wir den jetzt erst noch...
+    [00:48:46] Spieler (GM): Der Prozess scheint ihn wahrscheinlich zu vernichten gleich, ja. Aber noch ist er nicht tot. Ihr seht nur wie schmerzhaft dieser Prozess gerade sein muss.
+    [00:48:59] Spieler (Lunara Velora): Können wir da noch draufhauen? Also so zur Sicherheit? Nur was ihr
+    [00:49:02] Spieler (GM): möchtet. Ich kann auch irgendwie
+    [00:49:03] Spieler (Lunara Velora): helfen vielleicht. Nur
+    [00:49:04] Spieler (GM): das Schienen oder so. Nee, der Crit, der macht 4 W10 plus 10. Der Crit ist ja der Max Damage davon. Also Nerash
+  verdict: ''
+  note: ''
+- id: c040
+  concept: items/ring_der_pocket_dimension
+  type: Item
+  tier: deep
+  claim: Der Ring der Pocket Dimension ist ein magischer Ring im Besitz von Lindo Laut.
+  session: 2026-08-04_Team-A_qRj2t3wQHfs
+  at: 00:47:06
+  url_at: https://www.youtube.com/watch?v=qRj2t3wQHfs&t=2826s
+  window: |-
+    --- Session 2026-08-04 ---
+    [00:46:03] Spieler (Lindo Laut): Priester ja, die den Raum abgeschirmt hatte. Bin ich auch in der Lage, unseren Raum irgendwie in irgendeiner Form abzuschirmen, dass da nicht zugehört wird? Oder ist, glaube ich, dass wir hier nirgendwo einen Ort haben, wo wir sicher reden können?
+    [00:46:22] Spieler (GM): Wenn du das eine oder andere Utensil verwendest? Bestimmt.
+    [00:46:36] Spieler (Lindo Laut): Was für eine Art von Utensil? Wie bitte? Sorry. Ah, ja. Ja. Viel besser, danke. Bitte, kein Ding. Wir gehen zusammen hoch und dann würde ich tatsächlich sagen, dass ich sie frage und auch Gunther sagen, ich habe eine Möglichkeit, wo wir uns gut ausruhen können und würde quasi die Hand von allen nehmen und meine Pocket Dimension aktivieren.
+    [00:47:06] Spieler (GM): Yes. Du verschwindest mit deinen beiden Begleitern in diese Pocket Dimension. und du weißt, da wird euch so einfach niemand abhören können.
+    [00:47:20] Spieler (Gunther): Okay, was ist das hier gerade?
+    [00:47:23] Spieler (Lunara Velora): Warte, ist da jetzt Lunara dabei oder nicht?
+    [00:47:25] Spieler (Lindo Laut): Nein. Okay, dann ist Lunara dabei, ja. Doch, doch, wir gehen zu ihr und holen sie quasi mit ab.
+    [00:47:33] Spieler (Gunther): Also kannst du das vielleicht gerade bitte nochmal kurz erklären? Was ist das, was für eine Pocket Dimension, wie gehen wir da rein, wie sieht die innen drin aus, ist alles aus Schokolade, was ich hoffe.
+    [00:47:44] Spieler (Lunara Velora): Nein, du wirst enttäuscht.
+    [00:47:47] Spieler (Lindo Laut): Also Dennis, bringst du uns auch auf die Welt?
+    [00:47:51] Spieler (Gunther): Ja, bringst du uns auf die Welt, Mami, bitte.
+    [00:47:54] Spieler (Lindo Laut): Also das ist einfach nur ein Raum, der ja relativ leer ist, aber wo man schon 30 Quadratmeter oder so sind. Es ist ein Ring, den ich von einer übernatürlichen Wesen geschenkt bekommen habe als Wunsch. Wo ich alle Willing Creatures mit hin teleportieren kann. Das ist wie so eine kleine Parallele, wie so eine kleine Spülte der Welt. Ganz ganz klein, aber losgelöst von den Ebenen der normalen Welt.
+    [00:48:30] Spieler (Gunther): Also völlig losgelöst von der Erde.
+    [00:48:34] Spieler (Lindo Laut): Völlig losgelöst. Und ich sag so ein bisschen, was denn hier passiert? Also und sagst du zu Lunara, also wir waren gerade bei dem Seraphen und...
+  verdict: ''
+  note: ''
+- id: c041
+  concept: items/saris_zepter
+  type: Item
+  tier: brief
+  claim: Mit dem Zepter schleudert er violette Magie auf Leichen, um sie als untote Diener zu erwecken.
+  session: 2026-09-03_Team-B_bl-hX87_EC8
+  at: 01:20:09
+  url_at: https://www.youtube.com/watch?v=bl-hX87_EC8&t=4809s
+  window: |-
+    --- Session 2026-09-03 ---
+    [01:19:03] Spieler (GM): Das können wir jetzt aber ganz cool machen. Wir lassen einfach... Ah, scheiße, das ist ja gar keine eigene Figur. Das ist... Dragon. Finden wir ihn in der Tag? Ich finde ihn nicht. Dann nehmen wir einfach mal irgendwas anderes, random.
+    [01:19:27] Spieler (Bruma Stormrak): Kannst du jetzt zweimal meine Figur theoretisch nehmen?
+    [01:19:29] Spieler (GM): Ja, ich würde ja, aber ich finde sie ja nicht. Ich kann auch den Namen nicht suchen, weil ich nicht weiß, ist das die hier? Nein. Ich nehme einfach mal die hier. Ja, alles gut. Und mach die shiny. Okay, ja. Macht der Rest irgendwas?
+    [01:19:47] Spieler (Saris): Ich würde ganz schnell zu dem unseren freundlichen Chef gehen.
+    [01:19:54] Spieler (GM): Ja, der wird gerade verarztet.
+    [01:19:56] Spieler (Saris): Ach, der wird schon fast, okay. Ja, ja, ja. Okay, Pech.
+    [01:20:00] Spieler (GM): Pech sagt er, okay. Ich kann besser heilen als die anderen da oben.
+    [01:20:09] Spieler (Saris): Ähm, nö. Ich, äh, die Leiche, die da liegt, vor der Mauer. Ja. Sehen die Bogenschützen diese Leiche? Nein. Okay. Ähm, ich, ich hebe, also nee, ich drücke auf mein, auf mein Zepter. und stecke ihn wirklich so, ich ramme ihn in den Boden, so dass er halt vor mir ist und dann nehme ich meine rechte Hand und man sieht so eine Art, wie soll man sagen, so eine Energie aus den Augen von Samuel, die langsam um meinen Arm herum wandeln zu diesem Zepter und mehr oder weniger auf die Kreatur gehen, also auf diese Leiche. Okay,
+    [01:21:01] Spieler (GM): okay, das musst du nochmal ein bisschen beschreiben. Du bist ja auch oben auf der Mauer
+    [01:21:05] Spieler (Saris): drauf. Ich stehe oben auf der Mauer drauf. Ich drücke auf diesen Knopf, wo die ganzen Spikes rausgehen. Dann geht halt unten auch so ein kleiner Spike. Ich stecke den Zepter halt in den Boden. Und ich hebe nur wirklich die rechte Hand, wird dann gehoben in dem Moment. Und dann sieht man halt, dass hier auf einmal die Augen von Samuel anfangen zu leuchten. Aber die leuchten halt in so einem Violett, in so einem dunklen... Sehr dunklen Violett. Fast schon so... Ja, Dunkelheit würde ich jetzt nicht sagen. Das Wort wollen wir nicht benutzen, aber es ist ein sehr dunkles Violett. Und diese Energie, dieser Mana, Aura, wie man das auch immer nennt, fließt halt wie so eine Schlange um meinen Arm herum langsam zu meiner Handfläche. Und während ich das an diesem Zepterball sozusagen halte, sammelt sich so eine Art Kraft da. und fliegt direkt in die Leiche da vorne, die da liegt. Also
+  verdict: ''
+  note: ''
+- id: c042
+  concept: locations/baum_mit_aufgespiessten_personen
+  type: Location
+  tier: brief
+  claim: Ein unheimlicher Baum, an dem Leute aufgespießt sind.
+  session: 2025-09-06_RF_vo1xnyLQDJk
+  at: 00:21:05
+  url_at: https://www.youtube.com/watch?v=vo1xnyLQDJk&t=1265s
+  window: |-
+    --- Session 2025-09-06 ---
+    [00:19:42] Spieler (GM): -Zauber wirken. Ich glaube, er weiß nicht, was Banish heißt, oder? Okay, das ist Verbannung. Du verbannst diesen Dämon kurz auf eine andere Ebene.
+    [00:19:56] Spieler (Lindo Laut): Ah, dann würde ich so eine Art Command-Verbannung. Ja, genau. Du musst nur mit deinem
+    [00:20:00] Spieler (GM): Presence-Check jetzt gut würfeln. Schwierigkeitsgrad ist 18. Okay. Du hebst deine Hand und plötzlich durchströmt dich diese Kraft von diesem Halbgott und du schnippst einmal und diese kleine Ratte löst sich einfach auf.
+    [00:20:44] Spieler (GM): Und jetzt Beeilung, wir haben nicht viel Zeit. Es wird nicht lange dauern, bis er wieder da ist.
+    [00:20:52] Spieler (Lindo Laut): Lass uns rein. Ich weiß nicht, welche Richtung.
+    [00:20:56] Spieler (Esterossa): Ja, wir wissen alle nicht. Wir haben keine Ahnung, in welche Richtung wir müssen. Das ist jetzt einfach hier Fail and Error. Fail and Error, Entschuldigung. Ja, Fail auch. Da
+    [00:21:05] Spieler (GM): hängt Rotor. Ihr kommt an einem Baum an, wo Leute aufgespießt sind und plötzlich... Nicht so unbekannt, da hängen halt Leute dran, die ihr kennt, literally. Da hängen Leute dran, die ihr kennt. Okay. Wen Da hängt so ein Goblin, hängt da so. Dodo! Einer dieser Goblins hält so seine Hand so zu dir und Dodo, du erkennst diesen Goblin.
+    [00:21:38] Spieler (Dodo): Von wo kenn ich den? Von meiner
+    [00:21:40] Spieler (GM): Heimat. Von deiner Heimat. Und ganz kurz, bevor du was sagst, Lindo Laut, du siehst da auch jemanden dran hängen. Und das ist jemand aus deiner Heimat. Einer deiner Familienmitglieder.
+    [00:21:54] Spieler (GM): aufgespießt an den Flügeln.
+    [00:21:55] Spieler (Cookie): Ich habe irgendwie das Gefühl, dieser Ort will uns ablenken. Spieler, kannst du da
+    [00:21:59] Spieler (Lindo Laut): kurz den Inspekt... Dodo, hilf mir runter! Bitte! Inspekt machen? Ich
+    [00:22:10] Spieler (Dodo): würde sagen, es kommt Dodo ein bisschen Suspekt vor. Okay.
+    [00:22:14] Spieler (Cookie): Leute, lasst weiterlaufen.
+    [00:22:16] Spieler (Dodo): Weil er diesem Ort nicht traut. Muss ich darauf würfeln, ob ich das glaube oder nicht? Nee, musst du nicht. Okay.
+    [00:22:25] Spieler (GM): Lindo Laut und Dodo, ihr müsst einen Stresspunkt aufschreiben.
+    [00:22:29] Spieler (Dodo): Ja, ich wollte gerade sagen, ich würde mir einen Stresspunkt dafür geben.
+    [00:22:33] Spieler (Lindo Laut): Aber Spieler, kannst du den Inspektwurf, kannst du den nicht machen?
+  verdict: ''
+  note: ''
+- id: c043
+  concept: locations/burg_des_belorus
+  type: Location
+  tier: deep
+  claim: Beschrieben wird ein Raum mit Kamin und Dokumenten.
+  session: 2025-05-14_RF_5eAEDN5ra-4
+  at: 00:56:19
+  url_at: https://www.youtube.com/watch?v=5eAEDN5ra-4&t=3379s
+  window: |-
+    --- Session 2025-05-14 ---
+    [00:55:56] Spieler (Cookie): auf
+    [00:55:58] Spieler (GM): eine Ebene bringen. Ich
+    [00:56:00] Spieler (Cookie): hätte schon versucht, auch mit Zwergen... Mit dem Zwergenwerkzeug? Zwergenwerkzeug, was ist das denn?
+    [00:56:11] Spieler (GM): Ihr kommt in diese Burg hinein und kaum seid ihr drinnen, Schließt sich die Türe hinter euch wieder.
+    [00:56:19] Spieler (Cookie): Ja, finde ich gar nicht gruselig.
+    [00:56:21] Spieler (GM): Links sind eine Art Stallungen, aber nicht für Tiere, für irgendwas anderes. Ihr seht so ein bisschen, als wären da so Positionen, wo etwas stand, wie eine Statue vielleicht.
+    [00:56:33] Spieler (Cookie): Ja, das waren bestimmt mal irgendwelche eingefrorenen Viecher, die entfernt worden sind.
+    [00:56:40] Spieler (Dodo): Ich komm hier nicht durch. Ist es in der Burg kalt? Du kommst noch nicht höher, weil da... warte, ich mach ein bisschen weg, warte kurz. Ich laufe. Ich laufe. Ich laufe.
+    [00:57:24] Spieler (Dodo): Oh, easy! Also, du
+    [00:57:27] Spieler (Cookie): berührst... Also, zweimal hintereinander. Du
+    [00:57:30] Spieler (GM): kriegst auch, für den Crit kriegst du übrigens auch einen Hope, ne? Nur als Info. Ja.
+    [00:57:35] Spieler (Cookie): Ja gut, meine Hopes sind eh alle voll, also... Ah, dann ist ja
+    [00:57:37] Spieler (GM): egal. Arroganz, aber okay. Du berührst praktisch nur dieses Schloss, also du kommst nicht mehr mit dem, du gehst nicht mehr rein und die Türen öffnen sich. Also die eine Tür zumindest.
+  verdict: ''
+  note: ''
+- id: c044
+  concept: locations/burg_des_belorus
+  type: Location
+  tier: deep
+  claim: '[P-08] Zudem existiert ein Schutzkristall; dessen Aktivierung löst einen Mechanismus im ganzen Schloss aus.'
+  session: 2025-05-14_RF_5eAEDN5ra-4
+  at: 00:56:19
+  url_at: https://www.youtube.com/watch?v=5eAEDN5ra-4&t=3379s
+  window: |-
+    --- Session 2025-05-14 ---
+    [00:55:56] Spieler (Cookie): auf
+    [00:55:58] Spieler (GM): eine Ebene bringen. Ich
+    [00:56:00] Spieler (Cookie): hätte schon versucht, auch mit Zwergen... Mit dem Zwergenwerkzeug? Zwergenwerkzeug, was ist das denn?
+    [00:56:11] Spieler (GM): Ihr kommt in diese Burg hinein und kaum seid ihr drinnen, Schließt sich die Türe hinter euch wieder.
+    [00:56:19] Spieler (Cookie): Ja, finde ich gar nicht gruselig.
+    [00:56:21] Spieler (GM): Links sind eine Art Stallungen, aber nicht für Tiere, für irgendwas anderes. Ihr seht so ein bisschen, als wären da so Positionen, wo etwas stand, wie eine Statue vielleicht.
+    [00:56:33] Spieler (Cookie): Ja, das waren bestimmt mal irgendwelche eingefrorenen Viecher, die entfernt worden sind.
+    [00:56:40] Spieler (Dodo): Ich komm hier nicht durch. Ist es in der Burg kalt? Du kommst noch nicht höher, weil da... warte, ich mach ein bisschen weg, warte kurz. Ich laufe. Ich laufe. Ich laufe.
+    [00:57:24] Spieler (Dodo): Oh, easy! Also, du
+    [00:57:27] Spieler (Cookie): berührst... Also, zweimal hintereinander. Du
+    [00:57:30] Spieler (GM): kriegst auch, für den Crit kriegst du übrigens auch einen Hope, ne? Nur als Info. Ja.
+    [00:57:35] Spieler (Cookie): Ja gut, meine Hopes sind eh alle voll, also... Ah, dann ist ja
+    [00:57:37] Spieler (GM): egal. Arroganz, aber okay. Du berührst praktisch nur dieses Schloss, also du kommst nicht mehr mit dem, du gehst nicht mehr rein und die Türen öffnen sich. Also die eine Tür zumindest.
+  verdict: ''
+  note: ''
+- id: c045
+  concept: locations/burgruine_im_traum
+  type: Location
+  tier: brief
+  claim: In Lindos Traum sieht er eine Burgruine in einer waldigen Landschaft mit Ruinen und Nebel.
+  session: 2025-09-30_RF_bUT7Mc2hjUY
+  at: 01:59:23
+  url_at: https://www.youtube.com/watch?v=bUT7Mc2hjUY&t=7163s
+  window: |-
+    --- Session 2025-09-30 ---
+    [01:59:23] Spieler (GM): fragt spitzzüngig, ihr seid aber nicht mehr derselbe. Niemand wird euch folgen. Und Vasul antwortet, das lass mal ganz meine Sorge sein. Ich bin nun schon so weit hier runtergekommen. Jetzt erfüll mir diesen letzten Wunsch. Und diese andere Person nickt und steht auf. Und Vasul und diese andere verhüllte Gestalt gehen so einen Korridor entlang. und kommen an eine Art Tor. Also wie so ein metallenes Gate. Und das geht auf. Und dahinter sind, man sieht nicht genau, aber ganz viele Schäden, ganz viele Schatten. Und du hörst so ein Wimmern, so ein erbärmliches Geräusch. Das hier. Und dann sind wir quitt. Und Vasus letztes Wort, was er sagt, ist einverstanden. Dann merkst du wie aus dem Buch von Tom Riddle, wie du so rausgezogen wirst. Du hörst so das Schreien von...
+    [02:00:33] Spieler (GM): Und du legst dich wieder zu Bett und tust es für den Augenblick erstmal nur als Albtraum ab.
+  verdict: ''
+  note: ''
+- id: c046
+  concept: locations/duftende_pflanzen
+  type: Location
+  tier: brief
+  claim: Pflanzen, die einen süßlichen Geruch verströmen, der bei Beschädigung eine betäubende Gaswolke freisetzt.
+  session: 2026-02-11_RF_3C8SD-cyNPM
+  at: 00:43:40
+  url_at: https://www.youtube.com/watch?v=3C8SD-cyNPM&t=2620s
+  window: |-
+    --- Session 2026-02-11 ---
+    [00:42:14] Spieler (Dodo): nicht. Ich bin da nicht. Ich bin da nicht. Ich bin da nicht. Ich
+    [00:42:16] Spieler (Lindo Laut): bin da nicht. Ich bin da nicht. Ich bin da nicht. Ich bin da nicht. Ich bin da
+    [00:42:17] Spieler (Dodo): nicht. Ich bin da nicht. Ich bin da nicht. Ich bin da
+    [00:42:21] Spieler (Lunara Velora): nicht.
+    [00:42:39] Spieler (Esterossa): Ich hab
+    [00:42:44] Spieler (GM): nur was im Chat gesagt.
+    [00:43:00] Spieler (Lunara Velora): Das ist
+    [00:43:01] Spieler (Lindo Laut): schlecht. Ich würde... Jungs, lasst aus dem Gang rausgehen. Kompletter Gang raus.
+    [00:43:08] Spieler (Nyrella): Ja, lasst aus dem Dungeon rausgehen. Lasst
+    [00:43:10] Spieler (Dodo): Dodo alleine.
+    [00:43:14] Spieler (Nyrella): Wolltest du nicht einen neuen Charakter bauen, oder? Hier
+    [00:43:16] Spieler (Dodo): hinten? Das sollte
+    [00:43:17] Spieler (Esterossa): passen, das sollte passen, oder? Dodo hat Schuppen.
+    [00:43:20] Spieler (Lunara Velora): Lass Dodo einfach voll allein hier. Mirella, Mirella. Ja, hau raus. Also ich würde mich schon mal ein bisschen vorbereiten mit... Nee, ich mach gar nichts, nee. You go, girl.
+    [00:43:35] Spieler (Dodo): Seid ihr bereit? Also ich sehe nichts, ihr müsst mir sagen, wenn ihr bereit seid.
+    [00:43:37] Spieler (Nyrella): Wir sind bereit, wir sind sowas von bereit.
+    [00:43:40] Spieler (Dodo): Ich halte mein Schild vor mich und schaue nur mit dem Kopf drüber und würde einen gezielten Strahl Feuer auf das Ding machen.
+    [00:43:49] Spieler (GM): Machen wir einen Angriffswurf. Wenn
+    [00:43:54] Spieler (Esterossa): er
+    [00:43:57] Spieler (Lunara Velora): die jetzt alle aktiviert, überall wo die sind.
+    [00:44:01] Spieler (Dodo): Mit zwölf. Wie viel war das, sorry? Insgesamt? Zwölf mit Haupt.
+    [00:44:10] Spieler (GM): Du gibst einen Strahl von Flammen aus dir heraus und du merkst, dass die Flammen schnell an Stärke verlieren. Und als diese Flammen auf diese Pflanzen, diese Schwämme, was auch immer das sein soll, treffen, die sickern fast gar nicht ein, die verbrennen nicht, die lösen sich nicht auf und scheinen auch nicht wirklich viel auf Feuer zu reagieren. Aber trotzdem irgendwie... Es ist wie so eine Resonation aus einem Angriff. Merkst du, wie so eine leichte Duftwolke abgegeben wird? Ihr kennt das ja, wenn man so mit so einem kleinen... Dann sieht man ja ganz kurz in den feinen Feuchtigkeits... Wie so von einem Deo, von einem Parfüm, so ein kleines Spray. und das siehst du in so eine ganz große, schnelle Druckwelle, wie das einmal so nach draußen geht. Und da du recht nah dran stehst, ist die Reaktionszeit auch extrem schwierig. Du darfst trotzdem einen Reaction Roll auf Agility machen, aber Schwierigkeitsgrad ist 20. Jetzt sagt er, oh Crit, easy. Nee. Okay, diese Feuchtigkeit trifft dich sofort und du fühlst dich sofort total schwer. und als würdest du auch so ein leichter Film auf deinem Blick sein, als wärst du sehr betrunken. Du darfst dir drei Stresspunkte ausschreiben.
+  verdict: ''
+  note: ''
+- id: c047
+  concept: locations/fluechtlingslager_vor_breska
+  type: Location
+  tier: brief
+  claim: Sie sind aus dem Norden vor Untoten geflohen und dürfen nicht in die Stadt.
+  session: 2025-09-17_RF_AhIT8dcxw2o
+  at: 01:04:02
+  url_at: https://www.youtube.com/watch?v=AhIT8dcxw2o&t=3842s
+  window: |-
+    --- Session 2025-09-17 ---
+    [01:02:34] Spieler (GM): Ne, ist die gleiche Figur, die stand da schon seit Tag 1 gefühlt.
+    [01:02:38] Spieler (Dodo): Okay. Die stand das letzte Mal auch an der Kapelle.
+    [01:02:41] Spieler (GM): Genau. Genau, ja genau, das ist der. Okay,
+    [01:02:46] Spieler (Rotunas): wir gehen mal zu Oron. Einen schönen Tag
+    [01:02:47] Spieler (GM): euch noch. Vielen lieben Dank. Und tatsächlich, Nyrella, bevor du wegfliegst, die Dame, die Zwergin, die gibt dir noch was Kleines. Hier gibt es so einen Stein, der ist so ein bisschen gekarft und sehr hübsch angerichtet. Es ist so ein kleiner Glücksbringer. Mit so einer kleinen Rune drauf.
+    [01:03:07] Spieler (Nyrella): Im Weggehen sage ich ihr noch so, ja, das
+    [01:03:09] Spieler (GM): steht für Leben.
+    [01:03:13] Spieler (Nyrella): Danke euch, haltet durch, ich gebe mein Bestes, um eure Situation zu verbessern.
+    [01:03:18] Spieler (GM): Habt ihr schon, vielen lieben Dank. Und als ihr so zwischen diesen Leuten durchlauft, seht ihr, die meisten sind halt ausgemergelt, hungrig. Auch die Pferde sehen alle so aus, als hätten sie schon... Immer mal wieder so eine Nahrung skippen müssen oder nur sich von einfachem Gras ernähren müssen, was hier so schon gefühlt überall abgesnackt worden ist. Überwiegend Zwerge, einige Gnome seht ihr, Menschen ein paar und hinten in der Ecke seht ihr sogar ein paar Tieflinge. Kurz auf dem Weg möchte ich nur sagen, wir haben nicht viel Zeit, bitte haltet euch so kurz wie möglich.
+    [01:04:02] Spieler (Rotunas): Wofür haben wir nicht viel Zeit?
+    [01:04:04] Spieler (Esterossa): Für das Gespräch jetzt.
+    [01:04:06] Spieler (Rotunas): Welches? Aber wieso haben wir nicht viel Zeit?
+    [01:04:10] Spieler (Esterossa): Wir haben nur noch zwei Stunden bis es dunkel wird und wir müssen noch zurück. OT, du hast noch 16 Minuten Zeit bevor wir zurück porten müssen.
+    [01:04:21] Spieler (Rotunas): Ich muss nicht zurück.
+    [01:04:23] Spieler (GM): Diese Gilde
+    [01:04:25] Spieler (Rotunas): ist mir egal. Mir sind diese Flüchtlinge gerade wichtiger als die Gilde, die da drinnen sitzt. Ob ich die Botschaft jetzt... Welches große Ganze? Ich gehöre weder einem Land noch einer spezifischen Gruppierung an. Ihr seid meine Gruppe, mehr nicht. Was wir als Gruppe entscheiden, gilt. Wenn ich gegen diese ganze Stadt antreten muss mit euch, dann ist das so. Was Rotunas sagen würde, ich bin der Rotunas, ihr macht was ich sage. Ich bin der Rotunas und ihr seid meine Freunde. Das
+    [01:04:58] Spieler (Esterossa): Problem ist... Das Problem ist an der Situation nur einfach, dass es zu Ausschreitungen zwischen unserer Gilde und dieser Gilde kommen kann. Das bedeutet, wenn du gerade das Gespräch in die Länge ziehen möchtest, kann es sein, dass super viele unschuldige Leute sterben werden. Möchtest du das gerade riskieren?
+    [01:05:18] Spieler (Rotunas): Wenn ich zwischen einem Übel und einem anderen Übel wählen muss, dann will ich gar keins. Das ist...
+    [01:05:26] Spieler (Esterossa): Auch eine Einstellung, die kann ich absolut nachvollziehen, einfach gar nicht zu machen.
+  verdict: ''
+  note: ''
+- id: c048
+  concept: locations/kapelle_in_salzbach
+  type: Location
+  tier: brief
+  claim: Sie wird vom falschen Priester genutzt, der dort die abgenommenen Waffen der Gefangenen aufbewahrt.
+  session: 2026-09-08_Team-A_EswuiEiZZEc
+  at: 00:55:52
+  url_at: https://www.youtube.com/watch?v=EswuiEiZZEc&t=3352s
+  window: |-
+    --- Session 2026-09-08 ---
+    [00:54:22] Spieler (Lunara Velora): So eine! Das üben wir nochmal. Ich würde tatsächlich, wenn wir da hinlaufen, zu Dodo ins Ohr flüstern. Sag mal, selbst wenn ich meinen Eltern begegnen würde, würden die sich noch erinnern? Zwölf Jahre? Nun
+    [00:54:53] Spieler (Dodo): ja, du hast dich ja äußerlich schon ordentlich verändert.
+    [00:55:00] Spieler (Dodo): Ich weiß nicht, ob das so ein Instinkt bei Eltern gibt und sie ihre Kinder wiedererkennen, aber ich denke vom Äußeren werdet ihr euch beide wahrscheinlich so arg geendet haben, dass es schwer wird für sie euch zu erkennen. Ich
+    [00:55:18] Spieler (Lunara Velora): weiß nicht mal, ob die uns überhaupt angeguckt haben. Ich werde angegriffen vor dem Käfer. Okay, er ist weg. Er ist weg. Okay.
+    [00:55:30] Spieler (Gunther): Ey, wer im Chat hat den Encounter gestartet?
+    [00:55:35] Spieler (GM): Direkt bei Lunara.
+    [00:55:36] Spieler (Gunther): Ich werfe
+    [00:55:41] Spieler (Lindo Laut): mich dazwischen. Ich glaube, der ist jetzt auf dem Boden. Wir schauen die Kapelle an. Ist das vom Pantheon oder gibt es das für einen speziellen Gott?
+    [00:55:52] Spieler (GM): Du siehst keine Götterstatuen tatsächlich. Scheinen nur irgendwelche Ritter zu sein, Arlsleute. Ihr guckt euch die Namen an. Zum einen Interessanterweise steht dort Roberto Veloria als Ritter und Emporkömmling von Salzbach. Und auf der anderen Seite steht Sir Loras von Bresca. Ich
+    [00:56:28] Spieler (Lunara Velora): kann das nicht glauben gerade. Warum hat dieser Mann eine Statue in diesem Dorf? Der Blick wird richtig finster.
+    [00:56:43] Spieler (Dodo): Zu Lindo Laut flüstern, beten die hier einfach nur reiche Leute an? Oder sind die auch noch heilig? Ich glaube, die beten hier reiche Leute an. Ich
+    [00:56:54] Spieler (Lindo Laut): weiß es nicht genau, aber ja.
+    [00:56:58] Spieler (Dodo): Verrückte Stadt. Meinst du, das liegt an der Stadt selber, dass die Leute alle ein bisschen Knacks haben? Ich meine, Liam und Lunara sind ja auch manchmal ein bisschen groß.
+    [00:57:09] Spieler (Lunara Velora): Hast du das laut gesagt? Nee, ich
+    [00:57:11] Spieler (Dodo): flüstere das zu Lindo Laut. Okay, okay.
+    [00:57:16] Spieler (Dodo): Vielleicht ist es ja, wenn man hier geboren wird und hier aufwächst, vielleicht ist irgendwas bei einem. Ich würde mich so ein bisschen so vorsichtig umschauen, ob irgendwas magisches ist, das auch irgendwie irgendwas macht.
+  verdict: ''
+  note: ''
+- id: c049
+  concept: locations/magierturm
+  type: Location
+  tier: standard
+  claim: '[P-43] Als sie einen Knall hörte, eilte sie dorthin; am Turm kam es zum Kampf gegen Kenku.'
+  session: 2026-03-24_RF_Yj5BWJfg3Ag
+  at: 00:35:59
+  url_at: https://www.youtube.com/watch?v=Yj5BWJfg3Ag&t=2159s
+  window: |-
+    --- Session 2026-03-24 ---
+    [00:35:13] Spieler (Lindo Laut): das war gut, weil das sind explizite Infos, die ich nicht so aussprechen wollte, aber im Chat super wichtig sind.
+    [00:35:22] Spieler (Lindo Laut): Genau, das ist auch schon einer der Gesprächsthemen, über die wir vielleicht später reden wollten, wie wir vielleicht mit den Silberkernen umgehen könnten, was da unsere Strategie sein könnte. Harl hat nämlich, glaube ich, aber ich schaue auch schon das an, du hattest irgendwas erwähnt, das er euch geschickt hat, aber vielleicht kannst du das erwähnen, nochmal erzählen, was er gesagt hat oder was er euch gegeben hat. Ja, das war auf jeden Fall...
+    [00:35:57] Spieler (Lunara Velora): Esterossa will die Münze haben.
+    [00:35:59] Spieler (GM): Die Münze, sorry.
+    [00:35:59] Spieler (Lindo Laut): Ja, ich schnipp dir die Münze rüber. Danke.
+    [00:36:03] Spieler (Esterossa): Entschuldige, wer waren jetzt die Silberkerne? Und ich geb dir die Münze wieder zurück.
+    [00:36:06] Spieler (Lindo Laut): Das waren die Banditen, die wir wo wir gegen Belorus gekämpft haben. Das sind die Banditen, also die Banditen, die da gewohnt haben, sind die Silberkerne.
+    [00:36:20] Spieler (Nyrella): Nyrella meldet sich.
+    [00:36:22] Spieler (Lindo Laut): Schnipps zu Nyrella. Ich fang sie auf.
+    [00:36:28] Spieler (Nyrella): Na die, wo die Flüchtlinge untergekommen sind. Weißt du noch? Die, die dieses Lager hatten und so weiter. Da waren wir ganz kurz. Und ich schnipse dir die Münze zu, damit du antworten kannst. Also an Esterossa.
+    [00:36:38] Spieler (Esterossa): Perfekt, danke. Das Spiel wurde verstanden. Ich hab's verstanden. Okay. Und ich schnipse dir einfach wieder zurück zu Lindo Laut. Geht. Ja,
+    [00:36:47] Spieler (Lindo Laut): also das war tatsächlich auch das Wichtigste. Wie gesagt, dann sind wir zu Boras, weil wir eine wichtige Nachricht hatten. An ihn, oder Nox hatte das und wir haben Sir Eilenweiss eskortiert. Ich schaue so ein bisschen unnötig, plötzlich grimmig rein, spucke auf den Boden und erzähle weiter. Und sage, auf jeden Fall war Voras etwas genervt oder wütend auf uns, aber ich glaube es... Es ist jetzt wieder besänftigt. Er hat relativ viel Geld für, und ich zeige so hoch, diese Handschellen ausgegeben von seinem Besitztum. Aber er und Nox haben jetzt ein Portal ins Abyssalis erstellt. Die Splitterwelt. Wovon man theoretisch ins Abyssalis kommen könnte. Fast Travel also. Ja, genau. Das haben wir gemacht. Nyrella
+  verdict: ''
+  note: ''
+- id: c050
+  concept: locations/seelenwacht
+  type: Location
+  tier: brief
+  claim: Die Gruppe plant, dorthin zu reisen, um mehr über die Anhänger von Volgultar oder die verschwundenen Jugendlichen zu erfahren.
+  session: 2026-04-14_RF_1Jyu92P7_Fg
+  at: 00:16:49
+  url_at: https://www.youtube.com/watch?v=1Jyu92P7_Fg&t=1009s
+  window: |-
+    --- Session 2026-04-14 ---
+    [00:15:39] Spieler (Lunara Velora): Können wir natürlich auch machen, wenn wir so ein bisschen Bock auf Fighten haben. Aber an sich sagt mir mein Bauchgefühl, dass wir vielleicht in Seelenwacht vielleicht mehr Anhänger... Weiß ich natürlich nicht. Überhaupt nicht. Ist nur ein Bauchgefühl. Ja, oder was sagt ihr? Glaubt ihr, vielleicht finden wir noch in der Stadt jetzt noch irgendwelche Leute, die uns helfen können?
+    [00:16:29] Spieler (Dodo): Bis morgen.
+    [00:16:49] Spieler (Lunara Velora): Genau, aber... Genau,
+    [00:16:52] Spieler (GM): abgewiesen. Allerdings, ja, ihr habt noch nicht viel mit den Leuten interagiert. Ihr müsst auch davon... Ihr geht davon aus, dass ihr ganz anders wahrscheinlich mit den Leuten hier interagieren müsst, als ihr es auf der Oberwelt tun würdet. Das heißt, vielleicht müsst ihr auch euren Blickwinkel, wie ihr die Dinge angeht, gerade mal für einen Augenblick komplett verschieben. Aber ihr könnt auch gerne euch auf den Weg machen zur Seelenwacht.
+    [00:17:23] Spieler (Lunara Velora): Lindo Laut, was sagst du dazu? Gute Frage.
+    [00:17:33] Spieler (Lindo Laut): Ich finde beides interessant.
+    [00:17:44] Spieler (Lunara Velora): Habt ihr Bock, jemanden zu
+    [00:17:46] Spieler (GM): fetzen?
+    [00:18:15] Spieler (Dodo): Das heißt, selbst wenn jemand nur ein bisschen was weiß, hätten wir schon gewonnen.
+  verdict: ''
+  note: ''
+- id: c051
+  concept: locations/taverne_kyla_von_sanddorn
+  type: Location
+  tier: brief
+  claim: Im Obergeschoss zeigt Baran der Gruppe einen Raum voller magischer Gegenstände und Dokumente.
+  session: 2025-04-30_RF_fsCOiSkKKTE
+  at: 01:47:46
+  url_at: https://www.youtube.com/watch?v=fsCOiSkKKTE&t=6466s
+  window: |-
+    --- Session 2025-04-30 ---
+    [01:46:20] Spieler (Cookie): Jetzt kommt's. Ich weiß selber nicht, wie sich das jetzt anhört, okay? Also... Jetzt bin ich bisschen... Ich guck nicht
+    [01:46:31] Spieler (Esterossa): hin, ich guck nicht hin.
+    [01:46:32] Spieler (Cookie): Okay, okay. Also ich mach Quark. Das ist tief, das ist tief.
+    [01:46:38] Spieler (GM): Das war tatsächlich nicht schlecht. Niedliches Quark. Aber irgendwie auch
+    [01:46:43] Spieler (Cookie): niedlich. Ja. Okay.
+    [01:46:46] Spieler (GM): Spieler schreibt auch, ja Quark, mein Cookie. Nee, aber ich...
+    [01:46:51] Spieler (Cookie): Also, wer kam... Ja, okay.
+    [01:46:54] Spieler (GM): Nee, ähm, okay. Ähm, ihr seid wieder zurück. An der Insel und ihr hört ab und zu so ein bisschen Cookie vor sich hin quaken und so vielleicht mit sich selber reden oder auch einfach nur über die ganze Situation mit sich selber disponieren und ja ich bewege einfach mal den hier lang
+    [01:47:21] Spieler (Esterossa): und
+    [01:47:25] Spieler (GM): als ihr an der Taverne ankommt werdet ihr von einem Wächter gestoppt und der liebe Joar Vanur. Grüßt ihn ganz kurz, geht die Treppe hoch, öffnet die Türen zur Taverne und tritt ein. Auch hier ist es recht treibig, aber ihr seht, das Etablissement ist deutlich mehr gefüllt mit Anderlingen. Ihr seht Gnome und Baren ist definitiv auch etwas nicht normales.
+    [01:48:12] Spieler (GM): Oh, da ist das Board kurz weg gewesen. Was
+    [01:48:15] Spieler (Cookie): machst du? Das
+    [01:48:16] Spieler (GM): Board war kurz weg, warte. Ich lade das Board neu. Okay. So, wir sind wieder drin. Hattet ihr auch wieder drin? Ich bin die ganze Zeit hier. Also ich bin kurz aus dem Board rausgeflogen, keine Ahnung warum. Okay, ja, als Joar sich auf einen der Theke setzt, begrüßt euch Baran sehr sanft und freundlich. Guten Tag, mein Name ist Baran. Joah, es freut mich. Wie kann ich euch behilflich sein? Mein Freund, diese Herrschaften haben ein paar Fragen an dich und danach hätte ich ein Anliegen an euch. Aber bitte beantwortet erst ihre Fragen. Sehr wohl. Mein Name ist Baran, wie gesagt. Wie kann ich euch behilflich sein?
+    [01:49:06] Spieler (Esterossa): Es geht um den doch kürzlichen Vorfall, der sich ereignet hat.
+    [01:49:11] Spieler (Rotunas): Ja, ich verstehe.
+    [01:49:15] Spieler (Esterossa): Wir hätten eine Frage, um die Aussage dieser Person zu bestätigen, ob sich gewisse Sachen in ihrem Besitz befinden.
+  verdict: ''
+  note: ''
+- id: c052
+  concept: locations/zwergenfestung
+  type: Location
+  tier: brief
+  claim: Die Festung ist Ausgangspunkt für die Mine.
+  session: 2026-01-27_RF_9RzvnnWzV7E
+  at: 00:03:08
+  url_at: https://www.youtube.com/watch?v=9RzvnnWzV7E&t=188s
+  window: |-
+    --- Session 2026-01-27 ---
+    [00:01:51] Spieler (Esterossa): Ja, dann würde ich mal vorgehen, Rotunas. Folgen Sie mir geschwind.
+    [00:02:01] Spieler (GM): Weiter nach oben lauft, seht ihr rechts schon so eine riesige Statue von irgendeinem Zwerg aufragen. Ihr seht, der hat so einen kleinen Krug in der Hand, also irgendwie ein bisschen sympathisch, nicht so wie man sich das sonst so vorstellt. Falls ihr das nicht seht, ich markiere es. Und gebt euch beiden direkt so ein, okay, das sind nicht so spießige Zwerge vielleicht, also wenn die von irgendeinem Dude eine Statue aufstellen, der... Alkohol trinkt, dann kann das ja nicht so verkehrt sein.
+    [00:02:35] Spieler (Rotunas): Das muss eine Gottheit sein für die.
+    [00:02:38] Spieler (Esterossa): Oder es wird ein dickes Saufgelager. Wassertrinkfest, oder?
+    [00:02:43] Spieler (Rotunas): Oder das? Ja. Und
+    [00:02:53] Spieler (GM): während ihr weiter den Berg erklimmt, kommt immer mehr die Festung zum Vorschein.
+    [00:03:08] Spieler (GM): Eine große Mauer mit einem beschlossenen Tor versperrt euch den Weg. Ihr seht es wahrscheinlich nicht, ich gucke mal kurz, aber auf den Mauern seht ihr Zwerge, die euch grimmig anschauen und keine Anstalten machen, das Tor zu öffnen. Ihr seht, wie ein Zwerg dann aus diesem kleinen Häuschen rauskommt und sich... Warte, ich stelle ihn mal hier auf die Mauer. Seht ihr den dann?
+    [00:03:40] Spieler (GM): Wie er sich so mehr oder weniger über die Reling beugt und zu euch runterruft. Ihr da! Was ist euer Anliegen?
+    [00:03:54] Spieler (Esterossa): Guten Tag, wir wurden von der Gilde entsandt. Wir sollen uns hier einfinden. Wir sind Rotunas und seine Freunde. Neben mir Rotunas, mein Name ist Esterossa.
+    [00:04:07] Spieler (GM): Ah, ich verstehe. Ihr kommt von Ehrenfels. Sehr gut. Kommt rein. und dreht sich so um und brüllt nach unten, öffnet das Tor! Und einen Ticken Augenblick später seht ihr, wie die Tore sich langsam, aber schwer öffnen. Also man merkt schon, alleine diese Position dieser Festung ist einem fast schon unernehmbar. Mit einer Armee hier hochzukommen ist keine Chance. Und dann nochmal diese Mauer zu überwinden ist schon eine Difficulty. Rotunas, pass bitte auf deinen Kopf auf, ja?
+  verdict: ''
+  note: ''
+- id: c053
+  concept: npcs/abisalis_harald
+  type: NPC
+  tier: deep
+  claim: Gleichzeitig spricht er gegenüber den Helden abwertend von dem Kind als „etwas Bedeutungslosem“ und versucht, seinen Anspruch durch Einschüchterung durchzusetzen.
+  session: 2026-04-14_RF_1Jyu92P7_Fg
+  at: 00:44:35
+  url_at: https://www.youtube.com/watch?v=1Jyu92P7_Fg&t=2675s
+  window: |-
+    --- Session 2026-04-14 ---
+    [00:43:18] Spieler (Lindo Laut): Ja, ich weiß jetzt aber nicht, was wir machen können damit. Mit der Information und schaue es ein bisschen fragend an. Ich meine, wahrscheinlich ist es gestorben.
+    [00:43:31] Spieler (Lunara Velora): Gibt es irgendwie eine Möglichkeit, mit dem Kind zu reden?
+    [00:43:39] Spieler (GM): Ja, während ihr so ein bisschen da so beschäftigt seid, seht ihr plötzlich, wie so zwei Personen von hinten auftauchen. Und ihr merkt auch, wie das Kind sofort panisch wird und sich wieder versucht, hinter dieser anderen Frau zu verstecken. Aber das hat nicht wirklich, also die reagiert da nicht wirklich drauf. Und ihr seht, wie zwei humanoide Wesen zu euch runterkommen.
+    [00:44:04] Spieler (GM): Ah, grüßt euch! Überraschend! Ihr seht doch noch sehr gut aus. Ihr seht so eine teuflische Kreatur mit einer Begleiterung, so diese, ich sag mal, Stairs runterkommen. Haben
+    [00:44:23] Spieler (Dodo): die Abyssalisch gesprochen oder unsere Sprache? Eure Sprache. Und
+    [00:44:29] Spieler (Lindo Laut): ich gehe so vor und sage so, stellt euch meine Meisterin vor, wer seid ihr?
+    [00:44:35] Spieler (GM): Und tatsächlich, in dem Augenblick zieht die andere Dame um die Ecke. Das hier ist Meister Harald. Und der kommt so ein bisschen auf Lunara zu. Ich grüße euch. Nun, ihr seid also auch interessiert an... Der blickt so an euch vorbei. An diesem kleinen Wesen.
+    [00:45:04] Spieler (Lunara Velora): Auch interessiert? Was interessiert sie das?
+    [00:45:09] Spieler (GM): Nun, es ist wahrhaftig eine Rarität. Und du siehst, er kramt so einen Seelenstein aus der Tasche. Das wird der eine oder andere Dämon sicherlich gut vergüten.
+    [00:45:24] Spieler (Lunara Velora): Da hast du recht. Da muss ich sie leider enttäuschen. Das ist meine Beute. Was
+    [00:45:39] Spieler (GM): sollt ihr denn mit so etwas Bedeutungslosem?
+    [00:45:47] Spieler (Lunara Velora): Mir scheint nicht, als wäre das...
+    [00:45:55] Spieler (GM): Und der versucht dich einmal einzuschüchtern. Wirf mal mit einer Reaction dagegen. Ich würde sagen, mach mal einen Instinktwurf. Ich habe eine 14. Ich
+  verdict: ''
+  note: ''
+- id: c054
+  concept: npcs/abisalis_harald
+  type: NPC
+  tier: deep
+  claim: Eine weitergehende Rolle in der Kampagne ist aus den Belegen nicht ersichtlich.
+  session: 2026-04-14_RF_1Jyu92P7_Fg
+  at: 00:44:35
+  url_at: https://www.youtube.com/watch?v=1Jyu92P7_Fg&t=2675s
+  window: |-
+    --- Session 2026-04-14 ---
+    [00:43:18] Spieler (Lindo Laut): Ja, ich weiß jetzt aber nicht, was wir machen können damit. Mit der Information und schaue es ein bisschen fragend an. Ich meine, wahrscheinlich ist es gestorben.
+    [00:43:31] Spieler (Lunara Velora): Gibt es irgendwie eine Möglichkeit, mit dem Kind zu reden?
+    [00:43:39] Spieler (GM): Ja, während ihr so ein bisschen da so beschäftigt seid, seht ihr plötzlich, wie so zwei Personen von hinten auftauchen. Und ihr merkt auch, wie das Kind sofort panisch wird und sich wieder versucht, hinter dieser anderen Frau zu verstecken. Aber das hat nicht wirklich, also die reagiert da nicht wirklich drauf. Und ihr seht, wie zwei humanoide Wesen zu euch runterkommen.
+    [00:44:04] Spieler (GM): Ah, grüßt euch! Überraschend! Ihr seht doch noch sehr gut aus. Ihr seht so eine teuflische Kreatur mit einer Begleiterung, so diese, ich sag mal, Stairs runterkommen. Haben
+    [00:44:23] Spieler (Dodo): die Abyssalisch gesprochen oder unsere Sprache? Eure Sprache. Und
+    [00:44:29] Spieler (Lindo Laut): ich gehe so vor und sage so, stellt euch meine Meisterin vor, wer seid ihr?
+    [00:44:35] Spieler (GM): Und tatsächlich, in dem Augenblick zieht die andere Dame um die Ecke. Das hier ist Meister Harald. Und der kommt so ein bisschen auf Lunara zu. Ich grüße euch. Nun, ihr seid also auch interessiert an... Der blickt so an euch vorbei. An diesem kleinen Wesen.
+    [00:45:04] Spieler (Lunara Velora): Auch interessiert? Was interessiert sie das?
+    [00:45:09] Spieler (GM): Nun, es ist wahrhaftig eine Rarität. Und du siehst, er kramt so einen Seelenstein aus der Tasche. Das wird der eine oder andere Dämon sicherlich gut vergüten.
+    [00:45:24] Spieler (Lunara Velora): Da hast du recht. Da muss ich sie leider enttäuschen. Das ist meine Beute. Was
+    [00:45:39] Spieler (GM): sollt ihr denn mit so etwas Bedeutungslosem?
+    [00:45:47] Spieler (Lunara Velora): Mir scheint nicht, als wäre das...
+    [00:45:55] Spieler (GM): Und der versucht dich einmal einzuschüchtern. Wirf mal mit einer Reaction dagegen. Ich würde sagen, mach mal einen Instinktwurf. Ich habe eine 14. Ich
+  verdict: ''
+  note: ''
+- id: c055
+  concept: npcs/elisa
+  type: NPC
+  tier: brief
+  claim: Elisa ist eine Jägerin im Wirtshaus.
+  session: 2025-04-09_RF_1PWdwvun5ow
+  at: 00:50:53
+  url_at: https://www.youtube.com/watch?v=1PWdwvun5ow&t=3053s
+  window: |-
+    --- Session 2025-04-09 ---
+    [00:49:26] Spieler (Valeria): Und wie? Oder eine Falle zu stellen.
+    [00:49:28] Spieler (Rotunas): Oder eine Falle zu stellen. Entweder oder. Wir
+    [00:49:32] Spieler (GM): sind keine Krieger. Wir können uns nicht wirklich verteidigen. Können denn die Wächter was ausrichten?
+    [00:49:38] Spieler (Rotunas): Natürlich, sie werden auch was ausrichten. Aber... Jeder Bewohner dieses Dorfes muss mit anpacken.
+    [00:50:08] Spieler (Valeria): Charakternamen & Paper Session
+    [00:50:25] Spieler (GM): Aber ansonsten haben wir nur die beiden Wächter, Kerl und Brock. Berthold ist kein wirklich guter Kämpfer. Es gibt dann noch den Schmied, der hat auch was drauf. Aber sonst hat eigentlich niemand wirklich Talent, was das Kämpfen angeht.
+    [00:50:44] Spieler (Rotunas): Und die beiden Herrschaften, was macht ihr hier? Seid ihr auf Durchreise? Seid ihr Bewohner dieses Dorfes?
+    [00:50:53] Spieler (GM): Na, also, ähm, ich, also der, der, der, die Frau, ähm, ich, ich kann mit dem Bogen ganz gut umgehen, ich bin Jägerin, aber gegen Horde Goblins, äh, wäre, wäre das mir dann doch ein bisschen zu viel.
+    [00:51:05] Spieler (Rotunas): Naja, ist es dann nicht theoretisch leichter, weil eine Horde gibt eine größere Masse, das heißt weniger zielen und öfter schießen.
+    [00:51:14] Spieler (GM): Elisa, ihr seid doch bestimmt, äh, auf einer guten hohen Position in der Lage, euch ein bisschen zu verteidigen, richtig? Ja, das stimmt Hubert. Ich werde auf jeden Fall, wenn es hart auf hart kommt, selbstverständlich kämpfen. Und ihr merkt so ein bisschen, die Moral ist nicht so hoch bei den beiden. Vielleicht haltet ihr irgendwie eine Ansprache oder zumindest ermutigt die vielleicht ein bisschen da zu bleiben.
+    [00:51:40] Spieler (Valeria): Ich will gerade, ich wollte gerade... Ich erfinde jetzt einfach was, da Rotunas und ich uns ja schon lange kennen, haben wir so ein kleines Spiel früher gemacht, weil wir beide Magier sind, dass wir uns immer so ab und zu so Feuerbälle hin und her schmeißen und fangen wie so Jongleure. Ja, heiße Kartoffeln. Ja, so ähnlich wie heiße Kartoffeln. Genau, sowas. Und ich sage so, ja, aber ihr seid ja auch nicht alleine hier, ne? Ihr habt die mächtigsten Magier aus der Gilde.
+    [00:52:16] Spieler (Valeria): Esterossa aka Valeria aka Esterossa aka
+  verdict: ''
+  note: ''
+- id: c056
+  concept: npcs/fleischkreatur_am_altar
+  type: NPC
+  tier: brief
+  claim: Sie griff zunächst Brim an, später Esterossa und Dodo.
+  session: 2026-04-07_RF_MAuQPMNY548
+  at: 00:31:08
+  url_at: https://www.youtube.com/watch?v=MAuQPMNY548&t=1868s
+  window: |-
+    --- Session 2026-04-07 ---
+    [00:29:56] Spieler (Esterossa): Okay, dürfte ich einen Knowledge-Wurf machen, worauf, was hier gerade ungefähr passiert ist? Ob ich diesen Mechanismus an so einem Altar schon mal erlesen habe, als Ritual oder so?
+    [00:30:10] Spieler (GM): Gerne, mach mal einen Knowledge-Wurf. Ich würde aber nicht sagen, Vorteil durch deine Special-Fähigkeit.
+    [00:30:17] Spieler (Esterossa): Dankeschön, dann gibt es erstmal einen Hauptpunkt für mich. Ja, gibt einen Hauptpunkt und du kriegst eine gediegene 5.
+    [00:30:26] Spieler (GM): Also das ist so abstrus und unterschiedlich zu dem, was du je gesehen hast, du hast absolut keine Ahnung, was das sein könnte.
+    [00:30:36] Spieler (Esterossa): In dem Augenblick seht
+    [00:30:54] Spieler (GM): ihr, wie langsam dem Altar sowas entspringt. Als würde das aus dem Nichts erzeugt werden und so langsam hinaufsteigen.
+    [00:31:08] Spieler (GM): Sehr eigenartige Kreatur vor euch stehen, die so aus mehreren Fleischsubstanten erstellt worden ist. Und in dem Augenblick, als das Geräusch versiegt, springt es direkt nach vorne und greift euch an. Ich wähle hier diesmal wieder Dodo, obwohl Brim steht ein bisschen weiter vorne. Ich wähle Brim. Und der erste Angriff, der geht auf dich.
+    [00:31:51] Spieler (GM): Triff dich eine 13. Ich würde mich
+    [00:31:58] Spieler (Dodo): dazwischen werfen.
+    [00:32:00] Spieler (GM): Ja, gerne. Das wären insgesamt 12 Schaden.
+    [00:32:09] Spieler (Dodo): Ich markiere mir einen Rüstungsslot. Vielen
+    [00:32:14] Spieler (Brim): Dank, Dodo.
+    [00:32:17] Spieler (GM): Ihr seid dran.
+    [00:32:20] Spieler (Lindo Laut): Kann ich angreifen? Yes.
+    [00:32:33] Spieler (Lindo Laut): Eine 14. Das
+    [00:32:35] Spieler (GM): trifft. Macht den Schaden. So lieber Chat, das hier ist ein ganz spezieller Dungeon, denn es ist ein Goblin Dungeon. Ihr dürft jetzt gleich das Monster ein bisschen steuern. Ihr sagt mir komplett, was passiert und ob das Monster immer wieder Leben bekommt oder nicht. Aktuell hat es 6 Leben. Ihr seht, das Viech wird getroffen und quietscht kurz auf und verliert 2. Verliert HP. Schaden. Verliert Schaden. Hab
+  verdict: ''
+  note: ''
+- id: c057
+  concept: npcs/hope_und_fia
+  type: NPC
+  tier: brief
+  claim: Lunara fühlt sich schuldig und erklärt, sie werde die Namen der Opfer nicht vergessen.
+  session: 2026-07-29_Team-A_umGyKLkefJI
+  at: 00:14:05
+  url_at: https://www.youtube.com/watch?v=umGyKLkefJI&t=845s
+  window: |-
+    --- Session 2026-07-29 ---
+    [00:13:02] Spieler (Lunara Velora): Wasul ist gestorben
+    [00:13:13] Spieler (Lunara Velora): Würde ich sagen, seitdem er tot ist, wurde so ein bisschen so ein Schleier von ihr abgeworfen. Auch weil die Kontrollrune, die sie hatte, wahrscheinlich nicht mehr so Macht über sie hat. Und ja, es ist irgendwie vielleicht auch eine gewisse Freiheit, von der wahrscheinlich sie nicht mal wusste, dass sie weg war, dass sie sie einfach wieder hat. Ja, und auf der anderen Seite... Okay, sie ist halt einfach einen Weg gegangen, der einen sehr hohen Preis hatte. Also es sind Leute gestorben, weil sie ihren Bruder gerettet hat. Und da ist dann natürlich auch die Frage, war es das wert? Aber ja, tatsächlich, die beängstigende Antwort ist halt einfach ja, weil der Bruder für sie halt alles war. Und ja, das ist... Tatsächlich ein sehr, sehr hoher Preis gewesen. Trotzdem hat sie natürlich auch die Opfer, wird sie die nicht vergessen und natürlich auch die Namen. Gerade Hope und Fia
+    [00:14:22] Spieler (GM): am Auspacken, geil. Sehr, sehr cool. Hope und Fia am Auspacken?
+    [00:14:27] Spieler (Lunara Velora): Jetzt beginnt auch irgendwie ein neuer Abschnitt. Wie
+    [00:14:30] Spieler (GM): konntest du das auspacken schon? Das ist noch gar nicht draußen.
+    [00:14:32] Spieler (Lunara Velora): Bin ich weg? Nein,
+    [00:14:33] Spieler (GM): du bist noch da. Alles gut.
+    [00:14:34] Spieler (Lunara Velora): Ah, okay. Dodo und die Goblin waren zu geil. Ja, weil, wie gesagt, sie hat, Sie muss nicht mehr ums Überleben kämpfen. Sie hat irgendwie, was heißt irgendwie, aber sie hat halt irgendwie jetzt neue Freunde gefunden, dessen Vertrauen sie sehr genießt oder genießen darf und ja, vielleicht darf Lunara jetzt auch mal Lunara sein und vielleicht muss sie auch erstmal rausfinden, wer sie ist. Good point.
+    [00:15:04] Spieler (GM): Wie dem auch sei, ihr seid von dem Anstieg natürlich trotz allem ein wenig erschöpft und Liam scheint es immer noch nicht so viel besser zu gehen. Es wirkt so, als wäre er sehr abwesend, ab und zu kommt er ein bisschen zu sich und stammelt dann oder fasert von irgendwas aus seiner Vergangenheit, was aber bis dato noch nicht so viel Sinn ergeben hat. Also die einzige Möglichkeit, ihm vielleicht wirklich zu helfen, ist ihn halt irgendwie auf die Krankenstation zu bringen oder in die Kapelle. oder vielleicht kann Nox helfen. Ja, was möchtest du sagen? Warum hast du das Spotlight an dich gerissen?
+  verdict: ''
+  note: ''
+- id: c058
+  concept: npcs/nip
+  type: NPC
+  tier: brief
+  claim: Er prostet der Gruppe zu und findet Rotunas wegen seiner Größe lustig.
+  session: 2025-04-09_RF_1PWdwvun5ow
+  at: 00:46:48
+  url_at: https://www.youtube.com/watch?v=1PWdwvun5ow&t=2808s
+  window: |-
+    --- Session 2025-04-09 ---
+    [00:45:21] Spieler (GM): Genau, du musst einfach einen Haupt packen.
+    [00:45:23] Spieler (Valeria): Jo, habe ich aktiviert und dann gibt es einfach noch plus zwei drauf.
+    [00:45:27] Spieler (GM): Also das Bier ist ja nicht das Feinste vom Feinsten, danke für den 4-Point, aber du verträgst es. Für Sie, werte Herr, kann ich Ihnen auch etwas geben?
+    [00:45:42] Spieler (Rotunas): Ja, habt ihr Wein?
+    [00:45:46] Spieler (GM): Ja, wir haben auch Wein hier, tatsächlich, ja.
+    [00:45:49] Spieler (Rotunas): Dann hätte ich gern ein Glas Wein.
+    [00:45:53] Spieler (GM): Ihr habt hier einen Becher Wein. Und der schenkt dir einen Becher Wein ein.
+    [00:46:00] Spieler (Rotunas): Okay. Ich nehme den Becher Wein. Ja. Und esse ihn.
+    [00:46:04] Spieler (GM): Und esse ihn. Kling!
+    [00:46:06] Spieler (Rotunas): Wirt! Ja? Wie ist ihr Name? Sie mit Wörtern zu sprechen ist irgendwie meiner Meinung nach unnötig.
+    [00:46:13] Spieler (GM): Mein Name ist Hubert. Hubert. Hubert! Und ich bin Nip. Und der Typ, der... Wer ist das hier? Ein bisschen besoffen wirkt. Prostet euch so ein bisschen zu! Prost! Ich kenne euch zwar nicht, aber Prost! Du siehst so witzig aus! Du bist so groß! Prost, großer Mann! Prost! Und er hält dir so seinen Krug hin.
+    [00:46:48] Spieler (Rotunas): Ja, ich halte mir ein Glas und dann... Vorsichtig oder Becher mit dem Wein und dann stoße ich vorsichtig an.
+    [00:46:56] Spieler (GM): Okay, gut, dass du gesagt hast, vorsichtig, weil sonst hätte ich jetzt drauf Stärke würfeln lassen.
+    [00:47:02] Spieler (Rotunas): Ja, was
+    [00:47:06] Spieler (GM): kann ich für dich tun, liebe Dame?
+    [00:47:11] Spieler (Valeria): Dankeschön. Wie lange bist du schon Wirt hier in dem Dorf?
+    [00:47:15] Spieler (GM): Ich bin hier eigentlich schon mein ganzes Leben Wirt.
+    [00:47:18] Spieler (Valeria): Großartig, das wollte ich hören. Ist das Dorf schon mal angegriffen worden?
+    [00:47:23] Spieler (GM): Schon viele Male, aber immer nur Kleinigkeiten. Manchmal waren es zwei, drei Söldner, die sich einfach nur ein bisschen den Bauch vollschlagen wollten oder die Taschen eher gesagt und manchmal hat es irgendeinen dummen Gobbeln hier vertrieben. Aber noch nie etwas Gefährliches. Deswegen sind auch vor den meisten Gebäuden Gitter, falls ihr das schon bemerkt habt.
+    [00:47:43] Spieler (Valeria): Ja, doch stimmt, haben wir gesehen. Aber was wäre denn, wenn auf einmal was...
+    [00:48:02] Spieler (GM): Charakternamen.
+    [00:48:16] Spieler (Valeria): Das war eine
+    [00:48:17] Spieler (GM): rein hypothetische Frage, richtig? Rein hypothetisch.
+  verdict: ''
+  note: ''
+- id: c059
+  concept: npcs/olanio_schwarzohr
+  type: NPC
+  tier: brief
+  claim: Olanio Schwarzohr ist ein Weggefährte von Meister Pyrandas.
+  session: 2026-07-29_Team-A_umGyKLkefJI
+  at: 01:13:00
+  url_at: https://www.youtube.com/watch?v=umGyKLkefJI&t=4380s
+  window: |-
+    --- Session 2026-07-29 ---
+    [01:11:34] Spieler (Gunther): glaube,
+    [01:11:41] Spieler (GM): ja, es ist... Ja, wir sind zurück. Wir sind zurück, oder? Wir sind zurück. Ich glaube schon. Warte, es geht wieder hoch. 13.000. Er holt sich gerade. Aber hoffen wir mal. Das hat sich weiterhin erholt. Sind wir back? Sind wir back? Hallo, hallo, Test, Test. 23.000. Oh je, der schwankt so heavy. Ah, wir sind zurück. Wir sind zurück. Hallo, hallo, Test, Test. Wir haben den Streamwood nicht abgebrochen, glaube ich, oder? Wir sind noch da. Wie sind wir da? Wieder online. Gott sei Dank. Irgendwie wenn wir in der Taverne sind, passiert sowas. Während wir auf Mission sind, nie sowas. Aber hier auf jeden Fall. Ja, keine Ahnung. Okay, wir fahren weiter rein.
+    [01:12:28] Spieler (GM): Wo war ich stehen geblieben? Welcome back, thanks, thanks. Genau, der Pyrandas quatscht und nun, ihr habt uns ja einiges an Kopfschmerzen bereitet. Nox scheint hier ja aktuell abwesend zu sein und in der Abwesenheit habe ich hier ein bisschen die Führung übernommen. Ich glaube, das mache ich ganz gut. Leider haben wir eigentlich dennoch jemanden, der hier ein bisschen mehr oder weniger die Führung übernommen hat.
+    [01:13:00] Spieler (GM): Naja, die Leute da von Nera scheinen in Ordnung zu sein, aber keiner wirklich will sie hier haben. Aber irgendwie haben sie dieses Fest, diese Stadt hier beansprucht. Ich glaube, ja, wir sind da. Nun, ich frage eigentlich gar nicht erst. Wahrscheinlich wird es genug Zeit geben, mit euch irgendwann anders einmal zu quatschen. Ich wollte nur einmal euch begrüßen und ganz kurz Hallo sagen. Ich habe kein Interesse an Alkohol oder sonstigen... Der dreht sich so immer in dieser Menge rum. Sonstigen. Spaß. Wir sehen uns, meine Freunde. Zeitlich haben wir noch genug wahrscheinlich, um uns einmal ein bisschen genauer auszusprechen. Willkommen zurück in Ehrenfels. Der verneigt sich vor euch und geht direkt seines Weges. Meister... Ne, Olanio Schwarzohr kichert schon fast so ein bisschen. Als hätte er wohl einen Schluck vielleicht schon getrunken, den ein oder anderen, aber nickt einfach nur, lächelt ganz kurz und geht dann ein bisschen schwankend dem Meister Pyrandas hinterher.
+    [01:14:19] Spieler (Dodo): Ich drehe mich einmal zu meinen Kumpanen und sage, ich glaube gar nicht, wie gut es mir tut, die ganzen vertrauten Gesichter endlich wiederzusehen und raus zu sein aus diesem was auch immer. Es tut gut, wieder hier zu sein. Und du merkst aber auch gleichzeitig, dass ich ein bisschen nervös bin und immer wieder Richtung Kohlkopffelder hoch schaue.
+  verdict: ''
+  note: ''
+- id: c060
+  concept: npcs/starville
+  type: NPC
+  tier: brief
+  claim: Er erklärt, dass Monsterkämpfe als Gruppe möglich sind und hauptsächlich der Unterhaltung dienen.
+  session: 2025-10-14_RF_cUtz87UCHu4
+  at: 01:17:31
+  url_at: https://www.youtube.com/watch?v=cUtz87UCHu4&t=4651s
+  window: |-
+    --- Session 2025-10-14 ---
+    [01:16:05] Spieler (Dodo): Noch eine Frage. Eine Frage. Wie gern wird denn Feuer gesehen? Und ich zeige ihm so ein bisschen meinen Feueratem. Zählt das als Magie oder? Ich glaube nicht, dass das ein Problem
+    [01:16:21] Spieler (GM): wäre. Es ist Teil von euch, richtig?
+    [01:16:24] Spieler (Dodo): Es ist ein Teil von mir. Und
+    [01:16:25] Spieler (GM): ich schätze mal, es wäre sicherlich für die Veranstalter in Ordnung. Aber sie werden sicherlich den Kampf anpassen, wenn ihr es verwendet. Das heißt, der nächste Kampf, außer der Finalkampf, solltet ihr also bis zum Finalkampf damit warten, können sie es eh nicht mehr anpassen. Aber als Tipp solltet ihr euer Feuer benutzen, dann das gerade schon im ersten Kampf mit der nächsten Kampf sicherlich ein bisschen anders strukturiert.
+    [01:16:52] Spieler (Esterossa): Danke für den Tipp.
+    [01:16:54] Spieler (GM): Gerne, gerne. Ich wünsche euch eine gute Nacht. Und Mil verschwindet in seinem Zelt.
+    [01:17:04] Spieler (GM): Geht's mit Dodo?
+    [01:17:06] Spieler (Dodo): Dodo, ich find den voll cool. Ich find den voll cool. Ich find den voll cool. Ich bin immer von der Ausbildung bei dem. Man merkt
+    [01:17:18] Spieler (Esterossa): so ein bisschen, dass du ein kleiner Fanboy geworden bist. Was
+    [01:17:31] Spieler (Lindo Laut): gibt es? Hallo, wir hatten von Mel noch den Tipp bekommen, dass wir dich fragen können bezüglich der Monsterkämpfe. Du scheinst da.
+    [01:17:46] Spieler (GM): Ich habe viele Kämpfe bestritten. Ich habe alle mitgemacht, außer der Hand und dem Zauberer. Ich bin fast immer Zweiter geworden. In den meisten Kämpfen gab es keinen richtigen Gewinner. Vor allem auf Tier 4. Allerdings sind die Kämpfe leider nicht so ausgegangen, wie sie hätten ausgehen sollen. Das hat mich wohl immer ein bisschen... Rausgebracht. Wie ihr versteht. Und ihr merkt so, wie, also wenn der auf Solo gemacht hat und Zweiter geworden ist, dann geht der nicht. Ja, also bei die Tier 4 ist tot, ne? Du musst den anderen töten. Zwingend. Sonst kommst du nicht weiter. Wenn der noch lebt, wird der Kampf nicht abgebrochen. Aber im Finale, wenn man im Finale aber aufgibt? Möglich. Ihr wisst nicht, ob das erlaubt ist, aber ihr glaubt nicht, dass die hier ein Aufgeben als Ende sehen.
+  verdict: ''
+  note: ''
