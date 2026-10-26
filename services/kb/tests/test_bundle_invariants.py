@@ -13,11 +13,12 @@ from __future__ import annotations
 
 import json
 import re
+from collections import Counter
 from pathlib import Path
 
 import pytest
 import yaml
-from pnp_okf.models import ID_PREFIX, TYPE_DIR
+from pnp_okf.models import DIR_TO_TYPE, ID_PREFIX, TYPE_DIR
 
 KNOWLEDGE = Path(__file__).resolve().parents[3] / "knowledge"
 REGISTRY = KNOWLEDGE / "entity_registry.yaml"
@@ -104,6 +105,39 @@ def test_conflict_files_reference_real_concepts():
     assert not bad, f"conflict file points at a concept that does not exist: {bad}"
 
 
+def last_run_describes_other_bundle(last_run_counts: dict[str, int], bundle_counts: dict[str, int]) -> bool:
+    """True when last_run.json's per-type entity counts differ from the
+    committed bundle's. Any difference counts: a type present on one side only
+    is a difference too. Pure comparison, no I/O."""
+
+    return last_run_counts != bundle_counts
+
+
+def _bundle_counts_by_type() -> dict[str, int]:
+    """Concept files per EntityType value, keyed like last_run.json's
+    counts.entities_by_type (e.g. "Event", not the "events" directory)."""
+
+    counts: Counter[str] = Counter()
+    for cid, _path, _fm in _entity_files():
+        counts[DIR_TO_TYPE[cid.split("/", 1)[0]].value] += 1
+    return dict(counts)
+
+
+def test_entity_count_match_does_not_describe_another_bundle():
+    counts = {"Event": 305, "NPC": 257}
+    assert last_run_describes_other_bundle(counts, dict(counts)) is False
+
+
+def test_one_type_count_differing_describes_another_bundle():
+    # Today's real case: last_run.json says Event 309, the committed bundle has 305.
+    assert last_run_describes_other_bundle({"Event": 309, "NPC": 257}, {"Event": 305, "NPC": 257}) is True
+
+
+def test_type_missing_on_one_side_describes_another_bundle():
+    assert last_run_describes_other_bundle({"Event": 1, "NPC": 2}, {"Event": 1}) is True
+    assert last_run_describes_other_bundle({"Event": 1}, {"Event": 1, "NPC": 2}) is True
+
+
 def test_last_run_conflict_count_matches_the_committed_queue():
     """The pipeline's own record of what it produced must match what is
     actually committed under conflicts/. A mismatch means the committed
@@ -111,7 +145,15 @@ def test_last_run_conflict_count_matches_the_committed_queue():
     typically a branch checkout that brought back an older conflicts/
     snapshot alongside a newer (or older) last_run.json. Not a ratchet:
     this is a binary in-sync/out-of-sync fact, fixed by re-running `pnp run`
-    on the checked-out branch, not by curation over time."""
+    on the checked-out branch, not by curation over time.
+
+    Caveat: this compares *local* state (state/last_run.json is untracked)
+    to the committed bundle. After `git checkout` of another branch it can be
+    red with nothing wrong in the repo itself. The fix is a warm `pnp run`
+    (HUMAN) or deleting the stale local state/last_run.json. It is not
+    editing the file. Skipped (not failed) when last_run.json describes a
+    different bundle by entity counts: that is the local-state case above,
+    not a conflicts bug. See docs/plans/A7-reconcile-docs.md."""
 
     if not LAST_RUN.exists():
         pytest.skip("no state/last_run.json — pipeline has not been run here")
@@ -119,6 +161,15 @@ def test_last_run_conflict_count_matches_the_committed_queue():
     reported = status.get("counts", {}).get("conflicts_open")
     if reported is None:
         pytest.skip("last_run.json predates the conflicts_open counter")
+    # A7 process fix: the 2026-09-22 run (Event 309, conflicts 18) left a
+    # last_run.json that describes a different bundle than the committed one
+    # (Event 305, conflicts 16), so this test went red on that machine only.
+    # Compare entity counts per type, not timestamps: a git commit date says
+    # nothing about which bundle the run wrote. Ceiling: a run that is wrong in
+    # conflicts AND in entity counts at once is also skipped, not failed.
+    last_counts = status.get("counts", {}).get("entities_by_type")
+    if last_counts is not None and last_run_describes_other_bundle(last_counts, _bundle_counts_by_type()):
+        pytest.skip("state/last_run.json describes a different bundle (entity counts differ) -- re-run pnp run")
 
     on_disk = sum(
         1

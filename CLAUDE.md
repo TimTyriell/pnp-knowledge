@@ -19,7 +19,8 @@ Two systems live here, and the top level keeps them apart:
 - **`knowledge/`** — ★ the **system of record**: the OKF campaign bundle
   (`bundle/splitter_des_ewigen/`), `entity_registry.yaml`, `conflicts/`,
   `sources/`. Knowledge edits arrive via `ingest/s<NN>` branches that touch
-  only `knowledge/`, reviewed as PRs, tagged `s<NN>` per session on merge.
+  only `knowledge/`, reviewed as PRs, tagged `s<NN>` per session on merge
+  (the tag is manual: see [docs/RELEASING.md](docs/RELEASING.md)).
   Knowledge diffs are path-scoped: `git diff <ref>.. -- knowledge/`.
 - **`services/kb/`** — the KB service: the `pnp_okf` OKF-distillation pipeline
   (transcripts → bundle, DeepSeek) plus the read-only HTTP API

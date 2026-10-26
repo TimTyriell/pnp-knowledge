@@ -19,14 +19,25 @@ anchor name (`def …`) is authoritative.
 | Package | `services/kb/src/pnp_okf` |
 | Venv | `services/kb/.venv/Scripts/python.exe` — **not** the repo-root `.venv`, which belongs to frozen `graph/` |
 | Run tests from | `services/kb` (`pyproject.toml` sets `pythonpath = ["src"]`) |
-| Suite | 266 passed, 1 xfailed (~68 s; the churn test alone is ~37 s) |
-| System of record | `knowledge/bundle/splitter_des_ewigen/` — 1158 concept files, 6382 internal links |
-| Registry | `knowledge/entity_registry.yaml` — **generated**, 1092 concept ids + a `retired:` ledger |
+| Suite | `412 passed, 2 skipped, 1 xfailed` in 170.8 s (`pytest -q`, 2026-10-26; one skip is the `last_run.json` staleness test, see docs/plans/A7-reconcile-docs.md). Command: `cd services/kb && .venv/Scripts/python.exe -m pytest -q` |
+| System of record | `knowledge/bundle/splitter_des_ewigen/` — 1182 concept files (1114 entity + 68 session), 6584 internal links (counts below) |
+| Registry | `knowledge/entity_registry.yaml` — **generated**, 1114 concept ids + 624 `retired:` entries (counts below) |
 | Rules | `knowledge/entity_rules.yaml` — **hand-written, never rewritten by code** |
-| Corpus | 66 sessions, German transcripts from `../pnp-crawl/transcripts_final` |
+| Corpus | 68 sessions (counts in README, "The corpus"), German transcripts from `../pnp-crawl/transcripts_final` |
 | Provider | DeepSeek, OpenAI-compatible SDK |
 | Full rebuild | ~10.5 M tokens, **~$6.5 off-peak** |
 | Warm re-emit | 18 calls, **~$0.05** |
+
+Counts above, reproduced 2026-10-26 from the repo root (no DeepSeek calls):
+
+```bash
+find knowledge/bundle/splitter_des_ewigen -name '*.md' ! -name index.md ! -name log.md | wc -l
+# 1182
+find knowledge/bundle/splitter_des_ewigen -name '*.md' ! -name index.md ! -name log.md -print0 | xargs -0 grep -hoE '\]\([^)]*\.md\)' | wc -l
+# 6584  (`pnp validate` reports 6583: its regex cannot match a label containing "[", as in one link in deities/tarvok_der_erdrichter.md)
+awk '/^entities:/{e=1;next} /^retired:/{e=0;r=1;next} /^- concept_id:/{if(e)a++; if(r)b++} END{print a, b}' knowledge/entity_registry.yaml
+# 1114 624
+```
 
 **The single most important economic fact:** a rebuild costs ~130× a warm
 re-emit. The pipeline is cheap to *run* and expensive to *invalidate*. Nearly
@@ -336,13 +347,13 @@ Gating a run on `ok` would fail every run, and a gate that always fails gets
 switched off.
 
 - `broken_links` — the href does not resolve *via the fuzzy index*.
-- `dangling_links` — the href **names no file on disk**. Strict; catches the case where a link resolves to a *different* existing concept than it names. Currently 0 across 6382 links, committed as a hard-0 invariant.
+- `dangling_links` — the href **names no file on disk**. Strict; catches the case where a link resolves to a *different* existing concept than it names. Currently 0 across 6584 links, committed as a hard-0 invariant.
 
 ---
 
 ## 10. Tests and ratchets
 
-254 tests. Bundle-dependent ones are guarded by
+`pytest -q` on 2026-10-26: `412 passed, 2 skipped, 1 xfailed` (command in §1). Bundle-dependent ones are guarded by
 `skipif(not REGISTRY.exists())`; `conftest.py` turns that skip into a hard error
 when `PNP_REQUIRE_BUNDLE=1` (set in CI), so the suite cannot pass by vanishing.
 
@@ -373,6 +384,19 @@ the result is directional, not an SLA.
 This is also the gate for any cheaper extraction model: small models do not
 omit entity names, they **invent** them, so "can extraction move to flash" is a
 precision question and unanswerable without these labels.
+
+**Three measures, three blind spots.** *Name-level gold* (`test_extraction_quality.py`)
+asks whether the right entities were extracted; it cannot see whether a sentence
+about them is true. *Citation grounding* (`grounding.py`, A5) asks whether an
+entity's name is spoken near the cited timestamp; it cannot see whether what is
+said about it is right, and a name said in the wrong context still passes. *Claim-level
+eval* (`claim_sampler.py` + `pnp_okf/claims.py`, `test_claim_eval.py`, B3) asks whether a
+sampled sentence of the bundle is supported by the transcript window around its
+citation; it sees misattribution and retold-as-fact errors that the other two miss, but
+only as far as a human labeller reads it, and n=60 carries roughly ±12pp of noise.
+Draw a sample with `python claim_sampler.py --n 60 --seed 1234` (reads the cached
+extraction and transcripts, no model call). Committed claim files are scrubbed of
+player first names; the sampler refuses to write one that is not.
 
 ---
 
