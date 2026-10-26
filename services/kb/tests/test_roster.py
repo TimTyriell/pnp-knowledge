@@ -59,14 +59,14 @@ def test_build_roster_matches_name_alias_slug_and_sorts(tmp_path: Path):
         {"concept_id": "locations/dodo_haus", "type": "Location",
          "canonical_name": "Dodo Haus", "aliases": []},
     ]}
-    export = {"characters": [
+    export = [
         {"name": "Dodo Goblin", "class": "Halb-Goblin", "group": "Team-B",
          "since": None, "until": None},
         {"name": "lindo laut", "class": "Fee Barde", "group": "Team-A",
          "since": None, "until": None},
         {"name": "Unbekannt", "class": "Zauberer", "group": "Team-A",
          "since": None, "until": None},
-    ]}
+    ]
     episodes = Episodes(teams={"Team-A": "A", "Team-B": "B"})
     rows = build_roster(export, registry, episodes)
     assert [(r["name"], r["concept_id"], r["team"]) for r in rows] == [

@@ -2,8 +2,10 @@
 
 The export comes from pnp-crawl's ``export_roster.py`` (plan C4):
 
-    {"characters": [{"name": "Lindo Laut", "class": "Fee Barde",
-                     "group": "Team-A", "since": null, "until": null}]}
+    [{"name": "Lindo Laut", "class": "Fee Barde",
+      "group": "Team-A", "since": null, "until": null}]
+
+A top-level list, one row per character stint (``roster_rows`` there).
 
 Only in-world facts are written. Player names stay in the private export and
 are never copied here. A character whose name matches no Character concept in
@@ -58,7 +60,7 @@ def match_concept(name: str, characters: list[dict]) -> str | None:
     return None
 
 
-def build_roster(export: dict, registry: dict, episodes: Episodes) -> list[dict]:
+def build_roster(export: list[dict], registry: dict, episodes: Episodes) -> list[dict]:
     """Roster rows sorted by (team, name). Pure: no I/O."""
     characters = [e for e in registry.get("entities") or [] if e.get("type") == "Character"]
     rows = [
@@ -70,7 +72,7 @@ def build_roster(export: dict, registry: dict, episodes: Episodes) -> list[dict]
             "since": c.get("since"),
             "until": c.get("until"),
         }
-        for c in export.get("characters") or []
+        for c in export
     ]
     rows.sort(key=lambda r: (r["team"] or "", r["name"].casefold()))
     return rows
