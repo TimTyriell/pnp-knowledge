@@ -8,7 +8,10 @@ Used by ``pnp validate`` and as a non-fatal report at the end of ``pnp run``.
 
 from __future__ import annotations
 
+import json
 import logging
+import os
+import re
 from collections import defaultdict
 from dataclasses import dataclass, field
 from difflib import SequenceMatcher
@@ -439,3 +442,52 @@ def fix_bundle(bundle_dir: Path, registry_path: Path | None = None) -> tuple[int
             path.write_text(new_text, encoding="utf-8")
             files_changed += 1
     return files_changed, links_dropped
+
+
+# --- private player-name guard (T8, D1) -----------------------------------
+#
+# Kept out of validate_bundle on purpose: the name list lives in pnp-crawl's
+# gitignored groups/ and is absent in CI, so `pnp validate` must not depend on
+# it. Only the local ratchet test (tests/test_bundle_invariants.py) calls this.
+
+_BELEGE_SPLIT_RE = re.compile(r"^# Belege\s*$", re.MULTILINE)
+
+
+def load_private_player_names() -> list[str] | None:
+    """Real player names from the JSON file at ``PNP_ROSTER_PRIVATE``, or None.
+
+    None when the env var is unset or the file is missing: the guard then
+    skips, and the bundle is never asked to prove anything it cannot see.
+    """
+    raw = os.environ.get("PNP_ROSTER_PRIVATE")
+    if not raw or not Path(raw).is_file():
+        return None
+    data = json.loads(Path(raw).read_text(encoding="utf-8"))
+    return [str(n) for n in data.get("player_names") or []]
+
+
+def player_name_hits(bundle_dir: Path, player_names: list[str]) -> list[tuple[str, str, str]]:
+    """(concept_id, where, name) for each real player name found.
+
+    ``where`` is "title", "alias" or "body". Whole-word, case-sensitive matches
+    of names with >= 3 characters. Prose inside "# Belege" is skipped: it
+    quotes speaker labels on purpose.
+    """
+    patterns = [
+        (name, re.compile(rf"(?<!\w){re.escape(name)}(?!\w)"))
+        for name in player_names
+        if len(name) >= 3
+    ]
+    hits: list[tuple[str, str, str]] = []
+    for path in _iter_concept_files(bundle_dir):
+        cid = str(path.relative_to(bundle_dir).with_suffix("")).replace("\\", "/")
+        frontmatter, body = split_document(path.read_text(encoding="utf-8"))
+        prose = _BELEGE_SPLIT_RE.split(body, maxsplit=1)[0]
+        fields = [("title", str(frontmatter.get("title") or ""))]
+        fields += [("alias", str(a)) for a in frontmatter.get("aliases") or []]
+        fields.append(("body", prose))
+        for where, text in fields:
+            for name, pattern in patterns:
+                if pattern.search(text):
+                    hits.append((cid, where, name))
+    return hits

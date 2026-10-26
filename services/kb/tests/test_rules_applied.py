@@ -264,3 +264,15 @@ def test_article_variant_does_not_slip_past_a_rule():
         f"{len(bad)} article-variant duplicate(s) slipped past ignore:/merge: "
         f"(baseline {ARTICLE_VARIANT_BASELINE}): {sorted(bad)}"
     )
+
+
+def test_must_keep_events_are_allowlisted():
+    # T4 (docs/plans/T4-event-anchors.md): an Event the wiki has a page for, or
+    # that a GM ruling or important: names, must stay a concept -- anchoring it
+    # would delete its file.
+    from pnp_okf.resolve import _registry_data, load_event_concepts
+
+    data = _registry_data(REGISTRY)
+    allow = load_event_concepts(REGISTRY)
+    must = {str(c) for c in (data.get("important") or []) if str(c).startswith("events/")}
+    assert must <= allow, sorted(must - allow)
