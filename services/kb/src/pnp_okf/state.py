@@ -17,15 +17,25 @@ fills (decision D4, T00 §6). The cost is paid by a deliberate act.
 
 from __future__ import annotations
 
+import hashlib
+import json
+import logging
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Literal
 
 import yaml
 from pydantic import BaseModel, Field
+from tenacity import retry, retry_if_exception, stop_after_attempt, wait_exponential
 
+from pnp_okf.config import DeepSeekConfig
+from pnp_okf.llm_client import build_client, is_retryable
+from pnp_okf.models import SessionTranscript
 from pnp_okf.okf import slugify
+from pnp_okf.prompts import STATE_PROMPT_VERSION, STATE_SYSTEM, STATE_USER_TEMPLATE
 from pnp_okf.resolve import _registry_data
+
+log = logging.getLogger(__name__)
 
 Evidence = Literal["observed", "claimed", "rumor", "speculation"]
 ThreadKind = Literal["quest", "mystery", "promise", "debt", "deadline"]
@@ -233,3 +243,104 @@ def render_glossary(rows: list[dict]) -> str:
         alias = f" (auch: {', '.join(r['aliases'])})" if r["aliases"] else ""
         lines.append(f"- {r['type']}: {r['name']}{alias}")
     return "\n".join(lines)
+
+
+# --- cache and the one LLM call per session --------------------------------
+
+def state_cache_key(t: SessionTranscript, cfg: DeepSeekConfig, glossary: str, open_threads: str) -> str:
+    payload = "\n".join([
+        STATE_PROMPT_VERSION, cfg.model, t.session_id, t.render_dialogue(),
+        hashlib.sha256(glossary.encode("utf-8")).hexdigest(),
+        hashlib.sha256(open_threads.encode("utf-8")).hexdigest(),
+    ])
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()[:16]
+
+
+def _cache_path(cache_dir: Path, t: SessionTranscript, key: str) -> Path:
+    return cache_dir / "state" / t.session_id / f"{key}.json"
+
+
+def load_cached_state(path: Path, key: str) -> SessionState | None:
+    if not path.is_file():
+        return None
+    try:
+        blob = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return None
+    return SessionState.model_validate(blob["state"]) if blob.get("_key") == key else None
+
+
+# ponytail: a malformed reply is resampled by is_retryable (ValidationError is in it),
+# no separate parse-retry loop.
+@retry(reraise=True, stop=stop_after_attempt(4),
+       wait=wait_exponential(multiplier=2, min=2, max=30),
+       retry=retry_if_exception(is_retryable))
+def _call_llm(client, cfg: DeepSeekConfig, t: SessionTranscript, glossary: str, open_threads: str) -> SessionState:
+    user = STATE_USER_TEMPLATE.format(
+        session_id=t.session_id, date=t.date, glossary=glossary,
+        open_threads=open_threads, dialogue=t.render_dialogue(),
+    )
+    schema = json.dumps(SessionState.model_json_schema(), ensure_ascii=False)
+    completion = client.chat.completions.create(
+        model=cfg.model,
+        messages=[
+            {"role": "system", "content": STATE_SYSTEM},
+            {"role": "user", "content": user
+             + "\n\nAntworte AUSSCHLIESSLICH mit einem JSON-Objekt gemäß diesem Schema:\n" + schema},
+        ],
+        temperature=0.2,
+        response_format={"type": "json_object"},
+    )
+    raw = completion.choices[0].message.content or ""
+    return SessionState.model_validate_json(raw)
+
+
+@dataclass
+class StateRun:
+    ledger: Ledger
+    cached: int = 0
+    called: int = 0
+    uncached_estimate: int = 0
+
+
+def run_state(
+    transcripts: list[SessionTranscript],
+    cfg: DeepSeekConfig,
+    cache_dir: Path,
+    glossary_rows: list[dict],
+    *,
+    estimate: bool = False,
+    client=None,
+) -> StateRun:
+    """Fold every session's state into a Ledger, oldest first.
+
+    Sequential by design: each session's prompt -- and so its cache key --
+    contains the threads still open after the sessions before it. With
+    ``estimate`` nothing is called; once one session is uncached every later
+    key is unknowable, so the rest count as uncached too.
+    """
+
+    run = StateRun(Ledger())
+    glossary = render_glossary(glossary_rows)
+    blind = False
+    for t in sorted(transcripts, key=lambda t: (t.date, t.session_id)):
+        open_text = render_open_threads(run.ledger)
+        key = state_cache_key(t, cfg, glossary, open_text)
+        path = _cache_path(cache_dir, t, key)
+        state = None if blind else load_cached_state(path, key)
+        if state is None:
+            if estimate:
+                blind = True
+                run.uncached_estimate += 1
+                continue
+            client = client or build_client(cfg)
+            log.info("[state] calling %s: %s", cfg.model, t.session_id)
+            state = _call_llm(client, cfg, t, glossary, open_text)
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(json.dumps({"_key": key, "state": state.model_dump(mode="json")},
+                                       ensure_ascii=False, indent=2), encoding="utf-8")
+            run.called += 1
+        else:
+            run.cached += 1
+        run.ledger.apply(t.session_id, t.date, t.url, state)
+    return run

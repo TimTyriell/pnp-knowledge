@@ -19,6 +19,7 @@ import json
 
 from pnp_okf import prompts
 from pnp_okf.models import SessionExtraction
+from pnp_okf.state import SessionState
 
 
 def _sha(*parts: str) -> str:
@@ -41,8 +42,14 @@ def synth_fingerprint() -> str:
     )
 
 
+def state_fingerprint() -> str:
+    schema = json.dumps(SessionState.model_json_schema(), sort_keys=True, ensure_ascii=False)
+    return _sha(prompts.STATE_SYSTEM, prompts.STATE_USER_TEMPLATE, schema)
+
+
 EXTRACT_PINS = {"6": "6b9e8b098e4f7ff6"}
 SYNTH_PINS = {"6": "68c15bec59a62702"}
+STATE_PINS = {"1": "e27b22a5f6be2658"}
 
 
 def test_extract_prompt_matches_its_version():
@@ -55,6 +62,13 @@ def test_extract_prompt_matches_its_version():
 def test_synth_prompt_matches_its_version():
     assert SYNTH_PINS.get(prompts.SYNTH_PROMPT_VERSION) == synth_fingerprint(), (
         "A SYNTH_* prompt changed without bumping SYNTH_PROMPT_VERSION -- see this file's docstring."
+    )
+
+
+def test_state_prompt_matches_its_version():
+    assert STATE_PINS.get(prompts.STATE_PROMPT_VERSION) == state_fingerprint(), (
+        "A STATE_* prompt or the SessionState schema changed without bumping "
+        "STATE_PROMPT_VERSION -- see this file's docstring."
     )
 
 

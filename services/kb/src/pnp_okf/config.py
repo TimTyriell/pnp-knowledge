@@ -33,6 +33,7 @@ class DeepSeekConfig:
     api_key: str
     light_model: str = DEFAULT_LIGHT_MODEL
     extract_model: str = DEFAULT_MODEL
+    state_model: str = DEFAULT_MODEL
 
     @classmethod
     def from_env(cls) -> DeepSeekConfig:
@@ -40,6 +41,7 @@ class DeepSeekConfig:
         model = os.environ.get("DEEPSEEK_MODEL", DEFAULT_MODEL).strip()
         light = os.environ.get("DEEPSEEK_LIGHT_MODEL", DEFAULT_LIGHT_MODEL).strip()
         extract = os.environ.get("DEEPSEEK_EXTRACT_MODEL", model).strip()
+        state = os.environ.get("DEEPSEEK_STATE_MODEL", model).strip()
         api_key = os.environ.get("DEEPSEEK_API_KEY", "").strip()
 
         if not api_key:
@@ -50,6 +52,7 @@ class DeepSeekConfig:
             api_key=api_key,
             light_model=light,
             extract_model=extract,
+            state_model=state,
         )
 
     def for_tier(self, tier: str) -> DeepSeekConfig:
@@ -65,6 +68,8 @@ class DeepSeekConfig:
 
         if tier == "extract":
             return replace(self, model=self.extract_model)
+        if tier == "state":
+            return replace(self, model=self.state_model)
         if tier == "deep" or self.model == self.light_model:
             return self
         return replace(self, model=self.light_model)
