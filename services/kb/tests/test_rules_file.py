@@ -13,6 +13,7 @@ from pnp_okf.resolve import (
     _load_alias_overrides,
     _load_ignored,
     _load_never_merge_pairs,
+    load_autolink_block,
     rules_path_for,
     write_registry,
 )
@@ -64,3 +65,10 @@ def test_rules_still_work_when_left_in_the_registry(tmp_path: Path):
     path = tmp_path / "entity_registry.yaml"
     path.write_text("merge:\n  vasul: deities/vharzul\nentities: []\n", encoding="utf-8")
     assert _load_alias_overrides(path)["vasul"] == "deities/vharzul"
+
+
+def test_autolink_block_is_read_lowercased_from_the_rules_file(tmp_path: Path):
+    path = tmp_path / "entity_registry.yaml"
+    path.write_text("entities: []\n", encoding="utf-8")
+    rules_path_for(path).write_text("autolink_block:\n- Krieg\n- Schwert\n- ''\n", encoding="utf-8")
+    assert load_autolink_block(path) == {"krieg", "schwert"}
