@@ -18,7 +18,15 @@ from difflib import SequenceMatcher
 from pathlib import Path
 
 from pnp_okf.links import _LINK_RE, ConceptIndex, normalize_body
-from pnp_okf.models import DIR_TO_TYPE, SUBTYPES, THREAD_KINDS, THREAD_STATUSES, EntityType
+from pnp_okf.models import (
+    ATTITUDE_DIRS,
+    DIR_TO_TYPE,
+    SUBTYPES,
+    THREAD_KINDS,
+    THREAD_STATUSES,
+    WORLD_STATUS_BY_DIR,
+    EntityType,
+)
 from pnp_okf.okf import split_document, split_raw
 from pnp_okf.resolve import FUZZY_RATIO, load_spellings
 
@@ -69,11 +77,14 @@ class ValidationReport:
     positional_source_ids: list[str] = field(default_factory=list)
     # T6: advisory, like the others in ``ok`` -- not in integrity_ok.
     invalid_thread_fields: list[tuple[str, str]] = field(default_factory=list)
+    # T7: same status as the thread checks -- advisory, not in integrity_ok.
+    invalid_world_status: list[tuple[str, str]] = field(default_factory=list)
 
     @property
     def ok(self) -> bool:
         return not (
             self.invalid_thread_fields
+            or self.invalid_world_status
             or
             self.broken_links
             or self.dangling_links
@@ -210,6 +221,10 @@ class ValidationReport:
             lines.append(f"\nInvalid thread kind or status ({len(self.invalid_thread_fields)}):")
             for cid, detail in self.invalid_thread_fields:
                 lines.append(f"  {cid}: {detail}")
+        if self.invalid_world_status:
+            lines.append(f"\nInvalid world status or attitude ({len(self.invalid_world_status)}):")
+            for cid, detail in self.invalid_world_status:
+                lines.append(f"  {cid}: {detail}")
         if self.positional_source_ids:
             # One counter line, not a list: ~170 concepts today, and the
             # ratchet test already names the first few.
@@ -317,6 +332,13 @@ def validate_bundle(bundle_dir: Path) -> ValidationReport:
             kind, status = fm.get("kind"), fm.get("thread_status")
             if kind not in THREAD_KINDS or status not in THREAD_STATUSES:
                 report.invalid_thread_fields.append((cid, f"kind={kind!r} thread_status={status!r}"))
+
+        # T7 (T00 §4.6, §4.7): a status value or attitude the directory may not carry.
+        world = fm.get("world_status")
+        if isinstance(world, dict) and world.get("value") not in WORLD_STATUS_BY_DIR.get(dirname, frozenset()):
+            report.invalid_world_status.append((cid, f"world_status={world.get('value')!r} not allowed for {dirname}"))
+        if fm.get("attitude") and dirname not in ATTITUDE_DIRS:
+            report.invalid_world_status.append((cid, f"attitude not allowed for {dirname}"))
 
         if etype is not None:
             tags = fm.get("tags")

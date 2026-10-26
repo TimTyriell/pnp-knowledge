@@ -30,8 +30,15 @@ from pydantic import BaseModel, Field
 from tenacity import retry, retry_if_exception, stop_after_attempt, wait_exponential
 
 from pnp_okf.config import DeepSeekConfig
+from pnp_okf.episodes import Episodes, citation_labels
 from pnp_okf.llm_client import build_client, is_retryable
-from pnp_okf.models import THREAD_STATUSES, CanonicalEntity, SessionTranscript
+from pnp_okf.models import (
+    ATTITUDE_DIRS,
+    THREAD_STATUSES,
+    WORLD_STATUS_BY_DIR,
+    CanonicalEntity,
+    SessionTranscript,
+)
 from pnp_okf.okf import slugify
 from pnp_okf.prompts import STATE_PROMPT_VERSION, STATE_SYSTEM, STATE_USER_TEMPLATE
 from pnp_okf.resolve import _registry_data
@@ -46,6 +53,15 @@ Attitude = Literal["allied", "friendly", "neutral", "wary", "hostile"]
 
 NEW_THREAD = "NEU"
 PARTY = "Gruppe"
+
+# German labels for the body text (T00: machine fields English, prose German).
+# EVIDENCE_DE is shared with the thread Verlauf in emit.py (T6).
+STATUS_DE = {"alive": "lebendig", "dead": "tot", "missing": "verschollen",
+             "captured": "gefangen", "transformed": "verwandelt", "destroyed": "zerstört"}
+ATTITUDE_DE = {"allied": "verbündet", "friendly": "freundlich", "neutral": "neutral",
+               "wary": "misstrauisch", "hostile": "feindselig"}
+EVIDENCE_DE = {"observed": "beobachtet", "claimed": "behauptet",
+               "rumor": "Gerücht", "speculation": "Vermutung"}
 
 
 class ThreadUpdate(BaseModel):
@@ -468,3 +484,128 @@ def render_state_report(ledger: Ledger) -> str:
     out += ["", "## Warnungen", ""]
     out += _bullets(ledger.warnings)
     return "\n".join(out) + "\n"
+
+
+# --- T7: world status and attitude -----------------------------------------
+# Derived from the ledger, never from the model at emit time (T00 §4.6, §4.7).
+# A claim never overrides an observed fact: it stays in the history, labelled
+# with who said it, so the table can see both.
+
+
+def _chronological(records: list) -> list:
+    return sorted(records, key=lambda r: (r.entry.date, r.entry.citation_ts))
+
+
+def _current(ordered: list):
+    """The last observed entry, else the last entry of any evidence (T7 rule 1)."""
+    observed = [r for r in ordered if r.entry.evidence == "observed"]
+    return (observed or ordered)[-1]
+
+
+def _since(entry: Entry, episodes: Episodes) -> str:
+    labels = citation_labels([entry.url], episodes)
+    return labels[0] if labels else entry.date
+
+
+def _fact(value: str, entry: Entry, episodes: Episodes, claimed_by: str = "") -> dict:
+    fact = {"value": value, "since": _since(entry, episodes),
+            "at": entry.citation_ts, "evidence": entry.evidence}
+    if claimed_by:
+        fact["claimed_by"] = claimed_by
+    return fact
+
+
+def world_state_by_concept(
+    ledger: Ledger, names: NameIndex, episodes: Episodes
+) -> tuple[dict[str, dict], list[str]]:
+    """``concept_id -> frontmatter fragment`` and the unmatched lines (T7 rules 1-5).
+
+    The fragment holds any of ``world_status``, ``world_status_history`` and
+    ``attitude``. Nothing here calls the model.
+    """
+
+    unmatched: list[str] = []
+    statuses: dict[str, list[StatusRecord]] = {}
+    for s in ledger.statuses:
+        cid = names.lookup(s.name)
+        if cid is None:
+            unmatched.append(f"{s.name}: {s.value} (kein Konzept gefunden)")
+            continue
+        directory = cid.split("/", 1)[0]
+        if s.value not in WORLD_STATUS_BY_DIR.get(directory, frozenset()):
+            unmatched.append(f"{s.name}: {s.value} not allowed for {directory}")
+            continue
+        if not s.entry.citation_ts:
+            unmatched.append(f"{s.name}: {s.value} ohne Zeitstempel")
+            continue
+        statuses.setdefault(cid, []).append(s)
+
+    attitudes: dict[str, dict[str, list[AttitudeRecord]]] = {}
+    for a in ledger.attitudes:
+        cid = names.lookup(a.name)
+        if cid is None:
+            unmatched.append(f"{a.name}: attitude (kein Konzept gefunden)")
+            continue
+        directory = cid.split("/", 1)[0]
+        if directory not in ATTITUDE_DIRS:
+            unmatched.append(f"{a.name}: attitude not allowed for {directory}")
+            continue
+        if a.toward == PARTY:
+            toward = "party"
+        else:
+            target = names.lookup(a.toward)
+            if target is None or not target.startswith("characters/"):
+                unmatched.append(f"{a.name} -> {a.toward}: attitude target is not a player character")
+                continue
+            toward = target
+        if not a.entry.citation_ts:
+            unmatched.append(f"{a.name} -> {a.toward}: attitude ohne Zeitstempel")
+            continue
+        attitudes.setdefault(cid, {}).setdefault(toward, []).append(a)
+
+    out: dict[str, dict] = {}
+    for cid, records in statuses.items():
+        ordered = _chronological(records)
+        current = _current(ordered)
+        fragment: dict = {"world_status": _fact(current.value, current.entry, episodes, current.claimed_by)}
+        if len(ordered) > 1:
+            fragment["world_status_history"] = [
+                _fact(r.value, r.entry, episodes, r.claimed_by) for r in ordered
+            ]
+        out[cid] = fragment
+    for cid, per_target in attitudes.items():
+        rows = []
+        for toward, records in sorted(per_target.items()):
+            cur = _current(_chronological(records))
+            rows.append({"toward": toward, **_fact(cur.value, cur.entry, episodes)})
+        out.setdefault(cid, {})["attitude"] = rows
+    return out, unmatched
+
+
+def _status_label(fact: dict) -> str:
+    who = f" laut {fact['claimed_by']}" if fact.get("claimed_by") else ""
+    return f"{STATUS_DE[fact['value']]}{who}"
+
+
+def render_stand_section(fragment: dict, titles: dict[str, str]) -> str:
+    """The deterministic ``## Stand`` body section (T00 §4.6). ``""`` for no facts.
+
+    ``titles`` maps a concept id to its canonical name, so an attitude toward a
+    PC renders as the name a reader knows.
+    """
+
+    if not fragment:
+        return ""
+    lines = ["## Stand", ""]
+    status = fragment.get("world_status")
+    if status:
+        lines.append(f"- Status: {_status_label(status)} seit {status['since']} "
+                     f"({EVIDENCE_DE[status['evidence']]}, {status['at']})")
+        earlier = [h for h in fragment.get("world_status_history", []) if h != status]
+        if earlier:
+            lines.append("- Früher: " + "; ".join(
+                f"{_status_label(h)} ({h['since']}, {EVIDENCE_DE[h['evidence']]})" for h in earlier))
+    for a in fragment.get("attitude", []):
+        who = "Haltung zur Gruppe" if a["toward"] == "party" else f"Haltung zu {titles.get(a['toward'], a['toward'])}"
+        lines.append(f"- {who}: {ATTITUDE_DE[a['value']]} seit {a['since']} ({EVIDENCE_DE[a['evidence']]})")
+    return "\n".join(lines)
