@@ -325,6 +325,9 @@ def emit_sessions(
                 "team": episode.get("team"),
                 "youtube_title": transcript.title or None,
             }
+        letter = episodes.team_letter_for_url(transcript.url)
+        if letter:
+            frontmatter["team_letter"] = letter
         # v0.2 provenance (finding 4): the session's own VOD as its one source,
         # same id as the "# Belege" line above so the two agree.
         source_entry = {"id": episode.get("id") or "1", "resource": transcript.url}
@@ -502,6 +505,7 @@ def emit_entity(
     labels: list[str] | None = None,
     verified: bool = False,
     relationships: list[dict] | None = None,
+    teams: list[str] | None = None,
 ) -> tuple[list[str], str | None]:
     """Write a single canonical-entity concept document.
 
@@ -521,6 +525,9 @@ def emit_entity(
     cli.py) -- the existing file's ``relationships`` block, if any, is
     preserved rather than wiped. An explicit list, including ``[]``, is
     authoritative: it replaces the block, and ``[]`` clears it.
+
+    ``teams`` (T2): team letters of the citing sessions; omitted from
+    frontmatter when empty.
     """
 
     unresolved: list[str] = []
@@ -551,6 +558,7 @@ def emit_entity(
         "description": description,
         "tags": [TYPE_DIR[entity.type]],
         **({"subtype": entity.subtype} if entity.subtype else {}),
+        **({"teams": teams} if teams else {}),
         "timestamp": ts,
     }
     if entity.aliases:
