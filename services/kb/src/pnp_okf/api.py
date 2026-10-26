@@ -285,6 +285,7 @@ def create_app(bundle_dir: Path | None = None) -> FastAPI:
         type: str | None = None,  # noqa: A002 - query param name is the API
         tag: str | None = None,
         as_of: str | None = Query(default=None),
+        thread_status: str | None = None,
     ) -> list[dict]:
         results = []
         for cid in reader.concept_paths(as_of):
@@ -293,15 +294,20 @@ def create_app(bundle_dir: Path | None = None) -> FastAPI:
                 continue
             if tag and tag not in (fm.get("tags") or []):
                 continue
-            results.append(
-                {
-                    "concept": cid,
-                    "id": fm.get("id"),
-                    "type": fm.get("type"),
-                    "title": fm.get("title"),
-                    "description": fm.get("description"),
-                }
-            )
+            if thread_status is not None and fm.get("thread_status") != thread_status:
+                continue
+            row = {
+                "concept": cid,
+                "id": fm.get("id"),
+                "type": fm.get("type"),
+                "title": fm.get("title"),
+                "description": fm.get("description"),
+            }
+            # Thread fields only when present, so other consumers see no new nulls.
+            for key in ("kind", "thread_status"):
+                if fm.get(key) is not None:
+                    row[key] = fm[key]
+            results.append(row)
         return results
 
     @app.get("/concepts/{cid:path}")

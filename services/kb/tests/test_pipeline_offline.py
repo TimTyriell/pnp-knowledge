@@ -392,3 +392,39 @@ def test_registry_is_written_after_the_bundle_it_describes(
     assert min(registry_positions) > max(concept_positions), (
         f"the registry was written before the bundle files it describes: {order}"
     )
+
+
+# --- T6: pnp run without a state cache emits no threads ----------------------
+
+
+def _run_offline_with_stub(
+    tmp_path: Path, monkeypatch: object, glossary: str | None = None
+) -> tuple[int, Path]:
+    monkeypatch.setenv("DEEPSEEK_API_KEY", "test-key")
+    monkeypatch.setenv("PNP_STATE_DIR", str(tmp_path / "state"))
+    args = _offline_run_args(tmp_path)  # creates knowledge/, so write after it
+    if glossary is not None:
+        (tmp_path / "knowledge" / "state_glossary.yaml").write_text(glossary, encoding="utf-8")
+    extraction = _stub_extraction()
+    monkeypatch.setattr(
+        cli, "extract_session", lambda transcript, cfg, cache_dir, *, force=False: extraction
+    )
+    ret = cli._run_pipeline(args, "2026-09-07T00:00:00Z")
+    return ret, tmp_path / "knowledge" / "bundle" / "campaign"
+
+
+def test_run_without_a_glossary_emits_no_threads(tmp_path: Path, monkeypatch: object) -> None:
+    ret, bundle = _run_offline_with_stub(tmp_path, monkeypatch)
+    assert ret == 0
+    assert not (bundle / "threads").exists()
+
+
+def test_run_with_a_glossary_but_no_state_cache_emits_no_threads(
+    tmp_path: Path, monkeypatch: object
+) -> None:
+    ret, bundle = _run_offline_with_stub(
+        tmp_path, monkeypatch, glossary="entries:\n- type: NPC\n  name: Wache Hans\n  aliases: []\n"
+    )
+    assert ret == 0, "an uncached state pass must not fail pnp run"
+    assert not (bundle / "threads").exists()
+    assert not (tmp_path / "knowledge" / "conflicts" / "state_unmatched.md").exists()

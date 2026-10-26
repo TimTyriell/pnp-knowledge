@@ -18,7 +18,7 @@ from difflib import SequenceMatcher
 from pathlib import Path
 
 from pnp_okf.links import _LINK_RE, ConceptIndex, normalize_body
-from pnp_okf.models import DIR_TO_TYPE, SUBTYPES, EntityType
+from pnp_okf.models import DIR_TO_TYPE, SUBTYPES, THREAD_KINDS, THREAD_STATUSES, EntityType
 from pnp_okf.okf import split_document, split_raw
 from pnp_okf.resolve import FUZZY_RATIO, load_spellings
 
@@ -67,10 +67,14 @@ class ValidationReport:
     type_dir_mismatches: list[tuple[str, str]] = field(default_factory=list)
     invalid_subtypes: list[tuple[str, str]] = field(default_factory=list)
     positional_source_ids: list[str] = field(default_factory=list)
+    # T6: advisory, like the others in ``ok`` -- not in integrity_ok.
+    invalid_thread_fields: list[tuple[str, str]] = field(default_factory=list)
 
     @property
     def ok(self) -> bool:
         return not (
+            self.invalid_thread_fields
+            or
             self.broken_links
             or self.dangling_links
             or self.duplicate_titles
@@ -202,6 +206,10 @@ class ValidationReport:
             )
             for cid, subtype in self.invalid_subtypes:
                 lines.append(f"  {cid}: {subtype!r}")
+        if self.invalid_thread_fields:
+            lines.append(f"\nInvalid thread kind or status ({len(self.invalid_thread_fields)}):")
+            for cid, detail in self.invalid_thread_fields:
+                lines.append(f"  {cid}: {detail}")
         if self.positional_source_ids:
             # One counter line, not a list: ~170 concepts today, and the
             # ratchet test already names the first few.
@@ -293,10 +301,22 @@ def validate_bundle(bundle_dir: Path) -> ValidationReport:
         # writer (okf._order_frontmatter) drops None/"" before a normal emit
         # ever reaches disk, so a hand-edited file is the only way a required
         # key survives with an empty value -- `f in fm` alone would miss it.
-        required = REQUIRED_FIELDS[etype] if etype else _SESSION_FIELDS
+        # threads/ is not an EntityType directory, but its concepts carry an id
+        # like any entity (THREAD_*), so they need the full concept field set.
+        if etype:
+            required = REQUIRED_FIELDS[etype]
+        elif dirname == "threads":
+            required = _CONCEPT_FIELDS
+        else:
+            required = _SESSION_FIELDS
         missing = [f for f in required if not fm.get(f)]
         if missing:
             report.missing_required_fields[cid] = missing
+
+        if dirname == "threads":
+            kind, status = fm.get("kind"), fm.get("thread_status")
+            if kind not in THREAD_KINDS or status not in THREAD_STATUSES:
+                report.invalid_thread_fields.append((cid, f"kind={kind!r} thread_status={status!r}"))
 
         if etype is not None:
             tags = fm.get("tags")

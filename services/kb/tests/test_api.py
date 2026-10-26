@@ -62,6 +62,23 @@ Beleg [1] sagt tot, Beleg [2] sagt lebendig.
 """
 
 
+_THREAD = """---
+type: Thread
+id: THREAD_EVAKUIERUNG
+title: Evakuierung
+description: Die Gruppe soll den Hof räumen.
+tags:
+- threads
+- quest
+kind: quest
+thread_status: open
+timestamp: '2026-01-01T00:00:00Z'
+---
+
+Die Gruppe soll den Hof räumen.
+"""
+
+
 @pytest.fixture()
 def repo(tmp_path: Path) -> Path:
     _git(tmp_path, "init", "-q")
@@ -80,6 +97,7 @@ def repo(tmp_path: Path) -> Path:
         "---\ntype: Location\nid: LOC_HARTWACHT\ntitle: Hartwacht\n---\n\nStadt.\n",
     )
     _write(tmp_path, "knowledge/conflicts/npcs__hexe.md", _CONFLICT)
+    _write(tmp_path, "knowledge/bundle/camp/threads/evakuierung.md", _THREAD)
     _git(tmp_path, "add", "-A")
     _git(tmp_path, "commit", "-q", "-m", "s02")
     _git(tmp_path, "tag", "s02")
@@ -119,9 +137,25 @@ def test_list_concepts_filters_and_skips_reserved(client: TestClient):
         "npcs/hexe",
         "characters/lindo_laut",
         "locations/hartwacht",
+        "threads/evakuierung",
     }
     npcs = client.get("/concepts", params={"type": "NPC"}).json()
     assert [c["id"] for c in npcs] == ["NPC_HEXE"]
+
+
+def test_thread_status_filter(client: TestClient):
+    open_threads = client.get(
+        "/concepts", params={"type": "Thread", "thread_status": "open"}
+    ).json()
+    assert [c["concept"] for c in open_threads] == ["threads/evakuierung"]
+    assert open_threads[0]["kind"] == "quest"
+    assert open_threads[0]["thread_status"] == "open"
+    resolved = client.get(
+        "/concepts", params={"type": "Thread", "thread_status": "resolved"}
+    ).json()
+    assert resolved == []
+    npc = client.get("/concepts", params={"type": "NPC"}).json()
+    assert "kind" not in npc[0] and "thread_status" not in npc[0]
 
 
 def test_changes_between_tags(client: TestClient):
@@ -130,6 +164,7 @@ def test_changes_between_tags(client: TestClient):
     assert by_concept == {
         "npcs/hexe": "updated",
         "locations/hartwacht": "created",
+        "threads/evakuierung": "created",
     }
 
     with_diff = client.get(

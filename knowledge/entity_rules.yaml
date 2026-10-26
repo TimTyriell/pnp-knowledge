@@ -1415,3 +1415,8 @@ event_concepts:
 - events/toetung_des_goblin_kindes
 - events/zerstoerung_des_kristallmagiers
 - events/zerstoerung_von_voras_durch_nerash
+# thread_rules: corrections to the state pass's threads (docs/plans/T6).
+# merge: loser -> winner; title: id -> name; status: id -> open|resolved|abandoned;
+# ignore: ids that are not threads. Thread ids come from the state pass's
+# ledger (pnp state report), never from a bundle file name typed by hand.
+thread_rules: {}

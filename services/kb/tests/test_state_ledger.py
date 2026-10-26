@@ -7,15 +7,19 @@ id no matter how the model words it later (T00 §4.5).
 from pathlib import Path
 
 import yaml
+from pnp_okf.models import CanonicalEntity, EntityType
 from pnp_okf.state import (
     GLOSSARY_FILENAME,
     AttitudeChange,
     Ledger,
+    NameIndex,
     SessionState,
     StatusChange,
     ThreadUpdate,
+    apply_thread_rules,
     build_glossary,
     load_glossary,
+    load_thread_rules,
     render_glossary,
     render_open_threads,
     render_state_report,
@@ -146,3 +150,93 @@ def test_report_lists_each_thread_status_change_and_warning():
     assert "threads/evakuierung" in text and "threads/y" in text
     assert "Rotunas" in text and "dead" in text
     assert "unknown thread id" in text
+
+
+# --- T6: thread rules, name lookup ----------------------------------------
+
+
+def _two_threads() -> Ledger:
+    led = Ledger()
+    led.apply("s1", "2026-01-01", "u1", SessionState(threads=[_t("NEU", "Evakuierung")]))
+    # Same title again: code mints threads/evakuierung_2 (a second, separate thread).
+    led.apply("s2", "2026-02-01", "u2", SessionState(threads=[_t("NEU", "Evakuierung")]))
+    led.apply("s3", "2026-03-01", "u3", SessionState(threads=[_t("threads/evakuierung_2", "Evakuierung", "resolved")]))
+    return led
+
+
+def test_thread_rule_ignore_removes_the_thread():
+    led = _two_threads()
+    apply_thread_rules(led, {"ignore": ["threads/evakuierung_2"]})
+    assert "threads/evakuierung_2" not in led.threads
+
+
+def test_thread_rule_merge_combines_entries_and_resolves_from_the_winner_history():
+    led = _two_threads()
+    apply_thread_rules(led, {"merge": {"threads/evakuierung_2": "threads/evakuierung"}})
+    winner = led.threads["threads/evakuierung"]
+    assert "threads/evakuierung_2" not in led.threads
+    assert [e.session_id for _, e in winner.entries] == ["s1", "s2", "s3"]
+    assert winner.status == "resolved" and winner.resolved == "s3"
+    assert winner.opened == "s1"
+
+
+def test_thread_rule_merge_with_a_missing_id_warns_and_changes_nothing():
+    led = _two_threads()
+    apply_thread_rules(led, {"merge": {"threads/gibts_nicht": "threads/evakuierung"}})
+    assert "threads/evakuierung" in led.threads
+    assert any("threads/gibts_nicht" in w for w in led.warnings)
+
+
+def test_thread_rule_title_renames_without_changing_the_id():
+    led = _two_threads()
+    apply_thread_rules(led, {"title": {"threads/evakuierung": "Evakuierung des Halblingshofs"}})
+    assert led.threads["threads/evakuierung"].title == "Evakuierung des Halblingshofs"
+
+
+def test_thread_rule_status_forces_and_clears_resolved_when_open():
+    led = _two_threads()
+    apply_thread_rules(led, {"status": {"threads/evakuierung_2": "open"}})
+    rec = led.threads["threads/evakuierung_2"]
+    assert rec.status == "open" and rec.resolved is None
+
+
+def test_status_rule_naming_a_merge_winner_still_applies():
+    led = _two_threads()
+    apply_thread_rules(led, {
+        "merge": {"threads/evakuierung_2": "threads/evakuierung"},
+        "status": {"threads/evakuierung": "abandoned"},
+    })
+    assert led.threads["threads/evakuierung"].status == "abandoned"
+
+
+def test_load_thread_rules_is_empty_without_the_family(tmp_path: Path):
+    (tmp_path / "entity_rules.yaml").write_text("{}\n", encoding="utf-8")
+    assert load_thread_rules(tmp_path / "entity_registry.yaml") == {}
+
+
+def test_load_thread_rules_reads_the_family(tmp_path: Path):
+    (tmp_path / "entity_rules.yaml").write_text(
+        "thread_rules:\n  ignore:\n  - threads/x\n", encoding="utf-8"
+    )
+    assert load_thread_rules(tmp_path / "entity_registry.yaml") == {"ignore": ["threads/x"]}
+
+
+def _ent(cid: str, name: str, aliases: list[str] | None = None) -> CanonicalEntity:
+    return CanonicalEntity(
+        concept_id=cid, type=EntityType.CHARACTER, canonical_name=name, aliases=aliases or []
+    )
+
+
+def test_name_index_exact_alias_case_and_slug_hits():
+    idx = NameIndex([_ent("characters/lindo_laut", "Lindo Laut", ["Der Barde"])])
+    assert idx.lookup("Lindo Laut") == "characters/lindo_laut"
+    assert idx.lookup("Der Barde") == "characters/lindo_laut"
+    assert idx.lookup("LINDO LAUT") == "characters/lindo_laut"
+    assert idx.lookup("Lindo  Laut") == "characters/lindo_laut"  # slug hit
+    assert idx.title("characters/lindo_laut") == "Lindo Laut"
+
+
+def test_name_index_ambiguous_and_unknown_names_map_to_none():
+    idx = NameIndex([_ent("characters/a", "Hans"), _ent("npcs/b", "Hans")])
+    assert idx.lookup("Hans") is None
+    assert idx.lookup("Niemand") is None

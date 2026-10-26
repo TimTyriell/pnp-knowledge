@@ -31,7 +31,7 @@ from tenacity import retry, retry_if_exception, stop_after_attempt, wait_exponen
 
 from pnp_okf.config import DeepSeekConfig
 from pnp_okf.llm_client import build_client, is_retryable
-from pnp_okf.models import SessionTranscript
+from pnp_okf.models import THREAD_STATUSES, CanonicalEntity, SessionTranscript
 from pnp_okf.okf import slugify
 from pnp_okf.prompts import STATE_PROMPT_VERSION, STATE_SYSTEM, STATE_USER_TEMPLATE
 from pnp_okf.resolve import _registry_data
@@ -345,6 +345,95 @@ def run_state(
             run.cached += 1
         run.ledger.apply(t.session_id, t.date, t.url, state)
     return run
+
+
+# --- T6: thread rules and name lookup --------------------------------------
+
+
+def load_thread_rules(registry_path: Path) -> dict:
+    """``thread_rules:`` from entity_rules.yaml -- human corrections (T6 §2)."""
+
+    return _registry_data(registry_path).get("thread_rules") or {}
+
+
+def apply_thread_rules(ledger: Ledger, rules: dict) -> None:
+    """Human corrections on top of the fold. Mutates ``ledger.threads``.
+
+    Order: ignore, merge, then title and status -- so a title or status rule
+    may name the merge *winner* and still apply.
+    """
+
+    for tid in rules.get("ignore") or []:
+        ledger.threads.pop(str(tid), None)
+
+    for loser_id, winner_id in (rules.get("merge") or {}).items():
+        loser = ledger.threads.get(str(loser_id))
+        winner = ledger.threads.get(str(winner_id))
+        if loser is None or winner is None:
+            ledger.warnings.append(f"thread_rules merge {loser_id} -> {winner_id}: thread not found")
+            continue
+        winner.entries = sorted(
+            winner.entries + loser.entries, key=lambda pe: (pe[1].date, pe[1].citation_ts)
+        )
+        for name in loser.involves:
+            if name not in winner.involves:
+                winner.involves.append(name)
+        winner.opened = winner.entries[0][1].session_id
+        winner.status = winner.entries[-1][0]
+        if winner.status == "open":
+            winner.resolved = None
+        else:
+            winner.resolved = next(e.session_id for s, e in winner.entries if s != "open")
+        del ledger.threads[str(loser_id)]
+
+    for tid, title in (rules.get("title") or {}).items():
+        record = ledger.threads.get(str(tid))
+        if record is None:
+            ledger.warnings.append(f"thread_rules title {tid}: thread not found")
+            continue
+        record.title = str(title).strip()
+
+    for tid, status in (rules.get("status") or {}).items():
+        record = ledger.threads.get(str(tid))
+        if record is None or status not in THREAD_STATUSES:
+            ledger.warnings.append(f"thread_rules status {tid} -> {status!r}: thread or status not valid")
+            continue
+        record.status = status
+        if status == "open":
+            record.resolved = None
+        elif record.resolved is None and record.entries:
+            record.resolved = record.entries[-1][1].session_id
+
+
+class NameIndex:
+    """Map a state-pass name to a live concept id, or None.
+
+    Exact canonical name or alias first (case-insensitive), then slug
+    equality. A name two concepts share is ambiguous and maps to None --
+    the same no-guessing rule as synthesize.link_targets.
+    """
+
+    def __init__(self, entities: list[CanonicalEntity]) -> None:
+        self._owners: dict[str, set[str]] = {}
+        self._slugs: dict[str, set[str]] = {}
+        self._titles: dict[str, str] = {}
+        for e in entities:
+            self._titles[e.concept_id] = e.canonical_name
+            for name in [e.canonical_name, *e.aliases]:
+                if not name.strip():
+                    continue
+                self._owners.setdefault(name.strip().lower(), set()).add(e.concept_id)
+                self._slugs.setdefault(slugify(name), set()).add(e.concept_id)
+
+    def lookup(self, name: str) -> str | None:
+        for table, key in ((self._owners, name.strip().lower()), (self._slugs, slugify(name))):
+            owners = table.get(key, set())
+            if len(owners) == 1:
+                return next(iter(owners))
+        return None
+
+    def title(self, cid: str) -> str:
+        return self._titles.get(cid, cid)
 
 
 def _bullets(items: list[str]) -> list[str]:

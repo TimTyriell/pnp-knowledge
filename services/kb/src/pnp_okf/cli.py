@@ -31,10 +31,13 @@ from pnp_okf.emit import (
     emit_indexes,
     emit_log,
     emit_sessions,
+    emit_threads,
     event_anchors,
     mention_concept_index,
     prune_conflicts,
     prune_orphans,
+    prune_threads,
+    threads_by_session,
 )
 from pnp_okf.episodes import Episodes, citation_labels, relabel_citations, teams_for
 from pnp_okf.extract import extract_session, load_cached_extraction
@@ -57,8 +60,12 @@ from pnp_okf.resolve import (
 from pnp_okf.roster import load_roster
 from pnp_okf.state import (
     GLOSSARY_FILENAME,
+    Ledger,
+    NameIndex,
+    apply_thread_rules,
     build_glossary,
     load_glossary,
+    load_thread_rules,
     render_state_report,
     run_state,
     write_glossary,
@@ -367,6 +374,24 @@ def cmd_run(args: argparse.Namespace) -> int:
         raise
 
 
+def _write_unmatched(conflicts_dir: Path, lines: list[str]) -> None:
+    """T6: names the state pass could not map to a concept, one line each.
+
+    Plain markdown with no frontmatter, so the conflict queue (which only
+    reads ``type: Conflict`` files) and the invariant tests leave it alone.
+    """
+
+    path = conflicts_dir / "state_unmatched.md"
+    if not lines:
+        path.unlink(missing_ok=True)
+        return
+    conflicts_dir.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        "# Nicht zugeordnete Namen (pnp state)\n\n" + "\n".join(f"- {line}" for line in lines) + "\n",
+        encoding="utf-8",
+    )
+
+
 def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     paths = Paths.resolve(args.transcripts, args.bundle, args.cache)
     cfg = DeepSeekConfig.from_env()
@@ -438,7 +463,32 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
         p: p.stat().st_mtime_ns for p in paths.bundle_dir.rglob("*.md")
     } if paths.bundle_dir.exists() else {}
 
-    index = build_concept_index(entities, tmap, load_spellings(registry_path))
+    # T6: fold the cached state pass. Never calls the model: estimate=True stops
+    # at the first uncached session, so the fold is a cached prefix. A partial
+    # run sees a subset of transcripts and would fold a wrong prefix, so it skips
+    # threads entirely.
+    ledger = Ledger()
+    state_complete = False
+    if not partial_run:
+        glossary_rows = load_glossary(paths.knowledge_root)
+        if glossary_rows:
+            state_run = run_state(
+                list(tmap.values()), cfg.for_tier("state"), paths.cache_dir,
+                glossary_rows, estimate=True,
+            )
+            ledger = state_run.ledger
+            state_complete = state_run.uncached_estimate == 0
+            if not state_complete:
+                log.warning(
+                    "[state] sessions without cached state -- run `pnp state`. Threads "
+                    "are emitted for the cached prefix only and not pruned."
+                )
+        apply_thread_rules(ledger, load_thread_rules(registry_path))
+    thread_ids = sorted(ledger.threads)
+
+    index = build_concept_index(
+        entities, tmap, load_spellings(registry_path), extra_ids=thread_ids
+    )
     unresolved_total = 0
     conflict_count = 0
     open_conflicts: set[str] = set()
@@ -569,10 +619,23 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     # a kill during the (25-95 min) synthesis window above leaves no new
     # session file at all, instead of one that links to entities that were
     # never written (PIPELINE.md section 7; 54 dangling links on 2026-09-05).
+    # T6: thread concepts come before the sessions too -- their "Offene Fäden"
+    # links must already exist on disk (same ordering rule as above).
+    thread_written, thread_unmatched = emit_threads(
+        paths.bundle_dir, list(ledger.threads.values()), NameIndex(entities), episodes, index,
+    )
+    if state_complete:
+        pruned_threads = prune_threads(paths.bundle_dir, set(thread_written))
+        if pruned_threads:
+            log.info("Pruned %d thread concept(s) the state pass no longer produces.", pruned_threads)
+    if not partial_run:
+        _write_unmatched(paths.conflicts_dir, thread_unmatched + ledger.warnings)
+
     session_entries = emit_sessions(
         paths.bundle_dir, tmap, extractions, index, episodes,
         mention_concept_ids=mention_concept_index(entities),
         anchors=event_anchors(anchored),
+        threads_by_session=threads_by_session(ledger.threads.values()),
     )
 
     settled = prune_conflicts(paths.conflicts_dir, open_conflicts)
@@ -600,7 +663,10 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     # Writing it first used to mean a kill during synthesis left an
     # entity_registry.yaml naming concept ids whose files were never written.
     write_registry(entities, registry_path)
-    emit_indexes(paths.bundle_dir, entities, session_entries, load_spellings(registry_path))
+    emit_indexes(
+        paths.bundle_dir, entities, session_entries, load_spellings(registry_path),
+        threads=list(ledger.threads.values()),
+    )
     emit_log(paths.bundle_dir, tmap)
 
     after_paths = set(paths.bundle_dir.rglob("*.md")) if paths.bundle_dir.exists() else set()
@@ -666,6 +732,8 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
             "conflicts_open": conflict_count,
             "sessions_ingested": len(transcripts),
             "dropped_links": unresolved_total,
+            "threads": len(thread_written),
+            "threads_open": sum(1 for t in ledger.threads.values() if t.status == "open"),
         },
     )
     return 0

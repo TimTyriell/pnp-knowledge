@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import logging
 import re
+from collections.abc import Iterable
 from dataclasses import dataclass
 from datetime import UTC, datetime
 from pathlib import Path
@@ -10,11 +11,12 @@ import yaml
 
 from pnp_okf import __version__
 from pnp_okf.context import _parse_ts
-from pnp_okf.episodes import Episodes
+from pnp_okf.episodes import Episodes, citation_labels, teams_for
 from pnp_okf.links import ConceptIndex, apply_spellings, normalize_body
 from pnp_okf.models import (
     DIR_TO_TYPE,
     SUBTYPES,
+    THREAD_KINDS,
     TYPE_DIR,
     CanonicalEntity,
     EntityType,
@@ -29,6 +31,7 @@ from pnp_okf.okf import (
     write_if_changed,
     write_index,
 )
+from pnp_okf.state import NameIndex, ThreadRecord
 from pnp_okf.synthesize import _BELEGE_HEADING_RE, render_belege_section
 
 log = logging.getLogger(__name__)
@@ -51,11 +54,17 @@ def build_concept_index(
     entities: list[CanonicalEntity],
     transcripts: dict[str, SessionTranscript],
     spellings: dict[str, str] | None = None,
+    extra_ids: Iterable[str] = (),
 ) -> ConceptIndex:
-    """Build a :class:`ConceptIndex` covering all entity and session concepts."""
+    """Build a :class:`ConceptIndex` covering all entity and session concepts.
+
+    ``extra_ids`` (T6) are thread concepts: they must be linkable before the
+    session notes are written, which is why they are indexed here, not later.
+    """
 
     concept_ids = [e.concept_id for e in entities]
     concept_ids += [_session_concept_id(t) for t in transcripts.values()]
+    concept_ids += list(extra_ids)
     # Names and aliases too, so a link written as the prose name resolves.
     # Least-attested first, so the better-attested entity wins a collision.
     names: dict[str, str] = {}
@@ -242,6 +251,7 @@ def emit_sessions(
     episodes: Episodes | None = None,
     mention_concept_ids: dict[tuple[str, str, str], str] | None = None,
     anchors: dict[str, list[EventAnchor]] | None = None,
+    threads_by_session: dict[str, list[tuple[str, str, str, str]]] | None = None,
 ) -> list[tuple[str, str, str]]:
     """Write one ``sessions/<date>.md`` concept per session.
 
@@ -319,6 +329,12 @@ def emit_sessions(
             for a in session_anchors:
                 meta = " · ".join(p for p in (a.subtype, a.citation_ts) if p)
                 body_parts += ["", f"### {a.title}", f"_{meta}_", "", a.note]
+        # T6: the threads this session touched, linked to their thread concepts.
+        session_threads = (threads_by_session or {}).get(session_id, [])
+        if session_threads:
+            body_parts += ["", "# Offene Fäden", ""]
+            for tid, title, word, note in session_threads:
+                body_parts.append(f"- [{title}](/{tid}.md) — {word}: {note}")
         if intro_lines:
             body_parts += ["", "# Auftretende Entitäten", "", *intro_lines]
         body_parts += [
@@ -641,6 +657,182 @@ def emit_entity(
     return unresolved, conflicts
 
 
+# --- thread concepts (T6) ---------------------------------------------------
+# Deterministic, no model (T00 decision D3): the body is the dated Verlauf of
+# the ledger's entries, so every line can be checked against its cited moment.
+
+_THREAD_STATUS_DE = {"open": "fortgeführt", "resolved": "erledigt", "abandoned": "aufgegeben"}
+_THREAD_KIND_DE = {
+    "quest": "Auftrag", "mystery": "Rätsel", "promise": "Versprechen",
+    "debt": "Schuld", "deadline": "Frist",
+}
+_THREAD_EVIDENCE_DE = {
+    "observed": "beobachtet", "claimed": "behauptet", "rumor": "Gerücht", "speculation": "Vermutung",
+}
+_THREAD_GROUPS = (("open", "Offen"), ("resolved", "Erledigt"), ("abandoned", "Aufgegeben"))
+
+
+def thread_step_word(index: int, status: str) -> str:
+    """How one dated entry reads: the first opens the thread, later ones move it on."""
+
+    return "eröffnet" if index == 0 else _THREAD_STATUS_DE.get(status, status)
+
+
+def threads_by_session(
+    threads: Iterable[ThreadRecord],
+) -> dict[str, list[tuple[str, str, str, str]]]:
+    """``session_id -> (thread_id, title, step word, note)`` for emit_sessions."""
+
+    out: dict[str, list[tuple[str, str, str, str]]] = {}
+    for thread in sorted(threads, key=lambda t: t.thread_id):
+        for i, (status, entry) in enumerate(thread.entries):
+            out.setdefault(entry.session_id, []).append(
+                (thread.thread_id, thread.title, thread_step_word(i, status), entry.note)
+            )
+    return out
+
+
+def _thread_description(thread: ThreadRecord) -> str:
+    return _short_desc(thread.entries[0][1].note) if thread.entries else thread.title
+
+
+def emit_threads(
+    bundle_dir: Path,
+    threads: list[ThreadRecord],
+    names: NameIndex,
+    episodes: Episodes,
+    index: ConceptIndex | None,
+) -> tuple[list[str], list[str]]:
+    """Write threads/<slug>.md per thread. Returns (written_ids, unmatched_names).
+
+    Deterministic, no LLM (T00 D3): the body is the dated Verlauf of the
+    thread's entries plus its participants, so every line is checkable against
+    the cited moment.
+    """
+
+    written: list[str] = []
+    unmatched: list[str] = []
+    for thread in sorted(threads, key=lambda t: t.thread_id):
+        entries = [e for _, e in thread.entries]
+        involves_ids: list[str] = []
+        for name in thread.involves:
+            cid = names.lookup(name)
+            if cid is None:
+                unmatched.append(f"{thread.thread_id}: {name}")
+            elif cid not in involves_ids:
+                involves_ids.append(cid)
+
+        labels = citation_labels([e.url for e in entries], episodes) or []
+        markers = [labels[i] if labels else e.date for i, e in enumerate(entries)]
+        verlauf = []
+        for i, ((status, e), marker) in enumerate(zip(thread.entries, markers, strict=True)):
+            word = thread_step_word(i, status)
+            evidence = _THREAD_EVIDENCE_DE.get(e.evidence, e.evidence)
+            verlauf.append(
+                f"- **[{marker}]** Session {e.date} @ {e.citation_ts} — {word}: {e.note} _({evidence})_"
+            )
+
+        blocks = []
+        if entries and entries[0].note.strip():
+            blocks.append(entries[0].note.strip())
+        blocks.append("## Verlauf\n\n" + "\n".join(verlauf))
+        if involves_ids:
+            blocks.append("## Beteiligte\n\n" + "\n".join(
+                f"- [{names.title(cid)}](/{cid}.md)" for cid in involves_ids
+            ))
+        # "Session YYYY-MM-DD" in every line: pnp-export-data's relevance gate
+        # counts sessions with exactly that shape (T00 §4.5).
+        blocks.append("# Belege\n\n" + "\n\n".join(
+            f"[{marker}] Session {e.date} @ {e.citation_ts} ({e.url})"
+            for marker, e in zip(markers, entries, strict=True)
+        ))
+        body = "\n\n".join(blocks)
+        if index is not None:
+            body, _ = normalize_body(body, index, self_id=thread.thread_id)
+
+        sources = []
+        for marker, e in zip(markers, entries, strict=True):
+            source: dict[str, object] = {"id": marker, "resource": e.url}
+            seconds = _parse_ts(e.citation_ts)
+            if seconds is not None:
+                source["at"] = e.citation_ts.strip()
+                if e.url:
+                    source["url_at"] = _url_at(e.url, seconds)
+            if e.date:
+                source["last_modified"] = f"{e.date}T00:00:00Z"
+            sources.append(source)
+
+        resolved_marker = next(
+            (m for m, e in zip(markers, entries, strict=True) if e.session_id == thread.resolved),
+            None,
+        )
+        last = entries[-1] if entries else None
+        frontmatter = {
+            "type": "Thread",
+            "id": f"THREAD_{thread.thread_id.split('/', 1)[1].upper()}",
+            "title": thread.title,
+            "description": _thread_description(thread),
+            "tags": ["threads", thread.kind],
+            "timestamp": f"{last.date}T00:00:00Z" if last and last.date else _now_iso(),
+            "kind": thread.kind,
+            "thread_status": thread.status,
+            "opened": markers[0] if markers else None,
+            "resolved": resolved_marker,
+            "evidence": entries[0].evidence if entries else "observed",
+            # None, not []: _order_frontmatter keeps [] and would render empty keys.
+            "teams": teams_for([e.url for e in entries], episodes) or None,
+            "involves": involves_ids or None,
+            "sources": sources or None,
+        }
+        path = bundle_dir / f"{thread.thread_id}.md"
+        existing_text, existing_frontmatter = _existing_document(path)
+        rendered = _stamp_generated(frontmatter, body, existing_text, existing_frontmatter)
+        write_concept_text(bundle_dir, thread.thread_id, rendered, existing_text)
+        written.append(thread.thread_id)
+    return written, unmatched
+
+
+def prune_threads(bundle_dir: Path, keep: set[str]) -> int:
+    """Delete threads/*.md that the fold no longer produces. Returns the count.
+
+    Only called after a fold that covered every session (cli.py): a partial
+    fold would otherwise delete threads it simply did not reach.
+    """
+
+    directory = bundle_dir / "threads"
+    if not directory.is_dir():
+        return 0
+    removed = 0
+    for path in sorted(directory.glob("*.md")):
+        if path.name != "index.md" and f"threads/{path.stem}" not in keep:
+            path.unlink()
+            removed += 1
+    if not keep:
+        (directory / "index.md").unlink(missing_ok=True)
+    if not any(directory.iterdir()):
+        directory.rmdir()
+    return removed
+
+
+def _thread_index_sections(
+    threads: list[ThreadRecord],
+) -> list[tuple[str, list[tuple[str, str, str]]]]:
+    kind_order = {k: i for i, k in enumerate(THREAD_KINDS)}
+    sections: list[tuple[str, list[tuple[str, str, str]]]] = [("Fäden", [])]
+    for status, label in _THREAD_GROUPS:
+        members = sorted(
+            (t for t in threads if t.status == status),
+            key=lambda t: (kind_order.get(t.kind, len(kind_order)), t.title.lower()),
+        )
+        if members:
+            sections.append((label, [
+                (f"{_THREAD_KIND_DE.get(t.kind, t.kind)}: {t.title}",
+                 f"{t.thread_id.split('/', 1)[1]}.md", _thread_description(t))
+                for t in members
+            ]))
+    return sections
+
+
 def emit_conflict(
     conflicts_dir: Path, entity: CanonicalEntity, section: str
 ) -> Path:
@@ -841,6 +1033,7 @@ def emit_indexes(
     entities: list[CanonicalEntity],
     session_entries: list[tuple[str, str, str]],
     spellings: dict[str, str] | None = None,
+    threads: list[ThreadRecord] | None = None,
 ) -> None:
     """Write per-directory ``index.md`` files and the bundle-root index.
 
@@ -900,6 +1093,11 @@ def emit_indexes(
                 bundle_dir / directory,
                 [(_type_heading(directory), [_entry(e) for e in ordered])],
             )
+
+    # T6: threads/index.md, grouped by status then kind. Written only when
+    # there are threads, so a KB with no state cache gets no empty index.
+    if threads:
+        write_index(bundle_dir / "threads", _thread_index_sections(threads), sub_level=2)
 
     # root index.md
     root_sections: list[tuple[str, list[tuple[str, str, str]]]] = []

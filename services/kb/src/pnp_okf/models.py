@@ -53,6 +53,11 @@ TYPE_DIR: dict[EntityType, str] = {
 # type (keeping ``type`` and the concept-id prefix consistent).
 DIR_TO_TYPE: dict[str, EntityType] = {d: t for t, d in TYPE_DIR.items()}
 
+# Thread vocabularies (T00 §4.5). Machine values in English; the ThreadKind and
+# ThreadStatus Literals in state.py must stay in step with these.
+THREAD_KINDS: tuple[str, ...] = ("quest", "mystery", "promise", "debt", "deadline")
+THREAD_STATUSES: tuple[str, ...] = ("open", "resolved", "abandoned")
+
 
 # Typed-ID prefix per entity type — the pnp-report vocabulary (CHAR_/NPC_/
 # LOC_/FACTION_/EVENT_) shared across the campaign toolchain. The frontmatter
