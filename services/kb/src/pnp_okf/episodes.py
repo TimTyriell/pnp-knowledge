@@ -82,8 +82,11 @@ class Episodes:
         a team with no letter, yields None rather than a guess.
         """
         entry = self.for_url(url)
-        team = (entry or {}).get("team")
-        return self._teams.get(str(team)) if team else None
+        return self.team_letter((entry or {}).get("team"))
+
+    def team_letter(self, group: str | None) -> str | None:
+        """Letter for a pnp-crawl group name ("Team-A" -> "A"), or None (T8)."""
+        return self._teams.get(str(group)) if group else None
 
     @classmethod
     def load(cls, path: Path) -> Episodes:

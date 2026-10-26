@@ -47,6 +47,7 @@ from pnp_okf.resolve import (
     resolve_entities,
     write_registry,
 )
+from pnp_okf.roster import load_roster
 from pnp_okf.synthesize import (
     _cache_key as synth_cache_key,
 )
@@ -495,6 +496,11 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     # only an explicit list (always the case on a full run) as authoritative,
     # so a partial run can no longer erase real edges by omission. Nothing
     # reads `edges` on that path, so it isn't computed there either.
+    # T8: in-world roster fields for Character concepts. The file sits next to
+    # episodes.yaml, so its parent is the knowledge root (Paths._knowledge_root
+    # is private).
+    roster = load_roster(paths.episodes_path.parent)
+
     edges: dict[str, list[dict]] = {}
     if not partial_run:
         edges = relationship_edges(bodies, index, {e.concept_id for e in entities})
@@ -506,6 +512,7 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
             verified=entity.concept_id in verified_ids,
             relationships=(None if partial_run else edges.get(entity.concept_id, [])),
             teams=teams_for([m.url for m in entity.mentions], episodes),
+            extra_frontmatter=roster.get(entity.concept_id),
         )
         unresolved_total += len(unresolved)
         if conflicts:

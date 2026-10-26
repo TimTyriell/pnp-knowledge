@@ -506,6 +506,7 @@ def emit_entity(
     verified: bool = False,
     relationships: list[dict] | None = None,
     teams: list[str] | None = None,
+    extra_frontmatter: dict | None = None,
 ) -> tuple[list[str], str | None]:
     """Write a single canonical-entity concept document.
 
@@ -528,6 +529,9 @@ def emit_entity(
 
     ``teams`` (T2): team letters of the citing sessions; omitted from
     frontmatter when empty.
+
+    ``extra_frontmatter`` (T8, and T7's world state): extra keys merged in
+    verbatim. Callers pass only additive keys, never the core ones above.
     """
 
     unresolved: list[str] = []
@@ -589,6 +593,8 @@ def emit_entity(
         # explicit [] is authoritative (finding 3) and clears the key by
         # simply not setting it here.
         frontmatter["relationships"] = relationships
+    if extra_frontmatter:
+        frontmatter.update(extra_frontmatter)
     if entity.mentions:
         # By far the longest block -- last so it doesn't push shorter,
         # more-often-scanned keys further down the rendered file.
