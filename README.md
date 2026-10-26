@@ -1,7 +1,7 @@
 # pnp-knowledge
 
-**A knowledge base for contested, multi-source narrative data.** 1092 entity
-concepts extracted from 66 sessions of recorded German speech, held as markdown
+**A knowledge base for contested, multi-source narrative data.** 1114 entity
+concepts extracted from 68 sessions of recorded German speech, held as markdown
 in git, with quality gates that are not allowed to silently regress.
 
 ```
@@ -22,7 +22,7 @@ flowchart TB
     classDef client fill:#0d47a1,stroke:#64b5f6,color:#fff
     classDef human fill:#e65100,stroke:#ffb74d,color:#fff
 
-    YT["public stream<br/>66 sessions of German audio"]
+    YT["public stream<br/>68 sessions of German audio"]
 
     subgraph S1 ["pnp-crawl — private, see below"]
         CRAWL["Whisper + pyannote<br/>derives voice embeddings<br/>(GDPR Art. 9) — stays local"]:::private
@@ -30,7 +30,7 @@ flowchart TB
 
     subgraph S2 ["pnp-knowledge — this repo, system of record"]
         KB["ingest: extract → resolve → synthesize"]:::core
-        BUNDLE[("OKF bundle in git<br/>1092 concepts · tag per session")]:::core
+        BUNDLE[("OKF bundle in git<br/>1114 concepts · tag per session")]:::core
         API["read-only API :8070"]:::core
         KB --> BUNDLE --> API
     end
@@ -60,6 +60,8 @@ master can do without learning a query language — the requirement that decided
 the architecture. See [ADR-001](docs/architecture/ADR-001-knowledge-layer.md) for
 the decision and the three rejected alternatives, including Neo4j GraphRAG,
 which was technically the strongest option and lost on exactly that point.
+The tags are a manual step: as-of reads are only as good as the tags, and
+`docs/RELEASING.md` says how to cut one.
 
 **Quality is ratcheted, not asserted.** 15 measured baselines — unlinked
 mentions, uncited concepts, faction/NPC link coverage, dead rules — are recorded
@@ -89,20 +91,32 @@ was a deliberate decision, not an omission —
 
 | | |
 |---|---|
-| Entity concepts | 1092 |
-| Sessions ingested | 66 |
+| Entity concepts | 1114 (sum of the eight type rows below) |
+| Sessions ingested | 68 |
 | Entity types | 8 (Character, Deity, Domain, Event, Faction, Item, Location, NPC) |
-| Largest types | 300 events, 253 NPCs, 210 items, 203 locations |
+| Largest types | 305 events, 258 NPCs, 215 items, 208 locations |
 | Open conflicts | tracked as first-class artifacts in `knowledge/conflicts/` |
-| Tests | 46 files in `services/kb` alone |
+| Tests | 60 test files in `services/kb/tests` alone (`find services/kb/tests -name 'test_*.py' \| wc -l`) |
 
-Reproduce the counts:
+Reproduce the counts (output as of 2026-10-26):
 
 ```bash
 for d in knowledge/bundle/splitter_des_ewigen/*/; do
   printf "%-12s %s\n" "$(basename "$d")" \
     "$(find "$d" -maxdepth 1 -name '*.md' ! -name 'index.md' | wc -l)"
 done
+```
+
+```
+characters   27
+deities      38
+domains      16
+events       305
+factions     47
+items        215
+locations    208
+npcs         258
+sessions     68
 ```
 
 ---
@@ -114,7 +128,7 @@ but the pipeline derives speaker voice embeddings — biometric templates tied t
 named individuals (GDPR Art. 9) — plus the local roster mapping people to
 characters and sessions. Deriving that data from public audio does not make it
 public, so the stage that holds it stays private. Its architecture is summarised
-in [docs/PIPELINE.md](docs/PIPELINE.md).
+in [docs/CRAWL-STAGE-1.md](docs/CRAWL-STAGE-1.md).
 
 ---
 

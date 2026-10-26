@@ -7,9 +7,9 @@ Companion to [ADR-001](ADR-001-knowledge-layer.md) (OKF bundle in git = system o
 | Target piece | Exists today | State |
 |---|---|---|
 | Transcript pipeline | `pnp-crawl` | Built. 3 stages + QA audit scripts. **Gap:** final JSON has no quality score / `unsicher` markers (verified) — the signal the KB ingestion is supposed to weight is not machine-readable yet. |
-| Session reports | `pnp-report` | 26 curated German reports + roll CSVs, typed-ID vocabulary (`CHAR_/NPC_/LOC_/…`) — becomes the KB's canonical ID vocabulary. |
-| KB — GraphRAG candidate | `pnp-graph-service` | Mature: resolver/alias registry, bitemporal edges, vector retrieval, report reconciliation. Per ADR-001: source of the identity-layer design + future derived index; not the system of record. |
-| KB — OKF candidate | `okf-experiments-main` | Full-campaign bundle generated (42 sessions). Pipeline becomes the core of the KB service after porting the identity layer. ⚠ housekeeping: it's an unzipped `-main` drop (nested dir, committed `.venv`, a real `.env` with Azure credentials sitting in it) — make it a proper repo, never commit `.env`. |
+| Session reports | `pnp-knowledge/reports/` (was `pnp-report`) | 26 curated German reports + 25 roll CSVs (counts: `ls reports/*.md \| wc -l`, `ls reports/rolls/*.csv \| wc -l`, 2026-10-26). Typed-ID vocabulary (`CHAR_/NPC_/LOC_/…`) is the KB's canonical ID vocabulary. |
+| KB — GraphRAG candidate | `pnp-knowledge/graph/` (frozen, was `pnp-graph-service`) | Mature: resolver/alias registry, bitemporal edges, vector retrieval, report reconciliation. Per ADR-001: source of the identity-layer design + future derived index; not the system of record. |
+| KB — OKF candidate | `pnp-knowledge/services/kb` + `knowledge/` (was `okf-experiments-main`) | Built and running: 68 sessions ingested, 1114 entity concepts (counts and command in README "The corpus"; the 42-session figure was the 2026-07-22 snapshot). |
 | OKF spec + tooling | `knowledge-catalog` | Vendored Google reference (spec v0.2, viz, reference agent). Read-only dependency. |
 | Wiki agent | `pnp-fandom-service` | Skeleton: MediaWiki client + inventory stage + DRY_RUN/draft-namespace write gate built; extract/generate stages are stubs. Re-target them to read from the KB API instead of `reports/`. |
 | Summary/outlook service | `services/summary` | Built. Pre-session recap + ephemeral outlook CLI, grounded in the KB API. |
@@ -259,7 +259,7 @@ sequenceDiagram
     C->>K: POST /ingest/transcript {session_id, json + quality sidecar}
     K->>B: branch ingest/s27
     K->>K: extract (LLM, cached) -> resolve (typed IDs, alias registry)
-    K->>K: synthesize per touched concept (current body + new evidence)
+    K->>K: synthesize per touched concept (mentions + sources + excerpts; not the current body, see ADR-001 Outcome (2026-10))
     alt contradiction detected
         K->>B: write conflicts/<id>.md (both claims + citations)
     end
@@ -309,5 +309,5 @@ Dependencies flow downward; each phase is independently useful.
 5. **Where does the hoch/mittel/niedrig score actually live today?** Not in transcript JSON (verified). If it exists only in audit-script output or heads, P1's pnp-crawl work defines it; confirm the intended granularity (per-session score + per-segment `unsicher` assumed).
 6. ~~Hosting/visibility~~ **Resolved 2026-07-22:** local Windows box; monorepo `TimTyriell/pnp-graph-service` is private (verified via GitHub API) — campaign data may live there.
 7. ~~Review surface~~ **Resolved 2026-07-22:** GitHub PRs on the monorepo.
-8. **Risk — LLM synthesis overwrites human hand-edits:** mitigation is that synthesis always starts from the current concept body and the human sees the diff; still the most likely source of review fatigue. Watch in P1.
+8. **Risk — LLM synthesis overwrites human hand-edits:** synthesis never reads the current concept body; the concept file is regenerated each run, so hand edits to bundle files are lost. GM edits belong in `knowledge/entity_rules.yaml` and `knowledge/sources/` (ADR-001 Outcome (2026-10)). The human sees the diff at review; still the most likely source of review fatigue. Watch in P1.
 9. **Risk — review load:** every session = one branch review + conflict queue + (weekly) wiki proposals. If this exceeds ~30 min/week in practice, tighten what synthesis is allowed to touch before automating anything.

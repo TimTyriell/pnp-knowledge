@@ -10,9 +10,17 @@ of record), [ADR-002](ADR-002-repo-layout.md) (repo layout)
 
 The toolchain is three repos in a line: `pnp-crawl` (transcription) →
 `pnp-knowledge` (this repo, the memory) → `pnp-export-data` (the wiki output).
-Exactly one of those stages calls a language model on the campaign's content:
-the `pnp_okf` pipeline in `services/kb`, which extracts entities from
+Exactly one of those stages persists language-model output on the campaign's
+content: the `pnp_okf` pipeline in `services/kb`, which extracts entities from
 transcripts and synthesizes each concept's German body with DeepSeek.
+*Amended 2026-10-26:* `services/summary/summary.py` also calls DeepSeek, on
+KB-grounded session concepts, to write the pre-session recap (and an optional
+outlook). This is a deviation from the Decision's letter below. It is within its
+spirit because that output is ephemeral: it is printed for one use, never
+written to `knowledge/` or sent back to the KB, so the KB remains the only
+persisted LLM output. The outlook input (GM notes) is likewise never persisted,
+for spoiler safety. The publishing stages, where the Decision's reasons apply
+most strongly, have no model call.
 
 That places a natural boundary. What leaves the KB is not raw evidence needing
 interpretation — it is **already-synthesised, structured, cited German

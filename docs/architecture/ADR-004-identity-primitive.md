@@ -102,3 +102,8 @@ Adopt registry-issued ids when **any** of these holds:
    second appears.
 3. Dead rules exceed ~10% of `entity_rules.yaml` (currently 54 of ~570).
 4. Any re-extraction trips `check_rename_safety` at the 2% threshold again.
+   (It already happened once, from a cached re-emit with no model call on
+   2026-09-22: identity moves even without the model, because the registry kept
+   a mis-heard `canonical_name` next to a corrected id. See
+   [the override record](../audits/2026-09-22-rename-guard-override.md). That
+   strengthens the case for B1.)

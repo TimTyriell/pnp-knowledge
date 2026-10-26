@@ -6,6 +6,31 @@ rejected, the entry says so and why, so it is not re-proposed.
 
 ---
 
+## I-005 — Typed edges between concepts
+
+**Status:** proposed, 2026-10-26. Not scheduled. Source: the "typed edges"
+item in `knowledgeAnalysis.md` §3.1 (workspace root, not tracked here).
+
+Today `relationships[]` entries are `{target, note}` with no kind. That is a
+decision, not an oversight: `services/kb/src/pnp_okf/links.py` ("Deliberately
+untyped") records that a German keyword table classified 87% of the bullets as
+generic and produced false positives, and PLAN-okf-v0.2.md says "Decided:
+untyped edges now". The PR that shipped v0.2 (#13) is titled "typed
+relationships", which the code does not match. The title is history and stays.
+
+The review measured the edges as sparse and unread: 758 untyped edges cover 167
+of 1114 concepts, and no consumer reads `relationships` (figures from
+knowledgeAnalysis §3.1, written earlier; not re-measured here).
+
+**Proposal:** an optional `kind` (`ally_of`, `enemy_of`, `member_of`,
+`located_in`, `owns`, `killed`, `serves`), set only from a deterministic source or
+from transcript-grounded extraction, never from keyword matching. A typed edge
+set is the first structured relationship data worth having, and it makes
+ADR-001 revisit trigger 1 testable. It is a prompt change, so it belongs in the
+batch below.
+
+---
+
 ## I-004 — A live registry entry with no aliases has no anchor
 
 **Status:** proposed, 2026-09-22. Found by I-003's sample review, not by its
@@ -37,7 +62,7 @@ it recurs on every run until fixed — each one needing the same manual triage.
 
 **Sketch:** seed the reanchor candidates from `canonical_name` as well as
 `aliases`. One line. The reason it is filed rather than done: it changes
-resolution for all 1092 entities at once, so it needs a measured run and a
+resolution for all 1114 entities at once (count: README "The corpus"), so it needs a measured run and a
 ratchet re-read, not a drive-by edit. Note it would also have prevented most of
 the seven `merge:` rules added in `0e90b31`, which are a workaround for this.
 
@@ -197,3 +222,24 @@ for *all* sessions, so this is worth doing only for sessions not yet extracted
 Layer 1 touches `pnp-crawl`, layer 2 touches `services/kb`. They share only a
 generated name list — no build or import coupling, consistent with the
 three-repo split in ADR-002.
+
+---
+
+## Batch with the next SYNTH_PROMPT_VERSION bump
+
+Prompt-text fixes that change synthesis output. Each one re-synthesises every
+body, so they go in together, behind one version bump (`test_prompt_pins.py`
+enforces the bump). Add items here instead of shipping them alone.
+
+- **Relative vs absolute links.** `SYNTH_SYSTEM` in
+  `services/kb/src/pnp_okf/prompts.py` says "Beginne Pfade NIEMALS mit /", so
+  it asks for document-relative links. The emitter and the bundle convention
+  are bundle-absolute. Measured 2026-10-26 over the concept files: 6583
+  absolute links and 1 relative link
+  (`knowledge/bundle/splitter_des_ewigen/deities/tarvok_der_erdrichter.md`).
+  The 1 is a label with nested brackets, which the `_LINK_RE` used by
+  `normalize_body` and `validate` cannot match, so it is neither normalised nor
+  counted. Fix: change the prompt line to ask for bundle-absolute paths, then
+  bump `SYNTH_PROMPT_VERSION`. Reproduce the absolute count:
+  `find knowledge/bundle/splitter_des_ewigen -name '*.md' ! -name index.md ! -name log.md -print0 | xargs -0 grep -hoE '\]\(/[^)]*\.md\)' | wc -l`,
+  and the relative count with `'\]\((\.\.?/)[^)]*\.md\)'`.
