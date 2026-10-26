@@ -93,3 +93,29 @@ What the decision actually bought, against what it predicted:
 - **The consumer story held.** `pnp-export-data` runs as a pure API client and
   never touches the bundle; [ADR-003](ADR-003-no-llm-downstream.md) makes that
   boundary explicit.
+
+## Outcome (2026-10)
+
+Appended 2026-10-26 after checking the decision's claims against the code. The
+decision stands; four statements above do not match the running system.
+
+- **Counts.** 68 sessions and 1114 entity concepts as of 2026-10-26. Command
+  and output: [README.md](../../README.md#the-corpus) ("Reproduce the counts").
+  The 1092 / 66 figures above are the 2026-09-05 snapshot.
+- **Tags (§1 "a tag per session").** The repo had 0 git tags on 2026-10-26, so
+  `as_of` reads cannot resolve yet. Tagging is a manual step: see
+  [docs/RELEASING.md](../RELEASING.md). As-of reads are only as good as the tags.
+- **Synthesis input (§3 "receives the current concept").** False. Synthesis
+  does not read the current concept body. `synthesize_entity_body` takes the
+  mentions, `knowledge/sources/` material, transcript excerpts and secondary
+  rulings (`services/kb/src/pnp_okf/synthesize.py`). The concept file is
+  regenerated on every run, and `context.py` (header) says hand-written prose
+  added to a bundle file is overwritten. GM edits go to
+  `knowledge/entity_rules.yaml` and `knowledge/sources/` (`ENTSCHEIDUNG:` and
+  `DARSTELLUNG:` sections), never to bundle files. Conflicts are still written
+  to `conflicts/`; they are not resolved by rewriting the prose.
+- **Per-session `## Historie` bullets (Consequences).** Not implemented. No
+  code emits `## Historie`. The deep tier emits `## Chronologie` instead
+  (`SYNTH_TIER_GUIDANCE` in `services/kb/src/pnp_okf/prompts.py`). The planned
+  T6 and T7 work adds `## Verlauf` and `## Stand` sections
+  ([T6](../plans/T6-thread-concepts.md), [T7](../plans/T7-world-status-and-attitude.md)).
