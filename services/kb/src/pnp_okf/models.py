@@ -58,6 +58,19 @@ DIR_TO_TYPE: dict[str, EntityType] = {d: t for t, d in TYPE_DIR.items()}
 THREAD_KINDS: tuple[str, ...] = ("quest", "mystery", "promise", "debt", "deadline")
 THREAD_STATUSES: tuple[str, ...] = ("open", "resolved", "abandoned")
 
+# World status (T00 §4.6): the values each directory may carry. A directory
+# missing here (deities, domains, threads, sessions) carries none.
+_PERSON_STATUS = frozenset({"alive", "dead", "missing", "captured", "transformed"})
+WORLD_STATUS_BY_DIR: dict[str, frozenset[str]] = {
+    "characters": _PERSON_STATUS,
+    "npcs": _PERSON_STATUS,
+    "factions": frozenset({"alive", "missing", "destroyed"}),
+    "items": frozenset({"destroyed"}),
+    "locations": frozenset({"destroyed"}),
+}
+# Attitude (T00 §4.7) is only meaningful on NPCs and factions.
+ATTITUDE_DIRS: frozenset[str] = frozenset({"npcs", "factions"})
+
 
 # Typed-ID prefix per entity type — the pnp-report vocabulary (CHAR_/NPC_/
 # LOC_/FACTION_/EVENT_) shared across the campaign toolchain. The frontmatter

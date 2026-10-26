@@ -33,6 +33,7 @@ from pnp_okf.emit import (
     emit_sessions,
     emit_threads,
     event_anchors,
+    insert_before_belege,
     mention_concept_index,
     prune_conflicts,
     prune_orphans,
@@ -66,8 +67,10 @@ from pnp_okf.state import (
     build_glossary,
     load_glossary,
     load_thread_rules,
+    render_stand_section,
     render_state_report,
     run_state,
+    world_state_by_concept,
     write_glossary,
 )
 from pnp_okf.synthesize import (
@@ -586,6 +589,17 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     if not partial_run:
         edges = relationship_edges(bodies, index, {e.concept_id for e in entities})
 
+    # T7: world status and attitude, folded from the same ledger as the threads
+    # above. A partial run has no full fold, so it writes none (as for threads).
+    names = NameIndex(entities)
+    world, world_unmatched = (
+        world_state_by_concept(ledger, names, episodes) if not partial_run else ({}, [])
+    )
+    titles = {e.concept_id: e.canonical_name for e in entities}
+    for cid, fragment in world.items():
+        if cid in bodies:
+            bodies[cid] = insert_before_belege(bodies[cid], render_stand_section(fragment, titles))
+
     for entity in entities:
         unresolved, conflicts = emit_entity(
             paths.bundle_dir, entity, bodies[entity.concept_id], index,
@@ -593,7 +607,8 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
             verified=entity.concept_id in verified_ids,
             relationships=(None if partial_run else edges.get(entity.concept_id, [])),
             teams=teams_for([m.url for m in entity.mentions], episodes),
-            extra_frontmatter=roster.get(entity.concept_id),
+            # T8 roster fields and T7 world state share the additive hook.
+            extra_frontmatter={**roster.get(entity.concept_id, {}), **world.get(entity.concept_id, {})} or None,
         )
         unresolved_total += len(unresolved)
         if conflicts:
@@ -622,14 +637,14 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     # T6: thread concepts come before the sessions too -- their "Offene Fäden"
     # links must already exist on disk (same ordering rule as above).
     thread_written, thread_unmatched = emit_threads(
-        paths.bundle_dir, list(ledger.threads.values()), NameIndex(entities), episodes, index,
+        paths.bundle_dir, list(ledger.threads.values()), names, episodes, index,
     )
     if state_complete:
         pruned_threads = prune_threads(paths.bundle_dir, set(thread_written))
         if pruned_threads:
             log.info("Pruned %d thread concept(s) the state pass no longer produces.", pruned_threads)
     if not partial_run:
-        _write_unmatched(paths.conflicts_dir, thread_unmatched + ledger.warnings)
+        _write_unmatched(paths.conflicts_dir, thread_unmatched + world_unmatched + ledger.warnings)
 
     session_entries = emit_sessions(
         paths.bundle_dir, tmap, extractions, index, episodes,

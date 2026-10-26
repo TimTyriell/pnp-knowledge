@@ -31,7 +31,7 @@ from pnp_okf.okf import (
     write_if_changed,
     write_index,
 )
-from pnp_okf.state import NameIndex, ThreadRecord
+from pnp_okf.state import EVIDENCE_DE, NameIndex, ThreadRecord
 from pnp_okf.synthesize import _BELEGE_HEADING_RE, render_belege_section
 
 log = logging.getLogger(__name__)
@@ -666,9 +666,6 @@ _THREAD_KIND_DE = {
     "quest": "Auftrag", "mystery": "Rätsel", "promise": "Versprechen",
     "debt": "Schuld", "deadline": "Frist",
 }
-_THREAD_EVIDENCE_DE = {
-    "observed": "beobachtet", "claimed": "behauptet", "rumor": "Gerücht", "speculation": "Vermutung",
-}
 _THREAD_GROUPS = (("open", "Offen"), ("resolved", "Erledigt"), ("abandoned", "Aufgegeben"))
 
 
@@ -690,6 +687,17 @@ def threads_by_session(
                 (thread.thread_id, thread.title, thread_step_word(i, status), entry.note)
             )
     return out
+
+
+def insert_before_belege(body: str, section: str) -> str:
+    """T7: put ``section`` directly above the ``# Belege`` heading, or at the end."""
+
+    if not section:
+        return body
+    m = _BELEGE_HEADING_RE.search(body)
+    if not m:
+        return f"{body.rstrip()}\n\n{section}\n"
+    return f"{body[:m.start()].rstrip()}\n\n{section}\n\n{body[m.start():]}"
 
 
 def _thread_description(thread: ThreadRecord) -> str:
@@ -727,7 +735,7 @@ def emit_threads(
         verlauf = []
         for i, ((status, e), marker) in enumerate(zip(thread.entries, markers, strict=True)):
             word = thread_step_word(i, status)
-            evidence = _THREAD_EVIDENCE_DE.get(e.evidence, e.evidence)
+            evidence = EVIDENCE_DE.get(e.evidence, e.evidence)
             verlauf.append(
                 f"- **[{marker}]** Session {e.date} @ {e.citation_ts} — {word}: {e.note} _({evidence})_"
             )
