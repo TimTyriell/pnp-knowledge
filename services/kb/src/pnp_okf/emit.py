@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import logging
 import re
+from dataclasses import dataclass
 from datetime import UTC, datetime
 from pathlib import Path
 
@@ -209,6 +210,30 @@ def _lead_text(body: str) -> str:
 # --- session concepts -------------------------------------------------------
 
 
+@dataclass(frozen=True)
+class EventAnchor:
+    """One Event rendered inside its session note instead of as a concept (T4)."""
+
+    title: str
+    subtype: str
+    citation_ts: str
+    note: str
+
+
+def event_anchors(entities: list[CanonicalEntity]) -> dict[str, list[EventAnchor]]:
+    """``session_id -> anchors`` ordered by timestamp, for emit_sessions."""
+
+    out: dict[str, list[EventAnchor]] = {}
+    for e in entities:
+        for m in e.mentions:
+            out.setdefault(m.session_id, []).append(
+                EventAnchor(e.canonical_name, e.subtype, m.citation_ts, m.note.strip())
+            )
+    for anchors in out.values():
+        anchors.sort(key=lambda a: a.citation_ts)
+    return out
+
+
 def emit_sessions(
     bundle_dir: Path,
     transcripts: dict[str, SessionTranscript],
@@ -216,11 +241,15 @@ def emit_sessions(
     index: ConceptIndex | None = None,
     episodes: Episodes | None = None,
     mention_concept_ids: dict[tuple[str, str, str], str] | None = None,
+    anchors: dict[str, list[EventAnchor]] | None = None,
 ) -> list[tuple[str, str, str]]:
     """Write one ``sessions/<date>.md`` concept per session.
 
     When ``index`` is given, cross-links inside the recap are normalized
     against the concept set. Returns index entries ``(title, url, description)``.
+
+    ``anchors`` (T4): Events that are not concepts, rendered as a
+    ``# Ereignisse`` section of ``###`` headings so each has a stable anchor.
 
     ``mention_concept_ids`` (from :func:`mention_concept_index`) is the
     resolved concept id for each mention, keyed by ``(session_id,
@@ -284,6 +313,12 @@ def emit_sessions(
             "",
             extraction.recap.strip(),
         ]
+        session_anchors = (anchors or {}).get(session_id, [])
+        if session_anchors:
+            body_parts += ["", "# Ereignisse"]
+            for a in session_anchors:
+                meta = " · ".join(p for p in (a.subtype, a.citation_ts) if p)
+                body_parts += ["", f"### {a.title}", f"_{meta}_", "", a.note]
         if intro_lines:
             body_parts += ["", "# Auftretende Entitäten", "", *intro_lines]
         body_parts += [

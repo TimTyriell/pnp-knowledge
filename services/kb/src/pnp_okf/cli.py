@@ -31,6 +31,7 @@ from pnp_okf.emit import (
     emit_indexes,
     emit_log,
     emit_sessions,
+    event_anchors,
     mention_concept_index,
     prune_conflicts,
     prune_orphans,
@@ -39,9 +40,15 @@ from pnp_okf.episodes import Episodes, citation_labels, relabel_citations, teams
 from pnp_okf.extract import extract_session, load_cached_extraction
 from pnp_okf.ingest import load_transcripts
 from pnp_okf.links import relationship_edges
-from pnp_okf.models import CanonicalEntity, SessionExtraction, SessionTranscript
+from pnp_okf.models import (
+    CanonicalEntity,
+    EntityType,
+    SessionExtraction,
+    SessionTranscript,
+)
 from pnp_okf.resolve import (
     load_autolink_block,
+    load_event_concepts,
     load_spellings,
     require_rules,
     resolve_entities,
@@ -392,6 +399,22 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     if args.clean and paths.bundle_dir.exists():
         shutil.rmtree(paths.bundle_dir)
 
+    # T4: an Event is a concept only when entity_rules.yaml says so; the rest
+    # are scene anchors inside their session note. The rename guard above
+    # deliberately saw *all* entities -- identity is unchanged, only what we
+    # emit as a file is.
+    event_concepts = load_event_concepts(registry_path)
+    anchored = [
+        e for e in entities
+        if e.type == EntityType.EVENT and e.concept_id not in event_concepts
+    ]
+    anchored_ids = {e.concept_id for e in anchored}
+    entities = [e for e in entities if e.concept_id not in anchored_ids]
+    log.info(
+        "[events] %d event concept(s) kept, %d rendered as session anchors",
+        sum(1 for e in entities if e.type == EntityType.EVENT), len(anchored),
+    )
+
     # Extra grounding for synthesis: world material that never appears in a
     # transcript, plus original dialogue for the entries that warrant depth.
     source_sections = load_sources(paths.sources_dir)
@@ -534,6 +557,7 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     session_entries = emit_sessions(
         paths.bundle_dir, tmap, extractions, index, episodes,
         mention_concept_ids=mention_concept_index(entities),
+        anchors=event_anchors(anchored),
     )
 
     settled = prune_conflicts(paths.conflicts_dir, open_conflicts)

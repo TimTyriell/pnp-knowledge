@@ -1374,3 +1374,44 @@ alias_block:
   # generic noun is dropped. Same precedent as amulett/ende/flüchtlinge above.
   locations/ehrenfels:
   - die stadt
+
+# event_concepts: Event ids that get their own concept file. Every other
+# Event is a scene anchor in its session note (docs/plans/T4-event-anchors.md).
+# Add an id here when an event spans sessions (an arc -- fold its pieces with
+# merge:), is a turning point other pages link to, or has a wiki page.
+# PENDING GM APPROVAL (T4 step 3): proposed from the candidates report
+# (docs/audits/2026-10-26-event-candidates.md). events/tod_von_rotunas is left
+# out by default: an NPC's retelling, so it stays a scene anchor.
+event_concepts:
+- events/verhandlung_mit_harl
+- events/schlacht_um_ehrenfels
+- events/zerstoerung_des_rings
+- events/hinrichtung_des_werwolfs
+- events/tod_des_seraphen
+- events/angriff_der_untoten_auf_die_karawane
+- events/begegnung_mit_landra
+- events/erkundung_des_dungeons
+- events/explosion_der_gnoll_leichen
+- events/flucht_durch_das_portal
+- events/kampf_gegen_dormak
+- events/konfrontation_vor_der_kapelle
+- events/lunaras_gedanken_zauber
+- events/pakt_mit_huludan
+- events/reise_zu_den_sanddorn_inseln
+- events/rueckzug_aus_dem_dungeon
+- events/verhandlung_mit_spitzzahn
+- events/vision_von_joran
+- events/hinrichtung_am_stadttor
+- events/lunaras_sturz_und_wiederbelebung
+- events/tod_des_grottenschrats
+- events/tod_des_kenku
+- events/tod_des_verwundeten_boten
+- events/tod_und_wiederbelebung_des_soldaten
+- events/tod_von_esterossa
+- events/tod_von_lionel_magno
+- events/tod_von_luli
+- events/tod_von_nifty_und_hellum
+- events/tod_von_sandro_und_voras
+- events/toetung_des_goblin_kindes
+- events/zerstoerung_des_kristallmagiers
+- events/zerstoerung_von_voras_durch_nerash

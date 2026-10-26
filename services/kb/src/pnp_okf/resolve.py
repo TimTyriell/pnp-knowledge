@@ -618,6 +618,18 @@ def _load_important(registry_path: Path) -> set[str]:
     return (flagged - suppressed) - {""}
 
 
+def load_event_concepts(registry_path: Path) -> set[str]:
+    """``event_concepts:`` -- the Event ids that are emitted as concepts.
+
+    Everything else of type Event becomes a scene anchor in its session note
+    (T4). Read through _registry_data like every other family (PIPELINE.md
+    §5), never from the registry file alone.
+    """
+
+    data = _registry_data(registry_path)
+    return {str(c).strip() for c in (data.get("event_concepts") or [])} - {""}
+
+
 def resolve_entities(
     extractions: dict[str, SessionExtraction],
     transcripts: dict[str, SessionTranscript],
