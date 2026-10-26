@@ -18,6 +18,7 @@ from pnp_okf.state import (
     load_glossary,
     render_glossary,
     render_open_threads,
+    render_state_report,
     write_glossary,
 )
 
@@ -130,3 +131,18 @@ def test_render_glossary_is_byte_identical_across_calls():
     first, second = render_glossary(rows), render_glossary(rows)
     assert first == second
     assert first == "- NPC: Xenia (auch: Xen, X)\n- Item: Schwert"
+
+
+# --- review report (commit 4) ----------------------------------------------
+
+def test_report_lists_each_thread_status_change_and_warning():
+    led = Ledger()
+    led.apply("s1", "2026-01-01", "u", SessionState(
+        threads=[_t()],
+        status_changes=[StatusChange(name="Rotunas", value="dead", note="n", citation_ts="02:02:27")],
+    ))
+    led.apply("s2", "2026-01-08", "u", SessionState(threads=[_t("threads/gibts_nicht", "Y")]))
+    text = render_state_report(led)
+    assert "threads/evakuierung" in text and "threads/y" in text
+    assert "Rotunas" in text and "dead" in text
+    assert "unknown thread id" in text

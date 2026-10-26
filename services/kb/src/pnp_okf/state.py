@@ -20,6 +20,7 @@ from __future__ import annotations
 import hashlib
 import json
 import logging
+from collections import Counter
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Literal
@@ -344,3 +345,37 @@ def run_state(
             run.cached += 1
         run.ledger.apply(t.session_id, t.date, t.url, state)
     return run
+
+
+def _bullets(items: list[str]) -> list[str]:
+    return [f"- {i}" for i in items] or ["- keine"]
+
+
+def render_state_report(ledger: Ledger) -> str:
+    """Plain markdown for the human who reviews a state run (T5 §4.2). Pure."""
+
+    counts = Counter((t.kind, t.status) for t in ledger.threads.values())
+    out = ["# Zustand (pnp state)", "", "## Zählung", ""]
+    out += _bullets([f"{kind} / {status}: {n}" for (kind, status), n in sorted(counts.items())])
+    out += ["", "## Fäden", "",
+            "| id | kind | status | opened | resolved | entries | title |",
+            "|---|---|---|---|---|---|---|"]
+    for t in sorted(ledger.threads.values(), key=lambda r: r.thread_id):
+        out.append(f"| {t.thread_id} | {t.kind} | {t.status} | {t.opened} | "
+                   f"{t.resolved or ''} | {len(t.entries)} | {t.title} |")
+    out += ["", "## Statuswechsel", ""]
+    out += _bullets([
+        f"{s.name} -> {s.value} ({s.entry.evidence}"
+        f"{', ' + s.claimed_by if s.claimed_by else ''}), "
+        f"{s.entry.session_id} @ {s.entry.citation_ts}: {s.entry.note}"
+        for s in ledger.statuses
+    ])
+    out += ["", "## Haltungen", ""]
+    out += _bullets([
+        f"{a.name} -> {a.toward}: {a.value} ({a.entry.evidence}), "
+        f"{a.entry.session_id} @ {a.entry.citation_ts}: {a.entry.note}"
+        for a in ledger.attitudes
+    ])
+    out += ["", "## Warnungen", ""]
+    out += _bullets(ledger.warnings)
+    return "\n".join(out) + "\n"

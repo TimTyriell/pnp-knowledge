@@ -81,6 +81,29 @@ is the only path to a bundle, and with warm caches it is nearly free.
 
 ---
 
+## 3a. `pnp state` — the state pass (T5)
+
+Separate subcommand, not a stage of `pnp run` (T00 D4). Design: T00 §4.5–§5.
+
+- **What:** per session, the model reports only what *changed*: threads (quest,
+  mystery, promise, debt, deadline), status changes, attitude changes, each with
+  an evidence kind (observed / claimed / rumor / speculation).
+- **Sequential by session date.** Each prompt lists the threads still open, and
+  the model answers with an existing `thread_id` or `NEU`. Code mints the id
+  once, so identity never comes from the model's wording.
+- **Cache key:** prompt version, model, session dialogue, a hash of the frozen
+  glossary, and a hash of the open-thread list the prompt showed. Cache files:
+  `.cache/state/<session>/<key>.json`.
+- **Glossary:** frozen in `knowledge/state_glossary.yaml`, written only by
+  `pnp state --refresh-glossary`. A live read of the registry would change every
+  key on every `pnp run`.
+- **`pnp run` never calls the state model.** Emitting from the cache is T6/T7.
+- **Cost:** ~$2–4 for a full pass on `deepseek-v4-pro`. `pnp state --estimate`
+  is free and reports cached vs. uncached sessions.
+- **Cascade:** an edit to an early session, or to the glossary, re-runs every
+  later session. That is correct (their prompts depended on it) and it is the
+  price of sequential identity.
+
 ## 4. Identity — the chain everyone re-derives
 
 **A concept_id is derived from the LLM's chosen wording.** This is the root of
@@ -407,6 +430,7 @@ time, it does not close the gap.
 | bump `EXTRACT_PROMPT_VERSION` or change an extraction prompt | §6 — this is a **budgeted event**, ~$6.5 (re-extraction + id churn) |
 | change a synthesis prompt (`SYNTH_*`) | §6 — bump `SYNTH_PROMPT_VERSION` only: re-synthesis, no re-extraction, no id churn |
 | change the model | §6 — same cost as a prompt bump |
+| touch the state pass (`state.py`, `STATE_*` prompts) | T00 §5 — `STATE_PROMPT_VERSION` bump re-runs `pnp state` only (~$2–4), never extraction |
 | reorder or add an emit step | §7 |
 | add a quality check | §9, §10 — and decide hard-0 vs ratchet *by measuring* |
 | make anything cheaper | §8 first, §6 second. The model name is rarely the answer |

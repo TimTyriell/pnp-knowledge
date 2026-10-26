@@ -98,3 +98,31 @@ def test_cache_key_changes_when_the_glossary_changes():
 def test_state_tier_uses_the_state_model():
     cfg = replace(_cfg(), state_model="deepseek-v4-pro")
     assert cfg.for_tier("state").model == "deepseek-v4-pro"
+
+
+def test_cli_estimate_counts_uncached_sessions_and_builds_no_client(tmp_path, monkeypatch, capsys):
+    import pnp_okf.state as state_mod
+    from pnp_okf.cli import main
+    from pnp_okf.state import write_glossary
+
+    def _no_client(cfg):
+        raise AssertionError("pnp state --estimate must not build an LLM client")
+
+    monkeypatch.setenv("DEEPSEEK_API_KEY", "x")
+    monkeypatch.setattr(state_mod, "build_client", _no_client)
+
+    transcripts = tmp_path / "transcripts"
+    transcripts.mkdir()
+    for name, date in [("2026-01-01_a.json", "2026-01-01"), ("2026-01-08_b.json", "2026-01-08")]:
+        (transcripts / name).write_text(json.dumps({
+            "video_date": date, "video_url": "u",
+            "segments": [{"start": 0, "end": 1, "speaker": "A", "text": "Hallo"}],
+        }), encoding="utf-8")
+    knowledge = tmp_path / "knowledge"
+    knowledge.mkdir()
+    write_glossary(knowledge, GLOSS)
+
+    rc = main(["state", "--estimate", "--transcripts", str(transcripts),
+               "--bundle", str(knowledge / "bundle" / "splitter"), "--cache", str(tmp_path / "cache")])
+    assert rc == 0
+    assert "0 cached, 2 would be called" in capsys.readouterr().out
