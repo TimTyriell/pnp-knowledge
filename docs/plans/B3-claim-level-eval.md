@@ -34,8 +34,9 @@ a rules misreading (Dodo "1 HP"). This eval can.
   that carries a citation marker or sits in a single-source entity.
 - **Sampling:**
   - `random.Random(seed)`, seed recorded in the file;
-  - strata: type ∈ {Character, NPC, Location, Item, Faction, Event/anchor,
-    Thread}, crossed with tier ∈ {brief, standard, deep};
+  - strata: every entity type present in the claim pool (today Character,
+    NPC, Location, Item, Faction, Event, Deity, Domain; Thread joins on its
+    own once T6 adds the type), crossed with tier ∈ {brief, standard, deep};
   - target 60 claims, at least 5 per non-empty type;
   - skip sentences under 6 words.
 - **Evidence shown to the labeller:** transcript lines in ±90 s of the
