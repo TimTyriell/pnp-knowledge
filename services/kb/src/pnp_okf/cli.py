@@ -55,6 +55,14 @@ from pnp_okf.resolve import (
     write_registry,
 )
 from pnp_okf.roster import load_roster
+from pnp_okf.state import (
+    GLOSSARY_FILENAME,
+    build_glossary,
+    load_glossary,
+    render_state_report,
+    run_state,
+    write_glossary,
+)
 from pnp_okf.synthesize import (
     _cache_key as synth_cache_key,
 )
@@ -825,6 +833,41 @@ def cmd_validate(args: argparse.Namespace) -> int:
     return 0 if args.non_strict else 1
 
 
+def cmd_state(args: argparse.Namespace) -> int:
+    """Threads, status changes and attitudes per session (T5). Costs money
+    unless every session is cached -- run with --estimate first."""
+
+    paths = Paths.resolve(args.transcripts, args.bundle, args.cache)
+    if args.session:
+        log.error("pnp state is sequential: use --limit N (the first N sessions), not --session.")
+        return 2
+    if args.refresh_glossary:
+        rows = build_glossary(paths.registry_path)
+        out = write_glossary(paths.knowledge_root, rows)
+        log.info("Wrote %d glossary entries to %s -- every session's state key changes.", len(rows), out)
+        return 0
+    rows = load_glossary(paths.knowledge_root)
+    if not rows:
+        log.error("No %s yet -- run `pnp state --refresh-glossary` first.", GLOSSARY_FILENAME)
+        return 2
+    cfg = DeepSeekConfig.from_env().for_tier("state")
+    transcripts = sorted(load_transcripts(paths.transcript_dir), key=lambda t: (t.date, t.session_id))
+    if args.limit:
+        transcripts = transcripts[: args.limit]
+    run = run_state(transcripts, cfg, paths.cache_dir, rows, estimate=args.estimate)
+    if args.estimate:
+        print(f"{run.cached} cached, {run.uncached_estimate} would be called on {cfg.model}.")
+        return 0
+    report = render_state_report(run.ledger)
+    out = paths.cache_dir / "state" / "ledger_report.md"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(report, encoding="utf-8")
+    log.info("%d called, %d cached; report: %s", run.called, run.cached, out)
+    for w in run.ledger.warnings:
+        log.warning("[state] %s", w)
+    return 0
+
+
 def _add_common(p: argparse.ArgumentParser) -> None:
     p.add_argument("--transcripts", help="Directory of *.json transcripts")
     p.add_argument("--bundle", help="Output bundle directory")
@@ -896,6 +939,13 @@ def _build_parser() -> argparse.ArgumentParser:
     extract = sub.add_parser("extract", help="Extraction stage only (fills cache)")
     _add_common(extract)
     extract.set_defaults(func=cmd_extract)
+
+    state = sub.add_parser("state", help="Threads/status/attitude pass (T5; costs money)")
+    _add_common(state)
+    state.add_argument("--estimate", action="store_true", help="Count uncached sessions; call nothing")
+    state.add_argument("--refresh-glossary", action="store_true",
+                       help="Rewrite knowledge/state_glossary.yaml from the registry (invalidates the state cache)")
+    state.set_defaults(func=cmd_state)
 
     dedup = sub.add_parser(
         "dedup", help="Propose entity merges for review (writes a report only)"

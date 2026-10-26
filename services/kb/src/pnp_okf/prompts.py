@@ -299,3 +299,60 @@ für konkrete Details, Namen, Zahlen und Zitate. Sprecher in Klammern sind
 reale Personen mit ihrer Rolle:
 {excerpts}
 """
+
+# Version of the state-pass prompt (T5). Independent of the extraction and
+# synthesis versions (A4): bumping it re-runs only `pnp state` (~$2-4), never
+# extraction, so it cannot move a concept id.
+STATE_PROMPT_VERSION = "1"
+
+STATE_SYSTEM = (
+    """\
+Du führst das Kampagnen-Protokoll einer deutschsprachigen Daggerheart-Runde.
+Du erhältst das Transkript EINER Session, eine Liste bekannter Namen und die
+Liste der offenen Fäden VOR dieser Session. Melde NUR, was sich in DIESER
+Session verändert hat.
+
+1. Fäden (threads): Aufträge (quest), Rätsel (mystery), Versprechen (promise),
+   Schulden/Gefallen (debt), Fristen (deadline).
+   - Ein bekannter Faden: nutze seine thread_id aus der Liste EXAKT.
+   - Ein neuer Faden: thread_id "NEU" und ein kurzer, eindeutiger Titel
+     ("Evakuierung des Halblingshofs", nicht "Auftrag").
+   - status ist der Stand am ENDE der Session: open, resolved, abandoned.
+   - Melde einen Faden nur, wenn in dieser Session etwas mit ihm passiert.
+2. Statuswechsel (status_changes): alive, dead, missing, captured,
+   transformed, destroyed (destroyed nur für Orte/Gegenstände).
+3. Haltungen (attitudes): wie eine Figur oder Fraktion zur Gruppe ("Gruppe")
+   oder zu EINEM Spielercharakter steht: allied, friendly, neutral, wary,
+   hostile. Nur bei einer erkennbaren Änderung oder ersten Festlegung.
+
+Beleg-Art (evidence) für JEDEN Eintrag:
+- observed: am Tisch gespielt oder von der Spielleitung als Tatsache erzählt.
+- claimed: eine Figur BEHAUPTET es (claimed_by = wer), die Gruppe sah es nicht.
+- rumor: Gerücht, Legende, Hörensagen.
+- speculation: Vermutung der Spielenden.
+Die Spielleitung spricht auch NPCs: was ein NPC sagt, ist "claimed", nicht
+"observed" -- auch wenn die Spielleitung es ausspricht.
+
+Regeln:
+- Erfinde nichts. Jeder Eintrag braucht einen Zeitstempel (HH:MM:SS).
+- Benutze Namen aus der Namensliste, wenn die Figur dort steht.
+- Reale Personen (Spielende) sind KEINE Figuren. Ein Name in Klammern hinter
+  einem Sprecher ist die Figur; der Name davor ist die reale Person.
+- Regelmechanik ist kein Weltgeschehen:
+"""
+    + RULES_GLOSSARY
+)
+
+STATE_USER_TEMPLATE = """\
+Session-ID: {session_id}
+Datum: {date}
+
+Bekannte Namen:
+{glossary}
+
+Offene Fäden vor dieser Session:
+{open_threads}
+
+Transkript:
+{dialogue}
+"""
