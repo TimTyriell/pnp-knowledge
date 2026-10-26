@@ -8,11 +8,10 @@ name: Continuous Integration
 # repo-wide job would paint this repo permanently red for a failure nobody
 # intends to fix. When graph/ is thawed, unfreeze it here too.
 #
-# The checkout is deliberately NOT shallow: knowledge/ (the OKF bundle) is
-# tracked, and the bundle tests skip themselves when it is absent.
-# PNP_REQUIRE_BUNDLE=1 (see services/kb/tests/conftest.py) turns that skip into
-# a hard error, so a partial checkout fails loudly instead of passing by not
-# running.
+# knowledge/ (the OKF bundle) is not in this repo: it holds player names and
+# lives in its own private repo, cloned at knowledge/ on the machines that run
+# the pipeline. CI has no bundle, so the bundle tests skip here and run locally
+# with PNP_REQUIRE_BUNDLE=1 (see services/kb/tests/conftest.py).
 
 on:
   push:
@@ -27,9 +26,6 @@ on:
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
-
-env:
-  PNP_REQUIRE_BUNDLE: "1"
 
 jobs:
   lint:

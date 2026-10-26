@@ -69,10 +69,10 @@ flowchart TB
     V -->|"held or improved"| PASS["PASS"]:::floor
     V -->|"moved the right way"| TIGHTEN["tighten the baseline<br/>in the same commit"]:::floor
 
-    NOBUNDLE{{"bundle missing?<br/>shallow or partial checkout"}}:::guard
+    NOBUNDLE{{"bundle missing?<br/>CI, or private repo not cloned"}}:::guard
     SUITE -.-> NOBUNDLE
-    NOBUNDLE -->|"local dev"| SKIP["skip — correct"]
-    NOBUNDLE -->|"CI: PNP_REQUIRE_BUNDLE=1"| HARDFAIL["ERROR — the suite may not<br/>pass by vanishing"]:::guard
+    NOBUNDLE -->|"CI, public clone"| SKIP["skip — correct"]
+    NOBUNDLE -->|"local: PNP_REQUIRE_BUNDLE=1"| HARDFAIL["ERROR — the suite may not<br/>pass by vanishing"]:::guard
 ```
 
 ### Hard ceilings — must stay 0

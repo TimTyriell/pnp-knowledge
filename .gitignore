@@ -14,3 +14,7 @@ graph/state/
 graph/transcripts/**
 graph/compare/out/
 graph/docs/data_export/**
+
+# OKF bundle: its own private repo, cloned here (it holds player names).
+# The KB API finds that nested repo itself (git -C knowledge rev-parse).
+knowledge/
