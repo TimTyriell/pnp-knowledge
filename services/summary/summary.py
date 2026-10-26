@@ -37,8 +37,9 @@ Zusammenfassung "Was bisher geschah" vor der nächsten Session.
 Regeln:
 - Nutze AUSSCHLIESSLICH die bereitgestellten Session-Zusammenfassungen.
   Erfinde nichts, spekuliere nicht, extrapoliere nicht.
-- Schreibe kompakt und stimmungsvoll: 2-4 Absätze, dann eine kurze
-  Stichpunktliste "Offene Fäden" mit dem, was zuletzt ungelöst blieb.
+- Schreibe kompakt und stimmungsvoll: 2-4 Absätze.
+- Die Liste "Offene Fäden" wird separat aus der Wissensbasis angehängt — schreibe
+  KEINE eigene; beziehe dich höchstens im Fließtext darauf.
 - Wenn dir Informationen fehlen, lass sie weg, statt zu raten.
 """
 
@@ -53,30 +54,87 @@ GM-Kontext (vertraulich, nur für diesen Ausblick):
 """
 
 
-def fetch_sessions(kb_url: str, count: int, as_of: str | None) -> list[dict]:
-    """Latest ``count`` session concepts (sorted by date) with full bodies."""
+KIND_LABELS = {
+    "quest": "Auftrag",
+    "mystery": "Rätsel",
+    "promise": "Versprechen",
+    "debt": "Schuld",
+    "deadline": "Frist",
+}
+
+
+def _detail(client: httpx.Client, concept: str, as_of: str | None) -> dict:
+    detail_params = {"as_of": as_of} if as_of else {}
+    return client.get(f"/concepts/{concept}", params=detail_params).raise_for_status().json()
+
+
+def fetch_sessions(
+    kb_url: str,
+    count: int,
+    as_of: str | None,
+    team: str | None = None,
+    transport: httpx.BaseTransport | None = None,
+) -> list[dict]:
+    """Latest ``count`` session concepts (sorted by date) with full bodies.
+
+    With *team*, only that table's sessions (``team_letter``) are kept. The
+    filter needs every session's frontmatter, so it runs before ``count``
+    (T9: a Team-B recap must not show Team-A sessions).
+    """
 
     params = {"type": "Session"}
     if as_of:
         params["as_of"] = as_of
-    with httpx.Client(base_url=kb_url, timeout=30) as client:
+    with httpx.Client(base_url=kb_url, timeout=30, transport=transport) as client:
         listing = client.get("/concepts", params=params).raise_for_status().json()
         # Session concept paths are sessions/<date> — lexical sort = date sort.
-        latest = sorted(listing, key=lambda c: c["concept"])[-count:]
-        out = []
-        for item in latest:
-            detail_params = {"as_of": as_of} if as_of else {}
-            detail = (
-                client.get(f"/concepts/{item['concept']}", params=detail_params)
-                .raise_for_status()
-                .json()
-            )
-            out.append(detail)
-        return out
+        ordered = sorted(listing, key=lambda c: c["concept"])
+        if team:
+            details = [_detail(client, item["concept"], as_of) for item in ordered]
+            return [d for d in details if d["frontmatter"].get("team_letter") == team][-count:]
+        return [_detail(client, item["concept"], as_of) for item in ordered[-count:]]
+
+
+def fetch_open_threads(
+    kb_url: str,
+    as_of: str | None,
+    team: str | None,
+    transport: httpx.BaseTransport | None = None,
+) -> list[dict]:
+    """Open Thread concepts (T6), oldest first; filtered to one table when *team* is set.
+
+    Returns [] against a KB that predates threads, so the recap still works.
+    """
+
+    params = {"type": "Thread", "thread_status": "open"}
+    if as_of:
+        params["as_of"] = as_of
+    with httpx.Client(base_url=kb_url, timeout=30, transport=transport) as client:
+        listing = client.get("/concepts", params=params).raise_for_status().json()
+        threads = []
+        for item in listing:
+            fm = _detail(client, item["concept"], as_of)["frontmatter"]
+            if team and team not in (fm.get("teams") or []):
+                continue
+            threads.append({**fm, "concept": item["concept"]})
+    threads.sort(key=lambda t: (t.get("opened") or "", t.get("title") or ""))
+    return threads
+
+
+def render_threads(threads: list[dict]) -> str:
+    """Deterministic "Offene Fäden" list; the model never writes this one."""
+    if not threads:
+        return ""
+    lines = ["## Offene Fäden"]
+    for t in threads:
+        label = KIND_LABELS.get(t.get("kind"), t.get("kind") or "Faden")
+        seit = f" (seit {t['opened']})" if t.get("opened") else ""
+        lines.append(f"- {label}: {t.get('title', t['concept'])}{seit} — {t['concept']}")
+    return "\n".join(lines)
 
 
 def build_messages(
-    sessions: list[dict], outlook_context: str | None
+    sessions: list[dict], outlook_context: str | None, threads: list[dict] | None = None
 ) -> list[dict]:
     system = SYSTEM_PROMPT
     if outlook_context:
@@ -90,18 +148,31 @@ def build_messages(
             f"{s['body_md']}"
         )
     user = "Session-Zusammenfassungen (chronologisch):\n\n" + "\n\n".join(blocks)
+    if threads:
+        lines = []
+        for t in threads:
+            seit = f" (seit {t['opened']})" if t.get("opened") else ""
+            lines.append(f"- [{t.get('kind')}] {t.get('title')}{seit}")
+        user += (
+            "\n\nOffene Fäden laut Wissensbasis (gesichert, nicht verändern):\n"
+            + "\n".join(lines)
+        )
     return [
         {"role": "system", "content": system},
         {"role": "user", "content": user},
     ]
 
 
-def sources_footer(sessions: list[dict], as_of: str | None) -> str:
+def sources_footer(
+    sessions: list[dict], as_of: str | None, threads: list[dict] | None = None
+) -> str:
     lines = ["", "---", "Quellen (Knowledge-Base):"]
     for s in sessions:
         ref = f" @ {as_of}" if as_of else ""
         resource = s["frontmatter"].get("resource", "")
         lines.append(f"- {s['concept']}{ref} ({resource})")
+    for t in threads or []:
+        lines.append(f"- {t['concept']}")
     return "\n".join(lines)
 
 
@@ -133,10 +204,17 @@ def main(argv: list[str] | None = None) -> int:
         default=None,
         help="GM context for a look-ahead section (ephemeral, never persisted)",
     )
+    parser.add_argument(
+        "--team",
+        default=None,
+        help="Only this table's sessions and threads, e.g. A (letter, uppercased)",
+    )
     args = parser.parse_args(argv)
+    team = args.team.upper() if args.team else None
 
     try:
-        sessions = fetch_sessions(args.kb_url, args.sessions, args.as_of)
+        sessions = fetch_sessions(args.kb_url, args.sessions, args.as_of, team=team)
+        threads = fetch_open_threads(args.kb_url, args.as_of, team)
     except httpx.HTTPError as exc:
         print(
             f"KB API not reachable at {args.kb_url} ({exc}).\n"
@@ -148,9 +226,12 @@ def main(argv: list[str] | None = None) -> int:
         print("No session concepts in the KB.", file=sys.stderr)
         return 1
 
-    messages = build_messages(sessions, args.outlook)
+    messages = build_messages(sessions, args.outlook, threads=threads)
     print(call_llm(messages))
-    print(sources_footer(sessions, args.as_of))
+    block = render_threads(threads)
+    if block:
+        print("\n" + block)
+    print(sources_footer(sessions, args.as_of, threads))
     return 0
 
 
