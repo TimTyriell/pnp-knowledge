@@ -1422,3 +1422,9 @@ event_concepts:
 - events/tod_von_esterossa
 - events/lunaras_sturz_und_wiederbelebung
 - events/tod_von_lionel_magno
+
+# thread_rules: corrections to the state pass's threads (docs/plans/T6).
+# merge: loser -> winner; title: id -> name; status: id -> open|resolved|abandoned;
+# ignore: ids that are not threads. Thread ids come from the state pass's
+# ledger (pnp state report), never from a bundle file name typed by hand.
+thread_rules: {}
