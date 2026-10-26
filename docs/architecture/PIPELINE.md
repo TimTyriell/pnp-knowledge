@@ -92,6 +92,29 @@ is the only path to a bundle, and with warm caches it is nearly free.
 
 ---
 
+## 3a. `pnp state` — the state pass (T5)
+
+Separate subcommand, not a stage of `pnp run` (T00 D4). Design: T00 §4.5–§5.
+
+- **What:** per session, the model reports only what *changed*: threads (quest,
+  mystery, promise, debt, deadline), status changes, attitude changes, each with
+  an evidence kind (observed / claimed / rumor / speculation).
+- **Sequential by session date.** Each prompt lists the threads still open, and
+  the model answers with an existing `thread_id` or `NEU`. Code mints the id
+  once, so identity never comes from the model's wording.
+- **Cache key:** prompt version, model, session dialogue, a hash of the frozen
+  glossary, and a hash of the open-thread list the prompt showed. Cache files:
+  `.cache/state/<session>/<key>.json`.
+- **Glossary:** frozen in `knowledge/state_glossary.yaml`, written only by
+  `pnp state --refresh-glossary`. A live read of the registry would change every
+  key on every `pnp run`.
+- **`pnp run` never calls the state model.** Emitting from the cache is T6/T7.
+- **Cost:** ~$2–4 for a full pass on `deepseek-v4-pro`. `pnp state --estimate`
+  is free and reports cached vs. uncached sessions.
+- **Cascade:** an edit to an early session, or to the glossary, re-runs every
+  later session. That is correct (their prompts depended on it) and it is the
+  price of sequential identity.
+
 ## 4. Identity — the chain everyone re-derives
 
 **A concept_id is derived from the LLM's chosen wording.** This is the root of
@@ -362,6 +385,19 @@ This is also the gate for any cheaper extraction model: small models do not
 omit entity names, they **invent** them, so "can extraction move to flash" is a
 precision question and unanswerable without these labels.
 
+**Three measures, three blind spots.** *Name-level gold* (`test_extraction_quality.py`)
+asks whether the right entities were extracted; it cannot see whether a sentence
+about them is true. *Citation grounding* (`grounding.py`, A5) asks whether an
+entity's name is spoken near the cited timestamp; it cannot see whether what is
+said about it is right, and a name said in the wrong context still passes. *Claim-level
+eval* (`claim_sampler.py` + `pnp_okf/claims.py`, `test_claim_eval.py`, B3) asks whether a
+sampled sentence of the bundle is supported by the transcript window around its
+citation; it sees misattribution and retold-as-fact errors that the other two miss, but
+only as far as a human labeller reads it, and n=60 carries roughly ±12pp of noise.
+Draw a sample with `python claim_sampler.py --n 60 --seed 1234` (reads the cached
+extraction and transcripts, no model call). Committed claim files are scrubbed of
+player first names; the sampler refuses to write one that is not.
+
 ---
 
 ## 11. Traps that have actually bitten
@@ -418,6 +454,7 @@ time, it does not close the gap.
 | bump `EXTRACT_PROMPT_VERSION` or change an extraction prompt | §6 — this is a **budgeted event**, ~$6.5 (re-extraction + id churn) |
 | change a synthesis prompt (`SYNTH_*`) | §6 — bump `SYNTH_PROMPT_VERSION` only: re-synthesis, no re-extraction, no id churn |
 | change the model | §6 — same cost as a prompt bump |
+| touch the state pass (`state.py`, `STATE_*` prompts) | T00 §5 — `STATE_PROMPT_VERSION` bump re-runs `pnp state` only (~$2–4), never extraction |
 | reorder or add an emit step | §7 |
 | add a quality check | §9, §10 — and decide hard-0 vs ratchet *by measuring* |
 | make anything cheaper | §8 first, §6 second. The model name is rarely the answer |

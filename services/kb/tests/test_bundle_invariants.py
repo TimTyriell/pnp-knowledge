@@ -418,3 +418,25 @@ def test_positional_source_ids_only_go_down():
         f"session is missing from knowledge/episodes.yaml -- run "
         f"pnp-crawl/sync_episodes.py --write."
     )
+
+
+# Ratchet: real player names in titles/aliases/prose (T8, D1). The name list
+# is private (pnp-crawl groups/, via PNP_ROSTER_PRIVATE) and never committed,
+# so this runs locally only. Baseline is measured in T8 HUMAN RUN step 3;
+# until then it is None and the test skips. Only ever lower this.
+PLAYER_NAME_BASELINE: int | None = None
+
+
+def test_player_names_only_go_down():
+    from pnp_okf.validate import load_private_player_names, player_name_hits
+
+    names = load_private_player_names()
+    if names is None:
+        pytest.skip("PNP_ROSTER_PRIVATE not set -- player-name list is private, local only")
+    if PLAYER_NAME_BASELINE is None:
+        pytest.skip("PLAYER_NAME_BASELINE not measured yet -- T8 HUMAN RUN step 3")
+    hits = player_name_hits(BUNDLE, names)
+    assert len(hits) <= PLAYER_NAME_BASELINE, (
+        f"{len(hits)} player-name hit(s) (baseline {PLAYER_NAME_BASELINE}); "
+        f"first few (concept, where, name): {hits[:10]}"
+    )
