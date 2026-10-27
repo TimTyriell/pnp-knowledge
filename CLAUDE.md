@@ -18,10 +18,12 @@ Two systems live here, and the top level keeps them apart:
 **Active — the OKF knowledge base:**
 - **`knowledge/`** — ★ the **system of record**: the OKF campaign bundle
   (`bundle/splitter_des_ewigen/`), `entity_registry.yaml`, `conflicts/`,
-  `sources/`. Knowledge edits arrive via `ingest/s<NN>` branches that touch
-  only `knowledge/`, reviewed as PRs, tagged `s<NN>` per session on merge
-  (the tag is manual: see [docs/RELEASING.md](docs/RELEASING.md)).
-  Knowledge diffs are path-scoped: `git diff <ref>.. -- knowledge/`.
+  `sources/`. **Its own private repo** (`TimTyriell/pnp-knowledge-bundle`),
+  cloned here and gitignored: it holds player names and this repo is public.
+  Knowledge edits arrive via `ingest/s<NN>` branches in that repo, reviewed
+  as PRs, tagged `s<NN>` per session on merge (the tag is manual: see
+  [docs/RELEASING.md](docs/RELEASING.md)).
+  Knowledge diffs: `git -C knowledge diff <ref>..`.
 - **`services/kb/`** — the KB service: the `pnp_okf` OKF-distillation pipeline
   (transcripts → bundle, DeepSeek) plus the read-only HTTP API
   (`python -m pnp_okf.api`, 127.0.0.1:8070). Own `pyproject.toml`, own venv.
