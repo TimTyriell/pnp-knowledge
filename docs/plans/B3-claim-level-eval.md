@@ -34,8 +34,12 @@ a rules misreading (Dodo "1 HP"). This eval can.
   that carries a citation marker or sits in a single-source entity.
 - **Sampling:**
   - `random.Random(seed)`, seed recorded in the file;
-  - strata: type ∈ {Character, NPC, Location, Item, Faction, Event/anchor,
-    Thread}, crossed with tier ∈ {brief, standard, deep};
+  - strata: every entity type present in the claim pool (Character, NPC,
+    Location, Item, Faction, Event, Deity, Domain), crossed with tier ∈
+    {brief, standard, deep}. Threads are not an entity type: T6 writes
+    `threads/*.md` from the state pass, which the sampler does not read.
+    Drawing thread claims needs that source added, once a state pass has
+    run and `threads/` exists;
   - target 60 claims, at least 5 per non-empty type;
   - skip sentences under 6 words.
 - **Evidence shown to the labeller:** transcript lines in ±90 s of the

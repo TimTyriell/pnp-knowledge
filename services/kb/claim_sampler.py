@@ -7,9 +7,12 @@ calls DeepSeek. The claim -> citation mapping and the transcript window reuse
 the pipeline's own functions (resolve_entities, excerpts_for), so a claim is
 checked against the same dialogue the synthesis saw.
 
-Privacy: claim files are committed, so speaker labels are scrubbed before they
-are written (scrub_speaker) and the output is refused if any player first name
-survives (assert_no_player_names). The scrub is a decision recorded in
+Privacy: claim files are committed, so transcript windows are scrubbed before
+they are written (scrub_window) and the output is refused if any player first
+name survives in a window (assert_no_player_names). Claim sentences are not
+scrubbed: each is a verbatim sentence of a committed knowledge/ page, so
+scrubbing it hides nothing and only garbles an in-game name that happens to
+equal a player's. The scrub is a decision recorded in
 docs/plans/B3-claim-level-eval.md, not an accident of this script.
 """
 
@@ -64,10 +67,10 @@ def scrub_names(text: str, names: set[str]) -> str:
     """Replace whole-word player first names with 'Spieler'.
 
     Labels are not the only place a name survives: players introduce
-    themselves in dialogue ("Ich bin Christian") and the bundle's own claim
-    sentences carry some ("Celin erkennt ..."). The goal is that no player
-    first name lands in git, so the scrub covers every text field, not just
-    the label. Cost: an in-game name identical to a player's gets scrubbed too.
+    themselves in dialogue ("Ich bin Christian"). Only transcript text goes
+    through this; claim sentences already live in knowledge/.
+    Cost: in a window, an in-game name identical to a player's is scrubbed
+    too. The claim beside it keeps the name, so the labeller can still match.
     """
 
     if not names:
@@ -254,7 +257,7 @@ def main(argv: list[str] | None = None) -> None:
                 "concept": c["concept"],
                 "type": c["type"],
                 "tier": c["tier"],
-                "claim": scrub_names(c["claim"], names),
+                "claim": c["claim"],
                 "session": c["session"],
                 "at": c["at"],
                 "url_at": c["url_at"],
@@ -268,7 +271,7 @@ def main(argv: list[str] | None = None) -> None:
         {"seed": args.seed, "drawn": args.date, "pool_size": len(pool), "claims": claims},
         Dumper=_Dumper, allow_unicode=True, sort_keys=False, width=10_000,
     )
-    assert_no_player_names(rendered, names)
+    assert_no_player_names("\n".join(c["window"] for c in claims), names)
     sys.stdout.reconfigure(encoding="utf-8")
     sys.stdout.write(rendered)
 

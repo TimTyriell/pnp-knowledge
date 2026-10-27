@@ -135,7 +135,7 @@ in [docs/CRAWL-STAGE-1.md](docs/CRAWL-STAGE-1.md).
 ## Layout
 
 ```
-├── knowledge/            ★ SYSTEM OF RECORD — the OKF campaign bundle
+├── knowledge/            ★ SYSTEM OF RECORD — the OKF campaign bundle (own private repo, cloned here)
 │   ├── bundle/splitter_des_ewigen/   one markdown concept per entity
 │   ├── conflicts/                    open cross-source contradictions
 │   └── sources/                      campaign book + ingested custom docs

@@ -355,7 +355,8 @@ switched off.
 
 `pytest -q` on 2026-10-26: `412 passed, 2 skipped, 1 xfailed` (command in §1). Bundle-dependent ones are guarded by
 `skipif(not REGISTRY.exists())`; `conftest.py` turns that skip into a hard error
-when `PNP_REQUIRE_BUNDLE=1` (set in CI), so the suite cannot pass by vanishing.
+when `PNP_REQUIRE_BUNDLE=1`, so the suite cannot pass by vanishing. CI has no
+bundle (it lives in its own private repo at `knowledge/`), so set it locally.
 
 **Ratchet convention** (the repo's own policy, `test_canon_decisions.py:48`):
 a hard `0` invariant may never be moved; a movable baseline may only tighten,
@@ -420,7 +421,7 @@ player first names; the sampler refuses to write one that is not.
 cd services/kb
 
 .venv/Scripts/python.exe -m pytest -q                    # full suite
-PNP_REQUIRE_BUNDLE=1 .venv/Scripts/python.exe -m pytest  # CI mode: no silent skips
+PNP_REQUIRE_BUNDLE=1 .venv/Scripts/python.exe -m pytest  # bundle checked out: no silent skips
 
 .venv/Scripts/python.exe -m pnp_okf.cli check            # config + transcript count, no LLM
 .venv/Scripts/python.exe -m pnp_okf.cli run --estimate \

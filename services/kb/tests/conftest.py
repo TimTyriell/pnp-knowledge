@@ -4,10 +4,10 @@ Nine test files guard themselves with
 ``pytest.mark.skipif(not <bundle path>.exists(), reason="no bundle checked out")``.
 Locally that is right: no bundle, no bundle tests.
 
-In CI it is a trap. On a shallow or partial checkout the entire quality suite
-passes by not running, and a green badge that means "the tests vanished" is
-worse than a red one. Set PNP_REQUIRE_BUNDLE=1 in CI so a missing bundle is an
-error instead.
+Where the bundle should be there, it is a trap: a missing or half-cloned
+knowledge/ makes the entire quality suite pass by not running. Set
+PNP_REQUIRE_BUNDLE=1 on a machine with the bundle so its absence is an error.
+CI does not set it: the bundle is a private repo and CI has none.
 
 This keys off the skip *reason* rather than re-deriving the bundle path, so it
 stays correct however each file spells its own guard (registry file, conflicts

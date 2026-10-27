@@ -3,6 +3,11 @@
 **Status:** Accepted
 **Date:** 2026-07-22
 **Supersedes:** the layout notes in [ADR-001](ADR-001-knowledge-layer.md) §Decision and ARCHITECTURE §3.0
+**Amended 2026-10-26:** `knowledge/` left this repo for its own private repo
+(`TimTyriell/pnp-knowledge-bundle`), cloned at `knowledge/` and gitignored. The
+bundle holds player names and this repo is public. Still OKF-in-git; the KB API
+finds the nested repo with `git -C knowledge rev-parse`. Past commits here
+still contain the bundle; history was not rewritten.
 
 ## Context
 

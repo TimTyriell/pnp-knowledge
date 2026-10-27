@@ -49,16 +49,37 @@ def test_scrub_window_rewrites_every_line_and_leaks_no_first_name():
     assert out.startswith("--- Session 2025-06-10 ---")
 
 
-def test_scrub_also_covers_names_spoken_in_dialogue_and_claim_text():
-    # Players introduce themselves in dialogue; a bundle sentence can name one.
-    # Labels alone (the first scrub) would let these into git.
-    names = {"Christian", "Marco", "Celin"}
+def test_scrub_also_covers_names_spoken_in_dialogue():
+    # Players introduce themselves in dialogue. Labels alone (the first scrub)
+    # would let these into git.
+    names = {"Christian", "Marco"}
     window = "[00:02:28] Marco (Tibbet): Ja, ich bin Christian, ich spiele Tibbet."
     assert scrub_window(window, names) == (
         "[00:02:28] Spieler (Tibbet): Ja, ich bin Spieler, ich spiele Tibbet."
     )
-    assert scrub_names("Celin erkennt die Statuen.", names) == "Spieler erkennt die Statuen."
     assert scrub_names("Der Marcoline wartet.", names) == "Der Marcoline wartet."
+
+
+def test_claim_text_is_not_scrubbed_so_an_in_game_namesake_survives(monkeypatch, capsys):
+    # A claim is a verbatim knowledge/ sentence, already in git. Scrubbing it
+    # turned an NPC who shares a player's first name into "Spieler".
+    import claim_sampler
+
+    claim = {"concept": "npcs/celin", "type": "NPC", "tier": "brief",
+             "claim": "Celin erkennt die Statuen.", "session": "s", "at": "00:00:01",
+             "url_at": "u", "window": "[00:00:01] Celin (Dodo): Ich bin Celin."}
+    # main() setdefaults the key into os.environ; setenv first so it is undone.
+    monkeypatch.setenv("DEEPSEEK_API_KEY", "unused-offline-sampler")
+    monkeypatch.setattr(claim_sampler, "pick_stratified", lambda pool, n, seed: [claim])
+    monkeypatch.setattr(claim_sampler, "_player_first_names", lambda ts: {"Celin"})
+    for name in ("load_transcripts", "resolve_entities"):
+        monkeypatch.setattr(claim_sampler, name, lambda *a, **k: [])
+
+    claim_sampler.main(["--n", "1"])
+    out = capsys.readouterr().out
+
+    assert "claim: Celin erkennt die Statuen." in out
+    assert "[00:00:01] Spieler (Dodo): Ich bin Spieler." in out
 
 
 def test_the_output_gate_refuses_a_surviving_first_name():
