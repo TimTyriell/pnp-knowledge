@@ -315,6 +315,73 @@ def test_review_cannot_select_an_entry_outside_suggestion_candidates(client, mon
     assert response.status_code == 400
 
 
+def test_rejected_suggestions_survive_export_and_reimport(client, monkeypatch):
+    workspace = campaign(client)
+    workspace, source = prepared_job(
+        client,
+        workspace,
+        monkeypatch,
+        [
+            {"name": "Old Tower", "type": "Location", "note": "An old tower.", "citation_ts": "00:00:00"},
+        ],
+    )
+    proposal = workspace["proposals"][0]
+    reviewed = client.post(
+        f"/api/workspaces/{workspace['id']}/review",
+        json={
+            "base_revision": workspace["revision"],
+            "decisions": [{"id": proposal["id"], "action": "reject"}],
+        },
+    )
+    assert reviewed.status_code == 200, reviewed.text
+    exported = client.get(f"/api/workspaces/{workspace['id']}/export")
+    reopened = client.post("/api/workspaces/import?name=Reopened", content=exported.content)
+    assert reopened.status_code == 201, reopened.text
+    restored = reopened.json()
+    assert restored["proposals"][0]["status"] == "rejected"
+    assert restored["jobs"][0]["status"] == "ready"
+    assert restored["sources"][0]["id"] == source["id"]
+    monkeypatch.setattr("pnp_okf.config.DeepSeekConfig.from_env", lambda: object())
+    import workbench_api
+
+    monkeypatch.setattr(workbench_api, "start_worker", lambda *args: None)
+    response = client.post(f"/api/workspaces/{restored['id']}/sources/{source['id']}/process", json={"consent": True})
+    assert response.status_code == 202
+    assert len(response.json()["jobs"]) == 1
+
+
+def test_restore_requeues_accepted_suggestions_for_review(client, monkeypatch):
+    workspace = campaign(client)
+    original_revision = workspace["revision"]
+    workspace, _ = prepared_job(
+        client,
+        workspace,
+        monkeypatch,
+        [
+            {"name": "Old Tower", "type": "Location", "note": "An old tower.", "citation_ts": "00:00:00"},
+        ],
+    )
+    proposal = workspace["proposals"][0]
+    accepted = client.post(
+        f"/api/workspaces/{workspace['id']}/review",
+        json={
+            "base_revision": workspace["revision"],
+            "decisions": [{"id": proposal["id"], "action": "accept"}],
+        },
+    ).json()
+    assert accepted["proposals"][0]["status"] == "accepted"
+    restored = client.post(
+        f"/api/workspaces/{workspace['id']}/restore",
+        json={
+            "base_revision": accepted["revision"],
+            "revision": original_revision,
+        },
+    )
+    assert restored.status_code == 200, restored.text
+    assert restored.json()["proposals"][0]["status"] == "pending"
+    assert restored.json()["entries"] == []
+
+
 def test_failed_revision_activation_leaves_previous_knowledge(client, monkeypatch):
     import workbench
 
@@ -398,6 +465,21 @@ def test_extraction_does_not_match_same_name_with_different_entry_type(client, m
     proposal = workspace["proposals"][0]
     assert proposal["target"] is None
     assert proposal["candidates"] == []
+    assert proposal["needs_decision"] is False
+
+
+def test_character_and_npc_share_identity_matching(client, monkeypatch):
+    workspace = add_entry(client, campaign(client), title="Mara", type="Character")
+    workspace, _ = prepared_job(
+        client,
+        workspace,
+        monkeypatch,
+        [
+            {"name": "Mara", "type": "NPC", "note": "Spoke to Mara.", "citation_ts": "00:00:00"},
+        ],
+    )
+    proposal = workspace["proposals"][0]
+    assert proposal["target"] == workspace["entries"][0]["concept"]
     assert proposal["needs_decision"] is False
 
 
@@ -537,6 +619,14 @@ def test_import_rejects_missing_bundle_path_in_metadata(client):
         ),
     )
     assert response.status_code == 400
+
+
+def test_import_rejects_blank_campaign_name(client):
+    response = client.post(
+        "/api/workspaces/import?name=%20%20",
+        content=archive({"bundle/coast/npcs/mara.md": "---\ntype: NPC\ntitle: Mara\n---\nNotes\n"}),
+    )
+    assert response.status_code in (400, 422)
 
 
 def test_related_entries_are_written_as_standard_relationships(client):

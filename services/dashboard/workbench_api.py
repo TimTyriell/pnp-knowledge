@@ -90,12 +90,14 @@ def create(payload: CampaignInput, store: WorkspaceStore = Store):
 async def import_bundle(
     request: Request, name: str = Query(min_length=1, max_length=120), store: WorkspaceStore = Store
 ):
+    if not name.strip():
+        raise HTTPException(422, "Campaign name cannot be blank.")
     data = bytearray()
     async for chunk in request.stream():
         data.extend(chunk)
         if len(data) > MAX_ARCHIVE:
             raise HTTPException(413, "Bundle archive must be at most 25 MB.")
-    return store.import_bundle(name, bytes(data))
+    return store.import_bundle(name.strip(), bytes(data))
 
 
 def recover_jobs(store: WorkspaceStore, wid: str):

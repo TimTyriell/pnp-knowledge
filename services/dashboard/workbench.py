@@ -17,7 +17,7 @@ from difflib import SequenceMatcher
 from pathlib import Path, PurePosixPath
 
 import yaml
-from pnp_okf.models import ID_PREFIX, TYPE_DIR, EntityType
+from pnp_okf.models import ID_PREFIX, PERSON_TYPES, TYPE_DIR, EntityType
 from pnp_okf.okf import render_document, slugify, split_document
 from pnp_okf.validate import validate_bundle
 from pydantic import BaseModel, ConfigDict, Field
@@ -197,6 +197,8 @@ class WorkspaceStore:
         files: dict[str, bytes] | None = None,
         bundle: str = "bundle/campaign",
         sources: list[dict] | None = None,
+        jobs: list[dict] | None = None,
+        proposals: list[dict] | None = None,
     ) -> dict:
         wid = uuid.uuid4().hex
         (self.root / wid).mkdir()
@@ -207,8 +209,8 @@ class WorkspaceStore:
             "revision": "",
             "history": [],
             "sources": sources or [],
-            "jobs": [],
-            "proposals": [],
+            "jobs": jobs or [],
+            "proposals": proposals or [],
         }
         self.publish(state, files or {}, "Campaign created" if files is None else "Bundle imported")
         return self.view(wid)
@@ -355,7 +357,15 @@ class WorkspaceStore:
         with workspace_lock(self.path(wid)):
             state = self.load(wid)
             self.check_revision(state, payload.base_revision)
-            self.publish(state, self.files(state, payload.revision), "Restored earlier version")
+            files = self.files(state, payload.revision)
+            restored_ids = {entry["concept"] for entry in self.entries(state, files)}
+            for proposal in state["proposals"]:
+                if proposal["status"] == "accepted":
+                    proposal["status"] = "pending"
+                    if proposal["target"] not in restored_ids:
+                        proposal["target"] = None
+                        proposal["needs_decision"] = bool(proposal["candidates"])
+            self.publish(state, files, "Restored earlier version")
         return self.view(wid)
 
     def export(self, wid: str) -> bytes:
@@ -375,6 +385,8 @@ class WorkspaceStore:
                         "format": "pnp-workbench-v1",
                         "bundle": state["bundle"],
                         "sources": state["sources"],
+                        "jobs": state["jobs"],
+                        "proposals": state["proposals"],
                     },
                     ensure_ascii=False,
                 ),
@@ -413,15 +425,23 @@ class WorkspaceStore:
             raise WorkbenchError("Use a valid ZIP bundle with UTF-8 Markdown and YAML.") from exc
         metadata = {}
         sources = []
+        jobs = []
+        proposals = []
         if "campaign-workbench.json" in files:
             try:
                 metadata = json.loads(files.pop("campaign-workbench.json"))
                 if (
                     not isinstance(metadata, dict)
                     or metadata.get("format") != "pnp-workbench-v1"
+                    or not isinstance(metadata.get("bundle"), str)
                     or not isinstance(metadata.get("sources"), list)
+                    or not isinstance(metadata.get("jobs", []), list)
+                    or not isinstance(metadata.get("proposals", []), list)
                 ):
                     raise ValueError("Unknown workspace format")
+                metadata["bundle"] = safe_member(metadata["bundle"]) if metadata["bundle"] != "." else "."
+                if any(len(metadata.get(key, [])) > 5000 for key in ("sources", "jobs", "proposals")):
+                    raise ValueError("Workspace metadata is too large")
                 for source in metadata["sources"]:
                     payload = SourceInput.model_validate({k: source[k] for k in ("title", "date", "text")})
                     if not IDENTIFIER.fullmatch(source["id"]):
@@ -433,6 +453,93 @@ class WorkspaceStore:
                             "created_at": source.get("created_at", now()),
                         }
                     )
+                if len({source["id"] for source in sources}) != len(sources):
+                    raise ValueError("Duplicate source identifier")
+                source_ids = {source["id"] for source in sources}
+                job_ids_seen = set()
+                for job in metadata.get("jobs", []):
+                    if (
+                        not isinstance(job, dict)
+                        or not IDENTIFIER.fullmatch(job.get("id", ""))
+                        or job.get("source_id") not in source_ids
+                        or job.get("status") not in {"running", "ready", "failed"}
+                        or job.get("id") in job_ids_seen
+                        or any(
+                            key in job
+                            and job[key] is not None
+                            and (not isinstance(job[key], str) or len(job[key]) > limit)
+                            for key, limit in (
+                                ("created_at", 100),
+                                ("finished_at", 100),
+                                ("error", 2000),
+                                ("recap", MAX_SOURCE_CHARS),
+                            )
+                        )
+                    ):
+                        raise ValueError("Invalid job metadata")
+                    job_ids_seen.add(job["id"])
+                    job = {
+                        key: value
+                        for key, value in job.items()
+                        if key in {"id", "source_id", "status", "created_at", "finished_at", "error", "recap"}
+                    }
+                    if job["status"] == "running":
+                        job.update(
+                            status="failed", error="Processing was interrupted during export. Retry this source."
+                        )
+                    jobs.append(job)
+                job_ids = {job["id"] for job in jobs}
+                allowed_types = {item.value for item in EntityType}
+                proposal_ids_seen = set()
+                for proposal in metadata.get("proposals", []):
+                    if (
+                        not isinstance(proposal, dict)
+                        or not IDENTIFIER.fullmatch(proposal.get("id", ""))
+                        or proposal.get("source_id") not in source_ids
+                        or proposal.get("job_id") not in job_ids
+                        or proposal.get("type") not in allowed_types
+                        or proposal.get("status") not in {"pending", "accepted", "rejected"}
+                        or not isinstance(proposal.get("title"), str)
+                        or not proposal["title"].strip()
+                        or len(proposal["title"]) > 200
+                        or not isinstance(proposal.get("body"), str)
+                        or len(proposal["body"]) > MAX_SOURCE_CHARS
+                        or not isinstance(proposal.get("candidates"), list)
+                        or len(proposal["candidates"]) > 100
+                        or any(not isinstance(cid, str) for cid in proposal["candidates"])
+                        or proposal.get("id") in proposal_ids_seen
+                        or not isinstance(proposal.get("needs_decision"), bool)
+                        or (
+                            "citation" in proposal
+                            and proposal["citation"] is not None
+                            and (not isinstance(proposal["citation"], str) or len(proposal["citation"]) > 200)
+                        )
+                    ):
+                        raise ValueError("Invalid proposal metadata")
+                    proposal_ids_seen.add(proposal["id"])
+                    target = proposal.get("target")
+                    if target is not None and not isinstance(target, str):
+                        raise ValueError("Invalid proposal target")
+                    proposals.append(
+                        {
+                            key: value
+                            for key, value in proposal.items()
+                            if key
+                            in {
+                                "id",
+                                "job_id",
+                                "source_id",
+                                "title",
+                                "type",
+                                "body",
+                                "citation",
+                                "target",
+                                "candidates",
+                                "needs_decision",
+                                "status",
+                            }
+                        }
+                    )
             except (ValueError, TypeError, KeyError) as exc:
                 raise WorkbenchError("The workspace metadata is invalid.") from exc
         roots = set()
@@ -442,14 +549,23 @@ class WorkspaceStore:
             if len(parts) >= 2 and parts[-2] in directories and filename.endswith(".md"):
                 roots.add("/".join(parts[:-2]) or ".")
         if not roots and metadata:
-            roots.add(safe_member(metadata["bundle"]) if metadata["bundle"] != "." else ".")
+            roots.add(metadata["bundle"])
         if len(roots) != 1:
             raise WorkbenchError("Choose an archive containing exactly one OKF campaign bundle.")
         bundle = roots.pop()
+        if metadata and metadata["bundle"] != bundle:
+            raise WorkbenchError("The workspace metadata does not match the bundle path.")
         # Validate the imported shape before exposing any workspace in the listing.
         probe = {"bundle": bundle}
-        self.entries(probe, files)
-        return self.create(CampaignInput(name=name), files, bundle, sources)
+        imported_entries = self.entries(probe, files)
+        entry_ids = {entry["concept"] for entry in imported_entries}
+        for proposal in proposals:
+            if any(target not in entry_ids for target in proposal["candidates"]):
+                raise WorkbenchError("The workspace metadata refers to a missing suggestion target.")
+            if proposal["status"] == "pending" and proposal["target"] is not None:
+                if proposal["target"] not in proposal["candidates"] or proposal["target"] not in entry_ids:
+                    raise WorkbenchError("The workspace metadata refers to an invalid suggestion target.")
+        return self.create(CampaignInput(name=name), files, bundle, sources, jobs, proposals)
 
     def review(self, wid: str, payload: ReviewInput) -> dict:
         with workspace_lock(self.path(wid)):
@@ -466,6 +582,8 @@ class WorkspaceStore:
                 if decision.action == "reject":
                     proposal["status"] = "rejected"
                     continue
+                if decision.target and decision.target not in proposal["candidates"]:
+                    raise WorkbenchError("Choose one of the suggested matches or create a separate entry.")
                 if proposal["needs_decision"] and decision.target is None:
                     raise WorkbenchError("Choose an existing entry or 'Create a separate entry' first.")
                 target = proposal["target"] if decision.target is None else decision.target
@@ -539,8 +657,11 @@ def process_job(root: Path, wid: str, jid: str, extractor=extract_source) -> Non
                     continue
                 candidates = []
                 exact = []
+                match_types = {mention.type.value}
+                if mention.type in PERSON_TYPES:
+                    match_types.update(item.value for item in PERSON_TYPES)
                 for entry in entries:
-                    if entry["type"] != mention.type.value:
+                    if entry["type"] not in match_types:
                         continue
                     names = [entry["title"], *entry["aliases"]]
                     if any(n.casefold() == mention.name.strip().casefold() for n in names):
