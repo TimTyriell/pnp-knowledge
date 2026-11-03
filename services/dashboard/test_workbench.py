@@ -5,6 +5,7 @@ import zipfile
 
 import app
 import pytest
+import yaml
 from fastapi.testclient import TestClient
 
 
@@ -268,6 +269,52 @@ def test_ambiguous_identity_requires_an_explicit_choice(client, monkeypatch):
     assert client.post(url, json=payload).status_code == 200
 
 
+def test_ambiguous_identity_can_create_a_separate_entry(client, monkeypatch):
+    workspace = add_entry(client, campaign(client), title="Mara")
+    workspace = add_entry(client, workspace, title="Mera")
+    workspace, _ = prepared_job(
+        client,
+        workspace,
+        monkeypatch,
+        [
+            {"name": "The Keeper", "type": "NPC", "note": "A different person.", "citation_ts": "00:00:00"},
+        ],
+    )
+    proposal = workspace["proposals"][0]
+    response = client.post(
+        f"/api/workspaces/{workspace['id']}/review",
+        json={
+            "base_revision": workspace["revision"],
+            "decisions": [{"id": proposal["id"], "action": "accept", "target": ""}],
+        },
+    )
+    assert response.status_code == 200, response.text
+    assert {entry["title"] for entry in response.json()["entries"]} == {"Mara", "Mera", "The Keeper"}
+
+
+def test_review_cannot_select_an_entry_outside_suggestion_candidates(client, monkeypatch):
+    workspace = add_entry(client, campaign(client), title="Mara")
+    workspace = add_entry(client, workspace, title="Other Person")
+    workspace, _ = prepared_job(
+        client,
+        workspace,
+        monkeypatch,
+        [
+            {"name": "Mara", "type": "NPC", "note": "A note about Mara.", "citation_ts": "00:00:00"},
+        ],
+    )
+    proposal = workspace["proposals"][0]
+    unrelated = next(entry for entry in workspace["entries"] if entry["title"] == "Other Person")
+    response = client.post(
+        f"/api/workspaces/{workspace['id']}/review",
+        json={
+            "base_revision": workspace["revision"],
+            "decisions": [{"id": proposal["id"], "action": "accept", "target": unrelated["concept"]}],
+        },
+    )
+    assert response.status_code == 400
+
+
 def test_failed_revision_activation_leaves_previous_knowledge(client, monkeypatch):
     import workbench
 
@@ -394,6 +441,31 @@ def test_stale_job_in_other_campaign_does_not_block_new_processing(client, monke
     assert first_state["jobs"][0]["status"] == "failed"
 
 
+def test_shutdown_terminates_active_worker_processes(monkeypatch):
+    import workbench_api
+
+    class Worker:
+        stopped = False
+
+        def poll(self):
+            return None if not self.stopped else 0
+
+        def terminate(self):
+            self.stopped = True
+
+        def wait(self, timeout=None):
+            return 0
+
+        def kill(self):
+            self.stopped = True
+
+    worker = Worker()
+    monkeypatch.setitem(workbench_api._workers, "test-job", worker)
+    workbench_api.shutdown_workers()
+    assert worker.stopped is True
+    assert "test-job" not in workbench_api._workers
+
+
 def test_imported_crlf_documents_remain_visible(client):
     raw = (
         "---\r\ntype: NPC\r\nid: NPC_MARA\r\ntitle: Mara\r\ndescription: Innkeeper\r\n"
@@ -453,3 +525,76 @@ def test_import_rejects_non_object_workspace_metadata(client, metadata):
     )
     assert response.status_code == 400
     assert client.get("/api/workspaces").json() == []
+
+
+def test_import_rejects_missing_bundle_path_in_metadata(client):
+    response = client.post(
+        "/api/workspaces/import?name=Bad",
+        content=archive(
+            {
+                "campaign-workbench.json": '{"format":"pnp-workbench-v1","sources":[]}',
+            }
+        ),
+    )
+    assert response.status_code == 400
+
+
+def test_related_entries_are_written_as_standard_relationships(client):
+    workspace = add_entry(client, campaign(client), title="Copper Lantern", type="Location")
+    target = workspace["entries"][0]["concept"]
+    workspace = add_entry(client, workspace, title="Mara", type="NPC", related=[target])
+    exported = client.get(f"/api/workspaces/{workspace['id']}/export")
+    with zipfile.ZipFile(io.BytesIO(exported.content)) as zipped:
+        path = "bundle/campaign/npcs/mara.md"
+        frontmatter = yaml.safe_load(zipped.read(path).decode().split("---", 2)[1])
+    assert {edge["target"] for edge in frontmatter["relationships"]} == {target}
+
+
+def test_edit_preserves_rich_relationship_metadata(client):
+    common = (
+        "type: NPC\nid: NPC_{name}\ntitle: {name}\ndescription: Person\n"
+        "tags: [npcs]\ntimestamp: '2026-11-03T00:00:00Z'\n"
+    )
+    left_rel = "relationships:\n- target: npcs/bryn\n  kind: sibling\n  note: raised together\n"
+    right_rel = "relationships:\n- target: npcs/mara\n  kind: sibling\n  note: raised together\n"
+    files = {
+        "bundle/coast/npcs/mara.md": f"---\n{common.format(name='MARA')}{left_rel}---\n\nA keeper.\n",
+        "bundle/coast/npcs/bryn.md": f"---\n{common.format(name='BRYN')}{right_rel}---\n\nA sibling.\n",
+    }
+    imported = client.post("/api/workspaces/import?name=Imported", content=archive(files)).json()
+    mara = next(entry for entry in imported["entries"] if entry["concept"] == "npcs/mara")
+    response = client.put(
+        f"/api/workspaces/{imported['id']}/entries/npcs/mara",
+        json={
+            "base_revision": imported["revision"],
+            "title": "Mara Keeper",
+            "type": "NPC",
+            "body": "Updated description.",
+            "aliases": [],
+            "related": mara["related"],
+        },
+    )
+    assert response.status_code == 200, response.text
+    exported = client.get(f"/api/workspaces/{imported['id']}/export")
+    with zipfile.ZipFile(io.BytesIO(exported.content)) as zipped:
+        frontmatter = yaml.safe_load(zipped.read("bundle/coast/npcs/mara.md").decode().split("---", 2)[1])
+    assert frontmatter["relationships"] == [
+        {
+            "target": "npcs/bryn",
+            "kind": "sibling",
+            "note": "raised together",
+        }
+    ]
+
+
+def test_import_rejects_malformed_relationship_edges(client):
+    malformed = "---\ntype: NPC\nid: NPC_MARA\ntitle: Mara\nrelationships: [bad]\n---\nNotes\n"
+    response = client.post(
+        "/api/workspaces/import?name=Bad",
+        content=archive(
+            {
+                "bundle/coast/npcs/mara.md": malformed,
+            }
+        ),
+    )
+    assert response.status_code == 400

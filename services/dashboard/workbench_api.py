@@ -134,6 +134,19 @@ def _recover_all_workspaces(store: WorkspaceStore, locked_wid: str) -> None:
     _prune_workers()
 
 
+def shutdown_workers() -> None:
+    with _worker_lock:
+        for jid, worker in list(_workers.items()):
+            if worker.poll() is None:
+                worker.terminate()
+                try:
+                    worker.wait(timeout=5)
+                except subprocess.TimeoutExpired:
+                    worker.kill()
+                    worker.wait()
+            del _workers[jid]
+
+
 @router.get("/{wid}")
 def workspace(wid: str, store: WorkspaceStore = Store):
     recover_jobs(store, wid)

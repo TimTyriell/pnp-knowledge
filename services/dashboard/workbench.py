@@ -234,6 +234,15 @@ class WorkspaceStore:
             aliases = fm.get("aliases", [])
             if not isinstance(aliases, list) or any(not isinstance(a, str) for a in aliases):
                 raise WorkbenchError(f"Invalid aliases in {name}")
+            relationships = fm.get("relationships", [])
+            if not isinstance(relationships, list) or any(
+                not isinstance(edge, dict) or not isinstance(edge.get("target"), str) for edge in relationships
+            ):
+                raise WorkbenchError(f"Invalid relationships in {name}")
+            related = fm.get("workbench_related", [])
+            if not isinstance(related, list) or any(not isinstance(target, str) for target in related):
+                raise WorkbenchError(f"Invalid related entries in {name}")
+            related = list(dict.fromkeys([*related, *(edge["target"] for edge in relationships)]))
             rows.append(
                 {
                     "concept": cid,
@@ -241,7 +250,7 @@ class WorkspaceStore:
                     "type": fm["type"],
                     "body": body,
                     "aliases": aliases,
-                    "related": fm.get("workbench_related", []),
+                    "related": related,
                     "editable": fm["type"] in {t.value for t in EntityType},
                 }
             )
@@ -282,6 +291,24 @@ class WorkspaceStore:
         filename = self.entry_file(state, cid)
         fm = split_document(files[filename].decode("utf-8-sig"))[0] if filename in files else {}
         typed_id = fm.get("id") or f"{ID_PREFIX[payload.type]}_{cid.split('/')[-1].upper()}"
+        old_related = set(fm.get("workbench_related", []))
+        relationships = fm.get("relationships", [])
+        removed = old_related - set(payload.related)
+        relationships = [
+            edge for edge in relationships if not (edge.get("target") in removed and edge.get("workbench_managed"))
+        ]
+        related_targets = {edge["target"] for edge in relationships}
+        for target in payload.related:
+            if target not in related_targets:
+                relationships.append({"target": target, "workbench_managed": True})
+        for target in removed:
+            target_file = self.entry_file(state, target)
+            target_fm, target_body = split_document(files[target_file].decode("utf-8-sig"))
+            reverse = target_fm.get("relationships", [])
+            filtered = [edge for edge in reverse if not (edge.get("target") == cid and edge.get("workbench_managed"))]
+            if len(filtered) != len(reverse):
+                target_fm["relationships"] = filtered
+                files[target_file] = render_document(target_fm, target_body).encode("utf-8")
         fm.update(
             {
                 "type": payload.type.value,
@@ -292,9 +319,18 @@ class WorkspaceStore:
                 "timestamp": now(),
                 "aliases": aliases,
                 "workbench_related": payload.related,
+                "relationships": relationships,
             }
         )
         files[filename] = render_document(fm, payload.body).encode("utf-8")
+        for target in payload.related:
+            target_file = self.entry_file(state, target)
+            target_fm, target_body = split_document(files[target_file].decode("utf-8-sig"))
+            reverse = target_fm.get("relationships", [])
+            if not any(edge["target"] == cid for edge in reverse):
+                reverse.append({"target": cid, "workbench_managed": True})
+                target_fm["relationships"] = reverse
+                files[target_file] = render_document(target_fm, target_body).encode("utf-8")
         return cid
 
     def edit(self, wid: str, payload: EntryInput, cid: str | None = None) -> dict:
