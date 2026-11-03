@@ -382,6 +382,43 @@ def test_restore_requeues_accepted_suggestions_for_review(client, monkeypatch):
     assert restored.json()["entries"] == []
 
 
+def test_accepted_note_correction_survives_export_and_restore(client, monkeypatch):
+    workspace = campaign(client)
+    workspace, _ = prepared_job(
+        client,
+        workspace,
+        monkeypatch,
+        [
+            {"name": "Old Tower", "type": "Location", "note": "Model wording.", "citation_ts": "00:00:00"},
+        ],
+    )
+    proposal = workspace["proposals"][0]
+    accepted = client.post(
+        f"/api/workspaces/{workspace['id']}/review",
+        json={
+            "base_revision": workspace["revision"],
+            "decisions": [{"id": proposal["id"], "action": "accept", "body": "GM correction."}],
+        },
+    ).json()
+    assert accepted["proposals"][0]["body"] == "GM correction."
+    exported = client.get(f"/api/workspaces/{workspace['id']}/export")
+    reopened = client.post("/api/workspaces/import?name=Reopened", content=exported.content)
+    assert reopened.status_code == 201, reopened.text
+    reopened_state = reopened.json()
+    assert reopened_state["proposals"][0]["body"] == "GM correction."
+    assert reopened_state["sources"][0]["text"] == "Mara helped us escape. The tower is old."
+    restored = client.post(
+        f"/api/workspaces/{reopened_state['id']}/restore",
+        json={
+            "base_revision": reopened_state["revision"],
+            "revision": reopened_state["revision"],
+        },
+    )
+    assert restored.status_code == 200, restored.text
+    assert restored.json()["proposals"][0]["status"] == "pending"
+    assert restored.json()["proposals"][0]["body"] == "GM correction."
+
+
 def test_failed_revision_activation_leaves_previous_knowledge(client, monkeypatch):
     import workbench
 
@@ -481,6 +518,23 @@ def test_character_and_npc_share_identity_matching(client, monkeypatch):
     proposal = workspace["proposals"][0]
     assert proposal["target"] == workspace["entries"][0]["concept"]
     assert proposal["needs_decision"] is False
+
+
+def test_character_and_npc_mentions_with_same_name_group_into_one_proposal(client, monkeypatch):
+    workspace, _ = prepared_job(
+        client,
+        campaign(client),
+        monkeypatch,
+        [
+            {"name": "Mara", "type": "NPC", "note": "The group met Mara.", "citation_ts": "00:00:00"},
+            {"name": "Mara", "type": "Character", "note": "Mara joined the party.", "citation_ts": "00:00:00"},
+        ],
+    )
+    assert len(workspace["proposals"]) == 1
+    proposal = workspace["proposals"][0]
+    assert proposal["type"] == "Character"
+    assert "The group met Mara." in proposal["body"]
+    assert "Mara joined the party." in proposal["body"]
 
 
 def test_stale_job_in_other_campaign_does_not_block_new_processing(client, monkeypatch):

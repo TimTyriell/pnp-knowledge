@@ -609,7 +609,7 @@ class WorkspaceStore:
                     related=existing["related"] if existing else [],
                 )
                 cid = self.put_entry(state, files, entry, target or None)
-                proposal.update(status="accepted", target=cid)
+                proposal.update(status="accepted", target=cid, body=note)
             self.publish(state, files, f"Reviewed {len(payload.decisions)} suggestions")
         return self.view(wid)
 
@@ -651,9 +651,12 @@ def process_job(root: Path, wid: str, jid: str, extractor=extract_source) -> Non
             for mention in result.entities:
                 if not mention.name.strip() or not mention.note.strip() or len(mention.note) > 120_000:
                     continue
-                key = (mention.type.value, mention.name.strip().casefold())
+                identity_space = "person" if mention.type in PERSON_TYPES else mention.type.value
+                key = (identity_space, mention.name.strip().casefold())
                 if key in grouped:
                     grouped[key]["body"] += "\n\n" + mention.note
+                    if mention.type == EntityType.CHARACTER:
+                        grouped[key]["type"] = mention.type.value
                     continue
                 candidates = []
                 exact = []
