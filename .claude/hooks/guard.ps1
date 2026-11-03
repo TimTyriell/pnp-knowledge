@@ -9,6 +9,7 @@
 #   PNP_ALLOW_PAID=1          paid pnp runs and prompt-version bumps
 #   PNP_ALLOW_BUNDLE_EDIT=1   hand edits under knowledge/ (a plan says so)
 #   PNP_ALLOW_MAIN_COMMIT=1   committing directly on main
+#   PNP_ALLOW_GUARD_EDIT=1    editing .claude/hooks/ or .claude/settings.json
 # graph/ has no override: it is frozen (ADR-002); thaw it by editing this file.
 
 $repo = (Resolve-Path "$PSScriptRoot\..\..").Path
@@ -35,6 +36,9 @@ if ($hook.tool_name -in 'Edit', 'Write', 'MultiEdit', 'NotebookEdit') {
     $rel = RepoRel $file
     if (-not $rel) { exit 0 }
 
+    if ($rel -match '^\.claude/(hooks/|settings(\.local)?\.json$)' -and $env:PNP_ALLOW_GUARD_EDIT -ne '1') {
+        Block "the guards protect themselves: .claude/hooks/ and .claude/settings.json are the human's to change. Override: PNP_ALLOW_GUARD_EDIT=1."
+    }
     if ($rel -like 'graph/*') {
         Block "graph/ is frozen (ADR-002). Reference only, no edits."
     }

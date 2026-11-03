@@ -39,9 +39,14 @@ def main() -> None:
         subprocess.run([*git, "init", "-q", "-b", "main"], check=True)
 
         edit = lambda path, new="x": {"file_path": str(repo / path), "old_string": "y", "new_string": new}  # noqa: E731
+        write = lambda path: {"file_path": str(repo / path), "content": "{}"}  # noqa: E731
         bash = lambda cmd: {"command": cmd}  # noqa: E731
         cases = [
             # (expected exit, tool, input, env)
+            (2, "Edit", edit(".claude/hooks/guard.ps1"), {}),
+            (2, "Write", write(".claude/settings.json"), {}),
+            (0, "Write", write(".claude/settings.json"), {"PNP_ALLOW_GUARD_EDIT": "1"}),
+            (0, "Edit", edit(".claude/agents/verifier.md"), {}),
             (2, "Edit", edit("graph/src/x.py"), {}),
             (2, "Write", {"file_path": str(repo / "graph/x.md"), "content": ""}, {"PNP_ALLOW_PAID": "1"}),
             (0, "Edit", edit("services/kb/x.py"), {}),
