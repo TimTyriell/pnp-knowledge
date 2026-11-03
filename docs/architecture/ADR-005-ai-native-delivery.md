@@ -53,9 +53,14 @@ each rule and each override):
 | all three | `git commit` on `main` | `PNP_ALLOW_MAIN_COMMIT=1` |
 | | edits to `.claude/hooks/`, `.claude/settings.json` (the guard itself) | `PNP_ALLOW_GUARD_EDIT=1` |
 
-Overrides are environment variables the human sets before starting a session.
-An agent can't set them for its own process, so the gate stays with the human
-without pulling them into every build step.
+Overrides are switches in `.claude/guards.env`, one file per checkout,
+gitignored, with every switch and its reason listed in the committed
+`.claude/guards.env.example`. The guard re-reads it on every call. The guard
+also blocks Claude from writing that file, by tool or by shell. An
+environment variable of the same name on the Claude process works too. A
+file was chosen over environment variables alone because the human has to be
+able to find the switches without remembering them; every block message names
+the switch and the file.
 
 ### The loop, stage by stage
 

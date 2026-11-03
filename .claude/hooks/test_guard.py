@@ -45,6 +45,10 @@ def main() -> None:
         bash = lambda cmd: {"command": cmd}  # noqa: E731
         cases = [
             # (expected exit, tool, input, env)
+            (2, "Write", write(".claude/guards.env"), {}),
+            (2, "Bash", bash("echo PNP_ALLOW_MAIN_COMMIT=1 >> .claude/guards.env"), {}),
+            (2, "PowerShell", bash("Set-Content .claude/guards.env 'PNP_ALLOW_MAIN_COMMIT=1'"), {}),
+            (0, "Bash", bash("cat .claude/guards.env"), {}),
             (2, "Bash", bash("uv run pnp run --limit 1"), {}),
             (2, "Bash", bash('bash -c "pnp extract"'), {}),
             (2, "Bash", bash("pnp run --estimate && pnp run"), {}),
@@ -89,11 +93,17 @@ def main() -> None:
             for want, tool, inp, env in cases
             if (got := run(repo, tool, inp, **env)) != want
         ]
+        (repo / ".claude/guards.env").write_text("PNP_ALLOW_MAIN_COMMIT=1\nPNP_ALLOW_GUARD_EDIT=0\n")
+        if run(repo, "Bash", bash('git commit -m "x"')) != 0:
+            failures.append("PNP_ALLOW_MAIN_COMMIT=1 in guards.env did not allow the commit")
+        if run(repo, "Write", write(".claude/guards.env")) != 2:
+            failures.append("guards.env with GUARD_EDIT=0 did not protect itself")
+        (repo / ".claude/guards.env").unlink()
         subprocess.run([*git, "switch", "-q", "-c", "feat/x"], check=True)
         if run(repo, "Bash", bash('git commit -m "x"')) != 0:
             failures.append("commit on a branch was blocked")
         assert not failures, "\n".join(failures)
-        print(f"guard.ps1: {len(cases) + 1} checks passed")
+        print(f"guard.ps1: {len(cases) + 3} checks passed")
 
 
 if __name__ == "__main__":
