@@ -1,9 +1,9 @@
-# graph/ — CLAUDE.md (❄ FROZEN GraphRAG pipeline)
+# graph/ — AGENTS.md (❄ FROZEN GraphRAG pipeline)
 
-Guidance for Claude Code when working **inside `graph/`**. This is the frozen
+Guidance for Codex and Claude Code when working **inside `graph/`**. This is the frozen
 Neo4j GraphRAG pipeline; the active knowledge system is the OKF bundle under
 `../knowledge/` served by `../services/kb` (see the repo-root
-[README](../README.md), [../CLAUDE.md](../CLAUDE.md), and
+[README](../README.md), [../AGENTS.md](../AGENTS.md), and
 [ADR-001](../docs/architecture/ADR-001-knowledge-layer.md)). No active feature
 work happens here — it is reference + a possible future *derived index*
 rebuilt from the bundle.

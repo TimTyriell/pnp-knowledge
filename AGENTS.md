@@ -1,6 +1,6 @@
-# CLAUDE.md
+# AGENTS.md
 
-Guidance for Claude Code (claude.ai/code) working in this repository.
+Guidance for Codex and Claude Code working in this repository.
 
 ## What this repo is
 
@@ -39,7 +39,7 @@ Two systems live here, and the top level keeps them apart:
   rebuilt from the bundle (ADR-001 revisit triggers), no active feature work.
   Self-contained (`src/pnp_graph`, `data/`, `tests/`, `compare/`, `docs/`,
   `docker-compose.yml`, …). **When working inside `graph/`, read
-  [graph/CLAUDE.md](graph/CLAUDE.md)** — it has the full pipeline architecture,
+  [graph/AGENTS.md](graph/AGENTS.md)** — it has the full pipeline architecture,
   with all paths relative to `graph/`.
 
 ## Working here
@@ -56,7 +56,7 @@ Two systems live here, and the top level keeps them apart:
 - Each active service has its own venv. The repo-root `.venv` belongs to the
   frozen `graph/` pipeline.
 - **Before touching `services/kb` or `knowledge/`, read [docs/architecture/PIPELINE.md](docs/architecture/PIPELINE.md)** -- how `pnp run` works stage by stage, how concept ids are derived, what keys the caches, where the money goes, and the traps that have already bitten. It exists because those facts get re-derived (wrongly) every session.
-  Before touching `graph/`, read `graph/CLAUDE.md`.
+  Before touching `graph/`, read `graph/AGENTS.md`.
 - Known issue (pre-existing, out of scope for the layout move):
   `graph/tests/test_golden.py` is red — its golden file is stale relative to the
   merged alias/role changes in `750d6f1`. Regenerate with

@@ -38,5 +38,5 @@ PYTHONPATH=src python -m pytest tests
 Report data (`Session_Report_*.md`) lives in the shared top-level
 [`../reports/`](../reports/), not here — the loaders reach up one level for it.
 
-See [../CLAUDE.md](../CLAUDE.md) and the in-package docstrings for the full
+See [../AGENTS.md](../AGENTS.md) and the in-package docstrings for the full
 architecture; the design spec is in [docs/evolution/](docs/evolution/).
