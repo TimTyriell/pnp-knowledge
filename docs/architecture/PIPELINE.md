@@ -410,7 +410,7 @@ player first names; the sampler refuses to write one that is not.
 5. **A partial run (`--limit`/`--session`) disables the rename guard.** Do not use it to "test" a rename.
 6. **`--clean` deletes the whole bundle at step 6**, before synthesis. A crash then loses everything not in git.
 7. **Never make a backup copy of `.env`** — it contains the API key and `.env.*` is gitignored precisely so copies cannot be committed.
-8. **The frozen `graph/` pipeline is a different system.** Its `test_golden.py` is known-red and it is excluded from CI. Read `graph/CLAUDE.md` before touching it.
+8. **The frozen `graph/` pipeline is a different system.** Its `test_golden.py` is known-red and it is excluded from CI. Read `graph/AGENTS.md` before touching it.
 9. **A failed run's completed calls are not lost** — extraction and synthesis cache per item on success, so a retry reuses them. Do not report a failed run's tokens as "burned".
 
 ---
