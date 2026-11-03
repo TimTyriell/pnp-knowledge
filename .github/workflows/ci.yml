@@ -94,12 +94,39 @@ jobs:
           cache: "pip"
 
       - name: Install dependencies
-        run: pip install -e ".[dev]"
+        run: pip install -e ../kb -e ".[dev]"
 
       # app.py does a bare `import glossary`, so the tests only resolve from
       # inside services/dashboard (set via defaults.run.working-directory).
       - name: Run tests
         run: python -m pytest
+
+  dashboard-frontend:
+    name: services/dashboard/web
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: services/dashboard/web
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: services/dashboard/web/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: npm test
+
+      - name: Build production frontend
+        run: npm run build
 
   summary:
     name: services/summary
