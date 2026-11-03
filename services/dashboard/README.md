@@ -17,9 +17,59 @@ loopback-only and validates the patched YAML before writing anything.
 
 ## Run
 
+### Local campaign workbench (Windows)
+
+For normal use, run `Start-Workbench.ps1` from the repository root. It opens
+the built app in your browser and keeps the Python server in a hidden window.
+Use `-NoBrowser` to start or reuse the server without opening a browser. The
+server listens only on this computer at `http://127.0.0.1:8090`.
+
+Prepare the app once from PowerShell if the launcher says setup is needed:
+
+```powershell
+Set-Location services/dashboard
+uv venv --python 3.11 .venv
+uv pip install --python .venv/Scripts/python.exe -e ../kb -e ".[dev]"
+Set-Location web
+npm.cmd ci
+npm.cmd run build
+Set-Location ../../..
+./Start-Workbench.ps1
+```
+
+This uses the dashboard's own Python environment and the local `services/kb`
+package. Node is needed for the one-time frontend install and build; the running
+app does not need a Node server. The launcher checks for a working dashboard
+`.venv` first and then the workspace-local `.tools/workbench-venv` environment.
+It does not install dependencies. If neither environment is ready, follow the
+setup commands above. Existing provider environment variables are inherited;
+the launcher does not display them or start AI processing.
+
+Campaign workspaces are saved under `services/dashboard/data/workspaces` by
+default. Set `PNP_WORKSPACE_DIR` before launch to store them elsewhere. This is
+an isolated local authoring area: it does not migrate or modify the live
+`knowledge/` campaign. Workspaces retain Markdown revisions and can be exported
+as ZIP bundles with source metadata; use the existing private-repository review
+and session-tag process when handing accepted knowledge to the canonical
+campaign bundle.
+
+### AI source review
+
+AI source review is optional and requires provider configuration in the
+PowerShell environment before starting the app. Set `DEEPSEEK_API_KEY` in that
+environment through your normal secret manager or private local environment
+setup; never put it in the browser, repository, or a committed file. The app
+sends source text to the configured provider only after you explicitly choose
+to process that source. The provider may charge for processing, and the app
+does not show a cost estimate. Manual authoring remains available without
+provider configuration.
+
+The setup below remains available for dashboard development and its existing
+technical status and glossary views.
+
 ```bash
-python -m venv .venv
-.venv/Scripts/pip install -e ".[dev]"
+uv venv --python 3.11 .venv
+uv pip install --python .venv/Scripts/python.exe -e ../kb -e ".[dev]"
 
 # backend, :8090
 .venv/Scripts/python app.py
@@ -32,7 +82,7 @@ For a single-process deployment, build the frontend once and let FastAPI
 serve it:
 
 ```bash
-cd web && npm run build   # writes web/dist
+cd web && npm.cmd run build   # writes web/dist on Windows
 cd .. && .venv/Scripts/python app.py   # now also serves / from web/dist
 ```
 
