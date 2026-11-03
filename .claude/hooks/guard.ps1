@@ -11,6 +11,8 @@
 #   PNP_ALLOW_MAIN_COMMIT=1   committing directly on main
 #   PNP_ALLOW_GUARD_EDIT=1    editing .claude/hooks/ or .claude/settings.json
 # graph/ has no override: it is frozen (ADR-002); thaw it by editing this file.
+# Path rules see the Edit/Write tools, not shell writes (`>`, Set-Content);
+# review covers that gap (ADR-005).
 
 $repo = (Resolve-Path "$PSScriptRoot\..\..").Path
 try { $hook = [Console]::In.ReadToEnd() | ConvertFrom-Json } catch { exit 0 }
@@ -66,12 +68,17 @@ if ($hook.tool_name -in 'Edit', 'Write', 'MultiEdit', 'NotebookEdit') {
 if ($hook.tool_name -in 'Bash', 'PowerShell') {
     $cmd = [string]$in.command
     # Command position: start, or after a separator / env assignment / path.
-    # Keeps text inside commit messages and heredocs from matching.
     $at = '(?m)(^|[;&|(]\s*|\n\s*)(\w+=\S*\s+)*(\S*[\\/])?'
+    # Rules about *running* something scan the whole command, so wrappers
+    # (`uv run`, `timeout`, `bash -c "..."`) can't hide a call. Text that is only
+    # a message is cut first: heredoc bodies and -m/--message/--body/--title.
+    $scan = [regex]::Replace($cmd, '(?s)<<-?\s*[''"]?(\w+)[''"]?.*?\n\s*\1\b', '')
+    $scan = [regex]::Replace($scan, '(-m|--message|--body|--title)\s+("[^"]*"|''[^'']*'')', '')
 
+    # run/state accept --estimate (free); extract/dedup always call the model.
     if ($env:PNP_ALLOW_PAID -ne '1' -and
-        $cmd -match "$at(pnp(\.exe)?|python(\.exe)?\s+-m\s+pnp_okf\.cli)\s+(run|extract|state|dedup)\b" -and
-        $cmd -notmatch '--estimate|--help|\s-h\b') {
+        $scan -match '\b(pnp(\.exe)?|pnp_okf\.cli)\s+((run|state)\b(?![^\n;&|]*--estimate)|(extract|dedup)\b)' -and
+        $scan -notmatch '--help|\s-h\b') {
         Block "'pnp run/extract/state/dedup' call DeepSeek and cost money. Run with --estimate first; the human runs the paid step. Override: PNP_ALLOW_PAID=1."
     }
 

@@ -15,6 +15,8 @@ import tempfile
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
+# The human's own overrides must not leak into the expectations.
+CLEAN_ENV = {k: v for k, v in os.environ.items() if not k.startswith("PNP_ALLOW_")}
 SHELL = shutil.which("powershell") or shutil.which("pwsh")
 
 
@@ -23,7 +25,7 @@ def run(repo: Path, tool: str, tool_input: dict, **env: str) -> int:
     return subprocess.run(
         [SHELL, "-NoProfile", "-ExecutionPolicy", "Bypass", "-File",
          str(repo / ".claude/hooks/guard.ps1")],
-        input=payload, capture_output=True, text=True, env={**os.environ, **env},
+        input=payload, capture_output=True, text=True, env={**CLEAN_ENV, **env},
     ).returncode
 
 
@@ -43,6 +45,12 @@ def main() -> None:
         bash = lambda cmd: {"command": cmd}  # noqa: E731
         cases = [
             # (expected exit, tool, input, env)
+            (2, "Bash", bash("uv run pnp run --limit 1"), {}),
+            (2, "Bash", bash('bash -c "pnp extract"'), {}),
+            (2, "Bash", bash("pnp run --estimate && pnp run"), {}),
+            (0, "Bash", bash("pnp state --estimate"), {}),
+            (0, "Bash", bash('git commit -m "docs: explain pnp run"'), {"PNP_ALLOW_MAIN_COMMIT": "1"}),
+            (0, "Bash", bash("gh pr create --body-file - <<'EOF'\nruns pnp run once\nEOF"), {}),
             (2, "Edit", edit(".claude/hooks/guard.ps1"), {}),
             (2, "Write", write(".claude/settings.json"), {}),
             (0, "Write", write(".claude/settings.json"), {"PNP_ALLOW_GUARD_EDIT": "1"}),
@@ -67,7 +75,8 @@ def main() -> None:
             (0, "Bash", bash("pnp run --estimate"), {}),
             (0, "Bash", bash("pnp run"), {"PNP_ALLOW_PAID": "1"}),
             (0, "Bash", bash("pnp check"), {}),
-            (0, "Bash", bash("grep -n 'pnp run' docs/x.md"), {}),
+            # Known false positive, accepted: wrappers must not hide a run. Use the Grep tool.
+            (2, "Bash", bash("grep -n 'pnp run' docs/x.md"), {}),
             (2, "Bash", bash('git commit -m "x"'), {}),
             (2, "Bash", bash(f'git -C "{repo}" commit -m "x"'), {}),
             (0, "Bash", bash('git commit -m "x"'), {"PNP_ALLOW_MAIN_COMMIT": "1"}),
