@@ -33,13 +33,16 @@ Do not add a Node application server or change the read-only KB API.
 
 Store workspaces under an ignored dashboard data directory, configurable with
 PNP_WORKSPACE_DIR. They do not write to knowledge/ or invoke its ingest process.
-Knowledge is stored as immutable OKF/Markdown revisions with a small atomically
-replaced manifest selecting the accepted revision. History restores create a new
-revision. A failed preparation leaves the prior revision selected. Local Git
-history of the workspace is deferred: this is an isolated authoring workspace,
-not adoption of the canonical live repository. Export is the explicit handoff
-to its existing PR/tag process. This exception to the live storage lifecycle
-does not change ADR-001 for the live campaign.
+Accepted OKF/Markdown bundle files are stored in immutable revisions on disk; a
+small atomically replaced `workspace.json` stores current sources, jobs,
+proposals, and the selected bundle revision. History restores create another
+bundle revision from the chosen content while keeping current source/review/job
+state. Restoring to before an accepted suggestion re-pends it with its corrected
+note. A failed preparation leaves the prior bundle revision selected. This is
+application-owned local data, not Git history and not adoption of the canonical
+live repository. Export is the explicit handoff to its existing PR/tag process.
+This exception to the live storage lifecycle does not change ADR-001 for the
+live campaign.
 
 Retain arbitrary imported frontmatter, Markdown, and auxiliary bundle files.
 An import does not rewrite existing concept paths or IDs. New entries receive
@@ -53,8 +56,10 @@ Model output is untrusted input. Bound files, archive sizes, model output, and
 text; reject unsafe paths and invalid YAML. Never render imported HTML.
 
 Loopback-only routes and same-origin mutation checks protect local writes.
-The browser cannot choose arbitrary filesystem paths. Export a ZIP; import ZIP
-into a fresh workspace after checking entries, duplicates, and file sizes.
+The browser cannot choose arbitrary filesystem paths. Export a ZIP containing
+the bundle, sources, and review/job state; import it into a fresh workspace
+after checking entries, duplicates, and file sizes. Imported auxiliary files
+and unsupported frontmatter remain intact.
 
 ## Delivery boundaries
 
@@ -66,5 +71,7 @@ not full synthesis; this reduces rewrites and the number of paid calls.
 
 Developer startup uses existing per-service tooling; a PowerShell launcher opens
 the built local application. Bundle import/export and workspace revisions provide
-portable recovery. Distribution as an installer is deferred until runtime
-behavior is proven; do not describe the development setup as a packaged app.
+portable recovery, including pending and rejected review decisions. CI installs
+the local KB package for dashboard checks and runs the frontend tests and
+production build. Distribution as an installer is deferred; do not describe the
+development setup as a packaged app.

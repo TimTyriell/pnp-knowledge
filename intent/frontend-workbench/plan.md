@@ -1,34 +1,31 @@
 # Implementation plan: local campaign workbench
 
-Status: selected under user delegation, 2026-11-03
+Status: implementation and local checks complete; visual/browser E2E pending,
+2026-11-04
 
 ## Sequence and files
 
-1. Add `services/dashboard/test_workbench.py` before the implementation. Exercise
-   real temporary workspaces: persistence, immutable identity, stale edits,
-   review, correction preservation, safe archives, failed writes, and restore.
-2. Add `workbench.py` for schemas, immutable bundle revisions, imports/exports,
-   sources, review decisions, and extraction worker entry point. Reuse pnp_okf
-   serializers/models/validation/extraction as an editable local dependency.
-3. Add `workbench_api.py` for validated local routes and worker lifecycle; include
-   its router before static mounting in `app.py`. Test HTTP behavior and local
-   mutation protections without external services.
-4. Add Tailwind/shadcn components and `src/features/workbench/` for typed API,
-   Zustand drafts, Query integration, editor, source intake, review, and history.
-   Keep the current dashboard reachable independently. Add frontend behavior
-   tests before implementing those behaviors.
-5. Document local setup, provider configuration, runtime storage, and limitations.
-   Add a launcher and preserve a lockfile for reproducible frontend installs.
-6. Run focused backend and frontend suites, regression dashboard tests, typecheck
-   and production build. Exercise the rendered interface when tools permit it.
-   Record actual results and limits in `verification.md`.
+1. Implement `workbench.py` for schemas, immutable bundle revisions, imports
+   and exports, sources, review decisions, and the extraction worker. Reuse the
+   editable local `pnp_okf` package for serialization, validation, and extraction.
+2. Implement `workbench_api.py` with validated loopback routes and worker
+   lifecycle; include its router before static mounting in `app.py`.
+3. Build the React/TypeScript workbench in `services/dashboard/web/src/App.tsx`
+   and `workbench.ts`, using shadcn/ui, Zustand drafts, and TanStack Query. Keep
+   the current technical dashboard reachable independently. Add rendered-flow
+   tests in `App.test.tsx` and `App.flow.test.tsx`.
+4. Document setup, provider configuration, local storage, and limitations. Add
+   `Start-Workbench.ps1`, keep the npm lockfile, and integrate dashboard and
+   frontend checks into `.github/workflows/ci.yml`.
+5. Record actual results and remaining verification limits in `verification.md`.
 
 ## Risks and proof
 
 - Data loss: immutable staged revisions and atomic manifest activation; inject
   write failure and verify the previous bundle remains readable.
 - Name drift: no ID regeneration on edit; review explicitly resolves ambiguous
-  identities; import/export keeps original paths and arbitrary metadata.
+  identities; import/export keeps original paths, auxiliary files, metadata,
+  and review decisions.
 - Accidental AI spending: jobs require an explicit user action and configured
   provider; all verification replaces only the external extraction boundary.
 - Cross-site local writes: loopback and Origin/Host checks, validated payloads,
@@ -39,7 +36,8 @@ Status: selected under user delegation, 2026-11-03
 
 ## Stop condition
 
-Both manual and source-assisted creation work end to end, preserved knowledge
-survives new sources and round-trip export/import, errors preserve the previous
-revision, and the appropriate checks pass. Report genuine remaining limitations;
-do not claim a fully packaged or live-campaign-integrated release.
+Manual and source-assisted creation work end to end, knowledge and review state
+survive round-trip export/import, restores preserve recoverability, failed writes
+leave the prior snapshot selected, and the appropriate checks pass. Report
+remaining verification limits; do not claim a packaged app or live-campaign
+integration.
