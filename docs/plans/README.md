@@ -38,6 +38,33 @@ without design decisions. Where a decision *is* needed, the plan says
 Cross-repo plans live in their own repos: `pnp-crawl/docs/plans/`,
 `pnp-export-data/docs/plans/`.
 
+## Plan template
+
+New plans use this shape; older plans predate it (their *Goal* is the
+*Intent*). One file per change: intent, plan and proof travel together
+through review, so the PR shows what was meant, not just what was done.
+
+```markdown
+# <ID> — <title>
+
+## Intent
+Problem, wanted outcome, constraints (cost, privacy, frozen paths), open
+questions. A question only the human can answer: **STOP — ask the human**,
+with the default to propose.
+
+## Steps
+Files in order, risks, **HUMAN RUN** steps marked.
+
+## Done when
+- [ ] checklist items, each provable by a command below
+
+    <exact commands whose output proves every item>
+```
+
+Before the PR opens, run the `verifier` subagent (`.claude/agents/verifier.md`)
+on the plan: it runs lint, tests and the *Done when* commands in a fresh
+context and reports, never fixes. After the PR opens: `/review-pr <n>`.
+
 ## Rules for the implementing agent (read before every plan)
 
 1. **Branch from `origin/main`** after `git fetch`. Local `main` is stale
@@ -46,12 +73,14 @@ Cross-repo plans live in their own repos: `pnp-crawl/docs/plans/`,
 2. **Never call DeepSeek.** No `pnp run`, `pnp extract`, `pnp dedup`,
    `pnp state` without `--estimate`. A step that needs a paid run is marked
    **HUMAN RUN** — stop there, write what you need into the PR description,
-   and hand over.
+   and hand over. Enforced by `.claude/hooks/guard.ps1`.
 3. **Never edit `knowledge/`** except where a plan explicitly says so. The
    bundle is written by `pnp run`, not by hand. `knowledge/entity_rules.yaml`
-   is hand-written and may be edited when a plan says so.
-4. **Never bump `PROMPT_VERSION` / `EXTRACT_PROMPT_VERSION`** unless the plan
-   says so. A bump re-extracts the whole corpus (~$6.50) and renames concept
+   is hand-written and may be edited when a plan says so. Enforced by the
+   guard; a plan that needs a bundle edit says so and the human sets
+   `PNP_ALLOW_BUNDLE_EDIT=1`.
+4. **Never bump a `*_PROMPT_VERSION`** (`EXTRACT_`, `SYNTH_`, `STATE_` in
+   `prompts.py`) unless the plan says so. Enforced by the guard. A bump re-extracts the whole corpus (~$6.50) and renames concept
    ids (PIPELINE.md §4, §6).
 5. Tests run from `services/kb` with its own venv:
    `cd services/kb && .venv/Scripts/python.exe -m pytest -q`.
