@@ -44,6 +44,12 @@ Two systems live here, and the top level keeps them apart:
 
 ## Working here
 
+- **Guards.** `.claude/hooks/guard.ps1` (PreToolUse) blocks edits to `graph/`
+  and `knowledge/` (except `knowledge/entity_rules.yaml`), any
+  `*_PROMPT_VERSION` change, paid `pnp run/extract/state/dedup` without
+  `--estimate`, and commits on `main`. A block is a rule, not a bug: stop and
+  ask the human (overrides are env vars, listed in the script header).
+  Self-check: `python .claude/hooks/test_guard.py`.
 - The wiki agent is **not** in this repo — it's the separate `pnp-export-data`
   repo, a pure client of the KB API. Don't re-add wiki code here.
 - Each active service has its own venv. The repo-root `.venv` belongs to the

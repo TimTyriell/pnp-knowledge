@@ -46,12 +46,14 @@ Cross-repo plans live in their own repos: `pnp-crawl/docs/plans/`,
 2. **Never call DeepSeek.** No `pnp run`, `pnp extract`, `pnp dedup`,
    `pnp state` without `--estimate`. A step that needs a paid run is marked
    **HUMAN RUN** — stop there, write what you need into the PR description,
-   and hand over.
+   and hand over. Enforced by `.claude/hooks/guard.ps1`.
 3. **Never edit `knowledge/`** except where a plan explicitly says so. The
    bundle is written by `pnp run`, not by hand. `knowledge/entity_rules.yaml`
-   is hand-written and may be edited when a plan says so.
-4. **Never bump `PROMPT_VERSION` / `EXTRACT_PROMPT_VERSION`** unless the plan
-   says so. A bump re-extracts the whole corpus (~$6.50) and renames concept
+   is hand-written and may be edited when a plan says so. Enforced by the
+   guard; a plan that needs a bundle edit says so and the human sets
+   `PNP_ALLOW_BUNDLE_EDIT=1`.
+4. **Never bump a `*_PROMPT_VERSION`** (`EXTRACT_`, `SYNTH_`, `STATE_` in
+   `prompts.py`) unless the plan says so. Enforced by the guard. A bump re-extracts the whole corpus (~$6.50) and renames concept
    ids (PIPELINE.md §4, §6).
 5. Tests run from `services/kb` with its own venv:
    `cd services/kb && .venv/Scripts/python.exe -m pytest -q`.
