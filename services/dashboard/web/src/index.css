@@ -24,6 +24,7 @@
 
 .start-shell { max-width: 920px; }
 .start-brand { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
+.start-dashboard { margin-left: auto; }
 .brand-mark { display: grid; place-items: center; width: 50px; height: 50px; border-radius: 15px; background: var(--accent); color: var(--primary); }
 .brand-mark svg { width: 27px; height: 27px; }
 .eyebrow { margin: 0 0 5px; color: var(--primary); font-size: 11px; font-weight: 750; letter-spacing: .13em; text-transform: uppercase; }
@@ -109,6 +110,8 @@
 .history-list { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
 .history-row p { margin: 6px 0 0; color: var(--muted-foreground); font-size: 12px; }
 .editor-label { display: flex; align-items: center; justify-content: space-between; }
+.format-toolbar { display: flex; gap: 6px; margin: -3px 0; }
+.latest-body { max-height: 200px; overflow: auto; margin: 8px 0 12px; padding: 10px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); color: var(--foreground); }
 .edit-preview { min-height: 180px; padding: 12px; border: 1px solid var(--border); border-radius: 8px; }
 .related-picker { display: grid; gap: 8px; max-height: 180px; overflow: auto; padding: 12px; border: 1px solid var(--border); border-radius: 8px; }
 .related-picker label { display: flex; align-items: center; gap: 7px; font-weight: 450; }
