@@ -52,3 +52,38 @@ No live model-provider call was made or used for verification. No real campaign
 content has been migrated. Installer packaging and remote CI execution remain
 out of scope. Do not mark the first release complete until the acceptance
 conditions in `intent.md` have evidence.
+
+## Imported Windows campaign regression (2026-11-04)
+
+The existing imported workspace contained all 1,182 entries and all 1,193
+original files, with no missing or changed files. Reading/importing succeeded,
+but editing an imported entry failed: all concept files used CRLF, while the
+editor's three frontmatter reads omitted the newline normalization already
+used by the reader. The fix normalizes reads without rewriting imported files.
+
+- The CRLF metadata-preservation and reciprocal-link regressions failed before
+  the fix. Dashboard pytest now passes 69 checks; backend Ruff passes.
+- An isolated copy of the real ZIP passed import (201), ordinary edit (200),
+  and export (200). Only the edited concept changed; no original file was
+  missing. Export added the expected workbench metadata file. IDs, rich
+  relationships, custom frontmatter, and untouched documents were preserved.
+- Fictional browser regressions reproduced internal links leaving the app,
+  read-only Session documents offering Edit, and an unbounded 1,182-entry list
+  hiding selected details on a narrow viewport.
+- The fixes resolve exact campaign link targets inside the workbench, explain
+  read-only documents, bound the list, and reveal selected details when needed
+  on narrow screens. Unit tests pass 10 checks, TypeScript and production build
+  pass, and lint exits 0 with the same two generated-component warnings.
+- The complete Chromium suite passes 15 tests with no retries, failures, or
+  skips. The new cases exercise CRLF import/edit/export through the real API,
+  root and relative Markdown links, read-only Session pages, and all 1,182
+  fictional entries at 390 by 844 pixels.
+- All six canonical Linux visual comparisons pass against unchanged baselines,
+  with no failures, skips, or flaky tests. Evidence is saved separately at
+  `.tools/linux-visual-imported-evidence/results.json`. The verified image ID
+  and Node/Python versions match the earlier Linux run documented above.
+
+The private bundle and the user's existing workspace were not modified. No
+provider calls were made. Remote CI was not run. Restart the workbench server
+and refresh the browser to load the fixes; the existing imported campaign can
+be reopened without another import.
