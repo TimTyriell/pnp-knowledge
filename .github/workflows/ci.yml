@@ -122,11 +122,79 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Lint frontend
+        run: npm run lint
+
+      - name: Check TypeScript
+        run: npm run typecheck
+
       - name: Run tests
         run: npm test
 
       - name: Build production frontend
         run: npm run build
+
+  dashboard-browser:
+    name: Dashboard browser tests
+    runs-on: ubuntu-24.04
+    # Keep the image and the locked @playwright/test version aligned. The same
+    # image generates visual baselines, so fonts and browser rendering match.
+    container: mcr.microsoft.com/playwright:v1.64.1-noble
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: services/dashboard/web
+    env:
+      PNP_TEST_PYTHON: python
+      CI: "true"
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: services/dashboard/web/package-lock.json
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python dependencies
+        run: python -m pip install -e ../../kb -e "..[dev]"
+
+      - name: Install frontend dependencies
+        run: npm ci
+
+      - name: Build production frontend
+        run: npm run build
+
+      - name: Browser behavior
+        run: npx playwright test --project=chromium --output=test-results/behavior
+        env:
+          PLAYWRIGHT_HTML_OUTPUT_DIR: playwright-report/behavior
+          PLAYWRIGHT_JSON_OUTPUT_FILE: test-results/behavior/results.json
+
+      - name: Visual comparisons
+        if: ${{ !cancelled() }}
+        run: npx playwright test --project=visual-chromium --output=test-results/visual
+        env:
+          PLAYWRIGHT_HTML_OUTPUT_DIR: playwright-report/visual
+          PLAYWRIGHT_JSON_OUTPUT_FILE: test-results/visual/results.json
+
+      - name: Upload browser evidence
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: dashboard-browser-evidence
+          path: |
+            services/dashboard/web/playwright-report/
+            services/dashboard/web/test-results/
+          retention-days: 7
+          if-no-files-found: ignore
 
   summary:
     name: services/summary

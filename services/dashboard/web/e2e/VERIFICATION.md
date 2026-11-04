@@ -11,7 +11,7 @@ Windows used Python 3.11.15. Linux used Python 3.11.18 inside
 | `npm run typecheck` | Application, unit tests, configuration, browser tests passed |
 | `npm run lint` | Passed; two existing shadcn Fast Refresh export warnings |
 | `npm run build` | Passed; existing bundle-size warning |
-| Dashboard pytest | 66 passed on Windows, including lock contention regression |
+| Dashboard pytest | 66 passed on Windows and 66 on Linux, including lock contention regression |
 | Chromium behavior, `--repeat-each=2 --workers=2` | 24 passed on Windows and 24 on Linux |
 | Linux visual comparison, `--repeat-each=2 --workers=2` | 12 passed against six reviewed PNGs, without updating them |
 | Harness self-check | Concurrent ports/storage isolated, missing interpreter explained, inherited key disabled, stopped servers unreachable |
