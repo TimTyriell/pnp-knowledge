@@ -1,22 +1,37 @@
 # Workbench verification
 
-Status: implementation complete; visual browser QA and remote CI remain pending.
-This is not a release sign-off.
+Status: implementation and local functional/visual checks complete; remote CI
+remains pending. This is not a release sign-off.
 
 ## Completed evidence
 
-- Backend: 65 checks passed (38 workbench and 27 existing dashboard checks);
-  Ruff was clean (implementation lead report, 2026-11-04).
+- Backend: 66 checks passed in the shared checkout (39 workbench and 27 existing
+  dashboard checks), including the parallel agent's lock-contention regression.
+  Backend Ruff checks also passed (2026-11-04).
 - KB read API/OKF checks: 55 passed. Extraction retry/guard checks: 17 passed
   (implementation lead report, 2026-11-04).
-- Frontend tests: `npm test` passed 8 tests in 2 files. The rendered authoring
-  flows open a listed campaign, save a Location and verify its request type and
-  rendered row, then navigate away from and back to an unsaved draft.
-- `npm run typecheck` passed in the shared checkout. `npm run build` passed; Vite
-  reported a non-blocking 791 KB JavaScript chunk advisory.
-- `oxlint src` passed with two Fast Refresh warnings from generated shadcn
-  components. The broader `npm run lint` currently fails on three hook-rule
-  errors in the concurrently maintained `e2e/fixtures.ts`.
+- Frontend tests: `npm test -- --reporter=dot` passed 8 tests in 2 files. The
+  rendered authoring flows open a listed campaign, save a Location and verify
+  its request type and rendered row, then navigate away from and back to an
+  unsaved draft.
+- `npm run typecheck` and `npm run build` passed. Vite reported a non-blocking
+  791 KB JavaScript chunk advisory.
+- `npm run lint` exited 0 with two Fast Refresh warnings in generated shadcn
+  button and badge components.
+- Browser E2E: `npm run test:e2e` passed all 12 Chromium tests with no flaky
+  retries. It used the local workbench Python environment and isolated browser
+  cache.
+- Canonical Linux visual comparison: all six desktop/narrow screenshots passed
+  against existing baselines; no baseline updates were made. The run used
+  `mcr.microsoft.com/playwright:v1.64.1-noble`, local image ID
+  `sha256:2f05f8a734509a7b3f26a912639488ee08f58a7b292d14d62271bcff9038768f`,
+  Node 26.13.0, and Python 3.12.3. JSON evidence reports 6 expected and 0
+  unexpected tests at `.tools/linux-visual-evidence/results.json`; the HTML
+  report is at `.tools/linux-visual-evidence/playwright-report/index.html`.
+  These image runtimes differ from the project's documented Node 24 and Python
+  3.11 setup.
+- All six existing baseline images were also inspected for clipping and
+  readability. Their files were left unchanged.
 - Review preserves corrected notes in review state, restores accepted
   suggestions as actionable when restoring an earlier bundle revision, and
   groups same-name Character/NPC mentions from one source into one person
@@ -31,14 +46,7 @@ This is not a release sign-off.
   process was stopped and the endpoint was confirmed down. It skipped the
   broken dashboard `.venv` and used `.tools/workbench-venv`. At that time the
   available `web/dist` was the older technical dashboard build.
-- Remote GitHub Actions were not run; the current workflow includes changes from
-  another active workstream and was not revalidated here.
-
-## Pending evidence
-
-- Visual browser QA was unavailable because the connected browser host returned
-  no browser inventory. Canonical Linux visual/browser E2E has not run. The HTTP
-  smoke covered backend behavior and built asset serving, not visual interaction.
+- Remote GitHub Actions were not run.
 
 No live model-provider call was made or used for verification. No real campaign
 content has been migrated. Installer packaging and remote CI execution remain

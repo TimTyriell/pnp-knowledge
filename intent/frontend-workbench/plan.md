@@ -1,7 +1,7 @@
 # Implementation plan: local campaign workbench
 
-Status: implementation and local checks complete; visual/browser E2E pending,
-2026-11-04
+Status: implementation and local functional/visual checks complete; remote CI
+pending, 2026-11-04
 
 ## Sequence and files
 
