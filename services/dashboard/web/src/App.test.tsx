@@ -94,6 +94,55 @@ const reviewWorkspace = {
     },
   ],
 };
+const importedWorkspace = {
+  ...campaign,
+  entries: [
+    {
+      concept: "npcs/runa",
+      title: "Runa",
+      type: "NPC",
+      body: "See [root link](/locations/moonfall-pier.md), [relative link](../locations/moonfall-pier.md), [outside](https://example.com), [protocol relative](//locations/moonfall-pier.md), and [wrong prefix](/archive/locations/moonfall-pier.md).",
+      aliases: [],
+      related: [],
+      editable: true,
+    },
+    {
+      concept: "locations/moonfall-pier",
+      title: "Moonfall Pier",
+      type: "Location",
+      body: "A quiet landing by the lighthouse.",
+      aliases: [],
+      related: [],
+      editable: true,
+    },
+    {
+      concept: "sessions/session-one",
+      title: "Session One",
+      type: "Session",
+      body: "Imported material retained as read-only content.",
+      aliases: [],
+      related: [],
+      editable: false,
+    },
+  ],
+  sources: [],
+  jobs: [],
+  proposals: [],
+  history: [{ revision: "r1", message: "Imported", created_at: "2026-10-28T12:00:00Z" }],
+};
+function serveImportedWorkspace() {
+  vi.stubGlobal(
+    "fetch",
+    vi.fn(async (input: RequestInfo | URL) => {
+      const url = String(input);
+      if (url.endsWith("/config"))
+        return Response.json({ ai_available: false, model: null, max_source_chars: 120000 });
+      if (url === "/api/workspaces") return Response.json([campaign]);
+      if (url === `/api/workspaces/${campaign.id}`) return Response.json(importedWorkspace);
+      return new Response("", { status: 404 });
+    }),
+  );
+}
 function serveReviewWorkspace() {
   const fetchMock = vi.fn(
     async (input: RequestInfo | URL, _init?: RequestInit) => {
@@ -175,6 +224,45 @@ describe("campaign workbench startup", () => {
     expect(
       screen.getByRole("button", { name: /technical dashboard/i }),
     ).toBeInTheDocument();
+  });
+
+  it("opens a root-relative concept link in the workbench", async () => {
+    serveImportedWorkspace();
+    renderApp();
+    fireEvent.click(await screen.findByRole("button", { name: /moonfall/i }));
+    fireEvent.click(await screen.findByRole("button", { name: /runa/i }));
+    expect(screen.getByRole("link", { name: "outside" })).toHaveAttribute("href", "https://example.com");
+    expect(screen.getByRole("link", { name: "protocol relative" })).toHaveAttribute("href", "//locations/moonfall-pier.md");
+    expect(screen.getByRole("link", { name: "wrong prefix" })).toHaveAttribute("href", "/archive/locations/moonfall-pier.md");
+
+    fireEvent.click(screen.getByRole("link", { name: "root link" }));
+
+    expect(
+      await screen.findByText("A quiet landing by the lighthouse.", {
+        exact: true,
+      }),
+    ).toBeInTheDocument();
+    expect(screen.getByRole("navigation", { name: "Campaign sections" })).toBeInTheDocument();
+    fireEvent.click(await screen.findByRole("button", { name: /runa/i }));
+    fireEvent.click(screen.getByRole("link", { name: "relative link" }));
+    expect(
+      await screen.findByText("A quiet landing by the lighthouse.", {
+        exact: true,
+      }),
+    ).toBeInTheDocument();
+  });
+
+  it("explains imported read-only content and does not offer Edit", async () => {
+    serveImportedWorkspace();
+    renderApp();
+    fireEvent.click(await screen.findByRole("button", { name: /moonfall/i }));
+    fireEvent.click(await screen.findByRole("button", { name: /session one/i }));
+
+    expect(
+      screen.getByText("Imported material retained as read-only content."),
+    ).toBeInTheDocument();
+    expect(screen.getByText(/Imported Session content is read-only/)).toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: "Edit entry" })).not.toBeInTheDocument();
   });
 
   it("creates and opens a campaign from the start screen", async () => {

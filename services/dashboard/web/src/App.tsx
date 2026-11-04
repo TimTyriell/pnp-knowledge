@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
@@ -114,6 +114,8 @@ export default function App() {
   const [search, setSearch] = useState("");
   const [typeFilter, setTypeFilter] = useState("all");
   const [entryId, setEntryId] = useState<string | null>(null);
+  const detailRef = useRef<HTMLDivElement>(null);
+  const shouldRevealSelection = useRef(false);
   const [editing, setEditing] = useState(false);
   const activeEditor = useRef<{
     campaignId: string | null;
@@ -250,6 +252,26 @@ export default function App() {
     onSuccess: invalidate,
   });
 
+  useEffect(() => {
+    const hasSelectedEntry =
+      campaign.data?.entries.some((entry) => entry.concept === entryId) ??
+      false;
+    if (
+      !shouldRevealSelection.current ||
+      view !== "knowledge" ||
+      !hasSelectedEntry
+    )
+      return;
+    shouldRevealSelection.current = false;
+    if (window.innerWidth > 760 || !detailRef.current) return;
+
+    const title = detailRef.current.querySelector('[data-slot="card-title"]');
+    const bounds = title?.getBoundingClientRect();
+    if (!bounds || bounds.top < 0 || bounds.bottom > window.innerHeight) {
+      detailRef.current.scrollIntoView({ block: "start" });
+    }
+  }, [campaign.data, entryId, view]);
+
   if (view === "dashboard")
     return (
       <div className="legacy-shell">
@@ -314,6 +336,12 @@ export default function App() {
   const safeBulk = pending.filter(
     (proposal) => !proposal.needs_decision && !proposal.target,
   );
+  const navigateToEntry = (concept: string) => {
+    shouldRevealSelection.current = true;
+    setView("knowledge");
+    setEntryId(concept);
+    setEditing(false);
+  };
 
   async function exportBundle() {
     try {
@@ -428,10 +456,7 @@ export default function App() {
                     <li key={entry.concept}>
                       <button
                         className={entryId === entry.concept ? "active" : ""}
-                        onClick={() => {
-                          setEntryId(entry.concept);
-                          setEditing(false);
-                        }}
+                        onClick={() => navigateToEntry(entry.concept)}
                       >
                         <span>{entry.title}</span>
                         <Badge variant="outline">{entry.type}</Badge>
@@ -453,12 +478,13 @@ export default function App() {
               )}
             </CardContent>
           </Card>
-          <Card className="entry-detail">
+          <Card ref={detailRef} className="entry-detail">
             {entryId ? (
               <EntryPanel
                 key={entryId}
                 workspace={data}
                 entry={selected}
+                onNavigate={navigateToEntry}
                 editing={editing}
                 onEdit={() => setEditing(true)}
                 onCancel={() => {
@@ -481,8 +507,8 @@ export default function App() {
                 <BookOpen />
                 <h2>Select an entry</h2>
                 <p>
-                  Choose something from the list, or add a new piece of campaign
-                  knowledge.
+                  Choose something from the list, or add a new piece of
+                  campaign knowledge.
                 </p>
                 <Button
                   onClick={() => {
@@ -522,6 +548,7 @@ export default function App() {
       {view === "review" && (
         <ReviewPanel
           workspace={data}
+          onNavigate={navigateToEntry}
           pending={pending}
           safeBulk={safeBulk}
           onApply={(decisions) =>
@@ -734,9 +761,97 @@ function StartPage({
   );
 }
 
+function linkedConcept(
+  sourceConcept: string,
+  href: string | undefined,
+  entries: Entry[],
+): string | null {
+  if (
+    !href ||
+    href.startsWith("#") ||
+    href.startsWith("//") ||
+    /^[a-z][a-z\d+.-]*:/i.test(href)
+  )
+    return null;
+
+  const rawPath = href.split(/[?#]/, 1)[0] ?? "";
+  const targetFromUrl = (url: URL, origin: string) => {
+    if (url.origin !== origin) return null;
+    let decoded: string;
+    try {
+      decoded = decodeURIComponent(url.pathname).replace(/\\/g, "/");
+    } catch {
+      return null;
+    }
+    const conceptPath = decoded
+      .replace(/^\/+/, "")
+      .replace(/\.md$/i, "")
+      .replace(/\/+$/, "");
+    return entries.find((entry) => entry.concept === conceptPath)?.concept ?? null;
+  };
+
+  try {
+    const root = new URL("https://workbench.invalid/");
+    const isRelativeTraversal = rawPath.startsWith("./") || rawPath.startsWith("../");
+    if (!isRelativeTraversal) {
+      const rootTarget = targetFromUrl(new URL(rawPath, root), root.origin);
+      if (rootTarget) return rootTarget;
+    }
+    const base = new URL(`${sourceConcept}.md`, root);
+    return targetFromUrl(new URL(rawPath, base), root.origin);
+  } catch {
+    return null;
+  }
+}
+
+function EntryMarkdown({
+  sourceConcept,
+  workspace,
+  onNavigate,
+  children,
+}: {
+  sourceConcept: string;
+  workspace: Workspace;
+  onNavigate: (concept: string) => void;
+  children: string;
+}) {
+  return (
+    <ReactMarkdown
+      components={{
+        a: ({ href, children: linkChildren, node, ...props }) => {
+          void node;
+          const target = linkedConcept(
+            sourceConcept,
+            href,
+            workspace.entries,
+          );
+          return (
+            <a
+              {...props}
+              href={href}
+              onClick={(event) => {
+                props.onClick?.(event);
+                if (target && !event.defaultPrevented) {
+                  event.preventDefault();
+                  onNavigate(target);
+                }
+              }}
+            >
+              {linkChildren}
+            </a>
+          );
+        },
+      }}
+    >
+      {children}
+    </ReactMarkdown>
+  );
+}
+
 function EntryPanel({
   workspace,
   entry,
+  onNavigate,
   editing,
   onEdit,
   onCancel,
@@ -746,6 +861,7 @@ function EntryPanel({
 }: {
   workspace: Workspace;
   entry: Entry | null;
+  onNavigate: (concept: string) => void;
   editing: boolean;
   onEdit: () => void;
   onCancel: () => void;
@@ -798,7 +914,7 @@ function EntryPanel({
   };
   const outOfDate = draft.baseRevision !== workspace.revision;
   const [preview, setPreview] = useState(false);
-  if (!editing)
+  if (!editing || (entry !== null && !entry.editable))
     return (
       <>
         <CardHeader>
@@ -807,12 +923,19 @@ function EntryPanel({
               <Badge variant="outline">{entry?.type}</Badge>
               <CardTitle>{entry?.title}</CardTitle>
             </div>
-            <Button variant="outline" onClick={onEdit}>
-              Edit entry
-            </Button>
+            {entry?.editable && (
+              <Button variant="outline" onClick={onEdit}>
+                Edit entry
+              </Button>
+            )}
           </div>
         </CardHeader>
         <CardContent>
+          {entry && !entry.editable && (
+            <p className="read-only-note" role="status">
+              Imported {entry.type} content is read-only in the workbench. It remains available here and in exported bundles.
+            </p>
+          )}
           <div className="entry-meta">
             <strong>Aliases</strong>
             <span>
@@ -821,9 +944,15 @@ function EntryPanel({
           </div>
           <h3>Description and notes</h3>
           <div className="markdown-preview">
-            <ReactMarkdown>
-              {entry?.body || "*No description yet.*"}
-            </ReactMarkdown>
+            {entry && (
+              <EntryMarkdown
+                sourceConcept={entry.concept}
+                workspace={workspace}
+                onNavigate={onNavigate}
+              >
+                {entry.body || "*No description yet.*"}
+              </EntryMarkdown>
+            )}
           </div>
           <h3>Connected entries</h3>
           <div className="related-list">
@@ -922,9 +1051,19 @@ function EntryPanel({
           </div>
           {preview ? (
             <div className="markdown-preview edit-preview">
-              <ReactMarkdown>
-                {draft.body || "*Nothing to preview yet.*"}
-              </ReactMarkdown>
+              {entry ? (
+                <EntryMarkdown
+                  sourceConcept={entry.concept}
+                  workspace={workspace}
+                  onNavigate={onNavigate}
+                >
+                  {draft.body || "*Nothing to preview yet.*"}
+                </EntryMarkdown>
+              ) : (
+                <ReactMarkdown>
+                  {draft.body || "*Nothing to preview yet.*"}
+                </ReactMarkdown>
+              )}
             </div>
           ) : (
             <>
@@ -1005,9 +1144,15 @@ function EntryPanel({
               </p>
               <strong>Latest saved content</strong>
               <div className="latest-body">
-                <ReactMarkdown>
-                  {entry?.body || "*No saved description*"}
-                </ReactMarkdown>
+                {entry && (
+                  <EntryMarkdown
+                    sourceConcept={entry.concept}
+                    workspace={workspace}
+                    onNavigate={onNavigate}
+                  >
+                    {entry.body || "*No saved description*"}
+                  </EntryMarkdown>
+                )}
               </div>
               <Button
                 type="button"
@@ -1283,6 +1428,7 @@ function SourcesPanel({
 
 function ReviewPanel({
   workspace,
+  onNavigate,
   pending,
   safeBulk,
   onApply,
@@ -1290,6 +1436,7 @@ function ReviewPanel({
   error,
 }: {
   workspace: Workspace;
+  onNavigate: (concept: string) => void;
   pending: Proposal[];
   safeBulk: Proposal[];
   onApply: (
@@ -1420,11 +1567,22 @@ function ReviewPanel({
                             (entry) => entry.concept === proposal.target,
                           )?.title ?? proposal.target}
                         </strong>
-                        <ReactMarkdown>
-                          {workspace.entries.find(
+                        {(() => {
+                          const target = workspace.entries.find(
                             (entry) => entry.concept === proposal.target,
-                          )?.body || "*No current notes*"}
-                        </ReactMarkdown>
+                          );
+                          return target ? (
+                            <EntryMarkdown
+                              sourceConcept={target.concept}
+                              workspace={workspace}
+                              onNavigate={onNavigate}
+                            >
+                              {target.body || "*No current notes*"}
+                            </EntryMarkdown>
+                          ) : (
+                            <ReactMarkdown>*No current notes*</ReactMarkdown>
+                          );
+                        })()}
                       </div>
                     ) : (
                       <p className="subtle">
