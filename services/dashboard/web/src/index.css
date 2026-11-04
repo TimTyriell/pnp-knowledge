@@ -104,7 +104,7 @@
 .evidence-box p { margin-bottom: 0; white-space: pre-wrap; }
 .identity-choice { display: grid; gap: 7px; margin-top: 16px; }
 .identity-choice label { font-size: 12px; font-weight: 650; }
-.proposal-actions, .form-actions { display: flex; align-items: center; gap: 8px; margin-top: 16px; }
+.proposal-actions, .form-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 16px; }
 .form-actions { justify-content: flex-end; }
 .sticky-review { position: sticky; bottom: 12px; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 16px; border: 1px solid var(--border); border-radius: 12px; background: color-mix(in oklch, var(--card), transparent 4%); box-shadow: 0 8px 30px #2b220d20; }
 .history-list { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }

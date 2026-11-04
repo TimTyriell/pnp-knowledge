@@ -1,0 +1,8 @@
+{
+  "browser": {
+    "browserName": "chromium",
+    "isolated": true,
+    "launchOptions": { "channel": "chromium" }
+  },
+  "outputDir": "test-results/exploration"
+}
