@@ -100,10 +100,6 @@ def workspace_lock(path: Path):
     # OS locks are released even if a worker is killed; a stale file cannot block recovery.
     with (path / ".lock").open("a+b") as stream:
         stream.seek(0)
-        if not stream.read(1):
-            stream.write(b"0")
-            stream.flush()
-        stream.seek(0)
         try:
             if os.name == "nt":
                 import msvcrt
@@ -116,6 +112,10 @@ def workspace_lock(path: Path):
         except OSError as exc:
             raise WorkbenchError("Campaign is being saved. Please try again.", 409) from exc
         try:
+            # Windows also denies reads of a byte locked by another request.
+            if not stream.read(1):
+                stream.write(b"0")
+                stream.flush()
             yield
         finally:
             stream.seek(0)

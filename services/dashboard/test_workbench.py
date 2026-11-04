@@ -58,6 +58,19 @@ def test_create_edit_reopen_and_keep_identity(client):
     assert reopened["entries"][0]["title"] == "Mara Silberhand"
 
 
+def test_contended_workspace_lock_is_a_conflict_and_can_be_reacquired(tmp_path):
+    from workbench import WorkbenchError, workspace_lock
+
+    with workspace_lock(tmp_path):
+        with pytest.raises(WorkbenchError) as conflict:
+            with workspace_lock(tmp_path):
+                pytest.fail("A second writer must not acquire the workspace lock")
+        assert conflict.value.status == 409
+    with workspace_lock(tmp_path):
+        pass
+    assert (tmp_path / ".lock").read_bytes() == b"0"
+
+
 def test_stale_edit_does_not_overwrite_newer_content(client):
     original = campaign(client)
     changed = add_entry(client, original)
