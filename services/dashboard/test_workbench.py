@@ -707,16 +707,21 @@ def test_related_entries_are_written_as_standard_relationships(client):
     assert {edge["target"] for edge in frontmatter["relationships"]} == {target}
 
 
-def test_edit_preserves_rich_relationship_metadata(client):
+@pytest.mark.parametrize("newline", ["\n", "\r\n"])
+def test_edit_preserves_rich_relationship_metadata(client, newline):
     common = (
         "type: NPC\nid: NPC_{name}\ntitle: {name}\ndescription: Person\n"
-        "tags: [npcs]\ntimestamp: '2026-11-03T00:00:00Z'\n"
+        "tags: [npcs]\ntimestamp: '2026-11-03T00:00:00Z'\ncustom: keep-me\n"
     )
     left_rel = "relationships:\n- target: npcs/bryn\n  kind: sibling\n  note: raised together\n"
     right_rel = "relationships:\n- target: npcs/mara\n  kind: sibling\n  note: raised together\n"
     files = {
-        "bundle/coast/npcs/mara.md": f"---\n{common.format(name='MARA')}{left_rel}---\n\nA keeper.\n",
-        "bundle/coast/npcs/bryn.md": f"---\n{common.format(name='BRYN')}{right_rel}---\n\nA sibling.\n",
+        "bundle/coast/npcs/mara.md": f"---\n{common.format(name='MARA')}{left_rel}---\n\nA keeper.\n".replace(
+            "\n", newline
+        ),
+        "bundle/coast/npcs/bryn.md": f"---\n{common.format(name='BRYN')}{right_rel}---\n\nA sibling.\n".replace(
+            "\n", newline
+        ),
     }
     imported = client.post("/api/workspaces/import?name=Imported", content=archive(files)).json()
     mara = next(entry for entry in imported["entries"] if entry["concept"] == "npcs/mara")
@@ -734,7 +739,10 @@ def test_edit_preserves_rich_relationship_metadata(client):
     assert response.status_code == 200, response.text
     exported = client.get(f"/api/workspaces/{imported['id']}/export")
     with zipfile.ZipFile(io.BytesIO(exported.content)) as zipped:
-        frontmatter = yaml.safe_load(zipped.read("bundle/coast/npcs/mara.md").decode().split("---", 2)[1])
+        mara_raw = zipped.read("bundle/coast/npcs/mara.md").decode()
+        frontmatter = yaml.safe_load(mara_raw.split("---", 2)[1])
+        bryn_raw = zipped.read("bundle/coast/npcs/bryn.md").decode()
+        bryn_frontmatter = yaml.safe_load(bryn_raw.split("---", 2)[1])
     assert frontmatter["relationships"] == [
         {
             "target": "npcs/bryn",
@@ -742,6 +750,67 @@ def test_edit_preserves_rich_relationship_metadata(client):
             "note": "raised together",
         }
     ]
+    assert frontmatter["id"] == "NPC_MARA"
+    assert frontmatter["custom"] == "keep-me"
+    assert "Updated description." in mara_raw
+    assert bryn_frontmatter["id"] == "NPC_BRYN"
+    assert bryn_frontmatter["custom"] == "keep-me"
+    assert bryn_frontmatter["relationships"] == [{"target": "npcs/mara", "kind": "sibling", "note": "raised together"}]
+    assert "A sibling." in bryn_raw
+
+
+@pytest.mark.parametrize("removing", [False, True])
+def test_crlf_relationship_updates_preserve_target_and_unedited_file(client, removing):
+    newline = "\r\n"
+    common = "description: Keep this field\ntimestamp: '2026-11-03T00:00:00Z'\ncustom: keep-me\n"
+    source_edges = (
+        "workbench_related: [locations/tower]\nrelationships:\n- target: locations/tower\n  workbench_managed: true\n"
+        if removing
+        else ""
+    )
+    target_edges = "relationships:\n- target: npcs/mara\n  workbench_managed: true\n" if removing else ""
+    files = {
+        "bundle/coast/npcs/mara.md": (
+            f"---\ntype: NPC\nid: NPC_MARA\ntitle: Mara\ntags: [npcs]\n{common}{source_edges}---\n\nMara body.\n"
+        ).replace("\n", newline),
+        "bundle/coast/locations/tower.md": (
+            "---\ntype: Location\nid: LOC_TOWER\ntitle: Tower\ntags: [locations]\n"
+            f"{common}{target_edges}---\n\nTower body.\n"
+        ).replace("\n", newline),
+        "bundle/coast/items/key.md": (
+            f"---\ntype: Item\nid: ITEM_KEY\ntitle: Key\ntags: [items]\n{common}---\n\nUntouched item.\n"
+        ).replace("\n", newline),
+    }
+    imported_response = client.post("/api/workspaces/import?name=Imported", content=archive(files))
+    assert imported_response.status_code == 201, imported_response.text
+    imported = imported_response.json()
+    mara = next(entry for entry in imported["entries"] if entry["concept"] == "npcs/mara")
+    target = "locations/tower" if not removing else None
+    response = client.put(
+        f"/api/workspaces/{imported['id']}/entries/npcs/mara",
+        json={
+            "base_revision": imported["revision"],
+            "title": mara["title"],
+            "type": mara["type"],
+            "body": mara["body"],
+            "aliases": mara["aliases"],
+            "related": [target] if target else [],
+        },
+    )
+    assert response.status_code == 200, response.text
+    exported = client.get(f"/api/workspaces/{imported['id']}/export")
+    with zipfile.ZipFile(io.BytesIO(exported.content)) as zipped:
+        mara_raw = zipped.read("bundle/coast/npcs/mara.md")
+        tower_raw = zipped.read("bundle/coast/locations/tower.md")
+        untouched = zipped.read("bundle/coast/items/key.md")
+    mara_fm = yaml.safe_load(mara_raw.decode().split("---", 2)[1])
+    tower_fm = yaml.safe_load(tower_raw.decode().split("---", 2)[1])
+    expected = {"locations/tower"} if target else set()
+    assert {edge["target"] for edge in mara_fm.get("relationships", [])} == expected
+    assert {edge["target"] for edge in tower_fm.get("relationships", [])} == ({"npcs/mara"} if target else set())
+    assert mara_fm["custom"] == tower_fm["custom"] == "keep-me"
+    assert "Mara body." in mara_raw.decode() and "Tower body." in tower_raw.decode()
+    assert untouched == files["bundle/coast/items/key.md"].encode()
 
 
 def test_import_rejects_malformed_relationship_edges(client):

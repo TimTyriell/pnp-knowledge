@@ -291,7 +291,7 @@ class WorkspaceStore:
             if cid in existing:
                 cid += "_" + uuid.uuid4().hex[:8]
         filename = self.entry_file(state, cid)
-        fm = split_document(files[filename].decode("utf-8-sig"))[0] if filename in files else {}
+        fm = split_document(files[filename].decode("utf-8-sig").replace("\r\n", "\n"))[0] if filename in files else {}
         typed_id = fm.get("id") or f"{ID_PREFIX[payload.type]}_{cid.split('/')[-1].upper()}"
         old_related = set(fm.get("workbench_related", []))
         relationships = fm.get("relationships", [])
@@ -305,7 +305,7 @@ class WorkspaceStore:
                 relationships.append({"target": target, "workbench_managed": True})
         for target in removed:
             target_file = self.entry_file(state, target)
-            target_fm, target_body = split_document(files[target_file].decode("utf-8-sig"))
+            target_fm, target_body = split_document(files[target_file].decode("utf-8-sig").replace("\r\n", "\n"))
             reverse = target_fm.get("relationships", [])
             filtered = [edge for edge in reverse if not (edge.get("target") == cid and edge.get("workbench_managed"))]
             if len(filtered) != len(reverse):
@@ -327,7 +327,7 @@ class WorkspaceStore:
         files[filename] = render_document(fm, payload.body).encode("utf-8")
         for target in payload.related:
             target_file = self.entry_file(state, target)
-            target_fm, target_body = split_document(files[target_file].decode("utf-8-sig"))
+            target_fm, target_body = split_document(files[target_file].decode("utf-8-sig").replace("\r\n", "\n"))
             reverse = target_fm.get("relationships", [])
             if not any(edge["target"] == cid for edge in reverse):
                 reverse.append({"target": cid, "workbench_managed": True})
