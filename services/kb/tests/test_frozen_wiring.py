@@ -1,3 +1,4 @@
+import pytest
 from pnp_okf.config import DeepSeekConfig, Paths
 from pnp_okf.frozen import FrozenStore, write_json
 from pnp_okf.models import Segment, SessionExtraction, SessionTranscript
@@ -83,11 +84,22 @@ def test_run_state_applies_frozen_state_without_a_call(tmp_path):
     assert set(run.states) == {"s1", "s2"}
 
 
+@pytest.mark.parametrize("estimate", [False, True])
+def test_frozen_state_cache_miss_does_not_call_model(tmp_path, estimate):
+    from pnp_okf.frozen import FrozenError
+    from pnp_okf.state import run_state
+    t = _transcript()
+    _freeze(tmp_path, [t])
+    with pytest.raises(FrozenError, match="no frozen state or cached state"):
+        run_state([t], _cfg(), tmp_path / "empty-cache", [], client=_Boom(),
+                  estimate=estimate, frozen=FrozenStore.load(tmp_path))
+
+
 def test_run_state_frozen_prefix_then_cached_call(tmp_path, monkeypatch):
     import pnp_okf.state as state
     from pnp_okf.state import SessionState, ThreadUpdate, run_state
     transcripts = [_transcript("s1", "2026-01-01"), _transcript("s2", "2026-01-02")]
-    _freeze(tmp_path, transcripts)
+    _freeze(tmp_path, transcripts[:1])
     first = SessionState(threads=[ThreadUpdate(
         thread_id="threads/ausweg", title="Ausweg", kind="quest",
         status="open", note="n", citation_ts="00:00:00",
@@ -109,5 +121,7 @@ def test_thaw_flag_parses():
 
 
 def test_paths_default_transcripts_is_the_sibling_checkout(monkeypatch):
+    from pathlib import Path
     monkeypatch.delenv("PNP_TRANSCRIPT_DIR", raising=False)
-    assert Paths.resolve().transcript_dir.parts[-2:] == ("pnp-crawl", "transcripts_final")
+    workspace = next(p for p in Path(__file__).resolve().parents if (p / "pnp-crawl").is_dir())
+    assert Paths.resolve().transcript_dir == workspace / "pnp-crawl" / "transcripts_final"

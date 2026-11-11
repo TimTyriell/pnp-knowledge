@@ -190,12 +190,13 @@ class Paths:
 def default_transcript_dir() -> Path:
     """pnp-crawl's transcripts, as a sibling checkout of this repo.
 
-    ``PNP_TRANSCRIPT_DIR`` wins. The fallback is anchored on this file, not
-    the cwd: services/kb/src/pnp_okf/config.py -> parents[5] is the folder
-    holding pnp-knowledge and pnp-crawl side by side.
+    ``PNP_TRANSCRIPT_DIR`` wins. The fallback finds the workspace containing
+    the sibling ``pnp-crawl`` checkout, which also works from a git worktree.
     """
 
     env = os.environ.get("PNP_TRANSCRIPT_DIR")
     if env:
         return Path(env).expanduser()
-    return Path(__file__).resolve().parents[5] / "pnp-crawl" / "transcripts_final"
+    parents = Path(__file__).resolve().parents
+    workspace = next((p for p in parents if (p / "pnp-crawl").is_dir()), parents[5])
+    return workspace / "pnp-crawl" / "transcripts_final"

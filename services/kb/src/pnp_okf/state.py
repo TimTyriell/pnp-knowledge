@@ -31,6 +31,7 @@ from tenacity import retry, retry_if_exception, stop_after_attempt, wait_exponen
 
 from pnp_okf.config import DeepSeekConfig
 from pnp_okf.episodes import Episodes, citation_labels
+from pnp_okf.frozen import FrozenError
 from pnp_okf.llm_client import build_client, is_retryable
 from pnp_okf.models import (
     ATTITUDE_DIRS,
@@ -343,6 +344,7 @@ def run_state(
     glossary = render_glossary(glossary_rows)
     blind = False
     for t in sorted(transcripts, key=lambda t: (t.date, t.session_id)):
+        is_frozen = frozen is not None and frozen.season_of(t.session_id) is not None
         blob = frozen.state_blob(t.session_id) if frozen is not None else None
         if blob is not None:
             state = SessionState.model_validate(blob)
@@ -355,6 +357,11 @@ def run_state(
         path = _cache_path(cache_dir, t, key)
         state = None if blind else load_cached_state(path, key)
         if state is None:
+            if is_frozen:
+                raise FrozenError(
+                    f"Frozen session {t.session_id} has no frozen state or cached state; "
+                    "restore its state file or thaw the season before running the state pass."
+                )
             if estimate:
                 blind = True
                 run.uncached_estimate += 1
