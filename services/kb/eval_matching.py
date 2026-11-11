@@ -24,12 +24,13 @@ from difflib import SequenceMatcher
 from pathlib import Path
 
 from pnp_okf import resolve
+from pnp_okf.config import Paths
 from pnp_okf.okf import slugify
 
 ROOT = Path(__file__).resolve().parent  # services/kb
 KNOWLEDGE = ROOT.parent.parent / "knowledge"
 REGISTRY = KNOWLEDGE / "entity_registry.yaml"
-CACHE_EXTRACT = ROOT / ".cache" / "extract"
+CACHE_EXTRACT = Paths.resolve().cache_dir / "extract"  # Paths.resolve() picks the cache
 
 THRESHOLDS = [t / 100 for t in range(60, 100, 5)]
 VARIANTS = ["V0", "V1", "V2", "V3", "V4"]

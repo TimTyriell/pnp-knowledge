@@ -14,23 +14,20 @@ directly from the real corpus, using the cache (no LLM calls, no `pnp run`).
 
 from __future__ import annotations
 
-import os
 from pathlib import Path
 
 import pytest
 import yaml
-from pnp_okf.config import DeepSeekConfig
+from pnp_okf.config import DeepSeekConfig, Paths
 from pnp_okf.extract import load_cached_extraction
 from pnp_okf.ingest import load_transcripts
 from pnp_okf.resolve import resolve_entities
 
 KNOWLEDGE = Path(__file__).resolve().parents[3] / "knowledge"
 REGISTRY = KNOWLEDGE / "entity_registry.yaml"
-# PNP_CACHE_DIR wins, as it does for the pipeline; the fallback is anchored on
-# this file rather than the CWD, because pytest runs from the repo root.
-CACHE_DIR = Path(
-    os.environ.get("PNP_CACHE_DIR") or Path(__file__).resolve().parents[1] / ".cache"
-)
+# PNP_CACHE_DIR wins, else knowledge/cache. The bundle is passed explicitly so
+# the default stays anchored on this file, not the cwd pytest was started from.
+CACHE_DIR = Paths.resolve(bundle_dir=str(KNOWLEDGE / "bundle" / "splitter_des_ewigen")).cache_dir
 TRANSCRIPT_DIR = (
     Path(__file__).resolve().parents[4] / "pnp-crawl" / "transcripts_final"
 )

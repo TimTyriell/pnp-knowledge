@@ -20,13 +20,14 @@ import json
 from pathlib import Path
 
 import yaml
+from pnp_okf.config import Paths
 
 ROOT = Path(__file__).resolve().parent  # services/kb
 KNOWLEDGE = ROOT.parent.parent / "knowledge"
 REGISTRY = KNOWLEDGE / "entity_registry.yaml"
 RULES = KNOWLEDGE / "entity_rules.yaml"
 BUNDLE = KNOWLEDGE / "bundle" / "splitter_des_ewigen"
-CACHE_EXTRACT = ROOT / ".cache" / "extract"
+CACHE_EXTRACT = Paths.resolve().cache_dir / "extract"  # Paths.resolve() picks the cache
 
 
 def bundle_concepts(bundle: Path) -> set[str]:

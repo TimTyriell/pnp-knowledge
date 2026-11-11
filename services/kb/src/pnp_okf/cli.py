@@ -12,7 +12,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import UTC, datetime
 from pathlib import Path
 
-from pnp_okf.config import ConfigError, DeepSeekConfig, Paths
+from pnp_okf.cache_gc import KEEP_TAGS, latest_session_tag, live_entries, migrate, sweep
+from pnp_okf.config import LEGACY_CACHE_DIR, ConfigError, DeepSeekConfig, Paths
 from pnp_okf.context import (
     excerpts_for,
     load_sources,
@@ -420,6 +421,23 @@ def _write_unmatched(conflicts_dir: Path, lines: list[str]) -> None:
     )
 
 
+def _sweep_after_run(paths: Paths, transcripts: list[SessionTranscript],
+                     entities: list[CanonicalEntity], frozen: FrozenStore) -> None:
+    # Housekeeping after the bundle is already written and validated: a GC
+    # problem must never turn a good run into a failed one.
+    try:
+        live = live_entries(paths, transcripts, entities, frozen)
+        if live is None:
+            return
+        rep = sweep(paths.cache_dir, live, latest_session_tag(paths.knowledge_root))
+        log.info("%s", rep.summary())
+        if rep.blocked:
+            log.warning("cache gc held back %d deletion(s); run `pnp cache gc --dry-run` "
+                        "then `--allow-mass`.", len(rep.blocked))
+    except Exception as exc:  # noqa: BLE001
+        log.warning("cache gc skipped: %s", exc)
+
+
 def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     paths = Paths.resolve(args.transcripts, args.bundle, args.cache)
     cfg = DeepSeekConfig.from_env()
@@ -767,6 +785,11 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
         paths.bundle_dir,
     )
 
+    # Post-run sweep only on a full run: a partial run's live set is not the
+    # whole corpus, so it would mark the rest of the cache stale.
+    if not partial_run:
+        _sweep_after_run(paths, transcripts, entities, frozen)
+
     entities_by_type = dict(Counter(e.type for e in entities))
     _write_run_status(
         started_at,
@@ -885,8 +908,10 @@ def cmd_check(args: argparse.Namespace) -> int:
     print("\n--- Cache ---")
     cache_dir = paths.cache_dir
     if cache_dir.exists():
-        extract_cached = list((cache_dir / "extract").glob("*.json")) if (cache_dir / "extract").exists() else []
-        synth_cached = list((cache_dir / "synth").glob("*.json")) if (cache_dir / "synth").exists() else []
+        # Entries live one level down (<kind>/<session>/<key>.json) since the
+        # 2026-09-07 layout; a flat glob always counted zero.
+        extract_cached = list((cache_dir / "extract").glob("*/*.json")) if (cache_dir / "extract").exists() else []
+        synth_cached = list((cache_dir / "synth").glob("*/*.json")) if (cache_dir / "synth").exists() else []
         print(f"  directory:       {cache_dir}")
         print(f"  extract entries: {len(extract_cached)}")
         print(f"  synth entries:   {len(synth_cached)}")
@@ -998,6 +1023,63 @@ def cmd_freeze(args: argparse.Namespace) -> int:
           f"({c['bodies_missing']} without a cached body), state: "
           f"{'yes' if c['state_sessions'] else 'no'} -> {paths.frozen_dir / args.season}")
     return 0
+
+
+def cmd_cache_gc(args: argparse.Namespace) -> int:
+    paths = Paths.resolve(args.transcripts, args.bundle, args.cache)
+    live = live_entries(paths, load_transcripts(paths.transcript_dir))
+    if live is None:
+        print("cache gc: live set unknown (see warnings); nothing deleted.")
+        return 2
+    rep = sweep(paths.cache_dir, live, latest_session_tag(paths.knowledge_root),
+                keep=args.keep, dry_run=args.dry_run, allow_mass=args.allow_mass)
+    for rel in rep.deleted:
+        print(("would delete " if args.dry_run else "deleted ") + rel)
+    for rel in rep.blocked:
+        print("blocked " + rel)
+    print(rep.summary(args.dry_run))
+    if rep.blocked:
+        print("Mass deletion held back. Inspect with --dry-run, then re-run with --allow-mass.")
+    return 0
+
+
+def cmd_cache_migrate(args: argparse.Namespace) -> int:
+    paths = Paths.resolve(None, args.bundle, args.cache)
+    src = Path(args.src)
+    if src.resolve() == paths.cache_dir.resolve():
+        print(f"source and target are the same ({src}); nothing to do")
+        return 2
+    rep = migrate(src, paths.cache_dir, dry_run=args.dry_run)
+    print(f"cache migrate {src} -> {paths.cache_dir}: {rep.copied} copied, "
+          f"{rep.identical} identical, {len(rep.conflicts)} conflict(s)")
+    for rel in rep.conflicts:
+        print("conflict (left untouched): " + rel)
+    return 1 if rep.conflicts else 0
+
+
+_CACHE_COMMANDS = {"run", "extract", "state", "dedup"}
+
+
+def _legacy_cache_trap(args: argparse.Namespace) -> str | None:
+    """Refuse to start cold when the warm cache is still at the pre-C1 location."""
+    is_gc = args.command == "cache" and getattr(args, "cache_command", None) == "gc"
+    if args.command not in _CACHE_COMMANDS and not is_gc:
+        return None
+    if getattr(args, "cache", None) or os.environ.get("PNP_CACHE_DIR"):
+        return None
+    paths = Paths.resolve(getattr(args, "transcripts", None), getattr(args, "bundle", None), None)
+    if paths.cache_dir.resolve() == LEGACY_CACHE_DIR.resolve():
+        return None
+    # Per kind: one stray extract entry in the new location must not disarm the
+    # trap while the legacy synth half (the pricier one) is still unreachable.
+    has = lambda d, kind: any((d / kind).glob("*/*.json"))  # noqa: E731
+    cold = [k for k in ("extract", "synth")
+            if has(LEGACY_CACHE_DIR, k) and not has(paths.cache_dir, k)]
+    if cold:
+        return (f"The default cache {paths.cache_dir} has no {' or '.join(cold)} entries but "
+                f"{LEGACY_CACHE_DIR} does. Running now would re-buy them. Run `pnp cache migrate` "
+                "first, or pass --cache to choose explicitly.")
+    return None
 
 
 def _add_common(p: argparse.ArgumentParser) -> None:
@@ -1136,6 +1218,24 @@ def _build_parser() -> argparse.ArgumentParser:
     )
     validate.set_defaults(func=cmd_validate)
 
+    cache = sub.add_parser("cache", help="Cache housekeeping (free, no model calls)")
+    cache_sub = cache.add_subparsers(dest="cache_command", required=True)
+    gc = cache_sub.add_parser("gc", help="Delete cache entries stale for --keep session tags")
+    gc.add_argument("--transcripts", help="Directory of *.json transcripts (the full set)")
+    gc.add_argument("--bundle", help="Bundle directory (locates knowledge/ and its tags)")
+    gc.add_argument("--cache", help="Cache directory (default: knowledge/cache)")
+    gc.add_argument("--keep", type=int, default=KEEP_TAGS)
+    gc.add_argument("--dry-run", action="store_true")
+    gc.add_argument("--allow-mass", action="store_true",
+                    help="Allow deleting more than half of one kind's entries in one sweep")
+    gc.set_defaults(func=cmd_cache_gc)
+    mig = cache_sub.add_parser("migrate", help="Copy the legacy services/kb/.cache into the default cache")
+    mig.add_argument("--from", dest="src", default=str(LEGACY_CACHE_DIR))
+    mig.add_argument("--bundle", help="Bundle directory (locates the default cache)")
+    mig.add_argument("--cache", help="Target cache directory (default: knowledge/cache)")
+    mig.add_argument("--dry-run", action="store_true")
+    mig.set_defaults(func=cmd_cache_migrate, transcripts=None)
+
     return parser
 
 
@@ -1147,6 +1247,10 @@ def main(argv: list[str] | None = None) -> int:
         format="%(levelname)s %(name)s: %(message)s",
     )
     try:
+        msg = _legacy_cache_trap(args)
+        if msg:
+            log.error(msg)
+            return 2
         return args.func(args)
     except ConfigError as exc:
         log.error("Configuration error: %s", exc)

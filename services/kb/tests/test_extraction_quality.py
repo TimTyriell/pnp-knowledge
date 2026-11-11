@@ -33,22 +33,20 @@ model graded for itself agrees with itself by construction.
 
 from __future__ import annotations
 
-import os
 from pathlib import Path
 
 import pytest
 import yaml
-from pnp_okf.config import DeepSeekConfig, default_transcript_dir
+from pnp_okf.config import DeepSeekConfig, Paths, default_transcript_dir
 from pnp_okf.extract import load_cached_extraction
 from pnp_okf.ingest import load_transcripts
 from pnp_okf.okf import slugify
 
 GOLD_DIR = Path(__file__).resolve().parent / "data" / "gold"
-# PNP_CACHE_DIR wins, as it does for the pipeline; the fallback is anchored on
-# this file rather than the CWD, because pytest runs from the repo root.
-CACHE_DIR = Path(
-    os.environ.get("PNP_CACHE_DIR") or Path(__file__).resolve().parents[1] / ".cache"
-)
+# PNP_CACHE_DIR wins, else knowledge/cache. The bundle is passed explicitly so
+# the default stays anchored on this file, not the cwd pytest was started from.
+_BUNDLE = Path(__file__).resolve().parents[3] / "knowledge" / "bundle" / "splitter_des_ewigen"
+CACHE_DIR = Paths.resolve(bundle_dir=str(_BUNDLE)).cache_dir
 TRANSCRIPT_DIR = default_transcript_dir()
 
 GOLD_FILES = sorted(GOLD_DIR.glob("*.yaml")) if GOLD_DIR.is_dir() else []

@@ -16,3 +16,14 @@ After `pnp freeze <season>` creates the snapshot, release it from the bundle's
 own repository (`knowledge/`): create a branch, commit `frozen/<season>/`, open
 and merge a PR, then tag the merged commit `season-<key>-v<extract version>`.
 For example, Prolog extracted with v6 is tagged `season-P-v6`.
+
+## Cache (C1)
+
+The LLM cache lives in the bundle repo at `knowledge/cache/` and is swept by `pnp cache gc` (rules: [PIPELINE.md §6](architecture/PIPELINE.md)).
+
+- An ingest PR carries the `cache/**` and `cache/gc_ledger.json` changes next to the bundle diff. Review them with the knowledge diff.
+- Deletions only start after the first `s<NN>` tag exists, so set the baseline tag. With no tag the sweep records stale entries and deletes nothing.
+- ⚠ The baseline tag arms deletion, and `.claude/hooks/guard.ps1` does not yet guard `pnp cache gc` (its regex covers only `run|state|extract|dedup`). Until a follow-up adds `cache gc` without `--dry-run` to the guard, agents may run only `pnp cache gc --dry-run`; a deleting sweep is a human step.
+- A blocked sweep (the mass guard reports `blocked`): run `pnp cache gc --dry-run`, review the list, then `pnp cache gc --allow-mass`.
+- To drop a session on purpose, delete its transcript **and** `cache/extract/<session>/` in the same PR. Otherwise the live set is unknown and every sweep aborts.
+- Restore a deleted entry: `git -C knowledge restore --source=<tag> -- cache/<path>`.

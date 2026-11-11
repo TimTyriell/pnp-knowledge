@@ -17,7 +17,6 @@ Read docs/architecture/PIPELINE.md section 10 before using the result.
 """
 from __future__ import annotations
 
-import os
 import sys
 from pathlib import Path
 
@@ -28,9 +27,8 @@ from pnp_okf.ingest import load_transcripts
 
 HERE = Path(__file__).resolve().parent
 TRANSCRIPTS = default_transcript_dir()
-# PNP_CACHE_DIR wins, as it does for the pipeline; the fallback is anchored on
-# this file so the script works from any working directory.
-CACHE_DIR = Path(os.environ.get("PNP_CACHE_DIR") or HERE / ".cache")
+# Paths.resolve() picks the cache: PNP_CACHE_DIR > knowledge/cache > ./.cache
+CACHE_DIR = Paths.resolve().cache_dir
 FROZEN = FrozenStore.load(Paths.resolve().knowledge_root)
 
 

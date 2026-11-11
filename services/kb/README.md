@@ -38,6 +38,15 @@ source .venv/bin/activate
 pip install -e '.[dev]'
 ```
 
+### Cache
+
+The paid LLM cache (extract + synth) lives in the bundle repo at `knowledge/cache/`, not in this directory. Resolution: `--cache` > `$PNP_CACHE_DIR` > `<knowledge>/cache` (when `<knowledge>/entity_registry.yaml` exists) > `./.cache`.
+
+- **Fresh machine:** from the `pnp-knowledge` repo root, `git clone git@github.com:TimTyriell/pnp-knowledge-bundle.git knowledge`. The cache comes with it. `pnp check` should show non-zero extract/synth entries, and `pnp run --estimate` should show `0 to call`.
+- **Existing machine** (cache still in `services/kb/.cache`): run `pnp cache migrate`, then `pnp run --estimate` (expect `0 to call`), then commit `knowledge/cache` on a branch. Delete `services/kb/.cache` only after that.
+- **Worktree, CI or no bundle:** set `PNP_CACHE_DIR` to an absolute `knowledge/cache` path to share the main checkout's cache, or accept a cold `./.cache`. CI has no bundle, and tests use `tmp_path`. `PNP_KNOWLEDGE_DIR` also exists to point the knowledge root elsewhere.
+- **Your env must match the run's:** `DEEPSEEK_MODEL`, tier models (e.g. `DEEPSEEK_EXTRACT_MODEL`) and `PNP_EXTRACT_FREEZE_*` are part of the cache keys. A mismatched env makes `pnp cache gc` exit 2 instead of deleting.
+
 ### 3. Configure
 
 ```bash
@@ -62,7 +71,7 @@ pnp run \
 ```
 
 First run calls DeepSeek for each session + entity; subsequent runs hit the cache
-in `.cache/` and are instant. Review the entity registry and add alias merges
+(see [Cache](#cache)) and are instant. Review the entity registry and add alias merges
 for any Whisper recognition errors:
 
 ```bash
@@ -107,7 +116,7 @@ Common flags (where applicable):
 |------|---------|-------------|
 | `--transcripts DIR` | `$PNP_TRANSCRIPT_DIR` or the platform's `data/transcripts_final/` | Shared transcript JSON directory; no sibling checkout required |
 | `--bundle DIR` | `$PNP_BUNDLE_DIR`, then `$PNP_KNOWLEDGE_DIR/bundle/splitter_des_ewigen`, then the discovered local knowledge bundle | Output bundle |
-| `--cache DIR` | `$PNP_CACHE_DIR` or `./.cache` | LLM response cache |
+| `--cache DIR` | `$PNP_CACHE_DIR`, then `<knowledge>/cache`, then `./.cache` (see [Cache](#cache)) | LLM response cache |
 | `--limit N` | all | Process only the first N sessions |
 | `--session ID` | all | Restrict to a specific session id/date (repeatable) |
 | `--force` | off | Ignore cache and re-call DeepSeek |
