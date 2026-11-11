@@ -27,6 +27,17 @@ import subprocess
 from dataclasses import dataclass, field
 from pathlib import Path
 
+from pnp_okf.config import DeepSeekConfig, Paths
+from pnp_okf.context import excerpts_for, load_sources, secondary_sources_for, sources_for
+from pnp_okf.extract import _cache_key as extract_cache_key
+from pnp_okf.extract import _cache_path as extract_cache_path
+from pnp_okf.extract import load_cached_extraction
+from pnp_okf.frozen import FrozenStore
+from pnp_okf.models import CanonicalEntity, EntityType, SessionTranscript
+from pnp_okf.resolve import load_event_concepts, resolve_entities
+from pnp_okf.synthesize import _cache_key as synth_cache_key
+from pnp_okf.synthesize import _cache_path as synth_cache_path
+
 log = logging.getLogger(__name__)
 
 KEEP_TAGS = 2
@@ -145,3 +156,62 @@ def sweep(cache_dir: Path, live: set[str], tag: str | None, *, keep: int = KEEP_
     if not dry_run:
         write_ledger(cache_dir, new)
     return report
+
+
+def live_entries(paths: Paths, transcripts: list[SessionTranscript],
+                 entities: list[CanonicalEntity] | None = None,
+                 frozen: FrozenStore | None = None) -> set[str] | None:
+    """Cache paths the current config reads for the full transcript set; None = unknown.
+
+    `entities` and `frozen` are the run's own post-filter list and (thaw-aware)
+    frozen store when called from `pnp run`. Otherwise resolve here, load the
+    frozen store with nothing thawed, and mirror the T4 event filter in
+    cli._run_pipeline; test_live_set_matches_what_a_run_writes catches drift.
+    """
+    if not transcripts:
+        log.warning("cache gc: no transcripts; not sweeping")
+        return None
+    cache = paths.cache_dir
+    if frozen is None:
+        frozen = FrozenStore.load(paths.knowledge_root)
+    known = {t.session_id for t in transcripts}
+    orphans = sorted(p.name for p in (cache / "extract").glob("*")
+                     if p.is_dir() and p.name not in known and frozen.season_of(p.name) is None)
+    if orphans:
+        log.warning("cache gc: cache holds sessions with no transcript (%s); not sweeping",
+                    ", ".join(orphans[:5]))
+        return None
+    cfg = DeepSeekConfig.from_env().for_tier("extract")
+    live: set[str] = set()
+    extractions = {}
+    for t in transcripts:
+        hit = frozen.extraction(t)
+        if hit is not None:
+            extractions[t.session_id] = hit
+            continue  # served from knowledge/frozen; its cache entries are stale by design
+        ex = load_cached_extraction(cache, t, cfg)
+        if ex is None:
+            log.warning("cache gc: %s has no cached extraction; not sweeping", t.session_id)
+            return None
+        live.add(extract_cache_path(cache, t, extract_cache_key(t, cfg)).relative_to(cache).as_posix())
+        extractions[t.session_id] = ex
+    tmap = {t.session_id: t for t in transcripts}
+    if entities is None:
+        entities = resolve_entities(extractions, tmap, paths.registry_path)
+        keep_events = load_event_concepts(paths.registry_path)
+        entities = [e for e in entities
+                    if e.type != EntityType.EVENT or e.concept_id in keep_events]
+    base = DeepSeekConfig.from_env()
+    sections = load_sources(paths.sources_dir)
+    for e in entities:
+        if e.tier == "brief":
+            continue  # rendered locally, never cached
+        if frozen.body(e) is not None:
+            continue  # body served from knowledge/frozen, exactly as _run_pipeline._synth does
+        key = synth_cache_key(
+            e, base.for_tier(e.tier), sources_for(e, sections),
+            excerpts_for(e, tmap) if e.tier == "deep" else "",
+            secondary_sources_for(e, sections),
+        )
+        live.add(synth_cache_path(cache, e, key).relative_to(cache).as_posix())
+    return live
