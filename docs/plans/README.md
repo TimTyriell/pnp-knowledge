@@ -36,6 +36,7 @@ without design decisions. Where a decision *is* needed, the plan says
 | B3 | [B3-claim-level-eval.md](B3-claim-level-eval.md) | `test/claim-eval` | A5 | $0 (+ human labelling) | agent + human |
 | S1 | [S1-season-freeze.md](S1-season-freeze.md) | `feat/season-freeze` | PR #39 merged | $0 code; freeze itself is free (human) | agent + human |
 | C1 | [C1-cache-in-bundle.md](C1-cache-in-bundle.md) | `feat/cache-in-bundle` | PR #40 merged | $0 code; migration free (human) | agent + human |
+| D1 | [D1-agent-mode.md](D1-agent-mode.md) | `feat/agent-mode` | C1 merged | $0 (subscription) | agent + human (guard, smoke) |
 
 Cross-repo plans live in their own repos: `pnp-crawl/docs/plans/`,
 `pnp-export-data/docs/plans/`.
