@@ -13,6 +13,10 @@ knowledge/entity_rules.yaml, in THIS repo (not a sibling), loopback-only,
 validated before write, and never touches knowledge/bundle/ or
 entity_registry.yaml — the pipeline stays the only writer of those. See
 services/dashboard/README.md.
+
+The season endpoints are the second write path: they freeze into
+knowledge/frozen/ and start the fixed pnp run/state commands on explicit
+confirmation, loopback-only.
 """
 
 from __future__ import annotations
@@ -25,12 +29,15 @@ from pathlib import Path
 import glossary
 import merge
 import rules_edit
+import seasons
 import uvicorn
 import yaml
-from fastapi import FastAPI, HTTPException, Request
+from fastapi import Depends, FastAPI, HTTPException, Request
 from fastapi.staticfiles import StaticFiles
+from pnp_okf.config import default_transcript_dir
+from pydantic import BaseModel, ConfigDict
+from workbench_api import local_access, shutdown_workers
 from workbench_api import router as workbench_router
-from workbench_api import shutdown_workers
 
 REPO_ROOT = Path(__file__).resolve().parents[2]  # .../pnp-knowledge/services/dashboard -> pnp-knowledge/
 
@@ -139,6 +146,60 @@ def glossary_edits(payload: dict, request: Request) -> dict:
         raise HTTPException(409, detail=str(exc)) from exc
     except yaml.YAMLError as exc:
         raise HTTPException(500, detail=f"Validierung fehlgeschlagen: {exc}") from exc
+
+
+class RunInput(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    kind: str = "run"
+    thaw: list[str] = []
+    confirm: bool = False
+
+
+class FreezeInput(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    from_cache: bool = False
+
+
+def _season_keys() -> set[str]:
+    return set(merge.load_episodes(KNOWLEDGE_DIR / "episodes.yaml")["seasons"])
+
+
+def _guarded(fn, *args):
+    try:
+        return fn(*args)
+    except seasons.SeasonError as exc:
+        raise HTTPException(exc.status, detail=str(exc)) from exc
+
+
+Local = [Depends(local_access)]
+
+
+@app.get("/api/seasons", dependencies=Local)
+def season_status() -> dict:
+    return seasons.status(KNOWLEDGE_DIR, default_transcript_dir())
+
+
+@app.post("/api/seasons/{key}/freeze", dependencies=Local)
+def season_freeze(key: str, payload: FreezeInput) -> dict:
+    return _guarded(seasons.freeze, key, payload.from_cache, _season_keys())
+
+
+@app.post("/api/runs/estimate", dependencies=Local)
+def run_estimate(payload: RunInput) -> dict:
+    return _guarded(seasons.estimate, payload.kind, payload.thaw, _season_keys())
+
+
+@app.post("/api/runs", status_code=202, dependencies=Local)
+def run_start(payload: RunInput) -> dict:
+    """The one place the dashboard spends money: fixed argv, loopback-only, explicit confirm."""
+    if not payload.confirm:
+        raise HTTPException(400, "Kosten bestätigen, bevor der Lauf startet.")
+    return _guarded(seasons.start, payload.kind, payload.thaw, _season_keys())
+
+
+@app.get("/api/runs/current", dependencies=Local)
+def run_current() -> dict:
+    return seasons.current()
 
 
 if WEB_DIST.is_dir():

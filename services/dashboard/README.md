@@ -15,6 +15,10 @@ just shows a "Bundle veraltet" hint until you run `pnp run` yourself in
 `services/kb`. The write endpoint (`POST /api/glossary/edits`) is
 loopback-only and validates the patched YAML before writing anything.
 
+The Folgen tab also exposes a second write path: it can freeze a season into
+`knowledge/frozen/` and start the fixed `pnp run` or `pnp state` command after
+an estimate and explicit confirmation. These endpoints are loopback-only.
+
 ## Run
 
 ### Local campaign workbench (Windows)
