@@ -48,7 +48,8 @@ Two systems live here, and the top level keeps them apart:
   and `knowledge/` (except `knowledge/entity_rules.yaml`), any
   `*_PROMPT_VERSION` change, paid `pnp run/extract/state/dedup` without
   `--estimate`, commits on `main`, and edits to the guard itself. A block is a rule, not a bug: stop and
-  ask the human (overrides are env vars, listed in the script header).
+  ask the human (overrides are env vars, listed in the script header). A run started from the
+  dashboard's Folgen tab is a human run; agents never click it and never call `POST /api/runs`.
   Self-check: `python .claude/hooks/test_guard.py`.
 - **Review.** Before merging, run `/review-pr <n>` (or headless, clean context: `claude -p "/review-pr <n>"`). It reviews against [REVIEW.md](REVIEW.md) and posts one comment; the human merges.
 - The wiki agent is **not** in this repo — it's the separate `pnp-export-data`

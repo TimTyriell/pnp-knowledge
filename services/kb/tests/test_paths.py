@@ -25,6 +25,12 @@ from pnp_okf.config import Paths
 from pnp_okf.resolve import require_rules
 
 
+@pytest.fixture(autouse=True)
+def clear_path_overrides(monkeypatch):
+    for name in ("PNP_TRANSCRIPT_DIR", "PNP_BUNDLE_DIR", "PNP_KNOWLEDGE_DIR", "PNP_CACHE_DIR"):
+        monkeypatch.delenv(name, raising=False)
+
+
 def _knowledge(root: Path) -> Path:
     """A minimal repo-shaped knowledge/ tree under ``root``."""
 
@@ -87,6 +93,21 @@ def test_an_explicit_bundle_still_wins(tmp_path: Path, monkeypatch):
     assert paths.bundle_dir == elsewhere
 
 
+def test_knowledge_dir_is_shared_root_below_bundle_overrides(tmp_path: Path, monkeypatch):
+    shared = tmp_path / "shared-knowledge"
+    unrelated = tmp_path / "unrelated"
+    unrelated.mkdir()
+    monkeypatch.chdir(unrelated)
+    monkeypatch.setenv("PNP_KNOWLEDGE_DIR", str(shared))
+    monkeypatch.setenv("PNP_BUNDLE_DIR", str(tmp_path / "bundle-override"))
+    # Bundle-specific configuration has priority over the shared root.
+    assert Paths.resolve().bundle_dir == tmp_path / "bundle-override"
+    monkeypatch.delenv("PNP_BUNDLE_DIR")
+    assert Paths.resolve().bundle_dir == shared / "bundle" / "splitter_des_ewigen"
+    explicit = tmp_path / "argument-bundle"
+    assert Paths.resolve(bundle_dir=explicit).bundle_dir == explicit
+
+
 # --- transcript dir -------------------------------------------------------
 
 
@@ -97,12 +118,15 @@ def test_default_transcript_dir_env_wins(monkeypatch, tmp_path):
     assert default_transcript_dir() == tmp_path
 
 
-def test_default_transcript_dir_is_the_sibling_checkout(monkeypatch):
-    from pnp_okf.config import default_transcript_dir
+def test_transcript_override_wins_in_standalone_platform(monkeypatch, tmp_path):
+    import pnp_okf.config as config
 
-    monkeypatch.delenv("PNP_TRANSCRIPT_DIR", raising=False)
-    got = default_transcript_dir()
-    assert got.parts[-2:] == ("pnp-crawl", "transcripts_final")
+    repo = tmp_path / "platform"
+    (repo / "services" / "kb").mkdir(parents=True)
+    monkeypatch.setattr(config, "__file__", str(repo / "services/kb/src/pnp_okf/config.py"))
+    override = tmp_path / "external" / "transcripts"
+    monkeypatch.setenv("PNP_TRANSCRIPT_DIR", str(override))
+    assert config.default_transcript_dir() == override
 
 
 def test_no_machine_specific_paths_in_scripts():

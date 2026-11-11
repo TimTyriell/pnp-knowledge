@@ -1,5 +1,5 @@
 """Glossar read model — joins entity_registry.yaml + entity_rules.yaml with
-literal name-occurrence counts over the pnp-crawl transcripts.
+literal name-occurrence counts over the shared transcripts.
 
 Pure functions + two loaders, same style as merge.py. Nothing here writes
 anything; that's rules_edit.py.
@@ -82,18 +82,18 @@ def entity_name_sources(
     return out
 
 
-def _transcript_fingerprint(crawl_dir: Path) -> tuple[tuple[str, int, int], ...]:
-    if not crawl_dir.is_dir():
+def _transcript_fingerprint(transcript_dir: Path) -> tuple[tuple[str, int, int], ...]:
+    if not transcript_dir.is_dir():
         return ()
     return tuple(
         sorted(
             (p.name, p.stat().st_mtime_ns, p.stat().st_size)
-            for p in crawl_dir.glob("*.json")
+            for p in transcript_dir.glob("*.json")
         )
     )
 
 
-def count_names(crawl_dir: Path, keys: set[tuple[str, ...]]) -> Counter[tuple[str, ...]]:
+def count_names(transcript_dir: Path, keys: set[tuple[str, ...]]) -> Counter[tuple[str, ...]]:
     """Literal, case-insensitive, whole-word occurrence count per name_key.
 
     One pass per file: tokenize once, then for every n-gram length present in
@@ -102,11 +102,11 @@ def count_names(crawl_dir: Path, keys: set[tuple[str, ...]]) -> Counter[tuple[st
     the transcripts are only tokenized once total.
     """
     counts: Counter[tuple[str, ...]] = Counter()
-    if not keys or not crawl_dir.is_dir():
+    if not keys or not transcript_dir.is_dir():
         return counts
     lengths = sorted({len(k) for k in keys})
 
-    for path in crawl_dir.glob("*.json"):
+    for path in transcript_dir.glob("*.json"):
         try:
             data = json.loads(path.read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError):
@@ -126,17 +126,17 @@ def count_names(crawl_dir: Path, keys: set[tuple[str, ...]]) -> Counter[tuple[st
 _CACHE: dict[str, Any] = {"tfp": None, "nfp": None, "counts": None}
 
 
-def _cached_counts(crawl_dir: Path, keys: set[tuple[str, ...]]) -> Counter[tuple[str, ...]]:
-    tfp = _transcript_fingerprint(crawl_dir)
+def _cached_counts(transcript_dir: Path, keys: set[tuple[str, ...]]) -> Counter[tuple[str, ...]]:
+    tfp = _transcript_fingerprint(transcript_dir)
     nfp = hash(frozenset(keys))
     if _CACHE["tfp"] != tfp or _CACHE["nfp"] != nfp:
-        _CACHE["counts"] = count_names(crawl_dir, keys)
+        _CACHE["counts"] = count_names(transcript_dir, keys)
         _CACHE["tfp"] = tfp
         _CACHE["nfp"] = nfp
     return _CACHE["counts"]
 
 
-def build(knowledge_dir: Path, crawl_dir: Path) -> dict[str, Any]:
+def build(knowledge_dir: Path, transcript_dir: Path) -> dict[str, Any]:
     registry_path = knowledge_dir / "entity_registry.yaml"
     rules_path = knowledge_dir / "entity_rules.yaml"
 
@@ -150,7 +150,7 @@ def build(knowledge_dir: Path, crawl_dir: Path) -> dict[str, Any]:
             k = name_key(name)
             if k:
                 keys.add(k)
-    counts = _cached_counts(crawl_dir / "transcripts_final", keys)
+    counts = _cached_counts(transcript_dir, keys)
 
     types: set[str] = set()
     out_entities = []

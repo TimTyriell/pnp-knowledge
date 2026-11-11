@@ -7,7 +7,7 @@ from pathlib import Path
 
 import pytest
 from fastapi.testclient import TestClient
-from pnp_okf.api import _CONCEPT_PATH_RE, create_app
+from pnp_okf.api import _CONCEPT_PATH_RE, _default_bundle_dir, create_app
 
 _BUNDLE = Path(__file__).resolve().parents[3] / "knowledge" / "bundle" / "splitter_des_ewigen"
 
@@ -77,6 +77,26 @@ timestamp: '2026-01-01T00:00:00Z'
 
 Die Gruppe soll den Hof räumen.
 """
+
+
+def test_default_bundle_dir_uses_shared_knowledge_root_but_bundle_override_wins(monkeypatch, tmp_path):
+    import pnp_okf.api as api
+
+    monkeypatch.delenv("PNP_BUNDLE_DIR", raising=False)
+    knowledge = tmp_path / "shared-knowledge"
+    monkeypatch.setenv("PNP_KNOWLEDGE_DIR", str(knowledge))
+    assert _default_bundle_dir() == knowledge / "bundle" / "splitter_des_ewigen"
+
+    override = tmp_path / "explicit-bundle"
+    monkeypatch.setenv("PNP_BUNDLE_DIR", str(override))
+    assert _default_bundle_dir() == override
+
+    monkeypatch.delenv("PNP_BUNDLE_DIR")
+    monkeypatch.delenv("PNP_KNOWLEDGE_DIR")
+    repo = tmp_path / "repo"
+    (repo / "services" / "kb" / "src" / "pnp_okf").mkdir(parents=True)
+    monkeypatch.setattr(api, "__file__", str(repo / "services/kb/src/pnp_okf/api.py"))
+    assert _default_bundle_dir() == repo / "knowledge" / "bundle" / "splitter_des_ewigen"
 
 
 @pytest.fixture()

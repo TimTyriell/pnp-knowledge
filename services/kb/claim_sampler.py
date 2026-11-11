@@ -40,6 +40,7 @@ from pnp_okf.config import (  # noqa: E402
 )
 from pnp_okf.context import _parse_ts, excerpts_for  # noqa: E402
 from pnp_okf.extract import load_cached_extraction  # noqa: E402
+from pnp_okf.frozen import FrozenStore  # noqa: E402
 from pnp_okf.ingest import load_transcripts  # noqa: E402
 from pnp_okf.models import CanonicalEntity, MentionRef  # noqa: E402
 from pnp_okf.resolve import resolve_entities  # noqa: E402
@@ -226,12 +227,13 @@ def main(argv: list[str] | None = None) -> None:
         transcript_dir=default_transcript_dir(),
         cache_dir=os.environ.get("PNP_CACHE_DIR") or str(HERE / ".cache"),
     )
+    frozen = FrozenStore.load(paths.knowledge_root)
 
     transcripts = load_transcripts(paths.transcript_dir)
     tmap = {t.session_id: t for t in transcripts}
     extractions = {}
     for t in transcripts:
-        ex = load_cached_extraction(paths.cache_dir, t, cfg)
+        ex = load_cached_extraction(paths.cache_dir, t, cfg, frozen=frozen)
         if ex is not None:
             extractions[t.session_id] = ex
     entities = resolve_entities(extractions, tmap, paths.registry_path)

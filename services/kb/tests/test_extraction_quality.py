@@ -55,7 +55,7 @@ GOLD_FILES = sorted(GOLD_DIR.glob("*.yaml")) if GOLD_DIR.is_dir() else []
 
 # Only the scoring test needs the corpus; it is a decorator rather than a
 # module-level pytestmark so the truth-set unit test below still runs in CI,
-# where pnp-crawl and .cache are absent. The two reasons are separate because
+# where the shared transcript corpus and .cache are absent. The two reasons are separate because
 # they call for different responses: write the labels, vs check out the corpus.
 needs_labels = pytest.mark.skipif(
     not GOLD_FILES,
@@ -65,8 +65,8 @@ needs_labels = pytest.mark.skipif(
     ),
 )
 needs_corpus = pytest.mark.skipif(
-    not TRANSCRIPT_DIR.is_dir(),
-    reason="no local transcript corpus (pnp-crawl is a separate repo, absent in CI)",
+    not any(TRANSCRIPT_DIR.glob("*.json")),
+    reason="no local transcript corpus in the configured shared data folder",
 )
 
 # Measured 2026-09-07 over 3 labelled sessions, 71 entities:

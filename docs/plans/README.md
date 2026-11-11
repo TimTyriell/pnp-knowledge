@@ -34,6 +34,7 @@ without design decisions. Where a decision *is* needed, the plan says
 | B1 | [B1-opaque-ids.md](B1-opaque-ids.md) | `feat/opaque-concept-ids` | T-series merged | $0 | agent, cross-repo |
 | B2 | [B2-anchored-extraction.md](B2-anchored-extraction.md) | `feat/anchored-extraction` | B1, T3 | **~$6.50 rebuild (human)** | agent + human |
 | B3 | [B3-claim-level-eval.md](B3-claim-level-eval.md) | `test/claim-eval` | A5 | $0 (+ human labelling) | agent + human |
+| S1 | [S1-season-freeze.md](S1-season-freeze.md) | `feat/season-freeze` | PR #39 merged | $0 code; freeze itself is free (human) | agent + human |
 
 Cross-repo plans live in their own repos: `pnp-crawl/docs/plans/`,
 `pnp-export-data/docs/plans/`.

@@ -131,3 +131,33 @@ export interface SyncPreview {
   warnings: string[];
   written: boolean;
 }
+
+export interface FrozenInfo {
+  frozen_at: string;
+  prompt_versions: { extract: string; synth: string; state: string | null };
+  models: Record<string, string>;
+  counts: { sessions: number; bodies: number; bodies_missing: number; state_sessions: number };
+}
+export interface SeasonStatus {
+  key: string;
+  label: string;
+  episodes: number;
+  transcripts: number;
+  frozen: FrozenInfo | null;
+}
+export interface SeasonsResponse {
+  current: { extract: string; synth: string; state: string };
+  seasons: SeasonStatus[];
+  unlisted_transcripts: string[];
+  error?: string | null;
+}
+export interface RunState {
+  running: boolean;
+  kind: "run" | "state" | null;
+  thaw: string[];
+  started_at: string | null;
+  exit_code: number | null;
+  log_tail: string;
+  last_run: { ok: boolean; error: string | null; ended_at: string } | null;
+}
+export interface CommandResult { ok: boolean; output: string }

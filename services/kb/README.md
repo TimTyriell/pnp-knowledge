@@ -97,6 +97,7 @@ pnp visualize --bundle ./bundle/splitter_des_ewigen --python-module
 pnp check       Verify config + count transcripts (no LLM calls)
 pnp run         Full pipeline: ingest → extract → resolve → synthesize → emit
 pnp extract     Extraction stage only (populate the cache)
+pnp freeze      Snapshot a season from caches into knowledge/frozen/ (no model calls)
 pnp visualize   Generate viz.html by calling the okf reference CLI
 ```
 
@@ -104,8 +105,8 @@ Common flags (where applicable):
 
 | Flag | Default | Description |
 |------|---------|-------------|
-| `--transcripts DIR` | `$PNP_TRANSCRIPT_DIR` or `./transcript` | Transcript JSON directory |
-| `--bundle DIR` | `$PNP_BUNDLE_DIR` or `./bundle/splitter_des_ewigen` | Output bundle |
+| `--transcripts DIR` | `$PNP_TRANSCRIPT_DIR` or the platform's `data/transcripts_final/` | Shared transcript JSON directory; no sibling checkout required |
+| `--bundle DIR` | `$PNP_BUNDLE_DIR`, then `$PNP_KNOWLEDGE_DIR/bundle/splitter_des_ewigen`, then the discovered local knowledge bundle | Output bundle |
 | `--cache DIR` | `$PNP_CACHE_DIR` or `./.cache` | LLM response cache |
 | `--limit N` | all | Process only the first N sessions |
 | `--session ID` | all | Restrict to a specific session id/date (repeatable) |

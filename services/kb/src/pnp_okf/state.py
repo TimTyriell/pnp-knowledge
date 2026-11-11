@@ -31,6 +31,7 @@ from tenacity import retry, retry_if_exception, stop_after_attempt, wait_exponen
 
 from pnp_okf.config import DeepSeekConfig
 from pnp_okf.episodes import Episodes, citation_labels
+from pnp_okf.frozen import FrozenError
 from pnp_okf.llm_client import build_client, is_retryable
 from pnp_okf.models import (
     ATTITUDE_DIRS,
@@ -318,6 +319,8 @@ class StateRun:
     cached: int = 0
     called: int = 0
     uncached_estimate: int = 0
+    states: dict[str, SessionState] = field(default_factory=dict)
+    incomplete: bool = False
 
 
 def run_state(
@@ -328,6 +331,7 @@ def run_state(
     *,
     estimate: bool = False,
     client=None,
+    frozen=None,
 ) -> StateRun:
     """Fold every session's state into a Ledger, oldest first.
 
@@ -341,11 +345,29 @@ def run_state(
     glossary = render_glossary(glossary_rows)
     blind = False
     for t in sorted(transcripts, key=lambda t: (t.date, t.session_id)):
+        is_frozen = frozen is not None and frozen.season_of(t.session_id) is not None
+        blob = frozen.state_blob(t.session_id) if frozen is not None else None
+        if blob is not None:
+            state = SessionState.model_validate(blob)
+            run.cached += 1
+            run.states[t.session_id] = state
+            if not blind:
+                run.ledger.apply(t.session_id, t.date, t.url, state)
+            continue
         open_text = render_open_threads(run.ledger)
         key = state_cache_key(t, cfg, glossary, open_text)
         path = _cache_path(cache_dir, t, key)
         state = None if blind else load_cached_state(path, key)
         if state is None:
+            if is_frozen:
+                if estimate:
+                    blind = True
+                    run.incomplete = True
+                    continue
+                raise FrozenError(
+                    f"Frozen session {t.session_id} has no frozen state or cached state; "
+                    "restore its state file or thaw the season before running the state pass."
+                )
             if estimate:
                 blind = True
                 run.uncached_estimate += 1
@@ -359,6 +381,7 @@ def run_state(
             run.called += 1
         else:
             run.cached += 1
+        run.states[t.session_id] = state
         run.ledger.apply(t.session_id, t.date, t.url, state)
     return run
 

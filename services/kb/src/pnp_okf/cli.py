@@ -42,6 +42,7 @@ from pnp_okf.emit import (
 )
 from pnp_okf.episodes import Episodes, citation_labels, relabel_citations, teams_for
 from pnp_okf.extract import extract_session, load_cached_extraction
+from pnp_okf.frozen import FrozenError, FrozenStore, freeze_season
 from pnp_okf.ingest import load_transcripts
 from pnp_okf.links import relationship_edges
 from pnp_okf.models import (
@@ -108,12 +109,19 @@ def _select(
     return picked
 
 
+def _frozen(paths: Paths, args: argparse.Namespace) -> FrozenStore:
+    """The frozen seasons minus whatever this run explicitly thaws."""
+    raw = getattr(args, "thaw", None) or ""
+    return FrozenStore.load(paths.knowledge_root, {s.strip() for s in raw.split(",") if s.strip()})
+
+
 def _extract_all(
     transcripts: list[SessionTranscript],
     cfg: DeepSeekConfig,
     paths: Paths,
     force: bool,
     workers: int = 8,
+    frozen: FrozenStore | None = None,
 ) -> dict[str, SessionExtraction]:
     """Extract every session, in parallel like synthesis.
 
@@ -129,6 +137,10 @@ def _extract_all(
     """
 
     def _one(t: SessionTranscript) -> tuple[str, SessionExtraction]:
+        # Frozen wins over force: --reextract must not re-buy a frozen season (R3).
+        hit = frozen.extraction(t) if frozen is not None else None
+        if hit is not None:
+            return t.session_id, hit
         return t.session_id, extract_session(t, cfg, paths.cache_dir, force=force)
 
     with ThreadPoolExecutor(max_workers=workers) as pool:
@@ -275,6 +287,7 @@ def _estimate_run(args: argparse.Namespace) -> int:
 
     paths = Paths.resolve(args.transcripts, args.bundle, args.cache)
     cfg = DeepSeekConfig.from_env().for_tier("extract")
+    frozen = _frozen(paths, args)
     transcripts = _select(
         load_transcripts(paths.transcript_dir), args.limit, args.session
     )
@@ -283,11 +296,17 @@ def _estimate_run(args: argparse.Namespace) -> int:
     # and --force ignores the synth cache, so pricing either against a warm
     # cache reports a free run for one that re-buys the whole corpus.
     cached, missing = [], []
+    n_frozen = 0
     for t in transcripts:
+        if frozen.season_of(t.session_id):
+            n_frozen += 1
+            continue
         hit = not args.reextract and load_cached_extraction(paths.cache_dir, t, cfg) is not None
         (cached if hit else missing).append(t)
 
     print(f"extract:  {len(cached)} cached, {len(missing)} to call  [{cfg.model}]")
+    if frozen.manifests:
+        print(f"frozen:   {n_frozen} session(s) in season(s) {', '.join(sorted(frozen.manifests))}")
 
     synth_calls: Counter[str] = Counter()
     if missing:
@@ -296,7 +315,7 @@ def _estimate_run(args: argparse.Namespace) -> int:
         print("synth:    unknown until those sessions are extracted")
     else:
         extractions = {
-            t.session_id: load_cached_extraction(paths.cache_dir, t, cfg)
+            t.session_id: load_cached_extraction(paths.cache_dir, t, cfg, frozen=frozen)
             for t in transcripts
         }
         tmap = {t.session_id: t for t in transcripts}
@@ -308,9 +327,13 @@ def _estimate_run(args: argparse.Namespace) -> int:
         # Every input here is a pure function -- no model call.
         source_sections = load_sources(paths.sources_dir)
         warm = 0
+        frozen_bodies = 0
         for entity in entities:
             if entity.tier == "brief":
                 continue           # rendered locally, no call ever
+            if frozen.body(entity) is not None:
+                frozen_bodies += 1
+                continue
             tier_cfg = base.for_tier(entity.tier)
             key = synth_cache_key(
                 entity,
@@ -328,6 +351,8 @@ def _estimate_run(args: argparse.Namespace) -> int:
         detail = ", ".join(f"{m} {n}" for m, n in sorted(synth_calls.items()))
         print(f"synth:    {warm} cached, {total} to call"
               + (f" ({detail})" if detail else ""))
+        if frozen_bodies:
+            print(f"frozen:   {frozen_bodies} entity bod(y/ies)")
 
     per_call = _avg_tokens_per_call()
     calls: Counter[str] = Counter(synth_calls)
@@ -398,6 +423,7 @@ def _write_unmatched(conflicts_dir: Path, lines: list[str]) -> None:
 def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     paths = Paths.resolve(args.transcripts, args.bundle, args.cache)
     cfg = DeepSeekConfig.from_env()
+    frozen = _frozen(paths, args)
 
     transcripts = _select(
         load_transcripts(paths.transcript_dir), args.limit, args.session
@@ -416,6 +442,7 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     extractions = _extract_all(
         transcripts, cfg.for_tier("extract"), paths, args.reextract,
         workers=args.workers,
+        frozen=frozen,
     )
 
     registry_path = paths.registry_path
@@ -478,9 +505,10 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
             state_run = run_state(
                 list(tmap.values()), cfg.for_tier("state"), paths.cache_dir,
                 glossary_rows, estimate=True,
+                frozen=frozen,
             )
             ledger = state_run.ledger
-            state_complete = state_run.uncached_estimate == 0
+            state_complete = state_run.uncached_estimate == 0 and not state_run.incomplete
             if not state_complete:
                 log.warning(
                     "[state] sessions without cached state -- run `pnp state`. Threads "
@@ -507,17 +535,19 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     def _synth(entity: CanonicalEntity) -> tuple[str, str]:
         if entity.tier == "brief":
             return entity.concept_id, render_brief_body(entity, targets)
-        body = synthesize_entity_body(
-            entity,
-            cfg.for_tier(entity.tier),
-            paths.cache_dir,
-            force=args.force,
-            sources=sources_for(entity, source_sections),
-            secondary=secondary_sources_for(entity, source_sections),
-            excerpts=(
-                excerpts_for(entity, tmap) if entity.tier == "deep" else ""
-            ),
-        )
+        body = frozen.body(entity)
+        if body is None:
+            body = synthesize_entity_body(
+                entity,
+                cfg.for_tier(entity.tier),
+                paths.cache_dir,
+                force=args.force,
+                sources=sources_for(entity, source_sections),
+                secondary=secondary_sources_for(entity, source_sections),
+                excerpts=(
+                    excerpts_for(entity, tmap) if entity.tier == "deep" else ""
+                ),
+            )
         # The cache stores this body pre-autolink (see synthesize_entity_body),
         # so linking here runs on every cache hit too — a rebuild after only
         # entity_rules.yaml or DEEP_MENTION_THRESHOLD changed relinks every
@@ -764,7 +794,8 @@ def cmd_extract(args: argparse.Namespace) -> int:
     transcripts = _select(
         load_transcripts(paths.transcript_dir), args.limit, args.session
     )
-    extractions = _extract_all(transcripts, cfg, paths, args.force, workers=args.workers)
+    frozen = _frozen(paths, args)
+    extractions = _extract_all(transcripts, cfg, paths, args.force, workers=args.workers, frozen=frozen)
     for sid, ex in extractions.items():
         log.info("%s: %d entities", sid, len(ex.entities))
     return 0
@@ -786,7 +817,8 @@ def cmd_dedup(args: argparse.Namespace) -> int:
     # for_tier("extract") or this misses every cached extraction and pays for a
     # full re-extraction -- the opposite of what the docstring promises.
     extractions = _extract_all(
-        transcripts, cfg.for_tier("extract"), paths, force=False, workers=args.workers
+        transcripts, cfg.for_tier("extract"), paths, force=False, workers=args.workers,
+        frozen=_frozen(paths, args),
     )
 
     registry_path = paths.registry_path
@@ -937,8 +969,14 @@ def cmd_state(args: argparse.Namespace) -> int:
     transcripts = sorted(load_transcripts(paths.transcript_dir), key=lambda t: (t.date, t.session_id))
     if args.limit:
         transcripts = transcripts[: args.limit]
-    run = run_state(transcripts, cfg, paths.cache_dir, rows, estimate=args.estimate)
+    run = run_state(transcripts, cfg, paths.cache_dir, rows, estimate=args.estimate,
+                    frozen=_frozen(paths, args))
     if args.estimate:
+        if run.incomplete:
+            log.error(
+                "Estimate blocked: frozen state is incomplete; restore or complete the snapshot before starting."
+            )
+            return 2
         print(f"{run.cached} cached, {run.uncached_estimate} would be called on {cfg.model}.")
         return 0
     report = render_state_report(run.ledger)
@@ -951,10 +989,28 @@ def cmd_state(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_freeze(args: argparse.Namespace) -> int:
+    """Snapshot a season from the caches into knowledge/frozen/. Never calls the model."""
+    paths = Paths.resolve(args.transcripts, args.bundle, args.cache)
+    m = freeze_season(paths, args.season, DeepSeekConfig.from_env(), from_cache=args.from_cache)
+    c = m["counts"]
+    print(f"frozen {m['season']}: {c['sessions']} session(s), {c['bodies']} bod(y/ies) "
+          f"({c['bodies_missing']} without a cached body), state: "
+          f"{'yes' if c['state_sessions'] else 'no'} -> {paths.frozen_dir / args.season}")
+    return 0
+
+
 def _add_common(p: argparse.ArgumentParser) -> None:
     p.add_argument("--transcripts", help="Directory of *.json transcripts")
     p.add_argument("--bundle", help="Output bundle directory")
     p.add_argument("--cache", help="Cache directory")
+    p.add_argument(
+        "--thaw", default="",
+        help="Comma-separated season keys (or 'all') whose frozen files this run "
+        "ignores, e.g. --thaw P. Re-reads those seasons at the current prompt "
+        "version -- costs money and can rename concept ids. Frozen files are "
+        "not modified; accept the result with `pnp freeze <season> --from-cache`.",
+    )
     p.add_argument(
         "--session",
         action="append",
@@ -1030,6 +1086,15 @@ def _build_parser() -> argparse.ArgumentParser:
                        help="Rewrite knowledge/state_glossary.yaml from the registry (invalidates the state cache)")
     state.set_defaults(func=cmd_state)
 
+    freeze = sub.add_parser("freeze", help="Snapshot a season into knowledge/frozen/ (free, no LLM)")
+    freeze.add_argument("season", help='Season key from episodes.yaml, e.g. "P"')
+    freeze.add_argument("--from-cache", action="store_true",
+                        help="Overwrite the frozen files from the current cache (after a --thaw run)")
+    freeze.add_argument("--transcripts", help="Directory of *.json transcripts")
+    freeze.add_argument("--bundle", help="Bundle directory")
+    freeze.add_argument("--cache", help="Cache directory")
+    freeze.set_defaults(func=cmd_freeze)
+
     dedup = sub.add_parser(
         "dedup", help="Propose entity merges for review (writes a report only)"
     )
@@ -1088,6 +1153,9 @@ def main(argv: list[str] | None = None) -> int:
         log.error("Copy .env.example to .env and fill in your DeepSeek settings.")
         return 2
     except FileNotFoundError as exc:
+        log.error("%s", exc)
+        return 2
+    except FrozenError as exc:
         log.error("%s", exc)
         return 2
 

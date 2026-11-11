@@ -15,6 +15,10 @@ just shows a "Bundle veraltet" hint until you run `pnp run` yourself in
 `services/kb`. The write endpoint (`POST /api/glossary/edits`) is
 loopback-only and validates the patched YAML before writing anything.
 
+The Folgen tab also exposes a second write path: it can freeze a season into
+`knowledge/frozen/` and start the fixed `pnp run` or `pnp state` command after
+an estimate and explicit confirmation. These endpoints are loopback-only.
+
 ## Run
 
 ### Local campaign workbench (Windows)
@@ -89,13 +93,25 @@ cd .. && .venv/Scripts/python app.py   # now also serves / from web/dist
 ## Config (env vars)
 
 - `PNP_CRAWL_DIR` — path to the pnp-crawl repo (default: sibling `../pnp-crawl`);
-  the Glossar tab also reads transcripts from `$PNP_CRAWL_DIR/transcripts_final`
+  used for crawl status only
 - `PNP_EXPORT_DIR` — path to the pnp-export-data repo (default: sibling `../pnp-export-data`)
 - `PNP_KB_URL` — KB API base URL (default: `http://127.0.0.1:8070`)
 - `PNP_KNOWLEDGE_DIR` — path to this repo's `knowledge/` dir (default:
   `../../knowledge`, i.e. the real one); the Glossar tab reads
   `entity_registry.yaml`/`entity_rules.yaml` from here and writes
   `entity_rules.yaml` here on sync
+- `PNP_TRANSCRIPT_DIR` — shared `*.json` transcript directory for Glossar,
+  season status, estimates, freezes, and starts (default:
+  `data/transcripts_final` in this repo)
+- `PNP_BUNDLE_DIR` — optional bundle path. It must be inside
+  a location whose inferred knowledge root matches `PNP_KNOWLEDGE_DIR`;
+  otherwise season estimate/freeze/start are rejected before a child process
+  launches. The default is
+  `knowledge/bundle/splitter_des_ewigen`.
+
+Season CLI commands receive absolute `--bundle` and `--transcripts` paths from
+these settings. Their registry and `knowledge/frozen/` paths therefore share
+the same knowledge root shown by the dashboard.
 
 ## Prerequisites for real data
 
