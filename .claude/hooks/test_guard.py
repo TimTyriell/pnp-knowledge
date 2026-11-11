@@ -73,6 +73,14 @@ def main() -> None:
             (2, "PowerShell", bash("& .venv\\Scripts\\python.exe -m pnp_okf.cli dedup"), {}),
             (2, "Bash", bash("PNP_PROFILE=flagship pnp state"), {}),
             (0, "Bash", bash("pnp run --estimate"), {}),
+            # D1 agent mode: --no-api cannot reach DeepSeek (the CLI refuses
+            # it unless every step model is agent:), so it is free everywhere.
+            (0, "Bash", bash("pnp run --no-api --scope pending"), {}),
+            (0, "Bash", bash("pnp extract --no-api"), {}),
+            (0, "PowerShell", bash("& .venv\\Scripts\\python.exe -m pnp_okf.cli dedup --no-api"), {}),
+            (0, "Bash", bash("pnp state --no-api"), {}),
+            (2, "Bash", bash("pnp run --no-api && pnp extract"), {}),
+            (2, "Bash", bash("pnp run --no-api; pnp run"), {}),
             (0, "Bash", bash("pnp run"), {"PNP_ALLOW_PAID": "1"}),
             (0, "Bash", bash("pnp check"), {}),
             # Known false positive, accepted: wrappers must not hide a run. Use the Grep tool.
