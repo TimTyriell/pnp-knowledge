@@ -158,6 +158,41 @@ def sweep(cache_dir: Path, live: set[str], tag: str | None, *, keep: int = KEEP_
     return report
 
 
+@dataclass
+class MigrateReport:
+    copied: int = 0
+    identical: int = 0
+    conflicts: list[str] = field(default_factory=list)
+
+
+def migrate(src: Path, dst: Path, *, dry_run: bool = False) -> MigrateReport:
+    """Copy src/{extract,synth,state}/** into dst. Never overwrites, never deletes src."""
+    rep = MigrateReport()
+    for kind in ("extract", "synth", "state"):
+        for p in sorted((src / kind).rglob("*")):
+            if not p.is_file():
+                continue
+            target = dst / p.relative_to(src)
+            if target.exists():
+                # JSON equality too: CRLF/LF differences between Windows and Linux
+                # writers are not conflicts.
+                same = target.read_bytes() == p.read_bytes() or (
+                    p.suffix == ".json"
+                    and json.loads(target.read_text(encoding="utf-8"))
+                    == json.loads(p.read_text(encoding="utf-8"))
+                )
+                if same:
+                    rep.identical += 1
+                else:
+                    rep.conflicts.append(target.relative_to(dst).as_posix())
+                continue
+            rep.copied += 1
+            if not dry_run:
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_bytes(p.read_bytes())
+    return rep
+
+
 def live_entries(paths: Paths, transcripts: list[SessionTranscript],
                  entities: list[CanonicalEntity] | None = None,
                  frozen: FrozenStore | None = None) -> set[str] | None:

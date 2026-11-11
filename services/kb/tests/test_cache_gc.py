@@ -165,6 +165,8 @@ def test_mass_guard_blocks_per_kind(tmp_path: Path) -> None:
 
     assert all(p.exists() for p in paths)
     assert len(report.blocked) == 2
+    # Blocked entries stay in the ledger so the next sweep can still age them.
+    assert set(load_ledger(tmp_path)) == {rels[0], rels[1]}
 
     sweep(tmp_path, live=live, tag="s9", allow_mass=True)
 
