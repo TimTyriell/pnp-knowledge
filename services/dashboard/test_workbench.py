@@ -395,6 +395,135 @@ def test_restore_requeues_accepted_suggestions_for_review(client, monkeypatch):
     assert restored.json()["entries"] == []
 
 
+def test_restore_keeps_only_accepted_evidence_present_in_target_revision(client, monkeypatch):
+    workspace = add_entry(client, campaign(client), title="Mara")
+    workspace, source = prepared_job(
+        client,
+        workspace,
+        monkeypatch,
+        [
+            {"name": "Mara", "type": "NPC", "note": "  Evidence A.", "citation_ts": "00:00:00"},
+            {"name": "Tower", "type": "Location", "note": "Evidence B.", "citation_ts": "00:00:01"},
+            {"name": "Ship", "type": "Item", "note": "Rejected evidence.", "citation_ts": "00:00:02"},
+        ],
+    )
+    proposals = {proposal["title"]: proposal for proposal in workspace["proposals"]}
+    reviewed = client.post(
+        f"/api/workspaces/{workspace['id']}/review",
+        json={
+            "base_revision": workspace["revision"],
+            "decisions": [{"id": proposals["Ship"]["id"], "action": "reject"}],
+        },
+    ).json()
+    after_a = client.post(
+        f"/api/workspaces/{workspace['id']}/review",
+        json={
+            "base_revision": reviewed["revision"],
+            "decisions": [{"id": proposals["Mara"]["id"], "action": "accept"}],
+        },
+    ).json()
+    after_b = client.post(
+        f"/api/workspaces/{workspace['id']}/review",
+        json={
+            "base_revision": after_a["revision"],
+            "decisions": [{"id": proposals["Tower"]["id"], "action": "accept"}],
+        },
+    ).json()
+
+    restored = client.post(
+        f"/api/workspaces/{workspace['id']}/restore",
+        json={"base_revision": after_b["revision"], "revision": after_a["revision"]},
+    )
+
+    assert restored.status_code == 200, restored.text
+    by_title = {proposal["title"]: proposal for proposal in restored.json()["proposals"]}
+    assert by_title["Mara"]["status"] == "accepted"
+    assert by_title["Tower"]["status"] == "pending"
+    assert by_title["Ship"]["status"] == "rejected"
+    assert restored.json()["sources"][0] == source
+    assert "Evidence A." in restored.json()["entries"][0]["body"]
+
+
+@pytest.mark.parametrize("accept", [False, True])
+def test_restore_prunes_missing_suggestion_targets_before_export(client, monkeypatch, accept):
+    original = campaign(client)
+    workspace = add_entry(client, original, title="Mara")
+    workspace, _ = prepared_job(
+        client,
+        workspace,
+        monkeypatch,
+        [{"name": "Mara", "type": "NPC", "note": "Evidence.", "citation_ts": "00:00:00"}],
+    )
+    proposal = workspace["proposals"][0]
+    assert proposal["candidates"] == [workspace["entries"][0]["concept"]]
+    revision = workspace["revision"]
+    if accept:
+        revision = client.post(
+            f"/api/workspaces/{workspace['id']}/review",
+            json={
+                "base_revision": revision,
+                "decisions": [{"id": proposal["id"], "action": "accept"}],
+            },
+        ).json()["revision"]
+
+    restored = client.post(
+        f"/api/workspaces/{workspace['id']}/restore",
+        json={"base_revision": revision, "revision": original["revision"]},
+    )
+    assert restored.status_code == 200, restored.text
+    proposal = restored.json()["proposals"][0]
+    assert proposal["status"] == "pending"
+    assert proposal["target"] is None
+    assert proposal["candidates"] == []
+    exported = client.get(f"/api/workspaces/{workspace['id']}/export")
+    reopened = client.post("/api/workspaces/import?name=Reopened", content=exported.content)
+    assert reopened.status_code == 201, reopened.text
+
+
+def test_restore_adds_existing_pending_target_to_candidates(client, monkeypatch):
+    workspace = campaign(client)
+    workspace, _ = prepared_job(
+        client,
+        workspace,
+        monkeypatch,
+        [{"name": "Old Tower", "type": "Location", "note": "Evidence.", "citation_ts": "00:00:00"}],
+    )
+    proposal = workspace["proposals"][0]
+    assert proposal["candidates"] == []
+    accepted = client.post(
+        f"/api/workspaces/{workspace['id']}/review",
+        json={"base_revision": workspace["revision"], "decisions": [{"id": proposal["id"], "action": "accept"}]},
+    ).json()
+    target = accepted["entries"][0]
+    edited = client.put(
+        f"/api/workspaces/{workspace['id']}/entries/{target['concept']}",
+        json={
+            "base_revision": accepted["revision"],
+            "title": target["title"],
+            "type": target["type"],
+            "body": "GM description without the source evidence.",
+            "aliases": target["aliases"],
+            "related": target["related"],
+        },
+    ).json()
+
+    restored = client.post(
+        f"/api/workspaces/{workspace['id']}/restore",
+        json={"base_revision": edited["revision"], "revision": edited["revision"]},
+    )
+
+    assert restored.status_code == 200, restored.text
+    reopened = client.post(
+        "/api/workspaces/import?name=Reopened",
+        content=client.get(f"/api/workspaces/{workspace['id']}/export").content,
+    )
+    assert reopened.status_code == 201, reopened.text
+    restored_proposal = restored.json()["proposals"][0]
+    assert restored_proposal["status"] == "pending"
+    assert restored_proposal["target"] == target["concept"]
+    assert restored_proposal["candidates"] == [target["concept"]]
+
+
 def test_accepted_note_correction_survives_export_and_restore(client, monkeypatch):
     workspace = campaign(client)
     workspace, _ = prepared_job(
@@ -428,7 +557,7 @@ def test_accepted_note_correction_survives_export_and_restore(client, monkeypatc
         },
     )
     assert restored.status_code == 200, restored.text
-    assert restored.json()["proposals"][0]["status"] == "pending"
+    assert restored.json()["proposals"][0]["status"] == "accepted"
     assert restored.json()["proposals"][0]["body"] == "GM correction."
 
 

@@ -358,13 +358,27 @@ class WorkspaceStore:
             state = self.load(wid)
             self.check_revision(state, payload.base_revision)
             files = self.files(state, payload.revision)
-            restored_ids = {entry["concept"] for entry in self.entries(state, files)}
+            entries = {entry["concept"]: entry for entry in self.entries(state, files)}
+            sources = {source["id"]: source for source in state["sources"]}
             for proposal in state["proposals"]:
+                proposal["candidates"] = [target for target in proposal["candidates"] if target in entries]
                 if proposal["status"] == "accepted":
+                    entry = entries.get(proposal["target"])
+                    source = sources.get(proposal["source_id"])
+                    evidence = (
+                        f"### {source['title']} ({source['date']})\n\n{proposal['body']}".strip()
+                        if source and proposal["body"].strip()
+                        else ""
+                    )
+                    if entry and evidence and evidence in entry["body"].strip():
+                        continue
                     proposal["status"] = "pending"
-                    if proposal["target"] not in restored_ids:
+                if proposal["status"] == "pending":
+                    if proposal["target"] not in entries:
                         proposal["target"] = None
-                        proposal["needs_decision"] = bool(proposal["candidates"])
+                    elif proposal["target"] not in proposal["candidates"]:
+                        proposal["candidates"].append(proposal["target"])
+                    proposal["needs_decision"] = proposal["target"] is None and bool(proposal["candidates"])
             self.publish(state, files, "Restored earlier version")
         return self.view(wid)
 
