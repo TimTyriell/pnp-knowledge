@@ -1,4 +1,4 @@
-import { fireEvent, render, screen, waitFor } from "@testing-library/react";
+import { act, fireEvent, render, screen, waitFor } from "@testing-library/react";
 import { beforeEach, expect, it, vi } from "vitest";
 import { RunPanel, isPeak } from "./RunPanel";
 
@@ -44,6 +44,25 @@ it("changing the selection clears the estimate", async () => {
   await screen.findByText("estimate output");
   fireEvent.click(screen.getByLabelText("Prolog einmalig neu lesen"));
   expect(screen.queryByText("estimate output")).not.toBeInTheDocument();
+  expect(screen.getByRole("button", { name: "Lauf starten" })).toBeDisabled();
+});
+
+it("discards an estimate that finishes after the run kind changes", async () => {
+  let finishEstimate!: (response: Response) => void;
+  vi.stubGlobal("fetch", vi.fn(async (url: RequestInfo | URL) => {
+    if (String(url) === "/api/seasons") return Response.json(seasons);
+    if (String(url) === "/api/runs/current") return Response.json(status);
+    if (String(url) === "/api/runs/estimate") return await new Promise<Response>((resolve) => { finishEstimate = resolve; });
+    return new Response("", { status: 404 });
+  }));
+  render(<RunPanel />);
+  fireEvent.click(screen.getByRole("button", { name: "Kosten schätzen" }));
+  fireEvent.click(screen.getByLabelText("Status-Pass (pnp state)"));
+  fireEvent.click(screen.getByLabelText("Kosten gesehen"));
+  await act(async () => {
+    finishEstimate(Response.json({ ok: true, output: "stale estimate" }));
+  });
+  expect(screen.queryByText("stale estimate")).not.toBeInTheDocument();
   expect(screen.getByRole("button", { name: "Lauf starten" })).toBeDisabled();
 });
 

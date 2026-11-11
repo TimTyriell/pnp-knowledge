@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { postJson, useSeasons } from "../useStatus";
 import type { CommandResult, RunState } from "../types";
 
@@ -9,7 +9,7 @@ export function isPeak(date: Date): boolean {
 }
 
 export function RunPanel() {
-  const { data: seasonData } = useSeasons();
+  const { data: seasonData, reload: reloadSeasons } = useSeasons();
   const [kind, setKind] = useState<"run" | "state">("run");
   const [thaw, setThaw] = useState<string[]>([]);
   const [estimate, setEstimate] = useState<CommandResult | null>(null);
@@ -17,6 +17,7 @@ export function RunPanel() {
   const [error, setError] = useState<string | null>(null);
   const [run, setRun] = useState<RunState | null>(null);
   const [submitting, setSubmitting] = useState(false);
+  const estimateRequest = useRef(0);
 
   const refresh = useCallback(async () => {
     try {
@@ -30,12 +31,18 @@ export function RunPanel() {
 
   useEffect(() => { void refresh(); }, [refresh]);
   useEffect(() => {
+    const reload = () => reloadSeasons();
+    window.addEventListener("pnp-seasons-changed", reload);
+    return () => window.removeEventListener("pnp-seasons-changed", reload);
+  }, [reloadSeasons]);
+  useEffect(() => {
     if (!run?.running) return;
     const timer = window.setInterval(() => void refresh(), 3000);
     return () => window.clearInterval(timer);
   }, [run?.running, refresh]);
 
   function selectionChanged(nextKind: "run" | "state", nextThaw: string[]) {
+    estimateRequest.current += 1;
     setKind(nextKind);
     setThaw(nextThaw);
     setEstimate(null);
@@ -44,13 +51,17 @@ export function RunPanel() {
   }
 
   async function getEstimate() {
+    const request = ++estimateRequest.current;
     setError(null);
     setConfirmed(false);
     try {
-      setEstimate(await postJson<CommandResult>("/api/runs/estimate", { kind, thaw }));
+      const result = await postJson<CommandResult>("/api/runs/estimate", { kind, thaw });
+      if (request === estimateRequest.current) setEstimate(result);
     } catch (err) {
-      setEstimate(null);
-      setError(err instanceof Error ? err.message : String(err));
+      if (request === estimateRequest.current) {
+        setEstimate(null);
+        setError(err instanceof Error ? err.message : String(err));
+      }
     }
   }
 

@@ -75,6 +75,7 @@ export function Episodes({ funnel }: { funnel: FunnelRow[] }) {
                     const result = await postJson<{ output: string }>("/api/seasons/" + key + "/freeze", {});
                     setOutputs((old) => ({ ...old, [key]: result.output }));
                     seasonStatus.reload();
+                    window.dispatchEvent(new Event("pnp-seasons-changed"));
                   } catch (err) {
                     setFreezeErrors((old) => ({ ...old, [key]: err instanceof Error ? err.message : String(err) }));
                   }
