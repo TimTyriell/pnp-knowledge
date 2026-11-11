@@ -27,6 +27,22 @@ it("start stays disabled until an estimate is shown and confirmed", async () => 
   expect(start).toBeEnabled();
 });
 
+it("keeps start disabled after an unsuccessful frozen-state estimate", async () => {
+  vi.stubGlobal("fetch", vi.fn(async (url: RequestInfo | URL, init?: RequestInit) => {
+    calls.push([url, init]);
+    if (String(url) === "/api/seasons") return Response.json(seasons);
+    if (String(url) === "/api/runs/current") return Response.json(status);
+    if (String(url) === "/api/runs/estimate") return Response.json({ ok: false, output: "Estimate blocked: frozen state is incomplete." });
+    if (String(url) === "/api/runs") return Response.json({ ok: true, output: "started" });
+    return new Response("", { status: 404 });
+  }));
+  render(<RunPanel />);
+  fireEvent.click(screen.getByRole("button", { name: "Kosten schätzen" }));
+  await screen.findByText("Estimate blocked: frozen state is incomplete.");
+  fireEvent.click(screen.getByLabelText("Kosten gesehen"));
+  expect(screen.getByRole("button", { name: "Lauf starten" })).toBeDisabled();
+});
+
 it("sends the thawed seasons with the start request", async () => {
   render(<RunPanel />);
   fireEvent.click(await screen.findByLabelText("Prolog einmalig neu lesen"));

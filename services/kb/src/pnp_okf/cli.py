@@ -972,6 +972,11 @@ def cmd_state(args: argparse.Namespace) -> int:
     run = run_state(transcripts, cfg, paths.cache_dir, rows, estimate=args.estimate,
                     frozen=_frozen(paths, args))
     if args.estimate:
+        if run.incomplete:
+            log.error(
+                "Estimate blocked: frozen state is incomplete; restore or complete the snapshot before starting."
+            )
+            return 2
         print(f"{run.cached} cached, {run.uncached_estimate} would be called on {cfg.model}.")
         return 0
     report = render_state_report(run.ledger)

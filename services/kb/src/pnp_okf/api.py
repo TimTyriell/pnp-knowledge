@@ -214,7 +214,10 @@ class BundleReader:
 def _default_bundle_dir() -> Path:
     env = os.environ.get("PNP_BUNDLE_DIR")
     if env:
-        return Path(env)
+        return Path(env).expanduser()
+    knowledge = os.environ.get("PNP_KNOWLEDGE_DIR")
+    if knowledge:
+        return Path(knowledge).expanduser() / "bundle" / "splitter_des_ewigen"
     # services/kb/src/pnp_okf/api.py -> monorepo root is four levels up.
     root = Path(__file__).resolve().parents[4]
     return root / "knowledge" / "bundle" / "splitter_des_ewigen"

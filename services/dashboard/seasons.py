@@ -58,13 +58,16 @@ def status(knowledge_dir: Path, transcript_dir: Path) -> dict:
     }
 
 
-def _argv(kind: str, thaw: list[str], valid: set[str], estimate: bool) -> list[str]:
+def _argv(
+    kind: str, thaw: list[str], valid: set[str], estimate: bool, bundle_dir: Path, transcript_dir: Path
+) -> list[str]:
     if kind not in KINDS:
         raise SeasonError("Unknown run kind.")
     bad = [season for season in thaw if season not in valid]
     if bad:
         raise SeasonError(f"Unknown season: {', '.join(bad)}")
     argv = [sys.executable, "-m", "pnp_okf.cli", kind]
+    argv += ["--bundle", str(bundle_dir), "--transcripts", str(transcript_dir)]
     if thaw:
         argv += ["--thaw", ",".join(sorted(thaw))]
     if estimate:
@@ -77,9 +80,9 @@ def running() -> bool:
     return proc is not None and proc.poll() is None
 
 
-def estimate(kind: str, thaw: list[str], valid: set[str]) -> dict:
+def estimate(kind: str, thaw: list[str], valid: set[str], bundle_dir: Path, transcript_dir: Path) -> dict:
     done = _run(
-        _argv(kind, thaw, valid, True),
+        _argv(kind, thaw, valid, True, bundle_dir, transcript_dir),
         cwd=KB_DIR,
         capture_output=True,
         text=True,
@@ -90,21 +93,31 @@ def estimate(kind: str, thaw: list[str], valid: set[str]) -> dict:
     return {"ok": done.returncode == 0, "output": (done.stdout + done.stderr).strip()}
 
 
-def freeze(season: str, from_cache: bool, valid: set[str]) -> dict:
+def freeze(season: str, from_cache: bool, valid: set[str], bundle_dir: Path, transcript_dir: Path) -> dict:
     if season not in valid:
         raise SeasonError("Unknown season.", 404)
     with _lock:
         if running():
             raise SeasonError("A pipeline run is in progress.", 409)
-        argv = [sys.executable, "-m", "pnp_okf.cli", "freeze", season] + (["--from-cache"] if from_cache else [])
+        argv = [
+            sys.executable,
+            "-m",
+            "pnp_okf.cli",
+            "freeze",
+            season,
+            "--bundle",
+            str(bundle_dir),
+            "--transcripts",
+            str(transcript_dir),
+        ] + (["--from-cache"] if from_cache else [])
         done = _run(
             argv, cwd=KB_DIR, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=600
         )
     return {"ok": done.returncode == 0, "output": (done.stdout + done.stderr).strip()}
 
 
-def start(kind: str, thaw: list[str], valid: set[str]) -> dict:
-    argv = _argv(kind, thaw, valid, False)
+def start(kind: str, thaw: list[str], valid: set[str], bundle_dir: Path, transcript_dir: Path) -> dict:
+    argv = _argv(kind, thaw, valid, False, bundle_dir, transcript_dir)
     with _lock:
         if running():
             raise SeasonError("A pipeline run is already in progress.", 409)

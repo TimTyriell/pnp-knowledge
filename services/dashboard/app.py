@@ -41,13 +41,13 @@ from workbench_api import router as workbench_router
 
 REPO_ROOT = Path(__file__).resolve().parents[2]  # .../pnp-knowledge/services/dashboard -> pnp-knowledge/
 
-# Sibling checkouts: REPO_ROOT is the repo root, so parent is the folder that
-# holds pnp-crawl and pnp-export-data side by side (same convention as
-# pnp_okf.config.default_transcript_dir). The env vars win.
+# Sibling checkouts: REPO_ROOT's parent holds pnp-crawl and pnp-export-data.
+# The env vars win.
 CRAWL_DIR = Path(os.environ.get("PNP_CRAWL_DIR", REPO_ROOT.parent / "pnp-crawl")).expanduser()
 EXPORT_DIR = Path(os.environ.get("PNP_EXPORT_DIR", REPO_ROOT.parent / "pnp-export-data")).expanduser()
 KB_URL = os.environ.get("PNP_KB_URL", "http://127.0.0.1:8070")
-KNOWLEDGE_DIR = Path(os.environ.get("PNP_KNOWLEDGE_DIR", REPO_ROOT / "knowledge")).expanduser()
+KNOWLEDGE_DIR = Path(os.environ.get("PNP_KNOWLEDGE_DIR", REPO_ROOT / "knowledge")).expanduser().resolve()
+_EXPLICIT_BUNDLE_DIR = os.environ.get("PNP_BUNDLE_DIR")
 
 CRAWL_STATUS = CRAWL_DIR / "status" / "status.json"
 CRAWL_HISTORY = CRAWL_DIR / "status" / "history.jsonl"
@@ -117,7 +117,7 @@ def history(days: int = 90) -> dict:
 
 @app.get("/api/glossary")
 def glossary_status() -> dict:
-    return glossary.build(KNOWLEDGE_DIR, CRAWL_DIR)
+    return glossary.build(KNOWLEDGE_DIR, default_transcript_dir())
 
 
 @app.post("/api/glossary/edits")
@@ -164,9 +164,23 @@ def _season_keys() -> set[str]:
     return set(merge.load_episodes(KNOWLEDGE_DIR / "episodes.yaml")["seasons"])
 
 
+def _pipeline_paths() -> tuple[Path, Path]:
+    root = KNOWLEDGE_DIR.resolve()
+    bundle = root / "bundle" / "splitter_des_ewigen"
+    if _EXPLICIT_BUNDLE_DIR:
+        bundle = Path(_EXPLICIT_BUNDLE_DIR).expanduser().resolve()
+        bundle_root = bundle.parent.parent if bundle.parent.name == "bundle" else bundle.parent
+        if bundle_root != root:
+            raise seasons.SeasonError(
+                f"PNP_BUNDLE_DIR ({bundle}) conflicts with the dashboard knowledge root ({root}); "
+                "set it to a bundle whose knowledge root matches or unset it."
+            )
+    return bundle.resolve(), default_transcript_dir().expanduser().resolve()
+
+
 def _guarded(fn, *args):
     try:
-        return fn(*args)
+        return fn(*args, *_pipeline_paths())
     except seasons.SeasonError as exc:
         raise HTTPException(exc.status, detail=str(exc)) from exc
 

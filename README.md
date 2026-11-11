@@ -134,6 +134,23 @@ in [docs/CRAWL-STAGE-1.md](docs/CRAWL-STAGE-1.md).
 
 ## Layout
 
+The services share data folders within this platform; they do not require other
+repositories to be checked out beside it. `data/transcripts_final/` holds input
+transcript JSON files, and `knowledge/` holds the private campaign bundle,
+registry, rules, and frozen seasons. Transcript contents are gitignored.
+
+Set `PNP_TRANSCRIPT_DIR` to read transcripts from another location, such as an
+external producer's output directory. Set `PNP_KNOWLEDGE_DIR` to use a different
+shared knowledge directory. Use absolute paths for external folders so every
+service sees the same data. The dashboard passes these resolved paths to its
+pipeline commands; `PNP_BUNDLE_DIR`, if set there, must belong to that knowledge
+directory. Configure the existing `PNP_CACHE_DIR` separately to reuse an existing
+pipeline cache. Moving data or changing its configured location does not copy
+the cache.
+
+Offline tests create their own shared data folders with fictional data. A
+standalone checkout needs neither `pnp-crawl` nor `pnp-export-data` to run them.
+
 ```
 ├── knowledge/            ★ SYSTEM OF RECORD — the OKF campaign bundle (own private repo, cloned here)
 │   ├── bundle/splitter_des_ewigen/   one markdown concept per entity

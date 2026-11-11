@@ -73,7 +73,7 @@ def test_count_names_multiword_alias():
 
 def test_build_end_to_end(tmp_path=None):
     knowledge = SCRATCH / "knowledge"
-    crawl = SCRATCH
+    transcripts = SCRATCH / "transcripts_final"
     _write(
         knowledge / "entity_registry.yaml",
         "entities:\n"
@@ -91,10 +91,10 @@ def test_build_end_to_end(tmp_path=None):
         "  npcs/lenra: Die Hag Lenra\n",
     )
     _write(
-        crawl / "transcripts_final" / "2026-01-01_RF_x.json",
+        transcripts / "2026-01-01_RF_x.json",
         json.dumps({"segments": [{"text": "Hack Hack die Sumpfhexe"}]}),
     )
-    result = glossary.build(knowledge, crawl)
+    result = glossary.build(knowledge, transcripts)
     assert result["entities"][0]["concept_id"] == "npcs/lenra"
     assert result["entities"][0]["pinned"] is True
     assert result["entities"][0]["mention_count"] == 9

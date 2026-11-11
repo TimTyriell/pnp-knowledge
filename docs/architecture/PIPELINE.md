@@ -23,7 +23,7 @@ anchor name (`def …`) is authoritative.
 | System of record | `knowledge/bundle/splitter_des_ewigen/` — 1182 concept files (1114 entity + 68 session), 6584 internal links (counts below) |
 | Registry | `knowledge/entity_registry.yaml` — **generated**, 1114 concept ids + 624 `retired:` entries (counts below) |
 | Rules | `knowledge/entity_rules.yaml` — **hand-written, never rewritten by code** |
-| Corpus | 68 sessions (counts in README, "The corpus"), German transcripts from `../pnp-crawl/transcripts_final` |
+| Corpus | 68 sessions (counts in README, "The corpus"), German transcripts from `data/transcripts_final` by default; `PNP_TRANSCRIPT_DIR` can point to an external producer such as `pnp-crawl` |
 | Provider | DeepSeek, OpenAI-compatible SDK |
 | Full rebuild | ~10.5 M tokens, **~$6.5 off-peak** |
 | Warm re-emit | 18 calls, **~$0.05** |
@@ -49,10 +49,19 @@ budgeted for.
 ## 2. Three repos, one direction
 
 ```
-pnp-crawl  (private)      pnp-knowledge  (here)          pnp-export-data
-audio -> transcript  ->   transcript -> knowledge   ->    knowledge -> wiki
-                          OKF bundle in git               reads the KB API only
+pnp-crawl (optional producer)  pnp-knowledge (here)      pnp-export-data
+audio -> transcript     ->     transcript -> knowledge -> knowledge -> wiki
+                               shared data/ + knowledge/  reads the KB API only
 ```
+
+The platform runs without a sibling checkout. Its transcript default is
+`<repo>/data/transcripts_final`, anchored to this repository rather than the
+working directory. Set `PNP_TRANSCRIPT_DIR` to consume output from an external
+`pnp-crawl` checkout. `PNP_KNOWLEDGE_DIR` selects the shared knowledge root;
+unless `--bundle` or `PNP_BUNDLE_DIR` is set, the bundle resolves to
+`<root>/bundle/splitter_des_ewigen`. Precedence is `--bundle`,
+`PNP_BUNDLE_DIR`, `PNP_KNOWLEDGE_DIR`, then the existing repo knowledge
+discovery.
 
 `pnp-export-data` is a pure client of the read-only API (`:8070`) and holds no
 knowledge. It owns `wiki_pages.toml`, which maps **concept_id → wiki page** —
@@ -471,9 +480,7 @@ cd services/kb
 PNP_REQUIRE_BUNDLE=1 .venv/Scripts/python.exe -m pytest  # bundle checked out: no silent skips
 
 .venv/Scripts/python.exe -m pnp_okf.cli check            # config + transcript count, no LLM
-.venv/Scripts/python.exe -m pnp_okf.cli run --estimate \
-    --transcripts ../../../pnp-crawl/transcripts_final \
-    --bundle ../../knowledge/bundle/splitter_des_ewigen   # the bill, before you pay it
+.venv/Scripts/python.exe -m pnp_okf.cli run --estimate   # defaults to data/ and discovered knowledge/
 .venv/Scripts/python.exe -m pnp_okf.cli validate --bundle ../../knowledge/bundle/splitter_des_ewigen
 .venv/Scripts/python.exe rules_doctor.py                 # dead rules
 .venv/Scripts/python.exe spelling_doctor.py              # name-drift sweep
@@ -481,8 +488,7 @@ PNP_REQUIRE_BUNDLE=1 .venv/Scripts/python.exe -m pytest  # bundle checked out: n
 .venv/Scripts/python.exe dup_doctor.py                   # merge: candidates from "(auch [...])" / similar-title first-paragraph links (read-only)
 
 # COSTS MONEY -- only with a budget and a reason:
-.venv/Scripts/python.exe -m pnp_okf.cli run --transcripts ../../../pnp-crawl/transcripts_final \
-    --bundle ../../knowledge/bundle/splitter_des_ewigen
+.venv/Scripts/python.exe -m pnp_okf.cli run
 ```
 
 Exit codes for `run`: `0` ok · `2` rename guard refused · `3` failed post-emit

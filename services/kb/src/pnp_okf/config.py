@@ -177,6 +177,10 @@ class Paths:
         bundle = (
             bundle_dir
             or os.environ.get("PNP_BUNDLE_DIR")
+            or (
+                str(Path(os.environ["PNP_KNOWLEDGE_DIR"]).expanduser() / "bundle" / "splitter_des_ewigen")
+                if os.environ.get("PNP_KNOWLEDGE_DIR") else None
+            )
             or cls._default_bundle()
         )
         cache = cache_dir or os.environ.get("PNP_CACHE_DIR") or "./.cache"
@@ -188,15 +192,9 @@ class Paths:
 
 
 def default_transcript_dir() -> Path:
-    """pnp-crawl's transcripts, as a sibling checkout of this repo.
-
-    ``PNP_TRANSCRIPT_DIR`` wins. The fallback finds the workspace containing
-    the sibling ``pnp-crawl`` checkout, which also works from a git worktree.
-    """
+    """Shared transcript data inside this repo, unless explicitly overridden."""
 
     env = os.environ.get("PNP_TRANSCRIPT_DIR")
     if env:
         return Path(env).expanduser()
-    parents = Path(__file__).resolve().parents
-    workspace = next((p for p in parents if (p / "pnp-crawl").is_dir()), parents[5])
-    return workspace / "pnp-crawl" / "transcripts_final"
+    return Path(__file__).resolve().parents[4] / "data" / "transcripts_final"

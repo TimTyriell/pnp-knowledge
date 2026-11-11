@@ -146,11 +146,32 @@ def test_thaw_flag_parses():
     assert _build_parser().parse_args(["run", "--thaw", "P,1"]).thaw == "P,1"
 
 
-def test_paths_default_transcripts_is_the_sibling_checkout(monkeypatch):
-    from pathlib import Path
-    monkeypatch.delenv("PNP_TRANSCRIPT_DIR", raising=False)
-    workspace = next(p for p in Path(__file__).resolve().parents if (p / "pnp-crawl").is_dir())
-    assert Paths.resolve().transcript_dir == workspace / "pnp-crawl" / "transcripts_final"
+def test_paths_default_transcripts_are_repo_shared_without_sibling_checkout(monkeypatch, tmp_path):
+    import pnp_okf.config as config
+    from pnp_okf.ingest import load_transcripts
+
+    for name in ("PNP_TRANSCRIPT_DIR", "PNP_BUNDLE_DIR", "PNP_KNOWLEDGE_DIR", "PNP_CACHE_DIR"):
+        monkeypatch.delenv(name, raising=False)
+    repo = tmp_path / "platform"
+    transcript_dir = repo / "data" / "transcripts_final"
+    transcript_dir.mkdir(parents=True)
+    (repo / "knowledge" / "bundle" / "splitter_des_ewigen").mkdir(parents=True)
+    (repo / "knowledge" / "entity_registry.yaml").write_text("entities: []\n", encoding="utf-8")
+    (transcript_dir / "2026-01-01_demo.json").write_text(json.dumps({
+        "video_date": "2026-01-01", "video_url": "https://example.invalid/demo",
+        "video_title": "Demo", "language": "de",
+        "segments": [{"start": 0, "end": 1, "speaker": "GM", "text": "Hallo"}],
+    }), encoding="utf-8")
+    (repo / "services" / "kb").mkdir(parents=True)
+    monkeypatch.setattr(config, "__file__", str(repo / "services/kb/src/pnp_okf/config.py"))
+    unrelated = tmp_path / "cwd"
+    unrelated.mkdir()
+    monkeypatch.chdir(unrelated)
+    monkeypatch.setenv("PNP_KNOWLEDGE_DIR", str(repo / "knowledge"))
+    paths = Paths.resolve()
+    assert paths.transcript_dir == transcript_dir
+    assert paths.bundle_dir == repo / "knowledge" / "bundle" / "splitter_des_ewigen"
+    assert [t.session_id for t in load_transcripts(paths.transcript_dir)] == ["2026-01-01_demo"]
 
 
 def _prepare_frozen_run(tmp_path, args, extraction):

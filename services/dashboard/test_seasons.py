@@ -1,5 +1,6 @@
 import json
 import sys
+from pathlib import Path
 
 import app
 import pytest
@@ -11,9 +12,10 @@ from fastapi.testclient import TestClient
 def client(tmp_path, monkeypatch):
     knowledge = tmp_path / "knowledge"
     transcripts = tmp_path / "transcripts"
-    transcripts.mkdir()
+    transcripts.mkdir(exist_ok=True)
     kb = tmp_path / "kb"
     monkeypatch.setattr(app, "KNOWLEDGE_DIR", knowledge)
+    monkeypatch.setattr(app, "_EXPLICIT_BUNDLE_DIR", None)
     monkeypatch.setattr(app, "default_transcript_dir", lambda: transcripts)
     monkeypatch.setattr(seasons, "KB_DIR", kb)
     seasons._current.clear()
@@ -69,7 +71,7 @@ def test_status_lists_transcripts_without_an_episode(client, tmp_path):
     assert response.json()["unlisted_transcripts"] == ["2025-01-01_unlisted_unknown"]
 
 
-def test_estimate_uses_fixed_argv(monkeypatch):
+def test_estimate_uses_shared_paths(monkeypatch, tmp_path):
     seen = []
 
     class Result:
@@ -78,8 +80,13 @@ def test_estimate_uses_fixed_argv(monkeypatch):
         stderr = ""
 
     monkeypatch.setattr(seasons, "_run", lambda argv, **kwargs: (seen.append(argv) or Result()))
-    result = seasons.estimate("run", ["P"], {"P"})
-    assert seen == [[sys.executable, "-m", "pnp_okf.cli", "run", "--thaw", "P", "--estimate"]]
+    bundle = tmp_path / "knowledge" / "bundle" / "splitter_des_ewigen"
+    transcripts = tmp_path / "transcripts"
+    result = seasons.estimate("run", ["P"], {"P"}, bundle, transcripts)
+    assert seen == [[
+        sys.executable, "-m", "pnp_okf.cli", "run", "--bundle", str(bundle),
+        "--transcripts", str(transcripts), "--thaw", "P", "--estimate",
+    ]]
     assert result == {"ok": True, "output": "estimate"}
 
 
@@ -108,6 +115,88 @@ def test_start_requires_confirm(client, monkeypatch, tmp_path):
     response = client.post("/api/runs", json={})
     assert response.status_code == 400
     assert called == []
+
+
+def test_conflicting_bundle_root_rejected_before_process(client, monkeypatch, tmp_path):
+    _episodes(app.KNOWLEDGE_DIR)
+    monkeypatch.setattr(app, "_EXPLICIT_BUNDLE_DIR", str(tmp_path / "other"))
+    called = []
+    monkeypatch.setattr(seasons, "_run", lambda *args, **kwargs: called.append(args))
+    response = client.post("/api/runs/estimate", json={})
+    assert response.status_code == 400
+    assert "PNP_BUNDLE_DIR" in response.json()["detail"]
+    assert called == []
+    assert client.post("/api/seasons/P/freeze", json={}).status_code == 400
+    assert client.post("/api/runs", json={"confirm": True}).status_code == 400
+    assert called == []
+
+
+def test_nested_bundle_with_wrong_inferred_root_is_rejected(client, monkeypatch, tmp_path):
+    _episodes(app.KNOWLEDGE_DIR)
+    monkeypatch.setattr(app, "_EXPLICIT_BUNDLE_DIR", str(app.KNOWLEDGE_DIR / "custom" / "bundle" / "campaign"))
+    called = []
+    monkeypatch.setattr(seasons, "_popen", lambda *args, **kwargs: called.append(args))
+    response = client.post("/api/runs", json={"confirm": True})
+    assert response.status_code == 400
+    assert called == []
+
+
+def test_relative_paths_are_absolute_before_child_cwd(monkeypatch):
+    monkeypatch.setattr(app, "KNOWLEDGE_DIR", Path("relative-knowledge"))
+    monkeypatch.setattr(app, "_EXPLICIT_BUNDLE_DIR", None)
+    monkeypatch.setattr(app, "default_transcript_dir", lambda: Path("relative-transcripts"))
+    bundle, transcripts = app._pipeline_paths()
+    assert bundle.is_absolute()
+    assert transcripts.is_absolute()
+
+
+def test_commands_receive_displayed_data_paths(client, monkeypatch, tmp_path):
+    _episodes(app.KNOWLEDGE_DIR)
+    bundle = app.KNOWLEDGE_DIR / "bundle" / "campaign"
+    bundle.mkdir(parents=True)
+    monkeypatch.setattr(app, "_EXPLICIT_BUNDLE_DIR", str(bundle))
+    transcripts = tmp_path / "transcripts"
+    transcripts.mkdir(exist_ok=True)
+    monkeypatch.setattr(app, "default_transcript_dir", lambda: transcripts)
+    calls = []
+    resolved_paths = []
+
+    class Result:
+        returncode = 0
+        stdout = "ok"
+        stderr = ""
+
+    def run(argv, **kw):
+        calls.append(argv)
+        from pnp_okf.config import Paths
+
+        paths = Paths.resolve(
+            transcript_dir=argv[argv.index("--transcripts") + 1],
+            bundle_dir=argv[argv.index("--bundle") + 1],
+        )
+        resolved_paths.append(paths)
+        return Result()
+
+    monkeypatch.setattr(seasons, "_run", run)
+    assert client.post("/api/runs/estimate", json={}).status_code == 200
+    assert client.post("/api/seasons/P/freeze", json={}).status_code == 200
+
+    class Process:
+        def poll(self):
+            return 0
+
+    started = []
+    monkeypatch.setattr(seasons, "_popen", lambda argv, **kw: (started.append(argv) or Process()))
+    assert client.post("/api/runs", json={"confirm": True}).status_code == 202
+    for argv in calls + started:
+        assert argv[argv.index("--bundle") + 1] == str(bundle)
+        assert argv[argv.index("--transcripts") + 1] == str(transcripts)
+    assert calls[0][3] == "run" and "--estimate" in calls[0]
+    assert calls[1][3] == "freeze" and calls[1][4] == "P"
+    assert all(p.knowledge_root == app.KNOWLEDGE_DIR.resolve() for p in resolved_paths)
+    assert all(p.registry_path == app.KNOWLEDGE_DIR / "entity_registry.yaml" for p in resolved_paths)
+    assert all(p.frozen_dir == app.KNOWLEDGE_DIR / "frozen" for p in resolved_paths)
+    assert all(p.transcript_dir == transcripts.resolve() for p in resolved_paths)
 
 
 def test_second_start_is_a_conflict(client, monkeypatch):
