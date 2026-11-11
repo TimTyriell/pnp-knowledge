@@ -42,7 +42,12 @@ from pnp_okf.emit import (
     threads_by_session,
 )
 from pnp_okf.episodes import Episodes, citation_labels, relabel_citations, teams_for
-from pnp_okf.extract import extract_session, find_cached_extraction_model, load_cached_extraction
+from pnp_okf.extract import (
+    extract_session,
+    find_cached_extraction,
+    find_cached_extraction_model,
+    load_cached_extraction,
+)
 from pnp_okf.frozen import FrozenError, FrozenStore, freeze_season
 from pnp_okf.handoff import (
     AGENT_CALLS,
@@ -95,21 +100,55 @@ from pnp_okf.validate import fix_bundle, validate_bundle
 log = logging.getLogger("pnp_okf")
 
 
+def _matches(t: SessionTranscript, wanted: set[str]) -> bool:
+    return t.session_id in wanted or t.date in wanted or t.session_id[:10] in wanted
+
+
 def _select(
     transcripts: list[SessionTranscript], limit: int | None, sessions: list[str] | None
 ) -> list[SessionTranscript]:
     if sessions:
         wanted = set(sessions)
-        picked = [
-            t
-            for t in transcripts
-            if t.session_id in wanted or t.date in wanted or t.session_id[:10] in wanted
-        ]
+        picked = [t for t in transcripts if _matches(t, wanted)]
     else:
         picked = transcripts
     if limit is not None:
         picked = picked[:limit]
     return picked
+
+
+def _scope_ids(
+    transcripts: list[SessionTranscript],
+    scope: str,
+    frozen: FrozenStore,
+    cfg: DeepSeekConfig,
+    cache_dir: Path,
+) -> set[str]:
+    """Session ids that may be sent to a model for extraction (--scope).
+
+    Only extraction is limited: every transcript still loads, so the run stays
+    a full run and the rename guard still sees every entity. A named id that
+    matches no transcript is an error, not an empty scope.
+    """
+    if scope == "all":
+        return {t.session_id for t in transcripts}
+    if scope == "active":
+        return {t.session_id for t in transcripts if frozen.season_of(t.session_id) is None}
+    if scope == "pending":
+        # Any-model lookup, per the reuse rule: a result another model made
+        # still counts as done, so it is not re-bought.
+        return {
+            t.session_id for t in transcripts
+            if frozen.season_of(t.session_id) is None
+            and find_cached_extraction(cache_dir, t, cfg, frozen=frozen) is None
+        }
+    tokens = {s.strip() for s in scope.split(",") if s.strip()}
+    if not tokens:
+        raise ConfigError("--scope is empty; use all, active, pending or session ids")
+    unknown = sorted(tok for tok in tokens if not any(_matches(t, {tok}) for t in transcripts))
+    if unknown:
+        raise ConfigError(f"--scope names no transcript: {', '.join(unknown)}")
+    return {t.session_id for t in transcripts if _matches(t, tokens)}
 
 
 def _frozen(paths: Paths, args: argparse.Namespace) -> FrozenStore:
@@ -125,6 +164,7 @@ def _extract_all(
     force: bool,
     workers: int = 8,
     frozen: FrozenStore | None = None,
+    scope: str = "all",
 ) -> dict[str, SessionExtraction]:
     """Extract every session, in parallel like synthesis.
 
@@ -137,15 +177,45 @@ def _extract_all(
 
     pool.map keeps input order, so the returned dict is ordered exactly as the
     sequential loop left it.
+
+    An out-of-scope session never reaches a model: it must already be frozen
+    or cached, or the run stops before any session is sent (--scope).
     """
+
+    if frozen is None:
+        frozen = FrozenStore()
+    in_scope = _scope_ids(transcripts, scope, frozen, cfg, paths.cache_dir)
+    # Out-of-scope sessions are reused, never re-bought, so force does not apply.
+    # Checked before any session is sent: a run that will be refused must not
+    # first buy or queue work for the in-scope sessions.
+    reused: dict[str, SessionExtraction] = {}
+    missing: list[str] = []
+    for t in transcripts:
+        if t.session_id in in_scope:
+            continue
+        found = find_cached_extraction(paths.cache_dir, t, cfg, frozen=frozen)
+        if found is None:
+            missing.append(t.session_id)
+        else:
+            reused[t.session_id] = found[0]
+    if missing:
+        shown = ", ".join(sorted(missing)[:10])
+        more = f" (and {len(missing) - 10} more)" if len(missing) > 10 else ""
+        raise ConfigError(
+            f"{len(missing)} session(s) are outside --scope and have no frozen or cached "
+            f"extraction: {shown}{more}. Add them to --scope, or use --scope pending to "
+            "send only sessions with nothing cached."
+        )
 
     pending: list[AgentPending] = []
 
     def _one(t: SessionTranscript) -> tuple[str, SessionExtraction | None]:
         # Frozen wins over force: --reextract must not re-buy a frozen season (R3).
-        hit = frozen.extraction(t) if frozen is not None else None
+        hit = frozen.extraction(t)
         if hit is not None:
             return t.session_id, hit
+        if t.session_id in reused:
+            return t.session_id, reused[t.session_id]
         try:
             return t.session_id, extract_session(t, cfg, paths.cache_dir, force=force)
         except AgentPending as p:
@@ -500,6 +570,7 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
         transcripts, cfg.for_tier("extract"), paths, args.reextract,
         workers=args.workers,
         frozen=frozen,
+        scope=getattr(args, "scope", "all"),
     )
 
     registry_path = paths.registry_path
@@ -864,7 +935,8 @@ def cmd_extract(args: argparse.Namespace) -> int:
         load_transcripts(paths.transcript_dir), args.limit, args.session
     )
     frozen = _frozen(paths, args)
-    extractions = _extract_all(transcripts, cfg, paths, args.force, workers=args.workers, frozen=frozen)
+    extractions = _extract_all(transcripts, cfg, paths, args.force, workers=args.workers,
+                               frozen=frozen, scope=getattr(args, "scope", "all"))
     for sid, ex in extractions.items():
         log.info("%s: %d entities", sid, len(ex.entities))
     return 0
@@ -1184,6 +1256,17 @@ def _add_common(p: argparse.ArgumentParser) -> None:
     )
 
 
+def _add_scope(p: argparse.ArgumentParser) -> None:
+    # Per subcommand, not in _add_common: state and dedup never send extraction.
+    p.add_argument(
+        "--scope", default="all", metavar="SCOPE",
+        help="Which sessions may be sent to a model for extraction: all (default), "
+        "active (not frozen), pending (nothing frozen or cached), or session ids/dates "
+        "(comma list). Other sessions must already be frozen or cached. Every transcript "
+        "still loads and the run stays a full run.",
+    )
+
+
 def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="pnp",
@@ -1218,10 +1301,12 @@ def _build_parser() -> argparse.ArgumentParser:
         "deliberate registry cleanup). The check is skipped entirely on a "
         "--limit/--session run.",
     )
+    _add_scope(run)
     run.set_defaults(func=cmd_run)
 
     extract = sub.add_parser("extract", help="Extraction stage only (fills cache)")
     _add_common(extract)
+    _add_scope(extract)
     extract.set_defaults(func=cmd_extract)
 
     state = sub.add_parser("state", help="Threads/status/attitude pass (T5; costs money)")
