@@ -24,6 +24,7 @@ Two systems live here, and the top level keeps them apart:
   as PRs, tagged `s<NN>` per session on merge (the tag is manual: see
   [docs/RELEASING.md](docs/RELEASING.md)).
   Knowledge diffs: `git -C knowledge diff <ref>..`.
+  `cache/` = paid LLM cache (C1), swept by `pnp cache gc`; never hand-edit.
 - **`services/kb/`** — the KB service: the `pnp_okf` OKF-distillation pipeline
   (transcripts → bundle, DeepSeek) plus the read-only HTTP API
   (`python -m pnp_okf.api`, 127.0.0.1:8070). Own `pyproject.toml`, own venv.

@@ -113,7 +113,7 @@ Separate subcommand, not a stage of `pnp run` (T00 D4). Design: T00 §4.5–§5.
   once, so identity never comes from the model's wording.
 - **Cache key:** prompt version, model, session dialogue, a hash of the frozen
   glossary, and a hash of the open-thread list the prompt showed. Cache files:
-  `.cache/state/<session>/<key>.json`.
+  `<cache>/state/<session>/<key>.json` (`<cache>` = the cache dir, see §6).
 - **Glossary:** frozen in `knowledge/state_glossary.yaml`, written only by
   `pnp state --refresh-glossary`. A live read of the registry would change every
   key on every `pnp run`.
@@ -224,7 +224,7 @@ key = sha256({v: SYNTH_PROMPT_VERSION, model, entity.model_dump(), tier,
 
 **Four consequences you must internalise:**
 
-1. ~~The key is versioned; the path is not.~~ **Fixed 2026-09-07.** Each key now lives at its own path, so a `*_PROMPT_VERSION` or model change no longer overwrites the previous entry and reverting one is free. ⚠ `.cache/` is gitignored — a machine holding a pre-2026-09-07 flat cache must migrate it (read each blob's `_key`, move to `<session>/<key>.json`) or it re-extracts at full price.
+1. ~~The key is versioned; the path is not.~~ **Fixed 2026-09-07.** Each key now lives at its own path, so a `*_PROMPT_VERSION` or model change no longer overwrites the previous entry and reverting one is free. The cache now lives in `knowledge/cache/` (private bundle repo, C1), not in the gitignored `services/kb/.cache`. A legacy `services/kb/.cache` moves there with `pnp cache migrate`. A pre-2026-09-07 flat cache must still be re-keyed first (read each blob's `_key`, move to `<session>/<key>.json`) or it re-extracts at full price.
 2. **The prompt *text* is not in the key**, only its version number. Change prompt content without bumping its version (`EXTRACT_PROMPT_VERSION` or `SYNTH_PROMPT_VERSION`) and the cache silently serves stale results. This is now caught by `tests/test_prompt_pins.py`, which pins a hash of each prompt's text and schema to its version. Its failure message is the trap the test exists for.
 3. **Changing `DEEPSEEK_MODEL` costs a full rebuild**, same as a prompt bump. Settle the model before starting one.
 4. **Synthesis re-runs on any change to the entity** — a new mention note, a reordered alias, an `important:` flip, a tier change.
@@ -235,6 +235,28 @@ required**; comparison is lexicographic on the ISO date, cutoff exclusive.
 For whole-season ground truth, these variables are superseded by the committed
 season freeze described in §6a.
 
+### Cache lifecycle (C1)
+
+An entry is **stale** when the current config no longer reaches its key: a prompt or
+model change, an edited transcript, an entity renamed, merged or anchored away, or a
+session now served from `knowledge/frozen/`.
+
+- A stale entry is deleted once it has stayed stale through 2 session tags (`--keep`).
+  No session tag → nothing is ever deleted. Git history keeps every deleted file.
+- Per-kind mass guard: if more than 50% of one kind (extract or synth) is due, that kind
+  is held back and reported as `blocked`. Review with `pnp cache gc --dry-run`, then
+  `pnp cache gc --allow-mass`. The automatic sweep never overrides it.
+- The automatic sweep runs at the end of a successful, non-partial `pnp run` (no
+  `--limit`/`--session`, not `--estimate`). It never changes the run's exit code.
+- The live set is unknown and the sweep aborts, deleting nothing, when a transcript has
+  no cached extraction under the current config, a cache session has no transcript, or
+  there are no transcripts. `pnp cache gc` exits 2; the automatic sweep logs a warning.
+- Frozen seasons' cache entries become stale by design (their extractions come from
+  `knowledge/frozen/`), so they are swept like any other stale entry.
+- `state/` is never swept. Only `extract/` and `synth/` entries are candidates.
+- Restore a deleted entry: `git -C knowledge restore --source=<tag> -- cache/<path>`.
+- Ledger: `cache/gc_ledger.json` records the tag at which each stale entry went stale.
+
 ## 6a. Season freeze
 
 A season is frozen exactly when `knowledge/frozen/<season>/manifest.json` exists.
@@ -242,7 +264,7 @@ The manifest lists the season's sessions and snapshot metadata; a malformed
 manifest or a listed session without its extraction file is an error. The
 pipeline does not fall back to a model call for a broken freeze. A frozen
 session always uses its committed extraction, regardless of prompt/model
-versions, `--reextract`, `--force`, or the contents of `.cache/`. A changed
+versions, `--reextract`, `--force`, or the contents of the cache dir. A changed
 transcript logs one warning and still uses the frozen extraction. Transcripts
 of frozen seasons are still read from disk, never sent to the model.
 
