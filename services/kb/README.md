@@ -97,6 +97,7 @@ pnp visualize --bundle ./bundle/splitter_des_ewigen --python-module
 pnp check       Verify config + count transcripts (no LLM calls)
 pnp run         Full pipeline: ingest → extract → resolve → synthesize → emit
 pnp extract     Extraction stage only (populate the cache)
+pnp freeze      Snapshot a season from caches into knowledge/frozen/ (no model calls)
 pnp visualize   Generate viz.html by calling the okf reference CLI
 ```
 

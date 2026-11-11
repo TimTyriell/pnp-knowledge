@@ -87,7 +87,7 @@ so **any concept_id rename is a cross-repo break.** Remember this in §4.
 > if you touch this function: sessions after entities, registry last.
 
 **Subcommands** (`_build_parser`, `cli.py:601`): `run`, `extract`, `dedup`,
-`check`, `visualize`, `validate`. **There is no emit-only subcommand** — `run`
+`freeze`, `check`, `visualize`, `validate`. **There is no emit-only subcommand** — `run`
 is the only path to a bundle, and with warm caches it is nearly free.
 
 ---
@@ -223,6 +223,53 @@ key = sha256({v: SYNTH_PROMPT_VERSION, model, entity.model_dump(), tier,
 `PNP_EXTRACT_FREEZE_BEFORE` + `PNP_EXTRACT_FREEZE_VERSION` (`extract.py:38`)
 pin sessions dated before a cutoff to an old prompt version. **Both vars
 required**; comparison is lexicographic on the ISO date, cutoff exclusive.
+For whole-season ground truth, these variables are superseded by the committed
+season freeze described in §6a.
+
+## 6a. Season freeze
+
+A season is frozen exactly when `knowledge/frozen/<season>/manifest.json` exists.
+The manifest lists the season's sessions and snapshot metadata; a malformed
+manifest or a listed session without its extraction file is an error. The
+pipeline does not fall back to a model call for a broken freeze. A frozen
+session always uses its committed extraction, regardless of prompt/model
+versions, `--reextract`, `--force`, or the contents of `.cache/`. A changed
+transcript logs one warning and still uses the frozen extraction. Transcripts
+of frozen seasons are still read from disk, never sent to the model.
+
+The season directory contains plain, hand-correctable JSON:
+
+```text
+knowledge/frozen/<season>/
+  manifest.json
+  extract/<session_id>.json
+  synth/<concept__id>.json   # fingerprint and raw synthesized body
+  state/<session_id>.json    # present only when the complete state cache exists
+```
+
+Frozen synthesis bodies are used only when all mentions belong to the same
+frozen season and their mention fingerprint still matches. Brief entities are
+rendered locally and have no body snapshot. Cross-season entities, or entities
+whose fingerprint changed, use normal synthesis. State snapshots are optional:
+freeze writes them only when cached state exists for every session in the
+season; it never creates a partial snapshot. With no complete snapshot, the
+state pass can use existing cache entries, but a missing entry for a frozen
+session raises instead of making a model call. Thaw the season to re-read it.
+
+`--thaw <season>[,<season>]` or `--thaw all` on `run`, `extract`, `state`, or
+`dedup` ignores the selected frozen files for that invocation and leaves them
+unchanged. To intentionally re-read an old season, run `pnp run --thaw P`, then
+`pnp freeze P --from-cache` to replace its snapshot from the resulting cache.
+Without `--from-cache`, `pnp freeze <season>` fills missing files but does not
+overwrite existing ones. Freeze makes no model calls and exits 2 if any season
+session lacks an extraction. It snapshots raw synthesized bodies only for
+non-brief entities whose mentions all lie in that season; unavailable cached
+bodies are recorded as missing. `pnp run` remains a full run with its rename
+guard enabled.
+
+Extraction version precedence is **frozen file > `PNP_EXTRACT_FREEZE_*` env pin
+> current prompt version**. The environment pin remains useful for unfrozen
+sessions; it does not override a committed season snapshot.
 
 ### Prices (api-docs.deepseek.com, Sept 2026, per MTok)
 
@@ -456,6 +503,7 @@ time, it does not close the gap.
 | change a synthesis prompt (`SYNTH_*`) | §6 — bump `SYNTH_PROMPT_VERSION` only: re-synthesis, no re-extraction, no id churn |
 | change the model | §6 — same cost as a prompt bump |
 | touch the state pass (`state.py`, `STATE_*` prompts) | T00 §5 — `STATE_PROMPT_VERSION` bump re-runs `pnp state` only (~$2–4), never extraction |
+| re-read an old season | §6a — thaw for the run, then refresh its snapshot from cache |
 | reorder or add an emit step | §7 |
 | add a quality check | §9, §10 — and decide hard-0 vs ratchet *by measuring* |
 | make anything cheaper | §8 first, §6 second. The model name is rarely the answer |

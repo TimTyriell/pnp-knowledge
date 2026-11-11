@@ -9,3 +9,10 @@ git -C knowledge tag s<NN> && git -C knowledge push origin s<NN>
 ```
 
 The baseline tag on the current `main` is a human step; the repo had 0 tags on 2026-10-26 (`git tag | wc -l`). Until a tag exists, its as-of reads cannot resolve.
+
+## Releasing a frozen season
+
+After `pnp freeze <season>` creates the snapshot, release it from the bundle's
+own repository (`knowledge/`): create a branch, commit `frozen/<season>/`, open
+and merge a PR, then tag the merged commit `season-<key>-v<extract version>`.
+For example, Prolog extracted with v6 is tagged `season-P-v6`.
