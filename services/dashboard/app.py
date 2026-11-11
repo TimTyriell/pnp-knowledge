@@ -29,6 +29,8 @@ import uvicorn
 import yaml
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.staticfiles import StaticFiles
+from workbench_api import router as workbench_router
+from workbench_api import shutdown_workers
 
 REPO_ROOT = Path(__file__).resolve().parents[2]  # .../pnp-knowledge/services/dashboard -> pnp-knowledge/
 
@@ -51,6 +53,8 @@ EPISODES_PATH = KNOWLEDGE_DIR / "episodes.yaml"
 WEB_DIST = Path(__file__).parent / "web" / "dist"
 
 app = FastAPI(title="pnp-dashboard")
+app.include_router(workbench_router)
+app.router.on_shutdown.append(shutdown_workers)
 
 
 @app.get("/api/status")

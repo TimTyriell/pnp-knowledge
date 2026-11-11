@@ -1,12 +1,14 @@
 # Intent: local campaign knowledge workbench
 
-Status: draft, awaiting user review
+Status: accepted; implementation decisions delegated to the agent
 
 Date: 2026-11-03
 
 Product owner: the requesting user
 
-Acceptance: not yet recorded
+Acceptance: 2026-11-03. The user accepted the direction and asked the agent to
+choose the behavior requiring the least manual adjustment. Further routine
+design and implementation approvals are delegated; do not request them again.
 
 ## Problem
 
@@ -26,9 +28,9 @@ pipeline. Functionality takes priority over visual polish.
   supported in the first release. Neither is an optional later addition.
 - The frontend uses React and TypeScript, shadcn/ui, and Zustand for state
   management.
-- Core product behavior is developed in discussion with the user.
-- Development follows the linked AI-native SDLC playbook, with reviewable
-  artifacts and human decisions at the stage boundaries.
+- Choose product defaults for a nontechnical GM with minimal manual adjustment.
+- Keep the playbook's artifacts and verification evidence, applying the user's
+  delegated approval instead of requiring further routine stage reviews.
 
 ## Intended outcomes
 
@@ -93,7 +95,9 @@ and must not invoke paid model calls.
 - Keep the local installation and startup understandable for a nontechnical GM;
   choose the packaging mechanism during design.
 
-These boundaries are recommendations for review, not recorded user decisions.
+Delegated decision: use these boundaries. Offer bulk acceptance for unambiguous
+new entries, preserve existing descriptions on updates, and require explicit
+handling of ambiguous identities. Start in isolated new/imported workspaces.
 
 ## Observable first-release acceptance
 
@@ -119,19 +123,15 @@ Hosted accounts, simultaneous multiplayer editing, audio transcription, a graph
 database, interactive maps, AI chat, and wiki publishing implementation. The
 separate `pnp-export-data` project continues to own publishing.
 
-## Decisions requested at intent review
+## Decisions made under delegated authority
 
-1. Accept or revise the proposed first-release boundaries, especially the guided
-   editor and review per changed entry.
-2. Confirm whether the first release must directly adopt the existing live
-   campaign or may initially work with new/imported campaign workspaces. The
-   recommendation is new/imported workspaces, followed by an explicit migration
-   for the live campaign once round-trip and preservation checks pass.
+Use the guided editor and review organized per entry, with batch acceptance
+for straightforward additions. Initially use new/imported campaign workspaces;
+adoption of the live campaign is a later migration after preservation checks.
 
 ## Next review points
 
-After intent acceptance, write `spec.md` covering the two user journeys, editing
-and review behavior, ownership and persistence, the Python-versus-Node decision,
-and the relationship to current ingestion/release rules. After design review,
-write `plan.md` with exact implementation steps and tests. Application changes
-start after the implementation plan is accepted.
+Maintain `spec.md`, `plan.md`, and `verification.md` alongside this intent.
+Proceed with implementation under the delegation recorded above. Ask only for
+missing information that blocks a correct outcome or a new consequential action
+outside the local implementation scope.

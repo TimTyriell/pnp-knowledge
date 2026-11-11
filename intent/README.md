@@ -21,6 +21,10 @@ conditions. A draft is not acceptance. Keep later artifacts consistent with
 the decisions in earlier ones. Save artifacts in Git at the corresponding
 review points, staging only files belonging to that change.
 
+The user may delegate routine product and implementation decisions. Record that
+delegation in the intent and proceed without repeatedly requesting stage
+approvals; retain the artifacts and verification evidence.
+
 Repository guidance in `AGENTS.md` and applicable architecture decisions still
 apply. Local delivery is the target for the frontend workbench; hosted
 publication is outside its scope.

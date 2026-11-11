@@ -1,0 +1,60 @@
+name: Propose visual baselines
+
+# Generate reviewable images only. This workflow never commits or pushes.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  generate:
+    name: Generate Linux Chromium baselines
+    runs-on: ubuntu-24.04
+    container: mcr.microsoft.com/playwright:v1.64.1-noble
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: services/dashboard/web
+    env:
+      PNP_TEST_PYTHON: python
+      CI: "true"
+    steps:
+      - name: Checkout selected ref
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: services/dashboard/web/package-lock.json
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python dependencies
+        run: python -m pip install -e ../../kb -e "..[dev]"
+
+      - name: Install frontend dependencies
+        run: npm ci
+
+      - name: Build production frontend
+        run: npm run build
+
+      - name: Generate proposed baselines
+        run: npx playwright test --project=visual-chromium --update-snapshots
+
+      - name: Upload proposed baselines and evidence
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: proposed-visual-baselines
+          path: |
+            services/dashboard/web/e2e/__screenshots__/
+            services/dashboard/web/playwright-report/
+            services/dashboard/web/test-results/
+          retention-days: 7
+          if-no-files-found: error

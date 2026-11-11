@@ -8,7 +8,7 @@ Review pull request #$ARGUMENTS of this repo. You are the reviewer, not the
 author: if this session wrote the change, say so in the comment's first line.
 For a clean context run it headless instead: `claude -p "/review-pr <n>"`.
 
-1. Read `REVIEW.md` (the policy) and `CLAUDE.md`.
+1. Read `REVIEW.md` (the policy) and `AGENTS.md`.
 2. `gh pr view $ARGUMENTS` and `gh pr diff $ARGUMENTS`. If the PR names a plan
    in `docs/plans/`, read it and judge the diff against its *Intent* and
    *Done when*, not just against itself.
