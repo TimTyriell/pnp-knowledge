@@ -16,6 +16,9 @@ Run every command from `services/kb` with its venv: `.venv/Scripts/python.exe -m
   requires all five to be agent labels, `agent:<host>:<model>`, e.g.
   `agent:claude:claude-opus-5-5` or `agent:codex:gpt-6.1-terra`. Pass them as
   `--model STEP=LABEL` (repeatable).
+  Mixed runs (some steps on DeepSeek, some on agents) work the same way but cannot use
+  `--no-api`, so they are paid runs: hand the exact command to the human to start, then
+  answer the packets it leaves while they rerun it.
 - **Scope:** `all`, `active`, `pending`, or comma-separated session ids. Applies to `run` and
   `extract`. If `pnp run --help` does not list `--scope`, stop and tell the user.
 - **Commands:** `run` (the pipeline), `state`, `dedup`. Default: `run`, then `state`.
