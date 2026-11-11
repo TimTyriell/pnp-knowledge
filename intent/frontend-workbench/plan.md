@@ -1,7 +1,8 @@
 # Implementation plan: local campaign workbench
 
-Status: implementation and local functional/visual checks complete; remote CI
-pending, 2026-11-04
+Status: implementation and merge preparation verified locally; GitHub CI and
+the final review are tracked in [PR #39](https://github.com/TimTyriell/pnp-knowledge/pull/39),
+2026-11-11.
 
 ## Sequence and files
 
@@ -41,3 +42,24 @@ survive round-trip export/import, restores preserve recoverability, failed write
 leave the prior snapshot selected, and the appropriate checks pass. Report
 remaining verification limits; do not claim a packaged app or live-campaign
 integration.
+
+## Merge preparation (2026-11-11)
+
+1. Prepare an isolated worktree from the PR branch; leave unrelated work and
+   the original checkout intact. The coordinator owns commits and pushes.
+2. Reconcile `main` while retaining the accepted intent and delegated decisions.
+   Correct the review command's reference to the renamed `AGENTS.md`.
+3. Run service and frontend checks using fictional data. Push to the existing
+   PR and require all six CI jobs, including Linux visual comparisons, to pass.
+4. Have a fresh-context Luna worker review the implementation against
+   `REVIEW.md`. Reproduce confirmed bugs before fixing them, then rerun the
+   affected checks and obtain an independent follow-up review.
+5. Run `/review-pr 39` in a clean Claude context and post its review comment.
+   Confirm the reviewed head matches the final PR head and check CI again.
+6. Hand the mergeable PR to the human. `main` requires linear history; use
+   squash merge. No live campaign migration, paid provider test, or installer
+   packaging is part of this preparation.
+
+The independent review found restore handling that reopened still-applied
+suggestions and retained missing suggestion references. The corrected behavior
+and regression evidence are recorded in `spec.md` and `verification.md`.

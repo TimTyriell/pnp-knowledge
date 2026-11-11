@@ -37,8 +37,11 @@ Accepted OKF/Markdown bundle files are stored in immutable revisions on disk; a
 small atomically replaced `workspace.json` stores current sources, jobs,
 proposals, and the selected bundle revision. History restores create another
 bundle revision from the chosen content while keeping current source/review/job
-state. Restoring to before an accepted suggestion re-pends it with its corrected
-note. A failed preparation leaves the prior bundle revision selected. This is
+state. An accepted suggestion stays accepted when its source heading and note
+remain in the restored entry; otherwise it re-pends with its corrected note.
+Suggestion targets and candidates are reconciled with the restored entries so
+the resulting bundle remains portable. A failed preparation leaves the prior
+bundle revision selected. This is
 application-owned local data, not Git history and not adoption of the canonical
 live repository. Export is the explicit handoff to its existing PR/tag process.
 This exception to the live storage lifecycle does not change ADR-001 for the

@@ -1,7 +1,9 @@
 # Workbench verification
 
-Status: implementation and local functional/visual checks complete; remote CI
-remains pending. This is not a release sign-off.
+Status: implementation and local functional/visual checks complete, with GitHub
+CI evidence and merge preparation recorded below. The latest review and checks
+are tracked in [PR #39](https://github.com/TimTyriell/pnp-knowledge/pull/39).
+This is not a release sign-off.
 
 ## Completed evidence
 
@@ -87,3 +89,38 @@ The private bundle and the user's existing workspace were not modified. No
 provider calls were made. Remote CI was not run. Restart the workbench server
 and refresh the browser to load the fixes; the existing imported campaign can
 be reopened without another import.
+
+## Merge preparation (2026-11-11)
+
+- Work was isolated in `.tools/worktrees/workbench-merge-39` on the preparation
+  branch. The original checkout, unrelated local settings, and private campaign
+  remained untouched.
+- Merge commit `d4f1903` reconciles `main`, retaining the accepted intent and
+  delegated approvals. The review command now reads `AGENTS.md`.
+- A fresh-context Luna review identified incorrect restore handling. Commit
+  `afc458e` preserves accepted decisions whose actual source evidence remains,
+  reopens suggestions whose evidence is absent, and reconciles pending targets
+  and candidate references with the restored entries.
+- Regression tests failed before the fix. They cover selective acceptance when
+  restoring between two reviews, preserved rejected decisions and source data,
+  note whitespace, missing targets in pending and accepted suggestions, and
+  export/reimport after restore. A current-revision restore assertion was
+  corrected to retain an accepted suggestion whose corrected note is present.
+- Local dashboard: **73 passed**; Ruff passed. Local KB: **422 passed, 63
+  skipped, 1 xfailed** in the private-data-free worktree. Summary: **11 passed**.
+- Local frontend: lint and typecheck passed, **10 unit tests** and **15 Chromium
+  tests** passed, and production build passed. Existing generated-component
+  Fast Refresh warnings and the Vite chunk-size advisory remain non-blocking.
+- [CI run 43064660075](https://github.com/TimTyriell/pnp-knowledge/actions/runs/43064660075)
+  passed all six jobs on the reconciled merge commit, including browser
+  behavior and canonical Linux visual comparisons. Follow-up checks for the
+  restore correction and final documentation are available on the PR's
+  [checks page](https://github.com/TimTyriell/pnp-knowledge/pull/39/checks).
+- The independent Luna follow-up found no remaining blocker for the restore
+  correction. The required `/review-pr 39` procedure supplies the final review
+  comment and reviewed commit on GitHub; its result must be checked against the
+  latest PR head before merging.
+
+No paid model-provider test or private campaign migration was performed.
+GitHub's main-branch rules require linear history; the final merge is a human
+squash merge after the latest checks and required review are complete.
