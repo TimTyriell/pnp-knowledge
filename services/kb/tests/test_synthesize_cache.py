@@ -104,7 +104,7 @@ def test_extract_cache_survives_a_model_switch(tmp_path):
     )
 
 
-def test_load_cached_extraction_round_trips_and_is_keyed_on_the_model(tmp_path):
+def test_load_cached_extraction_round_trips_and_is_keyed_on_the_model(tmp_path, monkeypatch):
     """The one entry point every caller outside extract.py uses.
 
     Deriving key and path separately at each call site is what let two of the
@@ -137,7 +137,11 @@ def test_load_cached_extraction_round_trips_and_is_keyed_on_the_model(tmp_path):
 
     hit = load_cached_extraction(tmp_path, transcript, pro)
     assert hit is not None and hit.recap == "unter pro"
+    assert load_cached_extraction(tmp_path, transcript, flash).recap == "unter pro", (
+        "reuse is on by default: another model's entry answers the same inputs"
+    )
+    monkeypatch.setenv("PNP_STRICT_MODEL", "1")
     assert load_cached_extraction(tmp_path, transcript, flash) is None, (
-        "the model is in the cache key -- a different tier must not read "
-        "another model's extraction back"
+        "the model is in the cache key -- under --strict-model a different "
+        "model must not read another model's extraction back"
     )

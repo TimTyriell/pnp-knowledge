@@ -124,6 +124,102 @@ Separate subcommand, not a stage of `pnp run` (T00 D4). Design: T00 §4.5–§5.
   later session. That is correct (their prompts depended on it) and it is the
   price of sequential identity.
 
+## 3b. Agent mode (D1)
+
+Agent mode answers the LLM steps from a Claude or Codex agent instead of the
+DeepSeek API. Plan: `docs/plans/D1-agent-mode.md`. Decision: ADR-006. Driver
+skill: `.agents/skills/pnp-agent-run/SKILL.md`.
+
+**Flow.** Cache misses become queue packets; a worker answers them; the next
+run serves the answers through the unchanged parse/validate/cache code.
+
+```
+pnp run --no-api --model STEP=agent:<host>:<model> ...
+  llm_client.build_client(cfg)   is_agent(cfg.model) -> HandoffClient          (llm_client.py:120)
+  reuse.candidate_models         cache lookup, every candidate model; miss
+  HandoffClient._create          writes <agent_dir>/<step>/<id>.request.json,
+                                 raises AgentPending                            (handoff.py)
+  _extract_all / _run_pipeline   collect AgentPending; raise AgentWorkPending
+                                 before any bundle write                        (cli.py)
+  main()                         one log line per step+model; return 4          (cli.py)
+worker (agent, in chat)          writes <id>.response.json|.md and <id>.meta.json
+pnp agent status [--json]        validates each response with the step's pydantic
+                                 contract; invalid -> <step>/rejected/ + .error.txt
+pnp run --no-api ...             HandoffClient serves the response as a completion;
+                                 parse, validate, cache run as for the API; exit 0
+```
+
+**Labels.** `agent:<host>:<model>`, e.g. `agent:claude:claude-opus-5-5`,
+`agent:codex:gpt-6.1-terra`. The label is `cfg.model`, so it is part of every
+cache key and agent results cache exactly like API results. `host` is
+`claude` or `codex`; `model` is the id the worker is asked to run on.
+
+- `--model STEP=LABEL` (repeatable) sets `PNP_MODEL_<STEP>` in `main()`
+  before dispatch, so every `DeepSeekConfig.from_env()` call sees it. Steps:
+  `extract`, `deep`, `standard`, `state`, `dedup`. `PNP_MODEL_<STEP>` beats
+  the older `DEEPSEEK_*` variables (`config.py` `from_env`).
+- `DEEPSEEK_API_KEY` is required only when some step is not an agent label.
+- Mixing is allowed: an API model on one step and agent labels on the others.
+
+**Flags.**
+
+| Flag | Where | Effect |
+|---|---|---|
+| `--no-api` | `run`, `extract`, `state`, `dedup` | Every step must be an agent label, else exit 2 naming the API steps. Cache misses become packets. |
+| `--strict-model` | same | Lookups use the configured model only (`PNP_STRICT_MODEL=1`). See reuse below. |
+| `--scope all\|active\|pending\|<ids>` | `run`, `extract` | Limits which sessions may be **sent to a model**. Everything else loads from frozen or cache, and the run stays a full run (rename guard on). `active` = not frozen; `pending` = no frozen or cached extraction; ids match like `--session`. An out-of-scope session with no frozen or cached extraction is an exit-2 error, never silently dropped. |
+| `--clean` | `run` | Refused (exit 2) when any step is an agent label: the run can stop for packets after the bundle is wiped. |
+
+`pnp state` takes `--limit N`, not `--session`, and needs
+`knowledge/state_glossary.yaml` (written by `pnp state --refresh-glossary`).
+
+**Queue.** `PNP_AGENT_DIR`, default `<PNP_STATE_DIR or ./state>/agent`
+(relative to the cwd, normally `services/kb`). Gitignored: it holds transcript
+text with player names.
+
+```
+<agent_dir>/<step>/<id>.request.json    {id, step, model, response_kind, temperature, messages, created}
+<agent_dir>/<step>/<id>.response.json   response_kind json (extract, state, dedup)
+<agent_dir>/<step>/<id>.response.md     response_kind markdown (synthesis bodies)
+<agent_dir>/<step>/<id>.meta.json       {host, model}: the worker's self-report
+<agent_dir>/<step>/rejected/<id>.response.*  + <id>.error.txt   (failed validation)
+```
+
+Packet id: `sha256(json({model, messages}, sort_keys))[:16]` (`handoff.packet_id`).
+A changed prompt or context is a new packet; stale packets stop matching.
+
+**Exit 4.** Two causes: packets are pending, or a served response failed
+validation, was moved to `rejected/` and its request re-queued
+(`AgentResponseInvalid`). Extraction must finish before synthesis packets
+appear, so a run with pending extraction stops after extraction. State is
+sequential: one packet per iteration. Dedup collects pending chunks and
+writes only `knowledge/conflicts/merge_proposals.md`. Exit 4 never leaves a
+half-written bundle, because the stage order (§3, §7) puts all LLM work before
+the first durable write. Each pending stop is recorded in `state/history.jsonl`
+as a failed run, by design, until the loop completes.
+
+**Reuse across models (default on).** A lookup tries each candidate in
+`reuse.candidate_models`: the configured model, the other step models,
+`DEFAULT_MODEL`, `DEFAULT_LIGHT_MODEL`, then the lines of `models.txt` in the
+cache dir. The first hit wins. Stores always use the configured model and call
+`reuse.remember_model`. `--strict-model` restores per-model lookups. GC keeps
+the entry that was actually hit (`cache_gc.live_entries`), not the configured
+model's path.
+
+**Known differences from the API path.**
+
+- Temperature is recorded in the request but not enforced.
+- The model is not verified. `meta.json` is recorded, not trusted; the Agent
+  tool's `model` parameter in Claude Code is the strongest control.
+- No structured outputs: `beta...parse` raises `NotImplementedError`, so
+  extraction takes the JSON-prompt path (the same one the API falls back to).
+- Served completions carry `usage=None`: no token counts for agent calls.
+  `last_run.json` counts them as `agent_calls` by `<step>|<model>` instead.
+- Transcripts go to the worker's provider (Anthropic or OpenAI) instead of
+  DeepSeek. Same exposure class; the human chooses the provider.
+
+---
+
 ## 4. Identity — the chain everyone re-derives
 
 **A concept_id is derived from the LLM's chosen wording.** This is the root of
@@ -226,7 +322,7 @@ key = sha256({v: SYNTH_PROMPT_VERSION, model, entity.model_dump(), tier,
 
 1. ~~The key is versioned; the path is not.~~ **Fixed 2026-09-07.** Each key now lives at its own path, so a `*_PROMPT_VERSION` or model change no longer overwrites the previous entry and reverting one is free. The cache now lives in `knowledge/cache/` (private bundle repo, C1), not in the gitignored `services/kb/.cache`. A legacy `services/kb/.cache` moves there with `pnp cache migrate`. A pre-2026-09-07 flat cache must still be re-keyed first (read each blob's `_key`, move to `<session>/<key>.json`) or it re-extracts at full price.
 2. **The prompt *text* is not in the key**, only its version number. Change prompt content without bumping its version (`EXTRACT_PROMPT_VERSION` or `SYNTH_PROMPT_VERSION`) and the cache silently serves stale results. This is now caught by `tests/test_prompt_pins.py`, which pins a hash of each prompt's text and schema to its version. Its failure message is the trap the test exists for.
-3. **Changing `DEEPSEEK_MODEL` costs a full rebuild**, same as a prompt bump. Settle the model before starting one.
+3. **Changing the model no longer costs a rebuild by default** (D1, §3b). Lookups reuse results from every model that has written to this cache, so a switch re-buys only inputs no known model has answered. `--strict-model` restores the old per-model behaviour, where a model change re-extracts and re-synthesises everything. A model that has never written to the cache still pays for every input.
 4. **Synthesis re-runs on any change to the entity** — a new mention note, a reordered alias, an `important:` flip, a tier change.
 
 `PNP_EXTRACT_FREEZE_BEFORE` + `PNP_EXTRACT_FREEZE_VERSION` (`extract.py:38`)
@@ -513,8 +609,9 @@ PNP_REQUIRE_BUNDLE=1 .venv/Scripts/python.exe -m pytest  # bundle checked out: n
 .venv/Scripts/python.exe -m pnp_okf.cli run
 ```
 
-Exit codes for `run`: `0` ok · `2` rename guard refused · `3` failed post-emit
-validation.
+Exit codes for `run`: `0` ok · `2` rename guard refused, or a config/usage error ·
+`3` failed post-emit validation · `4` agent packets pending, or an invalid agent
+response was re-queued (§3b).
 
 **Rollback:** `git checkout <ref> -- knowledge/` restores the bundle. The caches
 are unaffected, so the next run will want the same rename again — rollback buys
@@ -529,7 +626,7 @@ time, it does not close the gap.
 | touch naming, merging, splitting | §4, §5 |
 | bump `EXTRACT_PROMPT_VERSION` or change an extraction prompt | §6 — this is a **budgeted event**, ~$6.5 (re-extraction + id churn) |
 | change a synthesis prompt (`SYNTH_*`) | §6 — bump `SYNTH_PROMPT_VERSION` only: re-synthesis, no re-extraction, no id churn |
-| change the model | §6 — same cost as a prompt bump |
+| change the model | §6 — free when the old model's results are cached (reuse, §3b); `--strict-model` restores the old cost |
 | touch the state pass (`state.py`, `STATE_*` prompts) | T00 §5 — `STATE_PROMPT_VERSION` bump re-runs `pnp state` only (~$2–4), never extraction |
 | re-read an old season | §6a — thaw for the run, then refresh its snapshot from cache |
 | reorder or add an emit step | §7 |

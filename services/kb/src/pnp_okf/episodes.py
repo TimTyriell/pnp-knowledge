@@ -32,6 +32,10 @@ _VIDEO_ID_RE = re.compile(r"[?&]v=([A-Za-z0-9_-]{6,})")
 # Inline references "[3]" / "[3, 5]". The lookahead keeps markdown links with a
 # numeric label ("[3](/x.md)") out — rewriting one would break the link.
 _REF_RE = re.compile(r"\[(\d+(?:\s*,\s*\d+)*)\](?!\()")
+# Agents write ranges ("[1–3]") that _REF_RE does not match. The lookahead
+# keeps a markdown link such as "[2-4](x.md)" out of it.
+_RANGE_REF_RE = re.compile(r"\[(\d+(?:\s*[–-]\s*\d+)?(?:\s*,\s*\d+(?:\s*[–-]\s*\d+)?)*)\](?!\()")
+_RANGE_RE = re.compile(r"(\d+)\s*[–-]\s*(\d+)")
 # Both citation-list styles the KB emits: "[1] Session …" and "1. Session …".
 _CITE_LINE_RE = re.compile(r"^(?:\[(\d+)\]|(\d+)\.)(\s+)(.*)$")
 
@@ -146,6 +150,31 @@ def teams_for(urls: list[str], episodes: Episodes) -> list[str]:
     return sorted({t for u in urls if (t := episodes.team_letter_for_url(u))})
 
 
+def expand_citation_ranges(body: str) -> str:
+    """Rewrite ``[1–3, 5]`` as ``[1, 2, 3, 5]`` so relabelling sees a plain list.
+
+    A reversed, zero or oversized range is left as written: expanding ``[5-3]``
+    to nothing would silently delete a citation, and an assert here would let
+    one LLM body abort a whole run.
+    """
+
+    def expand(match: re.Match) -> str:
+        parts: list[str] = []
+        for part in match.group(1).split(","):
+            part = part.strip()
+            rng = _RANGE_RE.fullmatch(part)
+            if rng is None:
+                parts.append(part)
+                continue
+            start, end = int(rng.group(1)), int(rng.group(2))
+            if not 0 < start <= end < 1000:
+                return match.group(0)
+            parts.extend(str(n) for n in range(start, end + 1))
+        return "[" + ", ".join(parts) + "]"
+
+    return _RANGE_REF_RE.sub(expand, body)
+
+
 def relabel_citations(body: str, labels: list[str]) -> str:
     """Replace numeric citation markers in *body* with *labels* (1-based).
 
@@ -153,6 +182,7 @@ def relabel_citations(body: str, labels: list[str]) -> str:
     number with no label — the model occasionally invents one past the end of
     the evidence list — is left as it is rather than silently dropped.
     """
+    body = expand_citation_ranges(body)
     if not labels:
         return body
 

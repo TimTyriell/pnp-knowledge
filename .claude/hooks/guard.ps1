@@ -75,9 +75,11 @@ if ($hook.tool_name -in 'Bash', 'PowerShell') {
     $scan = [regex]::Replace($cmd, '(?s)<<-?\s*[''"]?(\w+)[''"]?.*?\n\s*\1\b', '')
     $scan = [regex]::Replace($scan, '(-m|--message|--body|--title)\s+("[^"]*"|''[^'']*'')', '')
 
-    # run/state accept --estimate (free); extract/dedup always call the model.
+    # run/state accept --estimate (free). --no-api (D1 agent mode) is free on
+    # every command: the CLI refuses it unless every step model is `agent:`,
+    # so no DeepSeek call can happen.
     if ($env:PNP_ALLOW_PAID -ne '1' -and
-        $scan -match '\b(pnp(\.exe)?|pnp_okf\.cli)\s+((run|state)\b(?![^\n;&|]*--estimate)|(extract|dedup)\b)' -and
+        $scan -match '\b(pnp(\.exe)?|pnp_okf\.cli)\s+((run|state)\b(?![^\n;&|]*--(estimate|no-api))|(extract|dedup)\b(?![^\n;&|]*--no-api))' -and
         $scan -notmatch '--help|\s-h\b') {
         Block "'pnp run/extract/state/dedup' call DeepSeek and cost money. Run with --estimate first; the human runs the paid step. Override: PNP_ALLOW_PAID=1."
     }

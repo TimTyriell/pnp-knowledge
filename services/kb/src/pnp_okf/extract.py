@@ -6,6 +6,7 @@ import logging
 import os
 import re
 import threading
+from dataclasses import replace
 from pathlib import Path
 
 import openai
@@ -24,6 +25,7 @@ from pnp_okf.prompts import (
     EXTRACT_SYSTEM,
     EXTRACT_USER_TEMPLATE,
 )
+from pnp_okf.reuse import candidate_models, remember_model
 
 log = logging.getLogger(__name__)
 
@@ -110,12 +112,14 @@ def _load_cached(path: Path, key: str) -> SessionExtraction | None:
     return SessionExtraction.model_validate(blob["extraction"])
 
 
-def load_cached_extraction(
+def find_cached_extraction_model(
     cache_dir: Path, transcript: SessionTranscript, cfg: DeepSeekConfig, *, frozen=None
-) -> SessionExtraction | None:
-    """This session's cached extraction, or None if it must be re-called.
+) -> tuple[SessionExtraction, Path | None, str] | None:
+    """(extraction, path it came from, model it was made by), or None.
 
-    A frozen season wins over the cache.
+    A frozen season wins and reports path None and model "". Otherwise the
+    first candidate model whose key hits wins, so a hit under the configured
+    model is always preferred.
 
     Deriving the key and the path is one operation: ``_cache_path`` needs the
     key, and ``_load_cached`` re-checks it against the stored ``_key``. Spelled
@@ -127,9 +131,33 @@ def load_cached_extraction(
     if frozen is not None:
         hit = frozen.extraction(transcript)
         if hit is not None:
-            return hit
-    key = _cache_key(transcript, cfg)
-    return _load_cached(_cache_path(cache_dir, transcript, key), key)
+            return hit, None, ""
+    for model in candidate_models(cfg, cache_dir):
+        c = replace(cfg, model=model)
+        key = _cache_key(transcript, c)
+        path = _cache_path(cache_dir, transcript, key)
+        hit = _load_cached(path, key)
+        if hit is not None:
+            if model != cfg.model:
+                log.info("[extract] reusing %s's result: %s", model, transcript.session_id)
+            return hit, path, model
+    return None
+
+
+def find_cached_extraction(
+    cache_dir: Path, transcript: SessionTranscript, cfg: DeepSeekConfig, *, frozen=None
+) -> tuple[SessionExtraction, Path | None] | None:
+    """As find_cached_extraction_model, without the model label."""
+    found = find_cached_extraction_model(cache_dir, transcript, cfg, frozen=frozen)
+    return None if found is None else (found[0], found[1])
+
+
+def load_cached_extraction(
+    cache_dir: Path, transcript: SessionTranscript, cfg: DeepSeekConfig, *, frozen=None
+) -> SessionExtraction | None:
+    """This session's cached extraction, or None if it must be re-called."""
+    found = find_cached_extraction(cache_dir, transcript, cfg, frozen=frozen)
+    return None if found is None else found[0]
 
 
 def _store_cache(path: Path, key: str, extraction: SessionExtraction) -> None:
@@ -305,14 +333,14 @@ def extract_session(
 ) -> SessionExtraction:
     """Extract a recap + entity mentions for one session (cached)."""
 
+    if not force:
+        found = find_cached_extraction(cache_dir, transcript, cfg)
+        if found is not None:
+            log.info("[extract] cache hit: %s", transcript.session_id)
+            return found[0]
+
     key = _cache_key(transcript, cfg)
     path = _cache_path(cache_dir, transcript, key)
-    if not force:
-        cached = _load_cached(path, key)
-        if cached is not None:
-            log.info("[extract] cache hit: %s", transcript.session_id)
-            return cached
-
     log.info(
         "[extract] calling DeepSeek (%s, %d words): %s",
         cfg.model,
@@ -322,4 +350,5 @@ def extract_session(
     client = client or build_client(cfg)
     extraction = _call_llm(client, cfg, transcript)
     _store_cache(path, key, extraction)
+    remember_model(cache_dir, cfg.model)
     return extraction

@@ -135,3 +135,24 @@ def test_load_reads_the_teams_map(tmp_path):
         encoding="utf-8",
     )
     assert Episodes.load(path).team_letter_for_url(URL_A) == "A"
+
+
+def test_a_citation_range_is_expanded_before_relabelling():
+    # Agents write [1–3]; the relabeler only knows comma lists.
+    out = relabel_citations("Fakt [1–3, 5].", ["P-01", "P-02", "P-03", "P-04", "P-05"])
+    assert out == "Fakt [P-01, P-02, P-03, P-05]."
+
+
+def test_a_hyphen_range_is_expanded_too():
+    assert relabel_citations("Fakt [2-4].", ["A", "B", "C", "D"]) == "Fakt [B, C, D]."
+
+
+def test_a_range_followed_by_a_link_is_left_alone():
+    body = "Siehe [2-4](x.md) und [1–2]."
+    assert relabel_citations(body, ["A", "B"]) == "Siehe [2-4](x.md) und [A, B]."
+
+
+def test_a_reversed_or_zero_range_is_left_as_written():
+    # Expanding [5-3] to nothing would silently delete a citation.
+    assert relabel_citations("Fakt [5-3].", ["A"]) == "Fakt [5-3]."
+    assert relabel_citations("Fakt [0-2].", ["A"]) == "Fakt [0-2]."

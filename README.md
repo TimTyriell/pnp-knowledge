@@ -186,6 +186,9 @@ cd services/summary && python summary.py
 
 # Rebuild the bundle from transcripts (DeepSeek; see services/kb/README.md)
 cd services/kb && pnp run --transcripts <dir> --bundle ../../knowledge/bundle/splitter_des_ewigen
+
+# ...or answer the LLM steps with Claude/Codex agents on a subscription (no API key)
+/pnp-agent-run      # in a Claude Code or Codex chat; see docs/AGENT-MODE.md
 ```
 
 Tests: `services/kb` and `services/summary` each `python -m pytest`.
@@ -200,6 +203,8 @@ Tests: `services/kb` and `services/summary` each `python -m pytest`.
 | [ADR-003](docs/architecture/ADR-003-no-llm-downstream.md) | No LLM downstream of the knowledge base |
 | [ADR-004](docs/architecture/ADR-004-identity-primitive.md) | Concept identity stays derived from the name, for now |
 | [ADR-005](docs/architecture/ADR-005-ai-native-delivery.md) | AI-native delivery: rules as hooks, judgment at gates |
+| [ADR-006](docs/architecture/ADR-006-agent-mode.md) | Agent mode: the LLM steps can be answered by a Claude or Codex agent |
+| [AGENT-MODE.md](docs/AGENT-MODE.md) | How to run the pipeline with Claude/Codex agents: models per step, session scope, the packet loop |
 | [QUALITY.md](docs/QUALITY.md) | The 15 quality ratchets and their baselines |
 | [INCIDENT-2026-08](docs/architecture/INCIDENT-2026-08-mass-rename.md) | The mass-rename incidents and the guards written in response |
 | [docs/audits/](docs/audits/) | Bundle quality audits — the documents the ratchets came from |

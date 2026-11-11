@@ -25,6 +25,7 @@ from pathlib import Path
 from pydantic import BaseModel, Field
 
 from pnp_okf.config import DeepSeekConfig
+from pnp_okf.handoff import AgentPending, AgentResponseInvalid, AgentWorkPending
 from pnp_okf.llm_client import build_client
 from pnp_okf.models import PERSON_TYPES, CanonicalEntity
 from pnp_okf.okf import slugify
@@ -136,6 +137,7 @@ def llm_candidates(
         by_space.setdefault(_space(e), []).append(e)
 
     groups: list[MergeGroup] = []
+    pending: list[AgentPending] = []
     for space, members in sorted(by_space.items()):
         if len(members) < 2:
             continue
@@ -147,7 +149,14 @@ def llm_candidates(
             chunk = members[start:start + CHUNK_SIZE]
             if len(chunk) < 2:
                 continue
-            groups.extend(_ask_chunk(client, cfg, space, chunk))
+            try:
+                groups.extend(_ask_chunk(client, cfg, space, chunk))
+            except AgentPending as p:
+                # Keep asking the other chunks: each one is a packet a worker
+                # can answer in the same pass.
+                pending.append(p)
+    if pending:
+        raise AgentWorkPending(pending)
     return groups
 
 
@@ -180,6 +189,8 @@ def _ask_chunk(
         )
         raw = completion.choices[0].message.content or "{}"
         parsed = _MergeResponse.model_validate_json(raw)
+    except (AgentPending, AgentResponseInvalid):
+        raise  # agent work is not a bad chunk: it must reach the caller
     except Exception as exc:  # noqa: BLE001 - one bad chunk must not sink the sweep
         log.warning("[dedup] chunk failed in space %s: %s", space, exc)
         return []
