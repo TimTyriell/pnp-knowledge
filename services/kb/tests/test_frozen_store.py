@@ -101,6 +101,24 @@ def test_corrupt_manifest_raises(tmp_path):
         FrozenStore.load(tmp_path)
 
 
+@pytest.mark.parametrize(
+    "manifest",
+    [
+        {"schema": 1, "season": "P"},
+        {"schema": 2, "season": "P", "sessions": [{"session_id": "s1"}]},
+        {"schema": 1, "season": "Q", "sessions": [{"session_id": "s1"}]},
+        {"schema": 1, "season": "P", "sessions": []},
+        {"schema": 1, "season": "P", "sessions": [{"session_id": ""}]},
+        {"schema": 1, "season": "P", "sessions": [{"session_id": "../s1"}]},
+        {"schema": 1, "season": "P", "sessions": [{"session_id": "s1"}, {"session_id": "s1"}]},
+    ],
+)
+def test_invalid_manifest_raises(tmp_path, manifest):
+    write_json(tmp_path / "frozen" / "P" / "manifest.json", manifest)
+    with pytest.raises(FrozenError):
+        FrozenStore.load(tmp_path)
+
+
 def test_changed_transcript_warns_once_and_still_returns(tmp_path, caplog):
     expected = _freeze(tmp_path)
     season = tmp_path / "frozen" / "P"

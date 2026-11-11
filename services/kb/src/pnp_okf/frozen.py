@@ -54,6 +54,39 @@ def _read(path: Path) -> dict:
                           "the pipeline will not re-buy a frozen session on its own.") from exc
 
 
+def _validate_manifest(manifest: object, season: str, path: Path) -> dict:
+    def invalid(reason: str) -> FrozenError:
+        return FrozenError(f"Invalid frozen manifest {path}: {reason}")
+
+    if not isinstance(manifest, dict):
+        raise invalid("expected a JSON object")
+    if type(manifest.get("schema")) is not int or manifest["schema"] != 1:
+        raise invalid("schema must be 1")
+    if manifest.get("season") != season:
+        raise invalid(f"season must match directory name {season!r}")
+    sessions = manifest.get("sessions")
+    if not isinstance(sessions, list) or not sessions:
+        raise invalid("sessions must be a non-empty list")
+    seen: set[str] = set()
+    for item in sessions:
+        if not isinstance(item, dict):
+            raise invalid("each session must be an object")
+        session_id = item.get("session_id")
+        if (
+            not isinstance(session_id, str)
+            or not session_id
+            or session_id in {".", ".."}
+            or session_id.strip() != session_id
+            or session_id.endswith((".", " "))
+            or any(ord(char) < 32 or char in '<>:"/\\|?*' for char in session_id)
+        ):
+            raise invalid("each session must have a valid filename-safe session_id")
+        if session_id in seen:
+            raise invalid(f"duplicate session_id {session_id!r}")
+        seen.add(session_id)
+    return manifest
+
+
 class FrozenStore:
     def __init__(self, root: Path | None = None, thaw: frozenset[str] = frozenset()) -> None:
         self.root = root
@@ -68,7 +101,7 @@ class FrozenStore:
             if "all" in thaw or season in thaw:
                 log.warning("[frozen] season %s is thawed for this run", season)
                 continue
-            manifest = _read(mpath)
+            manifest = _validate_manifest(_read(mpath), season, mpath)
             self.manifests[season] = manifest
             for s in manifest.get("sessions", []):
                 self._season_of[s["session_id"]] = season
