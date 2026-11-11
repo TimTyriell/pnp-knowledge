@@ -53,7 +53,7 @@ Two systems live here, and the top level keeps them apart:
   ask the human (overrides are env vars, listed in the script header). A run started from the
   dashboard's Folgen tab is a human run; agents never click it and never call `POST /api/runs`.
   Self-check: `python .claude/hooks/test_guard.py`.
-- **Agent mode.** To run the LLM steps on a Claude or Codex subscription instead of DeepSeek, use the `pnp-agent-run` skill (`.agents/skills/pnp-agent-run/SKILL.md`). Design: [ADR-006](docs/architecture/ADR-006-agent-mode.md); mechanics: PIPELINE.md §3b.
+- **Agent mode.** To run the LLM steps on a Claude or Codex subscription instead of DeepSeek, use the `pnp-agent-run` skill (`.agents/skills/pnp-agent-run/SKILL.md`). How-to: [docs/AGENT-MODE.md](docs/AGENT-MODE.md); design: [ADR-006](docs/architecture/ADR-006-agent-mode.md); mechanics: PIPELINE.md §3b.
 - **Review.** Before merging, run `/review-pr <n>` (or headless, clean context: `claude -p "/review-pr <n>"`). It reviews against [REVIEW.md](REVIEW.md) and posts one comment; the human merges.
 - The wiki agent is **not** in this repo — it's the separate `pnp-export-data`
   repo, a pure client of the KB API. Don't re-add wiki code here.
