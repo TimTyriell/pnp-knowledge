@@ -225,7 +225,7 @@ def main(argv: list[str] | None = None) -> None:
     # transcript default is passed explicitly (same as the pipeline's own).
     paths = Paths.resolve(
         transcript_dir=default_transcript_dir(),
-        cache_dir=os.environ.get("PNP_CACHE_DIR") or str(HERE / ".cache"),
+        cache_dir=Paths.resolve().cache_dir,
     )
     frozen = FrozenStore.load(paths.knowledge_root)
 
