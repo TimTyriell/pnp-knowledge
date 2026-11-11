@@ -1,3 +1,7 @@
+import json
+from argparse import Namespace
+from pathlib import Path
+
 import pytest
 from pnp_okf.config import DeepSeekConfig, Paths
 from pnp_okf.frozen import FrozenStore, write_json
@@ -135,3 +139,92 @@ def test_paths_default_transcripts_is_the_sibling_checkout(monkeypatch):
     monkeypatch.delenv("PNP_TRANSCRIPT_DIR", raising=False)
     workspace = next(p for p in Path(__file__).resolve().parents if (p / "pnp-crawl").is_dir())
     assert Paths.resolve().transcript_dir == workspace / "pnp-crawl" / "transcripts_final"
+
+
+def _prepare_frozen_run(tmp_path, args, extraction):
+    from pnp_okf.ingest import load_transcripts
+
+    transcript = load_transcripts(Path(args.transcripts))[0]
+    season = tmp_path / "knowledge" / "frozen" / "P"
+    write_json(season / "manifest.json", {
+        "schema": 1, "season": "P",
+        "sessions": [{"session_id": transcript.session_id, "dialogue_sha": ""}],
+    })
+    write_json(season / "extract" / f"{transcript.session_id}.json", extraction.model_dump(mode="json"))
+    return transcript, season
+
+
+def _offline_args(tmp_path):
+    transcripts = tmp_path / "transcripts"
+    transcripts.mkdir()
+    (transcripts / "2025-03-26_RF_a.json").write_text(json.dumps({
+        "video_date": "2025-03-26", "video_url": "https://youtu.be/x",
+        "video_title": "Test", "language": "de",
+        "segments": [{"start": 1.0, "end": 2.0, "speaker": "GM", "text": "Hallo Welt"}],
+    }), encoding="utf-8")
+    knowledge = tmp_path / "knowledge"
+    knowledge.mkdir()
+    (knowledge / "entity_rules.yaml").write_text("{}\n", encoding="utf-8")
+    return Namespace(transcripts=str(transcripts), bundle=str(knowledge / "bundle" / "campaign"),
+                     cache=str(tmp_path / "cache"), session=None, limit=None, force=False,
+                     reextract=False, workers=1, clean=False, allow_prune=False, allow_rename=False)
+
+
+def test_estimate_counts_frozen_sessions_as_free(tmp_path, monkeypatch, capsys):
+    from pnp_okf.cli import main
+    from pnp_okf.models import SessionExtraction
+
+    args = _offline_args(tmp_path)
+    _prepare_frozen_run(tmp_path, args, SessionExtraction(recap="Fest"))
+    monkeypatch.setenv("DEEPSEEK_API_KEY", "x")
+    monkeypatch.setenv("DEEPSEEK_BASE_URL", "https://example.invalid")
+    monkeypatch.setenv("PNP_STATE_DIR", str(tmp_path / "state"))
+    assert main(["run", "--estimate", "--transcripts", args.transcripts,
+                 "--bundle", args.bundle, "--cache", args.cache]) == 0
+    out = capsys.readouterr().out
+    assert "frozen:   1 session(s)" in out
+    assert "0 to call" in out
+
+
+def test_estimate_with_thaw_prices_the_season_again(tmp_path, monkeypatch, capsys):
+    from pnp_okf.cli import main
+    from pnp_okf.models import SessionExtraction
+
+    args = _offline_args(tmp_path)
+    _prepare_frozen_run(tmp_path, args, SessionExtraction(recap="Fest"))
+    monkeypatch.setenv("DEEPSEEK_API_KEY", "x")
+    monkeypatch.setenv("DEEPSEEK_BASE_URL", "https://example.invalid")
+    monkeypatch.setenv("PNP_STATE_DIR", str(tmp_path / "state"))
+    assert main(["run", "--estimate", "--thaw", "P", "--transcripts", args.transcripts,
+                 "--bundle", args.bundle, "--cache", args.cache]) == 0
+    out = capsys.readouterr().out
+    assert "1 to call" in out
+    assert "frozen:" not in out
+
+
+def test_frozen_body_skips_synthesis(tmp_path, monkeypatch):
+    import pnp_okf.cli as cli
+    from pnp_okf.frozen import mention_fingerprint, safe_name
+    from pnp_okf.models import EntityMention, EntityType, SessionExtraction
+    from pnp_okf.resolve import resolve_entities
+
+    args = _offline_args(tmp_path)
+    extraction = SessionExtraction(recap="Fest", entities=[EntityMention(
+        name="Orden der Wacht", type=EntityType.FACTION, note="Bewacht das Tor.", citation_ts="00:01:00",
+    )])
+    transcript, season = _prepare_frozen_run(tmp_path, args, extraction)
+    entities = resolve_entities({transcript.session_id: extraction}, {transcript.session_id: transcript},
+                                tmp_path / "knowledge" / "entity_registry.yaml")
+    entity = next(e for e in entities if e.tier != "brief")
+    write_json(season / "synth" / f"{safe_name(entity.concept_id)}.json", {
+        "fingerprint": mention_fingerprint(entity), "body": "Der gefrorene Prologtext.",
+    })
+    monkeypatch.setenv("DEEPSEEK_API_KEY", "test-key")
+    monkeypatch.setenv("PNP_STATE_DIR", str(tmp_path / "state"))
+    def fail_synthesis(*args, **kwargs):
+        raise AssertionError("synthesis called")
+
+    monkeypatch.setattr(cli, "synthesize_entity_body", fail_synthesis)
+    assert cli._run_pipeline(args, "2026-09-07T00:00:00Z") == 0
+    emitted = tmp_path / "knowledge" / "bundle" / "campaign" / f"{entity.concept_id}.md"
+    assert "Der gefrorene Prologtext." in emitted.read_text(encoding="utf-8")

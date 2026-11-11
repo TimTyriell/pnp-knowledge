@@ -287,6 +287,7 @@ def _estimate_run(args: argparse.Namespace) -> int:
 
     paths = Paths.resolve(args.transcripts, args.bundle, args.cache)
     cfg = DeepSeekConfig.from_env().for_tier("extract")
+    frozen = _frozen(paths, args)
     transcripts = _select(
         load_transcripts(paths.transcript_dir), args.limit, args.session
     )
@@ -295,11 +296,17 @@ def _estimate_run(args: argparse.Namespace) -> int:
     # and --force ignores the synth cache, so pricing either against a warm
     # cache reports a free run for one that re-buys the whole corpus.
     cached, missing = [], []
+    n_frozen = 0
     for t in transcripts:
+        if frozen.season_of(t.session_id):
+            n_frozen += 1
+            continue
         hit = not args.reextract and load_cached_extraction(paths.cache_dir, t, cfg) is not None
         (cached if hit else missing).append(t)
 
     print(f"extract:  {len(cached)} cached, {len(missing)} to call  [{cfg.model}]")
+    if frozen.manifests:
+        print(f"frozen:   {n_frozen} session(s) in season(s) {', '.join(sorted(frozen.manifests))}")
 
     synth_calls: Counter[str] = Counter()
     if missing:
@@ -308,7 +315,7 @@ def _estimate_run(args: argparse.Namespace) -> int:
         print("synth:    unknown until those sessions are extracted")
     else:
         extractions = {
-            t.session_id: load_cached_extraction(paths.cache_dir, t, cfg)
+            t.session_id: load_cached_extraction(paths.cache_dir, t, cfg, frozen=frozen)
             for t in transcripts
         }
         tmap = {t.session_id: t for t in transcripts}
@@ -320,9 +327,13 @@ def _estimate_run(args: argparse.Namespace) -> int:
         # Every input here is a pure function -- no model call.
         source_sections = load_sources(paths.sources_dir)
         warm = 0
+        frozen_bodies = 0
         for entity in entities:
             if entity.tier == "brief":
                 continue           # rendered locally, no call ever
+            if frozen.body(entity) is not None:
+                frozen_bodies += 1
+                continue
             tier_cfg = base.for_tier(entity.tier)
             key = synth_cache_key(
                 entity,
@@ -340,6 +351,8 @@ def _estimate_run(args: argparse.Namespace) -> int:
         detail = ", ".join(f"{m} {n}" for m, n in sorted(synth_calls.items()))
         print(f"synth:    {warm} cached, {total} to call"
               + (f" ({detail})" if detail else ""))
+        if frozen_bodies:
+            print(f"frozen:   {frozen_bodies} entity bod(y/ies)")
 
     per_call = _avg_tokens_per_call()
     calls: Counter[str] = Counter(synth_calls)
@@ -522,17 +535,19 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     def _synth(entity: CanonicalEntity) -> tuple[str, str]:
         if entity.tier == "brief":
             return entity.concept_id, render_brief_body(entity, targets)
-        body = synthesize_entity_body(
-            entity,
-            cfg.for_tier(entity.tier),
-            paths.cache_dir,
-            force=args.force,
-            sources=sources_for(entity, source_sections),
-            secondary=secondary_sources_for(entity, source_sections),
-            excerpts=(
-                excerpts_for(entity, tmap) if entity.tier == "deep" else ""
-            ),
-        )
+        body = frozen.body(entity)
+        if body is None:
+            body = synthesize_entity_body(
+                entity,
+                cfg.for_tier(entity.tier),
+                paths.cache_dir,
+                force=args.force,
+                sources=sources_for(entity, source_sections),
+                secondary=secondary_sources_for(entity, source_sections),
+                excerpts=(
+                    excerpts_for(entity, tmap) if entity.tier == "deep" else ""
+                ),
+            )
         # The cache stores this body pre-autolink (see synthesize_entity_body),
         # so linking here runs on every cache hit too — a rebuild after only
         # entity_rules.yaml or DEEP_MENTION_THRESHOLD changed relinks every
