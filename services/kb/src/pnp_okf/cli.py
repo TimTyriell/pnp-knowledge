@@ -495,7 +495,7 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
                 frozen=frozen,
             )
             ledger = state_run.ledger
-            state_complete = state_run.uncached_estimate == 0
+            state_complete = state_run.uncached_estimate == 0 and not state_run.incomplete
             if not state_complete:
                 log.warning(
                     "[state] sessions without cached state -- run `pnp state`. Threads "

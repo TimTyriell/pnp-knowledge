@@ -320,6 +320,7 @@ class StateRun:
     called: int = 0
     uncached_estimate: int = 0
     states: dict[str, SessionState] = field(default_factory=dict)
+    incomplete: bool = False
 
 
 def run_state(
@@ -350,7 +351,8 @@ def run_state(
             state = SessionState.model_validate(blob)
             run.cached += 1
             run.states[t.session_id] = state
-            run.ledger.apply(t.session_id, t.date, t.url, state)
+            if not blind:
+                run.ledger.apply(t.session_id, t.date, t.url, state)
             continue
         open_text = render_open_threads(run.ledger)
         key = state_cache_key(t, cfg, glossary, open_text)
@@ -358,6 +360,10 @@ def run_state(
         state = None if blind else load_cached_state(path, key)
         if state is None:
             if is_frozen:
+                if estimate:
+                    blind = True
+                    run.incomplete = True
+                    continue
                 raise FrozenError(
                     f"Frozen session {t.session_id} has no frozen state or cached state; "
                     "restore its state file or thaw the season before running the state pass."

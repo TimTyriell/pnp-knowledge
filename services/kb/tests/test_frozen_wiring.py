@@ -84,15 +84,25 @@ def test_run_state_applies_frozen_state_without_a_call(tmp_path):
     assert set(run.states) == {"s1", "s2"}
 
 
-@pytest.mark.parametrize("estimate", [False, True])
-def test_frozen_state_cache_miss_does_not_call_model(tmp_path, estimate):
+def test_frozen_state_cache_miss_does_not_call_model(tmp_path):
     from pnp_okf.frozen import FrozenError
     from pnp_okf.state import run_state
     t = _transcript()
     _freeze(tmp_path, [t])
     with pytest.raises(FrozenError, match="no frozen state or cached state"):
         run_state([t], _cfg(), tmp_path / "empty-cache", [], client=_Boom(),
-                  estimate=estimate, frozen=FrozenStore.load(tmp_path))
+                  frozen=FrozenStore.load(tmp_path))
+
+
+def test_estimate_marks_missing_frozen_state_incomplete_without_a_call(tmp_path):
+    from pnp_okf.state import run_state
+    t = _transcript()
+    _freeze(tmp_path, [t])
+    run = run_state([t], _cfg(), tmp_path / "empty-cache", [], client=_Boom(),
+                    estimate=True, frozen=FrozenStore.load(tmp_path))
+    assert run.called == 0
+    assert run.uncached_estimate == 0
+    assert run.incomplete is True
 
 
 def test_run_state_frozen_prefix_then_cached_call(tmp_path, monkeypatch):
