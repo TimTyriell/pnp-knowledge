@@ -12,9 +12,19 @@ import json
 import logging
 import os
 import uuid
+from datetime import UTC, datetime
 from pathlib import Path
 
-from pnp_okf.models import CanonicalEntity, SessionExtraction, SessionTranscript
+from pnp_okf.config import DeepSeekConfig, Paths
+from pnp_okf.context import excerpts_for, load_sources, secondary_sources_for, sources_for
+from pnp_okf.episodes import Episodes, video_id
+from pnp_okf.extract import _frozen_prompt_version, load_cached_extraction
+from pnp_okf.ingest import load_transcripts
+from pnp_okf.models import CanonicalEntity, EntityType, SessionExtraction, SessionTranscript
+from pnp_okf.prompts import STATE_PROMPT_VERSION, SYNTH_PROMPT_VERSION
+from pnp_okf.resolve import load_event_concepts, require_rules, resolve_entities
+from pnp_okf.synthesize import _cache_key as synth_cache_key
+from pnp_okf.synthesize import _cache_path as synth_cache_path
 
 log = logging.getLogger(__name__)
 
@@ -146,3 +156,109 @@ class FrozenStore:
             return None
         path = self.root / season / "state" / f"{session_id}.json"
         return _read(path) if path.is_file() else None
+
+
+def freeze_season(paths: Paths, season: str, cfg: DeepSeekConfig, *, from_cache: bool = False) -> dict:
+    """Snapshot one season from the caches into knowledge/frozen/<season>/. No model call."""
+    from pnp_okf.state import load_glossary, run_state
+
+    episodes = Episodes.load(paths.episodes_path)
+    transcripts = load_transcripts(paths.transcript_dir)
+    members = [t for t in transcripts
+               if str((episodes.for_url(t.url) or {}).get("season", "")) == season]
+    if not members:
+        raise FrozenError(f"No transcript belongs to season {season!r} per {paths.episodes_path}.")
+    member_ids = {t.session_id for t in members}
+
+    # Default mode reads through the existing freeze, so a re-run only fills gaps.
+    # --from-cache thaws this season: the cache is the new truth and overwrites.
+    store = FrozenStore.load(paths.knowledge_root, {season} if from_cache else ())
+    extract_cfg = cfg.for_tier("extract")
+    extractions = {}
+    for t in transcripts:
+        ex = load_cached_extraction(paths.cache_dir, t, extract_cfg, frozen=store)
+        if ex is not None:
+            extractions[t.session_id] = ex
+    missing = sorted(member_ids - set(extractions))
+    if missing:
+        raise FrozenError(f"Cannot freeze season {season}: no extraction for {len(missing)} "
+                          f"session(s): {', '.join(missing)}. Run `pnp run` first.")
+
+    out = paths.frozen_dir / season
+    old = _read(out / "manifest.json") if (out / "manifest.json").is_file() and not from_cache else None
+
+    def put(path: Path, data: dict) -> None:
+        if from_cache or not path.exists():
+            write_json(path, data)
+
+    for t in members:
+        put(out / "extract" / f"{t.session_id}.json", extractions[t.session_id].model_dump(mode="json"))
+
+    require_rules(paths.registry_path)
+    tmap = {t.session_id: t for t in transcripts if t.session_id in extractions}
+    entities = resolve_entities(extractions, tmap, paths.registry_path)
+    event_concepts = load_event_concepts(paths.registry_path)
+    sections = load_sources(paths.sources_dir)
+    bodies_missing: list[str] = []
+    for e in entities:
+        if e.tier == "brief" or (e.type == EntityType.EVENT and e.concept_id not in event_concepts):
+            continue            # rendered locally / not a concept: nothing to freeze
+        if not all(m.session_id in member_ids for m in e.mentions):
+            continue
+        dest = out / "synth" / f"{safe_name(e.concept_id)}.json"
+        if dest.exists() and not from_cache:
+            continue
+        tier_cfg = cfg.for_tier(e.tier)
+        key = synth_cache_key(e, tier_cfg, sources_for(e, sections),
+                              excerpts_for(e, tmap) if e.tier == "deep" else "",
+                              secondary_sources_for(e, sections))
+        src = synth_cache_path(paths.cache_dir, e, key)
+        if not src.is_file():
+            bodies_missing.append(e.concept_id)
+            continue
+        write_json(dest, {"fingerprint": mention_fingerprint(e), "body": _read(src)["body"]})
+
+    state_sessions = 0
+    rows = load_glossary(paths.knowledge_root)
+    if rows:
+        run = run_state(transcripts, cfg.for_tier("state"), paths.cache_dir, rows,
+                        estimate=True, frozen=store)
+        if member_ids <= set(run.states):       # all or nothing: a partial state freeze would fork the ledger
+            for sid in sorted(member_ids):
+                put(out / "state" / f"{sid}.json", run.states[sid].model_dump(mode="json"))
+            state_sessions = len(member_ids)
+
+    def stamp() -> str:
+        return datetime.now(UTC).isoformat(timespec="seconds").replace("+00:00", "Z")
+
+    old_shas = {s["session_id"]: s.get("dialogue_sha", "") for s in old["sessions"]} if old else {}
+    manifest = {
+        "schema": 1,
+        "season": season,
+        "label": episodes.season_label(season),
+        # A gap-filling re-run keeps the original provenance: the data is as old as it was.
+        "frozen_at": old["frozen_at"] if old else stamp(),
+        "prompt_versions": {
+            "extract": old["prompt_versions"]["extract"] if old
+            else ",".join(sorted({_frozen_prompt_version(t) for t in members})),
+            "synth": old["prompt_versions"]["synth"] if old else SYNTH_PROMPT_VERSION,
+            "state": STATE_PROMPT_VERSION if state_sessions else None,
+        },
+        "models": old["models"] if old else
+            {"extract": extract_cfg.model, "deep": cfg.model, "standard": cfg.light_model},
+        "sessions": [
+            {"session_id": t.session_id, "date": t.date, "video_id": video_id(t.url),
+             "episode_id": episodes.id_for_url(t.url),
+             "dialogue_sha": old_shas.get(t.session_id) or dialogue_sha(t)}
+            for t in sorted(members, key=lambda t: t.session_id)
+        ],
+        "counts": {
+            "sessions": len(members),
+            "bodies": len(list((out / "synth").glob("*.json"))) if (out / "synth").is_dir() else 0,
+            "bodies_missing": len(bodies_missing),
+            "state_sessions": state_sessions,
+        },
+        "bodies_missing": sorted(bodies_missing),
+    }
+    write_json(out / "manifest.json", manifest)     # last: the manifest is what makes it frozen (R1)
+    return manifest

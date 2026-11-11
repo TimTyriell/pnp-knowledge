@@ -27,6 +27,7 @@ sys.path.insert(0, str(Path(__file__).parent / "src"))
 
 from pnp_okf.config import DeepSeekConfig, Paths, default_transcript_dir  # noqa: E402
 from pnp_okf.extract import load_cached_extraction  # noqa: E402
+from pnp_okf.frozen import FrozenStore  # noqa: E402
 from pnp_okf.ingest import load_transcripts  # noqa: E402
 from pnp_okf.resolve import resolve_entities  # noqa: E402
 
@@ -184,12 +185,13 @@ def main() -> int:
     # Run from services/kb: the cache falls back to ./.cache there, and the
     # bundle is found by walking up to the repo's knowledge/.
     paths = Paths.resolve(default_transcript_dir(), None, None)
+    frozen = FrozenStore.load(paths.knowledge_root)
     cfg = DeepSeekConfig.from_env()
     transcripts = load_transcripts(paths.transcript_dir)
     extractions = {
         t.session_id: c
         for t in transcripts
-        if (c := load_cached_extraction(paths.cache_dir, t, cfg))
+        if (c := load_cached_extraction(paths.cache_dir, t, cfg, frozen=frozen))
     }
     entities = resolve_entities(
         extractions, {t.session_id: t for t in transcripts}, paths.registry_path

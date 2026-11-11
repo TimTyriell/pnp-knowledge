@@ -42,7 +42,7 @@ from pnp_okf.emit import (
 )
 from pnp_okf.episodes import Episodes, citation_labels, relabel_citations, teams_for
 from pnp_okf.extract import extract_session, load_cached_extraction
-from pnp_okf.frozen import FrozenError, FrozenStore
+from pnp_okf.frozen import FrozenError, FrozenStore, freeze_season
 from pnp_okf.ingest import load_transcripts
 from pnp_okf.links import relationship_edges
 from pnp_okf.models import (
@@ -984,6 +984,17 @@ def cmd_state(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_freeze(args: argparse.Namespace) -> int:
+    """Snapshot a season from the caches into knowledge/frozen/. Never calls the model."""
+    paths = Paths.resolve(args.transcripts, args.bundle, args.cache)
+    m = freeze_season(paths, args.season, DeepSeekConfig.from_env(), from_cache=args.from_cache)
+    c = m["counts"]
+    print(f"frozen {m['season']}: {c['sessions']} session(s), {c['bodies']} bod(y/ies) "
+          f"({c['bodies_missing']} without a cached body), state: "
+          f"{'yes' if c['state_sessions'] else 'no'} -> {paths.frozen_dir / args.season}")
+    return 0
+
+
 def _add_common(p: argparse.ArgumentParser) -> None:
     p.add_argument("--transcripts", help="Directory of *.json transcripts")
     p.add_argument("--bundle", help="Output bundle directory")
@@ -1069,6 +1080,15 @@ def _build_parser() -> argparse.ArgumentParser:
     state.add_argument("--refresh-glossary", action="store_true",
                        help="Rewrite knowledge/state_glossary.yaml from the registry (invalidates the state cache)")
     state.set_defaults(func=cmd_state)
+
+    freeze = sub.add_parser("freeze", help="Snapshot a season into knowledge/frozen/ (free, no LLM)")
+    freeze.add_argument("season", help='Season key from episodes.yaml, e.g. "P"')
+    freeze.add_argument("--from-cache", action="store_true",
+                        help="Overwrite the frozen files from the current cache (after a --thaw run)")
+    freeze.add_argument("--transcripts", help="Directory of *.json transcripts")
+    freeze.add_argument("--bundle", help="Bundle directory")
+    freeze.add_argument("--cache", help="Cache directory")
+    freeze.set_defaults(func=cmd_freeze)
 
     dedup = sub.add_parser(
         "dedup", help="Propose entity merges for review (writes a report only)"

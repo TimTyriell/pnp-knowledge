@@ -21,8 +21,9 @@ import os
 import sys
 from pathlib import Path
 
-from pnp_okf.config import DeepSeekConfig, default_transcript_dir
+from pnp_okf.config import DeepSeekConfig, Paths, default_transcript_dir
 from pnp_okf.extract import load_cached_extraction
+from pnp_okf.frozen import FrozenStore
 from pnp_okf.ingest import load_transcripts
 
 HERE = Path(__file__).resolve().parent
@@ -30,6 +31,7 @@ TRANSCRIPTS = default_transcript_dir()
 # PNP_CACHE_DIR wins, as it does for the pipeline; the fallback is anchored on
 # this file so the script works from any working directory.
 CACHE_DIR = Path(os.environ.get("PNP_CACHE_DIR") or HERE / ".cache")
+FROZEN = FrozenStore.load(Paths.resolve().knowledge_root)
 
 
 def main(argv: list[str]) -> int:
@@ -55,7 +57,7 @@ def main(argv: list[str]) -> int:
         return 1
     transcript = matches[0]
 
-    extraction = load_cached_extraction(CACHE_DIR, transcript, cfg)
+    extraction = load_cached_extraction(CACHE_DIR, transcript, cfg, frozen=FROZEN)
     if extraction is None:
         print(
             f"No cached extraction for {transcript.session_id}. Extract it first "
