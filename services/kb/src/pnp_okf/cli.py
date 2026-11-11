@@ -42,6 +42,7 @@ from pnp_okf.emit import (
 )
 from pnp_okf.episodes import Episodes, citation_labels, relabel_citations, teams_for
 from pnp_okf.extract import extract_session, load_cached_extraction
+from pnp_okf.frozen import FrozenError, FrozenStore
 from pnp_okf.ingest import load_transcripts
 from pnp_okf.links import relationship_edges
 from pnp_okf.models import (
@@ -108,12 +109,19 @@ def _select(
     return picked
 
 
+def _frozen(paths: Paths, args: argparse.Namespace) -> FrozenStore:
+    """The frozen seasons minus whatever this run explicitly thaws."""
+    raw = getattr(args, "thaw", None) or ""
+    return FrozenStore.load(paths.knowledge_root, {s.strip() for s in raw.split(",") if s.strip()})
+
+
 def _extract_all(
     transcripts: list[SessionTranscript],
     cfg: DeepSeekConfig,
     paths: Paths,
     force: bool,
     workers: int = 8,
+    frozen: FrozenStore | None = None,
 ) -> dict[str, SessionExtraction]:
     """Extract every session, in parallel like synthesis.
 
@@ -129,6 +137,10 @@ def _extract_all(
     """
 
     def _one(t: SessionTranscript) -> tuple[str, SessionExtraction]:
+        # Frozen wins over force: --reextract must not re-buy a frozen season (R3).
+        hit = frozen.extraction(t) if frozen is not None else None
+        if hit is not None:
+            return t.session_id, hit
         return t.session_id, extract_session(t, cfg, paths.cache_dir, force=force)
 
     with ThreadPoolExecutor(max_workers=workers) as pool:
@@ -398,6 +410,7 @@ def _write_unmatched(conflicts_dir: Path, lines: list[str]) -> None:
 def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     paths = Paths.resolve(args.transcripts, args.bundle, args.cache)
     cfg = DeepSeekConfig.from_env()
+    frozen = _frozen(paths, args)
 
     transcripts = _select(
         load_transcripts(paths.transcript_dir), args.limit, args.session
@@ -416,6 +429,7 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     extractions = _extract_all(
         transcripts, cfg.for_tier("extract"), paths, args.reextract,
         workers=args.workers,
+        frozen=frozen,
     )
 
     registry_path = paths.registry_path
@@ -478,6 +492,7 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
             state_run = run_state(
                 list(tmap.values()), cfg.for_tier("state"), paths.cache_dir,
                 glossary_rows, estimate=True,
+                frozen=frozen,
             )
             ledger = state_run.ledger
             state_complete = state_run.uncached_estimate == 0
@@ -764,7 +779,8 @@ def cmd_extract(args: argparse.Namespace) -> int:
     transcripts = _select(
         load_transcripts(paths.transcript_dir), args.limit, args.session
     )
-    extractions = _extract_all(transcripts, cfg, paths, args.force, workers=args.workers)
+    frozen = _frozen(paths, args)
+    extractions = _extract_all(transcripts, cfg, paths, args.force, workers=args.workers, frozen=frozen)
     for sid, ex in extractions.items():
         log.info("%s: %d entities", sid, len(ex.entities))
     return 0
@@ -786,7 +802,8 @@ def cmd_dedup(args: argparse.Namespace) -> int:
     # for_tier("extract") or this misses every cached extraction and pays for a
     # full re-extraction -- the opposite of what the docstring promises.
     extractions = _extract_all(
-        transcripts, cfg.for_tier("extract"), paths, force=False, workers=args.workers
+        transcripts, cfg.for_tier("extract"), paths, force=False, workers=args.workers,
+        frozen=_frozen(paths, args),
     )
 
     registry_path = paths.registry_path
@@ -937,7 +954,8 @@ def cmd_state(args: argparse.Namespace) -> int:
     transcripts = sorted(load_transcripts(paths.transcript_dir), key=lambda t: (t.date, t.session_id))
     if args.limit:
         transcripts = transcripts[: args.limit]
-    run = run_state(transcripts, cfg, paths.cache_dir, rows, estimate=args.estimate)
+    run = run_state(transcripts, cfg, paths.cache_dir, rows, estimate=args.estimate,
+                    frozen=_frozen(paths, args))
     if args.estimate:
         print(f"{run.cached} cached, {run.uncached_estimate} would be called on {cfg.model}.")
         return 0
@@ -955,6 +973,13 @@ def _add_common(p: argparse.ArgumentParser) -> None:
     p.add_argument("--transcripts", help="Directory of *.json transcripts")
     p.add_argument("--bundle", help="Output bundle directory")
     p.add_argument("--cache", help="Cache directory")
+    p.add_argument(
+        "--thaw", default="",
+        help="Comma-separated season keys (or 'all') whose frozen files this run "
+        "ignores, e.g. --thaw P. Re-reads those seasons at the current prompt "
+        "version -- costs money and can rename concept ids. Frozen files are "
+        "not modified; accept the result with `pnp freeze <season> --from-cache`.",
+    )
     p.add_argument(
         "--session",
         action="append",
@@ -1088,6 +1113,9 @@ def main(argv: list[str] | None = None) -> int:
         log.error("Copy .env.example to .env and fill in your DeepSeek settings.")
         return 2
     except FileNotFoundError as exc:
+        log.error("%s", exc)
+        return 2
+    except FrozenError as exc:
         log.error("%s", exc)
         return 2
 

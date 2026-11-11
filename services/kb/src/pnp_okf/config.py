@@ -121,6 +121,11 @@ class Paths:
         return self._knowledge_root / "episodes.yaml"
 
     @property
+    def frozen_dir(self) -> Path:
+        """Per-season ground truth (see :mod:`pnp_okf.frozen`). Sibling of the registry."""
+        return self._knowledge_root / "frozen"
+
+    @property
     def sources_dir(self) -> Path:
         """World material injected into synthesis (see :mod:`pnp_okf.context`)."""
 
@@ -167,7 +172,7 @@ class Paths:
         transcripts = (
             transcript_dir
             or os.environ.get("PNP_TRANSCRIPT_DIR")
-            or "./transcript"
+            or default_transcript_dir()
         )
         bundle = (
             bundle_dir

@@ -111,9 +111,11 @@ def _load_cached(path: Path, key: str) -> SessionExtraction | None:
 
 
 def load_cached_extraction(
-    cache_dir: Path, transcript: SessionTranscript, cfg: DeepSeekConfig
+    cache_dir: Path, transcript: SessionTranscript, cfg: DeepSeekConfig, *, frozen=None
 ) -> SessionExtraction | None:
     """This session's cached extraction, or None if it must be re-called.
+
+    A frozen season wins over the cache.
 
     Deriving the key and the path is one operation: ``_cache_path`` needs the
     key, and ``_load_cached`` re-checks it against the stored ``_key``. Spelled
@@ -122,6 +124,10 @@ def load_cached_extraction(
     a TypeError on their first transcript.
     """
 
+    if frozen is not None:
+        hit = frozen.extraction(transcript)
+        if hit is not None:
+            return hit
     key = _cache_key(transcript, cfg)
     return _load_cached(_cache_path(cache_dir, transcript, key), key)
 
