@@ -12,6 +12,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import UTC, datetime
 from pathlib import Path
 
+from pnp_okf import agent_status
 from pnp_okf.cache_gc import KEEP_TAGS, latest_session_tag, live_entries, migrate, sweep
 from pnp_okf.config import LEGACY_CACHE_DIR, ConfigError, DeepSeekConfig, Paths, is_agent
 from pnp_okf.context import (
@@ -942,6 +943,17 @@ def cmd_extract(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_agent_status(args: argparse.Namespace) -> int:
+    """Report the agent queue. Calls nothing, so it needs no API key."""
+    report = agent_status.scan()
+    if args.json:
+        print(json.dumps(report, ensure_ascii=False, indent=2))
+    else:
+        print(agent_status.render(report))
+    # Exit 1 only for answers rejected by this call, so a script can stop on it.
+    return 1 if report["counts"]["rejected"] else 0
+
+
 def cmd_dedup(args: argparse.Namespace) -> int:
     """Propose entity merges for human review. Writes a report, not the registry.
 
@@ -1383,6 +1395,14 @@ def _build_parser() -> argparse.ArgumentParser:
     mig.add_argument("--cache", help="Target cache directory (default: knowledge/cache)")
     mig.add_argument("--dry-run", action="store_true")
     mig.set_defaults(func=cmd_cache_migrate, transcripts=None)
+
+    agent = sub.add_parser("agent", help="Agent-mode queue (no model calls, no API key)")
+    agent_sub = agent.add_subparsers(dest="agent_command", required=True)
+    queue = agent_sub.add_parser(
+        "status", help="Validate answered packets; move invalid answers to rejected/"
+    )
+    queue.add_argument("--json", action="store_true", help="Machine-readable report")
+    queue.set_defaults(func=cmd_agent_status)
 
     return parser
 
