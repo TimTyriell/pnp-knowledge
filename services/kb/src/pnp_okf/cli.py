@@ -42,9 +42,15 @@ from pnp_okf.emit import (
     threads_by_session,
 )
 from pnp_okf.episodes import Episodes, citation_labels, relabel_citations, teams_for
-from pnp_okf.extract import extract_session, load_cached_extraction
+from pnp_okf.extract import extract_session, find_cached_extraction_model, load_cached_extraction
 from pnp_okf.frozen import FrozenError, FrozenStore, freeze_season
-from pnp_okf.handoff import AGENT_CALLS, AgentPending, AgentWorkPending, agent_dir
+from pnp_okf.handoff import (
+    AGENT_CALLS,
+    AgentPending,
+    AgentResponseInvalid,
+    AgentWorkPending,
+    agent_dir,
+)
 from pnp_okf.ingest import load_transcripts
 from pnp_okf.links import relationship_edges
 from pnp_okf.models import (
@@ -77,13 +83,8 @@ from pnp_okf.state import (
     write_glossary,
 )
 from pnp_okf.synthesize import (
-    _cache_key as synth_cache_key,
-)
-from pnp_okf.synthesize import (
-    _cache_path as synth_cache_path,
-)
-from pnp_okf.synthesize import (
     autolink_prose,
+    find_cached_body_model,
     link_targets,
     render_brief_body,
     synthesize_entity_body,
@@ -288,6 +289,14 @@ def _avg_tokens_per_call() -> dict[str, tuple[float, float]]:
     return {m: (p / c, q / c) for m, (p, q, c) in totals.items() if c}
 
 
+def _reused_text(reused: Counter[str]) -> str:
+    """', N reused (model: n)' for an estimate line, or '' when nothing was reused."""
+    if not reused:
+        return ""
+    detail = ", ".join(f"{m}: {n}" for m, n in sorted(reused.items()))
+    return f", {sum(reused.values())} reused ({detail})"
+
+
 def _estimate_run(args: argparse.Namespace) -> int:
     """Report what a run would cost, then exit without calling the model.
 
@@ -309,15 +318,22 @@ def _estimate_run(args: argparse.Namespace) -> int:
     # and --force ignores the synth cache, so pricing either against a warm
     # cache reports a free run for one that re-buys the whole corpus.
     cached, missing = [], []
+    reused_extract: Counter[str] = Counter()
     n_frozen = 0
     for t in transcripts:
         if frozen.season_of(t.session_id):
             n_frozen += 1
             continue
-        hit = not args.reextract and load_cached_extraction(paths.cache_dir, t, cfg) is not None
-        (cached if hit else missing).append(t)
+        found = None if args.reextract else find_cached_extraction_model(paths.cache_dir, t, cfg)
+        if found is None:
+            missing.append(t)
+        elif found[2] == cfg.model:
+            cached.append(t)
+        else:
+            reused_extract[found[2]] += 1
 
-    print(f"extract:  {len(cached)} cached, {len(missing)} to call  [{cfg.model}]")
+    print(f"extract:  {len(cached)} cached{_reused_text(reused_extract)}, "
+          f"{len(missing)} to call  [{cfg.model}]")
     if frozen.manifests:
         print(f"frozen:   {n_frozen} session(s) in season(s) {', '.join(sorted(frozen.manifests))}")
 
@@ -340,6 +356,7 @@ def _estimate_run(args: argparse.Namespace) -> int:
         # Every input here is a pure function -- no model call.
         source_sections = load_sources(paths.sources_dir)
         warm = 0
+        reused_synth: Counter[str] = Counter()
         frozen_bodies = 0
         for entity in entities:
             if entity.tier == "brief":
@@ -348,21 +365,23 @@ def _estimate_run(args: argparse.Namespace) -> int:
                 frozen_bodies += 1
                 continue
             tier_cfg = base.for_tier(entity.tier)
-            key = synth_cache_key(
+            found = None if args.force else find_cached_body_model(
                 entity,
                 tier_cfg,
+                paths.cache_dir,
                 sources_for(entity, source_sections),
                 excerpts_for(entity, tmap) if entity.tier == "deep" else "",
                 secondary_sources_for(entity, source_sections),
             )
-            path = synth_cache_path(paths.cache_dir, entity, key)
-            if path.exists() and not args.force:
+            if found is None:
+                synth_calls[tier_cfg.model] += 1
+            elif found[2] == tier_cfg.model:
                 warm += 1
             else:
-                synth_calls[tier_cfg.model] += 1
+                reused_synth[found[2]] += 1
         total = sum(synth_calls.values())
         detail = ", ".join(f"{m} {n}" for m, n in sorted(synth_calls.items()))
-        print(f"synth:    {warm} cached, {total} to call"
+        print(f"synth:    {warm} cached{_reused_text(reused_synth)}, {total} to call"
               + (f" ({detail})" if detail else ""))
         if frozen_bodies:
             print(f"frozen:   {frozen_bodies} entity bod(y/ies)")
@@ -405,6 +424,14 @@ def cmd_run(args: argparse.Namespace) -> int:
 
     if getattr(args, "estimate", False):
         return _estimate_run(args)
+    # Checked before _begin_run: a refused run leaves no in-progress marker and
+    # no wiped bundle. Otherwise --clean deletes the bundle, then the run stops
+    # for agent packets and the campaign is left empty until the rerun.
+    if args.clean and any(is_agent(m) for m in DeepSeekConfig.from_env().step_models().values()):
+        raise ConfigError(
+            "--clean wipes the bundle before synthesis; with agent steps the run can "
+            "stop for packets in between. Run without --clean."
+        )
 
     started_at = datetime.now(UTC).isoformat(timespec="seconds").replace("+00:00", "Z")
     _begin_run(started_at)
@@ -1329,6 +1356,11 @@ def main(argv: list[str] | None = None) -> int:
         for (step, model), n in sorted(groups.items()):
             log.warning("[agent] %d %s packet(s) awaiting %s in %s", n, step, model, agent_dir())
         log.warning("Answer the packets, then run the same command again.")
+        return 4
+    except AgentResponseInvalid as exc:
+        # The rejected answer was moved aside, so the packet is open again.
+        log.error("%s", exc)
+        log.error("the request is queued again; fix the answer and rerun")
         return 4
     except ConfigError as exc:
         log.error("Configuration error: %s", exc)

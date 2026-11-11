@@ -126,6 +126,19 @@ def test_live_set_matches_what_a_run_writes(tmp_path: Path, env, monkeypatch):
     assert any(p.startswith("synth/") for p in live), "NPC stayed brief; no synth file written"
 
 
+def test_live_set_keeps_entries_reused_from_another_model(tmp_path: Path, env, monkeypatch):
+    # The extract model moved on, but the old model's entries still answer the
+    # same inputs by default, so they must stay live or the next sweep deletes them.
+    _, paths, transcripts = _setup(tmp_path, second=True)
+    for t in transcripts:
+        _seed(paths.cache_dir, t, _empty_extraction())
+    monkeypatch.setenv("PNP_MODEL_EXTRACT", "agent:claude:claude-opus-5-5")
+
+    live = live_entries(paths, transcripts)
+    assert live is not None
+    assert live == cache_entries(paths.cache_dir)
+
+
 def test_missing_extraction_returns_none(tmp_path: Path, env):
     _, paths, transcripts = _setup(tmp_path, second=True)
     _seed(paths.cache_dir, _by_id(transcripts, "2025-03-26_RF_a"), _empty_extraction())
@@ -168,6 +181,7 @@ def test_model_change_makes_old_entry_stale(tmp_path: Path, env, monkeypatch):
     _seed(paths.cache_dir, transcripts[0], _empty_extraction())
 
     monkeypatch.setenv("DEEPSEEK_MODEL", "some-other-model")
+    monkeypatch.setenv("PNP_STRICT_MODEL", "1")  # reuse is on by default; see the reuse test below
 
     # The new model's key has no cached extraction, so the set is unknown rather
     # than "everything under the old model is stale"; a wrong env must not wipe the cache.

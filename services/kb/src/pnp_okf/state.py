@@ -21,7 +21,7 @@ import hashlib
 import json
 import logging
 from collections import Counter
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from pathlib import Path
 from typing import Literal
 
@@ -43,6 +43,7 @@ from pnp_okf.models import (
 from pnp_okf.okf import slugify
 from pnp_okf.prompts import STATE_PROMPT_VERSION, STATE_SYSTEM, STATE_USER_TEMPLATE
 from pnp_okf.resolve import _registry_data
+from pnp_okf.reuse import candidate_models, remember_model
 
 log = logging.getLogger(__name__)
 
@@ -288,6 +289,27 @@ def load_cached_state(path: Path, key: str) -> SessionState | None:
     return SessionState.model_validate(blob["state"]) if blob.get("_key") == key else None
 
 
+def find_cached_state(
+    cache_dir: Path, t: SessionTranscript, cfg: DeepSeekConfig, glossary: str, open_threads: str
+) -> tuple[SessionState, Path, str] | None:
+    """(state, path it came from, model it was made by), or None.
+
+    The open-thread text is part of every candidate's key, so a reused state
+    is only one that was written with the same prior threads.
+    """
+
+    for model in candidate_models(cfg, cache_dir):
+        c = replace(cfg, model=model)
+        key = state_cache_key(t, c, glossary, open_threads)
+        path = _cache_path(cache_dir, t, key)
+        state = load_cached_state(path, key)
+        if state is not None:
+            if model != cfg.model:
+                log.info("[state] reusing %s's state: %s", model, t.session_id)
+            return state, path, model
+    return None
+
+
 # ponytail: a malformed reply is resampled by is_retryable (ValidationError is in it),
 # no separate parse-retry loop.
 @retry(reraise=True, stop=stop_after_attempt(4),
@@ -355,9 +377,8 @@ def run_state(
                 run.ledger.apply(t.session_id, t.date, t.url, state)
             continue
         open_text = render_open_threads(run.ledger)
-        key = state_cache_key(t, cfg, glossary, open_text)
-        path = _cache_path(cache_dir, t, key)
-        state = None if blind else load_cached_state(path, key)
+        found = None if blind else find_cached_state(cache_dir, t, cfg, glossary, open_text)
+        state = found[0] if found is not None else None
         if state is None:
             if is_frozen:
                 if estimate:
@@ -375,9 +396,12 @@ def run_state(
             client = client or build_client(cfg)
             log.info("[state] calling %s: %s", cfg.model, t.session_id)
             state = _call_llm(client, cfg, t, glossary, open_text)
+            key = state_cache_key(t, cfg, glossary, open_text)
+            path = _cache_path(cache_dir, t, key)
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text(json.dumps({"_key": key, "state": state.model_dump(mode="json")},
                                        ensure_ascii=False, indent=2), encoding="utf-8")
+            remember_model(cache_dir, cfg.model)
             run.called += 1
         else:
             run.cached += 1

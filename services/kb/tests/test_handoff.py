@@ -304,3 +304,26 @@ def test_no_api_refuses_a_step_still_on_deepseek(tmp_path):
 def test_strict_model_flag_sets_the_env_switch(tmp_path):
     cli.main(["extract", "--strict-model", "--no-api", "--cache", str(tmp_path / "c")])
     assert os.environ.get("PNP_STRICT_MODEL") == "1"
+
+
+def test_an_invalid_agent_response_exits_4_with_the_requeue_hint(tmp_path, monkeypatch, caplog):
+    monkeypatch.setattr(extract_mod._call_llm_json_prompt.retry, "sleep", lambda _s: None)
+    args = ["extract", "--no-api", *ALL_AGENT, "--transcripts", str(_transcripts_dir(tmp_path)),
+            "--cache", str(tmp_path / "cache")]
+    assert cli.main(args) == 4
+    (req,) = (tmp_path / "agent" / "extract").glob("*.request.json")
+    (tmp_path / "agent" / "extract" / f"{req.name.split('.')[0]}.response.json").write_text(
+        "kein JSON", encoding="utf-8")
+
+    assert cli.main(args) == 4
+    assert "the request is queued again; fix the answer and rerun" in caplog.text
+
+
+def test_clean_is_refused_when_a_step_is_an_agent(tmp_path, caplog):
+    bundle = tmp_path / "knowledge" / "bundle" / "campaign"
+    bundle.mkdir(parents=True)
+    rc = cli.main(["run", "--clean", *ALL_AGENT, "--transcripts", str(_transcripts_dir(tmp_path)),
+                   "--bundle", str(bundle), "--cache", str(tmp_path / "cache")])
+    assert rc == 2
+    assert "--clean wipes the bundle" in caplog.text
+    assert bundle.exists()

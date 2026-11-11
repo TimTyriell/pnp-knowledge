@@ -29,14 +29,13 @@ from pathlib import Path
 
 from pnp_okf.config import DeepSeekConfig, Paths
 from pnp_okf.context import excerpts_for, load_sources, secondary_sources_for, sources_for
-from pnp_okf.extract import _cache_key as extract_cache_key
-from pnp_okf.extract import _cache_path as extract_cache_path
-from pnp_okf.extract import load_cached_extraction
+from pnp_okf.extract import find_cached_extraction
 from pnp_okf.frozen import FrozenStore
 from pnp_okf.models import CanonicalEntity, EntityType, SessionTranscript
 from pnp_okf.resolve import load_event_concepts, resolve_entities
 from pnp_okf.synthesize import _cache_key as synth_cache_key
 from pnp_okf.synthesize import _cache_path as synth_cache_path
+from pnp_okf.synthesize import find_cached_body
 
 log = logging.getLogger(__name__)
 
@@ -235,12 +234,14 @@ def live_entries(paths: Paths, transcripts: list[SessionTranscript],
         if hit is not None:
             extractions[t.session_id] = hit
             continue  # served from knowledge/frozen; its cache entries are stale by design
-        ex = load_cached_extraction(cache, t, cfg)
-        if ex is None:
+        found = find_cached_extraction(cache, t, cfg)
+        if found is None:
             log.warning("cache gc: %s has no cached extraction; not sweeping", t.session_id)
             return None
-        live.add(extract_cache_path(cache, t, extract_cache_key(t, cfg)).relative_to(cache).as_posix())
-        extractions[t.session_id] = ex
+        # The path that was hit, which may be another model's: keeping only the
+        # configured-model path would sweep every reused entry.
+        live.add(found[1].relative_to(cache).as_posix())
+        extractions[t.session_id] = found[0]
     tmap = {t.session_id: t for t in transcripts}
     if entities is None:
         entities = resolve_entities(extractions, tmap, paths.registry_path)
@@ -254,10 +255,15 @@ def live_entries(paths: Paths, transcripts: list[SessionTranscript],
             continue  # rendered locally, never cached
         if frozen.body(e) is not None:
             continue  # body served from knowledge/frozen, exactly as _run_pipeline._synth does
-        key = synth_cache_key(
-            e, base.for_tier(e.tier), sources_for(e, sections),
-            excerpts_for(e, tmap) if e.tier == "deep" else "",
-            secondary_sources_for(e, sections),
-        )
+        tier_cfg = base.for_tier(e.tier)
+        sources = sources_for(e, sections)
+        excerpts = excerpts_for(e, tmap) if e.tier == "deep" else ""
+        secondary = secondary_sources_for(e, sections)
+        found = find_cached_body(e, tier_cfg, cache, sources, excerpts, secondary)
+        if found is not None:
+            live.add(found[1].relative_to(cache).as_posix())
+            continue
+        # A miss keeps the configured-model path, as it always has.
+        key = synth_cache_key(e, tier_cfg, sources, excerpts, secondary)
         live.add(synth_cache_path(cache, e, key).relative_to(cache).as_posix())
     return live

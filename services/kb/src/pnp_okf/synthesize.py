@@ -4,6 +4,7 @@ import hashlib
 import json
 import logging
 import re
+from dataclasses import replace
 from pathlib import Path
 
 from tenacity import (
@@ -25,6 +26,7 @@ from pnp_okf.prompts import (
     SYNTH_TIER_GUIDANCE,
     SYNTH_USER_TEMPLATE,
 )
+from pnp_okf.reuse import candidate_models, remember_model
 
 log = logging.getLogger(__name__)
 
@@ -299,6 +301,47 @@ def _call_llm(
     return body.strip()
 
 
+def find_cached_body_model(
+    entity: CanonicalEntity,
+    cfg: DeepSeekConfig,
+    cache_dir: Path,
+    sources: str = "",
+    excerpts: str = "",
+    secondary: str = "",
+) -> tuple[str, Path, str] | None:
+    """(body, path it came from, model it was made by), or None.
+
+    Same rule as extract.find_cached_extraction_model: the configured model
+    first, then the other candidates.
+    """
+
+    for model in candidate_models(cfg, cache_dir):
+        c = replace(cfg, model=model)
+        key = _cache_key(entity, c, sources, excerpts, secondary)
+        path = _cache_path(cache_dir, entity, key)
+        if not path.exists():
+            continue
+        blob = json.loads(path.read_text(encoding="utf-8"))
+        if blob.get("_key") == key:
+            if model != cfg.model:
+                log.info("[synth] reusing %s's body: %s", model, entity.concept_id)
+            return blob["body"], path, model
+    return None
+
+
+def find_cached_body(
+    entity: CanonicalEntity,
+    cfg: DeepSeekConfig,
+    cache_dir: Path,
+    sources: str = "",
+    excerpts: str = "",
+    secondary: str = "",
+) -> tuple[str, Path] | None:
+    """As find_cached_body_model, without the model label."""
+    found = find_cached_body_model(entity, cfg, cache_dir, sources, excerpts, secondary)
+    return None if found is None else (found[0], found[1])
+
+
 def synthesize_entity_body(
     entity: CanonicalEntity,
     cfg: DeepSeekConfig,
@@ -319,14 +362,14 @@ def synthesize_entity_body(
     :mod:`pnp_okf.context`.
     """
 
+    if not force:
+        found = find_cached_body(entity, cfg, cache_dir, sources, excerpts, secondary)
+        if found is not None:
+            log.info("[synth] cache hit: %s", entity.concept_id)
+            return found[0]
+
     key = _cache_key(entity, cfg, sources, excerpts, secondary)
     path = _cache_path(cache_dir, entity, key)
-    if not force and path.exists():
-        blob = json.loads(path.read_text(encoding="utf-8"))
-        if blob.get("_key") == key:
-            log.info("[synth] cache hit: %s", entity.concept_id)
-            return blob["body"]
-
     log.info(
         "[synth] calling DeepSeek: %s (tier=%s, %d mentions%s%s%s)",
         entity.concept_id,
@@ -343,4 +386,5 @@ def synthesize_entity_body(
         json.dumps({"_key": key, "body": body}, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
+    remember_model(cache_dir, cfg.model)
     return body

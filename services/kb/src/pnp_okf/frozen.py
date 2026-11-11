@@ -23,8 +23,7 @@ from pnp_okf.ingest import load_transcripts
 from pnp_okf.models import CanonicalEntity, EntityType, SessionExtraction, SessionTranscript
 from pnp_okf.prompts import STATE_PROMPT_VERSION, SYNTH_PROMPT_VERSION
 from pnp_okf.resolve import load_event_concepts, require_rules, resolve_entities
-from pnp_okf.synthesize import _cache_key as synth_cache_key
-from pnp_okf.synthesize import _cache_path as synth_cache_path
+from pnp_okf.synthesize import find_cached_body
 
 log = logging.getLogger(__name__)
 
@@ -220,15 +219,13 @@ def freeze_season(paths: Paths, season: str, cfg: DeepSeekConfig, *, from_cache:
         dest = out / "synth" / f"{safe_name(e.concept_id)}.json"
         if dest.exists() and not from_cache:
             continue
-        tier_cfg = cfg.for_tier(e.tier)
-        key = synth_cache_key(e, tier_cfg, sources_for(e, sections),
-                              excerpts_for(e, tmap) if e.tier == "deep" else "",
-                              secondary_sources_for(e, sections))
-        src = synth_cache_path(paths.cache_dir, e, key)
-        if not src.is_file():
+        found = find_cached_body(e, cfg.for_tier(e.tier), paths.cache_dir, sources_for(e, sections),
+                                 excerpts_for(e, tmap) if e.tier == "deep" else "",
+                                 secondary_sources_for(e, sections))
+        if found is None:
             bodies_missing.append(e.concept_id)
             continue
-        write_json(dest, {"fingerprint": mention_fingerprint(e), "body": _read(src)["body"]})
+        write_json(dest, {"fingerprint": mention_fingerprint(e), "body": found[0]})
 
     state_sessions = 0
     rows = load_glossary(paths.knowledge_root)
