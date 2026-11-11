@@ -6,7 +6,8 @@ import openai
 import pydantic
 from openai import OpenAI
 
-from pnp_okf.config import DeepSeekConfig
+from pnp_okf.config import DeepSeekConfig, is_agent
+from pnp_okf.handoff import HandoffClient
 from pnp_okf.usage import LEDGER
 
 
@@ -116,6 +117,11 @@ class CountingClient:
         return getattr(self._inner, name)
 
 
-def build_client(cfg: DeepSeekConfig) -> CountingClient:
-    """Create an OpenAI-compatible client pointed at the DeepSeek API."""
+def build_client(cfg: DeepSeekConfig) -> CountingClient | HandoffClient:
+    """Create an OpenAI-compatible client pointed at the DeepSeek API.
+
+    An agent label is answered from the handoff queue instead (see handoff.py).
+    """
+    if is_agent(cfg.model):
+        return HandoffClient(cfg)
     return CountingClient(OpenAI(base_url=cfg.base_url, api_key=cfg.api_key))

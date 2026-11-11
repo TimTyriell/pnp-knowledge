@@ -13,7 +13,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 
 from pnp_okf.cache_gc import KEEP_TAGS, latest_session_tag, live_entries, migrate, sweep
-from pnp_okf.config import LEGACY_CACHE_DIR, ConfigError, DeepSeekConfig, Paths
+from pnp_okf.config import LEGACY_CACHE_DIR, ConfigError, DeepSeekConfig, Paths, is_agent
 from pnp_okf.context import (
     excerpts_for,
     load_sources,
@@ -44,6 +44,7 @@ from pnp_okf.emit import (
 from pnp_okf.episodes import Episodes, citation_labels, relabel_citations, teams_for
 from pnp_okf.extract import extract_session, load_cached_extraction
 from pnp_okf.frozen import FrozenError, FrozenStore, freeze_season
+from pnp_okf.handoff import AGENT_CALLS, AgentPending, AgentWorkPending, agent_dir
 from pnp_okf.ingest import load_transcripts
 from pnp_okf.links import relationship_edges
 from pnp_okf.models import (
@@ -137,15 +138,26 @@ def _extract_all(
     sequential loop left it.
     """
 
-    def _one(t: SessionTranscript) -> tuple[str, SessionExtraction]:
+    pending: list[AgentPending] = []
+
+    def _one(t: SessionTranscript) -> tuple[str, SessionExtraction | None]:
         # Frozen wins over force: --reextract must not re-buy a frozen season (R3).
         hit = frozen.extraction(t) if frozen is not None else None
         if hit is not None:
             return t.session_id, hit
-        return t.session_id, extract_session(t, cfg, paths.cache_dir, force=force)
+        try:
+            return t.session_id, extract_session(t, cfg, paths.cache_dir, force=force)
+        except AgentPending as p:
+            # Collect, don't stop: the other sessions still get their packets
+            # written in this pass. Nothing is emitted (see the raise below).
+            pending.append(p)
+            return t.session_id, None
 
     with ThreadPoolExecutor(max_workers=workers) as pool:
-        return dict(pool.map(_one, transcripts))
+        result = dict(pool.map(_one, transcripts))
+    if pending:
+        raise AgentWorkPending(pending)
+    return result
 
 
 def _state_dir() -> Path:
@@ -550,22 +562,28 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     # Synthesis is one independent network call per entity; run them
     # concurrently or a full rebuild takes hours. Emit stays sequential so
     # file writes and the conflict queue keep a deterministic order.
+    synth_pending: list[AgentPending] = []
+
     def _synth(entity: CanonicalEntity) -> tuple[str, str]:
         if entity.tier == "brief":
             return entity.concept_id, render_brief_body(entity, targets)
         body = frozen.body(entity)
         if body is None:
-            body = synthesize_entity_body(
-                entity,
-                cfg.for_tier(entity.tier),
-                paths.cache_dir,
-                force=args.force,
-                sources=sources_for(entity, source_sections),
-                secondary=secondary_sources_for(entity, source_sections),
-                excerpts=(
-                    excerpts_for(entity, tmap) if entity.tier == "deep" else ""
-                ),
-            )
+            try:
+                body = synthesize_entity_body(
+                    entity,
+                    cfg.for_tier(entity.tier),
+                    paths.cache_dir,
+                    force=args.force,
+                    sources=sources_for(entity, source_sections),
+                    secondary=secondary_sources_for(entity, source_sections),
+                    excerpts=(
+                        excerpts_for(entity, tmap) if entity.tier == "deep" else ""
+                    ),
+                )
+            except AgentPending as p:
+                synth_pending.append(p)
+                return entity.concept_id, ""
         # The cache stores this body pre-autolink (see synthesize_entity_body),
         # so linking here runs on every cache hit too — a rebuild after only
         # entity_rules.yaml or DEEP_MENTION_THRESHOLD changed relinks every
@@ -577,6 +595,9 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
         for future in as_completed([pool.submit(_synth, e) for e in entities]):
             concept_id, body = future.result()
             bodies[concept_id] = body
+    # Before any emit: a pending body means the bundle must not be written.
+    if synth_pending:
+        raise AgentWorkPending(synth_pending)
 
     # Ground the OKF v0.2 trust tier in ENTSCHEIDUNG: rulings (spec §5.3).
     # This doubles as a diagnostic: an explicit `entity=` directive can name a
@@ -791,19 +812,17 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
         _sweep_after_run(paths, transcripts, entities, frozen)
 
     entities_by_type = dict(Counter(e.type for e in entities))
-    _write_run_status(
-        started_at,
-        ok=True,
-        error=None,
-        counts={
-            "entities_by_type": entities_by_type,
-            "conflicts_open": conflict_count,
-            "sessions_ingested": len(transcripts),
-            "dropped_links": unresolved_total,
-            "threads": len(thread_written),
-            "threads_open": sum(1 for t in ledger.threads.values() if t.status == "open"),
-        },
-    )
+    counts = {
+        "entities_by_type": entities_by_type,
+        "conflicts_open": conflict_count,
+        "sessions_ingested": len(transcripts),
+        "dropped_links": unresolved_total,
+        "threads": len(thread_written),
+        "threads_open": sum(1 for t in ledger.threads.values() if t.status == "open"),
+    }
+    if AGENT_CALLS:
+        counts["agent_calls"] = {f"{s}|{m}": n for (s, m), n in AGENT_CALLS.items()}
+    _write_run_status(started_at, ok=True, error=None, counts=counts)
     return 0
 
 
@@ -852,7 +871,7 @@ def cmd_dedup(args: argparse.Namespace) -> int:
     # candidate groups, and a human confirms every one before it is written.
     groups = propose(
         entities,
-        cfg.for_tier("standard"),
+        cfg.for_tier("dedup"),
         never_merge=load_never_merge(registry_path),
     )
     report = render_report(groups, entities)
@@ -994,8 +1013,11 @@ def cmd_state(args: argparse.Namespace) -> int:
     transcripts = sorted(load_transcripts(paths.transcript_dir), key=lambda t: (t.date, t.session_id))
     if args.limit:
         transcripts = transcripts[: args.limit]
-    run = run_state(transcripts, cfg, paths.cache_dir, rows, estimate=args.estimate,
-                    frozen=_frozen(paths, args))
+    try:
+        run = run_state(transcripts, cfg, paths.cache_dir, rows, estimate=args.estimate,
+                        frozen=_frozen(paths, args))
+    except AgentPending as p:
+        raise AgentWorkPending([p]) from p  # run_state is sequential: at most one
     if args.estimate:
         if run.incomplete:
             log.error(
@@ -1119,6 +1141,20 @@ def _add_common(p: argparse.ArgumentParser) -> None:
         "--workers", type=int, default=8,
         help="Parallel synthesis calls (default 8)",
     )
+    p.add_argument(
+        "--model", action="append", metavar="STEP=LABEL",
+        help="Model for one step: extract, deep, standard, state or dedup. LABEL is "
+        "an API model or agent:<host>:<model> (repeatable).",
+    )
+    p.add_argument(
+        "--no-api", action="store_true",
+        help="Refuse to call the DeepSeek API: every step must be an agent label. "
+        "Cache misses become agent packets; exit 4 while any are pending.",
+    )
+    p.add_argument(
+        "--strict-model", action="store_true",
+        help="Reuse only results made by the configured model (no reuse across models).",
+    )
 
 
 def _build_parser() -> argparse.ArgumentParser:
@@ -1239,6 +1275,29 @@ def _build_parser() -> argparse.ArgumentParser:
     return parser
 
 
+_STEPS = ("extract", "deep", "standard", "state", "dedup")
+
+
+def _apply_agent_flags(args: argparse.Namespace) -> int | None:
+    """Turn --model / --no-api / --strict-model into the env the steps read.
+
+    Env rather than arguments: every ``DeepSeekConfig.from_env()`` call site
+    then sees the same choice without threading it through. Returns an exit
+    code on a usage error, else None.
+    """
+    for item in getattr(args, "model", None) or []:
+        step, sep, label = item.partition("=")
+        step, label = step.strip().lower(), label.strip()
+        if not sep or step not in _STEPS or not label:
+            log.error("--model expects STEP=LABEL with STEP one of %s; got %r",
+                      ", ".join(_STEPS), item)
+            return 2
+        os.environ[f"PNP_MODEL_{step.upper()}"] = label
+    if getattr(args, "strict_model", False):
+        os.environ["PNP_STRICT_MODEL"] = "1"
+    return None
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = _build_parser()
     args = parser.parse_args(argv)
@@ -1251,7 +1310,26 @@ def main(argv: list[str] | None = None) -> int:
         if msg:
             log.error(msg)
             return 2
+        usage = _apply_agent_flags(args)
+        if usage is not None:
+            return usage
+        if getattr(args, "no_api", False):
+            api_steps = sorted(
+                s for s, m in DeepSeekConfig.from_env().step_models().items() if not is_agent(m)
+            )
+            if api_steps:
+                raise ConfigError(
+                    "--no-api, but these steps still use the DeepSeek API: "
+                    f"{', '.join(api_steps)}. Give each one --model STEP=agent:<host>:<model>."
+                )
         return args.func(args)
+    except AgentWorkPending as exc:
+        # One line per step and model: the counts are what a human acts on.
+        groups = Counter((p.step, p.model) for p in exc.pending)
+        for (step, model), n in sorted(groups.items()):
+            log.warning("[agent] %d %s packet(s) awaiting %s in %s", n, step, model, agent_dir())
+        log.warning("Answer the packets, then run the same command again.")
+        return 4
     except ConfigError as exc:
         log.error("Configuration error: %s", exc)
         log.error("Copy .env.example to .env and fill in your DeepSeek settings.")

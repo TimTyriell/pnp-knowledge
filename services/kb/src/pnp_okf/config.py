@@ -29,6 +29,14 @@ DEFAULT_MODEL = "deepseek-v4-pro"
 DEFAULT_LIGHT_MODEL = "deepseek-v4-flash"
 
 
+AGENT_PREFIX = "agent:"
+
+
+def is_agent(model: str) -> bool:
+    """True for a model label answered by a Claude/Codex agent, not the API."""
+    return model.startswith(AGENT_PREFIX)
+
+
 @dataclass(frozen=True)
 class DeepSeekConfig:
     """DeepSeek API connection settings (OpenAI-compatible endpoint)."""
@@ -39,26 +47,53 @@ class DeepSeekConfig:
     light_model: str = DEFAULT_LIGHT_MODEL
     extract_model: str = DEFAULT_MODEL
     state_model: str = DEFAULT_MODEL
+    dedup_model: str = DEFAULT_LIGHT_MODEL
+    # Which pipeline step this config serves ("extract", "deep", ...). Set by
+    # for_tier(); the agent queue is keyed by it.
+    step: str = ""
 
     @classmethod
     def from_env(cls) -> DeepSeekConfig:
+        def env(*names: str, default: str = "") -> str:
+            # First non-empty of the names, so PNP_MODEL_<STEP> (what --model
+            # sets) wins over the older variable it supersedes.
+            for name in names:
+                value = os.environ.get(name, "").strip()
+                if value:
+                    return value
+            return default
+
         base_url = os.environ.get("DEEPSEEK_BASE_URL", "https://api.deepseek.com").strip()
-        model = os.environ.get("DEEPSEEK_MODEL", DEFAULT_MODEL).strip()
-        light = os.environ.get("DEEPSEEK_LIGHT_MODEL", DEFAULT_LIGHT_MODEL).strip()
-        extract = os.environ.get("DEEPSEEK_EXTRACT_MODEL", model).strip()
-        state = os.environ.get("DEEPSEEK_STATE_MODEL", model).strip()
+        model = env("PNP_MODEL_DEEP", "DEEPSEEK_MODEL", default=DEFAULT_MODEL)
+        light = env("PNP_MODEL_STANDARD", "DEEPSEEK_LIGHT_MODEL", default=DEFAULT_LIGHT_MODEL)
+        extract = env("PNP_MODEL_EXTRACT", "DEEPSEEK_EXTRACT_MODEL", default=model)
+        state = env("PNP_MODEL_STATE", "DEEPSEEK_STATE_MODEL", default=model)
+        dedup = env("PNP_MODEL_DEDUP", default=light)
         api_key = os.environ.get("DEEPSEEK_API_KEY", "").strip()
 
-        if not api_key:
-            raise ConfigError("Missing required environment variable: DEEPSEEK_API_KEY")
-        return cls(
+        cfg = cls(
             base_url=base_url,
             model=model,
             api_key=api_key,
             light_model=light,
             extract_model=extract,
             state_model=state,
+            dedup_model=dedup,
         )
+        # The key is only needed if some step still calls the API.
+        if not api_key and not all(is_agent(m) for m in cfg.step_models().values()):
+            raise ConfigError("Missing required environment variable: DEEPSEEK_API_KEY")
+        return cfg
+
+    def step_models(self) -> dict[str, str]:
+        """The model each pipeline step runs on (an API model or an agent label)."""
+        return {
+            "extract": self.extract_model,
+            "deep": self.model,
+            "standard": self.light_model,
+            "state": self.state_model,
+            "dedup": self.dedup_model,
+        }
 
     def for_tier(self, tier: str) -> DeepSeekConfig:
         """Config for one pipeline tier — the strong model only where it pays.
@@ -72,12 +107,14 @@ class DeepSeekConfig:
         """
 
         if tier == "extract":
-            return replace(self, model=self.extract_model)
+            return replace(self, model=self.extract_model, step=tier)
         if tier == "state":
-            return replace(self, model=self.state_model)
+            return replace(self, model=self.state_model, step=tier)
+        if tier == "dedup":
+            return replace(self, model=self.dedup_model, step=tier)
         if tier == "deep" or self.model == self.light_model:
-            return self
-        return replace(self, model=self.light_model)
+            return replace(self, step=tier)
+        return replace(self, model=self.light_model, step=tier)
 
 
 @dataclass(frozen=True)
