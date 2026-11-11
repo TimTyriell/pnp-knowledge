@@ -198,7 +198,7 @@ def test_none_live_set_raises(tmp_path: Path) -> None:
     write_ledger(tmp_path, {rel: "s1"})
 
     with pytest.raises(ValueError):
-        sweep(tmp_path, live=None, tag="s9")  # type: ignore[arg-type]
+        sweep(tmp_path, live=None, tag="s9")
 
     assert path.exists()
 
@@ -243,3 +243,21 @@ def test_tag_ordering_is_numeric(tmp_path: Path, monkeypatch: pytest.MonkeyPatch
     # Stop git from walking up out of tmp_path and finding some parent repo.
     monkeypatch.setenv("GIT_CEILING_DIRECTORIES", str(tmp_path))
     assert latest_session_tag(nogit) is None
+
+
+@pytest.mark.skipif(shutil.which("git") is None, reason="git not installed")
+def test_plain_folder_inside_a_tagged_repo_has_no_tag(tmp_path: Path) -> None:
+    """A knowledge/ that is not its own clone must not borrow the code repo's tags."""
+    repo = tmp_path / "code"
+    repo.mkdir()
+    run = dict(check=True, cwd=repo)
+    subprocess.run(["git", "init", "-q"], **run)
+    subprocess.run(["git", "config", "user.email", "test@example.invalid"], **run)
+    subprocess.run(["git", "config", "user.name", "test"], **run)
+    subprocess.run(["git", "commit", "-q", "--allow-empty", "-m", "init"], **run)
+    subprocess.run(["git", "tag", "s99"], **run)
+    knowledge = repo / "knowledge"
+    knowledge.mkdir()
+
+    assert latest_session_tag(repo) == "s99"
+    assert latest_session_tag(knowledge) is None

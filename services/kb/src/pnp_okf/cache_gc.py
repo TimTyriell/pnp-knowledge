@@ -64,8 +64,19 @@ def cache_entries(cache_dir: Path) -> set[str]:
 
 
 def latest_session_tag(repo: Path) -> str | None:
-    """Highest s<NN> tag in repo, or None (no git, not a repo, no tag)."""
+    """Highest s<NN> tag in repo, or None (no git, not a repo, no tag).
+
+    `git -C` walks up, so a knowledge/ that is a plain folder would answer with
+    the enclosing code repo's tags -- deleting bundle cache on a foreign clock.
+    Only a repo whose top level *is* `repo` counts.
+    """
     try:
+        top = subprocess.run(
+            ["git", "-C", str(repo), "rev-parse", "--show-toplevel"],
+            capture_output=True, text=True, check=True, timeout=10,
+        ).stdout.strip()
+        if Path(top).resolve() != Path(repo).resolve():
+            return None
         out = subprocess.run(
             ["git", "-C", str(repo), "tag", "--list", "s*"],
             capture_output=True, text=True, check=True, timeout=10,
@@ -111,7 +122,7 @@ class SweepReport:
                 f"{verb} {len(self.deleted)}, blocked {len(self.blocked)}")
 
 
-def sweep(cache_dir: Path, live: set[str], tag: str | None, *, keep: int = KEEP_TAGS,
+def sweep(cache_dir: Path, live: set[str] | None, tag: str | None, *, keep: int = KEEP_TAGS,
           dry_run: bool = False, allow_mass: bool = False) -> SweepReport:
     if live is None:
         raise ValueError("live set unknown; refusing to sweep")

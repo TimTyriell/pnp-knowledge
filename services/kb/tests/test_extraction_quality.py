@@ -43,8 +43,10 @@ from pnp_okf.ingest import load_transcripts
 from pnp_okf.okf import slugify
 
 GOLD_DIR = Path(__file__).resolve().parent / "data" / "gold"
-# Paths.resolve() picks the cache: PNP_CACHE_DIR > knowledge/cache > ./.cache
-CACHE_DIR = Paths.resolve().cache_dir
+# PNP_CACHE_DIR wins, else knowledge/cache. The bundle is passed explicitly so
+# the default stays anchored on this file, not the cwd pytest was started from.
+_BUNDLE = Path(__file__).resolve().parents[3] / "knowledge" / "bundle" / "splitter_des_ewigen"
+CACHE_DIR = Paths.resolve(bundle_dir=str(_BUNDLE)).cache_dir
 TRANSCRIPT_DIR = default_transcript_dir()
 
 GOLD_FILES = sorted(GOLD_DIR.glob("*.yaml")) if GOLD_DIR.is_dir() else []

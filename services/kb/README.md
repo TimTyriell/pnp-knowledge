@@ -71,7 +71,7 @@ pnp run \
 ```
 
 First run calls DeepSeek for each session + entity; subsequent runs hit the cache
-in the cache dir (`knowledge/cache/`, see [Cache](#cache)) and are instant. Review the entity registry and add alias merges
+(see [Cache](#cache)) and are instant. Review the entity registry and add alias merges
 for any Whisper recognition errors:
 
 ```bash

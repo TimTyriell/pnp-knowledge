@@ -25,8 +25,9 @@ from pnp_okf.resolve import resolve_entities
 
 KNOWLEDGE = Path(__file__).resolve().parents[3] / "knowledge"
 REGISTRY = KNOWLEDGE / "entity_registry.yaml"
-# Paths.resolve() picks the cache: PNP_CACHE_DIR > knowledge/cache > ./.cache
-CACHE_DIR = Paths.resolve().cache_dir
+# PNP_CACHE_DIR wins, else knowledge/cache. The bundle is passed explicitly so
+# the default stays anchored on this file, not the cwd pytest was started from.
+CACHE_DIR = Paths.resolve(bundle_dir=str(KNOWLEDGE / "bundle" / "splitter_des_ewigen")).cache_dir
 TRANSCRIPT_DIR = (
     Path(__file__).resolve().parents[4] / "pnp-crawl" / "transcripts_final"
 )

@@ -265,6 +265,24 @@ def test_legacy_trap_ignored_when_default_warm(tmp_path, env, monkeypatch, caplo
     assert "pnp cache migrate" not in caplog.text
 
 
+def test_legacy_trap_fires_when_only_synth_is_cold(tmp_path, env, monkeypatch, caplog):
+    """One extract entry in the new location must not disarm the trap while the
+    legacy synth half -- the pricier one -- would be re-bought."""
+    tdir, knowledge = _tree(tmp_path)
+    (knowledge / "entity_registry.yaml").write_text("{}\n", encoding="utf-8")
+    legacy = _legacy_warm(tmp_path, monkeypatch)
+    (legacy / "synth" / "c").mkdir(parents=True)
+    (legacy / "synth" / "c" / "k.json").write_text("{}", encoding="utf-8")
+    default = knowledge / "cache"
+    (default / "extract" / "s").mkdir(parents=True)
+    (default / "extract" / "s" / "k.json").write_text("{}", encoding="utf-8")
+
+    rc = cli.main(["run", "--estimate", "--transcripts", str(tdir), "--bundle", str(_bundle(knowledge))])
+
+    assert rc == 2
+    assert "synth" in caplog.text and "pnp cache migrate" in caplog.text
+
+
 # T4.7-T4.10: cache migrate.
 
 def test_migrate_copies_and_never_deletes_source(tmp_path, env, capsys):

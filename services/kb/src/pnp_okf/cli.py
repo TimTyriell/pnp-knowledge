@@ -1068,12 +1068,17 @@ def _legacy_cache_trap(args: argparse.Namespace) -> str | None:
     if getattr(args, "cache", None) or os.environ.get("PNP_CACHE_DIR"):
         return None
     paths = Paths.resolve(getattr(args, "transcripts", None), getattr(args, "bundle", None), None)
-    has = lambda d: any(d.glob("extract/*/*.json"))  # noqa: E731
-    if (paths.cache_dir.resolve() != LEGACY_CACHE_DIR.resolve()
-            and not has(paths.cache_dir) and has(LEGACY_CACHE_DIR)):
-        return (f"The default cache {paths.cache_dir} is empty but {LEGACY_CACHE_DIR} is warm. "
-                "Running now would re-buy every extraction. Run `pnp cache migrate` first, "
-                "or pass --cache to choose explicitly.")
+    if paths.cache_dir.resolve() == LEGACY_CACHE_DIR.resolve():
+        return None
+    # Per kind: one stray extract entry in the new location must not disarm the
+    # trap while the legacy synth half (the pricier one) is still unreachable.
+    has = lambda d, kind: any((d / kind).glob("*/*.json"))  # noqa: E731
+    cold = [k for k in ("extract", "synth")
+            if has(LEGACY_CACHE_DIR, k) and not has(paths.cache_dir, k)]
+    if cold:
+        return (f"The default cache {paths.cache_dir} has no {' or '.join(cold)} entries but "
+                f"{LEGACY_CACHE_DIR} does. Running now would re-buy them. Run `pnp cache migrate` "
+                "first, or pass --cache to choose explicitly.")
     return None
 
 
@@ -1216,8 +1221,9 @@ def _build_parser() -> argparse.ArgumentParser:
     cache = sub.add_parser("cache", help="Cache housekeeping (free, no model calls)")
     cache_sub = cache.add_subparsers(dest="cache_command", required=True)
     gc = cache_sub.add_parser("gc", help="Delete cache entries stale for --keep session tags")
-    for flag in ("--transcripts", "--bundle", "--cache"):
-        gc.add_argument(flag)
+    gc.add_argument("--transcripts", help="Directory of *.json transcripts (the full set)")
+    gc.add_argument("--bundle", help="Bundle directory (locates knowledge/ and its tags)")
+    gc.add_argument("--cache", help="Cache directory (default: knowledge/cache)")
     gc.add_argument("--keep", type=int, default=KEEP_TAGS)
     gc.add_argument("--dry-run", action="store_true")
     gc.add_argument("--allow-mass", action="store_true",
@@ -1225,8 +1231,8 @@ def _build_parser() -> argparse.ArgumentParser:
     gc.set_defaults(func=cmd_cache_gc)
     mig = cache_sub.add_parser("migrate", help="Copy the legacy services/kb/.cache into the default cache")
     mig.add_argument("--from", dest="src", default=str(LEGACY_CACHE_DIR))
-    for flag in ("--bundle", "--cache"):
-        mig.add_argument(flag)
+    mig.add_argument("--bundle", help="Bundle directory (locates the default cache)")
+    mig.add_argument("--cache", help="Target cache directory (default: knowledge/cache)")
     mig.add_argument("--dry-run", action="store_true")
     mig.set_defaults(func=cmd_cache_migrate, transcripts=None)
 
