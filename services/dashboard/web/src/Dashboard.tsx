@@ -8,6 +8,7 @@ import { WikiTable } from "./components/WikiTable";
 import { Trend } from "./components/Trend";
 import { Glossary } from "./components/Glossary";
 import { Episodes } from "./components/Episodes";
+import { RunPanel } from "./components/RunPanel";
 
 type Tab = "status" | "folgen" | "glossar";
 
@@ -68,6 +69,7 @@ export default function App() {
       )}
       {folgenMounted && (
         <div hidden={tab !== "folgen"}>
+          <RunPanel />
           <Episodes funnel={data.funnel} />
         </div>
       )}

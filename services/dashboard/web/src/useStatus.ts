@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import type { DashboardStatus, Episodes, Glossary, HistoryResponse } from "./types";
+import type { DashboardStatus, Episodes, Glossary, HistoryResponse, SeasonsResponse } from "./types";
 
 const POLL_MS = 10_000;
 
@@ -87,4 +87,21 @@ export function useGlossary() {
 // title was just filled in.
 export function useEpisodes() {
   return useOnce<Episodes>("/api/episodes");
+}
+
+export function useSeasons() {
+  return useOnce<SeasonsResponse>("/api/seasons");
+}
+
+export async function postJson<T>(url: string, body: unknown): Promise<T> {
+  const res = await fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+  });
+  if (!res.ok) {
+    const detail = (await res.json().catch(() => null)) as { detail?: string } | null;
+    throw new Error(detail?.detail || res.statusText);
+  }
+  return (await res.json()) as T;
 }
