@@ -221,7 +221,7 @@ flowchart TB
     classDef guard fill:#b71c1c,stroke:#ef9a9a,color:#fff
     classDef human fill:#e65100,stroke:#ffb74d,color:#fff
 
-    T["transcripts/<br/>one JSON per session"] --> EXC{{"extract cache hit?<br/>.cache/extract/"}}:::cache
+    T["transcripts/<br/>one JSON per session"] --> EXC{{"extract cache hit?<br/>knowledge/cache/extract/"}}:::cache
     EXC -->|miss| EX["extract — LLM<br/>entities: name, type, note, citation_ts"]:::llm
     EXC -->|hit| RES
     EX --> RES["resolve<br/>entity_rules.yaml: merge / never_merge / split / ignore"]
@@ -230,7 +230,7 @@ flowchart TB
     GUARD -->|no| TIER{{"tier?"}}
     TIER -->|"deep (>=5 mentions)"| SYP["synthesize — deepseek-v4-pro"]:::llm
     TIER -->|"standard / stub"| SYF["synthesize — deepseek-v4-flash"]:::llm
-    SYP --> SYC{{"synth cache<br/>.cache/synth/"}}:::cache
+    SYP --> SYC{{"synth cache<br/>knowledge/cache/synth/"}}:::cache
     SYF --> SYC
     SYC --> LINK["autolink + relabel citations<br/>runs on cache hits too — no model call"]
     LINK --> CONF{{"contradiction across sessions?"}}
