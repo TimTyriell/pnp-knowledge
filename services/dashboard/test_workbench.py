@@ -138,6 +138,39 @@ def test_import_preserves_unknown_frontmatter_and_auxiliary_files(client):
         assert zipped.read("entity_rules.yaml").decode() == files["entity_rules.yaml"]
 
 
+def test_review_reports_validation_limit_without_losing_imported_entry(client, monkeypatch):
+    body = "x" * 120_001
+    raw = (
+        "---\ntype: NPC\nid: NPC_MARA\ntitle: Mara\ndescription: Innkeeper\n"
+        "tags: [npcs]\ntimestamp: '2026-11-03T00:00:00Z'\n---\n\n" + body
+    )
+    imported = client.post("/api/workspaces/import?name=Imported", content=archive({"bundle/coast/npcs/mara.md": raw}))
+    assert imported.status_code == 201, imported.text
+    workspace, _ = prepared_job(
+        client,
+        imported.json(),
+        monkeypatch,
+        [{"name": "Mara", "type": "NPC", "note": "A source note.", "citation_ts": "00:00:00"}],
+    )
+    proposal = workspace["proposals"][0]
+    before = client.get(f"/api/workspaces/{workspace['id']}").json()
+
+    from fastapi.testclient import TestClient
+
+    with TestClient(app.app, client=("127.0.0.1", 45000), raise_server_exceptions=False) as http:
+        response = http.post(
+            f"/api/workspaces/{workspace['id']}/review",
+            json={"base_revision": workspace["revision"], "decisions": [{"id": proposal["id"], "action": "accept"}]},
+        )
+
+    assert response.status_code == 422
+    assert "Shorten" in response.json()["detail"]
+    after = client.get(f"/api/workspaces/{workspace['id']}").json()
+    assert after["revision"] == before["revision"]
+    assert after["entries"][0]["body"] == body
+    assert after["proposals"][0]["status"] == "pending"
+
+
 def test_source_saved_and_duplicate_submission_reuses_source(client):
     workspace = campaign(client)
     payload = {"title": "Session one", "date": "2026-11-03", "text": "Mara helped us escape."}

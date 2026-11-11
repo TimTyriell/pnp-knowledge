@@ -11,6 +11,7 @@ from pathlib import Path
 from urllib.parse import urlsplit
 
 from fastapi import APIRouter, Depends, HTTPException, Query, Request, Response
+from pydantic import ValidationError
 from workbench import (
     MAX_ARCHIVE,
     MAX_SOURCE_CHARS,
@@ -60,6 +61,10 @@ def get_store():
         yield store
     except WorkbenchError as exc:
         raise HTTPException(exc.status, str(exc)) from exc
+    except ValidationError as exc:
+        raise HTTPException(
+            422, "The entry exceeds workbench limits. Shorten its text, name, aliases, or connections, then retry."
+        ) from exc
 
 
 Store = Depends(get_store)

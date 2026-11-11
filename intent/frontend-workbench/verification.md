@@ -106,7 +106,7 @@ be reopened without another import.
   note whitespace, missing targets in pending and accepted suggestions, and
   export/reimport after restore. A current-revision restore assertion was
   corrected to retain an accepted suggestion whose corrected note is present.
-- Local dashboard: **73 passed**; Ruff passed. Local KB: **422 passed, 63
+- Local dashboard: **74 passed**; Ruff passed. Local KB: **422 passed, 63
   skipped, 1 xfailed** in the private-data-free worktree. Summary: **11 passed**.
 - Local frontend: lint and typecheck passed, **10 unit tests** and **15 Chromium
   tests** passed, and production build passed. Existing generated-component
@@ -120,6 +120,15 @@ be reopened without another import.
   correction. The required `/review-pr 39` procedure supplies the final review
   comment and reviewed commit on GitHub; its result must be checked against the
   latest PR head before merging.
+- The [first required review](https://github.com/TimTyriell/pnp-knowledge/pull/39#pullrequestreview-5862724656)
+  covered `0409b60` and returned `Merge: yes`. All six CI jobs passed on that
+  head. The review also identified a non-blocking bare-500 error when applying
+  suggestions to an imported entry exceeding editor limits. A regression
+  reproduced it; the shared API boundary now returns an actionable, input-free
+  422 response while preserving the entry, revision, and pending suggestion.
+  The corrected implementation receives a follow-up required review and CI on
+  the latest PR head. Orphan-revision cleanup and the unrelated-workspace lock
+  message remain non-blocking follow-ups.
 
 No paid model-provider test or private campaign migration was performed.
 GitHub's main-branch rules require linear history; the final merge is a human
