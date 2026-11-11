@@ -104,8 +104,12 @@ class FrozenStore:
             manifest = _validate_manifest(_read(mpath), season, mpath)
             self.manifests[season] = manifest
             for s in manifest.get("sessions", []):
-                self._season_of[s["session_id"]] = season
-                self._sha[s["session_id"]] = s.get("dialogue_sha", "")
+                session_id = s["session_id"]
+                extraction_path = root / season / "extract" / f"{session_id}.json"
+                if not extraction_path.is_file():
+                    raise FrozenError(f"Frozen extraction missing: {extraction_path}")
+                self._season_of[session_id] = season
+                self._sha[session_id] = s.get("dialogue_sha", "")
 
     @classmethod
     def load(cls, knowledge_root: Path, thaw=()) -> FrozenStore:

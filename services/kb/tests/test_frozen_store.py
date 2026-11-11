@@ -54,7 +54,8 @@ def _freeze(root, *, sessions=("s1",), extraction=True):
     )
     if extraction:
         value = SessionExtraction(recap="Ein Rückblick.")
-        write_json(season / "extract" / "s1.json", value.model_dump(mode="json"))
+        for sid in sessions:
+            write_json(season / "extract" / f"{sid}.json", value.model_dump(mode="json"))
         return value
     return None
 
@@ -90,7 +91,7 @@ def test_thaw_hides_the_season(tmp_path, thaw):
 def test_listed_session_without_file_raises(tmp_path):
     _freeze(tmp_path, extraction=False)
     with pytest.raises(FrozenError):
-        FrozenStore.load(tmp_path).extraction(_transcript())
+        FrozenStore.load(tmp_path)
 
 
 def test_corrupt_manifest_raises(tmp_path):
