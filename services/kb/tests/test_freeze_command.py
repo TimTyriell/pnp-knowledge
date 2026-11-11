@@ -97,6 +97,28 @@ def test_from_cache_overwrites(freeze_inputs):
     assert json.loads(extraction_path.read_text(encoding="utf-8"))["recap"] == "Cache recap"
 
 
+def test_incomplete_state_refreeze_keeps_old_file_but_does_not_read_it(freeze_inputs):
+    from pnp_okf.frozen import FrozenStore, write_json
+    from pnp_okf.state import write_glossary
+
+    root, args, p_session, *_ = freeze_inputs
+    assert main(["freeze", "P", *args]) == 0
+    season = root / "knowledge" / "frozen" / "P"
+    stale_path = season / "state" / f"{p_session.session_id}.json"
+    write_json(stale_path, {"threads": [], "status_changes": [], "attitudes": []})
+    manifest_path = season / "manifest.json"
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    manifest["counts"]["state_sessions"] = 1
+    write_json(manifest_path, manifest)
+    write_glossary(root / "knowledge", [{"type": "NPC", "name": "Xenia", "aliases": []}])
+
+    assert main(["freeze", "P", "--from-cache", *args]) == 0
+    assert stale_path.is_file()
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    assert manifest["counts"]["state_sessions"] == 0
+    assert FrozenStore.load(root / "knowledge").state_blob(p_session.session_id) is None
+
+
 def test_frozen_season_survives_cache_loss(freeze_inputs, capsys):
     root, args, *_ = freeze_inputs
     assert main(["freeze", "P", *args]) == 0

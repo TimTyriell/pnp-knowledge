@@ -23,12 +23,22 @@ def _freeze(root, transcripts):
         values[t.session_id] = value
         rows.append({"session_id": t.session_id, "dialogue_sha": ""})
         write_json(season / "extract" / f"{t.session_id}.json", value.model_dump(mode="json"))
-    write_json(season / "manifest.json", {"schema": 1, "season": "P", "sessions": rows})
+    write_json(season / "manifest.json", {
+        "schema": 1, "season": "P", "sessions": rows,
+        "counts": {"sessions": len(rows), "state_sessions": 0},
+    })
     return values
 
 
 def _state_blob():
     return {"threads": [], "status_changes": [], "attitudes": []}
+
+
+def _mark_state_complete(root, count):
+    path = root / "frozen" / "P" / "manifest.json"
+    manifest = json.loads(path.read_text(encoding="utf-8"))
+    manifest["counts"]["state_sessions"] = count
+    write_json(path, manifest)
 
 
 class _Boom:
@@ -83,6 +93,7 @@ def test_run_state_applies_frozen_state_without_a_call(tmp_path):
     _freeze(tmp_path, transcripts)
     for t in transcripts:
         write_json(tmp_path / "frozen" / "P" / "state" / f"{t.session_id}.json", _state_blob())
+    _mark_state_complete(tmp_path, len(transcripts))
     run = run_state(transcripts, _cfg(), tmp_path / "cache", [], client=_Boom(), frozen=FrozenStore.load(tmp_path))
     assert run.called == 0 and run.cached == 2
     assert set(run.states) == {"s1", "s2"}
@@ -119,6 +130,7 @@ def test_run_state_frozen_prefix_then_cached_call(tmp_path, monkeypatch):
         status="open", note="n", citation_ts="00:00:00",
     )])
     write_json(tmp_path / "frozen" / "P" / "state" / "s1.json", first.model_dump(mode="json"))
+    _mark_state_complete(tmp_path, 1)
     prompts = []
     def call(client, cfg, transcript, glossary, open_threads):
         prompts.append(open_threads)

@@ -154,7 +154,19 @@ class FrozenStore:
         season = self._season_of.get(session_id)
         if season is None:
             return None
-        path = self.root / season / "state" / f"{session_id}.json"
+        manifest = self.manifests[season]
+        counts = manifest.get("counts")
+        if not isinstance(counts, dict) or counts.get("state_sessions") != len(manifest["sessions"]):
+            return None
+        state_dir = self.root / season / "state"
+        missing = [
+            s["session_id"] for s in manifest["sessions"]
+            if not (state_dir / f"{s['session_id']}.json").is_file()
+        ]
+        if missing:
+            raise FrozenError(f"Frozen state snapshot is incomplete for season {season}: "
+                              f"missing {', '.join(missing)}")
+        path = state_dir / f"{session_id}.json"
         return _read(path) if path.is_file() else None
 
 
