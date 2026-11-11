@@ -108,6 +108,59 @@ def test_knowledge_dir_is_shared_root_below_bundle_overrides(tmp_path: Path, mon
     assert Paths.resolve(bundle_dir=explicit).bundle_dir == explicit
 
 
+# --- default cache dir ----------------------------------------------------
+
+
+def test_default_cache_is_knowledge_cache(tmp_path: Path, monkeypatch):
+    k = _knowledge(tmp_path)
+    monkeypatch.delenv("PNP_CACHE_DIR", raising=False)
+
+    paths = Paths.resolve(bundle_dir=k / "bundle" / "splitter_des_ewigen")
+
+    assert paths.cache_dir == k / "cache"
+
+
+def test_env_cache_beats_default(tmp_path: Path, monkeypatch):
+    k = _knowledge(tmp_path)
+    monkeypatch.setenv("PNP_CACHE_DIR", str(tmp_path / "env-cache"))
+
+    paths = Paths.resolve(bundle_dir=k / "bundle" / "splitter_des_ewigen")
+
+    assert paths.cache_dir == tmp_path / "env-cache"
+
+
+def test_explicit_cache_beats_env(tmp_path: Path, monkeypatch):
+    k = _knowledge(tmp_path)
+    monkeypatch.setenv("PNP_CACHE_DIR", str(tmp_path / "env-cache"))
+
+    paths = Paths.resolve(
+        bundle_dir=k / "bundle" / "splitter_des_ewigen",
+        cache_dir=tmp_path / "arg-cache",
+    )
+
+    assert paths.cache_dir == tmp_path / "arg-cache"
+
+
+def test_no_registry_falls_back_to_dot_cache(tmp_path: Path, monkeypatch):
+    # A bundle with no entity_registry.yaml beside it is not a campaign
+    # checkout, so the cache stays where it always was (cwd-relative).
+    monkeypatch.delenv("PNP_CACHE_DIR", raising=False)
+    bundle = tmp_path / "bundle" / "x"
+    bundle.mkdir(parents=True)
+
+    paths = Paths.resolve(bundle_dir=bundle)
+
+    assert paths.cache_dir == Path("./.cache")
+
+
+def test_legacy_cache_dir_points_at_services_kb():
+    from pnp_okf.config import LEGACY_CACHE_DIR
+
+    assert LEGACY_CACHE_DIR.name == ".cache"
+    assert LEGACY_CACHE_DIR.parent.name == "kb"
+    assert LEGACY_CACHE_DIR.parent.parent.name == "services"
+
+
 # --- transcript dir -------------------------------------------------------
 
 

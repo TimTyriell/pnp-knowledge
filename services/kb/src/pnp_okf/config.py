@@ -16,6 +16,11 @@ class ConfigError(RuntimeError):
     """Raised when required configuration is missing."""
 
 
+# Where the cache lived before it moved into the bundle repo (C1). Anchored on
+# this file: src/pnp_okf/config.py -> parents[2] is services/kb.
+LEGACY_CACHE_DIR = Path(__file__).resolve().parents[2] / ".cache"
+
+
 # Quality carries the pipeline: extraction is the ceiling for everything
 # downstream, and the deep-tier entries are the ones meant to be thorough.
 # The long tail of one-mention stubs is supposed to stay short, so it runs on
@@ -162,6 +167,20 @@ class Paths:
                 return str(parent / "knowledge" / "bundle" / "splitter_des_ewigen")
         return "./bundle/splitter_des_ewigen"
 
+    @staticmethod
+    def _default_cache(bundle: Path) -> str:
+        """knowledge/cache when a real knowledge root sits behind the bundle.
+
+        The cache is paid, unreproducible output keyed to this campaign, so it is
+        versioned with the bundle (private repo) instead of beside the public code.
+        Without a registry the root is not a campaign checkout; keep the old
+        cwd-relative default so ad-hoc runs never write into a stranger's tree.
+        """
+        root = bundle.parent.parent if bundle.parent.name == "bundle" else bundle.parent
+        if (root / "entity_registry.yaml").is_file():
+            return str(root / "cache")
+        return "./.cache"
+
     @classmethod
     def resolve(
         cls,
@@ -183,7 +202,7 @@ class Paths:
             )
             or cls._default_bundle()
         )
-        cache = cache_dir or os.environ.get("PNP_CACHE_DIR") or "./.cache"
+        cache = cache_dir or os.environ.get("PNP_CACHE_DIR") or cls._default_cache(Path(bundle).expanduser())
         return cls(
             transcript_dir=Path(transcripts).expanduser(),
             bundle_dir=Path(bundle).expanduser(),
