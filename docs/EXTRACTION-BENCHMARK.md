@@ -222,7 +222,7 @@ the repair worker, follows these rules.
 | Host | Headless command (to be written after Gate 0) |
 |---|---|
 | Claude Code (probed 2026-11-15, CLI 2.1.325, login `claude.ai` subscription) | `claude -p --model <MODEL ID> --effort <EFFORT> --tools "" --strict-mcp-config --setting-sources "" --disable-slash-commands --no-session-persistence --system-prompt "<ONE LINE>" --output-format json < prompt.txt > result.json` |
-| Codex | `<FLAGS CONFIRMED AT GATE 0>` |
+| Codex (probed 2026-11-15, codex-cli 0.169.0, login "ChatGPT") | `codex exec -m <MODEL ID> -c model_reasoning_effort='"<EFFORT>"' -s read-only --skip-git-repo-check --ephemeral --ignore-user-config --ignore-rules --json -o last.txt - < prompt.txt > events.jsonl` |
 
 Claude Code probe findings:
 
@@ -231,6 +231,13 @@ Claude Code probe findings:
 - Fixed overhead with a one-line system prompt: about 735 input tokens.
 - `total_cost_usd` is the host's own list-price figure. Keep it as a cross-check; the harness computes cost from the price file.
 - CLI 2.1.222 rejects Claude 5.5 models (needs 2.1.280 or newer).
+
+Codex probe findings:
+
+- Codex has no "no tools" switch. The nearest setting is a read-only sandbox in an empty folder outside the repo, with the whole input on stdin. `--ignore-user-config` keeps the user's default model and effort out, so both must be set on the command line.
+- The answer is the file named by `-o`. Usage is the `usage` object of the `turn.completed` event (openai style: `cached_input_tokens` is a subset of `input_tokens`; `reasoning_output_tokens` is inside `output_tokens`).
+- The events do not echo model or effort. Record the requested values only.
+- Fixed overhead: about 17,700 input tokens per run (the host's own prompt).
 
 Fixed judges and agents:
 
