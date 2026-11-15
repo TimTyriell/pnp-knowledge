@@ -189,7 +189,7 @@ The seven existing outputs are: DeepSeek, Terra medium, Terra high, Sol high, Lu
 
 ### Phase 4 gate: Gate 4 (human only)
 
-6. The human confirms the finalists. Each finalist gets two more independent repeats, each a new process. Reusing an output is not a new sample. (The repeat numbering for this step is not specified; see section 11.)
+6. The human confirms the finalists. Each finalist gets two more independent repeats, each a new process. Reusing an output is not a new sample. Create them with `prepare-run` and a matrix whose finalist arms set `"first_repeat": 2, "repeats": 2`.
 
 ### Phase 5: report and selection (Gate 5)
 
@@ -613,9 +613,9 @@ These points are not settled by the sources. Decide them before the phase that n
 5. The shape of `gap_objections.json` is defined in T2 here, not in the sources.
 6. The exchange file (`exchange/`) holds segments and reasons but not the item text. Template T8 assumes the coordinator adds the item text.
 7. The location and writer of `adjudication.json`. The human writes it. The location is assumed to be under `runs/<run>/`.
-8. Repeat numbering for Gate 4. `prepare-run` numbers repeats from 1. Adding repeats 2 and 3 to a finalist needs a rule.
+8. Repeat numbering for Gate 4: settled. A finalist's matrix arm sets `"first_repeat": 2, "repeats": 2`, which creates repeats 2 and 3 beside the existing repeat 1.
 9. The record of the Gate 5 choice. No command writes it.
-10. The plan requires that a best-value winner shows no reliability loss across repeats. The contract's `select` does not check this.
+10. Reliability across repeats: settled. A configuration with any failed, critical or non-official attempt is not eligible, so it can be neither winner.
 11. The plan asks for "lower bound" labels on partial costs. The contract returns `None` for any unknown figure.
 12. The repair similarity check: the plan compares recap and notes only; the contract compares the whole output's letters and digits.
 13. Price file location and naming (the plan suggests `prices/<date>.json`).
