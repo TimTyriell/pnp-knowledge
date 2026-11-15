@@ -1779,14 +1779,16 @@ def _cmd_review_pack(args) -> int:
     case_dir = _case_dir(args.root or bench_root(), args.case)
     rubric_path = _rubric_path(case_dir)
     hashes = _draft_hashes(case_dir, rubric_path)
-    print(
-        review_pack(
-            read_json(case_dir / "gold" / "draft.json"),
-            read_json(rubric_path),
-            load_segments(case_dir / "source.json"),
-            hashes,
-        )
+    text = review_pack(
+        read_json(case_dir / "gold" / "draft.json"),
+        read_json(rubric_path),
+        load_segments(case_dir / "source.json"),
+        hashes,
     )
+    # Written to a file, not stdout: a Windows console (cp1252) cannot encode the pack.
+    out = case_dir / "gold" / "review.md"
+    out.write_text(text, encoding="utf-8")
+    print(out)
     return 0
 
 
@@ -1899,7 +1901,7 @@ def _build_parser() -> argparse.ArgumentParser:
     p = sub.add_parser("validate-gold", parents=[common], help="validate gold/draft.json")
     p.set_defaults(func=_cmd_validate_gold)
 
-    p = sub.add_parser("review-pack", parents=[common], help="print the human review pack (Markdown)")
+    p = sub.add_parser("review-pack", parents=[common], help="write the human review pack to gold/review.md")
     p.set_defaults(func=_cmd_review_pack)
 
     p = sub.add_parser("approve-gold", parents=[common], help="human-only approval of gold/draft.json")

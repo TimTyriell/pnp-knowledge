@@ -221,8 +221,16 @@ the repair worker, follows these rules.
 
 | Host | Headless command (to be written after Gate 0) |
 |---|---|
-| Claude Code | `<FLAGS CONFIRMED AT GATE 0>` |
+| Claude Code (probed 2026-11-15, CLI 2.1.325, login `claude.ai` subscription) | `claude -p --model <MODEL ID> --effort <EFFORT> --tools "" --strict-mcp-config --setting-sources "" --disable-slash-commands --no-session-persistence --system-prompt "<ONE LINE>" --output-format json < prompt.txt > result.json` |
 | Codex | `<FLAGS CONFIRMED AT GATE 0>` |
+
+Claude Code probe findings:
+
+- Run it from an empty folder outside the repo, with every `CLAUDE*` variable of a parent session unset. `--setting-sources ""` keeps user hooks and plugins out; `--tools ""` removes all tools.
+- The answer is the `result` field. Usage is in `modelUsage.<model>` (anthropic style: `inputTokens` excludes `cacheReadInputTokens` and `cacheCreationInputTokens`; thinking is inside `outputTokens`). The reported model is the key of `modelUsage`. Effort is not reported back; record the requested value only.
+- Fixed overhead with a one-line system prompt: about 735 input tokens.
+- `total_cost_usd` is the host's own list-price figure. Keep it as a cross-check; the harness computes cost from the price file.
+- CLI 2.1.222 rejects Claude 5.5 models (needs 2.1.280 or newer).
 
 Fixed judges and agents:
 
