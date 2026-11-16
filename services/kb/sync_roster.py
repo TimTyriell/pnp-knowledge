@@ -31,6 +31,7 @@ from pnp_okf.okf import slugify
 ROOT = Path(__file__).resolve().parent  # services/kb
 KNOWLEDGE = ROOT.parent.parent / "knowledge"
 REGISTRY = KNOWLEDGE / "entity_registry.yaml"
+RULES = KNOWLEDGE / "entity_rules.yaml"
 EPISODES = KNOWLEDGE / "episodes.yaml"
 OUT = KNOWLEDGE / "roster.yaml"
 # Sibling of this repo: pnp-knowledge/services/kb -> lindo-lauts-notebook/pnp-crawl.
@@ -42,9 +43,18 @@ HEADER = (
 )
 
 
-def match_concept(name: str, characters: list[dict]) -> str | None:
+def match_concept(
+    name: str, characters: list[dict], merges: dict[str, str] | None = None
+) -> str | None:
     """Concept id of the Character named *name*: canonical name, then alias
-    (both case-insensitive), then slug. None when nothing matches."""
+    (both case-insensitive), then slug, then a ``merge:`` rule for the name.
+    None when nothing matches.
+
+    The merge step is what makes the documented fix work: the registry only
+    gains an alias when a mention carries that spelling, so a rule for a
+    roster-only spelling ("Kipp" for "Kip") never reaches it. Only a rule
+    whose target is an existing Character counts -- ids are never invented.
+    """
     key = name.strip().lower()
     for e in characters:
         if str(e.get("canonical_name") or "").strip().lower() == key:
@@ -57,16 +67,25 @@ def match_concept(name: str, characters: list[dict]) -> str | None:
         names = [str(e.get("canonical_name") or ""), *map(str, e.get("aliases") or [])]
         if any(slugify(n) == slug for n in names):
             return e["concept_id"]
+    target = (merges or {}).get(key)
+    if target and any(e["concept_id"] == target for e in characters):
+        return target
     return None
 
 
-def build_roster(export: list[dict], registry: dict, episodes: Episodes) -> list[dict]:
-    """Roster rows sorted by (team, name). Pure: no I/O."""
+def build_roster(
+    export: list[dict], registry: dict, episodes: Episodes, merges: dict[str, str] | None = None
+) -> list[dict]:
+    """Roster rows sorted by (team, name). Pure: no I/O.
+
+    *merges* is the ``merge:`` family of entity_rules.yaml (lowercased name ->
+    concept id).
+    """
     characters = [e for e in registry.get("entities") or [] if e.get("type") == "Character"]
     rows = [
         {
             "name": c["name"],
-            "concept_id": match_concept(c["name"], characters),
+            "concept_id": match_concept(c["name"], characters, merges),
             "team": episodes.team_letter(c.get("group")),
             "class": c.get("class"),
             "since": c.get("since"),
@@ -90,7 +109,9 @@ def main(argv: list[str] | None = None) -> int:
 
     export = json.loads(args.source.read_text(encoding="utf-8"))
     registry = yaml.safe_load(REGISTRY.read_text(encoding="utf-8")) or {}
-    rows = build_roster(export, registry, Episodes.load(EPISODES))
+    rules = yaml.safe_load(RULES.read_text(encoding="utf-8")) if RULES.is_file() else {}
+    merges = {str(k).strip().lower(): str(v) for k, v in ((rules or {}).get("merge") or {}).items()}
+    rows = build_roster(export, registry, Episodes.load(EPISODES), merges)
     for row in rows:
         if row["concept_id"] is None:
             print(f"unmatched (concept_id: null): {row['name']}", file=sys.stderr)
