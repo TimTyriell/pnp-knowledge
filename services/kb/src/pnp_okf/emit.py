@@ -174,9 +174,20 @@ def _stamp_generated(
     return render_document(frontmatter, body)
 
 
+# One summary sentence (OKF §4.1). A period after a single letter is an
+# abbreviation ("z. B."), not a sentence end. O6: the old fixed cut left
+# 1379 of 1472 descriptions ending mid-word.
+_SENTENCE_END = re.compile(r"(?<![\s(]\w)(?<!^\w)[.!?](?=\s+[A-ZÄÖÜ„\"])")
+
+
 def _short_desc(text: str, limit: int = 140) -> str:
     one_line = " ".join(text.split())
-    return one_line if len(one_line) <= limit else one_line[: limit - 1].rstrip() + "…"
+    end = _SENTENCE_END.search(one_line)
+    if end and end.end() <= limit:
+        return one_line[: end.end()]
+    if len(one_line) <= limit:
+        return one_line
+    return one_line[: limit - 1].rsplit(" ", 1)[0].rstrip(" ,;:") + "…"
 
 
 # The citation marker on a session's one "# Belege" line, as emit_sessions
