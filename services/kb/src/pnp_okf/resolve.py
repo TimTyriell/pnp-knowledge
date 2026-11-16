@@ -9,8 +9,10 @@ import yaml
 
 from pnp_okf.links import apply_spellings
 from pnp_okf.models import (
+    DEMOTABLE_TYPES,
     DIR_TO_TYPE,
     MAX_EVENT_SESSION_SPAN,
+    MIN_CONCEPT_SESSIONS,
     PERSON_TYPES,
     SESSION_SCOPED_TYPES,
     SUBTYPES,
@@ -639,6 +641,30 @@ def load_event_concepts(registry_path: Path) -> set[str]:
 
     data = _registry_data(registry_path)
     return {str(c).strip() for c in (data.get("event_concepts") or [])} - {""}
+
+
+def load_keep_concepts(registry_path: Path) -> set[str]:
+    """``keep_concepts:`` -- one-session Items/Locations/Factions kept as concepts (O1)."""
+
+    data = _registry_data(registry_path)
+    return {str(c).strip() for c in (data.get("keep_concepts") or [])} - {""}
+
+
+def is_anchored(entity: CanonicalEntity, event_concepts: set[str], keep: set[str]) -> bool:
+    """True when the entity is rendered inside its session note instead of as a
+    concept file: T4 events not in ``event_concepts``, and O1 one-session
+    Items/Locations/Factions that are not important and not in ``keep``."""
+
+    if entity.type == EntityType.EVENT:
+        return entity.concept_id not in event_concepts
+    if entity.type in DEMOTABLE_TYPES:
+        sessions = len({m.session_id for m in entity.mentions})
+        return (
+            sessions < MIN_CONCEPT_SESSIONS
+            and not entity.important
+            and entity.concept_id not in keep
+        )
+    return False
 
 
 def resolve_entities(

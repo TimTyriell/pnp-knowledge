@@ -66,8 +66,10 @@ from pnp_okf.models import (
     SessionTranscript,
 )
 from pnp_okf.resolve import (
+    is_anchored,
     load_autolink_block,
     load_event_concepts,
+    load_keep_concepts,
     load_spellings,
     require_rules,
     resolve_entities,
@@ -595,20 +597,23 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     if args.clean and paths.bundle_dir.exists():
         shutil.rmtree(paths.bundle_dir)
 
-    # T4: an Event is a concept only when entity_rules.yaml says so; the rest
-    # are scene anchors inside their session note. The rename guard above
+    # T4: an Event is a concept only when entity_rules.yaml says so; O1: a
+    # one-session Item/Location/Faction is too (see is_anchored). The rest are
+    # scene anchors inside their session note. The rename guard above
     # deliberately saw *all* entities -- identity is unchanged, only what we
     # emit as a file is.
     event_concepts = load_event_concepts(registry_path)
-    anchored = [
-        e for e in entities
-        if e.type == EntityType.EVENT and e.concept_id not in event_concepts
-    ]
+    keep_concepts = load_keep_concepts(registry_path)
+    anchored = [e for e in entities if is_anchored(e, event_concepts, keep_concepts)]
+    anchored_events = [e for e in anchored if e.type == EntityType.EVENT]
+    demoted = [e for e in anchored if e.type != EntityType.EVENT]
     anchored_ids = {e.concept_id for e in anchored}
+    unlinked = {(m.session_id, m.citation_ts, m.note) for e in demoted for m in e.mentions}
     entities = [e for e in entities if e.concept_id not in anchored_ids]
     log.info(
-        "[events] %d event concept(s) kept, %d rendered as session anchors",
-        sum(1 for e in entities if e.type == EntityType.EVENT), len(anchored),
+        "[events] %d event concept(s) kept, %d event(s) rendered as session anchors; "
+        "%d one-session concept(s) demoted to session bullets",
+        sum(1 for e in entities if e.type == EntityType.EVENT), len(anchored_events), len(demoted),
     )
 
     # Extra grounding for synthesis: world material that never appears in a
@@ -829,8 +834,9 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     session_entries = emit_sessions(
         paths.bundle_dir, tmap, extractions, index, episodes,
         mention_concept_ids=mention_concept_index(entities),
-        anchors=event_anchors(anchored),
+        anchors=event_anchors(anchored_events),
         threads_by_session=threads_by_session(ledger.threads.values()),
+        unlinked_mentions=unlinked,
     )
 
     settled = prune_conflicts(paths.conflicts_dir, open_conflicts)

@@ -20,9 +20,15 @@ from pnp_okf.context import excerpts_for, load_sources, secondary_sources_for, s
 from pnp_okf.episodes import Episodes, video_id
 from pnp_okf.extract import _frozen_prompt_version, load_cached_extraction
 from pnp_okf.ingest import load_transcripts
-from pnp_okf.models import CanonicalEntity, EntityType, SessionExtraction, SessionTranscript
+from pnp_okf.models import CanonicalEntity, SessionExtraction, SessionTranscript
 from pnp_okf.prompts import STATE_PROMPT_VERSION, SYNTH_PROMPT_VERSION
-from pnp_okf.resolve import load_event_concepts, require_rules, resolve_entities
+from pnp_okf.resolve import (
+    is_anchored,
+    load_event_concepts,
+    load_keep_concepts,
+    require_rules,
+    resolve_entities,
+)
 from pnp_okf.synthesize import find_cached_body
 
 log = logging.getLogger(__name__)
@@ -209,10 +215,11 @@ def freeze_season(paths: Paths, season: str, cfg: DeepSeekConfig, *, from_cache:
     tmap = {t.session_id: t for t in transcripts if t.session_id in extractions}
     entities = resolve_entities(extractions, tmap, paths.registry_path)
     event_concepts = load_event_concepts(paths.registry_path)
+    keep_concepts = load_keep_concepts(paths.registry_path)
     sections = load_sources(paths.sources_dir)
     bodies_missing: list[str] = []
     for e in entities:
-        if e.tier == "brief" or (e.type == EntityType.EVENT and e.concept_id not in event_concepts):
+        if e.tier == "brief" or is_anchored(e, event_concepts, keep_concepts):
             continue            # rendered locally / not a concept: nothing to freeze
         if not all(m.session_id in member_ids for m in e.mentions):
             continue

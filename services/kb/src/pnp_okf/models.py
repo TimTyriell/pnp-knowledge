@@ -303,6 +303,10 @@ SUBTYPES: dict[EntityType, tuple[str, ...]] = {
 # in time. Every other type recurs and must cluster across the whole campaign.
 SESSION_SCOPED_TYPES = {EntityType.EVENT}
 
+# O1: types whose one-session members are session detail, not concepts.
+DEMOTABLE_TYPES = {EntityType.ITEM, EntityType.LOCATION, EntityType.FACTION}
+MIN_CONCEPT_SESSIONS = 2
+
 # How many sessions one event may span. Real arcs run over a few sittings — the
 # tournament at Willauch took three or four — so a hard one-session rule would
 # shred them. The cap is a *span*, not a count: sessions 20-22 stay one event,

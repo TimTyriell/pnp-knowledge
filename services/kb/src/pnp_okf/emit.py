@@ -267,6 +267,7 @@ def emit_sessions(
     mention_concept_ids: dict[tuple[str, str, str], str] | None = None,
     anchors: dict[str, list[EventAnchor]] | None = None,
     threads_by_session: dict[str, list[tuple[str, str, str, str]]] | None = None,
+    unlinked_mentions: set[tuple[str, str, str]] | None = None,
 ) -> list[tuple[str, str, str]]:
     """Write one ``sessions/<date>.md`` concept per session.
 
@@ -284,6 +285,10 @@ def emit_sessions(
     ambiguous between two entities) is left out of the list entirely rather
     than guessed. Omitting the argument keeps the pre-fix behaviour
     (slugify the raw name) for callers that have not resolved entities yet.
+
+    ``unlinked_mentions`` (O1): ``(session_id, citation_ts, note)`` keys of
+    demoted one-session concepts. Their bullet stays in the list, plain text
+    with no link, because no file is written for them.
     """
 
     episodes = episodes or Episodes()
@@ -307,6 +312,9 @@ def emit_sessions(
         intro_lines: list[str] = []
         ambiguous: list[str] = []
         for mention in extraction.entities:
+            if unlinked_mentions and (session_id, mention.citation_ts, mention.note) in unlinked_mentions:
+                intro_lines.append(f"* {mention.name} — {mention.note} [{mention.citation_ts}]")
+                continue
             if mention_concept_ids is None:
                 path = f"{TYPE_DIR[mention.type]}/{slugify(mention.name)}"
             else:
