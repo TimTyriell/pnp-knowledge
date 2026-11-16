@@ -240,3 +240,26 @@ def test_name_index_ambiguous_and_unknown_names_map_to_none():
     idx = NameIndex([_ent("characters/a", "Hans"), _ent("npcs/b", "Hans")])
     assert idx.lookup("Hans") is None
     assert idx.lookup("Niemand") is None
+
+
+def test_name_index_parenthetical_resolves_by_outer_alias():
+    # O4: "Name (Erklärung)" -- the state model writes the gloss in parentheses
+    idx = NameIndex([_ent("npcs/auranie", "Auranie", ["Oraniel"])])
+    assert idx.lookup("Auranie (Oraniel)") == "npcs/auranie"
+
+
+def test_name_index_parenthetical_resolves_by_inner_name():
+    idx = NameIndex([_ent("characters/dodo", "Dodo")])
+    assert idx.lookup("Dodo (Marco's Guardian)") == "characters/dodo"
+    idx = NameIndex([_ent("npcs/ezua", "Ezua")])
+    assert idx.lookup("Stimme (Ezua)") == "npcs/ezua"
+
+
+def test_name_index_parenthetical_ambiguous_outer_and_unknown_inner_maps_to_none():
+    idx = NameIndex([_ent("characters/a", "Hans"), _ent("npcs/b", "Hans")])
+    assert idx.lookup("Hans (Unbekannt)") is None
+
+
+def test_name_index_name_without_parentheses_that_misses_stays_none():
+    idx = NameIndex([_ent("npcs/ezua", "Ezua")])
+    assert idx.lookup("Stimme") is None

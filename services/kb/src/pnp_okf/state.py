@@ -20,6 +20,7 @@ from __future__ import annotations
 import hashlib
 import json
 import logging
+import re
 from collections import Counter
 from dataclasses import dataclass, field, replace
 from pathlib import Path
@@ -468,6 +469,9 @@ def apply_thread_rules(ledger: Ledger, rules: dict) -> None:
             record.resolved = record.entries[-1][1].session_id
 
 
+_PAREN = re.compile(r"^(.*?)\s*\((.+)\)\s*$")
+
+
 class NameIndex:
     """Map a state-pass name to a live concept id, or None.
 
@@ -489,6 +493,17 @@ class NameIndex:
                 self._slugs.setdefault(slugify(name), set()).add(e.concept_id)
 
     def lookup(self, name: str) -> str | None:
+        hit = self._lookup_exact(name)
+        if hit is not None:
+            return hit
+        # O4: 124 of 265 unmatched state names were "Name (Erklärung)" -- the
+        # gloss is not a name, so try the parts. Same two tables, same ambiguity rule.
+        m = _PAREN.match(name.strip())
+        if m:
+            return self._lookup_exact(m.group(1)) or self._lookup_exact(m.group(2))
+        return None
+
+    def _lookup_exact(self, name: str) -> str | None:
         for table, key in ((self._owners, name.strip().lower()), (self._slugs, slugify(name))):
             owners = table.get(key, set())
             if len(owners) == 1:
