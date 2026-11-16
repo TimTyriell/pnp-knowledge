@@ -28,9 +28,21 @@ value** to one record:
 - `dead → alive → dead` stays three records (real changes).
 - History is emitted only when more than one record survives (as now).
 
-Not in scope: whether P-12 is the true death of Rotunas (T00 names P-34).
-That is a GM check on the transcript; write it into the PR as an open
-question, do not change code for it.
+**GM correction.** Rotunas' P-12 (2025-06-17) `dead` entry is a false fact:
+he plays on long after it. Collapsing alone would make it the `since`.
+So O3 also adds a correction family in `entity_rules.yaml`:
+
+```yaml
+status_rules:
+  drop:
+  - characters/rotunas@2025-06-17   # P-12: not a death, GM 2026-11-16
+```
+
+Each entry is `<concept_id>@<session_id>`; every status **and** attitude
+record for that concept from that session is dropped before collapsing. Read
+through `_registry_data` (PIPELINE.md §5), like `load_thread_rules`. The
+rules-file edit itself is not part of this branch (`knowledge/` is the
+private bundle repo); the orchestrator adds it there.
 
 ## Steps
 
@@ -51,7 +63,15 @@ question, do not change code for it.
 3. In `world_state_by_concept`: `ordered = _collapse_runs(_chronological(records))`
    for statuses, and `_current(_collapse_runs(_chronological(records)))` for
    attitudes. Nothing else changes; `render_stand_section` reads the same keys.
-4. Full suite. If an existing test expected the repeated history, STOP and report.
+4. `status_rules: drop`: add `load_status_rules(registry_path) -> set[tuple[str, str]]`
+   (parses `concept@session`, ignores malformed entries with a log warning) and a
+   keyword `drop: set[tuple[str, str]] | None = None` on `world_state_by_concept`;
+   skip a record when `(cid, record.entry.session_id)` is in it — after the name
+   lookup, before grouping. In `cli._run_pipeline`, pass
+   `drop=load_status_rules(registry_path)` where `world_state_by_concept` is called.
+   Tests: a dropped session's `dead` disappears and `since` moves to the next
+   run; loader reads the family from a tmp `entity_rules.yaml`; malformed entry ignored.
+5. Full suite. If an existing test expected the repeated history, STOP and report.
 
 ## Done when
 

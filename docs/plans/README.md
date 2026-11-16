@@ -45,7 +45,9 @@ From the ontology review of 2026-11-16 (bundle measurements quoted in each
 plan). **Deviation from "one branch, one PR", by request:** all O-plans share
 branch `feat/ontology-hygiene`, one commit per plan, implemented in the order
 below by Haiku-class workers, one PR at the end. One shared HUMAN RUN (in O1)
-covers all of them.
+covers all of them. `knowledge/` is not in a worktree (private bundle repo):
+plan steps that edit `knowledge/entity_rules.yaml` are done by the
+orchestrator on a bundle-repo branch, not by the code worker.
 
 | # | Plan | Branch | Needs | Cost (DeepSeek) | Who |
 |---|---|---|---|---|---|
