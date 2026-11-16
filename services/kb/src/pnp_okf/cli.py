@@ -66,8 +66,10 @@ from pnp_okf.models import (
     SessionTranscript,
 )
 from pnp_okf.resolve import (
+    is_anchored,
     load_autolink_block,
     load_event_concepts,
+    load_keep_concepts,
     load_spellings,
     require_rules,
     resolve_entities,
@@ -80,8 +82,11 @@ from pnp_okf.state import (
     NameIndex,
     apply_thread_rules,
     build_glossary,
+    dormant_threads,
     load_glossary,
+    load_status_rules,
     load_thread_rules,
+    merge_title_collisions,
     render_stand_section,
     render_state_report,
     run_state,
@@ -592,20 +597,23 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     if args.clean and paths.bundle_dir.exists():
         shutil.rmtree(paths.bundle_dir)
 
-    # T4: an Event is a concept only when entity_rules.yaml says so; the rest
-    # are scene anchors inside their session note. The rename guard above
+    # T4: an Event is a concept only when entity_rules.yaml says so; O1: a
+    # one-session Item/Location/Faction is too (see is_anchored). The rest are
+    # scene anchors inside their session note. The rename guard above
     # deliberately saw *all* entities -- identity is unchanged, only what we
     # emit as a file is.
     event_concepts = load_event_concepts(registry_path)
-    anchored = [
-        e for e in entities
-        if e.type == EntityType.EVENT and e.concept_id not in event_concepts
-    ]
+    keep_concepts = load_keep_concepts(registry_path)
+    anchored = [e for e in entities if is_anchored(e, event_concepts, keep_concepts)]
+    anchored_events = [e for e in anchored if e.type == EntityType.EVENT]
+    demoted = [e for e in anchored if e.type != EntityType.EVENT]
     anchored_ids = {e.concept_id for e in anchored}
+    unlinked = {(m.session_id, m.citation_ts, m.note) for e in demoted for m in e.mentions}
     entities = [e for e in entities if e.concept_id not in anchored_ids]
     log.info(
-        "[events] %d event concept(s) kept, %d rendered as session anchors",
-        sum(1 for e in entities if e.type == EntityType.EVENT), len(anchored),
+        "[events] %d event concept(s) kept, %d event(s) rendered as session anchors; "
+        "%d one-session concept(s) demoted to session bullets",
+        sum(1 for e in entities if e.type == EntityType.EVENT), len(anchored_events), len(demoted),
     )
 
     # Extra grounding for synthesis: world material that never appears in a
@@ -643,7 +651,9 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
                     "[state] sessions without cached state -- run `pnp state`. Threads "
                     "are emitted for the cached prefix only and not pruned."
                 )
-        apply_thread_rules(ledger, load_thread_rules(registry_path))
+        thread_rules = load_thread_rules(registry_path)
+        apply_thread_rules(ledger, thread_rules)
+        merge_title_collisions(ledger, {str(t) for t in thread_rules.get("keep_apart") or []})
     thread_ids = sorted(ledger.threads)
 
     index = build_concept_index(
@@ -761,7 +771,8 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     # above. A partial run has no full fold, so it writes none (as for threads).
     names = NameIndex(entities)
     world, world_unmatched = (
-        world_state_by_concept(ledger, names, episodes) if not partial_run else ({}, [])
+        world_state_by_concept(ledger, names, episodes, drop=load_status_rules(registry_path))
+        if not partial_run else ({}, [])
     )
     titles = {e.concept_id: e.canonical_name for e in entities}
     for cid, fragment in world.items():
@@ -804,8 +815,14 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     # never written (PIPELINE.md section 7; 54 dangling links on 2026-09-05).
     # T6: thread concepts come before the sessions too -- their "Offene Fäden"
     # links must already exist on disk (same ordering rule as above).
+    dormant = dormant_threads(
+        ledger.threads.values(),
+        [(t.session_id, t.url) for t in sorted(tmap.values(), key=lambda t: (t.date, t.session_id))],
+        episodes,
+    )
     thread_written, thread_unmatched = emit_threads(
         paths.bundle_dir, list(ledger.threads.values()), names, episodes, index,
+        dormant=dormant,
     )
     if state_complete:
         pruned_threads = prune_threads(paths.bundle_dir, set(thread_written))
@@ -817,8 +834,9 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     session_entries = emit_sessions(
         paths.bundle_dir, tmap, extractions, index, episodes,
         mention_concept_ids=mention_concept_index(entities),
-        anchors=event_anchors(anchored),
+        anchors=event_anchors(anchored_events),
         threads_by_session=threads_by_session(ledger.threads.values()),
+        unlinked_mentions=unlinked,
     )
 
     settled = prune_conflicts(paths.conflicts_dir, open_conflicts)

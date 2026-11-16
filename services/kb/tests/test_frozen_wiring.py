@@ -246,6 +246,10 @@ def test_frozen_body_skips_synthesis(tmp_path, monkeypatch):
         name="Orden der Wacht", type=EntityType.FACTION, note="Bewacht das Tor.", citation_ts="00:01:00",
     )])
     transcript, season = _prepare_frozen_run(tmp_path, args, extraction)
+    # O1 demotes a one-session faction to a session bullet; keep it a concept
+    # so this test still exercises a synthesized (frozen) body.
+    (tmp_path / "knowledge" / "entity_rules.yaml").write_text(
+        "keep_concepts:\n- factions/orden_der_wacht\n", encoding="utf-8")
     entities = resolve_entities({transcript.session_id: extraction}, {transcript.session_id: transcript},
                                 tmp_path / "knowledge" / "entity_registry.yaml")
     entity = next(e for e in entities if e.tier != "brief")

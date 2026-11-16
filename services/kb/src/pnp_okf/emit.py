@@ -174,9 +174,24 @@ def _stamp_generated(
     return render_document(frontmatter, body)
 
 
+# One summary sentence (OKF §4.1). A period after a single letter is an
+# abbreviation ("z. B."), not a sentence end. O6: the old fixed cut left
+# 1379 of 1472 descriptions ending mid-word. The named abbreviations are the
+# ones that precede a capitalised word in German ("St. Arran", "Nr. Sieben").
+_SENTENCE_END = re.compile(
+    r"(?<![\s(]\w)(?<!^\w)(?<!\bSt)(?<!\bDr)(?<!\bNr)(?<!\bHl)(?<!\bca)(?<!\bvgl)(?<!\bbzw)"
+    r"[.!?](?=\s+[A-ZÄÖÜ„\"])"
+)
+
+
 def _short_desc(text: str, limit: int = 140) -> str:
     one_line = " ".join(text.split())
-    return one_line if len(one_line) <= limit else one_line[: limit - 1].rstrip() + "…"
+    end = _SENTENCE_END.search(one_line)
+    if end and end.end() <= limit:
+        return one_line[: end.end()]
+    if len(one_line) <= limit:
+        return one_line
+    return one_line[: limit - 1].rsplit(" ", 1)[0].rstrip(" ,;:") + "…"
 
 
 # The citation marker on a session's one "# Belege" line, as emit_sessions
@@ -252,6 +267,7 @@ def emit_sessions(
     mention_concept_ids: dict[tuple[str, str, str], str] | None = None,
     anchors: dict[str, list[EventAnchor]] | None = None,
     threads_by_session: dict[str, list[tuple[str, str, str, str]]] | None = None,
+    unlinked_mentions: set[tuple[str, str, str]] | None = None,
 ) -> list[tuple[str, str, str]]:
     """Write one ``sessions/<date>.md`` concept per session.
 
@@ -269,6 +285,10 @@ def emit_sessions(
     ambiguous between two entities) is left out of the list entirely rather
     than guessed. Omitting the argument keeps the pre-fix behaviour
     (slugify the raw name) for callers that have not resolved entities yet.
+
+    ``unlinked_mentions`` (O1): ``(session_id, citation_ts, note)`` keys of
+    demoted one-session concepts. Their bullet stays in the list, plain text
+    with no link, because no file is written for them.
     """
 
     episodes = episodes or Episodes()
@@ -292,6 +312,9 @@ def emit_sessions(
         intro_lines: list[str] = []
         ambiguous: list[str] = []
         for mention in extraction.entities:
+            if unlinked_mentions and (session_id, mention.citation_ts, mention.note) in unlinked_mentions:
+                intro_lines.append(f"* {mention.name} — {mention.note} [{mention.citation_ts}]")
+                continue
             if mention_concept_ids is None:
                 path = f"{TYPE_DIR[mention.type]}/{slugify(mention.name)}"
             else:
@@ -710,12 +733,13 @@ def emit_threads(
     names: NameIndex,
     episodes: Episodes,
     index: ConceptIndex | None,
+    dormant: set[str] | None = None,
 ) -> tuple[list[str], list[str]]:
     """Write threads/<slug>.md per thread. Returns (written_ids, unmatched_names).
 
     Deterministic, no LLM (T00 D3): the body is the dated Verlauf of the
     thread's entries plus its participants, so every line is checkable against
-    the cited moment.
+    the cited moment. *dormant* ids get ``dormant: true`` (O2).
     """
 
     written: list[str] = []
@@ -784,6 +808,7 @@ def emit_threads(
             "timestamp": f"{last.date}T00:00:00Z" if last and last.date else _now_iso(),
             "kind": thread.kind,
             "thread_status": thread.status,
+            "dormant": True if dormant and thread.thread_id in dormant else None,
             "opened": markers[0] if markers else None,
             "resolved": resolved_marker,
             "evidence": entries[0].evidence if entries else "observed",

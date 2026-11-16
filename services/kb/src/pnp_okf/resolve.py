@@ -9,10 +9,13 @@ import yaml
 
 from pnp_okf.links import apply_spellings
 from pnp_okf.models import (
+    DEMOTABLE_TYPES,
     DIR_TO_TYPE,
     MAX_EVENT_SESSION_SPAN,
+    MIN_CONCEPT_SESSIONS,
     PERSON_TYPES,
     SESSION_SCOPED_TYPES,
+    SUBTYPES,
     TYPE_DIR,
     CanonicalEntity,
     EntityType,
@@ -26,6 +29,16 @@ log = logging.getLogger(__name__)
 
 # Same bar as pnp_graph.resolve: stdlib difflib, no extra dependency.
 FUZZY_RATIO = 0.9
+
+
+def _valid_subtype(entity_type: EntityType, subtype: str) -> str:
+    """``subtype`` if it is in the type's closed list, else ``""`` (O7).
+
+    A cross-directory merge keeps the mention's subtype (``Wildnis`` on a
+    faction), so the subtype must be checked against the entity's own type.
+    """
+    s = subtype.strip()
+    return s if s in SUBTYPES.get(entity_type, ()) else ""
 
 
 @lru_cache(maxsize=8192)
@@ -630,6 +643,30 @@ def load_event_concepts(registry_path: Path) -> set[str]:
     return {str(c).strip() for c in (data.get("event_concepts") or [])} - {""}
 
 
+def load_keep_concepts(registry_path: Path) -> set[str]:
+    """``keep_concepts:`` -- one-session Items/Locations/Factions kept as concepts (O1)."""
+
+    data = _registry_data(registry_path)
+    return {str(c).strip() for c in (data.get("keep_concepts") or [])} - {""}
+
+
+def is_anchored(entity: CanonicalEntity, event_concepts: set[str], keep: set[str]) -> bool:
+    """True when the entity is rendered inside its session note instead of as a
+    concept file: T4 events not in ``event_concepts``, and O1 one-session
+    Items/Locations/Factions that are not important and not in ``keep``."""
+
+    if entity.type == EntityType.EVENT:
+        return entity.concept_id not in event_concepts
+    if entity.type in DEMOTABLE_TYPES:
+        sessions = len({m.session_id for m in entity.mentions})
+        return (
+            sessions < MIN_CONCEPT_SESSIONS
+            and not entity.important
+            and entity.concept_id not in keep
+        )
+    return False
+
+
 def resolve_entities(
     extractions: dict[str, SessionExtraction],
     transcripts: dict[str, SessionTranscript],
@@ -741,7 +778,7 @@ def resolve_entities(
                     aliases=seeded_aliases,
                     mentions=[],
                     important=concept_id in important,
-                    subtype=mention.subtype.strip(),
+                    subtype=_valid_subtype(entity_type, mention.subtype),
                 )
                 entities[concept_id] = entity
             if (
@@ -749,8 +786,8 @@ def resolve_entities(
                 and mention.name.strip() not in entity.aliases
             ):
                 entity.aliases.append(mention.name.strip())
-            if not entity.subtype and mention.subtype.strip():
-                entity.subtype = mention.subtype.strip()
+            if not entity.subtype:
+                entity.subtype = _valid_subtype(entity.type, mention.subtype)
             entity.mentions.append(
                 MentionRef(
                     session_id=session_id,

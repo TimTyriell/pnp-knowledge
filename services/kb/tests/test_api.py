@@ -72,6 +72,7 @@ tags:
 - quest
 kind: quest
 thread_status: open
+dormant: true
 timestamp: '2026-01-01T00:00:00Z'
 ---
 
@@ -170,6 +171,7 @@ def test_thread_status_filter(client: TestClient):
     assert [c["concept"] for c in open_threads] == ["threads/evakuierung"]
     assert open_threads[0]["kind"] == "quest"
     assert open_threads[0]["thread_status"] == "open"
+    assert open_threads[0]["dormant"] is True
     resolved = client.get(
         "/concepts", params={"type": "Thread", "thread_status": "resolved"}
     ).json()

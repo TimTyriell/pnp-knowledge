@@ -39,6 +39,26 @@ without design decisions. Where a decision *is* needed, the plan says
 | D1 | [D1-agent-mode.md](D1-agent-mode.md) | `feat/agent-mode` | C1 merged | $0 (subscription) | agent + human (guard, smoke) |
 | E1 | [E1-extraction-golden-benchmark.md](E1-extraction-golden-benchmark.md) | `feat/extraction-golden-benchmark` | — | $0 (subscription runs, human-triggered) | agent + human (gold approval, calibration, runs) |
 
+### Ontology hygiene (O-series)
+
+From the ontology review of 2026-11-16 (bundle measurements quoted in each
+plan). **Deviation from "one branch, one PR", by request:** all O-plans share
+branch `feat/ontology-hygiene`, one commit per plan, implemented in the order
+below by Haiku-class workers, one PR at the end. One shared HUMAN RUN (in O1)
+covers all of them. `knowledge/` is not in a worktree (private bundle repo):
+plan steps that edit `knowledge/entity_rules.yaml` are done by the
+orchestrator on a bundle-repo branch, not by the code worker.
+
+| # | Plan | Branch | Needs | Cost (DeepSeek) | Who |
+|---|---|---|---|---|---|
+| O7 | [O7-subtype-vocabulary.md](O7-subtype-vocabulary.md) | `feat/ontology-hygiene` | — | $0 (+ a few re-syntheses in the HUMAN RUN) | agent |
+| O6 | [O6-sentence-descriptions.md](O6-sentence-descriptions.md) | `feat/ontology-hygiene` | O7 | $0 | agent |
+| O4 | [O4-state-name-parentheticals.md](O4-state-name-parentheticals.md) | `feat/ontology-hygiene` | O6 | $0 | agent |
+| O3 | [O3-status-since-first-of-run.md](O3-status-since-first-of-run.md) | `feat/ontology-hygiene` | O4 | $0 | agent + GM (one question) |
+| O2 | [O2-thread-hygiene.md](O2-thread-hygiene.md) | `feat/ontology-hygiene` | O3 | $0 | agent |
+| O1 | [O1-demote-single-session-concepts.md](O1-demote-single-session-concepts.md) | `feat/ontology-hygiene` | O2 | $0 code; warm re-emit (human, `--allow-prune`) | agent + human |
+| O5 | [O5-episode-metadata-sync.md](O5-episode-metadata-sync.md) | — (data step) | — | $0 | human |
+
 Cross-repo plans live in their own repos: `pnp-crawl/docs/plans/`,
 `pnp-export-data/docs/plans/`.
 

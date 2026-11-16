@@ -20,6 +20,7 @@ from __future__ import annotations
 import hashlib
 import json
 import logging
+import re
 from collections import Counter
 from dataclasses import dataclass, field, replace
 from pathlib import Path
@@ -30,7 +31,7 @@ from pydantic import BaseModel, Field
 from tenacity import retry, retry_if_exception, stop_after_attempt, wait_exponential
 
 from pnp_okf.config import DeepSeekConfig
-from pnp_okf.episodes import Episodes, citation_labels
+from pnp_okf.episodes import Episodes, citation_labels, teams_for
 from pnp_okf.frozen import FrozenError
 from pnp_okf.llm_client import build_client, is_retryable
 from pnp_okf.models import (
@@ -419,6 +420,103 @@ def load_thread_rules(registry_path: Path) -> dict:
     return _registry_data(registry_path).get("thread_rules") or {}
 
 
+def load_status_rules(registry_path: Path) -> set[tuple[str, str]]:
+    """``status_rules: drop:`` from entity_rules.yaml -- GM corrections (O3).
+
+    Each entry is ``<concept_id>@<session_id>``: every status and attitude
+    record that concept got from that session is ignored before collapsing.
+    """
+
+    drops = (_registry_data(registry_path).get("status_rules") or {}).get("drop") or []
+    out: set[tuple[str, str]] = set()
+    for entry in drops:
+        cid, _, sid = str(entry).partition("@")
+        if not cid.strip() or not sid.strip():
+            log.warning("[status_rules] malformed drop entry %r (want concept_id@session_id)", entry)
+            continue
+        out.add((cid.strip(), sid.strip()))
+    return out
+
+
+def _merge_into(ledger: Ledger, loser_id: str, winner_id: str) -> bool:
+    """Fold thread *loser_id* into *winner_id*. False (and a warning) if either is missing."""
+
+    loser = ledger.threads.get(loser_id)
+    winner = ledger.threads.get(winner_id)
+    if loser is None or winner is None:
+        ledger.warnings.append(f"thread_rules merge {loser_id} -> {winner_id}: thread not found")
+        return False
+    winner.entries = sorted(
+        winner.entries + loser.entries, key=lambda pe: (pe[1].date, pe[1].citation_ts)
+    )
+    for name in loser.involves:
+        if name not in winner.involves:
+            winner.involves.append(name)
+    winner.opened = winner.entries[0][1].session_id
+    winner.status = winner.entries[-1][0]
+    if winner.status == "open":
+        winner.resolved = None
+    else:
+        winner.resolved = next(e.session_id for s, e in winner.entries if s != "open")
+    del ledger.threads[loser_id]
+    return True
+
+
+_NUMBERED_ID = re.compile(r"^(.*)_(\d+)$")
+
+
+def merge_title_collisions(ledger: Ledger, keep_apart: set[str]) -> None:
+    """Fold ``threads/X_<n>`` into ``threads/X`` when both titles match (O2).
+
+    ``Ledger._mint`` suffixes a new id when the model answers NEU with a title
+    that already exists, so the suffixed twin is the same thread by its title.
+    Runs after the fold, not in Ledger.apply: the open-thread list is part of
+    every later state cache key (PIPELINE.md 3a). ``keep_apart`` ids are never
+    folded, on either side.
+    """
+
+    for tid in sorted(ledger.threads):
+        match = _NUMBERED_ID.match(tid)
+        if match is None or tid in keep_apart:
+            continue
+        base_id = match.group(1)
+        base = ledger.threads.get(base_id)
+        if base is None or base_id in keep_apart:
+            continue
+        title = ledger.threads[tid].title.strip().casefold()
+        if title and title == base.title.strip().casefold():
+            _merge_into(ledger, tid, base_id)
+
+
+DORMANT_AFTER = 6  # sessions of the thread's table; ~6 weeks of play for Team A (O2)
+
+
+def dormant_threads(
+    threads, sessions: list[tuple[str, str]], episodes: Episodes, n: int = DORMANT_AFTER,
+) -> set[str]:
+    """Open threads with *n* later sessions of their own table and no entry since (O2).
+
+    *sessions* is ``(session_id, url)`` in date order. The table is the team
+    letters of the thread's entry sessions; a thread with no team counts every
+    later session. A reading aid only: thread_status stays ``open``.
+    """
+
+    position = {sid: i for i, (sid, _) in enumerate(sessions)}
+    session_teams = [set(teams_for([url], episodes)) for _, url in sessions]
+    dormant: set[str] = set()
+    for thread in threads:
+        if thread.status != "open" or not thread.entries:
+            continue
+        last = position.get(thread.entries[-1][1].session_id)
+        if last is None:
+            continue
+        table = set(teams_for([e.url for _, e in thread.entries], episodes))
+        later = [teams for teams in session_teams[last + 1:] if not table or teams & table]
+        if len(later) >= n:
+            dormant.add(thread.thread_id)
+    return dormant
+
+
 def apply_thread_rules(ledger: Ledger, rules: dict) -> None:
     """Human corrections on top of the fold. Mutates ``ledger.threads``.
 
@@ -430,24 +528,7 @@ def apply_thread_rules(ledger: Ledger, rules: dict) -> None:
         ledger.threads.pop(str(tid), None)
 
     for loser_id, winner_id in (rules.get("merge") or {}).items():
-        loser = ledger.threads.get(str(loser_id))
-        winner = ledger.threads.get(str(winner_id))
-        if loser is None or winner is None:
-            ledger.warnings.append(f"thread_rules merge {loser_id} -> {winner_id}: thread not found")
-            continue
-        winner.entries = sorted(
-            winner.entries + loser.entries, key=lambda pe: (pe[1].date, pe[1].citation_ts)
-        )
-        for name in loser.involves:
-            if name not in winner.involves:
-                winner.involves.append(name)
-        winner.opened = winner.entries[0][1].session_id
-        winner.status = winner.entries[-1][0]
-        if winner.status == "open":
-            winner.resolved = None
-        else:
-            winner.resolved = next(e.session_id for s, e in winner.entries if s != "open")
-        del ledger.threads[str(loser_id)]
+        _merge_into(ledger, str(loser_id), str(winner_id))
 
     for tid, title in (rules.get("title") or {}).items():
         record = ledger.threads.get(str(tid))
@@ -466,6 +547,9 @@ def apply_thread_rules(ledger: Ledger, rules: dict) -> None:
             record.resolved = None
         elif record.resolved is None and record.entries:
             record.resolved = record.entries[-1][1].session_id
+
+
+_PAREN = re.compile(r"^(.*?)\s*\((.+)\)\s*$")
 
 
 class NameIndex:
@@ -489,6 +573,17 @@ class NameIndex:
                 self._slugs.setdefault(slugify(name), set()).add(e.concept_id)
 
     def lookup(self, name: str) -> str | None:
+        hit = self._lookup_exact(name)
+        if hit is not None:
+            return hit
+        # O4: 124 of 265 unmatched state names were "Name (Erklärung)" -- the
+        # gloss is not a name, so try the parts. Same two tables, same ambiguity rule.
+        m = _PAREN.match(name.strip())
+        if m:
+            return self._lookup_exact(m.group(1)) or self._lookup_exact(m.group(2))
+        return None
+
+    def _lookup_exact(self, name: str) -> str | None:
         for table, key in ((self._owners, name.strip().lower()), (self._slugs, slugify(name))):
             owners = table.get(key, set())
             if len(owners) == 1:
@@ -543,6 +638,21 @@ def _chronological(records: list) -> list:
     return sorted(records, key=lambda r: (r.entry.date, r.entry.citation_ts))
 
 
+def _collapse_runs(ordered: list) -> list:
+    """First record of each run of equal (value, evidence) (O3). The state
+    pass repeats a status every session that mentions it; without this,
+    ``since`` moved to the latest repeat (Rotunas: "dead since S1-01-A @
+    00:00:01"). Evidence is part of the run key so a claim next to an
+    observed fact stays visible in the history (T7 acceptance)."""
+
+    kept: list = []
+    for r in ordered:
+        if kept and (kept[-1].value, kept[-1].entry.evidence) == (r.value, r.entry.evidence):
+            continue
+        kept.append(r)
+    return kept
+
+
 def _current(ordered: list):
     """The last observed entry, else the last entry of any evidence (T7 rule 1)."""
     observed = [r for r in ordered if r.entry.evidence == "observed"]
@@ -563,20 +673,26 @@ def _fact(value: str, entry: Entry, episodes: Episodes, claimed_by: str = "") ->
 
 
 def world_state_by_concept(
-    ledger: Ledger, names: NameIndex, episodes: Episodes
+    ledger: Ledger, names: NameIndex, episodes: Episodes,
+    drop: set[tuple[str, str]] | None = None,
 ) -> tuple[dict[str, dict], list[str]]:
     """``concept_id -> frontmatter fragment`` and the unmatched lines (T7 rules 1-5).
 
     The fragment holds any of ``world_status``, ``world_status_history`` and
-    ``attitude``. Nothing here calls the model.
+    ``attitude``. Nothing here calls the model. ``drop`` holds
+    ``(concept_id, session_id)`` pairs whose status and attitude records are
+    ignored (O3 ``status_rules``).
     """
 
+    drop = drop or set()
     unmatched: list[str] = []
     statuses: dict[str, list[StatusRecord]] = {}
     for s in ledger.statuses:
         cid = names.lookup(s.name)
         if cid is None:
             unmatched.append(f"{s.name}: {s.value} (kein Konzept gefunden)")
+            continue
+        if (cid, s.entry.session_id) in drop:
             continue
         directory = cid.split("/", 1)[0]
         if s.value not in WORLD_STATUS_BY_DIR.get(directory, frozenset()):
@@ -592,6 +708,8 @@ def world_state_by_concept(
         cid = names.lookup(a.name)
         if cid is None:
             unmatched.append(f"{a.name}: attitude (kein Konzept gefunden)")
+            continue
+        if (cid, a.entry.session_id) in drop:
             continue
         directory = cid.split("/", 1)[0]
         if directory not in ATTITUDE_DIRS:
@@ -612,7 +730,7 @@ def world_state_by_concept(
 
     out: dict[str, dict] = {}
     for cid, records in statuses.items():
-        ordered = _chronological(records)
+        ordered = _collapse_runs(_chronological(records))
         current = _current(ordered)
         fragment: dict = {"world_status": _fact(current.value, current.entry, episodes, current.claimed_by)}
         if len(ordered) > 1:
@@ -623,7 +741,7 @@ def world_state_by_concept(
     for cid, per_target in attitudes.items():
         rows = []
         for toward, records in sorted(per_target.items()):
-            cur = _current(_chronological(records))
+            cur = _current(_collapse_runs(_chronological(records)))
             rows.append({"toward": toward, **_fact(cur.value, cur.entry, episodes)})
         out.setdefault(cid, {})["attitude"] = rows
     return out, unmatched

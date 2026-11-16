@@ -31,8 +31,13 @@ from pnp_okf.config import DeepSeekConfig, Paths
 from pnp_okf.context import excerpts_for, load_sources, secondary_sources_for, sources_for
 from pnp_okf.extract import find_cached_extraction
 from pnp_okf.frozen import FrozenStore
-from pnp_okf.models import CanonicalEntity, EntityType, SessionTranscript
-from pnp_okf.resolve import load_event_concepts, resolve_entities
+from pnp_okf.models import CanonicalEntity, SessionTranscript
+from pnp_okf.resolve import (
+    is_anchored,
+    load_event_concepts,
+    load_keep_concepts,
+    resolve_entities,
+)
 from pnp_okf.synthesize import _cache_key as synth_cache_key
 from pnp_okf.synthesize import _cache_path as synth_cache_path
 from pnp_okf.synthesize import find_cached_body
@@ -245,9 +250,9 @@ def live_entries(paths: Paths, transcripts: list[SessionTranscript],
     tmap = {t.session_id: t for t in transcripts}
     if entities is None:
         entities = resolve_entities(extractions, tmap, paths.registry_path)
-        keep_events = load_event_concepts(paths.registry_path)
-        entities = [e for e in entities
-                    if e.type != EntityType.EVENT or e.concept_id in keep_events]
+        event_concepts = load_event_concepts(paths.registry_path)
+        keep_concepts = load_keep_concepts(paths.registry_path)
+        entities = [e for e in entities if not is_anchored(e, event_concepts, keep_concepts)]
     base = DeepSeekConfig.from_env()
     sections = load_sources(paths.sources_dir)
     for e in entities:
