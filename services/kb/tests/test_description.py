@@ -56,6 +56,11 @@ def test_abbreviation_does_not_end_the_sentence():
     assert _short_desc("Er trägt z. B. ein Schwert. Danach mehr.") == "Er trägt z. B. ein Schwert."
 
 
+def test_common_abbreviations_do_not_end_a_sentence():
+    assert _short_desc("Die Hexe von St. Arran lebt dort. Mehr.") == "Die Hexe von St. Arran lebt dort."
+    assert _short_desc("Sie traf Nr. Sieben im Turm. Mehr.") == "Sie traf Nr. Sieben im Turm."
+
+
 def test_whitespace_and_newlines_are_collapsed():
     assert _short_desc("Erster\n\nSatz.   Zweiter") == "Erster Satz."
 

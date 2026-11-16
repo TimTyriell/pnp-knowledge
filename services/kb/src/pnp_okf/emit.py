@@ -176,8 +176,12 @@ def _stamp_generated(
 
 # One summary sentence (OKF §4.1). A period after a single letter is an
 # abbreviation ("z. B."), not a sentence end. O6: the old fixed cut left
-# 1379 of 1472 descriptions ending mid-word.
-_SENTENCE_END = re.compile(r"(?<![\s(]\w)(?<!^\w)[.!?](?=\s+[A-ZÄÖÜ„\"])")
+# 1379 of 1472 descriptions ending mid-word. The named abbreviations are the
+# ones that precede a capitalised word in German ("St. Arran", "Nr. Sieben").
+_SENTENCE_END = re.compile(
+    r"(?<![\s(]\w)(?<!^\w)(?<!\bSt)(?<!\bDr)(?<!\bNr)(?<!\bHl)(?<!\bca)(?<!\bvgl)(?<!\bbzw)"
+    r"[.!?](?=\s+[A-ZÄÖÜ„\"])"
+)
 
 
 def _short_desc(text: str, limit: int = 140) -> str:
