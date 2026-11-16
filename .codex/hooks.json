@@ -1,0 +1,26 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit|NotebookEdit|Bash|PowerShell",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File 'c:\\dev\\lindo-lauts-notebook\\pnp-knowledge\\.codex\\hooks\\guard.ps1'"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -ExecutionPolicy Bypass -File 'c:\\dev\\lindo-lauts-notebook\\pnp-knowledge\\.codex\\hooks\\ruff-check.ps1'"
+          }
+        ]
+      }
+    ]
+  }
+}
