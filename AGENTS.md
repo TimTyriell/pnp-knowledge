@@ -50,7 +50,7 @@ Two systems live here, and the top level keeps them apart:
   `*_PROMPT_VERSION` change, paid `pnp run/extract/state/dedup` without
   `--estimate` or `--no-api` (a `--no-api` run is agent mode: no API calls, so
   it is allowed), commits on `main`, and edits to the guard itself. A block is a rule, not a bug: stop and
-  ask the human (overrides are env vars, listed in the script header). A run started from the
+  ask the human (overrides are switches in `.claude/guards.env`, gitignored; copy `.claude/guards.env.example`, which lists every one). A run started from the
   dashboard's Folgen tab is a human run; agents never click it and never call `POST /api/runs`.
   Self-check: `python .claude/hooks/test_guard.py`.
 - **Agent mode.** To run the LLM steps on a Claude or Codex subscription instead of DeepSeek, use the `pnp-agent-run` skill (`.agents/skills/pnp-agent-run/SKILL.md`). How-to: [docs/AGENT-MODE.md](docs/AGENT-MODE.md); design: [ADR-006](docs/architecture/ADR-006-agent-mode.md); mechanics: PIPELINE.md §3b.

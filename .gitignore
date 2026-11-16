@@ -22,3 +22,6 @@ knowledge/
 # Shared input can contain player names; only the empty folder marker is public.
 data/transcripts_final/*
 !data/transcripts_final/.gitkeep
+
+# Guard switches, per checkout (template: .claude/guards.env.example)
+.claude/guards.env
