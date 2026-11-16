@@ -77,7 +77,7 @@ private bundle repo); the orchestrator adds it there.
 
 - [ ] New tests pass; suite green except the known `last_run.json` test.
 - [ ] `ruff check .` clean.
-- [ ] After the shared HUMAN RUN: `characters/rotunas.md` has one `dead` entry; PR names the P-12 vs P-34 question for the GM.
+- [ ] After the shared HUMAN RUN: `characters/rotunas.md` has one `dead` entry, since P-46 (P-12 dropped by `status_rules`).
 
 ```bash
 cd services/kb && .venv/Scripts/python.exe -m pytest -q
