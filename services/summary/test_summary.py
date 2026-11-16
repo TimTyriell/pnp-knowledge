@@ -147,3 +147,17 @@ def test_fetch_sessions_team_filter_applies_before_count():
     transport = _kb_handler([], {}, sessions=sessions)
     got = fetch_sessions("http://kb", 1, None, team="B", transport=transport)
     assert [s["concept"] for s in got] == ["sessions/2025-10-07"]
+
+
+def test_fetch_open_threads_skips_dormant_threads():
+    # O2: a dormant thread is a reading aid for the KB, not a recap item.
+    rows = [
+        {"concept": "threads/alt", "kind": "quest", "thread_status": "open", "title": "Alt"},
+        {"concept": "threads/neu", "kind": "quest", "thread_status": "open", "title": "Neu"},
+    ]
+    details = {
+        "threads/alt": {"title": "Alt", "kind": "quest", "opened": "S1-01-A", "dormant": True},
+        "threads/neu": {"title": "Neu", "kind": "quest", "opened": "S1-02-A"},
+    }
+    threads = fetch_open_threads("http://kb", None, None, transport=_kb_handler(rows, details))
+    assert [t["title"] for t in threads] == ["Neu"]

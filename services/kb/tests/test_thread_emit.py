@@ -22,7 +22,7 @@ from pnp_okf.models import (
     SessionTranscript,
 )
 from pnp_okf.okf import split_document
-from pnp_okf.state import Ledger, NameIndex, SessionState, ThreadUpdate
+from pnp_okf.state import Ledger, NameIndex, SessionState, ThreadUpdate, dormant_threads
 from pnp_okf.validate import validate_bundle
 
 URL = "https://www.youtube.com/watch?v=abc"
@@ -157,3 +157,61 @@ def test_validate_accepts_a_well_formed_thread_and_flags_a_bad_kind(tmp_path: Pa
     assert [cid for cid, _ in report.invalid_thread_fields] == ["threads/y"]
     assert "threads/x" not in report.missing_required_fields
     assert report.integrity_ok
+
+
+# --- O2: dormant threads ----------------------------------------------------
+
+
+def _sessions(n: int, team: str | None) -> tuple[list[tuple[str, str]], Episodes]:
+    """n sessions s1..sN as (session_id, url); all of *team*, or teamless when None."""
+    entries = [{"video_id": f"vid{i:05d}", "team": f"Team-{team}" if team else None} for i in range(1, n + 1)]
+    episodes = Episodes(entries, teams={"Team-A": "A", "Team-B": "B"})
+    return [(f"s{i}", f"https://www.youtube.com/watch?v=vid{i:05d}") for i in range(1, n + 1)], episodes
+
+
+def _touched_in(session: str, url: str) -> Ledger:
+    led = Ledger()
+    led.apply(session, "2026-01-01", url, SessionState(threads=[_update("NEU", "Evakuierung", "open")]))
+    return led
+
+
+def test_thread_untouched_for_six_sessions_of_its_table_is_dormant():
+    sessions, episodes = _sessions(8, "A")
+    led = _touched_in(*sessions[1])  # last touched in s2
+    assert led.threads["threads/evakuierung"].entries[-1][1].url == sessions[1][1]
+    assert dormant_threads(led.threads.values(), sessions, episodes) == {"threads/evakuierung"}
+
+
+def test_later_sessions_of_another_table_do_not_make_a_thread_dormant():
+    sessions, _ = _sessions(8, "A")
+    episodes = Episodes(
+        [{"video_id": f"vid{i:05d}", "team": "Team-A" if i <= 2 else "Team-B"} for i in range(1, 9)],
+        teams={"Team-A": "A", "Team-B": "B"},
+    )
+    led = _touched_in(*sessions[1])
+    assert dormant_threads(led.threads.values(), sessions, episodes) == set()
+
+
+def test_resolved_thread_is_never_dormant():
+    sessions, episodes = _sessions(8, None)
+    led = Ledger()
+    led.apply("s2", "2026-02-01", sessions[1][1], SessionState(threads=[_update("NEU", "Evakuierung", "resolved")]))
+    assert dormant_threads(led.threads.values(), sessions, episodes) == set()
+
+
+def test_teamless_thread_counts_every_later_session():
+    sessions, episodes = _sessions(8, None)
+    led = _touched_in(*sessions[1])
+    assert dormant_threads(led.threads.values(), sessions, episodes) == {"threads/evakuierung"}
+    assert dormant_threads(led.threads.values(), sessions[:7], episodes) == set()
+
+
+def test_emit_threads_marks_only_dormant_threads(tmp_path: Path):
+    led = _ledger_one_thread()
+    led.apply("s2", "2026-02-01", URL, SessionState(threads=[_update("NEU", "Rotunas", "open")]))
+    emit_threads(tmp_path, list(led.threads.values()), NameIndex([]), Episodes(), None,
+                 dormant={"threads/evakuierung"})
+    dormant_fm, _ = split_document((tmp_path / "threads" / "evakuierung.md").read_text(encoding="utf-8"))
+    other_fm, _ = split_document((tmp_path / "threads" / "rotunas.md").read_text(encoding="utf-8"))
+    assert dormant_fm["dormant"] is True
+    assert "dormant" not in other_fm

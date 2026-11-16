@@ -20,6 +20,7 @@ from pnp_okf.state import (
     build_glossary,
     load_glossary,
     load_thread_rules,
+    merge_title_collisions,
     render_glossary,
     render_open_threads,
     render_state_report,
@@ -263,3 +264,40 @@ def test_name_index_parenthetical_ambiguous_outer_and_unknown_inner_maps_to_none
 def test_name_index_name_without_parentheses_that_misses_stays_none():
     idx = NameIndex([_ent("npcs/ezua", "Ezua")])
     assert idx.lookup("Stimme") is None
+
+
+# --- O2: title collisions fold into the base thread ------------------------
+
+
+def test_title_collision_folds_the_suffixed_thread_into_its_base():
+    led = _two_threads()  # threads/evakuierung + threads/evakuierung_2, same title
+    merge_title_collisions(led, set())
+    assert "threads/evakuierung_2" not in led.threads
+    winner = led.threads["threads/evakuierung"]
+    assert [e.session_id for _, e in winner.entries] == ["s1", "s2", "s3"]
+    assert winner.opened == "s1" and winner.status == "resolved"
+
+
+def test_title_collision_compares_titles_case_insensitively_after_strip():
+    led = Ledger()
+    led.apply("s1", "2026-01-01", "u1", SessionState(threads=[_t("NEU", "Evakuierung")]))
+    led.apply("s2", "2026-02-01", "u2", SessionState(threads=[_t("NEU", "  EVAKUIERUNG ")]))
+    merge_title_collisions(led, set())
+    assert list(led.threads) == ["threads/evakuierung"]
+
+
+def test_keep_apart_stops_a_title_collision_fold_on_either_side():
+    led = _two_threads()
+    merge_title_collisions(led, {"threads/evakuierung_2"})
+    assert "threads/evakuierung_2" in led.threads and "threads/evakuierung" in led.threads
+    merge_title_collisions(led, {"threads/evakuierung"})
+    assert "threads/evakuierung_2" in led.threads
+
+
+def test_different_titles_are_never_folded():
+    led = Ledger()
+    led.apply("s1", "2026-01-01", "u1", SessionState(threads=[_t("NEU", "Evakuierung")]))
+    led.apply("s2", "2026-02-01", "u2", SessionState(threads=[_t("NEU", "Evakuierung")]))
+    led.threads["threads/evakuierung_2"].title = "Rotunas"
+    merge_title_collisions(led, set())
+    assert set(led.threads) == {"threads/evakuierung", "threads/evakuierung_2"}

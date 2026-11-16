@@ -307,7 +307,7 @@ def create_app(bundle_dir: Path | None = None) -> FastAPI:
                 "description": fm.get("description"),
             }
             # Thread fields only when present, so other consumers see no new nulls.
-            for key in ("kind", "thread_status"):
+            for key in ("kind", "thread_status", "dormant"):
                 if fm.get(key) is not None:
                     row[key] = fm[key]
             results.append(row)

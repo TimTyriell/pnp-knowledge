@@ -114,6 +114,8 @@ def fetch_open_threads(
         threads = []
         for item in listing:
             fm = _detail(client, item["concept"], as_of)["frontmatter"]
+            if fm.get("dormant"):  # O2: a reading aid for the KB, not a recap item
+                continue
             if team and team not in (fm.get("teams") or []):
                 continue
             threads.append({**fm, "concept": item["concept"]})

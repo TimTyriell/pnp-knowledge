@@ -31,7 +31,7 @@ from pydantic import BaseModel, Field
 from tenacity import retry, retry_if_exception, stop_after_attempt, wait_exponential
 
 from pnp_okf.config import DeepSeekConfig
-from pnp_okf.episodes import Episodes, citation_labels
+from pnp_okf.episodes import Episodes, citation_labels, teams_for
 from pnp_okf.frozen import FrozenError
 from pnp_okf.llm_client import build_client, is_retryable
 from pnp_okf.models import (
@@ -438,6 +438,85 @@ def load_status_rules(registry_path: Path) -> set[tuple[str, str]]:
     return out
 
 
+def _merge_into(ledger: Ledger, loser_id: str, winner_id: str) -> bool:
+    """Fold thread *loser_id* into *winner_id*. False (and a warning) if either is missing."""
+
+    loser = ledger.threads.get(loser_id)
+    winner = ledger.threads.get(winner_id)
+    if loser is None or winner is None:
+        ledger.warnings.append(f"thread_rules merge {loser_id} -> {winner_id}: thread not found")
+        return False
+    winner.entries = sorted(
+        winner.entries + loser.entries, key=lambda pe: (pe[1].date, pe[1].citation_ts)
+    )
+    for name in loser.involves:
+        if name not in winner.involves:
+            winner.involves.append(name)
+    winner.opened = winner.entries[0][1].session_id
+    winner.status = winner.entries[-1][0]
+    if winner.status == "open":
+        winner.resolved = None
+    else:
+        winner.resolved = next(e.session_id for s, e in winner.entries if s != "open")
+    del ledger.threads[loser_id]
+    return True
+
+
+_NUMBERED_ID = re.compile(r"^(.*)_(\d+)$")
+
+
+def merge_title_collisions(ledger: Ledger, keep_apart: set[str]) -> None:
+    """Fold ``threads/X_<n>`` into ``threads/X`` when both titles match (O2).
+
+    ``Ledger._mint`` suffixes a new id when the model answers NEU with a title
+    that already exists, so the suffixed twin is the same thread by its title.
+    Runs after the fold, not in Ledger.apply: the open-thread list is part of
+    every later state cache key (PIPELINE.md 3a). ``keep_apart`` ids are never
+    folded, on either side.
+    """
+
+    for tid in sorted(ledger.threads):
+        match = _NUMBERED_ID.match(tid)
+        if match is None or tid in keep_apart:
+            continue
+        base_id = match.group(1)
+        base = ledger.threads.get(base_id)
+        if base is None or base_id in keep_apart:
+            continue
+        title = ledger.threads[tid].title.strip().casefold()
+        if title and title == base.title.strip().casefold():
+            _merge_into(ledger, tid, base_id)
+
+
+DORMANT_AFTER = 6  # sessions of the thread's table; ~6 weeks of play for Team A (O2)
+
+
+def dormant_threads(
+    threads, sessions: list[tuple[str, str]], episodes: Episodes, n: int = DORMANT_AFTER,
+) -> set[str]:
+    """Open threads with *n* later sessions of their own table and no entry since (O2).
+
+    *sessions* is ``(session_id, url)`` in date order. The table is the team
+    letters of the thread's entry sessions; a thread with no team counts every
+    later session. A reading aid only: thread_status stays ``open``.
+    """
+
+    position = {sid: i for i, (sid, _) in enumerate(sessions)}
+    session_teams = [set(teams_for([url], episodes)) for _, url in sessions]
+    dormant: set[str] = set()
+    for thread in threads:
+        if thread.status != "open" or not thread.entries:
+            continue
+        last = position.get(thread.entries[-1][1].session_id)
+        if last is None:
+            continue
+        table = set(teams_for([e.url for _, e in thread.entries], episodes))
+        later = [teams for teams in session_teams[last + 1:] if not table or teams & table]
+        if len(later) >= n:
+            dormant.add(thread.thread_id)
+    return dormant
+
+
 def apply_thread_rules(ledger: Ledger, rules: dict) -> None:
     """Human corrections on top of the fold. Mutates ``ledger.threads``.
 
@@ -449,24 +528,7 @@ def apply_thread_rules(ledger: Ledger, rules: dict) -> None:
         ledger.threads.pop(str(tid), None)
 
     for loser_id, winner_id in (rules.get("merge") or {}).items():
-        loser = ledger.threads.get(str(loser_id))
-        winner = ledger.threads.get(str(winner_id))
-        if loser is None or winner is None:
-            ledger.warnings.append(f"thread_rules merge {loser_id} -> {winner_id}: thread not found")
-            continue
-        winner.entries = sorted(
-            winner.entries + loser.entries, key=lambda pe: (pe[1].date, pe[1].citation_ts)
-        )
-        for name in loser.involves:
-            if name not in winner.involves:
-                winner.involves.append(name)
-        winner.opened = winner.entries[0][1].session_id
-        winner.status = winner.entries[-1][0]
-        if winner.status == "open":
-            winner.resolved = None
-        else:
-            winner.resolved = next(e.session_id for s, e in winner.entries if s != "open")
-        del ledger.threads[str(loser_id)]
+        _merge_into(ledger, str(loser_id), str(winner_id))
 
     for tid, title in (rules.get("title") or {}).items():
         record = ledger.threads.get(str(tid))

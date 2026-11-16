@@ -725,12 +725,13 @@ def emit_threads(
     names: NameIndex,
     episodes: Episodes,
     index: ConceptIndex | None,
+    dormant: set[str] | None = None,
 ) -> tuple[list[str], list[str]]:
     """Write threads/<slug>.md per thread. Returns (written_ids, unmatched_names).
 
     Deterministic, no LLM (T00 D3): the body is the dated Verlauf of the
     thread's entries plus its participants, so every line is checkable against
-    the cited moment.
+    the cited moment. *dormant* ids get ``dormant: true`` (O2).
     """
 
     written: list[str] = []
@@ -799,6 +800,7 @@ def emit_threads(
             "timestamp": f"{last.date}T00:00:00Z" if last and last.date else _now_iso(),
             "kind": thread.kind,
             "thread_status": thread.status,
+            "dormant": True if dormant and thread.thread_id in dormant else None,
             "opened": markers[0] if markers else None,
             "resolved": resolved_marker,
             "evidence": entries[0].evidence if entries else "observed",

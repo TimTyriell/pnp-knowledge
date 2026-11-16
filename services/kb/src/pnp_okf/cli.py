@@ -80,9 +80,11 @@ from pnp_okf.state import (
     NameIndex,
     apply_thread_rules,
     build_glossary,
+    dormant_threads,
     load_glossary,
     load_status_rules,
     load_thread_rules,
+    merge_title_collisions,
     render_stand_section,
     render_state_report,
     run_state,
@@ -644,7 +646,9 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
                     "[state] sessions without cached state -- run `pnp state`. Threads "
                     "are emitted for the cached prefix only and not pruned."
                 )
-        apply_thread_rules(ledger, load_thread_rules(registry_path))
+        thread_rules = load_thread_rules(registry_path)
+        apply_thread_rules(ledger, thread_rules)
+        merge_title_collisions(ledger, {str(t) for t in thread_rules.get("keep_apart") or []})
     thread_ids = sorted(ledger.threads)
 
     index = build_concept_index(
@@ -806,8 +810,14 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     # never written (PIPELINE.md section 7; 54 dangling links on 2026-09-05).
     # T6: thread concepts come before the sessions too -- their "Offene Fäden"
     # links must already exist on disk (same ordering rule as above).
+    dormant = dormant_threads(
+        ledger.threads.values(),
+        [(t.session_id, t.url) for t in sorted(tmap.values(), key=lambda t: (t.date, t.session_id))],
+        episodes,
+    )
     thread_written, thread_unmatched = emit_threads(
         paths.bundle_dir, list(ledger.threads.values()), names, episodes, index,
+        dormant=dormant,
     )
     if state_complete:
         pruned_threads = prune_threads(paths.bundle_dir, set(thread_written))
