@@ -13,6 +13,7 @@ from pnp_okf.models import (
     MAX_EVENT_SESSION_SPAN,
     PERSON_TYPES,
     SESSION_SCOPED_TYPES,
+    SUBTYPES,
     TYPE_DIR,
     CanonicalEntity,
     EntityType,
@@ -26,6 +27,16 @@ log = logging.getLogger(__name__)
 
 # Same bar as pnp_graph.resolve: stdlib difflib, no extra dependency.
 FUZZY_RATIO = 0.9
+
+
+def _valid_subtype(entity_type: EntityType, subtype: str) -> str:
+    """``subtype`` if it is in the type's closed list, else ``""`` (O7).
+
+    A cross-directory merge keeps the mention's subtype (``Wildnis`` on a
+    faction), so the subtype must be checked against the entity's own type.
+    """
+    s = subtype.strip()
+    return s if s in SUBTYPES.get(entity_type, ()) else ""
 
 
 @lru_cache(maxsize=8192)
@@ -741,7 +752,7 @@ def resolve_entities(
                     aliases=seeded_aliases,
                     mentions=[],
                     important=concept_id in important,
-                    subtype=mention.subtype.strip(),
+                    subtype=_valid_subtype(entity_type, mention.subtype),
                 )
                 entities[concept_id] = entity
             if (
@@ -749,8 +760,8 @@ def resolve_entities(
                 and mention.name.strip() not in entity.aliases
             ):
                 entity.aliases.append(mention.name.strip())
-            if not entity.subtype and mention.subtype.strip():
-                entity.subtype = mention.subtype.strip()
+            if not entity.subtype:
+                entity.subtype = _valid_subtype(entity.type, mention.subtype)
             entity.mentions.append(
                 MentionRef(
                     session_id=session_id,
