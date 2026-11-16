@@ -9,6 +9,22 @@
 | Cost | $0; warm re-emit **HUMAN RUN** |
 | Size | M |
 
+**Status 2026-11-16: code merged (#27), HUMAN RUN not done.** In `main`:
+`roster.py`, `sync_roster.py`, `player_alias_doctor.py`,
+`validate.player_name_hits`, `emit_entity(extra_frontmatter=)`. Still open,
+all of it the *HUMAN RUN* section below:
+
+- pnp-crawl's `export_roster.py` exists but was never run (no
+  `groups/roster_public.json`); the Miqo/Miko ruling (C4's gate) is open.
+- `knowledge/roster.yaml` does not exist, so no Character carries `team`,
+  `class`, `active_since` or `active_until`.
+- `PLAYER_NAME_BASELINE` is `None`; the ratchet test skips.
+
+Expect unmatched rows in step 2: `characters/` holds duplicates (Cookie ×4,
+Sage / Sange, and concepts named after a VTT default "<player>'s <class>")
+and NPCs filed as characters.
+B2 needs `roster.yaml` for its prompt.
+
 ## Goal
 
 1. Generate a committed `knowledge/roster.yaml` with **in-world** facts per

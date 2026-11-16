@@ -7,7 +7,41 @@
 | Depends on | T-series (so the rule families it re-keys are final); ADR-004 revisit trigger 2 is arguably firing already (the dashboard Glossar and `wiki_pages.toml` both key on `concept_id`) |
 | Cost | $0. A warm re-emit (**HUMAN RUN**) writes the new frontmatter key |
 | Size | L, cross-repo |
-| Gate | **ADR-005 must be accepted by the human before step 3** |
+| Gate | **ADR-007 must be accepted by the human before step 3** |
+
+**Status 2026-11-16: not started.** No `uid` exists in code, registry or
+frontmatter. This plan was written before S1, C1, D1 and the O-series; the
+section *Amendments* below brings it up to date. Where the two disagree, the
+amendments win. It also needs the O-series bundle run merged first: that run
+brings `keep_concepts:` and `thread_rules.keep_apart`, which B1 re-keys.
+
+## Amendments (2026-11-16)
+
+1. **ADR number.** `ADR-005` (ai-native delivery) and `ADR-006` (agent mode)
+   are taken. Write `docs/architecture/ADR-007-opaque-ids.md`. Read every
+   "ADR-005" in this plan as ADR-007.
+2. **Rule families added since.** Design point 4 lists the families keyed by
+   concept id. Add `keep_concepts:` (O1), `thread_rules.keep_apart` (O2) and
+   the status rules (O3, `state.load_status_rules`). The loaders to route
+   through `_rule_key_to_concept`: in `resolve.py` `_load_never_merge_pairs`,
+   `_load_canonical_names`, `_load_alias_blocks`, `_load_ignored`,
+   `_load_important`, `load_event_concepts`, `load_keep_concepts`, and the
+   `unimportant` family; in `state.py` `load_thread_rules` and
+   `load_status_rules`.
+3. **`merge:` and `split:` values.** They *define* a target — the directory
+   in the value sets the entity type — they do not point at an existing
+   concept. **STOP — ask the human** in ADR-007. Default to propose: they
+   stay concept ids.
+4. **Demoted concepts (O1).** About 700 ids now sit in `retired:` without a
+   file. Mint `retired[].uid` for them too, and give the uid back when the
+   concept is promoted on recurrence (`_reanchor_to_retired`). Add a test:
+   demoted in one run, seen in a second session in the next run, same uid.
+5. **Dashboard.** `services/dashboard/rules_edit.py` and `glossary.py`
+   line-patch `knowledge/entity_rules.yaml` by concept id. After
+   `migrate_rules_to_uids.py --write` the keys read `c_k3m9q2xa  # npcs/harald`.
+   The Sync must find a line by uid (resolved through the registry), or it
+   stops patching without an error. Add that as a step, with a case in
+   `services/dashboard/test_rules_edit.py`.
 
 ## Goal
 

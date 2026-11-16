@@ -58,6 +58,22 @@ orchestrator on a bundle-repo branch, not by the code worker.
 | O2 | [O2-thread-hygiene.md](O2-thread-hygiene.md) | `feat/ontology-hygiene` | O3 | $0 | agent |
 | O1 | [O1-demote-single-session-concepts.md](O1-demote-single-session-concepts.md) | `feat/ontology-hygiene` | O2 | $0 code; warm re-emit (human, `--allow-prune`) | agent + human |
 | O5 | [O5-episode-metadata-sync.md](O5-episode-metadata-sync.md) | — (data step) | — | $0 | human |
+| O8 | [O8-vocabulary-v2.md](O8-vocabulary-v2.md) | none — lands on B2's `feat/anchored-extraction` | B2, T8 run | $0 on top of B2 | agent + GM (one question) |
+
+### The road to the v7 re-extraction (status 2026-11-16)
+
+O8 changes the extraction prompt, so it waits for B2's bump, and B2 waits for
+two things. In order:
+
+| Step | State | Next action |
+|---|---|---|
+| O-series bundle run | code merged (#47); bundle branch `ingest/ontology-hygiene` not merged | human: finish the shared HUMAN RUN, merge, tag |
+| T8 HUMAN RUN | code merged (#27); nothing run | human: Miqo/Miko ruling, `export_roster.py`, `sync_roster.py`, baseline |
+| B1 | not started; plan amended 2026-11-16 | agent: ADR-007, then the plan |
+| B2 + O8 | not started | agent, then the budgeted HUMAN RUN |
+
+T8's run and B1's ADR can start now. B1's code needs the O-series bundle run
+merged (it re-keys rule families that arrive with it).
 
 Cross-repo plans live in their own repos: `pnp-crawl/docs/plans/`,
 `pnp-export-data/docs/plans/`.
