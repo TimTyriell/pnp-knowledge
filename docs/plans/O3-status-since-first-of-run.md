@@ -22,9 +22,8 @@ Attitudes have the same defect (`friendly` repeated → `since` moves forward).
 
 Wanted: before choosing current and history, collapse **runs of the same
 value** to one record:
-- A run is consecutive records (chronological) with equal `value`.
-- The kept record of a run is the first `observed` record in the run; if the
-  run has none, its first record.
+- A run is consecutive records (chronological) with equal `value` **and** equal `evidence`, so a claim beside an observation stays in the history (T7 acceptance; first draft keyed on value only and broke `test_observed_death_beats_a_later_claim_and_both_stay_in_history`).
+- The kept record of a run is its first record.
 - `dead → alive → dead` stays three records (real changes).
 - History is emitted only when more than one record survives (as now).
 
@@ -35,10 +34,10 @@ So O3 also adds a correction family in `entity_rules.yaml`:
 ```yaml
 status_rules:
   drop:
-  - characters/rotunas@2025-06-17   # P-12: not a death, GM 2026-11-16
+  - characters/rotunas@2025-06-17_RF_tl76B4V0io8   # P-12: not a death, GM 2026-11-16
 ```
 
-Each entry is `<concept_id>@<session_id>`; every status **and** attitude
+Each entry is `<concept_id>@<session_id>` (session_id = transcript filename stem, not the date); every status **and** attitude
 record for that concept from that session is dropped before collapsing. Read
 through `_registry_data` (PIPELINE.md §5), like `load_thread_rules`. The
 rules-file edit itself is not part of this branch (`knowledge/` is the

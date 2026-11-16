@@ -81,6 +81,7 @@ from pnp_okf.state import (
     apply_thread_rules,
     build_glossary,
     load_glossary,
+    load_status_rules,
     load_thread_rules,
     render_stand_section,
     render_state_report,
@@ -761,7 +762,8 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     # above. A partial run has no full fold, so it writes none (as for threads).
     names = NameIndex(entities)
     world, world_unmatched = (
-        world_state_by_concept(ledger, names, episodes) if not partial_run else ({}, [])
+        world_state_by_concept(ledger, names, episodes, drop=load_status_rules(registry_path))
+        if not partial_run else ({}, [])
     )
     titles = {e.concept_id: e.canonical_name for e in entities}
     for cid, fragment in world.items():

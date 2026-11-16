@@ -420,6 +420,24 @@ def load_thread_rules(registry_path: Path) -> dict:
     return _registry_data(registry_path).get("thread_rules") or {}
 
 
+def load_status_rules(registry_path: Path) -> set[tuple[str, str]]:
+    """``status_rules: drop:`` from entity_rules.yaml -- GM corrections (O3).
+
+    Each entry is ``<concept_id>@<session_id>``: every status and attitude
+    record that concept got from that session is ignored before collapsing.
+    """
+
+    drops = (_registry_data(registry_path).get("status_rules") or {}).get("drop") or []
+    out: set[tuple[str, str]] = set()
+    for entry in drops:
+        cid, _, sid = str(entry).partition("@")
+        if not cid.strip() or not sid.strip():
+            log.warning("[status_rules] malformed drop entry %r (want concept_id@session_id)", entry)
+            continue
+        out.add((cid.strip(), sid.strip()))
+    return out
+
+
 def apply_thread_rules(ledger: Ledger, rules: dict) -> None:
     """Human corrections on top of the fold. Mutates ``ledger.threads``.
 
@@ -558,6 +576,21 @@ def _chronological(records: list) -> list:
     return sorted(records, key=lambda r: (r.entry.date, r.entry.citation_ts))
 
 
+def _collapse_runs(ordered: list) -> list:
+    """First record of each run of equal (value, evidence) (O3). The state
+    pass repeats a status every session that mentions it; without this,
+    ``since`` moved to the latest repeat (Rotunas: "dead since S1-01-A @
+    00:00:01"). Evidence is part of the run key so a claim next to an
+    observed fact stays visible in the history (T7 acceptance)."""
+
+    kept: list = []
+    for r in ordered:
+        if kept and (kept[-1].value, kept[-1].entry.evidence) == (r.value, r.entry.evidence):
+            continue
+        kept.append(r)
+    return kept
+
+
 def _current(ordered: list):
     """The last observed entry, else the last entry of any evidence (T7 rule 1)."""
     observed = [r for r in ordered if r.entry.evidence == "observed"]
@@ -578,20 +611,26 @@ def _fact(value: str, entry: Entry, episodes: Episodes, claimed_by: str = "") ->
 
 
 def world_state_by_concept(
-    ledger: Ledger, names: NameIndex, episodes: Episodes
+    ledger: Ledger, names: NameIndex, episodes: Episodes,
+    drop: set[tuple[str, str]] | None = None,
 ) -> tuple[dict[str, dict], list[str]]:
     """``concept_id -> frontmatter fragment`` and the unmatched lines (T7 rules 1-5).
 
     The fragment holds any of ``world_status``, ``world_status_history`` and
-    ``attitude``. Nothing here calls the model.
+    ``attitude``. Nothing here calls the model. ``drop`` holds
+    ``(concept_id, session_id)`` pairs whose status and attitude records are
+    ignored (O3 ``status_rules``).
     """
 
+    drop = drop or set()
     unmatched: list[str] = []
     statuses: dict[str, list[StatusRecord]] = {}
     for s in ledger.statuses:
         cid = names.lookup(s.name)
         if cid is None:
             unmatched.append(f"{s.name}: {s.value} (kein Konzept gefunden)")
+            continue
+        if (cid, s.entry.session_id) in drop:
             continue
         directory = cid.split("/", 1)[0]
         if s.value not in WORLD_STATUS_BY_DIR.get(directory, frozenset()):
@@ -607,6 +646,8 @@ def world_state_by_concept(
         cid = names.lookup(a.name)
         if cid is None:
             unmatched.append(f"{a.name}: attitude (kein Konzept gefunden)")
+            continue
+        if (cid, a.entry.session_id) in drop:
             continue
         directory = cid.split("/", 1)[0]
         if directory not in ATTITUDE_DIRS:
@@ -627,7 +668,7 @@ def world_state_by_concept(
 
     out: dict[str, dict] = {}
     for cid, records in statuses.items():
-        ordered = _chronological(records)
+        ordered = _collapse_runs(_chronological(records))
         current = _current(ordered)
         fragment: dict = {"world_status": _fact(current.value, current.entry, episodes, current.claimed_by)}
         if len(ordered) > 1:
@@ -638,7 +679,7 @@ def world_state_by_concept(
     for cid, per_target in attitudes.items():
         rows = []
         for toward, records in sorted(per_target.items()):
-            cur = _current(_chronological(records))
+            cur = _current(_collapse_runs(_chronological(records)))
             rows.append({"toward": toward, **_fact(cur.value, cur.entry, episodes)})
         out.setdefault(cid, {})["attitude"] = rows
     return out, unmatched

@@ -5,6 +5,7 @@ claim-never-overrides-observed rule is the one that matters most: a retelling
 by an NPC must never change what the table saw happen.
 """
 
+import logging
 from pathlib import Path
 
 from pnp_okf.emit import emit_entity, insert_before_belege
@@ -17,6 +18,7 @@ from pnp_okf.state import (
     NameIndex,
     SessionState,
     StatusChange,
+    load_status_rules,
     render_stand_section,
     world_state_by_concept,
 )
@@ -191,3 +193,131 @@ def test_validate_flags_a_status_value_the_directory_may_not_carry(tmp_path: Pat
 
     assert [cid for cid, _ in report.invalid_world_status] == ["items/schwert"]
     assert report.integrity_ok  # advisory, like the thread checks
+
+
+# --- O3: a run of equal values is one fact, since its first record ---------
+
+URL_P12 = "https://www.youtube.com/watch?v=ddddddddddd"
+URL_P46 = "https://www.youtube.com/watch?v=eeeeeeeeeee"
+URL_S1 = "https://www.youtube.com/watch?v=fffffffffff"
+EPISODES_O3 = Episodes([
+    {"id": "P-12", "video_id": "ddddddddddd"},
+    {"id": "P-46", "video_id": "eeeeeeeeeee"},
+    {"id": "S1-01-A", "video_id": "fffffffffff"},
+])
+O3_SESSIONS = [("P-12", "2025-06-17", URL_P12), ("P-46", "2026-01-10", URL_P46),
+               ("S1-01-A", "2026-11-01", URL_S1)]
+
+
+def _o3_ledger(per_session: list) -> Ledger:
+    return _ledger([(sid, date, url, state)
+                    for (sid, date, url), state in zip(O3_SESSIONS, per_session, strict=False)])
+
+
+def test_a_status_repeated_across_sessions_is_since_its_first_record():
+    led = _o3_ledger([
+        SessionState(status_changes=[_status("Rotunas", "dead")]),
+        SessionState(status_changes=[_status("Rotunas", "dead")]),
+        SessionState(status_changes=[_status("Rotunas", "dead", ts="00:00:01")]),
+    ])
+    frag, _ = world_state_by_concept(led, _names(), EPISODES_O3)
+
+    assert frag["characters/rotunas"]["world_status"] == {
+        "value": "dead", "since": "P-12", "at": "02:02:27", "evidence": "observed"}
+    assert "world_status_history" not in frag["characters/rotunas"]
+
+
+def test_a_claim_and_an_observation_of_the_same_value_are_separate_runs():
+    # Evidence is part of the run key: the claim stays visible (T7), the
+    # observed record is current.
+    led = _o3_ledger([
+        SessionState(status_changes=[
+            _status("Rotunas", "dead", ts="00:10:00", evidence="claimed", claimed_by="Seraph")]),
+        SessionState(status_changes=[_status("Rotunas", "dead", ts="00:20:00")]),
+    ])
+    frag, _ = world_state_by_concept(led, _names(), EPISODES_O3)
+
+    assert frag["characters/rotunas"]["world_status"] == {
+        "value": "dead", "since": "P-46", "at": "00:20:00", "evidence": "observed"}
+    assert [h["evidence"] for h in frag["characters/rotunas"]["world_status_history"]] == [
+        "claimed", "observed"]
+
+
+def test_dead_alive_dead_stays_three_records_and_current_is_the_last():
+    led = _o3_ledger([
+        SessionState(status_changes=[_status("Rotunas", "dead")]),
+        SessionState(status_changes=[_status("Rotunas", "alive")]),
+        SessionState(status_changes=[_status("Rotunas", "dead")]),
+    ])
+    frag, _ = world_state_by_concept(led, _names(), EPISODES_O3)
+
+    history = frag["characters/rotunas"]["world_status_history"]
+    assert [h["value"] for h in history] == ["dead", "alive", "dead"]
+    assert frag["characters/rotunas"]["world_status"]["since"] == "S1-01-A"
+
+
+def test_attitude_friendly_then_hostile_is_current_hostile():
+    led = _o3_ledger([
+        SessionState(attitudes=[_attitude("Vitius", "Gruppe", "friendly")]),
+        SessionState(attitudes=[_attitude("Vitius", "Gruppe", "friendly")]),
+        SessionState(attitudes=[_attitude("Vitius", "Gruppe", "hostile")]),
+    ])
+    frag, _ = world_state_by_concept(led, _names(), EPISODES_O3)
+
+    assert frag["npcs/vitius"]["attitude"] == [
+        {"toward": "party", "value": "hostile", "since": "S1-01-A", "at": "01:10:00", "evidence": "observed"}]
+
+
+def test_attitude_friendly_three_times_has_since_of_the_first():
+    led = _o3_ledger([SessionState(attitudes=[_attitude("Vitius", "Gruppe", "friendly")])] * 3)
+    frag, _ = world_state_by_concept(led, _names(), EPISODES_O3)
+
+    assert frag["npcs/vitius"]["attitude"][0]["since"] == "P-12"
+
+
+# --- O3 status_rules: drop is a human correction, keyed by concept@session --
+
+def test_dropped_session_is_skipped_and_since_moves_to_the_next_run():
+    led = _o3_ledger([
+        SessionState(status_changes=[_status("Rotunas", "dead")]),
+        SessionState(status_changes=[_status("Rotunas", "dead")]),
+        SessionState(status_changes=[_status("Rotunas", "dead")]),
+    ])
+    frag, unmatched = world_state_by_concept(
+        led, _names(), EPISODES_O3, drop={("characters/rotunas", "P-12")})
+
+    assert unmatched == []
+    assert frag["characters/rotunas"]["world_status"]["since"] == "P-46"
+    assert "world_status_history" not in frag["characters/rotunas"]
+
+
+def test_drop_applies_to_attitude_records_too():
+    led = _o3_ledger([
+        SessionState(attitudes=[_attitude("Vitius", "Gruppe", "friendly")]),
+        SessionState(attitudes=[_attitude("Vitius", "Gruppe", "hostile")]),
+    ])
+    frag, _ = world_state_by_concept(led, _names(), EPISODES_O3, drop={("npcs/vitius", "P-12")})
+
+    assert frag["npcs/vitius"]["attitude"][0]["value"] == "hostile"
+    assert frag["npcs/vitius"]["attitude"][0]["since"] == "P-46"
+
+
+def test_load_status_rules_reads_the_drop_family(tmp_path: Path):
+    (tmp_path / "entity_rules.yaml").write_text(
+        "status_rules:\n  drop:\n  - characters/rotunas@P-12\n  - npcs/vitius@P-46\n", encoding="utf-8")
+    assert load_status_rules(tmp_path / "entity_registry.yaml") == {
+        ("characters/rotunas", "P-12"), ("npcs/vitius", "P-46")}
+
+
+def test_load_status_rules_is_empty_without_the_family(tmp_path: Path):
+    (tmp_path / "entity_rules.yaml").write_text("{}\n", encoding="utf-8")
+    assert load_status_rules(tmp_path / "entity_registry.yaml") == set()
+
+
+def test_load_status_rules_ignores_and_logs_malformed_entries(tmp_path: Path, caplog):
+    (tmp_path / "entity_rules.yaml").write_text(
+        "status_rules:\n  drop:\n  - characters/rotunas@P-12\n  - characters/rotunas\n"
+        "  - '@P-46'\n  - npcs/vitius@\n  - 42\n", encoding="utf-8")
+    with caplog.at_level(logging.WARNING, logger="pnp_okf.state"):
+        assert load_status_rules(tmp_path / "entity_registry.yaml") == {("characters/rotunas", "P-12")}
+    assert caplog.text.count("malformed") == 4
