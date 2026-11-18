@@ -66,6 +66,7 @@ from pnp_okf.models import (
     SessionTranscript,
 )
 from pnp_okf.resolve import (
+    assign_uids,
     is_anchored,
     load_autolink_block,
     load_event_concepts,
@@ -582,9 +583,13 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     registry_path = paths.registry_path
     require_rules(registry_path)
     entities = resolve_entities(extractions, tmap, registry_path)
+    # ADR-007: uids are assigned on the full resolved set, before anchored
+    # events and demoted concepts are filtered out, so a demoted concept that
+    # was live keeps its uid in retired: and gets it back when it recurs.
+    uids = assign_uids(entities, registry_path)
 
     if not partial_run and not check_rename_safety(
-        registry_path, entities, allow=args.allow_rename
+        registry_path, entities, allow=args.allow_rename, uids=uids
     ):
         _write_run_status(
             started_at,
@@ -788,6 +793,7 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
             teams=teams_for([m.url for m in entity.mentions], episodes),
             # T8 roster fields and T7 world state share the additive hook.
             extra_frontmatter={**roster.get(entity.concept_id, {}), **world.get(entity.concept_id, {})} or None,
+            uid=uids.get(entity.concept_id, ""),
         )
         unresolved_total += len(unresolved)
         if conflicts:
@@ -863,7 +869,7 @@ def _run_pipeline(args: argparse.Namespace, started_at: str) -> int:
     # family -- see PIPELINE.md section 7 / Task 2's investigation notes).
     # Writing it first used to mean a kill during synthesis left an
     # entity_registry.yaml naming concept ids whose files were never written.
-    write_registry(entities, registry_path)
+    write_registry(entities, registry_path, uids)
     emit_indexes(
         paths.bundle_dir, entities, session_entries, load_spellings(registry_path),
         threads=list(ledger.threads.values()),

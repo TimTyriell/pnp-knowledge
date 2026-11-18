@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import logging
+import re
+import secrets
 from difflib import SequenceMatcher
 from functools import lru_cache
 from pathlib import Path
@@ -375,7 +377,153 @@ def _registry_data(registry_path: Path) -> dict:
             data[key] = existing + value
         else:
             data[key] = value
+    # Every loader reads through here, so this one call is what lets a rule
+    # name its concept by uid (ADR-007) without each loader knowing about it.
+    return rekey_uids(data, uid_index(data))
+
+
+# --- Opaque concept uids (B1, ADR-007) ---------------------------------------
+#
+# A concept_id is derived from the extracted name, so a re-extraction that
+# rewords the name moves it (432 of 868 ids on the v6 run) and detaches every
+# rule and wiki page keyed on it. A uid is minted once and never derived from
+# anything, so it survives the rename. Filenames and concept_ids stay as they
+# are; the uid rides along in the registry and in frontmatter.
+
+_UID_ALPHABET = "abcdefghijklmnopqrstuvwxyz234567"  # lowercase base32
+UID_RE = re.compile(r"^c_[a-z2-7]{8}$")
+
+# Rule families whose items / keys name an existing concept, and so may use a
+# uid. merge: and split: values are left alone on purpose: they *define* a
+# target (its directory sets the entity type) rather than point at one.
+_ID_LIST_FAMILIES = ("ignore", "important", "unimportant", "event_concepts", "keep_concepts")
+_ID_KEY_FAMILIES = ("canonical_name", "alias_block")
+
+
+def mint_uid(taken: set[str]) -> str:
+    """A fresh ``c_<8 base32>`` uid not in *taken* (which it is added to)."""
+
+    while True:
+        uid = "c_" + "".join(secrets.choice(_UID_ALPHABET) for _ in range(8))
+        if uid not in taken:
+            taken.add(uid)
+            return uid
+
+
+def uid_index(data: dict) -> dict[str, str]:
+    """``uid -> concept_id`` from a registry dict's ``entities`` and ``retired``."""
+
+    out: dict[str, str] = {}
+    for entry in [*(data.get("entities") or []), *(data.get("retired") or [])]:
+        uid = str(entry.get("uid") or "").strip()
+        cid = str(entry.get("concept_id") or "").strip()
+        if uid and cid:
+            out.setdefault(uid, cid)  # live entries come first and win
+    return out
+
+
+def load_uid_index(registry_path: Path) -> dict[str, str]:
+    """``uid -> concept_id`` from the generated registry file."""
+
+    if not registry_path.exists():
+        return {}
+    return uid_index(yaml.safe_load(registry_path.read_text(encoding="utf-8")) or {})
+
+
+def rekey_uids(data: dict, index: dict[str, str]) -> dict:
+    """Rewrite uid references in the id-keyed rule families to concept ids.
+
+    A uid the registry does not know stays as it is, so it matches nothing --
+    the same outcome as a rule naming a concept id that no longer exists, and
+    rules_doctor.py reports both as dead.
+    """
+
+    def to_cid(key: object) -> str:
+        k = str(key).strip()
+        if UID_RE.match(k) and k not in index:
+            log.warning("[rules] unknown uid %s (not in the registry)", k)
+        return index.get(k, k)
+
+    if not index:
+        return data
+    for fam in _ID_LIST_FAMILIES:
+        if isinstance(data.get(fam), list):
+            data[fam] = [to_cid(c) for c in data[fam]]
+    if isinstance(data.get("never_merge"), list):
+        data["never_merge"] = [
+            [to_cid(c) for c in group] if isinstance(group, list) else group
+            for group in data["never_merge"]
+        ]
+    for fam in _ID_KEY_FAMILIES:
+        if isinstance(data.get(fam), dict):
+            data[fam] = {to_cid(k): v for k, v in data[fam].items()}
+    status = data.get("status_rules")
+    if isinstance(status, dict) and isinstance(status.get("drop"), list):
+        status = dict(status)
+        status["drop"] = [
+            f"{to_cid(cid)}@{sid}" if sid else entry
+            for entry in status["drop"]
+            for cid, _, sid in [str(entry).partition("@")]
+        ]
+        data["status_rules"] = status
     return data
+
+
+def assign_uids(entities: list[CanonicalEntity], registry_path: Path) -> dict[str, str]:
+    """``concept_id -> uid`` for this run's resolved entities.
+
+    A concept keeps the uid its id already has (live or retired). A new id
+    inherits the uid of a previously live concept that is absent this run
+    when the two share a name -- a rename the reanchor passes did not catch.
+    Anything else gets a fresh uid.
+    """
+
+    data = {}
+    if registry_path.exists():
+        data = yaml.safe_load(registry_path.read_text(encoding="utf-8")) or {}
+    known: dict[str, str] = {}
+    for entry in [*(data.get("retired") or []), *(data.get("entities") or [])]:
+        cid = str(entry.get("concept_id") or "").strip()
+        uid = str(entry.get("uid") or "").strip()
+        if cid and uid:
+            known[cid] = uid  # entities last: a live entry wins over a retired one
+    taken = set(known.values())
+    current = {e.concept_id for e in entities}
+
+    out = {e.concept_id: known[e.concept_id] for e in entities if e.concept_id in known}
+    used = set(out.values())
+    abandoned = [
+        entry
+        for entry in data.get("entities") or []
+        if str(entry.get("concept_id") or "").strip() not in current
+        and str(entry.get("uid") or "").strip()
+    ]
+
+    def same_space(a: EntityType, b_type: str) -> bool:
+        try:
+            b = EntityType(b_type)
+        except ValueError:
+            return False
+        return a == b or (a in PERSON_TYPES and b in PERSON_TYPES)
+
+    for e in sorted(entities, key=lambda x: x.concept_id):
+        if e.concept_id in out:
+            continue
+        names = {e.canonical_name.lower(), *(a.lower() for a in e.aliases)}
+        for entry in abandoned:
+            uid = str(entry["uid"]).strip()
+            entry_names = {
+                str(n).strip().lower()
+                for n in [entry.get("canonical_name", ""), *(entry.get("aliases") or [])]
+            } - {""}
+            if uid not in used and same_space(e.type, str(entry.get("type", ""))) and names & entry_names:
+                out[e.concept_id] = uid
+                used.add(uid)
+                log.info("[resolve] %s inherits uid %s from %s", e.concept_id, uid, entry["concept_id"])
+                break
+        else:
+            out[e.concept_id] = mint_uid(taken)
+    return out
 
 
 def _load_preserved_aliases(registry_path: Path) -> dict[str, list[str]]:
@@ -827,7 +975,11 @@ def resolve_entities(
     return resolved
 
 
-def write_registry(entities: list[CanonicalEntity], registry_path: Path) -> None:
+def write_registry(
+    entities: list[CanonicalEntity],
+    registry_path: Path,
+    uids: dict[str, str] | None = None,
+) -> None:
     """Write the entity registry.
 
     Aliases are maintained by hand on each concept in ``entities:``. This
@@ -906,6 +1058,7 @@ def write_registry(entities: list[CanonicalEntity], registry_path: Path) -> None
                 aliases.append(e.canonical_name)
         entry = {
             "concept_id": e.concept_id,
+            **({"uid": uids[e.concept_id]} if uids and e.concept_id in uids else {}),
             "type": e.type.value,
             "canonical_name": e.canonical_name,
             "aliases": aliases,
@@ -927,12 +1080,29 @@ def write_registry(entities: list[CanonicalEntity], registry_path: Path) -> None
         if cid and cid not in current_ids:
             ledger[cid] = {
                 "concept_id": cid,
+                **({"uid": entry["uid"]} if entry.get("uid") else {}),
                 "type": entry.get("type", ""),
                 "canonical_name": entry.get("canonical_name", ""),
                 "aliases": entry.get("aliases", []),
             }
     for cid in current_ids:
         ledger.pop(cid, None)  # live again -> no longer retired
+    if uids is not None:
+        # ADR-007: a uid is unique across live and retired. One a live concept
+        # inherited leaves its old retired entry; a retired entry without one
+        # (retired before uids existed, or an O1-demoted concept) gets one, so
+        # it comes back under the same uid if its id recurs.
+        live_uids = {uids[e.concept_id] for e in entities if e.concept_id in uids}
+        taken = set(live_uids)
+        for entry in ledger.values():
+            if entry.get("uid") in live_uids:
+                entry.pop("uid")
+            elif entry.get("uid"):
+                taken.add(entry["uid"])
+        for cid in sorted(ledger):
+            if not ledger[cid].get("uid"):
+                ledger[cid] = {"concept_id": cid, "uid": mint_uid(taken),
+                               **{k: v for k, v in ledger[cid].items() if k != "concept_id"}}
     retired_out = [ledger[cid] for cid in sorted(ledger)]
 
     doc = {
@@ -957,6 +1127,9 @@ def write_registry(entities: list[CanonicalEntity], registry_path: Path) -> None
         "#   important: true  forces the deep synthesis tier for entities the\n"
         "#                    automatic rules underrate (Characters and\n"
         "#                    Deities are always deep anyway)\n"
+        "#\n"
+        "# uid: — opaque, minted once, never derived from the name (ADR-007).\n"
+        "# Rules may name a concept by it. Never hand-edit.\n"
         "#\n"
         "# retired: — concepts once live, now absent (renamed or dropped).\n"
         "# Kept so a later reword can still reanchor to the same concept_id\n"

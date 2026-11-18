@@ -581,8 +581,12 @@ def emit_entity(
     relationships: list[dict] | None = None,
     teams: list[str] | None = None,
     extra_frontmatter: dict | None = None,
+    uid: str = "",
 ) -> tuple[list[str], str | None]:
     """Write a single canonical-entity concept document.
+
+    ``uid`` is the concept's opaque, minted-once id (ADR-007), written after
+    ``id``. Empty for a caller that has none (tests, older call sites).
 
     When ``index`` is given, cross-links in ``body`` are normalized against
     the concept set. Returns ``(unresolved_link_targets, conflict_section)``
@@ -632,6 +636,7 @@ def emit_entity(
     frontmatter = {
         "type": entity.type.value,
         "id": entity.entity_id,
+        **({"uid": uid} if uid else {}),
         "title": entity.canonical_name,
         "description": description,
         "tags": [TYPE_DIR[entity.type]],
@@ -950,8 +955,14 @@ def check_rename_safety(
     *,
     max_ratio: float = MAX_RENAME_RATIO,
     allow: bool = False,
+    uids: dict[str, str] | None = None,
 ) -> bool:
     """Refuse a run that abandons most of the previous registry's concept ids.
+
+    With ``uids`` (ADR-007) a concept is compared by uid when the previous
+    registry gave it one: a rename that keeps its uid is not a loss. A
+    previous entry without a uid (the first run after B1) still compares by
+    concept id.
 
     Same shape as :func:`prune_orphans`'s guard, one stage earlier: a mass
     rename (an LLM resample rewording most extracted names, changing their
@@ -969,14 +980,22 @@ def check_rename_safety(
         return True
     data = yaml.safe_load(registry_path.read_text(encoding="utf-8")) or {}
     previous = {
-        str(e.get("concept_id", "")).strip() for e in data.get("entities") or []
+        str(e.get("uid") or e.get("concept_id") or "").strip()
+        for e in data.get("entities") or []
     }
     previous.discard("")
     total = len(previous)
     if total < 20:
         return True
     current = {e.concept_id for e in entities}
+    if uids:
+        current |= {uids[e.concept_id] for e in entities if e.concept_id in uids}
     abandoned = previous - current
+    renamed = len({e.concept_id for e in entities} - {
+        str(e.get("concept_id", "")).strip() for e in data.get("entities") or []
+    })
+    if uids and renamed:
+        log.info("[resolve] %d concept id(s) are new this run (uid-kept renames included)", renamed)
     if not allow and len(abandoned) > max_ratio * total:
         log.error(
             "[resolve] refusing to proceed: %d/%d previously known concept(s) "

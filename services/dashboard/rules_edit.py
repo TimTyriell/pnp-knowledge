@@ -19,6 +19,7 @@ import difflib
 from typing import Any
 
 import yaml
+from pnp_okf.resolve import rekey_uids
 
 ALIAS_BLOCK_HEADER = (
     "# alias_block: Anzeigenamen, die NICHT mehr als Alias eines Konzepts\n"
@@ -104,21 +105,30 @@ def _append_new_block(lines: list[str], key: str, header: str | None = None) -> 
     return lines
 
 
-def set_in_block(lines: list[str], block_key: str, sub_key: str, value: str) -> list[str]:
+def set_in_block(
+    lines: list[str], block_key: str, sub_key: str, value: str, comment: str = ""
+) -> list[str]:
     lines = list(lines)
     bounds = block_bounds(lines, block_key)
     if bounds is None:
         lines = _append_new_block(lines, block_key)
         bounds = block_bounds(lines, block_key)
     start, end = bounds
+    new_line = _dump_line(sub_key, value) + (f"  # {comment}" if comment else "")
     for i in range(start + 1, end):
         parsed = _parse_kv_line(lines[i])
         if parsed and parsed[0] == sub_key:
-            lines[i] = _dump_line(sub_key, value)
+            lines[i] = new_line
             return lines
     insert_at = _last_data_line(lines, start, end) + 1
-    lines.insert(insert_at, _dump_line(sub_key, value))
+    lines.insert(insert_at, new_line)
     return lines
+
+
+def _item(stripped_line: str) -> str:
+    """The value of a ``- item  # comment`` line (migrated rules carry a comment)."""
+
+    return stripped_line[2:].split("#", 1)[0].strip()
 
 
 def del_from_block(lines: list[str], block_key: str, sub_key: str) -> list[str]:
@@ -135,7 +145,7 @@ def del_from_block(lines: list[str], block_key: str, sub_key: str) -> list[str]:
     return lines
 
 
-def add_to_list(lines: list[str], block_key: str, item: str) -> list[str]:
+def add_to_list(lines: list[str], block_key: str, item: str, comment: str = "") -> list[str]:
     """Add ``- item`` to a flat top-level list block (``important:``,
     ``unimportant:``), creating the block if needed. No-op if already
     present."""
@@ -148,10 +158,10 @@ def add_to_list(lines: list[str], block_key: str, item: str) -> list[str]:
     start, end = bounds
     for i in range(start + 1, end):
         s = lines[i].strip()
-        if s.startswith("- ") and s[2:].strip() == item:
+        if s.startswith("- ") and _item(s) == item:
             return lines
     insert_at = _last_data_line(lines, start, end) + 1
-    lines.insert(insert_at, f"- {item}")
+    lines.insert(insert_at, f"- {item}" + (f"  # {comment}" if comment else ""))
     return lines
 
 
@@ -163,7 +173,7 @@ def remove_from_list(lines: list[str], block_key: str, item: str) -> list[str]:
     start, end = bounds
     for i in range(start + 1, end):
         s = lines[i].strip()
-        if s.startswith("- ") and s[2:].strip() == item:
+        if s.startswith("- ") and _item(s) == item:
             del lines[i]
             return lines
     return lines
@@ -205,44 +215,57 @@ def apply_edits(
     edits: list[dict[str, Any]],
     rules: dict[str, Any],
     sources: dict[str, list[tuple[str, str]]],
+    uid_of: dict[str, str] | None = None,
 ) -> tuple[str, list[str]]:
     """Apply staged glossary edits to the rules file text. Raises
-    EditConflict for anything that needs a human decision or is malformed."""
+    EditConflict for anything that needs a human decision or is malformed.
+
+    ``uid_of`` (concept_id -> uid, ADR-007): once migrate_rules_to_uids.py has
+    run, rules name concepts by uid. A concept whose uid the file already uses
+    is edited under that uid, so a pin or flag is updated in place instead of
+    gaining a second, concept-id-keyed twin. merge: values stay concept ids.
+    """
 
     lines = text.split("\n")
     merge_map = {str(k).strip().lower(): str(v).strip() for k, v in (rules.get("merge") or {}).items()}
     warnings: list[str] = []
+
+    def rule_key(cid: str) -> tuple[str, str]:
+        """(key to write, trailing comment) for *cid* in the id-keyed families."""
+        uid = (uid_of or {}).get(cid)
+        return (uid, cid) if uid and uid in text else (cid, "")
 
     for edit in edits:
         op = edit.get("op")
         cid = str(edit.get("concept_id", "")).strip()
         if not cid:
             raise EditConflict("concept_id fehlt.")
+        key_, note = rule_key(cid)
 
         if op == "rename":
             name = str(edit.get("name", "")).strip()
             if not name:
                 raise EditConflict(f"{cid}: Name darf nicht leer sein.")
-            lines = set_in_block(lines, "canonical_name", cid, name)
+            lines = set_in_block(lines, "canonical_name", key_, name, note)
 
         elif op == "unpin":
             # Removing the pin is safe by construction: with no rule,
             # resolve.py falls back to whatever a transcript mention actually
             # says, it never gets stuck on the old pinned spelling.
-            lines = del_from_block(lines, "canonical_name", cid)
+            lines = del_from_block(lines, "canonical_name", key_)
 
         elif op == "set_important":
             important = bool(edit.get("important"))
             if important:
-                lines = add_to_list(lines, "important", cid)
-                lines = remove_from_list(lines, "unimportant", cid)
+                lines = add_to_list(lines, "important", key_, note)
+                lines = remove_from_list(lines, "unimportant", key_)
             else:
-                lines = remove_from_list(lines, "important", cid)
+                lines = remove_from_list(lines, "important", key_)
                 # important: true baked into a past registry run is a
                 # ratchet (resolve.py::_load_important reads it straight
                 # back) — unimportant: is the only thing that actually
                 # overrides that, so always write it, not just when needed.
-                lines = add_to_list(lines, "unimportant", cid)
+                lines = add_to_list(lines, "unimportant", key_, note)
 
         elif op == "add_alias":
             alias = str(edit.get("alias", "")).strip()
@@ -253,7 +276,7 @@ def apply_edits(
             if existing and existing != cid:
                 raise EditConflict(f'"{alias}" ist bereits eine merge-Regel fuer {existing}.')
             lines = set_in_block(lines, "merge", key, cid)
-            lines = _set_alias_block(lines, cid, remove=alias)
+            lines = _set_alias_block(lines, key_, remove=alias)
             merge_map[key] = cid
 
         elif op == "delete_alias":
@@ -278,7 +301,7 @@ def apply_edits(
             # Default (no unfold_ack, or source == "registry"): hide only.
             # The merge:/identity rules are untouched; only the display name
             # disappears from the registry/bundle via alias_block.
-            lines = _set_alias_block(lines, cid, add=alias)
+            lines = _set_alias_block(lines, key_, add=alias)
 
         else:
             raise EditConflict(f"Unbekannte Operation: {op!r}")
@@ -328,11 +351,12 @@ def sync(
     raw = rules_path.read_text(encoding="utf-8")
     uses_crlf = "\r\n" in raw
     text = raw.replace("\r\n", "\n")
-    rules = yaml.safe_load(text) or {}
     registry = load_registry(registry_path)
+    uid_of = {str(e["concept_id"]): str(e["uid"]) for e in registry if e.get("uid") and e.get("concept_id")}
+    rules = rekey_uids(yaml.safe_load(text) or {}, {u: c for c, u in uid_of.items()})
     sources = entity_name_sources(registry, rules)
 
-    new_text, warnings = apply_edits(text, edits, rules, sources)
+    new_text, warnings = apply_edits(text, edits, rules, sources, uid_of)
     validate(text, new_text)
 
     diff = "".join(

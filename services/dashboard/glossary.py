@@ -15,6 +15,7 @@ from pathlib import Path
 from typing import Any
 
 import yaml
+from pnp_okf.resolve import rekey_uids, uid_index
 
 # \w is unicode-aware in Python's re, so ä/ö/ü/ß are word chars. Apostrophes
 # and hyphens split a name on both sides ("Vhar'Zul" -> ("vhar","zul")), so a
@@ -141,7 +142,8 @@ def build(knowledge_dir: Path, transcript_dir: Path) -> dict[str, Any]:
     rules_path = knowledge_dir / "entity_rules.yaml"
 
     entities = load_registry(registry_path)
-    rules = load_rules(rules_path)
+    # ADR-007: rules may name a concept by uid; the glossary is keyed by concept id.
+    rules = rekey_uids(load_rules(rules_path), uid_index({"entities": entities}))
     sources = entity_name_sources(entities, rules)
 
     keys: set[tuple[str, ...]] = set()

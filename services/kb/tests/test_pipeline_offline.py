@@ -377,9 +377,9 @@ def test_registry_is_written_after_the_bundle_it_describes(
 
     original_write_registry = cli.write_registry
 
-    def spy_write_registry(entities, registry_path):
+    def spy_write_registry(entities, registry_path, *args):
         order.append("REGISTRY")
-        return original_write_registry(entities, registry_path)
+        return original_write_registry(entities, registry_path, *args)
 
     monkeypatch.setattr(cli, "write_registry", spy_write_registry)
 
