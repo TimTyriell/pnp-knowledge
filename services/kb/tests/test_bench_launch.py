@@ -153,7 +153,8 @@ def _grade(out: dict, **kw) -> int:
 # --- argv, environment, parsing --------------------------------------------------------------
 
 
-def test_claude_argv_carries_the_probed_flags():
+def test_claude_argv_carries_the_probed_flags(monkeypatch):
+    monkeypatch.setattr(bl, "_exe", lambda name: name)  # CI has no claude/codex on PATH
     argv = bl.argv_for("claude-code", "claude-opus-5-5", "high", None)
     joined = " | ".join(argv)
     assert "--model | claude-opus-5-5" in joined and "--effort | high" in joined
@@ -163,7 +164,8 @@ def test_claude_argv_carries_the_probed_flags():
     assert argv[-2:] == ["--output-format", "json"]
 
 
-def test_codex_argv_carries_the_probed_flags(tmp_path):
+def test_codex_argv_carries_the_probed_flags(tmp_path, monkeypatch):
+    monkeypatch.setattr(bl, "_exe", lambda name: name)
     out = tmp_path / "last.txt"
     argv = bl.argv_for("codex", "gpt-6.1-sol", "high", out)
     assert argv[1:4] == ["exec", "-m", "gpt-6.1-sol"]
