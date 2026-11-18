@@ -63,13 +63,22 @@ which was technically the strongest option and lost on exactly that point.
 The tags are a manual step: as-of reads are only as good as the tags, and
 `docs/RELEASING.md` says how to cut one.
 
-**Quality is ratcheted, not asserted.** 15 measured baselines — unlinked
+**Quality is ratcheted, not asserted.** Measured baselines — unlinked
 mentions, uncited concepts, faction/NPC link coverage, dead rules — are recorded
 and may not grow. They are not pass/fail correctness checks; several are
 deliberately not zero, because forcing them to zero would over-link generic
 language or paper over a detector's false positives. One baseline was
 consciously loosened once, with the reason written down. See
 [QUALITY.md](docs/QUALITY.md).
+
+**Model choice is measured, not assumed.** Extraction models are compared on a
+human-approved gold reference by two blind judges from different model
+families, with judge disagreement kept as score bounds and cost reported
+separately; synthesized sentences are judged against their cited transcript
+window, with judge–human agreement reported as Cohen's kappa. All model calls
+run headless on Claude Code and Codex subscriptions, manually or on a schedule.
+Method, results and the command behind every number:
+[docs/benchmarks/](docs/benchmarks/README.md).
 
 **Identity is guarded against the model.** Concept ids are derived from
 extracted entity names, which couples identity to model output: a resample that
@@ -205,7 +214,9 @@ Tests: `services/kb` and `services/summary` each `python -m pytest`.
 | [ADR-005](docs/architecture/ADR-005-ai-native-delivery.md) | AI-native delivery: rules as hooks, judgment at gates |
 | [ADR-006](docs/architecture/ADR-006-agent-mode.md) | Agent mode: the LLM steps can be answered by a Claude or Codex agent |
 | [AGENT-MODE.md](docs/AGENT-MODE.md) | How to run the pipeline with Claude/Codex agents: models per step, session scope, the packet loop |
-| [QUALITY.md](docs/QUALITY.md) | The 15 quality ratchets and their baselines |
+| [QUALITY.md](docs/QUALITY.md) | The quality ratchets and their baselines |
+| [docs/benchmarks/](docs/benchmarks/README.md) | Model and synthesis evaluation: method, results, how to reproduce |
+| [EXTRACTION-BENCHMARK.md](docs/EXTRACTION-BENCHMARK.md) | The extraction benchmark procedure: gates, launch rules, scoring, cost |
 | [INCIDENT-2026-08](docs/architecture/INCIDENT-2026-08-mass-rename.md) | The mass-rename incidents and the guards written in response |
 | [docs/audits/](docs/audits/) | Bundle quality audits — the documents the ratchets came from |
 

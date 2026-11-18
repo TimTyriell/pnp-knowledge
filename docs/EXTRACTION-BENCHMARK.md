@@ -1,6 +1,7 @@
 # Extraction benchmark (E1): how to run it
 
-Status: the offline harness is built and tested. No model has been run for this benchmark yet.
+Status: `extraction_benchmark.py status` (live). Results: [benchmarks/extraction.md](benchmarks/extraction.md);
+method summary: [benchmarks/README.md](benchmarks/README.md).
 Owner: the human. A coordinating agent may run the offline steps and the
 task templates after the gate that unlocks them.
 
@@ -16,8 +17,10 @@ task templates after the gate that unlocks them.
 
 | What | Path |
 |---|---|
-| Harness (one module, argparse CLI) | `services/kb/extraction_benchmark.py` |
-| Tests (invented data only) | `services/kb/tests/test_extraction_benchmark.py` |
+| Harness (one module, argparse CLI, offline) | `services/kb/extraction_benchmark.py` |
+| Launcher (the only code that starts a model) | `services/kb/bench_launch.py` |
+| Judges, arms, prices | `services/kb/bench_config.json` |
+| Tests (invented data only) | `services/kb/tests/test_extraction_benchmark.py`, `tests/test_bench_launch.py` |
 | This procedure | `docs/EXTRACTION-BENCHMARK.md` |
 | Plan and decisions | `docs/plans/E1-extraction-golden-benchmark.md` |
 | Private data root | `services/kb/.cache/extraction-benchmark/`, or the folder in `PNP_BENCH_DIR` if that is set |
@@ -58,6 +61,9 @@ Layout under the private root (`<root>`). The case folder is `cases/<case>/`.
     disagreements.json            list of disputed items
     adjudication.json             human decisions (location assumed; see section 11)
     report.json, report.md        written by score
+  history.jsonl                   one row per scored run and label (section 12)
+  leaderboard.md                  rendered from history.jsonl
+  launch.log.jsonl                every launched call: host, model, ok, quota, seconds
 ```
 
 Other folders the harness reads or writes, if you pass them: a matrix JSON
@@ -145,8 +151,12 @@ The seven existing outputs are: DeepSeek, Terra medium, Terra high, Sol high, Lu
    .venv/Scripts/python.exe extraction_benchmark.py prepare-grading --run <RUN>
    ```
    Who: Python.
-3. Per output: one inventory task (T5), then two judges each doing packet A (T6) and packet B (T7). That is 5 fresh tasks per output, 35 in total.
-   Who: agent tasks, one fresh process each (section 5).
+3. Per output: one inventory task, then two judges each doing packet A and packet B. That is 5 fresh processes per output, 35 in total. One command runs them all and resumes where it stopped:
+   ```powershell
+   .venv/Scripts/python.exe bench_launch.py grade --run <RUN> --packets A     # before gold approval: F and G only
+   .venv/Scripts/python.exe bench_launch.py grade --run <RUN>                 # after approval: adds packet B
+   ```
+   Who: the human starts it; the launcher starts one fresh process per task (section 5). Steps 2 and 8 run inside it.
 4. Find disagreements and write the exchange packets.
    ```powershell
    .venv/Scripts/python.exe extraction_benchmark.py diff-judgments --run <RUN>
@@ -179,8 +189,12 @@ The seven existing outputs are: DeepSeek, Terra medium, Terra high, Sol high, Lu
    .venv/Scripts/python.exe extraction_benchmark.py prepare-run --run <RUN> --matrix <MATRIX_JSON>
    ```
    Who: Python.
-3. Launch each attempt once, following section 5. Who: agent task launcher (T3 for the prompt).
-4. If an output is invalid, run the format repair once (T4). If it still fails, the attempt is failed. Failed attempts stay and their cost counts.
+3. Launch each attempt once, following section 5:
+   ```powershell
+   .venv/Scripts/python.exe bench_launch.py generate --run <RUN> [--arms <label>,<label>]
+   ```
+   Who: the human starts it. Arms come from `bench_config.json`; `prepare-run` is called inside.
+4. If an output is invalid, the launcher runs the format repair once, same model. If it still fails, the attempt is failed. Failed attempts stay and their cost counts.
 5. Check and grade as in Phase 3, steps 2 to 8, with the calibrated judges.
    ```powershell
    .venv/Scripts/python.exe extraction_benchmark.py validate-run --run <RUN>
@@ -213,13 +227,16 @@ the repair worker, follows these rules.
 6. **No best-of-N.** One attempt is one sample. Do not generate extra samples and pick one.
 7. **One format repair at most.** The repair is a new fresh process that gets `raw.txt` and the validator error only (T4).
 8. **Record requested and reported values.** Record the requested model and effort, and the model and effort the host reports, in `execution.json`. Record the raw usage record in `usage.json`. Record start and finish times.
-9. **Judges and the inventory agent** get file read and write access only to the paths their template names.
+9. **Judges and the inventory worker have no tools.** Their inputs are inlined into the prompt, so they need no file access and see no path. Codex has no switch to turn tools off: a Codex reply whose events show any tool use is rejected.
 10. **Hashing.** Source files are hashed as raw bytes. Gold, rubric and judgment files are hashed as canonical JSON: keys sorted, UTF-8, `ensure_ascii` off, separators `,` and `:`, no whitespace. Hash is SHA-256, hex. Coordinators supply the hash values that a task needs (`binds`, `output_sha256`, `config`) in the task message. Workers copy them; they do not compute them.
 11. **Judges never learn** which model, effort, host or cost produced an output.
+12. **No silent model fallback.** A Claude reply whose `modelUsage` does not name the requested model is rejected, not recorded under the requested one.
+13. **Usage limits stop one host, not the run.** The other host keeps working; the launcher exits 75 and the same command resumes after the reset. Every call, including failures, is logged to `launch.log.jsonl`.
+14. **Launches come from a human terminal or the scheduler only.** The launcher refuses to run when `CLAUDECODE` or a `CODEX_*` variable is set.
 
-**Exact headless commands are not fixed in this document.** The exact command-line flags for Claude Code and Codex headless runs are confirmed by the Gate 0 probe. They are then written into this section. Do not invent flags.
+The flags below were confirmed by the Gate 0 probe; `bench_launch.argv_for` uses exactly these, and `tests/test_bench_launch.py` pins them. The prompt always goes in on stdin. The launcher passes Codex effort as `model_reasoning_effort=<EFFORT>` (an unquoted value is read as a string), which avoids quoting through the `.cmd` shim.
 
-| Host | Headless command (to be written after Gate 0) |
+| Host | Headless command |
 |---|---|
 | Claude Code (probed 2026-11-15, CLI 2.1.325, login `claude.ai` subscription) | `claude -p --model <MODEL ID> --effort <EFFORT> --tools "" --strict-mcp-config --setting-sources "" --disable-slash-commands --no-session-persistence --system-prompt "<ONE LINE>" --output-format json < prompt.txt > result.json` |
 | Codex (probed 2026-11-15, codex-cli 0.169.0, login "ChatGPT") | `codex exec -m <MODEL ID> -c model_reasoning_effort='"<EFFORT>"' -s read-only --skip-git-repo-check --ephemeral --ignore-user-config --ignore-rules --json -o last.txt - < prompt.txt > events.jsonl` |
@@ -243,10 +260,10 @@ Fixed judges and agents:
 
 | Role | Fixed model | Set by |
 |---|---|---|
-| Claude judge | Opus 5.5 | Human decision, 2026-11-15. Effort set at Gate 1. |
-| Codex judge | Decided at Gate 1 | Human |
+| Claude judge | Opus 5.5, effort high | Human decision, 2026-11-15; effort 2026-11-18 |
+| Codex judge | gpt-6.1-sol, effort high | Human decision, 2026-11-18 |
 | Inventory agent | Opus 5.5 | Human decision, 2026-11-15 |
-| Gold drafter and gap pass | Chosen at Gate 0 | Human. The gap pass uses the other model family. |
+| Gold drafter and gap pass | Drafter Opus 5.5 (Claude Code); gap pass on Codex | Run 2026-11-15 |
 
 ## 6. Task templates
 
@@ -321,152 +338,14 @@ this document; the contract does not fix it):
 Use empty lists when there is nothing to report. Write no other file.
 ```
 
-### T3: generator (prompt only)
+### T3–T7: generation, repair, inventory, judge packets A and B
 
-```text
-TASK: answer the request in your input exactly as it asks.
-
-Your only input is the contents of prompt.txt, which the launcher gives you.
-You have no tools. You may not read files, search, or call other models or APIs.
-Reply with the JSON object only. No commentary, no notes before or after it.
-The launcher captures your reply. Do not write any file.
-```
-
-### T4: format repair (raw answer and validator error only)
-
-```text
-TASK: fix only the format of a reply that failed validation.
-
-You may read: the reply (raw.txt) and the validator error below. Nothing else.
-You must NOT read: prompt.txt, the transcript, the gold, any other attempt, any
-judgment or report.
-Do not call other models or APIs. You have no tools besides this input.
-
-Change format only: JSON syntax, code fences, brackets and commas, a field's type,
-or a single value the error names (for example a timestamp in the wrong form).
-For a named value, change only what the error names, as little as possible.
-Never change any wording in the recap or in notes. Do not add, remove or reorder
-entities, claims or sentences.
-
-Validator error:
-<VALIDATOR_ERROR_TEXT>
-
-Reply with the repaired JSON object only. The launcher writes it to repair.raw.txt.
-```
-
-### T5: claim inventory (output only, no transcript)
-
-```text
-TASK: list the checkable claims in one anonymous output. Output file: inventory.json.
-
-You may read: <GRADING_DIR>/output.json only.
-You must NOT read: the transcript, gold, rubric, any judgment file, any exchange
-file, any attempt folder, the identity map, any usage file, any other folder.
-Do not call other models or APIs.
-
-Split the recap and each entity note into sentences. Each sentence must be
-covered by a span of the same location. A span is an exact substring of that
-location's text, and the span and the sentence must contain each other.
-A sentence that makes no checkable claim gets kind "not_claim" with its own span.
-Each checkable sentence gets kind "claim".
-
-Locations: "recap", or "entity:<i>" where i is the 0-based position of the entity
-in the output's entities list.
-Group: claims that say the same thing, across recap and notes, share one group name.
-A claim and its contradiction get different group names.
-
-Output shape:
-{
-  "output_sha256": "<copy from task message>",
-  "config": {<copy from task message>},
-  "claims": [{"id": "C001", "loc": "recap", "span": "...", "group": "g01", "kind": "claim" | "not_claim"}]
-}
-Write no other file.
-```
-
-### T6: judge packet A (factual claims and citation locators, transcript only, NO gold)
-
-```text
-TASK: judge the factual claims and citation locators of one anonymous output,
-against the transcript only.
-
-You may read: <GRADING_DIR>/output.json, <GRADING_DIR>/inventory.json, and the
-transcript (<CASE_DIR>/dialogue.txt).
-You must NOT read: gold/, any rubric, any other judge's file (A., B. or .x. files),
-exchange/, private/, any attempt folder, any usage file, any other folder.
-Do not call other models or APIs. You are not told which model made this output.
-Do not guess.
-
-Claims: judge each item in inventory.json with kind "claim", using one verdict:
-- "supported": the transcript supports it. A faithfully reported belief or rumour is "supported".
-- "contradicted": the transcript says the opposite.
-- "unsupported": the transcript does not support it. Being absent from what you
-  know is NOT a reason for "unsupported". Only the transcript counts.
-- "unresolved": you cannot decide from the transcript.
-Claims in one group must get the same verdict; if you think they differ, say so in why.
-
-Locators: for each emitted entity (index i), judge its citation timestamp:
-- "supported": a passage relevant to the entity or event starts in the cited segment,
-  or in the two segments before or after it.
-- "not_supported": no such passage.
-- "unresolved": unclear.
-
-For every item give "segments" (the segment ids you relied on) and "why" (one or two sentences).
-
-Output: one file, <GRADING_DIR>/A.<YOUR_JUDGE_ID>.json. Shape:
-{
-  "binds": {"output_sha256": "...", "inventory_sha256": "...", "source_sha256": "...", "rubric_sha256": "..."},
-  "judge": {"host": "...", "model": "...", "effort": "...", "prompt_sha256": "..."},
-  "claims":   {"<claim id>":    {"verdict": "...", "segments": ["S012"], "why": "..."}},
-  "locators": {"<entity index>": {"verdict": "...", "segments": ["S012"], "why": "..."}}
-}
-Copy "binds" and "judge" from the task message. Allowed claim verdicts: supported,
-contradicted, unsupported, unresolved. Allowed locator verdicts: supported,
-not_supported, unresolved. Write no other file.
-```
-
-### T7: judge packet B (coverage, placement, entities, critical rules, against gold)
-
-```text
-TASK: judge one anonymous output against the approved gold and the transcript.
-Judge facts, note placement, entity records and critical rules.
-
-You may read: <GRADING_DIR>/output.json, <CASE_DIR>/gold/v<N>.json (approved gold),
-and the transcript (<CASE_DIR>/dialogue.txt).
-You must NOT read: any other file in the case folder, inventory.json, any A. file,
-any .x file, exchange/, private/, any attempt folder, any usage file, any other folder.
-Do not call other models or APIs. You are not told which model made this output.
-
-1. Facts (each gold fact id): "present" (stated, with its material qualifiers),
-   "partial" (stated, a material qualifier missing), "absent", "conflicting"
-   (the output says the opposite), "unresolved". Give "spans" (exact quotes from
-   output.json) and "why".
-2. Note requirements (each req id): "present" (the fact is in a note of the target
-   record), "absent", "wrong_entity" (the fact is in a note of another record),
-   "unresolved". "entity_index" = the index of the record where you found it, or null.
-3. Emitted entities (index i): "match" is one of "gold:<entity id>" (the same
-   entity as a gold entity, aliases included), "extra_supported" (a real entity
-   not in gold, with transcript evidence), "duplicate_of:<index>" (the same as
-   an earlier record), "unsupported", "unresolved". "type_ok": the record's type is
-   in the gold entity's accepted list. "subtype_ok": the subtype is in that list;
-   if the gold entity has no subtype list, set true. Give "segments".
-4. Critical rules (each rule id): "violated", "not_violated", "unresolved", with
-   "spans" and "why".
-
-Output: one file, <GRADING_DIR>/B.<YOUR_JUDGE_ID>.json. Shape:
-{
-  "binds": {"output_sha256": "...", "source_sha256": "...", "rubric_sha256": "...", "gold_sha256": "..."},
-  "judge": {"host": "...", "model": "...", "effort": "...", "prompt_sha256": "..."},
-  "facts":    {"<fact id>": {"verdict": "...", "spans": ["..."], "why": "..."}},
-  "notes":    {"<req id>":  {"verdict": "...", "entity_index": 0, "why": "..."}},
-  "entities": {"<index>":   {"match": "...", "type_ok": true, "subtype_ok": true, "segments": ["S012"]}},
-  "critical": {"<rule id>": {"verdict": "...", "spans": ["..."], "why": "..."}}
-}
-Copy "binds" and "judge" from the task message. Allowed fact verdicts: present,
-partial, absent, conflicting, unresolved. Note verdicts: present, absent,
-wrong_entity, unresolved. Critical verdicts: violated, not_violated, unresolved.
-Write no other file.
-```
+These run through the launcher and live as constants in `bench_launch.PROMPTS`, so each
+template's hash goes into every judgment's `judge.prompt_sha256` (a text file would change
+bytes with line-ending conversion). Generation (T3) sends the case's `prompt.txt` unchanged.
+Differences from the earlier hand-run templates: inputs are inlined instead of read from
+files; the inventory worker gets sentences already split and numbered by Python and only
+labels kind and group; Python writes `binds` and the judge header, never the model.
 
 ### T8: evidence exchange (other judge's reasons only, one revision)
 
@@ -621,9 +500,9 @@ The report prints this list in every report.
 
 These points are not settled by the sources. Decide them before the phase that needs them.
 
-1. Exact headless flags for Claude Code and Codex. Gate 0.
-2. Drafter and gap-pass models. Gate 0.
-3. Codex judge model and effort, and the Claude judge's effort. Gate 1.
+1. Settled: headless flags (section 5, pinned by tests).
+2. Settled: drafter and gap-pass models (section 5).
+3. Settled: judge models and efforts (section 5, `bench_config.json`).
 4. The gap check against the 20 old audit probes (plan Phase 2, step 3). No command exists yet.
 5. The shape of `gap_objections.json` is defined in T2 here, not in the sources.
 6. The exchange file (`exchange/`) holds segments and reasons but not the item text. Template T8 assumes the coordinator adds the item text.
@@ -633,4 +512,40 @@ These points are not settled by the sources. Decide them before the phase that n
 10. Reliability across repeats: settled. A configuration with any failed, critical or non-official attempt is not eligible, so it can be neither winner.
 11. The plan asks for "lower bound" labels on partial costs. The contract returns `None` for any unknown figure.
 12. The repair similarity check: the plan compares recap and notes only; the contract compares the whole output's letters and digits.
-13. Price file location and naming (the plan suggests `prices/<date>.json`).
+13. Settled: prices live in `bench_config.json` under `prices.rows`, one dated row per exact model.
+
+## 12. Unattended runs and history
+
+`score` (and therefore every `grade` and `run`) appends one row per configuration to
+`<root>/history.jsonl` and replaces the rows of the same run when it is re-scored. A row
+holds labels, scores as `[low, high]`, per-judge F and Q, status, costs and a
+**comparability key**: hashes of gold, rubric, case prompt, judge headers and inventory
+header. Rows are only compared inside one key; a changed judge prompt starts a new table.
+Rows never contain campaign text.
+
+```powershell
+.venv/Scripts/python.exe extraction_benchmark.py leaderboard --out ../../docs/benchmarks/extraction.md
+```
+
+Scheduled runs use Windows Task Scheduler, because the subscription logins and the private
+data are on this machine. Register once, in your own logged-in session:
+
+```powershell
+$kb = "C:\dev\lindo-lauts-notebook\pnp-knowledge\services\kb"
+Register-ScheduledTask -TaskName pnp-bench `
+  -Action (New-ScheduledTaskAction -Execute "$kb\.venv\Scripts\python.exe" -Argument "bench_launch.py run --arms <champion>,<challenger>" -WorkingDirectory $kb) `
+  -Trigger (New-ScheduledTaskTrigger -Daily -At 3am) `
+  -Settings (New-ScheduledTaskSettingsSet -StartWhenAvailable -MultipleInstances IgnoreNew -ExecutionTimeLimit (New-TimeSpan -Hours 6))
+```
+
+- The run id defaults to the ISO week (`auto-2026-W47`): the daily trigger resumes the
+  week's run until it is complete, then launches nothing until the next week.
+- The task runs only while you are logged on (a locked screen is fine), which is what gives
+  it the subscription logins. Keep API keys out of your permanent environment: a run aborts
+  if one is set.
+- The task never touches git. Publishing is the `leaderboard --out` line above, reviewed
+  and committed by hand. A line `REGRESSION:` in the task's output means a configuration
+  scored outside the previous week's bounds.
+- Pick the two scheduled arms after the first graded run: the best-F subscription arm and
+  the cheapest arm within 2.0 F points. Two arms cost about 7 Claude and 5 Codex calls a
+  week (2 generations, 2 inventories, 4 packet A, 4 packet B).

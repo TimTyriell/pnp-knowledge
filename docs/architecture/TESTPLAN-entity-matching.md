@@ -1,6 +1,6 @@
 # Test plan — entity matching, measured before it is built
 
-**Status:** planned, 2026-07-29. Nothing implemented; no pipeline code changes.
+**Status:** planned 2026-07-29; measured 2026-09-22 (see [Results](#results)). No pipeline code changes.
 **Decides:** whether an alias-closure and/or phonetically normalised matcher
 would have found the merges that were written by hand, and at which threshold.
 **Related:** [IMPROVEMENTS.md](IMPROVEMENTS.md) I-001, I-002;
