@@ -9,6 +9,21 @@
 | Cost | $0; warm re-emit **HUMAN RUN** |
 | Size | M |
 
+**Status 2026-11-18: HUMAN RUN steps 1–4 done; step 4's warm run pending.**
+Code in #27 and #49 (`sync_roster.py` follows `merge:` rules;
+`PLAYER_NAME_BASELINE = 89`). Bundle #4: `roster.yaml` (22 of 26 rows
+matched), `merge: kipp → characters/kip`, seven player-name aliases blocked.
+The fields reach Character files on the next warm `pnp run`.
+
+Rows left `concept_id: null` on purpose:
+- **Miqo** — GM 2026-11-18: Miqo and Miko are **two characters**, not two
+  spellings (supersedes *Why* below). `characters/miqo` sits in `retired:`
+  until it is mentioned again.
+- **Dot, Gnarf Velkrum** (Team-C) — only in pnp-crawl's roster; no
+  transcript or concept names them.
+- **Oma** (willauch) — which Oma is meant depends on context; no name rule
+  fits. Left to synthesis.
+
 ## Goal
 
 1. Generate a committed `knowledge/roster.yaml` with **in-world** facts per

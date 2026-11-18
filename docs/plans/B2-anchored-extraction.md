@@ -7,6 +7,10 @@
 | Depends on | B1 (uids: the re-extraction must not detach rules), T3 (`RULES_GLOSSARY`), T5 (frozen glossary file), A5/B3 (to measure before/after) |
 | Cost | **~$6.50 off-peak full re-extraction plus re-synthesis. HUMAN RUN, budgeted, announced** |
 | Size | M code, L operation |
+| Includes | **[O8](O8-vocabulary-v2.md)** — vocabulary v2 rides this version bump (see *O8 in this branch*) |
+
+**Status 2026-11-18: not started.** B1 and T8 code are in; start once B1's
+HUMAN RUN is done (rules keyed on uids), so this re-extraction cannot detach them.
 
 ## Goal
 
@@ -74,7 +78,30 @@ is 585 rules, 624 retired ids and the churn guards. The glossary prefix is
 8. After: run `rules_doctor.py` and delete rules the glossary made inert.
    Report how many.
 
+## O8 in this branch
+
+[O8](O8-vocabulary-v2.md) changes `SUBTYPES`, adds `EntityMention.ancestry`
+and edits `EXTRACT_SYSTEM`. All of that is part of the extract fingerprint,
+so it ships here and nowhere else.
+
+- Do O8's steps 1–9 together with steps 2–3 above, **before** computing the
+  new pin: one fingerprint, one `EXTRACT_PINS["7"]`, one bump.
+- **$0 dry run, before step 7.** With the v7 prompt on this branch, run
+  extraction in agent mode (`pnp-agent-run` skill, `--no-api`) for three
+  sessions and count. Go when: event `Sonstiges` ≤ 15 %; NPC subtype
+  non-empty ≥ 95 %; every rostered character has an ancestry; no subtype or
+  ancestry outside its list. Fix the prompt now — after the corpus run, a
+  wording change is another bump.
+- **E1 gold.** The `accepted.subtypes` lists for Event and NPC entities need
+  the new labels: a new gold version, human re-approval (E1's gate), case
+  files rebuilt for the v7 prompt.
+- **After step 7.** `pnp state --refresh-glossary`, then the state pass. It
+  re-runs for every session anyway (the glossary text keys its cache), and
+  takes O8's `STATE_PROMPT_VERSION = "2"` with it. **HUMAN RUN**, ~$2–4, or
+  agent mode.
+
 ## Done when
 
+- [ ] O8's *Done when* holds.
 - [ ] Before/after table: entity count, duplicates (`dup_doctor.py`), grounding near-ratio, rules dead/alive, player-name ratchet.
 - [ ] Churn handled via uids; no wiki page detached (pnp-export-data stage 02 plan unchanged except intended merges).

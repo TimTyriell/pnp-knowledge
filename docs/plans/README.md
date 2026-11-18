@@ -58,6 +58,21 @@ orchestrator on a bundle-repo branch, not by the code worker.
 | O2 | [O2-thread-hygiene.md](O2-thread-hygiene.md) | `feat/ontology-hygiene` | O3 | $0 | agent |
 | O1 | [O1-demote-single-session-concepts.md](O1-demote-single-session-concepts.md) | `feat/ontology-hygiene` | O2 | $0 code; warm re-emit (human, `--allow-prune`) | agent + human |
 | O5 | [O5-episode-metadata-sync.md](O5-episode-metadata-sync.md) | — (data step) | — | $0 | human |
+| O8 | [O8-vocabulary-v2.md](O8-vocabulary-v2.md) | none — lands on B2's `feat/anchored-extraction` | B2, T8 run | $0 on top of B2 | agent + GM (one question) |
+
+### The road to the v7 re-extraction (status 2026-11-18)
+
+O8 changes the extraction prompt, so it waits for B2's bump, and B2 waits for
+B1 and T8. In order:
+
+| Step | State | Next action |
+|---|---|---|
+| O-series | code #47; rules bundle #5 merged | warm `pnp run --allow-prune`, tag |
+| T8 | code #27 + #49; roster + rules bundle #4 merged | same warm run writes the fields; lower the baseline after |
+| B1 | code #50 (ADR-007) + pnp-export-data #12 | same warm run mints uids → `migrate_rules_to_uids.py --write` → warm run → `wiki_pages.toml` to uids |
+| B2 + O8 | not started | agent, then the budgeted HUMAN RUN |
+
+One warm run covers the next action of the first three rows.
 
 Cross-repo plans live in their own repos: `pnp-crawl/docs/plans/`,
 `pnp-export-data/docs/plans/`.
