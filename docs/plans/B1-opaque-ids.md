@@ -9,11 +9,10 @@
 | Size | L, cross-repo |
 | Gate | **ADR-007 must be accepted by the human before step 3** |
 
-**Status 2026-11-16: not started.** No `uid` exists in code, registry or
-frontmatter. This plan was written before S1, C1, D1 and the O-series; the
-section *Amendments* below brings it up to date. Where the two disagree, the
-amendments win. It also needs the O-series bundle run merged first: that run
-brings `keep_concepts:` and `thread_rules.keep_apart`, which B1 re-keys.
+**Status 2026-11-18: code done** — #50 (ADR-007, all five amendments below)
+and pnp-export-data #12. Only the HUMAN RUN is left. This plan predates S1,
+C1, D1 and the O-series; where it and the amendments disagree, the amendments
+(and ADR-007) win.
 
 ## Amendments (2026-11-16)
 

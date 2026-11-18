@@ -9,8 +9,8 @@
 | Size | M code, L operation |
 | Includes | **[O8](O8-vocabulary-v2.md)** — vocabulary v2 rides this version bump (see *O8 in this branch*) |
 
-**Status 2026-11-16: not started.** Blocked on B1 (not started) and on T8's
-HUMAN RUN (`knowledge/roster.yaml` does not exist yet).
+**Status 2026-11-18: not started.** B1 and T8 code are in; start once B1's
+HUMAN RUN is done (rules keyed on uids), so this re-extraction cannot detach them.
 
 ## Goal
 

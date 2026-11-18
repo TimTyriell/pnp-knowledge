@@ -9,21 +9,20 @@
 | Cost | $0; warm re-emit **HUMAN RUN** |
 | Size | M |
 
-**Status 2026-11-16: code merged (#27), HUMAN RUN not done.** In `main`:
-`roster.py`, `sync_roster.py`, `player_alias_doctor.py`,
-`validate.player_name_hits`, `emit_entity(extra_frontmatter=)`. Still open,
-all of it the *HUMAN RUN* section below:
+**Status 2026-11-18: HUMAN RUN steps 1–4 done; step 4's warm run pending.**
+Code in #27 and #49 (`sync_roster.py` follows `merge:` rules;
+`PLAYER_NAME_BASELINE = 89`). Bundle #4: `roster.yaml` (22 of 26 rows
+matched), `merge: kipp → characters/kip`, seven player-name aliases blocked.
+The fields reach Character files on the next warm `pnp run`.
 
-- pnp-crawl's `export_roster.py` exists but was never run (no
-  `groups/roster_public.json`); the Miqo/Miko ruling (C4's gate) is open.
-- `knowledge/roster.yaml` does not exist, so no Character carries `team`,
-  `class`, `active_since` or `active_until`.
-- `PLAYER_NAME_BASELINE` is `None`; the ratchet test skips.
-
-Expect unmatched rows in step 2: `characters/` holds duplicates (Cookie ×4,
-Sage / Sange, and concepts named after a VTT default "<player>'s <class>")
-and NPCs filed as characters.
-B2 needs `roster.yaml` for its prompt.
+Rows left `concept_id: null` on purpose:
+- **Miqo** — GM 2026-11-18: Miqo and Miko are **two characters**, not two
+  spellings (supersedes *Why* below). `characters/miqo` sits in `retired:`
+  until it is mentioned again.
+- **Dot, Gnarf Velkrum** (Team-C) — only in pnp-crawl's roster; no
+  transcript or concept names them.
+- **Oma** (willauch) — which Oma is meant depends on context; no name rule
+  fits. Left to synthesis.
 
 ## Goal
 
