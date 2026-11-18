@@ -106,3 +106,24 @@ def score(labels: list[dict]) -> dict:
         "by_type": {k: block(v) for k, v in sorted(by_type.items())},
         "by_tier": {k: block(v) for k, v in sorted(by_tier.items())},
     }
+
+
+def agreement(a: dict[str, str], b: dict[str, str]) -> dict:
+    """Raw agreement and Cohen's kappa between two labellers, over ids both labelled.
+
+    Kappa is reported because "supported" dominates real labels: a judge that says
+    "supported" to everything agrees with a human most of the time and is still useless.
+    Kappa corrects for that chance agreement. ``None`` when undefined (no shared ids, or
+    both labellers used one and the same label throughout).
+    """
+
+    ids = sorted(k for k in a.keys() & b.keys() if str(a[k] or "").strip() and str(b[k] or "").strip())
+    n = len(ids)
+    if not n:
+        return {"n": 0, "agree": 0, "rate": None, "kappa": None}
+    agree = sum(a[k] == b[k] for k in ids)
+    observed = agree / n
+    labels = {a[k] for k in ids} | {b[k] for k in ids}
+    expected = sum((sum(a[k] == x for k in ids) / n) * (sum(b[k] == x for k in ids) / n) for x in labels)
+    kappa = None if expected == 1 else (observed - expected) / (1 - expected)
+    return {"n": n, "agree": agree, "rate": observed, "kappa": kappa}

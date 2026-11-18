@@ -1,0 +1,17 @@
+{
+  "_comment": "Benchmark launcher config (docs/plans/E2-subscription-launcher.md). Judges: two model families, decided 2026-11-15 (Claude judge, inventory) and 2026-11-18 (Codex judge). Arms: the E1 six-arm screen; check the luna model id before Gate 3. prices.rows: one row per exact model, filled by the human with source_url and retrieved date (EXTRACTION-BENCHMARK.md section 8); empty means cost 'unknown', never 0.",
+  "judges": [
+    {"id": "opus", "host": "claude-code", "model": "claude-opus-5-5", "effort": "high"},
+    {"id": "sol", "host": "codex", "model": "gpt-6.1-sol", "effort": "high"}
+  ],
+  "inventory": {"host": "claude-code", "model": "claude-opus-5-5", "effort": "high"},
+  "arms": [
+    {"label": "terra-medium", "host": "codex", "model": "gpt-6.1-terra", "effort": "medium", "repeats": 1},
+    {"label": "terra-high", "host": "codex", "model": "gpt-6.1-terra", "effort": "high", "repeats": 1},
+    {"label": "sol-high", "host": "codex", "model": "gpt-6.1-sol", "effort": "high", "repeats": 1},
+    {"label": "luna-max", "host": "codex", "model": "gpt-6.1-luna", "effort": "max", "repeats": 1},
+    {"label": "sonnet-medium", "host": "claude-code", "model": "claude-sonnet-5-5", "effort": "medium", "repeats": 1},
+    {"label": "opus-high", "host": "claude-code", "model": "claude-opus-5-5", "effort": "high", "repeats": 1}
+  ],
+  "prices": {"rows": []}
+}
