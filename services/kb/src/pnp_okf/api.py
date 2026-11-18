@@ -163,9 +163,11 @@ class BundleReader:
         index: dict[str, str] = {}
         for cid in self.concept_paths(ref):
             fm, _ = self.read(cid, ref)
-            eid = str(fm.get("id") or "").strip()
-            if eid:
-                index[eid] = cid
+            # Typed id (NPC_HEXE) and, since ADR-007, the opaque uid (c_k3m9q2xa).
+            for key in ("id", "uid"):
+                value = str(fm.get(key) or "").strip()
+                if value:
+                    index[value] = cid
         return index
 
     def resolve_concept(self, cid: str, ref: str | None) -> str:
@@ -306,8 +308,8 @@ def create_app(bundle_dir: Path | None = None) -> FastAPI:
                 "title": fm.get("title"),
                 "description": fm.get("description"),
             }
-            # Thread fields only when present, so other consumers see no new nulls.
-            for key in ("kind", "thread_status", "dormant"):
+            # Optional fields only when present, so other consumers see no new nulls.
+            for key in ("uid", "kind", "thread_status", "dormant"):
                 if fm.get(key) is not None:
                     row[key] = fm[key]
             results.append(row)

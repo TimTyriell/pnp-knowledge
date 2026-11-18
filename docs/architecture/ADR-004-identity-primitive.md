@@ -1,6 +1,6 @@
 # ADR-004 — Concept identity stays derived from the name, for now
 
-**Status:** Accepted, 2026-09-07
+**Status:** Accepted, 2026-09-07. **Superseded by [ADR-007](ADR-007-opaque-ids.md)** once that is accepted.
 **Supersedes nothing. Related:** ADR-001 (OKF-in-git as system of record)
 
 ## Context

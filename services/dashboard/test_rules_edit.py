@@ -176,3 +176,38 @@ if __name__ == "__main__":
                 failures += 1
                 print(f"FAIL  {name}: {exc}")
     sys.exit(1 if failures else 0)
+
+
+# --- B1 / ADR-007: rules migrated to uids ------------------------------------
+
+MIGRATED = """\
+merge:
+  hack: npcs/lenra
+canonical_name:
+  c_aaaaaaaa: Landra, die Hag  # npcs/lenra
+important:
+- c_aaaaaaaa  # npcs/lenra -- GM 2026-08
+"""
+UID_OF = {"npcs/lenra": "c_aaaaaaaa", "npcs/neu": "c_bbbbbbbb"}
+
+
+def test_migrated_rules_are_edited_under_their_uid():
+    rules = yaml.safe_load(MIGRATED)
+    renamed, _ = apply_edits(
+        MIGRATED, [{"op": "rename", "concept_id": "npcs/lenra", "name": "Lenra"}], rules, {}, UID_OF
+    )
+    assert "  c_aaaaaaaa: Lenra  # npcs/lenra" in renamed
+    assert "npcs/lenra: Lenra" not in renamed  # no concept-id twin
+    dropped, _ = apply_edits(
+        MIGRATED, [{"op": "set_important", "concept_id": "npcs/lenra", "important": False}], rules, {}, UID_OF
+    )
+    assert "c_aaaaaaaa  # npcs/lenra -- GM" not in dropped.split("unimportant:")[0]
+    assert "- c_aaaaaaaa  # npcs/lenra" in dropped.split("unimportant:")[1]
+
+
+def test_concept_not_yet_in_the_file_keeps_its_concept_id():
+    rules = yaml.safe_load(MIGRATED)
+    new_text, _ = apply_edits(
+        MIGRATED, [{"op": "set_important", "concept_id": "npcs/neu", "important": True}], rules, {}, UID_OF
+    )
+    assert "- npcs/neu" in new_text

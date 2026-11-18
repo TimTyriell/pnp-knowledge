@@ -231,7 +231,8 @@ concept_id = TYPE_DIR[type] + "/" + slugify(apply_spellings(llm_name))
 
 - `slugify` — `okf.py:22`. Lowercase, umlaut transliteration (ä→ae, ö→oe, ü→ue, ß→ss), non-alphanumerics → `_`.
 - `_default_concept_id` — `resolve.py:30`. Applies `spelling:` rules **before** slugify.
-- The typed id in frontmatter (`NPC_HEXE`) is `ID_PREFIX[type] + "_" + slug.upper()` (`models.py:222`) — **also derived, therefore equally unstable.** There is no stable id in this system.
+- The typed id in frontmatter (`NPC_HEXE`) is `ID_PREFIX[type] + "_" + slug.upper()` (`models.py:222`) — **also derived, therefore equally unstable.**
+- **The stable id is the `uid`** (B1, [ADR-007](ADR-007-opaque-ids.md)): `c_<8 base32>`, minted once by `resolve.assign_uids` right after `resolve_entities`, stored in the registry (`entities[]`, `retired[]`) and in frontmatter after `id`. A concept keeps the uid its id already has; a new id inherits the uid of a previously live concept absent this run when they share a name and identity space; otherwise a fresh one. The rename guard compares uids. Rules may name a concept by uid (`_registry_data` rewrites them via `rekey_uids`); `merge:`/`split:` values stay concept ids. The uid is deliberately **not** a `CanonicalEntity` field: synthesis cache keys hash `entity.model_dump()`, so a new field would re-key every cached synthesis.
 
 ### Resolution order (`resolve_entities`, `resolve.py:592`)
 
