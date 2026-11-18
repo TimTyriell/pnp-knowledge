@@ -422,9 +422,11 @@ def test_positional_source_ids_only_go_down():
 
 # Ratchet: real player names in titles/aliases/prose (T8, D1). The name list
 # is private (pnp-crawl groups/, via PNP_ROSTER_PRIVATE) and never committed,
-# so this runs locally only. Baseline is measured in T8 HUMAN RUN step 3;
-# until then it is None and the test skips. Only ever lower this.
-PLAYER_NAME_BASELINE: int | None = None
+# so this runs locally only. Only ever lower this.
+# Measured 2026-11-16 (T8 HUMAN RUN step 3) on bundle main, before the
+# O-series prune and before the T8 alias blocks took effect: 89 hits
+# (79 body, 7 alias, 3 title). Both pending runs can only lower it.
+PLAYER_NAME_BASELINE: int | None = 89
 
 
 def test_player_names_only_go_down():

@@ -78,6 +78,31 @@ def test_build_roster_matches_name_alias_slug_and_sorts(tmp_path: Path):
     assert rows[1]["concept_id"] is None
 
 
+def test_build_roster_follows_a_merge_rule_to_a_character(tmp_path: Path):
+    # The roster's speaker label and the table's spelling can differ ("Kipp" /
+    # "Kip"). The documented fix is a merge: rule, and it must work without a
+    # pipeline run -- the registry only learns an alias from a mention.
+    registry = {"entities": [
+        {"concept_id": "characters/kip", "type": "Character",
+         "canonical_name": "Kip", "aliases": []},
+        {"concept_id": "npcs/oma", "type": "NPC", "canonical_name": "Oma", "aliases": []},
+    ]}
+    export = [
+        {"name": "Kipp", "class": None, "group": "Team-A", "since": None, "until": None},
+        {"name": "Greta", "class": None, "group": "Team-A", "since": None, "until": None},
+        {"name": "Fremd", "class": None, "group": "Team-A", "since": None, "until": None},
+    ]
+    merges = {
+        "kipp": "characters/kip",
+        "greta": "npcs/oma",            # not a Character: never a roster target
+        "fremd": "characters/missing",  # not in the registry: ids are not invented
+    }
+    rows = build_roster(export, registry, Episodes(teams={"Team-A": "A"}), merges)
+    assert {r["name"]: r["concept_id"] for r in rows} == {
+        "Kipp": "characters/kip", "Greta": None, "Fremd": None,
+    }
+
+
 def test_render_has_generated_header_and_round_trips(tmp_path: Path):
     rows = [{"name": "Lindo Laut", "concept_id": "characters/lindo_laut",
              "team": "A", "class": "Fee Barde", "since": None, "until": None}]
