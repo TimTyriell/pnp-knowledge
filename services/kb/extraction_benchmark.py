@@ -719,6 +719,9 @@ def _check_judgment_file(path: Path, packet: str, doc: dict) -> None:
                 )
                 if not ok:
                     raise BenchError(f"{path.name}: entities {item_id}: bad match {match!r}")
+                # judgment_items reads both flags with item[...]: refuse here, not as a KeyError mid-score.
+                if not (isinstance(item.get("type_ok"), bool) and isinstance(item.get("subtype_ok"), bool)):
+                    raise BenchError(f"{path.name}: entities {item_id}: type_ok and subtype_ok must be true/false")
             elif item.get("verdict") not in _VOCAB[section]:
                 raise BenchError(f"{path.name}: {section} {item_id}: bad verdict {item.get('verdict')!r}")
 
@@ -1384,6 +1387,7 @@ def _score_attempt(
         "scores": None,
         "critical": False,
         "per_judge_Q": {},
+        "per_judge_F": {},
         "cost": attempt_cost(attempt_dir, prices),
         "grading_cost": _grading_cost(folder, prices),
     }
@@ -1425,21 +1429,24 @@ def _score_attempt(
     if scores["open_items"]:
         reasons.append(f"{len(scores['open_items'])} open item(s)")
 
-    # Each judge alone, counted twice so resolve() sees two agreeing judges.
-    per_judge = {}
+    # Each judge alone, counted twice so resolve() sees two agreeing judges. F is kept beside Q:
+    # it needs no gold, so per-judge F is the column that shows self-preference (E2).
+    per_judge_q, per_judge_f = {}, {}
     for judge in sorted(set(judg_a) | set(judg_b)):
         a = judg_a.get(judge)
         b = judg_b.get(judge)
         twin_a = {"a": a, "b": a} if a is not None else {}
         twin_b = {"a": b, "b": b} if b is not None else {}
-        per_judge[judge] = score_output(extraction, gold, rubric, inventory, twin_a, twin_b, {})["Q"]
+        alone = score_output(extraction, gold, rubric, inventory, twin_a, twin_b, {})
+        per_judge_q[judge], per_judge_f[judge] = alone["Q"], alone["F"]
 
     record.update(
         status="provisional" if reasons else "official",
         reasons=reasons,
         scores=scores,
         critical=bool(scores["critical"]),
-        per_judge_Q=per_judge,
+        per_judge_Q=per_judge_q,
+        per_judge_F=per_judge_f,
     )
     return record
 
@@ -1532,6 +1539,8 @@ def score_run(run_dir: Path, case_dir: Path, prices: dict | None, baseline: str 
     }
     write_json(run_dir / "report.json", report)
     (run_dir / "report.md").write_text(render_report(report), encoding="utf-8")
+    # Every scoring path records history, so a manual re-score after adjudication counts too.
+    record_history(run_dir.parent.parent, history_rows(report, run_dir, case_dir))
     return report
 
 
@@ -1670,6 +1679,197 @@ def render_report(report: dict) -> str:
     lines += open_rows or ["No entries."]
 
     lines += ["", "## Limits", ""] + [f"- {limit}" for limit in report["limits"]]
+    return "\n".join(lines) + "\n"
+
+
+# --- 12. History and leaderboard (E2) ----------------------------------------------------
+# report.json is overwritten per run; history.jsonl keeps one row per (run, label) so runs can
+# be compared. Rows are built field by field: they get published, the inputs do not, so no
+# campaign text may reach them. Only rows with the same comparability key (gold, rubric,
+# prompt, judge and inventory hashes) are compared with each other.
+
+HISTORY_FILE = "history.jsonl"
+
+
+def _mean_pair(comps: list) -> list[float] | None:
+    comps = [c for c in comps if c is not None]
+    if not comps:
+        return None
+    return [sum(c["low"] for c in comps) / len(comps), sum(c["high"] for c in comps) / len(comps)]
+
+
+def history_rows(report: dict, run_dir: Path, case_dir: Path) -> list[dict]:
+    gold, approval_reason = _gold_for_scoring(case_dir)
+    judges: set[str] = set()
+    inventories: set[str] = set()
+    for folder in _graded_folders(run_dir):
+        for packet in ("A", "B"):
+            judges |= {judge_hash(j["judge"]) for j in load_judgments(folder, packet, overlay=False).values()}
+        if (folder / "inventory.json").is_file():
+            inventories.add(judge_hash(read_json(folder / "inventory.json").get("config", {})))
+    key = {
+        "gold": hash_obj(gold)[:12],
+        "rubric": hash_obj(read_json(_rubric_path(case_dir)))[:12],
+        "prompt": read_json(case_dir / "case_manifest.json")["prompt_sha256"][:12],
+        "judges": sorted(judges),
+        "inventory": sorted(inventories),
+    }
+    today = datetime.date.today().isoformat()
+    rows = []
+    for config in report["configurations"]:
+        attempts = [a for a in report["attempts"] if a["label"] == config["label"]]
+        meta = read_json(run_dir / "attempts" / attempts[0]["attempt"] / "attempt.json")
+        scored = [a["scores"] for a in attempts if a["scores"]]
+        statuses = {a["status"] for a in attempts}
+        by_judge = {
+            judge: {
+                "F": _mean_pair([a["per_judge_F"].get(judge) for a in attempts]),
+                "Q": _mean_pair([a["per_judge_Q"].get(judge) for a in attempts]),
+            }
+            for judge in sorted({j for a in attempts for j in a["per_judge_F"]})
+        }
+        grading = [a["grading_cost"]["standard"] for a in attempts]
+        rows.append(
+            {
+                "run": report["run"],
+                "date": today,
+                "case": report["case"],
+                "label": config["label"],
+                "kind": meta["kind"],
+                "host": meta.get("host"),
+                "model": meta.get("model"),
+                "effort": meta.get("effort"),
+                "key": key,
+                "gold_approved": approval_reason == "",
+                "n_attempts": config["n_attempts"],
+                "n_valid": config["n_valid"],
+                "status": statuses.pop() if len(statuses) == 1 else "provisional",
+                **{k: _mean_pair([s[k] for s in scored]) for k in ("Q", "F", "C", "N", "E", "G")},
+                "by_judge": by_judge,
+                "critical": sum(1 for a in attempts if a["critical"]),
+                "cost": config["cost_standard"],
+                "grading_cost": None if None in grading else sum(grading),
+                "currency": report["currency"],
+            }
+        )
+    return rows
+
+
+def read_history(root: Path) -> list[dict]:
+    path = root / HISTORY_FILE
+    if not path.is_file():
+        return []
+    return [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+
+
+def record_history(root: Path, rows: list[dict]) -> None:
+    runs = {r["run"] for r in rows}
+    kept = [r for r in read_history(root) if r["run"] not in runs]
+    root.mkdir(parents=True, exist_ok=True)
+    text = "".join(json.dumps(r, ensure_ascii=False, sort_keys=True) + "\n" for r in kept + rows)
+    (root / HISTORY_FILE).write_text(text, encoding="utf-8")
+
+
+def _pair_text(pair) -> str:
+    if pair is None:
+        return "—"
+    low, high = pair
+    return f"{low:.1f}" if low == high else f"{low:.1f}–{high:.1f}"
+
+
+def _key_id(row: dict) -> str:
+    return canon(row["key"]).decode("utf-8")
+
+
+def _deltas(rows: list[dict]) -> dict[tuple[str, str], str]:
+    # An arrow only when the bounds do not overlap with the previous run of the same label and
+    # key. A bounds check, not a significance test: run-to-run sampling noise is not modelled.
+    out: dict[tuple[str, str], str] = {}
+    series: dict[tuple[str, str], list[dict]] = {}
+    for row in rows:
+        series.setdefault((_key_id(row), row["label"]), []).append(row)
+    for runs in series.values():
+        runs.sort(key=lambda r: (r["date"], r["run"]))
+        for prev, cur in zip(runs, runs[1:], strict=False):
+            marks = []
+            for metric in ("Q", "F"):
+                p, c = prev[metric], cur[metric]
+                if p is None or c is None:
+                    continue
+                if c[1] < p[0]:
+                    marks.append(f"{metric}▼")
+                elif c[0] > p[1]:
+                    marks.append(f"{metric}▲")
+            if marks:
+                out[(cur["run"], cur["label"])] = " ".join(marks)
+    return out
+
+
+def regressions(rows: list[dict], run: str) -> list[str]:
+    return [
+        f"{label}: {delta} versus the previous run of the same configuration"
+        for (r, label), delta in sorted(_deltas(rows).items())
+        if r == run and "▼" in delta
+    ]
+
+
+def _reproduce(run: str, kind: str) -> str:
+    launch = "grade" if kind == "retrospective" else "run"
+    return (
+        f"judged by `bench_launch.py {launch} --run {run} --config bench_config.json`; "
+        f"re-score from stored judgments: `extraction_benchmark.py score --run {run}`"
+    )
+
+
+def render_leaderboard(rows: list[dict]) -> str:
+    deltas = _deltas(rows)
+    groups: dict[str, list[dict]] = {}
+    for row in rows:
+        groups.setdefault(_key_id(row), []).append(row)
+    ordered = sorted(groups.values(), key=lambda g: max((r["date"], r["run"]) for r in g), reverse=True)
+    lines = [
+        "# Extraction benchmark: results",
+        "",
+        "Scores 0–100. `a–b` = bounds while judge disagreements or ungraded packets stay open.",
+        "Rows are comparable only inside one table: each table pins gold, rubric, prompt,",
+        "judge and inventory configurations by hash.",
+    ]
+    for group in ordered:
+        key = group[0]["key"]
+        gold_state = "approved" if group[0]["gold_approved"] else "draft"
+        lines += [
+            "",
+            f"### gold {key['gold']} ({gold_state}) · rubric {key['rubric']} · prompt {key['prompt']} · "
+            f"judges {', '.join(key['judges']) or 'none'} · inventory {', '.join(key['inventory']) or 'none'}",
+            "",
+            "| Run | Date | Label | Model (effort) | Kind | Valid | Q | F | C | N | E | G | F per judge "
+            "| Status | Gen cost | Grading cost | Δ |",
+            "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|",
+        ]
+        group.sort(key=lambda r: (r["date"], r["run"], r["label"]))
+        for r in group:
+            model = f"{r['model']} ({r['effort']})" if r["model"] else "—"
+            per_judge = "; ".join(f"{j} {_pair_text(v['F'])}" for j, v in r["by_judge"].items()) or "—"
+            cells = [
+                r["run"],
+                r["date"],
+                r["label"],
+                model,
+                r["kind"],
+                f"{r['n_valid']}/{r['n_attempts']}",
+                *(_pair_text(r[k]) for k in ("Q", "F", "C", "N", "E", "G")),
+                per_judge,
+                r["status"] + (f", {r['critical']} critical" if r["critical"] else ""),
+                _money(r["cost"], r["currency"]),
+                _money(r["grading_cost"], r["currency"]),
+                deltas.get((r["run"], r["label"]), ""),
+            ]
+            lines.append("| " + " | ".join(cells) + " |")
+        lines.append("")
+        lines += [f"- `{run}`: {_reproduce(run, kind)}" for run, kind in sorted({(r["run"], r["kind"]) for r in group})]
+    lines += ["", "## Limits", ""] + [f"- {limit}" for limit in LIMITS]
+    lines.append("- Δ arrows compare bounds with the previous run of the same configuration; not a significance test.")
+    lines.append("- Inputs (transcript, gold, outputs) are private; the hashes above pin them.")
     return "\n".join(lines) + "\n"
 
 
@@ -1881,6 +2081,15 @@ def _cmd_score(args) -> int:
     return 0
 
 
+def _cmd_leaderboard(args) -> int:
+    root = args.root or bench_root()
+    out = args.out or root / "leaderboard.md"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(render_leaderboard(read_history(root)), encoding="utf-8")
+    print(out)
+    return 0
+
+
 def _cmd_status(args) -> int:
     print(status(args.root or bench_root()))
     return 0
@@ -1949,6 +2158,10 @@ def _build_parser() -> argparse.ArgumentParser:
     p.add_argument("--prices", type=Path, default=None, help="JSON {rows: [price row, ...]}")
     p.add_argument("--baseline", default=None, help="configuration label to compare against")
     p.set_defaults(func=_cmd_score)
+
+    p = sub.add_parser("leaderboard", parents=[common], help="render history.jsonl as a Markdown results table")
+    p.add_argument("--out", type=Path, default=None, help="output file (default: <root>/leaderboard.md)")
+    p.set_defaults(func=_cmd_leaderboard)
 
     p = sub.add_parser("status", parents=[common], help="summarise cases and runs under the root")
     p.set_defaults(func=_cmd_status)

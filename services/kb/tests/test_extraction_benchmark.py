@@ -1349,3 +1349,96 @@ def test_17_full_pass_makes_no_socket_call(tmp_path, monkeypatch):
     (attempt,) = report["attempts"]
     assert attempt["status"] == "official", attempt["reasons"]
     assert attempt["scores"]["Q"]["value"] == 100.0
+
+
+# --- 18. E2: entity flag check, per-judge F, history and leaderboard --------------------
+
+
+def test_18_entity_without_type_flags_is_refused(tmp_path):
+    out = make_graded_run(tmp_path)
+    path = out["grading"] / "B.claude.json"
+    _edit_json(path, lambda d: d["entities"]["0"].pop("type_ok"))
+    with pytest.raises(eb.BenchError, match="type_ok"):
+        eb.load_judgments(out["grading"], "B")
+
+
+def test_18_per_judge_f_is_reported_beside_per_judge_q(tmp_path):
+    out = make_graded_run(tmp_path)
+    (attempt,) = eb.score_run(out["run_dir"], out["case_dir"], None)["attempts"]
+    assert set(attempt["per_judge_F"]) == {"claude", "codex"}
+    assert attempt["per_judge_F"]["claude"]["value"] == 100.0
+
+
+HISTORY_FIELDS = {
+    "run", "date", "case", "label", "kind", "host", "model", "effort", "key", "gold_approved",
+    "n_attempts", "n_valid", "status", "Q", "F", "C", "N", "E", "G", "by_judge", "critical",
+    "cost", "grading_cost", "currency",
+}  # fmt: skip
+
+
+def _history(out: dict) -> list[dict]:
+    path = out["run_dir"].parent.parent / "history.jsonl"
+    return [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines()]
+
+
+def test_18_score_run_records_one_whitelisted_history_row(tmp_path):
+    out = make_graded_run(tmp_path)
+    eb.score_run(out["run_dir"], out["case_dir"], None)
+    (row,) = _history(out)
+    assert set(row) == HISTORY_FIELDS
+    assert set(row["key"]) == {"gold", "rubric", "prompt", "judges", "inventory"}
+    assert (row["label"], row["model"], row["effort"]) == ("arm-alpha", "model-alpha", "effort-alpha")
+    assert row["run"] == "run1" and row["F"] == [100.0, 100.0] and row["gold_approved"] is False
+    assert set(row["by_judge"]) == {"claude", "codex"}
+
+
+def test_18_rescoring_replaces_the_rows_of_that_run(tmp_path):
+    out = make_graded_run(tmp_path)
+    eb.score_run(out["run_dir"], out["case_dir"], None)
+    eb.score_run(out["run_dir"], out["case_dir"], None)
+    assert len(_history(out)) == 1
+
+
+def test_18_history_carries_no_campaign_text(tmp_path):
+    out = make_graded_run(tmp_path)
+    eb.score_run(out["run_dir"], out["case_dir"], None)
+    text = json.dumps(_history(out), ensure_ascii=False)
+    for word in ("Alrik", "Brunhild", "Mühle", "Siegel"):
+        assert word not in text
+
+
+def _row(**over) -> dict:
+    row = {
+        "run": "r1", "date": "2026-11-01", "case": "case", "label": "arm", "kind": "new", "host": "h",
+        "model": "m", "effort": "e", "gold_approved": False, "n_attempts": 1, "n_valid": 1,
+        "status": "provisional", "Q": [80.0, 90.0], "F": [90.0, 90.0], "C": None, "N": None, "E": None,
+        "G": [100.0, 100.0], "by_judge": {"j1": {"F": [90.0, 90.0], "Q": None}}, "critical": 0,
+        "cost": None, "grading_cost": None, "currency": None,
+        "key": {"gold": "g1", "rubric": "r", "prompt": "p", "judges": ["j"], "inventory": "i"},
+    }  # fmt: skip
+    row.update(over)
+    return row
+
+
+def test_18_leaderboard_has_one_table_per_comparability_key():
+    rows = [_row(), _row(run="r2", key={**_row()["key"], "gold": "g2"})]
+    text = eb.render_leaderboard(rows)
+    assert text.count("\n### ") == 2
+    assert "90.0" in text and "80.0–90.0" in text
+
+
+def test_18_leaderboard_marks_a_drop_only_when_bounds_do_not_overlap():
+    old = _row(run="r1", date="2026-11-01")
+    worse = _row(run="r2", date="2026-11-08", F=[70.0, 75.0])
+    close = _row(run="r2", date="2026-11-08", F=[88.0, 92.0])
+    assert "▼" in eb.render_leaderboard([old, worse])
+    assert "▼" not in eb.render_leaderboard([old, close])
+    assert eb.regressions([old, worse], "r2") and not eb.regressions([old, close], "r2")
+
+
+def test_18_cli_leaderboard_writes_the_file(tmp_path):
+    out = make_graded_run(tmp_path)
+    eb.score_run(out["run_dir"], out["case_dir"], None)
+    target = tmp_path / "board.md"
+    assert eb.main(["leaderboard", "--root", str(tmp_path / "bench"), "--out", str(target)]) == 0
+    assert "arm-alpha" in target.read_text(encoding="utf-8")

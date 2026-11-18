@@ -38,6 +38,8 @@ without design decisions. Where a decision *is* needed, the plan says
 | C1 | [C1-cache-in-bundle.md](C1-cache-in-bundle.md) | `feat/cache-in-bundle` | PR #40 merged | $0 code; migration free (human) | agent + human |
 | D1 | [D1-agent-mode.md](D1-agent-mode.md) | `feat/agent-mode` | C1 merged | $0 (subscription) | agent + human (guard, smoke) |
 | E1 | [E1-extraction-golden-benchmark.md](E1-extraction-golden-benchmark.md) | `feat/extraction-golden-benchmark` | — | $0 (subscription runs, human-triggered) | agent + human (gold approval, calibration, runs) |
+| E2 | [E2-subscription-launcher.md](E2-subscription-launcher.md) | `feat/bench-launcher` | E1 | $0 (subscription runs; human or scheduler only) | agent + human (runs, schedule) |
+| E3 | [E3-synthesis-claim-judge.md](E3-synthesis-claim-judge.md) | `feat/bench-launcher` | B3, E2 | $0 (2 subscription calls + 20 human labels) | agent + human (labels) |
 
 ### Ontology hygiene (O-series)
 
