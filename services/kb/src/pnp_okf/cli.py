@@ -426,6 +426,11 @@ def _estimate_run(args: argparse.Namespace) -> int:
         }
         tmap = {t.session_id: t for t in transcripts}
         entities = resolve_entities(extractions, tmap, paths.registry_path)
+        # Same filter as the real run: anchored events and O1-demoted
+        # one-session concepts are session bullets, never synthesized.
+        event_concepts = load_event_concepts(paths.registry_path)
+        keep_concepts = load_keep_concepts(paths.registry_path)
+        entities = [e for e in entities if not is_anchored(e, event_concepts, keep_concepts)]
         base = DeepSeekConfig.from_env()
         # The synth cache has to be consulted or the number is useless: a warm
         # re-emit is ~$0.05 against a ~$6.50 cold rebuild, and an estimate that
