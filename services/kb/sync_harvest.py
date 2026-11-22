@@ -51,6 +51,9 @@ _LINK_RE = re.compile(r"\[\[([^\]|]+)(?:\|([^\]]*))?\]\]")
 _BOLD_RE = re.compile(r"'''(.+?)'''")
 _CITE_RE = re.compile(r"[ \t]*\[\d+\]")
 _BLANK_RE = re.compile(r"\n{3,}")
+# Optional first line of a harvest file: <!-- harvest: kind=hand page="X" revid=1 ... -->
+_HEADER_RE = re.compile(r"\A<!--\s*harvest:(.*?)-->")
+_HEADER_ATTR_RE = re.compile(r'(\w+)=(?:"([^"]*)"|(\S+))')
 
 # Evidence list harvested along with the prose. Its numbering is the wiki
 # page's, not this entity's mention order — never grounding, always a trap.
@@ -109,18 +112,48 @@ def convert(path: Path, names: dict[str, str]) -> tuple[str, str] | None:
         print(f"  SKIP  {path.name} — {concept_id} is not in entity_registry.yaml")
         return None
 
-    body = drop_belege(wikitext_to_markdown(path.read_text(encoding="utf-8"))).strip()
+    raw = path.read_text(encoding="utf-8")
+    # Read before wikitext_to_markdown strips every comment.
+    m = _HEADER_RE.match(raw)
+    header = {k: q or b for k, q, b in _HEADER_ATTR_RE.findall(m.group(1))} if m else {}
+    body = drop_belege(wikitext_to_markdown(raw)).strip()
     if not body:
         print(f"  SKIP  {path.name} — nothing left after conversion")
         return None
 
+    if header.get("kind") == "hand":
+        intro = (
+            f"Von Hand geschriebener Teil der Wiki-Seite „{header.get('page', '?')}“ "
+            f"(Revision {header.get('revid', '?')}, von Hand bearbeitet "
+            f"{header.get('first', '?')} bis {header.get('last', '?')}). "
+            f"Hintergrundwissen für die Synthese, kein Kanon-Ruling."
+        )
+        # Hand prose is not wrong, but it stops at the date it was written.
+        # Own directive with mentions=off: the note concerns this entry only.
+        tail = (
+            f"\n\n### Aktualität der Wiki-Prosa\n"
+            f"<!-- okf: entity={concept_id}; mentions=off -->\n\n"
+            f"DARSTELLUNG: Die Wiki-Prosa oben wurde zuletzt am "
+            f"{header.get('last', '?')} von Hand bearbeitet und kann veraltet "
+            f"sein. Übernimm daraus Aussehen, Wesen, Hintergrund und Details, "
+            f"die die Sessions nicht nennen. Wo die Session-Belege einen "
+            f"neueren Stand zeigen, gilt der neuere Stand: Erzähle den älteren "
+            f"als frühere Phase, nicht als Widerspruch, und führe ihn nicht "
+            f"unter „# Offene Konflikte“.\n"
+        )
+    else:
+        intro = (
+            f"Aus dem von Hand bearbeiteten KI-Abschnitt der Wiki-Seite "
+            f"(`pnp-export-data/harvest/{path.name}`). Hintergrundwissen für die "
+            f"Synthese, kein Kanon-Ruling."
+        )
+        tail = "\n"
+
     doc = (
         f"## {names[concept_id]}\n"
         f"<!-- okf: entity={concept_id} -->\n\n"
-        f"Aus dem von Hand bearbeiteten KI-Abschnitt der Wiki-Seite "
-        f"(`pnp-export-data/harvest/{path.name}`). Hintergrundwissen für die "
-        f"Synthese, kein Kanon-Ruling.\n\n"
-        f"{_BLANK_RE.sub(chr(10) * 2, body)}\n"
+        f"{intro}\n\n"
+        f"{_BLANK_RE.sub(chr(10) * 2, body)}{tail}"
     )
     return path.name, doc
 
@@ -128,8 +161,15 @@ def convert(path: Path, names: dict[str, str]) -> tuple[str, str] | None:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--harvest", type=Path, default=DEFAULT_HARVEST)
+    ap.add_argument("--knowledge", type=Path, default=None,
+                    help="bundle checkout to write into (e.g. a worktree); default ../../knowledge")
     ap.add_argument("--dry-run", action="store_true", help="report, write nothing")
     args = ap.parse_args()
+
+    global KNOWLEDGE, REGISTRY, OUT_DIR
+    if args.knowledge:
+        KNOWLEDGE = args.knowledge.resolve()
+        REGISTRY, OUT_DIR = KNOWLEDGE / "entity_registry.yaml", KNOWLEDGE / "sources" / "wiki"
 
     if not args.harvest.is_dir():
         print(f"no harvest dir at {args.harvest} — nothing to sync")
