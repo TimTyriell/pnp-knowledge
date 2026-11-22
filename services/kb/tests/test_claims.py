@@ -7,7 +7,7 @@ check lives in test_claim_eval.py.
 from __future__ import annotations
 
 import pytest
-from pnp_okf.claims import score, split_claims
+from pnp_okf.claims import agreement, score, split_claims
 
 
 def test_splits_plain_german_sentences():
@@ -91,3 +91,31 @@ def test_score_refuses_an_unknown_verdict():
 
 def test_score_of_nothing_has_no_rate():
     assert score([])["supported_rate"] is None
+
+
+# --- agreement (E3: judge vs human, judge vs judge) -----------------------------------------
+
+
+def test_agreement_of_identical_labels_is_perfect():
+    a = {"c1": "supported", "c2": "unsupported", "c3": "misattributed"}
+    result = agreement(a, dict(a))
+    assert (result["n"], result["agree"], result["rate"], result["kappa"]) == (3, 3, 1.0, 1.0)
+
+
+def test_a_judge_that_always_says_supported_has_high_raw_agreement_but_no_kappa():
+    # Why kappa is reported at all: "supported" dominates real labels and inflates raw agreement.
+    human = {f"c{i}": "supported" for i in range(9)} | {"c9": "unsupported"}
+    judge = {f"c{i}": "supported" for i in range(10)}
+    result = agreement(human, judge)
+    assert result["rate"] == 0.9
+    assert result["kappa"] <= 0.0
+
+
+def test_agreement_counts_only_ids_both_sides_labelled():
+    result = agreement({"c1": "supported", "c2": ""}, {"c1": "supported", "c2": "unsupported", "c3": "unclear"})
+    assert result["n"] == 1
+
+
+def test_agreement_with_nothing_in_common_has_no_rate():
+    result = agreement({}, {"c1": "supported"})
+    assert result == {"n": 0, "agree": 0, "rate": None, "kappa": None}

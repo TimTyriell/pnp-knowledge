@@ -83,11 +83,11 @@ silently.
 
 | Metric | Baseline | Source |
 | --- | --- | --- |
-| Concepts with >=5 mentions but no deep tier | 0 | `services/kb/tests/test_bundle_invariants.py:273` |
-| Deep-tier concepts with zero outgoing links | 0 | `services/kb/tests/test_link_coverage.py:159` |
-| Duplicate headings in canon decisions | 0 | `services/kb/tests/test_canon_decisions.py:51` |
-| GM rulings reaching no entity | 0 | `services/kb/tests/test_canon_decisions.py:55` |
-| Rulings ambiguously grounded | 0 | `services/kb/tests/test_canon_decisions.py:61` |
+| Concepts with >=5 mentions but no deep tier | 0 | `services/kb/tests/test_bundle_invariants.py::test_tier_matches_the_evidence` |
+| Deep-tier concepts with zero outgoing links | 0 | `services/kb/tests/test_link_coverage.py::DEEP_TIER_NO_LINK_BASELINE` |
+| Duplicate headings in canon decisions | 0 | `services/kb/tests/test_canon_decisions.py::DUPLICATE_HEADING_BASELINE` |
+| GM rulings reaching no entity | 0 | `services/kb/tests/test_canon_decisions.py::UNREACHED_RULING_BASELINE` |
+| Rulings ambiguously grounded | 0 | `services/kb/tests/test_canon_decisions.py::AMBIGUOUS_PERSON_RULING_BASELINE` |
 
 The three canon-decision constants were ratchets against a measured baseline
 back when ruling-to-entity routing was slug-substring matching and the file
@@ -105,15 +105,18 @@ comment beside it.
 
 | Metric | Baseline | Source |
 | --- | --- | --- |
-| Plain-text mentions not linked | 1912 | `services/kb/tests/test_link_coverage.py:83` |
-| Raw spelling-doctor hits | 307 | `services/kb/tests/test_spelling_sweep.py:163` |
-| Distinct label/target link mismatches | 42 | `services/kb/tests/test_spelling_sweep.py:232` |
-| Occurrences of those mismatches | 56 | `services/kb/tests/test_spelling_sweep.py:240` |
-| Dead `entity_rules.yaml` entries | 15 | `services/kb/tests/test_rules_applied.py:53` |
-| German article-variant duplicate slugs | 5 | `services/kb/tests/test_rules_applied.py:234` |
-| Deep-tier writeups built from <=1 mention | 16 | `services/kb/tests/test_bundle_invariants.py:293` |
-| Entity concepts with no citation line | 5 | `services/kb/tests/test_bundle_invariants.py:195` |
-| Identity churn: registry ids a fresh resolve abandons | 23 | `services/kb/tests/test_identity_churn.py:106` |
+| Plain-text mentions not linked | 1912 | `services/kb/tests/test_link_coverage.py::UNLINKED_MENTION_BASELINE` |
+| Raw spelling-doctor hits | 307 | `services/kb/tests/test_spelling_sweep.py::SPELLING_DOCTOR_TOTAL_BASELINE` |
+| Distinct label/target link mismatches | 42 | `services/kb/tests/test_spelling_sweep.py::LABEL_TARGET_MISMATCH_BASELINE` |
+| Occurrences of those mismatches | 56 | `services/kb/tests/test_spelling_sweep.py::LABEL_TARGET_MISMATCH_OCCURRENCE_BASELINE` |
+| Dead `entity_rules.yaml` entries | 15 | `services/kb/tests/test_rules_applied.py::DEAD_RULES_BASELINE` |
+| German article-variant duplicate slugs | 5 | `services/kb/tests/test_rules_applied.py::ARTICLE_VARIANT_BASELINE` |
+| Deep-tier writeups built from <=1 mention | 16 | `services/kb/tests/test_bundle_invariants.py::test_tier_matches_the_evidence` |
+| Entity concepts with no citation line | 5 | `services/kb/tests/test_bundle_invariants.py::UNCITED_ENTITY_BASELINE` |
+| Identity churn: registry ids a fresh resolve abandons | 14 | `services/kb/tests/test_identity_churn.py::CHURN_BASELINE` |
+| Concepts citing only positional source ids | 170 | `services/kb/tests/test_bundle_invariants.py::POSITIONAL_SOURCE_BASELINE` |
+| Real player names in titles, aliases or prose (local only: the name list is private) | 89 | `services/kb/tests/test_bundle_invariants.py::PLAYER_NAME_BASELINE` |
+| Extracted names grounded nowhere in the transcript (share) | 0.0536 | `services/kb/tests/test_extraction_quality.py::GROUNDED_NOWHERE_CEILING` |
 
 The churn row is a different kind of measurement from the rest of this table:
 it counts how many previously-known `concept_id`s a fresh `resolve_entities`
@@ -123,7 +126,13 @@ reproduce — identity stability, not prose quality. It is the quantity
 is a standing rehearsal of that guard. Tightened 35 → 23 by the I-004 fix
 (`entity_registry.yaml` write path now keeps `canonical_name` in a concept's
 aliases even after its id stops deriving from it, giving a drifted id a
-wording to reanchor against).
+wording to reanchor against), then 23 → 14 on the 2026-09-23 re-emit that
+closed I-004: the remaining 14 are type corrections, the ignore list and two
+identity pairs deliberately left split.
+
+The positional-source row falls to 0 once every cited session has an episode
+id (`pnp-crawl/sync_episodes.py --write`). The player-name row runs only where
+the private roster is available (`PNP_ROSTER_PRIVATE`), so CI never sees it.
 
 ### Floors — must not drop
 
@@ -133,11 +142,18 @@ rule folding two factions into one) cannot silently mask a numerator regression.
 
 | Metric | Baseline | Source |
 | --- | --- | --- |
-| Factions linking >=1 member | 30 / 40 | `services/kb/tests/test_link_coverage.py:214-215` |
-| NPCs linking >=1 faction | 46 / 219 | `services/kb/tests/test_link_coverage.py:216-217` |
+| Factions linking >=1 member | 30 / 40 | `services/kb/tests/test_link_coverage.py::FACTIONS_WITH_MEMBER_LINK_BASELINE` |
+| NPCs linking >=1 faction | 46 / 219 | `services/kb/tests/test_link_coverage.py::NPCS_WITH_FACTION_LINK_BASELINE` |
+| Name-level extraction precision (3 sessions, AI-drafted gold) | 0.96 | `services/kb/tests/test_extraction_quality.py::PRECISION_BASELINE` |
+| Name-level extraction recall (same gold) | 0.95 | `services/kb/tests/test_extraction_quality.py::RECALL_BASELINE` |
+| Extracted names grounded near their citation (share) | 0.751 | `services/kb/tests/test_extraction_quality.py::GROUNDED_NEAR_BASELINE` |
 
 The assertion is written as `fac_with_member >= min(BASELINE, len(factions))`,
-so removing a faction is allowed and losing a member link is not.
+so removing a faction is allowed and losing a member link is not. The three
+extraction rows need the transcript corpus and run locally only; their gold
+was AI-drafted from the same extraction it scores, so they guard against
+regression, not for truth (that is the job of the benchmark in
+[benchmarks/](benchmarks/README.md)).
 
 ## What a ratchet's history looks like
 
@@ -151,7 +167,7 @@ Note in particular the third move. It goes the wrong way, it says so in capital
 letters, and it records that the fix plan's own prediction about the number was
 wrong.
 
-`services/kb/tests/test_link_coverage.py:43-83`:
+`services/kb/tests/test_link_coverage.py`, the comment on `UNLINKED_MENTION_BASELINE`:
 
 ```python
 # Unlinked mentions of another entity's name, measured on this branch. A
@@ -203,7 +219,7 @@ The other half of the same discipline: the remaining defects were each
 investigated until understood, and then *not* fixed, because the only
 available fix was to blunt the measurement.
 
-`services/kb/tests/test_bundle_invariants.py:155-195`:
+`services/kb/tests/test_bundle_invariants.py`, the comment on `UNCITED_ENTITY_BASELINE`:
 
 ```python
 # Entity concepts with zero recognizable citation line in any of the four
@@ -274,8 +290,8 @@ Honest limits, so the numbers are not read as more than they are.
 - **Truth.** Nothing here checks that a cited claim is what actually happened at
   the table. A citation is verified to *exist* and to name a real session and
   timestamp; whether the synthesized German sentence faithfully represents that
-  moment of the recording is unchecked, and unauditable without a human
-  listening to the transcript.
+  moment is measured elsewhere, by judges calibrated against human labels:
+  [benchmarks/](benchmarks/README.md).
 - **Prose quality.** Readability, tone, redundancy between sections, and whether
   a deep-tier entry is worth reading at all are entirely outside these
   measurements.
@@ -285,7 +301,7 @@ Honest limits, so the numbers are not read as more than they are.
   semantics.
 - **Recall.** There is no measurement of what extraction missed. Every count is
   taken over what was extracted; a character never mentioned in any extraction
-  pass is invisible to all sixteen numbers.
+  pass is invisible to every number on this page.
 - **The composition of the noise floor.** The spelling ratchet notices that the
   total grew; it does not say which hit is new. Identifying that is a manual
   triage step by design (`spelling_doctor.py` plus the audit document).
